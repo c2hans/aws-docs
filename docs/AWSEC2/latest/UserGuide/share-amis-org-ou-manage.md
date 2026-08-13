@@ -29,7 +29,7 @@ You can find the organizations and OUs with which you've shared your AMI.
 #### [ AWS CLI ]
 
 **To check with which organizations and OUs you've shared your AMI**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-image-attribute.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-image-attribute.html) command with the `launchPermission` attribute.
+Use the [describe-image-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-image-attribute.html) command with the `launchPermission` attribute.
 
 ```
 aws ec2 describe-image-attribute \
@@ -99,7 +99,7 @@ You do not need to share the Amazon EBS snapshots that an AMI references in orde
 #### [ AWS CLI ]
 
 **To share an AMI with an organization**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-image-attribute.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-image-attribute.html) command to grant launch permissions for the specified AMI to the specified organization.
+Use the [modify-image-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-image-attribute.html) command to grant launch permissions for the specified AMI to the specified organization.
 
 ```
 aws ec2 modify-image-attribute \
@@ -119,7 +119,7 @@ aws ec2 modify-image-attribute \
 ------
 #### [ PowerShell ]
 
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2ImageAttribute.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2ImageAttribute.html) command (Tools for Windows PowerShell) to share an AMI as shown in the following examples.
+Use the [Edit-EC2ImageAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2ImageAttribute.html) command (Tools for Windows PowerShell) to share an AMI as shown in the following examples.
 
 **To share an AMI with an organization or an OU**
 The following command grants launch permissions for the specified AMI to the specified organization.
@@ -192,7 +192,7 @@ aws ec2 modify-image-attribute \
 ```
 
 **To stop sharing an AMI with all organizations, OUs, and AWS accounts**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/reset-image-attribute.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/reset-image-attribute.html) command. This example removes all public and explicit launch permissions from the specified AMI. Note that the owner of the AMI always has launch permissions and is therefore unaffected by this command.
+Use the [reset-image-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/reset-image-attribute.html) command. This example removes all public and explicit launch permissions from the specified AMI. Note that the owner of the AMI always has launch permissions and is therefore unaffected by this command.
 
 ```
 aws ec2 reset-image-attribute \

@@ -19,7 +19,7 @@ In this example, a simple HTML page provides a browser-based application for vie
 
 ![JavaScript in a browser script using Amazon S3 buckets for photo albums.](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/s3-photo-album-example.png)
 
-The browser script uses the SDK for JavaScript to interact with an Amazon S3 bucket. The script uses the [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#listObjects-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#listObjects-property) method of the Amazon S3 client class to enable you to view the photo albums.
+The browser script uses the SDK for JavaScript to interact with an Amazon S3 bucket. The script uses the [`listObjects`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#listObjects-property) method of the Amazon S3 client class to enable you to view the photo albums.
 
 ## Prerequisite Tasks
 <a name="s3-example-photos-view-scenario-prerequisites"></a>

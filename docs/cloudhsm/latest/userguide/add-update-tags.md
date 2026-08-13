@@ -37,7 +37,7 @@ If you update the tag key for an existing tag, the console deletes the existing 
 
 **To add or update tags (AWS CLI)**
 
-1. At a command prompt, issue the [https://docs.aws.amazon.com/cli/latest/reference/cloudhsmv2/tag-resource.html](https://docs.aws.amazon.com/cli/latest/reference/cloudhsmv2/tag-resource.html) command, specifying the tags and the ID of the cluster that you are tagging. If you don't know the cluster ID, issue the **[describe-clusters](https://docs.aws.amazon.com/cli/latest/reference/cloudhsmv2/describe-clusters.html)** command.
+1. At a command prompt, issue the [**tag-resource**](https://docs.aws.amazon.com/cli/latest/reference/cloudhsmv2/tag-resource.html) command, specifying the tags and the ID of the cluster that you are tagging. If you don't know the cluster ID, issue the **[describe-clusters](https://docs.aws.amazon.com/cli/latest/reference/cloudhsmv2/describe-clusters.html)** command.
 
    ```
    $ aws cloudhsmv2 tag-resource --resource-id {{<cluster ID>}} \
@@ -47,4 +47,4 @@ If you update the tag key for an existing tag, the console deletes the existing 
 1. To update tags, use the same command but specify an existing tag key. When you specify a new tag value for an existing tag, the tag is overwritten with the new value.
 
 **To add or update tags (AWS CloudHSM API)**
-+ Send a [https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_TagResource.html](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_TagResource.html) request. Specify the tags and the ID of the cluster that you are tagging.
++ Send a [TagResource](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_TagResource.html) request. Specify the tags and the ID of the cluster that you are tagging.

@@ -29,7 +29,7 @@ The AWSServiceRoleForAppRunner service-linked role trusts the following services
 + `apprunner.amazonaws.com`
 
 The permissions policies of the AWSServiceRoleForAppRunner service-linked role contain all of the permissions that App Runner needs to complete actions on your behalf:
-+ Managed policy [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AppRunnerServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AppRunnerServiceRolePolicy.html)
++ Managed policy [`AppRunnerServiceRolePolicy`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AppRunnerServiceRolePolicy.html)
 + Policy for X-Ray tracing – See the following policy content.
 
 ### Policy for X-Ray tracing

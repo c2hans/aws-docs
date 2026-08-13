@@ -400,7 +400,7 @@ kubectl get events | grep InsufficientCapacityError
 Karpenter caches unavailable offerings for 3 minutes. Widening the allowed instance types and AZs in your NodePool increases the chances of landing capacity.
 
 **Note**
-Spot instances launched by Karpenter do not appear in the EC2 Spot Requests console. Karpenter uses the EC2 [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet.html) API with `type: instant`. The instances appear in the EC2 Instances console with a `spot` lifecycle.
+Spot instances launched by Karpenter do not appear in the EC2 Spot Requests console. Karpenter uses the EC2 [`CreateFleet`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet.html) API with `type: instant`. The instances appear in the EC2 Instances console with a `spot` lifecycle.
 
 ## Step 4: Add reserved capacity to the NodePool (optional)
 <a name="cluster-setup-tf-attach-odcr"></a>

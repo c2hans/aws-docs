@@ -477,7 +477,7 @@ aws quicksight generate-embed-url-for-registered-user \
 --experience-configuration QSearchBar={InitialTopicId={{U4zJMVZ2n2stZflc8Ou3iKySEb3BEV6f}}}
 ```
 
-For more information about using this operation, see [https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUser.html](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUser.html). You can use this and other API operations in your own code.
+For more information about using this operation, see [GenerateEmbedUrlForRegisteredUser](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUser.html). You can use this and other API operations in your own code.
 
 ## Step 3: Embed the Q search bar URL
 <a name="embedded-q-bar-for-authenticated-users-step-3"></a>

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/delete-acc
 # Close an account created in Account Factory
 <a name="delete-account"></a>
 
-Accounts created in Account Factory are AWS accounts. For information about closing AWS accounts, see [Closing an account](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/close-account.html) in the [https://docs.aws.amazon.com//accounts/latest/reference/manage-acct-closing.html ](https://docs.aws.amazon.com//accounts/latest/reference/manage-acct-closing.html ).
+Accounts created in Account Factory are AWS accounts. For information about closing AWS accounts, see [Closing an account](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/close-account.html) in the [*AWS Account Management Reference Guide*](https://docs.aws.amazon.com//accounts/latest/reference/manage-acct-closing.html ).
 
 **Note**
  Closing an AWS account is not the same as unenrolling an account from AWS Control Tower—these are separate actions. You must unenroll the account before you close it.

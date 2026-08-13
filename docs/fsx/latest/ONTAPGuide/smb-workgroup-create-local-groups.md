@@ -11,7 +11,7 @@ Local group functionality is enabled by default when the SVM is created. When yo
 
 **To create a local group on the SMB server**
 
-1. create the local group using the [https://docs.netapp.com/us-en/ontap-cli/vserver-cifs-users-and-groups-local-group-create.html](https://docs.netapp.com/us-en/ontap-cli/vserver-cifs-users-and-groups-local-group-create.html) ONTAP CLI command.
+1. create the local group using the [**vserver cifs users-and-groups local-group create**](https://docs.netapp.com/us-en/ontap-cli/vserver-cifs-users-and-groups-local-group-create.html) ONTAP CLI command.
 
    ```
    vserver cifs users-and-groups local-group create -vserver {{svm_name}} -group-name {{group_name}} [-description {{local_group_description}}

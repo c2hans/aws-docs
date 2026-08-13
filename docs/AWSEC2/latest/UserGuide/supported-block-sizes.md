@@ -14,8 +14,8 @@ The following table shows support across storage and instance types.
   <tr><th> </th><th>4 KiB blocks</th><th>8 KiB blocks</th><th>16 KiB blocks</th></tr>
 </thead>
 <tbody>
-  <tr><td>Instance store volumes</td><td>All NVMe instance store volumes attached to current generation I-family instances.</td><td colspan="2">I4i, Im4gn, Is4gen, I7i, I7ie, I8g, and I8ge instances supported by AWS Nitro SSD.</td></tr>
-  <tr><td>Amazon EBS volumes</td><td colspan="3">All Amazon EBS volumes attached to [Nitro-based instances](instance-types.md#instance-hypervisor-type).</td></tr>
+  <tr><td><b>Instance store volumes</b></td><td>All NVMe instance store volumes attached to current generation I-family instances.</td><td colspan="2">I4i, Im4gn, Is4gen, I7i, I7ie, I8g, and I8ge instances supported by AWS Nitro SSD.</td></tr>
+  <tr><td><b>Amazon EBS volumes</b></td><td colspan="3">All Amazon EBS volumes attached to <a href="instance-types.md#instance-hypervisor-type">Nitro-based instances</a>.</td></tr>
 </tbody>
 </table>
 

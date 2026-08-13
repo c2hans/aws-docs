@@ -255,5 +255,5 @@ You receive an error after you run `StartFileTransfer`, but do not know the caus
 This error can have several causes. To troubleshoot, we recommend that you test your connector and search your CloudWatch logs.
 
 **Solution**
-+ **Test your connector**: See [Test an SFTP connector](test-sftp-connector.md). If the test fails, the system provides an error message based on the reason the test failed. That section describes how to test your connector from either the console or by using the [https://docs.aws.amazon.com/transfer/latest/APIReference/API_TestConnection.html](https://docs.aws.amazon.com/transfer/latest/APIReference/API_TestConnection.html) API command.
++ **Test your connector**: See [Test an SFTP connector](test-sftp-connector.md). If the test fails, the system provides an error message based on the reason the test failed. That section describes how to test your connector from either the console or by using the [TestConnection](https://docs.aws.amazon.com/transfer/latest/APIReference/API_TestConnection.html) API command.
 + **View CloudWatch logs for your connector**: See [Example log entries for SFTP connectors](cw-example-logs.md#example-sftp-connector-logs). This topic provides examples for SFTP connector log entries, and the naming convention to help you find the appropriate logs.

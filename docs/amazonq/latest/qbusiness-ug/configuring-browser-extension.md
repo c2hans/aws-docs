@@ -30,7 +30,7 @@ As admins, before you can integrate the Amazon Q Business browser extension, you
 1. [Create an IAM Identity Center-integrated application](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-application.html) or [Create an IAM federated application environment](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-application-iam.html) and create your Amazon Q Business web experience.
 
 1. To use this feature, do the following
-   + Enable **Allow end users to send queries directly to the LLM** in your Admin controls and guardrails. For more information, see the [Response settings](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails-global-controls.html#guardrails-global-response) topic in [Admin controls and guardrails](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails.html) and [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ChatSync.html#qbusiness-ChatSync-request-chatMode](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ChatSync.html#qbusiness-ChatSync-request-chatMode) if you are configuring programmatically.
+   + Enable **Allow end users to send queries directly to the LLM** in your Admin controls and guardrails. For more information, see the [Response settings](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails-global-controls.html#guardrails-global-response) topic in [Admin controls and guardrails](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails.html) and [`chatMode`](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ChatSync.html#qbusiness-ChatSync-request-chatMode) if you are configuring programmatically.
    + If you are using the IAM Identity Center or OpenID Connect (OIDC) provider in IAM, make sure your IAM role for an Amazon Q Business web experience using IAM Federation is up to date. For more information, see [IAM role for an Amazon Q Business web experience using IAM Federation](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/web-experience-iam-role-iam.html).
 
 ## Integrating the browser extension with Amazon Q Business
@@ -58,7 +58,7 @@ To use the Amazon Q Business browser extension, you must allow it to connect to 
 ### Using the AWS API
 <a name="integrating-browser-extensions-browser-extensions-using-aws-api"></a>
 
-Admin users can enable your browser extensions using the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateWebExperience.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateWebExperience.html) and [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateWebExperience.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateWebExperience.html) operations.
+Admin users can enable your browser extensions using the [`UpdateWebExperience`](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateWebExperience.html) and [`CreateWebExperience`](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateWebExperience.html) operations.
 
 ## Activating and deploying the browser extension
 <a name="activating-deploying-extension"></a>

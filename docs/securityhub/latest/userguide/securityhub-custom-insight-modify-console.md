@@ -52,9 +52,9 @@ To edit a custom insight, choose your preferred method, and follow the instructi
 
 **To edit a custom insight (API)**
 
-1. Use the [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_UpdateInsight.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_UpdateInsight.html) operation of the Security Hub CSPM API. If you use the AWS CLI run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-insight.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-insight.html) command.
+1. Use the [`UpdateInsight`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_UpdateInsight.html) operation of the Security Hub CSPM API. If you use the AWS CLI run the [update-insight](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-insight.html) command.
 
-1. To identify the custom insight that you want to update, provide the insight's Amazon Resource Name (ARN). To get the ARN of a custom insight, use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetInsights.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetInsights.html) operation or the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-insights.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-insights.html) command.
+1. To identify the custom insight that you want to update, provide the insight's Amazon Resource Name (ARN). To get the ARN of a custom insight, use the [`GetInsights`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetInsights.html) operation or the [get-insights](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-insights.html) command.
 
 1. Update the `Name`, `Filters`, and `GroupByAttribute` parameters as needed.
 

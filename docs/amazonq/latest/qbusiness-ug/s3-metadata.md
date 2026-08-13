@@ -18,7 +18,7 @@ Amazon Q Business supports source attribution with citations. If you specify the
 ## Document metadata location
 <a name="s3-metadata-location"></a>
 
-In Amazon S3, each metadata file can be associated with an indexed document. Your metadata files must be stored in the same Amazon S3 bucket as your indexed files. You can specify a location within the Amazon S3 bucket for your metadata files by using the AWS Management Console. Or, you can use the `metadataFilesPrefix` field of the Amazon S3 `configuration` parameter using the JSON schema when you create an Amazon S3 data source using the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API.
+In Amazon S3, each metadata file can be associated with an indexed document. Your metadata files must be stored in the same Amazon S3 bucket as your indexed files. You can specify a location within the Amazon S3 bucket for your metadata files by using the AWS Management Console. Or, you can use the `metadataFilesPrefix` field of the Amazon S3 `configuration` parameter using the JSON schema when you create an Amazon S3 data source using the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API.
 
 If you don't specify an Amazon S3 prefix, your metadata files must be stored in the same location as your indexed documents. If you specify an Amazon S3 prefix for your metadata files, they must be in a directory structure parallel to your indexed documents. Amazon Q looks only in the specified directory for your metadata. If the metadata isn't read, check that the directory location matches the location of your metadata.
 

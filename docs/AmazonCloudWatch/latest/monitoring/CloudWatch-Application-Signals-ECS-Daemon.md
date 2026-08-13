@@ -54,7 +54,7 @@ aws ssm put-parameter \
 Create the following task definition and deploy it to your application cluster. Replace {{$REGION}} with your actual Region name. Replace {{$TASK\_ROLE\_ARN}} and {{$EXECUTION\_ROLE\_ARN}} with the IAM roles you prepared in [Step 2: Create IAM roles](#Application-Signals-Enable-ECS-IAM-Daemon). Replace {{$IMAGE}} with the path to the latest CloudWatch container image on Amazon Elastic Container Registry. For more information, see [ cloudwatch-agent](https://gallery.ecr.aws/cloudwatch-agent/cloudwatch-agent) on Amazon ECR.
 
 **Note**
-The daemon service exposes two ports on the host, with 4316 used as endpoint for receiving metrics and traces and 2000 as the CloudWatch trace sampler endpoint. This setup allows the agent to collect and transmit telemetry data from all application tasks running on the host. Ensure that these ports are not used by other services on the host to avoid conflicts.
+The daemon service exposes two ports on the host, with 4316 used as endpoint for receiving metrics and traces and 2000 as the CloudWatch trace sampler endpoint. This setup allows the agent to collect and transmit telemetry data from all application tasks running on the host. Make sure that these ports are not used by other services on the host to avoid conflicts.
 
 ```
 {
@@ -226,7 +226,7 @@ The next step is to instrument your application for Application Signals.
 #### [ Python ]
 
 Before you enable Application Signals for your Python applications, be aware of the following considerations.
-+ In some containerized applications, a missing `PYTHONPATH` environment variable can sometimes cause the application to fail to start. To resolve this, ensure that you set the `PYTHONPATH` environment variable to the location of your application's working directory. This is due to a known issue with OpenTelemetry auto-instrumentation. For more information about this issue, see [ Python autoinstrumentation setting of PYTHONPATH is not compliant](https://github.com/open-telemetry/opentelemetry-operator/issues/2302).
++ In some containerized applications, a missing `PYTHONPATH` environment variable can sometimes cause the application to fail to start. To resolve this, make sure that you set the `PYTHONPATH` environment variable to the location of your application's working directory. This is due to a known issue with OpenTelemetry auto-instrumentation. For more information about this issue, see [ Python autoinstrumentation setting of PYTHONPATH is not compliant](https://github.com/open-telemetry/opentelemetry-operator/issues/2302).
 + For Django applications, there are additional required configurations, which are outlined in the [ OpenTelemetry Python documentation](https://opentelemetry-python.readthedocs.io/en/latest/examples/django/README.html).
   + Use the `--noreload` flag to prevent automatic reloading.
   + Set the `DJANGO_SETTINGS_MODULE` environment variable to the location of your Django application's `settings.py` file. This ensures that OpenTelemetry can correctly access and integrate with your Django settings.
@@ -969,4 +969,4 @@ Create a new revision of your task definition and deploy it to your application 
 ## (Optional) Step 7: Monitor your application health
 <a name="CloudWatch-Application-Signals-Monitor-daemon"></a>
 
-Once you have enabled your applications on Amazon ECS, you can monitor your application health. For more information, see [Monitor the operational health of your applications with Application Signals](Services.md).
+After you have enabled your applications on Amazon ECS, you can monitor your application health. For more information, see [Monitor the operational health of your applications with Application Signals](Services.md).

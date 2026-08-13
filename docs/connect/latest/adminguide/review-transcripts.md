@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/review-transcripts.html
 ---
 
-# Review analyzed conversations using Contact Lens
+# Review analyzed conversations using conversational analytics
 <a name="review-transcripts"></a>
 
-By using Connect Customer Contact Lens, you can review the transcript and identify what part of the contact is of interest. You won't need to listen to an entire call or read an entire chat transcript to find out what's interesting about it. You can focus on specific parts of the audio or transcript. Both are highlighted for you wherever there are points of interest.
+By using Connect Customer conversational analytics, you can review the transcript and identify what part of the contact is of interest. You won't need to listen to an entire call or read an entire chat transcript to find out what's interesting about it. You can focus on specific parts of the audio or transcript. Both are highlighted for you wherever there are points of interest.
 
 For example, you might scan the transcript of the contact and see a red sentiment emoji for a customer turn, which indicates the customer is expressing a negative sentiment. You can choose the timestamp and jump to that portion of audio recording or chat interaction.
 
@@ -19,7 +19,7 @@ The following image shows an example of a chat contact. **System Message** appli
 
 **To review analyzed conversations**
 
-1. Log in to Connect Customer with a user account that has **Contact search** and **Contact Lens - conversational analytics** permissions in the security profile.
+1. Log in to Connect Customer with a user account that has **Contact search** and **conversational analytics - conversational analytics** permissions in the security profile.
 
 1. In Connect Customer, choose **Analytics and optimization**, **Contact search**.
 

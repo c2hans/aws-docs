@@ -77,6 +77,6 @@ Check the status of a backup or find its ID by using the **[describe-backups](ht
 ------
 #### [ AWS CloudHSM API ]
 
-Refer to [https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteBackup.html](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteBackup.html) to learn how to delete backups by using the API.
+Refer to [DeleteBackup](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteBackup.html) to learn how to delete backups by using the API.
 
 ------

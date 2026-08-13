@@ -37,19 +37,19 @@ The response is XML content consisting of one `routers` element that contains:
 </thead>
 <tbody>
   <tr><td>id</td><td>Integer</td><td rowspan="6">The ID for this router, assigned by the system when the router is created.</td></tr>
-  <tr><td>name</td><td>See [POST: Create a Router](set-up-routers-create.md).</td></tr>
+  <tr><td>name</td><td>See <a href="set-up-routers-create.md">POST: Create a Router</a>.</td></tr>
   <tr><td>ip </td><td> </td></tr>
-  <tr><td>router\_type</td><td> </td></tr>
-  <tr><td>level\_id</td><td> </td></tr>
-  <tr><td>user\_id</td><td> </td></tr>
-  <tr><td>id</td><td> </td><td rowspan="4">See [POST: Create a Router Input](set-up-router-inputs-create.md).</td></tr>
+  <tr><td>router_type</td><td> </td></tr>
+  <tr><td>level_id</td><td> </td></tr>
+  <tr><td>user_id</td><td> </td></tr>
+  <tr><td>id</td><td> </td><td rowspan="4">See <a href="set-up-router-inputs-create.md">POST: Create a Router Input</a>.</td></tr>
   <tr><td>name</td><td> </td></tr>
-  <tr><td>router\_id</td><td> </td></tr>
-  <tr><td>input\_number</td><td> </td></tr>
-  <tr><td>id</td><td> </td><td rowspan="4">See [POST: Create a Router Output](set-up-router-outputs-create.md).</td></tr>
-  <tr><td>output\_number</td><td> </td></tr>
-  <tr><td>router\_id</td><td> </td></tr>
-  <tr><td>device\_id</td><td> </td></tr>
+  <tr><td>router_id</td><td> </td></tr>
+  <tr><td>input_number</td><td> </td></tr>
+  <tr><td>id</td><td> </td><td rowspan="4">See <a href="set-up-router-outputs-create.md">POST: Create a Router Output</a>.</td></tr>
+  <tr><td>output_number</td><td> </td></tr>
+  <tr><td>router_id</td><td> </td></tr>
+  <tr><td>device_id</td><td> </td></tr>
 </tbody>
 </table>
 

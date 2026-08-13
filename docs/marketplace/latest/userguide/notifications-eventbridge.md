@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/notificatio
 # Amazon EventBridge events
 <a name="notifications-eventbridge"></a>
 
-As a seller, you can use Amazon EventBridge to receive notifications for events in AWS Marketplace. For example, you can receive an *event* from AWS Marketplace when an offer is created. The *event* contains details like the ID, expiration date, and product details. EventBridge is an event bus service that you can use to connect your applications with data from a variety of sources. For more information, see the [https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html). The following sections provide detailed information about events under the Marketplace Catalog service in the EventBridge console.
+As a seller, you can use Amazon EventBridge to receive notifications for events in AWS Marketplace. For example, you can receive an *event* from AWS Marketplace when an offer is created. The *event* contains details like the ID, expiration date, and product details. EventBridge is an event bus service that you can use to connect your applications with data from a variety of sources. For more information, see the [*Amazon EventBridge User Guide*](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html). The following sections provide detailed information about events under the Marketplace Catalog service in the EventBridge console.
 
 **Topics**
 + [Events for new offers](#events-offerreleased)

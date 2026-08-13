@@ -37,7 +37,7 @@ You can filter the list by entering text from the following fields:
 
 **To review integration options and details (API)**
 
-To get a list of integrations, use the [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_DescribeProducts.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_DescribeProducts.html) operation. If you're using the AWS CLI, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/describe-products.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/describe-products.html) command.
+To get a list of integrations, use the [DescribeProducts](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_DescribeProducts.html) operation. If you're using the AWS CLI, run the [describe-products](https://docs.aws.amazon.com/cli/latest/reference/securityhub/describe-products.html) command.
 
 To retrieve details for a specific product integration, use the `ProductArn` parameter to specify the Amazon Resource Name (ARN) of the integration.
 

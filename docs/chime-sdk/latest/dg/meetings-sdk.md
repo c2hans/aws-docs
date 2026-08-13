@@ -87,34 +87,34 @@ The following system requirements apply to applications created with the Amazon 
 **Supported browsers, Amazon Chime SDK client library for JavaScript**
 
 - **Windows**
-  - **Browser:** Mozilla Firefox / **Supported versions:** 75 and later / **Notes:**
-  - **Browser:** Google Chrome / **Supported versions:** 78 and later / **Notes:**
-  - **Browser:** Chromium-based Edge / **Supported versions:** 79 and later / **Notes:**
-  - **Browser:** Chromium-based Electron / **Supported versions:** 7 and later / **Notes:** With Chrome version 78 and later.
-  - **Browser:** Opera / **Supported versions:** 66 and later / **Notes:**
+  - **Browser:** Mozilla Firefox / **Supported versions:** Latest three versions / **Notes:**
+  - **Browser:** Google Chrome / **Supported versions:** Latest three versions / **Notes:**
+  - **Browser:** Chromium-based Edge / **Supported versions:** Latest three versions / **Notes:**
+  - **Browser:** Chromium-based Electron / **Supported versions:** Latest three versions / **Notes:** Electron supports its latest three stable major versions, each tracking an even-numbered Chromium release. See [Electron releases](https://www.electronjs.org/docs/latest/tutorial/electron-timelines) on the Electron website.
+  - **Browser:** Opera / **Supported versions:** Latest three versions / **Notes:**
 
 - ** macOS **
-  - **Browser:** Mozilla Firefox / **Supported versions:** 75 and later / **Notes:**
-  - **Browser:** Google Chrome / **Supported versions:** 78 and later / **Notes:**
-  - **Browser:** Chromium-based Edge / **Supported versions:** 79 and later / **Notes:**
-  - **Browser:** Chromium-based Electron / **Supported versions:**  / **Notes:**
-  - **Browser:** Safari / **Supported versions:** 13 and later / **Notes:**
-  - **Browser:** Opera / **Supported versions:** 66 and later / **Notes:**
+  - **Browser:** Mozilla Firefox / **Supported versions:** Latest three versions / **Notes:**
+  - **Browser:** Google Chrome / **Supported versions:** Latest three versions / **Notes:**
+  - **Browser:** Chromium-based Edge / **Supported versions:** Latest three versions / **Notes:**
+  - **Browser:** Chromium-based Electron / **Supported versions:** Latest three versions / **Notes:** Electron supports its latest three stable major versions, each tracking an even-numbered Chromium release. See [Electron releases](https://www.electronjs.org/docs/latest/tutorial/electron-timelines) on the Electron website.
+  - **Browser:** Safari / **Supported versions:** Latest three versions / **Notes:**
+  - **Browser:** Opera / **Supported versions:** Latest three versions / **Notes:**
 
 - **iOS**
-  - **Browser:** Mozilla Firefox / **Supported versions:** 10 and later / **Notes:** Audio and video only, no content sharing.
-  - **Browser:** Google Chrome / **Supported versions:** 78 and later / **Notes:** Audio and video only, no content sharing.
-  - **Browser:** Safari / **Supported versions:** 13 and later / **Notes:** Audio and video only, no content sharing.
+  - **Browser:** Mozilla Firefox / **Supported versions:** Latest three versions / **Notes:** Audio and video only, no content sharing.
+  - **Browser:** Google Chrome / **Supported versions:** Latest three versions / **Notes:** Audio and video only, no content sharing.
+  - **Browser:** Safari / **Supported versions:** Latest three versions / **Notes:** Audio and video only, no content sharing.
   - **Browser:** WKWebView / **Supported versions:** 14.3 and later / **Notes:** Audio and video only, no content sharing.
 
 - **Android**
-  - **Browser:** Google Chrome / **Supported versions:** 10 and later / **Notes:** Audio and video only, no content sharing.
-  - **Browser:** Samsung / **Supported versions:** 12 and later / **Notes:** Audio and video only, no content sharing.
+  - **Browser:** Google Chrome / **Supported versions:** Latest three versions / **Notes:** Audio and video only, no content sharing.
+  - **Browser:** Samsung Internet / **Supported versions:** 12 and later / **Notes:** Audio and video only, no content sharing.
   - **Browser:** Chromium WebView / **Supported versions:** 5 and later / **Notes:** Audio and video only, no content sharing.
 
 - **Ubuntu LTS 16.04 and later**
   - **Browser:** Google Chrome
-  - **Supported versions:** 78 and later
+  - **Supported versions:** Latest three versions
   - **Notes:**
 
 **Amazon Chime SDK client library for iOS**

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/simp
 # Troubleshooting Simple AD directory status messages
 <a name="simple_ad_troubleshooting_reasons"></a>
 
-When a Simple AD is impaired or inoperable, the directory status message contains additional information. The status message is displayed in the Directory Service console, or returned in the [https://docs.aws.amazon.com/directoryservice/latest/devguide/API_DirectoryDescription.html#ADS-Type-DirectoryDescription-StageReason](https://docs.aws.amazon.com/directoryservice/latest/devguide/API_DirectoryDescription.html#ADS-Type-DirectoryDescription-StageReason) member by the [https://docs.aws.amazon.com/directoryservice/latest/devguide/API_DescribeDirectories.html](https://docs.aws.amazon.com/directoryservice/latest/devguide/API_DescribeDirectories.html) API. For more information about the directory status, see [Understanding your AWS Managed Microsoft AD directory status](ms_ad_directory_status.md).
+When a Simple AD is impaired or inoperable, the directory status message contains additional information. The status message is displayed in the Directory Service console, or returned in the [`DirectoryDescription.StageReason`](https://docs.aws.amazon.com/directoryservice/latest/devguide/API_DirectoryDescription.html#ADS-Type-DirectoryDescription-StageReason) member by the [`DescribeDirectories`](https://docs.aws.amazon.com/directoryservice/latest/devguide/API_DescribeDirectories.html) API. For more information about the directory status, see [Understanding your AWS Managed Microsoft AD directory status](ms_ad_directory_status.md).
 
 The following are the status messages for a Simple AD directory:
 

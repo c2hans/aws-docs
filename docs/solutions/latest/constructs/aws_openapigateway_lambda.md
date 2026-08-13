@@ -122,13 +122,13 @@ new OpenApiGatewayToLambda(this, "OpenApiGatewayToLambda", OpenApiGatewayToLambd
 
 |  **Name**  |  **Type**  |  **Description**  |
 | --- | --- | --- |
-| apiGatewayProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApiBaseProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApiBaseProps.html)  | Optional user-provided props to override the default props for the API. |
-| apiDefinitionBucket? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.IBucket.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.IBucket.html)  | S3 Bucket where the OpenAPI spec file is located. When specifying this property, `apiDefinitionKey` must also be specified. |
+| apiGatewayProps? |  [`apigateway.RestApiBaseProps`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApiBaseProps.html)  | Optional user-provided props to override the default props for the API. |
+| apiDefinitionBucket? |  [`s3.IBucket`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.IBucket.html)  | S3 Bucket where the OpenAPI spec file is located. When specifying this property, `apiDefinitionKey` must also be specified. |
 | apiDefinitionKey? |  `string`  | S3 Object name of the OpenAPI spec file. When specifying this property, `apiDefinitionBucket` must also be specified. |
-| apiDefinitionAsset? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3_assets.Asset.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3_assets.Asset.html)  | Local file asset of the OpenAPI spec file. |
+| apiDefinitionAsset? |  [`aws_s3_assets.Asset`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3_assets.Asset.html)  | Local file asset of the OpenAPI spec file. |
 | apiDefinitionJson? | any | OpenAPI specification represented in a JSON object to be embedded in the CloudFormation template. IMPORTANT - Including the spec in the template introduces a risk of the template growing too big, but there are some use cases that require an embedded spec. Unless your use case explicitly requires an embedded spec you should pass your spec as an S3 asset. |
 | apiIntegrations |  `ApiIntegration[]`  | One or more key-value pairs that contain an id for the api integration and either an existing lambda function or an instance of the LambdaProps. Please see the `Overview of how the OpenAPI file transformation works` section below for more usage details. |
-| logGroupProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.LogGroupProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.LogGroupProps.html)  | User provided props to override the default props for for the CloudWatchLogs LogGroup. |
+| logGroupProps? |  [`logs.LogGroupProps`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.LogGroupProps.html)  | User provided props to override the default props for for the CloudWatchLogs LogGroup. |
 
 ## Pattern Properties
 <a name="_pattern_properties"></a>
@@ -136,9 +136,9 @@ new OpenApiGatewayToLambda(this, "OpenApiGatewayToLambda", OpenApiGatewayToLambd
 |  **Name**  |  **Type**  |  **Description**  |
 | --- | --- | --- |
 | apiLambdaFunctions |  `ApiLambdaFunction[]`  | Returns an array of ApiLambdaFunction objects, where each has an `id` of the `apiIntegration` and the corresponding `lambda.Function` that it maps to. |
-| apiGateway |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.SpecRestApi.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.SpecRestApi.html)  | Returns an instance of the API Gateway REST API created by the pattern. |
-| apiGatewayCloudWatchRole? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.Role.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.Role.html)  | Returns an instance of the iam.Role created by the construct for API Gateway for CloudWatch access. |
-| apiGatewayLogGroup |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.LogGroup.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.LogGroup.html)  | Returns an instance of the LogGroup created by the construct for API Gateway access logging to CloudWatch. |
+| apiGateway |  [`api.SpecRestApi`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.SpecRestApi.html)  | Returns an instance of the API Gateway REST API created by the pattern. |
+| apiGatewayCloudWatchRole? |  [`iam.Role`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.Role.html)  | Returns an instance of the iam.Role created by the construct for API Gateway for CloudWatch access. |
+| apiGatewayLogGroup |  [`logs.LogGroup`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.LogGroup.html)  | Returns an instance of the LogGroup created by the construct for API Gateway access logging to CloudWatch. |
 
 ## Interfaces defined by this construct
 <a name="_interfaces_defined_by_this_construct"></a>

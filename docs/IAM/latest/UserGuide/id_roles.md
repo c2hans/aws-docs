@@ -11,6 +11,8 @@ You can use roles to delegate access to users, applications, or services that do
 
 For these scenarios, you can delegate access to AWS resources using an *IAM role*. This section introduces roles and the different ways you can use them, when and how to choose among approaches, and how to create, manage, switch to (or assume), and delete roles.
 
+[Account access manager](account-access-manager.md) is an IAM feature that lets you centrally assign IAM roles across your organization's accounts to [IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) users and groups. Account access manager gives your workforce access through IAM roles with their full feature set. You can use it alongside IAM Identity Center permission sets or on its own.
+
 **Note**
 When you first create your AWS account, no roles are created by default. As you add services to your account, they may add service-linked roles to support their use cases.
  A service-linked role is a type of service role that is linked to an AWS service. The service can assume the role to perform an action on your behalf. Service-linked roles appear in your AWS account and are owned by the service. An IAM administrator can view, but not edit the permissions for service-linked roles.

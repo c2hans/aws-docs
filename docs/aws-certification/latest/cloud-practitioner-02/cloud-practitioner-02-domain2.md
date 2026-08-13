@@ -39,7 +39,7 @@ Skills in:
 + Understanding compliance needs among geographic locations or industries (for example, AWS compliance)
 + Describing how customers secure resources on AWS (for example, Amazon Inspector, AWS Security Hub, Amazon GuardDuty, AWS Shield)
 + Identifying encryption options (for example, encryption in transit, encryption at rest)
-+ Recognizing services that aid in governance and compliance (for example, monitoring with Amazon CloudWatch; auditing with AWS CloudTrail, AWS Audit Manager, and AWS Config; reporting with access reports)
++ Recognizing services that aid in governance and compliance (for example, monitoring with Amazon CloudWatch; auditing with AWS CloudTrail and AWS Config; reporting with access reports)
 + Recognizing compliance requirements that vary among AWS services
 
 ## Task Statement 2.3: Identify AWS access management capabilities.
@@ -49,7 +49,7 @@ Knowledge of:
 + Identity and access management (for example, AWS Identity and Access Management [IAM])
 + Importance of protecting the AWS root user account
 + Principle of least privilege
-+ AWS IAM Identity Center (AWS Single Sign-On)
++ AWS IAM Identity Center
 
 Skills in:
 + Understanding access keys, password policies, and credential storage (for example, AWS Secrets Manager, AWS Systems Manager)

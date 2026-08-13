@@ -16,7 +16,7 @@ You can delete a schedule by either configuring automatic deletion, or by manual
 
 Configure automatic deletion after schedule completion if you want to avoid having to individually manage your schedule resources on EventBridge Scheduler. In applications where you create thousands of schedules at a time and need flexibility to scale up the number of your schedules on demand, automatic deletion can ensure that you do not reach your account quota for the [number of schedules](scheduler-quotas.md) in a specified Region.
 
-When you configure automatic deletion for a schedule, EventBridge Scheduler deletes the schedule after its last target invocation. For one-time schedules, this occurs after the schedule has invoked its target once. For recurring schedules you set up with rate, or cron, expressions, your schedule is deleted after its last invocation. A recurring schedule's last invocation is the invocation that occurs closest to the [https://docs.aws.amazon.com/scheduler/latest/APIReference/API_CreateSchedule.html#scheduler-CreateSchedule-request-EndDate](https://docs.aws.amazon.com/scheduler/latest/APIReference/API_CreateSchedule.html#scheduler-CreateSchedule-request-EndDate) you specify. If you configure a schedule with automatic deletion but do not specify a value for `EndDate`, EventBridge Scheduler does not automatically delete the schedule.
+When you configure automatic deletion for a schedule, EventBridge Scheduler deletes the schedule after its last target invocation. For one-time schedules, this occurs after the schedule has invoked its target once. For recurring schedules you set up with rate, or cron, expressions, your schedule is deleted after its last invocation. A recurring schedule's last invocation is the invocation that occurs closest to the [`EndDate`](https://docs.aws.amazon.com/scheduler/latest/APIReference/API_CreateSchedule.html#scheduler-CreateSchedule-request-EndDate) you specify. If you configure a schedule with automatic deletion but do not specify a value for `EndDate`, EventBridge Scheduler does not automatically delete the schedule.
 
 You can set up automatic deletion when you first create a schedule, or update preferences for an existing schedule. The following steps describe how to configure automatic deletion for an existing schedule.
 
@@ -54,7 +54,7 @@ You can set up automatic deletion when you first create a schedule, or update pr
 ## Manual deletion
 <a name="managing-schedule-manual-deletion"></a>
 
- When you no longer need a schedule, you can delete it using the [https://docs.aws.amazon.com/scheduler/latest/APIReference/API_DeleteSchedule.html](https://docs.aws.amazon.com/scheduler/latest/APIReference/API_DeleteSchedule.html) operation.
+ When you no longer need a schedule, you can delete it using the [`DeleteSchedule`](https://docs.aws.amazon.com/scheduler/latest/APIReference/API_DeleteSchedule.html) operation.
 
 **Example AWS CLI**
 

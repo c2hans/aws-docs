@@ -119,12 +119,12 @@ The full comparison of RPM package versions is below.
   - **AL2023.0.20230517 version:** 1.1.0-6.amzn2023.0.2
   - **AL2023.0.20230607 version:** 1.2.0-1.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
+- ** [`curl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal) **
+  - **RPM:**  [`curl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`curl-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`libcurl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libcurl-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`libcurl-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
   - **AL2023.0.20230517 version:** 7.88.1-1.amzn2023.0.1
   - **AL2023.0.20230607 version:** 8.0.1-1.amzn2023
 
@@ -134,8 +134,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.0.20230517 version:** 2.86-10.amzn2023.0.2
   - **AL2023.0.20230607 version:** 2.86-10.amzn2023.0.3
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
+- ** [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
+  - **RPM:**  [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.0.20230517 version:** 1.71.0-1.amzn2023
   - **AL2023.0.20230607 version:** 1.71.2-1.amzn2023

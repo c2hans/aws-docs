@@ -34,7 +34,7 @@ When you create a rule in the Security Hub CSPM console, Security Hub CSPM autom
 
 **To edit automation rule order (API)**
 
-1. Use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateAutomationRules.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateAutomationRules.html) operation from the Security Hub CSPM administrator account.
+1. Use the [`BatchUpdateAutomationRules`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateAutomationRules.html) operation from the Security Hub CSPM administrator account.
 
 1. For the `RuleArn` parameter, provide the ARN of the rule(s) whose order you want to edit.
 

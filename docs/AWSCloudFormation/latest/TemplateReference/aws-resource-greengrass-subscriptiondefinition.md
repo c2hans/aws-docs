@@ -12,8 +12,8 @@ The `AWS::Greengrass::SubscriptionDefinition` resource represents a subscription
 Subscription definitions can reference multiple subscription definition versions. All subscription definition versions must be associated with a subscription definition. Each subscription definition version can contain one or more subscriptions.
 
 **Note**
-When you create a subscription definition, you can optionally include an initial subscription definition version. To associate a subscription definition version later, create an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinitionversion.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinitionversion.html) resource and specify the ID of this subscription definition.
-After you create the subscription definition version that contains the subscriptions you want to deploy, you must add it to your group version. For more information, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html).
+When you create a subscription definition, you can optionally include an initial subscription definition version. To associate a subscription definition version later, create an [`AWS::Greengrass::SubscriptionDefinitionVersion`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinitionversion.html) resource and specify the ID of this subscription definition.
+After you create the subscription definition version that contains the subscriptions you want to deploy, you must add it to your group version. For more information, see [`AWS::Greengrass::Group`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html).
 
 ## Syntax
 <a name="aws-resource-greengrass-subscriptiondefinition-syntax"></a>
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[InitialVersion](#cfn-greengrass-subscriptiondefinition-initialversion)" : {{SubscriptionDefinitionVersion}},
       "[Name](#cfn-greengrass-subscriptiondefinition-name)" : {{String}},
-      "[Tags](#cfn-greengrass-subscriptiondefinition-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}}
+      "[Tags](#cfn-greengrass-subscriptiondefinition-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}}
     }
 }
 ```
@@ -44,15 +44,15 @@ Properties:
     SubscriptionDefinitionVersion}}
   [Name](#cfn-greengrass-subscriptiondefinition-name): {{String}}
   [Tags](#cfn-greengrass-subscriptiondefinition-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
 ```
 
 ## Properties
 <a name="aws-resource-greengrass-subscriptiondefinition-properties"></a>
 
 `InitialVersion`  <a name="cfn-greengrass-subscriptiondefinition-initialversion"></a>
-The subscription definition version to include when the subscription definition is created. A subscription definition version contains a list of [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscription.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscription.html) property types.
-To associate a subscription definition version after the subscription definition is created, create an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinitionversion.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinitionversion.html) resource and specify the ID of this subscription definition.
+The subscription definition version to include when the subscription definition is created. A subscription definition version contains a list of [`subscription`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscription.html) property types.
+To associate a subscription definition version after the subscription definition is created, create an [`AWS::Greengrass::SubscriptionDefinitionVersion`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinitionversion.html) resource and specify the ID of this subscription definition.
 *Required*: No
 *Type*: [SubscriptionDefinitionVersion](aws-properties-greengrass-subscriptiondefinition-subscriptiondefinitionversion.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -75,7 +75,7 @@ This `Json` property type is processed as a map of key-value pairs. It uses the 
 }
 ```
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
@@ -86,14 +86,14 @@ This `Json` property type is processed as a map of key-value pairs. It uses the 
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the subscription definition, such as `1234a5b6-78cd-901e-2fgh-3i45j6k178l9`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-greengrass-subscriptiondefinition-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-greengrass-subscriptiondefinition-return-values-fn--getatt-fn--getatt"></a>
@@ -118,7 +118,7 @@ The name of the `SubscriptionDefinition`, such as `MySubscriptionDefinition`.
 
 The following snippet defines a subscription definition subscription with an initial version that contains a subscription. In this example, the subscription source is an existing device in the group. The target is a function in the group that was created in another stack and is referenced using the `ImportValue` function.
 
-For an example of a complete template, see the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-subscription-greengrass-group.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-subscription-greengrass-group.html) subscription.
+For an example of a complete template, see the [`AWS::Greengrass::Group`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-subscription-greengrass-group.html) subscription.
 
 #### JSON
 <a name="aws-resource-greengrass-subscriptiondefinition--examples--Subscription_Definition_Snippet--json"></a>

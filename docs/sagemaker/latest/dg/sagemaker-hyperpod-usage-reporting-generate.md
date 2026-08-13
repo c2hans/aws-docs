@@ -11,7 +11,7 @@ This guide provides step-by-step instructions to configure and manage usage repo
 <a name="sagemaker-hyperpod-usage-reporting-install"></a>
 
 **Note**
-Before configuring the SageMaker HyperPod usage report infrastructure in your SageMaker HyperPod cluster, ensure you have met all prerequisites detailed in this [https://github.com/awslabs/sagemaker-hyperpod-usage-report/blob/main/README.md#prerequisites](https://github.com/awslabs/sagemaker-hyperpod-usage-report/blob/main/README.md#prerequisites).
+Before configuring the SageMaker HyperPod usage report infrastructure in your SageMaker HyperPod cluster, ensure you have met all prerequisites detailed in this [`README.md`](https://github.com/awslabs/sagemaker-hyperpod-usage-report/blob/main/README.md#prerequisites).
 
 Usage reporting in HyperPod requires:
 + Deploying SageMaker HyperPod usage report AWS resources using an CloudFormation stack

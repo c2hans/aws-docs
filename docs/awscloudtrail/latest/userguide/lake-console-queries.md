@@ -22,7 +22,7 @@ You can also view queries created by the GitHub community. For more information,
 
 1. Choose a sample query from the list or enter a phrase to search by. In this example, we'll open the query **Investigate who made console changes** by choosing the **Query name**. This opens the query in the **Editor** tab.
 **Note**
-By default, this page uses basic search functionality. You can improve the search functionality by adding permissions for the `cloudtrail:SearchSampleQueries` action, if it is not already provided by your permissions policy. The [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudTrail_FullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudTrail_FullAccess.html) managed policy provides permissions to perform the `cloudtrail:SearchSampleQueries` action.
+By default, this page uses basic search functionality. You can improve the search functionality by adding permissions for the `cloudtrail:SearchSampleQueries` action, if it is not already provided by your permissions policy. The [`AWSCloudTrail_FullAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudTrail_FullAccess.html) managed policy provides permissions to perform the `cloudtrail:SearchSampleQueries` action.
 ![Sample queries tab](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/images/query-sample-console.png)
 
 1. On the **Editor** tab, choose the event data store for which you want to run the query. When you choose the event data store from the list, CloudTrail automatically populates the event data store ID in the `FROM` line of the query editor.

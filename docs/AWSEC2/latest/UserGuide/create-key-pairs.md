@@ -65,7 +65,7 @@ This is the only chance for you to save the private key file.
 
 **To create a key pair using Amazon EC2**
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/create-key-pair.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-key-pair.html) command as follows to generate the key pair and to save the private key to a `.pem` file. The `--query` option prints the private key material to the output. The `--output` option saves the private key material in the specified file. The extension should be either `.pem` or `.ppk`, depending on the key format. The private key name can be different from the public key name, but for ease of use, use the same name.
+1. Use the [create-key-pair](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-key-pair.html) command as follows to generate the key pair and to save the private key to a `.pem` file. The `--query` option prints the private key material to the output. The `--output` option saves the private key material in the specified file. The extension should be either `.pem` or `.ppk`, depending on the key format. The private key name can be different from the public key name, but for ease of use, use the same name.
 
    ```
    aws ec2 create-key-pair \
@@ -88,7 +88,7 @@ This is the only chance for you to save the private key file.
 #### [ PowerShell ]
 
 **To create a key pair using Amazon EC2**
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2KeyPair.html](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2KeyPair.html) cmdlet as follows to generate the key and save it to a `.pem` or `.ppk` file. The **Out-File** cmdlet saves the private key material in a file with the specified extension. The extension should be either `.pem` or `.ppk`, depending on the key format. The private key name can be different from the public key name, but for ease of use, use the same name.
+Use the [New-EC2KeyPair](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2KeyPair.html) cmdlet as follows to generate the key and save it to a `.pem` or `.ppk` file. The **Out-File** cmdlet saves the private key material in a file with the specified extension. The extension should be either `.pem` or `.ppk`, depending on the key format. The private key name can be different from the public key name, but for ease of use, use the same name.
 
 ```
 (New-EC2KeyPair `
@@ -122,7 +122,7 @@ For more information, see [AWS Systems Manager Parameter Store](https://docs.aws
          KeyName: new-key-pair
    ```
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-key-pairs.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-key-pairs.html) command as follows to get the ID of the key pair.
+1. Use the [describe-key-pairs](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-key-pairs.html) command as follows to get the ID of the key pair.
 
    ```
    aws ec2 describe-key-pairs --filters Name=key-name,Values={{new-key-pair}} --query KeyPairs[*].KeyPairId --output text
@@ -134,7 +134,7 @@ For more information, see [AWS Systems Manager Parameter Store](https://docs.aws
    key-05abb699beEXAMPLE
    ```
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameter.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameter.html) command as follows to get the parameter for your key and save the key material in a `.pem` file.
+1. Use the [get-parameter](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameter.html) command as follows to get the parameter for your key and save the key material in a `.pem` file.
 
    ```
    aws ssm get-parameter --name /ec2/keypair/{{key-05abb699beEXAMPLE}} --with-decryption --query Parameter.Value --output text > {{new-key-pair.pem}}
@@ -209,7 +209,7 @@ When you connect to your instance from the EC2 console, the console suggests thi
 #### [ AWS CLI ]
 
 **To import the public key to Amazon EC2**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/import-key-pair.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/import-key-pair.html) command.
+Use the [import-key-pair](https://docs.aws.amazon.com/cli/latest/reference/ec2/import-key-pair.html) command.
 
 ```
 aws ec2 import-key-pair \
@@ -218,7 +218,7 @@ aws ec2 import-key-pair \
 ```
 
 **To verify that the key pair was imported successfully**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-key-pairs.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-key-pairs.html) command.
+Use the [describe-key-pairs](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-key-pairs.html) command.
 
 ```
 aws ec2 describe-key-pairs --key-names {{my-key-pair}}
@@ -228,7 +228,7 @@ aws ec2 describe-key-pairs --key-names {{my-key-pair}}
 #### [ PowerShell ]
 
 **To import the public key to Amazon EC2**
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Import-EC2KeyPair.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Import-EC2KeyPair.html) cmdlet.
+Use the [Import-EC2KeyPair](https://docs.aws.amazon.com/powershell/latest/reference/items/Import-EC2KeyPair.html) cmdlet.
 
 ```
 $publickey=[Io.File]::ReadAllText("C:\Users\TestUser\.ssh\id_rsa.pub")
@@ -238,7 +238,7 @@ Import-EC2KeyPair `
 ```
 
 **To verify that the key pair was imported successfully**
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2KeyPair.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2KeyPair.html) cmdlet.
+Use the [Get-EC2KeyPair](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2KeyPair.html) cmdlet.
 
 ```
 Get-EC2KeyPair -KeyName {{my-key-pair}}

@@ -34,9 +34,9 @@ This tutorial takes about 60 minutes to complete.
 You'll need your AWS account and AWS IoT console to complete this tutorial.
 
   The account you use for this tutorial works best when it includes at least these AWS managed policies:
-  + [https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/IAMFullAccess$jsonEditor](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/IAMFullAccess$jsonEditor)
-  + [https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTFullAccess$jsonEditor](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTFullAccess$jsonEditor)
-  + [https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSLambda_FullAccess$jsonEditor](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSLambda_FullAccess$jsonEditor)
+  + [`IAMFullAccess`](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/IAMFullAccess$jsonEditor)
+  + [`AWSIoTFullAccess`](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTFullAccess$jsonEditor)
+  + [`AWSLambda_FullAccess`](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSLambda_FullAccess$jsonEditor)
 **Important**
 The IAM policies used in this tutorial are more permissive than you should follow in a production implementation. In a production environment, make sure that your account and resource policies grant only the necessary permissions.
 When you create IAM policies for production, determine what access users and roles need, and then design the policies that allow them to perform only those tasks.

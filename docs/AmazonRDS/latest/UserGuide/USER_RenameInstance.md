@@ -63,7 +63,7 @@ The DB instance is rebooted when it is renamed. For RDS for SQL Server Multi-AZ 
 ## AWS CLI
 <a name="USER_RenameInstance.CLI"></a>
 
-To rename a DB instance, use the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html). Provide the current `--db-instance-identifier` value and `--new-db-instance-identifier` parameter with the new name of the DB instance.
+To rename a DB instance, use the AWS CLI command [`modify-db-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html). Provide the current `--db-instance-identifier` value and `--new-db-instance-identifier` parameter with the new name of the DB instance.
 
 **Example**
 For Linux, macOS, or Unix:
@@ -84,6 +84,6 @@ For Windows:
 ## RDS API
 <a name="USER_RenameInstance.API"></a>
 
-To rename a DB instance, call Amazon RDS API operation [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html) with the following parameters:
+To rename a DB instance, call Amazon RDS API operation [`ModifyDBInstance`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html) with the following parameters:
 + `DBInstanceIdentifier` — existing name for the instance
 + `NewDBInstanceIdentifier` — new name for the instance

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/manage-connection-
 Apache Airflow stores connections as a connection URI string. It provides a connections template in the Apache Airflow UI to generate the connection URI string, regardless of the connection type. If a connection template is not available in the Apache Airflow UI, an alternate connection template can be used to generate this connection URI string, such as using the HTTP connection template. The primary difference is the URI prefix, such as `my-conn-type://`, which Apache Airflow providers typically ignore for a connection. This page describes how to use connection templates in the Apache Airflow UI interchangeably for different connection types.
 
 **Warning**
-Don't overwrite the [https://airflow.apache.org/docs/apache-airflow-providers-amazon/stable/connections/aws.html](https://airflow.apache.org/docs/apache-airflow-providers-amazon/stable/connections/aws.html) connection in Amazon MWAA. Amazon MWAA uses this connection to perform a variety of critical tasks, such as collecting task logs. Overwriting this connection might result in data loss and disruptions to your environment availability.
+Don't overwrite the [`aws_default`](https://airflow.apache.org/docs/apache-airflow-providers-amazon/stable/connections/aws.html) connection in Amazon MWAA. Amazon MWAA uses this connection to perform a variety of critical tasks, such as collecting task logs. Overwriting this connection might result in data loss and disruptions to your environment availability.
 
 **Topics**
 + [Example connection URI string](#manage-connection-types-string-example)

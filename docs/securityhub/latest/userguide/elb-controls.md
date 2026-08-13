@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the Elastic Load Balancing service
 
 **Resource type:** `AWS::ElasticLoadBalancingV2::LoadBalancer`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/alb-http-to-https-redirection-check.html](https://docs.aws.amazon.com/config/latest/developerguide/alb-http-to-https-redirection-check.html)
+**AWS Config rule:** [alb-http-to-https-redirection-check](https://docs.aws.amazon.com/config/latest/developerguide/alb-http-to-https-redirection-check.html)
 
 **Schedule type:** Periodic
 
@@ -50,7 +50,7 @@ For instructions on editing an existing rule, see [Edit a rule](https://docs.aws
 
 **Resource type:** `AWS::ElasticLoadBalancing::LoadBalancer`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elb-acm-certificate-required.html](https://docs.aws.amazon.com/config/latest/developerguide/elb-acm-certificate-required.html)
+**AWS Config rule:** [elb-acm-certificate-required](https://docs.aws.amazon.com/config/latest/developerguide/elb-acm-certificate-required.html)
 
 **Schedule type:** Change triggered
 
@@ -78,7 +78,7 @@ For information about how to associate an ACM SSL/TLS certificate with a Classic
 
 **Resource type:** `AWS::ElasticLoadBalancing::LoadBalancer`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elb-tls-https-listeners-only.html](https://docs.aws.amazon.com/config/latest/developerguide/elb-tls-https-listeners-only.html)
+**AWS Config rule:** [elb-tls-https-listeners-only](https://docs.aws.amazon.com/config/latest/developerguide/elb-tls-https-listeners-only.html)
 
 **Schedule type:** Change triggered
 
@@ -128,7 +128,7 @@ To remediate this issue, update your listeners to use the TLS or HTTPS protocol.
 
 **Resource type:** `AWS::ElasticLoadBalancingV2::LoadBalancer`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/alb-http-drop-invalid-header-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/alb-http-drop-invalid-header-enabled.html)
+**AWS Config rule:** [alb-http-drop-invalid-header-enabled](https://docs.aws.amazon.com/config/latest/developerguide/alb-http-drop-invalid-header-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -171,7 +171,7 @@ To remediate this issue, configure your load balancer to drop invalid header fie
 
 **Resource type:** `AWS::ElasticLoadBalancing::LoadBalancer`, `AWS::ElasticLoadBalancingV2::LoadBalancer`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elb-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/elb-logging-enabled.html)
+**AWS Config rule:** [elb-logging-enabled](https://docs.aws.amazon.com/config/latest/developerguide/elb-logging-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -199,7 +199,7 @@ To enable access logs, see [Step 3: Configure access logs](https://docs.aws.amaz
 
 **Resource type:** `AWS::ElasticLoadBalancingV2::LoadBalancer`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elb-deletion-protection-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/elb-deletion-protection-enabled.html)
+**AWS Config rule:** [elb-deletion-protection-enabled](https://docs.aws.amazon.com/config/latest/developerguide/elb-deletion-protection-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -255,7 +255,7 @@ To enable connection draining on Classic Load Balancers, see [Configure connecti
 
 **Resource type:** `AWS::ElasticLoadBalancing::LoadBalancer`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elb-predefined-security-policy-ssl-check.html](https://docs.aws.amazon.com/config/latest/developerguide/elb-predefined-security-policy-ssl-check.html)
+**AWS Config rule:** [elb-predefined-security-policy-ssl-check](https://docs.aws.amazon.com/config/latest/developerguide/elb-predefined-security-policy-ssl-check.html)
 
 **Schedule type:** Change triggered
 
@@ -284,7 +284,7 @@ For information on how to use the predefined security policy `ELBSecurityPolicy-
 
 **Resource type:** `AWS::ElasticLoadBalancing::LoadBalancer`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elb-cross-zone-load-balancing-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/elb-cross-zone-load-balancing-enabled.html)
+**AWS Config rule:** [elb-cross-zone-load-balancing-enabled](https://docs.aws.amazon.com/config/latest/developerguide/elb-cross-zone-load-balancing-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -310,7 +310,7 @@ To enable cross-zone load balancing in a Classic Load Balancer, see [Enable cros
 
 **Resource type:** `AWS::ElasticLoadBalancing::LoadBalancer`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/clb-multiple-az.html](https://docs.aws.amazon.com/config/latest/developerguide/clb-multiple-az.html)
+**AWS Config rule:** [clb-multiple-az](https://docs.aws.amazon.com/config/latest/developerguide/clb-multiple-az.html)
 
 **Schedule type:** Change triggered
 
@@ -340,7 +340,7 @@ This control checks whether a Classic Load Balancer has been configured to span 
 
 **Resource type:** `AWS::ElasticLoadBalancingV2::LoadBalancer`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/alb-desync-mode-check.html](https://docs.aws.amazon.com/config/latest/developerguide/alb-desync-mode-check.html)
+**AWS Config rule:** [alb-desync-mode-check](https://docs.aws.amazon.com/config/latest/developerguide/alb-desync-mode-check.html)
 
 **Schedule type:** Change triggered
 
@@ -367,7 +367,7 @@ To update desync mitigation mode of an Application Load Balancer, see [Desync mi
 
 **Resource type:** `AWS::ElasticLoadBalancingV2::LoadBalancer`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elbv2-multiple-az.html](https://docs.aws.amazon.com/config/latest/developerguide/elbv2-multiple-az.html)
+**AWS Config rule:** [elbv2-multiple-az](https://docs.aws.amazon.com/config/latest/developerguide/elbv2-multiple-az.html)
 
 **Schedule type:** Change triggered
 
@@ -397,7 +397,7 @@ To add an Availability Zone to an Application Load Balancer, see [Availability Z
 
 **Resource type:** `AWS::ElasticLoadBalancing::LoadBalancer`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/clb-desync-mode-check.html](https://docs.aws.amazon.com/config/latest/developerguide/clb-desync-mode-check.html)
+**AWS Config rule:** [clb-desync-mode-check](https://docs.aws.amazon.com/config/latest/developerguide/clb-desync-mode-check.html)
 
 **Schedule type:** Change triggered
 
@@ -424,7 +424,7 @@ To update desync mitigation mode on a Classic Load Balancer, see [Modify desync 
 
 **Resource type:** `AWS::ElasticLoadBalancingV2::LoadBalancer`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/alb-waf-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/alb-waf-enabled.html)
+**AWS Config rule:** [alb-waf-enabled](https://docs.aws.amazon.com/config/latest/developerguide/alb-waf-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -450,7 +450,7 @@ To associate an Application Load Balancer with a web ACL, see [Associating or di
 
 **Resource type:** `AWS::ElasticLoadBalancingV2::Listener`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elbv2-predefined-security-policy-ssl-check.html](https://docs.aws.amazon.com/config/latest/developerguide/elbv2-predefined-security-policy-ssl-check.html)
+**AWS Config rule:** [elbv2-predefined-security-policy-ssl-check](https://docs.aws.amazon.com/config/latest/developerguide/elbv2-predefined-security-policy-ssl-check.html)
 
 **Schedule type:** Change triggered
 
@@ -474,7 +474,7 @@ For information about recommended security policies and how to update listeners,
 
 **Resource type:** `AWS::ElasticLoadBalancingV2::Listener`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elbv2-listener-encryption-in-transit.html](https://docs.aws.amazon.com/config/latest/developerguide/elbv2-listener-encryption-in-transit.html)
+**AWS Config rule:** [elbv2-listener-encryption-in-transit](https://docs.aws.amazon.com/config/latest/developerguide/elbv2-listener-encryption-in-transit.html)
 
 **Schedule type:** Change triggered
 
@@ -498,7 +498,7 @@ For information about configuring security protocols for listeners, see the foll
 
 **Resource type:** `AWS::ElasticLoadBalancingV2::TargetGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elbv2-targetgroup-healthcheck-protocol-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/elbv2-targetgroup-healthcheck-protocol-encrypted.html)
+**AWS Config rule:** [elbv2-targetgroup-healthcheck-protocol-encrypted](https://docs.aws.amazon.com/config/latest/developerguide/elbv2-targetgroup-healthcheck-protocol-encrypted.html)
 
 **Schedule type:** Change triggered
 
@@ -522,7 +522,7 @@ To configure encrypted health checks for your Application Load Balancer target g
 
 **Resource type:** `AWS::ElasticLoadBalancingV2::TargetGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elbv2-targetgroup-protocol-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/elbv2-targetgroup-protocol-encrypted.html)
+**AWS Config rule:** [elbv2-targetgroup-protocol-encrypted](https://docs.aws.amazon.com/config/latest/developerguide/elbv2-targetgroup-protocol-encrypted.html)
 
 **Schedule type:** Change triggered
 

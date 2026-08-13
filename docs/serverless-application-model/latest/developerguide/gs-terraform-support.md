@@ -254,7 +254,7 @@ You must have Docker installed and configured. For instructions, see [Installing
    ENTRYPOINT ["sh"]
    ```
 
-1. Use [https://docs.docker.com/engine/reference/commandline/build/](https://docs.docker.com/engine/reference/commandline/build/) to build your Docker image.
+1. Use [docker build](https://docs.docker.com/engine/reference/commandline/build/) to build your Docker image.
 
    The following is an example:
 

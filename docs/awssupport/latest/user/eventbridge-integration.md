@@ -45,7 +45,7 @@ All events from AWS services contain two types of data:
 
 AWS services can send events directly to the EventBridge default event bus. In addition, AWS CloudTrail sends events originating from numerous AWS services to EventBridge as well. These events can include API calls, console signins and actions, service events, and CloudTrail Insights. For more information, see [AWS service events delivered via AWS CloudTrail](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-service-event-cloudtrail.html) in the *EventBridge User Guide*.
 
-For a list of AWS Support events sent to EventBridge, refer to the AWS Support topic in the [https://docs.aws.amazon.com/eventbridge/latest/ref/welcome.html](https://docs.aws.amazon.com/eventbridge/latest/ref/welcome.html).
+For a list of AWS Support events sent to EventBridge, refer to the AWS Support topic in the [*EventBridge Events Reference*](https://docs.aws.amazon.com/eventbridge/latest/ref/welcome.html).
 
 ## Creating event patterns that match AWS Support events
 <a name="eventbridge-event-delivery-filter"></a>

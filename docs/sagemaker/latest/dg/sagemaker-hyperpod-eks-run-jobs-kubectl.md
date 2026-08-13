@@ -23,7 +23,7 @@ training-operator-658c68d697-46zmn               1/1     Running   0          90
 
 **To submit a training job**
 
-To run a training jobs, prepare the job configuration file and run the [https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply) command as follows.
+To run a training jobs, prepare the job configuration file and run the [`kubectl apply`](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply) command as follows.
 
 ```
 kubectl apply -f {{/path/to/training_job.yaml}}

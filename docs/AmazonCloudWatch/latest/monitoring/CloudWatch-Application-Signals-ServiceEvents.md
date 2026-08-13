@@ -81,7 +81,7 @@ For setup and usage instructions, see the [Application Signals MCP server](https
 ### Prerequisites
 <a name="Application-Signals-ServiceEvents-Configure-Prerequisites"></a>
 
-To use service events, ensure you have the minimum required versions of the following components:
+To use service events, make sure you have the minimum required versions of the following components:
 
 1. **Update the ADOT SDK** — Update the AWS Distro for OpenTelemetry (ADOT) instrumentation SDK to the latest version for your language (Java, Python, or Node.js).
 

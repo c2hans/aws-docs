@@ -35,7 +35,7 @@ You can't copy a DB parameter group to a different AWS account or AWS Region.
 ## AWS CLI
 <a name="USER_WorkingWithParamGroups.Copying.CLI"></a>
 
-To copy a DB parameter group, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/copy-db-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/copy-db-parameter-group.html) command with the following required options:
+To copy a DB parameter group, use the AWS CLI [`copy-db-parameter-group`](https://docs.aws.amazon.com/cli/latest/reference/rds/copy-db-parameter-group.html) command with the following required options:
 + `--source-db-parameter-group-identifier`
 + `--target-db-parameter-group-identifier`
 + `--target-db-parameter-group-description`
@@ -63,7 +63,7 @@ aws rds copy-db-parameter-group ^
 ## RDS API
 <a name="USER_WorkingWithParamGroups.Copying.API"></a>
 
-To copy a DB parameter group, use the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CopyDBParameterGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CopyDBParameterGroup.html) operation with the following required parameters:
+To copy a DB parameter group, use the RDS API [`CopyDBParameterGroup`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CopyDBParameterGroup.html) operation with the following required parameters:
 + `SourceDBParameterGroupIdentifier`
 + `TargetDBParameterGroupIdentifier`
 + `TargetDBParameterGroupDescription`

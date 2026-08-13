@@ -262,7 +262,7 @@ The following policy statement allows the requester account or role to retrieve 
 }
 ```
 
-The following policy statement allows the requester account or role to add a grant to a KMS key. The [https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.html#conditions-kms-via-service](https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.html#conditions-kms-via-service) condition key limits use of the KMS key to requests from Amazon Redshift.
+The following policy statement allows the requester account or role to add a grant to a KMS key. The [`kms:ViaService`](https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.html#conditions-kms-via-service) condition key limits use of the KMS key to requests from Amazon Redshift.
 
 ```
 {

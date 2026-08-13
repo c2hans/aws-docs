@@ -207,7 +207,7 @@ To redact PII data, configure and deploy the prebuilt AWS Lambda function `Compr
 
 **To configure and deploy the Lambda function**
 
-1. Sign in to the AWS Management Console and view the [https://console.aws.amazon.com/lambda/home#/create/app?applicationId=arn:aws:serverlessrepo:us-east-1:839782855223:applications/ComprehendPiiRedactionS3ObjectLambda](https://console.aws.amazon.com/lambda/home#/create/app?applicationId=arn:aws:serverlessrepo:us-east-1:839782855223:applications/ComprehendPiiRedactionS3ObjectLambda) function in the AWS Serverless Application Repository.
+1. Sign in to the AWS Management Console and view the [`ComprehendPiiRedactionS3ObjectLambda`](https://console.aws.amazon.com/lambda/home#/create/app?applicationId=arn:aws:serverlessrepo:us-east-1:839782855223:applications/ComprehendPiiRedactionS3ObjectLambda) function in the AWS Serverless Application Repository.
 
 1. For **Application settings**, under **Application name**, keep the default value (`ComprehendPiiRedactionS3ObjectLambda`) for this tutorial.
 

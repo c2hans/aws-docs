@@ -62,7 +62,7 @@ If the task you're running doesn't specify targets, you don;t need to specify ra
 
 1. In the **Input Parameters** section, specify parameters for the runbook. For runbooks, the system auto-populates some of the values. You can keep or replace these values.
 **Important**
-For runbooks, you can optionally specify an Automation Assume Role. If you don't specify a role for this parameter, then the automation assumes the maintenance window service role you choose in step 11. As such, you must ensure that the maintenance window service role you choose has the appropriate AWS Identity and Access Management (IAM) permissions to perform the actions defined within the runbook.
+For runbooks, you can optionally specify an Automation Assume Role. If you don't specify a role for this parameter, then the automation assumes the maintenance window service role you choose in step 11. As such, you must make sure that the maintenance window service role you choose has the appropriate AWS Identity and Access Management (IAM) permissions to perform the actions defined within the runbook.
 For example, the service-linked role for Systems Manager doesn't have the IAM permission `ec2:CreateSnapshot`, which is required to use the runbook `AWS-CopySnapshot`. In this scenario, you must either use a custom maintenance window service role or specify an Automation assume role that has `ec2:CreateSnapshot` permissions. For information, see [Setting up Automation](automation-setup.md).
 
 1. In the ** IAM service role** area, choose a role to provide permissions for Systems Manager to start the automation.
@@ -108,7 +108,7 @@ Before you complete the following procedure, you must create a maintenance windo
 
 **Note**
 If you configure an automation as a registered task by using the AWS CLI, use the `--Task-Invocation-Parameters` parameter to specify parameters to pass to a task when it runs. Don't use the `--Task-Parameters` parameter. The `--Task-Parameters` parameter is a legacy parameter.
-For maintenance window tasks without a target specified, you can't supply values for `--max-errors` and `--max-concurrency`. Instead, the system inserts a placeholder value of `1`, which might be reported in the response to commands such as [https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-maintenance-window-tasks.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-maintenance-window-tasks.html) and [https://docs.aws.amazon.com/cli/latest/reference/ssm/get-maintenance-window-task.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-maintenance-window-task.html). These values don't affect the running of your task and can be ignored.
+For maintenance window tasks without a target specified, you can't supply values for `--max-errors` and `--max-concurrency`. Instead, the system inserts a placeholder value of `1`, which might be reported in the response to commands such as [describe-maintenance-window-tasks](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-maintenance-window-tasks.html) and [get-maintenance-window-task](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-maintenance-window-task.html). These values don't affect the running of your task and can be ignored.
 For information about maintenance window tasks that don't require targets, see [Registering maintenance window tasks without targets](maintenance-windows-targetless-tasks.md).
 
 ------
@@ -130,7 +130,7 @@ For information about maintenance window tasks that don't require targets, see [
 
 **Note**
 If you configure an automation as a registered task by using the AWS CLI, use the `--task-invocation-parameters` parameter to specify parameters to pass to a task when it runs. Don't use the `--task-parameters` parameter. The `--task-parameters` parameter is a legacy parameter.
-For maintenance window tasks without a target specified, you can't supply values for `--max-errors` and `--max-concurrency`. Instead, the system inserts a placeholder value of `1`, which might be reported in the response to commands such as [https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-maintenance-window-tasks.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-maintenance-window-tasks.html) and [https://docs.aws.amazon.com/cli/latest/reference/ssm/get-maintenance-window-task.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-maintenance-window-task.html). These values don't affect the running of your task and can be ignored.
+For maintenance window tasks without a target specified, you can't supply values for `--max-errors` and `--max-concurrency`. Instead, the system inserts a placeholder value of `1`, which might be reported in the response to commands such as [describe-maintenance-window-tasks](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-maintenance-window-tasks.html) and [get-maintenance-window-task](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-maintenance-window-task.html). These values don't affect the running of your task and can be ignored.
 For information about maintenance window tasks that don't require targets, see [Registering maintenance window tasks without targets](maintenance-windows-targetless-tasks.md).
 
 ------

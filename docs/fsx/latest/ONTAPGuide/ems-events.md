@@ -86,7 +86,7 @@ For information about the EMS events returned by the `event log show` command, r
 ## EMS event forwarding to a Syslog server
 <a name="ems-log-forwarding"></a>
 
-You can configure EMS events to forward notifications to a Syslog server. EMS event forwarding is used for real-time monitoring of your file system to determine and isolate root causes for a wide range of issues. If your environment doesn't already contain a Syslog server for event notifications, you must first create one. DNS must be configured on the file system to resolve the Syslog server name.
+You can configure EMS events to forward notifications to a Syslog server. EMS event forwarding is used for real-time monitoring of your file system to determine and isolate root causes for a wide range of issues. If your environment doesn't already contain a Syslog server for event notifications, you must first create one. The Syslog destination must be specified by IP address; hostname-based destinations are not supported.
 
 **Note**
 Your Syslog destination must be located in the primary subnet that is used by your file system.
@@ -101,7 +101,7 @@ Your Syslog destination must be located in the primary subnet that is used by yo
 
 1. Use the [event notification destination create](https://docs.netapp.com/us-en/ontap-cli-9131/event-notification-destination-create.html) command to create an event notification destination of type `syslog`, specifying the following attributes:
    + `{{dest_name}}` – The name of the notification destination that is to be created (for example, `syslog-ems`). An event notification destination name must be 2 to 64 characters long. Valid characters are the following ASCII characters: A-Z, a-z, 0-9, "\_", and "-". The name must start and end with: A-Z, a-z, or 0-9.
-   + `{{syslog_name}}` – The Syslog server host name or IP address that Syslog messages are sent to.
+   + `{{syslog_name}}` – The IP address of the Syslog server that Syslog messages are sent to. Hostnames are not supported.
    + `{{transport_protocol}}` – The protocol used to send the events:
      + `udp-unencrypted` – User Datagram Protocol with no security. This is the default protocol.
      + `tcp-unencrypted` – Transmission Control Protocol with no security.

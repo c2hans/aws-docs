@@ -120,7 +120,7 @@ Valid only if the notification target is an Amazon SNS topic or an Amazon SQS qu
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name. For example: `mylifecyclehook`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-autoscaling-lifecyclehook--examples"></a>

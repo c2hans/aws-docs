@@ -11,7 +11,7 @@ You can also optionally send extended metrics to CloudWatch. For more informatio
 
 These metrics are published in the metric namespace named `AWS/RUM`. All of the following metrics are published with an `application_name` dimension. The value of this dimension is the name of the app monitor. Some metrics are also published with additional dimensions, as listed in the following table.
 
-**Web metrics**
+The following table describes the web metrics.
 
 | Metric | Unit | Description |
 | --- | --- | --- |
@@ -42,8 +42,6 @@ These metrics are published in the metric namespace named `AWS/RUM`. All of the 
 | `WebVitalsInteractionToNextPaint` | Milliseconds | Tracks the value of the interaction to next paint events. |
 
 You can configure extended metrics for your mobile application to provide additional dimensions for analysis.
-
-**Mobile metrics**
 
 | Metric | Unit | Description |
 | --- | --- | --- |

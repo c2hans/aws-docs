@@ -8,7 +8,9 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/entru
 ## Integrating with Entrust IDaaS
 <a name="entrust-idaas-integration"></a>
 
-Entrust Identity as a Service (IDaaS) is a cloud-based Identity and Access Management (IAM) platform that provides multi-factor authentication (MFA), single sign-on (SSO), adaptive risk-based authentication, and comprehensive audit logging across workforce, consumer, and citizen use cases. CloudWatch pipeline uses the Entrust IDaaS Administration REST API to retrieve identity and access events from your IDaaS tenant. The Administration REST API provides access to two primary log categories: Authentication Logs (capturing user authentication events across multiple event types including MFA, SSO, SAML, OIDC, and passwordless authentication methods) and Management Logs (tracking administrative actions and changes performed across various entity types such as users, groups, applications, tokens, and policies).
+Entrust Identity as a Service (IDaaS) is a cloud-based Identity and Access Management (IAM) platform that provides multi-factor authentication (MFA), single sign-on (SSO), adaptive risk-based authentication, and comprehensive audit logging across workforce, consumer, and citizen use cases. CloudWatch pipeline uses the Entrust IDaaS Administration REST API to retrieve identity and access events from your IDaaS tenant.
+
+The Administration REST API provides access to two primary log categories. Authentication Logs capture user authentication events across multiple event types, including MFA, SSO, SAML, OIDC, and passwordless authentication methods. Management Logs track administrative actions and changes performed across various entity types such as users, groups, applications, tokens, and policies.
 
 ## Authenticating with Entrust IDaaS
 <a name="entrust-idaas-authentication"></a>
@@ -27,7 +29,7 @@ To read the logs, the pipeline needs to authenticate with your Entrust IDaaS ten
 ## Configuring the CloudWatch Pipeline
 <a name="entrust-idaas-pipeline-config"></a>
 
-To configure the pipeline to read audit logs from Entrust IDaaS, choose `entrust_idaas` as the data source. Fill in the required information such as your tenant `hostname` and the AWS Secrets Manager secret ARN for your credentials where `client_id` and `client_secret` are stored. Once you create the pipeline, data will be available in the selected CloudWatch Logs log group.
+To configure the pipeline to read audit logs from Entrust IDaaS, choose `entrust_idaas` as the data source. Fill in the required information such as your tenant `hostname` and the AWS Secrets Manager secret ARN for your credentials where `client_id` and `client_secret` are stored. After you create the pipeline, data will be available in the selected CloudWatch Logs log group.
 
 ## Supported Open Cybersecurity Schema Framework Event Classes
 <a name="entrust-idaas-ocsf-events"></a>

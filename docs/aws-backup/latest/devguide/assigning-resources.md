@@ -42,7 +42,7 @@ For example, you can opt in to all services which AWS Backup supports, then incl
 ### Service opt-in through AWS CLI
 <a name="backup-optin-cli"></a>
 
-Use the [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UpdateRegionSettings.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UpdateRegionSettings.html) command to change the services (resource types) your account or organization will use AWS Backup to orchestrate backup creation. Use the [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeRegionSettings.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeRegionSettings.html) command to determine which services you have opted into in a specific Region.
+Use the [`aws backup update-region-settings`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UpdateRegionSettings.html) command to change the services (resource types) your account or organization will use AWS Backup to orchestrate backup creation. Use the [`aws backup describe-region-settings`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeRegionSettings.html) command to determine which services you have opted into in a specific Region.
 
 ## Backup plan resource assignment
 <a name="backup-resource-assignment"></a>

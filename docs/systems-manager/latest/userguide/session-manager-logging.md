@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/session
 # Enabling and disabling session logging
 <a name="session-manager-logging"></a>
 
-Session logging records information about current and completed sessions in the Systems Manager console. You can also log details about commands run during sessions in your AWS account. Session logging enables you to do the following:
+Session logging records information about current and completed sessions in the Systems Manager console. You can also log details about commands run during sessions in your AWS account. Session logging lets you do the following:
 + Create and store session logs for archival purposes.
 + Generate a report showing details of every connection made to your managed nodes using Session Manager over the past 30 days.
 + Generate notifications for session logging in your AWS account, such as Amazon Simple Notification Service (Amazon SNS) notifications.
@@ -25,7 +25,7 @@ Session Manager logs the commands you enter and their output during a session de
   $Passwd = Read-Host -AsSecureString
   ```
 If you're using Windows Server 2012 or earlier, the data in your logs might not be formatted optimally. We recommend using Windows Server 2012 R2 and later for optimal log formats.
-If you're using Linux or macOS managed nodes, ensure that the screen utility is installed. If it isn't, your log data might be truncated. On Amazon Linux 2, AL2023 and Ubuntu Server, the screen utility is installed by default. To install screen manually, depending on your version of Linux, run either `sudo yum install screen` or `sudo apt-get install screen`.
+If you're using Linux or macOS managed nodes, make sure that the screen utility is installed. If it isn't, your log data might be truncated. On Amazon Linux 2, AL2023 and Ubuntu Server, the screen utility is installed by default. To install screen manually, depending on your version of Linux, run either `sudo yum install screen` or `sudo apt-get install screen`.
 Logging isn't available for Session Manager sessions that connect through port forwarding or SSH. This is because SSH encrypts all session data within the secure TLS connection established between the AWS CLI and Session Manager endpoints, and Session Manager only serves as a tunnel for SSH connections.
 
 For more information about the permissions required to use Amazon S3 or Amazon CloudWatch Logs for logging session data, see [Creating an IAM role with permissions for Session Manager and Amazon S3 and CloudWatch Logs (console)](getting-started-create-iam-instance-profile.md#create-iam-instance-profile-ssn-logging).

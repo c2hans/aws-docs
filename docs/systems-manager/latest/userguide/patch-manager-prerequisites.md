@@ -9,15 +9,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 
 Make sure that you have met the required prerequisites before using Patch Manager, a tool in AWS Systems Manager.
 
-**Topics**
-+ [SSM Agent version](#agent-versions)
-+ [Python version](#python-version)
-+ [Additional package requirements](#additional-package-requirements)
-+ [Connectivity to the patch source](#source-connectivity)
-+ [S3 endpoint access](#s3-endpoint-access)
-+ [Permissions to install patches locally](#local-installation-permissions)
-+ [Supported operating systems for Patch Manager](#supported-os)
-
 ## SSM Agent version
 <a name="agent-versions"></a>
 
@@ -43,9 +34,9 @@ dnf install zstd xz unzip
 ## Connectivity to the patch source
 <a name="source-connectivity"></a>
 
-If your managed nodes don't have a direct connection to the Internet and you're using an Amazon Virtual Private Cloud (Amazon VPC) with a VPC endpoint, you must ensure that the nodes have access to the source patch repositories (repos). On Linux nodes, patch updates are typically downloaded from the remote repos configured on the node. Therefore, the node must be able to connect to the repos so the patching can be performed. For more information, see [How security patches are selected](patch-manager-selecting-patches.md).
+If your managed nodes don't have a direct connection to the Internet and you're using an Amazon Virtual Private Cloud (Amazon VPC) with a VPC endpoint, you must make sure that the nodes have access to the source patch repositories (repos). On Linux nodes, patch updates are typically downloaded from the remote repos configured on the node. Therefore, the node must be able to connect to the repos so the patching can be performed. For more information, see [How security patches are selected](patch-manager-selecting-patches.md).
 
-When patching a node that is running in an IPv6 only environment, ensure that the node has connectivity to the patch source. You can check the Run Command output from the patching execution to check for warnings about inaccessible repositories. For DNF-based operating systems, it is possible to configure unavailable repositories to be skipped during patching if the `skip_if_unavailable` option is set to `True` under `/etc/dnf/dnf.conf`. DNF-based operating systems include Amazon Linux 2023, Red Hat Enterprise Linux 8 and later versions, Oracle Linux 8 and later versions, Rocky Linux, AlmaLinux, & CentOS 8 and later versions. On Amazon Linux 2023, the `skip_if_unavailable` option is set to `True` by default.
+When patching a node that is running in an IPv6 only environment, make sure that the node has connectivity to the patch source. You can check the Run Command output from the patching execution to check for warnings about inaccessible repositories. For DNF-based operating systems, it is possible to configure unavailable repositories to be skipped during patching if the `skip_if_unavailable` option is set to `True` under `/etc/dnf/dnf.conf`. DNF-based operating systems include Amazon Linux 2023, Red Hat Enterprise Linux 8 and later versions, Oracle Linux 8 and later versions, Rocky Linux, AlmaLinux, & CentOS 8 and later versions. On Amazon Linux 2023, the `skip_if_unavailable` option is set to `True` by default.
 
 **CentOS Stream: Enable the `EnableNonSecurity` flag**
 CentOS Stream nodes uses DNF as the package manager, which uses the concept of an update notice. An update notice is simply a collection of packages that fix specific problems.
@@ -53,7 +44,7 @@ CentOS Stream nodes uses DNF as the package manager, which uses the concept of a
 However, CentOS Stream default repos aren't configured with an update notice. This means that Patch Manager doesn't detect packages on default CentOS Stream repos. To allow Patch Manager to process packages that aren't contained in an update notice, you must turn on the `EnableNonSecurity` flag in the patch baseline rules.
 
 **Windows Server: Ensure connectivity to Windows Update Catalog or Windows Server Update Services (WSUS)**
-Windows Server managed nodes must be able to connect to the Windows Update Catalog or Windows Server Update Services (WSUS). Confirm that your nodes have connectivity to the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/home.aspx) through an internet gateway, NAT gateway, or NAT instance. If you are using WSUS, confirm that the node has connectivity to the WSUS server in your environment. For more information, see [Issue: managed node doesn't have access to Windows Update Catalog or WSUS](patch-manager-troubleshooting.md#patch-manager-troubleshooting-instance-access).
+Windows Server managed nodes must be able to connect to the Windows Update Catalog or Windows Server Update Services (WSUS). Confirm that your nodes have connectivity to the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/home.aspx) through an internet gateway, NAT gateway, or NAT instance. If you are using WSUS, confirm that the node has connectivity to the WSUS server in your environment. If a firewall restricts outbound traffic, allow the Microsoft domains that Windows Update requires. For more information about configuring your firewall, see [Configure your firewall to allow your first WSUS server to connect to Microsoft domains on the internet](https://learn.microsoft.com/en-us/windows-server/administration/windows-server-update-services/deploy/2-configure-wsus#211-configure-your-firewall-to-allow-your-first-wsus-server-to-connect-to-microsoft-domains-on-the-internet) on the Microsoft Learn website. For more information about connectivity issues, see [Issue: managed node doesn't have access to Windows Update Catalog or WSUS](patch-manager-troubleshooting.md#patch-manager-troubleshooting-instance-access).
 
 ## S3 endpoint access
 <a name="s3-endpoint-access"></a>
@@ -65,7 +56,7 @@ Whether your managed nodes operate in a private or public network, without acces
 
 On Windows Server and Linux operating systems, Patch Manager assumes the Administrator and root user accounts, respectively, to install patches.
 
-On macOS, however, for Brew and Brew Cask, Homebrew doesn't support its commands running under the root user account. As a result, Patch Manager queries for and runs Homebrew commands as either the owner of the Homebrew directory, or as a valid user belonging to the Homebrew directory’s owner group. Therefore, in order to install patches, the owner of the `homebrew` directory also needs recursive owner permissions for the `/usr/local` directory.
+On macOS, however, for Brew and Brew Cask, Homebrew doesn't support its commands running under the root user account. As a result, Patch Manager queries for and runs Homebrew commands as either the owner of the Homebrew directory, or as a valid user belonging to the Homebrew directory’s owner group. Therefore, to install patches, the owner of the `homebrew` directory also needs recursive owner permissions for the `/usr/local` directory.
 
 **Tip**
 The following command provides this permission for the specified user:
@@ -77,7 +68,7 @@ sudo chown -R {{$USER}}:admin /usr/local
 ## Supported operating systems for Patch Manager
 <a name="supported-os"></a>
 
-The Patch Manager tool might not support all the same operating systems versions that are supported by other Systems Manager tools. (For the full list of Systems Manager-supported operating systems, see [Supported operating systems for Systems Manager](operating-systems-and-machine-types.md#prereqs-operating-systems).) Therefore, ensure that the managed nodes you want to use with Patch Manager are running one of the operating systems listed in the following table.
+The Patch Manager tool might not support all the same operating systems versions that are supported by other Systems Manager tools. (For the full list of Systems Manager-supported operating systems, see [Supported operating systems for Systems Manager](operating-systems-and-machine-types.md#prereqs-operating-systems).) Therefore, make sure that the managed nodes you want to use with Patch Manager are running one of the operating systems listed in the following table.
 
 **Note**
 Patch Manager relies on the patch repositories that are configured on a managed node, such as Windows Update Catalog and Windows Server Update Services for Windows, to retrieve available patches to install. Therefore, for end of life (EOL) operating system versions, if no new updates are available, Patch Manager might not be able to report on the new updates. This can be because no new updates are released by the Linux distribution maintainer, Microsoft, or Apple, or because the managed node does not have the proper license to access the new updates.

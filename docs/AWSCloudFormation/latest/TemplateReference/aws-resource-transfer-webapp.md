@@ -117,7 +117,7 @@ A union that contains the value for number of concurrent connections or the user
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the web app ARN, such as `arn:aws:transfer:us-east-2:123456789012:webapp/webapp-01234567890abcdef` .
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-transfer-webapp-return-values-fn--getatt"></a>

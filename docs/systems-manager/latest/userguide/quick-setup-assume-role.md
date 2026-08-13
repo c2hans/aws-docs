@@ -16,9 +16,9 @@ Systems Manager Quick Setup requires a role that allows Systems Manager to secur
 
 1. In the navigation pane, choose **Policies**, and then **Create Policy**
 
-1. Add the `SsmOnboardingInlinePolicy` policy using the JSON below. (This policy enables actions required in order to attach instance profile permissions to instances you specify. For example allowing creation of instance profiles and associating them with EC2 instances).
+1. Add the `SsmOnboardingInlinePolicy` policy using the JSON below. This policy enables actions required to attach instance profile permissions to instances you specify. For example, it lets you create instance profiles and associate them with EC2 instances.
 
-1. Once complete, in the navigation pane, choose **Roles**, and then choose **Create role**.
+1. After completing this step, in the navigation pane, choose **Roles**, and then choose **Create role**.
 
 1. For **Trusted entity type**, keep it as default (service).
 
@@ -92,7 +92,7 @@ The following policy defines the permissions for Systems Manager Quick Setup:
 ```
 
 **Trust Relationship**
-*This is added automatically via the above steps*
+*This is added automatically through the preceding steps*
 
 ```
 {

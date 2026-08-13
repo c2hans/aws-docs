@@ -208,7 +208,7 @@ To create a Python Pika client base class that defines a constructor and provide
 ## Step four: (Optional) Set up an event loop and consume messages
 <a name="amazon-mq-rabbitmq-pika-consumer-basic-consume"></a>
 
- To consume multiple messages from a queue, use Pika's [https://pika.readthedocs.io/en/stable/modules/channel.html#pika.channel.Channel.basic_consume](https://pika.readthedocs.io/en/stable/modules/channel.html#pika.channel.Channel.basic_consume) method and a callback function as shown in the following
+ To consume multiple messages from a queue, use Pika's [`basic_consume`](https://pika.readthedocs.io/en/stable/modules/channel.html#pika.channel.Channel.basic_consume) method and a callback function as shown in the following
 
 1.  In `consumer.py`, add the following method definition to the `BasicMessageReceiver` class.
 

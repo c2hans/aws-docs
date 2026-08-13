@@ -358,6 +358,6 @@ All errors that exceed the limit will be recorded \_error\_code and \_error\_mes
 ## References
 <a name="reference-link-3"></a>
 
- [https://github.com/awslabs/clickstream-flutter](https://github.com/awslabs/clickstream-flutter)
+ [*Source code*](https://github.com/awslabs/clickstream-flutter)
 
- [https://github.com/awslabs/clickstream-flutter/issues](https://github.com/awslabs/clickstream-flutter/issues)
+ [*Project issue*](https://github.com/awslabs/clickstream-flutter/issues)

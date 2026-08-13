@@ -64,11 +64,11 @@ Workloads scale from simple job bundles that users submit to a queue with either
 
       ```
       if [[ "$(uname)" == MINGW* || "$(uname -s)" == MSYS_NT* ]]; then
-          # Code for Windows
+          : # Code for Windows
       elif [[ "$(uname)" == Darwin ]]; then
-          # Code for MacOS
+          : # Code for MacOS
       else
-          # Code for Linux and other operating systems
+          : # Code for Linux and other operating systems
       fi
       ```
   +  You can write portable Python scripts using `pathlib` to handle file system path differences and avoid operating-specific features. The Python documentation includes annotations for this, for example in the [signal library documentation](https://docs.python.org/3/library/signal.html). Linux-specific feature support is marked as "Availability: Linux."

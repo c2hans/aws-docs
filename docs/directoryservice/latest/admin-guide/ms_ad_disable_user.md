@@ -50,7 +50,7 @@ When you disable a user's account, the user loses any permissions to access thei
 aws ds-data disable-user --directory-id {{d-1234567890}} --sam-account-name "{{jane.doe}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-data/disable-user.html](https://docs.aws.amazon.com//cli/latest/reference/ds-data/disable-user.html).
+For more information, see [`disable-user`](https://docs.aws.amazon.com//cli/latest/reference/ds-data/disable-user.html).
 
 **Note**
  To re-enable your user account, you must reset the user's password. For more information, see [Resetting and enabling an AWS Managed Microsoft AD user's password](ms_ad_reset_user_pswd.md).
@@ -67,7 +67,7 @@ For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-
 Disable-DSDUser -DirectoryId {{d-1234567890}} -SAMAccountName "{{jane.doe}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Disable-DSDUser.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Disable-DSDUser.html).
+For more information, see [`Disable-DSDUser`](https://docs.aws.amazon.com//powershell/latest/reference/items/Disable-DSDUser.html).
 
 **Note**
  To re-enable your user account, you must reset the user's password. For more information, see [Resetting and enabling an AWS Managed Microsoft AD user's password](ms_ad_reset_user_pswd.md).

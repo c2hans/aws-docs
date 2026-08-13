@@ -87,7 +87,7 @@ For more information, see [Private CA administration](https://docs.aws.amazon.co
 
 **To create and install a certificate for your private root CA (AWS CLI)**
 
-1. Generate a certificate signing request (CSR) using the [https://docs.aws.amazon.com/cli/latest/reference/acm-pca/get-certificate-authority-csr.html](https://docs.aws.amazon.com/cli/latest/reference/acm-pca/get-certificate-authority-csr.html) AWS CLI command.
+1. Generate a certificate signing request (CSR) using the [`get-certificate-authority-csr`](https://docs.aws.amazon.com/cli/latest/reference/acm-pca/get-certificate-authority-csr.html) AWS CLI command.
 
    ```
    $ aws acm-pca get-certificate-authority-csr \
@@ -120,7 +120,7 @@ For more information, see [Private CA administration](https://docs.aws.amazon.co
 
    For more information, see [Installing a root CA certificate](https://docs.aws.amazon.com/privateca/latest/userguide/PCACertInstall.html#InstallRoot) in the AWS Private Certificate Authority User Guide.
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/acm-pca/issue-certificate.html](https://docs.aws.amazon.com/cli/latest/reference/acm-pca/issue-certificate.html) AWS CLI command to issue and install the root certificate on your private CA.
+1. Use the [`issue-certificate`](https://docs.aws.amazon.com/cli/latest/reference/acm-pca/issue-certificate.html) AWS CLI command to issue and install the root certificate on your private CA.
 
    ```
    $ aws acm-pca issue-certificate \
@@ -131,7 +131,7 @@ For more information, see [Private CA administration](https://docs.aws.amazon.co
         --validity Value=3650,Type=DAYS --region {{aws-region}}
    ```
 
-1. Download the root certificate using the [https://docs.aws.amazon.com/cli/latest/reference/acm-pca/get-certificate.html](https://docs.aws.amazon.com/cli/latest/reference/acm-pca/get-certificate.html) AWS CLI command.
+1. Download the root certificate using the [`get-certificate`](https://docs.aws.amazon.com/cli/latest/reference/acm-pca/get-certificate.html) AWS CLI command.
 
    ```
    $ aws acm-pca get-certificate \
@@ -140,7 +140,7 @@ For more information, see [Private CA administration](https://docs.aws.amazon.co
        --output text --region {{aws-region}} > rootCA.pem
    ```
 
-1. Install the root certificate on your private CA using the [https://docs.aws.amazon.com/cli/latest/reference/acm-pca/import-certificate-authority-certificate.html](https://docs.aws.amazon.com/cli/latest/reference/acm-pca/import-certificate-authority-certificate.html) AWS CLI command.
+1. Install the root certificate on your private CA using the [`import-certificate-authority-certificate`](https://docs.aws.amazon.com/cli/latest/reference/acm-pca/import-certificate-authority-certificate.html) AWS CLI command.
 
    ```
    $ aws acm-pca import-certificate-authority-certificate \
@@ -150,7 +150,7 @@ For more information, see [Private CA administration](https://docs.aws.amazon.co
 
 **Generate and export the file system and client certificate**
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/acm/request-certificate.html](https://docs.aws.amazon.com/cli/latest/reference/acm/request-certificate.html) AWS CLI command to request an AWS Certificate Manager certificate to use on your file system and clients.
+1. Use the [`request-certificate`](https://docs.aws.amazon.com/cli/latest/reference/acm/request-certificate.html) AWS CLI command to request an AWS Certificate Manager certificate to use on your file system and clients.
 
    ```
    $ aws acm request-certificate \
@@ -164,7 +164,7 @@ For more information, see [Private CA administration](https://docs.aws.amazon.co
 
 1. For security, you must assign a passphrase for the private key when exporting it. Create a passphrase and store it in a file named `passphrase.txt`
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/acm/export-certificate.html](https://docs.aws.amazon.com/cli/latest/reference/acm/export-certificate.html) AWS CLI command to export the private certificate issued previously. The exported file contains the certificate, the certificate chain, and the encrypted private 2048-bit RSA key associated with the public key that is embedded in the certificate. For security, you must assign a passphrase for the private key when exporting it. The following example is for a Linux EC2 instance.
+1. Use the [`export-certificate`](https://docs.aws.amazon.com/cli/latest/reference/acm/export-certificate.html) AWS CLI command to export the private certificate issued previously. The exported file contains the certificate, the certificate chain, and the encrypted private 2048-bit RSA key associated with the public key that is embedded in the certificate. For security, you must assign a passphrase for the private key when exporting it. The following example is for a Linux EC2 instance.
 
    ```
    $ aws acm export-certificate \

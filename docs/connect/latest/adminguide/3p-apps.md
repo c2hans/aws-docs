@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/3p-apps.html
 # Integrate third-party applications (3p apps) in the Connect Customer agent workspace
 <a name="3p-apps"></a>
 
-Connect Customer agent workspace is a single, intuitive application that provides your agents with the tools and step-by-step guidance they need to resolve issues efficiently, improve customer experiences, and onboard faster. In addition to using first-party applications in your agent workspace, such as Customer Profiles, Cases, and Connect AI agents, you can integrate third-party applications.
+Connect Customer agent workspace is a single, intuitive application that provides your agents with the tools and step-by-step guidance they need to resolve issues efficiently, improve customer experiences, and onboard faster. In addition to using first-party applications in your agent workspace, such as Customer Profiles, Cases, and agent assist, you can integrate third-party applications.
 
 **Note**
  This functionality is only supported in the default agent workspace; it is not supported when using a custom CCP.

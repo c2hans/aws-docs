@@ -49,7 +49,7 @@ WHERE
     c.oid = 186752608;
 ```
 
-For more information, see the PostgreSQL documentation [https://www.postgresql.org/docs/current/catalog-pg-class.html](https://www.postgresql.org/docs/current/catalog-pg-class.html) for all the supported object types, noted by the `relkind` column in `pg_class`.
+For more information, see the PostgreSQL documentation [`pg_class`](https://www.postgresql.org/docs/current/catalog-pg-class.html) for all the supported object types, noted by the `relkind` column in `pg_class`.
 
 **Guidance**
 

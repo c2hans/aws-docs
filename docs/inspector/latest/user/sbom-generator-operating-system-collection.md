@@ -44,7 +44,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ope
 +  Alpine Linux
 
 **Note**
- For APK-based systems, the Amazon Inspector SBOM Generator collects package metadata from the [https://wiki.alpinelinux.org/wiki/Apk_spec](https://wiki.alpinelinux.org/wiki/Apk_spec) file.
+ For APK-based systems, the Amazon Inspector SBOM Generator collects package metadata from the [`/lib/apk/db/`](https://wiki.alpinelinux.org/wiki/Apk_spec) file.
 
 ### Key features
 <a name="w2aac39c23b9b7"></a>
@@ -83,7 +83,7 @@ o:zlib
 +  Ubuntu
 
 **Note**
- For DPKG-based systems, the Amazon Inspector SBOM Generator collects package metadata from the [https://www.debian.org/doc/manuals/debian-reference/ch02.en.html](https://www.debian.org/doc/manuals/debian-reference/ch02.en.html) file.
+ For DPKG-based systems, the Amazon Inspector SBOM Generator collects package metadata from the [`/var/lib/dpkg/status`](https://www.debian.org/doc/manuals/debian-reference/ch02.en.html) file.
 
 ### Key features
 <a name="w2aac39c23c11b7"></a>
@@ -140,7 +140,7 @@ Homepage: http://zlib.net/
 +  SUSE Linux Enterprise Server
 
 **Note**
- For RPM-based systems, the Amazon Inspector SBOM Generator collects package metadata from the [https://access.redhat.com/solutions/439953](https://access.redhat.com/solutions/439953) file.
+ For RPM-based systems, the Amazon Inspector SBOM Generator collects package metadata from the [`/var/lib/rpm`](https://access.redhat.com/solutions/439953) file.
 
 ### Key features
 <a name="w2aac39c23c13b7"></a>
@@ -296,7 +296,7 @@ o:ca-certificates
 ## Docker Hardened Images package collection
 <a name="w2aac39c23c23"></a>
 
- [https://docs.docker.com/dhi/](https://docs.docker.com/dhi/) (DHI) are minimal, security-hardened container images. The Amazon Inspector SBOM Generator detects DHI images and namespaces their packages under `dhi` so that vulnerabilities are matched against the hardened distribution.
+ [Docker Hardened Images](https://docs.docker.com/dhi/) (DHI) are minimal, security-hardened container images. The Amazon Inspector SBOM Generator detects DHI images and namespaces their packages under `dhi` so that vulnerabilities are matched against the hardened distribution.
 
 ### Detection
 <a name="w2aac39c23c23b5"></a>

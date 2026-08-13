@@ -45,7 +45,7 @@ The mode that your function URL will be invoked. To have your function return th
 *Valid values*: `BUFFERED` or `RESPONSE_STREAM`
 *Type*: String
 *Required*: No
-*AWS CloudFormation compatibility*: This property is passed directly to the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-url.html#cfn-lambda-url-invokemode](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-url.html#cfn-lambda-url-invokemode) property of an `AWS::Lambda::Url` resource.
+*AWS CloudFormation compatibility*: This property is passed directly to the [`InvokeMode`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-url.html#cfn-lambda-url-invokemode) property of an `AWS::Lambda::Url` resource.
 
 ## Examples
 <a name="sam-property-function-functionurlconfig--examples"></a>

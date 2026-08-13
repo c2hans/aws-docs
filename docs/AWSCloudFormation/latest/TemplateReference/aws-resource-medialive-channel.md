@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Maintenance](#cfn-medialive-channel-maintenance)" : {{MaintenanceCreateSettings}},
       "[Name](#cfn-medialive-channel-name)" : {{String}},
       "[RoleArn](#cfn-medialive-channel-rolearn)" : {{String}},
-      "[Tags](#cfn-medialive-channel-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
+      "[Tags](#cfn-medialive-channel-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
       "[Vpc](#cfn-medialive-channel-vpc)" : {{VpcOutputSettings}}
     }
 }
@@ -79,7 +79,7 @@ Properties:
   [Name](#cfn-medialive-channel-name): {{String}}
   [RoleArn](#cfn-medialive-channel-rolearn): {{String}}
   [Tags](#cfn-medialive-channel-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
   [Vpc](#cfn-medialive-channel-vpc): {{
     VpcOutputSettings}}
 ```
@@ -186,7 +186,7 @@ The IAM role for MediaLive to assume when running this channel. The role is iden
 `Tags`  <a name="cfn-medialive-channel-tags"></a>
 A collection of tags for this channel. Each tag is a key-value pair.
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Vpc`  <a name="cfn-medialive-channel-vpc"></a>
@@ -205,14 +205,14 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 
 For example: `{ "Ref": "myChannel" }`
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-medialive-channel-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-medialive-channel-return-values-fn--getatt-fn--getatt"></a>

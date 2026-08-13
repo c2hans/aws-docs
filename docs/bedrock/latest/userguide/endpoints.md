@@ -50,7 +50,7 @@ The Messages API is available on both endpoints, but the two surfaces do not hav
 
 | Item | `bedrock-runtime` | `bedrock-mantle` |
 | --- | --- | --- |
-| AWS [SigV4](https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-authenticating-requests.html) authentication | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| AWS [SigV4](AmazonS3/latest/API/sig-v4-authenticating-requests.html) authentication | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [Bedrock API key (also works with OpenAI SDK)](api-keys.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [Usage attribution](cost-management.md) | [IAM](cost-mgmt-iam-principal-tracking.md), [per-request metadata tagging](cost-mgmt-request-metadata.md) | [Projects](projects.md), [Workspaces](workspaces.md) |
 

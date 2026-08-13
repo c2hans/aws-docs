@@ -122,12 +122,12 @@ To see a list of what integrated services support waiting for a job to complete 
 **Note**
 Service integrations that use the `.sync` or `.waitForTaskToken` patterns require additional IAM permissions. For more information, see [How Step Functions generates IAM policies for integrated services](service-integration-iam-templates.md).
 
-In some cases, you may want Step Functions to continue your workflow before the job is fully complete. You can achieve this in the same way as when using the [Wait for a Callback with Task Token](#connect-wait-token) service integration pattern. To do this, pass a task token to your job, then return it using a [https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskSuccess.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskSuccess.html) or [https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskFailure.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskFailure.html) API call. Step Functions will use the data you provide in that call to complete the task, stop monitoring the job, and continue the workflow.
+In some cases, you may want Step Functions to continue your workflow before the job is fully complete. You can achieve this in the same way as when using the [Wait for a Callback with Task Token](#connect-wait-token) service integration pattern. To do this, pass a task token to your job, then return it using a [`SendTaskSuccess`](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskSuccess.html) or [`SendTaskFailure`](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskFailure.html) API call. Step Functions will use the data you provide in that call to complete the task, stop monitoring the job, and continue the workflow.
 
 ## Wait for a Callback with Task Token
 <a name="connect-wait-token"></a>
 
-Callback tasks provide a way to pause a workflow until a task token is returned. A task might need to wait for a human approval, integrate with a third party, or call legacy systems. For tasks like these, you can pause Step Functions until the workflow execution reaches the one year service quota (see, [Quotas related to state throttling](service-quotas.md#service-limits-api-state-throttling)), and wait for an external process or workflow to complete. For these situations Step Functions allows you to pass a task token to the AWS SDK service integrations, and also to some Optimized service integrations. The task will pause until it receives that task token back with a [https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskSuccess.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskSuccess.html) or [https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskFailure.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskFailure.html) call.
+Callback tasks provide a way to pause a workflow until a task token is returned. A task might need to wait for a human approval, integrate with a third party, or call legacy systems. For tasks like these, you can pause Step Functions until the workflow execution reaches the one year service quota (see, [Quotas related to state throttling](service-quotas.md#service-limits-api-state-throttling)), and wait for an external process or workflow to complete. For these situations Step Functions allows you to pass a task token to the AWS SDK service integrations, and also to some Optimized service integrations. The task will pause until it receives that task token back with a [`SendTaskSuccess`](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskSuccess.html) or [`SendTaskFailure`](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskFailure.html) call.
 
 If a `Task` state using the callback task token times out, a new random token is generated. You can access the task tokens from the [Context object](input-output-contextobject.md#contextobject-access).
 
@@ -172,7 +172,7 @@ The `"Resource"` field of the task definition that references Amazon SQS include
 
 This tells Step Functions to pause and wait for the task token. When you specify a resource using `.waitForTaskToken`, the task token can be accessed in the `"Parameters"` field of your state definition with a special path designation (`$$.Task.Token`). The initial `$$.` designates that the path accesses the [Context object](#wait-token-contextobject), and gets the task token for the current task in a running execution.
 
-When it's complete, the external service calls [https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskSuccess.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskSuccess.html) or [https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskFailure.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskFailure.html) with the `taskToken` included. Only then does the workflow continue to the next state.
+When it's complete, the external service calls [`SendTaskSuccess`](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskSuccess.html) or [`SendTaskFailure`](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskFailure.html) with the `taskToken` included. Only then does the workflow continue to the next state.
 
 **Note**
 To avoid waiting indefinitely if a process fails to send the task token with `SendTaskSuccess` or `SendTaskFailure`, see [Configure a Heartbeat Timeout for a Waiting Task](#wait-token-hearbeat).
@@ -263,9 +263,9 @@ A task that is waiting for a task token will wait until the execution reaches th
 ```
 
 In this state machine definition, a task pushes a message to Amazon SQS and waits for an external process to call back with the provided task token. The `"HeartbeatSeconds": 600` field sets the heartbeat timeout interval to 10 minutes. The task will wait for the task token to be returned with one of these API actions:
-+ [https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskSuccess.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskSuccess.html)
-+ [https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskFailure.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskFailure.html)
-+ [https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskHeartbeat.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskHeartbeat.html)
++ [`SendTaskSuccess`](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskSuccess.html)
++ [`SendTaskFailure`](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskFailure.html)
++ [`SendTaskHeartbeat`](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskHeartbeat.html)
 
 If the waiting task doesn't receive a valid task token within that 10-minute period, the task fails with a `States.Timeout` error name.
 

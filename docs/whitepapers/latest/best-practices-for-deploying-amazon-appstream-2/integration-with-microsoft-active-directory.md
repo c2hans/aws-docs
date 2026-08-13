@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ## Service options
 <a name="service-options"></a>
 
- Active Directory can also be deployed using [https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html) (AD). AWS Managed Microsoft AD is a fully managed service that allows you to run Microsoft Active Directory. Microsoft Active Directory can also be used in a self-hosted environment, running on EC2 or on-premises.
+ Active Directory can also be deployed using [*AWS Managed Microsoft Active Directory*](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html) (AD). AWS Managed Microsoft AD is a fully managed service that allows you to run Microsoft Active Directory. Microsoft Active Directory can also be used in a self-hosted environment, running on EC2 or on-premises.
 
 ## Deployment scenarios
 <a name="deployment-scenarios"></a>
@@ -76,7 +76,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 **Tip**
  As a best practice, define high cost for site links between on-premises AD DS and the AWS Cloud. The preceding figure is an example of what costs you should assign to the site links (cost 100) to ensure site-independent client affinity.
 
- For more information on site topology, refer to [https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/designing-the-site-topology](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/designing-the-site-topology).
+ For more information on site topology, refer to [*Designing the Site Topology*](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/designing-the-site-topology).
 
 ## Active Directory Organizational Units
 <a name="active-directory-organizational-units"></a>

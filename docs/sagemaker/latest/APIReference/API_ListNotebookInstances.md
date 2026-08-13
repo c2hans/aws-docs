@@ -112,7 +112,7 @@ Required: No
  ** [StatusEquals](#API_ListNotebookInstances_RequestSyntax) **   <a name="sagemaker-ListNotebookInstances-request-StatusEquals"></a>
 A filter that returns only notebook instances with the specified status.
 Type: String
-Valid Values: `Pending | InService | Stopping | Stopped | Failed | Deleting | Updating`
+Valid Values: `Pending | InService | Stopping | Stopped | Failed | Deleting | Updating | PendingMaintenance | InMaintenance`
 Required: No
 
 ## Response Syntax

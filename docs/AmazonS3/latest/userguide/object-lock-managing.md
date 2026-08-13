@@ -29,7 +29,7 @@ S3 buckets with Object Lock can't be used as destination buckets for server acce
 ## Permissions for viewing lock information
 <a name="object-lock-managing-view"></a>
 
-You can programmatically view the Object Lock status of an Amazon S3 object version by using the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html) or [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) operations. Both operations return the retention mode, retain until date, and legal hold status for the specified object version. Additionally, you can view the Object Lock status for multiple objects in your S3 bucket using S3 Inventory.
+You can programmatically view the Object Lock status of an Amazon S3 object version by using the [HeadObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html) or [GetObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) operations. Both operations return the retention mode, retain until date, and legal hold status for the specified object version. Additionally, you can view the Object Lock status for multiple objects in your S3 bucket using S3 Inventory.
 
 To view an object version's retention mode and retention period, you must have the `s3:GetObjectRetention` permission. To view an object version's legal hold status, you must have the `s3:GetObjectLegalHold` permission. To view a bucket's default retention configuration, you must have the `s3:GetBucketObjectLockConfiguration` permission. If you make a request for an Object Lock configuration on a bucket that doesn't have S3 Object Lock enabled, Amazon S3 returns an error.
 

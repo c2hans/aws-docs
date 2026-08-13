@@ -24,5 +24,5 @@ The following table describes the important changes to the documentation since t
 | [New release](#doc-history) | [EMR Serverless 6.13.0](release-version-6130.md) | September 11, 2023 |
 | [New release](#doc-history) | [EMR Serverless 6.12.0](release-version-6120.md) | July 21, 2023 |
 | [New release](#doc-history) | [EMR Serverless 6.11.0](release-version-6110.md) | June 8, 2023 |
-| [Update to service-linked role policy](#doc-history) | Updated the [https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/using-service-linked-roles.html#slr-permissions](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/using-service-linked-roles.html#slr-permissions) SLR role to publish account-level usage in `"AWS/Usage"` namespace. | April 20, 2023 |
+| [Update to service-linked role policy](#doc-history) | Updated the [`AmazonEMRServerlessServiceRolePolicy`](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/using-service-linked-roles.html#slr-permissions) SLR role to publish account-level usage in `"AWS/Usage"` namespace. | April 20, 2023 |
 | [EMR Serverless general availability (GA)](#doc-history) | This is the first public release of EMR Serverless. | June 1, 2022 |

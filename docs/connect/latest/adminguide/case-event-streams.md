@@ -14,5 +14,5 @@ You can use the case event streams to integrate streams into your data lake solu
 
 **Topics**
 + [Set up case event streams](case-event-streams-enable.md)
-+ [Allow Cases to send updates to Contact Lens rules](cases-rules-integration-onboarding.md)
++ [Allow Cases to send updates to conversational analytics rules](cases-rules-integration-onboarding.md)
 + [Case event payload and schema](case-event-streams-sample.md)

@@ -2,18 +2,18 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customize-connect-ai-agents.html
 ---
 
-# Customize Connect AI agents
+# Customize AI agents
 <a name="customize-connect-ai-agents"></a>
 
-You can customize how Connect AI agents work by using the Connect Customer admin website, no coding required. For example, you can customize the tone or format of the responses, the language, or the behavior.
+You can customize how AI agents work by using the Connect Customer admin website, no coding required. For example, you can customize the tone or format of the responses, the language, or the behavior.
 
-Following are a few use cases for how you can customize Connect AI agents:
+Following are a few use cases for how you can customize AI agents:
 + Personalize a response based on data. For example, you want your AI agent to provide a recommendation to a caller based on their loyalty status and past purchase history.
 + Make responses more empathetic because of the line of business that it's in.
 + Create a new tool, such as a self-service password reset for customers.
 + Summarize a conversation and pass it to an agent.
 
- You customize Connect AI agents by creating or editing their AI prompts, AI guardrails, and adding tools.
+ You customize AI agents by creating or editing their AI prompts, AI guardrails, and adding tools.
 
 1. [AI prompt](create-ai-prompts.md): This is a task for the large language model (LLM) to do. It provides a task description or instruction for how the model should perform. For example, *Given a list of customer orders and available inventory, determine which orders can be fulfilled and which items have to be restocked*.
 
@@ -30,5 +30,5 @@ You can edit or create each of these components independently of each other. How
 + [Create AI prompts](create-ai-prompts.md)
 + [Create AI guardrails](create-ai-guardrails.md)
 + [Create AI agents](create-ai-agents.md)
-+ [Set the language for Connect AI agents](ai-agent-configure-language-support.md)
++ [Set the language for AI agents](ai-agent-configure-language-support.md)
 + [Add customer data to an AI agent session](ai-agent-session.md)

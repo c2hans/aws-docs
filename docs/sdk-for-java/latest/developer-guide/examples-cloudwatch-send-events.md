@@ -12,7 +12,7 @@ Amazon EventBridge is the [evolution](https://docs.aws.amazon.com/eventbridge/la
 ## Add events
 <a name="add-events"></a>
 
-To add custom CloudWatch events, call the `CloudWatchEventsClient’s` `putEvents` method with a [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudwatchevents/model/PutEventsRequest.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudwatchevents/model/PutEventsRequest.html) object that contains one or more [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudwatchevents/model/PutEventsRequestEntry.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudwatchevents/model/PutEventsRequestEntry.html) objects that provide details about each event. You can specify several parameters for the entry such as the source and type of the event, resources associated with the event, and so on.
+To add custom CloudWatch events, call the `CloudWatchEventsClient’s` `putEvents` method with a [`PutEventsRequest`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudwatchevents/model/PutEventsRequest.html) object that contains one or more [`PutEventsRequestEntry`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudwatchevents/model/PutEventsRequestEntry.html) objects that provide details about each event. You can specify several parameters for the entry such as the source and type of the event, resources associated with the event, and so on.
 
 **Note**
 You can specify a maximum of 10 events per call to `putEvents`.
@@ -62,7 +62,7 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 ## Add rules
 <a name="add-rules"></a>
 
-To create or update a rule, call the `CloudWatchEventsClient’s` `putRule` method with a [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudwatchevents/model/PutRuleRequest.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudwatchevents/model/PutRuleRequest.html) with the name of the rule and optional parameters such as the [event pattern](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html), IAM role to associate with the rule, and a [scheduling expression](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-schedule.html) that describes how often the rule is run.
+To create or update a rule, call the `CloudWatchEventsClient’s` `putRule` method with a [`PutRuleRequest`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudwatchevents/model/PutRuleRequest.html) with the name of the rule and optional parameters such as the [event pattern](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html), IAM role to associate with the rule, and a [scheduling expression](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-schedule.html) that describes how often the rule is run.
 
  **Imports**
 
@@ -106,7 +106,7 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 
 Targets are the resources that are invoked when a rule is triggered. Example targets include Amazon EC2 instances, Lambda functions, Kinesis streams, Amazon ECS tasks, Step Functions state machines, and built-in targets.
 
-To add a target to a rule, call the `CloudWatchEventsClient’s` `putTargets` method with a [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudwatchevents/model/PutTargetsRequest.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudwatchevents/model/PutTargetsRequest.html) containing the rule to update and a list of targets to add to the rule.
+To add a target to a rule, call the `CloudWatchEventsClient’s` `putTargets` method with a [`PutTargetsRequest`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudwatchevents/model/PutTargetsRequest.html) containing the rule to update and a list of targets to add to the rule.
 
  **Imports**
 

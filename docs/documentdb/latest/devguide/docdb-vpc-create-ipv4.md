@@ -18,7 +18,7 @@ Your cluster needs to be available only to your application, and not to the publ
 
 The procedure in this topic configures an additional public and private subnet in a separate Availability Zone. These subnets aren't used by the procedure. A DocumentDB subnet group requires a subnet in at least two Availability Zones. The additional subnet makes it easier to configure more than one DocumentDB instance.
 
-This topic describes configuring a VPC for Amazon DocumentDB clusters. For more information about Amazon VPC, see the [https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html).
+This topic describes configuring a VPC for Amazon DocumentDB clusters. For more information about Amazon VPC, see the [*Amazon VPC User Guide*](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html).
 
 **Tip**
 You can set up network connectivity between an Amazon EC2 instance and a DocumentDB cluster automatically when you create the cluster. The network configuration is similar to the one described in this scenario. For more information, see [Connect Amazon EC2 automatically](connect-ec2-auto.md).

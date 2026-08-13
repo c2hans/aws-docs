@@ -72,7 +72,7 @@ The AWS CLI provides commands that help you manage the tags that you assign to y
 Use the following commands to assign tags to your existing user pools and identity pools.
 
 **Example `tag-resource` Command for user pools**
-Assign tags to a user pool by using [https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/tag-resource.html](https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/tag-resource.html) within the `cognito-idp` set of commands:
+Assign tags to a user pool by using [`tag-resource`](https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/tag-resource.html) within the `cognito-idp` set of commands:
 
 ```
 $ aws cognito-idp tag-resource \
@@ -91,7 +91,7 @@ $ aws cognito-idp tag-resource \
 ```
 
 **Example `tag-resource` Command for identity pools**
-Assign tags to an identity pool by using [https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/tag-resource.html](https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/tag-resource.html) within the `cognito-identity` set of commands:
+Assign tags to an identity pool by using [`tag-resource`](https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/tag-resource.html) within the `cognito-identity` set of commands:
 
 ```
 $ aws cognito-identity tag-resource \
@@ -115,14 +115,14 @@ $ aws cognito-identity tag-resource \
 Use the following commands to view the tags that you have assigned to your user pools and identity pools.
 
 **Example `list-tags-for-resource` Command for user pools**
-View the tags that are assigned to a user pool by using [https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/list-tags-for-resource.html](https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/list-tags-for-resource.html) within the `cognito-idp` set of commands:
+View the tags that are assigned to a user pool by using [`list-tags-for-resource`](https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/list-tags-for-resource.html) within the `cognito-idp` set of commands:
 
 ```
 $ aws cognito-idp list-tags-for-resource --resource-arn {{user-pool-arn}}
 ```
 
 **Example `list-tags-for-resource` Command for identity pools**
-View the tags that are assigned to an identity pool by using [https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/list-tags-for-resource.html](https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/list-tags-for-resource.html) within the `cognito-identity` set of commands:
+View the tags that are assigned to an identity pool by using [`list-tags-for-resource`](https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/list-tags-for-resource.html) within the `cognito-identity` set of commands:
 
 ```
 $ aws cognito-identity list-tags-for-resource --resource-arn {{identity-pool-arn}}
@@ -134,7 +134,7 @@ $ aws cognito-identity list-tags-for-resource --resource-arn {{identity-pool-arn
 Use the following commands to remove tags from your user pools and identity pools.
 
 **Example `untag-resource` Command for user pools**
-Remove tags from a user pool by using [https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/untag-resource.html](https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/untag-resource.html) within the `cognito-idp` set of commands:
+Remove tags from a user pool by using [`untag-resource`](https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/untag-resource.html) within the `cognito-idp` set of commands:
 
 ```
 $ aws cognito-idp untag-resource \
@@ -144,7 +144,7 @@ $ aws cognito-idp untag-resource \
 For the `--tag-keys` parameter, specify one or more tag keys. Don't include the tag values. Separate keys with spaces.
 
 **Example `untag-resource` Command for identity pools**
-Remove tags from an identity pool by using [https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/untag-resource.html](https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/untag-resource.html) within the `cognito-identity` set of commands:
+Remove tags from an identity pool by using [`untag-resource`](https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/untag-resource.html) within the `cognito-identity` set of commands:
 
 ```
 $ aws cognito-identity untag-resource \
@@ -162,7 +162,7 @@ After you delete a user or identity pool, tags related to the deleted pool can s
 Use the following commands to assign tags at the moment you create a user pool or identity pool.
 
 **Example `create-user-pool` Command with tags**
-When you create a user pool by using the [https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/create-user-pool.html](https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/create-user-pool.html) command, you can specify tags with the `--user-pool-tags` parameter:
+When you create a user pool by using the [`create-user-pool`](https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/create-user-pool.html) command, you can specify tags with the `--user-pool-tags` parameter:
 
 ```
 $ aws cognito-idp create-user-pool \
@@ -172,7 +172,7 @@ $ aws cognito-idp create-user-pool \
 Key-value pairs for tags must be in the format `{{key}}={{value}}`. If you are adding multiple tags, specify them in a comma-separated list.
 
 **Example `create-identity-pool` Command with tags**
-When you create an identity pool by using the [https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/create-identity-pool.html](https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/create-identity-pool.html) command, you can specify tags with the `--identity-pool-tags` parameter:
+When you create an identity pool by using the [`create-identity-pool`](https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/create-identity-pool.html) command, you can specify tags with the `--identity-pool-tags` parameter:
 
 ```
 $ aws cognito-identity create-identity-pool \

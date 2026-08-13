@@ -12,8 +12,8 @@ The `AWS::Greengrass::ResourceDefinition` resource represents a resource definit
 Resource definitions can reference multiple resource definition versions. All resource definition versions must be associated with a resource definition. Each resource definition version can contain one or more resources. (In CloudFormation, resources are named *resource instances*.)
 
 **Note**
-When you create a resource definition, you can optionally include an initial resource definition version. To associate a resource definition version later, create an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinitionversion.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinitionversion.html) resource and specify the ID of this resource definition.
-After you create the resource definition version that contains the resources you want to deploy, you must add it to your group version. For more information, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html).
+When you create a resource definition, you can optionally include an initial resource definition version. To associate a resource definition version later, create an [`AWS::Greengrass::ResourceDefinitionVersion`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinitionversion.html) resource and specify the ID of this resource definition.
+After you create the resource definition version that contains the resources you want to deploy, you must add it to your group version. For more information, see [`AWS::Greengrass::Group`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html).
 
 ## Syntax
 <a name="aws-resource-greengrass-resourcedefinition-syntax"></a>
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[InitialVersion](#cfn-greengrass-resourcedefinition-initialversion)" : {{ResourceDefinitionVersion}},
       "[Name](#cfn-greengrass-resourcedefinition-name)" : {{String}},
-      "[Tags](#cfn-greengrass-resourcedefinition-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}}
+      "[Tags](#cfn-greengrass-resourcedefinition-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}}
     }
 }
 ```
@@ -44,15 +44,15 @@ Properties:
     ResourceDefinitionVersion}}
   [Name](#cfn-greengrass-resourcedefinition-name): {{String}}
   [Tags](#cfn-greengrass-resourcedefinition-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
 ```
 
 ## Properties
 <a name="aws-resource-greengrass-resourcedefinition-properties"></a>
 
 `InitialVersion`  <a name="cfn-greengrass-resourcedefinition-initialversion"></a>
-The resource definition version to include when the resource definition is created. A resource definition version contains a list of [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourceinstance.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourceinstance.html) property types.
-To associate a resource definition version after the resource definition is created, create an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinitionversion.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinitionversion.html) resource and specify the ID of this resource definition.
+The resource definition version to include when the resource definition is created. A resource definition version contains a list of [`resource instance`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourceinstance.html) property types.
+To associate a resource definition version after the resource definition is created, create an [`AWS::Greengrass::ResourceDefinitionVersion`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinitionversion.html) resource and specify the ID of this resource definition.
 *Required*: No
 *Type*: [ResourceDefinitionVersion](aws-properties-greengrass-resourcedefinition-resourcedefinitionversion.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -75,7 +75,7 @@ This `Json` property type is processed as a map of key-value pairs. It uses the 
 }
 ```
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
@@ -86,14 +86,14 @@ This `Json` property type is processed as a map of key-value pairs. It uses the 
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the resource definition, such as `1234a5b6-78cd-901e-2fgh-3i45j6k178l9`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-greengrass-resourcedefinition-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-greengrass-resourcedefinition-return-values-fn--getatt-fn--getatt"></a>
@@ -118,7 +118,7 @@ The name of the `ResourceDefinition`, such as `MyResourceDefinition`.
 
 The following snippet defines a resource definition resource with an initial version that contains each type of resource.
 
-For an example of a complete template, see the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html) resource.
+For an example of a complete template, see the [`AWS::Greengrass::Group`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html) resource.
 
 #### JSON
 <a name="aws-resource-greengrass-resourcedefinition--examples--Resource_Definition_Snippet--json"></a>

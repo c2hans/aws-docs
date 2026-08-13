@@ -127,7 +127,7 @@ The following table describes how to set the backup retention.
 #### [ AWS CloudHSM API ]
 
 Refer to the following topics to learn how to manage backup retention by using the API.
-+ [https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ModifyCluster.html](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ModifyCluster.html)
-+ [https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ModifyBackupAttributes.html](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ModifyBackupAttributes.html)
++ [ModifyCluster](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ModifyCluster.html)
++ [ModifyBackupAttributes](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ModifyBackupAttributes.html)
 
 ------

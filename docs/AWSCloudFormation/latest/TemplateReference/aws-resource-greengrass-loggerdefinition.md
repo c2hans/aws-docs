@@ -12,8 +12,8 @@ The `AWS::Greengrass::LoggerDefinition` resource represents a logger definition 
 Logger definitions can reference multiple logger definition versions. All logger definition versions must be associated with a logger definition. Each logger definition version can contain one or more loggers.
 
 **Note**
-When you create a logger definition, you can optionally include an initial logger definition version. To associate a logger definition version later, create an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinitionversion.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinitionversion.html) resource and specify the ID of this logger definition.
-After you create the logger definition version that contains the loggers you want to deploy, you must add it to your group version. For more information, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html).
+When you create a logger definition, you can optionally include an initial logger definition version. To associate a logger definition version later, create an [`AWS::Greengrass::LoggerDefinitionVersion`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinitionversion.html) resource and specify the ID of this logger definition.
+After you create the logger definition version that contains the loggers you want to deploy, you must add it to your group version. For more information, see [`AWS::Greengrass::Group`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html).
 
 ## Syntax
 <a name="aws-resource-greengrass-loggerdefinition-syntax"></a>
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[InitialVersion](#cfn-greengrass-loggerdefinition-initialversion)" : {{LoggerDefinitionVersion}},
       "[Name](#cfn-greengrass-loggerdefinition-name)" : {{String}},
-      "[Tags](#cfn-greengrass-loggerdefinition-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}}
+      "[Tags](#cfn-greengrass-loggerdefinition-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}}
     }
 }
 ```
@@ -44,15 +44,15 @@ Properties:
     LoggerDefinitionVersion}}
   [Name](#cfn-greengrass-loggerdefinition-name): {{String}}
   [Tags](#cfn-greengrass-loggerdefinition-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
 ```
 
 ## Properties
 <a name="aws-resource-greengrass-loggerdefinition-properties"></a>
 
 `InitialVersion`  <a name="cfn-greengrass-loggerdefinition-initialversion"></a>
-The logger definition version to include when the logger definition is created. A logger definition version contains a list of [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-logger.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-logger.html) property types.
-To associate a logger definition version after the logger definition is created, create an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinitionversion.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinitionversion.html) resource and specify the ID of this logger definition.
+The logger definition version to include when the logger definition is created. A logger definition version contains a list of [`logger`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-logger.html) property types.
+To associate a logger definition version after the logger definition is created, create an [`AWS::Greengrass::LoggerDefinitionVersion`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinitionversion.html) resource and specify the ID of this logger definition.
 *Required*: No
 *Type*: [LoggerDefinitionVersion](aws-properties-greengrass-loggerdefinition-loggerdefinitionversion.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -75,7 +75,7 @@ This `Json` property type is processed as a map of key-value pairs. It uses the 
 }
 ```
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
@@ -86,14 +86,14 @@ This `Json` property type is processed as a map of key-value pairs. It uses the 
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the logger definition, such as `1234a5b6-78cd-901e-2fgh-3i45j6k178l9`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-greengrass-loggerdefinition-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-greengrass-loggerdefinition-return-values-fn--getatt-fn--getatt"></a>
@@ -118,7 +118,7 @@ The name of the `LoggerDefinition`, such as `MyLoggerDefinition`.
 
 The following snippet defines a logger definition resource with an initial version that contains a logger.
 
-For an example of a complete template, see the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html) resource.
+For an example of a complete template, see the [`AWS::Greengrass::Group`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html) resource.
 
 #### JSON
 <a name="aws-resource-greengrass-loggerdefinition--examples--Logger_Definition_Snippet--json"></a>

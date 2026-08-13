@@ -39,7 +39,7 @@ If you have your script files stored locally, you can upload them to Amazon Game
 ------
 #### [ AWS CLI ]
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-script.html](https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-script.html) AWS CLI command to define the new script and upload your server script files.
+Use the [`create-script`](https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-script.html) AWS CLI command to define the new script and upload your server script files.
 
 **To create a script resource**
 

@@ -22,9 +22,9 @@ In addition to these minimum requirements, you can choose the following options:
 You can configure replication by using the Amazon S3 console, AWS Command Line Interface (AWS CLI), AWS SDKs, or the Amazon S3 REST API. For detailed walkthroughs of how to set up replication, see [Examples for configuring live replication](replication-example-walkthroughs.md).
 
  Amazon S3 provides REST API operations to support setting up replication rules. For more information, see the following topics in the *Amazon Simple Storage Service API Reference*:
-+  [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketReplication.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketReplication.html)
-+  [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketReplication.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketReplication.html)
-+  [https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketReplication.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketReplication.html)
++  [PutBucketReplication](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketReplication.html)
++  [GetBucketReplication](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketReplication.html)
++  [DeleteBucketReplication](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketReplication.html)
 
 **Topics**
 + [Replication configuration file elements](replication-add-config.md)

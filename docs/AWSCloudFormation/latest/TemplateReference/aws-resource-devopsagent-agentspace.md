@@ -59,15 +59,15 @@ The description of the Agent Space.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `KmsKeyArn`  <a name="cfn-devopsagent-agentspace-kmskeyarn"></a>
-Property description not available.
+The ARN of the customer managed key used to encrypt the data of the Agent Space at rest.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
 *Maximum*: `2048`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: Updates are not supported.
 
 `Locale`  <a name="cfn-devopsagent-agentspace-locale"></a>
-Property description not available.
+The locale of the Agent Space, which determines the language used in agent responses.
 *Required*: No
 *Type*: String
 *Pattern*: `^[a-zA-Z]{2,3}(-[a-zA-Z0-9]{2,8})*$`
@@ -90,7 +90,7 @@ Configuration for the connection to the DevOps Agent web app.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-devopsagent-agentspace-tags"></a>
-Property description not available.
+An array of key-value pairs to apply to this resource.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-devopsagent-agentspace-tag.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -103,14 +103,14 @@ Property description not available.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the AgentSpaceId.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-devopsagent-agentspace-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-devopsagent-agentspace-return-values-fn--getatt-fn--getatt"></a>

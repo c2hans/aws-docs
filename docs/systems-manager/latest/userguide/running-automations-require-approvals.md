@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/running
 The following procedures describe how to use the AWS Systems Manager console and AWS Command Line Interface (AWS CLI) to run an automation with approvals using simple execution. The automation uses the automation action `aws:approve`, which temporarily pauses the automation until the designated principals either approve or deny the action. The automation runs in the context of the current user. This means that you don't need to configure additional IAM permissions as long as you have permission to use the runbook, and any actions called by the runbook. If you have administrator permissions in IAM, then you already have permission to use this runbook.
 
 **Before you begin**
-In addition to the standard inputs required by the runbook, the `aws:approve` action requires the following two parameters:
+Besides the standard inputs required by the runbook, the `aws:approve` action requires the following two parameters:
 + A list of approvers. The list of approvers must contain at least one approver in the form of a user name or a user ARN. If multiple approvers are provided, a corresponding minimum approval count must also be specified within the runbook.
 + An Amazon Simple Notification Service (Amazon SNS) topic ARN. The Amazon SNS topic name must start with `Automation`.
 

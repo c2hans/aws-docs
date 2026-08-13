@@ -12,6 +12,7 @@ The following is a subset of GPU-based instance types supported on Amazon ECS Ma
 + `g5`: Powered by NVIDIA A10G GPUs, offering higher performance for graphics-intensive applications and machine learning workloads.
 + `p3`: Powered by NVIDIA V100 GPUs, designed for high-performance computing and deep learning training.
 + `p4d`: Powered by NVIDIA A100 GPUs, offering the highest performance for for machine learning training and high-performance computing.
++ `g6f`: Powered by NVIDIA L4 GPUs (fractional), providing hardware-partitioned GPU slices (1/8, 1/4, or 1/2 of an NVIDIA L4 GPU) with dedicated GPU memory and compute.
 
 When you use GPU-enabled instance types with Amazon ECS Managed Instances, the NVIDIA drivers and CUDA toolkit are pre-installed on the instance, making it easier to run GPU-accelerated workloads.
 

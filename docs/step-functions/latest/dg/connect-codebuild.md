@@ -35,14 +35,14 @@ Even if the native service API is in camelCase, for example the API action `star
 
 ## Optimized CodeBuild APIs
 <a name="connect-codebuild-api"></a>
-+ [https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StartBuild.html#API_StartBuild_RequestSyntax](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StartBuild.html#API_StartBuild_RequestSyntax)
-+ [https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StopBuild.html](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StopBuild.html)
-+ [https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BatchDeleteBuilds.html](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BatchDeleteBuilds.html)
-+ [https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BatchGetReports.html](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BatchGetReports.html)
-+ [https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StartBuildBatch.html](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StartBuildBatch.html)
-+ [https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StopBuildBatch.html](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StopBuildBatch.html)
-+ [https://docs.aws.amazon.com/codebuild/latest/APIReference/API_RetryBuildBatch.html](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_RetryBuildBatch.html)
-+ [https://docs.aws.amazon.com/codebuild/latest/APIReference/API_DeleteBuildBatch.html](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_DeleteBuildBatch.html)
++ [`StartBuild`](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StartBuild.html#API_StartBuild_RequestSyntax)
++ [`StopBuild`](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StopBuild.html)
++ [`BatchDeleteBuilds`](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BatchDeleteBuilds.html)
++ [`BatchGetReports`](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BatchGetReports.html)
++ [`StartBuildBatch`](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StartBuildBatch.html)
++ [`StopBuildBatch`](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StopBuildBatch.html)
++ [`RetryBuildBatch`](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_RetryBuildBatch.html)
++ [`DeleteBuildBatch`](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_DeleteBuildBatch.html)
 
 **Note**
 When using JSONPath, you can use the recursive descent operator (`..`) to provide parameters for `BatchDeleteBuilds`. With the returned array, you can transform the `Arn` field from `StartBuild` into a plural `Ids` parameter, as shown in the following example.

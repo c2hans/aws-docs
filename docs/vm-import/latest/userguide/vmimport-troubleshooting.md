@@ -8,9 +8,9 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-trou
 When you import or export a virtual machine (VM), most errors occur because of an attempt to do something that isn't supported. To avoid these errors, be sure to check the requirements and limitations carefully.
 
 An import task might stop before it completes, and then fail. You can gather details about the import task that appears to have stopped due to a failure before it changes to the `completed` status. To gather such details, use the appropriate command for the import operation you used to describe details of the conversion task that's in progress:
-+ **ImportInstance** and **ImportVolume** – Use the [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeConversionTasks.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeConversionTasks.html) operation.
-+ **ImportImage** – Use the [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeImportImageTasks.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeImportImageTasks.html) operation.
-+ **ImportSnapshot** – Use the [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeImportSnapshotTasks.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeImportSnapshotTasks.html) operation.
++ **ImportInstance** and **ImportVolume** – Use the [DescribeConversionTasks](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeConversionTasks.html) operation.
++ **ImportImage** – Use the [DescribeImportImageTasks](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeImportImageTasks.html) operation.
++ **ImportSnapshot** – Use the [DescribeImportSnapshotTasks](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeImportSnapshotTasks.html) operation.
 
 **Topics**
 + [Import image errors](#import-image-errors)

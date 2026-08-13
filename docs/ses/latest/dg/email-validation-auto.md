@@ -74,7 +74,7 @@ If you don't override the account-level settings, the configuration set will use
 The following examples show you how to enable and configure Auto Validation using the AWS CLI.
 
 **To manage Auto Validation using the AWS CLI**
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccountSuppressionAttributes.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccountSuppressionAttributes.html) operation in the Amazon SES API v2 to manage Auto Validation. You can call this operation from the AWS CLI, as shown in the following examples.
+You can use the [`PutAccountSuppressionAttributes`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccountSuppressionAttributes.html) operation in the Amazon SES API v2 to manage Auto Validation. You can call this operation from the AWS CLI, as shown in the following examples.
 + Enable Auto Validation with a high threshold:
 
   ```
@@ -144,10 +144,10 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutA
   aws --region us-east-1 sesv2 get-account
   ```
 
-For more information about parameter values and data types, see the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SuppressionAttributes.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SuppressionAttributes.html) data type in the Amazon SES API v2 reference.
+For more information about parameter values and data types, see the [`SuppressionAttributes`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SuppressionAttributes.html) data type in the Amazon SES API v2 reference.
 
 **To configure Auto Validation for a configuration set using the AWS CLI**
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutConfigurationSetSuppressionOptions.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutConfigurationSetSuppressionOptions.html) operation to override Auto Validation settings for a specific configuration set.
+You can use the [`PutConfigurationSetSuppressionOptions`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutConfigurationSetSuppressionOptions.html) operation to override Auto Validation settings for a specific configuration set.
 + Override account-level settings for a configuration set:
 
   ```

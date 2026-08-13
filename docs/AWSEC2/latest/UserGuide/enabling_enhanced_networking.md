@@ -34,17 +34,17 @@ Ubuntu 16.04 and 18.04 ship with the Ubuntu custom kernel (`linux-aws` kernel pa
 **Important**
 If during the update process you are prompted to install `grub`, use `/dev/xvda` to install `grub` onto, and then choose to keep the current version of `/boot/grub/menu.lst`.
 
-1. [EBS-backed instance] From your local computer, stop the instance using the Amazon EC2 console or one of the following commands: [https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html) (AWS CLI) or [https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2Instance.html) (AWS Tools for Windows PowerShell).
+1. [EBS-backed instance] From your local computer, stop the instance using the Amazon EC2 console or one of the following commands: [stop-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html) (AWS CLI) or [Stop-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2Instance.html) (AWS Tools for Windows PowerShell).
 
    [Instance store-backed instance] You can't stop the instance to modify the attribute. Instead, proceed to this procedure: [To enable enhanced networking on Ubuntu (instance store-backed instances)](#enhanced-networking-ena-instance-store-ubuntu).
 
 1. From your local computer, enable the enhanced networking attribute using one of the following commands:
-   + [https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) (AWS CLI)
+   + [modify-instance-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) (AWS CLI)
 
      ```
      aws ec2 modify-instance-attribute --instance-id {{i-1234567890abcdef0}} --ena-support
      ```
-   + [https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html) (Tools for Windows PowerShell)
+   + [Edit-EC2InstanceAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html) (Tools for Windows PowerShell)
 
      ```
      Edit-EC2InstanceAttribute -InstanceId {{i-1234567890abcdef0}} -EnaSupport $true
@@ -52,17 +52,17 @@ If during the update process you are prompted to install `grub`, use `/dev/xvda`
 
 1. (Optional) Create an AMI from the instance, as described in [Create an Amazon EBS-backed AMI](creating-an-ami-ebs.md). The AMI inherits the enhanced networking `enaSupport` attribute from the instance. Therefore, you can use this AMI to launch another instance with enhanced networking enabled by default.
 
-1. From your local computer, start the instance using the Amazon EC2 console or one of the following commands: [https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html) (AWS CLI) or [https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html) (AWS Tools for Windows PowerShell).<a name="enhanced-networking-ena-instance-store-ubuntu"></a>
+1. From your local computer, start the instance using the Amazon EC2 console or one of the following commands: [start-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html) (AWS CLI) or [Start-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html) (AWS Tools for Windows PowerShell).<a name="enhanced-networking-ena-instance-store-ubuntu"></a>
 
 **To enable enhanced networking on Ubuntu (instance store-backed instances)**
 
 Follow the previous procedure until the step where you stop the instance. Create a new AMI as described in [Create an Amazon S3-backed AMI](creating-an-ami-instance-store.md), making sure to enable the enhanced networking attribute when you register the AMI.
-+ [https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) (AWS CLI)
++ [register-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) (AWS CLI)
 
   ```
   aws ec2 register-image --ena-support ...
   ```
-+ [https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html) (AWS Tools for Windows PowerShell)
++ [Register-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html) (AWS Tools for Windows PowerShell)
 
   ```
   Register-EC2Image -EnaSupport $true ...
@@ -118,17 +118,17 @@ The following procedure provides the general steps for enabling enhanced network
       sudo grub2-mkconfig -o /boot/grub2/grub.cfg
       ```
 
-1. [EBS-backed instance] From your local computer, stop the instance using the Amazon EC2 console or one of the following commands: [https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html) (AWS CLI), [https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2Instance.html) (AWS Tools for Windows PowerShell).
+1. [EBS-backed instance] From your local computer, stop the instance using the Amazon EC2 console or one of the following commands: [stop-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html) (AWS CLI), [Stop-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2Instance.html) (AWS Tools for Windows PowerShell).
 
    [Instance store-backed instance] You can't stop the instance to modify the attribute. Instead, proceed to this procedure: [To enable enhanced networking on Linux (instance store–backed instances)](#other-linux-enhanced-networking-ena-instance-store).
 
 1. From your local computer, enable the enhanced networking `enaSupport` attribute using one of the following commands:
-   + [https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) (AWS CLI)
+   + [modify-instance-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) (AWS CLI)
 
      ```
      aws ec2 modify-instance-attribute --instance-id {{i-1234567890abcdef0}} --ena-support
      ```
-   + [https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html) (Tools for Windows PowerShell)
+   + [Edit-EC2InstanceAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html) (Tools for Windows PowerShell)
 
      ```
      Edit-EC2InstanceAttribute -InstanceId {{i-1234567890abcdef0}} -EnaSupport $true
@@ -138,7 +138,7 @@ The following procedure provides the general steps for enabling enhanced network
 
    If your instance operating system contains an `/etc/udev/rules.d/70-persistent-net.rules` file, you must delete it before creating the AMI. This file contains the MAC address for the Ethernet adapter of the original instance. If another instance boots with this file, the operating system will be unable to find the device and `eth0` might fail, causing boot issues. This file is regenerated at the next boot cycle, and any instances launched from the AMI create their own version of the file.
 
-1. From your local computer, start the instance using the Amazon EC2 console or one of the following commands: [https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html) (AWS CLI) or [https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html) (AWS Tools for Windows PowerShell).
+1. From your local computer, start the instance using the Amazon EC2 console or one of the following commands: [start-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html) (AWS CLI) or [Start-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html) (AWS Tools for Windows PowerShell).
 
 1. (Optional) Connect to your instance and verify that the kernel driver is installed.
 
@@ -147,12 +147,12 @@ The following procedure provides the general steps for enabling enhanced network
 **To enable enhanced networking on Linux (instance store–backed instances)**
 
 Follow the previous procedure until the step where you stop the instance. Create a new AMI as described in [Create an Amazon S3-backed AMI](creating-an-ami-instance-store.md), making sure to enable the enhanced networking attribute when you register the AMI.
-+ [https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) (AWS CLI)
++ [register-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) (AWS CLI)
 
   ```
   aws ec2 register-image --ena-support ...
   ```
-+ [https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html) (AWS Tools for Windows PowerShell)
++ [Register-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html) (AWS Tools for Windows PowerShell)
 
   ```
   Register-EC2Image -EnaSupport ...
@@ -293,41 +293,41 @@ If you launched your instance and it does not have enhanced networking enabled a
 **Note**
 If you get an execution policy error, set the policy to `Unrestricted` (by default it is set to `Restricted` or `RemoteSigned`). In a command line, run `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`, and then run the `install.ps1` PowerShell script again.
 
-1. From your local computer, stop the instance using the Amazon EC2 console or one of the following commands: [https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html) (AWS CLI) or [https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2Instance.html) (AWS Tools for Windows PowerShell).
+1. From your local computer, stop the instance using the Amazon EC2 console or one of the following commands: [stop-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html) (AWS CLI) or [Stop-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2Instance.html) (AWS Tools for Windows PowerShell).
 
 1. Enable ENA support on your instance as follows:
 
    1. From your local computer, check the EC2 instance ENA support attribute on your instance by running one of the following commands. If the attribute is not enabled, the output will be "[]" or blank. `EnaSupport` is set to `false` by default.
-      + [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) (AWS CLI)
+      + [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) (AWS CLI)
 
         ```
         aws ec2 describe-instances --instance-ids {{i-1234567890abcdef0}} --query "Reservations[].Instances[].EnaSupport"
         ```
-      + [https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) (Tools for Windows PowerShell)
+      + [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) (Tools for Windows PowerShell)
 
         ```
         (Get-EC2Instance -InstanceId {{i-1234567890abcdef0}}).Instances.EnaSupport
         ```
 
    1. To enable ENA support, run one of the following commands:
-      + [https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) (AWS CLI)
+      + [modify-instance-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) (AWS CLI)
 
         ```
         aws ec2 modify-instance-attribute --instance-id {{i-1234567890abcdef0}} --ena-support
         ```
-      + [https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html) (AWS Tools for Windows PowerShell)
+      + [Edit-EC2InstanceAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html) (AWS Tools for Windows PowerShell)
 
         ```
         Edit-EC2InstanceAttribute -InstanceId {{i-1234567890abcdef0}} -EnaSupport $true
         ```
 
       If you encounter problems when you restart the instance, you can also disable ENA support using one of the following commands:
-      + [https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) (AWS CLI)
+      + [modify-instance-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) (AWS CLI)
 
         ```
         aws ec2 modify-instance-attribute --instance-id {{i-1234567890abcdef0}} --no-ena-support
         ```
-      + [https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html) (AWS Tools for Windows PowerShell)
+      + [Edit-EC2InstanceAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html) (AWS Tools for Windows PowerShell)
 
         ```
         Edit-EC2InstanceAttribute -InstanceId {{i-1234567890abcdef0}} -EnaSupport $false
@@ -341,7 +341,7 @@ If you get an execution policy error, set the policy to `Unrestricted` (by defau
       ]
       ```
 
-1. From your local computer, start the instance using the Amazon EC2 console or one of the following commands: [https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html) (AWS CLI) or [https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html) (AWS Tools for Windows PowerShell).
+1. From your local computer, start the instance using the Amazon EC2 console or one of the following commands: [start-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html) (AWS CLI) or [Start-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html) (AWS Tools for Windows PowerShell).
 
 1. On the instance, validate that the ENA driver is installed and enabled as follows:
 

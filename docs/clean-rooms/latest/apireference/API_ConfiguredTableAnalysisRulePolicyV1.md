@@ -19,7 +19,7 @@ Type: [AnalysisRuleAggregation](API_AnalysisRuleAggregation.md) object
 Required: No
 
  ** custom **   <a name="API-Type-ConfiguredTableAnalysisRulePolicyV1-custom"></a>
-A type of analysis rule that enables the table owner to approve custom SQL queries on their configured tables. It supports differential privacy.
+A type of analysis rule that enables the table owner to approve custom SQL queries on their configured tables. It supports differential privacy, minimum aggregation thresholds, and comparison controls.
 Type: [AnalysisRuleCustom](API_AnalysisRuleCustom.md) object
 Required: No
 

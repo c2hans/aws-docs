@@ -15,7 +15,7 @@ To enable a control in a standard, you must first enable at least one standard t
 
 To enable a control in a standard, the control must be available in your current Region. For more information, see [Availability of controls by Region](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-regions.html#securityhub-regions-control-support).
 
-Follow these steps to enable a Security Hub CSPM control in a *specific* standard. In lieu of the following steps, you can also use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateStandardsControl.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateStandardsControl.html) API action to enable controls in a specific standard. For instructions on enabling a control in *all* standards, see [Cross-standard enablement in single account and Region](enable-controls-overview.md#enable-controls-all-standards).
+Follow these steps to enable a Security Hub CSPM control in a *specific* standard. In lieu of the following steps, you can also use the [`UpdateStandardsControl`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateStandardsControl.html) API action to enable controls in a specific standard. For instructions on enabling a control in *all* standards, see [Cross-standard enablement in single account and Region](enable-controls-overview.md#enable-controls-all-standards).
 
 ------
 #### [ Security Hub CSPM console ]
@@ -37,7 +37,7 @@ Follow these steps to enable a Security Hub CSPM control in a *specific* standar
 
 **To enable a control in a specific standard**
 
-1. Run `[https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListSecurityControlDefinitions.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListSecurityControlDefinitions.html)`, and provide a standard ARN to get a list of available controls for a specific standard. To obtain a standard ARN, run [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_DescribeStandards.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_DescribeStandards.html). This API returns standard-agnostic security control IDs, not standard-specific control IDs.
+1. Run `[`ListSecurityControlDefinitions`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListSecurityControlDefinitions.html)`, and provide a standard ARN to get a list of available controls for a specific standard. To obtain a standard ARN, run [`DescribeStandards`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_DescribeStandards.html). This API returns standard-agnostic security control IDs, not standard-specific control IDs.
 
    **Example request:**
 
@@ -47,7 +47,7 @@ Follow these steps to enable a Security Hub CSPM control in a *specific* standar
    }
    ```
 
-1. Run `[https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListStandardsControlAssociations.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListStandardsControlAssociations.html)`, and provide a specific control ID to return the current enablement status of a control in each standard.
+1. Run `[`ListStandardsControlAssociations`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListStandardsControlAssociations.html)`, and provide a specific control ID to return the current enablement status of a control in each standard.
 
    **Example request:**
 
@@ -57,7 +57,7 @@ Follow these steps to enable a Security Hub CSPM control in a *specific* standar
    }
    ```
 
-1. Run `[https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateStandardsControlAssociations.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateStandardsControlAssociations.html)`. Provide the ARN of the standard that you want to enable the control in.
+1. Run `[`BatchUpdateStandardsControlAssociations`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateStandardsControlAssociations.html)`. Provide the ARN of the standard that you want to enable the control in.
 
 1. Set the `AssociationStatus` parameter equal to `ENABLED`.
 
@@ -74,19 +74,19 @@ Follow these steps to enable a Security Hub CSPM control in a *specific* standar
 
 **To enable a control in a specific standard**
 
-1. Run the `[https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-security-control-definitions.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-security-control-definitions.html)` command, and provide a standard ARN to get a list of available controls for a specific standard. To obtain a standard ARN, run `describe-standards`. This command returns standard-agnostic security control IDs, not standard-specific control IDs.
+1. Run the `[`list-security-control-definitions`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-security-control-definitions.html)` command, and provide a standard ARN to get a list of available controls for a specific standard. To obtain a standard ARN, run `describe-standards`. This command returns standard-agnostic security control IDs, not standard-specific control IDs.
 
    ```
    aws securityhub --region {{us-east-1}} list-security-control-definitions --standards-arn "arn:aws:securityhub:{{us-east-1::standards/aws-foundational-security-best-practices/v/1.0.0}}"
    ```
 
-1. Run the `[https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-standards-control-associations.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-standards-control-associations.html)` command, and provide a specific control ID to return the current enablement status of a control in each standard.
+1. Run the `[`list-standards-control-associations`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-standards-control-associations.html)` command, and provide a specific control ID to return the current enablement status of a control in each standard.
 
    ```
    aws securityhub  --region {{us-east-1}} list-standards-control-associations --security-control-id {{CloudTrail.1}}
    ```
 
-1. Run the `[https://docs.aws.amazon.com/cli/latest/reference/securityhub/batch-update-standards-control-associations.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/batch-update-standards-control-associations.html)` command. Provide the ARN of the standard that you want to enable the control in.
+1. Run the `[`batch-update-standards-control-associations`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/batch-update-standards-control-associations.html)` command. Provide the ARN of the standard that you want to enable the control in.
 
 1. Set the `AssociationStatus` parameter equal to `ENABLED`.
 

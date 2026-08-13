@@ -61,7 +61,7 @@ This policy defines the actions that the role can take. For more information, se
 
 You can attach the `AWSSupportAppFullAccess` policy to your IAM role. This policy allows the role to have full permissions to all required actions for the AWS Support App. After you configure a Slack channel with the role, any user in your channel has the same permissions.
 
-To view the permissions for the `AWSSupportAppFullAccess` policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportAppFullAccess.html#AWSSupportAppFullAccess-json.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportAppFullAccess.html#AWSSupportAppFullAccess-json.html) in the *AWS Managed Policy Reference*.
+To view the permissions for the `AWSSupportAppFullAccess` policy, see [AWSSupportAppFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportAppFullAccess.html#AWSSupportAppFullAccess-json.html) in the *AWS Managed Policy Reference*.
 
 **Note**
 For a list of AWS managed policies, see [AWS managed policies for AWS Support App in Slack](support-app-managed-policies.md).

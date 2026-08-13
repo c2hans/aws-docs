@@ -37,7 +37,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/choosing-an-aws-nosql
 +  Complex data models (such as arrays, nested fields, and deep relationships) let you consider a wider range of application needs. For more information, refer to the “[When to use DocumentDB vs DynamoDB](https://aws.amazon.com/documentdb/resources/video-documentdb-twitch/)” video.
 +  DynamoDB provides extreme scale for certain data access patterns. For more information, refer to “[How to determine if Amazon DynamoDB is appropriate for your needs](https://aws.amazon.com/blogs/database/how-to-determine-if-amazon-dynamodb-is-appropriate-for-your-needs-and-then-plan-your-migration/)”.
 +  Refer to this [tech talk](https://www.youtube.com/watch?v=PK-LLTn2hVY) to learn about DocumentDB use cases, and how Amazon DocumentDB cluster architecture provides better performance, scalability, and availability.
-+  Amazon MemoryDB is a durable, in-memory database for workloads that require an ultra-fast Redis-compatible primary database. If you require sub-millisecond performance and need to add persistence and durability, consider using MemoryDB rather than in-memory cache for Redis. Refer to this [https://www.youtube.com/watch?v=Jbq_XZMZEKY](https://www.youtube.com/watch?v=Jbq_XZMZEKY) to learn about Amazon MemoryDB.
++  Amazon MemoryDB is a durable, in-memory database for workloads that require an ultra-fast Redis-compatible primary database. If you require sub-millisecond performance and need to add persistence and durability, consider using MemoryDB rather than in-memory cache for Redis. Refer to this [*tech talk*](https://www.youtube.com/watch?v=Jbq_XZMZEKY) to learn about Amazon MemoryDB.
 
 ### Developer references
 <a name="developer-references"></a>

@@ -87,7 +87,7 @@ Be careful entering account numbers that are not in the same AWS organization as
 
 1.  Gather the information for the required parameters. You need the ARN for your cluster and the numeric ID for the other AWS account.
 
-1.  Run the AWS RAM CLI command [https://docs.aws.amazon.com/cli/latest/reference/ram/create-resource-share.html](https://docs.aws.amazon.com/cli/latest/reference/ram/create-resource-share.html).
+1.  Run the AWS RAM CLI command [`create-resource-share`](https://docs.aws.amazon.com/cli/latest/reference/ram/create-resource-share.html).
 
    For Linux, macOS, or Unix:
 
@@ -153,7 +153,7 @@ If the encrypted cluster that you plan to share uses the default RDS key, make s
 <a name="Aurora.Managing.Clone.CrossAccount.confirming.cli"></a>
 
 **To find out if a cluster that you own is shared with other AWS accounts**
-+  Call the AWS RAM CLI command [https://docs.aws.amazon.com/cli/latest/reference/ram/list-principals.html](https://docs.aws.amazon.com/cli/latest/reference/ram/list-principals.html), using your account ID as the resource owner and the ARN of your cluster as the resource ARN. You can see all shares with the following command. The results indicate which AWS accounts are allowed to clone the cluster.
++  Call the AWS RAM CLI command [`list-principals`](https://docs.aws.amazon.com/cli/latest/reference/ram/list-principals.html), using your account ID as the resource owner and the ARN of your cluster as the resource ARN. You can see all shares with the following command. The results indicate which AWS accounts are allowed to clone the cluster.
 
   ```
   aws ram list-principals \
@@ -194,7 +194,7 @@ If the encrypted cluster that you plan to share uses the default RDS key, make s
 
 **To see invitations to clone clusters that are owned by other AWS accounts**
 
-1.  Run the AWS RAM CLI command [https://docs.aws.amazon.com/cli/latest/reference/ram/get-resource-share-invitations.html](https://docs.aws.amazon.com/cli/latest/reference/ram/get-resource-share-invitations.html).
+1.  Run the AWS RAM CLI command [`get-resource-share-invitations`](https://docs.aws.amazon.com/cli/latest/reference/ram/get-resource-share-invitations.html).
 
    ```
    aws ram get-resource-share-invitations --region {{region_name}}
@@ -209,7 +209,7 @@ If the encrypted cluster that you plan to share uses the default RDS key, make s
 
 **To see invitations to clone clusters that are owned by other AWS accounts**
 
-1.  Call the AWS RAM API operation [https://docs.aws.amazon.com/ram/latest/APIReference/API_GetResourceShareInvitations.html](https://docs.aws.amazon.com/ram/latest/APIReference/API_GetResourceShareInvitations.html). This operation returns all such invitations, including any that you already accepted or rejected.
+1.  Call the AWS RAM API operation [`GetResourceShareInvitations`](https://docs.aws.amazon.com/ram/latest/APIReference/API_GetResourceShareInvitations.html). This operation returns all such invitations, including any that you already accepted or rejected.
 
 1.  (Optional) Find only the invitations that require action from you by checking the `resourceShareAssociations` return field for a `status` value of `PENDING`.
 
@@ -225,9 +225,9 @@ If the encrypted cluster that you plan to share uses the default RDS key, make s
 
 **To accept an invitation to share a cluster from another AWS account**
 
-1.  Find the invitation ARN by running the AWS RAM CLI command [https://docs.aws.amazon.com/cli/latest/reference/ram/get-resource-share-invitations.html](https://docs.aws.amazon.com/cli/latest/reference/ram/get-resource-share-invitations.html), as shown preceding.
+1.  Find the invitation ARN by running the AWS RAM CLI command [`get-resource-share-invitations`](https://docs.aws.amazon.com/cli/latest/reference/ram/get-resource-share-invitations.html), as shown preceding.
 
-1.  Accept the invitation by calling the AWS RAM CLI command [https://docs.aws.amazon.com/cli/latest/reference/ram/accept-resource-share-invitation.html](https://docs.aws.amazon.com/cli/latest/reference/ram/accept-resource-share-invitation.html), as shown following.
+1.  Accept the invitation by calling the AWS RAM CLI command [`accept-resource-share-invitation`](https://docs.aws.amazon.com/cli/latest/reference/ram/accept-resource-share-invitation.html), as shown following.
 
    For Linux, macOS, or Unix:
 
@@ -250,7 +250,7 @@ If the encrypted cluster that you plan to share uses the default RDS key, make s
 
 **To accept invitations to share somebody's cluster**
 
-1.  Find the invitation ARN by calling the AWS RAM API operation [https://docs.aws.amazon.com/ram/latest/APIReference/API_GetResourceShareInvitations.html](https://docs.aws.amazon.com/ram/latest/APIReference/API_GetResourceShareInvitations.html), as shown preceding.
+1.  Find the invitation ARN by calling the AWS RAM API operation [`GetResourceShareInvitations`](https://docs.aws.amazon.com/ram/latest/APIReference/API_GetResourceShareInvitations.html), as shown preceding.
 
 1.  Pass that ARN as the `resourceShareInvitationArn` parameter to the RDS API operation [AcceptResourceShareInvitation](https://docs.aws.amazon.com/ram/latest/APIReference/API_AcceptResourceShareInvitation.html).
 
@@ -287,7 +287,7 @@ If the encrypted cluster that you plan to share uses the default RDS key, make s
 
 1.  Accept the invitation from the AWS account that owns the DB cluster, as shown preceding.
 
-1.  Clone the cluster by specifying the full ARN of the source cluster in the `source-db-cluster-identifier` parameter of the RDS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-cluster-to-point-in-time.html](https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-cluster-to-point-in-time.html), as shown following.
+1.  Clone the cluster by specifying the full ARN of the source cluster in the `source-db-cluster-identifier` parameter of the RDS CLI command [`restore-db-cluster-to-point-in-time`](https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-cluster-to-point-in-time.html), as shown following.
 
     If the ARN passed as the `source-db-cluster-identifier` hasn't been shared, the same error is returned as if the specified cluster doesn't exist.
 
@@ -404,7 +404,7 @@ You can create DB instances only after the `restore-db-cluster-to-point-in-time`
 
 1.  Accept the invitation from the AWS account that owns the DB cluster, as shown preceding.
 
-1.  Clone the cluster by specifying the full ARN of the source cluster in the `SourceDBClusterIdentifier` parameter of the RDS API operation [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterToPointInTime.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterToPointInTime.html).
+1.  Clone the cluster by specifying the full ARN of the source cluster in the `SourceDBClusterIdentifier` parameter of the RDS API operation [`RestoreDBClusterToPointInTime`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterToPointInTime.html).
 
     If the ARN passed as the `SourceDBClusterIdentifier` hasn't been shared, then the same error is returned as if the specified cluster doesn't exist.
 
@@ -476,13 +476,13 @@ The [RestoreDBClusterToPointInTime](https://docs.aws.amazon.com/AmazonRDS/latest
 ### Checking if a DB cluster is a cross-account clone
 <a name="Aurora.Managing.Clone.CrossAccount.checking"></a>
 
- The `DBClusters` object identifies whether each cluster is a cross-account clone. You can see the clusters that you have permission to clone by using the `include-shared` option when you run the RDS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-clusters.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-clusters.html). However, you can't see most of the configuration details for such clusters.
+ The `DBClusters` object identifies whether each cluster is a cross-account clone. You can see the clusters that you have permission to clone by using the `include-shared` option when you run the RDS CLI command [`describe-db-clusters`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-clusters.html). However, you can't see most of the configuration details for such clusters.
 
 #### AWS CLI
 <a name="Aurora.Managing.Clone.CrossAccount.checking.cli"></a>
 
 **To check if a DB cluster is a cross-account clone**
-+  Call the RDS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-clusters.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-clusters.html).
++  Call the RDS CLI command [`describe-db-clusters`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-clusters.html).
 
    The following example shows how actual or potential cross-account clone DB clusters appear in `describe-db-clusters` output. For existing clusters owned by your AWS account, the `CrossAccountClone` field indicates whether the cluster is a clone of a DB cluster that is owned by another AWS account.
 

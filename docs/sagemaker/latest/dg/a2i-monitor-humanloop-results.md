@@ -14,7 +14,7 @@ Use the procedures below to learn how to use the Amazon A2I Runtime API to monit
 
 **To check your output data:**
 
-1. Check the results of your human loop by calling the [https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_DescribeHumanLoop.html](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_DescribeHumanLoop.html) operation. The result of this API operation contains information about the reason for and outcome of the loop activation.
+1. Check the results of your human loop by calling the [`DescribeHumanLoop`](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_DescribeHumanLoop.html) operation. The result of this API operation contains information about the reason for and outcome of the loop activation.
 
 1. Check the output data from your human loop in Amazon Simple Storage Service (Amazon S3). In the path to the data, `{{YYYY}}/{{MM}}/{{DD}}/{{hh}}/{{mm}}/{{ss}}` represents the human loop creation date with year (`YYYY`), month (`MM`), and day (`DD`), and the creation time with hour (`hh`), minute (`mm`), and second (`ss`).
 
@@ -28,14 +28,14 @@ To learn more about Amazon A2I output data format, see [Amazon A2I Output Data](
 
 **To stop and delete your human loop:**
 
-1. Once a human loop has been started, you can stop your human loop by calling the [https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_StopHumanLoop.html](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_StopHumanLoop.html) operation using the `HumanLoopName`. If a human loop was successfully stopped, the server sends back an HTTP 200 response.
+1. Once a human loop has been started, you can stop your human loop by calling the [`StopHumanLoop`](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_StopHumanLoop.html) operation using the `HumanLoopName`. If a human loop was successfully stopped, the server sends back an HTTP 200 response.
 
-1. To delete a human loop for which the status equals `Failed`, `Completed`, or `Stopped`, use the [https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_DeleteHumanLoop.html](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_DeleteHumanLoop.html) operation.
+1. To delete a human loop for which the status equals `Failed`, `Completed`, or `Stopped`, use the [`DeleteHumanLoop`](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_DeleteHumanLoop.html) operation.
 
 **To list human loops:**
 
-1. You can list all active human loops by calling the [https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_ListHumanLoops.html](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_ListHumanLoops.html) operation. You can filter human loops by the creation date of the loop using the `CreationTimeAfter` and `CreateTimeBefore` parameters.
+1. You can list all active human loops by calling the [`ListHumanLoops`](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_ListHumanLoops.html) operation. You can filter human loops by the creation date of the loop using the `CreationTimeAfter` and `CreateTimeBefore` parameters.
 
-1. If successful, `ListHumanLoops` returns [https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_HumanLoopSummary.html](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_HumanLoopSummary.html) and `NextToken` objects in the response element. `HumanLoopSummaries` contains information about a single human loop. For example, it lists a loop's status and, if applicable, its failure reason.
+1. If successful, `ListHumanLoops` returns [`HumanLoopSummaries`](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_HumanLoopSummary.html) and `NextToken` objects in the response element. `HumanLoopSummaries` contains information about a single human loop. For example, it lists a loop's status and, if applicable, its failure reason.
 
    Use the string returned in `NextToken` as an input in a subsequent call to `ListHumanLoops` to see the next page of human loops.

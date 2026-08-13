@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/common-snapshot.ht
 The common snapshot is used to maintain incrementality between your backups. This procedure explains how to identity the common snapshot on your volume.
 
 **To view a volume's common snapshot**
-+ To determine which snapshot is a volume's common snapshot, use the [https://docs.netapp.com/us-en/ontap-cli-9131/volume-snapshot-show.html](https://docs.netapp.com/us-en/ontap-cli-9131/volume-snapshot-show.html) ONTAP CLI command.
++ To determine which snapshot is a volume's common snapshot, use the [**volume snapshot show**](https://docs.netapp.com/us-en/ontap-cli-9131/volume-snapshot-show.html) ONTAP CLI command.
 
   ```
   volume snapshot show -volume {{volume-name}}

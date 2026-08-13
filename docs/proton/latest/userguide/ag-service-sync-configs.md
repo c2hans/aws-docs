@@ -111,7 +111,7 @@ instances:
     image: "public.ecr.aws/z9d2n7e1/nginx:1.21.0"
 ```
 
-If an instance doesn't sync, and there's a continuing issue when trying to sync it, calling the [https://docs.aws.amazon.com//proton/latest/APIReference/API_GetServiceInstanceSyncStatus.html](https://docs.aws.amazon.com//proton/latest/APIReference/API_GetServiceInstanceSyncStatus.html) API may help in resolving the issue.
+If an instance doesn't sync, and there's a continuing issue when trying to sync it, calling the [`GetServiceInstanceSyncStatus`](https://docs.aws.amazon.com//proton/latest/APIReference/API_GetServiceInstanceSyncStatus.html) API may help in resolving the issue.
 
 **Note**
 Customers using service sync are still restricted by AWS Proton limits.

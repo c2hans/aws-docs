@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 # AWS Well-Architected design considerations
 <a name="aws-well-architected-design-considerations"></a>
 
- This solution uses the best practices from the [https://aws.amazon.com/architecture/well-architected/](https://aws.amazon.com/architecture/well-architected/), which helps customers design and operate reliable, secure, efficient, and cost-effective workloads in the cloud.
+ This solution uses the best practices from the [*AWS Well-Architected Framework*](https://aws.amazon.com/architecture/well-architected/), which helps customers design and operate reliable, secure, efficient, and cost-effective workloads in the cloud.
 
  This section describes how the design principles and best practices of the Well-Architected Framework benefit this solution.
 

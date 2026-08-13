@@ -50,7 +50,7 @@ To create a CloudWatch Events rule, you will need an AWS Identity and Access Man
 ## Send Events to CloudWatch Events
 <a name="sms-cloud-watch-event-rule-setup"></a>
 
-To configure a CloudWatch Events rule to get status updates, or *events*, for your Ground Truth labeling jobs, use the AWS Command Line Interface (AWS CLI) [https://docs.aws.amazon.com/cli/latest/reference/events/put-rule.html](https://docs.aws.amazon.com/cli/latest/reference/events/put-rule.html) command. You can filter events that are sent to your rule by status change. For example, you can create a rule that notifies you only if a labeling job status changes to `Completed`. When using the `put-rule` command, specify the following to receive labeling job statuses:
+To configure a CloudWatch Events rule to get status updates, or *events*, for your Ground Truth labeling jobs, use the AWS Command Line Interface (AWS CLI) [`put-rule`](https://docs.aws.amazon.com/cli/latest/reference/events/put-rule.html) command. You can filter events that are sent to your rule by status change. For example, you can create a rule that notifies you only if a labeling job status changes to `Completed`. When using the `put-rule` command, specify the following to receive labeling job statuses:
 + `\"source\":[\"aws.sagemaker\"]`
 + `\"detail-type\":[\"SageMaker Ground Truth Labeling Job State Change\"]`
 
@@ -142,4 +142,4 @@ If your labeling job is not completed after 30 days, it will expire. If your lab
 
 Workers are able to decline tasks.
 
-Workers decline a task if the instructions are not clear, input data is not displaying correctly, or if they encounter some other issue with the task. If the number of workers per dataset object ([https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanTaskConfig.html#sagemaker-Type-HumanTaskConfig-NumberOfHumanWorkersPerDataObject](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanTaskConfig.html#sagemaker-Type-HumanTaskConfig-NumberOfHumanWorkersPerDataObject)) decline the task, the data object is marked as expired and will not be sent to additional workers.
+Workers decline a task if the instructions are not clear, input data is not displaying correctly, or if they encounter some other issue with the task. If the number of workers per dataset object ([`NumberOfHumanWorkersPerDataObject`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanTaskConfig.html#sagemaker-Type-HumanTaskConfig-NumberOfHumanWorkersPerDataObject)) decline the task, the data object is marked as expired and will not be sent to additional workers.

@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon Elastic Compute Cloud (
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ebs-snapshot-public-restorable-check.html](https://docs.aws.amazon.com/config/latest/developerguide/ebs-snapshot-public-restorable-check.html)
+**AWS Config rule:** [`ebs-snapshot-public-restorable-check`](https://docs.aws.amazon.com/config/latest/developerguide/ebs-snapshot-public-restorable-check.html)
 
 **Schedule type:** Periodic
 
@@ -44,7 +44,7 @@ To make a public EBS snapshot private, see [Share a snapshot](https://docs.aws.a
 
 **Resource type:** `AWS::EC2::SecurityGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/vpc-default-security-group-closed.html](https://docs.aws.amazon.com/config/latest/developerguide/vpc-default-security-group-closed.html)
+**AWS Config rule:** [`vpc-default-security-group-closed`](https://docs.aws.amazon.com/config/latest/developerguide/vpc-default-security-group-closed.html)
 
 **Schedule type:** Change triggered
 
@@ -72,7 +72,7 @@ After you assign the new security groups to your resources, remove all inbound a
 
 **Resource type:** `AWS::EC2::Volume`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/encrypted-volumes.html](https://docs.aws.amazon.com/config/latest/developerguide/encrypted-volumes.html)
+**AWS Config rule:** [`encrypted-volumes`](https://docs.aws.amazon.com/config/latest/developerguide/encrypted-volumes.html)
 
 **Schedule type:** Change triggered
 
@@ -137,7 +137,7 @@ To terminate an inactive EC2 instance, see [Terminate an instance](https://docs.
 
 **Resource type:** `AWS::EC2::VPC`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/vpc-flow-logs-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/vpc-flow-logs-enabled.html)
+**AWS Config rule:** [`vpc-flow-logs-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/vpc-flow-logs-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -171,7 +171,7 @@ To create a VPC Flow Log, see [Create a Flow Log](https://docs.aws.amazon.com/vp
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-ebs-encryption-by-default.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-ebs-encryption-by-default.html)
+**AWS Config rule:** [`ec2-ebs-encryption-by-default`](https://docs.aws.amazon.com/config/latest/developerguide/ec2-ebs-encryption-by-default.html)
 
 **Schedule type:** Periodic
 
@@ -197,7 +197,7 @@ To configure default encryption for Amazon EBS volumes, see [Encryption by defau
 
 **Resource type:** `AWS::EC2::Instance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-imdsv2-check.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-imdsv2-check.html)
+**AWS Config rule:** [`ec2-imdsv2-check`](https://docs.aws.amazon.com/config/latest/developerguide/ec2-imdsv2-check.html)
 
 **Schedule type:** Change triggered
 
@@ -231,7 +231,7 @@ To configure EC2 instances with IMDSv2, see [Recommended path to requiring IMDSv
 
 **Resource type:** `AWS::EC2::Instance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-instance-no-public-ip.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-instance-no-public-ip.html)
+**AWS Config rule:** [`ec2-instance-no-public-ip`](https://docs.aws.amazon.com/config/latest/developerguide/ec2-instance-no-public-ip.html)
 
 **Schedule type:** Change triggered
 
@@ -265,7 +265,7 @@ You can disassociate an automatically-assigned public IP address from your EC2 i
 
 **Resource type:** `AWS::EC2::VPC`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/vpc-endpoint-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/vpc-endpoint-enabled.html)
+**AWS Config rule:** [vpc-endpoint-enabled](https://docs.aws.amazon.com/config/latest/developerguide/vpc-endpoint-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -298,7 +298,7 @@ You can also create and attach an endpoint policy to your VPC endpoint to contro
 
 **Resource type:** `AWS::EC2::EIP`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/eip-attached.html](https://docs.aws.amazon.com/config/latest/developerguide/eip-attached.html)
+**AWS Config rule:** [`eip-attached`](https://docs.aws.amazon.com/config/latest/developerguide/eip-attached.html)
 
 **Schedule type:** Change triggered
 
@@ -326,7 +326,7 @@ To release an unused EIP, see [Release an Elastic IP address](https://docs.aws.a
 
 **Resource type:** `AWS::EC2::SecurityGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/restricted-ssh.html](https://docs.aws.amazon.com/config/latest/developerguide/restricted-ssh.html)
+**AWS Config rule:** [`restricted-ssh`](https://docs.aws.amazon.com/config/latest/developerguide/restricted-ssh.html)
 
 **Schedule type:** Change triggered and periodic
 
@@ -352,7 +352,7 @@ To prohibit ingress to port 22, remove the rule that allows such access for each
 
 **Resource type:** `AWS::EC2::SecurityGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/restricted-common-ports.html](https://docs.aws.amazon.com/config/latest/developerguide/restricted-common-ports.html) (created rule is `restricted-rdp`)
+**AWS Config rule:** [`restricted-common-ports`](https://docs.aws.amazon.com/config/latest/developerguide/restricted-common-ports.html) (created rule is `restricted-rdp`)
 
 **Schedule type:** Change triggered and periodic
 
@@ -378,7 +378,7 @@ To prohibit ingress to port 3389, remove the rule that allows such access for ea
 
 **Resource type:** `AWS::EC2::Subnet`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/subnet-auto-assign-public-ip-disabled.html](https://docs.aws.amazon.com/config/latest/developerguide/subnet-auto-assign-public-ip-disabled.html)
+**AWS Config rule:** [`subnet-auto-assign-public-ip-disabled`](https://docs.aws.amazon.com/config/latest/developerguide/subnet-auto-assign-public-ip-disabled.html)
 
 **Schedule type:** Change triggered
 
@@ -404,7 +404,7 @@ To configure a subnet to not assign public IP addresses, see [Modify the IP addr
 
 **Resource type:** `AWS::EC2::NetworkAcl`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/vpc-network-acl-unused-check.html](https://docs.aws.amazon.com/config/latest/developerguide/vpc-network-acl-unused-check.html)
+**AWS Config rule:** [`vpc-network-acl-unused-check`](https://docs.aws.amazon.com/config/latest/developerguide/vpc-network-acl-unused-check.html)
 
 **Schedule type:** Change triggered
 
@@ -434,7 +434,7 @@ For instructions on deleting an unused network ACL, see [Deleting a network ACL]
 
 **Resource type:** `AWS::EC2::Instance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-instance-multiple-eni-check.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-instance-multiple-eni-check.html)
+**AWS Config rule:** [`ec2-instance-multiple-eni-check`](https://docs.aws.amazon.com/config/latest/developerguide/ec2-instance-multiple-eni-check.html)
 
 **Schedule type:** Change triggered
 
@@ -460,7 +460,7 @@ To detach a network interface from an EC2 instance, see [Detach a network interf
 
 **Resource type:** `AWS::EC2::SecurityGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/vpc-sg-open-only-to-authorized-ports.html](https://docs.aws.amazon.com/config/latest/developerguide/vpc-sg-open-only-to-authorized-ports.html)
+**AWS Config rule:** [`vpc-sg-open-only-to-authorized-ports`](https://docs.aws.amazon.com/config/latest/developerguide/vpc-sg-open-only-to-authorized-ports.html)
 
 **Schedule type:** Change triggered
 
@@ -493,7 +493,7 @@ To modify a security group, see [Work with security groups](https://docs.aws.ama
 
 **Resource type:** `AWS::EC2::SecurityGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/restricted-common-ports.html](https://docs.aws.amazon.com/config/latest/developerguide/restricted-common-ports.html) (created rule is `vpc-sg-restricted-common-ports`)
+**AWS Config rule:** [`restricted-common-ports`](https://docs.aws.amazon.com/config/latest/developerguide/restricted-common-ports.html) (created rule is `vpc-sg-restricted-common-ports`)
 
 **Schedule type:** Change triggered and periodic
 
@@ -540,7 +540,7 @@ To delete rules from a security group, see [Delete rules from a security group](
 
 **Resource type:**`AWS::EC2::VPNConnection`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/vpc-vpn-2-tunnels-up.html](https://docs.aws.amazon.com/config/latest/developerguide/vpc-vpn-2-tunnels-up.html)
+**AWS Config rule:** [`vpc-vpn-2-tunnels-up`](https://docs.aws.amazon.com/config/latest/developerguide/vpc-vpn-2-tunnels-up.html)
 
 **Schedule type:** Change triggered
 
@@ -566,7 +566,7 @@ To modify VPN tunnel options, see [Modifying Site-to-Site VPN tunnel options](ht
 
 **Resource type:**`AWS::EC2::NetworkAcl`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/nacl-no-unrestricted-ssh-rdp.html](https://docs.aws.amazon.com/config/latest/developerguide/nacl-no-unrestricted-ssh-rdp.html)
+**AWS Config rule:** [`nacl-no-unrestricted-ssh-rdp`](https://docs.aws.amazon.com/config/latest/developerguide/nacl-no-unrestricted-ssh-rdp.html)
 
 **Schedule type:** Change triggered
 
@@ -590,7 +590,7 @@ To edit network ACL traffic rules, see [Work with network ACLs](https://docs.aws
 
 **Resource type:** `AWS::EC2::NetworkInterface`, `AWS::EC2::SecurityGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-security-group-attached-to-eni-periodic.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-security-group-attached-to-eni-periodic.html)
+**AWS Config rule:** [`ec2-security-group-attached-to-eni-periodic`](https://docs.aws.amazon.com/config/latest/developerguide/ec2-security-group-attached-to-eni-periodic.html)
 
 **Schedule type:** Periodic
 
@@ -617,7 +617,7 @@ To create, assign and delete security groups, see [Security groups for your EC2 
 
 **Resource type:**`AWS::EC2::TransitGateway`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-transit-gateway-auto-vpc-attach-disabled.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-transit-gateway-auto-vpc-attach-disabled.html)
+**AWS Config rule:** [`ec2-transit-gateway-auto-vpc-attach-disabled`](https://docs.aws.amazon.com/config/latest/developerguide/ec2-transit-gateway-auto-vpc-attach-disabled.html)
 
 **Schedule type:** Change triggered
 
@@ -643,7 +643,7 @@ To modify a transit gateway, see [Modify a transit gateway](https://docs.aws.ama
 
 **Resource type:**`AWS::EC2::Instance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-paravirtual-instance-check.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-paravirtual-instance-check.html)
+**AWS Config rule:** [`ec2-paravirtual-instance-check`](https://docs.aws.amazon.com/config/latest/developerguide/ec2-paravirtual-instance-check.html)
 
 **Schedule type:** Change triggered
 
@@ -671,7 +671,7 @@ To update an EC2 instance to a new instance type, see [Change the instance type]
 
 **Resource type:**`AWS::EC2::LaunchTemplate`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-launch-template-public-ip-disabled.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-launch-template-public-ip-disabled.html)
+**AWS Config rule:** [`ec2-launch-template-public-ip-disabled`](https://docs.aws.amazon.com/config/latest/developerguide/ec2-launch-template-public-ip-disabled.html)
 
 **Schedule type:** Change triggered
 
@@ -697,7 +697,7 @@ To update an EC2 launch template, see [Change the default network interface sett
 
 **Resource type:** `AWS::EC2::Volume`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ebs-resources-protected-by-backup-plan.html](https://docs.aws.amazon.com/config/latest/developerguide/ebs-resources-protected-by-backup-plan.html) ``
+**AWS Config rule:** [`ebs-resources-protected-by-backup-plan`](https://docs.aws.amazon.com/config/latest/developerguide/ebs-resources-protected-by-backup-plan.html) ``
 
 **Schedule type:** Periodic
 
@@ -1285,7 +1285,7 @@ To add tags to an EC2 VPN gateway, see [Tag your Amazon EC2 resources](https://d
 
 **Resource type:** `AWS::EC2::ClientVpnEndpoint`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-client-vpn-connection-log-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-client-vpn-connection-log-enabled.html) ``
+**AWS Config rule:** [`ec2-client-vpn-connection-log-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/ec2-client-vpn-connection-log-enabled.html) ``
 
 **Schedule type:** Change triggered
 
@@ -1342,7 +1342,7 @@ To add tags to an EC2 transit gateway, see [Tag your Amazon EC2 resources](https
 
 **Resource type:** `AWS::EC2::SecurityGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/vpc-sg-port-restriction-check.html](https://docs.aws.amazon.com/config/latest/developerguide/vpc-sg-port-restriction-check.html)
+**AWS Config rule:** [`vpc-sg-port-restriction-check`](https://docs.aws.amazon.com/config/latest/developerguide/vpc-sg-port-restriction-check.html)
 
 **Schedule type:** Periodic
 
@@ -1373,7 +1373,7 @@ To update an EC2 security group rule to prohibit ingress traffic to the specifie
 
 **Resource type:** `AWS::EC2::SecurityGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/vpc-sg-port-restriction-check.html](https://docs.aws.amazon.com/config/latest/developerguide/vpc-sg-port-restriction-check.html)
+**AWS Config rule:** [`vpc-sg-port-restriction-check`](https://docs.aws.amazon.com/config/latest/developerguide/vpc-sg-port-restriction-check.html)
 
 **Schedule type:** Periodic
 
@@ -1404,7 +1404,7 @@ To update an EC2 security group rule to prohibit ingress traffic to the specifie
 
 **Resource type:** `AWS::EC2::VPC`, `AWS::EC2::VPCEndpoint`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/vpc-endpoint-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/vpc-endpoint-enabled.html)
+**AWS Config rule:** [vpc-endpoint-enabled](https://docs.aws.amazon.com/config/latest/developerguide/vpc-endpoint-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -1435,7 +1435,7 @@ To configure a VPC endpoint, see [Access an AWS service using an interface VPC e
 
 **Resource type:** `AWS::EC2::VPC`, `AWS::EC2::VPCEndpoint`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/vpc-endpoint-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/vpc-endpoint-enabled.html)
+**AWS Config rule:** [vpc-endpoint-enabled](https://docs.aws.amazon.com/config/latest/developerguide/vpc-endpoint-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -1466,7 +1466,7 @@ To configure a VPC endpoint, see [Access an AWS service using an interface VPC e
 
 **Resource type:** `AWS::EC2::VPC`, `AWS::EC2::VPCEndpoint`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/vpc-endpoint-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/vpc-endpoint-enabled.html)
+**AWS Config rule:** [vpc-endpoint-enabled](https://docs.aws.amazon.com/config/latest/developerguide/vpc-endpoint-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -1497,7 +1497,7 @@ To configure a VPC endpoint, see [Access an AWS service using an interface VPC e
 
 **Resource type:** `AWS::EC2::VPC`, `AWS::EC2::VPCEndpoint`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/vpc-endpoint-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/vpc-endpoint-enabled.html)
+**AWS Config rule:** [vpc-endpoint-enabled](https://docs.aws.amazon.com/config/latest/developerguide/vpc-endpoint-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -1528,7 +1528,7 @@ To configure a VPC endpoint, see [Access an AWS service using an interface VPC e
 
 **Resource type:** `AWS::EC2::VPC`, `AWS::EC2::VPCEndpoint`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/vpc-endpoint-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/vpc-endpoint-enabled.html)
+**AWS Config rule:** [vpc-endpoint-enabled](https://docs.aws.amazon.com/config/latest/developerguide/vpc-endpoint-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -1559,7 +1559,7 @@ To configure a VPC endpoint, see [Access an AWS service using an interface VPC e
 
 **Resource type:** `AWS::EC2::LaunchTemplate`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-launch-template-imdsv2-check.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-launch-template-imdsv2-check.html)
+**AWS Config rule:** [ec2-launch-template-imdsv2-check](https://docs.aws.amazon.com/config/latest/developerguide/ec2-launch-template-imdsv2-check.html)
 
 **Schedule type:** Change triggered
 
@@ -1585,7 +1585,7 @@ To require IMDSv2 on an EC2 launch template, see [Configure the Instance Metadat
 
 **Resource type:** `AWS::EC2::VPNConnection`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-vpn-connection-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-vpn-connection-logging-enabled.html)
+**AWS Config rule:** [ec2-vpn-connection-logging-enabled](https://docs.aws.amazon.com/config/latest/developerguide/ec2-vpn-connection-logging-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -1637,7 +1637,7 @@ To enable bi-directional BPA at the account level, see [Enable BPA bidirectional
 
 **Resource type:** `AWS::EC2::SpotFleet`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-spot-fleet-request-ct-encryption-at-rest.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-spot-fleet-request-ct-encryption-at-rest.html)
+**AWS Config rule:** [ec2-spot-fleet-request-ct-encryption-at-rest](https://docs.aws.amazon.com/config/latest/developerguide/ec2-spot-fleet-request-ct-encryption-at-rest.html)
 
 **Schedule type:** Change triggered
 
@@ -1668,7 +1668,7 @@ For information about creating an Amazon EC2 Spot Fleet request, see [Create a S
 
 **Resource type:** `AWS::EC2::DHCPOptions`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-dhcp-options-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-dhcp-options-tagged.html)
+**AWS Config rule:** [ec2-dhcp-options-tagged](https://docs.aws.amazon.com/config/latest/developerguide/ec2-dhcp-options-tagged.html)
 
 **Schedule type:** Change triggered
 
@@ -1699,7 +1699,7 @@ For information about adding tags to an Amazon EC2 DHCP option set, see [Tag you
 
 **Resource type:** `AWS::EC2::LaunchTemplate`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-launch-template-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-launch-template-tagged.html)
+**AWS Config rule:** [ec2-launch-template-tagged](https://docs.aws.amazon.com/config/latest/developerguide/ec2-launch-template-tagged.html)
 
 **Schedule type:** Change triggered
 
@@ -1730,7 +1730,7 @@ For information about adding tags to an Amazon EC2 launch template, see [Tag you
 
 **Resource type:** `AWS::EC2::PrefixList`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-prefix-list-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-prefix-list-tagged.html)
+**AWS Config rule:** [ec2-prefix-list-tagged](https://docs.aws.amazon.com/config/latest/developerguide/ec2-prefix-list-tagged.html)
 
 **Schedule type:** Change triggered
 
@@ -1761,7 +1761,7 @@ For information about adding tags to an Amazon EC2 prefix list, see [Tag your Am
 
 **Resource type:** `AWS::EC2::TrafficMirrorSession`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-traffic-mirror-session-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-traffic-mirror-session-tagged.html)
+**AWS Config rule:** [ec2-traffic-mirror-session-tagged](https://docs.aws.amazon.com/config/latest/developerguide/ec2-traffic-mirror-session-tagged.html)
 
 **Schedule type:** Change triggered
 
@@ -1792,7 +1792,7 @@ For information about adding tags to an Amazon EC2 traffic mirror session, see [
 
 **Resource type:** `AWS::EC2::TrafficMirrorFilter`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-traffic-mirror-filter-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-traffic-mirror-filter-tagged.html)
+**AWS Config rule:** [ec2-traffic-mirror-filter-tagged](https://docs.aws.amazon.com/config/latest/developerguide/ec2-traffic-mirror-filter-tagged.html)
 
 **Schedule type:** Change triggered
 
@@ -1823,7 +1823,7 @@ For information about adding tags to an Amazon EC2 traffic mirror filter, see [T
 
 **Resource type:** `AWS::EC2::TrafficMirrorTarget`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-traffic-mirror-target-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-traffic-mirror-target-tagged.html)
+**AWS Config rule:** [ec2-traffic-mirror-target-tagged](https://docs.aws.amazon.com/config/latest/developerguide/ec2-traffic-mirror-target-tagged.html)
 
 **Schedule type:** Change triggered
 
@@ -1854,7 +1854,7 @@ For information about adding tags to an Amazon EC2 traffic mirror target, see [T
 
 **Resource type:** `AWS::EC2::NetworkInterface`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-enis-source-destination-check-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-enis-source-destination-check-enabled.html)
+**AWS Config rule:** [ec2-enis-source-destination-check-enabled](https://docs.aws.amazon.com/config/latest/developerguide/ec2-enis-source-destination-check-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -1881,7 +1881,7 @@ For information about enabling source/destination checks for an Amazon EC2 ENI, 
 
 **Resource type:** `AWS::EC2::LaunchTemplate`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-launch-templates-ebs-volume-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-launch-templates-ebs-volume-encrypted.html)
+**AWS Config rule:** [ec2-launch-templates-ebs-volume-encrypted](https://docs.aws.amazon.com/config/latest/developerguide/ec2-launch-templates-ebs-volume-encrypted.html)
 
 **Schedule type:** Change triggered
 
@@ -1910,7 +1910,7 @@ After you create an Amazon EC2 launch template, you can't modify it. However, yo
 
 **Resource type:** `AWS::EC2::SnapshotBlockPublicAccess`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ebs-snapshot-block-public-access.html](https://docs.aws.amazon.com/config/latest/developerguide/ebs-snapshot-block-public-access.html)
+**AWS Config rule:** [ebs-snapshot-block-public-access](https://docs.aws.amazon.com/config/latest/developerguide/ebs-snapshot-block-public-access.html)
 
 **Schedule type:** Change triggered
 
@@ -1934,7 +1934,7 @@ To enable block public access for snapshots, see [Configure block public access 
 
 **Resource type:** `AWS::EC2::VPNConnection`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-vpn-connection-ike-version-check.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-vpn-connection-ike-version-check.html)
+**AWS Config rule:** [ec2-vpn-connection-ike-version-check](https://docs.aws.amazon.com/config/latest/developerguide/ec2-vpn-connection-ike-version-check.html)
 
 **Schedule type:** Change triggered
 

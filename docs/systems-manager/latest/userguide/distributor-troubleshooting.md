@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/distrib
 # Troubleshooting AWS Systems Manager Distributor
 <a name="distributor-troubleshooting"></a>
 
-The following information can help you troubleshoot problems that might occur when you use Distributor, a tool in AWS Systems Manager.
+The following information can help you troubleshoot problems that might occur when you use Distributor.
 
 **Topics**
 + [Wrong package with the same name is installed](#distributor-tshoot-1)
@@ -84,7 +84,7 @@ Failed to download manifest - failed to retrieve package document description: I
 
 **Cause 2:** When using a VPC, you haven't provided your IAM instance profile with access to the AWS managed S3 bucket that contains the document `AWS-ConfigureAWSPackage` for the AWS Region you are targeting.
 
-**Solution 2:** Ensure that your IAM instance profile provides SSM Agent with access to the AWS managed S3 bucket that contains the document `AWS-ConfigureAWSPackage` for the AWS Region you are targeting, as explained in [SSM Agent communications with AWS managed S3 buckets](ssm-agent-technical-details.md#ssm-agent-minimum-s3-permissions).
+**Solution 2:** Make sure that your IAM instance profile provides SSM Agent with access to the AWS managed S3 bucket that contains the document `AWS-ConfigureAWSPackage` for the AWS Region you are targeting, as explained in [SSM Agent communications with AWS managed S3 buckets](ssm-agent-technical-details.md#ssm-agent-minimum-s3-permissions).
 
 ## Upload failed.
 <a name="distributor-tshoot-6"></a>

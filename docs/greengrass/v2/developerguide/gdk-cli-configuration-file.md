@@ -98,7 +98,7 @@ This property is optional if you are using GDK CLI v1.3.0 or later.
 (Optional) Additional configuration options used during component version creation.
 This feature is available for GDK CLI v1.2.0 and later.
 `file_upload_args`
-A JSON structure containing arguments sent to Amazon S3 while uploading files to a bucket, such as metadata and encryption mechanisms. For a list of the allowed arguments, see the [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/s3.html#boto3.s3.transfer.S3Transfer.ALLOWED_UPLOAD_ARGS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/s3.html#boto3.s3.transfer.S3Transfer.ALLOWED_UPLOAD_ARGS) class in the *Boto3 documentation.*.
+A JSON structure containing arguments sent to Amazon S3 while uploading files to a bucket, such as metadata and encryption mechanisms. For a list of the allowed arguments, see the [`S3Transfer`](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/s3.html#boto3.s3.transfer.S3Transfer.ALLOWED_UPLOAD_ARGS) class in the *Boto3 documentation.*.
 
 `test-e2e`
 (Optional) The configuration to use during end-to-end testing of the component. This feature is available for GDK CLI v1.3.0 and later.

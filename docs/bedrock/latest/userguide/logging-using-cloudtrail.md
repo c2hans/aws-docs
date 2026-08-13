@@ -44,11 +44,11 @@ Amazon Bedrock logs some [Amazon Bedrock Runtime API operations](https://docs.aw
 Amazon Bedrock logs other [Amazon Bedrock Runtime API operations](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operations_Amazon_Bedrock_Runtime.html) (such as `InvokeModelWithBidirectionalStream`, `GetAsyncInvoke`, and `StartAsyncInvokes`) as data events.
 
 Amazon Bedrock logs all [Agents for Amazon Bedrock Runtime API operations](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operations_Agents_for_Amazon_Bedrock_Runtime.html) (such as `InvokeAgent` and `InvokeInlineAgent`) actions to CloudTrail as data events.
-+ To log [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) calls, configure advanced event selectors to record data events for the `AWS::Bedrock::AgentAlias` resource type.
-+ To log [https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent-runtime_InvokeInlineAgent.html](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent-runtime_InvokeInlineAgent.html) calls, configure advanced event selectors to record data events for the `AWS::Bedrock::InlineAgent` resource type.
++ To log [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) calls, configure advanced event selectors to record data events for the `AWS::Bedrock::AgentAlias` resource type.
++ To log [InvokeInlineAgent](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent-runtime_InvokeInlineAgent.html) calls, configure advanced event selectors to record data events for the `AWS::Bedrock::InlineAgent` resource type.
 + To log [InvokeModelWithBidirectionalStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithBidirectionalStream.html) calls, configure advanced event selectors to record data events for the `AWS::Bedrock::Model` resource type and `AWS:Bedrock::AsyncInvoke`.
 + To log [GetAsyncInvoke](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_GetAsyncInvoke.html) and [StartAsyncInvoke](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_StartAsyncInvoke.html) calls, configure advanced event selectors to record data events for the `AWS::Bedrock::Model` resource type and `AWS:Bedrock::AsyncInvoke`.
-+ To log [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) and [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) calls, configure advanced event selectors to record data events for the `AWS::Bedrock::KnowledgeBase` resource type.
++ To log [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) and [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) calls, configure advanced event selectors to record data events for the `AWS::Bedrock::KnowledgeBase` resource type.
 + To log [InvokeFlow](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeFlow.html) calls, configure advanced event selectors to record data events for the `AWS::Bedrock::FlowAlias` resource type.
 + To log `RenderPrompt` calls, configure advanced event selectors to record data events for the `AWS::Bedrock::Prompt` resource type. `RenderPrompt` is a permission-only [action](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonbedrock.html#amazonbedrock-actions-as-permissions) that renders prompts, created using [Prompt management](prompt-management.md), for model invocation (`InvokeModel(WithResponseStream)` and `Converse(Stream)`).
 
@@ -93,7 +93,7 @@ aws cloudtrail put-event-selectors --trail-name {{trailName}} \
 ]'
 ```
 
-You can additionally filter on the `eventName` and `resources.ARN` fields. For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html).
+You can additionally filter on the `eventName` and `resources.ARN` fields. For more information about these fields, see [AdvancedFieldSelector](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html).
 
 Additional charges apply for data events. For more information about CloudTrail pricing, see [AWS CloudTrail Pricing](https://aws.amazon.com/cloudtrail/pricing/).
 

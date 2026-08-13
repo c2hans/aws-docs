@@ -62,7 +62,7 @@ You can specify these parameters only when you create the wireless device. You c
 ## Prepare devices for multicast and FUOTA by using the API
 <a name="lorawan-prepare-devices-multicast-api"></a>
 
-To use multicast groups or to perform FUOTA, configure these parameters by using the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessDevice.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessDevice.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-wireless-device.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-wireless-device.html) CLI command. In addition to specifying the application key and FPorts parameters, make sure that the device profile that's linked to the device supports one or both class B or class C modes.
+To use multicast groups or to perform FUOTA, configure these parameters by using the [`CreateWirelessDevice`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessDevice.html) API operation or the [`create-wireless-device`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-wireless-device.html) CLI command. In addition to specifying the application key and FPorts parameters, make sure that the device profile that's linked to the device supports one or both class B or class C modes.
 
 You can provide an `input.json` file as input to the `create-wireless-device` command.
 
@@ -104,7 +104,7 @@ For information about the CLI commands that you can use, see [AWS CLI reference]
 **Note**
 After you specify the values of these parameters, you can't update them by using the `UpdateWirelessDevice` API operation. Instead, you can create a new device with the values for the parameters `GenAppKey` and `FPorts`.
 
-To get information about the values specified for these parameters, you can use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDevice.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDevice.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-wireless-device.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-wireless-device.html) CLI command.
+To get information about the values specified for these parameters, you can use the [`GetWirelessDevice`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDevice.html) API operation or the [`get-wireless-device`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-wireless-device.html) CLI command.
 
 ## Next steps
 <a name="lorawan-prepare-devices-next"></a>

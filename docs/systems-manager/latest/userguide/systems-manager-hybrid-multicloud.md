@@ -38,14 +38,14 @@ After configuring your hybrid and multicloud environment for Systems Manager, yo
   For information about using EventBridge to monitor Systems Manager events, see [Monitoring Systems Manager events with Amazon EventBridge](monitoring-eventbridge-events.md).
 
 **Onboarding with Cloud Connectors**
-A Cloud Connector is a Systems Manager resource that establishes a trust relationship between your AWS account and a third-party cloud provider. With Cloud Connectors, you can onboard and manage virtual machines from other cloud environments at scale directly from the AWS Management Console without signing in to individual VMs, running scripts, or manually installing agents.
+A Cloud Connector is a Systems Manager resource that establishes a trust relationship between your AWS account and a third-party cloud provider. With Cloud Connectors, you can onboard and manage virtual machines from other cloud environments at scale. You don't need to sign in to individual VMs, run scripts, or manually install agents.
 
 When you create a Cloud Connector, Systems Manager discovers associated VMs, and installs SSM Agent on each VM. New VMs that come online are enrolled automatically. After onboarding, VMs appear as managed nodes in the unified Systems Manager console alongside your Amazon EC2 instances, and you can manage them using the same Systems Manager capabilities you use for Amazon EC2.
 
 Cloud Connectors currently support Microsoft Azure. For more information, see [Set up a Cloud Connector for Microsoft Azure in Systems Manager](systems-manager-cloud-connector.md).
 
 **Onboarding with hybrid activations**
-A hybrid activation allows you to register individual on-premises servers, edge devices, and VMs from any environment as managed nodes. With hybrid activations, you create an activation in the Systems Manager console, install SSM Agent on each machine manually, and register it using the activation code and ID.
+A hybrid activation lets you register individual on-premises servers, edge devices, and VMs from any environment as managed nodes. With hybrid activations, you create an activation in the Systems Manager console, install SSM Agent on each machine manually, and register it using the activation code and ID.
 
 Hybrid activations give you flexibility to onboard machines from any environment, including on-premises data centers, edge locations, and cloud providers that aren't yet supported by Cloud Connectors. After registration, the machines appear as managed nodes and support the same Systems Manager capabilities as Amazon EC2 instances.
 

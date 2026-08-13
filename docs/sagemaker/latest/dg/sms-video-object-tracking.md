@@ -34,7 +34,7 @@ The following video shows how a worker might use the worker UI with the bounding
 ## Create a Video Frame Object Tracking Labeling Job
 <a name="sms-video-ot-create-labeling-job"></a>
 
-You can create a video frame object tracking labeling job using the SageMaker AI console or the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html) API operation.
+You can create a video frame object tracking labeling job using the SageMaker AI console or the [`CreateLabelingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html) API operation.
 
 This section assumes that you have reviewed the [Video frame labeling job reference](sms-video-overview.md) and have chosen the type of input data and the input dataset connection you are using.
 
@@ -48,19 +48,19 @@ You can follow the instructions in [Create a Labeling Job (Console)](sms-create-
 ### Create a Labeling Job (API)
 <a name="sms-video-ot-create-labeling-job-api"></a>
 
-You create an object tracking labeling job using the SageMaker API operation `CreateLabelingJob`. This API defines this operation for all AWS SDKs. To see a list of language-specific SDKs supported for this operation, review the **See Also** section of [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html).
+You create an object tracking labeling job using the SageMaker API operation `CreateLabelingJob`. This API defines this operation for all AWS SDKs. To see a list of language-specific SDKs supported for this operation, review the **See Also** section of [`CreateLabelingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html).
 
 [Create a Labeling Job (API)](sms-create-labeling-job-api.md) provides an overview of the `CreateLabelingJob` operation. Follow these instructions and do the following while you configure your request:
 + You must enter an ARN for `HumanTaskUiArn`. Use `arn:aws:sagemaker:{{<region>}}:394669845002:human-task-ui/VideoObjectTracking`. Replace `{{<region>}}` with the AWS Region in which you are creating the labeling job.
 
   Do not include an entry for the `UiTemplateS3Uri` parameter.
-+ Your [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html#sagemaker-CreateLabelingJob-request-LabelAttributeName](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html#sagemaker-CreateLabelingJob-request-LabelAttributeName) must end in `-ref`. For example, `{{ot-labels}}-ref`.
++ Your [`LabelAttributeName`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html#sagemaker-CreateLabelingJob-request-LabelAttributeName) must end in `-ref`. For example, `{{ot-labels}}-ref`.
 + Your input manifest file must be a video frame sequence manifest file. You can create this manifest file using the SageMaker AI console, or create it manually and upload it to Amazon S3. For more information, see [Input Data Setup](sms-video-data-setup.md). If you create a streaming labeling job, the input manifest file is optional.
 + You can only use private or vendor work teams to create video frame object detection labeling jobs.
 + You specify your labels, label category and frame attributes, the task type, and worker instructions in a label category configuration file. Specify the task type (bounding boxes, polylines, polygons or keypoint) using `annotationType` in your label category configuration file. For more information, see [Labeling category configuration file with label category and frame attributes reference](sms-label-cat-config-attributes.md) to learn how to create this file.
 + You need to provide pre-defined ARNs for the pre-annotation and post-annotation (ACS) Lambda functions. These ARNs are specific to the AWS Region you use to create your labeling job.
-  + To find the pre-annotation Lambda ARN, refer to [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanTaskConfig.html#sagemaker-Type-HumanTaskConfig-PreHumanTaskLambdaArn](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanTaskConfig.html#sagemaker-Type-HumanTaskConfig-PreHumanTaskLambdaArn). Use the Region in which you are creating your labeling job to find the correct ARN that ends with `PRE-VideoObjectTracking`.
-  + To find the post-annotation Lambda ARN, refer to [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AnnotationConsolidationConfig.html#sagemaker-Type-AnnotationConsolidationConfig-AnnotationConsolidationLambdaArn](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AnnotationConsolidationConfig.html#sagemaker-Type-AnnotationConsolidationConfig-AnnotationConsolidationLambdaArn). Use the Region in which you are creating your labeling job to find the correct ARN that ends with `ACS-VideoObjectTracking`.
+  + To find the pre-annotation Lambda ARN, refer to [`PreHumanTaskLambdaArn`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanTaskConfig.html#sagemaker-Type-HumanTaskConfig-PreHumanTaskLambdaArn). Use the Region in which you are creating your labeling job to find the correct ARN that ends with `PRE-VideoObjectTracking`.
+  + To find the post-annotation Lambda ARN, refer to [`AnnotationConsolidationLambdaArn`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AnnotationConsolidationConfig.html#sagemaker-Type-AnnotationConsolidationConfig-AnnotationConsolidationLambdaArn). Use the Region in which you are creating your labeling job to find the correct ARN that ends with `ACS-VideoObjectTracking`.
 + The number of workers specified in `NumberOfHumanWorkersPerDataObject` must be `1`.
 + Automated data labeling is not supported for video frame labeling jobs. Do not specify values for parameters in `[LabelingJobAlgorithmsConfig](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html#sagemaker-CreateLabelingJob-request-LabelingJobAlgorithmsConfig)`.
 + Video frame object tracking labeling jobs can take multiple hours to complete. You can specify a longer time limit for these labeling jobs in `TaskTimeLimitInSeconds` (up to 7 days, or 604,800 seconds).

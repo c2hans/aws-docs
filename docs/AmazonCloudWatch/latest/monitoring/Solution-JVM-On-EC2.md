@@ -37,7 +37,7 @@ The solution delivers JVM monitoring, providing valuable insights for the follow
 + Monitor JVM heap and non-heap memory usage.
 + Analyze thread and class loading for concurrency issues.
 + Track garbage collection to identify memory leaks.
-+ Switch between different JVM applications configured via the solution under the same account.
++ Switch between different JVM applications configured through the solution under the same account.
 
 Below are the key advantages of the solution:
 + Automates metric collection for JVM using CloudWatch agent configuration, eliminating manual instrumentation.
@@ -196,12 +196,12 @@ If you are already running the CloudWatch agent on the EC2 hosts where the workl
 Using Systems Manager to deploy the following CloudWatch agent configurations will replace or overwrite any existing CloudWatch agent configuration on your EC2 instances. You can modify this configuration to suit your unique environment or use case. The metrics defined in this solution are the minimum required for the recommended dashboard.
 
 The deployment process includes the following steps:
-+ Step 1: Ensure that the target EC2 instances have the required IAM permissions.
++ Step 1: Make sure that the target EC2 instances have the required IAM permissions.
 + Step 2: Store the recommended agent configuration file in the Systems Manager Parameter Store.
 + Step 3: Install the CloudWatch agent on one or more EC2 instances using an CloudFormation stack.
 + Step 4: Verify the agent setup is configured properly.
 
-### Step 1: Ensure the target EC2 instances have the required IAM permissions
+### Step 1: Make sure the target EC2 instances have the required IAM permissions
 <a name="Solution-JVM-Agent-Step1"></a>
 
 You must grant permission for Systems Manager to install and configure the CloudWatch agent. You must also grant permission for the CloudWatch agent to publish telemetry from your EC2 instance to CloudWatch. Make sure that the IAM role attached to the instance has the **CloudWatchAgentServerPolicy** and **AmazonSSMManagedInstanceCore** IAM policies attached.
@@ -277,7 +277,7 @@ If you want to immediately apply changes to this Systems Manager parameter, you 
 <a name="Solution-JVM-Agent-Step4"></a>
 
 You can verify whether the CloudWatch agent is installed by following the steps in [Verify that the CloudWatch agent is running](troubleshooting-CloudWatch-Agent.md#CloudWatch-Agent-troubleshooting-verify-running). If the CloudWatch agent is not installed and running, make sure you have set up everything correctly.
-+ Be sure you have attached a role with correct permissions for the EC2 instance as described in [Step 1: Ensure the target EC2 instances have the required IAM permissions](#Solution-JVM-Agent-Step1).
++ Be sure you have attached a role with correct permissions for the EC2 instance as described in [Step 1: Make sure the target EC2 instances have the required IAM permissions](#Solution-JVM-Agent-Step1).
 + Be sure you have correctly configured the JSON for the Systems Manager parameter. Follow the steps in [Troubleshooting installation of the CloudWatch agent with CloudFormation](Install-CloudWatch-Agent-New-Instances-CloudFormation.md#CloudWatch-Agent-CloudFormation-troubleshooting).
 
 If everything is set up correctly, then you should see the JVM metrics being published to CloudWatch. You can check the CloudWatch console to verify they are being published.
@@ -310,7 +310,7 @@ By using the CloudWatch console to create a dashboard, you can preview the dashb
  The dashboard created with CloudFormation in this solution displays metrics from the Region where the solution is deployed. Be sure to create the CloudFormation stack in the Region where your JVM metrics are published.
 If CloudWatch agent metrics are getting published to a different namespace than `CWAgent` (for example, if you've provided a customized namespace), you'll have to change the CloudFormation configuration to replace `CWAgent` with the customized namespace you are using.
 
-**To create the dashboard via CloudWatch Console**
+**To create the dashboard through CloudWatch Console**
 **Note**
 Solution dashboards currently display garbage collection-related metrics only for the G1 Garbage Collector, which is the default collector for the latest Java versions. If you are using a different garbage collection algorithm, the widgets pertaining to garbage collection are empty. However, you can customize these widgets by changing the dashboard CloudFormation template and applying the appropriate garbage collection type to the name dimension of the garbage collection-related metrics. For example, if you are using parallel garbage collection, change the **name=\\"G1 Young Generation\\"** to **name=\\"Parallel GC\\"** of the garbage collection count metric `jvm.gc.collections.count`.
 
@@ -324,7 +324,7 @@ Solution dashboards currently display garbage collection-related metrics only fo
 
 1. Preview the dashboard and choose **Save** to create the dashboard.
 
-**To create the dashboard via CloudFormation**
+**To create the dashboard through CloudFormation**
 
 1. Open the CloudFormation **Quick create stack** wizard using this link: [ https://console.aws.amazon.com/cloudformation/home?\#/stacks/quickcreate?templateURL=https://aws-observability-solutions-prod-us-east-1.s3.us-east-1.amazonaws.com/JVM\_EC2/CloudWatch/CFN/v1.0.0/dashboard-template-1.0.0.json ](https://console.aws.amazon.com/cloudformation/home?#/stacks/quickcreate?templateURL=https://aws-observability-solutions-prod-us-east-1.s3.us-east-1.amazonaws.com/JVM_EC2/CloudWatch/CFN/v1.0.0/dashboard-template-1.0.0.json).
 

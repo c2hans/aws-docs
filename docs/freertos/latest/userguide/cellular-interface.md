@@ -40,14 +40,14 @@ For information about porting the Cellular Interface library to your platform, s
   <tr><th>File</th><th>With -O1 Optimization</th><th>With -Os Optimization</th></tr>
 </thead>
 <tbody>
-  <tr><td>cellular\_3gpp\_api.c</td><td>6.3K</td><td>5.7K</td></tr>
-  <tr><td>cellular\_3gpp\_urc\_handler.c</td><td>0.9K</td><td>0.8K</td></tr>
-  <tr><td>cellular\_at\_core.c</td><td>1.4K</td><td>1.2K</td></tr>
-  <tr><td>cellular\_common\_api.c</td><td>0.5K</td><td>0.5K</td></tr>
-  <tr><td>cellular\_common.c</td><td>1.6K</td><td>1.4K</td></tr>
-  <tr><td>cellular\_pkthandler.c</td><td>1.4K</td><td>1.2K</td></tr>
-  <tr><td>cellular\_pktio.c</td><td>1.8K</td><td>1.6K</td></tr>
-  <tr><td>Total estimates</td><td>13.9K</td><td>12.4K</td></tr>
+  <tr><td>cellular_3gpp_api.c</td><td>6.3K</td><td>5.7K</td></tr>
+  <tr><td>cellular_3gpp_urc_handler.c</td><td>0.9K</td><td>0.8K</td></tr>
+  <tr><td>cellular_at_core.c</td><td>1.4K</td><td>1.2K</td></tr>
+  <tr><td>cellular_common_api.c</td><td>0.5K</td><td>0.5K</td></tr>
+  <tr><td>cellular_common.c</td><td>1.6K</td><td>1.4K</td></tr>
+  <tr><td>cellular_pkthandler.c</td><td>1.4K</td><td>1.2K</td></tr>
+  <tr><td>cellular_pktio.c</td><td>1.8K</td><td>1.6K</td></tr>
+  <tr><td><b>Total estimates</b></td><td><b>13.9K</b></td><td><b>12.4K</b></td></tr>
 </tbody>
 </table>
 

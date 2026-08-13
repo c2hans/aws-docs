@@ -52,7 +52,7 @@ This release represents an update to the sixth quarterly release of AL2023. AL20
 
 The full comparison of RPM package versions is below.
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
+- ** [`python3.9`](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
   - **RPM:**  python3  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3-debug  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3-devel  / **Architectures:** aarch64, x86\_64

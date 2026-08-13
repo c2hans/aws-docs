@@ -98,7 +98,7 @@ When you register an Azure VM using the `-provider Azure` parameter, SSM Agent r
 | AvailabilityZoneId | Zone{compute.zone} | Zone1 |
 
 **Verify the managed node registration using DescribeInstanceInformation**
-After registration, use the [https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-instance-information.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-instance-information.html) command to confirm that the Azure VM metadata was captured correctly. The following example filters by `SourceId` using the Azure VM ID:
+After registration, use the [describe-instance-information](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-instance-information.html) command to confirm that the Azure VM metadata was captured correctly. The following example filters by `SourceId` using the Azure VM ID:
 
 ```
 aws ssm describe-instance-information \

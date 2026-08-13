@@ -228,7 +228,7 @@ To monitor updates to your metadata table configuration, you can use AWS CloudTr
 ### Using the REST API
 <a name="create-metadata-config-rest-api"></a>
 
-You can send REST requests to create a metadata table configuration. For more information, see [https://docs.aws.amazon.com//AmazonS3/latest/API/API_CreateBucketMetadataConfiguration.html](https://docs.aws.amazon.com//AmazonS3/latest/API/API_CreateBucketMetadataConfiguration.html) in the *Amazon S3 API Reference*.
+You can send REST requests to create a metadata table configuration. For more information, see [CreateBucketMetadataConfiguration](https://docs.aws.amazon.com//AmazonS3/latest/API/API_CreateBucketMetadataConfiguration.html) in the *Amazon S3 API Reference*.
 
 ### Using the AWS SDKs
 <a name="create-metadata-config-sdk"></a>

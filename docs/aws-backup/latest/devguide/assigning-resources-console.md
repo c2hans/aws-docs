@@ -66,5 +66,7 @@ When you refine your selection using two or more tags, the effect is an AND cond
    + **Condition** can be `Equals`, `Contains`, `Begins with`, or `Ends with`, or their inverse: `Does not equal`, `Does not contain`, `Does not begin with`, or `Does not end with`.
 
 1. Choose a **Value** from the list.
+**Important**
+Wildcard conditions such as "Begins with" or "Does not begin with" do not match spaces. For example, `prod*` matches `prod_server` but not `prod server`. To match values with spaces, include each space explicitly in the pattern (for example, `prod *` matches `prod server`). We recommend avoiding spaces in tag values used with wildcard conditions.
 
 1. To further refine using another tag, choose **Add tag**.

@@ -9,7 +9,7 @@ Amazon S3 stores a replication configuration as XML. If you're configuring repli
 
 **Note**
 The latest version of the replication configuration XML format is V2. XML V2 replication configurations are those that contain the `<Filter>` element for rules, and rules that specify S3 Replication Time Control (S3 RTC).
-To see your replication configuration version, you can use the `GetBucketReplication` API operation. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketReplication.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketReplication.html) in the *Amazon Simple Storage Service API Reference*.
+To see your replication configuration version, you can use the `GetBucketReplication` API operation. For more information, see [GetBucketReplication](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketReplication.html) in the *Amazon Simple Storage Service API Reference*.
 For backward compatibility, Amazon S3 continues to support the XML V1 replication configuration format. If you've used the XML V1 replication configuration format, see [Backward compatibility considerations](#replication-backward-compat-considerations) for backward compatibility considerations.
 
 In the replication configuration XML file, you must specify an AWS Identity and Access Management (IAM) role and one or more rules, as shown in the following example:
@@ -321,7 +321,7 @@ Only a value of `<Minutes>15</Minutes>` is accepted for the `<EventThreshold>` a
 ...
 ```
 
-For more information, see [Meeting compliance requirements with S3 Replication Time Control](replication-time-control.md). For API examples, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketReplication.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketReplication.html) in the *Amazon Simple Storage Service API Reference*.
+For more information, see [Meeting compliance requirements with S3 Replication Time Control](replication-time-control.md). For API examples, see [PutBucketReplication](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketReplication.html) in the *Amazon Simple Storage Service API Reference*.
 
 ### Replicate objects created with server-side encryption by using AWS KMS
 <a name="sse-kms-configuration"></a>
@@ -547,7 +547,7 @@ For more information about the XML structure of replication configuration, see [
 
 The latest version of the replication configuration XML format is V2. XML V2 replication configurations are those that contain the `<Filter>` element for rules, and rules that specify S3 Replication Time Control (S3 RTC).
 
-To see your replication configuration version, you can use the `GetBucketReplication` API operation. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketReplication.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketReplication.html) in the *Amazon Simple Storage Service API Reference*.
+To see your replication configuration version, you can use the `GetBucketReplication` API operation. For more information, see [GetBucketReplication](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketReplication.html) in the *Amazon Simple Storage Service API Reference*.
 
 For backward compatibility, Amazon S3 continues to support the XML V1 replication configuration format. If you've used the XML V1 replication configuration format, consider the following issues that affect backward compatibility:
 + The replication configuration XML V2 format includes the `<Filter>` element for rules. With the `<Filter>` element, you can specify object filters based on the object key prefix, tags, or both to scope the objects that the rule applies to. The replication configuration XML V1 format supports filtering based only on the key prefix. In that case, you add the `<Prefix>` element directly as a child element of the `<Rule>` element, as in the following example:

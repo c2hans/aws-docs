@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SageM
 This section provides a comprehensive list of OpenTelemetry metrics emitted by SageMaker AI detailed observability. Detailed observability is built on OpenTelemetry (OTel) and collects fine‐grained operational metrics from the GPU, node, and inference framework layers, publishing them to CloudWatch with rich labels.
 
 **Note**
-Detailed observability publishes OpenTelemetry (OTel) metrics to CloudWatch via OTLP. These are not Prometheus metrics. The metrics are natively stored in CloudWatch as OTel metric data and are queryable using PromQL syntax.
+Detailed observability publishes OpenTelemetry (OTel) metrics to CloudWatch through OTLP. These are not Prometheus metrics. The metrics are natively stored in CloudWatch as OTel metric data and are queryable using PromQL syntax.
 
 ## Account-level aggregate metrics
 <a name="SageMaker-AI-Insights-Metrics-account"></a>

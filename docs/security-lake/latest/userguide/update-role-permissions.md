@@ -33,7 +33,7 @@ Choose your preferred method, and follow the instructions to update your role pe
 
 **To update role permissions (API)**
 
-To update permissions programmatically, use the [https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDataLake.html](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDataLake.html) operation of the Security Lake API. To update permissions using the AWS CLI, run the [https://docs.aws.amazon.com/cli/latest/reference/securitylake/update-data-lake.html](https://docs.aws.amazon.com/cli/latest/reference/securitylake/update-data-lake.html) command.
+To update permissions programmatically, use the [UpdateDataLake](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDataLake.html) operation of the Security Lake API. To update permissions using the AWS CLI, run the [update-data-lake](https://docs.aws.amazon.com/cli/latest/reference/securitylake/update-data-lake.html) command.
 
 To update your role permissions, you must attach the [AmazonSecurityLakeMetastoreManager](security-iam-awsmanpol.md#security-iam-awsmanpol-AmazonSecurityLakeMetastoreManager) policy to the role.
 

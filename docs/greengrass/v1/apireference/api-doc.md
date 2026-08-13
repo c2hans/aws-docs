@@ -11,7 +11,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
 
  To request a HAL response from AWS IoT Greengrass, specify application/hal\+json for the accept request header.
 
-For more information about how AWS IoT Greengrass works, see the [https://docs.aws.amazon.com/greengrass/latest/developerguide/what-is-gg.html](https://docs.aws.amazon.com/greengrass/latest/developerguide/what-is-gg.html).
+For more information about how AWS IoT Greengrass works, see the [*AWS IoT Greengrass Version 1 Developer Guide*](https://docs.aws.amazon.com/greengrass/latest/developerguide/what-is-gg.html).
 
 **Topics**
 + [Actions](api-actions.md)

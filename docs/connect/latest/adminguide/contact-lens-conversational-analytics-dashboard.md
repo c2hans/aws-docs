@@ -2,12 +2,12 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-conversational-analytics-dashboard.html
 ---
 
-# Connect Customer Contact Lens conversational analytics dashboard
+# Connect Customer conversational analytics dashboard
 <a name="contact-lens-conversational-analytics-dashboard"></a>
 
-When Contact Lens conversational analytics is [enabled](enable-analytics.md) on your contacts, you can analyze conversations between customers and agents by using speech and chat transcriptions, natural language processing, and intelligent search capabilities. Contact Lens conversational analytics performs sentiment analysis, detects issues, and enables you to automatically categorize contacts.
+When conversational analytics is [enabled](enable-analytics.md) on your contacts, you can analyze conversations between customers and agents by using speech and chat transcriptions, natural language processing, and intelligent search capabilities. conversational analytics performs sentiment analysis, detects issues, and enables you to automatically categorize contacts.
 
-The Contact Lens conversational analytics dashboard helps you understand:
+The conversational analytics dashboard helps you understand:
 + Why customers are contacting your contact center
 + The trends of contact drivers over time
 + The performance of each of those call drivers (for example, average handle time for call driver "Where's my stuff?")
@@ -31,17 +31,17 @@ Data visualizations such as **Movers and shakers** display the largest changes c
 
 1. Ensure users are assigned the appropriate security profile permissions:
    + **Access metrics - Access permission** or the **Dashboard - Access permission**. For information about the difference in behavior, see [Assign permissions to view dashboards and reports in Connect Customer](dashboard-required-permissions.md).
-   + **Contact Lens - conversational analytics**: This permission enables users to view data in the Contact Lens dashboard.
+   + **conversational analytics - conversational analytics**: This permission enables users to view data in the conversational analytics dashboard.
 
-1. In the AWS console, ensure that **Analytics tools**, **Enable Contact Lens** is selected, as shown in the following image.
-![The Enable Contact Lens checkbox in the AWS console.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboards-enable-contact-lens-checkbox.png)
+1. In the AWS console, ensure that **Analytics tools**, **Enable conversational analytics** is selected, as shown in the following image.
+![The Enable conversational analytics checkbox in the AWS console.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboards-enable-contact-lens-checkbox.png)
 
-1. In your flow, enable Contact Lens conversational analytics so it analyzes your contacts. For instructions, see [Enable call recording and speech analytics](enable-analytics.md#enable-callrecording-speechanalytics).
+1. In your flow, enable conversational analytics so it analyzes your contacts. For instructions, see [Enable call recording and speech analytics](enable-analytics.md#enable-callrecording-speechanalytics).
 
 ## Performance overview charts
 <a name="contact-lens-conversational-dashboard-performance-overview"></a>
 
-There are two performance overview charts that provide aggregated metrics based on your filters. The second chart is further filtered only by contacts analyzed by Contact Lens conversational analytics. Each metric within the charts is compared to your "compare to" benchmark time range filter.
+There are two performance overview charts that provide aggregated metrics based on your filters. The second chart is further filtered only by contacts analyzed by conversational analytics. Each metric within the charts is compared to your "compare to" benchmark time range filter.
 
 ![The Performance overview charts in the dashboard.](http://docs.aws.amazon.com/connect/latest/adminguide/images/conversational-analytics-dashboards-performance-overview.png)
 
@@ -56,9 +56,9 @@ This chart shows the following information:
 
 The contact categories chart shows you Contact Category information. To see all data, choose the pop-out icon on the chart. To deep dive further into the contacts, choose the Contact Category and it will take you to Contact Search pre-filtered for that category along with the dashboard filters.
 
-1. Contacts %: the count of contacts analyzed by Contact Lens conversational analytics that have a given category divided by the total number of contacts analyzed by Contact Lens conversational analytics.
+1. Contacts %: the count of contacts analyzed by conversational analytics that have a given category divided by the total number of contacts analyzed by conversational analytics.
 
-1. Contacts: count of contacts analyzed by Contact Lens conversational analytics that have a given category.
+1. Contacts: count of contacts analyzed by conversational analytics that have a given category.
 
 1. AHT: the average handle time for the contacts that have a given category.
 
@@ -71,24 +71,24 @@ The contact categories chart shows you Contact Category information. To see all 
 ## Movers and shakers
 <a name="contact-lens-conversational-dashboard-movers-shakers"></a>
 
-The movers and shakers chart shows you the categories with the highest percent change in distribution compared to your benchmark time range. In other words, it shows you the count of categories that were generated more or less frequently compared to the total number of contacts analyzed by Contact Lens conversational analytics.
+The movers and shakers chart shows you the categories with the highest percent change in distribution compared to your benchmark time range. In other words, it shows you the count of categories that were generated more or less frequently compared to the total number of contacts analyzed by conversational analytics.
 
 For example:
 + If 20 out of 100 contacts analyzed by conversational analytics have Category A, your contacts % for Category A was 20%.
-+ If during the comparison benchmark time period 10 out of 100 contacts analyzed by Contact Lens conversational analytics had Category A, your Prior contacts % for Category A was 10%.
++ If during the comparison benchmark time period 10 out of 100 contacts analyzed by conversational analytics had Category A, your Prior contacts % for Category A was 10%.
 + The % Change would be (20% - 10%)/(10%) = 100%.
 
 To see all data, choose the pop-out icon on the chart. To deep dive further into the contacts, choose the Contact Category and it will take you to Contact Search pre-filtered for that category along with the dashboard filters.
 
 1. Change %: (Contacts % – Prior contacts %) / (Prior contacts %). This number is rounded. The chart is sorted by highest absolute Change %.
 
-1. Contacts %: the count of contacts analyzed by Contact Lens conversational analytics in the time range specified in your dashboard filter that have a given category divided by the total number of contacts analyzed by Contact Lens conversational analytics.
+1. Contacts %: the count of contacts analyzed by conversational analytics in the time range specified in your dashboard filter that have a given category divided by the total number of contacts analyzed by conversational analytics.
 
-1. Contacts: the count of contacts analyzed by Contact Lens conversational analytics in the time range specified in your dashboard filter.
+1. Contacts: the count of contacts analyzed by conversational analytics in the time range specified in your dashboard filter.
 
-1. Prior contacts %: the count of contacts analyzed by Contact Lens conversational analytics in the "compare to" benchmark time range specified in your dashboard filter that have a given category divided by the total number of contacts analyzed by Contact Lens conversational analytics.
+1. Prior contacts %: the count of contacts analyzed by conversational analytics in the "compare to" benchmark time range specified in your dashboard filter that have a given category divided by the total number of contacts analyzed by conversational analytics.
 
-1. Prior contacts: the count of contacts analyzed by Contact Lens conversational analytics in the "compare to" benchmark time range specified in your dashboard filter.
+1. Prior contacts: the count of contacts analyzed by conversational analytics in the "compare to" benchmark time range specified in your dashboard filter.
 
 ![The Movers and shakers chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/conversational-analytics-dashboards-movers-shakers.png)
 
@@ -103,7 +103,7 @@ The top contact categories average handle time displays the prior AHT (using the
 <a name="contact-lens-conversational-dashboard-contact-count"></a>
 
 **Note**
-This section of the dashboard displays data even when Contact Lens conversational analytics is not enabled on any contacts.
+This section of the dashboard displays data even when conversational analytics is not enabled on any contacts.
 
 The contact count by queue chart displays the count of contacts for each queue, sorted by the highest number of contacts from left to right. You can configure this widget further by filtering for contact categories directly from this chart. This filter overrides the page-level contact category filter on the dashboard.
 
@@ -113,7 +113,7 @@ The contact count by queue chart displays the count of contacts for each queue, 
 <a name="contact-lens-conversational-dashboard-contacts-handled"></a>
 
 **Note**
-This section of the dashboard displays data even when Contact Lens conversational analytics is not enabled on any contacts.
+This section of the dashboard displays data even when conversational analytics is not enabled on any contacts.
 
 The Contacts handled and average handle time trend is a time-series chart that displays the count of contacts handled (blue bars) and the average handle time (red line) over a given time period broken down by intervals (15min, daily, weekly, monthly). You can configure different time range intervals by using the "Interval" button directly in the widget. The intervals that you may select depend on the page-level time range filter.
 
@@ -126,6 +126,6 @@ For example:
 ## Dashboard functionality limitations
 <a name="contact-lens-conversational-dashboard-functionality-limitations"></a>
 
-The following limitations apply to the Contact Lens conversational analytics dashboard:
+The following limitations apply to the conversational analytics dashboard:
 + Tag-based access controls are not supported on the dashboard.
 + If you have a routing profile or agent hierarchy filter selected, the hyperlinks on contact categories leading to contact search will be disabled within the Contact categories and Movers and Shakers charts.

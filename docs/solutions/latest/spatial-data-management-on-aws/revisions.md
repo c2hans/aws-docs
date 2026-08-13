@@ -9,6 +9,7 @@ The following table describes important changes to the Spatial Data Management o
 
 | Date | Change |
 | --- | --- |
+| August 7, 2026 | Added release notes for solution version 1.5.1. Updated the client setup download links and installation examples for Spatial Data Portal version 0.2.3. |
 | July 31, 2026 | Asynchronous wait step for connectors. Correlate field-mapping for per-file metadata write-back. Invocation built-in variables. Output-driven wait. |
 | July 22, 2026 | Notification center for in-app notifications. Fix for uploading large files (>5 GB). Resource state-based recovery. Derived files download support. Connector field mapping enhancements. Security improvements. |
 | June 10, 2026 | Enhanced connector output routing options. Additional flexibility in network deployment. Bug fixes. |

@@ -26,15 +26,15 @@ You can download the daemon from Amazon S3, Amazon ECR, or Docker Hub, and then 
 #### [ Amazon S3 ]
 
 **X-Ray daemon installers and executables**
-+ **Linux (executable)** – [https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-linux-3.x.zip](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-linux-3.x.zip) ([sig](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-linux-3.x.zip.sig))
-+ **Linux (RPM installer)** – [https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-3.x.rpm](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-3.x.rpm)
-+ **Linux (DEB installer)** – [https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-3.x.deb](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-3.x.deb)
-+ **Linux (ARM64, executable)** – [https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-linux-arm64-3.x.zip](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-linux-arm64-3.x.zip) ([sig](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-linux-arm64-3.x.zip.sig))
-+ **Linux (ARM64, RPM installer)** – [https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-arm64-3.x.rpm](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-arm64-3.x.rpm)
-+ **Linux (ARM64, DEB installer)** – [https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-arm64-3.x.deb](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-arm64-3.x.deb)
-+ **OS X (executable)** – [https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-macos-3.x.zip](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-macos-3.x.zip) ([sig](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-macos-3.x.zip.sig))
-+ **Windows (executable)** – [https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-windows-process-3.x.zip](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-windows-process-3.x.zip) ([sig](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-windows-process-3.x.zip.sig))
-+ **Windows (service) ** – [https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-windows-service-3.x.zip](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-windows-service-3.x.zip) ([sig](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-windows-service-3.x.zip.sig))
++ **Linux (executable)** – [`aws-xray-daemon-linux-3.x.zip`](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-linux-3.x.zip) ([sig](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-linux-3.x.zip.sig))
++ **Linux (RPM installer)** – [`aws-xray-daemon-3.x.rpm`](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-3.x.rpm)
++ **Linux (DEB installer)** – [`aws-xray-daemon-3.x.deb`](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-3.x.deb)
++ **Linux (ARM64, executable)** – [`aws-xray-daemon-linux-arm64-3.x.zip`](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-linux-arm64-3.x.zip) ([sig](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-linux-arm64-3.x.zip.sig))
++ **Linux (ARM64, RPM installer)** – [`aws-xray-daemon-arm64-3.x.rpm`](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-arm64-3.x.rpm)
++ **Linux (ARM64, DEB installer)** – [`aws-xray-daemon-arm64-3.x.deb`](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-arm64-3.x.deb)
++ **OS X (executable)** – [`aws-xray-daemon-macos-3.x.zip`](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-macos-3.x.zip) ([sig](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-macos-3.x.zip.sig))
++ **Windows (executable)** – [`aws-xray-daemon-windows-process-3.x.zip`](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-windows-process-3.x.zip) ([sig](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-windows-process-3.x.zip.sig))
++ **Windows (service) ** – [`aws-xray-daemon-windows-service-3.x.zip`](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-windows-service-3.x.zip) ([sig](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-windows-service-3.x.zip.sig))
 
 These links always point to the latest 3.x release of the daemon. To download a specific release, do the following:
 + If you want to download a release prior to version `3.3.0`, replace `3.x` with the version number. For example, `2.1.0`. Prior to version `3.3.0`, the only available architecture is `arm64`. For example, `2.1.0` and `arm64`.
@@ -75,7 +75,7 @@ Prior releases of the daemon can be released by replacing `3.x` with the desired
 ## Verifying the daemon archive's signature
 <a name="xray-daemon-signature"></a>
 
-GPG signature files are included for daemon assets compressed in ZIP archives. The public key is here: [https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray.gpg](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray.gpg).
+GPG signature files are included for daemon assets compressed in ZIP archives. The public key is here: [`aws-xray.gpg`](https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray.gpg).
 
 You can use the public key to verify that the daemon's ZIP archive is original and unmodified. First, import the public key with [GnuPG](https://gnupg.org/index.html).
 

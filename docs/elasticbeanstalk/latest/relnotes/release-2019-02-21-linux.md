@@ -12,19 +12,36 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 ## Changes
 <a name="release-2019-02-21-linux.changes"></a>
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Instance types** | **Regions** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before February 8, 2019 to all Linux-based platforms.<br />See also the **Go** entry in **Platform-specific updates** for a Go security update. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-02-21-linux.html) |
-| **Instance types** | Added support for more Amazon EC2 instance types in one AWS Region, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-02-21-linux.html) |
-| **Go** | Updated to minor revision 1.11.5. For details, see [go1.11](https://golang.org/doc/devel/release.html#go1.11) in *The Go Programming Language Release History*.<br />Revision 1.11.5 includes a security fix. For details, see the [Go 1.11.5 milestone](https://github.com/golang/go/issues?q=milestone%3AGo1.11.5+label%3ACherryPickApproved) on the Go issue tracker. |
-| **Node.js** | Updated the Node.js platform to add support for Node version [10.15.1](https://nodejs.org/en/blog/release/v10.15.1/). |
-| **Ruby** | Updated Ruby 2.6 to [Ruby 2.6.1](https://www.ruby-lang.org/en/news/2019/01/30/ruby-2-6-1-released/). |
-| **C5d, M5d, R5, R5D, T3** |  + Asia Pacific (Mumbai) – ap-south-1  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before February 8, 2019 to all Linux-based platforms.<br />See also the <b>Go</b> entry in <b>Platform-specific updates</b> for a Go security update.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Go</b></td><td>Updated to minor revision 1.11.5. For details, see <a href="https://golang.org/doc/devel/release.html#go1.11">go1.11</a> in <i>The Go Programming Language Release History</i>.<br />Revision 1.11.5 includes a security fix. For details, see the <a href="https://github.com/golang/go/issues?q=milestone%3AGo1.11.5+label%3ACherryPickApproved">Go 1.11.5 milestone</a> on the Go issue tracker.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform to add support for Node version <a href="https://nodejs.org/en/blog/release/v10.15.1/">10.15.1</a>.</td></tr>
+  <tr><td><b>Ruby</b></td><td>Updated Ruby 2.6 to <a href="https://www.ruby-lang.org/en/news/2019/01/30/ruby-2-6-1-released/">Ruby 2.6.1</a>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Instance types</b></td><td>Added support for more Amazon EC2 instance types in one AWS Region, as follows:
+<table>
+<thead>
+  <tr><th><b>Instance types</b></th><th><b>Regions</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>C5d, M5d, R5, R5D, T3</b></td><td> <ul><li>Asia Pacific (Mumbai) – ap-south-1</li></ul> </td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2019-02-21-linux.platforms"></a>

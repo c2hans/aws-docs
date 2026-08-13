@@ -28,7 +28,7 @@ Each element of the `parameterValues` list must be one of the following:
   + `deadline:targetTaskRunStatus` – The value must be a string. It is passed to the `CreateJob` operation as the [targetTaskRunStatus](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_CreateJob.html#deadlinecloud-CreateJob-request-targetTaskRunStatus) parameter.
   + `deadline:maxFailedTasksCount` – The value must be an integer. It is passed to the `CreateJob` operation as the [maxFailedTasksCount](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_CreateJob.html#deadlinecloud-CreateJob-request-maxFailedTasksCount) parameter.
   + `deadline:maxRetriesPerTask` – The value must be an integer. It is passed to the `CreateJob` operation as the [maxRetriesPerTask](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_CreateJob.html#deadlinecloud-CreateJob-request-maxRetriesPerTask) parameter.
-  + `deadline:maxWorkercount` – The value must be an integer. It is passed to the `CreateJob` operation as the [maxWorkerCount](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_CreateJob.html#deadlinecloud-CreateJob-request-maxRetriesPerTask) parameter.
+  + `deadline:maxWorkerCount` – The value must be an integer. It is passed to the `CreateJob` operation as the [maxWorkerCount](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_CreateJob.html#deadlinecloud-CreateJob-request-maxRetriesPerTask) parameter.
 
 A job template is always a template rather than a specific job to run. A parameter values file enables a job bundle to either act as a template if some parameters don't have values defined in this file, or as a specific job submission if all parameters have values.
 

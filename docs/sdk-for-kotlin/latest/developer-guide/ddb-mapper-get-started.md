@@ -56,7 +56,7 @@ The DynamoDB Mapper schema-generator plugin is available for Gradle only. Maven 
 ## Create and use a mapper
 <a name="ddb-mapper-get-started-create-mapper"></a>
 
-DynamoDB Mapper uses the SDK’s DynamoDB client to interact with DynamoDB. Provide a configured [/sdk-for-kotlin/api/latest/dynamodb/aws.sdk.kotlin.services.dynamodb/-dynamo-db-client/index.html](/sdk-for-kotlin/api/latest/dynamodb/aws.sdk.kotlin.services.dynamodb/-dynamo-db-client/index.html) when you create a mapper:
+DynamoDB Mapper uses the SDK’s DynamoDB client to interact with DynamoDB. Provide a configured [`DynamoDbClient`](/sdk-for-kotlin/api/latest/dynamodb/aws.sdk.kotlin.services.dynamodb/-dynamo-db-client/index.html) when you create a mapper:
 
 ```
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbMapper
@@ -67,7 +67,7 @@ val mapper = DynamoDbMapper(client)
 ```
 
 **Note**
-DynamoDB Mapper doesn’t create tables. Use the `DynamoDbClient` to create tables and indexes.
+DynamoDB Mapper doesn’t create tables. Use the [`DynamoDbClient`](/sdk-for-kotlin/api/latest/dynamodb/aws.sdk.kotlin.services.dynamodb/-dynamo-db-client/index.html) to create tables and indexes.
 
 ## Define a schema with class annotations
 <a name="ddb-mapper-get-started-define-schema"></a>
@@ -134,7 +134,7 @@ After you build the project, the generator produces an `OrderSchema` and a conve
 val ordersTable = mapper.getOrderTable("orders")
 ```
 
-Equivalently, you can pass the generated schema to `getTable`:
+Equivalently, you can pass the generated schema to [`getTable`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/get-table.html):
 
 ```
 import com.example.store.model.dynamodbmapper.generatedschemas.OrderSchema
@@ -171,7 +171,7 @@ ordersTable.putItem {
 ### Get an item
 <a name="ddb-mapper-get-started-get-item"></a>
 
- `getItem` returns a `GetItemResponse`; read the mapped object from its `item` property (which is `null` if no matching item exists). For a composite-key table, supply both keys, wrapping each key value with `Key(…​)`:
+ [`getItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.model/get-item.html) returns a `GetItemResponse`; read the mapped object from its `item` property (which is `null` if no matching item exists). For a composite-key table, supply both keys, wrapping each key value with `Key(…​)`:
 
 ```
 import aws.sdk.kotlin.hll.dynamodbmapper.items.Key
@@ -187,7 +187,7 @@ println(response.item)   // the Order, or null
 ### Query with paginated results
 <a name="ddb-mapper-get-started-query"></a>
 
- `query` and `scan` can match more items than fit in a single response. DynamoDB Mapper provides paginating variants (`queryPaginated` and `scanPaginated`) that return a [https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-flow/](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-flow/) of response pages and transparently fetch subsequent pages as you collect them.
+ [`query`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) and [`scan`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) can match more items than fit in a single response. DynamoDB Mapper provides paginating variants ([`queryPaginated`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) and [`scanPaginated`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html)) that return a [`Flow`](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-flow/) of response pages and transparently fetch subsequent pages as you collect them.
 
 ```
 import aws.sdk.kotlin.hll.dynamodbmapper.expressions.KeyFilter

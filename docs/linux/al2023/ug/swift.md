@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/swift.html
 # Swift in AL2023
 <a name="swift"></a>
 
- AL2023 currently provides the [https://https://www.swift.org](https://https://www.swift.org) runtime and SDK.
+ AL2023 currently provides the [Swift](https://https://www.swift.org) runtime and SDK.
 
  In AL2023, the Swift SDK and runtime are split into separate packages. The `swiftlang-lib` package contains the runtime libraries, and the `swiftlang` package contains the full SDK. This allows users to run binaries compiled with the Swift SDK on production hosts without requiring the full SDK to be installed. At this time, different versions of Swift are not ABI compatible, so when updating Swift, applications will need to be rebuilt with the new version before they can be deployed.
 

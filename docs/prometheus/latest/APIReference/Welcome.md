@@ -13,4 +13,4 @@ Amazon Managed Service for Prometheus includes two APIs.
 + Use the AWS API described in this guide to manage Amazon Managed Service for Prometheus resources, such as workspaces, rule groups, and alert managers.
 + Use the [Prometheus-compatible API](https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-Prometheus-Compatible-Apis) to work within your Prometheus workspace.
 
-This document was last published on August 6, 2026.
+This document was last published on August 13, 2026.

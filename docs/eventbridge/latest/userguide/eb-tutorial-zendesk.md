@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-tutorial
 # Tutorial: Send events to Zendesk from Amazon EventBridge
 <a name="eb-tutorial-zendesk"></a>
 
-You can use EventBridge to route [events](eb-events.md) to third-party services like [https://www.zendesk.com/](https://www.zendesk.com/).
+You can use EventBridge to route [events](eb-events.md) to third-party services like [Zendesk](https://www.zendesk.com/).
 
 In this tutorial, you'll use the EventBridge console to create a connection to Zendesk, an [API destination](eb-api-destinations.md) that points to Zendesk, and a [rule](eb-rules.md) to route events to Zendesk.
 

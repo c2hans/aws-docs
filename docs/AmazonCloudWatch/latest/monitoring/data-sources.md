@@ -16,8 +16,6 @@ CloudWatch provides native integration with 90\+ AWS services for automatic data
 
 The following table highlights key AWS service data sources. For the complete list of 90\+ supported services, see [Supported AWS services for data sources](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/supported-aws-services-data-sources.html).
 
-**Key AWS service data sources**
-
 | AWS service | Data type | Description |
 | --- | --- | --- |
 | Amazon Amazon VPC | Flow Logs | Network traffic metadata for Amazon VPCs, subnets, and network interfaces |
@@ -40,8 +38,6 @@ For more information about CloudWatch Logs data sources, see [Data source discov
 CloudWatch extends monitoring capabilities beyond AWS with direct integrations for 38 third-party security, identity, and endpoint platforms. These integrations consolidate security events, audit logs, and telemetry data from external sources into CloudWatch Logs for unified analysis.
 
 The following table lists the supported direct third-party integrations:
-
-**Direct third-party integrations**
 
 | Source | Integration pattern | Category |
 | --- | --- | --- |
@@ -109,7 +105,7 @@ The CloudWatch Metrics (OTel) source processes OpenTelemetry (OTel) metrics on t
 
 The following metric types are supported:
 + **Custom OTel metrics** – Metrics that your applications emit through OpenTelemetry instrumentation and send to the OTLP endpoint
-+ **AWS vended OTel metrics** – Metrics that AWS services emit via OTLP
++ **AWS vended OTel metrics** – Metrics that AWS services emit through OTLP
 
 **Note**
 The CloudWatch Metrics (OTel) source only supports metrics ingested through the OTLP endpoint. Metrics sent through other ingestion paths, such as the `PutMetricData` API, are not processed by this source.

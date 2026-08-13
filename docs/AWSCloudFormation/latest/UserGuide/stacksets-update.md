@@ -89,7 +89,7 @@ When acting as a delegated administrator, you must include `--call-as DELEGATED_
 
 **To update a StackSet**
 
-   Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack-set.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack-set.html) command to make changes to your StackSet.
+   Use the [update-stack-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack-set.html) command to make changes to your StackSet.
 
    In the following examples, we're updating the StackSet by using `--parameters` option. Specifically, we change the default snapshot delivery frequency for delivery channel configuration from `TwentyFour_Hours` to `Twelve_Hours`. Because we're still using the current template, we add the `--use-previous-template` option.
 

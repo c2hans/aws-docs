@@ -15,7 +15,8 @@ Returns information about the shapes that are available for an Exadata infrastru
    "availabilityZone": "{{string}}",
    "availabilityZoneId": "{{string}}",
    "maxResults": {{number}},
-   "nextToken": "{{string}}"
+   "nextToken": "{{string}}",
+   "shapeFamily": "{{string}}"
 }
 ```
 
@@ -51,6 +52,12 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 8192.
 Required: No
 
+ ** [shapeFamily](#API_ListDbSystemShapes_RequestSyntax) **   <a name="odb-ListDbSystemShapes-request-shapeFamily"></a>
+The shape family to filter results by.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Required: No
+
 ## Response Syntax
 <a name="API_ListDbSystemShapes_ResponseSyntax"></a>
 
@@ -80,6 +87,7 @@ Required: No
          "minStorageCount": number,
          "name": "string",
          "runtimeMinimumCoreCount": number,
+         "shapeAttributes": [ "string" ],
          "shapeFamily": "string",
          "shapeType": "string"
       }

@@ -74,10 +74,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [elasticache:CreateCacheParameterGroup](#list_elasticache-action-CreateCacheParameterGroup)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   CreateCacheSecurityGroup  **
-  - **IAM action:**  [elasticache:CreateCacheSecurityGroup](#list_elasticache-action-CreateCacheSecurityGroup)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [elasticache:AddTagsToResource](#list_elasticache-action-AddTagsToResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [elasticache:CreateCacheSecurityGroup](#list_elasticache-action-CreateCacheSecurityGroup)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   CreateCacheSubnetGroup  **
   - **IAM action:**  [elasticache:AddTagsToResource](#list_elasticache-action-AddTagsToResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write

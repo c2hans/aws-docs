@@ -31,7 +31,7 @@ Follow these topics in the order listed.
 ## Data captured by a trail
 <a name="cloudtrail-data"></a>
 
-CloudTrail logs all Amazon Chime SDK actions. For information about the actions, refer to [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/Welcome.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/Welcome.html). For example, calls to the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetings-chime_CreateAttendee.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetings-chime_CreateAttendee.html), action generate entries in the CloudTrail log files. Every event contains information about who generated the request. The identity information helps you determine the following:
+CloudTrail logs all Amazon Chime SDK actions. For information about the actions, refer to [*Amazon Chime SDK API Reference*](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/Welcome.html). For example, calls to the [CreateAttendee](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetings-chime_CreateAttendee.html), action generate entries in the CloudTrail log files. Every event contains information about who generated the request. The identity information helps you determine the following:
 + Whether the request was made with root or IAM user credentials.
 + Whether the request was made with temporary security credentials for a role or federated user.
 + Whether the request was made by another AWS service.

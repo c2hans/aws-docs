@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/setup-knowledgebase.html
 ---
 
-# Set up an Connect Customer knowledge base to store quick responses
+# Set up a Connect Customer knowledge base to store quick responses
 <a name="setup-knowledgebase"></a>
 
 You must create an [Connect Customer knowledge base](connect-ai-agent.md) to store quick responses. You can use the Connect Customer admin website to create the knowledge base with a single choose. The site uses AWS owned keys to encrypt data.
@@ -10,7 +10,7 @@ You must create an [Connect Customer knowledge base](connect-ai-agent.md) to sto
 **Note**
 You can create your own key by providing a custom [ ServerSideEncryptionConfiguration](https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_ServerSideEncryptionConfiguration.html#wisdom-Type-ServerSideEncryptionConfiguration-kmsKeyId) in an [CreateKnowledgeBase](https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_CreateKnowledgeBase.html) API call. For more information, see [Initial set-up for AI agents](ai-agent-initial-setup.md), in this guide.
 
-The following steps explain how to use the Connect Customer admin website to create an Connect Customer knowledge base.
+The following steps explain how to use the Connect Customer admin website to create a Connect Customer knowledge base.
 
 **To create a knowledge base**
 

@@ -20,6 +20,7 @@ AWS Backup provides the following AWS managed policies for common use cases. The
 
 **Topics**
 + [AWSBackupAuditAccess](#AWSBackupAuditAccess)
++ [AWSBackupAccessPointOperatorAccess](#AWSBackupAccessPointOperatorAccess)
 + [AWSBackupDataTransferAccess](#AWSBackupDataTransferAccess)
 + [AWSBackupFullAccess](#AWSBackupFullAccess)
 + [AWSBackupGatewayServiceRolePolicyForVirtualMachineMetadataSync](#AWSBackupGatewayServiceRolePolicyForVirtualMachineMetadataSync)
@@ -48,6 +49,15 @@ This policy grants permissions for users to create controls and frameworks that 
 This policy also grants permissions to deliver audit reports to Amazon S3 and similar services, and enables users to find and open their audit reports.
 
 To view the permissions for this policy, see [AWSBackupAuditAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupAuditAccess.html) in the *AWS Managed Policy Reference*.
+
+### AWSBackupAccessPointOperatorAccess
+<a name="AWSBackupAccessPointOperatorAccess"></a>
+
+Access point operators are users who need to access backup data in recovery points without performing a full restore. Access point operators have permissions to create, describe, delete, and list backup access points.
+
+This policy contains the necessary permissions for those functions.
+
+To view the permissions for this policy, see [AWSBackupAccessPointOperatorAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupAccessPointOperatorAccess.html) in the *AWS Managed Policy Reference*.
 
 ### AWSBackupDataTransferAccess
 <a name="AWSBackupDataTransferAccess"></a>
@@ -662,6 +672,7 @@ View details about updates to AWS managed policies for AWS Backup since this ser
 
 | Change | Description | Date |
 | --- | --- | --- |
+| [AWSBackupAccessPointOperatorAccess](#AWSBackupAccessPointOperatorAccess) – New policy | Use this new managed policy to create and manage backup access points and access backup data in recovery points through Amazon S3 access points. | June 29, 2026 |
 | [AWSServiceRolePolicyForBackupRestoreTesting](#AWSServiceRolePolicyForBackupRestoreTesting) – Update to an existing policy | AWS Backup added the following permission to this policy:+  `rds:DeleteTenantDatabase` <br />These permissions allow AWS Backup Restore Testing to delete RDS Tenant Databases after restore test completion. | March 18, 2026 |
 | [AWSBackupServiceRolePolicyForBackup](#AWSBackupServiceRolePolicyForBackup) – Update to an existing policy | AWS Backup added the following permissions to this policy:+  `guardduty:StartMalwareScan` <br />+  `guardduty:GetMalwareScan` <br />+  `iam:PassRole` <br />These permissions allow AWS Backup to initiate malware scans on your recovery points. | February 23, 2026 |
 | [AWSBackupGuardDutyRolePolicyForScans](#AWSBackupGuardDutyRolePolicyForScans) – New policy | AWS Backup added a new AWS managed policy that provides Amazon GuardDuty permission to read and scan customer backups. AWS Backup passes a role with this policy to GuardDuty when initiating the operations `StartMalwareScan`.<br />This is necessary to provide all necessary permissions needed for malware scans on recovery points of Amazon EC2,Amazon EBS, and Amazon S3 resources.<br />For more information, see the managed policy [AWSBackupGuardDutyRolePolicyForScans](#AWSBackupGuardDutyRolePolicyForScans). | November 19, 2025 |

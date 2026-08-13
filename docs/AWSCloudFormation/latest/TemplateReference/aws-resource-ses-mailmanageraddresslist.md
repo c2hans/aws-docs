@@ -66,7 +66,7 @@ The tags used to organize, track, or control access for the resource. For exampl
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource ID, such as *al-3qlenopx5xw66ewlx3phx7jz*.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-ses-mailmanageraddresslist-return-values-fn--getatt"></a>

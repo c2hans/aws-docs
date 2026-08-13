@@ -47,12 +47,12 @@ Configure the Valkey MCP server through environment variables in your MCP client
   <tr><th>Variable</th><th>Purpose</th></tr>
 </thead>
 <tbody>
-  <tr><td>VALKEY\_HOST</td><td>Specifies the endpoint of your Valkey datastore. Use 127.0.0.1 when connecting to a private ElastiCache cluster through a tunnel.</td></tr>
-  <tr><td>VALKEY\_USE\_SSL</td><td>Set to true to enable TLS. This is required for ElastiCache clusters with encryption in transit enabled.</td></tr>
-  <tr><td>--readonly</td><td>Restricts the server to the read tier and disables all write and administrative tools, making it suitable for production exploration.</td></tr>
-  <tr><td colspan="2">Optional Search Parameters</td></tr>
-  <tr><td>EMBEDDINGS\_PROVIDER</td><td>Selects the embedding provider used by add\_documents and search. Supported options are bedrock, openai, ollama, and hash. Use hash for local testing without credentials.</td></tr>
-  <tr><td>BEDROCK\_MODEL\_ID</td><td>Overrides the default Amazon Bedrock embedding model.</td></tr>
-  <tr><td>OPENAI\_API\_KEY</td><td>Provides the API key required when EMBEDDING\_PROVIDER is set to openai.</td></tr>
+  <tr><td><code>VALKEY_HOST</code></td><td>Specifies the endpoint of your Valkey datastore. Use <code>127.0.0.1</code> when connecting to a private ElastiCache cluster through a tunnel.</td></tr>
+  <tr><td><code>VALKEY_USE_SSL</code></td><td>Set to <code>true</code> to enable TLS. This is required for ElastiCache clusters with encryption in transit enabled.</td></tr>
+  <tr><td><code>--readonly</code></td><td>Restricts the server to the read tier and disables all write and administrative tools, making it suitable for production exploration.</td></tr>
+  <tr><td colspan="2"><b>Optional Search Parameters</b></td></tr>
+  <tr><td><code>EMBEDDINGS_PROVIDER</code></td><td>Selects the embedding provider used by <code>add_documents</code> and <code>search</code>. Supported options are <code>bedrock</code>, <code>openai</code>, <code>ollama</code>, and <code>hash</code>. Use <code>hash</code> for local testing without credentials.</td></tr>
+  <tr><td><code>BEDROCK_MODEL_ID</code></td><td>Overrides the default Amazon Bedrock embedding model.</td></tr>
+  <tr><td><code>OPENAI_API_KEY</code></td><td>Provides the API key required when <code>EMBEDDING_PROVIDER</code> is set to <code>openai</code>.</td></tr>
 </tbody>
 </table>

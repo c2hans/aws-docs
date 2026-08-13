@@ -30,7 +30,7 @@ AWS KMS supports the following key specs for KMS keys:
   + ECC\_NIST\_P384 (secp384r1)
   + ECC\_NIST\_P521 (secp521r1)
   + ECC\_NIST\_EDWARDS25519 (ed25519) - signing and verification only
-    + **Note:** For ECC\_NIST\_EDWARDS25519 KMS keys, the ED25519\_SHA\_512 signing algorithm requires [https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType](https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType), while ED25519\_PH\_SHA\_512 requires [https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType](https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType). These message types cannot be used interchangeably.
+    + **Note:** For ECC\_NIST\_EDWARDS25519 KMS keys, the ED25519\_SHA\_512 signing algorithm requires [`MessageType:RAW`](https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType), while ED25519\_PH\_SHA\_512 requires [`MessageType:DIGEST`](https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType). These message types cannot be used interchangeably.
 + Other asymmetric elliptic curve key pairs (signing and verification)
   + ECC\_SECG\_P256K1 ([secp256k1](https://en.bitcoin.it/wiki/Secp256k1)), commonly used for cryptocurrency.
 
@@ -109,12 +109,12 @@ To compute the maximum plaintext length in bytes for these algorithms, use the f
 <table>
 <thead>
   <tr><th></th><th colspan="2">Encryption algorithm</th></tr>
-  <tr><th>Key spec</th><th>RSAES\_OAEP\_SHA\_1</th><th>RSAES\_OAEP\_SHA\_256</th></tr>
+  <tr><th>Key spec</th><th>RSAES_OAEP_SHA_1</th><th>RSAES_OAEP_SHA_256</th></tr>
 </thead>
 <tbody>
-  <tr><td>RSA\_2048</td><td>214</td><td>190</td></tr>
-  <tr><td>RSA\_3072</td><td>342</td><td>318 </td></tr>
-  <tr><td>RSA\_4096</td><td>470</td><td>446 </td></tr>
+  <tr><td><b>RSA_2048</b></td><td>214</td><td>190</td></tr>
+  <tr><td><b>RSA_3072</b></td><td>342</td><td>318 </td></tr>
+  <tr><td><b>RSA_4096</b></td><td>470</td><td>446 </td></tr>
 </tbody>
 </table>
 
@@ -157,7 +157,7 @@ AWS KMS supports the following ECC key specs for asymmetric KMS keys.
   + ECC\_NIST\_P384 (secp384r1)
   + ECC\_NIST\_P521 (secp521r1)
   + ECC\_NIST\_EDWARDS25519 (ed25519) - signing and verification only
-    + **Note:** For ECC\_NIST\_EDWARDS25519 KMS keys, the ED25519\_SHA\_512 signing algorithm requires [https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType](https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType), while ED25519\_PH\_SHA\_512 requires [https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType](https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType). These message types cannot be used interchangeably.
+    + **Note:** For ECC\_NIST\_EDWARDS25519 KMS keys, the ED25519\_SHA\_512 signing algorithm requires [`MessageType:RAW`](https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType), while ED25519\_PH\_SHA\_512 requires [`MessageType:DIGEST`](https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType). These message types cannot be used interchangeably.
 + Other asymmetric elliptic curve key pairs (signing and verification)
   + ECC\_SECG\_P256K1 ([secp256k1](https://en.bitcoin.it/wiki/Secp256k1)), commonly used for cryptocurrencies.
 
@@ -177,8 +177,8 @@ The following table shows the signing algorithms that AWS KMS supports for each 
 | ECC\_NIST\_P384 | ECDSA\_SHA\_384 | NIST FIPS 186-4, Section 6.4, ECDSA signature using the curve specified by the key and SHA-384 for the message digest. |
 | ECC\_NIST\_P521 | ECDSA\_SHA\_512 | NIST FIPS 186-4, Section 6.4, ECDSA signature using the curve specified by the key and SHA-512 for the message digest. |
 | ECC\_SECG\_P256K1 | ECDSA\_SHA\_256 | NIST FIPS 186-4, Section 6.4, ECDSA signature using the curve specified by the key and SHA-256 for the message digest. |
-| ECC\_NIST\_EDWARDS25519 | ED25519\_SHA\_512 | NIST FIPS 186-5, Section 7.6, EdDSA signature using the curve specified by the key and SHA-512 for the message digest. KMS requires [https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType](https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType) with this algorithm. |
-| ECC\_NIST\_EDWARDS25519 | ED25519\_PH\_SHA\_512 | NIST FIPS 186-5, Section 7.8, HashEdDSA signature using the curve specified by the key and SHA-512 for the message digest. KMS requires [https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType](https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType) with this algorithm. When you specify the ED25519\_PH\_SHA\_512 signing algorithm with MessageType:DIGEST, AWS KMS still performs the SHA-512 prehash described in [Step 1 of Section 7.8.1](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf#page=39). This means the input is hashed twice: once by you and once by KMS. |
+| ECC\_NIST\_EDWARDS25519 | ED25519\_SHA\_512 | NIST FIPS 186-5, Section 7.6, EdDSA signature using the curve specified by the key and SHA-512 for the message digest. KMS requires [`MessageType:RAW`](https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType) with this algorithm. |
+| ECC\_NIST\_EDWARDS25519 | ED25519\_PH\_SHA\_512 | NIST FIPS 186-5, Section 7.8, HashEdDSA signature using the curve specified by the key and SHA-512 for the message digest. KMS requires [`MessageType:DIGEST`](https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType) with this algorithm. When you specify the ED25519\_PH\_SHA\_512 signing algorithm with MessageType:DIGEST, AWS KMS still performs the SHA-512 prehash described in [Step 1 of Section 7.8.1](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf#page=39). This means the input is hashed twice: once by you and once by KMS. |
 
 ## Key specs for HMAC KMS keys
 <a name="hmac-key-specs"></a>

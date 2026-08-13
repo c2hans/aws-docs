@@ -30,7 +30,7 @@ an incorrect Amazon S3 bucket policy
 an incorrect Amazon SNS topic policy
 inability to deliver to a CloudWatch Logs log group
 insufficient permission to encrypt using a KMS key
-A member account with CloudTrail permissions can see any validation failures for an organization trail by viewing the trail's details page on the CloudTrail console, or by running the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-trail-status.html](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-trail-status.html) command.
+A member account with CloudTrail permissions can see any validation failures for an organization trail by viewing the trail's details page on the CloudTrail console, or by running the AWS CLI [get-trail-status](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-trail-status.html) command.
 
 Users with CloudTrail permissions in member accounts can see organization trails when they log into the CloudTrail console from their AWS accounts, or when they run AWS CLI commands such as `describe-trails`. However, users in member accounts do not have sufficient permissions to delete organization trails, turn logging on or off, change what types of events are logged, or otherwise change an organization trail in any way.
 

@@ -5,6 +5,11 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/recording-inge
 # API workflow
 <a name="recording-ingestion-api-workflow"></a>
 
+Recording ingestion and conversational analytics uses a workflow of three sequential API calls:
++ [CreateContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateContact.html) – Create a voice contact to represent the call
++ [CreateAttachedFile](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateAttachedFile.html) – Import a recording from your Amazon S3 bucket and attach it to the contact
++ [StartContactConversationalAnalyticsJob](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartContactConversationalAnalyticsJob.html) – Create the conversational analytics for the contact
+
 ## Step 1: CreateContact
 <a name="recording-ingestion-step1-createcontact"></a>
 
@@ -114,4 +119,4 @@ Notes:
 + `RulesConfiguration` cannot be disabled — the rules configured in your account are executed.
 + Analysis runs asynchronously. Results are delivered to your Connect Customer-configured Amazon S3 bucket.
 + `ContactId` is used as the job identifier — duplicate analysis jobs on the same contact are not allowed.
-+ Subscribe to EventBridge to receive notifications when analysis fails. Successful completion is indicated by the conversational analytics output file being delivered to your configured Amazon S3 bucket. For more information, see [Error notifications: When Contact Lens can't analyze a contact](contact-lens-error-notifications.md).
++ Subscribe to EventBridge to receive notifications when analysis fails. Successful completion is indicated by the conversational analytics output file being delivered to your configured Amazon S3 bucket. For more information, see [Error notifications: When conversational analytics can't analyze a contact](contact-lens-error-notifications.md).

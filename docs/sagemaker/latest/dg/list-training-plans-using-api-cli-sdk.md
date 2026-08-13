@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/list-training-plans-
 # List training plans
 <a name="list-training-plans-using-api-cli-sdk"></a>
 
-You can list all the training plans that have been created in your AWS account and Region by calling the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListTrainingPlans.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListTrainingPlans.html) API.
+You can list all the training plans that have been created in your AWS account and Region by calling the [`ListTrainingPlans`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListTrainingPlans.html) API.
 
 The following example uses an AWS CLI command to retrieve the list of your training plans.
 

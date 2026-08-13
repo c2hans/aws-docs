@@ -92,9 +92,6 @@ The type of table optimizer. The valid values are:
 ### Ref
 <a name="aws-resource-glue-tableoptimizer-return-values-ref"></a>
 
-### Fn::GetAtt
-<a name="aws-resource-glue-tableoptimizer-return-values-fn--getatt"></a>
-
 ## Examples
 <a name="aws-resource-glue-tableoptimizer--examples"></a>
 

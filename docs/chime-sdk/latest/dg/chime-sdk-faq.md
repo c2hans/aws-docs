@@ -50,7 +50,7 @@ Attendee quotas are per meeting. The Amazon Chime SDK supports 250 attendees in 
 #### What’s the difference between AttendeeDeleted, AttendeeLeft, and AttendeeDropped meeting events?
 <a name="attendee-diffs"></a>
 
-`AttendeeLeft` is triggered when an attendee decides to leave a meeting. `AttendeeDropped` is triggered when an attendee is disconnected from a meeting, usually because of network issues. `AttendeeDeleted` is triggered when the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteAttendee.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteAttendee.html) API is called.
+`AttendeeLeft` is triggered when an attendee decides to leave a meeting. `AttendeeDropped` is triggered when an attendee is disconnected from a meeting, usually because of network issues. `AttendeeDeleted` is triggered when the [DeleteAttendee](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteAttendee.html) API is called.
 
 `AttendeeLeft` is also triggered when:
 + When the `DeleteAttendee` API is called from the server-side meeting handler, along with `AttendeeDeleted`.
@@ -128,7 +128,7 @@ Opus, 16 kHz, 48 kHz, and 48 kHz stereo.
 ##### Can I selectively apply echo reduction to specific attendees in a meeting?
 <a name="echo-reduction"></a>
 
-No. Echo Reduction is enabled at the meeting level for all attendees when you call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html) or [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html) APIs. For more information about using echo reduction, refer to [Adding Echo Reduction to your application](https://aws.github.io/amazon-chime-sdk-js/modules/amazonvoice_focus.html#adding-echo-reduction-to-your-application), and [Enabling Voice Focus with Echo Reduction](https://aws.github.io/amazon-chime-sdk-js/modules/amazonvoice_focus.html#enabling-voice-focus-with-echo-reduction), both on GitHub.
+No. Echo Reduction is enabled at the meeting level for all attendees when you call the [CreateMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html) or [CreateMeetingWithAttendees](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html) APIs. For more information about using echo reduction, refer to [Adding Echo Reduction to your application](https://aws.github.io/amazon-chime-sdk-js/modules/amazonvoice_focus.html#adding-echo-reduction-to-your-application), and [Enabling Voice Focus with Echo Reduction](https://aws.github.io/amazon-chime-sdk-js/modules/amazonvoice_focus.html#enabling-voice-focus-with-echo-reduction), both on GitHub.
 
 #### Noise suppression
 <a name="noise-suppression-faqs"></a>
@@ -175,7 +175,7 @@ Mobile device browsers don’t support screen capture or screen share. You need 
 #### How can I redact PII from transcriptions?
 <a name="pii-redaction"></a>
 
-You use Amazon Transcribe to redact PII. When you use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StartMeetingTranscription.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StartMeetingTranscription.html) API to transcribe a meeting, you can specify the content redaction type and the different PII entities to redact.
+You use Amazon Transcribe to redact PII. When you use the [StartMeetingTranscription](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StartMeetingTranscription.html) API to transcribe a meeting, you can specify the content redaction type and the different PII entities to redact.
 
 **Note**
 Due to the predictive nature of machine learning, Amazon Transcribe may not identify and remove all instances of sensitive data, and it may not comply with medical privacy laws, such as the U.S. Health Insurance Portability and Accountability Act of 1996 (HIPAA). For more information, refer to [Redacting or identifying personally identifiable information](https://docs.aws.amazon.com/transcribe/latest/dg/pii-redaction.html), in the *Amazon Transcribe Developer Guide*.
@@ -202,7 +202,7 @@ For more information about using `transcribeEvent`, refer to [Understanding Amaz
 #### How do I filter out profanity?
 <a name="profanity"></a>
 
-You use Amazon Transcribe to create custom vocabularies and vocabulary filters, and when you call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StartMeetingTranscription.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StartMeetingTranscription.html) API, you provide `VocabularyFilterName` and `VocabularyFilterMethod` values to mask unwanted words. For more information, refer to [Custom vocabularies](https://docs.aws.amazon.com/transcribe/latest/dg/custom-vocabulary.html) and [Creating a vocabulary filter](https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-filter-create.html) in the *Amazon Transcribe Developer Guide*.
+You use Amazon Transcribe to create custom vocabularies and vocabulary filters, and when you call the [StartMeetingTranscription](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StartMeetingTranscription.html) API, you provide `VocabularyFilterName` and `VocabularyFilterMethod` values to mask unwanted words. For more information, refer to [Custom vocabularies](https://docs.aws.amazon.com/transcribe/latest/dg/custom-vocabulary.html) and [Creating a vocabulary filter](https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-filter-create.html) in the *Amazon Transcribe Developer Guide*.
 
 #### Which languages does live transcription support for meetings?
 <a name="transcript-languages"></a>
@@ -290,7 +290,7 @@ To try it, follow the instructions in these blog posts:
 #### How can I monitor whether meetings end automatically or when the DeleteMeeting API is called?
 <a name="monitor-endings"></a>
 
-Both ways of ending a meeting trigger the `MeetingFailed` event. If you don’t have a Cloud Trail or EventBridge entry for the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteMeeting.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteMeeting.html) API, you can assume that the meeting ended automatically.
+Both ways of ending a meeting trigger the `MeetingFailed` event. If you don’t have a Cloud Trail or EventBridge entry for the [DeleteMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteMeeting.html) API, you can assume that the meeting ended automatically.
 
 ### Logging
 <a name="logging-faqs"></a>
@@ -329,12 +329,12 @@ Do the following:
 #### What does the “Error: Invalid capture pipeline ARN” message mean?
 <a name="invalid-capture"></a>
 
-This error typically occurs when the service can’t resolve a media pipeline ARN. Ensure the ARN belongs to a media pipeline and not to a meeting. `MediaPipelineArn` is part of the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaCapturePipeline.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaCapturePipeline.html) API response.
+This error typically occurs when the service can’t resolve a media pipeline ARN. Ensure the ARN belongs to a media pipeline and not to a meeting. `MediaPipelineArn` is part of the [CreateMediaCapturePipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaCapturePipeline.html) API response.
 
 #### What does the "AudioJoinedFromAnotherDevice" error mean, and how do I avoid it?
 <a name="two-devices"></a>
 
-This error is raised when the same attendee joins from two devices. The error is returned in the `meetingErrorMessage` attribute of a `meetingFailed` event. To avoid this, ensure that each attendee has a unique `ExternalUserId`, and make sure that you do not use the same attendee response from the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateAttendee.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateAttendee.html), [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_BatchCreateAttendee.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_BatchCreateAttendee.html), or [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html) APIs in two or more meetings simultaneously.
+This error is raised when the same attendee joins from two devices. The error is returned in the `meetingErrorMessage` attribute of a `meetingFailed` event. To avoid this, ensure that each attendee has a unique `ExternalUserId`, and make sure that you do not use the same attendee response from the [CreateAttendee](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateAttendee.html), [BatchCreateAttendee](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_BatchCreateAttendee.html), or [CreateMeetingWithAttendees](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html) APIs in two or more meetings simultaneously.
 
 #### How do I resolve “Forbidden: Not authorized to call Chime SDK with Account Id *111122223333*”?
 <a name="forbidden-meaning-1"></a>
@@ -370,7 +370,7 @@ Media capture uses the MP4 format. This includes 5 second segments and combined 
 ### How do I delete attendees created by media capture pipelines?
 <a name="delete-bot"></a>
 
- To delete media capture attendees, you can end the pipeline or call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaCapturePipeline.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaCapturePipeline.html) API.
+ To delete media capture attendees, you can end the pipeline or call the [DeleteMediaCapturePipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaCapturePipeline.html) API.
 
 ### Does recording happen in the cloud or locally?
 <a name="cloud-local"></a>
@@ -390,12 +390,12 @@ No. A pipeline only captures the first 25 video streams.
 ### Can I stop recording while a meeting continues?
 <a name="pipe-auto-end"></a>
 
-You can create a mechanism to call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaCapturePipeline.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaCapturePipeline.html) API after a given number of minutes. For example, you can create a step function that starts when media capture begins and has a predetermined wait time.
+You can create a mechanism to call the [DeleteMediaCapturePipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaCapturePipeline.html) API after a given number of minutes. For example, you can create a step function that starts when media capture begins and has a predetermined wait time.
 
 ### Can I stop meetings while recording is on?
 <a name="auto-end-record"></a>
 
-You can call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaCapturePipeline.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaCapturePipeline.html) API to end the recordings, or you can call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteMeeting.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteMeeting.html) API when the meeting is scheduled to end. During a meeting, if the media capture attendee is the only attendee left, the meeting automatically ends after 5 minutes.
+You can call the [DeleteMediaCapturePipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaCapturePipeline.html) API to end the recordings, or you can call the [DeleteMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteMeeting.html) API when the meeting is scheduled to end. During a meeting, if the media capture attendee is the only attendee left, the meeting automatically ends after 5 minutes.
 
 ## PSTN audio FAQs
 <a name="pstn-faqs"></a>

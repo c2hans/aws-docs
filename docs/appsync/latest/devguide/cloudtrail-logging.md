@@ -45,9 +45,9 @@ The following table lists the AWS AppSync resource type for which you can log da
 
 | Data event type (console) | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
-| AppSync GraphQL |  AWS::AppSync::GraphQLApi  | [https://docs.aws.amazon.com/appsync/latest/APIReference/API_GraphqlApi.html](https://docs.aws.amazon.com/appsync/latest/APIReference/API_GraphqlApi.html) |
+| AppSync GraphQL |  AWS::AppSync::GraphQLApi  | [GraphQL](https://docs.aws.amazon.com/appsync/latest/APIReference/API_GraphqlApi.html) |
 
-You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
+You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [AdvancedFieldSelector](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
 
 ```
 [

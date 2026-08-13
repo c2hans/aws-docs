@@ -77,13 +77,13 @@ Any metadata you add and mark searchable can be viewed from the **Metadata** sum
 
 To map document attributes to index fields using the Amazon Q Business API, complete the following steps:
 
-1. You create an index by calling the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateIndex.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateIndex.html) API operation.
+1. You create an index by calling the [CreateIndex](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateIndex.html) API operation.
 
-1. Then, you create index fields using the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndex.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndex.html) operation. You use this method to map both reserved and custom document attributes to index fields.
+1. Then, you create index fields using the [UpdateIndex](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndex.html) operation. You use this method to map both reserved and custom document attributes to index fields.
 
-1. Optionally, you can test and view the index fields that you’ve added by using the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetIndex.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetIndex.html) operation.
+1. Optionally, you can test and view the index fields that you’ve added by using the [GetIndex](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetIndex.html) operation.
 
-1. Then, when you use the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) operation to ingest documents into your index, Amazon Q Business extracts your reserved or custom document attributes and maps them to the index fields that you have already created.
+1. Then, when you use the [BatchPutDocument](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) operation to ingest documents into your index, Amazon Q Business extracts your reserved or custom document attributes and maps them to the index fields that you have already created.
 
 1. To mark mapped attributes searchable, follow the steps outlined in [enabling attributes for search using APIs](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/boosting-searchable-attributes.html#enable-attribute-search-api).
 
@@ -110,11 +110,11 @@ Filtering using data source document attributes in chat is only supported throug
 
 Each data source connector is designed to automatically crawl and map specific document attributes as default from your data source. For example, if you have a field in your data source named `dept` that contains department information for a document, your data source may automatically map it to an index field named `Department`. You can't change or customize default data source attributes that are mapped to an index.
 
-If you use the console, you select and map default field mappings or create and map custom mappings when you configure your connector. On the console, if a default field or a default field property can’t be edited, it will appear grayed out. If you use the API, you use the `configuration` parameter of the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API operation to map default document attributes in your data source to index fields.
+If you use the console, you select and map default field mappings or create and map custom mappings when you configure your connector. On the console, if a default field or a default field property can’t be edited, it will appear grayed out. If you use the API, you use the `configuration` parameter of the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API operation to map default document attributes in your data source to index fields.
 
 You can also map any custom document attributes in your data source connector to Amazon Q Business reserved fields. For example, if your data source has a custom attribute named `creation_date`, you can map this field to the equivalent Amazon Q reserved field named `_created_at`. You can also choose to add custom document attributes and map them to custom fields that you create in your index. You do this when you configure and update your data source, using both the console and the API.
 
-If you want to map custom document attributes in your data source to Amazon Q index fields, use the `DocumentAttribute` parameter of the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndex.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndex.html) operation to first create the custom field matching the custom document attribute. By doing so, you can specify and map your reserved or custom data source document attribute to a reserved or custom index field.
+If you want to map custom document attributes in your data source to Amazon Q index fields, use the `DocumentAttribute` parameter of the [UpdateIndex](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndex.html) operation to first create the custom field matching the custom document attribute. By doing so, you can specify and map your reserved or custom data source document attribute to a reserved or custom index field.
 
 Any metadata you add can be viewed and marked searchable using **Metadata controls** or using the API. You can update the searchability of a metadata field at any time.
 
@@ -141,7 +141,7 @@ Document attributes mapped to index fields during the data source configuration 
 ## Ingesting attributes using the BatchPutDocument API operation
 <a name="custom-attributes-batch"></a>
 
-When you use the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) API operation to add a document to your index, you can specify document attributes—both reserved and custom—as part of `Attributes`. You can add multiple fields or attributes when you call the API operation. You can create up to 50 custom fields or attributes. The following example is a custom field or attribute that adds "Department" to a document.
+When you use the [BatchPutDocument](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) API operation to add a document to your index, you can specify document attributes—both reserved and custom—as part of `Attributes`. You can add multiple fields or attributes when you call the API operation. You can create up to 50 custom fields or attributes. The following example is a custom field or attribute that adds "Department" to a document.
 
 ```
 "Attributes":
@@ -155,7 +155,7 @@ When you use the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_B
 <a name="using-aggregations-in-chat"></a>
 
 **Note**
-Using aggregations and dynamic filtering in chat is only supported in [https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/agentic-rag.html](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/agentic-rag.html).
+Using aggregations and dynamic filtering in chat is only supported in [**Advanced search**](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/agentic-rag.html).
 
 **Warning**
 To ensure optimal performance and accuracy, perform a `[FORCED\_FULL\_CRAWL](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-sync-mode)` on your data source first before using the features.

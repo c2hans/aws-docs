@@ -73,7 +73,7 @@ The object that shows the details of the column stats run.
 + `ErrorMessage` – Description string, not more than 2048 bytes long, matching the [URI address multi-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-uri).
 
   The error message for the job.
-+ `DPUSeconds` – Number (double), not more than None.
++ `DPUSeconds` – Number (double).
 
   The calculated DPU usage in seconds for all autoscaled workers.
 

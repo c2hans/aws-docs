@@ -61,7 +61,7 @@ Type: [AddressIdentifierFilter](API_AddressIdentifierFilter.md) object
 Required: Yes
 
  ** [confirmationStatusFilter](#API_ListFilteredTransactionEvents_RequestSyntax) **   <a name="ManagedBlockchainQueryAPIReference-ListFilteredTransactionEvents-request-confirmationStatusFilter"></a>
-The container for the `ConfirmationStatusFilter` that filters for the [https://docs.aws.amazon.com/managed-blockchain/latest/ambq-dg/key-concepts.html#finality](https://docs.aws.amazon.com/managed-blockchain/latest/ambq-dg/key-concepts.html#finality) of the results.
+The container for the `ConfirmationStatusFilter` that filters for the [*finality*](https://docs.aws.amazon.com/managed-blockchain/latest/ambq-dg/key-concepts.html#finality) of the results.
 Type: [ConfirmationStatusFilter](API_ConfirmationStatusFilter.md) object
 Required: No
 

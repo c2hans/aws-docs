@@ -91,7 +91,7 @@ The information in this topic only applies to platform branches based on Amazon 
 
 On the configuration page, specify the following:
 + **Proxy server** – Specifies which web server to use to proxy connections to Node.js. By default, NGINX is used. If you select **none**, static file mappings don't take effect, and GZIP compression is disabled.
-+ **Node.js version** – Specifies the version of Node.js. For a list of supported Node.js versions, see [https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-supported.html#platforms-supported.nodejs](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-supported.html#platforms-supported.nodejs) in the *AWS Elastic Beanstalk Platforms* guide.
++ **Node.js version** – Specifies the version of Node.js. For a list of supported Node.js versions, see [Node.js](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-supported.html#platforms-supported.nodejs) in the *AWS Elastic Beanstalk Platforms* guide.
 + **GZIP compression** – Specifies whether GZIP compression is enabled. By default, GZIP compression is enabled.
 + **Node command** – Lets you enter the command used to start the Node.js application. An empty string (the default) means Elastic Beanstalk uses `app.js`, then `server.js`, and then `npm start`.
 
@@ -141,7 +141,7 @@ app.listen(port, function() {
 ### Node.js language versions — Amazon Linux AMI (AL1)
 <a name="nodejs.alami.versions"></a>
 
-In terms of supported language version, the Node.js Amazon Linux AMI platform is different to other Elastic Beanstalk managed platforms. This is because each Node.js platform version supports only a few Node.js language versions. For a list of supported Node.js versions, see [https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-supported.html#platforms-supported.nodejs](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-supported.html#platforms-supported.nodejs) in the *AWS Elastic Beanstalk Platforms* guide.
+In terms of supported language version, the Node.js Amazon Linux AMI platform is different to other Elastic Beanstalk managed platforms. This is because each Node.js platform version supports only a few Node.js language versions. For a list of supported Node.js versions, see [Node.js](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-supported.html#platforms-supported.nodejs) in the *AWS Elastic Beanstalk Platforms* guide.
 
 You can use a platform-specific configuration option to set the language version. For instructions, see [Configuring your Node.js environment](#nodejs-platform-console). Alternatively, use the Elastic Beanstalk console to update the Node.js version that your environment uses as part of updating your platform version.
 

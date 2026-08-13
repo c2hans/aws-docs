@@ -18,6 +18,6 @@ There is no additional charge for using an existing or a proprietary directory i
 
 The following limitations apply to all new directories created using Directory Service:
 + Directories can only have alphanumeric names. Only the '.' character can be used.
-+ Directories cannot be unbound from an Connect Customer instance after they have been associated.
-+ Only one directory can be added to an Connect Customer instance.
++ Directories cannot be unbound from a Connect Customer instance after they have been associated.
++ Only one directory can be added to a Connect Customer instance.
 + Directories cannot be shared across multiple Connect Customer instances.

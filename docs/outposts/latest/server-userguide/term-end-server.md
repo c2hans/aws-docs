@@ -138,7 +138,7 @@ The following table shows who to contact for the country you are shipping from:
   <tr><th>Country</th><th>Contact</th></tr>
 </thead>
 <tbody>
-  <tr><td>Argentina</td><td rowspan="25">Contact [AWS Support Center](https://console.aws.amazon.com/support/home#/). In your request, include the following information:+  The tracking number that is on the AWS-provided shipping label <br />+  The date and time that you prefer the courier to pick up the server <br />+  A contact name <br />+  A phone number <br />+  An email address </td></tr>
+  <tr><td>Argentina</td><td rowspan="25">Contact <a href="https://console.aws.amazon.com/support/home#/">AWS Support Center</a>. In your request, include the following information:<ul><li> The tracking number that is on the AWS-provided shipping label </li><li> The date and time that you prefer the courier to pick up the server </li><li> A contact name </li><li> A phone number </li><li> An email address </li></ul></td></tr>
   <tr><td>Bahrain</td></tr>
   <tr><td>Brazil</td></tr>
   <tr><td>Brunei</td></tr>
@@ -163,8 +163,8 @@ The following table shows who to contact for the country you are shipping from:
   <tr><td>Thailand</td></tr>
   <tr><td>United Arab Emirates</td></tr>
   <tr><td>Vietnam</td></tr>
-  <tr><td>United States of America</td><td>Contact [UPS](https://www.ups.com).<br />You can return the server in the following ways:+  Return the server during a routine UPS pickup at your site. <br />+  Drop-off the server at a [UPS location](https://www.ups.com/dropoff?loc=en_US). <br />+  Schedule a [pickup](https://wwwapps.ups.com/pickup/schedule?loc=en_US) for a date and time you prefer. Enter the tracking number from the AWS-provided shipping label for free shipping. </td></tr>
-  <tr><td>All other countries</td><td>Contact [DHL](https://www.dhl.com).<br />You can return the server in the following ways:+  Drop-off the server at a [DHL location](https://mydhl.express.dhl/us/en/locator.html#/find-locations). <br />+  Schedule a [pickup](https://returns.dhl.co.uk/ereturns/) for a date and time you prefer. Enter the DHL Waybill number from the AWS-provided shipping label for free shipping. <br />If you get the following error `Courier pickup can't be scheduled for an import shipment`, it usually means that the pickup country that you selected does not match the pickup country on the return shipment label. Select the country where the shipment originates from and try again. </td></tr>
+  <tr><td>United States of America</td><td>Contact <a href="https://www.ups.com">UPS</a>.<br />You can return the server in the following ways:<ul><li> Return the server during a routine UPS pickup at your site. </li><li> Drop-off the server at a <a href="https://www.ups.com/dropoff?loc=en_US">UPS location</a>. </li><li> Schedule a <a href="https://wwwapps.ups.com/pickup/schedule?loc=en_US">pickup</a> for a date and time you prefer. Enter the tracking number from the AWS-provided shipping label for free shipping. </li></ul></td></tr>
+  <tr><td>All other countries</td><td>Contact <a href="https://www.dhl.com">DHL</a>.<br />You can return the server in the following ways:<ul><li> Drop-off the server at a <a href="https://mydhl.express.dhl/us/en/locator.html#/find-locations">DHL location</a>. </li><li> Schedule a <a href="https://returns.dhl.co.uk/ereturns/">pickup</a> for a date and time you prefer. Enter the DHL Waybill number from the AWS-provided shipping label for free shipping. <br />If you get the following error <code>Courier pickup can't be scheduled for an import shipment</code>, it usually means that the pickup country that you selected does not match the pickup country on the return shipment label. Select the country where the shipment originates from and try again. </li></ul></td></tr>
 </tbody>
 </table>
 

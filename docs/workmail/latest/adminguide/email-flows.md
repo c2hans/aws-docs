@@ -28,7 +28,7 @@ When you create an email flow rule, you specify a [*rule action*](#email-flows-r
 Inbound email flow rules help prevent undesirable email from reaching your users' mailboxes. Inbound email flow rules, also called rule actions, automatically apply to all email messages sent to anyone inside of your Amazon WorkMail organization. This differs from email rules for individual mailboxes.
 
 **Note**
-Optionally, you can use rules with an AWS Lambda function to process incoming email before it is delivered to your users' mailboxes. For more information about using Lambda with Amazon WorkMail, see [Configuring AWS Lambda for Amazon WorkMail](lambda.md). For more information about Lambda, see the [https://docs.aws.amazon.com/lambda/latest/dg/welcome.html](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html).
+Optionally, you can use rules with an AWS Lambda function to process incoming email before it is delivered to your users' mailboxes. For more information about using Lambda with Amazon WorkMail, see [Configuring AWS Lambda for Amazon WorkMail](lambda.md). For more information about Lambda, see the [*AWS Lambda Developer Guide*](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html).
 
 Inbound email flow rules, also called rule actions, automatically apply to all email messages sent to anyone inside of the Amazon WorkMail organization. This differs from email rules for individual mailboxes.
 
@@ -53,7 +53,7 @@ Inbound email is first delivered to Amazon SES, and then to Amazon WorkMail. If 
 
 You use outbound email flow rules to direct email messages via SMTP gateways, or to block senders from sending email messages to specified recipients. For more information about SMTP gateways, see [Enabling SMTP gateways](smtp-gateway.md).
 
-You can also use outbound email flow rules to pass the email message to an AWS Lambda function for processing after the email is sent. For more information about Lambda, see the [https://docs.aws.amazon.com/lambda/latest/dg/welcome.html](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html).
+You can also use outbound email flow rules to pass the email message to an AWS Lambda function for processing after the email is sent. For more information about Lambda, see the [*AWS Lambda Developer Guide*](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html).
 
 The following rule actions define how outbound email is handled. For each rule, you specify [sender and recipient patterns](#email-flows-patterns) together with one of the following actions.
 

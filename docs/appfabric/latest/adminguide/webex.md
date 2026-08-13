@@ -9,7 +9,7 @@ Cisco is a worldwide leader in technology that powers the Internet. Cisco inspir
 
 **About Webex by Cisco**
 
-Webex is a leading provider of cloud-based collaboration solutions which includes video meetings, calling, messaging, events, customer experience solutions like contact center and purpose-built collaboration devices. Webex’s focus on delivering inclusive collaboration experiences fuels innovation, which leverages AI and Machine Learning, to remove the barriers of geography, language, personality, and familiarity with technology. Its solutions are underpinned with security and privacy by design. Webex works with the world’s leading business and productivity apps – delivered through a single application and interface. Learn more at [https://webex.com](https://webex.com).
+Webex is a leading provider of cloud-based collaboration solutions which includes video meetings, calling, messaging, events, customer experience solutions like contact center and purpose-built collaboration devices. Webex’s focus on delivering inclusive collaboration experiences fuels innovation, which leverages AI and Machine Learning, to remove the barriers of geography, language, personality, and familiarity with technology. Its solutions are underpinned with security and privacy by design. Webex works with the world’s leading business and productivity apps – delivered through a single application and interface. Learn more at [webex.com](https://webex.com).
 
 You can use AWS AppFabric for security to audit logs and user data from Webex, normalize the data into Open Cybersecurity Schema Framework (OCSF) format, and output the data to an Amazon Simple Storage Service (Amazon S3) bucket or an Amazon Data Firehose stream.
 

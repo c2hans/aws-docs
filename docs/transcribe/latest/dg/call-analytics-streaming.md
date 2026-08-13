@@ -15,7 +15,7 @@ The following insights are available with real-time Call Analytics:
 + [Sentiment analysis](#tca-sentiment-stream) for each speech segment
 + [Language identification](#tca-language-id-stream) detects the primary language spoken in each audio channel
 
-In addition to real-time Call Analytics, Amazon Transcribe can also perform [post-call analytics](tca-post-call.md) on your media stream. You can include post-call analytics in your real-time Call Analytics request using the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_PostCallAnalyticsSettings.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_PostCallAnalyticsSettings.html) parameter.
+In addition to real-time Call Analytics, Amazon Transcribe can also perform [post-call analytics](tca-post-call.md) on your media stream. You can include post-call analytics in your real-time Call Analytics request using the [`PostCallAnalyticsSettings`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_PostCallAnalyticsSettings.html) parameter.
 
 ## Real-time insights
 <a name="call-analytics-insights-streaming"></a>

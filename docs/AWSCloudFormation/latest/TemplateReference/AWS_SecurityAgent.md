@@ -10,6 +10,8 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 **Resource types**
 + [AWS::SecurityAgent::AgentSpace](aws-resource-securityagent-agentspace.md)
 + [AWS::SecurityAgent::Application](aws-resource-securityagent-application.md)
++ [AWS::SecurityAgent::Artifact](aws-resource-securityagent-artifact.md)
 + [AWS::SecurityAgent::Pentest](aws-resource-securityagent-pentest.md)
++ [AWS::SecurityAgent::PentestTask](aws-resource-securityagent-pentesttask.md)
 + [AWS::SecurityAgent::SecurityRequirementPack](aws-resource-securityagent-securityrequirementpack.md)
 + [AWS::SecurityAgent::TargetDomain](aws-resource-securityagent-targetdomain.md)

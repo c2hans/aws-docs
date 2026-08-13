@@ -41,7 +41,7 @@ $ cd my-project
 $ cdk init app --language typescript
 ```
 
-Creating a project also installs the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib-readme.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib-readme.html) module and its dependencies.
+Creating a project also installs the [`aws-cdk-lib`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib-readme.html) module and its dependencies.
 
  `cdk init` uses the name of the project folder to name various elements of the project, including classes, subfolders, and files. Hyphens in the folder name are converted to underscores. However, the name should otherwise follow the form of a TypeScript identifier; for example, it should not start with a number or contain spaces.
 
@@ -236,9 +236,9 @@ By design, when you install or update dependencies, NPM and Yarn choose the late
 
 All AWS Construct Library classes are instantiated using three arguments: the *scope* in which the construct is being defined (its parent in the construct tree), an *id*, and *props*. Argument *props* is a bundle of key/value pairs that the construct uses to configure the AWS resources it creates. Other classes and methods also use the "bundle of attributes" pattern for arguments.
 
-In TypeScript, the shape of `props` is defined using an interface that tells you the required and optional arguments and their types. Such an interface is defined for each kind of `props` argument, usually specific to a single construct or method. For example, the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html) construct (in the `aws-cdk-lib/aws-s3` module) specifies a `props` argument conforming to the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.BucketProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.BucketProps.html) interface.
+In TypeScript, the shape of `props` is defined using an interface that tells you the required and optional arguments and their types. Such an interface is defined for each kind of `props` argument, usually specific to a single construct or method. For example, the [`Bucket`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html) construct (in the `aws-cdk-lib/aws-s3` module) specifies a `props` argument conforming to the [`BucketProps`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.BucketProps.html) interface.
 
-If a property is itself an object, for example the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.BucketProps.html#websiteredirect](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.BucketProps.html#websiteredirect) property of `BucketProps`, that object will have its own interface to which its shape must conform, in this case [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.RedirectTarget.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.RedirectTarget.html).
+If a property is itself an object, for example the [`websiteRedirect`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.BucketProps.html#websiteredirect) property of `BucketProps`, that object will have its own interface to which its shape must conform, in this case [`RedirectTarget`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.RedirectTarget.html).
 
 If you are subclassing an AWS Construct Library class (or overriding a method that takes a props-like argument), you can inherit from the existing interface to create a new one that specifies any new props your code requires. When calling the parent class or base method, generally you can pass the entire props argument you received, since any attributes provided in the object but not specified in the interface will be ignored.
 

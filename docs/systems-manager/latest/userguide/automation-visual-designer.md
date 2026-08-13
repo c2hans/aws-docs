@@ -7,7 +7,14 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 # Visual design experience for Automation runbooks
 <a name="automation-visual-designer"></a>
 
-AWS Systems Manager Automation provides a low-code visual design experience that helps you create automation runbooks. The visual design experience provides a drag-and-drop interface with the option to add your own code so you can create and edit runbooks more easily. With the visual design experience, you can do the following:
+AWS Systems Manager Automation provides a low-code visual design experience that helps you create automation runbooks. It offers a drag-and-drop interface with the option to add your own code. With the visual design experience, you can do the following:
+
+This section includes the following topics.
++ [Error handling with the visual design experience](visual-designer-error-handling.md)
++ [Configuring inputs and outputs for your actions](visual-designer-action-inputs-outputs.md)
++ [Tutorial: Create a runbook using the visual design experience](visual-designer-tutorial.md)
++ [Overview of the visual design experience interface](visual-designer-interface-overview.md)
++ [Using the visual design experience](visual-designer-use.md)
 + Control conditional statements.
 + Control how input and output is filtered or transformed for each action.
 + Configure error handling.

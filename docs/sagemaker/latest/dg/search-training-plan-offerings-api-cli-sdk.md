@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/search-training-plan
 # Search training plan offerings
 <a name="search-training-plan-offerings-api-cli-sdk"></a>
 
-To create a training plan, start by calling the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SearchTrainingPlanOfferings.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SearchTrainingPlanOfferings.html) API operation, passing your plan requirements (such as instance type, count, and desired time window) as input parameters. Training plans are specific to their target resource. Ensure that you specify which target resource the plan will be used for (`training-job` or `hyperpod-cluster`). The API returns a list of available offerings that match your requirements. If no suitable offerings are found, you may need to adjust your requirements and search again.
+To create a training plan, start by calling the [`SearchTrainingPlanOfferings`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SearchTrainingPlanOfferings.html) API operation, passing your plan requirements (such as instance type, count, and desired time window) as input parameters. Training plans are specific to their target resource. Ensure that you specify which target resource the plan will be used for (`training-job` or `hyperpod-cluster`). The API returns a list of available offerings that match your requirements. If no suitable offerings are found, you may need to adjust your requirements and search again.
 
-This API call retrieves the training plan offerings that best meet your capacity needs. Each [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TrainingPlanOffering.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TrainingPlanOffering.html) returned in the response is identified by a unique offering ID. The first offering in the list represents the best match for your requirements. If no suitable training plan is available within your specified dates, the list is empty. Adjust your search criteria and look for a new set of offerings.
+This API call retrieves the training plan offerings that best meet your capacity needs. Each [`TrainingPlanOffering`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TrainingPlanOffering.html) returned in the response is identified by a unique offering ID. The first offering in the list represents the best match for your requirements. If no suitable training plan is available within your specified dates, the list is empty. Adjust your search criteria and look for a new set of offerings.
 + Reservation durations are available in 1-day increments from 1 to 182 days.
 + The reservation instance quantity options are 1, 2, 4, 8, 16, 32 or 64 instances.
 
@@ -150,7 +150,7 @@ The following sections define the mandatory and optional input request parameter
 ## Required parameters
 <a name="search-training-plan-options-required-params"></a>
 
-When calling the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SearchTrainingPlanOfferings.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SearchTrainingPlanOfferings.html) API to list training plan offerings that meet your requirements, you must provide the following values:
+When calling the [`SearchTrainingPlanOfferings`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SearchTrainingPlanOfferings.html) API to list training plan offerings that meet your requirements, you must provide the following values:
 + `TargetResources`: The target resources (`training-job` or `hyperpod-cluster`) for which the plan will be used. The default value is `training-job`. Training plans are specific to their target resource.
   + A training plan designed for SageMaker training jobs can only be used to schedule and run training jobs.
   + A training plan for HyperPod clusters can be used exclusively to provide compute resources to a cluster's instance group.

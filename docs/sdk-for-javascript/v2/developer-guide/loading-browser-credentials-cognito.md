@@ -90,4 +90,4 @@ function userLoggedIn(providerName, token) {
 
 You can also Create `CognitoIdentityCredentials` object. If you do, you must reset the credentials properties of existing service objects you created. Service objects read from the global configuration only on object initialization.
 
-For more information about the `CognitoIdentityCredentials` object, see [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityCredentials.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityCredentials.html) in the AWS SDK for JavaScript API Reference.
+For more information about the `CognitoIdentityCredentials` object, see [`AWS.CognitoIdentityCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityCredentials.html) in the AWS SDK for JavaScript API Reference.

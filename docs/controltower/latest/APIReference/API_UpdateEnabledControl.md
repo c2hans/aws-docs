@@ -11,7 +11,7 @@ If the enabled control shows an `EnablementStatus` of SUCCEEDED, supply paramete
 
 If the enabled control shows an `EnablementStatus` of FAILED, AWS Control Tower updates the control to match any valid parameters that you supply.
 
-If the `DriftSummary` status for the control shows as `DRIFTED`, you cannot call this API. Instead, you can update the control by calling the `ResetEnabledControl` API. Alternatively, you can call `DisableControl` and then call `EnableControl` again. Also, you can run an extending governance operation to repair drift. For usage examples, see the [https://docs.aws.amazon.com/controltower/latest/controlreference/control-api-examples-short.html](https://docs.aws.amazon.com/controltower/latest/controlreference/control-api-examples-short.html).
+If the `DriftSummary` status for the control shows as `DRIFTED`, you cannot call this API. Instead, you can update the control by calling the `ResetEnabledControl` API. Alternatively, you can call `DisableControl` and then call `EnableControl` again. Also, you can run an extending governance operation to repair drift. For usage examples, see the [*Controls Reference Guide*](https://docs.aws.amazon.com/controltower/latest/controlreference/control-api-examples-short.html).
 
 ## Request Syntax
 <a name="API_UpdateEnabledControl_RequestSyntax"></a>

@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/observab
 ## Configuring an `OTelProvider` for a service client
 <a name="config-otel"></a>
 
-The SDK for Ruby provides an OpenTelemetry provider called [https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Telemetry/OTelProvider.html](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Telemetry/OTelProvider.html). The following example configures telemetry export using OpenTelemetry for the Amazon Simple Storage Service service client. For this simple example, the `OTEL_TRACES_EXPORTER` environment variable from OpenTelemetry is used to export the traces to the console output when you run the code. To learn more about `OTEL_TRACES_EXPORTER`, see [Exporter Selection](https://opentelemetry.io/docs/specs/otel/configuration/sdk-environment-variables/#exporter-selection) in the OpenTelemetry documentation.
+The SDK for Ruby provides an OpenTelemetry provider called [`OTelProvider`](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Telemetry/OTelProvider.html). The following example configures telemetry export using OpenTelemetry for the Amazon Simple Storage Service service client. For this simple example, the `OTEL_TRACES_EXPORTER` environment variable from OpenTelemetry is used to export the traces to the console output when you run the code. To learn more about `OTEL_TRACES_EXPORTER`, see [Exporter Selection](https://opentelemetry.io/docs/specs/otel/configuration/sdk-environment-variables/#exporter-selection) in the OpenTelemetry documentation.
 
 ```
 require 'aws-sdk-s3'
@@ -34,9 +34,9 @@ The previous code example shows the steps to configuring trace output for a serv
 
 1. Require OpenTelemetry dependencies.
 
-   1. [https://rubygems.org/gems/opentelemetry-sdk](https://rubygems.org/gems/opentelemetry-sdk) for using `Aws::Telemetry::OTelProvider`.
+   1. [`opentelemetry-sdk`](https://rubygems.org/gems/opentelemetry-sdk) for using `Aws::Telemetry::OTelProvider`.
 
-   1. [https://rubygems.org/gems/opentelemetry-exporter-otlp](https://rubygems.org/gems/opentelemetry-exporter-otlp) for exporting telemetry data.
+   1. [`opentelemetry-exporter-otlp`](https://rubygems.org/gems/opentelemetry-exporter-otlp) for exporting telemetry data.
 
 1.  Call `OpenTelemetry::SDK.configure` to set up the OpenTelemetry SDK with their configuration defaults.
 
@@ -143,7 +143,7 @@ With this configuration, any service clients created afterwards will automatical
 ## Configuring a custom telemetry provider
 <a name="custom-telem"></a>
 
-If you don't want to use OpenTelemetry as your telemetry provider, the AWS SDK for Ruby does support you implementing a custom provider. It might be helpful to use the [`OTelProvider` implementation](https://github.com/aws/aws-sdk-ruby/blob/version-3/gems/aws-sdk-core/lib/aws-sdk-core/telemetry/otel.rb) that is available in the AWS SDK for Ruby GitHub repository as an example. For additional context, refer to the notes in [https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Telemetry.html](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Telemetry.html) in the *AWS SDK for Ruby API Reference*.
+If you don't want to use OpenTelemetry as your telemetry provider, the AWS SDK for Ruby does support you implementing a custom provider. It might be helpful to use the [`OTelProvider` implementation](https://github.com/aws/aws-sdk-ruby/blob/version-3/gems/aws-sdk-core/lib/aws-sdk-core/telemetry/otel.rb) that is available in the AWS SDK for Ruby GitHub repository as an example. For additional context, refer to the notes in [`Module: Aws::Telemetry`](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Telemetry.html) in the *AWS SDK for Ruby API Reference*.
 
 ## Span Attributes
 <a name="span-attributes"></a>

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 # Predefined and custom patch baselines
 <a name="patch-manager-predefined-and-custom-patch-baselines"></a>
 
-Patch Manager, a tool in AWS Systems Manager, provides predefined patch baselines for each of the operating systems supported by Patch Manager. You can use these baselines as they are currently configured (you can't customize them) or you can create your own custom patch baselines. Custom patch baselines allows you greater control over which patches are approved or rejected for your environment. Also, the predefined baselines assign a compliance level of `Unspecified` to all patches installed using those baselines. For compliance values to be assigned, you can create a copy of a predefined baseline and specify the compliance values you want to assign to patches. For more information, see [Custom baselines](#patch-manager-baselines-custom) and [Working with custom patch baselines](patch-manager-manage-patch-baselines.md).
+Patch Manager provides predefined patch baselines for each of the operating systems supported by Patch Manager. You can use these baselines as they are currently configured (you can't customize them) or you can create your own custom patch baselines. Custom patch baselines allows you greater control over which patches are approved or rejected for your environment. Also, the predefined baselines assign a compliance level of `Unspecified` to all patches installed using those baselines. For compliance values to be assigned, you can create a copy of a predefined baseline and specify the compliance values you want to assign to patches. For more information, see [Custom baselines](#patch-manager-baselines-custom) and [Working with custom patch baselines](patch-manager-manage-patch-baselines.md).
 
 **Note**
 The information in this topic applies no matter which method or type of configuration you are using for your patching operations:
@@ -15,10 +15,6 @@ A patch policy configured in Quick Setup
 A Host Management option configured in Quick Setup
 A maintenance window to run a patch `Scan` or `Install` task
 An on-demand **Patch now** operation
-
-**Topics**
-+ [Predefined baselines](#patch-manager-baselines-pre-defined)
-+ [Custom baselines](#patch-manager-baselines-custom)
 
 ## Predefined baselines
 <a name="patch-manager-baselines-pre-defined"></a>
@@ -54,10 +50,6 @@ For information about which versions of each operating system Patch Manager supp
 <a name="patch-manager-baselines-custom"></a>
 
 Use the following information to help you create custom patch baselines to meet your patching goals.
-
-**Topics**
-+ [Using auto-approvals in custom baselines](#baselines-auto-approvals)
-+ [Additional information for creating patch baselines](#baseline-additional-info)
 
 ### Using auto-approvals in custom baselines
 <a name="baselines-auto-approvals"></a>
@@ -96,7 +88,7 @@ For Windows Server, three predefined patch baselines are provided. The patch bas
 
   When you create or update a patch baseline, you choose the status you want to assign to security patches that are available but not approved because they don't meet the installation criteria specified in the patch baseline. For example, security patches that you might want installed can be skipped if you have specified a long period to wait after a patch is released before installation. If an update to the patch is released during your specified waiting period, the waiting period for installing the patch starts over. If the waiting period is too long, multiple versions of the patch could be released but never installed.
 
-  Using the console to create or update a patch baseline, you specify this option in the **Available security updates compliance status** field. Using the AWS CLI to run the [https://docs.aws.amazon.com/cli/latest/reference/ssm/create-patch-baseline.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/create-patch-baseline.html) or [https://docs.aws.amazon.com/cli/latest/reference/ssm/update-patch-baseline.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/update-patch-baseline.html) command, you specify this option in the `available-security-updates-compliance-status` parameter.
+  Using the console to create or update a patch baseline, you specify this option in the **Available security updates compliance status** field. Using the AWS CLI to run the [create-patch-baseline](https://docs.aws.amazon.com/cli/latest/reference/ssm/create-patch-baseline.html) or [update-patch-baseline](https://docs.aws.amazon.com/cli/latest/reference/ssm/update-patch-baseline.html) command, you specify this option in the `available-security-updates-compliance-status` parameter.
 + For on-premises servers and virtual machines (VMs), Patch Manager attempts to use your custom default patch baseline. If no custom default patch baseline exists, the system uses the predefined patch baseline for the corresponding operating system.
 + If a patch is listed as both approved and rejected in the same patch baseline, the patch is rejected.
 + A managed node can have only one patch baseline defined for it.

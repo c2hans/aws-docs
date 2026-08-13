@@ -159,13 +159,13 @@ Contains the individual types of column statistics data. Only one data object sh
 Defines column statistics supported for Boolean data columns.
 
 **Fields**
-+ `NumberOfTrues` – *Required:* Number (long), not more than None.
++ `NumberOfTrues` – *Required:* Number (long).
 
   The number of true values in the column.
-+ `NumberOfFalses` – *Required:* Number (long), not more than None.
++ `NumberOfFalses` – *Required:* Number (long).
 
   The number of false values in the column.
-+ `NumberOfNulls` – *Required:* Number (long), not more than None.
++ `NumberOfNulls` – *Required:* Number (long).
 
   The number of null values in the column.
 
@@ -181,10 +181,10 @@ Defines column statistics supported for timestamp data columns.
 + `MaximumValue` – Timestamp.
 
   The highest value in the column.
-+ `NumberOfNulls` – *Required:* Number (long), not more than None.
++ `NumberOfNulls` – *Required:* Number (long).
 
   The number of null values in the column.
-+ `NumberOfDistinctValues` – *Required:* Number (long), not more than None.
++ `NumberOfDistinctValues` – *Required:* Number (long).
 
   The number of distinct values in a column.
 
@@ -200,10 +200,10 @@ Defines column statistics supported for fixed-point number data columns.
 + `MaximumValue` – A [DecimalNumber](#aws-glue-api-common-DecimalNumber) object.
 
   The highest value in the column.
-+ `NumberOfNulls` – *Required:* Number (long), not more than None.
++ `NumberOfNulls` – *Required:* Number (long).
 
   The number of null values in the column.
-+ `NumberOfDistinctValues` – *Required:* Number (long), not more than None.
++ `NumberOfDistinctValues` – *Required:* Number (long).
 
   The number of distinct values in a column.
 
@@ -219,10 +219,10 @@ Defines column statistics supported for floating-point number data columns.
 + `MaximumValue` – Number (double).
 
   The highest value in the column.
-+ `NumberOfNulls` – *Required:* Number (long), not more than None.
++ `NumberOfNulls` – *Required:* Number (long).
 
   The number of null values in the column.
-+ `NumberOfDistinctValues` – *Required:* Number (long), not more than None.
++ `NumberOfDistinctValues` – *Required:* Number (long).
 
   The number of distinct values in a column.
 
@@ -238,10 +238,10 @@ Defines column statistics supported for integer data columns.
 + `MaximumValue` – Number (long).
 
   The highest value in the column.
-+ `NumberOfNulls` – *Required:* Number (long), not more than None.
++ `NumberOfNulls` – *Required:* Number (long).
 
   The number of null values in the column.
-+ `NumberOfDistinctValues` – *Required:* Number (long), not more than None.
++ `NumberOfDistinctValues` – *Required:* Number (long).
 
   The number of distinct values in a column.
 
@@ -251,16 +251,16 @@ Defines column statistics supported for integer data columns.
 Defines column statistics supported for character sequence data values.
 
 **Fields**
-+ `MaximumLength` – *Required:* Number (long), not more than None.
++ `MaximumLength` – *Required:* Number (long).
 
   The size of the longest string in the column.
-+ `AverageLength` – *Required:* Number (double), not more than None.
++ `AverageLength` – *Required:* Number (double).
 
   The average string length in the column.
-+ `NumberOfNulls` – *Required:* Number (long), not more than None.
++ `NumberOfNulls` – *Required:* Number (long).
 
   The number of null values in the column.
-+ `NumberOfDistinctValues` – *Required:* Number (long), not more than None.
++ `NumberOfDistinctValues` – *Required:* Number (long).
 
   The number of distinct values in a column.
 
@@ -270,13 +270,13 @@ Defines column statistics supported for character sequence data values.
 Defines column statistics supported for bit sequence data values.
 
 **Fields**
-+ `MaximumLength` – *Required:* Number (long), not more than None.
++ `MaximumLength` – *Required:* Number (long).
 
   The size of the longest bit sequence in the column.
-+ `AverageLength` – *Required:* Number (double), not more than None.
++ `AverageLength` – *Required:* Number (double).
 
   The average bit sequence length in the column.
-+ `NumberOfNulls` – *Required:* Number (long), not more than None.
++ `NumberOfNulls` – *Required:* Number (long).
 
   The number of null values in the column.
 
@@ -292,57 +292,72 @@ The API uses the following regular expressions to define what is valid content f
 + Version string pattern – "`^[a-zA-Z0-9-_]+$`"
 + Log group string pattern – "`[\.\-_/#A-Za-z0-9]+`"
 + Log-stream string pattern – "`[^:*]*`"
-+ Custom string pattern \#10 – "`[a-zA-Z0-9-_]+`"
++ Custom string pattern \#10 – "`\$(\.[a-zA-Z0-9_.@\[\]\(\)-]+)*`"
 + Custom string pattern \#11 – "`[-a-zA-Z0-9+=/:_]*`"
-+ Custom string pattern \#12 – "`[\S\s]*`"
-+ Custom string pattern \#13 – "`.*\S.*`"
-+ Custom string pattern \#14 – "`[a-zA-Z0-9-=._/@]+`"
-+ Custom string pattern \#15 – "`[1-9][0-9]*|[1-9][0-9]*-[1-9][0-9]*`"
-+ Custom string pattern \#16 – "`[A-Z][A-Za-z\.]+`"
-+ Custom string pattern \#17 – "`[\S]*`"
-+ Custom string pattern \#18 – "`[\w]*`"
-+ Custom string pattern \#19 – "`arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`"
-+ Custom string pattern \#20 – "`subnet-[a-z0-9]+`"
-+ Custom string pattern \#21 – "`\d{12}`"
-+ Custom string pattern \#22 – "`([a-z]+)-([a-z]+-)?([a-z]+)-[0-9]+[a-z]+`"
-+ Custom string pattern \#23 – "`[a-zA-Z0-9.-]*`"
-+ Custom string pattern \#24 – "`arn:aws[a-z0-9\-]*:lambda:[a-z0-9\-]+:\d{12}:function:([\w\-]{1,64})`"
-+ Custom string pattern \#25 – "`^(?!(.*[.\/\\]|aws:)).*$`"
-+ Custom string pattern \#26 – "`[^\r\n]`"
-+ Custom string pattern \#27 – "`^\w+\.\w+\.\w+$`"
-+ Custom string pattern \#28 – "`^\w+\.\w+$`"
-+ Custom string pattern \#29 – "`^$|arn:aws[a-z0-9-]*:kms:.*`"
-+ Custom string pattern \#30 – "`arn:aws[^:]*:iam::[0-9]*:role/.+`"
-+ Custom string pattern \#31 – "`[\.\-_A-Za-z0-9]+`"
-+ Custom string pattern \#32 – "`^s3://([^/]+)/([^/]+/)*([^/]+)$`"
-+ Custom string pattern \#33 – "`.*`"
-+ Custom string pattern \#34 – "`^(Sun|Mon|Tue|Wed|Thu|Fri|Sat):([01]?[0-9]|2[0-3])$`"
-+ Custom string pattern \#35 – "`[a-zA-Z0-9_.-]+`"
-+ Custom string pattern \#36 – "`^arn:aws(-(cn|us-gov|eusc|iso(-[bef])?))?:secretsmanager:.*$`"
-+ Custom string pattern \#37 – "`\S+`"
-+ Custom string pattern \#38 – "`^[\x20-\x7E]*$`"
-+ Custom string pattern \#39 – "`^([a-zA-Z0-9_=]+)\.([a-zA-Z0-9_=]+)\.([a-zA-Z0-9_\-\+\/=]*)`"
-+ Custom string pattern \#40 – "`^(https?)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]`"
-+ Custom string pattern \#41 – "`^(https?):\/\/[^\s/$.?#].[^\s]*$`"
-+ Custom string pattern \#42 – "`arn:aws:kms:.*`"
-+ Custom string pattern \#43 – "`^subnet-[a-z0-9]+$`"
-+ Custom string pattern \#44 – "`[\p{L}\p{N}\p{P}]*`"
-+ Custom string pattern \#45 – "`[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}`"
-+ Custom string pattern \#46 – "`[a-zA-Z0-9-_$#.]+`"
-+ Custom string pattern \#47 – "`^\d{12}$`"
-+ Custom string pattern \#48 – "`^(\w+\.)+\w+$`"
-+ Custom string pattern \#49 – "`^([2-3]|3[.]9)$`"
-+ Custom string pattern \#50 – "`arn:aws(-(cn|us-gov|eusc|iso(-[bef])?))?:glue:.*`"
-+ Custom string pattern \#51 – "`[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}`"
-+ Custom string pattern \#52 – "`(^arn:aws(-(cn|us-gov|eusc|iso(-[bef])?))?:iam::\w{12}:root)`"
-+ Custom string pattern \#53 – "`^arn:aws(-(cn|us-gov|eusc|iso(-[bef])?))?:iam::[0-9]{12}:role/.+`"
-+ Custom string pattern \#54 – "`[\s\S]*`"
-+ Custom string pattern \#55 – "`([\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF]|[^\S\r\n"'= ;])*`"
-+ Custom string pattern \#56 – "`^[A-Z\_]+$`"
-+ Custom string pattern \#57 – "`^[A-Za-z0-9]+$`"
-+ Custom string pattern \#58 – "`[*A-Za-z0-9_-]*`"
-+ Custom string pattern \#59 – "`([\u0020-\u007E\r\s\n])*`"
-+ Custom string pattern \#60 – "`[A-Za-z0-9_-]*`"
-+ Custom string pattern \#61 – "`([\u0009\u000B\u000C\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF])*`"
-+ Custom string pattern \#62 – "`([\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\s])*`"
-+ Custom string pattern \#63 – "`([^\r\n])*`"
++ Custom string pattern \#12 – "`[a-zA-Z0-9_ -]+`"
++ Custom string pattern \#13 – "`[a-zA-Z0-9-_]+`"
++ Custom string pattern \#14 – "`/[a-zA-Z0-9._~:/?#\[\]@!$&'()*+,;={}-]*`"
++ Custom string pattern \#15 – "`[a-zA-Z0-9_-]+`"
++ Custom string pattern \#16 – "`.*[^<>&'"].*`"
++ Custom string pattern \#17 – "`[\S\s]*`"
++ Custom string pattern \#18 – "`.*\S.*`"
++ Custom string pattern \#19 – "`[a-zA-Z0-9+-=._./@]+`"
++ Custom string pattern \#20 – "`[1-9][0-9]*|[1-9][0-9]*-[1-9][0-9]*`"
++ Custom string pattern \#21 – "`[A-Z][A-Za-z\.]+`"
++ Custom string pattern \#22 – "`[\S]*`"
++ Custom string pattern \#23 – "`[\w]*`"
++ Custom string pattern \#24 – "`arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`"
++ Custom string pattern \#25 – "`subnet-[a-z0-9]+`"
++ Custom string pattern \#26 – "`\d{12}`"
++ Custom string pattern \#27 – "`([a-z]+)-([a-z]+-)?([a-z]+)-[0-9]+[a-z]+`"
++ Custom string pattern \#28 – "`[a-zA-Z0-9.-]*`"
++ Custom string pattern \#29 – "`arn:aws[a-z0-9\-]*:lambda:[a-z0-9\-]+:\d{12}:function:([\w\-]{1,64})`"
++ Custom string pattern \#30 – "`^(?!(.*[.\/\\]|aws:)).*$`"
++ Custom string pattern \#31 – "`[^\r\n]`"
++ Custom string pattern \#32 – "`^arn:aws(-(cn|us-gov|iso(-[bef])?))?:secretsmanager:.*$`"
++ Custom string pattern \#33 – "`\S+`"
++ Custom string pattern \#34 – "`.*`"
++ Custom string pattern \#35 – "`^[\x20-\x7E]*$`"
++ Custom string pattern \#36 – "`^([a-zA-Z0-9_=]+)\.([a-zA-Z0-9_=]+)\.([a-zA-Z0-9_\-\+\/=]*)`"
++ Custom string pattern \#37 – "`^(https?)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]`"
++ Custom string pattern \#38 – "`^(https?):\/\/[^\s/$.?#].[^\s]*$`"
++ Custom string pattern \#39 – "`^$|arn:aws[a-z0-9-]*:kms:.*`"
++ Custom string pattern \#40 – "`^subnet-[a-z0-9]+$`"
++ Custom string pattern \#41 – "`[\p{L}\p{N}\p{P}]*`"
++ Custom string pattern \#42 – "`[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}`"
++ Custom string pattern \#43 – "`[a-zA-Z0-9-_$#.]+`"
++ Custom string pattern \#44 – "`^\d{12}$`"
++ Custom string pattern \#45 – "`^(\w+\.)+\w+$`"
++ Custom string pattern \#46 – "`^([2-3]|3[.]9)$`"
++ Custom string pattern \#47 – "`arn:aws(-(cn|us-gov|iso(-[bef])?))?:glue:.*`"
++ Custom string pattern \#48 – "`[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}`"
++ Custom string pattern \#49 – "`(^arn:aws(-(cn|us-gov|iso(-[bef])?))?:iam::\w{12}:root)`"
++ Custom string pattern \#50 – "`^arn:aws(-(cn|us-gov|iso(-[bef])?))?:iam::[0-9]{12}:role/.+`"
++ Custom string pattern \#51 – "`arn:aws[^:]*:iam::[0-9]*:role/.+`"
++ Custom string pattern \#52 – "`[\.\-_A-Za-z0-9]+`"
++ Custom string pattern \#53 – "`^s3://([^/]+)/([^/]+/)*([^/]+)$`"
++ Custom string pattern \#54 – "`^(Sun|Mon|Tue|Wed|Thu|Fri|Sat):([01]?[0-9]|2[0-3])$`"
++ Custom string pattern \#55 – "`[a-zA-Z0-9_.-]+`"
++ Custom string pattern \#56 – "`^sc://.*$`"
++ Custom string pattern \#57 – "`^\w+\.\w+\.\w+$`"
++ Custom string pattern \#58 – "`^\w+\.\w+$`"
++ Custom string pattern \#59 – "`[\s\S]*`"
++ Custom string pattern \#60 – "`([\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF]|[^\S\r\n"'= ;])*`"
++ Custom string pattern \#61 – "`^[A-Z\_]+$`"
++ Custom string pattern \#62 – "`^[A-Za-z0-9]+$`"
++ Custom string pattern \#63 – "`[*A-Za-z0-9_-]*`"
++ Custom string pattern \#64 – "`([\u0020-\u007E\r\s\n])*`"
++ Custom string pattern \#65 – "`[A-Za-z0-9_-]*`"
++ Custom string pattern \#66 – "`([\u0009\u000B\u000C\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF])*`"
++ Custom string pattern \#67 – "`([\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\s])*`"
++ Custom string pattern \#68 – "`([^\r\n])*`"
++ Custom string pattern \#69 – "`[a-zA-Z0-9\-\:\/\.\_\*]+`"
++ Custom string pattern \#70 – "`[\w+=,.@-]+`"
++ Custom string pattern \#71 – "`[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`"
++ Custom string pattern \#72 – "`arn:aws[-a-z0-9]*:kms:[-a-z0-9]*:[0-9]{12}:key/.+`"
++ Custom string pattern \#73 – "`^[a-zA-Z][a-zA-Z0-9_]*(::[a-zA-Z][a-zA-Z0-9_]*)?$`"
++ Custom string pattern \#74 – "`[0-9]{12}`"
++ Custom string pattern \#75 – "`^(?![0-9_])\w+$|^_\w*[a-zA-Z0-9]\w*$`"
++ Custom string pattern \#76 – "`^[a-zA-Z][a-zA-Z0-9_]*$`"
++ Custom string pattern \#77 – "`^[A-Z]\w*$`"
++ Custom string pattern \#78 – "`^(?![\.:])([\w.]+(::))?[A-Z]\w*$`"

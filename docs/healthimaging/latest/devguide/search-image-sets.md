@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/search-ima
 # Searching image sets
 <a name="search-image-sets"></a>
 
-Use the `SearchImageSets` action to run search queries against all [image sets](getting-started-concepts.md#concept-image-set) in an `ACTIVE` HealthImaging data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_SearchImageSets.html](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_SearchImageSets.html) in the *AWS HealthImaging API Reference*.
+Use the `SearchImageSets` action to run search queries against all [image sets](getting-started-concepts.md#concept-image-set) in an `ACTIVE` HealthImaging data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`SearchImageSets`](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_SearchImageSets.html) in the *AWS HealthImaging API Reference*.
 
 **Note**
 Keep the following points in mind when searching image sets.

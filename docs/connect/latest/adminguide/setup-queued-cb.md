@@ -163,7 +163,7 @@ We strongly recommend that you double-check the number entered in **Maximum numb
 
 You can also configure the **Transfer to Callback** option in the [Transfer to queue](transfer-to-queue.md) block to support callbacks when a customer contacts you from a chat, task, or email contact. For example, if a customer reaches out after hours when no agent is available, they can request a voice callback by sending a chat message or completing a webform request (which uses tasks).
 
-The following video shows how to use Contact Lens to allow customers who contact you through Connect Customer chat to request a callback. This creates a more personalized customer experience. It shows how to configure this capability that allows customers to request callbacks from any channel, not just voice calls.
+The following video shows how to use conversational analytics to allow customers who contact you through Connect Customer chat to request a callback. This creates a more personalized customer experience. It shows how to configure this capability that allows customers to request callbacks from any channel, not just voice calls.
 
 ## Learn more about queued callbacks
 <a name="queued-callback-no-agents-available"></a>

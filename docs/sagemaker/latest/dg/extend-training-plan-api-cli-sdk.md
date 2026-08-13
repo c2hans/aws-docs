@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/extend-training-plan
 # Purchase an extension
 <a name="extend-training-plan-api-cli-sdk"></a>
 
-After selecting an extension offering, use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ExtendTrainingPlan.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ExtendTrainingPlan.html) API to purchase the extension.
+After selecting an extension offering, use the [`ExtendTrainingPlan`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ExtendTrainingPlan.html) API to purchase the extension.
 
 The following example uses an AWS CLI command to extend a training plan.
 
@@ -40,5 +40,5 @@ The following section defines the mandatory input request parameter for the `Ext
 ## Required parameters
 <a name="extend-training-plan-required-params"></a>
 
-When calling the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ExtendTrainingPlan.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ExtendTrainingPlan.html) API to extend a training plan, you must provide the following value:
+When calling the [`ExtendTrainingPlan`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ExtendTrainingPlan.html) API to extend a training plan, you must provide the following value:
 + `TrainingPlanExtensionOfferingId`: The ID of the extension offering you are purchasing. You can retrieve this ID from the `TrainingPlanExtensionOfferings` in the response of your `SearchTrainingPlanOfferings` API call. Its format should start with `tpeo-*`.

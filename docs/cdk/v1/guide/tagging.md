@@ -12,9 +12,9 @@ Tags are informational key-value elements that you can add to constructs in your
 **Tip**
 For more information about how you can use tags with your AWS resources, see the white paper [Tagging Best Practices](https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf) (PDF).
 
-The [https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.Tags.html](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.Tags.html) class includes the static method `of()`, through which you can add tags to, or remove tags from, the specified construct.
-+  [https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.Tags.html#addkey-value-props](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.Tags.html#addkey-value-props) applies a new tag to the given construct and all of its children.
-+  [https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.Tags.html#removekey-props](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.Tags.html#removekey-props) removes a tag from the given construct and any of its children, including tags a child construct may have applied to itself.
+The [`Tags`](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.Tags.html) class includes the static method `of()`, through which you can add tags to, or remove tags from, the specified construct.
++  [`Tags.of({{SCOPE}}).add()`](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.Tags.html#addkey-value-props) applies a new tag to the given construct and all of its children.
++  [`Tags.of({{SCOPE}}).remove()`](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.Tags.html#removekey-props) removes a tag from the given construct and any of its children, including tags a child construct may have applied to itself.
 
 **Note**
 Tagging is implemented using [Aspects](aspects.md). Aspects are a way to apply an operation (such as tagging) to all constructs in a given scope.
@@ -151,7 +151,7 @@ Tags.Of(myConstruct).Add("key", "value", new TagProps { Priority = 300 });
 ## Optional properties
 <a name="tagging-props"></a>
 
-Tags support [https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.TagProps.html](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.TagProps.html) that fine-tune how tags are applied to, or removed from, resources. All properties are optional.
+Tags support [`properties`](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.TagProps.html) that fine-tune how tags are applied to, or removed from, resources. All properties are optional.
 
 `applyToLaunchedInstances` (Python: `apply_to_launched_instances`)
 Available for add() only. By default, tags are applied to instances launched in an Auto Scaling group. Set this property to **false** to ignore instances launched in an Auto Scaling group.

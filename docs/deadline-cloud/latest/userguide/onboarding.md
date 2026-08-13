@@ -18,7 +18,7 @@ Work through the following steps for each group that you onboard:
 **Note**
 Monitor sign-ins cover the monitor and the integrated submitters. To onboard a pipeline developer or a tool that calls the Deadline Cloud API or CLI, provide AWS credentials instead. See [Getting started with Deadline Cloud resources](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/getting-started.html) in the *Deadline Cloud Developer Guide*.
 
-1. **Grant access** – Assign each user or group an access level on the farms, queues, and fleets that they'll use. Grants can be as open or as scoped as your organization works: many organizations grant everyone broad access across a shared farm, while others limit each group to its own queue. See [Understanding access levels](manage-users-by-farm.md).
+1. **Grant access** – Assign each user or group an access level on the farms, queues, and fleets that they'll use. Grants can be as open or as scoped as your organization works: many organizations grant everyone broad access across a shared farm, while others limit each group to its own queue. See [How permissions work in Deadline Cloud](permissions-overview.md).
 
 1. **Set up their workstations** – Send each user who submits from a digital content creation (DCC) application a link to [Set up your workstation](submitter.md). On that page, they install the submitter and the monitor desktop application, sign in with the monitor URL, and connect their DCC. If you use shared storage, create storage profiles so that file paths map correctly between workstations and workers. See [Storage profiles in Deadline Cloud](storage-profile.md). For guidance on securing workstations, see [Security best practices - workstations](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/security-best-practices.html#workstations).
 
@@ -47,7 +47,7 @@ A team inside your organization usually doesn't need the vendor isolation steps.
 <a name="onboarding-other-users"></a>
 
 Some users don't need the full checklist:
-+ To onboard someone who manages the farm for you, such as a technical director, grant them manager or owner access so that they can grant permissions and create budgets. See [Understanding access levels](manage-users-by-farm.md).
++ To onboard someone who manages the farm for you, such as a technical director, grant them manager or owner access so that they can grant permissions and create budgets. See [How permissions work in Deadline Cloud](permissions-overview.md).
 + To onboard someone who watches and manages work without submitting it, such as a coordinator or supervisor, create a sign-in, grant viewer or manager access, and share the monitor URL. The web monitor requires no installation. See [Share the Deadline Cloud monitor URL](share-monitor-url.md).
 + To onboard a pipeline developer who builds job bundles, submitters, and integrations, provide AWS credentials and the CLI. See [Getting started with Deadline Cloud resources](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/getting-started.html) in the *Deadline Cloud Developer Guide*.
 + If you're building rendering into a product for your own end users, see [Deadline Cloud Architecture Guidance](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/architecture-guidance.html) in the *Deadline Cloud Developer Guide*.

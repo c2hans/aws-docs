@@ -46,7 +46,7 @@ Perform the task in this procedure the first time you access Change Manager. You
    + **AWS Identity and Access Management (IAM)** – Identify the users who make and approve requests and perform other actions in Change Manager by using your existing user, groups, and roles.
    + **AWS IAM Identity Center (IAM Identity Center)** – Allow [IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/) to create and manage identities, or connect to your existing identity source to identify the users who perform actions in Change Manager.
 
-1. In the **Template reviewer notification** section, specify the Amazon Simple Notification Service (Amazon SNS) topics to use to notify template reviewers that a new change template or change template version is ready for review. Ensure that the Amazon SNS topic you choose is configured to send notifications to your template reviewers.
+1. In the **Template reviewer notification** section, specify the Amazon Simple Notification Service (Amazon SNS) topics to use to notify template reviewers that a new change template or change template version is ready for review. Make sure that the Amazon SNS topic you choose is configured to send notifications to your template reviewers.
 
    For information about creating and configuring Amazon SNS topics for change template reviewer notifications, see [Configuring Amazon SNS topics for Change Manager notifications](change-manager-sns-setup.md).
 
@@ -116,9 +116,9 @@ The Amazon SNS topic you select must be configured to specify the notifications 
      1. Choose **Add notification**.
    + Option: **Require monitors for all templates**
 
-     If you want to ensure that all templates for your organization or account specify an Amazon CloudWatch alarm to monitor your change operation, select the **Enabled** check box.
+     If you want to make sure that all templates for your organization or account specify an Amazon CloudWatch alarm to monitor your change operation, select the **Enabled** check box.
    + Option: **Require template review and approval before use**
 
-     To ensure that no change requests are created, and no runbook workflows run, without being based on a template that has been reviewed and approved, select the **Enabled** check box.
+     To make sure that no change requests are created, and no runbook workflows run, without being based on a template that has been reviewed and approved, select the **Enabled** check box.
 
 1. Choose **Save**.

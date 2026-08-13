@@ -11,7 +11,7 @@ This topic lists the AWS Regions where Connect Customer features are available.
 + [Connect Customer](#amazonconnect_region)
 + [Agent workspace and step-by-step guides](#agentworkspace_region)
 + [Agent workspace third-party applications](#agentworkspace_3p_region)
-+ [Connect AI agents](#q-connect_region)
++ [agent assist](#q-connect_region)
 + [Data lake](#analytics_datalake_region)
 + [AppIntegrations](#appintegrations_region)
 + [Cases](#cases_region)
@@ -21,7 +21,7 @@ This topic lists the AWS Regions where Connect Customer features are available.
 + [Customer authentication](#customerauthentication_region)
 + [Customer Profiles](#customerprofiles_region)
 + [Customer Profiles calculated attributes API](#customerprofiles_calculatedattributesregion)
-+ [Forecasting, capacity planning, and scheduling](#optimization_region)
++ [Forecasting & agent scheduling](#optimization_region)
 + [Amazon Connect agentic voice](#gv_region)
 + [Global Resiliency](#gr_region)
 + [In-app, web, and video calling capabilities](#inapp_region)
@@ -74,7 +74,7 @@ This topic lists the AWS Regions where Connect Customer features are available.
 + Europe (Frankfurt)
 + Europe (London)
 
-## Connect AI agents
+## agent assist
 <a name="q-connect_region"></a>
 + US East (N. Virginia)
 + US West (Oregon)
@@ -182,19 +182,19 @@ This topic lists the AWS Regions where Connect Customer features are available.
 ### Conversational analytics features by Region
 <a name="regions-contactlens"></a>
 
-| Region Name | Generative AI-powered contact categorization | Generative AI-powered post-contact summaries | Analytics dashboards | Post-call analytics | Post-chat analytics | Real-time call analytics | Performance evaluations | Generative AI-powered performance evaluations | Screen recording | Theme detection | External voice |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| US East (N. Virginia) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
-| US West (Oregon) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
-| Africa (Cape Town) | - | - | Yes | Yes | Yes | - | Yes | - | Yes | - | - |
-| Asia Pacific (Seoul) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | - | Yes | Yes | - |
-| Asia Pacific (Singapore) | - | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | - |
-| Asia Pacific (Sydney) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
-| Asia Pacific (Tokyo) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
-| Canada (Central) | Yes | Yes | Yes | Yes\* | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
-| Europe (Frankfurt) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
-| Europe (London) | Yes | Yes | Yes | Yes\* | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
-| AWS GovCloud (US-West) | - | - | Yes | Yes | Yes | Yes | Yes | - | Yes | - | - |
+| Region Name | Generative AI-powered contact categorization | Generative AI-powered post-contact summaries | Generative AI-powered information extraction | Analytics dashboards | Post-call analytics | Post-chat analytics | Real-time call analytics | Performance evaluations | Generative AI-powered performance evaluations | Screen recording | Theme detection | External voice |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| US East (N. Virginia) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Recording, Streaming |
+| US West (Oregon) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Recording, Streaming |
+| Africa (Cape Town) | - | - | - | Yes | Yes | Yes | - | Yes | - | Yes | - | Recording |
+| Asia Pacific (Seoul) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | - | Yes | Yes | Recording |
+| Asia Pacific (Singapore) | - | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Recording |
+| Asia Pacific (Sydney) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Recording, Streaming |
+| Asia Pacific (Tokyo) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Recording, Streaming |
+| Canada (Central) | Yes | Yes | Yes | Yes | Yes\* | Yes | Yes | Yes | Yes | Yes | Yes | Recording, Streaming |
+| Europe (Frankfurt) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Recording, Streaming |
+| Europe (London) | Yes | Yes | Yes | Yes | Yes\* | Yes | Yes | Yes | Yes | Yes | Yes | Recording, Streaming |
+| AWS GovCloud (US-West) | - | - | - | Yes | Yes | Yes | Yes | Yes | - | Yes | - | - |
 
 ## Customer authentication availability by Region
 <a name="customerauthentication_region"></a>
@@ -240,7 +240,7 @@ The calculated attributes API is available in the following AWS Regions:
 + Europe (Frankfurt)
 + Europe (London)
 
-## Forecasting, capacity planning, and scheduling
+## Forecasting & agent scheduling
 <a name="optimization_region"></a>
 + US East (N. Virginia)
 + US West (Oregon)

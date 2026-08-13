@@ -17,8 +17,8 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/new-AL2023.4-
 
 New packages in AL2023.5:
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
+- ** [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
+  - **RPM:**  [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
   - **Architectures:** aarch64, x86\_64
   - **Version:** 2.0.2-1.amzn2023
 
@@ -57,12 +57,12 @@ New packages in AL2023.5:
   - **RPM:**  python3-ipatests  / **Architectures:** noarch
   - **Version:** 4.12.0-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+- ** [`java-22-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
+  - **RPM:**  [`java-22-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-22-amazon-corretto-devel`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-22-amazon-corretto-headless`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-22-amazon-corretto-javadoc`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-22-amazon-corretto-jmods`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
   - **Version:** 22.0.1\+8-1.amzn2023.1
 
 - ** `libecpg` **
@@ -71,8 +71,8 @@ New packages in AL2023.5:
   - **RPM:**  libpgtypes  / **Architectures:** aarch64, x86\_64
   - **Version:** 16.1-2.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
+- ** [`php8.3`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
+  - **RPM:**  [`php8.3`](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.3-bcmath  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.3-cli  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.3-common  / **Architectures:** aarch64, x86\_64

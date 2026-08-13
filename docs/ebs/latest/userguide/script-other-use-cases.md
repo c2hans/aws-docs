@@ -241,7 +241,7 @@ If you get the `Role with name AWSDataLifecycleManagerDefaultRole already exists
 #### [ AWS CLI ]
 
 **To create the snapshot lifecycle policy**
-Use the [ create-lifecycle-policy](https://docs.aws.amazon.com/cli/latest/reference/dlm/create-lifecycle-policy.html) command, and include the `Scripts` parameters in `CreateRule`. For more information about the parameters, see the [https://docs.aws.amazon.com/dlm/latest/APIReference/API_Script.html](https://docs.aws.amazon.com/dlm/latest/APIReference/API_Script.html).
+Use the [ create-lifecycle-policy](https://docs.aws.amazon.com/cli/latest/reference/dlm/create-lifecycle-policy.html) command, and include the `Scripts` parameters in `CreateRule`. For more information about the parameters, see the [*Amazon Data Lifecycle Manager API Reference*](https://docs.aws.amazon.com/dlm/latest/APIReference/API_Script.html).
 
 ```
 $ aws dlm create-lifecycle-policy \

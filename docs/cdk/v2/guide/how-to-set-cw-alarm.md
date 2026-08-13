@@ -7,12 +7,12 @@ This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on 
 # Set a CloudWatch alarm
 <a name="how-to-set-cw-alarm"></a>
 
-Use the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudwatch-readme.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudwatch-readme.html) package to set up Amazon CloudWatch alarms on CloudWatch metrics. You can use predefined metrics or create your own.
+Use the [`aws-cloudwatch`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudwatch-readme.html) package to set up Amazon CloudWatch alarms on CloudWatch metrics. You can use predefined metrics or create your own.
 
 ## Use an existing metric
 <a name="how-to-set-cw-alarm-use-metric"></a>
 
-Many AWS Construct Library modules let you set an alarm on an existing metric by passing the metric’s name to a convenience method on an instance of an object that has metrics. For example, given an Amazon SQS queue, you can get the metric **ApproximateNumberOfMessagesVisible** from the queue’s [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.Queue.html#metricmetricname-props](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.Queue.html#metricmetricname-props) method:
+Many AWS Construct Library modules let you set an alarm on an existing metric by passing the metric’s name to a convenience method on an instance of an object that has metrics. For example, given an Amazon SQS queue, you can get the metric **ApproximateNumberOfMessagesVisible** from the queue’s [`metric()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.Queue.html#metricmetricname-props) method:
 
 **Example**
 
@@ -143,7 +143,7 @@ var alarm = new Alarm(this, "Alarm", new AlarmProps
 });
 ```
 
-An alternative way to create an alarm is using the metric’s [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudwatch.Metric.html#createwbralarmscope-id-props](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudwatch.Metric.html#createwbralarmscope-id-props) method, which takes essentially the same properties as the `Alarm` constructor. You don’t need to pass in the metric, because it’s already known.
+An alternative way to create an alarm is using the metric’s [`createAlarm()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudwatch.Metric.html#createwbralarmscope-id-props) method, which takes essentially the same properties as the `Alarm` constructor. You don’t need to pass in the metric, because it’s already known.
 
 **Example**
 

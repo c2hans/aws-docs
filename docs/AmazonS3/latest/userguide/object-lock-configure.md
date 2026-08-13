@@ -69,7 +69,7 @@ The following `create-bucket` example creates a new S3 bucket named `{{amzn-s3-d
 aws s3api create-bucket --bucket {{{{amzn-s3-demo-bucket1}}}} --object-lock-enabled-for-bucket
 ```
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/create-bucket.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/create-bucket.html) in the *AWS CLI Command Reference*.
+For more information and examples, see [create-bucket](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/create-bucket.html) in the *AWS CLI Command Reference*.
 
 **Note**
 You can run AWS CLI commands from the console by using AWS CloudShell. AWS CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the AWS Management Console. For more information, see [What is CloudShell?](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html) in the *AWS CloudShell User Guide*.
@@ -77,7 +77,7 @@ You can run AWS CLI commands from the console by using AWS CloudShell. AWS Cloud
 ### Using the REST API
 <a name="object-lock-new-bucket-rest"></a>
 
-You can use the REST API to create a new S3 bucket with Object Lock enabled. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucket.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucket.html) in the *Amazon Simple Storage Service API Reference*.
+You can use the REST API to create a new S3 bucket with Object Lock enabled. For more information, see [CreateBucket](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucket.html) in the *Amazon Simple Storage Service API Reference*.
 
 ### Using the AWS SDKs
 <a name="object-lock-new-bucket-sdk"></a>
@@ -126,7 +126,7 @@ The following `put-object-lock-configuration` example command sets a 50-day Obje
 aws s3api put-object-lock-configuration --bucket {{{{amzn-s3-demo-bucket1}}}} --object-lock-configuration={{'{ "ObjectLockEnabled": "Enabled", "Rule": { "DefaultRetention": { "Mode": "COMPLIANCE", "Days": 50 }}}'}}
 ```
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-lock-configuration.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-lock-configuration.html) in the *AWS CLI Command Reference*.
+For more information and examples, see [put-object-lock-configuration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-lock-configuration.html) in the *AWS CLI Command Reference*.
 
 **Note**
 You can run AWS CLI commands from the console by using AWS CloudShell. AWS CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the AWS Management Console. For more information, see [What is CloudShell?](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html) in the *AWS CloudShell User Guide*.
@@ -134,7 +134,7 @@ You can run AWS CLI commands from the console by using AWS CloudShell. AWS Cloud
 ### Using the REST API
 <a name="object-lock-existing-bucket-rest"></a>
 
-You can use the Amazon S3 REST API to enable Object Lock on an existing S3 bucket. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectLockConfiguration.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectLockConfiguration.html) in the *Amazon Simple Storage Service API Reference*.
+You can use the Amazon S3 REST API to enable Object Lock on an existing S3 bucket. For more information, see [PutObjectLockConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectLockConfiguration.html) in the *Amazon Simple Storage Service API Reference*.
 
 ### Using the AWS SDKs
 <a name="object-lock-existing-bucket-sdk"></a>
@@ -190,7 +190,7 @@ The following `put-object-legal-hold` example removes a legal hold on the object
 aws s3api put-object-legal-hold --bucket {{{{amzn-s3-demo-bucket1}}}} --key {{my-image.fs}} --legal-hold="Status=OFF"
 ```
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-legal-hold.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-legal-hold.html) in the *AWS CLI Command Reference*.
+For more information and examples, see [put-object-legal-hold](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-legal-hold.html) in the *AWS CLI Command Reference*.
 
 **Note**
 You can run AWS CLI commands from the console by using AWS CloudShell. AWS CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the AWS Management Console. For more information, see [What is CloudShell?](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html) in the *AWS CloudShell User Guide*.
@@ -198,7 +198,7 @@ You can run AWS CLI commands from the console by using AWS CloudShell. AWS Cloud
 ### Using the REST API
 <a name="object-lock-set-legal-hold-rest"></a>
 
-You can use the REST API to set or modify a legal hold on an object. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectLegalHold.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectLegalHold.html) in the *Amazon Simple Storage Service API Reference*.
+You can use the REST API to set or modify a legal hold on an object. For more information, see [PutObjectLegalHold](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectLegalHold.html) in the *Amazon Simple Storage Service API Reference*.
 
 ### Using the AWS SDKs
 <a name="object-lock-set-legal-hold-sdk"></a>
@@ -253,7 +253,7 @@ The following `put-object-retention` example sets a retention period on the obje
 aws s3api put-object-retention --bucket {{{{amzn-s3-demo-bucket1}}}} --key {{my-image.fs}} --retention='{ "Mode": "GOVERNANCE", "RetainUntilDate": "2025-01-01T00:00:00" }'
 ```
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-retention.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-retention.html) in the *AWS CLI Command Reference*.
+For more information and examples, see [put-object-retention](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-retention.html) in the *AWS CLI Command Reference*.
 
 **Note**
 You can run AWS CLI commands from the console by using AWS CloudShell. AWS CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the AWS Management Console. For more information, see [What is CloudShell?](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html) in the *AWS CloudShell User Guide*.
@@ -261,7 +261,7 @@ You can run AWS CLI commands from the console by using AWS CloudShell. AWS Cloud
 ### Using the REST API
 <a name="object-lock-set-retention-period-rest"></a>
 
-You can use the REST API to set a retention period on an object. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectRetention.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectRetention.html) in the *Amazon Simple Storage Service API Reference*.
+You can use the REST API to set a retention period on an object. For more information, see [PutObjectRetention](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectRetention.html) in the *Amazon Simple Storage Service API Reference*.
 
 ### Using the AWS SDKs
 <a name="object-lock-set-retention-period-sdk"></a>
@@ -322,7 +322,7 @@ The following `put-object-lock-configuration` example removes the default retent
 aws s3api put-object-lock-configuration --bucket {{{{amzn-s3-demo-bucket1}}}} --object-lock-configuration={{'{ "ObjectLockEnabled": "Enabled"}'}}
 ```
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-lock-configuration.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-lock-configuration.html) in the *AWS CLI Command Reference*.
+For more information and examples, see [put-object-lock-configuration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-lock-configuration.html) in the *AWS CLI Command Reference*.
 
 **Note**
 You can run AWS CLI commands from the console by using AWS CloudShell. AWS CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the AWS Management Console. For more information, see [What is CloudShell?](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html) in the *AWS CloudShell User Guide*.
@@ -330,7 +330,7 @@ You can run AWS CLI commands from the console by using AWS CloudShell. AWS Cloud
 ### Using the REST API
 <a name="object-lock-configure-set-retention-period-bucket-rest"></a>
 
-You can use the REST API to set a default retention period on an existing S3 bucket. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectLockConfiguration.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectLockConfiguration.html) in the *Amazon Simple Storage Service API Reference*.
+You can use the REST API to set a default retention period on an existing S3 bucket. For more information, see [PutObjectLockConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectLockConfiguration.html) in the *Amazon Simple Storage Service API Reference*.
 
 ### Using the AWS SDKs
 <a name="object-lock-configure-set-retention-period-bucket-sdk"></a>

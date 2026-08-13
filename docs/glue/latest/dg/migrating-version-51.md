@@ -46,12 +46,12 @@ Note the following breaking changes:
 
 For existing jobs, change the `Glue version` from the previous version to `Glue 5.1` in the job configuration.
 + In AWS Glue Studio, choose `Glue 5.1 - Supports Spark 3.5.6, Scala 2, Python 3` in `Glue version`.
-+ In the API, choose **5.1** in the `GlueVersion` parameter in the [https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-job.html#aws-glue-api-jobs-job-UpdateJob](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-job.html#aws-glue-api-jobs-job-UpdateJob) API operation.
++ In the API, choose **5.1** in the `GlueVersion` parameter in the [`UpdateJob`](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-job.html#aws-glue-api-jobs-job-UpdateJob) API operation.
 
 For new jobs, choose `Glue 5.1` when you create a job.
 + In the console, choose `Spark 3.5.6, Python 3 (Glue Version 5.1) or Spark 3.5.6, Scala 2 (Glue Version 5.1)` in `Glue version`.
 + In AWS Glue Studio, choose `Glue 5.1 - Supports Spark 3.5.6, Scala 2, Python 3` in `Glue version`.
-+ In the API, choose **5.1** in the `GlueVersion` parameter in the [https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-job.html#aws-glue-api-jobs-job-CreateJob](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-job.html#aws-glue-api-jobs-job-CreateJob) API operation.
++ In the API, choose **5.1** in the `GlueVersion` parameter in the [`CreateJob`](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-job.html#aws-glue-api-jobs-job-CreateJob) API operation.
 
 To view Spark event logs of AWS Glue 5.1 coming from AWS Glue 2.0 or earlier, [launch an upgraded Spark history server for AWS Glue 5.1 using CloudFormation or Docker](https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui-history.html).
 

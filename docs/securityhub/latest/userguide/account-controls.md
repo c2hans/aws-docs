@@ -20,7 +20,7 @@ These controls may not be available in all AWS Regions. For more information, se
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/security-account-information-provided.html](https://docs.aws.amazon.com/config/latest/developerguide/security-account-information-provided.html)
+**AWS Config rule:** [`security-account-information-provided`](https://docs.aws.amazon.com/config/latest/developerguide/security-account-information-provided.html)
 
 **Schedule type:** Periodic
 
@@ -46,7 +46,7 @@ To add an alternate contact as a security contact to your AWS account, see [Upda
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/account-part-of-organizations.html](https://docs.aws.amazon.com/config/latest/developerguide/account-part-of-organizations.html)
+**AWS Config rule:** [`account-part-of-organizations`](https://docs.aws.amazon.com/config/latest/developerguide/account-part-of-organizations.html)
 
 **Schedule type:** Periodic
 

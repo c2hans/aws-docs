@@ -88,12 +88,12 @@ When creating a device pool with private devices in the console, you can only us
 
 ## Creating a private device pool with private devices (AWS CLI)
 <a name="how-to-create-device-pool-cli-private-devices"></a>
-+ Run the [https://docs.aws.amazon.com/cli/latest/reference/devicefarm/create-device-pool.html](https://docs.aws.amazon.com/cli/latest/reference/devicefarm/create-device-pool.html) command.
++ Run the [**create-device-pool**](https://docs.aws.amazon.com/cli/latest/reference/devicefarm/create-device-pool.html) command.
 
 For information about using Device Farm with the AWS CLI, see [AWS CLI reference](cli-ref.md).
 
 ## Creating a private device pool with private devices (API)
 <a name="how-to-create-device-pool-api-private-devices"></a>
-+ Call the [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateDevicePool.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateDevicePool.html) API.
++ Call the [`CreateDevicePool`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateDevicePool.html) API.
 
 For information about using the Device Farm API, see [Automating Device Farm](api-ref.md).

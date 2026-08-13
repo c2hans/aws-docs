@@ -157,7 +157,7 @@ Outputs:
 ### AWS CLI command to create the stack
 <a name="cloudformation-supplied-parameter-types-cli-command"></a>
 
-The following [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command creates a stack based on the example template.
+The following [create-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command creates a stack based on the example template.
 
 ```
 aws cloudformation create-stack --stack-name {{MyStack}} \
@@ -183,7 +183,7 @@ It's strongly recommended that you use dynamic references to restrict access to 
 If you want to allow template users to specify values from different AWS accounts, don't use AWS-specific parameter types. Instead, define parameters of type `String` or `CommaDelimitedList`.
 
 There are a few things to keep in mind with Systems Manager parameter types:
-+ You can see the resolved parameter values on the stack's **Parameters** tab in the console, or by running [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stacks.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stacks.html) or [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-change-set.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-change-set.html). Remember, these values are set when the stack is created or updated, so they might be different from the latest values in Parameter Store.
++ You can see the resolved parameter values on the stack's **Parameters** tab in the console, or by running [describe-stacks](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stacks.html) or [describe-change-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-change-set.html). Remember, these values are set when the stack is created or updated, so they might be different from the latest values in Parameter Store.
 + For stack updates, when you use the **Use existing value** option (or set `UsePreviousValue` to true), this means that you want to keep using the same Parameter Store key, not its value. CloudFormation always retrieves the latest value.
 + If you specify any allowed values or other constraints, CloudFormation validates them against the parameter keys you specify, but not their values. You should validate the values in Parameter Store itself.
 + When you create or update stacks and create change sets, CloudFormation uses whatever value exists in Parameter Store at the time. If a specified parameter doesn't exist in Parameter Store under the caller's AWS account, CloudFormation returns a validation error.

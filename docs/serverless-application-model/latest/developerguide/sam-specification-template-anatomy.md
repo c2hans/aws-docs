@@ -81,7 +81,7 @@ Values to pass to your template at runtime (when you create or update a stack). 
 Values that are passed in using the `--parameter-overrides` parameter of the `sam deploy` command—and entries in the configuration file—take precedence over entries in the AWS SAM template file. For more information about the `sam deploy` command, see [sam deploy](sam-cli-command-reference-sam-deploy.md) in the AWS SAM CLI command reference. For more information about the configuration file, see [AWS SAM CLI configuration file](serverless-sam-cli-config.md).
 
 **[Mappings (optional)](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html)**
-A mapping of keys and associated values that you can use to specify conditional parameter values, similar to a lookup table. You can match a key to a corresponding value by using the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-findinmap.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-findinmap.html) intrinsic function in the `Resources` and `Outputs` sections.
+A mapping of keys and associated values that you can use to specify conditional parameter values, similar to a lookup table. You can match a key to a corresponding value by using the [`Fn::FindInMap`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-findinmap.html) intrinsic function in the `Resources` and `Outputs` sections.
 This section corresponds directly with the `Mappings` section of CloudFormation templates.
 
 **[Conditions (optional)](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html)**

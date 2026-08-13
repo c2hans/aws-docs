@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_filter-fin
 # Filtering findings in GuardDuty
 <a name="guardduty_filter-findings"></a>
 
-A finding filter allows you to view findings that match the criteria you specify and filter out any unmatched findings. You can easily create finding filters using the Amazon GuardDuty console, or you can create them with the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateFilter.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateFilter.html) API using JSON. Review the following sections to understand how to create a filter in the console. To use these filters to automatically archive incoming findings, see [Suppression rules in GuardDuty](findings_suppression-rule.md).
+A finding filter allows you to view findings that match the criteria you specify and filter out any unmatched findings. You can easily create finding filters using the Amazon GuardDuty console, or you can create them with the [CreateFilter](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateFilter.html) API using JSON. Review the following sections to understand how to create a filter in the console. To use these filters to automatically archive incoming findings, see [Suppression rules in GuardDuty](findings_suppression-rule.md).
 
 When you create filters, take the following list into consideration:
 + You can specify a minimum of one attribute and up to a maximum of 50 attributes as the criteria for a particular filter.
@@ -71,7 +71,7 @@ You can create and test the finding filters by using either API or CLI commands.
 **To create finding filters using API/CLI**
 + Run [CreateFilter](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateFilter.html) API by using the regional detector ID of the AWS account where you want to create a filter.
 
-  To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+  To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 + Alternatively, you can use the [create-filter](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/guardduty/create-filter.html) CLI to create and save the filter. You can use one or more filter criteria from [Property filters in GuardDuty](#filter_criteria).
 
   Use the following examples by replacing the placeholder values shown in red.

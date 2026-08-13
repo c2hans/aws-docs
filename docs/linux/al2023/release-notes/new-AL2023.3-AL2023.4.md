@@ -53,12 +53,12 @@ New packages in AL2023.4:
   - **RPM:**  hiredis-devel  / **Architectures:** aarch64, x86\_64
   - **Version:** 1.2.0-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** noarch
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** noarch
+- ** [`hyperv-daemons`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html) **
+  - **RPM:**  [`hyperv-daemons`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`hyperv-daemons-license`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** noarch
+  - **RPM:**  [`hypervfcopyd`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`hypervkvpd`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`hyperv-tools`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** noarch
   - **RPM:**  hypervvssd  / **Architectures:** aarch64, x86\_64
   - **Version:** 0-0.42.20220731git.amzn2023.0.1
 
@@ -191,7 +191,7 @@ New packages in AL2023.4:
   - **RPM:**  perl-Net-LibIDN2-tests  / **Architectures:** aarch64, x86\_64
   - **Version:** 1.02-4.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
+- ** [`php8.1`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
   - **RPM:**  php8.1-zip
   - **Architectures:** aarch64, x86\_64
   - **Version:** 8.1.27-1.amzn2023.0.2

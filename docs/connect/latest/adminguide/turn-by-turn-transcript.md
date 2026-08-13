@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/turn-by-turn-transcript.html
 ---
 
-# Navigate transcripts and audio in Connect Customer Contact Lens
+# Navigate transcripts and audio in Connect Customer conversational analytics
 <a name="turn-by-turn-transcript"></a>
 
 Supervisors are often required to review the contacts for many agents, for quality assurance purposes. The turn-by-turn transcript and sentiment data helps you quickly identify and navigate to the portion of the recording that is of interest to you.
@@ -22,7 +22,7 @@ The following image of a contact record shows features that enable you to quickl
 ## Show key highlights
 <a name="contact-lens-contact-summarization"></a>
 
-It can be time-consuming to review contact transcripts that are hundreds of lines long. To make this process faster and more efficient, Contact Lens provides the option for you to view key highlights. The highlights show only those lines where Contact Lens has identified an issue, outcome, or action item in the transcript.
+It can be time-consuming to review contact transcripts that are hundreds of lines long. To make this process faster and more efficient, conversational analytics provides the option for you to view key highlights. The highlights show only those lines where conversational analytics has identified an issue, outcome, or action item in the transcript.
 + **Issue** represents the call driver. For example, "I'm thinking of upgrading to your online subscription plan."
 + **Outcome** represents the likely conclusion or outcome of the contact. For example, "Based on your current plan I would recommend the online essentials plans that we have."
 + **Action item** represents the action item the agent takes. For example, "Please keep an eye out for an email with a price quote. I will send it to you shortly."
@@ -30,7 +30,7 @@ It can be time-consuming to review contact transcripts that are hundreds of line
 Each contact has no more than one issue, one outcome, and one action item. Not all contacts will have all three.
 
 **Note**
-If Contact Lens displays the message **There are no key highlights for this transcript**, it means no issue, outcome, or action item was identified.
+If conversational analytics displays the message **There are no key highlights for this transcript**, it means no issue, outcome, or action item was identified.
 
 You don't need to configure key highlights. It works out-of-the-box without any training of the machine learning model.
 
@@ -55,7 +55,7 @@ For example, where you see red emojis for customer turns and then a green emoji,
 ## Tap or click category tags to navigate through transcript
 <a name="category-navigation"></a>
 
-When you tap or click on the category tags, Contact Lens auto-navigates to the corresponding point-of-interests in the transcript. There are also category markers in the visualization of the interaction to indicate which part of the recording file has utterances related to the category.
+When you tap or click on the category tags, conversational analytics auto-navigates to the corresponding point-of-interests in the transcript. There are also category markers in the visualization of the interaction to indicate which part of the recording file has utterances related to the category.
 
 The following image shows part of a **Contact details** page for a chat.
 

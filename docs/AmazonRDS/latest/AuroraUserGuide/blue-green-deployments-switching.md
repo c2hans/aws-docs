@@ -207,7 +207,7 @@ aws rds switchover-blue-green-deployment ^
 ### RDS API
 <a name="blue-green-deployments-switching-api"></a>
 
-To switch over a blue/green deployment by using the Amazon RDS API, use the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_SwitchoverBlueGreenDeployment.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_SwitchoverBlueGreenDeployment.html) operation with the following parameters:
+To switch over a blue/green deployment by using the Amazon RDS API, use the [`SwitchoverBlueGreenDeployment`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_SwitchoverBlueGreenDeployment.html) operation with the following parameters:
 + `BlueGreenDeploymentIdentifier` – Specify the resource ID of the blue/green deployment.
 + `SwitchoverTimeout` – Specify the time limit for the switchover, in seconds. The default is 300.
 

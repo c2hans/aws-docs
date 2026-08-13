@@ -77,7 +77,7 @@ public class CRaCDemo implements RequestStreamHandler, Resource {
       System.out.println("After restore");
 ```
 
-`Context` maintains only a [https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/WeakReference.html](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/WeakReference.html) to the registered object. If a [https://javadoc.io/static/io.github.crac/org-crac/0.1.3/org/crac/Resource.html](https://javadoc.io/static/io.github.crac/org-crac/0.1.3/org/crac/Resource.html) is garbage collected, runtime hooks do not run. Your code must maintain a strong reference to the `Resource` to guarantee that the runtime hook runs.
+`Context` maintains only a [`WeakReference`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/WeakReference.html) to the registered object. If a [`Resource`](https://javadoc.io/static/io.github.crac/org-crac/0.1.3/org/crac/Resource.html) is garbage collected, runtime hooks do not run. Your code must maintain a strong reference to the `Resource` to guarantee that the runtime hook runs.
 
 Here are two examples of patterns to avoid:
 

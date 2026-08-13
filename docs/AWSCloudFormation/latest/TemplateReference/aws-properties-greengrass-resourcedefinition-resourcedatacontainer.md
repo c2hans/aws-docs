@@ -12,7 +12,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 **Note**
 Only one resource type can be defined for a `ResourceDataContainer` instance.
 
-<a name="aws-properties-greengrass-resourcedefinition-resourcedatacontainer-inheritance"></a> In an CloudFormation template, `ResourceDataContainer` is a property of the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourceinstance.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourceinstance.html) property type.
+<a name="aws-properties-greengrass-resourcedefinition-resourcedatacontainer-inheritance"></a> In an CloudFormation template, `ResourceDataContainer` is a property of the [`ResourceInstance`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourceinstance.html) property type.
 
 ## Syntax
 <a name="aws-properties-greengrass-resourcedefinition-resourcedatacontainer-syntax"></a>

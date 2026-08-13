@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/modif
 **Note**
 If the time range of a dashboard is shorter than the period used for a graph on the dashboard, the following happens:
  The graph is modified to display the amount of data corresponding one complete period for that widget, even though this is longer than the dashboard time range. This ensures that there is at least one data point on the graph.
- The start time of the period for this data point is adjusted backwards to ensure that at least one data point can be displayed.
+ The start time of the period for this data point is adjusted backwards to make sure that at least one data point can be displayed.
 
 ## Set a relative time range
 <a name="set-relative-time-range"></a>

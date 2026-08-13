@@ -11,6 +11,7 @@ For notification about updates to this documentation, you can subscribe to the R
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Clarified nested data type limitation for Amazon Athena data sources](https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/s_Supported_data_types.html) | Clarified that nested data types (ARRAY, MAP, and STRUCT) are not supported for Amazon Athena data sources in AWS Clean Rooms Spark SQL. | July 23, 2026 |
 | [Spark SQL supports Hints](https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-commands-hints-spark.html) | AWS Clean Rooms Spark SQL supports query hints to optimize query performance and reduce compute costs. | January 20, 2026 |
 | [Spark SQL supports CACHE TABLE](https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-commands-cache-table.html) | AWS Clean Rooms Spark SQL supports the CACHE TABLE command, which allows customers to cache existing tables or create and cache new tables from query results for improved query performance. | October 22, 2025 |
 | [Spark SQL supports FIRST and LAST Window functions](https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/Window_functions.html#Window_function_supported) | AWS Clean Rooms Spark SQL supports the following Window functions: FIRST and LAST. | June 12, 2025 |

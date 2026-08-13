@@ -20,7 +20,7 @@ These controls may not be available in all AWS Regions. For more information, se
 
 **Resource type:** `AWS::CodeBuild::Project`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/codebuild-project-source-repo-url-check.html](https://docs.aws.amazon.com/config/latest/developerguide/codebuild-project-source-repo-url-check.html)
+**AWS Config rule:** [`codebuild-project-source-repo-url-check`](https://docs.aws.amazon.com/config/latest/developerguide/codebuild-project-source-repo-url-check.html)
 
 **Schedule type:** Change triggered
 
@@ -69,7 +69,7 @@ For more information, refer to [CodeBuild use case-based samples](https://docs.a
 
 **Resource type:** `AWS::CodeBuild::Project`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/codebuild-project-envvar-awscred-check.html](https://docs.aws.amazon.com/config/latest/developerguide/codebuild-project-envvar-awscred-check.html)
+**AWS Config rule:** [`codebuild-project-envvar-awscred-check`](https://docs.aws.amazon.com/config/latest/developerguide/codebuild-project-envvar-awscred-check.html)
 
 **Schedule type:** Change triggered
 
@@ -97,7 +97,7 @@ You can store environment variables with sensitive values in the AWS Systems Man
 
 **Resource type:** `AWS::CodeBuild::Project`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/codebuild-project-s3-logs-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/codebuild-project-s3-logs-encrypted.html)
+**AWS Config rule:** [`codebuild-project-s3-logs-encrypted`](https://docs.aws.amazon.com/config/latest/developerguide/codebuild-project-s3-logs-encrypted.html)
 
 **Schedule type:** Change triggered
 
@@ -123,7 +123,7 @@ To change the encryption settings for CodeBuild project S3 logs, see [Change a b
 
 **Resource type:** `AWS::CodeBuild::Project`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/codebuild-project-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/codebuild-project-logging-enabled.html)
+**AWS Config rule:** [`codebuild-project-logging-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/codebuild-project-logging-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -152,7 +152,7 @@ Security Hub CSPM retired this control in April 2024. For more information, see 
 
 **Resource type:** `AWS::CodeBuild::Project`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/codebuild-project-environment-privileged-check.html](https://docs.aws.amazon.com/config/latest/developerguide/codebuild-project-environment-privileged-check.html)
+**AWS Config rule:** [`codebuild-project-environment-privileged-check`](https://docs.aws.amazon.com/config/latest/developerguide/codebuild-project-environment-privileged-check.html)
 
 **Schedule type:** Change triggered
 
@@ -176,7 +176,7 @@ To configure CodeBuild project environment settings, see [ Create a build projec
 
 **Resource type:** `AWS::CodeBuild::ReportGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/codebuild-report-group-encrypted-at-rest.html](https://docs.aws.amazon.com/config/latest/developerguide/codebuild-report-group-encrypted-at-rest.html)
+**AWS Config rule:** [`codebuild-report-group-encrypted-at-rest`](https://docs.aws.amazon.com/config/latest/developerguide/codebuild-report-group-encrypted-at-rest.html)
 
 **Schedule type:** Change triggered
 

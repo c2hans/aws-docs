@@ -23,8 +23,8 @@ After you create your inference and training images you can upload them to Amaz
 <a name="ml-what-iam-permissions-are-required"></a>
 
  The following steps assume that the local machine has the correct AWS credentials for an AWS Identity and Access Management (IAM) role or user in the seller AWS account. The role or user must have the correct policies in place for both AWS Marketplace and Amazon ECR. For example, you could use the following AWS managed policies:
-+  [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerProductsFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerProductsFullAccess.html) – For access to AWS Marketplace
-+  [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2ContainerRegistryFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2ContainerRegistryFullAccess.html) – For access to Amazon ECR
++  [AWSMarketplaceSellerProductsFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerProductsFullAccess.html) – For access to AWS Marketplace
++  [AmazonEC2ContainerRegistryFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2ContainerRegistryFullAccess.html) – For access to Amazon ECR
 
 **Note**
 The links take you to the *AWS Managed Policy Reference*.

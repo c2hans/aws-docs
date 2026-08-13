@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-metrics.html
 # Slurm metrics in AWS PCS
 <a name="slurm-metrics"></a>
 
-AWS PCS supports Slurm's metrics feature, which exposes real-time cluster data through HTTP endpoints compatible with Prometheus and other monitoring systems. For details, including performance impact and security considerations, see the [Metrics Guide](https://slurm.schedmd.com/metrics.html) in the Slurm documentation.
+AWS PCS supports Slurm metrics, which expose real-time cluster data through HTTP endpoints compatible with Prometheus and other monitoring systems. For details, including performance impact and security considerations, see the [Metrics Guide](https://slurm.schedmd.com/metrics.html) on the Slurm website.
 
 ## Prerequisites
 <a name="slurm-metrics-prerequisites"></a>
 
-Before enabling Slurm metrics, ensure you have:
+Before enabling Slurm metrics, verify that you have:
 + **Cluster version**: Slurm version 25.11 or higher.
 + **Security group**: Rules allowing HTTP traffic on port 6817 from your desired sources.
 
@@ -24,7 +24,7 @@ Set the following cluster-level custom Slurm settings:
 Enabling `enable_http` exposes an unauthenticated HTTP endpoint. Anyone with network access to port 6817 can read cluster, job, and node metrics. Use security group rules to restrict access to trusted sources only.
 + `PrivateData` – Must *not* be set.
 
-For additional information on custom Slurm settings, see [Configuring custom Slurm settings in AWS PCS](slurm-custom-settings.md).
+For more information about custom Slurm settings, see [Configuring custom Slurm settings in AWS PCS](slurm-custom-settings.md).
 
 ## Use the metrics endpoint
 <a name="slurm-metrics-use"></a>
@@ -35,4 +35,6 @@ Query the metrics endpoint from a host with network access to the controller:
 curl http://{{controller-ip}}:6817/metrics
 ```
 
-For additional information on available metrics and scraping configuration, see the [Metrics Guide](https://slurm.schedmd.com/metrics.html) in the Slurm documentation.
+For more information about available metrics and scraping configuration, see the [Metrics Guide](https://slurm.schedmd.com/metrics.html) on the Slurm website.
+
+To collect these metrics using a managed Prometheus collector, see [Collect Slurm metrics with a managed Prometheus collector](slurm-metrics-prometheus.md).

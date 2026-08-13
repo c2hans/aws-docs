@@ -208,7 +208,7 @@ Additionally, we recommend reading the console version first if you haven't done
 
 1. If you haven't already done so, [install](https://docs.aws.amazon.com//cli/latest/userguide/cli-chap-getting-started.html) the AWS CLI, then add your [configuration](https://docs.aws.amazon.com//cli/latest/userguide/cli-configure-quickstart.html).
 
-1. Create a GraphQL API object by running the [https://docs.aws.amazon.com/cli/latest/reference/appsync/create-graphql-api.html](https://docs.aws.amazon.com/cli/latest/reference/appsync/create-graphql-api.html) command.
+1. Create a GraphQL API object by running the [`create-graphql-api`](https://docs.aws.amazon.com/cli/latest/reference/appsync/create-graphql-api.html) command.
 
    You'll need to type in two parameters for this particular command:
 
@@ -247,7 +247,7 @@ Other parameters such as `Region` must be configured but will usually default to
 **Note**
 This is an optional command that takes an existing schema and uploads it to the AWS AppSync service using a base-64 blob. We will not be using this command for the sake of this example.
 
-   Run the [https://docs.aws.amazon.com/cli/latest/reference/appsync/start-schema-creation.html](https://docs.aws.amazon.com/cli/latest/reference/appsync/start-schema-creation.html) command.
+   Run the [`start-schema-creation`](https://docs.aws.amazon.com/cli/latest/reference/appsync/start-schema-creation.html) command.
 
    You'll need to type in two parameters for this particular command:
 
@@ -269,7 +269,7 @@ This is an optional command that takes an existing schema and uploads it to the 
    }
    ```
 
-   This command will not return the final output after processing. You must use a separate command, [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/get-schema-creation-status.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/get-schema-creation-status.html), to see the result. Note that these two commands are asynchronous, so you can check the output status even while the schema is still being created.
+   This command will not return the final output after processing. You must use a separate command, [`get-schema-creation-status`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/get-schema-creation-status.html), to see the result. Note that these two commands are asynchronous, so you can check the output status even while the schema is still being created.
 
 ------
 #### [ CDK ]
@@ -352,7 +352,7 @@ In this step, we added a generic object type with a required `id` field stored a
 
 **Note**
 We recommend reading the console version first if you haven't done so already.
-+ You can create an object type by running the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-type.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-type.html) command.
++ You can create an object type by running the [`create-type`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-type.html) command.
 
   You'll need to enter a few parameters for this particular command:
 
@@ -472,7 +472,7 @@ As an additional note, AWS AppSync automatically adds a schema root during expor
 **Note**
 We recommend reading the console version first if you haven't done so already.
 
-1. Create a `schema` root with a `query` definition by running the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-type.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-type.html) command.
+1. Create a `schema` root with a `query` definition by running the [`create-type`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-type.html) command.
 
    You'll need to enter a few parameters for this particular command:
 
@@ -507,7 +507,7 @@ We recommend reading the console version first if you haven't done so already.
    }
    ```
 **Note**
-Note that if you didn't input something correctly in the `create-type` command, you can update your schema root (or any type in the schema) by running the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/update-type.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/update-type.html) command. In this example, we'll be temporarily changing the schema root to contain a `subscription` definition.
+Note that if you didn't input something correctly in the `create-type` command, you can update your schema root (or any type in the schema) by running the [`update-type`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/update-type.html) command. In this example, we'll be temporarily changing the schema root to contain a `subscription` definition.
 You'll need to enter a few parameters for this particular command:
 The `api-id` of your API.
 The `type-name` of your type. In the console example, this was `schema`.
@@ -545,7 +545,7 @@ An output will be returned in the CLI. Here's an example:
    ```
 Adding preformatted files will still work in this example.
 
-1. Create a `Query` type by running the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-type.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-type.html) command.
+1. Create a `Query` type by running the [`create-type`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-type.html) command.
 
    You'll need to enter a few parameters for this particular command:
 
@@ -677,7 +677,7 @@ As an additional note, AWS AppSync automatically adds a schema root during expor
 **Note**
 We recommend reading the console version first if you haven't done so already.
 
-1. Update your root schema by running the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/update-type.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/update-type.html) command.
+1. Update your root schema by running the [`update-type`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/update-type.html) command.
 
    You'll need to enter a few parameters for this particular command:
 
@@ -714,7 +714,7 @@ We recommend reading the console version first if you haven't done so already.
    }
    ```
 
-1. Create a `Mutation` type by running the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-type.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-type.html) command.
+1. Create a `Mutation` type by running the [`create-type`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-type.html) command.
 
    You'll need to enter a few parameters for this particular command:
 

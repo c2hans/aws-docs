@@ -14,7 +14,7 @@ Manufacturers embrace the cloud to deliver digital innovation that scales across
 *Data to insights*
 
 Extracting, structuring, and ingesting data from OT resources to the cloud is the first step to enabling data analysis. AWS has a variety of analytics services in the cloud for processing, analyzing, and generating insights, but the ingestion stage requires hybrid components and interaction with OT resources. Following are some of the key AWS services to enable data ingestion from an OT environment (levels 1-3) to the cloud. Refer to this [Manufacturing on AWS](https://d1.awsstatic.com/architecture-diagrams/ArchitectureDiagrams/manufacturing-on-aws-ra.pdf) reference architecture diagram for visual representation.
-+  [https://aws.amazon.com/iot-core/](https://aws.amazon.com/iot-core/) — Ingest data from the IoT device via [MQTT](https://mqtt.org/).
++  [**AWS IoT Core**](https://aws.amazon.com/iot-core/) — Ingest data from the IoT device via [MQTT](https://mqtt.org/).
 +  **[AWS IoT Greengrass](https://aws.amazon.com/greengrass/)** — Ingest data from legacy and IoT devices via MQTT, or various inbuilt / custom connectors and [AWS Lambda](https://aws.amazon.com/lambda/) functions.
 +  **[AWS IoT SiteWise](https://aws.amazon.com/iot-sitewise/)** — Collect, organize, and analyze machine data using [OPC UA](https://opcfoundation.org/about/opc-technologies/opc-ua/), [EtherNet/IP](https://www.odva.org/technology-standards/key-technologies/ethernet-ip/), [Modbus](https://modbus.org/), MQTT, or directly via API calls.
 +  **[Amazon Kinesis](https://aws.amazon.com/kinesis/)** — Ingesting streaming data.

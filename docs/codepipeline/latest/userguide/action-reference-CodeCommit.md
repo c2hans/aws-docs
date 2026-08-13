@@ -254,4 +254,4 @@ namespace: SourceVariables
 <a name="action-reference-CodeCommit-links"></a>
 
 The following related resources can help you as you work with this action.
-+ [Tutorial: Create a simple pipeline (CodeCommit repository)](tutorials-simple-codecommit.md) – This tutorial provides a sample app spec file and sample CodeDeploy application and deployment group. Use this tutorial to create a pipeline with a CodeCommit source that deploys to Amazon EC2 instances.
++ [Tutorial: Create a simple pipeline (CodeCommit repository)](tutorials-simple-codecommit.md) – This tutorial provides a sample AppSpec file and sample CodeDeploy application and deployment group. Use this tutorial to create a pipeline with a CodeCommit source that deploys to Amazon EC2 instances.

@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/parallel-test
 # Enable parallel test execution in batch builds
 <a name="parallel-test-enable"></a>
 
-To run tests in parallel, update the batch build buildspec file to include the build-fanout field and the number of parallel builds to split the test suite in the `parallelism` field as shown below. The `parallelism` field specifies how many independent executors are setup to execute the test suite.
+To run tests in parallel, update the batch build buildspec file to include the build-fanout field and the number of parallel builds to split the test suite in the `parallelism` field as shown below. The `parallelism` field specifies how many independent executors are set up to execute the test suite.
 
-To run the tests in multiple parallel execution environments, set the `parallelism` field to a value greater than zero. In example below, `parallelism` is set to five, meaning CodeBuild starts five identical builds that executes a portion of the test suite in parallel.
+To run the tests in multiple parallel execution environments, set the `parallelism` field to a value greater than zero. In the example below, `parallelism` is set to five, meaning CodeBuild starts five identical builds that execute a portion of the test suite in parallel.
 
 You can use the [codebuild-tests-run](parallel-test-tests-run.md) CLI command to split and run your tests. Your test files will be split up, and a portion of your tests run in each build. This reduces the overall time taken to run the full test suite. In the following example, tests will be split up into five and the split points are calculated based on name of the tests.
 

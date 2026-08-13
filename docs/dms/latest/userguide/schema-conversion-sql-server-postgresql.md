@@ -5,11 +5,11 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/schema-conversion-s
 # SQL Server to PostgreSQL conversion settings
 <a name="schema-conversion-sql-server-postgresql"></a>
 
-The following settings apply when the source is Microsoft SQL Server and the target is Amazon RDS for PostgreSQL or Amazon Aurora PostgreSQL. You can configure these settings using the AWS Management Console or the [https://docs.aws.amazon.com/dms/latest/APIReference/API_ModifyConversionConfiguration.html](https://docs.aws.amazon.com/dms/latest/APIReference/API_ModifyConversionConfiguration.html) API operation.
+The following settings apply when the source is Microsoft SQL Server and the target is Amazon RDS for PostgreSQL or Amazon Aurora PostgreSQL. You can configure these settings using the AWS Management Console or the [`ModifyConversionConfiguration`](https://docs.aws.amazon.com/dms/latest/APIReference/API_ModifyConversionConfiguration.html) API operation.
 
 This topic covers settings specific to the SQL Server to PostgreSQL conversion path. In addition to these settings, DMS Schema Conversion provides settings that apply to all source and target pairs, such as the severity level for action-item comments in converted SQL and the option to use generative AI for conversion. For those settings, see [Common conversion settings](schema-conversion-settings.md#schema-conversion-settings-common).
 
-When you use the API or AWS CLI, specify conversion path settings under the section names `MSSQL_TO_POSTGRESQL`, `MSSQL_TO_POSTGRESQL_14`, or `MSSQL_TO_POSTGRESQL_15`. All three versioned sections accept the same keys. To find which section names your project uses, call [https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeConversionConfiguration.html](https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeConversionConfiguration.html) first and update only the sections present in the response.
+When you use the API or AWS CLI, specify conversion path settings under the section names `MSSQL_TO_POSTGRESQL`, `MSSQL_TO_POSTGRESQL_14`, or `MSSQL_TO_POSTGRESQL_15`. All three versioned sections accept the same keys. To find which section names your project uses, call [`DescribeConversionConfiguration`](https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeConversionConfiguration.html) first and update only the sections present in the response.
 
 Each setting shows the AWS Management Console label followed by the API and AWS CLI parameter name in parentheses. Use the parameter name when configuring settings with the API or AWS CLI.
 
@@ -93,7 +93,7 @@ Controls where stub objects are placed when `ConvUnsupportedBuiltinsToStubs` is 
 ## Example: configure SQL Server to PostgreSQL settings
 <a name="schema-conversion-sql-server-postgresql-example"></a>
 
-The following example sets `SchemaNameTemplate`, `ConvertProceduresToFunction`, and `UseCitextForAllStringDatatypes`. Apply the same settings to each section name that your project uses (check the output of [https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeConversionConfiguration.html](https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeConversionConfiguration.html) first).
+The following example sets `SchemaNameTemplate`, `ConvertProceduresToFunction`, and `UseCitextForAllStringDatatypes`. Apply the same settings to each section name that your project uses (check the output of [`DescribeConversionConfiguration`](https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeConversionConfiguration.html) first).
 
 ```
 {

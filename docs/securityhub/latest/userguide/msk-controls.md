@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon Managed Streaming for A
 
 **Resource type:** `AWS::MSK::Cluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/msk-in-cluster-node-require-tls.html](https://docs.aws.amazon.com/config/latest/developerguide/msk-in-cluster-node-require-tls.html)
+**AWS Config rule:** [msk-in-cluster-node-require-tls](https://docs.aws.amazon.com/config/latest/developerguide/msk-in-cluster-node-require-tls.html)
 
 **Schedule type:** Change triggered
 
@@ -44,7 +44,7 @@ For information about updating the encryption settings for an Amazon MSK cluster
 
 **Resource type:** `AWS::MSK::Cluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/msk-enhanced-monitoring-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/msk-enhanced-monitoring-enabled.html)
+**AWS Config rule:** [msk-enhanced-monitoring-enabled](https://docs.aws.amazon.com/config/latest/developerguide/msk-enhanced-monitoring-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -106,7 +106,7 @@ You can enable encryption in transit when you create an MSK Connect connector. Y
 
 **Resource type:** `AWS::MSK::Cluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/msk-cluster-public-access-disabled.html](https://docs.aws.amazon.com/config/latest/developerguide/msk-cluster-public-access-disabled.html)
+**AWS Config rule:** [msk-cluster-public-access-disabled](https://docs.aws.amazon.com/config/latest/developerguide/msk-cluster-public-access-disabled.html)
 
 **Schedule type:** Change triggered
 
@@ -130,7 +130,7 @@ For information about managing public access to an Amazon MSK cluster, see [ Tur
 
 **Resource type:** `AWS::KafkaConnect::Connector`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/msk-connect-connector-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/msk-connect-connector-logging-enabled.html)
+**AWS Config rule:** [msk-connect-connector-logging-enabled](https://docs.aws.amazon.com/config/latest/developerguide/msk-connect-connector-logging-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -157,7 +157,7 @@ To enable logging for an existing Amazon MSK connector, you have to re-create th
 
 **Resource type:** `AWS::MSK::Cluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/msk-unrestricted-access-check.html](https://docs.aws.amazon.com/config/latest/developerguide/msk-unrestricted-access-check.html)
+**AWS Config rule:** [msk-unrestricted-access-check](https://docs.aws.amazon.com/config/latest/developerguide/msk-unrestricted-access-check.html)
 
 **Schedule type:** Change triggered
 

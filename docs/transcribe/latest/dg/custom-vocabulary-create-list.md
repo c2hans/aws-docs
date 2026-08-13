@@ -10,7 +10,7 @@ Custom vocabularies in list format are being deprecated, so if you're creating a
 
 You can create custom vocabularies from lists using the AWS Management Console, AWS CLI, or AWS SDKs.
 + **AWS Management Console**: You must create and upload a text file containing your custom vocabulary. You can use line-separated or comma-separated entries. Note that your list must be saved as a text (\*.txt) file. Both `LF` and `CRLF` line endings are supported.
-+ **AWS CLI** and **AWS SDKs**: You must include your custom vocabulary as comma-separated entries within your API call using the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html#transcribe-CreateVocabulary-request-Phrases](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html#transcribe-CreateVocabulary-request-Phrases) flag.
++ **AWS CLI** and **AWS SDKs**: You must include your custom vocabulary as comma-separated entries within your API call using the [`Phrases`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html#transcribe-CreateVocabulary-request-Phrases) flag.
 
 If an entry contains multiple words, you must hyphenate each word. For example, you include 'Los Angeles' as **Los-Angeles** and 'Andorra la Vella' as **Andorra-la-Vella**.
 
@@ -33,7 +33,7 @@ Here are examples of the two valid list formats. Refer to [Creating custom vocab
 **Important**
 You can only use characters that are supported for your language. Refer to your language's [character set](charsets.md) for details.
 
-Custom vocabulary lists are not supported with the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateMedicalVocabulary.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateMedicalVocabulary.html) operation. If creating a custom medical vocabulary, you must use a table format; refer to [Creating a custom vocabulary using a table](custom-vocabulary-create-table.md) for instructions.
+Custom vocabulary lists are not supported with the [`CreateMedicalVocabulary`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateMedicalVocabulary.html) operation. If creating a custom medical vocabulary, you must use a table format; refer to [Creating a custom vocabulary using a table](custom-vocabulary-create-table.md) for instructions.
 
 ## Creating custom vocabulary lists
 <a name="custom-vocabulary-create-list-examples"></a>
@@ -43,7 +43,7 @@ To process a custom vocabulary list for use with Amazon Transcribe, see the foll
 ### AWS CLI
 <a name="vocab-create-list-cli"></a>
 
-This example uses the [create-vocabulary](https://docs.aws.amazon.com/cli/latest/reference/transcribe/create-vocabulary.html) command with a list-formatted custom vocabulary file. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html).
+This example uses the [create-vocabulary](https://docs.aws.amazon.com/cli/latest/reference/transcribe/create-vocabulary.html) command with a list-formatted custom vocabulary file. For more information, see [`CreateVocabulary`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html).
 
 ```
 aws transcribe create-vocabulary \
@@ -81,7 +81,7 @@ aws transcribe get-vocabulary \
 ### AWS SDK for Python (Boto3)
 <a name="vocab-create-list-python-batch"></a>
 
-This example uses the AWS SDK for Python (Boto3) to create a custom vocabulary from a list using the [create\_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary) method. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html).
+This example uses the AWS SDK for Python (Boto3) to create a custom vocabulary from a list using the [create\_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary) method. For more information, see [`CreateVocabulary`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html).
 
 For additional examples using the AWS SDKs, including feature-specific, scenario, and cross-service examples, refer to the [Code examples for Amazon Transcribe using AWS SDKs](service_code_examples.md) chapter.
 
@@ -109,4 +109,4 @@ print(status)
 ```
 
 **Note**
-If you create a new Amazon S3 bucket for your custom vocabulary files, make sure the IAM role making the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html) request has permissions to access this bucket. If the role doesn't have the correct permissions, your request fails. You can optionally specify an IAM role within your request by including the `DataAccessRoleArn` parameter. For more information on IAM roles and policies in Amazon Transcribe, see [Amazon Transcribe identity-based policy examples](security_iam_id-based-policy-examples.md).
+If you create a new Amazon S3 bucket for your custom vocabulary files, make sure the IAM role making the [`CreateVocabulary`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html) request has permissions to access this bucket. If the role doesn't have the correct permissions, your request fails. You can optionally specify an IAM role within your request by including the `DataAccessRoleArn` parameter. For more information on IAM roles and policies in Amazon Transcribe, see [Amazon Transcribe identity-based policy examples](security_iam_id-based-policy-examples.md).

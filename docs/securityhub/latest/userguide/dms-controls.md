@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the AWS Database Migration Service
 
 **Resource type:** `AWS::DMS::ReplicationInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/dms-replication-not-public.html](https://docs.aws.amazon.com/config/latest/developerguide/dms-replication-not-public.html)
+**AWS Config rule:** [dms-replication-not-public](https://docs.aws.amazon.com/config/latest/developerguide/dms-replication-not-public.html)
 
 **Schedule type:** Periodic
 
@@ -170,7 +170,7 @@ To add tags to a DMS replication subnet group, see [Tagging resources in AWS Dat
 
 **Resource type:** `AWS::DMS::ReplicationInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/dms-auto-minor-version-upgrade-check.html](https://docs.aws.amazon.com/config/latest/developerguide/dms-auto-minor-version-upgrade-check.html)
+**AWS Config rule:** [dms-auto-minor-version-upgrade-check](https://docs.aws.amazon.com/config/latest/developerguide/dms-auto-minor-version-upgrade-check.html)
 
 **Schedule type:** Change triggered
 
@@ -196,7 +196,7 @@ To enable automatic minor version upgrade on DMS replication instances, see [Mod
 
 **Resource type:** `AWS::DMS::ReplicationTask`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/dms-replication-task-targetdb-logging.html](https://docs.aws.amazon.com/config/latest/developerguide/dms-replication-task-targetdb-logging.html)
+**AWS Config rule:** [dms-replication-task-targetdb-logging](https://docs.aws.amazon.com/config/latest/developerguide/dms-replication-task-targetdb-logging.html)
 
 **Schedule type:** Change triggered
 
@@ -226,7 +226,7 @@ To enable logging for target database DMS replication tasks, see [Viewing and ma
 
 **Resource type:** `AWS::DMS::ReplicationTask`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/dms-replication-task-sourcedb-logging.html](https://docs.aws.amazon.com/config/latest/developerguide/dms-replication-task-sourcedb-logging.html)
+**AWS Config rule:** [dms-replication-task-sourcedb-logging](https://docs.aws.amazon.com/config/latest/developerguide/dms-replication-task-sourcedb-logging.html)
 
 **Schedule type:** Change triggered
 
@@ -256,7 +256,7 @@ To enable logging for source database DMS replication tasks, see [Viewing and ma
 
 **Resource type:** `AWS::DMS::Endpoint`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/dms-endpoint-ssl-configured.html](https://docs.aws.amazon.com/config/latest/developerguide/dms-endpoint-ssl-configured.html)
+**AWS Config rule:** [dms-endpoint-ssl-configured](https://docs.aws.amazon.com/config/latest/developerguide/dms-endpoint-ssl-configured.html)
 
 **Schedule type:** Change triggered
 
@@ -282,7 +282,7 @@ To add an SSL connection to a new or existing DMS endpoint, see [Using SSL with 
 
 **Resource type:** `AWS::DMS::Endpoint`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/dms-neptune-iam-authorization-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/dms-neptune-iam-authorization-enabled.html)
+**AWS Config rule:** [dms-neptune-iam-authorization-enabled](https://docs.aws.amazon.com/config/latest/developerguide/dms-neptune-iam-authorization-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -308,7 +308,7 @@ To enable IAM authorization on DMS endpoints for Neptune databases, see [Using A
 
 **Resource type:** `AWS::DMS::Endpoint`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/dms-mongo-db-authentication-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/dms-mongo-db-authentication-enabled.html)
+**AWS Config rule:** [dms-mongo-db-authentication-enabled](https://docs.aws.amazon.com/config/latest/developerguide/dms-mongo-db-authentication-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -334,7 +334,7 @@ To enable an authentication mechanism on DMS endpoints for MongoDB, see [Using M
 
 **Resource type:** `AWS::DMS::Endpoint`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/dms-redis-tls-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/dms-redis-tls-enabled.html)
+**AWS Config rule:** [dms-redis-tls-enabled](https://docs.aws.amazon.com/config/latest/developerguide/dms-redis-tls-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -358,7 +358,7 @@ To enable a TLS connection on DMS endpoints for Redis, see [Using Redis as a tar
 
 **Resource type:** `AWS::DMS::ReplicationInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/dms-replication-instance-multi-az-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/dms-replication-instance-multi-az-enabled.html)
+**AWS Config rule:** [dms-replication-instance-multi-az-enabled](https://docs.aws.amazon.com/config/latest/developerguide/dms-replication-instance-multi-az-enabled.html)
 
 **Schedule type:** Change triggered
 

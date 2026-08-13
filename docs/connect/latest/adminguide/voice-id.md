@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/voice-id.html
 <a name="voice-id"></a>
 
 **Note**
-End of support notice: On May 20, 2026, AWS will end support for Amazon Connect Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Amazon Connect console, access Voice ID features on the Connect Customer admin website or Contact Control Panel, or access Voice ID resources. For more information, visit [Amazon Connect Voice ID end of support](https://docs.aws.amazon.com/connect/latest/adminguide/amazonconnect-voiceid-end-of-support.html).
+End of support notice: On May 20, 2026, AWS will end support for Amazon Connect Customer Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Amazon Connect Customer console, access Voice ID features on the Connect Customer admin website or Contact Control Panel, or access Voice ID resources. For more information, visit [Amazon Connect Customer Voice ID end of support](https://docs.aws.amazon.com/connect/latest/adminguide/amazonconnect-voiceid-end-of-support.html).
 
 Connect Customer Voice ID provides real-time caller authentication and fraud risk detection which make voice interactions in contact centers more secure and efficient. Voice ID uses machine learning to verify the identity of genuine customers by analyzing a caller's unique voice characteristics. This allows contact centers to use an additional security layer that doesn't rely on the caller answering multiple security questions, and makes it easy to enroll and verify customers without changing the natural flow of their conversation. Voice ID also offers real-time detection of fraudsters who frequently target your contact center, thereby reducing losses due to fraud.
 

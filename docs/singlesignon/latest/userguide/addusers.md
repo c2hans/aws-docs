@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/addusers.h
 # Add users to your Identity Center directory
 <a name="addusers"></a>
 
-Users and groups that you create in your Identity Center directory are available in IAM Identity Center only. Use the following procedure to add users to your Identity Center directory. Alternatively, you can call the AWS API operation [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateUser.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateUser.html) to add users.
+Users and groups that you create in your Identity Center directory are available in IAM Identity Center only. Use the following procedure to add users to your Identity Center directory. Alternatively, you can call the AWS API operation [CreateUser](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateUser.html) to add users.
 
 ------
 #### [ Console ]
@@ -72,6 +72,6 @@ Output:
 ```
 
 **Note**
-When you create users with the `create-user` CLI command or the [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateUser.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateUser.html) API operation, the users do not have passwords. You can update the settings in IAM Identity Center to send these users a verification email after their first attempt to sign on so they can set up a password. If you do not enable this setting, you must generate a one-time password and share it with the user. For more information, see [Email one-time password to users created with API or CLI](userswithoutpwd.md).
+When you create users with the `create-user` CLI command or the [CreateUser](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateUser.html) API operation, the users do not have passwords. You can update the settings in IAM Identity Center to send these users a verification email after their first attempt to sign on so they can set up a password. If you do not enable this setting, you must generate a one-time password and share it with the user. For more information, see [Email one-time password to users created with API or CLI](userswithoutpwd.md).
 
 ------

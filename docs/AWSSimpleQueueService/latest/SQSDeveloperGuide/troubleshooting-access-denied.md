@@ -29,7 +29,7 @@ An error occurred (KMS.AccessDeniedException) when calling the SendMessage
 To verify if the requester has proper permissions to perform an Amazon SQS operation, do the following:
 + Identify the IAM principal that’s making the Amazon SQS API call. If the IAM principal is from the same account, then either the Amazon SQS queue policy or the AWS Identity and Access Management (IAM) policy must include permissions to explicitly allow access for the action.
 + If the principal is an IAM entity:
-  + You can identify your IAM user or role by checking the upper-right corner of the AWS Management Console, or by using the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sts/get-caller-identity.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sts/get-caller-identity.html) command.
+  + You can identify your IAM user or role by checking the upper-right corner of the AWS Management Console, or by using the [`aws sts get-caller-identity`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sts/get-caller-identity.html) command.
   + Check the IAM policies that are related to the IAM user or role. You can use one of the following methods:
     + Test IAM policies with the [IAM Policy Simulator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html).
     + Review the different [IAM policy types](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#access_policy-types).
@@ -45,7 +45,7 @@ An explicit deny in either policy overrides an explicit allow. Here are some bas
 ## AWS Key Management Service permissions
 <a name="kms-permissions"></a>
 
-If your Amazon SQS queue has [server-side encryption (SSE)](sqs-server-side-encryption.md) turned on with a customer managed AWS KMS key, then permissions must be granted to both producers and consumers. To confirm if a queue is encrypted, you can use the [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueAttributes.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueAttributes.html) API `KmsMasterKeyId` attribute, or from the queue console under **Encryption**.
+If your Amazon SQS queue has [server-side encryption (SSE)](sqs-server-side-encryption.md) turned on with a customer managed AWS KMS key, then permissions must be granted to both producers and consumers. To confirm if a queue is encrypted, you can use the [`GetQueueAttributes`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueAttributes.html) API `KmsMasterKeyId` attribute, or from the queue console under **Encryption**.
 + Required [permissions for producers](sqs-key-management.md#send-to-encrypted-queue):
 
   ```

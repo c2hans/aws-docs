@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 Name of the field.
 *Required*: No
 *Type*: String
-*Pattern*: `^[a-zA-Z0-9_-]+$`
+*Pattern*: `^[a-zA-Z0-9_.-]+$`
 *Minimum*: `1`
 *Maximum*: `64`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

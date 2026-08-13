@@ -12,6 +12,7 @@ The Catalog objects API describes the data types and API related to working with
 + [Business context APIs](aws-glue-api-catalog-aws-glue-api-semantics.md)
 + [Database API](aws-glue-api-catalog-databases.md)
 + [Table API](aws-glue-api-catalog-tables.md)
++ [Materialized view API](aws-glue-api-catalog-materialized-views.md)
 + [Partition API](aws-glue-api-catalog-partitions.md)
 + [Connections API](aws-glue-api-catalog-connections.md)
 + [User-defined Function API](aws-glue-api-catalog-functions.md)

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/getting-started-e
 # Getting started with AWS Batch on Amazon EKS Private Clusters
 <a name="getting-started-eks-privateclusters"></a>
 
-AWS Batch is a managed service that orchestrates batch workloads in your Amazon Elastic Kubernetes Service (Amazon EKS) clusters. This includes queuing, dependency tracking, managed job retries and priorities, pod management, and node scaling. This feature connects your existing private Amazon EKS cluster with AWS Batch to run your jobs at scale. You can use [https://eksctl.io/usage/eks-private-cluster/](https://eksctl.io/usage/eks-private-cluster/) (a command line interface for Amazon EKS), the AWS console, or the [AWS Command Line Interface](https://aws.amazon.com/cli/) to create a private Amazon EKS cluster with all the other necessary resources.
+AWS Batch is a managed service that orchestrates batch workloads in your Amazon Elastic Kubernetes Service (Amazon EKS) clusters. This includes queuing, dependency tracking, managed job retries and priorities, pod management, and node scaling. This feature connects your existing private Amazon EKS cluster with AWS Batch to run your jobs at scale. You can use [`eksctl`](https://eksctl.io/usage/eks-private-cluster/) (a command line interface for Amazon EKS), the AWS console, or the [AWS Command Line Interface](https://aws.amazon.com/cli/) to create a private Amazon EKS cluster with all the other necessary resources.
 
 [Amazon EKS private only clusters](https://docs.aws.amazon.com/eks/latest/userguide/cluster-endpoint.html#private-access) by default have no inbound/outbound internet access, and you can only access the API server from within your VPC or a connected network. Amazon VPC endpoints are used to enable private access to other AWS services. `eksctl` supports creating fully private clusters using a pre-existing Amazon VPC and subnets. `eksctl` also creates Amazon VPC endpoints in the supplied Amazon VPC and modifies route tables for the supplied subnets.
 
@@ -577,4 +577,4 @@ Unknown desc = failed to pull and unpack image
 "https://public.ecr.aws/v2/amazonlinux/amazonlinux/manifests/2": dial tcp: i/o timeout
 ```
 
-For other common troubleshooting scenarios, see [Troubleshooting AWS Batch](https://docs.aws.amazon.com/batch/latest/userguide/batch-eks-troubleshooting.html). For troubleshooting based on pod status, see [https://repost.aws/knowledge-center/eks-pod-status-troubleshooting](https://repost.aws/knowledge-center/eks-pod-status-troubleshooting).
+For other common troubleshooting scenarios, see [Troubleshooting AWS Batch](https://docs.aws.amazon.com/batch/latest/userguide/batch-eks-troubleshooting.html). For troubleshooting based on pod status, see [*How do I troubleshoot the pod status in Amazon EKS?*](https://repost.aws/knowledge-center/eks-pod-status-troubleshooting).

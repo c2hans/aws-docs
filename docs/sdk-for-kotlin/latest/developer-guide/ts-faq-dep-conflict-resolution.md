@@ -50,4 +50,4 @@ dependencies {
 }
 ```
 
-Alternatively, if you must use OkHttp 4.x, the SDK provides an `OkHttp4Engine`. See the [documentation](https://github.com/smithy-lang/smithy-kotlin/tree/main/runtime/protocol/http-client-engines/http-client-engine-okhttp4) for information on how to configure Gradle and use `OkHttp4Engine` in your code.
+Alternatively, if you must use OkHttp 4.x, the SDK provides an [`OkHttp4Engine`](/smithy-kotlin/api/latest/http-client-engine-okhttp4/aws.smithy.kotlin.runtime.http.engine.okhttp4/-ok-http4-engine/index.html). See the [documentation](https://github.com/smithy-lang/smithy-kotlin/tree/main/runtime/protocol/http-client-engines/http-client-engine-okhttp4) for information on how to configure Gradle and use [`OkHttp4Engine`](/smithy-kotlin/api/latest/http-client-engine-okhttp4/aws.smithy.kotlin.runtime.http.engine.okhttp4/-ok-http4-engine/index.html) in your code.

@@ -22,7 +22,7 @@ DELETE /clusters/{{name}}/addons/{{addonName}}?preserve={{preserve}} HTTP/1.1
 The request uses the following URI parameters.
 
  ** [addonName](#API_DeleteAddon_RequestSyntax) **   <a name="AmazonEKS-DeleteAddon-request-uri-addonName"></a>
-The name of the add-on. The name must match one of the names returned by [https://docs.aws.amazon.com/eks/latest/APIReference/API_ListAddons.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListAddons.html).
+The name of the add-on. The name must match one of the names returned by [`ListAddons`](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListAddons.html).
 Required: Yes
 
  ** [name](#API_DeleteAddon_RequestSyntax) **   <a name="AmazonEKS-DeleteAddon-request-uri-clusterName"></a>

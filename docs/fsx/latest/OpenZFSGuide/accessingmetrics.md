@@ -45,7 +45,7 @@ The following procedures show you how to access the metrics using these tools.
 <a name="cw-metrics-cli"></a>
 
 **To access metrics from the AWS CLI**
-+ Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/list-metrics.html](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/list-metrics.html) command with the `--namespace "AWS/FSx"` namespace. For more information, see the [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/).
++ Use the [`list-metrics`](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/list-metrics.html) command with the `--namespace "AWS/FSx"` namespace. For more information, see the [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/).
 
 ## Using the CloudWatch API
 <a name="cw-metrics-cw-api"></a>

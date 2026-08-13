@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/delete-customer-profiles-domain.html
 ---
 
-# Delete an Connect Customer Customer Profiles domain
+# Delete a Connect Customer Customer Profiles domain
 <a name="delete-customer-profiles-domain"></a>
 
 **Select your instance first**

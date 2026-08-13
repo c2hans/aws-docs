@@ -22,7 +22,7 @@ All events and logs from SageMaker HyperPod are saved to Amazon CloudWatch under
 
 You can access the LifecycleScript logs published to CloudWatch during cluster instance configuration. Every instance within the created cluster generates a separate log stream, distinguishable by the `LifecycleConfig/[instance-group-name]/[instance-id]` format.
 
-All logs that are written to `/var/log/provision/provisioning.log` are uploaded to the preceding CloudWatch stream. Sample LifecycleScripts at [https://github.com/aws-samples/awsome-distributed-training/tree/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts/base-config](https://github.com/aws-samples/awsome-distributed-training/tree/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts/base-config) redirect their `stdout` and `stderr` to this location. If you are using your custom scripts, write your logs to the `/var/log/provision/provisioning.log` location for them to be available in CloudWatch.
+All logs that are written to `/var/log/provision/provisioning.log` are uploaded to the preceding CloudWatch stream. Sample LifecycleScripts at [`1.architectures/5.sagemaker_hyperpods/LifecycleScripts/base-config`](https://github.com/aws-samples/awsome-distributed-training/tree/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts/base-config) redirect their `stdout` and `stderr` to this location. If you are using your custom scripts, write your logs to the `/var/log/provision/provisioning.log` location for them to be available in CloudWatch.
 
 **Lifecycle script log markers**
 
@@ -73,7 +73,7 @@ When you write a [CreateCluster](https://docs.aws.amazon.com/sagemaker/latest/AP
 
 **To tag a cluster**
 
-Use [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/add-tags.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/add-tags.html) as follows.
+Use [`aws sagemaker add-tags`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/add-tags.html) as follows.
 
 ```
 aws sagemaker add-tags --resource-arn {{cluster_ARN}} --tags Key={{string}},Value={{string}}
@@ -81,7 +81,7 @@ aws sagemaker add-tags --resource-arn {{cluster_ARN}} --tags Key={{string}},Valu
 
 **To untag a cluster**
 
-Use [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/delete-tags.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/delete-tags.html) as follows.
+Use [`aws sagemaker delete-tags`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/delete-tags.html) as follows.
 
 ```
 aws sagemaker delete-tags --resource-arn {{cluster_ARN}} --tag-keys {{"tag_key"}}
@@ -89,7 +89,7 @@ aws sagemaker delete-tags --resource-arn {{cluster_ARN}} --tag-keys {{"tag_key"}
 
 **To list tags for a resource**
 
-Use [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/list-tags.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/list-tags.html) as follows.
+Use [`aws sagemaker list-tags`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/list-tags.html) as follows.
 
 ```
 aws sagemaker list-tags --resource-arn {{cluster_ARN}}

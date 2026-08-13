@@ -250,7 +250,7 @@ You might choose to manually associate or update a package version to the thing�
 **Note**
 We recommend you use AWS IoT Jobs to update the package version in the reserved named shadow (`$package`). Updating the version parameter in the `$package` shadow through other processes (such as, manual or programmatic API calls) when AWS IoT Jobs is also configured to update the shadow, can cause inconsistencies between the actual version on device and version reported to the reserved named shadow.
 
-You can add or update a package version to a thing’s reserved named shadow (`$package`) through the console or the [https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_UpdateThingShadow.html](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_UpdateThingShadow.html) API operation. For more information, see [Associating a package version to an AWS IoT thing](https://docs.aws.amazon.com/iot/latest/developerguide/associating-package-version.html).
+You can add or update a package version to a thing’s reserved named shadow (`$package`) through the console or the [`UpdateThingShadow`](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_UpdateThingShadow.html) API operation. For more information, see [Associating a package version to an AWS IoT thing](https://docs.aws.amazon.com/iot/latest/developerguide/associating-package-version.html).
 
 **Note**
 Associating a package version to an AWS IoT thing doesn’t directly update the device software. You must deploy the package version to the device to update the device software.

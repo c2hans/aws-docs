@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/go.html
 # Go in AL2
 <a name="go"></a>
 
- You might want to build your own code written in [https://go.dev/](https://go.dev/) on Amazon Linux using a toolchain provided with AL2.
+ You might want to build your own code written in [Go](https://go.dev/) on Amazon Linux using a toolchain provided with AL2.
 
  The Go toolchain will be updated throughout the life of AL2. This might be in response to any CVE in the toolchain we ship, or as a prerequisite of addressing a CVE in another package.
 

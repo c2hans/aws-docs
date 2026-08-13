@@ -7,12 +7,12 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/paginating.html
 
 Many AWS operations return truncated results when the payload is too large to return in a single response. Instead, the service returns a portion of the data and a token to retrieve the next set of items. This pattern is known as pagination.
 
-The AWS SDK for Rust includes extension methods `into_paginator` on operation builders that can be used to automatically paginate the results for you. You only have to write the code that processes the results. All pagination operation builders have an `into_paginator()` method available that exposes a [https://docs.rs/aws-smithy-async/latest/aws_smithy_async/future/pagination_stream/struct.PaginationStream.html](https://docs.rs/aws-smithy-async/latest/aws_smithy_async/future/pagination_stream/struct.PaginationStream.html) to paginate over the results.
-+ In Amazon S3, one example of this is [https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/operation/list_objects_v2/builders/struct.ListObjectsV2FluentBuilder.html#method.into_paginator](https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/operation/list_objects_v2/builders/struct.ListObjectsV2FluentBuilder.html#method.into_paginator).
+The AWS SDK for Rust includes extension methods `into_paginator` on operation builders that can be used to automatically paginate the results for you. You only have to write the code that processes the results. All pagination operation builders have an `into_paginator()` method available that exposes a [`PaginationStream<Item>`](https://docs.rs/aws-smithy-async/latest/aws_smithy_async/future/pagination_stream/struct.PaginationStream.html) to paginate over the results.
++ In Amazon S3, one example of this is [`aws_sdk_s3::operation::list_objects_v2::builders::ListObjectsV2FluentBuilder::into_paginator`](https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/operation/list_objects_v2/builders/struct.ListObjectsV2FluentBuilder.html#method.into_paginator).
 
 The following examples use Amazon Simple Storage Service. However, the concepts are the same for any service that has one or more paginated APIs.
 
- The following code example shows the simplest example that uses the [https://docs.rs/aws-smithy-async/latest/aws_smithy_async/future/pagination_stream/struct.PaginationStream.html#method.try_collect](https://docs.rs/aws-smithy-async/latest/aws_smithy_async/future/pagination_stream/struct.PaginationStream.html#method.try_collect) method to collect all paginated results into a `Vec`:
+ The following code example shows the simplest example that uses the [`try_collect()`](https://docs.rs/aws-smithy-async/latest/aws_smithy_async/future/pagination_stream/struct.PaginationStream.html#method.try_collect) method to collect all paginated results into a `Vec`:
 
 ```
 let config = aws_config::defaults(BehaviorVersion::latest())

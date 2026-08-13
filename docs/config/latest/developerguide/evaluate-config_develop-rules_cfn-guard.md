@@ -59,7 +59,7 @@ You can create AWS Config Custom Policy rules from the AWS Management Console, A
 ------
 #### [ Using the AWS CLI ]
 
-Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/put-config-rule.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-config-rule.html) command.
+Use the [`put-config-rule`](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-config-rule.html) command.
 
 The `Owner` field should be `CUSTOM_POLICY`. The following additional fields are required for AWS Config Custom Policy rules:
 + `Runtime`: The runtime system for your AWS Config Custom Policy rules.

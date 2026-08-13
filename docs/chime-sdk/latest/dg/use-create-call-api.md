@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/use-create-call-api.
 # Making an outbound call for using Amazon Chime SDK PSTN audio service
 <a name="use-create-call-api"></a>
 
-To create an outbound call, you use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateSipMediaApplicationCall.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateSipMediaApplicationCall.html) API. The API invokes the endpoint of a specified `SIP media application ID`. Customers can control the flow of the call by giving different signaling and [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_SipMediaApplication.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_SipMediaApplication.html) actions from the endpoint.
+To create an outbound call, you use the [CreateSipMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateSipMediaApplicationCall.html) API. The API invokes the endpoint of a specified `SIP media application ID`. Customers can control the flow of the call by giving different signaling and [SipMediaApplication](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_SipMediaApplication.html) actions from the endpoint.
 
-In the event of a successful response, the API returns a 202 http status code along with a transactionId, which you can use with the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateSipMediaApplicationCall.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateSipMediaApplicationCall.html) API to update an in-progress call.
+In the event of a successful response, the API returns a 202 http status code along with a transactionId, which you can use with the [UpdateSipMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateSipMediaApplicationCall.html) API to update an in-progress call.
 
 The following diagram shows the invocations made to the AWS Lambda function endpoint for an outbound call.
 

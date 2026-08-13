@@ -20,8 +20,8 @@ You might want to delete a human review workflow for any of the following reason
 
 After you delete a human review workflow, the following changes occur:
 + The human review workflow no longer appears on the **Human review workflows** page in the Augmented AI area of the Amazon SageMaker AI console.
-+ When you use the human review workflow name as input to the API operations [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFlowDefinition.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFlowDefinition.html) or [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteFlowDefinition.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteFlowDefinition.html), Augmented AI returns a `ResourceNotFound` error.
-+ When you use [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListFlowDefinitions.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListFlowDefinitions.html), deleted human review workflows aren't included in the results.
++ When you use the human review workflow name as input to the API operations [`DescribeFlowDefinition`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFlowDefinition.html) or [`DeleteFlowDefinition`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteFlowDefinition.html), Augmented AI returns a `ResourceNotFound` error.
++ When you use [`ListFlowDefinitions`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListFlowDefinitions.html), deleted human review workflows aren't included in the results.
 + When you use the human review workflow ARN as input to the Augmented AI Runtime API operation `[ListHumanLoops](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_ListHumanLoops.html)`, Augmented AI returns a `ResourceNotFoundException`.
 
 ## Delete a Flow Definition Using the Console or the SageMaker API

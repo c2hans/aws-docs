@@ -67,7 +67,7 @@ plugin setup
 ## Set up AWS configurations
 <a name="cli-plugin-setup-aws-config"></a>
 
-1. Run [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/configure/index.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/configure/index.html) to create a profile. For more information, see [Setting up the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html).
+1. Run [aws configure](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/configure/index.html) to create a profile. For more information, see [Setting up the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html).
 
 1. Run the `plugin setup --aws-configurations` command.
 

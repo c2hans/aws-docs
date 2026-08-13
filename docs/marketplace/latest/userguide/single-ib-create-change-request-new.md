@@ -27,7 +27,7 @@ To make modifications to versions or the product information, you create a *chan
 
 **To create a change request using self-service**
 
-1. Open the AWS Marketplace Management Portal at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home), and sign in to your seller account, then go to the [https://aws.amazon.com/marketplace/management/products/server](https://aws.amazon.com/marketplace/management/products/server) page.
+1. Open the AWS Marketplace Management Portal at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home), and sign in to your seller account, then go to the [**Server products**](https://aws.amazon.com/marketplace/management/products/server) page.
 
 1. On the **Server products** tab, select the product that you want to modify.
 
@@ -48,7 +48,7 @@ To make modifications to versions or the product information, you create a *chan
 
 **To create a change request**
 
-1. Open the AWS Marketplace Management Portal at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home), and sign in to your seller account, then go to the [https://aws.amazon.com/marketplace/management/products/server](https://aws.amazon.com/marketplace/management/products/server) page.
+1. Open the AWS Marketplace Management Portal at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home), and sign in to your seller account, then go to the [**Server products**](https://aws.amazon.com/marketplace/management/products/server) page.
 
 1. On the **Server products** tab, select the product that you want to modify.
 
@@ -64,7 +64,7 @@ For more information about the status of a change request, see [Get the status o
 **Important**
 On June 15, 2023, AWS Marketplace will discontinue the following procedure. This procedure is no longer needed for the self-service experience.
 
-After you submit a change request, you can see the status of your request from the **Requests** tab of the [https://aws.amazon.com/marketplace/management/products/server](https://aws.amazon.com/marketplace/management/products/server) page of the AWS Marketplace Management Portal. The status could be any of the following:
+After you submit a change request, you can see the status of your request from the **Requests** tab of the [**Server products**](https://aws.amazon.com/marketplace/management/products/server) page of the AWS Marketplace Management Portal. The status could be any of the following:
 + **Under review** means that your request is being reviewed. Some requests require manual review by the AWS Marketplace team but most are reviewed automatically in the system.
 + **Succeeded** means that your request is complete. Your product or version has been updated as you requested.
 + **Action required** means that you need to update your request to fix an issue or answer a question about the request. Select the request to see the details, including any issues.

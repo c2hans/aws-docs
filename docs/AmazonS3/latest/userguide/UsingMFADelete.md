@@ -34,7 +34,7 @@ To delete an object in a versioning-enabled bucket that is MFA delete enabled, u
 
 The following example deletes `my-image.jpg` (with the specified version), which is in a bucket configured with MFA delete enabled.
 
-For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectDELETE.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectDELETE.html) in the Amazon Simple Storage Service API Reference
+For more information, see [DeleteObject](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectDELETE.html) in the Amazon Simple Storage Service API Reference
 
 ```
 1. DELETE /my-image.jpg?versionId=3HL4kqCxf3vjVBH40Nrjfkd HTTPS/1.1

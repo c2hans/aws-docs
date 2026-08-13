@@ -72,7 +72,7 @@ Programming elements:
   Class [AmazonEC2Client](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/EC2/TEC2Client.html)
 + Namespace [Amazon.EC2.Model](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/EC2/NEC2Model.html)
 
-  Class [https://docs.aws.amazon.com/sdkfornet/v3/apidocs/](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/)
+  Class [[DeleteKeyPairRequest](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/EC2/TDeleteKeyPairRequest.html)](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/)
 
   Class [DescribeKeyPairsResponse](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/EC2/TDescribeKeyPairsResponse.html)
 

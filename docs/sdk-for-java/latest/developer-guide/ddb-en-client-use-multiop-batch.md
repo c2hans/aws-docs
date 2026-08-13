@@ -10,7 +10,7 @@ The DynamoDB Enhanced Client API offers two batch methods, [`batchGetItem`()](ht
 ## `batchGetItem()` example
 <a name="ddb-en-client-use-multiop-batch-get"></a>
 
-With the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/DynamoDbEnhancedClient.html#batchGetItem(java.util.function.Consumer)](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/DynamoDbEnhancedClient.html#batchGetItem(java.util.function.Consumer)) method, you can retrieve up to 100 individual items across multiple tables in one overall request. The following example uses the [`Customer`](ddb-en-client-gs-tableschema.md#ddb-en-client-gs-tableschema-anno-bean-cust) and [`MovieActor`](ddb-en-client-use-multirecord.md#ddb-en-client-use-movieactor-class) data classes shown previously.
+With the [`DynamoDbEnhancedClient.batchGetItem()`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/DynamoDbEnhancedClient.html#batchGetItem(java.util.function.Consumer)) method, you can retrieve up to 100 individual items across multiple tables in one overall request. The following example uses the [`Customer`](ddb-en-client-gs-tableschema.md#ddb-en-client-gs-tableschema-anno-bean-cust) and [`MovieActor`](ddb-en-client-use-multirecord.md#ddb-en-client-use-movieactor-class) data classes shown previously.
 
 In the example after lines 1 and 2, you build `[ReadBatch](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/ReadBatch.html)` objects that you later add as parameters to the `batchGetItem()` method after comment line 3.
 

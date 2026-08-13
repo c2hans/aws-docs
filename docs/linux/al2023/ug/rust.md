@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/rust.html
 # Rust in AL2023
 <a name="rust"></a>
 
- You might want to build code written in [https://www.rust-lang.org/](https://www.rust-lang.org/) on Amazon Linux, and might want to use a toolchain provided with AL2023.
+ You might want to build code written in [Rust](https://www.rust-lang.org/) on Amazon Linux, and might want to use a toolchain provided with AL2023.
 
  Similar to AL2, AL2023 will update the Rust toolchain throughout the life of the operating system. This might be in response to any CVE in the toolchain we ship, or as part of a quarterly release.
 

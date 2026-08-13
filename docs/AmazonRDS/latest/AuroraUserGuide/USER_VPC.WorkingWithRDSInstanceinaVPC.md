@@ -264,13 +264,13 @@ The following DB engine versions support dual-stack network DB clusters:
   + 3.02 and higher 3 versions
   + 2.09.1 and higher 2 versions
 
-  For more information about Aurora MySQL versions, see the [https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/Welcome.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/Welcome.html).
+  For more information about Aurora MySQL versions, see the [*Release Notes for Aurora MySQL*](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/Welcome.html).
 + Aurora PostgreSQL versions:
   + 15.2 and all higher versions
   + 14.3 and higher 14 versions
   + 13.7 and higher 13 versions
 
-  For more information about Aurora PostgreSQL versions, see the [https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/Welcome.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/Welcome.html).
+  For more information about Aurora PostgreSQL versions, see the [*Release Notes for Aurora PostgreSQL*](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/Welcome.html).
 
 #### Limitations for dual-stack network DB clusters
 <a name="USER_VPC.IP_addressing.dual-stack-limitations"></a>

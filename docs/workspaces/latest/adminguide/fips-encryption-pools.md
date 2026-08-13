@@ -16,7 +16,7 @@ To use the **FIPS 140-2 Validated Mode** setting, ensure the following:
 The WorkSpaces Pools directory is either:
  New and not associated with a Pool
 Associated with an existing Pool that is in the STOPPED state
-The Pool directory has [https://docs.aws.amazon.com/workspaces/latest/api/API_ModifyStreamingProperties.html](https://docs.aws.amazon.com/workspaces/latest/api/API_ModifyStreamingProperties.html) set to TCP.
+The Pool directory has [`StreamingExperiencePreferredProtocol`](https://docs.aws.amazon.com/workspaces/latest/api/API_ModifyStreamingProperties.html) set to TCP.
 + You must create your WorkSpaces Pools in a [US AWS Region that has FedRAMP authorization or is DoD SRG-compliant](https://aws.amazon.com/compliance/services-in-scope/).
 + Users must access their WorkSpaces from one of the following WorkSpaces client applications:
   + macOS: 5.20.0 or later

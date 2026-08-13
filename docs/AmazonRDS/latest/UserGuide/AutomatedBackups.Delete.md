@@ -29,9 +29,9 @@ Delete replicated backups in the destination Region from the **Automated backups
 ## AWS CLI
 <a name="AutomatedBackups.Delete.CLI"></a>
 
-Delete replicated backups by using the [https://docs.aws.amazon.com/cli/latest/reference/rds/delete-db-instance-automated-backup.html](https://docs.aws.amazon.com/cli/latest/reference/rds/delete-db-instance-automated-backup.html) AWS CLI command.
+Delete replicated backups by using the [`delete-db-instance-automated-backup`](https://docs.aws.amazon.com/cli/latest/reference/rds/delete-db-instance-automated-backup.html) AWS CLI command.
 
-You can use the [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html) CLI command to find the Amazon Resource Names (ARNs) of the replicated backups. For more information, see [Finding information about replicated backups for Amazon RDS](AutomatedBackups.Replicating.Describe.md).
+You can use the [`describe-db-instances`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html) CLI command to find the Amazon Resource Names (ARNs) of the replicated backups. For more information, see [Finding information about replicated backups for Amazon RDS](AutomatedBackups.Replicating.Describe.md).
 
 **To delete replicated backups**
 + Run one of the following commands.
@@ -53,4 +53,4 @@ You can use the [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-d
 ## RDS API
 <a name="AutomatedBackups.Delete.API"></a>
 
-Delete replicated backups by using the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteDBInstanceAutomatedBackup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteDBInstanceAutomatedBackup.html) RDS API operation with the `DBInstanceAutomatedBackupsArn` parameter.
+Delete replicated backups by using the [`DeleteDBInstanceAutomatedBackup`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteDBInstanceAutomatedBackup.html) RDS API operation with the `DBInstanceAutomatedBackupsArn` parameter.

@@ -27,7 +27,7 @@ Before you begin:
 **Note**
 Connections only provide access for the account that was used to create and authorize the connection.
 **Note**
-You can create connections to a repository where you have the **Owner** role in GitLab, and then the connection can be used with with resources such as CodePipeline. For repositories in groups, you do not need to be the group owner.
+You can create connections to a repository where you have the **Owner** role in GitLab, and then the connection can be used with resources such as CodePipeline. For repositories in groups, you do not need to be the group owner.
 + You must have already created a GitLab personal access token (PAT) with the following scoped-down permission only: api. For more information, see [https://docs.gitlab.com/ee/user/profile/personal\_access\_tokens.html](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html). You must be an administrator to create and use the PAT.
 **Note**
 Your PAT is used to authorize the host and is not otherwise stored or used by connections. To set up a host, you can create a temporary PAT and then after you set up the host, you can delete the PAT.
@@ -40,7 +40,7 @@ Your PAT is used to authorize the host and is not otherwise stored or used by co
 ## Create a connection to GitLab self-managed (console)
 <a name="connections-gitlab-managed-console"></a>
 
-Use these steps to use the CodePipeline console to add a connections action for your GitLab self-managedr repository.
+Use these steps to use the CodePipeline console to add a connections action for your GitLab self-managed repository.
 
 **Note**
 GitLab self-managed connections only provide access to repositories owned by the GitLab self-managed account that was used to create the connection.
@@ -103,7 +103,7 @@ Use these steps on the wizard or **Edit action** page to save your source action
 
 1. In **Repository name**, choose the name of your third-party repository.
 
-1. Under **Pipeline triggers** you can add triggers if your action is an CodeConnections action. To configure the pipeline trigger configuration and to optionally filter with triggers, see more details in [Add trigger with code push or pull request event types](pipelines-filter.md).
+1. Under **Pipeline triggers** you can add triggers if your action is a CodeConnections action. To configure the pipeline trigger configuration and to optionally filter with triggers, see more details in [Add trigger with code push or pull request event types](pipelines-filter.md).
 
 1. In **Output artifact format**, you must choose the format for your artifacts.
    + To store output artifacts from the GitLab self-managed action using the default method, choose **CodePipeline default**. The action accesses the files from the repository and stores the artifacts in a ZIP file in the pipeline artifact store.

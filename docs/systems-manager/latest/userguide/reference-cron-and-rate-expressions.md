@@ -79,7 +79,7 @@ This section includes examples of cron and rate expressions for State Manager as
 + Associations support the following cron expressions: Every 1/2, 1, 2, 4, 8, or 12 hours; every day, every week, or every specified day and time of the week; a specific day in a specific week of the month, or the last `x` day of the month at a specific time.
 + Associations support the following rate expressions: intervals of 30 minutes or greater and less than 31 days.
 + If you specify the optional `Seconds` field, its value can be 0 (zero). For example: `cron(0 */30 * * * ? *)`
-+ For an association that collects metadata for Inventory, a tool in AWS Systems Manager, we recommend using a rate expression.
++ For an association that collects metadata for Inventory, we recommend using a rate expression.
 + State Manager doesn't currently support specifying months in cron expressions for associations.
 
 Associations support cron expressions that include a day of the week and the number sign (\#) to designate the *n*th day of a month to run an association. Here is an example that runs a cron schedule on the third Tuesday of every month at 23:30 UTC:

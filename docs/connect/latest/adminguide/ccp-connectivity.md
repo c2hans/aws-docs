@@ -14,7 +14,7 @@ If you see the **Session expired** message while logging in, you probably just n
 + When an outbound call is placed, the event signal is sent to the Amazon EC2 endpoint, which then communicates with Connect Customer to place the call. Upon a successful dial attempt, the agent is bridged in, which anchors the call to the agent's Connect Customer endpoint. Any external transfers or conferences also uses the anchor until the call is disconnected. Anchoring can help reduce PSTN latency.
 
 **Inbound calls**
-+ When an inbound call is received, the call is anchored to an Connect Customer endpoint. Any external transfers or conferences also use this anchor until the call is disconnected.
++ When an inbound call is received, the call is anchored to a Connect Customer endpoint. Any external transfers or conferences also use this anchor until the call is disconnected.
 + When an agent is available, the call is pushed through using a new Amazon EC2 connection to their browser and offered to the agent.
 + When the agent accepts the call and either the external device has been answered or the CCP determines it can receive a call, a connection to Connect Customer is established for call media to the agent.
 

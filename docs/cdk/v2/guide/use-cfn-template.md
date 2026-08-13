@@ -7,14 +7,14 @@ This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on 
 # Import an existing AWS CloudFormation template
 <a name="use-cfn-template"></a>
 
-Import resources from an AWS CloudFormation template into your AWS Cloud Development Kit (AWS CDK) applications by using the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include-readme.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include-readme.html) construct to convert resources to L1 constructs.
+Import resources from an AWS CloudFormation template into your AWS Cloud Development Kit (AWS CDK) applications by using the [`cloudformation-include.CfnInclude`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include-readme.html) construct to convert resources to L1 constructs.
 
 After import, you can work with these resources in your app in the same way that you would if they were originally defined in AWS CDK code. You can also use these L1 constructs within higher-level AWS CDK constructs. For example, this can let you use the L2 permission grant methods with the resources they define.
 
 The `cloudformation-include.CfnInclude` construct essentially adds an AWS CDK API wrapper to any resource in your AWS CloudFormation template. Use this capability to import your existing AWS CloudFormation templates to the AWS CDK a piece at a time. By doing this, you can manage your existing resources using AWS CDK constructs to utilize the benefits of higher-level abstractions. You can also use this feature to vend your AWS CloudFormation templates to AWS CDK developers by providing an AWS CDK construct API.
 
 **Note**
- AWS CDK v1 also included [https://docs.aws.amazon.com/cdk/api/latest/docs/aws-cdk-lib.CfnInclude.html](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-cdk-lib.CfnInclude.html), which was previously used for the same general purpose. However, it lacks much of the functionality of `cloudformation-include.CfnInclude`.
+ AWS CDK v1 also included [`aws-cdk-lib.CfnInclude`](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-cdk-lib.CfnInclude.html), which was previously used for the same general purpose. However, it lacks much of the functionality of `cloudformation-include.CfnInclude`.
 
 ## Import an AWS CloudFormation template
 <a name="use-cfn-template-import"></a>
@@ -236,7 +236,7 @@ After you import an AWS CloudFormation template, the AWS CDK app should become t
 ## Access imported resources
 <a name="use-cfn-template-cfninclude-access"></a>
 
-The name `template` in the example code represents the imported AWS CloudFormation template. To access a resource from it, use the object’s [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrresourcelogicalid](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrresourcelogicalid) method. To access the returned resource as a specific kind of resource, cast the result to the desired type. This isn’t necessary in Python or JavaScript. The following is an example:
+The name `template` in the example code represents the imported AWS CloudFormation template. To access a resource from it, use the object’s [`getResource()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrresourcelogicalid) method. To access the returned resource as a specific kind of resource, cast the result to the desired type. This isn’t necessary in Python or JavaScript. The following is an example:
 
 **Example**
 
@@ -260,9 +260,9 @@ CfnBucket cfnBucket = (CfnBucket)template.getResource("amzn-s3-demo-bucket");
 var cfnBucket = (CfnBucket)template.GetResource("amzn-s3-demo-bucket");
 ```
 
-From this example, `cfnBucket` is now an instance of the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html) class. This is an L1 construct that represents the corresponding AWS CloudFormation resource. You can treat it like any other resource of its type. For example, you can get its ARN value with the `bucket.attrArn` property.
+From this example, `cfnBucket` is now an instance of the [`aws-s3.CfnBucket`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html) class. This is an L1 construct that represents the corresponding AWS CloudFormation resource. You can treat it like any other resource of its type. For example, you can get its ARN value with the `bucket.attrArn` property.
 
-To wrap the L1 `CfnBucket` resource in an L2 [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html) instance instead, use the static methods [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html#static-fromwbrbucketwbrarnscope-id-bucketarn](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html#static-fromwbrbucketwbrarnscope-id-bucketarn), [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html#static-fromwbrbucketwbrattributesscope-id-attrs](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html#static-fromwbrbucketwbrattributesscope-id-attrs), or [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html#static-fromwbrbucketwbrnamescope-id-bucketname](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html#static-fromwbrbucketwbrnamescope-id-bucketname). Usually, the `fromBucketName()` method is most convenient. The following is an example:
+To wrap the L1 `CfnBucket` resource in an L2 [`aws-s3.CfnBucket`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html) instance instead, use the static methods [`fromBucketArn()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html#static-fromwbrbucketwbrarnscope-id-bucketarn), [`fromBucketAttributes()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html#static-fromwbrbucketwbrattributesscope-id-attrs), or [`fromBucketName()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html#static-fromwbrbucketwbrnamescope-id-bucketname). Usually, the `fromBucketName()` method is most convenient. The following is an example:
 
 **Example**
 
@@ -290,7 +290,7 @@ Other L2 constructs have similar methods for creating the construct from an exis
 
 When you wrap an L1 construct in an L2 construct, it doesn’t create a new resource. From our example, we are not creating a second S3; bucket. Instead, the new `Bucket` instance encapsulates the existing `CfnBucket`.
 
-From the example, the `bucket` is now an L2 `Bucket` construct that behaves like any other L2 construct. For example, you can grant an AWS Lambda function write access to the bucket by using the bucket’s convenient [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html#grantwbrwriteidentity-objectskeypattern](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html#grantwbrwriteidentity-objectskeypattern) method. You don’t have to define the necessary AWS Identity and Access Management (IAM) policy manually. The following is an example:
+From the example, the `bucket` is now an L2 `Bucket` construct that behaves like any other L2 construct. For example, you can grant an AWS Lambda function write access to the bucket by using the bucket’s convenient [`grantWrite()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html#grantwbrwriteidentity-objectskeypattern) method. You don’t have to define the necessary AWS Identity and Access Management (IAM) policy manually. The following is an example:
 
 **Example**
 
@@ -369,12 +369,12 @@ var template = new cfnInc.CfnInclude(this, "Template", new cfnInc.CfnIncludeProp
 <a name="use-cfn-template-cfninclude-other"></a>
 
 You can import any AWS CloudFormation template element, not just resources. The imported elements become a part of the AWS CDK stack. To import these elements, use the following methods of the `CfnInclude` object:
-+  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrconditionconditionname](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrconditionconditionname) – AWS CloudFormation [conditions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html).
-+  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrhookhooklogicalid](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrhookhooklogicalid) – AWS CloudFormation [hooks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/blue-green.html) for blue/green deployments.
-+  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrmappingmappingname](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrmappingmappingname) – AWS CloudFormation [mappings](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html).
-+  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbroutputlogicalid](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbroutputlogicalid) – AWS CloudFormation [outputs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html).
-+  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrparameterparametername](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrparameterparametername) – AWS CloudFormation [parameters](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html).
-+  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrrulerulename](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrrulerulename) – AWS CloudFormation [rules](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/reference-template_constraint_rules.html) for AWS Service Catalog templates.
++  [`getCondition()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrconditionconditionname) – AWS CloudFormation [conditions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html).
++  [`getHook()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrhookhooklogicalid) – AWS CloudFormation [hooks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/blue-green.html) for blue/green deployments.
++  [`getMapping()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrmappingmappingname) – AWS CloudFormation [mappings](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html).
++  [`getOutput()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbroutputlogicalid) – AWS CloudFormation [outputs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html).
++  [`getParameter()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrparameterparametername) – AWS CloudFormation [parameters](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html).
++  [`getRule()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrrulerulename) – AWS CloudFormation [rules](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/reference-template_constraint_rules.html) for AWS Service Catalog templates.
 
 Each of these methods return an instance of a class that represents the specific type of AWS CloudFormation element. These objects are mutable. Changes that you make to them will appear in the template that gets generated from the AWS CDK stack. The following is an example that imports a parameter from the template and modifies its default value:
 
@@ -503,7 +503,7 @@ var nestedTemplate = mainTemplate.LoadNestedStack("NestedTemplate", new cfnInc.C
 
 You can import multiple nested stacks with either methods. When importing the main template, you provide a mapping between the resource name of each nested stack and its template file. This mapping can contain any number of entries. To do it after the initial import, call `loadNestedStack()` once for each nested stack.
 
-After importing a nested stack, you can access it using the main template’s [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrnestedwbrstacklogicalid](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrnestedwbrstacklogicalid) method.
+After importing a nested stack, you can access it using the main template’s [`getNestedStack()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrnestedwbrstacklogicalid) method.
 
 **Example**
 
@@ -527,4 +527,4 @@ NestedStack nestedStack = mainTemplate.getNestedStack("NestedStack").getStack();
 var nestedStack = mainTemplate.GetNestedStack("NestedStack").Stack;
 ```
 
-The `getNestedStack()` method returns an [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrnestedwbrstacklogicalid](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrnestedwbrstacklogicalid) instance. From this instance, you can access the AWS CDK [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.NestedStack.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.NestedStack.html) instance via the `stack` property, as shown in the example. You can also access the original AWS CloudFormation template object via `includedTemplate`, from which you can load resources and other AWS CloudFormation elements.
+The `getNestedStack()` method returns an [`IncludedNestedStack`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include.CfnInclude.html#getwbrnestedwbrstacklogicalid) instance. From this instance, you can access the AWS CDK [`NestedStack`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.NestedStack.html) instance via the `stack` property, as shown in the example. You can also access the original AWS CloudFormation template object via `includedTemplate`, from which you can load resources and other AWS CloudFormation elements.

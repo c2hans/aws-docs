@@ -10,7 +10,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 **Note**
 The Google Calendar connector is in preview release and is subject to change.
 
-Google Calendar is an online calendar tool developed by Google. You can connect a Google Calendar instance to Amazon Q Business—using either the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q web experience.
+Google Calendar is an online calendar tool developed by Google. You can connect a Google Calendar instance to Amazon Q Business—using either the AWS Management Console or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q web experience.
 
 **Topics**
 + [Known limitations for the Google Calendar connector (Preview)](gcal-limitations.md)

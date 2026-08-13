@@ -24,7 +24,7 @@ The request uses the following URI parameters.
 
  ** [controlCatalogId](#API_ListControls_RequestSyntax) **   <a name="auditmanager-ListControls-request-uri-controlCatalogId"></a>
 A filter that narrows the list of controls to a specific resource from the AWS Control Catalog.
-To use this parameter, specify the ARN of the Control Catalog resource. You can specify either a control domain, a control objective, or a common control. For information about how to find the ARNs for these resources, see [https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListDomains.html](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListDomains.html), [https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListObjectives.html](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListObjectives.html), and [https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListCommonControls.html](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListCommonControls.html).
+To use this parameter, specify the ARN of the Control Catalog resource. You can specify either a control domain, a control objective, or a common control. For information about how to find the ARNs for these resources, see [`ListDomains`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListDomains.html), [`ListObjectives`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListObjectives.html), and [`ListCommonControls`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListCommonControls.html).
 You can only filter by one Control Catalog resource at a time. Specifying multiple resource ARNs isn’t currently supported. If you want to filter by more than one ARN, we recommend that you run the `ListControls` operation separately for each ARN.
 Alternatively, specify `UNCATEGORIZED` to list controls that aren't mapped to a Control Catalog resource. For example, this operation might return a list of custom controls that don't belong to any control domain or control objective.
 Length Constraints: Minimum length of 13. Maximum length of 2048.
@@ -158,7 +158,7 @@ This example shows how you can use the `ListControls` operation to return a filt
 
 **To retrieve a list of core controls**
 
-1. Use the [https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListDomains.html](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListDomains.html) operation to see the control domains that you can use as filters. Find the control domain that you want to use as a filter (*Asset management*), and take note of its ARN.
+1. Use the [`ListDomains`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListDomains.html) operation to see the control domains that you can use as filters. Find the control domain that you want to use as a filter (*Asset management*), and take note of its ARN.
 
 1. Use the `ListControls` operation and use the following attributes as filters:
    + Use `ControlType` and specify `Core` as the value.

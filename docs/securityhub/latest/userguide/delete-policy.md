@@ -39,7 +39,7 @@ Choose your preferred method, and follow the steps to delete a configuration pol
 
 **To delete a configuration policy**
 
-Invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeleteConfigurationPolicy.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeleteConfigurationPolicy.html) API from the Security Hub CSPM delegated administrator account in the home Region.
+Invoke the [DeleteConfigurationPolicy](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeleteConfigurationPolicy.html) API from the Security Hub CSPM delegated administrator account in the home Region.
 
 Provide the Amazon Resource Name (ARN) or ID of the configuration policy that you want to delete. If you receive a `ConflictException` error, the configuration policy still applies to accounts or OUs in your organization. To resolve the error, disassociate the configuration policy from these accounts or OUs before trying to delete it.
 
@@ -56,7 +56,7 @@ Provide the Amazon Resource Name (ARN) or ID of the configuration policy that yo
 
 **To delete a configuration policy**
 
-Run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/delete-configuration-policy.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/delete-configuration-policy.html) command from the Security Hub CSPM delegated administrator account in the home Region.
+Run the [delete-configuration-policy](https://docs.aws.amazon.com/cli/latest/reference/securityhub/delete-configuration-policy.html) command from the Security Hub CSPM delegated administrator account in the home Region.
 
  Provide the Amazon Resource Name (ARN) or ID of the configuration policy that you want to delete. If you receive a `ConflictException` error, the configuration policy still applies to accounts or OUs in your organization. To resolve the error, disassociate the configuration policy from these accounts or OUs before trying to delete it.
 

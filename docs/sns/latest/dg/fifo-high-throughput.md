@@ -41,7 +41,7 @@ Amazon SNS is optimized for uniform distribution of items across a FIFO topic's 
 ## Enable high throughput on your Amazon SNS FIFO topic
 <a name="enable-high-throughput-on-fifo-topic"></a>
 
-By default Amazon SNS FIFO topics are configured for topic-level deduplication, this is controlled by the topic attribute [https://docs.aws.amazon.com/sns/latest/api/API_CreateTopic.html](https://docs.aws.amazon.com/sns/latest/api/API_CreateTopic.html) set to `Topic` and have more restricted throughput quotas, see [Amazon SNS service quotas](https://docs.aws.amazon.com/general/latest/gr/sns.html) in the *Amazon Web Services General Reference*.
+By default Amazon SNS FIFO topics are configured for topic-level deduplication, this is controlled by the topic attribute [`FifoThroughputScope`](https://docs.aws.amazon.com/sns/latest/api/API_CreateTopic.html) set to `Topic` and have more restricted throughput quotas, see [Amazon SNS service quotas](https://docs.aws.amazon.com/general/latest/gr/sns.html) in the *Amazon Web Services General Reference*.
 
 To enable high throughput for your Amazon SNS FIFO topic, update the `FifoThroughputScope` attribute to `MessageGroup`. This change can be done through the console or using the AWS CLI and SDK, and can also be set during topic creation, which Amazon SNS recommends for the best customer experience and to reduce the chances of your topic being throttled.
 

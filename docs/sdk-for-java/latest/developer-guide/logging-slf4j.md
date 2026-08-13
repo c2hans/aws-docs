@@ -16,7 +16,7 @@ You typically use a configuration file, named`log4j2.xml` with Log4j 2. Example 
 
 The `log4j2.xml` file needs to be on the classpath when your application starts up. For a Maven project, put the file in the `<project-dir>/src/main/resources` directory.
 
-The `log4j2.xml` configuration file specifies properties such as [logging level](https://logging.apache.org/log4j/2.x/manual/configuration.html#Loggers), where logging output is sent (for example, [to a file or to the console](https://logging.apache.org/log4j/2.x/manual/appenders.html)), and the [format of the output](https://logging.apache.org/log4j/2.x/manual/layouts.html). The logging level specifies the level of detail that Log4j 2 outputs. Log4j 2 supports the concept of multiple logging [https://logging.apache.org/log4j/2.x/manual/architecture.html#](https://logging.apache.org/log4j/2.x/manual/architecture.html#). The logging level is set independently for each hierarchy. The main logging hierarchy that you use with the AWS SDK for Java 2.x is `software.amazon.awssdk`.
+The `log4j2.xml` configuration file specifies properties such as [logging level](https://logging.apache.org/log4j/2.x/manual/configuration.html#Loggers), where logging output is sent (for example, [to a file or to the console](https://logging.apache.org/log4j/2.x/manual/appenders.html)), and the [format of the output](https://logging.apache.org/log4j/2.x/manual/layouts.html). The logging level specifies the level of detail that Log4j 2 outputs. Log4j 2 supports the concept of multiple logging [*hierarchies*](https://logging.apache.org/log4j/2.x/manual/architecture.html#). The logging level is set independently for each hierarchy. The main logging hierarchy that you use with the AWS SDK for Java 2.x is `software.amazon.awssdk`.
 
 ## Add logging dependency
 <a name="sdk-java-logging-classpath"></a>
@@ -87,7 +87,7 @@ This configuration will log messages at the "ERROR" and "WARN" levels to the con
 ## Request/response summary logging
 <a name="sdk-java-logging-request-response"></a>
 
-Every request to an AWS service generates a unique AWS request ID that is useful if you run into an issue with how an AWS service is handling a request. AWS request IDs are accessible programmatically through [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/exception/SdkServiceException.html#requestId()](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/exception/SdkServiceException.html#requestId()) objects in the SDK for any failed service call, and can also be reported through the "DEBUG" log level of the "software.amazon.awssdk.request" logger.
+Every request to an AWS service generates a unique AWS request ID that is useful if you run into an issue with how an AWS service is handling a request. AWS request IDs are accessible programmatically through [`SdkServiceException`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/exception/SdkServiceException.html#requestId()) objects in the SDK for any failed service call, and can also be reported through the "DEBUG" log level of the "software.amazon.awssdk.request" logger.
 
 The following `log4j2.xml` file enables a summary of requests and responses.
 
@@ -367,9 +367,9 @@ If you have configured your service client to use an instance of an AWS CRT-base
 
 <table>
 <tbody>
-  <tr><td colspan="2"> Log to a file at "Debug" level </td></tr>
+  <tr><td colspan="2"> <b>Log to a file at "Debug" level</b> </td></tr>
   <tr><td>Using system properties:<pre>-Daws.crt.log.level=Trace <br />-Daws.crt.log.destination=File <br />-Daws.crt.log.filename=<path to file></pre></td><td>Programmatically:<pre>import software.amazon.awssdk.crt.Log;<br /><br />// Execute this statement before constructing the SDK service client.<br />Log.initLoggingToFile(Log.LogLevel.Trace, "<path to file>");</pre></td></tr>
-  <tr><td colspan="2"> Log to the console at "Debug" level </td></tr>
+  <tr><td colspan="2"> <b>Log to the console at "Debug" level</b> </td></tr>
   <tr><td>Using system properties:<pre>-Daws.crt.log.level=Trace <br />-Daws.crt.log.destination=Stdout</pre></td><td>Programmatically:<pre>import software.amazon.awssdk.crt.Log;<br /><br />// Execute this statement before constructing the SDK service client.<br />Log.initLoggingToStdout(Log.LogLevel.Trace);</pre></td></tr>
 </tbody>
 </table>

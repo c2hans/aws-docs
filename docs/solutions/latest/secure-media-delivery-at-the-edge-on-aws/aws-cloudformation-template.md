@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 
  You can download the CloudFormation template for this solution before deploying it.
 
-[https://s3.amazonaws.com/solutions-reference/secure-media-delivery-at-the-edge-on-aws/latest/secure-media-delivery-at-the-edge-on-aws.template](https://s3.amazonaws.com/solutions-reference/secure-media-delivery-at-the-edge-on-aws/latest/secure-media-delivery-at-the-edge-on-aws.template) **secure-media-delivery-at-the-edge-on-aws.template** - Use this template to launch the solution and all associated components. The default configuration deploys the core and supporting services found in the [AWS services in this solution](architecture-details.md#aws-services) section, but you can customize the template to meet your specific needs. Use the CDK deployment model if you want to deploy the auto session revocation module.
+[![Secure Media Delivery at the Edge on AWS template button](http://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/view-template.png)](https://s3.amazonaws.com/solutions-reference/secure-media-delivery-at-the-edge-on-aws/latest/secure-media-delivery-at-the-edge-on-aws.template) **secure-media-delivery-at-the-edge-on-aws.template** - Use this template to launch the solution and all associated components. The default configuration deploys the core and supporting services found in the [AWS services in this solution](architecture-details.md#aws-services) section, but you can customize the template to meet your specific needs. Use the CDK deployment model if you want to deploy the auto session revocation module.
 
 **Note**
  AWS CloudFormation resources are created from AWS CDK constructs.

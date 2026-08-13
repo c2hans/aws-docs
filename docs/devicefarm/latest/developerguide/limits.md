@@ -56,7 +56,7 @@ The following limits apply to all Appium endpoint sessions. For questions and gu
   + [getSessions](https://appium.io/docs/en/2.19/commands/base-driver/#getsessions)
 + The endpoint does not support the [WebDriver BiDi protocol](https://appium.io/docs/en/2.19/guides/caps/#bidi-protocol-support) at this time.
 + The endpoint does not support Appium Plugins or drivers other than the XCUITest and UIAutomator2 drivers.
-+ A maximum of 3 apps can be used as auxiliary apps with a remote access session creation request. That said, there is no limit on how many apps can be installed during a session using the [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_InstallToRemoteAccessSession.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_InstallToRemoteAccessSession.html) API.
++ A maximum of 3 apps can be used as auxiliary apps with a remote access session creation request. That said, there is no limit on how many apps can be installed during a session using the [`InstallToRemoteAccessSession`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_InstallToRemoteAccessSession.html) API.
 
 ## Custom environment variable limits
 <a name="custom-environment-variable-limits"></a>

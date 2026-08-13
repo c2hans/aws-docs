@@ -12,7 +12,7 @@ If you assign a Kinesis stream to an application, you can disable event streamin
 ## AWS CLI
 <a name="event-streams-disable-cli"></a>
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/pinpoint/delete-event-stream.html](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/delete-event-stream.html) command:
+Use the [`delete-event-stream`](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/delete-event-stream.html) command:
 
 ```
 aws pinpoint delete-event-stream --application-id {{application-id}}
@@ -21,7 +21,7 @@ aws pinpoint delete-event-stream --application-id {{application-id}}
 ## AWS SDK for Java
 <a name="event-streams-disable-java"></a>
 
-Use the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/pinpoint/model/DeleteEventStreamRequest.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/pinpoint/model/DeleteEventStreamRequest.html) method of the Amazon Pinpoint client:
+Use the [`deleteEventStream`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/pinpoint/model/DeleteEventStreamRequest.html) method of the Amazon Pinpoint client:
 
 ```
 pinClient.deleteEventStream(new DeleteEventStreamRequest().withApplicationId(appId));

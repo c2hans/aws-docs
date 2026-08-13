@@ -15,7 +15,7 @@ CodeBuild-hosted GitLab runners are supported for the `GITLAB` and `GITLAB_SELF_
 ## When should I include the image and instance overrides in the label?
 <a name="gitlab-runner-image-label"></a>
 
-You can include the image and instance overrides in the label in order to specify different build environment for each of your GitLab CI/CD pipeline jobs. This can be done without the need to create multiple CodeBuild projects or webhooks.
+You can include the image and instance overrides in the label in order to specify a different build environment for each of your GitLab CI/CD pipeline jobs. This can be done without the need to create multiple CodeBuild projects or webhooks.
 
 ## Can I use CloudFormation for this feature?
 <a name="gitlab-runner-cfn"></a>
@@ -37,7 +37,7 @@ If you need help setting up project credentials in your CloudFormation template,
 ## How can I mask secrets when using this feature?
 <a name="gitlab-runner-secrets"></a>
 
-By default, secrets that are printed in the log is not masked. If you would like to mask your secrets, you can do so by updating your CI/CD environment variable settings:
+By default, secrets that are printed in the log are not masked. If you would like to mask your secrets, you can do so by updating your CI/CD environment variable settings:
 
 **To mask secrets in GitLab**
 

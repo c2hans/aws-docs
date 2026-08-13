@@ -50,7 +50,7 @@ You can leverage the **Security Hub (essential and additional capabilities)** de
 
 1. Choose **Next**.
 
-1. Review your changes, and then choose **Apply**. Your target accounts are configured based on the policy. The configuration status of your policy will display at the top of the Policies page.
+1. Review your changes, and then choose **Apply**. Your target accounts are configured based on the policy. The configuration status of your policy displays at the top of the Policies page.
 
 **Disabling Amazon GuardDuty and AWS Security Hub CSPM**
 For GuardDuty and Security Hub CSPM capabilities, you must manually disable the capabilities from the respective delegated administrator accounts. GuardDuty and Security Hub CSPM use deployments (one-time actions) rather than policies, so disablement must be performed manually from their respective consoles.
@@ -68,7 +68,7 @@ If you have an existing Security Hub policy and want to disable Security Hub onl
 
 1. Choose any of your **Security Hub policies** from the **Configured policies**.
 
-1. Click **Edit policy** and in the **Account selection** section, select one of the following options. Choose **All organizational units and accounts** if you want to apply the disablement to all organizational units and accounts. Choose **Specific organizational units and accounts** if you want to apply the disablement to specific organizational units and accounts. If you choose this option, use the search bar or organizational structure tree to specify the target organizational units and accounts.
+1. Choose **Edit policy** and in the **Account selection** section, select one of the following options. Choose **All organizational units and accounts** if you want to apply the disablement to all organizational units and accounts. Choose **Specific organizational units and accounts** if you want to apply the disablement to specific organizational units and accounts. If you choose this option, use the search bar or organizational structure tree to specify the target organizational units and accounts.
 
 1. In the **Regions** section, choose **Disable all Regions** to disable Security Hub in all Regions. Optionally choose whether to automatically disable new Regions. Choose **Specify Regions** to choose which specific Regions you want to disable.
 
@@ -78,7 +78,7 @@ If you have an existing Security Hub policy and want to disable Security Hub onl
 
 1. Choose **Next**.
 
-1. Review your changes, and then choose **Apply**. Your target accounts are configured based on the policy. The configuration status of your policy will display at the top of the Configurations page.
+1. Review your changes, and then choose **Apply**. Your target accounts are configured based on the policy. The configuration status of your policy displays at the top of the Configurations page.
 
 **Impact on other security services**
 Disabling Security Hub through an Security Hub policy has **no impact** on Security Hub CSPM, GuardDuty, and Amazon Inspector configurations.

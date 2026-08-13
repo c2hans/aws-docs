@@ -40,7 +40,7 @@ After an agent is created, you can add action groups to it by doing the followin
    + **Select an existing Lambda function** – Choose a [Lambda function that you created previously](agents-lambda.md) in AWS Lambda and the version of the function to use. The agent will pass the API or function that it predicts and the parameters, based on the session, to the Lambda function.
 **Note**
 To allow the Amazon Bedrock service principal to access the Lambda function, [attach a resource-based policy to the Lambda function](agents-permissions.md#agents-permissions-lambda) to allow the Amazon Bedrock service principal to access the Lambda function.
-   + **Return control** – Rather than passing the parameters for the API or function that it predicts to the Lambda function, the agent returns control to your application by passing the action that it predicts should be invoked, in addition to the parameters and information for the action that it determined from the session, in the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response. For more information, see [Return control to the agent developer by sending elicited information in an InvokeAgent response](agents-returncontrol.md).
+   + **Return control** – Rather than passing the parameters for the API or function that it predicts to the Lambda function, the agent returns control to your application by passing the action that it predicts should be invoked, in addition to the parameters and information for the action that it determined from the session, in the [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response. For more information, see [Return control to the agent developer by sending elicited information in an InvokeAgent response](agents-returncontrol.md).
 
 1. Depending on your choice for the **Action group type**, you'll see one of the following sections:
    + If you selected **Define with function details**, you'll have an **Action group function** section. Do the following to define the function:
@@ -79,7 +79,7 @@ To allow the Amazon Bedrock service principal to access the Lambda function, [at
      To add another function to your action group by defining another set of parameters, choose **Add action group function**.
    + If you selected **Define with API schemas**, you'll have an **Action group schema** section with the following options:
      + To use an OpenAPI schema that you previously prepared with API descriptions, structures, and parameters for the action group, select **Select API schema** and provide a link to the Amazon S3 URI of the schema.
-     + To define the OpenAPI schema with the in-line schema editor, select **Define via in-line schema editor**. A sample schema appears that you can edit.
+     + To define the OpenAPI schema with the in-line schema editor, select **Define through in-line schema editor**. A sample schema appears that you can edit.
 
        1. Select the format for the schema by using the dropdown menu next to **Format**.
 
@@ -96,7 +96,7 @@ To allow the Amazon Bedrock service principal to access the Lambda function, [at
 ------
 #### [ API ]
 
-To create an action group, send a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt). You must provide either a [ function schema](agents-action-function.md) or an [OpenAPI schema](agents-api-schema.md).
+To create an action group, send a [CreateAgentActionGroup](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt). You must provide either a [ function schema](agents-action-function.md) or an [OpenAPI schema](agents-api-schema.md).
 
 The following list describes the fields in the request:
 + The following fields are required:

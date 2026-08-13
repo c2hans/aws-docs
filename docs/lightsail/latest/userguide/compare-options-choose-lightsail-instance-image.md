@@ -13,17 +13,17 @@ Lightsail provides several options for you to create your virtual private server
 Lightsail has several Linux/Unix-based or Windows-based operating systems to choose from.
 
 ** **Windows Server 2022** **
-Lightsail running Windows Server is a fast and dependable environment for deploying applications using the Microsoft Web Platform. With Lightsail, you can run any compatible Windows-based solution on the high-performance, reliable, cost-effective AWS Cloud computing platform. Common Windows use cases include Enterprise Windows-based application hosting, website and web service hosting, data processing, distributed testing, ASP.NET application hosting, and any other application requiring Windows software. For end of support information, see the [https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2022](https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2022) website.
+Lightsail running Windows Server is a fast and dependable environment for deploying applications using the Microsoft Web Platform. With Lightsail, you can run any compatible Windows-based solution on the high-performance, reliable, cost-effective AWS Cloud computing platform. Common Windows use cases include Enterprise Windows-based application hosting, website and web service hosting, data processing, distributed testing, ASP.NET application hosting, and any other application requiring Windows software. For end of support information, see the [*Microsoft*](https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2022) website.
 This blueprint is compatible with both dual-stack and IPv6-only Lightsail instance plans.
 Learn more about [Windows Server 2022](https://aws.amazon.com/marketplace/pp/prodview-dq4sxno5vuy7m).
 
 ** **Windows Server 2019** **
-Lightsail running Windows Server is a fast and dependable environment for deploying applications using the Microsoft Web Platform. Lightsail enables you to run any compatible Windows-based solution on the high-performance, reliable, cost-effective AWS cloud computing platform. Common Windows use cases include Enterprise Windows-based application hosting, website and web service hosting, data processing, distributed testing, ASP.NET application hosting, and any other application requiring Windows software. For end of support information, see the [https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2019](https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2019) website.
+Lightsail running Windows Server is a fast and dependable environment for deploying applications using the Microsoft Web Platform. Lightsail enables you to run any compatible Windows-based solution on the high-performance, reliable, cost-effective AWS cloud computing platform. Common Windows use cases include Enterprise Windows-based application hosting, website and web service hosting, data processing, distributed testing, ASP.NET application hosting, and any other application requiring Windows software. For end of support information, see the [*Microsoft*](https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2019) website.
 This blueprint is compatible with both dual-stack and IPv6-only Lightsail instance plans.
 Learn more about [Windows Server 2019](https://aws.amazon.com/marketplace/pp/B07QZ4XZ8F).
 
 ** **Windows Server 2016** **
-Lightsail running Windows Server is a fast and dependable environment for deploying applications using the Microsoft Web Platform. Lightsail enables you to run any compatible Windows-based solution on the high-performance, reliable, cost-effective AWS cloud computing platform. Common Windows use cases include Enterprise Windows-based application hosting, website and web service hosting, data processing, distributed testing, ASP.NET application hosting, and any other application requiring Windows software. For end of support information, see the [https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2016](https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2016) website.
+Lightsail running Windows Server is a fast and dependable environment for deploying applications using the Microsoft Web Platform. Lightsail enables you to run any compatible Windows-based solution on the high-performance, reliable, cost-effective AWS cloud computing platform. Common Windows use cases include Enterprise Windows-based application hosting, website and web service hosting, data processing, distributed testing, ASP.NET application hosting, and any other application requiring Windows software. For end of support information, see the [*Microsoft*](https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2016) website.
 This blueprint is compatible with both dual-stack and IPv6-only Lightsail instance plans.
 Learn more about [Windows Server 2016](https://aws.amazon.com/marketplace/pp/B01M7SJEU7).
 
@@ -40,39 +40,39 @@ This blueprint is compatible with both dual-stack and IPv6-only Lightsail instan
 Learn more about [ Amazon Linux 2](https://aws.amazon.com/amazon-linux-2).
 
 ** **AlmaLinux OS 9** **
-AlmaLinux OS 9 is an open source, community owned and governed, forever-free enterprise Linux distribution, focused on long-term stability, providing a robust production-grade platform. AlmaLinux is compatible with RHEL® and pre-Stream CentOS. For end of support information, see the [https://almalinux.org](https://almalinux.org) website.
+AlmaLinux OS 9 is an open source, community owned and governed, forever-free enterprise Linux distribution, focused on long-term stability, providing a robust production-grade platform. AlmaLinux is compatible with RHEL® and pre-Stream CentOS. For end of support information, see the [*AlmaLinux OS Foundation*](https://almalinux.org) website.
 This blueprint is compatible with both dual-stack and IPv6-only Lightsail instance plans.
 Learn more about [AlmaLinux OS 9](https://aws.amazon.com/marketplace/pp/prodview-ykmb6re2rcouy).
 
 ** **CentOS Stream 9** **
 CentOS Stream 9 is the next major release of the CentOS Stream distribution. CentOS Stream 9 is a continuously delivered distribution that tracks just ahead of Red Hat Enterprise Linux (RHEL) development, positioned as a midstream between Fedora Linux and RHEL. It's designed to be functionally compatible with RHEL and provides a stable, predictable, manageable and reproducible Linux environment. For end of support information, see the [CentOS](https://www.centos.org/) website.
 This blueprint is compatible with both dual-stack and IPv6-only Lightsail instance plans.
-Learn more at the [https://www.centos.org/centos-stream/](https://www.centos.org/centos-stream/) website.
+Learn more at the [*CentOS Stream*](https://www.centos.org/centos-stream/) website.
 
 ** **Debian 11, 12, and 13** **
 Debian 11 will reach End of Long Term Support on August 31, 2026. You will not be able to create new Lightsail instances with this blueprint on or after August 31, 2026. For more information, see the [Debian website](https://wiki.debian.org/LTS).
 Debian is a free operating system, developed by thousands of volunteers from all over the world who collaborate over the internet. The Debian project's key strengths are its volunteer base, its dedication to the Debian Social Contract and Free Software, and its commitment to provide the best operating system possible. This new release is another important step in that direction. For end of support information, see the [Debian website](https://wiki.debian.org/DebianReleases).
 This blueprint is compatible with both dual-stack and IPv6-only Lightsail instance plans.
-Learn more at the [https://www.debian.org/doc/](https://www.debian.org/doc/) website.
+Learn more at the [*Debian*](https://www.debian.org/doc/) website.
 
 ** **FreeBSD 14 and 15** **
-FreeBSD is an operating system used to power servers, desktops, and embedded systems. Derived from BSD, the version of UNIX developed at the University of California, Berkeley, FreeBSD has been continually developed by a large community for more than 30 years. FreeBSD's networking, security, storage, and monitoring features, including the pf firewall, the Capsicum and CloudABI capability frameworks, the ZFS file system, and the DTrace dynamic tracing framework, make FreeBSD the platform of choice for many of the busiest websites and most pervasive embedded networking and storage systems. For end of support information, see the [https://www.freebsd.org/security/#sup](https://www.freebsd.org/security/#sup) website.
+FreeBSD is an operating system used to power servers, desktops, and embedded systems. Derived from BSD, the version of UNIX developed at the University of California, Berkeley, FreeBSD has been continually developed by a large community for more than 30 years. FreeBSD's networking, security, storage, and monitoring features, including the pf firewall, the Capsicum and CloudABI capability frameworks, the ZFS file system, and the DTrace dynamic tracing framework, make FreeBSD the platform of choice for many of the busiest websites and most pervasive embedded networking and storage systems. For end of support information, see the [*FreeBSD*](https://www.freebsd.org/security/#sup) website.
 This blueprint is compatible with both dual-stack and IPv6-only Lightsail instance plans.
-Learn more at the [https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/) website.
+Learn more at the [*FreeBSD*](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/) website.
 
 ** **openSUSE 15 and 16** **
-openSUSE Leap 15 will reach End of Life on July 30, 2026. You will not be able to create new Lightsail instances with the openSUSE 15 blueprint on or after July 30, 2026. For more information, see the [https://en.opensuse.org/](https://en.opensuse.org/) website.
-The openSUSE distribution is a stable, easy to use and complete multipurpose Linux distribution. It is aimed towards users and developers working on the desktop or server. It is great for beginners, experienced users and ultra geeks alike, in short, it is perfect for everybody\! For end of support information, see the [https://en.opensuse.org/](https://en.opensuse.org/) website.
+openSUSE Leap 15 will reach End of Life on July 30, 2026. You will not be able to create new Lightsail instances with the openSUSE 15 blueprint on or after July 30, 2026. For more information, see the [*openSUSE*](https://en.opensuse.org/) website.
+The openSUSE distribution is a stable, easy to use and complete multipurpose Linux distribution. It is aimed towards users and developers working on the desktop or server. It is great for beginners, experienced users and ultra geeks alike, in short, it is perfect for everybody\! For end of support information, see the [*openSUSE*](https://en.opensuse.org/) website.
 Password authentication is disabled by default for this operating system. This means that even if you create an instance from a snapshot of an instance with password authentication enabled, the new instance will have password authentication disabled. For more information about password authentication in SUSE Linux, see [document 3404214](https://www.suse.com/support/kb/doc/?id=000016192) in the SUSE documentation.
 To log in to your instance with password authentication disabled, you can use the browser-based SSH client on the Lightsail console or a key pair. For more information about logging in, see [Connect to Linux or Unix instances on Lightsail](lightsail-how-to-connect-to-your-instance-virtual-private-server.md) or [Connect to Lightsail Linux or Unix instances with the SSH command](amazon-lightsail-ssh-using-terminal.md).
 This blueprint is compatible with both dual-stack and IPv6-only Lightsail instance plans.
-Learn more at the [https://www.opensuse.org/](https://www.opensuse.org/) website.
+Learn more at the [*openSUSE*](https://www.opensuse.org/) website.
 
 ** **Ubuntu 22 and 24** **
-Ubuntu Server is a Debian-based Linux operating system used for virtual servers. A default installation of Ubuntu contains a wide range of software that includes LibreOffice, Firefox, Thunderbird, and Transmission. You can install many additional software packages, such as Evolution, GIMP, Pidgin, and Synaptic by using the APT-based package management tool (`apt-get`). For end of support information, see the [https://wiki.ubuntu.com/Releases](https://wiki.ubuntu.com/Releases) website.
+Ubuntu Server is a Debian-based Linux operating system used for virtual servers. A default installation of Ubuntu contains a wide range of software that includes LibreOffice, Firefox, Thunderbird, and Transmission. You can install many additional software packages, such as Evolution, GIMP, Pidgin, and Synaptic by using the APT-based package management tool (`apt-get`). For end of support information, see the [*Ubuntu*](https://wiki.ubuntu.com/Releases) website.
 Lightsail instances created with the Ubuntu 24 blueprint will have Instance Metadata Service Version 2 (IMDSv2) enforced by default. For more information, see [How Instance Metadata Service Version 2 works](amazon-lightsail-configuring-instance-metadata-service.md).
 This blueprint is compatible with both dual-stack and IPv6-only Lightsail instance plans.
-Learn more at the [https://help.ubuntu.com/community/CommunityHelpWiki](https://help.ubuntu.com/community/CommunityHelpWiki) website.
+Learn more at the [*Ubuntu*](https://help.ubuntu.com/community/CommunityHelpWiki) website.
 
 ## Database applications
 <a name="compare-database-applications"></a>
@@ -108,7 +108,7 @@ Learn more about the [WordPress stack](https://wordpress.org/) at the *WordPress
 
 ** **WordPress certified by Bitnami** **
 Bitnami WordPress is a preconfigured, ready-to-use image for running WordPress on Lightsail. WordPress is a popular web publishing platform for building blogs and websites. You can customize it by using a wide selection of themes, extensions, plugins, and widgets.
- WordPress features a full theme system, which enables you to change the look and feel of your site with a few clicks. You can also use existing free or commercial WordPress themes. WordPress is in full compliance with the standards of the [https://www.w3.org/](https://www.w3.org/).
+ WordPress features a full theme system, which enables you to change the look and feel of your site with a few clicks. You can also use existing free or commercial WordPress themes. WordPress is in full compliance with the standards of the [*World Wide Web Consortium (W3C)*](https://www.w3.org/).
 [WordPress by Bitnami](amazon-lightsail-wordpress-bitnami.md)
 Learn more about [WordPress](https://bitnami.com/stack/wordpress) at the *Bitnami* website.
 
@@ -132,7 +132,7 @@ Learn more about [cPanel & WHM](https://cpanel.net/products/cpanel-whm-features/
 ** **PrestaShop packaged by Bitnami** **
 PrestaShop is one of the most prolific ecommerce solutions in the world. It is free and open source software, with a community of over 1 million active members. It is designed to get your online store up and running quickly, with a preconfigured theme so that you can start selling almost immediately along with a Live Configurator for easily customizing the look of your site. PrestaShop features multi-store support, customizable URLs, multiple payment gateway options (including PayPal and Stripe), and marketplace integration with Amazon, eBay, Facebook and more.
 [Set up a PrestaShop website on Lightsail](amazon-lightsail-quick-start-guide-prestashop.md)
-Learn more about [https://prestashop.com](https://prestashop.com) at the *PrestaShop* website.
+Learn more about [*PrestaShop*](https://prestashop.com) at the *PrestaShop* website.
 
 ** **Ghost packaged by Bitnami** **
 Ghost is a publishing platform that is suitable for everything from personal blogs to major news websites. Built on Node.js, its modern technology stack makes it versatile and flexible for developers seeking to integrate with other applications and tools, while maintaining ease of use for content creators.

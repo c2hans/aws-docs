@@ -117,12 +117,12 @@ The following example policy grants you the permissions to use the DescribeImage
 ------
 
 **Important**
-We strongly recommend using the AWS managed policy [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2ImageReferencesAccessPolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2ImageReferencesAccessPolicy.html) instead of creating the policy yourself. Creating a custom IAM policy that provides only the required permissions requires time and expertise, and will require updates as new resource types become available.
+We strongly recommend using the AWS managed policy [`AmazonEC2ImageReferencesAccessPolicy`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2ImageReferencesAccessPolicy.html) instead of creating the policy yourself. Creating a custom IAM policy that provides only the required permissions requires time and expertise, and will require updates as new resource types become available.
 The `AmazonEC2ImageReferencesAccessPolicy` managed policy:
 Grants all the permissions needed to use the DescribeImageReferences API (these include the permissions to describe EC2 instances, launch templates, Systems Manager parameters, and Image Builder container and image recipes).
 Automatically supports new resource types as they become available (especially important when using the `IncludeAllResourceTypes` parameter).
 You can attach the `AmazonEC2ImageReferencesAccessPolicy` policy to your IAM identities (users, groups, and roles).
-To view the permissions included in this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2ImageReferencesAccessPolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2ImageReferencesAccessPolicy.html) in the *AWS Managed Policy Reference*.
+To view the permissions included in this policy, see [AmazonEC2ImageReferencesAccessPolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2ImageReferencesAccessPolicy.html) in the *AWS Managed Policy Reference*.
 
 ## Steps for checking AMI references
 <a name="ami-reference-procedures"></a>

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/securit
 # Security Best Practices in Amazon WorkSpaces Applications
 <a name="security-best-practices"></a>
 
- Cloud security at Amazon Web Services (AWS) is the highest priority. Security and compliance is a shared responsibility between AWS and the customer. For more information, refer to the [https://aws.amazon.com/compliance/shared-responsibility-model/](https://aws.amazon.com/compliance/shared-responsibility-model/). As an AWS and WorkSpaces Applications customer, it is important to implement security measures on different layers such as stack, fleet, image, and networking.
+ Cloud security at Amazon Web Services (AWS) is the highest priority. Security and compliance is a shared responsibility between AWS and the customer. For more information, refer to the [*Shared Responsibility Model*](https://aws.amazon.com/compliance/shared-responsibility-model/). As an AWS and WorkSpaces Applications customer, it is important to implement security measures on different layers such as stack, fleet, image, and networking.
 
  Due to its ephemeral nature, WorkSpaces Applications is often preferred as a secure solution to application and desktop delivery. Consider whether antivirus solutions that are commonplace in Windows deployments are relevant in your use cases for an environment that is predefined and purged at the end of a user session. Antivirus adds overhead to virtualized instances, making it is a best practice to mitigate unnecessary activities. For example, scanning the system volume (which is ephemeral) at boot, for instance, does not add to the overall security of WorkSpaces Applications.
 

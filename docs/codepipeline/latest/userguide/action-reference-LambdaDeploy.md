@@ -39,7 +39,7 @@ You must have already created a version.
 
 **FunctionAlias**
 Required: No
-The alias of the function that you created in Lambda and is the function to be deployed to, such as `live`. The alias must exist and has one version behind it when the action executions starts. (It will be the rollback target version.)
+The alias of the function that you created in Lambda and is the function to be deployed to, such as `live`. The alias must exist and have one version behind it when the action execution starts. (It will be the rollback target version.)
 If not provided, the action deploys the source artifact to `$LATEST` and creates a new version. In this use case, the deploy strategy and target version options are not available.
 
 **PublishedTargetVersion**
@@ -55,7 +55,7 @@ Determines the rate that the Lambda deploy action adopts to shift traffic from t
 
   Shifts all traffic to the updated Lambda functions at once.
 
-   If not specified, the default is `AllAtOnce`)
+  If not specified, the default is `AllAtOnce`.
 + `Canary10Percent5Minutes` - Shifts 10 percent of traffic in the first increment. The remaining 90 percent is deployed five minutes later.
 
   The values for both percentage and minutes can be changed.

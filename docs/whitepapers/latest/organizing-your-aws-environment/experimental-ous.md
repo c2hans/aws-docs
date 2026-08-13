@@ -45,7 +45,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 <a name="additional-services-and-functionalities-6"></a>
 
  Common examples of monitoring capabilities that can be centrally accessed and managed using a Shared Services account include:
-+  [https://aws.amazon.com/solutions/implementations/instance-scheduler-on-aws/](https://aws.amazon.com/solutions/implementations/instance-scheduler-on-aws/) solution to automate the starting and stopping of Amazon Elastic Compute Cloud (Amazon EC2) and Amazon Relational Database Service (Amazon RDS) instances based on provided schedules.
++  [**Instance Scheduler on AWS**](https://aws.amazon.com/solutions/implementations/instance-scheduler-on-aws/) solution to automate the starting and stopping of Amazon Elastic Compute Cloud (Amazon EC2) and Amazon Relational Database Service (Amazon RDS) instances based on provided schedules.
 
 ### Sandbox per builder or team
 <a name="sandbox-per-builder-or-team"></a>

@@ -56,7 +56,7 @@ The following example is an IAM policy that grants these permissions.
 }
 ```
 
-The policy uses `Condition` statements to help ensure that only DataSync tasks from the specified account have access to the specified CloudWatch log group. We recommend using the [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) and [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount) global condition context keys in these `Condition` statements to protect against the confused deputy problem. For more information, see [Cross-service confused deputy prevention](cross-service-confused-deputy-prevention.md).
+The policy uses `Condition` statements to help ensure that only DataSync tasks from the specified account have access to the specified CloudWatch log group. We recommend using the [aws:SourceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) and [aws:SourceAccount](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount) global condition context keys in these `Condition` statements to protect against the confused deputy problem. For more information, see [Cross-service confused deputy prevention](cross-service-confused-deputy-prevention.md).
 
 To specify the DataSync task or tasks, replace {{`region`}} with the Region code for the AWS Region where the tasks are located (for example, `us-west-2`), and replace {{`account-id`}} with the AWS account ID of the account that contains the tasks. To specify the CloudWatch log group, replace the same values. You can also modify the `Resource` statement to target specific log groups. For more information about using `SourceArn` and `SourceAccount`, see [Global condition keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount) in the *IAM User Guide*.
 
@@ -69,7 +69,7 @@ aws logs put-resource-policy --policy-name {{trust-datasync}} --policy-document 
 **Note**
 Run this command by using the same AWS account and AWS Region where you activated your DataSync agent.
 
-For more information, see the [https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html).
+For more information, see the [*Amazon CloudWatch Logs User Guide*](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html).
 
 ------
 
@@ -177,13 +177,13 @@ You're ready to [start your task](run-task.md).
 <a name="configure-logging-steps-api"></a>
 
 You can configure CloudWatch logging for your task by using the `CloudWatchLogGroupArn` parameter with any of the following operations:
-+ [https://docs.aws.amazon.com/datasync/latest/userguide/API_CreateTask.html](https://docs.aws.amazon.com/datasync/latest/userguide/API_CreateTask.html)
-+ [https://docs.aws.amazon.com/datasync/latest/userguide/API_UpdateTask.html](https://docs.aws.amazon.com/datasync/latest/userguide/API_UpdateTask.html)
++ [CreateTask](https://docs.aws.amazon.com/datasync/latest/userguide/API_CreateTask.html)
++ [UpdateTask](https://docs.aws.amazon.com/datasync/latest/userguide/API_UpdateTask.html)
 
 ## Viewing DataSync task logs
 <a name="monitoring-verification-errors-cloudwatch"></a>
 
-When you [start your task](run-task.md), you can view the task execution's logs by using the CloudWatch console or AWS CLI (among other options). For more information, see the [https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html).
+When you [start your task](run-task.md), you can view the task execution's logs by using the CloudWatch console or AWS CLI (among other options). For more information, see the [*Amazon CloudWatch Logs User Guide*](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html).
 
 DataSync provides JSON-structured logs for Enhanced mode tasks. Basic mode tasks have unstructured logs. The following examples show how verification errors display in Enhanced mode logs compared to Basic mode logs.
 

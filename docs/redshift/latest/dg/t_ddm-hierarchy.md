@@ -66,4 +66,4 @@ When attaching multiple masking policies, consider the following:
   SELECT employees.col_person.name FROM employees;
   ```
 
-To confirm which masking policy applies to a given user and column or role and column combination, users with the [https://docs.aws.amazon.com/redshift/latest/dg/r_roles-default.html](https://docs.aws.amazon.com/redshift/latest/dg/r_roles-default.html) role can look up the column/role or column/user pair in the [SVV\_ATTACHED\_MASKING\_POLICY](r_SVV_ATTACHED_MASKING_POLICY.md) system view. For more information, see [Dynamic data masking system views](r_ddm-svv.md).
+To confirm which masking policy applies to a given user and column or role and column combination, users with the [`sys:secadmin`](https://docs.aws.amazon.com/redshift/latest/dg/r_roles-default.html) role can look up the column/role or column/user pair in the [SVV\_ATTACHED\_MASKING\_POLICY](r_SVV_ATTACHED_MASKING_POLICY.md) system view. For more information, see [Dynamic data masking system views](r_ddm-svv.md).

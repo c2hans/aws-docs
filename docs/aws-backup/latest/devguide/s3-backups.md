@@ -12,6 +12,11 @@ AWS Backup supports centralized backup and restore of applications storing data 
 
 You can use a single backup policy in AWS Backup to centrally automate the creation of backups of your application data. AWS Backup automatically organizes backups across different AWS services and third-party applications in one centralized, encrypted location (known as a [ backup vault](https://docs.aws.amazon.com/aws-backup/latest/devguide/vaults.html)) so that you can manage backups of your entire application through a centralized experience. For S3, you can create continuous backups and restore your application data stored in S3 and restore the backups to a point-in-time with a single click.
 
+## Backup access points
+<a name="s3-backup-access-points"></a>
+
+AWS Backup lets you access S3 backup data directly through S3 access points, without initiating a restore. For more information, see [Access points](backup-access-points.md).
+
 ## Backup tiering
 <a name="s3-backup-tiering"></a>
 
@@ -189,7 +194,7 @@ Because AWS Backup cannot detect when bucket-level Amazon EventBridge is disable
   ```
 
   This requires CloudTrail to be enabled and logging S3 management events (enabled by default). The target (SNS, Lambda, etc.) should inspect the event detail to determine whether Amazon EventBridge notifications were specifically removed.
-+ **AWS Config** – Use the AWS Config managed rule [https://docs.aws.amazon.com/config/latest/developerguide/s3-event-notifications-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/s3-event-notifications-enabled.html) to flag non-compliant buckets on configuration changes.
++ **AWS Config** – Use the AWS Config managed rule [`s3-event-notifications-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/s3-event-notifications-enabled.html) to flag non-compliant buckets on configuration changes.
 
 ### Required Amazon EventBridge permissions for the backup role
 <a name="s3-eventbridge-permissions"></a>

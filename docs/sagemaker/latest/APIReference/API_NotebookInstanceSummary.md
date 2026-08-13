@@ -65,7 +65,7 @@ Required: No
  ** NotebookInstanceStatus **   <a name="sagemaker-Type-NotebookInstanceSummary-NotebookInstanceStatus"></a>
 The status of the notebook instance.
 Type: String
-Valid Values: `Pending | InService | Stopping | Stopped | Failed | Deleting | Updating`
+Valid Values: `Pending | InService | Stopping | Stopped | Failed | Deleting | Updating | PendingMaintenance | InMaintenance`
 Required: No
 
  ** Url **   <a name="sagemaker-Type-NotebookInstanceSummary-Url"></a>

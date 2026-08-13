@@ -112,7 +112,7 @@ You can configure Entry conditions for a stage, along with the rules and results
 ### Creating Entry conditions with Skip result and `VariableCheck` rule (console)
 <a name="stage-conditions-entry-skip"></a>
 
-You can configure Entry conditions for a stage so that if the entry condition is not met, the stage is skipped If the condition fails, then the result engages and the stage is skipped. When a stage is skipped, the stage status is **Skipped**, and the action status is **Didn't Run**. For considerations for stage conditions with Skip results, see [Considerations for results configured for stage conditions](#stage-conditions-considerations).
+You can configure Entry conditions for a stage so that if the entry condition is not met, the stage is skipped. If the condition fails, then the result engages and the stage is skipped. When a stage is skipped, the stage status is **Skipped**, and the action status is **Didn't Run**. For considerations for stage conditions with Skip results, see [Considerations for results configured for stage conditions](#stage-conditions-considerations).
 
 In the following example, the variable check rule finds that the value is not a match, and the build stage is skipped.
 
@@ -157,7 +157,7 @@ In the following example, the variable check rule finds that the value is not a 
 To use the AWS CLI to configure an Entry condition, use the commands to create or update a pipeline as detailed in [Create a pipeline, stages, and actions](pipelines-create.md) and [Edit a pipeline in CodePipeline](pipelines-edit.md).
 
 **Configure the condition and rule or rules (CLI)**
-+ Open a terminal (Linux, macOS, or Unix) or command prompt (Windows) and use the AWS CLI to run the `update-pipeline` command, specifying the failure condition in the pipeline structure. The following example configures an Entry condition for a staged named `Deploy`:
++ Open a terminal (Linux, macOS, or Unix) or command prompt (Windows) and use the AWS CLI to run the `update-pipeline` command, specifying the failure condition in the pipeline structure. The following example configures an Entry condition for a stage named `Deploy`:
 
   ```
   {
@@ -353,7 +353,7 @@ You can configure onFailure conditions for a stage so that if the entry conditio
 To use the AWS CLI to configure an On Failure condition, use the commands to create or update a pipeline as detailed in [Create a pipeline, stages, and actions](pipelines-create.md) and [Edit a pipeline in CodePipeline](pipelines-edit.md).
 
 **Configure the condition and rule or rules (CLI)**
-+ Open a terminal (Linux, macOS, or Unix) or command prompt (Windows) and use the AWS CLI to run the `update-pipeline` command, specifying the failure condition in the pipeline structure. The following example configures an On Failure condition for a staged named `Deploy`:
++ Open a terminal (Linux, macOS, or Unix) or command prompt (Windows) and use the AWS CLI to run the `update-pipeline` command, specifying the failure condition in the pipeline structure. The following example configures an On Failure condition for a stage named `Deploy`:
 
   ```
   {
@@ -418,7 +418,7 @@ To use the AWS CLI to configure an On Failure condition, use the commands to cre
 ### Creating On Failure conditions (CFN)
 <a name="stage-conditions-onfailure-cfn"></a>
 
-To use CloudFormation to configure an On Failure condition, use the `OnFailure` parameter. On success, the stage will run the rule and perform the result.
+To use CloudFormation to configure an On Failure condition, use the `OnFailure` parameter. On failure, the stage will run the rule and perform the result.
 
 ```
 OnFailure:
@@ -516,7 +516,7 @@ You can configure On Success conditions for a stage, along with the rules and re
 To use the AWS CLI to configure an On Success condition, use the commands to create or update a pipeline as detailed in [Create a pipeline, stages, and actions](pipelines-create.md) and [Edit a pipeline in CodePipeline](pipelines-edit.md).
 
 **Configure the condition and rule or rules (CLI)**
-+ Open a terminal (Linux, macOS, or Unix) or command prompt (Windows) and use the AWS CLI to run the `update-pipeline` command, specifying the failure condition in the pipeline structure. The following example configures an On Success condition for a staged named `Deploy`, where the rule is named `MyDeploymentRule`:
++ Open a terminal (Linux, macOS, or Unix) or command prompt (Windows) and use the AWS CLI to run the `update-pipeline` command, specifying the failure condition in the pipeline structure. The following example configures an On Success condition for a stage named `Deploy`, where the rule is named `MyDeploymentRule`:
 
   ```
   {
@@ -647,7 +647,7 @@ You can delete stage conditions that have been configured for your pipeline.
 ## Overriding stage conditions
 <a name="stage-conditions-override"></a>
 
-You can override stage conditions that have been configured for your pipeline. In the console, when the stage and rule are running, you can choose to override the stage condition. This results in the stage running
+You can override stage conditions that have been configured for your pipeline. In the console, when the stage and rule are running, you can choose to override the stage condition. This results in the stage running.
 
 **To override a stage condition**
 
@@ -658,4 +658,4 @@ You can override stage conditions that have been configured for your pipeline. I
 ![An example condition in CodePipeline.](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/stage-condition-override-depl-overridden.png)
 
 1. To review details, choose **Review**. The detail in the following example shows that the configured result for the condition is Fail, which has been overridden. The rule status is Abandoned due to the override.
-![An example condition details page showing the overriden condition in CodePipeline.](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/stage-condition-onsuccess-deplwin-example-message-review.png)
+![An example condition details page showing the overridden condition in CodePipeline.](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/stage-condition-onsuccess-deplwin-example-message-review.png)

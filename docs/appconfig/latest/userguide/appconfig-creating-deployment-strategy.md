@@ -14,22 +14,31 @@ An AWS AppConfig deployment strategy defines the following important aspects of 
 
 ****
 
-| Setting | Description |
-| --- | --- |
-| Elapsed time | Deployment progress |
-| --- | --- |
-| Deployment type | Deployment type defines how the configuration deploys or *rolls out*. AWS AppConfig supports **Linear** and **Exponential** deployment types.+  **Linear**: For this type, AWS AppConfig processes the deployment by increments of the growth factor evenly distributed over the deployment. Here's an example timeline for a 10 hour deployment that uses 20% linear growth:
-****
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-deployment-strategy.html) <br />+  **Exponential**: For this type, AWS AppConfig processes the deployment exponentially using the following formula: `G*(2^N)`. In this formula, `G` is the step percentage specified by the user and `N` is the number of steps until the configuration is deployed to all targets. For example, if you specify a growth factor of 2, then the system rolls out the configuration as follows: <pre>2*(2^0)<br />2*(2^1)<br />2*(2^2)</pre> <br />Expressed numerically, the deployment rolls out as follows: 2% of the targets, 4% of the targets, 8% of the targets, and continues until the configuration has been deployed to all targets.  |
-| Step percentage (growth factor) | This setting specifies the percentage of callers to target during each step of the deployment. In the SDK and the [AWS AppConfig API Reference](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_CreateDeploymentStrategy.html), `step percentage` is called `growth factor`.  |
-| Deployment time | This setting specifies an amount of time during which AWS AppConfig deploys to hosts. This is not a timeout value. It is a window of time during which the deployment is processed in intervals. |
-| Bake time | This setting specifies the amount of time AWS AppConfig monitors for Amazon CloudWatch alarms after the configuration has been deployed to 100% of its targets, before considering the deployment to be complete. If an alarm is triggered during this time, AWS AppConfig rolls back the deployment. You must configure permissions for AWS AppConfig to roll back based on CloudWatch alarms. For more information, see [Configure permissions for automatic rollback](setting-up-appconfig.md#getting-started-with-appconfig-cloudwatch-alarms-permissions). |
-| 0 hour | 0% |
-| 2 hour | 20% |
-| 4 hour | 40% |
-| 6 hour | 60% |
-| 8 hour | 80% |
-| 10 hour | 100% |
+<table>
+<thead>
+  <tr><th>Setting</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td>Deployment type</td><td>Deployment type defines how the configuration deploys or <i>rolls out</i>. AWS AppConfig supports <b>Linear</b> and <b>Exponential</b> deployment types.<ul><li> <b>Linear</b>: For this type, AWS AppConfig processes the deployment by increments of the growth factor evenly distributed over the deployment. Here's an example timeline for a 10 hour deployment that uses 20% linear growth: <p><b></b></p>
+<table>
+<thead>
+  <tr><th>Elapsed time</th><th>Deployment progress</th></tr>
+</thead>
+<tbody>
+  <tr><td>0 hour</td><td>0%</td></tr>
+  <tr><td>2 hour</td><td>20%</td></tr>
+  <tr><td>4 hour</td><td>40%</td></tr>
+  <tr><td>6 hour</td><td>60%</td></tr>
+  <tr><td>8 hour</td><td>80%</td></tr>
+  <tr><td>10 hour</td><td>100%</td></tr>
+</tbody>
+</table>
+ </li><li> <b>Exponential</b>: For this type, AWS AppConfig processes the deployment exponentially using the following formula: <code>G*(2^N)</code>. In this formula, <code>G</code> is the step percentage specified by the user and <code>N</code> is the number of steps until the configuration is deployed to all targets. For example, if you specify a growth factor of 2, then the system rolls out the configuration as follows: <pre>2*(2^0)<br />2*(2^1)<br />2*(2^2)</pre> <br />Expressed numerically, the deployment rolls out as follows: 2% of the targets, 4% of the targets, 8% of the targets, and continues until the configuration has been deployed to all targets. </li></ul></td></tr>
+  <tr><td>Step percentage (growth factor)</td><td>This setting specifies the percentage of callers to target during each step of the deployment. In the SDK and the <a href="https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_CreateDeploymentStrategy.html">AWS AppConfig API Reference</a>, <code>step percentage</code> is called <code>growth factor</code>. </td></tr>
+  <tr><td>Deployment time</td><td>This setting specifies an amount of time during which AWS AppConfig deploys to hosts. This is not a timeout value. It is a window of time during which the deployment is processed in intervals.</td></tr>
+  <tr><td>Bake time</td><td>This setting specifies the amount of time AWS AppConfig monitors for Amazon CloudWatch alarms after the configuration has been deployed to 100% of its targets, before considering the deployment to be complete. If an alarm is triggered during this time, AWS AppConfig rolls back the deployment. You must configure permissions for AWS AppConfig to roll back based on CloudWatch alarms. For more information, see <a href="setting-up-appconfig.md#getting-started-with-appconfig-cloudwatch-alarms-permissions">Configure permissions for automatic rollback</a>.</td></tr>
+</tbody>
+</table>
 
 You can choose a predefined strategy included with AWS AppConfig or create your own.
 

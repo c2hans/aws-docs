@@ -20,13 +20,13 @@ Use the following procedure to create a Buildkite manual webhook.
    In **Runner**:
    + For **Runner provider**, choose **Buildkite**.
    + For **Buildkite agent token**, choose **Create a new agent token by using the create secret page**. You will be prompted to create a new secret in AWS Secrets Manager with a secret value equal to the Buildkite agent token you generated above.
-   + (Optional) If you would like to use CodeBuild managed credentials for your job, select your job’s source repository provider under **Buildkite source credential options** and verify that credentials are configured for your account. Additionally, verify that your Buildkite pipeline uses **Checkout using HTTPS**.
+   + (Optional) If you would like to use CodeBuild managed credentials for your job, select your job's source repository provider under **Buildkite source credential options** and verify that credentials are configured for your account. Additionally, verify that your Buildkite pipeline uses **Checkout using HTTPS**.
 
 1.
    +  In **Environment**:
      + Choose a supported **Environment image** and **Compute**. Note that you have the option to override the image and instance settings by using a label in your GitHub Actions workflow YAML. For more information, see [Step 2: Update your GitHub Actions workflow YAML](action-runner.md#sample-github-action-runners-update-yaml)
    +  In **Buildspec**:
-     + Note that your buildspec will be ignored unless `buildspec-override:true` is added as a label. Instead, CodeBuild will override it to use commands that will setup the self-hosted runner.
+     + Note that your buildspec will be ignored unless `buildspec-override:true` is added as a label. Instead, CodeBuild will override it to use commands that will set up the self-hosted runner.
 
 1. Continue with the default values and then choose **Create build project**.
 

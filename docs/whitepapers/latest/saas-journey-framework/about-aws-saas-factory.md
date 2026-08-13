@@ -9,4 +9,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framewor
 
  AWS SaaS Factory provides a wide range of resources that help accelerate the adoption or optimization of a SaaS delivery model. SaaS Factory includes best practices for SaaS business strategy, reference architectures for building SaaS solutions on AWS, exclusive training opportunities for developing SaaS on AWS, and more.
 
- [https://aws.amazon.com/blogs/apn/introducing-aws-saas-factory-to-help-isvs-accelerate-saas-adoption/](https://aws.amazon.com/blogs/apn/introducing-aws-saas-factory-to-help-isvs-accelerate-saas-adoption/)
+ [**Learn more about AWS SaaS Factory >>**](https://aws.amazon.com/blogs/apn/introducing-aws-saas-factory-to-help-isvs-accelerate-saas-adoption/)

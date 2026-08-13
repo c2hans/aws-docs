@@ -16,6 +16,7 @@ To score a session, the service needs the conversation content: the model prompt
   +  [Split telemetry](#supported-frameworks-telemetry-split)
 +  [What the service reads from a span](#supported-frameworks-telemetry-spans)
 +  [References](#supported-frameworks-telemetry-references)
++  [Sample agents](#supported-frameworks-samples)
 
 ## Set up observability
 <a name="supported-frameworks-setup"></a>
@@ -89,3 +90,11 @@ AgentCore Evaluations builds on the following OpenTelemetry specifications:
 +  [Trace semantic conventions](https://opentelemetry.io/docs/specs/semconv/general/trace/) on the OpenTelemetry website: how spans and traces are structured and what they mean.
 +  [Event semantic conventions](https://opentelemetry.io/docs/specs/semconv/general/events/) on the OpenTelemetry website: how event records are structured and what they mean.
 +  [Generative-AI semantic conventions](https://github.com/open-telemetry/semantic-conventions-genai) on the GitHub website: the `gen_ai.*` attributes that describe agent, model, and tool operations.
+
+## Sample agents
+<a name="supported-frameworks-samples"></a>
+
+The following examples show how to instrument a Strands agent hosted outside Amazon Bedrock AgentCore Runtime. Each example exports telemetry to Amazon CloudWatch using ADOT. They focus on observability setup rather than the evaluation API. The examples use Strands, but the same hosting and telemetry-export pattern applies to other supported frameworks, such as LangGraph.
++  **Amazon EKS:** [Observability for an EKS-hosted agent](https://github.com/awslabs/agentcore-samples/tree/main/06-workshops/06-AgentCore-observability/06-Agentcore-observability-for-eks-hosted-agent) and [Strands agent on Amazon EKS](https://github.com/awslabs/agentcore-samples/tree/main/03-integrations/agents-hosted-outside-runtime/agents-on-eks), both on the GitHub website.
++  **Amazon ECS:** [Strands agent on Amazon ECS](https://github.com/awslabs/agentcore-samples/tree/main/03-integrations/agents-hosted-outside-runtime/agents-on-ecs) on the GitHub website.
++  ** AWS Lambda:** [Strands agent in AWS Lambda](https://github.com/awslabs/agentcore-samples/tree/main/03-integrations/agents-hosted-outside-runtime/agents-on-aws-lambda/02-agent-in-lambda) on the GitHub website.

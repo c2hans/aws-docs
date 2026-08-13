@@ -10,7 +10,7 @@ This section details the specifications available for each SAP deployment type. 
 For NetWeaver patterns, you can specify which NetWeaver based applications running on HANA to install. For example, you might choose to install SAP S/4HANA, SAP BW/4HANA, or SAP Solution Manager.
 
 **Note**
-If you need to retrieve specifications for other deployment types, use the [https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_GetWorkloadDeploymentPattern.html](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_GetWorkloadDeploymentPattern.html) operation.
+If you need to retrieve specifications for other deployment types, use the [`GetWorkloadDeploymentPattern`](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_GetWorkloadDeploymentPattern.html) operation.
 
 **Contents**
 + [SapHanaHA](launch-wizard-specifications-sap-hana-ha.md)

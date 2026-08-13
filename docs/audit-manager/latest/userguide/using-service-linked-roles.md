@@ -20,7 +20,7 @@ Audit Manager uses the service-linked role named `AWSServiceRoleForAuditManager`
 
 The `AWSServiceRoleForAuditManager` service-linked role trusts the `auditmanager.amazonaws.com` service to assume the role.
 
-The role permissions policy, [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAuditManagerServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAuditManagerServiceRolePolicy.html), allows Audit Manager to collect automated evidence about your AWS usage. More specifically, it can take the following actions on your behalf.
+The role permissions policy, [`AWSAuditManagerServiceRolePolicy`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAuditManagerServiceRolePolicy.html), allows Audit Manager to collect automated evidence about your AWS usage. More specifically, it can take the following actions on your behalf.
 + Audit Manager can use AWS Security Hub CSPM to collect **compliance check** evidence. In this case, Audit Manager uses the following permission to report the results of security checks directly from AWS Security Hub CSPM. It then attaches the results to your relevant assessment controls as evidence.
   + `securityhub:DescribeStandards`
 **Note**

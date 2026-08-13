@@ -23,7 +23,7 @@ Type: [EvidenceInsights](API_EvidenceInsights.md) object
 Required: No
 
  ** id **   <a name="auditmanager-Type-ControlDomainInsights-id"></a>
-The unique identifier for the control domain. Audit Manager supports the control domains that are provided by AWS Control Catalog. For information about how to find a list of available control domains, see [https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListDomains.html](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListDomains.html) in the AWS Control Catalog API Reference.
+The unique identifier for the control domain. Audit Manager supports the control domains that are provided by AWS Control Catalog. For information about how to find a list of available control domains, see [`ListDomains`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListDomains.html) in the AWS Control Catalog API Reference.
 Type: String
 Length Constraints: Minimum length of 13. Maximum length of 2048.
 Pattern: `^arn:.*:controlcatalog:.*:.*:domain/.*|UNCATEGORIZED|^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`

@@ -29,7 +29,7 @@ Required: No
  ** slotTypeCategory **   <a name="lexv2-Type-SlotTypeSummary-slotTypeCategory"></a>
 Indicates the type of the slot type.
 +  `Custom` - A slot type that you created using custom values. For more information, see [Creating custom slot types](https://docs.aws.amazon.com/lexv2/latest/dg/custom-slot-types.html).
-+  `Extended` - A slot type created by extending the `AMAZON.AlphaNumeric` built-in slot type. For more information, see [https://docs.aws.amazon.com/lexv2/latest/dg/built-in-slot-alphanumerice.html](https://docs.aws.amazon.com/lexv2/latest/dg/built-in-slot-alphanumerice.html).
++  `Extended` - A slot type created by extending the `AMAZON.AlphaNumeric` built-in slot type. For more information, see [`AMAZON.AlphaNumeric`](https://docs.aws.amazon.com/lexv2/latest/dg/built-in-slot-alphanumerice.html).
 +  `ExternalGrammar` - A slot type using a custom GRXML grammar to define values. For more information, see [Using a custom grammar slot type](https://docs.aws.amazon.com/lexv2/latest/dg/building-grxml.html).
 Type: String
 Valid Values: `Custom | Extended | ExternalGrammar | Composite`

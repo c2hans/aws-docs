@@ -32,7 +32,7 @@ To get started with AWS, you need an AWS account. For information about creating
 ## Installing the AWS CLI and SDKs
 <a name="getting-started-api"></a>
 
-To use the Amazon Transcribe API, you must first install the AWS CLI. The current AWS CLI is version 2. You can find installation instructions for [Linux](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html), [Mac](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html), [Windows](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html), and [Docker](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-docker.html) in the [https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html).
+To use the Amazon Transcribe API, you must first install the AWS CLI. The current AWS CLI is version 2. You can find installation instructions for [Linux](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html), [Mac](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html), [Windows](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html), and [Docker](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-docker.html) in the [*AWS Command Line Interface User Guide*](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html).
 
 Once you have the AWS CLI installed, you must [configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) it for your security credentials and AWS Region.
 

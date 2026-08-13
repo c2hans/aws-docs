@@ -187,7 +187,7 @@ GuardDuty recommends configuring settings to export findings because it allows y
 
       1. Replace {{SourceDetectorID}} with the `detectorID` of the GuardDuty account in the specific Region where the findings generated.
 
-         To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+         To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
 1.
 
@@ -302,7 +302,7 @@ GuardDuty recommends configuring settings to export findings because it allows y
 
       1. Replace {{SourceDetectorID}} with the `detectorID` of the GuardDuty account in the specific Region where the findings generated.
 
-         To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+         To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
       1. Replace {{[optional prefix]}} part of the {{S3 bucket ARN/[optional prefix]}} placeholder value with an optional folder location to which you want to export the findings. For more information about the use of prefixes, see [Organizing objects using prefixes](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-prefixes.html) in the *Amazon S3 User Guide*.
 

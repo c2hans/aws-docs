@@ -67,7 +67,7 @@ Choose one of the access methods to review the coverage statistics for your acco
 
       The field gets updated only when either a new task gets created in the associated Amazon ECS cluster or there is change in the corresponding coverage status.
   + You can change the {{max-results}} (up to 50).
-  + To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+  + To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
   ```
   aws guardduty --region {{us-east-1}} list-coverage --detector-id {{12abc34d567e8fa901bc2d34e56789f0}} --sort-criteria '{"AttributeName": "{{ECS_CLUSTER_NAME}}", "OrderBy": "{{DESC}}"}' --filter-criteria '{"FilterCriterion":[{"CriterionKey":"{{ACCOUNT_ID}}", "FilterCondition":{"EqualsValue":"111122223333"}}] }'  --max-results {{5}}
@@ -82,7 +82,7 @@ Choose one of the access methods to review the coverage statistics for your acco
       + `COVERAGE_STATUS`
       + `MANAGEMENT_TYPE`
       + `INSTANCE_ID`
-  + To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+  + To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
   ```
   aws guardduty --region {{us-east-1}} get-coverage-statistics --detector-id {{12abc34d567e8fa901bc2d34e56789f0}} --statistics-type {{COUNT_BY_COVERAGE_STATUS}} --filter-criteria '{"FilterCriterion":[{"CriterionKey":"{{ACCOUNT_ID}}", "FilterCondition":{"EqualsValue":"123456789012"}}] }'

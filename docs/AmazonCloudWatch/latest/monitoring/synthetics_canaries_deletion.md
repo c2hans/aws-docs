@@ -25,7 +25,7 @@ When you edit a canary, even if you don't change its schedule, the schedule is r
 
    The screenshot appears, and you can do one of the following:
    + To remove the screenshot from being used for visual monitoring, select **Remove screenshot from visual test baseline**.
-   + To designate parts of the screenshot to be ignored during visual comparisons, click and drag to draw areas of the screen to ignore. Once you have done this for all the areas that you want to ignore during comparisons, choose **Save** .
+   + To designate parts of the screenshot to be ignored during visual comparisons, click and drag to draw areas of the screen to ignore. After you have done this for all the areas that you want to ignore during comparisons, choose **Save** .
 
 1. Under **Script editor**, **Runtime version**, select a synthetics runtime version to execute the canary. For information on synthetics runtime versions, see [Synthetics runtime versions ](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_Library.html).
 

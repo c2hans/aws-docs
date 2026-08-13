@@ -17,12 +17,12 @@ By default, all tasks (HITs) posted to Amazon Mechanical Turk (Mechanical Turk) 
 
 Qualification types are system- or requester-defined descriptions of an attribute that can be associated with a worker. One example is the system-generated qualification type `NumberHITsApproved`, which measures the number of HITs a worker has submitted and had approved. Another would be a requester-defined qualification type that tracks how accurate a worker has been on previous tasks that the requester has posted.
 
-When a qualification type is assigned to a worker, it is applied as a *qualification* for that worker. In the case of the system-generated `NumberHITsApproved` qualification type, a qualification is automatically created for a worker as the work they submit is approved. For custom qualification types, a requester can assign the qualification to a worker using the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_AssociateQualificationWithWorkerOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_AssociateQualificationWithWorkerOperation.html) operation and optionally providing an integer value to associate with it.
+When a qualification type is assigned to a worker, it is applied as a *qualification* for that worker. In the case of the system-generated `NumberHITsApproved` qualification type, a qualification is automatically created for a worker as the work they submit is approved. For custom qualification types, a requester can assign the qualification to a worker using the [`AssociateQualificationWithWorker`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_AssociateQualificationWithWorkerOperation.html) operation and optionally providing an integer value to associate with it.
 
 ## Qualification requirements
 <a name="QualRequirements"></a>
 
-A requirement is defined when calling either `CreateHIT` or `CreateHITType`. Either operation accepts an array of one or more [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QualificationRequirementDataStructureArticle.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QualificationRequirementDataStructureArticle.html) data structures to specify the qualifications workers must have to be eligible for your HIT.
+A requirement is defined when calling either `CreateHIT` or `CreateHITType`. Either operation accepts an array of one or more [`QualificationRequirement`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QualificationRequirementDataStructureArticle.html) data structures to specify the qualifications workers must have to be eligible for your HIT.
 
 The `QualificationRequirement` data structure comprises four attributes: `QualificationTypeId`, `Comparator`, value (either `IntegerValues` or `LocaleValues`), and `ActionsGuarded`. The `QualificationTypeId` specifies the qualification type that should be applied and can be either the ID of an Mechanical Turk system qualification type, or one you create in your account. The `Comparator` and value are then used to evaluate if the worker has the required qualification attributes to be eligible for the HIT. Finally, the `ActionsGuarded` indicates the level of visibility that a HIT has to workers that aren't eligible to accept it.
 
@@ -59,7 +59,7 @@ The most commonly used qualification types are those provided by Mechanical Turk
 + A *Masters* qualification that is awarded to workers that have demonstrated superior performance over a period of time across thousands of HITs.
 + An *Adult* qualification that selects workers who have indicated they are over 18 years of age and are willing to work on potentially offensive content.
 
-Each of these qualification types has an associated `QualificationTypeId` which can be found in the documentation for [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QualificationRequirementDataStructureArticle.html#ApiReference_QualificationType-IDs](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QualificationRequirementDataStructureArticle.html#ApiReference_QualificationType-IDs).
+Each of these qualification types has an associated `QualificationTypeId` which can be found in the documentation for [`QualificationRequirement`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QualificationRequirementDataStructureArticle.html#ApiReference_QualificationType-IDs).
 
 ### Using the HITs Approved qualification type
 <a name="HITApprovedQualType"></a>
@@ -107,7 +107,7 @@ QualificationRequirements: [
 ### Using the Percentage Approved type
 <a name="PercentageApprovedQualType"></a>
 
-The `PercentAssignmentsApproved` qualification type restricts tasks based on how often you have approved or rejected past work a worker has done for you. For example, to only accept workers that have an approval rate of greater than or equal to 95%, the following qualification requirement would be included in your [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateHITOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateHITOperation.html) calls.
+The `PercentAssignmentsApproved` qualification type restricts tasks based on how often you have approved or rejected past work a worker has done for you. For example, to only accept workers that have an approval rate of greater than or equal to 95%, the following qualification requirement would be included in your [`CreateHIT`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateHITOperation.html) calls.
 
 ```
 QualificationRequirements: [

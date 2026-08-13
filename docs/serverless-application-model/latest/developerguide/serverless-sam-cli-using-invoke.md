@@ -13,7 +13,7 @@ You can invoke your Lambda function locally by using the [sam local invoke](sam-
 It's not recommended to use SAM CLI's local invoke capabilities in untrusted code. To have complete isolation from your local environment, execute the code in the Lambda service directly.
 
 **Note**
-The **sam local invoke** command corresponds to the AWS Command Line Interface (AWS CLI) command [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/invoke.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/invoke.html). You can use either command to invoke a Lambda function.
+The **sam local invoke** command corresponds to the AWS Command Line Interface (AWS CLI) command [`aws lambda invoke`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/invoke.html). You can use either command to invoke a Lambda function.
 
 You must run the **sam local invoke** command in the project directory that contains the function that you want to invoke.
 

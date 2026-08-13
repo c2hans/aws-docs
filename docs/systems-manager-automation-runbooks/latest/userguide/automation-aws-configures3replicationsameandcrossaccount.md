@@ -505,7 +505,7 @@ Example S3ReplicationRole trust policy:
 
 Follow these steps to configure the automation:
 
-1. Navigate to [https://console.aws.amazon.com/systems-manager/documents/AWSSupport-ConfigureS3ReplicationSameAndCrossAccount/description](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-ConfigureS3ReplicationSameAndCrossAccount/description) in Systems Manager under Documents.
+1. Navigate to [`AWSSupport-ConfigureS3ReplicationSameAndCrossAccount`](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-ConfigureS3ReplicationSameAndCrossAccount/description) in Systems Manager under Documents.
 
 1. Select **Execute automation.**
 

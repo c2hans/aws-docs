@@ -90,39 +90,39 @@ Each Region is designed to be completely isolated from the other Regions. Within
   <tr><th>Region Name/Region</th><th>Endpoint</th><th>Protocol</th><th></th></tr>
 </thead>
 <tbody>
-  <tr><td>US East (Ohio) Region<br />`us-east-2`</td><td>`elasticache.us-east-2.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>US East (N. Virginia) Region<br />`us-east-1`</td><td>`elasticache.us-east-1.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>US West (N. California) Region<br />`us-west-1`</td><td>`elasticache.us-west-1.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>US West (Oregon) Region<br />`us-west-2`</td><td>`elasticache.us-west-2.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Canada (Central) Region<br />`ca-central-1`</td><td>`elasticache.ca-central-1.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Canada (West) Region<br />`ca-west-1`</td><td>`elasticache.ca-west-1.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Asia Pacific (Jakarta)<br />`ap-southeast-3`</td><td>`elasticache.ap-southeast-3.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Asia Pacific (Mumbai) Region<br />`ap-south-1`</td><td>`elasticache.ap-south-1.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Asia Pacific (Hyderabad) Region<br />`ap-south-2`</td><td>`elasticache.ap-south-2.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Asia Pacific (Tokyo) Region<br />`ap-northeast-1`</td><td>`elasticache.ap-northeast-1.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Asia Pacific (Seoul) Region<br />`ap-northeast-2`</td><td>`elasticache.ap-northeast-2.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Asia Pacific (Osaka) Region<br />`ap-northeast-3`</td><td>`elasticache.ap-northeast-3.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Asia Pacific (Singapore) Region<br />`ap-southeast-1`</td><td>`elasticache.ap-southeast-1.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Asia Pacific (Sydney) Region<br />`ap-southeast-2`</td><td>`elasticache.ap-southeast-2.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Europe (Frankfurt) Region<br />`eu-central-1`</td><td>`elasticache.eu-central-1.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Europe (Zurich) Region<br />`eu-central-2`</td><td>`elasticache.eu-central-2.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Europe (Stockholm) Region<br />`eu-north-1`</td><td>`elasticache.eu-north-1.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Middle East (Bahrain) Region<br />`me-south-1`</td><td>`elasticache.me-south-1.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Middle East (UAE) Region<br />`me-central-1`</td><td>`elasticache.me-central-1.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Europe (Ireland) Region<br />`eu-west-1`</td><td>`elasticache.eu-west-1.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Europe (London) Region<br />`eu-west-2`</td><td>`elasticache.eu-west-2.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>EU (Paris) Region<br />`eu-west-3`</td><td>`elasticache.eu-west-3.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Europe (Milan) Region<br />`eu-south-1`</td><td>`elasticache.eu-south-1.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Europe (Spain) Region<br />`eu-south-2`</td><td>`elasticache.eu-south-2.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>South America (São Paulo) Region<br />`sa-east-1`</td><td>`elasticache.sa-east-1.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>China (Beijing) Region<br />`cn-north-1`</td><td>`elasticache.cn-north-1.amazonaws.com.cn`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>China (Ningxia) Region<br />`cn-northwest-1`</td><td>`elasticache.cn-northwest-1.amazonaws.com.cn`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Asia Pacific (Hong Kong) Region<br />`ap-east-1`</td><td>`elasticache.ap-east-1.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Africa (Cape Town) Region<br />`af-south-1`</td><td>`elasticache.af-south-1.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>Israel (Tel Aviv) Region<br />`il-central-1`</td><td>`elasticache.il-central-1.amazonaws.com`</td><td>HTTPS</td><td></td></tr>
-  <tr><td>AWS GovCloud (US-West)<br />`us-gov-west-1`</td><td>elasticache.us-gov-west-1.amazonaws.com</td><td>HTTPS</td><td></td></tr>
-  <tr><td>AWS GovCloud (US-East)<br />`us-gov-east-1`</td><td>elasticache.us-gov-east-1.amazonaws.com</td><td>HTTPS</td><td></td></tr>
-  <tr><td colspan="3">For information on using the AWS GovCloud (US) with ElastiCache, see [Services in the AWS GovCloud (US) region: ElastiCache](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-elc.html).</td><td></td></tr>
+  <tr><td>US East (Ohio) Region<br /><code>us-east-2</code></td><td><code>elasticache.us-east-2.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>US East (N. Virginia) Region<br /><code>us-east-1</code></td><td><code>elasticache.us-east-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>US West (N. California) Region<br /><code>us-west-1</code></td><td><code>elasticache.us-west-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>US West (Oregon) Region<br /><code>us-west-2</code></td><td><code>elasticache.us-west-2.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Canada (Central) Region<br /><code>ca-central-1</code></td><td><code>elasticache.ca-central-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Canada (West) Region<br /><code>ca-west-1</code></td><td><code>elasticache.ca-west-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Asia Pacific (Jakarta)<br /><code>ap-southeast-3</code></td><td><code>elasticache.ap-southeast-3.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Asia Pacific (Mumbai) Region<br /><code>ap-south-1</code></td><td><code>elasticache.ap-south-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Asia Pacific (Hyderabad) Region<br /><code>ap-south-2</code></td><td><code>elasticache.ap-south-2.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Asia Pacific (Tokyo) Region<br /><code>ap-northeast-1</code></td><td><code>elasticache.ap-northeast-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Asia Pacific (Seoul) Region<br /><code>ap-northeast-2</code></td><td><code>elasticache.ap-northeast-2.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Asia Pacific (Osaka) Region<br /><code>ap-northeast-3</code></td><td><code>elasticache.ap-northeast-3.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Asia Pacific (Singapore) Region<br /><code>ap-southeast-1</code></td><td><code>elasticache.ap-southeast-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Asia Pacific (Sydney) Region<br /><code>ap-southeast-2</code></td><td><code>elasticache.ap-southeast-2.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Europe (Frankfurt) Region<br /><code>eu-central-1</code></td><td><code>elasticache.eu-central-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Europe (Zurich) Region<br /><code>eu-central-2</code></td><td><code>elasticache.eu-central-2.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Europe (Stockholm) Region<br /><code>eu-north-1</code></td><td><code>elasticache.eu-north-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Middle East (Bahrain) Region<br /><code>me-south-1</code></td><td><code>elasticache.me-south-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Middle East (UAE) Region<br /><code>me-central-1</code></td><td><code>elasticache.me-central-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Europe (Ireland) Region<br /><code>eu-west-1</code></td><td><code>elasticache.eu-west-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Europe (London) Region<br /><code>eu-west-2</code></td><td><code>elasticache.eu-west-2.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>EU (Paris) Region<br /><code>eu-west-3</code></td><td><code>elasticache.eu-west-3.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Europe (Milan) Region<br /><code>eu-south-1</code></td><td><code>elasticache.eu-south-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Europe (Spain) Region<br /><code>eu-south-2</code></td><td><code>elasticache.eu-south-2.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>South America (São Paulo) Region<br /><code>sa-east-1</code></td><td><code>elasticache.sa-east-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>China (Beijing) Region<br /><code>cn-north-1</code></td><td><code>elasticache.cn-north-1.amazonaws.com.cn</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>China (Ningxia) Region<br /><code>cn-northwest-1</code></td><td><code>elasticache.cn-northwest-1.amazonaws.com.cn</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Asia Pacific (Hong Kong) Region<br /><code>ap-east-1</code></td><td><code>elasticache.ap-east-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Africa (Cape Town) Region<br /><code>af-south-1</code></td><td><code>elasticache.af-south-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Israel (Tel Aviv) Region<br /><code>il-central-1</code></td><td><code>elasticache.il-central-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>AWS GovCloud (US-West)<br /><code>us-gov-west-1</code></td><td><code>elasticache.us-gov-west-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>AWS GovCloud (US-East)<br /><code>us-gov-east-1</code></td><td><code>elasticache.us-gov-east-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td colspan="3">For information on using the AWS GovCloud (US) with ElastiCache, see <a href="https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-elc.html">Services in the AWS GovCloud (US) region: ElastiCache</a>.</td><td></td></tr>
 </tbody>
 </table>
 

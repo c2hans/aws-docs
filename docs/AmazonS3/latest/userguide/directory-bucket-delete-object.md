@@ -140,7 +140,7 @@ The following `delete-object` example command shows how you can use the AWS CLI 
 aws s3api delete-object --bucket {{bucket-base-name}}--{{zone-id}}--x-s3 --key {{KEY_NAME}}
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-object.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-object.html) in the *AWS CLI Command Reference*.
+For more information, see [delete-object](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-object.html) in the *AWS CLI Command Reference*.
 
 The following `delete-objects` example command shows how you can use the AWS CLI to delete objects from a directory bucket. To run this command, replace the `{{user input placeholders}}` with your own information.
 
@@ -171,4 +171,4 @@ The `delete-objects` example command is as follows:
 aws s3api delete-objects --bucket {{bucket-base-name}}--{{zone-id}}--x-s3 --delete file://{{delete.json}}
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-objects.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-objects.html) in the *AWS CLI Command Reference*.
+For more information, see [delete-objects](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-objects.html) in the *AWS CLI Command Reference*.

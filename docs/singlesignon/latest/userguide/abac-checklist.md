@@ -27,7 +27,7 @@ This checklist includes the configuration tasks that are necessary to prepare yo
   - **Reference:**  +  [Enable and configure attributes for access control](configure-abac.md)
 
 - **5**
-  - **Task:** Create custom permissions policies within your permission set and use access control attributes to create ABAC rules so that users can only access resources with matching tags. User attributes that you configured in step 4 are used as tags in AWS for access control decisions. You can refer to the access control attributes in the permissions policy using the `aws:PrincipalTag/key` condition.
+  - **Task:** Create custom permissions policies within your permission set (or IAM role when using account access manager) and use access control attributes to create ABAC rules so that users can only access resources with matching tags. User attributes that you configured in step 4 are used as tags in AWS for access control decisions. You can refer to the access control attributes in the permissions policy using the `aws:PrincipalTag/key` condition.
   - **Reference:**  +  [Create permission policies for ABAC in IAM Identity Center](configure-abac-policies.md)
 
 - **6**

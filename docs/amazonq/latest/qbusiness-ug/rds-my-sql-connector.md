@@ -10,7 +10,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 **Note**
 Amazon RDS (MySQL) connector remains fully supported for existing customers through May 31, 2026. While this connector is no longer available for new users, current users can continue to use it without interruption. We are continuously evolving our connector portfolio to offer more scalable and customizable solutions. For future integrations, we recommend exploring the [Amazon Q Business Custom Connector Framework](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/custom-connector.html), designed to support a broader range of enterprise use cases with enhanced flexibility.
 
-Amazon RDS (MySQL) (Amazon Relational Database Service) is a web service that makes it easier to set up, operate, and scale a relational database in the AWS Cloud. You can connect your Amazon RDS (MySQL) instance to Amazon Q Business – using either the AWS Management Console, CLI, or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API – and create an Amazon Q web experience.
+Amazon RDS (MySQL) (Amazon Relational Database Service) is a web service that makes it easier to set up, operate, and scale a relational database in the AWS Cloud. You can connect your Amazon RDS (MySQL) instance to Amazon Q Business – using either the AWS Management Console, CLI, or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API – and create an Amazon Q web experience.
 
 The Amazon Q Aurora (MySQL) data source connector supports Amazon RDS MySql 5.6, 5.7, and 8.0.
 

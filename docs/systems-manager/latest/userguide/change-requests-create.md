@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/change-
 **Change Manager availability change**
 AWS Systems Manager Change Manager will no longer be open to new customers starting November 7, 2025. If you would like to use Change Manager, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [AWS Systems Manager Change Manager availability change](https://docs.aws.amazon.com/systems-manager/latest/userguide/change-manager-availability-change.html).
 
-When you create a change request in Change Manager, a tool in AWS Systems Manager, the change template you select typically does the following:
+When you create a change request in Change Manager, the change template you select typically does the following:
 + Designates approvers for the change request or specifies how many approvals are required
 + Specifies the Amazon Simple Notification Service (Amazon SNS) topic to use to notify approvers about your change request
 + Specifies an Amazon CloudWatch alarm to monitor the runbook workflow for the change request
@@ -77,7 +77,7 @@ If the option to select a runbook isn't available, the change template author ha
 
 1. For **Change request information**, use Markdown to provide additional information about the change request to help reviewers decide whether to approve or reject the change request. The author of the template you're using might have provided instructions or questions for you to answer.
 **Note**
-Markdown is a markup language that allows you to add wiki-style descriptions to documents and individual steps within the document. For more information about using Markdown, see [Using Markdown in AWS](https://docs.aws.amazon.com/general/latest/gr/aws-markdown.html).
+Markdown is a markup language that lets you add wiki-style descriptions to documents and individual steps within the document. For more information about using Markdown, see [Using Markdown in AWS](https://docs.aws.amazon.com/general/latest/gr/aws-markdown.html).
 
 1. In the **Workflow start time** section, choose one of the following:
    + **Run the operation at a scheduled time** – For **Requested start time**, enter the date and time you propose for running the runbook workflow for this request. For **Estimated end time**, enter the date and time that you expect the runbook workflow to complete. (This time is an estimate only that you're providing for reviewers.)
@@ -90,7 +90,7 @@ Choose **View Change Calendar** to check for any blocking events for the time yo
    1. If **Approval type** options are presented, choose one of the following:
       + **Automatic approval **– The change template you selected is configured to allow change requests to run automatically without review by any approvers. Continue to Step 11.
 **Note**
-The permissions specified in the IAM policies that govern your use of Systems Manager must not restrict you from submitting auto-approval change requests in order for them to run automatically.
+The permissions specified in the IAM policies that govern your use of Systems Manager must not restrict you from submitting auto-approval change requests for them to run automatically.
       + **Specify approvers** – You must add one or more users, groups, or IAM roles to review and approve this change request.
 **Note**
 You can choose to specify reviewers even if the permissions specified in the IAM policies that govern your use of Systems Manager allow you to run auto-approval change requests.
@@ -184,7 +184,7 @@ You can create a change request using the AWS Command Line Interface (AWS CLI) b
 
    Replace {{placeholders}} with values for your change request.
 **Note**
-This sample JSON creates a change request using the `AWS-HelloWorldChangeTemplate` change template and `AWS-HelloWorld` runbook. To help you adapt this sample for your own change requests, see [https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_StartChangeRequestExecution.html](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_StartChangeRequestExecution.html) in the *AWS Systems Manager API Reference* for information about all available parameters
+This sample JSON creates a change request using the `AWS-HelloWorldChangeTemplate` change template and `AWS-HelloWorld` runbook. To help you adapt this sample for your own change requests, see [StartChangeRequestExecution](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_StartChangeRequestExecution.html) in the *AWS Systems Manager API Reference* for information about all available parameters
 For more information about approvals for change requests, see [About change request approvals](#cm-approvals-requests).
 
    ```

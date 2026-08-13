@@ -9,5 +9,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::Rekognition::Collection](aws-resource-rekognition-collection.md)
++ [AWS::Rekognition::Dataset](aws-resource-rekognition-dataset.md)
 + [AWS::Rekognition::Project](aws-resource-rekognition-project.md)
 + [AWS::Rekognition::StreamProcessor](aws-resource-rekognition-streamprocessor.md)

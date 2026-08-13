@@ -14,7 +14,7 @@ Instead of creating or using an existing connection in your account, you can use
 This feature is not available in the Asia Pacific (Hong Kong), Asia Pacific (Hyderabad), Asia Pacific (Jakarta), Asia Pacific (Melbourne), Asia Pacific (Osaka), Africa (Cape Town), Middle East (Bahrain), Middle East (UAE), Europe (Spain), Europe (Zurich), Israel (Tel Aviv), or AWS GovCloud (US-West) Regions. To reference other available actions, see [Product and service integrations with CodePipeline](integrations.md). For considerations with this action in the Europe (Milan) Region, see the note in [CodeStarSourceConnection for Bitbucket Cloud, GitHub, GitHub Enterprise Server, GitLab.com, and GitLab self-managed actions](action-reference-CodestarConnectionSource.md).
 
 To add a source action for your GitHub or GitHub Enterprise Cloud repository in CodePipeline, you can choose either to:
-+ Use the CodePipeline console **Create pipeline** wizard or **Edit action** page to choose the **GitHub (via GitHub App)** provider option. See [Create a connection to GitHub Enterprise Server (console)](connections-ghes.md#connections-ghes-console) to add the action. The console helps you create a connections resource.
++ Use the CodePipeline console **Create pipeline** wizard or **Edit action** page to choose the **GitHub (via GitHub App)** provider option. See [Create a connection to GitHub (console)](#connections-github-console) to add the action. The console helps you create a connections resource.
 **Note**
 For a tutorial that walks you through how to add a GitHub connection and use the **Full clone** option in your pipeline to clone metadata, see [Tutorial: Use full clone with a GitHub pipeline source](tutorials-github-gitclone.md).
 + Use the CLI to add the action configuration for the `CodeStarSourceConnection` action with the `GitHub` provider with the CLI steps shown in [Create a pipeline (CLI)](pipelines-create.md#pipelines-create-cli).
@@ -92,7 +92,7 @@ Use these steps on the **Edit action** page to save your source action with your
 
 1. In **Repository name**, choose the name of your third-party repository.
 
-1. Under **Pipeline triggers** you can add triggers if your action is an CodeConnections action. To configure the pipeline trigger configuration and to optionally filter with triggers, see more details in [Add trigger with code push or pull request event types](pipelines-filter.md).
+1. Under **Pipeline triggers** you can add triggers if your action is a CodeConnections action. To configure the pipeline trigger configuration and to optionally filter with triggers, see more details in [Add trigger with code push or pull request event types](pipelines-filter.md).
 
 1. In **Output artifact format**, you must choose the format for your artifacts.
    + To store output artifacts from the GitHub action using the default method, choose **CodePipeline default**. The action accesses the files from the GitHub repository and stores the artifacts in a ZIP file in the pipeline artifact store.

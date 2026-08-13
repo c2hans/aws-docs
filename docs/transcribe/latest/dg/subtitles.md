@@ -10,9 +10,9 @@ Amazon Transcribe supports WebVTT (\*.vtt) and SubRip (\*.srt) output for use as
 Subtitles are displayed at the same time text is spoken, and remain visible until there is a natural pause or the speaker finishes talking. Note that if you enable subtitles in your transcription request and your audio contains no speech, a subtitle file is not created.
 
 **Important**
-Amazon Transcribe uses a default start index of `0` for subtitle output, which differs from the more widely used value of `1`. If you require a start index of `1`, you can specify this in the AWS Management Console or in your API request using the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Subtitles.html#transcribe-Type-Subtitles-OutputStartIndex](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Subtitles.html#transcribe-Type-Subtitles-OutputStartIndex) parameter.
+Amazon Transcribe uses a default start index of `0` for subtitle output, which differs from the more widely used value of `1`. If you require a start index of `1`, you can specify this in the AWS Management Console or in your API request using the [`OutputStartIndex`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Subtitles.html#transcribe-Type-Subtitles-OutputStartIndex) parameter.
 
-Using the incorrect start index can result in compatibility errors with other services, so be sure to verify which start index you require before creating your subtitles. If you're uncertain which value to use, we recommend choosing `1`. Refer to [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Subtitles.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Subtitles.html) for more information.
+Using the incorrect start index can result in compatibility errors with other services, so be sure to verify which start index you require before creating your subtitles. If you're uncertain which value to use, we recommend choosing `1`. Refer to [`Subtitles`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Subtitles.html) for more information.
 
 Features supported with subtitles:
 + **Content redaction** — Any redacted content is reflected as '`PII`' in both your subtitle and regular transcript output files. The audio is not altered.
@@ -49,7 +49,7 @@ You can create subtitle files using the **AWS Management Console**, **AWS CLI**,
 ### AWS CLI
 <a name="subtitles-cli"></a>
 
-This example uses the [start-transcription-job](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/start-transcription-job.html) command and `Subtitles` parameter. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Subtitles.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Subtitles.html).
+This example uses the [start-transcription-job](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/start-transcription-job.html) command and `Subtitles` parameter. For more information, see [`StartTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [`Subtitles`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Subtitles.html).
 
 ```
 aws transcribe start-transcription-job \
@@ -93,7 +93,7 @@ The file *my-first-subtitle-job.json* contains the following request body.
 ### AWS SDK for Python (Boto3)
 <a name="subtitles-python-batch"></a>
 
-This example uses the AWS SDK for Python (Boto3) to add subtitles using the `Subtitles` argument for the [start\_transcription\_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_transcription_job) method. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Subtitles.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Subtitles.html).
+This example uses the AWS SDK for Python (Boto3) to add subtitles using the `Subtitles` argument for the [start\_transcription\_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_transcription_job) method. For more information, see [`StartTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [`Subtitles`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Subtitles.html).
 
 For additional examples using the AWS SDKs, including feature-specific, scenario, and cross-service examples, refer to the [Code examples for Amazon Transcribe using AWS SDKs](service_code_examples.md) chapter.
 

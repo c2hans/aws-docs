@@ -55,7 +55,7 @@ For information about using the AWS CLI with CodeGuru Reviewer, see the [CodeGur
    aws codeguru-reviewer disassociate-repository --association-arn arn:aws:codeguru-reviewer:us-west-2:123456789012:association:repository-association-uuid
    ```
 
-1. If successful, this command outputs a [https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociation.html](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociation.html) object with a state of `Disassociating`.
+1. If successful, this command outputs a [`RepositoryAssociation`](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociation.html) object with a state of `Disassociating`.
 
    ```
    {

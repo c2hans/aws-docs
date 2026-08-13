@@ -171,7 +171,7 @@ Kubernetes maintains the number of replicas that are specified in the manifest. 
 
    In the previous output, the value for `IP:` is a unique IP address that can be reached from any node or Pod within the cluster, but it can’t be reached from outside of the cluster. The values for `Endpoints` are IP addresses assigned from within your VPC to the Pods that are part of the service.
 
-1. View the details of one of the Pods listed in the output when you [viewed the namespace](#sample-app-view-namespace) in a previous step. Replace {{776d8f8fd8-78w66}} with the value returned for one of your Pods.
+1. View the details of one of the Pods listed in the output when you [viewed the namespace](#sample-app-view-namespace) in a previous step. Replace {{65b7669776-m6qxz}} with the value returned for one of your Pods.
 
    ```
    kubectl -n eks-sample-app describe pod eks-sample-linux-deployment-65b7669776-m6qxz

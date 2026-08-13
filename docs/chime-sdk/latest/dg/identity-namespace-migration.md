@@ -77,7 +77,7 @@ The [Amazon Chime SDK Identity](https://docs.aws.amazon.com/chime-sdk/latest/API
 Expiration settings on creation of AppInstanceUsers allow you to create temporary users. For example, you can create chat users that only exist for the duration of a large broadcast. Only the Identity namespace supports expiration settings for AppInstanceUsers.
 
 **Bots**
-You use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_AppInstanceBot.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_AppInstanceBot.html) API to add chat bots powered by Amazon Lex V2 into your applications. You can only use AppInstanceBots in the Identity namespace. For more information about bots, refer to [Using AppInstanceBots as intelligent channel agents for Amazon Chime SDK messaging](appinstance-bots.md) in this guide.
+You use the [AppInstanceBot](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_AppInstanceBot.html) API to add chat bots powered by Amazon Lex V2 into your applications. You can only use AppInstanceBots in the Identity namespace. For more information about bots, refer to [Using AppInstanceBots as intelligent channel agents for Amazon Chime SDK messaging](appinstance-bots.md) in this guide.
 
 **Additional APIs**
 The Identity namespace has a growing list of additional APIs that the Chime namespace does not have. If you are getting started with the Amazon Chime SDK, use the Identity namespace to have access to all of the latest features. For more information about the current APIs, refer to [Amazon Chime SDK Identity](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Identity.html) in the *Amazon Chime SDK API Reference*.

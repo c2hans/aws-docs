@@ -73,7 +73,7 @@ These events all contain the following shared fields:
 
 When a job's state changes from `IN_PROGRESS` to `COMPLETED` or `FAILED`, Amazon Transcribe generates an event. To identify the job that changed state and initiate the event in your target, use the event's `TranscriptionJobName` field. An Amazon Transcribe event contains the following information. A `FailureReason` field is added under `detail` if your transcription job status is `FAILED`.
 
-Note that this event applies only to the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) API operation.
+Note that this event applies only to the [`StartTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) API operation.
 
 ```
 {
@@ -99,7 +99,7 @@ Note that this event applies only to the [https://docs.aws.amazon.com/transcribe
 
 When you enable [automatic language identification](lang-id.md), Amazon Transcribe generates an event when the language identification state is `COMPLETED` or `FAILED`. To identify the job that changed state and initiate the event in your target, use the event's `JobName` field. An Amazon Transcribe event contains the following information. A `FailureReason` field is added under `detail` if your language identification status is `FAILED`.
 
-Note that this event applies only to the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) API operation when the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_LanguageIdSettings.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_LanguageIdSettings.html) parameter is included.
+Note that this event applies only to the [`StartTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) API operation when the [`LanguageIdSettings`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_LanguageIdSettings.html) parameter is included.
 
 ```
 {
@@ -127,7 +127,7 @@ Note that this event applies only to the [https://docs.aws.amazon.com/transcribe
 
 When a [Call Analytics](call-analytics.md) job state changes from `IN_PROGRESS` to `COMPLETED` or `FAILED`, Amazon Transcribe generates an event. To identify the Call Analytics job that changed state and initiates the event in your target, use the event's `JobName` field. An Amazon Transcribe event contains the following information. A `FailureReason` field is added under `detail` if your Call Analytics job status is `FAILED`.
 
-Note that this event applies only to the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartCallAnalyticsJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartCallAnalyticsJob.html) API operation.
+Note that this event applies only to the [`StartCallAnalyticsJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartCallAnalyticsJob.html) API operation.
 
 ```
 {
@@ -159,7 +159,7 @@ Note that this event applies only to the [https://docs.aws.amazon.com/transcribe
 
 When a [post-call analytics](tca-post-call.md) transcription changes state from `IN_PROGRESS` to `COMPLETED` or `FAILED`, Amazon Transcribe generates an event. To identify the Call Analytics post-call job that changed state and initiate the event in your target, use the event's `StreamingSessionId` field.
 
-Note that this event applies only to the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartCallAnalyticsStreamTranscription.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartCallAnalyticsStreamTranscription.html) API operation when the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_PostCallAnalyticsSettings.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_PostCallAnalyticsSettings.html) parameter is included.
+Note that this event applies only to the [`StartCallAnalyticsStreamTranscription`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartCallAnalyticsStreamTranscription.html) API operation when the [`PostCallAnalyticsSettings`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_PostCallAnalyticsSettings.html) parameter is included.
 
 A `COMPLETED` event contains the following information:
 
@@ -250,7 +250,7 @@ When a state changes for a AWS HealthScribe post-stream analytics operation, suc
 When a [custom vocabulary](custom-vocabulary.md)'s state changes from `PENDING` to `READY` or `FAILED`, Amazon Transcribe generates an event. To identify the custom vocabulary that changed state and initiate the event in your target, use the event's `VocabularyName` field. An Amazon Transcribe event contains the following information. A `FailureReason` field is added under `detail` if your custom vocabulary state is `FAILED`.
 
 **Note**
-This event applies only to the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html) API operation.
+This event applies only to the [`CreateVocabulary`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html) API operation.
 
 ```
 {

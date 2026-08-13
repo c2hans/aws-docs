@@ -488,7 +488,7 @@ The following shows an example event for a root user changing their password.
 ## Example event records for federated users
 <a name="cloudtrail-event-reference-aws-console-sign-in-events-federated-user"></a>
 
-The following examples show event records for federated users. Federated users are given temporary security credentials to access AWS resources through an [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) request.
+The following examples show event records for federated users. Federated users are given temporary security credentials to access AWS resources through an [`AssumeRole`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) request.
 
 The following shows an example event for a federation encryption request. The original access key ID is provided in the `accessKeyId` field of the `userIdentity` element. The `accessKeyId` field in the `responseElements` contains a new access key ID if the requested `sessionDuration` is passed in the encryption request, otherwise it contains the value of the original access key ID.
 

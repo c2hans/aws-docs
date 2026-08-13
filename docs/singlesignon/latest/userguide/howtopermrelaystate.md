@@ -43,4 +43,4 @@ The relay state URL must be within the AWS Management Console.
 **Note**
 You can automate this process by using the AWS API, an AWS SDK, or the AWS Command Line Interface(AWS CLI). For more information, see:
 The `CreatePermissionSet` or `UpdatePermissionSet` actions in the [IAM Identity Center API Reference](https://docs.aws.amazon.com/singlesignon/latest/APIReference/welcome.html)
-The `create-permission-set` or `update-permission-set` commands in the [https://docs.aws.amazon.com/cli/latest/reference/sso-admin/index.html#cli-aws-sso-admin](https://docs.aws.amazon.com/cli/latest/reference/sso-admin/index.html#cli-aws-sso-admin) section of the *AWS CLI Command Reference*.
+The `create-permission-set` or `update-permission-set` commands in the [sso-admin](https://docs.aws.amazon.com/cli/latest/reference/sso-admin/index.html#cli-aws-sso-admin) section of the *AWS CLI Command Reference*.

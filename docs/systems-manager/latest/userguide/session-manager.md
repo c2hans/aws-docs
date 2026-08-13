@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/session
 # AWS Systems Manager Session Manager
 <a name="session-manager"></a>
 
-Session Manager is a fully managed AWS Systems Manager tool. With Session Manager, you can manage your Amazon Elastic Compute Cloud (Amazon EC2) instances, edge devices, on-premises servers, and virtual machines (VMs). You can use either an interactive one-click browser-based shell or the AWS Command Line Interface (AWS CLI). Session Manager provides secure node management without the need to open inbound ports, maintain bastion hosts, or manage SSH keys. Session Manager also allows you to comply with corporate policies that require controlled access to managed nodes, strict security practices, and logs with node access details, while providing end users with simple one-click cross-platform access to your managed nodes. To get started with Session Manager, open the [Systems Manager console](https://console.aws.amazon.com/systems-manager/session-manager). In the navigation pane, choose **Session Manager**.
+Session Manager is a fully managed AWS Systems Manager tool. With Session Manager, you can manage your Amazon Elastic Compute Cloud (Amazon EC2) instances, edge devices, on-premises servers, and virtual machines (VMs). You can use either an interactive browser-based shell or the AWS Command Line Interface (AWS CLI). Session Manager provides secure node management without the need to open inbound ports, maintain bastion hosts, or manage SSH keys. Session Manager also lets you comply with corporate policies that require controlled access to managed nodes, strict security practices, and logs with node access details, while providing end users with simple cross-platform access to your managed nodes. To get started with Session Manager, open the [Systems Manager console](https://console.aws.amazon.com/systems-manager/session-manager). In the navigation pane, choose **Session Manager**.
 
 ## How can Session Manager benefit my organization?
 <a name="session-manager-benefits"></a>
@@ -19,7 +19,7 @@ Session Manager offers these benefits:
 +  **No open inbound ports and no need to manage bastion hosts or SSH keys**
 
   Leaving inbound SSH ports and remote PowerShell ports open on your managed nodes greatly increases the risk of entities running unauthorized or malicious commands on the managed nodes. Session Manager helps you improve your security posture by letting you close these inbound ports, freeing you from managing SSH keys and certificates, bastion hosts, and jump boxes.
-+  **One-click access to managed nodes from the console and CLI**
++  **Direct access to managed nodes from the console and CLI**
 
   Using the AWS Systems Manager console or Amazon EC2 console, you can start a session with a single click. Using the AWS CLI, you can also start a session that runs a single command or a sequence of commands. Because permissions to managed nodes are provided through IAM policies instead of SSH keys or other mechanisms, the connection time is greatly reduced.
 +  **Connect to both Amazon EC2 instances and non-EC2 managed nodes in [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) environments**
@@ -38,8 +38,8 @@ Session Manager offers these benefits:
   Logging capabilities are provided through integration with the following AWS services:
   + **AWS CloudTrail** – AWS CloudTrail captures information about Session Manager API calls made in your AWS account and writes it to log files that are stored in an Amazon Simple Storage Service (Amazon S3) bucket you specify. One bucket is used for all CloudTrail logs for your account. For more information, see [Logging AWS Systems Manager API calls with AWS CloudTrail](monitoring-cloudtrail-logs.md).
   + **Amazon Simple Storage Service** – You can choose to store session log data in an Amazon S3 bucket of your choice for debugging and troubleshooting purposes. Log data can be sent to your Amazon S3 bucket with or without encryption using your AWS KMS key. For more information, see [Logging session data using Amazon S3 (console)](session-manager-logging-s3.md).
-  + **Amazon CloudWatch Logs** – CloudWatch Logs allows you to monitor, store, and access log files from various AWS services. You can send session log data to a CloudWatch Logs log group for debugging and troubleshooting purposes. Log data can be sent to your log group with or without AWS KMS encryption using your KMS key. For more information, see [Logging session data using Amazon CloudWatch Logs (console)](session-manager-logging-cloudwatch-logs.md).
-  + **Amazon EventBridge** and **Amazon Simple Notification Service** – EventBridge allows you to set up rules to detect when changes happen to AWS resources that you specify. You can create a rule to detect when a user in your organization starts or stops a session, and then receive a notification through Amazon SNS (for example, a text or email message) about the event. You can also configure a CloudWatch event to initiate other responses. For more information, see [Monitoring session activity using Amazon EventBridge (console)](session-manager-auditing.md#session-manager-auditing-eventbridge-events).
+  + **Amazon CloudWatch Logs** – With CloudWatch Logs, you can monitor, store, and access log files from various AWS services. You can send session log data to a CloudWatch Logs log group for debugging and troubleshooting purposes. Log data can be sent to your log group with or without AWS KMS encryption using your KMS key. For more information, see [Logging session data using Amazon CloudWatch Logs (console)](session-manager-logging-cloudwatch-logs.md).
+  + **Amazon EventBridge** and **Amazon Simple Notification Service** – EventBridge lets you set up rules to detect when changes happen to AWS resources that you specify. You can create a rule to detect when a user in your organization starts or stops a session, and then receive a notification through Amazon SNS (for example, a text or email message) about the event. You can also configure a CloudWatch event to initiate other responses. For more information, see [Monitoring session activity using Amazon EventBridge (console)](session-manager-auditing.md#session-manager-auditing-eventbridge-events).
 **Note**
 Logging isn't available for Session Manager sessions that connect through port forwarding or SSH. This is because SSH encrypts all session data within the secure TLS connection established between the AWS CLI and Session Manager endpoints, and Session Manager only serves as a tunnel for SSH connections.
 
@@ -48,7 +48,7 @@ Logging isn't available for Session Manager sessions that connect through port f
 + Any AWS customer who wants to improve their security posture, reduce operational overhead by centralizing access control on managed nodes, and reduce inbound node access.
 + Information Security experts who want to monitor and track managed node access and activity, close down inbound ports on managed nodes, or allow connections to managed nodes that don't have a public IP address.
 + Administrators who want to grant and revoke access from a single location, and who want to provide one solution to users for Linux, macOS, and Windows Server managed nodes.
-+ Users who want to connect to a managed node with just one click from the browser or AWS CLI without having to provide SSH keys.
++ Users who want to connect to a managed node directly from the browser or AWS CLI without having to provide SSH keys.
 
 ## What are the main features of Session Manager?
 <a name="session-manager-features"></a>
@@ -71,7 +71,7 @@ To use the AWS CLI to run session commands, you must be using version 1.16.12 of
   Through the use of IAM policies, you can control which members of your organization can initiate sessions to managed nodes and which nodes they can access. You can also provide temporary access to your managed nodes. For example, you might want to give an on-call engineer (or a group of on-call engineers) access to production servers only for the duration of their rotation.
 +  **Logging support**
 
-  Session Manager provide you with options for logging session histories in your AWS account through integration with a number of other AWS services. For more information, see [Logging session activity](session-manager-auditing.md) and [Enabling and disabling session logging](session-manager-logging.md).
+  Session Manager provide you with options for logging session histories in your AWS account through integration with several other AWS services. For more information, see [Logging session activity](session-manager-auditing.md) and [Enabling and disabling session logging](session-manager-logging.md).
 +  **Configurable shell profiles**
 
   Session Manager provides you with options to configure preferences within sessions. These customizable profiles allow you to define preferences such as shell preferences, environment variables, working directories, and running multiple commands when a session is started.

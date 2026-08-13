@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 When you attach a VPC to a core network edge in AWS Cloud WAN, you must specify one subnet from each Availability Zone to be used by the core network edge to route traffic. Specifying one subnet from an Availability Zone enables traffic to reach resources in every subnet in that Availability Zone. For more information about limits to core network VPC attachments, see [Transit Gateway attachment to a VPC](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-vpc-attachments.html) in the *Transit Gateway User Guide*.
 
 **Important**
-You cannot select a subnet from a Local Zone while creating a Cloud WAN VPC attachment. Doing so will result in an error. For more information about Local Zones, see the [https://docs.aws.amazon.com/local-zones/latest/ug/what-is-aws-local-zones.html](https://docs.aws.amazon.com/local-zones/latest/ug/what-is-aws-local-zones.html).
+You cannot select a subnet from a Local Zone while creating a Cloud WAN VPC attachment. Doing so will result in an error. For more information about Local Zones, see the [*AWS Local Zones User Guide*](https://docs.aws.amazon.com/local-zones/latest/ug/what-is-aws-local-zones.html).
 
 ## Appliance mode
 <a name="cloudwan-appliancemode"></a>
@@ -53,7 +53,7 @@ Appliance mode is only supported for VPC attachments.
 ## DNS support
 <a name="cloudwan-dns-support"></a>
 
-DNS support in Cloud WAN enables the resolution of public DNS host names to private IP addresses when queried across VPCs attached to the same core network edge similar to the DNS resolution capability available for transit gateways. This feature is enabled by default in your core network and can be configured in your core network policy by setting the `dns-support` parameter to either `true` or `false`, with the setting applying to all core network edges in the core network. You can view your DNS support configuration through the console in the core network policy or by using the [https://docs.aws.amazon.com/cli/latest/reference/networkmanager/get-core-network.html](https://docs.aws.amazon.com/cli/latest/reference/networkmanager/get-core-network.html) command.
+DNS support in Cloud WAN enables the resolution of public DNS host names to private IP addresses when queried across VPCs attached to the same core network edge similar to the DNS resolution capability available for transit gateways. This feature is enabled by default in your core network and can be configured in your core network policy by setting the `dns-support` parameter to either `true` or `false`, with the setting applying to all core network edges in the core network. You can view your DNS support configuration through the console in the core network policy or by using the [`get-core-network`](https://docs.aws.amazon.com/cli/latest/reference/networkmanager/get-core-network.html) command.
 
 **Note**
 DNS support only works between VPCs attached to the same core network edge and does not function across different regions or between VPCs attached to different core network edges.

@@ -30,3 +30,5 @@ Review the following key rules and interactions before you modify an EC2 launch 
 1. **Automatic cleanup** – AWS Elastic Disaster Recovery deletes the EC2 launch template for source servers that have been disconnected from AWS Elastic Disaster Recovery or for which recovery has been finalized.
 
 1. **Tags** – Launch template tags always take precedence over tags set in the AWS Elastic Disaster Recovery console or tags manually added to the server.
+
+1. **Launch template AMI** – Make sure your launch template AMI matches the boot mode of your source server. If the source uses Unified Extensible Firmware Interface (UEFI), the chosen AMI must support UEFI.

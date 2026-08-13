@@ -6,9 +6,9 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AutomatedBack
 <a name="AutomatedBackups.Replicating.Describe"></a>
 
 You can use the following CLI commands to find information about replicated backups:
-+ [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-source-regions.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-source-regions.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instance-automated-backups.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instance-automated-backups.html)
++ [`describe-source-regions`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-source-regions.html)
++ [`describe-db-instances`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html)
++ [`describe-db-instance-automated-backups`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instance-automated-backups.html)
 
 The following `describe-source-regions` example lists the source AWS Regions from which automated backups can be replicated to the US West (Oregon) destination Region.
 

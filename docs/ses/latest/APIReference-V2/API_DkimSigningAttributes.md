@@ -14,7 +14,7 @@ An object that contains configuration for Bring Your Own DKIM (BYODKIM), or, for
 The attribute to use for configuring DKIM for the identity depends on the operation:
 
 1. For `PutEmailIdentityDkimSigningAttributes`:
-   + None of the values are allowed - use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutEmailIdentityDkimSigningAttributes.html#SES-PutEmailIdentityDkimSigningAttributes-request-SigningAttributesOrigin](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutEmailIdentityDkimSigningAttributes.html#SES-PutEmailIdentityDkimSigningAttributes-request-SigningAttributesOrigin) parameter instead
+   + None of the values are allowed - use the [`SigningAttributesOrigin`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutEmailIdentityDkimSigningAttributes.html#SES-PutEmailIdentityDkimSigningAttributes-request-SigningAttributesOrigin) parameter instead
 
 1. For `CreateEmailIdentity` when replicating a parent identity's DKIM configuration:
    + Allowed values: All values except `AWS_SES` and `EXTERNAL`

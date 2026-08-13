@@ -50,18 +50,18 @@ If you only have questions about AL2023, feel free to start or join a [discussio
 
 The full comparison of RPM package versions is below.
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
+- ** [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
+  - **RPM:**  [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.4.20240416 version:** 2.0.0-1.amzn2023
   - **AL2023.4.20240429 version:** 2.0.1-1.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
+- ** [`curl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal) **
+  - **RPM:**  [`curl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`curl-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`libcurl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libcurl-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`libcurl-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
   - **AL2023.4.20240416 version:** 8.5.0-1.amzn2023.0.3
   - **AL2023.4.20240429 version:** 8.5.0-1.amzn2023.0.4
 
@@ -81,8 +81,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.4.20240416 version:** 6.0.27-1.amzn2023.0.1
   - **AL2023.4.20240429 version:** 6.0.29-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
+- ** [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
+  - **RPM:**  [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.4.20240416 version:** 1.82.2-1.amzn2023
   - **AL2023.4.20240429 version:** 1.82.3-1.amzn2023
@@ -108,9 +108,9 @@ The full comparison of RPM package versions is below.
   - **AL2023.4.20240416 version:** 2.40.1-1.amzn2023.0.1
   - **AL2023.4.20240429 version:** 2.40.1-1.amzn2023.0.2
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html) **
+- ** [`glibc`](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html) **
   - **RPM:**  compat-libpthread-nonshared  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`glibc`](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  glibc-all-langpacks  / **Architectures:** aarch64, x86\_64
   - **RPM:**  glibc-benchtests  / **Architectures:** aarch64, x86\_64
   - **RPM:**  glibc-common  / **Architectures:** aarch64, x86\_64
@@ -354,45 +354,45 @@ The full comparison of RPM package versions is below.
   - **AL2023.4.20240416 version:** 2.4.58-1.amzn2023
   - **AL2023.4.20240429 version:** 2.4.59-2.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+- ** [`java-1.8.0-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
+  - **RPM:**  [`java-1.8.0-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-1.8.0-amazon-corretto-devel`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
   - **AL2023.4.20240416 version:** 1.8.0\_402.b08-1.amzn2023
   - **AL2023.4.20240429 version:** 1.8.0\_412.b08-1.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+- ** [`java-11-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
+  - **RPM:**  [`java-11-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-11-amazon-corretto-devel`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-11-amazon-corretto-headless`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-11-amazon-corretto-javadoc`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-11-amazon-corretto-jmods`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
   - **AL2023.4.20240416 version:** 11.0.22\+7-1.amzn2023
   - **AL2023.4.20240429 version:** 11.0.23\+9-1.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+- ** [`java-17-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
+  - **RPM:**  [`java-17-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-17-amazon-corretto-devel`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-17-amazon-corretto-headless`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-17-amazon-corretto-javadoc`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-17-amazon-corretto-jmods`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
   - **AL2023.4.20240416 version:** 17.0.10\+8-1.amzn2023.1
   - **AL2023.4.20240429 version:** 17.0.11\+9-1.amzn2023.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+- ** [`java-21-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
+  - **RPM:**  [`java-21-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-21-amazon-corretto-devel`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-21-amazon-corretto-headless`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-21-amazon-corretto-javadoc`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-21-amazon-corretto-jmods`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
   - **AL2023.4.20240416 version:** 21.0.2\+14-1.amzn2023.1
   - **AL2023.4.20240429 version:** 21.0.3\+9-1.amzn2023.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+- ** [`java-22-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
+  - **RPM:**  [`java-22-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-22-amazon-corretto-devel`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-22-amazon-corretto-headless`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-22-amazon-corretto-javadoc`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-22-amazon-corretto-jmods`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
   - **AL2023.4.20240416 version:** 22.0.0\+37-1.amzn2023.1
   - **AL2023.4.20240429 version:** 22.0.1\+8-1.amzn2023.1
 
@@ -454,7 +454,7 @@ The full comparison of RPM package versions is below.
   - **AL2023.4.20240416 version:** 20.11.1-1.amzn2023.0.2
   - **AL2023.4.20240429 version:** 20.12.2-1.amzn2023.0.2
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
+- ** [`python3.9`](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
   - **RPM:**  python3  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3-debug  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3-devel  / **Architectures:** aarch64, x86\_64

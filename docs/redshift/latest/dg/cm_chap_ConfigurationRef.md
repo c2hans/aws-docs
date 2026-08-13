@@ -31,6 +31,7 @@ You can use configurations to help customize your environment. With Amazon Redsh
 + [json\_serialization\_parse\_nested\_strings](r_json_serialization_parse_nested_strings.md)
 + [max\_concurrency\_scaling\_clusters](r_max_concurrency_scaling_clusters.md)
 + [max\_cursor\_result\_set\_size](max_cursor_result_set_size.md)
++ [max\_failed\_login\_attempts](max_failed_login_attempts.md)
 + [mv\_enable\_aqmv\_for\_session](r_mv_enable_aqmv_for_session.md)
 + [navigate\_super\_null\_on\_error](r_navigate_super_null_on_error.md)
 + [parse\_super\_null\_on\_error](r_parse_super_null_on_error.md)

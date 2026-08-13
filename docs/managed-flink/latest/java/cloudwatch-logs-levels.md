@@ -15,7 +15,7 @@ You should only use this metric level for troubleshooting because of the amount 
 
 The default level is **Application**. The application reports metrics at the current level and all higher levels. For example, if the reporting level is set to **Operator**, the application reports **Application**, **Task**, and **Operator** metrics.
 
-You set the CloudWatch metrics reporting level using the `MonitoringConfiguration` parameter of the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action, or the `MonitoringConfigurationUpdate` parameter of the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action. The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action sets the CloudWatch metrics reporting level to **Task**:
+You set the CloudWatch metrics reporting level using the `MonitoringConfiguration` parameter of the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action, or the `MonitoringConfigurationUpdate` parameter of the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action. The following example request for the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action sets the CloudWatch metrics reporting level to **Task**:
 
 ```
 {
@@ -32,7 +32,7 @@ You set the CloudWatch metrics reporting level using the `MonitoringConfiguratio
 }
 ```
 
-You can also configure the logging level using the `LogLevel` parameter of the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action or the `LogLevelUpdate` parameter of the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action. You can use the following log levels:
+You can also configure the logging level using the `LogLevel` parameter of the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action or the `LogLevelUpdate` parameter of the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action. You can use the following log levels:
 + `ERROR`: Logs potentially recoverable error events.
 + `WARN`: Logs warning events that might lead to an error.
 + `INFO`: Logs informational events.

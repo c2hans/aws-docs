@@ -334,6 +334,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   ListAnalysisLogExports  **
+  - **IAM action:**  [cleanrooms:ListAnalysisLogExports](#list_cleanrooms-action-ListAnalysisLogExports)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   ListAnalysisTemplates  **
   - **IAM action:**  [cleanrooms:ListAnalysisTemplates](#list_cleanrooms-action-ListAnalysisTemplates)
   - **Condition key:**
@@ -810,6 +816,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cleanrooms-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [GetAnalysisLogExport](https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetAnalysisLogExport.html)  **
+  - **Description:** Grants permission to get an analysis log export
+  - **Resource types (\*required):** [membership\*](#list_cleanrooms-resource-membership)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cleanrooms-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
 - **   [GetAnalysisTemplate](https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetAnalysisTemplate.html)  **
   - **Description:** Grants permission to view details for an analysis template
   - **Resource types (\*required):** [analysistemplate\*](#list_cleanrooms-resource-analysistemplate)
@@ -941,6 +953,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [collaboration\*](#list_cleanrooms-resource-collaboration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cleanrooms-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [configuredtableassociation\*](#list_cleanrooms-resource-configuredtableassociation) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cleanrooms-aws_ResourceTag___TagKey_)
   - **Access level:** Read
+
+- **   [ListAnalysisLogExports](https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_ListAnalysisLogExports.html)  **
+  - **Description:** Grants permission to list analysis log exports
+  - **Resource types (\*required):** [membership\*](#list_cleanrooms-resource-membership)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cleanrooms-aws_ResourceTag___TagKey_)
+  - **Access level:** List
 
 - **   [ListAnalysisTemplates](https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_ListAnalysisTemplates.html)  **
   - **Description:** Grants permission to list available analysis templates
@@ -1105,6 +1123,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [membership\*](#list_cleanrooms-resource-membership)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cleanrooms-aws_ResourceTag___TagKey_)
   - **Access level:** Read
+
+- **   [StartAnalysisLogExport](https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_StartAnalysisLogExport.html)  **
+  - **Description:** Grants permission to start an analysis log export
+  - **Resource types (\*required):** [membership\*](#list_cleanrooms-resource-membership)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cleanrooms-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
 
 - **   [StartProtectedJob](https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_StartProtectedJob.html)  **
   - **Description:** Grants permission to start protected jobs

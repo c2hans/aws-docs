@@ -68,7 +68,7 @@ The name of the Amazon ECR repository where the image was pushed.
 
 **ImageTag**
 The tag used for the image.
-The `ImageTag` output variable is not output when the source revision is overridden
+The `ImageTag` output variable is not output when the source revision is overridden.
 
 **ImageDigest**
 The `sha256` digest of the image manifest.
@@ -155,4 +155,4 @@ Actions:
 <a name="action-reference-ECR-links"></a>
 
 The following related resources can help you as you work with this action.
-+ [Tutorial: Create a pipeline with an Amazon ECR source and ECS-to-CodeDeploy deployment](tutorials-ecs-ecr-codedeploy.md) – This tutorial provides a sample app spec file and sample CodeDeploy application and deployment group to create a pipeline with a CodeCommit and Amazon ECR source that deploys to Amazon ECS instances.
++ [Tutorial: Create a pipeline with an Amazon ECR source and ECS-to-CodeDeploy deployment](tutorials-ecs-ecr-codedeploy.md) – This tutorial provides a sample AppSpec file and sample CodeDeploy application and deployment group to create a pipeline with a CodeCommit and Amazon ECR source that deploys to Amazon ECS instances.

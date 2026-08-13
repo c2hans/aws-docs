@@ -30,7 +30,7 @@ This policy includes the following permissions.
 + `s3` – Allows the user to create and read from the S3 buckets used by Strategy Recommendations.
 + `secretsmanager` – Allows the user to list secrets access in the Secrets Manager.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubStrategyConsoleFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubStrategyConsoleFullAccess.html) in the *AWS Managed Policy Reference Guide*.
+To view the permissions for this policy, see [AWSMigrationHubStrategyConsoleFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubStrategyConsoleFullAccess.html) in the *AWS Managed Policy Reference Guide*.
 
 ## AWS managed policy: AWSMigrationHubStrategyCollector
 <a name="security-iam-awsmanpol-AWSMigrationHubStrategyCollector"></a>
@@ -47,7 +47,7 @@ This policy includes the following permissions.
 + `s3` – Grants the user access to list buckets and their locations. Users are also granted access to write to, retrieve objects from, add objects to, return the access control list (ACL) of, create, access, configure encryption for, modify the `PublicAccessBlock` configuration for, set the versioning state for, and create or replace a lifecycle configuration for the S3 buckets used by Strategy Recommendations.
 + `secretsmanager` – Allows the user to access secrets in the Secrets Manager that are used by Strategy Recommendations.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubStrategyCollector.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubStrategyCollector.html) in the *AWS Managed Policy Reference Guide*.
+To view the permissions for this policy, see [AWSMigrationHubStrategyCollector](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubStrategyCollector.html) in the *AWS Managed Policy Reference Guide*.
 
 ## Strategy Recommendations updates to AWS managed policies
 <a name="security-iam-awsmanpol-updates"></a>

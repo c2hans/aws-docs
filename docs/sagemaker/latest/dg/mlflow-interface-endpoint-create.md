@@ -10,7 +10,7 @@ You can create an interface endpoint to connect to SageMaker AI MLflow. For inst
 When you create an interface endpoint, ensure that the security groups on your endpoint allow inbound and outbound access for HTTPS traffic. For more information, see [Control access to services with VPC endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-access.html#vpc-endpoints-security-groups).
 
 **Note**
-In addition to creating an interface endpoint to connect to SageMaker AI MLflow, create an interface endpoint to connect to the Amazon SageMaker API. When users call [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreatePresignedMlflowTrackingServerUrl.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreatePresignedMlflowTrackingServerUrl.html) to get the URL to connect to SageMaker AI MLflow, that call goes through the interface endpoint used to connect to the SageMaker API.
+In addition to creating an interface endpoint to connect to SageMaker AI MLflow, create an interface endpoint to connect to the Amazon SageMaker API. When users call [`CreatePresignedMlflowTrackingServerUrl`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreatePresignedMlflowTrackingServerUrl.html) to get the URL to connect to SageMaker AI MLflow, that call goes through the interface endpoint used to connect to the SageMaker API.
 
 When you create the interface endpoint, specify **aws.sagemaker.{{AWS Region}}.experiments** as the service name. After you create the interface endpoint, enable private DNS for your endpoint. When you connect to SageMaker AI MLflow from within the VPC using the SageMaker Python SDK, you connect through the interface endpoint instead of the public internet.
 

@@ -36,7 +36,7 @@ This section describes how to use the Athena console to generate table or column
 1. In the **Generate statistics** dialog box, choose **All columns** to generate statistics for all columns in the table, or choose **Selected columns** to select specific columns. **All columns** is the default setting.
 ![The generate statistics dialog box.](http://docs.aws.amazon.com/athena/latest/ug/images/cost-based-optimizer-2.png)
 
-1. For **AWS Glue service role**, create or select an existing service role to give permission to AWS Glue to generate statistics. The AWS Glue service role also requires [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) permissions to the Amazon S3 bucket that contains the table's data.
+1. For **AWS Glue service role**, create or select an existing service role to give permission to AWS Glue to generate statistics. The AWS Glue service role also requires [`S3:GetObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) permissions to the Amazon S3 bucket that contains the table's data.
 ![Choosing a AWS Glue service role.](http://docs.aws.amazon.com/athena/latest/ug/images/cost-based-optimizer-3.png)
 
 1. Choose **Generate statistics**. A **Generating statistics for {{table\_name}}** notification banner displays the task status.

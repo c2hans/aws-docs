@@ -81,17 +81,17 @@ new WafwebaclToAppsync(this, "test-wafwebacl-appsync", new WafwebaclToAppsyncPro
 
 |  **Name**  |  **Type**  |  **Description**  |
 | --- | --- | --- |
-| existingAppsyncApi |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_appsync.CfnGraphQLApi.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_appsync.CfnGraphQLApi.html)  | The existing Appsync CfnGraphQLApi object that will be protected with the WAF web ACL. *Note that a WAF web ACL can only be added to a configured AppSync API, so this construct only accepts an existing CfnGraphQLApi and does not accept CfnGraphQLApiProps.*  |
-| existingWebaclObj? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_waf.CfnWebACL.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_waf.CfnWebACL.html)  | Optional - existing instance of a WAF web ACL, providing both this and `webaclProps` causes an error. |
-| webaclProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_waf.CfnWebACLProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_waf.CfnWebACLProps.html)  | Optional user-provided props to override the default props for the AWS WAF web ACL. Providing both this and existingWebaclObj causes an error. To use a different collection of managed rule sets, specify a new rules property. Use our [wrapManagedRuleSet(managedGroupName: string, vendorName: string, priority: number)](../core/lib/waf-defaults.ts) function from core to create an array entry from each desired managed rule set. |
+| existingAppsyncApi |  [`appsync.CfnGraphQLApi`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_appsync.CfnGraphQLApi.html)  | The existing Appsync CfnGraphQLApi object that will be protected with the WAF web ACL. *Note that a WAF web ACL can only be added to a configured AppSync API, so this construct only accepts an existing CfnGraphQLApi and does not accept CfnGraphQLApiProps.*  |
+| existingWebaclObj? |  [`waf.CfnWebACL`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_waf.CfnWebACL.html)  | Optional - existing instance of a WAF web ACL, providing both this and `webaclProps` causes an error. |
+| webaclProps? |  [`waf.CfnWebACLProps`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_waf.CfnWebACLProps.html)  | Optional user-provided props to override the default props for the AWS WAF web ACL. Providing both this and existingWebaclObj causes an error. To use a different collection of managed rule sets, specify a new rules property. Use our [wrapManagedRuleSet(managedGroupName: string, vendorName: string, priority: number)](../core/lib/waf-defaults.ts) function from core to create an array entry from each desired managed rule set. |
 
 ## Pattern Properties
 <a name="_pattern_properties"></a>
 
 |  **Name**  |  **Type**  |  **Description**  |
 | --- | --- | --- |
-| webacl |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_waf.CfnWebACL.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_waf.CfnWebACL.html)  | Returns an instance of the waf.CfnWebACL created by the construct. |
-| appsyncApi |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_appsync.CfnGraphQLApi.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_appsync.CfnGraphQLApi.html)  | Returns an instance of the CfnGraphQLApi used by the pattern. |
+| webacl |  [`waf.CfnWebACL`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_waf.CfnWebACL.html)  | Returns an instance of the waf.CfnWebACL created by the construct. |
+| appsyncApi |  [`appsync.CfnGraphQLApi`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_appsync.CfnGraphQLApi.html)  | Returns an instance of the CfnGraphQLApi used by the pattern. |
 
 ## Default settings
 <a name="_default_settings"></a>

@@ -76,7 +76,7 @@ This policy includes the following permissions.
 
 You can attach the `AWSIoTWirelessFullPublishAccess` policy to your IAM identities.
 
-This policy grants the associated identity permissions that allow limited access to publish to AWS IoT rules on your behalf. To view this policy in the AWS Management Console, see [https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTWirelessFullPublishAccess?section=permissions](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTWirelessFullPublishAccess?section=permissions).
+This policy grants the associated identity permissions that allow limited access to publish to AWS IoT rules on your behalf. To view this policy in the AWS Management Console, see [`AWSIoTWirelessFullPublishAccess`](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTWirelessFullPublishAccess?section=permissions).
 
 **Permissions details**
 
@@ -107,7 +107,7 @@ This policy includes the following permissions.
 
 You can attach the `AWSIoTWirelessLogging` policy to your IAM identities.
 
-This policy grants the associated identity permissions that allow creation of Amazon CloudWatch Logs log groups and stream logs to the groups. This policy is attached to your CloudWatch logging role. To view this policy in the AWS Management Console, see [https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTWirelessLogging?section=permissions](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTWirelessLogging?section=permissions).
+This policy grants the associated identity permissions that allow creation of Amazon CloudWatch Logs log groups and stream logs to the groups. This policy is attached to your CloudWatch logging role. To view this policy in the AWS Management Console, see [`AWSIoTWirelessLogging`](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTWirelessLogging?section=permissions).
 
 **Permissions details**
 
@@ -141,7 +141,7 @@ This policy includes the following permissions.
 
 You can attach the `AWSIoTLogging` policy to your IAM identities.
 
-This policy grants the associated identity permissions that allow read-onlyaccess to AWS IoT Wireless operations. To view this policy in the AWS Management Console, see [https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTWirelessReadOnlyAccess?section=permissions](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTWirelessReadOnlyAccess?section=permissions).
+This policy grants the associated identity permissions that allow read-onlyaccess to AWS IoT Wireless operations. To view this policy in the AWS Management Console, see [`AWSIoTWirelessReadOnlyAccess`](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTWirelessReadOnlyAccess?section=permissions).
 
 **Permissions details**
 

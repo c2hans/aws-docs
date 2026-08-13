@@ -351,8 +351,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.5.20241001 version:** 0.7.1-4.amzn2023
   - **AL2023.6.20241010 version:** 0.9.0-1.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
+- ** [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
+  - **RPM:**  [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.5.20241001 version:** 2.0.4-1.amzn2023
   - **AL2023.6.20241010 version:** 2.1.0-1.amzn2023
@@ -425,8 +425,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.5.20241001 version:** 1.28.16-3.amzn2023.0.2
   - **AL2023.6.20241010 version:** 1.28.16-3.amzn2023.0.3
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
+- ** [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
+  - **RPM:**  [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.5.20241001 version:** 1.86.3-1.amzn2023
   - **AL2023.6.20241010 version:** 1.87.0-1.amzn2023
@@ -446,8 +446,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.5.20241001 version:** 12.1-5.amzn2023.0.3
   - **AL2023.6.20241010 version:** 12.1-5.amzn2023.0.4
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:** aarch64, x86\_64
+- ** [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
+  - **RPM:**  [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  golang-bin  / **Architectures:** aarch64, x86\_64
   - **RPM:**  golang-docs  / **Architectures:** noarch
   - **RPM:**  golang-misc  / **Architectures:** noarch
@@ -804,8 +804,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.5.20241001 version:** 0.4.31-4.amzn2023.0.3
   - **AL2023.6.20241010 version:** 0.4.31-4.amzn2023.0.4
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
+- ** [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
+  - **RPM:**  [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.2-bcmath  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.2-cli  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.2-common  / **Architectures:** aarch64, x86\_64

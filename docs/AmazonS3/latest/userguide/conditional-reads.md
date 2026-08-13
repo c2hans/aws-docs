@@ -17,31 +17,31 @@ With conditional reads, you can return an object based on the object's ETag or L
 <a name="conditional-read-apis"></a>
 
 The following S3 APIs support using conditional reads:
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html)
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html)
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html)
++ [GetObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html)
++ [HeadObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html)
++ [CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html)
 
 You can use the following headers to return an object dependent on the entity tag (ETag) or last modified date. For more information about object metadata such as ETags and Last-Modified, see [System-defined object metadata](UsingMetadata.md#SysMetadata).
 
-**[https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html)**
+**[GetObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html)**
 
 + `If-Match` — Return the object only if its ETag matches the one provided.
 + `If-Modified-Since` — Return the object only if it has been modified since the time specified.
 + `If-None-Match` — Return the object only if its ETag does not matches the one provided.
 + `If-Unmodified-Since` — Return the object only if it has not been modified since the time specified.
 
-For more information about these headers, errors returned, and the order S3 handles multiple conditional headers in a single request, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) in the Amazon Simple Storage Service API Reference.
+For more information about these headers, errors returned, and the order S3 handles multiple conditional headers in a single request, see [GetObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) in the Amazon Simple Storage Service API Reference.
 
-**[https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html)**
+**[HeadObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html)**
 
 + `If-Match` — Return the object only if its ETag matches the one provided.
 + `If-Modified-Since` — Return the object only if it has been modified since the time specified.
 + `If-None-Match` — Return the object only if its ETag does not matches the one provided.
 + `If-Unmodified-Since` — Return the object only if it has not been modified since the time specified.
 
-For more information about these headers, errors returned, and the order S3 handles multiple conditional headers in a single request, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html) in the Amazon Simple Storage Service API Reference.
+For more information about these headers, errors returned, and the order S3 handles multiple conditional headers in a single request, see [HeadObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html) in the Amazon Simple Storage Service API Reference.
 
-**[https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html)**
+**[CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html)**
 
 + `x-amz-copy-source-if-match` — Copies the source object only if its ETag matches the one provided.
 + `x-amz-copy-source-if-modified-since` — Copies the source object only if it has been modified since the time specified.
@@ -50,6 +50,6 @@ For more information about these headers, errors returned, and the order S3 hand
 + `If-Match` — Copies the object only if its ETag matches the one provided. `If-Match` expects the ETag value as a string.
 + `If-None-Match` — Copies the object only if its ETag does not match the one provided. `If-None-Match` expects the '\*' (asterisk) character.
 
-For more information about these headers, errors returned, and the order S3 handles multiple conditional headers in a single request, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html) in the Amazon Simple Storage Service API Reference.
+For more information about these headers, errors returned, and the order S3 handles multiple conditional headers in a single request, see [CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html) in the Amazon Simple Storage Service API Reference.
 
 For information about using conditional headers to prevent overwrites during write operations, see [How to prevent object overwrites with conditional writes](conditional-writes.md).

@@ -69,7 +69,7 @@ Parameters allow analysis runners to submit different values at submission time.
       e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 my_analysis.py
       ```
 
-   1. Alternatively, you can use Amazon S3 checksum features. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/userguide/checking-object-integrity.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/checking-object-integrity.html) in the *Amazon S3 User Guide*.
+   1. Alternatively, you can use Amazon S3 checksum features. For more information, see [*Checking object integrity in Amazon S3*](https://docs.aws.amazon.com/AmazonS3/latest/userguide/checking-object-integrity.html) in the *Amazon S3 User Guide*.
 
    1. Another alternative is to view the hashes of the executed code in the job logs.
 

@@ -99,7 +99,7 @@ When a notification is triggered, the web notification service calls the `BatchG
 ## Step 4: Create the campaign
 <a name="create-web-notification-campaign"></a>
 
-Web notifications are delivered through outbound campaigns. Create a campaign that links to the widget you configured in Step 1 and the notification view you created in Step 2. For a full walkthrough including screenshots, see [Create an outbound campaign using the console](how-to-create-campaigns.md) and [Create an outbound campaign using event triggers](how-to-create-campaigns-using-event-triggers.md).
+Web notifications are delivered through outbound campaigns. Create a campaign that links to the widget you configured in Step 1 and the notification view you created in Step 2. For a full walkthrough including screenshots, see [Create an outbound campaign using the admin website](how-to-create-campaigns.md) and [Create an outbound campaign using event triggers](how-to-create-campaigns-using-event-triggers.md).
 
 (Optional) Link a recommender to enable AI-driven product suggestions in the notification. Recommenders are only available when you select the **View** notification type and the selected view has a **Web Notification Service** integration. For more information, see [Predictive Insights (Preview)](customer-profiles-predictive-insights.md).
 

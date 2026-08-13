@@ -41,6 +41,11 @@ Defines the list of text agreements proposed to the acceptors. An example is the
 Type: [LegalTerm](API_marketplace-agreements_LegalTerm.md) object
 Required: No
 
+ ** netPaymentTerm **   <a name="AWSMarketplaceService-Type-marketplace-agreements_AcceptedTerm-netPaymentTerm"></a>
+Defines the net payment due period for the agreement, specifying when payment is due after an invoice is issued.
+Type: [NetPaymentTerm](API_marketplace-agreements_NetPaymentTerm.md) object
+Required: No
+
  ** paymentScheduleTerm **   <a name="AWSMarketplaceService-Type-marketplace-agreements_AcceptedTerm-paymentScheduleTerm"></a>
 Defines an installment-based pricing model where customers are charged a fixed price on different dates during the agreement validity period. This is used most commonly for flexible payment schedule pricing.
 Type: [PaymentScheduleTerm](API_marketplace-agreements_PaymentScheduleTerm.md) object

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DevOpsAgent::Association MCPServerGrafanaConfiguration
 <a name="aws-properties-devopsagent-association-mcpservergrafanaconfiguration"></a>
 
-<a name="aws-properties-devopsagent-association-mcpservergrafanaconfiguration-description"></a>The `MCPServerGrafanaConfiguration` property type specifies Property description not available. for an [AWS::DevOpsAgent::Association](aws-resource-devopsagent-association.md).
+Configuration for Grafana MCP server integration. Specifies the endpoint URL, tool categories, and webhook settings. Use this configuration to query metrics, dashboards, and alerting data from Grafana.
 
 ## Syntax
 <a name="aws-properties-devopsagent-association-mcpservergrafanaconfiguration-syntax"></a>
@@ -39,20 +39,20 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-association-mcpservergrafanaconfiguration-properties"></a>
 
 `EnableWebhookUpdates`  <a name="cfn-devopsagent-association-mcpservergrafanaconfiguration-enablewebhookupdates"></a>
-Property description not available.
+Specifies whether the Agent Space creates and updates webhooks for receiving notifications and events from the service.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Endpoint`  <a name="cfn-devopsagent-association-mcpservergrafanaconfiguration-endpoint"></a>
-Property description not available.
+The MCP server endpoint URL.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^https://[a-zA-Z0-9.-]+(?::[0-9]+)?(?:/.*)?$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tools`  <a name="cfn-devopsagent-association-mcpservergrafanaconfiguration-tools"></a>
-Property description not available.
+The list of tool categories to enable for the Grafana MCP server.
 *Required*: No
 *Type*: Array of String
 *Allowed values*: `alerting | annotations | asserts | cloudwatch | dashboard | datasource | elasticsearch | examples | incident | loki | navigation | oncall | prometheus | pyroscope | rendering | runpanelquery | search | searchlogs | sift`

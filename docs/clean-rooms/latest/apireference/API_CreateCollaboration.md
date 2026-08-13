@@ -114,7 +114,7 @@ Required: No
  ** [autoApprovedChangeRequestTypes](#API_CreateCollaboration_RequestSyntax) **   <a name="API-CreateCollaboration-request-autoApprovedChangeRequestTypes"></a>
 The types of change requests that are automatically approved for this collaboration.
 Type: Array of strings
-Valid Values: `ADD_MEMBER | GRANT_RECEIVE_RESULTS_ABILITY | REVOKE_RECEIVE_RESULTS_ABILITY`
+Valid Values: `ADD_MEMBER | GRANT_RECEIVE_RESULTS_ABILITY | REVOKE_RECEIVE_RESULTS_ABILITY | GRANT_EXPORT_QUERY_ANALYSIS_LOG_ABILITY | REVOKE_EXPORT_QUERY_ANALYSIS_LOG_ABILITY`
 Required: No
 
  ** [creatorDisplayName](#API_CreateCollaboration_RequestSyntax) **   <a name="API-CreateCollaboration-request-creatorDisplayName"></a>
@@ -127,7 +127,7 @@ Required: Yes
  ** [creatorMemberAbilities](#API_CreateCollaboration_RequestSyntax) **   <a name="API-CreateCollaboration-request-creatorMemberAbilities"></a>
 The abilities granted to the collaboration creator.
 Type: Array of strings
-Valid Values: `CAN_QUERY | CAN_RECEIVE_RESULTS | CAN_RUN_JOB`
+Valid Values: `CAN_QUERY | CAN_RECEIVE_RESULTS | CAN_RUN_JOB | CAN_EXPORT_QUERY_ANALYSIS_LOG`
 Required: Yes
 
  ** [creatorMLMemberAbilities](#API_CreateCollaboration_RequestSyntax) **   <a name="API-CreateCollaboration-request-creatorMLMemberAbilities"></a>

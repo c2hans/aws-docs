@@ -10,8 +10,8 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 A *data source* allows you to combine data from different places into one central index for your Amazon Q Business application. Amazon Q Business provides several easy ways to connect your data.
 
 Before adding any data, you need to set up a retriever and an index for your application. Once that's done, you can add data in three ways:
-+ **Upload documents directly** – Upload documents directly using the console or using the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) API operation.
-+ **Connecting a Amazon Q Business data source** – Use the AWS Management Console or the the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API operation to connect a supported data source connector to your Amazon Q Business application.
++ **Upload documents directly** – Upload documents directly using the console or using the [BatchPutDocument](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) API operation.
++ **Connecting a Amazon Q Business data source** – Use the AWS Management Console or the the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API operation to connect a supported data source connector to your Amazon Q Business application.
 **Note**
 You must create an Amazon Q Business index to store your data before you connect a data source to your application.
 + **Connecting Amazon Kendra data sources** – Use existing Amazon Kendra data sources by connecting a [ Amazon Kendra index](https://docs.aws.amazon.com/kendra/latest/dg/create-index.html) as a retriever.

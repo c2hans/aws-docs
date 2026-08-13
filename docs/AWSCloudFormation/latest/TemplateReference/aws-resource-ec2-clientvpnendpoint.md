@@ -239,7 +239,7 @@ Default Value: `443`
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Client VPN endpoint ID. For example: `cvpn-endpoint-1234567890abcdef0`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-ec2-clientvpnendpoint--examples"></a>

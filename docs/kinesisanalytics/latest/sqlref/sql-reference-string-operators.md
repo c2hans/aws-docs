@@ -102,16 +102,16 @@ The following table lists examples.
   <tr><td>'a' SIMILAR TO 'a'</td><td>TRUE</td><td>14</td></tr>
   <tr><td>'a' SIMILAR TO 'A'</td><td>FALSE</td><td>14</td></tr>
   <tr><td>'a' SIMILAR TO 'b'</td><td>FALSE</td><td>14</td></tr>
-  <tr><td>'ab' SIMILAR TO 'a\_'</td><td>TRUE</td><td>12</td></tr>
+  <tr><td>'ab' SIMILAR TO 'a_'</td><td>TRUE</td><td>12</td></tr>
   <tr><td>'ab' SIMILAR TO 'a%'</td><td>TRUE</td><td>13</td></tr>
-  <tr><td>'a' SIMILAR TO 'a\_'</td><td>FALSE</td><td>12 & 14</td></tr>
+  <tr><td>'a' SIMILAR TO 'a_'</td><td>FALSE</td><td>12 &amp; 14</td></tr>
   <tr><td>'a' SIMILAR TO 'a%'</td><td>TRUE</td><td>13</td></tr>
-  <tr><td>'abcd' SIMILAR TO 'a\_'</td><td>FALSE</td><td>12</td></tr>
+  <tr><td>'abcd' SIMILAR TO 'a_'</td><td>FALSE</td><td>12</td></tr>
   <tr><td>'abcd' SIMILAR TO 'a%'</td><td>TRUE</td><td>13</td></tr>
   <tr><td>'' SIMILAR TO ''</td><td>TRUE</td><td>14</td></tr>
-  <tr><td>'1a' SIMILAR TO '\_a'</td><td>TRUE</td><td>12</td></tr>
+  <tr><td>'1a' SIMILAR TO '_a'</td><td>TRUE</td><td>12</td></tr>
   <tr><td>'123aXYZ' SIMILAR TO ''</td><td>TRUE</td><td>14</td></tr>
-  <tr><td>'123aXYZ' SIMILAR TO '\_%\_a%\_'</td><td>TRUE</td><td>13 & 12</td></tr>
+  <tr><td>'123aXYZ' SIMILAR TO '_%_a%_'</td><td>TRUE</td><td>13 &amp; 12</td></tr>
   <tr><td>'xy' SIMILAR TO '(xy)'</td><td>TRUE</td><td>1</td></tr>
   <tr><td>'abd' SIMILAR TO '[ab][bcde]d'</td><td>TRUE</td><td>2</td></tr>
   <tr><td>'bdd' SIMILAR TO '[ab][bcde]d'</td><td>TRUE</td><td>2</td></tr>
@@ -123,10 +123,10 @@ The following table lists examples.
   <tr><td>'amy' SIMILAR TO 'amyfred'</td><td>TRUE</td><td>6</td></tr>
   <tr><td>'fred' SIMILAR TO 'amyfred'</td><td>TRUE</td><td>6</td></tr>
   <tr><td>'mike' SIMILAR TO 'amyfred'</td><td>FALSE</td><td>6</td></tr>
-  <tr><td>'acd' SIMILAR TO 'ab\*c\+d'</td><td>TRUE</td><td>7 & 8</td></tr>
-  <tr><td>'accccd' SIMILAR TO 'ab\*c\+d'</td><td>TRUE</td><td>7 & 8</td></tr>
-  <tr><td>'abd' SIMILAR TO 'ab\*c\+d'</td><td>FALSE</td><td>7 & 8</td></tr>
-  <tr><td>'aabc' SIMILAR TO 'ab\*c\+d'</td><td>FALSE</td><td> </td></tr>
+  <tr><td>'acd' SIMILAR TO 'ab*c+d'</td><td>TRUE</td><td>7 &amp; 8</td></tr>
+  <tr><td>'accccd' SIMILAR TO 'ab*c+d'</td><td>TRUE</td><td>7 &amp; 8</td></tr>
+  <tr><td>'abd' SIMILAR TO 'ab*c+d'</td><td>FALSE</td><td>7 &amp; 8</td></tr>
+  <tr><td>'aabc' SIMILAR TO 'ab*c+d'</td><td>FALSE</td><td> </td></tr>
   <tr><td>'abb' SIMILAR TO 'a(b{3})'</td><td>FALSE</td><td>9</td></tr>
   <tr><td>'abbb' SIMILAR TO 'a(b{3})'</td><td>TRUE</td><td>9</td></tr>
   <tr><td>'abbbbb' SIMILAR TO 'a(b{3})'</td><td>FALSE</td><td>9</td></tr>
@@ -140,11 +140,11 @@ The following table lists examples.
   <tr><td>'ab' SIMILAR TO 'ab?'</td><td>TRUE</td><td>11</td></tr>
   <tr><td>'ab' SIMILAR TO 'a(b?)'</td><td>TRUE</td><td>11</td></tr>
   <tr><td>'abb' SIMILAR TO 'ab?'</td><td>FALSE</td><td>11</td></tr>
-  <tr><td>'ab' SIMILAR TO 'a\\\_' ESCAPE '\\'</td><td>FALSE</td><td>16</td></tr>
-  <tr><td>'ab' SIMILAR TO 'a\\%' ESCAPE '\\'</td><td>FALSE</td><td>16</td></tr>
-  <tr><td>'a\_' SIMILAR TO 'a\\\_' ESCAPE '\\'</td><td>TRUE</td><td>16</td></tr>
-  <tr><td>'a%' SIMILAR TO 'a\\%' ESCAPE '\\'</td><td>TRUE</td><td>16</td></tr>
+  <tr><td>'ab' SIMILAR TO 'a\_' ESCAPE '\'</td><td>FALSE</td><td>16</td></tr>
+  <tr><td>'ab' SIMILAR TO 'a\%' ESCAPE '\'</td><td>FALSE</td><td>16</td></tr>
+  <tr><td>'a_' SIMILAR TO 'a\_' ESCAPE '\'</td><td>TRUE</td><td>16</td></tr>
+  <tr><td>'a%' SIMILAR TO 'a\%' ESCAPE '\'</td><td>TRUE</td><td>16</td></tr>
   <tr><td>'a(b{3})' SIMILAR TO 'a(b{3})'</td><td>FALSE</td><td>16</td></tr>
-  <tr><td>'a(b{3})' SIMILAR TO 'a\\(b\\{3\\}\\)' ESCAPE '\\'</td><td>TRUE</td><td>16</td></tr>
+  <tr><td>'a(b{3})' SIMILAR TO 'a\(b\{3\}\)' ESCAPE '\'</td><td>TRUE</td><td>16</td></tr>
 </tbody>
 </table>

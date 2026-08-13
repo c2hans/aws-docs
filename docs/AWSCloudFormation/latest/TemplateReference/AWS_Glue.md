@@ -31,6 +31,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Glue::SecurityConfiguration](aws-resource-glue-securityconfiguration.md)
 + [AWS::Glue::Table](aws-resource-glue-table.md)
 + [AWS::Glue::TableOptimizer](aws-resource-glue-tableoptimizer.md)
++ [AWS::Glue::TableVersion](aws-resource-glue-tableversion.md)
 + [AWS::Glue::Trigger](aws-resource-glue-trigger.md)
 + [AWS::Glue::UsageProfile](aws-resource-glue-usageprofile.md)
 + [AWS::Glue::UserDefinedFunction](aws-resource-glue-userdefinedfunction.md)

@@ -16,6 +16,6 @@ The global identifier fulfills the final portion of the Amazon Resource Name (AR
 arn:{{{PARTITION}}}:controlcatalog:::control/{{{CONTROL_CATALOG_OPAQUE_ID}}}
 ```
 
-To obtain the complete global identifier programmatically, with the full ARN, you can call the [https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_GetControl.html](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_GetControl.html) and [https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListControls.html](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListControls.html) APIs. You also can view the complete global ARN in the AWS Control Tower console, on the **Control details** page.
+To obtain the complete global identifier programmatically, with the full ARN, you can call the [`GetControl`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_GetControl.html) and [`ListControls`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListControls.html) APIs. You also can view the complete global ARN in the AWS Control Tower console, on the **Control details** page.
 
 For more information about control identifiers and ARNs, see [Resource identifiers for APIs and controls](https://docs.aws.amazon.com//controltower/latest/controlreference/control-identifiers.html).

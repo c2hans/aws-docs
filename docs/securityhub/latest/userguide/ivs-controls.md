@@ -38,7 +38,7 @@ Don’t add personally identifiable information (PII) or other confidential or s
 ### Remediation
 <a name="ivs-1-remediation"></a>
 
-To add tags to an IVS playback key pair, see [https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_TagResource.html](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_TagResource.html) in the *Amazon IVS Real-Time Streaming API Reference*.
+To add tags to an IVS playback key pair, see [TagResource](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_TagResource.html) in the *Amazon IVS Real-Time Streaming API Reference*.
 
 ## [IVS.2] IVS recording configurations should be tagged
 <a name="ivs-2"></a>
@@ -69,7 +69,7 @@ Don’t add personally identifiable information (PII) or other confidential or s
 ### Remediation
 <a name="ivs-2-remediation"></a>
 
-To add tags to an IVS recording configuration, see [https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_TagResource.html](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_TagResource.html) in the *Amazon IVS Real-Time Streaming API Reference*.
+To add tags to an IVS recording configuration, see [TagResource](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_TagResource.html) in the *Amazon IVS Real-Time Streaming API Reference*.
 
 ## [IVS.3] IVS channels should be tagged
 <a name="ivs-3"></a>
@@ -100,4 +100,4 @@ Don’t add personally identifiable information (PII) or other confidential or s
 ### Remediation
 <a name="ivs-3-remediation"></a>
 
-To add tags to an IVS channel, see [https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_TagResource.html](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_TagResource.html) in the *Amazon IVS Real-Time Streaming API Reference*.
+To add tags to an IVS channel, see [TagResource](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_TagResource.html) in the *Amazon IVS Real-Time Streaming API Reference*.

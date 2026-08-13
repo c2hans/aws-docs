@@ -19,8 +19,8 @@ The following AWS managed policies, which you can attach to users in your accoun
 + **`AmazonSageMakerReadOnly`** – Grants read-only access to Amazon SageMaker AI resources.
 
 The following AWS managed policies can be attached to users in your account but are not recommended:
-+ [http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator](http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) – Grants all actions for all AWS services and for all resources in the account.
-+ [http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_data-scientist](http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_data-scientist) – Grants a wide range of permissions to cover most of the use cases (primarily for analytics and business intelligence) encountered by data scientists.
++ [`AdministratorAccess`](http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) – Grants all actions for all AWS services and for all resources in the account.
++ [`DataScientist`](http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_data-scientist) – Grants a wide range of permissions to cover most of the use cases (primarily for analytics and business intelligence) encountered by data scientists.
 
 You can review these permissions policies by signing in to the IAM console and searching for them.
 

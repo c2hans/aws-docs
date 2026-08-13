@@ -7,14 +7,14 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/change-
 # AWS Systems Manager Change Manager availability change
 <a name="change-manager-availability-change"></a>
 
-After careful consideration, we decided to close AWS Systems Manager Change Manager to new customers starting November 7, 2025. If you would like to use Change Manager, sign up prior to that date. Existing customers can continue to use the service as normal.
+After careful consideration, we decided to close AWS Systems Manager Change Manager to new customers starting November 7, 2025. If you would like to use Change Manager, sign up before that date. Existing customers can continue to use the service as normal.
 
 ## Alternative services evaluation
 <a name="alternative-services-evaluation"></a>
 
-For customers requiring an enterprise-grade change management solution as a replacement for AWS Systems Manager Change Manager, we recommend transitioning to one of AWS Partner Network solutions.
+For customers who need an enterprise-grade change management solution, we recommend AWS Partner Network solutions.
 
-The [Management and Governance Cloud Environment Guide](https://docs.aws.amazon.com/wellarchitected/latest/management-and-governance-guide/integrated-service-management-partners.html) recommends you consider the following questions when choosing an AWS Partner solution for service management:
+The [Management and Governance Cloud Environment Guide](https://docs.aws.amazon.com/wellarchitected/latest/management-and-governance-guide/integrated-service-management-partners.html) recommends you consider the following questions when choosing an AWS Partner solution:
 + Does it provide ITSM process enablement?
 + Does it allow users to relate ITSM processes (that is, relating incidents to change requests)?
 + Does it enable business workflows and approvals?
@@ -22,6 +22,6 @@ The [Management and Governance Cloud Environment Guide](https://docs.aws.amazon.
 + Does it enable the ability to create reports and dashboards?
 + Does it enable self-service for business and service requests?
 
-Carefully evaluate your specific use cases and requirements, then review the features offered by AWS Partner Network solutions to select the most appropriate service management solution for your needs.
+Carefully evaluate your use cases and requirements. Then review the features offered by AWS Partner Network solutions to select the best service management solution for your needs.
 
-If you have additional questions, please contact us via [AWS Support Center](https://console.aws.amazon.com/support/home#/) or read our FAQs.
+If you have additional questions, contact us through [AWS Support Center](https://console.aws.amazon.com/support/home#/) or read our FAQs.

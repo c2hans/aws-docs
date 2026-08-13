@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/sh-security
 # Logging Security Hub API calls with CloudTrail
 <a name="sh-securityhub-ct"></a>
 
- is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Security Hub. CloudTrail captures API calls for Security Hub as events. The captured calls include calls from the Security Hub console and code calls to the Security Hub API operations. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for Security Hub. If you don't configure a trail, you can still view the most recent events on the CloudTrail console in **Event history**. Using the information that CloudTrail collects, you can determine the request that was made to Security Hub, the IP address that the request was made from, who made the request, when it was made, and additional details.
+ is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Security Hub. CloudTrail captures API calls for Security Hub as events. The captured calls include calls from the Security Hub console and code calls to the Security Hub API operations. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for Security Hub. If you do not configure a trail, you can still view the most recent events on the CloudTrail console in **Event history**. Using the information that CloudTrail collects, you can determine the request that was made to Security Hub, the IP address that the request was made from, who made the request, when it was made, and additional details.
 
 To learn more about CloudTrail, including how to configure and enable it, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html).
 
@@ -22,7 +22,7 @@ For an ongoing record of events in your account, including events for Security H
 
 Security Hub supports logging all of the Security Hub API actions as events in CloudTrail logs. To view a list of Security Hub operations, see the [Security Hub API Reference](https://docs.aws.amazon.com/securityhub/1.0/APIReference/Welcome.html).
 
-When activity for the following actions is logged to CloudTrail, the value for `responseElements` is set to `null`. This ensures that sensitive information isn't included in CloudTrail logs.
+When activity for the following actions is logged to CloudTrail, the value for `responseElements` is set to `null`. This ensures that sensitive information is not included in CloudTrail logs.
 + `GetFindingsV2`
 
 Every event or log entry contains information about who generated the request. The identity information helps you determine the following:
@@ -35,7 +35,7 @@ For more information, see the [CloudTrail userIdentity element](https://docs.aws
 ## Example: Security Hub log file entries
 <a name="understanding-service-name-entries"></a>
 
-A trail is a configuration that enables delivery of events as log files to an Amazon S3 bucket that you specify. CloudTrail log files contain one or more log entries. An event represents a single request from any source and includes information about the requested action, the date and time of the action, request parameters, and so on. CloudTrail log files aren't an ordered stack trace of the public API calls, so they don't appear in any specific order.
+A trail is a configuration that enables delivery of events as log files to an Amazon S3 bucket that you specify. CloudTrail log files contain one or more log entries. An event represents a single request from any source and includes information about the requested action, the date and time of the action, request parameters, and so on. CloudTrail log files are not an ordered stack trace of the public API calls, so they do not appear in any specific order.
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateAutomationRuleV2` action. In this example, an automation rule called `TestAutomationRule` is created. The `Severity` and `Account ID` attributes are specified as the **Criteria**. When the rule is matched the `Severity` is updated to **High**. For more information about automation rules, see [Automation rules in Security Hub](securityhub-v2-automation-rules.md).
 

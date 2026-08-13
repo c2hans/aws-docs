@@ -189,7 +189,7 @@ The `downloadDirectory` method accepts an instance of `DownloadDirectoryRequest`
 | `track_progress` | bool | `false` | Whether to track progress. |
 | `filter` | callable | `null` | Function to filter which S3 objects to download. |
 | `download_object_request_modifier` | callable | `null` | Function to customize each download request. |
-| `list_objects_v2_args` | array | [] | Arguments for the [https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3-2006-03-01.html#listobjectsv2](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3-2006-03-01.html#listobjectsv2) operation. This operation fetches the metadata for the objects to download. |
+| `list_objects_v2_args` | array | [] | Arguments for the [`ListObjectsV2`](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3-2006-03-01.html#listobjectsv2) operation. This operation fetches the metadata for the objects to download. |
 | `fails_when_destination_exists` | bool | false | Whether to fail when an object destination file path already exists. |
 | `failure_policy` | callable | null | Function to handle download failures. |
 | `max_concurrency` | int | 100 | The max number of concurrent downloads. |

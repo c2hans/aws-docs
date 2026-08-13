@@ -61,7 +61,7 @@ In the following table, you can find the DB instance classes that support settin
   <tr><th>DB instance class</th><th>Default vCPUs</th><th>Default CPU cores</th><th>Default threads per core</th><th>Valid number of CPU cores</th><th>Valid number of threads per core</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="6">db.m6i – memory-optimized instance classes</td></tr>
+  <tr><td colspan="6"><b>db.m6i – memory-optimized instance classes</b></td></tr>
   <tr><td>db.m6i.large</td><td>2</td><td>1</td><td>2</td><td>1</td><td>1, 2</td></tr>
   <tr><td>db.m6i.xlarge</td><td>4</td><td>2</td><td>2</td><td>2</td><td>1, 2</td></tr>
   <tr><td>db.m6i.2xlarge</td><td>8</td><td>4</td><td>2</td><td>2, 4</td><td>1, 2</td></tr>
@@ -72,7 +72,7 @@ In the following table, you can find the DB instance classes that support settin
   <tr><td>db.m6i.16xlarge</td><td>64</td><td>32</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32</td><td>1, 2</td></tr>
   <tr><td>db.m6i.24xlarge</td><td>96</td><td>48</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48</td><td>1, 2</td></tr>
   <tr><td>db.m6i.32xlarge</td><td>128</td><td>64</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64</td><td>1, 2</td></tr>
-  <tr><td colspan="6">db.m5 – general-purpose instance classes</td></tr>
+  <tr><td colspan="6"><b>db.m5 – general-purpose instance classes</b></td></tr>
   <tr><td>db.m5.large</td><td>2</td><td>1</td><td>2</td><td>1</td><td>1, 2</td></tr>
   <tr><td>db.m5.xlarge</td><td>4</td><td>2</td><td>2</td><td>2</td><td>1, 2</td></tr>
   <tr><td>db.m5.2xlarge</td><td>8</td><td>4</td><td>2</td><td>2, 4</td><td>1, 2</td></tr>
@@ -81,7 +81,7 @@ In the following table, you can find the DB instance classes that support settin
   <tr><td>db.m5.12xlarge</td><td>48</td><td>24</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24</td><td>1, 2</td></tr>
   <tr><td>db.m5.16xlarge</td><td>64</td><td>32</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32</td><td>1, 2</td></tr>
   <tr><td>db.m5.24xlarge</td><td>96</td><td>48</td><td>2</td><td>4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48</td><td>1, 2</td></tr>
-  <tr><td colspan="6">db.m5d – general-purpose instance classes</td></tr>
+  <tr><td colspan="6"><b>db.m5d – general-purpose instance classes</b></td></tr>
   <tr><td>db.m5d.large</td><td>2</td><td>1</td><td>2</td><td>1</td><td>1, 2</td></tr>
   <tr><td>db.m5d.xlarge</td><td>4</td><td>2</td><td>2</td><td>2</td><td>1, 2</td></tr>
   <tr><td>db.m5d.2xlarge</td><td>8</td><td>4</td><td>2</td><td>2, 4</td><td>1, 2</td></tr>
@@ -90,10 +90,10 @@ In the following table, you can find the DB instance classes that support settin
   <tr><td>db.m5d.12xlarge</td><td>48</td><td>24</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24</td><td>1, 2</td></tr>
   <tr><td>db.m5d.16xlarge</td><td>64</td><td>32</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32</td><td>1, 2</td></tr>
   <tr><td>db.m5d.24xlarge</td><td>96</td><td>48</td><td>2</td><td>4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48</td><td>1, 2</td></tr>
-  <tr><td colspan="6">db.m4 – general-purpose instance classes</td></tr>
+  <tr><td colspan="6"><b>db.m4 – general-purpose instance classes</b></td></tr>
   <tr><td>db.m4.10xlarge</td><td>40</td><td>20</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20</td><td>1, 2</td></tr>
   <tr><td>db.m4.16xlarge</td><td>64</td><td>32</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32</td><td>1, 2</td></tr>
-  <tr><td colspan="6">db.r7i – memory-optimized instance classes</td></tr>
+  <tr><td colspan="6"><b>db.r7i – memory-optimized instance classes</b></td></tr>
   <tr><td>db.r7i.large</td><td>2</td><td>1</td><td>2</td><td>1</td><td>1, 2</td></tr>
   <tr><td>db.r7i.xlarge</td><td>4</td><td>2</td><td>2</td><td>1, 2</td><td>1, 2</td></tr>
   <tr><td>db.r7i.2xlarge</td><td>8</td><td>4</td><td>2</td><td>1, 2, 3, 4</td><td>1, 2</td></tr>
@@ -103,7 +103,7 @@ In the following table, you can find the DB instance classes that support settin
   <tr><td>db.r7i.16xlarge</td><td>64</td><td>32</td><td>2</td><td>1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32</td><td>1, 2</td></tr>
   <tr><td>db.r7i.24xlarge</td><td>96</td><td>48</td><td>2</td><td>1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48</td><td>1, 2</td></tr>
   <tr><td>db.r7i.48xlarge</td><td>192</td><td>96</td><td>2</td><td>4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96</td><td>1, 2</td></tr>
-  <tr><td colspan="6">db.r6i – memory-optimized instance classes</td></tr>
+  <tr><td colspan="6"><b>db.r6i – memory-optimized instance classes</b></td></tr>
   <tr><td>db.r6i.large</td><td>2</td><td>1</td><td>2</td><td>1</td><td>1, 2</td></tr>
   <tr><td>db.r6i.xlarge</td><td>4</td><td>2</td><td>2</td><td>1, 2</td><td>1, 2</td></tr>
   <tr><td>db.r6i.2xlarge</td><td>8</td><td>4</td><td>2</td><td>2, 4</td><td>1, 2</td></tr>
@@ -113,7 +113,7 @@ In the following table, you can find the DB instance classes that support settin
   <tr><td>db.r6i.16xlarge</td><td>64</td><td>32</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32</td><td>1, 2</td></tr>
   <tr><td>db.r6i.24xlarge</td><td>96</td><td>48</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48</td><td>1, 2</td></tr>
   <tr><td>db.r6i.32xlarge</td><td>128</td><td>64</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64</td><td>1, 2</td></tr>
-  <tr><td colspan="6">db.r5 – memory-optimized instance classes</td></tr>
+  <tr><td colspan="6"><b>db.r5 – memory-optimized instance classes</b></td></tr>
   <tr><td>db.r5.large</td><td>2</td><td>1</td><td>2</td><td>1</td><td>1, 2</td></tr>
   <tr><td>db.r5.xlarge</td><td>4</td><td>2</td><td>2</td><td>2</td><td>1, 2</td></tr>
   <tr><td>db.r5.2xlarge</td><td>8</td><td>4</td><td>2</td><td>2, 4</td><td>1, 2</td></tr>
@@ -122,7 +122,7 @@ In the following table, you can find the DB instance classes that support settin
   <tr><td>db.r5.12xlarge</td><td>48</td><td>24</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24</td><td>1, 2</td></tr>
   <tr><td>db.r5.16xlarge</td><td>64</td><td>32</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32</td><td>1, 2</td></tr>
   <tr><td>db.r5.24xlarge</td><td>96</td><td>48</td><td>2</td><td>4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48</td><td>1, 2</td></tr>
-  <tr><td colspan="6">db.r5 – memory-optimized instance classes</td></tr>
+  <tr><td colspan="6"><b>db.r5 – memory-optimized instance classes</b></td></tr>
   <tr><td>db.r5b.large</td><td>2</td><td>1</td><td>2</td><td>1</td><td>1, 2</td></tr>
   <tr><td>db.r5b.xlarge</td><td>4</td><td>2</td><td>2</td><td>2</td><td>1, 2</td></tr>
   <tr><td>db.r5b.2xlarge</td><td>8</td><td>4</td><td>2</td><td>2, 4</td><td>1, 2</td></tr>
@@ -131,7 +131,7 @@ In the following table, you can find the DB instance classes that support settin
   <tr><td>db.r5b.12xlarge</td><td>48</td><td>24</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24</td><td>1, 2</td></tr>
   <tr><td>db.r5b.16xlarge</td><td>64</td><td>32</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32</td><td>1, 2</td></tr>
   <tr><td>db.r5b.24xlarge</td><td>96</td><td>48</td><td>2</td><td>4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48</td><td>1, 2</td></tr>
-  <tr><td colspan="6">db.r5d – memory-optimized instance classes</td></tr>
+  <tr><td colspan="6"><b>db.r5d – memory-optimized instance classes</b></td></tr>
   <tr><td>db.r5d.large</td><td>2</td><td>1</td><td>2</td><td>1</td><td>1, 2</td></tr>
   <tr><td>db.r5d.xlarge</td><td>4</td><td>2</td><td>2</td><td>2</td><td>1, 2</td></tr>
   <tr><td>db.r5d.2xlarge</td><td>8</td><td>4</td><td>2</td><td>2, 4</td><td>1, 2</td></tr>
@@ -140,24 +140,24 @@ In the following table, you can find the DB instance classes that support settin
   <tr><td>db.r5d.12xlarge</td><td>48</td><td>24</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24</td><td>1, 2</td></tr>
   <tr><td>db.r5d.16xlarge</td><td>64</td><td>32</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32</td><td>1, 2</td></tr>
   <tr><td>db.r5d.24xlarge</td><td>96</td><td>48</td><td>2</td><td>4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48</td><td>1, 2</td></tr>
-  <tr><td colspan="6">db.r4 – memory-optimized instance classes</td></tr>
+  <tr><td colspan="6"><b>db.r4 – memory-optimized instance classes</b></td></tr>
   <tr><td>db.r4.large</td><td>2</td><td>1</td><td>2</td><td>1</td><td>1, 2</td></tr>
   <tr><td>db.r4.xlarge</td><td>4</td><td>2</td><td>2</td><td>1, 2</td><td>1, 2</td></tr>
   <tr><td>db.r4.2xlarge</td><td>8</td><td>4</td><td>2</td><td>1, 2, 3, 4</td><td>1, 2</td></tr>
   <tr><td>db.r4.4xlarge</td><td>16</td><td>8</td><td>2</td><td>1, 2, 3, 4, 5, 6, 7, 8</td><td>1, 2</td></tr>
   <tr><td>db.r4.8xlarge</td><td>32</td><td>16</td><td>2</td><td>1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16</td><td>1, 2</td></tr>
   <tr><td>db.r4.16xlarge</td><td>64</td><td>32</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32</td><td>1, 2</td></tr>
-  <tr><td colspan="6">db.r3 – memory-optimized instance classes</td></tr>
+  <tr><td colspan="6"><b>db.r3 – memory-optimized instance classes</b></td></tr>
   <tr><td>db.r3.large</td><td>2</td><td>1</td><td>2</td><td>1</td><td>1, 2</td></tr>
   <tr><td>db.r3.xlarge</td><td>4</td><td>2</td><td>2</td><td>1, 2</td><td>1, 2</td></tr>
   <tr><td>db.r3.2xlarge</td><td>8</td><td>4</td><td>2</td><td>1, 2, 3, 4</td><td>1, 2</td></tr>
   <tr><td>db.r3.4xlarge</td><td>16</td><td>8</td><td>2</td><td>1, 2, 3, 4, 5, 6, 7, 8</td><td>1, 2</td></tr>
   <tr><td>db.r3.8xlarge</td><td>32</td><td>16</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16</td><td>1, 2</td></tr>
-  <tr><td colspan="6">db.x2idn – memory-optimized instance classes</td></tr>
+  <tr><td colspan="6"><b>db.x2idn – memory-optimized instance classes</b></td></tr>
   <tr><td>db.x2idn.16xlarge</td><td>64</td><td>32</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32</td><td>1, 2</td></tr>
   <tr><td>db.x2idn.24xlarge</td><td>96</td><td>48</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48</td><td>1, 2</td></tr>
   <tr><td>db.x2idn.32xlarge</td><td>128</td><td>64</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64</td><td>1, 2</td></tr>
-  <tr><td colspan="6">db.x2iedn – memory-optimized instance classes</td></tr>
+  <tr><td colspan="6"><b>db.x2iedn – memory-optimized instance classes</b></td></tr>
   <tr><td>db.x2iedn.xlarge</td><td>4</td><td>2</td><td>2</td><td>1, 2</td><td>1, 2</td></tr>
   <tr><td>db.x2iedn.2xlarge</td><td>8</td><td>4</td><td>2</td><td>2, 4</td><td>1, 2</td></tr>
   <tr><td>db.x2iedn.4xlarge</td><td>16</td><td>8</td><td>2</td><td>2, 4, 6, 8</td><td>1, 2</td></tr>
@@ -165,13 +165,13 @@ In the following table, you can find the DB instance classes that support settin
   <tr><td>db.x2iedn.16xlarge</td><td>64</td><td>32</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32</td><td>1, 2</td></tr>
   <tr><td>db.x2iedn.24xlarge</td><td>96</td><td>48</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48</td><td>1, 2</td></tr>
   <tr><td>db.x2iedn.32xlarge</td><td>128</td><td>64</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64</td><td>1, 2</td></tr>
-  <tr><td colspan="6">db.x2iezn – memory-optimized instance classes</td></tr>
+  <tr><td colspan="6"><b>db.x2iezn – memory-optimized instance classes</b></td></tr>
   <tr><td>db.x2iezn.2xlarge</td><td>8</td><td>4</td><td>2</td><td>2, 4</td><td>1, 2</td></tr>
   <tr><td>db.x2iezn.4xlarge</td><td>16</td><td>8</td><td>2</td><td>2, 4, 6, 8</td><td>1, 2</td></tr>
   <tr><td>db.x2iezn.6xlarge</td><td>24</td><td>12</td><td>2</td><td>2, 4, 6, 8, 10, 12</td><td>1, 2</td></tr>
   <tr><td>db.x2iezn.8xlarge</td><td>32</td><td>16</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16</td><td>1, 2</td></tr>
   <tr><td>db.x2iezn.12xlarge</td><td>48</td><td>24</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24</td><td>1, 2</td></tr>
-  <tr><td colspan="6">db.z1d – memory-optimized instance classes</td></tr>
+  <tr><td colspan="6"><b>db.z1d – memory-optimized instance classes</b></td></tr>
   <tr><td>db.z1d.large</td><td>2</td><td>1</td><td>2</td><td>1</td><td>1, 2</td></tr>
   <tr><td>db.z1d.xlarge</td><td>4</td><td>2</td><td>2</td><td>2</td><td>1, 2</td></tr>
   <tr><td>db.z1d.2xlarge</td><td>8</td><td>4</td><td>2</td><td>2, 4</td><td>1, 2</td></tr>

@@ -20,7 +20,7 @@ The following examples show you how to delete an endpoint.
 You can use Amazon Pinpoint by running commands with the AWS CLI.
 
 **Example Delete endpoint command**
-To delete an endpoint, use the [https://docs.aws.amazon.com/cli/latest/reference/pinpoint/delete-endpoint.html](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/delete-endpoint.html) command:
+To delete an endpoint, use the [`delete-endpoint`](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/delete-endpoint.html) command:
 
 ```
 $ aws pinpoint delete-endpoint \

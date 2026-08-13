@@ -103,10 +103,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [proton:TagResource](#list_proton-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateServiceTemplateVersion  **
-  - **IAM action:**  [proton:CreateServiceTemplateVersion](#list_proton-action-CreateServiceTemplateVersion)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [proton:CreateServiceTemplateVersion](#list_proton-action-CreateServiceTemplateVersion)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [proton:TagResource](#list_proton-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateTemplateSyncConfig  **
   - **IAM action:**  [proton:CreateTemplateSyncConfig](#list_proton-action-CreateTemplateSyncConfig)

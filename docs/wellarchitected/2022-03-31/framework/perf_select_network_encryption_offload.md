@@ -13,7 +13,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 
  Network Load Balancer is best suited for load balancing of TCP traffic where extreme performance is required. It is capable of handling millions of requests per second while maintaining ultra-low latencies, and it is optimized to handle sudden and volatile traffic patterns.
 
- [https://aws.amazon.com/elasticloadbalancing/](https://aws.amazon.com/elasticloadbalancing/) provides integrated certificate management and SSL/TLS decryption, allowing you the flexibility to centrally manage the SSL settings of the load balancer and offload CPU intensive work from your workload.
+ [*Elastic Load Balancing*](https://aws.amazon.com/elasticloadbalancing/) provides integrated certificate management and SSL/TLS decryption, allowing you the flexibility to centrally manage the SSL settings of the load balancer and offload CPU intensive work from your workload.
 
  **Common anti-patterns:**
 +  You route all internet traffic through existing load balancers.

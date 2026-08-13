@@ -30,10 +30,10 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 
 ## Temporary Credentials
 <a name="temporary-credentials"></a>
-+  **v2**: [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/ChainableTemporaryCredentials.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/ChainableTemporaryCredentials.html) represents temporary credentials retrieved from `AWS.STS`. Without any extra parameters, credentials will be fetched from the `AWS.STS.getSessionToken()` operation. If an IAM role is provided, the `AWS.STS.assumeRole()` operation will be used to fetch credentials for the role instead. `AWS.ChainableTemporaryCredentials` differs from `AWS.TemporaryCredentials` in the way masterCredentials and refreshes are handled. `AWS.ChainableTemporaryCredentials` refreshes expired credentials using the masterCredentials passed by the user to support chaining of STS credentials. However, `AWS.TemporaryCredentials` recursively collapses the masterCredentials during instantiation, precluding the ability to refresh credentials which require intermediate, temporary credentials.
++  **v2**: [`ChainableTemporaryCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/ChainableTemporaryCredentials.html) represents temporary credentials retrieved from `AWS.STS`. Without any extra parameters, credentials will be fetched from the `AWS.STS.getSessionToken()` operation. If an IAM role is provided, the `AWS.STS.assumeRole()` operation will be used to fetch credentials for the role instead. `AWS.ChainableTemporaryCredentials` differs from `AWS.TemporaryCredentials` in the way masterCredentials and refreshes are handled. `AWS.ChainableTemporaryCredentials` refreshes expired credentials using the masterCredentials passed by the user to support chaining of STS credentials. However, `AWS.TemporaryCredentials` recursively collapses the masterCredentials during instantiation, precluding the ability to refresh credentials which require intermediate, temporary credentials.
 
-   The original [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/TemporaryCredentials.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/TemporaryCredentials.html) has been **deprecated** in favor of `ChainableTemporaryCredentials` in v2.
-+  **v3**: [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromtemporarycredentials](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromtemporarycredentials). You can call `fromTemporaryCredentials()` from the `@aws-sdk/credential-providers` package. Here's an example:
+   The original [`TemporaryCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/TemporaryCredentials.html) has been **deprecated** in favor of `ChainableTemporaryCredentials` in v2.
++  **v3**: [`fromTemporaryCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromtemporarycredentials). You can call `fromTemporaryCredentials()` from the `@aws-sdk/credential-providers` package. Here's an example:
 
   ```
   import { FooClient } from "@aws-sdk/client-foo";
@@ -56,8 +56,8 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 <a name="cognito-identity-credentials"></a>
 
  Load credentials from the Amazon Cognito Identity service, normally used in browsers.
-+  **v2**: [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityCredentials.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityCredentials.html) Represents credentials retrieved from STS Web Identity Federation using the Amazon Cognito Identity service.
-+  **v3**: [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_credential_providers.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_credential_providers.html) The [`@aws/credential-providers` package](https://www.npmjs.com/package/@aws-sdk/credential-providers) provides two credential provider functions, one of which [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_credential_providers.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_credential_providers.html) takes an identity ID and calls `cognitoIdentity:GetCredentialsForIdentity`, while the other [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_credential_providers.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_credential_providers.html) takes an identity pool ID, calls `cognitoIdentity:GetId` on the first invocation, and then calls`fromCognitoIdentity`. Subsequent invocations of the latter do not re-invoke GetId.
++  **v2**: [`CognitoIdentityCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityCredentials.html) Represents credentials retrieved from STS Web Identity Federation using the Amazon Cognito Identity service.
++  **v3**: [`Cognito Identity Credential Provider`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_credential_providers.html) The [`@aws/credential-providers` package](https://www.npmjs.com/package/@aws-sdk/credential-providers) provides two credential provider functions, one of which [`fromCognitoIdentity`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_credential_providers.html) takes an identity ID and calls `cognitoIdentity:GetCredentialsForIdentity`, while the other [`fromCognitoIdentityPool`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_credential_providers.html) takes an identity pool ID, calls `cognitoIdentity:GetId` on the first invocation, and then calls`fromCognitoIdentity`. Subsequent invocations of the latter do not re-invoke GetId.
 
    The provider implements the "Simplified Flow" described in the [Amazon Cognito Developer Guide](https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html). The "Classic Flow" which involves calling `cognito:GetOpenIdToken` and then calling `sts:AssumeRoleWithWebIdentity` is *not* supported. Please open a [feature request](https://github.com/aws/aws-sdk-js-v3/issues/new?assignees=&labels=feature-request&template=---feature-request.md&title=) to us if you need it.
 
@@ -107,8 +107,8 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 <a name="ec2-metadataimds-credential"></a>
 
  Represents credentials received from the metadata service on an Amazon EC2 instance.
-+  **v2**: [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityCredentials.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityCredentials.html)
-+  **v3**: [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromcontainermetadata-and-frominstancemetadata](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromcontainermetadata-and-frominstancemetadata). Creates a credential provider that will source credentials from the Amazon EC2 Instance Metadata Service.
++  **v2**: [`EC2MetadataCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityCredentials.html)
++  **v3**: [`fromInstanceMetadata`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromcontainermetadata-and-frominstancemetadata). Creates a credential provider that will source credentials from the Amazon EC2 Instance Metadata Service.
 
   ```
   import { fromInstanceMetadata } from "@aws-sdk/credential-providers"; // ES6 import
@@ -126,8 +126,8 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 <a name="ecs-credentials"></a>
 
  Represents credentials received from specified URL. This provider will request temporary credentials from URI specified by the `AWS_CONTAINER_CREDENTIALS_RELATIVE_URI` or the `AWS_CONTAINER_CREDENTIALS_FULL_URI` environment variable.
-+  **v2**: `ECSCredentials` or [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/RemoteCredentials.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/RemoteCredentials.html)
-+  **v3**: [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromcontainermetadata-and-frominstancemetadata](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromcontainermetadata-and-frominstancemetadata). Creates a credential provider that will source credentials from the Amazon ECS Container Metadata Service.
++  **v2**: `ECSCredentials` or [`RemoteCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/RemoteCredentials.html)
++  **v3**: [`fromContainerMetadata`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromcontainermetadata-and-frominstancemetadata). Creates a credential provider that will source credentials from the Amazon ECS Container Metadata Service.
 
   ```
   import { fromContainerMetadata } from "@aws-sdk/credential-providers"; // ES6 import
@@ -142,20 +142,20 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 
 ## File System Credentials
 <a name="file-system-credentials"></a>
-+ **v2**: [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/FileSystemCredentials.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/FileSystemCredentials.html). Represents credentials from a JSON file on disk.
++ **v2**: [`FileSystemCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/FileSystemCredentials.html). Represents credentials from a JSON file on disk.
 +  **v3**: **Deprecated**. You can explicitly read the JSON file and supply to the client. Please open a [feature request](https://github.com/aws/aws-sdk-js-v3/issues/new?assignees=&labels=feature-request&template=---feature-request.md&title=) to us if you need it.
 
 ## SAML Credential Provider
 <a name="saml-credential-provider"></a>
-+  **v2**: [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SAMLCredentials.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SAMLCredentials.html) Represents credentials retrieved from STS SAML support.
++  **v2**: [`SAMLCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SAMLCredentials.html) Represents credentials retrieved from STS SAML support.
 +  **v3**: **Not available**. Please open a [feature request](https://github.com/aws/aws-sdk-js-v3/issues/new?assignees=&labels=feature-request&template=---feature-request.md&title=) to us if you need it.
 
 ## Shared Credential File Credentials
 <a name="shared-credential-file-credentials"></a>
 
  Loads credentials from shared credentials file (defaulting to `~/.aws/credentials` or defined by the `AWS_SHARED_CREDENTIALS_FILE` environment variable). This file is supported across different AWS SDKs and tools. You can refer to the [shared config and credentials files document](https://docs.aws.amazon.com/sdkref/latest/guide/creds-config-files.html) for more information.
-+  **v2**: [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SharedIniFileCredentials.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SharedIniFileCredentials.html)
-+  **v3**: [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_credential_providers.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_credential_providers.html)
++  **v2**: [`SharedIniFileCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SharedIniFileCredentials.html)
++  **v3**: [`fromIni`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_credential_providers.html)
 
   ```
   import { fromIni } from "@aws-sdk/credential-providers";
@@ -179,8 +179,8 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 <a name="web-identity-credentials"></a>
 
  Retrieves credentials using OIDC token from a file on disk. Commonly used in Amazon EKS.
-+  **v2**: [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/TokenFileWebIdentityCredentials.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/TokenFileWebIdentityCredentials.html)
-+  **v3**: [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromtokenfile](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromtokenfile)
++  **v2**: [`TokenFileWebIdentityCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/TokenFileWebIdentityCredentials.html)
++  **v3**: [`fromTokenFile`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromtokenfile)
 
   ```
   import { fromTokenFile } from "@aws-sdk/credential-providers"; // ES6 import
@@ -202,8 +202,8 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 <a name="web-identity-federation-credentials"></a>
 
  Retrieves credentials from STS web identity federation support.
-+  **v2**: [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/WebIdentityCredentials.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/WebIdentityCredentials.html)
-+  **v3**: [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromwebtoken](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromwebtoken)
++  **v2**: [`WebIdentityCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/WebIdentityCredentials.html)
++  **v3**: [`fromWebToken`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromwebtoken)
 
   ```
   import { fromWebToken } from "@aws-sdk/credential-providers"; // ES6 import

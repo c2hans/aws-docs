@@ -12,7 +12,7 @@ With Amazon Machine Learning (Amazon ML), you can build and train predictive mod
 Our sample exercise shows how to identify potential customers for a targeted marketing campaign, but you can apply the same principles to create and use a variety of ML models. To complete the sample exercise, you will use publicly available banking and marketing datasets from the [University of California at Irvine (UCI) Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets.php). These datasets contain general information about customers, and information about how they responded to previous marketing contacts. You will use this data to identify which customers are most likely to subscribe to your new product, a bank term deposit, also known as a certificate of deposit (CD).
 
 **Warning**
-This tutorial is not included in the AWS free tier. For more information about Amazon ML pricing, see [https://aws.amazon.com/machine-learning/pricing/](https://aws.amazon.com/machine-learning/pricing/).
+This tutorial is not included in the AWS free tier. For more information about Amazon ML pricing, see [*Amazon Machine Learning Pricing*](https://aws.amazon.com/machine-learning/pricing/).
 
 ## Prerequisite
 <a name="prereqs"></a>

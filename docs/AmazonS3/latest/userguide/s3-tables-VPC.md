@@ -90,8 +90,8 @@ s3tables.<region>.api.aws
 
 The following are some things you should know before trying to access S3 tables and table buckets over IPv6 in your VPC:
 + The client you use to access tables and your S3 client must both have dual-stack enabled.
-+ IPv6 inbound is not enabled by default for VPC security groups. To allow IPv6 access you will need to add a new rule allowing HTTPS (TCP port 443) to your security group. For more information, see [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/changing-security-group.html#add-remove-security-group-rules](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/changing-security-group.html#add-remove-security-group-rules) in the *Amazon EC2user guide*
-+ If your VPC doesn't have IPv6 CIDRs assigned, you will need to manually add an IPv6 CIDR block to your VPC. For more info, see [https://docs.aws.amazon.com/vpc/latest/userguide/vpc-migrate-ipv6-add.html](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-migrate-ipv6-add.html) in the *AWS PrivateLink user guide*
++ IPv6 inbound is not enabled by default for VPC security groups. To allow IPv6 access you will need to add a new rule allowing HTTPS (TCP port 443) to your security group. For more information, see [*Configure security group rules*](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/changing-security-group.html#add-remove-security-group-rules) in the *Amazon EC2user guide*
++ If your VPC doesn't have IPv6 CIDRs assigned, you will need to manually add an IPv6 CIDR block to your VPC. For more info, see [*Add IPv6 support for your VPC*](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-migrate-ipv6-add.html) in the *AWS PrivateLink user guide*
 + If you use IP address filtering IAM policies they must be updated to handle IPv6 addresses. For more information about managing access permissions with IAM, see [Identity and Access Management for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-iam.html).
 
 To create a new VPC endpoint that uses the dual-stack endpoint for S3 Tables use example CLI command:
@@ -108,7 +108,7 @@ aws ec2 create-vpc-endpoint \
   --region {{aws-region}}
 ```
 
-For more information on creating VPC endpoints see [https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) in the VPC user guide.
+For more information on creating VPC endpoints see [*Create an interface endpoint*](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) in the VPC user guide.
 
 If your network supports IPv6 and you want to update your VPC to enable IPv6 you can use the following CLI command:
 

@@ -10,7 +10,7 @@ Amazon Lightsail is the easiest way to get started with Amazon Web Services (AWS
 With this tutorial, you will learn how to launch and configure a WordPress instance on Lightsail. It includes steps to configure a custom domain name, secure internet traffic with HTTPS, connect to your instance by using SSH, and sign in to your WordPress website. When you're done with this tutorial, you have the fundamentals to get your instance up and running on Lightsail.
 
 **Note**
-As part of the AWS Free Tier, you can get started with Amazon Lightsail for free on select instance bundles. For more information, see **AWS Free Tier** on the [Amazon Lightsail Pricing page](https://aws.amazon.com/lightsail/pricing).
+As part of the AWS Free Tier, you can get started with Amazon Lightsail for free. For more information, see the [AWS Free Tier FAQs](https://aws.amazon.com/free/free-tier-faqs/).
 
 ## Step 1: Sign up for AWS
 <a name="launch-configure-wp-sign-up"></a>

@@ -15,7 +15,7 @@ AWS X-Ray provides APIs for configuring [sampling rules](xray-console-sampling.m
 ## Encryption settings
 <a name="xray-api-configuration-encryption"></a>
 
-Use [https://docs.aws.amazon.com/xray/latest/api/API_PutEncryptionConfig.html](https://docs.aws.amazon.com/xray/latest/api/API_PutEncryptionConfig.html) to specify an AWS Key Management Service (AWS KMS) key to use for encryption.
+Use [`PutEncryptionConfig`](https://docs.aws.amazon.com/xray/latest/api/API_PutEncryptionConfig.html) to specify an AWS Key Management Service (AWS KMS) key to use for encryption.
 
 **Note**
 X-Ray does not support asymmetric KMS keys.
@@ -33,7 +33,7 @@ $ aws xray put-encryption-config --type KMS --key-id alias/aws/xray
 
 For the key ID, you can use an alias (as shown in the example), a key ID, or an Amazon Resource Name (ARN).
 
-Use [https://docs.aws.amazon.com/xray/latest/api/API_GetEncryptionConfig.html](https://docs.aws.amazon.com/xray/latest/api/API_GetEncryptionConfig.html) to get the current configuration. When X-Ray finishes applying your settings, the status changes from `UPDATING` to `ACTIVE`.
+Use [`GetEncryptionConfig`](https://docs.aws.amazon.com/xray/latest/api/API_GetEncryptionConfig.html) to get the current configuration. When X-Ray finishes applying your settings, the status changes from `UPDATING` to `ACTIVE`.
 
 ```
 $ aws xray get-encryption-config
@@ -63,7 +63,7 @@ $ aws xray put-encryption-config --type NONE
 
 You can manage the [sampling rules](xray-console-sampling.md) in your account with the X-Ray API. For more information about adding and managing tags, see [Tagging X-Ray sampling rules and groups](xray-tagging.md).
 
-Get all sampling rules with [https://docs.aws.amazon.com/xray/latest/api/API_GetSamplingRules.html](https://docs.aws.amazon.com/xray/latest/api/API_GetSamplingRules.html).
+Get all sampling rules with [`GetSamplingRules`](https://docs.aws.amazon.com/xray/latest/api/API_GetSamplingRules.html).
 
 ```
 $ aws xray get-sampling-rules
@@ -92,9 +92,9 @@ $ aws xray get-sampling-rules
 }
 ```
 
-The default rule applies to all requests that don't match another rule. It is the lowest priority rule and cannot be deleted. You can, however, change the rate and reservoir size with [https://docs.aws.amazon.com/xray/latest/api/API_UpdateSamplingRule.html](https://docs.aws.amazon.com/xray/latest/api/API_UpdateSamplingRule.html).
+The default rule applies to all requests that don't match another rule. It is the lowest priority rule and cannot be deleted. You can, however, change the rate and reservoir size with [`UpdateSamplingRule`](https://docs.aws.amazon.com/xray/latest/api/API_UpdateSamplingRule.html).
 
-**Example API input for [https://docs.aws.amazon.com/xray/latest/api/API_UpdateSamplingRule.html](https://docs.aws.amazon.com/xray/latest/api/API_UpdateSamplingRule.html) – 10000-default.json**
+**Example API input for [`UpdateSamplingRule`](https://docs.aws.amazon.com/xray/latest/api/API_UpdateSamplingRule.html) – 10000-default.json**
 
 ```
 {
@@ -133,9 +133,9 @@ $ aws xray update-sampling-rule --cli-input-json file://1000-default.json --tags
         },
 ```
 
-Create additional sampling rules with [https://docs.aws.amazon.com/xray/latest/api/API_CreateSamplingRule.html](https://docs.aws.amazon.com/xray/latest/api/API_CreateSamplingRule.html). When you create a rule, most of the rule fields are required. The following example creates two rules. This first rule sets a base rate for the Scorekeep sample application. It matches all requests served by the API that don't match a higher priority rule.
+Create additional sampling rules with [`CreateSamplingRule`](https://docs.aws.amazon.com/xray/latest/api/API_CreateSamplingRule.html). When you create a rule, most of the rule fields are required. The following example creates two rules. This first rule sets a base rate for the Scorekeep sample application. It matches all requests served by the API that don't match a higher priority rule.
 
-**Example API input for [https://docs.aws.amazon.com/xray/latest/api/API_UpdateSamplingRule.html](https://docs.aws.amazon.com/xray/latest/api/API_UpdateSamplingRule.html) – 9000-base-scorekeep.json**
+**Example API input for [`UpdateSamplingRule`](https://docs.aws.amazon.com/xray/latest/api/API_UpdateSamplingRule.html) – 9000-base-scorekeep.json**
 
 ```
 {
@@ -157,7 +157,7 @@ Create additional sampling rules with [https://docs.aws.amazon.com/xray/latest/a
 
 The second rule also applies to Scorekeep, but it has a higher priority and is more specific. This rule sets a very low sampling rate for polling requests. These are GET requests made by the client every few seconds to check for changes to the game state.
 
-**Example API input for [https://docs.aws.amazon.com/xray/latest/api/API_UpdateSamplingRule.html](https://docs.aws.amazon.com/xray/latest/api/API_UpdateSamplingRule.html) – 5000-polling-scorekeep.json**
+**Example API input for [`UpdateSamplingRule`](https://docs.aws.amazon.com/xray/latest/api/API_UpdateSamplingRule.html) – 5000-polling-scorekeep.json**
 
 ```
 {
@@ -226,7 +226,7 @@ $ aws xray create-sampling-rule --cli-input-json file://9000-base-scorekeep.json
 }
 ```
 
-To delete a sampling rule, use [https://docs.aws.amazon.com/xray/latest/api/API_DeleteSamplingRule.html](https://docs.aws.amazon.com/xray/latest/api/API_DeleteSamplingRule.html).
+To delete a sampling rule, use [`DeleteSamplingRule`](https://docs.aws.amazon.com/xray/latest/api/API_DeleteSamplingRule.html).
 
 ```
 $ aws xray delete-sampling-rule --rule-name polling-scorekeep

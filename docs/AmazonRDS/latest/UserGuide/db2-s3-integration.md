@@ -148,7 +148,7 @@ You can create an IAM policy by using the AWS Management Console or the AWS Comm
 
 ------
 
-1. Run the [https://docs.aws.amazon.com/cli/latest/reference/iam/create-policy.html](https://docs.aws.amazon.com/cli/latest/reference/iam/create-policy.html) command. In the following example, replace {{iam\_policy\_name}} and {{iam\_policy\_file\_name}} with a name for your IAM policy and the name of the JSON file you created in Step 1.
+1. Run the [create-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/create-policy.html) command. In the following example, replace {{iam\_policy\_name}} and {{iam\_policy\_file\_name}} with a name for your IAM policy and the name of the JSON file you created in Step 1.
 
    For Linux, macOS, or Unix:
 
@@ -275,7 +275,7 @@ You can create an IAM role for your DB instance by using the AWS Management Cons
 
 ------
 
-1. Run the [https://docs.aws.amazon.com/cli/latest/reference/iam/create-role.html](https://docs.aws.amazon.com/cli/latest/reference/iam/create-role.html) command. In the following example, replace {{iam\_role\_name}} and {{iam\_assume\_role\_policy\_file\_name}} with a name for your IAM role and the name of the JSON file that you created in Step 1.
+1. Run the [create-role](https://docs.aws.amazon.com/cli/latest/reference/iam/create-role.html) command. In the following example, replace {{iam\_role\_name}} and {{iam\_assume\_role\_policy\_file\_name}} with a name for your IAM role and the name of the JSON file that you created in Step 1.
 
    For Linux, macOS, or Unix:
 
@@ -317,7 +317,7 @@ You can create an IAM role for your DB instance by using the AWS Management Cons
 
 1. After the role is created, note the ARN of the role. You need the ARN for [Step 3: Add your IAM role to your RDS for Db2 DB instance](#db2-adding-iam-role).
 
-1. Run the [https://docs.aws.amazon.com/cli/latest/reference/iam/attach-role-policy.html](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-role-policy.html) command. In the following example, replace {{iam\_policy\_arn}} with the ARN of the IAM policy that you created in [Step 1: Create an IAM policy](#db2-creating-iam-policy). Replace {{iam\_role\_name}} with the name of the IAM role that you just created.
+1. Run the [attach-role-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-role-policy.html) command. In the following example, replace {{iam\_policy\_arn}} with the ARN of the IAM policy that you created in [Step 1: Create an IAM policy](#db2-creating-iam-policy). Replace {{iam\_role\_name}} with the name of the IAM role that you just created.
 
    For Linux, macOS, or Unix:
 
@@ -370,7 +370,7 @@ You can add an IAM role to your DB instance by using the AWS Management Console 
 ### AWS CLI
 <a name="db2-adding-iam-role-cli"></a>
 
-To add an IAM role to your RDS for Db2 DB instance, run the [https://docs.aws.amazon.com/cli/latest/reference/rds/add-role-to-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/add-role-to-db-instance.html) command. In the following example, replace {{region}}, {{db\_instance\_name}}, and {{iam\_role\_arn}} with the name of the AWS Region where your DB instance exists, the name of your DB instance, and the ARN of the IAM role that you created in [Step 2: Create an IAM role and attach your IAM policy](#db2-creating-iam-role).
+To add an IAM role to your RDS for Db2 DB instance, run the [add-role-to-db-instance](https://docs.aws.amazon.com/cli/latest/reference/rds/add-role-to-db-instance.html) command. In the following example, replace {{region}}, {{db\_instance\_name}}, and {{iam\_role\_arn}} with the name of the AWS Region where your DB instance exists, the name of your DB instance, and the ARN of the IAM role that you created in [Step 2: Create an IAM role and attach your IAM policy](#db2-creating-iam-role).
 
 For Linux, macOS, or Unix:
 
@@ -392,7 +392,7 @@ aws rds add-role-to-db-instance ^
     --role-arn {{iam_role_arn}} ^
 ```
 
-To confirm that the role was successfully added to your RDS for Db2 DB instance, run the [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html) command. In the following example, replace {{db\_instance\_name}} with the name of your DB instance.
+To confirm that the role was successfully added to your RDS for Db2 DB instance, run the [describe-db-instances](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html) command. In the following example, replace {{db\_instance\_name}} with the name of your DB instance.
 
 For Linux, macOS, or Unix:
 

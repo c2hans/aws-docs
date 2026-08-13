@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 # `aws:assertAwsResourceProperty` – Assert an AWS resource state or event state
 <a name="automation-action-assertAwsResourceProperty"></a>
 
-The `aws:assertAwsResourceProperty` action allows you to assert a specific resource state or event state for a specific Automation step.
+The `aws:assertAwsResourceProperty` action lets you assert a specific resource state or event state for a specific Automation step.
 
 **Note**
 The `aws:assertAwsResourceProperty` action supports automatic throttling retry. For more information, see [Configuring automatic retry for throttled operations](automation-throttling-retry.md).

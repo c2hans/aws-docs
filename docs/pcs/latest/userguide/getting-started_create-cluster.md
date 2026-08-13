@@ -14,11 +14,11 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/getting-started_cre
 1. In the **Cluster details** section, enter the following fields:
    + **Cluster name** – Enter `get-started`
    + **Scheduler** – Select **Slurm Version 25.11**
-   + **Controller size** – Select **Small**
+   + **Controller size** – Select **Small**. The controller size sets the capacity of the managed Slurm controller; **Small** is enough for a demonstration cluster.
 
 1.  In the **Networking** section, select values for the following fields:
    + **VPC** – Choose the VPC named `hpc-networking:Large-Scale-HPC`
-   + **Subnet** – Select the subnet where the name starts with `hpc-networking:PrivateSubnetA`
+   + **Subnet** – Select the subnet where the name starts with `hpc-networking:PrivateSubnetA`. The controller runs in a private subnet because it does not need to be reachable from the internet.
    + **Security groups** – Select the cluster security group named `cluster-getstarted-sg`
 
 1. Choose **Create cluster**.

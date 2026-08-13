@@ -43,6 +43,9 @@ Content-type: application/json
          "location": { ... }
       }
    ],
+   "filesystemConfigurations": [
+      { ... }
+   ],
    "name": "{{string}}",
    "profileConfiguration": {
       "profileIdentifier": "{{string}}"
@@ -108,6 +111,12 @@ Required: No
 A list of browser extensions to load into the browser session.
 Type: Array of [BrowserExtension](API_BrowserExtension.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
+Required: No
+
+ ** [filesystemConfigurations](#API_StartBrowserSession_RequestSyntax) **   <a name="BedrockAgentCore-StartBrowserSession-request-filesystemConfigurations"></a>
+The file system configurations to mount into the browser session. Use these configurations to mount your own Amazon Simple Storage Service (Amazon S3) Files or Amazon Elastic File System (Amazon EFS) access points. Your session can then read and write your data. If you don't specify this field, no additional file systems are mounted.
+Type: Array of [ToolsFileSystemConfiguration](API_ToolsFileSystemConfiguration.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Required: No
 
  ** [name](#API_StartBrowserSession_RequestSyntax) **   <a name="BedrockAgentCore-StartBrowserSession-request-name"></a>

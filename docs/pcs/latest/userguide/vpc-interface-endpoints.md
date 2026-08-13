@@ -23,7 +23,7 @@ By default, the AWS PCS agent connects to the dual-stack (IPv4 and IPv6) endpoin
 If you use the Amazon-provided DNS, keep **Enable DNS name** selected under **Additional settings** when you create the endpoint, and make sure that DNS hostnames and DNS resolution are enabled for the VPC.
 If you use custom DNS, make sure that it can resolve `pcs.{{region}}.api.aws` to the endpoint.
 
-If your VPC doesn't have direct internet access, you must configure a VPC endpoint to enable your compute node group instances to call the AWS PCS [https://docs.aws.amazon.com/pcs/latest/APIReference/API_RegisterComputeNodeGroupInstance.html](https://docs.aws.amazon.com/pcs/latest/APIReference/API_RegisterComputeNodeGroupInstance.html) API action.
+If your VPC doesn't have direct internet access, you must configure a VPC endpoint to enable your compute node group instances to call the AWS PCS [`RegisterComputeNodeGroupInstance`](https://docs.aws.amazon.com/pcs/latest/APIReference/API_RegisterComputeNodeGroupInstance.html) API action.
 
 ## Create an interface endpoint for AWS PCS
 <a name="vpc-endpoint-create"></a>

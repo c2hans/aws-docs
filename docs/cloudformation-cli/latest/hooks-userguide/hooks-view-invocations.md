@@ -83,7 +83,7 @@ To display hidden columns, choose the gear icon on the top right corner of the s
 ## View invocation results using the AWS CLI
 <a name="hooks-view-invocations-cli"></a>
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-hook-results.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-hook-results.html) command to retrieve information about Hook invocations. This command supports the following filtering options:
+Use the [list-hook-results](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-hook-results.html) command to retrieve information about Hook invocations. This command supports the following filtering options:
 + Get all Hook invocation results (no parameters required)
 + Filter by Hook ARN (use `--type-arn`)
 + Filter by Hook ARN and status (use `--type-arn` and `--status`)
@@ -199,7 +199,7 @@ Example output:
 For a description of the fields in the response, see [HookResultSummary](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_HookResultSummary.html) in the *AWS CloudFormation API Reference*.
 
 **Get detailed results for a specific invocation**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/get-hook-result.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/get-hook-result.html) command to retrieve detailed information about a specific Hook invocation, including annotations with compliance check results and remediation guidance.
+Use the [get-hook-result](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/get-hook-result.html) command to retrieve detailed information about a specific Hook invocation, including annotations with compliance check results and remediation guidance.
 
 ```
 aws cloudformation get-hook-result \

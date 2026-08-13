@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 
 When you [edit](sqs-configure-edit-queue.md) a queue, you can configure its access policy to control who can interact with it.
 + The access policy defines which accounts, users, and roles have permissions to access the queue.
-+ It specifies the allowed actions, such as [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html), [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html), or [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_DeleteMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_DeleteMessage.html).
++ It specifies the allowed actions, such as [`SendMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html), [`ReceiveMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html), or [`DeleteMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_DeleteMessage.html).
 + By default, only the queue owner has permission to send and receive messages.
 
 ****To configure the access policy for an existing queue (console)****

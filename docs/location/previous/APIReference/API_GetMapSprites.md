@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_GetMa
 <a name="API_GetMapSprites"></a>
 
 **Important**
-This operation is no longer current and may be deprecated in the future. We recommend upgrading to [https://docs.aws.amazon.com/location/latest/APIReference/API_geomaps_GetSprites.html](https://docs.aws.amazon.com/location/latest/APIReference/API_geomaps_GetSprites.html) unless you require `Grab` data.
+This operation is no longer current and may be deprecated in the future. We recommend upgrading to [`GetSprites`](https://docs.aws.amazon.com/location/latest/APIReference/API_geomaps_GetSprites.html) unless you require `Grab` data.
  `GetMapSprites` is part of a previous Amazon Location Service Maps API (version 1) which has been superseded by a more intuitive, powerful, and complete API (version 2).
 The version 2 `GetSprites` operation gives a better user experience and is compatible with the remainder of the V2 Maps API.
 If you are using an AWS SDK or the AWS CLI, note that the Maps API version 2 is found under `geo-maps` or `geo_maps`, not under `location`.

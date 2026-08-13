@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/change-
 # Deleting a Change Calendar event
 <a name="change-calendar-delete-event"></a>
 
-You can delete one event at a time in Change Calendar, a tool in AWS Systems Manager, by using the AWS Management Console.
+You can delete one event at a time in Change Calendar by using the AWS Management Console.
 
 **Tip**
 If you selected **Add change management events to the calendar** when you created the calendar, you can do the following:

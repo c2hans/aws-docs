@@ -51,7 +51,7 @@ spec:
 ## Commonly used annotations
 <a name="_commonly_used_annotations"></a>
 
-The following table lists commonly used annotations supported by EKS Auto Mode. Note that EKS Auto Mode may not support all annotations.
+The following table lists the supported annotations for Amazon EKS Auto Mode. Amazon EKS Auto Mode does not support all service annotations available in the AWS Load Balancer Controller.
 
 **Tip**
 All of the following annotations need to be prefixed with `service.beta.kubernetes.io/`

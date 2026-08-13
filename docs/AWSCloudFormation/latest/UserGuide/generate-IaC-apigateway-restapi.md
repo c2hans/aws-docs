@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gener
 # How to resolve issues with write-only properties in AWS::ApiGateway::RestAPI resources
 <a name="generate-IaC-apigateway-restapi"></a>
 
-This topic explains how to resolve issues with write-only properties in [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-apigateway-restapi.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-apigateway-restapi.html) resources when using the IaC generator.
+This topic explains how to resolve issues with write-only properties in [AWS::ApiGateway::RestApi](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-apigateway-restapi.html) resources when using the IaC generator.
 
 ## Issue
 <a name="apigateway-restapi-write-only-properties-issue"></a>
@@ -17,7 +17,7 @@ When a generated template contains `AWS::ApiGateway::RestApi` resources, then wa
 
 To set the `Body` property for your REST API, update your generated template.
 
-1. Use the Amazon API Gateway [https://docs.aws.amazon.com/apigateway/latest/api/API_GetExport.html](https://docs.aws.amazon.com/apigateway/latest/api/API_GetExport.html) API action to download the API. For example, by using the [https://docs.aws.amazon.com/cli/latest/reference/apigateway/get-export.html](https://docs.aws.amazon.com/cli/latest/reference/apigateway/get-export.html) AWS CLI command. For more information, see [Export a REST API from API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-export-api.html) in the *API Gateway Developer Guide*.
+1. Use the Amazon API Gateway [GetExport](https://docs.aws.amazon.com/apigateway/latest/api/API_GetExport.html) API action to download the API. For example, by using the [aws apigateway get-export](https://docs.aws.amazon.com/cli/latest/reference/apigateway/get-export.html) AWS CLI command. For more information, see [Export a REST API from API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-export-api.html) in the *API Gateway Developer Guide*.
 
 1. Retrieve the `Body` property from the response of the `GetExport` API action. Upload it to an Amazon S3 bucket.
 

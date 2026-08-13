@@ -47,7 +47,7 @@ When you delete a group, all information about the group is removed, including a
 aws ds-data delete-group --directory-id {{d-1234567890}} --sam-account-name "{{your-group-name}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-data/delete-group.html](https://docs.aws.amazon.com//cli/latest/reference/ds-data/delete-group.html).
+For more information, see [`delete-group`](https://docs.aws.amazon.com//cli/latest/reference/ds-data/delete-group.html).
 
 ------
 #### [ PowerShell ]
@@ -61,6 +61,6 @@ For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-
 Remove-DSDGroup -DirectoryId {{d-1234567890}} -SAMAccountName "{{your-group-name}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Remove-DSDGroup.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Remove-DSDGroup.html).
+For more information, see [`Remove-DSDGroup`](https://docs.aws.amazon.com//powershell/latest/reference/items/Remove-DSDGroup.html).
 
 ------

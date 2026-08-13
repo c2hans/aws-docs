@@ -110,4 +110,5 @@ If the AWS Security Agent Forge app is uninstalled from your Atlassian site whil
 After connecting Confluence to AWS Security Agent:
 + Navigate to the Agent Space where you want to use this documentation
 + Select specific pages to include as context for design reviews and penetration tests
++ Select pages as scope documents for threat models (see [Enable threat modeling](enable-threat-model.md))
 + Upload additional documentation via S3 if needed (see [Provide agent resources from an S3 bucket](enable-s3-bucket.md))

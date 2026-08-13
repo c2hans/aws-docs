@@ -30,7 +30,7 @@ OCSF uses a variety of fields to help you determine where a specific set of logs
 | CloudTrail Management Events | `CloudTrail` | `AWS` | `Management` | `API Activity`, `Authentication`, or `Account Change` | `1.0.0-rc.2` |
 | CloudTrail S3 Data Events | `CloudTrail` | `AWS` | `Data` | `API Activity` | `1.0.0-rc.2` |
 | Route 53 | `Route 53` | `AWS` | `Resolver Query Logs` | `DNS Activity` | `1.0.0-rc.2` |
-| Security Hub CSPM | `Security Hub CSPM` | `AWS` | Matches Security Hub CSPM [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecurityFindingFilters.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecurityFindingFilters.html) value | `Security Finding` | `1.0.0-rc.2` |
+| Security Hub CSPM | `Security Hub CSPM` | `AWS` | Matches Security Hub CSPM [`ProductName`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecurityFindingFilters.html) value | `Security Finding` | `1.0.0-rc.2` |
 | VPC Flow Logs | `Amazon VPC` | `AWS` | `Flowlogs` | `Network Activity` | `1.0.0-rc.2` |
 
 `The OCSF source identification for AWS log sources (Version 2) are listed in the following table.`
@@ -41,7 +41,7 @@ OCSF uses a variety of fields to help you determine where a specific set of logs
 | CloudTrail Management Events | `CloudTrail` | `AWS` | `Management` | `API Activity`, `Authentication`, or `Account Change` | `1.1.0` |
 | CloudTrail S3 Data Events | `CloudTrail` | `AWS` | `Data` | `API Activity` | `1.1.0` |
 | Route 53 | `Route 53` | `AWS` | `Resolver Query Logs` | `DNS Activity` | `1.1.0` |
-| Security Hub CSPM | Matches AWS Security Finding Format (ASFF) [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecurityFindingFilters.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecurityFindingFilters.html) value | Matches AWS Security Finding Format (ASFF) [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecurityFindingFilters.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecurityFindingFilters.html) value | Matches [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecurityFindingFilters.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecurityFindingFilters.html) value from ASFF `ProductFields` | `Vulnerability Finding, Compliance Finding, or Detection Finding` | `1.1.0` |
+| Security Hub CSPM | Matches AWS Security Finding Format (ASFF) [`ProductName`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecurityFindingFilters.html) value | Matches AWS Security Finding Format (ASFF) [`CompanyName`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecurityFindingFilters.html) value | Matches [`featureName`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecurityFindingFilters.html) value from ASFF `ProductFields` | `Vulnerability Finding, Compliance Finding, or Detection Finding` | `1.1.0` |
 | VPC Flow Logs | `Amazon VPC` | `AWS` | `Flowlogs` | `Network Activity` | `1.1.0` |
 | EKS Audit Logs | `Amazon EKS` | `AWS` | `Elastic Kubernetes Service` | `API Activity` | `1.1.0` |
 | AWS WAFv2 Logs | `AWS WAF` | `AWS` | `—` | `HTTP Activity` | `1.1.0` |

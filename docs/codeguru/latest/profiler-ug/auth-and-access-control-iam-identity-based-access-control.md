@@ -34,7 +34,7 @@ For more information about best practices in IAM, see [Security best practices i
 
 A user who uses the CodeGuru Profiler console must have a minimum set of permissions that allows them to describe other AWS resources for the AWS account. You must have permissions from the following services:
 + CodeGuru Profiler
-+  [https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListUsers.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListUsers.html) and [https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListRoles.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListRoles.html) from the IAM service
++  [`ListUsers`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListUsers.html) and [`ListRoles`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListRoles.html) from the IAM service
 
 If you create an IAM policy that is more restrictive than the minimum required permissions, the console won't function as intended.
 
@@ -100,7 +100,7 @@ For the CodeGuru Profiler console, it can be useful to have an additional policy
 }
 ```
 
- For more information, see [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html), [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_PostAgentProfile.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_PostAgentProfile.html), [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetProfile.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetProfile.html), [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_DescribeProfilingGroup.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_DescribeProfilingGroup.html), and [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ListProfilingGroups.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ListProfilingGroups.html) in the *Amazon CodeGuru Profiler API Reference*.
+ For more information, see [`ConfigureAgent`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html), [`PostAgentProfile`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_PostAgentProfile.html), [`GetProfile`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetProfile.html), [`DescribeProfilingGroup`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_DescribeProfilingGroup.html), and [`ListProfilingGroups`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ListProfilingGroups.html) in the *Amazon CodeGuru Profiler API Reference*.
 
 ## AWS managed (predefined) policies for CodeGuru Profiler
 <a name="managed-policies"></a>

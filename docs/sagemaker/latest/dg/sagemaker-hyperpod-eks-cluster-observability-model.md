@@ -13,7 +13,7 @@ A cluster admin must create an MLflow tracking server.
 
 1. Create a SageMaker AI MLflow tracking server, following the instructions at [Create a tracking server using the AWS CLI](https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow-create-tracking-server-cli.html#mlflow-create-tracking-server-cli-infra-setup).
 
-1. Make sure that the [https://docs.aws.amazon.com/eks/latest/APIReference/API_auth_AssumeRoleForPodIdentity.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_auth_AssumeRoleForPodIdentity.html) permission exists in the IAM execution role for SageMaker HyperPod.
+1. Make sure that the [`eks-auth:AssumeRoleForPodIdentity`](https://docs.aws.amazon.com/eks/latest/APIReference/API_auth_AssumeRoleForPodIdentity.html) permission exists in the IAM execution role for SageMaker HyperPod.
 
 1. If the `eks-pod-identity-agent` add-on is not already installed on your EKS cluster, install the add-on on the EKS cluster.
 

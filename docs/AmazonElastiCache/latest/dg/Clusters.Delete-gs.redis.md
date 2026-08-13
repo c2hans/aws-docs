@@ -63,4 +63,4 @@ aws elasticache delete-cache-cluster ^
     --region {{us-east-2}}
 ```
 
-For more information, see the AWS CLI for ElastiCache topic [https://docs.aws.amazon.com/cli/latest/reference/elasticache/delete-cache-cluster.html](https://docs.aws.amazon.com/cli/latest/reference/elasticache/delete-cache-cluster.html).
+For more information, see the AWS CLI for ElastiCache topic [`delete-cache-cluster`](https://docs.aws.amazon.com/cli/latest/reference/elasticache/delete-cache-cluster.html).

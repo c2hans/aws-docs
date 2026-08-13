@@ -39,6 +39,23 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   CreateAgentContext  **
+  - **IAM action:**  [wellarchitected:CreateAgentContext](#list_wellarchitected-action-CreateAgentContext)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   CreateAgentGoal  **
+  - **IAM action:**  [wellarchitected:CreateAgentGoal](#list_wellarchitected-action-CreateAgentGoal)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   CreateAgentProfile  **
+  - **IAM action:**  [wellarchitected:CreateAgentProfile](#list_wellarchitected-action-CreateAgentProfile)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [wellarchitected:TagResource](#list_wellarchitected-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** wellarchitected.amazonaws.com / **Access level:** Write
+
 - **   CreateLensShare  **
   - **IAM action:**  [wellarchitected:CreateLensShare](#list_wellarchitected-action-CreateLensShare)
   - **Condition key:**
@@ -87,6 +104,24 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   CreateWorkloadShare  **
   - **IAM action:**  [wellarchitected:CreateWorkloadShare](#list_wellarchitected-action-CreateWorkloadShare)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteAgentContext  **
+  - **IAM action:**  [wellarchitected:DeleteAgentContext](#list_wellarchitected-action-DeleteAgentContext)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteAgentGoal  **
+  - **IAM action:**  [wellarchitected:DeleteAgentGoal](#list_wellarchitected-action-DeleteAgentGoal)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteAgentProfile  **
+  - **IAM action:**  [wellarchitected:DeleteAgentProfile](#list_wellarchitected-action-DeleteAgentProfile)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -153,6 +188,36 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ExportLens  **
   - **IAM action:**  [wellarchitected:ExportLens](#list_wellarchitected-action-ExportLens)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetAgentContext  **
+  - **IAM action:**  [wellarchitected:GetAgentContext](#list_wellarchitected-action-GetAgentContext)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetAgentGoal  **
+  - **IAM action:**  [wellarchitected:GetAgentGoal](#list_wellarchitected-action-GetAgentGoal)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetAgentProfile  **
+  - **IAM action:**  [wellarchitected:GetAgentProfile](#list_wellarchitected-action-GetAgentProfile)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetAgentRecommendation  **
+  - **IAM action:**  [wellarchitected:GetAgentRecommendation](#list_wellarchitected-action-GetAgentRecommendation)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetAgentRecommendationGeneration  **
+  - **IAM action:**  [wellarchitected:GetAgentRecommendationGeneration](#list_wellarchitected-action-GetAgentRecommendationGeneration)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -244,6 +309,42 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   ImportLens  **
   - **IAM action:**  [wellarchitected:ImportLens](#list_wellarchitected-action-ImportLens)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [wellarchitected:TagResource](#list_wellarchitected-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   ListAgentContexts  **
+  - **IAM action:**  [wellarchitected:ListAgentContexts](#list_wellarchitected-action-ListAgentContexts)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   ListAgentGoals  **
+  - **IAM action:**  [wellarchitected:ListAgentGoals](#list_wellarchitected-action-ListAgentGoals)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   ListAgentProfiles  **
+  - **IAM action:**  [wellarchitected:ListAgentProfiles](#list_wellarchitected-action-ListAgentProfiles)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   ListAgentRecommendationGenerations  **
+  - **IAM action:**  [wellarchitected:ListAgentRecommendationGenerations](#list_wellarchitected-action-ListAgentRecommendationGenerations)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   ListAgentRecommendationItems  **
+  - **IAM action:**  [wellarchitected:ListAgentRecommendationItems](#list_wellarchitected-action-ListAgentRecommendationItems)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   ListAgentRecommendations  **
+  - **IAM action:**  [wellarchitected:ListAgentRecommendations](#list_wellarchitected-action-ListAgentRecommendations)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
 
 - **   ListAnswers  **
   - **IAM action:**  [wellarchitected:ListAnswers](#list_wellarchitected-action-ListAnswers)
@@ -359,6 +460,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   PutAgentRecommendationFeedback  **
+  - **IAM action:**  [wellarchitected:PutAgentRecommendationFeedback](#list_wellarchitected-action-PutAgentRecommendationFeedback)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   StartAgentRecommendationGeneration  **
+  - **IAM action:**  [wellarchitected:StartAgentRecommendationGeneration](#list_wellarchitected-action-StartAgentRecommendationGeneration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   TagResource  **
   - **IAM action:**  [wellarchitected:TagResource](#list_wellarchitected-action-TagResource)
   - **Condition key:**
@@ -370,6 +483,28 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Tagging, Write
+
+- **   UpdateAgentContext  **
+  - **IAM action:**  [wellarchitected:UpdateAgentContext](#list_wellarchitected-action-UpdateAgentContext)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateAgentGoal  **
+  - **IAM action:**  [wellarchitected:UpdateAgentGoal](#list_wellarchitected-action-UpdateAgentGoal)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateAgentProfile  **
+  - **IAM action:**  [wellarchitected:UpdateAgentProfile](#list_wellarchitected-action-UpdateAgentProfile)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** wellarchitected.amazonaws.com / **Access level:** Write
+
+- **   UpdateAgentRecommendationStatus  **
+  - **IAM action:**  [wellarchitected:UpdateAgentRecommendationStatus](#list_wellarchitected-action-UpdateAgentRecommendationStatus)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   UpdateAnswer  **
   - **IAM action:**  [wellarchitected:UpdateAnswer](#list_wellarchitected-action-UpdateAnswer)

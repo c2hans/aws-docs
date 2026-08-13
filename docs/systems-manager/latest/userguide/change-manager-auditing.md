@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/change-
 **Change Manager availability change**
 AWS Systems Manager Change Manager will no longer be open to new customers starting November 7, 2025. If you would like to use Change Manager, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [AWS Systems Manager Change Manager availability change](https://docs.aws.amazon.com/systems-manager/latest/userguide/change-manager-availability-change.html).
 
-You can audit activity in Change Manager, a tool in AWS Systems Manager, by using Amazon CloudWatch and AWS CloudTrail alarms.
+You can audit activity in Change Manager by using Amazon CloudWatch and AWS CloudTrail alarms.
 
 For more information about auditing and logging options for Systems Manager, see [Logging and monitoring in AWS Systems Manager](monitoring.md).
 

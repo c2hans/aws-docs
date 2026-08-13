@@ -16,11 +16,11 @@ For existing application environments, the *Allow direct access to LLM* setting 
 You can customize a web experience by using either the AWS Management Console or the Amazon Q API. These customizations persist even in *Amazon Q embedded*. You can perform these customizations using either the AWS Management Console or the Amazon Q API (available via the AWS SDK, REST API, and AWS CLI).
 
 If you use the API, customizing your Amazon Q Business can involve a combination of the following API operations.
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateApplication.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateApplication.html) – Creates an Amazon Q application environment.
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateWebExperience.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateWebExperience.html) – Creates an Amazon Q web experience.
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetWebExperience.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetWebExperience.html) – Gets the properties of the web experience that you set up.
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateWebExperience.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateWebExperience.html) – Updates the properties of an existing Amazon Q web experience.
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListWebExperiences.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListWebExperiences.html) – Lists Amazon Q web experiences.
++ [CreateApplication](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateApplication.html) – Creates an Amazon Q application environment.
++ [CreateWebExperience](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateWebExperience.html) – Creates an Amazon Q web experience.
++ [GetWebExperience](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetWebExperience.html) – Gets the properties of the web experience that you set up.
++ [UpdateWebExperience](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateWebExperience.html) – Updates the properties of an existing Amazon Q web experience.
++ [ListWebExperiences](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListWebExperiences.html) – Lists Amazon Q web experiences.
 
 **Topics**
 + [Customization overview](#customization-web-experience-iam-overview)

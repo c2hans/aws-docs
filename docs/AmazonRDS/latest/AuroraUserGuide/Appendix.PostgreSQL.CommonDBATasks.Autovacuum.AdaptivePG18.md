@@ -7,12 +7,12 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Appendi
 
 Starting with RDS for PostgreSQL version 18, Amazon RDS enhances the adaptive autovacuum mechanism to dynamically scale `autovacuum_max_workers` when your DB instance approaches transaction ID wraparound. In earlier PostgreSQL versions, `autovacuum_max_workers` required a restart to change. PostgreSQL 18 makes `autovacuum_max_workers` a dynamic parameter, allowing Amazon RDS to adjust it without a restart.
 
-PostgreSQL 18 also introduces a new parameter, `autovacuum_worker_slots`, which reserves backend process slots for autovacuum workers at server startup. This parameter sets the upper limit on how many autovacuum workers can ever run concurrently – `autovacuum_max_workers` cannot exceed this value. Unlike `autovacuum_max_workers`, `autovacuum_worker_slots` requires a restart to change. For more information, see [https://www.postgresql.org/docs/devel/runtime-config-vacuum.html#GUC-AUTOVACUUM-WORKER-SLOTS](https://www.postgresql.org/docs/devel/runtime-config-vacuum.html#GUC-AUTOVACUUM-WORKER-SLOTS) in the PostgreSQL documentation.
+PostgreSQL 18 also introduces a new parameter, `autovacuum_worker_slots`, which reserves backend process slots for autovacuum workers at server startup. This parameter sets the upper limit on how many autovacuum workers can ever run concurrently – `autovacuum_max_workers` cannot exceed this value. Unlike `autovacuum_max_workers`, `autovacuum_worker_slots` requires a restart to change. For more information, see [`autovacuum_worker_slots`](https://www.postgresql.org/docs/devel/runtime-config-vacuum.html#GUC-AUTOVACUUM-WORKER-SLOTS) in the PostgreSQL documentation.
 
 ## How adaptive autovacuum scales workers
 <a name="Appendix.PostgreSQL.CommonDBATasks.Autovacuum.AdaptivePG18.ScalingWorkers"></a>
 
-When the [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html) CloudWatch metric exceeds 1 billion on a PostgreSQL 18 instance, Amazon RDS increases `autovacuum_max_workers` up to the `autovacuum_worker_slots` value using the following formula, which is also the default formula for the `autovacuum_worker_slots` parameter:
+When the [`MaximumUsedTransactionIDs`](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html) CloudWatch metric exceeds 1 billion on a PostgreSQL 18 instance, Amazon RDS increases `autovacuum_max_workers` up to the `autovacuum_worker_slots` value using the following formula, which is also the default formula for the `autovacuum_worker_slots` parameter:
 
 ```
 LEAST(GREATEST({DBInstanceClassMemory/32185783296}, 16), 32)

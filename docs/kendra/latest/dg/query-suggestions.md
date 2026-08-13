@@ -16,7 +16,7 @@ Amazon Kendra suggests queries relevant to your users based on one of the follow
 + Popular queries in the query history or query log
 + The contents of document fields/attributes
 
-You can set your preference for using the query history or document fields by setting `SuggestionTypes` as either `QUERY` or `DOCUMENT_ATTRIBUTES` and calling [https://docs.aws.amazon.com/kendra/latest/APIReference/API_GetQuerySuggestions.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_GetQuerySuggestions.html). By default, Amazon Kendra uses the query history to base suggestions on. If the query history and document fields are both activated when you call [https://docs.aws.amazon.com/kendra/latest/APIReference/API_UpdateQuerySuggestionsConfig.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_UpdateQuerySuggestionsConfig.html) and you haven't set your `SuggestionTypes` preference to use document fields, then Amazon Kendra uses the query history.
+You can set your preference for using the query history or document fields by setting `SuggestionTypes` as either `QUERY` or `DOCUMENT_ATTRIBUTES` and calling [GetQuerySuggestions](https://docs.aws.amazon.com/kendra/latest/APIReference/API_GetQuerySuggestions.html). By default, Amazon Kendra uses the query history to base suggestions on. If the query history and document fields are both activated when you call [UpdateQuerySuggestionsConfig](https://docs.aws.amazon.com/kendra/latest/APIReference/API_UpdateQuerySuggestionsConfig.html) and you haven't set your `SuggestionTypes` preference to use document fields, then Amazon Kendra uses the query history.
 
 If you use the console, you can base query suggestions on either the query history or document fields. You first select your index and then select **Query suggestions** under **Enrichments** in the navigation menu. Then select **Configure query suggestions**. After you configure query suggestions, you are directed to a search console where you can select either the **Query history** or **Document fields** in the right panel and enter a search query in the search bar.
 
@@ -49,7 +49,7 @@ You can specify how Amazon Kendra selects eligible queries to suggest to your us
 ### Settings for selecting queries for suggestions
 <a name="query-suggestions-history-settings"></a>
 
-You can configure the following settings for selecting queries for suggestions by using the [https://docs.aws.amazon.com/kendra/latest/APIReference/API_UpdateQuerySuggestionsConfig.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_UpdateQuerySuggestionsConfig.html) API:
+You can configure the following settings for selecting queries for suggestions by using the [UpdateQuerySuggestionsConfig](https://docs.aws.amazon.com/kendra/latest/APIReference/API_UpdateQuerySuggestionsConfig.html) API:
 + **Mode**—Query suggestions using the query history are either `ENABLED` or `LEARN_ONLY`. Amazon Kendra activates query suggestions by default. `LEARN_ONLY` turns off query suggestions. If turned off, Amazon Kendra continues to learn suggestions but doesn't make query suggestions to users.
 + **Query log time window**—How recent your queries are in your query log time window. The time window is an integer value for the number of days from current day to past days.
 + **Queries without user information**—Set to `TRUE` to include all queries, or set to `FALSE` to only include queries with user information. You can use this setting if your search application includes user information, such as the user ID, when a user issues a query. By default, this setting doesn't filter out queries if there's no specific user information associated with the queries. However, you can use this setting to only make suggestions based on queries that include user information.
@@ -62,7 +62,7 @@ These settings affect how queries are selected as popular queries to suggest to 
 + If you define popular queries as being searched by at least 10 unique users and searched at least 100 times, then you set the unique users to 10 and the query count to 100.
 
 **Warning**
-Your changes to settings might not take effect immediately. You can track the settings changes by using the [https://docs.aws.amazon.com/kendra/latest/APIReference/API_DescribeQuerySuggestionsConfig.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_DescribeQuerySuggestionsConfig.html) API. The time for your updated settings to take effect depends on the updates that you make and the number of search queries in your index. Amazon Kendra automatically updates suggestions every 24 hours, after you change a setting or after you apply a [block list](https://docs.aws.amazon.com/kendra/latest/dg/query-suggestions.html#query-suggestions-blocklist).
+Your changes to settings might not take effect immediately. You can track the settings changes by using the [DescribeQuerySuggestionsConfig](https://docs.aws.amazon.com/kendra/latest/APIReference/API_DescribeQuerySuggestionsConfig.html) API. The time for your updated settings to take effect depends on the updates that you make and the number of search queries in your index. Amazon Kendra automatically updates suggestions every 24 hours, after you change a setting or after you apply a [block list](https://docs.aws.amazon.com/kendra/latest/dg/query-suggestions.html#query-suggestions-blocklist).
 
 ------
 #### [ CLI ]
@@ -191,7 +191,7 @@ print("Program ends.")
 **Note**
 Feature support varies by index type and search API being used. To see if this feature is supported for the index type and search API you’re using, see [Index types](https://docs.aws.amazon.com/kendra/latest/dg/hiw-index-types.html).
 
-You can clear query suggestions by using the [https://docs.aws.amazon.com/kendra/latest/APIReference/API_DescribeQuerySuggestionsConfig.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_DescribeQuerySuggestionsConfig.html) API. Clearing suggestions deletes existing query suggestions only, not the queries in the query history. When you clear suggestions, Amazon Kendra learns new suggestions based on new queries added to the query log from the time you cleared suggestions.
+You can clear query suggestions by using the [ClearQuerySuggestions](https://docs.aws.amazon.com/kendra/latest/APIReference/API_DescribeQuerySuggestionsConfig.html) API. Clearing suggestions deletes existing query suggestions only, not the queries in the query history. When you clear suggestions, Amazon Kendra learns new suggestions based on new queries added to the query log from the time you cleared suggestions.
 
 ------
 #### [ CLI ]
@@ -247,7 +247,7 @@ If you don't see suggestions for a query, it could be for one of the following r
 + Your query suggestions settings are too strict, resulting in most queries being filtered out from suggestions.
 + You recently cleared suggestions, and Amazon Kendra still needs time for new queries to accumulate in order to learn new suggestions.
 
-You can check your current settings using the [https://docs.aws.amazon.com/kendra/latest/APIReference/API_DescribeQuerySuggestionsConfig.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_DescribeQuerySuggestionsConfig.html) API.
+You can check your current settings using the [DescribeQuerySuggestionsConfig](https://docs.aws.amazon.com/kendra/latest/APIReference/API_DescribeQuerySuggestionsConfig.html) API.
 
 ## Query suggestions using document fields
 <a name="query-suggestions-doc-fields"></a>
@@ -265,13 +265,13 @@ You can use the contents of any document field of `String` and `StringList` type
 ### Settings for selecting fields for suggestions
 <a name="query-suggestions-doc-fields-settings"></a>
 
-You can configure the following settings for selecting document fields for suggestions using [https://docs.aws.amazon.com/kendra/latest/APIReference/API_AttributeSuggestionsConfig.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_AttributeSuggestionsConfig.html) and calling the [https://docs.aws.amazon.com/kendra/latest/APIReference/API_UpdateQuerySuggestionsConfig.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_UpdateQuerySuggestionsConfig.html) API to update the settings at the index level:
+You can configure the following settings for selecting document fields for suggestions using [AttributeSuggestionsConfig](https://docs.aws.amazon.com/kendra/latest/APIReference/API_AttributeSuggestionsConfig.html) and calling the [UpdateQuerySuggestionsConfig](https://docs.aws.amazon.com/kendra/latest/APIReference/API_UpdateQuerySuggestionsConfig.html) API to update the settings at the index level:
 + **Field/attribute suggestions mode**—Query suggestions using document fields are either `ACTIVE` or `INACTIVE`. Amazon Kendra activates query suggestions by default.
 + **Suggestible fields/attributes**—The field names or field keys to base suggestions on. These fields must be set to `TRUE` for `Suggestable`, as part of the fields configuration. You can override the fields configuration at the query level while maintaining the configuration at the index level. Use the [GetQuerySuggestions](https://docs.aws.amazon.com/kendra/latest/APIReference/API_GetQuerySuggestions.html) API to change `AttributeSuggestionConfig` at the query level. This configuration at the query level can be useful for quickly experimenting with using different document fields without having to update the configuration at the index level.
 + **Additional fields/attributes**—The additional fields that you want to include in the response for a query suggestion. These fields are used to provide extra information in the response; however, they are not used to base suggestions on.
 
 **Warning**
-Your changes to settings might not take effect immediately. You can track the settings changes by using the [https://docs.aws.amazon.com/kendra/latest/APIReference/API_DescribeQuerySuggestionsConfig.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_DescribeQuerySuggestionsConfig.html) API. The time for your updated settings to take effect depends on the updates that you make. Amazon Kendra automatically updates suggestions every 24 hours, after you change a setting or after you apply a [block list](https://docs.aws.amazon.com/kendra/latest/dg/query-suggestions.html#query-suggestions-blocklist).
+Your changes to settings might not take effect immediately. You can track the settings changes by using the [DescribeQuerySuggestionsConfig](https://docs.aws.amazon.com/kendra/latest/APIReference/API_DescribeQuerySuggestionsConfig.html) API. The time for your updated settings to take effect depends on the updates that you make. Amazon Kendra automatically updates suggestions every 24 hours, after you change a setting or after you apply a [block list](https://docs.aws.amazon.com/kendra/latest/dg/query-suggestions.html#query-suggestions-blocklist).
 
 ------
 #### [ CLI ]
@@ -408,7 +408,7 @@ print("Program ends.")
 
 You can apply user context filtering to the document fields that you want to base query suggestions on. This filters document field information based on the user or their group access to documents. For example, an intern searches the company's portal and doesn't have access to a top-secret company document. Therefore, suggested queries based on the top-secret document's title, or any other suggestible field, is not shown to the intern.
 
-You can index your documents with an access control list (ACL), defining which users and groups are assigned access to which documents. Then, you can apply user context filtering to your documents fields for query suggestions. User context filtering that is currently set for your index is the same user context filtering applied to your document fields configuration for query suggestions. User context filtering is part of your document fields configuration. You use the [https://docs.aws.amazon.com/kendra/latest/APIReference/API_AttributeSuggestionsConfig.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_AttributeSuggestionsConfig.html) and call [https://docs.aws.amazon.com/kendra/latest/APIReference/API_GetQuerySuggestions.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_GetQuerySuggestions.html).
+You can index your documents with an access control list (ACL), defining which users and groups are assigned access to which documents. Then, you can apply user context filtering to your documents fields for query suggestions. User context filtering that is currently set for your index is the same user context filtering applied to your document fields configuration for query suggestions. User context filtering is part of your document fields configuration. You use the [AttributeSuggestionsGetConfig](https://docs.aws.amazon.com/kendra/latest/APIReference/API_AttributeSuggestionsConfig.html) and call [GetQuerySuggestions](https://docs.aws.amazon.com/kendra/latest/APIReference/API_GetQuerySuggestions.html).
 
 ## Block certain queries or document field content from suggestions
 <a name="query-suggestions-blocklist"></a>
@@ -417,16 +417,16 @@ A *block list* stops Amazon Kendra from suggesting certain queries to your users
 
 You can use a block list to safeguard against offensive words or phrases that commonly appear in your query history or document fields and that Amazon Kendra could select as suggestions. A block list can also prevent Amazon Kendra from suggesting queries that contain information that is not ready to be publicly released or announced. For example, your users frequently query about an upcoming release of a potential new product. However, you don't want to suggest the product because you're not ready to release it.You can block queries that contain the product name and product information from suggestions.
 
-You can create a block list for queries by using the [https://docs.aws.amazon.com/kendra/latest/APIReference/API_CreateQuerySuggestionsBlockList.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_CreateQuerySuggestionsBlockList.html) API. You put each block word or phrase on a separate line in a text file. Then you upload the text file to your Amazon S3 bucket and provide the path or location to the file in Amazon S3. Amazon Kendra currently supports creating only one block list.
+You can create a block list for queries by using the [CreateQuerySuggestionsBlockList](https://docs.aws.amazon.com/kendra/latest/APIReference/API_CreateQuerySuggestionsBlockList.html) API. You put each block word or phrase on a separate line in a text file. Then you upload the text file to your Amazon S3 bucket and provide the path or location to the file in Amazon S3. Amazon Kendra currently supports creating only one block list.
 
-You can replace the text file of your blocked words and phrases in your Amazon S3 bucket. To update the block list in Amazon Kendra, use the [https://docs.aws.amazon.com/kendra/latest/APIReference/API_UpdateQuerySuggestionsBlockList.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_UpdateQuerySuggestionsBlockList.html) API.
+You can replace the text file of your blocked words and phrases in your Amazon S3 bucket. To update the block list in Amazon Kendra, use the [UpdateQuerySuggestionsBlockList](https://docs.aws.amazon.com/kendra/latest/APIReference/API_UpdateQuerySuggestionsBlockList.html) API.
 
-Use the [https://docs.aws.amazon.com/kendra/latest/APIReference/API_DescribeQuerySuggestionsBlockList.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_DescribeQuerySuggestionsBlockList.html) API to get the status of your block list. `DescribeQuerySuggestionsBlockList` can also provide you with other useful information, such as the following:
+Use the [DescribeQuerySuggestionsBlockList](https://docs.aws.amazon.com/kendra/latest/APIReference/API_DescribeQuerySuggestionsBlockList.html) API to get the status of your block list. `DescribeQuerySuggestionsBlockList` can also provide you with other useful information, such as the following:
 + When your block list was last updated
 + How many words or phrases are in your current block list
 + Helpful error messages when creating a block list
 
-You can also use the [https://docs.aws.amazon.com/kendra/latest/APIReference/API_ListQuerySuggestionsBlockLists.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_ListQuerySuggestionsBlockLists.html) API to get a list of block list summaries for an index.
+You can also use the [ListQuerySuggestionsBlockLists](https://docs.aws.amazon.com/kendra/latest/APIReference/API_ListQuerySuggestionsBlockLists.html) API to get a list of block list summaries for an index.
 
 To delete your block list, use the [DeleteQuerySuggestionsBlockList](https://docs.aws.amazon.com/kendra/latest/APIReference/API_DeleteQuerySuggestionsBlockList.html) API.
 

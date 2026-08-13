@@ -113,7 +113,7 @@ Before enabling an inventory configuration, make sure that you've reviewed and m
 ### Using the REST API
 <a name="metadata-tables-enable-disable-inventory-tables-rest-api"></a>
 
-You can send REST requests to enable or disable inventory tables. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_UpdateBucketMetadataInventoryTableConfiguration.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UpdateBucketMetadataInventoryTableConfiguration.html).
+You can send REST requests to enable or disable inventory tables. For more information, see [UpdateBucketMetadataInventoryTableConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UpdateBucketMetadataInventoryTableConfiguration.html).
 
 ### Using the AWS SDKs
 <a name="metadata-tables-enable-disable-inventory-tables-sdk"></a>

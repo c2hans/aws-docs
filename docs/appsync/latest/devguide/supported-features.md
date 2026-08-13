@@ -236,8 +236,8 @@ The following global constants are supported:
 +  `NaN`
 +  `Infinity`
 +  `undefined`
-+ [https://docs.aws.amazon.com/appsync/latest/devguide/built-in-util-js.html](https://docs.aws.amazon.com/appsync/latest/devguide/built-in-util-js.html)
-+ [https://docs.aws.amazon.com/appsync/latest/devguide/extensions-js.html](https://docs.aws.amazon.com/appsync/latest/devguide/extensions-js.html)
++ [`util`](https://docs.aws.amazon.com/appsync/latest/devguide/built-in-util-js.html)
++ [`extensions`](https://docs.aws.amazon.com/appsync/latest/devguide/extensions-js.html)
 + `runtime`
 
 ## Error types

@@ -16,7 +16,7 @@ These Security Hub CSPM controls evaluate the AWS Amplify service and resources.
 
 **Resource type:** `AWS::Amplify::App`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/amplify-app-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/amplify-app-tagged.html)
+**AWS Config rule:** [amplify-app-tagged](https://docs.aws.amazon.com/config/latest/developerguide/amplify-app-tagged.html)
 
 **Schedule type:** Change triggered
 
@@ -47,7 +47,7 @@ For information about adding tags to an AWS Amplify app, see [Resource tagging s
 
 **Resource type:** `AWS::Amplify::Branch`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/amplify-branch-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/amplify-branch-tagged.html)
+**AWS Config rule:** [amplify-branch-tagged](https://docs.aws.amazon.com/config/latest/developerguide/amplify-branch-tagged.html)
 
 **Schedule type:** Change triggered
 

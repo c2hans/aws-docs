@@ -72,7 +72,7 @@ For a distribution tenant, you must have the `cloudfront:GetDistributionTenant` 
 
 1. Compare the account ID of the *source* standard distribution or distribution tenant with the account ID where you created the *target* standard distribution or distribution tenant in the [previous step](alternate-domain-names-move-create-target.md). You can then determine whether the source and target are in the same AWS account. This helps you determine how to move the alternate domain name.
 
-   For more information, see the [https://docs.aws.amazon.com/cli/latest/reference/cloudfront/list-domain-conflicts.html](https://docs.aws.amazon.com/cli/latest/reference/cloudfront/list-domain-conflicts.html) command in the *AWS Command Line Interface Reference*.
+   For more information, see the [list-domain-conflicts](https://docs.aws.amazon.com/cli/latest/reference/cloudfront/list-domain-conflicts.html) command in the *AWS Command Line Interface Reference*.
 
 ------
 #### [ list-conflicting-aliases (standard distributions only) ]
@@ -126,7 +126,7 @@ You must have the `cloudfront:GetDistribution` and `cloudfront:ListConflictingAl
 
 1. Find the standard distribution for the alternate domain name that you're moving, and note the AWS account ID. Compare this account ID with the account ID where you created the target standard distribution in the [previous step](alternate-domain-names-move-create-target.md). You can then determine whether these two standard distributions are in the same AWS account and how to move the alternate domain name.
 
-   For more information, see the [https://docs.aws.amazon.com//cli/latest/reference/cloudfront/list-conflicting-aliases.html](https://docs.aws.amazon.com//cli/latest/reference/cloudfront/list-conflicting-aliases.html) command in the *AWS Command Line Interface Reference*.
+   For more information, see the [list-conflicting-aliases](https://docs.aws.amazon.com//cli/latest/reference/cloudfront/list-conflicting-aliases.html) command in the *AWS Command Line Interface Reference*.
 
 ------
 

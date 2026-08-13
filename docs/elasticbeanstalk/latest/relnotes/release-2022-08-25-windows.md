@@ -18,21 +18,38 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Framework** | **Details** |
-| --- | --- |
-| **Component** | **Details** |
-| --- | --- |
-| **Windows security updates** | Applied August 2022 security updates for Windows.<br />See the Microsoft [Security Update Guide](https://msrc.microsoft.com/update-guide/en-us). |
-| **Framework updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-08-25-windows.html)  |
-| **AWS component updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-08-25-windows.html)  |
-| **.NET Core** | Updated .NET 6 to version 6.0.8 on Windows Server 2019 and 2016 platform versions.<br />Updated .NET 3 to version 3.1.28 on Windows Server 2019 and 2016 platform versions. |
-| **AWS SDK for .NET** | Updated the SDK to version 3.15.1737. |
-| **AMI** | Updated the base AMI to version 2022.08.10. |
-| **CloudWatch Agent** | Updated the CloudWatch Agent to version 1.247354.0b251981. |
-| **SSM Agent** | Updated the SSM Agent to version 3.1.1634.0 on Windows Server 2019 and 2016 platform versions. |
-| **EC2Launch** | Updated EC2Launch V2 to version 2.0.863. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows security updates</b></td><td>Applied August 2022 security updates for Windows.<br />See the Microsoft <a href="https://msrc.microsoft.com/update-guide/en-us">Security Update Guide</a>.</td></tr>
+  <tr><td><b>Framework updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Framework</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET 6 to version 6.0.8 on Windows Server 2019 and 2016 platform versions.<br />Updated .NET 3 to version 3.1.28 on Windows Server 2019 and 2016 platform versions.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+  <tr><td><b>AWS component updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AWS SDK for .NET</b></td><td>Updated the SDK to version 3.15.1737.</td></tr>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version 2022.08.10.</td></tr>
+  <tr><td><b>CloudWatch Agent</b></td><td>Updated the CloudWatch Agent to version 1.247354.0b251981.</td></tr>
+  <tr><td><b>SSM Agent</b></td><td>Updated the SSM Agent to version 3.1.1634.0 on Windows Server 2019 and 2016 platform versions.</td></tr>
+  <tr><td><b>EC2Launch</b></td><td>Updated EC2Launch V2 to version 2.0.863.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2022-08-25-windows.platforms"></a>

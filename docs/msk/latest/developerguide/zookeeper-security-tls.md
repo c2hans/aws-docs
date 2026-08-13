@@ -9,7 +9,7 @@ You can use TLS security for encryption in transit between your clients and your
 + Clusters must use Apache Kafka version 2.5.1 or later to use TLS security with Apache ZooKeeper.
 + Enable TLS security when you create or configure your cluster. Clusters created with Apache Kafka version 2.5.1 or later with TLS enabled automatically use TLS security with Apache ZooKeeper endpoints. For information about setting up TLS security, see [Get started with Amazon MSK encryption](msk-working-with-encryption.md).
 + Retrieve the TLS Apache ZooKeeper endpoints using the [DescribeCluster ](https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn.html#DescribeCluster) operation.
-+ Create an Apache ZooKeeper configuration file for use with the `kafka-configs.sh` and [https://kafka.apache.org/documentation/#security_authz_cli](https://kafka.apache.org/documentation/#security_authz_cli) tools, or with the ZooKeeper shell. With each tool, you use the `--zk-tls-config-file` parameter to specify your Apache ZooKeeper config.
++ Create an Apache ZooKeeper configuration file for use with the `kafka-configs.sh` and [`kafka-acls.sh`](https://kafka.apache.org/documentation/#security_authz_cli) tools, or with the ZooKeeper shell. With each tool, you use the `--zk-tls-config-file` parameter to specify your Apache ZooKeeper config.
 
   The following example shows a typical Apache ZooKeeper configuration file:
 

@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon OpenSearch Service (Ope
 
 **Resource type:** `AWS::OpenSearch::Domain`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/opensearch-encrypted-at-rest.html](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-encrypted-at-rest.html)
+**AWS Config rule:** [`opensearch-encrypted-at-rest`](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-encrypted-at-rest.html)
 
 **Schedule type:** Change triggered
 
@@ -46,7 +46,7 @@ To enable encryption at rest for new and existing OpenSearch domains, see [Enabl
 
 **Resource type:** `AWS::OpenSearch::Domain`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/opensearch-in-vpc-only.html](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-in-vpc-only.html)
+**AWS Config rule:** [`opensearch-in-vpc-only`](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-in-vpc-only.html)
 
 **Schedule type:** Change triggered
 
@@ -76,7 +76,7 @@ For instructions, see [Launching your Amazon OpenSearch Service domains within a
 
 **Resource type:** `AWS::OpenSearch::Domain`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/opensearch-node-to-node-encryption-check.html](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-node-to-node-encryption-check.html)
+**AWS Config rule:** [`opensearch-node-to-node-encryption-check`](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-node-to-node-encryption-check.html)
 
 **Schedule type:** Change triggered
 
@@ -104,7 +104,7 @@ To enable node-to-node encryption on an OpenSearch domain, see [Enabling node-to
 
 **Resource type:** `AWS::OpenSearch::Domain`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/opensearch-logs-to-cloudwatch.html](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-logs-to-cloudwatch.html)
+**AWS Config rule:** [`opensearch-logs-to-cloudwatch`](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-logs-to-cloudwatch.html)
 
 **Schedule type:** Change triggered
 
@@ -131,7 +131,7 @@ To enable log publishing, see [Enabling log publishing (console)](https://docs.a
 
 **Resource type:** `AWS::OpenSearch::Domain`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/opensearch-audit-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-audit-logging-enabled.html)
+**AWS Config rule:** [`opensearch-audit-logging-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-audit-logging-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -158,7 +158,7 @@ For instructions on enabling audit logs, see [Enabling audit logs](https://docs.
 
 **Resource type:** `AWS::OpenSearch::Domain`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/opensearch-data-node-fault-tolerance.html](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-data-node-fault-tolerance.html)
+**AWS Config rule:** [`opensearch-data-node-fault-tolerance`](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-data-node-fault-tolerance.html)
 
 **Schedule type:** Change triggered
 
@@ -192,7 +192,7 @@ To achieve cluster-level high availability and fault tolerance, an OpenSearch do
 
 **Resource type:** `AWS::OpenSearch::Domain`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/opensearch-access-control-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-access-control-enabled.html)
+**AWS Config rule:** [`opensearch-access-control-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-access-control-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -218,7 +218,7 @@ To enable fine-grained access control, see [Fine-grained access control in Amazo
 
 **Resource type:** `AWS::OpenSearch::Domain`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/opensearch-https-required.html](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-https-required.html)
+**AWS Config rule:** [`opensearch-https-required`](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-https-required.html)
 
 **Schedule type:** Change triggered
 
@@ -276,7 +276,7 @@ To add tags to an OpenSearch Service domain, see [Working with tags](https://doc
 
 **Resource type:** `AWS::OpenSearch::Domain`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/opensearch-update-check.html](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-update-check.html)
+**AWS Config rule:** [`opensearch-update-check`](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-update-check.html)
 
 **Schedule type:** Change triggered
 
@@ -302,7 +302,7 @@ To install software updates for an OpenSearch domain, see [Starting an update](h
 
 **Resource type:** `AWS::OpenSearch::Domain`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/opensearch-primary-node-fault-tolerance.html](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-primary-node-fault-tolerance.html)
+**AWS Config rule:** [`opensearch-primary-node-fault-tolerance`](https://docs.aws.amazon.com/config/latest/developerguide/opensearch-primary-node-fault-tolerance.html)
 
 **Schedule type:** Change triggered
 

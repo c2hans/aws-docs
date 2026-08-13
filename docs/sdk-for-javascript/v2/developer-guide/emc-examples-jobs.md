@@ -19,10 +19,10 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 <a name="emc-examples-jobs-scenario"></a>
 
 In this example, you use a Node.js module to call MediaConvert to create and manage transcoding jobs. The code uses the SDK for JavaScript to do this by using these methods of the MediaConvert client class:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#createJob-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#createJob-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#cancelJob-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#cancelJob-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#getJob-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#getJob-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#listJobs-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#listJobs-property)
++ [`createJob`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#createJob-property)
++ [`cancelJob`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#cancelJob-property)
++ [`getJob`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#getJob-property)
++ [`listJobs`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#listJobs-property)
 
 ## Prerequisite Tasks
 <a name="emc-examples-jobs-prerequisites"></a>

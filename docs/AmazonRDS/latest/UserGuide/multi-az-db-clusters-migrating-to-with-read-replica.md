@@ -81,7 +81,7 @@ To migrate a Single-AZ deployment or Multi-AZ DB instance deployment to a Multi-
 
 1. Create the Multi-AZ DB cluster read replica.
 
-   To create a read replica from the source DB instance, use the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-cluster.html](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-cluster.html). For `--replication-source-identifier`, specify the Amazon Resource Name (ARN) of the source DB instance.
+   To create a read replica from the source DB instance, use the AWS CLI command [`create-db-cluster`](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-cluster.html). For `--replication-source-identifier`, specify the Amazon Resource Name (ARN) of the source DB instance.
 
    For Linux, macOS, or Unix:
 
@@ -117,7 +117,7 @@ To migrate a Single-AZ deployment or Multi-AZ DB instance deployment to a Multi-
 
 1. When you are ready, promote the read replica to be a standalone Multi-AZ DB cluster.
 
-   To promote a Multi-AZ DB cluster read replica, use the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/promote-read-replica-db-cluster.html](https://docs.aws.amazon.com/cli/latest/reference/rds/promote-read-replica-db-cluster.html). For `--db-cluster-identifier`, specify the identifier of the Multi-AZ DB cluster read replica.
+   To promote a Multi-AZ DB cluster read replica, use the AWS CLI command [`promote-read-replica-db-cluster`](https://docs.aws.amazon.com/cli/latest/reference/rds/promote-read-replica-db-cluster.html). For `--db-cluster-identifier`, specify the identifier of the Multi-AZ DB cluster read replica.
 
    ```
    aws rds promote-read-replica-db-cluster --db-cluster-identifier {{mymultiazdbcluster}}
@@ -136,7 +136,7 @@ To migrate a Single-AZ deployment or Multi-AZ DB instance deployment to a Multi-
 
 1. Create the Multi-AZ DB cluster read replica.
 
-   To create a Multi-AZ DB cluster read replica, use the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBCluster.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBCluster.html) operation with the required parameter `DBClusterIdentifier`. For `ReplicationSourceIdentifier`, specify the Amazon Resource Name (ARN) of the source DB instance.
+   To create a Multi-AZ DB cluster read replica, use the [`CreateDBCluster`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBCluster.html) operation with the required parameter `DBClusterIdentifier`. For `ReplicationSourceIdentifier`, specify the Amazon Resource Name (ARN) of the source DB instance.
 
 1. Stop any transactions from being written to the source DB instance, and then wait for all updates to be made to the read replica.
 
@@ -144,7 +144,7 @@ To migrate a Single-AZ deployment or Multi-AZ DB instance deployment to a Multi-
 
 1. When you are ready, promote read replica to be a standalone Multi-AZ DB cluster.
 
-   To promote a Multi-AZ DB cluster read replica, use the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_PromoteReadReplicaDBCluster.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_PromoteReadReplicaDBCluster.html) operation with the required parameter `DBClusterIdentifier`. Specify the identifier of the Multi-AZ DB cluster read replica.
+   To promote a Multi-AZ DB cluster read replica, use the [`PromoteReadReplicaDBCluster`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_PromoteReadReplicaDBCluster.html) operation with the required parameter `DBClusterIdentifier`. Specify the identifier of the Multi-AZ DB cluster read replica.
 
 1. Wait for the status of the promoted Multi-AZ DB cluster to be `Available`.
 

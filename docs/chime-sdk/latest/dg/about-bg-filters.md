@@ -45,4 +45,4 @@ The following table lists the browsers and version that support background filte
 | Chrome on iOS | 110.0.0.x.x |
 | Firefox on iOS (iPhone iPad) | 16.x |
 
-Version 3.14 of the `VideoFxProcessor` object supports Android. For Android device support on versions prior to 3.14, use the `BackgroundBlurVideoFrameProcessor` and `BackgroundReplacementVideoFrameProcessor` objects. For more information about using them, refer to the [https://aws.github.io/amazon-chime-sdk-js/modules/backgroundfilter_video_processor.html](https://aws.github.io/amazon-chime-sdk-js/modules/backgroundfilter_video_processor.html) page on GitHub.
+Version 3.14 of the `VideoFxProcessor` object supports Android. For Android device support on versions prior to 3.14, use the `BackgroundBlurVideoFrameProcessor` and `BackgroundReplacementVideoFrameProcessor` objects. For more information about using them, refer to the [backgroundfilter\_video\_processor](https://aws.github.io/amazon-chime-sdk-js/modules/backgroundfilter_video_processor.html) page on GitHub.

@@ -16,15 +16,15 @@ The [Wait for a Callback with Task Token](connect-to-resource.md#connect-wait-to
 
 ## Optimized SageMaker AI APIs
 <a name="connect-sagemaker-api"></a>
-+ [https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateEndpoint.html](https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateEndpoint.html)
-+ [https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateEndpointConfig.html](https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateEndpointConfig.html)
-+ [https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateHyperParameterTuningJob.html](https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateHyperParameterTuningJob.html) - Supports the `.sync` integration pattern.
-+ [https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateLabelingJob.html](https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateLabelingJob.html) - Supports the `.sync` integration pattern.
-+ [https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateModel.html](https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateModel.html)
-+ [https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateProcessingJob.html](https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateProcessingJob.html) - Supports the `.sync` integration pattern.
-+ [https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateTrainingJob.html](https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateTrainingJob.html) - Supports the `.sync` integration pattern.
-+ [https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateTransformJob.html](https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateTransformJob.html) - Supports the `.sync` integration pattern.
-+ [https://docs.aws.amazon.com/sagemaker/latest/dg/API_UpdateEndpoint.html](https://docs.aws.amazon.com/sagemaker/latest/dg/API_UpdateEndpoint.html)
++ [`CreateEndpoint`](https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateEndpoint.html)
++ [`CreateEndpointConfig`](https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateEndpointConfig.html)
++ [`CreateHyperParameterTuningJob`](https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateHyperParameterTuningJob.html) - Supports the `.sync` integration pattern.
++ [`CreateLabelingJob`](https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateLabelingJob.html) - Supports the `.sync` integration pattern.
++ [`CreateModel`](https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateModel.html)
++ [`CreateProcessingJob`](https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateProcessingJob.html) - Supports the `.sync` integration pattern.
++ [`CreateTrainingJob`](https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateTrainingJob.html) - Supports the `.sync` integration pattern.
++ [`CreateTransformJob`](https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateTransformJob.html) - Supports the `.sync` integration pattern.
++ [`UpdateEndpoint`](https://docs.aws.amazon.com/sagemaker/latest/dg/API_UpdateEndpoint.html)
 
 **Note**
 AWS Step Functions will not automatically create a policy for `CreateTransformJob`. You must attach an inline policy to the created role. For more information, see this example IAM policy: [`CreateTrainingJob`](#sagemaker-iam-createtrainingjob).

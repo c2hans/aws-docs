@@ -11,7 +11,7 @@ Connect Customer Global Resiliency enables you to provide a global experience fo
 + Redirect new inbound voice contacts to the agent workspace for the current active Region with a simple page refresh.
 
 **Topics**
-+ [Integrate your IdP with an Connect Customer Global Resiliency SAML sign in endpoint](integrate-idp.md)
++ [Integrate your IdP with a Connect Customer Global Resiliency SAML sign in endpoint](integrate-idp.md)
 + [Associate agents to instances across multiple AWS Regions](associate-agents-across-regions.md)
 + [Update agent distribution across Regions](update-agents-across-regions.md)
 + [Set up Agent Workspace](setup-agentworkspace-switchover.md)

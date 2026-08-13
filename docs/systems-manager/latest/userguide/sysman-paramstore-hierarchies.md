@@ -48,7 +48,7 @@ You can create a hierarchy with a maximum of 15 levels. We suggest that you crea
 
 Parameter hierarchies standardize the way you create parameters and make it easier to manage parameters over time. A parameter hierarchy can also help you identify the correct parameter for a configuration task. This helps you to avoid creating multiple parameters with the same configuration data.
 
-You can create a hierarchy that allows you to share parameters across different environments, as shown in the following examples that use approved AMI IDs in development and staging environments.
+You can create a hierarchy that lets you share parameters across different environments, as shown in the following examples that use approved AMI IDs in development and staging environments.
 
 `/DevTest/MyApp/images/{{approved-ami}}`
 

@@ -779,21 +779,21 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Access level:** Write
 
 - **   [CreateDataProvider](https://docs.aws.amazon.com/dms/latest/APIReference/API_CreateDataProvider.html)  **
-  - **Description:** Grants permission to create an data provider using the provided settings
+  - **Description:** Grants permission to create a data provider using the provided settings
   - **Resource types (\*required):**
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_dms-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dms-aws_TagKeys)<br />[dms:req-tag/${TagKey}](#list_dms-dms_req-tag___TagKey_)
   - **Access level:** Write
 
 - **   [CreateEndpoint](https://docs.aws.amazon.com/dms/latest/APIReference/API_CreateEndpoint.html)  **
   - **Description:** Grants permission to create an endpoint using the provided settings
-  - **Resource types (\*required):**
-  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_dms-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dms-aws_TagKeys)<br />[dms:req-tag/${TagKey}](#list_dms-dms_req-tag___TagKey_)
+  - **Resource types (\*required):** [Certificate](#list_dms-resource-Certificate) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_dms-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dms-aws_TagKeys)<br />[dms:cert-tag/${TagKey}](#list_dms-dms_cert-tag___TagKey_)<br />[dms:req-tag/${TagKey}](#list_dms-dms_req-tag___TagKey_)
+  - **Resource types (\*required):** [Endpoint\*](#list_dms-resource-Endpoint) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_dms-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dms-aws_TagKeys)<br />[dms:endpoint-tag/${TagKey}](#list_dms-dms_endpoint-tag___TagKey_)<br />[dms:req-tag/${TagKey}](#list_dms-dms_req-tag___TagKey_)
   - **Access level:** Write
 
 - **   [CreateEventSubscription](https://docs.aws.amazon.com/dms/latest/APIReference/API_CreateEventSubscription.html)  **
   - **Description:** Grants permission to create an AWS DMS event notification subscription
-  - **Resource types (\*required):**
-  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_dms-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dms-aws_TagKeys)<br />[dms:req-tag/${TagKey}](#list_dms-dms_req-tag___TagKey_)
+  - **Resource types (\*required):** [EventSubscription\*](#list_dms-resource-EventSubscription)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_dms-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dms-aws_TagKeys)<br />[dms:es-tag/${TagKey}](#list_dms-dms_es-tag___TagKey_)<br />[dms:req-tag/${TagKey}](#list_dms-dms_req-tag___TagKey_)
   - **Access level:** Write
 
 - **   [CreateFleetAdvisorCollector](https://docs.aws.amazon.com/dms/latest/APIReference/API_CreateFleetAdvisorCollector.html)  **
@@ -809,7 +809,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Access level:** Write
 
 - **   [CreateMigrationProject](https://docs.aws.amazon.com/dms/latest/APIReference/API_CreateMigrationProject.html)  **
-  - **Description:** Grants permission to create an migration project using the provided settings
+  - **Description:** Grants permission to create a migration project using the provided settings
   - **Resource types (\*required):** [DataProvider\*](#list_dms-resource-DataProvider) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_dms-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dms-aws_TagKeys)<br />[dms:data-provider-tag/${TagKey}](#list_dms-dms_data-provider-tag___TagKey_)<br />[dms:req-tag/${TagKey}](#list_dms-dms_req-tag___TagKey_)
   - **Resource types (\*required):** [InstanceProfile\*](#list_dms-resource-InstanceProfile) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_dms-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dms-aws_TagKeys)<br />[dms:instance-profile-tag/${TagKey}](#list_dms-dms_instance-profile-tag___TagKey_)<br />[dms:req-tag/${TagKey}](#list_dms-dms_req-tag___TagKey_)
   - **Access level:** Write
@@ -822,14 +822,14 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [CreateReplicationInstance](https://docs.aws.amazon.com/dms/latest/APIReference/API_CreateReplicationInstance.html)  **
   - **Description:** Grants permission to create a replication instance using the specified parameters
-  - **Resource types (\*required):**
-  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_dms-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dms-aws_TagKeys)<br />[dms:req-tag/${TagKey}](#list_dms-dms_req-tag___TagKey_)
+  - **Resource types (\*required):** [ReplicationInstance\*](#list_dms-resource-ReplicationInstance) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_dms-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dms-aws_TagKeys)<br />[dms:rep-tag/${TagKey}](#list_dms-dms_rep-tag___TagKey_)<br />[dms:req-tag/${TagKey}](#list_dms-dms_req-tag___TagKey_)
+  - **Resource types (\*required):** [ReplicationSubnetGroup](#list_dms-resource-ReplicationSubnetGroup) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_dms-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dms-aws_TagKeys)<br />[dms:req-tag/${TagKey}](#list_dms-dms_req-tag___TagKey_)<br />[dms:subgrp-tag/${TagKey}](#list_dms-dms_subgrp-tag___TagKey_)
   - **Access level:** Write
 
 - **   [CreateReplicationSubnetGroup](https://docs.aws.amazon.com/dms/latest/APIReference/API_CreateReplicationSubnetGroup.html)  **
   - **Description:** Grants permission to create a replication subnet group given a list of the subnet IDs in a VPC
-  - **Resource types (\*required):**
-  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_dms-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dms-aws_TagKeys)<br />[dms:req-tag/${TagKey}](#list_dms-dms_req-tag___TagKey_)
+  - **Resource types (\*required):** [ReplicationSubnetGroup\*](#list_dms-resource-ReplicationSubnetGroup)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_dms-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dms-aws_TagKeys)<br />[dms:req-tag/${TagKey}](#list_dms-dms_req-tag___TagKey_)<br />[dms:subgrp-tag/${TagKey}](#list_dms-dms_subgrp-tag___TagKey_)
   - **Access level:** Write
 
 - **   [CreateReplicationTask](https://docs.aws.amazon.com/dms/latest/APIReference/API_CreateReplicationTask.html)  **
@@ -911,7 +911,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Access level:** Write
 
 - **   [DeleteReplicationSubnetGroup](https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteReplicationSubnetGroup.html)  **
-  - **Description:** Grants permission to deletes a subnet group
+  - **Description:** Grants permission to delete a subnet group
   - **Resource types (\*required):** [ReplicationSubnetGroup\*](#list_dms-resource-ReplicationSubnetGroup)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[dms:subgrp-tag/${TagKey}](#list_dms-dms_subgrp-tag___TagKey_)
   - **Access level:** Write
@@ -1085,7 +1085,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Access level:** Read
 
 - **   [DescribeRefreshSchemasStatus](https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeRefreshSchemasStatus.html)  **
-  - **Description:** Grants permission to returns the status of the RefreshSchemas operation
+  - **Description:** Grants permission to return the status of the RefreshSchemas operation
   - **Resource types (\*required):** [Endpoint\*](#list_dms-resource-Endpoint)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[dms:endpoint-tag/${TagKey}](#list_dms-dms_endpoint-tag___TagKey_)
   - **Access level:** Read
@@ -1165,7 +1165,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ExportMetadataModelAssessment](https://docs.aws.amazon.com/dms/latest/APIReference/API_ExportMetadataModelAssessment.html)  **
   - **Description:** Grants permission to export the specified metadata model assessment
-  - **Resource types (\*required):** [MigrationProject](#list_dms-resource-MigrationProject)
+  - **Resource types (\*required):** [MigrationProject\*](#list_dms-resource-MigrationProject)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[dms:migration-project-tag/${TagKey}](#list_dms-dms_migration-project-tag___TagKey_)
   - **Access level:** Write
 
@@ -1177,48 +1177,48 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ImportCertificate](https://docs.aws.amazon.com/dms/latest/APIReference/API_ImportCertificate.html)  **
   - **Description:** Grants permission to upload the specified certificate
-  - **Resource types (\*required):**
-  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_dms-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dms-aws_TagKeys)
+  - **Resource types (\*required):** [Certificate\*](#list_dms-resource-Certificate)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_dms-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dms-aws_TagKeys)<br />[dms:cert-tag/${TagKey}](#list_dms-dms_cert-tag___TagKey_)
   - **Access level:** Write
 
 - **   [ListDataProviders](https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeDataProviders.html)  **
-  - **Description:** Grants permission to list the AWS DMS attributes for a data providers
+  - **Description:** Grants permission to list the AWS DMS attributes for data providers
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** Read
 
 - **   [ListExtensionPacks](https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeExtensionPackAssociations.html)  **
-  - **Description:** Grants permission to list the AWS DMS attributes for a extension packs
-  - **Resource types (\*required):** [MigrationProject](#list_dms-resource-MigrationProject)
+  - **Description:** Grants permission to list the AWS DMS attributes for extension packs
+  - **Resource types (\*required):** [MigrationProject\*](#list_dms-resource-MigrationProject)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[dms:migration-project-tag/${TagKey}](#list_dms-dms_migration-project-tag___TagKey_)
   - **Access level:** Read
 
 - **   [ListInstanceProfiles](https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeInstanceProfiles.html)  **
-  - **Description:** Grants permission to list the AWS DMS attributes for a instance profiles
+  - **Description:** Grants permission to list the AWS DMS attributes for instance profiles
   - **Resource types (\*required):** [InstanceProfile](#list_dms-resource-InstanceProfile)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[dms:instance-profile-tag/${TagKey}](#list_dms-dms_instance-profile-tag___TagKey_)
   - **Access level:** Read
 
-- **   [ListMetadataModelAssessments](https://docs.aws.amazon.com/dms/latest/APIReference/API_ListMetadataModelExports.html)  **
+- **   [ListMetadataModelAssessments](https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeMetadataModelAssessments.html)  **
   - **Description:** Grants permission to list the AWS DMS attributes for a metadata model assessments
-  - **Resource types (\*required):** [MigrationProject](#list_dms-resource-MigrationProject)
+  - **Resource types (\*required):** [MigrationProject\*](#list_dms-resource-MigrationProject)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[dms:migration-project-tag/${TagKey}](#list_dms-dms_migration-project-tag___TagKey_)
   - **Access level:** Read
 
 - **   [ListMetadataModelConversions](https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeMetadataModelConversions.html)  **
   - **Description:** Grants permission to list the AWS DMS attributes for a metadata model conversions
-  - **Resource types (\*required):** [MigrationProject](#list_dms-resource-MigrationProject)
+  - **Resource types (\*required):** [MigrationProject\*](#list_dms-resource-MigrationProject)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[dms:migration-project-tag/${TagKey}](#list_dms-dms_migration-project-tag___TagKey_)
   - **Access level:** Read
 
 - **   [ListMetadataModelExports](https://docs.aws.amazon.com/dms/latest/APIReference/Welcome.html)  **
   - **Description:** Grants permission to list the AWS DMS attributes for a metadata model exports
-  - **Resource types (\*required):** [MigrationProject](#list_dms-resource-MigrationProject)
+  - **Resource types (\*required):** [MigrationProject\*](#list_dms-resource-MigrationProject)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[dms:migration-project-tag/${TagKey}](#list_dms-dms_migration-project-tag___TagKey_)
   - **Access level:** Read
 
 - **   [ListMigrationProjects](https://docs.aws.amazon.com/dms/latest/APIReference/Welcome.html)  **
-  - **Description:** Grants permission to list the AWS DMS attributes for a migration projects. Note. Despite this action requires DescribeMigrationProjects and DescribeConversionConfiguration, both required actions do not currently authorize the described Schema Conversion operation
+  - **Description:** Grants permission to list the AWS DMS attributes for a migration projects
   - **Resource types (\*required):** [DataProvider](#list_dms-resource-DataProvider) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[dms:data-provider-tag/${TagKey}](#list_dms-dms_data-provider-tag___TagKey_)
   - **Resource types (\*required):** [InstanceProfile](#list_dms-resource-InstanceProfile) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[dms:instance-profile-tag/${TagKey}](#list_dms-dms_instance-profile-tag___TagKey_)
   - **Resource types (\*required):** [MigrationProject](#list_dms-resource-MigrationProject) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[dms:migration-project-tag/${TagKey}](#list_dms-dms_migration-project-tag___TagKey_)
@@ -1255,8 +1255,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ModifyEventSubscription](https://docs.aws.amazon.com/dms/latest/APIReference/API_ModifyEventSubscription.html)  **
   - **Description:** Grants permission to modify an existing AWS DMS event notification subscription
-  - **Resource types (\*required):**
-  - **Condition keys:**
+  - **Resource types (\*required):** [EventSubscription\*](#list_dms-resource-EventSubscription)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[dms:es-tag/${TagKey}](#list_dms-dms_es-tag___TagKey_)
   - **Access level:** Write
 
 - **   [ModifyReplicationConfig](https://docs.aws.amazon.com/dms/latest/APIReference/Welcome.html)  **
@@ -1273,8 +1273,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ModifyReplicationSubnetGroup](https://docs.aws.amazon.com/dms/latest/APIReference/API_ModifyReplicationSubnetGroup.html)  **
   - **Description:** Grants permission to modify the settings for the specified replication subnet group
-  - **Resource types (\*required):**
-  - **Condition keys:**
+  - **Resource types (\*required):** [ReplicationSubnetGroup\*](#list_dms-resource-ReplicationSubnetGroup)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[dms:subgrp-tag/${TagKey}](#list_dms-dms_subgrp-tag___TagKey_)
   - **Access level:** Write
 
 - **   [ModifyReplicationTask](https://docs.aws.amazon.com/dms/latest/APIReference/API_ModifyReplicationTask.html)  **
@@ -1475,9 +1475,15 @@ The following actions are defined by AWS Database Migration Service but are not 
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_dms-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dms-aws_TagKeys)<br />[dms:req-tag/${TagKey}](#list_dms-dms_req-tag___TagKey_)
   - **Access level:** Write
 
+- **   [GetMetadataModel](https://docs.aws.amazon.com/dms/latest/APIReference/Welcome.html)  **
+  - **Description:** Grants permission to list all of the AWS DMS attributes for a metadata model
+  - **Resource types (\*required):** [MigrationProject\*](#list_dms-resource-MigrationProject)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[dms:migration-project-tag/${TagKey}](#list_dms-dms_migration-project-tag___TagKey_)
+  - **Access level:** Read
+
 - **   [ListMetadataModelAssessmentActionItems](https://docs.aws.amazon.com/dms/latest/APIReference/Welcome.html)  **
-  - **Description:** Grants permission to list the AWS DMS attributes for a metadata model assessment action items. Note. Despite this action requires StartMetadataModelImport, the latter does not currently authorize the described Schema Conversion operation
-  - **Resource types (\*required):** [MigrationProject](#list_dms-resource-MigrationProject)
+  - **Description:** Grants permission to list the AWS DMS attributes for a metadata model assessment action items
+  - **Resource types (\*required):** [MigrationProject\*](#list_dms-resource-MigrationProject)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[dms:migration-project-tag/${TagKey}](#list_dms-dms_migration-project-tag___TagKey_)
   - **Access level:** Read
 

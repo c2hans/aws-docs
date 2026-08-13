@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/stage-roll
 # Configure a stage for automatic rollback
 <a name="stage-rollback-auto"></a>
 
-You can configure stages in a pipeline to roll back automatically on failure. When the stage fails, the stage is rolled back to the most recent successful execution. The pipeline can only roll back to a previous execution if the previous execution was started in the current pipeline structure version. Since, automatic rollback configuration is part of the pipeline definition, your pipeline stage will auto-rollback only after there is a successful pipeline execution in the pipeline stage.
+You can configure stages in a pipeline to roll back automatically on failure. When the stage fails, the stage is rolled back to the most recent successful execution. The pipeline can only roll back to a previous execution if the previous execution was started in the current pipeline structure version. Since automatic rollback configuration is part of the pipeline definition, your pipeline stage will auto-rollback only after there is a successful pipeline execution in the pipeline stage.
 
 ## Configure a stage for automatic rollback (console)
 <a name="stage-rollback-auto-console"></a>
@@ -31,7 +31,7 @@ You can roll back a stage to a specified previous successful execution. For more
 <a name="stage-rollback-auto-cli"></a>
 
 To use the AWS CLI to configure a failed stage to automatically roll back to the most recent successful execution, use the commands to create or update a pipeline as detailed in [Create a pipeline, stages, and actions](pipelines-create.md) and [Edit a pipeline in CodePipeline](pipelines-edit.md).
-+ Open a terminal (Linux, macOS, or Unix) or command prompt (Windows) and use the AWS CLI to run the `update-pipeline` command, specifying the failure condition in the pipeline structure. The following example configures automatic rollback for a staged named `S3Deploy`:
++ Open a terminal (Linux, macOS, or Unix) or command prompt (Windows) and use the AWS CLI to run the `update-pipeline` command, specifying the failure condition in the pipeline structure. The following example configures automatic rollback for a stage named `S3Deploy`:
 
   ```
   {
@@ -77,7 +77,7 @@ To use CloudFormation to configure a stage to roll back automatically on failure
 OnFailure:
      Result: ROLLBACK
 ```
-+ Update the template as shown in the following snippet. The following example configures automatic rollback for a staged named `Release`:
++ Update the template as shown in the following snippet. The following example configures automatic rollback for a stage named `Release`:
 
   ```
   AppPipeline:

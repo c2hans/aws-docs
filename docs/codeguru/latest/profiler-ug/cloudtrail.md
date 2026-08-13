@@ -37,7 +37,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 ### Example: A log entry for calling the DescribeProfilingGroup API
 <a name="ct-example-1"></a>
 
- A log entry created by [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_DescribeProfilingGroup.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_DescribeProfilingGroup.html) includes the name of the proﬁle group in the `requestParameters` ﬁeld.
+ A log entry created by [`DescribeProfilingGroup`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_DescribeProfilingGroup.html) includes the name of the proﬁle group in the `requestParameters` ﬁeld.
 
 ```
 {
@@ -85,7 +85,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 ### Example: A log entry for getting a proﬁle
 <a name="ct-example-2"></a>
 
- A log entry created by [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetProfile.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetProfile.html) includes the name of the proﬁle group and the period in the `requestParameters` ﬁeld.
+ A log entry created by [`GetProfile`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetProfile.html) includes the name of the proﬁle group and the period in the `requestParameters` ﬁeld.
 
 ```
 {

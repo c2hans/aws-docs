@@ -24,11 +24,11 @@ Control behavior also is limited in case of *mixed governance*. For more informa
 For more information about how AWS Control Tower manages the limitations of Regions and controls, see [Considerations for activating AWS opt-in Regions](opt-in-region-considerations.md).
 
 **Note**
-For the most updated information about controls and Region support, we recommend that you call the [https://docs.aws.amazon.com//controlcatalog/latest/APIReference/API_GetControl.html](https://docs.aws.amazon.com//controlcatalog/latest/APIReference/API_GetControl.html) and [https://docs.aws.amazon.com//controlcatalog/latest/APIReference/API_ListControls.html](https://docs.aws.amazon.com//controlcatalog/latest/APIReference/API_ListControls.html) API operations.
+For the most updated information about controls and Region support, we recommend that you call the [`GetControl`](https://docs.aws.amazon.com//controlcatalog/latest/APIReference/API_GetControl.html) and [`ListControls`](https://docs.aws.amazon.com//controlcatalog/latest/APIReference/API_ListControls.html) API operations.
 
 ## Find available controls and Regions
 <a name="find-available-controls-and-regions"></a>
 
-You can view the available Regions for each control in the AWS Control Tower console. You can view the available Regions programmatically with the [https://docs.aws.amazon.com//controlcatalog/latest/APIReference/API_GetControl.html](https://docs.aws.amazon.com//controlcatalog/latest/APIReference/API_GetControl.html) and [https://docs.aws.amazon.com//controlcatalog/latest/APIReference/API_ListControls.html](https://docs.aws.amazon.com//controlcatalog/latest/APIReference/API_ListControls.html) APIs from AWS Control Catalog.
+You can view the available Regions for each control in the AWS Control Tower console. You can view the available Regions programmatically with the [`GetControl`](https://docs.aws.amazon.com//controlcatalog/latest/APIReference/API_GetControl.html) and [`ListControls`](https://docs.aws.amazon.com//controlcatalog/latest/APIReference/API_ListControls.html) APIs from AWS Control Catalog.
 
 For information about AWS Security Hub CSPM controls from the **Service-Managed Standard: AWS Control Tower** that are not supported in certain AWS Regions, see "Unsupported Regions" in the [Security Hub CSPM standard](https://docs.aws.amazon.com//controltower/latest/controlreference/security-hub-controls.html).

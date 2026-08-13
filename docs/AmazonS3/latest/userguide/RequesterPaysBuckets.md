@@ -19,7 +19,7 @@ When the requester assumes an AWS Identity and Access Management (IAM) role befo
 After you configure a bucket to be a Requester Pays bucket, requesters must show they understand that they will be charged for the request and for the data download. To show they accept the charges, requesters must either include `x-amz-request-payer` as a header in their API request for DELETE, GET, HEAD, POST, and PUT requests, or add the `RequestPayer` parameter in their REST request. For CLI requests, requesters can use the `--request-payer` parameter.
 
 **Example – Using Requester Pays when deleting an object**
-To use the following [https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html) API example, replace the `{{user input placeholders}}` with your own information.
+To use the following [DeleteObjectVersion](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html) API example, replace the `{{user input placeholders}}` with your own information.
 
 ```
 DELETE /Key+?versionId=VersionId HTTP/1.1
@@ -30,7 +30,7 @@ x-amz-bypass-governance-retention: {{BypassGovernanceRetention}}
 x-amz-expected-bucket-owner: {{ExpectedBucketOwner}}
 ```
 
-If the requester restores objects by using the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_RestoreObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_RestoreObject.html) API, Requester Pays is supported as long as the `x-amz-request-payer` header or the `RequestPayer` parameter are in the request; however, the requester only pays for the cost of the request. The bucket owner pays the retrieval charges.
+If the requester restores objects by using the [RestoreObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_RestoreObject.html) API, Requester Pays is supported as long as the `x-amz-request-payer` header or the `RequestPayer` parameter are in the request; however, the requester only pays for the cost of the request. The bucket owner pays the retrieval charges.
 
 Requester Pays buckets do not support the following:
 + Anonymous requests

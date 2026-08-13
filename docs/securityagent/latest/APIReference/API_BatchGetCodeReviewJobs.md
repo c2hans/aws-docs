@@ -77,6 +77,7 @@ Content-type: application/json
          ],
          "integratedRepositories": [
             {
+               "branch": "string",
                "integrationId": "string",
                "providerResourceId": "string"
             }

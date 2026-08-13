@@ -18,21 +18,38 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **April 20, 2022** to released Amazon Linux 2 platforms. <br />Some CVEs were missed from this release’s Ruby update. They were added in the next [Ruby release of May 4, 2020](release-2022-05-04-ruby.md). For more information, see the Ruby platform in this table's **Platform-specific updates**.<br /> Some of the platform updates are security releases. For more information, see **Platform-specific updates** in this table. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-04-29-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-04-29-linux.html) |
-| **Base AMI** | Updated the base AMI to version **2.0.20220419**. |
-| **Docker** | Updated Amazon ECS to version **1.61.0** on the *ECS running on Amazon Linux 2* platform branch. |
-| **Go** | Updated Go to release **1.18.1**. For details, see [go1.18](https://golang.org/doc/devel/release.html#go1.18) in *The Go Programming Language Release History*. |
-| **.NET Core** | Updated .NET Core to releases [6.0.4](https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0.4/6.0.4.md) , [5.0.16](https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0.16/5.0.16.md) , and [3.1.24](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1.24/3.1.24.md)  |
-| **Node.js** | Updated Node.js 12 to add support for Node version [12.22.12](https://nodejs.org/en/blog/release/v12.22.12/). |
-| **Ruby** | Updated Ruby 2.7 and 2.6 to releases [2.7.6](https://www.ruby-lang.org/en/news/2022/04/12/ruby-2-7-6-released/) and [2.6.10](https://www.ruby-lang.org/en/news/2022/04/12/ruby-2-6-10-released/), respectively.<br />Updated RubyGems to release [3.3.12](https://blog.rubygems.org/2022/04/20/3.3.12-released.html).<br />Updated Puma to version [5.6.4](https://github.com/puma/puma/releases/tag/v5.6.4).<br />The new Puma version is a security release.<br />The Ruby updates are security releases.  These CVEs were missed from today's Ruby update. They were added in the next [Ruby release of May 4, 2020](release-2022-05-04-ruby.md).   [ALAS-2022-1580](https://alas.aws.amazon.com/ALAS-2022-1580.html): [CVE-2022-0070](https://alas.aws.amazon.com/cve/html/CVE-2022-0070.html)    [ALAS-2022-1581](https://alas.aws.amazon.com/ALAS-2022-1581.html): [CVE-2022-26490](https://alas.aws.amazon.com/cve/html/CVE-2022-26490.html) [CVE-2022-27666](https://alas.aws.amazon.com/cve/html/CVE-2022-27666.html) [CVE-2022-28356](https://alas.aws.amazon.com/cve/html/CVE-2022-28356.html)     |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>April 20, 2022</b> to released Amazon Linux 2 platforms. <br />Some CVEs were missed from this release’s Ruby update. They were added in the next <a href="release-2022-05-04-ruby.md">Ruby release of May 4, 2020</a>. For more information, see the Ruby platform in this table's <b>Platform-specific updates</b>.<br /> Some of the platform updates are security releases. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Base AMI</b></td><td>Updated the base AMI to version <b>2.0.20220419</b>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Docker</b></td><td>Updated Amazon ECS to version <b>1.61.0</b> on the <i>ECS running on Amazon Linux 2</i> platform branch.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated Go to release <b>1.18.1</b>. For details, see <a href="https://golang.org/doc/devel/release.html#go1.18">go1.18</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET Core to releases <a href="https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0.4/6.0.4.md">6.0.4</a> , <a href="https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0.16/5.0.16.md">5.0.16</a> , and <a href="https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1.24/3.1.24.md">3.1.24</a> </td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated Node.js 12 to add support for Node version <a href="https://nodejs.org/en/blog/release/v12.22.12/">12.22.12</a>.</td></tr>
+  <tr><td><b>Ruby</b></td><td>Updated Ruby 2.7 and 2.6 to releases <a href="https://www.ruby-lang.org/en/news/2022/04/12/ruby-2-7-6-released/">2.7.6</a> and <a href="https://www.ruby-lang.org/en/news/2022/04/12/ruby-2-6-10-released/">2.6.10</a>, respectively.<br />Updated RubyGems to release <a href="https://blog.rubygems.org/2022/04/20/3.3.12-released.html">3.3.12</a>.<br />Updated Puma to version <a href="https://github.com/puma/puma/releases/tag/v5.6.4">5.6.4</a>.<br />The new Puma version is a security release.<br />The Ruby updates are security releases.  These CVEs were missed from today's Ruby update. They were added in the next <a href="release-2022-05-04-ruby.md">Ruby release of May 4, 2020</a>. <ul><li> <a href="https://alas.aws.amazon.com/ALAS-2022-1580.html">ALAS-2022-1580</a>: <a href="https://alas.aws.amazon.com/cve/html/CVE-2022-0070.html">CVE-2022-0070</a>  </li><li> <a href="https://alas.aws.amazon.com/ALAS-2022-1581.html">ALAS-2022-1581</a>: <a href="https://alas.aws.amazon.com/cve/html/CVE-2022-26490.html">CVE-2022-26490</a> <a href="https://alas.aws.amazon.com/cve/html/CVE-2022-27666.html">CVE-2022-27666</a> <a href="https://alas.aws.amazon.com/cve/html/CVE-2022-28356.html">CVE-2022-28356</a>  </li></ul> </td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2022-04-29-linux.platforms"></a>

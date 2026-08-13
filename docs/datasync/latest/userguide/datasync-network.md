@@ -69,9 +69,9 @@ The network ports required for DataSync to connect to an AWS storage service dur
 </thead>
 <tbody>
   <tr><td>DataSync service</td><td>Amazon EFS</td><td>TCP</td><td>2049</td></tr>
-  <tr><td>DataSync service</td><td>FSx for Windows File Server</td><td colspan="2">See [file system access control for FSx for Windows File Server](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/limit-access-security-groups.html).</td></tr>
-  <tr><td>DataSync service</td><td>FSx for Lustre</td><td colspan="2">See [file system access control for FSx for Lustre](https://docs.aws.amazon.com/fsx/latest/LustreGuide/limit-access-security-groups.html).</td></tr>
-  <tr><td>DataSync service</td><td>FSx for OpenZFS</td><td colspan="2">See [file system access control for FSx for OpenZFS](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/limit-access-security-groups.html).</td></tr>
+  <tr><td>DataSync service</td><td>FSx for Windows File Server</td><td colspan="2">See <a href="https://docs.aws.amazon.com/fsx/latest/WindowsGuide/limit-access-security-groups.html">file system access control for FSx for Windows File Server</a>.</td></tr>
+  <tr><td>DataSync service</td><td>FSx for Lustre</td><td colspan="2">See <a href="https://docs.aws.amazon.com/fsx/latest/LustreGuide/limit-access-security-groups.html">file system access control for FSx for Lustre</a>.</td></tr>
+  <tr><td>DataSync service</td><td>FSx for OpenZFS</td><td colspan="2">See <a href="https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/limit-access-security-groups.html">file system access control for FSx for OpenZFS</a>.</td></tr>
   <tr><td>DataSync service</td><td>FSx for ONTAP</td><td>TCP</td><td>111, 635, and 2049 (NFS)<br />445 (SMB)</td></tr>
   <tr><td>DataSync service</td><td>Amazon S3</td><td colspan="2">N/A (DataSync connects to S3 buckets on your behalf)</td></tr>
 </tbody>

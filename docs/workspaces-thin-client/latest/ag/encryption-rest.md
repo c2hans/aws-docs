@@ -44,8 +44,8 @@ However, AWS KMS charges apply for using a customer managed key. For more inform
 Amazon WorkSpaces Thin Client requires a key policy for you to use your customer managed key.
 
 Amazon WorkSpaces Thin Client requires the key policy to use your customer managed key for the following internal operations:
-+ Send [https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) requests to AWS KMS to encrypt the data.
-+ Send [https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) requests to AWS KMS to decrypt the encrypted data.
++ Send [`GenerateDataKey`](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) requests to AWS KMS to encrypt the data.
++ Send [`Decrypt`](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) requests to AWS KMS to decrypt the encrypted data.
 
 You can remove the service's access to the customer managed key at any time. If you do, Amazon WorkSpaces Thin Client won't be able to access any of the data encrypted by the customer managed key, which affects operations that are dependent on that data. For example, if you attempt to [get environment details](https://docs.aws.amazon.com/workspaces-thin-client/latest/api/API_GetEnvironment.html) that WorkSpaces Thin Client can't access, then the operation returns an `AccessDeniedException` error. Additionally, the WorkSpaces Thin Client device will not be able to use a WorkSpaces Thin Client Environment.
 
@@ -65,9 +65,9 @@ Follow the steps for [Creating symmetric customer managed key](https://docs.aws.
 Key policies control access to your customer managed key. Every customer managed key must have exactly one key policy, which contains statements that determine who can use the key and how they can use it. When you create your customer managed key, you can specify a key policy. For more information, see [Managing access to customer managed keys](https://docs.aws.amazon.com/kms/latest/developerguide/control-access-overview.html#managing-access) in the [AWS Key Management Service Developer Guide](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html).
 
 To use your customer managed key with your Amazon WorkSpaces Thin Client resources, the following API operations must be permitted in the key policy:
-+ [https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) — Provides the customer managed key details so Amazon WorkSpaces Thin Client can validate the key.
-+ [https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) — Allows using the customer managed key to encrypt the data.
-+ [https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) — Allows using the customer managed key to decrypt the data.
++ [`kms:DescribeKey`](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) — Provides the customer managed key details so Amazon WorkSpaces Thin Client can validate the key.
++ [`kms:GenerateDataKey`](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) — Allows using the customer managed key to encrypt the data.
++ [`kms:Decrypt`](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) — Allows using the customer managed key to decrypt the data.
 
 The following are policy statement examples you can add for Amazon WorkSpaces Thin Client:
 

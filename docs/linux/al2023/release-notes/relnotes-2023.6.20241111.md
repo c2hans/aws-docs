@@ -81,8 +81,8 @@ New packages in AL2023.6.20241111:
   - **RPM:**  mesa-demos  / **Architectures:** aarch64, x86\_64
   - **Version:** 9.0.0-8.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  / **Architectures:** aarch64, x86\_64
+- ** [`python3.12`](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
+  - **RPM:**  [`python3.12`](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.12-debug  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.12-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.12-idle  / **Architectures:** aarch64, x86\_64
@@ -184,9 +184,9 @@ The full comparison of RPM package versions is below.
   - **AL2023.6.20241031 version:** 2.5.0-1.amzn2023.0.4
   - **AL2023.6.20241111 version:** 2.6.3-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html) **
+- ** [`glibc`](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html) **
   - **RPM:**  compat-libpthread-nonshared  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`glibc`](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  glibc-all-langpacks  / **Architectures:** aarch64, x86\_64
   - **RPM:**  glibc-benchtests  / **Architectures:** aarch64, x86\_64
   - **RPM:**  glibc-common  / **Architectures:** aarch64, x86\_64
@@ -502,8 +502,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.6.20241031 version:** 1.11.1-3.amzn2023.0.3
   - **AL2023.6.20241111 version:** 1.11.1-3.amzn2023.0.4
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  / **Architectures:** aarch64, x86\_64
+- ** [`python3.11`](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
+  - **RPM:**  [`python3.11`](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.11-debug  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.11-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.11-idle  / **Architectures:** aarch64, x86\_64

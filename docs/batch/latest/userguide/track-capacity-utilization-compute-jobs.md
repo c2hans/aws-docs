@@ -38,7 +38,7 @@ For information about tracking capacity utilization for service jobs, see [Track
 ## Check queue utilization
 <a name="capacity-utilization-snapshots-compute"></a>
 
-The `queueUtilization` field in the [https://docs.aws.amazon.com/batch/latest/APIReference/API_GetJobQueueSnapshot.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_GetJobQueueSnapshot.html) response provides a point-in-time view of how much compute capacity is consumed by jobs dispatched from a queue. Capacity is measured in vCPUs for compute jobs.
+The `queueUtilization` field in the [`GetJobQueueSnapshot`](https://docs.aws.amazon.com/batch/latest/APIReference/API_GetJobQueueSnapshot.html) response provides a point-in-time view of how much compute capacity is consumed by jobs dispatched from a queue. Capacity is measured in vCPUs for compute jobs.
 
 For job queues that use a fair-share scheduling policy, the response also includes a per-share breakdown so you can see how capacity is distributed across shares. For more information, see [View per-share utilization](#share-utilization-monitoring-compute).
 
@@ -145,7 +145,7 @@ For more information about fair-share scheduling policies, see [Fair-share sched
 ## List compute jobs by status and share
 <a name="list-compute-jobs-by-share"></a>
 
-After you identify the overall queue and per-share utilization, use the [https://docs.aws.amazon.com/batch/latest/APIReference/API_ListJobs.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_ListJobs.html) API operation to find the compute jobs that are actively contributing to utilization. You can filter by job status to see jobs that are `RUNNING`, `RUNNABLE`, or in another state. For queues with a fair-share scheduling policy, you can also filter by share identifier to narrow results to a specific share.
+After you identify the overall queue and per-share utilization, use the [`ListJobs`](https://docs.aws.amazon.com/batch/latest/APIReference/API_ListJobs.html) API operation to find the compute jobs that are actively contributing to utilization. You can filter by job status to see jobs that are `RUNNING`, `RUNNABLE`, or in another state. For queues with a fair-share scheduling policy, you can also filter by share identifier to narrow results to a specific share.
 
 **Note**
 The `SHARE_IDENTIFIER` filter is the only filter that can be combined with the `jobStatus` parameter. When you use other filters, the `jobStatus` parameter is ignored.
@@ -213,7 +213,7 @@ The following is an example response for listing running compute jobs.
 ## Examine a specific compute job
 <a name="examine-compute-job"></a>
 
-After you identify a compute job of interest, use the [https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobs.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobs.html) operation to get comprehensive information about the job, including its current status, container details, and resource configuration.
+After you identify a compute job of interest, use the [`DescribeJobs`](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobs.html) operation to get comprehensive information about the job, including its current status, container details, and resource configuration.
 
 View detailed information about a specific compute job:
 

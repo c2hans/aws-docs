@@ -85,10 +85,10 @@ Each service-managed fleet uses a single instance market option: Spot, On-Demand
 
 When a queue has more than one fleet, it distributes jobs evenly across those fleets. To instead treat one fleet as primary capacity and another as overflow, adjust the fleets' maximum worker counts. The [capacity manager](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/examples-cfn-capacity-manager.html) sample in the *Deadline Cloud Developer Guide* automates that adjustment for a hybrid Wait and Save plus Spot setup.
 
-## Temporarily raise limits during crunch
+## Temporarily raise limits during busy periods
 <a name="cost-concurrency-crunch"></a>
 
-All of these controls are adjustable at any time. You can temporarily increase limits, sometimes called crunch mode, to use more workers during a deadline push. For example, before a delivery deadline you might raise a fleet's maximum worker count, increase a budget threshold, and add standby workers to reduce job start latency. After the deadline, lower the settings again.
+All of these controls are adjustable at any time. You can temporarily increase limits during periods of increased job activity. For example, before a delivery deadline you might raise a fleet's maximum worker count, increase a budget threshold, and add standby workers to reduce job start latency. After the deadline, lower the settings again.
 
 You can update fleet auto scaling settings and budgets from the Deadline Cloud console. To change capacity on a schedule, such as raising the standby worker count during working hours, use the sample CloudFormation template at [fleet\_standby\_scheduling](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/fleet_standby_scheduling) on GitHub. If you need more capacity than your account's service quotas allow, see [Quotas for Deadline Cloud](deadline-cloud-quotas.md).
 

@@ -135,9 +135,9 @@ The full comparison of RPM package versions is below.
   - **AL2023.0.20230315 version:** 28.2-3.amzn2023.0.3
   - **AL2023.0.20230322 version:** 28.2-3.amzn2023.0.4
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) **
+- ** [`gcc`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) **
   - **RPM:**  cpp  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`gcc`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gcc-c\+\+  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gcc-gdb-plugin  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gcc-gfortran  / **Architectures:** aarch64, x86\_64
@@ -173,8 +173,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.0.20230315 version:** 11.3.1-4.amzn2023.0.2
   - **AL2023.0.20230322 version:** 11.3.1-4.amzn2023.0.3
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:** aarch64, x86\_64
+- ** [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
+  - **RPM:**  [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  golang-bin  / **Architectures:** aarch64, x86\_64
   - **RPM:**  golang-docs  / **Architectures:** noarch
   - **RPM:**  golang-misc  / **Architectures:** noarch
@@ -246,8 +246,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.0.20230315 version:** 1.3.5-2.amzn2023.0.3
   - **AL2023.0.20230322 version:** 1.3.7-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
+- ** [`php8.1`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
+  - **RPM:**  [`php8.1`](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.1-bcmath  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.1-cli  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.1-common  / **Architectures:** aarch64, x86\_64

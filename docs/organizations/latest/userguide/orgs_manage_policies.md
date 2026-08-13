@@ -55,7 +55,7 @@ The following table summarizes some of the characteristics of each policy type. 
 
 | Policy type | Policy category | Affects management account | Maximum number you can attach to a root, OU, or account | Maximum size | Supports viewing effective policy for OU or account |
 | --- | --- | --- | --- | --- | --- |
-| SCP | Authorization | ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-no.png) No | 5 | 5120 characters | ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-no.png) No |
+| SCP | Authorization | ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-no.png) No | 10 | 10,240 characters | ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-no.png) No |
 | RCP | Authorization | ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-no.png) No | 5 | 5120 characters | ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-no.png) No |
 | Declarative policy | Declarative | ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes | 10 | 10,000 characters | ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes |
 | Backup policy | Declarative | ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes | 10 | 10,000 characters | ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes |

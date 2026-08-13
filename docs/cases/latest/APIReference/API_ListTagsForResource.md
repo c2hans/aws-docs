@@ -51,7 +51,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [tags](#API_connect-cases_ListTagsForResource_ResponseSyntax) **   <a name="connect-connect-cases_ListTagsForResource-response-tags"></a>
-A map of of key-value pairs that represent tags on a resource. Tags are used to organize, track, or control access for this resource.
+A map of key-value pairs that represent tags on a resource. Tags are used to organize, track, or control access for this resource.
 Type: String to string map
 
 ## Errors

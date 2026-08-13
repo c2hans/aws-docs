@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-fhir
 # Updating a FHIR resource
 <a name="managing-fhir-resources-update"></a>
 
-The FHIR `update` interaction creates a new current version for an existing resource or creates an initial version if no resource already exists for the given `id`. For additional information, see [https://hl7.org/fhir/R4/http.html#update](https://hl7.org/fhir/R4/http.html#update) in the **FHIR R4 RESTful API documentation**.
+The FHIR `update` interaction creates a new current version for an existing resource or creates an initial version if no resource already exists for the given `id`. For additional information, see [`update`](https://hl7.org/fhir/R4/http.html#update) in the **FHIR R4 RESTful API documentation**.
 
 **To update a FHIR resource**
 
@@ -68,7 +68,7 @@ The FHIR `update` interaction creates a new current version for an existing reso
 ------
 #### [ SMART on FHIR ]
 
-   SMART on FHIR authorization example for the [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
+   SMART on FHIR authorization example for the [`IdentityProviderConfiguration`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
 
    ```
    {

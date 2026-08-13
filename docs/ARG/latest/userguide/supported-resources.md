@@ -2886,6 +2886,6 @@ The following resource types are no longer supported for the specified functiona
 
 | **Service** | **Resource type** | **Support change** | **Date** |
 | --- | --- | --- | --- |
-| AWS RoboMaker | [https://docs.aws.amazon.com/robomaker/latest/dg/chapter-support-policy.html#software-support-policy-may2022](https://docs.aws.amazon.com/robomaker/latest/dg/chapter-support-policy.html#software-support-policy-may2022) | No longer supported by Tag Editor. | May 2, 2022 |
-| AWS RoboMaker | [https://docs.aws.amazon.com/robomaker/latest/dg/chapter-support-policy.html#software-support-policy-may2022](https://docs.aws.amazon.com/robomaker/latest/dg/chapter-support-policy.html#software-support-policy-may2022) | No longer supported by Tag Editor. | May 2, 2022 |
-| AWS RoboMaker | [https://docs.aws.amazon.com/robomaker/latest/dg/chapter-support-policy.html#software-support-policy-may2022](https://docs.aws.amazon.com/robomaker/latest/dg/chapter-support-policy.html#software-support-policy-may2022) | No longer supported by Tag Editor. | May 2, 2022 |
+| AWS RoboMaker | [`AWS::RoboMaker::Robot`](https://docs.aws.amazon.com/robomaker/latest/dg/chapter-support-policy.html#software-support-policy-may2022) | No longer supported by Tag Editor. | May 2, 2022 |
+| AWS RoboMaker | [`AWS::RoboMaker::Fleet`](https://docs.aws.amazon.com/robomaker/latest/dg/chapter-support-policy.html#software-support-policy-may2022) | No longer supported by Tag Editor. | May 2, 2022 |
+| AWS RoboMaker | [`AWS::RoboMaker::DeploymentJob`](https://docs.aws.amazon.com/robomaker/latest/dg/chapter-support-policy.html#software-support-policy-may2022) | No longer supported by Tag Editor. | May 2, 2022 |

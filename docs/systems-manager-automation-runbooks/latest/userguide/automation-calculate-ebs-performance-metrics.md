@@ -85,7 +85,7 @@ Sample Policy
 
 Follow these steps to configure the automation:
 
-1. Navigate to [https://console.aws.amazon.com/systems-manager/documents/AWSSupport-CalculateEBSPerformanceMetrics/description](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-CalculateEBSPerformanceMetrics/description) in Systems Manager under Documents.
+1. Navigate to [`AWSSupport-CalculateEBSPerformanceMetrics`](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-CalculateEBSPerformanceMetrics/description) in Systems Manager under Documents.
 
 1. Select Execute automation.
 

@@ -75,7 +75,7 @@ You can access AWS HealthImaging using the AWS Management Console, AWS Command L
 The AWS Management Console provides a web-based user interface for managing HealthImaging and its associated resources. If you've signed up for an AWS account, you can sign in to the [HealthImaging console](https://console.aws.amazon.com/medical-imaging/home#).
 
 **AWS Command Line Interface (AWS CLI)**
-The AWS CLI provides commands for a broad set of AWS products, and is supported on Windows, Mac, and Linux. For more information, see the [https://docs.aws.amazon.com/cli/latest/userguide/](https://docs.aws.amazon.com/cli/latest/userguide/).
+The AWS CLI provides commands for a broad set of AWS products, and is supported on Windows, Mac, and Linux. For more information, see the [*AWS Command Line Interface User Guide*](https://docs.aws.amazon.com/cli/latest/userguide/).
 
 **AWS SDKs**
 AWS SDKs provide libraries, code examples, and other resources for software developers. These libraries provide basic functions that automate tasks such as cryptographically signing your requests, retrying requests, and handling error responses. For more information, see [Tools to Build on AWS](https://aws.amazon.com/developer/tools/).

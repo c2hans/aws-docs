@@ -97,7 +97,7 @@ Unless you specify differently when you create a cluster, the cluster is created
 
 1. **Determine the cluster parameter group that your cluster is using.**
 
-   Run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-clusters.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-clusters.html) command with the following options:
+   Run the [`describe-db-clusters`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-clusters.html) command with the following options:
    + `--db-cluster-identifier`
    + `--query`
 
@@ -128,7 +128,7 @@ Unless you specify differently when you create a cluster, the cluster is created
 
 1. **Determine the current value of the `tls` cluster parameter.**
 
-   To get more information about this cluster parameter group, run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-cluster-parameters.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-cluster-parameters.html) command with the following options:
+   To get more information about this cluster parameter group, run the [`describe-db-cluster-parameters`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-cluster-parameters.html) command with the following options:
    + `--db-cluster-parameter-group-name`
    + `--query`
 
@@ -169,7 +169,7 @@ Unless you specify differently when you create a cluster, the cluster is created
 
 1. **Modify the value of the `tls` cluster parameter.**
 
-   If the value of `tls` is not what it needs to be, modify its value for this cluster parameter group. To change the value of the `tls` cluster parameter, run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/modify-db-cluster-parameter-group.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/modify-db-cluster-parameter-group.html) command with the following options:
+   If the value of `tls` is not what it needs to be, modify its value for this cluster parameter group. To change the value of the `tls` cluster parameter, run the [`modify-db-cluster-parameter-group`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/modify-db-cluster-parameter-group.html) command with the following options:
    + `--db-cluster-parameter-group-name` — Required. The name of the cluster parameter group to modify. This cannot be a `default.*` cluster parameter group.
    + `--parameters` — Required. A list of the cluster parameter group's parameters to modify.
      + `ParameterName` — Required. The name of the cluster parameter to modify.
@@ -218,7 +218,7 @@ Unless you specify differently when you create a cluster, the cluster is created
 
 1. **Reboot your Amazon DocumentDB instance.**
 
-   Reboot each instance of the cluster so that the change is applied to all instances in the cluster. To reboot an Amazon DocumentDB instance, run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/reboot-db-instance.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/reboot-db-instance.html) command with the following option:
+   Reboot each instance of the cluster so that the change is applied to all instances in the cluster. To reboot an Amazon DocumentDB instance, run the [`reboot-db-instance`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/reboot-db-instance.html) command with the following option:
    + `--db-instance-identifier`
 
    The following code reboots the instance `mydocdbinstance`.

@@ -169,7 +169,7 @@ The following earlier runtime versions for Node.js and Puppeteer are still suppo
 
  **Changes in syn-nodejs-puppeteer-13.1**
 + Synthetics runtime namespace migration.
-+ Type definitions are available in npm Registry. Please ensure the type definition package version matches your canary's runtime version.
++ Type definitions are available in npm Registry. Please make sure the type definition package version matches your canary's runtime version.
   +  [ @aws/synthetics-puppeteer](https://www.npmjs.com/package/@aws/synthetics-puppeteer)
   +  [ @aws/synthetics-link](https://www.npmjs.com/package/@aws/synthetics-link)
   +  [ @aws/synthetics-broken-link-checker-report](https://www.npmjs.com/package/@aws/synthetics-broken-link-checker-report)
@@ -298,7 +298,7 @@ Moving from Puppeteer 19.7.0 to Puppeteer 21.9.0 introduces breaking changes reg
 
  **Recommended upgrade to AWS SDK v3**
 
-The Lambda nodejs18.x runtime doesn't support AWS SDK v2. We strongly recommend that you migrate to AWS SDK v3.
+The Lambda nodejs18.x runtime doesn't support AWS SDK v2. You strongly recommend that you migrate to AWS SDK v3.
 
 ### syn-nodejs-puppeteer-6.2
 <a name="CloudWatch_Synthetics_runtimeversion-nodejs-puppeteer-6.2"></a>

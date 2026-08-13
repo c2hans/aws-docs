@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-parall
 # Configure parallel tests with Java (Maven)
 <a name="sample-parallel-test-java-maven"></a>
 
-The following is sample of a `buildspec.yml` that shows parallel test execution with Java on an Linux platform:
+The following is sample of a `buildspec.yml` that shows parallel test execution with Java on a Linux platform:
 
 ```
 version: 0.2

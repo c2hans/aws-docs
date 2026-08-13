@@ -39,12 +39,12 @@ There are additional default security groups that are used for internal AMS purp
   <tr><td>All traffic</td><td>All</td><td>All</td><td>SentinelDefaultSecurityGroupPrivateOnly (restricts outbound traffic to members of the same security group)</td></tr>
   <tr><td>All traffic</td><td>All</td><td>All</td><td>SentinelDefaultSecurityGroupPrivateOnlyEgressAll (does not restrict outbound traffic)</td></tr>
   <tr><td>HTTP, HTTPS, SSH, RDP</td><td>TCP</td><td>80 / 443 (Source 0.0.0.0/0)<br />SSH and RDP access is allowed from bastions</td><td>SentinelDefaultSecurityGroupPublic (does not restrict outbound traffic)</td></tr>
-  <tr><td colspan="4">**MALZ bastions**:</td></tr>
+  <tr><td colspan="4"><b>MALZ bastions</b>:</td></tr>
   <tr><td>SSH</td><td>TCP</td><td>22</td><td rowspan="4">SharedServices VPC CIDR and DMZ VPC CIDR, plus Customer-provided on-prem CIDRs</td></tr>
   <tr><td>SSH</td><td>TCP</td><td>22</td></tr>
   <tr><td>RDP</td><td>TCP</td><td>3389</td></tr>
   <tr><td>RDP</td><td>TCP</td><td>3389</td></tr>
-  <tr><td colspan="4">**SALZ bastions**:</td></tr>
+  <tr><td colspan="4"><b>SALZ bastions</b>:</td></tr>
   <tr><td>SSH</td><td>TCP</td><td>22</td><td>mc-initial-garden-LinuxBastionSG</td></tr>
   <tr><td>SSH</td><td>TCP</td><td>22</td><td>mc-initial-garden-LinuxBastionDMZSG</td></tr>
   <tr><td>RDP</td><td>TCP</td><td>3389</td><td>mc-initial-garden-WindowsBastionSG</td></tr>
@@ -74,12 +74,12 @@ There are additional default security groups that are used for internal AMS purp
   <tr><td>All traffic</td><td>All</td><td>All</td><td>SentinelDefaultSecurityGroupPrivateOnly (restricts outbound traffic to members of the same security group)</td></tr>
   <tr><td>All traffic</td><td>All</td><td>All</td><td>SentinelDefaultSecurityGroupPrivateOnlyEgressAll (does not restrict outbound traffic)</td></tr>
   <tr><td>HTTP, HTTPS, SSH, RDP</td><td>TCP</td><td>80 / 443 (Source 0.0.0.0/0)<br />SSH and RDP access is allowed from bastions</td><td>SentinelDefaultSecurityGroupPublic (does not restrict outbound traffic)</td></tr>
-  <tr><td colspan="4">**MALZ bastions**:</td></tr>
+  <tr><td colspan="4"><b>MALZ bastions</b>:</td></tr>
   <tr><td>SSH</td><td>TCP</td><td>22</td><td rowspan="4">SharedServices VPC CIDR and DMZ VPC CIDR, plus Customer-provided on-prem CIDRs</td></tr>
   <tr><td>SSH</td><td>TCP</td><td>22</td></tr>
   <tr><td>RDP</td><td>TCP</td><td>3389</td></tr>
   <tr><td>RDP</td><td>TCP</td><td>3389</td></tr>
-  <tr><td colspan="4">**SALZ bastions**:</td></tr>
+  <tr><td colspan="4"><b>SALZ bastions</b>:</td></tr>
   <tr><td>SSH</td><td>TCP</td><td>22</td><td>mc-initial-garden-LinuxBastionSG</td></tr>
   <tr><td>SSH</td><td>TCP</td><td>22</td><td>mc-initial-garden-LinuxBastionDMZSG</td></tr>
   <tr><td>RDP</td><td>TCP</td><td>3389</td><td>mc-initial-garden-WindowsBastionSG</td></tr>
@@ -108,4 +108,4 @@ When using manual CTs, AMS recommends that you use the ASAP **Scheduling** optio
 
 To find the security groups attached to a stack or instance, use the EC2 console. After finding the stack or instance, you can see all security groups attached to it.
 
-For ways to find security groups at the command line and filter the output, see [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-security-groups.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-security-groups.html).
+For ways to find security groups at the command line and filter the output, see [`describe-security-groups`](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-security-groups.html).

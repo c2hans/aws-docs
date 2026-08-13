@@ -25,3 +25,6 @@ On Windows, macOS, and Linux PCs, you can use the following web browsers to conn
 + Firefox 49 and later
 
 For more information, see [WorkSpaces Clients](https://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-clients.html) in the *Amazon WorkSpaces User Guide*.
+
+**Topics**
++ [Control the WorkSpaces client experience for your users](control-client-experience.md)

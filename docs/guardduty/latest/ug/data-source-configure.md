@@ -29,10 +29,10 @@ Choose your preferred access method to configure S3 Protection for a standalone 
 ------
 #### [ API/CLI ]
 
-Run [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html) by using your valid detector ID for the current Region and passing the `features` object `name` as `S3_DATA_EVENTS` set to `ENABLED` to enable S3 Protection, respectively.
+Run [updateDetector](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html) by using your valid detector ID for the current Region and passing the `features` object `name` as `S3_DATA_EVENTS` set to `ENABLED` to enable S3 Protection, respectively.
 
 **Note**
-To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
 Alternatively, you can use AWS Command Line Interface. To enable S3 Protection, run the following command, and replace {{12abc34d567e8fa901bc2d34e56789f0}} with your account's detector ID and {{us-east-1}} with the Region where you want to enable S3 Protection.
 

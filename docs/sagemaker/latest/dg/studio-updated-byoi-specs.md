@@ -16,7 +16,7 @@ The image that you specify in your Dockerfile must match the specifications in t
 ## Running the image
 <a name="studio-updated-byoi-specs-run"></a>
 
-The following configurations can be made by updating your [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ContainerConfig.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ContainerConfig.html). For an example, see [Update container configuration](studio-updated-byoi-how-to-container-configuration.md).
+The following configurations can be made by updating your [`ContainerConfig`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ContainerConfig.html). For an example, see [Update container configuration](studio-updated-byoi-how-to-container-configuration.md).
 + `Entrypoint` – You can configure `ContainerEntrypoint` and `ContainerArguments` that are passed to the container at runtime. We recommend configuring your entry point using `ContainerConfig`. See the above link for an example.
 + `EnvVariables` – When using Studio, you can define custom `ContainerEnvironment` variables for your container. You can optionally update your environmental variables using `ContainerConfig`. See the above link for an example.
 

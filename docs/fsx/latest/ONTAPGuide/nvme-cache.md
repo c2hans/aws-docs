@@ -15,13 +15,13 @@ The NVMe cache is enabled by default on your second-generation file system. If y
    ssh fsxadmin@file-system-management-endpoint-ip-address
    ```
 
-1. Use the [https://docs.netapp.com/us-en/ontap-cli-9131/system-node-external-cache-modify.html](https://docs.netapp.com/us-en/ontap-cli-9131/system-node-external-cache-modify.html) ONTAP CLI commnd. Choose **true** to enable the NVMe cache or **false** to disable it.
+1. Use the [**system node external-cache modify**](https://docs.netapp.com/us-en/ontap-cli-9131/system-node-external-cache-modify.html) ONTAP CLI commnd. Choose **true** to enable the NVMe cache or **false** to disable it.
 
    ```
    ::> system node external-cache modify -node * -is-enabled [true|false]
    ```
 
-1. Use the [https://docs.netapp.com/us-en/ontap-cli-9131/system-node-external-cache-show.html](https://docs.netapp.com/us-en/ontap-cli-9131/system-node-external-cache-show.html) ONTAP CLI command to check if the NVMe cache is enabled or disabled.
+1. Use the [**system node external-cache show**](https://docs.netapp.com/us-en/ontap-cli-9131/system-node-external-cache-show.html) ONTAP CLI command to check if the NVMe cache is enabled or disabled.
 
    ```
    ::> system node external-cache show -node * -fields is-enabled

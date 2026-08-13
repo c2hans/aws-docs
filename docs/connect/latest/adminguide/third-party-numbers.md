@@ -9,7 +9,7 @@ In some countries you may need to obtain a third-party phone number that is host
 
 **To map third-party numbers to your account**
 
-Submit an Connect Customer support ticket to map third-party numbers. Following are instructions if you don't have an AWS Support account.
+Submit a Connect Customer support ticket to map third-party numbers. Following are instructions if you don't have an AWS Support account.
 
 1. Go to [Support Center](https://console.aws.amazon.com/support/home) and choose **Create a case**.
 

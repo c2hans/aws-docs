@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/sftp-connector
 # List contents of a remote directory
 <a name="sftp-connector-list-dir"></a>
 
-Before you retrieve files from a remote SFTP server, you can retrieve the contents of a directory on the remote SFTP server. To do this, you use the [https://docs.aws.amazon.com/transfer/latest/APIReference/API_StartDirectoryListing.html](https://docs.aws.amazon.com/transfer/latest/APIReference/API_StartDirectoryListing.html) API operation.
+Before you retrieve files from a remote SFTP server, you can retrieve the contents of a directory on the remote SFTP server. To do this, you use the [StartDirectoryListing](https://docs.aws.amazon.com/transfer/latest/APIReference/API_StartDirectoryListing.html) API operation.
 
 The following example lists the contents of the `home` folder on the remote SFTP server, which is specified in the connector's configuration. The results are placed into the Amazon S3 location `/amzn-s3-demo-bucket/connector-files`, and into a file named `c-AAAA1111BBBB2222C-6666abcd-11aa-22bb-cc33-0000aaaa3333.json`.
 

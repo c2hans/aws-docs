@@ -21,7 +21,7 @@ You can cache or store the endpoints in your device. This means you won't need t
 
 Each account has several device endpoints that are unique to the account and support specific IoT functions. The AWS IoT device data endpoints support a publish/subscribe protocol that is designed for the communication needs of IoT devices; however, other clients, such as apps and services, can also use this interface if their application requires the specialized features that these endpoints provide. The AWS IoT device service endpoints support device-centric access to security and management services.
 
-To learn your account's device data endpoint, you can find it in the [https://console.aws.amazon.com//iot/home#/settings](https://console.aws.amazon.com//iot/home#/settings) page of your AWS IoT Core console.
+To learn your account's device data endpoint, you can find it in the [**Settings**](https://console.aws.amazon.com//iot/home#/settings) page of your AWS IoT Core console.
 
 To learn your account's device endpoint for a specific purpose, including the device data endpoint, use the **describe-endpoint** CLI command shown here, or the `DescribeEndpoint` REST API, and provide the `{{endpointType}}` parameter value from the following table.
 

@@ -170,4 +170,4 @@ This command varies depending on the package manager for your operating system.
 
 ------
 
-We recommend using the latest version of the SSM Agent so you can benefit from new or updated capabilities. To ensure your managed instances are always running the most up-to-date version of the SSM Agent, you can automate the process of updating the SSM Agent. For more information, see [Automating updates to SSM Agent](ssm-agent-automatic-updates.md).
+We recommend using the latest version of the SSM Agent so you can benefit from new or updated capabilities. To make sure your managed instances are always running the most up-to-date version of the SSM Agent, you can automate the process of updating the SSM Agent. For more information, see [Automating updates to SSM Agent](ssm-agent-automatic-updates.md).

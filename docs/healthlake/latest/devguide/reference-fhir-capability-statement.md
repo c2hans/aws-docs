@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 # FHIR R4 Capability Statement for AWS HealthLake
 <a name="reference-fhir-capability-statement"></a>
 
-To find the FHIR-related capabilities (behaviors) of an active HealthLake data store, you must retrieve its Capability Statement. The Capability Statement is used as a statement of actual server functionality or a statement of required or desired server implementation. The FHIR [https://hl7.org/fhir/R4/http.html#capabilities](https://hl7.org/fhir/R4/http.html#capabilities) interaction retrieves information about HealthLake data store capabilities and which portions of the FHIR specification it supports. HealthLake validates FHIR resource types according to the FHIR R4 [https://hl7.org/fhir/R4/structuredefinition.html](https://hl7.org/fhir/R4/structuredefinition.html) resource.
+To find the FHIR-related capabilities (behaviors) of an active HealthLake data store, you must retrieve its Capability Statement. The Capability Statement is used as a statement of actual server functionality or a statement of required or desired server implementation. The FHIR [`capabilities`](https://hl7.org/fhir/R4/http.html#capabilities) interaction retrieves information about HealthLake data store capabilities and which portions of the FHIR specification it supports. HealthLake validates FHIR resource types according to the FHIR R4 [`StructureDefinition`](https://hl7.org/fhir/R4/structuredefinition.html) resource.
 
 **To get the Capability Statement for a HealthLake data store**
 
@@ -33,4 +33,4 @@ To find the FHIR-related capabilities (behaviors) of an active HealthLake data s
 
 ------
 
-   You will receive a `200` HTTP response code and the Capability Statement for your HealthLake data store. For more information, see [https://hl7.org/fhir/R4/capabilitystatement.html](https://hl7.org/fhir/R4/capabilitystatement.html) in the **FHIR R4 documentation**.
+   You will receive a `200` HTTP response code and the Capability Statement for your HealthLake data store. For more information, see [`CapabilityStatement`](https://hl7.org/fhir/R4/capabilitystatement.html) in the **FHIR R4 documentation**.

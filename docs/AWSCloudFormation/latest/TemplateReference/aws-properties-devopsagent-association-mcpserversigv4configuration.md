@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DevOpsAgent::Association MCPServerSigV4Configuration
 <a name="aws-properties-devopsagent-association-mcpserversigv4configuration"></a>
 
-<a name="aws-properties-devopsagent-association-mcpserversigv4configuration-description"></a>The `MCPServerSigV4Configuration` property type specifies Property description not available. for an [AWS::DevOpsAgent::Association](aws-resource-devopsagent-association.md).
+Configuration for SigV4-authenticated MCP server integration. Specifies the available tools to enable the Agent Space to interact with an MCP server that authenticates requests using AWS Signature Version 4.
 
 ## Syntax
 <a name="aws-properties-devopsagent-association-mcpserversigv4configuration-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-association-mcpserversigv4configuration-properties"></a>
 
 `Tools`  <a name="cfn-devopsagent-association-mcpserversigv4configuration-tools"></a>
-Property description not available.
+The list of MCP tools available for the association.
 *Required*: Yes
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

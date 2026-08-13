@@ -10,14 +10,14 @@ You can download the CloudFormation templates for this solution before deploying
 ## Hub account
 <a name="hub-account"></a>
 
- [https://solutions-reference.s3.amazonaws.com/cost-optimizer-for-amazon-workspaces/latest/cost-optimizer-for-amazon-workspaces.template](https://solutions-reference.s3.amazonaws.com/cost-optimizer-for-amazon-workspaces/latest/cost-optimizer-for-amazon-workspaces.template)
+ [![Cost Optimizer for Amazon WorkSpaces template for hub account button](http://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-workspaces/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/cost-optimizer-for-amazon-workspaces/latest/cost-optimizer-for-amazon-workspaces.template)
 
  **cost-optimizer-for-amazon-workspaces.template** - Use this template to launch Cost Optimizer for Amazon WorkSpaces and all associated components for your hub account (or single account if you only have one account). The default configuration deploys AWS Lambda functions, an Amazon ECS task definition, an Amazon CloudWatch event, and an Amazon S3 bucket. You can customize the template based on your specific needs.
 
 ## Spoke accounts
 <a name="spoke-accounts"></a>
 
- [https://solutions-reference.s3.amazonaws.com/cost-optimizer-for-amazon-workspaces/latest/cost-optimizer-for-amazon-workspaces-spoke.template](https://solutions-reference.s3.amazonaws.com/cost-optimizer-for-amazon-workspaces/latest/cost-optimizer-for-amazon-workspaces-spoke.template)
+ [![Cost Optimizer for Amazon WorkSpaces template for spoke accounts button](http://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-workspaces/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/cost-optimizer-for-amazon-workspaces/latest/cost-optimizer-for-amazon-workspaces-spoke.template)
 
  **cost-optimizer-for-amazon-workspaces-spoke.template** − Use this template to launch Cost Optimizer for Amazon WorkSpaces and all associated components for your spoke accounts. Do not deploy this template if you only have one account. The default configuration deploys AWS Lambda functions, an Amazon ECS task definition, an Amazon CloudWatch event, and an Amazon S3 bucket. You can customize the template based on your specific needs.
 

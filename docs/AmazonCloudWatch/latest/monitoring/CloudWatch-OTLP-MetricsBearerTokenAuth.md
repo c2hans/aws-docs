@@ -169,11 +169,11 @@ The endpoint accepts both `application/json` and `application/x-protobuf` conten
 ### Controlling the generation of CloudWatch Metrics API keys
 <a name="CloudWatch-OTLP-MetricsBearerTokenAuth-Permissions-Generation"></a>
 
-The [https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsidentityandaccessmanagementiam.html#awsidentityandaccessmanagementiam-actions-as-permissions](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsidentityandaccessmanagementiam.html#awsidentityandaccessmanagementiam-actions-as-permissions) action controls the generation of a service-specific key (such as a CloudWatch Metrics API key). You can scope this action to IAM users as a resource to limit the users for which a key can be generated.
+The [`iam:CreateServiceSpecificCredential`](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsidentityandaccessmanagementiam.html#awsidentityandaccessmanagementiam-actions-as-permissions) action controls the generation of a service-specific key (such as a CloudWatch Metrics API key). You can scope this action to IAM users as a resource to limit the users for which a key can be generated.
 
 You can use the following condition keys to impose conditions on the permission for the `iam:CreateServiceSpecificCredential` action:
-+ [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ServiceSpecificCredentialAgeDays](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ServiceSpecificCredentialAgeDays) — Lets you specify, in the condition, the key's expiration time in days.
-+ [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ServiceSpecificCredentialServiceName](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ServiceSpecificCredentialServiceName) — Lets you specify, in the condition, the name of a service.
++ [`iam:ServiceSpecificCredentialAgeDays`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ServiceSpecificCredentialAgeDays) — Lets you specify, in the condition, the key's expiration time in days.
++ [`iam:ServiceSpecificCredentialServiceName`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ServiceSpecificCredentialServiceName) — Lets you specify, in the condition, the name of a service.
 
 ### Controlling the usage of CloudWatch Metrics API keys
 <a name="CloudWatch-OTLP-MetricsBearerTokenAuth-Permissions-Usage"></a>
@@ -301,7 +301,7 @@ With bearer token authentication, you do not need the `sigv4auth` extension, AWS
 ## Rotating API keys
 <a name="CloudWatch-OTLP-MetricsBearerTokenAuth-Rotation"></a>
 
-Regularly rotating your API keys reduces the risk of unauthorized access. We recommend establishing a rotation schedule that aligns with your organization's security policies.
+Regularly rotating your API keys reduces the risk of unauthorized access. You should recommend establishing a rotation schedule that aligns with your organization's security policies.
 
 ### Rotation process
 <a name="CloudWatch-OTLP-MetricsBearerTokenAuth-Rotation-Process"></a>
@@ -457,4 +457,4 @@ The S3 bucket that you specify for the trail must have a bucket policy that allo
        --region us-east-1
    ```
 
-The `readOnly: false` filter limits logging to write operations (PutMetricData), which includes all OTLP ingestion calls. To identify bearer token usage among these events, query your trail logs (via Athena or CloudTrail Lake) and filter by the IAM user name associated with your API key (for example, `cloudwatch-metrics-api-key-user`). Events from OTLP ingestion include `AdditionalEventData.protocol` set to `OTLP` in the event payload, which you can use in post-hoc queries to distinguish them from classic PutMetricData SDK calls.
+The `readOnly: false` filter limits logging to write operations (PutMetricData), which includes all OTLP ingestion calls. To identify bearer token usage among these events, query your trail logs (through Athena or CloudTrail Lake) and filter by the IAM user name associated with your API key (for example, `cloudwatch-metrics-api-key-user`). Events from OTLP ingestion include `AdditionalEventData.protocol` set to `OTLP` in the event payload, which you can use in post-hoc queries to distinguish them from classic PutMetricData SDK calls.

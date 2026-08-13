@@ -10,7 +10,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 The tag structure that contains a tag key and value.
 
 **Note**
-Tagging is supported only for the following Cost Explorer resource types: [https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AnomalyMonitor.html](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AnomalyMonitor.html), [https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AnomalySubscription.html](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AnomalySubscription.html), [https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_CostCategory.html](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_CostCategory.html).
+Tagging is supported only for the following Cost Explorer resource types: [`AnomalyMonitor`](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AnomalyMonitor.html), [`AnomalySubscription`](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AnomalySubscription.html), [`CostCategory`](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_CostCategory.html).
 
 ## Syntax
 <a name="aws-properties-ce-anomalysubscription-resourcetag-syntax"></a>

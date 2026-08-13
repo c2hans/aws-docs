@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/sparql-default-
 # SPARQL DESCRIBE behavior with respect to the default graph
 <a name="sparql-default-describe"></a>
 
-The SPARQL [https://www.w3.org/TR/sparql11-query/#describe](https://www.w3.org/TR/sparql11-query/#describe) query form lets you retrieve information about resources without knowing the structure of the data and without having to compose a query. How this information is assembled is left up to the SPARQL implementation. Neptune provides [several query hints](sparql-query-hints-for-describe.md) that invoke different modes and algorithms for `DESCRIBE` to use.
+The SPARQL [`DESCRIBE`](https://www.w3.org/TR/sparql11-query/#describe) query form lets you retrieve information about resources without knowing the structure of the data and without having to compose a query. How this information is assembled is left up to the SPARQL implementation. Neptune provides [several query hints](sparql-query-hints-for-describe.md) that invoke different modes and algorithms for `DESCRIBE` to use.
 
 In Neptune's implementation, regardless of the mode, `DESCRIBE` only uses data present in the [SPARQL default graph](feature-sparql-compliance.md#sparql-default-graph). This is consistent with the way SPARQL treats datasets (see [Specifying RDF Datasets](https://www.w3.org/TR/sparql11-query/#specifyingDataset) in the SPARQL specification).
 

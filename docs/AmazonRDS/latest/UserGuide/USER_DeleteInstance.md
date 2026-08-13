@@ -129,6 +129,6 @@ aws rds delete-db-instance ^
 ### RDS API
 <a name="USER_DeleteInstance.API"></a>
 
-To delete a DB instance by using the Amazon RDS API, call the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteDBInstance.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteDBInstance.html) operation with the following parameters:
+To delete a DB instance by using the Amazon RDS API, call the [`DeleteDBInstance`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteDBInstance.html) operation with the following parameters:
 + `DBInstanceIdentifier`
 + `FinalDBSnapshotIdentifier` or `SkipFinalSnapshot`

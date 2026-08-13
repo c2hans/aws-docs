@@ -44,7 +44,7 @@ The summary metrics have an expiration time. Hourly metrics expire after six mon
 ### Activate summary metrics (console)
 <a name="iot-lorawan-metrics-how-console"></a>
 
-1. Go to the [https://console.aws.amazon.com/iot/home#/dashboard](https://console.aws.amazon.com/iot/home#/dashboard) dashboard of the AWS IoT console and choose **LoRaWAN metrics**.
+1. Go to the [**Monitor**](https://console.aws.amazon.com/iot/home#/dashboard) dashboard of the AWS IoT console and choose **LoRaWAN metrics**.
 
 1. Choose **Activate summary metrics** and specify the period that you want to use for data to be aggregated, which can be **Daily**,**Hourly**, or **Weekly**.
 
@@ -53,7 +53,7 @@ You'll see data flowing through the dashboard and displayed for your resources i
 ### Activate summary metrics (CLI)
 <a name="iot-lorawan-metrics-how-cli"></a>
 
-To activate summary metrics and see data flowing through the dashboard, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateMetricConfiguration.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateMetricConfiguration.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/update-metric-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/update-metric-configuration.html) CLI command. The following code shows a sample request body.
+To activate summary metrics and see data flowing through the dashboard, use the [`UpdateMetricConfiguration`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateMetricConfiguration.html) API operation or the [`update-metric-configuration`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/update-metric-configuration.html) CLI command. The following code shows a sample request body.
 
 ```
 {
@@ -76,7 +76,7 @@ To activate summary metrics and see data flowing through the dashboard, use the 
 }
 ```
 
-After you've activated summary metrics, you can use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetMetrics.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetMetrics.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-metrics.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-metrics.html) CLI command.
+After you've activated summary metrics, you can use the [`GetMetrics`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetMetrics.html) API operation or the [`get-metrics`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-metrics.html) CLI command.
 
 ```
 {
@@ -86,7 +86,7 @@ After you've activated summary metrics, you can use the [https://docs.aws.amazon
 }
 ```
 
-You can then use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetMetricConfiguration.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetMetricConfiguration.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-metric-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-metric-configuration.html) CLI command to view the metric configuration status. The following shows a sample response.
+You can then use the [`GetMetricConfiguration`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetMetricConfiguration.html) API operation or the [`get-metric-configuration`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-metric-configuration.html) CLI command to view the metric configuration status. The following shows a sample response.
 
 ```
 {
@@ -111,7 +111,7 @@ The following shows the metrics that you can see in the dashboard and in the det
 ### LoRaWAN summary metrics
 <a name="iot-lorawan-metrics-summary"></a>
 
-To view the summary metrics for all resources, go to the [https://console.aws.amazon.com/iot/home#/dashboard](https://console.aws.amazon.com/iot/home#/dashboard) dashboard of the AWS IoT console and then choose the **LoRaWAN metrics** tab.
+To view the summary metrics for all resources, go to the [**Monitor**](https://console.aws.amazon.com/iot/home#/dashboard) dashboard of the AWS IoT console and then choose the **LoRaWAN metrics** tab.
 + An overview of key LoRaWAN summary metrics.
 + The activation steps and their progress.
 + The number of active devices and gateways.
@@ -124,11 +124,11 @@ To view the summary metrics for all resources, go to the [https://console.aws.am
 
 You can view metrics showing historical data for each LoRaWAN device that you onboarded to AWS IoT Core for LoRaWAN. You'll find similar metrics as in the **Monitor** dashboard with some additional metrics such as the average received signal strength indicator (RSSI) and signal to noise ratio (SNR).
 
-You can also find a summary of the metrics for all your LoRaWAN devices in the [https://console.aws.amazon.com/iot/home#/wireless/devices/](https://console.aws.amazon.com/iot/home#/wireless/devices/) hub of the AWS IoT console. This includes:
+You can also find a summary of the metrics for all your LoRaWAN devices in the [**Devices**](https://console.aws.amazon.com/iot/home#/wireless/devices/) hub of the AWS IoT console. This includes:
 +  The number of active devices within the specified time duration, which can be the last hour, day, or week
 +  The total number of devices that have been provisioned up to the specified timestamp range, which can be the last hour, day, or week.
 +  The uplink packet loss rate, which corresponds to the ratio of total number of uplink packets that are lost during transmission.
-+ The individual device metrics, go to the [https://console.aws.amazon.com/iot/home#/wireless/devices/](https://console.aws.amazon.com/iot/home#/wireless/devices/) hub of the AWS IoT console and then choose the device for which you want to see the metrics. For information about activating these metrics, see [How to view summary metrics?](#iot-lorawan-metrics-how).
++ The individual device metrics, go to the [**Devices**](https://console.aws.amazon.com/iot/home#/wireless/devices/) hub of the AWS IoT console and then choose the device for which you want to see the metrics. For information about activating these metrics, see [How to view summary metrics?](#iot-lorawan-metrics-how).
 
 You can view the following metrics for each LoRaWAN device.
 
@@ -145,7 +145,7 @@ If you don't see any data in the widgets for the metrics, make sure that you hav
 
 You can view metrics showing historical data for each LoRaWAN gateway that you onboarded to AWS IoT Core for LoRaWAN. You'll find similar metrics as in the **Monitor** dashboard with some additional metrics such as the average received signal strength indicator (RSSI), signal to noise ratio (SNR), and gateway availability. You can also find a summary of the metrics for all your LoRaWAN gateways in the **Gateways** hub of the AWS IoT console.
 
-You can also find a summary of the metrics for all your LoRaWAN gateways in the [https://console.aws.amazon.com/iot/home#/wireless/gateways/](https://console.aws.amazon.com/iot/home#/wireless/gateways/) hub of the AWS IoT console. This includes:
+You can also find a summary of the metrics for all your LoRaWAN gateways in the [**Gateways**](https://console.aws.amazon.com/iot/home#/wireless/gateways/) hub of the AWS IoT console. This includes:
 + The number of uplink and downlink messages that were exchanged between the devices and the cloud using the gateways within the specified time duration, which can be the last hour, day, or week.
 + The total number of gateways that have been provisioned up to the specified timestamp range, which can be the last hour, day, or week.
 

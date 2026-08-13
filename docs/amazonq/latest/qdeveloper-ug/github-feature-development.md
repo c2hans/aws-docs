@@ -17,7 +17,7 @@ The Amazon Q Developer app attempts to automatically create the **Amazon Q devel
 
 **To use Amazon Q Developer for feature development**
 
-1. If necessary, sign in to your [https://github.com/](https://github.com/) account using your GitHub credentials.
+1. If necessary, sign in to your [GitHub](https://github.com/) account using your GitHub credentials.
 
 1. Navigate to your GitHub organization, and then navigate to the repository you want to implement new features with Amazon Q Developer.
 

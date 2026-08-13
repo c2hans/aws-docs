@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/chat-real-time-contact-analysis-segment-streams-data-model.html
 ---
 
-# Data model for conversational analytics segment streams to analyze chats in Contact Lens
+# Data model for conversational analytics segment streams to analyze chats in conversational analytics
 <a name="chat-real-time-contact-analysis-segment-streams-data-model"></a>
 
 Conversational analytics segment streams for chat contacts are generated in JSON. Event JSON blobs are published to the associated stream for every contact that has real-time conversational analytics enabled. The following types of events can be published for a conversational analytics session for a chat contact:
@@ -43,7 +43,7 @@ Type: String
 Valid values: `STARTED`, `SEGMENTS`, `COMPLETED`, `FAILED`
 
 **StreamingSettings**
-The Contact Lens settings for this contact
+The conversational analytics settings for this contact
 Type: [StreamingSettings](#streamingsettingsobject) object
 
 ## StreamingSettings object
@@ -52,10 +52,10 @@ Type: [StreamingSettings](#streamingsettingsobject) object
 **LanguageCode**
 The language code associated to this contact.
 Type: String
-Valid values: the language code for one of the [supported languages for Contact Lens real-time call analytics](supported-languages.md#supported-languages-contact-lens).
+Valid values: the language code for one of the [supported languages for conversational analytics real-time call analytics](supported-languages.md#supported-languages-contact-lens).
 
 **Output**
-The Contact Lens output type enabled for this contact.
+The conversational analytics output type enabled for this contact.
 Type: String
 Valid values: `Raw`, `Redacted`, `RedactedAndRaw`
 
@@ -98,7 +98,7 @@ Valid values: `PII`, `EntityType`
 + Channel
 + AccountId
 + OutputType
-  + The Contact Lens output type of the current segment
+  + The conversational analytics output type of the current segment
   + Type: String
   + Valid values: `Raw`, `Redacted`
 + ContactId

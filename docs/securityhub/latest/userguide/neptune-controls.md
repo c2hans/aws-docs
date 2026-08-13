@@ -20,7 +20,7 @@ These controls may not be available in all AWS Regions. For more information, se
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-encrypted.html)
+**AWS Config rule:** [`neptune-cluster-encrypted`](https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-encrypted.html)
 
 **Schedule type:** Change triggered
 
@@ -46,7 +46,7 @@ You can enable encryption at rest when you create a Neptune DB cluster. You can'
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-cloudwatch-log-export-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-cloudwatch-log-export-enabled.html)
+**AWS Config rule:** [`neptune-cluster-cloudwatch-log-export-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-cloudwatch-log-export-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -72,7 +72,7 @@ To publish Neptune audit logs to CloudWatch Logs, see [Publishing Neptune logs t
 
 **Resource type:** `AWS::RDS::DBClusterSnapshot`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-snapshot-public-prohibited.html](https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-snapshot-public-prohibited.html)
+**AWS Config rule:** [`neptune-cluster-snapshot-public-prohibited`](https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-snapshot-public-prohibited.html)
 
 **Schedule type:** Change triggered
 
@@ -98,7 +98,7 @@ To remove public access for Neptune manual DB cluster snapshots, see [Sharing a 
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-deletion-protection-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-deletion-protection-enabled.html)
+**AWS Config rule:** [`neptune-cluster-deletion-protection-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-deletion-protection-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -124,7 +124,7 @@ To enable deletion protection for an existing Neptune DB cluster, see [ Modifyin
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-backup-retention-check.html](https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-backup-retention-check.html)
+**AWS Config rule:** [`neptune-cluster-backup-retention-check`](https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-backup-retention-check.html)
 
 **Schedule type:** Change triggered
 
@@ -154,7 +154,7 @@ To enable automated backups and set a backup retention period for your Neptune D
 
 **Resource type:** `AWS::RDS::DBClusterSnapshot`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-snapshot-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-snapshot-encrypted.html)
+**AWS Config rule:** [`neptune-cluster-snapshot-encrypted`](https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-snapshot-encrypted.html)
 
 **Schedule type:** Change triggered
 
@@ -180,7 +180,7 @@ You can't encrypt an existing Neptune DB cluster snapshot. Instead, you must res
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-iam-database-authentication.html](https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-iam-database-authentication.html)
+**AWS Config rule:** [`neptune-cluster-iam-database-authentication`](https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-iam-database-authentication.html)
 
 **Schedule type:** Change triggered
 
@@ -206,7 +206,7 @@ By default, IAM database authentication is disabled when you create a Neptune DB
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-copy-tags-to-snapshot-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-copy-tags-to-snapshot-enabled.html)
+**AWS Config rule:** [`neptune-cluster-copy-tags-to-snapshot-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-copy-tags-to-snapshot-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -232,7 +232,7 @@ To copy tags to snapshots for Neptune DB clusters, see [Copying tags in Neptune]
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-multi-az-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-multi-az-enabled.html)
+**AWS Config rule:** [`neptune-cluster-multi-az-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/neptune-cluster-multi-az-enabled.html)
 
 **Schedule type:** Change triggered
 

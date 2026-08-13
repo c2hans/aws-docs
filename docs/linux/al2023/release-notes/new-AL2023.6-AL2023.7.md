@@ -138,7 +138,7 @@ New packages in AL2023.7:
   - **RPM:**  freetds-libs  / **Architectures:** aarch64, x86\_64
   - **Version:** 1.1.20-4.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) **
+- ** [`gcc`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) **
   - **RPM:**  gcc-plugin-annobin
   - **Architectures:** aarch64, x86\_64
   - **Version:** 11.5.0-5.amzn2023.0.3
@@ -420,23 +420,23 @@ New packages in AL2023.7:
   - **Architectures:** aarch64, x86\_64
   - **Version:** 58-2.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
+- ** [`java-17-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
   - **RPM:**  java-17-amazon-corretto-debugsymbols
   - **Architectures:** aarch64, x86\_64
   - **Version:** 17.0.14\+7-1.amzn2023.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
+- ** [`java-21-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
   - **RPM:**  java-21-amazon-corretto-debugsymbols
   - **Architectures:** aarch64, x86\_64
   - **Version:** 21.0.6\+7-1.amzn2023.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+- ** [`java-23-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
+  - **RPM:**  [`java-23-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  java-23-amazon-corretto-debugsymbols  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-23-amazon-corretto-devel`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-23-amazon-corretto-headless`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-23-amazon-corretto-javadoc`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-23-amazon-corretto-jmods`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
   - **Version:** 23.0.2\+7-1.amzn2023.1
 
 - ** `java-24-amazon-corretto` **
@@ -891,8 +891,8 @@ New packages in AL2023.7:
   - **Architectures:** aarch64, x86\_64
   - **Version:** 47.6-18.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  / **Architectures:** aarch64, x86\_64
+- ** [`python3.12`](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
+  - **RPM:**  [`python3.12`](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.12-debug  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.12-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.12-idle  / **Architectures:** aarch64, x86\_64
@@ -941,7 +941,7 @@ New packages in AL2023.7:
   - **RPM:**  rest0.7-devel  / **Architectures:** aarch64, x86\_64
   - **Version:** 0.8.1-6.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/rust.html](https://docs.aws.amazon.com/linux/al2023/ug/rust.html) **
+- ** [`rust`](https://docs.aws.amazon.com/linux/al2023/ug/rust.html) **
   - **RPM:**  rust-std-static-wasm32-wasip1  / **Architectures:** noarch
   - **RPM:**  rust-toolset-srpm-macros  / **Architectures:** noarch
   - **Version:** 1.85.0-1.amzn2023.0.1

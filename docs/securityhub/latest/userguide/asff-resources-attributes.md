@@ -32,7 +32,7 @@ Identifies the name of the application involved in the finding.
 ## DataClassification
 <a name="asff-resources-dataclassification"></a>
 
-The [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DataClassificationDetails.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DataClassificationDetails.html) field provides information about sensitive data that was detected on the resource.
+The [DataClassification](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DataClassificationDetails.html) field provides information about sensitive data that was detected on the resource.
 
 **Example**
 
@@ -137,7 +137,7 @@ The [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DataClassifica
 ## Details
 <a name="asff-resources-details"></a>
 
-The [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ResourceDetails.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ResourceDetails.html) field provides additional information about a single resource using the appropriate objects. Each resource must be provided in a separate resource object in the `Resources` object.
+The [Details](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ResourceDetails.html) field provides additional information about a single resource using the appropriate objects. Each resource must be provided in a separate resource object in the `Resources` object.
 
 Note that if the finding size exceeds the maximum of 240 KB, then the `Details` object is removed from the finding. For control findings that use AWS Config rules, you can view the resource details on the AWS Config console.
 

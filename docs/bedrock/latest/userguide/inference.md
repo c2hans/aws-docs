@@ -9,7 +9,7 @@ Inference is the process of generating an output from an input provided to a mod
 
 **`bedrock-mantle` endpoint**
 
-If your role has the `AmazonBedrockMantleInferenceAccess` AWS managed policy attached, you can skip this section. Otherwise, attach the following permissions to allow inference via the `bedrock-mantle` endpoint (Responses API, Chat Completions, Messages API):
+If your role has the `AmazonBedrockMantleInferenceAccess` AWS managed policy attached, you can skip this section. Otherwise, attach the following permissions to allow inference through the `bedrock-mantle` endpoint (Responses API, Chat Completions, Messages API):
 
 ```
 {
@@ -32,7 +32,7 @@ If your role has the `AmazonBedrockMantleInferenceAccess` AWS managed policy att
 
 **`bedrock-runtime` endpoint**
 
-If your role has the [AmazonBedrockFullAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AmazonBedrockFullAccess) AWS managed policy attached, you can skip this section. Otherwise, attach the following permissions to allow inference via the `bedrock-runtime` endpoint (Converse and Invoke APIs):
+If your role has the [AmazonBedrockFullAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AmazonBedrockFullAccess) AWS managed policy attached, you can skip this section. Otherwise, attach the following permissions to allow inference through the `bedrock-runtime` endpoint (Converse and Invoke APIs):
 
 ```
 {

@@ -147,7 +147,7 @@ You can create an IAM policy by using the AWS Management Console or the AWS Comm
 
 **To create an IAM policy to allow Amazon RDS to access your Amazon S3 bucket**
 
-1. Run the [https://docs.aws.amazon.com/cli/latest/reference/iam/create-policy.html](https://docs.aws.amazon.com/cli/latest/reference/iam/create-policy.html) command. In the following example, replace {{iam\_policy\_name}} and {{amzn-s3-demo-bucket}} with a name for your IAM policy and the name of your target Amazon S3 bucket.
+1. Run the [create-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/create-policy.html) command. In the following example, replace {{iam\_policy\_name}} and {{amzn-s3-demo-bucket}} with a name for your IAM policy and the name of your target Amazon S3 bucket.
 
    For Linux, macOS, or Unix:
 
@@ -306,7 +306,7 @@ You can create an IAM role for your DB instance by using the console or the AWS 
 
 **To create an IAM role and attach your IAM policy to it**
 
-1. Run the [https://docs.aws.amazon.com/cli/latest/reference/iam/create-role.html](https://docs.aws.amazon.com/cli/latest/reference/iam/create-role.html) command. In the following example, replace {{iam\_role\_name}} with a name for your IAM role.
+1. Run the [create-role](https://docs.aws.amazon.com/cli/latest/reference/iam/create-role.html) command. In the following example, replace {{iam\_role\_name}} with a name for your IAM role.
 
    For Linux, macOS, or Unix:
 
@@ -348,7 +348,7 @@ You can create an IAM role for your DB instance by using the console or the AWS 
 
 1. After the role is created, note the ARN of this role. You need this ARN for the next step, [Step 4: Configure an option group for Db2 audit logging](#db2-audit-configure-options-group).
 
-1. Run the [https://docs.aws.amazon.com/cli/latest/reference/iam/attach-role-policy.html](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-role-policy.html) command. In the following example, replace {{iam\_policy\_arn}} with the ARN of the IAM policy that you created in [Step 2: Create an IAM policy](#db2-audit-create-iam-policy). Replace {{iam\_role\_name}} with the name of the IAM role that you just created.
+1. Run the [attach-role-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-role-policy.html) command. In the following example, replace {{iam\_policy\_arn}} with the ARN of the IAM policy that you created in [Step 2: Create an IAM policy](#db2-audit-create-iam-policy). Replace {{iam\_role\_name}} with the name of the IAM role that you just created.
 
    For Linux, macOS, or Unix:
 

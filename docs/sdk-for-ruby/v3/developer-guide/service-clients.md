@@ -14,7 +14,7 @@ Each service client requires an AWS Region and a credential provider. The SDK us
 
 + The SDK has a series of places (or sources) that it checks in order to find a value for configuration settings. For details, see [Precedence of settings](configuring.md#precedence-settings).
 
-The SDK for Ruby includes client classes that provide interfaces to the AWS services. Each client class supports a particular AWS service and follows the convention `Aws::{{<service identifier>}}::Client`. For example, [https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Client.html](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Client.html) provides an interface to the Amazon Simple Storage Service service, and [https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/SQS/Client.html](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/SQS/Client.html) provides an interface to the Amazon Simple Queue Service service.
+The SDK for Ruby includes client classes that provide interfaces to the AWS services. Each client class supports a particular AWS service and follows the convention `Aws::{{<service identifier>}}::Client`. For example, [`Aws::S3::Client`](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Client.html) provides an interface to the Amazon Simple Storage Service service, and [`Aws::SQS::Client`](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/SQS/Client.html) provides an interface to the Amazon Simple Queue Service service.
 
  All client classes for all AWS services are thread-safe.
 

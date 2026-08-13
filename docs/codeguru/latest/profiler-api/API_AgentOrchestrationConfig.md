@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AgentOr
 # AgentOrchestrationConfig
 <a name="API_AgentOrchestrationConfig"></a>
 
- Specifies whether profiling is enabled or disabled for a profiling group. It is used by [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html) to enable or disable profiling for a profiling group.
+ Specifies whether profiling is enabled or disabled for a profiling group. It is used by [`ConfigureAgent`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html) to enable or disable profiling for a profiling group.
 
 ## Contents
 <a name="API_AgentOrchestrationConfig_Contents"></a>

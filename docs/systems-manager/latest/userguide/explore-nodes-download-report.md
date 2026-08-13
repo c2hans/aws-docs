@@ -29,7 +29,7 @@ Depending on the size of the report, you're prompted to download the report to y
 **Tip**
 For information about managing the columns in your report display, see [Managing node report content and appearance](explore-nodes-manage-report-display.md).
 
-   1. For **File format**, select **CSV** or **JSON**, depending on how you will use the file.
+   1. For **File format**, select **CSV** or **JSON**, depending on how you use the file.
 
    1. For **Spreadsheet heading**, to include a column headings row in a `CSV` file, select **Include row of column names**.
 

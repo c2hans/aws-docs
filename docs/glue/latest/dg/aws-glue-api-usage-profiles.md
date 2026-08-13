@@ -40,16 +40,16 @@ Specifies the job and session values that an admin configures in an AWS Glue usa
 Specifies the values that an admin sets for each job or session parameter configured in a AWS Glue usage profile.
 
 **Fields**
-+ `DefaultValue` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #35](aws-glue-api-common.md#regex_35).
++ `DefaultValue` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #55](aws-glue-api-common.md#regex_55).
 
   A default value for the parameter.
 + `AllowedValues` – An array of UTF-8 strings.
 
   A list of allowed values for the parameter.
-+ `MinValue` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #35](aws-glue-api-common.md#regex_35).
++ `MinValue` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #55](aws-glue-api-common.md#regex_55).
 
   A minimum allowed value for the parameter.
-+ `MaxValue` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #35](aws-glue-api-common.md#regex_35).
++ `MaxValue` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #55](aws-glue-api-common.md#regex_55).
 
   A maximum allowed value for the parameter.
 

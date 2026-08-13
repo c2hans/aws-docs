@@ -6,7 +6,7 @@ Version 4 (V4) of the AWS SDK for .NET has been released\!
 
 For information about breaking changes and migrating your applications, see the [migration topic](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html).
 
- [https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
+ [![Orange button with text "Click here for details".](http://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Consume messages with the AWS Message Processing Framework for .NET
 <a name="msg-proc-fw-consume"></a>
@@ -73,7 +73,7 @@ You can return `MessageProcessStatus.Success()` to indicate that the message was
 ## Handling Messages in a Long-Running Process
 <a name="long-running-process"></a>
 
-You can call `AddSQSPoller` with an SQS queue URL to start a long-running [https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.hosting.backgroundservice](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.hosting.backgroundservice) that will continuously poll the queue and process messages.
+You can call `AddSQSPoller` with an SQS queue URL to start a long-running [`BackgroundService`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.hosting.backgroundservice) that will continuously poll the queue and process messages.
 
 ```
 await Host.CreateDefaultBuilder(args)

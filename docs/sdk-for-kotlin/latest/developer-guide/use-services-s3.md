@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/us
 # Work with Amazon S3 using the AWS SDK for Kotlin
 <a name="use-services-s3"></a>
 
-Your main interface to the Amazon Simple Storage Service for the Kotlin SDK is the [S3Client](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/index.html). Use the `S3Client` like other service clients in the SDK to make [requests](making-requests.md) to Amazon S3.
+Your main interface to the Amazon Simple Storage Service for the Kotlin SDK is the [S3Client](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/index.html). Use the [`S3Client`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/index.html) like other service clients in the SDK to make [requests](making-requests.md) to Amazon S3.
 
 Resources to help you use the Kotlin SDK with S3 are:
 + the Kotlin SDK [API reference for S3](/sdk-for-kotlin/api/latest/s3/index.html).

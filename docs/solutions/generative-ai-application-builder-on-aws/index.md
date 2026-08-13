@@ -6,8 +6,8 @@ source_url: https://docs.aws.amazon.com//solutions/generative-ai-application-bui
 
 Rapidly develop and deploy production-ready Agentic AI applications
 
-- **Version**: 4.1.21
-- **Released**: 7/2026
+- **Version**: 4.1.23
+- **Released**: 8/2026
 - **Author**: AWS
 - **Est. deployment time**: 10 mins
 - **Estimated cost**: [See details](/solutions/latest/generative-ai-application-builder-on-aws/cost.html)

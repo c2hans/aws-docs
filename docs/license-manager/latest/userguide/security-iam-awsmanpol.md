@@ -46,7 +46,7 @@ The role permissions policy allows License Manager to complete the following act
 | license-manager:UpdateLicenseSpecificationsForResource | \* |
 | license-manager:List\* | \* |
 
-To view the permissions for this policy in the AWS Management Console, see [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSLicenseManagerServiceRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSLicenseManagerServiceRolePolicy).
+To view the permissions for this policy in the AWS Management Console, see [AWSLicenseManagerServiceRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSLicenseManagerServiceRolePolicy).
 
 ## AWS managed policy: AWSLicenseManagerMasterAccountRolePolicy
 <a name="security-iam-AWSLicenseManagerMasterAccountRolePolicy"></a>
@@ -113,7 +113,7 @@ The role permissions policy allows License Manager to complete the following act
 + `arn:aws:glue:*:*:database/license_manager_resource_inventory_db`
 + `arn:aws:glue:*:*:database/license_manager_resource_sync`
 
-To view the permissions for this policy in the AWS Management Console, see [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSLicenseManagerMasterAccountRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSLicenseManagerMasterAccountRolePolicy).
+To view the permissions for this policy in the AWS Management Console, see [AWSLicenseManagerMasterAccountRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSLicenseManagerMasterAccountRolePolicy).
 
 ## AWS managed policy: AWSLicenseManagerMemberAccountRolePolicy
 <a name="security-iam-AWSLicenseManagerMemberAccountRolePolicy"></a>
@@ -136,14 +136,14 @@ The role permissions policy allows License Manager to complete the following act
 | ram:AcceptResourceShareInvitation | \* |
 | ram:GetResourceShareInvitations | \* |
 
-To view the permissions for this policy in the AWS Management Console, see [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSLicenseManagerMemberAccountRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSLicenseManagerMemberAccountRolePolicy).
+To view the permissions for this policy in the AWS Management Console, see [AWSLicenseManagerMemberAccountRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSLicenseManagerMemberAccountRolePolicy).
 
 ## AWS managed policy: AWSLicenseManagerConsumptionPolicy
 <a name="security-iam-AWSLicenseManagerConsumptionPolicy"></a>
 
 You can attach the `AWSLicenseManagerConsumptionPolicy` policy to your IAM identities. This policy grants permissions that allow access to the License Manager API actions required to consume licenses. For more information, see [Seller issued license usage in License Manager](license-usage.md).
 
-To view the permissions for this policy, see [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSLicenseManagerConsumptionPolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSLicenseManagerConsumptionPolicy) in the AWS Management Console.
+To view the permissions for this policy, see [AWSLicenseManagerConsumptionPolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSLicenseManagerConsumptionPolicy) in the AWS Management Console.
 
 ## AWS managed policy: AWSLicenseManagerUserSubscriptionsServiceRolePolicy
 <a name="security-iam-AWSLicenseManagerUserSubscriptionsServiceRolePolicy"></a>
@@ -178,7 +178,7 @@ The role permissions policy allows License Manager to complete the following act
 
 ² License Manager can only execute an SSM Run Command with the `AWS-RunPowerShellScript` document on instances with the tag name of `AWSLicenseManager` and a value of `UserSubscriptions`.
 
-To view the permissions for this policy in the AWS Management Console, see [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSLicenseManagerUserSubscriptionsServiceRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSLicenseManagerUserSubscriptionsServiceRolePolicy).
+To view the permissions for this policy in the AWS Management Console, see [AWSLicenseManagerUserSubscriptionsServiceRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSLicenseManagerUserSubscriptionsServiceRolePolicy).
 
 ## AWS managed policy: AWSLicenseManagerLinuxSubscriptionsServiceRolePolicy
 <a name="security-iam-AWSLicenseManagerLinuxSubscriptionsServiceRolePolicy"></a>
@@ -203,7 +203,7 @@ The role permissions policy allows License Manager to complete the following act
 | secretsmanager:GetSecretValue | StringEquals:<br />*"aws:ResourceTag/LicenseManagerLinuxSubscriptions": "enabled"*<br />*"aws:ResourceAccount": "${aws:PrincipalAccount}"* | arn:aws:secretsmanager:\*:\*:secret:\* |
 | kms:Decrypt | StringEquals:<br />*"aws:ResourceTag/LicenseManagerLinuxSubscriptions": "enabled",*<br />*"aws:ResourceAccount": "${aws:PrincipalAccount}"*<br />**<br />StringLike:<br />*"kms:ViaService": [ "secretsmanager.\*.amazonaws.com" ]* | arn:aws:kms:\*:\*:key/\* |
 
-To view the permissions for this policy in the AWS Management Console, see [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSLicenseManagerLinuxSubscriptionsServiceRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSLicenseManagerLinuxSubscriptionsServiceRolePolicy).
+To view the permissions for this policy in the AWS Management Console, see [AWSLicenseManagerLinuxSubscriptionsServiceRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSLicenseManagerLinuxSubscriptionsServiceRolePolicy).
 
 ## License Manager updates to AWS managed policies
 <a name="security-iam-awsmanpol-updates"></a>

@@ -765,7 +765,7 @@ Other Info           : This is the support statement for AL2023. The
   ...: below) will no longer, receive any updates from AWS.
 ```
 
- Package support information is also available in the [support statements](https://docs.aws.amazon.com/linux/al2023/release-notes/support-info-by-support-statement.html) section of the [AL2023 Release Notes](https://docs.aws.amazon.com/linux/al2023/release-notes/).
+ Package support information is also available in the [support statements](https://docs.aws.amazon.com/linux/al2023/release-notes/all-packages-AL2023.12.html) section of the [AL2023 Release Notes](https://docs.aws.amazon.com/linux/al2023/release-notes/).
 
 ## Checking for newer repository versions with `dnf check-release-update`
 <a name="dnf-repository-updates"></a>

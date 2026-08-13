@@ -14,7 +14,7 @@ On the EventBridge dashboard for Security Hub CSPM, **All Events** includes all 
 
  Security Hub CSPM automatically sends all new findings and all updates to existing findings to EventBridge as **Security Hub Findings - Imported** events. Each **Security Hub Findings - Imported** event contains a single finding.
 
-Every [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchImportFindings.html) and [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html) request triggers a **Security Hub Findings - Imported** event.
+Every [`BatchImportFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchImportFindings.html) and [`BatchUpdateFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html) request triggers a **Security Hub Findings - Imported** event.
 
 For administrator accounts, the event feed in EventBridge includes events for findings from both their account and from their member accounts.
 

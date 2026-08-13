@@ -78,7 +78,7 @@ For Aurora DSQL, CloudTrail captures any connection attempt made to an Aurora DS
 | --- | --- | --- |
 | Amazon Aurora DSQL | `AWS::DSQL::Cluster` |  +  `DbConnect` <br />+  `DbConnectAdmin`   |
 
-You can configure advanced event selectors to filter on the `eventName` and `resources.ARN` fields to log only filtered events. For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
+You can configure advanced event selectors to filter on the `eventName` and `resources.ARN` fields to log only filtered events. For more information about these fields, see [AdvancedFieldSelector](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
 
 The following example shows how to use AWS CLI to configure `dsql-data-events-trail` to receive data events for Aurora DSQL.
 

@@ -7,6 +7,36 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-not
 
 This document contains all Amazon IVS Real-Time Streaming release notes, latest first, organized by date of release.
 
+## August 12, 2026
+<a name="aug12-26-broadcast-web-rt"></a>
+
+### IVS Broadcast SDK: Web 1.38.1 (Real-Time Streaming)
+<a name="aug12-26-broadcast-web-rt-1381"></a>
+
+| Platform | Downloads and Changes |
+| --- | --- |
+| [Web Broadcast SDK 1.38.1](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Fixed `PUBLISH_ERROR` (code 1015) caused [by a Simulcast regression in Chrome 152\+ for publishers](https://issues.webrtc.org/issues/545191307) with simulcast enabled and [two or fewer layers configured](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/web-publish-subscribe.html#web-publish-subscribe-layered-encoding-simulcast).  |
+
+## August 11, 2026
+<a name="aug11-26-broadcast-android-rt"></a>
+
+### Amazon IVS Broadcast SDK: Android 1.43.1 (Real-Time Streaming)
+<a name="aug11-26-broadcast-android-rt-1431"></a>
+
+| Platform | Downloads and Changes |
+| --- | --- |
+| [Android Broadcast SDK 1.43.1](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.43.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.43.1/android/)+  Fixed a rare crash that could occur if OpenSL ES audio playback failed to start correctly. <br />+  Fixed an issue that could cause audio to play at reduced volume on some Samsung devices.  |
+
+#### Broadcast SDK Size: Android
+<a name="broadcast-1431-rt-sdk-size-android"></a>
+
+| Architecture | Compressed Size | Uncompressed Size |
+| --- | --- | --- |
+| arm64-v8a | 6.041 MB | 14.669 MB |
+| armeabi-v7a | 5.234 MB | 10.164 MB |
+| x86\_64 | 6.151 MB | 15.250 MB |
+| x86 | 6.427 MB | 15.875 MB |
+
 ## July 30, 2026
 <a name="jul30-26-broadcast-mobile-rt"></a>
 

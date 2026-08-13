@@ -37,7 +37,7 @@ Choose your preferred method, and follow the steps to create a custom action.
 
 **To create a custom action (API)**
 
-Use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateActionTarget.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateActionTarget.html) operation. If you're using the AWS CLI, run the [create-action-target](https://docs.aws.amazon.com/cli/latest/reference/securityhub/create-action-target.html) command.
+Use the [CreateActionTarget](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateActionTarget.html) operation. If you're using the AWS CLI, run the [create-action-target](https://docs.aws.amazon.com/cli/latest/reference/securityhub/create-action-target.html) command.
 
 The following example creates a custom action to send findings to a remediation tool. This example is formatted for Linux, macOS, or Unix, and it uses the backslash (\\) line-continuation character to improve readability.
 

@@ -25,7 +25,7 @@ After you move Amazon SES into production mode, if you already enabled email whe
 ## Step 2: Get a default Connect Customer email domain
 <a name="get-email-domain"></a>
 
-These steps only apply if you already created an Connect Customer instance but didn't enable email. Complete these steps to get a default email domain from Connect Customer.
+These steps only apply if you already created a Connect Customer instance but didn't enable email. Complete these steps to get a default email domain from Connect Customer.
 
 1. In the Connect Customer console, on the left navigation menu, choose **Email**, and then choose **Create service role**. This role needs to be created only once for your account. It allows Amazon SES to route emails to Connect Customer.
 
@@ -49,7 +49,7 @@ You can import up to five custom domains that have been [onboarded to Amazon SES
 ## Step 4: Enable email and create an Amazon S3 bucket for storing email and attachments
 <a name="enable-email-buckets"></a>
 
-These steps apply only if you already created an Connect Customer instance but didn't enable email.
+These steps apply only if you already created a Connect Customer instance but didn't enable email.
 
 You need to update your **Data storage** settings to enable the email channel and specify the Amazon S3 bucket where email messages and attachments are to be stored. Email requires two Amazon S3 bucket pointers. They can be to the same Amazon S3 bucket or two different buckets.
 

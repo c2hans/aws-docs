@@ -17,7 +17,7 @@ The following table provides descriptions of the modes per AMS service.
 
 <table>
 <thead>
-  <tr><th>AMS feature</th><th>RFC mode (formerly Standard CM mode) / OOD\*</th><th>Direct Change mode</th><th>AWS Service Catalog</th><th>Self-service provisioning / Developer mode</th><th>Customer Managed</th></tr>
+  <tr><th>AMS feature</th><th>RFC mode (formerly Standard CM mode) / OOD<b>*</b></th><th>Direct Change mode</th><th>AWS Service Catalog</th><th>Self-service provisioning / Developer mode</th><th>Customer Managed</th></tr>
 </thead>
 <tbody>
   <tr><td>Landing Zone Configuration</td><td>MALZ and SALZ</td><td>MALZ and SALZ</td><td colspan="3">MALZ and SALZ</td></tr>

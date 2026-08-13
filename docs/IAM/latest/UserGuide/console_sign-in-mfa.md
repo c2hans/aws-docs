@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/console_sign-in-mfa
 Users who are configured with [multi-factor authentication (MFA)](id_credentials_mfa.md) devices must use their MFA devices to sign in to the AWS Management Console. After the user enters their sign-in credentials, AWS checks the user's account to see if MFA is required for that user.
 
 **Important**
-If you use access key and secret key credentials for direct AWS Management Console access with the AWS STS [https://docs.aws.amazon.com/STS/latest/APIReference/API_GetFederationToken.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetFederationToken.html) API call, MFA will NOT be required. For more information, see [Using access keys and secret key credentials for console access](securing_access-keys.md#console-access-security-keys).
+If you use access key and secret key credentials for direct AWS Management Console access with the AWS STS [`GetFederationToken`](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetFederationToken.html) API call, MFA will NOT be required. For more information, see [Using access keys and secret key credentials for console access](securing_access-keys.md#console-access-security-keys).
 
 The following topics provide information on how users complete signing in when MFA is required.
 

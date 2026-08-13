@@ -18,13 +18,24 @@ The following table lists the changes included in this release.
 This release is cumulative from this month's prior AL2 and AL2023 platform releases. See [Platform history](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platform-history-docker.html) in the *AWS Elastic Beanstalk Platforms* guide for more information. Detailed release notes for the January AL2 and AL2023 platform releases will be published in this Release Notes guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied security updates to the Docker and ECS-based platform branches based on Amazon Linux 2023 and Amazon Linux 2. The security updates address [CVE-2024-21626](https://aws.amazon.com/security/security-bulletins/AWS-2024-001/).  |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2024-01-31-al-docker-ecs-cve.html) |
-| **Docker** | **AL2023 Docker platform branch**+  Updated Docker Compose to version [2.24.3](https://docs.docker.com/compose/release-notes/#2243).  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied security updates to the Docker and ECS-based platform branches based on Amazon Linux 2023 and Amazon Linux 2. The security updates address <a href="https://aws.amazon.com/security/security-bulletins/AWS-2024-001/">CVE-2024-21626</a>. </td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Docker</b></td><td><b>AL2023 Docker platform branch</b><ul><li> Updated Docker Compose to version <a href="https://docs.docker.com/compose/release-notes/#2243">2.24.3</a>. </li></ul></td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2024-01-31-al-docker-ecs-cve.platforms"></a>

@@ -307,7 +307,7 @@ To successfully generate a policy, the objects in the bucket must be owned by th
 
 1. Add permissions to your Amazon S3 bucket policy in account B to allow access for the role in account A.
 
-   The following example policy allows `ListBucket` and `GetObject` for the bucket named `amzn-s3-demo-bucket`. It allows access if the role accessing the bucket belongs to an account in your organization and has a name that starts with `AccessAnalyzerMonitorServiceRole`. Using [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalarn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalarn) as a `Condition` in the `Resource` element ensures that the role can only access activity for the account if it belongs to account A. You can replace `amzn-s3-demo-bucket` with your bucket name, `optional-prefix` with an optional prefix for the bucket, and `organization-id` with your organization ID.
+   The following example policy allows `ListBucket` and `GetObject` for the bucket named `amzn-s3-demo-bucket`. It allows access if the role accessing the bucket belongs to an account in your organization and has a name that starts with `AccessAnalyzerMonitorServiceRole`. Using [`aws:PrincipalArn`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalarn) as a `Condition` in the `Resource` element ensures that the role can only access activity for the account if it belongs to account A. You can replace `amzn-s3-demo-bucket` with your bucket name, `optional-prefix` with an optional prefix for the bucket, and `organization-id` with your organization ID.
 
    ```
    {

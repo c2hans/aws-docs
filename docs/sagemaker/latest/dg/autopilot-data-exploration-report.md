@@ -17,7 +17,7 @@ A data exploration notebook containing the report is generated for every Autopil
 [s3 output path]/[name of the automl job]/sagemaker-automl-candidates/[name of processing job used for data analysis]/notebooks/SageMaker AIAutopilotDataExplorationNotebook.ipynb
 ```
 
-The location of the data exploration notebook can be obtained from the Autopilot API using the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeAutoMLJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeAutoMLJob.html) operation response, which is stored in [DataExplorationNotebookLocation](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLJobArtifacts.html#sagemaker-Type-AutoMLJobArtifacts-DataExplorationNotebookLocation).
+The location of the data exploration notebook can be obtained from the Autopilot API using the [`DescribeAutoMLJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeAutoMLJob.html) operation response, which is stored in [DataExplorationNotebookLocation](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLJobArtifacts.html#sagemaker-Type-AutoMLJobArtifacts-DataExplorationNotebookLocation).
 
 When running Autopilot from SageMaker Studio Classic, you can open the data exploration report using the following steps:
 

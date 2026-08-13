@@ -100,7 +100,7 @@ The `Job` object contains details about a job. The following example shows the s
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_Job.html](https://docs.aws.amazon.com/iot/latest/apireference/API_Job.html) or [https://docs.aws.amazon.com/cli/latest/reference/iot/job.html](https://docs.aws.amazon.com/cli/latest/reference/iot/job.html).
+For more information, see [`Job`](https://docs.aws.amazon.com/iot/latest/apireference/API_Job.html) or [`job`](https://docs.aws.amazon.com/cli/latest/reference/iot/job.html).
 
 ### JobSummary
 <a name="jobs-job-summary"></a>
@@ -120,7 +120,7 @@ The `JobSummary` object contains a job summary. The following example shows the 
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_JobSummary.html](https://docs.aws.amazon.com/iot/latest/apireference/API_JobSummary.html) or [https://docs.aws.amazon.com/cli/latest/reference/iot/job-summary.html](https://docs.aws.amazon.com/cli/latest/reference/iot/job-summary.html).
+For more information, see [`JobSummary`](https://docs.aws.amazon.com/iot/latest/apireference/API_JobSummary.html) or [`job-summary`](https://docs.aws.amazon.com/cli/latest/reference/iot/job-summary.html).
 
 ### JobExecution
 <a name="jobs-job-execution"></a>
@@ -128,7 +128,7 @@ For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/A
 The `JobExecution` object represents the execution of a job on a device. The following example shows the syntax:
 
 **Note**
-When you use the control plane API operations, the `JobExecution` data type doesn't contain a `JobDocument` field. To obtain this information, you can use the [https://docs.aws.amazon.com/iot/latest/apireference/API_GetJobDocument.html](https://docs.aws.amazon.com/iot/latest/apireference/API_GetJobDocument.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/get-job-document.html](https://docs.aws.amazon.com/cli/latest/reference/get-job-document.html) CLI command.
+When you use the control plane API operations, the `JobExecution` data type doesn't contain a `JobDocument` field. To obtain this information, you can use the [`GetJobDocument`](https://docs.aws.amazon.com/iot/latest/apireference/API_GetJobDocument.html) API operation or the [`get-job-document`](https://docs.aws.amazon.com/cli/latest/reference/get-job-document.html) CLI command.
 
 ```
 {
@@ -152,7 +152,7 @@ When you use the control plane API operations, the `JobExecution` data type does
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecution.html](https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecution.html) or [https://docs.aws.amazon.com/cli/latest/reference/iot/job-execution.html](https://docs.aws.amazon.com/cli/latest/reference/iot/job-execution.html).
+For more information, see [`JobExecution`](https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecution.html) or [`job-execution`](https://docs.aws.amazon.com/cli/latest/reference/iot/job-execution.html).
 
 ### JobExecutionSummary
 <a name="jobs-job-execution-summary"></a>
@@ -169,7 +169,7 @@ The `JobExecutionSummary` object contains job execution summary information. The
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecutionSummary.html](https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecutionSummary.html) or [https://docs.aws.amazon.com/cli/latest/reference/iot/job-execution-summary.html](https://docs.aws.amazon.com/cli/latest/reference/iot/job-execution-summary.html).
+For more information, see [`JobExecutionSummary`](https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecutionSummary.html) or [`job-execution-summary`](https://docs.aws.amazon.com/cli/latest/reference/iot/job-execution-summary.html).
 
 ### JobExecutionSummaryForJob
 <a name="jobs-job-execution-summary-for-job"></a>
@@ -193,7 +193,7 @@ The `JobExecutionSummaryForJob` object contains a summary of information about j
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecutionSummaryForJob.html](https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecutionSummaryForJob.html) or [https://docs.aws.amazon.com/cli/latest/reference/iot/job-execution-summary-for-job.html](https://docs.aws.amazon.com/cli/latest/reference/iot/job-execution-summary-for-job.html).
+For more information, see [`JobExecutionSummaryForJob`](https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecutionSummaryForJob.html) or [`job-execution-summary-for-job`](https://docs.aws.amazon.com/cli/latest/reference/iot/job-execution-summary-for-job.html).
 
 ### JobExecutionSummaryForThing
 <a name="jobs-job-execution-summary-for-thing"></a>
@@ -217,7 +217,7 @@ The `JobExecutionSummaryForThing` object contains a summary of information about
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecutionSummaryForThing.html](https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecutionSummaryForThing.html) or [https://docs.aws.amazon.com/cli/latest/reference/iot/job-execution-summary-for-thing.html](https://docs.aws.amazon.com/cli/latest/reference/iot/job-execution-summary-for-thing.html).
+For more information, see [`JobExecutionSummaryForThing`](https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecutionSummaryForThing.html) or [`job-execution-summary-for-thing`](https://docs.aws.amazon.com/cli/latest/reference/iot/job-execution-summary-for-thing.html).
 
 ## Job management and control API operations
 <a name="jobs-http-api"></a>
@@ -244,7 +244,7 @@ POST /jobs/{{jobId}}/targets
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_AssociateTargetsWithJob.html](https://docs.aws.amazon.com/iot/latest/apireference/API_AssociateTargetsWithJob.html).
+For more information, see [`AssociateTargetsWithJob`](https://docs.aws.amazon.com/iot/latest/apireference/API_AssociateTargetsWithJob.html).
 
 ------
 #### [ CLI syntax ]
@@ -270,7 +270,7 @@ aws iot  associate-targets-with-job \
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/iot/associate-targets-with-job.html](https://docs.aws.amazon.com/cli/latest/reference/iot/associate-targets-with-job.html).
+For more information, see [`associate-targets-with-job`](https://docs.aws.amazon.com/cli/latest/reference/iot/associate-targets-with-job.html).
 
 ------
 
@@ -292,7 +292,7 @@ PUT /jobs/{{jobId}}/cancel
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_CancelJob.html](https://docs.aws.amazon.com/iot/latest/apireference/API_CancelJob.html).
+For more information, see [`CancelJob`](https://docs.aws.amazon.com/iot/latest/apireference/API_CancelJob.html).
 
 ------
 #### [ CLI syntax ]
@@ -317,7 +317,7 @@ aws iot cancel-job \
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/iot/cancel-job.html](https://docs.aws.amazon.com/cli/latest/reference/iot/cancel-job.html).
+For more information, see [`cancel-job`](https://docs.aws.amazon.com/cli/latest/reference/iot/cancel-job.html).
 
 ------
 
@@ -342,7 +342,7 @@ PUT /things/{{thingName}}/jobs/{{jobId}}/cancel
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_CancelJobExecution.html](https://docs.aws.amazon.com/iot/latest/apireference/API_CancelJobExecution.html).
+For more information, see [`CancelJobExecution`](https://docs.aws.amazon.com/iot/latest/apireference/API_CancelJobExecution.html).
 
 ------
 #### [ CLI syntax ]
@@ -372,7 +372,7 @@ aws iot cancel-job-execution \
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/iot/cancel-job-execution.html](https://docs.aws.amazon.com/cli/latest/reference/iot/cancel-job-execution.html).
+For more information, see [`cancel-job-execution`](https://docs.aws.amazon.com/cli/latest/reference/iot/cancel-job-execution.html).
 
 ------
 
@@ -444,7 +444,7 @@ PUT /jobs/{{jobId}}
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_CreateJob.html](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateJob.html).
+For more information, see [`CreateJob`](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateJob.html).
 
 ------
 #### [ CLI syntax ]
@@ -512,7 +512,7 @@ aws iot create-job \
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/iot/create-job.html](https://docs.aws.amazon.com/cli/latest/reference/iot/create-job.html).
+For more information, see [`create-job`](https://docs.aws.amazon.com/cli/latest/reference/iot/create-job.html).
 
 ------
 
@@ -530,7 +530,7 @@ Deleting a job can take time, depending on the number of job executions created 
 DELETE /jobs/{{jobId}}?force={{force}}
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteJob.html](https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteJob.html).
+For more information, see [`DeleteJob`](https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteJob.html).
 
 ------
 #### [ CLI syntax ]
@@ -552,7 +552,7 @@ aws iot  delete-job \
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/iot/delete-job.html](https://docs.aws.amazon.com/cli/latest/reference/iot/delete-job.html).
+For more information, see [`delete-job`](https://docs.aws.amazon.com/cli/latest/reference/iot/delete-job.html).
 
 ------
 
@@ -568,7 +568,7 @@ Deletes a job execution.
 DELETE /things/{{thingName}}/jobs/{{jobId}}/executionNumber/{{executionNumber}}?force={{force}}
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteJobExecution.html](https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteJobExecution.html).
+For more information, see [`DeleteJobExecution`](https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteJobExecution.html).
 
 ------
 #### [ CLI syntax ]
@@ -594,7 +594,7 @@ aws iot  delete-job-execution \
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/iot/delete-job-execution.html](https://docs.aws.amazon.com/cli/latest/reference/iot/delete-job-execution.html).
+For more information, see [`delete-job-execution`](https://docs.aws.amazon.com/cli/latest/reference/iot/delete-job-execution.html).
 
 ------
 
@@ -610,7 +610,7 @@ Gets the details of the job execution.
 GET /jobs/{{jobId}}
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJob.html](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJob.html).
+For more information, see [`DescribeJob`](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJob.html).
 
 ------
 #### [ CLI syntax ]
@@ -630,7 +630,7 @@ aws iot describe-job \
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/iot/describe-job.html](https://docs.aws.amazon.com/cli/latest/reference/iot/describe-job.html).
+For more information, see [`describe-job`](https://docs.aws.amazon.com/cli/latest/reference/iot/describe-job.html).
 
 ------
 
@@ -646,7 +646,7 @@ Gets details of a job execution. The job's execution status must be `SUCCEEDED` 
 GET /things/{{thingName}}/jobs/{{jobId}}?executionNumber={{executionNumber}}
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJobExecution.html](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJobExecution.html).
+For more information, see [`DescribeJobExecution`](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJobExecution.html).
 
 ------
 #### [ CLI syntax ]
@@ -670,7 +670,7 @@ aws iot  describe-job-execution \
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/iot/describe-job-execution.html](https://docs.aws.amazon.com/cli/latest/reference/iot/describe-job-execution.html).
+For more information, see [`describe-job-execution`](https://docs.aws.amazon.com/cli/latest/reference/iot/describe-job-execution.html).
 
 ------
 
@@ -689,7 +689,7 @@ Placeholder URLs are not replaced with presigned Amazon S3 URLs in the document 
 GET /jobs/{{jobId}}/job-document
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_GetJobDocument.html](https://docs.aws.amazon.com/iot/latest/apireference/API_GetJobDocument.html).
+For more information, see [`GetJobDocument`](https://docs.aws.amazon.com/iot/latest/apireference/API_GetJobDocument.html).
 
 ------
 #### [ CLI syntax ]
@@ -709,7 +709,7 @@ aws iot get-job-document \
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/iot/get-job-document.html](https://docs.aws.amazon.com/cli/latest/reference/iot/get-job-document.html).
+For more information, see [`get-job-document`](https://docs.aws.amazon.com/cli/latest/reference/iot/get-job-document.html).
 
 ------
 
@@ -725,7 +725,7 @@ Gets a list of job executions for a job.
 GET /jobs/{{jobId}}/things?status={{status}}&maxResults={{maxResults}}&nextToken={{nextToken}}
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_ListJobExecutionsForJob.html](https://docs.aws.amazon.com/iot/latest/apireference/API_ListJobExecutionsForJob.html).
+For more information, see [`ListJobExecutionsForJob`](https://docs.aws.amazon.com/iot/latest/apireference/API_ListJobExecutionsForJob.html).
 
 ------
 #### [ CLI syntax ]
@@ -751,7 +751,7 @@ aws iot  list-job-executions-for-job \
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/iot/list-job-executions-for-job.html](https://docs.aws.amazon.com/cli/latest/reference/iot/list-job-executions-for-job.html).
+For more information, see [`list-job-executions-for-job`](https://docs.aws.amazon.com/cli/latest/reference/iot/list-job-executions-for-job.html).
 
 ------
 
@@ -767,7 +767,7 @@ Gets a list of job executions for a thing.
 GET /things/{{thingName}}/jobs?status={{status}}&maxResults={{maxResults}}&nextToken={{nextToken}}
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_ListJobExecutionsForThing.html](https://docs.aws.amazon.com/iot/latest/apireference/API_ListJobExecutionsForThing.html).
+For more information, see [`ListJobExecutionsForThing`](https://docs.aws.amazon.com/iot/latest/apireference/API_ListJobExecutionsForThing.html).
 
 ------
 #### [ CLI syntax ]
@@ -793,7 +793,7 @@ aws iot list-job-executions-for-thing \
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/iot/list-job-executions-for-thing.html](https://docs.aws.amazon.com/cli/latest/reference/iot/list-job-executions-for-thing.html).
+For more information, see [`list-job-executions-for-thing`](https://docs.aws.amazon.com/cli/latest/reference/iot/list-job-executions-for-thing.html).
 
 ------
 
@@ -809,7 +809,7 @@ Gets a list of jobs in your AWS account.
 GET /jobs?status={{status}}&targetSelection={{targetSelection}}&thingGroupName={{thingGroupName}}&thingGroupId={{thingGroupId}}&maxResults={{maxResults}}&nextToken={{nextToken}}
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_ListJobs.html](https://docs.aws.amazon.com/iot/latest/apireference/API_ListJobs.html).
+For more information, see [`ListJobs`](https://docs.aws.amazon.com/iot/latest/apireference/API_ListJobs.html).
 
 ------
 #### [ CLI syntax ]
@@ -839,7 +839,7 @@ aws iot list-jobs \
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/iot/list-jobs.html](https://docs.aws.amazon.com/cli/latest/reference/iot/list-jobs.html).
+For more information, see [`list-jobs`](https://docs.aws.amazon.com/cli/latest/reference/iot/list-jobs.html).
 
 ------
 
@@ -885,7 +885,7 @@ PATCH /jobs/{{jobId}}
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateJob.html](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateJob.html).
+For more information, see [`UpdateJob`](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateJob.html).
 
 ------
 #### [ CLI syntax ]
@@ -938,6 +938,6 @@ aws iot  update-job \
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/iot/update-job.html](https://docs.aws.amazon.com/cli/latest/reference/iot/update-job.html).
+For more information, see [`update-job`](https://docs.aws.amazon.com/cli/latest/reference/iot/update-job.html).
 
 ------

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-sa
 
 AWS Security Hub can generate exposure findings for Amazon SageMaker notebook instances.
 
-On the Security Hub console, the notebook instance involved in an exposure finding and its identifying information are listed in the **Resources** section of the finding details. Programmatically, you can retrieve resource details with the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingsV2.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingsV2.html) operation of the Security Hub CSPM API.
+On the Security Hub console, the notebook instance involved in an exposure finding and its identifying information are listed in the **Resources** section of the finding details. Programmatically, you can retrieve resource details with the [GetFindingsV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingsV2.html) operation of the Security Hub CSPM API.
 
 After identifying the resource involved in an exposure finding, you can delete the resource if you don't need it. Deleting a nonessential resource can reduce your exposure profile and AWS costs. If the resource is essential, follow these recommended remediation steps to help mitigate the risk. The remediation topics are divided based on the type of trait.
 
@@ -46,7 +46,10 @@ Here are misconfiguration traits for Amazon SageMaker notebook instances and sug
 ### The Amazon SageMaker notebook instance has direct internet access enabled
 <a name="outbound-internet-enabled"></a>
 
- When `DirectInternetAccess` is enabled on an Amazon SageMaker notebook instance, outbound traffic is routed through a SageMaker-managed network address translation (NAT) gateway to the internet. This provides an egress path that can be used for data exfiltration or as a command-and-control channel if the notebook is compromised. Following security best practices, AWS recommends disabling direct internet access and placing notebook instances in a VPC with VPC endpoints for required AWS services.
+ When `DirectInternetAccess` is enabled on an Amazon SageMaker notebook instance, outbound traffic is routed through a SageMaker-managed network address translation (NAT) gateway to the internet. This provides an egress path that can be used for data exfiltration or as a command-and-control channel if the notebook is compromised. Following security best practices, disable direct internet access and place notebook instances in a VPC with VPC endpoints for required AWS services.
+
+**Remediation**
+Take one or more of the following actions to address this exposure:
 
 **Disable direct internet access**
  The `DirectInternetAccess` setting cannot be changed after a notebook instance is created. To disable it, create a new notebook instance with `DirectInternetAccess` set to `Disabled` in a private subnet within a VPC, then migrate your notebooks and data from the existing instance. For instructions, see [Connect a notebook instance in a VPC to external resources](https://docs.aws.amazon.com/sagemaker/latest/dg/appendix-notebook-and-internet-access.html) in the *Amazon SageMaker Developer Guide*.
@@ -57,9 +60,9 @@ Here are misconfiguration traits for Amazon SageMaker notebook instances and sug
 ### The Amazon SageMaker notebook instance has root access enabled
 <a name="notebook-root-access-enabled"></a>
 
- When `RootAccess` is enabled on an Amazon SageMaker notebook instance, users have full OS-level root privileges. Root access allows arbitrary system modifications, persistent backdoors, and unrestricted package installation. Following security best practices, AWS recommends disabling root access for notebook instances unless it is explicitly required for your workflow.
+ When `RootAccess` is enabled on an Amazon SageMaker notebook instance, users have full OS-level root privileges. Root access allows arbitrary system modifications, persistent backdoors, and unrestricted package installation. Following security best practices, disable root access for notebook instances unless it is explicitly required for your workflow.
 
-**Disable root access**
+**Remediation: Disable root access**
  You cannot change the `RootAccess` setting on a running notebook instance. To disable it, stop the instance, then update the instance configuration to set `RootAccess` to `Disabled`. Most notebook workflows, including installing packages with `pip` and running lifecycle configurations, continue to work without root access. For instructions, see [Control root access to a Amazon SageMaker notebook instance](https://docs.aws.amazon.com/sagemaker/latest/dg/nbi-root-access.html) in the *Amazon SageMaker Developer Guide*.
 
 **Additional considerations**
@@ -70,7 +73,7 @@ Here are misconfiguration traits for Amazon SageMaker notebook instances and sug
 
 Impact traits describe the potential blast radius of an exposure. Security Hub analyzes the effective permissions of the AWS Identity and Access Management principal associated with the SageMaker notebook instance to determine the downstream resources an attacker could reach if the notebook instance is compromised. Each impact trait identifies a specific privilege escalation pattern. To reduce your blast radius, review the permission paths described in each trait and remove any unnecessary privileges.
 
-Following standard security principles, AWS recommends that you grant least privilege — only the permissions required to perform a task. Replace broad policies with scoped-down policies that grant only the specific actions and resources needed. To identify unused permissions to remove, use IAM Access Analyzer to generate recommendations based on access history. For more information, see [Findings for external and unused access](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-findings.html) and [Apply least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege) in the *IAM User Guide*.
+Following standard security principles, grant least privilege by providing only the permissions required to perform a task. Replace broad policies with scoped-down policies that grant only the specific actions and resources needed. To identify unused permissions to remove, use IAM Access Analyzer to generate recommendations based on access history. For more information, see [Findings for external and unused access](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-findings.html) and [Apply least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege) in the *IAM User Guide*.
 
 ### Full control privileged executor
 <a name="full-control-privileged-executor"></a>

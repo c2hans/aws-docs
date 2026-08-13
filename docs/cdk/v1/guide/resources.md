@@ -372,7 +372,7 @@ Vpc.FromVpcAttributes(this, "MyVpc", new VpcAttributes
 
 ------
 
-Let's take a closer look at the [https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_aws-ec2.Vpc.html#static-fromwbrlookupscope-id-options](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_aws-ec2.Vpc.html#static-fromwbrlookupscope-id-options) method. Because the `ec2.Vpc` construct is complex, there are many ways you might want to select the VPC to be used with your CDK app. To address this, the VPC construct has a `fromLookup` static method (Python: `from_lookup`) that lets you look up the desired Amazon VPC by querying your AWS account at synthesis time.
+Let's take a closer look at the [`Vpc.fromLookup()`](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_aws-ec2.Vpc.html#static-fromwbrlookupscope-id-options) method. Because the `ec2.Vpc` construct is complex, there are many ways you might want to select the VPC to be used with your CDK app. To address this, the VPC construct has a `fromLookup` static method (Python: `from_lookup`) that lets you look up the desired Amazon VPC by querying your AWS account at synthesis time.
 
 To use `Vpc.fromLookup()`, the system that synthesizes the stack must have access to the account that owns the Amazon VPC, since the CDK Toolkit queries the account to find the right Amazon VPC at synthesis time.
 

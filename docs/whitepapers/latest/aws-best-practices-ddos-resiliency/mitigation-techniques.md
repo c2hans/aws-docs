@@ -31,13 +31,13 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
   <tr><th> </th><th colspan="3"> AWS Edge</th><th colspan="3">AWS Region </th></tr>
 </thead>
 <tbody>
-  <tr><td> </td><td> Using Amazon CloudFront (BP1) with AWS WAF (BP2) </td><td> Using Global Accelerator (BP1) </td><td> Using Amazon Route 53 (BP3) </td><td> Using Elastic Load Balancing (BP6) with AWS WAF (BP2) </td><td> Using security groups and network ACLs in Amazon VPC (BP5) </td><td> Using [Amazon Elastic Compute Cloud (Amazon EC2) Auto Scaling](https://aws.amazon.com/pm/ec2/) (BP7)</td></tr>
+  <tr><td> </td><td> Using Amazon CloudFront (BP1) with AWS WAF (BP2) </td><td> Using Global Accelerator (BP1) </td><td> Using Amazon Route 53 (BP3) </td><td> Using Elastic Load Balancing (BP6) with AWS WAF (BP2) </td><td> Using security groups and network ACLs in Amazon VPC (BP5) </td><td> Using <a href="https://aws.amazon.com/pm/ec2/">Amazon Elastic Compute Cloud (Amazon EC2) Auto Scaling</a> (BP7)</td></tr>
   <tr><td> Layer 3 (for example, UDP reflection) attack mitigation </td><td> ✔ </td><td> ✔ </td><td> ✔ </td><td> ✔ </td><td> ✔ </td><td> ✔ </td></tr>
   <tr><td> Layer 4 (for example, SYN flood) attack mitigation </td><td> ✔ </td><td> ✔ </td><td> ✔ </td><td> ✔ </td><td> </td><td> </td></tr>
   <tr><td> Layer 6 (for example, TLS) attack mitigation </td><td> ✔ </td><td> ✔ </td><td> ✔ </td><td> ✔ </td><td> </td><td> </td></tr>
   <tr><td> Reduce attack surface </td><td> ✔ </td><td> ✔ </td><td> ✔ </td><td> ✔ </td><td> ✔ </td><td> </td></tr>
   <tr><td> Scale to absorb application layer traffic </td><td> ✔ </td><td> ✔ </td><td> ✔ </td><td> ✔ </td><td> ✔ </td><td> ✔ </td></tr>
-  <tr><td> Layer 7 (application layer) attack mitigation </td><td> ✔ </td><td> ✔(\*) </td><td> ✔ </td><td> ✔ </td><td> ✔(\*) </td><td> ✔(\*) </td></tr>
+  <tr><td> Layer 7 (application layer) attack mitigation </td><td> ✔ </td><td> ✔(*) </td><td> ✔ </td><td> ✔ </td><td> ✔(*) </td><td> ✔(*) </td></tr>
   <tr><td> Geographic isolation and dispersion of excess traffic and larger DDoS attacks </td><td> ✔ </td><td> ✔ </td><td> ✔ </td><td> </td><td> </td><td> </td></tr>
 </tbody>
 </table>

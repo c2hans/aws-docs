@@ -26,7 +26,7 @@ You can establish a per period budget that refreshes periodically, a lifetime bu
 
 The following topics describe how to associate a configured table and apply a data access budget to a collaboration using the AWS Clean Rooms console.
 
-For information about how to associate your configured tables to the collaboration using the AWS SDKs, see the [https://docs.aws.amazon.com/clean-rooms/latest/apireference/Welcome.html](https://docs.aws.amazon.com/clean-rooms/latest/apireference/Welcome.html).
+For information about how to associate your configured tables to the collaboration using the AWS SDKs, see the [*AWS Clean Rooms API Reference*](https://docs.aws.amazon.com/clean-rooms/latest/apireference/Welcome.html).
 
 ### Step 1: Complete the prerequisites
 <a name="associate-config-table-prereq"></a>

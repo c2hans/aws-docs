@@ -10,6 +10,7 @@ AWS Marketplace maintains the following requirements for all container-based pro
 All products and their related metadata are reviewed when submitted to ensure they meet or exceed current AWS Marketplace policies. These policies are regularly updated to align with evolving security guidelines. AWS Marketplace continuously scans products to verify that existing listings continue to meet any changes to these requirements. If a product falls out of compliance, AWS Marketplace will contact the seller to update their product to meet new standards. In some cases, products might be temporarily made unavailable to new subscribers until issues are resolved. This process helps maintain the security and trustworthiness of the AWS Marketplace platform for all users.
 
 **Topics**
++ [Container product seller policies](#container-product-seller-policies)
 + [Security policies](#container-security-requirements)
 + [Customer information requirements](#container-customer-info-requirements)
 + [Product usage requirements](#container-usage-requirements)
@@ -17,6 +18,12 @@ All products and their related metadata are reviewed when submitted to ensure th
 + [Helm chart structure requirements](#helm-chart-structure-requirements)
 + [Container product usage instructions](#container-product-usage-instructions)
 + [Requirements for Amazon EKS add-on products](#publishing-eks-add-on)
+
+## Container product seller policies
+<a name="container-product-seller-policies"></a>
+
+As a container product seller, you must adhere to the following policies:
++ By default, you are limited to a maximum of 20 public container product listings. If you exceed your limit, your account is subject to periodic performance review, and you might be required to restrict underperforming listings. We grant or revoke increases to this limit at our sole discretion.
 
 ## Security policies
 <a name="container-security-requirements"></a>

@@ -256,7 +256,7 @@ In the following example, both of the required fields for Service Connect and VP
 `protocol`
 Type: String
 Required: No
-The protocol that's used for the port mapping. Valid values are `tcp` and `udp`. The default is `tcp`.
+The protocol that's used for the port mapping. Valid values are `tcp` and `udp` (case-sensitive). The default is `tcp`. Amazon Amazon ECS treats any other specified value as `tcp`.
 Only `tcp` is supported for Service Connect. Remember that `tcp` is implied if this field isn't set.
 If you're specifying a host port, use the following syntax.
 
@@ -425,7 +425,7 @@ The command that's passed to the container. This parameter maps to `Cmd` in the 
 `workingDirectory`
 Type: String
 Required: No
-The working directory to run commands inside the container in. This parameter maps to `WorkingDir` in the [Create a container](https://docs.docker.com/reference/api/engine/version/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/reference/api/engine/version/v1.38/) and the `--workdir` option to [https://docs.docker.com/reference/cli/docker/container/run/](https://docs.docker.com/reference/cli/docker/container/run/).
+The working directory to run commands inside the container in. This parameter maps to `WorkingDir` in the [Create a container](https://docs.docker.com/reference/api/engine/version/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/reference/api/engine/version/v1.38/) and the `--workdir` option to [**docker run**](https://docs.docker.com/reference/cli/docker/container/run/).
 
 ```
 "workingDirectory": "string"

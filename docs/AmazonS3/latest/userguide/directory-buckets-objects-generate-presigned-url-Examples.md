@@ -16,4 +16,4 @@ The following example command shows how you can use the AWS CLI to generate a pr
 aws s3 presign s3://{{bucket-base-name}}--{{zone-id}}--x-s3/{{KEY_NAME}} --expires-in 7200
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/presign.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/presign.html) in the *AWS CLI Command Reference*.
+For more information, see [presign](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/presign.html) in the *AWS CLI Command Reference*.

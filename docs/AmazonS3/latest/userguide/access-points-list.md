@@ -39,9 +39,9 @@ The following command lists access points for AWS account {{111122223333}} that 
 aws s3control list-access-points --account-id {{111122223333}} --bucket {{amzn-s3-demo-bucket}}
 ```
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/list-access-points.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/list-access-points.html) in the *AWS CLI Command Reference*.
+For more information and examples, see [list-access-points](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/list-access-points.html) in the *AWS CLI Command Reference*.
 
 ## Using the REST API
 <a name="access-points-list-rest"></a>
 
-You can use the REST API to list your access points. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAccessPoints.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAccessPoints.html) in the *Amazon Simple Storage Service API Reference*.
+You can use the REST API to list your access points. For more information, see [ListAccessPoints](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAccessPoints.html) in the *Amazon Simple Storage Service API Reference*.

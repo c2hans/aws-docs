@@ -121,8 +121,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.4.20240429 version:** 6.1.87-99.174.amzn2023
   - **AL2023.4.20240513 version:** 6.1.90-99.173.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
+- ** [`php8.1`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
+  - **RPM:**  [`php8.1`](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.1-bcmath  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.1-cli  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.1-common  / **Architectures:** aarch64, x86\_64
@@ -153,8 +153,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.4.20240429 version:** 8.1.27-1.amzn2023.0.2
   - **AL2023.4.20240513 version:** 8.1.28-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  / **Architectures:** aarch64, x86\_64
+- ** [`python3.11`](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
+  - **RPM:**  [`python3.11`](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.11-debug  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.11-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.11-idle  / **Architectures:** aarch64, x86\_64
@@ -164,7 +164,7 @@ The full comparison of RPM package versions is below.
   - **AL2023.4.20240429 version:** 3.11.6-1.amzn2023.0.2
   - **AL2023.4.20240513 version:** 3.11.6-1.amzn2023.0.3
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
+- ** [`python3.9`](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
   - **RPM:**  python3  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3-debug  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3-devel  / **Architectures:** aarch64, x86\_64

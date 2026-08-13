@@ -76,7 +76,7 @@ To identify channels in a batch transcription, you can use the **AWS Management 
 ### AWS CLI
 <a name="channel-id-cli"></a>
 
-This example uses the [start-transcription-job](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/start-transcription-job.html). For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html).
+This example uses the [start-transcription-job](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/start-transcription-job.html). For more information, see [`StartTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html).
 
 ```
 aws transcribe start-transcription-job \
@@ -178,7 +178,7 @@ Parameter definitions can be found in the [API Reference](https://docs.aws.amazo
 ### WebSocket stream
 <a name="channel-id-websocket"></a>
 
-This example creates a presigned URL that separates channels in your transcription output. Line breaks have been added for readability. For more information on using WebSocket streams with Amazon Transcribe, see [Setting up a WebSocket stream](streaming-setting-up.md#streaming-websocket). For more detail on parameters, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartStreamTranscription.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartStreamTranscription.html).
+This example creates a presigned URL that separates channels in your transcription output. Line breaks have been added for readability. For more information on using WebSocket streams with Amazon Transcribe, see [Setting up a WebSocket stream](streaming-setting-up.md#streaming-websocket). For more detail on parameters, see [`StartStreamTranscription`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartStreamTranscription.html).
 
 ```
 GET wss://transcribestreaming.{{us-west-2}}.amazonaws.com:8443/stream-transcription-websocket?

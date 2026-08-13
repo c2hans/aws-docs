@@ -52,8 +52,8 @@ Before you can use IAM to delete the `AWSServiceRoleForSSMQuickSetup` service-li
 
 Use the IAM console, the AWS CLI, or the AWS API to delete the `AWSServiceRoleForSSMQuickSetup` service-linked role. For more information, see the following topics:
 + [Deleting a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#delete-service-linked-role) in the *IAM User Guide*
-+ [https://docs.aws.amazon.com/cli/latest/reference/ssm-quicksetup/delete-configuration-manager.html](https://docs.aws.amazon.com/cli/latest/reference/ssm-quicksetup/delete-configuration-manager.html) in the Quick Setup section of the *AWS CLI Reference*
-+ [https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_DeleteConfigurationManager.html](https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_DeleteConfigurationManager.html) in the *Quick Setup API Reference*
++ [delete-configuration-manager](https://docs.aws.amazon.com/cli/latest/reference/ssm-quicksetup/delete-configuration-manager.html) in the Quick Setup section of the *AWS CLI Reference*
++ [DeleteConfigurationManager](https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_DeleteConfigurationManager.html) in the *Quick Setup API Reference*
 
 ## Supported Regions for the Systems Manager  `AWSServiceRoleForSSMQuickSetup` service-linked role
 <a name="slr-regions-service-action-5"></a>

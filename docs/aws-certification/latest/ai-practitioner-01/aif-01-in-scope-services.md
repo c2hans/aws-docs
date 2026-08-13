@@ -67,7 +67,6 @@ The following list contains AWS services and features that are in scope for the 
 + Amazon Bedrock
 + Amazon Bedrock AgentCore
 + Amazon Comprehend
-+ Amazon Kendra
 + Amazon Lex
 + Amazon Nova
 + Amazon Personalize
@@ -96,7 +95,6 @@ The following list contains AWS services and features that are in scope for the 
 ## Security, Identity, and Compliance
 <a name="aif-01-in-scope-security"></a>
 + AWS Artifact
-+ AWS Audit Manager
 + AWS Identity and Access Management (IAM)
 + Amazon Inspector
 + AWS Key Management Service (AWS KMS)

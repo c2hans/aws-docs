@@ -11,18 +11,18 @@ In Security Hub CSPM, the customer always controls which partners can send findi
 
 To enable a partner to send security findings to their account, the customer first subscribes to the partner product in Security Hub CSPM. The subscription step is necessary for all of the use cases that are outlined below. For details on how customers manage product integrations, see [Managing product integrations](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-integrations-managing.html) in the *AWS Security Hub User Guide*.
 
-After a customer subscribes to a partner product, Security Hub CSPM automatically creates a managed resource policy. The policy grants the partner product permission to use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation to send findings to Security Hub CSPM for the customer’s account.
+After a customer subscribes to a partner product, Security Hub CSPM automatically creates a managed resource policy. The policy grants the partner product permission to use the [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation to send findings to Security Hub CSPM for the customer’s account.
 
 Here are the common cases for partner products that integrate with Security Hub CSPM. The information includes the additional permissions required for each use case.
 
 ## Partner hosted: findings sent from partner account
 <a name="partner-hosted-from-partner-account"></a>
 
-This use case covers partners who host a product in their own AWS account. To send security findings for an AWS customer, the partner calls the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation from the partner product account.
+This use case covers partners who host a product in their own AWS account. To send security findings for an AWS customer, the partner calls the [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation from the partner product account.
 
 For this use case, the customer account only needs the permissions that are established when the customer subscribes to the partner product.
 
-In the partner account, the IAM principal that calls the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation must have an IAM policy that allows the principal to call [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html).
+In the partner account, the IAM principal that calls the [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation must have an IAM policy that allows the principal to call [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html).
 
 Enabling a partner product to send findings to the customer in Security Hub CSPM is a two-step process:
 
@@ -30,7 +30,7 @@ Enabling a partner product to send findings to the customer in Security Hub CSPM
 
 1. Security Hub CSPM generates the correct managed resource policy with the customer's confirmation.
 
-To send security findings related to the customer’s account, the partner product uses their own credentials to call the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation.
+To send security findings related to the customer’s account, the partner product uses their own credentials to call the [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation.
 
 Here is an example of an IAM policy that grants the principal in the partner account the necessary Security Hub CSPM permissions.
 
@@ -58,9 +58,9 @@ Here is an example of an IAM policy that grants the principal in the partner acc
 ## Partner hosted: findings sent from the customer account
 <a name="partner-hosted-from-customer-account"></a>
 
-This use case covers partners who host a product in their own AWS account, but use a cross-account role to access the customer's account. They call the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation from the customer’s account.
+This use case covers partners who host a product in their own AWS account, but use a cross-account role to access the customer's account. They call the [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation from the customer’s account.
 
-For this use case, to call the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation, the partner account assumes a customer managed IAM role in the customer's account.
+For this use case, to call the [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation, the partner account assumes a customer managed IAM role in the customer's account.
 
 This call is made from the customer's account. Therefore, the managed resource policy must allow the product ARN for the partner product's account to be used in the call. The Security Hub CSPM managed resource policy grants permission for the partner product account and the partner product ARN. The product ARN is the partner's unique identifier as a provider. Because the call does not come from the partner product account, the customer must explicitly grant permission for the partner product to send findings to Security Hub CSPM.
 
@@ -80,7 +80,7 @@ Next, the product sends findings to Security Hub CSPM:
 
 1. The product calls the AWS Security Token Service (AWS STS) to assume the customer role.
 
-1. The product calls the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation on Security Hub CSPM with the assumed role's temporary credentials.
+1. The product calls the [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation on Security Hub CSPM with the assumed role's temporary credentials.
 
 Here is an example of an IAM policy that grants the necessary Security Hub CSPM permissions to the partner's cross-account role.
 
@@ -110,11 +110,11 @@ The `Resource` section of the policy identifies the specific product subscriptio
 ## Customer hosted: findings sent from customer account
 <a name="customer-hosted-from-customer-account"></a>
 
-This use case covers partners that have a product that is deployed in the customer’s AWS account. The [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API is called from the solution that runs in the customer’s account.
+This use case covers partners that have a product that is deployed in the customer’s AWS account. The [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API is called from the solution that runs in the customer’s account.
 
-For this use case, the partner product must be granted additional permissions to call the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API. How this permission is granted differs based on the partner solution and how it is configured in the customer’s account.
+For this use case, the partner product must be granted additional permissions to call the [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API. How this permission is granted differs based on the partner solution and how it is configured in the customer’s account.
 
-An example of this approach is a partner product that runs on an EC2 instance in the customer’s account. This EC2 instance must have an EC2 instance role attached to it that grants that instance the ability to call the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation. This allows the EC2 instance to send security findings to the customer’s account.
+An example of this approach is a partner product that runs on an EC2 instance in the customer’s account. This EC2 instance must have an EC2 instance role attached to it that grants that instance the ability to call the [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation. This allows the EC2 instance to send security findings to the customer’s account.
 
 This use case is functionally equivalent to a scenario where a customer loads findings into their account for a product that they own.
 
@@ -128,9 +128,9 @@ The customer enables the partner product to send findings from the customer's ac
 
 Now the product can send findings to Security Hub CSPM:
 
-1. The partner product uses the AWS SDK or AWS CLI to call the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation in Security Hub CSPM. It makes the call from the component in the customer’s account where the policy is attached.
+1. The partner product uses the AWS SDK or AWS CLI to call the [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation in Security Hub CSPM. It makes the call from the component in the customer’s account where the policy is attached.
 
-1. During the API call, the necessary temporary credentials are generated to allow the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) call to succeed.
+1. During the API call, the necessary temporary credentials are generated to allow the [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) call to succeed.
 
 Here is an example of an IAM policy that grants the necessary Security Hub CSPM permissions to the partner product in the customer account.
 

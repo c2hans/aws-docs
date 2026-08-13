@@ -30,7 +30,7 @@ This policy includes the following permissions.
 + `codedeploy` – Allows principals to read AWS CodeDeploy deployments. This is required for Incident Manager to identify CodeDeploy deployments and targets related to an incident.
 + `autoscaling` – Allows principals to determine if an Amazon Elastic Compute Cloud (EC2) instance is part of an Auto Scaling group. This is needed so Incident Manager can provide findings for EC2 instances that are part of Auto Scaling groups.
 
-To view more details about the policy, including the latest version of the JSON policy document, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIncidentManagerIncidentAccessServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIncidentManagerIncidentAccessServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
+To view more details about the policy, including the latest version of the JSON policy document, see [AWSIncidentManagerIncidentAccessServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIncidentManagerIncidentAccessServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
 
 ## AWS managed policy: `AWSIncidentManagerServiceRolePolicy`
 <a name="security-iam-awsmanpol-AWSServiceRoleforIncidentManagerPolicy"></a>
@@ -48,7 +48,7 @@ This policy includes the following permissions.
 + `ssm-contacts` – Allows principals to start engagements. This is required for Incident Manager to engage contacts during an incident.
 + `cloudwatch` – Allows principals to publish CloudWatch metrics. This is required for Incident Manager to publish metrics related to an incident and usage metrics.
 
-To view more details about the policy, including the latest version of the JSON policy document, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIncidentManagerServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIncidentManagerServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
+To view more details about the policy, including the latest version of the JSON policy document, see [AWSIncidentManagerServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIncidentManagerServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
 
 ## AWS managed policy: `AWSIncidentManagerResolverAccess`
 <a name="security-iam-awsmanpol-AWSIncidentManagerResolverAccess"></a>
@@ -62,7 +62,7 @@ This policy includes the following permissions.
 + `ssm-incidents` – Allows principals to start incidents, list response plans, list incidents, update incidents, list timeline events, create custom timeline events, update custom timeline events, delete custom timeline events, list related items, create related items, and update related items.
 + `ssm-contacts` – Allows principals to start engagements with contacts during incident creation.
 
-To view more details about the policy, including the latest version of the JSON policy document, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIncidentManagerResolverAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIncidentManagerResolverAccess.html) in the *AWS Managed Policy Reference Guide*.
+To view more details about the policy, including the latest version of the JSON policy document, see [AWSIncidentManagerResolverAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIncidentManagerResolverAccess.html) in the *AWS Managed Policy Reference Guide*.
 
 ## Incident Manager updates to AWS managed policies
 <a name="security-iam-awsmanpol-updates"></a>

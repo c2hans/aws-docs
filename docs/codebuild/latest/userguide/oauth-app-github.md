@@ -20,13 +20,13 @@ To use the console to connect your project to GitHub using an OAuth app, do the 
      1. For **Credential type**, choose **OAuth app**.
    + If you chose to use account level credentials for **Service**, choose which service you'd like to use to store your token and do the following:
 
-     1. If you choose to use **Secrets Manager**, you can choose to use an existing secret connection or create a new secret, and then choose **Save**. For more information how to create a new secret, see [Create and store a token in a Secrets Manager secret](asm-create-secret.md).
+     1. If you choose to use **Secrets Manager**, you can choose to use an existing secret connection or create a new secret, and then choose **Save**. For more information about how to create a new secret, see [Create and store a token in a Secrets Manager secret](asm-create-secret.md).
 
      1. If you choose to use **CodeBuild** and then choose **Save**.
    + Select **Use override credentials for this project only** to use a custom source credential to override your account's credential settings.
 
      1. From the populated credential list, choose one of the options under **OAuth app**.
 
-     1. You can also create new OAuth app token by selecting **create a new Oauth app token connection** in the description.
+     1. You can also create a new OAuth app token by selecting **create a new Oauth app token connection** in the description.
 
 To review your authorized OAuth apps, navigate to [Applications](https://github.com/settings/applications) on GitHub, and verify that an application named `AWS CodeBuild ({{region}})` owned by [aws-codesuite](https://github.com/aws-codesuite) is listed.

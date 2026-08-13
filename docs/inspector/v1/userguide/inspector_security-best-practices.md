@@ -94,7 +94,7 @@ An EC2 instance in your assessment target is not configured for a minimum length
 
 **Resolution**
 If you are using passwords, we recommend that you configure a minimum length for passwords on all EC2 instances in your assessment target. Enforcing a minimum password length reduces the risk of a successful password guessing attack. You can do this by using the following option in the `pwquality.conf` file: `minlen`. For more information, see see [https://linux.die.net/man/5/pwquality.conf](https://linux.die.net/man/5/pwquality.conf).
-If `pwquality.conf` is not available on your instance, you can set the `minlen` option using the `pam_cracklib.so` module. For more information, see [https://linux.die.net/man/8/pam_cracklib](https://linux.die.net/man/8/pam_cracklib).
+If `pwquality.conf` is not available on your instance, you can set the `minlen` option using the `pam_cracklib.so` module. For more information, see [`man pam_cracklib`](https://linux.die.net/man/8/pam_cracklib).
 The `minlen` option should be set to 14 or greater.
 
 ## Configure password complexity
@@ -110,10 +110,10 @@ No password complexity mechanism or restrictions are configured on EC2 instances
 
 **Resolution**
 If you are using passwords, we recommend that you configure all EC2 instances in your assessment target to require a level of password complexity. You can do this by using the following options in the `pwquality.conf` file: `lcredit`, `ucredit`, `dcredit`, and `ocredit`. For more information, see [https://linux.die.net/man/5/pwquality.conf](https://linux.die.net/man/5/pwquality.conf) .
-If `pwquality.conf` is not available on your instance, you can set the `lcredit`, `ucredit`, `dcredit`, and `ocredit` options using the `pam_cracklib.so` module. For more information, see [https://linux.die.net/man/8/pam_cracklib](https://linux.die.net/man/8/pam_cracklib).
+If `pwquality.conf` is not available on your instance, you can set the `lcredit`, `ucredit`, `dcredit`, and `ocredit` options using the `pam_cracklib.so` module. For more information, see [`man pam_cracklib`](https://linux.die.net/man/8/pam_cracklib).
 The expected value for each of these options is less than or equal to -1, as shown below:
 `lcredit <= -1, ucredit <= -1, dcredit<= -1, ocredit <= -1`
-Additionally, the `remember` option must be set to 12 or greater. For more information, see [https://linux.die.net/man/8/pam_unix](https://linux.die.net/man/8/pam_unix).
+Additionally, the `remember` option must be set to 12 or greater. For more information, see [`man pam_unix`](https://linux.die.net/man/8/pam_unix).
 
 ## Enable ASLR
 <a name="ASLR"></a>

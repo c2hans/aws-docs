@@ -40,7 +40,7 @@ You provide the current configuration in one of two ways:
 ## Agent trace sources
 <a name="recommendations-trace-sources"></a>
 
-The `agentTraces` parameter accepts one of two sources:
+The `agentTraces` parameter accepts one of four sources:
 +  **CloudWatch Logs:** Use when your agent runtime writes telemetry to CloudWatch. The service reads traces directly from the specified log groups within a required time range. You must provide `logGroupArns`, `serviceNames`, `startTime`, and `endTime`. An optional `rule` field allows you to filter traces (for example, selecting only sessions where `goal_success_rate` is below a threshold).
 **Note**
 The recommendations API uses log group **ARNs** (`logGroupArns`), not log group **names**. This differs from batch evaluations, which use `logGroupNames`.
@@ -148,6 +148,49 @@ The recommendations API uses log group **ARNs** (`logGroupArns`), not log group 
 
   agent_traces = {
       "sessionSpans": spans
+  }
+  ```
+
+------
+
+**Note**
+The batch evaluation and online evaluation trace sources are available for system prompt recommendations only.
++  **Batch evaluation:** Use when you have a completed batch evaluation job whose sessions you want to reuse for optimization. Instead of re-collecting traces from CloudWatch or providing spans inline, you reference the batch evaluation directly by its ARN. This source is available for system prompt recommendations only.
+  + If the evaluators used in the batch evaluation job match the evaluators specified in the recommendation request, the service reuses the existing scores.
+  + If the evaluators do not match, the service runs fresh evaluations for the requested evaluators against the batch evaluation sessions.
+[See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/optimization-recommendations.html)
+**Example**
+
+------
+#### [  AWS SDK (boto3) ]
+
+    ```
+    agent_traces = {
+        "batchEvaluation": {
+            "batchEvaluationArn": "<batch-evaluation-arn>"
+        }
+    }
+    ```
+
+------
++  **Online evaluation:** Use when you have an online evaluation configuration that continuously evaluates live agent sessions. Because online evaluation is a continuous stream, you must specify a time window (`startTime` and `endTime`) to bound which evaluated sessions the recommendation draws from. The service reuses the evaluation scores from the online evaluation sessions within the specified window. This source is available for system prompt recommendations only.
+[See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/optimization-recommendations.html)
+**Example**
+
+------
+#### [  AWS SDK (boto3) ]
+
+  ```
+  from datetime import datetime, timedelta, timezone
+
+  now = datetime.now(timezone.utc)
+
+  agent_traces = {
+      "onlineEvaluation": {
+          "onlineEvaluationConfigArn": "<online-evaluation-config-arn>",
+          "startTime": now - timedelta(days=7),
+          "endTime": now,
+      }
   }
   ```
 

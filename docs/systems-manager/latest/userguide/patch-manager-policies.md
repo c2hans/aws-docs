@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 
 AWS recommends the use of *patch policies* to configure patching for your organization and AWS accounts. Patch policies were introduced in Patch Manager in December, 2022.
 
-A patch policy is a configuration you set up using Quick Setup, a tool in AWS Systems Manager. Patch policies provide more extensive and more centralized control over your patching operations than is available with previous methods of configuring patching. Patch policies can be used with [all operating systems supported by Patch Manager](patch-manager-prerequisites.md#pm-prereqs), including supported versions of Linux, macOS, and Windows Server. For instructions for creating a patch policy, see [Configure patching for instances in an organization using a Quick Setup patch policy](quick-setup-patch-manager.md).
+A patch policy is a configuration you set up using Quick Setup. Patch policies provide more extensive and more centralized control over your patching operations than is available with previous methods of configuring patching. Patch policies can be used with [all operating systems supported by Patch Manager](patch-manager-prerequisites.md#pm-prereqs), including supported versions of Linux, macOS, and Windows Server. For instructions for creating a patch policy, see [Configure patching for instances in an organization using a Quick Setup patch policy](quick-setup-patch-manager.md).
 
 ## Major features of patch policies
 <a name="patch-policies-about-major-features"></a>

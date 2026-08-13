@@ -49,7 +49,7 @@ To add a package version by using the **Simple** workflow, prepare updated insta
 
 1. For **S3 key prefix**, enter the subfolder of the bucket where your installable assets are stored.
 
-1. For **Upload software**, navigate to the installable software files that you want to attach to the new version. Installable files from existing versions aren't automatically copied over to a new version; you must upload any installable files from older versions of the package if you want any of the same installable files to be part of the new version. You can upload more than one software file in a single action.
+1. For **Upload software**, navigate to the installable software files for the new version. Files from existing versions aren't copied to the new version automatically. Upload files from older versions if you want them in the new version. You can upload more than one file in a single action.
 
 1. For **Target platform**, verify that the target operating system platform shown for each installable file is correct. If the operating system shown isn't correct, choose the correct operating system from the dropdown list.
 
@@ -145,4 +145,4 @@ You can use the AWS CLI to add a new package version to Distributor. Before you 
        --document-version "{{document-version}}"
    ```
 
-For information about other options you can use with the **update-document** command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/update-document.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/update-document.html) in the AWS Systems Manager section of the *AWS CLI Command Reference*.
+For information about other options you can use with the **update-document** command, see [**update-document**](https://docs.aws.amazon.com/cli/latest/reference/ssm/update-document.html) in the AWS Systems Manager section of the *AWS CLI Command Reference*.

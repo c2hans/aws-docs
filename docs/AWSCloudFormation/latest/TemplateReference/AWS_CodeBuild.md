@@ -8,6 +8,8 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_CodeBuild"></a>
 
 **Resource types**
++ [AWS::CodeBuild::Build](aws-resource-codebuild-build.md)
++ [AWS::CodeBuild::BuildBatch](aws-resource-codebuild-buildbatch.md)
 + [AWS::CodeBuild::Fleet](aws-resource-codebuild-fleet.md)
 + [AWS::CodeBuild::Project](aws-resource-codebuild-project.md)
 + [AWS::CodeBuild::ReportGroup](aws-resource-codebuild-reportgroup.md)

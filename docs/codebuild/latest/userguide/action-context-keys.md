@@ -63,7 +63,7 @@ This policy allows the caller to use the selected VPCs, subnets, and security gr
 This policy does not allow the caller to override the buildspec in the `buildspecOverride` field.
 
 **Note**
-The `codebuild:source.buildspec` condition key supports only the Null operator to check the existence of the API field. It doesn’t evaluate the content of the buildspec.
+The `codebuild:source.buildspec` condition key supports only the Null operator to check the existence of the API field. It doesn't evaluate the content of the buildspec.
 
 ------
 #### [ JSON ]

@@ -19,7 +19,7 @@ Before deploying the ALB \+ ECS Fargate template, you must complete the followin
 
 1. Sign in to the AWS Management Console and select the button to launch the CloudFormation template.
 
-    [https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/distributed-load-testing-on-aws/latest/distributed-load-testing-on-aws-alb-ecs.template&redirectId=ImplementationGuide](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/distributed-load-testing-on-aws/latest/distributed-load-testing-on-aws-alb-ecs.template&redirectId=ImplementationGuide)
+    [![Launch solution with the ALB + ECS Fargate template](http://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/distributed-load-testing-on-aws/latest/distributed-load-testing-on-aws-alb-ecs.template&redirectId=ImplementationGuide)
 
    Alternatively, you can [download the template](https://solutions-reference.s3.amazonaws.com/distributed-load-testing-on-aws/latest/distributed-load-testing-on-aws-alb-ecs.template) as a starting point for your own implementation.
 

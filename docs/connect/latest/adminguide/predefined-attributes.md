@@ -30,7 +30,7 @@ You can create and manage predefined attributes manually by using the Connect Cu
 + An attribute can only be deleted if it not associated with any agent.
 
   Before deleting an attribute, ensure none of the contacts are waiting for an agent with that attribute or the contact will not find a match.
-+ For the quota for predefined attributes allowed in an Connect Customer instance, see [Connect Customer quotas](amazon-connect-service-limits.md#connect-quotas).
++ For the quota for predefined attributes allowed in a Connect Customer instance, see [Connect Customer quotas](amazon-connect-service-limits.md#connect-quotas).
 
 ## System predefined attributes
 <a name="sytem-predefined-attributes"></a>

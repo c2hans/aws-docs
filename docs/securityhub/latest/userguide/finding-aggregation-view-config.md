@@ -35,9 +35,9 @@ If cross-Region aggregation is enabled, then the **Regions** tab displays the fo
 
 **To review cross-Region aggregation settings (Security Hub CSPM API)**
 
-Use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingAggregator.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingAggregator.html) operation of the Security Hub CSPM API. If you use the AWS CLI, run the [get-finding-aggregator](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-finding-aggregator.html) command.
+Use the [`GetFindingAggregator`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingAggregator.html) operation of the Security Hub CSPM API. If you use the AWS CLI, run the [get-finding-aggregator](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-finding-aggregator.html) command.
 
-When you make the request, provide the finding aggregator ARN. To obtain the finding aggregator ARN, use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListFindingAggregators.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListFindingAggregators.html) operation or [list-finding-aggregators](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-finding-aggregators.html) command.
+When you make the request, provide the finding aggregator ARN. To obtain the finding aggregator ARN, use the [`ListFindingAggregators`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListFindingAggregators.html) operation or [list-finding-aggregators](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-finding-aggregators.html) command.
 
 The following example shows the cross-Region aggregation settings for the specified finding aggregator ARN. This example is formatted for Linux, macOS, or Unix, and it uses the backslash (\\) line-continuation character to improve readability
 

@@ -178,7 +178,7 @@ Logs
 + Windows: **Event Viewer**, then **Applications and Services Logs** and then **Microsoft-Windows-DeviceManagement**.
 + Workspace ONE UEM: **Monitor**, then **Reports & Analytics**, then **Events**, and then **Device Events**.
 
-For detailed Connector for SCEP monitoring in AWS, see [https://docs.aws.amazon.com/privateca/latest/userguide/c4scep-monitoring-overview.html](https://docs.aws.amazon.com/privateca/latest/userguide/c4scep-monitoring-overview.html).
+For detailed Connector for SCEP monitoring in AWS, see [**Monitor Connector for SCEP**](https://docs.aws.amazon.com/privateca/latest/userguide/c4scep-monitoring-overview.html).
 
 ## Security considerations
 <a name="security-considerations"></a>

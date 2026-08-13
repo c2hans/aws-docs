@@ -30,8 +30,8 @@ Complete the following steps to use a query parameter for the VDI environment.
 
 1. Append a query parameter with the key `VDIPlatform` and the value equal to the specific VDI environment you have. For example:
 
-   1. For Citrix cloud desktop, the value for the query parameter is `CITRIX`. The following code shows an example of the complete URL:
-      + `https://{{your-instance-url}}/agent-app-v2?VDIPlatform=CITRIX`
+   1. For Citrix cloud desktop, the value for the query parameter is `CITRIX_413`. The following code shows an example of the complete URL:
+      + `https://{{your-instance-url}}/agent-app-v2?VDIPlatform=CITRIX_413`
 
    1. For Amazon WorkSpaces cloud desktop, the value for the query parameter is `AWS_WORKSPACE`. The following code shows an example of the complete URL:
       + `https://{{your-instance-url}}/agent-app-v2?VDIPlatform=AWS_WORKSPACE`
@@ -59,7 +59,7 @@ Complete the following steps to use a query parameter for the VDI environment.
 
       1. In Citrix Desktop
 
-         `https://us-east-1.console.aws.amazon.com/connect/federate/instance-id?destination=%2Fagent-app-v2?VDIPlatform=CITRIX`
+         `https://us-east-1.console.aws.amazon.com/connect/federate/instance-id?destination=%2Fagent-app-v2?VDIPlatform=CITRIX_413`
 
       1. In Amazon WorkSpaces
 

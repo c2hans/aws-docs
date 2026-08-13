@@ -56,7 +56,7 @@ After you create a cluster and HSM, you can optionally [verify the identity of t
 #### [ AWS CloudHSM API ]
 
 **To create an HSM (AWS CloudHSM API)**
-+ Send a [https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CreateHsm.html](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CreateHsm.html) request. Specify the cluster ID of the cluster that you created previously and an Availability Zone for the HSM.
++ Send a [CreateHsm](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CreateHsm.html) request. Specify the cluster ID of the cluster that you created previously and an Availability Zone for the HSM.
 
 After you create a cluster and HSM, you can optionally [verify the identity of the HSM](verify-hsm-identity.md), or proceed directly to [Initialize the cluster](initialize-cluster.md).
 

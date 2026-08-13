@@ -126,21 +126,21 @@ When you register your Active Directory, License Manager creates two network int
 ------
 
 **Active Directory registration from the AWS CLI**
-You can register your Active Directory as the identity provider for user-based subscriptions with the [https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_RegisterIdentityProvider.html](https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_RegisterIdentityProvider.html) operation.
+You can register your Active Directory as the identity provider for user-based subscriptions with the [RegisterIdentityProvider](https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_RegisterIdentityProvider.html) operation.
 
 ```
 aws license-manager-user-subscriptions register-identity-provider --product "{{<product-name>}}" --identity-provider "ActiveDirectoryIdentityProvider={DirectoryId={{<directory_id>}}}"
 ```
 
 **Configure Active Directory and your VPC for user-based subscriptions (AWS CLI)**
-You can register your Active Directory as the identity provider and configure your VPC for user-based subscriptions with the [https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_RegisterIdentityProvider.html](https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_RegisterIdentityProvider.html) operation.
+You can register your Active Directory as the identity provider and configure your VPC for user-based subscriptions with the [RegisterIdentityProvider](https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_RegisterIdentityProvider.html) operation.
 
 ```
 aws license-manager-user-subscriptions register-identity-provider --product "{{<product_name>}}" --identity-provider "ActiveDirectoryIdentityProvider={DirectoryId={{<directory_id>}}}" --settings "Subnets=[{{subnet-1234567890abcdef0}},{{subnet-021345abcdef6789}}],SecurityGroupId={{sg-1234567890abcdef0}}"
 ```
 
 **Register an additional Active Directory (AWS CLI)**
-To register an additional Active Directory for Microsoft Office subscriptions, use the same [https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_RegisterIdentityProvider.html](https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_RegisterIdentityProvider.html) operation with the new directory and VPC settings. Each Active Directory must reside in a different VPC.
+To register an additional Active Directory for Microsoft Office subscriptions, use the same [RegisterIdentityProvider](https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_RegisterIdentityProvider.html) operation with the new directory and VPC settings. Each Active Directory must reside in a different VPC.
 
 ```
 aws license-manager-user-subscriptions register-identity-provider --product "{{<product_name>}}" --identity-provider "ActiveDirectoryIdentityProvider={DirectoryId={{<second_directory_id>}}}" --settings "Subnets=[{{subnet-abcdef1234567890a}},{{subnet-bcdef1234567890ab}}],SecurityGroupId={{sg-abcdef1234567890a}}"
@@ -235,14 +235,14 @@ On the **Products** page, choose the **Product name**. Subscribed users are disp
 ------
 #### [ AWS CLI ]
 
-You can associate users with an instance launched to provide the user-based subscription with the [https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_AssociateUser.html](https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_AssociateUser.html) operation.
+You can associate users with an instance launched to provide the user-based subscription with the [AssociateUser](https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_AssociateUser.html) operation.
 
 ```
 aws license-manager-user-subscriptions associate-user --username {{<user_name>}} --instance-id {{<instance_id>}} --identity-provider  ""ActiveDirectoryIdentityProvider" = {"DirectoryId" = "{{<directory_id>}}"}"
 ```
 
 **To associate self-managed Active Directory users to an instance (AWS CLI)**
-You can associate users from your self-managed Active Directory with an instance launched to provide the user-based subscription with the [https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_AssociateUser.html](https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_AssociateUser.html) operation.
+You can associate users from your self-managed Active Directory with an instance launched to provide the user-based subscription with the [AssociateUser](https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_AssociateUser.html) operation.
 
 ```
 aws license-manager-user-subscriptions associate-user --username {{<user_name>}} --instance-id {{<instance_id>}} --identity-provider  ""ActiveDirectoryIdentityProvider" = {"DirectoryId" = "{{<directory_id>}}"}" --domain {{<self-managed-domain-name>}}
@@ -280,14 +280,14 @@ You can subscribe users to a product using one of the following methods.
 #### [ AWS CLI ]
 
 **Subscribe users to a product (AWS CLI)**
-You can subscribe users to a product that is registered with your identity provider using the [https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_StartProductSubscription.html](https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_StartProductSubscription.html) operation.
+You can subscribe users to a product that is registered with your identity provider using the [StartProductSubscription](https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_StartProductSubscription.html) operation.
 
 ```
 aws license-manager-user-subscriptions start-product-subscription --username {{<user_name>}} --product {{<product_name>}} --identity-provider ""ActiveDirectoryIdentityProvider" = {"DirectoryId" = "{{<directory_id>}}"}"
 ```
 
 **Subscribe users to a product with a self-managed Active Directory (AWS CLI)**
-You can subscribe users from your self-managed Active Directory to a product that is registered with your AWS Managed Microsoft AD directory using the [https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_StartProductSubscription.html](https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_StartProductSubscription.html) operation.
+You can subscribe users from your self-managed Active Directory to a product that is registered with your AWS Managed Microsoft AD directory using the [StartProductSubscription](https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_StartProductSubscription.html) operation.
 
 ```
 aws license-manager-user-subscriptions start-product-subscription --username {{<user_name>}} --product {{<product_name>}} --identity-provider 'ActiveDirectoryIdentityProvider" = {"DirectoryId" = "{{<directory_id>}}"}' --domain {{<self-managed-domain-name>}}

@@ -27,7 +27,7 @@ Choose your preferred access method to delete a suppression rule for GuardDuty f
 ------
 #### [ API/CLI ]
 
-Run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteFilter.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteFilter.html) API. Specify the filter name and the associated detector ID for the particular Region.
+Run the [DeleteFilter](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteFilter.html) API. Specify the filter name and the associated detector ID for the particular Region.
 
 Alternatively, you can use the following AWS CLI example by replacing the values formatted in {{red}}:
 
@@ -38,6 +38,6 @@ aws guardduty delete-filter \
 --region {{us-east-1}}
 ```
 
-To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
 ------

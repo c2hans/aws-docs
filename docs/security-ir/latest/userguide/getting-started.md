@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/getting-sta
 + [Sign up for an AWS account](#sign-up-for-aws)
 + [Onboarding guide](onboarding-guide.md)
 + [RACI matrix](raci-matrix.md)
-+ [Proactive response and alert triaging](setup-monitoring-and-investigation-workflows.md)
++ [Proactive response and alert triaging](proactive-response-alert-triaging.md)
 + [Validating your AWS Security Incident Response configuration](config-validation.md)
 
 ## Sign up for an AWS account

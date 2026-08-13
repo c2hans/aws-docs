@@ -313,6 +313,8 @@ A pipe is active by default, but you can deactivate it. You can also specify the
    1. To have EventBridge create a new execution role for this pipe, choose **Create a new role for this specific resource.** Under **Role name**, you can optionally edit the role name.
 
    1. To use an existing execution role, choose **Use existing role**. Under **Role name**, choose the role.
+**Role manager enabled**
+If role manager is enabled in your account, EventBridge attaches the role for you. EventBridge replaces the **Create a new role for this specific resource** and **Use existing role** options with a **Customize** option. To use a different role, choose **Customize**. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. (Optional) If you have specified a Kinesis or DynamoDB stream as the pipe source, you can configure a retry policy and dead-letter queue (DLQ).
 

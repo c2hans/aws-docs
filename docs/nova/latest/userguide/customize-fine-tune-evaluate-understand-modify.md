@@ -35,7 +35,7 @@ run:
 + `replicas`: (Required) The number of compute instances to use for distributed training. You must set this value to 1 because multi-node is not supported.
 + `data_s3_path`: (Required) The S3 path to the input dataset. Leave this parameter empty unless you are using the *bring your own dataset* or *LLM as a judge* recipe.
 + `output_s3_path`: (Required) The S3 path to store output evaluation artifacts. Note that the output S3 bucket must be created by the same account that is creating the job.
-+ `mlflow_tracking_uri`: (Optional) MLflow tracking server ARN for tracking MLFlow runs/experiments. Please ensure you have permission to access the tracking server from SageMaker AI execution role
++ `mlflow_tracking_uri`: (Optional) MLflow tracking server ARN for tracking MLflow runs/experiments. Please ensure you have permission to access the tracking server from SageMaker AI execution role
 
 **Evaluation configuration**
 The following is a model evaluation configuration and an explanation of the parameters involved.
@@ -128,8 +128,8 @@ inference:
   temperature: 0.0
 ```
 
-**MLFlow configuration**
-The following is an MLFlow configuration and an explanation of the parameters involved. All parameters are optional.
+**MLflow configuration**
+The following is an MLflow configuration and an explanation of the parameters involved. All parameters are optional.
 
 ```
 run:

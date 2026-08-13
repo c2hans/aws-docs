@@ -12,17 +12,28 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 ## Changes
 <a name="release-2019-09-06-linux.changes"></a>
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **August 26, 2019** to all Linux-based platforms.<br />The **Node.js** and **Ruby** releases include security updates. For more information, see **Platform-specific updates** in this table. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-09-06-linux.html) |
-| **Multicontainer Docker** | Updated the ECS agent to version 1.30.0. |
-| **Go** | Updated to Go release 1.13. For details, see [go1.13](https://golang.org/doc/devel/release.html#go1.13) in *The Go Programming Language Release History*. |
-| **Java SE**, **Java with Tomcat** | Updated the Java 8 platform versions to OpenJDK Version 1.8.0.222.b10.<br />Updated the Java 7 platform versions to OpenJDK Version 1.7.0.231. |
-| **Node.js** | Updated the Node.js platform to add support for Node versions [10.16.3](https://nodejs.org/en/blog/release/v10.16.3/), [10.16.2](https://nodejs.org/en/blog/release/v10.16.2/), [10.16.1](https://nodejs.org/en/blog/release/v10.16.1/), and [8.16.1](https://nodejs.org/en/blog/release/v8.16.1/).<br />The latest Node.js 10 and Node.js 8 versions are security releases and include fixes for vulnerabilities. |
-| **Ruby** | Released new Ruby 2.6, 2.5, and 2.4 versions: [2.6.4](https://www.ruby-lang.org/en/news/2019/08/28/ruby-2-6-4-released/), [2.5.6](https://www.ruby-lang.org/en/news/2019/08/28/ruby-2-5-6-released/), and [2.4.7](https://www.ruby-lang.org/en/news/2019/08/28/ruby-2-4-7-released/), respectively.<br />For security vulnerabilities fixed in the latest versions, see [Multiple jQuery vulnerabilities in RDoc](https://www.ruby-lang.org/en/news/2019/08/28/multiple-jquery-vulnerabilities-in-rdoc/). Update – September 18, 2019: Due to a [bug](https://bugs.ruby-lang.org/issues/16136) in the Ruby 2.6.4 runtime, we had to roll back two platform versions: **Ruby 2.6 with Puma** and **Ruby 2.6 with Passenger**. Both are back to version 2.10.1 with Ruby 2.6.3. <br />If you're already using version 2.10.2 of one of the Ruby 2.6 platforms, you still have access to this latest version. All other customers now see version 2.10.1 as the latest Ruby 2.6 version.  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>August 26, 2019</b> to all Linux-based platforms.<br />The <b>Node.js</b> and <b>Ruby</b> releases include security updates. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Multicontainer Docker</b></td><td>Updated the ECS agent to version 1.30.0.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated to Go release 1.13. For details, see <a href="https://golang.org/doc/devel/release.html#go1.13">go1.13</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Java SE</b>, <b>Java with Tomcat</b></td><td>Updated the Java 8 platform versions to OpenJDK Version 1.8.0.222.b10.<br />Updated the Java 7 platform versions to OpenJDK Version 1.7.0.231.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform to add support for Node versions <a href="https://nodejs.org/en/blog/release/v10.16.3/">10.16.3</a>, <a href="https://nodejs.org/en/blog/release/v10.16.2/">10.16.2</a>, <a href="https://nodejs.org/en/blog/release/v10.16.1/">10.16.1</a>, and <a href="https://nodejs.org/en/blog/release/v8.16.1/">8.16.1</a>.<br />The latest Node.js 10 and Node.js 8 versions are security releases and include fixes for vulnerabilities.</td></tr>
+  <tr><td><b>Ruby</b></td><td>Released new Ruby 2.6, 2.5, and 2.4 versions: <a href="https://www.ruby-lang.org/en/news/2019/08/28/ruby-2-6-4-released/">2.6.4</a>, <a href="https://www.ruby-lang.org/en/news/2019/08/28/ruby-2-5-6-released/">2.5.6</a>, and <a href="https://www.ruby-lang.org/en/news/2019/08/28/ruby-2-4-7-released/">2.4.7</a>, respectively.<br />For security vulnerabilities fixed in the latest versions, see <a href="https://www.ruby-lang.org/en/news/2019/08/28/multiple-jquery-vulnerabilities-in-rdoc/">Multiple jQuery vulnerabilities in RDoc</a>. Update – September 18, 2019: Due to a <a href="https://bugs.ruby-lang.org/issues/16136">bug</a> in the Ruby 2.6.4 runtime, we had to roll back two platform versions: <b>Ruby 2.6 with Puma</b> and <b>Ruby 2.6 with Passenger</b>. Both are back to version 2.10.1 with Ruby 2.6.3. <br />If you're already using version 2.10.2 of one of the Ruby 2.6 platforms, you still have access to this latest version. All other customers now see version 2.10.1 as the latest Ruby 2.6 version. </td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2019-09-06-linux.platforms"></a>

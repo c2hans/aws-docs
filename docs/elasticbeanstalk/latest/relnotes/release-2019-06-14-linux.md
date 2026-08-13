@@ -12,17 +12,34 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 ## Changes
 <a name="release-2019-06-14-linux.changes"></a>
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Instance type** | **Regions** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **June 5, 2019** to all Linux-based platforms. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-06-14-linux.html) |
-| **Instance types** | Added support for an additional Amazon EC2 instance type in some AWS Regions, as listed in the following table.[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-06-14-linux.html) |
-| **Go** | Updated to minor revision 1.12.6. For details, see [go1.12](https://golang.org/doc/devel/release.html#go1.12) in *The Go Programming Language Release History*. |
-| **T3a** |  + US East (Ohio) – us-east-2<br />+ US East (N. Virginia) – us-east-1<br />+ US West (Oregon) – us-west-2<br />+ Asia Pacific (Singapore) – ap-southeast-1<br />+ Europe (Ireland) – eu-west-1  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>June 5, 2019</b> to all Linux-based platforms.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Go</b></td><td>Updated to minor revision 1.12.6. For details, see <a href="https://golang.org/doc/devel/release.html#go1.12">go1.12</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Instance types</b></td><td>Added support for an additional Amazon EC2 instance type in some AWS Regions, as listed in the following table.
+<table>
+<thead>
+  <tr><th><b>Instance type</b></th><th><b>Regions</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>T3a</b></td><td> <ul><li>US East (Ohio) – us-east-2</li><li>US East (N. Virginia) – us-east-1</li><li>US West (Oregon) – us-west-2</li><li>Asia Pacific (Singapore) – ap-southeast-1</li><li>Europe (Ireland) – eu-west-1</li></ul> </td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2019-06-14-linux.platforms"></a>

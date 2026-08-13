@@ -12,7 +12,7 @@ If you run an automation workflow that invokes other services by using an AWS Id
 
 This reference includes topics that describe each of the Systems Manager runbooks that are owned by AWS, AWS Support, and AWS Config. Runbooks are organized by the relevant AWS service. Each page provides an explanation of the required and optional parameters that you can specify when using the runbook. Each page also lists the steps in the runbook and the output of the automation, if any.
 
- This reference does *not* include a separate page for runbooks that require approval such as the `AWS-CreateManagedLinuxInstanceWithApproval` or `AWS-StopEC2InstanceWithApproval` runbook. Any runbook name that includes `WithApproval`, means the runbook includes the [https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-action-approve.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-action-approve.html) action. This action temporarily pauses an automation until designated principals either approve or reject the action. After the required number of approvals is reached, the automation resumes.
+ This reference does *not* include a separate page for runbooks that require approval such as the `AWS-CreateManagedLinuxInstanceWithApproval` or `AWS-StopEC2InstanceWithApproval` runbook. Any runbook name that includes `WithApproval`, means the runbook includes the [`aws:approve`](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-action-approve.html) action. This action temporarily pauses an automation until designated principals either approve or reject the action. After the required number of approvals is reached, the automation resumes.
 
 For information about running automations, see [Running a simple automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html). For information about running automations on multiple targets, see [Running automations that use targets and rate controls](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-targets-and-rate-controls.html).
 
@@ -52,6 +52,7 @@ For information about running automations, see [Running a simple automation](htt
 + [Amazon Kinesis Data Streams](automation-ref-aks.md)
 + [AWS KMS](automation-ref-kms.md)
 + [Lambda](automation-ref-lam.md)
++ [Amazon MSK](automation-ref-msk.md)
 + [Amazon Managed Workflows for Apache Airflow](automation-ref-mwaa.md)
 + [Neptune](automation-ref-neptune.md)
 + [Amazon RDS](automation-ref-rds.md)

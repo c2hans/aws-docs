@@ -41,7 +41,7 @@ This topic explains how to disable Security Lake by using the Security Lake cons
 ------
 #### [ API ]
 
-To disable Security Lake programmatically, use the [https://docs.aws.amazon.com/security-lake/latest/APIReference/API_DeleteDataLake.html](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_DeleteDataLake.html) operation of the Security Lake API. If you're using the AWS CLI, run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/delete-data-lake.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/delete-data-lake.html) command. In your request, use the `regions` list to specify the Region code for each Region in which you want to disable Security Lake. For a list of Region codes, see [Amazon Security Lake endpoints](https://docs.aws.amazon.com/general/latest/gr/securitylake.html) in the *AWS General Reference*.
+To disable Security Lake programmatically, use the [DeleteDataLake](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_DeleteDataLake.html) operation of the Security Lake API. If you're using the AWS CLI, run the [delete-date-lake](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/delete-data-lake.html) command. In your request, use the `regions` list to specify the Region code for each Region in which you want to disable Security Lake. For a list of Region codes, see [Amazon Security Lake endpoints](https://docs.aws.amazon.com/general/latest/gr/securitylake.html) in the *AWS General Reference*.
 
 For a Security Lake deployment utilizing AWS Organizations, only the delegated Security Lake administrator for the organization can disable Security Lake for accounts in the organization.
 

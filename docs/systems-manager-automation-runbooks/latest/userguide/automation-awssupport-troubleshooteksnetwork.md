@@ -501,7 +501,7 @@ Permissions required for `AWSSupport-CollectEKSLinuxNodeStatistics`:
 ## Instructions
 <a name="automation-awssupport-troubleshooteksnetwork-instructions"></a>
 
-1. Open [https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootEKSNetwork/description](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootEKSNetwork/description) in Systems Manager under Documents.
+1. Open [`AWSSupport-TroubleshootEKSNetwork`](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootEKSNetwork/description) in Systems Manager under Documents.
 
 1. Choose **Execute automation**.
 

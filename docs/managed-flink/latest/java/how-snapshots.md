@@ -11,16 +11,16 @@ A *snapshot* is the Managed Service for Apache Flink implementation of an Apache
 We recommend that your application create a snapshot several times a day to restart properly with correct state data. The correct frequency for your snapshots depends on your application's business logic. Taking frequent snapshots lets you recover more recent data, but increases cost and requires more system resources.
 
 In Managed Service for Apache Flink, you manage snapshots using the following API actions:
-+ [https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_CreateApplicationSnapshot.html](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_CreateApplicationSnapshot.html)
-+ [https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DeleteApplicationSnapshot.html](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DeleteApplicationSnapshot.html)
-+ [https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DescribeApplicationSnapshot.html](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DescribeApplicationSnapshot.html)
-+ [https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ListApplicationSnapshots.html](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ListApplicationSnapshots.html)
++ [`CreateApplicationSnapshot`](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_CreateApplicationSnapshot.html)
++ [`DeleteApplicationSnapshot`](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DeleteApplicationSnapshot.html)
++ [`DescribeApplicationSnapshot`](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DescribeApplicationSnapshot.html)
++ [`ListApplicationSnapshots`](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ListApplicationSnapshots.html)
 
 For the per-application limit on the number of snapshots, see [Managed Service for Apache Flink and Studio notebook quota](limits.md). If your application reaches the limit on snapshots, then manually creating a snapshot fails with a `LimitExceededException`.
 
-Managed Service for Apache Flink never deletes snapshots. You must manually delete your snapshots using the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DeleteApplicationSnapshot.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DeleteApplicationSnapshot.html) action.
+Managed Service for Apache Flink never deletes snapshots. You must manually delete your snapshots using the [`DeleteApplicationSnapshot`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DeleteApplicationSnapshot.html) action.
 
-To load a saved snapshot of application state when starting an application, use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_ApplicationRestoreConfiguration.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_ApplicationRestoreConfiguration.html) parameter of the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) or [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action.
+To load a saved snapshot of application state when starting an application, use the [`ApplicationRestoreConfiguration`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_ApplicationRestoreConfiguration.html) parameter of the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) or [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action.
 
 **Topics**
 + [Manage automatic snapshot creation](#how-fault-snapshot-update)
@@ -68,7 +68,7 @@ This section includes example requests for API actions for using snapshots with 
 ### Enable snapshots for an application
 <a name="how-fault-savepoint-examples-enable"></a>
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action enables snapshots for an application:
+The following example request for the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action enables snapshots for an application:
 
 ```
 {
@@ -85,7 +85,7 @@ The following example request for the [https://docs.aws.amazon.com/managed-servi
 ### Create a snapshot
 <a name="how-fault-savepoint-examples-create"></a>
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplicationSnapshot.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplicationSnapshot.html) action creates a snapshot of the current application state:
+The following example request for the [`CreateApplicationSnapshot`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplicationSnapshot.html) action creates a snapshot of the current application state:
 
 ```
 {
@@ -97,7 +97,7 @@ The following example request for the [https://docs.aws.amazon.com/managed-servi
 ### List snapshots for an application
 <a name="how-fault-snapshot-examples-list"></a>
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_ListApplicationSnapshots.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_ListApplicationSnapshots.html) action lists the first 50 snapshots for the current application state:
+The following example request for the [`ListApplicationSnapshots`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_ListApplicationSnapshots.html) action lists the first 50 snapshots for the current application state:
 
 ```
 {
@@ -109,7 +109,7 @@ The following example request for the [https://docs.aws.amazon.com/managed-servi
 ### List details for an application snapshot
 <a name="how-fault-snapshot-examples-describe"></a>
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DescribeApplicationSnapshot.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DescribeApplicationSnapshot.html) action lists details for a specific application snapshot:
+The following example request for the [`DescribeApplicationSnapshot`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DescribeApplicationSnapshot.html) action lists details for a specific application snapshot:
 
 ```
 {
@@ -121,7 +121,7 @@ The following example request for the [https://docs.aws.amazon.com/managed-servi
 ### Delete a snapshot
 <a name="how-fault-snapshot-examples-delete"></a>
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DeleteApplicationSnapshot.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DeleteApplicationSnapshot.html) action deletes a previously saved snapshot. You can get the `SnapshotCreationTimestamp` value using either [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_ListApplicationSnapshots.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_ListApplicationSnapshots.html) or [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DeleteApplicationSnapshot.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DeleteApplicationSnapshot.html):
+The following example request for the [`DeleteApplicationSnapshot`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DeleteApplicationSnapshot.html) action deletes a previously saved snapshot. You can get the `SnapshotCreationTimestamp` value using either [`ListApplicationSnapshots`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_ListApplicationSnapshots.html) or [`DeleteApplicationSnapshot`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DeleteApplicationSnapshot.html):
 
 ```
 {
@@ -134,7 +134,7 @@ The following example request for the [https://docs.aws.amazon.com/managed-servi
 ### Restart an application using a named snapshot
 <a name="how-fault-snapshot-examples-load-custom"></a>
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action starts the application using the saved state from a specific snapshot:
+The following example request for the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action starts the application using the saved state from a specific snapshot:
 
 ```
 {
@@ -151,7 +151,7 @@ The following example request for the [https://docs.aws.amazon.com/managed-servi
 ### Restart an application using the most recent snapshot
 <a name="how-fault-snapshot-examples-load-recent"></a>
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action starts the application using the most recent snapshot:
+The following example request for the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action starts the application using the most recent snapshot:
 
 ```
 {
@@ -167,7 +167,7 @@ The following example request for the [https://docs.aws.amazon.com/managed-servi
 ### Restart an application using no snapshot
 <a name="how-fault-snapshot-examples-load-none"></a>
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action starts the application without loading application state, even if a snapshot is present:
+The following example request for the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action starts the application without loading application state, even if a snapshot is present:
 
 ```
 {

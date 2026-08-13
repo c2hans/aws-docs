@@ -244,7 +244,7 @@ If the previous troubleshooting guidance doesn't resolve the issue, ensure that 
 ## Failed authentication: Too many connects
 <a name="troubleshoot-too-many-connects"></a>
 
-The `Failed authentication ... Too many connects` error indicates that a broker is protecting itself because one or more IAM clients are trying to connect to it at an aggressive rate. To help brokers accept a higher rate of new IAM connections, you can increase the [https://kafka.apache.org/documentation/#producerconfigs_reconnect.backoff.ms](https://kafka.apache.org/documentation/#producerconfigs_reconnect.backoff.ms) configuration parameter.
+The `Failed authentication ... Too many connects` error indicates that a broker is protecting itself because one or more IAM clients are trying to connect to it at an aggressive rate. To help brokers accept a higher rate of new IAM connections, you can increase the [`reconnect.backoff.ms`](https://kafka.apache.org/documentation/#producerconfigs_reconnect.backoff.ms) configuration parameter.
 
 To learn more about the rate limits for new connections per broker, see the [Amazon MSK quota](limits.md) page.
 

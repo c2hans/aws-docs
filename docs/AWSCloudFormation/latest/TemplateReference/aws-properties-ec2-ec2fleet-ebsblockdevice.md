@@ -105,5 +105,5 @@ The following are the supported sizes for each volume type:
 The volume type. For more information, see [Amazon EBS volume types](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html) in the *Amazon EBS User Guide*.
 *Required*: No
 *Type*: String
-*Allowed values*: `gp2 | gp3 | io1 | io2 | sc1 | st1 | standard`
+*Allowed values*: `standard | io1 | io2 | gp2 | sc1 | st1 | gp3`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

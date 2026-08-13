@@ -60,7 +60,7 @@ To learn how to generate a long-term Amazon Bedrock API key, choose the tab for 
 To create a long-term Amazon Bedrock API key, you use AWS Identity and Access Management API operations. First, make sure that you've fulfilled the prerequisite:
 
 **Prerequisite**
-Ensure that your setup allows the AWS CLI to automatically recognize your AWS credentials. To learn more, see [Configuring settings for the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html).
+Make sure that your setup allows the AWS CLI to automatically recognize your AWS credentials. To learn more, see [Configuring settings for the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html).
 
 Open a terminal and run the following commands:
 
@@ -91,7 +91,7 @@ Open a terminal and run the following commands:
 To create a long-term Amazon Bedrock API key, you use AWS Identity and Access Management API operations. First, make sure that you've fulfilled the prerequisite:
 
 **Prerequisite**
-Ensure that your setup allows Python to automatically recognize your AWS credentials. To learn more, see [Configuring settings for the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html).
+Make sure that your setup allows Python to automatically recognize your AWS credentials. To learn more, see [Configuring settings for the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html).
 
 Run the following script to create an IAM user, attach permissions to perform Amazon Bedrock actions, and generate a long-term Amazon Bedrock API key to associate with the user:
 
@@ -143,8 +143,8 @@ Short term keys have the following properties:
 For long-running applications, the [aws-bedrock-token-generator](https://github.com/aws/aws-bedrock-token-generator-js/blob/main/README.md) client library can create new Amazon Bedrock short-term API keys as needed when credentials are refreshed. For more information, see [Set up automatic refresh of short-term Amazon Bedrock API keys](#api-keys-refresh-short-term).
 
 **Prerequisites**
-+ Ensure that the IAM principal that you use to generate the key is set up with the proper permissions to use Amazon Bedrock. For experimentation, you can attach the AWS-managed [AmazonBedrockLimitedAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AmazonBedrockLimitedAccess) policy to the principal. You can refer to the [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) for protecting your credentials.
-+ Ensure that your setup allows Python to automatically recognize your AWS credentials. The default method by which credentials are retrieved follows a defined hierarchy. You can see the hierarchy for a specific SDK or tool at [AWS SDKs and Tools standardized credential providers](https://docs.aws.amazon.com/sdkref/latest/guide/standardized-credentials.html).
++ Make sure that the IAM principal that you use to generate the key is set up with the proper permissions to use Amazon Bedrock. For experimentation, you can attach the AWS-managed [AmazonBedrockLimitedAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AmazonBedrockLimitedAccess) policy to the principal. You can refer to the [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) for protecting your credentials.
++ Make sure that your setup allows Python to automatically recognize your AWS credentials. The default method by which credentials are retrieved follows a defined hierarchy. You can see the hierarchy for a specific SDK or tool at [AWS SDKs and Tools standardized credential providers](https://docs.aws.amazon.com/sdkref/latest/guide/standardized-credentials.html).
 + Install the Amazon Bedrock token generator. Choose the tab for your preferred method, and then follow the steps:
 
 ------
@@ -243,7 +243,7 @@ To see more examples for different use cases when generating tokens, see the fol
 ## Set up automatic refresh of short-term Amazon Bedrock API keys
 <a name="api-keys-refresh-short-term"></a>
 
-You can create a script with the help of the `aws-bedrock-token-generator` package to programmatically regenerate a new short-term key whenever your current one has expired. First, ensure that you've fulfilled the prerequisites at [Generate a short-term Amazon Bedrock API key using a client library](#api-keys-generate-short-term). To see example scripts that retrieve a token and make a Converse request, choose the tab for your preferred method, and then follow the steps:
+You can create a script with the help of the `aws-bedrock-token-generator` package to programmatically regenerate a new short-term key whenever your current one has expired. First, make sure that you've fulfilled the prerequisites at [Generate a short-term Amazon Bedrock API key using a client library](#api-keys-generate-short-term). To see example scripts that retrieve a token and make a Converse request, choose the tab for your preferred method, and then follow the steps:
 
 ------
 #### [ Python ]

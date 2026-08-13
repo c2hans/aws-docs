@@ -176,7 +176,7 @@ Another strategy to consider is using identity federation with IAM to integrate 
 
 1. Get started configuring identity federation. For information, see [Identity Providers and Federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html) in *IAM User Guide*.
 
-Ceate one of the following to use under your AWS account when running your custom action and job worker.
+Create one of the following to use under your AWS account when running your custom action and job worker.
 
 Users need programmatic access if they want to interact with AWS outside of the AWS Management Console. The way to grant programmatic access depends on the type of user that's accessing AWS.
 

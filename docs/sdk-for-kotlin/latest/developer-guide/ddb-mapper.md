@@ -10,13 +10,13 @@ DynamoDB Mapper is a high-level library that maps your Kotlin classes to Amazon 
 You define schemas that describe your data objects and how to convert them to DynamoDB items. After you define a schema, DynamoDB Mapper provides an intuitive, idiomatic Kotlin interface to use your objects in create, read, update, and delete (CRUD) operations on your tables and indexes.
 
 DynamoDB Mapper supports the following:
-+  **Single-item operations** on a table, such as `deleteItem`, `getItem`, `putItem`, `queryPaginated`, `scanPaginated`, and `updateItem`, invoked with a coroutine-friendly DSL.
-+  **Batch operations** (`batchGetItem` and `batchWriteItem`) that read or write many items, across one or more tables, in a single call.
-+  **Transactional operations** (`transactGetItems` and `transactWriteItems`) that read or write across multiple tables atomically.
++  **Single-item operations** on a table, such as [`deleteItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.model/delete-item.html), [`getItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.model/get-item.html), [`putItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.model/put-item.html), [`queryPaginated`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html), [`scanPaginated`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html), and [`updateItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html), invoked with a coroutine-friendly DSL.
++  **Batch operations** ([`batchGetItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html) and [`batchWriteItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html)) that read or write many items, across one or more tables, in a single call.
++  **Transactional operations** ([`transactGetItems`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html) and [`transactWriteItems`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html)) that read or write across multiple tables atomically.
 +  **Two ways to define schemas:** generate them automatically from annotated classes at build time, or define them manually in code for full control.
 +  **Idiomatic Kotlin:** suspending operations, `Flow`-based pagination, and DSLs for keys, filter expressions, and update expressions.
 
-DynamoDB Mapper uses the SDK’s low-level [/sdk-for-kotlin/api/latest/dynamodb/aws.sdk.kotlin.services.dynamodb/-dynamo-db-client/index.html](/sdk-for-kotlin/api/latest/dynamodb/aws.sdk.kotlin.services.dynamodb/-dynamo-db-client/index.html) for its underlying calls to the service.
+DynamoDB Mapper uses the SDK’s low-level [`DynamoDbClient`](/sdk-for-kotlin/api/latest/dynamodb/aws.sdk.kotlin.services.dynamodb/-dynamo-db-client/index.html) for its underlying calls to the service.
 
 **Topics**
 + [Get started](ddb-mapper-get-started.md)

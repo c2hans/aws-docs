@@ -6,7 +6,7 @@ Version 4 (V4) of the AWS SDK for .NET has been released\!
 
 For information about breaking changes and migrating your applications, see the [migration topic](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html).
 
- [https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
+ [![Orange button with text "Click here for details".](http://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Deleting key pairs
 <a name="delete-key-pairs"></a>
@@ -74,7 +74,7 @@ Programming elements:
   Class [AmazonEC2Client](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/EC2/TEC2Client.html)
 + Namespace [Amazon.EC2.Model](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/EC2/NEC2Model.html)
 
-  Class [https://docs.aws.amazon.com/sdkfornet/v4/apidocs/](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/)
+  Class [[DeleteKeyPairRequest](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/EC2/TDeleteKeyPairRequest.html)](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/)
 
   Class [DescribeKeyPairsResponse](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/EC2/TDescribeKeyPairsResponse.html)
 

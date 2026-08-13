@@ -7,7 +7,7 @@ This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on 
 # Use resources from the AWS CloudFormation Public Registry
 <a name="use-cfn-public-registry"></a>
 
-The AWS CloudFormation Public Registry lets you manage extensions, both public and private, such as resources, modules, and hooks that are available for use in your AWS account. You can use public resource extensions in your AWS Cloud Development Kit (AWS CDK) applications with the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CfnResource.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CfnResource.html) construct.
+The AWS CloudFormation Public Registry lets you manage extensions, both public and private, such as resources, modules, and hooks that are available for use in your AWS account. You can use public resource extensions in your AWS Cloud Development Kit (AWS CDK) applications with the [`CfnResource`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CfnResource.html) construct.
 
 To learn more about the AWS CloudFormation Public Registry, see [Using the AWS CloudFormation registry](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/registry.html) in the * AWS CloudFormation User Guide*.
 
@@ -62,12 +62,12 @@ Extensions published by AWS do not require activation. They are always available
 
    1.  `LoggingConfig` - The logging configuration for the extension.
 
-   The `TypeActivation` resource can be deployed by the CDK using the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CfnResource.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CfnResource.html) construct. This is shown for the actual extensions in the following section.
+   The `TypeActivation` resource can be deployed by the CDK using the [`CfnResource`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CfnResource.html) construct. This is shown for the actual extensions in the following section.
 
 ## Add a resource from the AWS CloudFormation Public Registry to your CDK app
 <a name="use-cfn-public-registry-add"></a>
 
-Use the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CfnResource.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CfnResource.html) construct to include a resource from the AWS CloudFormation Public Registry in your application. This construct is in the CDK’s `aws-cdk-lib` module.
+Use the [`CfnResource`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CfnResource.html) construct to include a resource from the AWS CloudFormation Public Registry in your application. This construct is in the CDK’s `aws-cdk-lib` module.
 
 For example, suppose that there is a public resource named `MY::S5::UltimateBucket` that you want to use in your AWS CDK application. This resource takes one property: the bucket name. The corresponding `CfnResource` instantiation looks like this.
 

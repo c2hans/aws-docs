@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/po
 <a name="polly-example-synthesize-to-s3-scenario"></a>
 
 In this example, a series of Node.js modules are used to automatically upload audio recorded using Amazon Polly to Amazon S3 using these methods of the Amazon S3 client class:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-polly/Class/StartSpeechSynthesisTaskCommand/](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-polly/Class/StartSpeechSynthesisTaskCommand/)
++ [`StartSpeechSynthesisTaskCommand`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-polly/Class/StartSpeechSynthesisTaskCommand/)
 
 ## Prerequisite tasks
 <a name="polly-example-synthesize-to-s3-prerequisites"></a>

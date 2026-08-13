@@ -10,9 +10,9 @@ You can provide domain-specific words and phrases per language, which enables BD
 **Important**
 You are responsible for the integrity of your own data when you use Bedrock Data Automation Library. Do not enter confidential information, personal information (PII), or protected health information (PHI) into a custom vocabulary.
 
-You can find the list of supported languages for Custom Vocabulary [here](https://docs.aws.amazon.com/bedrock/latest/userguide/bda-limits.html). Note that only the characters listed in your language's [character set](bda-library-character-sets.md) can be used in a custom vocabulary.
+You can find the list of supported languages for Custom Vocabulary in the [Amazon Bedrock Data Automation quotas and limits](bedrock/latest/userguide/bda-limits.html) page. Note that only the characters listed in your language's [character set](bda-library-character-sets.md) can be used in a custom vocabulary.
 
-## How to use?
+## Using custom vocabulary
 <a name="bda-library-cv-how-to-use"></a>
 
 You can use Custom Vocabulary in your BDA project by creating a Data Automation Library, adding domain-specific vocabulary entities/lists for your target language, and associating the library with your project during project creation or by updating an existing project, which enables all audio and video processing jobs executed through that project to apply your custom vocabulary. This results in improved extraction accuracy for your domain-specific terms across both standard output and custom blueprint output.

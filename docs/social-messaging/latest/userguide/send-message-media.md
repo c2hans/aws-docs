@@ -35,7 +35,7 @@ WhatsApp stores media files for 30 days before deleting them, see [Upload Media]
    aws socialmessaging send-whatsapp-message --message '{"messaging_product":"whatsapp","to":"'{{{PHONE_NUMBER}}}'","type":"image","image":{"id":"'{{{MEDIA_ID}}}'"}}' --origination-phone-number-id {{{ORIGINATION_PHONE_NUMBER_ID}}} --meta-api-version v20.0
    ```
 **Note**
-You must specify base64 encoding when you use the AWS CLI version 2. This can be done by adding the AWS CLI paramater `--cli-binary-format raw-in-base64-out` or changing the AWS CLI global configuration file. For more information, see [https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-configure-files-settings](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-configure-files-settings) in the *AWS Command Line Interface User Guide for Version 2*.
+You must specify base64 encoding when you use the AWS CLI version 2. This can be done by adding the AWS CLI paramater `--cli-binary-format raw-in-base64-out` or changing the AWS CLI global configuration file. For more information, see [`cli_binary_format`](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-configure-files-settings) in the *AWS Command Line Interface User Guide for Version 2*.
 
    ```
    aws socialmessaging send-whatsapp-message --message '{"messaging_product":"whatsapp","to":"'{{{PHONE_NUMBER}}}'","type":"image","image":{"id":"'{{{MEDIA_ID}}}'"}}' --origination-phone-number-id {{{ORIGINATION_PHONE_NUMBER_ID}}} --meta-api-version v20.0 --cli-binary-format raw-in-base64-out

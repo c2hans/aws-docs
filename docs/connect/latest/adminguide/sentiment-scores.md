@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/sentiment-scores.html
 ---
 
-# Investigate sentiment scores during contact conversations using Contact Lens
+# Investigate sentiment scores during contact conversations using conversational analytics
 <a name="sentiment-scores"></a>
 
 ## What are sentiment scores?
@@ -32,7 +32,7 @@ For more information, see [Search for sentiment score or evaluate sentiment shif
 ## How sentiment scores are determined
 <a name="how-sentiment-scores-are-determined"></a>
 
-Connect Customer Contact Lens analyzes the sentiment of each speaker turn in a conversation as positive, negative, or neutral. It then considers two factors for each participant turn to assign a score that ranges from -5 to \+5 for each period of the call:
+Connect Customer conversational analytics analyzes the sentiment of each speaker turn in a conversation as positive, negative, or neutral. It then considers two factors for each participant turn to assign a score that ranges from -5 to \+5 for each period of the call:
 + Frequency. The number of times the sentiment is positive, negative or neutral.
 + Sentiment streaks. The consecutive turns with same sentiment.
 

@@ -35,11 +35,11 @@ Use the following procedure to generate sample findings. This process generates 
 ------
 #### [ API/CLI ]
 
-You can generate a single sample finding matching any of the GuardDuty finding types through the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateSampleFindings.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateSampleFindings.html) API, the available values for finding types are listed in [GuardDuty finding types](guardduty_finding-types-active.md) table.
+You can generate a single sample finding matching any of the GuardDuty finding types through the [CreateSampleFindings](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateSampleFindings.html) API, the available values for finding types are listed in [GuardDuty finding types](guardduty_finding-types-active.md) table.
 
 This is useful for the testing of CloudWatch Events rules or automation based on findings. The following example shows how to generate a single sample finding of the `Backdoor:EC2/DenialOfService.Tcp` type using the AWS CLI.
 
-To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
 ```
 aws guardduty create-sample-findings --detector-id {{12abc34d567e8fa901bc2d34e56789f0}} --finding-types {{Backdoor:EC2/DenialOfService.Tcp}}

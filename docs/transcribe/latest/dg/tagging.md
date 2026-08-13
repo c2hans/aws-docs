@@ -25,7 +25,7 @@ In Amazon Transcribe, you can tag the following resources:
 Tag keys can be up to 128 characters in length and tag values can be up to 256 characters in length; both are case sensitive. Amazon Transcribe supports up to 50 tags per resource. For a given resource, each tag key must be unique with only one value. Note that your tags cannot begin with `aws:` because AWS reserves this prefix for system-generated tags. You cannot add, modify, or delete `aws:*` tags, and they don't count against your tags-per-resource limit.
 
 **API operations specific to resource tagging**
- [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_ListTagsForResource.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_ListTagsForResource.html), [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TagResource.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TagResource.html), [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_UntagResource.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_UntagResource.html)
+ [`ListTagsForResource`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_ListTagsForResource.html), [`TagResource`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TagResource.html), [`UntagResource`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_UntagResource.html)
 To use the tagging APIs, you must include an Amazon Resource Name (ARN) with your request. ARNs have the format `arn:partition:service:region:account-id:resource-type/resource-id`. For example, the ARN associated with a transcription job may look like: `arn:{{aws}}:transcribe:{{us-west-2}}:{{111122223333}}:transcription-job/{{my-transcription-job-name}}`.
 
 To learn more about tagging, including best practices, see [Tagging AWS resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html).
@@ -75,7 +75,7 @@ You can add, modify or delete tags using the **AWS Management Console**, **AWS C
 ### AWS CLI
 <a name="tagging-cli"></a>
 
-This example uses the [start-transcription-job](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/start-transcription-job.html) command and `Tags` parameter. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Tag.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Tag.html).
+This example uses the [start-transcription-job](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/start-transcription-job.html) command and `Tags` parameter. For more information, see [`StartTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [`Tag`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Tag.html).
 
 ```
 aws transcribe start-transcription-job \
@@ -123,7 +123,7 @@ The file *my-first-tagging-job.json* contains the following request body.
 ### AWS SDK for Python (Boto3)
 <a name="tagging-python-batch"></a>
 
-The following example uses the AWS SDK for Python (Boto3) to add a tag by using the `Tags` argument for the [start\_transcription\_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_transcription_job) method. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Tag.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Tag.html).
+The following example uses the AWS SDK for Python (Boto3) to add a tag by using the `Tags` argument for the [start\_transcription\_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_transcription_job) method. For more information, see [`StartTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [`Tag`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Tag.html).
 
 For additional examples using the AWS SDKs, including feature-specific, scenario, and cross-service examples, refer to the [Code examples for Amazon Transcribe using AWS SDKs](service_code_examples.md) chapter.
 

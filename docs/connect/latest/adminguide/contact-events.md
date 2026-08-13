@@ -37,7 +37,7 @@ Contact events are generated in JSON. For each event type, a JSON blob is sent t
 + CONNECTED\_TO\_SYSTEM - The contact has established media (for example, it was answered by a person or by voicemail). This event is generated for any of the [AnsweringMachineDetectionStatus](#AnsweringMachineDetectionStatus) codes.
 **Note**
 This event is generated for outbound calls (including [Connect Customer outbound campaigns](how-to-create-campaigns.md)) tasks, and chats.
-+ CONTACT\_DATA\_UPDATED - One or more of the following contact properties were updated on a voice call, chat, task, or email: scheduled timestamp (task only), accepted by agent timestamp (outbound campaign voice contact in preview dialing mode only), user-defined attributes and tags, routing criteria is updated or step is expired, and if Contact Lens is enabled for a given contact.
++ CONTACT\_DATA\_UPDATED - One or more of the following contact properties were updated on a voice call, chat, task, or email: scheduled timestamp (task only), accepted by agent timestamp (outbound campaign voice contact in preview dialing mode only), user-defined attributes and tags, routing criteria is updated or step is expired, and if conversational analytics is enabled for a given contact.
 + QUEUED - A voice call, chat, task, or email is queued to be assigned to an agent.
 + CONNECTED\_TO\_AGENT - A voice call, chat, task, or email is connected to an agent.
 + COMPLETED - The COMPLETED event indicates when a contact has fully ended, including After Contact Work (ACW) if applicable.
@@ -281,7 +281,7 @@ The queue the contact was placed in.
 Type: `QueueInfo` object
 
 **ContactLens**
-Contact Lens information if Contact Lens is enabled on the flow.
+Conversational analytics information if conversational analytics is enabled on the flow.
 Type: For more information about the `ContactLens` object, see [ContactLens](ctr-data-model.md#ctr-ContactLens).
 
 **SegmentAttributes**
@@ -631,6 +631,10 @@ Type: String (yyyy-MM-dd'T'HH:mm:ss.SSS'Z')
 
 **ScheduledTimestamp**
 The date and time when this contact was scheduled to trigger the flow to run, in UTC time. This is supported only for the task channel.
+Type: String (yyyy-MM-dd'T'HH:mm:ss.SSS'Z')
+
+**RingStartTimestamp**
+The date and time that ringing started for a campaign call, in UTC time. Connect Customer populates this field only for outbound campaign calls.
 Type: String (yyyy-MM-dd'T'HH:mm:ss.SSS'Z')
 
 **GreetingStartTimestamp**

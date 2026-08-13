@@ -25,7 +25,7 @@ To block public access on a bucket or to delete the public access block, use the
 + `DeletePublicAccessBlock` (for a bucket)
 + `GetBucketPolicyStatus`
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-public-access-block.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-public-access-block.html) in the *AWS CLI Reference*.
+For more information and examples, see [put-public-access-block](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-public-access-block.html) in the *AWS CLI Reference*.
 
 **Note**
 These bucket-level operations are not restricted by organization-level policies. However, the effective public access behavior will still be governed by the most restrictive combination of bucket, account, and organization settings. For more information about the hierarchy and policy interactions, see [Using the S3 console](block-public-access-bucket.md).
@@ -65,7 +65,7 @@ For information about using the other AWS SDKs, see [Developing with Amazon S3 u
 
 For information about using Amazon S3 Block Public Access through the REST APIs, see the following topics in the *Amazon Simple Storage Service API Reference*.
 + Bucket-level operations
-  + [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutPublicAccessBlock.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutPublicAccessBlock.html)
-  + [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetPublicAccessBlock.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetPublicAccessBlock.html)
-  + [https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeletePublicAccessBlock.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeletePublicAccessBlock.html)
-  + [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketPolicyStatus.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketPolicyStatus.html)
+  + [PutPublicAccessBlock](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutPublicAccessBlock.html)
+  + [GetPublicAccessBlock](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetPublicAccessBlock.html)
+  + [DeletePublicAccessBlock](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeletePublicAccessBlock.html)
+  + [GetBucketPolicyStatus](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketPolicyStatus.html)

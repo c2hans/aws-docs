@@ -22,7 +22,7 @@ When an appliance is online, AWS Panorama sends metrics to Amazon CloudWatch. Yo
 **Pricing**
 CloudWatch has an Always Free tier. Beyond the free tier threshold, CloudWatch charges for metrics, dashboards, alarms, logs, and insights. For details, see [CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/).
 
-For more information about CloudWatch, see the [https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/).
+For more information about CloudWatch, see the [*Amazon CloudWatch User Guide*](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/).
 
 **Topics**
 + [Using device metrics](#monitoring-cloudwatch-device)

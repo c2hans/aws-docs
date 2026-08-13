@@ -12,7 +12,7 @@ Use AWS Key Management Service (AWS KMS) to create and manage encryption keys. W
 AWS KMS encryption is available for `Standard_Stream`, `InteractiveCommands`, and `NonInteractiveCommands` session types. To use the option to encrypt session data using a key created in AWS KMS, version 2.3.539.0 or later of AWS Systems Manager SSM Agent must be installed on the managed node.
 
 **Note**
-You must allow AWS KMS encryption in order to reset passwords on your managed nodes from the AWS Systems Manager console. For more information, see [Reset a password on a managed node](fleet-manager-reset-password.md#managed-instance-reset-a-password).
+You must allow AWS KMS encryption to reset passwords on your managed nodes from the AWS Systems Manager console. For more information, see [Reset a password on a managed node](fleet-manager-reset-password.md#managed-instance-reset-a-password).
 
 You can use a key that you created in your AWS account. You can also use a key that was created in a different AWS account. The creator of the key in a different AWS account must provide you with the permissions needed to use the key.
 
@@ -20,7 +20,7 @@ After you turn on KMS key encryption for your session data, both the users who s
 + Add AWS KMS permissions for users in your account: [Sample IAM policies for Session Manager](getting-started-restrict-access-quickstart.md).
 + Add AWS KMS permissions for managed nodes in your account: [Step 2: Verify or add instance permissions for Session Manager](session-manager-getting-started-instance-profile.md).
 
-For more information about creating and managing KMS keys, see the [https://docs.aws.amazon.com/kms/latest/developerguide/](https://docs.aws.amazon.com/kms/latest/developerguide/).
+For more information about creating and managing KMS keys, see the [*AWS Key Management Service Developer Guide*](https://docs.aws.amazon.com/kms/latest/developerguide/).
 
 For information about using the AWS CLI to turn on KMS key encryption of session data in your account, see [Create a Session Manager preferences document (command line)](getting-started-create-preferences-cli.md) or [Update Session Manager preferences (command line)](getting-started-configure-preferences-cli.md).
 

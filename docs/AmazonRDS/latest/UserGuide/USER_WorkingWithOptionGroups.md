@@ -102,7 +102,7 @@ After you create a new option group, it has no options. To learn how to add opti
 ### AWS CLI
 <a name="USER_WorkingWithOptionGroups.Create.CLI"></a>
 
-To create an option group, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/create-option-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/create-option-group.html) command with the following required parameters.
+To create an option group, use the AWS CLI [`create-option-group`](https://docs.aws.amazon.com/cli/latest/reference/rds/create-option-group.html) command with the following required parameters.
 + `--option-group-name`
 + `--engine-name`
 + `--major-engine-version`
@@ -133,7 +133,7 @@ aws rds create-option-group ^
 ### RDS API
 <a name="USER_WorkingWithOptionGroups.Create.API"></a>
 
-To create an option group, call the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateOptionGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateOptionGroup.html) operation. Include the following parameters:
+To create an option group, call the Amazon RDS API [`CreateOptionGroup`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateOptionGroup.html) operation. Include the following parameters:
 + `OptionGroupName`
 + `EngineName`
 + `MajorEngineVersion`
@@ -374,7 +374,7 @@ You can use the AWS Management Console to list all of the options and option set
 ### AWS CLI
 <a name="USER_WorkingWithOptionGroups.ListOption.CLI"></a>
 
-To list the options and option settings for an option group, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-option-groups.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-option-groups.html) command. Specify the name of the option group whose options and settings you want to view. If you don't specify an option group name, all option groups are described.
+To list the options and option settings for an option group, use the AWS CLI [`describe-option-groups`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-option-groups.html) command. Specify the name of the option group whose options and settings you want to view. If you don't specify an option group name, all option groups are described.
 
 **Example**
 The following example lists the options and option settings for all option groups.
@@ -393,7 +393,7 @@ aws rds describe-option-groups --option-group-name {{testoptiongroup}}
 ### RDS API
 <a name="USER_WorkingWithOptionGroups.ListOption.API"></a>
 
-To list the options and option settings for an option group, use the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeOptionGroups.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeOptionGroups.html) operation. Specify the name of the option group whose options and settings you want to view. If you don't specify an option group name, all option groups are described.
+To list the options and option settings for an option group, use the Amazon RDS API [`DescribeOptionGroups`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeOptionGroups.html) operation. Specify the name of the option group whose options and settings you want to view. If you don't specify an option group name, all option groups are described.
 
 ## Modifying an option setting
 <a name="USER_WorkingWithOptionGroups.ModifyOption"></a>
@@ -431,7 +431,7 @@ You can use the AWS Management Console to modify an option setting.
 ### AWS CLI
 <a name="USER_WorkingWithOptionGroups.ModifyOption.CLI"></a>
 
-To modify an option setting, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/add-option-to-option-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/add-option-to-option-group.html) command with the option group and option that you want to modify. By default, the option is enabled for each associated DB instance during its next maintenance window. To apply the change immediately to all associated DB instances, include the `--apply-immediately` parameter. To modify an option setting, use the `--settings` argument.
+To modify an option setting, use the AWS CLI [`add-option-to-option-group`](https://docs.aws.amazon.com/cli/latest/reference/rds/add-option-to-option-group.html) command with the option group and option that you want to modify. By default, the option is enabled for each associated DB instance during its next maintenance window. To apply the change immediately to all associated DB instances, include the `--apply-immediately` parameter. To modify an option setting, use the `--settings` argument.
 
 **Example**
 The following example modifies the port that the Oracle Enterprise Manager Database Control (OEM) uses in an option group named `testoptiongroup` and immediately applies the change.
@@ -493,7 +493,7 @@ OPTIONSETTINGS  ACCEPTED,REJECTED,REQUESTED,REQUIRED  STATIC  STRING  REQUESTED 
 ### RDS API
 <a name="USER_WorkingWithOptionGroups.ModifyOption.API"></a>
 
-To modify an option setting, use the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyOptionGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyOptionGroup.html) command with the option group and option that you want to modify. By default, the option is enabled for each associated DB instance during its next maintenance window. To apply the change immediately to all associated DB instances, include the `ApplyImmediately` parameter and set it to `true`.
+To modify an option setting, use the Amazon RDS API [`ModifyOptionGroup`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyOptionGroup.html) command with the option group and option that you want to modify. By default, the option is enabled for each associated DB instance during its next maintenance window. To apply the change immediately to all associated DB instances, include the `ApplyImmediately` parameter and set it to `true`.
 
 ## Removing an option from an option group
 <a name="USER_WorkingWithOptionGroups.RemoveOption"></a>
@@ -525,7 +525,7 @@ You can use the AWS Management Console to remove an option from an option group.
 ### AWS CLI
 <a name="USER_WorkingWithOptionGroups.RemoveOption.CLI"></a>
 
-To remove an option from an option group, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/remove-option-from-option-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/remove-option-from-option-group.html) command with the option that you want to delete. By default, the option is removed from each associated DB instance during its next maintenance window. To apply the change immediately, include the `--apply-immediately` parameter.
+To remove an option from an option group, use the AWS CLI [`remove-option-from-option-group`](https://docs.aws.amazon.com/cli/latest/reference/rds/remove-option-from-option-group.html) command with the option that you want to delete. By default, the option is removed from each associated DB instance during its next maintenance window. To apply the change immediately, include the `--apply-immediately` parameter.
 
 **Example**
 The following example removes the Oracle Enterprise Manager Database Control (OEM) option from an option group named `testoptiongroup` and immediately applies the change.
@@ -555,7 +555,7 @@ OPTIONGROUP    testoptiongroup oracle-ee   19    Test option group
 ### RDS API
 <a name="USER_WorkingWithOptionGroups.RemoveOption.API"></a>
 
-To remove an option from an option group, use the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyOptionGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyOptionGroup.html) action. By default, the option is removed from each associated DB instance during its next maintenance window. To apply the change immediately, include the `ApplyImmediately` parameter and set it to `true`.
+To remove an option from an option group, use the Amazon RDS API [`ModifyOptionGroup`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyOptionGroup.html) action. By default, the option is removed from each associated DB instance during its next maintenance window. To apply the change immediately, include the `ApplyImmediately` parameter and set it to `true`.
 
 Include the following parameters:
 + `OptionGroupName`
@@ -595,7 +595,7 @@ An error occurred (InvalidOptionGroupStateFault) when calling the DeleteOptionGr
 
 If a DB instance is associated with the option group, modify the DB instance to use a different option group. For more information, see [Modifying an Amazon RDS DB instance](Overview.DBInstance.Modifying.md).
 
-If a manual DB snapshot is associated with the option group, modify the DB snapshot to use a different option group. You can do so using the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-snapshot.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-snapshot.html) command.
+If a manual DB snapshot is associated with the option group, modify the DB snapshot to use a different option group. You can do so using the AWS CLI [`modify-db-snapshot`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-snapshot.html) command.
 
 **Note**
 You can't modify the option group of an automated DB snapshot.
@@ -620,7 +620,7 @@ You can't modify the option group of an automated DB snapshot.
 ### AWS CLI
 <a name="USER_WorkingWithOptionGroups.Delete.CLI"></a>
 
-To delete an option group, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/delete-option-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/delete-option-group.html) command with the following required parameter.
+To delete an option group, use the AWS CLI [`delete-option-group`](https://docs.aws.amazon.com/cli/latest/reference/rds/delete-option-group.html) command with the following required parameter.
 + `--option-group-name`
 
 **Example**
@@ -642,5 +642,5 @@ aws rds delete-option-group ^
 ### RDS API
 <a name="USER_WorkingWithOptionGroups.Delete.API"></a>
 
-To delete an option group, call the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteOptionGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteOptionGroup.html) operation. Include the following parameter:
+To delete an option group, call the Amazon RDS API [`DeleteOptionGroup`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteOptionGroup.html) operation. Include the following parameter:
 + `OptionGroupName`

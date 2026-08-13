@@ -28,7 +28,7 @@ To add the driver to your project, in your Maven build file `pom.xml`, add the f
 </dependency>
 ```
 
-The driver uses the [https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/credentials.html](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/credentials.html). If you run the driver on Amazon EKS, it might pick up the credentials of the node it is running on instead of the service account role. To address this, add version 1 of `com.amazonaws:aws-java-sdk-sts` to your Gradle or Maven project file as a dependency.
+The driver uses the [*default credential provider chain*](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/credentials.html). If you run the driver on Amazon EKS, it might pick up the credentials of the node it is running on instead of the service account role. To address this, add version 1 of `com.amazonaws:aws-java-sdk-sts` to your Gradle or Maven project file as a dependency.
 
 To set an AWS PrivateLink DNS endpoint URL and a region in the `secretsmanager.properties` file:
 

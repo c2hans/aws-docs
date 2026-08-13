@@ -39,7 +39,7 @@ Be sure to configure a [CloudWatch Logs resource policy](https://docs.aws.amazon
 ## Amazon S3 cross account as a source
 <a name="cross-account-s3-access"></a>
 
-You can grant access across accounts with Amazon S3 so that CloudWatch pipelines can access S3 buckets in another account as a source. To enable cross-account access, see [Bucket owner granting cross-account bucket permissions](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) in the *Amazon S3 User Guide*. After you have granted access, ensure that your pipeline role has the required permissions.
+You can grant access across accounts with Amazon S3 so that CloudWatch pipelines can access S3 buckets in another account as a source. To enable cross-account access, see [Bucket owner granting cross-account bucket permissions](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) in the *Amazon S3 User Guide*. After you have granted access, make sure that your pipeline role has the required permissions.
 
 Then, you can create a pipeline using `bucket_owners` to enable cross-account access to an Amazon S3 bucket as a source.
 

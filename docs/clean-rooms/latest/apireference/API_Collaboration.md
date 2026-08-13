@@ -84,7 +84,7 @@ Required: No
  ** autoApprovedChangeTypes **   <a name="API-Type-Collaboration-autoApprovedChangeTypes"></a>
 The types of change requests that are automatically approved for this collaboration.
 Type: Array of strings
-Valid Values: `ADD_MEMBER | GRANT_RECEIVE_RESULTS_ABILITY | REVOKE_RECEIVE_RESULTS_ABILITY`
+Valid Values: `ADD_MEMBER | GRANT_RECEIVE_RESULTS_ABILITY | REVOKE_RECEIVE_RESULTS_ABILITY | GRANT_EXPORT_QUERY_ANALYSIS_LOG_ABILITY | REVOKE_EXPORT_QUERY_ANALYSIS_LOG_ABILITY`
 Required: No
 
  ** dataEncryptionMetadata **   <a name="API-Type-Collaboration-dataEncryptionMetadata"></a>

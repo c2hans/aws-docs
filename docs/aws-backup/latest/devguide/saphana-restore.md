@@ -8,14 +8,14 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/saphana-resto
 SAP HANA databases on EC2 instances can be restored using the AWS Backup console, using API, or using AWS CLI.
 
 **Topics**
-+ [Restore an SAP HANA database with the AWS Backup console](#w2aac17c33c43b9)
-+ [[StartRestoreJob API](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html) for SAP HANA on EC2](#w2aac17c33c43c11)
-+ [CLI for SAP HANA on EC2](#w2aac17c33c43c13)
++ [Restore an SAP HANA database with the AWS Backup console](#w2aac17c35c43b9)
++ [[StartRestoreJob API](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html) for SAP HANA on EC2](#w2aac17c35c43c11)
++ [CLI for SAP HANA on EC2](#w2aac17c35c43c13)
 + [SAP HANA High Availability (HA) restore](#saphanarestoreha)
 + [Troubleshooting](#saphanarestoretroubleshooting)
 
 ## Restore an SAP HANA database with the AWS Backup console
-<a name="w2aac17c33c43b9"></a>
+<a name="w2aac17c35c43b9"></a>
 
 Note that backup jobs and restore jobs involving the same database cannot occur concurrently. When an SAP HANA database restore job is occurring, attempts to back up the same database will likely result in an error: "Database cannot be backed up while it is stopped."
 
@@ -55,7 +55,7 @@ SAP HANA database restores are destructive. Restoring a database will overwrite 
 If the procedure was successful, a blue banner will appear at the top of the console. This signifies that the restore job is in progress. You will be automatically redirected to the Jobs page where your restore job will appear in the list of restore jobs. This most recent job will have a status of `Pending`. You can search for and then click on the restore job ID too see details of each restore job. You can refresh the restore jobs list by clicking the refresh button to view changes to the restore job status.
 
 ## [StartRestoreJob API](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html) for SAP HANA on EC2
-<a name="w2aac17c33c43c11"></a>
+<a name="w2aac17c35c43c11"></a>
 
 This action recovers the saved resource identified by an Amazon Resource Name (ARN).
 
@@ -90,7 +90,7 @@ A set of metadata key-value pairs. Contains information, such as a resource name
 
 You need to include specific metadata to restore an SAP HANA on Amazon EC2 instance. See [ StartRestoreJob metadata](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html#API_StartRestoreJob_RequestBody) for SAP HANA-specific items.
 
-To retrieve the relevant metadata, you can use the call [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_GetRecoveryPointRestoreMetadata.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_GetRecoveryPointRestoreMetadata.html).
+To retrieve the relevant metadata, you can use the call [`GetRecoveryPointRestoreMetadata`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_GetRecoveryPointRestoreMetadata.html).
 
 Example of a standard SAP HANA database recovery point:
 
@@ -136,7 +136,7 @@ Example of a continuous SAP HANA database recovery point:
 ```
 
 ## CLI for SAP HANA on EC2
-<a name="w2aac17c33c43c13"></a>
+<a name="w2aac17c35c43c13"></a>
 
 The command `start-restore-job` recovers the saved resource identified by an Amazon Resource Name (ARN). CLI will follow the API guideline above.
 
@@ -229,7 +229,7 @@ After the restore job completes, go to the restored SAP HANA HA system, then:
 
 1. Enable any backup plans you disabled prior to the restore operation.
 
-*(Optional)* You can keep the application in sync on [AWS Systems Manager for SAP](https://docs.aws.amazon.com/ssm-sap/latest/userguide/what-is-ssm-for-sap.html) by calling [https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_StartApplicationRefresh.html](https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_StartApplicationRefresh.html), or you can wait for the scheduled application refresh that will bring the latest SAP metadata.
+*(Optional)* You can keep the application in sync on [AWS Systems Manager for SAP](https://docs.aws.amazon.com/ssm-sap/latest/userguide/what-is-ssm-for-sap.html) by calling [`StartApplicationRefresh`](https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_StartApplicationRefresh.html), or you can wait for the scheduled application refresh that will bring the latest SAP metadata.
 
 ### System database to an SAP HANA single-node target
 <a name="systemdbtargetsingle"></a>
@@ -248,7 +248,7 @@ After the restore job completes, go to the target single-node SAP HANA system, t
 
 1. Enable any backup plans you disabled prior to the restore operation.
 
-*(Optional)* You can keep the application in sync on [AWS Systems Manager for SAP](https://docs.aws.amazon.com/ssm-sap/latest/userguide/what-is-ssm-for-sap.html) by calling [https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_StartApplicationRefresh.html](https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_StartApplicationRefresh.html), or you can wait for the scheduled application refresh that will bring the latest SAP metadata.
+*(Optional)* You can keep the application in sync on [AWS Systems Manager for SAP](https://docs.aws.amazon.com/ssm-sap/latest/userguide/what-is-ssm-for-sap.html) by calling [`StartApplicationRefresh`](https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_StartApplicationRefresh.html), or you can wait for the scheduled application refresh that will bring the latest SAP metadata.
 
 ### Tenant database (in place or system copy)
 <a name="tenantdb"></a>

@@ -20,6 +20,11 @@ The provider-specific resource identifier for the repository.
 Type: String
 Required: Yes
 
+ ** branch **   <a name="securityagent-Type-IntegratedRepository-branch"></a>
+An optional override for the repository branch.
+Type: String
+Required: No
+
 ## See Also
 <a name="API_IntegratedRepository_SeeAlso"></a>
 

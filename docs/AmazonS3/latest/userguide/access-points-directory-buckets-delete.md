@@ -40,12 +40,12 @@ The following command deletes the access point {{{{my-access-point}}}}--{{zoneID
 aws s3control delete-access-point --name {{{{my-access-point}}}}--{{zoneID}}--xa-s3 --account-id {{111122223333}}
 ```
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/delete-access-point.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/delete-access-point.html) in the *AWS CLI Command Reference*.
+For more information and examples, see [delete-access-point](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/delete-access-point.html) in the *AWS CLI Command Reference*.
 
 ## Using the REST API
 <a name="access-points-directory-buckets-delete-rest"></a>
 
-You can use the REST API to delete your access point. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAccessPoint.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAccessPoint.html) in the *Amazon Simple Storage Service API Reference*.
+You can use the REST API to delete your access point. For more information, see [DeleteAccessPoint](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAccessPoint.html) in the *Amazon Simple Storage Service API Reference*.
 
 ## Using the AWS SDKs
 <a name="access-points-directory-buckets-delete-sdk"></a>

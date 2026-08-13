@@ -56,7 +56,7 @@ This option is only available when the endpoint's IP address type is configured 
 #### [ AWS CLI ]
 
 **To create an EC2 Instance Connect Endpoint**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/create-instance-connect-endpoint.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-instance-connect-endpoint.html) command.
+Use the [create-instance-connect-endpoint](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-instance-connect-endpoint.html) command.
 
 ```
 aws ec2 create-instance-connect-endpoint \
@@ -100,7 +100,7 @@ The following is example output.
 ```
 
 **To monitor the creation status**
-The initial value for the `State` field is `create-in-progress`. Before you can connect to an instance using this endpoint, wait until the state is `create-complete`. Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-connect-endpoints.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-connect-endpoints.html) command to monitor the status of the EC2 Instance Connect Endpoint. The `--query` parameter filters the results to the `State` field.
+The initial value for the `State` field is `create-in-progress`. Before you can connect to an instance using this endpoint, wait until the state is `create-complete`. Use the [describe-instance-connect-endpoints](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-connect-endpoints.html) command to monitor the status of the EC2 Instance Connect Endpoint. The `--query` parameter filters the results to the `State` field.
 
 ```
 aws ec2 describe-instance-connect-endpoints --instance-connect-endpoint-ids {{eice-0123456789example}} --query InstanceConnectEndpoints[*].State --output text
@@ -116,7 +116,7 @@ create-complete
 #### [ PowerShell ]
 
 **To create the EC2 Instance Connect Endpoint**
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2InstanceConnectEndpoint.html](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2InstanceConnectEndpoint.html) cmdlet.
+Use the [New-EC2InstanceConnectEndpoint](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2InstanceConnectEndpoint.html) cmdlet.
 
 ```
 New-EC2InstanceConnectEndpoint -SubnetId {{subnet-0123456789example}}
@@ -151,7 +151,7 @@ IpAddressType               : {{ipv4}}
 ```
 
 **To monitor the creation status**
-The initial value for the `State` field is `create-in-progress`. Before you can connect to an instance using this endpoint, wait until the state is `create-complete`. Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceConnectEndpoint.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceConnectEndpoint.html) cmdlet to monitor the status of the EC2 Instance Connect Endpoint. `.State.Value` filters the results to the `State` field.
+The initial value for the `State` field is `create-in-progress`. Before you can connect to an instance using this endpoint, wait until the state is `create-complete`. Use the [Get-EC2InstanceConnectEndpoint](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceConnectEndpoint.html) cmdlet to monitor the status of the EC2 Instance Connect Endpoint. `.State.Value` filters the results to the `State` field.
 
 ```
 (Get-EC2InstanceConnectEndpoint -InstanceConnectEndpointId "{{eice-0123456789example}}").State.Value

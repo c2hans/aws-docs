@@ -27,7 +27,7 @@ EventBridge routes events according to *rules* you create on the event bus. For 
 ## Connector for AD events
 <a name="eventbridge-service-events"></a>
 
-For a list of Connector for AD events sent to EventBridge, refer to the Connector for AD topic in the [https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-pca-connector-ad.html](https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-pca-connector-ad.html).
+For a list of Connector for AD events sent to EventBridge, refer to the Connector for AD topic in the [*EventBridge Events Reference*](https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-pca-connector-ad.html).
 
 ### Event structure
 <a name="eventbridge-event-structure"></a>

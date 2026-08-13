@@ -26,7 +26,7 @@ Additionally, AWS requires the information listed in the topic [Partner Terms](p
 The partner updates their user experience to enable the SaaS administrator to create a partner event source.
 + User specifies an event generator, an AWS account ID, and a Region in which they want the event source to be created.
 + Perform any required authentication checks to ensure that the SaaS administrator has appropriate permissions on the event generator, as determined by the partner.
-+ Call the [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_CreatePartnerEventSource.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_CreatePartnerEventSource.html) API using the Region supplied by the customer. Specify the event generator and the AWS account ID, using the partner’s AWS credentials.
++ Call the [`CreatePartnerEventSource`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_CreatePartnerEventSource.html) API using the Region supplied by the customer. Specify the event generator and the AWS account ID, using the partner’s AWS credentials.
   + To avoid incorrect delivery of events, the event generator name must be unique within the SaaS system. For example, if two SaaS customers set up an event bus for an event generator named "my-channel", then the event generator name should include additional disambiguating information, such as an account ID: “1234.my-channel”.
 
 ### Best practices
@@ -41,7 +41,7 @@ The partner updates their user experience to enable the SaaS administrator to cr
 
 The partner updates their backend system to push events to AWS.
 + When an event is generated, check the persistent data store to determine whether a partner event source exists for the resource that generated this event. If not, do nothing.
-+ Call the [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutPartnerEvents.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutPartnerEvents.html) API, specifying the event source name, using the partner’s AWS credentials.
++ Call the [`PutPartnerEvents`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutPartnerEvents.html) API, specifying the event source name, using the partner’s AWS credentials.
 + Inspect the results to see if there are any failures.
   + For retry-able failures, call the API again (for example, "Internal Service Error").
   + For non-retry-able failures, delete the record from the data store (for example, "Event Bus Not Found").
@@ -62,4 +62,4 @@ The partner updates their backend system to push events to AWS.
 
 The partner updates their user experience to enable the AWS customer to list and delete partner event buses associated with a given event generator.
 + Perform any required authentication checks to ensure that the SaaS administrator has appropriate permissions on the event generator, as determined by the partner.
-+ Call the [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_ListPartnerEventSources.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_ListPartnerEventSources.html) and [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_DeletePartnerEventSource.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_DeletePartnerEventSource.html) APIs, as appropriate, using the partner’s AWS credentials.
++ Call the [`ListPartnerEventSources`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_ListPartnerEventSources.html) and [`DeletePartnerEventSource`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_DeletePartnerEventSource.html) APIs, as appropriate, using the partner’s AWS credentials.

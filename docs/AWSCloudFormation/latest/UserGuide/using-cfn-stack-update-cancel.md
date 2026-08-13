@@ -31,4 +31,4 @@ The stack proceeds to the `UPDATE_ROLLBACK_IN_PROGRESS` state. After the update 
 ## To cancel a stack update (AWS CLI)
 <a name="using-cfn-stack-update-cancel-cli"></a>
 
-Use the command [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/cancel-update-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/cancel-update-stack.html) to cancel an update. For more information, see [Cancel a stack update](service_code_examples.md#cancel-update-stack-sdk).
+Use the command [cancel-update-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/cancel-update-stack.html) to cancel an update. For more information, see [Cancel a stack update](service_code_examples.md#cancel-update-stack-sdk).

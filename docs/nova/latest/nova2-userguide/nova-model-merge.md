@@ -38,7 +38,7 @@ You may **not need** model merging when:
 
  The default value of `model_importance_score.fine_tuned_model` is 1.0, meaning the training output checkpoint uses the fine-tuned weights entirely, with no blending from the "base model". The default works well when your training data is comprehensive and closely represents your target task.
 
-You can control how the final model balances specialization versus general knowledge by setting the `model_importance_score` in your [ hyperparameters](nova-fine-tune-2.md#nova-2-selecting-hyperparameters). For example:
+You can control how the final model balances specialization versus general knowledge by setting the `model_importance_score` in your [ hyperparameters](nova-sft-2-smtj.md#nova-2-selecting-hyperparameters). For example:
 
 ```
     training_config:

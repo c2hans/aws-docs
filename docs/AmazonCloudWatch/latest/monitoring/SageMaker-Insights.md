@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SageM
 # CloudWatch SageMaker AI Insights
 <a name="SageMaker-Insights"></a>
 
-Use CloudWatch SageMaker AI Insights to monitor and troubleshoot SageMaker AI inference endpoints at scale. The dashboard displays curated metrics and visualizations across three views—**Performance**, **Capacity**, and **Reliability**—so you can quickly identify issues, optimize resource utilization, and ensure high availability across your endpoints.
+Use CloudWatch SageMaker AI Insights to monitor and troubleshoot SageMaker AI inference endpoints at scale. The dashboard displays curated metrics and visualizations across three views—**Performance**, **Capacity**, and **Reliability**—so you can quickly identify issues, optimize resource utilization, and make sure high availability across your endpoints.
 
 SageMaker AI Insights supports monitoring across endpoint types (single‐model endpoints and inference component (IC)‐based endpoints) and inference frameworks (vLLM, SGLang, TensorRT‐LLM).
 
@@ -24,7 +24,7 @@ To get started with SageMaker AI Insights, see the following topics.
 + **Per‐GPU attribution.** GPU metrics (DCGM) include per‐inference‐component attribution for multi‐tenant instances.
 + **Inference framework metrics.** Native vLLM and SGLang metrics—tokens per second, time to first token (TTFT), inter‐token latency, KV cache utilization, queue depth, batch size—without custom instrumentation.
 + **PromQL query support.** Query in CloudWatch, CloudWatch Query Studio, or Amazon Managed Grafana.
-+ **Configurable scrape frequency.** Set via `MetricPublishFrequencyInSeconds` (10, 30, 60, 120, 180, 240, or 300 seconds; default 60). Control plane metrics are event‐driven.
++ **Configurable scrape frequency.** Set through `MetricPublishFrequencyInSeconds` (10, 30, 60, 120, 180, 240, or 300 seconds; default 60). Control plane metrics are event‐driven.
 
 ## Architecture and data flow
 <a name="SageMaker-AI-Insights-architecture"></a>
@@ -33,9 +33,9 @@ To get started with SageMaker AI Insights, see the following topics.
 
 1. The **OTel Collector** scrapes these endpoints and enriches each metric with labels (endpoint name, IC name, instance ID, AZ).
 
-1. Enriched metrics are **exported via OTLP** to CloudWatch.
+1. Enriched metrics are **exported through OTLP** to CloudWatch.
 
-1. Metrics are **queryable via PromQL** in CloudWatch.
+1. Metrics are **queryable through PromQL** in CloudWatch.
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐

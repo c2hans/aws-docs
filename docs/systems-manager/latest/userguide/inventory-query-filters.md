@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/invento
 # Querying an inventory collection by using filters
 <a name="inventory-query-filters"></a>
 
-After you collect inventory data, you can use the filter capabilities in AWS Systems Manager to query a list of managed nodes that meet certain filter criteria.
+After you collect inventory data, you can use the filter capabilities in AWS Systems Manager to query managed nodes that meet certain filter criteria.
 
 **To query nodes based on inventory filters**
 

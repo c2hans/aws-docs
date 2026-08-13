@@ -97,7 +97,7 @@ Backups are stored for the number of days you specify, known as the backup *life
 
 This is set as the **total retention period** in the lifecycle section of backup rule configuration in the AWS Backup console.
 
-If you use AWS CLI, this is set using the parameter [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_Lifecycle.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_Lifecycle.html). The retention period for snapshots can range between 1 day and 100 years (or indefinitely if you don't enter one), while the retention period for continuous backups can range from 1 day to 35 days. The creation date of a backup is the date the backup job started, not the date it completed. If your backup job doesn't complete on the same date it started, use the date on which it began to help calculate retention periods.
+If you use AWS CLI, this is set using the parameter [`DeleteAfterDays`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_Lifecycle.html). The retention period for snapshots can range between 1 day and 100 years (or indefinitely if you don't enter one), while the retention period for continuous backups can range from 1 day to 35 days. The creation date of a backup is the date the backup job started, not the date it completed. If your backup job doesn't complete on the same date it started, use the date on which it began to help calculate retention periods.
 
 Backups are maintained in a storage tier. Each tier incurs a different cost for storage and for restore, as outlined by [AWS Backup pricing](https://aws.amazon.com/backup/pricing/). Every backup is created and is stored in warm storage. Depending on how long you choose to store your backup, you may wish to transition your backup to a lower-cost tier called cold storage. [Feature availability by resource](backup-feature-availability.md#features-by-resource) displays which resources have this optional feature.
 
@@ -119,13 +119,13 @@ Backups are maintained in a storage tier. Each tier incurs a different cost for 
 ------
 #### [ AWS CLI ]
 
-1. Use [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-backup-plan.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-backup-plan.html) or [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/update-backup-plan.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/update-backup-plan.html).
+1. Use [`create-backup-plan`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-backup-plan.html) or [`update-backup-plan`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/update-backup-plan.html).
 
 1.
 
-1. Include the Boolean parameter [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_Lifecycle.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_Lifecycle.html) for EBS resources.
+1. Include the Boolean parameter [`OptInToArchiveForSupportedResources`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_Lifecycle.html) for EBS resources.
 
-1. Include the parameter [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_Lifecycle.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_Lifecycle.html).
+1. Include the parameter [`MoveToColdStorageAfterdays`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_Lifecycle.html).
 
 1. Use the parameter `DeleteAfterDays`. This value must be 90 (days) plus the value you input for `MoveToColdStorageAfterDays`.
 
@@ -182,7 +182,7 @@ Specifies when to transition the backup copy to cold storage and when to expire 
 
 **Expire** specifies the number of days after creation that the copy is deleted. This must be greater than 90 days beyond the **Transition to cold storage** value.
 
-If the value for [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CopyAction.html#Backup-Type-CopyAction-Lifecycle](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CopyAction.html#Backup-Type-CopyAction-Lifecycle) (shown as **Expire** in the console) is not specified in the copy settings, the copy will follow the lifecycle settings of the backup from which it is copied.
+If the value for [`Lifecycle:DeleteAfterDays`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CopyAction.html#Backup-Type-CopyAction-Lifecycle) (shown as **Expire** in the console) is not specified in the copy settings, the copy will follow the lifecycle settings of the backup from which it is copied.
 
 ### Tags added to recovery points
 <a name="recovery-point-tags"></a>

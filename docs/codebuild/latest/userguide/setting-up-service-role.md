@@ -26,7 +26,7 @@ The service role described on this page contains a policy that grants the minimu
    You should have already signed in to the console by using one of the following:
    + Your AWS root account. This is not recommended. For more information, see [The AWS account root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) in the *user Guide*.
    + An administrator user in your AWS account. For more information, see [Creating Your First AWS account root user and Group](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html) in the *user Guide*.
-   + An user in your AWS account with permission to perform the following minimum set of actions:
+   + A user in your AWS account with permission to perform the following minimum set of actions:
 
      ```
      iam:AddRoleToInstanceProfile

@@ -58,7 +58,7 @@ The `AutomationAssumeRole` parameter requires the following actions to use the r
 
 Follow these steps to configure the automation:
 
-1. Navigate to the [https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootEC2InstanceConnect/description](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootEC2InstanceConnect/description) in the AWS Systems Manager console.
+1. Navigate to the [`AWSSupport-TroubleshootEC2InstanceConnect`](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootEC2InstanceConnect/description) in the AWS Systems Manager console.
 
 1. Select Execute automation.
 

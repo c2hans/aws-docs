@@ -6,8 +6,8 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 <a name="model-parameters-openai"></a>
 
 OpenAI offers the following open-weight models:
-+ [https://huggingface.co/openai/gpt-oss-20b](https://huggingface.co/openai/gpt-oss-20b) – A smaller model optimized for lower latency and local or specialized use cases.
-+ [https://huggingface.co/openai/gpt-oss-120b](https://huggingface.co/openai/gpt-oss-120b) – A larger model optimized for production and general purpose or high-reasoning use cases.
++ [gpt-oss-20b](https://huggingface.co/openai/gpt-oss-20b) – A smaller model optimized for lower latency and local or specialized use cases.
++ [gpt-oss-120b](https://huggingface.co/openai/gpt-oss-120b) – A larger model optimized for production and general purpose or high-reasoning use cases.
 
 The following table summarizes information about the models:
 

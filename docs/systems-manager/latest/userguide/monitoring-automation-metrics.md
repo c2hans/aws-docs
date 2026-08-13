@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/monitor
 
 *Metrics* are the fundamental concept in Amazon CloudWatch. A metric represents a time-ordered set of data points that are published to CloudWatch. Think of a metric as a variable to monitor and the data points as representing the values of that variable over time.
 
-Automation is a tool in AWS Systems Manager. Systems Manager publishes metrics about Automation usage to CloudWatch. This allows you to set alarms based on those metrics.
+Automation is a tool in AWS Systems Manager. Systems Manager publishes metrics about Automation usage to CloudWatch. This lets you set alarms based on those metrics.
 
 **To view Automation metrics in the CloudWatch console**
 

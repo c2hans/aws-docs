@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/build-rules-for-contact-lens.html
 ---
 
-# Create Contact Lens rules using the Connect Customer admin website
+# Create conversational analytics rules using the Connect Customer admin website
 <a name="build-rules-for-contact-lens"></a>
 
-Contact Lens rules allow you to automatically categorize contacts, receive alerts, or generate tasks based on keywords that are used during a call, chat, or email, sentiment scores, customer attributes, and other criteria.
+Conversational analytics rules allow you to automatically categorize contacts, receive alerts, or generate tasks based on keywords that are used during a call, chat, or email, sentiment scores, customer attributes, and other criteria.
 
 This topic explains how to create rules using the Connect Customer admin website. To create and manage rules programmatically, see [Rules actions](https://docs.aws.amazon.com/connect/latest/APIReference/rules-api.html) and the [Connect Customer Rules Function language](https://docs.aws.amazon.com/connect/latest/APIReference/connect-rules-language.html) in the *Connect Customer API Reference Guide*.
 
@@ -24,7 +24,7 @@ For a list of rules feature specifications (for example, how many rules you can 
 
 1. Choose **Add condition**.
 
-   You can combine criteria from a large set of conditions to build very specific Contact Lens rules. Following are the available conditions:
+   You can combine criteria from a large set of conditions to build very specific conversational analytics rules. Following are the available conditions:
    + **Words or phrases**: Choose from [Exact match, Pattern match, or Semantic match](exact-match-pattern-match-semantic-match.md) to trigger an alert or task when keywords are uttered.
    + **Natural Language - Semantic Match**: Provide a natural language statement (e.g., customer called to cancel their account) to match with conversation transcripts using generative AI, and take an action (for example, triggering a task, performing an evaluation, etc.) For more information, see [Generative AI-powered semantic match](natural-language-semantic-match.md)
    + **After contact work (ACW)**: Build rules to measure agent efficiency in completing after contact work.
@@ -97,6 +97,6 @@ For a list of rules feature specifications (for example, how many rules you can 
 
 1. Review and make any edits, then choose **Save**.
 
-1. After you add rules, they are applied to new contacts that occur after the rule was added. Rules are applied when Amazon Connect conversational analytics analyzes conversations.
+1. After you add rules, they are applied to new contacts that occur after the rule was added. Rules are applied when Connect Customer conversational analytics analyzes conversations.
 
    You cannot apply rules to past, stored conversations.

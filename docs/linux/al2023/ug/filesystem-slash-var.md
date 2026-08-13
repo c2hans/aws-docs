@@ -25,7 +25,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/filesystem-slash-var.htm
 **Note**
  In AL2023 the [`systemd` journal replaces `rsyslog`](journald.md), which is a notable difference from the default Amazon Linux 2 configuration.
 
- For more information on reading logs using `journalctl`, see the [https://www.freedesktop.org/software/systemd/man/journalctl.html](https://www.freedesktop.org/software/systemd/man/journalctl.html) manual page.
+ For more information on reading logs using `journalctl`, see the [`journalctl`](https://www.freedesktop.org/software/systemd/man/journalctl.html) manual page.
 
  Many applications use their own mechanisms for writing, and sometimes rotating, log files found in `/var/log`. See the documentation for these applications on how to configure their log files.
 

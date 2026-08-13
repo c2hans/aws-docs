@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/list-dicom
 # Listing import jobs
 <a name="list-dicom-import-jobs"></a>
 
-Use the `ListDICOMImportJobs` action to list import jobs created for a specific HealthImaging [data store](getting-started-concepts.md#concept-data-store). The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListDICOMImportJobs.html](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListDICOMImportJobs.html) in the *AWS HealthImaging API Reference*.
+Use the `ListDICOMImportJobs` action to list import jobs created for a specific HealthImaging [data store](getting-started-concepts.md#concept-data-store). The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`ListDICOMImportJobs`](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListDICOMImportJobs.html) in the *AWS HealthImaging API Reference*.
 
 **Note**
 Import jobs are retained in the list of jobs for 90 days and then archived.

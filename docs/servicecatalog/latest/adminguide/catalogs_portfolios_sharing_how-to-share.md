@@ -93,7 +93,7 @@ A delegated administrator can share AWS Service Catalog resources in their organ
 To register or de-register a delegated administrator, you must use the API or CLI from the management account. For more information, see [RegisterDelegatedAdministrator](https://docs.aws.amazon.com/organizations/latest/APIReference/API_RegisterDelegatedAdministrator.html) and [DeregisterDelegatedAdministrator](https://docs.aws.amazon.com/organizations/latest/APIReference/API_DeregisterDelegatedAdministrator.html) in the *AWS Organizations API Reference*.
 
 **Note**
-Before you can designate a delegate , the administrator must call [https://docs.aws.amazon.com/servicecatalog/latest/dg/API_EnableAWSOrganizationsAccess.html](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_EnableAWSOrganizationsAccess.html).
+Before you can designate a delegate , the administrator must call [`EnableAWSOrganizationsAccess`](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_EnableAWSOrganizationsAccess.html).
 
 The procedure for sharing a portfolio from a delegated administrator account is the same as sharing from a management account, as seen above in [Sharing from a management account](#sharing-from-master).
 

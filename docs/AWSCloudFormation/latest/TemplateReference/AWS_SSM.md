@@ -9,10 +9,13 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::SSM::Association](aws-resource-ssm-association.md)
++ [AWS::SSM::AutomationExecution](aws-resource-ssm-automationexecution.md)
++ [AWS::SSM::CloudConnector](aws-resource-ssm-cloudconnector.md)
 + [AWS::SSM::Document](aws-resource-ssm-document.md)
 + [AWS::SSM::MaintenanceWindow](aws-resource-ssm-maintenancewindow.md)
 + [AWS::SSM::MaintenanceWindowTarget](aws-resource-ssm-maintenancewindowtarget.md)
 + [AWS::SSM::MaintenanceWindowTask](aws-resource-ssm-maintenancewindowtask.md)
++ [AWS::SSM::ManagedInstance](aws-resource-ssm-managedinstance.md)
 + [AWS::SSM::OpsItem](aws-resource-ssm-opsitem.md)
 + [AWS::SSM::Parameter](aws-resource-ssm-parameter.md)
 + [AWS::SSM::PatchBaseline](aws-resource-ssm-patchbaseline.md)

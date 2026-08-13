@@ -90,7 +90,7 @@ You can't use this method to specify an AWS account outside your organization, o
 
 **To update a resource share**
 You can use the following AWS CLI commands to modify a resource share:
-+ To rename a resource share, or to change whether external principals are allowed, use the command [https://docs.aws.amazon.com/cli/latest/reference/ram/update-resource-share.html](https://docs.aws.amazon.com/cli/latest/reference/ram/update-resource-share.html). The following example renames the specified resource share and sets it to allow only principals from its organization. You must use the service endpoint for the AWS Region that contains the resource share.
++ To rename a resource share, or to change whether external principals are allowed, use the command [update-resource-share](https://docs.aws.amazon.com/cli/latest/reference/ram/update-resource-share.html). The following example renames the specified resource share and sets it to allow only principals from its organization. You must use the service endpoint for the AWS Region that contains the resource share.
 
   ```
   $ aws ram update-resource-share \
@@ -110,7 +110,7 @@ You can use the following AWS CLI commands to modify a resource share:
       }
   }
   ```
-+ To add a resource to a resource share, use the command [https://docs.aws.amazon.com/cli/latest/reference/ram/associate-resource-share.html](https://docs.aws.amazon.com/cli/latest/reference/ram/associate-resource-share.html). The following example adds a subnet to the specified resource share.
++ To add a resource to a resource share, use the command [associate-resource-share](https://docs.aws.amazon.com/cli/latest/reference/ram/associate-resource-share.html). The following example adds a subnet to the specified resource share.
 
   ```
   $ aws ram associate-resource-share \
@@ -127,7 +127,7 @@ You can use the following AWS CLI commands to modify a resource share:
       ]
   }
   ```
-+ To add or replace a managed permission for a resource type in a resource share, use the commands [https://docs.aws.amazon.com/cli/latest/reference/ram/list-permissions.html](https://docs.aws.amazon.com/cli/latest/reference/ram/list-permissions.html) and [https://docs.aws.amazon.com/cli/latest/reference/ram/associate-resource-share-permission.html](https://docs.aws.amazon.com/cli/latest/reference/ram/associate-resource-share-permission.html). You can assign only one managed permission per resource type in a resource share. If you try to add a managed permission to a resource type that already has a managed permission, you must include the `--replace` option or the command fails with an error.
++ To add or replace a managed permission for a resource type in a resource share, use the commands [list-permissions](https://docs.aws.amazon.com/cli/latest/reference/ram/list-permissions.html) and [associate-resource-share-permission](https://docs.aws.amazon.com/cli/latest/reference/ram/associate-resource-share-permission.html). You can assign only one managed permission per resource type in a resource share. If you try to add a managed permission to a resource type that already has a managed permission, you must include the `--replace` option or the command fails with an error.
 
   The following example command lists the ARNs for the managed permissions available for an Amazon Elastic Compute Cloud (Amazon EC2) subnet, and then uses one of those ARNs to replace the currently assigned AWS managed permission for that resource type in the specified resource share.
 
@@ -155,7 +155,7 @@ You can use the following AWS CLI commands to modify a resource share:
       "returnValue": true
   }
   ```
-+ To remove a resource from a resource share, use the command [https://docs.aws.amazon.com/cli/latest/reference/ram/disassociate-resource-share.html](https://docs.aws.amazon.com/cli/latest/reference/ram/disassociate-resource-share.html). The following example removes the Amazon EC2 subnet with the specified ARN from the specified resource share.
++ To remove a resource from a resource share, use the command [disassociate-resource-share](https://docs.aws.amazon.com/cli/latest/reference/ram/disassociate-resource-share.html). The following example removes the Amazon EC2 subnet with the specified ARN from the specified resource share.
 
   ```
   $ aws ram disassociate-resource-share \
@@ -172,7 +172,7 @@ You can use the following AWS CLI commands to modify a resource share:
       ]
   }
   ```
-+ To modify the tags attached to a resource share, use the commands [https://docs.aws.amazon.com/cli/latest/reference/ram/tag-resource.html](https://docs.aws.amazon.com/cli/latest/reference/ram/tag-resource.html) and [https://docs.aws.amazon.com/cli/latest/reference/ram/untag-resource.html](https://docs.aws.amazon.com/cli/latest/reference/ram/untag-resource.html). The following example adds the tag `project=lima` to the specified resource share.
++ To modify the tags attached to a resource share, use the commands [tag-resource](https://docs.aws.amazon.com/cli/latest/reference/ram/tag-resource.html) and [untag-resource](https://docs.aws.amazon.com/cli/latest/reference/ram/untag-resource.html). The following example adds the tag `project=lima` to the specified resource share.
 
   ```
   $ aws ram tag-resource \

@@ -58,8 +58,8 @@ Any TOTP-compliant application will work with IAM Identity Center MFA. The follo
 
 | Operating system | Tested authenticator app |
 | --- | --- |
-| Android | [https://play.google.com/store/apps/details?id=com.authy.authy](https://play.google.com/store/apps/details?id=com.authy.authy), [https://play.google.com/store/apps/details?id=com.duosecurity.duomobile](https://play.google.com/store/apps/details?id=com.duosecurity.duomobile), [https://play.google.com/store/apps/details?id=com.azure.authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator), [https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2) |
-| iOS | [https://apps.apple.com/us/app/authy/id494168017](https://apps.apple.com/us/app/authy/id494168017), [https://apps.apple.com/us/app/duo-mobile/id422663827](https://apps.apple.com/us/app/duo-mobile/id422663827), [https://apps.apple.com/us/app/microsoft-authenticator/id983156458](https://apps.apple.com/us/app/microsoft-authenticator/id983156458), [https://apps.apple.com/us/app/google-authenticator/id388497605](https://apps.apple.com/us/app/google-authenticator/id388497605) |
+| Android | [Authy](https://play.google.com/store/apps/details?id=com.authy.authy), [Duo Mobile](https://play.google.com/store/apps/details?id=com.duosecurity.duomobile), [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator), [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2) |
+| iOS | [Authy](https://apps.apple.com/us/app/authy/id494168017), [Duo Mobile](https://apps.apple.com/us/app/duo-mobile/id422663827), [Microsoft Authenticator](https://apps.apple.com/us/app/microsoft-authenticator/id983156458), [Google Authenticator](https://apps.apple.com/us/app/google-authenticator/id388497605) |
 
 ## RADIUS MFA
 <a name="about-radius"></a>

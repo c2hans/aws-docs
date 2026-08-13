@@ -11,7 +11,7 @@ You can use this operation to create a new customer managed configuration record
 
 To start the customer managed configuration recorder and begin recording configuration changes for the resource types you specify, use the [StartConfigurationRecorder](https://docs.aws.amazon.com/config/latest/APIReference/API_StartConfigurationRecorder.html) operation.
 
-For more information, see [https://docs.aws.amazon.com/config/latest/developerguide/stop-start-recorder.html](https://docs.aws.amazon.com/config/latest/developerguide/stop-start-recorder.html) in the * AWS Config Developer Guide*.
+For more information, see [**Working with the Configuration Recorder**](https://docs.aws.amazon.com/config/latest/developerguide/stop-start-recorder.html) in the * AWS Config Developer Guide*.
 
 **Note**
  **One customer managed configuration recorder per account per Region**

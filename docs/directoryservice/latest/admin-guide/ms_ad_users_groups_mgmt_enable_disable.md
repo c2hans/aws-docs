@@ -36,7 +36,7 @@ You can enable user and group management with the AWS Management Console.
  The following describes how to format a request that enables the AWS Directory Service Data CLI. You must include your Directory ID number in your request.
 
 **Note**
-This command uses the [https://docs.aws.amazon.com//cli/latest/reference/ds/](https://docs.aws.amazon.com//cli/latest/reference/ds/) namespace.
+This command uses the [`aws ds`](https://docs.aws.amazon.com//cli/latest/reference/ds/) namespace.
 
 **To enable AWS Directory Service Data CLI**
 +  Open the AWS CLI, and run the following command with your Directory ID:
@@ -45,13 +45,13 @@ This command uses the [https://docs.aws.amazon.com//cli/latest/reference/ds/](ht
 aws ds enable-directory-data-access --directory-id {{d-1234567890}}
 ```
 
-For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds/enable-directory-data-access.html](https://docs.aws.amazon.com//cli/latest/reference/ds/enable-directory-data-access.html).
+For more information, see [`enable-directory-data-access`](https://docs.aws.amazon.com//cli/latest/reference/ds/enable-directory-data-access.html).
 
 ------
 #### [ PowerShell ]
 
 **Note**
-This command uses the [https://docs.aws.amazon.com//powershell/latest/reference/items/DirectoryService_cmdlets.html](https://docs.aws.amazon.com//powershell/latest/reference/items/DirectoryService_cmdlets.html) module.
+This command uses the [`AWS.Tools.DirectoryService`](https://docs.aws.amazon.com//powershell/latest/reference/items/DirectoryService_cmdlets.html) module.
 
 **To enable Directory Service Data with Tools for PowerShell**
 +  Open PowerShell, and run the following command with your Directory ID:
@@ -60,7 +60,7 @@ This command uses the [https://docs.aws.amazon.com//powershell/latest/reference/
 Enable-DSDirectoryDataAccess -DirectoryId {{d-1234567890}}
 ```
 
-For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Enable-DSDirectoryDataAccess.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Enable-DSDirectoryDataAccess.html).
+For more information, see [`Enable-DSDirectoryDataAccess`](https://docs.aws.amazon.com//powershell/latest/reference/items/Enable-DSDirectoryDataAccess.html).
 
 ------
 
@@ -88,7 +88,7 @@ You can disable user and group management with the AWS Management Console.
  The following describes how to format a request that disables the AWS Directory Service Data CLI. You must include your Directory ID number in your request.
 
 **Note**
-This command uses the [https://docs.aws.amazon.com//cli/latest/reference/ds/](https://docs.aws.amazon.com//cli/latest/reference/ds/) namespace.
+This command uses the [`aws ds`](https://docs.aws.amazon.com//cli/latest/reference/ds/) namespace.
 
 **To disable AWS Directory Service Data CLI**
 +  Open the AWS CLI, and run the following command with your Directory ID:
@@ -97,13 +97,13 @@ This command uses the [https://docs.aws.amazon.com//cli/latest/reference/ds/](ht
 aws ds disable-directory-data-access --directory-id {{d-1234567890}}
 ```
 
-For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds/disable-directory-data-access.html](https://docs.aws.amazon.com//cli/latest/reference/ds/disable-directory-data-access.html).
+For more information, see [`disable-directory-data-access`](https://docs.aws.amazon.com//cli/latest/reference/ds/disable-directory-data-access.html).
 
 ------
 #### [ PowerShell ]
 
 **Note**
-This command uses the [https://docs.aws.amazon.com//powershell/latest/reference/items/DirectoryService_cmdlets.html](https://docs.aws.amazon.com//powershell/latest/reference/items/DirectoryService_cmdlets.html) module.
+This command uses the [`AWS.Tools.DirectoryService`](https://docs.aws.amazon.com//powershell/latest/reference/items/DirectoryService_cmdlets.html) module.
 
 **To disable Directory Service Data with Tools for PowerShell**
 +  Open PowerShell, and run the following command with your Directory ID:
@@ -112,6 +112,6 @@ This command uses the [https://docs.aws.amazon.com//powershell/latest/reference/
 Disable-DSDirectoryDataAccess -DirectoryId {{d-123456789}}
 ```
 
-For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Disable-DSDirectoryDataAccess.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Disable-DSDirectoryDataAccess.html).
+For more information, see [`Disable-DSDirectoryDataAccess`](https://docs.aws.amazon.com//powershell/latest/reference/items/Disable-DSDirectoryDataAccess.html).
 
 ------

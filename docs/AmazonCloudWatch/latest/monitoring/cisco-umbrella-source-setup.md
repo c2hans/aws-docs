@@ -14,7 +14,7 @@ Cisco Umbrella is a cloud-delivered security platform that provides secure inter
 <a name="cisco-umbrella-s3-sqs-setup"></a>
 
 Configuring Cisco Umbrella to send logs to an Amazon S3 bucket involves several steps, primarily focused on setting up the Amazon S3 bucket, Amazon SQS queue, and IAM roles, then configuring the CloudWatch pipeline.
-+ Ensure Cisco Umbrella logs environment exporter is configured with S3. This is typically found under Admin → Logs Management in the Cisco Umbrella console.
++ Make sure Cisco Umbrella logs environment exporter is configured with S3. This is typically found under Admin → Logs Management in the Cisco Umbrella console.
 + Amazon S3 bucket that stores the Cisco Umbrella logs should reside in the same AWS region as your CloudWatch pipeline.
 + Create an Amazon SQS queue in the same AWS region as your Amazon S3 bucket. This queue will receive notifications when new log files are added to the Amazon S3 bucket.
 + Configure the Amazon S3 bucket to create event notifications, specifically for "Object Create" events. These notifications should be sent to the Amazon SQS queue you created in the previous step.

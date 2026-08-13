@@ -22,8 +22,6 @@ The Node.js multi checks blueprint allows you to create canaries that perform mu
 
 The root configuration defines the overall structure of your advanced API blueprint canary.
 
-**Schema properties**
-
 | Property | Type | Required | Description |
 | --- | --- | --- | --- |
 |  globalSettings  | Object | No | Default configurations applied to all steps |
@@ -64,8 +62,6 @@ The root configuration defines the overall structure of your advanced API bluepr
 Global settings provide default configurations that apply to all steps unless overridden at the step level.
 
  **Properties**
-
-**Global setting properties**
 
 | Property | Type | Default | Range | Description |
 | --- | --- | --- | --- | --- |

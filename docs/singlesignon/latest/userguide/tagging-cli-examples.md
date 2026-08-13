@@ -13,7 +13,7 @@ The AWS CLI provides commands that you can use to manage the tags that you assig
 Use the following commands to assign tags to your permission set.
 
 **Example `tag-resource` Command for a permission set**
-Assign tags to a permission set by using [https://docs.aws.amazon.com/cli/latest/reference/sso-admin/tag-resource.html](https://docs.aws.amazon.com/cli/latest/reference/sso-admin/tag-resource.html) within the `sso` set of commands:
+Assign tags to a permission set by using [`tag-resource`](https://docs.aws.amazon.com/cli/latest/reference/sso-admin/tag-resource.html) within the `sso` set of commands:
 
 ```
 $ aws sso-admin tag-resource \
@@ -40,7 +40,7 @@ $ aws sso-admin tag-resource \
 Use the following commands to view the tags that you have assigned to your permission set.
 
 **Example `list-tags-for-resource` Command for a permission set**
-View the tags that are assigned to a permission set by using [https://docs.aws.amazon.com/cli/latest/reference/sso-admin/list-tags-for-resource.html](https://docs.aws.amazon.com/cli/latest/reference/sso-admin/list-tags-for-resource.html) within the `sso` set of commands:
+View the tags that are assigned to a permission set by using [`list-tags-for-resource`](https://docs.aws.amazon.com/cli/latest/reference/sso-admin/list-tags-for-resource.html) within the `sso` set of commands:
 
 ```
 $ aws sso-admin list-tags-for-resource --resource-arn {{sso-resource-arn}}
@@ -52,7 +52,7 @@ $ aws sso-admin list-tags-for-resource --resource-arn {{sso-resource-arn}}
 Use the following commands to remove tags from a permission set.
 
 **Example `untag-resource` Command for a permission set**
-Remove tags from a permission set by using [https://docs.aws.amazon.com/cli/latest/reference/sso-admin/untag-resource.html](https://docs.aws.amazon.com/cli/latest/reference/sso-admin/untag-resource.html) within the `sso` set of commands:
+Remove tags from a permission set by using [`untag-resource`](https://docs.aws.amazon.com/cli/latest/reference/sso-admin/untag-resource.html) within the `sso` set of commands:
 
 ```
 $ aws sso-admin untag-resource \
@@ -68,7 +68,7 @@ For the `--tag-keys` parameter, specify one or more tag keys, and do not include
 Use the following commands to assign tags at the moment you create a permission set.
 
 **Example `create-permission-set` Command with tags**
-When you create a permission set by using the [https://docs.aws.amazon.com/cli/latest/reference/sso-admin/create-permission-set.html](https://docs.aws.amazon.com/cli/latest/reference/sso-admin/create-permission-set.html) command, you can specify tags with the `--tags` parameter:
+When you create a permission set by using the [`create-permission-set`](https://docs.aws.amazon.com/cli/latest/reference/sso-admin/create-permission-set.html) command, you can specify tags with the `--tags` parameter:
 
 ```
 $ aws sso-admin create-permission-set \

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Best-
 # Best practice alarm recommendations for AWS services
 <a name="Best-Practice-Alarms"></a>
 
-CloudWatch provides out-of-the box alarm recommendations. These are CloudWatch alarms that we recommend that you create for metrics that are published by other AWS services. These recommendations can help you identify the metrics that you should set alarms for to follow best practices for monitoring. The recommendations also suggest the alarm thresholds to set. Following these recommendations can help you not miss important monitoring of your AWS infrastructure.
+CloudWatch provides out-of-the box alarm recommendations. These are CloudWatch alarms that CloudWatch recommends that you create for metrics that are published by other AWS services. These recommendations can help you identify the metrics that you should set alarms for to follow best practices for monitoring. The recommendations also suggest the alarm thresholds to set. Following these recommendations can help you not miss important monitoring of your AWS infrastructure.
 
 To find the alarm recommendations, you use the metrics section of the CloudWatch console, and select the alarm recommendations filter toggle. If you navigate to the recommended alarms in the console and then create a recommended alarm, CloudWatch can pre-fill some of the alarm settings. For some recommended alarms, the alarm threshold value is also pre-filled. You can also use the console to download infrastructure-as-code alarm definitions for recommended alarms, and then use this code to create the alarm in AWS CloudFormation, the AWS CLI, or Terraform.
 

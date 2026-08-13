@@ -25,7 +25,7 @@ If you are using the `ProgramRules` feature, make sure that the `AudienceMedia` 
 ## Creating alternate media
 <a name="program-rules-creating-alternate-media"></a>
 
-The following task explains how to define alternate media using the MediaTailor console. For information about how to define alternate media using the MediaTailor API, see [https://docs.aws.amazon.com/mediatailor/latest/apireference/API_CreateProgram.html](https://docs.aws.amazon.com/mediatailor/latest/apireference/API_CreateProgram.html) in the *AWS Elemental MediaTailor API Reference*.
+The following task explains how to define alternate media using the MediaTailor console. For information about how to define alternate media using the MediaTailor API, see [`CreateProgram`](https://docs.aws.amazon.com/mediatailor/latest/apireference/API_CreateProgram.html) in the *AWS Elemental MediaTailor API Reference*.
 
 To define alternate media on a new program:
 

@@ -32,6 +32,6 @@ For workspaces that support version 9 and newer, some of these data sources migh
 + [OpenSearch](using-opensearch-in-AMG.md)
 + [OpenTSDB](using-opentsdb-in-AMG.md)
 + [PostgreSQL](using-postgresql-in-AMG.md)
-+ [Templ](tempo-data-source.md)
++ [Tempo](tempo-data-source.md)
 + [TestData](testdata-data-source.md)
 + [Zipkin](zipkin-data-source.md)

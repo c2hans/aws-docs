@@ -6,8 +6,8 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 <a name="ddb-mapper-batch"></a>
 
 Batch operations read or write many items across one or more tables in a single call. DynamoDB Mapper exposes two batch operations on the **mapper** itself (not on a table):
-+  `batchGetItem`: retrieve many items by key.
-+  `batchWriteItem`: put and/or delete many items.
++  [`batchGetItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html): retrieve many items by key.
++  [`batchWriteItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html): put and/or delete many items.
 
 **Important**
 Batch operations are **not transactional**. The individual puts, deletes, and gets succeed or fail independently, and DynamoDB might return some as *unprocessed* (see [Handle unprocessed items](#ddb-mapper-batch-unprocessed)). If you need all-or-nothing semantics, use [transactional operations](ddb-mapper-transactions.md) instead. DynamoDB also limits how much a single batch can carry; see [BatchGetItem](/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.BatchOperations) and [BatchWriteItem](/amazondynamodb/latest/APIReference/API_BatchWriteItem.html) in the *Amazon DynamoDB Developer Guide* for the current limits.
@@ -17,7 +17,7 @@ Each batch request groups its work by table: inside the request block, call `tab
 ## Write items in a batch
 <a name="ddb-mapper-batch-write"></a>
 
-Use `batchWriteItem` to seed or update a catalog. Within each table’s block, add puts with `putItem` (or `putItems`) and deletes with `deleteKey` (or `deleteKeys`):
+Use [`batchWriteItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html) to seed or update a catalog. Within each table’s block, add puts with [`putItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.model/put-item.html) (or `putItems`) and deletes with `deleteKey` (or `deleteKeys`):
 
 ```
 import aws.sdk.kotlin.hll.dynamodbmapper.items.Key
@@ -36,7 +36,7 @@ mapper.batchWriteItem {
 ## Read items in a batch
 <a name="ddb-mapper-batch-read"></a>
 
-Use `batchGetItem` to fetch many items by key. Supply keys with `key`, `keys`, or by assigning the `keys` list; read the mapped objects from the response’s per-table `items`:
+Use [`batchGetItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html) to fetch many items by key. Supply keys with `key`, `keys`, or by assigning the `keys` list; read the mapped objects from the response’s per-table `items`:
 
 ```
 val response = mapper.batchGetItem {
@@ -55,8 +55,8 @@ val products: List<Product> = response.table(productsTable).items
 <a name="ddb-mapper-batch-unprocessed"></a>
 
 DynamoDB might not process every item in a batch. For example, a request might exceed the per-call size or item-count limits, or a table might be throttled. The mapper surfaces what wasn’t processed so you can retry it:
-+  `batchGetItem`: the per-table response exposes `unprocessedKeys`, the keys that weren’t read.
-+  `batchWriteItem`: the per-table response exposes `unprocessedItems` (puts that weren’t written) and `unprocessedKeys` (deletes that weren’t performed).
++  [`batchGetItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html): the per-table response exposes `unprocessedKeys`, the keys that weren’t read.
++  [`batchWriteItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html): the per-table response exposes `unprocessedItems` (puts that weren’t written) and `unprocessedKeys` (deletes that weren’t performed).
 
 ```
 val response = mapper.batchGetItem {

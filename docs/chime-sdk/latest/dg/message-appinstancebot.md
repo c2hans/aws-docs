@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/message-appinstanceb
 # Sending messages to an AppInstanceBot for Amazon Chime SDK messaging
 <a name="message-appinstancebot"></a>
 
-You use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_SendChannelMessage.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_SendChannelMessage.html) API to send messages to an AppInstanceBot. You send the messages to the channel in which the AppInstanceBot is a member. If the [natural language understanding model](https://docs.aws.amazon.com/lexv2/latest/dg/what-is.html) recognizes the message content and elicits an Amazon Lex intent, the AppInstanceBot responds with a channel message and initiates a dialog.
+You use the [SendChannelMessage](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_SendChannelMessage.html) API to send messages to an AppInstanceBot. You send the messages to the channel in which the AppInstanceBot is a member. If the [natural language understanding model](https://docs.aws.amazon.com/lexv2/latest/dg/what-is.html) recognizes the message content and elicits an Amazon Lex intent, the AppInstanceBot responds with a channel message and initiates a dialog.
 
 You can also send target messages to a member of the channel, which could be an AppInstanceUser or an AppInstanceBot. Only the target and the sender can view targeted messages. Only users who can see targeted messages can take actions on them. However, administrators can delete targeted messages that they can’t see.
 

@@ -50,7 +50,7 @@ You can set system environment variables to identify your HSM and [crypto user](
 Setting credentials through system environment variables stores your password in plaintext on your system. For better security, use Windows Credential Manager instead.
 
 You can set environment variables using:
-+ The [https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/setx](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/setx).
++ The [**setx**](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/setx).
 + The Windows **System Properties** Control Panel (**Advanced** tab).
 + set permanent system environment variables [Programmatic](https://msdn.microsoft.com/en-us/library/system.environment.setenvironmentvariable(v=vs.110).aspx) methods.
 

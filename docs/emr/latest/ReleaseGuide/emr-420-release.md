@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-420-release.
 ## 4.2.0 application versions
 <a name="emr-420-app-versions"></a>
 
-This release includes the following applications: [http://ganglia.info](http://ganglia.info), [http://hadoop.apache.org/docs/current/](http://hadoop.apache.org/docs/current/), [http://hive.apache.org/](http://hive.apache.org/), [http://gethue.com/](http://gethue.com/), [http://mahout.apache.org/](http://mahout.apache.org/), [http://oozie.apache.org/](http://oozie.apache.org/), [http://pig.apache.org/](http://pig.apache.org/), [https://prestodb.io/](https://prestodb.io/), [https://spark.apache.org/docs/latest/](https://spark.apache.org/docs/latest/), and [https://zeppelin.incubator.apache.org/](https://zeppelin.incubator.apache.org/).
+This release includes the following applications: [Ganglia](http://ganglia.info), [Hadoop](http://hadoop.apache.org/docs/current/), [Hive](http://hive.apache.org/), [Hue](http://gethue.com/), [Mahout](http://mahout.apache.org/), [Oozie-Sandbox](http://oozie.apache.org/), [Pig](http://pig.apache.org/), [Presto-Sandbox](https://prestodb.io/), [Spark](https://spark.apache.org/docs/latest/), and [Zeppelin-Sandbox](https://zeppelin.incubator.apache.org/).
 
 The table below lists the application versions available in this release of Amazon EMR and the application versions in the preceding three Amazon EMR releases (when applicable).
 

@@ -37,12 +37,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `DatabaseName`  <a name="cfn-glue-dataqualityruleset-dataqualitytargettable-databasename"></a>
 The name of the database where the AWS Glue table exists.
-*Required*: No
+*Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TableName`  <a name="cfn-glue-dataqualityruleset-dataqualitytargettable-tablename"></a>
 The name of the AWS Glue table.
-*Required*: No
+*Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

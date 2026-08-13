@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/asff-requir
 # Required top-level ASFF attributes
 <a name="asff-required-attributes"></a>
 
-The following top-level attributes in the AWS Security Finding Format (ASFF) are required for all findings in Security Hub CSPM. For more information about these attributes, see [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecurityFinding.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecurityFinding.html) in the *AWS Security Hub API Reference*.
+The following top-level attributes in the AWS Security Finding Format (ASFF) are required for all findings in Security Hub CSPM. For more information about these attributes, see [AwsSecurityFinding](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecurityFinding.html) in the *AWS Security Hub API Reference*.
 
 ## AwsAccountId
 <a name="AwsAccountId"></a>
@@ -94,7 +94,7 @@ The format of this field is `arn:{{partition}}:securityhub:{{region}}:{{account-
 ## Resources
 <a name="Resources"></a>
 
-The `Resources` array of objects provides a set of resource data types that describe the AWS resources that the finding refers to. For details about the fields that a `Resources` object might contain, including which fields are required, see [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resource.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resource.html) in the *AWS Security Hub API Reference*. For examples of `Resources` objects for specific AWS services, see [Resources ASFF object](asff-resources.md).
+The `Resources` array of objects provides a set of resource data types that describe the AWS resources that the finding refers to. For details about the fields that a `Resources` object might contain, including which fields are required, see [Resource](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resource.html) in the *AWS Security Hub API Reference*. For examples of `Resources` objects for specific AWS services, see [Resources ASFF object](asff-resources.md).
 
 **Example**
 
@@ -250,13 +250,13 @@ The schema version that a finding is formatted for. The value of this field must
 ## Severity
 <a name="Severity"></a>
 
-Defines the importance of a finding. For details about this object, see [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Severity.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Severity.html) in the *AWS Security Hub API Reference*.
+Defines the importance of a finding. For details about this object, see [`Severity`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Severity.html) in the *AWS Security Hub API Reference*.
 
 `Severity` is both a top-level object in a finding and nested under the `FindingProviderFields` object.
 
-The value of the top-level `Severity` object for a finding should be updated only by using the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) API.
+The value of the top-level `Severity` object for a finding should be updated only by using the [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) API.
 
-To provide severity information, finding providers should update the `Severity` object under `FindingProviderFields` when making a [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API request.  If a `BatchImportFindings` request for a new finding only provides `Label` or only provides `Normalized`, Security Hub CSPM automatically populates the value of the other field.  The `Product` and `Original` fields may also be populated.
+To provide severity information, finding providers should update the `Severity` object under `FindingProviderFields` when making a [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API request.  If a `BatchImportFindings` request for a new finding only provides `Label` or only provides `Normalized`, Security Hub CSPM automatically populates the value of the other field.  The `Product` and `Original` fields may also be populated.
 
 If the top-level `Finding.Severity` object is present but `Finding.FindingProviderFields` is not present, Security Hub CSPM creates the `FindingProviderFields.Severity` object and copies the entire `Finding.Severity object` into it. This ensures that the original, provider-supplied details are retained within the `FindingProviderFields.Severity` structure, even if the top-level `Severity` object is overwritten.
 
@@ -296,9 +296,9 @@ For control findings, this field provides the title of the control. This field d
 
 One or more finding types in the format of `{{namespace}}/{{category}}/{{classifier}}` that classify a finding. This field doesn't reference a standard if you turn on [consolidated control findings](controls-findings-create-update.md#consolidated-control-findings).
 
-`Types` should be updated only by using the [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html) API.
+`Types` should be updated only by using the [`BatchUpdateFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html) API.
 
-Finding providers who want to provide a value for `Types` should use the `Types` attribute under [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_FindingProviderFields.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_FindingProviderFields.html).
+Finding providers who want to provide a value for `Types` should use the `Types` attribute under [`FindingProviderFields`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_FindingProviderFields.html).
 
 In the following list, the top-level bullets are namespaces, the second-level bullets are categories, and the third-level bullets are classifiers. We recommend that finding providers use defined namespaces to help sort and group findings. The defined categories and classifiers may also be used, but are not required. Only the Software and Configuration Checks namespace has defined classifiers.
 
@@ -397,7 +397,7 @@ This timestamp reflects the time when the finding record was last or most recent
 
 When you update the finding record, you must update this timestamp to the current timestamp. Upon creation of a finding record, the `CreatedAt` and `UpdatedAt` timestamps must be the same. After an update to the finding record, the value of this field must be more recent than all of the previous values that it contained.
 
-Note that `UpdatedAt` cannot be updated by using the [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation. You can update it only by using [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchImportFindings.html) operation.
+Note that `UpdatedAt` cannot be updated by using the [`BatchUpdateFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation. You can update it only by using [`BatchImportFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchImportFindings.html) operation.
 
 **Example**
 

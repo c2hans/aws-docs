@@ -117,7 +117,7 @@ The following table lists sample queries based on the example device shadows for
 ## Collecting package version distribution through `getBucketsAggregation`
 <a name="package-version-distribution"></a>
 
-In addition to the **Discovery** panel within the AWS IoT console, you can also get package version distribution information by using the [https://docs.aws.amazon.com/iot/latest/apireference/API_GetBucketsAggregation.html](https://docs.aws.amazon.com/iot/latest/apireference/API_GetBucketsAggregation.html) API operation. To get the package version distribution information, you must do the following:
+In addition to the **Discovery** panel within the AWS IoT console, you can also get package version distribution information by using the [`GetBucketsAggregation`](https://docs.aws.amazon.com/iot/latest/apireference/API_GetBucketsAggregation.html) API operation. To get the package version distribution information, you must do the following:
 + Define a custom field within fleet indexing for each software package. **Note:** Creating custom fields count toward [AWS IoT fleet indexing service quotas](https://docs.aws.amazon.com/general/latest/gr/iot_device_management.html#fleet-indexing-limits).
 + Format the custom field as follows:
 

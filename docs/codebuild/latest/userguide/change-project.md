@@ -289,8 +289,8 @@ You can modify the following properties:
 
 **Provisioning model**
 To change the provisioning model, choose **Change provisioning model** and do one of the following:
-+ To use on-demand fleets managed by AWS CodeBuild, choose **On-demand**. With on-demand fleets, CodeBuild provides compute for your builds. The machines are destroyed when the build finishes. On-demand fleets are fully managed, and includes automatic scaling capabilities to handle spikes in demand.
-+ To use reserved capacity fleets managed by AWS CodeBuild, choose **Reserved capacity**, and then select a **Fleet name**. With reserved capacity fleets, you configure a set of dedicated instances for your build environment. These machines remain idle, ready to process builds or tests immediately and reduces build durations. With reserved capacity fleets, your machines are always running and will continue to incur costs as long they're provisioned.
++ To use on-demand fleets managed by AWS CodeBuild, choose **On-demand**. With on-demand fleets, CodeBuild provides compute for your builds. The machines are destroyed when the build finishes. On-demand fleets are fully managed, and include automatic scaling capabilities to handle spikes in demand.
++ To use reserved capacity fleets managed by AWS CodeBuild, choose **Reserved capacity**, and then select a **Fleet name**. With reserved capacity fleets, you configure a set of dedicated instances for your build environment. These machines remain idle, ready to process builds or tests immediately, and reduce build durations. With reserved capacity fleets, your machines are always running and will continue to incur costs as long as they're provisioned.
 For information, see [Run builds on reserved capacity fleets](fleets.md).
 
 **Environment image**
@@ -310,7 +310,7 @@ When you use the console to create a build project, you can create a CodeBuild s
 **Timeout**
 Specify a value, between 5 minutes and 36 hours, after which CodeBuild stops the build if it is not complete. If **hours** and **minutes** are left blank, the default value of 60 minutes is used.
 **Privileged**
-Select **Enable this flag if you want to build Docker images or want your builds to get elevated privileges.** only if you plan to use this build project to build Docker images. Otherwise, all associated builds that attempt to interact with the Docker daemon fail. You must also start the Docker daemon so that your builds can interact with it. One way to do this is to initialize the Docker daemon in the `install` phase of your build spec by running the following build commands. Do not run these commands if you chose a build environment image provided by CodeBuild with Docker support.
+Select **Enable this flag if you want to build Docker images or want your builds to get elevated privileges.** only if you plan to use this build project to build Docker images. Otherwise, all associated builds that attempt to interact with the Docker daemon fail. You must also start the Docker daemon so that your builds can interact with it. One way to do this is to initialize the Docker daemon in the `install` phase of your buildspec by running the following build commands. Do not run these commands if you chose a build environment image provided by CodeBuild with Docker support.
 By default, Docker daemon is enabled for non-VPC builds. If you would like to use Docker containers for VPC builds, see [Runtime Privilege and Linux Capabilities](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities) on the Docker Docs website and enable privileged mode. Also, Windows does not support privileged mode.
 
 ```
@@ -483,7 +483,7 @@ Select if you do not want your S3 logs encrypted.
 
 For information about using the AWS CLI with AWS CodeBuild, see the [Command line reference](cmd-ref.md).
 
-To update a CodeBuild project with the AWS CLI, you create a JSON file with the updated properties and pass that file to the [https://docs.aws.amazon.com/cli/latest/reference/codebuild/update-project.html](https://docs.aws.amazon.com/cli/latest/reference/codebuild/update-project.html) command. Any properties not contained in the update file remain unchanged.
+To update a CodeBuild project with the AWS CLI, you create a JSON file with the updated properties and pass that file to the [`update-project`](https://docs.aws.amazon.com/cli/latest/reference/codebuild/update-project.html) command. Any properties not contained in the update file remain unchanged.
 
 In the update JSON file, only the `name` property and the modified properties are required. The `name` property identifies the project to modify. For any modified structures, the required parameters for those structures must also be included. For example, to modify the environment for the project, the `environment/type` and `environment/computeType` properties are required. Here is an example that updates the environment image:
 
@@ -498,7 +498,7 @@ In the update JSON file, only the `name` property and the modified properties ar
 }
 ```
 
-If you need to obtain the current property values for a project, use the [https://docs.aws.amazon.com/cli/latest/reference/codebuild/batch-get-projects.html](https://docs.aws.amazon.com/cli/latest/reference/codebuild/batch-get-projects.html) command to obtain the current properties of the project you are modifying, and write the output to a file.
+If you need to obtain the current property values for a project, use the [**batch-get-projects**](https://docs.aws.amazon.com/cli/latest/reference/codebuild/batch-get-projects.html) command to obtain the current properties of the project you are modifying, and write the output to a file.
 
 ```
 aws codebuild batch-get-projects --names "{{<project-name>}}" > {{project-info.json}}
@@ -506,7 +506,7 @@ aws codebuild batch-get-projects --names "{{<project-name>}}" > {{project-info.j
 
 The {{project-info.json}} file contains an array of projects, so it cannot be used directly to update a project. You can, however, copy the properties that you want to modify from the {{project-info.json}} file and paste them into your update file as a baseline for the properties you want to modify. For more information, see [View a build project's details (AWS CLI)](view-project-details.md#view-project-details-cli).
 
-Modify the update JSON file as described in [Create a build project (AWS CLI)](create-project.md#create-project-cli), and save your results. When you are finished modifying the update JSON file, run the [https://docs.aws.amazon.com/cli/latest/reference/codebuild/update-project.html](https://docs.aws.amazon.com/cli/latest/reference/codebuild/update-project.html) command, passing the update JSON file.
+Modify the update JSON file as described in [Create a build project (AWS CLI)](create-project.md#create-project-cli), and save your results. When you are finished modifying the update JSON file, run the [`update-project`](https://docs.aws.amazon.com/cli/latest/reference/codebuild/update-project.html) command, passing the update JSON file.
 
 ```
 aws codebuild update-project --cli-input-json file://{{<update-project-file>}}

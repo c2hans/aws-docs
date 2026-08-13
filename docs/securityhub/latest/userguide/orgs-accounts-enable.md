@@ -42,7 +42,7 @@ Choose your preferred method, and follow the steps to enable an organization acc
 
 **To manually enable organization accounts as Security Hub CSPM members**
 
-Invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateMembers.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateMembers.html) API from the delegated administrator account. For each account to enable, provide the account ID.
+Invoke the [`CreateMembers`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateMembers.html) API from the delegated administrator account. For each account to enable, provide the account ID.
 
 Unlike the manual invitation process, when you invoke `CreateMembers` to enable an organization account, you don't need to send an invitation.
 
@@ -51,7 +51,7 @@ Unlike the manual invitation process, when you invoke `CreateMembers` to enable 
 
 **To manually enable organization accounts as Security Hub CSPM members**
 
-Run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/create-members.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/create-members.html) command from the delegated administrator account. For each account to enable, provide the account ID.
+Run the [`create-members`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/create-members.html) command from the delegated administrator account. For each account to enable, provide the account ID.
 
 Unlike the manual invitation process, when you run `create-members` to enable an organization account, you don't need to send an invitation.
 

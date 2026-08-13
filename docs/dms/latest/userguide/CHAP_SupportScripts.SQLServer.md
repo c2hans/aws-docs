@@ -69,7 +69,7 @@ The following topics describe how to download, review, and run each support scri
 ### awsdms\_support\_collector\_sql\_server.sql script
 <a name="CHAP_SupportScripts.SQLServer.Awsdms_Support_Collector_SQLServer_Script"></a>
 
-Download the [https://d2pwp9zz55emqw.cloudfront.net/scripts/awsdms_support_collector_sql_server.sql](https://d2pwp9zz55emqw.cloudfront.net/scripts/awsdms_support_collector_sql_server.sql) script.
+Download the [`awsdms_support_collector_sql_server.sql`](https://d2pwp9zz55emqw.cloudfront.net/scripts/awsdms_support_collector_sql_server.sql) script.
 
 **Note**
 Run this SQL Server diagnostic support script on SQL Server 2014 and higher versions only.

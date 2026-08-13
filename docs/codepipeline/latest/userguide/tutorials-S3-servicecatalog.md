@@ -257,7 +257,7 @@ In this example, you upload the sample AWS CloudFormation template file for an S
 
 1. On the **Review** page, verify that the information is correct, and then choose **Confirm and upload**.
 
-1. On the **Products** page, in the browser, copy the URL of your new product. This contains the product ID. Copy and retain this product ID. You use when you create your pipeline in CodePipeline.
+1. On the **Products** page, in the browser, copy the URL of your new product. This contains the product ID. Copy and retain this product ID. You use it when you create your pipeline in CodePipeline.
 
    Here is the URL for a product named `my-product`. To extract the product ID, copy the value between the equals sign (`=`) and the ampersand (`&`). In this example, the product ID is `prod-example123456`.
 

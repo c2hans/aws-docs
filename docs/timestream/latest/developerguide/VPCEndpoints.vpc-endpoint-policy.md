@@ -15,7 +15,7 @@ You can attach an endpoint policy to your VPC endpoint that controls access to T
 For more information, see [Controlling access to services with VPC endpoints](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints-access.html) in the *Amazon VPC User Guide*.
 
 **Example: VPC endpoint policy for Timestream for LiveAnalytics actions**
-The following is an example of an endpoint policy for Timestream for LiveAnalytics. When attached to an endpoint, this policy grants access to the listed Timestream for LiveAnalytics actions (in this case, [https://docs.aws.amazon.com/timestream/latest/developerguide/API_ListDatabases.html](https://docs.aws.amazon.com/timestream/latest/developerguide/API_ListDatabases.html)) for all principals on all resources.
+The following is an example of an endpoint policy for Timestream for LiveAnalytics. When attached to an endpoint, this policy grants access to the listed Timestream for LiveAnalytics actions (in this case, [`ListDatabases`](https://docs.aws.amazon.com/timestream/latest/developerguide/API_ListDatabases.html)) for all principals on all resources.
 
 ```
 {

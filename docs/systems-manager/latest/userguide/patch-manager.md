@@ -7,7 +7,24 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 # AWS Systems Manager Patch Manager
 <a name="patch-manager"></a>
 
-Patch Manager, a tool in AWS Systems Manager, automates the process of patching managed nodes with both security-related updates and other types of updates.
+Patch Manager automates the process of patching managed nodes with both security-related updates and other types of updates.
+
+This section includes the following topics.
++ [Troubleshooting Patch Manager](patch-manager-troubleshooting.md)
++ [Tutorial: Update application dependencies, patch a managed node, and perform an application-specific health check using the console](aws-runpatchbaselinewithhooks-tutorial.md)
++ [Working with patch baselines](patch-manager-create-a-patch-baseline.md)
++ [Remediating noncompliant managed nodes with Patch Manager](patch-manager-noncompliant-nodes.md)
++ [Applying kernel live patches using Run Command](install-klp.md)
++ [AWS Systems Manager Patch Manager tutorials](patch-manager-tutorials.md)
++ [Turning on Kernel Live Patching using Run Command](enable-klp.md)
++ [Patching applications released by Microsoft on Windows Server](patch-manager-patching-windows-applications.md)
++ [Working with Patch Manager resources and compliance using the console](patch-manager-console.md)
++ [Using Kernel Live Patching on Amazon Linux 2 managed nodes](patch-manager-kernel-live-patching.md)
++ [Viewing available patches](patch-manager-view-available-patches.md)
++ [Patching operation differences between Linux and Windows Server](patch-manager-windows-and-linux-differences.md)
++ [Creating a patch policy](patch-manager-create-a-patch-policy.md)
++ [How Patch Manager operations work](patch-manager-patching-operations.md)
++ [Updating or deleting a custom patch baseline](patch-manager-update-or-delete-a-patch-baseline.md)
 
 **Note**
 Systems Manager provides support for *patch policies* in Quick Setup, a tool in AWS Systems Manager. Using patch policies is the recommended method for configuring your patching operations. Using a single patch policy configuration, you can define patching for all accounts in all Regions in your organization; for only the accounts and Regions you choose; or for a single account-Region pair. For more information, see [Patch policy configurations in Quick Setup](patch-manager-policies.md).
@@ -90,7 +107,7 @@ For more information about patch baselines, see the following topics:
 Before you start working with the Patch Manager tool, you should familiarize yourself with some major components and features of the tool's patching operations.
 
 **Patch baselines**
-Patch Manager uses *patch baselines*, which include rules for auto-approving patches within days of their release, in addition to optional lists of approved and rejected patches. When a patching operation runs, Patch Manager compares the patches currently applied to a managed node to those that should be applied according to the rules set up in the patch baseline. You can choose for Patch Manager to show you only a report of missing patches (a `Scan` operation), or you can choose for Patch Manager to automatically install all patches it find are missing from a managed node (a `Scan and install` operation).
+Patch Manager uses *patch baselines*, which include rules for auto-approving patches within days of their release, besides optional lists of approved and rejected patches. When a patching operation runs, Patch Manager compares the patches currently applied to a managed node to those that should be applied according to the rules set up in the patch baseline. You can choose for Patch Manager to show you only a report of missing patches (a `Scan` operation), or you can choose for Patch Manager to automatically install all patches it find are missing from a managed node (a `Scan and install` operation).
 
 **Patching operation methods**
 Patch Manager currently offers four methods for running `Scan` and `Scan and install` operations:
@@ -111,20 +128,3 @@ Patch Manager integrates with the following other AWS services:
 + **AWS CloudTrail** – Use CloudTrail to record an auditable history of patching operation events initiated by users, roles, or groups. For more information, see [Logging AWS Systems Manager API calls with AWS CloudTrail](monitoring-cloudtrail-logs.md).
 + **AWS Security Hub CSPM** – Patch compliance data from Patch Manager can be sent to AWS Security Hub CSPM. Security Hub CSPM gives you a comprehensive view of your high-priority security alerts and compliance status. It also monitors the patching status of your fleet. For more information, see [Integrating Patch Manager with AWS Security Hub CSPM](patch-manager-security-hub-integration.md).
 + **AWS Config** – Set up recording in AWS Config to view Amazon EC2 instance management data in the Patch Manager Dashboard. For more information, see [Viewing patch Dashboard summaries](patch-manager-view-dashboard-summaries.md).
-
-**Topics**
-+ [How can Patch Manager benefit my organization?](#how-can-patch-manager-benefit-my-organization)
-+ [Who should use Patch Manager?](#who-should-use-patch-manager)
-+ [What are the main features of Patch Manager?](#what-are-the-main-features-of-patch-manager)
-+ [What is compliance in Patch Manager?](#patch-manager-definition-of-compliance)
-+ [Primary components](#primary-components)
-+ [Patch policy configurations in Quick Setup](patch-manager-policies.md)
-+ [Patch Manager prerequisites](patch-manager-prerequisites.md)
-+ [How Patch Manager operations work](patch-manager-patching-operations.md)
-+ [SSM Command documents for patching managed nodes](patch-manager-ssm-documents.md)
-+ [Patch baselines](patch-manager-patch-baselines.md)
-+ [Using Kernel Live Patching on Amazon Linux 2 managed nodes](patch-manager-kernel-live-patching.md)
-+ [Working with Patch Manager resources and compliance using the console](patch-manager-console.md)
-+ [Working with Patch Manager resources using the AWS CLI](patch-manager-cli-commands.md)
-+ [AWS Systems Manager Patch Manager tutorials](patch-manager-tutorials.md)
-+ [Troubleshooting Patch Manager](patch-manager-troubleshooting.md)

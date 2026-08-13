@@ -8,10 +8,10 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/data-lake-cont
 The following tables contain contact analytics data.
 
 **Topics**
-+ [Contact Lens conversational analytics](#data-lake-contact-lens-conversational-analytics)
++ [Conversational analytics](#data-lake-contact-lens-conversational-analytics)
 + [Contact evaluation record](#data-lake-contact-evaluation-record)
 
-## Contact Lens conversational analytics
+## Conversational analytics
 <a name="data-lake-contact-lens-conversational-analytics"></a>
 
 **Table name:** `contact_lens_conversational_analytics`
@@ -105,7 +105,7 @@ The following tables contain contact analytics data.
 |  channel  |  string  |  Yes  |  The method used to contact your contact center: VOICE, CHAT, TASK, EMAIL.  |
 |  contact\_aggregation\_timestamp  |  Timestamp  |  Yes  |  Timestamp used for building aggregated agent, queue and weekly aggregation tables.  |
 |  evaluated\_contact\_with\_status  |  string  |  Yes  |  The connection status of the evaluated contact at the time of evaluation. Valid Values: disconnected \| notDisconnected. disconnected indicates the evaluated contact had ended (a disconnect timestamp exists). notDisconnected indicates the evaluated contact was still active at the time of evaluation (no disconnect timestamp).  |
-|  evaluation\_source  |  string  |  Yes  |  Indicates the origin of the evaluation process. This field indicates whether the evaluation was performed manually, with the assistance of automation or entirely automatically (without human review before submission). Assistance of automation encompasses pre-configured automation to answer a question (for example, auto-filling an answer based on a Contact Lens category) or asking AI for assistance while evaluating the contact.  |
+|  evaluation\_source  |  string  |  Yes  |  Indicates the origin of the evaluation process. This field indicates whether the evaluation was performed manually, with the assistance of automation or entirely automatically (without human review before submission). Assistance of automation encompasses pre-configured automation to answer a question (for example, auto-filling an answer based on a conversational analytics category) or asking AI for assistance while evaluating the contact.  |
 |  resubmitted  |  Boolean  |  Yes  |  Indicates whether the evaluation has been resubmitted. This field helps quickly identify evaluations which were resubmitted to perform audits of the evaluation process.  |
 |  evaluation\_type  |  string  |  Yes  |  Helps distinguish between different types of evaluations, such as standard evaluations and calibration evaluations. This provides the ability to only include relevant types of evaluations while performing analysis, for example, only standard evaluations should be used to calculate the aggregated score of an agent.  |
 |  calibration\_session\_id  |  string  |  Yes  |  Holds a unique identifier for a calibration session. This field is essential for identifying evaluations associated with a calibration session.  |

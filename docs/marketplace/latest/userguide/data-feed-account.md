@@ -17,7 +17,7 @@ The following table explains the names and descriptions of the data feed's colum
 | --- | --- |
 | account\_id  | The globally unique identifier (GUID) of the account. Can be used to join to fields in the `Product`, `Offer_Target`, `Billing_Event`, and `Tax_Item` data feeds. See those data feeds for information about the fields that can be used to join. |
 | aws\_account\_id  | The AWS account number of the seller's AWS account, which is unique by AWS partition.  |
-| encrypted\_account\_id | The unique, encrypted ID for an individual buyer of your application. The value for encrypted\_account\_id is used by the AWS Marketplace Metering Service, for example, as the value for CustomerIdentifier that is returned by the [https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/API_ResolveCustomer.html](https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/API_ResolveCustomer.html) action.  |
+| encrypted\_account\_id | The unique, encrypted ID for an individual buyer of your application. The value for encrypted\_account\_id is used by the AWS Marketplace Metering Service, for example, as the value for CustomerIdentifier that is returned by the [`ResolveCustomer`](https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/API_ResolveCustomer.html) action.  |
 | mailing\_address\_id | The mailing address reference for this account. |
 | tax\_address\_id | The tax address reference for this account. |
 | tax\_registration\_number | For non-US accounts, the tax registration number for this account.  |

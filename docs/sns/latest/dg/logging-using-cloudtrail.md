@@ -38,13 +38,13 @@ The following table lists the SNS resource types for which you can log data even
 
 | Data event type (console) | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
-| SNS topic |  [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-topic.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-topic.html)  | +  [https://docs.aws.amazon.com/sns/latest/api/API_Publish.html](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html) <br />+  [https://docs.aws.amazon.com/sns/latest/api/API_PublishBatch.html](https://docs.aws.amazon.com/sns/latest/api/API_PublishBatch.html)  |
-| SNS platform endpoint |  AWS::SNS::PlatformEndpoint  |  +  [https://docs.aws.amazon.com/sns/latest/api/API_Publish.html](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html) <br />For additional details, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedEventSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedEventSelector.html) in the AWS CloudTrail API Reference.   |
+| SNS topic |  [`AWS::SNS::Topic`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-topic.html)  | +  [`Publish`](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html) <br />+  [`PublishBatch`](https://docs.aws.amazon.com/sns/latest/api/API_PublishBatch.html)  |
+| SNS platform endpoint |  AWS::SNS::PlatformEndpoint  |  +  [Publish](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html) <br />For additional details, see [`AdvancedEventSelector`](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedEventSelector.html) in the AWS CloudTrail API Reference.   |
 
 **Note**
 SNS resource type `AWS::SNS::PhoneNumber` is not logged by CloudTrail.
 
-You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
+You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [AdvancedFieldSelector](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
 
 For information about logging data events, see Logging data events with the AWS Management Console and Logging data events with the AWS CLI in the CloudTrail User Guide.
 
@@ -96,7 +96,7 @@ AWS SNS logs the following SNS control plane operations to CloudTrail as *manage
 + `[VerifySMSSandboxPhoneNumber](https://docs.aws.amazon.com/sns/latest/api/API_VerifySMSSandboxPhoneNumber.html)`
 
 **Note**
-When you are not logged in to Amazon Web Services (unauthenticated mode) and either the [https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html](https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html) or [https://docs.aws.amazon.com/sns/latest/api/API_Unsubscribe.html](https://docs.aws.amazon.com/sns/latest/api/API_Unsubscribe.html) actions are invoked, then they will not be logged to CloudTrail. Such as, when you choose the provided link in an email notification to confirm a pending subscription to a topic, the `ConfirmSubscription` action is invoked in unauthenticated mode. In this example, the `ConfirmSubscription` action would not be logged to CloudTrail.
+When you are not logged in to Amazon Web Services (unauthenticated mode) and either the [`ConfirmSubscription`](https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html) or [`Unsubscribe`](https://docs.aws.amazon.com/sns/latest/api/API_Unsubscribe.html) actions are invoked, then they will not be logged to CloudTrail. Such as, when you choose the provided link in an email notification to confirm a pending subscription to a topic, the `ConfirmSubscription` action is invoked in unauthenticated mode. In this example, the `ConfirmSubscription` action would not be logged to CloudTrail.
 
 ## SNS event examples
 <a name="cloudtrail-event-examples"></a>

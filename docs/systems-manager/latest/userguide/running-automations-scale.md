@@ -65,7 +65,7 @@ You might not need to choose some of the options in the **Input parameters** sec
    + Choose **errors** to enter an absolute number of errors allowed before Automation stops sending the workflow to other resources.
    + Choose **percentage** to enter a percentage of errors allowed before Automation stops sending the workflow to other resources.
 
-1. (Optional) Choose a CloudWatch alarm to apply to your automation for monitoring. If your alarm enters `ALARM` state, the automation is canceled and any defined `onCancel` steps run. If you use AWS CloudTrail, you will see the `StopAutomationExecution` API call in your trail. For more information, see [Configuring Automations to monitor CloudWatch Alarms](automation-cw-alarm-monitoring.md).
+1. (Optional) Choose a CloudWatch alarm to apply to your automation for monitoring. If your alarm enters `ALARM` state, the automation is canceled and any defined `onCancel` steps run. If you use AWS CloudTrail, you see the `StopAutomationExecution` API call in your trail. For more information, see [Configuring Automations to monitor CloudWatch Alarms](automation-cw-alarm-monitoring.md).
 
 1. Choose **Execute**.
 

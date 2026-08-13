@@ -11,4 +11,4 @@ AWS reInvent event pass amount charge to customer AWS account provides the follo
 
 | Actions | Description | Access level |
 | --- | --- | --- |
-| <a name="eventsbilltoaws-info"></a>[https://docs.aws.amazon.com/eventsbilltoaws/latest/reference/](https://docs.aws.amazon.com/eventsbilltoaws/latest/reference/) | Get the AWS reinvent pass purchase details | Read |
+| <a name="eventsbilltoaws-info"></a>[info](https://docs.aws.amazon.com/eventsbilltoaws/latest/reference/) | Get the AWS reinvent pass purchase details | Read |

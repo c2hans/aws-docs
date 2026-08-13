@@ -49,7 +49,7 @@ This policy includes the following non-mutating and mutating operations that are
 + `organizations:EnableAWSServiceAccess` – Allows Service Quotas to create a [service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create-service-linked-role.html) in all the accounts in your organization. This allows Service Quotas to perform operations on your behalf in your organization and its accounts.
 + `iam:CreateServicelinkedRole` – Allows Service Quotas to create an IAM role that allows Service Quotas to create a support case on your behalf when you request a quota increase.
 
-To see the latest version of this AWS managed policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ServiceQuotasFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ServiceQuotasFullAccess.html) in the *AWS Managed Policy Reference Guide*.
+To see the latest version of this AWS managed policy, see [`ServiceQuotasFullAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ServiceQuotasFullAccess.html) in the *AWS Managed Policy Reference Guide*.
 
 ## AWS managed policy: ServiceQuotasReadOnlyAccess
 <a name="security-iam-awsmanpol-POLICYNAME2"></a>
@@ -97,7 +97,7 @@ This policy includes the following non-mutating operations that are *not* part o
 + `consoleapp:ListDeviceIdentities` - Allows Service Quotas to list all the devices' identities in an AWS account.
 + `consoleapp:GetDeviceIdentity` - Allows Service Quotas to retrieve all the devices' identities in an AWS account.
 
-To see the latest version of this AWS managed policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ServiceQuotasReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ServiceQuotasReadOnlyAccess.html) in the *AWS Managed Policy Reference Guide*.
+To see the latest version of this AWS managed policy, see [`ServiceQuotasReadOnlyAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ServiceQuotasReadOnlyAccess.html) in the *AWS Managed Policy Reference Guide*.
 
 ## AWS managed policy: ServiceQuotasServiceRolePolicy
 <a name="security-iam-awsmanpol-POLICYNAME3"></a>
@@ -113,7 +113,7 @@ This policy includes the following operations:
 + `support:DescribeCases` – Allows Service Quotas to retrieve the details and status of your support case for the quota increase request.
 + `support:RresolveCase` – Allows Service Quotas to resolve support cases on your behalf.
 
-To see the latest version of this AWS managed policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ServiceQuotasServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ServiceQuotasServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
+To see the latest version of this AWS managed policy, see [`ServiceQuotasServiceRolePolicy`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ServiceQuotasServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
 
 ## Service Quotas updates to AWS managed policies
 <a name="security-iam-awsmanpol-updates"></a>

@@ -79,9 +79,9 @@ let config = aws_config::defaults(BehaviorVersion::latest())
     .await;
 ```
 
-You can implement your own credential provider by implementing the [https://docs.rs/aws-credential-types/latest/aws_credential_types/provider/trait.ProvideCredentials.html](https://docs.rs/aws-credential-types/latest/aws_credential_types/provider/trait.ProvideCredentials.html) trait.
+You can implement your own credential provider by implementing the [`ProvideCredentials`](https://docs.rs/aws-credential-types/latest/aws_credential_types/provider/trait.ProvideCredentials.html) trait.
 
 ## Identity caching
 <a name="credproviders-identity-caching"></a>
 
-The SDK will cache credentials and other identity types such as SSO tokens. By default, the SDK uses a lazy cache implementation that loads credentials upon first request, caches them, and then attempts to refresh them during another request when they are close to expiring. Clients created from the same `SdkConfig` will share an [https://docs.rs/aws-smithy-runtime/latest/aws_smithy_runtime/client/identity/struct.IdentityCache.html](https://docs.rs/aws-smithy-runtime/latest/aws_smithy_runtime/client/identity/struct.IdentityCache.html).
+The SDK will cache credentials and other identity types such as SSO tokens. By default, the SDK uses a lazy cache implementation that loads credentials upon first request, caches them, and then attempts to refresh them during another request when they are close to expiring. Clients created from the same `SdkConfig` will share an [`IdentityCache`](https://docs.rs/aws-smithy-runtime/latest/aws_smithy_runtime/client/identity/struct.IdentityCache.html).

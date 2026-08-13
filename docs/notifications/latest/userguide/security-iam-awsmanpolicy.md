@@ -14,8 +14,8 @@ You cannot change the permissions defined in AWS managed policies. If AWS update
 For more information, see [AWS managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies) in the *IAM User Guide*.
 
 AWS User Notifications does not have service-specific AWS managed policies. However, User Notifications actions are included in the following AWS managed policies:
-+ [https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) – Grants full access to all AWS services, including User Notifications.
-+ [https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#awsmp_readonlyaccess](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#awsmp_readonlyaccess) – Grants read-only access to all AWS services, including User Notifications get and list actions.
++ [**AdministratorAccess**](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) – Grants full access to all AWS services, including User Notifications.
++ [**ReadOnlyAccess**](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#awsmp_readonlyaccess) – Grants read-only access to all AWS services, including User Notifications get and list actions.
 
 For examples of identity-based policies specific to User Notifications, see [Resource-level permissions in AWS User Notifications](resource-level-permissions.md).
 

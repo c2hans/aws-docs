@@ -33,7 +33,7 @@ To configure logging, you can pass the [LoggingConfiguration](https://docs.aws.a
 
 Execution history events may contain properties such as `input`, `output`, and `assignedVariables`, which contain escaped data from your execution. If the combined size of these fields is too large, then the data is truncated to avoid exceeding CloudWatch Logs quotas.
 +  You can determine whether a payload has been truncated by reviewing the `inputDetails`, `outputDetails`, and `assignedVariablesDetails` properties. For more information, see the [`HistoryEventExecutionDataDetails` Data Type](https://docs.aws.amazon.com/step-functions/latest/apireference/API_HistoryEventExecutionDataDetails.html).
-+  For Standard Workflows, you can see the full execution history by using [https://docs.aws.amazon.com/step-functions/latest/apireference/API_GetExecutionHistory.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_GetExecutionHistory.html).
++  For Standard Workflows, you can see the full execution history by using [`GetExecutionHistory`](https://docs.aws.amazon.com/step-functions/latest/apireference/API_GetExecutionHistory.html).
 +  `GetExecutionHistory` is not available for Express Workflows. If you want to see the full input and output, you can use Amazon S3 ARNs. For more information, see [Using Amazon S3 ARNs instead of passing large payloads in Step Functions](sfn-best-practices.md#avoid-exec-failures).
 
 ## IAM Policies for logging to CloudWatch Logs
@@ -154,14 +154,14 @@ If your state machine cannot send logs to CloudWatch Logs or you receive the err
 
    To verify the problem, check the number of resource policies using the CLI command:
 
-    [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/logs/describe-resource-policies.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/logs/describe-resource-policies.html)
+    [`aws logs describe-resource-policies`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/logs/describe-resource-policies.html)
 
    To resolve the problem, modify your existing resource policies.
 
    First, back up the existing policies. Then, join similar actions or resources into a new policy and use the following CLI command to create a new delivery source in the account:
 
-   [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/logs/put-delivery-source.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/logs/put-delivery-source.html)
+   [`aws logs put-delivery-source`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/logs/put-delivery-source.html)
 
    After backing up and updating the policies, remove any unused policies with the following command:
 
-    [https://docs.aws.amazon.com/cli/latest/reference/logs/delete-resource-policy.html](https://docs.aws.amazon.com/cli/latest/reference/logs/delete-resource-policy.html)
+    [`aws logs delete-resource-policy --policy-name <PolicyNameToBeDeleted>`](https://docs.aws.amazon.com/cli/latest/reference/logs/delete-resource-policy.html)

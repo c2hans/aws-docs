@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage.htm
 # IAM role management
 <a name="id_roles_manage"></a>
 
-Before a user, application, or service can use a role that you created, you must grant permissions to switch to the role. You can use any policy attached to groups or users to grant the necessary permissions. This section describes how to grant users permission to use a role. It also explains how the user can switch to a role from the AWS Management Console, the Tools for Windows PowerShell, the AWS Command Line Interface (AWS CLI) and the [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) API.
+Before a user, application, or service can use a role that you created, you must grant permissions to switch to the role. You can use any policy attached to groups or users to grant the necessary permissions. This section describes how to grant users permission to use a role. It also explains how the user can switch to a role from the AWS Management Console, the Tools for Windows PowerShell, the AWS Command Line Interface (AWS CLI) and the [`AssumeRole`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) API.
 
 **Important**
 When you create a role programmatically instead of in the IAM console, you have an option to add a `Path` of up to 512 characters in addition to the `RoleName`, which can be up to 64 characters long. However, if you intend to use a role with the **Switch Role** feature in the AWS Management Console, then the combined `Path` and `RoleName` cannot exceed 64 characters.

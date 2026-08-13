@@ -82,7 +82,7 @@ You can post a task using the AWS CLI or a language-specific AWS SDK. Select a t
 ------
 #### [ AWS CLI ]
 
-The following AWS CLI example creates a new task using [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mturk/create-hit.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mturk/create-hit.html).
+The following AWS CLI example creates a new task using [`create-hit`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mturk/create-hit.html).
 
 ```
 $ aws mturk create-hit \
@@ -138,7 +138,7 @@ $ aws mturk create-hit \
 ------
 #### [ SDK for Python (Boto3) ]
 
-The following Python code creates a new task using [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit). This code can be run within a Jupyter Notebook or IPython as is, or can be incorporated into a Python script and executed.
+The following Python code creates a new task using [`create_hit`](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit). This code can be run within a Jupyter Notebook or IPython as is, or can be incorporated into a Python script and executed.
 
 ```
 import boto3
@@ -193,7 +193,7 @@ The code block examples in this section have been spaced out for readability.
 ------
 #### [ AWS CLI ]
 
- The following AWS CLI command retrieves the current state of a HIT using [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mturk/get-hit.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mturk/get-hit.html).
+ The following AWS CLI command retrieves the current state of a HIT using [`get-hit`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mturk/get-hit.html).
 
 ```
 $ aws mturk get-hit --hit-id 3QQUBC64ZDDMMJE3ZX577RS5PMNNXJ
@@ -268,7 +268,7 @@ If you run the same `get-hit` command again after about five to ten minutes, the
 ------
 #### [ Python SDK (Boto3) ]
 
-The following Python code retrieves the state of a HIT using [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_hit). This code can be run within a Jupyter Notebook or IPython as is, or can be incorporated into a Python script and executed.
+The following Python code retrieves the state of a HIT using [`get_hit`](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_hit). This code can be run within a Jupyter Notebook or IPython as is, or can be incorporated into a Python script and executed.
 
 ```
 import boto3
@@ -350,7 +350,7 @@ In this step, we retrieve the results of a task we created in Mechanical Turk. W
 ------
 #### [ AWS CLI ]
 
- The following AWS CLI command retrieves all of the submitted assignments for your HIT using [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mturk/list-assignments-for-hit.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mturk/list-assignments-for-hit.html).
+ The following AWS CLI command retrieves all of the submitted assignments for your HIT using [`list-assignments-for-hit`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mturk/list-assignments-for-hit.html).
 
 ```
 $ aws mturk list-assignments-for-hit --hit-id 3TL87MO8CLOFYXKXNRLMZO1MOK4FL5
@@ -416,7 +416,7 @@ Using `list-assignments-for-hit` returns an array of results similar to those sh
 
 ```
 
-Note that the AWS CLI supports various output formats as well as a option [https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output.html#cli-usage-output-filter](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output.html#cli-usage-output-filter) that can be used to filter your results. For example, the following only returns a list of the `WorkerId`s that completed the HIT.
+Note that the AWS CLI supports various output formats as well as a option [`--query`](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output.html#cli-usage-output-filter) that can be used to filter your results. For example, the following only returns a list of the `WorkerId`s that completed the HIT.
 
 ```
 $ aws mturk list-assignments-for-hit \
@@ -428,7 +428,7 @@ $ aws mturk list-assignments-for-hit \
 ------
 #### [ SDK for Python (Boto3) ]
 
-The following Python code retrieves all of the submitted assignments for your HIT using [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_assignments_for_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_assignments_for_hit) This code can be run within a Jupyter Notebook or IPython as is, or can be incorporated into a Python script and executed.
+The following Python code retrieves all of the submitted assignments for your HIT using [`list_assignments_for_hit`](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_assignments_for_hit) This code can be run within a Jupyter Notebook or IPython as is, or can be incorporated into a Python script and executed.
 
 ```
 import boto3
@@ -543,7 +543,7 @@ $ aws mturk list-assignments-for-hit \
 ]
 ```
 
- Now we can use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mturk/approve-assignment.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mturk/approve-assignment.html) operation to approve each of the assignments.
+ Now we can use the [`approve-assignment`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mturk/approve-assignment.html) operation to approve each of the assignments.
 
 ```
 $ aws mturk approve-assignment --assignment-id 3IOEN3P9S7I9CGLBJQ50ANAQJXB16B
@@ -556,7 +556,7 @@ $ aws mturk approve-assignment –-assignment-id 3LO69W1SU3COZGELODW56TWTBHJLG3
 ------
 #### [ SDK for Python (Boto3) ]
 
-To approve the assignments, retrieve the list of assignments using the `HITId` and iterating through the results to call the [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.approve_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.approve_assignment) operation.
+To approve the assignments, retrieve the list of assignments using the `HITId` and iterating through the results to call the [`approve_assignment`](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.approve_assignment) operation.
 
 ```
 import boto3

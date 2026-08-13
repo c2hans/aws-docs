@@ -18,13 +18,13 @@ You can attach `AWSServiceCatalogAdminFullAccess` to your users, groups, and rol
 <a name="AWSServiceCatalogAdminFullAccess-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: February 15, 2018, 17:19 UTC
-+ **Edited time:** April 13, 2023, 18:43 UTC
++ **Edited time:** August 04, 2026, 18:12 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AWSServiceCatalogAdminFullAccess`
 
 ## Policy version
 <a name="AWSServiceCatalogAdminFullAccess-version"></a>
 
-**Policy version:** v8 (default)
+**Policy version:** v9 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -51,6 +51,7 @@ The policy's default version is the version that defines the permissions for the
         "cloudformation:DeleteChangeSet",
         "cloudformation:ListStackResources",
         "cloudformation:TagResource",
+        "cloudformation:UntagResource",
         "cloudformation:CreateStackSet",
         "cloudformation:CreateStackInstances",
         "cloudformation:UpdateStackSet",

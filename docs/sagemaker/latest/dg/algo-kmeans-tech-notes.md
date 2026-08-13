@@ -19,7 +19,7 @@ Each image in the MNIST dataset is a 28x28-pixel image, with a total of 784 pixe
 **Note**
 Amazon SageMaker AI uses a customized version of the algorithm where, instead of specifying that the algorithm create *k* clusters, you might choose to improve model accuracy by specifying extra cluster centers *(K = k\*x)*. However, the algorithm ultimately reduces these to *k* clusters.
 
-In SageMaker AI, you specify the number of clusters when creating a training job. For more information, see [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html). In the request body, you add the `HyperParameters` string map to specify the `k` and `extra_center_factor` strings.
+In SageMaker AI, you specify the number of clusters when creating a training job. For more information, see [`CreateTrainingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html). In the request body, you add the `HyperParameters` string map to specify the `k` and `extra_center_factor` strings.
 
 The following is a summary of how k-means works for model training in SageMaker AI:
 

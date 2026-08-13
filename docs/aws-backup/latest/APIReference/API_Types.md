@@ -38,6 +38,7 @@ The following data types are supported by AWS Backup:
 +  [LatestRevokeRequest](API_LatestRevokeRequest.md)
 +  [LegalHold](API_LegalHold.md)
 +  [Lifecycle](API_Lifecycle.md)
++  [ListAccessPointsMember](API_ListAccessPointsMember.md)
 +  [ProtectedResource](API_ProtectedResource.md)
 +  [ProtectedResourceConditions](API_ProtectedResourceConditions.md)
 +  [RecoveryPointByBackupVault](API_RecoveryPointByBackupVault.md)

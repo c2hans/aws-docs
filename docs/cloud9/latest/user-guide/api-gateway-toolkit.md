@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/api-gateway-too
 # Working with API Gateway using the AWS Toolkit
 <a name="api-gateway-toolkit"></a>
 
-You can use API Gateway to create RESTful APIs and WebSocket APIs that enable real-time two-way communication applications. For more information about how to create and manage APIs with API Gateway, see the [https://docs.aws.amazon.com/apigateway/latest/developerguide/](https://docs.aws.amazon.com/apigateway/latest/developerguide/).
+You can use API Gateway to create RESTful APIs and WebSocket APIs that enable real-time two-way communication applications. For more information about how to create and manage APIs with API Gateway, see the [*API Gateway Developer Guide*](https://docs.aws.amazon.com/apigateway/latest/developerguide/).
 
 With the AWS Toolkit, you can configure a call to a REST API by specifying the REST resource, method type, and data that's passed in as input.
 

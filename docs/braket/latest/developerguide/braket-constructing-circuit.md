@@ -20,7 +20,7 @@ You can also work at the pulse level in Braket for various gates with certain QP
 ## Gates and circuits
 <a name="braket-gates"></a>
 
-Quantum gates and circuits are defined in the [https://github.com/aws/amazon-braket-sdk-python/blob/main/src/braket/circuits/circuit.py](https://github.com/aws/amazon-braket-sdk-python/blob/main/src/braket/circuits/circuit.py) class of the Amazon Braket Python SDK. From the SDK, you can instantiate a new circuit object by calling `Circuit()`.
+Quantum gates and circuits are defined in the [`braket.circuits`](https://github.com/aws/amazon-braket-sdk-python/blob/main/src/braket/circuits/circuit.py) class of the Amazon Braket Python SDK. From the SDK, you can instantiate a new circuit object by calling `Circuit()`.
 
  **Example: Define a circuit**
 

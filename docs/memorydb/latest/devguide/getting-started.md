@@ -287,7 +287,7 @@ As soon as your cluster becomes available, you're billed for each hour or partia
 #### Creating a cluster (AWS CLI)
 <a name="clusters.create.cli"></a>
 
-To create a cluster using the AWS CLI, see [https://docs.aws.amazon.com/cli/latest/reference/memorydb/create-cluster.html](https://docs.aws.amazon.com/cli/latest/reference/memorydb/create-cluster.html). The following is an example:
+To create a cluster using the AWS CLI, see [`create-cluster`](https://docs.aws.amazon.com/cli/latest/reference/memorydb/create-cluster.html). The following is an example:
 
 For Linux, macOS, or Unix:
 
@@ -558,7 +558,7 @@ aws memorydb delete-cluster ^
     --region {{us-east-1}}
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/memorydb/delete-cluster.html](https://docs.aws.amazon.com/cli/latest/reference/memorydb/delete-cluster.html).
+For more information, see [`delete-cluster`](https://docs.aws.amazon.com/cli/latest/reference/memorydb/delete-cluster.html).
 
 ### Using the MemoryDB API
 <a name="clusters.delete.api"></a>

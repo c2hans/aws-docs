@@ -11,5 +11,5 @@ AWS Marketplace Image Building Service provides the following APIs for data retr
 
 | Actions | Description | Access level |
 | --- | --- | --- |
-| <a name="aws-marketplace-DescribeBuilds"></a>[https://docs.aws.amazon.com/marketplace/latest/buyerguide/api-reference.html](https://docs.aws.amazon.com/marketplace/latest/buyerguide/api-reference.html) | Describes Image Builds identified by a build Id | Read |
-| <a name="aws-marketplace-ListBuilds"></a>[https://docs.aws.amazon.com/marketplace/latest/buyerguide/api-reference.html](https://docs.aws.amazon.com/marketplace/latest/buyerguide/api-reference.html) | Lists Image Builds. | Read |
+| <a name="aws-marketplace-DescribeBuilds"></a>[DescribeBuilds](https://docs.aws.amazon.com/marketplace/latest/buyerguide/api-reference.html) | Describes Image Builds identified by a build Id | Read |
+| <a name="aws-marketplace-ListBuilds"></a>[ListBuilds](https://docs.aws.amazon.com/marketplace/latest/buyerguide/api-reference.html) | Lists Image Builds. | Read |

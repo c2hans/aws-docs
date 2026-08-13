@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/describe-extension-h
 # View extension history
 <a name="describe-extension-history-api-cli-sdk"></a>
 
-Use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeTrainingPlanExtensionHistory.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeTrainingPlanExtensionHistory.html) API to view the complete extension history for a training plan.
+Use the [`DescribeTrainingPlanExtensionHistory`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeTrainingPlanExtensionHistory.html) API to view the complete extension history for a training plan.
 
 The following example uses an AWS CLI command to retrieve the extension history.
 
@@ -41,7 +41,7 @@ The following sections define the mandatory and optional input request parameter
 ## Required parameters
 <a name="describe-extension-history-required-params"></a>
 
-When calling the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeTrainingPlanExtensionHistory.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeTrainingPlanExtensionHistory.html) API, you must provide the following value:
+When calling the [`DescribeTrainingPlanExtensionHistory`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeTrainingPlanExtensionHistory.html) API, you must provide the following value:
 + `TrainingPlanArn`: The of the training plan to retrieve extension history for.
 
 ## Optional parameters

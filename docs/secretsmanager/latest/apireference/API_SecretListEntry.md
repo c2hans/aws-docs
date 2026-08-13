@@ -22,7 +22,7 @@ Type: Timestamp
 Required: No
 
  ** DeletedDate **   <a name="SecretsManager-Type-SecretListEntry-DeletedDate"></a>
-The date and time the deletion of the secret occurred. Not present on active secrets. The secret can be recovered until the number of days in the recovery window has passed, as specified in the `RecoveryWindowInDays` parameter of the [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DeleteSecret.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DeleteSecret.html) operation.
+The date and time the deletion of the secret occurred. Not present on active secrets. The secret can be recovered until the number of days in the recovery window has passed, as specified in the `RecoveryWindowInDays` parameter of the [`DeleteSecret`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DeleteSecret.html) operation.
 Type: Timestamp
 Required: No
 
@@ -94,7 +94,7 @@ Type: Boolean
 Required: No
 
  ** RotationLambdaARN **   <a name="SecretsManager-Type-SecretListEntry-RotationLambdaARN"></a>
-The ARN of an AWS Lambda function invoked by Secrets Manager to rotate and expire the secret either automatically per the schedule or manually by a call to [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_RotateSecret.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_RotateSecret.html).
+The ARN of an AWS Lambda function invoked by Secrets Manager to rotate and expire the secret either automatically per the schedule or manually by a call to [`RotateSecret`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_RotateSecret.html).
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2048.
 Required: No
@@ -114,7 +114,7 @@ Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: No
 
  ** Tags **   <a name="SecretsManager-Type-SecretListEntry-Tags"></a>
-The list of user-defined tags associated with the secret. To add tags to a secret, use [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_TagResource.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_TagResource.html). To remove tags, use [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_UntagResource.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_UntagResource.html).
+The list of user-defined tags associated with the secret. To add tags to a secret, use [`TagResource`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_TagResource.html). To remove tags, use [`UntagResource`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_UntagResource.html).
 Type: Array of [Tag](API_Tag.md) objects
 Required: No
 

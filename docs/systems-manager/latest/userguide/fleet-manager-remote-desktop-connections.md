@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-m
 # Connecting to a Windows Server managed instance using Remote Desktop
 <a name="fleet-manager-remote-desktop-connections"></a>
 
-You can use Fleet Manager, a tool in AWS Systems Manager, to connect to your Windows Server Amazon Elastic Compute Cloud (Amazon EC2) instances using the Remote Desktop Protocol (RDP). Fleet Manager Remote Desktop, which is powered by [Amazon DCV](https://docs.aws.amazon.com/dcv/latest/adminguide/what-is-dcv.html), provides you with secure connectivity to your Windows Server instances directly from the Systems Manager console. You can have up to four simultaneous connections in a single browser window.
+You can use Fleet Manager to connect to your Windows Server Amazon Elastic Compute Cloud (Amazon EC2) instances using the Remote Desktop Protocol (RDP). Fleet Manager Remote Desktop, which is powered by [Amazon DCV](https://docs.aws.amazon.com/dcv/latest/adminguide/what-is-dcv.html), gives you secure connectivity to your Windows Server instances directly from the Systems Manager console. You can have up to four simultaneous connections in a single browser window.
 
 The Fleet Manager Remote Desktop API is named AWS Systems Manager GUI Connect. For information about using the Systems Manager GUI Connect API, see the *[AWS Systems Manager GUI Connect API Reference](https://docs.aws.amazon.com/ssm-guiconnect/latest/APIReference)*.
 
@@ -19,15 +19,6 @@ Fleet Manager Remote Desktop is a console-only service and doesn't support comma
 The duration of an RDP connection is not determined by the duration of your AWS Identity and Access Management (IAM) credentials. Instead, the connection persists until the maximum connection duration or idle time limit is met, whichever comes first. For more information, see [Remote connection duration and concurrency](#rdp-duration-concurrency).
 
 For information about configuring AWS Identity and Access Management (IAM) permissions to allow your instances to interact with Systems Manager, see [Configure instance permissions for Systems Manager](setup-instance-permissions.md).
-
-**Topics**
-+ [Setting up your environment](#rdp-prerequisites)
-+ [Configuring IAM permissions for Remote Desktop](#rdp-iam-policy-examples)
-+ [Authenticating Remote Desktop connections](#rdp-authentication)
-+ [Remote connection duration and concurrency](#rdp-duration-concurrency)
-+ [Systems Manager GUI Connect handling of AWS IAM Identity Center attributes](#iam-identity-center-attribute-handling)
-+ [Connect to a managed node using Remote Desktop](#rdp-connect-to-node)
-+ [Viewing information about current and completed connections](#list-connections)
 
 ## Setting up your environment
 <a name="rdp-prerequisites"></a>
@@ -44,7 +35,7 @@ Before using Remote Desktop, verify that your environment meets the following re
   To accept remote connections, the Remote Desktop Services service on your Windows Server nodes must use default RDP port 3389. This is the default configuration on Amazon Machine Images (AMIs) provided by AWS. You are not explicitly required to open any inbound ports to use Remote Desktop.
 + **PSReadLine module version for keyboard functionality**
 
-  To ensure that your keyboard functions properly in PowerShell, verify that nodes running Windows Server 2022 have PSReadLine module version 2.2.2 or higher installed. If they are running an older version, you can install the required version using the following commands.
+  To make sure that your keyboard functions properly in PowerShell, verify that nodes running Windows Server 2022 have PSReadLine module version 2.2.2 or higher installed. If they are running an older version, you can install the required version using the following commands.
 
   ```
   Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
@@ -73,7 +64,7 @@ If you log Session Manager activity using Amazon Simple Storage Service (Amazon 
 ## Configuring IAM permissions for Remote Desktop
 <a name="rdp-iam-policy-examples"></a>
 
-In addition to the required IAM permissions for Systems Manager and Session Manager, the user or role you use must be allowed permissions for initiating connections.
+Besides the required IAM permissions for Systems Manager and Session Manager, the user or role you use must be allowed permissions for initiating connections.
 
 **Permissions for initiating connections**
 To make RDP connections to EC2 instances in the console, the following permissions are required:
@@ -82,7 +73,7 @@ To make RDP connections to EC2 instances in the console, the following permissio
 + `ssm-guiconnect:StartConnection`
 
 **Permissions for listing connections**
-In order to view lists of connections in the console, the following permission is required:
+To view lists of connections in the console, the following permission is required:
 
 `ssm-guiconnect:ListConnections`
 
@@ -416,10 +407,10 @@ Note the following conditions for using IAM Identity Center authentication befor
 **Important**
 Connections won't succeed for IAM Identity Center user names that contain the following characters: `+` `=` `,`
 IAM Identity Center supports these characters in user names, but Fleet Manager RDP connections do not.
-In addition, if an IAM Identity Center user name contains one or more `@` symbols, Fleet Manager disregards the first `@` symbol and all characters that follow it, whether or not the `@` introduces the domain portion of an email address. For instance, for the IAM Identity Center user name `diego_ramirez@example.com`, the `@example.com` portion is ignored and the user name for Fleet Manager becomes `diego_ramirez`. For `diego_r@mirez@example.com`, Fleet Manager disregards `@mirez@example.com`, and the username for Fleet Manager becomes `diego_r`.
+In addition, if an IAM Identity Center user name contains one or more `@` symbols, Fleet Manager disregards the first `@` symbol and all characters that follow it, whether the `@` introduces the domain portion of an email address. For instance, for the IAM Identity Center user name `diego_ramirez@example.com`, the `@example.com` portion is ignored and the user name for Fleet Manager becomes `diego_ramirez`. For `diego_r@mirez@example.com`, Fleet Manager disregards `@mirez@example.com`, and the username for Fleet Manager becomes `diego_r`.
 + When a connection is authenticated using IAM Identity Center, Remote Desktop creates a local Windows user in the instance’s Local Administrators group. This user persists after the remote connection has ended.
 + Remote Desktop does not allow IAM Identity Center authentication for nodes that are Microsoft Active Directory domain controllers.
-+ Although Remote Desktop allows you to use IAM Identity Center authentication for nodes *joined* to an Active Directory domain, we do not recommend doing so. This authentication method grants administrative permissions to users which might override more restrictive permissions granted by the domain.
++ Although Remote Desktop lets you use IAM Identity Center authentication for nodes *joined* to an Active Directory domain, we do not recommend doing so. This authentication method grants administrative permissions to users which might override more restrictive permissions granted by the domain.
 
 ## Remote connection duration and concurrency
 <a name="rdp-duration-concurrency"></a>

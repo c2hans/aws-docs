@@ -43,6 +43,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   BatchDescribeUserLimits  **
+  - **IAM action:**  [quicksight:BatchDescribeUserLimits](#list_quicksight-action-BatchDescribeUserLimits)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   CancelIngestion  **
   - **IAM action:**  [quicksight:CancelIngestion](#list_quicksight-action-CancelIngestion)
   - **Condition key:**
@@ -64,10 +70,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** quicksight.amazonaws.com / **Access level:** Write
 
 - **   CreateAgent  **
-  - **IAM action:**  [quicksight:CreateAgent](#list_quicksight-action-CreateAgent)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [quicksight:CreateAgent](#list_quicksight-action-CreateAgent)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [quicksight:TagResource](#list_quicksight-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateAnalysis  **
   - **IAM action:**  [quicksight:CreateAnalysis](#list_quicksight-action-CreateAnalysis)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -76,6 +80,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [quicksight:DescribeTheme](#list_quicksight-action-DescribeTheme)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [quicksight:PassDataSet](#list_quicksight-action-PassDataSet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [quicksight:TagResource](#list_quicksight-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateApprovalPolicy  **
+  - **IAM action:**  [quicksight:CreateApprovalPolicy](#list_quicksight-action-CreateApprovalPolicy)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   CreateBrand  **
   - **IAM action:**  [quicksight:CreateBrand](#list_quicksight-action-CreateBrand)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -105,6 +115,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [quicksight:CreateFolderMembership](#list_quicksight-action-CreateFolderMembership)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [quicksight:TagResource](#list_quicksight-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** quicksight.amazonaws.com / **Access level:** Write
+
+- **   CreateDlpSetting  **
+  - **IAM action:**  [quicksight:CreateDlpSetting](#list_quicksight-action-CreateDlpSetting)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [quicksight:TagResource](#list_quicksight-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateFlow  **
   - **IAM action:**  [quicksight:CreateFlow](#list_quicksight-action-CreateFlow)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -150,6 +164,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [quicksight:CreateKnowledgeBase](#list_quicksight-action-CreateKnowledgeBase)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [quicksight:PassDataSource](#list_quicksight-action-PassDataSource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [quicksight:TagResource](#list_quicksight-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateLimitsProfile  **
+  - **IAM action:**  [quicksight:CreateLimitsProfile](#list_quicksight-action-CreateLimitsProfile)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   CreateNamespace  **
   - **IAM action:**  [quicksight:CreateNamespace](#list_quicksight-action-CreateNamespace)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -210,6 +230,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   CreateTopicV2  **
+  - **IAM action:**  [quicksight:CreateFolderMembership](#list_quicksight-action-CreateFolderMembership)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [quicksight:CreateTopic](#list_quicksight-action-CreateTopic)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [quicksight:PassDataSet](#list_quicksight-action-PassDataSet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [quicksight:TagResource](#list_quicksight-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
 - **   CreateVPCConnection  **
   - **IAM action:**  [quicksight:CreateVPCConnection](#list_quicksight-action-CreateVPCConnection)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [quicksight:TagResource](#list_quicksight-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -245,6 +271,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DeleteAnalysis  **
   - **IAM action:**  [quicksight:DeleteAnalysis](#list_quicksight-action-DeleteAnalysis)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteApprovalPolicy  **
+  - **IAM action:**  [quicksight:DeleteApprovalPolicy](#list_quicksight-action-DeleteApprovalPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -297,6 +329,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   DeleteDlpSetting  **
+  - **IAM action:**  [quicksight:DeleteDlpSetting](#list_quicksight-action-DeleteDlpSetting)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   DeleteFlow  **
   - **IAM action:**  [quicksight:DeleteFlow](#list_quicksight-action-DeleteFlow)
   - **Condition key:**
@@ -343,6 +381,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DeleteKnowledgeBase  **
   - **IAM action:**  [quicksight:DeleteKnowledgeBase](#list_quicksight-action-DeleteKnowledgeBase)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteLimitsProfile  **
+  - **IAM action:**  [quicksight:DeleteLimitsProfile](#list_quicksight-action-DeleteLimitsProfile)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -411,6 +455,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DeleteTopicRefreshSchedule  **
   - **IAM action:**  [quicksight:DeleteTopicRefreshSchedule](#list_quicksight-action-DeleteTopicRefreshSchedule)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteTopicV2  **
+  - **IAM action:**  [quicksight:DeleteTopic](#list_quicksight-action-DeleteTopic)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -497,6 +547,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DescribeAnalysisPermissions  **
   - **IAM action:**  [quicksight:DescribeAnalysisPermissions](#list_quicksight-action-DescribeAnalysisPermissions)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   DescribeApprovalPolicy  **
+  - **IAM action:**  [quicksight:DescribeApprovalPolicy](#list_quicksight-action-DescribeApprovalPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -615,6 +671,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   DescribeDlpSetting  **
+  - **IAM action:**  [quicksight:DescribeDlpSetting](#list_quicksight-action-DescribeDlpSetting)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   DescribeFlow  **
   - **IAM action:**  [quicksight:DescribeFlow](#list_quicksight-action-DescribeFlow)
   - **Condition key:**
@@ -684,6 +746,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
+
+- **   DescribeLimitsProfile  **
+  - **IAM action:**  [quicksight:DescribeLimitsProfile](#list_quicksight-action-DescribeLimitsProfile)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
 
 - **   DescribeNamespace  **
   - **IAM action:**  [quicksight:DescribeNamespace](#list_quicksight-action-DescribeNamespace)
@@ -791,6 +859,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
+- **   DescribeTopicPermissionsV2  **
+  - **IAM action:**  [quicksight:DescribeTopicPermissions](#list_quicksight-action-DescribeTopicPermissions)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Permissions management, Write
+
 - **   DescribeTopicRefresh  **
   - **IAM action:**  [quicksight:DescribeTopicRefresh](#list_quicksight-action-DescribeTopicRefresh)
   - **Condition key:**
@@ -799,6 +873,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DescribeTopicRefreshSchedule  **
   - **IAM action:**  [quicksight:DescribeTopicRefreshSchedule](#list_quicksight-action-DescribeTopicRefreshSchedule)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   DescribeTopicV2  **
+  - **IAM action:**  [quicksight:DescribeTopic](#list_quicksight-action-DescribeTopic)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -878,6 +958,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   ListApprovalPolicies  **
+  - **IAM action:**  [quicksight:ListApprovalPolicies](#list_quicksight-action-ListApprovalPolicies)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   ListAssetBundleExportJobs  **
   - **IAM action:**  [quicksight:ListAssetBundleExportJobs](#list_quicksight-action-ListAssetBundleExportJobs)
   - **Condition key:**
@@ -922,6 +1008,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ListDataSources  **
   - **IAM action:**  [quicksight:ListDataSources](#list_quicksight-action-ListDataSources)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListDlpSettings  **
+  - **IAM action:**  [quicksight:ListDlpSettings](#list_quicksight-action-ListDlpSettings)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
@@ -988,6 +1080,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ListKnowledgeBases  **
   - **IAM action:**  [quicksight:ListKnowledgeBases](#list_quicksight-action-ListKnowledgeBases)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListLimitsProfiles  **
+  - **IAM action:**  [quicksight:ListLimitsProfiles](#list_quicksight-action-ListLimitsProfiles)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
@@ -1085,6 +1183,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** List
 
 - **   ListTopics  **
+  - **IAM action:**  [quicksight:ListTopics](#list_quicksight-action-ListTopics)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListTopicsV2  **
   - **IAM action:**  [quicksight:ListTopics](#list_quicksight-action-ListTopics)
   - **Condition key:**
   - **Possible value(s):**
@@ -1307,6 +1411,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   UpdateApprovalPolicy  **
+  - **IAM action:**  [quicksight:UpdateApprovalPolicy](#list_quicksight-action-UpdateApprovalPolicy)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   UpdateBrand  **
   - **IAM action:**  [quicksight:UpdateBrand](#list_quicksight-action-UpdateBrand)
   - **Condition key:**
@@ -1388,6 +1498,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   UpdateDlpSetting  **
+  - **IAM action:**  [quicksight:UpdateDlpSetting](#list_quicksight-action-UpdateDlpSetting)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   UpdateFlow  **
   - **IAM action:**  [quicksight:UpdateFlow](#list_quicksight-action-UpdateFlow)
   - **Condition key:**
@@ -1452,6 +1568,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
+
+- **   UpdateLimitsProfile  **
+  - **IAM action:**  [quicksight:UpdateLimitsProfile](#list_quicksight-action-UpdateLimitsProfile)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   UpdateOAuthClientApplication  **
   - **IAM action:**  [quicksight:UpdateDataSource](#list_quicksight-action-UpdateDataSource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -1595,12 +1717,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 ****
 
-- **   [BatchAssignLimitsProfile](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BatchAssignLimitsProfile.html)  **
-  - **Description:** Grants permission to assign a limits profile to targets
-  - **Resource types (\*required):** [limitsProfile\*](#list_quicksight-resource-limitsProfile)
-  - **Condition keys:**
-  - **Access level:** Write
-
 - **   [BatchCreateTopicReviewedAnswer](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BatchCreateTopicReviewedAnswer.html)  **
   - **Description:** Grants permission to create reviewed answers for a topic
   - **Resource types (\*required):** [topic\*](#list_quicksight-resource-topic)
@@ -1619,11 +1735,11 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_quicksight-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
   - **Access level:** Write
 
-- **   [BatchUnassignLimitsProfile](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BatchUnassignLimitsProfile.html)  **
-  - **Description:** Grants permission to unassign a limits profile from targets
+- **   [BatchDescribeUserLimits](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BatchDescribeUserLimits.html)  **
+  - **Description:** Grants permission to describe the effective resource limits for users
   - **Resource types (\*required):** [limitsProfile\*](#list_quicksight-resource-limitsProfile)
   - **Condition keys:**
-  - **Access level:** Write
+  - **Access level:** Read
 
 - **   [CancelIngestion](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CancelIngestion.html)  **
   - **Description:** Grants permission to cancel a SPICE ingestions on a dataset
@@ -1661,6 +1777,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_quicksight-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
   - **Access level:** Write
 
+- **   [CreateApprovalPolicy](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateApprovalPolicy.html)  **
+  - **Description:** Grants permission to create an approval policy for governed actions
+  - **Resource types (\*required):** [approvalPolicy\*](#list_quicksight-resource-approvalPolicy)
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [CreateBrand](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateBrand.html)  **
   - **Description:** Grants permission to create an Amazon QuickSight brand
   - **Resource types (\*required):** [brand\*](#list_quicksight-resource-brand)
@@ -1689,6 +1811,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to create a data source
   - **Resource types (\*required):**
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_quicksight-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
+  - **Access level:** Write
+
+- **   [CreateDlpSetting](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateDlpSetting.html)  **
+  - **Description:** Grants permission to create a DLP setting
+  - **Resource types (\*required):** [dlpSetting\*](#list_quicksight-resource-dlpSetting)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_quicksight-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
   - **Access level:** Write
 
 - **   [CreateFlow](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateFlow.html)  **
@@ -1861,6 +1989,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [DeleteApprovalPolicy](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteApprovalPolicy.html)  **
+  - **Description:** Grants permission to delete an approval policy
+  - **Resource types (\*required):** [approvalPolicy\*](#list_quicksight-resource-approvalPolicy)
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [DeleteBrand](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteBrand.html)  **
   - **Description:** Grants permission to delete an Amazon QuickSight brand
   - **Resource types (\*required):** [brand\*](#list_quicksight-resource-brand)
@@ -1907,6 +2041,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to delete linked QBusiness application for QuickSight account
   - **Resource types (\*required):**
   - **Condition keys:**
+  - **Access level:** Write
+
+- **   [DeleteDlpSetting](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteDlpSetting.html)  **
+  - **Description:** Grants permission to delete a DLP setting
+  - **Resource types (\*required):** [dlpSetting\*](#list_quicksight-resource-dlpSetting)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteFlow](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteFlow.html)  **
@@ -2133,6 +2273,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [DescribeApprovalPolicy](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeApprovalPolicy.html)  **
+  - **Description:** Grants permission to describe an approval policy
+  - **Resource types (\*required):** [approvalPolicy\*](#list_quicksight-resource-approvalPolicy)
+  - **Condition keys:**
+  - **Access level:** Read
+
 - **   [DescribeAssetBundleExportJob](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeAssetBundleExportJob.html)  **
   - **Description:** Grants permission to describe an asset bundle export job
   - **Resource types (\*required):** [assetBundleExportJob\*](#list_quicksight-resource-assetBundleExportJob)
@@ -2251,6 +2397,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to describe linked QBusiness application Id for QuickSight account
   - **Resource types (\*required):**
   - **Condition keys:**
+  - **Access level:** Read
+
+- **   [DescribeDlpSetting](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeDlpSetting.html)  **
+  - **Description:** Grants permission to describe a DLP setting
+  - **Resource types (\*required):** [dlpSetting\*](#list_quicksight-resource-dlpSetting)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [DescribeFlow](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeFlow.html)  **
@@ -2525,6 +2677,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
+- **   [ListApprovalPolicies](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListApprovalPolicies.html)  **
+  - **Description:** Grants permission to list approval policies
+  - **Resource types (\*required):** [approvalPolicy\*](#list_quicksight-resource-approvalPolicy)
+  - **Condition keys:**
+  - **Access level:** List
+
 - **   [ListApps](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListApps.html)  **
   - **Description:** Grants permission to list all apps in a QuickSight account
   - **Resource types (\*required):** [app\*](#list_quicksight-resource-app)
@@ -2540,12 +2698,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [ListAssetBundleImportJobs](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListAssetBundleImportJobs.html)  **
   - **Description:** Grants permission to list all asset bundle import jobs
   - **Resource types (\*required):** [assetBundleImportJob\*](#list_quicksight-resource-assetBundleImportJob)
-  - **Condition keys:**
-  - **Access level:** List
-
-- **   [ListAssignmentsForPrincipal](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListAssignmentsForPrincipal.html)  **
-  - **Description:** Grants permission to list limits profile assignments for a principal
-  - **Resource types (\*required):** [limitsProfile\*](#list_quicksight-resource-limitsProfile)
   - **Condition keys:**
   - **Access level:** List
 
@@ -2589,6 +2741,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to list all data sources
   - **Resource types (\*required):**
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_quicksight-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
+  - **Access level:** List
+
+- **   [ListDlpSettings](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListDlpSettings.html)  **
+  - **Description:** Grants permission to list DLP settings in an account
+  - **Resource types (\*required):** [dlpSetting\*](#list_quicksight-resource-dlpSetting)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
 - **   [ListFlows](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListFlows.html)  **
@@ -2678,12 +2836,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_quicksight-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
   - **Access level:** List
 
-- **   [ListProfileAssignments](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListProfileAssignments.html)  **
-  - **Description:** Grants permission to list assignments for a limits profile
-  - **Resource types (\*required):** [limitsProfile\*](#list_quicksight-resource-limitsProfile)
-  - **Condition keys:**
-  - **Access level:** List
-
 - **   [ListRefreshSchedules](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListRefreshSchedules.html)  **
   - **Description:** Grants permission to list all refresh schedules on a dataset
   - **Resource types (\*required):**
@@ -2725,6 +2877,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [dashboard](#list_quicksight-resource-dashboard) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [dataset](#list_quicksight-resource-dataset) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [datasource](#list_quicksight-resource-datasource) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [dlpSetting](#list_quicksight-resource-dlpSetting) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [emailCustomizationTemplate](#list_quicksight-resource-emailCustomizationTemplate) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [flow](#list_quicksight-resource-flow) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [folder](#list_quicksight-resource-folder) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
@@ -2958,6 +3111,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [dashboard](#list_quicksight-resource-dashboard) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_quicksight-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
   - **Resource types (\*required):** [dataset](#list_quicksight-resource-dataset) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_quicksight-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
   - **Resource types (\*required):** [datasource](#list_quicksight-resource-datasource) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_quicksight-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
+  - **Resource types (\*required):** [dlpSetting](#list_quicksight-resource-dlpSetting) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_quicksight-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
   - **Resource types (\*required):** [emailCustomizationTemplate](#list_quicksight-resource-emailCustomizationTemplate) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_quicksight-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
   - **Resource types (\*required):** [flow](#list_quicksight-resource-flow) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_quicksight-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
   - **Resource types (\*required):** [folder](#list_quicksight-resource-folder) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_quicksight-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
@@ -2982,6 +3136,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [dashboard](#list_quicksight-resource-dashboard) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
   - **Resource types (\*required):** [dataset](#list_quicksight-resource-dataset) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
   - **Resource types (\*required):** [datasource](#list_quicksight-resource-datasource) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
+  - **Resource types (\*required):** [dlpSetting](#list_quicksight-resource-dlpSetting) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
   - **Resource types (\*required):** [emailCustomizationTemplate](#list_quicksight-resource-emailCustomizationTemplate) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
   - **Resource types (\*required):** [flow](#list_quicksight-resource-flow) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
   - **Resource types (\*required):** [folder](#list_quicksight-resource-folder) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
@@ -3058,6 +3213,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [UpdateApplicationWithTokenExchangeGrant](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateApplicationWithTokenExchangeGrant.html)  **
   - **Description:** Grants permission to update QuickSight IAM Identity Center application with Token Exchange grant
   - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
+- **   [UpdateApprovalPolicy](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateApprovalPolicy.html)  **
+  - **Description:** Grants permission to update an approval policy
+  - **Resource types (\*required):** [approvalPolicy\*](#list_quicksight-resource-approvalPolicy)
   - **Condition keys:**
   - **Access level:** Write
 
@@ -3149,6 +3310,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to update linked QBusiness application Id for QuickSight account
   - **Resource types (\*required):**
   - **Condition keys:**
+  - **Access level:** Write
+
+- **   [UpdateDlpSetting](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDlpSetting.html)  **
+  - **Description:** Grants permission to update a DLP setting
+  - **Resource types (\*required):** [dlpSetting\*](#list_quicksight-resource-dlpSetting)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [UpdateFlow](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateFlow.html)  **
@@ -3446,6 +3613,12 @@ The following actions are defined by Amazon QuickSight but are not directly invo
   - **Condition keys:**
   - **Access level:** Read
 
+- **   [DescribeDlpJob](https://docs.aws.amazon.com/quick/latest/userguide/data-loss-prevention.html)  **
+  - **Description:** Grants permission to describe a DLP evaluation job
+  - **Resource types (\*required):** [dlpSetting\*](#list_quicksight-resource-dlpSetting)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
 - **   [DescribeEmailCustomizationTemplate](https://docs.aws.amazon.com/quicksight/latest/user/customizing-quicksight-email-templates.html)  **
   - **Description:** Grants permission to describe a QuickSight email customization template
   - **Resource types (\*required):** [emailCustomizationTemplate\*](#list_quicksight-resource-emailCustomizationTemplate)
@@ -3490,6 +3663,12 @@ The following actions are defined by Amazon QuickSight but are not directly invo
 
 - **   [ListCustomerManagedKeys](https://docs.aws.amazon.com/quicksight/latest/user/key-management.html)  **
   - **Description:** Grants permission to list all registered customer managed keys
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
+- **   [ListDlpLabels](https://docs.aws.amazon.com/quick/latest/userguide/data-loss-prevention.html)  **
+  - **Description:** Grants permission to list sensitivity labels available from a DLP provider
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** List
@@ -3572,6 +3751,12 @@ The following actions are defined by Amazon QuickSight but are not directly invo
   - **Condition keys:**
   - **Access level:** Write
 
+- **   [StartDlpJob](https://docs.aws.amazon.com/quick/latest/userguide/data-loss-prevention.html)  **
+  - **Description:** Grants permission to start a DLP evaluation job
+  - **Resource types (\*required):** [dlpSetting\*](#list_quicksight-resource-dlpSetting)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [Subscribe](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  **
   - **Description:** Grants permission to subscribe to Amazon QuickSight, and also to allow the user to upgrade the subscription to Enterprise edition
   - **Resource types (\*required):**
@@ -3648,6 +3833,7 @@ The following resource types are defined by this service and can be used in the 
 |  [dashboardSnapshotJob](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DashboardSnapshotJob.html)  | arn:${Partition}:quicksight:${Region}:${Account}:dashboard/${DashboardId}/snapshot-job/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_) |
 |  [dataset](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataSet.html)  | arn:${Partition}:quicksight:${Region}:${Account}:dataset/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_) |
 |  [datasource](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataSource.html)  | arn:${Partition}:quicksight:${Region}:${Account}:datasource/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_) |
+|  [dlpSetting](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateDlpSetting.html)  | arn:${Partition}:quicksight:${Region}:${Account}:dlpsetting/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_) |
 |  [emailCustomizationTemplate](https://docs.aws.amazon.com/quicksight/latest/user/customizing-quicksight-email-templates.html)  | arn:${Partition}:quicksight:${Region}:${Account}:email-customization-template/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_) |
 |  [extensionaccess](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  | arn:${Partition}:quicksight:${Region}:${Account}:extension-access/${ResourceId} |   |
 |  [flow](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Flow.html)  | arn:${Partition}:quicksight:${Region}:${Account}:flow/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_) |

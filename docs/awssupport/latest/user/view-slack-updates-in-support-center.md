@@ -9,7 +9,7 @@ When you create, update, or resolve support cases for your account in the Slack 
 
 **To view case correspondences from Slack**
 
-1. Sign in to the [https://console.aws.amazon.com/support](https://console.aws.amazon.com/support) for your account.
+1. Sign in to the [**AWS Support Center Console**](https://console.aws.amazon.com/support) for your account.
 
 1. Choose your support case.
 

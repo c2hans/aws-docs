@@ -212,7 +212,7 @@ For upgrades to the database engine, Amazon Aurora manages the preferred mainten
 #### AWS CLI
 <a name="AdjustingTheMaintenanceWindow.Aurora.CLI"></a>
 
-To adjust the preferred DB cluster maintenance window, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-cluster.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-cluster.html) command with the following parameters:
+To adjust the preferred DB cluster maintenance window, use the AWS CLI [`modify-db-cluster`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-cluster.html) command with the following parameters:
 + `--db-cluster-identifier`
 + `--preferred-maintenance-window`
 
@@ -236,7 +236,7 @@ aws rds modify-db-cluster ^
 #### RDS API
 <a name="AdjustingTheMaintenanceWindow.Aurora.API"></a>
 
-To adjust the preferred DB cluster maintenance window, use the Amazon RDS [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBCluster.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBCluster.html) API operation with the following parameters:
+To adjust the preferred DB cluster maintenance window, use the Amazon RDS [`ModifyDBCluster`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBCluster.html) API operation with the following parameters:
 + `DBClusterIdentifier`
 + `PreferredMaintenanceWindow`
 
@@ -331,9 +331,9 @@ aws rds describe-pending-maintenance-actions ^
 ### RDS API
 <a name="USER_UpgradeDBInstance.OSUpgrades.API"></a>
 
-To apply an update to a DB cluster, call the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ApplyPendingMaintenanceAction.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ApplyPendingMaintenanceAction.html) operation.
+To apply an update to a DB cluster, call the Amazon RDS API [`ApplyPendingMaintenanceAction`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ApplyPendingMaintenanceAction.html) operation.
 
-To return a list of resources that have at least one pending update, call the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribePendingMaintenanceActions.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribePendingMaintenanceActions.html) operation.
+To return a list of resources that have at least one pending update, call the Amazon RDS API [`DescribePendingMaintenanceActions`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribePendingMaintenanceActions.html) operation.
 
 ## Automatic minor version upgrades for Aurora DB clusters
 <a name="Aurora.Maintenance.AMVU"></a>

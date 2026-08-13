@@ -31,7 +31,7 @@ This procedure is only supported for MariaDB DB instances running MariaDB versio
 
 During execution, binary logging is temporarily disabled to prevent replication of these administrative commands.
 
-The procedure maintains an audit trail by logging all operations in the [https://mariadb.com/docs/server/security/securing-mariadb/securing-mariadb-encryption/data-in-transit-encryption/securing-connections-for-client-and-server#requiring-tls](https://mariadb.com/docs/server/security/securing-mariadb/securing-mariadb-encryption/data-in-transit-encryption/securing-connections-for-client-and-server#requiring-tls) table.
+The procedure maintains an audit trail by logging all operations in the [`mysql.rds_history`](https://mariadb.com/docs/server/security/securing-mariadb/securing-mariadb-encryption/data-in-transit-encryption/securing-connections-for-client-and-server#requiring-tls) table.
 
 ## Examples
 <a name="mysql_rds_execute_operation-examples"></a>

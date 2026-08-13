@@ -32,8 +32,8 @@ You can use the AWS Management Console to respond to the email invitation, which
 You can respond to behavior graph invitations from the Detective API or the AWS Command Line Interface.
 
 **To accept a behavior graph invitation (Detective API, AWS CLI)**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_AcceptInvitation.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_AcceptInvitation.html) operation. You must specify the graph ARN.
-+ **AWS CLI:** At the command line, run the [https://docs.aws.amazon.com/cli/latest/reference/detective/accept-invitation.html](https://docs.aws.amazon.com/cli/latest/reference/detective/accept-invitation.html) command.
++ **Detective API:** Use the [`AcceptInvitation`](https://docs.aws.amazon.com/detective/latest/APIReference/API_AcceptInvitation.html) operation. You must specify the graph ARN.
++ **AWS CLI:** At the command line, run the [`accept-invitation`](https://docs.aws.amazon.com/cli/latest/reference/detective/accept-invitation.html) command.
 
   ```
   aws detective accept-invitation --graph-arn {{<behavior graph ARN>}}
@@ -46,8 +46,8 @@ You can respond to behavior graph invitations from the Detective API or the AWS 
   ```
 
 **To decline a behavior graph invitation (Detective API, AWS CLI)**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_RejectInvitation.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_RejectInvitation.html) operation. You must specify the graph ARN.
-+ **AWS CLI:** At the command line, run the [https://docs.aws.amazon.com/cli/latest/reference/detective/reject-invitation.html](https://docs.aws.amazon.com/cli/latest/reference/detective/reject-invitation.html) command.
++ **Detective API:** Use the [`RejectInvitation`](https://docs.aws.amazon.com/detective/latest/APIReference/API_RejectInvitation.html) operation. You must specify the graph ARN.
++ **AWS CLI:** At the command line, run the [`reject-invitation`](https://docs.aws.amazon.com/cli/latest/reference/detective/reject-invitation.html) command.
 
   ```
   aws detective reject-invitation --graph-arn {{<behavior graph ARN>}}

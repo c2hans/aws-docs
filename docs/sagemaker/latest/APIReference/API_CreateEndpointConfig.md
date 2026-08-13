@@ -15,7 +15,7 @@ In the request, you define a `ProductionVariant`, for each model that you want t
 If you are hosting multiple models, you also assign a `VariantWeight` to specify how much traffic you want to allocate to each model. For example, suppose that you want to host two models, A and B, and you assign traffic weight 2 for model A and 1 for model B. SageMaker distributes two-thirds of the traffic to Model A, and one-third to model B.
 
 **Note**
-When you call [CreateEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html), a load call is made to DynamoDB to verify that your endpoint configuration exists. When you read data from a DynamoDB table supporting [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html), the response might not reflect the results of a recently completed write operation. The response might include some stale data. If the dependent entities are not yet in DynamoDB, this causes a validation error. If you repeat your read request after a short time, the response should return the latest data. So retry logic is recommended to handle these possible issues. We also recommend that customers call [DescribeEndpointConfig](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeEndpointConfig.html) before calling [CreateEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html) to minimize the potential impact of a DynamoDB eventually consistent read.
+When you call [CreateEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html), a load call is made to DynamoDB to verify that your endpoint configuration exists. When you read data from a DynamoDB table supporting [`Eventually Consistent Reads`](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html), the response might not reflect the results of a recently completed write operation. The response might include some stale data. If the dependent entities are not yet in DynamoDB, this causes a validation error. If you repeat your read request after a short time, the response should return the latest data. So retry logic is recommended to handle these possible issues. We also recommend that customers call [DescribeEndpointConfig](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeEndpointConfig.html) before calling [CreateEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html) to minimize the potential impact of a DynamoDB eventually consistent read.
 
 ## Request Syntax
 <a name="API_CreateEndpointConfig_RequestSyntax"></a>
@@ -130,6 +130,10 @@ When you call [CreateEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIR
          "ModelDataDownloadTimeoutInSeconds": {{number}},
          "ModelName": "{{string}}",
          "RoutingConfig": {
+            "PrefixAwareRoutingConfig": {
+               "ConcurrencyThreshold": {{number}},
+               "PrefixLength": {{number}}
+            },
             "RoutingStrategy": "{{string}}"
          },
          "ServerlessConfig": {
@@ -179,6 +183,10 @@ When you call [CreateEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIR
          "ModelDataDownloadTimeoutInSeconds": {{number}},
          "ModelName": "{{string}}",
          "RoutingConfig": {
+            "PrefixAwareRoutingConfig": {
+               "ConcurrencyThreshold": {{number}},
+               "PrefixLength": {{number}}
+            },
             "RoutingStrategy": "{{string}}"
          },
          "ServerlessConfig": {

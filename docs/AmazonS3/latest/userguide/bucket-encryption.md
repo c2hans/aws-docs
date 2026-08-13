@@ -21,7 +21,7 @@ To identify buckets that have SSE-KMS enabled for default encryption, you can us
 
 When you use server-side encryption, Amazon S3 encrypts an object before saving it to disk and decrypts it when you download the object. For more information about protecting data using server-side encryption and encryption-key management, see [Protecting data with server-side encryption](serv-side-encryption.md).
 
-For more information about the permissions required for default encryption, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketEncryption.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketEncryption.html) in the *Amazon Simple Storage Service API Reference*.
+For more information about the permissions required for default encryption, see [PutBucketEncryption](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketEncryption.html) in the *Amazon Simple Storage Service API Reference*.
 
 You can configure the Amazon S3 default encryption behavior for an S3 bucket by using the Amazon S3 console, the AWS SDKs, the Amazon S3 REST API, and the AWS Command Line Interface (AWS CLI).
 

@@ -86,8 +86,8 @@ You can monitor the progress and status of the stack creation on the **Events** 
 
 **To create a stack using the command line**
 You can use one of the following commands:
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) (AWS CLI)
-+ [https://docs.aws.amazon.com/powershell/latest/reference/items/New-CFNStack.html](https://docs.aws.amazon.com/powershell/latest/reference/items/New-CFNStack.html) (AWS Tools for Windows PowerShell)
++ [create-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) (AWS CLI)
++ [New-CFNStack](https://docs.aws.amazon.com/powershell/latest/reference/items/New-CFNStack.html) (AWS Tools for Windows PowerShell)
 
 For examples of using the command line to create a stack, see [Examples of CloudFormation stack operation commands for the AWS CLI and PowerShell](service_code_examples.md).
 

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_TooManyTagsE
 <a name="API_TooManyTagsException"></a>
 
 **Note**
- `TooManyTagsException` is deprecated. See [https://docs.aws.amazon.com/evs/latest/APIReference/API_ServiceQuotaExceededException.html](https://docs.aws.amazon.com/evs/latest/APIReference/API_ServiceQuotaExceededException.html) instead.
+ `TooManyTagsException` is deprecated. See [`ServiceQuotaExceededException`](https://docs.aws.amazon.com/evs/latest/APIReference/API_ServiceQuotaExceededException.html) instead.
 
 A service resource associated with the request has more than 200 tags.
 

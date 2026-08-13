@@ -28,7 +28,7 @@ To use toxic speech detection with a batch transcription, see the following for 
 ### AWS CLI
 <a name="toxicity-using-cli-batch"></a>
 
-This example uses the [start-transcription-job](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/start-transcription-job.html) command and `ToxicityDetection` parameter. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_ToxicityDetection.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_ToxicityDetection.html).
+This example uses the [start-transcription-job](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/start-transcription-job.html) command and `ToxicityDetection` parameter. For more information, see [`StartTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [`ToxicityDetection`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_ToxicityDetection.html).
 
 ```
 aws transcribe start-transcription-job \
@@ -71,7 +71,7 @@ The file *my-first-toxicity-job.json* contains the following request body.
 ### AWS SDK for Python (Boto3)
 <a name="toxicity-using-python-batch"></a>
 
- This example uses the AWS SDK for Python (Boto3) to enable `ToxicityDetection` for the [start\_transcription\_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_transcription_job) method. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [https://docs.aws.amazon.com/transcribe/latest/APIReference/Welcome.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/Welcome.html).
+ This example uses the AWS SDK for Python (Boto3) to enable `ToxicityDetection` for the [start\_transcription\_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_transcription_job) method. For more information, see [`StartTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [`ToxicityDetection`](https://docs.aws.amazon.com/transcribe/latest/APIReference/Welcome.html).
 
 For additional examples using the AWS SDKs, including feature-specific, scenario, and cross-service examples, refer to the [Code examples for Amazon Transcribe using AWS SDKs](service_code_examples.md) chapter.
 

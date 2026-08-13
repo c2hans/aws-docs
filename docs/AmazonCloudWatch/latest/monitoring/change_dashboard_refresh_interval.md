@@ -22,7 +22,7 @@ The following steps explain how to use the console to change the period override
 
 1. Under **Period override**, choose one of the following:
    + Choose **Auto** to have the period of the metrics on each graph automatically adapt to the dashboard's time range.
-   + Choose **Do not override** to ensure that the period setting of each graph is always obeyed.
+   + Choose **Do not override** to make sure that the period setting of each graph is always obeyed.
    + Choose one of the other options to cause graphs added to the dashboard to always adapt that chosen time as their period setting.
 
    The **Period override** always reverts to **Auto** when the dashboard is closed or the browser is refreshed. Different settings for **Period override** can't be saved.

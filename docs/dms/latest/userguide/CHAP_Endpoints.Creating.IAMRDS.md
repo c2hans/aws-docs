@@ -73,7 +73,7 @@ When creating an endpoint you can configure IAM authentication for your Amazon R
 
 ------
 
-1. During the endpoint configuration in the [https://console.aws.amazon.com/dms/v2](https://console.aws.amazon.com/dms/v2), navigate to the **Access to endpoint database** section and select **IAM authentication**.
+1. During the endpoint configuration in the [[AWS DMS console]()](https://console.aws.amazon.com/dms/v2), navigate to the **Access to endpoint database** section and select **IAM authentication**.
 
 1. In the **IAM role for RDS database authentication** dropdown menu, select the IAM role with appropriate permissions to access the database.
 

@@ -7,10 +7,10 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/complia
 # Learn details about Compliance
 <a name="compliance-about"></a>
 
-Compliance, a tool in AWS Systems Manager, collects and reports data about the status of patching in Patch Manager patching and associations in State Manager. (Patch Manager and State Manager are also both tools in AWS Systems Manager.) Compliance also reports on custom compliance types you have specified for your managed nodes. This section includes details about each of these compliance types and how to view Systems Manager compliance data. This section also includes information about how to view compliance history and change tracking.
+Compliance collects and reports data about the status of patching in Patch Manager patching and associations in State Manager. (Patch Manager and State Manager are also both tools in AWS Systems Manager.) Compliance also reports on custom compliance types you have specified for your managed nodes. This section includes details about each of these compliance types and how to view Systems Manager compliance data. This section also includes information about how to view compliance history and change tracking.
 
 **Note**
-Systems Manager integrates with [https://www.chef.io/inspec/](https://www.chef.io/inspec/). InSpec is an open-source, runtime framework that allows you to create human-readable profiles on GitHub or Amazon Simple Storage Service (Amazon S3). Then you can use Systems Manager to run compliance scans and view compliant and noncompliant instances. For more information, see [Using Chef InSpec profiles with Systems Manager Compliance](integration-chef-inspec.md).
+Systems Manager integrates with [Chef InSpec](https://www.chef.io/inspec/). InSpec is an open-source, runtime framework that lets you create human-readable profiles on GitHub or Amazon Simple Storage Service (Amazon S3). Then you can use Systems Manager to run compliance scans and view compliant and noncompliant instances. For more information, see [Using Chef InSpec profiles with Systems Manager Compliance](integration-chef-inspec.md).
 
 ## About patch compliance
 <a name="compliance-monitor-patch"></a>
@@ -24,7 +24,7 @@ For information about patch compliance status values, see [Patch compliance stat
 
 After you create one or more State Manager associations, compliance status information is immediately available to you in the console or in response to AWS CLI commands or corresponding Systems Manager API operations. For associations, Compliance shows statuses of `Compliant` or `Non-compliant` and the severity level assigned to the association, such as `Critical` or `Medium`.
 
-When State Manager executes an association on a managed node, it triggers a compliance aggregation process that updates compliance status for all associations on that node. The `ExecutionTime` value in compliance reports represents when the compliance status was captured by Systems Manager, not when the association was executed on the managed node. This means multiple associations might display identical `ExecutionTime` values even if they were executed at different times. To determine actual association execution times, refer to the association execution history using the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-association-execution-targets.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-association-execution-targets.html) or by viewing the execution details in the console.
+When State Manager executes an association on a managed node, it triggers a compliance aggregation process that updates compliance status for all associations on that node. The `ExecutionTime` value in compliance reports represents when the compliance status was captured by Systems Manager, not when the association was executed on the managed node. This means multiple associations might display identical `ExecutionTime` values even if they were executed at different times. To determine actual association execution times, refer to the association execution history using the AWS CLI command [describe-association-execution-targets](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-association-execution-targets.html) or by viewing the execution details in the console.
 
 ## About custom compliance
 <a name="compliance-custom"></a>
@@ -98,18 +98,18 @@ For information about fixing compliance issues, see [Remediating compliance issu
 
 You can view summaries of compliance data for patching, associations, and custom compliance types in the in the AWS CLI by using the following AWS CLI commands.
 
-[https://docs.aws.amazon.com/cli/latest/reference/ssm/list-compliance-summaries.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/list-compliance-summaries.html)
+[list-compliance-summaries](https://docs.aws.amazon.com/cli/latest/reference/ssm/list-compliance-summaries.html)
 Returns a summary count of compliant and non-compliant association statuses according to the filter you specify. (API: [ListComplianceSummaries](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_ListComplianceSummaries.html))
 
-[https://docs.aws.amazon.com/cli/latest/reference/ssm/list-resource-compliance-summaries.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/list-resource-compliance-summaries.html)
+[list-resource-compliance-summaries](https://docs.aws.amazon.com/cli/latest/reference/ssm/list-resource-compliance-summaries.html)
 Returns a resource-level summary count. The summary includes information about compliant and non-compliant statuses and detailed compliance-item severity counts, according to the filter criteria you specify. (API: [ListResourceComplianceSummaries](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_ListResourceComplianceSummaries.html))
 
 You can view additional compliance data for patching by using the following AWS CLI commands.
 
-[https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-patch-group-state.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-patch-group-state.html)
+[describe-patch-group-state](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-patch-group-state.html)
 Returns high-level aggregated patch compliance state for a patch group. (API: [DescribePatchGroupState](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribePatchGroupState.html))
 
-[https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-instance-patch-states-for-patch-group.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-instance-patch-states-for-patch-group.html)
+[describe-instance-patch-states-for-patch-group](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-instance-patch-states-for-patch-group.html)
 Returns the high-level patch state for the instances in the specified patch group. (API: [DescribeInstancePatchStatesForPatchGroup](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribeInstancePatchStatesForPatchGroup.html))
 
 **Note**

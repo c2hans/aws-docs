@@ -38,7 +38,7 @@ To view a task summary from this page, choose **Task ID** for the task you just 
 
 ## To import metadata changes (CLI)
 <a name="create-import-data-repo-task-dra-cli"></a>
-+ Use the [https://docs.aws.amazon.com/cli/latest/reference/fsx/create-data-repository-task.html](https://docs.aws.amazon.com/cli/latest/reference/fsx/create-data-repository-task.html) CLI command to import metadata changes on your FSx for Lustre file system. The corresponding API operation is [https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateDataRepositoryTask.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateDataRepositoryTask.html).
++ Use the [`create-data-repository-task`](https://docs.aws.amazon.com/cli/latest/reference/fsx/create-data-repository-task.html) CLI command to import metadata changes on your FSx for Lustre file system. The corresponding API operation is [`CreateDataRepositoryTask`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateDataRepositoryTask.html).
 
   ```
   $ aws fsx create-data-repository-task \

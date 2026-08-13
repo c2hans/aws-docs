@@ -36,7 +36,7 @@ You can use the Amazon SageMaker API to specify key value pairs in the [StaticHy
 ## Dynamic hyperparameters
 <a name="automatic-model-tuning-define-ranges-dynamic"></a>
 
-You can use the SageMaker API to define [hyperparameter ranges](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperParameterTrainingJobDefinition.html#sagemaker-Type-HyperParameterTrainingJobDefinition-HyperParameterRanges). Specify the names of hyperparameters and ranges of values in the `ParameterRanges` field of the `HyperParameterTuningJobConfig` parameter that you pass to the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateHyperParameterTuningJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateHyperParameterTuningJob.html) operation.
+You can use the SageMaker API to define [hyperparameter ranges](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperParameterTrainingJobDefinition.html#sagemaker-Type-HyperParameterTrainingJobDefinition-HyperParameterRanges). Specify the names of hyperparameters and ranges of values in the `ParameterRanges` field of the `HyperParameterTuningJobConfig` parameter that you pass to the [`CreateHyperParameterTuningJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateHyperParameterTuningJob.html) operation.
 
 The `ParameterRanges` field has three subfields: categorical, integer, and continuous. You can define up to 30 total (categorical \+ integer \+ continuous) tunable hyperparameters to search over.
 

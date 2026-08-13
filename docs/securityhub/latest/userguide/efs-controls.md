@@ -18,17 +18,17 @@ These Security Hub CSPM controls evaluate the Amazon Elastic File System (Amazon
 
 **Resource type:** `AWS::EFS::FileSystem`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/efs-encrypted-check.html](https://docs.aws.amazon.com/config/latest/developerguide/efs-encrypted-check.html)
+**AWS Config rule:** [efs-encrypted-check](https://docs.aws.amazon.com/config/latest/developerguide/efs-encrypted-check.html)
 
 **Schedule type:** Periodic
 
 **Parameters:** None
 
 This control checks whether Amazon Elastic File System is configured to encrypt the file data using AWS KMS. The check fails in the following cases.
-+ `Encrypted` is set to `false` in the [https://docs.aws.amazon.com/efs/latest/ug/API_DescribeFileSystems.html](https://docs.aws.amazon.com/efs/latest/ug/API_DescribeFileSystems.html) response.
-+ The `KmsKeyId` key in the [https://docs.aws.amazon.com/efs/latest/ug/API_DescribeFileSystems.html](https://docs.aws.amazon.com/efs/latest/ug/API_DescribeFileSystems.html) response does not match the `KmsKeyId` parameter for [https://docs.aws.amazon.com/config/latest/developerguide/efs-encrypted-check.html](https://docs.aws.amazon.com/config/latest/developerguide/efs-encrypted-check.html).
++ `Encrypted` is set to `false` in the [`DescribeFileSystems`](https://docs.aws.amazon.com/efs/latest/ug/API_DescribeFileSystems.html) response.
++ The `KmsKeyId` key in the [`DescribeFileSystems`](https://docs.aws.amazon.com/efs/latest/ug/API_DescribeFileSystems.html) response does not match the `KmsKeyId` parameter for [`efs-encrypted-check`](https://docs.aws.amazon.com/config/latest/developerguide/efs-encrypted-check.html).
 
-Note that this control does not use the `KmsKeyId` parameter for [https://docs.aws.amazon.com/config/latest/developerguide/efs-encrypted-check.html](https://docs.aws.amazon.com/config/latest/developerguide/efs-encrypted-check.html). It only checks the value of `Encrypted`.
+Note that this control does not use the `KmsKeyId` parameter for [`efs-encrypted-check`](https://docs.aws.amazon.com/config/latest/developerguide/efs-encrypted-check.html). It only checks the value of `Encrypted`.
 
 For an added layer of security for your sensitive data in Amazon EFS, you should create encrypted file systems. Amazon EFS supports encryption for file systems at-rest. You can enable encryption of data at rest when you create an Amazon EFS file system. To learn more about Amazon EFS encryption, see[ Data encryption in Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/encryption.html) in the *Amazon Elastic File System User Guide*.
 
@@ -48,7 +48,7 @@ For details on how to encrypt a new Amazon EFS file system, see [Encrypting data
 
 **Resource type:** `AWS::EFS::FileSystem`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/efs-in-backup-plan.html](https://docs.aws.amazon.com/config/latest/developerguide/efs-in-backup-plan.html)
+**AWS Config rule:** [efs-in-backup-plan](https://docs.aws.amazon.com/config/latest/developerguide/efs-in-backup-plan.html)
 
 **Schedule type:** Periodic
 
@@ -74,7 +74,7 @@ To enable automatic backups for an existing Amazon EFS file system, see [Getting
 
 **Resource type:** `AWS::EFS::AccessPoint`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/efs-access-point-enforce-root-directory.html](https://docs.aws.amazon.com/config/latest/developerguide/efs-access-point-enforce-root-directory.html)
+**AWS Config rule:** [efs-access-point-enforce-root-directory](https://docs.aws.amazon.com/config/latest/developerguide/efs-access-point-enforce-root-directory.html)
 
 **Schedule type:** Change triggered
 
@@ -100,7 +100,7 @@ For instructions on how to enforce a root directory for an Amazon EFS access poi
 
 **Resource type:** `AWS::EFS::AccessPoint`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/efs-access-point-enforce-user-identity.html](https://docs.aws.amazon.com/config/latest/developerguide/efs-access-point-enforce-user-identity.html)
+**AWS Config rule:** [efs-access-point-enforce-user-identity](https://docs.aws.amazon.com/config/latest/developerguide/efs-access-point-enforce-user-identity.html)
 
 **Schedule type:** Change triggered
 
@@ -157,7 +157,7 @@ To add tags to an EFS access point, see [Tagging Amazon EFS resources](https://d
 
 **Resource type:** `AWS::EFS::FileSystem`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/efs-mount-target-public-accessible.html](https://docs.aws.amazon.com/config/latest/developerguide/efs-mount-target-public-accessible.html)
+**AWS Config rule:** [efs-mount-target-public-accessible](https://docs.aws.amazon.com/config/latest/developerguide/efs-mount-target-public-accessible.html)
 
 **Schedule type:** Periodic
 
@@ -188,7 +188,7 @@ To associate an existing mount target with a different subnet, you must create a
 
 **Resource type:** `AWS::EFS::FileSystem`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/efs-automatic-backups-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/efs-automatic-backups-enabled.html)
+**AWS Config rule:** [efs-automatic-backups-enabled](https://docs.aws.amazon.com/config/latest/developerguide/efs-automatic-backups-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -214,7 +214,7 @@ For information about using AWS Backup for EFS file systems, see [Backing up EFS
 
 **Resource type:** `AWS::EFS::FileSystem`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/efs-filesystem-ct-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/efs-filesystem-ct-encrypted.html)
+**AWS Config rule:** [efs-filesystem-ct-encrypted](https://docs.aws.amazon.com/config/latest/developerguide/efs-filesystem-ct-encrypted.html)
 
 **Schedule type:** Change triggered
 

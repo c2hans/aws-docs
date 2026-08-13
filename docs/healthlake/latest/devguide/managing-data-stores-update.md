@@ -10,7 +10,7 @@ Use `UpdateFHIRDatastore` to update the configuration of an existing AWS HealthL
 **Note**
 Updating the identity provider configuration replaces it in full—include every field you want to keep. Any field you omit is cleared.
 
-The following menu provides examples for the AWS CLI and AWS SDKs. For more information, see [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_UpdateFHIRDatastore.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_UpdateFHIRDatastore.html) in the *AWS HealthLake API Reference*.
+The following menu provides examples for the AWS CLI and AWS SDKs. For more information, see [`UpdateFHIRDatastore`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_UpdateFHIRDatastore.html) in the *AWS HealthLake API Reference*.
 
 **Important**
 NLP and analytics changes are applied through an asynchronous workflow: the data store status changes to `UPDATING` and returns to `ACTIVE` when the update completes, or shows `UPDATE_FAILED` if it doesn't. Data store name, FHIR validation profile, and identity provider changes take effect immediately and don't change the status. Only one update can be in progress for a data store at a time; a second update submitted while one is running returns `ConflictException`. Use `DescribeFHIRDatastore` to track the status of an update.

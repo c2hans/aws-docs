@@ -39,12 +39,37 @@ Content-type: application/json
       "tier": "{{string}}"
    },
    "deletionProtection": {{boolean}},
+   "kubeApiServerConfig": {
+      "eventTtl": "{{string}}",
+      "serviceNodePortRange": {
+         "maxPort": {{number}},
+         "minPort": {{number}}
+      }
+   },
+   "kubeControllerManagerConfig": {
+      "horizontalPodAutoscalerControllerConfig": {
+         "horizontalPodAutoscalerSyncPeriod": "{{string}}"
+      }
+   },
    "kubernetesNetworkConfig": {
       "elasticLoadBalancing": {
          "enabled": {{boolean}}
       },
       "ipFamily": "{{string}}",
       "serviceIpv4Cidr": "{{string}}"
+   },
+   "kubeSchedulerConfig": {
+      "nodeResourcesFit": {
+         "scoringStrategy": {
+            "resources": [
+               {
+                  "name": "{{string}}",
+                  "weight": {{number}}
+               }
+            ],
+            "type": "{{string}}"
+         }
+      }
    },
    "logging": {
       "clusterLogging": [
@@ -127,9 +152,24 @@ Specifies whether to enable or disable deletion protection for the cluster. When
 Type: Boolean
 Required: No
 
+ ** [kubeApiServerConfig](#API_UpdateClusterConfig_RequestSyntax) **   <a name="AmazonEKS-UpdateClusterConfig-request-kubeApiServerConfig"></a>
+The Kubernetes API server configuration for the updated cluster.
+Type: [KubeApiServerConfigRequest](API_KubeApiServerConfigRequest.md) object
+Required: No
+
+ ** [kubeControllerManagerConfig](#API_UpdateClusterConfig_RequestSyntax) **   <a name="AmazonEKS-UpdateClusterConfig-request-kubeControllerManagerConfig"></a>
+The Kubernetes controller manager configuration for the updated cluster.
+Type: [KubeControllerManagerConfigRequest](API_KubeControllerManagerConfigRequest.md) object
+Required: No
+
  ** [kubernetesNetworkConfig](#API_UpdateClusterConfig_RequestSyntax) **   <a name="AmazonEKS-UpdateClusterConfig-request-kubernetesNetworkConfig"></a>
 The Kubernetes network configuration for the cluster.
 Type: [KubernetesNetworkConfigRequest](API_KubernetesNetworkConfigRequest.md) object
+Required: No
+
+ ** [kubeSchedulerConfig](#API_UpdateClusterConfig_RequestSyntax) **   <a name="AmazonEKS-UpdateClusterConfig-request-kubeSchedulerConfig"></a>
+The Kubernetes scheduler configuration for the updated cluster.
+Type: [KubeSchedulerConfigRequest](API_KubeSchedulerConfigRequest.md) object
 Required: No
 
  ** [logging](#API_UpdateClusterConfig_RequestSyntax) **   <a name="AmazonEKS-UpdateClusterConfig-request-logging"></a>

@@ -30,7 +30,7 @@ To request a UIFN within a specific AWS Region, create an AWS Support case. In t
 
 Connect Customer can route UIFNs to multiple AWS Regions. For example, if a UIFN is enabled for Australia, it can be routed to your Connect Customer instance that is located in the Asia Pacific (Sydney) Region. If a UIFN is enabled for **more** countries, each country can be routed to your Connect Customer instance, which may be in any supported AWS Region.
 
-The following image shows the body of a sample UIFN request submitted to AWS Support. This request is for two UIFNs. The first is for a UIFN that is enabled for Argentina, Brazil, and Colombia, and connected to an Connect Customer instance in the US West (Oregon) Region. The second request is for a UIFN that is enabled for Japan, Australia, and New Zealand and connected to an Connect Customer instance located in the Asia Pacific (Singapore) Region.
+The following image shows the body of a sample UIFN request submitted to AWS Support. This request is for two UIFNs. The first is for a UIFN that is enabled for Argentina, Brazil, and Colombia, and connected to a Connect Customer instance in the US West (Oregon) Region. The second request is for a UIFN that is enabled for Japan, Australia, and New Zealand and connected to a Connect Customer instance located in the Asia Pacific (Singapore) Region.
 
 ![A support case requesting two UIFNs.](http://docs.aws.amazon.com/connect/latest/adminguide/images/uifn-example-request.png)
 

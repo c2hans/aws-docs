@@ -42,7 +42,7 @@ To customize this reference architecture diagram based on your business needs, [
 ## Create a free AWS account
 <a name="create-a-free-aws-account"></a>
 
-[https://portal.aws.amazon.com/gp/aws/developer/registration/index.html](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html)
+[![Sign up for a free AWS account](http://docs.aws.amazon.com/architecture-diagrams/latest/aws-aerospace-vdi-reference-architecture/images/signup.png)](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html)
 
 Sign up for an AWS account. New accounts include 12 months of [AWS Free Tier](https://aws.amazon.com/free/) access, including the use of Amazon EC2, Amazon S3, and Amazon DynamoDB.
 

@@ -34,7 +34,7 @@ In a default DB cluster parameter group, parameters are always set to their defa
 ## AWS CLI
 <a name="USER_WorkingWithParamGroups.ResettingCluster.CLI"></a>
 
-To reset parameters in a DB cluster parameter group to their default values, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/reset-db-cluster-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/reset-db-cluster-parameter-group.html) command with the following required option: `--db-cluster-parameter-group-name`.
+To reset parameters in a DB cluster parameter group to their default values, use the AWS CLI [`reset-db-cluster-parameter-group`](https://docs.aws.amazon.com/cli/latest/reference/rds/reset-db-cluster-parameter-group.html) command with the following required option: `--db-cluster-parameter-group-name`.
 
 To reset all of the parameters in the DB cluster parameter group, specify the `--reset-all-parameters` option. To reset specific parameters, specify the `--parameters` option.
 
@@ -84,6 +84,6 @@ DBClusterParameterGroupName  mydbclusterparametergroup
 ## RDS API
 <a name="USER_WorkingWithParamGroups.ResettingCluster.API"></a>
 
-To reset parameters in a DB cluster parameter group to their default values, use the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ResetDBClusterParameterGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ResetDBClusterParameterGroup.html) command with the following required parameter: `DBClusterParameterGroupName`.
+To reset parameters in a DB cluster parameter group to their default values, use the RDS API [`ResetDBClusterParameterGroup`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ResetDBClusterParameterGroup.html) command with the following required parameter: `DBClusterParameterGroupName`.
 
 To reset all of the parameters in the DB cluster parameter group, set the `ResetAllParameters` parameter to `true`. To reset specific parameters, specify the `Parameters` parameter.

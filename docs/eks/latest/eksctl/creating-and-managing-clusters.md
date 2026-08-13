@@ -134,7 +134,7 @@ When deleting a cluster with nodegroups, Pod Disruption Budget (PDB) policies ca
 eksctl delete cluster -f cluster.yaml --disable-nodegroup-eviction
 ```
 
-See the [https://github.com/eksctl-io/eksctl/tree/master/examples](https://github.com/eksctl-io/eksctl/tree/master/examples) directory in the eksctl GitHub repo for more sample config files.
+See the [`examples/`](https://github.com/eksctl-io/eksctl/tree/master/examples) directory in the eksctl GitHub repo for more sample config files.
 
 ## Dry Run
 <a name="_dry_run"></a>

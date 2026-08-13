@@ -8,18 +8,18 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/integrati
 **Amazon Kendra end of new-customer availability**
 Amazon Kendra will no longer be open to new customers starting on July 30, 2026. For QnABot deployments using Kendra as a fallback data source, we suggest Amazon Bedrock Knowledge Bases as an alternative. [Amazon Kendra availability change](https://docs.aws.amazon.com/kendra/latest/dg/kendra-availability-change.html).
 
- [Amazon Kendra](https://aws.amazon.com/kendra/) is an intelligent search service powered by machine learning. There are two ways to take advantage of Amazon Kendra’s NLP model to enhance the solution’s ability to understand human questions:
+ [Amazon Kendra](https://aws.amazon.com/kendra/) is an intelligent search service powered by machine learning. There are two ways to take advantage of Amazon Kendra’s NLP model to enhance the guidance’s ability to understand human questions:
 
-1. Use Amazon Kendra’s FAQ queries to match users' questions to the answers in the solution’s knowledge base. Amazon Kendra’s machine learning models can handle many variations in how users phrase their questions, and this can reduce the amount of tuning needed for the solution to find the right answer from your knowledge base.
+1. Use Amazon Kendra’s FAQ queries to match users' questions to the answers in the guidance’s knowledge base. Amazon Kendra’s machine learning models can handle many variations in how users phrase their questions, and this can reduce the amount of tuning needed for the guidance to find the right answer from your knowledge base.
 
-1. Use Amazon Kendra’s document index as a fallback source of answers when a question/answer is not found in the solution’s knowledge base.
+1. Use Amazon Kendra’s document index as a fallback source of answers when a question/answer is not found in the guidance’s knowledge base.
 
 For more information, see [Amazon Kendra Pricing](https://aws.amazon.com/kendra/pricing/) and [Getting started](https://docs.aws.amazon.com/kendra/latest/dg/getting-started.html) in the *Amazon Kendra Developer Guide* to create your Amazon Kendra index\_.\_
 
 ## Using Amazon Kendra FAQ for question matching
 <a name="using-kendra-faq-for-question-matching"></a>
 
-Use the following procedure to configure the solution to use your Amazon Kendra index to answer questions from the data populated in the content designer:
+Use the following procedure to configure the guidance to use your Amazon Kendra index to answer questions from the data populated in the content designer:
 
 1. Set the **KendraFaqIndexId** CloudFormation parameter to the ID of the Amazon Kendra index to use. Find the index ID in the Amazon Kendra console.
 
@@ -29,9 +29,9 @@ Use the following procedure to configure the solution to use your Amazon Kendra 
 
    1. Choose **SYNC KENDRA FAQ** and wait for it to complete - it might take a few minutes.
 
-The solution will now use Amazon Kendra FAQ queries to find matches to end users' questions. Use the **ALT\_SEARCH\_KENDRA\_FAQ\_CONFIDENCE\_SCORE** setting to adjust the confidence threshold for Amazon Kendra FAQ answers used by QnABot on AWS.
+The guidance now uses Amazon Kendra FAQ queries to find matches to end users' questions. Use the **ALT\_SEARCH\_KENDRA\_FAQ\_CONFIDENCE\_SCORE** setting to adjust the confidence threshold for Amazon Kendra FAQ answers used by QnABot on AWS.
 
-If Amazon Kendra FAQ cannot find an answer that meets the confidence threshold, the solution will revert by default to using an Amazon OpenSearch Service query. The combination of Amazon Kendra FAQ and Amazon OpenSearch Service gives you the best of both worlds.
+If Amazon Kendra FAQ cannot find an answer that meets the confidence threshold, the guidance reverts by default to using an Amazon OpenSearch Service query. The combination of Amazon Kendra FAQ and Amazon OpenSearch Service gives you the best of both worlds.
 
 **Note**
 When adding your **Amazon KendraFaqIndexId** in CloudFormation, also add the index ID in **AltSearchAmazon KendraIndexes**.
@@ -39,7 +39,7 @@ When adding your **Amazon KendraFaqIndexId** in CloudFormation, also add the ind
 ## Using Amazon Kendra search as a fallback source of answers
 <a name="using-amazon-kendra-search-as-a-fallback-source-of-answers"></a>
 
-You can add one or more data sources to your Amazon Kendra index, and configure the solution to query your index any time it gets a question that it doesn’t know how to answer.
+You can add one or more data sources to your Amazon Kendra index, and configure the guidance to query your index any time it gets a question that it doesn’t know how to answer.
 + Set the **AltSearchAmazon KendraIndexes** CloudFormation parameter to specify one or more Amazon Kendra indexes to use for fallback searches.
 
 The value of **AltSearchAmazon KendraIndexes** parameter should be specified as a string containing index IDs separated by comma, for example:
@@ -96,7 +96,7 @@ When applying Amazon Kendra query arguments, check if the document fields are se
 ## Web page indexer
 <a name="web-page-indexer"></a>
 
-This solution can answer questions based on the content of web pages.
+This guidance can answer questions based on the content of web pages.
 
 1. In the CloudFormation stack, set the **Amazon KendraWebPageIndexId** parameter to `Existing Amazon Kendra Index ID`. Add the same index ID for the **AltSearchAmazon KendraIndexes** parameter.
 

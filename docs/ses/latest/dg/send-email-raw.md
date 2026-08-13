@@ -166,7 +166,7 @@ Amazon SES accepts most common file types. For a list of file types that Amazon 
 ## Sending raw email using the Amazon SES API v2
 <a name="send-email-raw-api"></a>
 
-The Amazon SES API v2 provides the `SendEmail` action, which lets you compose and send an email message in the format that you specify when you set the content type to either simple, raw, or templated. For a complete description, see [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html). The following example will specify the content type as `raw` to send a messages using the raw email format.
+The Amazon SES API v2 provides the `SendEmail` action, which lets you compose and send an email message in the format that you specify when you set the content type to either simple, raw, or templated. For a complete description, see [`SendEmail`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html). The following example will specify the content type as `raw` to send a messages using the raw email format.
 
 **Note**
 For tips on how to increase your email sending speed when you make multiple calls to `SendEmail`, see [Increasing throughput with Amazon SES](troubleshoot-throughput-problems.md).

@@ -25,7 +25,7 @@ Before you customize widget layout, verify that the widgets you want to view are
 
 1. Choose **Explorer** to view your changes.
 
-To customize widget layout in Explorer, choose a widget that you want to move. Click and hold the name of the widget and then drag it to its new location.
+To customize widget layout in Explorer, choose a widget that you want to move. Press and hold the name of the widget and then drag it to its new location.
 
 ![Moving a widget in Systems Manager Explorer](http://docs.aws.amazon.com/systems-manager/latest/userguide/images/explorer-customize.png)
 

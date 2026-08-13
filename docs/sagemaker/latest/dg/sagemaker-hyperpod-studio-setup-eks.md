@@ -155,7 +155,7 @@ roleRef:
 
 1. Save the YAML configuration to a file named `cluster-role.yaml`.
 
-1. Apply the configuration using [https://kubernetes.io/docs/reference/kubectl/](https://kubernetes.io/docs/reference/kubectl/):
+1. Apply the configuration using [`kubectl`](https://kubernetes.io/docs/reference/kubectl/):
 
    ```
    kubectl apply -f cluster-role.yaml

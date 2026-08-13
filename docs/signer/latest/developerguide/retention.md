@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/retention.h
 # Data Retention for Signer
 <a name="retention"></a>
 
-**Signing Profiles **are automatically scheduled for deletion once they are [https://docs.aws.amazon.com/signer/latest/api/API_CancelSigningProfile.html](https://docs.aws.amazon.com/signer/latest/api/API_CancelSigningProfile.html) or [https://docs.aws.amazon.com/signer/latest/api/API_RevokeSigningProfile.html](https://docs.aws.amazon.com/signer/latest/api/API_RevokeSigningProfile.html).
+**Signing Profiles **are automatically scheduled for deletion once they are [`canceled`](https://docs.aws.amazon.com/signer/latest/api/API_CancelSigningProfile.html) or [`revoked`](https://docs.aws.amazon.com/signer/latest/api/API_RevokeSigningProfile.html).
 
  When a signing profile is canceled or revoked, we retain the profile for an additional period of time to ensure that any existing signatures created with that profile have expired before it is deleted. The retention period is equal to the signing profile's signature vailidity period plus 6 months. The default validity period is 135 months, so by default, canceled or revoked profiles are deleted after 141 months. Should you configure a shorter validity period, they will be deleted sooner.
 

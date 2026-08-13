@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/put-job-tags.h
 # Adding job tags to an existing Batch Operations job
 <a name="put-job-tags"></a>
 
-You can use the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutJobTagging.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutJobTagging.html) API operation to add job tags to your existing Amazon S3 Batch Operations jobs. For more information, see the following examples.
+You can use the [PutJobTagging](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutJobTagging.html) API operation to add job tags to your existing Amazon S3 Batch Operations jobs. For more information, see the following examples.
 
 ## Using the AWS CLI
 <a name="batch-ops-example-cli-job-tags-put-job-tagging"></a>

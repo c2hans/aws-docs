@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PutOrgani
 # PutOrganizationConformancePack
 <a name="API_PutOrganizationConformancePack"></a>
 
-Deploys conformance packs across member accounts in an AWS Organization. For information on how many organization conformance packs and how many AWS Config rules you can have per account, see [https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html](https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html) in the * AWS Config Developer Guide*.
+Deploys conformance packs across member accounts in an AWS Organization. For information on how many organization conformance packs and how many AWS Config rules you can have per account, see [**Service Limits**](https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html) in the * AWS Config Developer Guide*.
 
 Only a management account and a delegated administrator can call this API. When calling this API with a delegated administrator, you must ensure AWS Organizations `ListDelegatedAdministrator` permissions are added. An organization can have up to 3 delegated administrators.
 
@@ -147,7 +147,7 @@ Indicates one of the following errors:
 HTTP Status Code: 400
 
  ** MaxNumberOfOrganizationConformancePacksExceededException **
-You have reached the limit of the number of organization conformance packs you can create in an account. For more information, see [https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html](https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html) in the * AWS Config Developer Guide*.
+You have reached the limit of the number of organization conformance packs you can create in an account. For more information, see [**Service Limits**](https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html) in the * AWS Config Developer Guide*.
 HTTP Status Code: 400
 
  ** NoAvailableOrganizationException **

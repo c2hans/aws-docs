@@ -78,7 +78,7 @@ The following precedure walks you through how to use the hook and its methods to
    )
    ```
 
-1. Register the hook to the [https://www.tensorflow.org/api_docs/python/tf/keras/Model#fit](https://www.tensorflow.org/api_docs/python/tf/keras/Model#fit) method.
+1. Register the hook to the [`tf.keras.Model.fit()`](https://www.tensorflow.org/api_docs/python/tf/keras/Model#fit) method.
 
    To collect the tensors from the hooks that you registered, add `callbacks=[hook]` to the Keras `model.fit()` class method. This will pass the `sagemaker-debugger` hook as a Keras callback.
 
@@ -93,7 +93,7 @@ The following precedure walks you through how to use the hook and its methods to
    )
    ```
 
-1. TensorFlow 2.x provides only symbolic gradient variables that do not provide access to their values. To collect gradients, wrap `tf.GradientTape` by the [https://sagemaker-debugger.readthedocs.io/en/website/hook-methods.html#tensorflow-specific-hook-api](https://sagemaker-debugger.readthedocs.io/en/website/hook-methods.html#tensorflow-specific-hook-api) method, which requires you to write your own training step as follows.
+1. TensorFlow 2.x provides only symbolic gradient variables that do not provide access to their values. To collect gradients, wrap `tf.GradientTape` by the [`hook.wrap_tape()`](https://sagemaker-debugger.readthedocs.io/en/website/hook-methods.html#tensorflow-specific-hook-api) method, which requires you to write your own training step as follows.
 
    ```
    def training_step(model, dataset):

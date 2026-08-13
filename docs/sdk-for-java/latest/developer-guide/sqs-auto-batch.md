@@ -58,7 +58,7 @@ When you use this approach, the `SqsAsyncBatchManager` instance uses the default
 ### Custom configuration by using `SqsAsyncBatchManager.Builder`
 <a name="sqs-batch-manager-create-custom"></a>
 
-For more advanced use cases, you can customize the batch manager using the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/batchmanager/SqsAsyncBatchManager.Builder.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/batchmanager/SqsAsyncBatchManager.Builder.html). By using this approach to create a `SqsAsyncBatchManager` instance, you can fine tune the batching behavior. The following snippet shows an example of how to use the builder to customize batching behavior.
+For more advanced use cases, you can customize the batch manager using the [`SqsAsyncBatchManager.Builder`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/batchmanager/SqsAsyncBatchManager.Builder.html). By using this approach to create a `SqsAsyncBatchManager` instance, you can fine tune the batching behavior. The following snippet shows an example of how to use the builder to customize batching behavior.
 
 ```
 SqsAsyncBatchManager batchManager = SqsAsyncBatchManager.builder()
@@ -72,7 +72,7 @@ SqsAsyncBatchManager batchManager = SqsAsyncBatchManager.builder()
     .build();
 ```
 
-When you use this approach, you can adjust the settings on the `BatchOverrideConfiguration` object that are shown in the table in the [Override configuration settings for `SqsAsyncBatchManager`](#sqs-auto-batch-config-settings) section. You can also provide a custom [https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ScheduledExecutorService.html](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ScheduledExecutorService.html) for the batch manager by using this approach.
+When you use this approach, you can adjust the settings on the `BatchOverrideConfiguration` object that are shown in the table in the [Override configuration settings for `SqsAsyncBatchManager`](#sqs-auto-batch-config-settings) section. You can also provide a custom [`ScheduledExecutorService`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ScheduledExecutorService.html) for the batch manager by using this approach.
 
 ## Send messages
 <a name="sqs-auto-batch-send"></a>
@@ -98,7 +98,7 @@ SendMessageResponse messageTwo = futureTwo.join();
 ## Change the message visibility timeout
 <a name="sqs-auto-batch-change-vis"></a>
 
-You can change the visibility timeout of messages in a batch by using the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/batchmanager/SqsAsyncBatchManager.html#changeMessageVisibility(java.util.function.Consumer)](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/batchmanager/SqsAsyncBatchManager.html#changeMessageVisibility(java.util.function.Consumer)) method. The SDK buffers requests and sends them as a batch when the `maxBatchSize` or `sendRequestFrequency` values are reached.
+You can change the visibility timeout of messages in a batch by using the [`SqsAsyncBatchManager#changeMessageVisibility`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/batchmanager/SqsAsyncBatchManager.html#changeMessageVisibility(java.util.function.Consumer)) method. The SDK buffers requests and sends them as a batch when the `maxBatchSize` or `sendRequestFrequency` values are reached.
 
 The following example shows how to call the `changeMessageVisibility` method.
 
@@ -113,7 +113,7 @@ ChangeMessageVisibilityResponse response = futureOne.join();
 ## Delete messages
 <a name="sqs-auto-batch-delete"></a>
 
-You can delete messages in a batch using the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/batchmanager/SqsAsyncBatchManager.html#deleteMessage(java.util.function.Consumer)](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/batchmanager/SqsAsyncBatchManager.html#deleteMessage(java.util.function.Consumer)) method. The SDK buffers requests and sends them as a batch when the `maxBatchSize` or `sendRequestFrequency` values are reached.
+You can delete messages in a batch using the [`SqsAsyncBatchManager#deleteMessage`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/batchmanager/SqsAsyncBatchManager.html#deleteMessage(java.util.function.Consumer)) method. The SDK buffers requests and sends them as a batch when the `maxBatchSize` or `sendRequestFrequency` values are reached.
 
 The following example shows how you can call the `deleteMessage` method.
 
@@ -163,7 +163,7 @@ If you call `receiveMessage` with a `[ReceiveMessageRequest](https://sdk.amazona
 ## Override configuration settings for `SqsAsyncBatchManager`
 <a name="sqs-auto-batch-config-settings"></a>
 
-You can adjust the following settings when you create an `SqsAsyncBatchManager` instance. The following list of settings are available on the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/batchmanager/BatchOverrideConfiguration.Builder.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/batchmanager/BatchOverrideConfiguration.Builder.html).
+You can adjust the following settings when you create an `SqsAsyncBatchManager` instance. The following list of settings are available on the [`BatchOverrideConfiguration.Builder`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/batchmanager/BatchOverrideConfiguration.Builder.html).
 
 | Setting | Description | Default value |
 | --- | --- | --- |

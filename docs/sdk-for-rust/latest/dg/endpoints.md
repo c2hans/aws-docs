@@ -39,7 +39,7 @@ You can set a value for `endpoint_url` to indicate a "base" hostname for the ser
 ### Set endpoint resolver
 <a name="set-endpoint-resolver"></a>
 
-A service client's `ResolveEndpoint` implementation determines the final resolved endpoint that the SDK uses for any given request. A service client calls the `resolve_endpoint` method for every request and uses the [https://docs.rs/aws-smithy-runtime-api/latest/aws_smithy_runtime_api/client/endpoint/struct.EndpointFuture.html](https://docs.rs/aws-smithy-runtime-api/latest/aws_smithy_runtime_api/client/endpoint/struct.EndpointFuture.html) value that is returned by the resolver with no further changes.
+A service client's `ResolveEndpoint` implementation determines the final resolved endpoint that the SDK uses for any given request. A service client calls the `resolve_endpoint` method for every request and uses the [`EndpointFuture`](https://docs.rs/aws-smithy-runtime-api/latest/aws_smithy_runtime_api/client/endpoint/struct.EndpointFuture.html) value that is returned by the resolver with no further changes.
 
 The following example demonstrates supplying a custom endpoint resolver implementation for an Amazon S3 client that resolves a different endpoint per-stage, such as staging and production:
 

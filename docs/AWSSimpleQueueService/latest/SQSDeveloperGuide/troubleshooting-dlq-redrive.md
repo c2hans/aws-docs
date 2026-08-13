@@ -102,7 +102,7 @@ Failed: AWS.SimpleQueueService.NonExistentQueue
 <a name="couldnotdeterminemessagesource-error"></a>
 
 The `CouldNotDetermineMessageSource` error occurs when you attempt to start a DLQ redrive with the following scenarios:
-+ An Amazon SQS message sent directly to the DLQ with [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html) API.
++ An Amazon SQS message sent directly to the DLQ with [`SendMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html) API.
 + A message from the Amazon Simple Notification Service (Amazon SNS) topic or AWS Lambda function with the DLQ configured.
 
 To resolve this error, choose **Redrive to a custom destination** when you start the redrive. Then, enter the Amazon SQS queue ARN to move all messages from the DLQ to the destination queue.

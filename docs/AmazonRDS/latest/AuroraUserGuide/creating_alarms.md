@@ -18,9 +18,9 @@ You can use the **DB\_PERF\_INSIGHTS** metric math function in the CloudWatch co
 For more details on how to create an alarm, see [ Create an alarm on Performance Insights counter metrics from an AWS database](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_alarm_database_performance_insights.html).
 
 **To set an alarm using the AWS CLI**
-+ Call [https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-alarm.html](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-alarm.html). For more information, see *[AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/)*.
++ Call [`put-metric-alarm`](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-alarm.html). For more information, see *[AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/)*.
 
 **To set an alarm using the CloudWatch API**
-+ Call [https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricAlarm.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricAlarm.html). For more information, see *[Amazon CloudWatch API Reference](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/)*
++ Call [`PutMetricAlarm`](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricAlarm.html). For more information, see *[Amazon CloudWatch API Reference](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/)*
 
 For more information about setting up Amazon SNS topics and creating alarms, see [Using Amazon CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html).

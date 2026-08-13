@@ -351,7 +351,7 @@ In the following `pom.xml` example, the SDK uses an AWS CRT-based HTTP client fo
 </project>
 ```
 
-Visit the Maven central repository for the latest [https://central.sonatype.com/artifact/software.amazon.awssdk/bom](https://central.sonatype.com/artifact/software.amazon.awssdk/bom) value.
+Visit the Maven central repository for the latest [{{VERSION}}](https://central.sonatype.com/artifact/software.amazon.awssdk/bom) value.
 
 **Note**
 If multiple service clients are declared in a `pom.xml` file, all require the `exclusions` XML element.
@@ -455,7 +455,7 @@ s3AsyncClient.close();
 ## Proxy configuration example
 <a name="http-config-crt-proxy-ex"></a>
 
-The following code snippet shows the use of the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/crt/ProxyConfiguration.Builder.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/crt/ProxyConfiguration.Builder.html) that you use to configure proxy setting in code.
+The following code snippet shows the use of the [`ProxyConfiguration.Builder`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/crt/ProxyConfiguration.Builder.html) that you use to configure proxy setting in code.
 
 ------
 #### [ Synchronous client ]

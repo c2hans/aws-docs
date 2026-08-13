@@ -16,14 +16,14 @@ Additionally, AWS supports managed policies for job functions that span multiple
 
 You can attach this managed policy to the IAM role that's attached to your Amazon EC2 High Availability for SQL Server instance. The policy grants permissions to execute AWS owned Systems Manager command document **AWSEC2-DetectSqlHaState** to the instance, to retrieve the EC2 SQL HA instance metadata and decide whether it's in active or standby state.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2SqlHaInstancePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2SqlHaInstancePolicy.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AWSEC2SqlHaInstancePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2SqlHaInstancePolicy.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: AWSEC2SqlHaServiceRolePolicy
 <a name="security-iam-awsmanpol-AWSEC2SqlHaServiceRolePolicy"></a>
 
 This policy is attached to the service-linked role named [**AWSServiceRoleForEC2SqlHa**](slr-sql-ha.md) to allow Amazon EC2 High Availability for SQL Server on EC2 to detect whether an EC2 instance that's tagged with the EC2 SQL High Availability identifier (`SqlHaMonitored` set to `true`) is running in active or standby mode.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2SqlHaServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2SqlHaServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AWSEC2SqlHaServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2SqlHaServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: AWSEC2VssRestorePolicy
 <a name="security-iam-awsmanpol-AWSEC2VssRestorePolicy"></a>
@@ -35,7 +35,7 @@ This policy includes the following permissions:
 + **ec2** – Allows principals to create volumes from snapshots tagged with `AwsVssConfig`, attach volumes to instances, tag volumes during creation, and describe volumes, snapshots, and instance attributes.
 + **ssm** – Allows principals to describe SSM managed instances, retrieve SSM Run Command documents required for VSS restore operations, send commands to instances, and list command invocations and executions.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2VssRestorePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2VssRestorePolicy.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AWSEC2VssRestorePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2VssRestorePolicy.html) in the *AWS Managed Policy Reference*.
 
 ## SQL Server on EC2 updates to AWS managed policies
 <a name="security-iam-awsmanpol-updates"></a>

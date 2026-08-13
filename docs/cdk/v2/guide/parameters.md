@@ -19,7 +19,7 @@ When deploying the AWS CloudFormation template using the AWS CDK CLI, you provid
 In general, we recommend against using AWS CloudFormation parameters with the AWS CDK. The usual ways to pass values into AWS CDK apps are [context values](context.md) and environment variables. Because they are not available at synthesis time, parameter values cannot be easily used for flow control and other purposes in your CDK app.
 
 **Note**
-To do control flow with parameters, you can use [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CfnCondition.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CfnCondition.html) constructs, although this is awkward compared to native `if` statements.
+To do control flow with parameters, you can use [`CfnCondition`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CfnCondition.html) constructs, although this is awkward compared to native `if` statements.
 
 Using parameters requires you to be mindful of how the code you’re writing behaves at deployment time, and also at synthesis time. This makes it harder to understand and reason about your AWS CDK application, in many cases for little benefit.
 

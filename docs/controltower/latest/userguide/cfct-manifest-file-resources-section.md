@@ -141,7 +141,7 @@ export_outputs: # List of SSM parameters
     value: [String]
 ```
 + **Type:** List of **name** and **value** key pairs. The **name** contains the `name` string of an SSM parameter store key, and **value** contains the parameter's `value` string.
-+ **Valid Values:** Any string or the `$[output_{{CfnOutput-Logical-ID}}]` variable where {{CfnOutput-Logical-ID}} corresponds to the template output variable. For more information about the Outputs section in an CloudFormation template, see [https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/outputs-section-structure.html](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/outputs-section-structure.html) in the *CloudFormation User Guide*.
++ **Valid Values:** Any string or the `$[output_{{CfnOutput-Logical-ID}}]` variable where {{CfnOutput-Logical-ID}} corresponds to the template output variable. For more information about the Outputs section in an CloudFormation template, see [**Outputs**](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/outputs-section-structure.html) in the *CloudFormation User Guide*.
 + **Required:** No
 
 For example, the following code snippet stores the template `VPCID` output variable into the SSM parameter key that's named `/org/member/audit/vpc_id`.

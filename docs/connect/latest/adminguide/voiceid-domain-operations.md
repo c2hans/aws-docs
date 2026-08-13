@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/voiceid-domain
 <a name="voiceid-domain-operations"></a>
 
 **Note**
-End of support notice: On May 20, 2026, AWS will end support for Amazon Connect Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Amazon Connect console, access Voice ID features on the Connect Customer admin website or Contact Control Panel, or access Voice ID resources. For more information, visit [Amazon Connect Voice ID end of support](https://docs.aws.amazon.com/connect/latest/adminguide/amazonconnect-voiceid-end-of-support.html).
+End of support notice: On May 20, 2026, AWS will end support for Amazon Connect Customer Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Amazon Connect Customer console, access Voice ID features on the Connect Customer admin website or Contact Control Panel, or access Voice ID resources. For more information, visit [Amazon Connect Customer Voice ID end of support](https://docs.aws.amazon.com/connect/latest/adminguide/amazonconnect-voiceid-end-of-support.html).
 
 Connect Customer Voice ID provides APIs for you manage Voice ID domains. You can find equivalents for Create, Describe, List, and Update in the AWS Console.
 
@@ -15,9 +15,9 @@ Connect Customer Voice ID provides APIs for you manage Voice ID domains. You can
    Note the following guidelines when using the `CreateDomain` API:
    +  You can only invoke this for your account after you have acknowledged the BIPA Consent in the AWS console.
    +  You must also specify the KMS key for the Voice ID domain at the time of creation.
-   + After creating a Voice ID domain, use the [Connect Customer association APIs](https://docs.aws.amazon.com/connect/latest/APIReference/) to associate it with an Connect Customer instance.
+   + After creating a Voice ID domain, use the [Connect Customer association APIs](https://docs.aws.amazon.com/connect/latest/APIReference/) to associate it with a Connect Customer instance.
 
-1.  [DeleteDomain](https://docs.aws.amazon.com/voiceid/latest/APIReference/API_DeleteDomain.html): To delete a Voice ID domain, you must invoke the `DeleteDomain` Voice ID API and provide the domain ID. If this domain was associated with an Connect Customer instance, Voice ID API calls, and Voice ID flow blocks will return runtime error. Deleting a Voice ID domain deletes all stored customer data such as audio recordings, voiceprints and speaker identifiers, as well as fraudster lists that you managed.
+1.  [DeleteDomain](https://docs.aws.amazon.com/voiceid/latest/APIReference/API_DeleteDomain.html): To delete a Voice ID domain, you must invoke the `DeleteDomain` Voice ID API and provide the domain ID. If this domain was associated with a Connect Customer instance, Voice ID API calls, and Voice ID flow blocks will return runtime error. Deleting a Voice ID domain deletes all stored customer data such as audio recordings, voiceprints and speaker identifiers, as well as fraudster lists that you managed.
 
 1. [DescribeDomain](https://docs.aws.amazon.com/voiceid/latest/APIReference/API_DescribeDomain.html): Use this API to return the name, description and encryption configuration of an existing domain identified by its `DomainID`.
 

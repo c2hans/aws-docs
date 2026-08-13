@@ -124,7 +124,7 @@ sns.setSubscriptionAttributes(request);
 
 Before your begin this tutorial, make sure you complete the [prerequisites](#dead-letter-queue-prerequisites).
 
-1. Install and configure the AWS CLI. For more information, see the [https://docs.aws.amazon.com/cli/latest/userguide/](https://docs.aws.amazon.com/cli/latest/userguide/).
+1. Install and configure the AWS CLI. For more information, see the [*AWS Command Line Interface User Guide*](https://docs.aws.amazon.com/cli/latest/userguide/).
 
 1. Use the following command.
 

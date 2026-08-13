@@ -27,7 +27,7 @@ You can delete a DB cluster parameter group using the AWS Management Console, AW
 ## AWS CLI
 <a name="USER_WorkingWithParamGroups.DeletingCluster.CLI"></a>
 
-To delete a DB cluster parameter group, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/delete-db-cluster-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/delete-db-cluster-parameter-group.html) command with the following required parameter.
+To delete a DB cluster parameter group, use the AWS CLI [`delete-db-cluster-parameter-group`](https://docs.aws.amazon.com/cli/latest/reference/rds/delete-db-cluster-parameter-group.html) command with the following required parameter.
 + `--db-parameter-group-name`
 
 **Example**
@@ -40,5 +40,5 @@ aws rds delete-db-cluster-parameter-group --db-parameter-group-name {{mydbparame
 ## RDS API
 <a name="USER_WorkingWithParamGroups.DeletingCluster.API"></a>
 
-To delete a DB cluster parameter group, use the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteDBClusterParameterGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteDBClusterParameterGroup.html) command with the following required parameter.
+To delete a DB cluster parameter group, use the RDS API [`DeleteDBClusterParameterGroup`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteDBClusterParameterGroup.html) command with the following required parameter.
 + `DBParameterGroupName`

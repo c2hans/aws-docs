@@ -170,7 +170,7 @@ The analytics job will complete without summary generation in the following case
 + Insufficient conversation content: The conversation must include at least one turn from both the agent and the customer. When there is insufficient conversation content, the service will return the error code INSUFFICIENT\_CONVERSATION\_CONTENT.
 + Safety guardrails: The conversation must meet safety guardrails in place to ensure appropriate summary is generated. When these guardrails are not met, the service will return the error code FAILED\_SAFETY\_GUIDELINES.
 
-The error code can be found in `Skipped` section within `AnalyticsJobDetails` in the output. You may also find the error reason in `CallAnalyticsJobDetails` in the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_GetCallAnalyticsJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_GetCallAnalyticsJob.html) API Response.
+The error code can be found in `Skipped` section within `AnalyticsJobDetails` in the output. You may also find the error reason in `CallAnalyticsJobDetails` in the [`GetCallAnalyticsJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_GetCallAnalyticsJob.html) API Response.
 
  **Sample Error Output**
 

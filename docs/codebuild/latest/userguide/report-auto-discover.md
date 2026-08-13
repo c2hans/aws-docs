@@ -12,7 +12,7 @@ With auto-discovery, CodeBuild searches through all your build files after the b
 ```
 
 **Note**
-If the discovered report files have the same format type, they will be placed in to the same report group or report.
+If the discovered report files have the same format type, they will be placed into the same report group or report.
 
 Report auto-discover is configured by your project environment variables:
 
@@ -20,7 +20,7 @@ Report auto-discover is configured by your project environment variables:
 This variable determines whether report auto-discover is disabled during the build. By default, report auto-discover is enabled for all builds. To disable this feature, set `CODEBUILD_CONFIG_AUTO_DISCOVER` to `false`.
 
 `CODEBUILD_CONFIG_AUTO_DISCOVER_DIR`
-(Optional) This variable determines where CodeBuild searches for potential report files. Note that by default, CodeBuild searches in `**/*` by default.
+(Optional) This variable determines where CodeBuild searches for potential report files. Note that CodeBuild searches in `**/*` by default.
 
 These environment variables can be modified during the build phase. For example, if you only want to enable report auto-discover for builds on the `main` git branch, you can check the git branch during the build process and set `CODEBUILD_CONFIG_AUTO_DISCOVER` to false if the build is not on the `main` branch. Report auto-discover can be disabled using the console or using project environment variables.
 

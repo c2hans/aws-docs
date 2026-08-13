@@ -18,7 +18,7 @@ The following tables list the various Connect Customer feature specifications.
 + [Task feature specifications](#feature-limits-tasks)
 + [Forecasting, capacity planning, and scheduling](#forecasting-cap-planning-scheduling-specs)
 + [Integration association resource](#integration-association-resource-feature-specs)
-+ [Connect Customer Contact Lens](#contact-lens-feature-specs)
++ [Connect Customer conversational analytics](#contact-lens-feature-specs)
 + [Evaluation forms](#evaluationforms-feature-specs)
 + [Connect Customer Rules](#rules-feature-specs)
 
@@ -183,20 +183,20 @@ The following table lists feature specifications for the integration association
 | Voice ID domain | 1 |
 | Amazon Pinpoint app | 1 |
 | Event | 10<br />The event integration resource is used for task triggers. |
-| Connect AI agents assistant | 1 |
-| Connect AI agents knowledge base | 10 |
+| agent assist assistant | 1 |
+| agent assist knowledge base | 10 |
 | Cases domain | 1 |
-| Connect AI agents knowledge base | 10 |
+| agent assist knowledge base | 10 |
 
-## Connect Customer Contact Lens feature specifications
+## Connect Customer conversational analytics feature specifications
 <a name="contact-lens-feature-specs"></a>
 
 | Item | Feature Specification |
 | --- | --- |
 | Custom vocabularies | 20 |
-| Contact Lens rules for post-call | 500 |
-| Contact Lens rules for post-chat | 500 |
-| Contact Lens rules for real-time | 500 |
+| conversational analytics rules for post-call | 500 |
+| conversational analytics rules for post-chat | 500 |
+| conversational analytics rules for real-time | 500 |
 
 ## Evaluation forms feature specifications
 <a name="evaluationforms-feature-specs"></a>

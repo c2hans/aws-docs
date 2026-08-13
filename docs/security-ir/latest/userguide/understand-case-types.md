@@ -40,7 +40,7 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/understand-
 
 ![Create case screen showing options for reactive cases.](http://docs.aws.amazon.com/security-ir/latest/userguide/images/reactive-cases.png)
 
- For detailed instructions, see [Create a case](https://docs.aws.amazon.com/security-ir/latest/userguide/create-case.html).
+ For detailed instructions, see [Cases](cases.md).
 
 ## Watchers
 <a name="watchers"></a>

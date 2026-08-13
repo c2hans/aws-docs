@@ -148,7 +148,7 @@ If your user pool requires users to verify their contact information, your app m
 
 1. The user enters the confirmation code in the app.
 
-1. The app calls [https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ConfirmSignUp.html](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ConfirmSignUp.html) to send the code to the Amazon Cognito service, which verifies the code and, if the code is correct, sets the user's account to the confirmed state. After successfully confirming the user account, the Amazon Cognito service automatically marks the attribute that was used to confirm (email address or phone number) as verified. Unless the value of this attribute is changed, the user will not have to verify it again.
+1. The app calls [`ConfirmSignUp`](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ConfirmSignUp.html) to send the code to the Amazon Cognito service, which verifies the code and, if the code is correct, sets the user's account to the confirmed state. After successfully confirming the user account, the Amazon Cognito service automatically marks the attribute that was used to confirm (email address or phone number) as verified. Unless the value of this attribute is changed, the user will not have to verify it again.
 
 1. At this point the user's account is in a confirmed state, and the user can sign in.
 
@@ -163,19 +163,19 @@ If you require your users to verify both email addresses and phone numbers, do t
 
 1. Configure your user pool to allow users to verify email address or phone numbers.
 
-1. In the sign-up flow for your app, require users to provide both an email address and a phone number. Call the [https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_SignUp.html](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_SignUp.html) API action, and provide the email address and phone number for the `UserAttributes` parameter. At this point, Amazon Cognito sends a verification code to the user's phone.
+1. In the sign-up flow for your app, require users to provide both an email address and a phone number. Call the [`SignUp`](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_SignUp.html) API action, and provide the email address and phone number for the `UserAttributes` parameter. At this point, Amazon Cognito sends a verification code to the user's phone.
 
-1. In your app interface, present a confirmation page where the user enters the verification code. Confirm the user by calling the [https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ConfirmSignUp.html](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ConfirmSignUp.html) API action. At this point, the user's status is `CONFIRMED`, and the user's phone number is verified, but the email address is not verified.
+1. In your app interface, present a confirmation page where the user enters the verification code. Confirm the user by calling the [`ConfirmSignUp`](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ConfirmSignUp.html) API action. At this point, the user's status is `CONFIRMED`, and the user's phone number is verified, but the email address is not verified.
 
-1. Present the sign-in page, and authenticate the user by calling the [https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_InitiateAuth.html](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_InitiateAuth.html) API action. After the user is authenticated, Amazon Cognito returns an access token to your app.
+1. Present the sign-in page, and authenticate the user by calling the [`InitiateAuth`](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_InitiateAuth.html) API action. After the user is authenticated, Amazon Cognito returns an access token to your app.
 
-1. Call the [https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_GetUserAttributeVerificationCode.html](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_GetUserAttributeVerificationCode.html) API action. Specify the following parameters in the request:
+1. Call the [`GetUserAttributeVerificationCode`](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_GetUserAttributeVerificationCode.html) API action. Specify the following parameters in the request:
    + `AccessToken` – The access token returned by Amazon Cognito when the user signed in.
    + `AttributeName` – Specify `"email"` as the attribute value.
 
    Amazon Cognito sends a verification code to the user's email address.
 
-1. Present a confirmation page where the user enters the verification code. When the user submits the code, call the [https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_VerifyUserAttribute.html](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_VerifyUserAttribute.html) API action. Specify the following parameters in the request:
+1. Present a confirmation page where the user enters the verification code. When the user submits the code, call the [`VerifyUserAttribute`](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_VerifyUserAttribute.html) API action. Specify the following parameters in the request:
    + `AccessToken` – The access token returned by Amazon Cognito when the user signed in.
    + `AttributeName` – Specify `"email"` as the attribute value.
    + `Code` – The verification code that the user provided.
@@ -209,11 +209,11 @@ Assign a client secret to your confidential app client as a best practice. When 
 When your app signs in users to a client that has a secret hash, you can use the value of any user pool sign-in attribute as the username element of the secret hash. When your app requests new tokens in an authentication operation with `REFRESH_TOKEN_AUTH`, the value of the username element depends on your sign-in attributes. When your user pool doesn’t have `username` as a sign-in attribute, set the secret hash username value from the user’s `sub` claim from their access or ID token. When `username` is a sign-in attribute, set the secret hash username value from the `username` claim.
 
 The following Amazon Cognito user pools APIs accept a client-secret hash value in a `SecretHash` parameter.
-+ [https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ConfirmForgotPassword.html](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ConfirmForgotPassword.html)
-+ [https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ConfirmSignUp.html](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ConfirmSignUp.html)
-+ [https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ForgotPassword.html](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ForgotPassword.html)
-+ [https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ResendConfirmationCode.html](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ResendConfirmationCode.html)
-+ [https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_SignUp.html](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_SignUp.html)
++ [ConfirmForgotPassword](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ConfirmForgotPassword.html)
++ [ConfirmSignUp](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ConfirmSignUp.html)
++ [ForgotPassword](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ForgotPassword.html)
++ [ResendConfirmationCode](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ResendConfirmationCode.html)
++ [SignUp](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_SignUp.html)
 
 Additionally, the following APIs accept a client-secret hash value in a `SECRET_HASH` parameter, either in authentication parameters or in a challenge response.
 

@@ -32,7 +32,7 @@ In the [Amazon GameLift Servers console](https://console.aws.amazon.com/gamelift
 ------
 #### [ AWS CLI ]
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/gamelift/update-alias.html](https://docs.aws.amazon.com/cli/latest/reference/gamelift/update-alias.html) command to make changes to an alias resource. You can update an alias resource in your current default AWS Region, or you can add a `--region` tag to specify a different AWS Region.
+Use the [`update-alias`](https://docs.aws.amazon.com/cli/latest/reference/gamelift/update-alias.html) command to make changes to an alias resource. You can update an alias resource in your current default AWS Region, or you can add a `--region` tag to specify a different AWS Region.
 
 You can change the following properties:
 + Alias name.

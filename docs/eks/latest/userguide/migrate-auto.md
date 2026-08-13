@@ -18,10 +18,10 @@ You can enable EKS Auto Mode on existing EKS Clusters.
 
  ** AWS does not support the following migrations:**
 + Migrating volumes from the EBS CSI controller (using the Amazon EKS add-on) to EKS Auto Mode EBS CSI controller (managed by EKS Auto Mode). PVCs made with one can’t be mounted by the other, because they use two different Kubernetes volume provisioners.
-  + The [https://github.com/awslabs/eks-auto-mode-ebs-migration-tool](https://github.com/awslabs/eks-auto-mode-ebs-migration-tool) (AWS Labs project) enables migration between standard EBS CSI StorageClass (`ebs.csi.aws.com`) and EKS Auto EBS CSI StorageClass (`ebs.csi.eks.amazonaws.com`). Note that migration requires deleting and re-creating existing PersistentVolumeClaim/PersistentVolume resources, so validation in a non-production environment is essential before implementation.
+  + The [`eks-auto-mode-ebs-migration-tool`](https://github.com/awslabs/eks-auto-mode-ebs-migration-tool) (AWS Labs project) enables migration between standard EBS CSI StorageClass (`ebs.csi.aws.com`) and EKS Auto EBS CSI StorageClass (`ebs.csi.eks.amazonaws.com`). Note that migration requires deleting and re-creating existing PersistentVolumeClaim/PersistentVolume resources, so validation in a non-production environment is essential before implementation.
 + Migrating load balancers from the AWS Load Balancer Controller to EKS Auto Mode
 
-  You can install the AWS Load Balancer Controller on an Amazon EKS Auto Mode cluster. Use the `IngressClass` or `loadBalancerClass` options to associate Service and Ingress resources with either the Load Balancer Controller or EKS Auto Mode. For a prescriptive guidance, refer to [https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-nginx-ingress-controller-eks-auto-mode.html](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-nginx-ingress-controller-eks-auto-mode.html)
+  You can install the AWS Load Balancer Controller on an Amazon EKS Auto Mode cluster. Use the `IngressClass` or `loadBalancerClass` options to associate Service and Ingress resources with either the Load Balancer Controller or EKS Auto Mode. For a prescriptive guidance, refer to [`Migrate NGINX Ingress Controllers when enabling Amazon EKS Auto Mode`](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-nginx-ingress-controller-eks-auto-mode.html)
 + Migrating EKS clusters with alternative CNIs or other unsupported networking configurations
 
 ## Migration reference

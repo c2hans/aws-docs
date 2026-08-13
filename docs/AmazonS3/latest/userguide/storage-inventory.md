@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-invent
 
 You can use Amazon S3 Inventory to help manage your storage. For example, you can use it to audit and report on the replication and encryption status of your objects for business, compliance, and regulatory needs. You can also simplify and speed up business workflows and big data jobs by using Amazon S3 Inventory, which provides a scheduled alternative to the Amazon S3 synchronous `List` API operations. Amazon S3 Inventory does not use the `List` API operations to audit your objects and does not affect the request rate of your bucket.
 
-Amazon S3 Inventory provides comma-separated values (CSV), [Apache optimized row columnar (ORC)](https://orc.apache.org/) or [https://parquet.apache.org/](https://parquet.apache.org/) output files that list your objects and their corresponding metadata on a daily or weekly basis for an S3 bucket or objects with a shared prefix (that is, objects that have names that begin with a common string). If you set up a weekly inventory, a report is generated every Sunday (UTC time zone) after the initial report. For information about Amazon S3 Inventory pricing, see [Amazon S3 pricing](https://aws.amazon.com/s3/pricing/).
+Amazon S3 Inventory provides comma-separated values (CSV), [Apache optimized row columnar (ORC)](https://orc.apache.org/) or [Apache Parquet](https://parquet.apache.org/) output files that list your objects and their corresponding metadata on a daily or weekly basis for an S3 bucket or objects with a shared prefix (that is, objects that have names that begin with a common string). If you set up a weekly inventory, a report is generated every Sunday (UTC time zone) after the initial report. For information about Amazon S3 Inventory pricing, see [Amazon S3 pricing](https://aws.amazon.com/s3/pricing/).
 
 You can configure multiple inventory lists for a bucket. When you're configuring an inventory list, you can specify the following:
 + What object metadata to include in the inventory
@@ -16,7 +16,7 @@ You can configure multiple inventory lists for a bucket. When you're configuring
 + Whether to generate the inventory on a daily or weekly basis
 + Whether to encrypt the inventory list file
 
-You can query Amazon S3 Inventory with standard SQL queries by using [Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html), [Amazon Redshift Spectrum](https://docs.aws.amazon.com/redshift/latest/dg/c-getting-started-using-spectrum.html), and other tools, such as [https://prestodb.io/](https://prestodb.io/), [https://hive.apache.org/](https://hive.apache.org/), and [https://databricks.com/spark/about/](https://databricks.com/spark/about/). For more information about using Athena to query your inventory files, see [Querying Amazon S3 Inventory with Amazon Athena](storage-inventory-athena-query.md).
+You can query Amazon S3 Inventory with standard SQL queries by using [Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html), [Amazon Redshift Spectrum](https://docs.aws.amazon.com/redshift/latest/dg/c-getting-started-using-spectrum.html), and other tools, such as [Presto](https://prestodb.io/), [Apache Hive](https://hive.apache.org/), and [Apache Spark](https://databricks.com/spark/about/). For more information about using Athena to query your inventory files, see [Querying Amazon S3 Inventory with Amazon Athena](storage-inventory-athena-query.md).
 
 **Note**
 It might take up to 48 hours for Amazon S3 to deliver the first inventory report.
@@ -65,7 +65,7 @@ An inventory list file contains a list of the objects in the source bucket and m
 + **Key name** – The object key name (or key) that uniquely identifies the object in the bucket. When you're using the CSV file format, the key name is URL-encoded and must be decoded before you can use it.
 
 You can choose to include the following additional metadata fields in the report:
-+ **ETag** – The entity tag (ETag) is a hash of the object. The ETag reflects changes only to the contents of an object, not to its metadata. The ETag can be an MD5 digest of the object data. Whether it is depends on how the object was created and how it is encrypted. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_Object.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Object.html) in the *Amazon Simple Storage Service API Reference*.
++ **ETag** – The entity tag (ETag) is a hash of the object. The ETag reflects changes only to the contents of an object, not to its metadata. The ETag can be an MD5 digest of the object data. Whether it is depends on how the object was created and how it is encrypted. For more information, see [Object](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Object.html) in the *Amazon Simple Storage Service API Reference*.
 + **Last modified date** – The object creation date or the last modified date, whichever is the latest.
 + **Size** – The object size in bytes, not including the size of incomplete multipart uploads, object metadata, and delete markers.
 + **Storage class** – The storage class that's used for storing the object. Set to `STANDARD`, `REDUCED_REDUNDANCY`, `STANDARD_IA`, `ONEZONE_IA`, `INTELLIGENT_TIERING`, `GLACIER`, `DEEP_ARCHIVE`, `OUTPOSTS`, `GLACIER_IR`, `SNOW`, or `EXPRESS_ONEZONE`. For more information, see [Understanding and managing Amazon S3 storage classes](storage-class-intro.md).
@@ -127,7 +127,7 @@ The `s3:PutInventoryConfiguration` permission allows a user to both select all t
 
 All of your objects might not appear in each inventory list. The inventory list provides eventual consistency for `PUT` requests (of both new objects and overwrites) and for `DELETE` requests. Each inventory list for a bucket is a snapshot of bucket items. These lists are eventually consistent (that is, a list might not include recently added or deleted objects).
 
-To validate the state of an object before you take action on the object, we recommend that you perform a `HeadObject` REST API request to retrieve metadata for the object, or to check the object's properties in the Amazon S3 console. You can also check object metadata with the AWS CLI or the AWS SDKS. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectHEAD.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectHEAD.html) in the *Amazon Simple Storage Service API Reference*.
+To validate the state of an object before you take action on the object, we recommend that you perform a `HeadObject` REST API request to retrieve metadata for the object, or to check the object's properties in the Amazon S3 console. You can also check object metadata with the AWS CLI or the AWS SDKS. For more information, see [`HeadObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectHEAD.html) in the *Amazon Simple Storage Service API Reference*.
 
 For more information about working with Amazon S3 Inventory, see the following topics.
 

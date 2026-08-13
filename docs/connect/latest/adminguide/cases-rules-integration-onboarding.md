@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/cases-rules-integration-onboarding.html
 ---
 
-# Allow Connect Customer Cases to send updates to Contact Lens rules
+# Allow Connect Customer Cases to send updates to conversational analytics rules
 <a name="cases-rules-integration-onboarding"></a>
 
 **Note**

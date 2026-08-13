@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/jira.html
 # Configure Atlassian Jira suite for AppFabric
 <a name="jira"></a>
 
-Atlassian unleashes the potential of every team. Their agile and DevOps, IT service management and work management software helps teams organize, discuss, and complete shared work. The majority of the Fortune 500 and over 240,000 companies of all sizes worldwide - including NASA, Kiva, Deutsche Bank, and Salesforce - rely on Atlassian solutions to help their teams work better together and deliver quality results on time. Learn more about Atlassian products, including Jira Software, Confluence, Jira Service Management, Trello, Bitbucket, and Jira Align at [https://www.atlassian.com/](https://www.atlassian.com/).
+Atlassian unleashes the potential of every team. Their agile and DevOps, IT service management and work management software helps teams organize, discuss, and complete shared work. The majority of the Fortune 500 and over 240,000 companies of all sizes worldwide - including NASA, Kiva, Deutsche Bank, and Salesforce - rely on Atlassian solutions to help their teams work better together and deliver quality results on time. Learn more about Atlassian products, including Jira Software, Confluence, Jira Service Management, Trello, Bitbucket, and Jira Align at [Atlassian](https://www.atlassian.com/).
 
 You can use AWS AppFabric for security to audit logs and user data from the Jira suite (other than Jira Align), normalize the data into Open Cybersecurity Schema Framework (OCSF) format, and output the data to an Amazon Simple Storage Service (Amazon S3) bucket or an Amazon Data Firehose stream.
 

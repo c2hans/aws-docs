@@ -33,7 +33,7 @@ When you create a resource-based policy to grant access to your buckets, you mus
 + An IAM role
 + A federated user
 
-For more information, see [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html) in the *IAM User Guide*.
+For more information, see [Principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html) in the *IAM User Guide*.
 
 ## Resources
 <a name="s3-express-security-iam-resources"></a>
@@ -52,7 +52,7 @@ To access and perform actions on your access point for a directory bucket, you m
 arn:aws::s3express:{{region}}:{{account-id}}:accesspoint/{{accesspoint-basename}}--{{zone-id}}--xa-s3
 ```
 
-For more information about ARNs, see [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html) in the *IAM User Guide*. For more information about resources, see [IAM JSON Policy Elements: Resource](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_resource.html) in the *IAM User Guide*.
+For more information about ARNs, see [Amazon Resource Names (ARNs)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html) in the *IAM User Guide*. For more information about resources, see [IAM JSON Policy Elements: Resource](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_resource.html) in the *IAM User Guide*.
 
 ## Actions for directory buckets
 <a name="s3-express-security-iam-actions"></a>
@@ -61,7 +61,7 @@ In an IAM identity-based policy or resource-based policy, you define which S3 ac
 
 When you allow the `s3express:CreateSession` permission, the `CreateSession` API operation retrieves a temporary session token for all Zonal endpoint API (object level) operations. The session token returns credentials that are used for all other Zonal endpoint API operations. As a result, you don't grant access permissions to Zonal API operations with IAM policies. Instead, `CreateSession` enables access for all object level operations. For the list of Zonal API operations and permissions, see [Authenticating and authorizing requests](s3-express-authenticating-authorizing.md).
 
-To learn more about the `CreateSession` API operation, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateSession.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateSession.html) in the *Amazon Simple Storage Service API Reference*.
+To learn more about the `CreateSession` API operation, see [CreateSession](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateSession.html) in the *Amazon Simple Storage Service API Reference*.
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation with the same name. However, in some cases, a single action controls access to more than one API operation. Access to bucket-level actions can be granted in only IAM identity-based policies (user or role) and not bucket policies.
 

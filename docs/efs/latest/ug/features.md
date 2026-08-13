@@ -122,9 +122,9 @@ The following table compares the storage classes. For more details about the per
   <tr><th>Storage class</th><th>Designed for</th><th>First byte read latency</th><th>Durability (designed for)1</th><th>Availability SLA</th><th>Availability Zones</th><th>Minimum billing charge per file2</th><th>Minimum storage duration</th></tr>
 </thead>
 <tbody>
-  <tr><td>EFS Standard</td><td>Active data requiring fast sub-millisecond latency performance</td><td>Sub-millisecond</td><td rowspan="3">99.999999999%<br />(11 9's)</td><td rowspan="2">99.99% (Regional)<br />99.9% (One Zone)</td><td rowspan="2">=>3 (Regional)<br />1 (One Zone)</td><td>Not applicable</td><td>Not applicable</td></tr>
+  <tr><td>EFS Standard</td><td>Active data requiring fast sub-millisecond latency performance</td><td>Sub-millisecond</td><td rowspan="3">99.999999999%<br />(11 9's)</td><td rowspan="2">99.99% (Regional)<br />99.9% (One Zone)</td><td rowspan="2">=&gt;3 (Regional)<br />1 (One Zone)</td><td>Not applicable</td><td>Not applicable</td></tr>
   <tr><td>EFS Infrequent Access</td><td>Inactive data that is accessed only a few times each quarter.</td><td>Tens of milliseconds</td><td>128 KiB</td><td>Not applicable</td></tr>
-  <tr><td>EFS Archive</td><td>Inactive data that is accessed a few times each year or less</td><td>Tens of milliseconds</td><td>99.9% (Regional)</td><td>=>3 (Regional)</td><td>128 KiB</td><td>90 days</td></tr>
+  <tr><td>EFS Archive</td><td>Inactive data that is accessed a few times each year or less</td><td>Tens of milliseconds</td><td>99.9% (Regional)</td><td>=&gt;3 (Regional)</td><td>128 KiB</td><td>90 days</td></tr>
 </tbody>
 </table>
 

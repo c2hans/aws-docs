@@ -257,8 +257,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.6.20241121 version:** 1.9.4-1.amzn2023.0.3
   - **AL2023.6.20241209 version:** 1.12.0-2.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
+- ** [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
+  - **RPM:**  [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.6.20241121 version:** 1.87.1-1.amzn2023
   - **AL2023.6.20241209 version:** 1.89.1-1.amzn2023
@@ -479,8 +479,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.6.20241121 version:** 3.42.2-2.amzn2023.0.3
   - **AL2023.6.20241209 version:** 3.48.2-3.amzn2023.0.2
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  / **Architectures:** aarch64, x86\_64
+- ** [`python3.11`](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
+  - **RPM:**  [`python3.11`](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.11-debug  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.11-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.11-idle  / **Architectures:** aarch64, x86\_64
@@ -496,7 +496,7 @@ The full comparison of RPM package versions is below.
   - **AL2023.6.20241121 version:** 22.3.1-2.amzn2023.0.4
   - **AL2023.6.20241209 version:** 22.3.1-2.amzn2023.0.5
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
+- ** [`python3.9`](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
   - **RPM:**  python3  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3-debug  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3-devel  / **Architectures:** aarch64, x86\_64

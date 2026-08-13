@@ -47,8 +47,6 @@ export OTEL_AWS_HTTP_OPERATION_PATHS="/api/users/{userId}/orders/{orderId}/items
 
 With this configuration, Application Signals shows distinct operations. Multiple requests can resolve to the same configured template:
 
-**Example endpoint visibility configuration results**
-
 | Incoming request | Default operation | With config |
 | --- | --- | --- |
 | GET /api/users | GET /api | GET /api/users |

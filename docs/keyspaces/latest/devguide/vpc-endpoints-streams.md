@@ -45,7 +45,7 @@ To achieve optimal reliability, we recommend deploying your service across a min
 ## Create Amazon Keyspaces CDC streams interface VPC endpoint
 <a name="create-interface-vpc-endpoints-streams"></a>
 
-You can use the AWS CLI or the AWS SDK to access Amazon Keyspaces CDC Streams API operations through Amazon Keyspaces CDC Streams interface endpoints. For a complete listing of all available API operations, see [https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/Welcome.html](https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/Welcome.html).
+You can use the AWS CLI or the AWS SDK to access Amazon Keyspaces CDC Streams API operations through Amazon Keyspaces CDC Streams interface endpoints. For a complete listing of all available API operations, see [*Amazon Keyspaces Streams API Reference*](https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/Welcome.html).
 
 For more information about how to create VPC endpoints, see [create an interface endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/vpce-interface.html#create-interface-endpoint) in the Amazon VPC User Guide.
 

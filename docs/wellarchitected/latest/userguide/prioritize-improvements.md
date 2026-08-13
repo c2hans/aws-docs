@@ -22,9 +22,9 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/priorit
 <a name="solution-characteristics"></a>
 
  When selecting a solution for an identified risk, consider the following:
-+  [https://www.forbes.com/advisor/business/smart-goals/](https://www.forbes.com/advisor/business/smart-goals/) Think of specific, measurable, achievable, relevant, and time-bound (SMART) goals.
++  [**SMART goals:**](https://www.forbes.com/advisor/business/smart-goals/) Think of specific, measurable, achievable, relevant, and time-bound (SMART) goals.
 +  **Owners:** For every solution, identify an owner.
 +  **Simple over complex:** Complex solutions can work, but they make the improvement more difficult to implement, and they can take longer to create. Choose simplicity over complexity unless the complex solution is a non-negotiable requirement.
-+  [https://aws.amazon.com/executive-insights/content/how-amazon-defines-and-operationalizes-a-day-1-culture/](https://aws.amazon.com/executive-insights/content/how-amazon-defines-and-operationalizes-a-day-1-culture/) Solutions should be extensible and designed to improve and evolve over time. When possible, avoid static solutions that cannot adapt as your architecture develops.
++  [**Make two-way door decisions:**](https://aws.amazon.com/executive-insights/content/how-amazon-defines-and-operationalizes-a-day-1-culture/) Solutions should be extensible and designed to improve and evolve over time. When possible, avoid static solutions that cannot adapt as your architecture develops.
 +  **Target pattern-based solutions:** Consider solutions that can be codified, reused, and re-shared. Don't reinvent the wheel. Access the [AWS Architecture Center](https://aws.amazon.com/architecture/) for examples.
 +  **Work continually as a team:** Work as a group to create a list of solutions for the HRIs. Prioritize them in an Eisenhower matrix.

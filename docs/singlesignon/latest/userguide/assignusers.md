@@ -69,3 +69,6 @@ If you are using an external identity provider, note that the external IdP, not 
 When you set up account access for the administrative user, IAM Identity Center creates a corresponding IAM role. This role, which is controlled by IAM Identity Center, is created in the relevant AWS account, and the policies specified in the permission set are attached to the role.
 
 Alternatively, you can use [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_SSO.html) to create and assign permission sets and assign users to those permission sets. Users can then [sign in to the AWS access portal](howtosignin.md) or use [AWS Command Line Interface (AWS CLI)](https://docs.aws.amazon.com/singlesignon/latest/userguide/integrating-aws-cli.html) commands.
+
+**Note**
+This topic covers assigning access using permission sets. To assign existing IAM roles to IAM Identity Center users and groups — with the full IAM role feature set — see [account access manager](https://docs.aws.amazon.com/IAM/latest/UserGuide/account-access-manager.html) in the *IAM User Guide*.

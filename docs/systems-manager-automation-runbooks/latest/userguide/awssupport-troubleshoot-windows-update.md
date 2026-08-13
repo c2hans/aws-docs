@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 + Checks if the AWS Systems Manager Agent (SSM Agent) and Windows Server versions are supported for Systems Manager patching operations.
 + Checks the available disk space recommended for Windows updates and if a reboot is pending. A pending reboot normally indicates that updates are pending, and a reboot is required before performing additional updates.
 + Configures the proxy settings at the operating system level, which can help troubleshoot connectivity issues.
-+ Performs an Amazon Simple Storage Service (Amazon S3) endpoint connectivity test and calls the [https://docs.aws.amazon.com//systems-manager/latest/APIReference/API_GetDeployablePatchSnapshotForInstance.html](https://docs.aws.amazon.com//systems-manager/latest/APIReference/API_GetDeployablePatchSnapshotForInstance.html) API operation to retrieve the current snapshot for the patch baseline the managed node uses.
++ Performs an Amazon Simple Storage Service (Amazon S3) endpoint connectivity test and calls the [`GetDeployablePatchSnapshotForInstance`](https://docs.aws.amazon.com//systems-manager/latest/APIReference/API_GetDeployablePatchSnapshotForInstance.html) API operation to retrieve the current snapshot for the patch baseline the managed node uses.
 + If the connection fails, provides the option to run the `AWSSupport-AnalyzeAWSEndpointReachabilityFromEC2` runbook to analyze the instance's connectivity to Amazon S3 endpoints.
 + Validates the Windows updates configuration and tests Windows Server Update Services (WSUS) (if applicable).
 
@@ -24,7 +24,7 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 Active Directory domain controllers are not supported.
 Windows Server version 2008 R2 or previous versions are not supported.
 SSM Agent 1.2.371 or previous versions are not supported.
-The `AWSSupport-AnalyzeAWSEndpointReachabilityFromEC2` runbook uses [https://docs.aws.amazon.com//vpc/latest/reachability/what-is-reachability-analyzer.html](https://docs.aws.amazon.com//vpc/latest/reachability/what-is-reachability-analyzer.html) to analyze the network connectivity between a source and a service endpoint. You are charged per analysis run between a source and destination. For more details, see [Amazon VPC Pricing](https://aws.amazon.com/vpc/pricing/).
+The `AWSSupport-AnalyzeAWSEndpointReachabilityFromEC2` runbook uses [`VPC Reachability Analyzer`](https://docs.aws.amazon.com//vpc/latest/reachability/what-is-reachability-analyzer.html) to analyze the network connectivity between a source and a service endpoint. You are charged per analysis run between a source and destination. For more details, see [Amazon VPC Pricing](https://aws.amazon.com/vpc/pricing/).
 The `AWSSupport-AnalyzeAWSEndpointReachabilityFromEC2` runbook is not available in all regions where Systems Manager is supported.
 
  [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/automation/execute/AWSSupport-TroubleshootWindowsUpdate)
@@ -60,7 +60,7 @@ To run the child runbook `AWSSupport-AnalyzeAWSEndpointReachabilityFromEC2`, add
 
 Follow these steps to configure the automation:
 
-1. Navigate to [https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootWindowsUpdate/description](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootWindowsUpdate/description) in Systems Manager under Documents.
+1. Navigate to [`AWSSupport-TroubleshootWindowsUpdate`](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootWindowsUpdate/description) in Systems Manager under Documents.
 
 1. Select Execute automation.
 

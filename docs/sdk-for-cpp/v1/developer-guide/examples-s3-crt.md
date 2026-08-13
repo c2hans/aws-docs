@@ -26,7 +26,7 @@ To run the examples, the user profile your code uses to make the requests must h
 ## Upload and download of object using `S3CrtClient`
 <a name="stream"></a>
 
-This example demonstrates how to use the [https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aws-cpp-sdk-s3-crt/html/class_aws_1_1_s3_crt_1_1_s3_crt_client.html](https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aws-cpp-sdk-s3-crt/html/class_aws_1_1_s3_crt_1_1_s3_crt_client.html). The example creates a bucket, uploads an object, downloads the object, then deletes the file and the bucket. A PUT operation turns into a multipart upload. A GET operation turns into multiple "ranged" GET requests. For more information on multipart uploads, see [Uploading and copying objects using multipart upload](https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html) in the Amazon S3 User Guide.
+This example demonstrates how to use the [`S3CrtClient`](https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aws-cpp-sdk-s3-crt/html/class_aws_1_1_s3_crt_1_1_s3_crt_client.html). The example creates a bucket, uploads an object, downloads the object, then deletes the file and the bucket. A PUT operation turns into a multipart upload. A GET operation turns into multiple "ranged" GET requests. For more information on multipart uploads, see [Uploading and copying objects using multipart upload](https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html) in the Amazon S3 User Guide.
 
 The provided data file, `ny.json`, gets uploaded as a multipart upload in this example. This can be confirmed by viewing the debug logs after a successful run of the program.
 

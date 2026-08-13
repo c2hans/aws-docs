@@ -47,7 +47,7 @@ Replace the sample account ID ({{`012345678901`}}) in the examples following wit
 ### Add runtime properties when creating an application
 <a name="how-properties-create"></a>
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action adds two runtime property groups (`ProducerConfigProperties` and `ConsumerConfigProperties`) when you create an application:
+The following example request for the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action adds two runtime property groups (`ProducerConfigProperties` and `ConsumerConfigProperties`) when you create an application:
 
 ```
 {
@@ -90,7 +90,7 @@ The following example request for the [https://docs.aws.amazon.com/managed-servi
 ### Add and update runtime properties in an existing application
 <a name="how-properties-update"></a>
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action adds or updates runtime properties for an existing application:
+The following example request for the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action adds or updates runtime properties for an existing application:
 
 ```
 {
@@ -125,7 +125,7 @@ If you use a key that has no corresponding runtime property in a property group,
 ### Remove runtime properties
 <a name="how-properties-remove"></a>
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action removes all runtime properties and property groups from an existing application:
+The following example request for the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action removes all runtime properties and property groups from an existing application:
 
 ```
 {

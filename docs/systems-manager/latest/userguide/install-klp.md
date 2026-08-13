@@ -55,7 +55,7 @@ For information about applying kernel live patches by running `yum` commands dir
 
 ------
 
-   For information about other options you can use in the command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html) in the *AWS CLI Command Reference*.
+   For information about other options you can use in the command, see [send-command](https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html) in the *AWS CLI Command Reference*.
 
 1. To perform an `Install` operation after checking your results in Compliance, run the following command from your local machine.
 
@@ -85,4 +85,4 @@ In both of the preceding commands, replace {{instance-id}} with the ID of the Am
 + `--targets "Key=instanceids,Values={{instance-id1}},{{instance-id2}}"`
 + `--targets "Key=tag:{{tag-key}},Values={{tag-value}}"`
 
-For information about other options you can use in these commands, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html) in the *AWS CLI Command Reference*.
+For information about other options you can use in these commands, see [send-command](https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html) in the *AWS CLI Command Reference*.

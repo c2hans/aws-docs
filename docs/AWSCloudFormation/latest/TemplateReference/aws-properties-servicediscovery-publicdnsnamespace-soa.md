@@ -37,4 +37,6 @@ To declare this entity in your CloudFormation template, use the following syntax
 The time to live (TTL) for purposes of negative caching.
 *Required*: No
 *Type*: Number
+*Minimum*: `0`
+*Maximum*: `2147483647`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

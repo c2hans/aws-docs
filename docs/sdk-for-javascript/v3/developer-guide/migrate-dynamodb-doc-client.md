@@ -9,8 +9,8 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 
 ## Basic usage of DynamoDB document client in v3
 <a name="basic-usage-of-dynamodb-document-client-in-v3"></a>
-+  In v2, you can use the [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB/DocumentClient.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB/DocumentClient.html) class to call DynamoDB APIs with native JavaScript types like Array, Number, and Object. It thus simplifies working with items in Amazon DynamoDB by abstracting away the notion of attribute values.
-+  In v3, the equivalent [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_lib_dynamodb.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_lib_dynamodb.html) client is available. It's similar to normal service clients from v3 SDK, with the difference that it takes a basic DynamoDB client in its constructor.
++  In v2, you can use the [`AWS.DynamoDB.DocumentClient`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB/DocumentClient.html) class to call DynamoDB APIs with native JavaScript types like Array, Number, and Object. It thus simplifies working with items in Amazon DynamoDB by abstracting away the notion of attribute values.
++  In v3, the equivalent [`@aws-sdk/lib-dynamodb`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_lib_dynamodb.html) client is available. It's similar to normal service clients from v3 SDK, with the difference that it takes a basic DynamoDB client in its constructor.
 
  Example:
 

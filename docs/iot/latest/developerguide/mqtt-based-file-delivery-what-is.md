@@ -16,8 +16,8 @@ In AWS IoT, a *stream* is a publicly addressable resource that is an abstraction
 AWS IoT MQTT-based file delivery provides the following functionality so that devices can transfer data from the AWS Cloud:
 + Data transfer using the MQTT protocol.
 + Support for JSON or CBOR formats.
-+ The ability to describe a stream ([https://docs.aws.amazon.com/iot/latest/developerguide/mqtt-based-file-delivery-in-devices.html#mqtt-based-file-delivery-describe-stream](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt-based-file-delivery-in-devices.html#mqtt-based-file-delivery-describe-stream) API) to get a stream file list, stream version, and related information.
-+ The ability to send data in small blocks ([https://docs.aws.amazon.com/iot/latest/developerguide/mqtt-based-file-delivery-in-devices.html#mqtt-based-file-delivery-get-getstream](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt-based-file-delivery-in-devices.html#mqtt-based-file-delivery-get-getstream) API) so that devices with hardware constraints can receive the blocks.
++ The ability to describe a stream ([`DescribeStream`](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt-based-file-delivery-in-devices.html#mqtt-based-file-delivery-describe-stream) API) to get a stream file list, stream version, and related information.
++ The ability to send data in small blocks ([`GetStream`](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt-based-file-delivery-in-devices.html#mqtt-based-file-delivery-get-getstream) API) so that devices with hardware constraints can receive the blocks.
 + Support for a dynamic block size per request, to support devices that have different memory capacities.
 + Optimization for concurrent streaming requests when multiple devices request data blocks from the same stream file.
 + Amazon S3 as data storage for stream files.

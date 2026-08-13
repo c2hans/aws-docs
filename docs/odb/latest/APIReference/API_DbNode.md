@@ -55,7 +55,7 @@ Pattern: `[a-zA-Z0-9_~.-]+`
 Required: No
 
  ** dbNodeStorageSizeInGBs **   <a name="odb-Type-DbNode-dbNodeStorageSizeInGBs"></a>
-The amount of local node storage, in gigabytes (GBs), that's allocated on the DB node.
+The amount of local node storage, in gigabytes (GB), that's allocated on the DB node.
 Type: Integer
 Required: No
 

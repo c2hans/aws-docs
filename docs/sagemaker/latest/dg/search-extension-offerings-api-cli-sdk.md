@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/search-extension-off
 # Search for extension offerings
 <a name="search-extension-offerings-api-cli-sdk"></a>
 
-Use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SearchTrainingPlanOfferings.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SearchTrainingPlanOfferings.html) API with the `TrainingPlanArn` parameter to find available extension offerings for your training plan.
+Use the [`SearchTrainingPlanOfferings`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SearchTrainingPlanOfferings.html) API with the `TrainingPlanArn` parameter to find available extension offerings for your training plan.
 
 The following example uses an AWS CLI command to search for extension offerings for an existing training plan.
 
@@ -39,7 +39,7 @@ The following sections define the mandatory and optional input request parameter
 ## Required parameters
 <a name="search-extension-offerings-required-params"></a>
 
-When calling the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SearchTrainingPlanOfferings.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SearchTrainingPlanOfferings.html) API to search for extension offerings, you must provide the following value:
+When calling the [`SearchTrainingPlanOfferings`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SearchTrainingPlanOfferings.html) API to search for extension offerings, you must provide the following value:
 + `TrainingPlanArn`: The of the training plan you want to extend. The `TrainingPlanArn` must reference an existing training plan with a status of `Active` or `Scheduled`.
 
 ## Optional parameters

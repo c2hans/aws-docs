@@ -22,6 +22,7 @@ The product features available to users (chat, agents, spaces, research, integra
 + [Managing identities](qbs-identity.md)
 + [Managing security](manage-security.md)
 + [Permissions](permissions.md)
++ [Governance](governance.md)
 + [Customizations](customizations.md)
 + [Using the Amazon Quick analytics dashboard](incident-response-logging-and-monitoring-quick-suite.md)
 + [AWS security in Quick](security.md)

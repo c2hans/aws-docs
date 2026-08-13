@@ -88,7 +88,7 @@ The check replication PowerShell script connects to the target Microsoft Active 
 
 Follow these steps to configure the automation:
 
-1. Navigate to [https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootActiveDirectoryReplication/description](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootActiveDirectoryReplication/description) in Systems Manager under Documents.
+1. Navigate to [`AWSSupport-TroubleshootActiveDirectoryReplication`](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootActiveDirectoryReplication/description) in Systems Manager under Documents.
 
 1. Select **Execute automation**.
 

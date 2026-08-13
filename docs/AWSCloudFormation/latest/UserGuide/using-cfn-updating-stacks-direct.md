@@ -73,8 +73,8 @@ You can cancel an update while it's in the `UPDATE_IN_PROGRESS` state. For more 
 
 **To update a stack using the command line**
 You can use one of the following commands:
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack.html) (AWS CLI)
-+ [https://docs.aws.amazon.com/powershell/latest/reference/items/Update-CFNStack.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Update-CFNStack.html) (AWS Tools for Windows PowerShell)
++ [update-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack.html) (AWS CLI)
++ [Update-CFNStack](https://docs.aws.amazon.com/powershell/latest/reference/items/Update-CFNStack.html) (AWS Tools for Windows PowerShell)
 
 For examples of using the command line to update a stack, see [Examples of CloudFormation stack operation commands for the AWS CLI and PowerShell](service_code_examples.md).
 

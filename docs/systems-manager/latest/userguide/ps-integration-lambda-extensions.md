@@ -47,7 +47,7 @@ To authorize and authenticate Parameter Store requests, the extension uses the s
 For more information, see [AWS Lambda execution role](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html) in the *AWS Lambda Developer Guide*.
 
 Instantiation
-For most Lambda functions, Lambda instantiates separate instances corresponding to the concurrency level that your function requires. Each instance is isolated and maintains its own local cache of your configuration data. For more information about Lambda instances and concurrency, see [Configuring reserved concurrency](https://docs.aws.amazon.com/lambda/latest/dg/configuration-concurrency.html) in the *AWS Lambda Developer Guide*.
+For most Lambda functions, Lambda creates separate instances corresponding to the concurrency level that your function requires. Each instance is isolated and maintains its own local cache of your configuration data. For more information about Lambda instances and concurrency, see [Configuring reserved concurrency](https://docs.aws.amazon.com/lambda/latest/dg/configuration-concurrency.html) in the *AWS Lambda Developer Guide*.
 For functions that use Lambda Managed Instances, a single execution environment serves multiple concurrent invocations, so those invocations share one instance of the extension and one local cache. For more information, see [Lambda Managed Instances](https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances.html) in the *AWS Lambda Developer Guide*.
 
 No SDK dependence
@@ -181,7 +181,7 @@ To call this action, make an HTTP GET call similar to the following. This comman
 GET http://localhost:{{port}}/systemsmanager/parameters/get?name={{parameter-name}}&version={{version}}&label={{label}}&withDecryption={true|false}
 ```
 
-In this example, {{parameter-name}} represents the full parameter name, such as `MyParameter`, for a parameter not in a hierarchy, or `%2FDev%2FProduction%2FEast%2FProject-ABC%2FMyParameter` for a parameter named `/Dev/Production/East/Project-ABC/MyParameter` that is part of a hierarchy.
+In this example, {{parameter-name}} represents the full parameter name. For a parameter not in a hierarchy, use a name like `MyParameter`. For a hierarchical parameter, use the URL-encoded path, such as `%2FDev%2FProduction%2FEast%2FProject-ABC%2FMyParameter` for `/Dev/Production/East/Project-ABC/MyParameter`.
 
 **Note**
 When using GET calls, parameter values must be encoded for HTTP to preserve special characters. For example, instead of formatting a hierarchical path like `/a/b/c`, encode characters that could be interpreted as part of the URL, such as `%2Fa%2Fb%2Fc`.
@@ -227,7 +227,7 @@ You can specify that parameters aren't decrypted by omitting `withDecryption` or
 ## AWS Parameters and Secrets Lambda Extension ARNs
 <a name="ps-integration-lambda-extensions-add"></a>
 
-The latest Amazon Resource Name (ARN) for the Lambda extension is published as a public parameter in Systems Manager Parameter Store for each supported architecture. You can retrieve the latest ARN programmatically using the AWS CLI or CloudFormation to ensure that your application always references the most recent extension version without manual updates. This section explains how to retrieve the ARN programmatically and provides tables listing the current ARN values for each architecture for manual reference.
+The latest Amazon Resource Name (ARN) for the Lambda extension is published as a public parameter in Systems Manager Parameter Store for each supported architecture. You can retrieve the latest ARN programmatically using the AWS CLI or CloudFormation to make sure that your application always references the most recent extension version without manual updates. This section explains how to retrieve the ARN programmatically and provides tables listing the current ARN values for each architecture for manual reference.
 
 ### Retrieving the latest Lambda extension ARN version
 <a name="ps-integration-lambda-extensions-programmatically-retrieve"></a>

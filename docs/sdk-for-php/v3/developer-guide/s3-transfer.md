@@ -10,7 +10,7 @@ You use the `Transfer` class in AWS SDK for PHP Version 3 to upload entire direc
 ## Uploading a local directory to Amazon S3
 <a name="uploading-a-local-directory-to-s3"></a>
 
-The [https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html) object performs the transfers. The following example shows how to recursively upload a local directory of files to an Amazon S3 bucket.
+The [`Aws\S3\Transfer`](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html) object performs the transfers. The following example shows how to recursively upload a local directory of files to an Amazon S3 bucket.
 
 ```
 // Create an S3 client.

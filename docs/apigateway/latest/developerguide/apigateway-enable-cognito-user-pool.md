@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 After creating an Amazon Cognito user pool, in API Gateway, you must then create a `COGNITO_USER_POOLS` authorizer that uses the user pool. The following procedure shows you how to do this using the API Gateway console.
 
 **Note**
-You can use the [https://docs.aws.amazon.com/apigateway/latest/api/API_CreateAuthorizer.html](https://docs.aws.amazon.com/apigateway/latest/api/API_CreateAuthorizer.html) action to create a `COGNITO_USER_POOLS` authorizer that uses multiple user pools. You can use up to 1,000 user pools for one `COGNITO_USER_POOLS` authorizer. This limit cannot be increased.
+You can use the [`CreateAuthorizer`](https://docs.aws.amazon.com/apigateway/latest/api/API_CreateAuthorizer.html) action to create a `COGNITO_USER_POOLS` authorizer that uses multiple user pools. You can use up to 1,000 user pools for one `COGNITO_USER_POOLS` authorizer. This limit cannot be increased.
 
 **Important**
 After performing any of the procedures below, you'll need to deploy or redeploy your API to propagate the changes. For more information about deploying your API, see [Deploy REST APIs in API Gateway](how-to-deploy-api.md).
@@ -39,7 +39,7 @@ After performing any of the procedures below, you'll need to deploy or redeploy 
 
 1. After creating the `COGNITO_USER_POOLS` authorizer, you can test invoke it by supplying an identity token that's provisioned from the user pool. You can't use an access token to test invoke your authorizer.
 
-   You can obtain this identity token by calling the [Amazon Cognito Identity SDK](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-integrate-apps.html) to perform user sign-in. You can also use the [https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_InitiateAuth.html](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_InitiateAuth.html) action. If you do not configure any **Authorization scopes**, API Gateway treats the supplied token as an identity token.
+   You can obtain this identity token by calling the [Amazon Cognito Identity SDK](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-integrate-apps.html) to perform user sign-in. You can also use the [`InitiateAuth`](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_InitiateAuth.html) action. If you do not configure any **Authorization scopes**, API Gateway treats the supplied token as an identity token.
 
 The preceding procedure creates a `COGNITO_USER_POOLS` authorizer that uses the newly created Amazon Cognito user pool. Depending on how you enable the authorizer on an API method, you can use either an identity token or an access token that's provisioned from the integrated user pool.
 

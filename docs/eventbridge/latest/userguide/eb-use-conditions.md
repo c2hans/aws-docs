@@ -202,7 +202,11 @@ See the following table for a comparison of Policy A and Policy B.
 |  <pre>{<br />    "source": [ "aws.ec2" ]<br />}</pre>  | Yes | Yes |
 |  <pre>{<br />    "source": [ "aws.ec2", "aws.s3" ]<br />}</pre>  | Yes | No (Source aws.s3 isn't allowed) |
 |  <pre>{<br />    "source": [ "aws.ec2" ],<br />    "detail-type": [ "EC2 Instance State-change Notification" ]<br />}</pre>  | Yes | Yes |
-|  <pre>{<br />    "detail-type": [ "EC2 Instance State-change Notification" ]<br />}</pre>  | Yes | No (Source must be specified) |
+|  <pre>{<br />    "detail-type": [ "EC2 Instance State-change Notification" ]<br />}</pre>  | Yes | Yes. `ForAllValues` evaluates an empty set and returns true because the event pattern omits `events:source`. See the following **Important** note. |
+
+**Policy B source restriction can be bypassed without a `Null` check**
+Policy B restricts the events a rule can match only when the rule's event pattern includes the `events:source` field. Because the condition uses the `ForAllValues` set operator without a `Null` check, an event pattern that omits `source` entirely causes the condition to evaluate over an empty set and return true. For example, an event pattern that specifies only `detail-type` triggers this behavior. A principal can therefore bypass the intended source restriction by creating rules whose event patterns don't specify a source.
+To require that a rule's event pattern always includes a `source`, combine `ForAllValues` with a `Null` condition on `events:source`, as shown in [Example: Ensuring that the source is defined in the event pattern](#eb-source-defined-events-pattern). For more information about how set operators evaluate a missing condition key, see [Creating a condition with multiple keys or values](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition_examples-multi-valued-context-keys.html) in the *IAM User Guide*.
 
 ## Example: Defining multiple sources that can be used in an event pattern individually
 <a name="eb-events-pattern-sources"></a>

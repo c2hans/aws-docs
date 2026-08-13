@@ -21,7 +21,7 @@ Type: Timestamp
 Required: No
 
  ** latestAggregatedProfile **   <a name="profiler-Type-ProfilingStatus-latestAggregatedProfile"></a>
- An [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AggregatedProfileTime.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AggregatedProfileTime.html) object that contains the aggregation period and start time for an aggregated profile.
+ An [`AggregatedProfileTime`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AggregatedProfileTime.html) object that contains the aggregation period and start time for an aggregated profile.
 Type: [AggregatedProfileTime](API_AggregatedProfileTime.md) object
 Required: No
 

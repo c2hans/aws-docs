@@ -1456,6 +1456,18 @@ Now, let us look at Regional availability across all the models supported by Ama
 | us-east-1 (N. Virginia) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 | us-east-2 (Ohio) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 
+**[Daybreak Red: GPT-5.6 Cyber](model-card-openai-gpt-56-cyber.md)**
+
+| Region | In-Region | Geo | Global |
+| --- | --- | --- | --- |
+| us-east-2 (Ohio) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
+
+**[Daybreak Blue: GPT-5.6 Sol](model-card-openai-gpt-daybreak-blue-56-sol.md)**
+
+| Region | In-Region | Geo | Global |
+| --- | --- | --- | --- |
+| us-east-2 (Ohio) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
+
 **[GPT-5.6 Terra](model-card-openai-gpt-56-terra.md)**
 
 | Region | In-Region | Geo | Global |

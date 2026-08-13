@@ -13,7 +13,7 @@ There are two options for creating a custom vocabulary filter:
    + If using the AWS CLI or AWS SDKs, you must upload your custom vocabulary file to an Amazon S3 bucket and include the Amazon S3 URI in your request.
 
 1. Include a list of comma-separated words directly in your API request.
-   + You can use this approach with the AWS CLI or AWS SDKs using the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabularyFilter.html#transcribe-CreateVocabularyFilter-request-Words](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabularyFilter.html#transcribe-CreateVocabularyFilter-request-Words) parameter.
+   + You can use this approach with the AWS CLI or AWS SDKs using the [`Words`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabularyFilter.html#transcribe-CreateVocabularyFilter-request-Words) parameter.
 
 For examples of each method, refer to [Creating custom vocabulary filters](#vocabulary-filtering-create-examples)
 
@@ -55,7 +55,7 @@ Before continuing, save your custom vocabulary filter as a text (\*.txt) file. Y
 ### AWS CLI
 <a name="vocab-filter-create-cli"></a>
 
-This example uses the [create-vocabulary-filter](https://docs.aws.amazon.com/cli/latest/reference/transcribe/create-vocabulary-filter.html) command to process a word list into a usable custom vocabulary filter. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabularyFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabularyFilter.html).
+This example uses the [create-vocabulary-filter](https://docs.aws.amazon.com/cli/latest/reference/transcribe/create-vocabulary-filter.html) command to process a word list into a usable custom vocabulary filter. For more information, see [`CreateVocabularyFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabularyFilter.html).
 
 **Option 1**: You can include your list of words to your request using the `words` parameter.
 
@@ -112,7 +112,7 @@ If you include `VocabularyFilterFileUri` in your request, you cannot use `Words`
 ### AWS SDK for Python (Boto3)
 <a name="vocab-filter-create-python-batch"></a>
 
-This example uses the AWS SDK for Python (Boto3) to create a custom vocabulary filter using the [create\_vocabulary\_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary_filter) method. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabularyFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabularyFilter.html).
+This example uses the AWS SDK for Python (Boto3) to create a custom vocabulary filter using the [create\_vocabulary\_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary_filter) method. For more information, see [`CreateVocabularyFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabularyFilter.html).
 
 For additional examples using the AWS SDKs, including feature-specific, scenario, and cross-service examples, refer to the [Code examples for Amazon Transcribe using AWS SDKs](service_code_examples.md) chapter.
 
@@ -152,4 +152,4 @@ response = transcribe.create_vocabulary_filter(
 If you include `VocabularyFilterFileUri` in your request, you cannot use `Words`; you must choose one or the other.
 
 **Note**
-If you create a new Amazon S3 bucket for your custom vocabulary filter files, make sure the IAM role making the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabularyFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabularyFilter.html) request has permissions to access this bucket. If the role doesn't have the correct permissions, your request fails. You can optionally specify an IAM role within your request by including the `DataAccessRoleArn` parameter. For more information on IAM roles and policies in Amazon Transcribe, see [Amazon Transcribe identity-based policy examples](security_iam_id-based-policy-examples.md).
+If you create a new Amazon S3 bucket for your custom vocabulary filter files, make sure the IAM role making the [`CreateVocabularyFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabularyFilter.html) request has permissions to access this bucket. If the role doesn't have the correct permissions, your request fails. You can optionally specify an IAM role within your request by including the `DataAccessRoleArn` parameter. For more information on IAM roles and policies in Amazon Transcribe, see [Amazon Transcribe identity-based policy examples](security_iam_id-based-policy-examples.md).

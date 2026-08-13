@@ -47,4 +47,4 @@ The following `head-bucket` example command shows how you can use the AWS CLI to
 aws s3api head-bucket --bucket {{bucket-base-name}}--{{zone-id}}--x-s3
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/head-bucket.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/head-bucket.html) in the *AWS CLI Command Reference*.
+For more information, see [head-bucket](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/head-bucket.html) in the *AWS CLI Command Reference*.

@@ -38,12 +38,12 @@ The permissions policy grants the actions State Manager needs to dispatch Automa
 **Permissions details**
 
 This policy includes the following permissions.
-+ `iam:PassRole` – Allows State Manager to pass the automation assume role to Automation when starting a runbook execution. The `iam:PassedToService` condition restricts the pass to `ssm.amazonaws.com`, and the `iam:AssociatedResourceARN` condition restricts it to the `AWS-InstallSsmAgentOnAzure` runbook and automation executions in the connector's AWS Region.
++ `iam:PassRole` – Allows State Manager to pass the automation assume role to Automation when starting a runbook execution. The `iam:PassedToService` condition restricts the pass to `ssm.amazonaws.com`, and the `iam:AssociatedResourceARN` condition restricts it to the `AWS-InstallSSMAgentOnAzure` runbook and automation executions in the connector's AWS Region.
 + `iam:ListRoleTags` – Allows State Manager to read tags on roles to confirm they belong to the same Cloud Connector before passing or assuming them.
 + `ssm:GetCloudConnector` – Allows State Manager to read the Cloud Connector configuration during target resolution.
 + `ssm:ListCloudConnectors` – Allows State Manager to enumerate Cloud Connectors when resolving association targets.
 + `ssm:DescribeInstanceInformation` – Allows State Manager to read the status of managed nodes registered through the connector to determine which targets are eligible.
-+ `ssm:StartAutomationExecution` – Allows State Manager to start an Automation execution of the `AWS-InstallSsmAgentOnAzure` runbook against the connector's targets.
++ `ssm:StartAutomationExecution` – Allows State Manager to start an Automation execution of the `AWS-InstallSSMAgentOnAzure` runbook against the connector's targets.
 + `sts:AssumeRole` – Allows State Manager to assume the Azure federation role so it can authenticate to Azure when resolving the connector's targets.
 
 ```

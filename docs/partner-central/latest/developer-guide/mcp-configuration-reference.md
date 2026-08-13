@@ -205,4 +205,4 @@ When `stream` is set to `true` in a `sendMessage` call, the server returns Serve
 
 ## Next steps
 <a name="mcp-config-next-steps"></a>
-+ [https://docs.aws.amazon.com/partner-central/latest/APIReference/mcp-tools-reference.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/mcp-tools-reference.html) — Detailed documentation for `sendMessage` and `getSession` tools
++ [**Tools Reference**](https://docs.aws.amazon.com/partner-central/latest/APIReference/mcp-tools-reference.html) — Detailed documentation for `sendMessage` and `getSession` tools

@@ -102,14 +102,14 @@ The message published to this topic must be a valid JSON payload. If the input m
 #### Message payload
 <a name="get-position-estimate-payload"></a>
 
-The message payload format follows a similar structure as the AWS IoT Wireless API operation request body, [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetPositionEstimate.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetPositionEstimate.html). It contains:
+The message payload format follows a similar structure as the AWS IoT Wireless API operation request body, [`GetPositionEstimate`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetPositionEstimate.html). It contains:
 + An optional `Timestamp` string, which corresponds to the date and time the location was resolved. The `Timestamp` string can have a minimum length of 1 and maximum length of 10.
 + An optional `MessageId` string, which can be used to map the request to the response. If you specify this string, the message published to the `get_position_estimate/accepted` or `get_position_estimate/rejected` topics will contain this `MessageId`. The `MessageID` string can have a minimum length of 1 and maximum length of 256.
 + The measurement data from the device that contains one or more of the following measurement types:
-  + [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_WiFiAccessPoint.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_WiFiAccessPoint.html)
-  + [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CellTowers.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CellTowers.html)
-  + [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Ip.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Ip.html)
-  + [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Gnss.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Gnss.html)
+  + [`WiFiAccessPoint`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_WiFiAccessPoint.html)
+  + [`CellTowers`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CellTowers.html)
+  + [`IpAddress`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Ip.html)
+  + [`Gnss`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Gnss.html)
 
 The following shows a sample message payload.
 

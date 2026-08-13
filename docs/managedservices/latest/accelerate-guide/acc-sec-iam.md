@@ -21,49 +21,49 @@ AMS access roles allow AMS operators to access your resources to provide AMS cap
 
 <table>
 <thead>
-  <tr><th>Role name</th><th>**Description**</th></tr>
+  <tr><th><b>Role name</b></th><th><b>Description</b></th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2">Used by (entity): AMS Access Service only</td></tr>
+  <tr><td colspan="2">Used by (entity): <b>AMS Access Service only</b></td></tr>
   <tr><td>ams-access-management</td><td>Deployed manually by you during onboarding. Assumed only by AMS access to deploy or update access roles. Remains in your account after onboarding for any future updates to the access roles.</td></tr>
-  <tr><td colspan="2">Used by (entity): AMS Operations</td></tr>
+  <tr><td colspan="2">Used by (entity): <b>AMS Operations</b></td></tr>
   <tr><td>ams-access-admin-operations</td><td>This role has administrative permissions to operate in accounts, but does not have permissions to read, write, or delete customer content in AWS services commonly used as data stores, such as Amazon Simple Storage Service, Amazon Relational Database Service, Amazon DynamoDB, Amazon Redshift, and Amazon ElastiCache. Only a very few select AMS individuals can assume this role.</td></tr>
   <tr><td>ams-access-operations</td><td>This AMS Operations role has permissions to perform administrative tasks in your accounts. This role does not have read, write, or delete permissions to customer content in AWS services commonly used as data stores, such as Amazon Simple Storage Service, Amazon Relational Database Service, Amazon DynamoDB, Amazon Redshift, and Amazon ElastiCache. Permissions to perform AWS Identity and Access Management write operations are also excluded from this role.</td></tr>
   <tr><td>ams-access-read-only</td><td>This AMS read-only role is limited to read-only permissions in your AMS account. Read permissions to customer content in AWS services commonly used as data stores, such as Amazon S3, Amazon RDS, DynamoDB, Amazon Redshift, and ElastiCache, are not granted by this role.</td></tr>
-  <tr><td colspan="2">Used by (entity): AMS Operations and AMS Services</td></tr>
-  <tr><td>ams\_ssm\_automation\_role</td><td rowspan="2">Assumed by AWS Systems Manager to execute SSM Automation documents within your account.</td></tr>
-  <tr><td>ams\_ssm\_automation\_role</td></tr>
-  <tr><td colspan="2">Used by (entity): AMS Security</td></tr>
+  <tr><td colspan="2">Used by (entity): <b>AMS Operations and AMS Services</b></td></tr>
+  <tr><td>ams_ssm_automation_role</td><td rowspan="2">Assumed by AWS Systems Manager to execute SSM Automation documents within your account.</td></tr>
+  <tr><td>ams_ssm_automation_role</td></tr>
+  <tr><td colspan="2">Used by (entity): <b>AMS Security</b></td></tr>
   <tr><td>ams-access-security-analyst</td><td>This AMS security role has permissions in your AMS account to perform dedicated security alert monitoring and security incident handling. Only a very few select AMS Security individuals can assume this role. Read permissions to customer content in AWS services that are commonly used as data stores, such as Amazon S3;, Amazon RDS;, Amazon DynamoDB, Amazon Redshift, and ElastiCache, aren't granted by this role.</td></tr>
   <tr><td>ams-access-security-analyst-read-only</td><td>This AMS security role is limited to read-only permissions in your AMS account to perform dedicated security alert monitoring and security incident handling. Read permissions to customer content in AWS services that are commonly used as data stores, such as Amazon S3;, Amazon RDS;, Amazon DynamoDB, Amazon Redshift, and ElastiCache, aren't granted by this role.</td></tr>
-  <tr><td colspan="2">Used by (entity): AWS Services</td></tr>
+  <tr><td colspan="2">Used by (entity): <b>AWS Services</b></td></tr>
   <tr><td>ams-access-admin</td><td>This AMS admin role has full permissions to operate in accounts without restrictions. Only AMS internal services (with a scoped-down session policy) can assume the admin role.</td></tr>
   <tr><td>ams-opscenter-eventbridge-role</td><td>Assumed by Amazon EventBridge to create AWS Systems Manager OpsItems as a part of AMS-specific AWS Config Rules remediation workflow.</td></tr>
   <tr><td>AMSOSConfigurationCustomerInstanceRole</td><td>This IAM role is applied to your Amazon EC2 instances when AMS OS-Configuration service discovers that the required IAM policies are missing. It allows your Amazon EC2 instances to interact with AWS Systems Manager, Amazon CloudWatch, and Amazon EventBridge services. It also has attached the AMS custom-managed policy to enable RDP access to your Windows instances.</td></tr>
   <tr><td>mc-patch-glue-service-role</td><td>Assumed by AWS Glue ETL workflow to perform data transformation and prepare it for AMS Patch report generator.</td></tr>
-  <tr><td colspan="2">Used by (entity): AMS Service</td></tr>
-  <tr><td>ams-alarm-manager-AWSManagedServicesAlarmManagerDe-<8-digit hash></td><td>Assumed by AMS alarm manager infrastructure within your AMS account to perform AWS Config Rules evaluation for a new AWS AppConfig deployment.</td></tr>
-  <tr><td>ams-alarm-manager-AWSManagedServicesAlarmManagerRe-<8-digit hash></td><td>Assumed by AMS alarm manager remediation infrastructure within your AMS account to allow the creation or deletion of alarms for remediation.</td></tr>
-  <tr><td>ams-alarm-manager-AWSManagedServicesAlarmManagerSS-<8-digit hash></td><td>Assumed by AWS Systems Manager to invoke the AMS alarm manager remediation service within your AMS account.</td></tr>
-  <tr><td>ams-alarm-manager-AWSManagedServicesAlarmManagerTr-<8-digit hash></td><td>Assumed by AMS alarm manager infrastructure within your AWS account to conduct periodic AMS AWS Config Rules evaluation.</td></tr>
-  <tr><td>ams-alarm-manager-AWSManagedServicesAlarmManagerVa-<8-digit hash></td><td>Assumed by AMS alarm manager infrastructure within your AMS account to ensure that the required alarms exists in the AWS account.</td></tr>
+  <tr><td colspan="2">Used by (entity): <b>AMS Service</b></td></tr>
+  <tr><td>ams-alarm-manager-AWSManagedServicesAlarmManagerDe-&lt;8-digit hash&gt;</td><td>Assumed by AMS alarm manager infrastructure within your AMS account to perform AWS Config Rules evaluation for a new AWS AppConfig deployment.</td></tr>
+  <tr><td>ams-alarm-manager-AWSManagedServicesAlarmManagerRe-&lt;8-digit hash&gt;</td><td>Assumed by AMS alarm manager remediation infrastructure within your AMS account to allow the creation or deletion of alarms for remediation.</td></tr>
+  <tr><td>ams-alarm-manager-AWSManagedServicesAlarmManagerSS-&lt;8-digit hash&gt;</td><td>Assumed by AWS Systems Manager to invoke the AMS alarm manager remediation service within your AMS account.</td></tr>
+  <tr><td>ams-alarm-manager-AWSManagedServicesAlarmManagerTr-&lt;8-digit hash&gt;</td><td>Assumed by AMS alarm manager infrastructure within your AWS account to conduct periodic AMS AWS Config Rules evaluation.</td></tr>
+  <tr><td>ams-alarm-manager-AWSManagedServicesAlarmManagerVa-&lt;8-digit hash&gt;</td><td>Assumed by AMS alarm manager infrastructure within your AMS account to ensure that the required alarms exists in the AWS account.</td></tr>
   <tr><td>ams-backup-iam-role</td><td>This role is used to run AWS Backup within your accounts.</td></tr>
-  <tr><td>ams-monitoring-AWSManagedServicesLogGroupLimitLamb-<8-digit hash></td><td>Assumed by AMS Logging & Monitoring infrastructure in your AMS account to evaluate Amazon CloudWatch Logs groups limit and compare with the service quotas.</td></tr>
-  <tr><td>ams-monitoring-AWSManagedServicesRDSMonitoringRDSE-<8-digit hash></td><td>Assumed by AMS Logging & Monitoring infrastructure in your AMS account to forward Amazon RDS events to Amazon CloudWatch Events.</td></tr>
-  <tr><td>ams-monitoring-AWSManagedServicesRedshiftMonitorin-<8-digit hash></td><td>Assumed by AMS Logging & Monitoring infrastructure in your AMS account to forward Amazon Redshift events (CreateCluster and DeleteCuster) to Amazon CloudWatch Events.</td></tr>
-  <tr><td>ams-monitoring-infrastruc-AWSManagedServicesMonito-<8-digit hash></td><td>Assumed by AMS Logging & Monitoring infrastructure in your AMS account to publish messages to Amazon Simple Notification Service to validate that the account is reporting all necessary data.</td></tr>
+  <tr><td>ams-monitoring-AWSManagedServicesLogGroupLimitLamb-&lt;8-digit hash&gt;</td><td>Assumed by AMS Logging &amp; Monitoring infrastructure in your AMS account to evaluate Amazon CloudWatch Logs groups limit and compare with the service quotas.</td></tr>
+  <tr><td>ams-monitoring-AWSManagedServicesRDSMonitoringRDSE-&lt;8-digit hash&gt;</td><td>Assumed by AMS Logging &amp; Monitoring infrastructure in your AMS account to forward Amazon RDS events to Amazon CloudWatch Events.</td></tr>
+  <tr><td>ams-monitoring-AWSManagedServicesRedshiftMonitorin-&lt;8-digit hash&gt;</td><td>Assumed by AMS Logging &amp; Monitoring infrastructure in your AMS account to forward Amazon Redshift events (CreateCluster and DeleteCuster) to Amazon CloudWatch Events.</td></tr>
+  <tr><td>ams-monitoring-infrastruc-AWSManagedServicesMonito-&lt;8-digit hash&gt;</td><td>Assumed by AMS Logging &amp; Monitoring infrastructure in your AMS account to publish messages to Amazon Simple Notification Service to validate that the account is reporting all necessary data.</td></tr>
   <tr><td>ams-opscenter-role</td><td>Assumed by AMS Notification Management system in your AMS account to manage AWS Systems Manager OpsItems related to alerts in your account.</td></tr>
   <tr><td>ams-opsitem-autoexecution-role</td><td>Assumed by AMS Notification Management system to handle automated remediation using SSM documents for monitoring alerts related to resources in your account.</td></tr>
-  <tr><td>ams-patch-infrastructure-amspatchconfigruleroleC1-<8-digit hash></td><td>Assumed by AWS Config to evaluate AMS patch resources and detect drift in its CloudFormation stacks.</td></tr>
-  <tr><td>ams-patch-infrastructure-amspatchcwruleopsitemams-<8-digit hash></td><td>Assumed by Amazon EventBridge to create AWS Systems Manager OpsItems for patching failures.</td></tr>
-  <tr><td>ams-patch-infrastructure-amspatchservicebusamspat-<8-digit hash></td><td>Assumed by Amazon EventBridge to send an event to the AMS Patch orchestrator event bus for AWS Systems Manager Maintenance Windows state change notifications.</td></tr>
-  <tr><td>ams-patch-reporting-infra-amspatchreportingconfigr-<8-digit hash></td><td>Assumed by AWS Config to evaluate AMS Patch reporting resources and detect drift in its CloudFormation stacks.</td></tr>
-  <tr><td>ams-resource-tagger-AWSManagedServicesResourceTagg-<8-digit hash></td><td>Assumed by AMS Resource Tagger infrastructure within your AMS account to perform AWS Config Rules evaluation upon new AWS AppConfig deployment.</td></tr>
-  <tr><td>ams-resource-tagger-AWSManagedServicesResourceTagg-<8-digit hash></td><td>Assumed by AMS Resource Tagger infrastructure within your AMS account to validate that required AWS tags exist for the managed resources.</td></tr>
-  <tr><td>ams-resource-tagger-AWSManagedServicesResourceTagg-<8-digit hash></td><td>Assumed by AWS Systems Manager to invoke AMS Resource Tagger remediation workflow in your AMS account.</td></tr>
-  <tr><td>ams-resource-tagger-AWSManagedServicesResourceTagg-<8-digit hash></td><td>Assumed by AMS Resource Tagger remediation infrastructure within your AMS account to create or delete AWS tags for the managed resources.</td></tr>
-  <tr><td>ams-resource-tagger-AWSManagedServicesResourceTagg-<8-digit hash></td><td>Assumed by AMS Resource Tagger infrastructure within your AWS account to conduct periodic AMS Config Rule evaluation.</td></tr>
-  <tr><td>ams\_os\_configuration\_event\_rule\_role-<AWS Region></td><td>Assumed by Amazon EventBridge to forward events from your account to AMS OS-Configuration service EventBus in the correct Region.</td></tr>
+  <tr><td>ams-patch-infrastructure-amspatchconfigruleroleC1-&lt;8-digit hash&gt;</td><td>Assumed by AWS Config to evaluate AMS patch resources and detect drift in its CloudFormation stacks.</td></tr>
+  <tr><td>ams-patch-infrastructure-amspatchcwruleopsitemams-&lt;8-digit hash&gt;</td><td>Assumed by Amazon EventBridge to create AWS Systems Manager OpsItems for patching failures.</td></tr>
+  <tr><td>ams-patch-infrastructure-amspatchservicebusamspat-&lt;8-digit hash&gt;</td><td>Assumed by Amazon EventBridge to send an event to the AMS Patch orchestrator event bus for AWS Systems Manager Maintenance Windows state change notifications.</td></tr>
+  <tr><td>ams-patch-reporting-infra-amspatchreportingconfigr-&lt;8-digit hash&gt;</td><td>Assumed by AWS Config to evaluate AMS Patch reporting resources and detect drift in its CloudFormation stacks.</td></tr>
+  <tr><td>ams-resource-tagger-AWSManagedServicesResourceTagg-&lt;8-digit hash&gt;</td><td>Assumed by AMS Resource Tagger infrastructure within your AMS account to perform AWS Config Rules evaluation upon new AWS AppConfig deployment.</td></tr>
+  <tr><td>ams-resource-tagger-AWSManagedServicesResourceTagg-&lt;8-digit hash&gt;</td><td>Assumed by AMS Resource Tagger infrastructure within your AMS account to validate that required AWS tags exist for the managed resources.</td></tr>
+  <tr><td>ams-resource-tagger-AWSManagedServicesResourceTagg-&lt;8-digit hash&gt;</td><td>Assumed by AWS Systems Manager to invoke AMS Resource Tagger remediation workflow in your AMS account.</td></tr>
+  <tr><td>ams-resource-tagger-AWSManagedServicesResourceTagg-&lt;8-digit hash&gt;</td><td>Assumed by AMS Resource Tagger remediation infrastructure within your AMS account to create or delete AWS tags for the managed resources.</td></tr>
+  <tr><td>ams-resource-tagger-AWSManagedServicesResourceTagg-&lt;8-digit hash&gt;</td><td>Assumed by AMS Resource Tagger infrastructure within your AWS account to conduct periodic AMS Config Rule evaluation.</td></tr>
+  <tr><td>ams_os_configuration_event_rule_role-&lt;AWS Region&gt;</td><td>Assumed by Amazon EventBridge to forward events from your account to AMS OS-Configuration service EventBus in the correct Region.</td></tr>
   <tr><td>mc-patch-reporting-service</td><td>Assumed by AMS patch data aggregator and report generator.</td></tr>
 </tbody>
 </table>

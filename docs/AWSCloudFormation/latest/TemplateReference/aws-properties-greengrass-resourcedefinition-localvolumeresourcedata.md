@@ -9,7 +9,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 <a name="aws-properties-greengrass-resourcedefinition-localvolumeresourcedata-description"></a>Settings for a local volume resource, which represents a file or directory on the root file system. For more information, see [Access Local Resources with Lambda Functions](https://docs.aws.amazon.com/greengrass/v1/developerguide/access-local-resources.html) in the * AWS IoT Greengrass Version 1 Developer Guide *.
 
-<a name="aws-properties-greengrass-resourcedefinition-localvolumeresourcedata-inheritance"></a> In an CloudFormation template, `LocalVolumeResourceData` can be used in the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedatacontainer.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedatacontainer.html) property type.
+<a name="aws-properties-greengrass-resourcedefinition-localvolumeresourcedata-inheritance"></a> In an CloudFormation template, `LocalVolumeResourceData` can be used in the [`ResourceDataContainer`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedatacontainer.html) property type.
 
 ## Syntax
 <a name="aws-properties-greengrass-resourcedefinition-localvolumeresourcedata-syntax"></a>

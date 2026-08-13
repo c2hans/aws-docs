@@ -13,7 +13,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 
  Set both a connection timeout and a request timeout on any remote call, and generally on any call across processes. Many frameworks offer built-in timeout capabilities, but be careful as many have default values that are infinite or too high. A value that is too high reduces the usefulness of the timeout because resources continue to be consumed while the client waits for the timeout to occur. A too low value can generate increased traffic on the backend and increased latency because too many requests are retried. In some cases, this can lead to complete outages because all requests are being retried.
 
- To learn more about how Amazon use timeouts, retries, and backoff with jitter, refer to the [https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/?did=ba_card&trk=ba_card](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/?did=ba_card&trk=ba_card).
+ To learn more about how Amazon use timeouts, retries, and backoff with jitter, refer to the [*Builder’s Library: Timeouts, retries, and backoff with jitter*](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/?did=ba_card&trk=ba_card).
 
  **Level of risk exposed if this best practice is not established:** High
 

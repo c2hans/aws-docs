@@ -38,7 +38,7 @@ export const { StorageBrowser } = createStorageBrowser({
 ## Method 2: Managing data access for your IAM principals for your AWS account
 <a name="setup-storagebrowser-method2"></a>
 
-If you want to manage access for your IAM principals or your AWS account directly, you can create an IAM role that has permissions to invoke the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetDataAccess.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetDataAccess.html) S3 API operation. To set this up, you must create an S3 Access Grants instance to map out permissions for S3 general purpose buckets and prefixes to the specified IAM identities. The Storage Browser component (which must be called on the client side after obtaining the IAM credentials) will then invoke the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListCallerAccessGrants.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListCallerAccessGrants.html) S3 API operation to fetch the available grants to the identity requester and populate the locations in the component. After you obtain the `s3:GetDataAccess` permission, those credentials are then used by the Storage Browser component to request data access to S3.
+If you want to manage access for your IAM principals or your AWS account directly, you can create an IAM role that has permissions to invoke the [GetDataAccess](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetDataAccess.html) S3 API operation. To set this up, you must create an S3 Access Grants instance to map out permissions for S3 general purpose buckets and prefixes to the specified IAM identities. The Storage Browser component (which must be called on the client side after obtaining the IAM credentials) will then invoke the [ListCallerAccessGrants](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListCallerAccessGrants.html) S3 API operation to fetch the available grants to the identity requester and populate the locations in the component. After you obtain the `s3:GetDataAccess` permission, those credentials are then used by the Storage Browser component to request data access to S3.
 
 ```
 import {
@@ -390,7 +390,7 @@ Make sure to avoid logging any sensitive information. We recommend that you use 
 
 1. Verify that the required **Permission** and **Scope** parameters are provided in the request.
 
-1. Use the [https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/API_CreateTokenWithIAM.html](https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/API_CreateTokenWithIAM.html) API to exchange the JSON web token for an IAM Identity Center token.
+1. Use the [CreateTokenWithIAM](https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/API_CreateTokenWithIAM.html) API to exchange the JSON web token for an IAM Identity Center token.
 **Note**
 After the IdP JSON web token is used, it can’t be used again. A new token must be used to exchange with IAM Identity Center.
 

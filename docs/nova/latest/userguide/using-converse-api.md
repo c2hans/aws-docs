@@ -84,4 +84,4 @@ print("\n[Response Content Text]")
 print(model_response["output"]["message"]["content"][0]["text"])
 ```
 
-For more details on Converse API and how to make use of it please refer to [https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html](https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html).
+For more details on Converse API and how to make use of it please refer to [*Carry out a conversation with the Converse API operations*](https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html).

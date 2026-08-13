@@ -14,7 +14,7 @@ There are several ways you can check predictions results from your asynchronous 
 ## Amazon SNS Topics
 <a name="async-inference-check-predictions-sns-topic"></a>
 
-Amazon SNS is a notification service for messaging-oriented applications, with multiple subscribers requesting and receiving "push" notifications of time-critical messages via a choice of transport protocols, including HTTP, Amazon SQS, and email. Amazon SageMaker Asynchronous Inference posts notifications when you create an endpoint with [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpointConfig.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpointConfig.html) and specify an Amazon SNS topic.
+Amazon SNS is a notification service for messaging-oriented applications, with multiple subscribers requesting and receiving "push" notifications of time-critical messages via a choice of transport protocols, including HTTP, Amazon SQS, and email. Amazon SageMaker Asynchronous Inference posts notifications when you create an endpoint with [`CreateEndpointConfig`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpointConfig.html) and specify an Amazon SNS topic.
 
 **Note**
 In order to receive Amazon SNS notifications, your IAM role must have `sns:Publish` permissions. See the [Complete the prerequisites](async-inference-create-endpoint-prerequisites.md) for information on requirements you must satisfy to use Asynchronous Inference.

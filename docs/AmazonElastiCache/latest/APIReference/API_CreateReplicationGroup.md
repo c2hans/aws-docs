@@ -77,12 +77,12 @@ The compute and memory capacity of the nodes in the node group (shard).
 The following node types are supported by ElastiCache. Generally speaking, the current generation types provide more memory and computational power at lower cost when compared to their equivalent previous generation counterparts.
 + General purpose:
   + Current generation:
+**Note**
+For region availability, see [Supported Node Types](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheNodes.SupportedTypes.html#CacheNodes.SupportedTypesByRegion)
 
      **M8g node types**: `cache.m8g.large`, `cache.m8g.xlarge`, `cache.m8g.2xlarge`, `cache.m8g.4xlarge`, `cache.m8g.8xlarge`, `cache.m8g.12xlarge`, `cache.m8g.16xlarge`
 
      **M7g node types**: `cache.m7g.large`, `cache.m7g.xlarge`, `cache.m7g.2xlarge`, `cache.m7g.4xlarge`, `cache.m7g.8xlarge`, `cache.m7g.12xlarge`, `cache.m7g.16xlarge`
-**Note**
-For region availability, see [Supported Node Types](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheNodes.SupportedTypes.html#CacheNodes.SupportedTypesByRegion)
 
      **M6g node types** (available only for Redis OSS engine version 5.0.6 onward and for Memcached engine version 1.5.16 onward): `cache.m6g.large`, `cache.m6g.xlarge`, `cache.m6g.2xlarge`, `cache.m6g.4xlarge`, `cache.m6g.8xlarge`, `cache.m6g.12xlarge`, `cache.m6g.16xlarge`
 
@@ -108,12 +108,12 @@ For region availability, see [Supported Node Types](https://docs.aws.amazon.com/
      **C1 node types:** `cache.c1.xlarge`
 + Memory optimized:
   + Current generation:
+**Note**
+For region availability, see [Supported Node Types](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheNodes.SupportedTypes.html#CacheNodes.SupportedTypesByRegion)
 
      **R8g node types**: `cache.r8g.large`, `cache.r8g.xlarge`, `cache.r8g.2xlarge`, `cache.r8g.4xlarge`, `cache.r8g.8xlarge`, `cache.r8g.12xlarge`, `cache.r8g.16xlarge`
 
      **R7g node types**: `cache.r7g.large`, `cache.r7g.xlarge`, `cache.r7g.2xlarge`, `cache.r7g.4xlarge`, `cache.r7g.8xlarge`, `cache.r7g.12xlarge`, `cache.r7g.16xlarge`
-**Note**
-For region availability, see [Supported Node Types](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheNodes.SupportedTypes.html#CacheNodes.SupportedTypesByRegion)
 
      **R6g node types** (available only for Redis OSS engine version 5.0.6 onward and for Memcached engine version 1.5.16 onward): `cache.r6g.large`, `cache.r6g.xlarge`, `cache.r6g.2xlarge`, `cache.r6g.4xlarge`, `cache.r6g.8xlarge`, `cache.r6g.12xlarge`, `cache.r6g.16xlarge`
 

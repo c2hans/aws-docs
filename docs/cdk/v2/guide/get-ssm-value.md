@@ -17,7 +17,7 @@ This topic shows how to read attributes from the AWS Systems Manager Parameter S
 ## Read Systems Manager values at deployment time
 <a name="ssm-read-at-deploy"></a>
 
-To read values from the Systems Manager Parameter Store, use the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ssm.StringParameter.html#static-valuewbrforwbrstringwbrparameterscope-parametername-version](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ssm.StringParameter.html#static-valuewbrforwbrstringwbrparameterscope-parametername-version) and [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ssm.StringParameter.html#static-valuewbrforwbrsecurewbrstringwbrparameterscope-parametername-version](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ssm.StringParameter.html#static-valuewbrforwbrsecurewbrstringwbrparameterscope-parametername-version) methods. Choose a method based on whether the attribute you want is a plain string or a secure string value. These methods return [tokens](tokens.md), not the actual value. The value is resolved by AWS CloudFormation during deployment. The following is an example:
+To read values from the Systems Manager Parameter Store, use the [`valueForStringParameter`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ssm.StringParameter.html#static-valuewbrforwbrstringwbrparameterscope-parametername-version) and [`valueForSecureStringParameter`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ssm.StringParameter.html#static-valuewbrforwbrsecurewbrstringwbrparameterscope-parametername-version) methods. Choose a method based on whether the attribute you want is a plain string or a secure string value. These methods return [tokens](tokens.md), not the actual value. The value is resolved by AWS CloudFormation during deployment. The following is an example:
 
 **Example**
 
@@ -98,7 +98,7 @@ A [limited number of AWS services](https://docs.aws.amazon.com/AWSCloudFormation
 
 At times, it’s useful to provide a parameter at synthesis time. By doing this, the AWS CloudFormation template will always use the same value instead of resolving the value during deployment.
 
-To read a value from the Systems Manager Parameter Store at synthesis time, use the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ssm.StringParameter.html#static-valuewbrfromwbrlookupscope-parametername](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ssm.StringParameter.html#static-valuewbrfromwbrlookupscope-parametername) method (Python: `value_from_lookup`). This method returns the actual value of the parameter as a [Context values and the AWS CDK](context.md) value. If the value is not already cached in `cdk.json` or passed on the command line, it is retrieved from the current AWS account. For this reason, the stack *must* be synthesized with explicit AWS environment information.
+To read a value from the Systems Manager Parameter Store at synthesis time, use the [`valueFromLookup`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ssm.StringParameter.html#static-valuewbrfromwbrlookupscope-parametername) method (Python: `value_from_lookup`). This method returns the actual value of the parameter as a [Context values and the AWS CDK](context.md) value. If the value is not already cached in `cdk.json` or passed on the command line, it is retrieved from the current AWS account. For this reason, the stack *must* be synthesized with explicit AWS environment information.
 
 The following is an example:
 
@@ -142,7 +142,7 @@ The retrieved value will end up in your synthesized AWS CloudFormation template.
 ## Write values to Systems Manager
 <a name="ssm-write"></a>
 
-You can use the AWS CLI, the AWS Management Console, or an AWS SDK to set Systems Manager parameter values. The following examples use the [https://docs.aws.amazon.com/cli/latest/reference/ssm/put-parameter.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/put-parameter.html) CLI command.
+You can use the AWS CLI, the AWS Management Console, or an AWS SDK to set Systems Manager parameter values. The following examples use the [`ssm put-parameter`](https://docs.aws.amazon.com/cli/latest/reference/ssm/put-parameter.html) CLI command.
 
 ```
 aws ssm put-parameter --name "parameter-name" --type "String" --value "parameter-value"

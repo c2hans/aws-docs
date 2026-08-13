@@ -17,17 +17,28 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **March 18, 2020** to all Linux-based platforms.<br />The **PHP** release includes security fixes. For more information, see **Platform-specific updates** in this table. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-03-27-linux.html) |
-| **Multicontainer Docker** | Updated the ECS agent to version 1.37.0. |
-| **Go** | Updated Go to release 1.14.1. For details, see [go1.14](https://golang.org/doc/devel/release.html#go1.14) in *The Go Programming Language Release History*. |
-| **Java SE**, **Tomcat** | Updated Java 8 to OpenJDK Version 1.8.0.242.b08.<br />Updated Java 7 to OpenJDK Version 1.7.0.251.<br />Updated Tomcat 8.5 to [Tomcat 8.5.51](https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.51_(markt)).<br />Updated Tomcat 7 to [Tomcat 7.0.100](https://tomcat.apache.org/tomcat-7.0-doc/changelog.html#Tomcat_7.0.100_(violetagg)). |
-| **PHP** | Updated PHP 7.3 and 7.2 to releases [7.3.15](https://www.php.net/releases/7_3_15.php) and [7.2.28](https://www.php.net/releases/7_2_28.php), respectively.<br />These versions include security fixes. |
-| **Python** | Updated Python 3.6 to [Python 3.6.10](https://docs.python.org/3.6/whatsnew/changelog.html#python-3-6-10-final). |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>March 18, 2020</b> to all Linux-based platforms.<br />The <b>PHP</b> release includes security fixes. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Multicontainer Docker</b></td><td>Updated the ECS agent to version 1.37.0.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated Go to release 1.14.1. For details, see <a href="https://golang.org/doc/devel/release.html#go1.14">go1.14</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Java SE</b>, <b>Tomcat</b></td><td>Updated Java 8 to OpenJDK Version 1.8.0.242.b08.<br />Updated Java 7 to OpenJDK Version 1.7.0.251.<br />Updated Tomcat 8.5 to <a href="https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.51_(markt)">Tomcat 8.5.51</a>.<br />Updated Tomcat 7 to <a href="https://tomcat.apache.org/tomcat-7.0-doc/changelog.html#Tomcat_7.0.100_(violetagg)">Tomcat 7.0.100</a>.</td></tr>
+  <tr><td><b>PHP</b></td><td>Updated PHP 7.3 and 7.2 to releases <a href="https://www.php.net/releases/7_3_15.php">7.3.15</a> and <a href="https://www.php.net/releases/7_2_28.php">7.2.28</a>, respectively.<br />These versions include security fixes.</td></tr>
+  <tr><td><b>Python</b></td><td>Updated Python 3.6 to <a href="https://docs.python.org/3.6/whatsnew/changelog.html#python-3-6-10-final">Python 3.6.10</a>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2020-03-27-linux.platforms"></a>

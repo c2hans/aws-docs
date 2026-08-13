@@ -89,10 +89,10 @@ async function writeResponse (s3Client: S3, requestContext: GetObjectContext, tr
 }
 ```
 
-For a full list of supported headers, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_WriteGetObjectResponse.html#API_WriteGetObjectResponse_RequestSyntax](https://docs.aws.amazon.com/AmazonS3/latest/API/API_WriteGetObjectResponse.html#API_WriteGetObjectResponse_RequestSyntax) in the *Amazon Simple Storage Service API Reference*.
+For a full list of supported headers, see [`WriteGetObjectResponse`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_WriteGetObjectResponse.html#API_WriteGetObjectResponse_RequestSyntax) in the *Amazon Simple Storage Service API Reference*.
 
 **Returning metadata headers**
-You can update your Lambda function to send new header values by passing them in the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_WriteGetObjectResponse.html#API_WriteGetObjectResponse_RequestSyntax](https://docs.aws.amazon.com/AmazonS3/latest/API/API_WriteGetObjectResponse.html#API_WriteGetObjectResponse_RequestSyntax) API operation request.
+You can update your Lambda function to send new header values by passing them in the [`WriteGetObjectResponse`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_WriteGetObjectResponse.html#API_WriteGetObjectResponse_RequestSyntax) API operation request.
 
 ```
 async function writeResponse (s3Client: S3, requestContext: GetObjectContext, transformedObject: Buffer,
@@ -114,7 +114,7 @@ async function writeResponse (s3Client: S3, requestContext: GetObjectContext, tr
 ```
 
 **Returning a new status code**
-You can return a custom status code to the `GetObject` client by passing it in the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_WriteGetObjectResponse.html#API_WriteGetObjectResponse_RequestSyntax](https://docs.aws.amazon.com/AmazonS3/latest/API/API_WriteGetObjectResponse.html#API_WriteGetObjectResponse_RequestSyntax) API operation request.
+You can return a custom status code to the `GetObject` client by passing it in the [`WriteGetObjectResponse`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_WriteGetObjectResponse.html#API_WriteGetObjectResponse_RequestSyntax) API operation request.
 
 ```
 async function writeResponse (s3Client: S3, requestContext: GetObjectContext, transformedObject: Buffer,
@@ -135,7 +135,7 @@ async function writeResponse (s3Client: S3, requestContext: GetObjectContext, tr
 }
 ```
 
-For a full list of supported status codes, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_WriteGetObjectResponse.html#API_WriteGetObjectResponse_RequestSyntax](https://docs.aws.amazon.com/AmazonS3/latest/API/API_WriteGetObjectResponse.html#API_WriteGetObjectResponse_RequestSyntax) in the *Amazon Simple Storage Service API Reference*.
+For a full list of supported status codes, see [`WriteGetObjectResponse`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_WriteGetObjectResponse.html#API_WriteGetObjectResponse_RequestSyntax) in the *Amazon Simple Storage Service API Reference*.
 
 **Applying `Range` and `partNumber` parameters to the source object**
 By default, the Object Lambda Access Point created by the CloudFormation template can handle the `Range` and `partNumber` parameters. The Lambda function applies the range or part number requested to the transformed object. To do so, the function must download the whole object and run the transformation. In some cases, your transformed object ranges might map exactly to your source object ranges. This means that requesting byte range A-B on your source object and running the transformation might produce the same result as requesting the whole object, running the transformation, and returning byte range A-B on the transformed object.

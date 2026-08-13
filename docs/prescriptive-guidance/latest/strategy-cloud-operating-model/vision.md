@@ -24,7 +24,7 @@ The Vision Document includes a Mission Statement, Tenets, Drivers, and Outcomes.
 
 The *Mission Statement* for a Cloud Operating Model should be linked to the value that the cloud is expected to bring to the organization. It should reflect the business drivers, priorities, strategy, and mandate for cloud usage.
 
-[https://aws.amazon.com/blogs/enterprise-strategy/tenets-supercharging-decision-making/](https://aws.amazon.com/blogs/enterprise-strategy/tenets-supercharging-decision-making/) are principles or beliefs that help teams align and bring everyone into an agreement around critical decisions. Here are some example tenets from our engagements with customers:
+[*Tenets*](https://aws.amazon.com/blogs/enterprise-strategy/tenets-supercharging-decision-making/) are principles or beliefs that help teams align and bring everyone into an agreement around critical decisions. Here are some example tenets from our engagements with customers:
 + We prioritize the many over the few. We prioritize the delivery of services that are useful to the entire organization over those for a single department or business unit.
 + We aim for customer delight. We will create and run simple to use, highly scalable services that accelerate application teams by abstracting complexity and reducing the operational effort by minimizing handoffs.
 + We prioritize automation and self-service. We help application teams go faster by prioritizing self-service and automation over manual processes.

@@ -7,7 +7,7 @@ The AWS Marketplace API Reference was restructured. For more information about t
 # Access control for the AWS Marketplace Reporting API
 <a name="reporting-api-access-control"></a>
 
-You use the AWS Marketplace Reporting API to get the **Procurement insights** dashboard. The API supports the [https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-reporting_GetBuyerDashboard.html](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-reporting_GetBuyerDashboard.html) action.
+You use the AWS Marketplace Reporting API to get the **Procurement insights** dashboard. The API supports the [GetBuyerDashboard](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-reporting_GetBuyerDashboard.html) action.
 
 To use the API, you must first create the `AWSServiceRoleForProcurementInsightsPolicy` service-linked role. The role does the following:
 + Enables AWS Marketplace to access and describe the data for all the accounts in a buyer's organization.
@@ -23,7 +23,7 @@ In addition to the service-linked role, you must enable all features for your or
 [Tutorial: Creating and configuring an organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_tutorials_basic.html)
 [Managing the management account with AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs-manage_accounts_management.html)
 
-The `AWSServiceRoleForProcurementInsightsPolicy` must have the following IAM permissions in order to call the [https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-reporting_GetBuyerDashboard.html](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-reporting_GetBuyerDashboard.html) action, and to register and deregister delegated administrators:
+The `AWSServiceRoleForProcurementInsightsPolicy` must have the following IAM permissions in order to call the [GetBuyerDashboard](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-reporting_GetBuyerDashboard.html) action, and to register and deregister delegated administrators:
 
 ------
 #### [ JSON ]

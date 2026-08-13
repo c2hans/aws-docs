@@ -43,6 +43,7 @@ Content-type: application/json
    "linkedAccounts": [
       {
          "arn": "string",
+         "datasetId": "string",
          "eventDestinations": [
             {
                "eventDestinationArn": "string",

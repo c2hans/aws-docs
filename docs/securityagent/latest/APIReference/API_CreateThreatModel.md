@@ -24,7 +24,9 @@ Content-type: application/json
                "value": "{{string}}"
             },
             "description": "{{string}}",
+            "enableEmailMfa": {{boolean}},
             "identifier": "{{string}}",
+            "mfaForwardingAddress": "{{string}}",
             "uris": [ "{{string}}" ]
          }
       ],
@@ -45,6 +47,7 @@ Content-type: application/json
       ],
       "integratedRepositories": [
          {
+            "branch": "{{string}}",
             "integrationId": "{{string}}",
             "providerResourceId": "{{string}}"
          }
@@ -148,7 +151,9 @@ Content-type: application/json
                "value": "string"
             },
             "description": "string",
+            "enableEmailMfa": boolean,
             "identifier": "string",
+            "mfaForwardingAddress": "string",
             "uris": [ "string" ]
          }
       ],
@@ -169,6 +174,7 @@ Content-type: application/json
       ],
       "integratedRepositories": [
          {
+            "branch": "string",
             "integrationId": "string",
             "providerResourceId": "string"
          }

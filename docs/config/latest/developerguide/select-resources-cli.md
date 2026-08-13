@@ -12,7 +12,7 @@ You can use the AWS CLI to select the types of resources that you want AWS Confi
 
 Set up AWS Config to record configuration changes for all current and future supported resource types in this Region. For a list of supported resources types, see [Supported Resource Types](https://docs.aws.amazon.com/config/latest/developerguide/resource-config-reference.html).
 
-1. Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) command:
+1. Use the [`put-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) command:
 
    This command uses the `--configuration-recorder` and `---recording-group` fields.
 
@@ -57,9 +57,9 @@ Set up AWS Config to record configuration changes for all current and future sup
    }
    ```
 
-   For more information about these fields, see [http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) in the *AWS CLI Command Reference*.
+   For more information about these fields, see [`put-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) in the *AWS CLI Command Reference*.
 
-1. (Optional) To verify that your customer managed configuration recorder has the settings that you want, use the following [http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorders.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorders.html) command.
+1. (Optional) To verify that your customer managed configuration recorder has the settings that you want, use the following [`describe-configuration-recorders`](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorders.html) command.
 
    ```
    $ aws configservice describe-configuration-recorders
@@ -106,7 +106,7 @@ Set up AWS Config to record configuration changes for all current and future sup
 
 If you choose to stop recording for a resource type, the configuration items that were already recorded will remain unchanged. For a list of supported resources types, see [Supported Resource Types](https://docs.aws.amazon.com/config/latest/developerguide/resource-config-reference.html).
 
-1. Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) command:
+1. Use the [`put-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) command:
 
    This command uses the `--configuration-recorder` and `---recording-group` fields.
 
@@ -159,9 +159,9 @@ If you choose to stop recording for a resource type, the configuration items tha
    }
    ```
 
-   For more information about these fields, see [http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) in the *AWS CLI Command Reference*.
+   For more information about these fields, see [`put-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) in the *AWS CLI Command Reference*.
 
-1. (Optional) To verify that your customer managed configuration recorder has the settings that you want, use the following [http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorders.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorders.html) command.
+1. (Optional) To verify that your customer managed configuration recorder has the settings that you want, use the following [`describe-configuration-recorders`](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorders.html) command.
 
    ```
    $ aws configservice describe-configuration-recorders
@@ -212,7 +212,7 @@ Set up AWS Config to record configuration changes for only the resource types th
 
 If you choose to stop recording for a resource type, the configuration items that were already recorded will remain unchanged. For a list of supported resources types, see [Supported Resource Types](https://docs.aws.amazon.com/config/latest/developerguide/resource-config-reference.html).
 
-1. Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) command:
+1. Use the [`put-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) command:
 
    This command uses the `--configuration-recorder` and `---recording-group` fields.
 
@@ -268,9 +268,9 @@ If you choose to stop recording for a resource type, the configuration items tha
    }
    ```
 
-   For more information about these fields, see [http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) in the *AWS CLI Command Reference*.
+   For more information about these fields, see [`put-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) in the *AWS CLI Command Reference*.
 
-1. (Optional) To verify that your customer managed configuration recorder has the settings that you want, use the following [http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorders.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorders.html) command.
+1. (Optional) To verify that your customer managed configuration recorder has the settings that you want, use the following [`describe-configuration-recorders`](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorders.html) command.
 
    ```
    $ aws configservice describe-configuration-recorders

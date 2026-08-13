@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/access.cli.htm
 
 Before you can use the AWS CLI with Amazon Keyspaces, you must get an access key ID and secret access key. For more information, see [Create and configure AWS credentials for Amazon Keyspaces](access.credentials.md).
 
-For a complete listing of all the commands available for Amazon Keyspaces in the AWS CLI, see the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/keyspaces/index.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/keyspaces/index.html).
+For a complete listing of all the commands available for Amazon Keyspaces in the AWS CLI, see the [*AWS CLI Command Reference*](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/keyspaces/index.html).
 
 **Topics**
 + [Downloading and Configuring the AWS CLI](#access.cli.installcli)

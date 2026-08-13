@@ -11,7 +11,7 @@ After creating a connection, you can use the connections CLI or the CloudFormati
 + Repository link: A repository link creates an association between your connection and an external Git repository. The repository link allows Git sync to monitor and sync changes to files in a specified Git repository.
 + Sync configuration: Use the sync configuration to sync content from a Git repository to update a specified AWS resource.
 
-For more information, see the [https://docs.aws.amazon.com/codeconnections/latest/APIReference/Welcome.html](https://docs.aws.amazon.com/codeconnections/latest/APIReference/Welcome.html).
+For more information, see the [*AWS CodeConnections API Reference*](https://docs.aws.amazon.com/codeconnections/latest/APIReference/Welcome.html).
 
 For a tutorial that walks you through creating a sync configuration for an CloudFormation stack using the CloudFormation console, see [Working with CloudFormation Git sync](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/git-sync.html) in the *CloudFormation User Guide*.
 

@@ -29,7 +29,7 @@ You can use resource types or tag information to look up resources in the AWS Co
 
 You can use the AWS CLI to list resources that AWS Config has discovered.
 
-Use the **AWS Configservice [http://docs.aws.amazon.com/cli/latest/reference/configservice/list-discovered-resources.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/list-discovered-resources.html)** command:
+Use the **AWS Configservice [`list-discovered-resources`](http://docs.aws.amazon.com/cli/latest/reference/configservice/list-discovered-resources.html)** command:
 
 ```
 $ aws configservice list-discovered-resources --resource-type "AWS::EC2::Instance"
@@ -43,7 +43,7 @@ $ aws configservice list-discovered-resources --resource-type "AWS::EC2::Instanc
         }
 ```
 
-To view the configuration details of a resource that is listed in the response, use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/get-resource-config-history.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/get-resource-config-history.html) command, and specify the resource type and ID. For an example of this command and the response from AWS Config, see [Viewing Configuration History](view-manage-resource-console.md#get-config-history-cli).
+To view the configuration details of a resource that is listed in the response, use the [`get-resource-config-history`](http://docs.aws.amazon.com/cli/latest/reference/configservice/get-resource-config-history.html) command, and specify the resource type and ID. For an example of this command and the response from AWS Config, see [Viewing Configuration History](view-manage-resource-console.md#get-config-history-cli).
 
 ------
 #### [ Looking up Resources (API) ]

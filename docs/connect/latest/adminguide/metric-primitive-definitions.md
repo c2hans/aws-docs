@@ -219,7 +219,7 @@ This metric measures the total time a contact spent in a flow. It's the IVR time
 The first response time of agents on chat, indicating how quickly they engage with customers after joining the chat.
 
 **Note**
-This metric is available only for contacts analyzed by Contact Lens conversational analytics, please refer to the following metric for more clarity: [Average agent greeting time](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-metrics.html#average-greeting-time-agent-hmetric)
+This metric is available only for contacts analyzed by conversational analytics. For more information, see the following metric: [Average agent greeting time](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-metrics.html#average-greeting-time-agent-hmetric)
 
 **Metric Primitive Name:** `Agent greeting time`
 
@@ -233,7 +233,7 @@ This metric is available only for contacts analyzed by Contact Lens conversation
 The total agent interruption time while talking to a contact.
 
 **Note**
-This metric is available only for contacts analyzed by Contact Lens conversational analytics, please refer to the following metric for more clarity: [Average agent interruptions time](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-metrics.html#average-interruption-time-agent-hmetric)
+This metric is available only for contacts analyzed by conversational analytics. For more information, see the following metric: [Average agent interruptions time](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-metrics.html#average-interruption-time-agent-hmetric)
 
 **Metric Primitive Name:** `Agent interruption time`
 
@@ -247,7 +247,7 @@ This metric is available only for contacts analyzed by Contact Lens conversation
 Quantifies the frequency of agent interruptions during customer interactions.
 
 **Note**
-This metric is available only for contacts analyzed by Contact Lens conversational analytics, please refer to the following metric for more clarity: [Average agent interruptions](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-metrics.html#average-interruptions-agent-hmetric)
+This metric is available only for contacts analyzed by conversational analytics. For more information, see the following metric: [Average agent interruptions](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-metrics.html#average-interruptions-agent-hmetric)
 
 **Metric Primitive Name:** `Agent interruptions`
 
@@ -261,7 +261,7 @@ This metric is available only for contacts analyzed by Contact Lens conversation
 The time that was spent talking in a conversation by an agent.
 
 **Note**
-This metric is available only for contacts analyzed by Contact Lens conversational analytics, please refer to the following metric for more clarity: [Average agent talk time](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-metrics.html#average-talk-time-agent-hmetric)
+This metric is available only for contacts analyzed by conversational analytics. For more information, see the following metric: [Average agent talk time](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-metrics.html#average-talk-time-agent-hmetric)
 
 **Metric Primitive Name: ** `Agent talk time`
 
@@ -275,7 +275,7 @@ This metric is available only for contacts analyzed by Contact Lens conversation
 The time that was spent talking in a conversation by a customer.
 
 **Note**
-This metric is available only for contacts analyzed by Contact Lens conversational analytics, please refer to the following metric for more clarity: [Average customer talk time](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-metrics.html#average-talk-time-customer-hmetric)
+This metric is available only for contacts analyzed by conversational analytics. For more information, see the following metric: [Average customer talk time](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-metrics.html#average-talk-time-customer-hmetric)
 
 Note:
 
@@ -291,7 +291,7 @@ Note:
 This metric provides the total non-talk time in a voice conversation. Non-talk time refers to the combined duration of hold time and periods of silence exceeding 3 seconds, during which neither the agent nor the customer is engaged in conversation.
 
 **Note**
-This metric is available only for contacts analyzed by Contact Lens conversational analytics, please refer to the following metric for more clarity: [Average non-talk time](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-metrics.html#average-non-talk-time-hmetric)
+This metric is available only for contacts analyzed by conversational analytics. For more information, see the following metric: [Average non-talk time](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-metrics.html#average-non-talk-time-hmetric)
 
 **Metric Primitive Name:** `Non-talk time`
 
@@ -305,7 +305,7 @@ This metric is available only for contacts analyzed by Contact Lens conversation
 The time that was spent talking during a voice contact across either the customer or the agent.
 
 **Note**
-This metric is available only for contacts analyzed by Contact Lens conversational analytics, please refer to the following metric for more clarity: [Average talk time](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-metrics.html#average-talk-time-hmetric)
+This metric is available only for contacts analyzed by conversational analytics. For more information, see the following metric: [Average talk time](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-metrics.html#average-talk-time-hmetric)
 
 **Metric Primitive Name:** `Talk time`
 
@@ -319,7 +319,7 @@ This metric is available only for contacts analyzed by Contact Lens conversation
 The conversation duration of voice contacts with agents. Calculated by the total time from the start of the conversation until the last word spoken by either the agent or the customer.
 
 **Note**
-This metric is available only for contacts analyzed by Contact Lens conversational analytics, please refer to the following metric for more clarity: [Average conversation duration](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-metric..html#average-conversation-duration-hmetric)
+This metric is available only for contacts analyzed by conversational analytics. For more information, see the following metric: [Average conversation duration](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-metrics.html#average-conversation-duration-hmetric)
 
 **Metric Primitive Name:** `Conversation duration`
 
@@ -578,7 +578,7 @@ The turns in completed conversations for which the invoking resource (flow or fl
   - **Metric Level Filter Key:** ValidationTestType (Represented as **Contact source** in the custom metric builder) / **Metric Level Filter Key Description:** Represents the testing and simulation type. This field remains empty for non-simulated contacts. You can use this attribute in the analytics dashboard to filter out actual customer contacts or to identify whether a contact is simulated within your contact record object. / **Metric Level Filter Values:** Please refer to **connect:ValidationTestType** table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section for valid list of values.
   - **Metric Level Filter Key:** Subtype / **Metric Level Filter Key Description:** Represents the subtype of the channel used for the contact. / **Metric Level Filter Values:** Please refer to **connect:Subtype** table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section for valid list of values.
   - **Metric Level Filter Key:** User defined attribute keys / **Metric Level Filter Key Description:** Represents any user defined predefined attribute that has been enabled for analytics. / **Metric Level Filter Values:** Navigate to the [predefined attributes page](https://docs.aws.amazon.com/connect/latest/adminguide/predefined-attributes.html) for the user defined attribute to understand what values are available.
-  - **Metric Level Filter Key:** Feature / **Metric Level Filter Key Description:** Identifies if Contact Lens conversational analytics is enabled on the flow. / **Metric Level Filter Values:** Contacts analyzed by conversational analytics
+  - **Metric Level Filter Key:** Feature / **Metric Level Filter Key Description:** Identifies if conversational analytics is enabled on the flow. / **Metric Level Filter Values:** Contacts analyzed by conversational analytics
   - **Metric Level Filter Key:** Is abandoned / **Metric Level Filter Key Description:** This is true when the contact was abandoned by customer while waiting in queue, false otherwise.<br />Please note if a contact was scheduled for a callback it would not be considered as abandoned. / **Metric Level Filter Values:** True or False
   - **Metric Level Filter Key:** Is resulted in callback / **Metric Level Filter Key Description:** This is true when the contact was scheduled for a callback, false otherwise.
   - **Metric Level Filter Key:** Is handled / **Metric Level Filter Key Description:** This is true when a contact is connected to an agent, false otherwise.
@@ -714,7 +714,7 @@ The turns in completed conversations for which the invoking resource (flow or fl
   - **Top Level Filter Key:** AGENT\_HIERARCHY\_LEVEL\_ONE / **Top Level Filter Dashboard Display Name:** Agent hierarchy level one
   - **Top Level Filter Key:** CHANNEL / **Top Level Filter Dashboard Display Name:** Channel / **Filter Key Description:** Valid values: Voice, Chat, Task, Email
   - **Top Level Filter Key:** QUEUE / **Top Level Filter Dashboard Display Name:** Queue / **Filter Key Description:** Valid inputs to this key are Queue ARNs
-  - **Top Level Filter Key:** Q\_CONNECT\_ENABLED / **Top Level Filter Dashboard Display Name:** Amazon Q / **Filter Key Description:** `TRUE` and `FALSE` are the only valid filter values. This filter helps identify if or not Amazon Q in Connect enabled as part of the flow.
+  - **Top Level Filter Key:** Q\_CONNECT\_ENABLED / **Top Level Filter Dashboard Display Name:** Amazon Q / **Filter Key Description:** `TRUE` and `FALSE` are the only valid filter values. This filter helps identify whether or not agent assist is enabled as part of the flow.
   - **Top Level Filter Key:** ROUTING\_PROFILE / **Top Level Filter Dashboard Display Name:** Routing profile / **Filter Key Description:** Valid input is Routing Profile ARNs. Please read below docs for more details:+  [How Amazon Connect uses routing profiles](https://docs.aws.amazon.com/connect/latest/adminguide/concepts-routing.html) <br />+  [Contact Trace Record Data Model](https://docs.aws.amazon.com/connect/latest/adminguide/ctr-data-model.html#ctr-Agent)
   - **Top Level Filter Key:** contact/segmentAttributes/connect:Subtype / **Top Level Filter Dashboard Display Name:** Subtype / **Filter Key Description:** Please refer to **connect:Subtype** table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section for valid list of values.
   - **Top Level Filter Key:** contact/segmentAttributes/connect:ValidationTestType / **Top Level Filter Dashboard Display Name:** Contact source / **Filter Key Description:** Please refer to **connect:ValidationTestType** table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section for valid list of values.

@@ -151,7 +151,7 @@ Contains a list of values defining partitions.
 Defines a non-overlapping region of a table's partitions, allowing multiple requests to be run in parallel.
 
 **Fields**
-+ `SegmentNumber` – *Required:* Number (integer), not more than None.
++ `SegmentNumber` – *Required:* Number (integer).
 
   The zero-based index number of the segment. For example, if the total number of segments is 4, `SegmentNumber` values range from 0 through 3.
 + `TotalSegments` – *Required:* Number (integer), not less than 1 or more than 10.
@@ -261,7 +261,7 @@ An object that references a schema stored in the AWS Glue Schema Registry.
 + `SchemaId` – A [SchemaId](aws-glue-api-schema-registry-api.md#aws-glue-api-schema-registry-api-SchemaId) object.
 
   A structure that contains schema identity fields. Either this or the `SchemaVersionId` has to be provided.
-+ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
++ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #42](aws-glue-api-common.md#regex_42).
 
   The unique ID assigned to a version of the schema. Either this or the `SchemaId` has to be provided.
 + `SchemaVersionNumber` – Number (long), not less than 1 or more than 100000.
@@ -631,7 +631,7 @@ Logical operators.
 + `ExcludeColumnSchema` – Boolean.
 
   When true, specifies not returning the partition column schema. Useful when you are interested only in other partition attributes such as partition values or location. This approach avoids the problem of a large response by not returning duplicate data.
-+ `TransactionId` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #44](aws-glue-api-common.md#regex_44).
++ `TransactionId` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #41](aws-glue-api-common.md#regex_41).
 
   The transaction ID at which to read the partition contents.
 + `QueryAsOfTime` – Timestamp.

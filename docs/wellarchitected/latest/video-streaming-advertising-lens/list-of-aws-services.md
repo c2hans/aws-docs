@@ -59,7 +59,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 |  [Amazon Elastic Compute Cloud (EC2)](https://aws.amazon.com/ec2/)  |
 |  [Amazon Elastic Block Store (EBS)](https://aws.amazon.com/ebs/)  |
 |  [Amazon Elastic File System (EFS)](https://aws.amazon.com/efs/)  |
-|  [https://aws.amazon.com/sagemaker/](https://aws.amazon.com/sagemaker/)  |
+|  [*Amazon SageMaker AI*](https://aws.amazon.com/sagemaker/)  |
 |  [Amazon Managed Streaming for Apache Kafka (MSK)](https://aws.amazon.com/msk/)  |
 |  [Amazon S3 Express One Zone](https://aws.amazon.com/s3/storage-classes/express-one-zone/)  |
 |  [AWS Lambda@Edge](https://aws.amazon.com/lambda/edge/)  |

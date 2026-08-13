@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 # Unsupported functionalities in Babelfish
 <a name="babelfish-compatibility.tsql.limitations-unsupported"></a>
 
-In the following table and lists, you can find functionality that isn't currently supported in Babelfish. Updates to Babelfish are included in Aurora PostgreSQL versions. For more information, see the [https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/Welcome.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/Welcome.html).
+In the following table and lists, you can find functionality that isn't currently supported in Babelfish. Updates to Babelfish are included in Aurora PostgreSQL versions. For more information, see the [*Release Notes for Aurora PostgreSQL*](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/Welcome.html).
 
 **Topics**
 + [Functionality that isn't currently supported](#babelfish-compatibility.tsql.limitations-unsupported-table)

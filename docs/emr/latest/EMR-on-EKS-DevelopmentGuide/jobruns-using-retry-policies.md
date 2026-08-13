@@ -72,7 +72,7 @@ If `maxAttempts` of the `retryPolicyConfiguration` is set to 1, it means that no
 ## Retrieving a retry policy status for a job
 <a name="retrieve-policy"></a>
 
-You can view the status of the retry attempts for a job with the [https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_ListJobRuns.html](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_ListJobRuns.html) and [https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_DescribeJobRun.html](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_DescribeJobRun.html) APIs. Once you request a job with an enabled retry policy configuration, the `ListJobRun` and `DescribeJobRun` responses will contain the status of the retry policy in the `RetryPolicyExecution` field. In addition, the `DescribeJobRun` response will contain the `RetryPolicyConfiguration` that was input in the `StartJobRun` request for the job.
+You can view the status of the retry attempts for a job with the [`ListJobRuns`](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_ListJobRuns.html) and [`DescribeJobRun`](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_DescribeJobRun.html) APIs. Once you request a job with an enabled retry policy configuration, the `ListJobRun` and `DescribeJobRun` responses will contain the status of the retry policy in the `RetryPolicyExecution` field. In addition, the `DescribeJobRun` response will contain the `RetryPolicyConfiguration` that was input in the `StartJobRun` request for the job.
 
 **Sample responses**
 

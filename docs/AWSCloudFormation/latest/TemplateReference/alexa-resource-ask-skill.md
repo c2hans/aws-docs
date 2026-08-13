@@ -70,7 +70,7 @@ The vendor ID associated with the Amazon developer account that will host the sk
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the skill ID, such as amzn1.ask.skill.a3103cee-c48c-40a0-a2c9-251141888863.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="alexa-resource-ask-skill-return-values-fn--getatt"></a>

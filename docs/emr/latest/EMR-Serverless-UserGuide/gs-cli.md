@@ -10,7 +10,7 @@ Get started with EMR Serverless from the AWS CLI with commands to create an appl
 ## Step 1: Create an EMR Serverless application
 <a name="gs-application-cli"></a>
 
-Use the [https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_CreateApplication.html](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_CreateApplication.html) command to create your first EMR Serverless application. You need to specify the application type and the the Amazon EMR release label associated with the application version you want to use. The name of the application is optional.
+Use the [`emr-serverless create-application`](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_CreateApplication.html) command to create your first EMR Serverless application. You need to specify the application type and the the Amazon EMR release label associated with the application version you want to use. The name of the application is optional.
 
 ------
 #### [ Spark ]
@@ -40,7 +40,7 @@ aws emr-serverless create-application \
 
 Note the application ID returned in the output. You'll use the ID to start the application and during job submission, referred to after this as the `{{application-id}}`.
 
-Before you move on to [Step 2: Submit a job run to your EMR Serverless application](#gs-job-run-cli), make sure that your application has reached the `CREATED` state with the [https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_GetApplication.html](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_GetApplication.html) API.
+Before you move on to [Step 2: Submit a job run to your EMR Serverless application](#gs-job-run-cli), make sure that your application has reached the `CREATED` state with the [`get-application`](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_GetApplication.html) API.
 
 ```
 aws emr-serverless get-application \

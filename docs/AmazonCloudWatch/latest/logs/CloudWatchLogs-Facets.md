@@ -59,7 +59,7 @@ To get started with facets in CloudWatch Logs Insights:
 ## Facet Management using APIs
 <a name="CloudWatchLogs-Facets-Management"></a>
 
-Facet management can be done using the field index policy. See [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_FieldIndex.html](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_FieldIndex.html) APIs for details.
+Facet management can be done using the field index policy. See [`field index`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_FieldIndex.html) APIs for details.
 
 **Field Index APIs**
 

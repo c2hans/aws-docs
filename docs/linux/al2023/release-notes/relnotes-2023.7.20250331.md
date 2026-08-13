@@ -382,8 +382,8 @@ New packages in AL2023.7.20250331:
 
 The full comparison of RPM package versions is below.
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
+- ** [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
+  - **RPM:**  [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.6.20250317 version:** 2.1.0-1.amzn2023
   - **AL2023.7.20250331 version:** 2.2.1-1.amzn2023
@@ -411,8 +411,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.6.20250317 version:** 1.4.0-0.amzn2023
   - **AL2023.7.20250331 version:** 1.4.2-0.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  / **Architectures:** aarch64, x86\_64
+- ** [`binutils`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) **
+  - **RPM:**  [`binutils`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  binutils-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  binutils-gprofng  / **Architectures:** aarch64, x86\_64
   - **AL2023.6.20250317 version:** 2.39-6.amzn2023.0.11
@@ -463,8 +463,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.6.20250317 version:** 1.22-1.amzn2023.0.2
   - **AL2023.7.20250331 version:** 1.29-1.amzn2023.0.2
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
+- ** [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
+  - **RPM:**  [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.6.20250317 version:** 1.91.0-1.amzn2023
   - **AL2023.7.20250331 version:** 1.91.2-1.amzn2023
@@ -475,9 +475,9 @@ The full comparison of RPM package versions is below.
   - **AL2023.6.20250317 version:** 128.7.0-1.amzn2023.0.2
   - **AL2023.7.20250331 version:** 128.8.0-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) **
+- ** [`gcc`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) **
   - **RPM:**  cpp  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`gcc`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gcc-c\+\+  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gcc-gdb-plugin  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gcc-gfortran  / **Architectures:** aarch64, x86\_64
@@ -538,8 +538,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.6.20250317 version:** 3.8.0-381.amzn2023.0.7
   - **AL2023.7.20250331 version:** 3.8.3-6.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:** aarch64, x86\_64
+- ** [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
+  - **RPM:**  [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  golang-bin  / **Architectures:** aarch64, x86\_64
   - **RPM:**  golang-docs  / **Architectures:** noarch
   - **RPM:**  golang-misc  / **Architectures:** noarch
@@ -764,8 +764,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.6.20250317 version:** 1.92-2.amzn2023.0.2
   - **AL2023.7.20250331 version:** 1.94-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
+- ** [`php8.1`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
+  - **RPM:**  [`php8.1`](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.1-bcmath  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.1-cli  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.1-common  / **Architectures:** aarch64, x86\_64
@@ -796,8 +796,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.6.20250317 version:** 8.1.31-1.amzn2023.0.1
   - **AL2023.7.20250331 version:** 8.1.32-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
+- ** [`php8.3`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
+  - **RPM:**  [`php8.3`](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.3-bcmath  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.3-cli  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.3-common  / **Architectures:** aarch64, x86\_64
@@ -870,8 +870,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.6.20250317 version:** 16.8-1.amzn2023.0.1
   - **AL2023.7.20250331 version:** 16.8-1.amzn2023.0.2
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  / **Architectures:** aarch64, x86\_64
+- ** [`python3.11`](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
+  - **RPM:**  [`python3.11`](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.11-debug  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.11-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.11-idle  / **Architectures:** aarch64, x86\_64
@@ -887,7 +887,7 @@ The full comparison of RPM package versions is below.
   - **AL2023.6.20250317 version:** 22.3.1-2.amzn2023.0.5
   - **AL2023.7.20250331 version:** 22.3.1-2.amzn2023.0.6
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
+- ** [`python3.9`](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
   - **RPM:**  python3  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3-debug  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3-devel  / **Architectures:** aarch64, x86\_64
@@ -938,10 +938,10 @@ The full comparison of RPM package versions is below.
   - **AL2023.6.20250317 version:** 1.6.0-1.amzn2023.0.1
   - **AL2023.7.20250331 version:** 1.7.1-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/rust.html](https://docs.aws.amazon.com/linux/al2023/ug/rust.html) **
+- ** [`rust`](https://docs.aws.amazon.com/linux/al2023/ug/rust.html) **
   - **RPM:**  cargo  / **Architectures:** aarch64, x86\_64
   - **RPM:**  clippy  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/rust.html](https://docs.aws.amazon.com/linux/al2023/ug/rust.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`rust`](https://docs.aws.amazon.com/linux/al2023/ug/rust.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  rust-analyzer  / **Architectures:** aarch64, x86\_64
   - **RPM:**  rust-debugger-common  / **Architectures:** noarch
   - **RPM:**  rust-doc  / **Architectures:** aarch64, x86\_64

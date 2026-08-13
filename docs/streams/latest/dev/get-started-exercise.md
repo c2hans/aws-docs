@@ -566,7 +566,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_CreateApplication.html](https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_CreateApplication.html) action with the preceding request to create the application:
+1. Execute the [`CreateApplication`](https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_CreateApplication.html) action with the preceding request to create the application:
 
    ```
    aws kinesisanalyticsv2 create-application --cli-input-json file://create_request.json
@@ -577,7 +577,7 @@ The application is now created. You start the application in the next step.
 #### Start the Application
 <a name="get-started-exercise-7-cli-start"></a>
 
-In this section, you use the [https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StartApplication.html](https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StartApplication.html) action to start the application.
+In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StartApplication.html) action to start the application.
 
 **To start the application**
 
@@ -594,7 +594,7 @@ In this section, you use the [https://docs.aws.amazon.com/kinesisanalytics/lates
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StartApplication.html](https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StartApplication.html) action with the preceding request to start the application:
+1. Execute the [`StartApplication`](https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StartApplication.html) action with the preceding request to start the application:
 
    ```
    aws kinesisanalyticsv2 start-application --cli-input-json file://start_request.json
@@ -605,7 +605,7 @@ The application is now running. You can check the Managed Service for Apache Fli
 #### Stop the Application
 <a name="get-started-exercise-7-cli-stop"></a>
 
-In this section, you use the [https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StopApplication.html](https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StopApplication.html) action to stop the application.
+In this section, you use the [`StopApplication`](https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StopApplication.html) action to stop the application.
 
 **To stop the application**
 
@@ -616,7 +616,7 @@ In this section, you use the [https://docs.aws.amazon.com/kinesisanalytics/lates
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StopApplication.html](https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StopApplication.html) action with the following request to stop the application:
+1. Execute the [`StopApplication`](https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StopApplication.html) action with the following request to stop the application:
 
    ```
    aws kinesisanalyticsv2 stop-application --cli-input-json file://stop_request.json

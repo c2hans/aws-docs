@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/neptune-export.
 # External `neptune-export` tool
 <a name="neptune-export"></a>
 
-The open-source [https://github.com/aws/neptune-export](https://github.com/aws/neptune-export) tool is a separate application from Neptune. Unlike native export (which runs within the Neptune engine), `neptune-export` is external tooling that you deploy and operate yourself. Use it when you need output formats not yet supported by native export, such as CSV or property graph data.
+The open-source [`neptune-export`](https://github.com/aws/neptune-export) tool is a separate application from Neptune. Unlike native export (which runs within the Neptune engine), `neptune-export` is external tooling that you deploy and operate yourself. Use it when you need output formats not yet supported by native export, such as CSV or property graph data.
 
 You can use `neptune-export` in two different ways:
 + **As the [Neptune-Export service](export-service.md)**.   When you export data from Neptune using the Neptune-Export service, you trigger and monitor export jobs through a REST API.

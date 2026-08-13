@@ -15,7 +15,7 @@ The following policy grants the permissions needed to run the DataBrew console. 
 
 **To define the AwsGlueDataBrewCustomUserPolicy IAM policy for DataBrew (console)**
 
-1. Download the JSON for the [samples/AwsGlueDataBrewCustomUserPolicy.json.zip](samples/AwsGlueDataBrewCustomUserPolicy.json.zip) IAM policy.
+1. Download the JSON for the [`AwsGlueDataBrewCustomUserPolicy`](samples/AwsGlueDataBrewCustomUserPolicy.json.zip) IAM policy.
 
 1. Sign in to the AWS Management Console and open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
@@ -33,7 +33,7 @@ The following policy grants the permissions needed to run the DataBrew console. 
 
 **To define the AwsGlueDataBrewCustomUserPolicy IAM policy for DataBrew (AWS CLI)**
 
-1. Download the JSON for the [samples/AwsGlueDataBrewCustomUserPolicy.json.zip](samples/AwsGlueDataBrewCustomUserPolicy.json.zip) IAM policy.
+1. Download the JSON for the [`AwsGlueDataBrewCustomUserPolicy`](samples/AwsGlueDataBrewCustomUserPolicy.json.zip) IAM policy.
 
 1. Customize the policy as described in the first step of the previous procedure.
 

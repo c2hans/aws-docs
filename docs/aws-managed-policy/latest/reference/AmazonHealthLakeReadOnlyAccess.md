@@ -18,13 +18,13 @@ You can attach `AmazonHealthLakeReadOnlyAccess` to your users, groups, and roles
 <a name="AmazonHealthLakeReadOnlyAccess-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: February 17, 2021, 02:43 UTC
-+ **Edited time:** February 17, 2021, 02:43 UTC
++ **Edited time:** August 04, 2026, 21:12 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AmazonHealthLakeReadOnlyAccess`
 
 ## Policy version
 <a name="AmazonHealthLakeReadOnlyAccess-version"></a>
 
-**Policy version:** v1 (default)
+**Policy version:** v2 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -36,6 +36,7 @@ The policy's default version is the version that defines the permissions for the
   "Version" : "2012-10-17",
   "Statement" : [
     {
+      "Effect" : "Allow",
       "Action" : [
         "healthlake:ListFHIRDatastores",
         "healthlake:DescribeFHIRDatastore",
@@ -44,9 +45,14 @@ The policy's default version is the version that defines the permissions for the
         "healthlake:GetCapabilities",
         "healthlake:ReadResource",
         "healthlake:SearchWithGet",
-        "healthlake:SearchWithPost"
+        "healthlake:SearchWithPost",
+        "healthlake:GetDataTransformationProfile",
+        "healthlake:ListDataTransformationProfiles",
+        "healthlake:ListDataTransformationProfileVersions",
+        "healthlake:DescribeDataTransformationJob",
+        "healthlake:ListDataTransformationJobs",
+        "healthlake:ValidateSource"
       ],
-      "Effect" : "Allow",
       "Resource" : "*"
     }
   ]

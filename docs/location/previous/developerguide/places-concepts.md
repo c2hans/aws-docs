@@ -39,14 +39,14 @@ The following shows you how to create and use place index resources:
 ## Geocoding concepts
 <a name="geocoding-concepts"></a>
 
-An Amazon Location place index provides an action called [https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForText.html](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForText.html) that allows you to specify text to search. For example, you can search for:
+An Amazon Location place index provides an action called [`SearchPlaceIndexForText`](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForText.html) that allows you to specify text to search. For example, you can search for:
 + **Places** – a search for **Paris** could return the location of the city in France.
 + **Businesses** – a search for **coffee shop** could return a list of coffee shops, including their names and locations. You can also specify a location to search around or a bounding box to search within, to make the results more relevant. In this case, providing a location in downtown Seattle, Washington, would return coffee shops in that area.
 + **Addresses** – a search for **1600 Pennsylvania Ave, Washington D.C.** could return the location of the White House in the United States (which is at that address).
 
 Searching for text in this way is generally referred to as **geocoding**, which involves finding a geographic location for the address or place.
 
-Amazon Location Service also provides a **reverse geocoding** action called [https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForPosition.html](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForPosition.html). This takes a geographic location and returns the address, business, or other information about what is at that location.
+Amazon Location Service also provides a **reverse geocoding** action called [`SearchPlaceIndexForPosition`](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForPosition.html). This takes a geographic location and returns the address, business, or other information about what is at that location.
 
 ## Search results
 <a name="search-results-concepts"></a>
@@ -70,7 +70,7 @@ In an interactive application, you can use relevance to help decide whether to a
 ## Address results
 <a name="address-concepts"></a>
 
-You can search for addresses with Amazon Location Service using the same [https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForText.html](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForText.html) action. The more information that you provide, the more likely the address returned will match the one given. For example, **123 Main St** is less likely to find a correct result than **123 Main St, Anytown, California, 90210**.
+You can search for addresses with Amazon Location Service using the same [`SearchPlaceIndexForText`](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForText.html) action. The more information that you provide, the more likely the address returned will match the one given. For example, **123 Main St** is less likely to find a correct result than **123 Main St, Anytown, California, 90210**.
 
 Addresses have multiple attributes, such as the street number, street, city, region, and postal code, etc. Those attributes are used to find an address in the place index that matches as many aspects as possible. The more attributes found, the more relevant the match is considered, and the more likely it will be returned.
 

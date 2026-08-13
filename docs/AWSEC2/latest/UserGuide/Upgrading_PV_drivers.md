@@ -34,7 +34,7 @@ If your instance is a domain controller, see [Upgrade a domain controller (AWS P
 
 1. We recommend that you create a backup in case you need to roll back your changes.
 **Tip**
-Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
+Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [AWS-CreateImage](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
 
    1. When you stop an instance, the data on any instance store volumes is erased. Before you stop an instance, verify that you've copied any data that you need from your instance store volumes to persistent storage, such as Amazon EBS or Amazon S3.
 
@@ -88,7 +88,7 @@ If your instance is a domain controller, see [Upgrade a domain controller (AWS P
 
 1. We recommend that you create a backup in case you need to roll back your changes.
 **Tip**
-Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
+Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [AWS-CreateImage](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
 
    1. When you stop an instance, the data on any instance store volumes is erased. Before you stop an instance, verify that you've copied any data that you need from your instance store volumes to persistent storage, such as Amazon EBS or Amazon S3.
 
@@ -209,7 +209,7 @@ Before you start upgrading your Red Hat drivers to Citrix PV drivers, make sure 
   Windows PowerShell 3.0 is bundled in the Windows Management Framework (WMF) version 3.0 install package. If you need to install Windows PowerShell 3.0, see [Windows Management Framework 3.0](https://www.microsoft.com/en-us/download/details.aspx?id=34595) in the Microsoft Download Center.
 + Back up your important information on the instance, or create an AMI from the instance. For more information about creating an AMI, see [Create an Amazon EBS-backed AMI](creating-an-ami-ebs.md).
 **Tip**
-Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
+Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [AWS-CreateImage](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
 
   If you create an AMI, make sure that you do the following:
   + Write down your password.
@@ -260,7 +260,7 @@ For Windows Server 2008 R2 and later, we recommend you upgrade to AWS PV drivers
 Before you start upgrading your drivers, make sure you back up your important information on the instance, or create an AMI from the instance. For more information about creating an AMI, see [Create an Amazon EBS-backed AMI](creating-an-ami-ebs.md).
 
 **Tip**
-Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
+Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [AWS-CreateImage](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
 
 If you create an AMI, make sure you do the following:
 + Do not enable the Sysprep tool in the EC2Config service.

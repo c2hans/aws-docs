@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/ebs-fis-pause-io.ht
 
 Use AWS Fault Injection Service and the Pause I/O action to temporarily stop I/O between an Amazon EBS volume and the instances to which it is attached to test how your workloads handle I/O interruptions.
 
-For more information about AWS FIS, see the [https://docs.aws.amazon.com/fis/latest/userguide/what-is.html](https://docs.aws.amazon.com/fis/latest/userguide/what-is.html).
+For more information about AWS FIS, see the [*AWS Fault Injection Service User Guide*](https://docs.aws.amazon.com/fis/latest/userguide/what-is.html).
 
 **Considerations**
 

@@ -9,5 +9,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::Cassandra::Keyspace](aws-resource-cassandra-keyspace.md)
++ [AWS::Cassandra::Stream](aws-resource-cassandra-stream.md)
 + [AWS::Cassandra::Table](aws-resource-cassandra-table.md)
 + [AWS::Cassandra::Type](aws-resource-cassandra-type.md)

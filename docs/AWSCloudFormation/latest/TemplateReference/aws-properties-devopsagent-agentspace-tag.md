@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DevOpsAgent::AgentSpace Tag
 <a name="aws-properties-devopsagent-agentspace-tag"></a>
 
-<a name="aws-properties-devopsagent-agentspace-tag-description"></a>The `Tag` property type specifies Property description not available. for an [AWS::DevOpsAgent::AgentSpace](aws-resource-devopsagent-agentspace.md).
+A key-value pair to associate with the Agent Space.
 
 ## Syntax
 <a name="aws-properties-devopsagent-agentspace-tag-syntax"></a>
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-agentspace-tag-properties"></a>
 
 `Key`  <a name="cfn-devopsagent-agentspace-tag-key"></a>
-Property description not available.
+The key name of the tag.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`
@@ -44,7 +44,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Value`  <a name="cfn-devopsagent-agentspace-tag-value"></a>
-Property description not available.
+The value for the tag.
 *Required*: Yes
 *Type*: String
 *Minimum*: `0`

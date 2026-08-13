@@ -499,7 +499,7 @@ Select your task type in the following table to see example requests for Amazon 
 ------
 #### [ Amazon Textract – Key-value pair extraction ]
 
-The following example uses the AWS SDK for Python (Boto3) to call `analyze_document` in us-west-2. Replace the italicized red text with your resources. Include the [https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_HumanLoopDataAttributes.html](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_HumanLoopDataAttributes.html) parameter if you are using the Amazon Mechanical Turk workforce. For more information, see the [analyze\_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.analyze_document) documention in the *AWS SDK for Python (Boto) API Reference*.
+The following example uses the AWS SDK for Python (Boto3) to call `analyze_document` in us-west-2. Replace the italicized red text with your resources. Include the [`DataAttributes`](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_HumanLoopDataAttributes.html) parameter if you are using the Amazon Mechanical Turk workforce. For more information, see the [analyze\_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.analyze_document) documention in the *AWS SDK for Python (Boto) API Reference*.
 
 ```
    response = client.analyze_document(
@@ -513,7 +513,7 @@ The following example uses the AWS SDK for Python (Boto3) to call `analyze_docum
     )
 ```
 
-Human loops are only created if Amazon Textract's confidence for document analysis task meets the activation conditions you specified in your human review workflow. You can check the `response` element to determine if a human loop has been created. To see everything included in this response, see [https://docs.aws.amazon.com/textract/latest/dg/API_HumanLoopActivationOutput.html](https://docs.aws.amazon.com/textract/latest/dg/API_HumanLoopActivationOutput.html).
+Human loops are only created if Amazon Textract's confidence for document analysis task meets the activation conditions you specified in your human review workflow. You can check the `response` element to determine if a human loop has been created. To see everything included in this response, see [`HumanLoopActivationOutput`](https://docs.aws.amazon.com/textract/latest/dg/API_HumanLoopActivationOutput.html).
 
 ```
     if "HumanLoopArn" in analyzeDocumentResponse["HumanLoopActivationOutput"]:
@@ -524,7 +524,7 @@ Human loops are only created if Amazon Textract's confidence for document analys
 ------
 #### [ Amazon Rekognition – Image moderation ]
 
-The following example uses the AWS SDK for Python (Boto3) to call `detect_moderation_labels` in us-west-2. Replace the italicized red text with your resources. Include the [https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_HumanLoopDataAttributes.html](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_HumanLoopDataAttributes.html) parameter if you are using the Amazon Mechanical Turk workforce. For more information, see the [detect\_moderation\_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_moderation_labels) documention in the *AWS SDK for Python (Boto) API Reference*.
+The following example uses the AWS SDK for Python (Boto3) to call `detect_moderation_labels` in us-west-2. Replace the italicized red text with your resources. Include the [`DataAttributes`](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_HumanLoopDataAttributes.html) parameter if you are using the Amazon Mechanical Turk workforce. For more information, see the [detect\_moderation\_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_moderation_labels) documention in the *AWS SDK for Python (Boto) API Reference*.
 
 ```
    response = client.detect_moderation_labels(
@@ -537,7 +537,7 @@ The following example uses the AWS SDK for Python (Boto3) to call `detect_modera
     )
 ```
 
-Human loops are only created if Amazon Rekognition's confidence for an image moderation task meets the activation conditions you specified in your human review workflow. You can check the `response` element to determine if a human loop has been created. To see everything included in this response, see [https://docs.aws.amazon.com/rekognition/latest/dg/API_HumanLoopActivationOutput.html](https://docs.aws.amazon.com/rekognition/latest/dg/API_HumanLoopActivationOutput.html).
+Human loops are only created if Amazon Rekognition's confidence for an image moderation task meets the activation conditions you specified in your human review workflow. You can check the `response` element to determine if a human loop has been created. To see everything included in this response, see [`HumanLoopActivationOutput`](https://docs.aws.amazon.com/rekognition/latest/dg/API_HumanLoopActivationOutput.html).
 
 ```
     if "HumanLoopArn" in response["HumanLoopActivationOutput"]:
@@ -548,7 +548,7 @@ Human loops are only created if Amazon Rekognition's confidence for an image mod
 ------
 #### [ Custom Integration ]
 
-The following example uses the AWS SDK for Python (Boto3) to call `start_human_loop` in us-west-2. Replace the italicized red text with your resources. Include the [https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_HumanLoopDataAttributes.html](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_HumanLoopDataAttributes.html) parameter if you are using the Amazon Mechanical Turk workforce. For more information, see the [start\_human\_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.start_human_loop) documention in the *AWS SDK for Python (Boto) API Reference*.
+The following example uses the AWS SDK for Python (Boto3) to call `start_human_loop` in us-west-2. Replace the italicized red text with your resources. Include the [`DataAttributes`](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_HumanLoopDataAttributes.html) parameter if you are using the Amazon Mechanical Turk workforce. For more information, see the [start\_human\_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.start_human_loop) documention in the *AWS SDK for Python (Boto) API Reference*.
 
 ```
    response = client.start_human_loop(

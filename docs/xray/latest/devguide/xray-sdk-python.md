@@ -35,7 +35,7 @@ Next, use the X-Ray SDK for Python to instrument downstream calls by [patching y
 + `[pynamodb](https://pypi.python.org/pypi/pynamodb/)` – Instrument PynamoDB's version of the Amazon DynamoDB client.
 + `[aiobotocore](https://pypi.python.org/pypi/aiobotocore)`, `[aioboto3](https://pypi.python.org/pypi/aioboto3)` – Instrument [asyncio](https://docs.python.org/3/library/asyncio.html)-integrated versions of SDK for Python clients.
 + `[requests](https://pypi.python.org/pypi/requests)`, `[aiohttp](https://pypi.python.org/pypi/aiohttp)` – Instrument high-level HTTP clients.
-+ `[httplib](https://docs.python.org/2/library/httplib.html)`, [https://docs.python.org/3/library/http.client.html](https://docs.python.org/3/library/http.client.html) – Instrument low-level HTTP clients and the higher level libraries that use them.
++ `[httplib](https://docs.python.org/2/library/httplib.html)`, [`http.client`](https://docs.python.org/3/library/http.client.html) – Instrument low-level HTTP clients and the higher level libraries that use them.
 + `[sqlite3](https://docs.python.org/3/library/sqlite3.html)` – Instrument SQLite clients.
 + `[mysql-connector-python](https://pypi.python.org/pypi/mysql-connector-python)` – Instrument MySQL clients.
 + `[pg8000](https://pypi.org/project/pg8000/)` – Instrument Pure-Python PostgreSQL interface.

@@ -23,11 +23,11 @@ Running this sample might result in charges to your AWS account. These include p
 ## Run the 'Publish Docker image to Amazon ECR' sample
 <a name="sample-docker-running"></a>
 
-Use the following procedure to run the sample that publishes a Docker image to Amazon ECR. For more infomration about this sample, see ['Publish Docker image to an Amazon ECR image repository' sample for CodeBuild](#sample-docker).
+Use the following procedure to run the sample that publishes a Docker image to Amazon ECR. For more information about this sample, see ['Publish Docker image to an Amazon ECR image repository' sample for CodeBuild](#sample-docker).
 
 **To run this sample**
 
-1. If you already have an image repository in Amazon ECR you want to use, skip to step 3. Otherwise, if you are using an user instead of an AWS root account or an administrator user to work with Amazon ECR, add this statement (between {{\#\#\# BEGIN ADDING STATEMENT HERE \#\#\#}} and {{\#\#\# END ADDING STATEMENT HERE \#\#\#}}) to the user (or IAM group the user is associated with). Using an AWS root account is not recommended.This statement allows the creation of Amazon ECR repositories for storing Docker images. Ellipses (`...`) are used for brevity and to help you locate where to add the statement. Do not remove any statements, and do not type these ellipses into the policy. For more information, see [Working with inline policies using the AWS Management Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_inline-using.html#AddingPermissions_Console) in the *user Guide*.
+1. If you already have an image repository in Amazon ECR you want to use, skip to step 3. Otherwise, if you are using a user instead of an AWS root account or an administrator user to work with Amazon ECR, add this statement (between {{\#\#\# BEGIN ADDING STATEMENT HERE \#\#\#}} and {{\#\#\# END ADDING STATEMENT HERE \#\#\#}}) to the user (or IAM group the user is associated with). Using an AWS root account is not recommended. This statement allows the creation of Amazon ECR repositories for storing Docker images. Ellipses (`...`) are used for brevity and to help you locate where to add the statement. Do not remove any statements, and do not type these ellipses into the policy. For more information, see [Working with inline policies using the AWS Management Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_inline-using.html#AddingPermissions_Console) in the *user Guide*.
 
 ------
 #### [ JSON ]

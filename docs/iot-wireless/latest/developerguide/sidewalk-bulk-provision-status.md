@@ -25,15 +25,15 @@ In the [Sidewalk devices hub](https://console.aws.amazon.com/iot/home#/wireless/
 To view the device onboarding status, use any of the following AWS IoT Wireless API operations or the corresponding AWS CLI command. .
   +
 
-**[https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListWirelessDeviceImportTasks.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListWirelessDeviceImportTasks.html) API or [https://docs.aws.amazon.com/cli/latest/reference/list-wireless-device-import-tasks.html](https://docs.aws.amazon.com/cli/latest/reference/list-wireless-device-import-tasks.html) CLI**
+**[`ListWirelessDeviceImportTasks`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListWirelessDeviceImportTasks.html) API or [`list-wireless-device-import-tasks`](https://docs.aws.amazon.com/cli/latest/reference/list-wireless-device-import-tasks.html) CLI**
 This API operation returns information about all the import tasks that have been added to your account for AWS IoT Wireless and their status. It also returns a count of the summary of onboarding status of Sidewalk devices in these tasks.
   +
 
-**[https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDevicesForWirelessDeviceImportTask.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDevicesForWirelessDeviceImportTask.html) API or [https://docs.aws.amazon.com/cli/latest/reference/list-devices-for-wireless-device-import-task.html](https://docs.aws.amazon.com/cli/latest/reference/list-devices-for-wireless-device-import-task.html) CLI**
+**[`ListDevicesForWirelessDeviceImportTask`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDevicesForWirelessDeviceImportTask.html) API or [`list-devices-for-wireless-device-import-task`](https://docs.aws.amazon.com/cli/latest/reference/list-devices-for-wireless-device-import-task.html) CLI**
 This API operation returns information about the specified import task and its status, and information about all Sidewalk devices that have been added to the import task and their onboarding status information.
   +
 
-**[https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDeviceImportTask.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDeviceImportTask.html) API or [https://docs.aws.amazon.com/cli/latest/reference/get-wireless-device-import-task.html](https://docs.aws.amazon.com/cli/latest/reference/get-wireless-device-import-task.html) CLI**
+**[`GetWirelessDeviceImportTask`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDeviceImportTask.html) API or [`get-wireless-device-import-task`](https://docs.aws.amazon.com/cli/latest/reference/get-wireless-device-import-task.html) CLI**
 This API operation returns information about the specified import task and its status, and a count of the summary of onboarding status of Sidewalk devices in that task.
 
 ## Import task status

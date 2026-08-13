@@ -52,8 +52,8 @@ You can use either the AWS License Manager console or the AWS CLI to distribute 
 You can use the AWS CLI to distribute an entitlement. You must use specify an organization ID or OU in ARN format when using the AWS License Manager API.
 
 **To create and list your grants using the AWS CLI:**
-+ [https://docs.aws.amazon.com/cli/latest/reference/license-manager/create-grant.html](https://docs.aws.amazon.com/cli/latest/reference/license-manager/create-grant.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-distributed-grants.html](https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-distributed-grants.html)
++ [create-grant](https://docs.aws.amazon.com/cli/latest/reference/license-manager/create-grant.html)
++ [list-distributed-grants](https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-distributed-grants.html)
 
 ------
 

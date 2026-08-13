@@ -9,7 +9,7 @@ Connects a Kubernetes cluster to the Amazon EKS control plane.
 
 Any Kubernetes cluster can be connected to the Amazon EKS control plane to view current information about the cluster and its nodes.
 
-Cluster connection requires two steps. First, send a [https://docs.aws.amazon.com/eks/latest/APIReference/API_RegisterClusterRequest.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_RegisterClusterRequest.html) to add it to the Amazon EKS control plane.
+Cluster connection requires two steps. First, send a [`RegisterClusterRequest`](https://docs.aws.amazon.com/eks/latest/APIReference/API_RegisterClusterRequest.html) to add it to the Amazon EKS control plane.
 
 Second, a [Manifest](https://amazon-eks.s3.us-west-2.amazonaws.com/eks-connector/manifests/eks-connector/latest/eks-connector.yaml) containing the `activationID` and `activationCode` must be applied to the Kubernetes cluster through it's native provider to provide visibility.
 
@@ -129,6 +129,18 @@ Content-type: application/json
             "issuer": "string"
          }
       },
+      "kubeApiServerConfig": {
+         "eventTtl": "string",
+         "serviceNodePortRange": {
+            "maxPort": number,
+            "minPort": number
+         }
+      },
+      "kubeControllerManagerConfig": {
+         "horizontalPodAutoscalerControllerConfig": {
+            "horizontalPodAutoscalerSyncPeriod": "string"
+         }
+      },
       "kubernetesNetworkConfig": {
          "elasticLoadBalancing": {
             "enabled": boolean
@@ -136,6 +148,19 @@ Content-type: application/json
          "ipFamily": "string",
          "serviceIpv4Cidr": "string",
          "serviceIpv6Cidr": "string"
+      },
+      "kubeSchedulerConfig": {
+         "nodeResourcesFit": {
+            "scoringStrategy": {
+               "resources": [
+                  {
+                     "name": "string",
+                     "weight": number
+                  }
+               ],
+               "type": "string"
+            }
+         }
       },
       "logging": {
          "clusterLogging": [

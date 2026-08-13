@@ -78,8 +78,8 @@ New packages in AL2023.5.20240624:
   - **RPM:**  python3-ipatests  / **Architectures:** noarch
   - **Version:** 4.12.0-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
+- ** [`php8.3`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
+  - **RPM:**  [`php8.3`](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.3-bcmath  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.3-cli  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.3-common  / **Architectures:** aarch64, x86\_64
@@ -205,8 +205,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.4.20240611 version:** 6.0.129-1.amzn2023.0.1
   - **AL2023.5.20240624 version:** 8.0.105-1.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
+- ** [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
+  - **RPM:**  [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.4.20240611 version:** 1.83.0-1.amzn2023
   - **AL2023.5.20240624 version:** 1.84.0-1.amzn2023
@@ -217,8 +217,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.4.20240611 version:** v1.27.3.0-1.amzn2023
   - **AL2023.5.20240624 version:** v1.29.5.0-1.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:** aarch64, x86\_64
+- ** [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
+  - **RPM:**  [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  golang-bin  / **Architectures:** aarch64, x86\_64
   - **RPM:**  golang-docs  / **Architectures:** noarch
   - **RPM:**  golang-misc  / **Architectures:** noarch

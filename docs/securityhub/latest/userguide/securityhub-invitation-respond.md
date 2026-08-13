@@ -43,14 +43,14 @@ Choose your preferred method, and follow the steps to accept an invitation to be
 
 **To accept a membership invitation**
 
-Invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AcceptAdministratortInvitation.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AcceptAdministratortInvitation.html) API. You must provide the invitation identifier and the AWS account ID of the administrator account. To retrieve details about the invitation, use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListInvitations.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListInvitations.html) operation.
+Invoke the [`AcceptAdministratorInvitation`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AcceptAdministratortInvitation.html) API. You must provide the invitation identifier and the AWS account ID of the administrator account. To retrieve details about the invitation, use the [`ListInvitations`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListInvitations.html) operation.
 
 ------
 #### [ AWS CLI ]
 
 **To accept a membership invitation**
 
-Run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/accept-administrator-invitation.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/accept-administrator-invitation.html) command. You must provide the invitation identifier and the AWS account ID of the administrator account. To retrieve details about the invitation, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-invitations.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-invitations.html) command.
+Run the [`accept-administrator-invitation`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/accept-administrator-invitation.html) command. You must provide the invitation identifier and the AWS account ID of the administrator account. To retrieve details about the invitation, run the [`list-invitations`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-invitations.html) command.
 
 ```
 aws securityhub accept-administrator-invitation --administrator-id {{<administratorAccountID>}} --invitation-id {{<invitationID>}}
@@ -92,14 +92,14 @@ Choose your preferred method, and follow the steps to decline an invitation to b
 
 **To decline a membership invitation**
 
-Invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeclineInvitations.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeclineInvitations.html) API. You must provide the AWS account ID of the administrator account that issued the invitation. To view information about your invitations, use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListInvitations.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListInvitations.html) operation.
+Invoke the [`DeclineInvitations`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeclineInvitations.html) API. You must provide the AWS account ID of the administrator account that issued the invitation. To view information about your invitations, use the [`ListInvitations`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListInvitations.html) operation.
 
 ------
 #### [ AWS CLI ]
 
 **To decline a membership invitation**
 
-Run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/decline-invitations.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/decline-invitations.html) command. You must provide the AWS account ID of the administrator account that issued the invitation. To view information about your invitations, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-invitations.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-invitations.html) command.
+Run the [`decline-invitations`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/decline-invitations.html) command. You must provide the AWS account ID of the administrator account that issued the invitation. To view information about your invitations, run the [`list-invitations`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-invitations.html) command.
 
 ```
 aws securityhub decline-invitations --account-ids "{{<administratorAccountId>}}"

@@ -14,7 +14,7 @@ This tutorial shows how to create and configure a pipeline to build your serverl
 
 **Important**
 Many of the actions you add to your pipeline in this procedure involve AWS resources that you need to create before you create the pipeline. AWS resources for your source actions must always be created in the same AWS Region where you create your pipeline. For example, if you create your pipeline in the US East (Ohio) Region, your CodeCommit repository must be in the US East (Ohio) Region.
-You can add cross-region actions when you create your pipeline. AWS resources for cross-region actions must be in the same AWS Region where you plan to execute the action. For more information, see [Add a cross-Region action in CodePipeline](actions-create-cross-region.md).
+You can add cross-region actions when you create your pipeline. AWS resources for cross-region actions must be in the same AWS Region where you plan to execute the action. For more information, see [Add a cross-region action in CodePipeline](actions-create-cross-region.md).
 
 ## Before you begin
 <a name="tutorials-serverlessrepo-auto-publish-prereq"></a>

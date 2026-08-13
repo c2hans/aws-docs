@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/accept-reject-firewall-at
 
 You can use either the Amazon VPC console or the AWS Network Firewall CLI or API to accept or reject a transit gateway network function attachment, including Network Firewall attachments. If you are the owner of a transit gateway and someone has created a firewall attachment to your transit gateway from another account, you need to accept or reject the attachment request.
 
-To accept or reject a network function attachment using the Network Firewall CLI, see the `AcceptNetworkFirewallTransitGatewayAttachment` or `RejectNetworkFirewallTransitGatewayAttachment` APIs in the [https://docs.aws.amazon.com/network-firewall/latest/APIReference/Welcome.html](https://docs.aws.amazon.com/network-firewall/latest/APIReference/Welcome.html).
+To accept or reject a network function attachment using the Network Firewall CLI, see the `AcceptNetworkFirewallTransitGatewayAttachment` or `RejectNetworkFirewallTransitGatewayAttachment` APIs in the [*AWS Network Firewall API Reference*](https://docs.aws.amazon.com/network-firewall/latest/APIReference/Welcome.html).
 
 ## Accept or reject a network function attachment using the console
 <a name="create-firewall-attachment-console"></a>

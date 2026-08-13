@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the AWS Identity and Access Manage
 
 **Resource type:** `AWS::IAM::Policy`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/iam-policy-no-statements-with-admin-access.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-policy-no-statements-with-admin-access.html)
+**AWS Config rule:** [`iam-policy-no-statements-with-admin-access`](https://docs.aws.amazon.com/config/latest/developerguide/iam-policy-no-statements-with-admin-access.html)
 
 **Schedule type:** Change triggered
 
@@ -54,7 +54,7 @@ To modify your IAM policies so that they do not allow full "\*" administrative p
 
 **Resource type:** `AWS::IAM::User`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/iam-user-no-policies-check.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-user-no-policies-check.html)
+**AWS Config rule:** [`iam-user-no-policies-check`](https://docs.aws.amazon.com/config/latest/developerguide/iam-user-no-policies-check.html)
 
 **Schedule type:** Change triggered
 
@@ -83,7 +83,7 @@ To resolve this issue, [create an IAM group](https://docs.aws.amazon.com/IAM/lat
 
 **Resource type:** `AWS::IAM::User`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/access-keys-rotated.html](https://docs.aws.amazon.com/config/latest/developerguide/access-keys-rotated.html)
+**AWS Config rule:** [`access-keys-rotated`](https://docs.aws.amazon.com/config/latest/developerguide/access-keys-rotated.html)
 
 **Schedule type:** Periodic
 
@@ -125,7 +125,7 @@ To rotate access keys that are older than 90 days, see [Rotating access keys](ht
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/iam-root-access-key-check.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-root-access-key-check.html)
+**AWS Config rule:** [`iam-root-access-key-check`](https://docs.aws.amazon.com/config/latest/developerguide/iam-root-access-key-check.html)
 
 **Schedule type:** Periodic
 
@@ -153,7 +153,7 @@ To delete the root user access key, see [Deleting access keys for the root user]
 
 **Resource type:** `AWS::IAM::User`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/mfa-enabled-for-iam-console-access.html](https://docs.aws.amazon.com/config/latest/developerguide/mfa-enabled-for-iam-console-access.html)
+**AWS Config rule:** [`mfa-enabled-for-iam-console-access`](https://docs.aws.amazon.com/config/latest/developerguide/mfa-enabled-for-iam-console-access.html)
 
 **Schedule type:** Periodic
 
@@ -184,7 +184,7 @@ To add MFA for IAM users, see [Using multi-factor authentication (MFA) in AWS](h
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/root-account-hardware-mfa-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/root-account-hardware-mfa-enabled.html)
+**AWS Config rule:** [`root-account-hardware-mfa-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/root-account-hardware-mfa-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -216,7 +216,7 @@ For information about enabling hardware MFA for the root user, see [Multi-factor
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html)
+**AWS Config rule:** [`iam-password-policy`](https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html)
 
 **Schedule type:** Periodic
 
@@ -236,7 +236,7 @@ This control checks whether the account password policy for IAM users uses stron
 
 To access the AWS Management Console, IAM users need passwords. As a best practice, Security Hub CSPM highly recommends that instead of creating IAM users, you use federation. Federation allows users to use their existing corporate credentials to log into the AWS Management Console. Use AWS IAM Identity Center (IAM Identity Center) to create or federate the user, and then assume an IAM role into an account.
 
-To learn more about identity providers and federation, see [Identity providers and federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html) in the *IAM User Guide*. To learn more about IAM Identity Center, see the [https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html).
+To learn more about identity providers and federation, see [Identity providers and federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html) in the *IAM User Guide*. To learn more about IAM Identity Center, see the [*AWS IAM Identity Center User Guide*](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html).
 
  If you need to use IAM users, Security Hub CSPM recommends that you enforce the creation of strong user passwords. You can set a password policy on your AWS account to specify complexity requirements and mandatory rotation periods for passwords. When you create or change a password policy, most of the password policy settings are enforced the next time users change their passwords. Some of the settings are enforced immediately.
 
@@ -256,7 +256,7 @@ To update your password policy, see [Setting an account password policy for IAM 
 
 **Resource type:** `AWS::IAM::User`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/iam-user-unused-credentials-check.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-user-unused-credentials-check.html)
+**AWS Config rule:** [`iam-user-unused-credentials-check`](https://docs.aws.amazon.com/config/latest/developerguide/iam-user-unused-credentials-check.html)
 
 **Schedule type:** Periodic
 
@@ -292,7 +292,7 @@ After you identify the inactive accounts or unused credentials, deactivate them.
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/root-account-mfa-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/root-account-mfa-enabled.html)
+**AWS Config rule:** [`root-account-mfa-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/root-account-mfa-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -324,7 +324,7 @@ For information about enabling MFA for the root user of an AWS account, see [Mul
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html)
+**AWS Config rule:** [`iam-password-policy`](https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html)
 
 **Schedule type:** Periodic
 
@@ -358,7 +358,7 @@ To update your password policy to use the recommended configuration, see [Settin
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html)
+**AWS Config rule:** [`iam-password-policy`](https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html)
 
 **Schedule type:** Periodic
 
@@ -384,7 +384,7 @@ To change your password policy, see [Setting an account password policy for IAM 
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html)
+**AWS Config rule:** [`iam-password-policy`](https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html)
 
 **Schedule type:** Periodic
 
@@ -408,7 +408,7 @@ To change your password policy, see [Setting an account password policy for IAM 
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html)
+**AWS Config rule:** [`iam-password-policy`](https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html)
 
 **Schedule type:** Periodic
 
@@ -434,7 +434,7 @@ To change your password policy, see [Setting an account password policy for IAM 
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html)
+**AWS Config rule:** [`iam-password-policy`](https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html)
 
 **Schedule type:** Periodic
 
@@ -460,7 +460,7 @@ To change your password policy, see [Setting an account password policy for IAM 
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html)
+**AWS Config rule:** [`iam-password-policy`](https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html)
 
 **Schedule type:** Periodic
 
@@ -486,7 +486,7 @@ To change your password policy, see [Setting an account password policy for IAM 
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html)
+**AWS Config rule:** [`iam-password-policy`](https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html)
 
 **Schedule type:** Periodic
 
@@ -514,7 +514,7 @@ To change your password policy, see [Setting an account password policy for IAM 
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html)
+**AWS Config rule:** [`iam-password-policy`](https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html)
 
 **Schedule type:** Periodic
 
@@ -544,7 +544,7 @@ To change your password policy, see [Setting an account password policy for IAM 
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/iam-policy-in-use.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-policy-in-use.html)
+**AWS Config rule:** [`iam-policy-in-use`](https://docs.aws.amazon.com/config/latest/developerguide/iam-policy-in-use.html)
 
 **Schedule type:** Periodic
 
@@ -611,7 +611,7 @@ The administrator of the specified account can grant permission to assume this r
 
 **Resource type:** `AWS::IAM::User`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/iam-user-mfa-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-user-mfa-enabled.html)
+**AWS Config rule:** [`iam-user-mfa-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/iam-user-mfa-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -770,7 +770,7 @@ Finally, create the metric filter and alarm.
 
 **Resource type:** `AWS::IAM::Policy`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/iam-policy-no-statements-with-full-access.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-policy-no-statements-with-full-access.html)
+**AWS Config rule:** [`iam-policy-no-statements-with-full-access`](https://docs.aws.amazon.com/config/latest/developerguide/iam-policy-no-statements-with-full-access.html)
 
 **Schedule type:** Change triggered
 
@@ -832,7 +832,7 @@ To remediate this issue, update your IAM policies so that they do not allow full
 
 **Resource type:** `AWS::IAM::User`
 
-**AWS Config rule: **[https://docs.aws.amazon.com/config/latest/developerguide/iam-user-unused-credentials-check.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-user-unused-credentials-check.html)
+**AWS Config rule: **[`iam-user-unused-credentials-check`](https://docs.aws.amazon.com/config/latest/developerguide/iam-user-unused-credentials-check.html)
 
 **Schedule type:** Periodic
 
@@ -844,7 +844,7 @@ Users can access AWS resources using different types of credentials, such as pas
 
 CIS recommends that you remove or deactivate all credentials that have been unused for 45 days or more. Disabling or removing unnecessary credentials reduces the window of opportunity for credentials associated with a compromised or abandoned account to be used.
 
-The AWS Config rule for this control uses the [https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetCredentialReport.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetCredentialReport.html) and [https://docs.aws.amazon.com/IAM/latest/APIReference/API_GenerateCredentialReport.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GenerateCredentialReport.html) API operations, which are only updated every four hours. Changes to IAM users can take up to four hours to be visible to this control.
+The AWS Config rule for this control uses the [`GetCredentialReport`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetCredentialReport.html) and [`GenerateCredentialReport`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GenerateCredentialReport.html) API operations, which are only updated every four hours. Changes to IAM users can take up to four hours to be visible to this control.
 
 **Note**
 AWS Config should be enabled in all Regions in which you use Security Hub CSPM. However, you can enable recording of global resources in a single Region. If you only record global resources in a single Region, then you can disable this control in all Regions except the Region where you record global resources.
@@ -887,7 +887,7 @@ Don’t add personally identifiable information (PII) or other confidential or s
 ### Remediation
 <a name="iam-23-remediation"></a>
 
-To add tags to an analyzer, see [https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_TagResource.html](https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_TagResource.html) in the *AWS IAM Access Analyzer API Reference*.
+To add tags to an analyzer, see [TagResource](https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_TagResource.html) in the *AWS IAM Access Analyzer API Reference*.
 
 ## [IAM.24] IAM roles should be tagged
 <a name="iam-24"></a>
@@ -962,7 +962,7 @@ To add tags to an IAM user, see [Tagging IAM resources](https://docs.aws.amazon.
 
 **Resource type:** `AWS::IAM::ServerCertificate`
 
-**AWS Config rule: **[https://docs.aws.amazon.com/config/latest/developerguide/iam-server-certificate-expiration-check.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-server-certificate-expiration-check.html)
+**AWS Config rule: **[`iam-server-certificate-expiration-check`](https://docs.aws.amazon.com/config/latest/developerguide/iam-server-certificate-expiration-check.html)
 
 **Schedule type:** Periodic
 
@@ -988,7 +988,7 @@ To remove a server certificate from IAM, see [Managing server certificates in IA
 
 **Resource type:** `AWS::IAM::Role`, `AWS::IAM::User`, `AWS::IAM::Group`
 
-**AWS Config rule: **[https://docs.aws.amazon.com/config/latest/developerguide/iam-policy-blacklisted-check.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-policy-blacklisted-check.html)
+**AWS Config rule: **[`iam-policy-blacklisted-check`](https://docs.aws.amazon.com/config/latest/developerguide/iam-policy-blacklisted-check.html)
 
 **Schedule type:** Change triggered
 
@@ -1015,7 +1015,7 @@ To detach the `AWSCloudShellFullAccess` policy from an IAM identity, see [Adding
 
 **Resource type:** `AWS::AccessAnalyzer::Analyzer`
 
-**AWS Config rule: **[https://docs.aws.amazon.com/config/latest/developerguide/iam-external-access-analyzer-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-external-access-analyzer-enabled.html)
+**AWS Config rule: **[`iam-external-access-analyzer-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/iam-external-access-analyzer-enabled.html)
 
 **Schedule type:** Periodic
 

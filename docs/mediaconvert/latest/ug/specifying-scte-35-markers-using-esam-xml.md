@@ -92,7 +92,7 @@ By default, MediaConvert adds a four-second preroll to the ESAM payload. This mi
        }
    ```
 
-1. For each M2TS (MPEG2 Transport Stream) output in your job, set your JSON job specification as shown in the following example. Include the property [https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-m2tssettings-scte35esam](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-m2tssettings-scte35esam). Set [https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-m2tssettings-scte35source](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-m2tssettings-scte35source) to `NONE`.
+1. For each M2TS (MPEG2 Transport Stream) output in your job, set your JSON job specification as shown in the following example. Include the property [`scte35Esam`](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-m2tssettings-scte35esam). Set [`scte35Source`](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-m2tssettings-scte35source) to `NONE`.
 
    ```
      "outputs": [
@@ -112,8 +112,8 @@ By default, MediaConvert adds a four-second preroll to the ESAM payload. This mi
    ```
 
 1. If you want to condition your HLS manifests with SCTE-35 information, for each Apple HLS output group in your job, include the following. These settings are shown in the example at the end of this step:
-   +  Set [https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-m3u8settings-scte35source](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-m3u8settings-scte35source) to `PASSTHROUGH`.
-   + Include [https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-hlsgroupsettings-admarkers](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-hlsgroupsettings-admarkers) and list one or both of `ELEMENTAL_SCTE35` or `ELEMENTAL` in an array.
+   +  Set [`scte35Source`](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-m3u8settings-scte35source) to `PASSTHROUGH`.
+   + Include [`adMarkers`](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-hlsgroupsettings-admarkers) and list one or both of `ELEMENTAL_SCTE35` or `ELEMENTAL` in an array.
 
      For sample manifests created with each setting selected, see [Sample manifest: Elemental ad markers](sample-manifest-elemental-ad-markers.md) and [Sample manifest: SCTE-35 enhanced ad markers](sample-manifest-scte-35-enhanced-ad-markers.md).
 

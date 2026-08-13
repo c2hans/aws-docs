@@ -70,7 +70,7 @@ Before you continue, confirm that you have identified the proactive controls tha
 
 **To activate a proactive control-based Hook for use in your account (AWS CLI)**
 
-1. To start activating a Hook, use the following [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/activate-type.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/activate-type.html) command, replacing the placeholders with your specific values.
+1. To start activating a Hook, use the following [activate-type](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/activate-type.html) command, replacing the placeholders with your specific values.
 
    ```
    aws cloudformation activate-type --type HOOK \
@@ -113,7 +113,7 @@ Before you continue, confirm that you have identified the proactive controls tha
    + `ControlsToApply`: Specify the control IDs of the proactive controls to use. For more information, see the [AWS Control Tower Control Catalog](https://docs.aws.amazon.com/controltower/latest/controlreference/controls-reference.html).
    + (Optional) `TargetFilters`: For `Actions`, you can specify `CREATE` or `UPDATE`, or both (default), to control when the Hook is invoked. Specifying `CREATE` alone limits the Hook to `CREATE` operations only. Other `TargetFilters` properties have no effect.
 
-1. Use the following [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html) command, along with the JSON file you created, to apply the configuration. Replace the placeholders with your specific values.
+1. Use the following [set-type-configuration](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html) command, along with the JSON file you created, to apply the configuration. Replace the placeholders with your specific values.
 
    ```
    aws cloudformation set-type-configuration \

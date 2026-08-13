@@ -1,0 +1,47 @@
+---
+source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_SessionS3LoggingConfiguration.html
+---
+
+# SessionS3LoggingConfiguration
+<a name="API_SessionS3LoggingConfiguration"></a>
+
+The Amazon S3 logging configuration for a session.
+
+## Contents
+<a name="API_SessionS3LoggingConfiguration_Contents"></a>
+
+ ** Enabled **   <a name="EMR-Type-SessionS3LoggingConfiguration-Enabled"></a>
+Whether Amazon S3 logging is enabled for the session.
+Type: Boolean
+Required: No
+
+ ** EncryptionKeyArn **   <a name="EMR-Type-SessionS3LoggingConfiguration-EncryptionKeyArn"></a>
+The Amazon Resource Name (ARN) of the AWS KMS key used to encrypt logs published to Amazon S3.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 10280.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: No
+
+ ** LogTypes **   <a name="EMR-Type-SessionS3LoggingConfiguration-LogTypes"></a>
+A map of log component names (for example, `SPARK_DRIVER`, `SPARK_EXECUTOR`) to the list of log types to publish for that component (for example, `stdout`, `stderr`).
+Type: String to array of strings map
+Key Length Constraints: Minimum length of 0. Maximum length of 10280.
+Key Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Length Constraints: Minimum length of 0. Maximum length of 10280.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: No
+
+ ** LogUri **   <a name="EMR-Type-SessionS3LoggingConfiguration-LogUri"></a>
+The Amazon S3 destination URI where session logs are published.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 10280.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: No
+
+## See Also
+<a name="API_SessionS3LoggingConfiguration_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/elasticmapreduce-2009-03-31/SessionS3LoggingConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/elasticmapreduce-2009-03-31/SessionS3LoggingConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/elasticmapreduce-2009-03-31/SessionS3LoggingConfiguration)

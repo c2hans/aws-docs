@@ -12,9 +12,6 @@ AL2023 includes the following updated libraries with PQC support:
 + GnuTLS 3.8.10 supports ML-KEM hybrid key exchange algorithms and ML-DSA-44, ML-DSA-65, and ML-DSA-87 signature algorithms for TLS communications.
 + NSS 3.112 introduced support for the ML-KEM hybrid key exchange algorithm and ML-DSA-44, ML-DSA-65, and ML-DSA-87 signature algorithms for TLS communications.
 
-**Note**
-OpenSSH on AL2023 does not currently support ML-KEM hybrid key exchange algorithms.
-
 For more information about Post-Quantum Cryptography on AWS, see:
 + [AWS Cloud Security > Post-Quantum Cryptography](https://aws.amazon.com/security/post-quantum-cryptography/)
 

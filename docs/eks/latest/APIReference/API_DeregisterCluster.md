@@ -89,6 +89,18 @@ Content-type: application/json
             "issuer": "string"
          }
       },
+      "kubeApiServerConfig": {
+         "eventTtl": "string",
+         "serviceNodePortRange": {
+            "maxPort": number,
+            "minPort": number
+         }
+      },
+      "kubeControllerManagerConfig": {
+         "horizontalPodAutoscalerControllerConfig": {
+            "horizontalPodAutoscalerSyncPeriod": "string"
+         }
+      },
       "kubernetesNetworkConfig": {
          "elasticLoadBalancing": {
             "enabled": boolean
@@ -96,6 +108,19 @@ Content-type: application/json
          "ipFamily": "string",
          "serviceIpv4Cidr": "string",
          "serviceIpv6Cidr": "string"
+      },
+      "kubeSchedulerConfig": {
+         "nodeResourcesFit": {
+            "scoringStrategy": {
+               "resources": [
+                  {
+                     "name": "string",
+                     "weight": number
+                  }
+               ],
+               "type": "string"
+            }
+         }
       },
       "logging": {
          "clusterLogging": [

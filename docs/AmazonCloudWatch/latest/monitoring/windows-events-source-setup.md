@@ -24,7 +24,7 @@ To read Windows Event audit Logs, the pipeline needs to authenticate with your a
 ## Configuring the CloudWatch Pipeline
 <a name="windows-events-pipeline-config"></a>
 
-When configuring the pipeline to read logs, choose Microsoft Windows Events as the data source. Fill in the required information like Tenant Id using Directory (tenant) ID and Workspace Id (workspace\_id). Once you create the pipeline, data will be available in the selected CloudWatch Logs log group.
+When configuring the pipeline to read logs, choose Microsoft Windows Events as the data source. Fill in the required information like Tenant Id using Directory (tenant) ID and Workspace Id (workspace\_id). After you create the pipeline, data will be available in the selected CloudWatch Logs log group.
 
 ## Supported Open Cybersecurity Schema Framework Event Classes
 <a name="windows-events-ocsf-events"></a>

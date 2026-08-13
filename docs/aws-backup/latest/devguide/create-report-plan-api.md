@@ -12,7 +12,7 @@ There are two types of reports. One type is a **jobs report**, which shows jobs 
 Similar to a *backup plan*, you create a *report plan* to automate the creation of your reports and define their destination Amazon S3 bucket. A report plan requires that you have an S3 bucket to receive your reports. For instructions on setting up a new S3 bucket, see [Step 1: Create your first S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html#creating-bucket) in the *Amazon Simple Storage Service User Guide*.
 
 If you encrypt your bucket using a custom KMS key, the KMS key policy must meet the following requirements:
-+ The `Principal` attribute must include the Backup Audit Manager service-linked role [https://console.aws.amazon.com/iam/home#/roles/AWSServiceRoleForBackupReports](https://console.aws.amazon.com/iam/home#/roles/AWSServiceRoleForBackupReports) ARN.
++ The `Principal` attribute must include the Backup Audit Manager service-linked role [`AWSServiceRoleForBackupReports`](https://console.aws.amazon.com/iam/home#/roles/AWSServiceRoleForBackupReports) ARN.
 + The `Action` attribute must include `kms:GenerateDataKey` at minimum.
 
  The policy [AWSServiceRolePolicyForBackupReports](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSServiceRolePolicyForBackupReports) has these permissions.

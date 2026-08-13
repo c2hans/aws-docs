@@ -80,7 +80,7 @@ The following examples show you how to add endpoint definitions to Amazon S3 by 
 You can use Amazon Pinpoint by running commands with the AWS CLI.
 
 **Example S3 CP command**
-To upload a local file to an Amazon S3 bucket, use the Amazon S3 [https://docs.aws.amazon.com/cli/latest/reference/s3/cp.html](https://docs.aws.amazon.com/cli/latest/reference/s3/cp.html) command:
+To upload a local file to an Amazon S3 bucket, use the Amazon S3 [`cp`](https://docs.aws.amazon.com/cli/latest/reference/s3/cp.html) command:
 
 ```
 $ aws s3 cp {{./endpoints-file}} s3://{{bucket-name/prefix/}}
@@ -91,7 +91,7 @@ Where:
 + *bucket-name/prefix/* is the name of your Amazon S3 bucket and, optionally, a prefix that helps you organize the objects in your bucket hierarchically. For example, a useful prefix might be `pinpoint/imports/endpoints/`.
 
 **Example Create import job command**
-To import endpoint definitions from an Amazon S3 bucket, use the [https://docs.aws.amazon.com/cli/latest/reference/pinpoint/create-import-job.html](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/create-import-job.html) command:
+To import endpoint definitions from an Amazon S3 bucket, use the [`create-import-job`](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/create-import-job.html) command:
 
 ```
 $ aws pinpoint create-import-job \

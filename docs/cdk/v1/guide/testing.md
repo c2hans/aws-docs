@@ -898,7 +898,7 @@ Our Amazon SNS assertion asserts that the synthesized template contains a subscr
 ### Matchers
 <a name="testing-fine-grained-matchers"></a>
 
-The default partial matching behavior of `hasResourceProperties` can be changed using *matchers* from the [https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_assertions.Match.html#methods](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_assertions.Match.html#methods) class.
+The default partial matching behavior of `hasResourceProperties` can be changed using *matchers* from the [`Match`](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_assertions.Match.html#methods) class.
 
 Matchers range from the very lenient (`Match.anyValue`) to the quite strict (`Match.objectEquals`), and can be nested to apply different matching methods to different parts of the resource properties. Using `Match.objectEquals` and `Match.anyValue` together, for example, we can test the state machine's IAM role more fully, while not requiring specific values for properties that may change.
 
@@ -1200,7 +1200,7 @@ Many CloudFormation resources include serialized JSON objects represented as str
 ### Capturing
 <a name="testing-fine-grained-capture"></a>
 
-It's often useful to test properties to make sure they follow specific formats, or have the same value as another property, without needing to know their exact values ahead of time. The `assertions` module provides this capability in its [https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_assertions.Capture.html](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_assertions.Capture.html) class.
+It's often useful to test properties to make sure they follow specific formats, or have the same value as another property, without needing to know their exact values ahead of time. The `assertions` module provides this capability in its [`Capture`](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_assertions.Capture.html) class.
 
 By specifying a `Capture` instance in place of a value in `hasResourceProperties`, that value is retained in the `Capture` object. The actual captured value can be retrieved using the object's `as` methods, including `asNumber()`, `asString()`, and `asObject`, and subjected to test. Use `Capture` with a matcher to specify the exact location of the value to be captured within the resource's properties, including serialized JSON properties.
 

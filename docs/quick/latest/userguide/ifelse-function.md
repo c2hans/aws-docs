@@ -52,7 +52,7 @@ The following example generates a column of aliases for field `country`.
 ifelse(country = "United States", "US", country = "China", "CN", country = "India", "IN", "Others")
 ```
 
-For such use cases evaluating each value in a field against a list of literals, and returns the result corresponding to the first matching value., function switch is recommended to simplify your work. The previous example can be rewritten to the following statement using [https://docs.aws.amazon.com/quicksight/latest/user/switch-function.html](https://docs.aws.amazon.com/quicksight/latest/user/switch-function.html):
+For such use cases evaluating each value in a field against a list of literals, and returns the result corresponding to the first matching value., function switch is recommended to simplify your work. The previous example can be rewritten to the following statement using [switch](https://docs.aws.amazon.com/quicksight/latest/user/switch-function.html):
 
 ```
 switch(country,"United States","US","China","CN","India","IN","Others")
@@ -76,13 +76,13 @@ The following examples use only OR to generate a new column that contains the na
 ifelse(country = "United States" OR country = "Canada", "North America", country = "China" OR country = "India" OR country = "Japan", "Asia", "Others")
 ```
 
-The previous example can be simplified as shown in the next example. The following example uses `ifelse` and [https://docs.aws.amazon.com/quicksight/latest/user/in-function.html](https://docs.aws.amazon.com/quicksight/latest/user/in-function.html) to create a value in a new column for any row where the tested value is in a literal list. You could use `ifelse` with [https://docs.aws.amazon.com/quicksight/latest/user/notIn-function.html](https://docs.aws.amazon.com/quicksight/latest/user/notIn-function.html) as well.
+The previous example can be simplified as shown in the next example. The following example uses `ifelse` and [in](https://docs.aws.amazon.com/quicksight/latest/user/in-function.html) to create a value in a new column for any row where the tested value is in a literal list. You could use `ifelse` with [notIn](https://docs.aws.amazon.com/quicksight/latest/user/notIn-function.html) as well.
 
 ```
 ifelse(in(country,["United States", "Canada"]), "North America", in(country,["China","Japan","India"]),"Asia","Others")
 ```
 
-Authors are able to save a literal list in a multivalue parameter and use it in the [https://docs.aws.amazon.com/quicksight/latest/user/in-function.html](https://docs.aws.amazon.com/quicksight/latest/user/in-function.html) or [https://docs.aws.amazon.com/quicksight/latest/user/notIn-function.html](https://docs.aws.amazon.com/quicksight/latest/user/notIn-function.html) functions. The following example is an equivalent of the previous example, except that the literal lists are stored in two multivalue parameters.
+Authors are able to save a literal list in a multivalue parameter and use it in the [in](https://docs.aws.amazon.com/quicksight/latest/user/in-function.html) or [notIn](https://docs.aws.amazon.com/quicksight/latest/user/notIn-function.html) functions. The following example is an equivalent of the previous example, except that the literal lists are stored in two multivalue parameters.
 
 ```
 ifelse(in(country,${NorthAmericaCountryParam}), "North America", in(country,${AsiaCountryParam}),"Asia", "Others")

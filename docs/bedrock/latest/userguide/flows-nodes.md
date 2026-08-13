@@ -782,15 +782,15 @@ The following tables summarize the inputs and outputs that are allowed for each 
   <tr><th>Node type</th><th>Input</th><th>Name</th><th>Type</th><th>Output</th><th>Name</th><th>Type</th></tr>
 </thead>
 <tbody>
-  <tr><td>Input</td><td>N/A</td><td>N/A</td><td>N/A</td><td>The content field in the InvokeFlow request.</td><td>document</td><td>Any</td></tr>
-  <tr><td>Output</td><td>Data to return in the InvokeFlow response.</td><td>document</td><td>Any</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
-  <tr><td>Condition</td><td>Data to send based on a condition.<br />(multiple inputs allowed)</td><td>Any</td><td>Any</td><td>Data to send based on a condition.<br />(specify conditions for different paths)</td><td>Any</td><td>Any</td></tr>
-  <tr><td rowspan="2">Iterator</td><td rowspan="2">An array for which you want to apply the following node(s) iteratively to each member.</td><td rowspan="2">array</td><td rowspan="2">Array</td><td>Each item from the array</td><td>arrayItem</td><td>Any</td></tr>
-  <tr><td>The size of the input array</td><td>arraySize</td><td>Number</td></tr>
-  <tr><td rowspan="2">Collector</td><td>An iteration that you want to consolidate into an array.</td><td>arrayItem</td><td>Any</td><td rowspan="2">An array with all the outputs from the previous node appended.</td><td rowspan="2">collectedArray</td><td rowspan="2">Array</td></tr>
-  <tr><td>The size of the output array</td><td>arraySize</td><td>Number</td></tr>
-  <tr><td rowspan="2">DoWhile loop</td><td>Data to process in the loop.</td><td>loopInput</td><td>Any</td><td>The final output from the loop after all iterations.</td><td>loopOutput</td><td>Any</td></tr>
-  <tr><td>The number of iterations performed.</td><td>iterationCount</td><td>Number</td><td></td><td></td><td></td></tr>
+  <tr><td><b>Input</b></td><td>N/A</td><td>N/A</td><td>N/A</td><td>The <code>content</code> field in the <code>InvokeFlow</code> request.</td><td><code>document</code></td><td>Any</td></tr>
+  <tr><td><b>Output</b></td><td>Data to return in the <code>InvokeFlow</code> response.</td><td><code>document</code></td><td>Any</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+  <tr><td><b>Condition</b></td><td>Data to send based on a condition.<br />(multiple inputs allowed)</td><td>Any</td><td>Any</td><td>Data to send based on a condition.<br />(specify conditions for different paths)</td><td>Any</td><td>Any</td></tr>
+  <tr><td rowspan="2"><b>Iterator</b></td><td rowspan="2">An array for which you want to apply the following node(s) iteratively to each member.</td><td rowspan="2"><code>array</code></td><td rowspan="2">Array</td><td>Each item from the array</td><td><code>arrayItem</code></td><td>Any</td></tr>
+  <tr><td>The size of the input array</td><td><code>arraySize</code></td><td>Number</td></tr>
+  <tr><td rowspan="2"><b>Collector</b></td><td>An iteration that you want to consolidate into an array.</td><td><code>arrayItem</code></td><td>Any</td><td rowspan="2">An array with all the outputs from the previous node appended.</td><td rowspan="2"><code>collectedArray</code></td><td rowspan="2">Array</td></tr>
+  <tr><td>The size of the output array</td><td><code>arraySize</code></td><td>Number</td></tr>
+  <tr><td rowspan="2"><b>DoWhile loop</b></td><td>Data to process in the loop.</td><td><code>loopInput</code></td><td>Any</td><td>The final output from the loop after all iterations.</td><td><code>loopOutput</code></td><td>Any</td></tr>
+  <tr><td>The number of iterations performed.</td><td><code>iterationCount</code></td><td>Number</td><td></td><td></td><td></td></tr>
 </tbody>
 </table>
 
@@ -802,18 +802,18 @@ The following tables summarize the inputs and outputs that are allowed for each 
   <tr><th>Node type</th><th>Input</th><th>Name</th><th>Type</th><th>Output</th><th>Name</th><th>Type</th></tr>
 </thead>
 <tbody>
-  <tr><td>Prompt</td><td>A value to fill in a variable in the prompt (multiple inputs allowed).</td><td>{{${variable-name}}}</td><td>Any</td><td>The response returned by the model.</td><td>modelCompletion</td><td>String</td></tr>
-  <tr><td rowspan="2">S3 storage</td><td>Data to store in an S3 bucket.</td><td>content</td><td>Any</td><td rowspan="2">The URI of the S3 location.</td><td rowspan="2">s3Uri</td><td rowspan="2">String</td></tr>
-  <tr><td>The [object key](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-keys.html) to use for the S3 object.</td><td>objectKey</td><td>String</td></tr>
-  <tr><td>S3 retrieval</td><td>The [object key](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-keys.html) for the S3 object.</td><td>objectKey</td><td>String</td><td>The data to retrieve from an S3 bucket.</td><td>s3Content</td><td>Any</td></tr>
-  <tr><td rowspan="3">Agent</td><td>The prompt to send to the agent.</td><td>agentInputText</td><td>String</td><td rowspan="3">The response returned from the agent.</td><td rowspan="3">agentResponse</td><td rowspan="3">String</td></tr>
-  <tr><td>Any [prompt attributes](agents-session-state.md) to send alongside the prompt.</td><td>promptAttributes</td><td>Object</td></tr>
-  <tr><td>Any [session attributes](agents-session-state.md) to send alongside the prompt.</td><td>sessionAttributes</td><td>Object</td></tr>
-  <tr><td>Knowledge base</td><td>The query to send to the knowledge base.</td><td>retrievalQuery</td><td>String</td><td>The returned results or generated response from the knowledge base.</td><td>retrievalResults</td><td>Array</td></tr>
-  <tr><td>Lambda function</td><td>Data to send to the function (multiple inputs allowed).</td><td>Any</td><td>Any</td><td>The response returned from the function.</td><td>functionResponse</td><td>Any</td></tr>
-  <tr><td>Inline code node</td><td>Variables for your code to execute (multiple inputs allowed).</td><td>Any</td><td>Any</td><td>The last line executed in your code.</td><td>response</td><td>Any</td></tr>
-  <tr><td rowspan="3">Lex</td><td>The utterance to send to the bot.</td><td>inputText</td><td>String</td><td rowspan="3">The intent that the bot predicts for the utterance.</td><td rowspan="3">predictedIntent</td><td rowspan="3">String</td></tr>
-  <tr><td>Any [request attributes](https://docs.aws.amazon.com/lexv2/latest/dg/context-mgmt-request-attribs.html) to send alongside the utterance.</td><td>requestAttributes</td><td>Object</td></tr>
-  <tr><td>Any [session attributes](https://docs.aws.amazon.com/lexv2/latest/dg/context-mgmt-session-attribs.html) to send alongside the utterance.</td><td>sessionAttributes</td><td>Object</td></tr>
+  <tr><td><b>Prompt</b></td><td>A value to fill in a variable in the prompt (multiple inputs allowed).</td><td><code>${variable-name}</code></td><td>Any</td><td>The response returned by the model.</td><td><code>modelCompletion</code></td><td>String</td></tr>
+  <tr><td rowspan="2"><b>S3 storage</b></td><td>Data to store in an S3 bucket.</td><td><code>content</code></td><td>Any</td><td rowspan="2">The URI of the S3 location.</td><td rowspan="2"><code>s3Uri</code></td><td rowspan="2">String</td></tr>
+  <tr><td>The <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-keys.html">object key</a> to use for the S3 object.</td><td><code>objectKey</code></td><td>String</td></tr>
+  <tr><td><b>S3 retrieval</b></td><td>The <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-keys.html">object key</a> for the S3 object.</td><td><code>objectKey</code></td><td>String</td><td>The data to retrieve from an S3 bucket.</td><td><code>s3Content</code></td><td>Any</td></tr>
+  <tr><td rowspan="3"><b>Agent</b></td><td>The prompt to send to the agent.</td><td><code>agentInputText</code></td><td>String</td><td rowspan="3">The response returned from the agent.</td><td rowspan="3"><code>agentResponse</code></td><td rowspan="3">String</td></tr>
+  <tr><td>Any <a href="agents-session-state.md">prompt attributes</a> to send alongside the prompt.</td><td><code>promptAttributes</code></td><td>Object</td></tr>
+  <tr><td>Any <a href="agents-session-state.md">session attributes</a> to send alongside the prompt.</td><td><code>sessionAttributes</code></td><td>Object</td></tr>
+  <tr><td><b>Knowledge base</b></td><td>The query to send to the knowledge base.</td><td><code>retrievalQuery</code></td><td>String</td><td>The returned results or generated response from the knowledge base.</td><td><code>retrievalResults</code></td><td>Array</td></tr>
+  <tr><td><b>Lambda function</b></td><td>Data to send to the function (multiple inputs allowed).</td><td>Any</td><td>Any</td><td>The response returned from the function.</td><td><code>functionResponse</code></td><td>Any</td></tr>
+  <tr><td><b>Inline code node</b></td><td>Variables for your code to execute (multiple inputs allowed).</td><td>Any</td><td>Any</td><td>The last line executed in your code.</td><td><code>response</code></td><td>Any</td></tr>
+  <tr><td rowspan="3"><b>Lex</b></td><td>The utterance to send to the bot.</td><td><code>inputText</code></td><td>String</td><td rowspan="3">The intent that the bot predicts for the utterance.</td><td rowspan="3"><code>predictedIntent</code></td><td rowspan="3">String</td></tr>
+  <tr><td>Any <a href="https://docs.aws.amazon.com/lexv2/latest/dg/context-mgmt-request-attribs.html">request attributes</a> to send alongside the utterance.</td><td><code>requestAttributes</code></td><td>Object</td></tr>
+  <tr><td>Any <a href="https://docs.aws.amazon.com/lexv2/latest/dg/context-mgmt-session-attribs.html">session attributes</a> to send alongside the utterance.</td><td><code>sessionAttributes</code></td><td>Object</td></tr>
 </tbody>
 </table>

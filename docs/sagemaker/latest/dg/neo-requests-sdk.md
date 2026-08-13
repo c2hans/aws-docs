@@ -14,8 +14,8 @@ Use the following the code examples to request inferences from your deployed ser
 
 **Note**
 The API varies based on the SageMaker Python SDK version:
-For version 1.x, use the [https://sagemaker.readthedocs.io/en/v1.72.0/api/inference/predictors.html#sagemaker.predictor.RealTimePredictor](https://sagemaker.readthedocs.io/en/v1.72.0/api/inference/predictors.html#sagemaker.predictor.RealTimePredictor) and [https://sagemaker.readthedocs.io/en/v1.72.0/api/inference/predictors.html#sagemaker.predictor.RealTimePredictor.predict](https://sagemaker.readthedocs.io/en/v1.72.0/api/inference/predictors.html#sagemaker.predictor.RealTimePredictor.predict) API.
-For version 3.x, use the [https://sagemaker.readthedocs.io/en/stable/api/sagemaker_serve.html](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_serve.html) and the [https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) API.
+For version 1.x, use the [`RealTimePredictor`](https://sagemaker.readthedocs.io/en/v1.72.0/api/inference/predictors.html#sagemaker.predictor.RealTimePredictor) and [`Predict`](https://sagemaker.readthedocs.io/en/v1.72.0/api/inference/predictors.html#sagemaker.predictor.RealTimePredictor.predict) API.
+For version 3.x, use the [`Endpoint`](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_serve.html) and the [`invoke`](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) API.
 
 The following code example shows how to use these APIs to send an image for inference:
 

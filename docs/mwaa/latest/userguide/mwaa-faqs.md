@@ -205,7 +205,7 @@ With Amazon MWAA, you can use the `PythonVirtualenvOperator`, which comes preins
 
 DAGs are periodically synchronized from the Amazon S3 bucket to your environment. If you add a new DAG file, it takes about 300 seconds for Amazon MWAA to start *using* the new file. If you update an existing DAG, it takes Amazon MWAA about 30 seconds to recognize your updates.
 
-These values, 300 seconds for new DAGs, and 30 seconds for updates to existing DAGs, correspond to Apache Airflow configuration options [https://airflow.apache.org/docs/apache-airflow/stable/configurations-ref.html#dag-dir-list-interval](https://airflow.apache.org/docs/apache-airflow/stable/configurations-ref.html#dag-dir-list-interval), and [https://airflow.apache.org/docs/apache-airflow/stable/configurations-ref.html#min-file-process-interval](https://airflow.apache.org/docs/apache-airflow/stable/configurations-ref.html#min-file-process-interval) respectively.
+These values, 300 seconds for new DAGs, and 30 seconds for updates to existing DAGs, correspond to Apache Airflow configuration options [`dag_dir_list_interval`](https://airflow.apache.org/docs/apache-airflow/stable/configurations-ref.html#dag-dir-list-interval), and [`min_file_process_interval`](https://airflow.apache.org/docs/apache-airflow/stable/configurations-ref.html#min-file-process-interval) respectively.
 
 ### Why is my DAG file not picked up by Apache Airflow?
 <a name="dag-file-error"></a>

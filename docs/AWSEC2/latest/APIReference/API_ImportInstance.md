@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportIns
 <a name="API_ImportInstance"></a>
 
 **Note**
-We recommend that you use the [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportImage.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportImage.html) API instead. For more information, see [Importing a VM as an image using VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html) in the *VM Import/Export User Guide*.
+We recommend that you use the [`ImportImage`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportImage.html) API instead. For more information, see [Importing a VM as an image using VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html) in the *VM Import/Export User Guide*.
 
 Creates an import instance task using metadata from the specified disk image.
 

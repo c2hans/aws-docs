@@ -16,7 +16,7 @@ Startup code runs outside of the standard request/response flow of a web applica
 
 The default `WebConfig` class creates an Amazon SNS subscription for notifications. To provide a segment for the X-Ray SDK to write to when the Amazon SNS client is used, Scorekeep calls `beginSegment` and `endSegment` on the global recorder.
 
-**Example [https://github.com/awslabs/eb-java-scorekeep/tree/xray/src/main/java/scorekeep/WebConfig.java#L49](https://github.com/awslabs/eb-java-scorekeep/tree/xray/src/main/java/scorekeep/WebConfig.java#L49) – Instrumented AWS SDK client in startup code**
+**Example [`src/main/java/scorekeep/WebConfig.java`](https://github.com/awslabs/eb-java-scorekeep/tree/xray/src/main/java/scorekeep/WebConfig.java#L49) – Instrumented AWS SDK client in startup code**
 
 ```
 AWSXRay.beginSegment("Scorekeep-init");
@@ -31,7 +31,7 @@ AWSXRay.endSegment();
 
 In `RdsWebConfig`, which Scorekeep uses when an Amazon RDS database is connected, the configuration also creates a segment for the SQL client that Hibernate uses when it applies the database schema during startup.
 
-**Example [https://github.com/awslabs/eb-java-scorekeep/tree/xray/src/main/java/scorekeep/RdsWebConfig.java#L83](https://github.com/awslabs/eb-java-scorekeep/tree/xray/src/main/java/scorekeep/RdsWebConfig.java#L83) – Instrumented SQL database client in startup code**
+**Example [`src/main/java/scorekeep/RdsWebConfig.java`](https://github.com/awslabs/eb-java-scorekeep/tree/xray/src/main/java/scorekeep/RdsWebConfig.java#L83) – Instrumented SQL database client in startup code**
 
 ```
 @PostConstruct

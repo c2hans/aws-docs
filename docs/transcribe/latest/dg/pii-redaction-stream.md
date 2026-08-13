@@ -58,7 +58,7 @@ You can start a streaming transcription using the AWS Management Console, WebSoc
 ## WebSocket stream
 <a name="redaction-websocket"></a>
 
-This example creates a presigned URL that uses PII redaction (or PII identification) in a WebSocket stream. Line breaks have been added for readability. For more information on using WebSocket streams with Amazon Transcribe, see [Setting up a WebSocket stream](streaming-setting-up.md#streaming-websocket). For more detail on parameters, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartStreamTranscription.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartStreamTranscription.html).
+This example creates a presigned URL that uses PII redaction (or PII identification) in a WebSocket stream. Line breaks have been added for readability. For more information on using WebSocket streams with Amazon Transcribe, see [Setting up a WebSocket stream](streaming-setting-up.md#streaming-websocket). For more detail on parameters, see [`StartStreamTranscription`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartStreamTranscription.html).
 
 ```
 GET wss://transcribestreaming.{{us-west-2}}.amazonaws.com:8443/stream-transcription-websocket?
@@ -83,7 +83,7 @@ Parameter definitions can be found in the [API Reference](https://docs.aws.amazo
 ## HTTP/2 stream
 <a name="redaction-http2"></a>
 
-This example creates an HTTP/2 request with PII identification or PII redaction enabled. For more information on using HTTP/2 streaming with Amazon Transcribe, see [Setting up an HTTP/2 stream](streaming-setting-up.md#streaming-http2). For more detail on parameters and headers specific to Amazon Transcribe, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartStreamTranscription.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartStreamTranscription.html).
+This example creates an HTTP/2 request with PII identification or PII redaction enabled. For more information on using HTTP/2 streaming with Amazon Transcribe, see [Setting up an HTTP/2 stream](streaming-setting-up.md#streaming-http2). For more detail on parameters and headers specific to Amazon Transcribe, see [`StartStreamTranscription`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartStreamTranscription.html).
 
 ```
 POST /stream-transcription HTTP/2

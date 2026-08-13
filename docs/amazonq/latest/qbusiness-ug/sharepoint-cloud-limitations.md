@@ -8,7 +8,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 <a name="sharepoint-cloud-limitations"></a>
 
 The SharePoint (Online) connector has the following known limitations:
-+ The Amazon Q SharePoint (Online) connector supports custom field mappings only for the [https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-field-mappings.html#sharepoint-field-mappings-files](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-field-mappings.html#sharepoint-field-mappings-files) entity.
++ The Amazon Q SharePoint (Online) connector supports custom field mappings only for the [**Files**](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-field-mappings.html#sharepoint-field-mappings-files) entity.
 + If an entity name has a `%` character in its name, the connector will skip these files due to API limitations.
 + OneNote can only be crawled by the connector using a Tenant ID, and with OAuth 2.0, OAuth 2.0 refresh token, or SharePoint (Online) App Only authentication activated for SharePoint (Online) Online.
 + The connector crawls the first section of a OneNote document using its default name only, even if the document is renamed.

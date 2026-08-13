@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/paramet
 # Troubleshooting Parameter Store
 <a name="parameter-store-troubleshooting"></a>
 
-Use the following information to help you troubleshoot problems with Parameter Store, a tool in AWS Systems Manager.
+Use the following information to help you troubleshoot problems with Parameter Store.
 
 ## Troubleshooting throughput issues
 <a name="ps-throttling-troubleshooting"></a>

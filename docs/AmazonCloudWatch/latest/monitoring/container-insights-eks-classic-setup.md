@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/conta
 This guide walks you through installing Enhanced Container Insights (Classic) on an existing Amazon EKS cluster by using the AWS CLI. The add-on deploys a CloudWatch agent as a DaemonSet that collects infrastructure metrics, container logs, and performance data.
 
 **Maintenance mode**
-Enhanced Container Insights (Classic) is in maintenance mode. For new deployments, we recommend [OTel Container Insights (Recommended)](container-insights-eks-otel.md).
+Enhanced Container Insights (Classic) is in maintenance mode. For new deployments, you should recommend [OTel Container Insights (Recommended)](container-insights-eks-otel.md).
 
 ## Prerequisites
 <a name="container-insights-eks-classic-setup-prereqs"></a>

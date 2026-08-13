@@ -9,7 +9,7 @@ When you create an Automated Reasoning policy, your source document is translate
 
 Amazon Bedrock encrypts your Automated Reasoning policy using AWS Key Management Service (KMS). By default, Amazon Bedrock uses a service-owned key. You can optionally specify a customer managed KMS key for additional control over the encryption of your policy data.
 
-To test and use your Automated Reasoning policy, ensure you have [the appropriate permissions](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrail-automated-reasoning-permissions.html).
+To test and use your Automated Reasoning policy, make sure you have [the appropriate permissions](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrail-automated-reasoning-permissions.html).
 
 ## Prepare your source document
 <a name="prepare-source-document"></a>

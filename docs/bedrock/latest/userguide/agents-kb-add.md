@@ -46,4 +46,4 @@ The following list describes the fields in the request:
 
 ------
 
-You can modify the [query configurations](kb-test-config.md) of a knowledge base attached to your agent by using the `sessionState` field in the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request when you invoke your agent. For more information, see [Control agent session context](agents-session-state.md).
+You can modify the [query configurations](kb-test-config.md) of a knowledge base attached to your agent by using the `sessionState` field in the [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request when you invoke your agent. For more information, see [Control agent session context](agents-session-state.md).

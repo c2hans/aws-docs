@@ -70,7 +70,7 @@ Required: No
  ** targetType **   <a name="bedrockagentcorecontrol-Type-TargetSummary-targetType"></a>
 The type of the target.
 Type: String
-Valid Values: `OPEN_API_SCHEMA | SMITHY_MODEL | MCP_SERVER | LAMBDA | API_GATEWAY | CONNECTOR | AGENTCORE_RUNTIME | PASSTHROUGH | PROVIDER`
+Valid Values: `OPEN_API_SCHEMA | SMITHY_MODEL | MCP_SERVER | LAMBDA | API_GATEWAY | CONNECTOR | AGENTCORE_RUNTIME | PASSTHROUGH | PROVIDER | HTTP_CONNECTOR`
 Required: No
 
 ## See Also

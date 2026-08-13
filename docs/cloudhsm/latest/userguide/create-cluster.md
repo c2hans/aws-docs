@@ -16,7 +16,7 @@ When you create a cluster, AWS CloudHSM creates a security group for the cluster
 
 You can create a cluster from the [AWS CloudHSM console](https://console.aws.amazon.com/cloudhsm/), the [AWS Command Line Interface (AWS CLI)](https://aws.amazon.com/cli/), or the AWS CloudHSM API.
 
-For details on cluster arguments and APIs, see [https://docs.aws.amazon.com/cli/latest/reference/cloudhsmv2/create-cluster.html](https://docs.aws.amazon.com/cli/latest/reference/cloudhsmv2/create-cluster.html) in the AWS CLI Command Reference.
+For details on cluster arguments and APIs, see [**create-cluster**](https://docs.aws.amazon.com/cli/latest/reference/cloudhsmv2/create-cluster.html) in the AWS CLI Command Reference.
 
 ------
 #### [ Console ]
@@ -117,7 +117,7 @@ If your attempts to create a cluster fail, it might be related to problems with 
 #### [ AWS CloudHSM API ]
 
 **To create a cluster (AWS CloudHSM API)**
-+ Send a [https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CreateCluster.html](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CreateCluster.html) request. Specify the HSM instance type, the backup retention policy, and the subnet IDs of the subnets where you plan to create HSMs. Use the subnet IDs of the private subnets that you created. Specify only one subnet per Availability Zone.
++ Send a [CreateCluster](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CreateCluster.html) request. Specify the HSM instance type, the backup retention policy, and the subnet IDs of the subnets where you plan to create HSMs. Use the subnet IDs of the private subnets that you created. Specify only one subnet per Availability Zone.
 
 If your attempts to create a cluster fail, it might be related to problems with the AWS CloudHSM service-linked roles. For help on resolving the failure, see [Resolving AWS CloudHSM cluster creation failures](troubleshooting-create-cluster.md).
 

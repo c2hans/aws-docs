@@ -77,4 +77,4 @@ Resources:
             - us-east-1
 ```
 
-For more information, see [https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/aws-resource-controltower-enabledcontrol.html](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/aws-resource-controltower-enabledcontrol.html) in the *AWS CloudFormation User Guide*.
+For more information, see [`EnabledControl`](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/aws-resource-controltower-enabledcontrol.html) in the *AWS CloudFormation User Guide*.

@@ -16,7 +16,7 @@ If you are using the OpenAI-compatible APIs (Responses API, Chat Completions), u
 
 A Workspace is a logical boundary used to isolate workloads such as applications, environments, or experiments within Amazon Bedrock when using the Anthropic Messages API. Workspaces are the same underlying resource as [Projects (OpenAI-compatible)](projects.md) — they are managed using the Projects API and provide the same capabilities:
 + **Access isolation**: Control who can access specific workspace resources using [IAM policies for Amazon Bedrock Projects](security-iam-projects.md)
-+ **Cost monitoring**: Track spending at the workspace level using [AWS tags](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/what-are-tags.html) and [AWS Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html)
++ **Cost monitoring**: Track spending at the workspace level using [AWS tags](whitepapers/latest/tagging-best-practices/what-are-tags.html) and [AWS Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html)
 + **Observability**: Track usage metrics and patterns per workspace for monitoring and optimization.
 
 Workspaces allow you to manage multiple generative AI workloads in production without creating separate AWS accounts or organizations, reducing operational complexity while maintaining security and governance.
@@ -35,7 +35,7 @@ You should use Workspaces when you need to:
 ## Workspaces vs. Projects
 <a name="workspaces-vs-projects"></a>
 
-Workspaces and [Projects (OpenAI-compatible)](projects.md) are the same underlying resource — both are managed via the Projects API. The difference is how you reference them in your inference requests, depending on which API you use:
+Workspaces and [Projects (OpenAI-compatible)](projects.md) are the same underlying resource — both are managed through the Projects API. The difference is how you reference them in your inference requests, depending on which API you use:
 
 | Feature | Workspaces | Projects |
 | --- | --- | --- |
@@ -54,7 +54,7 @@ This section walks you through creating a workspace, associating it with Message
 ### Prerequisites
 <a name="workspaces-prerequisites"></a>
 
-Before you begin, ensure you have:
+Before you begin, make sure you have:
 + An AWS account with Amazon Bedrock access
 + IAM permissions to create and manage Amazon Bedrock projects
 + An [API key](api-keys.md) for Amazon Bedrock authentication
@@ -174,7 +174,7 @@ curl -X GET "https://bedrock-mantle.$BEDROCK_REGION.api.aws/v1/organization/proj
 ## Managing Workspaces
 <a name="workspaces-managing"></a>
 
-Since Workspaces are managed via the Projects API, all project management operations apply. See [Working with Projects](projects.md#projects-working-with) for detailed instructions on:
+Since Workspaces are managed through the Projects API, all project management operations apply. See [Working with Projects](projects.md#projects-working-with) for detailed instructions on:
 + **Listing workspaces**: Retrieve all workspaces in your account
 + **Retrieving details**: Get information about a specific workspace
 + **Updating workspaces**: Modify workspace name or tags

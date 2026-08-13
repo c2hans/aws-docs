@@ -67,10 +67,10 @@ Following is an example key policy that permits:
 
 AppFabric requires a grant to use your customer managed key. For more information, see [Grants in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html) in the *AWS KMS Developer Guide*.
 
-When you create an app bundle, AppFabric creates a grant on your behalf by sending a `[https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html)` request to AWS KMS. Grants in AWS KMS are used to give AppFabric access to an AWS KMS key in a customer account. AppFabric requires that the grant to use your customer managed key for the following internal operations:
-+ Send `[https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html)` requests to AWS KMS to generate data keys encrypted by your customer managed key.
-+ Send `[https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html)` requests to AWS KMS to decrypt the encrypted data keys so that they can be used to encrypt your data and to decrypt application access tokens in transit.
-+ Send `[https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html)` requests to AWS KMS to encrypt application access tokens in transit.
+When you create an app bundle, AppFabric creates a grant on your behalf by sending a `[CreateGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html)` request to AWS KMS. Grants in AWS KMS are used to give AppFabric access to an AWS KMS key in a customer account. AppFabric requires that the grant to use your customer managed key for the following internal operations:
++ Send `[GenerateDataKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html)` requests to AWS KMS to generate data keys encrypted by your customer managed key.
++ Send `[Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html)` requests to AWS KMS to decrypt the encrypted data keys so that they can be used to encrypt your data and to decrypt application access tokens in transit.
++ Send `[Encrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html)` requests to AWS KMS to encrypt application access tokens in transit.
 
 Following is an example of a grant.
 

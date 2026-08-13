@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/assign-securit
 <a name="assign-security-profile-voiceid"></a>
 
 **Note**
-End of support notice: On May 20, 2026, AWS will end support for Amazon Connect Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Amazon Connect console, access Voice ID features on the Connect Customer admin website or Contact Control Panel, or access Voice ID resources. For more information, visit [Amazon Connect Voice ID end of support](https://docs.aws.amazon.com/connect/latest/adminguide/amazonconnect-voiceid-end-of-support.html).
+End of support notice: On May 20, 2026, AWS will end support for Amazon Connect Customer Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Amazon Connect Customer console, access Voice ID features on the Connect Customer admin website or Contact Control Panel, or access Voice ID resources. For more information, visit [Amazon Connect Customer Voice ID end of support](https://docs.aws.amazon.com/connect/latest/adminguide/amazonconnect-voiceid-end-of-support.html).
 + To enable users to search for contacts by their Voice ID status, assign the following **Analytics and Optimization** permission to their security profile:
   + **Voice ID - attributes and search**: Enables users to search for and view Voice ID results on the **Contact detail** page.
 + To grant agents access to Voice ID in the Contact Control Panel, assign the following permission in the **Contact Control Panel** group:

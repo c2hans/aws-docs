@@ -43,7 +43,7 @@ If you integrate IPAM with AWS Organizations using the IPAM console or using the
  For instructions about enabling trusted access, see [Integrate IPAM with AWS Organizations](https://docs.aws.amazon.com//vpc/latest/ipam/enable-integ-ipam.html) in the *Amazon VPC IPAM User Guide*.
 
 **Note**
- You can't enable trusted access with IPAM using the AWS Organizations console or with the [https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnableAWSServiceAccess.html](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnableAWSServiceAccess.html) API.
+ You can't enable trusted access with IPAM using the AWS Organizations console or with the [`EnableAWSServiceAccess`](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnableAWSServiceAccess.html) API.
 
 ## To disable trusted access with IPAM
 <a name="integrate-disable-ta-ipam"></a>

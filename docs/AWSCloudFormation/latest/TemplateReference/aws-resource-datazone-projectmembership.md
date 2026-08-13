@@ -80,7 +80,7 @@ The ID of the project for which this project membership was created.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a string containing pipe-separated `DomainId`, `MemberId`, `MemberType`, and `ProjectId` that uniquely identify the project membership. For example: `{ "Ref": "MyProjectMembership" }` for the resource with the logical ID `MyProjectMembership`, `Ref` returns `DomainId|MemberId|MemberType|ProjectId`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-datazone-projectmembership-return-values-fn--getatt"></a>

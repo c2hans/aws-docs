@@ -28,7 +28,7 @@ The following table lists tasks and the methods available for performing them. U
 
 1. Answer the questions in [Plan a build](planning.md).
 
-1. If you are using an user to access CodePipeline instead of an AWS root account or an administrator user, attach the managed policy named `AWSCodePipelineFullAccess` to the user (or to the IAM group to which the user belongs). Using an AWS root account is not recommended. This policy grants the user permission to create the pipeline in CodePipeline. For more information, see [Attaching managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-using.html#attach-managed-policy-console) in the *user Guide*.
+1. If you are using a user to access CodePipeline instead of an AWS root account or an administrator user, attach the managed policy named `AWSCodePipelineFullAccess` to the user (or to the IAM group to which the user belongs). Using an AWS root account is not recommended. This policy grants the user permission to create the pipeline in CodePipeline. For more information, see [Attaching managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-using.html#attach-managed-policy-console) in the *user Guide*.
 **Note**
 The IAM entity that attaches the policy to the user (or to the IAM group to which the user belongs) must have permission in IAM to attach policies. For more information, see [Delegating permissions to administer IAM users, groups, and credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_delegate-permissions.html) in the *user Guide*.
 

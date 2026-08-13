@@ -93,7 +93,7 @@ The output from this command should look something like this.
 
 When the parameter group is created, it will have the family's default values. To change the default values you must modify the parameter group. For more information, see [Modifying a parameter group](parametergroups.modifying.md).
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/memorydb/create-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/memorydb/create-parameter-group.html).
+For more information, see [`create-parameter-group`](https://docs.aws.amazon.com/cli/latest/reference/memorydb/create-parameter-group.html).
 
 ## Creating a parameter group (MemoryDB API)
 <a name="parametergroups.creating.api"></a>
@@ -145,4 +145,4 @@ The response from this action should look something like this.
 
 When the parameter group is created, it will have the family's default values. To change the default values you must modify the parameter group. For more information, see [Modifying a parameter group](parametergroups.modifying.md).
 
-For more information, see [https://docs.aws.amazon.com/memorydb/latest/APIReference/API_CreateParameterGroup.html](https://docs.aws.amazon.com/memorydb/latest/APIReference/API_CreateParameterGroup.html).
+For more information, see [`CreateParameterGroup`](https://docs.aws.amazon.com/memorydb/latest/APIReference/API_CreateParameterGroup.html).

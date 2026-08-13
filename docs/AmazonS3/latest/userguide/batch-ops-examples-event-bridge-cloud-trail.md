@@ -17,7 +17,7 @@ Amazon EventBridge is the preferred way to manage your events. Amazon CloudWatch
 ## S3 Batch Operations events recorded in CloudTrail
 <a name="batch-ops-examples-cloud-trail-events"></a>
 
-When a Batch Operations job is created, it is recorded as a `JobCreated` event in CloudTrail. As the job runs, it changes state during processing, and other `JobStatusChanged` events are recorded in CloudTrail. You can view these events on the [CloudTrail console](https://console.aws.amazon.com/cloudtrail). For more information about CloudTrail, see the [https://docs.aws.amazon.com/awscloudtrail/latest/userguide/how-cloudtrail-works.html](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/how-cloudtrail-works.html).
+When a Batch Operations job is created, it is recorded as a `JobCreated` event in CloudTrail. As the job runs, it changes state during processing, and other `JobStatusChanged` events are recorded in CloudTrail. You can view these events on the [CloudTrail console](https://console.aws.amazon.com/cloudtrail). For more information about CloudTrail, see the [*AWS CloudTrail User Guide*](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/how-cloudtrail-works.html).
 
 **Note**
 Only S3 Batch Operations job `status-change` events are recorded in CloudTrail.

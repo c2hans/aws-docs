@@ -25,7 +25,7 @@ The **Available storage** graph displays the amount of free storage capacity on 
 
 **To monitor a volume's storage capacity (ONTAP CLI)**
 
-You can monitor how your volume's storage capacity is being consumed by using the `volume show-space` ONTAP CLI command. For more information, see [https://docs.netapp.com/us-en/ontap-cli-9111/volume-show-space.html](https://docs.netapp.com/us-en/ontap-cli-9111/volume-show-space.html) in the NetApp ONTAP Documentation Center.
+You can monitor how your volume's storage capacity is being consumed by using the `volume show-space` ONTAP CLI command. For more information, see [`volume show-space`](https://docs.netapp.com/us-en/ontap-cli-9111/volume-show-space.html) in the NetApp ONTAP Documentation Center.
 
 1. To access the ONTAP CLI, establish an SSH session on the management port of the Amazon FSx for NetApp ONTAP file system or SVM by running the following command. Replace `{{management_endpoint_ip}}` with the IP address of the file system's management port.
 

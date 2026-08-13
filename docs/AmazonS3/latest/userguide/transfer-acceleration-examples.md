@@ -48,7 +48,7 @@ The following are examples of AWS CLI commands used for Transfer Acceleration. F
 ### Enabling Transfer Acceleration on a bucket
 <a name="transfer-acceleration-examples-aws-cli-1"></a>
 
-Use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/s3api/put-bucket-accelerate-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-bucket-accelerate-configuration.html) command to enable or suspend Transfer Acceleration on a bucket.
+Use the AWS CLI [put-bucket-accelerate-configuration](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-bucket-accelerate-configuration.html) command to enable or suspend Transfer Acceleration on a bucket.
 
 The following example sets `Status=Enabled` to enable Transfer Acceleration on a bucket named `{{amzn-s3-demo-bucket}}`. To suspend Transfer Acceleration, use `Status=Suspended`.
 
@@ -274,4 +274,4 @@ For information about using other AWS SDKs, see [Sample Code and Libraries](http
 
 Use the REST API `PutBucketAccelerateConfiguration` operation to enable accelerate configuration on an existing bucket.
 
-For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketAccelerateConfiguration.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketAccelerateConfiguration.html) in the *Amazon Simple Storage Service API Reference*.
+For more information, see [PutBucketAccelerateConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketAccelerateConfiguration.html) in the *Amazon Simple Storage Service API Reference*.

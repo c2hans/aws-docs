@@ -16,7 +16,7 @@ try {
 }
 ```
 
-If you added any items to the cache using the [https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-java/blob/master/src/main/java/com/amazonaws/kinesisvideo/java/service/CachedInfoMultiAuthServiceCallbacksImpl.java](https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-java/blob/master/src/main/java/com/amazonaws/kinesisvideo/java/service/CachedInfoMultiAuthServiceCallbacksImpl.java), for example:
+If you added any items to the cache using the [`CachedInfoMultiAuthServiceCallbacks`](https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-java/blob/master/src/main/java/com/amazonaws/kinesisvideo/java/service/CachedInfoMultiAuthServiceCallbacksImpl.java), for example:
 
 ```
 serviceCallbacks.addStreamInfoToCache(streamName, streamInfo);

@@ -8,9 +8,9 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/tr
 <a name="transcribe-examples-section"></a>
 
 In this example, a series of Node.js modules are used to create,list, and delete transcription jobs using the following methods of the `TranscribeService` client class:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-transcribe/Class/StartTranscriptionJobCommand/](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-transcribe/Class/StartTranscriptionJobCommand/)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-transcribe/Class/ListTranscriptionJobsCommand/](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-transcribe/Class/ListTranscriptionJobsCommand/)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-transcribe/Class/DeleteTranscriptionJobCommand/](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-transcribe/Class/DeleteTranscriptionJobCommand/)
++ [`StartTranscriptionJobCommand`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-transcribe/Class/StartTranscriptionJobCommand/)
++ [`ListTranscriptionJobsCommand`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-transcribe/Class/ListTranscriptionJobsCommand/)
++ [`DeleteTranscriptionJobCommand`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-transcribe/Class/DeleteTranscriptionJobCommand/)
 
 For more information about Amazon Transcribe users, see the [Amazon Transcribe developer guide](https://docs.aws.amazon.com//transcribe/latest/dg/what-is-transcribe.html).
 
@@ -91,7 +91,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 ## List Amazon Transcribe jobs
 <a name="transcribe-list-jobs"></a>
 
-This example shows how list the Amazon Transcribe transcription jobs using the AWS SDK for JavaScript. For more information about what other setting you can modify, see [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-transcribe/Class/ListTranscriptionJobsCommand/](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-transcribe/Class/ListTranscriptionJobsCommand/).
+This example shows how list the Amazon Transcribe transcription jobs using the AWS SDK for JavaScript. For more information about what other setting you can modify, see [`ListTranscriptionJobCommand`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-transcribe/Class/ListTranscriptionJobsCommand/).
 
 Create a `libs` directory, and create a Node.js module with the file name `transcribeClient.js`. Copy and paste the code below into it, which creates the Amazon Transcribe client object. Replace {{REGION}} with your AWS Region.
 
@@ -148,7 +148,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 ## Deleting a Amazon Transcribe job
 <a name="transcribe-delete-job"></a>
 
-This example shows how to delete an Amazon Transcribe transcription job using the AWS SDK for JavaScript. For more information about optional, see [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-transcribe/Class/DeleteTranscriptionJobCommand/](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-transcribe/Class/DeleteTranscriptionJobCommand/).
+This example shows how to delete an Amazon Transcribe transcription job using the AWS SDK for JavaScript. For more information about optional, see [`DeleteTranscriptionJobCommand`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-transcribe/Class/DeleteTranscriptionJobCommand/).
 
 Create a `libs` directory, and create a Node.js module with the file name `transcribeClient.js`. Copy and paste the code below into it, which creates the Amazon Transcribe client object. Replace {{REGION}} with your AWS Region.
 

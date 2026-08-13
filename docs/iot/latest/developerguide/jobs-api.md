@@ -69,7 +69,7 @@ An arbitrary string used to correlate a request with its reply.
 The time, in seconds since the epoch.
 
 `executionState`
-A [https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_JobExecutionState.html](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_JobExecutionState.html) object. This field is included only when the `code` field has the value `InvalidStateTransition` or `VersionMismatch`. This makes it unnecessary in these cases to perform a separate `DescribeJobExecution` request to obtain the current job execution status data.
+A [`JobExecutionState`](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_JobExecutionState.html) object. This field is included only when the `code` field has the value `InvalidStateTransition` or `VersionMismatch`. This makes it unnecessary in these cases to perform a separate `DescribeJobExecution` request to obtain the current job execution status data.
 
 **Topics**
 + [Jobs management and control API and data types](jobs-management-control-api.md)

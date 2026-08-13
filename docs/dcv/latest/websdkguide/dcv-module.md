@@ -403,14 +403,25 @@ A module that implements the client side of the DCV protocol.
 #### Parameters:
 <a name="parameters-4"></a>
 
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  authentication  |  [Authentication](authentication-class.md)  |  The Authentication object.  |
-|  error  |  Object  |  The error object raised by the authentication process. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/dcv-module.html)  |
-|  code  |  [AuthenticationErrorCode](#AuthenticationErrorCode)  |  The error code.  |
-|  message  |  string  |  The error message.  |
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>authentication</code> </td><td> <a href="authentication-class.md">Authentication</a> </td><td> The Authentication object. </td></tr>
+  <tr><td> <code>error</code> </td><td> Object </td><td> The error object raised by the authentication process.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>code</code> </td><td> <a href="#AuthenticationErrorCode">AuthenticationErrorCode</a> </td><td> The error code. </td></tr>
+  <tr><td> <code>message</code> </td><td> string </td><td> The error message. </td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ### authPromptCredentialsCallback(authentication, challenge)
 <a name="authPromptCredentialsCallback"></a>
@@ -420,17 +431,34 @@ A module that implements the client side of the DCV protocol.
 #### Parameters:
 <a name="parameters-5"></a>
 
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  authentication  |  [Authentication](authentication-class.md)  |  The Authentication object.  |
-|  challenge  |  Object  |  The challenge. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/dcv-module.html)  |
-|  requiredCredentials  |  Array.<Object>  |  An array of requested credential objects. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/dcv-module.html)  |
-|  name  |  string  |  The name of the requested credential.  |
-|  type  |  string  |  The type of the requested credential.  |
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>authentication</code> </td><td> <a href="authentication-class.md">Authentication</a> </td><td> The Authentication object. </td></tr>
+  <tr><td> <code>challenge</code> </td><td> Object </td><td> The challenge.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>requiredCredentials</code> </td><td> Array.&lt;Object&gt; </td><td> An array of requested credential objects.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>name</code> </td><td> string </td><td> The name of the requested credential. </td></tr>
+  <tr><td> <code>type</code> </td><td> string </td><td> The type of the requested credential. </td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ### authSuccessCallback(authentication, authenticationData)
 <a name="authSuccessCallback"></a>
@@ -440,14 +468,25 @@ A module that implements the client side of the DCV protocol.
 #### Parameters:
 <a name="parameters-6"></a>
 
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  authentication  |  [Authentication](authentication-class.md)  |  The Authentication object.  |
-|  authenticationData  |  Array.<Object>  |  An array of objects that include Amazon DCV session IDs and authentication tokens. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/dcv-module.html)  |
-|  sessionId  |  string  |  The Amazon DCV session ID.  |
-|  authToken  |  string  |  The authentication token for the Amazon DCV session.  |
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>authentication</code> </td><td> <a href="authentication-class.md">Authentication</a> </td><td> The Authentication object. </td></tr>
+  <tr><td> <code>authenticationData</code> </td><td> Array.&lt;Object&gt; </td><td> An array of objects that include Amazon DCV session IDs and authentication tokens.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>sessionId</code> </td><td> string </td><td> The Amazon DCV session ID. </td></tr>
+  <tr><td> <code>authToken</code> </td><td> string </td><td> The authentication token for the Amazon DCV session. </td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ### Channel
 <a name="Channel"></a>
@@ -478,16 +517,27 @@ A module that implements the client side of the DCV protocol.
 #### Parameters:
 <a name="parameters-7"></a>
 
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Attributes  |  Description  |
-| --- | --- | --- | --- |
-|  event  |  Object  |  Information about the clipboard event. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/dcv-module.html)  |
-|  name  |  established \| copy \| paste \| dataSizeAlert \| autoCopyDone \| newDataAvailable \| autoPasteDone \| remoteError \| pasteAvailableData  |   |  Always present. The name of the event.  |
-|  clipboardData  |  Object \| string  |   |  The data in the clipboard.  |
-|  autoCopy  |  boolean  |  <optional>  |  Indicates whether automatic copying from the session clipboard to the local client clipboard is enabled.  |
-|  maxDataSize  |  number  |  <optional>  |  The maximum amount of data that can be placed in the clipboard.  |
-|  error  |  string  |  <optional>  |  Error information if applicable.  |
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>event</code> </td><td> Object </td><td> Information about the clipboard event.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Attributes </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>name</code> </td><td> established | copy | paste | dataSizeAlert | autoCopyDone | newDataAvailable | autoPasteDone | remoteError | pasteAvailableData </td><td> </td><td> Always present. The name of the event. </td></tr>
+  <tr><td> <code>clipboardData</code> </td><td> Object | string </td><td> </td><td> The data in the clipboard. </td></tr>
+  <tr><td> <code>autoCopy</code> </td><td> boolean </td><td> &lt;optional&gt; </td><td> Indicates whether automatic copying from the session clipboard to the local client clipboard is enabled. </td></tr>
+  <tr><td> <code>maxDataSize</code> </td><td> number </td><td> &lt;optional&gt; </td><td> The maximum amount of data that can be placed in the clipboard. </td></tr>
+  <tr><td> <code>error</code> </td><td> string </td><td> &lt;optional&gt; </td><td> Error information if applicable. </td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ### ClosingReasonErrorCode
 <a name="ClosingReasonErrorCode"></a>
@@ -638,13 +688,24 @@ A module that implements the client side of the DCV protocol.
 #### Parameters:
 <a name="parameters-9"></a>
 
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  info  |  Object  |  Information about the data channel. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/dcv-module.html)  |
-|  name  |  string  |  The name of the data channel.  |
-|  token  |  string  |  The authentication token for the data channel.  |
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>info</code> </td><td> Object </td><td> Information about the data channel.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>name</code> </td><td> string </td><td> The name of the data channel. </td></tr>
+  <tr><td> <code>token</code> </td><td> string </td><td> The authentication token for the data channel. </td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ### deleteFile(path)
 <a name="deleteFile"></a>
@@ -669,13 +730,24 @@ A module that implements the client side of the DCV protocol.
 #### Parameters:
 <a name="parameters-11"></a>
 
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  reason  |  Object  |  The reason for the disconnection. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/dcv-module.html)  |
-|  code  |  number  |  The reason code.  |
-|  message  |  string  |  The reason message.  |
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>reason</code> </td><td> Object </td><td> The reason for the disconnection.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>code</code> </td><td> number </td><td> The reason code. </td></tr>
+  <tr><td> <code>message</code> </td><td> string </td><td> The reason message. </td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ### displayAvailabilityCallback(status, displayId)
 <a name="displayAvailabilityCallback"></a>
@@ -685,14 +757,25 @@ A module that implements the client side of the DCV protocol.
 #### Parameters:
 <a name="parameters-12"></a>
 
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  status  |  Object  |  The status of the display. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/dcv-module.html)  |
-|  displayId  |  number  |  The identifier for the display.  |
-|  enabled  |  boolean  |  Indicates if the display is enabled.  |
-|  closed  |  boolean  |  Indicates if the display is closed.  |
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>status</code> </td><td> Object </td><td> The status of the display.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>enabled</code> </td><td> boolean </td><td> Indicates if the display is enabled. </td></tr>
+  <tr><td> <code>closed</code> </td><td> boolean </td><td> Indicates if the display is closed. </td></tr>
+</tbody>
+</table>
+ </td></tr>
+  <tr><td> <code>displayId</code> </td><td> number </td><td> The identifier for the display. </td></tr>
+</tbody>
+</table>
 
 ### DisplayConfigErrorCode
 <a name="DisplayConfigErrorCode"></a>
@@ -764,15 +847,26 @@ A module that implements the client side of the DCV protocol.
 #### Parameters:
 <a name="parameters-15"></a>
 
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  fileResource  |  Object  |  Information about the file that is ready for download. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/dcv-module.html)  |
-|  id  |  string  |  The identifier for the file.  |
-|  url  |  string  |  The URL to use to download the file.  |
-|  domain  |  string  |  The resource domain.  |
-|  token  |  string  |  The authentication token to use to download the file. The token is also included in the URL.  |
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>fileResource</code> </td><td> Object </td><td> Information about the file that is ready for download.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>id</code> </td><td> string </td><td> The identifier for the file. </td></tr>
+  <tr><td> <code>url</code> </td><td> string </td><td> The URL to use to download the file. </td></tr>
+  <tr><td> <code>domain</code> </td><td> string </td><td> The resource domain. </td></tr>
+  <tr><td> <code>token</code> </td><td> string </td><td> The authentication token to use to download the file. The token is also included in the URL. </td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ### filePrintedCallback(printResource)
 <a name="filePrintedCallback"></a>
@@ -782,15 +876,26 @@ A module that implements the client side of the DCV protocol.
 #### Parameters:
 <a name="parameters-16"></a>
 
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  printResource  |  Object  |  Information about the printed file. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/dcv-module.html)  |
-|  id  |  string  |  The identifier for the printed file.  |
-|  url  |  string  |  The URL to use to download the printed file.  |
-|  domain  |  string  |  The resource domain. In this case, printer.  |
-|  token  |  string  |  The authentication token to use to download the printed file. The token is also included in the URL.  |
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>printResource</code> </td><td> Object </td><td> Information about the printed file.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>id</code> </td><td> string </td><td> The identifier for the printed file. </td></tr>
+  <tr><td> <code>url</code> </td><td> string </td><td> The URL to use to download the printed file. </td></tr>
+  <tr><td> <code>domain</code> </td><td> string </td><td> The resource domain. In this case, <code>printer</code>. </td></tr>
+  <tr><td> <code>token</code> </td><td> string </td><td> The authentication token to use to download the printed file. The token is also included in the URL. </td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ### filestorage
 <a name="filestorage"></a>
@@ -876,14 +981,25 @@ A module that implements the client side of the DCV protocol.
 #### Parameters:
 <a name="parameters-20"></a>
 
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  collaborators  |  Array.<Object>  |  A list of objects containing information on collaborators. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/dcv-module.html)  |
-|  username  |  string  |  The username of the collaborator.  |
-|  owner  |  boolean  |  Indicates whether the collaborator is the session owner.  |
-|  connectionId  |  number  |  Indicates the ID assigned by the server to the connection.  |
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>collaborators</code> </td><td> Array.&lt;Object&gt; </td><td> A list of objects containing information on collaborators.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>username</code> </td><td> string </td><td> The username of the collaborator. </td></tr>
+  <tr><td> <code>owner</code> </td><td> boolean </td><td> Indicates whether the collaborator is the session owner. </td></tr>
+  <tr><td> <code>connectionId</code> </td><td> number </td><td> Indicates the ID assigned by the server to the connection. </td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ### licenseNotificationCallback(notification)
 <a name="licenseNotificationCallback"></a>
@@ -893,19 +1009,30 @@ A module that implements the client side of the DCV protocol.
 #### Parameters:
 <a name="parameters-21"></a>
 
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  notification  |  Object  |  The notification. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/dcv-module.html)  |
-|  product  |  string  |  The DCV product.  |
-|  status  |  string  |  The status of the license.  |
-|  message  |  string  |  A message.  |
-|  leftDays  |  number  |  The number of days before the license expires.  |
-|  isDemo  |  boolean  |  Indicates if the license is a demo license.  |
-|  numUnlicensed  |  number  |  The number of unlicensed connections.  |
-|  licensingMode  |  string  |  The licensing mode.  |
-|  documentationUrl  |  string  |  The URL for the documentation.  |
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>notification</code> </td><td> Object </td><td> The notification.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>product</code> </td><td> string </td><td> The DCV product. </td></tr>
+  <tr><td> <code>status</code> </td><td> string </td><td> The status of the license. </td></tr>
+  <tr><td> <code>message</code> </td><td> string </td><td> A message. </td></tr>
+  <tr><td> <code>leftDays</code> </td><td> number </td><td> The number of days before the license expires. </td></tr>
+  <tr><td> <code>isDemo</code> </td><td> boolean </td><td> Indicates if the license is a demo license. </td></tr>
+  <tr><td> <code>numUnlicensed</code> </td><td> number </td><td> The number of unlicensed connections. </td></tr>
+  <tr><td> <code>licensingMode</code> </td><td> string </td><td> The licensing mode. </td></tr>
+  <tr><td> <code>documentationUrl</code> </td><td> string </td><td> The URL for the documentation. </td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ### list(path)
 <a name="list"></a>
@@ -951,18 +1078,29 @@ A module that implements the client side of the DCV protocol.
 #### Properties:
 <a name="properties-16"></a>
 
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  name  |  string  |  The name of the display head.  |
-|  rect  |  Object  |  Information about the display head. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/dcv-module.html)  |
-|  primary  |  boolean  |  Indicates whether the display head is the primary display head. This is determined from the remote operating system if available.  |
-|  dpi  |  number  |  The DPI of the display head.  |
-|  x  |  number  |  The initial x coordinate for the display head.  |
-|  y  |  number  |  The initial y coordinate for the display head.  |
-|  width  |  number  |  The width (in pixels) of the display head.  |
-|  height  |  number  |  The height (in pixels) of the display head.  |
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>name</code> </td><td> string </td><td> The name of the display head. </td></tr>
+  <tr><td> <code>rect</code> </td><td> Object </td><td> Information about the display head.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>x</code> </td><td> number </td><td> The initial <code>x</code> coordinate for the display head. </td></tr>
+  <tr><td> <code>y</code> </td><td> number </td><td> The initial <code>y</code> coordinate for the display head. </td></tr>
+  <tr><td> <code>width</code> </td><td> number </td><td> The width (in pixels) of the display head. </td></tr>
+  <tr><td> <code>height</code> </td><td> number </td><td> The height (in pixels) of the display head. </td></tr>
+</tbody>
+</table>
+ </td></tr>
+  <tr><td> <code>primary</code> </td><td> boolean </td><td> Indicates whether the display head is the primary display head. This is determined from the remote operating system if available. </td></tr>
+  <tr><td> <code>dpi</code> </td><td> number </td><td> The DPI of the display head. </td></tr>
+</tbody>
+</table>
 
 ### MultiMonitorErrorCode
 <a name="MultiMonitorErrorCode"></a>
@@ -988,14 +1126,25 @@ A module that implements the client side of the DCV protocol.
 #### Parameters:
 <a name="parameters-23"></a>
 
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  state  |  Array.<Object>  |  Information about the connection quality. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/dcv-module.html)  |
-|  name  |  string  |  The name of the indicator.  |
-|  status  |  NORMAL \| WARNING \| CRITICAL  |  Description of the status.  |
-|  changed  |  boolean  |  Indicates whether the status changed.  |
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>state</code> </td><td> Array.&lt;Object&gt; </td><td> Information about the connection quality.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>name</code> </td><td> string </td><td> The name of the indicator. </td></tr>
+  <tr><td> <code>status</code> </td><td> NORMAL | WARNING | CRITICAL </td><td> Description of the status. </td></tr>
+  <tr><td> <code>changed</code> </td><td> boolean </td><td> Indicates whether the status changed. </td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ### renameDirectory(src, dest)
 <a name="renameDirectory"></a>
@@ -1074,18 +1223,29 @@ A module that implements the client side of the DCV protocol.
 #### Properties:
 <a name="properties-19"></a>
 
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  name  |  string  |  The name of the software.  |
-|  version  |  Object  |  The software version number. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/dcv-module.html)  |
-|  os  |  string  |  The OS.  |
-|  arch  |  string  |  The architecture.  |
-|  hostname  |  string  |  The hostname.  |
-|  major  |  number  |  The major version number.  |
-|  minor  |  number  |  The minor version number.  |
-|  revision  |  number  |  The revision version number.  |
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>name</code> </td><td> string </td><td> The name of the software. </td></tr>
+  <tr><td> <code>version</code> </td><td> Object </td><td> The software version number.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>major</code> </td><td> number </td><td> The major version number. </td></tr>
+  <tr><td> <code>minor</code> </td><td> number </td><td> The minor version number. </td></tr>
+  <tr><td> <code>revision</code> </td><td> number </td><td> The revision version number. </td></tr>
+</tbody>
+</table>
+ </td></tr>
+  <tr><td> <code>os</code> </td><td> string </td><td> The OS. </td></tr>
+  <tr><td> <code>arch</code> </td><td> string </td><td> The architecture. </td></tr>
+  <tr><td> <code>hostname</code> </td><td> string </td><td> The hostname. </td></tr>
+</tbody>
+</table>
 
 ### stats
 <a name="stats"></a>

@@ -16,7 +16,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon Cognito service and res
 
 **Resource type:** `AWS::Cognito::UserPool`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cognito-user-pool-advanced-security-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/cognito-user-pool-advanced-security-enabled.html)
+**AWS Config rule:** [cognito-user-pool-advanced-security-enabled](https://docs.aws.amazon.com/config/latest/developerguide/cognito-user-pool-advanced-security-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -44,7 +44,7 @@ For information about activating threat protection for an Amazon Cognito user po
 
 **Resource type:** `AWS::Cognito::IdentityPool`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cognito-identity-pool-unauth-access-check.html](https://docs.aws.amazon.com/config/latest/developerguide/cognito-identity-pool-unauth-access-check.html)
+**AWS Config rule:** [cognito-identity-pool-unauth-access-check](https://docs.aws.amazon.com/config/latest/developerguide/cognito-identity-pool-unauth-access-check.html)
 
 **Schedule type:** Change triggered
 
@@ -68,7 +68,7 @@ For information about deactivating guest access for an Amazon Cognito identity p
 
 **Resource type:** `AWS::Cognito::UserPool`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cognito-user-pool-password-policy-check.html](https://docs.aws.amazon.com/config/latest/developerguide/cognito-user-pool-password-policy-check.html)
+**AWS Config rule:** [cognito-user-pool-password-policy-check](https://docs.aws.amazon.com/config/latest/developerguide/cognito-user-pool-password-policy-check.html)
 
 **Schedule type:** Change triggered
 
@@ -101,7 +101,7 @@ For information about creating or updating the password policy for an Amazon Cog
 
 **Resource type:** `AWS::Cognito::UserPool`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cognito-userpool-cust-auth-threat-full-check.html](https://docs.aws.amazon.com/config/latest/developerguide/cognito-userpool-cust-auth-threat-full-check.html)
+**AWS Config rule:** [cognito-userpool-cust-auth-threat-full-check](https://docs.aws.amazon.com/config/latest/developerguide/cognito-userpool-cust-auth-threat-full-check.html)
 
 **Schedule type:** Change triggered
 
@@ -125,7 +125,7 @@ For information about activating threat protection for an Amazon Cognito user po
 
 **Resource type:** `AWS::Cognito::UserPool`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cognito-user-pool-mfa-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/cognito-user-pool-mfa-enabled.html)
+**AWS Config rule:** [cognito-user-pool-mfa-enabled](https://docs.aws.amazon.com/config/latest/developerguide/cognito-user-pool-mfa-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -152,7 +152,7 @@ For information about how to configure MFA for an Amazon Cognito user pool, see 
 
 **Resource type:** `AWS::Cognito::UserPool`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cognito-user-pool-deletion-protection-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/cognito-user-pool-deletion-protection-enabled.html)
+**AWS Config rule:** [cognito-user-pool-deletion-protection-enabled](https://docs.aws.amazon.com/config/latest/developerguide/cognito-user-pool-deletion-protection-enabled.html)
 
 **Schedule type:** Change triggered
 

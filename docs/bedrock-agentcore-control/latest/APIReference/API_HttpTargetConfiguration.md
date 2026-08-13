@@ -18,6 +18,11 @@ The AgentCore Runtime target configuration for HTTP-based communication with an 
 Type: [RuntimeTargetConfiguration](API_RuntimeTargetConfiguration.md) object
 Required: No
 
+ ** connector **   <a name="bedrockagentcorecontrol-Type-HttpTargetConfiguration-connector"></a>
+The connector-based configuration for the HTTP target. Use this configuration when you want to route HTTP requests through a managed connector.
+Type: [HttpConnectorTargetConfiguration](API_HttpConnectorTargetConfiguration.md) object
+Required: No
+
  ** passthrough **   <a name="bedrockagentcorecontrol-Type-HttpTargetConfiguration-passthrough"></a>
 The passthrough configuration for the HTTP target. A passthrough target forwards requests directly to an external HTTP endpoint.
 Type: [PassthroughTargetConfiguration](API_PassthroughTargetConfiguration.md) object

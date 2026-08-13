@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/cost-mgmt-iam-p
 
 Amazon Bedrock automatically captures the [IAM principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html) identity ([IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) and [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)) for every inference request. You can optionally attach tags to your principals for additional cost dimensions like team, department, or cost center. This gives you per-user and per-role cost visibility without code changes or additional resources.
 
-IAM principal attribution currently works with Amazon Bedrock `bedrock-runtime` APIs ([InvokeModel API](inference-api.md) / [Converse API](conversation-inference.md) / [Chat Completions API](inference-chat-completions.md)). Support for `bedrock-mantle` APIs is coming soon.
+IAM principal attribution works with Amazon Bedrock APIs on both the `bedrock-runtime` endpoint ([InvokeModel API](inference-api.md) / [Converse API](conversation-inference.md) / [Chat Completions API](inference-chat-completions.md)) and the `bedrock-mantle` endpoint ([Responses API](bedrock-mantle.md) / [Chat Completions API](bedrock-mantle.md)).
 
 ## How it works
 <a name="cost-mgmt-iam-principal-tracking-how-it-works"></a>
@@ -26,9 +26,9 @@ Amazon Bedrock captures identity from any IAM principal type. The two most commo
 
 **IAM users** call Amazon Bedrock directly using long-lived access keys. The IAM user name and any tags attached to the user are recorded in AWS Billing.
 
-**IAM roles** are assumed by users, applications, or federated identities via AWS STS. When a principal calls `sts:AssumeRole`, the resulting temporary credentials carry the role's identity. Tags can come from two sources:
+**IAM roles** are assumed by users, applications, or federated identities through AWS STS. When a principal calls `sts:AssumeRole`, the resulting temporary credentials carry the role's identity. Tags can come from two sources:
 + **Principal tags** – Tags attached directly to the IAM role. These are static and apply to every session.
-+ **Session tags** – Tags passed at the time of role assumption via AWS STS. These are dynamic and can vary per session, making them useful for passing user-specific attributes like email, team, or cost center through a shared role.
++ **Session tags** – Tags passed at the time of role assumption through AWS STS. These are dynamic and can vary per session, making them useful for passing user-specific attributes like email, team, or cost center through a shared role.
 
 **Important**
 If a session tag and a principal tag share the same key, the session tag value overrides the principal tag value for that session. For more information, see [Pass session tags in AWS STS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html).
@@ -49,7 +49,7 @@ Tags flow to your billing data in two ways:
 
 To learn more about IAM tagging and best practices, see [Tags for IAM resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags.html).
 
-**Session tags** are passed dynamically when assuming an IAM role via AWS STS. They are ideal for federated users (authenticating through an identity provider like Okta, Auth0, or Entra) and LLM gateways that proxy requests on behalf of multiple users or tenants. Session tags can be passed in three ways:
+**Session tags** are passed dynamically when assuming an IAM role through AWS STS. They are ideal for federated users (authenticating through an identity provider like Okta, Auth0, or Entra) and LLM gateways that proxy requests on behalf of multiple users or tenants. Session tags can be passed in three ways:
 + **AssumeRole** – Pass `--tags` when calling `sts:AssumeRole` (for example, an LLM gateway assuming a Amazon Bedrock role per user or tenant).
 + **AssumeRoleWithWebIdentity (OIDC)** – Embed tags in the `https://aws.amazon.com/tags` claim in the ID token issued by your identity provider.
 + **AssumeRoleWithSAML** – Map `PrincipalTag:*` attributes in your IdP's SAML assertion.
@@ -85,7 +85,7 @@ To see identity-level cost breakdowns, create a CUR 2.0 data export that include
 
 1. Choose **Create** to create a new CUR 2.0 export.
 
-1. Configure the export and ensure you select the option to include the caller identity ARN.
+1. Configure the export and make sure you select the option to include the caller identity ARN.
 
 **Important**
 If you created a CUR 2.0 data export before enabling IAM principal attribution, you must create a new export and select the caller identity option. Existing exports do not retroactively include identity data. You must also ensure that your cost allocation tags are activated (Step 2) for tags to appear in the export.
@@ -186,6 +186,6 @@ We recommend using Projects for application-level attribution and IAM principal 
 
 | Method | Attributes by | Supported APIs | `bedrock-runtime` | `bedrock-mantle` |
 | --- | --- | --- | --- | --- |
-| IAM principal attribution | Identity (user, role, team) | [InvokeModel API](inference-api.md) / [Converse API](conversation-inference.md) / [Chat Completions API](inference-chat-completions.md) | ![Green circular icon with a white checkmark symbol inside.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![Red circular icon with an X symbol, indicating cancellation or denial.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
+| IAM principal attribution | Identity (user, role, team) | [InvokeModel API](inference-api.md) / [Converse API](conversation-inference.md) / [Chat Completions API](inference-chat-completions.md) on bedrock-runtime; [Responses API](bedrock-mantle.md) / [Chat Completions API](bedrock-mantle.md) on bedrock-mantle | ![Green circular icon with a white checkmark symbol inside.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![Green circular icon with a white checkmark symbol inside.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | Projects (Recommended) | Application or workload | [Responses API](bedrock-mantle.md) / [Chat Completions API](bedrock-mantle.md) | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | Application inference profiles | Application or workload | [InvokeModel API](inference-api.md) / [Converse API](conversation-inference.md) / [Chat Completions API](inference-chat-completions.md) | ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/ob
 # Configure the OpenTelemetry-based telemetry provider
 <a name="observability-telemetry-providers-otel"></a>
 
-The SDK for Kotlin provides an implementation of the `TelemetryProvider` interface backed by OpenTelemetry.
+The SDK for Kotlin provides an implementation of the [`TelemetryProvider`](/smithy-kotlin/api/latest/telemetry-api/aws.smithy.kotlin.runtime.telemetry/-telemetry-provider/index.html) interface backed by OpenTelemetry.
 
 ## Prerequisites
 <a name="observability-telemetry-providers-otel-prereqs"></a>

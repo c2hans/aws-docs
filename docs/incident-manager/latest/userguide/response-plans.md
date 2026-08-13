@@ -63,7 +63,7 @@ By default, Incident Manager automatically deduplicates multiple incidents creat
 
 When you include a chat channel in a response plan, responders receive incident updates through the channel. They can interact with the incident directly from the chat channel by using chat commands.
 
-Using Amazon Q Developer in chat applications, you can create a channel for Slack, for Microsoft Teams, or for Amazon Chime to use in your response plans. For information about creating a chat channel in Amazon Q Developer in chat applications, see the [https://docs.aws.amazon.com/chatbot/latest/adminguide/](https://docs.aws.amazon.com/chatbot/latest/adminguide/).
+Using Amazon Q Developer in chat applications, you can create a channel for Slack, for Microsoft Teams, or for Amazon Chime to use in your response plans. For information about creating a chat channel in Amazon Q Developer in chat applications, see the [*Amazon Q Developer in chat applications Administrator Guide*](https://docs.aws.amazon.com/chatbot/latest/adminguide/).
 
 **Important**
 Incident Manager must have permissions to publish to a chat channel's Amazon Simple Notification Service (Amazon SNS) topic. Without permissions to publish to that SNS topic, you can't add it to the response plan. Incident Manager publishes a test notification to the SNS topic to verify permissions.

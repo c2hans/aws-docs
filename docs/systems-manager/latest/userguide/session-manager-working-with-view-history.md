@@ -53,4 +53,4 @@ aws ssm describe-sessions \
 **Note**
 This command returns only results for connections to targets initiated using Session Manager. It doesn't list connections made through other means, such as Remote Desktop Protocol (RDP) or the Secure Shell Protocol (SSH).
 
-For information about other options you can use with the **describe-sessions** command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-sessions.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-sessions.html) in the AWS Systems Manager section of the AWS CLI Command Reference.
+For information about other options you can use with the **describe-sessions** command, see [describe-sessions](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-sessions.html) in the AWS Systems Manager section of the AWS CLI Command Reference.

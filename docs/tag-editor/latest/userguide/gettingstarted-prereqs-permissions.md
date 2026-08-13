@@ -29,16 +29,16 @@ To use the Tag Editor console to list and tag resources, the following permissio
 
 Tag Editor supports the following AWS managed policies that you can use to provide a predefined set of permissions to your users. You can attach these managed policies to any role, user, or group just as you would any other policy that you create.
 
-**[https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/ResourceGroupsandTagEditorReadOnlyAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/ResourceGroupsandTagEditorReadOnlyAccess)**
+**[ResourceGroupsandTagEditorReadOnlyAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/ResourceGroupsandTagEditorReadOnlyAccess)**
 This policy grants the attached IAM role or user permission to call the read-only operations for both AWS Resource Groups and Tag Editor. To read a resource's tags, you must also have permissions for that resource through a separate policy. Learn more in the following **Important** note.
 
-**[https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/ResourceGroupsandTagEditorFullAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/ResourceGroupsandTagEditorFullAccess)**
+**[ResourceGroupsandTagEditorFullAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/ResourceGroupsandTagEditorFullAccess)**
 This policy grants the attached IAM role or user permission to call any Resource Groups operation and the read and write tag operations in Tag Editor. To read or write a resource's tags, you must also have permissions for that resource through a separate policy. Learn more in the following **Important** note.
 
 **Important**
 The two previous policies grant permission to call the Tag Editor operations and use the Tag Editor console. However, you must also have permissions not only to invoke the operation, but also appropriate permissions to the specific resource whose tags you're trying to access. To grant that access to the tags, you must also attach one of the following policies:
-The AWS managed policy [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/ReadOnlyAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/ReadOnlyAccess) grants permissions to the read-only operations for every service's resources. AWS automatically keeps this policy up to date with new AWS services as they become available.
-Many services provide service-specific read-only AWS managed policies that you can use to limit access to only the resources provided by that service. For example, Amazon EC2 provides [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AmazonEC2ReadOnlyAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AmazonEC2ReadOnlyAccess).
+The AWS managed policy [ReadOnlyAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/ReadOnlyAccess) grants permissions to the read-only operations for every service's resources. AWS automatically keeps this policy up to date with new AWS services as they become available.
+Many services provide service-specific read-only AWS managed policies that you can use to limit access to only the resources provided by that service. For example, Amazon EC2 provides [AmazonEC2ReadOnlyAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AmazonEC2ReadOnlyAccess).
 You can create your own policy that grants access to only the specific read-only operations for the few services and resources you want your users to access. This policy uses either an allowlist strategy or a denylist strategy.
 An allowlist strategy takes advantage of the fact that access is denied by default until you ***explicitly allow*** it in a policy. So, you can use a policy like the following example.
 

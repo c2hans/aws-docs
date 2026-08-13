@@ -24,4 +24,4 @@ This section covers common issues you might encounter when working with CloudWat
   **Solution:** Check that your data source is properly configured and generating data, and verify that CloudWatch Logs resource policies are correctly set
 + **Issue:** Processor errors in pipeline
 
-  **Solution:** Review processor configuration and ensure input data format matches processor expectations
+  **Solution:** Review processor configuration and make sure input data format matches processor expectations

@@ -29,7 +29,7 @@ Connect Customer stores the following Personally Identifiable Information (PII) 
 ## External application data
 <a name="external-application-data"></a>
 
-Amazon AppIntegrations enables you to integrate with external applications. It stores references to other AWS resources and client-service specified metadata. No data is stored other than incidentally while being processed. When syncing data periodically with an Connect Customer service, data is encrypted using a customer managed key and stored temporarily for one month.
+Amazon AppIntegrations enables you to integrate with external applications. It stores references to other AWS resources and client-service specified metadata. No data is stored other than incidentally while being processed. When syncing data periodically with a Connect Customer service, data is encrypted using a customer managed key and stored temporarily for one month.
 
 ## Phone call media
 <a name="phone-call-media-handling"></a>
@@ -99,12 +99,12 @@ The following data stored by Connect Customer is treated as sensitive:
 + All contact attributes
 + All contact references
 
-## Contact Lens real-time processing
+## Conversational analytics real-time processing
 <a name="real-time-processing-data"></a>
 
-Content processed by Contact Lens in real-time is encrypted at rest and in transit. Data is encrypted with keys owned by Contact Lens.
+Content processed by conversational analytics in real-time is encrypted at rest and in transit. Data is encrypted with keys owned by conversational analytics.
 
-Contact Lens persists data (transcript, category names, etc.) on the Connect Customer side for a short period of time. This is to ensure that the API serves data continuously, for up to 24h after contact terminates.
+Conversational analytics persists data (transcript, category names, etc.) on the Connect Customer side for a short period of time. This is to ensure that the API serves data continuously, for up to 24h after contact terminates.
 
 ## Voiceprints and Voice ID audio recordings
 <a name="voiceprints-data-protection"></a>

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/find-handle-fo
 
 You can use the KMS key ID of a KMS key in an AWS CloudHSM key store to identify the key in your AWS CloudHSM cluster that serves as its key material.
 
-When AWS KMS creates the key material for a KMS key in your AWS CloudHSM cluster, it writes the Amazon Resource Name (ARN) of the KMS key in the key label. Unless you have changed the label value, you can use the [https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html) command in CloudHSM CLI to find the key-resource and id of the key material for the KMS key.
+When AWS KMS creates the key material for a KMS key in your AWS CloudHSM cluster, it writes the Amazon Resource Name (ARN) of the KMS key in the key label. Unless you have changed the label value, you can use the [**key list**](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html) command in CloudHSM CLI to find the key-resource and id of the key material for the KMS key.
 
 All CloudTrail log entries for cryptographic operation with a KMS key in an AWS CloudHSM key store include an `additionalEventData` field with the `customKeyStoreId` and `backingKeyId`. The value returned in the `backingKeyId` field is the `id` AWS CloudHSM key attribute. You can filter the **key list** AWS CloudHSM CLI operation by KMS key ARN to identify the CloudHSM key `id` attribute associated with a specific KMS key.
 
@@ -21,7 +21,7 @@ On January 1, 2025, AWS CloudHSM will end support for the Client SDK 3 command l
 **Note**
 While a custom key store is disconnected, all attempts to create KMS keys in the custom key store or to use existing KMS keys in cryptographic operations will fail. This action can prevent users from storing and accessing sensitive data.
 
-1. Use the [https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html) command in CloudHSM CLI and filter by `label` to find the KMS key for a particular key in your AWS CloudHSM cluster. Specify the `verbose` argument to include all attributes and key information for the matched key. If you don't specify the `verbose` argument, the **key list** operation only returns the matched key's key-reference and label attributes.
+1. Use the [**key list**](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html) command in CloudHSM CLI and filter by `label` to find the KMS key for a particular key in your AWS CloudHSM cluster. Specify the `verbose` argument to include all attributes and key information for the matched key. If you don't specify the `verbose` argument, the **key list** operation only returns the matched key's key-reference and label attributes.
 
    The following example demonstrates how to filter by the `label` attribute that stores the KMS key ARN. Before running this command, replace the example KMS key ARN with a valid one from your account.
 

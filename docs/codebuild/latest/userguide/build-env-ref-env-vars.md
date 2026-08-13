@@ -32,7 +32,7 @@ CODEBUILD\_BUILD\_SUCCEEDING
 Whether the current build is succeeding. Set to `0` if the build is failing, or `1` if the build is succeeding.
 
 CODEBUILD\_INITIATOR
-The entity that started the build. If CodePipeline started the build, this is the pipeline's name (for example, `codepipeline/my-demo-pipeline`). If an user started the build, this is the user's name (for example, `MyUserName`). If the Jenkins plugin for CodeBuild started the build, this is the string `CodeBuild-Jenkins-Plugin`.
+The entity that started the build. If CodePipeline started the build, this is the pipeline's name (for example, `codepipeline/my-demo-pipeline`). If a user started the build, this is the user's name (for example, `MyUserName`). If the Jenkins plugin for CodeBuild started the build, this is the string `CodeBuild-Jenkins-Plugin`.
 
 CODEBUILD\_KMS\_KEY\_ID
 The identifier of the AWS KMS key that CodeBuild is using to encrypt the build output artifact (for example, `arn:aws:kms:{{region-ID}}:{{account-ID}}:key/{{key-ID}}` or `alias/{{key-alias}}`).

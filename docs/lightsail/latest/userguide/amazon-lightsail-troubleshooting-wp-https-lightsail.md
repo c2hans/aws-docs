@@ -165,7 +165,7 @@ Use the following procedure to edit the repository URL that's listed in the Debi
    $ cd /etc/apt/sources.list.d/
    ```
 
-1. Use a text editor of your choice to open the `buster-backports.list` file. If the file isn't found in this directory, you can also check in `/etc/apt/sources.list`. The preinstalled Vim text editor is used in the example command. For more information, see the [https://www.vim.org/docs.php](https://www.vim.org/docs.php).
+1. Use a text editor of your choice to open the `buster-backports.list` file. If the file isn't found in this directory, you can also check in `/etc/apt/sources.list`. The preinstalled Vim text editor is used in the example command. For more information, see the [*Vim documentation*](https://www.vim.org/docs.php).
 
    ```
    $ vim buster-backports.list
@@ -196,7 +196,7 @@ Use the following procedure to manually remove the deprecated PPA repository fro
    $ cd /etc/apt/sources.list.d/
    ```
 
-1. Use a text editor of your choice to open the `certbot-ubuntu-certbot-version.list` file. The preinstalled Vim text editor is used in the example command. For more information, see the [https://www.vim.org/docs.php](https://www.vim.org/docs.php).
+1. Use a text editor of your choice to open the `certbot-ubuntu-certbot-version.list` file. The preinstalled Vim text editor is used in the example command. For more information, see the [*Vim documentation*](https://www.vim.org/docs.php).
 
    In the command, replace **version** with the version of Ubuntu that the repository is incompatible with; this will be the same version that shows up in the error message. For example, **lunar** or **mantic**.
 

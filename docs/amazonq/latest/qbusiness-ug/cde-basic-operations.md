@@ -21,18 +21,18 @@ Amazon Q Business can't create a target document attribute field if it isn't alr
 ## Basic operations using the Amazon Q Business API
 <a name="cde-basic-operations-api"></a>
 
-To apply basic logic, you specify your document attribute configuration using the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeTarget.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeTarget.html) object when you use either the [BatchPutDocument](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) API operation or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) operation. Use the following parameters to create your configuration:
+To apply basic logic, you specify your document attribute configuration using the [DocumentAttributeTarget](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeTarget.html) object when you use either the [BatchPutDocument](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) API operation or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) operation. Use the following parameters to create your configuration:
 + `key` – The target field that you want to manipulate. For example, the key `Department` is a field or attribute that holds all the department names associated with the documents.
 + `value` – The target value for your target attribute.
 + `attributeValueOperator` – To delete an existing target value, set to `DELETE`. The default value for this parameter is `UPDATE`.
 
-If a specific condition is met, you can also specify a value to use in the target field. Set the condition using the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeCondition.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeCondition.html) object. For example, if the `_source_uri` field contains `financial` in its URI value, you can choose to pre-fill the target field `department` with the target value `finance` for the document.
+If a specific condition is met, you can also specify a value to use in the target field. Set the condition using the [DocumentAttributeCondition](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeCondition.html) object. For example, if the `_source_uri` field contains `financial` in its URI value, you can choose to pre-fill the target field `department` with the target value `finance` for the document.
 
 For more information, see the following topics in the *Amazon Q Business API Reference*:
 + [BatchPutDocument](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html)
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html)
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeTarget.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeTarget.html)
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeCondition.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeCondition.html)
++ [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html)
++ [DocumentAttributeTarget](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeTarget.html)
++ [DocumentAttributeCondition](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeCondition.html)
 
 ## Basic operations using the Amazon Q Business console
 <a name="cde-basic-operations-console"></a>

@@ -16,7 +16,7 @@ This topic provides information that will help you get started using the Message
 ## Prerequisites and configuration
 <a name="mpf-get-started-prereq"></a>
 + The credentials you provide for your application must have appropriate permissions for the messaging service and operations that it uses. For more information, see the security topics for [SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-authentication-and-access-control.html), [SNS](https://docs.aws.amazon.com/sns/latest/dg/security-iam.html), and [EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-iam.html) in their respective developer guides. Also see the portion of the [README](https://github.com/aws/aws-dotnet-messaging/) file on GitHub that discusses specific [permissions](https://github.com/aws/aws-dotnet-messaging/blob/main/README.md#permissions).
-+ To use the AWS Message Processing Framework for .NET, you must add the [https://www.nuget.org/packages/AWS.Messaging](https://www.nuget.org/packages/AWS.Messaging) NuGet package to your project. For example:
++ To use the AWS Message Processing Framework for .NET, you must add the [`AWS.Messaging`](https://www.nuget.org/packages/AWS.Messaging) NuGet package to your project. For example:
 
   ```
   dotnet add package AWS.Messaging

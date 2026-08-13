@@ -26,12 +26,12 @@ For more information about this standard, see [Security Hub CSPM controls](https
 
 This standard is available in Security Hub CSPM only if you enable Security Hub CSPM controls from AWS Control Tower. AWS Control Tower creates the standard when you first enable an applicable control by using one of the following methods:
 + AWS Control Tower console
-+ AWS Control Tower API (call the [https://docs.aws.amazon.com/controltower/latest/APIReference/API_EnableControl.html](https://docs.aws.amazon.com/controltower/latest/APIReference/API_EnableControl.html) API)
-+ AWS CLI (run the [https://docs.aws.amazon.com/cli/latest/reference/controltower/enable-control.html](https://docs.aws.amazon.com/cli/latest/reference/controltower/enable-control.html) command)
++ AWS Control Tower API (call the [`EnableControl`](https://docs.aws.amazon.com/controltower/latest/APIReference/API_EnableControl.html) API)
++ AWS CLI (run the [`enable-control`](https://docs.aws.amazon.com/cli/latest/reference/controltower/enable-control.html) command)
 
 When you enable a Security Hub CSPM control through AWS Control Tower, if you haven’t already enabled Security Hub CSPM, AWS Control Tower also enables Security Hub CSPM for you in those specific accounts and Regions.
 
-To identify an Security Hub CSPM control by control ID in Control Catalog, you can use the field `Implementation.Identifier` in AWS Control Tower. This field maps to Security Hub CSPM control ID and can be used to filter for a specific control ID. To retrieve control metadata for a specific Security Hub CSPM control (say, "CodeBuild.1") in AWS Control Tower, you can use the [https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListControls.html](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListControls.html) API:
+To identify an Security Hub CSPM control by control ID in Control Catalog, you can use the field `Implementation.Identifier` in AWS Control Tower. This field maps to Security Hub CSPM control ID and can be used to filter for a specific control ID. To retrieve control metadata for a specific Security Hub CSPM control (say, "CodeBuild.1") in AWS Control Tower, you can use the [`ListControls`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListControls.html) API:
 
 `aws controlcatalog list-controls --filter '{"Implementations":{"Identifiers":["CodeBuild.1"],"Types":["AWS::SecurityHub::SecurityControl"]}}'`
 
@@ -46,8 +46,8 @@ After you've enabled Security Hub CSPM controls through AWS Control Tower and th
 
 When Security Hub CSPM adds new controls to the Service-Managed Standard: AWS Control Tower standard, they aren't automatically enabled for customers who have the standard enabled. You should enable and disable controls for the standard from AWS Control Tower by using one of the following methods:
 + AWS Control Tower console
-+ AWS Control Tower API (call the [https://docs.aws.amazon.com/controltower/latest/APIReference/API_EnableControl.html](https://docs.aws.amazon.com/controltower/latest/APIReference/API_EnableControl.html) and [https://docs.aws.amazon.com/controltower/latest/APIReference/API_DisableControl.html](https://docs.aws.amazon.com/controltower/latest/APIReference/API_DisableControl.html) APIs)
-+ AWS CLI (run the [https://docs.aws.amazon.com/cli/latest/reference/controltower/enable-control.html](https://docs.aws.amazon.com/cli/latest/reference/controltower/enable-control.html) and [https://docs.aws.amazon.com/cli/latest/reference/controltower/disable-control.html](https://docs.aws.amazon.com/cli/latest/reference/controltower/disable-control.html) commands)
++ AWS Control Tower API (call the [`EnableControl`](https://docs.aws.amazon.com/controltower/latest/APIReference/API_EnableControl.html) and [`DisableControl`](https://docs.aws.amazon.com/controltower/latest/APIReference/API_DisableControl.html) APIs)
++ AWS CLI (run the [`enable-control`](https://docs.aws.amazon.com/cli/latest/reference/controltower/enable-control.html) and [`disable-control`](https://docs.aws.amazon.com/cli/latest/reference/controltower/disable-control.html) commands)
 
 When you change the enablement status of a control in AWS Control Tower, the change is also reflected in Security Hub CSPM.
 
@@ -66,8 +66,8 @@ When you enable or disable controls in AWS Control Tower, the action applies acr
 You can view the enablement status of a control by using one of the following methods:
 + Security Hub CSPM console, Security Hub CSPM API, or AWS CLI
 + AWS Control Tower console
-+ AWS Control Tower API to see a list of enabled controls (call the [https://docs.aws.amazon.com/controltower/latest/APIReference/API_ListEnabledControls.html](https://docs.aws.amazon.com/controltower/latest/APIReference/API_ListEnabledControls.html) API)
-+ AWS CLI to see a list of enabled controls (run the [https://docs.aws.amazon.com/cli/latest/reference/controltower/list-enabled-controls.html](https://docs.aws.amazon.com/cli/latest/reference/controltower/list-enabled-controls.html) command)
++ AWS Control Tower API to see a list of enabled controls (call the [`ListEnabledControls`](https://docs.aws.amazon.com/controltower/latest/APIReference/API_ListEnabledControls.html) API)
++ AWS CLI to see a list of enabled controls (run the [`list-enabled-controls`](https://docs.aws.amazon.com/cli/latest/reference/controltower/list-enabled-controls.html) command)
 
 A control that you disable in AWS Control Tower has an enablement status of `Disabled` in Security Hub CSPM unless you explicitly enable that control in Security Hub CSPM.
 
@@ -83,8 +83,8 @@ When you enable controls for Service-Managed Standard: AWS Control Tower, Securi
 
 You can delete this service managed standard in AWS Control Tower by disabling all applicable controls using one of the following methods:
 + AWS Control Tower console
-+ AWS Control Tower API (call the [https://docs.aws.amazon.com/controltower/latest/APIReference/API_DisableControl.html](https://docs.aws.amazon.com/controltower/latest/APIReference/API_DisableControl.html) API)
-+ AWS CLI (run the [https://docs.aws.amazon.com/cli/latest/reference/controltower/disable-control.html](https://docs.aws.amazon.com/cli/latest/reference/controltower/disable-control.html) command)
++ AWS Control Tower API (call the [`DisableControl`](https://docs.aws.amazon.com/controltower/latest/APIReference/API_DisableControl.html) API)
++ AWS CLI (run the [`disable-control`](https://docs.aws.amazon.com/cli/latest/reference/controltower/disable-control.html) command)
 
 Disabling all controls deletes the standard in all managed accounts and governed Regions in AWS Control Tower. Deleting the standard in AWS Control Tower removes it from the **Standards** page of the Security Hub CSPM console, and you can no longer access it by using the Security Hub CSPM API or AWS CLI.
 
@@ -109,8 +109,8 @@ Service-Managed Standard: AWS Control Tower supports a subset of controls that a
 
 To see what Security Hub CSPM controls are supported by AWS Control Tower, you can use one of the following methods:
 + AWS Control Catalog console where you can filter for `“Control owner = AWS Security Hub”`
-+ AWS Control Catalog API (call the [https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListControls.html](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListControls.html) API) with filter for `Implementations` to check for `Types` is `AWS::SecurityHub::SecurityControl`
-+ AWS CLI (run the [https://docs.aws.amazon.com/cli/latest/reference/controlcatalog/list-controls.html](https://docs.aws.amazon.com/cli/latest/reference/controlcatalog/list-controls.html) command) with filter for `Implementations`. Example CLI command:
++ AWS Control Catalog API (call the [`ListControls`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListControls.html) API) with filter for `Implementations` to check for `Types` is `AWS::SecurityHub::SecurityControl`
++ AWS CLI (run the [`list-controls`](https://docs.aws.amazon.com/cli/latest/reference/controlcatalog/list-controls.html) command) with filter for `Implementations`. Example CLI command:
 
   `aws controlcatalog list-controls --filter '{"Implementations":{"Types":["AWS::SecurityHub::SecurityControl"]}}'`
 

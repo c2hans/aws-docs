@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DevOpsAgent::Service PagerDutyDetails
 <a name="aws-properties-devopsagent-service-pagerdutydetails"></a>
 
-<a name="aws-properties-devopsagent-service-pagerdutydetails-description"></a>The `PagerDutyDetails` property type specifies Property description not available. for an [AWS::DevOpsAgent::Service](aws-resource-devopsagent-service.md).
+Configuration details for registering a PagerDuty service.
 
 ## Syntax
 <a name="aws-properties-devopsagent-service-pagerdutydetails-syntax"></a>
@@ -38,13 +38,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-service-pagerdutydetails-properties"></a>
 
 `AuthorizationConfig`  <a name="cfn-devopsagent-service-pagerdutydetails-authorizationconfig"></a>
-Property description not available.
+The authorization configuration for the PagerDuty service.
 *Required*: Yes
 *Type*: [PagerDutyAuthorizationConfig](aws-properties-devopsagent-service-pagerdutyauthorizationconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Scopes`  <a name="cfn-devopsagent-service-pagerdutydetails-scopes"></a>
-Property description not available.
+The PagerDuty scopes that you grant to the service.
 *Required*: Yes
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

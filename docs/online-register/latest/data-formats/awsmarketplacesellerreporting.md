@@ -11,4 +11,4 @@ AWS Marketplace Seller Reporting provides the following APIs for data retrieval.
 
 | Actions | Description | Access level |
 | --- | --- | --- |
-| <a name="aws-marketplace-GetSellerDashboard"></a>[https://docs.aws.amazon.com/marketplace/latest/userguide/dashboards.html#reports-accessing](https://docs.aws.amazon.com/marketplace/latest/userguide/dashboards.html#reports-accessing) | View a seller dashboard | Read |
+| <a name="aws-marketplace-GetSellerDashboard"></a>[GetSellerDashboard](https://docs.aws.amazon.com/marketplace/latest/userguide/dashboards.html#reports-accessing) | View a seller dashboard | Read |

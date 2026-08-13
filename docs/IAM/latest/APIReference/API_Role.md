@@ -73,6 +73,11 @@ Contains information about the last time that an IAM role was used. This include
 Type: [RoleLastUsed](API_RoleLastUsed.md) object
 Required: No
 
+ ** SourceRoleTemplate **
+Contains information about the role template that this role was created from. This member is present only for roles created with [AcquireRole](https://docs.aws.amazon.com/IAM/latest/APIReference/API_AcquireRole.html).
+Type: [SourceRoleTemplate](API_SourceRoleTemplate.md) object
+Required: No
+
  ** Tags.member.N **
 A list of tags that are attached to the role. For more information about tagging, see [Tagging IAM resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags.html) in the *IAM User Guide*.
 Type: Array of [Tag](API_Tag.md) objects

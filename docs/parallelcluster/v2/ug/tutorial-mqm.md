@@ -174,14 +174,14 @@ $ ls -l hellojob.sh
 -rwxrwxr-x 1 ec2-user ec2-user 57 Sep 23 21:57 hellojob.sh
 ```
 
-Submit the job using the `sbatch` command. Request two nodes for this job with the `-N 2` option, and verify that the job submits successfully. For more information about `sbatch`, see [https://slurm.schedmd.com/sbatch.html](https://slurm.schedmd.com/sbatch.html) in the *Slurm documentation*.
+Submit the job using the `sbatch` command. Request two nodes for this job with the `-N 2` option, and verify that the job submits successfully. For more information about `sbatch`, see [sbatch](https://slurm.schedmd.com/sbatch.html) in the *Slurm documentation*.
 
 ```
 $ sbatch -N 2 --wrap "srun hellojob.sh"
 Submitted batch job 2
 ```
 
-You can view your queue and check the status of the job with the `squeue` command. Note that, because you didn't specify a specific queue, the default queue (`spot`) is used. For more information about `squeue`, see [https://slurm.schedmd.com/squeue.html](https://slurm.schedmd.com/squeue.html) in the *Slurmdocumentation*.
+You can view your queue and check the status of the job with the `squeue` command. Note that, because you didn't specify a specific queue, the default queue (`spot`) is used. For more information about `squeue`, see [squeue](https://slurm.schedmd.com/squeue.html) in the *Slurmdocumentation*.
 
 ```
 $ squeue

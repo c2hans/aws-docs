@@ -18,7 +18,7 @@ You can enable public network support only when creating a new service profile. 
 ## Roaming parameters
 <a name="lorawan-roaming-parameters"></a>
 
-Specify the following parameters when creating a service profile for your device. Specify these parameters when adding a service profile from the [Profiles](https://console.aws.amazon.com/iot/home#/wireless/profiles) hub of the AWS IoT console, or using the AWS IoT Wireless API operation, [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateServiceProfile.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateServiceProfile.html), or the AWS CLI command, [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-service-profile.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-service-profile.html).
+Specify the following parameters when creating a service profile for your device. Specify these parameters when adding a service profile from the [Profiles](https://console.aws.amazon.com/iot/home#/wireless/profiles) hub of the AWS IoT console, or using the AWS IoT Wireless API operation, [`CreateServiceProfile`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateServiceProfile.html), or the AWS CLI command, [`create-service-profile`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-service-profile.html).
 
 **Note**
 AWS IoT Core for LoRaWAN does not support handover roaming. When creating the service profile, you can't enable the `HrAllowed` parameter that specifies whether to use handover roaming.
@@ -47,7 +47,7 @@ Go to the [Profiles](https://console.aws.amazon.com/iot/home#/wireless/profiles)
    +
 
 **Using the AWS IoT Wireless API**
-To enable roaming when creating a service profile, use the [CreateServiceProfile](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateServiceProfile.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-service-profile.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-service-profile.html) CLI command, as shown in example below.
+To enable roaming when creating a service profile, use the [CreateServiceProfile](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateServiceProfile.html) API operation or the [`create-service-profile`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-service-profile.html) CLI command, as shown in example below.
 
      ```
      aws iotwireless create-service-profile \
@@ -77,7 +77,7 @@ Go to the [Profiles](https://console.aws.amazon.com/iot/home#/wireless/profiles)
    +
 
 **Using the AWS IoT Wireless API**
-To view the roaming parameters that you enabled, use the [GetServiceProfile](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetServiceProfile.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-service-profile.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-service-profile.html) CLI command, as shown in example below.
+To view the roaming parameters that you enabled, use the [GetServiceProfile](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetServiceProfile.html) API operation or the [`get-service-profile`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-service-profile.html) CLI command, as shown in example below.
 
      ```
      aws iotwireless get-service-profile \
@@ -220,7 +220,7 @@ In some cases, even if you receive the `MessageId`, packets can get dropped. For
 ## View coverage information
 <a name="lorawan-roaming-coverage"></a>
 
-After you've enabled the public network, you can view the network coverage information in the AWS IoT console. Go to the [https://console.aws.amazon.com/iot/home#/wireless/network-coverage](https://console.aws.amazon.com/iot/home#/wireless/network-coverage) hub of the AWS IoT console and then search for locations to see the coverage information of your devices on the map.
+After you've enabled the public network, you can view the network coverage information in the AWS IoT console. Go to the [**Coverage**](https://console.aws.amazon.com/iot/home#/wireless/network-coverage) hub of the AWS IoT console and then search for locations to see the coverage information of your devices on the map.
 
 **Note**
 This feature uses the Amazon Location Service to display the coverage information of your devices on an Amazon Location map. Before using Amazon Location maps, review the Terms and Conditions for Amazon Location Service. Note that AWS may transmit your API queries to your chosen third party data provider, which may be outside of the AWS Region that you are currently using. For more information, see [AWS Service Terms](https://aws.amazon.com/service-terms/).

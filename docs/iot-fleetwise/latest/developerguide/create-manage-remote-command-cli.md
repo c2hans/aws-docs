@@ -24,7 +24,7 @@ This topic shows how you can create and manage a command resource using the AWS 
 ## Create a command resource
 <a name="create-remote-command-cli"></a>
 
-You can use the [https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCommand.html](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCommand.html) AWS IoT Core control plane API operation or the AWS IoT FleetWise console to create a command.
+You can use the [`CreateCommand`](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCommand.html) AWS IoT Core control plane API operation or the AWS IoT FleetWise console to create a command.
 
 ### Create a command (console)
 <a name="create-command-console"></a>
@@ -93,7 +93,7 @@ The `CreateCommand` API operation returns a response that contains the ID and AR
 ## Retrieve information about a command
 <a name="get-remote-command-cli"></a>
 
-You can use the [https://docs.aws.amazon.com/iot/latest/apireference/API_GetCommand.html](https://docs.aws.amazon.com/iot/latest/apireference/API_GetCommand.html) AWS IoT Core control plane API operation to retrieve information about a command resource.
+You can use the [`GetCommand`](https://docs.aws.amazon.com/iot/latest/apireference/API_GetCommand.html) AWS IoT Core control plane API operation to retrieve information about a command resource.
 
 To get information about a command resource, run the following command. Replace {{command-id}} with the identifier that was used when creating the command.
 
@@ -128,7 +128,7 @@ The `GetCommand` API operation returns a response that contains the following in
 ## List commands in your account
 <a name="list-remote-command-cli"></a>
 
-You can use the [https://docs.aws.amazon.com/iot/latest/apireference/API_ListCommands.html](https://docs.aws.amazon.com/iot/latest/apireference/API_ListCommands.html) AWS IoT Core control plane API operation to list all commands in your account that you created.
+You can use the [`ListCommands`](https://docs.aws.amazon.com/iot/latest/apireference/API_ListCommands.html) AWS IoT Core control plane API operation to list all commands in your account that you created.
 
 To list commands in your account, run the following command. By default, the API returns commands that were created for both namespaces. To filter the list to display only commands that were created for AWS IoT FleetWise, run the following command.
 
@@ -147,7 +147,7 @@ The `ListCommands` API operation returns a response that contains the following 
 ## Update or deprecate a command resource
 <a name="update-remote-command-cli"></a>
 
-You can use the [https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCommand.html](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCommand.html) AWS IoT Core control plane API operation or AWS IoT FleetWise console to update a command resource. You can update the display name and description of a command. You can also deprecate a command if it's not currently being used.
+You can use the [`UpdateCommand`](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCommand.html) AWS IoT Core control plane API operation or AWS IoT FleetWise console to update a command resource. You can update the display name and description of a command. You can also deprecate a command if it's not currently being used.
 
 **Note**
 You can't modify the namespace information or the parameters to be used when executing the command.
@@ -216,7 +216,7 @@ Once a command has been deprecated, existing command executions will continue ru
 ## Delete a command resource
 <a name="delete-remote-command-cli"></a>
 
-You can use the [https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteCommand.html](https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteCommand.html) AWS IoT Core control plane API operation or AWS IoT FleetWise console to delete a command resource.
+You can use the [`DeleteCommand`](https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteCommand.html) AWS IoT Core control plane API operation or AWS IoT FleetWise console to delete a command resource.
 
 **Note**
 Deletion actions are permanent and can't be undone. The command will be permanently removed from your account.

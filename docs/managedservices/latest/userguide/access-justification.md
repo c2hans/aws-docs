@@ -71,15 +71,15 @@ Do not modify or delete these roles.
   <tr><td>ams-security-admin</td><td>AD Admin access</td></tr>
   <tr><td>ams-access-security-analyst</td><td rowspan="2">SALZ, MALZ Application, MALZ Tools-Application, MALZ Core</td><td>AMS Security access</td></tr>
   <tr><td>ams-access-security-analyst-read-only</td><td>AMS Security, read only access</td></tr>
-  <tr><td>Sentinel\_AdminUser\_Role\_PXHazRQadu0PVcCDcMbHE</td><td>SALZ</td><td>[BreakGlassRole]Used to breakGlass into the customer accounts</td></tr>
-  <tr><td>Sentinel\_PowerUser\_Role\_wZuPuS0ROOl0IazDbRI9</td><td rowspan="5">SALZ, MALZ</td><td>Poweruser access to customer accounts for RFC execution</td></tr>
-  <tr><td>Sentinel\_ReadOnlyUser\_Role\_Pd4L6Rw9RD0lnLkD5JOo</td><td>ReadOnly access to customer accounts for RFC execution</td></tr>
-  <tr><td>ams\_admin\_role</td><td>Admin access to customer accounts for RFC execution</td></tr>
-  <tr><td>AWSManagedServices\_Provisioning\_CustomerStacksRole</td><td>Used to launch and update CFN stacks on behalf of customers through CloudFormation Ingest</td></tr>
-  <tr><td>customer\_ssm\_automation\_role</td><td>Role passed by CT executions to SSM Automation for runbook execution</td></tr>
-  <tr><td>ams\_ssm\_automation\_role</td><td>SALZ, MALZ Application, MALZ Core</td><td>Role passed by AMS services to SSM Automation for runbook execution</td></tr>
-  <tr><td>ams\_ssm\_iam\_deployment\_role</td><td>MALZ Application</td><td>Role used by IAM catalog</td></tr>
-  <tr><td>ams\_ssm\_shared\_svcs\_intermediary\_role</td><td>MALZ Shared Services</td><td>Role used by application ams\_ssm\_automation\_role to execute specific SSM Documents in Shared Services account</td></tr>
+  <tr><td>Sentinel_AdminUser_Role_PXHazRQadu0PVcCDcMbHE</td><td>SALZ</td><td>[BreakGlassRole]Used to breakGlass into the customer accounts</td></tr>
+  <tr><td>Sentinel_PowerUser_Role_wZuPuS0ROOl0IazDbRI9</td><td rowspan="5">SALZ, MALZ</td><td>Poweruser access to customer accounts for RFC execution</td></tr>
+  <tr><td>Sentinel_ReadOnlyUser_Role_Pd4L6Rw9RD0lnLkD5JOo</td><td>ReadOnly access to customer accounts for RFC execution</td></tr>
+  <tr><td>ams_admin_role</td><td>Admin access to customer accounts for RFC execution</td></tr>
+  <tr><td>AWSManagedServices_Provisioning_CustomerStacksRole</td><td>Used to launch and update CFN stacks on behalf of customers through CloudFormation Ingest</td></tr>
+  <tr><td>customer_ssm_automation_role</td><td>Role passed by CT executions to SSM Automation for runbook execution</td></tr>
+  <tr><td>ams_ssm_automation_role</td><td>SALZ, MALZ Application, MALZ Core</td><td>Role passed by AMS services to SSM Automation for runbook execution</td></tr>
+  <tr><td>ams_ssm_iam_deployment_role</td><td>MALZ Application</td><td>Role used by IAM catalog</td></tr>
+  <tr><td>ams_ssm_shared_svcs_intermediary_role</td><td>MALZ Shared Services</td><td>Role used by application ams_ssm_automation_role to execute specific SSM Documents in Shared Services account</td></tr>
   <tr><td>AmsOpsCenterRole</td><td rowspan="3">SALZ, MALZ</td><td>Used to create and update OpsItems in customer accounts</td></tr>
   <tr><td>AMSOpsItemAutoExecutionRole</td><td>Used to get SSM Documents, describe resource tags, update OpsItems, and start automation</td></tr>
   <tr><td>customer-mc-ec2-instance-profile</td><td>Default customer EC2 instance profile (role)</td></tr>

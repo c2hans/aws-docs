@@ -49,8 +49,8 @@ After you enable session replay, you can view recorded sessions in the CloudWatc
 
 You can also find sessions with replays in the **Sessions** tab. Any session that has a replay available displays a play button next to it. Choose the play button to open the replay player.
 
-![The Session replay tab in the CloudWatch RUM console showing a list of recorded sessions with session ID, duration, start time, browser type, and device type.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/rum-session-replay-console.png)
+![Session replay tab showing a list of recorded sessions with key details.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/rum-session-replay-console.png)
 
 Choose a session to open the replay player. The player shows a visual playback of the user's session, including a timeline of interactions on the right side. The timeline displays each user interaction, such as page navigations, scrolls, clicks, and text inputs, along with the timestamp when each interaction occurred. You can use the playback controls to adjust the speed (1x, 2x, 4x, or 8x) and skip inactive periods.
 
-![The session replay player showing a visual playback of a user session with playback controls and a timeline of user interactions including scrolls, clicks, and text inputs.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/rum-session-replay-player.png)
+![Session replay player showing visual playback of a user session with interaction timeline.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/rum-session-replay-player.png)

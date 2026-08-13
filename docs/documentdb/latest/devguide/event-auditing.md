@@ -478,7 +478,7 @@ Use following steps to access your audit events on Amazon CloudWatch.
 <a name="filtering-dml-events"></a>
 
 ### Getting started with DML audit filtering
-<a name="w2aac39c55c21b3"></a>
+<a name="w2aac39c57c21b3"></a>
 
 DML audit events can be filtered before they are written to Amazon CloudWatch. To utilize this feature, audit log and DML logging must be enabled. Amazon DocumentDB supports filtering on `atype`, `command`, `user`, `namespace`, and `auditAuthorizationSuccess`.
 

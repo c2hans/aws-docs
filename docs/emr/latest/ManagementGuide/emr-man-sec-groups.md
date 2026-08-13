@@ -44,8 +44,8 @@ The default managed security group for the primary instance in public subnets ha
   <tr><th>Type</th><th>Protocol</th><th>Port range</th><th>Source</th><th>Details</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="5">Inbound rules</td></tr>
-  <tr><td>All ICMP-IPv4</td><td>All</td><td>N/A</td><td rowspan="3">The Group ID of the managed security group for the primary instance. In other words, the same security group in which the rule appears.</td><td rowspan="3">These reflexive rules allow inbound traffic from any instance associated with the specified security group. Using the default `ElasticMapReduce-primary` for multiple clusters allows the core and task nodes of those clusters to communicate with each other over ICMP or any TCP or UDP port. Specify custom managed security groups to restrict cross-cluster access.</td></tr>
+  <tr><td colspan="5"><i>Inbound rules</i></td></tr>
+  <tr><td>All ICMP-IPv4</td><td>All</td><td>N/A</td><td rowspan="3">The Group ID of the managed security group for the primary instance. In other words, the same security group in which the rule appears.</td><td rowspan="3">These reflexive rules allow inbound traffic from any instance associated with the specified security group. Using the default <code>ElasticMapReduce-primary</code> for multiple clusters allows the core and task nodes of those clusters to communicate with each other over ICMP or any TCP or UDP port. Specify custom managed security groups to restrict cross-cluster access.</td></tr>
   <tr><td>All TCP</td><td>TCP</td><td>All</td></tr>
   <tr><td>All UDP</td><td>UDP</td><td>All</td></tr>
   <tr><td>All ICMP-IPV4</td><td>All</td><td>N/A</td><td rowspan="3">The Group ID of the managed security group specified for core and task nodes.</td><td rowspan="3">These rules allow all inbound ICMP traffic and traffic over any TCP or UDP port from any core and task instances that are associated with the specified security group, even if the instances are in different clusters.</td></tr>
@@ -104,8 +104,8 @@ The default managed security group for core and task instances in public subnets
   <tr><th>Type</th><th>Protocol</th><th>Port range</th><th>Source</th><th>Details</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="5">Inbound rules</td></tr>
-  <tr><td>All ICMP-IPV4</td><td>All</td><td>N/A</td><td rowspan="3">The Group ID of the managed security group for core and task instances. In other words, the same security group in which the rule appears.</td><td rowspan="3">These reflexive rules allow inbound traffic from any instance associated with the specified security group. Using the default `ElasticMapReduce-core` for multiple clusters allows the core and task instances of those clusters to communicate with each other over ICMP or any TCP or UDP port. Specify custom managed security groups to restrict cross-cluster access.</td></tr>
+  <tr><td colspan="5"><i>Inbound rules</i></td></tr>
+  <tr><td>All ICMP-IPV4</td><td>All</td><td>N/A</td><td rowspan="3">The Group ID of the managed security group for core and task instances. In other words, the same security group in which the rule appears.</td><td rowspan="3">These reflexive rules allow inbound traffic from any instance associated with the specified security group. Using the default <code>ElasticMapReduce-core</code> for multiple clusters allows the core and task instances of those clusters to communicate with each other over ICMP or any TCP or UDP port. Specify custom managed security groups to restrict cross-cluster access.</td></tr>
   <tr><td>All TCP</td><td>TCP</td><td>All</td></tr>
   <tr><td>All UDP</td><td>UDP</td><td>All</td></tr>
   <tr><td>All ICMP-IPV4</td><td>All</td><td>N/A</td><td rowspan="3">The Group ID of the managed security group for the primary instance.</td><td rowspan="3">These rules allow all inbound ICMP traffic and traffic over any TCP or UDP port from any primary instances that are associated with the specified security group, even if the instances are in different clusters. </td></tr>
@@ -124,15 +124,15 @@ The default managed security group for the primary instance in private subnets h
   <tr><th>Type</th><th>Protocol</th><th>Port range</th><th>Source</th><th>Details</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="5">Inbound rules</td></tr>
-  <tr><td>All ICMP-IPv4</td><td>All</td><td>N/A</td><td rowspan="3">The Group ID of the managed security group for the primary instance. In other words, the same security group in which the rule appears.</td><td rowspan="3">These reflexive rules allow inbound traffic from any instance associated with the specified security group and reachable from within the private subnet. Using the default `ElasticMapReduce-Primary-Private` for multiple clusters allows the core and task nodes of those clusters to communicate with each other over ICMP or any TCP or UDP port. Specify custom managed security groups to restrict cross-cluster access.</td></tr>
+  <tr><td colspan="5"><i>Inbound rules</i></td></tr>
+  <tr><td>All ICMP-IPv4</td><td>All</td><td>N/A</td><td rowspan="3">The Group ID of the managed security group for the primary instance. In other words, the same security group in which the rule appears.</td><td rowspan="3">These reflexive rules allow inbound traffic from any instance associated with the specified security group and reachable from within the private subnet. Using the default <code>ElasticMapReduce-Primary-Private</code> for multiple clusters allows the core and task nodes of those clusters to communicate with each other over ICMP or any TCP or UDP port. Specify custom managed security groups to restrict cross-cluster access.</td></tr>
   <tr><td>All TCP</td><td>TCP</td><td>All</td></tr>
   <tr><td>All UDP</td><td>UDP</td><td>All</td></tr>
   <tr><td>All ICMP-IPV4</td><td>All</td><td>N/A</td><td rowspan="3">The Group ID of the managed security group for core and task nodes.</td><td rowspan="3">These rules allow all inbound ICMP traffic and traffic over any TCP or UDP port from any core and task instances that are associated with the specified security group and reachable from within the private subnet, even if the instances are in different clusters.</td></tr>
   <tr><td>All TCP</td><td>TCP</td><td>All</td></tr>
   <tr><td>All UDP</td><td>UDP</td><td>All</td></tr>
   <tr><td>HTTPS (8443)</td><td>TCP</td><td>8443</td><td>The Group ID of the managed security group for service access in a private subnet.</td><td>This rule allows the cluster manager to communicate with the primary node.<br />Required for Amazon EMR releases 7.x and earlier.</td></tr>
-  <tr><td colspan="5">Outbound rules</td></tr>
+  <tr><td colspan="5"><i>Outbound rules</i></td></tr>
   <tr><td>All traffic</td><td>All</td><td>All</td><td>0.0.0.0/0</td><td>Provides outbound access to the internet. </td></tr>
   <tr><td>Custom TCP</td><td>TCP</td><td>9443</td><td>The Group ID of the managed security group for service access in a private subnet.</td><td>If the above "All traffic" default outbound rule is removed, this rule is a minimum requirement for Amazon EMR releases 5.30.0 to 7.x. Amazon EMR does not add this rule when you use a custom managed security group. </td></tr>
   <tr><td>Custom TCP</td><td>TCP</td><td>443 (https)</td><td>The Group ID of the managed security group for service access in a private subnet.</td><td>If the above "All traffic" default outbound rule is removed, this rule is a minimum requirement for Amazon EMR 5.30.0 and later to connect to Amazon S3 over https.<br />For Amazon EMR 8.0.0 and later and Amazon EMR Spark 8.0.0 and later, this rule is also required for the primary instance to communicate with the cluster manager through the VPC endpoint. Amazon EMR does not add this rule when you use a custom managed security group. </td></tr>
@@ -149,16 +149,16 @@ The default managed security group for core and task instances in private subnet
   <tr><th>Type</th><th>Protocol</th><th>Port range</th><th>Source</th><th>Details</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="5">Inbound rules</td></tr>
-  <tr><td>All ICMP-IPV4</td><td>All</td><td>N/A</td><td rowspan="3">The Group ID of the managed security group for core and task instances. In other words, the same security group in which the rule appears.</td><td rowspan="3">These reflexive rules allow inbound traffic from any instance associated with the specified security group. Using the default `ElasticMapReduce-core` for multiple clusters allows the core and task instances of those clusters to communicate with each other over ICMP or any TCP or UDP port. Specify custom managed security groups to restrict cross-cluster access.</td></tr>
+  <tr><td colspan="5"><i>Inbound rules</i></td></tr>
+  <tr><td>All ICMP-IPV4</td><td>All</td><td>N/A</td><td rowspan="3">The Group ID of the managed security group for core and task instances. In other words, the same security group in which the rule appears.</td><td rowspan="3">These reflexive rules allow inbound traffic from any instance associated with the specified security group. Using the default <code>ElasticMapReduce-core</code> for multiple clusters allows the core and task instances of those clusters to communicate with each other over ICMP or any TCP or UDP port. Specify custom managed security groups to restrict cross-cluster access.</td></tr>
   <tr><td>All TCP</td><td>TCP</td><td>All</td></tr>
   <tr><td>All UDP</td><td>UDP</td><td>All</td></tr>
   <tr><td>All ICMP-IPV4</td><td>All</td><td>N/A</td><td rowspan="3">The Group ID of the managed security group for the primary instance.</td><td rowspan="3">These rules allow all inbound ICMP traffic and traffic over any TCP or UDP port from any primary instances that are associated with the specified security group, even if the instances are in different clusters. </td></tr>
   <tr><td>All TCP</td><td>TCP</td><td>All</td></tr>
   <tr><td>All UDP</td><td>UDP</td><td>All</td></tr>
   <tr><td>HTTPS (8443)</td><td>TCP</td><td>8443</td><td>The Group ID of the managed security group for service access in a private subnet.</td><td>This rule allows the cluster manager to communicate with core and task nodes.<br />Required for Amazon EMR releases 7.x and earlier.</td></tr>
-  <tr><td colspan="5">Outbound rules</td></tr>
-  <tr><td>All traffic</td><td>All</td><td>All</td><td>0.0.0.0/0</td><td>See [Editing outbound rules](#private-sg-egress-rules) below.</td></tr>
+  <tr><td colspan="5"><i>Outbound rules</i></td></tr>
+  <tr><td>All traffic</td><td>All</td><td>All</td><td>0.0.0.0/0</td><td>See <a href="#private-sg-egress-rules">Editing outbound rules</a> below.</td></tr>
   <tr><td>Custom TCP</td><td>TCP</td><td>443 (https)</td><td>The Group ID of the managed security group for service access in a private subnet.</td><td>If the above "All traffic" default outbound rule is removed, this rule is a minimum requirement for Amazon EMR 5.30.0 and later to connect to Amazon S3 over https. Amazon EMR does not add this rule when you use a custom managed security group. </td></tr>
 </tbody>
 </table>
@@ -187,7 +187,7 @@ For Amazon EMR 8.0.0 and later and Amazon EMR Spark 8.0.0 and later, this securi
   <tr><th>Type</th><th>Protocol</th><th>Port range</th><th>Source</th><th>Details</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="5">Inbound rules</td></tr>
+  <tr><td colspan="5"><i>Inbound rules</i></td></tr>
   <tr><td>HTTPS</td><td>TCP</td><td>443</td><td>The CIDR block(s) of the cluster's VPC.</td><td>This rule allows communication between EMR cluster instances and the cluster manager.</td></tr>
 </tbody>
 </table>
@@ -199,9 +199,9 @@ For Amazon EMR releases 7.x and earlier, this security group is attached to an E
   <tr><th>Type</th><th>Protocol</th><th>Port range</th><th>Source</th><th>Details</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="5">Inbound rules Required for Amazon EMR clusters with Amazon EMR release 5.30.0 to 7.x.</td></tr>
+  <tr><td colspan="5"><i>Inbound rules</i> Required for Amazon EMR clusters with Amazon EMR release 5.30.0 to 7.x.</td></tr>
   <tr><td>Custom TCP</td><td>TCP</td><td>9443</td><td>The Group ID of the managed security group for primary instance. </td><td>This rule allows the communication between primary instance's security group to the service access security group.</td></tr>
-  <tr><td colspan="5">Outbound rules Required for Amazon EMR clusters with releases 7.x or earlier.</td></tr>
+  <tr><td colspan="5"><i>Outbound rules</i> Required for Amazon EMR clusters with releases 7.x or earlier.</td></tr>
   <tr><td>Custom TCP</td><td>TCP</td><td>8443</td><td>The Group ID of the managed security group for primary instance. </td><td rowspan="2">These rules allow the cluster manager to communicate with the primary node and with core and task nodes.</td></tr>
   <tr><td>Custom TCP</td><td>TCP</td><td>8443</td><td>The Group ID of the managed security group for core and task instances. </td></tr>
 </tbody>

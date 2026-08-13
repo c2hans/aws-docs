@@ -145,7 +145,7 @@ For all other [built-in task types](https://docs.aws.amazon.com/sagemaker/latest
 Note the following about the label category configuration file:
 + For image classification and text classification (single and multi-label) you must specify at least two label categories. For all other task types, the minimum number of label categories required is one.
 + Each label category must be unique, you cannot specify duplicate label categories.
-+ If you create a 3D point cloud or video frame adjustment or verification labeling job, you must include `auditLabelAttributeName` in the label category configuration. Use this parameter to enter the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html#sagemaker-CreateLabelingJob-request-LabelAttributeName](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html#sagemaker-CreateLabelingJob-request-LabelAttributeName) of the labeling job you want to adjust or verify annotations of.
++ If you create a 3D point cloud or video frame adjustment or verification labeling job, you must include `auditLabelAttributeName` in the label category configuration. Use this parameter to enter the [`LabelAttributeName`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html#sagemaker-CreateLabelingJob-request-LabelAttributeName) of the labeling job you want to adjust or verify annotations of.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 Pattern: `(https|s3)://([^/]+)/?(.*)`

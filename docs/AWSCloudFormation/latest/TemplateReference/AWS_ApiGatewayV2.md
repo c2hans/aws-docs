@@ -17,6 +17,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::ApiGatewayV2::Integration](aws-resource-apigatewayv2-integration.md)
 + [AWS::ApiGatewayV2::IntegrationResponse](aws-resource-apigatewayv2-integrationresponse.md)
 + [AWS::ApiGatewayV2::Model](aws-resource-apigatewayv2-model.md)
++ [AWS::ApiGatewayV2::PortalProduct](aws-resource-apigatewayv2-portalproduct.md)
 + [AWS::ApiGatewayV2::Route](aws-resource-apigatewayv2-route.md)
 + [AWS::ApiGatewayV2::RouteResponse](aws-resource-apigatewayv2-routeresponse.md)
 + [AWS::ApiGatewayV2::RoutingRule](aws-resource-apigatewayv2-routingrule.md)

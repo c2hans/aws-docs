@@ -66,7 +66,7 @@ Content type: application/json
 + Images: max 2,458,624 pixels before downsampling; images smaller than 3,136 pixels are upsampled. Provide images as `data:<mime>;base64,....`
 + Token accounting (per `inputs` item): Tokens from an image input ≈ (image pixels ÷ 784) x 4 Tokens from an interleaved text and image input = (image pixels ÷ 784) x 4 \+ (text tokens)
 
-**Tip:** For PDFs, convert each page to an image and send via `inputs` along with page metadata (e.g., file\_name, entities) in adjacent text parts.
+**Tip:** For PDFs, convert each page to an image and send through `inputs` along with page metadata (e.g., file\_name, entities) in adjacent text parts.
 
 ------
 #### [ Response ]

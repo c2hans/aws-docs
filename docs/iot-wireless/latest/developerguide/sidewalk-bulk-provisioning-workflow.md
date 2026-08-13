@@ -59,7 +59,7 @@ Your device profile is also updated with the new device attestation key (DAK), a
 
 The `ApId` parameter is an alphanumeric string that identifies the advertised product. This field must be specified when you want to use a given device profile for Sidewalk devices that you bulk provision. AWS IoT Core for Amazon Sidewalk then generates the DAK, and provides it to you through the YubiHSM key. The related DAK information will be presented in the device profile.
 
-To obtain the `ApId`, after you retrieve information about the device profile that you created, contact the Amazon Sidewalk Support team. You can obtain the device profile information from the AWS IoT console, or using the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDeviceProfile.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDeviceProfile.html) API operation, or the [https://docs.aws.amazon.com/cli/latest/reference/get-device-profile.html](https://docs.aws.amazon.com/cli/latest/reference/get-device-profile.html) CLI command.
+To obtain the `ApId`, after you retrieve information about the device profile that you created, contact the Amazon Sidewalk Support team. You can obtain the device profile information from the AWS IoT console, or using the [`GetDeviceProfile`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDeviceProfile.html) API operation, or the [`get-device-profile`](https://docs.aws.amazon.com/cli/latest/reference/get-device-profile.html) CLI command.
 
 ## How bulk provisioning works
 <a name="bulk-provisioning-works"></a>

@@ -25,9 +25,9 @@ Following are the media optimization options available.
 <a name="media-optimized-rtc"></a>
 
 In this mode, third-party UC and VoIP applications are executed on the remote WorkSpace, while their media framework is offloaded to the supported client for direct communication. The following UC applications use this approach on Amazon WorkSpaces:
-+ [Zoom meetings](https://support.zoom.us/hc/en-us/articles/10372235268749-Using-Zoom-for-Amazon-WorkSpaces)
-+ [Cisco Webex meetings](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cloudCollaboration/wbxt/vdi/wbx-vdi-deployment-guide.html)
-+ [Microsoft Teams 2.0 (Public Preview)](https://learn.microsoft.com/en-us/microsoftteams/vdi-2)
++ [Zoom meetings](https://support.zoom.us/hc/en-us/articles/10372235268749-Using-Zoom-for-Amazon-WorkSpaces) on the Zoom website
++ [Cisco Webex meetings](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cloudCollaboration/wbxt/vdi/wbx-vdi-deployment-guide.html) on the Cisco website
++ [Microsoft Teams 2.0](https://learn.microsoft.com/en-us/microsoftteams/vdi-2) on the Microsoft website
 
 For Media Optimized RTC mode to function, the UC application vendor should develop the integration with WorkSpaces using one of the available Software Development Kits (SDK), such as the [DCV Extension SDK](https://docs.aws.amazon.com/dcv/latest/extsdkguide/what-is.html). This mode requires the UC components to be installed on the client device.
 
@@ -64,17 +64,17 @@ The following table represents common UC application features and defines which 
   <tr><th>Feature</th><th>Direct RTC</th><th>Media Optimized RTC</th><th>In-session Optimized RTC</th></tr>
 </thead>
 <tbody>
-  <tr><td>**1:1 chat**</td><td colspan="3">Does not require RTC configuration</td></tr>
-  <tr><td>**Group chat rooms**</td><td colspan="3">Does not require RTC configuration</td></tr>
-  <tr><td>**Group audio conferencing**</td><td>Best</td><td>Best</td><td>Good</td></tr>
-  <tr><td>**Group video conferencing**</td><td>Good</td><td>Best</td><td>Good</td></tr>
-  <tr><td>**1:1 audio calls**</td><td>Best</td><td>Best</td><td>Good</td></tr>
-  <tr><td>**1:1 video calls**</td><td>Good</td><td>Best</td><td>Good</td></tr>
-  <tr><td>**Whiteboarding**</td><td colspan="3">Does not require RTC configuration</td></tr>
-  <tr><td>**Audio/video clips/messaging**</td><td>Not applicable</td><td>Good</td><td>Best</td></tr>
-  <tr><td>**File Sharing**</td><td>Not applicable</td><td>Depends on UC application</td><td>Best</td></tr>
-  <tr><td>**Screen sharing and control**</td><td>Not applicable</td><td>Depends on UC application</td><td>Best</td></tr>
-  <tr><td>**Webinars/Broadcast events**</td><td>Not applicable</td><td>Good</td><td>Best</td></tr>
+  <tr><td><b>1:1 chat</b></td><td colspan="3">Does not require RTC configuration</td></tr>
+  <tr><td><b>Group chat rooms</b></td><td colspan="3">Does not require RTC configuration</td></tr>
+  <tr><td><b>Group audio conferencing</b></td><td>Best</td><td>Best</td><td>Good</td></tr>
+  <tr><td><b>Group video conferencing</b></td><td>Good</td><td>Best</td><td>Good</td></tr>
+  <tr><td><b>1:1 audio calls</b></td><td>Best</td><td>Best</td><td>Good</td></tr>
+  <tr><td><b>1:1 video calls</b></td><td>Good</td><td>Best</td><td>Good</td></tr>
+  <tr><td><b>Whiteboarding</b></td><td colspan="3">Does not require RTC configuration</td></tr>
+  <tr><td><b>Audio/video clips/messaging</b></td><td>Not applicable</td><td>Good</td><td>Best</td></tr>
+  <tr><td><b>File Sharing</b></td><td>Not applicable</td><td>Depends on UC application</td><td>Best</td></tr>
+  <tr><td><b>Screen sharing and control</b></td><td>Not applicable</td><td>Depends on UC application</td><td>Best</td></tr>
+  <tr><td><b>Webinars/Broadcast events</b></td><td>Not applicable</td><td>Good</td><td>Best</td></tr>
 </tbody>
 </table>
 
@@ -91,9 +91,9 @@ The SDK, which includes publicly available options like the DCV Extension SDK an
 ![Diagram showing the Media Optimized RTC configuration.](http://docs.aws.amazon.com/workspaces/latest/adminguide/images/media-optimized-rtc.png)
 
 Amazon WorkSpaces currently supports following applications with Media Optimized RTC mode:
-+ [Zoom meetings](https://support.zoom.us/hc/en-us/articles/10372235268749-Using-Zoom-for-Amazon-WorkSpaces) (for PCoIP and DCV WorkSpaces)
-+ [Cisco Webex meetings](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cloudCollaboration/wbxt/vdi/wbx-vdi-deployment-guide.html) (for DCV WorkSpaces only)
-+ [Microsoft Teams 2.0 (Public Preview)](https://learn.microsoft.com/en-us/microsoftteams/vdi-2) (for DCV WorkSpaces only)
++ [Zoom meetings](https://support.zoom.us/hc/en-us/articles/10372235268749-Using-Zoom-for-Amazon-WorkSpaces) on the Zoom website (for PCoIP and DCV WorkSpaces)
++ [Cisco Webex meetings](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cloudCollaboration/wbxt/vdi/wbx-vdi-deployment-guide.html) on the Cisco website (for DCV WorkSpaces only)
++ [Microsoft Teams 2.0](https://learn.microsoft.com/en-us/microsoftteams/vdi-2) on the Microsoft website (for DCV WorkSpaces only)
 
 If you are using an application that is not on the list, it is advisable to engage the application vendor and request support for WorkSpaces Media Optimized RTC. To expedite this process, encourage them to contact [aws-av-offloading@amazon.com](mailto:aws-av-offloading@amazon.com).
 
@@ -139,9 +139,9 @@ To effectively support Remote RTC mode, it's crucial to ensure proper sizing of 
   <tr><th>Application</th><th>CPU requirements for RTC app</th><th>RAM requirements for RTC app</th><th>Minimally supported WorkSpace</th><th>Recommended WorkSpace</th><th>Minimally supported WorkSpace</th><th>Recommended WorkSpace</th><th>Reference</th></tr>
 </thead>
 <tbody>
-  <tr><td>Microsoft Teams</td><td>2 core required, 4 core recommended</td><td>4.0 GB RAM</td><td>Power (4 vCPU, 16 GB memory)</td><td> + PowerPro (8 vCPU, 32 GB memory)<br />+ GeneralPurpose.4xlarge (16vCPU, 64 GB memory)<br />+ GeneralPurpose.8xlarge (32vCPU, 128 GB memory) </td><td>Performance (2 vCPU, 8 GB memory)</td><td> + PowerPro (8 vCPU, 32 GB memory)<br />+ GeneralPurpose.4xlarge (16vCPU, 64 GB memory)<br />+ GeneralPurpose.8xlarge (32vCPU, 128 GB memory) </td><td>[Hardware requirements for Microsoft Teams](https://learn.microsoft.com/en-us/microsoftteams/hardware-requirements-for-the-teams-app)</td></tr>
-  <tr><td>Zoom</td><td>2 core required, 4 core recommended</td><td>4.0 GB RAM</td><td>Power (4 vCPU, 16 GB memory)</td><td> + PowerPro (8 vCPU, 32 GB memory)<br />+ GeneralPurpose.4xlarge (16vCPU, 64 GB memory)<br />+ GeneralPurpose.8xlarge (32vCPU, 128 GB memory) </td><td>Performance (2 vCPU, 8 GB memory)</td><td> + PowerPro (8 vCPU, 32 GB memory)<br />+ GeneralPurpose.4xlarge (16vCPU, 64 GB memory)<br />+ GeneralPurpose.8xlarge (32vCPU, 128 GB memory) </td><td>[Zoom system requirements: Windows, macOS, Linux](https://support.zoom.us/hc/en-us/articles/201362023-Zoom-system-requirements-Windows-macOS-Linux)</td></tr>
-  <tr><td>Webex</td><td>2 core required</td><td>4.0 GB RAM</td><td>Power (4 vCPU, 16 GB memory)</td><td> + PowerPro (8 vCPU, 32 GB memory)<br />+ GeneralPurpose.4xlarge (16vCPU, 64 GB memory)<br />+ GeneralPurpose.8xlarge (32vCPU, 128 GB memory) </td><td>Performance (2 vCPU, 8 GB memory)</td><td> + PowerPro (8 vCPU, 32 GB memory)<br />+ GeneralPurpose.4xlarge (16vCPU, 64 GB memory)<br />+ GeneralPurpose.8xlarge (32vCPU, 128 GB memory) </td><td>[System requirements for Webex services](https://help.webex.com/en-us/article/fz1e4b/System-requirements-for-Webex-services)</td></tr>
+  <tr><td>Microsoft Teams</td><td>2 core required, 4 core recommended</td><td>4.0 GB RAM</td><td>Power (4 vCPU, 16 GB memory)</td><td> <ul><li>PowerPro (8 vCPU, 32 GB memory)</li><li>GeneralPurpose.4xlarge (16vCPU, 64 GB memory)</li><li>GeneralPurpose.8xlarge (32vCPU, 128 GB memory)</li></ul> </td><td>Performance (2 vCPU, 8 GB memory)</td><td> <ul><li>PowerPro (8 vCPU, 32 GB memory)</li><li>GeneralPurpose.4xlarge (16vCPU, 64 GB memory)</li><li>GeneralPurpose.8xlarge (32vCPU, 128 GB memory)</li></ul> </td><td><a href="https://learn.microsoft.com/en-us/microsoftteams/hardware-requirements-for-the-teams-app">Hardware requirements for Microsoft Teams</a></td></tr>
+  <tr><td>Zoom</td><td>2 core required, 4 core recommended</td><td>4.0 GB RAM</td><td>Power (4 vCPU, 16 GB memory)</td><td> <ul><li>PowerPro (8 vCPU, 32 GB memory)</li><li>GeneralPurpose.4xlarge (16vCPU, 64 GB memory)</li><li>GeneralPurpose.8xlarge (32vCPU, 128 GB memory)</li></ul> </td><td>Performance (2 vCPU, 8 GB memory)</td><td> <ul><li>PowerPro (8 vCPU, 32 GB memory)</li><li>GeneralPurpose.4xlarge (16vCPU, 64 GB memory)</li><li>GeneralPurpose.8xlarge (32vCPU, 128 GB memory)</li></ul> </td><td><a href="https://support.zoom.us/hc/en-us/articles/201362023-Zoom-system-requirements-Windows-macOS-Linux">Zoom system requirements: Windows, macOS, Linux</a></td></tr>
+  <tr><td>Webex</td><td>2 core required</td><td>4.0 GB RAM</td><td>Power (4 vCPU, 16 GB memory)</td><td> <ul><li>PowerPro (8 vCPU, 32 GB memory)</li><li>GeneralPurpose.4xlarge (16vCPU, 64 GB memory)</li><li>GeneralPurpose.8xlarge (32vCPU, 128 GB memory)</li></ul> </td><td>Performance (2 vCPU, 8 GB memory)</td><td> <ul><li>PowerPro (8 vCPU, 32 GB memory)</li><li>GeneralPurpose.4xlarge (16vCPU, 64 GB memory)</li><li>GeneralPurpose.8xlarge (32vCPU, 128 GB memory)</li></ul> </td><td><a href="https://help.webex.com/en-us/article/fz1e4b/System-requirements-for-Webex-services">System requirements for Webex services</a></td></tr>
 </tbody>
 </table>
 

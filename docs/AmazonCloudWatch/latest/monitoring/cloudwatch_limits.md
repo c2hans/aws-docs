@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloud
 # CloudWatch service quotas
 <a name="cloudwatch_limits"></a>
 
-Amazon CloudWatch provides monitoring and observability for your AWS resources and applications. To ensure optimal performance and prevent abuse, CloudWatch imposes service quotas on various aspects of its functionality. This chapter outlines the key quotas for CloudWatch services, including metrics, alarms, API requests, and notifications. Understanding these quotas is crucial for effectively planning and managing your CloudWatch usage.
+Amazon CloudWatch provides monitoring and observability for your AWS resources and applications. To help ensure optimal performance and prevent abuse, CloudWatch imposes service quotas on various aspects of its functionality. This chapter outlines the key quotas for CloudWatch services, including metrics, alarms, API requests, and notifications. Understanding these quotas is crucial for effectively planning and managing your CloudWatch usage.
 
 **Note**
 For some AWS services including CloudWatch, you can use the CloudWatch usage metrics to visualize your current service usage on CloudWatch graphs and dashboards. You can use a CloudWatch metric math function to display the service quotas for those resources on your graphs. You can also configure alarms that alert you when your usage approaches a service quota. For more information, see [Visualizing your service quotas and setting alarms](CloudWatch-Quotas-Visualize-Alarms.md).
@@ -327,7 +327,7 @@ To see the CloudWatch RUM (Real-User Monitoring) quotas, use `--service-code rum
        --desired-value {{new-quota-value}}
    ```
 
-   For more details about quota increases, see the [https://docs.aws.amazon.com/cli/latest/reference/service-quotas/request-service-quota-increase.html](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/request-service-quota-increase.html) command in the [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/index.html#cli-aws-service-quotas).
+   For more details about quota increases, see the [`request-service-quota-increase`](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/request-service-quota-increase.html) command in the [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/index.html#cli-aws-service-quotas).
 
    To work more with service quotas using the AWS CLI, see the [Service Quotas AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/index.html#cli-aws-service-quotas).
 

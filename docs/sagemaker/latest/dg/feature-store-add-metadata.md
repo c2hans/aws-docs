@@ -11,7 +11,7 @@ In Amazon SageMaker Feature Store, you can search through all of your features. 
 
 The description can have up to 255 characters. For parameters, you must specify a key-value pair in your search. You can add up to 25 parameters.
 
-To update the metadata of a feature, you can use either the console or the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateFeatureMetadata.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateFeatureMetadata.html) operation.
+To update the metadata of a feature, you can use either the console or the [`UpdateFeatureMetadata`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateFeatureMetadata.html) operation.
 
 ## How to add searchable metadata to your features
 <a name="feature-store-add-metadata-how-to"></a>
@@ -89,7 +89,7 @@ You can use the console or the Amazon SageMaker Feature Store API to add searcha
 ### Add searchable metadata to your features using SDK for Python (Boto3)
 <a name="feature-store-add-metadata-how-to-with-sdk"></a>
 
-The code in this section uses the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateFeatureMetadata.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateFeatureMetadata.html) operation in the AWS SDK for Python (Boto3) to add searchable metadata to your features for different scenarios. For information about the other languages to submit a query, see [See Also](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateFeatureMetadata.html#API_Search_SeeAlso) in the *Amazon SageMaker API Reference*.
+The code in this section uses the [`UpdateFeatureMetadata`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateFeatureMetadata.html) operation in the AWS SDK for Python (Boto3) to add searchable metadata to your features for different scenarios. For information about the other languages to submit a query, see [See Also](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateFeatureMetadata.html#API_Search_SeeAlso) in the *Amazon SageMaker API Reference*.
 
 For more Feature Store examples and resources, see [Amazon SageMaker Feature Store resources](feature-store-resources.md).
 
@@ -176,7 +176,7 @@ sagemaker_client.update_feature_metadata(
 #### Example code
 <a name="feature-store-add-metadata-python-sdk-example"></a>
 
-After you've updated the metadata for a feature, you can use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureMetadata.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureMetadata.html) operation to see the updates that you've made.
+After you've updated the metadata for a feature, you can use the [`DescribeFeatureMetadata`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureMetadata.html) operation to see the updates that you've made.
 
 The following code goes through an example workflow using the AWS SDK for Python (Boto3). The example code does the following:
 
@@ -255,7 +255,7 @@ except ClientError as e:
 ##### Step 3: Add metadata
 <a name="feature-store-add-metadata-step-3"></a>
 
-Before you add metadata, use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureGroup.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureGroup.html) operation to make sure that the status of the feature group is `Created`.
+Before you add metadata, use the [`DescribeFeatureGroup`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureGroup.html) operation to make sure that the status of the feature group is `Created`.
 
 ```
 sagemaker_client.describe_feature_group(
@@ -273,7 +273,7 @@ sagemaker_client.update_feature_metadata(
 )
 ```
 
-You can use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureMetadata.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureMetadata.html) operation to see if you successfully updated the description for the feature group.
+You can use the [`DescribeFeatureMetadata`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureMetadata.html) operation to see if you successfully updated the description for the feature group.
 
 ```
     sagemaker_client.describe_feature_metadata(
@@ -295,7 +295,7 @@ sagemaker_client.update_feature_metadata(
 )
 ```
 
-You can use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureMetadata.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureMetadata.html) operation again to see if you have successfully added the parameters.
+You can use the [`DescribeFeatureMetadata`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureMetadata.html) operation again to see if you have successfully added the parameters.
 
 ```
     sagemaker_client.describe_feature_metadata(

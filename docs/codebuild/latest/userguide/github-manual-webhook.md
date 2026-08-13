@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/github-manual
 # GitHub manual webhooks
 <a name="github-manual-webhook"></a>
 
-You can configure manual GitHub webhooks to prevent CodeBuild from automatically attempting to create a webhook within GitHub. CodeBuild returns a payload URL in as part of the call to create the webhook and can be used to manually create the webhook within GitHub. Even if CodeBuild is not allowlisted to create a webhook in your GitHub account, you can still manually create a webhook for your build project.
+You can configure manual GitHub webhooks to prevent CodeBuild from automatically attempting to create a webhook within GitHub. CodeBuild returns a payload URL as part of the call to create the webhook, which can be used to manually create the webhook within GitHub. Even if CodeBuild is not allowlisted to create a webhook in your GitHub account, you can still manually create a webhook for your build project.
 
 Use the following procedure to create a GitHub manual webhook.
 

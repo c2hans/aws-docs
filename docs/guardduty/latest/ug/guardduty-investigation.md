@@ -68,7 +68,7 @@ Before you can use GuardDuty Investigation, make sure that the following prerequ
 ------
 #### [ API/CLI ]
 
-  Call the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html) API and enable the `AI_ANALYST` feature on your detector.
+  Call the [UpdateDetector](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html) API and enable the `AI_ANALYST` feature on your detector.
 
   ```
   aws guardduty update-detector \
@@ -138,7 +138,7 @@ Choose your preferred access method to create an investigation.
 
 Run the CreateInvestigation API operation to start a new investigation. You must provide the detector ID and a trigger prompt that describes what to investigate.
 
-To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
 ```
 aws guardduty create-investigation \
@@ -215,7 +215,7 @@ Investigation titles are only clickable when the status is **Completed**.
 
 Run the GetInvestigation API operation to retrieve the full details of a completed investigation.
 
-To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
 ```
 aws guardduty get-investigation \
@@ -303,7 +303,7 @@ Choose your preferred access method to list investigations.
 
 Run the ListInvestigations API operation to list investigation summaries for a detector.
 
-To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
 ```
 aws guardduty list-investigations \

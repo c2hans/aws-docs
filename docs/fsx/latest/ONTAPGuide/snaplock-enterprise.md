@@ -24,14 +24,14 @@ One of the key differences between SnapLock Enterprise and SnapLock Compliance i
 
 You can turn on or turn off privileged delete with the Amazon FSx console, the AWS CLI, the Amazon FSx API, and the ONTAP CLI and REST API. To turn on privileged delete, you must first create a SnapLock audit log volume in the same SVM as the SnapLock volume. For more information, see [SnapLock audit log volumes](how-snaplock-works.md#snaplock-audit-log-volume).
 
-To turn on privileged delete with the Amazon FSx API, use `PrivilegedDelete` in the [https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateSnaplockConfiguration.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateSnaplockConfiguration.html). In the Amazon FSx console, for **Privileged Delete**, choose **Enabled**.
+To turn on privileged delete with the Amazon FSx API, use `PrivilegedDelete` in the [`CreateSnaplockConfiguration`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateSnaplockConfiguration.html). In the Amazon FSx console, for **Privileged Delete**, choose **Enabled**.
 
 **Note**
 You can't issue a privileged delete command to delete a write once, read many (WORM) file that has an expired retention period. You can issue a normal delete operation after the retention period expires.
 
 You can opt to turn off privileged delete permanently, but this action is irreversible. If privileged delete is permanently turned off, you don't need to have a SnapLock audit log volume associated with the SnapLock Enterprise volume.
 
-To permanently turn off privileged delete with the Amazon FSx API, use `PrivilegedDelete` in the [https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateSnaplockConfiguration.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateSnaplockConfiguration.html). In the Amazon FSx console, for **Privileged Delete**, choose **Permanently disabled**.
+To permanently turn off privileged delete with the Amazon FSx API, use `PrivilegedDelete` in the [`CreateSnaplockConfiguration`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateSnaplockConfiguration.html). In the Amazon FSx console, for **Privileged Delete**, choose **Permanently disabled**.
 
 ## Bypassing SnapLock Enterprise mode
 <a name="bypass-enterprise"></a>

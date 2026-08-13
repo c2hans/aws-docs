@@ -114,7 +114,7 @@ Required: Yes
 For python runtimes, the environment provides 512MB of memory and 512MB of disk space. For PowerShell runtimes, the environment provides 1024MB of memory and 512MB of disk space.
 
 Handler
-The name of your function. You must ensure the function defined in the handler has two parameters, `events` and `context`. The PowerShell runtime does not support this parameter.
+The name of your function. You must make sure the function defined in the handler has two parameters, `events` and `context`. The PowerShell runtime does not support this parameter.
 Type: String
 Required: Yes (Python) \| Not supported (PowerShell)
 
@@ -217,7 +217,7 @@ Attachment
 The name of a standalone script file or .zip file that can be invoked by the action. Specify the same value as the `Name` of the document attachment file you specify in the `Attachments` request parameter. For more information, see [Attachments](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_CreateDocument.html#systemsmanager-CreateDocument-request-Attachments) in the *AWS Systems Manager API Reference*. If you're providing a script using an attachment, you must also define a `files` section in the top-level elements of your runbook. For more information, see [Schema version 0.3](documents-schemas-features.md#automation-doc-syntax-examples).
 To invoke a file for Python, use the `filename.method_name` format in `Handler`.
 The attachment for a Python script can be a .py file or a .zip file that contains the script. PowerShell scripts must be stored in .zip files.
-When including Python libraries in your attachment, we recommend adding an empty `__init__.py` file in each module directory. This allows you to import the modules from the library in your attachment within your script content. For example: `from library import module`
+When including Python libraries in your attachment, we recommend adding an empty `__init__.py` file in each module directory. This lets you import the modules from the library in your attachment within your script content. For example: `from library import module`
 Type: String
 Required: NoOutput
 
@@ -259,7 +259,7 @@ my-automation-package.zip
 ```
 
 **Important**
-For Python packages, you must include an empty `__init__.py` file in each directory that contains Python modules. This allows you to import modules using standard Python import syntax like `from utils import helper_functions`.
+For Python packages, you must include an empty `__init__.py` file in each directory that contains Python modules. This lets you import modules using standard Python import syntax like `from utils import helper_functions`.
 
 **PowerShell package structure**
 PowerShell attachments must be packaged in zip files with the following structure:
@@ -481,7 +481,7 @@ Use the following guidance to resolve common issues with `aws:executeScript` att
 
 **Module import errors**
 If you receive import errors when using multi-module packages:
-+ Ensure you have included an empty `__init__.py` file in each directory containing Python modules.
++ Make sure you have included an empty `__init__.py` file in each directory containing Python modules.
 + Verify that your import statements match the actual file and directory structure in your zip package.
 + Use relative imports (e.g., `from .utils import helper`) or absolute imports (e.g., `from utils import helper`) consistently.
 
@@ -489,13 +489,13 @@ If you receive import errors when using multi-module packages:
 If your automation fails to find the attachment:
 + Verify that the `Attachment` parameter value exactly matches the key in your `files` section.
 + Check that your S3 bucket path and file name are correct in the `files` section.
-+ Ensure your automation role has `s3:GetObject` permission for the attachment S3 location.
++ Make sure your automation role has `s3:GetObject` permission for the attachment S3 location.
 + Verify that the checksum in your runbook matches the actual file checksum.
 
 **Handler function errors**
 If you receive handler-related errors:
 + For Python: Use the format `filename.function_name` in the `Handler` parameter (e.g., `main.process_data`).
-+ Ensure your handler function accepts exactly two parameters: `events` and `context`.
++ Make sure your handler function accepts exactly two parameters: `events` and `context`.
 + For PowerShell: Do not specify a `Handler` parameter; the script runs directly.
 
 **Script execution failures**

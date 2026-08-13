@@ -185,7 +185,7 @@ If your domain resides within a virtual private cloud (VPC), your computer must 
 ### Sample Python client
 <a name="connector-sagemaker-python"></a>
 
-The Python client is simpler to automate than a HTTP request and has better re-usability. To create the AI connector with the Python client, save the following sample code to a Python file. The client requires the [AWS SDK for Python (Boto3)](https://aws.amazon.com/sdk-for-python/), [https://requests.readthedocs.io/en/latest/](https://requests.readthedocs.io/en/latest/), and [https://pypi.org/project/requests-aws4auth/](https://pypi.org/project/requests-aws4auth/) packages.
+The Python client is simpler to automate than a HTTP request and has better re-usability. To create the AI connector with the Python client, save the following sample code to a Python file. The client requires the [AWS SDK for Python (Boto3)](https://aws.amazon.com/sdk-for-python/), [`requests`](https://requests.readthedocs.io/en/latest/), and [`requests-aws4auth`](https://pypi.org/project/requests-aws4auth/) packages.
 
 ```
 import boto3

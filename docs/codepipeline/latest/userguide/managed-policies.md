@@ -78,7 +78,7 @@ For the policy, see [AWSCodePipelineApproverAccess](https://docs.aws.amazon.com/
 ## AWS managed policy: `AWSCodePipelineCustomActionAccess`
 <a name="security-iam-awsmanpol-AWSCodePipelineCustomActionAccess"></a>
 
-This is a policy that grants permission to to create custom actions in CodePipeline or integrate Jenkins resources for build or test actions. To view the JSON policy document in the IAM console, see [AWSCodePipelineCustomActionAccess](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/AWSCodePipelineCustomActionAccess).
+This is a policy that grants permission to create custom actions in CodePipeline or integrate Jenkins resources for build or test actions. To view the JSON policy document in the IAM console, see [AWSCodePipelineCustomActionAccess](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/AWSCodePipelineCustomActionAccess).
 
 **Permissions details**
 

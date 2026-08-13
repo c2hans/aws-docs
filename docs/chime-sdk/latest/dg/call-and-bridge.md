@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/call-and-bridge.html
 
 Creates an outbound call to a PSTN phone number, or to a SIP trunk configured as an Amazon Chime SDK Voice Connector or Amazon Chime SDK Voice Connector Group, and then bridges it with an existing call. You use `PSTN` when calling a phone number, and `AWS` when calling a SIP trunk.
 
-An existing call can be an outbound call created by using the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateSipMediaApplicationCall.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateSipMediaApplicationCall.html) API, or an inbound call created by a SIP rule that invokes the AWS Lambda function with a `NewInboundCall` event. When you implement a `CallAndBridge` action to a Voice Connector or Voice Connector Group endpoint, you must specify the Amazon Resource Number (ARN) of the Voice Connector or Voice Connector Group.
+An existing call can be an outbound call created by using the [CreateSIPMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateSipMediaApplicationCall.html) API, or an inbound call created by a SIP rule that invokes the AWS Lambda function with a `NewInboundCall` event. When you implement a `CallAndBridge` action to a Voice Connector or Voice Connector Group endpoint, you must specify the Amazon Resource Number (ARN) of the Voice Connector or Voice Connector Group.
 
 You can also add custom SIP headers to outbound calls and AWS Lambda functions. Custom headers allow you to pass values such as floor numbers and zip codes. For more information about custom headers, refer to [Using SIP headers in the Amazon Chime SDK PTSN audio service](sip-headers.md).
 

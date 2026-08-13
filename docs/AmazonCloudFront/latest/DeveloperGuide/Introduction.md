@@ -91,4 +91,3 @@ Use the following resources to get answers to technical questions about CloudFro
 + [AWS re:Post](https://repost.aws/tags/TA8pHF0m5aQdawzT2gwPcVYQ/amazon-cloudfront) – A community-based question and answer site for developers to discuss technical questions related to CloudFront.
 + [Support Center](https://console.aws.amazon.com/support/home) – This site includes information about your recent support cases and results from AWS Trusted Advisor and health checks. It also provides links to discussion forums, technical FAQs, the service health dashboard, and information about Support plans.
 + [AWS Premium Support](https://aws.amazon.com/premiumsupport/) – Learn about AWS Premium Support, a one-on-one, fast-response support channel that helps you build and run applications on AWS.
-+ [AWS IQ](https://iq.aws.amazon.com/?utm=docs) – Get help from AWS certified professionals and experts.

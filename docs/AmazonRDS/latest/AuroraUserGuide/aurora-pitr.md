@@ -102,7 +102,7 @@ To create the primary instance for your DB cluster, call the [create-db-instance
 ### RDS API
 <a name="aurora-pitr.API"></a>
 
-To restore a DB cluster to a specified time, call the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterToPointInTime.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterToPointInTime.html) operation with the following parameters:
+To restore a DB cluster to a specified time, call the Amazon RDS API [`RestoreDBClusterToPointInTime`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterToPointInTime.html) operation with the following parameters:
 + `SourceDBClusterIdentifier`
 + `DBClusterIdentifier`
 + `RestoreToTime`

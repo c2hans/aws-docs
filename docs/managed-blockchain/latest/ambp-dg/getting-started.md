@@ -73,7 +73,7 @@ For more information, see the [RPCs supported by AMB Access Polygon](https://doc
 <a name="awscurl-polygon-rpc-requests"></a>
 
 **Example**
-Sign requests with your IAM user credentials by using [Signature Version 4 (SigV4)](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) in order to make Polygon JSON-RPC requests to the AMB Access Polygon endpoints. The [https://github.com/okigan/awscurl](https://github.com/okigan/awscurl) command line tool can help you sign requests to AWS services using SigV4. For more information, see the [awscurl README.md](https://github.com/okigan/awscurl#readme).
+Sign requests with your IAM user credentials by using [Signature Version 4 (SigV4)](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) in order to make Polygon JSON-RPC requests to the AMB Access Polygon endpoints. The [`awscurl`](https://github.com/okigan/awscurl) command line tool can help you sign requests to AWS services using SigV4. For more information, see the [awscurl README.md](https://github.com/okigan/awscurl#readme).
 Install `awscurl` by using the method appropriate to your operating system. On macOS, HomeBrew is the recommended application:
 
 ```

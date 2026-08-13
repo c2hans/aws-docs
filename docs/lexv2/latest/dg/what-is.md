@@ -50,7 +50,7 @@ Amazon Lex V2 charges you only for the text or speech requests that you make. Th
 
 When you sign up for AWS, your AWS account is automatically signed up for all services in AWS, including Amazon Lex V2. However, you are charged only for the services that you use. If you are a new Amazon Lex V2 customer, you can get started with Amazon Lex V2 for free. For more information, see [AWS free tier](https://aws.amazon.com/free).
 
-To see your bill, go to the Billing and Cost Management Dashboard in the [AWS Billing and Cost Management console](https://console.aws.amazon.com/billing/). To learn more about AWS account billing, see the [https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-what-is.html](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-what-is.html). If you have questions concerning AWS billing and AWS accounts, contact [AWS Support](https://aws.amazon.com/contact-us/).
+To see your bill, go to the Billing and Cost Management Dashboard in the [AWS Billing and Cost Management console](https://console.aws.amazon.com/billing/). To learn more about AWS account billing, see the [*AWS Billing User Guide*](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-what-is.html). If you have questions concerning AWS billing and AWS accounts, contact [AWS Support](https://aws.amazon.com/contact-us/).
 
 ## Are You a First-time User of Amazon Lex V2?
 <a name="first-time-user"></a>

@@ -36,7 +36,7 @@ A root change set is the change set associated with the stack from which the who
 
 ### create-change-set
 <a name="working-with-change-sets-for-nested-stacks-cli"></a>
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-change-set.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-change-set.html) – Change sets for nested stacks isn't enabled by default for the AWS CLI. To create a change set for the entire stack hierarchy, specify the `--include-nested-stacks` option. For more information, see [Create a change set for a CloudFormation stack](using-cfn-updating-stacks-changesets-create.md).
++ [create-change-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-change-set.html) – Change sets for nested stacks isn't enabled by default for the AWS CLI. To create a change set for the entire stack hierarchy, specify the `--include-nested-stacks` option. For more information, see [Create a change set for a CloudFormation stack](using-cfn-updating-stacks-changesets-create.md).
 
 The following AWS CLI example creates a change set for the specified root stack.
 
@@ -60,7 +60,7 @@ The following is example output.
 
 ### describe-change-set
 <a name="working-with-change-set-describe-cli"></a>
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-change-set.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-change-set.html) – Returns a list of changes that CloudFormation will make if you execute the change set. If the change set specified contains child change sets that belong to nested stacks, then `ChangeSetId` will return information about that change set. For more information, see [View a change set for a CloudFormation stack](using-cfn-updating-stacks-changesets-view.md).
++ [describe-change-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-change-set.html) – Returns a list of changes that CloudFormation will make if you execute the change set. If the change set specified contains child change sets that belong to nested stacks, then `ChangeSetId` will return information about that change set. For more information, see [View a change set for a CloudFormation stack](using-cfn-updating-stacks-changesets-view.md).
 
 The following AWS CLI example describes the change set for the specified root stack.
 
@@ -193,7 +193,7 @@ The following is example output.
 
 ### execute-change-set
 <a name="working-with-change-set-execute-cli"></a>
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/execute-change-set.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/execute-change-set.html) – Creates or updates a stack using the input information that was provided when the specified change set was created. To create a change set for the entire stack hierarchy, you must specify the `–-include-nested-stacks` option during the **create-change-set** operation. For more information, see [Execute a change set for a CloudFormation stackStack policies and executing a change set](using-cfn-updating-stacks-changesets-execute.md).
++ [execute-change-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/execute-change-set.html) – Creates or updates a stack using the input information that was provided when the specified change set was created. To create a change set for the entire stack hierarchy, you must specify the `–-include-nested-stacks` option during the **create-change-set** operation. For more information, see [Execute a change set for a CloudFormation stackStack policies and executing a change set](using-cfn-updating-stacks-changesets-execute.md).
 **Note**
 **execute-change-set** must be executed from the root change set and will apply the change set on the whole hierarchy of stacks.
 
@@ -207,7 +207,7 @@ aws cloudformation execute-change-set \
 
 ### delete-change-set
 <a name="working-with-change-set-delete-cli"></a>
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/delete-change-set.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/delete-change-set.html) – Deletes the specified change set. Deleting change sets ensures that no one uses the wrong change set. Deleting change sets is asynchronous for change sets created with the `–-include-nested-stacks` option. For more information, see [Delete a change set for a CloudFormation stack](using-cfn-updating-stacks-changesets-delete.md).
++ [delete-change-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/delete-change-set.html) – Deletes the specified change set. Deleting change sets ensures that no one uses the wrong change set. Deleting change sets is asynchronous for change sets created with the `–-include-nested-stacks` option. For more information, see [Delete a change set for a CloudFormation stack](using-cfn-updating-stacks-changesets-delete.md).
 **Note**
 **delete-change-set** must be executed from the root change set and will delete the whole hierarchy of change sets. Nested stacks in the `REVIEW_IN_PROGRESS` status will also be deleted if they were created during the **create-change-set** operation.
 

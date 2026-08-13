@@ -113,7 +113,7 @@ The `cdk init` command creates a structure of files and folders within the `hell
 
 If you have Git installed, each project you create using `cdk init` is also initialized as a Git repository.
 
-During project initialization, the CDK CLI creates a CDK app containing a single CDK stack. The CDK app instance is created using the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.App.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.App.html) construct. The following is a portion of this code from your CDK application file:
+During project initialization, the CDK CLI creates a CDK app containing a single CDK stack. The CDK app instance is created using the [`App`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.App.html) construct. The following is a portion of this code from your CDK application file:
 
 **Example**
 Located in `bin/hello-cdk.ts`:
@@ -229,7 +229,7 @@ func main() {
 // ...
 ```
 
-The CDK stack is created using the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html) construct. The following is a portion of this code from your CDK stack file:
+The CDK stack is created using the [`Stack`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html) construct. The following is a portion of this code from your CDK stack file:
 
 **Example**
 Located in `lib/hello-cdk-stack.ts`:
@@ -604,7 +604,7 @@ If you don’t see this output, verify that you are in the correct working direc
 ## Step 6: Define your Lambda function
 <a name="hello-world-function"></a>
 
-In this step, you import the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda-readme.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda-readme.html) module from the AWS Construct Library and use the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html) L2 construct.
+In this step, you import the [`aws_lambda`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda-readme.html) module from the AWS Construct Library and use the [`Function`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html) L2 construct.
 
 Modify your CDK stack file as follows:
 
@@ -829,7 +829,7 @@ All constructs take these same three arguments, so it’s easy to stay oriented 
 ## Step 7: Define your Lambda function URL
 <a name="hello-world-url"></a>
 
-In this step, you use the `addFunctionUrl` helper method of the `Function` construct to define a Lambda function URL. To output the value of this URL at deployment, you will create an AWS CloudFormation output using the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CfnOutput.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CfnOutput.html) construct.
+In this step, you use the `addFunctionUrl` helper method of the `Function` construct to define a Lambda function URL. To output the value of this URL at deployment, you will create an AWS CloudFormation output using the [`CfnOutput`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CfnOutput.html) construct.
 
 Add the following to your CDK stack file:
 

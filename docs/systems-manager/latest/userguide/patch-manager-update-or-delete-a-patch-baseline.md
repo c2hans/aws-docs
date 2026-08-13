@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 # Updating or deleting a custom patch baseline
 <a name="patch-manager-update-or-delete-a-patch-baseline"></a>
 
-You can update or delete a custom patch baseline that you have created in Patch Manager, a tool in AWS Systems Manager. When you update a patch baseline, you can change its name or description, its approval rules, and its exceptions for approved and rejected patches. You can also update the tags that are applied to the patch baseline. You can't change the operating system type that a patch baseline has been created for, and you can't make changes to a predefined patch baseline provided by AWS.
+You can update or delete a custom patch baseline that you have created in Patch Manager. When you update a patch baseline, you can change its name or description, its approval rules, and its exceptions for approved and rejected patches. You can also update the tags that are applied to the patch baseline. You can't change the operating system type that a patch baseline has been created for, and you can't make changes to a predefined patch baseline provided by AWS.
 
 ## Updating or deleting a patch baseline
 <a name="sysman-maintenance-update-mw"></a>

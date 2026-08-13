@@ -124,8 +124,8 @@ To view an example identity-based policy for limiting access to a resource based
 To use App Runner, IAM users need permissions to App Runner actions. A common way to grant permissions to users is by attaching a policy to IAM users or groups. For more information about managing user permissions, see [Changing permissions for an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html) in the *IAM User Guide*.
 
 App Runner provides two managed policies that you can attach to your users.
-+ [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAppRunnerReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAppRunnerReadOnlyAccess.html) – Grants permissions to list and view details about App Runner resources.
-+ [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAppRunnerFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAppRunnerFullAccess.html)– Grants permissions to all App Runner actions.
++ [`AWSAppRunnerReadOnlyAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAppRunnerReadOnlyAccess.html) – Grants permissions to list and view details about App Runner resources.
++ [`AWSAppRunnerFullAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAppRunnerFullAccess.html)– Grants permissions to all App Runner actions.
 
 For more granular control of user permissions, you can create a custom policy and attach it to your users. For details, see [Creating IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) in the *IAM User Guide*.
 
@@ -155,7 +155,7 @@ App Runner supports a few service roles.
 
 The access role is a role that App Runner uses for accessing images in Amazon Elastic Container Registry (Amazon ECR) in your account. It's required to access an image in Amazon ECR, and isn't required with Amazon ECR Public.
 
-Before creating a service based on an image in Amazon ECR, use IAM to create a service role. Use the managed policy [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAppRunnerServicePolicyForECRAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAppRunnerServicePolicyForECRAccess.html) in your service role. You can then pass this role to App Runner when you call the [CreateService](https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html) API in the [AuthenticationConfiguration](https://docs.aws.amazon.com/apprunner/latest/api/API_AuthenticationConfiguration.html) member of the [SourceConfiguration](https://docs.aws.amazon.com/apprunner/latest/api/API_SourceConfiguration.html) parameter, or when you use the App Runner console to create a service.
+Before creating a service based on an image in Amazon ECR, use IAM to create a service role. Use the managed policy [`AWSAppRunnerServicePolicyForECRAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAppRunnerServicePolicyForECRAccess.html) in your service role. You can then pass this role to App Runner when you call the [CreateService](https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html) API in the [AuthenticationConfiguration](https://docs.aws.amazon.com/apprunner/latest/api/API_AuthenticationConfiguration.html) member of the [SourceConfiguration](https://docs.aws.amazon.com/apprunner/latest/api/API_SourceConfiguration.html) parameter, or when you use the App Runner console to create a service.
 
 **Note**
 If you create your own custom policy for your access role, be sure to specify `"Resource": "*"` for the `ecr:GetAuthorizationToken` action. Tokens can be used to access any Amazon ECR registry that you have access to.

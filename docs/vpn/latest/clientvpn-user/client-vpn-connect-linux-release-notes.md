@@ -12,6 +12,7 @@ We continue to provide usability and security fixes with every release. We stron
 
 | Version | Changes | Date | Download link |
 | --- | --- | --- | --- |
+| 6.0.1 |  +  Added support for command-line interface (CLI) <br />+  Added support for enterprise administrative controls <br />+  Redesigned graphical user interface (GUI) <br />+  Modernized connectivity architecture and improved security posture <br />+  Improved connection establishment time <br />+  Relocated configuration files to a system-wide admin-protected location. If profiles or preferences are missing after the upgrade, see [Profiles or preferences missing after upgrade to version 6.0](linux-troubleshooting.md#linux-troubleshooting-profiles-missing) for resolution steps.   | August 12, 2026 | [Download version 6.0.1](https://d20adtppz83p9s.cloudfront.net/GTK/6.0.1/awsvpnclient_amd64.deb)sha256: c3c10d91693efa2800c4812afa7cdb0be22181fa9a2d551030fa6f4c819e8cc9 |
 | 5.4.0 |  +  Improved security posture   | June 22, 2026 | [Download version 5.4.0](https://d20adtppz83p9s.cloudfront.net/GTK/5.4.0/awsvpnclient_amd64.deb)sha256: 7dd9e28962bf64bf94ef41b8e1f68de5e0d0393d71300767698fb336c69276cc |
 | 5.3.3 |  +  Minor bug fixes and enhancements <br />+  Improved security posture   | May 18, 2026 | [Download version 5.3.3](https://d20adtppz83p9s.cloudfront.net/GTK/5.3.3/awsvpnclient_amd64.deb)sha256: d0096c934b36122c245d8c2243d4146cdac67125c7421c4e1e6ad430eb3adfcf |
 | 5.3.2 |  +  Minor bug fixes and enhancements. <br />+  Improved security posture.   | December 17, 2025 | No longer supported. |

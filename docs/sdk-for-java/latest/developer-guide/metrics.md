@@ -63,7 +63,7 @@ S3Client s3 = S3Client.builder()
 ## Metrics limitation of the AWS CRT-based S3 client
 <a name="metrics-using-s3-crt-based-client"></a>
 
-The [AWS CRT-based S3 client](crt-based-s3-client.md) does not currently support SDK metrics collection. The builder for an AWS CRT-based S3 client instance, [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3CrtAsyncClientBuilder.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3CrtAsyncClientBuilder.html), does not provide methods to configure metrics publishers.
+The [AWS CRT-based S3 client](crt-based-s3-client.md) does not currently support SDK metrics collection. The builder for an AWS CRT-based S3 client instance, [`S3CrtAsyncClientBuilder`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3CrtAsyncClientBuilder.html), does not provide methods to configure metrics publishers.
 
 ## When are metrics available?
 <a name="when-are-metrics-available"></a>

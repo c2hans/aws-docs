@@ -13,44 +13,41 @@ For more information on default allowed HTML tags and attributes, see the [defau
 + The `translate` attribute on `<span>` elements
 
 **Important**
-Any tags or attributes not in the allowlist will be removed from Q&A responses. If your responses use custom HTML tags or attributes, you must add them to the allowlist in `sanitizeOutput.js`.
+Any tags or attributes not in the allowlist will be removed from Q&A responses. If your responses use custom HTML tags or attributes, you must add them to the allowlist in `source/bin/sanitizeAllowlist.js`.
 
 ## Instructions for adding custom tags/attributes to the allowlist
 <a name="instructions-for-adding-custom-tagsattributes-to-the-allowlist"></a>
 
+QnABot on AWS maintains a single, canonical allowlist configuration file, `source/bin/sanitizeAllowlist.js`. A build-time script automatically generates two runtime copies from this single file: one for the Fulfillment Lambda (`source/lambda/es-proxy-layer/lib/sanitizeOutput.js`) and one for the Content Designer (`source/website/js/components/designer/sanitizeOutput.js`). Both copies stay in sync. Do not edit the generated `sanitizeOutput.js` files directly—they are overwritten on every build. For more information, see [source/bin/README.md](https://github.com/aws-solutions/qnabot-on-aws/blob/main/source/bin/README.md) in the GitHub repository.
+
 To add custom tags or attributes to the sanitization allowlist:
 
-1. Download the latest QnABot on AWS source code (v7.3.12 or later) from the GitHub repository (https://github.com/aws-solutions/qnabot-on-aws).
+1. Download the latest QnABot on AWS source code (v7.4.4 or later) from the GitHub repository (https://github.com/aws-solutions/qnabot-on-aws).
 
-1. Open `source/lambda/es-proxy-layer/lib/sanitizeOutput.js` in the QnABot source code.
+1. Open `source/bin/sanitizeAllowlist.js` in the QnABot source code.
 
-1. Locate the `sanitizeParams` object in the `sanitize` function.
-
-1. Add your custom tags to `allowedTags`:
+1. Add your custom tags to `extraAllowedTags`:
 
    ```
-   allowedTags: sanitizeHtml.defaults.allowedTags.concat([
+   extraAllowedTags: [
        'question', 'references', 'chatHistory', 'followUpMessage',
        'details', 'summary', 'img',
        'custom-tag',  // add your custom tags here
-   ]),
+   ],
    ```
 
-1. Add custom attributes to `allowedAttributes` if needed:
+1. Add custom attributes to `extraAllowedAttributes` if needed:
 
    ```
-   allowedAttributes: {
-       ...sanitizeHtml.defaults.allowedAttributes,
+   extraAllowedAttributes: {
        a: ['href'],
        p: ['style'],
-       span: ['translate'],
+       span: ['translate', 'style'],
        'custom-tag': ['src', 'width', 'height'],  // add your custom attributes here
    },
    ```
 
-1. Apply the same changes to `source/website/js/components/designer/sanitizeOutput.js`.
-
-1. Rebuild and redeploy the solution following the instructions in the README.
+1. Rebuild and redeploy the guidance following the instructions in the [README](https://github.com/aws-solutions/qnabot-on-aws/blob/main/README.md) in the GitHub repository. The allowlist sync runs automatically as part of the build (for example, `npm run up` or `update`, or `build-s3-dist.sh`). You do not need to regenerate the two `sanitizeOutput.js` files manually.
 
 **Important**
 Only add tags and attributes that you have thoroughly reviewed for security implications. Adding unsafe tags or attributes could re-introduce XSS vulnerabilities.

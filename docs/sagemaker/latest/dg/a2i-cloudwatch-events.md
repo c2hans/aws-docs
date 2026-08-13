@@ -67,7 +67,7 @@ The status of the human loop.
 ## Send Events from Your Human Loop to CloudWatch Events
 <a name="a2i-cloud-watch-events-rule-setup"></a>
 
-To configure a CloudWatch Events rule to get status updates, or *events*, for your Amazon A2I human loops, use the AWS Command Line Interface (AWS CLI) [https://docs.aws.amazon.com/cli/latest/reference/events/put-rule.html](https://docs.aws.amazon.com/cli/latest/reference/events/put-rule.html) command. When using the `put-rule` command, specify the following to receive human loop statuses:
+To configure a CloudWatch Events rule to get status updates, or *events*, for your Amazon A2I human loops, use the AWS Command Line Interface (AWS CLI) [`put-rule`](https://docs.aws.amazon.com/cli/latest/reference/events/put-rule.html) command. When using the `put-rule` command, specify the following to receive human loop statuses:
 + `\"source\":[\"aws.sagemaker\"]`
 + `\"detail-type\":[\"SageMaker A2I HumanLoop Status Change\"]`
 

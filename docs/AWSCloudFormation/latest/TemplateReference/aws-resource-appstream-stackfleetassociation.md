@@ -46,7 +46,7 @@ To associate a fleet with a stack, you must specify a dependency on the fleet re
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StackName`  <a name="cfn-appstream-stackfleetassociation-stackname"></a>
 The name of the stack.
@@ -54,7 +54,7 @@ To associate a fleet with a stack, you must specify a dependency on the stack re
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
 <a name="aws-resource-appstream-stackfleetassociation--seealso"></a>

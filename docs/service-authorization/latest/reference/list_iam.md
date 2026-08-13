@@ -33,6 +33,14 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   AcquireRole  **
+  - **IAM action:**  [iam:AttachRolePolicy](#list_iam-action-AttachRolePolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
+  - **IAM action:**  [iam:CreateRole](#list_iam-action-CreateRole)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:GetRole](#list_iam-action-GetRole)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [iam:PutRolePermissionsBoundary](#list_iam-action-PutRolePermissionsBoundary)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
+  - **IAM action:**  [iam:PutRolePolicy](#list_iam-action-PutRolePolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
+  - **IAM action:**  [iam:TagRole](#list_iam-action-TagRole)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
 - **   AddClientIDToOpenIDConnectProvider  **
   - **IAM action:**  [iam:AddClientIDToOpenIDConnectProvider](#list_iam-action-AddClientIDToOpenIDConnectProvider)
   - **Condition key:**
@@ -734,6 +742,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
+
+- **   PutAccountProperties  **
+  - **IAM action:**  [iam:CreateServiceLinkedRole](#list_iam-action-CreateServiceLinkedRole)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   PutGroupPolicy  **
   - **IAM action:**  [iam:PutGroupPolicy](#list_iam-action-PutGroupPolicy)

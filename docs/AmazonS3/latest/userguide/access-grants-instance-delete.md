@@ -56,7 +56,7 @@ aws s3control delete-access-grants-instance \
 ## Using the REST API
 <a name="access-grants-instance-delete-rest-api"></a>
 
-For information about the Amazon S3 REST API support for deleting an S3 Access Grants instance, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAccessGrantsInstance.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAccessGrantsInstance.html) in the *Amazon Simple Storage Service API Reference*.
+For information about the Amazon S3 REST API support for deleting an S3 Access Grants instance, see [DeleteAccessGrantsInstance](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAccessGrantsInstance.html) in the *Amazon Simple Storage Service API Reference*.
 
 ## Using the AWS SDKs
 <a name="access-grants-instance-delete-using-sdk"></a>

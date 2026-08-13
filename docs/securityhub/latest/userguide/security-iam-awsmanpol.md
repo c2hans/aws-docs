@@ -30,7 +30,7 @@ This policy includes the following permissions:
 + `pricing` – Allows principals to get a price list of AWS services and products.
 + `account` – Allows principals to get information about account Regions to support Region management in Security Hub.
 
-To review the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubFullAccess.html) in the *AWS Managed Policy Reference Guide*.
+To review the permissions for this policy, see [AWSSecurityHubFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubFullAccess.html) in the *AWS Managed Policy Reference Guide*.
 
 ## AWS managed policy: AWSSecurityHubReadOnlyAccess
 <a name="security-iam-awsmanpol-awssecurityhubreadonlyaccess"></a>
@@ -44,7 +44,7 @@ This policy grants read-only permissions that allow users to view information in
 This policy includes the following permissions:
 + `securityhub` – Allows users to perform actions that return a list of items or details about an item. This includes API operations that start with `Get`, `List`, or `Describe`.
 
-To review the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubReadOnlyAccess.html) in the *AWS Managed Policy Reference Guide*.
+To review the permissions for this policy, see [AWSSecurityHubReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubReadOnlyAccess.html) in the *AWS Managed Policy Reference Guide*.
 
 ## AWS managed policy: AWSSecurityHubOrganizationsAccess
 <a name="security-iam-awsmanpol-awssecurityhuborganizationsaccess"></a>
@@ -90,7 +90,7 @@ This policy includes the following permissions:
 +  `organizations:ListTagsForResource` – Lists tags that are attached to a specified resource.
 +  `organizations:DescribeResourcePolicy` – Retrieves information about a resource policy.
 
-To review the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubOrganizationsAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubOrganizationsAccess.html) in the *AWS Managed Policy Reference Guide*.
+To review the permissions for this policy, see [AWSSecurityHubOrganizationsAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubOrganizationsAccess.html) in the *AWS Managed Policy Reference Guide*.
 
 ## AWS managed policy: AWSSecurityHubServiceRolePolicy
 <a name="security-iam-awsmanpol-awssecurityhubservicerolepolicy"></a>
@@ -112,7 +112,7 @@ This policy includes the following permissions:
 + `securityhub` – Retrieve information about how the Security Hub CSPM service, standards, and controls are configured.
 + `tag` – Retrieve information about resource tags.
 
-To review the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
+To review the permissions for this policy, see [AWSSecurityHubServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityHubServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
 
 ## Security Hub updates to AWS managed policies
 <a name="security-iam-awsmanpol-updates"></a>

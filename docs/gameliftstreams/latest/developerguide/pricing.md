@@ -19,7 +19,7 @@ You can review your Amazon GameLift Streams bills and usage by using the AWS Bil
 
 To view your bill through the AWS Console, refer to [Viewing your bill](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/getting-viewing-bill.html) in the AWS Billing User Guide.
 
- To view your bill through the AWS CLI, call [https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_GetCostAndUsage.html](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_GetCostAndUsage.html) using the Billing and Cost Management API. For example, use the following command to retrieve a monthly bill for Amazon GameLift Streams, and replace the dates with ones relevant to you.
+ To view your bill through the AWS CLI, call [`GetCostAndUsage`](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_GetCostAndUsage.html) using the Billing and Cost Management API. For example, use the following command to retrieve a monthly bill for Amazon GameLift Streams, and replace the dates with ones relevant to you.
 
 **Example : Use `GetCostAndUsage` API to view bill**
 

@@ -15,7 +15,7 @@ You can use the CodeBuild API or the AWS CodeBuild console to access the test re
 ## Run the test report sample
 <a name="sample-test-report-cli-run"></a>
 
-Use the following steps to run the trest report sample.
+Use the following steps to run the test report sample.
 
 **Topics**
 + [Prerequisites](#sample-test-report-cli-prerequisites)

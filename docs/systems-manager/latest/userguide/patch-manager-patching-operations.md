@@ -15,11 +15,3 @@ A patch policy configured in Quick Setup
 A Host Management option configured in Quick Setup
 A maintenance window to run a patch `Scan` or `Install` task
 An on-demand **Patch now** operation
-
-**Topics**
-+ [How package release dates and update dates are calculated](patch-manager-release-dates.md)
-+ [How security patches are selected](patch-manager-selecting-patches.md)
-+ [How to specify an alternative patch source repository (Linux)](patch-manager-alternative-source-repository.md)
-+ [How patches are installed](patch-manager-installing-patches.md)
-+ [How patch baseline rules work on Linux-based systems](patch-manager-linux-rules.md)
-+ [Patching operation differences between Linux and Windows Server](patch-manager-windows-and-linux-differences.md)

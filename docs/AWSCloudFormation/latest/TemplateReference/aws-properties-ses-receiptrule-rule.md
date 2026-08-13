@@ -68,7 +68,7 @@ The name of the receipt rule. The name must meet the following requirements:
 + Contain 64 characters or fewer.
 *Required*: No
 *Type*: String
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Recipients`  <a name="cfn-ses-receiptrule-rule-recipients"></a>
 The recipient domains and email addresses that the receipt rule applies to. If this field is not specified, this rule matches all recipients on all verified domains.

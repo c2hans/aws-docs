@@ -92,7 +92,7 @@ You might need to scroll horizontally or vertically to see all of the data in th
 | Update | Updated the [Quotas](limits.md) page to explain the new request quotas. | August 31, 2015 |
 | New content | Added information about the charges for using AWS KMS. See [AWS KMS Pricing](overview.md#pricing). | August 14, 2015 |
 | New content | Added request quotas to the AWS KMS [Quotas](limits.md). | June 11, 2015 |
-| New content | Added a new Java code sample demonstrating use of the [https://docs.aws.amazon.com/kms/latest/APIReference/API_UpdateAlias.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_UpdateAlias.html) operation. | June 1, 2015 |
+| New content | Added a new Java code sample demonstrating use of the [`UpdateAlias`](https://docs.aws.amazon.com/kms/latest/APIReference/API_UpdateAlias.html) operation. | June 1, 2015 |
 | Update | Moved the [AWS Key Management Service regions table](https://docs.aws.amazon.com/general/latest/gr/rande.html#kms_region) to the AWS General Reference. | May 29, 2015 |
 | New content | Added documentation about [How Amazon EMR uses AWS KMS](services-emr.md). | January 28, 2015 |
 | New content | Added documentation about Amazon WorkMail. | January 28, 2015 |

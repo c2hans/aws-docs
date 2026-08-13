@@ -65,7 +65,7 @@ You can specify an optional timeout for the presigned URL. For more information,
    }
    ```
 
-1. To protect against the confused deputy problem, add the global condition context keys [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) and [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount) to the policy.
+1. To protect against the confused deputy problem, add the global condition context keys [`aws:SourceArn`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) and [`aws:SourceAccount`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount) to the policy.
 **Important**
 Your `aws:SourceArn` must comply with the format: `arn:aws:iot:{{region}}:{{account-id}}:*`. Make sure that {{region}} matches your AWS IoT Region and {{account-id}} matches your customer account ID. For more information, see [Cross-service confused deputy prevention](cross-service-confused-deputy-prevention.md).
 

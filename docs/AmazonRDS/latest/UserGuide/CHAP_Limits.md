@@ -61,7 +61,7 @@ The following limitations apply to the Amazon RDS DB instances:
 40 for Oracle under the "bring-your-own-license" (BYOL) licensing model
 If your application requires more DB instances, you can request additional DB instances by opening the [Service Quotas console](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/dashboard). In the navigation pane, choose **AWS services**. Choose **Amazon Relational Database Service (Amazon RDS)**, choose a quota, and follow the directions to request a quota increase. For more information, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-increase.html) in the *Service Quotas User Guide*.
 For RDS for Oracle, you can create up to 15 read replicas per source DB instance in each Region, but we recommend limiting replicas to 5 to minimize replication lag.
-Backups managed by AWS Backup are considered manual DB snapshots, but don't count toward the manual snapshot quota. For information about AWS Backup, see the [https://docs.aws.amazon.com/aws-backup/latest/devguide](https://docs.aws.amazon.com/aws-backup/latest/devguide).
+Backups managed by AWS Backup are considered manual DB snapshots, but don't count toward the manual snapshot quota. For information about AWS Backup, see the [*AWS Backup Developer Guide*](https://docs.aws.amazon.com/aws-backup/latest/devguide).
 
 Note that the default quota for cross-Region automated backups is 20 for an AWS account, the default quota for the number of concurrent snapshot copy requests is 20 for each Region for an AWS account, and the default quota for the number of concurrent cross-Region read replica requests is 20 for each Region for an AWS account.
 
@@ -73,7 +73,7 @@ Here, reduce the number of calls per second. The quota is meant to cover most us
 + From the console, open the [Service Quotas console](https://us-east-1.console.aws.amazon.com/servicequotas/home/).
 + From the AWS CLI, use the [request-service-quota-increase](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/request-service-quota-increase.html) AWS CLI command.
 
-For more information, see the [https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html).
+For more information, see the [*Service Quotas User Guide*](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html).
 
 ## Naming constraints in Amazon RDS
 <a name="RDS_Limits.Constraints"></a>

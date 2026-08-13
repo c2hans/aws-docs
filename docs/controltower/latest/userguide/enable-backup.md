@@ -21,7 +21,7 @@ The enablement process has two main parts: *first*, enable backups for your land
 
 **Console:** You can set up backups for your landing zone in the AWS Control Tower console, on the **Landing zone settings** page. You'll see this option during the initial landing zone setup operation, and you can revisit it later with a landing zone update.
 
-**API:** You can enable backups with the AWS Control Tower APIs, by calling the [https://docs.aws.amazon.com/controltower/latest/APIReference/API_UpdateLandingZone.html](https://docs.aws.amazon.com/controltower/latest/APIReference/API_UpdateLandingZone.html) API, if you already have an AWS Control Tower landing zone, or the [https://docs.aws.amazon.com/controltower/latest/APIReference/API_CreateLandingZone.html](https://docs.aws.amazon.com/controltower/latest/APIReference/API_CreateLandingZone.html) API if you're setting up AWS Control Tower for the first time. (Hint: After that, call the [https://docs.aws.amazon.com/controltower/latest/APIReference/API_EnableBaseline.html](https://docs.aws.amazon.com/controltower/latest/APIReference/API_EnableBaseline.html) API to establish backups for each OU that you require.)
+**API:** You can enable backups with the AWS Control Tower APIs, by calling the [`UpdateLandingZone`](https://docs.aws.amazon.com/controltower/latest/APIReference/API_UpdateLandingZone.html) API, if you already have an AWS Control Tower landing zone, or the [`CreateLandingZone`](https://docs.aws.amazon.com/controltower/latest/APIReference/API_CreateLandingZone.html) API if you're setting up AWS Control Tower for the first time. (Hint: After that, call the [`EnableBaseline`](https://docs.aws.amazon.com/controltower/latest/APIReference/API_EnableBaseline.html) API to establish backups for each OU that you require.)
 
 **Outside the AWS Control Tower console**
 
@@ -83,10 +83,10 @@ To enable the `BackupBaseline` on an OU, that OU must have the `AWSControlTowerB
   ```
 
   The role has a trust relationship with the service principal for AWS Backup The role is named `aws-controltower-backup-role`, and it has the following managed permissions attached to it:
-  + [https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForBackup.html](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForBackup.html)
-  + [https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForRestores.html](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForRestores.html)
-  + [https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForS3Backup.html](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForS3Backup.html)
-  + [https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForS3Restore.html](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForS3Restore.html)
+  + [`AWSBackupServiceRolePolicyForBackup`](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForBackup.html)
+  + [`AWSBackupServiceRolePolicyForRestores`](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForRestores.html)
+  + [`AWSBackupServiceRolePolicyForS3Backup`](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForS3Backup.html)
+  + [`AWSBackupServiceRolePolicyForS3Restore`](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForS3Restore.html)
 
 **Tag resources for backup**
 

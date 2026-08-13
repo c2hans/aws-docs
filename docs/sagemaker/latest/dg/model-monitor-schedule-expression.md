@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-schedu
 **Note**
 Amazon SageMaker Model Monitor is no longer open to new customers. Existing customers can continue to use the service as normal. AWS continues to invest in security and availability improvements for Model Monitor, but we do not plan to introduce new features. For more information, see [Amazon SageMaker Model Monitor availability change](model-monitor-availability-change.md).
 
-To provide details for the monitoring schedule, use [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ScheduleConfig.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ScheduleConfig.html), which is a `cron` expression that describes details about the monitoring schedule.
+To provide details for the monitoring schedule, use [`ScheduleConfig`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ScheduleConfig.html), which is a `cron` expression that describes details about the monitoring schedule.
 
 Amazon SageMaker Model Monitor supports the following `cron` expressions:
 + To set the job to start every hour, use the following:

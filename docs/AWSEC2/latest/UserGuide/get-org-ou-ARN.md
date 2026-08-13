@@ -36,7 +36,7 @@ Before you can get the ARNs, you must have the permission to describe organizati
 #### [ AWS CLI ]
 
 **To get the ARN of an organization**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/organizations/describe-organization.html](https://docs.aws.amazon.com/cli/latest/reference/organizations/describe-organization.html) command. Add the `--query` option to return only the organization ARN.
+Use the [describe-organization](https://docs.aws.amazon.com/cli/latest/reference/organizations/describe-organization.html) command. Add the `--query` option to return only the organization ARN.
 
 ```
 aws organizations describe-organization --query 'Organization.Arn'
@@ -49,7 +49,7 @@ The following is example output.
 ```
 
 **To get the ARN of an organizational unit**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/organizations/describe-organizational-unit.html](https://docs.aws.amazon.com/cli/latest/reference/organizations/describe-organizational-unit.html) command. Use the `--query` parameter to return only the organizational unit ARN.
+Use the [describe-organizational-unit](https://docs.aws.amazon.com/cli/latest/reference/organizations/describe-organizational-unit.html) command. Use the `--query` parameter to return only the organizational unit ARN.
 
 ```
 aws organizations describe-organizational-unit \

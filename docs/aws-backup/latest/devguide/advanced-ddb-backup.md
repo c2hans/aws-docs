@@ -116,7 +116,7 @@ You can also enable AWS Backup advanced features for DynamoDB backups using the 
    }
    ```
 
-1. Use the following [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UpdateRegionSettings.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UpdateRegionSettings.html) operation to set both `"ResourceTypeManagementPreference"` and `"ResourceTypeOptInPreference"` to `"DynamoDB":true`:
+1. Use the following [`UpdateRegionSettings`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UpdateRegionSettings.html) operation to set both `"ResourceTypeManagementPreference"` and `"ResourceTypeOptInPreference"` to `"DynamoDB":true`:
 
    ```
    aws backup update-region-settings \

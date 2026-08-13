@@ -62,7 +62,7 @@ aws elasticache delete-cache-cluster ^
     --region {{us-east-2}}
 ```
 
-For more information, see the AWS CLI for ElastiCache topic [https://docs.aws.amazon.com/cli/latest/reference/elasticache/delete-cache-cluster.html](https://docs.aws.amazon.com/cli/latest/reference/elasticache/delete-cache-cluster.html).
+For more information, see the AWS CLI for ElastiCache topic [`delete-cache-cluster`](https://docs.aws.amazon.com/cli/latest/reference/elasticache/delete-cache-cluster.html).
 
 ## Using the ElastiCache API
 <a name="Clusters.Delete.API"></a>
@@ -87,4 +87,4 @@ https://elasticache.us-west-2.amazonaws.com/
 
 The `DeleteCacheCluster` API operation only deletes one cluster. To delete multiple clusters, call `DeleteCacheCluster` for each cluster that you want to delete. You do not need to wait for one cluster to finish deleting before deleting another.
 
-For more information, see the ElastiCache API reference topic [https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DeleteCacheCluster.html](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DeleteCacheCluster.html).
+For more information, see the ElastiCache API reference topic [`DeleteCacheCluster`](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DeleteCacheCluster.html).

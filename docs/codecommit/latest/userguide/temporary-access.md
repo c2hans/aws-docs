@@ -58,7 +58,7 @@ If you want your users to access repositories by assuming a role, provide your u
 ## Step 3: Install git-remote-codecommit and configure the AWS CLI
 <a name="temporary-access-configure-credentials"></a>
 
-You must configure your local computer to use the access credentials by installing [https://pypi.org/project/git-remote-codecommit/](https://pypi.org/project/git-remote-codecommit/) and configuring a profile in the AWS CLI.
+You must configure your local computer to use the access credentials by installing [**git-remote-codecommit**](https://pypi.org/project/git-remote-codecommit/) and configuring a profile in the AWS CLI.
 
 1. Follow the instructions in [Setting up ](setting-up.md) to set up the AWS CLI. Use the **aws configure** command to configure one or more profiles. Consider creating a named profile to use when you connect to CodeCommit repositories using rotating credentials.
 

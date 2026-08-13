@@ -55,7 +55,7 @@ If you are the management account or a delegated administrator, you can control 
 Before migrating an account:
 + Check that there are no IAM policies or service control policies (SCPs) that prevent you from migrating the account.
 + Identify existing IAM policies and service control policies (SCPs) that you need to replicate in the organization where you are migrating the account.
-+ Identify existing IAM policies which specify your organization ID. For example, [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalorgid](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalorgid).
++ Identify existing IAM policies which specify your organization ID. For example, [`aws:PrincipalOrgID`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalorgid).
 
 For more information, see [Managing IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage.html) in the *IAM User Guide* and [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html).
 

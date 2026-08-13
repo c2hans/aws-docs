@@ -19,7 +19,7 @@ This tutorial provides a walkthrough of the following tasks:
 ## Step 1: Install Amazon Q Developer in GitHub and authorize access
 <a name="github-quickstart-step-1"></a>
 
-You can use Amazon Q Developer in GitHub free without the need to set up an AWS account to get started. The first step to using Amazon Q Developer in GitHub is to install the app from [https://github.com/marketplace/amazon-q-developer](https://github.com/marketplace/amazon-q-developer) . During this process, you can provide Amazon Q Developer access to all your GitHub repositories or selected repositories.
+You can use Amazon Q Developer in GitHub free without the need to set up an AWS account to get started. The first step to using Amazon Q Developer in GitHub is to install the app from [GitHub](https://github.com/marketplace/amazon-q-developer) . During this process, you can provide Amazon Q Developer access to all your GitHub repositories or selected repositories.
 
 **Important**
 To install the Amazon Q Developer app and authorize access to GitHub repositories, you must meet the requirements for the GitHub organization. For more information, see [Requirements to install a GitHub App](https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/installing-a-github-app-from-a-third-party#requirements-to-install-a-github-app) and [Roles in organization](https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization) in the *GitHub documentation*.
@@ -28,7 +28,7 @@ To install the Amazon Q Developer app and authorize access to GitHub repositorie
 
 1. Navigate to the [Amazon Q Developer for GitHub app](https://github.com/marketplace/amazon-q-developer) page.
 
-1. If necessary, sign in to your [https://github.com/](https://github.com/) account using your GitHub credentials.
+1. If necessary, sign in to your [GitHub](https://github.com/) account using your GitHub credentials.
 
 1. Review the Amazon Q Developer app's overview and features, and then choose **Install**.
 

@@ -28,7 +28,7 @@ This document lists known issues that you might encounter when using the Amazon 
       		}
   	})();
   </script>
-  <script src="https://player.live-video.net/1.54.1/amazon-ivs-jw-provider.min.js">
+  <script src="https://player.live-video.net/1.55.0/amazon-ivs-jw-provider.min.js">
   </script>
   ```
 + When playing recorded content (also known as VOD) on an iOS mobile browser (e.g. Safari or Chrome), seeking backwards will mute the player.

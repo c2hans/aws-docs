@@ -438,6 +438,15 @@ Default: `15`
 (Optional) The maximum size on disk of the component store, which comprises component recipes and artifacts.
 Default: `10000000000` (10 GB)
 
+  `bootConfigTlogCompactionThresholdBytes`
+This parameter is available in v2.18.3 and later of this component.
+(Optional) The size threshold, in bytes, at which the Greengrass nucleus compacts its configuration transaction log (`config.tlog`) when the core device starts.
+Compaction does not change your configuration. It removes only outdated entries from the log, which reduces startup time and disk usage on the core device.
+To disable boot-time compaction, set this value to `0` or a negative value.
+Specify the threshold as a number of bytes, such as `10000000`. The nucleus also accepts scientific notation, such as `1e7`. If you set a value that isn't a number, such as `20MB`, the nucleus uses the default value and records a warning in its logs. An invalid value doesn't turn off compaction.
+Compaction does not prevent your device from starting. If the nucleus can't compact the log, the core device starts normally with the uncompacted log and records the error in its logs. The nucleus tries again the next time the core device starts.
+Default: `10000000` (10 MB)
+
   `platformOverride`
 (Optional) A dictionary of attributes that identify the core device's platform. Use this to define custom platform attributes that component recipes can use to identify the correct lifecycle and artifacts for the component. For example, you might define a hardware capability attribute to deploy only the minimal set of artifacts for a component to run. For more information, see the [manifest platform parameter](component-recipe-reference.md#component-platform-definition) in the component recipe.
 You can also use this parameter to override the `os` and `architecture` platform attributes of the core device.
@@ -461,7 +470,7 @@ This object contains the following values:
 The default value of `deploymentConfigurationTimeSource`. The device uses the deployment creation timestamp to resolve configuration key conflicts during processing. When this behavior is selected, local device configuration held by the nucleus may have a greater timestamp than that of the incoming deployment and rejects incoming configuration changes which are now considered outdated.
 `deploymentProcessingTime`
 The device uses its local timestamp to resolve configuration key conflicts during deployment processing. When processed, the device updates configurations based on the processing timestamp rather than the deployment creation timestamp. This behavior assumes the device clock is properly calibrated.
-Configure this nucleus setting in your initial device image or installation rather than through a deployment when you want new devices to use this behavior on first connection. Use the [https://docs.aws.amazon.com/greengrass/v2/developerguide/configure-installer.html](https://docs.aws.amazon.com/greengrass/v2/developerguide/configure-installer.html) option of the nucleus classic installer for this configuration.
+Configure this nucleus setting in your initial device image or installation rather than through a deployment when you want new devices to use this behavior on first connection. Use the [`--init-config`](https://docs.aws.amazon.com/greengrass/v2/developerguide/configure-installer.html) option of the nucleus classic installer for this configuration.
 This initial configuration is essential because devices process multiple deployments in arbitrary order. Without proper initial configuration, a device might process deployments using the default `deploymentCreationTime` behavior before receiving the deployment that sets the nucleus configuration to `deploymentProcessingTime`.
 
 **Example: Configuration merge update**
@@ -535,6 +544,7 @@ The following table describes the changes in each version of the component.
 
 |  **Version**  |  **Changes**  |
 | --- | --- |
+| 2.18.3 |  **New features**<br />   Adds the `bootConfigTlogCompactionThresholdBytes` configuration parameter to enable configuration transaction log compaction at boot, which reclaims disk space on core devices.   <br />**Bug fixes and improvements**<br />   Fixes an issue where a failed first deployment could cause the nucleus to lose device group membership and remove installed components after a restart.     |
 | 2.18.2 |  **Bug fixes and improvements**<br />   Fixes an issue where the nucleus could write unchanged configuration values to the configuration store.     |
 | 2.18.1 |  **Bug fixes and improvements**<br />   Fixes an issue where the nucleus might fail to fetch credentials after a transient connection failure.     |
 | 2.18.0 |  **New features**<br />   Adds support for switching a core device's AWS IoT connectivity to a different AWS account or region through a nucleus configuration deployment. The nucleus validates connectivity to the new endpoints before it applies the change, and reports the terminal deployment status to the source account.   Adds support for Windows Server 2025.   <br />**Bug fixes and improvements**<br />   Fixes a startup timing issue on systemd devices by starting the AWS IoT Greengrass Core software only after the system clock synchronizes.   Fixes an issue where a component might encounter stale subscriptions after it closes a local IPC stream during an in-progress subscribe request.   General bug fixes and improvements.     |

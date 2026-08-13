@@ -13,4 +13,4 @@ Use AWS Backup to assign virtual or on-premises resources to a backup plan, or r
 
 To download the AWS software to get started, navigate to the AWS Backup console, choose **Gateways**, then choose **Create gateway**.
 
-This document was last published on August 6, 2026.
+This document was last published on August 13, 2026.

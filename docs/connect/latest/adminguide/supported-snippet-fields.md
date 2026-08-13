@@ -14,7 +14,7 @@ The following table lists the communications widget snippet fields that you can 
 | `supportedMessagingContentTypes` | Array | Mandatory, auto-generated | n/a |
 | `customLaunchBehavior` | Object | Customize how your website renders and launches the hosted widget icon | [Customize widget launch behavior and button icon for your website hosted in Connect Customer](customize-widget-launch.md), later in this topic |
 | `authenticate` | Function | Callback function to enable JWT security on your website | [Step 2: Specify the website domains where you expect to display the communications widget](add-chat-to-website.md#chat-widget-domains), earlier in this section. |
-| `customerDisplayName` | Function | Pass the customer display name when initializing a contact | [Pass the customer display name when an Connect Customer chat starts](pass-display-name-chat.md), later in this section. |
+| `customerDisplayName` | Function | Pass the customer display name when initializing a contact | [Pass the customer display name when a Connect Customer chat starts](pass-display-name-chat.md), later in this section. |
 | `customStyles` | Object | Override the default CSS styles | [Pass custom properties to override the defaults in the communications widget in Connect Customer](pass-custom-styles.md), later in this section. |
 | `chatDurationInMinutes` | Number | The total duration of the newly started chat session | Default: 1500 - Min 60, Max: 10080 |
 | `enableLogs` | Boolean | Enable the debugging logs | Default: false |

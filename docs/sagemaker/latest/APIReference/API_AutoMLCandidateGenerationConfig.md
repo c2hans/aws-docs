@@ -12,7 +12,7 @@ Stores the configuration information for how a candidate is generated (optional)
 
  ** AlgorithmsConfig **   <a name="sagemaker-Type-AutoMLCandidateGenerationConfig-AlgorithmsConfig"></a>
 Stores the configuration information for the selection of algorithms trained on tabular data.
-The list of available algorithms to choose from depends on the training mode set in [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TabularJobConfig.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TabularJobConfig.html).
+The list of available algorithms to choose from depends on the training mode set in [`TabularJobConfig.Mode`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TabularJobConfig.html).
 +  `AlgorithmsConfig` should not be set if the training mode is set on `AUTO`.
 + When `AlgorithmsConfig` is provided, one `AutoMLAlgorithms` attribute must be set and one only.
 

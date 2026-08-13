@@ -127,14 +127,14 @@ For more information about AWS support for FIPS, see [Federal Information Proces
 ## About the local ssm-user account
 <a name="ssm-user-account"></a>
 
-Starting with version 2.3.50.0 of SSM Agent, the agent creates a local user account called `ssm-user` and adds it to the `/etc/sudoers.d` directory (Linux and macOS) or to the Administrators group (Windows Server). On agent versions before 2.3.612.0, the account is created the first time SSM Agent starts or restarts after installation. On version 2.3.612.0 and later, the `ssm-user` account is created the first time a session is started on an instance. This `ssm-user` is the default OS user when a session starts in Session Manager, a tool in AWS Systems Manager. You can change the permissions by moving `ssm-user` to a less-privileged group or by changing the `sudoers` file. The `ssm-user` account isn't removed from the system when SSM Agent is uninstalled.
+Starting with version 2.3.50.0 of SSM Agent, the agent creates a local user account called `ssm-user` and adds it to the `/etc/sudoers.d` directory (Linux and macOS) or to the Administrators group (Windows Server). On agent versions before 2.3.612.0, the account is created the first time SSM Agent starts or restarts after installation. On version 2.3.612.0 and later, the `ssm-user` account is created the first time a session is started on an instance. This `ssm-user` is the default OS user when a session starts in Session Manager. You can change the permissions by moving `ssm-user` to a less-privileged group or by changing the `sudoers` file. The `ssm-user` account isn't removed from the system when SSM Agent is uninstalled.
 
 On Windows Server, SSM Agent handles setting a new password for the `ssm-user` account when each session starts. No passwords are set for `ssm-user` on Linux managed instances.
 
 Starting with SSM Agent version 2.3.612.0, the `ssm-user` account isn't created automatically on Windows Server machines that are being used as domain controllers. To use Session Manager on a Windows Server domain controller, create the `ssm-user` account manually if it isn't already present, and assign Domain Administrator permissions to the user.
 
 **Important**
-In order for the `ssm-user` account to be created, the instance profile attached to the instance must provide the necessary permissions. For information, see [Step 2: Verify or add instance permissions for Session Manager](session-manager-getting-started-instance-profile.md).
+For the `ssm-user` account to be created, the instance profile attached to the instance must provide the necessary permissions. For information, see [Step 2: Verify or add instance permissions for Session Manager](session-manager-getting-started-instance-profile.md).
 
 ## SSM Agent and the Instance Metadata Service (IMDS)
 <a name="imds"></a>
@@ -179,7 +179,7 @@ You can also open the `VERSION` file directly in your browser without a `curl` c
 ## SSM Agent communications with AWS managed S3 buckets
 <a name="ssm-agent-minimum-s3-permissions"></a>
 
-In the course of performing various Systems Manager operations, AWS Systems Manager Agent (SSM Agent) accesses a number of Amazon Simple Storage Service (Amazon S3) buckets. These S3 buckets are publicly accessible, and by default, SSM Agent connects to them using `HTTP` calls.
+In the course of performing various Systems Manager operations, AWS Systems Manager Agent (SSM Agent) accesses several Amazon Simple Storage Service (Amazon S3) buckets. These S3 buckets are publicly accessible, and by default, SSM Agent connects to them using `HTTP` calls.
 
 However, if you're using a virtual private cloud (VPC) endpoint in your Systems Manager operations, you must provide explicit permission in an Amazon Elastic Compute Cloud (Amazon EC2) instance profile for Systems Manager, or in a service role for non-EC2 machines in a [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) environment. Otherwise, your resources can't access these public buckets.
 
@@ -296,7 +296,7 @@ If one of the components used to calculate the fingerprint changes, this can cau
 ## SSM Agent on GitHub
 <a name="github"></a>
 
-The source code for SSM Agent is available on [https://github.com/aws/amazon-ssm-agent](https://github.com/aws/amazon-ssm-agent) so that you can adapt the agent to meet your needs. We encourage you to submit [pull requests](https://github.com/aws/amazon-ssm-agent/blob/mainline/CONTRIBUTING.md) for changes that you would like to have included. However, Amazon Web Services doesn't provide support for running modified copies of this software.
+The source code for SSM Agent is available on [GitHub](https://github.com/aws/amazon-ssm-agent) so that you can adapt the agent to meet your needs. We encourage you to submit [pull requests](https://github.com/aws/amazon-ssm-agent/blob/mainline/CONTRIBUTING.md) for changes that you would like to have included. However, Amazon Web Services doesn't provide support for running modified copies of this software.
 
 ## Understanding SSM Agent hibernation
 <a name="ssm-agent-hibernation"></a>
@@ -354,6 +354,6 @@ Monitor these log sources to detect hibernation events early and take corrective
 To recover from hibernation, address the underlying cause:
 + **For deregistered hybrid nodes**: Reregister the node with Systems Manager using a new activation code and ID, as described in [Deregister and reregister a managed node (Linux)](hybrid-multicloud-ssm-agent-install-linux.md#systems-manager-install-managed-linux-deregister-reregister) and [Deregister and reregister a managed node (Windows Server)](hybrid-multicloud-ssm-agent-install-windows.md#systems-manager-install-managed-win-deregister-reregister).
 + **For hardware fingerprint issues**: Adjust the similarity threshold as described above under **Configuration options to prevent hibernation in hybrid instances**, or re-register the node if hardware changes are significant.
-+ **For connectivity issues**: Verify network connectivity and make sure that the required endpoints are accessible. For more information, see [Troubleshooting managed node availability using `ssm-cli`](troubleshooting-managed-nodes-using-ssm-cli.md).
++ **For connectivity issues**: Verify network connectivity and make sure the required endpoints are accessible. For more information, see [Troubleshooting managed node availability using `ssm-cli`](troubleshooting-managed-nodes-using-ssm-cli.md).
 
 After you resolve the underlying issue, the agent should automatically exit hibernation mode and resume normal operation at the next communication attempt.

@@ -30,7 +30,7 @@ RETURN n.code, rank
 ORDER BY rank DESC LIMIT 10
 ```
 
-You can run algorithms in the SDKs using the `ExecuteOpenCypherQuery` operation or in boto3 and the AWS CLI using the `execute-query` command. If you don't want to use the SDK or CLI, you can use [https://docs.aws.amazon.com/neptune/latest/userguide/iam-auth-connect-command-line.html#iam-auth-connect-awscurl](https://docs.aws.amazon.com/neptune/latest/userguide/iam-auth-connect-command-line.html#iam-auth-connect-awscurl) to sign your Neptune Analytics requests [using Signature Version 4 (Sig4)](https://docs.aws.amazon.com/general/latest/gr/signing-aws-api-requests.html). For example, you can run a simple breadth-first search like this:
+You can run algorithms in the SDKs using the `ExecuteOpenCypherQuery` operation or in boto3 and the AWS CLI using the `execute-query` command. If you don't want to use the SDK or CLI, you can use [`awscurl`](https://docs.aws.amazon.com/neptune/latest/userguide/iam-auth-connect-command-line.html#iam-auth-connect-awscurl) to sign your Neptune Analytics requests [using Signature Version 4 (Sig4)](https://docs.aws.amazon.com/general/latest/gr/signing-aws-api-requests.html). For example, you can run a simple breadth-first search like this:
 
 ```
 awscurl -X POST -H "Content-Type: application/x-www-form-urlencoded" \

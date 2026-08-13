@@ -36,7 +36,7 @@ Secrets Manager generates a CloudTrail log entry when you modify a secret. For m
 <a name="manage_update-secret_CLI"></a>
 
 **Example Update secret description**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/update-secret.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/update-secret.html) example updates the description of a secret.
+The following [`update-secret`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/update-secret.html) example updates the description of a secret.
 
 ```
 aws secretsmanager update-secret \
@@ -49,4 +49,4 @@ aws secretsmanager update-secret \
 
 We recommend you avoid calling `PutSecretValue` or `UpdateSecret` at a sustained rate of more than once every 10 minutes. When you call `PutSecretValue` or `UpdateSecret` to update the secret value, Secrets Manager creates a new version of the secret. Secrets Manager removes unlabeled versions when there are more than 100, but it does not remove versions created less than 24 hours ago. If you update the secret value more than once every 10 minutes, you create more versions than Secrets Manager removes, and you will reach the quota for secret versions.
 
-To update a secret, use the following actions: [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_UpdateSecret.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_UpdateSecret.html) or [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_ReplicateSecretToRegions.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_ReplicateSecretToRegions.html). For more information, see [AWS SDKs](asm_access.md#asm-sdks).
+To update a secret, use the following actions: [`UpdateSecret`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_UpdateSecret.html) or [`ReplicateSecretToRegions`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_ReplicateSecretToRegions.html). For more information, see [AWS SDKs](asm_access.md#asm-sdks).

@@ -99,7 +99,7 @@ Your restore jobs will be visible under **Jobs**. You can see the current status
 ## Restore an Amazon Redshift cluster using API, CLI, or SDK
 <a name="redshift-restore-api"></a>
 
-Use [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html) to restore an Amazon Redshift cluster.
+Use [`StartRestoreJob`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html) to restore an Amazon Redshift cluster.
 
 To restore a Amazon Redshift using the AWS CLI, use the command `start-restore-job` and specify the following metadata:
 
@@ -140,7 +140,7 @@ VpcSecurityGroupIds // optional array of strings
 RestoreType // CLUSTER_RESTORE or TABLE_RESTORE or NAMESPACE_RESTORE
 ```
 
- For more information, see [https://docs.aws.amazon.com/redshift/latest/APIReference/API_RestoreFromClusterSnapshot.html](https://docs.aws.amazon.com/redshift/latest/APIReference/API_RestoreFromClusterSnapshot.html) in the *Amazon Redshift API Reference* and [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/restore-from-cluster-snapshot.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/restore-from-cluster-snapshot.html) in the *AWS CLI guide*.
+ For more information, see [`RestoreFromClusterSnapshot`](https://docs.aws.amazon.com/redshift/latest/APIReference/API_RestoreFromClusterSnapshot.html) in the *Amazon Redshift API Reference* and [`restore-from-cluster-snapshot`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/restore-from-cluster-snapshot.html) in the *AWS CLI guide*.
 
 Here is an example template:
 
@@ -165,7 +165,7 @@ aws backup start-restore-job \
 -\-region us-west-2 \
 ```
 
-You can also use [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeRestoreJob.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeRestoreJob.html) to assist with restore information.
+You can also use [`DescribeRestoreJob`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeRestoreJob.html) to assist with restore information.
 
 In the AWS CLI, use the operation `describe-restore-job` and use the following metadata:
 

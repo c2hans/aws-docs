@@ -141,7 +141,7 @@ Properties:
   {{PropertyName2}}: !Ref {{LogicalResourceName}}
 ```
 
-For more detailed information about the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more detailed information about the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### The `Fn::GetAtt` function
 <a name="resource-properties-getatt"></a>
@@ -173,7 +173,7 @@ Properties:
   {{PropertyName2}}: !GetAtt {{LogicalResourceName}}.{{AttributeName}}
 ```
 
-For more detailed information about the `GetAtt` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more detailed information about the `GetAtt` function, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ## Examples
 <a name="resources-section-structure-examples"></a>

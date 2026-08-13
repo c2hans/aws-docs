@@ -2,13 +2,13 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/non-talk-time.html
 ---
 
-# Investigate non-talk time during calls using Connect Customer Contact Lens
+# Investigate non-talk time during calls using Connect Customer conversational analytics
 <a name="non-talk-time"></a>
 
 ## What is non-talk time?
 <a name="what-is-non-talk-time"></a>
 
-Connect Customer Contact Lens also identifies the amount of *non-talk time******* in a call. Non-talk time equals hold time, plus any silence where both participants aren't talking for more than 3 seconds. This duration can't be customized.
+Connect Customer conversational analytics also identifies the amount of *non-talk time******* in a call. Non-talk time equals hold time, plus any silence where both participants aren't talking for more than 3 seconds. This duration can't be customized.
 
 The following image shows the location of non-talk time data on the **Contact details **page.
 

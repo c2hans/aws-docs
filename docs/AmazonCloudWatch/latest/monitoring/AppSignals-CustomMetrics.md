@@ -170,7 +170,7 @@ Custom Span metrics currently only work with Transaction Search. With custom Spa
 
 1. Enable Application Signals monitoring with Transaction Search. For more information, see [Transaction Search](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Transaction-Search-getting-started.html).
 
-   To ensure 100% metric sampling, it's recommended to send 100% of spans to the endpoint.
+   To make sure 100% metric sampling, it's recommended to send 100% of spans to the endpoint.
 
 1. Add span attributes using the [OTEL Traces SDK](https://opentelemetry.io/docs/specs/otel/trace/sdk/). There are two ways:
    + [Recommended] Add attributes to automatically generated spans. For example:

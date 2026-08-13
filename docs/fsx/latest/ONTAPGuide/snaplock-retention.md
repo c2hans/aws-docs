@@ -48,4 +48,4 @@ After a WORM file's retention period expires, you can delete the file or set a n
 
 You can set the retention period of a SnapLock volume with the Amazon FSx console, the AWS CLI, the Amazon FSx API, and the ONTAP CLI and REST API.
 
-To set the retention period with the Amazon FSx API, use the [https://docs.aws.amazon.com/fsx/latest/APIReference/API_SnaplockRetentionPeriod.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_SnaplockRetentionPeriod.html) configuration. In the Amazon FSx console, for **Retention period**, enter values for **Default retention**, **Minimum retention**, and **Maximum retention**. Then choose a corresponding **Unit** for each.
+To set the retention period with the Amazon FSx API, use the [`SnaplockRetentionPeriod`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_SnaplockRetentionPeriod.html) configuration. In the Amazon FSx console, for **Retention period**, enter values for **Default retention**, **Minimum retention**, and **Maximum retention**. Then choose a corresponding **Unit** for each.

@@ -13,13 +13,13 @@ LifecycleConfiguration lets you manage the lifecycle of runtime sessions and res
  ** idleRuntimeSessionTimeout **   <a name="bedrockagentcorecontrol-Type-LifecycleConfiguration-idleRuntimeSessionTimeout"></a>
 Timeout in seconds for idle runtime sessions. When a session remains idle for this duration, it will be automatically terminated. Default: 900 seconds (15 minutes).
 Type: Integer
-Valid Range: Minimum value of 60. Maximum value of 28800.
+Valid Range: Minimum value of 60. Maximum value of 1209600.
 Required: No
 
  ** maxLifetime **   <a name="bedrockagentcorecontrol-Type-LifecycleConfiguration-maxLifetime"></a>
 Maximum lifetime for the instance in seconds. Once reached, instances will be automatically terminated and replaced. Default: 28800 seconds (8 hours).
 Type: Integer
-Valid Range: Minimum value of 60. Maximum value of 28800.
+Valid Range: Minimum value of 60. Maximum value of 1209600.
 Required: No
 
 ## See Also

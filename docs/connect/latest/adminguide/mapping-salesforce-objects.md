@@ -126,7 +126,7 @@ The following table lists which fields can be mapped from the Salesforce-Account
 | MiddleName | MiddleName |
 | AccountNumber | AccountNumber |
 
-The Salesforce-Account customer data from the Salesforce object is associated with an Connect Customer customer profile using the indexes in the following table.
+The Salesforce-Account customer data from the Salesforce object is associated with a Connect Customer customer profile using the indexes in the following table.
 
 | Standard Index Name | Salesforce-Account source field |
 | --- | --- |
@@ -239,7 +239,7 @@ A subset of the fields in the Salesforce-Contact object map to the standard prof
 | Email | EmailAddress |
 | Birthdate | BirthDate |
 
-The Salesforce-Contact customer data from a Salesforce object is associated with an Connect Customer customer profile using the indexes in the following table.
+The Salesforce-Contact customer data from a Salesforce object is associated with a Connect Customer customer profile using the indexes in the following table.
 
 | Standard Index Name | Salesforce-Contact source field |
 | --- | --- |

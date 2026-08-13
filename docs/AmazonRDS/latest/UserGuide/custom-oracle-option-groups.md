@@ -92,7 +92,7 @@ When you create an option group, the settings are derived from the default optio
 #### AWS CLI
 <a name="custom-oracle-timezone.Create.CLI"></a>
 
-To create an option group, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/create-option-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/create-option-group.html) command with the following required parameters.
+To create an option group, use the AWS CLI [`create-option-group`](https://docs.aws.amazon.com/cli/latest/reference/rds/create-option-group.html) command with the following required parameters.
 + `--option-group-name`
 + `--engine-name`
 + `--major-engine-version`
@@ -122,7 +122,7 @@ aws rds create-option-group ^
 #### RDS API
 <a name="custom-oracle-timezone.Create.API"></a>
 
-To create an option group, call the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateOptionGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateOptionGroup.html) operation.
+To create an option group, call the Amazon RDS API [`CreateOptionGroup`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateOptionGroup.html) operation.
 
 ### Associating an option group with an RDS Custom for Oracle DB instance
 <a name="custom-oracle-timezone.associating"></a>

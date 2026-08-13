@@ -14,7 +14,7 @@ CloudWatch Pipeline integrates with Palo Alto Networks NGFW using the PAN-OS XML
 <a name="paloalto-ngfw-authentication"></a>
 
 To read network security logs, the pipeline needs to authenticate with your Palo Alto Networks NGFW login device interface. The plugin supports Basic Authentication.
-+ Create and Manage Users on a Palo Alto Networks NGFW Firewall via CLI
++ Create and Manage Users on a Palo Alto Networks NGFW Firewall by using the CLI
 + Login firewall using with hostname using user admin and your password
 + Store this username and password in a secret in AWS Secrets Manager under the keys `username` and `password`.
 + Identify and note down your PAN-OS hostname.
@@ -24,7 +24,7 @@ Once configured, the pipeline can authenticate using the username and password a
 ## Configuring the CloudWatch Pipeline
 <a name="paloalto-ngfw-pipeline-config"></a>
 
-When configuring the pipeline to read logs from Palo Alto Networks NGFW, choose Palo Alto Networks Next-Generation Firewalls as the data source. Fill in the required information like `hostname`. Once you create the pipeline, data will be available in the selected CloudWatch Logs log group.
+When configuring the pipeline to read logs from Palo Alto Networks NGFW, choose Palo Alto Networks Next-Generation Firewalls as the data source. Fill in the required information like `hostname`. After you create the pipeline, data will be available in the selected CloudWatch Logs log group.
 
 ## Supported Open Cybersecurity Schema Framework Event Classes
 <a name="paloalto-ngfw-ocsf-events"></a>

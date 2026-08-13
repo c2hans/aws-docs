@@ -35,7 +35,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 
  `AccessAssociation`   <a name="sam-api-domainconfiguration-domainaccessassociation"></a>
 The configuration required to generate ` AWS::ApiGateway::DomainNameAccessAssociation` resource.
-AWS SAM generates an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainnameaccessassociation.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainnameaccessassociation.html) resource when this property is set. For information about generated CloudFormation resources, see [Generated CloudFormation resources for AWS SAM](sam-specification-generated-resources.md).
+AWS SAM generates an [AWS::ApiGateway::DomainNameAccessAssociation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainnameaccessassociation.html) resource when this property is set. For information about generated CloudFormation resources, see [Generated CloudFormation resources for AWS SAM](sam-specification-generated-resources.md).
 *Type*: [DomainAccessAssociation](sam-property-api-domainaccessassociation.md)
 *Required*: No
 *CloudFormation compatibility*: This property is unique to AWS SAM and doesn't have an CloudFormation equivalent.
@@ -56,10 +56,10 @@ The Amazon Resource Name (ARN) of an AWS managed certificate this domain name's 
 
  `DomainName`   <a name="sam-api-domainconfiguration-domainname"></a>
 The custom domain name for your API Gateway API. Uppercase letters are not supported.
-AWS SAM generates an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html) resource when this property is set. For information about this scenario, see [DomainName property is specified](sam-specification-generated-resources-api.md#sam-specification-generated-resources-api-domain-name). For information about generated CloudFormation resources, see [Generated CloudFormation resources for AWS SAM](sam-specification-generated-resources.md).
+AWS SAM generates an [AWS::ApiGateway::DomainName](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html) resource when this property is set. For information about this scenario, see [DomainName property is specified](sam-specification-generated-resources-api.md#sam-specification-generated-resources-api-domain-name). For information about generated CloudFormation resources, see [Generated CloudFormation resources for AWS SAM](sam-specification-generated-resources.md).
 *Type*: String
 *Required*: Yes
-*CloudFormation compatibility*: This property is passed directly to the `[DomainName](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-domainname)` property of an `AWS::ApiGateway::DomainName` resource, or to [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainnamev2](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainnamev2) when EndpointConfiguration is set to `PRIVATE`.
+*CloudFormation compatibility*: This property is passed directly to the `[DomainName](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-domainname)` property of an `AWS::ApiGateway::DomainName` resource, or to [`AWS::ApiGateway::DomainNameV2`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainnamev2) when EndpointConfiguration is set to `PRIVATE`.
 
  `EndpointConfiguration`   <a name="sam-api-domainconfiguration-endpointconfiguration"></a>
 Defines the type of API Gateway endpoint to map to the custom domain. The value of this property determines how the `CertificateArn` property is mapped in CloudFormation.
@@ -74,7 +74,7 @@ The access mode for the custom domain name endpoint. Required when using enhance
 *Valid values*: `STRICT` or `BASIC`
 *Type*: String
 *Required*: Conditional
-*CloudFormation compatibility*: This property is passed directly to the `[EndpointAccessMode](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-endpointaccessmode)` property of an `AWS::ApiGateway::DomainName` resource, or to [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainnamev2](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainnamev2) when `EndpointConfiguration` is set to `PRIVATE`.
+*CloudFormation compatibility*: This property is passed directly to the `[EndpointAccessMode](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-endpointaccessmode)` property of an `AWS::ApiGateway::DomainName` resource, or to [`AWS::ApiGateway::DomainNameV2`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainnamev2) when `EndpointConfiguration` is set to `PRIVATE`.
 
  `MutualTlsAuthentication`   <a name="sam-api-domainconfiguration-mutualtlsauthentication"></a>
 The mutual Transport Layer Security (TLS) authentication configuration for a custom domain name.
@@ -112,7 +112,7 @@ Defines an Amazon Route 53 configuration.
 The TLS version plus cipher suite for this domain name.
 *Type*: String
 *Required*: No
-*CloudFormation compatibility*: This property is passed directly to the `[SecurityPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-securitypolicy)` property of an `AWS::ApiGateway::DomainName` resource, or to [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainnamev2](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainnamev2) when `EndpointConfiguration` is set to `PRIVATE`. For `PRIVATE` endpoints, only TLS\_1\_2 is supported.
+*CloudFormation compatibility*: This property is passed directly to the `[SecurityPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-securitypolicy)` property of an `AWS::ApiGateway::DomainName` resource, or to [`AWS::ApiGateway::DomainNameV2`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainnamev2) when `EndpointConfiguration` is set to `PRIVATE`. For `PRIVATE` endpoints, only TLS\_1\_2 is supported.
 
 ## Examples
 <a name="sam-property-api-domainconfiguration--examples"></a>

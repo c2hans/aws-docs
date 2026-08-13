@@ -16,7 +16,7 @@ You must meet the following requirements to create a migration workflow using th
 + Verify that your applications are on a supported operating system. For more information, see [Supported operating systems](https://docs.aws.amazon.com/mgn/latest/ug/Supported-Operating-Systems.html).
 + AWS Application Migration Service must be initialized by the IAM admin of the AWS account. For more information, see [Application Migration Service initialization and permissions](https://docs.aws.amazon.com/mgn/latest/ug/mandatory-setup.html).
 + Complete the replication settings for AWS Application Migration Service. For more information, see [Replication settings](https://docs.aws.amazon.com/mgn/latest/ug/replication-settings-template.html).
-+ Users must have the permissions granted by the [https://docs.aws.amazon.com/mgn/latest/ug/security-iam-awsmanpol-AWSApplicationMigrationAgentPolicy.html](https://docs.aws.amazon.com/mgn/latest/ug/security-iam-awsmanpol-AWSApplicationMigrationAgentPolicy.html) policy.
++ Users must have the permissions granted by the [AWSApplicationMigrationAgentPolicy](https://docs.aws.amazon.com/mgn/latest/ug/security-iam-awsmanpol-AWSApplicationMigrationAgentPolicy.html) policy.
 + Provide credentials in the AWS Secrets Manager to install the AWS Replication Agent on your remote server.
 
   1. Sign in to [https://console.aws.amazon.com/secretsmanager/](https://console.aws.amazon.com/secretsmanager/).
@@ -31,7 +31,7 @@ You must meet the following requirements to create a migration workflow using th
 The Secret ID must begin with the prefix `migrationhub-orchestrator-` and must only be followed by an alphanumeric value.
 
   1. Select **Next** and then, select **Store**.
-+  Create an IAM role with the Amazon EC2 use case to run test scripts on migrated instances. Attach the [https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-AWSMigrationHubOrchestratorInstanceRolePolicy](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-AWSMigrationHubOrchestratorInstanceRolePolicy) and AmazonSSMManagedInstanceCore policies to this role. Once the role is created, update the trust policy to include SSM (` ssm.amazonaws.com`). For more information on updating a trust policy, see [Modifying a role trust policy (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/roles-managingrole-editing-console.html#roles-managingrole_edit-trust-policy).
++  Create an IAM role with the Amazon EC2 use case to run test scripts on migrated instances. Attach the [AWSMigrationHubOrchestratorInstanceRolePolicy](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-AWSMigrationHubOrchestratorInstanceRolePolicy) and AmazonSSMManagedInstanceCore policies to this role. Once the role is created, update the trust policy to include SSM (` ssm.amazonaws.com`). For more information on updating a trust policy, see [Modifying a role trust policy (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/roles-managingrole-editing-console.html#roles-managingrole_edit-trust-policy).
 + The IAM user running the AWS Application Migration Service must have permissions to perform the `startTest` and `startCutoverInstance` tasks. Create an IAM user and attach the **AWSApplicationMigrationFullAccess**, **AWSApplicationMigrationEC2Access**, and **AmazonEC2FullAccess** policies along with the following inline policy.
 
   ```

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-fhir
 # Creating a FHIR resource
 <a name="managing-fhir-resources-create"></a>
 
-The FHIR `create` interaction creates a new FHIR resource in a HealthLake data store. For additional information, see [https://hl7.org/fhir/R4/http.html#create](https://hl7.org/fhir/R4/http.html#create) in the **FHIR R4 RESTful API documentation**.
+The FHIR `create` interaction creates a new FHIR resource in a HealthLake data store. For additional information, see [`create`](https://hl7.org/fhir/R4/http.html#create) in the **FHIR R4 RESTful API documentation**.
 
 **To create a FHIR resource**
 
@@ -64,7 +64,7 @@ The FHIR `create` interaction creates a new FHIR resource in a HealthLake data s
 ------
 #### [ SMART on FHIR ]
 
-   SMART on FHIR authorization example for the [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
+   SMART on FHIR authorization example for the [`IdentityProviderConfiguration`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
 
    ```
    {

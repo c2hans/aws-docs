@@ -21,7 +21,7 @@ If you don't already have a VPC or want to use a new one, you can create one by 
 
 **Using the AWS CLI**
 
-You can start to set up a VPC in Amazon EC2 by using the [https://docs.aws.amazon.com/cli/latest/reference/ec2/create-vpc.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-vpc.html) command. To learn more about VPC settings for the AWS CLI, see [Examples for VPC](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Scenarios.html) in the *Amazon VPC User Guide*.
+You can start to set up a VPC in Amazon EC2 by using the [`aws ec2 create-vpc`](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-vpc.html) command. To learn more about VPC settings for the AWS CLI, see [Examples for VPC](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Scenarios.html) in the *Amazon VPC User Guide*.
 
 **Using the Amazon EC2 console**
 

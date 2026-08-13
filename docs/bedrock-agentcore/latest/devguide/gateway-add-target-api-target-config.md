@@ -48,7 +48,9 @@ Select one of the following methods:
    agentcore deploy
    ```
 
-1. With the AgentCore CLI, you can easily create a Lambda target with default configurations.
+   For `lambda-function-arn` targets, provide the tool schema to the AgentCore CLI with `--tool-schema-file`. For the AgentCore Python SDK and Boto3, provide the tool schema with `inlinePayload`.
+
+1. With the AgentCore Python SDK, you can create an AWS Lambda target with default configurations.
 
    ```
    # Import dependencies

@@ -40,7 +40,7 @@ To use the snapshot functionality of the Amazon EBS CSI driver, you must first i
 ## Step 1: Create an IAM role
 <a name="csi-iam-role"></a>
 
-The Amazon EBS CSI plugin requires IAM permissions to make calls to AWS APIs on your behalf. If you don’t do these steps, attempting to install the add-on and running `kubectl describe pvc` will show `failed to provision volume with StorageClass` along with a `could not create volume in EC2: UnauthorizedOperation` error. For more information, see [Set up driver permission](https://github.com/kubernetes-sigs/aws-ebs-csi-driver/blob/master/docs/install.md#set-up-driver-permissions) on GitHub.
+The Amazon EBS CSI plugin requires IAM permissions to make calls to AWS APIs on your behalf. If you don’t do these steps, attempting to install the add-on and running `kubectl describe pvc` will show `failed to provision volume with StorageClass` along with a `could not create volume in EC2: UnauthorizedOperation` error. For more information, see [Set up driver permissions](https://github.com/kubernetes-sigs/aws-ebs-csi-driver/blob/master/docs/install.md#set-up-driver-permissions) on GitHub.
 
 **Note**
 Pods will have access to the permissions that are assigned to the IAM role unless you block access to IMDS. For more information, see [Secure Amazon EKS clusters with best practices](security-best-practices.md).
@@ -51,7 +51,7 @@ The following procedure shows you how to create an IAM role and attach the AWS m
 +  [AWS CLI](#awscli_store_app_data)
 
 **Note**
-You can create a self-managed policy with further scoped-down permissions. Review [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEBSCSIDriverPolicyV2.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEBSCSIDriverPolicyV2.html) and create a custom IAM Policy with reduced permissions. If migrating from `AmazonEBSCSIDriverPolicy`, please see [EBS CSI Driver policy migration](https://github.com/kubernetes-sigs/aws-ebs-csi-driver/issues/2918).
+You can create a self-managed policy with further scoped-down permissions. Review [`AmazonEBSCSIDriverPolicyV2`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEBSCSIDriverPolicyV2.html) and create a custom IAM policy with reduced permissions. If migrating from `AmazonEBSCSIDriverPolicy`, see [EBS CSI Driver policy migration](https://github.com/kubernetes-sigs/aws-ebs-csi-driver/issues/2918).
 
 **Note**
 The specific steps in this procedure are written for using the driver as an Amazon EKS add-on. Different steps are needed to use the driver as a self-managed add-on. For more information, see [Set up driver permissions](https://github.com/kubernetes-sigs/aws-ebs-csi-driver/blob/master/docs/install.md#set-up-driver-permissions) on GitHub.

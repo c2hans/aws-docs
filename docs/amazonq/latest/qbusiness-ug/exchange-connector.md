@@ -9,7 +9,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 You can connect your Microsoft Exchange enterprise messaging system to Amazon Q Business to unlock valuable organizational knowledge. This connection allows your users to search emails, calendar events, and shared content directly through the Amazon Q web experience.
 
-You can connect your Microsoft Exchange instance to Amazon Q Business using the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API. This enables faster information discovery and improved decision-making across your organization.
+You can connect your Microsoft Exchange instance to Amazon Q Business using the AWS Management Console or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API. This enables faster information discovery and improved decision-making across your organization.
 
 **Topics**
 + [Microsoft Exchange connector versions](exchange-versions.md)

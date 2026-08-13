@@ -23,7 +23,7 @@ The following table describes the important changes to the documentation since t
 | New release | [Amazon EMR on EKS 7.0.0 releases](emr-eks-7.0.0.md) | December 22, 2023 |
 | New release | [Amazon EMR on EKS 6.15.0 releases](emr-eks-6.15.0.md) | November 17, 2023 |
 | New release | [Amazon EMR on EKS 6.14.0 releases](emr-eks-6.14.0.md) | October 17, 2023 |
-| Update content | Rename "managed endpoints" to []() | September 29, 2023 |
+| Update content | Rename "managed endpoints" to [**interactive endpoints; [Interactive endpoints]() general availability**]() | September 29, 2023 |
 | New release | [Amazon EMR on EKS 6.13.0 releases](emr-eks-6.13.0.md), and public preview docs for [Running Flink jobs with Amazon EMR on EKS](run-flink-jobs.md) | September 12, 2023 |
 | New release | [Amazon EMR on EKS 6.12.0 releases](emr-eks-6.12.0.md) | July 21, 2023 |
 | New content | Added [Using Volcano as a custom scheduler for Apache Spark on Amazon EMR on EKS](tutorial-volcano.md)  | June 13, 2023 |

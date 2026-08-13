@@ -9,7 +9,7 @@ Where OIDC issues ID tokens that contain user attributes, OAuth 2.0 implements t
 
 The `userInfo` endpoint is an OpenID Connect (OIDC) [userInfo endpoint](https://openid.net/specs/openid-connect-core-1_0.html#UserInfo). It responds with user attributes when service providers present access tokens that your [token endpoint](token-endpoint.md) issued. The scopes in your user's access token define the user attributes that the userInfo endpoint returns in its response. The `openid` scope must be one of the access token claims.
 
-Amazon Cognito issues access tokens in response to user pools API requests like [https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_InitiateAuth.html](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_InitiateAuth.html). Because they don't contain any scopes, the userInfo endpoint doesn't accept these access tokens. Instead, you must present access tokens from your token endpoint.
+Amazon Cognito issues access tokens in response to user pools API requests like [InitiateAuth](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_InitiateAuth.html). Because they don't contain any scopes, the userInfo endpoint doesn't accept these access tokens. Instead, you must present access tokens from your token endpoint.
 
 Your OAuth 2.0 third-party identity provider (IdP) also hosts a userInfo endpoint. When your user authenticates with that IdP, Amazon Cognito silently exchanges an authorization code with the IdP `token` endpoint. Your user pool passes the IdP access token to authorize retrieval of user information from the IdP `userInfo` endpoint.
 

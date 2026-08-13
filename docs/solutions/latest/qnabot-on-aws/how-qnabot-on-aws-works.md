@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/how-qnabo
 # How QnABot on AWS works
 <a name="how-qnabot-on-aws-works"></a>
 
-This solution is powered by the same technology as Alexa. The Amazon Lex component provides the tools that you need to tackle challenging deep learning problems, such as speech recognition and language understanding, through an easy-to-use fully managed service. Amazon Lex integrates with AWS Lambda, which you can use to initiate functions for running your backend business logic for data retrieval and updates. Once built, your bot can be deployed directly to chat platforms, mobile clients, and IoT devices. You can also use the reports provided to track metrics for your bot. This solution provides a scalable, secure, easy to use, end-to-end solution to build, publish, and monitor your bots.
+This guidance uses the same technology as Alexa. Amazon Lex provides the tools to tackle challenging problems such as speech recognition and language understanding through an easy-to-use fully managed service. Amazon Lex integrates with AWS Lambda to run your backend business logic for data retrieval and updates. After you build your bot, you can deploy it to chat platforms, mobile clients, and IoT devices. You can also use reports to track bot metrics. This guidance provides a scalable, secure, and easy-to-use way to build, publish, and monitor your bots.
 
 Intelligent contact centers leverage conversational UX engines like Amazon Lex in order to provide proactive service to customers. Amazon Lex uses a deep learning engine that combines ASR and NLU to manage the customer experience. This enables it to be natural and adaptable to customer needs.
 
@@ -21,9 +21,9 @@ The following figure illustrates a reference architecture for how QnABot on AWS 
 
 ![ref architecture integrations](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/ref-architecture-integrations.png)
 
-The following figure illustrates how Amazon Lex and Amazon OpenSearch Service help power the QnABot on AWS solution.
+The following figure illustrates how Amazon Lex and Amazon OpenSearch Service help power the QnABot on AWS guidance.
 
- **How Amazon Lex and Amazon OpenSearch Service help power the QnABot on AWS solution.**
+ **How Amazon Lex and Amazon OpenSearch Service help power the QnABot on AWS guidance.**
 
 ![arch data flow](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/arch-data-flow.png)
 
@@ -31,17 +31,17 @@ Asking QnABot on AWS questions initiates the following processes:
 
 1. The question gets processed and transcribed by Amazon Lex using NLU and Natural Language Processing (NLP) engines.
 
-1. The solution initially trains the NLP engine to match a wide variety of possible questions and statements so that the Amazon Lex chatbot can accept almost any question a user asks. The Amazon Lex interaction model is set up with the following:
-   +  **intents** - An intent represents an action that fulfills a user’s spoken request. Intents can optionally have arguments called *slots*. The solution uses *slots* to capture user input and fulfill the intent via a Lambda function.
-   +  **sample utterances** - A set of likely spoken phrases mapped to the intents. This should include as many representative phrases as possible. The sample utterances specify the words and phrases users can say to invoke your intents. The solution updates the **sample utterances** with the various questions to train the chatbot to understand different end user’s input.
+1. The guidance initially trains the NLP engine to match a wide variety of possible questions and statements so that the Amazon Lex chatbot can accept almost any question a user asks. The Amazon Lex interaction model is set up with the following:
+   +  **intents** - An intent represents an action that fulfills a user’s spoken request. Intents can optionally have arguments called *slots*. The guidance uses *slots* to capture user input and fulfill the intent via a Lambda function.
+   +  **sample utterances** - A set of likely spoken phrases mapped to the intents. This should include as many representative phrases as possible. The sample utterances specify the words and phrases users can say to invoke your intents. The guidance updates the **sample utterances** with the various questions to train the chatbot to understand different end user’s input.
 
-1. This question is then sent to Amazon OpenSearch Service. The solution attempts to match an end user’s request to the list of questions and answers stored in Amazon OpenSearch Service.
+1. This question is then sent to Amazon OpenSearch Service. The guidance attempts to match an end user’s request to the list of questions and answers stored in Amazon OpenSearch Service.
    + The QnABot on AWS uses full-text search to find the most relevant ranked document from the searchable index. Relevancy ranking is based on a few properties:
      +  **count** - How many search terms appear in a document.
      +  **frequency** - How often the specified keywords occur in a given document.
      +  **importance** - How rare or new the specified keywords are and how closely the keywords occur together in a phrase.
-   + The closer the alignment between a question associated with an item and a question asked by the user, the greater the probability that the solution will choose that item as the most relevant answer. Noise words such as articles and prepositions in sentence construction have lower weighting than unique keywords.
-   + The keyword filter feature helps the solution to be more accurate when answering questions, and to admit more readily when it doesn’t know the answer. The keyword filter feature works by using Amazon Comprehend to determine the part of speech that applies to each word you say to QnABot on AWS. By default, nouns (including proper nouns), verbs, and interjections are used as keywords. Any answer returned by QnABot on AWS must have questions that match these keywords, using the following (default) rule:
+   + The closer the alignment between a question associated with an item and a question asked by the user, the greater the probability that the guidance will choose that item as the most relevant answer. Noise words such as articles and prepositions in sentence construction have lower weighting than unique keywords.
+   + The keyword filter feature helps the guidance to be more accurate when answering questions, and to admit more readily when it doesn’t know the answer. The keyword filter feature works by using Amazon Comprehend to determine the part of speech that applies to each word you say to QnABot on AWS. By default, nouns (including proper nouns), verbs, and interjections are used as keywords. Any answer returned by QnABot on AWS must have questions that match these keywords, using the following (default) rule:
      + If there are one or two keywords, then all keywords must match.
      + If there are three or more keywords, then 75% of the keywords must match.
      + If QnABot on AWS can’t find any answers that match these keyword filter rules, then it will admit that it doesn’t know the answer rather than guessing an answer that doesn’t match the keywords. QnABot on AWS logs every question that it can’t answer so you can see them in the included Kibana Dashboard.

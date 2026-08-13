@@ -313,10 +313,10 @@ A structure containing the authentication configuration.
 + `AuthenticationType` – UTF-8 string (valid values: `BASIC` \| `OAUTH2` \| `CUSTOM` \| `IAM`).
 
   A structure containing the authentication configuration.
-+ `SecretArn` – UTF-8 string, matching the [Custom string pattern #36](aws-glue-api-common.md#regex_36).
++ `SecretArn` – UTF-8 string, matching the [Custom string pattern #32](aws-glue-api-common.md#regex_32).
 
   The secret manager ARN to store credentials.
-+ `KmsKeyArn` – UTF-8 string, matching the [Custom string pattern #42](aws-glue-api-common.md#regex_42).
++ `KmsKeyArn` – UTF-8 string, matching the [Custom string pattern #39](aws-glue-api-common.md#regex_39).
 
   The Amazon Resource Name (ARN) of the KMS key used to encrypt sensitive authentication information. This key is used to protect credentials and other sensitive data stored within the authentication configuration.
 + `OAuth2Properties` – An [OAuth2Properties](#aws-glue-api-catalog-connections-connections-OAuth2Properties) object.
@@ -335,10 +335,10 @@ A structure containing the authentication configuration in the CreateConnection 
 + `OAuth2Properties` – An [OAuth2PropertiesInput](#aws-glue-api-catalog-connections-connections-OAuth2PropertiesInput) object.
 
   The properties for OAuth2 authentication in the CreateConnection request.
-+ `SecretArn` – UTF-8 string, matching the [Custom string pattern #36](aws-glue-api-common.md#regex_36).
++ `SecretArn` – UTF-8 string, matching the [Custom string pattern #32](aws-glue-api-common.md#regex_32).
 
   The secret manager ARN to store credentials in the CreateConnection request.
-+ `KmsKeyArn` – UTF-8 string, matching the [Custom string pattern #42](aws-glue-api-common.md#regex_42).
++ `KmsKeyArn` – UTF-8 string, matching the [Custom string pattern #39](aws-glue-api-common.md#regex_39).
 
   The ARN of the KMS key used to encrypt the connection. Only taken an as input in the request and stored in the Secret Manager.
 + `BasicAuthenticationCredentials` – A [BasicAuthenticationCredentials](#aws-glue-api-catalog-connections-connections-BasicAuthenticationCredentials) object.
@@ -364,7 +364,7 @@ A structure containing properties for OAuth2 authentication.
 + `OAuth2ClientApplication` – An [OAuth2ClientApplication](#aws-glue-api-catalog-connections-connections-OAuth2ClientApplication) object.
 
   The client application type. For example, AWS\_MANAGED or USER\_MANAGED.
-+ `TokenUrl` – UTF-8 string, not more than 256 bytes long, matching the [Custom string pattern #40](aws-glue-api-common.md#regex_40).
++ `TokenUrl` – UTF-8 string, not more than 256 bytes long, matching the [Custom string pattern #37](aws-glue-api-common.md#regex_37).
 
   The URL of the provider's authentication server, to exchange an authorization code for an access token.
 + `TokenUrlParametersMap` – A map array of key-value pairs.
@@ -387,7 +387,7 @@ A structure containing properties for OAuth2 in the CreateConnection request.
 + `OAuth2ClientApplication` – An [OAuth2ClientApplication](#aws-glue-api-catalog-connections-connections-OAuth2ClientApplication) object.
 
   The client application type in the CreateConnection request. For example, `AWS_MANAGED` or `USER_MANAGED`.
-+ `TokenUrl` – UTF-8 string, not more than 256 bytes long, matching the [Custom string pattern #40](aws-glue-api-common.md#regex_40).
++ `TokenUrl` – UTF-8 string, not more than 256 bytes long, matching the [Custom string pattern #37](aws-glue-api-common.md#regex_37).
 
   The URL of the provider's authentication server, to exchange an authorization code for an access token.
 + `TokenUrlParametersMap` – A map array of key-value pairs.
@@ -410,10 +410,10 @@ A structure containing properties for OAuth2 in the CreateConnection request.
 The OAuth2 client app used for the connection.
 
 **Fields**
-+ `UserManagedClientApplicationClientId` – UTF-8 string, not more than 2048 bytes long, matching the [Custom string pattern #37](aws-glue-api-common.md#regex_37).
++ `UserManagedClientApplicationClientId` – UTF-8 string, not more than 2048 bytes long, matching the [Custom string pattern #33](aws-glue-api-common.md#regex_33).
 
   The client application clientID if the ClientAppType is `USER_MANAGED`.
-+ `AWSManagedClientApplicationReference` – UTF-8 string, not more than 2048 bytes long, matching the [Custom string pattern #37](aws-glue-api-common.md#regex_37).
++ `AWSManagedClientApplicationReference` – UTF-8 string, not more than 2048 bytes long, matching the [Custom string pattern #33](aws-glue-api-common.md#regex_33).
 
   The reference to the SaaS-side client app that is AWS managed.
 
@@ -423,10 +423,10 @@ The OAuth2 client app used for the connection.
 The set of properties required for the the OAuth2 `AUTHORIZATION_CODE` grant type workflow.
 
 **Fields**
-+ `AuthorizationCode` – UTF-8 string, not less than 1 or more than 4096 bytes long, matching the [Custom string pattern #37](aws-glue-api-common.md#regex_37).
++ `AuthorizationCode` – UTF-8 string, not less than 1 or more than 4096 bytes long, matching the [Custom string pattern #33](aws-glue-api-common.md#regex_33).
 
   An authorization code to be used in the third leg of the `AUTHORIZATION_CODE` grant workflow. This is a single-use code which becomes invalid once exchanged for an access token, thus it is acceptable to have this value as a request parameter.
-+ `RedirectUri` – UTF-8 string, not more than 512 bytes long, matching the [Custom string pattern #41](aws-glue-api-common.md#regex_41).
++ `RedirectUri` – UTF-8 string, not more than 512 bytes long, matching the [Custom string pattern #38](aws-glue-api-common.md#regex_38).
 
   The redirect URI where the user gets redirected to by authorization server when issuing an authorization code. The URI is subsequently used when the authorization code is exchanged for an access token.
 
@@ -436,10 +436,10 @@ The set of properties required for the the OAuth2 `AUTHORIZATION_CODE` grant typ
 For supplying basic auth credentials when not providing a `SecretArn` value.
 
 **Fields**
-+ `Username` – UTF-8 string, not more than 512 bytes long, matching the [Custom string pattern #37](aws-glue-api-common.md#regex_37).
++ `Username` – UTF-8 string, not more than 512 bytes long, matching the [Custom string pattern #33](aws-glue-api-common.md#regex_33).
 
   The username to connect to the data source.
-+ `Password` – UTF-8 string, not more than 512 bytes long, matching the [Custom string pattern #33](aws-glue-api-common.md#regex_33).
++ `Password` – UTF-8 string, not more than 512 bytes long, matching the [Custom string pattern #34](aws-glue-api-common.md#regex_34).
 
   The password to connect to the data source.
 
@@ -449,16 +449,16 @@ For supplying basic auth credentials when not providing a `SecretArn` value.
 The credentials used when the authentication type is OAuth2 authentication.
 
 **Fields**
-+ `UserManagedClientApplicationClientSecret` – UTF-8 string, not more than 512 bytes long, matching the [Custom string pattern #38](aws-glue-api-common.md#regex_38).
++ `UserManagedClientApplicationClientSecret` – UTF-8 string, not more than 512 bytes long, matching the [Custom string pattern #35](aws-glue-api-common.md#regex_35).
 
   The client application client secret if the client application is user managed.
-+ `AccessToken` – UTF-8 string, not more than 4096 bytes long, matching the [Custom string pattern #38](aws-glue-api-common.md#regex_38).
++ `AccessToken` – UTF-8 string, not more than 4096 bytes long, matching the [Custom string pattern #35](aws-glue-api-common.md#regex_35).
 
   The access token used when the authentication type is OAuth2.
-+ `RefreshToken` – UTF-8 string, not more than 4096 bytes long, matching the [Custom string pattern #38](aws-glue-api-common.md#regex_38).
++ `RefreshToken` – UTF-8 string, not more than 4096 bytes long, matching the [Custom string pattern #35](aws-glue-api-common.md#regex_35).
 
   The refresh token used when the authentication type is OAuth2.
-+ `JwtToken` – UTF-8 string, not more than 8000 bytes long, matching the [Custom string pattern #39](aws-glue-api-common.md#regex_39).
++ `JwtToken` – UTF-8 string, not more than 8000 bytes long, matching the [Custom string pattern #36](aws-glue-api-common.md#regex_36).
 
   The JSON Web Token (JWT) used when the authentication type is OAuth2.
 

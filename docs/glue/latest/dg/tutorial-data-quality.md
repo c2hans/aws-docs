@@ -10,7 +10,7 @@ In this tutorial, you get started with AWS Glue Data Quality in AWS Glue Studio.
 +  Specify data quality actions, data to output, and the output location of the data quality results.
 +  Review data quality results.
 
- To practice with an example, review the blog post [https://aws.amazon.com/blogs/big-data/getting-started-with-aws-glue-data-quality-for-etl-pipelines/](https://aws.amazon.com/blogs/big-data/getting-started-with-aws-glue-data-quality-for-etl-pipelines/).
+ To practice with an example, review the blog post [**Getting started with AWS Glue Data Quality for ETL pipelines**](https://aws.amazon.com/blogs/big-data/getting-started-with-aws-glue-data-quality-for-etl-pipelines/).
 
 ## Step 1: Add the Evaluate Data Quality transform node to the visual job
 <a name="tutorial-data-quality-step1"></a>

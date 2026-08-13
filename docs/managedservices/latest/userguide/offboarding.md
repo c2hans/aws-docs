@@ -18,7 +18,7 @@ for ami in $(aws ec2 describe-images --executable-users self --owners 0274158907
     done
 ```
 
-You must have the AWS CLI v2 installed for the script to execute without any errors. For AWS CLI installation steps, see [Installing or updating the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html). For details on the `cancel-image-launch-permission` command, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/cancel-image-launch-permission.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/cancel-image-launch-permission.html).
+You must have the AWS CLI v2 installed for the script to execute without any errors. For AWS CLI installation steps, see [Installing or updating the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html). For details on the `cancel-image-launch-permission` command, see [`cancel-image-launch-permission`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/cancel-image-launch-permission.html).
 
 **Note**
 The service termination date is the last day of the calendar month following the end of the 30 days requisite termination notice period. If the end of the requisite termination notice period falls after the 20th day of the calendar month, then the service termination date is the last day of the following calendar month. The following are example scenarios for termination dates.

@@ -26,7 +26,7 @@ A [Systems Manager document](https://docs.aws.amazon.com//systems-manager/latest
 <a name="systems-manager-assumptions"></a>
 
 Before you begin, make sure you met the following conditions:
-+ You’re familiar with Systems Manager. For more information, see the [https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html).
++ You’re familiar with Systems Manager. For more information, see the [*AWS Systems Manager User Guide*](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html).
 + You’re familiar with Systems Manager automation use cases. For more information, see [AWS Systems Manager Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html) in the *AWS Systems Manager User Guide*.
 
 ## IAM permissions for Systems Manager Automation documents

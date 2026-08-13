@@ -16,6 +16,7 @@ This documentation helps you understand how to apply the shared responsibility m
 **Topics**
 + [Data protection in Amazon Bedrock AgentCore](data-protection.md)
 + [Identity and access management for Amazon Bedrock AgentCore](security-iam.md)
++ [Runtime Instances and capacity providers](runtime-instances.md)
 + [Resource-based policies for Amazon Bedrock AgentCore](resource-based-policies.md)
 + [Compliance validation for Amazon Bedrock AgentCore](compliance-validation.md)
 + [Resilience in Amazon Bedrock AgentCore](disaster-recovery-resiliency.md)

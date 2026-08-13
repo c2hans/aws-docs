@@ -35,12 +35,11 @@ The attribute names and the location of the conversation content differ by frame
 Instrumenting your agent is only one part of producing telemetry that the evaluation service can read. Your agent must also have observability enabled, so that it exports its telemetry to Amazon CloudWatch.
 For how AgentCore delivers that telemetry, where the service finds the values it needs, and the setup steps for your hosting option, see [Telemetry setup and delivery](supported-frameworks-telemetry.md).
 
-## Sample agents
-<a name="supported-frameworks-samples"></a>
-
-The following examples show how to instrument a Strands agent hosted outside Amazon Bedrock AgentCore Runtime to export telemetry to Amazon CloudWatch using ADOT. They focus on observability setup rather than the evaluation API. The examples use Strands, but the same hosting and telemetry-export pattern applies to other supported frameworks, such as LangGraph.
-+  **Amazon EKS:** [Observability for an EKS-hosted agent](https://github.com/awslabs/agentcore-samples/tree/main/06-workshops/06-AgentCore-observability/06-Agentcore-observability-for-eks-hosted-agent) and [Strands agent on Amazon EKS](https://github.com/awslabs/agentcore-samples/tree/main/03-integrations/agents-hosted-outside-runtime/agents-on-eks), both on the GitHub website.
-+  **Amazon ECS:** [Strands agent on Amazon ECS](https://github.com/awslabs/agentcore-samples/tree/main/03-integrations/agents-hosted-outside-runtime/agents-on-ecs) on the GitHub website.
-+  ** AWS Lambda:** [Strands agent in AWS Lambda](https://github.com/awslabs/agentcore-samples/tree/main/03-integrations/agents-hosted-outside-runtime/agents-on-aws-lambda/02-agent-in-lambda) on the GitHub website.
-
 **Topics**
++ [Strands Agents](supported-frameworks-strands.md)
++ [LangGraph](supported-frameworks-langgraph.md)
++ [OpenAI Agents](supported-frameworks-openai-agents.md)
++ [LlamaIndex](supported-frameworks-llamaindex.md)
++ [Google ADK](supported-frameworks-google-adk.md)
++ [Claude Agent SDK](supported-frameworks-claude-agent-sdk.md)
++ [Generic framework support](supported-frameworks-generic.md)

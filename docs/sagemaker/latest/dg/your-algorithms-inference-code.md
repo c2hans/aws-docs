@@ -43,13 +43,13 @@ To configure a container to run as an executable, use an `ENTRYPOINT` instructio
 
   The `exec` form of the `ENTRYPOINT` instruction starts the executable directly, not as a child of `/bin/sh`. This enables it to receive signals like `SIGTERM` and `SIGKILL` from the SageMaker API operations, which is a requirement.
 
-  For example, when you use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html) API to create an endpoint, SageMaker AI provisions the number of ML compute instances required by the endpoint configuration, which you specify in the request. SageMaker AI runs the Docker container on those instances.
+  For example, when you use the [`CreateEndpoint`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html) API to create an endpoint, SageMaker AI provisions the number of ML compute instances required by the endpoint configuration, which you specify in the request. SageMaker AI runs the Docker container on those instances.
 
-  If you reduce the number of instances backing the endpoint (by calling the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateEndpointWeightsAndCapacities.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateEndpointWeightsAndCapacities.html) API), SageMaker AI runs a command to stop the Docker container on the instances that are being terminated. The command sends the `SIGTERM` signal, then it sends the `SIGKILL` signal thirty seconds later.
+  If you reduce the number of instances backing the endpoint (by calling the [`UpdateEndpointWeightsAndCapacities`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateEndpointWeightsAndCapacities.html) API), SageMaker AI runs a command to stop the Docker container on the instances that are being terminated. The command sends the `SIGTERM` signal, then it sends the `SIGKILL` signal thirty seconds later.
 
-  If you update the endpoint (by calling the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateEndpoint.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateEndpoint.html) API), SageMaker AI launches another set of ML compute instances and runs the Docker containers that contain your inference code on them. Then it runs a command to stop the previous Docker containers. To stop a Docker container, command sends the `SIGTERM` signal, then it sends the `SIGKILL` signal 30 seconds later.
+  If you update the endpoint (by calling the [`UpdateEndpoint`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateEndpoint.html) API), SageMaker AI launches another set of ML compute instances and runs the Docker containers that contain your inference code on them. Then it runs a command to stop the previous Docker containers. To stop a Docker container, command sends the `SIGTERM` signal, then it sends the `SIGKILL` signal 30 seconds later.
 
-+ SageMaker AI uses the container definition that you provided in your [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) request to set environment variables and the DNS hostname for the container as follows:
++ SageMaker AI uses the container definition that you provided in your [`CreateModel`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) request to set environment variables and the DNS hostname for the container as follows:
 
   + It sets environment variables using the `ContainerDefinition.Environment` string-to-string map.
   + It sets the DNS hostname using the `ContainerDefinition.ContainerHostname`.
@@ -61,7 +61,7 @@ To configure a container to run as an executable, use an `ENTRYPOINT` instructio
 ## How SageMaker AI Loads Your Model Artifacts
 <a name="your-algorithms-inference-code-load-artifacts"></a>
 
-In your [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) API request, you can use either the `ModelDataUrl` or `S3DataSource` parameter to identify the S3 location where model artifacts are stored. SageMaker AI copies your model artifacts from the S3 location to the `/opt/ml/model` directory for use by your inference code. Your container has read-only access to `/opt/ml/model`. Do not write to this directory.
+In your [`CreateModel`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) API request, you can use either the `ModelDataUrl` or `S3DataSource` parameter to identify the S3 location where model artifacts are stored. SageMaker AI copies your model artifacts from the S3 location to the `/opt/ml/model` directory for use by your inference code. Your container has read-only access to `/opt/ml/model`. Do not write to this directory.
 
 The `ModelDataUrl` must point to a tar.gz file. Otherwise, SageMaker AI won't download the file.
 

@@ -70,14 +70,14 @@ The VPC egress configuration for the network connector. Specifies the subnets, s
 
 When the logical ID of this resource is provided to the `Ref` intrinsic function, it returns the ARN of the network connector.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html) in the *AWS CloudFormation User Guide*.
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html) in the *AWS CloudFormation User Guide*.
 
 ### Fn::GetAtt
 <a name="sam-resource-networkconnector-return-values-fn--getatt"></a>
 
 `Fn::GetAtt` returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using `Fn::GetAtt`, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html) in the *AWS CloudFormation User Guide*.
+For more information about using `Fn::GetAtt`, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html) in the *AWS CloudFormation User Guide*.
 
 `Arn`  <a name="sam-networkconnector-getatt-arn"></a>
 The Amazon Resource Name (ARN) of the network connector.

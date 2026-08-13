@@ -61,8 +61,8 @@ New packages in AL2023.3.20240205:
 
 The full comparison of RPM package versions is below.
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
+- ** [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
+  - **RPM:**  [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
   - **Architectures:** noarch
   - **AL2023.3.20240131 version:** 1.35.0-1.amzn2023
   - **AL2023.3.20240205 version:** 1.35.1-1.amzn2023
@@ -165,8 +165,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.3.20240131 version:** 1.5.1-8.amzn2023.0.3
   - **AL2023.3.20240205 version:** 1.5.1-8.amzn2023.0.4
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
+- ** [`php8.1`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
+  - **RPM:**  [`php8.1`](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.1-bcmath  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.1-cli  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.1-common  / **Architectures:** aarch64, x86\_64
@@ -196,8 +196,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.3.20240131 version:** 8.1.23-1.amzn2023.0.1
   - **AL2023.3.20240205 version:** 8.1.27-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
+- ** [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
+  - **RPM:**  [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.2-bcmath  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.2-cli  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.2-common  / **Architectures:** aarch64, x86\_64

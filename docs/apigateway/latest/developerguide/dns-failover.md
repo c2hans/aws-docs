@@ -38,7 +38,7 @@ In this example, you create the following resources to configure DNS failover fo
 + A CloudWatch alarm in the secondary Region
 + A Route 53 health check based on the CloudWatch alarm in the secondary Region
 
-First, make sure that you have all of the required resources in the primary and secondary Regions. The secondary Region should contain the alarm and health check. This way, you don't depend on the primary Region to perform failover. For example CloudFormation templates that create these resources, see [samples/primary.zip](samples/primary.zip) and [samples/secondary.zip](samples/secondary.zip).
+First, make sure that you have all of the required resources in the primary and secondary Regions. The secondary Region should contain the alarm and health check. This way, you don't depend on the primary Region to perform failover. For example CloudFormation templates that create these resources, see [`primary.yaml`](samples/primary.zip) and [`secondary.yaml`](samples/secondary.zip).
 
 **Important**
 Before failover to the secondary Region, make sure that all required resources are available. Otherwise, your API won't be ready for traffic in the secondary Region.

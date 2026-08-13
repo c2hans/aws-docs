@@ -45,15 +45,15 @@ If you're not sure which tags are noncompliant, go to the **Effective tag policy
 **To find noncompliant tags (AWS CLI, AWS API)**
 Use the following commands and operations to find noncompliant tags:
 + AWS Command Line Interface (AWS CLI):
-  + [https://docs.aws.amazon.com//cli/latest/reference/resourcegroupstaggingapi/get-resources.html](https://docs.aws.amazon.com//cli/latest/reference/resourcegroupstaggingapi/get-resources.html)
-  + [https://docs.aws.amazon.com//cli/latest/reference/resourcegroupstaggingapi/tag-resources.html](https://docs.aws.amazon.com//cli/latest/reference/resourcegroupstaggingapi/tag-resources.html)
-  + [https://docs.aws.amazon.com//cli/latest/reference/resourcegroupstaggingapi/untag-resources.html](https://docs.aws.amazon.com//cli/latest/reference/resourcegroupstaggingapi/untag-resources.html)
+  + [aws resourcegroupstaggingapi get-resources](https://docs.aws.amazon.com//cli/latest/reference/resourcegroupstaggingapi/get-resources.html)
+  + [aws resourcegroupstaggingapi tag-resources](https://docs.aws.amazon.com//cli/latest/reference/resourcegroupstaggingapi/tag-resources.html)
+  + [aws resourcegroupstaggingapi untag-resources](https://docs.aws.amazon.com//cli/latest/reference/resourcegroupstaggingapi/untag-resources.html)
 
   For the complete procedure for using tag policies in the AWS CLI, see [Using tag policies in the AWS CLI](https://docs.aws.amazon.com//organizations/latest/userguide/tag-policy-cli.html) in the *AWS Organizations User Guide*.
 + AWS Resource Groups Tagging API:
-  + [https://docs.aws.amazon.com//resourcegroupstagging/latest/APIReference/API_GetResources.html](https://docs.aws.amazon.com//resourcegroupstagging/latest/APIReference/API_GetResources.html)
-  + [https://docs.aws.amazon.com//resourcegroupstagging/latest/APIReference/API_TagResources.html](https://docs.aws.amazon.com//resourcegroupstagging/latest/APIReference/API_TagResources.html)
-  + [https://docs.aws.amazon.com//resourcegroupstagging/latest/APIReference/API_UntagResources.html](https://docs.aws.amazon.com//resourcegroupstagging/latest/APIReference/API_UntagResources.html)
+  + [GetResources](https://docs.aws.amazon.com//resourcegroupstagging/latest/APIReference/API_GetResources.html)
+  + [TagResources](https://docs.aws.amazon.com//resourcegroupstagging/latest/APIReference/API_TagResources.html)
+  + [UntagResources](https://docs.aws.amazon.com//resourcegroupstagging/latest/APIReference/API_UntagResources.html)
 
 **Next steps**
  We recommend that you repeat the process of finding and correcting compliance issues. Continue until the account's resources that you care about are compliant with the effective tag policy in each Region.

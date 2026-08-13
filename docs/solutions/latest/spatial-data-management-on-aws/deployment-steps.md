@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 
 Choose the following link to launch the CloudFormation stack directly in the AWS Management Console:
 
- [https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=SpatialDataManagement&templateURL=https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/SpatialDataManagementStack.template](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=SpatialDataManagement&templateURL=https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/SpatialDataManagementStack.template)
+ [![Launch CloudFormation Console](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=SpatialDataManagement&templateURL=https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/SpatialDataManagementStack.template)
 
 This opens the CloudFormation console with the template pre-loaded. You can select your preferred AWS Region from the console before proceeding.
 

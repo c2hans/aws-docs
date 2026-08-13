@@ -259,7 +259,7 @@ Assuming that everything is fine, however, we'll continue filling in our `do_act
 ```
 
 There are a couple of things worth noting here:
-+ We use [https://docs.aws.amazon.com/AWSRubySDK/latest/AWS/Core/Configuration.html#with-instance_method](https://docs.aws.amazon.com/AWSRubySDK/latest/AWS/Core/Configuration.html#with-instance_method) to set the region for our Amazon SNS client. Because we want to send SMS messages, we use the SMS-enabled region that we declared in `utils.rb`.
++ We use [`AWS.config.with`](https://docs.aws.amazon.com/AWSRubySDK/latest/AWS/Core/Configuration.html#with-instance_method) to set the region for our Amazon SNS client. Because we want to send SMS messages, we use the SMS-enabled region that we declared in `utils.rb`.
 + We save the topic's ARN in our `activity_data` map. This is part of the data that will be passed to the *next* activity in our workflow.
 
 Finally, this activity subscribes the user to the Amazon SNS topic, using the passed-in endpoints (email and SMS). We don't require the user to enter *both* endpoints, but we do need at least one.

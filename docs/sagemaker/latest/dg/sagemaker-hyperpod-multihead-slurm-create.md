@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 
 After setting up all the required resources and uploading the scripts to the Amazon S3 bucket, you can create a cluster.
 
-1. To create a cluster, run the [https://docs.aws.amazon.com//cli/latest/reference/sagemaker/create-cluster.html](https://docs.aws.amazon.com//cli/latest/reference/sagemaker/create-cluster.html) AWS CLI command. The creation process can take up to 15 minutes to complete.
+1. To create a cluster, run the [`create-cluster`](https://docs.aws.amazon.com//cli/latest/reference/sagemaker/create-cluster.html) AWS CLI command. The creation process can take up to 15 minutes to complete.
 
    ```
    aws --region $REGION sagemaker create-cluster \

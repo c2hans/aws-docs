@@ -12,14 +12,14 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetProf
 
  Specify the time range for the requested aggregated profile using 1 or 2 of the following parameters: `startTime`, `endTime`, `period`. The maximum time range allowed is 7 days. If you specify all 3 parameters, an exception is thrown. If you specify only `period`, the latest aggregated profile is returned.
 
- Aggregated profiles are available with aggregation periods of 5 minutes, 1 hour, and 1 day, aligned to UTC. The aggregation period of an aggregated profile determines how long it is retained. For more information, see [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AggregatedProfileTime.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AggregatedProfileTime.html). The aggregated profile's aggregation period determines how long it is retained by CodeGuru Profiler.
+ Aggregated profiles are available with aggregation periods of 5 minutes, 1 hour, and 1 day, aligned to UTC. The aggregation period of an aggregated profile determines how long it is retained. For more information, see [`AggregatedProfileTime`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AggregatedProfileTime.html). The aggregated profile's aggregation period determines how long it is retained by CodeGuru Profiler.
 +  If the aggregation period is 5 minutes, the aggregated profile is retained for 15 days.
 +  If the aggregation period is 1 hour, the aggregated profile is retained for 60 days.
 +  If the aggregation period is 1 day, the aggregated profile is retained for 3 years.
 
 There are two use cases for calling `GetProfile`.
 
-1.  If you want to return an aggregated profile that already exists, use [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ListProfileTimes.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ListProfileTimes.html) to view the time ranges of existing aggregated profiles. Use them in a `GetProfile` request to return a specific, existing aggregated profile.
+1.  If you want to return an aggregated profile that already exists, use [`ListProfileTimes`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ListProfileTimes.html) to view the time ranges of existing aggregated profiles. Use them in a `GetProfile` request to return a specific, existing aggregated profile.
 
 1.  If you want to return an aggregated profile for a time range that doesn't align with an existing aggregated profile, then CodeGuru Profiler makes a best effort to combine existing aggregated profiles from the requested time range and return them as one aggregated profile.
 

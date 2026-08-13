@@ -26,19 +26,19 @@ Constructs from the AWS Construct Library are categorized into three levels. Eac
  **Level 1 (L1) constructs**
 L1 constructs, also known as *CFN resources*, are the lowest-level construct and offer no abstraction. Each L1 construct maps directly to a single AWS CloudFormation resource. With L1 constructs, you import a construct that represents a specific AWS CloudFormation resource. You then define the resource’s properties within your construct instance.
 L1 constructs are great to use when you are familiar with AWS CloudFormation and need complete control over defining your AWS resource properties.
-In the AWS Construct Library, L1 constructs are named starting with `Cfn`, followed by an identifier for the AWS CloudFormation resource that it represents. For example, the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.CfnBucket.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.CfnBucket.html) construct is an L1 construct that represents an [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html) AWS CloudFormation resource.
+In the AWS Construct Library, L1 constructs are named starting with `Cfn`, followed by an identifier for the AWS CloudFormation resource that it represents. For example, the [`CfnBucket`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.CfnBucket.html) construct is an L1 construct that represents an [` AWS::S3::Bucket`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html) AWS CloudFormation resource.
 L1 constructs are generated from the [AWS CloudFormation resource specification](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-resource-specification.html). If a resource exists in AWS CloudFormation, it’ll be available in the AWS CDK as an L1 construct. New resources or properties may take up to a week to become available in the AWS Construct Library. For more information, see [AWS resource and property types reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html) in the * AWS CloudFormation User Guide*.<a name="constructs-lib-levels-two"></a>
 
  **Level 2 (L2) constructs**
 L2 constructs, also known as *curated* constructs, are thoughtfully developed by the CDK team and are usually the most widely used construct type. L2 constructs map directly to single AWS CloudFormation resources, similar to L1 constructs. Compared to L1 constructs, L2 constructs provide a higher-level abstraction through an intuitive intent-based API. L2 constructs include sensible default property configurations, best practice security policies, and generate a lot of the boilerplate code and glue logic for you.
 L2 constructs also provide helper methods for most resources that make it simpler and quicker to define properties, permissions, event-based interactions between resources, and more. Many of these features are also available as independent building blocks called [Mixins](mixins.md), which can be applied to both L1 and L2 constructs using the `.with()` method.
-The [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html) class is an example of an L2 construct for an Amazon Simple Storage Service (Amazon S3) bucket resource.
+The [`s3.Bucket`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html) class is an example of an L2 construct for an Amazon Simple Storage Service (Amazon S3) bucket resource.
 The AWS Construct Library contains L2 constructs that are designated stable and ready for production use. For L2 constructs under development, they are designated as experimental and offered in a separate module.<a name="constructs-lib-levels-three"></a>
 
  **Level 3 (L3) constructs**
 L3 constructs, also known as *patterns*, are the highest-level of abstraction. Each L3 construct can contain a collection of resources that are configured to work together to accomplish a specific task or service within your application. L3 constructs are used to create entire AWS architectures for particular use cases in your application.
 To provide complete system designs, or substantial parts of a larger system, L3 constructs offer opinionated default property configurations. They are built around a particular approach toward solving a problem and providing a solution. With L3 constructs, you can create and configure multiple resources quickly, with the fewest amount of input and code.
-The [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs_patterns.ApplicationLoadBalancedFargateService.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs_patterns.ApplicationLoadBalancedFargateService.html) class is an example of an L3 construct that represents an AWS Fargate service running on an Amazon Elastic Container Service (Amazon ECS) cluster and fronted by an application load balancer.
+The [`ecsPatterns.ApplicationLoadBalancedFargateService`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs_patterns.ApplicationLoadBalancedFargateService.html) class is an example of an L3 construct that represents an AWS Fargate service running on an Amazon Elastic Container Service (Amazon ECS) cluster and fronted by an application load balancer.
 Similar to L2 constructs, L3 constructs that are ready for production use are included in the AWS Construct Library. Those under development are offered in separate modules.
 
 ## Defining constructs
@@ -56,7 +56,7 @@ Teams can use constructs like any other library package. When the library is upd
 ### Initialization
 <a name="constructs-init"></a>
 
-Constructs are implemented in classes that extend the [https://docs.aws.amazon.com/cdk/api/v2/docs/constructs.Construct.html](https://docs.aws.amazon.com/cdk/api/v2/docs/constructs.Construct.html) base class. You define a construct by instantiating the class. All constructs take three parameters when they are initialized:
+Constructs are implemented in classes that extend the [`Construct`](https://docs.aws.amazon.com/cdk/api/v2/docs/constructs.Construct.html) base class. You define a construct by instantiating the class. All constructs take three parameters when they are initialized:
 +  **scope** – The construct’s parent or owner. This can either be a stack or another construct. Scope determines the construct’s place in the [construct tree](apps.md#apps-tree). You should usually pass `this` (`self` in Python), which represents the current object, for the scope.
 +  **id** – An [identifier](identifiers.md) that must be unique within the scope. The identifier serves as a namespace for everything that’s defined within the construct. It’s used to generate unique identifiers, such as [resource names](resources.md#resources-physical-names) and AWS CloudFormation logical IDs.
 
@@ -338,7 +338,7 @@ For more information about Mixins, see [Mixins](mixins.md).
 ### The app and stack construct
 <a name="constructs-apps-stacks"></a>
 
-The [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.App.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.App.html) and [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html) classes from the AWS Construct Library are unique constructs. Compared to other constructs, they don’t configure AWS resources on their own. Instead, they are used to provide context for your other constructs. All constructs that represent AWS resources must be defined, directly or indirectly, within the scope of a `Stack` construct. `Stack` constructs are defined within the scope of an `App` construct.
+The [`App`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.App.html) and [`Stack`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html) classes from the AWS Construct Library are unique constructs. Compared to other constructs, they don’t configure AWS resources on their own. Instead, they are used to provide context for your other constructs. All constructs that represent AWS resources must be defined, directly or indirectly, within the scope of a `Stack` construct. `Stack` constructs are defined within the scope of an `App` construct.
 
 To learn more about CDK apps, see [AWS CDK apps](apps.md). To learn more about CDK stacks, see [Introduction to AWS CDK stacks](stacks.md).
 
@@ -981,7 +981,7 @@ myFunction := awslambda.NewCfnFunction(stack, jsii.String("HelloWorldFunction"),
 ### Working with L2 constructs
 <a name="constructs-using"></a>
 
-In the following example, we define an Amazon S3 bucket by creating an object from the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html) L2 construct:
+In the following example, we define an Amazon S3 bucket by creating an object from the [`Bucket`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html) L2 construct:
 
 **Example**
 

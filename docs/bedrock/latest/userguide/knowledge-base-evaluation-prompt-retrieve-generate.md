@@ -11,7 +11,7 @@ A retrieve-and-generate evaluation jobs require a prompt dataset using JSON line
 <a name="knowledge-base-evaluation-prompt-retrieve-generate-invoke"></a>
 
 To create a retrieve-only evaluation job where Amazon Bedrock invokes your Knowledge Base, your prompt dataset must contain the following key-value pairs:
-+ `referenceResponses` – This parent key is used to specify the ground truth response you expect the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) would return. Specify the ground truth in the `text` key. `referenceResponses` is required if you choose the **Context coverage** metric in your evaluation job.
++ `referenceResponses` – This parent key is used to specify the ground truth response you expect the [`RetrieveAndGenerate`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) would return. Specify the ground truth in the `text` key. `referenceResponses` is required if you choose the **Context coverage** metric in your evaluation job.
 + `prompt` – This parent key is used to specify the prompt (user query) that you want the model to respond to while the evaluation job is running.
 
 The following is an example custom dataset that contains 6 inputs and uses the JSON line format.

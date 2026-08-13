@@ -37,7 +37,7 @@ For example, some control policies include inline templating variables, such as 
 + **ExemptedActions**: List of AWS IAM actions exempted from the control.
 + **ExemptedResourceArns**: List of resource ARNs exempted from the control.
 
-For more details about configuring controls with parameters, see [https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ControlParameter.html](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ControlParameter.html) in the *AWS Control Tower API Reference*.
+For more details about configuring controls with parameters, see [`ControlParameter`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ControlParameter.html) in the *AWS Control Tower API Reference*.
 
 **List of parameterized controls**
 

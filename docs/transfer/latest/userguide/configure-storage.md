@@ -172,9 +172,9 @@ Transfer Family maps the users to the UID/GID and directories you specify. If th
 
 **Steps to set up Amazon EFS users in Transfer Family**
 
-1. Map the EFS UID and GID for your user in Transfer Family using the [https://docs.aws.amazon.com/transfer/latest/APIReference/API_PosixProfile.html](https://docs.aws.amazon.com/transfer/latest/APIReference/API_PosixProfile.html) fields.
+1. Map the EFS UID and GID for your user in Transfer Family using the [`PosixProfile`](https://docs.aws.amazon.com/transfer/latest/APIReference/API_PosixProfile.html) fields.
 
-1. If you want the user to start in a specific folder upon login, you can specify the EFS directory under the [https://docs.aws.amazon.com/transfer/latest/APIReference/API_CreateUser.html#TransferFamily-CreateUser-request-HomeDirectory](https://docs.aws.amazon.com/transfer/latest/APIReference/API_CreateUser.html#TransferFamily-CreateUser-request-HomeDirectory) field.
+1. If you want the user to start in a specific folder upon login, you can specify the EFS directory under the [`HomeDirectory`](https://docs.aws.amazon.com/transfer/latest/APIReference/API_CreateUser.html#TransferFamily-CreateUser-request-HomeDirectory) field.
 
 You can automate the process, by using a CloudWatch rule and Lambda function. For an example Lambda function that interacts with EFS, see [Using Amazon EFS for AWS Lambda in your serverless applications](https://aws.amazon.com/blogs/compute/using-amazon-efs-for-aws-lambda-in-your-serverless-applications).
 

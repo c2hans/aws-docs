@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/modify-ec2-insta
 # Modify an EC2 Instance Connect Endpoint
 <a name="modify-ec2-instance-connect-endpoint"></a>
 
-You can modify existing EC2 Instance Connect Endpoints using the AWS CLI or an SDK. The Amazon EC2 console doesn't support endpoint modification.
+You can modify existing EC2 Instance Connect Endpoints using the console, AWS CLI, or an SDK.
 
 Before you begin, you must have the required IAM permissions. For more information, see [Permissions to create, describe, modify, and delete EC2 Instance Connect Endpoints](permissions-for-ec2-instance-connect-endpoint.md#iam-CreateInstanceConnectEndpoint).
 
@@ -29,10 +29,29 @@ You can specify whether to preserve the client IP address as the source.
 Preserving the client IP is only supported on IPv4 EC2 Instance Connect Endpoints. When enabling `PreserveClientIp`, either the endpoint's existing IP address type must be `ipv4`, or if modifying the IP address type in the same request, the new value must be `ipv4`.
 
 ------
+#### [ Console ]
+
+**To modify an EC2 Instance Connect Endpoint**
+
+1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc/](https://console.aws.amazon.com/vpc/).
+
+1. In the left navigation pane, choose **Endpoints**.
+
+1. Select the endpoint.
+
+1. Choose **Actions**, **Modify endpoint settings**.
+
+1. Change the endpoint settings.
+
+1. Choose **Save changes**.
+
+   The endpoint enters the **Pending** state. When modification completes, the endpoint returns to the **Available** state.
+
+------
 #### [ AWS CLI ]
 
 **To modify an EC2 Instance Connect Endpoint**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-connect-endpoint.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-connect-endpoint.html) command and specify the EC2 Instance Connect Endpoint and the parameters to modify. The following example modifies all the parameters in a single request.
+Use the [modify-instance-connect-endpoint](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-connect-endpoint.html) command and specify the EC2 Instance Connect Endpoint and the parameters to modify. The following example modifies all the parameters in a single request.
 
 ```
 aws ec2 modify-instance-connect-endpoint \
@@ -53,7 +72,7 @@ The following is example output.
 **To monitor the update status**
 During modification, the EC2 Instance Connect Endpoint status changes to `update-in-progress`. The update process runs asynchronously and completes with either an `update-complete` or `update-failed` status. The endpoint uses its old configuration until the status changes to `update-complete`.
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-connect-endpoints.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-connect-endpoints.html) command to monitor the update status. The `--query` parameter filters the results to the `State` field.
+Use the [describe-instance-connect-endpoints](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-connect-endpoints.html) command to monitor the update status. The `--query` parameter filters the results to the `State` field.
 
 ```
 aws ec2 describe-instance-connect-endpoints \
@@ -71,7 +90,7 @@ update-complete
 #### [ PowerShell ]
 
 **To modify an EC2 Instance Connect Endpoint**
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceConnectEndpoint.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceConnectEndpoint.html) cmdlet and specify the EC2 Instance Connect Endpoint and the parameters to modify. The following example modifies all the parameters in a single request.
+Use the [Edit-EC2InstanceConnectEndpoint](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceConnectEndpoint.html) cmdlet and specify the EC2 Instance Connect Endpoint and the parameters to modify. The following example modifies all the parameters in a single request.
 
 ```
 Edit-EC2InstanceConnectEndpoint `
@@ -90,7 +109,7 @@ True
 **To monitor the update status**
 During modification, the EC2 Instance Connect Endpoint status changes to `update-in-progress`. The update process runs asynchronously and completes with either an `update-complete` or `update-failed` status. The endpoint uses its old configuration until the status changes to `update-complete`.
 
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceConnectEndpoint.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceConnectEndpoint.html) command to monitor the update status. `.State.Value` filters the results to the `State` field.
+Use the [Get-EC2InstanceConnectEndpoint](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceConnectEndpoint.html) command to monitor the update status. `.State.Value` filters the results to the `State` field.
 
 ```
 (Get-EC2InstanceConnectEndpoint -InstanceConnectEndpointId "{{eice-0123456789example}}").State.Value

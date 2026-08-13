@@ -36,7 +36,7 @@ You can't combine resource group-based monitoring with account-based monitoring 
 
    1. **Select an application or resource group. **On the **Specify application details** page, select the AWS resource group that contains your application resources from the dropdown list. These resources include front-end servers, load balancers, auto scaling groups, and database servers.
 
-      If you have not created a resource group for your application, you can create one by choosing **Create new resource group**. For more information about creating resource groups, see the [https://docs.aws.amazon.com/ARG/latest/userguide/welcome.html](https://docs.aws.amazon.com/ARG/latest/userguide/welcome.html).
+      If you have not created a resource group for your application, you can create one by choosing **Create new resource group**. For more information about creating resource groups, see the [*AWS Resource Groups User Guide*](https://docs.aws.amazon.com/ARG/latest/userguide/welcome.html).
 
    1. **Notifications for problem insights.** To view and get notified when problems are detected for selected applications, choose Amazon SNS notifications or Systems Manager OpsCenter Opsitems.
 

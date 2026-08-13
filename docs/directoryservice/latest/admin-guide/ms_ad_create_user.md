@@ -92,7 +92,7 @@ aws ds-data create-user \
     }‘
 ```
 
-For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-data/create-user.html](https://docs.aws.amazon.com//cli/latest/reference/ds-data/create-user.html).
+For more information, see [`create-user`](https://docs.aws.amazon.com//cli/latest/reference/ds-data/create-user.html).
 
 ------
 #### [ PowerShell ]
@@ -112,6 +112,6 @@ New-DSDUser `
     }
 ```
 
-For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/New-DSDUser.html](https://docs.aws.amazon.com//powershell/latest/reference/items/New-DSDUser.html).
+For more information, see [`New-DSDUser`](https://docs.aws.amazon.com//powershell/latest/reference/items/New-DSDUser.html).
 
 ------

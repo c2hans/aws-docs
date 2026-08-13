@@ -75,4 +75,4 @@ Then, attach your restored Neptune cluster to an Amazon RDS instance using `crea
                     --db-instance-class {{db.r5.large}} --engine neptune --engine-version {{1.0.5.0}} --db-cluster-identifier {{sample-cluster}} --region {{us-east-1}}
   ```
 
-For more information, see [https://docs.aws.amazon.com/neptune/latest/userguide/api-snapshots.html#RestoreDBClusterFromSnapshot](https://docs.aws.amazon.com/neptune/latest/userguide/api-snapshots.html#RestoreDBClusterFromSnapshot) in the *Neptune Management API reference* and [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/neptune/restore-db-cluster-from-snapshot.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/neptune/restore-db-cluster-from-snapshot.html) in the *Neptune CLI guide*.
+For more information, see [`RestoreDBClusterFromSnapshot`](https://docs.aws.amazon.com/neptune/latest/userguide/api-snapshots.html#RestoreDBClusterFromSnapshot) in the *Neptune Management API reference* and [`restore-db-cluster-from-snapshot`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/neptune/restore-db-cluster-from-snapshot.html) in the *Neptune CLI guide*.

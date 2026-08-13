@@ -5,19 +5,19 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 # Security checklist for marketplace distributions
 <a name="ecommerce-security-checklist"></a>
 
-E-commerce and marketplace applications handle sensitive data — customer sessions, payment flows, and premium content. This checklist covers the security controls specific to a CloudFront distribution with an Porting Assistant for .NET (Valkey) caching layer. Apply these controls in addition to the general CloudFront security best practices described in [Configure secure access and restrict access to content](SecurityAndPrivateContent.md).
+E-commerce and marketplace applications handle sensitive data — customer sessions, payment flows, and premium content. This checklist covers the security controls specific to a CloudFront distribution with an ElastiCache (Valkey) caching layer. Apply these controls in addition to the general CloudFront security best practices described in [Configure secure access and restrict access to content](SecurityAndPrivateContent.md).
 
 ## Signed URLs and cookies for premium content
 <a name="ecommerce-sec-signed-urls"></a>
 
 Use signed URLs or signed cookies to restrict access to content that requires authorization — premium product previews, purchased digital goods, time-limited promotional content, or seller-specific assets.
 
-**Signed URL vs. signed cookie**
+**Signed URL and signed cookie comparison**
 
 | Method | Use when | E-commerce example |
 | --- | --- | --- |
-| Signed URL | Restricting access to individual files. Sharing download links. Clients that don't support cookies. | One-time download link for a purchased digital product. Time-limited access to a high-resolution product image for a verified seller. |
-| Signed cookie | Providing access to multiple files (e.g., all assets in a premium tier). Avoiding URL changes for existing content. | Premium membership access to an entire catalog of digital content. Subscriber-only product previews across multiple pages. |
+| Signed URL | Restricting access to individual files. Sharing download links. Clients that do not support cookies. | One-time download link for a purchased digital product. Time-limited access to a high-resolution product image for a verified seller. |
+| Signed cookie | Providing access to multiple files (for example, all assets in a premium tier). Avoiding URL changes for existing content. | Premium membership access to an entire catalog of digital content. Subscriber-only product previews across multiple pages. |
 
 Configuration requirements:
 + Create a key group with an RSA public key (2048-bit minimum). Store the private key in AWS Secrets Manager for your application to generate signatures.
@@ -41,12 +41,10 @@ In the Amazon Simple Storage Service console, enable Amazon S3 Block Public Acce
 **Use the Amazon S3 REST API endpoint**
 Configure the origin using the bucket's REST API endpoint (`bucket-name.s3.amazonaws.com`), not the Amazon S3 website endpoint. OAC only works with the REST API endpoint.
 
-For configuration steps, see [Restrict access to an AWS origin](private-content-restricting-access-to-origin.md).
-
 ## Encryption in transit
 <a name="ecommerce-sec-encryption-transit"></a>
 
-Encrypt all connections in the request path — viewer to CloudFront, CloudFront to origin, and application to Porting Assistant for .NET cache.
+Encrypt all connections in the request path — viewer to CloudFront, CloudFront to origin, and application to ElastiCache cache.
 
 **Encryption in transit configuration**
 
@@ -55,14 +53,14 @@ Encrypt all connections in the request path — viewer to CloudFront, CloudFront
 | Viewer → CloudFront | Viewer protocol policy: HTTPS only | Set viewer protocol policy to `redirect-to-https` or `https-only` on all cache behaviors. Use a TLS 1.2 minimum security policy (`TLSv1.2_2021`). |
 | CloudFront → S3 origin | Origin protocol: HTTPS | S3 REST API endpoints support HTTPS by default. CloudFront uses HTTPS when you configure the origin with the REST API endpoint and OAC. |
 | CloudFront → ALB origin | Origin protocol: HTTPS only | Set origin protocol policy to `https-only`. Install a valid TLS certificate on the ALB (use AWS Certificate Manager). CloudFront validates the certificate on connection. |
-| Application → Porting Assistant for .NET | In-transit encryption: Enabled | In the Porting Assistant for .NET console, enable `TransitEncryptionEnabled` on the replication group. This is an Porting Assistant for .NET setting. Use TLS connections from your application code. Valkey and Redis OSS 6.0\+ support in-transit encryption natively. |
+| Application → ElastiCache | In-transit encryption: Enabled | In the ElastiCache console, enable `TransitEncryptionEnabled` on the replication group. This is an ElastiCache setting. Use TLS connections from your application code. Valkey and Redis OSS 6.0 and later support in-transit encryption natively. |
 
 ## VPC security groups for the cache cluster
 <a name="ecommerce-sec-vpc-cache"></a>
 
-The Porting Assistant for .NET cluster runs in a VPC and must only accept connections from your application servers. Use security group chaining to restrict access.
+The ElastiCache cluster runs in a VPC and must only accept connections from your application servers. Use security group chaining to restrict access.
 
-**Security group configuration for Porting Assistant for .NET**
+**Security group configuration for ElastiCache**
 
 | Security group | Inbound rule | Rationale |
 | --- | --- | --- |
@@ -70,22 +68,22 @@ The Porting Assistant for .NET cluster runs in a VPC and must only accept connec
 | Application SG | TCP 443 from ALB SG only | Application servers accept traffic only from the ALB. Combined with the cache cluster SG, this creates a chain: CloudFront → ALB → App → Cache. |
 
 Additional VPC hardening:
-+ Deploy the Porting Assistant for .NET cluster in private subnets with no internet gateway route.
++ Deploy the ElastiCache cluster in private subnets with no internet gateway route.
 + Use a subnet group that spans at least 2 Availability Zones for high availability.
-+ Enable Porting Assistant for .NET auth token (password) for an additional authentication layer beyond security groups.
-+ Disable public access to the Porting Assistant for .NET cluster (default, but verify).
++ Enable ElastiCache auth token (password) for an additional authentication layer beyond security groups.
++ Disable public access to the ElastiCache cluster (default, but verify).
 
 ## Additional security controls
 <a name="ecommerce-sec-additional"></a>
 
 **Restrict ALB access to CloudFront only**
-Add a custom origin header (`X-Origin-Verify`) that CloudFront sends with every request. Configure the ALB or application to reject requests that don't include this header. Store the header value in AWS Secrets Manager and rotate it periodically. Alternatively, use the CloudFront managed prefix list to restrict ALB security group inbound rules to CloudFront IP ranges.
+Add a custom origin header (`X-Origin-Verify`) that CloudFront sends with every request. Configure the ALB or application to reject requests that do not include this header. Store the header value in AWS Secrets Manager and rotate it periodically. Alternatively, use the CloudFront managed prefix list to restrict ALB security group inbound rules to CloudFront IP ranges.
 
 **Enable AWS WAF on the distribution**
 Associate an AWS WAF web ACL with rate-limiting rules to protect against cart abuse, credential stuffing on login APIs, and inventory scraping. Use managed rule groups for common threats (SQL injection, XSS) and custom rules for application-specific patterns.
 
 **Geo-restrictions for compliance**
-If your marketplace operates in specific countries, enable geo-restriction to block requests from regions where you don't have legal authority to sell or ship. Apply at the distribution level. For per-path geo-restriction, use AWS WAF geo-match conditions in a web ACL rule with a URL path condition.
+If your marketplace operates in specific countries, enable geo-restriction to block requests from regions where you do not have legal authority to sell or ship. Apply at the distribution level. For per-path geo-restriction, use AWS WAF geo-match conditions in a web ACL rule with a URL path condition.
 
 **Access logging**
 Enable CloudFront standard logging or real-time logging to detect abnormal access patterns — sudden spikes in download link usage, access from unexpected regions, or repeated failed auth attempts at API endpoints.

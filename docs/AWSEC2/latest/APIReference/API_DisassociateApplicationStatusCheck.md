@@ -21,7 +21,7 @@ Type: String
 Required: Yes
 
  **ClientToken**
-Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html).
+A unique, case-sensitive identifier that you provide to ensure that the operation completes no more than one time. If you retry a request with the same token, the service ignores the request but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html).
 Type: String
 Required: No
 
@@ -89,7 +89,7 @@ https://ec2.amazonaws.com/?Action=DisassociateApplicationStatusCheck
     <successfulResultSet>
         <item>
             <applicationStatusCheckId>asc-0123456789abcdef0</applicationStatusCheckId>
-            <associationType>instance</associationType>
+            <associationType>INSTANCE_ID</associationType>
             <associationValue>i-0123456789abcdef0</associationValue>
         </item>
     </successfulResultSet>
@@ -121,7 +121,7 @@ https://ec2.amazonaws.com/?Action=DisassociateApplicationStatusCheck
     <successfulResultSet>
         <item>
             <applicationStatusCheckId>asc-0123456789abcdef0</applicationStatusCheckId>
-            <associationType>tag</associationType>
+            <associationType>EC2TAG</associationType>
             <associationValue>environment=production</associationValue>
         </item>
     </successfulResultSet>

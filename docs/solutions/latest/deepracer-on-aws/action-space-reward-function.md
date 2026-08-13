@@ -22,7 +22,7 @@ The default discrete action space contains the following actions:
   <tr><th colspan="3">Default discrete action space</th></tr>
 </thead>
 <tbody>
-  <tr><td> **Action number** </td><td> **Steering** </td><td> **Speed** </td></tr>
+  <tr><td> <b>Action number</b> </td><td> <b>Steering</b> </td><td> <b>Speed</b> </td></tr>
   <tr><td>0</td><td>-30 degrees</td><td>0.4 m/s</td></tr>
   <tr><td>1</td><td>-30 degrees</td><td>0.8 m/s</td></tr>
   <tr><td>2</td><td>-15 degrees</td><td>0.4 m/s</td></tr>

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-sec
 # Introduction to AWS Security Hub
 <a name="what-is-securityhub-v2"></a>
 
- AWS Security Hub is a unified cloud security solution that prioritizes your critical security issues and helps you respond at scale. Security Hub detects security issues by automatically correlating and enriching security signals from multiple sources, such as posture management, vulnerability management (Amazon Inspector), sensitive data (Amazon Macie), and threat detection (Amazon GuardDuty). This enables security teams to prioritize active risks in their cloud environments through automated analyses and contextual insights. Through intuitive visualizations, Security Hub transforms complex security signals into actionable insights, which enables you to make informed decisions about your security quickly. Security Hub also includes automated response workflows to help you remediate risks, improve team productivity, and minimize operational disruptions.
+ AWS Security Hub is a unified cloud security solution that prioritizes your critical security issues and helps you respond at scale. Security Hub detects security issues by automatically correlating and enriching security signals from multiple sources. These sources include posture management, vulnerability management (Amazon Inspector), sensitive data (Amazon Macie), and threat detection (Amazon GuardDuty). Use Security Hub to prioritize active risks in your cloud environment through automated analyses and contextual insights. Through intuitive visualizations, Security Hub transforms complex security signals into actionable insights, which enables you to make informed decisions about your security quickly. Security Hub also includes automated response workflows to help you remediate risks, improve team productivity, and minimize operational disruptions.
 
 ## Features
 <a name="securityhub-v2-features"></a>
@@ -47,8 +47,8 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-sec
 +  Amazon Macie
 +  IAM Access Analyzer
 
-## Accessibility
-<a name="securityhub-v2-accessiblity"></a>
+## Accessing Security Hub
+<a name="securityhub-v2-accessibility"></a>
 
  Security Hub is available in most AWS Regions. For a list of Regions where Security Hub is currently available, see [Security Hub endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/sechub.html) in the *AWS General Reference*. For information about managing AWS Regions for your AWS account, see [Specifying which AWS Regions your account can use](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html) in the *AWS Account Management Reference Guide*.
 
@@ -65,6 +65,3 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-sec
 
 **AWS SDKs**
  [AWS SDKs](https://aws.amazon.com/developertools/) consist of libraries and sample code for various programming languages and platforms (C\+\+, Go, Java, .NET, and Python). They provide programmatic access to Security Hub and other AWS services in your preferred language and can help you manage tasks such as managing errors, signing requests, and retrying requests.
-
-## Pricing
-<a name="securityhub-v2-pricing"></a>

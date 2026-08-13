@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-sps-works.ht
 # How Spot placement score works
 <a name="how-sps-works"></a>
 
-When you use the Spot placement score feature, you first specify your compute requirements for your Spot Instances, and then Amazon EC2 returns the top 10 Regions or Availability Zones where your Spot request is likely to succeed. Each Region or Availability Zone is scored on a scale from 1 to 10, with 10 indicating that your Spot request is highly likely to succeed, and 1 indicating that your Spot request is not likely to succeed.
+When you use the Spot placement score feature, you first specify your compute requirements for your Spot Instances, and then Amazon EC2 returns the top 10 Regions or Availability Zones where your Spot request is likely to succeed. Each Region or Availability Zone is scored on a scale from 1 to 10, with 10 indicating that your Spot request is highly likely to succeed, and 1 indicating that your Spot request is not likely to succeed. Zonal results can include Availability Zones and Local Zones.
 
 **Topics**
 + [Step 1: Specify your Spot requirements](#sps-specify-requirements)
@@ -45,10 +45,12 @@ You can specify a Region filter to narrow down the Regions that will be returned
 
 You can combine the Region filter and a request for scored Availability Zones. In this way, the scored Availability Zones are confined to the Regions for which you've filtered. To find the highest-scored Availability Zone in a Region, specify only that Region, and the response will return a scored list of all of the Availability Zones in that Region.
 
+By default, Spot placement score ignores Local Zones. To include them, set `IncludeLocalZones` to `true`. For regional scores, Local Zone capacity counts toward the score for its parent Region. For zonal scores, the response can include individual Local Zone scores.
+
 ## Step 3: Review the recommendations
 <a name="sps-recommendations"></a>
 
-The Spot placement score for each Region or Availability Zone is calculated based on the target capacity, the composition of the instance types, the historical and current Spot usage trends, and the time of the request. Because Spot capacity is constantly fluctuating, the same Spot placement score request can yield different scores when calculated at different times.
+The Spot placement score for each Region or Availability Zone is calculated based on the target capacity, the composition of the instance types, the current Spot usage trends, and the time of the request. Because Spot capacity is constantly fluctuating, the same Spot placement score request can yield different scores when calculated at different times.
 
 Regions and Availability Zones are scored on a scale from 1 to 10. A score of 10 indicates that your Spot request is highly likely—but not guaranteed—to succeed. A score of 1 indicates that your Spot request is not likely to succeed at all. The same score might be returned for different Regions or Availability Zones.
 
@@ -58,6 +60,8 @@ If low scores are returned, you can edit your compute requirements and recalcula
 <a name="sps-use-recommendations"></a>
 
 A Spot placement score is only relevant if your Spot request has exactly the same configuration as the Spot placement score configuration (target capacity, target capacity unit, and instance types or instance attributes), and is configured to use the `capacity-optimized` allocation strategy. Otherwise, the likelihood of getting available Spot capacity will not align with the score.
+
+If your score includes Local Zones, configure the subsequent Spot request to use the same Local Zones. Otherwise, the likelihood of obtaining capacity might not align with the score.
 
 While a Spot placement score serves as a guideline, and no score guarantees that your Spot request will be fully or partially fulfilled, you can use the following information to get the best results:
 + **Use the same configuration** – The Spot placement score is relevant only if the Spot request configuration (target capacity, target capacity unit, and instance types or instance attributes) in your Auto Scaling group, EC2 Fleet, or Spot Fleet is the same as what you entered to get the Spot placement score.

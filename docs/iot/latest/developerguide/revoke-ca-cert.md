@@ -28,7 +28,7 @@ If the certificate was successfully revoked, it will show as **Revoked** in the 
 ## Revoke a client certificate (CLI)
 <a name="revoke-device-cert-cli"></a>
 
-The AWS CLI provides the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-certificate.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-certificate.html) command to revoke a certificate.
+The AWS CLI provides the [**update-certificate**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-certificate.html) command to revoke a certificate.
 
 ```
 aws iot update-certificate \
@@ -36,7 +36,7 @@ aws iot update-certificate \
     --new-status REVOKED
 ```
 
-If the command was successful, the certificate's status will be `REVOKED`. Run [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-certificate.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-certificate.html) to see the certificate's status.
+If the command was successful, the certificate's status will be `REVOKED`. Run [**describe-certificate**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-certificate.html) to see the certificate's status.
 
 ```
 aws iot describe-certificate \

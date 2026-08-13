@@ -14,7 +14,7 @@ To understand the details of these responses, see:
 ## Successful JSON response structure
 <a name="sqs-json-api-successful-response-structure"></a>
 
-If the request is successful, the main response element is `x-amzn-RequestId`, which contains the Universal Unique Identifier (UUID) of the request, as well as other appended response field(s). For example, the following [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue.html) response contains the `QueueUrl` field, which, in turn, contains the URL of the created queue.
+If the request is successful, the main response element is `x-amzn-RequestId`, which contains the Universal Unique Identifier (UUID) of the request, as well as other appended response field(s). For example, the following [`CreateQueue`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue.html) response contains the `QueueUrl` field, which, in turn, contains the URL of the created queue.
 
 ```
 HTTP/1.1 200 OK

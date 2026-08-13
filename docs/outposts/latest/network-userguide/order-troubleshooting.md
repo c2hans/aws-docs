@@ -10,7 +10,7 @@ Review the following known issues to resolve an issue related to capacity manage
 ## Order {{oo-xxxxxx}} is not associated with Outpost ID {{op-xxxxx}}
 <a name="troubleshooting_order_outpost_id"></a>
 
-This issue occurs when you use the AWS CLI or API to run the [https://docs.aws.amazon.com/outposts/latest/APIReference/API_StartCapacityTask.html](https://docs.aws.amazon.com/outposts/latest/APIReference/API_StartCapacityTask.html) and the Outpost ID in the request does not match the Outpost ID in the order.
+This issue occurs when you use the AWS CLI or API to run the [`StartCapacityTask`](https://docs.aws.amazon.com/outposts/latest/APIReference/API_StartCapacityTask.html) and the Outpost ID in the request does not match the Outpost ID in the order.
 
 To resolve this issue:
 
@@ -58,7 +58,7 @@ To resolve this issue, use the console or CLI.
 ## No Outpost with Outpost ID {{op-xxxxx}}
 <a name="troubleshooting_outpost_id_notfound"></a>
 
-This issue occurs when you use the AWS CLI or API to run the [https://docs.aws.amazon.com/outposts/latest/APIReference/API_StartCapacityTask.html](https://docs.aws.amazon.com/outposts/latest/APIReference/API_StartCapacityTask.html) and the request contains an Outpost ID that is not valid for one of the following reasons:
+This issue occurs when you use the AWS CLI or API to run the [`StartCapacityTask`](https://docs.aws.amazon.com/outposts/latest/APIReference/API_StartCapacityTask.html) and the request contains an Outpost ID that is not valid for one of the following reasons:
 + The Outpost is in a different AWS Region.
 + You do not have permissions to this Outpost.
 + The Outpost ID is incorrect.
@@ -67,7 +67,7 @@ To resolve this issue:
 
 1. Note the AWS Region that you used in the `StartCapacityTask` API request.
 
-1. Use the [https://docs.aws.amazon.com/outposts/latest/APIReference/API_ListOutposts.html](https://docs.aws.amazon.com/outposts/latest/APIReference/API_ListOutposts.html) API action to get a list of Outposts that you own in the AWS Region.
+1. Use the [`ListOutposts`](https://docs.aws.amazon.com/outposts/latest/APIReference/API_ListOutposts.html) API action to get a list of Outposts that you own in the AWS Region.
 
 1. Check if the Outpost ID is listed.
 

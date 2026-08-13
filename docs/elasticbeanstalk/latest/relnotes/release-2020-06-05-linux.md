@@ -17,20 +17,37 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **June 3, 2020** to all Amazon Linux AMI platforms.<br />The **Apache** and **PHP** releases include security fixes. For more information, see **Cross-platform updates** and **Platform-specific updates** in this table. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-06-05-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-06-05-linux.html) |
-| **Apache** | Updated platforms supporting the Apache HTTP Server 2.4 to version 2.4.43. For details, see [Changes with Apache 2.4.x](https://downloads.apache.org/httpd/CHANGES_2.4) on the *Apache Software Foundation* website. |
-| **Go** | Updated Go to release 1.14.3. For details, see [go1.14](https://golang.org/doc/devel/release.html#go1.14) in *The Go Programming Language Release History*. |
-| **Java SE**, **Tomcat** | Updated Java 8 to OpenJDK Version 1.8.0.252.b09.<br />Updated Java 7 to OpenJDK Version 1.7.0.261. |
-| **PHP** | Updated PHP 7.3 and 7.2 to releases [7.3.17](https://www.php.net/releases/7_3_17.php) and [7.2.30](https://www.php.net/releases/7_2_30.php), respectively.<br />These versions include security fixes. |
-| **Python** | Updated Python 2.7 to version 2.7.18. For details, see [What’s New in Python 2.7](https://docs.python.org/2.7/whatsnew/2.7.html). |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>June 3, 2020</b> to all Amazon Linux AMI platforms.<br />The <b>Apache</b> and <b>PHP</b> releases include security fixes. For more information, see <b>Cross-platform updates</b> and <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Apache</b></td><td>Updated platforms supporting the Apache HTTP Server 2.4 to version 2.4.43. For details, see <a href="https://downloads.apache.org/httpd/CHANGES_2.4">Changes with Apache 2.4.x</a> on the <i>Apache Software Foundation</i> website.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Go</b></td><td>Updated Go to release 1.14.3. For details, see <a href="https://golang.org/doc/devel/release.html#go1.14">go1.14</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Java SE</b>, <b>Tomcat</b></td><td>Updated Java 8 to OpenJDK Version 1.8.0.252.b09.<br />Updated Java 7 to OpenJDK Version 1.7.0.261.</td></tr>
+  <tr><td><b>PHP</b></td><td>Updated PHP 7.3 and 7.2 to releases <a href="https://www.php.net/releases/7_3_17.php">7.3.17</a> and <a href="https://www.php.net/releases/7_2_30.php">7.2.30</a>, respectively.<br />These versions include security fixes.</td></tr>
+  <tr><td><b>Python</b></td><td>Updated Python 2.7 to version 2.7.18. For details, see <a href="https://docs.python.org/2.7/whatsnew/2.7.html">What’s New in Python 2.7</a>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2020-06-05-linux.platforms"></a>

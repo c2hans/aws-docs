@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/tsc-faq.html
 
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
-# AWS Connector frequently asked questions
+# Amazon EKS Connector frequently asked questions
 <a name="tsc-faq"></a>
 
 **Q: How does the underlying technology behind the Amazon EKS Connector work?**
@@ -19,4 +19,4 @@ A: No, you don’t need to open any firewall ports. The Kubernetes cluster only 
 A: The Amazon EKS Connector sends technical information that’s necessary for your cluster to be registered on AWS. It also sends cluster and workload metadata for the Amazon EKS console features that customers request. The Amazon EKS Connector only gathers or sends this data if you start an action from the Amazon EKS console or the Amazon EKS API that necessitates the data to be sent to AWS. Other than the Kubernetes version number, AWS doesn’t store any data by default. It stores data only if you authorize it to.
 
 **Q: Can I connect a cluster outside of an AWS Region?**
-A: Yes, you can connect a cluster from any location to Amazon EKS. Moreover, your Amazon EKS service can be located in any AWS public commercial AWS Region. This works with a valid network connection from your cluster to the target AWS Region. We recommend that you pick an AWS Region that is closest to your cluster location for UI performance optimization. For example, if you have a cluster running in Tokyo, connect your cluster to the AWS Region in Tokyo (that is, the `ap-northeast-1` AWS Region) for low latency. You can connect a cluster from any location to Amazon EKS in any of the public commercial AWS Regions, except the China or GovCloud AWS Regions.
+A: Yes, you can connect a cluster from any location to Amazon EKS. Moreover, your Amazon EKS service can be located in any public commercial AWS Region. This works with a valid network connection from your cluster to the target AWS Region. We recommend that you pick an AWS Region that is closest to your cluster location for UI performance optimization. For example, if you have a cluster running in Tokyo, connect your cluster to the AWS Region in Tokyo (that is, the `ap-northeast-1` AWS Region) for low latency. You can connect a cluster from any location to Amazon EKS in any of the public commercial AWS Regions, except the China or GovCloud AWS Regions.

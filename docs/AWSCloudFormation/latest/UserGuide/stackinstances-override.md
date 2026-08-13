@@ -74,7 +74,7 @@ When acting as a delegated administrator, you must include `--call-as DELEGATED_
 
 **To override parameters for specific stacks**
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack-instances.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack-instances.html) AWS CLI command and specify the `--parameter-overrides` option.
+1. Use the [update-stack-instances](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack-instances.html) AWS CLI command and specify the `--parameter-overrides` option.
 
    [Self-managed permissions] For the `--accounts` option, provide the account IDs for which you want to override parameter values on stacks.
 

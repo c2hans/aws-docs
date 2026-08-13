@@ -20,7 +20,7 @@ These controls may not be available in all AWS Regions. For more information, se
 
 **Resource type:** `AWS::SecretsManager::Secret`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/secretsmanager-rotation-enabled-check.html](https://docs.aws.amazon.com/config/latest/developerguide/secretsmanager-rotation-enabled-check.html)
+**AWS Config rule:** [`secretsmanager-rotation-enabled-check`](https://docs.aws.amazon.com/config/latest/developerguide/secretsmanager-rotation-enabled-check.html)
 
 **Schedule type:** Change triggered
 
@@ -52,7 +52,7 @@ To turn on automatic rotation for Secrets Manager secrets, see [Set up automatic
 
 **Resource type:** `AWS::SecretsManager::Secret`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/secretsmanager-scheduled-rotation-success-check.html](https://docs.aws.amazon.com/config/latest/developerguide/secretsmanager-scheduled-rotation-success-check.html)
+**AWS Config rule:** [`secretsmanager-scheduled-rotation-success-check`](https://docs.aws.amazon.com/config/latest/developerguide/secretsmanager-scheduled-rotation-success-check.html)
 
 **Schedule type:** Change triggered
 
@@ -86,7 +86,7 @@ For help diagnosing and fixing common errors related to secrets rotation, see [T
 
 **Resource type:** `AWS::SecretsManager::Secret`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/secretsmanager-secret-unused.html](https://docs.aws.amazon.com/config/latest/developerguide/secretsmanager-secret-unused.html)
+**AWS Config rule:** [`secretsmanager-secret-unused`](https://docs.aws.amazon.com/config/latest/developerguide/secretsmanager-secret-unused.html)
 
 **Schedule type:** Periodic
 
@@ -116,7 +116,7 @@ To delete inactive Secrets Manager secrets, see [Delete an AWS Secrets Manager s
 
 **Resource type:** `AWS::SecretsManager::Secret`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/secretsmanager-secret-periodic-rotation.html](https://docs.aws.amazon.com/config/latest/developerguide/secretsmanager-secret-periodic-rotation.html)
+**AWS Config rule:** [`secretsmanager-secret-periodic-rotation`](https://docs.aws.amazon.com/config/latest/developerguide/secretsmanager-secret-periodic-rotation.html)
 
 **Schedule type:** Periodic
 

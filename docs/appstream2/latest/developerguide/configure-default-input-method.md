@@ -22,7 +22,7 @@ If the image builder that you want to connect to is joined to an Active Director
 
 1. Choose a language, and choose **Add**.
 **Note**
-Currently, WorkSpaces Applications supports only **English (United States)** and **Japanese**.
+Currently, WorkSpaces Applications supports only **English (United States)** and **Japanese** as admin-configurable default input methods. To configure Chinese or Korean input methods on your image, see [Configuring Chinese and Korean input methods on the image](configure-chinese-korean-input-methods.md).
 
 1. The language that you chose appears in the list of languages you added to Windows.
 

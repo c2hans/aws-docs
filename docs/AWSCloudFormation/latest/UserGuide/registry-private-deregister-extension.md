@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/regis
 # Remove third-party private extensions from your account
 <a name="registry-private-deregister-extension"></a>
 
-To remove a third-party private extension or extension version, use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deregister-type.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deregister-type.html) command.
+To remove a third-party private extension or extension version, use the [deregister-type](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deregister-type.html) command.
 
 You can deregister a specific extension version, or the extension as a whole. To deregister an extension, you must individually deregister all registered versions of that extension. If an extension has only a single registered version, deregistering that version results in the extension itself being deregistered. You can't deregister the default version of an extension, unless it's the only registered version of that extension, in which case the extension itself is deregistered as well.
 
@@ -21,7 +21,7 @@ Before proceeding, use the [list-stacks](https://docs.aws.amazon.com/cli/latest/
 This section provides examples that show the different ways to deregister private extensions.
 
 **Deregister by type name**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deregister-type.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deregister-type.html) command with `--type` and `--type-name` options to deregister your extension.
+Use the [deregister-type](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deregister-type.html) command with `--type` and `--type-name` options to deregister your extension.
 
 ```
 aws cloudformation deregister-type \

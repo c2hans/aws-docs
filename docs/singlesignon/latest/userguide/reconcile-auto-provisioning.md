@@ -26,7 +26,7 @@ Here are examples for how to audit these resources using AWS CLI commands.
 
 Before you begin, ensure you have:
 + Administrator access to IAM Identity Center.
-+ AWS CLI installed and configured. For information, see the [https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html).
++ AWS CLI installed and configured. For information, see the [*AWS Command Line Interface User Guide*](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html).
 + Required IAM permissions for Identity Store commands.
 
 ### Step 1: List current resources

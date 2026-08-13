@@ -27,7 +27,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 
  Additional metrics, such as instance specific CPU, memory, and disk performance can also be viewed. Develop custom CloudWatch widgets to fine tune the monitoring of specific groups of WorkSpaces.
 
- [https://docs.aws.amazon.com/appstream2/latest/developerguide/logging-monitoring-alerting.html](https://docs.aws.amazon.com/appstream2/latest/developerguide/logging-monitoring-alerting.html)
+ [**Amazon WorkSpaces Applications**](https://docs.aws.amazon.com/appstream2/latest/developerguide/logging-monitoring-alerting.html)
 
  Amazon CloudWatch provides an automatic dashboard which gives an overview of overall service health, including fleet capacity and utilization.
 

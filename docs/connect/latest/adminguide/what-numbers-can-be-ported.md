@@ -15,7 +15,7 @@ To find out if a phone number that you currently own—whether local, mobile, or
 
 1. See if your country or region supports number porting: [Region requirements for ordering and porting phone numbers in Connect Customer](phone-number-requirements.md).
 
-1. Then get started by [submitting an Connect Customer support ticket for number verification](about-porting.md#step1-porting).
+1. Then get started by [submitting a Connect Customer support ticket for number verification](about-porting.md#step1-porting).
 
 ## Porting numbers purchased from other contact center providers
 <a name="numbers-from-other-providers"></a>
@@ -25,14 +25,14 @@ In most cases, you can port numbers that were purchased from other contact cente
 ## Port short phone numbers
 <a name="port-short-numbers"></a>
 
-Because of Telecom regulations in various countries or regions, the short phone number will need to be evaluated on a case-by-case basis. To verify if your phone number can be ported to Connect Customer, [submit an Connect Customer support ticket](about-porting.md#step1-porting).
+Because of Telecom regulations in various countries or regions, the short phone number will need to be evaluated on a case-by-case basis. To verify if your phone number can be ported to Connect Customer, [submit a Connect Customer support ticket](about-porting.md#step1-porting).
 
 ## Port a number to one EU Region only
 <a name="port-across-eu-regions"></a>
 
 The Connect Customer Regions of EU-CENTRAL-1 and EU-WEST-2 are symmetrical European Regions that offer the same carrier coverage for telephony. If a phone number cannot be ported to an instance in one of these Regions, then it cannot be ported to an instance in the other.
 
-If you had a phone number ported into the EU-CENTRAL-1 or EU-WEST-2 Regions, and want to move it to the other Region, [submit an Connect Customer support ticket](about-porting.md#step1-porting) for assistance.
+If you had a phone number ported into the EU-CENTRAL-1 or EU-WEST-2 Regions, and want to move it to the other Region, [submit a Connect Customer support ticket](about-porting.md#step1-porting) for assistance.
 
 The same is true for the North America Regions of US-EAST-1 and US-WEST-2.
 
@@ -41,7 +41,7 @@ The same is true for the North America Regions of US-EAST-1 and US-WEST-2.
 
 If you have a block of numbers, in some instances Connect Customer can port a subset or portion of your phone numbers. In other cases, it is required by the carrier to port full block of phone numbers.
 
-If you want to port only a subset of the phone numbers you currently own to Connect Customer, [submit an Connect Customer support ticket](about-porting.md#step1-porting) to verify whether the phone numbers can be ported. We will verify the actions that can be completed and assist you with next steps.
+If you want to port only a subset of the phone numbers you currently own to Connect Customer, [submit a Connect Customer support ticket](about-porting.md#step1-porting) to verify whether the phone numbers can be ported. We will verify the actions that can be completed and assist you with next steps.
 
 **Note**
 If you port only a subset of the phone numbers, you will still be liable for the remaining phone numbers with the original carrier and any associated fees.

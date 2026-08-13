@@ -30,7 +30,7 @@ rate(12 hours)
 ```
 
 **Tip**
-For more information about cron and rate expression syntax, see the [https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-cron-expressions.html](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-cron-expressions.html).
+For more information about cron and rate expression syntax, see the [*Amazon EventBridge User Guide*](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-cron-expressions.html).
 
 ## Creating a DataSync task schedule
 <a name="configure-task-schedule"></a>

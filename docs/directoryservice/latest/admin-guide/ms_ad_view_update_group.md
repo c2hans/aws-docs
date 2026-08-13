@@ -48,14 +48,14 @@ You can view or update a group's details in the AWS Management Console, AWS CLI,
 aws ds-data describe-group --directory-id {{d-1234567890}} --sam-account-name "{{your-group-name}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-data/describe-group.html](https://docs.aws.amazon.com//cli/latest/reference/ds-data/describe-group.html).
+For more information, see [`describe-group`](https://docs.aws.amazon.com//cli/latest/reference/ds-data/describe-group.html).
 +  To view a group's members, open the AWS CLI, and run the following command with your Directory ID and group name:
 
 ```
 aws ds-data list-group-members --directory-id {{d-1234567890}} --sam-account-name "{{your-group-name}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-data/list-group-members.html](https://docs.aws.amazon.com//cli/latest/reference/ds-data/list-group-members.html).
+For more information, see [`list-group-members`](https://docs.aws.amazon.com//cli/latest/reference/ds-data/list-group-members.html).
 
 ------
 #### [ PowerShell ]
@@ -67,14 +67,14 @@ For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-
 Get-DSDGroup -DirectoryId {{d-1234567890}} -SAMAccountName "{{your-group-name}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Get-DSDGroup.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Get-DSDGroup.html).
+For more information, see [`Get-DSDGroup`](https://docs.aws.amazon.com//powershell/latest/reference/items/Get-DSDGroup.html).
 +  To view a group's members, open PowerShell, and run the following command with your Directory ID and group name:
 
 ```
 (Get-DSDGroupMemberList -DirectoryId {{d-1234567890}} -SAMAccountName "{{your-group-name}}").Members
 ```
 
-For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Get-DSDGroupMemberList.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Get-DSDGroupMemberList.html).
+For more information, see [`Get-DSDGroupMemberList`](https://docs.aws.amazon.com//powershell/latest/reference/items/Get-DSDGroupMemberList.html).
 
 ------
 
@@ -126,7 +126,7 @@ aws ds-data update-group \
   --group-scope {{"global"}}
 ```
 
-For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-data/update-group.html](https://docs.aws.amazon.com//cli/latest/reference/ds-data/update-group.html).
+For more information, see [`update-group`](https://docs.aws.amazon.com//cli/latest/reference/ds-data/update-group.html).
 
 ------
 #### [ PowerShell ]
@@ -148,6 +148,6 @@ Update-DSDGroup `
     -GroupScope "{{global}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Update-DSDGroup.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Update-DSDGroup.html).
+For more information, see [`Update-DSDGroup`](https://docs.aws.amazon.com//powershell/latest/reference/items/Update-DSDGroup.html).
 
 ------

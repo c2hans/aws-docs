@@ -91,7 +91,7 @@ For the attributes that you can use to define an endpoint, see the [EndpointRequ
 You can use the Amazon Pinpoint API in your Java applications by using the client that's provided by the AWS SDK for Java.
 
 **Example Code**
-To add an endpoint, initialize an [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/pinpoint/model/EndpointRequest.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/pinpoint/model/EndpointRequest.html) object, and pass it to the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/pinpoint/model/UpdateEndpointRequest.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/pinpoint/model/UpdateEndpointRequest.html) method of the `AmazonPinpoint` client:
+To add an endpoint, initialize an [`EndpointRequest`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/pinpoint/model/EndpointRequest.html) object, and pass it to the [`updateEndpoint`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/pinpoint/model/UpdateEndpointRequest.html) method of the `AmazonPinpoint` client:
 
 ```
 import com.amazonaws.regions.Regions;

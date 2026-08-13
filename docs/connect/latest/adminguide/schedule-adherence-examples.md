@@ -67,12 +67,12 @@ As a result of these overrides, agents assigned to Agent Group 2 will have the f
   <tr><th></th><th>EARLY</th><th>AT</th><th>LATE</th><th>EARLY</th><th>AT</th><th>LATE</th></tr>
 </thead>
 <tbody>
-  <tr><td>Shift</td><td>8:50 AM</td><td>9:00 AM</td><td>9:07 AM</td><td>-</td><td>5:00 PM</td><td>5:10 PM</td></tr>
-  <tr><td>Work</td><td>8:50 AM</td><td>9:00 AM</td><td>9:07 AM</td><td>9:50 AM</td><td>10:00 AM</td><td>10:15 AM</td></tr>
-  <tr><td>Break</td><td>-</td><td>10:00 AM</td><td>10:05 AM</td><td>10:25 AM</td><td>10:30 AM</td><td>-</td></tr>
+  <tr><td>Shift</td><td><b>8:50 AM</b></td><td><b>9:00 AM</b></td><td><b>9:07 AM</b></td><td><b>-</b></td><td><b>5:00 PM</b></td><td><b>5:10 PM</b></td></tr>
+  <tr><td>Work</td><td><b>8:50 AM</b></td><td>9:00 AM</td><td><b>9:07 AM</b></td><td>9:50 AM</td><td>10:00 AM</td><td>10:15 AM</td></tr>
+  <tr><td>Break</td><td><b>-</b></td><td>10:00 AM</td><td>10:05 AM</td><td>10:25 AM</td><td>10:30 AM</td><td>-</td></tr>
   <tr><td>Work</td><td>10:25 AM</td><td>10:30 AM</td><td>10:37 AM</td><td>11:50 AM</td><td>12:00 PM</td><td>12:15 PM</td></tr>
   <tr><td>Lunch</td><td>-</td><td>12:00 PM</td><td>12:10 PM</td><td>12:50 PM</td><td>1:00 PM</td><td>-</td></tr>
-  <tr><td>Work</td><td>12:50 PM</td><td>1:00 PM</td><td>1:07 PM</td><td>4:50 PM</td><td>5:00 PM</td><td>5:10 PM</td></tr>
+  <tr><td>Work</td><td><b>12:50 PM</b></td><td>1:00 PM</td><td><b>1:07 PM</b></td><td><b>4:50 PM</b></td><td>5:00 PM</td><td><b>5:10 PM</b></td></tr>
 </tbody>
 </table>
 

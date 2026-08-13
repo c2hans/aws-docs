@@ -117,7 +117,7 @@ When you run `InvokeDataAutomationAsync` on a video file, you can set a 5 minute
 
 Alternatively, you can use the [InvokeDataAutomation](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-automation-runtime_InvokeDataAutomation.html) operation. The `InvokeDataAutomation` operation only supports processing images.
 
-This API call initiates the synchronous processing of the provided via an S3 reference, or in the payload. The API accepts the project ARN and the file to be processed, and returns the structured insights in the response. Errors will be raised if the project doesn't exist, or if the caller doesn't have the necessary permissions, or if the input files aren't in a supported format. If the analyzed image is semantically classified as a document, this will also be raised as an error, because the InvokeDataAutomation only supports Images. To prevent this error, you may use Modality Routing on your project to force routing of all image file types as Images (see [Disabling modalities and routing file types](bda-routing-enablement.md)).
+This API call initiates the synchronous processing of the provided through an S3 reference, or in the payload. The API accepts the project ARN and the file to be processed, and returns the structured insights in the response. Errors will be raised if the project doesn't exist, or if the caller doesn't have the necessary permissions, or if the input files aren't in a supported format. If the analyzed image is semantically classified as a document, this will also be raised as an error, because the InvokeDataAutomation only supports Images. To prevent this error, you may use Modality Routing on your project to force routing of all image file types as Images (see [Disabling modalities and routing file types](bda-routing-enablement.md)).
 
 Here is the structure of the JSON request for both image and document. Sync API request supports both image bytes and S3 bucket. To use image bytes, simply replace `“s3Uri”: “string”` in “inputConfiguration” section with `“bytes“: “base64-encoded string“` `outputConfiguration` is optional with default is inline output. If S3 uri is provided as outputConfiguration, encrypted output will be put into the specified S3 bucket.
 
@@ -331,7 +331,7 @@ Here is the structure of the JSON response with both standard and custom output 
 
 To check the status of your processing job and retrieve results, use GetDataAutomationStatus.
 
-The GetDataAutomationStatus API allows you to monitor the progress of your job and access the results once processing is complete. The API accepts the invocation ARN returned by InvokeDataAutomationAsync. It checks the current status of the job and returns relevant information. Once the job is complete, it provides the location of the results in S3.
+The GetDataAutomationStatus API allows you to monitor the progress of your job and access the results after processing is complete. The API accepts the invocation ARN returned by InvokeDataAutomationAsync. It checks the current status of the job and returns relevant information. Once the job is complete, it provides the location of the results in S3.
 
 If the job is still in progress, it returns the current state (e.g., "InProgress"). If the job is complete, it returns "Success" along with the S3 location of the results. If there was an error, it returns "ServiceError" or "ClientError" with error details.
 

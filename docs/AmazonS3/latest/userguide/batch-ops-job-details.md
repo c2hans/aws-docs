@@ -36,4 +36,4 @@ aws s3control describe-job \
 --job-id {{00e123a4-c0d8-41f4-a0eb-b46f9ba5b07c}}
 ```
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/describe-job.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/describe-job.html) in the *AWS CLI Command Reference*.
+For more information and examples, see [describe-job](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/describe-job.html) in the *AWS CLI Command Reference*.

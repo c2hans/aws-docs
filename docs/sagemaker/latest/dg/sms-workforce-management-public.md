@@ -64,7 +64,7 @@ When you create your labeling job by selecting **Create**, your labeling tasks a
 
 1. Use the following to create a labeling job using the `[CreateLabelingJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html)` operation: [Create a Labeling Job (API)](sms-create-labeling-job-api.md).
 
-1. Use the following for the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanTaskConfig.html#sagemaker-Type-HumanTaskConfig-WorkteamArn](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanTaskConfig.html#sagemaker-Type-HumanTaskConfig-WorkteamArn). Replace {{`region`}} with the AWS Region you are using to create the labeling job.
+1. Use the following for the [`WorkteamArn`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanTaskConfig.html#sagemaker-Type-HumanTaskConfig-WorkteamArn). Replace {{`region`}} with the AWS Region you are using to create the labeling job.
 
    `arn:aws:sagemaker:{{region}}:394669845002:workteam/public-crowd/default`
 
@@ -113,7 +113,7 @@ You can specify that you want to use Mechanical Turk with Amazon A2I when you cr
 
 1. Use the following to create a human review workflow using the `[CreateFlowDefinition](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateFlowDefinition.html)` operation: [Create a Human Review Workflow (API)](a2i-create-flow-definition.md#a2i-create-human-review-api).
 
-1. Use the following for the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanTaskConfig.html#sagemaker-Type-HumanTaskConfig-WorkteamArn](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanTaskConfig.html#sagemaker-Type-HumanTaskConfig-WorkteamArn). Replace {{`region`}} with the AWS Region you are using to create the labeling job.
+1. Use the following for the [`WorkteamArn`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanTaskConfig.html#sagemaker-Type-HumanTaskConfig-WorkteamArn). Replace {{`region`}} with the AWS Region you are using to create the labeling job.
 
    `arn:aws:sagemaker:{{region}}:394669845002:workteam/public-crowd/default`
 

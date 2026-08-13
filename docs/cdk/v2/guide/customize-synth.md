@@ -10,9 +10,9 @@ This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on 
 You can customize AWS Cloud Development Kit (AWS CDK) stack synthesis by modifying the default synthesizer, using other available built-in synthesizers, or creating your own synthesizer.
 
 The AWS CDK includes the following built-in synthesizers that you can use to customize synthesis behavior:
-+  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.DefaultStackSynthesizer.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.DefaultStackSynthesizer.html) – If you don’t specify a synthesizer, this one is used automatically. It supports cross-account deployments and deployments using the [CDK Pipelines](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.pipelines-readme.html) construct. Its bootstrap contract requires an existing Amazon S3 bucket with a known name, an existing Amazon ECR repository with a known name, and five existing IAM roles with known names. The default bootstrapping template meets these requirements.
-+  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CliCredentialsStackSynthesizer.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CliCredentialsStackSynthesizer.html) – This synthesizer’s bootstrap contract requires an existing Amazon S3 bucket and existing Amazon ECR repository. It does not require any IAM roles. To perform deployments, this synthesizer relies on the permissions of the CDK CLI user and is recommend for organizations that want to restrict IAM deployment credentials. This synthesizer doesn’t support cross-account deployments or CDK Pipelines.
-+  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.LegacyStackSynthesizer.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.LegacyStackSynthesizer.html) – This synthesizer emulates CDK v1 synthesis behavior. Its bootstrap contract requires an existing Amazon S3 bucket of an arbitrary name and expects the locations of assets to be passed in as CloudFormation stack parameters. If you use this synthesizer, you must use the CDK CLI to perform deployment.
++  [`DefaultStackSynthesizer`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.DefaultStackSynthesizer.html) – If you don’t specify a synthesizer, this one is used automatically. It supports cross-account deployments and deployments using the [CDK Pipelines](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.pipelines-readme.html) construct. Its bootstrap contract requires an existing Amazon S3 bucket with a known name, an existing Amazon ECR repository with a known name, and five existing IAM roles with known names. The default bootstrapping template meets these requirements.
++  [`CliCredentialsStackSynthesizer`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CliCredentialsStackSynthesizer.html) – This synthesizer’s bootstrap contract requires an existing Amazon S3 bucket and existing Amazon ECR repository. It does not require any IAM roles. To perform deployments, this synthesizer relies on the permissions of the CDK CLI user and is recommend for organizations that want to restrict IAM deployment credentials. This synthesizer doesn’t support cross-account deployments or CDK Pipelines.
++  [`LegacyStackSynthesizer`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.LegacyStackSynthesizer.html) – This synthesizer emulates CDK v1 synthesis behavior. Its bootstrap contract requires an existing Amazon S3 bucket of an arbitrary name and expects the locations of assets to be passed in as CloudFormation stack parameters. If you use this synthesizer, you must use the CDK CLI to perform deployment.
 
 If none of these built-in synthesizers are appropriate for your use case, you can write your own synthesizer as a class that implements `IStackSynthesizer` or look at [synthesizers](https://constructs.dev/search?q=synthesizer&cdk=aws-cdk) from the Construct Hub.
 
@@ -37,7 +37,7 @@ The `DefaultStackSynthesizer` is the default synthesizer for the AWS CDK. It is 
 | IAM role | Image publishing role | cdk-hnb659fds-image-publishing-role-<ACCOUNT>-<REGION> | This role is used to upload Docker images to the Amazon ECR staging repository. It is assumed from the deploy role. |
 | SSM parameter | Bootstrap version parameter | /cdk-bootstrap/hnb659fds/<version> | The version of the bootstrap template. It is used by the bootstrap template and the CDK CLI to validate requirements. |
 
-One way to customize CDK stack synthesis, is by modifying the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.DefaultStackSynthesizer.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.DefaultStackSynthesizer.html). You can customize this synthesizer for a single CDK stack using the `synthesizer` property of your `Stack` instance. You can also modify `DefaultStackSynthesizer` for all stacks in your CDK app using the `defaultStackSynthesizer` property of your `App` instance.
+One way to customize CDK stack synthesis, is by modifying the [`DefaultStackSynthesizer`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.DefaultStackSynthesizer.html). You can customize this synthesizer for a single CDK stack using the `synthesizer` property of your `Stack` instance. You can also modify `DefaultStackSynthesizer` for all stacks in your CDK app using the `defaultStackSynthesizer` property of your `App` instance.
 
 ### Change the qualifier
 <a name="bootstrapping-custom-synth-qualifiers"></a>
@@ -128,7 +128,7 @@ All of the other `DefaultStackSynthesizer` properties relate to the names of the
 
 All properties accept the special placeholders `${Qualifier}`, `${AWS::Partition}`, `${AWS::AccountId}`, and `${AWS::Region}`. These placeholders are replaced with the values of the `qualifier` parameter and the AWS partition, account ID, and AWS Region values for the stack’s environment, respectively.
 
-The following example shows the most commonly used properties for `DefaultStackSynthesizer` along with their default values, as if you were instantiating the synthesizer. For a complete list, see [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.DefaultStackSynthesizerProps.html#properties](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.DefaultStackSynthesizerProps.html#properties):
+The following example shows the most commonly used properties for `DefaultStackSynthesizer` along with their default values, as if you were instantiating the synthesizer. For a complete list, see [`DefaultStackSynthesizerProps`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.DefaultStackSynthesizerProps.html#properties):
 
 **Example**
 
@@ -320,7 +320,7 @@ new DefaultStackSynthesizer(new DefaultStackSynthesizerProps
 ## Use `CliCredentialsStackSynthesizer`
 <a name="bootstrapping-custom-synth-cli"></a>
 
-To modify the security credentials used to provide permissions during CDK deployments, you can customize synthesis by using [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CliCredentialsStackSynthesizer.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CliCredentialsStackSynthesizer.html). This synthesizer works with the default AWS resources that are created during bootstrapping to store assets, such as the Amazon S3 bucket and Amazon ECR repository. Instead of using the default IAM roles created by the CDK during bootstrapping, it uses the security credentials of the actor initiating deployment. Therefore, the security credentials of the actor must have valid permissions to perform all deployment actions. The following diagram illustrates the deployment process when using this synthesizer:
+To modify the security credentials used to provide permissions during CDK deployments, you can customize synthesis by using [`CliCredentialsStackSynthesizer`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CliCredentialsStackSynthesizer.html). This synthesizer works with the default AWS resources that are created during bootstrapping to store assets, such as the Amazon S3 bucket and Amazon ECR repository. Instead of using the default IAM roles created by the CDK during bootstrapping, it uses the security credentials of the actor initiating deployment. Therefore, the security credentials of the actor must have valid permissions to perform all deployment actions. The following diagram illustrates the deployment process when using this synthesizer:
 
 ![Deployment process using the CLICredentialsStackSynthesizer.](http://docs.aws.amazon.com/cdk/v2/guide/images/CliCredentialsStackSynthesizer-deploy-process_cdk_flowchart.png)
 
@@ -394,7 +394,7 @@ new MyStack(app, "MyStack", new StackProps
 });
 ```
 
-The following example shows the most commonly used properties for `CliCredentialsStackSynthesizer` along with their default values. For a complete list, see [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CliCredentialsStackSynthesizerProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CliCredentialsStackSynthesizerProps.html):
+The following example shows the most commonly used properties for `CliCredentialsStackSynthesizer` along with their default values. For a complete list, see [`CliCredentialsStackSynthesizerProps`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CliCredentialsStackSynthesizerProps.html):
 
 **Example**
 

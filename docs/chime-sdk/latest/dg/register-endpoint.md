@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/register-endpoint.ht
 # Register a mobile device endpoint as an App Instance user for Amazon Chime SDK messaging
 <a name="register-endpoint"></a>
 
-To receive push notifications, app instance users must first use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_RegisterAppInstanceUserEndpoint.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_RegisterAppInstanceUserEndpoint.html) API to register a mobile device. They must register from a mobile app that has access to the device token for the device's operating system.
+To receive push notifications, app instance users must first use the [RegisterAppInstanceUserEndpoint](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_RegisterAppInstanceUserEndpoint.html) API to register a mobile device. They must register from a mobile app that has access to the device token for the device's operating system.
 
-To ensure the app instance User has access to the Amazon Pinpoint application listed in the ARN, the user must have permission to call `mobiletargeting:GetApp` on the Amazon Pinpoint ARN. Otherwise, the Amazon Chime SDK throws a 403 Forbidden error when calling [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_RegisterAppInstanceUserEndpoint.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_RegisterAppInstanceUserEndpoint.html).
+To ensure the app instance User has access to the Amazon Pinpoint application listed in the ARN, the user must have permission to call `mobiletargeting:GetApp` on the Amazon Pinpoint ARN. Otherwise, the Amazon Chime SDK throws a 403 Forbidden error when calling [RegisterAppInstanceUserEndpoint](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_RegisterAppInstanceUserEndpoint.html).
 
 This example shows the policy needed to register an endpoint.
 
@@ -39,4 +39,4 @@ This example shows the policy needed to register an endpoint.
 ------
 
 **To register an endpoint**
-+ Use the Amazon Pinpoint ARN and your device token to call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_RegisterAppInstanceUserEndpoint.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_RegisterAppInstanceUserEndpoint.html) API.
++ Use the Amazon Pinpoint ARN and your device token to call the [RegisterAppInstanceUserEndpoint](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_RegisterAppInstanceUserEndpoint.html) API.

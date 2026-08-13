@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 
 You can configure a pipeline in AWS CodePipeline that deploys container applications using a blue/green deployment. In a blue/green deployment, you can launch a new version of your application alongside the old version, and you can test the new version before you reroute traffic to it. You can also monitor the deployment process and rapidly roll back if there is an issue.
 
-The completed pipeline detects changes to your images or task definition file and and uses CodeDeploy to route and deploy traffic to an Amazon ECS cluster and load balancer. CodeDeploy creates a new listener on your load balancer which can target your new task through a special port. You can also configure the pipeline to use a source location, such as a CodeCommit repository, where your Amazon ECS task definition is stored.
+The completed pipeline detects changes to your images or task definition file and uses CodeDeploy to route and deploy traffic to an Amazon ECS cluster and load balancer. CodeDeploy creates a new listener on your load balancer which can target your new task through a special port. You can also configure the pipeline to use a source location, such as a CodeCommit repository, where your Amazon ECS task definition is stored.
 
 Before you create your pipeline, you must have already created the Amazon ECS resources, the CodeDeploy resources, and the load balancer and target group. You must have already tagged and stored the image in your image repository, and uploaded the task definition and AppSpec file to your file repository.
 
@@ -70,7 +70,7 @@ Available values for `<Number>` are 1 through 4.
 ## Input artifacts
 <a name="action-reference-ECSbluegreen-input"></a>
 + **Number of Artifacts:** `1 to 5`
-+ **Description:** The `CodeDeployToECS` action first looks for the task definition file and the AppSpec file in the source file repository, next looks for the image in the image repository, then dynamically generates a new revision of task definition, and finallyruns the AppSpec commands to deploy the task set and container to the cluster.
++ **Description:** The `CodeDeployToECS` action first looks for the task definition file and the AppSpec file in the source file repository, next looks for the image in the image repository, then dynamically generates a new revision of task definition, and finally runs the AppSpec commands to deploy the task set and container to the cluster.
 
   The `CodeDeployToECS` action looks for an `imageDetail.json` file that maps the image URI to the image. When you commit a change to your Amazon ECR image repository, the pipeline ECR source action creates an `imageDetail.json` file for that commit. You can also manually add an `imageDetail.json` file for a pipeline where the action is not automated. For information about the `imageDetail.json` file, see [imageDetail.json file for Amazon ECS blue/green deployment actions](file-reference.md#file-reference-ecs-bluegreen).
 

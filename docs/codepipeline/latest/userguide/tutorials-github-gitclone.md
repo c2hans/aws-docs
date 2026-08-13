@@ -13,7 +13,7 @@ The full clone option described here refers to specifying whether CodePipeline s
 **Important**
 As part of creating a pipeline, an S3 artifact bucket provided by the customer will be used by CodePipeline for artifacts. (This is different from the bucket used for an S3 source action.) If the S3 artifact bucket is in a different account from the account for your pipeline, make sure that the S3 artifact bucket is owned by AWS accounts that are safe and will be dependable.
 
-In this tutorial, you will create a pipeline that connects to your GitHub repository, uses the full clone option for source data, and run a CodeBuild build that clones your repository and performs Git commands for the repository.
+In this tutorial, you will create a pipeline that connects to your GitHub repository, uses the full clone option for source data, and runs a CodeBuild build that clones your repository and performs Git commands for the repository.
 
 **Note**
 This feature is not available in the Asia Pacific (Hong Kong), Africa (Cape Town), Middle East (Bahrain), Europe (Zurich), or AWS GovCloud (US-West) Regions. To reference other available actions, see [Product and service integrations with CodePipeline](integrations.md). For considerations with this action in the Europe (Milan) Region, see the note in [CodeStarSourceConnection for Bitbucket Cloud, GitHub, GitHub Enterprise Server, GitLab.com, and GitLab self-managed actions](action-reference-CodestarConnectionSource.md).
@@ -39,7 +39,7 @@ After you create your GitHub repository, use these steps to add a README file.
 
 1. Log in to your GitHub repository and choose your repository.
 
-1. To create a new file, choose **Add file > Create new file**. Name the file `README.md`. file and add the following text.
+1. To create a new file, choose **Add file > Create new file**. Name the file `README.md` and add the following text.
 
    ```
    This is a GitHub repository!
@@ -70,7 +70,7 @@ In this section, you create a pipeline with the following actions:
 
 1. In **Service role**, choose **New service role**.
 **Note**
-If you choose instead to use your existing CodePipeline service role, make sure that you have added the `codestar-connections:UseConnection` IAM permission to your service role policy. For instructions for the CodePipeline service role, see [Add permissions to the the CodePipeline service role](https://docs.aws.amazon.com/codepipeline/latest/userguide/security-iam.html#how-to-update-role-new-services).
+If you choose instead to use your existing CodePipeline service role, make sure that you have added the `codestar-connections:UseConnection` IAM permission to your service role policy. For instructions for the CodePipeline service role, see [Add permissions to the CodePipeline service role](https://docs.aws.amazon.com/codepipeline/latest/userguide/security-iam.html#how-to-update-role-new-services).
 
 1. Under **Advanced settings**, leave the defaults. In **Artifact store**, choose **Default location** to use the default artifact store, such as the Amazon S3 artifact bucket designated as the default, for your pipeline in the Region you selected for your pipeline.
 **Note**

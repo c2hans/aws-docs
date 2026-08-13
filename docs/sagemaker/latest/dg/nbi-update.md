@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/nbi-update.html
 # Update a Notebook Instance
 <a name="nbi-update"></a>
 
-After you create a notebook instance, you can update it using the SageMaker AI console and [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateNotebookInstance.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateNotebookInstance.html) API operation.
+After you create a notebook instance, you can update it using the SageMaker AI console and [`UpdateNotebookInstance`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateNotebookInstance.html) API operation.
 
 You can update the tags of a notebook instance that is `InService`. To update any other attribute of a notebook instance, its status must be `Stopped`.
 

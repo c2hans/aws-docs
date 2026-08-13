@@ -59,4 +59,4 @@ When you turn on Kernel Live Patching, if the kernel already running on the mana
   + `--targets "Key=instanceids,Values={{instance-id1}},{{instance-id2}}"`
   + `--targets "Key=tag:{{tag-key}},Values={{tag-value}}"`
 
-  For information about other options you can use in the command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html) in the *AWS CLI Command Reference*.
+  For information about other options you can use in the command, see [send-command](https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html) in the *AWS CLI Command Reference*.

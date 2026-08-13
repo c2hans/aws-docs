@@ -35,9 +35,9 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/unpicking-vendor-lock
 
 |  If you need an offline way to move data in large batches so you can:  |   Consider using:   |
 | --- | --- |
-|  Physically transport petabytes of data in batches to the cloud  |  [https://aws.amazon.com/cloud-data-migration/#snowball](https://aws.amazon.com/cloud-data-migration/#snowball)  |
-|  Physically transport petabytes of data in an appliance with on-board storage and compute capabilities  |  [https://aws.amazon.com/cloud-data-migration/#snowballedge](https://aws.amazon.com/cloud-data-migration/#snowballedge)  |
-|  Migrate tens of petabytes to exabytes of data in batches to the cloud  |  [https://aws.amazon.com/cloud-data-migration/#snowmobile](https://aws.amazon.com/cloud-data-migration/#snowmobile)  |
+|  Physically transport petabytes of data in batches to the cloud  |  [*AWS Snowball Edge*](https://aws.amazon.com/cloud-data-migration/#snowball)  |
+|  Physically transport petabytes of data in an appliance with on-board storage and compute capabilities  |  [*AWS Snowball Edge Edge*](https://aws.amazon.com/cloud-data-migration/#snowballedge)  |
+|  Migrate tens of petabytes to exabytes of data in batches to the cloud  |  [*AWS Snowmobile*](https://aws.amazon.com/cloud-data-migration/#snowmobile)  |
 
 ## Containers
 <a name="containers"></a>

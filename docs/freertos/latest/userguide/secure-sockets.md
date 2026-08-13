@@ -77,7 +77,7 @@ BaseType_t xResult = pdPASS;
 xResult = SOCKETS_Init();
 ```
 
-Dependent libraries must be initialized separately. For example, if FreeRTOS\+TCP is a dependency, you need to invoke [https://www.freertos.org/FreeRTOS-Plus/FreeRTOS_Plus_TCP/API/FreeRTOS_IPInit.html](https://www.freertos.org/FreeRTOS-Plus/FreeRTOS_Plus_TCP/API/FreeRTOS_IPInit.html) in your application as well.
+Dependent libraries must be initialized separately. For example, if FreeRTOS\+TCP is a dependency, you need to invoke [`FreeRTOS_IPInit`](https://www.freertos.org/FreeRTOS-Plus/FreeRTOS_Plus_TCP/API/FreeRTOS_IPInit.html) in your application as well.
 
 ## API reference
 <a name="freertos-secure-sockets-api"></a>

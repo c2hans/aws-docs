@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 # Creating a custom patch baseline for Linux
 <a name="patch-manager-create-a-patch-baseline-for-linux"></a>
 
-Use the following procedure to create a custom patch baseline for Linux managed nodes in Patch Manager, a tool in AWS Systems Manager.
+Use the following procedure to create a custom patch baseline for Linux managed nodes in Patch Manager.
 
 For information about creating a patch baseline for macOS managed nodes, see [Creating a custom patch baseline for macOS](patch-manager-create-a-patch-baseline-for-macos.md). For information about creating a patch baseline for Windows managed nodes, see [Creating a custom patch baseline for Windows Server](patch-manager-create-a-patch-baseline-for-windows.md).
 
@@ -40,9 +40,9 @@ For information about setting an existing patch baseline as the default, see [Se
 **Tip**
 You can configure a patch baseline to control whether minor version upgrades for Linux are installed, such as RHEL 7.8. Minor version upgrades can be installed automatically by Patch Manager provided that the update is available in the appropriate repository.
 For Linux operating systems, minor version upgrades aren't classified consistently. They can be classified as bug fixes or security updates, or not classified, even within the same kernel version. Here are a few options for controlling whether a patch baseline installs them.
-**Option 1**: The broadest approval rule to ensure minor version upgrades are installed when available is to specify **Classification** as `All` (\*) and choose the **Include nonsecurity updates** option.
-**Option 2**: To ensure patches for an operating system version are installed, you can use a wildcard (\*) to specify its kernel format in the **Patch exceptions** section of the baseline. For example, the kernel format for RHEL 7.\* is `kernel-3.10.0-*.el7.x86_64`.
-Enter `kernel-3.10.0-*.el7.x86_64` in the **Approved patches** list in your patch baseline to ensure all patches, including minor version upgrades, are applied to your RHEL 7.\* managed nodes. (If you know the exact package name of a minor version patch, you can enter that instead.)
+**Option 1**: The broadest approval rule to make sure minor version upgrades are installed when available is to specify **Classification** as `All` (\*) and choose the **Include nonsecurity updates** option.
+**Option 2**: To make sure patches for an operating system version are installed, you can use a wildcard (\*) to specify its kernel format in the **Patch exceptions** section of the baseline. For example, the kernel format for RHEL 7.\* is `kernel-3.10.0-*.el7.x86_64`.
+Enter `kernel-3.10.0-*.el7.x86_64` in the **Approved patches** list in your patch baseline to make sure all patches, including minor version upgrades, are applied to your RHEL 7.\* managed nodes. (If you know the exact package name of a minor version patch, you can enter that instead.)
 **Option 3**: You can have the most control over which patches are applied to your managed nodes, including minor version upgrades, by using the [InstallOverrideList](patch-manager-aws-runpatchbaseline.md#patch-manager-aws-runpatchbaseline-parameters-installoverridelist) parameter in the `AWS-RunPatchBaseline` document. For more information, see [SSM Command document for patching: `AWS-RunPatchBaseline`](patch-manager-aws-runpatchbaseline.md).
    + **Severity**: The severity value of patches the rule is to apply to, such as `Critical`. The default selection is `All`.
    + **Auto-approval**: The method for selecting patches for automatic approval.
@@ -57,7 +57,7 @@ If you specify a compliance reporting level and the patch state of any approved 
 
    For more information about working with approval rules in a custom patch baseline, see [Custom baselines](patch-manager-predefined-and-custom-patch-baselines.md#patch-manager-baselines-custom).
 
-1. If you want to explicitly approve any patches in addition to those meeting your approval rules, do the following in the **Patch exceptions** section:
+1. If you want to explicitly approve any patches besides those meeting your approval rules, do the following in the **Patch exceptions** section:
    + For **Approved patches**, enter a comma-separated list of the patches you want to approve.
 
      For information about accepted formats for lists of approved patches and rejected patches, see [Package name formats for approved and rejected patch lists](patch-manager-approved-rejected-package-name-formats.md).

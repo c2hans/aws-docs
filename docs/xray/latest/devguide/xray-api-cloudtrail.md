@@ -36,23 +36,23 @@ CloudTrail Lake event data stores and queries incur costs. When you create an ev
 AWS X-Ray integrates with AWS CloudTrail to record API actions made by a user, a role, or an AWS service in X-Ray. You can use CloudTrail to monitor X-Ray API requests in real time and store logs in Amazon S3, Amazon CloudWatch Logs, and Amazon CloudWatch Events. X-Ray supports logging the following actions as events in CloudTrail log files:
 
 **Supported API Actions**
-+ [https://docs.aws.amazon.com/xray/latest/api/API_PutEncryptionConfig.html](https://docs.aws.amazon.com/xray/latest/api/API_PutEncryptionConfig.html)
-+ [https://docs.aws.amazon.com/xray/latest/api/API_GetEncryptionConfig.html](https://docs.aws.amazon.com/xray/latest/api/API_GetEncryptionConfig.html)
-+ [https://docs.aws.amazon.com/xray/latest/api/API_CreateGroup.html](https://docs.aws.amazon.com/xray/latest/api/API_CreateGroup.html)
-+ [https://docs.aws.amazon.com/xray/latest/api/API_UpdateGroup.html](https://docs.aws.amazon.com/xray/latest/api/API_UpdateGroup.html)
-+ [https://docs.aws.amazon.com/xray/latest/api/API_DeleteGroup.html](https://docs.aws.amazon.com/xray/latest/api/API_DeleteGroup.html)
-+ [https://docs.aws.amazon.com/xray/latest/api/API_GetGroup.html](https://docs.aws.amazon.com/xray/latest/api/API_GetGroup.html)
-+ [https://docs.aws.amazon.com/xray/latest/api/API_GetGroups.html](https://docs.aws.amazon.com/xray/latest/api/API_GetGroups.html)
-+ [https://docs.aws.amazon.com/xray/latest/api/API_GetInsight.html](https://docs.aws.amazon.com/xray/latest/api/API_GetInsight.html)
-+ [https://docs.aws.amazon.com/xray/latest/api/API_GetInsightEvents.html](https://docs.aws.amazon.com/xray/latest/api/API_GetInsightEvents.html)
-+ [https://docs.aws.amazon.com/xray/latest/api/API_GetInsightImpactGraph.html](https://docs.aws.amazon.com/xray/latest/api/API_GetInsightImpactGraph.html)
-+ [https://docs.aws.amazon.com/xray/latest/api/API_GetInsightSummaries.html](https://docs.aws.amazon.com/xray/latest/api/API_GetInsightSummaries.html)
-+ [https://docs.aws.amazon.com/xray/latest/api/API_GetSamplingStatisticSummaries.html](https://docs.aws.amazon.com/xray/latest/api/API_GetSamplingStatisticSummaries.html)
++ [PutEncryptionConfig](https://docs.aws.amazon.com/xray/latest/api/API_PutEncryptionConfig.html)
++ [GetEncryptionConfig](https://docs.aws.amazon.com/xray/latest/api/API_GetEncryptionConfig.html)
++ [CreateGroup](https://docs.aws.amazon.com/xray/latest/api/API_CreateGroup.html)
++ [UpdateGroup](https://docs.aws.amazon.com/xray/latest/api/API_UpdateGroup.html)
++ [DeleteGroup](https://docs.aws.amazon.com/xray/latest/api/API_DeleteGroup.html)
++ [GetGroup](https://docs.aws.amazon.com/xray/latest/api/API_GetGroup.html)
++ [GetGroups](https://docs.aws.amazon.com/xray/latest/api/API_GetGroups.html)
++ [GetInsight](https://docs.aws.amazon.com/xray/latest/api/API_GetInsight.html)
++ [GetInsightEvents](https://docs.aws.amazon.com/xray/latest/api/API_GetInsightEvents.html)
++ [GetInsightImpactGraph](https://docs.aws.amazon.com/xray/latest/api/API_GetInsightImpactGraph.html)
++ [GetInsightSummaries](https://docs.aws.amazon.com/xray/latest/api/API_GetInsightSummaries.html)
++ [GetSamplingStatisticSummaries](https://docs.aws.amazon.com/xray/latest/api/API_GetSamplingStatisticSummaries.html)
 
 ## X-Ray data events in CloudTrail
 <a name="cloudtrail-data-events"></a>
 
-[Data events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html#logging-data-events) provide information about the resource operations performed on or in a resource (for example, [https://docs.aws.amazon.com/xray/latest/api/API_PutTraceSegments.html](https://docs.aws.amazon.com/xray/latest/api/API_PutTraceSegments.html), which uploads segment documents to X-Ray).
+[Data events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html#logging-data-events) provide information about the resource operations performed on or in a resource (for example, [PutTraceSegments](https://docs.aws.amazon.com/xray/latest/api/API_PutTraceSegments.html), which uploads segment documents to X-Ray).
 
 These are also known as data plane operations. Data events are often high-volume activities. By default, CloudTrail doesn’t log data events. The CloudTrail **Event history** doesn't record data events.
 
@@ -64,9 +64,9 @@ The following table lists the X-Ray resource types for which you can log data ev
 
 | Data event type (console) | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
-| X-Ray trace |  AWS::XRay::Trace  |  +  [https://docs.aws.amazon.com/xray/latest/api/API_PutTraceSegments.html](https://docs.aws.amazon.com/xray/latest/api/API_PutTraceSegments.html) <br />+  [https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSummaries.html](https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSummaries.html) <br />+  [https://docs.aws.amazon.com/xray/latest/api/API_GetTraceGraph.html](https://docs.aws.amazon.com/xray/latest/api/API_GetTraceGraph.html) <br />+  [https://docs.aws.amazon.com/xray/latest/api/API_GetServiceGraphs.html](https://docs.aws.amazon.com/xray/latest/api/API_GetServiceGraphs.html) <br />+  [https://docs.aws.amazon.com/xray/latest/api/API_BatchGetTraces.html](https://docs.aws.amazon.com/xray/latest/api/API_BatchGetTraces.html) <br />+  [https://docs.aws.amazon.com/xray/latest/api/API_GetTimeSeriesServiceStatistics.html](https://docs.aws.amazon.com/xray/latest/api/API_GetTimeSeriesServiceStatistics.html) <br />+  [https://docs.aws.amazon.com/xray/latest/api/API_PutTelemetryRecords.html](https://docs.aws.amazon.com/xray/latest/api/API_PutTelemetryRecords.html) <br />+  [https://docs.aws.amazon.com/xray/latest/api/API_GetSamplingTargets.html](https://docs.aws.amazon.com/xray/latest/api/API_GetSamplingTargets.html)   |
+| X-Ray trace |  AWS::XRay::Trace  |  +  [PutTraceSegments](https://docs.aws.amazon.com/xray/latest/api/API_PutTraceSegments.html) <br />+  [GetTraceSummaries](https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSummaries.html) <br />+  [GetTraceGraph](https://docs.aws.amazon.com/xray/latest/api/API_GetTraceGraph.html) <br />+  [GetServiceGraph](https://docs.aws.amazon.com/xray/latest/api/API_GetServiceGraphs.html) <br />+  [BatchGetTraces](https://docs.aws.amazon.com/xray/latest/api/API_BatchGetTraces.html) <br />+  [GetTimeSeriesServiceStatistics](https://docs.aws.amazon.com/xray/latest/api/API_GetTimeSeriesServiceStatistics.html) <br />+  [PutTelemetryRecords](https://docs.aws.amazon.com/xray/latest/api/API_PutTelemetryRecords.html) <br />+  [GetSamplingTargets](https://docs.aws.amazon.com/xray/latest/api/API_GetSamplingTargets.html)   |
 
-You can configure advanced event selectors to filter on the `eventName` and `readOnly` fields to log only those events that are important to you. However, you cannot select events by adding the `resources.ARN` field selector, because X-Ray traces do not have ARNs. For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*. The following is an example of how to run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/put-event-selectors.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/put-event-selectors.html) AWS CLI command to log data events on a CloudTrail trail. You must run the command in or specify the Region in which the trail was created; otherwise, the operation returns an `InvalidHomeRegionException` exception.
+You can configure advanced event selectors to filter on the `eventName` and `readOnly` fields to log only those events that are important to you. However, you cannot select events by adding the `resources.ARN` field selector, because X-Ray traces do not have ARNs. For more information about these fields, see [AdvancedFieldSelector](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*. The following is an example of how to run the [`put-event-selectors`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/put-event-selectors.html) AWS CLI command to log data events on a CloudTrail trail. You must run the command in or specify the Region in which the trail was created; otherwise, the operation returns an `InvalidHomeRegionException` exception.
 
 ```
 aws cloudtrail put-event-selectors --trail-name myTrail --advanced-event-selectors \

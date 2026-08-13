@@ -212,7 +212,7 @@ Optionally, you can pass additional Spark configurations for the Spark kernels. 
 
    1. From the **Actions** menu, select **Security** > **Change security groups** to attach the security group that you created in [Create a security group](#managed-endpoints-self-hosted-security).
 
-   1. If you are deploying Jupyter notebook pod on AWS Fargate, create a []() to apply to the Jupyter notebook pod with the role label:
+   1. If you are deploying Jupyter notebook pod on AWS Fargate, create a [`SecurityGroupPolicy`]() to apply to the Jupyter notebook pod with the role label:
 
       ```
       cat >my-security-group-policy.yaml <<EOF

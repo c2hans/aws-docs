@@ -13,7 +13,7 @@ DICOM data can be retrieved in either its stored transfer syntax or as uncompres
 
 1. Collect HealthImaging `datastoreId` and `imageSetId` parameter values.
 
-1. Use the [https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetImageSetMetadata.html](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetImageSetMetadata.html) action with the `datastoreId` and `imageSetId` parameter values to retrieve associated metadata values for `studyInstanceUID`, `seriesInstanceUID`, and `sopInstanceUID`. For more information, see [Getting image set metadata](get-image-set-metadata.md).
+1. Use the [`GetImageSetMetadata`](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetImageSetMetadata.html) action with the `datastoreId` and `imageSetId` parameter values to retrieve associated metadata values for `studyInstanceUID`, `seriesInstanceUID`, and `sopInstanceUID`. For more information, see [Getting image set metadata](get-image-set-metadata.md).
 
 1. Determine the image frames to retrieve from the associated metadata to form the `frameList` parameter. The `frameList` parameter is a comma-separated list of one or more non-duplicate frame numbers, in any order. For example, the first image frame in the metadata will be frame 1.
    + Single-frame request: `/frames/1`

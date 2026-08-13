@@ -32,14 +32,14 @@ This error will be returned upon updating the Amazon SQS queue resource policy, 
 
 **Possible causes and mitigations:**
 + **Invalid resource policy:** Check that the resource policy has all the required fields. For more information, see [IAM JSON policy elements reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html) and [Validating IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_policy-validator.html). You can also use the [IAM policy generator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-policy-generation.html) to create and test an Amazon SQS resource policy. Make sure that the policy is in JSON format.
-+ **Invalid principal:** Ensure that the `Principal` element exists in the resource policy and that the value is valid. If your Amazon SQS resource policy `Principal` element includes an IAM entity, make sure that the entity exists before you use the policy. Amazon SQS validates the resource policy and checks for the IAM entity. If the IAM entity doesn't exist, you will receive an error. To confirm IAM entities, use the [https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetRole.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetRole.html) and [https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetUser.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetUser.html) APIs.
++ **Invalid principal:** Ensure that the `Principal` element exists in the resource policy and that the value is valid. If your Amazon SQS resource policy `Principal` element includes an IAM entity, make sure that the entity exists before you use the policy. Amazon SQS validates the resource policy and checks for the IAM entity. If the IAM entity doesn't exist, you will receive an error. To confirm IAM entities, use the [`GetRole`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetRole.html) and [`GetUser`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetUser.html) APIs.
 
 For additional information on how to troubleshoot an `InvalidAttributeValue` error, see [How do I troubleshoot the QueueDoesNotExist error when I make API calls to my Amazon SQS queue?](https://repost.aws/knowledge-center/sqs-invalid-parameter-policy) in the *AWS Knowledge Center Guide*.
 
 ## ReceiptHandle error
 <a name="receipthandle-error"></a>
 
-Upon making a [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_DeleteMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_DeleteMessage.html) API call, the error `ReceiptHandleIsInvalid` or `InvalidParameterValue` might be returned if the receipt handle is incorrect or expired.
+Upon making a [`DeleteMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_DeleteMessage.html) API call, the error `ReceiptHandleIsInvalid` or `InvalidParameterValue` might be returned if the receipt handle is incorrect or expired.
 + **ReceiptHandleIsInvalid error:** If the receipt handle is incorrect, you'll receive an error similar to this example:
 
   ```

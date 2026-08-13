@@ -225,7 +225,7 @@ In the preceding example:
 + Replace {{us-west-2}} with the primary region where you created your Global endpoint.
 + The API response will include the value of your Endpoint ID such as, `"EndpointId": "abcdef12.g3h"`.
 
-Once you've obtained the Endpoint ID of your Global endpoint, you can update your [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) or [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendBulkEmail.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendBulkEmail.html) API calls to include the Endpoint ID value for the `endpoint-id` parameter. Here's an example of how to specify the Endpoint ID in a SendEmail API call using the AWS CLI:
+Once you've obtained the Endpoint ID of your Global endpoint, you can update your [`SendEmail`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) or [`SendBulkEmail`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendBulkEmail.html) API calls to include the Endpoint ID value for the `endpoint-id` parameter. Here's an example of how to specify the Endpoint ID in a SendEmail API call using the AWS CLI:
 
 ```
 aws sesv2 send-email \

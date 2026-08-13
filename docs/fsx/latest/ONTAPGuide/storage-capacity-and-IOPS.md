@@ -89,7 +89,7 @@ For more information about pricing, see [Amazon FSx for NetApp ONTAP Pricing](ht
 **Note**
  If your SSD storage tier exceeds 80% utilization during the decrease operation, Amazon FSx pauses the operation and automatically resumes it after utilization falls below 80%. To decrease SSD utilization on the new disks, you can either tier data to capacity pool or delete data from volumes for which client access has been successfully redirected to the new set of disks.
 
- If you need additional SSD capacity during a decrease operation, you can submit a request to increase SSD capacity by calling [https://docs.aws.amazon.com/cli/latest/reference/fsx/update-file-system.html](https://docs.aws.amazon.com/cli/latest/reference/fsx/update-file-system.html) in the AWS CLI or the equivalent [UpdateFileSystem](https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileSystem.html) API operation and providing a new target value. Amazon FSx prioritizes completing the SSD increase request, so that the new SSD capacity is available for use within minutes before resuming the SSD decrease operation.
+ If you need additional SSD capacity during a decrease operation, you can submit a request to increase SSD capacity by calling [`update-file-system`](https://docs.aws.amazon.com/cli/latest/reference/fsx/update-file-system.html) in the AWS CLI or the equivalent [UpdateFileSystem](https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileSystem.html) API operation and providing a new target value. Amazon FSx prioritizes completing the SSD increase request, so that the new SSD capacity is available for use within minutes before resuming the SSD decrease operation.
 
 ## Considerations for decreasing SSD storage capacity
 <a name="decreasing-considerations"></a>

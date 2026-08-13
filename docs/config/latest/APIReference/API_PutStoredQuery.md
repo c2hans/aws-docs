@@ -83,7 +83,7 @@ Two users are trying to modify the same query at the same time. Wait for a momen
 HTTP Status Code: 400
 
  ** TooManyTagsException **
-You have reached the limit of the number of tags you can use. For more information, see [https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html](https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html) in the * AWS Config Developer Guide*.
+You have reached the limit of the number of tags you can use. For more information, see [**Service Limits**](https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html) in the * AWS Config Developer Guide*.
 HTTP Status Code: 400
 
  ** ValidationException **

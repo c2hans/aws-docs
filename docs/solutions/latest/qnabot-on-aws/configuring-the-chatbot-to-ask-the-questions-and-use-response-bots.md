@@ -33,9 +33,9 @@ Use the following procedure to configure the chatbot to ask questions.
 
 1. Respond by entering your name. Try responding naturally and see if chatbot confirms your name correctly. If not, you can choose **NO** and try again.
 
-   The **ResponseBot Hook** field specifies the name of an Amazon Lex chatbot. In this case we specified the name of a chatbot, **QNAName**, that was automatically created for us when the solution was installed. QNAName is a built-in response chatbot designed to process names (first and last name). It handles a variety of ways the user might state their name, and it will prompt the user to confirm or to try again. If the user confirms by choosing YES, the response chatbot will return the `FirstName` and `LastName` values back to the solution as slot values in a fulfilled response.
+   The **ResponseBot Hook** field specifies the name of an Amazon Lex chatbot. In this case, specify the name of a chatbot, **QNAName**, that the guidance creates automatically during installation. QNAName is a built-in response chatbot designed to process names (first and last name). It handles a variety of ways the user might state their name and prompts the user to confirm or try again. If the user confirms by choosing YES, the response chatbot returns the `FirstName` and `LastName` values to the guidance as slot values in a fulfilled response.
 
-   The solution stores the returned `FirstName` and `LastName` values in a session attribute. The name of the session attribute is determined by the value you provided for **Response Session Attribute Namespace** (in this case `name_of_user`) and the slot name(s) returned by the response chatbot (in this case `FirstName` and `LastName`).
+   The guidance stores the returned `FirstName` and `LastName` values in a session attribute. The name of the session attribute is determined by the value you provided for **Response Session Attribute Namespace** (in this case `name_of_user`) and the slot name(s) returned by the response chatbot (in this case `FirstName` and `LastName`).
 
    The session attribute set by Elicit Response can be used in other items to provide conditional or personalized responses.
 
@@ -60,7 +60,7 @@ Use the following procedure to configure the chatbot to ask questions.
 ## Response bots
 <a name="response-bots"></a>
 
-The solution provides a set of built-in response bots that you can use out of the box:
+The guidance provides a set of built-in response bots that you can use out of the box:
 +  **QNAYesNo -** Returns slot `Yes_No` with value either `Yes` or `No`
 +  **QNAYesNoExit -** Returns slot `Yes_No_Exit` with value either `Yes`, `No`, or `Exit`
 +  **QNADate -** Returns slot `Date` with value of date (`YYYY-MM-DD`)
@@ -74,12 +74,12 @@ The solution provides a set of built-in response bots that you can use out of th
 +  **QNAName -** Returns slots `FirstName` and `LastName`
 +  **QNAFreeText -** Returns slots `FreeText` and `Sentiment`
 
-You can also add your own Amazon Lex bots and use them as response bots. Response chatbot names must start with the letters `QNA`. The solution calls your chatbot with the user’s response, and captures all the slot names and values returned when your chatbot sends back a fulfilled message.
+You can also add your own Amazon Lex bots and use them as response bots. Response chatbot names must start with the letters `QNA`. The guidance calls your chatbot with the user’s response, and captures all the slot names and values returned when your chatbot sends back a fulfilled message.
 
 ## Advancing and branching through a series of questions
 <a name="advancing-and-branching-through-a-series-of-questions"></a>
 
-The following example configures the solution to automatically ask your age after you provide your name.
+The following example configures the guidance to automatically ask your age after you provide your name.
 
 1. Sign in to the content designer and edit item `ElicitResponse.00.1`
 
@@ -93,7 +93,7 @@ The following example configures the solution to automatically ask your age afte
    + Enter and confirm your name.
    + Enter and confirm your age.
 
-The solution automatically asks you for your age after you confirm your name. Because you specified the next question, `ask my age`, as the chaining rule, the solution automatically found and advanced to the matching item.
+The guidance automatically asks you for your age after you confirm your name. Because you specified the next question, `ask my age`, as the chaining rule, the guidance automatically found and advanced to the matching item.
 
 Next, create a *conditional* chaining rule that will branch to different items depending on previous answers.
 
@@ -111,7 +111,7 @@ Next, create a *conditional* chaining rule that will branch to different items d
    + Enter and confirm your name.
    + Enter and confirm your age.
 
-When you confirm your age, the solution automatically branches to one of the two new items you added, depending on your age. The chaining rule is a JavaScript programming expression used to test the value of the session attribute set by elicit response; if it is less than 18 then advance to the item matching the question `"Under 18"`, otherwise advance to the item matching the question `"Over 18"`.
+When you confirm your age, the guidance automatically branches to one of the two new items you added, depending on your age. The chaining rule is a JavaScript programming expression used to test the value of the session attribute set by elicit response; if it is less than 18 then advance to the item matching the question `"Under 18"`, otherwise advance to the item matching the question `"Over 18"`.
 
 Combine expressions with logical operators to test multiple session attributes in a single rule, and use nested expressions to implement more than two branches in a chaining rule. Use the alternate syntax `SessionAttributes('age_of_user.Age')` to avoid a processing error if the referenced session attribute does not exist.
 
@@ -122,4 +122,4 @@ Identify the next document using its QID value instead of a question using a str
 You can optionally specify an AWS Lambda function instead of a JavaScript expression when you need to evaluate complex chaining rule logic. Your Lambda function is invoked with the full user request context and should evaluate and return the next question as a simple string. Alternatively, the Lambda function may return an event object where the `event.req.question` key was updated to specify the next question - by returning an event object, your `chaining rule` Lambda function can modify session attributes, similar to Lambda hooks. Use Lambda functions to implement chaining rules that require complex logic and data lookup. A `chaining rule` Lambda function name must start with the letters "QNA", and is specified in the **Document Chaining:Chaining Rule** field as `Lambda::FunctionNameOrARN`.
 
 **Note**
-If the chaining rule has an error, the solution will return the message, ` "Unfortunately I encountered an error when searching for your answer. Please ask me again later." `
+If the chaining rule has an error, the guidance returns the message, ` "Unfortunately I encountered an error when searching for your answer. Please ask me again later." `

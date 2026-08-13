@@ -126,7 +126,7 @@ Previous:
       ObjectLockEnabled: false
 ```
 
-To see all of the properties available for the resource type, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-s3-bucket.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-s3-bucket.html).
+To see all of the properties available for the resource type, see [AWS::S3::Bucket](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-s3-bucket.html).
 
 ### Guard rules for resource changes
 <a name="guard-hooks-rules-resource-changes"></a>

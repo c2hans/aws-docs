@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[SessionTimeoutInSeconds](#cfn-bedrockagentcore-gateway-sessionconfiguration-sessiontimeoutinseconds)" : {{Integer}}
+  "[SessionTimeoutInSeconds](#cfn-bedrockagentcore-gateway-sessionconfiguration-sessiontimeoutinseconds)" : {{Number}}
 }
 ```
 
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-bedrockagentcore-gateway-sessionconfiguration-syntax.yaml"></a>
 
 ```
-  [SessionTimeoutInSeconds](#cfn-bedrockagentcore-gateway-sessionconfiguration-sessiontimeoutinseconds): {{Integer}}
+  [SessionTimeoutInSeconds](#cfn-bedrockagentcore-gateway-sessionconfiguration-sessiontimeoutinseconds): {{Number}}
 ```
 
 ## Properties
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 `SessionTimeoutInSeconds`  <a name="cfn-bedrockagentcore-gateway-sessionconfiguration-sessiontimeoutinseconds"></a>
 The session timeout in seconds. After this timeout, the session expires and subsequent requests to this session will receive an error. The minimum value is 900 seconds (15 minutes), the maximum value is 28800 seconds (8 hours), and the default value is 3600 seconds (1 hour).
 *Required*: No
-*Type*: Integer
+*Type*: Number
 *Minimum*: `900`
 *Maximum*: `28800`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

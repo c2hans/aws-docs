@@ -123,7 +123,7 @@ Use the following instructions to create a model-as-a-judge evaluation job with 
 ------
 #### [ AWS CLI ]
 
-The following examples show how to make a `create-evaluation-job` request using the AWS CLI for a job that includes a custom metric. Ensure that `applicationType` is specified as `ModelEvaluation`.
+The following examples show how to make a `create-evaluation-job` request using the AWS CLI for a job that includes a custom metric. Make sure that `applicationType` is specified as `ModelEvaluation`.
 
 You can either evaluate the performance of models in Amazon Bedrock, or you can evaluate other models by providing your own inference response data as part of the prompt dataset. To learn more about how to create a prompt dataset using your own inference responses, see [Create a prompt dataset for a model evaluation job that uses a model as judge](model-evaluation-prompt-datasets-judge.md).
 

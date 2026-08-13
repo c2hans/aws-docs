@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-imag
 <a name="vmimport-image-import"></a>
 
 **Tip**
-To import your virtual machines (VMs) with a console-based experience, you can use the *Import virtual machine images to AWS* template in the [Migration Hub Orchestrator console](https://console.aws.amazon.com/migrationhub/orchestrator). For more information, see the [https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/import-vm-images.html](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/import-vm-images.html).
+To import your virtual machines (VMs) with a console-based experience, you can use the *Import virtual machine images to AWS* template in the [Migration Hub Orchestrator console](https://console.aws.amazon.com/migrationhub/orchestrator). For more information, see the [*AWS Migration Hub Orchestrator User Guide*](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/import-vm-images.html).
 
 You can use VM Import/Export to import virtual machine (VM) images from your virtualization environment to Amazon EC2 as Amazon Machine Images (AMI), which you can use to launch instances. Subsequently, you can export the VM images from an instance back to your virtualization environment. This enables you to leverage your investments in the VMs that you have built to meet your IT security, configuration management, and compliance requirements by bringing them into Amazon EC2.
 

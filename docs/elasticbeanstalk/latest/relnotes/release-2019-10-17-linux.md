@@ -12,21 +12,38 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 ## Changes
 <a name="release-2019-10-17-linux.changes"></a>
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **October 9, 2019** to all Linux-based platforms.<br />The **nginx** release includes security fixes. For more information, see **Cross-platform updates** in this table.<br />The **Ruby** release includes security fixes. For more information, see **Platform-specific updates** in this table. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-10-17-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-10-17-linux.html) |
-| **nginx** | Updated platforms supporting the nginx server to [version 1.16.1](https://nginx.org/en/CHANGES-1.16).<br />This version includes security fixes. |
-| **Multicontainer Docker** | Updated the ECS agent to version 1.32.0. |
-| **Go** | Updated to Go release 1.13.1. For details, see [go1.13](https://golang.org/doc/devel/release.html#go1.13) in *The Go Programming Language Release History*. |
-| **Node.js** | Updated the Node.js platform to add support for Node version [8.16.2](https://nodejs.org/en/blog/release/v8.16.2/). |
-| **PHP** | Added support for PHP 7.3. For migration information, see [Migrating from PHP 7.2.x to PHP 7.3.x](https://www.php.net/manual/en/migration73.php) in the *PHP Manual*. PHP 7.3 is released side-by-side with PHP 7.2, which is still supported. Some PECL packages for PHP 7.3 aren't available in the Amazon Linux repository. Therefore, they aren't included in our platform. If your application depends on them, you'll need to add commands to install them.  |
-| **Ruby** | Released new Ruby 2.6, 2.5, and 2.4 versions: [2.6.5](https://www.ruby-lang.org/en/news/2019/10/01/ruby-2-6-5-released/), [2.5.7](https://www.ruby-lang.org/en/news/2019/10/01/ruby-2-5-7-released/), and [2.4.9](https://www.ruby-lang.org/en/news/2019/10/02/ruby-2-4-9-released/), respectively.<br />These versions include security fixes. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>October 9, 2019</b> to all Linux-based platforms.<br />The <b>nginx</b> release includes security fixes. For more information, see <b>Cross-platform updates</b> in this table.<br />The <b>Ruby</b> release includes security fixes. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>nginx</b></td><td>Updated platforms supporting the nginx server to <a href="https://nginx.org/en/CHANGES-1.16">version 1.16.1</a>.<br />This version includes security fixes.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Multicontainer Docker</b></td><td>Updated the ECS agent to version 1.32.0.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated to Go release 1.13.1. For details, see <a href="https://golang.org/doc/devel/release.html#go1.13">go1.13</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform to add support for Node version <a href="https://nodejs.org/en/blog/release/v8.16.2/">8.16.2</a>.</td></tr>
+  <tr><td><b>PHP</b></td><td>Added support for PHP 7.3. For migration information, see <a href="https://www.php.net/manual/en/migration73.php">Migrating from PHP 7.2.x to PHP 7.3.x</a> in the <i>PHP Manual</i>. PHP 7.3 is released side-by-side with PHP 7.2, which is still supported. Some PECL packages for PHP 7.3 aren't available in the Amazon Linux repository. Therefore, they aren't included in our platform. If your application depends on them, you'll need to add commands to install them. </td></tr>
+  <tr><td><b>Ruby</b></td><td>Released new Ruby 2.6, 2.5, and 2.4 versions: <a href="https://www.ruby-lang.org/en/news/2019/10/01/ruby-2-6-5-released/">2.6.5</a>, <a href="https://www.ruby-lang.org/en/news/2019/10/01/ruby-2-5-7-released/">2.5.7</a>, and <a href="https://www.ruby-lang.org/en/news/2019/10/02/ruby-2-4-9-released/">2.4.9</a>, respectively.<br />These versions include security fixes.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2019-10-17-linux.platforms"></a>

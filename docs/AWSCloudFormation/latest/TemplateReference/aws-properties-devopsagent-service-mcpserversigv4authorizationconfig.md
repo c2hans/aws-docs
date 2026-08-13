@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DevOpsAgent::Service MCPServerSigV4AuthorizationConfig
 <a name="aws-properties-devopsagent-service-mcpserversigv4authorizationconfig"></a>
 
-<a name="aws-properties-devopsagent-service-mcpserversigv4authorizationconfig-description"></a>The `MCPServerSigV4AuthorizationConfig` property type specifies Property description not available. for an [AWS::DevOpsAgent::Service](aws-resource-devopsagent-service.md).
+The SigV4 authorization configuration for an MCP server.
 
 ## Syntax
 <a name="aws-properties-devopsagent-service-mcpserversigv4authorizationconfig-syntax"></a>
@@ -43,35 +43,36 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-service-mcpserversigv4authorizationconfig-properties"></a>
 
 `CustomHeaders`  <a name="cfn-devopsagent-service-mcpserversigv4authorizationconfig-customheaders"></a>
-Property description not available.
+Custom headers to include in requests to the SigV4-authenticated MCP server.
 *Required*: No
 *Type*: Object of String
 *Pattern*: `^[a-zA-Z0-9-_]+$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `McpRoleArn`  <a name="cfn-devopsagent-service-mcpserversigv4authorizationconfig-mcprolearn"></a>
-Property description not available.
+The ARN of the IAM role to assume for SigV4 signing. If omitted, the service resolves credentials at runtime through a monitor account association.
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:aws:iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Region`  <a name="cfn-devopsagent-service-mcpserversigv4authorizationconfig-region"></a>
-Property description not available.
+The AWS Region used for SigV4 signing, or `*` for SigV4a multi-Region signing.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^(\*|[a-z]{2,4}(-[a-z]+)+-\d+)$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RoleArn`  <a name="cfn-devopsagent-service-mcpserversigv4authorizationconfig-rolearn"></a>
-Property description not available.
+The ARN of the IAM role to assume for SigV4 signing.
+This property is deprecated. Use `McpRoleArn` instead.
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:aws:iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Service`  <a name="cfn-devopsagent-service-mcpserversigv4authorizationconfig-service"></a>
-Property description not available.
+The AWS service name used for SigV4 signing.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`

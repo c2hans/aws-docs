@@ -9,7 +9,7 @@ A suppression rule is a set of criteria that includes using filter attributes an
 
 You can visualize, create, and manage suppression rules by using the **Suppression rules** page in the GuardDuty console. Suppression rules can also be generated from your existing saved filters. For more information about creating filters, see [Filtering findings in GuardDuty](guardduty_filter-findings.md).
 
- The filter criteria can include an exact match using **Equals** and **NotEquals** operators, a **wildcard match** using the **Matches** and **NotMatches** operators or **comparison match** using **GreaterThan**, **GreaterThanEquals**, **LessThan** and **LessThanEquals** operators. More information on the available operators can be found in the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Condition.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Condition.html) page.
+ The filter criteria can include an exact match using **Equals** and **NotEquals** operators, a **wildcard match** using the **Matches** and **NotMatches** operators or **comparison match** using **GreaterThan**, **GreaterThanEquals**, **LessThan** and **LessThanEquals** operators. More information on the available operators can be found in the [Conditions](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Condition.html) page.
 
 Choose your preferred access method to create a suppression rule for GuardDuty finding types.
 
@@ -61,7 +61,7 @@ You can also create a suppression rule from an existing saved filter. For more i
 
 **To create a suppression rule using API:**
 
-1. You can create suppression rules through the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateFilter.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateFilter.html) API. To do so, specify the filter criteria in a JSON file following the format of the example detailed below. The below example will suppress any unarchived low-severity findings that has a DNS request to the `test.example.com` domain. For medium severity findings, the input list will be `["4", "5", "7"]`. For high severity findings, the input list will be `["6", "7", "8"]`. For critical severity findings, the input list will be `["9", "10"]`. You can also filter on the basis of any one value in the list.
+1. You can create suppression rules through the [CreateFilter](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateFilter.html) API. To do so, specify the filter criteria in a JSON file following the format of the example detailed below. The below example will suppress any unarchived low-severity findings that has a DNS request to the `test.example.com` domain. For medium severity findings, the input list will be `["4", "5", "7"]`. For high severity findings, the input list will be `["6", "7", "8"]`. For critical severity findings, the input list will be `["9", "10"]`. You can also filter on the basis of any one value in the list.
 
    The following example adds a filter for low severity findings for lambda functions with function name prefix "MyFunc" and function tag with prefix not as "TestTag"
 
@@ -105,9 +105,9 @@ You can also create a suppression rule from an existing saved filter. For more i
 
    For a list of JSON field names and their console equivalent see [Property filters in GuardDuty](guardduty_filter-findings.md#filter_criteria).
 
-   To test your filter criteria, use the same JSON criterion in the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFindings.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFindings.html) API, and confirm that the correct findings have been selected. To test your filter criteria using AWS CLI follow the example using your own detectorId and .json file.
+   To test your filter criteria, use the same JSON criterion in the [ListFindings](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFindings.html) API, and confirm that the correct findings have been selected. To test your filter criteria using AWS CLI follow the example using your own detectorId and .json file.
 
-   To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+   To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
    ```
    aws guardduty list-detector
@@ -122,9 +122,9 @@ You can also create a suppression rule from an existing saved filter. For more i
 **Note**
  Wildcards matching are not available for ListFindings and GetFindingsStatistics. Criteria containing wildcards cannot be validated using ListFindings and GetFindingsStatistics.
 
-1. Upload your filter to be used as suppression rule with the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateFilter.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateFilter.html) API or by using the AWS CLI following the example below with your own detector ID, a name for the suppression rule, and .json file.
+1. Upload your filter to be used as suppression rule with the [CreateFilter](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateFilter.html) API or by using the AWS CLI following the example below with your own detector ID, a name for the suppression rule, and .json file.
 
-   To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+   To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
    ```
    aws guardduty create-filter \
@@ -135,6 +135,6 @@ You can also create a suppression rule from an existing saved filter. For more i
    --finding-criteria file://{{criteria.json}}
    ```
 
-You can view a list of your filters programmatically with the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFilter.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFilter.html) API. You can view the details of an individual filter by supplying the filter name to the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetFilter.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetFilter.html) API. Update filters using [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateFilter.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateFilter.html) or delete them with the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteFilter.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteFilter.html) API.
+You can view a list of your filters programmatically with the [ListFilter](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFilter.html) API. You can view the details of an individual filter by supplying the filter name to the [GetFilter](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetFilter.html) API. Update filters using [UpdateFilter](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateFilter.html) or delete them with the [DeleteFilter](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteFilter.html) API.
 
 ------

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/sop-audio-qa.h
 
 **Important**
 The topics and content in this section are for IT administrators who have experience with investigating network and telephony issues.
-You also need to be familiar with how to access data in an Connect Customer contact record.
+You also need to be familiar with how to access data in a Connect Customer contact record.
 
 ## Where to find QualityMetrics
 <a name="find-qualitymetrics"></a>

@@ -21,9 +21,9 @@ Publication date: **November 9, 2022** ([Document revisions](document-revisions.
 ## Are you Well-Architected?
 <a name="are-you-well-architected"></a>
 
- The [https://aws.amazon.com/architecture/well-architected/](https://aws.amazon.com/architecture/well-architected/) helps you understand the pros and cons of the decisions you make when building systems in the cloud. The six pillars of the Framework allow you to learn architectural best practices for designing and operating reliable, secure, efficient, cost-effective, and sustainable systems. Using the [https://aws.amazon.com/well-architected-tool/](https://aws.amazon.com/well-architected-tool/), available at no charge in the [https://console.aws.amazon.com/wellarchitected](https://console.aws.amazon.com/wellarchitected), you can review your workloads against these best practices by answering a set of questions for each pillar.
+ The [*AWS Well-Architected Framework*](https://aws.amazon.com/architecture/well-architected/) helps you understand the pros and cons of the decisions you make when building systems in the cloud. The six pillars of the Framework allow you to learn architectural best practices for designing and operating reliable, secure, efficient, cost-effective, and sustainable systems. Using the [*AWS Well-Architected Tool*](https://aws.amazon.com/well-architected-tool/), available at no charge in the [*AWS Management Console*](https://console.aws.amazon.com/wellarchitected), you can review your workloads against these best practices by answering a set of questions for each pillar.
 
- For more expert guidance and best practices for your cloud architecture—reference architecture deployments, diagrams, and whitepapers—refer to the [https://aws.amazon.com/architecture/](https://aws.amazon.com/architecture/).
+ For more expert guidance and best practices for your cloud architecture—reference architecture deployments, diagrams, and whitepapers—refer to the [*AWS Architecture Center*](https://aws.amazon.com/architecture/).
 
 ## Introduction
 <a name="introduction"></a>

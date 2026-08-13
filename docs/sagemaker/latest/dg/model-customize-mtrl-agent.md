@@ -128,7 +128,7 @@ Then attach the **AmazonSageMakerJobRuntimeAccess** managed policy to this role.
 ### Write or update your agent code
 <a name="model-customize-mtrl-agent-agentcore-code"></a>
 
-Your agent must use the [https://github.com/aws/sagemaker-python-sdk/tree/master/sagemaker-train](https://github.com/aws/sagemaker-python-sdk/tree/master/sagemaker-train) SDK and apply the `@sagemaker_rft_handler` decorator to your agent's entry point function. This decorator sets up the HTTP server that AgentCore invokes during training, listening for incoming rollout requests and routing prompts to your entrypoint function.
+Your agent must use the [`sagemaker-train`](https://github.com/aws/sagemaker-python-sdk/tree/master/sagemaker-train) SDK and apply the `@sagemaker_rft_handler` decorator to your agent's entry point function. This decorator sets up the HTTP server that AgentCore invokes during training, listening for incoming rollout requests and routing prompts to your entrypoint function.
 
 **Install the SDK**
 

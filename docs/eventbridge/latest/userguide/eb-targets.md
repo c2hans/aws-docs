@@ -58,23 +58,23 @@ You can configure the following target types for rules in the EventBridge consol
 Some targets don't send the information in the event payload to the target, instead, they treat the event as a trigger for invoking a specific API. EventBridge uses the [Target](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Target.html) parameters to determine what happens with that target. These include the following:
 + API destinations
 
-  The data sent to an API destination must match the structure of the API. Use the [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_InputTransformer.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_InputTransformer.html) object to make sure the data is structured correctly. If you want to include the original event payload, reference it in the [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_InputTransformer.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_InputTransformer.html).
+  The data sent to an API destination must match the structure of the API. Use the [`InputTransformer`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_InputTransformer.html) object to make sure the data is structured correctly. If you want to include the original event payload, reference it in the [`InputTransformer`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_InputTransformer.html).
 + API Gateway
 
-  The data sent to API Gateway must match the structure of the API. Use the [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_InputTransformer.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_InputTransformer.html) object to make sure the data is structured correctly. If you want to include the original event payload, reference it in the [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_InputTransformer.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_InputTransformer.html).
+  The data sent to API Gateway must match the structure of the API. Use the [`InputTransformer`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_InputTransformer.html) object to make sure the data is structured correctly. If you want to include the original event payload, reference it in the [`InputTransformer`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_InputTransformer.html).
 + Amazon EC2 Image Builder
 + Amazon Redshift Data API clusters
 
-  Use [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_RedshiftDataParameters.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_RedshiftDataParameters.html).
+  Use [`RedshiftDataParameters`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_RedshiftDataParameters.html).
 + Amazon SageMaker Runtime Model Building Pipelines
 
-  Use [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_SageMakerPipelineParameters.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_SageMakerPipelineParameters.html).
+  Use [`SageMakerPipelineParameters`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_SageMakerPipelineParameters.html).
 + Amazon SQS fair and FIFO queues
 
-  Use [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_SqsParameters.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_SqsParameters.html) to specify the message group to use as the target.
+  Use [`SqsParameters`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_SqsParameters.html) to specify the message group to use as the target.
 + Systems Manager Run Command
 
-  Use [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_RunCommandParameters.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_RunCommandParameters.html) to specify the SSM document and target instances. For more information, see [Systems Manager Run Command as a target](#targets-specifics-ssm-run-command).
+  Use [`RunCommandParameters`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_RunCommandParameters.html) to specify the SSM document and target instances. For more information, see [Systems Manager Run Command as a target](#targets-specifics-ssm-run-command).
 
 **Note**
 EventBridge does not support all JSON Path syntax and evaluate it at runtime. Supported syntax includes:
@@ -111,16 +111,16 @@ Dynamic path parameters cannot reference new or transformed values from input tr
 <a name="supported-parameters"></a>
 
 You can use dynamic syntax on all string, non-enum fields of these parameters:
-+ [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_EcsParameters.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_EcsParameters.html)
-+ [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_HttpParameters.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_HttpParameters.html) (except `HeaderParameters` keys)
-+ [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_RedshiftDataParameters.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_RedshiftDataParameters.html)
-+ [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_SageMakerPipelineParameters.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_SageMakerPipelineParameters.html)
-+ [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_SqsParameters.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_SqsParameters.html)
++ [`EcsParameters`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_EcsParameters.html)
++ [`HttpParameters`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_HttpParameters.html) (except `HeaderParameters` keys)
++ [`RedshiftDataParameters`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_RedshiftDataParameters.html)
++ [`SageMakerPipelineParameters`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_SageMakerPipelineParameters.html)
++ [`SqsParameters`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_SqsParameters.html)
 
 ## Permissions
 <a name="targets-permissions"></a>
 
-To make API calls on the resources that you own, EventBridge needs appropriate permissions. Specify an IAM execution role [using the EventBridge console](eb-create-rule-wizard.md#eb-create-rule-target), or by setting the `RoleARN` parameter in [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutTargets.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutTargets.html).
+To make API calls on the resources that you own, EventBridge needs appropriate permissions. Specify an IAM execution role [using the EventBridge console](eb-create-rule-wizard.md#eb-create-rule-target), or by setting the `RoleARN` parameter in [`PutTargets`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutTargets.html).
 
 For example, the following policy defines permission to send messages to an Amazon SQS queue:
 
@@ -242,12 +242,12 @@ If the matched event came from CloudWatch Alarms, the alarm state change details
 ## Systems Manager Run Command as a target
 <a name="targets-specifics-ssm-run-command"></a>
 
-When you specify Systems Manager Run Command as a target, EventBridge calls the [https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_SendCommand.html](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_SendCommand.html) API on your behalf. Configure the target using [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_RunCommandParameters.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_RunCommandParameters.html), which specifies the SSM document to run and the target instances or tags.
+When you specify Systems Manager Run Command as a target, EventBridge calls the [`SendCommand`](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_SendCommand.html) API on your behalf. Configure the target using [`RunCommandParameters`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_RunCommandParameters.html), which specifies the SSM document to run and the target instances or tags.
 
 `RunCommandParameters` contains the following fields:
 + `RunCommandTargets` — (Required) A list of key-value pairs that specify the target instances. Use `Key` set to `InstanceIds` with a list of instance IDs, or `Key` set to `tag:{{tag-name}}` with tag values to target instances by tag. You can specify between 1 and 5 run command targets.
 
-To specify which SSM document to run and pass parameters to it, use the `Input` field on the [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Target.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Target.html) object. The `Input` value must be a JSON object with the following structure:
+To specify which SSM document to run and pass parameters to it, use the `Input` field on the [`Target`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Target.html) object. The `Input` value must be a JSON object with the following structure:
 
 ```
 {
@@ -282,7 +282,7 @@ aws events put-targets --rule "my-rule" --targets '[{
 ```
 
 **Note**
-The `Input` field on the `Target` object is used to pass the document name and parameters to Systems Manager Run Command. This is different from the [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_InputTransformer.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_InputTransformer.html), which transforms the event payload. When using Systems Manager Run Command as a target, set the document parameters in `Input` and specify the target instances in `RunCommandParameters`.
+The `Input` field on the `Target` object is used to pass the document name and parameters to Systems Manager Run Command. This is different from the [`InputTransformer`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_InputTransformer.html), which transforms the event payload. When using Systems Manager Run Command as a target, set the document parameters in `Input` and specify the target instances in `RunCommandParameters`.
 
 ## Amazon SQS queues as targets
 <a name="targets-specifics-sqs"></a>

@@ -148,11 +148,10 @@ Your user or role must have the permissions granted that contains the **AmazonS3
 
 1. Reconnect to the instance after it reboots.
 
-1. Download and install the AMD driver package for Ubuntu 24.04.
+1. Download the latest AMD driver package for Ubuntu 24.04 from [Linux® Drivers for AMD Radeon™ Graphics](https://www.amd.com/en/support/download/linux-drivers.html) on the AMD website. In the following command, replace {{version}} with the version string from the downloaded filename (for example, `31.30.313000-1_all`).
 
    ```
-   $ wget https://repo.radeon.com/amdgpu-install/31.30/ubuntu/noble/amdgpu-install_31.30.313000-1_all.deb
-   $ sudo apt install -y ./amdgpu-install_31.30.313000-1_all.deb
+   $ sudo apt install -y ./amdgpu-install_{{version}}.deb
    ```
 
 1. Install the AMD GPU driver for Ubuntu.

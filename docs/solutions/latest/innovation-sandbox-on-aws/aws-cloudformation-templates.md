@@ -10,24 +10,24 @@ This solution uses AWS CloudFormation to automate the deployment of Innovation S
 ## AccountPool stack
 <a name="account-pool-stack"></a>
 
- [https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-AccountPool.template](https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-AccountPool.template)
+ [![View Template](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-AccountPool.template)
 
  **InnovationSandbox-AccountPool.template** - Use this template to deploy the resources required to set up Organizational Units (OUs), Service Control Policies (SCPs), roles, and Regions.
 
 ## IDC stack
 <a name="idc-stack"></a>
 
- [https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-IDC.template](https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-IDC.template) **InnovationSandbox-IDC.template** - Use this template to deploy the resources required to set up IDC, including mappings, roles, policies, and other configuration.
+ [![View Template](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-IDC.template) **InnovationSandbox-IDC.template** - Use this template to deploy the resources required to set up IDC, including mappings, roles, policies, and other configuration.
 
 ## Data stack
 <a name="data-stack"></a>
 
- [https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-Data.template](https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-Data.template) **InnovationSandbox-Data.template** - Use this template to deploy the data resources required for the application. This stack also contains the AWS AppConfig hosted configurations for the solution’s global configurations and Nuke configurations.
+ [![View Template](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-Data.template) **InnovationSandbox-Data.template** - Use this template to deploy the data resources required for the application. This stack also contains the AWS AppConfig hosted configurations for the solution’s global configurations and Nuke configurations.
 
 ## Compute stack
 <a name="compute-stack"></a>
 
- [https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-Compute.template](https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-Compute.template) **InnovationSandbox-Compute.template** - Use this template to deploy the compute resources required for the ISB application. This stack contains all of the stateless (compute) resources used by the solution, including the web application and the event infrastructure.
+ [![View Template](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-Compute.template) **InnovationSandbox-Compute.template** - Use this template to deploy the compute resources required for the ISB application. This stack contains all of the stateless (compute) resources used by the solution, including the web application and the event infrastructure.
 
 **Important**
 The **SandboxAccount** stack is automatically configured as a service-managed StackSet resource in the **AccountPool** stack using the **AccountPool OU** as deployment target. The stack contains a single **Spoke** role that is assumed into by compute resources in the compute stack to run the account clean-up job.

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/bulk-provision
 # Bulk registration
 <a name="bulk-provisioning"></a>
 
-You can use the [https://docs.aws.amazon.com/iot/latest/apireference/API_StartThingRegistrationTask.html](https://docs.aws.amazon.com/iot/latest/apireference/API_StartThingRegistrationTask.html) command to register things in bulk. This command takes a provisioning template, an S3 bucket name, a key name, and a role ARN that allows access to the file in the S3 bucket. The file in the S3 bucket contains the values used to replace the parameters in the template. The file must be a newline-delimited JSON file. Each line contains all of the parameter values for registering a single device. For example:
+You can use the [`start-thing-registration-task`](https://docs.aws.amazon.com/iot/latest/apireference/API_StartThingRegistrationTask.html) command to register things in bulk. This command takes a provisioning template, an S3 bucket name, a key name, and a role ARN that allows access to the file in the S3 bucket. The file in the S3 bucket contains the values used to replace the parameters in the template. The file must be a newline-delimited JSON file. Each line contains all of the parameter values for registering a single device. For example:
 
 ```
 {"ThingName": "foo", "SerialNumber": "123", "CSR": "csr1"}

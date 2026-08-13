@@ -108,7 +108,7 @@ Example IAM policy:
 
 Follow these steps to configure the automation:
 
-1. Navigate to [https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootS3AccessSameAccount/description](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootS3AccessSameAccount/description) in Systems Manager under Documents.
+1. Navigate to [`AWSSupport-TroubleshootS3AccessSameAccount`](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootS3AccessSameAccount/description) in Systems Manager under Documents.
 
 1. Select Execute automation.
 

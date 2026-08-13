@@ -21,8 +21,8 @@ As your first step, you should design the cluster. For guidelines, see [Designin
 You might need to install the AWS Elemental software on the Conductor Live nodes.
 + If you have obtained AWS Elemental appliances, you don't need to install software. The appliances are delivered with software already installed.
 + If you have obtained qualified hardware, you must install the software. See the appropriate guide:
-  + [https://docs.aws.amazon.com/elemental-cl3/latest/installguide](https://docs.aws.amazon.com/elemental-cl3/latest/installguide). Keep in mind that Elemental Statmux is installed as part of Conductor Live.
-  + [https://docs.aws.amazon.com/elemental-live/latest/installguide](https://docs.aws.amazon.com/elemental-live/latest/installguide)
+  + [*AWS Elemental Conductor Live Install Guide*](https://docs.aws.amazon.com/elemental-cl3/latest/installguide). Keep in mind that Elemental Statmux is installed as part of Conductor Live.
+  + [*AWS Elemental Live Install Guide*](https://docs.aws.amazon.com/elemental-live/latest/installguide)
 
 **Note**
 Make sure that both Conductor Live nodes have the same software version installed.
@@ -56,7 +56,7 @@ The nodes get added to the cluster, but they don't yet belong to any redundancy 
 **Step 6: Configure redundancy groups in the cluster**
 
 We recommend that you set up the cluster with Conductor redundancy (a primary and a secondary Conductor Live node), and with worker node redundancy.
-+ Design a redundancy plan. For information, see [https://docs.aws.amazon.com/elemental-cl3/latest/ug](https://docs.aws.amazon.com/elemental-cl3/latest/ug)
++ Design a redundancy plan. For information, see [*AWS Elemental Conductor Live User Guide*](https://docs.aws.amazon.com/elemental-cl3/latest/ug)
 + [Create the redundancy groups](conductor-live-config-redundancy.md) that you identified.
 + [Add the worker nodes](conductor-live-config-wrkr-red.md) to each worker redundancy group.
 + [Add the primary and secondary Conductor Live nodes](conductor-live-config-redundancy-cl.md) to the Conductor redundancy group.

@@ -93,7 +93,7 @@ Would remove 0 large objects from database "docs-lab-spatial-db".
 
 As the output shows, orphaned large objects aren't a problem for this particular database.
 
-For more information about this utility, see [https://www.postgresql.org/docs/current/vacuumlo.html](https://www.postgresql.org/docs/current/vacuumlo.html) in the PostgreSQL documentation.
+For more information about this utility, see [`vacuumlo`](https://www.postgresql.org/docs/current/vacuumlo.html) in the PostgreSQL documentation.
 
 ## Understanding how `vacuumlo` works
 <a name="PostgreSQL_large_objects_lo_extension.vacuumlo-remove"></a>

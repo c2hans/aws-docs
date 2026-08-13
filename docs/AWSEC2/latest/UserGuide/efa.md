@@ -24,6 +24,7 @@ EFA supports RDMA (Remote Direct Memory Access) write on most supported instance
 + [Get started with EFA and NCCL](efa-start-nccl.md)
 + [Get started with EFA and NIXL](efa-start-nixl.md)
 + [Maximize network bandwidth](efa-acc-inst-types.md)
++ [Install EFA in container](efa-installer-containers.md)
 + [Create and attach an EFA](create-efa.md)
 + [Detach and delete an EFA](detach-efa.md)
 + [Monitor an EFA](efa-working-monitor.md)

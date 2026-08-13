@@ -8,10 +8,10 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/http.html
 The AWS SDK for Rust provides built-in HTTP functionality that is used by the AWS service clients that you create in your code.
 
 By default, the SDK for Rust uses an HTTPS client based on `hyper`, `rustls`, and `aws-lc-rs`. This client should work well for most use cases without additional configuration.
-+ [https://docs.rs/hyper/latest/hyper/](https://docs.rs/hyper/latest/hyper/) is a lower-level HTTP library for Rust that can be used with the AWS SDK for Rust to make API service calls.
-+ [https://github.com/rustls/rustls](https://github.com/rustls/rustls) is a modern TLS library written in Rust that has built-in options for cryptographic providers.
-+ [https://github.com/aws/aws-lc](https://github.com/aws/aws-lc) is a general-purpose cryptographic library containing algorithms needed for TLS and common applications.
-+ [https://github.com/aws/aws-lc-rs](https://github.com/aws/aws-lc-rs) is an idiomatic wrapper around the `aws-lc` library in Rust.
++ [`hyper`](https://docs.rs/hyper/latest/hyper/) is a lower-level HTTP library for Rust that can be used with the AWS SDK for Rust to make API service calls.
++ [`rustls`](https://github.com/rustls/rustls) is a modern TLS library written in Rust that has built-in options for cryptographic providers.
++ [`aws-lc`](https://github.com/aws/aws-lc) is a general-purpose cryptographic library containing algorithms needed for TLS and common applications.
++ [`aws-lc-rs`](https://github.com/aws/aws-lc-rs) is an idiomatic wrapper around the `aws-lc` library in Rust.
 
 The `aws-smithy-http-client` crate provides some additional options and configuration if you want to choose a different TLS or cryptographic provider. For more advanced use cases you are encouraged to bring your own HTTP client implementation or file a feature request for consideration.
 
@@ -23,17 +23,17 @@ The `aws-smithy-http-client` crate provides a few alternative TLS providers.
 The following providers are available:
 
 **`rustls` with `aws-lc`**
-A TLS provider based on [https://github.com/rustls/rustls](https://github.com/rustls/rustls) that uses [https://github.com/aws/aws-lc-rs](https://github.com/aws/aws-lc-rs) for cryptography.
+A TLS provider based on [`rustls`](https://github.com/rustls/rustls) that uses [`aws-lc-rs`](https://github.com/aws/aws-lc-rs) for cryptography.
 This is the default HTTP behavior for the SDK for Rust. If you want to use this option you don't need to take any additional action in your code.
 
 **`s2n-tls`**
-A TLS provider based on [https://github.com/aws/s2n-tls](https://github.com/aws/s2n-tls).
+A TLS provider based on [`s2n-tls`](https://github.com/aws/s2n-tls).
 
 **`rustls` with `aws-lc-fips`**
-A TLS provider based on [https://github.com/rustls/rustls](https://github.com/rustls/rustls) that uses a FIPS-compliant version of [https://github.com/aws/aws-lc-rs](https://github.com/aws/aws-lc-rs) for cryptography
+A TLS provider based on [`rustls`](https://github.com/rustls/rustls) that uses a FIPS-compliant version of [`aws-lc-rs`](https://github.com/aws/aws-lc-rs) for cryptography
 
 **`rustls` with `ring`**
-A TLS provider based on [https://github.com/rustls/rustls](https://github.com/rustls/rustls) that uses [https://github.com/briansmith/ring](https://github.com/briansmith/ring) for cryptography.
+A TLS provider based on [`rustls`](https://github.com/rustls/rustls) that uses [`ring`](https://github.com/briansmith/ring) for cryptography.
 
 ### Prerequisites
 <a name="prereqTls"></a>

@@ -38,8 +38,8 @@ Before you migrate, be aware of the differences between the namespaces. The foll
 | Endpoints | https://meetings-chime.region.amazonaws.com | https://service.chime.aws.amazon.com |
 | Service principal | meetings.chime.amazonaws.com | chime.amazonaws.com |
 | APIs | Only APIs for meetings | APIs for meetings and other parts of Amazon Chime |
-| [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateMeeting.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateMeeting.html) | ExternalMeetingId and MediaRegion are required. | ExternalMeetingId and MediaRegion are optional. |
-| [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateMeetingWithAttendees.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateMeetingWithAttendees.html) | ExternalMeetingId and MediaRegion are required.  | ExternalMeetingId and MediaRegion are optional. |
+| [CreateMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateMeeting.html) | ExternalMeetingId and MediaRegion are required. | ExternalMeetingId and MediaRegion are optional. |
+| [CreateMeetingWithAttendees](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateMeetingWithAttendees.html) | ExternalMeetingId and MediaRegion are required.  | ExternalMeetingId and MediaRegion are optional. |
 | ListMeetings | Not available | Available |
 | ExternalMeetingId | Validation includes pattern matching | Available |
 | ExternalUserId | Validation includes pattern matching  | Available |
@@ -101,7 +101,7 @@ The [Amazon Chime SDK Meetings](https://docs.aws.amazon.com/chime-sdk/latest/API
 ### CreateMeeting required fields
 <a name="create-meeting-diffs"></a>
 
-In the Amazon Chime SDK Meetings namespace, the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html) and [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html) APIs require the `ExternalMeetingId` and `MediaRegion` fields to be specified.
+In the Amazon Chime SDK Meetings namespace, the [CreateMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html) and [CreateMeetingWithAttendees](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html) APIs require the `ExternalMeetingId` and `MediaRegion` fields to be specified.
 
 ### External ID values
 <a name="external-id-diffs"></a>

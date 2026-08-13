@@ -14,7 +14,7 @@ AWS Device Farm provides both custom and standard test environments for running 
 ## Standard test environment
 <a name="test-environments-standard"></a>
 
- When you run a test in the standard environment, Device Farm provides detailed logs and reporting for every case in your test suite. You can view performance data, videos, screenshots, and logs for each test to pinpoint and fix issues in your app.
+ When you run a test in the standard environment, Device Farm provides detailed logs and reporting for every case in your test suite. You can view videos, screenshots, and logs for each test to pinpoint and fix issues in your app.
 
 **Note**
 Because Device Farm provides granular reporting in the standard environment, test execution times can be longer than when you run your tests locally. If you want faster execution times, run your tests in a custom test environment.

@@ -119,7 +119,7 @@ Type: String
 Required: No
 
  ** [SessionName](#API_RegisterUser_RequestSyntax) **   <a name="QS-RegisterUser-request-SessionName"></a>
-You need to use this parameter only when you register one or more users using an assumed IAM role. You don't need to provide the session name for other scenarios, for example when you are registering an IAM user or an Amazon Quick Sight user. You can register multiple users using the same IAM role if each user has a different session name. For more information on assuming IAM roles, see [https://docs.aws.amazon.com/cli/latest/reference/sts/assume-role.html](https://docs.aws.amazon.com/cli/latest/reference/sts/assume-role.html) in the * AWS CLI Reference.*
+You need to use this parameter only when you register one or more users using an assumed IAM role. You don't need to provide the session name for other scenarios, for example when you are registering an IAM user or an Amazon Quick Sight user. You can register multiple users using the same IAM role if each user has a different session name. For more information on assuming IAM roles, see [`assume-role`](https://docs.aws.amazon.com/cli/latest/reference/sts/assume-role.html) in the * AWS CLI Reference.*
 Type: String
 Length Constraints: Minimum length of 2. Maximum length of 64.
 Pattern: `[\w+=.@-]*`

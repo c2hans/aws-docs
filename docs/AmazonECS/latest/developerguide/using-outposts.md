@@ -9,7 +9,7 @@ AWS Outposts enables native AWS services, infrastructure, and operating models i
 
 Amazon ECS on AWS Outposts is ideal for low-latency workloads that need to be run in close proximity to on-premises data and applications.
 
-For more information about AWS Outposts, see the [https://docs.aws.amazon.com/outposts/latest/userguide/what-is-outposts.html](https://docs.aws.amazon.com/outposts/latest/userguide/what-is-outposts.html).
+For more information about AWS Outposts, see the [*AWS Outposts User Guide*](https://docs.aws.amazon.com/outposts/latest/userguide/what-is-outposts.html).
 
 ## Considerations
 <a name="outposts-considerations"></a>

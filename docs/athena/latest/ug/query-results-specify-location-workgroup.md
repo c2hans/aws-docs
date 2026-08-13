@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/query-results-specify-l
 
 You specify the query result location in a workgroup configuration using the AWS Management Console, the AWS CLI, or the Athena API.
 
-When using the AWS CLI, specify the query result location using the `OutputLocation` parameter of the `--configuration` option when you run the [https://docs.aws.amazon.com/cli/latest/reference/athena/create-work-group.html](https://docs.aws.amazon.com/cli/latest/reference/athena/create-work-group.html) or [https://docs.aws.amazon.com/cli/latest/reference/athena/update-work-group.html](https://docs.aws.amazon.com/cli/latest/reference/athena/update-work-group.html) command.
+When using the AWS CLI, specify the query result location using the `OutputLocation` parameter of the `--configuration` option when you run the [`aws athena create-work-group`](https://docs.aws.amazon.com/cli/latest/reference/athena/create-work-group.html) or [`aws athena update-work-group`](https://docs.aws.amazon.com/cli/latest/reference/athena/update-work-group.html) command.
 
 **To specify the query result location for a workgroup using the Athena console**
 

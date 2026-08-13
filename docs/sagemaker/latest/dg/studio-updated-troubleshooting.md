@@ -20,7 +20,7 @@ This section shows how to troubleshoot common problems in Amazon SageMaker Studi
 Recovery mode allows you to access your Studio application when a configuration issue prevents your normal start up. It provides a simplified environment with essential functionality to help you diagnose and fix the issue.
 
 When an application fails to launch, you may see an error message about accessing recovery mode to address one of the following configuration issues.
-+ Corrupted [https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html](https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html) file.
++ Corrupted [`.condarc`](https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html) file.
 
   For information on troubleshooting your `.condarc` file, see the [troubleshooting](https://docs.conda.io/projects/conda/en/latest/user-guide/troubleshooting.html) page in the *Conda user guide*.
 + Insufficient storage volume available.

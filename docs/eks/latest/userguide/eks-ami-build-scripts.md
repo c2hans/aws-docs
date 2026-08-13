@@ -78,7 +78,7 @@ make k8s=1.36 os_distro=al2023 \
 
 **Important**
 The G7 EC2 instance type requires NVIDIA driver version 595 or later. The EKS-optimized accelerated AMIs currently include NVIDIA driver version 580, which does not support G7 instances. You must build a custom AMI with NVIDIA driver version 595 to use G7 instances with Amazon EKS.
-If you are using Karpenter for node provisioning and auto-scaling, it is recommended to exclude the `g7` instance family from your NodePools that use automatic AMI selection. See [https://karpenter.sh/docs/concepts/nodeclasses/#specamiselectorterms](https://karpenter.sh/docs/concepts/nodeclasses/#specamiselectorterms) in the Karpenter documentation for how to configure your Karpenter NodeClass to use your custom AMI for `g7` instances.
+If you are using Karpenter for node provisioning and auto-scaling, it is recommended to exclude the `g7` instance family from your NodePools that use automatic AMI selection. See [`amiSelectorTerms`](https://karpenter.sh/docs/concepts/nodeclasses/#specamiselectorterms) in the Karpenter documentation for how to configure your Karpenter NodeClass to use your custom AMI for `g7` instances.
 
 ```
 make k8s=1.36 os_distro=al2023 \

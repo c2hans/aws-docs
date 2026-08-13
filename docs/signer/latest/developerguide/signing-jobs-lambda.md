@@ -59,19 +59,19 @@ The **Code assets details** displays additional information:
 **To perform a signing job (AWS CLI)**
 
 Use the following command to start a signing job:
-+ [https://docs.aws.amazon.com/cli/latest/reference/signer/start-signing-job.html](https://docs.aws.amazon.com/cli/latest/reference/signer/start-signing-job.html)
++ [**start-signing-job**](https://docs.aws.amazon.com/cli/latest/reference/signer/start-signing-job.html)
 
 To get the status of a particular signing job, use the following command:
-+ [https://docs.aws.amazon.com/cli/latest/reference/signer/describe-signing-job.html](https://docs.aws.amazon.com/cli/latest/reference/signer/describe-signing-job.html)
++ [**describe-signing-job**](https://docs.aws.amazon.com/cli/latest/reference/signer/describe-signing-job.html)
 
 For a list of all available signing jobs, including those in the Failed state, use the following command:
-+ [https://docs.aws.amazon.com/cli/latest/reference/signer/list-signing-jobs.html](https://docs.aws.amazon.com/cli/latest/reference/signer/list-signing-jobs.html)
++ [**list-signing-jobs**](https://docs.aws.amazon.com/cli/latest/reference/signer/list-signing-jobs.html)
 
 **To perform a signing job (API)**
 
 Following API actions can be used to run and track signing jobs.
-+ [https://docs.aws.amazon.com/signer/latest/api/API_StartSigningJob.html](https://docs.aws.amazon.com/signer/latest/api/API_StartSigningJob.html)
-+ [https://docs.aws.amazon.com/signer/latest/api/API_DescribeSigningJob.html](https://docs.aws.amazon.com/signer/latest/api/API_DescribeSigningJob.html)
-+ [https://docs.aws.amazon.com/signer/latest/api/API_ListSigningJobs.html](https://docs.aws.amazon.com/signer/latest/api/API_ListSigningJobs.html)
++ [`StartSigningJob`](https://docs.aws.amazon.com/signer/latest/api/API_StartSigningJob.html)
++ [`DescribeSigningJob`](https://docs.aws.amazon.com/signer/latest/api/API_DescribeSigningJob.html)
++ [`ListSigningJobs`](https://docs.aws.amazon.com/signer/latest/api/API_ListSigningJobs.html)
 
-For more information about configurations and parameters related to signing jobs, see [https://docs.aws.amazon.com/signer/latest/api/API_SigningJob.html](https://docs.aws.amazon.com/signer/latest/api/API_SigningJob.html) in the *AWS Signer API Reference.*
+For more information about configurations and parameters related to signing jobs, see [`SigningJob`](https://docs.aws.amazon.com/signer/latest/api/API_SigningJob.html) in the *AWS Signer API Reference.*

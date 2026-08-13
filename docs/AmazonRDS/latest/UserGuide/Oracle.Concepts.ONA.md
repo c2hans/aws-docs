@@ -282,7 +282,7 @@ The preceding program unit can result in the following error: `PLS-00201: identi
    ```
    principal_type => 2));
    ```
-For more information about constants in the PL/SQL package `XS_ACL`, see [https://docs.oracle.com/en/database/oracle/oracle-database/19/dbfsg/XS_ACL-package.html#GUID-A157FB28-FE23-4D30-AAEB-8224230517E7](https://docs.oracle.com/en/database/oracle/oracle-database/19/dbfsg/XS_ACL-package.html#GUID-A157FB28-FE23-4D30-AAEB-8224230517E7) in the Oracle Database documentation.
+For more information about constants in the PL/SQL package `XS_ACL`, see [*Real Application Security Administrator's and Developer's Guide*](https://docs.oracle.com/en/database/oracle/oracle-database/19/dbfsg/XS_ACL-package.html#GUID-A157FB28-FE23-4D30-AAEB-8224230517E7) in the Oracle Database documentation.
 
    For more information, see [Configuring Access Control for External Network Services ](https://docs.oracle.com/en/database/oracle/oracle-database/19/dbseg/managing-fine-grained-access-in-pl-sql-packages-and-types.html#GUID-3D5B66BC-0277-4887-9CD1-97DB44EB5213) in the Oracle Database documentation.
 

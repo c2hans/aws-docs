@@ -49,7 +49,7 @@ aws rds describe-db-engine-versions ^
   --output text
 ```
 
-In the following table, you can find both major and minor version upgrade targets for different Aurora PostgreSQL DB versions. To maintain compatibility, not all versions are offered as upgrade targets. Aurora PostgreSQL introduces new features and bug fixes with each quarterly minor version release. For information about Aurora PostgreSQL minor releases, see the [https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/Welcome.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/Welcome.html).
+In the following table, you can find both major and minor version upgrade targets for different Aurora PostgreSQL DB versions. To maintain compatibility, not all versions are offered as upgrade targets. Aurora PostgreSQL introduces new features and bug fixes with each quarterly minor version release. For information about Aurora PostgreSQL minor releases, see the [*Release Notes for Aurora PostgreSQL*](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/Welcome.html).
 
 | Current source version | Upgrade targets |
 | --- | --- |

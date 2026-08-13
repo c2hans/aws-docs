@@ -68,7 +68,7 @@ You can configure ENA Express for supported EC2 instance types without needing t
 #### [ AWS CLI ]
 
 **To configure ENA Express when you attach a network interface**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/;attach-network-interface.html](https://docs.aws.amazon.com/cli/latest/reference/;attach-network-interface.html) command, as shown in the following examples.
+Use the [attach-network-interface](https://docs.aws.amazon.com/cli/latest/reference/;attach-network-interface.html) command, as shown in the following examples.
 
 **Example 1: Use ENA Express for TCP traffic, but not UDP traffic**
 This example configures `EnaSrdEnabled` as `true`, and allows `EnaSrdUdpEnabled` to default to `false`.
@@ -93,7 +93,7 @@ aws ec2 attach-network-interface \
 ```
 
 **To update ENA Express settings for a network interface attachment**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/modify-network-interface-attribute.html](https://docs.aws.amazon.com/cli/latest/reference/modify-network-interface-attribute.html) command as shown in the following examples.
+Use the [modify-network-interface-attribute](https://docs.aws.amazon.com/cli/latest/reference/modify-network-interface-attribute.html) command as shown in the following examples.
 
 **Example 1: Use ENA Express for TCP traffic, but not UDP traffic**
 This example configures `EnaSrdEnabled` as `true`, and allows `EnaSrdUdpEnabled` to default to `false` if it has never been set previously.
@@ -126,7 +126,7 @@ aws ec2 modify-network-interface-attribute \
 #### [ PowerShell ]
 
 **To configure ENA Express when you attach a network interface**
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Add-EC2NetworkInterface.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Add-EC2NetworkInterface.html) cmdlet as shown in the following examples.
+Use the [Add-EC2NetworkInterface](https://docs.aws.amazon.com/powershell/latest/reference/items/Add-EC2NetworkInterface.html) cmdlet as shown in the following examples.
 
 **Example 1: Use ENA Express for TCP traffic, but not UDP traffic**
 This example configures `EnaSrdEnabled` as `true`, and allows `EnaSrdUdpEnabled` to default to `false`.
@@ -152,7 +152,7 @@ Add-EC2NetworkInterface `
 ```
 
 **To configure ENA Express settings for your network interface attachment**
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2NetworkInterfaceAttribute.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2NetworkInterfaceAttribute.html) cmdlet as shown in the following examples.
+Use the [Edit-EC2NetworkInterfaceAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2NetworkInterfaceAttribute.html) cmdlet as shown in the following examples.
 
 **Example 1: Use ENA Express for TCP traffic, but not UDP traffic**
 This example configures `EnaSrdEnabled` as `true`, and allows `EnaSrdUdpEnabled` to default to `false` if it has never been set previously.

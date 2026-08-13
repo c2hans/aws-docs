@@ -12,4 +12,4 @@ AWS Batch provides a managed policy that you can attach to users. This policy pr
 
 This policy allows full administrator access to AWS Batch.
 
-To view the JSON for the policy, see [AWSBatchFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBatchFullAccess.html) in the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html).
+To view the JSON for the policy, see [AWSBatchFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBatchFullAccess.html) in the [*AWS managed policies Reference Guide*](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html).

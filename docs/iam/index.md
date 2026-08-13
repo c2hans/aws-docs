@@ -24,6 +24,10 @@ AWS Identity and Access Management (IAM) is a web service for securely controlli
 - [IAM Access Analyzer API Reference](/access-analyzer/latest/APIReference/): Describes the API operations for IAM Access Analyzer. Also provides sample requests, responses, and errors for the supported web services protocols.
 - [IAM Access Analyzer in the AWS CLI Reference](/cli/latest/reference/accessanalyzer/): Describes the AWS CLI commands that you can use to administer IAM Access Analyzer. Provides syntax, options, and usage examples for each command.
 
+## IAM account access manager
+
+- [IAM account access manager API Reference](/account-access/latest/APIReference/Welcome.html): Describes the API operations for IAM account access manager. Also provides sample requests, responses, and errors for the supported web services protocols.
+
 ## IAM Roles Anywhere
 
 - [IAM Roles Anywhere User Guide](/rolesanywhere/latest/userguide/): Provides conceptual overviews of IAM Roles Anywhere and explains how to use it.

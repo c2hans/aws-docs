@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/how-to-create
 1. Sign in to the AWS Management Console by using:
    + Your AWS root account. This is not recommended. For more information, see [The account root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) in the *user Guide*.
    + An administrator user in your AWS account. For more information, see [Creating your first AWS account root user and group](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html) in the *user Guide*.
-   + An user in your AWS account with permission to perform the following minimum set of actions:
+   + A user in your AWS account with permission to perform the following minimum set of actions:
 
      ```
      codepipeline:*
@@ -66,7 +66,7 @@ This procedure shows you how to add the test action in a test stage. To add the 
 
    If you need to create a new CodeBuild build project, follow the instructions in [Create a build project (console)](create-project.md#create-project-console) and return to this procedure.
 **Important**
-If you enable webhooks for a CodeBuild project, and the project is used as a build step in CodePipeline, then two identical builds are created for each commit. One build is triggered through webhooks and one through CodePipeline. Because billing is on a per-build basis, you are billed for both builds. Therefore, if you are using CodePipeline, we recommend that you disable webhooks in CodeBuild. In the CodeBuild console, clear the **Webhook**box. For more information, see [Change a build project's settings (console)](change-project.md#change-project-console)
+If you enable webhooks for a CodeBuild project, and the project is used as a build step in CodePipeline, then two identical builds are created for each commit. One build is triggered through webhooks and one through CodePipeline. Because billing is on a per-build basis, you are billed for both builds. Therefore, if you are using CodePipeline, we recommend that you disable webhooks in CodeBuild. In the CodeBuild console, clear the **Webhook** box. For more information, see [Change a build project's settings (console)](change-project.md#change-project-console)
 
 1. For **Input artifacts**, select the value for **Output artifact** that you noted earlier in this procedure.
 

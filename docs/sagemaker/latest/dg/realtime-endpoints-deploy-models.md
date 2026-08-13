@@ -353,11 +353,11 @@ Using the SageMaker Python SDK v3, you build and deploy your model with `ModelBu
 
 The examples that follow demonstrate how to assign a model to an inference component and then deploy the inference component to an endpoint. To deploy a model in this way, you complete the following steps:
 
-1. (Optional) Create a SageMaker AI model object by using the [https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_model.html](https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_model.html) method.
+1. (Optional) Create a SageMaker AI model object by using the [`create_model`](https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_model.html) method.
 
-1. Specify the settings for your endpoint by creating an endpoint configuration object. To create one, you use the [https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_endpoint_config.html#create-endpoint-config](https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_endpoint_config.html#create-endpoint-config) method.
+1. Specify the settings for your endpoint by creating an endpoint configuration object. To create one, you use the [`create_endpoint_config`](https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_endpoint_config.html#create-endpoint-config) method.
 
-1. Create your endpoint by using the [https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_endpoint.html](https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_endpoint.html) method, and in your request, provide the endpoint configuration that you created.
+1. Create your endpoint by using the [`create_endpoint`](https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_endpoint.html) method, and in your request, provide the endpoint configuration that you created.
 
 1. Create an inference component by using the `create_inference_component` method. In the settings, you specify a model by doing either of the following:
    + Specifying a SageMaker AI model object
@@ -370,11 +370,11 @@ The examples that follow demonstrate how to assign a model to an inference compo
 
 The examples that follow demonstrate how to create a model object and then deploy the model to an endpoint. To deploy a model in this way, you complete the following steps:
 
-1. Create a SageMaker AI model by using the [https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_model.html](https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_model.html) method.
+1. Create a SageMaker AI model by using the [`create_model`](https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_model.html) method.
 
-1. Specify the settings for your endpoint by creating an endpoint configuration object. To create one, you use the [https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_endpoint_config.html#create-endpoint-config](https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_endpoint_config.html#create-endpoint-config) method. In the endpoint configuration, you assign the model object to a production variant.
+1. Specify the settings for your endpoint by creating an endpoint configuration object. To create one, you use the [`create_endpoint_config`](https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_endpoint_config.html#create-endpoint-config) method. In the endpoint configuration, you assign the model object to a production variant.
 
-1. Create your endpoint by using the [https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_endpoint.html](https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_endpoint.html) method. In your request, provide the endpoint configuration that you created.
+1. Create your endpoint by using the [`create_endpoint`](https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_endpoint.html) method. In your request, provide the endpoint configuration that you created.
 
    When you create the endpoint, SageMaker AI provisions the endpoint resources, and it deploys the model to the endpoint.
 
@@ -573,11 +573,11 @@ When you deploy a model with the AWS CLI, you can deploy it with or without usin
 
 To deploy a model with an inference component, do the following:
 
-1. (Optional) Create a model with the [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-model.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-model.html) command.
+1. (Optional) Create a model with the [`create-model`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-model.html) command.
 
-1. Specify the settings for your endpoint by creating an endpoint configuration. To create one, you run the [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-endpoint-config.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-endpoint-config.html) command.
+1. Specify the settings for your endpoint by creating an endpoint configuration. To create one, you run the [`create-endpoint-config`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-endpoint-config.html) command.
 
-1. Create your endpoint by using the [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-endpoint.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-endpoint.html) command. In the command body, specify the endpoint configuration that you created.
+1. Create your endpoint by using the [`create-endpoint`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-endpoint.html) command. In the command body, specify the endpoint configuration that you created.
 
 1. Create an inference component by using the `create-inference-component` command. In the settings, you specify a model by doing either of the following:
    + Specifying a SageMaker AI model object
@@ -590,11 +590,11 @@ To deploy a model with an inference component, do the following:
 
 To deploy a model without using an inference component, do the following:
 
-1. Create a SageMaker AI model by using the [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-model.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-model.html) command.
+1. Create a SageMaker AI model by using the [`create-model`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-model.html) command.
 
-1. Specify the settings for your endpoint by creating an endpoint configuration object. To create one, you use the [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-endpoint-config.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-endpoint-config.html) command. In the endpoint configuration, you assign the model object to a production variant.
+1. Specify the settings for your endpoint by creating an endpoint configuration object. To create one, you use the [`create-endpoint-config`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-endpoint-config.html) command. In the endpoint configuration, you assign the model object to a production variant.
 
-1. Create your endpoint by using the [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-endpoint.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-endpoint.html) command. In your command body, specify the endpoint configuration that you created.
+1. Create your endpoint by using the [`create-endpoint`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-endpoint.html) command. In your command body, specify the endpoint configuration that you created.
 
    When you create the endpoint, SageMaker AI provisions the endpoint resources, and it deploys the model to the endpoint.
 

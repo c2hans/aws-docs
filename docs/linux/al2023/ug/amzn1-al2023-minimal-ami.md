@@ -12,9 +12,9 @@ A comparison of the RPMs present on the AL1 and AL2023 Minimal AMIs.
 |  acpid  | 2.0.19 |  |
 |  alternatives  |  | 1.15 |
 |  amazon-chrony-config  |  | 4.3 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html](https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html)  |  | 2.5.1 |
+|  [`amazon-ec2-net-utils`](https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html)  |  | 2.5.1 |
 |  amazon-linux-repo-s3  |  | 2023.6.20241031 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html](https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html)  |  | 2023.1 |
+|  [`amazon-linux-sb-keys`](https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html)  |  | 2023.1 |
 |  amd-ucode-firmware  |  | 20210208 |
 |  audit  | 2.6.5 | 3.0.6 |
 |  audit-libs  | 2.6.5 | 3.0.6 |
@@ -22,7 +22,7 @@ A comparison of the RPMs present on the AL1 and AL2023 Minimal AMIs.
 |  awscli-2  |  | 2.15.30 |
 |  basesystem  | 10.0 | 11 |
 |  bash  | 4.2.46 | 5.2.15 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  | 2.27 |  |
+|  [`binutils`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  | 2.27 |  |
 |  bzip2  | 1.0.6 |  |
 |  bzip2-libs  | 1.0.6 | 1.0.8 |
 |  ca-certificates  | 2023.2.62 | 2023.2.68 |
@@ -38,13 +38,13 @@ A comparison of the RPMs present on the AL1 and AL2023 Minimal AMIs.
 |  cpio  | 2.10 | 2.13 |
 |  cracklib  | 2.8.16 | 2.9.6 |
 |  cracklib-dicts  | 2.8.16 | 2.9.6 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-cron](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-cron)  | 1.4.4 |  |
+|  [`cronie`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-cron)  | 1.4.4 |  |
 |  cronie-anacron  | 1.4.4 |  |
 |  crontabs  | 1.10 |  |
 |  crypto-policies  |  | 20220428 |
 |  cryptsetup-libs  |  | 2.6.1 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 7.61.1 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
+|  [`curl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 7.61.1 |  |
+|  [`curl-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
 |  cyrus-sasl  | 2.1.23 |  |
 |  cyrus-sasl-lib  | 2.1.23 | 2.1.27 |
 |  dash  | 0.5.5.1 |  |
@@ -96,13 +96,13 @@ A comparison of the RPMs present on the AL1 and AL2023 Minimal AMIs.
 |  gettext  |  | 0.21 |
 |  gettext-libs  |  | 0.21 |
 |  glib2  | 2.36.3 | 2.74.7 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  | 2.17 | 2.34 |
+|  [`glibc`](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  | 2.17 | 2.34 |
 |  glibc-all-langpacks  |  | 2.34 |
 |  glibc-common  | 2.17 | 2.34 |
 |  glibc-locale-source  |  | 2.34 |
 |  gmp  | 6.0.0 | 6.2.1 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  | 2.0.28 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  |  | 2.3.7 |
+|  [`gnupg2`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  | 2.0.28 |  |
+|  [`gnupg2-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  |  | 2.3.7 |
 |  gnutls  |  | 3.8.0 |
 |  gpgme  | 1.4.3 | 1.15.1 |
 |  grep  | 2.20 | 3.8 |
@@ -154,9 +154,9 @@ A comparison of the RPMs present on the AL1 and AL2023 Minimal AMIs.
 |  libcgroup  | 0.40.rc1 |  |
 |  libcom\_err  | 1.43.5 | 1.46.5 |
 |  libcomps  |  | 0.1.20 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 7.61.1 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb)  |  | 5.3.28 |
+|  [`libcurl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 7.61.1 |  |
+|  [`libcurl-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
+|  [`libdb`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb)  |  | 5.3.28 |
 |  libdnf  |  | 0.69.0 |
 |  libeconf  |  | 0.4.0 |
 |  libedit  | 2.11 | 3.1 |
@@ -254,7 +254,7 @@ A comparison of the RPMs present on the AL1 and AL2023 Minimal AMIs.
 |  passwd  | 0.79 | 0.80 |
 |  pciutils  | 3.1.10 | 3.7.0 |
 |  pciutils-libs  | 3.1.10 | 3.7.0 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre)  | 8.21 |  |
+|  [`pcre`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre)  | 8.21 |  |
 |  pcre2  |  | 10.40 |
 |  pcre2-syntax  |  | 10.40 |
 |  pinentry  | 0.7.6 |  |
@@ -382,7 +382,7 @@ A comparison of the RPMs present on the AL1 and AL2023 Minimal AMIs.
 |  tzdata  | 2023c | 2024a |
 |  udev  | 173 |  |
 |  update-motd  | 1.0.1 | 2.2 |
-|  [https://docs.aws.amazon.com/linux/al1/ug/deprecated-al1.html#deprecated-upstart](https://docs.aws.amazon.com/linux/al1/ug/deprecated-al1.html#deprecated-upstart)  | 0.6.5 |  |
+|  [`upstart`](https://docs.aws.amazon.com/linux/al1/ug/deprecated-al1.html#deprecated-upstart)  | 0.6.5 |  |
 |  userspace-rcu  |  | 0.12.1 |
 |  ustr  | 1.0.4 |  |
 |  util-linux  | 2.23.2 | 2.37.4 |

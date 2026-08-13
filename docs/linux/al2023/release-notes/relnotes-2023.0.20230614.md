@@ -171,9 +171,9 @@ The full comparison of RPM package versions is below.
   - **AL2023.0.20230607 version:** 2.68.2-1.amzn2023.0.2
   - **AL2023.0.20230614 version:** 2.68.2-1.amzn2023.0.3
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  / **Architectures:** aarch64, x86\_64
+- ** [`gnupg2`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal) **
+  - **RPM:**  [`gnupg2`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`gnupg2-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gnupg2-smime  / **Architectures:** aarch64, x86\_64
   - **AL2023.0.20230607 version:** 2.3.7-1.amzn2023.0.3
   - **AL2023.0.20230614 version:** 2.3.7-1.amzn2023.0.4
@@ -187,8 +187,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.0.20230607 version:** 3.7.8-360.amzn2023.0.4
   - **AL2023.0.20230614 version:** 3.8.0-375.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:** aarch64, x86\_64
+- ** [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
+  - **RPM:**  [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  golang-bin  / **Architectures:** aarch64, x86\_64
   - **RPM:**  golang-docs  / **Architectures:** noarch
   - **RPM:**  golang-misc  / **Architectures:** noarch

@@ -111,7 +111,7 @@ When using the Kinesis Video Streams Producer SDK to upload media, you use the `
 
 If you're uploading a prerecorded video, it might get uploaded at a different rate than the rate at which it was recorded, dependent on your network speed. We recommend that you use the Producer timestamp to configure image generation if you want to generate images at regular intervals based on the video's original timestamps, and not use the server timestamps generated based on the rate at which Amazon Kinesis Video Streams received your video.
 
-To view a full example of this code, see the [https://github.com/awslabs/amazon-kinesis-video-streams-producer-c/blob/master/samples/KvsVideoOnlyRealtimeStreamingSample.c](https://github.com/awslabs/amazon-kinesis-video-streams-producer-c/blob/master/samples/KvsVideoOnlyRealtimeStreamingSample.c) code sample in GitHub.
+To view a full example of this code, see the [`VideoOnlyRealtimeStreamingSample`](https://github.com/awslabs/amazon-kinesis-video-streams-producer-c/blob/master/samples/KvsVideoOnlyRealtimeStreamingSample.c) code sample in GitHub.
 
 ```
 // Setup sample frame

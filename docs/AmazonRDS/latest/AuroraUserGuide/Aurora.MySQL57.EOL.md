@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.
 
 Amazon Aurora MySQL-Compatible Edition version 2 (with MySQL 5.7 compatibility) is planned to reach the end of standard support on October 31, 2024. We recommend that you upgrade all clusters running Aurora MySQL version 2 to the default Aurora MySQL version 3 (with MySQL 8.0 compatibility) or higher before Aurora MySQL version 2 reaches the end of its standard support period. On October 31, 2024, Amazon RDS will automatically enroll your databases into [Amazon RDS Extended Support](extended-support.md).
 
-You can find upcoming end-of-support dates for Aurora MySQL major versions in [https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.release-calendars.html#AuroraMySQL.release-calendars.major](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.release-calendars.html#AuroraMySQL.release-calendars.major).
+You can find upcoming end-of-support dates for Aurora MySQL major versions in [*Release calendar for Aurora MySQL major versions*](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.release-calendars.html#AuroraMySQL.release-calendars.major).
 
 If you have clusters running Aurora MySQL version 2, you will receive periodic notices with the latest information about how to conduct an upgrade as we get closer to the end of standard support date. We will update this page periodically with the latest information.
 

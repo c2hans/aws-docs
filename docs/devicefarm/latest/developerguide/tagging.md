@@ -24,7 +24,7 @@ You can use tags to:
 
 The AWS Resource Group Tagging API allows you to add, remove, or modify tags on resources. For more information, see the [AWS Resource Group Tagging API Reference](https://docs.aws.amazon.com//resourcegroupstagging/latest/APIReference/Welcome.html).
 
-To tag a resource, use the [https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/API_TagResources.html](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/API_TagResources.html) operation from the `resourcegroupstaggingapi` endpoint. This operation takes a list of ARNs from supported services and a list of key-value pairs. The value is optional. An empty string indicates that there should be no value for that tag. For example, the following Python example tags a series of project ARNs with the tag `build-config` with the value `release`:
+To tag a resource, use the [`TagResources`](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/API_TagResources.html) operation from the `resourcegroupstaggingapi` endpoint. This operation takes a list of ARNs from supported services and a list of key-value pairs. The value is optional. An empty string indicates that there should be no value for that tag. For example, the following Python example tags a series of project ARNs with the tag `build-config` with the value `release`:
 
 ```
 import boto3

@@ -37,7 +37,7 @@ The **AWSEC2VssSnapshotPolicy** policy includes the following Amazon EC2 permiss
 + **ec2:DescribeSnapshots** – Determine the create time and status of snapshots to verify application consistency.
 
 **Note**
-To view permission details for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2VssSnapshotPolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2VssSnapshotPolicy.html) in the *AWS Managed Policy Reference*.
+To view permission details for this policy, see [AWSEC2VssSnapshotPolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2VssSnapshotPolicy.html) in the *AWS Managed Policy Reference*.
 
 ### Streamline permissions for specific use cases - advanced
 <a name="scope-down-perms"></a>

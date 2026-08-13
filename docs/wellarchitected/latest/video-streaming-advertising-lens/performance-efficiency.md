@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 
  The performance efficiency pillar includes the ability to use cloud computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve.
 
- The performance efficiency pillar provides an overview of design principles, best practices, and questions. You can find guidance on implementation in the [https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/welcome.html?did=wp_card&trk=wp_card](https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/welcome.html?did=wp_card&trk=wp_card).
+ The performance efficiency pillar provides an overview of design principles, best practices, and questions. You can find guidance on implementation in the [**Performance Efficiency Pillar whitepaper**](https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/welcome.html?did=wp_card&trk=wp_card).
 
 ## Design principles
 <a name="perf-design-principles"></a>

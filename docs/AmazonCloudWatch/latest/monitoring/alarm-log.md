@@ -78,8 +78,6 @@ statistic_func_expression [by field1, field2, ...] [| sort asc|desc]
 
 You can specify only a single aggregation expression. The following table lists the supported aggregation functions.
 
-**Supported aggregation functions**
-
 | Function | Description | Example |
 | --- | --- | --- |
 | count(\*) | Count of all matched log lines. | count(\*) |
@@ -132,8 +130,6 @@ Note that `count(*)` on an empty result set returns 0, which is a valid datapoin
 
 You can configure how the alarm treats missing data using the `TreatMissingData` parameter. The following table describes the available options.
 
-**Missing data treatment options**
-
 | Value | Behavior |
 | --- | --- |
 | missing | Treat the datapoint as missing. This is the default. |
@@ -145,8 +141,6 @@ You can configure how the alarm treats missing data using the `TreatMissingData`
 <a name="log-alarm-evaluation-states"></a>
 
 In addition to the standard `OK`, `ALARM`, and `INSUFFICIENT_DATA` states, Log Alarms can report the following evaluation states in the `EvaluationState` field. These states provide additional context about why the alarm is in its current state.
-
-**Log Alarm evaluation states**
 
 | State | Description |
 | --- | --- |
@@ -271,7 +265,7 @@ To include log lines, the log lines role must have the `logs:GetQueryResults` pe
 | Log group does not exist or was deleted | Verify the log group ARNs in the alarm configuration are correct and accessible. |
 | Recently created or updated alarm | After creation or configuration update, the alarm remains in INSUFFICIENT\_DATA until enough query executions complete to satisfy the M-out-of-N evaluation window. |
 | Scheduled query is not running | Check the AWS managed Scheduled Query in the CloudWatch Logs console to verify it is executing on schedule. |
-| Aggregation field not present in query results | The field referenced in the aggregation expression must be present in the query results. For example, if your aggregation is avg(latency), ensure the query produces a latency field. If the field is not present, the result is treated as missing data. |
+| Aggregation field not present in query results | The field referenced in the aggregation expression must be present in the query results. For example, if your aggregation is avg(latency), make sure the query produces a latency field. If the field is not present, the result is treated as missing data. |
 | Log ingestion delay | A scheduled query can only evaluate log events that have been ingested by the time it runs. `StartTimeOffset` and `EndTimeOffset` define the query window relative to execution time T — [T − StartTimeOffset, T − EndTimeOffset] — but they do not account for ingestion delay. If events are still being ingested for the window you query, the query runs before they are available and skips them.<br />Use `EndTimeOffset` to shift the window back far enough that ingestion is complete for the entire range.<br />Example: Suppose logs take up to 2 minutes to become queryable after the events occur.+  `StartTimeOffset=60, EndTimeOffset=0` — window [T−60s, T]. The window ends at execution time, so recent events are not yet ingested and are missed. <br />+  `StartTimeOffset=180, EndTimeOffset=120` — window [T−180s, T−120s]. The window ends 2 minutes in the past, by which point all events are ingested and evaluable.  |
 
 **Alarm shows EVALUATION\_ERROR**

@@ -74,7 +74,7 @@ To collect metrics from a sample Prometheus workload for Amazon ECS, you must be
    ECS_CLUSTER_SUBNET_2={{subnet-xxxxxxxxxxxxxxxxx}}
    ```
 
-1. In this tutorial, we are going to install the Redis OSS application and the CloudWatch agent in the default security group of the Amazon ECS cluster's VPC. The default security group allows all network connection within the same security group so the CloudWatch agent can scrape the Prometheus metrics exposed on the Redis OSS containers. In a real production environment, you might want to create dedicated security groups for the Redis OSS application and CloudWatch agent and set customized permissions for them.
+1. In this tutorial, you install the Redis OSS application and the CloudWatch agent in the default security group of the Amazon ECS cluster's VPC. The default security group allows all network connection within the same security group so the CloudWatch agent can scrape the Prometheus metrics exposed on the Redis OSS containers. In a real production environment, you might want to create dedicated security groups for the Redis OSS application and CloudWatch agent and set customized permissions for them.
 
    Enter the following command to get the default security group ID.
 

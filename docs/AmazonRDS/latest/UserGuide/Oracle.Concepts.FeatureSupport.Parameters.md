@@ -10,7 +10,7 @@ In Amazon RDS, you manage parameters using a DB parameter group. Using this grou
 ## Supported initialization parameters in RDS for Oracle
 <a name="Oracle.Concepts.FeatureSupport.Parameters.individual"></a>
 
-Supported parameters for your DB instance depend on your Oracle Database edition and version. To view the supported initialization parameters for a specific Oracle Database edition and version, run the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-engine-default-parameters.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-engine-default-parameters.html). For example, to list names of the supported initialization parameters for the Enterprise Edition of Oracle Database 19c, run the following command (sample output included).
+Supported parameters for your DB instance depend on your Oracle Database edition and version. To view the supported initialization parameters for a specific Oracle Database edition and version, run the AWS CLI command [`describe-engine-default-parameters`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-engine-default-parameters.html). For example, to list names of the supported initialization parameters for the Enterprise Edition of Oracle Database 19c, run the following command (sample output included).
 
 ```
 aws rds describe-engine-default-parameters \

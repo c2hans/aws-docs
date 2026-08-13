@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/further
 # Further reading
 <a name="further-reading"></a>
 
- [https://aws.amazon.com/architecture/](https://aws.amazon.com/architecture/)
+ [*AWS Architecture Center*](https://aws.amazon.com/architecture/)
 
- [https://aws.amazon.com/compliance/?ref=wellarchitected-wp](https://aws.amazon.com/compliance/?ref=wellarchitected-wp)
+ [*AWS Cloud Compliance*](https://aws.amazon.com/compliance/?ref=wellarchitected-wp)
 
  *[AWS Well-Architected Partner program](https://aws.amazon.com/architecture/well-architected/partners/?ref=wellarchitected-wp)*
 

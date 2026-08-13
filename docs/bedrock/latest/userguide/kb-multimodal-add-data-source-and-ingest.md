@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-multimodal-a
 After creating your knowledge base, add data sources containing your multimodal content and start ingestion jobs to process and index the content.
 
 **Data source deletion behavior**
-When you delete a data source with the deletion policy set to RETAIN, the ingested content remains in the vector database and will continue to be used for retrieval. The content is only removed if you explicitly sync the knowledge base after deleting the data source. Data sources with the default DELETE policy will automatically remove content from the vector database and supplemental storage during deletion. This ensures that your knowledge base continues to function even if source files are modified or deleted, but you should be aware that deleted data sources with RETAIN policy may still contribute to search results.
+When you delete a data source with the deletion policy set to RETAIN, the ingested content remains in the vector database and will continue to be used for retrieval. The content is only removed if you explicitly sync the knowledge base after deleting the data source. Data sources with the default DELETE policy will automatically remove content from the vector database and supplemental storage during deletion. This ensures that your knowledge base continues to function even if source files are modified or deleted. However, deleted data sources with RETAIN policy might still contribute to search results.
 
 ## Add data sources
 <a name="kb-multimodal-add-data-source"></a>
@@ -33,7 +33,7 @@ For BDA data sources: Only data sources created after the launch of audio/video 
 
 1. Under **Content parsing and chunking**, configure your parsing and chunking methods:
 **Note**
-Text embedding models limit retrieval to text-only content, but you can enable multimodal retrieval via text by selecting either Amazon Bedrock Data Automation (for audio, video, and images) or Foundation Model as parsers (for images).
+Text embedding models limit retrieval to text-only content. However, you can enable multimodal retrieval through text by selecting either Amazon Bedrock Data Automation (for audio, video, and images) or Foundation Model as parsers (for images).
 
    Choose from three parsing strategies:
    + **Bedrock default parser:** Recommended for text-only parsing. This parser ignores multimodal content and is commonly used with multimodal embedding models.
@@ -46,7 +46,7 @@ Text embedding models limit retrieval to text-only content, but you can enable m
 #### [ CLI ]
 
 **To add a data source using the AWS CLI**
-+ Create a data source for your multimodal content. Send a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateDataSource.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateDataSource.html) request:
++ Create a data source for your multimodal content. Send a [`CreateDataSource`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateDataSource.html) request:
 
   ```
   aws bedrock-agent create-data-source \
@@ -118,7 +118,7 @@ After adding your data sources, start an ingestion job to process and index your
 
 **To start ingestion using the AWS CLI**
 
-1. Start an ingestion job. Send a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_StartIngestionJob.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_StartIngestionJob.html) request:
+1. Start an ingestion job. Send a [`StartIngestionJob`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_StartIngestionJob.html) request:
 
    ```
    aws bedrock-agent start-ingestion-job \
@@ -130,7 +130,7 @@ After adding your data sources, start an ingestion job to process and index your
    + `<knowledge-base-id>` - ID from knowledge base creation
    + `<data-source-id>` - ID from data source creation
 
-1. Monitor the ingestion job status using [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetIngestionJob.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetIngestionJob.html).
+1. Monitor the ingestion job status using [`GetIngestionJob`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetIngestionJob.html).
 
 ------
 
@@ -141,7 +141,7 @@ If you delete a data source and want to remove its content from the knowledge ba
 
 **To remove deleted data source content**
 
-1. Delete the data source using the console or [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteDataSource.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteDataSource.html) API.
+1. Delete the data source using the console or [`DeleteDataSource`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteDataSource.html) API.
 
 1. Start a new ingestion job on any remaining data sources to update the vector database and remove content from the deleted data source.
 

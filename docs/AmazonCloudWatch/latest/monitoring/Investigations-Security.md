@@ -93,7 +93,7 @@ When you configure an investigation group in your account, you specify what perm
 
 To enable CloudWatch investigations to access resources and be able to make suggestions and hypotheses, the recommended method is to attach the **AIOpsAssistantPolicy** to the investigation group role. This grants the investigation group permissions to analyze your AWS resources during your investigations. For information about the complete contents of this policy, see [AIOpsAssistantPolicy](managed-policies-cloudwatch.md#managed-policies-QInvestigations-AIOpsAssistant).
 
-You can also choose to attach the general AWS [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html) to the investigation group role, in addition to attaching **AIOpsAssistantPolicy**. The reason to do this is that AWS updates **ReadOnlyAccess** more frequently with permissions for new AWS services and actions that are released. The **AIOpsAssistantPolicy** will also be updated for new actions, but not as frequently.
+You can also choose to attach the general AWS [**ReadOnlyAccess**](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html) to the investigation group role, in addition to attaching **AIOpsAssistantPolicy**. The reason to do this is that AWS updates **ReadOnlyAccess** more frequently with permissions for new AWS services and actions that are released. The **AIOpsAssistantPolicy** will also be updated for new actions, but not as frequently.
 
 If you want to scope down the permissions granted to CloudWatch investigations, you can attach a custom IAM policy to the investigation group IAM role instead of attaching the **AIOpsAssistantPolicy** policy. To do this, start your custom policy with the contents of [AIOpsAssistantPolicy](managed-policies-cloudwatch.md#managed-policies-QInvestigations-AIOpsAssistant) and then remove permissions that you don't want to grant to CloudWatch investigations. This will prevent CloudWatch investigations from making suggestions based on the AWS services or actions that you don't grant access to.
 
@@ -143,7 +143,7 @@ The policy statement should include a context key for encryption context to help
 
 ------
 
-For more information about these types of policies and using these context keys, see [kms:ViaService](https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.html#conditions-kms-via-service) and [kms:EncryptionContext:*context-key*](https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.html#conditions-kms-encryption-context) in the AWS Key Management Service Developer Guide, and [aws:SourceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) in the IAM User Guide.
+For more information about these types of policies and using these context keys, see [kms:ViaService](https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.html#conditions-kms-through-service) and [kms:EncryptionContext:*context-key*](https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.html#conditions-kms-encryption-context) in the AWS Key Management Service Developer Guide, and [aws:SourceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) in the IAM User Guide.
 
 ## Encryption of investigation data
 <a name="Investigations-KMS"></a>

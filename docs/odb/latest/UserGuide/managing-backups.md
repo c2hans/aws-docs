@@ -17,14 +17,16 @@ Oracle managed backups are fully managed by OCI. When you create your Oracle Exa
 + **OCI Object Storage**
 + **Autonomous Recovery Service**
 
+Oracle Database@AWS supports Oracle managed backups for Oracle Exadata Database Service on Dedicated Infrastructure, Autonomous Database Serverless (ADB-S), and Oracle Exadata Database Service on Exascale Infrastructure (ExaDB-XS).
+
 For more information, see [Backup Exadata Database](https://docs.oracle.com/en-us/iaas/Content/database-at-aws-exadata-awscr/awscr-create-exadata-database.html) in the OCI documentation.
 
 ## User-managed backups to Amazon S3 in Oracle Database@AWS
 <a name="manual-backups-section"></a>
 
-With Oracle Database@AWS, you can create user-managed backups of your database using the Exadata Database Service on Dedicated Infrastructure. You back up your data with Oracle Recovery Manager (RMAN) and store it in your Amazon S3 buckets. You have full control over backup scheduling, retention policies, and storage costs while maintaining the managed service benefits of Oracle Database@AWS.
+With Oracle Database@AWS, you can create user-managed backups of your database using the Exadata Database Service on Dedicated Infrastructure or ExaDB-XS. You back up your data with Oracle Recovery Manager (RMAN) and store it in your Amazon S3 buckets. You have full control over backup scheduling, retention policies, and storage costs while maintaining the managed service benefits of Oracle Database@AWS.
 
-**Note**
+**Unsupported configurations**
 Oracle Database@AWS doesn't support user-managed backups for Autonomous Database on Dedicated Infrastructure.
 
 User-managed backups complement the AWS managed backup solutions provided by Oracle Database@AWS. You can use manual backups for compliance requirements, cross-Region disaster recovery, or integration with existing backup management workflows.

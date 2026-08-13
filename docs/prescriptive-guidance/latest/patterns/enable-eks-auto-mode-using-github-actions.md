@@ -72,7 +72,7 @@ After enabling Auto Mode, the workflow drains and deletes old node groups, updat
 <a name="enable-eks-auto-mode-using-github-actions-architecture"></a>
 
 **Target technology stack **
-+ [https://docs.github.com/en/actions](https://docs.github.com/en/actions)
++ [**GitHub Actions**](https://docs.github.com/en/actions)
 + [AWS IAM](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html)
 + [Amazon EKS](https://aws.amazon.com/eks/)
 + [Amazon S3](https://aws.amazon.com/s3/)
@@ -110,7 +110,7 @@ If you need node configuration backups or plan to delete nodes/node groups durin
 <a name="enable-eks-auto-mode-using-github-actions-tools"></a>
 
 **AWS services**
-+ [https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html): [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) is an open source tool that helps you interact with AWSservices through commands in your command-line shell. In our solution, we make use of the command-line interface for AWSservices to execute EKS cluster configuration updates, IAM role updates and query cluster status throughout the automation process.
++ [**AWS CLI**](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html): [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) is an open source tool that helps you interact with AWSservices through commands in your command-line shell. In our solution, we make use of the command-line interface for AWSservices to execute EKS cluster configuration updates, IAM role updates and query cluster status throughout the automation process.
 + **Amazon EKS**: [Amazon Elastic Kubernetes Service](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html) helps you run Kubernetes on AWSwithout needing to install or maintain your own Kubernetes control plane or nodes. In this pattern, Amazon EKS is the target service where Auto Mode is enabled to automate compute provisioning and node scaling across clusters in a specific Region.
 + **IAM**: [IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) helps you securely manage access to your AWSresources by controlling who is authenticated and authorized to use them. In our solution, we use it to manage permissions for GitHub Actions to modify EKS cluster configurations via OIDC federation. The solution also modifies the cluster role permissions and adds a job to create EKS Node Role so that EKS Auto Mode can schedule the pending pods in new nodes that it spins up as a part of the node pools.
 + **Amazon S3: **[Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) is a cloud-based object storage service that helps you store, protect, and retrieve any amount of data. In our solution, we use an S3 bucket to store the timestamped backups of the clusters before EKS Auto Mode is enabled in them, which would help in disaster recovery.

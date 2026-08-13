@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/dicomweb-s
 # Storing instances with STOW-RS
 <a name="dicomweb-storing"></a>
 
-AWS HealthImaging offers a representation of the [https://www.dicomstandard.org/using/dicomweb/store-stow-rs](https://www.dicomstandard.org/using/dicomweb/store-stow-rs) APIs for importing data. Use these APIs to synchronously store DICOM data to your HealthImaging data store.
+AWS HealthImaging offers a representation of the [`DICOMweb STOW-RS`](https://www.dicomstandard.org/using/dicomweb/store-stow-rs) APIs for importing data. Use these APIs to synchronously store DICOM data to your HealthImaging data store.
 
 The following table describes the HealthImaging representations of DICOMweb STOW-RS APIs available for importing data.
 

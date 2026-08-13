@@ -20,8 +20,10 @@ You can create a case either by choosing **\+ Case** from the **Cases** page or 
 
 **To create a case while on the **Cases** page**
 
-1. You must be on a contact (call, chat, or task) and the contact must already be **Associated** with a customer profile, as shown in the following image.
-![The Associated status on the Customer profile page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/cm-create-case.png)
+1. You must be on a contact (call, chat, or task).
+
+   If `customer_id` is included in the template's `requiredFields`, the contact must already be **Associated** with a customer profile. Otherwise, you can create a case without a customer profile.
+![A customer profile with the Associated status in the contact panel.](http://docs.aws.amazon.com/connect/latest/adminguide/images/cm-create-case.png)
 
 1. Choose the **Cases** tab and then choose **\+ Case**, as shown in the following image.
 ![The Cases button.](http://docs.aws.amazon.com/connect/latest/adminguide/images/cm-create-case1.png)

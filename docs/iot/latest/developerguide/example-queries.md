@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/example-querie
 # Example thing queries
 <a name="example-queries"></a>
 
-Specify queries in a query string using a query syntax. The queries are passed to the [https://docs.aws.amazon.com/iot/latest/apireference/API_SearchIndex.html](https://docs.aws.amazon.com/iot/latest/apireference/API_SearchIndex.html) API. The following table lists some example query strings.
+Specify queries in a query string using a query syntax. The queries are passed to the [`SearchIndex`](https://docs.aws.amazon.com/iot/latest/apireference/API_SearchIndex.html) API. The following table lists some example query strings.
 
 | Query string | Result |
 | --- | --- |

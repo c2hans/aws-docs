@@ -46,7 +46,7 @@ Amazon AppFlow provides both AWS managed and customer managed CMKs for encryptin
 Amazon AppFlow stores the encrypted credentials that are used to connect to flow source and destination applications in your AWS Secrets Manager account. These credentials include OAuth tokens, Application and API keys, and passwords. To create a new connection, grant the following permissions to any custom IAM policies.
 
 **Note**
-The [https://docs.aws.amazon.com/appflow/latest/userguide/identity-access-management.html#policy-examples](https://docs.aws.amazon.com/appflow/latest/userguide/identity-access-management.html#policy-examples) policy includes these permissions.
+The [[`AmazonAppFlowFullAccess`](https://docs.aws.amazon.com/appflow/latest/userguide/identity-access-management.html#example-1)](https://docs.aws.amazon.com/appflow/latest/userguide/identity-access-management.html#policy-examples) policy includes these permissions.
 
 ```
 {

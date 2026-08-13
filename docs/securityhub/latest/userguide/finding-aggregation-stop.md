@@ -45,9 +45,9 @@ In Regions other than the home Region, the **Finding aggregation** panel on the 
 ------
 #### [ Security Hub CSPM API ]
 
-Use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeleteFindingAggregator.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeleteFindingAggregator.html) operation of the Security Hub CSPM API. If you're using the AWS CLI, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/delete-finding-aggregator.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/delete-finding-aggregator.html) command.
+Use the [`DeleteFindingAggregator`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeleteFindingAggregator.html) operation of the Security Hub CSPM API. If you're using the AWS CLI, run the [`delete-finding-aggregator`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/delete-finding-aggregator.html) command.
 
-To identify the finding aggregator to delete, provide the finding aggregator ARN. To obtain the finding aggregator ARN, use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListFindingAggregators.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListFindingAggregators.html) operation or [https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-finding-aggregators.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-finding-aggregators.html) command.
+To identify the finding aggregator to delete, provide the finding aggregator ARN. To obtain the finding aggregator ARN, use the [`ListFindingAggregators`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListFindingAggregators.html) operation or [`list-finding-aggregators`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-finding-aggregators.html) command.
 
 The following example deletes the finding aggregator. The command is run from the current home Region, which is US East (N. Virginia). This example is formatted for Linux, macOS, or Unix, and it uses the backslash (\\) line-continuation character to improve readability.
 

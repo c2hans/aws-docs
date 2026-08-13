@@ -51,7 +51,7 @@ Use the following procedure if you no longer want the system to create OpsItems 
 
 1. In the **Security Hub CSPM findings** section, choose **Edit.**
 
-1. Choose the slider to change **Enabled** to **Disabled**. If you aren't able to toggle the slider, Security Hub CSPM hasn't been enabled for your AWS account.
+1. Choose the slider to change **Enabled** to **Disabled**. If you can't toggle the slider, Security Hub CSPM hasn't been enabled for your AWS account.
 
 1. Choose **Save** to save your configuration. OpsCenter no longer creates OpsItems based on Security Hub CSPM findings.
 

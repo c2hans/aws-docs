@@ -405,21 +405,21 @@ AWS DMS maps any unlisted SQL source data type to a Gremlin `String`.
   <tr><th>SQL source data types</th><th>Gremlin target data types </th></tr>
 </thead>
 <tbody>
-  <tr><td>NUMERIC (and variants)</td><td rowspan="2">Double</td></tr>
-  <tr><td>DECIMAL</td></tr>
-  <tr><td>TINYINT</td><td>Byte</td></tr>
-  <tr><td>SMALLINT</td><td>Short</td></tr>
-  <tr><td>INT, INTEGER</td><td>Int</td></tr>
-  <tr><td>BIGINT</td><td>Long</td></tr>
-  <tr><td>FLOAT</td><td rowspan="2">Float</td></tr>
-  <tr><td>DOUBLE PRECISION</td></tr>
-  <tr><td>REAL</td><td>Double</td></tr>
-  <tr><td>BIT</td><td rowspan="2">Boolean</td></tr>
-  <tr><td>BOOLEAN</td></tr>
-  <tr><td>DATE</td><td rowspan="3">Date</td></tr>
-  <tr><td>TIME</td></tr>
-  <tr><td>TIMESTAMP</td></tr>
-  <tr><td>CHARACTER (and variants)</td><td>String</td></tr>
+  <tr><td><code>NUMERIC</code> (and variants)</td><td rowspan="2"><code>Double</code></td></tr>
+  <tr><td><code>DECIMAL</code></td></tr>
+  <tr><td><code>TINYINT</code></td><td><code>Byte</code></td></tr>
+  <tr><td><code>SMALLINT</code></td><td><code>Short</code></td></tr>
+  <tr><td><code>INT, INTEGER</code></td><td><code>Int</code></td></tr>
+  <tr><td><code>BIGINT</code></td><td><code>Long</code></td></tr>
+  <tr><td><code>FLOAT</code></td><td rowspan="2"><code>Float</code></td></tr>
+  <tr><td><code>DOUBLE PRECISION</code></td></tr>
+  <tr><td><code>REAL</code></td><td><code>Double</code></td></tr>
+  <tr><td><code>BIT</code></td><td rowspan="2"><code>Boolean</code></td></tr>
+  <tr><td><code>BOOLEAN</code></td></tr>
+  <tr><td><code>DATE</code></td><td rowspan="3"><code>Date</code></td></tr>
+  <tr><td><code>TIME</code></td></tr>
+  <tr><td><code>TIMESTAMP</code></td></tr>
+  <tr><td><code>CHARACTER</code> (and variants)</td><td><code>String</code></td></tr>
 </tbody>
 </table>
 
@@ -439,22 +439,22 @@ An *RDF literal* is one of a variety of literal lexical forms and data types. Fo
   <tr><th>SQL source data types</th><th>R2RML (RDF) target data types </th></tr>
 </thead>
 <tbody>
-  <tr><td>BINARY (and variants)</td><td>xsd:hexBinary</td></tr>
-  <tr><td>NUMERIC (and variants)</td><td rowspan="2">xsd:decimal</td></tr>
-  <tr><td>DECIMAL</td></tr>
-  <tr><td>TINYINT</td><td rowspan="4">xsd:integer</td></tr>
-  <tr><td>SMALLINT</td></tr>
-  <tr><td>INT, INTEGER</td></tr>
-  <tr><td>BIGINT</td></tr>
-  <tr><td>FLOAT</td><td rowspan="3">xsd:double</td></tr>
-  <tr><td>DOUBLE PRECISION</td></tr>
-  <tr><td>REAL</td></tr>
-  <tr><td>BIT</td><td rowspan="2">xsd:boolean</td></tr>
-  <tr><td>BOOLEAN</td></tr>
-  <tr><td>DATE</td><td>xsd:date</td></tr>
-  <tr><td>TIME</td><td>xsd:time</td></tr>
-  <tr><td>TIMESTAMP</td><td>xsd:dateTime</td></tr>
-  <tr><td>CHARACTER (and variants)</td><td>RDF literal</td></tr>
+  <tr><td><code>BINARY</code> (and variants)</td><td><code>xsd:hexBinary</code></td></tr>
+  <tr><td><code>NUMERIC</code> (and variants)</td><td rowspan="2"><code>xsd:decimal</code></td></tr>
+  <tr><td><code>DECIMAL</code></td></tr>
+  <tr><td><code>TINYINT</code></td><td rowspan="4"><code>xsd:integer</code></td></tr>
+  <tr><td><code>SMALLINT</code></td></tr>
+  <tr><td><code>INT</code>, <code>INTEGER</code></td></tr>
+  <tr><td><code>BIGINT</code></td></tr>
+  <tr><td><code>FLOAT</code></td><td rowspan="3"><code>xsd:double</code></td></tr>
+  <tr><td><code>DOUBLE PRECISION</code></td></tr>
+  <tr><td><code>REAL</code></td></tr>
+  <tr><td><code>BIT</code></td><td rowspan="2"><code>xsd:boolean</code></td></tr>
+  <tr><td><code>BOOLEAN</code></td></tr>
+  <tr><td><code>DATE</code></td><td><code>xsd:date</code></td></tr>
+  <tr><td><code>TIME</code></td><td><code>xsd:time</code></td></tr>
+  <tr><td><code>TIMESTAMP</code></td><td><code>xsd:dateTime</code></td></tr>
+  <tr><td><code>CHARACTER</code> (and variants)</td><td>RDF literal</td></tr>
 </tbody>
 </table>
 

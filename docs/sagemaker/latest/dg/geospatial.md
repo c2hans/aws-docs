@@ -36,11 +36,11 @@ You can use SageMaker geospatial capabilities in two ways.
 + Use built-in [visualization tools right in Studio Classic to interactively view geospatial data or model predictions on a map.](https://docs.aws.amazon.com/sagemaker/latest/dg/geospatial-visualize.html)
 
 You can also use data from a collection of geospatial data providers. Currently, the data collections available include:
-+ [https://www.usgs.gov/centers/eros/data-citation?qt-science_support_page_related_con=0#qt-science_support_page_related_con](https://www.usgs.gov/centers/eros/data-citation?qt-science_support_page_related_con=0#qt-science_support_page_related_con)
-+ [https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice](https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice)
-+ [https://sentinel.esa.int/web/sentinel/missions/sentinel-2](https://sentinel.esa.int/web/sentinel/missions/sentinel-2)
-+ [https://registry.opendata.aws/copernicus-dem/](https://registry.opendata.aws/copernicus-dem/)
-+ [https://registry.opendata.aws/naip/](https://registry.opendata.aws/naip/)
++ [USGS Landsat](https://www.usgs.gov/centers/eros/data-citation?qt-science_support_page_related_con=0#qt-science_support_page_related_con)
++ [Sentinel-1](https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice)
++ [Sentinel-2](https://sentinel.esa.int/web/sentinel/missions/sentinel-2)
++ [Copernicus DEM](https://registry.opendata.aws/copernicus-dem/)
++ [National Agriculture Imagery Program](https://registry.opendata.aws/naip/)
 
 ## Are you a first-time user of SageMaker geospatial?
 <a name="first-time-geospatial-data"></a>

@@ -27,11 +27,11 @@ For more information about tag restrictions, see [User-Defined Tag Restrictions]
 <a name="batch-ops-job-tags-api"></a>
 
 Amazon S3 supports the following API operations that are specific to S3 Batch Operations job tagging:
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetJobTagging.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetJobTagging.html) – Returns the tag set associated with a Batch Operations job.
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutJobTagging.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutJobTagging.html) – Replaces the tag set associated with a job. There are two distinct scenarios for S3 Batch Operations job tag management using this API action:
++ [GetJobTagging](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetJobTagging.html) – Returns the tag set associated with a Batch Operations job.
++ [PutJobTagging](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutJobTagging.html) – Replaces the tag set associated with a job. There are two distinct scenarios for S3 Batch Operations job tag management using this API action:
   + Job has no tags – You can add a set of tags to a job (the job has no prior tags).
-  + Job has a set of existing tags – To modify the existing tag set, you can either replace the existing tag set entirely, or make changes within the existing tag set by retrieving the existing tag set using [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetJobTagging.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetJobTagging.html), modify that tag set, and use this API action to replace the tag set with the one you have modified.
+  + Job has a set of existing tags – To modify the existing tag set, you can either replace the existing tag set entirely, or make changes within the existing tag set by retrieving the existing tag set using [GetJobTagging](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetJobTagging.html), modify that tag set, and use this API action to replace the tag set with the one you have modified.
 **Note**
 If you send this request with an empty tag set, S3 Batch Operations deletes the existing tag set on the object. If you use this method, you are charged for a Tier 1 Request (`PUT`). For more information, see [Amazon S3 pricing](https://aws.amazon.com/s3/pricing).
 To delete existing tags for your Batch Operations job, the `DeleteJobTagging` action is preferred because it achieves the same result without incurring charges.
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteJobTagging.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteJobTagging.html) – Deletes the tag set associated with a Batch Operations job.
++ [DeleteJobTagging](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteJobTagging.html) – Deletes the tag set associated with a Batch Operations job.

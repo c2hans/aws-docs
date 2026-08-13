@@ -36,7 +36,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/activem
 ## Listing supported engine versions
 <a name="activemq-version-management-listing-versions"></a>
 
- You can list all supported minor and major engine versions by using the [https://docs.aws.amazon.com/cli/latest/reference/mq/describe-broker-instance-options.html](https://docs.aws.amazon.com/cli/latest/reference/mq/describe-broker-instance-options.html) AWS CLI command.
+ You can list all supported minor and major engine versions by using the [`describe-broker-instance-options`](https://docs.aws.amazon.com/cli/latest/reference/mq/describe-broker-instance-options.html) AWS CLI command.
 
 ```
 aws mq describe-broker-instance-options

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/http-subscription-confirma
 # HTTP/HTTPS subscription confirmation JSON format
 <a name="http-subscription-confirmation-json"></a>
 
-After you subscribe an HTTP/HTTPS endpoint, Amazon SNS sends a subscription confirmation message to the HTTP/HTTPS endpoint. This message contains a `SubscribeURL` value that you must visit to confirm the subscription (alternatively, you can use the `Token` value with the [https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html](https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html)).
+After you subscribe an HTTP/HTTPS endpoint, Amazon SNS sends a subscription confirmation message to the HTTP/HTTPS endpoint. This message contains a `SubscribeURL` value that you must visit to confirm the subscription (alternatively, you can use the `Token` value with the [`ConfirmSubscription`](https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html)).
 
 **Note**
 Amazon SNS doesn't send notifications to this endpoint until the subscription is confirmed
@@ -19,7 +19,7 @@ The type of message. For a subscription confirmation, the type is `SubscriptionC
 A Universally Unique Identifier (UUID), unique for each message published. For a message that Amazon SNS resends during a retry, the message ID of the original message is used.
 
 **`Token`**
-A value you can use with the [https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html](https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html) action to confirm the subscription. Alternatively, you can simply visit the `SubscribeURL`.
+A value you can use with the [`ConfirmSubscription`](https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html) action to confirm the subscription. Alternatively, you can simply visit the `SubscribeURL`.
 
 **`TopicArn`**
 The Amazon Resource Name (ARN) for the topic that this endpoint is subscribed to.
@@ -32,7 +32,7 @@ You have chosen to subscribe to the topic arn:aws:sns:us-east-2:123456789012:MyT
 ```
 
 **`SubscribeURL`**
-The URL that you must visit in order to confirm the subscription. Alternatively, you can instead use the `Token` with the [https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html](https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html) action to confirm the subscription.
+The URL that you must visit in order to confirm the subscription. Alternatively, you can instead use the `Token` with the [`ConfirmSubscription`](https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html) action to confirm the subscription.
 
 **`Timestamp`**
 The time (GMT) when the subscription confirmation was sent.

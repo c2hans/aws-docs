@@ -15,7 +15,7 @@ To see CloudWatch metrics for DataSync, you can use the following tools:
 + The CloudWatch API
 + The DataSync console (on the task execution's details page)
 
-For more information, see the [https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html).
+For more information, see the [*Amazon CloudWatch User Guide*](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html).
 
 ## CloudWatch metrics for DataSync
 <a name="accessing-metrics"></a>

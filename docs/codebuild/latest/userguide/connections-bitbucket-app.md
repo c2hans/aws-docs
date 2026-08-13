@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/connections-b
 You can use Bitbucket to connect with CodeBuild. Bitbucket App connections are supported through [AWS CodeConnections](https://docs.aws.amazon.com/dtconsole/latest/userguide/welcome-connections.html).
 
 **Note**
-CodeConnections is available in less regions than CodeBuild. You can use cross-region connections in CodeBuild. Connections created in opt-in regions, cannot be used in other regions. For more information, see [AWS CodeConnections endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/codestar_connections.html).
+CodeConnections is available in fewer regions than CodeBuild. You can use cross-region connections in CodeBuild. Connections created in opt-in Regions cannot be used in other Regions. For more information, see [AWS CodeConnections endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/codestar_connections.html).
 
 **Topics**
 + [Step 1: Create a connection to Bitbucket (console)](#connections-bitbucket-console)

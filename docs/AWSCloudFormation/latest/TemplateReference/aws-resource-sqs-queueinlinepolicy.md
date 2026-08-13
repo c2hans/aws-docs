@@ -60,4 +60,4 @@ The URLs of the queues to which you want to add the policy. You can use the ` [ 
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns returns the URL of the Amazon SQS queue.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).

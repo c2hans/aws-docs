@@ -20,7 +20,7 @@ You can attach the `AmazonS3ExpressFullAccess` policy to your IAM identities. Th
 
 This policy is intended for users or roles that need unrestricted access to directory buckets. This policy covers only Amazon S3 Express One Zone operations. For standard Amazon S3 operations, you need additional policies.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3ExpressFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3ExpressFullAccess.html) in the AWS Managed Policy Reference.
+To view the permissions for this policy, see [AmazonS3ExpressFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3ExpressFullAccess.html) in the AWS Managed Policy Reference.
 
 ## AWS managed policy: AmazonS3ExpressReadOnlyAccess
 <a name="s3-express-one-zone-security-iam-awsmanpol-amazons3expressreadonlyaccess"></a>
@@ -30,7 +30,7 @@ You can attach the `AmazonS3ExpressReadOnlyAccess` policy to your IAM identities
 **Note**
 The `CreateSession` action supports the `SessionMode` condition key which can be set to `ReadOnly` or `ReadWrite`. This policy uses `SessionMode` for a `ReadOnly` session.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3ExpressReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3ExpressReadOnlyAccess.html) in the AWS Managed Policy Reference.
+To view the permissions for this policy, see [AmazonS3ExpressReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3ExpressReadOnlyAccess.html) in the AWS Managed Policy Reference.
 
 ## Amazon S3 Express One Zone updates to AWS managed policies
 <a name="s3-express-one-zone-security-iam-awsmanpol-updates"></a>

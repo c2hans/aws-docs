@@ -58,14 +58,25 @@ The Connection Class obtained by calling the [`connect` method](dcv-module.md#co
 #### Parameters:
 <a name="parameters-1"></a>
 
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Attributes  |  Description  |
-| --- | --- | --- | --- |
-|  win  |  Object  |  The window to which the display must be attached.  |
-|  displayConf  |  Object  |  The configuration of the display. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/connection-class.html)  |
-|  displayId  |  number  |  <optional>  |  The ID of the display.  |
-|  displayDivName  |   |   |  The name of the display div.  |
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>win</code> </td><td> Object </td><td> The window to which the display must be attached. </td></tr>
+  <tr><td> <code>displayConf</code> </td><td> Object </td><td> The configuration of the display.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Attributes </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>displayId</code> </td><td> number </td><td> &lt;optional&gt; </td><td> The ID of the display. </td></tr>
+  <tr><td> <code>displayDivName</code> </td><td> </td><td> </td><td> The name of the display div. </td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 #### Returns:
 <a name="returns"></a>
@@ -360,21 +371,44 @@ The Connection Class obtained by calling the [`connect` method](dcv-module.md#co
 #### Parameters:
 <a name="parameters-9"></a>
 
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  shortcuts  |  Array.<Object>  |  The array of keys and mappings to register. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/connection-class.html)  |
-|  sequence  |  Array.<Object>  |  The keyboard shortcut to register. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/connection-class.html)  |
-|  output  |  Array.<Object>  |  The intended action to be performed by the shortcut. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/connection-class.html)  |
-|  key  |  KeyboardEvent.key  |  The value of the key pressed by the user. For more information, see https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key.  |
-|  location  |  KeyboardEvent.location  |  The array of keys to send. The location of the key on the keyboard. For more information, see https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/location.  |
-|  key  |  KeyboardEvent.key  |  The value of the key pressed by the user. For more information, see https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key.  |
-|  location  |  KeyboardEvent.location  |  The array of keys to send. The location of the key on the keyboard. For more information, see https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/location.  |
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>shortcuts</code> </td><td> Array.&lt;Object&gt; </td><td> The array of keys and mappings to register.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>sequence</code> </td><td> Array.&lt;Object&gt; </td><td> The keyboard shortcut to register.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>key</code> </td><td> KeyboardEvent.key </td><td> The value of the key pressed by the user. For more information, see https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key. </td></tr>
+  <tr><td> <code>location</code> </td><td> KeyboardEvent.location </td><td> The array of keys to send. The location of the key on the keyboard. For more information, see https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/location. </td></tr>
+</tbody>
+</table>
+ </td></tr>
+  <tr><td> <code>output</code> </td><td> Array.&lt;Object&gt; </td><td> The intended action to be performed by the shortcut.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>key</code> </td><td> KeyboardEvent.key </td><td> The value of the key pressed by the user. For more information, see https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key. </td></tr>
+  <tr><td> <code>location</code> </td><td> KeyboardEvent.location </td><td> The array of keys to send. The location of the key on the keyboard. For more information, see https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/location. </td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 #### Returns:
 <a name="returns-14"></a>
@@ -471,13 +505,24 @@ The Connection Class obtained by calling the [`connect` method](dcv-module.md#co
 #### Parameters:
 <a name="parameters-14"></a>
 
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  shortcut  |  Array.<Object>  |  The array of keys to send. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/connection-class.html)  |
-|  key  |  KeyboardEvent.key  |  The value of the key pressed by the user. For more information, see https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key.  |
-|  location  |  KeyboardEvent.location  |  The array of keys to send. The location of the key on the keyboard. For more information, see https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/location.  |
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>shortcut</code> </td><td> Array.&lt;Object&gt; </td><td> The array of keys to send.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>key</code> </td><td> KeyboardEvent.key </td><td> The value of the key pressed by the user. For more information, see https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key. </td></tr>
+  <tr><td> <code>location</code> </td><td> KeyboardEvent.location </td><td> The array of keys to send. The location of the key on the keyboard. For more information, see https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/location. </td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 #### Returns:
 <a name="returns-19"></a>
@@ -535,13 +580,24 @@ The Connection Class obtained by calling the [`connect` method](dcv-module.md#co
 #### Parameters:
 <a name="parameters-17"></a>
 
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  Name  |  Type  |  Description  |
-| --- | --- | --- |
-|  quirks  |  Object  |  The keyboard quirks to enable or disable. [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/websdkguide/connection-class.html)  |
-|  macOptionToAlt  |  boolean  |  To map the Option key to Alt for macOS, specify true. Otherwise, specify false.  |
-|  macCommandToControl  |  boolean  |  To map the Command key to Ctrl for macOS, specify true. Otherwise, specify false.  |
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>quirks</code> </td><td> Object </td><td> The keyboard quirks to enable or disable.
+<table>
+<thead>
+  <tr><th> Name </th><th> Type </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>macOptionToAlt</code> </td><td> boolean </td><td> To map the Option key to Alt for macOS, specify <code>true</code>. Otherwise, specify <code>false</code>. </td></tr>
+  <tr><td> <code>macCommandToControl</code> </td><td> boolean </td><td> To map the Command key to Ctrl for macOS, specify <code>true</code>. Otherwise, specify <code>false</code>. </td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 #### Returns:
 <a name="returns-22"></a>

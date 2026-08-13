@@ -89,7 +89,7 @@ A restore testing plan has two parts: plan creation and assigning resources.
 
 When you use the console, these parts are sequential. In the first part, you set the name, frequency, and start times. During the second part you assign resources to your testing plan.
 
-When using AWS CLI and API, first use [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-restore-testing-plan.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-restore-testing-plan.html). After you receive a successful response and the plan has been created, then use [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-restore-testing-selection.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-restore-testing-selection.html), for each resource type to include in your plan.
+When using AWS CLI and API, first use [`create-restore-testing-plan`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-restore-testing-plan.html). After you receive a successful response and the plan has been created, then use [`create-restore-testing-selection`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-restore-testing-selection.html), for each resource type to include in your plan.
 
 When you create a restore testing plan, we create a service-linked role for you. For more information, see [Using roles for restore testing](using-service-linked-roles-AWSServiceRoleForBackupRestoreTesting.md).
 
@@ -136,7 +136,7 @@ To navigate back to the restore testing plan to which you want to add resources,
 
    1. **Resource assignment name:** Input a name for this resource assignment using a string of alphanumeric characters and underscores, with no white spaces.
 
-   1. **Restore IAM role:** The test must use an Identity and Access Management (IAM) role you designate. You can choose the AWS Backup default role or a different one. If the AWS Backup default does not yet exist as you finish this process, AWS Backup will create it for you automatically with the necessary permissions. The IAM role you choose for restore testing must contain the permissions found in [https://docs.aws.amazon.com/aws-backup/latest/devguide/security-iam-awsmanpol.html#aws-managed-policies](https://docs.aws.amazon.com/aws-backup/latest/devguide/security-iam-awsmanpol.html#aws-managed-policies).
+   1. **Restore IAM role:** The test must use an Identity and Access Management (IAM) role you designate. You can choose the AWS Backup default role or a different one. If the AWS Backup default does not yet exist as you finish this process, AWS Backup will create it for you automatically with the necessary permissions. The IAM role you choose for restore testing must contain the permissions found in [AWSBackupServiceRolePolicyForRestores](https://docs.aws.amazon.com/aws-backup/latest/devguide/security-iam-awsmanpol.html#aws-managed-policies).
 
    1. **Retention period before cleanup:** During a restore test, backup data is temporarily restored. By default, this data is deleted after the test is complete. You have the option to delay deletion of this data if you wish to run validation on the restore.
 
@@ -165,26 +165,26 @@ The CLI command `CreateRestoreTestingPlan` is used to make a restore testing pla
 
 The testing plan must contain:
 + `RestoreTestingPlan`, which must contain a unique `RestoreTestingPlanName`
-+ [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_RestoreTestingPlanForCreate.html#Backup-Type-RestoreTestingPlanForCreate-ScheduleExpression](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_RestoreTestingPlanForCreate.html#Backup-Type-RestoreTestingPlanForCreate-ScheduleExpression) cron expression
-+ [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_RestoreTestingRecoveryPointSelection.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_RestoreTestingRecoveryPointSelection.html)
++ [`ScheduleExpression`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_RestoreTestingPlanForCreate.html#Backup-Type-RestoreTestingPlanForCreate-ScheduleExpression) cron expression
++ [`RecoveryPointSelection`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_RestoreTestingRecoveryPointSelection.html)
 
   Though named similarly, this is **NOT** the same as `RestoreTestingSelection`.
 
-  [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_RestoreTestingRecoveryPointSelection.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_RestoreTestingRecoveryPointSelection.html) has five parameters (three required and two optional). The values you specify determine which recovery point is included in the restore test. You must indicate with `Algorithm` if you want the latest recovery point within your `SelectionWindowDays` or if you want a random recovery point, and you must indicate through `IncludeVaults` from which vaults the recovery points can be chosen.
+  [`RecoveryPointSelection`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_RestoreTestingRecoveryPointSelection.html) has five parameters (three required and two optional). The values you specify determine which recovery point is included in the restore test. You must indicate with `Algorithm` if you want the latest recovery point within your `SelectionWindowDays` or if you want a random recovery point, and you must indicate through `IncludeVaults` from which vaults the recovery points can be chosen.
 
   `SelectionWindowDays`: The selection window is calculated from the actual job execution time, not the plan's scheduled start time. Because jobs can start anywhere within the `StartWindowHours` period, set `SelectionWindowDays` to be greater than your backup frequency interval plus your `StartWindowHours` value to avoid edge-case recovery point exclusions.
 
 A selection can have one or more protected resource ARNs or can have one or more conditions, but it cannot have not both.
 
 You can also include:
-+ [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_RestoreTestingPlanForCreate.html#Backup-Type-RestoreTestingPlanForCreate-ScheduleExpressionTimeZone](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_RestoreTestingPlanForCreate.html#Backup-Type-RestoreTestingPlanForCreate-ScheduleExpressionTimeZone)
-+ [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CreateRestoreTestingPlan.html#Backup-CreateRestoreTestingPlan-request-Tags](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CreateRestoreTestingPlan.html#Backup-CreateRestoreTestingPlan-request-Tags)
-+ [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CreateRestoreTestingPlan.html#API_CreateRestoreTestingPlan_RequestSyntax](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CreateRestoreTestingPlan.html#API_CreateRestoreTestingPlan_RequestSyntax)
-+ [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CreateRestoreTestingPlan.html#API_CreateRestoreTestingPlan_RequestSyntax](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CreateRestoreTestingPlan.html#API_CreateRestoreTestingPlan_RequestSyntax)
++ [`ScheduleExpressionTimezone`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_RestoreTestingPlanForCreate.html#Backup-Type-RestoreTestingPlanForCreate-ScheduleExpressionTimeZone)
++ [`Tags`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CreateRestoreTestingPlan.html#Backup-CreateRestoreTestingPlan-request-Tags)
++ [`CreatorRequestId`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CreateRestoreTestingPlan.html#API_CreateRestoreTestingPlan_RequestSyntax)
++ [`StartWindowHours`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CreateRestoreTestingPlan.html#API_CreateRestoreTestingPlan_RequestSyntax)
 
 Use CLI command [`create-restore-testing-plan`.](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-restore-testing-plan.html)
 
-Once the plan has been created successfully, you need to assign resources to it using [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-restore-testing-selection.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-restore-testing-selection.html).
+Once the plan has been created successfully, you need to assign resources to it using [`create-restore-testing-selection`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-restore-testing-selection.html).
 
 This consists of `RestoreTestingSelectionName`, `ProtectedResourceType`, and one of the following:
 
@@ -255,10 +255,10 @@ Requests [UpdateRestoreTestingPlan](https://docs.aws.amazon.com/aws-backup/lates
 Before sending an update request, use [GetRestoreTestingPlan](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_GetRestoreTestingPlan.html) and [GetRestoreTestingSelection](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_GetRestoreTestingSelection.html) to determine if your RestoreTestingSelection contains specific ARNs or if it uses the wildcard and conditions.
 
 If your restore testing selection has specified ARNs (instead of wildcard) and you wish to change it to a wildcard with conditions, the update request must include both the ARN wildcard and the conditions. A selection can have either protected resource ARNs or use the wildcard with conditions, but it cannot have both.
-+ [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/get-restore-testing-plan.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/get-restore-testing-plan.html)
-+ [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/get-restore-testing-selection.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/get-restore-testing-selection.html)
-+ [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/updated-restore-testing-plan.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/updated-restore-testing-plan.html)
-+ [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/update-restore-testing-selection.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/update-restore-testing-selection.html)
++ [`get-restore-testing-plan`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/get-restore-testing-plan.html)
++ [`get-restore-testing-selection`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/get-restore-testing-selection.html)
++ [`update-restore-testing-plan`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/updated-restore-testing-plan.html)
++ [`update-restore-testing-selection`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/update-restore-testing-selection.html)
 
 ------
 
@@ -282,10 +282,10 @@ You can also view the protected resources within this plan, the restore testing 
 #### [ AWS CLI ]
 
 **Get details about an existing restore testing plan and testing selection using the command line**
-+ [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-restore-testing-plan.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-restore-testing-plan.html)
-+ [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-restore-testing-selections.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-restore-testing-selections.html)
-+ [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-restore-testing-plan.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-restore-testing-plan.html)
-+ [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/get-restore-testing-selection.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/get-restore-testing-selection.html)
++ [`list-restore-testing-plan`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-restore-testing-plan.html)
++ [`list-restore-testing-selections`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-restore-testing-selections.html)
++ [`get-restore-testing-plan`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-restore-testing-plan.html)
++ [`get-restore-testing-selection`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/get-restore-testing-selection.html)
 
 ------
 
@@ -322,7 +322,7 @@ Restore testing jobs have several status categories:
 #### [ AWS CLI ]
 
 **View existing restore testing jobs from the command line**
-+ [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-restore-jobs-by-protected-resource.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-restore-jobs-by-protected-resource.html)
++ [`list-restore-jobs-by-protected-resource`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-restore-jobs-by-protected-resource.html)
 
 ------
 
@@ -350,8 +350,8 @@ Restore testing jobs have several status categories:
 The CLI command [DeleteRestoreTestingSelection](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DeleteRestoreTestingSelection.html) can be used to delete a restore testing selection. Include `RestoreTestingPlanName` and `RestoreTestingSelectionName` in the request.
 
 All testing selections associated with a testing plan need to be deleted before you delete the testing plan. Once all testing selections have been deleted, you can use the API request [DeleteRestoreTestingPlan](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DeleteRestoreTestingPlan.html) to delete a restore testing plan. You need to include `RestoreTestingPlanName`.
-+ [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/delete-restore-testing-selection.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/delete-restore-testing-selection.html)
-+ [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/delete-restore-testing-plan.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/delete-restore-testing-plan.html)
++ [`delete-restore-testing-selection`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/delete-restore-testing-selection.html)
++ [`delete-restore-testing-plan`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/delete-restore-testing-plan.html)
 
 ------
 

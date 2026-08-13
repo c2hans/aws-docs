@@ -37,7 +37,7 @@ When you create a data mapping, using the AWS CLI make sure to follow the correc
 ## Examples
 <a name="websocket-data-mapping-examples"></a>
 
-The following AWS CLI examples configure data mappings. For an example CloudFormation template, see [samples/websocket-data-mapping.zip](samples/websocket-data-mapping.zip).
+The following AWS CLI examples configure data mappings. For an example CloudFormation template, see [`websocket-data-mapping.yaml`](samples/websocket-data-mapping.zip).
 
 ### Map a client's connectionId to a header in an integration request
 <a name="websocket-data-mapping-examples.connectionId"></a>

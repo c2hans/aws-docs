@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/initiate-transcripti
 # Starting and stopping Amazon Chime SDK live transcription
 <a name="initiate-transcription"></a>
 
-You use the Amazon Chime SDK [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_StartMeetingTranscription.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_StartMeetingTranscription.html) API to initiate meeting transcription by applying a `TranscriptionConfiguration` to the meeting. The Amazon Chime SDK controller forwards the configuration to the meeting asynchronously. The success or failure of initiating meeting transcription is signaled through a message via Amazon Simple Notification Service (Amazon SNS) and Amazon EventBridge.
+You use the Amazon Chime SDK [StartMeetingTranscription](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_StartMeetingTranscription.html) API to initiate meeting transcription by applying a `TranscriptionConfiguration` to the meeting. The Amazon Chime SDK controller forwards the configuration to the meeting asynchronously. The success or failure of initiating meeting transcription is signaled through a message via Amazon Simple Notification Service (Amazon SNS) and Amazon EventBridge.
 
 **Starting transcription**
 This example shows how to start live transcription with Amazon Transcribe.
@@ -16,17 +16,17 @@ Content-type: application/json
 {
     "TranscriptionConfiguration": {
         "EngineTranscribeSettings": {
-            "[https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_ResponseSyntax](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_ResponseSyntax)": "{{en-US}}",
-            "[https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_ResponseSyntax](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_ResponseSyntax)": "tag",
-            "[https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax)": "{{profanity}}",
-            "[https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax)": "{{lingo}}",
+            "[LanguageCode](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_ResponseSyntax)": "{{en-US}}",
+            "[VocabularyFilterMethod](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_ResponseSyntax)": "tag",
+            "[VocabularyFilterName](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax)": "{{profanity}}",
+            "[VocabularyName](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax)": "{{lingo}}",
             "Region": "{{us-east-1}}"
-            "[https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax)": {{true}},
-            "[https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax)": "{{high}}",
-            "[https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax)": "PII",
-            "[https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax)": "PII",
-            "[https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax)": "{{ALL}}",
-            "[https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax)": "{{language-model}}"
+            "[EnablePartialResultsStabilization](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax)": {{true}},
+            "[PartialResultsStability](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax)": "{{high}}",
+            "[ContentIdentificationType](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax)": "PII",
+            "[ContentRedactionType](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax)": "PII",
+            "[PiiEntityTypes](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax)": "{{ALL}}",
+            "[LanguageModelName](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestSyntax)": "{{language-model}}"
         }
     }
 }
@@ -40,12 +40,12 @@ Content-type: application/json
 {
     "TranscriptionConfiguration": {
         "EngineTranscribeMedicalSettings": {
-            "[https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalStreamTranscription.html](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalStreamTranscription.html)": "{{en-US}}",
-            "[https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalStreamTranscription.html](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalStreamTranscription.html)": "PRIMARYCARE",
-            "[https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalStreamTranscription.html](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalStreamTranscription.html)": "CONVERSATION",
-            "[https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalStreamTranscription.html](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalStreamTranscription.html)": "{{lingo}}",
+            "[LanguageCode](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalStreamTranscription.html)": "{{en-US}}",
+            "[Specialty](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalStreamTranscription.html)": "PRIMARYCARE",
+            "[Type](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalStreamTranscription.html)": "CONVERSATION",
+            "[VocabularyName](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalStreamTranscription.html)": "{{lingo}}",
             "Region": "{{us-east-1}}",
-           "[https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalStreamTranscription.html](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalStreamTranscription.html)": "PHI",
+           "[ContentIdentificationType](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalStreamTranscription.html)": "PHI",
         }
    }
 }
@@ -55,7 +55,7 @@ Content-type: application/json
 `meetingId` – The ID of the meeting, returned by the [CreateMeeting API](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateMeeting.html#API_CreateMeeting_ResponseSyntax).
 `TranscriptionConfiguration` – Encapsulates the parameters for live transcription. You must specify exactly one configuration, `EngineTranscribeSettings` or `EngineTranscribeMedicalSettings`.
 
-`EngineTranscribeSettings` – Specifies the use of Amazon Transcribe and passes its settings through to [https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestParameters](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestParameters).
+`EngineTranscribeSettings` – Specifies the use of Amazon Transcribe and passes its settings through to [Amazon Transcribe](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html#API_streaming_StartStreamTranscription_RequestParameters).
 `LanguageCode` – Required.
 `VocabularyFilterMethod` – Optional.
 `VocabularyFilterName` – Optional.
@@ -68,7 +68,7 @@ Content-type: application/json
 `PiiEntityTypes ` – Optional.
 `LanguageModelName` – Optional.
 
-`EngineTranscribeMedicalSettings` – Specifies the use of Amazon Transcribe Medical and passes its settings through to [https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalStreamTranscription.html#API_streaming_StartMedicalStreamTranscription_RequestParameters](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalStreamTranscription.html#API_streaming_StartMedicalStreamTranscription_RequestParameters).
+`EngineTranscribeMedicalSettings` – Specifies the use of Amazon Transcribe Medical and passes its settings through to [Amazon Transcribe Medical](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalStreamTranscription.html#API_streaming_StartMedicalStreamTranscription_RequestParameters).
 `LanguageCode` – Required.
 `Speciality` – Required.
 `Type` – Required.
@@ -94,7 +94,7 @@ Amazon Transcribe and Amazon Transcribe Medical display the following error mess
 Calling `StartMeetingTranscription` a second time updates the `TranscriptionConfiguration` applied to the meeting.
 
 **Stopping transcription**
-You use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StopMeetingTranscription.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StopMeetingTranscription.html) API to remove the `TranscriptionConfiguration` for a given `meetingID` and end meeting transcription. Ending a meeting stops transcription automatically.
+You use the [StopMeetingTranscription](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StopMeetingTranscription.html) API to remove the `TranscriptionConfiguration` for a given `meetingID` and end meeting transcription. Ending a meeting stops transcription automatically.
 
 This example shows the request syntax that invokes `StopMeetingTranscription`.
 

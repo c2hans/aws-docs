@@ -16,7 +16,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon Bedrock service and res
 
 **Resource type:** `AWS::Bedrock::DataSource`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/bedrock-data-source-encryption-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/bedrock-data-source-encryption-enabled.html)
+**AWS Config rule:** [bedrock-data-source-encryption-enabled](https://docs.aws.amazon.com/config/latest/developerguide/bedrock-data-source-encryption-enabled.html)
 
 **Schedule type:** Change triggered
 

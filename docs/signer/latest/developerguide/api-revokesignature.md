@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/api-revokes
 # RevokeSignature
 <a name="api-revokesignature"></a>
 
-The following Java example shows how to use the [https://docs.aws.amazon.com/signer/latest/api/API_RevokeSignature.html](https://docs.aws.amazon.com/signer/latest/api/API_RevokeSignature.html) operation.
+The following Java example shows how to use the [`RevokeSignature`](https://docs.aws.amazon.com/signer/latest/api/API_RevokeSignature.html) operation.
 
 ```
 package com.examples;

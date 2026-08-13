@@ -52,14 +52,14 @@ The Amazon Machine Image (AMI) properties for your fleet. The following properti
 The VPC that your CodeBuild fleet will access. For more information, see [Use AWS CodeBuild with Amazon Virtual Private Cloud](vpc-support.md).
 If a fleet override is specified when calling the StartBuild API, CodeBuild will ignore the project VPC configuration.
 **Subnets**
-The VPC subnets that CodeBuild uses to set up your VPC configuration. Note that reserved capacity fleets support only one subnet in a single Availablity Zone. Also, ensure that your subnets include a NAT gateway.
+The VPC subnets that CodeBuild uses to set up your VPC configuration. Note that reserved capacity fleets support only one subnet in a single Availability Zone. Also, ensure that your subnets include a NAT gateway.
 **Security groups**
 The VPC security groups that CodeBuild uses with your VPC. Ensure that your security groups allow outbound connections.
 **Fleet Service Role**
 Defines the service role for your fleet from an existing service role in your account.
 **Define proxy configurations - optional**
 Proxy configurations that apply network access control to your reserved capacity instances. For more information, see [Use AWS CodeBuild with a managed proxy server](run-codebuild-in-managed-proxy-server.md).
-Proxy configurations don't support VPC, Windows, or MacOS.
+Proxy configurations don't support VPC, Windows, or macOS.
 **Default behavior**
 Defines the behavior of outgoing traffic.
 **Allow**

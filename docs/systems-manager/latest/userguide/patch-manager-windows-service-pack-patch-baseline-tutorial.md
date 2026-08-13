@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 
 When you create a custom patch baseline, you can specify that all, some, or only one type of supported patch is installed.
 
-In patch baselines for Windows, you can select `ServicePacks` as the only **Classification** option in order to limit patching updates to Service Packs only. Service Packs can be installed automatically by Patch Manager, a tool in AWS Systems Manager, provided that the update is available in Windows Update or Windows Server Update Services (WSUS).
+In patch baselines for Windows, you can select `ServicePacks` as the only **Classification** option to limit patching updates to Service Packs only. Service Packs can be installed automatically by Patch Manager, provided that the update is available in Windows Update or Windows Server Update Services (WSUS).
 
 You can configure a patch baseline to control whether Service Packs for all Windows versions are installed, or just those for specific versions, such as Windows 7 or Windows Server 2016.
 
@@ -37,7 +37,7 @@ For information about setting an existing patch baseline as the default, see [Se
 1. In the **Approval rules for operating systems** section, use the fields to create one or more auto-approval rules.
    + **Products**: The operating system versions that the approval rule applies to, such as `WindowsServer2012`. You can choose one, more than one, or all supported versions of Windows. The default selection is `All`.
    + **Classification**: Choose `ServicePacks`.
-   + **Severity**: The severity value of patches the rule is to apply to. To ensure that all Service Packs are included by the rule, choose `All`.
+   + **Severity**: The severity value of patches the rule is to apply to. To make sure that all Service Packs are included by the rule, choose `All`.
    + **Auto-approval**: The method for selecting patches for automatic approval.
      + **Approve patches after a specified number of days**: The number of days for Patch Manager to wait after a patch is released or updated before a patch is automatically approved. You can enter any integer from zero (0) to 360. For most scenarios, we recommend waiting no more than 100 days.
      + **Approve patches released up to a specific date**: The patch release date for which Patch Manager automatically applies all patches released or updated on or before that date. For example, if you specify July 7, 2023, no patches released or last updated on or after July 8, 2023, are installed automatically.

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-outboun
 
  **To enable Connect Customer Customer Profiles and Connect Customer outbound campaigns**
 
-1.  When creating an Connect Customer instance, when you get to **Step 4 - Data storage**, keep **Enable Customer Profiles** selected, as shown in the following image. This option enables  Connect Customer Customer Profiles and outbound campaigns.
+1.  When creating a Connect Customer instance, when you get to **Step 4 - Data storage**, keep **Enable Customer Profiles** selected, as shown in the following image. This option enables  Connect Customer Customer Profiles and outbound campaigns.
 
 ![The Data storage page the Enable Customer Profiles option.](http://docs.aws.amazon.com/connect/latest/adminguide/images/enable-outbound-campaigns-customer-profiles-1.png)
 
@@ -32,7 +32,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-outboun
 **Note**
 The KMS configuration will only be used for the outbound campaigns configuration and the KMS key cannot be updated once it is created.
 
-1. Choose **Enable outbound campaigns**. Upon enabling outbound campaigns, a Customer Profiles domain, and an Connect AI agents knowledge base with KnowledgeType `MESSAGE_TEMPLATES` will be created if none existed previously.
+1. Choose **Enable outbound campaigns**. Upon enabling outbound campaigns, a Customer Profiles domain, and an agent assist knowledge base with KnowledgeType `MESSAGE_TEMPLATES` will be created if none existed previously.
 
 1. You will be redirected to the home page and see a notification bar indicating that resources are being created.
 ![Notification banner indicating resources are being created for outbound campaigns.](http://docs.aws.amazon.com/connect/latest/adminguide/images/existing-customers-enable-outbound-campaigns-3.png)

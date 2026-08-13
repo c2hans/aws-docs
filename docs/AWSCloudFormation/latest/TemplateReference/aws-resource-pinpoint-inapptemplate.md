@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Content](#cfn-pinpoint-inapptemplate-content)" : {{[ InAppMessageContent, ... ]}},
       "[CustomConfig](#cfn-pinpoint-inapptemplate-customconfig)" : {{Json}},
       "[Layout](#cfn-pinpoint-inapptemplate-layout)" : {{String}},
-      "[Tags](#cfn-pinpoint-inapptemplate-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
+      "[Tags](#cfn-pinpoint-inapptemplate-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
       "[TemplateDescription](#cfn-pinpoint-inapptemplate-templatedescription)" : {{String}},
       "[TemplateName](#cfn-pinpoint-inapptemplate-templatename)" : {{String}}
     }
@@ -42,7 +42,7 @@ Properties:
   [CustomConfig](#cfn-pinpoint-inapptemplate-customconfig): {{Json}}
   [Layout](#cfn-pinpoint-inapptemplate-layout): {{String}}
   [Tags](#cfn-pinpoint-inapptemplate-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
   [TemplateDescription](#cfn-pinpoint-inapptemplate-templatedescription): {{String}}
   [TemplateName](#cfn-pinpoint-inapptemplate-templatename): {{String}}
 ```
@@ -79,7 +79,7 @@ A string that determines the appearance of the in-app message. You can specify o
 An array of key-value pairs to apply to this resource.
 For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TemplateDescription`  <a name="cfn-pinpoint-inapptemplate-templatedescription"></a>

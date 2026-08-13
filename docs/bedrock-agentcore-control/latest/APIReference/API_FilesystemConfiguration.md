@@ -13,6 +13,11 @@ Configuration for a filesystem that can be mounted into the AgentCore Runtime.
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
+ ** capacityProviderVolume **   <a name="bedrockagentcorecontrol-Type-FilesystemConfiguration-capacityProviderVolume"></a>
+Configuration for a capacity provider volume to mount into the AgentCore Runtime. This mounts a persistent volume that is defined on the capacity provider, referenced by its logical name.
+Type: [CapacityProviderVolumeConfiguration](API_CapacityProviderVolumeConfiguration.md) object
+Required: No
+
  ** efsAccessPoint **   <a name="bedrockagentcorecontrol-Type-FilesystemConfiguration-efsAccessPoint"></a>
 Configuration for an Amazon EFS access point to mount into the AgentCore Runtime.
 Type: [EfsAccessPointConfiguration](API_EfsAccessPointConfiguration.md) object

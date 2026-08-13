@@ -19,7 +19,7 @@ The platform endpoint allows Amazon SNS to send push notification messages to th
 
 To push notifications to an app with Amazon SNS, that app's device token must first be registered with Amazon SNS by calling the create platform endpoint action. This action takes the Amazon Resource Name (ARN) of the platform application and the device token as parameters and returns the ARN of the created platform endpoint.
 
-The [https://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformEndpoint.html](https://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformEndpoint.html) action does the following:
+The [`CreatePlatformEndpoint`](https://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformEndpoint.html) action does the following:
 + If the platform endpoint already exists, do not create it again. Return to the caller the ARN of the existing platform endpoint.
 + If the platform endpoint with the same device token but different settings already exists, do not create it again. Throw an exception to the caller.
 + If the platform endpoint does not exist, create it. Return to the caller the ARN of the newly-created platform endpoint.

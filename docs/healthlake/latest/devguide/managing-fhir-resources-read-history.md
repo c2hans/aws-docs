@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-fhir
 # Reading FHIR resource history
 <a name="managing-fhir-resources-read-history"></a>
 
-The FHIR `history` interaction retrieves the history of a particular FHIR resource in a HealthLake data store. Using this interaction, you can determine how the contents of a FHIR resource have changed over time. It is also useful in coordination with audit logs to see the state of a resource before and after modification. The FHIR interactions `create`, `update`, and `delete` result in a historical version of the resource to be saved. For additional information, see [https://hl7.org/fhir/R4/http.html#history](https://hl7.org/fhir/R4/http.html#history) in the **FHIR R4 RESTful API documentation**.
+The FHIR `history` interaction retrieves the history of a particular FHIR resource in a HealthLake data store. Using this interaction, you can determine how the contents of a FHIR resource have changed over time. It is also useful in coordination with audit logs to see the state of a resource before and after modification. The FHIR interactions `create`, `update`, and `delete` result in a historical version of the resource to be saved. For additional information, see [`history`](https://hl7.org/fhir/R4/http.html#history) in the **FHIR R4 RESTful API documentation**.
 
 **Note**
 You can opt out of `history` for specific FHIR resource types. To opt out, create a case using [AWS Support Center Console](https://console.aws.amazon.com/support/home#/). To create your case, log in to your AWS account and choose **Create case**.
@@ -43,7 +43,7 @@ You can opt out of `history` for specific FHIR resource types. To opt out, creat
 ------
 #### [ SMART on FHIR ]
 
-   SMART on FHIR authorization example for the [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
+   SMART on FHIR authorization example for the [`IdentityProviderConfiguration`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
 
    ```
    {
@@ -58,7 +58,7 @@ You can opt out of `history` for specific FHIR resource types. To opt out, creat
 
 ------
 
-   The return content of a `history` interaction is contained in a FHIR resource `Bundle`, with type set to `history`. It contains the specified version history, sorted with oldest versions last, and includes deleted resources. For more information, see [https://hl7.org/fhir/R4/bundle.html](https://hl7.org/fhir/R4/bundle.html) in the **FHIR R4 documentation**.
+   The return content of a `history` interaction is contained in a FHIR resource `Bundle`, with type set to `history`. It contains the specified version history, sorted with oldest versions last, and includes deleted resources. For more information, see [`Resource Bundle`](https://hl7.org/fhir/R4/bundle.html) in the **FHIR R4 documentation**.
 
 ## Reading version-specific FHIR resource history
 <a name="managing-fhir-data-get-version-specific-resource"></a>
@@ -68,9 +68,9 @@ The FHIR `vread` interaction performs a version-specific read of a resource in a
 **Note**
 If you use FHIR `history` interaction *without* `vread`, HealthLake always returns the latest version of the resource's metadata.
 
-HealthLake declares it support for versioning in [https://hl7.org/fhir/R4/capabilitystatement-definitions.html#CapabilityStatement.rest.resource.versioning](https://hl7.org/fhir/R4/capabilitystatement-definitions.html#CapabilityStatement.rest.resource.versioning) for each supported resource. All HealthLake data stores include `Resource.meta.versionId` (`vid`) on all resources.
+HealthLake declares it support for versioning in [`CapabilityStatement.rest.resource.versioning`](https://hl7.org/fhir/R4/capabilitystatement-definitions.html#CapabilityStatement.rest.resource.versioning) for each supported resource. All HealthLake data stores include `Resource.meta.versionId` (`vid`) on all resources.
 
-When FHIR `history` interaction is enabled (by default for data stores created after 10/25/2024 or by request for older data stores), the `Bundle` response includes the `vid` as part of the [https://hl7.org/fhir/R4/bundle-definitions.html#Bundle.entry.response.location](https://hl7.org/fhir/R4/bundle-definitions.html#Bundle.entry.response.location) element. In the following example, the `vid` displays as the number `1`. To view the full example, see [Example Bundle/bundle-response (JSON)](https://build.fhir.org/bundle-response.json.html).
+When FHIR `history` interaction is enabled (by default for data stores created after 10/25/2024 or by request for older data stores), the `Bundle` response includes the `vid` as part of the [`location`](https://hl7.org/fhir/R4/bundle-definitions.html#Bundle.entry.response.location) element. In the following example, the `vid` displays as the number `1`. To view the full example, see [Example Bundle/bundle-response (JSON)](https://build.fhir.org/bundle-response.json.html).
 
 ```
 "response" : {
@@ -110,7 +110,7 @@ When FHIR `history` interaction is enabled (by default for data stores created a
 ------
 #### [ SMART on FHIR ]
 
-   SMART on FHIR authorization example for the [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
+   SMART on FHIR authorization example for the [`IdentityProviderConfiguration`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
 
    ```
    {

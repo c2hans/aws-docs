@@ -5,17 +5,17 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/cost.html
 # Cost
 <a name="cost"></a>
 
-You are responsible for the cost of the AWS services used while running this solution. As of this latest revision, the cost for running the default basic implementation of this solution in the US East (N. Virginia) Region is approximately **$547.33 per month**.
+You are responsible for the cost of the AWS services used while running this guidance. As of this latest revision, the cost for running the default basic implementation of this guidance in the US East (N. Virginia) Region is approximately **$547.33 per month**.
 
 **Note**
-Amazon Kendra and Amazon Connect are **not** part of the default solution implementation, but the solution does provide the capability to integrate with them. Because the solution does not create resources for Amazon Kendra or Amazon Connect automatically, they are not included in the example cost table. If you intend to integrate Amazon Kendra and Amazon Connect, review the [Amazon Kendra pricing](https://aws.amazon.com/kendra/pricing/) and [Amazon Connect pricing](https://aws.amazon.com/connect/pricing/) to adjust your cost estimate accordingly.
+Amazon Kendra and Amazon Connect are **not** part of the default guidance implementation, but the guidance does provide the capability to integrate with them. Because the guidance does not create resources for Amazon Kendra or Amazon Connect automatically, they are not included in the example cost table. If you intend to integrate Amazon Kendra and Amazon Connect, review the [Amazon Kendra pricing](https://aws.amazon.com/kendra/pricing/) and [Amazon Connect pricing](https://aws.amazon.com/connect/pricing/) to adjust your cost estimate accordingly.
 
-We recommend creating a [budget](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-create.html) through [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) to help manage costs. Prices are subject to change. For full details, see the pricing webpage for each AWS service used in this solution. For additional information, see [Creating a cost budget](https://docs.aws.amazon.com/cost-management/latest/userguide/create-cost-budget.html) in the *AWS Cost Management User Guide*.
+We recommend creating a [budget](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-create.html) through [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) to help manage costs. Prices are subject to change. For full details, see the pricing webpage for each AWS service used in this guidance. For additional information, see [Creating a cost budget](https://docs.aws.amazon.com/cost-management/latest/userguide/create-cost-budget.html) in the *AWS Cost Management User Guide*.
 
 ## Option 1: Default basic deployment
 <a name="option-1-default-basic-deployment"></a>
 
-The following table provides a sample cost breakdown for deploying this solution with the default parameters in the US East (N. Virginia) Region for one month.
+The following table provides a sample cost breakdown for deploying this guidance with the default parameters in the US East (N. Virginia) Region for one month.
 
 | AWS service | Dimensions | Cost [$USD] |
 | --- | --- | --- |

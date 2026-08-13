@@ -15,7 +15,7 @@ After you have started AWS Config, you can use AWS CLI commands to check that th
 ## Step 1: Check that a delivery channel is Created
 <a name="gs-cli-verify-channel"></a>
 
-Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-delivery-channels.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-delivery-channels.html) command to check that your Amazon S3 bucket and Amazon SNS topic is configured.
+Use the [`describe-delivery-channels`](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-delivery-channels.html) command to check that your Amazon S3 bucket and Amazon SNS topic is configured.
 
 You can use the `--delivery-channel-names` field to specify a list of delivery channel. If a delivery channel is not specified, this command returns the details of all delivery channels associated with the account.
 
@@ -35,7 +35,7 @@ $ aws configservice describe-delivery-channels
 ## Step 2: Check that a configuration recorder is Created
 <a name="gs-cli-verify-recorder"></a>
 
-Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorders.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorders.html) command to check that a configuration recorder is created.
+Use the [`describe-configuration-recorders`](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorders.html) command to check that a configuration recorder is created.
 
 You can use the `arn` and `configuration-recorder-names` fields to specify a list of configuration recorders. If a configuration recorder is not specified, this command returns the details of all configuration recorders associated with the account.
 
@@ -54,7 +54,7 @@ $ aws configservice describe-configuration-recorders
 ## Step 3: Check that AWS Config has started recording
 <a name="gs-cli-verify-config-recording"></a>
 
-Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorder-status.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorder-status.html) command to check that the configuration recorder is successfully recording the resource types in scope.
+Use the [`describe-configuration-recorder-status`](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorder-status.html) command to check that the configuration recorder is successfully recording the resource types in scope.
 
 You can use the `arn` and `configuration-recorder-names` fields to specify a list of configuration recorders. If a configuration recorder is not specified, this command returns the details of all configuration recorders associated with the account.
 

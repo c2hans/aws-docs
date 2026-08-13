@@ -21,7 +21,7 @@ Before you begin using CloudWatch Metrics centralization, familiarize yourself w
 ## Centralized metrics
 <a name="metrics-centralization-centralized-metrics"></a>
 
-When you enable metrics centralization, CloudWatch automatically centralizes metrics from your source accounts to the destination account. Once centralized, a copy of the metrics is now owned by your destination account. Metrics ingested via PutMetricData or EMF are queryable using GetMetricData. Metrics ingested via OpenTelemetry (OTLP) are queryable using PromQL.
+When you enable metrics centralization, CloudWatch automatically centralizes metrics from your source accounts to the destination account. Once centralized, a copy of the metrics is now owned by your destination account. Metrics ingested through PutMetricData or EMF are queryable using GetMetricData. Metrics ingested through OpenTelemetry (OTLP) are queryable using PromQL.
 
 ### Supported metric types
 <a name="metrics-centralization-supported-types"></a>
@@ -99,7 +99,7 @@ Use the following procedure to create a centralization rule that centralizes met
 
 1. Specify destination details by setting the following fields, then choose **Next**:
 
-   1. **Metrics**: Ensure Metrics is selected (it is enabled by default). If you only want to centralize metrics, you can deselect Logs.
+   1. **Metrics**: Make sure Metrics is selected (it is enabled by default). If you only want to centralize metrics, you can deselect Logs.
 
    1. **Destination region**: Select a primary Region that stores a copy of the centralized metric data.
 
@@ -172,8 +172,6 @@ The following CloudWatch features work with centralized metrics in the destinati
 **Note**
 Resource-based automatic dashboards (such as EC2 and S3) have partial support. These dashboards may show incomplete data for centralized metrics because they depend on resource metadata that is not centralized from source accounts.
 
-**Fully supported features**
-
 | Feature | Description |
 | --- | --- |
 | GetMetricData API | Query metric data points programmatically |
@@ -182,7 +180,7 @@ Resource-based automatic dashboards (such as EC2 and S3) have partial support. T
 | Console Metric Browser | Browse and navigate centralized metrics |
 | Metrics Insights (SQL queries) | Query metrics using SQL-like syntax |
 | Query Studio | Unified query interface for PromQL and metrics |
-| Search Expressions | Dynamic metric discovery via SEARCH() |
+| Search Expressions | Dynamic metric discovery through SEARCH() |
 | Metric Math | Arithmetic, comparison, and logical operators on time series |
 | Anomaly Detection | ML-based anomaly detection models and alarms |
 | Metric Alarms | Standard threshold-based alarms |

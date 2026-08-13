@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-mana
 # Managing subscriptions in AWS Marketplace
 <a name="buyer-managing-subscriptions"></a>
 
-You can view and manage your subscriptions in the AWS Marketplace console on the [https://aws.amazon.com/marketplace/management/subscriptions](https://aws.amazon.com/marketplace/management/subscriptions) page.
+You can view and manage your subscriptions in the AWS Marketplace console on the [**Manage subscriptions**](https://aws.amazon.com/marketplace/management/subscriptions) page.
 
 ## Viewing your subscriptions
 <a name="view-subscriptions"></a>

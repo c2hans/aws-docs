@@ -7,7 +7,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 # Connecting Zendesk to Amazon Q Business
 <a name="zendesk-connector"></a>
 
- Zendesk is a customer relationship management system that helps businesses automate and enhance customer support interactions. You can connect a Zendesk instance to Amazon Q Business—using either the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q web experience.
+ Zendesk is a customer relationship management system that helps businesses automate and enhance customer support interactions. You can connect a Zendesk instance to Amazon Q Business—using either the AWS Management Console or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q web experience.
 
 **Topics**
 + [Known limitations for the Zendesk connector](zendesk-limitations.md)

@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/state-m
 You can edit a State Manager association to specify a new name, schedule, severity level, targets, or other values. For associations based on SSM Command-type documents, you can also choose to write the output of the command to an Amazon Simple Storage Service (Amazon S3) bucket. After you edit an association, State Manager creates a new version. You can view different versions after editing, as described in the following procedures.
 
 **Note**
-In order for associations that are created with Automation runbooks to be applied when new target nodes are detected, certain conditions must be met. For information, see [About target updates with Automation runbooks](state-manager-about.md#runbook-target-updates).
+For associations that are created with Automation runbooks to be applied when new target nodes are detected, certain conditions must be met. For information, see [About target updates with Automation runbooks](state-manager-about.md#runbook-target-updates).
 
 The following procedures describe how to edit and create a new version of an association using the Systems Manager console, AWS Command Line Interface (AWS CLI), and AWS Tools for PowerShell (Tools for PowerShell).
 
@@ -23,7 +23,7 @@ State Manager doesn't support running associations that use a new version of a d
 The following procedure describes how to use the Systems Manager console to edit and create a new version of an association.
 
 **Note**
-For associations that use SSM Command documents, not Automation runbooks, this procedure requires that you have write access to an existing Amazon S3 bucket. If you haven't used Amazon S3 before, be aware that you will incur charges for using Amazon S3. For information about how to create a bucket, see [Create a Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/CreatingABucket.html).
+For associations that use SSM Command documents, not Automation runbooks, this procedure requires that you have write access to an existing Amazon S3 bucket. If you haven't used Amazon S3 before, be aware that you incur charges for using Amazon S3. For information about how to create a bucket, see [Create a Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/CreatingABucket.html).
 
 **To edit a State Manager association**
 
@@ -64,7 +64,7 @@ The following procedure describes how to use the AWS CLI (on Linux or Windows Se
 
 1. Use the following format to create a command to edit and create a new version of an existing State Manager association. Replace each {{example resource placeholder}} with your own information.
 **Important**
-When you call `[https://docs.aws.amazon.com/cli/latest/reference/ssm/desupdatecribe-association.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/desupdatecribe-association.html)`, the system drops all optional parameters from the request and overwrites the association with null values for those parameters. This is by design. You must specify all optional parameters in the call, even if you are not changing the parameters. This includes the `--name` parameter. Before calling this action, we recommend that you call the `[https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-association.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-association.html)` operation and make a note of all optional parameters required for your `update-association` call.
+When you call `[update-association](https://docs.aws.amazon.com/cli/latest/reference/ssm/desupdatecribe-association.html)`, the system drops all optional parameters from the request and overwrites the association with null values for those parameters. This is by design. You must specify all optional parameters in the call, even if you are not changing the parameters. This includes the `--name` parameter. Before calling this action, we recommend that you call the `[describe-association](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-association.html)` operation and make a note of all optional parameters required for your `update-association` call.
 
 ------
 #### [ Linux & macOS ]

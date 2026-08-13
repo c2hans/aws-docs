@@ -51,7 +51,7 @@ The following tutorial shows how to use the AWS CLI to create a VPC link and a p
 
    Note the `id` value of the newly created `VpcLink`. In this example output, it's `gim7c3`. You need it to set up the private integration.
 
-1. Use the following [create-rest-api](https://docs.aws.amazon.com/cli/latest/reference/apigateway/create-rest-api.html) command to create an API Gateway [https://docs.aws.amazon.com/apigateway/latest/api/API_RestApi.html](https://docs.aws.amazon.com/apigateway/latest/api/API_RestApi.html) resource:
+1. Use the following [create-rest-api](https://docs.aws.amazon.com/cli/latest/reference/apigateway/create-rest-api.html) command to create an API Gateway [`RestApi`](https://docs.aws.amazon.com/apigateway/latest/api/API_RestApi.html) resource:
 
    ```
    aws apigateway create-rest-api --name 'My VPC Link Test'

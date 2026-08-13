@@ -28,7 +28,7 @@ You can manage template versions manually or with template sync configurations:
 + Use the AWS Proton console and AWS CLI to create a new minor or major version.
 + [Create a template sync configuration](create-template-sync.md) that lets AWS Proton automatically create a new minor or major version when it detects a change to your template bundle in a repository that you define.
 
-For additional information, see the [https://docs.aws.amazon.com/proton/latest/APIReference/Welcome.html](https://docs.aws.amazon.com/proton/latest/APIReference/Welcome.html).
+For additional information, see the [*The AWS Proton Service API Reference*](https://docs.aws.amazon.com/proton/latest/APIReference/Welcome.html).
 
 **Topics**
 + [Versioned templates](ag-template-versions.md)

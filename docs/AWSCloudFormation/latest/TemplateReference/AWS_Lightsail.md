@@ -18,6 +18,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Lightsail::DiskSnapshot](aws-resource-lightsail-disksnapshot.md)
 + [AWS::Lightsail::Distribution](aws-resource-lightsail-distribution.md)
 + [AWS::Lightsail::Domain](aws-resource-lightsail-domain.md)
++ [AWS::Lightsail::ExportSnapshotRecord](aws-resource-lightsail-exportsnapshotrecord.md)
 + [AWS::Lightsail::Instance](aws-resource-lightsail-instance.md)
 + [AWS::Lightsail::InstanceSnapshot](aws-resource-lightsail-instancesnapshot.md)
 + [AWS::Lightsail::LoadBalancer](aws-resource-lightsail-loadbalancer.md)

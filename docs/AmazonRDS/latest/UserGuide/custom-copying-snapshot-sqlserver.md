@@ -190,7 +190,7 @@ RDS Custom for SQL Server creates a DB snapshot copy of your DB instance in the 
 ------
 #### [ AWS CLI ]
 
-You can copy a RDS Custom for SQL Server DB snapshot by using the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/copy-db-snapshot.html](https://docs.aws.amazon.com/cli/latest/reference/rds/copy-db-snapshot.html). If you are copying the snapshot to a new AWS Region, run the command in the new AWS Region. The following options are used to copy a DB snapshot. Not all options are required for all scenarios.
+You can copy a RDS Custom for SQL Server DB snapshot by using the AWS CLI command [copy-db-snapshot](https://docs.aws.amazon.com/cli/latest/reference/rds/copy-db-snapshot.html). If you are copying the snapshot to a new AWS Region, run the command in the new AWS Region. The following options are used to copy a DB snapshot. Not all options are required for all scenarios.
 + `--source-db-snapshot-identifier` ‐ The identifier for the source DB snapshot.
   + If the source snapshot is in a different AWS Region than the copy, specify a valid DB snapshot ARN. For example, `arn:aws:rds:us-west-2:123456789012:snapshot:instance1-snapshot-12345678`.
 + `--target-db-snapshot-identifier` ‐ The identifier for the new copy of the DB snapshot.

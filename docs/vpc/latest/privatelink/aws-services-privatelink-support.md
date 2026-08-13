@@ -104,8 +104,15 @@ Choose the link in the **AWS service** column to see the documentation for servi
   - com.amazonaws.{{region}}.acm
   - com.amazonaws.{{region}}.acm-fips
 
-- ** [Amazon Chime SDK Voice](https://docs.aws.amazon.com/chime-sdk/latest/dg/vpc-interface-endpoints.html) **
+- ** [Amazon Chime SDK](https://docs.aws.amazon.com/chime-sdk/latest/dg/vpc-interface-endpoints.html) **
   - com.amazonaws.{{region}}.chime-sdk-voice
+  - com.amazonaws.{{region}}.meetings-chime
+  - com.amazonaws.{{region}}.messaging-chime
+  - com.amazonaws.{{region}}.messaging-chime-fips
+  - com.amazonaws.{{region}}.identity-chime
+  - com.amazonaws.{{region}}.identity-chime-fips
+  - com.amazonaws.{{region}}.media-pipelines-chime
+  - com.amazonaws.{{region}}.media-pipelines-chime-fips
 
 - **[AWS Clean Rooms](https://docs.aws.amazon.com/clean-rooms/latest/userguide/vpc-interface-endpoints.html)**
   - com.amazonaws.{{region}}.cleanrooms

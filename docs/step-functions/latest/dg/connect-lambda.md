@@ -15,7 +15,7 @@ If an exception is raised within the Lambda function, the Task will fail. For a 
 
 ## Optimized Lambda APIs
 <a name="connect-lambda-api"></a>
-+ [https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html)
++ [`Invoke`](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html)
 
 ## Workflow Examples
 <a name="connect-lambda-api-examples"></a>

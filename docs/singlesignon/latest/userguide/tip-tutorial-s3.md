@@ -24,7 +24,7 @@ Before you can get started with this tutorial, you'll need to set up the followi
 
 **If you have not created an Amazon S3 Access Grants yet, follow these steps:**
 
-1. [https://docs.aws.amazon.com//AmazonS3/latest/userguide/access-grants-instance-create.html](https://docs.aws.amazon.com//AmazonS3/latest/userguide/access-grants-instance-create.html) - You can create one S3 Access Grants instance per AWS Region. When you create the S3 Access Grants instance, make sure to check the **Add IAM Identity Center instance** box and provide the ARN of your IAM Identity Center instance. Select **Next**.
+1. [**Create an S3 Access Grants instance**](https://docs.aws.amazon.com//AmazonS3/latest/userguide/access-grants-instance-create.html) - You can create one S3 Access Grants instance per AWS Region. When you create the S3 Access Grants instance, make sure to check the **Add IAM Identity Center instance** box and provide the ARN of your IAM Identity Center instance. Select **Next**.
 
    The following image shows the Create S3 Access Grants instance page in the Amazon S3 Access Grants console:
 ![Create S3 Access Grants instance page in S3 Access Grants console.](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/s3-tutorial-step-1.1.png)

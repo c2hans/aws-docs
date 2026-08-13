@@ -177,6 +177,9 @@ Configuration changes that modify the [launch configuration](command-options-gen
 
 Use the **Configure service access** page to configure service and instance security settings.
 
+**Note**
+If role manager is enabled in your account, Elastic Beanstalk attaches the service role for you, and the **Service role** dropdown and **Create role** steps described here are replaced by a **Customize** option. To use a different role, choose **Customize**. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
+
 For a description of Elastic Beanstalk security concepts, see [Elastic Beanstalk Service roles, instance profiles, and user policies](concepts-roles.md).
 
 The first time you create an environment in the Elastic Beanstalk console, you must create an EC2 instance profile with a default set of permissions. If the **EC2 instance profile** dropdown list doesn't show any values to choose from, expand the procedure that follows. It provides steps to create a Role that you can subsequently select for the **EC2 instance profile**.

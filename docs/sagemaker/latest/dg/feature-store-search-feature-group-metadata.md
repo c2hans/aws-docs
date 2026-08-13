@@ -12,7 +12,7 @@ The feature groups that you're searching for must be within your AWS Region and 
 
 The following table shows the searchable fields and whether you can use the console to search for a specific field.
 
-You can search for features using either Amazon SageMaker Studio Classic or the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html) operation in the SageMaker API. The following table lists all of the searchable metadata and whether you can search for it in the console. Tags are searchable for your own feature groups but are not searchable for feature groups made discoverable to you.
+You can search for features using either Amazon SageMaker Studio Classic or the [`Search`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html) operation in the SageMaker API. The following table lists all of the searchable metadata and whether you can search for it in the console. Tags are searchable for your own feature groups but are not searchable for feature groups made discoverable to you.
 
 ****
 
@@ -83,7 +83,7 @@ Use the latest version of Amazon SageMaker Studio Classic to get the most recent
 ### Find feature groups using SDK for Python (Boto3)
 <a name="feature-store-search-feature-group-metadata-how-to-with-sdk"></a>
 
-The code in this section uses the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html) operation in the AWS SDK for Python (Boto3) to run the search query to find feature groups. For information about the other languages to submit a query, see [See Also](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html#API_Search_SeeAlso) in the *Amazon SageMaker API Reference*.
+The code in this section uses the [`Search`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html) operation in the AWS SDK for Python (Boto3) to run the search query to find feature groups. For information about the other languages to submit a query, see [See Also](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html#API_Search_SeeAlso) in the *Amazon SageMaker API Reference*.
 
 For more Feature Store examples and resources, see [Amazon SageMaker Feature Store resources](feature-store-resources.md).
 

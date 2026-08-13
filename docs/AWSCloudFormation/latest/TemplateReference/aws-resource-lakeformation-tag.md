@@ -55,7 +55,7 @@ The identifier for the Data Catalog. By default, the account ID. The Data Catalo
 `TagKey`  <a name="cfn-lakeformation-tag-tagkey"></a>
  UTF-8 string, not less than 1 or more than 255 bytes long, matching the [single-line string pattern](https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-aws-lake-formation-api-common.html).
 The key-name for the LF-tag.
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 *Required*: Yes
 *Type*: String
 *Pattern*: `^([{a-zA-Z}{\s}{0-9}_.:\/=+\-@%]*)$`

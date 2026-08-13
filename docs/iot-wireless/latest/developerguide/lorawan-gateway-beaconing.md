@@ -15,7 +15,7 @@ To configure these beaconing parameters, your gateway must be running LoRa Basic
 **Note**
 You only need to configure the beaconing parameters for your gateway if it's communicating with a class B wireless device.
 
-You configure the beaconing parameters when adding your gateway to AWS IoT Core for LoRaWAN using the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessGateway.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessGateway.html) API operation. When you invoke the API operation, specify the following parameters using the `Beaconing` object for your gateways. After you configure the parameters, the gateways will send the beacons to your devices at a 128-second interval.
+You configure the beaconing parameters when adding your gateway to AWS IoT Core for LoRaWAN using the [`CreateWirelessGateway`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessGateway.html) API operation. When you invoke the API operation, specify the following parameters using the `Beaconing` object for your gateways. After you configure the parameters, the gateways will send the beacons to your devices at a 128-second interval.
 + `DataRate`: The data rate for the gateways that are transmitting the beacons.
 + `Frequencies`: The list of frequencies for the gateways to transmit the beacons.
 
@@ -67,7 +67,7 @@ The following code shows a sample output of running this command.
 ## Get information about the beaconing parameters
 <a name="lorawan-beaconing-get"></a>
 
-You can get information about the beaconing parameters for your gateway using the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessGateway.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessGateway.html) API operation.
+You can get information about the beaconing parameters for your gateway using the [`GetWirelessGateway`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessGateway.html) API operation.
 
 **Note**
 If a gateway has already been onboarded, you can't use the `UpdateWirelessGateway` API operation to configure the beaconing parameters. To configure the parameters, you must delete the gateway and then specify the parameters when adding your gateway using the `CreateWirelessGateway` API operation.

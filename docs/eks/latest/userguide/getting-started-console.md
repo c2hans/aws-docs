@@ -11,7 +11,7 @@ To contribute to this user guide, choose the **Edit this page on GitHub** link t
 
 **Note**
 This topic covers getting started **without** EKS Auto Mode. It uses Managed Node Groups to deploy nodes.
-EKS Auto Mode automates routine tasks for cluster compute, storage, and networking. [Learn how to get started with Amazon EKS Auto Mode. ](getting-started-automode.md) EKS Auto Mode is the preferred method of deploying nodes.
+EKS Auto Mode automates routine tasks for cluster compute, storage, and networking. [Learn how to get started with Amazon EKS Auto Mode.](getting-started-automode.md) EKS Auto Mode is the preferred method of deploying nodes.
 
 This guide helps you to create all of the required resources to get started with Amazon Elastic Kubernetes Service (Amazon EKS) using the AWS Management Console and the AWS CLI. In this guide, you manually create each resource. At the end of this tutorial, you will have a running Amazon EKS cluster that you can deploy applications to.
 
@@ -23,7 +23,7 @@ The procedures in this guide give you complete visibility into how each resource
 Before starting this tutorial, you must install and configure the following tools and resources that you need to create and manage an Amazon EKS cluster.
 +  ** AWS CLI** – A command line tool for working with AWS services, including Amazon EKS. For more information, see [Installing](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html) in the AWS Command Line Interface User Guide. After installing the AWS CLI, we recommend that you also configure it. For more information, see [Quick configuration with aws configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-config) in the AWS Command Line Interface User Guide. Note that AWS CLI v2 is required to use the **update-kubeconfig** option shown on this page.
 +  ** `kubectl` ** – A command line tool for working with Kubernetes clusters. For more information, see [Set up `kubectl` and `eksctl`](install-kubectl.md).
-+  **Required IAM permissions** – The IAM security principal that you’re using must have permissions to work with Amazon EKS IAM roles, service linked roles, AWS CloudFormation, a VPC, and related resources. For more information, see [Actions](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelastickubernetesservice.html) and [Using service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html) in the IAM User Guide. You must complete all steps in this guide as the same user. To check the current user, run the following command:
++  **Required IAM permissions** – The IAM security principal that you’re using must have permissions to work with Amazon EKS IAM roles, service-linked roles, AWS CloudFormation, a VPC, and related resources. For more information, see [Actions](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelastickubernetesservice.html) and [Using service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html) in the IAM User Guide. You must complete all steps in this guide as the same user. To check the current user, run the following command:
 
   ```
   aws sts get-caller-identity

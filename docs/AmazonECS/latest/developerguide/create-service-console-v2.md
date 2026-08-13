@@ -32,9 +32,9 @@ Decide on the following configuration parameters before you create a service:
 + If you need an application to connect to other applications that run in Amazon ECS, determine the option that fits your architecture. For more information, see [Interconnect Amazon ECS services](interconnecting-services.md).
 + When you create a service that uses Amazon ECS circuit breaker, Amazon ECS creates a service deployment and a service revision. These resources allow you to view detailed information about the service history. For more information, see [View service history using Amazon ECS service deployments](service-deployment.md).
 
-  For information about how to create a service using the AWS CLI, see [https://docs.aws.amazon.com/cli/latest/reference/ecs/create-service.html](https://docs.aws.amazon.com/cli/latest/reference/ecs/create-service.html) in the *AWS Command Line Interface Reference*.
+  For information about how to create a service using the AWS CLI, see [create-service](https://docs.aws.amazon.com/cli/latest/reference/ecs/create-service.html) in the *AWS Command Line Interface Reference*.
 
-  For information about how to create a service using AWS CloudFormation, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html) in the *AWS CloudFormation User Guide*.
+  For information about how to create a service using AWS CloudFormation, see [AWS::ECS::Service](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html) in the *AWS CloudFormation User Guide*.
 
 ## Create a service with the default options
 <a name="create-default-service"></a>

@@ -10,9 +10,9 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="aws-properties-greengrass-loggerdefinition-loggerdefinitionversion-description"></a> A logger definition version contains a list of [loggers](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-logger.html).
 
 **Note**
-After you create a logger definition version that contains the loggers you want to deploy, you must add it to your group version. For more information, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html).
+After you create a logger definition version that contains the loggers you want to deploy, you must add it to your group version. For more information, see [`AWS::Greengrass::Group`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html).
 
-<a name="aws-properties-greengrass-loggerdefinition-loggerdefinitionversion-inheritance"></a> In an CloudFormation template, `LoggerDefinitionVersion` is the property type of the `InitialVersion` property in the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinition.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinition.html) resource.
+<a name="aws-properties-greengrass-loggerdefinition-loggerdefinitionversion-inheritance"></a> In an CloudFormation template, `LoggerDefinitionVersion` is the property type of the `InitialVersion` property in the [`AWS::Greengrass::LoggerDefinition`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinition.html) resource.
 
 ## Syntax
 <a name="aws-properties-greengrass-loggerdefinition-loggerdefinitionversion-syntax"></a>

@@ -20,7 +20,7 @@ These controls may not be available in all AWS Regions. For more information, se
 
 **Resource type:** `AWS::StepFunctions::StateMachine`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/step-functions-state-machine-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/step-functions-state-machine-logging-enabled.html)
+**AWS Config rule:** [`step-functions-state-machine-logging-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/step-functions-state-machine-logging-enabled.html)
 
 **Schedule type:** Change triggered
 

@@ -18,23 +18,40 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/alas2.html) on or before **April 20, 2023** to all Amazon Linux 2 platforms.<br />Some of the platform updates are security releases. For more information, see **Platform-specific updates** in this table. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2023-04-28-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2023-04-28-linux.html) |
-| **AMI** | Updated the base AMI to version 2.0.20230418. |
-| **Docker** | Updated Docker Engine to version [20.10.23-1](https://docs.docker.com/engine/release-notes/23.0/#2301) on the *Docker Amazon Linux 2* platform branch. <br />Updated Amazon ECS Agent to version **1.70.1** on the *ECS Amazon Linux 2* platform branch. |
-| **Go** | Updated Go to release 1.20.3. For details, see [go1.20.3](https://go.dev/doc/devel/release#go1.20.3) in *The Go Programming Language Release History*.<br />This is a security release. |
-| **.NET Core** | Updated .NET Core to release [6.0.16](https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0.16/6.0.16.md) .<br />This is a security release. |
-| **Node.js** | Updated Node.js 18 to add support for Node version [18.16.0](https://nodejs.org/en/blog/release/v18.16.0).<br />Updated Node.js 16 to add support for Node version [16.20.0](https://nodejs.org/en/blog/release/v16.20.0/).<br />The Node.js 18 update is security releases. |
-| **PHP** | Updated PHP 8.1 release to [8.1.18](https://www.php.net/releases/8_1_18.php).<br />Updated PHP 8.0 release to [8.0.28](https://www.php.net/releases/8_0_28.php).<br />The PHP 8.0 update is a security release. PHP 7.4 is a retiring (deprecated) platform branch. For full version information of Elastic Beanstalk retiring platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.  |
-| **Python** | Updated Pipenv to release 2023.4.20. For details, see the Pipenv [Release and Version History](https://pipenv.pypa.io/en/latest/changelog/). |
-| **Ruby** | Updated RubyGems to release 3.4.12. For details, see [3.4.12 Released](https://blog.rubygems.org/2023/04/11/3.4.12-released.html) on the *RubyGems blog*.<br />Updated Puma to version [6.2.2](https://github.com/puma/puma/releases/tag/v6.2.2). |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/alas2.html">Amazon Linux Security Center</a> on or before <b>April 20, 2023</b> to all Amazon Linux 2 platforms.<br />Some of the platform updates are security releases. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version 2.0.20230418.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Docker</b></td><td>Updated Docker Engine to version <a href="https://docs.docker.com/engine/release-notes/23.0/#2301">20.10.23-1</a> on the <i>Docker Amazon Linux 2</i> platform branch. <br />Updated Amazon ECS Agent to version <b>1.70.1</b> on the <i>ECS Amazon Linux 2</i> platform branch.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated Go to release 1.20.3. For details, see <a href="https://go.dev/doc/devel/release#go1.20.3">go1.20.3</a> in <i>The Go Programming Language Release History</i>.<br />This is a security release.</td></tr>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET Core to release <a href="https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0.16/6.0.16.md">6.0.16</a> .<br />This is a security release.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated Node.js 18 to add support for Node version <a href="https://nodejs.org/en/blog/release/v18.16.0">18.16.0</a>.<br />Updated Node.js 16 to add support for Node version <a href="https://nodejs.org/en/blog/release/v16.20.0/">16.20.0</a>.<br />The Node.js 18 update is security releases.</td></tr>
+  <tr><td><b>PHP</b></td><td>Updated PHP 8.1 release to <a href="https://www.php.net/releases/8_1_18.php">8.1.18</a>.<br />Updated PHP 8.0 release to <a href="https://www.php.net/releases/8_0_28.php">8.0.28</a>.<br />The PHP 8.0 update is a security release. PHP 7.4 is a retiring (deprecated) platform branch. For full version information of Elastic Beanstalk retiring platform branches, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html">Elastic Beanstalk platform versions scheduled for retirement</a> in the <i>AWS Elastic Beanstalk Platforms</i> guide. </td></tr>
+  <tr><td><b>Python</b></td><td>Updated Pipenv to release 2023.4.20. For details, see the Pipenv <a href="https://pipenv.pypa.io/en/latest/changelog/">Release and Version History</a>.</td></tr>
+  <tr><td><b>Ruby</b></td><td>Updated RubyGems to release 3.4.12. For details, see <a href="https://blog.rubygems.org/2023/04/11/3.4.12-released.html">3.4.12 Released</a> on the <i>RubyGems blog</i>.<br />Updated Puma to version <a href="https://github.com/puma/puma/releases/tag/v6.2.2">6.2.2</a>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2023-04-28-linux.platforms"></a>

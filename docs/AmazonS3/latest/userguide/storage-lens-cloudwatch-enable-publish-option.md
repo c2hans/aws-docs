@@ -306,7 +306,7 @@ public class CreateAndUpdateDashboard {
 ## Using the REST API
 <a name="storage-lens-cloudwatch-enable-publish-api"></a>
 
-To enable the CloudWatch publishing option by using the Amazon S3 REST API, you can use [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutStorageLensConfiguration.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutStorageLensConfiguration.html).
+To enable the CloudWatch publishing option by using the Amazon S3 REST API, you can use [PutStorageLensConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutStorageLensConfiguration.html).
 
 **Next steps**
 After you enable the CloudWatch publishing option, you can access your S3 Storage Lens metrics in CloudWatch. You also can leverage CloudWatch features to monitor and analyze your S3 Storage Lens data in CloudWatch. For more information, see the following topics:

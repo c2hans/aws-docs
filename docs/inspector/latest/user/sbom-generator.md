@@ -107,7 +107,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbom-generator.htm
 **Note**
  Scan time and performance depends on the image size and how small the number of layers are. Smaller images not only improve Sbomgen performance, but also reduce the potential attack surface. Smaller images also improve image build, download, and upload times.
 
- When using Sbomgen with [https://docs.aws.amazon.com/inspector/v2/APIReference/API_scan_ScanSbom.html](https://docs.aws.amazon.com/inspector/v2/APIReference/API_scan_ScanSbom.html), the Amazon Inspector Scan API won't process SBOMs that contain more than 5,000 packages. In this scenario, the Amazon Inspector Scan API returns an HTTP 400 response.
+ When using Sbomgen with [`ScanSbom`](https://docs.aws.amazon.com/inspector/v2/APIReference/API_scan_ScanSbom.html), the Amazon Inspector Scan API won't process SBOMs that contain more than 5,000 packages. In this scenario, the Amazon Inspector Scan API returns an HTTP 400 response.
 
  If an image includes bulk media files or directories, consider excluding them from Sbomgen using the `--skip-files` argument.
 

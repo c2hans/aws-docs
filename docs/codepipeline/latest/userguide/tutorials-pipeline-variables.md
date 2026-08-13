@@ -43,7 +43,7 @@ In this section, you create a pipeline with the following actions:
 
 1. In **Service role**, choose **New service role**.
 **Note**
-If you choose instead to use your existing CodePipeline service role, make sure that you have added the `codeconnections:UseConnection` IAM permission to your service role policy. For instructions for the CodePipeline service role, see [Add permissions to the the CodePipeline service role](https://docs.aws.amazon.com/codepipeline/latest/userguide/security-iam.html#how-to-update-role-new-services).
+If you choose instead to use your existing CodePipeline service role, make sure that you have added the `codeconnections:UseConnection` IAM permission to your service role policy. For instructions for the CodePipeline service role, see [Add permissions to the CodePipeline service role](https://docs.aws.amazon.com/codepipeline/latest/userguide/security-iam.html#how-to-update-role-new-services).
 
 1. Under **Variables**, choose **Add variable**. In **Name**, enter `timeout`. In **Default**, enter 1000. In description, enter the following description: **Timeout**.
 
@@ -59,7 +59,7 @@ This is not the source bucket for your source code. This is the artifact store f
 
    1. In **Source provider**, choose **AWS CodeCommit**.
 
-   1. In **Repository name** and **Branch name**, choose the your repository and branch.
+   1. In **Repository name** and **Branch name**, choose your repository and branch.
 
    Choose **Next**.
 

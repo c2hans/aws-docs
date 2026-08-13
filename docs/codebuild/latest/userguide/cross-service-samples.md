@@ -14,7 +14,7 @@ Uses a Docker image in an Amazon ECR repository to use Apache Maven to produce a
 Shows how to configure a buildspec file so that a CodeBuild project mounts and builds on an Amazon EFS file system. The sample instructions will show you how to create a Amazon VPC, create file system in the Amazon VPC, create and build a project that uses the Amazon VPC, and then review the generated project file and variables.
 
 [AWS CodePipeline samples](sample-codepipeline.md)
-Shows how to use AWS CodePipeline to create a build with batch builds as well as multiple input sources and multiple output artifacts. Included in this section are example JSON files that show pipeline structures that create batch builds with separate artifacts, and combined artifacts. An additonal JSON sample is provided that show the pipeline structure with multiple input sources and multiple output artifacts.
+Shows how to use AWS CodePipeline to create a build with batch builds as well as multiple input sources and multiple output artifacts. Included in this section are example JSON files that show pipeline structures that create batch builds with separate artifacts, and combined artifacts. An additional JSON sample is provided that shows the pipeline structure with multiple input sources and multiple output artifacts.
 
 [AWS Config sample](how-to-integrate-config.md)
 Shows how to set up AWS Config. Lists which CodeBuild resources are tracked and describes how to look up CodeBuild projects in AWS Config. The sample instructions will show you the prerequisites for integrating with AWS Config, the steps to set up AWS Config, and the steps to look up CodeBuild projects and data in AWS Config.

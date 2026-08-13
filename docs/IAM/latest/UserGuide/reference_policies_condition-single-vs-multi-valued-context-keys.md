@@ -14,6 +14,8 @@ For example, a request can originate from at most one VPC endpoint, so [aws:Sour
 **Important**
 The difference between single-valued and multivalued context keys depends on the number of values in the request context, not the number of values in the policy condition.
 
+For policy examples that demonstrate conditions with multiple context keys and values, see [Condition policy examples](reference_policies_condition_examples.md).
+
 ## Key points
 <a name="reference_policies_condition-key-points"></a>
 + The *Single-valued* and *Multivalued* classifications are included in the description of each condition context key as *Value type* in the [AWS global condition context keys](reference_policies_condition-keys.md) topic.

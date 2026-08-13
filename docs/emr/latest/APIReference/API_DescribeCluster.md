@@ -122,6 +122,7 @@ Required: Yes
       "ScaleDownBehavior": "string",
       "SecurityConfiguration": "string",
       "ServiceRole": "string",
+      "SessionEnabled": boolean,
       "Status": {
          "ErrorDetails": [
             {

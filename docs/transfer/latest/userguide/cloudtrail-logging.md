@@ -17,7 +17,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 + [Configuring Amazon SNS notifications for CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/getting_notifications_top_level.html)
 + [Receiving CloudTrail log files from multiple regions](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/receive-cloudtrail-log-files-from-multiple-regions.html) and [Receiving CloudTrail log files from multiple accounts](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.html)
 
-All AWS Transfer Family actions are logged by CloudTrail and are documented in the [https://docs.aws.amazon.com/transfer/latest/APIReference/API_Operations.html](https://docs.aws.amazon.com/transfer/latest/APIReference/API_Operations.html) [https://docs.aws.amazon.com/transfer/latest/APIReference/api_welcome.html](https://docs.aws.amazon.com/transfer/latest/APIReference/api_welcome.html). For example, calls to the `CreateServer`, `ListUsers` and `StopServer` actions generate entries in the CloudTrail log files.
+All AWS Transfer Family actions are logged by CloudTrail and are documented in the [Actions](https://docs.aws.amazon.com/transfer/latest/APIReference/API_Operations.html) [API reference](https://docs.aws.amazon.com/transfer/latest/APIReference/api_welcome.html). For example, calls to the `CreateServer`, `ListUsers` and `StopServer` actions generate entries in the CloudTrail log files.
 
 Every event or log entry contains information about who generated the request. The identity information helps you determine the following:
 + Whether the request was made with root or AWS Identity and Access Management user credentials.

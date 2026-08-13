@@ -936,10 +936,10 @@ In the following table, you can see how the settings of the `includeOpForFullLoa
   <tr><th>includeOpForFullLoad</th><th>cdcInsertsOnly</th><th>For full load</th><th>For CDC load</th></tr>
 </thead>
 <tbody>
-  <tr><td>true</td><td>true</td><td>Added first field value set to I</td><td>Added first field value set to I</td></tr>
-  <tr><td>false</td><td>false</td><td>No added field</td><td>Added first field value set to I, U, or D</td></tr>
-  <tr><td>false</td><td>true</td><td>No added field</td><td>No added field</td></tr>
-  <tr><td>true</td><td>false</td><td>Added first field value set to I</td><td>Added first field value set to I, U, or D</td></tr>
+  <tr><td><code>true</code></td><td><code>true</code></td><td>Added first field value set to <code>I</code></td><td>Added first field value set to <code>I</code></td></tr>
+  <tr><td><code>false</code></td><td><code>false</code></td><td>No added field</td><td>Added first field value set to <code>I</code>, <code>U</code>, or <code>D</code></td></tr>
+  <tr><td><code>false</code></td><td><code>true</code></td><td>No added field</td><td>No added field</td></tr>
+  <tr><td><code>true</code></td><td><code>false</code></td><td>Added first field value set to <code>I</code></td><td>Added first field value set to <code>I</code>, <code>U</code>, or <code>D</code></td></tr>
 </tbody>
 </table>
 
@@ -957,10 +957,10 @@ Similarly, how DMS creates and sets an additional first field depends on the set
   <tr><th>includeOpForFullLoad</th><th>cdcInsertsAndUpdates</th><th>For full load</th><th>For CDC load</th></tr>
 </thead>
 <tbody>
-  <tr><td>true</td><td>true</td><td>Added first field value set to I</td><td>Added first field value set to I or U</td></tr>
-  <tr><td>false</td><td>false</td><td>No added field</td><td>Added first field value set to I, U, or D</td></tr>
-  <tr><td>false</td><td>true</td><td>No added field</td><td>Added first field value set to I or U</td></tr>
-  <tr><td>true</td><td>false</td><td>Added first field value set to I</td><td>Added first field value set to I, U, or D</td></tr>
+  <tr><td><code>true</code></td><td><code>true</code></td><td>Added first field value set to <code>I</code></td><td>Added first field value set to <code>I</code> or <code>U</code></td></tr>
+  <tr><td><code>false</code></td><td><code>false</code></td><td>No added field</td><td>Added first field value set to <code>I</code>, <code>U</code>, or <code>D</code></td></tr>
+  <tr><td><code>false</code></td><td><code>true</code></td><td>No added field</td><td>Added first field value set to <code>I</code> or <code>U</code></td></tr>
+  <tr><td><code>true</code></td><td><code>false</code></td><td>Added first field value set to <code>I</code></td><td>Added first field value set to <code>I</code>, <code>U</code>, or <code>D</code></td></tr>
 </tbody>
 </table>
 

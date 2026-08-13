@@ -51,7 +51,7 @@ The following ElastiCache events trigger Amazon SNS notifications. For informati
 | ElastiCache:ReplicationGroupScalingFailed | `"Failed applying modification to cache node type to %s."` | Scale-up operation on replication group failed.  |
 | ElastiCache:ServiceUpdateAvailableForNode | `"Service update is available for cache node %s."` | A self-service update is available for the node.  |
 | ElastiCache:SnapshotComplete (Valkey or Redis OSS only) |  ElastiCache:SnapshotComplete : {{cluster-name}}  | A cache snapshot has completed successfully. |
-| ElastiCache:SnapshotFailed (Valkey or Redis OSS only) |  SnapshotFailed : {{cluster-name}}  | A cache snapshot has failed. See the cluster’s cache events for more a detailed cause.<br />If you describe the snapshot, see [https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DescribeSnapshots.html](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DescribeSnapshots.html), the status will be `failed`. |
+| ElastiCache:SnapshotFailed (Valkey or Redis OSS only) |  SnapshotFailed : {{cluster-name}}  | A cache snapshot has failed. See the cluster’s cache events for more a detailed cause.<br />If you describe the snapshot, see [`DescribeSnapshots`](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DescribeSnapshots.html), the status will be `failed`. |
 
 ## Related topics
 <a name="ElastiCacheSNS.SeeAlso"></a>

@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/add-custom-vocabulary.html
 ---
 
-# Add custom vocabularies to Contact Lens using the Connect Customer admin website
+# Add custom vocabularies to conversational analytics using the Connect Customer admin website
 <a name="add-custom-vocabulary"></a>
 
-You can improve the accuracy of speech recognition for product names, brand names, and domain-specific terminology, by expanding and tailoring the vocabulary of the speech-to-text engine in Contact Lens.
+You can improve the accuracy of speech recognition for product names, brand names, and domain-specific terminology, by expanding and tailoring the vocabulary of the speech-to-text engine in conversational analytics.
 
 This topic explains how to add custom vocabularies using the Connect Customer admin website. You can also add them using the [CreateVocabulary](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateVocabulary.html) and [AssociateDefaultVocabulary](https://docs.aws.amazon.com/connect/latest/APIReference/API_AssociateDefaultVocabulary.html) APIs.
 
@@ -24,7 +24,7 @@ This topic explains how to add custom vocabularies using the Connect Customer ad
 ## Required permissions
 <a name="add-custom-vocabulary-permissions"></a>
 
-Before you can add custom vocabularies to Connect Customer, you need the **Analytics and Optimization**, **Contact Lens - custom vocabularies** permission assigned to your security profile.
+Before you can add custom vocabularies to Connect Customer, you need the **Analytics and Optimization**, **conversational analytics - custom vocabularies** permission assigned to your security profile.
 
 By default, in new instances of Connect Customer the **Admin** and **CallCenterManager** security profiles have this permission.
 

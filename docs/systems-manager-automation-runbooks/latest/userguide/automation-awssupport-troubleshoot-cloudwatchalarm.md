@@ -80,7 +80,7 @@ The `AutomationAssumeRole` parameter requires the following actions to use the r
 
 Follow these steps to configure the automation:
 
-1. Navigate to [https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootCloudWatchAlarm/description](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootCloudWatchAlarm/description) in Systems Manager under Documents.
+1. Navigate to [`AWSSupport-TroubleshootCloudWatchAlarm`](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootCloudWatchAlarm/description) in Systems Manager under Documents.
 
 1. Select Execute automation.
 

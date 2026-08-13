@@ -35,11 +35,11 @@ Choose your preferred access method to enable S3 Protection for the delegated Gu
 ------
 #### [ API/CLI ]
 
-Run [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html) by using the detector ID of the delegated GuardDuty administrator account for the current Region and passing the `features` object `name` as `S3_DATA_EVENTS` and `status` as `ENABLED`.
+Run [updateDetector](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html) by using the detector ID of the delegated GuardDuty administrator account for the current Region and passing the `features` object `name` as `S3_DATA_EVENTS` and `status` as `ENABLED`.
 
 Alternatively, you can configure S3 Protection by using AWS Command Line Interface. Run the following command, and make sure to replace {{12abc34d567e8fa901bc2d34e56789f0}} with the detector ID of the delegated GuardDuty administrator account for the current Region.
 
-To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
 ```
 aws guardduty update-detector --detector-id {{12abc34d567e8fa901bc2d34e56789f0}} --features '[{"Name": "S3_DATA_EVENTS", "Status": "ENABLED"}]'
@@ -85,10 +85,10 @@ It may take up to 24 hours to update the configuration for the member accounts.
 
 ------
 #### [ API/CLI ]
-+ To selectively enable S3 Protection for your member accounts, invoke the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetectors.html) API operation using your own {{detector ID}}.
++ To selectively enable S3 Protection for your member accounts, invoke the [updateMemberDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetectors.html) API operation using your own {{detector ID}}.
 + The following example shows how you can enable S3 Protection for a single member account. Make sure to replace {{12abc34d567e8fa901bc2d34e56789f0}} with the `detector-id` of the delegated GuardDuty administrator account, and {{111122223333}}.
 
-  To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+  To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
   ```
   aws guardduty update-member-detectors --detector-id {{12abc34d567e8fa901bc2d34e56789f0}} --account-ids {{111122223333}} --features '[{"name": "S3_DATA_EVENTS", "status": "{{ENABLED}}"}]'
@@ -121,10 +121,10 @@ Choose your preferred access method to enable S3 Protection for all the existing
 
 ------
 #### [ API/CLI ]
-+ To selectively enable S3 Protection for your member accounts, invoke the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetectors.html) API operation using your own {{detector ID}}.
++ To selectively enable S3 Protection for your member accounts, invoke the [updateMemberDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetectors.html) API operation using your own {{detector ID}}.
 + The following example shows how you can enable S3 Protection for a single member account. Make sure to replace {{12abc34d567e8fa901bc2d34e56789f0}} with the `detector-id` of the delegated GuardDuty administrator account, and {{111122223333}}.
 
-  To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+  To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
   ```
   aws guardduty update-member-detectors --detector-id {{12abc34d567e8fa901bc2d34e56789f0}} --account-ids {{111122223333}} --features '[{"name": "S3_DATA_EVENTS", "status": "{{ENABLED}}"}]'
@@ -175,10 +175,10 @@ The delegated GuardDuty administrator account can enable for new member accounts
 
 ------
 #### [ API/CLI ]
-+ To selectively enable S3 Protection for your member accounts, invoke the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateOrganizationConfiguration.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateOrganizationConfiguration.html) API operation using your own {{detector ID}}.
++ To selectively enable S3 Protection for your member accounts, invoke the [UpdateOrganizationConfiguration](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateOrganizationConfiguration.html) API operation using your own {{detector ID}}.
 + The following example shows how you can enable S3 Protection for a single member account. Set the preferences to automatically enable or disable the protection plan in that Region for new accounts (`NEW`) that join the organization, all the accounts (`ALL`), or none of the accounts (`NONE`) in the organization. For more information, see [autoEnableOrganizationMembers](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateOrganizationConfiguration.html#guardduty-UpdateOrganizationConfiguration-request-autoEnableOrganizationMembers). Based on your preference, you may need to replace `NEW` with `ALL` or `NONE`.
 
-  To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+  To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
   ```
   aws guardduty update-organization-configuration --detector-id {{12abc34d567e8fa901bc2d34e56789f0}} --auto-enable --features '[{"Name": "S3_DATA_EVENTS", "autoEnable": "{{NEW}}"}]'
@@ -212,9 +212,9 @@ Choose your preferred access method to selectively enable S3 Protection for memb
 ------
 #### [ API/CLI ]
 
-To selectively enable S3 Protection for your member accounts, run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetector.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetector.html) API operation using your own detector ID. The following example shows how you can enable S3 Protection for a single member account. To disable it, replace `true` with `false`.
+To selectively enable S3 Protection for your member accounts, run the [updateMemberDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetector.html) API operation using your own detector ID. The following example shows how you can enable S3 Protection for a single member account. To disable it, replace `true` with `false`.
 
-To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
 ```
  aws guardduty update-member-detectors --detector-id {{12abc34d567e8fa901bc2d34e56789f0}} --account-ids {{123456789012}} --features '[{"Name" : "S3_DATA_EVENTS", "Status" : "ENABLED"}]'
@@ -226,6 +226,6 @@ You can also pass a list of account IDs separated by a space.
 When the code has successfully executed, it returns an empty list of `UnprocessedAccounts`. If there were any problems changing the detector settings for an account, that account ID is listed along with a summary of the issue.
 
 **Note**
-If you use scripts to on-board new accounts and want to disable S3 Protection in your new accounts, you can modify the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateDetector.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateDetector.html) API operation with the optional `dataSources` object as described in this topic.
+If you use scripts to on-board new accounts and want to disable S3 Protection in your new accounts, you can modify the [createDetector](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateDetector.html) API operation with the optional `dataSources` object as described in this topic.
 
 ------

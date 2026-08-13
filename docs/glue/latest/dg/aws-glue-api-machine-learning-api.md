@@ -103,7 +103,7 @@ A structure for a machine learning transform.
   The name or Amazon Resource Name (ARN) of the IAM role with the required permissions. The required permissions include both AWS Glue service role permissions to AWS Glue resources, and Amazon S3 permissions required by the transform.
   + This role needs AWS Glue service role permissions to allow access to resources in AWS Glue. See [Attach a Policy to IAM Users That Access AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/attach-policy-iam-user.html).
   + This role needs permission to your Amazon Simple Storage Service (Amazon S3) sources, targets, temporary directory, scripts, and any libraries used by the task run for this transform.
-+ `GlueVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #48](aws-glue-api-common.md#regex_48).
++ `GlueVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
 
   This value determines which version of AWS Glue this machine learning transform is compatible with. Glue 1.0 is recommended for most customers. If the value is not set, the Glue compatibility defaults to Glue 0.9. For more information, see [AWS Glue Versions](https://docs.aws.amazon.com/glue/latest/dg/release-notes.html#release-notes-versions) in the developer guide.
 + `MaxCapacity` – Number (double).
@@ -309,7 +309,7 @@ The criteria used to filter the machine learning transforms.
 + `Status` – UTF-8 string (valid values: `NOT_READY` \| `READY` \| `DELETING`).
 
   Filters the list of machine learning transforms by the last known status of the transforms (to indicate whether a transform can be used or not). One of "NOT\_READY", "READY", or "DELETING".
-+ `GlueVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #48](aws-glue-api-common.md#regex_48).
++ `GlueVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
 
   This value determines which version of AWS Glue this machine learning transform is compatible with. Glue 1.0 is recommended for most customers. If the value is not set, the Glue compatibility defaults to Glue 0.9. For more information, see [AWS Glue Versions](https://docs.aws.amazon.com/glue/latest/dg/release-notes.html#release-notes-versions) in the developer guide.
 + `CreatedBefore` – Timestamp.
@@ -545,7 +545,7 @@ You must also specify certain parameters for the tasks that AWS Glue runs on you
   The name or Amazon Resource Name (ARN) of the IAM role with the required permissions. The required permissions include both AWS Glue service role permissions to AWS Glue resources, and Amazon S3 permissions required by the transform.
   + This role needs AWS Glue service role permissions to allow access to resources in AWS Glue. See [Attach a Policy to IAM Users That Access AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/attach-policy-iam-user.html).
   + This role needs permission to your Amazon Simple Storage Service (Amazon S3) sources, targets, temporary directory, scripts, and any libraries used by the task run for this transform.
-+ `GlueVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #48](aws-glue-api-common.md#regex_48).
++ `GlueVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
 
   This value determines which version of AWS Glue this machine learning transform is compatible with. Glue 1.0 is recommended for most customers. If the value is not set, the Glue compatibility defaults to Glue 0.9. For more information, see [AWS Glue Versions](https://docs.aws.amazon.com/glue/latest/dg/release-notes.html#release-notes-versions) in the developer guide.
 + `MaxCapacity` – Number (double).
@@ -632,7 +632,7 @@ After calling this operation, you can call the `StartMLEvaluationTaskRun` operat
 + `Role` – UTF-8 string.
 
   The name or Amazon Resource Name (ARN) of the IAM role with the required permissions.
-+ `GlueVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #48](aws-glue-api-common.md#regex_48).
++ `GlueVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
 
   This value determines which version of AWS Glue this machine learning transform is compatible with. Glue 1.0 is recommended for most customers. If the value is not set, the Glue compatibility defaults to Glue 0.9. For more information, see [AWS Glue Versions](https://docs.aws.amazon.com/glue/latest/dg/release-notes.html#release-notes-versions) in the developer guide.
 + `MaxCapacity` – Number (double).
@@ -736,7 +736,7 @@ Gets an AWS Glue machine learning transform artifact and all its corresponding m
 + `Role` – UTF-8 string.
 
   The name or Amazon Resource Name (ARN) of the IAM role with the required permissions.
-+ `GlueVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #48](aws-glue-api-common.md#regex_48).
++ `GlueVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
 
   This value determines which version of AWS Glue this machine learning transform is compatible with. Glue 1.0 is recommended for most customers. If the value is not set, the Glue compatibility defaults to Glue 0.9. For more information, see [AWS Glue Versions](https://docs.aws.amazon.com/glue/latest/dg/release-notes.html#release-notes-versions) in the developer guide.
 + `MaxCapacity` – Number (double).

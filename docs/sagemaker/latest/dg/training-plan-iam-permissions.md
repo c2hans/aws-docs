@@ -25,8 +25,8 @@ Administrators should carefully consider which users need the ability to create 
 
 ## Managed policies
 <a name="training-plan-managed-policies"></a>
-+ For plan creators: [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerTrainingPlanCreateAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerTrainingPlanCreateAccess.html) provides access to create and manage training plans.
-+ For plan users: [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerFullAccess.html) includes the permissions to use training plans.
++ For plan creators: [`AmazonSageMakerTrainingPlanCreateAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerTrainingPlanCreateAccess.html) provides access to create and manage training plans.
++ For plan users: [`AmazonSageMakerFullAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerFullAccess.html) includes the permissions to use training plans.
 
 **Note**
 The `AmazonSageMakerFullAccess` managed policy is designed as an ease-of-use policy primarily for experimentation purposes. While it provides broad access to SageMaker AI features, including the use of training plans, it's important to note:

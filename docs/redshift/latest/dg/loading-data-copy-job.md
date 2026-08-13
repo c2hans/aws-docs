@@ -279,7 +279,7 @@ You can also use the following AWS CLI commands to manage your S3 event integrat
 + `modify-integration` – Specify an integration ARN to change the name or description (or both) of an S3 event integration.
 + `describe-integrations` – Specify an integration ARN to view properties of an S3 event integration.
 
-See the [https://docs.aws.amazon.com/cli/latest/reference/redshift/](https://docs.aws.amazon.com/cli/latest/reference/redshift/) for more information about these commands.
+See the [*Amazon Redshift CLI Guide*](https://docs.aws.amazon.com/cli/latest/reference/redshift/) for more information about these commands.
 
 ------
 

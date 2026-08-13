@@ -14,7 +14,7 @@ You can send events to Amazon EventBridge, Amazon Simple Notification Service, a
 ## Amazon Chime SDK meeting transcription started
 <a name="transcript-start"></a>
 
-The Amazon Chime SDK sends this event when meeting transcription is started or the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_TranscriptionConfiguration.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_TranscriptionConfiguration.html) is updated.
+The Amazon Chime SDK sends this event when meeting transcription is started or the [TranscriptionConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_TranscriptionConfiguration.html) is updated.
 
 **Example: Event data**
 The following is example data for this event.
@@ -37,7 +37,7 @@ The following is example data for this event.
         "externalMeetingId": "{{mymeeting}}",
         "mediaRegion": "us-west-1",
         "transcriptionRegion": "us-west-2",
-        "[https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StartMeetingTranscription.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StartMeetingTranscription.html)": "{{{...}}}"
+        "[transcriptionConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StartMeetingTranscription.html)": "{{{...}}}"
     }
 }
 ```
@@ -68,7 +68,7 @@ The following is example data for this event.
         "externalMeetingId": "{{mymeeting}}",
         "mediaRegion": "us-west-1",
         "transcriptionRegion": "us-west-2",
-        "[https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StopMeetingTranscription.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StopMeetingTranscription.html)": "{{{...}}}"
+        "[transcriptionConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StopMeetingTranscription.html)": "{{{...}}}"
     }
 }
 ```
@@ -100,7 +100,7 @@ The following is example data for this event.
         "message": "Internal server error",
         "mediaRegion": "us-west-1",
         "transcriptionRegion": "us-west-2",
-        "[https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_TranscriptionConfiguration.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_TranscriptionConfiguration.html)": "{{{...}}}"
+        "[transcriptionConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_TranscriptionConfiguration.html)": "{{{...}}}"
     }
 }
 ```
@@ -131,7 +131,7 @@ The following is example data for this event.
         "externalMeetingId": "{{mymeeting}}",
         "mediaRegion": "us-west-1",
         "transcriptionRegion": "us-west-2",
-        "[https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_TranscriptionConfiguration.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_TranscriptionConfiguration.html)": "{{{...}}}"
+        "[transcriptionConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_TranscriptionConfiguration.html)": "{{{...}}}"
     }
 }
 ```
@@ -163,7 +163,7 @@ The following is example data for this event.
         "message": "Internal server error",
         "mediaRegion": "us-west-1",
         "transcriptionRegion": "us-west-2",
-        "[https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_TranscriptionConfiguration.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_TranscriptionConfiguration.html)": "{{{...}}}"
+        "[transcriptionConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_TranscriptionConfiguration.html)": "{{{...}}}"
     }
 }
 ```

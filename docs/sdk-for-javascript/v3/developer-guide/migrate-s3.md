@@ -10,21 +10,21 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 ## Amazon S3 multipart upload
 <a name="s3-multipart-upload"></a>
 
- In v2, the Amazon S3 client contains an [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#upload-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#upload-property) operation that supports uploading large objects with [multipart upload feature offered by Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html).
+ In v2, the Amazon S3 client contains an [`upload()`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#upload-property) operation that supports uploading large objects with [multipart upload feature offered by Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html).
 
- In v3, the [https://github.com/aws/aws-sdk-js-v3/blob/main/lib/lib-storage](https://github.com/aws/aws-sdk-js-v3/blob/main/lib/lib-storage) package is available. It supports all the features offered in the v2 `upload()` operation and supports both Node.js and browsers runtime.
+ In v3, the [` @aws-sdk/lib-storage`](https://github.com/aws/aws-sdk-js-v3/blob/main/lib/lib-storage) package is available. It supports all the features offered in the v2 `upload()` operation and supports both Node.js and browsers runtime.
 
 ## Amazon S3 presigned URL
 <a name="s3-presigned-url"></a>
 
- In v2, the Amazon S3 client contains the [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#getSignedUrl-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#getSignedUrl-property) and [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#getSignedUrlPromise-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#getSignedUrlPromise-property) operations to generate an URL that users can use to upload or download objects from Amazon S3.
+ In v2, the Amazon S3 client contains the [`getSignedUrl()`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#getSignedUrl-property) and [`getSignedUrlPromise()`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#getSignedUrlPromise-property) operations to generate an URL that users can use to upload or download objects from Amazon S3.
 
- In v3, the [https://github.com/aws/aws-sdk-js-v3/tree/main/packages/s3-request-presigner](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/s3-request-presigner) package is available. This package contains the functions for both `getSignedUrl()` and ` getSignedUrlPromise()` operations. This [ blog post](https://aws.amazon.com/blogs/developer/generate-presigned-url-modular-aws-sdk-javascript/) discusses the details of this package.
+ In v3, the [` @aws-sdk/s3-request-presigner`](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/s3-request-presigner) package is available. This package contains the functions for both `getSignedUrl()` and ` getSignedUrlPromise()` operations. This [ blog post](https://aws.amazon.com/blogs/developer/generate-presigned-url-modular-aws-sdk-javascript/) discusses the details of this package.
 
 ## Amazon S3 region redirects
 <a name="s3-global-client-region-redirects"></a>
 
-If an incorrect region is passed to the Amazon S3 client and a subsequent ` PermanentRedirect` (status 301) error is thrown, the Amazon S3 client in v3 supports region redirects (previously known as the Amazon S3 Global Client in v2). You can use the [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-middleware-sdk-s3/Interface/S3InputConfig/](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-middleware-sdk-s3/Interface/S3InputConfig/) flag in the client configuration to make the Amazon S3 client follow region redirects and support its function as a global client.
+If an incorrect region is passed to the Amazon S3 client and a subsequent ` PermanentRedirect` (status 301) error is thrown, the Amazon S3 client in v3 supports region redirects (previously known as the Amazon S3 Global Client in v2). You can use the [`followRegionRedirects`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-middleware-sdk-s3/Interface/S3InputConfig/) flag in the client configuration to make the Amazon S3 client follow region redirects and support its function as a global client.
 
 **Note**
 Note that this feature can result in additional latency as failed requests are retried with a corrected region when receiving a `PermanentRedirect` error with status 301. This feature should only be used if you do not know the region of your bucket(s) ahead of time.

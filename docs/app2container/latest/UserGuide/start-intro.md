@@ -265,7 +265,7 @@ To get started with App2Container, the first step is to download and install the
 
 **Tip**
 For Amazon EC2 instances, you can perform Step 1, Step 2, Step 3, and Step 4 by using an AWS Systems Manager Automation runbook. For more information, see [App2Container Automation runbook](automation-runbook.md).
-If you prefer, you can replatform your applications running on Amazon EC2 to containers and deploy them to Amazon ECS on AWS Fargate with a console-based experience by using the *Replatform applications to Amazon ECS* template in the [Migration Hub Orchestrator console](https://console.aws.amazon.com/migrationhub/orchestrator). For more information, see the [https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/replatform-to-ecs.html](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/replatform-to-ecs.html).
+If you prefer, you can replatform your applications running on Amazon EC2 to containers and deploy them to Amazon ECS on AWS Fargate with a console-based experience by using the *Replatform applications to Amazon ECS* template in the [Migration Hub Orchestrator console](https://console.aws.amazon.com/migrationhub/orchestrator). For more information, see the [*AWS Migration Hub Orchestrator User Guide*](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/replatform-to-ecs.html).
 
 Choose the tab that matches your operating system (OS) platform to continue:
 

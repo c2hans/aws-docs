@@ -78,7 +78,7 @@ print(
 ```
 
 **Tip**
-The `get_app_url` function runs the [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker/client/create_presigned_domain_url.html](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker/client/create_presigned_domain_url.html) API in the AWS SDK for Python (Boto3) in the backend. As the Boto3 `create_presigned_domain_url` API creates presigned domain URLs that expire in 300 seconds by default, presigned TensorBoard application URLs also expire in 300 seconds. If you want to extend the expiration time, pass the `ExpiresInSeconds` argument to the `optional_create_presigned_url_kwargs` argument of the `get_app_url` function as follows.
+The `get_app_url` function runs the [`SageMaker.Client.create_presigned_domain_url`](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker/client/create_presigned_domain_url.html) API in the AWS SDK for Python (Boto3) in the backend. As the Boto3 `create_presigned_domain_url` API creates presigned domain URLs that expire in 300 seconds by default, presigned TensorBoard application URLs also expire in 300 seconds. If you want to extend the expiration time, pass the `ExpiresInSeconds` argument to the `optional_create_presigned_url_kwargs` argument of the `get_app_url` function as follows.
 
 ```
 optional_create_presigned_url_kwargs={"ExpiresInSeconds": {{1500}}}

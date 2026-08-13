@@ -14,7 +14,7 @@ Sometimes controls must be applied in a group so that the control objective is e
 
 **Legacy control objectives**
 
-For more information about controls, see [https://docs.aws.amazon.com//controltower/latest/controlreference/controls-reference.html](https://docs.aws.amazon.com//controltower/latest/controlreference/controls-reference.html). To retrieve the most up-to-date list of new control objectives, call the [https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListObjectives.html](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListObjectives.html) API from the *controlcatalog* namespace of AWS Control Tower.
+For more information about controls, see [*AWS Control Tower Controls Reference Guide*](https://docs.aws.amazon.com//controltower/latest/controlreference/controls-reference.html). To retrieve the most up-to-date list of new control objectives, call the [`ListObjectives`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListObjectives.html) API from the *controlcatalog* namespace of AWS Control Tower.
 + **CO.1** Establish logging and monitoring
 + **CO.2** Encrypt data at rest
 + **CO.3** Encrypt data in transit

@@ -30,7 +30,7 @@ After you finish [Creating a gateway](working-with-gateways.md#create-gateway), 
 
 1. *Optionally*, in the **Hypervisor tags** section, you can assign tags to the hypervisor by choosing **Add new tag**.
 
-1. *Optional* [https://docs.aws.amazon.com/aws-backup/latest/devguide/backing-up-vms.html#backup-gateway-vmwaretags](https://docs.aws.amazon.com/aws-backup/latest/devguide/backing-up-vms.html#backup-gateway-vmwaretags): You can add up to 10 VMware tags you currently use on your virtual machines to generate AWS tags.
+1. *Optional* [**VMware tag mapping**](https://docs.aws.amazon.com/aws-backup/latest/devguide/backing-up-vms.html#backup-gateway-vmwaretags): You can add up to 10 VMware tags you currently use on your virtual machines to generate AWS tags.
 
 1. In the **Log group setting** panel, you may choose to integrate with [ Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) to maintain logs of your hypervisor (standard [CloudWatch Logs pricing](https://aws.amazon.com/cloudwatch/pricing/) will apply based on usage). Each hypervisor can belong to one log group.
 

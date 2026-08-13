@@ -18,20 +18,37 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Framework** | **Details** |
-| --- | --- |
-| **Component** | **Details** |
-| --- | --- |
-| **Windows security updates** | Applied January 2023 security updates for Windows.<br />See the Microsoft [Security Update Guide](https://portal.msrc.microsoft.com/en-us/security-guidance). |
-| **Framework updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2023-01-24-windows.html)  |
-| **AWS component updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2023-01-24-windows.html)  |
-| **.NET Core** | Updated .NET 6 to version 6.0.13 on Windows Server 2019 and 2016 platform versions.<br />Windows .NET Core 5 is being removed from the listed platform versions, because it's past Microsoft’s end of support dates. For more information, see [.NET and .NET Core Support Policy](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core) on the Microsoft website.+ Windows Server 2016 and 2019 platforms — .NET Core 5 removed |
-| **AWS SDK for .NET** | Updated the SDK to version 3.15.1919. |
-| **AMI** | Updated the base AMI to version 2023.01.11. |
-| **CloudWatch Agent** | Updated the CloudWatch Agent to version 1.247357.0b252275. |
-| **EC2Launch** | Updated EC2Launch V2 to version 2.0.1121. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows security updates</b></td><td>Applied January 2023 security updates for Windows.<br />See the Microsoft <a href="https://portal.msrc.microsoft.com/en-us/security-guidance">Security Update Guide</a>.</td></tr>
+  <tr><td><b>Framework updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Framework</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET 6 to version 6.0.13 on Windows Server 2019 and 2016 platform versions.<br />Windows .NET Core 5 is being removed from the listed platform versions, because it's past Microsoft’s end of support dates. For more information, see <a href="https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core">.NET and .NET Core Support Policy</a> on the Microsoft website.<ul><li>Windows Server 2016 and 2019 platforms — .NET Core 5 removed</li></ul></td></tr>
+</tbody>
+</table>
+ </td></tr>
+  <tr><td><b>AWS component updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AWS SDK for .NET</b></td><td>Updated the SDK to version 3.15.1919.</td></tr>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version 2023.01.11.</td></tr>
+  <tr><td><b>CloudWatch Agent</b></td><td>Updated the CloudWatch Agent to version 1.247357.0b252275.</td></tr>
+  <tr><td><b>EC2Launch</b></td><td>Updated EC2Launch V2 to version 2.0.1121.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2023-01-24-windows.platforms"></a>

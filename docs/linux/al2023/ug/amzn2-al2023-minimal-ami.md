@@ -12,10 +12,10 @@ A comparison of the RPMs present on the Amazon Linux 2 and AL2023 Minimal AMIs.
 |  acl  | 2.2.51 |  |
 |  alternatives  |  | 1.15 |
 |  amazon-chrony-config  |  | 4.3 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html](https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html)  |  | 2.5.1 |
+|  [`amazon-ec2-net-utils`](https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html)  |  | 2.5.1 |
 |  amazon-linux-extras  | 2.0.3 |  |
 |  amazon-linux-repo-s3  |  | 2023.6.20241031 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html](https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html)  |  | 2023.1 |
+|  [`amazon-linux-sb-keys`](https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html)  |  | 2023.1 |
 |  amd-ucode-firmware  | 20200421 (noarch) | 20210208 (noarch) |
 |  audit  | 2.8.1 | 3.0.6 |
 |  audit-libs  | 2.8.1 | 3.0.6 |
@@ -37,13 +37,13 @@ A comparison of the RPMs present on the Amazon Linux 2 and AL2023 Minimal AMIs.
 |  cpio  | 2.12 | 2.13 |
 |  cracklib  | 2.9.0 | 2.9.6 |
 |  cracklib-dicts  | 2.9.0 | 2.9.6 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-cron](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-cron)  | 1.4.11 |  |
+|  [`cronie`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-cron)  | 1.4.11 |  |
 |  cronie-anacron  | 1.4.11 |  |
 |  crontabs  | 1.11 |  |
 |  crypto-policies  |  | 20220428 |
 |  cryptsetup-libs  | 1.7.4 | 2.6.1 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 8.3.0 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
+|  [`curl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 8.3.0 |  |
+|  [`curl-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
 |  cyrus-sasl-lib  | 2.1.26 | 2.1.27 |
 |  dbus  | 1.10.24 | 1.12.28 |
 |  dbus-broker  |  | 32 |
@@ -89,14 +89,14 @@ A comparison of the RPMs present on the Amazon Linux 2 and AL2023 Minimal AMIs.
 |  gettext  | 0.19.8.1 | 0.21 |
 |  gettext-libs  | 0.19.8.1 | 0.21 |
 |  glib2  | 2.56.1 | 2.74.7 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  | 2.26 | 2.34 |
+|  [`glibc`](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  | 2.26 | 2.34 |
 |  glibc-all-langpacks  | 2.26 | 2.34 |
 |  glibc-common  | 2.26 | 2.34 |
 |  glibc-locale-source  | 2.26 | 2.34 |
 |  glibc-minimal-langpack  | 2.26 |  |
 |  gmp  | 6.0.0 | 6.2.1 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  | 2.0.22 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  |  | 2.3.7 |
+|  [`gnupg2`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  | 2.0.22 |  |
+|  [`gnupg2-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  |  | 2.3.7 |
 |  gnutls  |  | 3.8.0 |
 |  gpgme  | 1.3.2 | 1.15.1 |
 |  grep  | 2.20 | 3.8 |
@@ -152,9 +152,9 @@ A comparison of the RPMs present on the Amazon Linux 2 and AL2023 Minimal AMIs.
 |  libcomps  |  | 0.1.20 |
 |  libcroco  | 0.6.12 |  |
 |  libcrypt  | 2.26 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 8.3.0 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb)  | 5.3.21 | 5.3.28 |
+|  [`libcurl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 8.3.0 |  |
+|  [`libcurl-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
+|  [`libdb`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb)  | 5.3.21 | 5.3.28 |
 |  libdb-utils  | 5.3.21 |  |
 |  libdnf  |  | 0.69.0 |
 |  libeconf  |  | 0.4.0 |
@@ -253,7 +253,7 @@ A comparison of the RPMs present on the Amazon Linux 2 and AL2023 Minimal AMIs.
 |  passwd  | 0.79 | 0.80 |
 |  pciutils  |  | 3.7.0 |
 |  pciutils-libs  |  | 3.7.0 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre)  | 8.32 |  |
+|  [`pcre`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre)  | 8.32 |  |
 |  pcre2  | 10.23 | 10.40 |
 |  pcre2-syntax  |  | 10.40 |
 |  pinentry  | 0.8.1 |  |
@@ -267,7 +267,7 @@ A comparison of the RPMs present on the Amazon Linux 2 and AL2023 Minimal AMIs.
 |  publicsuffix-list-dafsa  | 20240208 | 20240212 |
 |  pygpgme  | 0.3 |  |
 |  pyliblzma  | 0.5.3 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  | 2.7.18 |  |
+|  [`python`](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  | 2.7.18 |  |
 |  python2-cryptography  | 1.7.2 |  |
 |  python2-jsonschema  | 2.5.1 |  |
 |  python2-oauthlib  | 2.0.1 |  |

@@ -32,7 +32,7 @@ cd my-project
 cdk init app --language javascript
 ```
 
-Creating a project also installs the [https://docs.aws.amazon.com/cdk/api/v2/docs/core-readme.html](https://docs.aws.amazon.com/cdk/api/v2/docs/core-readme.html) module and its dependencies.
+Creating a project also installs the [`core`](https://docs.aws.amazon.com/cdk/api/v2/docs/core-readme.html) module and its dependencies.
 
 `cdk init` uses the name of the project folder to name various elements of the project, including classes, subfolders, and files. Hyphens in the folder name are converted to underscores. However, the name should otherwise follow the form of a JavaScript identifier; for example, it should not start with a number or contain spaces.
 
@@ -236,7 +236,7 @@ module.exports = { Stack1, Stack2 }
 ------
 
 **Note**
-An alternative to using the old-style imports and exports is to use the [https://www.npmjs.com/package/esm](https://www.npmjs.com/package/esm) module.
+An alternative to using the old-style imports and exports is to use the [`esm`](https://www.npmjs.com/package/esm) module.
 
 Once you've got the imports and exports sorted, you can dig into the actual code. You may run into these commonly-used TypeScript features:
 + Type annotations

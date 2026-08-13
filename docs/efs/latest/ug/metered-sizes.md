@@ -51,7 +51,7 @@ The metered sizes of a particular file system define the usage for which the own
 The computed metered size doesn't represent a consistent snapshot of the file system at any particular time during that hour. Instead, it represents the sizes of the objects that existed in the file system at varying times within each hour, or possibly the hour before it. These sizes are summed to determine the file system's metered size for the hour. The metered size of a file system is thus eventually consistent with the metered sizes of the objects stored when there are no writes to the file system.
 
 You can see the metered size for an EFS file system in the following ways:
-+ Using the [https://docs.aws.amazon.com/cli/latest/reference/efs/describe-file-systems.html](https://docs.aws.amazon.com/cli/latest/reference/efs/describe-file-systems.html) AWS CLI command and the [https://docs.aws.amazon.com/efs/latest/APIReference/API_DescribeFileSystems.html](https://docs.aws.amazon.com/efs/latest/APIReference/API_DescribeFileSystems.html) API operation, the response includes the following:
++ Using the [describe-file-systems](https://docs.aws.amazon.com/cli/latest/reference/efs/describe-file-systems.html) AWS CLI command and the [DescribeFileSystem](https://docs.aws.amazon.com/efs/latest/APIReference/API_DescribeFileSystems.html) API operation, the response includes the following:
 
   ```
   "SizeInBytes":{

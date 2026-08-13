@@ -47,7 +47,7 @@ Use the following guidelines to achieve the best results when you run training j
   Note that if you enable full debugging of the training job with the compiler, this might add some overhead.
 
 **Best Practices for PyTorch**
-+ If you bring a PyTorch model and want to checkpoint it, make sure you use PyTorch/XLA's model save function to properly checkpoint your model. For more information about the function, see [https://pytorch.org/xla/release/1.9/index.html#torch_xla.core.xla_model.save](https://pytorch.org/xla/release/1.9/index.html#torch_xla.core.xla_model.save) in the *PyTorch on XLA Devices documentation*.
++ If you bring a PyTorch model and want to checkpoint it, make sure you use PyTorch/XLA's model save function to properly checkpoint your model. For more information about the function, see [`torch_xla.core.xla_model.save`](https://pytorch.org/xla/release/1.9/index.html#torch_xla.core.xla_model.save) in the *PyTorch on XLA Devices documentation*.
 
   To learn how to add the modifications to your PyTorch script, see [Large Language Models Using PyTorch Directly (without the Hugging Face Transformers Trainer API)](training-compiler-pytorch-models.md#training-compiler-pytorch-models-non-trainer).
 
@@ -102,7 +102,7 @@ Consider the following when using SageMaker Training Compiler.
 <a name="training-compiler-considerations-incorrect-api-use"></a>
 
 PyTorch/XLA defines a set of APIs to replace some of the existing PyTorch training APIs. Failing to use them properly leads PyTorch training to fail.
-+ One of the most typical errors when compiling a PyTorch model is due to a wrong device type for operators and tensors. To properly compile a PyTorch model, make sure you use XLA devices ([https://pytorch.org/xla/release/1.9/index.html](https://pytorch.org/xla/release/1.9/index.html)) instead of using CUDA or mixing CUDA devices and XLA devices.
++ One of the most typical errors when compiling a PyTorch model is due to a wrong device type for operators and tensors. To properly compile a PyTorch model, make sure you use XLA devices ([`xm.xla_device()`](https://pytorch.org/xla/release/1.9/index.html)) instead of using CUDA or mixing CUDA devices and XLA devices.
 + `mark_step()` is a barrier just for XLA. Failing to set it correctly causes a training job to stall.
 + PyTorch/XLA provides additional distributed training APIs. Failing to program the APIs properly causes gradients to be collected incorrectly, which causes a training convergence failure.
 

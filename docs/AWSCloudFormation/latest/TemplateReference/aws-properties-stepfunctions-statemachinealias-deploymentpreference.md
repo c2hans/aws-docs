@@ -68,7 +68,7 @@ The percentage of traffic to shift to the new version in each increment.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StateMachineVersionArn`  <a name="cfn-stepfunctions-statemachinealias-deploymentpreference-statemachineversionarn"></a>
-The Amazon Resource Name (ARN) of the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachineversion.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachineversion.html) resource that will be the final version to which the alias points to when the traffic shifting is complete.
+The Amazon Resource Name (ARN) of the [`AWS::StepFunctions::StateMachineVersion`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachineversion.html) resource that will be the final version to which the alias points to when the traffic shifting is complete.
 While performing gradual deployments, you can only provide a single state machine version ARN. To explicitly set version weights in a  CloudFormation  template, use `RoutingConfiguration` instead.
 *Required*: Yes
 *Type*: String

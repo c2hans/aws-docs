@@ -14,12 +14,23 @@ This release provides new Windows Server version 2 (v2) platform versions for AW
 
 The following table lists the changes included in this release. Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **OS** | **Details** |
-| --- | --- |
-| **Operating system updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-01-15-windows-2019.html)  |
-| **Windows Server 2019** | Added support for Windows Server 2019 as two new Windows Server v2 platform versions: one with Windows Server 2019, one with Windows Server Core 2019.<br />For details from Microsoft, see [Get started with Windows Server 2019](https://docs.microsoft.com/en-us/windows-server/get-started-19/get-started-19). |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Operating system updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>OS</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows Server 2019</b></td><td>Added support for Windows Server 2019 as two new Windows Server v2 platform versions: one with Windows Server 2019, one with Windows Server Core 2019.<br />For details from Microsoft, see <a href="https://docs.microsoft.com/en-us/windows-server/get-started-19/get-started-19">Get started with Windows Server 2019</a>.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2020-01-15-windows-2019.platforms"></a>

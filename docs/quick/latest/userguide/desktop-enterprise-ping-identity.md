@@ -99,6 +99,8 @@ For more information, see [Editing an application – Native](https://docs.pingi
 1. Choose **Save**.
 
 1. On the **Resources** tab, add the following scopes: `openid`, `email`, `profile`, `offline_access`.
+**Add scopes on the Resources tab, not the Configuration tab**
+This is a separate step from the **Configuration** tab. PingOne grants only the `openid` scope by default, so you must explicitly add `email`, `profile`, and `offline_access` on the **Resources** tab. If you skip this step, sign-in fails with "User info request failed (HTTP 401)". This error occurs because sign-in requires tokens issued with these scopes, and PingOne does not grant them unless you add them on this tab.
 
 1. On the **Attribute Mappings** tab, verify that the `email` attribute is mapped to the user's email address.
 
@@ -118,6 +120,9 @@ Record the following OIDC endpoints. You enter these values, together with the *
 | Authorization endpoint | https://auth.pingone.com/<ENV\_ID>/as/authorize |
 | Token endpoint | https://auth.pingone.com/<ENV\_ID>/as/token |
 | JWKS URI | https://auth.pingone.com/<ENV\_ID>/as/jwks |
+
+**Use the correct JWKS URI path for PingOne**
+For the JSON Web Key Set (JWKS) URI, use the `/as/jwks` path shown in the preceding table. Do not use `/.well-known/jwks.json`, which can appear as a placeholder in some PingOne forms. PingOne does not use this path, and sign-in token validation fails if you enter it.
 
 ## Step 2: Add the extension access in the Amazon Quick administration console
 <a name="w2aac51c11c25c15"></a>

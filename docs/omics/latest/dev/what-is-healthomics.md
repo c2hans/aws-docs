@@ -85,7 +85,7 @@ The following services work with HealthOmics.
 + AWS Lake Formation – Lake Formation manages data access to your Analytics data stores.
 + Amazon Athena – Use Athena to perform queries on your Variant stores.
 + Amazon SageMaker AI – Use SageMaker AI to run HealthOmics tasks using Jupyter notebooks.
-+ [https://docs.aws.amazon.com/codepipeline/latest/userguide/connections-github.html](https://docs.aws.amazon.com/codepipeline/latest/userguide/connections-github.html) – Use connections to connect your external code respoitories to your HealthOmics workflows.
++ [GitHub connections](https://docs.aws.amazon.com/codepipeline/latest/userguide/connections-github.html) – Use connections to connect your external code respoitories to your HealthOmics workflows.
 
 ## How to access HealthOmics
 <a name="acessing-healthomics"></a>

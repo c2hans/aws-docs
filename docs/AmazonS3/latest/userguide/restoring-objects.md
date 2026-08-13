@@ -90,12 +90,12 @@ To monitor the status of your `restore-object` request, use the following `head-
 aws s3api head-object --bucket {{amzn-s3-demo-bucket}} --key {{dir1/example.obj}}
 ```
 
-For more information, see [https://docs.aws.amazon.com//cli/latest/reference/s3api/restore-object.html](https://docs.aws.amazon.com//cli/latest/reference/s3api/restore-object.html) in the *AWS CLI Command Reference*.
+For more information, see [restore-object](https://docs.aws.amazon.com//cli/latest/reference/s3api/restore-object.html) in the *AWS CLI Command Reference*.
 
 ### Using the REST API
 <a name="restoring-objects-rest"></a>
 
-Amazon S3 provides an API operation for you to initiate the restoration of an archived object. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPOSTrestore.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPOSTrestore.html) in the *Amazon Simple Storage Service API Reference*.
+Amazon S3 provides an API operation for you to initiate the restoration of an archived object. For more information, see [RestoreObject](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPOSTrestore.html) in the *Amazon Simple Storage Service API Reference*.
 
 ### Using the AWS SDKs
 <a name="restoring-objects-sdks"></a>
@@ -226,12 +226,12 @@ Expected output (restore finished):
 }
 ```
 
-For more information about `head-object`, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/head-object.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/head-object.html) in the *AWS CLI Command Reference*.
+For more information about `head-object`, see [head-object](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/head-object.html) in the *AWS CLI Command Reference*.
 
 ### Using the REST API
 <a name="restore-archived-objects-status-api"></a>
 
-Amazon S3 provides an API operation for you to retrieve object metadata. To check the restoration status and expiration date of an archived object using the REST API, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html) in the *Amazon Simple Storage Service API Reference*.
+Amazon S3 provides an API operation for you to retrieve object metadata. To check the restoration status and expiration date of an archived object using the REST API, see [HeadObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html) in the *Amazon Simple Storage Service API Reference*.
 
 ## Upgrading the speed of an in-progress restore
 <a name="restore-archived-objects-upgrade"></a>

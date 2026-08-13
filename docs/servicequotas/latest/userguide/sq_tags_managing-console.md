@@ -33,6 +33,6 @@ To manage Service Quotas tags using the CLI or API, choose a management task and
 
 | Tag management task | CLI command | API call |
 | --- | --- | --- |
-| Add tags to applied quotas | `aws service-quotas [tag-resource](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/tag-resource.html)` | [https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_TagResource.html](https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_TagResource.html)<br /> |
+| Add tags to applied quotas | `aws service-quotas [tag-resource](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/tag-resource.html)` | [`TagResource`](https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_TagResource.html)<br /> |
 | View tags for an applied quota | `aws service-quotas [list-tags-for-resource](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/list-tags-for-resource.html)` | `[ListTagsForResource](https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_ListTagsForResource.html)`<br /> |
 | Delete existing tag values for applied quotas | `aws service-quotas [untag-resource](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/untag-resource.html)` | `[UntagResource](https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_UntagResource.html)`<br /> |

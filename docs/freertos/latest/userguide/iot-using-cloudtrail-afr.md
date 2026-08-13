@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/iot-using-clou
 
 FreeRTOS is integrated with CloudTrail, a service that captures AWS IoT OTA API calls and delivers the log files to an Amazon S3 bucket that you specify. CloudTrail captures API calls from your code to the AWS IoT OTA APIs. Using the information collected by CloudTrail, you can determine the request that was made to AWS IoT OTA, the source IP address from which the request was made, who made the request, when it was made, and so on.
 
-For more information about CloudTrail, including how to configure and enable it, see the [https://docs.aws.amazon.com/awscloudtrail/latest/userguide/](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/).
+For more information about CloudTrail, including how to configure and enable it, see the [*AWS CloudTrail User Guide*](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/).
 
 ## FreeRTOS information in CloudTrail
 <a name="aws-iot-info-in-cloudtrail-afr"></a>

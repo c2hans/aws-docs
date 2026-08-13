@@ -32,7 +32,7 @@ The permissions reference for Secrets Manager is available at [Actions, resource
 
 To grant Secrets Manager administrator permissions, follow the instructions at [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html), and attach the following policies:
 + [SecretsManagerReadWrite](reference_available-policies.md#security-iam-awsmanpol-SecretsManagerReadWrite)
-+ [https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies)
++ [IAMFullAccess](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies)
 
 We recommend you do not grant administrator permissions to end users. While this allows your users to create and manage their secrets, the permission required to enable rotation (IAMFullAccess) grants significant permissions that are not appropriate for end users.
 

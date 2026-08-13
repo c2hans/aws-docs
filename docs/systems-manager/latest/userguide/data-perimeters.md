@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/data-pe
 # Data perimeters in AWS Systems Manager
 <a name="data-perimeters"></a>
 
-A data perimeter is a set of preventive guardrails in your AWS environment that help ensure your data can only be accessed by trusted identities from expected networks and resources. When you implement data perimeter controls, you might need to include exceptions for AWS service-owned resources that Systems Manager accesses on your behalf.
+A data perimeter is a set of preventive guardrails in your AWS environment that help make sure your data can only be accessed by trusted identities from expected networks and resources. When you implement data perimeter controls, you might need to include exceptions for AWS service-owned resources that Systems Manager accesses on your behalf.
 
 **Example scenario: SSM document categories S3 bucket**
 Systems Manager accesses an AWS managed S3 bucket to retrieve document category information for [AWS Systems Manager Documents](documents.md). This bucket contains metadata about document categories that help organize and classify SSM Documents in the console.
@@ -39,7 +39,7 @@ For example, if you're using an SCP with `aws:ResourceOrgID` to restrict access 
 
 The policy would need to access to resources outside your organization but include an exception for the appropriate S3 buckets, allowing Systems Manager to continue functioning properly.
 
-Similarly, if you're using VPC endpoint policies to restrict S3 access, you would need to ensure that the SSM document categories buckets are accessible through your VPC endpoints.
+Similarly, if you're using VPC endpoint policies to restrict S3 access, you would need to make sure that the SSM document categories buckets are accessible through your VPC endpoints.
 
 **More information**
 For more information about data perimeters in AWS, see the following topics:

@@ -21,7 +21,7 @@ The following video demonstrates how to set up cluster templates in AWS Service 
 ### Optional template parameters
 <a name="emr-studio-cluster-template-parameters"></a>
 
-You can include additional options in the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html) section of your template. *Parameters* let Studio users input or select custom values for a cluster. For example, you could add a parameter that lets users select a particular Amazon EMR release. For more information, see [Parameters](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html) in the *CloudFormation User Guide*.
+You can include additional options in the [`Parameters`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html) section of your template. *Parameters* let Studio users input or select custom values for a cluster. For example, you could add a parameter that lets users select a particular Amazon EMR release. For more information, see [Parameters](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html) in the *CloudFormation User Guide*.
 
 The following example `Parameters` section defines additional input parameters such as `ClusterName`, `EmrRelease` version, and `ClusterInstanceType`.
 

@@ -35,4 +35,4 @@ You can view code review details by choosing the name of the code review.
 
 You can also use the AWS CLI or the AWS SDK to view the details of a code review.
 
-If you have the code review ARN, you can call [https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_DescribeCodeReview.html](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_DescribeCodeReview.html). Alternatively, you can call [https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_ListCodeReviews.html](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_ListCodeReviews.html) and filter using `ProviderType` and `RepositoryName`.
+If you have the code review ARN, you can call [`DescribeCodeReview`](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_DescribeCodeReview.html). Alternatively, you can call [`ListCodeReviews`](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_ListCodeReviews.html) and filter using `ProviderType` and `RepositoryName`.

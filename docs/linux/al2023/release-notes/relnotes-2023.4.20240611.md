@@ -56,8 +56,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.4.20240528 version:** 1.300039.0-1.amzn2023
   - **AL2023.4.20240611 version:** 1.300041.0-1.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
+- ** [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
+  - **RPM:**  [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.4.20240528 version:** 2.0.1-1.amzn2023
   - **AL2023.4.20240611 version:** 2.0.2-1.amzn2023
@@ -85,8 +85,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.4.20240528 version:** 3.5-1.amzn2023.0.2
   - **AL2023.4.20240611 version:** 3.6-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
+- ** [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
+  - **RPM:**  [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.4.20240528 version:** 1.82.4-1.amzn2023
   - **AL2023.4.20240611 version:** 1.83.0-1.amzn2023

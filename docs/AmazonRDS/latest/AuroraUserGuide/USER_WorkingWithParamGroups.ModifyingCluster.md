@@ -35,7 +35,7 @@ You can modify parameter values in a customer-created DB cluster parameter group
 ## AWS CLI
 <a name="USER_WorkingWithParamGroups.ModifyingCluster.CLI"></a>
 
-To modify a DB cluster parameter group, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-cluster-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-cluster-parameter-group.html) command with the following required parameters:
+To modify a DB cluster parameter group, use the AWS CLI [`modify-db-cluster-parameter-group`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-cluster-parameter-group.html) command with the following required parameters:
 + `--db-cluster-parameter-group-name`
 + `--parameters`
 
@@ -67,6 +67,6 @@ DBCLUSTERPARAMETERGROUP  mydbclusterparametergroup
 ## RDS API
 <a name="USER_WorkingWithParamGroups.ModifyingCluster.API"></a>
 
-To modify a DB cluster parameter group, use the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBClusterParameterGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBClusterParameterGroup.html) command with the following required parameters:
+To modify a DB cluster parameter group, use the RDS API [`ModifyDBClusterParameterGroup`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBClusterParameterGroup.html) command with the following required parameters:
 + `DBClusterParameterGroupName`
 + `Parameters`

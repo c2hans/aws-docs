@@ -45,14 +45,14 @@ To use the console to connect your project to GitHub using an access token, do t
      1. For **Credential type**, choose **Personal access token**.
    + If you chose to use account level credentials for **Service**, choose which service you'd like to use to store your token and do the following:
 
-     1. If you choose to use **Secrets Manager**, you can choose to use an existing secret connection or create a new secret, and then choose **Save**. For more information how to create a new secret, see [Create and store a token in a Secrets Manager secret](asm-create-secret.md).
+     1. If you choose to use **Secrets Manager**, you can choose to use an existing secret connection or create a new secret, and then choose **Save**. For more information about how to create a new secret, see [Create and store a token in a Secrets Manager secret](asm-create-secret.md).
 
      1. If you choose to use **CodeBuild**, enter your GitHub personal access token, and then choose **Save**.
    + Select **Use override credentials for this project only** to use a custom source credential to override your account's credential settings.
 
      1. From the populated credential list, choose one of the options under **Personal access token**.
 
-     1. You can also create new personal access token by selecting **create a new personal access token connection** in the description.
+     1. You can also create a new personal access token by selecting **create a new personal access token connection** in the description.
 
 ## Connect GitHub with an access token (CLI)
 <a name="access-tokens-github-cli"></a>

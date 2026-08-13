@@ -13,4 +13,4 @@ The example adds a tag-set to the existing file `my-image.jpg` using the access 
 $ aws s3api put-object-tagging --bucket {{my-openzfs-ap-hrzrlukc5m36ft7okagglf3gmwluquse1b}}-ext-s3alias --key {{my-image.jpg}} --tagging TagSet=[{Key="{{finance}}",Value="{{true}}"}]
 ```
 
-You can also use the REST API to add a tag-set to an object through an access point. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectTagging.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectTagging.html) in the *Amazon Simple Storage Service API Reference*.
+You can also use the REST API to add a tag-set to an object through an access point. For more information, see [PutObjectTagging](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectTagging.html) in the *Amazon Simple Storage Service API Reference*.

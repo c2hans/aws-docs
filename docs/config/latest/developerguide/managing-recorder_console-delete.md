@@ -10,7 +10,7 @@ You must use the AWS CLI to delete the customer managed configuration recorder. 
 ------
 #### [ To delete the customer managed configuration recorder (CLI) ]
 
-Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/delete-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/delete-configuration-recorder.html) command:
+Use the [`delete-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/delete-configuration-recorder.html) command:
 
 ```
 $ aws configservice delete-configuration-recorder --configuration-recorder-name {{default}}
@@ -28,7 +28,7 @@ $ aws configservice delete-configuration-recorder --configuration-recorder-name 
 ------
 #### [ To delete a service-linked configuration recorder (CLI) ]
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/configservice/delete-service-linked-configuration-recorder.html](https://docs.aws.amazon.com/cli/latest/reference/configservice/delete-service-linked-configuration-recorder.html) command:
+Use the [`delete-service-linked-configuration-recorder`](https://docs.aws.amazon.com/cli/latest/reference/configservice/delete-service-linked-configuration-recorder.html) command:
 
 This command uses the `--service-principal` field.
 

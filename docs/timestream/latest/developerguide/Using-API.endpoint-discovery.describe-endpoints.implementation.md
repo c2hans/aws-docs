@@ -15,9 +15,9 @@ Ensure you are familiar with the [usage notes](#Using-API.endpoint-discovery.des
 ## Implementation procedure
 <a name="Using-API.endpoint-discovery.describe-endpoints.implementation.procedure"></a>
 
-1.  Acquire the endpoint for the API you would like to make calls against ([Write](https://docs.aws.amazon.com/timestream/latest/developerguide/API_Operations_Amazon_Timestream_Write.html) or [Query](https://docs.aws.amazon.com/timestream/latest/developerguide/API_Operations_Amazon_Timestream_Query.html)). using the [https://docs.aws.amazon.com/timestream/latest/developerguide/API_DescribeEndpoints.html](https://docs.aws.amazon.com/timestream/latest/developerguide/API_DescribeEndpoints.html) request.
+1.  Acquire the endpoint for the API you would like to make calls against ([Write](https://docs.aws.amazon.com/timestream/latest/developerguide/API_Operations_Amazon_Timestream_Write.html) or [Query](https://docs.aws.amazon.com/timestream/latest/developerguide/API_Operations_Amazon_Timestream_Query.html)). using the [`DescribeEndpoints`](https://docs.aws.amazon.com/timestream/latest/developerguide/API_DescribeEndpoints.html) request.
 
-   1.  Create a request for [https://docs.aws.amazon.com/timestream/latest/developerguide/API_DescribeEndpoints.html](https://docs.aws.amazon.com/timestream/latest/developerguide/API_DescribeEndpoints.html) that corresponds to the API of interest ([Write](https://docs.aws.amazon.com/timestream/latest/developerguide/API_Operations_Amazon_Timestream_Write.html) or [Query](https://docs.aws.amazon.com/timestream/latest/developerguide/API_Operations_Amazon_Timestream_Query.html)) using one of the two endpoints described below. There are no input parameters for the request. Ensure that you read the notes below.
+   1.  Create a request for [`DescribeEndpoints`](https://docs.aws.amazon.com/timestream/latest/developerguide/API_DescribeEndpoints.html) that corresponds to the API of interest ([Write](https://docs.aws.amazon.com/timestream/latest/developerguide/API_Operations_Amazon_Timestream_Write.html) or [Query](https://docs.aws.amazon.com/timestream/latest/developerguide/API_Operations_Amazon_Timestream_Query.html)) using one of the two endpoints described below. There are no input parameters for the request. Ensure that you read the notes below.
 *Write SDK:*
 
       ```

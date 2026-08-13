@@ -39,7 +39,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [deploymentPatternName](#API_CreateDeployment_RequestSyntax) **   <a name="launchwizard-CreateDeployment-request-deploymentPatternName"></a>
-The name of the deployment pattern supported by a given workload. You can use the [https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloadDeploymentPatterns.html](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloadDeploymentPatterns.html) operation to discover supported values for this parameter.
+The name of the deployment pattern supported by a given workload. You can use the [`ListWorkloadDeploymentPatterns`](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloadDeploymentPatterns.html) operation to discover supported values for this parameter.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[A-Za-z0-9][a-zA-Z0-9-]*`
@@ -58,7 +58,7 @@ Pattern: `[A-Za-z0-9_\.-]+`
 Required: Yes
 
  ** [specifications](#API_CreateDeployment_RequestSyntax) **   <a name="launchwizard-CreateDeployment-request-specifications"></a>
-The settings specified for the deployment. These settings define how to deploy and configure your resources created by the deployment. For more information about the specifications required for creating a deployment for a SAP workload, see [SAP deployment specifications](https://docs.aws.amazon.com/launchwizard/latest/APIReference/launch-wizard-specifications-sap.html). To retrieve the specifications required to create a deployment for other workloads, use the [https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_GetWorkloadDeploymentPattern.html](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_GetWorkloadDeploymentPattern.html) operation.
+The settings specified for the deployment. These settings define how to deploy and configure your resources created by the deployment. For more information about the specifications required for creating a deployment for a SAP workload, see [SAP deployment specifications](https://docs.aws.amazon.com/launchwizard/latest/APIReference/launch-wizard-specifications-sap.html). To retrieve the specifications required to create a deployment for other workloads, use the [`GetWorkloadDeploymentPattern`](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_GetWorkloadDeploymentPattern.html) operation.
 Type: String to string map
 Map Entries: Maximum number of 100 items.
 Key Length Constraints: Minimum length of 3. Maximum length of 256.
@@ -77,7 +77,7 @@ Value Pattern: `[a-zA-Z+-=._:/]*`
 Required: No
 
  ** [workloadName](#API_CreateDeployment_RequestSyntax) **   <a name="launchwizard-CreateDeployment-request-workloadName"></a>
-The name of the workload. You can use the [https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloads.html](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloads.html) operation to discover supported values for this parameter.
+The name of the workload. You can use the [`ListWorkloads`](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloads.html) operation to discover supported values for this parameter.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
 Pattern: `[A-Za-z][a-zA-Z0-9-_]*`

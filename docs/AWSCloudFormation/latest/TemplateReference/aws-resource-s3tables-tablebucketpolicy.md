@@ -69,4 +69,4 @@ The Amazon Resource Name (ARN) of the table bucket.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns some information about your table bucket policy.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).

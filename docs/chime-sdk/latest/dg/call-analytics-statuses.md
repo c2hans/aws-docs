@@ -9,9 +9,9 @@ Media insights pipelines track a set of statuses when you do one or both of the 
 + Use multiple machine-learning processing elements, such as Amazon Transcribe and voice analytics.
 + Enable call recording with or without machine learning processing.
 
-To get pipeline and element statuses, use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_GetMediaPipeline.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_GetMediaPipeline.html) API and [EventBridge notifications](using-eventbridge-notifications.md).
+To get pipeline and element statuses, use the [GetMediaPipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_GetMediaPipeline.html) API and [EventBridge notifications](using-eventbridge-notifications.md).
 
-To get statuses for voice analytics tasks, use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_GetSpeakerSearchTask.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_GetSpeakerSearchTask.html) and [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_GetVoiceToneAnalysisTask.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_GetVoiceToneAnalysisTask.html) APIs, and [voice analytics notification targets](va-notification-targets.md).
+To get statuses for voice analytics tasks, use the [GetSpeakerSearchTask](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_GetSpeakerSearchTask.html) and [GetVoiceToneAnalysisTask](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_GetVoiceToneAnalysisTask.html) APIs, and [voice analytics notification targets](va-notification-targets.md).
 
 Media insights pipelines track the following statuses.
 + **Pipeline status** – The overall status of a call analytics pipeline, also known as a media insights pipeline. This is determined by the element statuses.
@@ -39,7 +39,7 @@ The pipeline status is determined by the element statuses as follows:
 | Stopped | All elements are stopped. |
 | Paused | All elements are paused. |
 
-Unlike other element statuses, the `VoiceAnalyticsProcessor` element has a few nuances. As mentioned earlier, the `VoiceAnalyticsProcessor` element status, corresponding to the Amazon Chime SDK voice analytics feature, is determined by the task statuses created from [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_StartSpeakerSearchTask.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_StartSpeakerSearchTask.html) and [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_StartVoiceToneAnalysisTask.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_StartVoiceToneAnalysisTask.html).
+Unlike other element statuses, the `VoiceAnalyticsProcessor` element has a few nuances. As mentioned earlier, the `VoiceAnalyticsProcessor` element status, corresponding to the Amazon Chime SDK voice analytics feature, is determined by the task statuses created from [StartSpeakerSearchTask](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_StartSpeakerSearchTask.html) and [StartVoiceToneAnalysisTask](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_StartVoiceToneAnalysisTask.html).
 + The `VoiceAnalyticsProcessor`’s element status begins in a `NotStarted` state, because `StartSpeakerSearchTask` and `StartVoiceToneAnalysisTask` must be called before the element can change the status to `Initializing`, and then `InProgress`.
 + The `VoiceAnalyticsProcessor` stays `InProgress` as long as one task is started and a [stop condition](managing-call-analytics-pipelines.md) is not met while the task is running.
 + Even though the `VoiceAnalyticsProcessor` may be `InProgress`, you will only be charged for the duration that the tasks process.

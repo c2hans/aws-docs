@@ -175,9 +175,9 @@ The power shelf has two inputs, S1 and S2, that can be configured as follows.
   <tr><th></th><th>Redundant, single-phase</th><th>Redundant, three-phase</th><th>Single-phase</th><th>Three-phase</th></tr>
 </thead>
 <tbody>
-  <tr><td>**5 kVA**</td><td>2 x L6-30P or IEC309; 1 drop to S1 and 1 drop to S2</td><td rowspan="3">2 x AH530P7W, AH532P6W, or CS8365C; 1 drop to S1 and 1 drop to S2</td><td>Not offered</td><td rowspan="3">1 x AH530P7W, AH532P6W or CS8365C; 1 drop to S1</td></tr>
-  <tr><td>**10 kVA**</td><td>4 x L6-30P or IEC309; 2 drops to S1 and 2 drops to S2</td><td>2 x L6-30P or IEC309; 2 drops to S1</td></tr>
-  <tr><td>**15 kVA**</td><td>6 x L6-30P or IEC309; 3 drops to S1 and 3 drops to S2</td><td>3 x L6-30P or IEC309; 3 drops to S1</td></tr>
+  <tr><td><b>5 kVA</b></td><td>2 x L6-30P or IEC309; 1 drop to S1 and 1 drop to S2</td><td rowspan="3">2 x AH530P7W, AH532P6W, or CS8365C; 1 drop to S1 and 1 drop to S2</td><td>Not offered</td><td rowspan="3">1 x AH530P7W, AH532P6W or CS8365C; 1 drop to S1</td></tr>
+  <tr><td><b>10 kVA</b></td><td>4 x L6-30P or IEC309; 2 drops to S1 and 2 drops to S2</td><td>2 x L6-30P or IEC309; 2 drops to S1</td></tr>
+  <tr><td><b>15 kVA</b></td><td>6 x L6-30P or IEC309; 3 drops to S1 and 3 drops to S2</td><td>3 x L6-30P or IEC309; 3 drops to S1</td></tr>
 </tbody>
 </table>
 

@@ -132,7 +132,7 @@ You can optionally create a new Node Class to change the default behavior of the
 
 1. Workload A attempts to resolve the IP for a cluster-external endpoint. The DNS request first goes through a proxy that filters such requests based on the allow list applied through the network policy.
 
-1. Once the DNS request goes through the DNS filter allow list, it is proxied to CoreDNS,
+1. After the DNS request goes through the DNS filter allow list, the proxy forwards it to CoreDNS,
 
 1. CoreDNS in turn sends the request to the External DNS Resolver (Amazon Route 53 Resolver) to get the list of IP addresses behind the domain name.
 

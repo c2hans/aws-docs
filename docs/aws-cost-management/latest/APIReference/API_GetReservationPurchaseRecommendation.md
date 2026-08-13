@@ -84,7 +84,7 @@ There are two patterns:
   + There are three types of simple dimension values: `CostCategories`, `Tags`, and `Dimensions`.
     + Specify the `CostCategories` field to define a filter that acts on Cost Categories.
     + Specify the `Tags` field to define a filter that acts on Cost Allocation Tags.
-    + Specify the `Dimensions` field to define a filter that acts on the [https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_DimensionValues.html](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_DimensionValues.html).
+    + Specify the `Dimensions` field to define a filter that acts on the [`DimensionValues`](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_DimensionValues.html).
   + For each filter type, you can set the dimension name and values for the filters that you plan to use.
     + For example, you can filter for `REGION==us-east-1 OR REGION==us-west-1`. For `GetRightsizingRecommendation`, the Region is a full name (for example, `REGION==US East (N. Virginia)`.
     + The corresponding `Expression` for this example is as follows: `{ "Dimensions": { "Key": "REGION", "Values": [ "us-east-1", "us-west-1" ] } }`

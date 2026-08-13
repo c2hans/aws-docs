@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with
 
 You can download the CloudFormation template for this solution before deploying it. This solution uses a separate CloudFormation template to handle the deployment workflow.
 
- [https://solutions-reference.s3.amazonaws.com/scene-intelligence-with-rosbag-on-aws/latest/scene-intelligence-with-rosbag-on-aws-create.template](https://solutions-reference.s3.amazonaws.com/scene-intelligence-with-rosbag-on-aws/latest/scene-intelligence-with-rosbag-on-aws-create.template) **scene-intelligence-with-rosbag-on-aws-create.template -** Use this template to launch the solution and all associated components. The default configuration deploys the core and supporting services found in the [AWS services in this solution](aws-services-in-this-solution.md) section orchestrated by an open source GitOps library called `seedfarmer`, but you can customize the template to meet your specific needs.
+ [![View template](http://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/scene-intelligence-with-rosbag-on-aws/latest/scene-intelligence-with-rosbag-on-aws-create.template) **scene-intelligence-with-rosbag-on-aws-create.template -** Use this template to launch the solution and all associated components. The default configuration deploys the core and supporting services found in the [AWS services in this solution](aws-services-in-this-solution.md) section orchestrated by an open source GitOps library called `seedfarmer`, but you can customize the template to meet your specific needs.
 
 **Note**
 CloudFormation resources are created from AWS Cloud Development Kit (AWS CDK) constructs.

@@ -73,7 +73,7 @@ AWS Transform MGN actions
 `mgn:ChangeServerLifeCycleState`
 `mgn:StartReplication`
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubOrchestratorServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubOrchestratorServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
+To view the permissions for this policy, see [AWSMigrationHubOrchestratorServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubOrchestratorServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
 
 To view the update history of this policy, see [Migration Hub Orchestrator updates to AWS managed policies](security-iam-awsmanpol.md#security-iam-awsmanpol-updates).
 

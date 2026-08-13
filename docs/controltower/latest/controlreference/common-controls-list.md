@@ -5,11 +5,11 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/com
 # About common controls
 <a name="common-controls-list"></a>
 
-This page provides an overview and a partial list of the common controls available for the Control Catalog. You can get a complete list of common controls by calling the [https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListCommonControls.html](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListCommonControls.html) API.
+This page provides an overview and a partial list of the common controls available for the Control Catalog. You can get a complete list of common controls by calling the [`ListCommonControls`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListCommonControls.html) API.
 
 **Common controls in the ontology**
-+ In the [https://docs.aws.amazon.com//controlcatalog/latest/userguide/ontology-overview.html](https://docs.aws.amazon.com//controlcatalog/latest/userguide/ontology-overview.html), a *common control* conceptually expresses a single constraint or outcome that controls can help you to accomplish.
-+ In the hierarchy of the ontology, each common control has a single [https://docs.aws.amazon.com//controltower/latest/controlreference/control-catalog-objectives.html](https://docs.aws.amazon.com//controltower/latest/controlreference/control-catalog-objectives.html).
++ In the [*Control Catalog ontology*](https://docs.aws.amazon.com//controlcatalog/latest/userguide/ontology-overview.html), a *common control* conceptually expresses a single constraint or outcome that controls can help you to accomplish.
++ In the hierarchy of the ontology, each common control has a single [*control objective*](https://docs.aws.amazon.com//controltower/latest/controlreference/control-catalog-objectives.html).
 
 A common control is more granular than a control objective, but the common control is not limited to any particular implementation. In fact, a common control can be implemented in several different ways, by individual controls, that you can view and enable. Hierarchically, a common control is the parent of certain individual controls that you see in the Control Catalog.
 

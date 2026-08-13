@@ -40,13 +40,13 @@ From the **Account management** page, you can enable organization accounts as me
 ------
 #### [ Detective API/AWS CLI ]
 
-You can use the Detective API or the AWS Command Line Interface to enable organization accounts as member accounts in the organization behavior graph. To get the ARN of your behavior graph to use in the request, use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html) operation.
+You can use the Detective API or the AWS Command Line Interface to enable organization accounts as member accounts in the organization behavior graph. To get the ARN of your behavior graph to use in the request, use the [`ListGraphs`](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html) operation.
 
 **To enable organization accounts as member accounts**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_CreateMembers.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_CreateMembers.html) operation. You must provide the graph ARN.
++ **Detective API:** Use the [`CreateMembers`](https://docs.aws.amazon.com/detective/latest/APIReference/API_CreateMembers.html) operation. You must provide the graph ARN.
 
   For each account, specify the account identifier. Organization accounts in the organization behavior graph do not receive an invitation. You do not need to provide an email address or other invitation information.
-+ **AWS CLI:** At the command line, run the [https://docs.aws.amazon.com/cli/latest/reference/detective/create-members.html](https://docs.aws.amazon.com/cli/latest/reference/detective/create-members.html) command.
++ **AWS CLI:** At the command line, run the [`create-members`](https://docs.aws.amazon.com/cli/latest/reference/detective/create-members.html) command.
 
   ```
   aws detective create-members --accounts AccountId={{<AWS account ID>}} --graph-arn {{<behavior graph ARN>}}

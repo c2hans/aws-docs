@@ -92,7 +92,7 @@ After you create the topic, subscribe to it by specifying an **Endpoint**. If yo
 
 Amazon SNS sends a confirmation email from *AWS Notifications* to the email address that you specify. Open the email and choose the **Confirm subscription** link.
 
-You will receive an acknowledgement message from AWS. Amazon SNS is now configured to receive notifications and send the notification as an email to the email address that you specified.
+You receive an acknowledgement message from AWS. Amazon SNS is now configured to receive notifications and send the notification as an email to the email address that you specified.
 
 ### Task 2: Create an IAM policy for Amazon SNS notifications
 <a name="monitoring-iam-policy"></a>

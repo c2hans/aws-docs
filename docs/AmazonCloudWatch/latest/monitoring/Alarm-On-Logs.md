@@ -209,8 +209,6 @@ aws cloudwatch put-log-alarm \
 
 The following table describes the key parameters for the `put-log-alarm` command.
 
-**put-log-alarm parameters**
-
 | Parameter | Required | Description |
 | --- | --- | --- |
 | --alarm-name | Yes | The name of the alarm. Must contain only UTF-8 characters. |

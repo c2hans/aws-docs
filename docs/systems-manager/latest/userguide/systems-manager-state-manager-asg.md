@@ -13,7 +13,7 @@ If all nodes are tagged with the same key and value, you only need one associati
 
 **To create an association that runs Auto Scaling groups**
 
-1. Ensure all nodes in the Auto Scaling group are tagged with the same key and value. For more instructions on tagging nodes, see [Tagging Auto Scaling groups and instances](https://docs.aws.amazon.com//autoscaling/ec2/userguide/autoscaling-tagging.html) in the *AWS Auto Scaling User Guide*.
+1. Ensure all nodes in the Auto Scaling group are tagged with the same key and value. For more instructions on tagging nodes, see [Tagging Auto Scaling groups and instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-tagging.html) in the *AWS Auto Scaling User Guide*.
 
 1. Create an association by using the procedure in [Working with associations in Systems Manager](state-manager-associations.md).
 

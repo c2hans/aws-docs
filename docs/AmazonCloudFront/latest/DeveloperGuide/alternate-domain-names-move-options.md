@@ -84,7 +84,7 @@ The target standard distribution must be set up as described in [Set up the targ
 
 1. After the target standard distribution is fully deployed, update your DNS configuration to point the alternate domain name’s DNS record to the distribution domain name of the target standard distribution. For example, your DNS record would point your alternate domain name (`www.example.com`) to the CloudFront provided domain name d111111abcdef8.cloudfront.net.
 
-For more information, see the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/associate-alias.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/associate-alias.html) command in the *AWS CLI Command Reference*.
+For more information, see the [associate-alias](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/associate-alias.html) command in the *AWS CLI Command Reference*.
 
 ------
 

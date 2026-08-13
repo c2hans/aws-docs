@@ -67,7 +67,7 @@ CodePipeline works only with AWS CLI versions 1.7.38 and later. To determine whi
    aws configure
    ```
 
-   When prompted, specify the AWS access key and AWS secret access key of the IAM user that you will use with CodePipeline. When prompted for the default region name, specify the region where you will create the pipeline, such as `us-east-2`. When prompted for the default output format, specify `json`. For example:
+   When prompted, specify the AWS access key and AWS secret access key of the IAM user that you will use with CodePipeline. When prompted for the default region name, specify the Region where you will create the pipeline, such as `us-east-2`. When prompted for the default output format, specify `json`. For example:
 
    ```
    AWS Access Key ID [None]: {{Type your target AWS access key ID here, and then press Enter}}

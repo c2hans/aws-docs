@@ -76,10 +76,10 @@ CoreML `ClassifierConfig` parameters can be specified using [OutputConfig](https
   +  `"DataInputConfig": [{"shape": [[1,3,224,224], [1,3,160,160]], "default_shape": [1,3,224,224], "type": "Image", "bias": [-1,-1,-1], "scale": 0.007843137255}]`
   +  `"CompilerOptions": {"class_labels": "imagenet_labels_1000.txt"}`
 Depending on the model format, `DataInputConfig` requires the following parameters for `ml_eia2` [OutputConfig:TargetDevice](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_OutputConfig.html#sagemaker-Type-OutputConfig-TargetDevice).
-+ For TensorFlow models saved in the SavedModel format, specify the input names from `signature_def_key` and the input model shapes for `DataInputConfig`. Specify the `signature_def_key` in [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_OutputConfig.html#sagemaker-Type-OutputConfig-CompilerOptions](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_OutputConfig.html#sagemaker-Type-OutputConfig-CompilerOptions) if the model does not use TensorFlow's default signature def key. For example:
++ For TensorFlow models saved in the SavedModel format, specify the input names from `signature_def_key` and the input model shapes for `DataInputConfig`. Specify the `signature_def_key` in [`OutputConfig:CompilerOptions`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_OutputConfig.html#sagemaker-Type-OutputConfig-CompilerOptions) if the model does not use TensorFlow's default signature def key. For example:
   +  `"DataInputConfig": {"inputs": [1, 224, 224, 3]}`
   +  `"CompilerOptions": {"signature_def_key": "serving_custom"}`
-+ For TensorFlow models saved as a frozen graph, specify the input tensor names and shapes in `DataInputConfig` and the output tensor names for `output_names` in [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_OutputConfig.html#sagemaker-Type-OutputConfig-CompilerOptions](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_OutputConfig.html#sagemaker-Type-OutputConfig-CompilerOptions). For example:
++ For TensorFlow models saved as a frozen graph, specify the input tensor names and shapes in `DataInputConfig` and the output tensor names for `output_names` in [`OutputConfig:CompilerOptions`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_OutputConfig.html#sagemaker-Type-OutputConfig-CompilerOptions). For example:
   +  `"DataInputConfig": {"input_tensor:0": [1, 224, 224, 3]}`
   +  `"CompilerOptions": {"output_names": ["output_tensor:0"]}`
 Type: String

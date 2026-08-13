@@ -18,12 +18,12 @@ Default encryption for data at rest reduces operational overhead and complexity 
 
 The Data API requires a grant to use your customer managed key.
 
-When you call `ExecuteStatement` or `BatchExecuteStatement` against a cluster encrypted with a customer managed key, Amazon Redshift creates a grant on your behalf by sending a [https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) request to AWS KMS. AWS KMS uses grants to give the Data API access to a KMS key in your account.
+When you call `ExecuteStatement` or `BatchExecuteStatement` against a cluster encrypted with a customer managed key, Amazon Redshift creates a grant on your behalf by sending a [`CreateGrant`](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) request to AWS KMS. AWS KMS uses grants to give the Data API access to a KMS key in your account.
 
 The Data API requires the grant to use your customer managed key for the following operations:
-+ Send [https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html) requests to AWS KMS to encrypt query metadata with your customer managed key.
-+ Send [https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) requests to AWS KMS to generate data keys encrypted by your customer managed key.
-+ Send [https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) requests to AWS KMS to decrypt the encrypted data keys so they can encrypt your data.
++ Send [`Encrypt`](https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html) requests to AWS KMS to encrypt query metadata with your customer managed key.
++ Send [`GenerateDataKey`](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) requests to AWS KMS to generate data keys encrypted by your customer managed key.
++ Send [`Decrypt`](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) requests to AWS KMS to decrypt the encrypted data keys so they can encrypt your data.
 
 You can revoke access to the grant or remove Amazon Redshift access to your customer managed key at any time. If you do, the Data API can no longer access data encrypted by your customer managed key, which affects operations that depend on that data. For example, if you try to retrieve query results or track query status after revoking the grant, the Data API returns an `AccessDeniedException`.
 

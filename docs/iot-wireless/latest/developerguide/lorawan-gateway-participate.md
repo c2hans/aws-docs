@@ -13,7 +13,7 @@ This feature is different from the participating gateways feature that you can u
 ## How to specify the gateway list
 <a name="lorawan-participate-how"></a>
 
-You can specify an individual gateway or the list of gateways to use when sending a downlink message from AWS IoT Core for LoRaWAN to your device using the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_SendDataToWirelessDevice.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_SendDataToWirelessDevice.html) API operation. When you invoke the API operation, specify the following parameters using the `ParticipatingGateways` object for your gateways.
+You can specify an individual gateway or the list of gateways to use when sending a downlink message from AWS IoT Core for LoRaWAN to your device using the [`SendDataToWirelessDevice`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_SendDataToWirelessDevice.html) API operation. When you invoke the API operation, specify the following parameters using the `ParticipatingGateways` object for your gateways.
 
 **Note**
 The list of gateways you want to use isn't available in the AWS IoT console. You can specify this list of gateways to use only when using the `SendDataToWirelessDevice` API operation or the CLI.
@@ -76,7 +76,7 @@ The output of running this command generates a `MessageId` for the downlink mess
 ## Get information about the list of participating gateways
 <a name="lorawan-participate-get"></a>
 
-You can get information about the list of gateways that are participating in receiving the downlink message by listing messages in the downlink queue. To list messages, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListQueuedMessages.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListQueuedMessages.html) API.
+You can get information about the list of gateways that are participating in receiving the downlink message by listing messages in the downlink queue. To list messages, use the [`ListQueuedMessages`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListQueuedMessages.html) API.
 
 ```
 aws iotwireless list-queued-messages \

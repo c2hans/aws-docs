@@ -87,7 +87,6 @@ Most APIs that support AWS CloudTrail logging also report usage metrics to Cloud
 | AWS Health APIs And Notifications | `AWS Health APIs And Notifications` |
 | Amazon Interactive Video Service | `IVS` |
 | AWS IoT Core | `IoT` |
-| AWS IoT Events | `IoT Events` |
 | AWS IoT RoboRunner | `IoT RoboRunner` |
 | AWS IoT SiteWise | `IoT Sitewise` |
 | AWS IoT Wireless | `IoT Wireless` |

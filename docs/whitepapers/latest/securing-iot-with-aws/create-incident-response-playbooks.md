@@ -20,4 +20,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/securing-iot-with-aws
  AWS provides the following assets and services to help you monitor your security and create incident response playbooks:
 +  [AWS Security Incident Response Guide](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/welcome.html)
 +  [AWS Systems Manager](https://aws.amazon.com/systems-manager/) – Provides a centralized and consistent way to gather operational insights and carry out routine management tasks.
-+  [Security Pillar of AWS Well-Architected](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html) and [https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/welcome.html](https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/welcome.html)
++  [Security Pillar of AWS Well-Architected](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html) and [**IoT Lens**](https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/welcome.html)

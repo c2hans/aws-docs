@@ -12,7 +12,7 @@ IBM DB2 connector remains fully supported for existing customers through May 31,
 
 IBM DB2 is a relational database management system developed by IBM. If you are a AWS user, you can use Amazon Q Business to index your IBM DB2 data source.
 
- You can connect your IBM DB2 instance to Amazon Q—using either the AWS Management Console, CLI, or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q web experience.
+ You can connect your IBM DB2 instance to Amazon Q—using either the AWS Management Console, CLI, or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q web experience.
 
 The Amazon Q IBM DB2 data source connector supports DB2 11.5.7.
 

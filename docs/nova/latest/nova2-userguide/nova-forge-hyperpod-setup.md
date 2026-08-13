@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-forge-hyperpod-setup.html
 ---
 
-# Set up infrastructure
+# Set up SageMaker HyperPod infrastructure
 <a name="nova-forge-hyperpod-setup"></a>
 
-Once your Amazon Nova Forge subscription is approved, set up the necessary infrastructure to use Forge-enabled features. For detailed instructions on creating a EKS cluster with a restricted instance group (RIG), follow the [workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/dcac6f7a-3c61-4978-8344-7535526bf743/en-US) instructions.
+Once your Amazon Nova Forge subscription is approved, set up the necessary SageMaker HyperPod infrastructure to use Forge-enabled features. For detailed instructions on creating a SageMaker HyperPod EKS cluster with a restricted instance group (RIG), follow the [workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/dcac6f7a-3c61-4978-8344-7535526bf743/en-US) instructions.

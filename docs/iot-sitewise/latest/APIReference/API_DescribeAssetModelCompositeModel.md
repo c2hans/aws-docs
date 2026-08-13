@@ -231,7 +231,7 @@ Length Constraints: Fixed length of 36.
 Pattern: `^(?!00000000-0000-0000-0000-000000000000)[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`
 
  ** [compositionDetails](#API_DescribeAssetModelCompositeModel_ResponseSyntax) **   <a name="iotsitewise-DescribeAssetModelCompositeModel-response-compositionDetails"></a>
-Metadata for the composition relationship established by using `composedAssetModelId` in [https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateAssetModelCompositeModel.html](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateAssetModelCompositeModel.html). For instance, an array detailing the path of the composition relationship for this composite model.
+Metadata for the composition relationship established by using `composedAssetModelId` in [`CreateAssetModelCompositeModel`](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateAssetModelCompositeModel.html). For instance, an array detailing the path of the composition relationship for this composite model.
 Type: [CompositionDetails](API_CompositionDetails.md) object
 
 ## Errors

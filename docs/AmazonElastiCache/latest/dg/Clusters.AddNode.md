@@ -143,7 +143,7 @@ This operation produces output similar to the following (JSON format):
 }
 ```
 
-For more information, see the AWS CLI topic [https://docs.aws.amazon.com/cli/latest/reference/elasticache/modify-cache-cluster.html](https://docs.aws.amazon.com/cli/latest/reference/elasticache/modify-cache-cluster.html).
+For more information, see the AWS CLI topic [`modify-cache-cluster`](https://docs.aws.amazon.com/cli/latest/reference/elasticache/modify-cache-cluster.html).
 
 ## Using the AWS CLI with ElastiCache
 <a name="Clusters.AddNode.CLI"></a>
@@ -250,7 +250,7 @@ This operation produces output similar to the following (JSON format):
 }
 ```
 
-For more information, see the AWS CLI topic [https://docs.aws.amazon.com/cli/latest/reference/elasticache/increase-replica-count.html](https://docs.aws.amazon.com/cli/latest/reference/elasticache/increase-replica-count.html).
+For more information, see the AWS CLI topic [`increase-replica-count`](https://docs.aws.amazon.com/cli/latest/reference/elasticache/increase-replica-count.html).
 
 ## Using the ElastiCache API
 <a name="Clusters.AddNode.API"></a>
@@ -286,7 +286,7 @@ If you want to add nodes to an existing Valkey or Redis OSS (cluster mode disabl
       &X-Amz-Signature=<signature>
   ```
 
-For more information, see ElastiCache API topic [https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_IncreaseReplicaCount.html](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_IncreaseReplicaCount.html).
+For more information, see ElastiCache API topic [`IncreaseReplicaCount`](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_IncreaseReplicaCount.html).
 
 ## Using the ElastiCache API
 <a name="Clusters.AddNode.API"></a>
@@ -320,4 +320,4 @@ For more information, see ElastiCache API topic [https://docs.aws.amazon.com/Ama
       &X-Amz-Signature=<signature>
   ```
 
-For more information, see ElastiCache API topic [https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_ModifyCacheCluster.html](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_ModifyCacheCluster.html).
+For more information, see ElastiCache API topic [`ModifyCacheCluster`](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_ModifyCacheCluster.html).

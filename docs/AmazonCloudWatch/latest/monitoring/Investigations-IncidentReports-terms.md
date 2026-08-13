@@ -32,7 +32,7 @@ Report assessment
 An automated evaluation of the generated incident report, identifying potential data gaps or areas requiring additional information to improve report completeness and quality.
 
 Root cause analysis
-A systematic process of identifying the fundamental reason for an operational issue, leveraging CloudWatch investigations AI-driven hypotheses and correlations across multiple AWS services.
+A systematic process of identifying the fundamental reason for an operational issue, using CloudWatch investigations AI-driven hypotheses and correlations across multiple AWS services.
 
 Suggestions tab
 A feature in CloudWatch investigations that presents AI-generated observations and hypotheses about potential causes or related issues, based on analysis of system telemetry and logs.

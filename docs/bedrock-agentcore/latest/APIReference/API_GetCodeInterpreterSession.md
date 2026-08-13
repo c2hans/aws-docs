@@ -55,6 +55,9 @@ Content-type: application/json
    ],
    "codeInterpreterIdentifier": "string",
    "createdAt": "string",
+   "filesystemConfigurations": [
+      { ... }
+   ],
    "name": "string",
    "sessionId": "string",
    "sessionTimeoutSeconds": number,
@@ -81,6 +84,11 @@ Type: String
  ** [createdAt](#API_GetCodeInterpreterSession_ResponseSyntax) **   <a name="BedrockAgentCore-GetCodeInterpreterSession-response-createdAt"></a>
 The time at which the code interpreter session was created.
 Type: Timestamp
+
+ ** [filesystemConfigurations](#API_GetCodeInterpreterSession_ResponseSyntax) **   <a name="BedrockAgentCore-GetCodeInterpreterSession-response-filesystemConfigurations"></a>
+The file system configurations for the code interpreter session. Each entry describes an access point and its mount path.
+Type: Array of [ToolsFileSystemConfiguration](API_ToolsFileSystemConfiguration.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 
  ** [name](#API_GetCodeInterpreterSession_ResponseSyntax) **   <a name="BedrockAgentCore-GetCodeInterpreterSession-response-name"></a>
 The name of the code interpreter session.

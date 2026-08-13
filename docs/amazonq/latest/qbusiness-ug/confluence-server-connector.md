@@ -7,7 +7,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 # Connecting Confluence (Server/Data Center) to Amazon Q Business
 <a name="confluence-server-connector"></a>
 
-Atlassian Confluence is a collaborative work-management tool designed for sharing, storing, and working on project planning, software development, and product management. You can connect Confluence (Server/Data Center) instance to Amazon Q Business—using either the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q web experience.
+Atlassian Confluence is a collaborative work-management tool designed for sharing, storing, and working on project planning, software development, and product management. You can connect Confluence (Server/Data Center) instance to Amazon Q Business—using either the AWS Management Console or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q web experience.
 
 **Topics**
 + [Known limitations for the Amazon Q Business Confluence (Server/Data Center) connector](confluence-server-limitations.md)

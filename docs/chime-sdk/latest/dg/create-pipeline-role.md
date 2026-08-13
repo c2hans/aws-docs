@@ -70,7 +70,7 @@ You can't to edit the *AWSServiceRoleForAmazonChimeSDKMediaPipelines* service-li
 ## Deleting the service-linked role
 <a name="delete-pipeline-role"></a>
 
-If don't need a service-linked role, we recommend that you delete it. To do that, you first delete the media pipelines that use the role. You can use the AWS CLI or the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaCapturePipeline.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaCapturePipeline.html) API to delete the pipelines.
+If don't need a service-linked role, we recommend that you delete it. To do that, you first delete the media pipelines that use the role. You can use the AWS CLI or the [DeleteMediaCapturePipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaCapturePipeline.html) API to delete the pipelines.
 
 **Using the CLI to delete pipelines**
 Use this command in the AWS CLI to delete media pipelines in your account.
@@ -80,7 +80,7 @@ aws chime-sdk-media-pipelines delete-media-capture-pipeline --media-pipeline-id 
 ```
 
 **Using an API to delete pipelines**
-Use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaCapturePipeline.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaCapturePipeline.html) API to delete media pipelines in your account.
+Use the [DeleteMediaCapturePipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaCapturePipeline.html) API to delete media pipelines in your account.
 
 **Deleting the role**
 Once you delete the pipelines, you can use the IAM console, the AWS CLI, or the AWS API to delete the role. For more information about deleting roles, see [Deleting a Service-Linked Role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#delete-service-linked-role) in the *IAM User Guide*.

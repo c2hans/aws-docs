@@ -12,16 +12,27 @@ This release applies Windows December 2018 security updates to the Windows Serve
 ## Changes
 <a name="release-2018-12-21-windows.changes"></a>
 
-| **Category** | **Description** |
-| --- | --- |
-| **Instance type** | **Regions** |
-| --- | --- |
-| **Windows security updates** | Applied December 2018 security updates for Windows.<br />See Microsoft's [Security TechCenter](https://portal.msrc.microsoft.com/en-us/) and [Security Advisories and Bulletins](https://technet.microsoft.com/en-us/library/security/). |
-| **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-12-21-windows.html) |
-| **T3** |  + Asia Pacific (Seoul) – ap-northeast-2<br />+ Europe (Paris) – eu-west-3<br />+ AWS GovCloud (US-West) – us-gov-west-1  |
-| **C5n** |  + US East (Ohio) – us-east-2<br />+ US East (N. Virginia) – us-east-1<br />+ US West (Oregon) – us-west-2<br />+ Europe (Ireland) – eu-west-1<br />+ AWS GovCloud (US-West) – us-gov-west-1  |
-| **R5d** |  + Europe (Paris) – eu-west-3<br />+ AWS GovCloud (US-West) – us-gov-west-1  |
-| **R5, C5d, M5d** |  + Europe (Paris) – eu-west-3  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows security updates</b></td><td>Applied December 2018 security updates for Windows.<br />See Microsoft's <a href="https://portal.msrc.microsoft.com/en-us/">Security TechCenter</a> and <a href="https://technet.microsoft.com/en-us/library/security/">Security Advisories and Bulletins</a>.</td></tr>
+  <tr><td><b>Instance types</b></td><td>Added support for more Amazon EC2 instance types in some AWS Regions, as follows:
+<table>
+<thead>
+  <tr><th><b>Instance type</b></th><th><b>Regions</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>T3</b></td><td> <ul><li>Asia Pacific (Seoul) – ap-northeast-2</li><li>Europe (Paris) – eu-west-3</li><li>AWS GovCloud (US-West) – us-gov-west-1</li></ul> </td></tr>
+  <tr><td><b>C5n</b></td><td> <ul><li>US East (Ohio) – us-east-2</li><li>US East (N. Virginia) – us-east-1</li><li>US West (Oregon) – us-west-2</li><li>Europe (Ireland) – eu-west-1</li><li>AWS GovCloud (US-West) – us-gov-west-1</li></ul> </td></tr>
+  <tr><td><b>R5d</b></td><td> <ul><li>Europe (Paris) – eu-west-3</li><li>AWS GovCloud (US-West) – us-gov-west-1</li></ul> </td></tr>
+  <tr><td><b>R5, C5d, M5d</b></td><td> <ul><li>Europe (Paris) – eu-west-3</li></ul> </td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## Updated platform configurations
 <a name="release-2018-12-21-windows.platforms"></a>

@@ -50,7 +50,7 @@ Replace `123456789012` with your AWS account ID.
                     "aws:SourceAccount": "123456789012"
                 },
                 "ArnLike": {
-                    "aws:SourceArn": "arn:aws:ssm:*:123456789012:connector/*"
+                    "aws:SourceArn": "arn:aws:ssm:*:123456789012:cloud-connector/*"
                 }
             }
         }

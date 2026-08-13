@@ -20,4 +20,4 @@ Every event or log entry contains information about who generated the request. T
 + Whether the request was made with temporary security credentials for a role or federated user.
 + Whether the request was made by another AWS service.
 
-For more information, see the [CloudTrail userIdentity element](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html)in the *AWS CloudTrail User Guide*.
+For more information, see the [CloudTrail userIdentity element](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html) in the *AWS CloudTrail User Guide*.

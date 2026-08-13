@@ -25,12 +25,12 @@ You can see how your volume's storage capacity is being consumed by using the `v
 
 You can increase a volume's storage capacity by using the Amazon FSx console, AWS CLI, and Amazon FSx API. For more information about updating a volume with an increased capacity, see [Updating volumes](updating-volumes.md).
 
-Alternatively, you can increase a volume's storage capacity using the [https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/volume__modify.html](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/volume__modify.html) NetApp ONTAP CLI command. For more information, see [To change a volume's storage capacity (console)](manage-volume-capacity.md#increase-volume-size).
+Alternatively, you can increase a volume's storage capacity using the [`volume modify`](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/volume__modify.html) NetApp ONTAP CLI command. For more information, see [To change a volume's storage capacity (console)](manage-volume-capacity.md#increase-volume-size).
 
 ## Using volume autosizing
 <a name="volume-autosizing"></a>
 
-You can use volume autosizing so that a volume automatically grows by a specified amount, or to a specified size when it reaches a used space threshold. You can do this for FlexVol volume types, which is the default volume type for FSx for ONTAP, using the [https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/volume__autosize.html](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/volume__autosize.html) NetApp ONTAP CLI command. For more information, see [Enabling autosizing](enable-volume-autosizing.md).
+You can use volume autosizing so that a volume automatically grows by a specified amount, or to a specified size when it reaches a used space threshold. You can do this for FlexVol volume types, which is the default volume type for FSx for ONTAP, using the [`volume autosize`](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/volume__autosize.html) NetApp ONTAP CLI command. For more information, see [Enabling autosizing](enable-volume-autosizing.md).
 
 ## Your file system's primary storage is full
 <a name="file-system-primary-capacity"></a>

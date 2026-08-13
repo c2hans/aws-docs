@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-example-no
 
 The following notebooks serve as practical, hands-on examples that address various use cases of Autopilot.
 
-You can find all of Autopilot's notebooks in the [https://github.com/aws/amazon-sagemaker-examples/tree/main/autopilot](https://github.com/aws/amazon-sagemaker-examples/tree/main/autopilot) directory of SageMaker AI GitHub examples repository.
+You can find all of Autopilot's notebooks in the [`autopilot`](https://github.com/aws/amazon-sagemaker-examples/tree/main/autopilot) directory of SageMaker AI GitHub examples repository.
 
 We recommend cloning the full Git repository within Studio Classic to access and run the notebooks directly. For information on how to clone a Git repository in Studio Classic, see [Clone a Git Repository in Amazon SageMaker Studio Classic](studio-tasks-git.md).
 

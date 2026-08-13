@@ -31,7 +31,7 @@ The detail section also includes a `mediaInsightsPipelineElementStatuses` field 
 + `Stopped`
 + `Failed`
 
- The detail section also includes any key-value pairs specified in `MediaInsightsRuntimeMetadata` during the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaInsightsPipeline.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaInsightsPipeline.html) API call. If a call analytics session was initiated by a Voice Connector, the metadata section is populated with the following parameters automatically:
+ The detail section also includes any key-value pairs specified in `MediaInsightsRuntimeMetadata` during the [CreateMediaInsightsPipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaInsightsPipeline.html) API call. If a call analytics session was initiated by a Voice Connector, the metadata section is populated with the following parameters automatically:
 + `transactionId`
 + `fromNumber`
 + `toNumber`
@@ -708,7 +708,7 @@ Only Amazon Transcribe and Amazon Transcribe Call Analytics processors support r
 
  Amazon Chime SDK call analytics allows developers to set up rules for sending real-time alerts through a processor during an analytics session. Alerts are sent to Amazon EventBridge with the detail type `Media Insights Rules Matched`. EventBridge supports integration with downstream services such as Lambda, Amazon SQS, and Amazon SNS to trigger notifications for the end user or initiate other custom business logic.
 
- Real-time alerts are set up as a part of the `RealTimeAlertConfiguration` field for the `MediaInsightsPipelineConfiguration`. You can use the Amazon Chime SDK console to configure the field, or you can call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaInsightsPipelineConfiguration.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaInsightsPipelineConfiguration.html) or [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_UpdateMediaInsightsPipelineConfiguration.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_UpdateMediaInsightsPipelineConfiguration.html) APIs.
+ Real-time alerts are set up as a part of the `RealTimeAlertConfiguration` field for the `MediaInsightsPipelineConfiguration`. You can use the Amazon Chime SDK console to configure the field, or you can call the [CreateMediaInsightsPipelineConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaInsightsPipelineConfiguration.html) or [UpdateMediaInsightsPipelineConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_UpdateMediaInsightsPipelineConfiguration.html) APIs.
 
  This example shows how to create or update a real-time alert configuration through the API.
 

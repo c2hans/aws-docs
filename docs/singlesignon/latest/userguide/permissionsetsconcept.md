@@ -16,6 +16,8 @@ You can add [AWS managed policies](https://docs.aws.amazon.com/IAM/latest/UserGu
 
 To create a permission set, see [Create, manage, and delete permission sets](permissionsets.md).
 
+If your access management requires capabilities beyond what permission sets offer — such as custom trust policies, role tags, or configurable role paths — you can use [account access manager](https://docs.aws.amazon.com/IAM/latest/UserGuide/account-access-manager.html) in IAM. Account access manager lets you assign existing IAM roles to IAM Identity Center users and groups. You can use it independently or together with permission sets to gain access to the full IAM role feature set.
+
 ## Create a permission set that applies least-privilege permissions
 <a name="get-started-create-permission-set-to-grant-least-privilege-permissions"></a>
 

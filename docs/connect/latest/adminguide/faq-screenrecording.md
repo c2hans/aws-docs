@@ -91,7 +91,7 @@ During a video call or screen sharing session, agents are able to see the custom
   Screen recording uses OpenH264 codec.
 + **Is there a way to choose which audio (redacted or unredacted) gets used for screen recording?**
 
-  By default, the screen recording uses the unredacted audio. If you enable [rule-based redaction](rule-based-redaction-screen-recording.md) for the contact, the redacted screen recording is stitched with the redacted call recording when Contact Lens call recording redaction is also enabled for the contact, and has no audio otherwise.
+  By default, the screen recording uses the unredacted audio. If you enable [rule-based redaction](rule-based-redaction-screen-recording.md) for the contact, the redacted screen recording is stitched with the redacted call recording when conversational analytics call recording redaction is also enabled for the contact, and has no audio otherwise.
 + **Is there a service limit for screen recording?**
 
   No, there is no service limit or quota for screen recording service.
@@ -139,7 +139,7 @@ During a video call or screen sharing session, agents are able to see the custom
   Connect Customer stores both the unredacted and redacted recordings in your Amazon S3 bucket. You pay standard Amazon S3 storage rates for both files. If you do not need to retain the unredacted originals, you can use an Amazon S3 lifecycle policy to expire them on a shorter schedule than the redacted versions.
 + **Does rule-based redaction apply to call recordings?**
 
-  Rule-based redaction applies only to agent screen recordings. It does not redact audio. When rule-based redaction is enabled for a contact, Connect Customer stitches the redacted video with the redacted call recording if Contact Lens call recording redaction is also enabled for the contact, and with no audio otherwise. To redact audio from call recordings, see [Use sensitive data redaction with Contact Lens](https://docs.aws.amazon.com/connect/latest/adminguide/sensitive-data-redaction.html).
+  Rule-based redaction applies only to agent screen recordings. It does not redact audio. When rule-based redaction is enabled for a contact, Connect Customer stitches the redacted video with the redacted call recording if conversational analytics call recording redaction is also enabled for the contact, and with no audio otherwise. To redact audio from call recordings, see [Use sensitive data redaction with conversational analytics](https://docs.aws.amazon.com/connect/latest/adminguide/sensitive-data-redaction.html).
 + **Does rule-based redaction use artificial intelligence or machine learning?**
 
   No. Rule-based redaction is purely pattern matching. It evaluates each browser page URL and application window title against the rules you configure, and does not use artificial intelligence, machine learning, or generative AI.
@@ -185,9 +185,9 @@ During a video call or screen sharing session, agents are able to see the custom
 
 ### Configuration
 <a name="faq-rbr-configuration"></a>
-+ **Does rule-based redaction require Conversational Analytics (Contact Lens)?**
++ **Does rule-based redaction require conversational analytics?**
 
-  No. The URL and window-title matching that drives rule-based redaction is independent of Contact Lens and works without it enabled. However, audio in the *redacted* recording does depend on it: when rule-based redaction is enabled for a contact, the redacted screen recording is stitched with the redacted call recording only if Contact Lens call recording redaction is also enabled for that contact — otherwise the redacted recording has no audio. The unredacted screen recording always uses the unredacted audio.
+  No. The URL and window-title matching that drives rule-based redaction is independent of conversational analytics and works without it enabled. However, audio in the *redacted* recording does depend on it: when rule-based redaction is enabled for a contact, the redacted screen recording is stitched with the redacted call recording only if conversational analytics call recording redaction is also enabled for that contact — otherwise the redacted recording has no audio. The unredacted screen recording always uses the unredacted audio.
 + **Can I change the redaction rule during an active contact?**
 
   No. The redaction configuration is fixed for the duration of a contact.

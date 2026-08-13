@@ -25,7 +25,7 @@ You can manage access to your Amazon Aurora resources and your databases on a DB
 
   For information about security with Aurora MySQL, see [Security with Amazon Aurora MySQL](AuroraMySQL.Security.md) . For information about security with Aurora PostgreSQL, see [Security with Amazon Aurora PostgreSQL](AuroraPostgreSQL.Security.md) .
 
-Aurora is part of the managed database service Amazon Relational Database Service (Amazon RDS). Amazon RDS is a web service that makes it easier to set up, operate, and scale a relational database in the cloud. If you are not already familiar with Amazon RDS, see the [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html).
+Aurora is part of the managed database service Amazon Relational Database Service (Amazon RDS). Amazon RDS is a web service that makes it easier to set up, operate, and scale a relational database in the cloud. If you are not already familiar with Amazon RDS, see the [*Amazon RDS user guide*](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html).
 
 Aurora includes a high-performance storage subsystem. Its MySQL- and PostgreSQL-compatible database engines are customized to take advantage of that fast distributed storage. Aurora also automates and standardizes database clustering and replication, which are typically among the most challenging aspects of database configuration and administration.
 

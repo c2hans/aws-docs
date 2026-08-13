@@ -14,7 +14,7 @@ A human intelligence task, or HIT, is a question your application asks and a wor
 ## Create a HIT Directly
 <a name="mturk-creating-hits-directly"></a>
 
-The most common way to create HITs in Mechanical Turk is via the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateHITOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateHITOperation.html) operation. This API can be called with a JSON object containing the following values.
+The most common way to create HITs in Mechanical Turk is via the [`CreateHIT`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateHITOperation.html) operation. This API can be called with a JSON object containing the following values.
 
 ```
 {
@@ -44,7 +44,7 @@ The response includes the `HITId` that was generated for the task as well as the
 
 Creating a HIT with a HIT Type allows you to be explicit about which HITs ought to be the same type and is a best practice for customers creating large numbers of HITs.  It is also valuable when connecting notifications to your HITs as described in [Use Mechanical Turk notifications](Concepts_NotificationsArticle.md).
 
- When creating a HIT using a HIT Type, you can use a HIT Type ID generated via a previous [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateHITOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateHITOperation.html) call or generate one by calling the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateHITTypeOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateHITTypeOperation.html) operation. This API can be called with a JSON object containing the following values.
+ When creating a HIT using a HIT Type, you can use a HIT Type ID generated via a previous [`CreateHIT`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateHITOperation.html) call or generate one by calling the [`CreateHITType`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateHITTypeOperation.html) operation. This API can be called with a JSON object containing the following values.
 
 ```
 {
@@ -59,7 +59,7 @@ Creating a HIT with a HIT Type allows you to be explicit about which HITs ought 
 
 ```
 
-The response includes a generated `HITTypeId`, or the ID of an existing HIT Type in your account that has the same attributes. The `HITTypeId` can then be used to call [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateHITWithHITTypeOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateHITWithHITTypeOperation.html) with a JSON object containing the following values.
+The response includes a generated `HITTypeId`, or the ID of an existing HIT Type in your account that has the same attributes. The `HITTypeId` can then be used to call [`CreateHITWithHITType`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateHITWithHITTypeOperation.html) with a JSON object containing the following values.
 
 ```
 {

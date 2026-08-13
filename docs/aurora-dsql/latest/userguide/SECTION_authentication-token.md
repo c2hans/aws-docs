@@ -381,7 +381,7 @@ Console.WriteLine(token);
 **Tip**
 AWS recommends using the [Aurora DSQL Connector for Go pgx](SECTION_program-with-go-pgx-connector.md), which handles token generation automatically.
 
-The AWS SDK for Go v2 provides a built-in method for generating authentication tokens in the [https://github.com/aws/aws-sdk-go-v2/tree/main/feature/dsql/auth](https://github.com/aws/aws-sdk-go-v2/tree/main/feature/dsql/auth) package.
+The AWS SDK for Go v2 provides a built-in method for generating authentication tokens in the [`github.com/aws/aws-sdk-go-v2/feature/dsql/auth`](https://github.com/aws/aws-sdk-go-v2/tree/main/feature/dsql/auth) package.
 + If you are connecting with the `admin` role, use `auth.GenerateDBConnectAdminAuthToken`.
 + If you are connecting with a custom database role, use `auth.GenerateDbConnectAuthToken`.
 

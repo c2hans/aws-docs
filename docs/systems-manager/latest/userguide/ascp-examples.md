@@ -89,7 +89,7 @@ To prevent character substitution, enter the string `False`.
 **objects**
 A string containing a YAML declaration of the secrets to be mounted. We recommend using a YAML multi-line string or pipe (\|) character.
 **objectName**
-Required. Specifies the name of the parameter or secret to be fetched. For Parameter Store, this is the [https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameter.html#API_GetParameter_RequestParameters](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameter.html#API_GetParameter_RequestParameters) of the parameter and can be either the name or full ARN of the parameter. For Secrets Manager this is the [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html#API_GetSecretValue_RequestParameters](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html#API_GetSecretValue_RequestParameters) parameter and can be either the friendly name or full ARN of the secret.
+Required. Specifies the name of the parameter or secret to be fetched. For Parameter Store, this is the [`Name`](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameter.html#API_GetParameter_RequestParameters) of the parameter and can be either the name or full ARN of the parameter. For Secrets Manager this is the [`SecretId`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html#API_GetSecretValue_RequestParameters) parameter and can be either the friendly name or full ARN of the secret.
 **objectType**
 Required if you don't use a Secrets Manager ARN for `objectName`. For Parameter Store, use `ssmparameter`. For Secrets Manager, use `secretsmanager`.
 **objectAlias**

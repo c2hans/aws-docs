@@ -65,10 +65,10 @@ Camera Kit is Snap AR’s SDK that allows partners to leverage Snap AR technolog
 ## Support
 <a name="ivs-support"></a>
 
- The [https://console.aws.amazon.com/support/home](https://console.aws.amazon.com/support/home) offers a range of plans that provide access to tools and expertise to support your AWS solutions. All support plans provide 24/7 access to customer service. For technical support and more resources to plan, deploy, and improve your AWS environment, choose a support plan that best aligns with your AWS use case.
+ The [*AWS Support Center*](https://console.aws.amazon.com/support/home) offers a range of plans that provide access to tools and expertise to support your AWS solutions. All support plans provide 24/7 access to customer service. For technical support and more resources to plan, deploy, and improve your AWS environment, choose a support plan that best aligns with your AWS use case.
 
- [https://aws.amazon.com/premiumsupport/](https://aws.amazon.com/premiumsupport/) is a one-on-one, fast-response support channel to help you build and run applications on AWS.
+ [*AWS Premium Support*](https://aws.amazon.com/premiumsupport/) is a one-on-one, fast-response support channel to help you build and run applications on AWS.
 
- [https://repost.aws/tags/TAAkUVScqiTFmkt-h6LdmJHw/amazon-interactive-video-service](https://repost.aws/tags/TAAkUVScqiTFmkt-h6LdmJHw/amazon-interactive-video-service) is a community-based Q&A site for developers to discuss technical questions related to Amazon IVS.
+ [*AWS re:Post*](https://repost.aws/tags/TAAkUVScqiTFmkt-h6LdmJHw/amazon-interactive-video-service) is a community-based Q&A site for developers to discuss technical questions related to Amazon IVS.
 
- [https://aws.amazon.com/contact-us/](https://aws.amazon.com/contact-us/) has links for nontechnical inquiries about your billing or account. For technical questions, use the discussion forums or support links above.
+ [*Contact AWS*](https://aws.amazon.com/contact-us/) has links for nontechnical inquiries about your billing or account. For technical questions, use the discussion forums or support links above.

@@ -17,7 +17,7 @@ Use this procedure for tasks such as:
 ## Comparison with Neptune Analytics
 <a name="access-graph-pg-schema-comparison-analytics"></a>
 
-In Neptune Analytics, [https://docs.aws.amazon.com/neptune-analytics/latest/userguide/custom-algorithms-property-graph-schema.html](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/custom-algorithms-property-graph-schema.html) is synchronous. It computes the schema on every call.
+In Neptune Analytics, [`neptune.graph.pg_schema()`](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/custom-algorithms-property-graph-schema.html) is synchronous. It computes the schema on every call.
 
 In Neptune Database, you explicitly trigger an asynchronous schema computation by calling `neptune.graph.pg_schema.compute()`, which returns immediately. The computation runs in the background while you poll for completion using `neptune.graph.pg_schema()`. Once computed, Neptune persists the schema and returns it instantly on subsequent reads without recomputation. Partial results are also available while the computation is still in progress. You can also stop a running computation and resume it later.
 

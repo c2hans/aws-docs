@@ -14,9 +14,9 @@ Before you begin restoring resources, ensure the role you're using has sufficien
 
 For more information, see the following entries on policies:
 
-1. [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForS3Restore.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForS3Restore.html)
+1. [`AWSBackupServiceRolePolicyForS3Restore`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForS3Restore.html)
 
-1. [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForRestores.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForRestores.html)
+1. [`AWSBackupServiceRolePolicyForRestores`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForRestores.html)
 
 1. [Managed policies for AWS Backup](security-iam-awsmanpol.md)
 

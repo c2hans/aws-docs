@@ -80,7 +80,7 @@ All the example code in this guide assumes a connection to a “ProgGuideData”
 }
 ```
 
-All code samples showing CRUD, index management, and event-driven programming assumes that you have a [https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/MongoClient.html](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/MongoClient.html) object `dbClient`, a [https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/MongoDatabase.html](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/MongoDatabase.html) object `connectionDB`, and a [https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/MongoCollection.html#find()](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/MongoCollection.html#find()) object `collection`.
+All code samples showing CRUD, index management, and event-driven programming assumes that you have a [`MongoClient`](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/MongoClient.html) object `dbClient`, a [`MongoDatabase`](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/MongoDatabase.html) object `connectionDB`, and a [`MongoCollection`](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/MongoCollection.html#find()) object `collection`.
 
 **Note**
 All code examples in this guide have been tested with MongoDB Java driver version 5.3.0.

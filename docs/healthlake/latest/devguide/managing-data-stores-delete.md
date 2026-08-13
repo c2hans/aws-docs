@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-data
 # Deleting a HealthLake data store
 <a name="managing-data-stores-delete"></a>
 
-Use `DeleteFHIRDatastore` to delete a HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DeleteFHIRDatastores.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DeleteFHIRDatastores.html) in the *AWS HealthLake API Reference*.
+Use `DeleteFHIRDatastore` to delete a HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`DeleteFHIRDatastore`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DeleteFHIRDatastores.html) in the *AWS HealthLake API Reference*.
 
 **To delete a HealthLake data store**
 Choose a menu based on your access preference to AWS HealthLake.

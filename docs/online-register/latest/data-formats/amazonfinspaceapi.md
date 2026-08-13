@@ -11,4 +11,4 @@ Amazon FinSpace API provides the following APIs for data retrieval.
 
 | Actions | Description | Access level |
 | --- | --- | --- |
-| <a name="finspace-api-GetProgrammaticAccessCredentials"></a>[https://docs.aws.amazon.com/finspace/latest/data-api/API_GetProgrammaticAccessCredentials.html](https://docs.aws.amazon.com/finspace/latest/data-api/API_GetProgrammaticAccessCredentials.html) | Retrieve FinSpace programmatic access credentials | Read |
+| <a name="finspace-api-GetProgrammaticAccessCredentials"></a>[GetProgrammaticAccessCredentials](https://docs.aws.amazon.com/finspace/latest/data-api/API_GetProgrammaticAccessCredentials.html) | Retrieve FinSpace programmatic access credentials | Read |

@@ -116,9 +116,9 @@ When deriving your own construct from an existing construct, you may want to acc
 ### Generic structures
 <a name="java-generic-structures"></a>
 
-In some APIs, the AWS CDK uses JavaScript arrays or untyped objects as input to a method. (See, for example, AWS CodeBuild's [https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_aws-codebuild.BuildSpec.html#to-wbr-build-wbr-spec](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_aws-codebuild.BuildSpec.html#to-wbr-build-wbr-spec) method.) In Java, these objects are represented as `java.util.Map<String, Object>`. In cases where the values are all strings, you can use `Map<String, String>`.
+In some APIs, the AWS CDK uses JavaScript arrays or untyped objects as input to a method. (See, for example, AWS CodeBuild's [`BuildSpec.fromObject()`](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_aws-codebuild.BuildSpec.html#to-wbr-build-wbr-spec) method.) In Java, these objects are represented as `java.util.Map<String, Object>`. In cases where the values are all strings, you can use `Map<String, String>`.
 
-Java does not provide a way to write literals for such containers like some other languages do. In Java 9 and later, you can use [https://docs.oracle.com/javase/9/docs/api/java/util/Map.html#ofEntries-java.util.Map.Entry...-](https://docs.oracle.com/javase/9/docs/api/java/util/Map.html#ofEntries-java.util.Map.Entry...-) to conveniently define maps of up to ten entries inline with one of these calls.
+Java does not provide a way to write literals for such containers like some other languages do. In Java 9 and later, you can use [`java.util.Map.of()`](https://docs.oracle.com/javase/9/docs/api/java/util/Map.html#ofEntries-java.util.Map.Entry...-) to conveniently define maps of up to ten entries inline with one of these calls.
 
 ```
 java.util.Map.of(
@@ -127,7 +127,7 @@ java.util.Map.of(
  )
 ```
 
-To create maps with more than ten entries, use [https://docs.oracle.com/javase/9/docs/api/java/util/Map.html#ofEntries-java.util.Map.Entry...-](https://docs.oracle.com/javase/9/docs/api/java/util/Map.html#ofEntries-java.util.Map.Entry...-).
+To create maps with more than ten entries, use [`java.util.Map.ofEntries()`](https://docs.oracle.com/javase/9/docs/api/java/util/Map.html#ofEntries-java.util.Map.Entry...-).
 
 If you are using Java 8, you could provide your own methods similar to to these.
 

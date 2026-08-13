@@ -41,7 +41,7 @@ Assume that you want to provide a way for employees to copy data from their comp
 
 1. The IdP constructs a SAML assertion with information about the user and sends the assertion to the client app. When you enable SAML encryption for your IAM SAML IdP, this assertion is encrypted by your external IdP.
 
-1. The client app calls the AWS STS [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithSAML.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithSAML.html) API, passing the ARN of the SAML provider, the ARN of the role to assume, and the SAML assertion from IdP. If encryption is enabled, the assertion passed through the client app remains encrypted in transit.
+1. The client app calls the AWS STS [`AssumeRoleWithSAML`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithSAML.html) API, passing the ARN of the SAML provider, the ARN of the role to assume, and the SAML assertion from IdP. If encryption is enabled, the assertion passed through the client app remains encrypted in transit.
 
 1. (Optional) AWS STS uses the private key you uploaded from your external IdP to decrypt the encrypted SAML assertion.
 

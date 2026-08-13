@@ -51,7 +51,7 @@ Starting January 26, 2023, AWS Private CA protects all CA private keys in non-Ch
 
 **To view and modify CA details using the AWS CLI**
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/acm-pca/describe-certificate-authority.html](https://docs.aws.amazon.com/cli/latest/reference/acm-pca/describe-certificate-authority.html) command in the AWS CLI to display details about a CA, as shown in the following command:
+Use the [**describe-certificate-authority**](https://docs.aws.amazon.com/cli/latest/reference/acm-pca/describe-certificate-authority.html) command in the AWS CLI to display details about a CA, as shown in the following command:
 
 ```
 $ aws acm-pca describe-certificate-authority --certificate-authority-arn arn:aws:acm:{{region}}:{{account}}:certificate-authority/{{CA_ID}}

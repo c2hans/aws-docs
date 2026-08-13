@@ -9,37 +9,39 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 
 This topic lists common use cases and best practices for AWS Systems Manager tools. If available, this topic also includes links to relevant blog posts and technical documentation.
 
+For information about cleaning up resources, see [Deleting Systems Manager resources and artifacts](systems-manager-best-practices-delete-resources.md).
+
 **Note**
 The title of each section here is an active link to the corresponding section in the technical documentation.
 
 **[Automation](systems-manager-automation.md)**
 + Create self-service Automation runbooks for infrastructure.
-+ Use Automation, a tool in AWS Systems Manager, to simplify creating Amazon Machine Images (AMIs) from the AWS Marketplace or custom AMIs, using public Systems Manager documents (SSM documents) or by authoring your own workflows.
++ Use Automation to simplify creating Amazon Machine Images (AMIs) from the AWS Marketplace or custom AMIs, using public Systems Manager documents (SSM documents) or by authoring your own workflows.
 + [Build and maintain AMIs](automation-tutorial-update-ami.md) using the `AWS-UpdateLinuxAmi` and `AWS-UpdateWindowsAmi` Automation runbooks, or using custom Automation runbooks that you create.
 
 **[Compliance](systems-manager-compliance.md)**
 + As a security best practice, we recommend that you update the AWS Identity and Access Management (IAM) role used by your managed nodes to restrict the node's ability to use the [PutComplianceItems](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_PutComplianceItems.html) API action. This API action registers a compliance type and other compliance details on a designated resource, such as an Amazon EC2 instance or a managed node. For more information, see [Configuring permissions for Compliance](compliance-permissions.md).
 
 **[Inventory](systems-manager-inventory.md)**
-+ Use Inventory, a tool in AWS Systems Manager, with AWS Config to audit your application configurations over time.
++ Use Inventory with AWS Config to audit your application configurations over time.
 
 **[Maintenance Windows](maintenance-windows.md)**
 + Define a schedule to perform potentially disruptive actions on your nodes such as operating system (OS) patching, driver updates, or software installations.
 + For information about the differences between State Manager and Maintenance Windows, tools of AWS Systems Manager, see [Choosing between State Manager and Maintenance Windows](state-manager-vs-maintenance-windows.md).
 
 **[Parameter Store](systems-manager-parameter-store.md)**
-+ Use Parameter Store, a tool in AWS Systems Manager, to centrally manage global configuration settings.
++ Use Parameter Store to centrally manage global configuration settings.
 + [How AWS Systems Manager Parameter Store uses AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/services-parameter-store.html).
 + [Reference AWS Secrets Manager secrets from Parameter Store parameters](integration-ps-secretsmanager.md).
 
 **[Patch Manager](patch-manager.md)**
-+ Use Patch Manager, a tool in AWS Systems Manager, to roll out patches at scale and increase fleet compliance visibility across your nodes.
++ Use Patch Manager to roll out patches at scale and increase fleet compliance visibility across your nodes.
 +  [Integrate Patch Manager with AWS Security Hub CSPM](patch-manager-security-hub-integration.md) to receive alerts when nodes in your fleet go out of compliance and monitor the patching status of your fleets from a security point of view. There is a charge to use Security Hub CSPM. For more information, see [Pricing](https://aws.amazon.com/security-hub/pricing/).
 + Use only one method at a time for scanning managed nodes for patch compliance to [avoid unintentionally overwriting compliance data](patch-manager-compliance-data-overwrites.md).
 
 **[Run Command](run-command.md)**
 + [Manage Instances at Scale without SSH Access Using EC2 Run Command](https://aws.amazon.com/blogs/aws/manage-instances-at-scale-without-ssh-access-using-ec2-run-command/).
-+ Audit all API calls made by or on behalf of Run Command, a tool in AWS Systems Manager, using AWS CloudTrail.
++ Audit all API calls made by or on behalf of Run Command using AWS CloudTrail.
 + When you send a command using Run Command, don't include sensitive information formatted as plaintext, such as passwords, configuration data, or other secrets. All Systems Manager API activity in your account is logged in an S3 bucket for AWS CloudTrail logs. This means that any user with access to S3 bucket can view the plaintext values of those secrets. For this reason, we recommend creating and using `SecureString` parameters to encrypt sensitive data you use in your Systems Manager operations.
 
   For more information, see [Managing access to Parameter Store parameters using IAM policies](parameter-store-setting-up.md#sysman-paramstore-access).

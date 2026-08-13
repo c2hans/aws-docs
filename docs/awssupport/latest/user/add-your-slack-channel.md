@@ -33,7 +33,7 @@ You can configure channels that are part of [Slack Connect](https://slack.com/co
    1. Choose **Add** next to the **AWS Support App**.
 ![Add the AWS Support App.](http://docs.aws.amazon.com/awssupport/latest/user/images/supportapp/invite-apps-to-channel-from-slack.png)
 
-1. Sign in to the [https://console.aws.amazon.com/support/app](https://console.aws.amazon.com/support/app) and choose **Slack configuration**.
+1. Sign in to the [**Support Center Console**](https://console.aws.amazon.com/support/app) and choose **Slack configuration**.
 
 1. Choose **Add channel**.
 
@@ -78,7 +78,7 @@ After you configured your Slack channel, you can update them later to change the
 
 **To update your Slack channel configuration**
 
-1. Sign in to the [https://console.aws.amazon.com/support/app](https://console.aws.amazon.com/support/app) and choose **Slack configuration**.
+1. Sign in to the [**Support Center Console**](https://console.aws.amazon.com/support/app) and choose **Slack configuration**.
 
 1. Under **Channels**, choose the channel configuration that you want.
 

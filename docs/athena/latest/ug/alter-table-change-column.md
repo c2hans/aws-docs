@@ -25,7 +25,7 @@ The following example changes the column name `area` to `zip`, makes the data ty
 ALTER TABLE example_table CHANGE COLUMN area zip int AFTER id
 ```
 
-The following example adds a comment to the `zip` column in the metadata for `example_table`. To see the comment, use the AWS CLI [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/athena/get-table-metadata.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/athena/get-table-metadata.html) command or visit the schema for the table in the AWS Glue console.
+The following example adds a comment to the `zip` column in the metadata for `example_table`. To see the comment, use the AWS CLI [`aws athena get-table-metadata`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/athena/get-table-metadata.html) command or visit the schema for the table in the AWS Glue console.
 
 ```
 ALTER TABLE example_table CHANGE COLUMN zip zip int COMMENT 'USA zipcode'

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_EventB
 # EventBridgeParameters
 <a name="API_EventBridgeParameters"></a>
 
-The templated target type for the EventBridge [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html) API operation.
+The templated target type for the EventBridge [`PutEvents`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html) API operation.
 
 ## Contents
 <a name="API_EventBridgeParameters_Contents"></a>

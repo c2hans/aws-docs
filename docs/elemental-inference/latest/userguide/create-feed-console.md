@@ -9,7 +9,7 @@ This section describes how to use the Elemental Inference console to create an E
 
 **Create the feed**
 
-1. Open the Elemental Inference console at [https://console.aws.amazon.com/elemental-inference/](https://console.aws.amazon.com/elemental-inference/).
+1. Open the [Elemental Inference console](https://console.aws.amazon.com/elemental-inference/).
 
 1. In the left navigation bar, choose **Feeds**. On the **Feeds** page, choose **Create**.
 

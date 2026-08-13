@@ -21,7 +21,7 @@ For an ongoing record of events in your AWS account, including events for AWS Cl
 + [Receiving CloudTrail log files from multiple Regions](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/receive-cloudtrail-log-files-from-multiple-regions.html)
 + [Receiving CloudTrail log files from multiple accounts](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.html)
 
-All AWS Clean Rooms actions are logged by CloudTrail and are documented in the [https://docs.aws.amazon.com/clean-rooms/latest/apireference/Welcome.html](https://docs.aws.amazon.com/clean-rooms/latest/apireference/Welcome.html).
+All AWS Clean Rooms actions are logged by CloudTrail and are documented in the [*AWS Clean Rooms API Reference*](https://docs.aws.amazon.com/clean-rooms/latest/apireference/Welcome.html).
 
 Every event or log entry contains information about who generated the request. The identity information helps you determine the following:
 + Whether the request was made with root user or IAM user credentials.

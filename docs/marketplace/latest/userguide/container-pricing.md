@@ -26,7 +26,7 @@ You can't change your pricing model between contract, usage, and contract with c
 
 1. Open the AWS Marketplace Management Portal at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home) and sign in to your seller account.
 
-1. From the [https://aws.amazon.com/marketplace/management/products/server](https://aws.amazon.com/marketplace/management/products/server) page, select the container product that you want to modify.
+1. From the [**Server Products**](https://aws.amazon.com/marketplace/management/products/server) page, select the container product that you want to modify.
 
 1. From the **Request changes** dropdown list, select **Update pricing dimensions**, and then select **Add pricing dimensions**.
 
@@ -45,7 +45,7 @@ You can change the dimensions information for your product. For more information
 
 1. Open the AWS Marketplace Management Portal at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home) and sign in to your seller account.
 
-1. From the [https://aws.amazon.com/marketplace/management/products/server](https://aws.amazon.com/marketplace/management/products/server) page, select the container product that you want to modify.
+1. From the [**Server Products**](https://aws.amazon.com/marketplace/management/products/server) page, select the container product that you want to modify.
 
 1. From the **Request changes** dropdown list, select **Update pricing dimensions**, and then select **Update dimension information**.
 
@@ -62,7 +62,7 @@ You can change the pricing terms for your product. Pricing terms might need upda
 
 1. Open the AWS Marketplace Management Portal at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home) and sign in to your seller account.
 
-1. From the [https://aws.amazon.com/marketplace/management/products/server](https://aws.amazon.com/marketplace/management/products/server) page, select the container product that you want to modify.
+1. From the [**Server Products**](https://aws.amazon.com/marketplace/management/products/server) page, select the container product that you want to modify.
 
 1. From the **Request changes** list, select **Update public offer**, and then select **Update pricing terms**.
 
@@ -82,7 +82,7 @@ You can update the refund policy for your product. Updates to the refund policy 
 
 1. Open the AWS Marketplace Management Portal at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home) and sign in to your seller account.
 
-1. From the [https://aws.amazon.com/marketplace/management/products/server](https://aws.amazon.com/marketplace/management/products/server) page, select the container product that you want to modify.
+1. From the [**Server Products**](https://aws.amazon.com/marketplace/management/products/server) page, select the container product that you want to modify.
 
 1. From the **Request changes** dropdown list, select **Update public offer**, and then select **Update refund policy**.
 

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/migration-lens/mo
 # Mobilize
 <a name="mobilize-sus"></a>
 
- The next step in preparing your workforce and resources to migrate your enterprise at scale is to break down the [https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration/mobilize-phase.html](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration/mobilize-phase.html) into different workstreams. Although the goal of the mobilize phase is the migration of business applications, most prescriptive guidance and answers on achieving your sustainability goals are found here.
+ The next step in preparing your workforce and resources to migrate your enterprise at scale is to break down the [**mobilize activities**](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration/mobilize-phase.html) into different workstreams. Although the goal of the mobilize phase is the migration of business applications, most prescriptive guidance and answers on achieving your sustainability goals are found here.
 
 | MIG-SUS-03: How do you define and optimize cloud resources during migration so that you become more energy efficient by minimizing idle resources? |
 | --- |

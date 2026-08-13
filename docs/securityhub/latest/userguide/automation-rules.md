@@ -73,9 +73,9 @@ The following AWS Security Finding Format (ASFF) fields are currently supported 
 | VerificationState  | CONTAINS, EQUALS, PREFIX, NOT\_CONTAINS, NOT\_EQUALS, PREFIX\_NOT\_EQUALS  | String  |
 | WorkflowStatus  | Is, Is Not  | Select: [NEW, NOTIFIED, RESOLVED, SUPPRESSED]  |
 
-For criteria that are labeled as string fields, using different filter operators on the same field affects the evaluation logic. For more information, see [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StringFilter.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StringFilter.html) in the *AWS Security Hub CSPM API Reference*.
+For criteria that are labeled as string fields, using different filter operators on the same field affects the evaluation logic. For more information, see [StringFilter](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StringFilter.html) in the *AWS Security Hub CSPM API Reference*.
 
-Each criterion supports a maximum number of values that can be used to filter matching findings. For the limits on each criterion, see [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AutomationRulesFindingFilters.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AutomationRulesFindingFilters.html) in the *AWS Security Hub CSPM API Reference*.
+Each criterion supports a maximum number of values that can be used to filter matching findings. For the limits on each criterion, see [AutomationRulesFindingFilters](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AutomationRulesFindingFilters.html) in the *AWS Security Hub CSPM API Reference*.
 
 The following ASFF fields are currently supported as actions for automation rules:
 + `Confidence`
@@ -96,7 +96,7 @@ For more information about specific ASFF fields, see [AWS Security Finding Forma
 ## Findings that automation rules evaluate
 <a name="automation-rules-findings"></a>
 
-An automation rule evaluates new and updated findings that Security Hub CSPM generates or ingests through the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) operation *after* you create the rule. Security Hub CSPM updates control findings every 12-24 hours or when the associated resource changes state. For more information, see [Schedule for running security checks](securityhub-standards-schedule.md).
+An automation rule evaluates new and updated findings that Security Hub CSPM generates or ingests through the [BatchImportFindings](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) operation *after* you create the rule. Security Hub CSPM updates control findings every 12-24 hours or when the associated resource changes state. For more information, see [Schedule for running security checks](securityhub-standards-schedule.md).
 
 Automation rules evaluate original, provider-supplied findings. Providers can supply new findings and update existing findings by using the `BatchImportFindings` operation of the Security Hub CSPM API. If the following fields don't exist in the original finding, Security Hub CSPM automatically populates the fields and then uses the populated values in the evaluation by the automation rule:
 + `AwsAccountName`
@@ -105,7 +105,7 @@ Automation rules evaluate original, provider-supplied findings. Providers can su
 + `Resource.Tags`
 + `Workflow.Status`
 
-After you create one or more automation rules, the rules aren't triggered if you update finding fields by using the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation. If you create an automation rule and make a `BatchUpdateFindings` update that both affect the same finding field, the last update sets the value for that field. Take the following example:
+After you create one or more automation rules, the rules aren't triggered if you update finding fields by using the [BatchUpdateFindings](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation. If you create an automation rule and make a `BatchUpdateFindings` update that both affect the same finding field, the last update sets the value for that field. Take the following example:
 
 1. You use the `BatchUpdateFindings` operation to change the value for the `Workflow.Status` field of a finding from `NEW` to `NOTIFIED`.
 
@@ -117,7 +117,7 @@ After you create one or more automation rules, the rules aren't triggered if you
 
 1. If you call `GetFindings`, the `Workflow.Status` field now has a value of `SUPPRESSED`. This is the case because the automation rule was applied, and the rule was the last action taken on the finding.
 
-When you create or edit a rule on the Security Hub CSPM console, the console displays a beta of findings that match the rule criteria. Whereas automation rules evaluate original findings sent by the finding provider, the console beta reflects findings in their final state as they would be shown in a response to the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindings.html) operation (that is, after rule actions or other updates are applied to the finding).
+When you create or edit a rule on the Security Hub CSPM console, the console displays a beta of findings that match the rule criteria. Whereas automation rules evaluate original findings sent by the finding provider, the console beta reflects findings in their final state as they would be shown in a response to the [GetFindings](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindings.html) operation (that is, after rule actions or other updates are applied to the finding).
 
 ## How rule order works
 <a name="rule-order"></a>

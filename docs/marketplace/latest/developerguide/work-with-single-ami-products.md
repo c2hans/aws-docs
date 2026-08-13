@@ -607,7 +607,7 @@ A change set is created for your request. The response to this request gives you
 The change request is added to a queue and processed. This included validating information to ensure it meets the AWS Marketplace guidelines. The validation process can take anywhere from a few minutes to a few hours.
 
 You can check the status of the request through the AWS Marketplace Management Portal, or directly through Catalog API using the `[DescribeChangeSet](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeChangeSet.html)` API operation.
-+ If the change set execution status is `SUCCEEDED`: A new Entity `Identifier` (or `EntityId`) is generated. You can use the [https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeEntity.html](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeEntity.html) API operation on the product entity to check the result.
++ If the change set execution status is `SUCCEEDED`: A new Entity `Identifier` (or `EntityId`) is generated. You can use the [`DescribeEntity`](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeEntity.html) API operation on the product entity to check the result.
 + If the change set execution status is `CLIENT_ERROR`: The `DescribeChangeSet` response gives the details of the error, as well as corresponding actions to take to fix the error.
 
 **Asynchronous Errors**
@@ -681,7 +681,7 @@ A change set is created for your request. The response to this request gives you
 The change request is added to a queue and processed. This included validating information to ensure it meets the AWS Marketplace guidelines. The validation process can take anywhere from a few minutes to a few hours.
 
 You can check the status of the request through the AWS Marketplace Management Portal, or directly through Catalog API using the `[DescribeChangeSet](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeChangeSet.html)` API operation.
-+ If the change set execution status is `SUCCEEDED` – A new Entity `Identifier` (or `EntityId`) is generated. You can use `DescribeEntity` on the product entity to check the result. For more information, see [https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeEntity.html](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeEntity.html).
++ If the change set execution status is `SUCCEEDED` – A new Entity `Identifier` (or `EntityId`) is generated. You can use `DescribeEntity` on the product entity to check the result. For more information, see [`DescribeEntity`](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeEntity.html).
 + If the change set execution status is `CLIENT_ERROR`: The `DescribeChangeSet` response gives the details of the error, as well as corresponding actions to take to fix the error.
 
 **Asynchronous Errors**

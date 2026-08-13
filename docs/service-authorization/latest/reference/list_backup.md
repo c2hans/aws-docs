@@ -39,6 +39,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   CreateBackupAccessPoint  **
+  - **IAM action:**  [backup:CreateBackupAccessPoint](#list_backup-action-CreateBackupAccessPoint)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [backup:TagResource](#list_backup-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
 - **   CreateBackupPlan  **
   - **IAM action:**  [backup:CreateBackupPlan](#list_backup-action-CreateBackupPlan)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [backup:TagResource](#list_backup-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -83,6 +87,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   CreateTieringConfiguration  **
   - **IAM action:**  [backup:CreateTieringConfiguration](#list_backup-action-CreateTieringConfiguration)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [backup:TagResource](#list_backup-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   DeleteBackupAccessPoint  **
+  - **IAM action:**  [backup:DeleteBackupAccessPoint](#list_backup-action-DeleteBackupAccessPoint)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   DeleteBackupPlan  **
   - **IAM action:**  [backup:DeleteBackupPlan](#list_backup-action-DeleteBackupPlan)
@@ -155,6 +165,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
+
+- **   DescribeBackupAccessPoint  **
+  - **IAM action:**  [backup:DescribeBackupAccessPoint](#list_backup-action-DescribeBackupAccessPoint)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
 
 - **   DescribeBackupJob  **
   - **IAM action:**  [backup:DescribeBackupJob](#list_backup-action-DescribeBackupJob)
@@ -347,6 +363,24 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
+
+- **   ListBackupAccessPoints  **
+  - **IAM action:**  [backup:ListBackupAccessPoints](#list_backup-action-ListBackupAccessPoints)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListBackupAccessPointsByRecoveryPoint  **
+  - **IAM action:**  [backup:ListBackupAccessPointsByRecoveryPoint](#list_backup-action-ListBackupAccessPointsByRecoveryPoint)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListBackupAccessPointsByResource  **
+  - **IAM action:**  [backup:ListBackupAccessPointsByResource](#list_backup-action-ListBackupAccessPointsByResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
 
 - **   ListBackupJobSummaries  **
   - **IAM action:**  [backup:ListBackupJobSummaries](#list_backup-action-ListBackupJobSummaries)
@@ -665,6 +699,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [CreateBackupAccessPoint](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CreateBackupAccessPoint.html)  **
+  - **Description:** Grants permission to create a new backup access point
+  - **Resource types (\*required):** [recoveryPoint\*](#list_backup-resource-recoveryPoint)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_backup-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_backup-aws_TagKeys)
+  - **Access level:** Write
+
 - **   [CreateBackupPlan](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CreateBackupPlan.html)  **
   - **Description:** Grants permission to create a new backup plan
   - **Resource types (\*required):** [backupPlan\*](#list_backup-resource-backupPlan)
@@ -729,6 +769,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to create a new tiering configuration
   - **Resource types (\*required):** [tieringConfiguration\*](#list_backup-resource-tieringConfiguration)
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_backup-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_backup-aws_TagKeys)
+  - **Access level:** Write
+
+- **   [DeleteBackupAccessPoint](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DeleteBackupAccessPoint.html)  **
+  - **Description:** Grants permission to delete the backup access point
+  - **Resource types (\*required):** [backupAccessPoint\*](#list_backup-resource-backupAccessPoint)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteBackupPlan](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DeleteBackupPlan.html)  **
@@ -802,6 +848,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [tieringConfiguration\*](#list_backup-resource-tieringConfiguration)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)
   - **Access level:** Write
+
+- **   [DescribeBackupAccessPoint](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeBackupAccessPoint.html)  **
+  - **Description:** Grants permission to return information about the specified backup access point
+  - **Resource types (\*required):** [backupAccessPoint\*](#list_backup-resource-backupAccessPoint)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
 
 - **   [DescribeBackupJob](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeBackupJob.html)  **
   - **Description:** Grants permission to describe a backup job
@@ -995,6 +1047,24 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [ListBackupAccessPoints](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListBackupAccessPoints.html)  **
+  - **Description:** Grants permission to list backup access points in the caller's account
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
+- **   [ListBackupAccessPointsByRecoveryPoint](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListBackupAccessPointsByRecoveryPoint.html)  **
+  - **Description:** Grants permission to list backup access points associated with a recovery point
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
+- **   [ListBackupAccessPointsByResource](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListBackupAccessPointsByResource.html)  **
+  - **Description:** Grants permission to list backup access points associated with a resource
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
 - **   [ListBackupJobSummaries](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListBackupJobSummaries.html)  **
   - **Description:** Grants permission to list backup job summaries
   - **Resource types (\*required):**
@@ -1159,6 +1229,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ListTags](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListTags.html)  **
   - **Description:** Grants permission to list tags for a resource
+  - **Resource types (\*required):** [backupAccessPoint](#list_backup-resource-backupAccessPoint) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [backupPlan](#list_backup-resource-backupPlan) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [backupVault](#list_backup-resource-backupVault) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [framework](#list_backup-resource-framework) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)
@@ -1243,6 +1314,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [TagResource](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_TagResource.html)  **
   - **Description:** Grants permission to tag a resource
+  - **Resource types (\*required):** [backupAccessPoint](#list_backup-resource-backupAccessPoint) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_backup-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_backup-aws_TagKeys)
   - **Resource types (\*required):** [backupPlan](#list_backup-resource-backupPlan) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_backup-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_backup-aws_TagKeys)
   - **Resource types (\*required):** [backupVault](#list_backup-resource-backupVault) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_backup-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_backup-aws_TagKeys)
   - **Resource types (\*required):** [framework](#list_backup-resource-framework) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_backup-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_backup-aws_TagKeys)
@@ -1255,6 +1327,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [UntagResource](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UntagResource.html)  **
   - **Description:** Grants permission to untag a resource
+  - **Resource types (\*required):** [backupAccessPoint](#list_backup-resource-backupAccessPoint) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_backup-aws_TagKeys)
   - **Resource types (\*required):** [backupPlan](#list_backup-resource-backupPlan) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_backup-aws_TagKeys)
   - **Resource types (\*required):** [backupVault](#list_backup-resource-backupVault) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_backup-aws_TagKeys)
   - **Resource types (\*required):** [framework](#list_backup-resource-framework) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_backup-aws_TagKeys)
@@ -1344,29 +1417,11 @@ The following actions are defined by AWS Backup but are not directly invocable t
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_backup-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [CreateBackupAccessPoint](https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-instant-access.html)  **
-  - **Description:** Grants permission to create a new access point for backup instant access
-  - **Resource types (\*required):** [recoveryPoint\*](#list_backup-resource-recoveryPoint)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)
-  - **Access level:** Write
-
-- **   [DeleteBackupAccessPoint](https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-instant-access.html)  **
-  - **Description:** Grants permission to delete the access point
-  - **Resource types (\*required):**
-  - **Condition keys:**
-  - **Access level:** Write
-
 - **   [DeleteBackupVaultSharingPolicy](https://docs.aws.amazon.com/aws-backup/latest/devguide/logicallyairgappedvault.html)  **
   - **Description:** Grants permission to delete backup vault sharing policy
   - **Resource types (\*required):** [backupVault\*](#list_backup-resource-backupVault)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_)
   - **Access level:** Permissions management, Write
-
-- **   [DescribeBackupAccessPoint](https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-instant-access.html)  **
-  - **Description:** Grants permission to return information about the specified access point
-  - **Resource types (\*required):**
-  - **Condition keys:**
-  - **Access level:** Read
 
 - **   [GetBackupVaultSharingPolicy](https://docs.aws.amazon.com/aws-backup/latest/devguide/logicallyairgappedvault.html)  **
   - **Description:** Grants permission to get backup vault sharing policy
@@ -1401,6 +1456,7 @@ The following resource types are defined by this service and can be used in the 
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
+|  [backupAccessPoint](https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-access-points.html)  | arn:${Partition}:backup:${Region}:${Account}:accesspoint/${AccessPointName} | [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_) |
 |  [backupPlan](https://docs.aws.amazon.com/aws-backup/latest/devguide/about-backup-plans.html)  | arn:${Partition}:backup:${Region}:${Account}:backup-plan:${BackupPlanId} | [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_) |
 |  [backupVault](https://docs.aws.amazon.com/aws-backup/latest/devguide/vaults.html)  | arn:${Partition}:backup:${Region}:${Account}:backup-vault:${BackupVaultName} | [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_) |
 |  [framework](https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-audit-frameworks.html)  | arn:${Partition}:backup:${Region}:${Account}:framework:${FrameworkName}-${FrameworkId} | [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_) |

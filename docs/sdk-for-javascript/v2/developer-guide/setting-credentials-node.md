@@ -35,7 +35,7 @@ If more than one credential source is available to the SDK, the default preceden
 
 1. Credentials loaded from AWS IAM using the credentials provider of the Amazon EC2 instance (if configured in the instance metadata)
 
-For more information, see [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Credentials.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Credentials.html) and [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CredentialProviderChain.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CredentialProviderChain.html) in the API reference.
+For more information, see [`Class: AWS.Credentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Credentials.html) and [`Class: AWS.CredentialProviderChain`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CredentialProviderChain.html) in the API reference.
 
 **Warning**
 While it is possible to do so, we do not recommend hard-coding your AWS credentials in your application. Hard-coding credentials poses a risk of exposing your access key ID and secret access key.

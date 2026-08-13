@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/new-signin-exp
 Connect Customer is implementing an enhanced sign-in experience with improved security features. This topic explains how to test the new sign-in interface before the mandatory transition.
 
 **Important**
-The new sign-in experience applies only to instances that use Connect Customer Managed or Managed identity management. If your instance uses SAML 2.0-based authentication, this change does not apply to you.
+The new sign-in experience applies only to non-SAML (Connect Customer managed or existing directory) instances. If your instance uses SAML 2.0-based authentication, this change does not apply to you.
 
 ### New sign-in experience features
 <a name="new-signin-features"></a>
@@ -38,7 +38,9 @@ Before testing the new sign-in experience, allowlist the following endpoints to 
 + `*.apps.signin.aws`
 + `*.signin.aws`
 + `*.threat-mitigation.aws.amazon.com`
-+ `*.s3.dualstack.*.amazonaws.com`
++ `*.s3.dualstack.{{[Region]}}.amazonaws.com`
+
+  Replace {{[Region]}} with us-east-1, us-west-2, and the location of your Connect Customer instance.
 
 If you are an AWS GovCloud (US) user, also allowlist the following endpoints:
 + `*.signin-fips.amazonaws-us-gov.com`
@@ -105,6 +107,6 @@ Yes, you'll receive reset password emails from `no-reply@signin.aws` going forwa
 ### Do I need to add new IP ranges to my allowlist for the new sign-in endpoints?
 <a name="new-signin-faq-ip-ranges"></a>
 
-No. The new sign-in endpoints (`*.apps.signin.aws`, `*.signin.aws`, `*.threat-mitigation.aws.amazon.com`) use IP addresses that are already covered by the existing EC2 and CLOUDFRONT IP ranges in the AWS [ip-ranges.json](https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html) file. If your network already allows traffic to those ranges, you do not need to make additional IP range configuration changes for the new sign-in experience.
+Yes. You need to add the S3 IP ranges to your allowlist for us-east-1, us-west-2, and the Region where your Connect Customer instance is located. The existing EC2 and CLOUDFRONT IP ranges in the AWS [ip-ranges.json](https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html) file already cover the other new sign-in endpoints (`*.apps.signin.aws`, `*.signin.aws`, `*.threat-mitigation.aws.amazon.com`).
 
 For more information about IP-based allowlisting for Connect Customer, see [Set up your network to use the Connect Customer Contact Control Panel (CCP)](ccp-networking.md).

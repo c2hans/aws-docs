@@ -27,7 +27,7 @@ HyperPod task governance EKS add-on installs [Kueue](https://github.com/kubernet
 | v1.3.1-eksbuild.1 | v0.12.0 |
 
 **Upgrading from v1.3.x to v1.5**
-Direct upgrade from v1.3.x to v1.5 is not supported due to CRD schema migration requirements. Use the upgrade option in the SageMaker AI HyperPod console, which handles the migration automatically.
+You cannot upgrade directly from v1.3.x to v1.5 because of CRD schema migration requirements. We recommend using the upgrade option in the SageMaker AI HyperPod console, which handles the migration automatically. If you cannot use the console, see [Upgrade from v1.3.x to v1.5](sagemaker-hyperpod-eks-operate-console-ui-governance-upgrade.md#hp-eks-task-governance-upgrade-v13-to-v15) for the manual procedure through the Amazon EKS add-on interface.
 
 **Note**
 Kueue v.012.0 and higher don't include kueue-rbac-proxy as part of the installation. Previous versions might have kueue-rbac-proxy installed. For example, if you're using Kueue v0.8.1, you might have kueue-rbac-proxy v0.18.1.
@@ -149,7 +149,7 @@ Navigate to the **Dashboard** tab in the SageMaker HyperPod console to install t
 ------
 #### [ Setup using the Amazon EKS AWS CLI ]
 
-Use the example [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/create-addon.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/create-addon.html) EKS AWS CLI command to set up the HyperPod task governance Amazon EKS API and console UI using the AWS CLI:
+Use the example [`create-addon`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/create-addon.html) EKS AWS CLI command to set up the HyperPod task governance Amazon EKS API and console UI using the AWS CLI:
 
 ```
 aws eks create-addon --region {{region}} --cluster-name {{cluster-name}} --addon-name amazon-sagemaker-hyperpod-taskgovernance
@@ -157,7 +157,7 @@ aws eks create-addon --region {{region}} --cluster-name {{cluster-name}} --addon
 
 ------
 
-You can view the **Policies** tab in the HyperPod SageMaker AI console if the install was successful. You can also use the following example [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/describe-addon.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/describe-addon.html) EKS AWS CLI command to check the status.
+You can view the **Policies** tab in the HyperPod SageMaker AI console if the install was successful. You can also use the following example [`describe-addon`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/describe-addon.html) EKS AWS CLI command to check the status.
 
 ```
 aws eks describe-addon --region {{region}} --cluster-name {{cluster-name}} --addon-name amazon-sagemaker-hyperpod-taskgovernance

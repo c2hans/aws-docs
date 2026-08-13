@@ -58,7 +58,7 @@ Similar to a *backup plan*, you create a *report plan* to automate the creation 
 Next, you must allow your S3 bucket to receive reports from AWS Backup. After you create a report plan, AWS Backup Audit Manager automatically generates an S3 bucket access policy for you to apply.
 
 If you encrypt your bucket using a customer managed KMS key, the KMS key policy must meet the following requirements:
-+ The `Principal` attribute must include the Backup Audit Manager service-linked role [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSServiceRolePolicyForBackupReports](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSServiceRolePolicyForBackupReports) ARN.
++ The `Principal` attribute must include the Backup Audit Manager service-linked role [`AWSServiceRolePolicyForBackupReports`](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSServiceRolePolicyForBackupReports) ARN.
 + The `Action` attribute must include `kms:GenerateDataKey` at minimum.
 
  The policy [AWSServiceRolePolicyForBackupReports](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSServiceRolePolicyForBackupReports) has these permissions.

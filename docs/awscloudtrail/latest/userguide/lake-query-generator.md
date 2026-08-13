@@ -106,7 +106,7 @@ If you are delivering the query results to an S3 bucket using the optional `--de
 ## Required permissions
 <a name="lake-query-generator-permissions."></a>
 
-The [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudTrail_FullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudTrail_FullAccess.html) and [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess.html) managed policies both provide the necessary permissions to use this feature.
+The [`AWSCloudTrail_FullAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudTrail_FullAccess.html) and [`AdministratorAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess.html) managed policies both provide the necessary permissions to use this feature.
 
 You can also include the `cloudtrail:GenerateQuery` action in a new or existing customer managed or inline policy.
 

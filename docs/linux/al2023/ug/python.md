@@ -11,7 +11,7 @@ AL2023 makes Python 3 available as `/usr/bin/python3` to retain compatibility wi
 
 The version of python that `/usr/bin/python3` points to is considered the *system Python* and for AL2023 this is Python 3.9.
 
-AL2023 currently provides newer versions of Python, including versions 3.11, 3.12, 3.13, and 3.14. Each version is supported for the same period of time as upstream Python. For more information, see [Package support statements](https://docs.aws.amazon.com/linux/al2023/release-notes/support-info-by-support-statement.html).
+AL2023 currently provides newer versions of Python, including versions 3.11, 3.12, 3.13, and 3.14. Each version is supported for the same period of time as upstream Python. For more information, see [Package support statements](https://docs.aws.amazon.com/linux/al2023/release-notes/all-packages-AL2023.12.html).
 
 Multiple versions of Python can be installed simultaneously on AL2023. Although `/usr/bin/python3` will always be Python 3.9, each version of Python is namespaced and can be found by its version number. For example, if `python3.11` is installed, then `/usr/bin/python3.11` will exist alongside `/usr/bin/python3.9` and the `/usr/bin/python3` symlink to `/usr/bin/python3.9`.
 

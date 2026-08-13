@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/setup-traffic-
 
 You can create a traffic distribution group for your existing Connect Customer instance by using the [CreateTrafficDistributionGroup](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateTrafficDistributionGroup.html) API.
 
-A *traffic distribution group* is an Connect Customer resource that enables you to link Connect Customer instances that are in different AWS Regions. Phone numbers can be attached to the traffic distribution group. Traffic to these numbers can be distributed between the instances in the traffic distribution group.
+A *traffic distribution group* is a Connect Customer resource that enables you to link Connect Customer instances that are in different AWS Regions. Phone numbers can be attached to the traffic distribution group. Traffic to these numbers can be distributed between the instances in the traffic distribution group.
 
 ## Important things to know
 <a name="important-tips-tdg"></a>

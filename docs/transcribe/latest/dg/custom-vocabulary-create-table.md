@@ -25,7 +25,7 @@ Things to note when creating your table:
   + Only characters listed in your language's [character set](charsets.md) are supported.
 + If you want to include numbers in the `Phrase` column, you must spell them out. Digits (`0-9`) are only supported in the `DisplayAs` column.
 + You must save your table as a plaintext (\*.txt) file. Both `LF` and `CRLF` line endings are supported.
-+ You must upload your custom vocabulary file into an Amazon S3 bucket and process it using [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html) before you can include it in a transcription request. Refer to [Creating custom vocabulary tables](#custom-vocabulary-create-table-examples) for instructions.
++ You must upload your custom vocabulary file into an Amazon S3 bucket and process it using [`CreateVocabulary`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html) before you can include it in a transcription request. Refer to [Creating custom vocabulary tables](#custom-vocabulary-create-table-examples) for instructions.
 
 **Note**
 Enter acronyms, or other words whose letters should be pronounced individually, as single letters separated by periods (**A.B.C.**). To enter the plural form of an acronym, such as 'ABCs', separate the 's' from the acronym with a hyphen (**A.B.C.-s**). You can use upper or lower case letters to define an acronym. Acronyms are not supported in all languages; refer to [Supported languages and language-specific features](supported-languages.md).
@@ -114,9 +114,9 @@ To process a custom vocabulary table for use with Amazon Transcribe, see the fol
 ### AWS CLI
 <a name="vocab-create-table-cli"></a>
 
-This example uses the [create-vocabulary](https://docs.aws.amazon.com/cli/latest/reference/transcribe/create-vocabulary.html) command with a table-formatted vocabulary file. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html).
+This example uses the [create-vocabulary](https://docs.aws.amazon.com/cli/latest/reference/transcribe/create-vocabulary.html) command with a table-formatted vocabulary file. For more information, see [`CreateVocabulary`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html).
 
-To use an existing custom vocabulary in a transcription job, set the `VocabularyName` in the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Settings.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Settings.html) field when you call the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) operation or, from the AWS Management Console, choose the custom vocabulary from the dropdown list.
+To use an existing custom vocabulary in a transcription job, set the `VocabularyName` in the [`Settings`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Settings.html) field when you call the [`StartTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) operation or, from the AWS Management Console, choose the custom vocabulary from the dropdown list.
 
 ```
 aws transcribe create-vocabulary \
@@ -152,9 +152,9 @@ aws transcribe get-vocabulary \
 ### AWS SDK for Python (Boto3)
 <a name="vocab-create-table-python-batch"></a>
 
-This example uses the AWS SDK for Python (Boto3) to create a custom vocabulary from a table using the [create\_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary) method. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html).
+This example uses the AWS SDK for Python (Boto3) to create a custom vocabulary from a table using the [create\_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary) method. For more information, see [`CreateVocabulary`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html).
 
-To use an existing custom vocabulary in a transcription job, set the `VocabularyName` in the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Settings.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Settings.html) field when you call the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) operation or, from the AWS Management Console, choose the custom vocabulary from the dropdown list.
+To use an existing custom vocabulary in a transcription job, set the `VocabularyName` in the [`Settings`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Settings.html) field when you call the [`StartTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) operation or, from the AWS Management Console, choose the custom vocabulary from the dropdown list.
 
 For additional examples using the AWS SDKs, including feature-specific, scenario, and cross-service examples, refer to the [Code examples for Amazon Transcribe using AWS SDKs](service_code_examples.md) chapter.
 
@@ -180,4 +180,4 @@ print(status)
 ```
 
 **Note**
-If you create a new Amazon S3 bucket for your custom vocabulary files, make sure the IAM role making the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html) request has permissions to access this bucket. If the role doesn't have the correct permissions, your request fails. You can optionally specify an IAM role within your request by including the `DataAccessRoleArn` parameter. For more information on IAM roles and policies in Amazon Transcribe, see [Amazon Transcribe identity-based policy examples](security_iam_id-based-policy-examples.md).
+If you create a new Amazon S3 bucket for your custom vocabulary files, make sure the IAM role making the [`CreateVocabulary`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabulary.html) request has permissions to access this bucket. If the role doesn't have the correct permissions, your request fails. You can optionally specify an IAM role within your request by including the `DataAccessRoleArn` parameter. For more information on IAM roles and policies in Amazon Transcribe, see [Amazon Transcribe identity-based policy examples](security_iam_id-based-policy-examples.md).

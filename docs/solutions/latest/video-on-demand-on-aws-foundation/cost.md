@@ -21,14 +21,14 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-
   <tr><th> AWS service </th><th> Dimensions </th><th> Cost [USD] </th></tr>
 </thead>
 <tbody>
-  <tr><td> Amazon CloudFront </td><td> Using the price of $0.085 per GB for CloudFront, a 60-minute video with the default job settings streamed to 1,000 users would cost approximately: <br /> *0.75 MB/s × 1000 users × 3600 seconds = 2700 GB/hour* <br /> *2700 GB/hour × $0.085 per GB = $229.50 an hour* </td><td> $229.50 </td></tr>
-  <tr><td> Amazon S3 </td><td> A 60-minute video uses a maximum of 9 GB of storage on Amazon S3, depending on the complexity of the video content. <br /> *$0.023 per GB × 9 GB = $0.207*  Source videos uploaded to Amazon S3 add to this cost. After MediaConvert processing, delete source content from Amazon S3 to reduce storage costs. </td><td> $0.207 </td></tr>
-  <tr><td> AWS Lambda </td><td> 4 Lambda requests per file using $0.20 per million requests <br /> *$0.0000002 × 4 requests = $0.0000008* </td><td> $0.0000008 </td></tr>
-  <tr><td> Amazon CloudWatch </td><td> [AWS Free Tier](https://aws.amazon.com/free/). [See Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/) for more information. </td><td> $0.00 </td></tr>
-  <tr><td>Amazon EventBridge</td><td> [AWS Free Tier](https://aws.amazon.com/free/). [See Amazon EventBridge Pricing](https://aws.amazon.com/eventbridge/pricing/) for more information. </td><td> $0.00 </td></tr>
-  <tr><td> Amazon SNS </td><td> [AWS Free Tier](https://aws.amazon.com/free/). See [Amazon SNS Pricing](https://aws.amazon.com/sns/pricing/) for more information. </td><td> $0.00 </td></tr>
-  <tr><td> AWS Elemental MediaConvert </td><td> HLS output profile: +   3 SD resolution at 30 fps or less  <br />+   2 HD resolution at 30 fps or less  </td><td> $3.15 </td></tr>
-  <tr><td colspan="2"> Total: </td><td> $232.86 </td></tr>
+  <tr><td><b> Amazon CloudFront </b></td><td> Using the price of $0.085 per GB for CloudFront, a 60-minute video with the default job settings streamed to 1,000 users would cost approximately: <br /> <i>0.75 MB/s × 1000 users × 3600 seconds = 2700 GB/hour</i> <br /> <i>2700 GB/hour × $0.085 per GB = $229.50 an hour</i> </td><td> $229.50 </td></tr>
+  <tr><td><b> Amazon S3 </b></td><td> A 60-minute video uses a maximum of 9 GB of storage on Amazon S3, depending on the complexity of the video content. <br /> <i>$0.023 per GB × 9 GB = $0.207</i>  Source videos uploaded to Amazon S3 add to this cost. After MediaConvert processing, delete source content from Amazon S3 to reduce storage costs. </td><td> $0.207 </td></tr>
+  <tr><td><b> AWS Lambda </b></td><td> 4 Lambda requests per file using $0.20 per million requests <br /> <i>$0.0000002 × 4 requests = $0.0000008</i> </td><td> $0.0000008 </td></tr>
+  <tr><td><b> Amazon CloudWatch </b></td><td> <a href="https://aws.amazon.com/free/">AWS Free Tier</a>. <a href="https://aws.amazon.com/cloudwatch/pricing/">See Amazon CloudWatch Pricing</a> for more information. </td><td> $0.00 </td></tr>
+  <tr><td><b>Amazon EventBridge</b></td><td> <a href="https://aws.amazon.com/free/">AWS Free Tier</a>. <a href="https://aws.amazon.com/eventbridge/pricing/">See Amazon EventBridge Pricing</a> for more information. </td><td> $0.00 </td></tr>
+  <tr><td><b> Amazon SNS </b></td><td> <a href="https://aws.amazon.com/free/">AWS Free Tier</a>. See <a href="https://aws.amazon.com/sns/pricing/">Amazon SNS Pricing</a> for more information. </td><td> $0.00 </td></tr>
+  <tr><td><b> AWS Elemental MediaConvert </b></td><td> HLS output profile: <ul><li>  3 SD resolution at 30 fps or less  </li><li>  2 HD resolution at 30 fps or less  </li></ul></td><td> $3.15 </td></tr>
+  <tr><td colspan="2"> <b>Total:</b> </td><td> <b>$232.86</b> </td></tr>
 </tbody>
 </table>
 

@@ -32,7 +32,7 @@ In this step, you create the Amazon EC2 instances where you will deploy a sample
 
 **To create an instance role**
 
-1. Open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/)).
+1. Open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
 1. From the console dashboard, choose **Roles**.
 

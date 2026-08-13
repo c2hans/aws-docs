@@ -38,7 +38,7 @@ If you don't see the **Permissions** option in the navigation pane, ensure that 
 The account you are granting permissions to must have the Region you are creating the repository policy in enabled, otherwise an error will occur.
    + For **IAM Entities**, select the roles or users under your AWS account to apply the statement to.
 **Note**
-For more complicated repository policies that are not currently supported in the AWS Management Console, you can apply the policy with the [https://docs.aws.amazon.com/cli/latest/reference/ecr/set-repository-policy.html](https://docs.aws.amazon.com/cli/latest/reference/ecr/set-repository-policy.html) AWS CLI command.
+For more complicated repository policies that are not currently supported in the AWS Management Console, you can apply the policy with the [**set-repository-policy**](https://docs.aws.amazon.com/cli/latest/reference/ecr/set-repository-policy.html) AWS CLI command.
 
 1. For **Actions**, choose the scope of the Amazon ECR API operations that the policy statement should apply to from the list of individual API operations.
 

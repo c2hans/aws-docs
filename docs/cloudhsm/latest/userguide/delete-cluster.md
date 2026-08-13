@@ -47,4 +47,4 @@ After you remove all HSMs, you can delete a cluster by using the [AWS CloudHSM c
   ```
 
 **To delete a cluster (AWS CloudHSM API)**
-+ Send a [https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteCluster.html](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteCluster.html) request, specifying the ID of the cluster that you are deleting.
++ Send a [DeleteCluster](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteCluster.html) request, specifying the ID of the cluster that you are deleting.

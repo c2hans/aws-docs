@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agentic-voice.
 # Agentic voice
 <a name="agentic-voice"></a>
 
-Agentic voice enables your Amazon Connect bots to deliver natural, expressive voice interactions using advanced speech models. This section covers how to configure agentic voice, best practices for optimizing voice experiences, and how to set up Amazon Nova Sonic Speech-to-Speech.
+Agentic voice enables your Amazon Connect bots to deliver natural, expressive voice interactions using advanced speech models. This section covers how to configure agentic voice and best practices for optimizing voice experiences.
 
 **Topics**
 + [Agentic voice configuration guide](agentic-voice-configuration-guide.md)

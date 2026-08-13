@@ -91,7 +91,7 @@ You can also override the recording frequency for specific resource types.
 Amazon Resource Name (ARN) of the IAM role assumed by AWS Config and used by the configuration recorder. For more information, see [Permissions for the IAM Role Assigned](https://docs.aws.amazon.com/config/latest/developerguide/iamrole-permissions.html) to AWS Config in the AWS Config Developer Guide.
  **Pre-existing AWS Config role**
 If you have used an AWS service that uses AWS Config, such as AWS Security Hub CSPM or AWS Control Tower, and an AWS Config role has already been created, make sure that the IAM role that you use when setting up AWS Config keeps the same minimum permissions as the already created AWS Config role. You must do this so that the other AWS service continues to run as expected.
-For example, if AWS Control Tower has an IAM role that allows AWS Config to read Amazon Simple Storage Service (Amazon S3) objects, make sure that the same permissions are granted within the IAM role you use when setting up AWS Config. Otherwise, it may interfere with how AWS Control Tower operates. For more information about IAM roles for AWS Config, see [https://docs.aws.amazon.com/config/latest/developerguide/security-iam.html](https://docs.aws.amazon.com/config/latest/developerguide/security-iam.html) in the *AWS Config Developer Guide*.
+For example, if AWS Control Tower has an IAM role that allows AWS Config to read Amazon Simple Storage Service (Amazon S3) objects, make sure that the same permissions are granted within the IAM role you use when setting up AWS Config. Otherwise, it may interfere with how AWS Control Tower operates. For more information about IAM roles for AWS Config, see [**Identity and Access Management for AWS Config**](https://docs.aws.amazon.com/config/latest/developerguide/security-iam.html) in the *AWS Config Developer Guide*.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -104,7 +104,7 @@ For example, if AWS Control Tower has an IAM role that allows AWS Config to read
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the configuration recorder name, such as default.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-config-configurationrecorder-return-values-fn--getatt"></a>

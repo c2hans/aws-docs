@@ -61,7 +61,7 @@ For a list of reference variables for data transformations, see [Variables for d
 |  $context.identity.vpcId | The VPC ID of the VPC making the request to the API Gateway endpoint. |
 |  $context.identity.vpceId | The VPC endpoint ID of the VPC endpoint making the request to the API Gateway endpoint. Present only when you have a private API. |
 | $context.identity.user | The principal identifier of the user that will be authorized against resource access. Supported for resources that use IAM authorization. |
-| $context.identity.userAgent | The [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) header of the API caller. |
+| $context.identity.userAgent | The [`User-Agent`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) header of the API caller. |
 | $context.identity.userArn | The Amazon Resource Name (ARN) of the effective user identified after authentication. For more information, see [https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html). |
 | $context.integration.error | The error message returned from an integration. |
 | $context.integration.integrationStatus | For Lambda proxy integration, the status code returned from AWS Lambda, not from the backend Lambda function code. |

@@ -57,7 +57,7 @@ aws elasticache describe-cache-parameters ^
     --cache-parameter-group-name {{myRed7}}
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/elasticache/describe-cache-parameters.html](https://docs.aws.amazon.com/cli/latest/reference/elasticache/describe-cache-parameters.html).
+For more information, see [`describe-cache-parameters`](https://docs.aws.amazon.com/cli/latest/reference/elasticache/describe-cache-parameters.html).
 
 ## Listing a parameter group's values (ElastiCache API)
 <a name="ParameterGroups.ListingValues.API"></a>
@@ -168,4 +168,4 @@ The response from this action will look something like this. This response has b
 </DescribeCacheParametersResponse>
 ```
 
-For more information, see [https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DescribeCacheParameters.html](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DescribeCacheParameters.html).
+For more information, see [`DescribeCacheParameters`](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DescribeCacheParameters.html).

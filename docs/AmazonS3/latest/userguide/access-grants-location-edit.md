@@ -60,7 +60,7 @@ Response:
 ## Using the REST API
 <a name="access-grants-location-edit-rest-api"></a>
 
-For information on the Amazon S3 REST API support for updating a location in an S3 Access Grants instance, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_UpdateAccessGrantsLocation.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_UpdateAccessGrantsLocation.html) in the *Amazon Simple Storage Service API Reference*.
+For information on the Amazon S3 REST API support for updating a location in an S3 Access Grants instance, see [UpdateAccessGrantsLocation](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_UpdateAccessGrantsLocation.html) in the *Amazon Simple Storage Service API Reference*.
 
 ## Using the AWS SDKs
 <a name="access-grants-location-edit-using-sdk"></a>

@@ -27,7 +27,7 @@ This is useful when you want to:
 ## IAM permissions
 <a name="kb-get-doc-content-iam"></a>
 
-Calling `GetDocumentContent` requires both `bedrock:Retrieve` and `bedrock:GetDocumentContent` IAM actions on the knowledge base resource. This is because the API internally validates retrieval-level access before returning document content. Ensure your IAM policy includes both actions:
+Calling `GetDocumentContent` requires both `bedrock:Retrieve` and `bedrock:GetDocumentContent` IAM actions on the knowledge base resource. This is because the API internally validates retrieval-level access before returning document content. Make sure your IAM policy includes both actions:
 
 ```
 {
@@ -144,7 +144,7 @@ The account that owns the knowledge base (for example, `999999999999`) must atta
 }
 ```
 
-This is done via the `PutKnowledgeBaseResourcePolicy` API or through the Amazon Bedrock console.
+This is done through the `PutKnowledgeBaseResourcePolicy` API or through the Amazon Bedrock console.
 
 **Step 2: Caller account has IAM permissions to invoke the API**
 

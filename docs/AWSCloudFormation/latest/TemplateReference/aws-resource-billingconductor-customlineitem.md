@@ -125,7 +125,7 @@ A map that contains tag keys and tag values that are attached to a custom line i
 ### Ref
 <a name="aws-resource-billingconductor-customlineitem-return-values-ref"></a>
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-billingconductor-customlineitem-return-values-fn--getatt"></a>

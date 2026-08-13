@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-self-mana
 You can use the AWS Management Console, AWS CLI, or the Amazon RDS API to manage your DB instance and its relationship with your self-managed AD domain. For example, you can move the DB instance into, out of, or between domains.
 
 Using the Amazon RDS API, you can:
-+ To reattempt a self-managed domain join for a failed membership, use the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html) API operation and specify the same set of parameters:
++ To reattempt a self-managed domain join for a failed membership, use the [ModifyDBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html) API operation and specify the same set of parameters:
   + `--domain-fqdn`
   + `--domain-dns-ips`
   + `--domain-ou`
@@ -19,7 +19,7 @@ Using the Amazon RDS API, you can:
   + `--domain-dns-ips`
   + `--domain-ou`
   + `--domain-auth-secret-arn`
-+ To list self-managed AD domain membership for each DB instance, use the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) API operation.
++ To list self-managed AD domain membership for each DB instance, use the [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) API operation.
 
 ## Understanding self-managed Active Directory domain membership
 <a name="db2-self-managed-active-directory.Understanding"></a>

@@ -87,7 +87,7 @@ Complete the steps in this procedure to specify the credentials that your applic
 **Note**
 When you set permissions with policies, grant only the permissions required to perform a task. You do this by defining the actions that can be taken on specific resources under specific conditions, also known as least-privilege permissions.
 
-This policy requires the [https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/API_CreateTokenWithIAM.html](https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/API_CreateTokenWithIAM.html) API action. For more information about this policy, and an example that you can adapt as required for your environment, see [Resource-based policy example for IAM Identity Center](iam-auth-access-using-resource-based-policies.md).
+This policy requires the [`CreateTokenWithIAM`](https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/API_CreateTokenWithIAM.html) API action. For more information about this policy, and an example that you can adapt as required for your environment, see [Resource-based policy example for IAM Identity Center](iam-auth-access-using-resource-based-policies.md).
 
 1. On the **Specify application credentials** page, do either of the following:
    + To quickly specify one or more IAM roles:

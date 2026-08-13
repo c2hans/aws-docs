@@ -32,9 +32,9 @@ The following table lists all of the characters that are present in the GSM 03.3
   <tr><td>n</td><td>o</td><td>p</td><td>q</td><td>r</td><td>s</td><td>t</td><td>u</td><td>v</td><td>w</td><td>x</td><td>y</td><td>z</td></tr>
   <tr><td>à</td><td>Å</td><td>å</td><td>Ä</td><td>ä</td><td>Ç</td><td>É</td><td>é</td><td>è</td><td>ì</td><td>Ñ</td><td>ñ</td><td>ò</td></tr>
   <tr><td>Ø</td><td>ø</td><td>Ö</td><td>ö</td><td>ù</td><td>Ü</td><td>ü</td><td>Æ</td><td>æ</td><td>ß</td><td>0</td><td>1</td><td>2</td></tr>
-  <tr><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>&</td><td>\*</td><td>@</td><td>:</td><td>,</td><td>¤</td></tr>
-  <tr><td>$</td><td>=</td><td>\!</td><td>></td><td>\#</td><td>-</td><td>¡</td><td>¿</td><td>(</td><td><</td><td>%</td><td>.</td><td>\+</td></tr>
-  <tr><td>£</td><td>?</td><td>"</td><td>)</td><td>§</td><td>;</td><td>'</td><td>/</td><td>\_</td><td>¥</td><td>Δ</td><td>Φ</td><td>Γ</td></tr>
+  <tr><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>&amp;</td><td>*</td><td>@</td><td>:</td><td>,</td><td>¤</td></tr>
+  <tr><td>$</td><td>=</td><td>!</td><td>&gt;</td><td>#</td><td>-</td><td>¡</td><td>¿</td><td>(</td><td>&lt;</td><td>%</td><td>.</td><td>+</td></tr>
+  <tr><td>£</td><td>?</td><td>"</td><td>)</td><td>§</td><td>;</td><td>'</td><td>/</td><td>_</td><td>¥</td><td>Δ</td><td>Φ</td><td>Γ</td></tr>
   <tr><td>Λ</td><td>Ω</td><td>Π</td><td>Ψ</td><td>Σ</td><td>Θ</td><td>Ξ</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 </tbody>
 </table>

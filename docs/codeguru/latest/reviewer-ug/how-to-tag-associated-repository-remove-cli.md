@@ -37,7 +37,7 @@ Removing a tag from an associated repository can impact access to that associate
      --association-arn arn:aws:codeguru-reviewer:{{us-west-2}}:{{123456789012}}:association:{{repository-association-uuid}}
    ```
 
-   The output is a [https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociation.html](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociation.html) object that includes an array that does not contain the keys you removed. In the following output example, all tags were removed so the tags array is empty.
+   The output is a [`RepositoryAssociation`](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociation.html) object that includes an array that does not contain the keys you removed. In the following output example, all tags were removed so the tags array is empty.
 
    ```
    {

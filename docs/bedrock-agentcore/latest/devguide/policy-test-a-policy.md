@@ -53,10 +53,10 @@ Use policy-level LOG\_ONLY to shadow-test a new guardrail in production without 
 
 <table>
 <tbody>
-  <tr><td rowspan="2" colspan="2"></td><td colspan="2"> **Policy Enforcement Mode** </td></tr>
-  <tr><td> `ACTIVE` </td><td> `LOG_ONLY` </td></tr>
-  <tr><td rowspan="2"> **Policy Engine Enforcement Mode** </td><td> `ENFORCE` </td><td>Evaluated and enforced. May block or modify requests.</td><td>Evaluated but not enforced. Decision is logged only; other `ACTIVE` policies in the engine still enforce.</td></tr>
-  <tr><td> `LOG_ONLY` </td><td>Evaluated but not enforced. Decision is logged only.</td><td>Evaluated but not enforced. Decision is logged only.</td></tr>
+  <tr><td rowspan="2" colspan="2"></td><td colspan="2"> <b>Policy Enforcement Mode</b> </td></tr>
+  <tr><td> <code>ACTIVE</code> </td><td> <code>LOG_ONLY</code> </td></tr>
+  <tr><td rowspan="2"> <b>Policy Engine Enforcement Mode</b> </td><td> <code>ENFORCE</code> </td><td>Evaluated and enforced. May block or modify requests.</td><td>Evaluated but not enforced. Decision is logged only; other <code>ACTIVE</code> policies in the engine still enforce.</td></tr>
+  <tr><td> <code>LOG_ONLY</code> </td><td>Evaluated but not enforced. Decision is logged only.</td><td>Evaluated but not enforced. Decision is logged only.</td></tr>
 </tbody>
 </table>
 

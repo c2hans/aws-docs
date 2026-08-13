@@ -91,13 +91,13 @@ Complete the following procedure using the credentials of the AWS account that y
 
    You can also use AWS Command Line Tools to designate a administrator account by running the following CLI command. Make sure to use your own valid detector ID, account ID, and email.
 
-   To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+   To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
    ```
    aws guardduty create-members --detector-id {{12abc34d567e8fa901bc2d34e56789f0}} --account-details AccountId={{111122223333}},Email={{guardduty-member@organization.com}}
    ```
 
-1. Run [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_InviteMembers.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_InviteMembers.html) by using the credentials of the AWS account that has GuardDuty enabled. This is the account that you want to be the administrator account GuardDuty account.
+1. Run [InviteMembers](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_InviteMembers.html) by using the credentials of the AWS account that has GuardDuty enabled. This is the account that you want to be the administrator account GuardDuty account.
 
     You must specify the detector ID of the current AWS account and the account IDs of the accounts that you want to become GuardDuty members. You can invite one or more members with this API operation.
 **Note**
@@ -105,7 +105,7 @@ You can also specify an optional invitation message by using the `message` reque
 
    You can also use AWS Command Line Interface to designate member accounts by running the following command. Make sure to use your own valid detector ID and valid account IDs for the accounts you want to invite.
 
-   To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+   To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
    ```
    aws guardduty invite-members --detector-id {{12abc34d567e8fa901bc2d34e56789f0}} --account-ids {{111122223333}}
@@ -115,7 +115,7 @@ You can also specify an optional invitation message by using the `message` reque
 
 Complete the following procedure using the credentials of each AWS account that you want to designate as a GuardDuty member account.
 
-1. Run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateDetector.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateDetector.html) API operation for each AWS account that was invited to become a GuardDuty member account and that you want to accept an invitation.
+1. Run the [CreateDetector](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateDetector.html) API operation for each AWS account that was invited to become a GuardDuty member account and that you want to accept an invitation.
 
    You must specify if the detector resource is to be enabled using the GuardDuty service. A detector must be created and enabled in order for GuardDuty to become operational. You must first enable GuardDuty before accepting an invitation.
 
@@ -125,13 +125,13 @@ Complete the following procedure using the credentials of each AWS account that 
    aws guardduty create-detector --enable
    ```
 
-1. Run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_AcceptAdministratorInvitation.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_AcceptAdministratorInvitation.html) API operation for each AWS account that you want to accept the membership invitation, using that account's credentials.
+1. Run the [AcceptAdministratorInvitation](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_AcceptAdministratorInvitation.html) API operation for each AWS account that you want to accept the membership invitation, using that account's credentials.
 
-   You must specify the detector ID of this AWS account for the member account, the account ID of the administrator account that sent the invitation, and the invitation ID of the invitation that you are accepting. You can find the account ID of the administrator account in the invitation email or by using the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListInvitations.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListInvitations.html) operation of the API.
+   You must specify the detector ID of this AWS account for the member account, the account ID of the administrator account that sent the invitation, and the invitation ID of the invitation that you are accepting. You can find the account ID of the administrator account in the invitation email or by using the [ListInvitations](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListInvitations.html) operation of the API.
 
    You can also accept an invitation using AWS Command Line Tools by running the following CLI command. Make sure to use a valid detector ID, administrator account ID, and an invitation ID.
 
-   To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+   To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
    ```
    aws guardduty accept-invitation --detector-id {{12abc34d567e8fa901bc2d34e56789f0}} --administrator-id {{444455556666}} --invitation-id {{84b097800250d17d1872b34c4daadcf5}}

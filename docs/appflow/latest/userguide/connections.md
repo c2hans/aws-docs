@@ -37,7 +37,7 @@ Complete the following steps to manage your connections by using the Amazon AppF
 You can manage your connections in Amazon AppFlow by running commands with the AWS CLI.
 
 **To create a connection**
-+ Run the [https://docs.aws.amazon.com/cli/latest/reference/appflow/create-connector-profile.html](https://docs.aws.amazon.com/cli/latest/reference/appflow/create-connector-profile.html) command. In this command, you provide configuration details and credentials for the `--connector-profile-config` parameter. The required details vary for each type of connector application.
++ Run the [`create-connector-profile`](https://docs.aws.amazon.com/cli/latest/reference/appflow/create-connector-profile.html) command. In this command, you provide configuration details and credentials for the `--connector-profile-config` parameter. The required details vary for each type of connector application.
 
   The following example creates a connection for SAP OData, and it provides the configuration details in a JSON file:
 
@@ -87,7 +87,7 @@ You can manage your connections in Amazon AppFlow by running commands with the A
   ```
 
 **To view the details for all of your connections**
-+ Run the [https://docs.aws.amazon.com//cli/latest/reference/appflow/describe-connector-profiles.html](https://docs.aws.amazon.com//cli/latest/reference/appflow/describe-connector-profiles.html) command:
++ Run the [`describe-connector-profiles`](https://docs.aws.amazon.com//cli/latest/reference/appflow/describe-connector-profiles.html) command:
 
   ```
   $ aws appflow describe-connector-profiles
@@ -128,7 +128,7 @@ You can manage your connections in Amazon AppFlow by running commands with the A
   ```
 
 **To edit a connection**
-+ Run the [https://docs.aws.amazon.com/cli/latest/reference/appflow/update-connector-profile.html](https://docs.aws.amazon.com/cli/latest/reference/appflow/update-connector-profile.html) command. For this command, you provide the updated configuration details for the `--connector-profile-config` parameter. The following example provides the updated configuration in a JSON file:
++ Run the [`update-connector-profile`](https://docs.aws.amazon.com/cli/latest/reference/appflow/update-connector-profile.html) command. For this command, you provide the updated configuration details for the `--connector-profile-config` parameter. The following example provides the updated configuration in a JSON file:
 
   ```
   $ aws appflow update-connector-profile \
@@ -138,7 +138,7 @@ You can manage your connections in Amazon AppFlow by running commands with the A
   ```
 
 **To delete a connection**
-+ Run the [https://docs.aws.amazon.com/cli/latest/reference/appflow/delete-connector-profile.html](https://docs.aws.amazon.com/cli/latest/reference/appflow/delete-connector-profile.html) command.
++ Run the [`delete-connector-profile`](https://docs.aws.amazon.com/cli/latest/reference/appflow/delete-connector-profile.html) command.
 
   ```
   $ aws appflow delete-connector-profile --connector-profile-name {{sap-odata-connection}}

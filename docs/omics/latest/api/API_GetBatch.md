@@ -164,7 +164,7 @@ The timestamp when all run submissions completed.
 Type: Timestamp
 
  ** [tags](#API_GetBatch_ResponseSyntax) **   <a name="omics-GetBatch-response-tags"></a>
-AWS tags associated with the run batch.
+ AWS tags associated with the run batch.
 Type: String to string map
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
 Value Length Constraints: Minimum length of 0. Maximum length of 256.

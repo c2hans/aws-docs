@@ -121,7 +121,7 @@ If your EC2 instance runs a different Linux AMI than Amazon Linux 2, some of the
    ~$ ssh fsxadmin@{{your_management_endpoint_ip}}
    ```
 
-1. Create the initiator group (`igroup`) using the NetApp ONTAP CLI [https://docs.netapp.com/us-en/ontap-cli-9111/lun-igroup-create.html](https://docs.netapp.com/us-en/ontap-cli-9111/lun-igroup-create.html) command. An initiator group maps to iSCSI LUNs and control which initiators (clients) have access to LUNs. Replace `host_initiator_name` with the initiator name from your Linux host that you retrieved in the previous procedure.
+1. Create the initiator group (`igroup`) using the NetApp ONTAP CLI [**lun igroup create**](https://docs.netapp.com/us-en/ontap-cli-9111/lun-igroup-create.html) command. An initiator group maps to iSCSI LUNs and control which initiators (clients) have access to LUNs. Replace `host_initiator_name` with the initiator name from your Linux host that you retrieved in the previous procedure.
 
    ```
    ::> lun igroup create -vserver {{{{svm_name}}}} -igroup {{igroup_name}} -initiator {{host_initiator_name}} -protocol iscsi -ostype linux
@@ -129,7 +129,7 @@ If your EC2 instance runs a different Linux AMI than Amazon Linux 2, some of the
 
    If you want to make the LUNs mapped to this igroup available to multiple hosts, you can specify multiple initiator names separated with a comma. For more information, see [ lun igroup create](https://docs.netapp.com/us-en/ontap-cli-9111/lun-igroup-create.html) in the *NetApp ONTAP Documentation Center*.
 
-1. Confirm that the `igroup` exists using the [https://docs.netapp.com/us-en/ontap-cli-9111/lun-igroup-show.html](https://docs.netapp.com/us-en/ontap-cli-9111/lun-igroup-show.html) command:
+1. Confirm that the `igroup` exists using the [**lun igroup show**](https://docs.netapp.com/us-en/ontap-cli-9111/lun-igroup-show.html) command:
 
    ```
    ::> lun igroup show
@@ -145,7 +145,7 @@ If your EC2 instance runs a different Linux AMI than Amazon Linux 2, some of the
 
 1. This step assumes that you have already created an iSCSI LUN. If you have not, see [Creating an iSCSI LUN](create-iscsi-lun.md) for step-by-step instructions to do so.
 
-   Create a mapping from the LUN you created to the igroup you created, using the [https://docs.netapp.com/us-en/ontap-cli-9111/lun-mapping-create.html](https://docs.netapp.com/us-en/ontap-cli-9111/lun-mapping-create.html), specifying the following attributes:
+   Create a mapping from the LUN you created to the igroup you created, using the [**lun mapping create**](https://docs.netapp.com/us-en/ontap-cli-9111/lun-mapping-create.html), specifying the following attributes:
    + `{{svm_name}}` – The name of the storage virtual machine providing the iSCSI target. The host uses this value to reach the LUN.
    + `{{vol_name}}` – The name of the volume hosting the LUN.
    + `{{lun_name}}` – The name that you assigned to the LUN.
@@ -156,7 +156,7 @@ If your EC2 instance runs a different Linux AMI than Amazon Linux 2, some of the
    ::> lun mapping create -vserver {{svm_name}} -path /vol/{{vol_name}}/{{lun_name}} -igroup {{igroup_name}} -lun-id {{lun_id}}
    ```
 
-1. Use the [https://docs.netapp.com/us-en/ontap-cli-9111/lun-show.html](https://docs.netapp.com/us-en/ontap-cli-9111/lun-show.html) command to confirm the LUN is created, online, and mapped.
+1. Use the [`lun show -path`](https://docs.netapp.com/us-en/ontap-cli-9111/lun-show.html) command to confirm the LUN is created, online, and mapped.
 
    ```
    ::> lun show -path /vol/{{vol_name}}/{{lun_name}} -fields state,mapped,serial-hex
@@ -172,7 +172,7 @@ If your EC2 instance runs a different Linux AMI than Amazon Linux 2, some of the
 
    Save the `serial_hex` value (in this example, it is `6c5742314e5d52766e796150`), you will use it in a later step to create a friendly name for the block device.
 
-1. Use the [https://docs.netapp.com/us-en/ontap-cli-9111/network-interface-show.html](https://docs.netapp.com/us-en/ontap-cli-9111/network-interface-show.html) command to retrieve the addresses of the `iscsi_1` and `iscsi_2` interfaces for the SVM in which you've created your iSCSI LUN.
+1. Use the [`network interface show -vserver`](https://docs.netapp.com/us-en/ontap-cli-9111/network-interface-show.html) command to retrieve the addresses of the `iscsi_1` and `iscsi_2` interfaces for the SVM in which you've created your iSCSI LUN.
 
    ```
    ::> network interface show -vserver {{{{svm_name}}}}

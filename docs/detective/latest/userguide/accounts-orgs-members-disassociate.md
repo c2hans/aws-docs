@@ -29,11 +29,11 @@ From the **Account management** page, you can disassociate organization accounts
 ------
 #### [ Detective API/AWS CLI ]
 
-To get the ARN of your behavior graph to use in the request, use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html) operation.
+To get the ARN of your behavior graph to use in the request, use the [`ListGraphs`](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html) operation.
 
 **To disassociate organization accounts from the organization behavior graph**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_DeleteMembers.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_DeleteMembers.html) operation. Specify the graph ARN and the list of account identifiers for the member accounts to disassociate.
-+ **AWS CLI:** At the command line, run the [https://docs.aws.amazon.com/cli/latest/reference/detective/delete-members.html](https://docs.aws.amazon.com/cli/latest/reference/detective/delete-members.html) command.
++ **Detective API:** Use the [`DeleteMembers`](https://docs.aws.amazon.com/detective/latest/APIReference/API_DeleteMembers.html) operation. Specify the graph ARN and the list of account identifiers for the member accounts to disassociate.
++ **AWS CLI:** At the command line, run the [`delete-members`](https://docs.aws.amazon.com/cli/latest/reference/detective/delete-members.html) command.
 
   ```
   aws detective delete-members --account-ids {{<account ID list>}} --graph-arn {{<behavior graph ARN>}}

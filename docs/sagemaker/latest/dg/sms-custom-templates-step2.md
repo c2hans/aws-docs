@@ -113,7 +113,7 @@ A simple version of this tool would look like the following. The variable **{{ t
 
 You can copy and paste the code into the editor in the Ground Truth labeling job creation workflow to preview the tool, or try out a [demo of this code on CodePen.](https://codepen.io/MTGT/full/OqBvJw)
 
- [https://codepen.io/MTGT/full/OqBvJw](https://codepen.io/MTGT/full/OqBvJw)
+ [![View a demo of this sample template on CodePen.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/pen.gif)](https://codepen.io/MTGT/full/OqBvJw)
 
 ## Input data, external assets and your task template
 <a name="sms-custom-templates-step2-template-input"></a>
@@ -231,6 +231,6 @@ In this example the JSON object is formatted for readability, in the actual outp
 
 By default Ground Truth saves worker responses unprocessed in Amazon S3. To have more fine-grained control over how responses are handled, you can specify a *post-annotation Lambda function*. For example, a post-annotation Lambda function could be used to consolidate annotation if multiple workers have labeled the same data object. To learn more about creating post-annotation Lambda functions, see [Post-annotation Lambda](sms-custom-templates-step3-lambda-requirements.md#sms-custom-templates-step3-postlambda).
 
-If you want to use a post-annotation Lambda function, it must be specified as part of the [https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_AnnotationConsolidationConfig.html](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_AnnotationConsolidationConfig.html) in a `CreateLabelingJob` request.
+If you want to use a post-annotation Lambda function, it must be specified as part of the [`AnnotationConsolidationConfig`](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_AnnotationConsolidationConfig.html) in a `CreateLabelingJob` request.
 
 To learn more about how annotation consolidation works, see [Annotation consolidation](sms-annotation-consolidation.md).

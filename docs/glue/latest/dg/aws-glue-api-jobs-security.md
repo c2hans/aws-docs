@@ -45,7 +45,7 @@ Specifies the encryption-at-rest configuration for the Data Catalog.
 + `SseAwsKmsKeyId` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Single-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-oneLine).
 
   The ID of the AWS KMS key to use for encryption at rest.
-+ `CatalogEncryptionServiceRole` – UTF-8 string, matching the [Custom string pattern #53](aws-glue-api-common.md#regex_53).
++ `CatalogEncryptionServiceRole` – UTF-8 string, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
 
   The role that AWS Glue assumes to encrypt and decrypt the Data Catalog objects on the caller's behalf.
 
@@ -98,7 +98,7 @@ Specifies how Amazon Simple Storage Service (Amazon S3) data should be encrypted
 + `S3EncryptionMode` – UTF-8 string (valid values: `DISABLED` \| `SSE-KMS="SSEKMS"` \| `SSE-S3="SSES3"`).
 
   The encryption mode to use for Amazon S3 data.
-+ `KmsKeyArn` – UTF-8 string, matching the [Custom string pattern #42](aws-glue-api-common.md#regex_42).
++ `KmsKeyArn` – UTF-8 string, matching the [Custom string pattern #39](aws-glue-api-common.md#regex_39).
 
   The Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.
 
@@ -111,7 +111,7 @@ Specifies how Amazon CloudWatch data should be encrypted.
 + `CloudWatchEncryptionMode` – UTF-8 string (valid values: `DISABLED` \| `SSE-KMS="SSEKMS"`).
 
   The encryption mode to use for CloudWatch data.
-+ `KmsKeyArn` – UTF-8 string, matching the [Custom string pattern #42](aws-glue-api-common.md#regex_42).
++ `KmsKeyArn` – UTF-8 string, matching the [Custom string pattern #39](aws-glue-api-common.md#regex_39).
 
   The Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.
 
@@ -124,7 +124,7 @@ Specifies how job bookmark data should be encrypted.
 + `JobBookmarksEncryptionMode` – UTF-8 string (valid values: `DISABLED` \| `CSE-KMS="CSEKMS"`).
 
   The encryption mode to use for job bookmarks data.
-+ `KmsKeyArn` – UTF-8 string, matching the [Custom string pattern #42](aws-glue-api-common.md#regex_42).
++ `KmsKeyArn` – UTF-8 string, matching the [Custom string pattern #39](aws-glue-api-common.md#regex_39).
 
   The Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.
 
@@ -174,7 +174,7 @@ Specifies how Data Quality assets in your account should be encrypted.
   The encryption mode to use for encrypting Data Quality assets. These assets include data quality rulesets, results, statistics, anomaly detection models and observations.
 
   Valid values are `SSEKMS` for encryption using a customer-managed KMS key, or `DISABLED`.
-+ `KmsKeyArn` – UTF-8 string, matching the [Custom string pattern #42](aws-glue-api-common.md#regex_42).
++ `KmsKeyArn` – UTF-8 string, matching the [Custom string pattern #39](aws-glue-api-common.md#regex_39).
 
   The Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.
 
@@ -241,7 +241,7 @@ Sets the Data Catalog resource policy for access control.
 + `PolicyInJson` – *Required:* UTF-8 string, at least 2 bytes long.
 
   Contains the policy document to set, in JSON format.
-+ `ResourceArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `ResourceArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   Do not use. For internal use only.
 + `PolicyHashCondition` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Single-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-oneLine).
@@ -276,7 +276,7 @@ Sets the Data Catalog resource policy for access control.
 Retrieves a specified resource policy.
 
 **Request**
-+ `ResourceArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `ResourceArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The ARN of the AWS Glue resource for which to retrieve the resource policy. If not supplied, the Data Catalog resource policy is returned. Use `GetResourcePolicies` to view all existing resource policies. For more information see [Specifying AWS Glue Resource ARNs](https://docs.aws.amazon.com/glue/latest/dg/glue-specifying-resource-arns.html).
 
@@ -309,7 +309,7 @@ Deletes a specified policy.
 + `PolicyHashCondition` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Single-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-oneLine).
 
   The hash value returned when this policy was set.
-+ `ResourceArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `ResourceArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The ARN of the AWS Glue resource for the resource policy to be deleted.
 

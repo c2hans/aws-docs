@@ -224,7 +224,7 @@ To run a single HSM cluster with Client SDK 5, you must first manage client key 
 
 Before your Java application can use an HSM, the HSM needs to first authenticate the application. HSMs authenticate using either an explicit login or implicit login method.
 
-**Explicit login** – This method lets you provide AWS CloudHSM credentials directly in the application. It uses the method from the [https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/AuthProvider.html](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/AuthProvider.html), where you pass a CU username and password in the pin pattern. For more information, see [Login to an HSM](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/sdk5/src/main/java/com/amazonaws/cloudhsm/examples/LoginRunner.java) code example.
+**Explicit login** – This method lets you provide AWS CloudHSM credentials directly in the application. It uses the method from the [`AuthProvider`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/AuthProvider.html), where you pass a CU username and password in the pin pattern. For more information, see [Login to an HSM](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/sdk5/src/main/java/com/amazonaws/cloudhsm/examples/LoginRunner.java) code example.
 
 **Implicit login** – This method lets you set AWS CloudHSM credentials either in a new property file, system properties, or as environment variables.
 + **System properties** – Set credentials through system properties when running your application. The following examples show two different ways that you can do this:

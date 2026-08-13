@@ -29,7 +29,7 @@ You can use modules across all [flow types](create-contact-flow.md#contact-flow-
   + External attributes
   + Amazon Lex attributes
   + Customer Profiles attributes
-  + Connect AI agents attributes
+  + agent assist attributes
   + Queue metrics
   + Stored customer input
 + When using one module to invoke other modules: A module being used as a tool can only invoke other modules used as tools.

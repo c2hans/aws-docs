@@ -37,6 +37,12 @@ Amazon RDS currently supports the following minor versions of MariaDB.
 **Note**
 Dates with only a month and a year are approximate and are updated with an exact date when it’s known.
 
+The following table shows the minor versions of MariaDB 12.3 that Amazon RDS currently supports.
+
+| MariaDB engine version | Community release date | RDS release date | RDS end of standard support date |
+| --- | --- | --- | --- |
+| 12.3.2 | 28 May 2026 | 7 August 2026 | August 2027 |
+
 The following table shows the minor versions of MariaDB 11.8 that Amazon RDS currently supports.
 
 | MariaDB engine version | Community release date | RDS release date | RDS end of standard support date |
@@ -93,7 +99,7 @@ The following table shows the minor versions of MariaDB 10.5 that Amazon RDS cur
 | 10.5.28 | 4 February 2025 | 24 February 2025 | August 2026 |
 | 10.5.27 | 1 November 2024 | 20 December 2024 | May 2026 |
 
-You can specify any currently supported MariaDB version when creating a new DB instance. You can specify the major version (such as MariaDB 10.5), and any supported minor version for the specified major version. If no version is specified, Amazon RDS defaults to a supported version, typically the most recent version. If a major version is specified but a minor version is not, Amazon RDS defaults to a recent release of the major version you have specified. To see a list of supported versions, as well as defaults for newly created DB instances, use the [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-engine-versions.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-engine-versions.html) AWS CLI command.
+You can specify any currently supported MariaDB version when creating a new DB instance. You can specify the major version (such as MariaDB 10.5), and any supported minor version for the specified major version. If no version is specified, Amazon RDS defaults to a supported version, typically the most recent version. If a major version is specified but a minor version is not, Amazon RDS defaults to a recent release of the major version you have specified. To see a list of supported versions, as well as defaults for newly created DB instances, use the [`describe-db-engine-versions`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-engine-versions.html) AWS CLI command.
 
 For example, to list the supported engine versions for RDS for MariaDB, run the following CLI command:
 
@@ -117,6 +123,7 @@ aws rds describe-db-engine-versions --default-only --engine mariadb --engine-ver
 <a name="MySQL.Concepts.VersionMgmt.Supported.Minor"></a>
 
 **Topics**
++ [MariaDB version 12.3.2](#MariaDB.Concepts.VersionMgmt.Supported.Minor.12.3.2)
 + [MariaDB version 11.8.8](#MariaDB.Concepts.VersionMgmt.Supported.Minor.11.8.8)
 + [MariaDB version 11.8.6](#MariaDB.Concepts.VersionMgmt.Supported.Minor.11.8.6)
 + [MariaDB version 11.8.5](#MariaDB.Concepts.VersionMgmt.Supported.Minor.11.8.5)
@@ -145,6 +152,15 @@ aws rds describe-db-engine-versions --default-only --engine mariadb --engine-ver
 + [MariaDB version 10.5.29](#MariaDB.Concepts.VersionMgmt.Supported.Minor.10.5.29)
 + [MariaDB version 10.5.28](#MariaDB.Concepts.VersionMgmt.Supported.Minor.10.5.28)
 + [MariaDB version 10.5.27](#MariaDB.Concepts.VersionMgmt.Supported.Minor.10.5.27)
+
+#### MariaDB version 12.3.2
+<a name="MariaDB.Concepts.VersionMgmt.Supported.Minor.12.3.2"></a>
+
+MariaDB version 12.3.2 is now available on Amazon RDS. This release contains fixes and improvements added by the MariaDB community and Amazon RDS.
+
+**New features and enhancements**
++ **Reserved user for RDS Proxy** – The `rdsproxyadmin` user is a reserved user. You can't modify or drop this user. For more information, see [MariaDB security on Amazon RDS](MariaDB.Concepts.UsersAndPrivileges.md).
++ **Drop protection for the replication user account** – Starting with RDS for MariaDB version 12.3, drop protection applies to the `rdsrepladmin` account regardless of its host value. Attempting to drop `'rdsrepladmin'@'host'` for any host results in an error. For more information, see [MariaDB security on Amazon RDS](MariaDB.Concepts.UsersAndPrivileges.md).
 
 #### MariaDB version 11.8.8
 <a name="MariaDB.Concepts.VersionMgmt.Supported.Minor.11.8.8"></a>
@@ -364,7 +380,8 @@ You can also view information about support dates for major engine versions by r
 
 | MariaDB major version | Community release date | RDS release date | Community end of life date | RDS end of standard support date |
 | --- | --- | --- | --- | --- |
-| MariaDB 11.8 | 6 August 2025 | 25 August 2025 | June 2030 | June 2030 |
+| MariaDB 12.3 | 28 May 2026 | 7 August 2026 | June 2029 | June 2029 |
+| MariaDB 11.8 | 6 August 2025 | 25 August 2025 | June 2028 | June 2028 |
 | MariaDB 11.4 | 8 August 2024 | 15 October 2024 | May 2029 | May 2029 |
 | MariaDB 10.11 | 16 February 2023 | 21 August 2023 | 16 February 2028 | February 2028 |
 | MariaDB 10.6 | 6 July 2021 | 3 February 2022 | 6 July 2026 | November 2026 |

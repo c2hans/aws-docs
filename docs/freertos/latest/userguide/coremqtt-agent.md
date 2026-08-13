@@ -29,11 +29,11 @@ This library can be freely used and is distributed under the [ MIT open source l
   <tr><th>File</th><th>With -O1 Optimization</th><th>With -Os Optimization</th></tr>
 </thead>
 <tbody>
-  <tr><td>core\_mqtt\_agent.c</td><td>1.7K</td><td>1.5K</td></tr>
-  <tr><td>core\_mqtt\_agent\_command\_functions.c</td><td>0.3K</td><td>0.2K</td></tr>
-  <tr><td>core\_mqtt.c (coreMQTT)</td><td>4.0K</td><td>3.4K</td></tr>
-  <tr><td>core\_mqtt\_state.c (coreMQTT)</td><td>1.7K</td><td>1.3K</td></tr>
-  <tr><td>core\_mqtt\_serializer.c (coreMQTT)</td><td>2.8K</td><td>2.2K</td></tr>
-  <tr><td>Total estimates</td><td>10.5K</td><td>8.6K</td></tr>
+  <tr><td>core_mqtt_agent.c</td><td>1.7K</td><td>1.5K</td></tr>
+  <tr><td>core_mqtt_agent_command_functions.c</td><td>0.3K</td><td>0.2K</td></tr>
+  <tr><td>core_mqtt.c (coreMQTT)</td><td>4.0K</td><td>3.4K</td></tr>
+  <tr><td>core_mqtt_state.c (coreMQTT)</td><td>1.7K</td><td>1.3K</td></tr>
+  <tr><td>core_mqtt_serializer.c (coreMQTT)</td><td>2.8K</td><td>2.2K</td></tr>
+  <tr><td><b>Total estimates</b></td><td><b>10.5K</b></td><td><b>8.6K</b></td></tr>
 </tbody>
 </table>

@@ -350,20 +350,20 @@ The nucleus emitter publishes the following metrics:
   <tr><th>Name</th><th>Description</th><th></th></tr>
 </thead>
 <tbody>
-  <tr><td>**System**</td><td></td><td></td></tr>
-  <tr><td>`SystemMemUsage`</td><td>The amount of memory currently in use by all applications on the Greengrass core device, including the operating system.</td><td></td></tr>
-  <tr><td>`CpuUsage`</td><td>The amount of CPU currently in use by all applications on the Greengrass core device, including the operating system.</td><td></td></tr>
-  <tr><td>`TotalNumberOfFDs`</td><td>The number of file descriptors stored by the operating system of the Greengrass core device. One file descriptor uniquely identifies one open file.</td><td></td></tr>
-  <tr><td>**Greengrass nucleus**</td><td></td><td></td></tr>
-  <tr><td>`NumberOfComponentsRunning`</td><td>The number of components that are running on the Greengrass core device.</td><td></td></tr>
-  <tr><td>`NumberOfComponentsErrored`</td><td>The number of components that are in error state on the Greengrass core device.</td><td></td></tr>
-  <tr><td>`NumberOfComponentsInstalled`</td><td>The number of components that are installed on the Greengrass core device.</td><td></td></tr>
-  <tr><td>`NumberOfComponentsStarting`</td><td>The number of components that are starting on the Greengrass core device.</td><td></td></tr>
-  <tr><td>`NumberOfComponentsNew`</td><td>The number of components that are new on the Greengrass core device.</td><td></td></tr>
-  <tr><td>`NumberOfComponentsStopping`</td><td>The number of components that are stopping on the Greengrass core device.</td><td></td></tr>
-  <tr><td>`NumberOfComponentsFinished`</td><td>The number of components that are finished on the Greengrass core device.</td><td></td></tr>
-  <tr><td>`NumberOfComponentsBroken`</td><td>The number of components that are broken on the Greengrass core device.</td><td></td></tr>
-  <tr><td>`NumberOfComponentsStateless`</td><td>The number of components that are stateless on the Greengrass core device.</td><td></td></tr>
+  <tr><td><b>System</b></td><td></td><td></td></tr>
+  <tr><td><code>SystemMemUsage</code></td><td>The amount of memory currently in use by all applications on the Greengrass core device, including the operating system.</td><td></td></tr>
+  <tr><td><code>CpuUsage</code></td><td>The amount of CPU currently in use by all applications on the Greengrass core device, including the operating system.</td><td></td></tr>
+  <tr><td><code>TotalNumberOfFDs</code></td><td>The number of file descriptors stored by the operating system of the Greengrass core device. One file descriptor uniquely identifies one open file.</td><td></td></tr>
+  <tr><td><b>Greengrass nucleus</b></td><td></td><td></td></tr>
+  <tr><td><code>NumberOfComponentsRunning</code></td><td>The number of components that are running on the Greengrass core device.</td><td></td></tr>
+  <tr><td><code>NumberOfComponentsErrored</code></td><td>The number of components that are in error state on the Greengrass core device.</td><td></td></tr>
+  <tr><td><code>NumberOfComponentsInstalled</code></td><td>The number of components that are installed on the Greengrass core device.</td><td></td></tr>
+  <tr><td><code>NumberOfComponentsStarting</code></td><td>The number of components that are starting on the Greengrass core device.</td><td></td></tr>
+  <tr><td><code>NumberOfComponentsNew</code></td><td>The number of components that are new on the Greengrass core device.</td><td></td></tr>
+  <tr><td><code>NumberOfComponentsStopping</code></td><td>The number of components that are stopping on the Greengrass core device.</td><td></td></tr>
+  <tr><td><code>NumberOfComponentsFinished</code></td><td>The number of components that are finished on the Greengrass core device.</td><td></td></tr>
+  <tr><td><code>NumberOfComponentsBroken</code></td><td>The number of components that are broken on the Greengrass core device.</td><td></td></tr>
+  <tr><td><code>NumberOfComponentsStateless</code></td><td>The number of components that are stateless on the Greengrass core device.</td><td></td></tr>
 </tbody>
 </table>
 

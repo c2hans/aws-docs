@@ -6,14 +6,14 @@ Version 4 (V4) of the AWS SDK for .NET has been released\!
 
 For information about breaking changes and migrating your applications, see the [migration topic](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html).
 
- [https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
+ [![Orange button with text "Click here for details".](http://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Customize the AWS Message Processing Framework for .NET
 <a name="msg-proc-fw-customize"></a>
 
 The AWS Message Processing Framework for .NET builds, sends, and handles messages in three different "layers":
 
-1. At the outermost layer, the framework builds the AWS-native request or response specific to a service. With Amazon SQS for example, it builds [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html) requests, and works with the [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_Message.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_Message.html) objects that are defined by the service.
+1. At the outermost layer, the framework builds the AWS-native request or response specific to a service. With Amazon SQS for example, it builds [`SendMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html) requests, and works with the [`Message`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_Message.html) objects that are defined by the service.
 
 1. Inside the SQS request and response, the framework sets the `MessageBody` element (or `Message` for Amazon SNS or `Detail` for Amazon EventBridge) to a [JSON-formatted CloudEvent](https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/json-format.md). This contains metadata set by the framework that is accessible on the `MessageEnvelope` object when handling a message.
 
@@ -38,5 +38,5 @@ You can customize how the message envelope is configured and read:
   + You can override this via `AddMessageSource` or `AddMessageSourceSuffix` on the `MessageBusBuilder`.
 + `"time"` set to the current DateTime in UTC. This can be overridden by implementing your own `IDateTimeHandler` and injecting that into the DI container.
 + `"data"` contains a JSON representation of the .NET object that was sent or received as the message:
-  + `ConfigureSerializationOptions` on `MessageBusBuilder` allows you to configure the [https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions) that will be used when serializing and deserializing the message.
+  + `ConfigureSerializationOptions` on `MessageBusBuilder` allows you to configure the [`System.Text.Json.JsonSerializerOptions`](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions) that will be used when serializing and deserializing the message.
   + To inject additional attributes or transform the message envelope once the framework builds it, you can implement `ISerializationCallback` and register that via `AddSerializationCallback` on `MessageBusBuilder`.

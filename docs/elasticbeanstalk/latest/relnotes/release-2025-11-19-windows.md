@@ -18,20 +18,37 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Framework** | **Details** |
-| --- | --- |
-| **Component** | **Details** |
-| --- | --- |
-| **Windows security updates** | Applied November 2025 security updates for Windows.<br />This release includes updates from the monthly Microsoft *Patch Tuesday* Windows release. Windows security updates in this release are current up to the second Tuesday of the month.<br />For more details and a list of security updates, see the Microsoft [Security Update Guide](https://portal.msrc.microsoft.com/en-us/security-guidance). |
-| **Framework updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-11-19-windows.html)  |
-| **AWS component updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-11-19-windows.html)  |
-| **.NET Core** | Updated .NET 9 to version 9.0.11.<br />Updated .NET 8 to version 8.0.22. |
-| **AMI** | Updated the base AMI to version 2025.11.12. |
-| **AWS SDK for .NET** | Updated the SDK to version 3.7.1163.0. |
-| **CloudWatch Agent** | Updated the CloudWatch Agent to version 1.300061.0b1289. |
-| **EC2Launch** | Updated EC2Launch V2 to version 2.3.56. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows security updates</b></td><td>Applied November 2025 security updates for Windows.<br />This release includes updates from the monthly Microsoft <i>Patch Tuesday</i> Windows release. Windows security updates in this release are current up to the second Tuesday of the month.<br />For more details and a list of security updates, see the Microsoft <a href="https://portal.msrc.microsoft.com/en-us/security-guidance">Security Update Guide</a>.</td></tr>
+  <tr><td><b>Framework updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Framework</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET 9 to version 9.0.11.<br />Updated .NET 8 to version 8.0.22.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+  <tr><td><b>AWS component updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version 2025.11.12.</td></tr>
+  <tr><td><b>AWS SDK for .NET</b></td><td>Updated the SDK to version 3.7.1163.0.</td></tr>
+  <tr><td><b>CloudWatch Agent</b></td><td>Updated the CloudWatch Agent to version 1.300061.0b1289.</td></tr>
+  <tr><td><b>EC2Launch</b></td><td>Updated EC2Launch V2 to version 2.3.56.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2025-11-19-windows.platforms"></a>

@@ -99,7 +99,7 @@ By activating Hooks in your account, you are authorizing a Hook to use defined p
    export HOOK_TYPE_ARN="{{arn:aws:cloudformation:us-west-2:123456789012:type/hook/Organization-Service-Hook/}}"
    ```
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html) command to specify the configuration data. The JSON you pass for `--configuration` must validate against the Hook's configuration schema. To activate the Hook for all stack operations, you must set the `HookInvocationStatus` property to `ENABLED` in the `HookConfiguration` section.
+1. Use the [set-type-configuration](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html) command to specify the configuration data. The JSON you pass for `--configuration` must validate against the Hook's configuration schema. To activate the Hook for all stack operations, you must set the `HookInvocationStatus` property to `ENABLED` in the `HookConfiguration` section.
 
    ```
    aws cloudformation set-type-configuration \
@@ -113,7 +113,7 @@ By activating Hooks in your account, you are authorizing a Hook to use defined p
 <a name="registry-public-activate-extension-type"></a>
 
 **To activate a public extension for use in your account (AWS CLI)**
-+ Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/activate-type.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/activate-type.html) command to activate the extension, and specify whether to auto update the extension whenever a new minor version of the extension is published.
++ Use the [activate-type](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/activate-type.html) command to activate the extension, and specify whether to auto update the extension whenever a new minor version of the extension is published.
 
   The example below specifies the public Amazon Resource Name (ARN) of a public extension to activate for this account. In addition, it specifies that CloudFormation updates the extension whenever a new minor version is published.
 
@@ -135,7 +135,7 @@ By activating Hooks in your account, you are authorizing a Hook to use defined p
 ### Update the version of a public extension (AWS CLI)
 <a name="registry-public-update-extension-type"></a>
 
-Use [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/activate-type.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/activate-type.html) to activate the extension again.
+Use [activate-type](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/activate-type.html) to activate the extension again.
 
 Use the `--version-bump` option to specify whether to update the extension to the newest `MAJOR` version or newest `MINOR` version.
 

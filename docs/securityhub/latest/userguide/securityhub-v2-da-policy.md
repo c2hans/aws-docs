@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 # Managing configuration of member accounts in an AWS Organization
 <a name="securityhub-v2-da-policy"></a>
 
- The delegated administrator for an AWS Organization can configure security capabilities across member accounts and Regions. There are two types of configurations that are available, **Policies** and **Deployments**. **Policies** generate AWS Organizations policies for accounts and Regions for AWS Security Hub and Amazon Inspector. **Deployments** are a one-time action to enable a security capability across selected accounts and Regions for Amazon GuardDuty and AWS Security Hub CSPM. Unlike policies, you cannot view or edit deployments and deployments will not apply to newly enabled accounts. As an alternative, auto-enable features, for new member accounts, are available in Amazon GuardDuty and AWS Security Hub CSPM.
+ The delegated administrator for an AWS Organization can configure security capabilities across member accounts and Regions. Two types of configurations are available: **Policies** and **Deployments**. **Policies** generate AWS Organizations policies for accounts and Regions for AWS Security Hub and Amazon Inspector. **Deployments** are a one-time action to enable a security capability across selected accounts and Regions for Amazon GuardDuty and AWS Security Hub CSPM. Unlike policies, you cannot view or edit deployments and deployments do not apply to newly enabled accounts. As an alternative, auto-enable features for new member accounts are available in Amazon GuardDuty and AWS Security Hub CSPM.
 
 ## Security Hub configuration catalog
 <a name="securityhub-v2-configuration-catalog"></a>
@@ -35,14 +35,14 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 
  **Type**: Deployment
 
- **Description**: This configuration turns on Security Hub CSPM's standards and controls which detects when your AWS accounts and resources deviate from security best practices.
+ **Description**: This configuration turns on Security Hub CSPM's standards and controls, which detect when your AWS accounts and resources deviate from security best practices.
 
 ### Vulnerability management from Amazon Inspector
 <a name="securityhub-v2-configuration-catalog-vuln"></a>
 
  **Type**: Policy
 
- **Description**: This configuration turns on selected Amazon Inspector capabilities that automatically discover workloads, instances, container images, etc., and scans them for vulnerabilities and network exposure.
+ **Description**: This configuration turns on selected Amazon Inspector capabilities that automatically discover workloads, instances, container images, and other resources, and scans them for vulnerabilities and network exposure.
 
 ## Enabling a configuration with a type of policy
 <a name="securityhub-v2-configuration-enable-policy"></a>
@@ -51,11 +51,11 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 
 **To create a policy that enables and disables member accounts**
 
-1.  Sign in using your AWS account with your delegated administrator credentials. Open the Security Hub console at [https://console.aws.amazon.com/securityhub/v2/home](https://console.aws.amazon.com/securityhub/v2/home?).
+1.  Sign in using your AWS account with your delegated administrator credentials. Open the Security Hub console at [https://console.aws.amazon.com/securityhub/v2/home](https://console.aws.amazon.com/securityhub/v2/home).
 
 1.  From the navigation pane, choose **Management**, and then choose **Configurations**.
 
-1.  Choose an item with a type of **policy** or **policy and deployment** from the Configuration catalog. To fully configure Security Hub, we recommend choosing **Security Hub (essential and additional capabilities)**.
+1.  Choose an item with a type of **policy** or **policy and deployment** from the Configuration catalog. To fully configure Security Hub, choose **Security Hub (essential and additional capabilities)**.
 
 1.  On the **Configure Security Hub** page, in the **Details** section, enter a name and a description for the policy.
 
@@ -90,7 +90,7 @@ The following procedure describes how to create a configuration with a type of d
 
 **To create a deployment that enables member accounts**
 
-1.  Sign in using your AWS account with your delegated administrator credentials. Open the Security Hub console at [https://console.aws.amazon.com/securityhub/v2/home](https://console.aws.amazon.com/securityhub/v2/home?).
+1.  Sign in using your AWS account with your delegated administrator credentials. Open the Security Hub console at [https://console.aws.amazon.com/securityhub/v2/home](https://console.aws.amazon.com/securityhub/v2/home).
 
 1.  From the navigation pane, choose **Management**, and then choose **Configurations**.
 
@@ -120,11 +120,11 @@ The following procedure describes how to create a configuration with a type of d
 
 **To edit a configuration policy**
 
-1.  Sign in using your AWS account with your delegated administrator credentials. Open the Security Hub console at [https://console.aws.amazon.com/securityhub/v2/home](https://console.aws.amazon.com/securityhub/v2/home?).
+1.  Sign in using your AWS account with your delegated administrator credentials. Open the Security Hub console at [https://console.aws.amazon.com/securityhub/v2/home](https://console.aws.amazon.com/securityhub/v2/home).
 
 1.  From the navigation pane, choose **Management**, and then choose **Configurations**.
 
-1.  In the **Configured policies** tab, select the radio button for the policy you want to edit, and then choose **Edit**.
+1.  In the **Configured policies** tab, choose the radio button for the policy you want to edit, and then choose **Edit**.
 
 1.  In the **Capability** section, choose one of the following:
    + **Configure and enable all capabilities** – Enables all capabilities in the policy.
@@ -159,7 +159,7 @@ The following procedure describes how to create a configuration with a type of d
 
 **To delete a configuration policy**
 
-1.  Sign in using your AWS account with your delegated administrator credentials. Open the Security Hub console at [https://console.aws.amazon.com/securityhub/v2/home](https://console.aws.amazon.com/securityhub/v2/home?).
+1.  Sign in using your AWS account with your delegated administrator credentials. Open the Security Hub console at [https://console.aws.amazon.com/securityhub/v2/home](https://console.aws.amazon.com/securityhub/v2/home).
 
 1.  From the navigation pane, choose **Management**, and then choose **Configurations**.
 

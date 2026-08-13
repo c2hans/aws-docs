@@ -196,7 +196,7 @@ You might be behind a corporate firewall that doesn't allow access to default po
 ### AWS CLI
 <a name="USER_ImportAuroraCluster.CLI"></a>
 
-You can create an Aurora DB cluster from a DB snapshot of an RDS for MySQL DB instance by using the [https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-cluster-from-snapshot.html](https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-cluster-from-snapshot.html) command with the following parameters:
+You can create an Aurora DB cluster from a DB snapshot of an RDS for MySQL DB instance by using the [`restore-db-cluster-from-snapshot`](https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-cluster-from-snapshot.html) command with the following parameters:
 + `--db-cluster-identifier` – The name of the DB cluster to create.
 + `--engine aurora-mysql` – For a MySQL 5.7–compatible or 8.0–compatible DB cluster.
 + `--kms-key-id` – The AWS KMS key to optionally encrypt the DB cluster with, depending on whether your DB snapshot is encrypted.

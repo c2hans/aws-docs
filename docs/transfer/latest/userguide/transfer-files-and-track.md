@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/transfer-files
 ## Send and retrieve files by using an SFTP connector
 <a name="send-retrieve-connector-details"></a>
 
-To send and retrieve files by using an SFTP connector, you use the [https://docs.aws.amazon.com/transfer/latest/APIReference/API_StartFileTransfer.html](https://docs.aws.amazon.com/transfer/latest/APIReference/API_StartFileTransfer.html) API operation and specify the following parameters, depending on whether you're *sending files* (outbound transfers) or *receiving files* (inbound transfers). Note that each `StartFileTransfer` request can contain 10 distinct paths.
+To send and retrieve files by using an SFTP connector, you use the [StartFileTransfer](https://docs.aws.amazon.com/transfer/latest/APIReference/API_StartFileTransfer.html) API operation and specify the following parameters, depending on whether you're *sending files* (outbound transfers) or *receiving files* (inbound transfers). Note that each `StartFileTransfer` request can contain 10 distinct paths.
 
 **Note**
  By default, SFTP connectors process one file at a time, transferring files sequentially. You have an option to accelerate transfer performance by having your connectors create concurrent sessions with remote servers that support concurrent sessions from the same user, and process up to 5 files in parallel.

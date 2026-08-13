@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 # Creating associations that run MOF files
 <a name="systems-manager-state-manager-using-mof-file"></a>
 
-You can run Managed Object Format (MOF) files to enforce a target state on Windows Server managed nodes with State Manager, a tool in AWS Systems Manager, by using the `AWS-ApplyDSCMofs` SSM document. The `AWS-ApplyDSCMofs` document has two execution modes. With the first mode, you can configure the association to scan and report if the managed nodes are in the desired state defined in the specified MOF files. In the second mode, you can run the MOF files and change the configuration of your nodes based on the resources and their values defined in the MOF files. The `AWS-ApplyDSCMofs` document allows you to download and run MOF configuration files from Amazon Simple Storage Service (Amazon S3), a local share, or from a secure website with an HTTPS domain.
+You can run Managed Object Format (MOF) files to enforce a target state on Windows Server managed nodes with State Manager, by using the `AWS-ApplyDSCMofs` SSM document. The `AWS-ApplyDSCMofs` document has two execution modes. With the first mode, you can configure the association to scan and report if the managed nodes are in the desired state defined in the specified MOF files. In the second mode, you can run the MOF files and change the configuration of your nodes based on the resources and their values defined in the MOF files. The `AWS-ApplyDSCMofs` document lets you download and run MOF configuration files from Amazon Simple Storage Service (Amazon S3), a local share, or from a secure website with an HTTPS domain.
 
 State Manager logs and reports the status of each MOF file execution during each association run. State Manager also reports the output of each MOF file execution as a compliance event which you can view on the [AWS Systems Manager Compliance](https://console.aws.amazon.com/systems-manager/compliance) page.
 
@@ -34,7 +34,7 @@ If you're using Amazon S3 to store PowerShell modules, MOF files, compliance rep
 ## Resolving credentials in MOF files
 <a name="systems-manager-state-manager-using-mof-file-credentials"></a>
 
-Credentials are resolved by using [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/) or [AWS Systems Manager Parameter Store](systems-manager-parameter-store.md). This allows you to set up automatic credential rotation. This also allows DSC to automatically propagate credentials to your servers without redeploying MOFs.
+Credentials are resolved by using [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/) or [AWS Systems Manager Parameter Store](systems-manager-parameter-store.md). This lets you set up automatic credential rotation. This also allows DSC to automatically propagate credentials to your servers without redeploying MOFs.
 
 To use an AWS Secrets Manager secret in a configuration, create a PSCredential object where the Username is the SecretId or SecretARN of the secret containing the credential. You can specify any value for the password. The value is ignored. Following is an example.
 
@@ -58,7 +58,7 @@ Configuration MyConfig
 
 Compile your MOF using the PsAllowPlaintextPassword setting in configuration data. This is OK because the credential only contains a label.
 
-In Secrets Manager, ensure that the node has GetSecretValue access in an IAM Managed Policy, and optionally in the Secret Resource Policy if one exists. To work with DSC, the secret must be in the following format.
+In Secrets Manager, make sure that the node has GetSecretValue access in an IAM Managed Policy, and optionally in the Secret Resource Policy if one exists. To work with DSC, the secret must be in the following format.
 
 ```
 { 'Username': '{{a_name}}', 'Password': '{{a_password}}' }
@@ -66,12 +66,12 @@ In Secrets Manager, ensure that the node has GetSecretValue access in an IAM Man
 
 The secret can have other properties (for example, properties used for rotation), but it must at least have the username and password properties.
 
-We recommended that you use a multi-user rotation method, where you have two different usernames and passwords, and the rotation AWS Lambda function flips between them. This method allows you to have multiple active accounts while eliminating the risk of locking out a user during rotation.
+We recommended that you use a multi-user rotation method, where you have two different usernames and passwords, and the rotation AWS Lambda function flips between them. This method lets you have multiple active accounts while eliminating the risk of locking out a user during rotation.
 
 ## Using tokens in MOF files
 <a name="systems-manager-state-manager-using-mof-file-tokens"></a>
 
-Tokens give you the ability to modify resource property values *after* the MOF has been compiled. This allows you to reuse common MOF files on multiple servers that require similar configurations.
+Tokens give you the ability to modify resource property values *after* the MOF has been compiled. This lets you reuse common MOF files on multiple servers that require similar configurations.
 
 Token substitution only works for Resource Properties of type `String`. However, if your resource has a nested CIM node property, it also resolves tokens from `String` properties in that CIM node. You can't use token substitution for numerals or arrays.
 
@@ -104,7 +104,7 @@ Configuration {{MyConfig}}
 
 There are five different types of tokens you can use:
 + **tag**: Amazon EC2 or managed node tags.
-+ **tagb64**: This is the same as tag, but the system use base64 to decode the value. This allows you to use special characters in tag values.
++ **tagb64**: This is the same as tag, but the system use base64 to decode the value. This lets you use special characters in tag values.
 + **env**: Resolves Environment variables.
 + **ssm**: Parameter Store values. Only String and Secure String types are supported.
 + **tagssm**: This is the same as tag, but if the tag isn't set on the node, the system tries to resolve the value from a Systems Manager parameter with the same name. This is useful in situations when you want a 'default global value' but you want to be able to override it on a single node (for example, one-box deployments).
@@ -252,7 +252,7 @@ State Manager creates and immediately runs the association on the specified node
 + State Manager records history for all skipped intervals. You can view the history on the **Execution History** tab.
 
 **Note**
-The `AWS-ApplyDSCMofs` is a Systems Manager Command document. This means that you can also run this document by using Run Command, a tool in AWS Systems Manager. For more information, see [AWS Systems Manager Run Command](run-command.md).
+The `AWS-ApplyDSCMofs` is a Systems Manager Command document. This means that you can also run this document by using Run Command. For more information, see [AWS Systems Manager Run Command](run-command.md).
 
 ## Troubleshooting issues when creating associations that run MOF files
 <a name="systems-manager-state-manager-using-mof-file-troubleshooting"></a>
@@ -278,9 +278,9 @@ If State Manager failed to apply the association to your nodes, then start by re
 + The node has the required access permissions to all MOF-related Amazon S3 buckets. Specifically:
   + **s3:GetObject permissions**: This is required for MOF files in private Amazon S3 buckets and custom modules in Amazon S3 buckets.
   + **s3:PutObject permission**: This is required to write compliance reports and compliance status to Amazon S3 buckets.
-+ If you're using tags, then ensure that the node has the required IAM policy. Using tags requires the instance IAM role to have a policy allowing the `ec2:DescribeInstances` and `ssm:ListTagsForResource` actions.
-+ Ensure that the node has the expected tags or SSM parameters assigned.
-+ Ensure that the tags or SSM parameters aren't misspelled.
++ If you're using tags, then make sure that the node has the required IAM policy. Using tags requires the instance IAM role to have a policy allowing the `ec2:DescribeInstances` and `ssm:ListTagsForResource` actions.
++ Make sure that the node has the expected tags or SSM parameters assigned.
++ Make sure that the tags or SSM parameters aren't misspelled.
 + Try applying the MOF locally on the node to make sure there isn't an issue with the MOF file itself.
 
 **My MOF seemed to fail, but the Systems Manager execution was successful**
@@ -297,7 +297,7 @@ This error indicates that the script can't reach a remote service. Most likely, 
   The Report, Status, and Module Source bucket names should be formatted as follows.
 
   {{bucket-region}}:{{amzn-s3-demo-bucket}}. Here is an example: `us-west-1:amzn-s3-demo-bucket;`
-+ If Region-specific syntax doesn't fix the problem, then make sure that the targeted nodes can access Amazon S3 in the desired Region. To verify this:
++ If Region-specific syntax doesn't fix the problem, then make sure the targeted nodes can access Amazon S3 in the desired Region. To verify this:
 
   1. Find the endpoint name for Amazon S3 in the appropriate Amazon S3 Region. For information, see [Amazon S3 Service Endpoints](https://docs.aws.amazon.com/general/latest/gr/s3.html#s3_region) in the *Amazon Web Services General Reference*.
 
@@ -334,4 +334,4 @@ For information about how to view compliance information, see [AWS Systems Manag
 **Situations that affect compliance reporting**
 If the State Manager association fails, then no compliance data is reported. More specifically, if a MOF fails to process, then Systems Manager doesn’t report any compliance items because the associations fails. For example, if Systems Manager attempts to download a MOF from an Amazon S3 bucket that the node doesn't have permission to access, then the association fails and no compliance data is reported.
 
-If a resource in a second MOF fails, then Systems Manager *does* report compliance data. For example, if a MOF tries to create a file on a drive that doesn’t exist, then Systems Manager reports compliance because the `AWS-ApplyDSCMofs` document is able to process completely, which means the association successfully runs.
+If a resource in a second MOF fails, then Systems Manager *does* report compliance data. For example, if a MOF tries to create a file on a drive that doesn’t exist, then Systems Manager reports compliance because the `AWS-ApplyDSCMofs` document can process completely, which means the association successfully runs.

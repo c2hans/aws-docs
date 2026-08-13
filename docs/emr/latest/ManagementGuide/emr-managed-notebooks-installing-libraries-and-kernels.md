@@ -39,7 +39,7 @@ From the Python3 kernel, run the `%pip` magic as a command from within a noteboo
 ```
 %pip install pmdarima
 ```
-You may need to restart the kernel to use updated packages. You can also use the [https://ipython.readthedocs.io/en/stable/interactive/magics.html#cellmagic-sh](https://ipython.readthedocs.io/en/stable/interactive/magics.html#cellmagic-sh) Spark magic to invoke `pip`.
+You may need to restart the kernel to use updated packages. You can also use the [`%%sh`](https://ipython.readthedocs.io/en/stable/interactive/magics.html#cellmagic-sh) Spark magic to invoke `pip`.
 
 ```
 %%sh

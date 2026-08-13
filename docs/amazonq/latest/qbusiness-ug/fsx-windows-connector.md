@@ -7,7 +7,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 # Connecting Amazon FSx (Windows) to Amazon Q Business
 <a name="fsx-windows-connector"></a>
 
-Amazon FSx (Windows) is a fully managed, cloud based file server system that offers shared storage capabilities. You can connect your Amazon FSx (Windows) instance to Amazon Q Business—using either the AWS Management Console, CLI, or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q web experience.
+Amazon FSx (Windows) is a fully managed, cloud based file server system that offers shared storage capabilities. You can connect your Amazon FSx (Windows) instance to Amazon Q Business—using either the AWS Management Console, CLI, or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q web experience.
 
 The Amazon Q Amazon FSx (Windows) data source connector supports only Amazon FSx for Windows.
 

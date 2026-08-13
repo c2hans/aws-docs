@@ -33,7 +33,7 @@ To grant permissions to Amazon S3 for log delivery, you can use either a bucket 
 Granting `s3:PutObject` to the logging service principal is not sufficient if the destination bucket uses SSE-KMS default encryption. The destination bucket must use Amazon S3 managed keys (SSE-S3). If the destination bucket uses SSE-KMS, Amazon S3 might deliver log objects that are encrypted with a key that you can't access.
 
 **Bucket owner enforced setting for S3 Object Ownership**
-If the destination bucket uses the Bucket owner enforced setting for Object Ownership, ACLs are disabled and no longer affect permissions. In this case, you must update the bucket policy for the destination bucket to grant access to the logging service principal. You can't update your bucket ACL to grant access to the S3 log delivery group. You also can't include destination grants (also known as *target grants*) in your [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLogging.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLogging.html) configuration.
+If the destination bucket uses the Bucket owner enforced setting for Object Ownership, ACLs are disabled and no longer affect permissions. In this case, you must update the bucket policy for the destination bucket to grant access to the logging service principal. You can't update your bucket ACL to grant access to the S3 log delivery group. You also can't include destination grants (also known as *target grants*) in your [PutBucketLogging](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLogging.html) configuration.
 
 For information about migrating existing bucket ACLs for access log delivery to a bucket policy, see [Grant access to the S3 log delivery group for server access logging](object-ownership-migrating-acls-prerequisites.md#object-ownership-server-access-logs). For more information about Object Ownership, see [Controlling ownership of objects and disabling ACLs for your bucket](about-object-ownership.md). When you create new buckets, ACLs are disabled by default.
 
@@ -93,7 +93,7 @@ If there are `Deny` statements in your bucket policy, make sure that they don't 
 **Note**
 As a security best practice, Amazon S3 disables access control lists (ACLs) by default in all new buckets. For more information about ACL permissions in the Amazon S3 console, see [Configuring ACLs](managing-acls.md).
 
-Although we do not recommend this approach, you can grant permissions to the log delivery group by using a bucket ACL. However, if the destination bucket uses the Bucket owner enforced setting for Object Ownership, you can't set bucket or object ACLs. You also can't include destination grants (also known as *target grants*) in your [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLogging.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLogging.html) configuration. Instead, you must use a bucket policy to grant access to the logging service principal (`logging.s3.amazonaws.com`). For more information, see [Permissions for log delivery](#grant-log-delivery-permissions-general).
+Although we do not recommend this approach, you can grant permissions to the log delivery group by using a bucket ACL. However, if the destination bucket uses the Bucket owner enforced setting for Object Ownership, you can't set bucket or object ACLs. You also can't include destination grants (also known as *target grants*) in your [PutBucketLogging](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLogging.html) configuration. Instead, you must use a bucket policy to grant access to the logging service principal (`logging.s3.amazonaws.com`). For more information, see [Permissions for log delivery](#grant-log-delivery-permissions-general).
 
 In the bucket ACL, the log delivery group is represented by the following URL:
 
@@ -171,7 +171,7 @@ For more information, see [Viewing the properties for an S3 general purpose buck
 ### Using the REST API
 <a name="enable-logging-rest"></a>
 
-To enable logging, you submit a [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTlogging.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTlogging.html) request to add the logging configuration on the source bucket. The request specifies the destination bucket (also known as a *target bucket*) and, optionally, the prefix to be used with all log object keys.
+To enable logging, you submit a [PutBucketLogging](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTlogging.html) request to add the logging configuration on the source bucket. The request specifies the destination bucket (also known as a *target bucket*) and, optionally, the prefix to be used with all log object keys.
 
 The following example identifies `{{amzn-s3-demo-destination-bucket}}` as the destination bucket and {{`logs/`}} as the prefix.
 
@@ -200,12 +200,12 @@ The following example identifies `{{amzn-s3-demo-destination-bucket}}` as the de
 11. </BucketLoggingStatus>
 ```
 
-The log objects are written and owned by the S3 log delivery account, and the bucket owner is granted full permissions on the log objects. You can optionally use destination grants (also known as *target grants*) to grant permissions to other users so that they can access the logs. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTlogging.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTlogging.html).
+The log objects are written and owned by the S3 log delivery account, and the bucket owner is granted full permissions on the log objects. You can optionally use destination grants (also known as *target grants*) to grant permissions to other users so that they can access the logs. For more information, see [PutBucketLogging](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTlogging.html).
 
 **Note**
 If the destination bucket uses the Bucket owner enforced setting for Object Ownership, you can't use destination grants to grant permissions to other users. To grant permissions to others, you can update the bucket policy on the destination bucket. For more information, see [Permissions for log delivery](#grant-log-delivery-permissions-general).
 
-To retrieve the logging configuration on a bucket, use the [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETlogging.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETlogging.html) API operation.
+To retrieve the logging configuration on a bucket, use the [GetBucketLogging](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETlogging.html) API operation.
 
 To delete the logging configuration, you send a `PutBucketLogging` request with an empty `BucketLoggingStatus`:
 
@@ -479,7 +479,7 @@ public class ServerAccessLogging {
 ### Using the AWS CLI
 <a name="enabling-s3-access-logs-for-requests"></a>
 
-We recommend that you create a dedicated logging bucket in each AWS Region that you have S3 buckets in. Then have your Amazon S3 access logs delivered to that S3 bucket. For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-logging.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-logging.html) in the *AWS CLI Reference*.
+We recommend that you create a dedicated logging bucket in each AWS Region that you have S3 buckets in. Then have your Amazon S3 access logs delivered to that S3 bucket. For more information and examples, see [put-bucket-logging](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-logging.html) in the *AWS CLI Reference*.
 
 If the destination (target) bucket uses the Bucket owner enforced setting for Object Ownership, you can't set bucket or object ACLs. You also can't include destination (target) grants in your [PutBucketLogging](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLogging.html) configuration. You must use a bucket policy to grant access to the logging service principal (`logging.s3.amazonaws.com`). For more information, see [Permissions for log delivery](#grant-log-delivery-permissions-general).
 
@@ -577,7 +577,7 @@ Instead of using this `put-bucket-logging` command to apply the logging configur
 
    The following example `logging.json` file contains destination (target) grants.
 
-   If the destination bucket uses the Bucket owner enforced setting for Object Ownership, you can't include destination (target) grants in your [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLogging.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLogging.html) configuration. For more information, see [Permissions for log delivery](#grant-log-delivery-permissions-general).
+   If the destination bucket uses the Bucket owner enforced setting for Object Ownership, you can't include destination (target) grants in your [PutBucketLogging](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLogging.html) configuration. For more information, see [Permissions for log delivery](#grant-log-delivery-permissions-general).
 
    ```
      {

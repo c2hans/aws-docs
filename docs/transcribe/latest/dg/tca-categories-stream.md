@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/tca-categories-stre
 
 Real-time Call Analytics supports the creation of custom categories, which you can use to tailor your transcript analyses to best suit your specific business needs.
 
-You can create as many categories as you like to cover a range of different scenarios. For each category you create, you must create between 1 and 20 rules. Real-time Call Analytics transcriptions only support rules that use [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html) (keyword matches). For more detail on using rules with the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html) operation, refer to the [Rule criteria for real-time Call Analytics categories](#tca-rules-stream) section.
+You can create as many categories as you like to cover a range of different scenarios. For each category you create, you must create between 1 and 20 rules. Real-time Call Analytics transcriptions only support rules that use [`TranscriptFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html) (keyword matches). For more detail on using rules with the [`CreateCallAnalyticsCategory`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html) operation, refer to the [Rule criteria for real-time Call Analytics categories](#tca-rules-stream) section.
 
 If the content in your media matches all the rules you've specified in a given category, Amazon Transcribe labels your output with that category. See [category event output](tca-output-streaming.md#tca-output-category-event-stream) for an example of a category match in JSON output format.
 
@@ -52,7 +52,7 @@ To create a new category for real-time Call Analytics, you can use the **AWS Man
 ## AWS CLI
 <a name="tca-category-cli-stream"></a>
 
-This example uses the [create-call-analytics-category](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/create-call-analytics-category.html) command. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html), [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CategoryProperties.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CategoryProperties.html), and [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Rule.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Rule.html).
+This example uses the [create-call-analytics-category](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/create-call-analytics-category.html) command. For more information, see [`CreateCallAnalyticsCategory`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html), [`CategoryProperties`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CategoryProperties.html), and [`Rule`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Rule.html).
 
 The following example creates a category with the rule:
 + The customer spoke the phrase "speak to the manager" at any point in the call.
@@ -87,7 +87,7 @@ The file *my-first-analytics-category.json* contains the following request body.
 ## AWS SDK for Python (Boto3)
 <a name="tca-category-python-stream"></a>
 
-This example uses the AWS SDK for Python (Boto3) to create a category using the `CategoryName` and `Rules` arguments for the [create\_call\_analytics\_category](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_call_analytics_category) method. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html), [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CategoryProperties.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CategoryProperties.html), and [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Rule.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Rule.html).
+This example uses the AWS SDK for Python (Boto3) to create a category using the `CategoryName` and `Rules` arguments for the [create\_call\_analytics\_category](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_call_analytics_category) method. For more information, see [`CreateCallAnalyticsCategory`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html), [`CategoryProperties`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CategoryProperties.html), and [`Rule`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Rule.html).
 
 For additional examples using the AWS SDKs, including feature-specific, scenario, and cross-service examples, refer to the [Code examples for Amazon Transcribe using AWS SDKs](service_code_examples.md) chapter.
 
@@ -123,7 +123,7 @@ print(result)
 ## Rule criteria for real-time Call Analytics categories
 <a name="tca-rules-stream"></a>
 
-This section outlines the types of custom `REAL_TIME` rules that you can create using the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html) API operation.
+This section outlines the types of custom `REAL_TIME` rules that you can create using the [`CreateCallAnalyticsCategory`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html) API operation.
 
 Issue detection occurs automatically, so you don't need to create any rules or categories to flag issues.
 
@@ -132,12 +132,12 @@ Note that only keyword matches are supported for real-time Call Analytics transc
 ### Keyword match
 <a name="tca-rules-keywords-stream"></a>
 
-Rules using keywords ([https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html) data type) are designed to match:
+Rules using keywords ([`TranscriptFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html) data type) are designed to match:
 + Custom words or phrases spoken by the agent, the customer, or both
 + Custom words or phrases **not** spoken by the agent, the customer, or both
 + Custom words or phrases that occur in a specific time frame
 
-Here's an example of the parameters available with [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html):
+Here's an example of the parameters available with [`TranscriptFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html):
 
 ```
 "TranscriptFilter": {
@@ -154,4 +154,4 @@ Here's an example of the parameters available with [https://docs.aws.amazon.com/
 }
 ```
 
-Refer to [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html) and [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html) for more information on these parameters and the valid values associated with each.
+Refer to [`CreateCallAnalyticsCategory`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html) and [`TranscriptFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html) for more information on these parameters and the valid values associated with each.

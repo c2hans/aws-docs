@@ -93,7 +93,7 @@ For general information about `cqlsh`, see [`cqlsh`: the CQL shell](https://cass
 
    1. Copy the combined certificate file into the `.cassandra` directory. Amazon Keyspaces uses this certificate to configure the secure connection with Transport Layer Security (TLS). Encryption in transit provides an additional layer of data protection by encrypting your data as it travels to and from Amazon Keyspaces. For more information about certificates, see [How to manually configure `cqlsh` connections for TLS](#encrypt_using_tls).
 
-   To review the script first, you can access it in the Github repo at [https://github.com/aws-samples/amazon-keyspaces-toolkit/blob/master/cqlsh-expansion/cqlsh_expansion/post_install.py](https://github.com/aws-samples/amazon-keyspaces-toolkit/blob/master/cqlsh-expansion/cqlsh_expansion/post_install.py).
+   To review the script first, you can access it in the Github repo at [`post_install.py`](https://github.com/aws-samples/amazon-keyspaces-toolkit/blob/master/cqlsh-expansion/cqlsh_expansion/post_install.py).
 
    To use the script, you can run the following command.
 

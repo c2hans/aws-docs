@@ -19,7 +19,7 @@ The following instance types support multiple EBS cards. For information about t
   <tr><th>Instance Type</th><th>Number of EBS cards</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2">General Purpose</td></tr>
+  <tr><td colspan="2"><b>General Purpose</b></td></tr>
   <tr><td>m8gb.48xlarge</td><td>2</td></tr>
   <tr><td>m8gb.metal-48xl</td><td>2</td></tr>
   <tr><td>m8gn.48xlarge</td><td>2</td></tr>
@@ -32,7 +32,7 @@ The following instance types support multiple EBS cards. For information about t
   <tr><td>m8ib.metal-96xl</td><td>2</td></tr>
   <tr><td>m8idb.96xlarge</td><td>2</td></tr>
   <tr><td>m8idb.metal-96xl</td><td>2</td></tr>
-  <tr><td colspan="2">Compute Optimized</td></tr>
+  <tr><td colspan="2"><b>Compute Optimized</b></td></tr>
   <tr><td>c8gb.48xlarge</td><td>2</td></tr>
   <tr><td>c8gb.metal-48xl</td><td>2</td></tr>
   <tr><td>c8gn.48xlarge</td><td>2</td></tr>
@@ -41,7 +41,7 @@ The following instance types support multiple EBS cards. For information about t
   <tr><td>c8in.metal-96xl</td><td>2</td></tr>
   <tr><td>c8ib.96xlarge</td><td>2</td></tr>
   <tr><td>c8ib.metal-96xl</td><td>2</td></tr>
-  <tr><td colspan="2">Memory Optimized</td></tr>
+  <tr><td colspan="2"><b>Memory Optimized</b></td></tr>
   <tr><td>r8gb.48xlarge</td><td>2</td></tr>
   <tr><td>r8gb.metal-48xl</td><td>2</td></tr>
   <tr><td>r8gn.48xlarge</td><td>2</td></tr>
@@ -54,7 +54,7 @@ The following instance types support multiple EBS cards. For information about t
   <tr><td>r8ib.metal-96xl</td><td>2</td></tr>
   <tr><td>r8idb.96xlarge</td><td>2</td></tr>
   <tr><td>r8idb.metal-96xl</td><td>2</td></tr>
-  <tr><td colspan="2">Accelerated Computing</td></tr>
+  <tr><td colspan="2"><b>Accelerated Computing</b></td></tr>
   <tr><td>g7.48xlarge</td><td>2</td></tr>
 </tbody>
 </table>

@@ -49,7 +49,7 @@ For information about CloudTrail event record fields, see [CloudTrail record con
 
 Amazon Elastic Compute Cloud (Amazon EC2) provides resizeable computing capacity in the AWS Cloud. You can launch virtual servers, configure security and networking, and manage storage. Amazon EC2 can also scale up or down quickly to handle changes in requirements or spikes in popularity, thereby reducing your need to forecast server traffic. For more information, see the [Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/).
 
-The following example shows that an IAM user named `Mateo` ran the **aws ec2 start-instances** command to call the Amazon EC2 [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartInstances.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartInstances.html) action for instances `i-EXAMPLE56126103cb` and `i-EXAMPLEaff4840c22`.
+The following example shows that an IAM user named `Mateo` ran the **aws ec2 start-instances** command to call the Amazon EC2 [`StartInstances`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartInstances.html) action for instances `i-EXAMPLE56126103cb` and `i-EXAMPLEaff4840c22`.
 
 ```
 {"Records": [{
@@ -133,7 +133,7 @@ The following example shows that an IAM user named `Mateo` ran the **aws ec2 sta
 }]}
 ```
 
-The following example shows that an IAM user named `Nikki` ran the **aws ec2 stop-instances** command to call the Amazon EC2 [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StopInstances.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StopInstances.html) action to stop two instances.
+The following example shows that an IAM user named `Nikki` ran the **aws ec2 stop-instances** command to call the Amazon EC2 [`StopInstances`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StopInstances.html) action to stop two instances.
 
 ```
 {"Records": [{
@@ -218,7 +218,7 @@ The following example shows that an IAM user named `Nikki` ran the **aws ec2 sto
 }]}
 ```
 
-The following example shows that an IAM user named `Arnav` ran the **aws ec2 create-key-pair** command to call the [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateKeyPair.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateKeyPair.html) action. Note that the `responseElements` contain a hash of the key pair and that AWS removed the key material.
+The following example shows that an IAM user named `Arnav` ran the **aws ec2 create-key-pair** command to call the [`CreateKeyPair`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateKeyPair.html) action. Note that the `responseElements` contain a hash of the key pair and that AWS removed the key material.
 
 ```
 {"Records": [{
@@ -278,7 +278,7 @@ The following example shows that an IAM user named `Arnav` ran the **aws ec2 cre
 
 AWS Identity and Access Management (IAM) is a web service that helps you securely control access to AWS resources. With IAM, you can centrally manage permissions that control which AWS resources users can access. You use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources. For more information, see the [IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/).
 
-The following example shows that the IAM user named `Mary` ran the **aws iam create-user** command to call the [https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateUser.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateUser.html) action to create a new user named `Richard`.
+The following example shows that the IAM user named `Mary` ran the **aws iam create-user** command to call the [`CreateUser`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateUser.html) action to create a new user named `Richard`.
 
 ```
 {"Records": [{
@@ -333,7 +333,7 @@ The following example shows that the IAM user named `Mary` ran the **aws iam cre
 }]}
 ```
 
-The following example shows that the IAM user named `Paulo` ran the **aws iam add-user-to-group** command to call the [https://docs.aws.amazon.com/IAM/latest/APIReference/API_AddUserToGroup.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_AddUserToGroup.html) action to add a user named `Jane` to the `Admin` group.
+The following example shows that the IAM user named `Paulo` ran the **aws iam add-user-to-group** command to call the [`AddUserToGroup`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_AddUserToGroup.html) action to add a user named `Jane` to the `Admin` group.
 
 ```
 {"Records": [{
@@ -381,7 +381,7 @@ The following example shows that the IAM user named `Paulo` ran the **aws iam ad
 }]}
 ```
 
-The following example shows that the IAM user named `Saanvi` ran the **aws iam create-role** command to call the [https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html) action to create a role.
+The following example shows that the IAM user named `Saanvi` ran the **aws iam create-role** command to call the [`CreateRole`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html) action to create a role.
 
 ```
 {"Records": [{
@@ -442,7 +442,7 @@ The following example shows that the IAM user named `Saanvi` ran the **aws iam c
 ### Error code and message log example
 <a name="error-code-and-error-message"></a>
 
-The following example shows that the IAM user named `Terry` ran the **aws cloudtrail update-trail** command to call the [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_UpdateTrail.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_UpdateTrail.html) action to update a trail named `myTrail2`, but the trail name was not found. The log shows this error in the `errorCode` and `errorMessage` elements.
+The following example shows that the IAM user named `Terry` ran the **aws cloudtrail update-trail** command to call the [`UpdateTrail`](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_UpdateTrail.html) action to update a trail named `myTrail2`, but the trail name was not found. The log shows this error in the `errorCode` and `errorMessage` elements.
 
 ```
 {"Records": [{

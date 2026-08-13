@@ -12,20 +12,37 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 ## Changes
 <a name="release-2019-11-25-linux.changes"></a>
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **November 16, 2019** to all Linux-based platforms.<br />The **PHP** release includes security fixes. For more information, see **Platform-specific updates** in this table. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-11-25-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-11-25-linux.html) |
-| **Apache** | Updated platforms supporting the Apache HTTP Server 2.4 to version 2.4.41. For details, see [Changes with Apache 2.4.x](https://downloads.apache.org/httpd/CHANGES_2.4) on the *Apache Software Foundation* website. |
-| **All Docker platforms** | Updated Docker to version 18.09.9-ce. |
-| **Go** | Updated to Go release 1.13.2. For details, see [go1.13](https://golang.org/doc/devel/release.html#go1.13) in *The Go Programming Language Release History*. |
-| **Node.js** | Updated the Node.js platform to add support for Node version [10.17.0](https://nodejs.org/en/blog/release/v10.17.0/). |
-| **PHP** | Released new PHP 7.3 and 7.2 versions: [7.3.11](https://www.php.net/releases/7_3_11.php) and [7.2.24](https://www.php.net/releases/7_2_24.php), respectively.<br />These versions include a security fix. For details, see [CVE-2019-11043](https://access.redhat.com/security/cve/CVE-2019-11043). |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>November 16, 2019</b> to all Linux-based platforms.<br />The <b>PHP</b> release includes security fixes. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Apache</b></td><td>Updated platforms supporting the Apache HTTP Server 2.4 to version 2.4.41. For details, see <a href="https://downloads.apache.org/httpd/CHANGES_2.4">Changes with Apache 2.4.x</a> on the <i>Apache Software Foundation</i> website.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>All Docker platforms</b></td><td>Updated Docker to version 18.09.9-ce.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated to Go release 1.13.2. For details, see <a href="https://golang.org/doc/devel/release.html#go1.13">go1.13</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform to add support for Node version <a href="https://nodejs.org/en/blog/release/v10.17.0/">10.17.0</a>.</td></tr>
+  <tr><td><b>PHP</b></td><td>Released new PHP 7.3 and 7.2 versions: <a href="https://www.php.net/releases/7_3_11.php">7.3.11</a> and <a href="https://www.php.net/releases/7_2_24.php">7.2.24</a>, respectively.<br />These versions include a security fix. For details, see <a href="https://access.redhat.com/security/cve/CVE-2019-11043">CVE-2019-11043</a>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2019-11-25-linux.platforms"></a>

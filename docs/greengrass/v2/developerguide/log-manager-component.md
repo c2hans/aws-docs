@@ -6,25 +6,25 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager
 <a name="log-manager-component"></a>
 
 **Warning**
-We recommend upgrading to Log Manager v2.3.5 or later. Version 2.3.5 optimizes Log Manager configuration writes, reducing IO operations and improving log upload speed, overall device performance and possibly extending device life.
+We recommend upgrading to Log manager v2.3.5 or later. Version 2.3.5 optimizes Log manager configuration writes, reducing IO operations and improving log upload speed, overall device performance and possibly extending device life.
 
-The log manager component (`aws.greengrass.LogManager`) uploads logs from AWS IoT Greengrass core devices to Amazon CloudWatch Logs. You can upload logs from the Greengrass nucleus, other Greengrass components, and other applications and services that aren't Greengrass components. For more information about how to monitor logs in CloudWatch Logs and on the local file system, see [Monitor AWS IoT Greengrass logs](monitor-logs.md).
+The Log manager component (`aws.greengrass.LogManager`) uploads logs from AWS IoT Greengrass core devices to Amazon CloudWatch Logs. You can upload logs from the Greengrass nucleus, other Greengrass components, and other applications and services that aren't Greengrass components. For more information about how to monitor logs in CloudWatch Logs and on the local file system, see [Monitor AWS IoT Greengrass logs](monitor-logs.md).
 
 <a name="log-manager-considerations-intro"></a>The following considerations apply when you use the log manager component to write to CloudWatch Logs:<a name="log-manager-considerations"></a>
 + **Log delays**
 
-  The log manager component version 2.2.8 (and earlier) processes and uploads logs from only rotated log files. By default, the AWS IoT Greengrass Core software rotates log files every hour or after they are 1,024 KB. As a result, the log manager component uploads logs only after the AWS IoT Greengrass Core software or a Greengrass component writes over 1,024 KB worth of logs. You can configure a lower log file size limit to cause log files to rotate more often. This causes the log manager component to upload logs to CloudWatch Logs more frequently.
+  The Log manager component version 2.2.8 (and earlier) processes and uploads logs from only rotated log files. By default, the AWS IoT Greengrass Core software rotates log files every hour or after they are 1,024 KB. As a result, the Log manager component uploads logs only after the AWS IoT Greengrass Core software or a Greengrass component writes over 1,024 KB worth of logs. You can configure a lower log file size limit to cause log files to rotate more often. This causes the Log manager component to upload logs to CloudWatch Logs more frequently.
 
-  The log manager component version 2.3.0 (and later) processes and uploads all logs. When you write a new log, log manager version 2.3.0 (and later) processes and directly uploads that active log file instead of waiting for it to be rotated. This means that you can view the new log in 5 minutes or less.
+  The Log manager component version 2.3.0 (and later) processes and uploads all logs. When you write a new log, Log manager version 2.3.0 (and later) processes and directly uploads that active log file instead of waiting for it to be rotated. This means that you can view the new log in 5 minutes or less.
 
-  The log manager component uploads new logs periodically. By default, the log manager component uploads new logs every 5 minutes. You can configure a lower upload interval, so the log manager component uploads logs to CloudWatch Logs more frequently by configuring the `periodicUploadIntervalSec`. For more information about how to configure this periodic interval, see [Configuration](https://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager-component.html#log-manager-component-configuration).
+  The Log manager component uploads new logs periodically. By default, the Log manager component uploads new logs every 5 minutes. You can configure a lower upload interval, so the Log manager component uploads logs to CloudWatch Logs more frequently by configuring the `periodicUploadIntervalSec`. For more information about how to configure this periodic interval, see [Configuration](https://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager-component.html#log-manager-component-configuration).
 
   Logs can be uploaded in near real-time from the same Greengrass file system. If you need to observe logs in real time, consider using [file system logs](monitor-logs.md#access-local-logs).
 **Note**
-If you're using different file systems to write logs to, log manager reverts back to the behavior in log manager component versions 2.2.8 and earlier. For information about accessing file system logs, see [Access file system logs](https://docs.aws.amazon.com/greengrass/v2/developerguide/monitor-logs.html#access-local-logs).
+If you're using different file systems to write logs to, Log manager reverts back to the behavior in Log manager component versions 2.2.8 and earlier. For information about accessing file system logs, see [Access file system logs](https://docs.aws.amazon.com/greengrass/v2/developerguide/monitor-logs.html#access-local-logs).
 + **Clock skew**
 
-  The log manager component uses the standard Signature Version 4 signing process to create API requests to CloudWatch Logs. If the system time on a core device is out of sync by more than 15 minutes, then CloudWatch Logs rejects the requests. For more information, see [Signature Version 4 signing process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) in the *AWS General Reference*.
+  The Log manager component uses the standard Signature Version 4 signing process to create API requests to CloudWatch Logs. If the system time on a core device is out of sync by more than 15 minutes, then CloudWatch Logs rejects the requests. For more information, see [Signature Version 4 signing process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) in the *AWS General Reference*.
 
 For information about the log groups and log streams to which this component uploads logs, see [Usage](#log-manager-component-usage).
 
@@ -91,8 +91,8 @@ This component has the following requirements:
 The [Greengrass device role](device-service-role.md) that you create when you install the AWS IoT Greengrass Core software includes the permissions in this example policy by default.
 
   For more information, see [Using identity-based policies (IAM policies) for CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/iam-identity-based-access-control-cwl.html) in the *Amazon CloudWatch Logs User Guide*.
-+ The log manager component is supported to run in a VPC. To deploy this component in a VPC, the following is required.
-  + The log manager component must have connectivity to `logs.region.amazonaws.com` which has the VPC endpoint of `com.amazonaws.us-east-1.logs`.
++ The Log manager component is supported to run in a VPC. To deploy this component in a VPC, the following is required.
+  + The Log manager component must have connectivity to `logs.region.amazonaws.com` which has the VPC endpoint of `com.amazonaws.us-east-1.logs`.
 
 ### Endpoints and ports
 <a name="log-manager-component-endpoints"></a>
@@ -107,6 +107,24 @@ This component must be able to perform outbound requests to the following endpoi
 <a name="log-manager-component-dependencies"></a>
 
 When you deploy a component, AWS IoT Greengrass also deploys compatible versions of its dependencies. This means that you must meet the requirements for the component and all of its dependencies to successfully deploy the component. This section lists the dependencies for the [released versions](#log-manager-component-changelog) of this component and the semantic version constraints that define the component versions for each dependency. You can also view the dependencies for each version of the component in the [AWS IoT Greengrass console](https://console.aws.amazon.com//greengrass). On the component details page, look for the **Dependencies** list.
+
+------
+#### [ 2.3.13 and 2.3.14 ]
+
+The following table lists the dependencies for versions 2.3.13 and 2.3.14 of this component.
+
+| Dependency | Compatible versions | Dependency type |
+| --- | --- | --- |
+| [Greengrass nucleus](greengrass-nucleus-component.md) | >=2.1.0 <2.19.0 | Soft |
+
+------
+#### [ 2.3.12 ]
+
+The following table lists the dependencies for version 2.3.12 of this component.
+
+| Dependency | Compatible versions | Dependency type |
+| --- | --- | --- |
+| [Greengrass nucleus](greengrass-nucleus-component.md) | >=2.1.0 <2.18.0 | Soft |
 
 ------
 #### [ 2.3.11 ]
@@ -274,9 +292,9 @@ This component provides the following configuration parameters that you can cust
 #### [ v2.3.10 ]
 
 `logsUploaderConfiguration`
-(Optional) The configuration for logs that the log manager component uploads. This object contains the following information:
+(Optional) The configuration for logs that the Log manager component uploads. This object contains the following information:
   `systemLogsConfiguration`
-(Optional) The configuration for AWS IoT Greengrass Core software system logs, which include logs from the [Greengrass nucleus](greengrass-nucleus-component.md) and [plugin components](develop-greengrass-components.md#component-types). Specify this configuration to enable the log manager component to manage system logs. This object contains the following information:
+(Optional) The configuration for AWS IoT Greengrass Core software system logs, which include logs from the [Greengrass nucleus](greengrass-nucleus-component.md) and [plugin components](develop-greengrass-components.md#component-types). Specify this configuration to enable the Log manager component to manage system logs. This object contains the following information:
 `uploadToCloudWatch`  <a name="log-manager-component-configuration-system-upload-to-cloud-watch"></a>
 (Optional) You can upload system logs to CloudWatch Logs.
 Default: `false`
@@ -301,9 +319,9 @@ Default: `KB`
 (Optional) You can delete a log file after the log manager component uploads the logs to CloudWatch Logs.
 Default: `false`
   `componentLogsConfigurationMap`
-(Optional) A map of log configurations for components on the core device. Each `componentName` object in this map defines the log configuration for the component or application. The log manager component uploads these component logs to CloudWatch Logs.
-We strongly recommend using a single configuration key per component. You should only target a group of files that have only one log file that's actively being written to when using the `logFileRegex`. Not following this recommendation may lead to duplicate logs getting uploaded to CloudWatch. If you are targeting multiple active log files with a single regex, we recommend you upgrade to log manager v2.3.1 or later and consider changing your configuration using the [example configuration](#log-manager-multiple-logs-v2.3.10).
-If you're upgrading from a version of log manager earlier than v2.2.0, you can continue to use the `componentLogsConfiguration` list instead of `componentLogsConfigurationMap`. However, we strongly recommend that you use the map format so that you can use merge and reset updates to modify configurations for specific components. For information about the `componentLogsConfiguration` parameter, see the configuration parameters for v2.1.x of this component.
+(Optional) A map of log configurations for components on the core device. Each `componentName` object in this map defines the log configuration for the component or application. The Log manager component uploads these component logs to CloudWatch Logs.
+We strongly recommend using a single configuration key per component. You should only target a group of files that have only one log file that's actively being written to when using the `logFileRegex`. Not following this recommendation may lead to duplicate logs getting uploaded to CloudWatch. If you are targeting multiple active log files with a single regex, we recommend you upgrade to Log manager v2.3.1 or later and consider changing your configuration using the [example configuration](#log-manager-multiple-logs-v2.3.10).
+If you're upgrading from a version of Log manager earlier than v2.2.0, you can continue to use the `componentLogsConfiguration` list instead of `componentLogsConfigurationMap`. However, we strongly recommend that you use the map format so that you can use merge and reset updates to modify configurations for specific components. For information about the `componentLogsConfiguration` parameter, see the configuration parameters for v2.1.x of this component.
 {{`componentName`}}
 The log configuration for the {{`componentName`}} component or application for this log configuration. You can specify the name of a Greengrass component or another value to identify this log group.
 Each object contains the following information:
@@ -353,8 +371,8 @@ Default: `periodicUploadIntervalSec`
 Minimum: `periodicUploadIntervalSec`
 
 `deprecatedVersionSupport`
-Indicates whether the log manager should use logging speed improvements introduced in log manager v2.3.5. Set the value to `false` to use the improvements.
-If you set this value to `false` when you upgrade from log manager v2.3.1 or earlier duplicate log entries may be uploaded.
+Indicates whether the Log manager should use logging speed improvements introduced in Log manager v2.3.5. Set the value to `false` to use the improvements.
+If you set this value to `false` when you upgrade from Log manager v2.3.1 or earlier duplicate log entries may be uploaded.
 The default is `true`.
 
 **Example: Configuration merge update**
@@ -384,8 +402,8 @@ The following example configuration specifies to upload system logs and `com.exa
 }
 ```
 
-**Example: Configuration to upload multiple active log files using log manager v2.3.1**
-The following example configuration is the recommended example if you want to target multiple active log files. This example configuration specifies what active log files you want to upload to CloudWatch. Using this configuration example configuration will also upload any rotated files that match the `logFileRegex`. This example configuration is supported on log manager v2.3.1.
+**Example: Configuration to upload multiple active log files using Log manager v2.3.1**
+The following example configuration is the recommended example if you want to target multiple active log files. This example configuration specifies what active log files you want to upload to CloudWatch. Using this configuration example configuration will also upload any rotated files that match the `logFileRegex`. This example configuration is supported on Log manager v2.3.1.
 
 ```
 {
@@ -409,9 +427,9 @@ The following example configuration is the recommended example if you want to ta
 #### [ v2.3.6 – v2.3.9 ]
 
 `logsUploaderConfiguration`
-(Optional) The configuration for logs that the log manager component uploads. This object contains the following information:
+(Optional) The configuration for logs that the Log manager component uploads. This object contains the following information:
   `systemLogsConfiguration`
-(Optional) The configuration for AWS IoT Greengrass Core software system logs, which include logs from the [Greengrass nucleus](greengrass-nucleus-component.md) and [plugin components](develop-greengrass-components.md#component-types). Specify this configuration to enable the log manager component to manage system logs. This object contains the following information:
+(Optional) The configuration for AWS IoT Greengrass Core software system logs, which include logs from the [Greengrass nucleus](greengrass-nucleus-component.md) and [plugin components](develop-greengrass-components.md#component-types). Specify this configuration to enable the Log manager component to manage system logs. This object contains the following information:
 `uploadToCloudWatch`  <a name="log-manager-component-configuration-system-upload-to-cloud-watch"></a>
 (Optional) You can upload system logs to CloudWatch Logs.
 Default: `false`
@@ -436,9 +454,9 @@ Default: `KB`
 (Optional) You can delete a log file after the log manager component uploads the logs to CloudWatch Logs.
 Default: `false`
   `componentLogsConfigurationMap`
-(Optional) A map of log configurations for components on the core device. Each `componentName` object in this map defines the log configuration for the component or application. The log manager component uploads these component logs to CloudWatch Logs.
-We strongly recommend using a single configuration key per component. You should only target a group of files that have only one log file that's actively being written to when using the `logFileRegex`. Not following this recommendation may lead to duplicate logs getting uploaded to CloudWatch. If you are targeting multiple active log files with a single regex, we recommend you upgrade to log manager v2.3.1 or later and consider changing your configuration using the [example configuration](#log-manager-multiple-logs-v2.3.1).
-If you're upgrading from a version of log manager earlier than v2.2.0, you can continue to use the `componentLogsConfiguration` list instead of `componentLogsConfigurationMap`. However, we strongly recommend that you use the map format so that you can use merge and reset updates to modify configurations for specific components. For information about the `componentLogsConfiguration` parameter, see the configuration parameters for v2.1.x of this component.
+(Optional) A map of log configurations for components on the core device. Each `componentName` object in this map defines the log configuration for the component or application. The Log manager component uploads these component logs to CloudWatch Logs.
+We strongly recommend using a single configuration key per component. You should only target a group of files that have only one log file that's actively being written to when using the `logFileRegex`. Not following this recommendation may lead to duplicate logs getting uploaded to CloudWatch. If you are targeting multiple active log files with a single regex, we recommend you upgrade to Log manager v2.3.1 or later and consider changing your configuration using the [example configuration](#log-manager-multiple-logs-v2.3.1).
+If you're upgrading from a version of Log manager earlier than v2.2.0, you can continue to use the `componentLogsConfiguration` list instead of `componentLogsConfigurationMap`. However, we strongly recommend that you use the map format so that you can use merge and reset updates to modify configurations for specific components. For information about the `componentLogsConfiguration` parameter, see the configuration parameters for v2.1.x of this component.
 {{`componentName`}}
 The log configuration for the {{`componentName`}} component or application for this log configuration. You can specify the name of a Greengrass component or another value to identify this log group.
 Each object contains the following information:
@@ -483,8 +501,8 @@ Default: `300` (5 minutes)
 Minimum: `0.000001` (1 microsecond)
 
 `deprecatedVersionSupport`
-Indicates whether the log manager should use logging speed improvements introduced in log manager v2.3.5. Set the value to `false` to use the improvements.
-If you set this value to `false` when you upgrade from log manager v2.3.1 or earlier duplicate log entries may be uploaded.
+Indicates whether the Log manager should use logging speed improvements introduced in Log manager v2.3.5. Set the value to `false` to use the improvements.
+If you set this value to `false` when you upgrade from Log manager v2.3.1 or earlier duplicate log entries may be uploaded.
 The default is `true`.
 
 **Example: Configuration merge update**
@@ -514,8 +532,8 @@ The following example configuration specifies to upload system logs and `com.exa
 }
 ```
 
-**Example: Configuration to upload multiple active log files using log manager v2.3.1**
-The following example configuration is the recommended example if you want to target multiple active log files. This example configuration specifies what active log files you want to upload to CloudWatch. Using this configuration example configuration will also upload any rotated files that match the `logFileRegex`. This example configuration is supported on log manager v2.3.1.
+**Example: Configuration to upload multiple active log files using Log manager v2.3.1**
+The following example configuration is the recommended example if you want to target multiple active log files. This example configuration specifies what active log files you want to upload to CloudWatch. Using this configuration example configuration will also upload any rotated files that match the `logFileRegex`. This example configuration is supported on Log manager v2.3.1.
 
 ```
 {
@@ -539,9 +557,9 @@ The following example configuration is the recommended example if you want to ta
 #### [ v2.3.0 – 2.3.5 ]
 
 `logsUploaderConfiguration`
-(Optional) The configuration for logs that the log manager component uploads. This object contains the following information:
+(Optional) The configuration for logs that the Log manager component uploads. This object contains the following information:
   `systemLogsConfiguration`
-(Optional) The configuration for AWS IoT Greengrass Core software system logs, which include logs from the [Greengrass nucleus](greengrass-nucleus-component.md) and [plugin components](develop-greengrass-components.md#component-types). Specify this configuration to enable the log manager component to manage system logs. This object contains the following information:
+(Optional) The configuration for AWS IoT Greengrass Core software system logs, which include logs from the [Greengrass nucleus](greengrass-nucleus-component.md) and [plugin components](develop-greengrass-components.md#component-types). Specify this configuration to enable the Log manager component to manage system logs. This object contains the following information:
 `uploadToCloudWatch`  <a name="log-manager-component-configuration-system-upload-to-cloud-watch"></a>
 (Optional) You can upload system logs to CloudWatch Logs.
 Default: `false`
@@ -566,9 +584,9 @@ Default: `KB`
 (Optional) You can delete a log file after the log manager component uploads the logs to CloudWatch Logs.
 Default: `false`
   `componentLogsConfigurationMap`
-(Optional) A map of log configurations for components on the core device. Each `componentName` object in this map defines the log configuration for the component or application. The log manager component uploads these component logs to CloudWatch Logs.
-We strongly recommend using a single configuration key per component. You should only target a group of files that have only one log file that's actively being written to when using the `logFileRegex`. Not following this recommendation may lead to duplicate logs getting uploaded to CloudWatch. If you are targeting multiple active log files with a single regex, we recommend you upgrade to log manager v2.3.1 and consider changing your configuration using the [example configuration](#log-manager-multiple-logs-v2.3.1).
-If you're upgrading from a version of log manager earlier than v2.2.0, you can continue to use the `componentLogsConfiguration` list instead of `componentLogsConfigurationMap`. However, we strongly recommend that you use the map format so that you can use merge and reset updates to modify configurations for specific components. For information about the `componentLogsConfiguration` parameter, see the configuration parameters for v2.1.x of this component.
+(Optional) A map of log configurations for components on the core device. Each `componentName` object in this map defines the log configuration for the component or application. The Log manager component uploads these component logs to CloudWatch Logs.
+We strongly recommend using a single configuration key per component. You should only target a group of files that have only one log file that's actively being written to when using the `logFileRegex`. Not following this recommendation may lead to duplicate logs getting uploaded to CloudWatch. If you are targeting multiple active log files with a single regex, we recommend you upgrade to Log manager v2.3.1 and consider changing your configuration using the [example configuration](#log-manager-multiple-logs-v2.3.1).
+If you're upgrading from a version of Log manager earlier than v2.2.0, you can continue to use the `componentLogsConfiguration` list instead of `componentLogsConfigurationMap`. However, we strongly recommend that you use the map format so that you can use merge and reset updates to modify configurations for specific components. For information about the `componentLogsConfiguration` parameter, see the configuration parameters for v2.1.x of this component.
 {{`componentName`}}
 The log configuration for the {{`componentName`}} component or application for this log configuration. You can specify the name of a Greengrass component or another value to identify this log group.
 Each object contains the following information:
@@ -638,8 +656,8 @@ The following example configuration specifies to upload system logs and `com.exa
 }
 ```
 
-**Example: Configuration to upload multiple active log files using log manager v2.3.1**
-The following example configuration is the recommended example if you want to target multiple active log files. This example configuration specifies what active log files you want to upload to CloudWatch. Using this configuration example configuration will also upload any rotated files that match the `logFileRegex`. This example configuration is supported on log manager v2.3.1.
+**Example: Configuration to upload multiple active log files using Log manager v2.3.1**
+The following example configuration is the recommended example if you want to target multiple active log files. This example configuration specifies what active log files you want to upload to CloudWatch. Using this configuration example configuration will also upload any rotated files that match the `logFileRegex`. This example configuration is supported on Log manager v2.3.1.
 
 ```
 {
@@ -663,9 +681,9 @@ The following example configuration is the recommended example if you want to ta
 #### [ v2.2.x ]
 
 `logsUploaderConfiguration`
-(Optional) The configuration for logs that the log manager component uploads. This object contains the following information:
+(Optional) The configuration for logs that the Log manager component uploads. This object contains the following information:
   `systemLogsConfiguration`
-(Optional) The configuration for AWS IoT Greengrass Core software system logs, which include logs from the [Greengrass nucleus](greengrass-nucleus-component.md) and [plugin components](develop-greengrass-components.md#component-types). Specify this configuration to enable the log manager component to manage system logs. This object contains the following information:
+(Optional) The configuration for AWS IoT Greengrass Core software system logs, which include logs from the [Greengrass nucleus](greengrass-nucleus-component.md) and [plugin components](develop-greengrass-components.md#component-types). Specify this configuration to enable the Log manager component to manage system logs. This object contains the following information:
 `uploadToCloudWatch`  <a name="log-manager-component-configuration-system-upload-to-cloud-watch"></a>
 (Optional) You can upload system logs to CloudWatch Logs.
 Default: `false`
@@ -690,8 +708,8 @@ Default: `KB`
 (Optional) You can delete a log file after the log manager component uploads the logs to CloudWatch Logs.
 Default: `false`
   `componentLogsConfigurationMap`
-(Optional) A map of log configurations for components on the core device. Each `componentName` object in this map defines the log configuration for the component or application. The log manager component uploads these component logs to CloudWatch Logs.
-If you're upgrading from a version of log manager earlier than v2.2.0, you can continue to use the `componentLogsConfiguration` list instead of `componentLogsConfigurationMap`. However, we strongly recommend that you use the map format so that you can use merge and reset updates to modify configurations for specific components. For information about the `componentLogsConfiguration` parameter, see the configuration parameters for v2.1.x of this component.
+(Optional) A map of log configurations for components on the core device. Each `componentName` object in this map defines the log configuration for the component or application. The Log manager component uploads these component logs to CloudWatch Logs.
+If you're upgrading from a version of Log manager earlier than v2.2.0, you can continue to use the `componentLogsConfiguration` list instead of `componentLogsConfigurationMap`. However, we strongly recommend that you use the map format so that you can use merge and reset updates to modify configurations for specific components. For information about the `componentLogsConfiguration` parameter, see the configuration parameters for v2.1.x of this component.
 {{`componentName`}}
 The log configuration for the {{`componentName`}} component or application for this log configuration. You can specify the name of a Greengrass component or another value to identify this log group.
 Each object contains the following information:
@@ -765,9 +783,9 @@ The following example configuration specifies to upload system logs and `com.exa
 #### [ v2.1.x ]
 
 `logsUploaderConfiguration`
-(Optional) The configuration for logs that the log manager component uploads. This object contains the following information:
+(Optional) The configuration for logs that the Log manager component uploads. This object contains the following information:
  `systemLogsConfiguration`
-(Optional) The configuration for AWS IoT Greengrass Core software system logs, which include logs from the [Greengrass nucleus](greengrass-nucleus-component.md) and [plugin components](develop-greengrass-components.md#component-types). Specify this configuration to enable the log manager component to manage system logs. This object contains the following information:
+(Optional) The configuration for AWS IoT Greengrass Core software system logs, which include logs from the [Greengrass nucleus](greengrass-nucleus-component.md) and [plugin components](develop-greengrass-components.md#component-types). Specify this configuration to enable the Log manager component to manage system logs. This object contains the following information:
 `uploadToCloudWatch`  <a name="log-manager-component-configuration-system-upload-to-cloud-watch"></a>
 (Optional) You can upload system logs to CloudWatch Logs.
 Default: `false`
@@ -792,7 +810,7 @@ Default: `KB`
 (Optional) You can delete a log file after the log manager component uploads the logs to CloudWatch Logs.
 Default: `false`
   `componentLogsConfiguration`
-(Optional) A list of log configurations for components on the core device. Each configuration in this list defines the log configuration for a component or application. The log manager component uploads these component logs to CloudWatch Logs
+(Optional) A list of log configurations for components on the core device. Each configuration in this list defines the log configuration for a component or application. The Log manager component uploads these component logs to CloudWatch Logs
 Each object contains the following information:
 `componentName`  <a name="log-manager-component-configuration-component-component-name"></a>
 The name of the component or application for this log configuration. You can specify the name of a Greengrass component or another value to identify this log group.
@@ -867,9 +885,9 @@ The following example configuration specifies to upload system logs and `com.exa
 #### [ v2.0.x ]
 
 `logsUploaderConfiguration`
-(Optional) The configuration for logs that the log manager component uploads. This object contains the following information:
+(Optional) The configuration for logs that the Log manager component uploads. This object contains the following information:
 `systemLogsConfiguration`
-(Optional) The configuration for AWS IoT Greengrass Core software system logs. Specify this configuration to enable the log manager component to manage system logs. This object contains the following information:
+(Optional) The configuration for AWS IoT Greengrass Core software system logs. Specify this configuration to enable the Log manager component to manage system logs. This object contains the following information:
 `uploadToCloudWatch`  <a name="log-manager-component-configuration-system-upload-to-cloud-watch"></a>
 (Optional) You can upload system logs to CloudWatch Logs.
 Default: `false`
@@ -894,7 +912,7 @@ Default: `KB`
 (Optional) You can delete a log file after the log manager component uploads the logs to CloudWatch Logs.
 Default: `false`
 `componentLogsConfiguration`
-(Optional) A list of log configurations for components on the core device. Each configuration in this list defines the log configuration for a component or application. The log manager component uploads these component logs to CloudWatch Logs
+(Optional) A list of log configurations for components on the core device. Each configuration in this list defines the log configuration for a component or application. The Log manager component uploads these component logs to CloudWatch Logs
 Each object contains the following information:
 `componentName`  <a name="log-manager-component-configuration-component-component-name"></a>
 The name of the component or application for this log configuration. You can specify the name of a Greengrass component or another value to identify this log group.
@@ -919,8 +937,8 @@ Default: `KB`
 The path to the folder that contains this component's log files.
 To upload a Greengrass component's logs, specify **`{{/greengrass/v2}}`/logs**, and replace `{{/greengrass/v2}}` with your Greengrass root folder.
 `logFileRegex`
-A regular expression that specifies the log file name format that the component or application uses. The log manager component uses this regular expression to identify log files in the folder at `logFileDirectoryPath`.
-To upload a Greengrass component's logs, specify a regex that matches the rotated log file names. For example, you might specify **com.example.HelloWorld\\\\w\*.log** to upload logs for a Hello World component. The `\\w*` pattern matches zero or more word characters, which includes alphanumeric characters and underscores. This regex matches log files with and without timestamps in their name. In this example, the log manager uploads the following log files:
+A regular expression that specifies the log file name format that the component or application uses. The Log manager component uses this regular expression to identify log files in the folder at `logFileDirectoryPath`.
+To upload a Greengrass component's logs, specify a regex that matches the rotated log file names. For example, you might specify **com.example.HelloWorld\\\\w\*.log** to upload logs for a Hello World component. The `\\w*` pattern matches zero or more word characters, which includes alphanumeric characters and underscores. This regex matches log files with and without timestamps in their name. In this example, the Log manager uploads the following log files:
 + `com.example.HelloWorld.log` – The most recent log file for the Hello World component.
 + `com.example.HelloWorld_2020_12_15_17_0.log` – An older log file for the Hello World component. The Greengrass nucleus adds a rotating timestamp to the log files.
 `deleteLogFileAfterCloudUpload`  <a name="log-manager-component-configuration-delete-log-file-after-cloud-upload"></a>
@@ -969,7 +987,7 @@ The following example configuration specifies to upload system logs and `com.exa
 ## Usage
 <a name="log-manager-component-usage"></a>
 
-The log manager component uploads to the following log groups and log streams.
+The Log manager component uploads to the following log groups and log streams.
 
 ------
 #### [ 2.1.0 and later ]<a name="log-manager-log-group-stream-format"></a>
@@ -1009,7 +1027,7 @@ If a thing name contains a colon (`:`), the log manager replaces the colon with 
 The log group name uses the following variables:
 + `componentType` – The type of the component, which can be one of the following:
   + `GreengrassSystemComponent` – The component is part of the [Greengrass nucleus](greengrass-nucleus-component.md).
-  + `UserComponent` – The component isn't part of the Greengrass nucleus. The log manager uses this type for Greengrass components and other applications on the device.
+  + `UserComponent` – The component isn't part of the Greengrass nucleus. The Log manager uses this type for Greengrass components and other applications on the device.
 + `region` – The AWS Region that the core device uses.
 + `componentName` – The name of the component. For system logs, this value is `System`.
 
@@ -1019,8 +1037,8 @@ The log group name uses the following variables:
 /{{date}}/{{deploymentTargets}}/{{thingName}}
 ```
 The log stream name uses the following variables:
-+ `date` – The date of the log, such as `2020/12/15`. The log manager component uses the `yyyy/MM/dd` format.
-+ `deploymentTargets` – The things whose deployments include the component. The log manager component separates each target by a slash. If the component runs on the core device as the result of a local deployment, this value is `LOCAL_DEPLOYMENT`.
++ `date` – The date of the log, such as `2020/12/15`. The Log manager component uses the `yyyy/MM/dd` format.
++ `deploymentTargets` – The things whose deployments include the component. The Log manager component separates each target by a slash. If the component runs on the core device as the result of a local deployment, this value is `LOCAL_DEPLOYMENT`.
 
   Consider an example where you have a core device named `MyGreengrassCore`, and the core device has two deployments:
   + A deployment that targets the core device, `MyGreengrassCore`.
@@ -1109,10 +1127,11 @@ The following table describes the changes in each version of the component.
 
 |  **Version**  |  **Changes**  |
 | --- | --- |
+| 2.3.14 |  **Bug fixes and improvements**<br />   Fixes an issue where logs with multibyte UTF-8 characters (such as Japanese, Chinese, or emoji) cause duplicate uploads to Amazon CloudWatch.     |
 | 2.3.13 | Updates the component version for the Greengrass nucleus version 2.18.0 release. |
 | 2.3.12 | Updates the component version for the Greengrass nucleus version 2.17.0 release. |
-| 2.3.11 |  **Bug fixes and improvements**<br />   Fixes an issue where Log Manager runtime configuration grew indefinitely with stale information of uploaded log files.     |
-| 2.3.10 |  **New features**<br />   Adds a new configuration key (`updateToTlogIntervalSec`) to control the frequency at which log-upload event details are persisted to the local transaction log (`config.tlog`).   <br />**Bug fixes and improvements**<br />   Improves log manager to refresh cloudwatch client for socket connection error.     |
+| 2.3.11 |  **Bug fixes and improvements**<br />   Fixes an issue where Log manager runtime configuration grew indefinitely with stale information of uploaded log files.     |
+| 2.3.10 |  **New features**<br />   Adds a new configuration key (`updateToTlogIntervalSec`) to control the frequency at which log-upload event details are persisted to the local transaction log (`config.tlog`).   <br />**Bug fixes and improvements**<br />   Improves Log manager to refresh cloudwatch client for socket connection error.     |
 | 2.3.9 | Version updated for Greengrass nucleus version 2.14.0 release. |
 | 2.3.8 | Version updated for Greengrass nucleus version 2.13.0 release. |
 | 2.3.7 | Version updated for Greengrass nucleus version 2.12.0 release. |
@@ -1122,14 +1141,14 @@ The following table describes the changes in each version of the component.
 | 2.3.3 | Version updated for Greengrass nucleus version 2.10.0 release. |
 | 2.3.2 |  **Bug fixes and improvements**<br />   Improves space management so that log files are not deleted before they are uploaded.   Fixes issues with cache management.   Additional minor bug fixes and improvements.     |
 | 2.3.1 |  **Bug fixes and improvements**<br />   Fixes an issue where s that target file groups with multiples active log files upload duplicate entries to CloudWatch.   Additional minor bug fixes and improvements.     |
-| 2.3.0 |  We recommend that you upgrade to Greengrass nucleus 2.9.1 when you upgrade to log manager 2.3.0. **New features**<br /> Reduces log delays by processing and directly uploading active log files instead of waiting for new files to be rotated. <br />**Bug fixes and improvements**<br />   Improves support of log rotation when rotating files with a unique name.   Additional minor bug fixes and improvements.    |
+| 2.3.0 |  We recommend that you upgrade to Greengrass nucleus 2.9.1 when you upgrade to Log manager 2.3.0. **New features**<br /> Reduces log delays by processing and directly uploading active log files instead of waiting for new files to be rotated. <br />**Bug fixes and improvements**<br />   Improves support of log rotation when rotating files with a unique name.   Additional minor bug fixes and improvements.    |
 | 2.2.8 | Version updated for Greengrass nucleus version 2.9.0 release. |
 | 2.2.7 | Version updated for Greengrass nucleus version 2.8.0 release. |
 | 2.2.6 | Version updated for Greengrass nucleus version 2.7.0 release. |
 | 2.2.5 | Version updated for Greengrass nucleus version 2.6.0 release. |
 | 2.2.4 |  **Bug fixes and improvements**<br />   Improves stability when handling invalid configurations.   Additional minor fixes and improvements.     |
 | 2.2.3 |  **Bug fixes and improvements**<br />   Improves stability in certain scenarios where the component restarts or encounters errors.   Fixes issues where large log messages and large log files fail to upload in certain scenarios.   Fixes issues with how this component handles configuration reset updates.   Fixes an issue where a `null` `diskSpaceLimit` configuration value prevented the component from deploying.     |
-| 2.2.2 |  **Bug fixes and improvements**<br />   Adds support for log messages that are larger than 256 kilobytes. The log manager component splits these large log messages into multiple messages with the same log event timestamp.     |
+| 2.2.2 |  **Bug fixes and improvements**<br />   Adds support for log messages that are larger than 256 kilobytes. The Log manager component splits these large log messages into multiple messages with the same log event timestamp.     |
 | 2.2.1 | Version updated for Greengrass nucleus version 2.5.0 release. |
 | 2.2.0 |  **New feature**<br />   Adds the `componentLogsConfigurationMap` configuration parameter to support a map format for component log configurations. Each `componentName` object in the map defines the log configuration for a component or application.     |
 | 2.1.3 | Version updated for Greengrass nucleus version 2.4.0 release. |

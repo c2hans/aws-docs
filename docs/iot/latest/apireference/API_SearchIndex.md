@@ -45,7 +45,7 @@ Pattern: `[a-zA-Z0-9:_-]+`
 Required: No
 
  ** [maxResults](#API_SearchIndex_RequestSyntax) **   <a name="iot-SearchIndex-request-maxResults"></a>
-The maximum number of results to return per page at one time. This maximum number cannot exceed 100. The response might contain fewer results but will never contain more. You can use [https://docs.aws.amazon.com/iot/latest/apireference/API_SearchIndex.html#iot-SearchIndex-request-nextToken](https://docs.aws.amazon.com/iot/latest/apireference/API_SearchIndex.html#iot-SearchIndex-request-nextToken) to retrieve the next set of results until `nextToken` returns `NULL`.
+The maximum number of results to return per page at one time. This maximum number cannot exceed 100. The response might contain fewer results but will never contain more. You can use [`nextToken`](https://docs.aws.amazon.com/iot/latest/apireference/API_SearchIndex.html#iot-SearchIndex-request-nextToken) to retrieve the next set of results until `nextToken` returns `NULL`.
 Type: Integer
 Valid Range: Minimum value of 1.
 Required: No

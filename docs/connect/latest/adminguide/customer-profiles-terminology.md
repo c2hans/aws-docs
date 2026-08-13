@@ -14,7 +14,7 @@ A standard profile object contains standard fields, such as phone numbers, email
 **Profile object**  <a name="ProfileObject"></a>
 A *profile object* is a single unit of information known about a profile. For example, the information about a phone call, a ticket, a case, or even a choose-stream record from a web site.
 A single profile object can be up to 250 KB and can be any structured JSON document.
-+ Every profile object has a type. For example, the profile object can be an Connect Customer contact record, ServiceNow Users, or Marketo Leads.
++ Every profile object has a type. For example, the profile object can be a Connect Customer contact record, ServiceNow Users, or Marketo Leads.
 + The type refers to the object type mapping.
 + The object type mapping defines how that specific object should be ingested into Customer Profiles.
 

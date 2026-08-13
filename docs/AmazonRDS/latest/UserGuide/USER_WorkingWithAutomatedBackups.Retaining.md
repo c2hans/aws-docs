@@ -45,7 +45,7 @@ To describe your retained automated backups using the AWS CLI, use the following
 aws rds describe-db-instance-automated-backups --dbi-resource-id {{DbiResourceId}}
 ```
 
-To describe your retained automated backups using the RDS API, call the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstanceAutomatedBackups.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstanceAutomatedBackups.html) action with the `DbiResourceId` parameter.
+To describe your retained automated backups using the RDS API, call the [`DescribeDBInstanceAutomatedBackups`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstanceAutomatedBackups.html) action with the `DbiResourceId` parameter.
 
 ## Restoration
 <a name="USER_WorkingWithAutomatedBackups.Restoration"></a>

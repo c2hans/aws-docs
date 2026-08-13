@@ -87,7 +87,7 @@ SSM Agent won't work if it can't communicate with the preceding endpoints, as de
 ## Verify your VPC configuration
 <a name="agent-ts-vpc-configuration"></a>
 
-If you are using a virtual private cloud (VPC), in order to manage EC2 instances with Systems Manager, your VPC endpoints must be configured properly for `ssm.{{region}}.amazonaws.com`, `ssmmessages.{{region}}.amazonaws.com`, and in some cases explained earlier in this topic in [Unable to connect to SSM endpoints](#systems-manager-ssm-agent-troubleshooting-endpoint-access), `ec2messages.{{region}}.amazonaws.com`.
+If you are using a virtual private cloud (VPC), to manage EC2 instances with Systems Manager, your VPC endpoints must be configured properly for `ssm.{{region}}.amazonaws.com`, `ssmmessages.{{region}}.amazonaws.com`, and in some cases explained earlier in this topic in [Unable to connect to SSM endpoints](#systems-manager-ssm-agent-troubleshooting-endpoint-access), `ec2messages.{{region}}.amazonaws.com`.
 
 **Note**
 The alternative to using a VPC endpoint is to allow outbound internet access on your managed instances. In this case, the managed instances must also allow HTTPS (port 443) outbound traffic to the following endpoints:
@@ -98,19 +98,19 @@ SSM Agent initiates all connections to the Systems Manager service in the cloud.
 For more information about calls to these endpoints, see [Reference: ec2messages, ssmmessages, and other API operations](systems-manager-setting-up-messageAPIs.md).
 
 To troubleshoot issues with your VPC endpoints, do the following:
-+ Ensure that VPC endpoints are included at the VPC level. If the VPC endpoint with a specific service name is not found on the VPC, first verify that DNS support is enabled at the VPC level. Next, create a new VPC endpoint and associate it with one subnet in each Availability Zone.
-+ Ensure that a private DNS name is enabled at the VPC endpoint level. Private DNS names are enabled by default but might have been manually disabled at some point.
-+ Ensure that existing VPC endpoints are associated with the proper subnet. In addition, ensure that the VPCE is already associated with a subnet in that Availability Zone.
++ Make sure that VPC endpoints are included at the VPC level. If the VPC endpoint with a specific service name is not found on the VPC, first verify that DNS support is enabled at the VPC level. Next, create a new VPC endpoint and associate it with one subnet in each Availability Zone.
++ Make sure that a private DNS name is enabled at the VPC endpoint level. Private DNS names are enabled by default but might have been manually disabled at some point.
++ Make sure that existing VPC endpoints are associated with the proper subnet. In addition, make sure that the VPCE is already associated with a subnet in that Availability Zone.
 
 For more information, see the following topics:
-+ [Access an AWS service using an interface VPC endpoint](https://docs.aws.amazon.com//vpc/latest/privatelink/create-interface-endpoint.html) in the *AWS PrivateLink Guide*
++ [Access an AWS service using an interface VPC endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) in the *AWS PrivateLink Guide*
 + [Associate a private DNS name](https://docs.aws.amazon.com/vpc/latest/privatelink/configure-endpoint-service.html#associate-private-dns-name) in the *AWS PrivateLink Guide*
 + [Improve the security of EC2 instances by using VPC endpoints for Systems Manager](setup-create-vpc.md)
 
 ## Verify your VPC DNS-related attributes
 <a name="agent-ts-dns-attributes"></a>
 
-If you are using a virtual private cloud (VPC), as part of verifying your VPC configuration, ensure that the attributes `enableDnsSupport` and `enableDnsHostnames` are enabled.
+If you are using a virtual private cloud (VPC), as part of verifying your VPC configuration, make sure that the attributes `enableDnsSupport` and `enableDnsHostnames` are enabled.
 
 You can enable these attributes using the Amazon EC2 [ModifyVPCAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpcAttribute.html) API action or the AWS CLI command [modify-vpc-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-vpc-attribute.html).
 
@@ -127,7 +127,7 @@ For more information about calls to these endpoints, see [Reference: ec2messages
 ## Verify ingress rules on endpoint security groups
 <a name="agent-ts-ingress-egress-rules"></a>
 
-Ensure that any VPC endpoints you have configured (`ssm`, `ssmmessages`, and `ec2messages`) include an ingress rule on their security groups to allow traffic in on port 443. If necessary, you can create a new security group in the VPC with an ingress rule to allow traffic on port 443 for the Classless Inter-Domain Routing (CIDR) block for the VPC. After you create the security group, attach it to each VPC endpoint.
+Make sure that any VPC endpoints you have configured (`ssm`, `ssmmessages`, and `ec2messages`) include an ingress rule on their security groups to allow traffic in on port 443. If necessary, you can create a new security group in the VPC with an ingress rule to allow traffic on port 443 for the Classless Inter-Domain Routing (CIDR) block for the VPC. After you create the security group, attach it to each VPC endpoint.
 
 For more information, see the following topics:
 + [How do I create VPC endpoints so that I can use Systems Manager to manage private EC2 instances without internet access?](https://repost.aws/knowledge-center/ec2-systems-manager-vpc-endpoints) on AWS re:Post

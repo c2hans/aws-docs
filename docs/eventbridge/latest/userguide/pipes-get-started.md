@@ -84,7 +84,7 @@ Choosing this option prevents you from possibly being billed for resources whose
 **Create the stack using CloudFormation (AWS CLI)**
 
 You can also use the AWS CLI to create the stack.
-+ Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command.
++ Use the [`create-stack`](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command.
   + Accept the default template parameter values, specifying the stack name. Use the `template-body` parameter to pass the template contents, or `template-url` to specify a URL location.
 
     ```
@@ -224,10 +224,10 @@ The CloudFormation template for this tutorial will create the following resource
 
 **Important**
 You will be billed for the Amazon resources used if you create a stack from this template.
-+ [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html): A DynamoDB table that acts as the event source for the pipe.
-+ [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sqs-queue.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sqs-queue.html): An Amazon SQS queue that acts as the target for the events flowing through the pipe.
-+ [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html): An IAM execution role granting permissions to the EventBridge Pipes service in your account.
-+ [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pipes-pipe.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pipes-pipe.html): The pipe connecting the DynamoDB table to the Amazon SQS queue.
++ [`AWS::DynamoDB::Table`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html): A DynamoDB table that acts as the event source for the pipe.
++ [`AWS::SQS::Queue`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sqs-queue.html): An Amazon SQS queue that acts as the target for the events flowing through the pipe.
++ [`AWS::IAM::Role`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html): An IAM execution role granting permissions to the EventBridge Pipes service in your account.
++ [`AWS::Pipes::Pipe`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pipes-pipe.html): The pipe connecting the DynamoDB table to the Amazon SQS queue.
 
 ### Permissions
 <a name="pipes-get-started-template-perms"></a>

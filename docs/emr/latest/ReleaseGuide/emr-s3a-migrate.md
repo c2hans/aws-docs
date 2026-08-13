@@ -116,7 +116,7 @@ The following EMRFS configurations have been identified as unsupported or obsole
   <tr><th>EMRFS Config Name</th><th>Reason For Not Supporting</th></tr>
 </thead>
 <tbody>
-  <tr><td>fs.s3.consistent</td><td rowspan="30">Amazon S3 delivers [strong read-after-write consistency](https://aws.amazon.com/blogs/aws/amazon-s3-update-strong-read-after-write-consistency/) and hence EMRFS consistent view feature is not required.</td></tr>
+  <tr><td>fs.s3.consistent</td><td rowspan="30">Amazon S3 delivers <a href="https://aws.amazon.com/blogs/aws/amazon-s3-update-strong-read-after-write-consistency/">strong read-after-write consistency</a> and hence EMRFS consistent view feature is not required.</td></tr>
   <tr><td>fs.s3.consistent.dynamodb.endpoint</td></tr>
   <tr><td>fs.s3.consistent.fastFirstRetrySeconds</td></tr>
   <tr><td>fs.s3.consistent.fastList</td></tr>
@@ -150,7 +150,7 @@ The following EMRFS configurations have been identified as unsupported or obsole
   <tr><td>fs.s3.cse.cryptoStorageMode.deleteInstructionFiles.enabled</td></tr>
   <tr><td>fs.s3.cse.encryptionV2.enabled</td></tr>
   <tr><td>fs.s3.cse.materialsDescription.enabled</td></tr>
-  <tr><td>fs.s3.multipart.clean.age.threshold</td><td rowspan="2">Periodically Clean Up Of Incomplete Multi Part Upload (MPU) is not available with S3A - Instead configure S3 [bucket life cycle policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html) to clean up dangling MPUs.</td></tr>
+  <tr><td>fs.s3.multipart.clean.age.threshold</td><td rowspan="2">Periodically Clean Up Of Incomplete Multi Part Upload (MPU) is not available with S3A - Instead configure S3 <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html">bucket life cycle policy</a> to clean up dangling MPUs.</td></tr>
   <tr><td>fs.s3.multipart.clean.enabled</td></tr>
   <tr><td>fs.s3.multipart.clean.jitter.max</td><td rowspan="4">The feature was added to avoid multi-part upload threads getting stuck or slow. S3A does not exihit similar issue and hence not required.</td></tr>
   <tr><td>fs.s3.multipart.fraction.part.avg.completion.time</td></tr>

@@ -30,14 +30,14 @@ The body of the response contains one **response** element containing the follow
   <tr><th>Tag</th><th>Sub-tag</th><th>Type</th><th>Value</th></tr>
 </thead>
 <tbody>
-  <tr><td>tag</td><td> </td><td>integer</td><td>A unique ID that could be used in the event\_id in a new request to insert a splice\_insert. See the explanation below this table.</td></tr>
-  <tr><td>splice\_time</td><td>hours</td><td>integer</td><td rowspan="4">The time (and frame) associated with the event at the moment that the API request was processed. Time is in 24-hour format. For general information about timecodes in events, see [About timecode configuration and timers](processing-options.md#about-timecode-configuration-and-timers).</td></tr>
+  <tr><td>tag</td><td> </td><td>integer</td><td>A unique ID that could be used in the event_id in a new request to insert a splice_insert. See the explanation below this table.</td></tr>
+  <tr><td>splice_time</td><td>hours</td><td>integer</td><td rowspan="4">The time (and frame) associated with the event at the moment that the API request was processed. Time is in 24-hour format. For general information about timecodes in events, see <a href="processing-options.md#about-timecode-configuration-and-timers">About timecode configuration and timers</a>.</td></tr>
   <tr><td> </td><td>minutes</td><td>integer</td></tr>
   <tr><td> </td><td>seconds</td><td>integer</td></tr>
   <tr><td> </td><td>frames</td><td>integer</td></tr>
   <tr><td>message</td><td> </td><td>string</td><td>A description of the time: the presentation timestamp (PTS) of the time and the time in NTP.</td></tr>
-  <tr><td>splice\_offset</td><td> </td><td> </td><td>Always 0. See the explanation below this table.</td></tr>
-  <tr><td>value</td><td> </td><td>string</td><td>Always “cue\_point.”</td></tr>
+  <tr><td>splice_offset</td><td> </td><td> </td><td>Always 0. See the explanation below this table.</td></tr>
+  <tr><td>value</td><td> </td><td>string</td><td>Always “cue_point.”</td></tr>
 </tbody>
 </table>
 

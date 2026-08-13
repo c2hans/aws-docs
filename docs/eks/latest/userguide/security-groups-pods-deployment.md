@@ -25,7 +25,7 @@ If you use Fargate Pods only, and don’t have any Amazon EC2 nodes in your clus
    v1.7.6
    ```
 
-   If your Amazon VPC CNI plugin for Kubernetes version is earlier than `1.7.7`, then update the plugin to version `1.7.7` or later. For more information, see [Assign IPs to Pods with the Amazon VPC CNI](managing-vpc-cni.md)
+   If your Amazon VPC CNI plugin for Kubernetes version is earlier than `1.7.7`, then update the plugin to version `1.7.7` or later. For more information, see [Assign IPs to Pods with the Amazon VPC CNI](managing-vpc-cni.md).
 
 1. Add the [AmazonEKSVPCResourceController](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AmazonEKSVPCResourceController) managed IAM policy to the [cluster role](cluster-iam-role.md#create-service-role) that is associated with your Amazon EKS cluster. The policy allows the role to manage network interfaces and their private IP addresses, and to attach and detach the network interfaces to and from instances.
 

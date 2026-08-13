@@ -47,7 +47,7 @@ You can enable Amazon CloudWatch Logs log forwarding for your AWS Managed Micros
 ## Using the CLI or PowerShell to enable Amazon CloudWatch Logs log forwarding
 <a name="enable_log_forwarding_with_cli"></a>
 
-Before you can use the [https://docs.aws.amazon.com/cli/latest/reference/ds/create-log-subscription.html](https://docs.aws.amazon.com/cli/latest/reference/ds/create-log-subscription.html) command, you must first create an Amazon CloudWatch log group and then create an IAM resource policy that will grant the necessary permission to that group. To enable log forwarding using the CLI or PowerShell, complete the following steps.
+Before you can use the [`ds create-log-subscription`](https://docs.aws.amazon.com/cli/latest/reference/ds/create-log-subscription.html) command, you must first create an Amazon CloudWatch log group and then create an IAM resource policy that will grant the necessary permission to that group. To enable log forwarding using the CLI or PowerShell, complete the following steps.
 
 ### Step 1: Create a log group in CloudWatch Logs
 <a name="step1_create_log_group"></a>

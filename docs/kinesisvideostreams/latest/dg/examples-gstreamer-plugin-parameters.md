@@ -126,7 +126,7 @@ To use it in `kvssink`, type:
 ```
 gst-launch-1.0 -v ... ! kvssink stream-name="{{YourStream}}" aws-region="{{YourRegion}}" credential-path="/home/ubuntu/{{credentials}}.txt"
 ```
-The expiration time should be at least 5 \+ 30 \+ 3 = **38** seconds in the future. The grace period is defined as the `IOT_CREDENTIAL_FETCH_GRACE_PERIOD` variable in [https://github.com/awslabs/amazon-kinesis-video-streams-producer-c/blob/master/src/source/Common/IotCredentialProvider.h](https://github.com/awslabs/amazon-kinesis-video-streams-producer-c/blob/master/src/source/Common/IotCredentialProvider.h). If the credentials are too close to the expiration when you start `kvssink`, you receive the error code `0x52000049 - STATUS_INVALID_TOKEN_EXPIRATION`.
+The expiration time should be at least 5 \+ 30 \+ 3 = **38** seconds in the future. The grace period is defined as the `IOT_CREDENTIAL_FETCH_GRACE_PERIOD` variable in [`IotCredentialProvider.h`](https://github.com/awslabs/amazon-kinesis-video-streams-producer-c/blob/master/src/source/Common/IotCredentialProvider.h). If the credentials are too close to the expiration when you start `kvssink`, you receive the error code `0x52000049 - STATUS_INVALID_TOKEN_EXPIRATION`.
 `kvssink` doesn't modify the credentials file. If you're using temporary credentials, the credentials file must be updated by an outside source before the expiration time minus the grace period.
 
 ## Provide a region to `kvssink`

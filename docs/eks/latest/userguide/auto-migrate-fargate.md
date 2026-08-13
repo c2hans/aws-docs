@@ -303,7 +303,7 @@ aws eks delete-fargate-profile --cluster-name eks-fargate-demo-cluster --fargate
 ## Step 6: Scale down CoreDNS
 <a name="_step_6_scale_down_coredns"></a>
 
-Because EKS Auto Mode handles CoreDNS, you scale the `coredns` deployment down to 0:
+Because EKS Auto Mode handles CoreDNS, scale the `coredns` deployment down to 0:
 
 ```
 kubectl scale deployment coredns -n kube-system --replicas=0

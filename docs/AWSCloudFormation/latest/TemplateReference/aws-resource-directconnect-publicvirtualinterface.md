@@ -32,6 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[AllocatePublicVirtualInterfaceRoleArn](#cfn-directconnect-publicvirtualinterface-allocatepublicvirtualinterfacerolearn)" : {{String}},
       "[BgpPeers](#cfn-directconnect-publicvirtualinterface-bgppeers)" : {{[ BgpPeer, ... ]}},
       "[ConnectionId](#cfn-directconnect-publicvirtualinterface-connectionid)" : {{String}},
+      "[RateLimit](#cfn-directconnect-publicvirtualinterface-ratelimit)" : {{String}},
       "[RouteFilterPrefixes](#cfn-directconnect-publicvirtualinterface-routefilterprefixes)" : {{[ String, ... ]}},
       "[Tags](#cfn-directconnect-publicvirtualinterface-tags)" : {{[ Tag, ... ]}},
       "[VirtualInterfaceName](#cfn-directconnect-publicvirtualinterface-virtualinterfacename)" : {{String}},
@@ -50,6 +51,7 @@ Properties:
   [BgpPeers](#cfn-directconnect-publicvirtualinterface-bgppeers): {{
     - BgpPeer}}
   [ConnectionId](#cfn-directconnect-publicvirtualinterface-connectionid): {{String}}
+  [RateLimit](#cfn-directconnect-publicvirtualinterface-ratelimit): {{String}}
   [RouteFilterPrefixes](#cfn-directconnect-publicvirtualinterface-routefilterprefixes): {{
     - String}}
   [Tags](#cfn-directconnect-publicvirtualinterface-tags): {{
@@ -85,6 +87,13 @@ Connectivity over the virtual interface will be interrupted while associating to
 *Type*: String
 *Pattern*: `^((arn:aws[a-z-]*:directconnect:[a-z0-9-]+:[0-9]{12}:(dxcon/dxcon|dxlag/dxlag))|dx(con|lag))-[a-z0-9A-Z]{8,21}$`
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
+
+`RateLimit`  <a name="cfn-directconnect-publicvirtualinterface-ratelimit"></a>
+The rate limit (bandwidth allocation) to apply to the virtual interface. The rate limit restricts the maximum bandwidth that the virtual interface can use on the parent connection.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9]+\.?[0-9]*(Mbps|Gbps|Tbps)$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RouteFilterPrefixes`  <a name="cfn-directconnect-publicvirtualinterface-routefilterprefixes"></a>
 The routes to be advertised to the AWS network in this Region. Applies to public virtual interfaces.
@@ -123,14 +132,14 @@ The ID of the VLAN.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the public virtual interface.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-directconnect-publicvirtualinterface-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-directconnect-publicvirtualinterface-return-values-fn--getatt-fn--getatt"></a>

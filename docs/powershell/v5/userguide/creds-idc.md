@@ -6,7 +6,7 @@ Version 5 (V5) of the AWS Tools for PowerShell has been released\!
 
 For information about breaking changes and migrating your applications, see the [migration topic](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html).
 
- [https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
+ [![Orange button with text "Click here for details".](http://docs.aws.amazon.com/powershell/v5/userguide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
 
 # Authenticating the AWS Tools for PowerShell with AWS
 <a name="creds-idc"></a>
@@ -192,7 +192,7 @@ To use AWS IAM Identity Center, it must first be enabled and configured. To see 
 <a name="idc-config-sdk"></a>
 
 **Note**
-Starting with version 4.1.538 of the Tools for PowerShell, the recommended method to configure SSO credentials and start an AWS access portal session is to use the [https://docs.aws.amazon.com/powershell/v5/reference/index.html?page=Initialize-AWSSSOConfiguration.html&tocid=Initialize-AWSSSOConfiguration](https://docs.aws.amazon.com/powershell/v5/reference/index.html?page=Initialize-AWSSSOConfiguration.html&tocid=Initialize-AWSSSOConfiguration) and [https://docs.aws.amazon.com/powershell/v5/reference/index.html?page=Invoke-AWSSSOLogin.html&tocid=Invoke-AWSSSOLogin](https://docs.aws.amazon.com/powershell/v5/reference/index.html?page=Invoke-AWSSSOLogin.html&tocid=Invoke-AWSSSOLogin) cmdlets, as described in this topic. If you don't have access to that version of the Tools for PowerShell (or later) or can't use those cmdlets, you can still perform these tasks by using the AWS CLI. To find out how, see [Use the AWS CLI for portal login](creds-idc-cli.md).
+Starting with version 4.1.538 of the Tools for PowerShell, the recommended method to configure SSO credentials and start an AWS access portal session is to use the [`Initialize-AWSSSOConfiguration`](https://docs.aws.amazon.com/powershell/v5/reference/index.html?page=Initialize-AWSSSOConfiguration.html&tocid=Initialize-AWSSSOConfiguration) and [`Invoke-AWSSSOLogin`](https://docs.aws.amazon.com/powershell/v5/reference/index.html?page=Invoke-AWSSSOLogin.html&tocid=Invoke-AWSSSOLogin) cmdlets, as described in this topic. If you don't have access to that version of the Tools for PowerShell (or later) or can't use those cmdlets, you can still perform these tasks by using the AWS CLI. To find out how, see [Use the AWS CLI for portal login](creds-idc-cli.md).
 
 The following procedure updates the shared AWS `config` file with SSO information that the Tools for PowerShell uses to obtain temporary credentials. As a consequence of this procedure, an AWS access portal session is also started. If the shared `config` file already has SSO information and you just want to know how to start an access portal session using the Tools for PowerShell, see the next section in this topic, [Start an AWS access portal session](#idc-start-portal).
 

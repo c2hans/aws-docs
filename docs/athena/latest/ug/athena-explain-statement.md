@@ -520,8 +520,8 @@ For additional information, see the following resources.
 +  [Understand Athena EXPLAIN statement results](athena-explain-statement-understanding.md)
 +  [View execution plans for SQL queries](query-plans.md)
 +  [View statistics and execution details for completed queries](query-stats.md)
-+ Trino [https://trino.io/docs/current/sql/explain.html](https://trino.io/docs/current/sql/explain.html) documentation
-+ Trino [https://trino.io/docs/current/sql/explain-analyze.html](https://trino.io/docs/current/sql/explain-analyze.html) documentation
++ Trino [`EXPLAIN`](https://trino.io/docs/current/sql/explain.html) documentation
++ Trino [`EXPLAIN ANALYZE`](https://trino.io/docs/current/sql/explain-analyze.html) documentation
 +  [Optimize Federated Query Performance using EXPLAIN and EXPLAIN ANALYZE in Amazon Athena](https://aws.amazon.com/blogs/big-data/optimize-federated-query-performance-using-explain-and-explain-analyze-in-amazon-athena/) in the *AWS Big Data Blog*.
 
 [![AWS Videos](http://img.youtube.com/vi/7JUyTqglmNU/0.jpg)](http://www.youtube.com/watch?v=7JUyTqglmNU)

@@ -9,7 +9,7 @@ Clients can use the `Sec-WebSocket-Protocol` field to request a [WebSocket subpr
 
 The following example Lambda function returns the `Sec-WebSocket-Protocol` header to clients. The function establishes a connection to your API only if the client specifies the `myprotocol` subprotocol.
 
-For an CloudFormation template that creates this example API and Lambda proxy integration, see [samples/ws-subprotocol.zip](samples/ws-subprotocol.zip).
+For an CloudFormation template that creates this example API and Lambda proxy integration, see [`ws-subprotocol.yaml`](samples/ws-subprotocol.zip).
 
 ```
 export const handler = async (event) => {
@@ -48,7 +48,7 @@ function toLowerCaseProperties(obj) {
 }
 ```
 
-You can use [https://www.npmjs.com/package/wscat](https://www.npmjs.com/package/wscat) to test that your API allows connections only if a client requests a subprotocol that your API supports. The following commands use the `-s` flag to specify subprotocols during the connection.
+You can use [`wscat`](https://www.npmjs.com/package/wscat) to test that your API allows connections only if a client requests a subprotocol that your API supports. The following commands use the `-s` flag to specify subprotocols during the connection.
 
 The following command attempts a connection with an unsupported subprotocol. Because the client specified the `chat1` subprotocol, the Lambda integration returns a 400 error, and the connection is unsuccessful.
 

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/GetLexiconSample.html
 
 The following Java code sample show how to use Java-based applications to produce the content of a specific pronunciation lexicon stored in a AWS Region.
 
-For more information on this operation, see the reference for the [https://docs.aws.amazon.com/polly/latest/APIReference/API_GetLexicon.html](https://docs.aws.amazon.com/polly/latest/APIReference/API_GetLexicon.html) API.
+For more information on this operation, see the reference for the [`GetLexicon`](https://docs.aws.amazon.com/polly/latest/APIReference/API_GetLexicon.html) API.
 
 ## SDK v2
 <a name="get-sdk-v2"></a>

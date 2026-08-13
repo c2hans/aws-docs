@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 # Investigate operational issues in your environment
 <a name="Investigations-Investigate"></a>
 
-You can create investigations in several ways depending on your workflow and the source of the issue you're investigating. Once an investigation is active, you can review AI-generated suggestions, accept or discard findings, and take remediation actions through automated runbooks.
+You can create investigations in several ways depending on your workflow and the source of the issue you're investigating. After an investigation is active, you can review AI-generated suggestions, accept or discard findings, and take remediation actions through automated runbooks.
 
 The following procedures show you how to start investigations from different entry points and how to work with active investigations:
 

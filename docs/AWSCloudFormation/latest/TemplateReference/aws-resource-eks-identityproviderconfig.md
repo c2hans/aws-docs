@@ -93,14 +93,14 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 
 For the IdentityProviderConfig, Ref returns the physical resource ID of the config. For example, `cluster-name/oidc/identity-provider-config-name`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-eks-identityproviderconfig-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-eks-identityproviderconfig-return-values-fn--getatt-fn--getatt"></a>
@@ -121,7 +121,7 @@ If CloudFormation attempts to create both resources at the same time, resource c
 ### Create an identity provider config
 <a name="aws-resource-eks-identityproviderconfig--examples--Create_an_identity_provider_config"></a>
 
-The following example creates a an identity provider config. If you're not creating an `EKSFargateProfile` in the same template, remove the `"DependsOn"` line in the following example. For more information, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-fargateprofile.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-fargateprofile.html).
+The following example creates a an identity provider config. If you're not creating an `EKSFargateProfile` in the same template, remove the `"DependsOn"` line in the following example. For more information, see [`AWS::EKS::FargateProfile`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-fargateprofile.html).
 
 #### JSON
 <a name="aws-resource-eks-identityproviderconfig--examples--Create_an_identity_provider_config--json"></a>

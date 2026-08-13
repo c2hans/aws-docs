@@ -43,7 +43,7 @@ Storage optimization can take several hours. After storage optimization complete
 ## AWS CLI
 <a name="USER_PIOPS.ModifyingExisting.cli"></a>
 
-To increase the storage for a DB instance, use the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html). Set the following parameters:
+To increase the storage for a DB instance, use the AWS CLI command [`modify-db-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html). Set the following parameters:
 + `--allocated-storage` – Amount of storage to be allocated for the DB instance, in gibibytes.
 + `--apply-immediately` – Use `--apply-immediately` to apply the storage changes immediately.
 
@@ -65,7 +65,7 @@ For more information about storage, see [Amazon RDS DB instance storage](CHAP_St
 ## RDS API
 <a name="USER_PIOPS.ModifyingExisting.api"></a>
 
-To increase storage for a DB instance, use the Amazon RDS API operation [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html). Set the following parameters:
+To increase storage for a DB instance, use the Amazon RDS API operation [`ModifyDBInstance`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html). Set the following parameters:
 + `AllocatedStorage` – Amount of storage to be allocated for the DB instance, in gibibytes.
 + `ApplyImmediately` – Set this option to `True` to apply the storage changes immediately. Set this option to `False` (the default) to apply the changes during the next maintenance window. An immediate outage occurs when the changes are applied.
 

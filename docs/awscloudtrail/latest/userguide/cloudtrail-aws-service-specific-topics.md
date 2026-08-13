@@ -277,7 +277,6 @@ For information about which services log data events, see [Data events](logging-
 | AWS IAM Identity Center – SCIM | [Logging IAM Identity Center API Calls with AWS CloudTrail](https://docs.aws.amazon.com/singlesignon/latest/userguide/logging-using-cloudtrail.html) | 10/28/2024 |
 | AWS Identity and Access Management (IAM) | [Logging IAM Events with AWS CloudTrail](https://docs.aws.amazon.com/IAM/latest/UserGuide/cloudtrail-integration.html) | 11/13/2013 |
 | AWS IoT | [Logging AWS IoT API Calls with AWS CloudTrail](https://docs.aws.amazon.com/iot/latest/developerguide/monitoring_overview.html#iot-using-cloudtrail) | 04/11/2016 |
-| AWS IoT Events | [Understanding AWS IoT Events log file entries](https://docs.aws.amazon.com/iotevents/latest/developerguide/understanding-aws-iotevents-entries.html) | 06/11/2019 |
 | AWS IoT Greengrass | [Logging AWS IoT Greengrass API Calls with AWS CloudTrail](https://docs.aws.amazon.com/greengrass/v1/developerguide/logging-using-cloudtrail.html)  | 10/29/2018 |
 | AWS IoT Greengrass V2 | [Log AWS IoT Greengrass V2 API calls with AWS CloudTrail](https://docs.aws.amazon.com/greengrass/v2/developerguide/logging-using-cloudtrail.html) | 12/14/2020 |
 | AWS IoT SiteWise | [Logging AWS IoT SiteWise API calls with AWS CloudTrail](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/logging-using-cloudtrail.html) | 04/29/2020 |

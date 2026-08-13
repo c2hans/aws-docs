@@ -12,7 +12,7 @@ We strongly advise against using Cloud Control API to delete resources that are 
 
 To update an existing resource, you must specify the resource's identifier. For more information about finding a resource's identifier, see [Using a resource's primary identifier](resource-identifier.md#resource-identifier-using).
 
-The follow example deletes an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html) resource with the name of `CloudControlApiLogGroup`.
+The follow example deletes an [`AWS::Logs::LogGroup`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html) resource with the name of `CloudControlApiLogGroup`.
 
 ```
 $ aws cloudcontrol delete-resource \

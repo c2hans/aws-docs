@@ -7,11 +7,11 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Associate
 
 Associates an application status check with instances or [tags](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html). Once you create an association, health monitoring automatically begins for the specified instances or for instances that match the specified tags. The following rules apply:
 + You must specify either `TargetTagAssociations` or `InstanceIds`, but not both. Specifying both results in an `InvalidParameterCombination` error.
-+ The application status check must already exist and belong to your account.
-+ Tag keys must not be blank.
-+ Maximum 50 tag associations per application status check.
-+ Use `DisassociateApplicationStatusCheck` to remove associations.
-+ When you associate [tags](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html), the application status check automatically monitors all current and future instances that have the specified tags.
++ You must own the application status check. The check must already exist in your account.
++ You must not leave tag keys blank.
++ You can create a maximum of 50 tag associations for each application status check.
++ You can use `DisassociateApplicationStatusCheck` to remove associations.
++ You can associate [tags](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) so that the application status check automatically monitors all current and future instances that have the specified tags.
 
 ## Request Parameters
 <a name="API_AssociateApplicationStatusCheck_RequestParameters"></a>
@@ -24,7 +24,7 @@ Type: String
 Required: Yes
 
  **ClientToken**
-Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html).
+A unique, case-sensitive identifier that you provide to ensure that the operation completes no more than one time. If you retry a request with the same token, the service ignores the request but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html).
 Type: String
 Required: No
 
@@ -92,7 +92,7 @@ https://ec2.amazonaws.com/?Action=AssociateApplicationStatusCheck
     <successfulResultSet>
         <item>
             <applicationStatusCheckId>asc-0123456789abcdef0</applicationStatusCheckId>
-            <associationType>instance</associationType>
+            <associationType>INSTANCE_ID</associationType>
             <associationValue>i-0123456789abcdef0</associationValue>
         </item>
     </successfulResultSet>
@@ -124,7 +124,7 @@ https://ec2.amazonaws.com/?Action=AssociateApplicationStatusCheck
     <successfulResultSet>
         <item>
             <applicationStatusCheckId>asc-0123456789abcdef0</applicationStatusCheckId>
-            <associationType>tag</associationType>
+            <associationType>EC2TAG</associationType>
             <associationValue>environment=production</associationValue>
         </item>
     </successfulResultSet>

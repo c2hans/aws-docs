@@ -100,7 +100,7 @@ This is your only opportunity to view or download the secret access keys, and yo
    + **Credentials for Amazon Keyspaces (for Apache Cassandra)**–Select **Generate credentials** to generate a service-specific user credentials to use with Amazon Keyspaces. Select **Download credentials** to save the user name and password to a .csv file. This is the only time that information is available. If you forget or lose the password you will need to reset it.
 **Important**
 Service-specific credentials are long-term credentials associated with a specific IAM user and can only be used for the service they were created for. To give IAM roles or federated identities permissions to access all your AWS resources using temporary credentials, use AWS authentication with the SigV4 authentication plugin for Amazon Keyspaces. For more information see, [Using temporary credentials to connect to Amazon Keyspaces (for Apache Cassandra) using an IAM role and the SigV4 plugin](https://docs.aws.amazon.com/keyspaces/latest/devguide/access.credentials.html#temporary.credentials.IAM) in the *Amazon Keyspaces (for Apache Cassandra) Developer Guide*.
-   + **X.509 Signing certificates**–Select **Create X.509 Certificate** if you need to make secure SOAP-protocol requests and are in a Region that's not supported by AWS Certificate Manager. ACM is the preferred tool to provision, manage, and deploy your server certificates. For more information about using ACM, see the [https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html).
+   + **X.509 Signing certificates**–Select **Create X.509 Certificate** if you need to make secure SOAP-protocol requests and are in a Region that's not supported by AWS Certificate Manager. ACM is the preferred tool to provision, manage, and deploy your server certificates. For more information about using ACM, see the [*AWS Certificate Manager User Guide*](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html).
 
 You have created a user with programmatic access and configured it with the **PowerUserAccess** job function. This user's permissions policy grants full access to every service except for IAM and AWS Organizations.
 
@@ -169,7 +169,7 @@ These IAM user access keys are long-term credentials that present a security-ris
      ```
    + **Upload an X.509 signing certificate**–[aws iam upload-signing-certificate](https://docs.aws.amazon.com/cli/latest/reference/iam/upload-signing-certificate.html)
 
-     Upload an X.509 certificate if you need to make secure SOAP-protocol requests and are in a Region that's not supported by AWS Certificate Manager. ACM is the preferred tool to provision, manage, and deploy your server certificates. For more information about using ACM, see the [https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html).
+     Upload an X.509 certificate if you need to make secure SOAP-protocol requests and are in a Region that's not supported by AWS Certificate Manager. ACM is the preferred tool to provision, manage, and deploy your server certificates. For more information about using ACM, see the [*AWS Certificate Manager User Guide*](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html).
 
      The following example assumes that you have your X.509 signing certificate stored in the file `certificate.pem`.
 

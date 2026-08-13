@@ -227,7 +227,7 @@ This connector accepts metrics on an MQTT topic and publishes the metrics to Clo
 **Message properties**
 `request`
 Information about the metric in this message.
-The request object contains the metric data to publish to CloudWatch. The metric values must meet the specifications of the [https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricData.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricData.html) API. Only the `namespace`, `metricData.metricName`, and `metricData.value` properties are required.
+The request object contains the metric data to publish to CloudWatch. The metric values must meet the specifications of the [`PutMetricData`](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricData.html) API. Only the `namespace`, `metricData.metricName`, and `metricData.value` properties are required.
 Required: `true`
 Type: `object` that includes the following properties:
 `namespace`
@@ -274,7 +274,7 @@ Type: `string`
 Valid values: `Seconds, Microseconds, Milliseconds, Bytes, Kilobytes, Megabytes, Gigabytes, Terabytes, Bits, Kilobits, Megabits, Gigabits, Terabits, Percent, Count, Bytes/Second, Kilobytes/Second, Megabytes/Second, Gigabytes/Second, Terabytes/Second, Bits/Second, Kilobits/Second, Megabits/Second, Gigabits/Second, Terabits/Second, Count/Second, None`
 
 Limits
-All limits that are imposed by the CloudWatch [https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricData.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricData.html) API apply to metrics when using this connector. The following limits are especially important:
+All limits that are imposed by the CloudWatch [`PutMetricData`](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricData.html) API apply to metrics when using this connector. The following limits are especially important:
 + 40 KB limit on API payload
 + 20 metrics per API request
 + 150 transactions per second (TPS) for the `PutMetricData` API

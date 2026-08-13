@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/using-service-linked
 
 The information in the following sections explains how to:
 + Use the Amazon Chime SDK Voice Connector service linked role policy to stream Amazon Chime SDK Voice Connector media to Kinesis.
-+ Synthesize speech with Amazon Polly and the [Speak](https://docs.aws.amazon.com/chime-sdk/latest/dg/speak.html) and [https://docs.aws.amazon.com/chime-sdk/latest/dg/speak-and-get-digits.html](https://docs.aws.amazon.com/chime-sdk/latest/dg/speak-and-get-digits.html) actions.
++ Synthesize speech with Amazon Polly and the [Speak](https://docs.aws.amazon.com/chime-sdk/latest/dg/speak.html) and [SpeakAndGetDigits](https://docs.aws.amazon.com/chime-sdk/latest/dg/speak-and-get-digits.html) actions.
 
 **Topics**
 + [Service-linked role permissions for Amazon Chime SDK Voice Connectors](#service-linked-role-permissions-stream)
@@ -87,7 +87,7 @@ If the Amazon Chime SDK service is using the role when you try to delete the res
   ```
 
 **To delete Amazon Chime SDK resources used by the AWSServiceRoleForAmazonChimeVoiceConnector (API)**
-+ Use the [https://docs.aws.amazon.com/chime/latest/APIReference/API_voice-chime_DeleteVoiceConnectorStreamingConfiguration.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_voice-chime_DeleteVoiceConnectorStreamingConfiguration.html) API to stop media streaming for all Amazon Chime SDK Voice Connectors in your account.
++ Use the [DeleteVoiceConnectorStreamingConfiguration](https://docs.aws.amazon.com/chime/latest/APIReference/API_voice-chime_DeleteVoiceConnectorStreamingConfiguration.html) API to stop media streaming for all Amazon Chime SDK Voice Connectors in your account.
 
 ### Manually delete the service-linked role
 <a name="slr-manual-delete-stream"></a>

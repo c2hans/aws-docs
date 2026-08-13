@@ -3158,18 +3158,20 @@ Update the text to use the string condition operator data type.
 In the AWS Management Console, the finding for this check includes the following message:
 
 ```
-Specific github repo and branch recommended: Using a wildcard (*) in token.actions.githubusercontent.com:sub can allow requests from more sources than you intended. Specify the value of token.actions.githubusercontent.com:sub with the repository and branch name.
+Specific github repo and branch recommended: Using a wildcard (*) in token.actions.githubusercontent.com:sub can allow requests from more sources than you intended. Specify the value of token.actions.githubusercontent.com:sub with the repository and branch name. If the subject claim does not include the branch, specify it in a token.actions.githubusercontent.com:ref condition key.
 ```
 
 In programmatic calls to the AWS CLI or AWS API, the finding for this check includes the following message:
 
 ```
-"findingDetails": "Using a wildcard (*) in token.actions.githubusercontent.com:sub can allow requests from more sources than you intended. Specify the value of token.actions.githubusercontent.com:sub with the repository and branch name."
+"findingDetails": "Using a wildcard (*) in token.actions.githubusercontent.com:sub can allow requests from more sources than you intended. Specify the value of token.actions.githubusercontent.com:sub with the repository and branch name. If the subject claim does not include the branch, specify it in a token.actions.githubusercontent.com:ref condition key."
 ```
 
 **Resolving the general warning**
 
 If you use GitHub as an OIDC IdP, best practice is to limit the entities that can assume the role associated with the IAM IdP. When you include a `Condition` statement in a role trust policy, you can limit the role to a specific GitHub organization, repository, or branch. You can use the condition key `token.actions.githubusercontent.com:sub` to limit access. We recommend that you limit the condition to a specific set of repositories or branches. If you use a wildcard (`*`) in `token.actions.githubusercontent.com:sub`, then GitHub Actions from organizations or repositories outside of your control are able to assume roles associated with the GitHub IAM IdP in your AWS account.
+
+Specify the repository in `token.actions.githubusercontent.com:sub`. You can specify the branch in that same value, or in a separate `token.actions.githubusercontent.com:ref` condition key. When the subject claim does not include the branch — for example, when it names a GitHub environment — specify the branch in `token.actions.githubusercontent.com:ref`.
 
 **Related terms**
 + [Configuring a role for GitHub OIDC identity provider](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-idp_oidc.html#idp_oidc_Create_GitHub)
@@ -3333,9 +3335,9 @@ In programmatic calls to the AWS CLI or AWS API, the finding for this check incl
 Review the AWS documentation to identify which AWS services support this condition key. If any services in your policy don't support the condition key, modify your policy to scope the condition key to only the AWS services that support it.
 
 **Related terms**
-+ [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-vpceaccount](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-vpceaccount)
-+ [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-vpceorgid](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-vpceorgid)
-+ [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-vpceorgpaths](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-vpceorgpaths)
++ [`aws:VpceAccount`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-vpceaccount)
++ [`aws:VpceOrgID`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-vpceorgid)
++ [`aws:VpceOrgPaths`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-vpceorgpaths)
 + [Actions, resources, and condition keys for AWS services](https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html)
 
 ## Security Warning – Untrustworthy condition key
@@ -3932,6 +3934,40 @@ Add a `StringEquals` condition that sets `dynamodb:Select` to `SPECIFIC_ATTRIBUT
 **Related terms**
 + [Using IAM policy conditions for fine-grained access control](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/specifying-conditions.html)
 + [IAM JSON policy elements: Condition operators](reference_policies_elements_condition_operators.md)
+
+## Security Warning – S3 prefix in negative context
+<a name="access-analyzer-reference-policy-checks-security-warning-s3-prefix-in-negative-context"></a>
+
+**Issue code: **S3\_PREFIX\_IN\_NEGATIVE\_CONTEXT
+
+**Finding type: **SECURITY\_WARNING
+
+**Finding details**
+
+In the AWS Management Console, the finding for this check includes the following message:
+
+```
+S3 prefix in negative context: Using the s3:prefix condition key in a Deny statement or with a negated string operator does not block listing the objects under the matching prefixes. A request that specifies a shorter prefix does not match the condition and can still list those objects. To restrict listing to specific prefixes, use s3:prefix with StringLike in an Allow statement, or use a Deny statement with StringNotLike.
+```
+
+In programmatic calls to the AWS CLI or AWS API, the finding for this check includes the following message:
+
+```
+"findingDetails": "Using the s3:prefix condition key in a Deny statement or with a negated string operator does not block listing the objects under the matching prefixes. A request that specifies a shorter prefix does not match the condition and can still list those objects. To restrict listing to specific prefixes, use s3:prefix with StringLike in an Allow statement, or use a Deny statement with StringNotLike."
+```
+
+**Resolving the security warning**
+
+To restrict listing to specific prefixes, use one of the following patterns:
++ **Allow with StringLike** – Grant `s3:ListBucket` with a `StringLike` condition on `s3:prefix` listing the prefixes you want to permit. Requests that supply a different prefix are not covered by this Allow and cannot list those objects.
++ **Deny with StringNotLike** – Deny `s3:ListBucket` with a `StringNotLike` condition on `s3:prefix` listing the prefixes you want to allow. A request that omits the prefix or supplies a shorter prefix does not match the allowed set and is denied.
+
+A `Deny` with `StringLike` or an `Allow` with `StringNotLike` does not effectively restrict access because a caller can bypass the condition by specifying a shorter prefix (for example, `priv` instead of `private/`) that does not match the condition value.
+
+**Related terms**
++ [Amazon S3 condition key examples](https://docs.aws.amazon.com/AmazonS3/latest/userguide/amazon-s3-policy-keys.html)
++ [IAM JSON policy elements: Condition operators](reference_policies_elements_condition_operators.md)
++ [IAM policy elements: Condition](reference_policies_elements_condition.md)
 
 ## Security Warning – ForAnyValue with audience claim type
 <a name="access-analyzer-reference-policy-checks-security-warning-foranyvalue-with-audience-claim-type"></a>

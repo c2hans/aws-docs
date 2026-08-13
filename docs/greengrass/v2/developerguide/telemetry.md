@@ -39,45 +39,45 @@ The following table describes the metrics that are published by the telemetry ag
   <tr><th>Name</th><th>Description</th><th></th></tr>
 </thead>
 <tbody>
-  <tr><td>**System**</td><td></td><td></td></tr>
-  <tr><td>`SystemMemUsage`</td><td>The amount of memory currently in use by all applications on the Greengrass core device, including the operating system.</td><td></td></tr>
-  <tr><td>`CpuUsage`</td><td>The amount of CPU currently in use by all applications on the Greengrass core device, including the operating system.</td><td></td></tr>
-  <tr><td>`TotalNumberOfFDs`</td><td>The number of file descriptors stored by the operating system of the Greengrass core device. One file descriptor uniquely identifies one open file.</td><td></td></tr>
-  <tr><td>**Greengrass nucleus**</td><td></td><td></td></tr>
-  <tr><td>`NumberOfComponentsRunning`</td><td>The number of components that are running on the Greengrass core device.</td><td></td></tr>
-  <tr><td>`NumberOfComponentsErrored`</td><td>The number of components that are in error state on the Greengrass core device.</td><td></td></tr>
-  <tr><td>`NumberOfComponentsInstalled`</td><td>The number of components that are installed on the Greengrass core device.</td><td></td></tr>
-  <tr><td>`NumberOfComponentsStarting`</td><td>The number of components that are starting on the Greengrass core device.</td><td></td></tr>
-  <tr><td>`NumberOfComponentsNew`</td><td>The number of components that are new on the Greengrass core device.</td><td></td></tr>
-  <tr><td>`NumberOfComponentsStopping`</td><td>The number of components that are stopping on the Greengrass core device.</td><td></td></tr>
-  <tr><td>`NumberOfComponentsFinished`</td><td>The number of components that are finished on the Greengrass core device.</td><td></td></tr>
-  <tr><td>`NumberOfComponentsBroken`</td><td>The number of components that are broken on the Greengrass core device.</td><td></td></tr>
-  <tr><td>`NumberOfComponentsStateless`</td><td>The number of components that are stateless on the Greengrass core device.</td><td></td></tr>
-  <tr><td>**Client device auth** – This feature requires v2.4.0 or later of the client device auth component.</td><td></td><td></td></tr>
-  <tr><td>`VerifyClientDeviceIdentity.Success`</td><td>The number of times verifying that the client device identity succeeded.</td><td></td></tr>
-  <tr><td>`VerifyClientDeviceIdentity.Failure`</td><td>The number of times verifying that the client device identity failed.</td><td></td></tr>
-  <tr><td>`AuthorizeClientDeviceActions.Success`</td><td>The number of times the client device is authorized to complete requested actions.</td><td></td></tr>
-  <tr><td>`AuthorizeClientDeviceActions.Failure`</td><td>The number of times the client device is not authorized to complete requested actions.</td><td></td></tr>
-  <tr><td>`GetClientDeviceAuthToken.Success`</td><td>The number of times the client device is successfully authenticated.</td><td></td></tr>
-  <tr><td>`GetClientDeviceAuthToken.Failure`</td><td>The number of times the client device is not able to be authenticated.</td><td></td></tr>
-  <tr><td>`SubscribeToCertificateUpdates.Success`</td><td>The number of successful subscriptions to certificate updates.</td><td></td></tr>
-  <tr><td>`SubscribeToCertificateUpdates.Failure`</td><td>The number of unsuccessful attempts to subscribe to certificate updates.</td><td></td></tr>
-  <tr><td>`ServiceError`</td><td>The number of unhandled internal errors across the client device auth.</td><td></td></tr>
-  <tr><td>**Stream manager** – This feature requires v2.7.0 or later of the Greengrass nucleus component.</td><td></td><td></td></tr>
-  <tr><td>`BytesAppended`</td><td>The number of bytes of data appended to stream manager.</td><td></td></tr>
-  <tr><td>`BytesUploadedToIoTAnalytics`</td><td>The number of bytes of data that stream manager exports to channels in AWS IoT Analytics.</td><td></td></tr>
-  <tr><td>`BytesUploadedToKinesis`</td><td>The number of bytes of data that stream manager exports to streams in Amazon Kinesis Data Streams.</td><td></td></tr>
-  <tr><td>`BytesUploadedToIoTSiteWise`</td><td>The number of bytes of data that stream manager exports to asset properties in AWS IoT SiteWise.</td><td></td></tr>
-  <tr><td>`BytesUploadedToS3`</td><td>The number of bytes of data that stream manager exports to objects in Amazon S3.</td><td></td></tr>
-  <tr><td>**System Metrics** – This feature requires v2.15.0 or later of the Greengrass nucleus component.</td><td></td><td></td></tr>
-  <tr><td>`CPUArchitecture`</td><td>Device central processing unit architecture.</td><td></td></tr>
-  <tr><td>`Family`</td><td>Device operating system family (Windows only).</td><td></td></tr>
-  <tr><td>`KernelVersion`</td><td>Device kernel version (Unix only).</td><td></td></tr>
-  <tr><td>`KnowledgeBaseArticles`</td><td>Knowledge Base articles installed on a device (Windows only).</td><td></td></tr>
-  <tr><td>`OSBuildMajor`</td><td>Major build number of the operating system version (Windows only).</td><td></td></tr>
-  <tr><td>`OSBuildMinor`</td><td>Minor build number of the operating system version (Windows only).</td><td></td></tr>
-  <tr><td>`OSName`</td><td>Name of the device operating system.</td><td></td></tr>
-  <tr><td>`OSVersion`</td><td>Marketing version of the device operating system.</td><td></td></tr>
+  <tr><td><b>System</b></td><td></td><td></td></tr>
+  <tr><td><code>SystemMemUsage</code></td><td>The amount of memory currently in use by all applications on the Greengrass core device, including the operating system.</td><td></td></tr>
+  <tr><td><code>CpuUsage</code></td><td>The amount of CPU currently in use by all applications on the Greengrass core device, including the operating system.</td><td></td></tr>
+  <tr><td><code>TotalNumberOfFDs</code></td><td>The number of file descriptors stored by the operating system of the Greengrass core device. One file descriptor uniquely identifies one open file.</td><td></td></tr>
+  <tr><td><b>Greengrass nucleus</b></td><td></td><td></td></tr>
+  <tr><td><code>NumberOfComponentsRunning</code></td><td>The number of components that are running on the Greengrass core device.</td><td></td></tr>
+  <tr><td><code>NumberOfComponentsErrored</code></td><td>The number of components that are in error state on the Greengrass core device.</td><td></td></tr>
+  <tr><td><code>NumberOfComponentsInstalled</code></td><td>The number of components that are installed on the Greengrass core device.</td><td></td></tr>
+  <tr><td><code>NumberOfComponentsStarting</code></td><td>The number of components that are starting on the Greengrass core device.</td><td></td></tr>
+  <tr><td><code>NumberOfComponentsNew</code></td><td>The number of components that are new on the Greengrass core device.</td><td></td></tr>
+  <tr><td><code>NumberOfComponentsStopping</code></td><td>The number of components that are stopping on the Greengrass core device.</td><td></td></tr>
+  <tr><td><code>NumberOfComponentsFinished</code></td><td>The number of components that are finished on the Greengrass core device.</td><td></td></tr>
+  <tr><td><code>NumberOfComponentsBroken</code></td><td>The number of components that are broken on the Greengrass core device.</td><td></td></tr>
+  <tr><td><code>NumberOfComponentsStateless</code></td><td>The number of components that are stateless on the Greengrass core device.</td><td></td></tr>
+  <tr><td><b>Client device auth</b> – This feature requires v2.4.0 or later of the client device auth component.</td><td></td><td></td></tr>
+  <tr><td><code>VerifyClientDeviceIdentity.Success</code></td><td>The number of times verifying that the client device identity succeeded.</td><td></td></tr>
+  <tr><td><code>VerifyClientDeviceIdentity.Failure</code></td><td>The number of times verifying that the client device identity failed.</td><td></td></tr>
+  <tr><td><code>AuthorizeClientDeviceActions.Success</code></td><td>The number of times the client device is authorized to complete requested actions.</td><td></td></tr>
+  <tr><td><code>AuthorizeClientDeviceActions.Failure</code></td><td>The number of times the client device is not authorized to complete requested actions.</td><td></td></tr>
+  <tr><td><code>GetClientDeviceAuthToken.Success</code></td><td>The number of times the client device is successfully authenticated.</td><td></td></tr>
+  <tr><td><code>GetClientDeviceAuthToken.Failure</code></td><td>The number of times the client device is not able to be authenticated.</td><td></td></tr>
+  <tr><td><code>SubscribeToCertificateUpdates.Success</code></td><td>The number of successful subscriptions to certificate updates.</td><td></td></tr>
+  <tr><td><code>SubscribeToCertificateUpdates.Failure</code></td><td>The number of unsuccessful attempts to subscribe to certificate updates.</td><td></td></tr>
+  <tr><td><code>ServiceError</code></td><td>The number of unhandled internal errors across the client device auth.</td><td></td></tr>
+  <tr><td><b>Stream manager</b> – This feature requires v2.7.0 or later of the Greengrass nucleus component.</td><td></td><td></td></tr>
+  <tr><td><code>BytesAppended</code></td><td>The number of bytes of data appended to stream manager.</td><td></td></tr>
+  <tr><td><code>BytesUploadedToIoTAnalytics</code></td><td>The number of bytes of data that stream manager exports to channels in AWS IoT Analytics.</td><td></td></tr>
+  <tr><td><code>BytesUploadedToKinesis</code></td><td>The number of bytes of data that stream manager exports to streams in Amazon Kinesis Data Streams.</td><td></td></tr>
+  <tr><td><code>BytesUploadedToIoTSiteWise</code></td><td>The number of bytes of data that stream manager exports to asset properties in AWS IoT SiteWise.</td><td></td></tr>
+  <tr><td><code>BytesUploadedToS3</code></td><td>The number of bytes of data that stream manager exports to objects in Amazon S3.</td><td></td></tr>
+  <tr><td><b>System Metrics</b> – This feature requires v2.15.0 or later of the Greengrass nucleus component.</td><td></td><td></td></tr>
+  <tr><td><code>CPUArchitecture</code></td><td>Device central processing unit architecture.</td><td></td></tr>
+  <tr><td><code>Family</code></td><td>Device operating system family (Windows only).</td><td></td></tr>
+  <tr><td><code>KernelVersion</code></td><td>Device kernel version (Unix only).</td><td></td></tr>
+  <tr><td><code>KnowledgeBaseArticles</code></td><td>Knowledge Base articles installed on a device (Windows only).</td><td></td></tr>
+  <tr><td><code>OSBuildMajor</code></td><td>Major build number of the operating system version (Windows only).</td><td></td></tr>
+  <tr><td><code>OSBuildMinor</code></td><td>Minor build number of the operating system version (Windows only).</td><td></td></tr>
+  <tr><td><code>OSName</code></td><td>Name of the device operating system.</td><td></td></tr>
+  <tr><td><code>OSVersion</code></td><td>Marketing version of the device operating system.</td><td></td></tr>
 </tbody>
 </table>
 

@@ -7,7 +7,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 # Connecting Smartsheet to Amazon Q Business
 <a name="smartsheet-connector"></a>
 
-Smartsheet is an enterprise work management platform that lets users manage projects, programs and processes at scale using sheets, channels, and workspaces. You can connect your Smartsheet instance to Amazon Q Business—using either the AWS Management Console, CLI, or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q Business web experience.
+Smartsheet is an enterprise work management platform that lets users manage projects, programs and processes at scale using sheets, channels, and workspaces. You can connect your Smartsheet instance to Amazon Q Business—using either the AWS Management Console, CLI, or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q Business web experience.
 
 Integrating Smartsheet as a data source in Amazon Q Business enables users to quickly get insights from project sheets. For example, users can ask questions like:
 + "Which project manager is responsible for Project Harpo?", where the answer comes from a Smartsheet row

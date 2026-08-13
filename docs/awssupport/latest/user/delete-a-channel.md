@@ -11,7 +11,7 @@ You can add up to 20 channels for your AWS account. If you already reached this 
 
 **To delete a Slack channel configuration**
 
-1. Sign in to the [https://console.aws.amazon.com/support/app](https://console.aws.amazon.com/support/app) and choose **Slack configuration**.
+1. Sign in to the [**Support Center Console**](https://console.aws.amazon.com/support/app) and choose **Slack configuration**.
 
 1. On the **Slack configuration** page, under **Channels**, choose the channel name, and then choose **Delete**.
 

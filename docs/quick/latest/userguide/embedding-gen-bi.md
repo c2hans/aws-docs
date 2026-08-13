@@ -394,7 +394,7 @@ aws quicksight generate-embed-url-for-anonymous-user \
 --session-lifetime-in-minutes {{15}}
 ```
 
-For more information about using this operation, see [https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUser.html](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUser.html). You can use this and other API operations in your own code.
+For more information about using this operation, see [GenerateEmbedUrlForRegisteredUser](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUser.html). You can use this and other API operations in your own code.
 
 ### Step 3: Embed the Generative Q&A experience URL
 <a name="embedded-analytics-gen-bi-authenticated-users-step-3"></a>
@@ -924,7 +924,7 @@ aws quicksight generate-embed-url-for-anonymous-user \
 --session-lifetime-in-minutes {{15}}
 ```
 
-For more information about using this operation, see [https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForAnonymousUser.html](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForAnonymousUser.html). You can use this and other API operations in your own code.
+For more information about using this operation, see [GenerateEmbedUrlForAnonymousUser](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForAnonymousUser.html). You can use this and other API operations in your own code.
 
 ### Step 3: Embed the Generative Q&A experience URL
 <a name="embedded-analytics-gen-bi-anonymous-users-step-3"></a>

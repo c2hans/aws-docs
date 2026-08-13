@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 # Resource inventory for Accelerate
 <a name="acc-resource-inventory"></a>
 
-All the resources that AMS Accelerate deploys to your AWS account or accounts are listed in the [samples/resource_inventory.zip](samples/resource_inventory.zip) file (Excel spreadsheet).
+All the resources that AMS Accelerate deploys to your AWS account or accounts are listed in the [`resource_inventory.zip`](samples/resource_inventory.zip) file (Excel spreadsheet).
 
 **Note**
  In the *Resource Name* column, the prefix *CFN:* indicates a CloudFormation logical ID instead of a resource name. These are shown for unnamed resources, for example, for S3 bucket policies.

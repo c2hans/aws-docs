@@ -12,7 +12,7 @@ AWS IoT rules send device messages to other services. AWS IoT rules can also pro
 ## Create an IAM role for your destination
 <a name="iot-sidewalk-destination-role"></a>
 
-Create an IAM role that grants AWS IoT Core for Amazon Sidewalk permission to send data to the AWS IoT rule. To create the role, use the [https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html) API operation or [https://docs.aws.amazon.com/cli/latest/reference/iam/create-role](https://docs.aws.amazon.com/cli/latest/reference/iam/create-role) CLI command. You can name the role as {{`SidewalkRole`}}.
+Create an IAM role that grants AWS IoT Core for Amazon Sidewalk permission to send data to the AWS IoT rule. To create the role, use the [`CreateRole`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html) API operation or [`create-role`](https://docs.aws.amazon.com/cli/latest/reference/iam/create-role) CLI command. You can name the role as {{`SidewalkRole`}}.
 
 ```
 aws iam create-role --role-name {{SidewalkRole}} \
@@ -50,7 +50,7 @@ The following shows the contents of the JSON file.
 ## Create a rule for your destination
 <a name="iot-sidewalk-destination-rule"></a>
 
-Use the AWS IoT Core API operation, [https://docs.aws.amazon.com/iot/latest/apireference/API_CreateTopicRule.html](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateTopicRule.html), or the AWS CLI command, [https://docs.aws.amazon.com/cli/latest/reference/iot/create-topic-rule.html](https://docs.aws.amazon.com/cli/latest/reference/iot/create-topic-rule.html), to create a rule. The topic rule will be used by your destination to route the data received from your Sidewalk end device to other AWS services. For example, you can create a rule action that sends a message to a Lambda function. You can define the Lambda function such that it receives the application data from your device and uses base64 to decode the payload data so that it can be used by other applications.
+Use the AWS IoT Core API operation, [`CreateTopicRule`](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateTopicRule.html), or the AWS CLI command, [`create-topic-rule`](https://docs.aws.amazon.com/cli/latest/reference/iot/create-topic-rule.html), to create a rule. The topic rule will be used by your destination to route the data received from your Sidewalk end device to other AWS services. For example, you can create a rule action that sends a message to a Lambda function. You can define the Lambda function such that it receives the application data from your device and uses base64 to decode the payload data so that it can be used by other applications.
 
 The following steps show how you create the Lambda function and then a topic rule that sends a message to this function.
 

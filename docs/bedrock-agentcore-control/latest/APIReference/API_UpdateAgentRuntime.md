@@ -17,6 +17,9 @@ Content-type: application/json
 {
    "agentRuntimeArtifact": { ... },
    "authorizerConfiguration": { ... },
+   "capacityProviderConfiguration": {
+      "capacityProviderArn": "{{string}}"
+   },
    "clientToken": "{{string}}",
    "description": "{{string}}",
    "environmentVariables": {
@@ -75,6 +78,11 @@ Type: [AuthorizerConfiguration](API_AuthorizerConfiguration.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
+ ** [capacityProviderConfiguration](#API_UpdateAgentRuntime_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateAgentRuntime-request-capacityProviderConfiguration"></a>
+The updated capacity provider configuration for the AgentCore Runtime.
+Type: [CapacityProviderConfiguration](API_CapacityProviderConfiguration.md) object
+Required: No
+
  ** [clientToken](#API_UpdateAgentRuntime_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateAgentRuntime-request-clientToken"></a>
 A unique, case-sensitive identifier to ensure idempotency of the request.
 Type: String
@@ -115,7 +123,7 @@ Required: No
  ** [networkConfiguration](#API_UpdateAgentRuntime_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateAgentRuntime-request-networkConfiguration"></a>
 The updated network configuration for the AgentCore Runtime.
 Type: [NetworkConfiguration](API_NetworkConfiguration.md) object
-Required: Yes
+Required: No
 
  ** [protocolConfiguration](#API_UpdateAgentRuntime_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateAgentRuntime-request-protocolConfiguration"></a>
 The protocol configuration for an agent runtime. This structure defines how the agent runtime communicates with clients.
@@ -165,7 +173,7 @@ The following data is returned in JSON format by the service.
  ** [agentRuntimeArn](#API_UpdateAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdateAgentRuntime-response-agentRuntimeArn"></a>
 The Amazon Resource Name (ARN) of the updated AgentCore Runtime.
 Type: String
-Pattern: `arn:(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:agent/[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}:([0-9]{0,4}[1-9][0-9]{0,4})`
+Pattern: `arn:aws(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:runtime/[a-zA-Z][a-zA-Z0-9_]{0,47}-[a-zA-Z0-9]{10}`
 
  ** [agentRuntimeId](#API_UpdateAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdateAgentRuntime-response-agentRuntimeId"></a>
 The unique identifier of the updated AgentCore Runtime.

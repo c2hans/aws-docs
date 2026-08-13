@@ -81,7 +81,7 @@ Using [NoSQL Workbench for DynamoDB](workbench.md) , import [AnOnlineShop\_1.jso
 
 Import [AnOnlineShop\_2.json](https://github.com/aws-samples/amazon-dynamodb-design-patterns/blob/master/examples/an-online-shop/json/AnOnlineShop_2.json) to handle access pattern 1 (`getCustomerByCustomerId`). Some entities do not have relationships to other entities, so we will use the same value of `PK` and `SK` for them. In the example data, note that the keys use a prefix `c#` in order to distinguish the `customerId` from other entities that will be added later. This practice is repeated for other entities as well.
 
-To address this access pattern, a [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GetItem.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GetItem.html) operation can be used with `PK=customerId` and `SK=customerId`.
+To address this access pattern, a [`GetItem`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GetItem.html) operation can be used with `PK=customerId` and `SK=customerId`.
 
 **Step 2: Address access pattern 2 (`getProductByProductId`)**
 

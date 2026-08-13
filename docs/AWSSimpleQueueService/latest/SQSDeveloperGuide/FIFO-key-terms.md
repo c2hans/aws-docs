@@ -18,7 +18,7 @@ Amazon SQS continues tracking the deduplication ID even after the message has be
 In FIFO (First-In-First-Out) queues, `MessageGroupId` is an attribute that organizes messages into distinct groups. Messages within the same message group are always processed one at a time, in strict order, ensuring that no two messages from the same group are processed simultaneously. In standard queues, using `MessageGroupId` enables [fair queues](sqs-fair-queues.md). If strict ordering is required, use a FIFO queue.
 
 **Receive request attempt ID**
-The receive request attempt ID is a unique token used to deduplicate [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html) calls in Amazon SQS.
+The receive request attempt ID is a unique token used to deduplicate [`ReceiveMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html) calls in Amazon SQS.
 
 **Sequence number**
 The large, non-consecutive number that Amazon SQS assigns to each message.

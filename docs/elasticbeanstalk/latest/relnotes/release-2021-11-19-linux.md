@@ -18,23 +18,40 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/alas2.html) on or before **November 12, 2021** to all released Amazon Linux 2 platforms.<br />The **Go**, **Corretto**, and **Node.js** releases are security releases. For more information, see **Platform-specific updates** in this table. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2021-11-19-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2021-11-19-linux.html) |
-| ***\*\*New\!\*\** `pkg-repo` on-instance CLI** | This tool provides the capability to unlock and lock yum package repositories on EC2 instances running Amazon Linux 2. For more information, see [pkg-repo](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/custom-platforms-scripts.html#custom-platforms-scripts.pkg-repo) in the *AWS Elastic Beanstalk Developer Guide*. |
-| **Base AMI** | Updated the base AMI to version **2.0.20211103**. |
-| **Graviton AMIs** | Added Graviton instance support to the Corretto and .NET Core platforms.<br />Updated Graviton images for platforms that support Graviton instances.<br />For a list of Graviton image IDs for each supported platform branch and region, see [Graviton image IDs for supporting platforms](#release-2021-11-19-linux.graviton) on this page.<br />For more information about how to create and configure environments using Graviton instances, see [Amazon EC2 instance types](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.managing.ec2.html#using-features.managing.ec2.instance-types) in the *AWS Elastic Beanstalk Developer Guide*. |
-| **Go** | Updated Go to release **1.17.3**. For details, see [go1.17](https://golang.org/doc/devel/release.html#go1.17) in *The Go Programming Language Release History*.<br />The Go 1.17.3 release is a security release. |
-| **Corretto**, **Tomcat** | Updated Corretto 11 to version **11.0.13.8.1**. For more information, see [Change Log for Amazon Corretto 11](https://github.com/corretto/corretto-11/blob/develop/CHANGELOG.md) in the Corretto 11 repository on GitHub.<br />Updated Corretto 8 to version **8.312.07.1**. For more information, see [Change Log for Amazon Corretto 8](https://github.com/corretto/corretto-8/blob/develop/CHANGELOG.md) in the Corretto 8 repository on GitHub.<br />Updated Tomcat 8.5 to [Tomcat 8.5.69](https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.72_(schultz)).<br />Both Corretto updates are security releases. |
-| **.NET Core** | Updated .NET Core to releases [5.0.12](https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0.12/5.0.12.md) and [3.1.21](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1.21/3.1.21.md).  |
-| **Node.js** | Updated Node.js 14 to add support for Node version [14.17.6](https://nodejs.org/en/blog/release/v14.17.6/).<br />Updated Node.js 12 to add support for Node version [12.22.7](https://nodejs.org/en/blog/release/v12.22.7/).<br />The Node.js 14 update is a security release. |
-| **Ruby** | Added a new platform branch, **Ruby 3.0**. For more information, see [Ruby 3.0.0 Released](https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/).<br />Updated RubyGems to release [3.2.30](https://blog.rubygems.org/2021/10/26/3.2.30-released.html). |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/alas2.html">Amazon Linux Security Center</a> on or before <b>November 12, 2021</b> to all released Amazon Linux 2 platforms.<br />The <b>Go</b>, <b>Corretto</b>, and <b>Node.js</b> releases are security releases. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b><i>**New!**</i> <code>pkg-repo</code> on-instance CLI</b></td><td>This tool provides the capability to unlock and lock yum package repositories on EC2 instances running Amazon Linux 2. For more information, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/custom-platforms-scripts.html#custom-platforms-scripts.pkg-repo">pkg-repo</a> in the <i>AWS Elastic Beanstalk Developer Guide</i>.</td></tr>
+  <tr><td><b>Base AMI</b></td><td>Updated the base AMI to version <b>2.0.20211103</b>.</td></tr>
+  <tr><td><b>Graviton AMIs</b></td><td>Added Graviton instance support to the Corretto and .NET Core platforms.<br />Updated Graviton images for platforms that support Graviton instances.<br />For a list of Graviton image IDs for each supported platform branch and region, see <a href="#release-2021-11-19-linux.graviton">Graviton image IDs for supporting platforms</a> on this page.<br />For more information about how to create and configure environments using Graviton instances, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.managing.ec2.html#using-features.managing.ec2.instance-types">Amazon EC2 instance types</a> in the <i>AWS Elastic Beanstalk Developer Guide</i>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Go</b></td><td>Updated Go to release <b>1.17.3</b>. For details, see <a href="https://golang.org/doc/devel/release.html#go1.17">go1.17</a> in <i>The Go Programming Language Release History</i>.<br />The Go 1.17.3 release is a security release.</td></tr>
+  <tr><td><b>Corretto</b>, <b>Tomcat</b></td><td>Updated Corretto 11 to version <b>11.0.13.8.1</b>. For more information, see <a href="https://github.com/corretto/corretto-11/blob/develop/CHANGELOG.md">Change Log for Amazon Corretto 11</a> in the Corretto 11 repository on GitHub.<br />Updated Corretto 8 to version <b>8.312.07.1</b>. For more information, see <a href="https://github.com/corretto/corretto-8/blob/develop/CHANGELOG.md">Change Log for Amazon Corretto 8</a> in the Corretto 8 repository on GitHub.<br />Updated Tomcat 8.5 to <a href="https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.72_(schultz)">Tomcat 8.5.69</a>.<br />Both Corretto updates are security releases.</td></tr>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET Core to releases <a href="https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0.12/5.0.12.md">5.0.12</a> and <a href="https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1.21/3.1.21.md">3.1.21</a>. </td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated Node.js 14 to add support for Node version <a href="https://nodejs.org/en/blog/release/v14.17.6/">14.17.6</a>.<br />Updated Node.js 12 to add support for Node version <a href="https://nodejs.org/en/blog/release/v12.22.7/">12.22.7</a>.<br />The Node.js 14 update is a security release.</td></tr>
+  <tr><td><b>Ruby</b></td><td>Added a new platform branch, <b>Ruby 3.0</b>. For more information, see <a href="https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/">Ruby 3.0.0 Released</a>.<br />Updated RubyGems to release <a href="https://blog.rubygems.org/2021/10/26/3.2.30-released.html">3.2.30</a>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2021-11-19-linux.platforms"></a>

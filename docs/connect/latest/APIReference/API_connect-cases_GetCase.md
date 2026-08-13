@@ -96,7 +96,7 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 9000.
 
  ** [tags](#API_connect-cases_GetCase_ResponseSyntax) **   <a name="connect-connect-cases_GetCase-response-tags"></a>
-A map of of key-value pairs that represent tags on a resource. Tags are used to organize, track, or control access for this resource.
+A map of key-value pairs that represent tags on a resource. Tags are used to organize, track, or control access for this resource.
 Type: String to string map
 
  ** [templateId](#API_connect-cases_GetCase_ResponseSyntax) **   <a name="connect-connect-cases_GetCase-response-templateId"></a>

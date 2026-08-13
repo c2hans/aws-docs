@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/async-inference-dele
 # Delete an Asynchronous Endpoint
 <a name="async-inference-delete-endpoint"></a>
 
-Delete an asynchronous endpoint in a similar manner to how you would delete a SageMaker AI hosted endpoint with the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteEndpoint.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteEndpoint.html) API. Specify the name of the asynchronous endpoint you want to delete. When you delete an endpoint, SageMaker AI frees up all of the resources that were deployed when the endpoint was created. Deleting a model does not delete model artifacts, inference code, or the IAM role that you specified when creating the model.
+Delete an asynchronous endpoint in a similar manner to how you would delete a SageMaker AI hosted endpoint with the [`DeleteEndpoint`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteEndpoint.html) API. Specify the name of the asynchronous endpoint you want to delete. When you delete an endpoint, SageMaker AI frees up all of the resources that were deployed when the endpoint was created. Deleting a model does not delete model artifacts, inference code, or the IAM role that you specified when creating the model.
 
-Delete your SageMaker AI model with the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteModel.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteModel.html) API or with the SageMaker AI console.
+Delete your SageMaker AI model with the [`DeleteModel`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteModel.html) API or with the SageMaker AI console.
 
 ------
 #### [ Boto3 ]

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_EcsPar
 # EcsParameters
 <a name="API_EcsParameters"></a>
 
-The templated target type for the Amazon ECS [https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTask.html](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTask.html) API operation.
+The templated target type for the Amazon ECS [`RunTask`](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTask.html) API operation.
 
 ## Contents
 <a name="API_EcsParameters_Contents"></a>
@@ -68,7 +68,7 @@ Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: No
 
  ** PropagateTags **   <a name="scheduler-Type-EcsParameters-PropagateTags"></a>
-Specifies whether to propagate the tags from the task definition to the task. If no value is specified, the tags are not propagated. Tags can only be propagated to the task during task creation. To add tags to a task after task creation, use Amazon ECS's [https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TagResource.html](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TagResource.html) API action.
+Specifies whether to propagate the tags from the task definition to the task. If no value is specified, the tags are not propagated. Tags can only be propagated to the task during task creation. To add tags to a task after task creation, use Amazon ECS's [`TagResource`](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TagResource.html) API action.
 Type: String
 Valid Values: `TASK_DEFINITION`
 Required: No
@@ -80,7 +80,7 @@ Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
  ** Tags **   <a name="scheduler-Type-EcsParameters-Tags"></a>
-The metadata that you apply to the task to help you categorize and organize them. Each tag consists of a key and an optional value, both of which you define. For more information, see [https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTask.html](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTask.html) in the *Amazon ECS API Reference*.
+The metadata that you apply to the task to help you categorize and organize them. Each tag consists of a key and an optional value, both of which you define. For more information, see [`RunTask`](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTask.html) in the *Amazon ECS API Reference*.
 Type: Array of string to string maps
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.

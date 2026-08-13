@@ -101,7 +101,7 @@ Pattern: `^(?! )[\p{L}\p{N}\p{Z}-_]*(?<! )$`
 Required: Yes
 
  ** [ResourceTags](#API_CreateCostCategoryDefinition_RequestSyntax) **   <a name="awscostmanagement-CreateCostCategoryDefinition-request-ResourceTags"></a>
-An optional list of tags to associate with the specified [https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_CostCategory.html](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_CostCategory.html). You can use resource tags to control access to your `cost category` using IAM policies.
+An optional list of tags to associate with the specified [`CostCategory`](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_CostCategory.html). You can use resource tags to control access to your `cost category` using IAM policies.
 Each tag consists of a key and a value, and each key must be unique for the resource. The following restrictions apply to resource tags:
 + Although the maximum number of array members is 200, you can assign a maximum of 50 user-tags to one resource. The remaining are reserved for AWS use
 + The maximum length of a key is 128 characters

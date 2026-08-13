@@ -87,7 +87,7 @@ The key policy must be modified to allow AWS End User Messaging Social to use th
 ## IAM policies for Amazon SNS topics
 <a name="managing-event-destinations-sns-policies"></a>
 
-To use an existing IAM role or to create a new role, attach the following policy to that role so that AWS End User Messaging Social can assume it. For information about how to modify the trust relationship of a role, see [Modifying a Role](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_manage.html) in the [https://docs.aws.amazon.com//IAM/latest/UserGuide/introduction.html](https://docs.aws.amazon.com//IAM/latest/UserGuide/introduction.html).
+To use an existing IAM role or to create a new role, attach the following policy to that role so that AWS End User Messaging Social can assume it. For information about how to modify the trust relationship of a role, see [Modifying a Role](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_manage.html) in the [*IAM user guide*](https://docs.aws.amazon.com//IAM/latest/UserGuide/introduction.html).
 
 The following is the **permission policy** for the IAM role. The permission policy allows for publishing to Amazon SNS topics.
 
@@ -113,7 +113,7 @@ In the following IAM permission policy, make the following changes:
 ## IAM policies for Connect Customer
 <a name="managing-event-destinations-amazon-connect-policies"></a>
 
-If you want AWS End User Messaging Social to use an existing IAM role or if you create a new role, attach the following policies to that role so that AWS End User Messaging Social can assume it. For information about how to modify an existing trust relationship of a role, see [Modifying a Role](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_manage.html) in the [https://docs.aws.amazon.com//IAM/latest/UserGuide/introduction.html](https://docs.aws.amazon.com//IAM/latest/UserGuide/introduction.html). This role is used for both sending events and importing phone numbers from AWS End User Messaging Social into Connect Customer.
+If you want AWS End User Messaging Social to use an existing IAM role or if you create a new role, attach the following policies to that role so that AWS End User Messaging Social can assume it. For information about how to modify an existing trust relationship of a role, see [Modifying a Role](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_manage.html) in the [*IAM user guide*](https://docs.aws.amazon.com//IAM/latest/UserGuide/introduction.html). This role is used for both sending events and importing phone numbers from AWS End User Messaging Social into Connect Customer.
 
 To create new IAM polices, do the following:
 

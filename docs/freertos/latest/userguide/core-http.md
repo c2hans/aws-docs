@@ -31,10 +31,10 @@ This library can be freely used and is distributed under the [MIT open source li
   <tr><th>File</th><th>With -O1 Optimization</th><th>With -Os Optimization</th></tr>
 </thead>
 <tbody>
-  <tr><td>core\_http\_client.c</td><td>3.2K</td><td>2.6K</td></tr>
+  <tr><td>core_http_client.c</td><td>3.2K</td><td>2.6K</td></tr>
   <tr><td>api.c (llhttp)</td><td>2.6K</td><td>2.0K</td></tr>
   <tr><td>http.c (llhttp)</td><td>0.3K</td><td>0.3K</td></tr>
   <tr><td>llhttp.c (llhttp)</td><td>17.9</td><td>15.9</td></tr>
-  <tr><td>Total estimates</td><td>23.9K</td><td>20.7K</td></tr>
+  <tr><td><b>Total estimates</b></td><td><b>23.9K</b></td><td><b>20.7K</b></td></tr>
 </tbody>
 </table>

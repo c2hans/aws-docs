@@ -35,9 +35,9 @@ An HTTP Task requires an [EventBridge connection](https://docs.aws.amazon.com/ev
 
 When you create an EventBridge connection, you provide your authorization and network connectivity details. You can also include the header, body, and query parameters that are required for authorization with an API. You must include the connection ARN in any HTTP Task that calls an HTTPS API.
 
-When you create a connection, EventBridge creates a [https://docs.aws.amazon.com/secretsmanager/latest/userguide/managing-secrets.html](https://docs.aws.amazon.com/secretsmanager/latest/userguide/managing-secrets.html) in AWS Secrets Manager. In this secret, EventBridge stores the connection and authorization parameters in an encrypted form. To successfully create or update a connection, you must use an AWS account that has permission to use Secrets Manager. For more information about the IAM permissions your state machine needs to access an EventBridge connection, see [IAM permissions to run an HTTP Task](#connect-http-task-permissions).
+When you create a connection, EventBridge creates a [*secret*](https://docs.aws.amazon.com/secretsmanager/latest/userguide/managing-secrets.html) in AWS Secrets Manager. In this secret, EventBridge stores the connection and authorization parameters in an encrypted form. To successfully create or update a connection, you must use an AWS account that has permission to use Secrets Manager. For more information about the IAM permissions your state machine needs to access an EventBridge connection, see [IAM permissions to run an HTTP Task](#connect-http-task-permissions).
 
-The following image shows how Step Functions handles authorization for HTTPS API calls using an EventBridge connection. The EventBridge connection manages credentials of an HTTPS API provider. EventBridge creates a [https://docs.aws.amazon.com/secretsmanager/latest/userguide/managing-secrets.html](https://docs.aws.amazon.com/secretsmanager/latest/userguide/managing-secrets.html) in Secrets Manager to store the connection and authorization parameters in an encrypted form. In the case of private APIs, EventBridge also stores network connectivity configurations.
+The following image shows how Step Functions handles authorization for HTTPS API calls using an EventBridge connection. The EventBridge connection manages credentials of an HTTPS API provider. EventBridge creates a [*secret*](https://docs.aws.amazon.com/secretsmanager/latest/userguide/managing-secrets.html) in Secrets Manager to store the connection and authorization parameters in an encrypted form. In the case of private APIs, EventBridge also stores network connectivity configurations.
 
 **Timeouts for connections**
 HTTP task requests will timeout after 60 seconds.
@@ -463,7 +463,7 @@ The following IAM policy example grants the least privileges required to your st
 ```
 
 **Important**
-You can scope `states:InvokeHTTPEndpoint` permissions to a specific state machine by specifying a state machine ARN in the policy statement's `Resource` field, but further scoping the permissions using an [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag) condition key is not supported at this time.
+You can scope `states:InvokeHTTPEndpoint` permissions to a specific state machine by specifying a state machine ARN in the policy statement's `Resource` field, but further scoping the permissions using an [`aws:ResourceTag/${TagKey}`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag) condition key is not supported at this time.
 
 ## HTTP Task example
 <a name="connect-http-task-example"></a>

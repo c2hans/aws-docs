@@ -19,7 +19,7 @@ The pg\_dump and pg\_restore utility may not be suitable for the following use c
 ## Example
 <a name="chap-manageddatabases.postgresql-rds-postgresql-full-load-pd_dump-example"></a>
 
-At a high level, you can use the following steps to migrate the [https://github.com/aws-samples/aws-database-migration-samples/tree/master/PostgreSQL/sampledb/v1](https://github.com/aws-samples/aws-database-migration-samples/tree/master/PostgreSQL/sampledb/v1) database.
+At a high level, you can use the following steps to migrate the [`dms_sample`](https://github.com/aws-samples/aws-database-migration-samples/tree/master/PostgreSQL/sampledb/v1) database.
 
 1. Export data to one or more dump files.
 

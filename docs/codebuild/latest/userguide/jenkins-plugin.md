@@ -33,7 +33,7 @@ If you already have a Jenkins server set up and would like to only install the A
    + Write down the name of your project. You need it in step 3.
    + (Optional) If your source repository is not natively supported by CodeBuild, you can set Amazon S3 as the input source type for your project.
 
-1. In the IAMconsole, create an user to be used by the Jenkins plugin.
+1. In the IAM console, create a user to be used by the Jenkins plugin.
    + When you create credentials for the user, choose **Programmatic Access**.
    + Create a policy similar to the following and then attach the policy to your user.
 

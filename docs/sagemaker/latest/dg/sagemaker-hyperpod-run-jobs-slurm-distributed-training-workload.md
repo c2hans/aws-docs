@@ -29,8 +29,8 @@ The SMDDP library addresses communications overhead of the key collective commun
 **To run sample data-parallel training jobs**
 
 Explore the following distributed training samples implementing data parallelism techniques using the SMDDP library.
-+ [https://github.com/aws-samples/awsome-distributed-training/tree/main/3.test_cases/12.SM-dataparallel-FSDP](https://github.com/aws-samples/awsome-distributed-training/tree/main/3.test_cases/12.SM-dataparallel-FSDP)
-+ [https://github.com/aws-samples/awsome-distributed-training/tree/main/3.test_cases/13.SM-dataparallel-deepspeed](https://github.com/aws-samples/awsome-distributed-training/tree/main/3.test_cases/13.SM-dataparallel-deepspeed)
++ [`awsome-distributed-training/3.test_cases/12.SM-dataparallel-FSDP`](https://github.com/aws-samples/awsome-distributed-training/tree/main/3.test_cases/12.SM-dataparallel-FSDP)
++ [`awsome-distributed-training/3.test_cases/13.SM-dataparallel-deepspeed`](https://github.com/aws-samples/awsome-distributed-training/tree/main/3.test_cases/13.SM-dataparallel-deepspeed)
 
 **To set up an environment for using the SMDDP library on SageMaker HyperPod**
 
@@ -81,4 +81,4 @@ The SMP library is also compatible with open source frameworks such as PyTorch F
 
 **To run a sample model-parallel training workload**
 
-The SageMaker AI service teams provide sample training jobs implementing model parallelism with the SMP library at [https://github.com/aws-samples/awsome-distributed-training/tree/main/3.test_cases/17.SM-modelparallelv2](https://github.com/aws-samples/awsome-distributed-training/tree/main/3.test_cases/17.SM-modelparallelv2).
+The SageMaker AI service teams provide sample training jobs implementing model parallelism with the SMP library at [`awsome-distributed-training/3.test_cases/17.SM-modelparallelv2`](https://github.com/aws-samples/awsome-distributed-training/tree/main/3.test_cases/17.SM-modelparallelv2).

@@ -80,7 +80,7 @@ To add tags to an Amazon SES configuration set, see [TagResource](https://docs.a
 
 **Resource type:** `AWS::SES::ConfigurationSet`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ses-sending-tls-required.html](https://docs.aws.amazon.com/config/latest/developerguide/ses-sending-tls-required.html)
+**AWS Config rule:** [ses-sending-tls-required](https://docs.aws.amazon.com/config/latest/developerguide/ses-sending-tls-required.html)
 
 **Schedule type:** Change triggered
 

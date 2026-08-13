@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 
 AWS Resource Access Manager (AWS RAM) enables you to share specified AWS resources that you own with other AWS accounts. It's a centralized service that provides a consistent experience for sharing different types of AWS resources across multiple accounts.
 
-For more information about AWS RAM, see the [https://docs.aws.amazon.com/ram/latest/userguide/what-is.html](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html).
+For more information about AWS RAM, see the [*AWS RAM User Guide*](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html).
 
 Use the following information to help you integrate AWS Resource Access Manager with AWS Organizations.
 

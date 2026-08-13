@@ -56,7 +56,7 @@ If your Kubernetes cluster is hosted on-premises, you must use the instructions 
 
    1. From the **Permissions policies** list, select the **CloudWatchAgentServerPolicy** policy to add to your user. Then choose **Next**.
 
-   1. On the **Review and create** page, ensure that you are satisfied with the user name and that the **CloudWatchAgentServerPolicy** policy is in the **Permissions summary**.
+   1. On the **Review and create** page, make sure that you are satisfied with the user name and that the **CloudWatchAgentServerPolicy** policy is in the **Permissions summary**.
 
    1. Choose **Create user**
 
@@ -286,4 +286,4 @@ For the ESM module format, enabling Application Signals by annotating the manife
 ## (Optional) Step 5: Monitor your application health
 <a name="CloudWatch-Application-Signals-Monitor-Kubernetes"></a>
 
-Once you have enabled your applications on Kubernetes, you can monitor your application health. For more information, see [Monitor the operational health of your applications with Application Signals](Services.md).
+After you have enabled your applications on Kubernetes, you can monitor your application health. For more information, see [Monitor the operational health of your applications with Application Signals](Services.md).

@@ -103,7 +103,7 @@ The `pubsub.py` sample demonstrates an MQTT connection using the MQTT and MQTT o
 #### MQTT
 <a name="sdk-tutorials-explore-mqtt"></a>
 
-The `pubsub.py` sample calls `mtls_from_path` (shown here) in the [https://github.com/awslabs/aws-crt-python/blob/89207bcf1387177034e02fe29e8e469ca45e39b7/awscrt/awsiot_mqtt_connection_builder.py](https://github.com/awslabs/aws-crt-python/blob/89207bcf1387177034e02fe29e8e469ca45e39b7/awscrt/awsiot_mqtt_connection_builder.py) to establish a connection with AWS IoT Core by using the MQTT protocol. `mtls_from_path` uses X.509 certificates and TLS v1.2 to authenticate the device. The AWS CRT library handles the lower-level details of that connection.
+The `pubsub.py` sample calls `mtls_from_path` (shown here) in the [`mqtt_connection_builder`](https://github.com/awslabs/aws-crt-python/blob/89207bcf1387177034e02fe29e8e469ca45e39b7/awscrt/awsiot_mqtt_connection_builder.py) to establish a connection with AWS IoT Core by using the MQTT protocol. `mtls_from_path` uses X.509 certificates and TLS v1.2 to authenticate the device. The AWS CRT library handles the lower-level details of that connection.
 
 ```
 mqtt_connection = mqtt_connection_builder.mtls_from_path(
@@ -156,7 +156,7 @@ The keep alive value, in seconds, to send in the `CONNECT` request. A ping will 
 #### MQTT over WSS
 <a name="sdk-tutorials-explore-mqtt-wss"></a>
 
-The `pubsub.py` sample calls `websockets_with_default_aws_signing` (shown here) in the [https://github.com/awslabs/aws-crt-python/blob/89207bcf1387177034e02fe29e8e469ca45e39b7/awscrt/awsiot_mqtt_connection_builder.py](https://github.com/awslabs/aws-crt-python/blob/89207bcf1387177034e02fe29e8e469ca45e39b7/awscrt/awsiot_mqtt_connection_builder.py) to establish a connection with AWS IoT Core using the MQTT protocol over WSS. `websockets_with_default_aws_signing` creates an MQTT connection over WSS using [Signature V4](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) to authenticate the device.
+The `pubsub.py` sample calls `websockets_with_default_aws_signing` (shown here) in the [`mqtt_connection_builder`](https://github.com/awslabs/aws-crt-python/blob/89207bcf1387177034e02fe29e8e469ca45e39b7/awscrt/awsiot_mqtt_connection_builder.py) to establish a connection with AWS IoT Core using the MQTT protocol over WSS. `websockets_with_default_aws_signing` creates an MQTT connection over WSS using [Signature V4](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) to authenticate the device.
 
 ```
 mqtt_connection = mqtt_connection_builder.websockets_with_default_aws_signing(
@@ -324,7 +324,7 @@ The message payload
 The format for this is application specific.
 
 `kwargs`
-Possible additional arguments as described in [https://awslabs.github.io/aws-crt-python/api/mqtt.html#awscrt.mqtt.Connection.subscribe](https://awslabs.github.io/aws-crt-python/api/mqtt.html#awscrt.mqtt.Connection.subscribe).
+Possible additional arguments as described in [`mqtt.Connection.subscribe`](https://awslabs.github.io/aws-crt-python/api/mqtt.html#awscrt.mqtt.Connection.subscribe).
 
 In the `pubsub.py` sample, `on_message_received` only displays the topic and its payload. It also counts the messages received to end the program after the limit is reached.
 
@@ -342,7 +342,7 @@ If a device's session no longer exists when it reconnects, it must resubscribe t
 ## Connect your device and communicate with AWS IoT Core
 <a name="sdk-tutorials-experiment"></a>
 
-This section presents some exercises to help you explore different aspects of connecting your device to AWS IoT Core. For these exercises, you’ll use the [MQTT test client](https://console.aws.amazon.com/iot/home#/test) in the AWS IoT console to see what your device publishes and to publish messages to your device. These exercises use the [https://github.com/aws/aws-iot-device-sdk-python-v2/blob/master/samples/pubsub.py](https://github.com/aws/aws-iot-device-sdk-python-v2/blob/master/samples/pubsub.py) sample from the [AWS IoT Device SDK v2 for Python](https://github.com/aws/aws-iot-device-sdk-python-v2/tree/master/samples#sample-apps-for-the-aws-iot-device-sdk-v2-for-python) and build on your experience with [Getting started with AWS IoT Core tutorials](iot-gs.md) tutorials.
+This section presents some exercises to help you explore different aspects of connecting your device to AWS IoT Core. For these exercises, you’ll use the [MQTT test client](https://console.aws.amazon.com/iot/home#/test) in the AWS IoT console to see what your device publishes and to publish messages to your device. These exercises use the [`pubsub.py`](https://github.com/aws/aws-iot-device-sdk-python-v2/blob/master/samples/pubsub.py) sample from the [AWS IoT Device SDK v2 for Python](https://github.com/aws/aws-iot-device-sdk-python-v2/tree/master/samples#sample-apps-for-the-aws-iot-device-sdk-v2-for-python) and build on your experience with [Getting started with AWS IoT Core tutorials](iot-gs.md) tutorials.
 
 **Topics**
 + [Subscribe to wild card topic filters](#sdk-tutorials-experiment-wild)

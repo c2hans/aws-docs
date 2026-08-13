@@ -11,7 +11,7 @@ To create a package, prepare your installable software or assets, one file per o
 
 Different platforms might sometimes use the same file, but all files that you attach to your package must be listed in the `Files` section of the manifest. If you're creating a package by using the simple workflow in the console, the manifest is generated for you. The maximum number of files that you can attach to a single document is 20. The maximum size of each file is 1 GB. For more information about supported platforms, see [Supported package platforms and architectures](distributor.md#what-is-a-package-platforms).
 
-When you create a package, the system creates a new [SSM document](documents.md). This document allows you to deploy the package to managed nodes.
+When you create a package, the system creates a new [SSM document](documents.md). With this document, you can deploy the package to managed nodes.
 
 For demonstration purposes only, an example package, [ExamplePackage.zip](https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/ExamplePackage.zip), is available for you to download from our website. The example package includes a completed JSON manifest and three .zip files containing installers for PowerShell v7.0.0. The installation and uninstallation scripts don't contain valid commands. Although you must zip each software installable and scripts into a .zip file to create a package in the **Advanced** workflow, you don't zip installable assets in the **Simple** workflow.
 
@@ -403,16 +403,16 @@ Prepare your package by copying or moving all .zip files into a folder or direct
 
 1. Copy or move all .zip archive files that you specified in the manifest to a folder or directory. Don't zip the folder or directory you move your .zip archive files and manifest file to.
 
-1. Create a bucket or choose an existing bucket. For more information, see [Create a Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/CreatingABucket.html) in the *Amazon Simple Storage Service Getting Started Guide*. For more information about how to run an AWS CLI command to create a bucket, see [https://docs.aws.amazon.com/cli/latest/reference/s3/mb.html](https://docs.aws.amazon.com/cli/latest/reference/s3/mb.html) in the *AWS CLI Command Reference*.
+1. Create a bucket or choose an existing bucket. For more information, see [Create a Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/CreatingABucket.html) in the *Amazon Simple Storage Service Getting Started Guide*. For more information about how to run an AWS CLI command to create a bucket, see [**mb**](https://docs.aws.amazon.com/cli/latest/reference/s3/mb.html) in the *AWS CLI Command Reference*.
 
-1. Upload the folder or directory to the bucket. For more information, see [Add an Object to a Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/PuttingAnObjectInABucket.html) in the *Amazon Simple Storage Service Getting Started Guide*. If you plan to paste your JSON manifest into the AWS Systems Manager console, don't upload the manifest. For more information about how to run an AWS CLI command to upload files to a bucket, see [https://docs.aws.amazon.com/cli/latest/reference/s3/mv.html](https://docs.aws.amazon.com/cli/latest/reference/s3/mv.html) in the *AWS CLI Command Reference*.
+1. Upload the folder or directory to the bucket. For more information, see [Add an Object to a Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/PuttingAnObjectInABucket.html) in the *Amazon Simple Storage Service Getting Started Guide*. If you plan to paste your JSON manifest into the AWS Systems Manager console, don't upload the manifest. For more information about how to run an AWS CLI command to upload files to a bucket, see [**mv**](https://docs.aws.amazon.com/cli/latest/reference/s3/mv.html) in the *AWS CLI Command Reference*.
 
 1. On the bucket's home page, choose the folder or directory that you uploaded. If you uploaded your files to a subfolder in a bucket, be sure to note the subfolder (also known as a *prefix*). You need the prefix to add your package to Distributor.
 
 ### Step 4: Add a package to Distributor
 <a name="distributor-working-with-packages-add"></a>
 
-You can use the AWS Systems Manager console, AWS command line tools (AWS CLI and AWS Tools for PowerShell), or AWS SDKs to add a new package to Distributor. When you add a package, you're adding a new [SSM document](documents.md). The document allows you to deploy the package to managed nodes.
+You can use the AWS Systems Manager console, AWS command line tools (AWS CLI and AWS Tools for PowerShell), or AWS SDKs to add a new package to Distributor. When you add a package, you're adding a new [SSM document](documents.md). The document lets you deploy the package to managed nodes.
 
 **Topics**
 + [Add a package using the console](#create-pkg-console)
@@ -485,4 +485,4 @@ You can use the AWS CLI to create a package. Have the URL ready from the bucket 
        --name "{{package-name}}"
    ```
 
-For information about other options you can use with the **create-document** command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/create-document.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/create-document.html) in the AWS Systems Manager section of the *AWS CLI Command Reference*. For information about other options you can use with the **get-document** command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/get-document.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-document.html).
+For information about other options you can use with the **create-document** command, see [**create-document**](https://docs.aws.amazon.com/cli/latest/reference/ssm/create-document.html) in the AWS Systems Manager section of the *AWS CLI Command Reference*. For information about other options you can use with the **get-document** command, see [**get-document**](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-document.html).

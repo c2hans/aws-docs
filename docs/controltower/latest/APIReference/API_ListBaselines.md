@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Lis
 # ListBaselines
 <a name="API_ListBaselines"></a>
 
-Returns a summary list of all available baselines. For usage examples, see [https://docs.aws.amazon.com/controltower/latest/userguide/baseline-api-examples.html](https://docs.aws.amazon.com/controltower/latest/userguide/baseline-api-examples.html).
+Returns a summary list of all available baselines. For usage examples, see [*the AWS Control Tower User Guide*](https://docs.aws.amazon.com/controltower/latest/userguide/baseline-api-examples.html).
 
 ## Request Syntax
 <a name="API_ListBaselines_RequestSyntax"></a>

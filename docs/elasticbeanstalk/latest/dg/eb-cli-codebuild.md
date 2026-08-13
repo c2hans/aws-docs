@@ -16,7 +16,7 @@ For information about the AWS services offered in each region, see [Region Table
 
 **To create an Elastic Beanstalk application that uses CodeBuild**
 
-1. Include a CodeBuild build specification file, [https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html), in your application folder.
+1. Include a CodeBuild build specification file, [`buildspec.yml`](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html), in your application folder.
 
 1. Add an `eb_codebuild_settings` entry with options specific to Elastic Beanstalk to the file.
 

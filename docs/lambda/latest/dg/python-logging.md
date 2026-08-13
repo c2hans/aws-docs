@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/python-logging.html
 
 AWS Lambda automatically monitors Lambda functions and sends log entries to Amazon CloudWatch. Your Lambda function comes with a CloudWatch Logs log group and a log stream for each instance of your function. The Lambda runtime environment sends details about each invocation and other output from your function's code to the log stream. For more information about CloudWatch Logs, see [Sending Lambda function logs to CloudWatch Logs](monitoring-cloudwatchlogs.md).
 
-To output logs from your function code, you can use the built-in [https://docs.python.org/3/library/logging.html](https://docs.python.org/3/library/logging.html) module. For more detailed entries, you can use any logging library that writes to `stdout` or `stderr`.
+To output logs from your function code, you can use the built-in [`logging`](https://docs.python.org/3/library/logging.html) module. For more detailed entries, you can use any logging library that writes to `stdout` or `stderr`.
 
 ## Printing to the log
 <a name="python-logging-output"></a>

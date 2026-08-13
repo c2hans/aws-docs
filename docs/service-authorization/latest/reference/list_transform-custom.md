@@ -145,6 +145,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_transform-custom-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [GetAnalysisArtifactDownloadUrl](https://docs.aws.amazon.com/transform/latest/userguide/custom.html)  **
+  - **Description:** Grants permission to invoke GetAnalysisArtifactDownloadUrl on AWS Transform custom
+  - **Resource types (\*required):** [analysis\*](#list_transform-custom-resource-analysis)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_transform-custom-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
 - **   [GetCampaign](https://docs.aws.amazon.com/transform/latest/userguide/custom.html)  **
   - **Description:** Grants permission to invoke GetCampaign on AWS Transform custom
   - **Resource types (\*required):** [campaign\*](#list_transform-custom-resource-campaign)
@@ -198,6 +204,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** List
+
+- **   [ListAnalysisArtifacts](https://docs.aws.amazon.com/transform/latest/userguide/custom.html)  **
+  - **Description:** Grants permission to invoke ListAnalysisArtifacts on AWS Transform custom
+  - **Resource types (\*required):** [analysis\*](#list_transform-custom-resource-analysis)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_transform-custom-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
 
 - **   [ListCampaignRepositories](https://docs.aws.amazon.com/transform/latest/userguide/custom.html)  **
   - **Description:** Grants permission to invoke ListCampaignRepositories on AWS Transform custom

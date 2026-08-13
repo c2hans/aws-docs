@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/tag-editor/latest/userguide/tags-in-iam-
 
 [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com//IAM/latest/UserGuide/) is the AWS service that you use to create and manage permissions policies that determine who can access your AWS resources. Every attempt to access an AWS service or read or write an AWS resource is access controlled by an IAM policy.
 
-These policies allow you to provide granular access to your resources. One of the features you can use to fine tune this access is the [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html) element of the policy. This element lets you specify the conditions that must match the request to determine if the request can proceed. Among the things you can check with the `Condition` element are the following:
+These policies allow you to provide granular access to your resources. One of the features you can use to fine tune this access is the [`Condition`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html) element of the policy. This element lets you specify the conditions that must match the request to determine if the request can proceed. Among the things you can check with the `Condition` element are the following:
 + Tags that are attached to the user or role making the request.
 + Tags attached to the resource that is the object of the request.
 
@@ -32,10 +32,10 @@ For complete details about a condition key and how to use it, see the page linke
 
 | Condition key name | Description |
 | --- | --- |
-| [https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principaltag](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principaltag) | Compares the tag attached to the principal (IAM role or user) making the request with the tag that you specify in the policy. |
-| [https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag) | Compares the tag key-value pair that was passed to the request as a parameter with the tag key-value pair that you specify in the policy. |
-| [https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag) | Compares the key-value pair that is attached to the resource with the tag key-value pair that you specify in the policy. |
-| [https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys) | Compares only the tag keys in the request with the keys that you specify in the policy.  |
+| [aws:PrincipalTag](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principaltag) | Compares the tag attached to the principal (IAM role or user) making the request with the tag that you specify in the policy. |
+| [aws:RequestTag](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag) | Compares the tag key-value pair that was passed to the request as a parameter with the tag key-value pair that you specify in the policy. |
+| [aws:ResourceTag](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag) | Compares the key-value pair that is attached to the resource with the tag key-value pair that you specify in the policy. |
+| [aws:TagKeys](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys) | Compares only the tag keys in the request with the keys that you specify in the policy.  |
 
 ## Example IAM policies that use tags
 <a name="tags-iam-policy-examples"></a>

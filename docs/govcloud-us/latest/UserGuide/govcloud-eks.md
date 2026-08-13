@@ -20,7 +20,6 @@ This service is available in the following AWS GovCloud (US) Regions:
 The following differences apply to Amazon EKS:
 +  [Amazon EKS on Fargate](https://docs.aws.amazon.com/eks/latest/userguide/fargate.html) isn’t available.
 +  [Amazon Managed Service for Prometheus](https://docs.aws.amazon.com/eks/latest/userguide/prometheus.html) isn’t available.
-+ The Mountpoint for Amazon S3 CSI driver isn’t available as an Amazon EKS add-on and self-managed installation isn’t officially supported.
 +  Amazon EKS Anywhere isn’t available.
 +  Amazon EKS Hybrid Nodes isn’t available.
 +  [Amazon Application Recovery Controller’s (ARC) Zonal Shift](https://docs.aws.amazon.com/eks/latest/userguide/zone-shift.html) in Amazon EKS is supported.

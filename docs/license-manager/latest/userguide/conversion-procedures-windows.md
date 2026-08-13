@@ -76,7 +76,7 @@ You might need to update the AWS CLI to run certain commands and receive all req
    aws ec2 describe-instances --instance-ids {{<instance-id>}} --query "Reservations[*].Instances[*].{InstanceId: InstanceId, PlatformDetails: PlatformDetails, ProductCode: ProductCode, UsageOperation: UsageOperation, UsageOperationUpdateTime: UsageOperationUpdateTime}"
    ```
 
-1. The following is an example response to the `describe-instances` command. Note that the `UsageOperation` value is the billing information code associated with the license. The `UsageOperationUpdateTime` is the time when the billing code was updated. For more information, see [https://docs.aws.amazon.com//AWSEC2/latest/APIReference/API_DescribeInstances.html](https://docs.aws.amazon.com//AWSEC2/latest/APIReference/API_DescribeInstances.html) in the *Amazon EC2 API reference*.
+1. The following is an example response to the `describe-instances` command. Note that the `UsageOperation` value is the billing information code associated with the license. The `UsageOperationUpdateTime` is the time when the billing code was updated. For more information, see [DescribeInstances](https://docs.aws.amazon.com//AWSEC2/latest/APIReference/API_DescribeInstances.html) in the *Amazon EC2 API reference*.
 
    ```
    "InstanceId": "i-0123456789abcdef",

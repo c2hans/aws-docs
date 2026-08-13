@@ -99,7 +99,7 @@ For WirelessMetadata, please refer to wireless device destination payload for re
 ## Configuring the position of your devices using the console
 <a name="lorawan-location-devices-console"></a>
 
-To configure and manage the position of your devices by using the AWS Management Console, first sign in to the console and then go to the [https://console.aws.amazon.com/iot/home#/wireless/devices](https://console.aws.amazon.com/iot/home#/wireless/devices) hub page of the AWS IoT console.
+To configure and manage the position of your devices by using the AWS Management Console, first sign in to the console and then go to the [** Devices**](https://console.aws.amazon.com/iot/home#/wireless/devices) hub page of the AWS IoT console.
 
 **Add position information**
 To add position information for your device:
@@ -130,7 +130,7 @@ After you've configured your device's position, AWS IoT Core for LoRaWAN creates
 **Note**
 If you haven't activated Amazon Location Service maps, you'll see a message indicating that you'll have to use Amazon Location Service to access the map and view the position. Using Amazon Location Service maps may incur additional charges to your AWS account. For more information, see [AWS IoT Core pricing](https://aws.amazon.com/iot-core/pricing/).
 
-The map, `iotwireless.map`, acts as a source of map data which is accessed using `Get` API operations, such as [https://docs.aws.amazon.com/location-maps/latest/APIReference/API_GetMapTile.html](https://docs.aws.amazon.com/location-maps/latest/APIReference/API_GetMapTile.html). For information about `Get` APIs used with maps, see [Amazon Location Service API reference](https://docs.aws.amazon.com/location-maps/latest/APIReference/Welcome.html).
+The map, `iotwireless.map`, acts as a source of map data which is accessed using `Get` API operations, such as [`GetMapTile`](https://docs.aws.amazon.com/location-maps/latest/APIReference/API_GetMapTile.html). For information about `Get` APIs used with maps, see [Amazon Location Service API reference](https://docs.aws.amazon.com/location-maps/latest/APIReference/Welcome.html).
 
 To get additional details about this map, go to the Amazon Location Service console, choose **maps**, and then choose [iotwireless.map](https://console.aws.amazon.com/location/maps/home#/describe/iotwireless.map). For more information, see [Maps](https://docs.aws.amazon.com/location/latest/developerguide/map-concepts.html) in the *Amazon Location Service developer guide*.
 

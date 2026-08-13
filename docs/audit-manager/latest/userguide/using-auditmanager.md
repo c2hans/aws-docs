@@ -13,7 +13,7 @@ You can access AWS Audit Manager through various options, depending on your spec
   Access the Audit Manager console directly at [https://console.aws.amazon.com/auditmanager/home](https://console.aws.amazon.com/auditmanager/home), which provides a user-friendly interface for managing your audits and related resources.
 + **Audit Manager API**
 
-   Interact with Audit Manager programmatically through the Audit Manager API, allowing you to automate and integrate tasks into your existing workflows. For more information, see the [https://docs.aws.amazon.com/audit-manager/latest/APIReference/Welcome.html](https://docs.aws.amazon.com/audit-manager/latest/APIReference/Welcome.html).
+   Interact with Audit Manager programmatically through the Audit Manager API, allowing you to automate and integrate tasks into your existing workflows. For more information, see the [*AWS Audit Manager API Reference*](https://docs.aws.amazon.com/audit-manager/latest/APIReference/Welcome.html).
 + **AWS SDKs**
 
   Use AWS software development kits (SDKs) to interact with Audit Manager programmatically, enabling you to write code in various programming languages. For more information, see [Using AWS Audit Manager with an AWS SDK](sdk-general-information-section.md).

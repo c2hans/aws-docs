@@ -18,7 +18,7 @@ Returns a new column containing a customizable value in each row that indicates 
 + `trueString` – Specifies the string value to use if an outlier is detected. The default is "True".
 + `falseString` – Specifies the string value to use if no outlier is detected. The default is "False".
 
-The following examples display syntax for a single [https://docs.aws.amazon.com/databrew/latest/dg/API_RecipeAction.html](https://docs.aws.amazon.com/databrew/latest/dg/API_RecipeAction.html) operation. A *recipe* contains at least one [https://docs.aws.amazon.com/databrew/latest/dg/API_RecipeStep.html](https://docs.aws.amazon.com/databrew/latest/dg/API_RecipeStep.html) operation, and a recipe step contains at least one recipe action. A *recipe action* runs the data transform that you specify. A group of recipe actions run in sequential order to create the final dataset.
+The following examples display syntax for a single [RecipeAction](https://docs.aws.amazon.com/databrew/latest/dg/API_RecipeAction.html) operation. A *recipe* contains at least one [RecipeStep](https://docs.aws.amazon.com/databrew/latest/dg/API_RecipeStep.html) operation, and a recipe step contains at least one recipe action. A *recipe action* runs the data transform that you specify. A group of recipe actions run in sequential order to create the final dataset.
 
 ------
 #### [ JSON ]
@@ -43,7 +43,7 @@ The following shows an example `RecipeAction` to use as member of an example `Re
 }
 ```
 
-For more information on using this recipe action in an API operation, see [https://docs.aws.amazon.com/databrew/latest/dg/API_CreateRecipe.html](https://docs.aws.amazon.com/databrew/latest/dg/API_CreateRecipe.html) or [https://docs.aws.amazon.com/databrew/latest/dg/API_UpdateRecipe.html](https://docs.aws.amazon.com/databrew/latest/dg/API_UpdateRecipe.html). You can use these and other API operations in your own code.
+For more information on using this recipe action in an API operation, see [CreateRecipe](https://docs.aws.amazon.com/databrew/latest/dg/API_CreateRecipe.html) or [UpdateRecipe](https://docs.aws.amazon.com/databrew/latest/dg/API_UpdateRecipe.html). You can use these and other API operations in your own code.
 
 ------
 #### [ YAML ]
@@ -64,6 +64,6 @@ The following shows an example `RecipeAction` to use as member of an example `Re
     threshold: '{{1.5}}'
 ```
 
-For more information on using this recipe action in an API operation, see [https://docs.aws.amazon.com/databrew/latest/dg/API_CreateRecipe.html](https://docs.aws.amazon.com/databrew/latest/dg/API_CreateRecipe.html) or [https://docs.aws.amazon.com/databrew/latest/dg/API_UpdateRecipe.html](https://docs.aws.amazon.com/databrew/latest/dg/API_UpdateRecipe.html). You can use these and other API operations in your own code.
+For more information on using this recipe action in an API operation, see [CreateRecipe](https://docs.aws.amazon.com/databrew/latest/dg/API_CreateRecipe.html) or [UpdateRecipe](https://docs.aws.amazon.com/databrew/latest/dg/API_UpdateRecipe.html). You can use these and other API operations in your own code.
 
 ------

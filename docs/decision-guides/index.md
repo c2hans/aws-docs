@@ -31,7 +31,7 @@ Choose the right AWS compute service for your modern app development. Whether yo
 
 Choose the right AWS storage or database service for your data. AWS offers block, file, object, and cache storage options, plus purpose-built databases for relational, key-value, document, graph, and other data models.
 
-- [Choosing an AWS database service](/decision-guides/latest/decision-guides/databases-on-aws-how-to-choose.html): Evaluate relational, key-value, document, graph, and other purpose-built database services to match your data model. **Last updated: June 2025**
+- [Choosing an AWS database service](/decision-guides/latest/decision-guides/databases-on-aws-how-to-choose.html): Evaluate relational, key-value, document, graph, and other purpose-built database services to match your data model. **Last updated: June 2026**
 - [Choosing an AWS storage service](/decision-guides/latest/decision-guides/choosing-aws-storage-service.html): Compare block, file, and object storage services to choose the right storage solution for your data access patterns. **Last updated: April 2025**
 
 ## Machine Learning

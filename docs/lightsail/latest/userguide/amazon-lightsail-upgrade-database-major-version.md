@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 # Upgrade the major version of a Lightsail database
 <a name="amazon-lightsail-upgrade-database-major-version"></a>
 
-When Amazon Lightsail supports a new version of a database engine, you can upgrade your database to the new version. Lightsail offers two database blueprints, MySQL and PostgreSQL. This guide describes how to upgrade the major version for your MySQL or PostgreSQL database instance. You can upgrade the database major version only by using the [https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_UpdateRelationalDatabase.html](https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_UpdateRelationalDatabase.html) API action.
+When Amazon Lightsail supports a new version of a database engine, you can upgrade your database to the new version. Lightsail offers two database blueprints, MySQL and PostgreSQL. This guide describes how to upgrade the major version for your MySQL or PostgreSQL database instance. You can upgrade the database major version only by using the [update-relational-database](https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_UpdateRelationalDatabase.html) API action.
 
 We will use AWS CloudShell to perform the upgrade. CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the Lightsail console. With CloudShell, you can run AWS Command Line Interface (AWS CLI) commands using your preferred shell, such as Bash, PowerShell, or Z shell. You can do this without downloading or installing command line tools. For more information about how to set up and use CloudShell, see [AWS CloudShell in Lightsail](amazon-lightsail-cloudshell.md).
 
@@ -58,7 +58,7 @@ Complete the following procedure to upgrade the database major version for your 
     --region {{DatabaseRegion}}
    ```
 
-   (Optional) To apply the upgrade immediately, include the `--apply-immediately` parameter in the command. You will see a response similar to the following example, and your database will become unavailable while the upgrade is being applied. For more information, see [https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_UpdateRelationalDatabase.html](https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_UpdateRelationalDatabase.html) in the Lightsail API Reference.
+   (Optional) To apply the upgrade immediately, include the `--apply-immediately` parameter in the command. You will see a response similar to the following example, and your database will become unavailable while the upgrade is being applied. For more information, see [update-relational-database](https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_UpdateRelationalDatabase.html) in the Lightsail API Reference.
 ![The successful result of the update-relational-database --apply-immediately command in the CloudShell window.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/mysql80-upgrade-successful.png)
 
 1. Enter the following command to verify that the major version upgrade is scheduled for the next database maintenance window. In the command, replace {{DatabaseName}} with the name of your database, and {{DatabaseRegion}} with the AWS Region that your database is in.
@@ -69,7 +69,7 @@ Complete the following procedure to upgrade the database major version for your 
     --region {{DatabaseRegion}}
    ```
 
-   In the `get-relational-database` response, the database [https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_UpdateRelationalDatabase.html#Lightsail-Type-RelationalDatabase-state](https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_UpdateRelationalDatabase.html#Lightsail-Type-RelationalDatabase-state) informs you of a pending major version upgrade during the next maintenance window. You can locate the date and time of the next maintenance window in the [https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_UpdateRelationalDatabase.html#Lightsail-Type-RelationalDatabase-preferredMaintenanceWindow](https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_UpdateRelationalDatabase.html#Lightsail-Type-RelationalDatabase-preferredMaintenanceWindow) section of the response.
+   In the `get-relational-database` response, the database [state](https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_UpdateRelationalDatabase.html#Lightsail-Type-RelationalDatabase-state) informs you of a pending major version upgrade during the next maintenance window. You can locate the date and time of the next maintenance window in the [preferredMaintenanceWindow](https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_UpdateRelationalDatabase.html#Lightsail-Type-RelationalDatabase-preferredMaintenanceWindow) section of the response.
 
    **Database instance state**
 

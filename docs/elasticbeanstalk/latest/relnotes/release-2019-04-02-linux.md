@@ -12,29 +12,52 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 ## Changes
 <a name="release-2019-04-02-linux.changes"></a>
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Instance types** | **Regions** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before March 11, 2019 to all Linux-based platforms.<br />See also the **Node.js** and **Ruby** entries in **Platform-specific updates** for platform-specific security updates. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-04-02-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-04-02-linux.html) |
-| **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions. In particular, we added support for the new Amazon EC2 Bare Metal instances, which provide your applications with direct access to processor and memory resources of the underlying server. For more information, see [Introducing Five New Amazon EC2 Bare Metal Instances](https://aws.amazon.com/about-aws/whats-new/2019/02/introducing-five-new-amazon-ec2-bare-metal-instances/).<br />The added instance types are listed in the following table.[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-04-02-linux.html) |
-| **Apache** | Updated platforms supporting the Apache HTTP Server 2.4 to version 2.4.38. For details, see [Changes with Apache 2.4.x](https://downloads.apache.org/httpd/CHANGES_2.4) on the *Apache Software Foundation* website. |
-| **Go** | Updated to minor revision 1.12.1. For details, see [go1.12](https://golang.org/doc/devel/release.html#go1.12) in *The Go Programming Language Release History*. |
-| **Multicontainer Docker** |  +  Updated the ECS agent to version 1.26.0. <br />+  Added ECS support in these AWS Regions:  China (Ningxia) – cn-northwest-1 AWS GovCloud (US-East) – us-gov-east-1 AWS GovCloud (US-West) – us-gov-west-1    |
-| **Node.js** |  +  Updated the Node.js platform to add support for Node versions [10.15.3](https://nodejs.org/en/blog/release/v10.15.3/), [8.15.1](https://nodejs.org/en/blog/release/v8.15.1/), and [6.17.0](https://nodejs.org/en/blog/release/v6.17.0/). <br />+  These versions include the Node.js [February 2019 Security Releases](https://nodejs.org/en/blog/vulnerability/february-2019-security-releases/).   |
-| **Ruby** |  +  Updated the Ruby 2.6 and 2.5 configurations to Ruby releases [2.6.2](https://www.ruby-lang.org/en/news/2019/03/13/ruby-2-6-2-released/), and [2.5.5](https://www.ruby-lang.org/en/news/2019/03/15/ruby-2-5-5-released/), respectively. <br />+  These versions include fixes to [Multiple vulnerabilities in RubyGems](https://www.ruby-lang.org/en/news/2019/03/05/multiple-vulnerabilities-in-rubygems/).   |
-| **m5.metal** |  + US East (Ohio) – us-east-2<br />+ US East (N. Virginia) – us-east-1<br />+ US West (N. California) – us-west-1<br />+ US West (Oregon) – us-west-2<br />+ Asia Pacific (Mumbai) – ap-south-1<br />+ Asia Pacific (Seoul) – ap-northeast-2<br />+ Asia Pacific (Singapore) – ap-southeast-1<br />+ Asia Pacific (Sydney) – ap-southeast-2<br />+ Asia Pacific (Tokyo) – ap-northeast-1<br />+ Europe (Frankfurt) – eu-central-1<br />+ Europe (Ireland) – eu-west-1<br />+ Europe (London) – eu-west-2<br />+ Europe (Paris) – eu-west-3<br />+ Europe (Stockholm) – eu-north-1  |
-| **m5d.metal** |  + US East (Ohio) – us-east-2<br />+ US East (N. Virginia) – us-east-1<br />+ US West (Oregon) – us-west-2<br />+ Asia Pacific (Mumbai) – ap-south-1<br />+ Asia Pacific (Seoul) – ap-northeast-2<br />+ Asia Pacific (Singapore) – ap-southeast-1<br />+ Asia Pacific (Sydney) – ap-southeast-2<br />+ Europe (Frankfurt) – eu-central-1<br />+ Europe (Ireland) – eu-west-1<br />+ Europe (Paris) – eu-west-3<br />+ Europe (Stockholm) – eu-north-1  |
-| **r5.metal** |  + US East (Ohio) – us-east-2<br />+ US East (N. Virginia) – us-east-1<br />+ US West (N. California) – us-west-1<br />+ US West (Oregon) – us-west-2<br />+ Asia Pacific (Mumbai) – ap-south-1<br />+ Asia Pacific (Seoul) – ap-northeast-2<br />+ Asia Pacific (Singapore) – ap-southeast-1<br />+ Europe (Frankfurt) – eu-central-1<br />+ Europe (Ireland) – eu-west-1<br />+ Europe (Paris) – eu-west-3<br />+ Europe (Stockholm) – eu-north-1<br />+ AWS GovCloud (US-West) – us-gov-west-1  |
-| **r5d.metal** |  + US East (Ohio) – us-east-2<br />+ US East (N. Virginia) – us-east-1<br />+ US West (N. California) – us-west-1<br />+ Asia Pacific (Mumbai) – ap-south-1<br />+ Asia Pacific (Seoul) – ap-northeast-2<br />+ Asia Pacific (Singapore) – ap-southeast-1<br />+ Europe (Frankfurt) – eu-central-1<br />+ Europe (Paris) – eu-west-3<br />+ Europe (Stockholm) – eu-north-1<br />+ AWS GovCloud (US-West) – us-gov-west-1  |
-| **z1d.metal** |  + US East (N. Virginia) – us-east-1<br />+ US West (N. California) – us-west-1<br />+ US West (Oregon) – us-west-2<br />+ Asia Pacific (Singapore) – ap-southeast-1<br />+ Asia Pacific (Tokyo) – ap-northeast-1<br />+ Europe (Ireland) – eu-west-1  |
-| **c5, c5d, r5, r5d** |  + China (Beijing) – cn-north-1<br />+ China (Ningxia) – cn-northwest-1  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before March 11, 2019 to all Linux-based platforms.<br />See also the <b>Node.js</b> and <b>Ruby</b> entries in <b>Platform-specific updates</b> for platform-specific security updates.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Apache</b></td><td>Updated platforms supporting the Apache HTTP Server 2.4 to version 2.4.38. For details, see <a href="https://downloads.apache.org/httpd/CHANGES_2.4">Changes with Apache 2.4.x</a> on the <i>Apache Software Foundation</i> website.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Go</b></td><td>Updated to minor revision 1.12.1. For details, see <a href="https://golang.org/doc/devel/release.html#go1.12">go1.12</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Multicontainer Docker</b></td><td> <ul><li> Updated the ECS agent to version 1.26.0. </li><li> Added ECS support in these AWS Regions: <ul><li>China (Ningxia) – cn-northwest-1</li><li>AWS GovCloud (US-East) – us-gov-east-1</li><li>AWS GovCloud (US-West) – us-gov-west-1</li></ul> </li></ul> </td></tr>
+  <tr><td><b>Node.js</b></td><td> <ul><li> Updated the Node.js platform to add support for Node versions <a href="https://nodejs.org/en/blog/release/v10.15.3/">10.15.3</a>, <a href="https://nodejs.org/en/blog/release/v8.15.1/">8.15.1</a>, and <a href="https://nodejs.org/en/blog/release/v6.17.0/">6.17.0</a>. </li><li> These versions include the Node.js <a href="https://nodejs.org/en/blog/vulnerability/february-2019-security-releases/">February 2019 Security Releases</a>. </li></ul> </td></tr>
+  <tr><td><b>Ruby</b></td><td> <ul><li> Updated the Ruby 2.6 and 2.5 configurations to Ruby releases <a href="https://www.ruby-lang.org/en/news/2019/03/13/ruby-2-6-2-released/">2.6.2</a>, and <a href="https://www.ruby-lang.org/en/news/2019/03/15/ruby-2-5-5-released/">2.5.5</a>, respectively. </li><li> These versions include fixes to <a href="https://www.ruby-lang.org/en/news/2019/03/05/multiple-vulnerabilities-in-rubygems/">Multiple vulnerabilities in RubyGems</a>. </li></ul> </td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Instance types</b></td><td>Added support for more Amazon EC2 instance types in some AWS Regions. In particular, we added support for the new Amazon EC2 Bare Metal instances, which provide your applications with direct access to processor and memory resources of the underlying server. For more information, see <a href="https://aws.amazon.com/about-aws/whats-new/2019/02/introducing-five-new-amazon-ec2-bare-metal-instances/">Introducing Five New Amazon EC2 Bare Metal Instances</a>.<br />The added instance types are listed in the following table.
+<table>
+<thead>
+  <tr><th><b>Instance types</b></th><th><b>Regions</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>m5.metal</b></td><td> <ul><li>US East (Ohio) – us-east-2</li><li>US East (N. Virginia) – us-east-1</li><li>US West (N. California) – us-west-1</li><li>US West (Oregon) – us-west-2</li><li>Asia Pacific (Mumbai) – ap-south-1</li><li>Asia Pacific (Seoul) – ap-northeast-2</li><li>Asia Pacific (Singapore) – ap-southeast-1</li><li>Asia Pacific (Sydney) – ap-southeast-2</li><li>Asia Pacific (Tokyo) – ap-northeast-1</li><li>Europe (Frankfurt) – eu-central-1</li><li>Europe (Ireland) – eu-west-1</li><li>Europe (London) – eu-west-2</li><li>Europe (Paris) – eu-west-3</li><li>Europe (Stockholm) – eu-north-1</li></ul> </td></tr>
+  <tr><td><b>m5d.metal</b></td><td> <ul><li>US East (Ohio) – us-east-2</li><li>US East (N. Virginia) – us-east-1</li><li>US West (Oregon) – us-west-2</li><li>Asia Pacific (Mumbai) – ap-south-1</li><li>Asia Pacific (Seoul) – ap-northeast-2</li><li>Asia Pacific (Singapore) – ap-southeast-1</li><li>Asia Pacific (Sydney) – ap-southeast-2</li><li>Europe (Frankfurt) – eu-central-1</li><li>Europe (Ireland) – eu-west-1</li><li>Europe (Paris) – eu-west-3</li><li>Europe (Stockholm) – eu-north-1</li></ul> </td></tr>
+  <tr><td><b>r5.metal</b></td><td> <ul><li>US East (Ohio) – us-east-2</li><li>US East (N. Virginia) – us-east-1</li><li>US West (N. California) – us-west-1</li><li>US West (Oregon) – us-west-2</li><li>Asia Pacific (Mumbai) – ap-south-1</li><li>Asia Pacific (Seoul) – ap-northeast-2</li><li>Asia Pacific (Singapore) – ap-southeast-1</li><li>Europe (Frankfurt) – eu-central-1</li><li>Europe (Ireland) – eu-west-1</li><li>Europe (Paris) – eu-west-3</li><li>Europe (Stockholm) – eu-north-1</li><li>AWS GovCloud (US-West) – us-gov-west-1</li></ul> </td></tr>
+  <tr><td><b>r5d.metal</b></td><td> <ul><li>US East (Ohio) – us-east-2</li><li>US East (N. Virginia) – us-east-1</li><li>US West (N. California) – us-west-1</li><li>Asia Pacific (Mumbai) – ap-south-1</li><li>Asia Pacific (Seoul) – ap-northeast-2</li><li>Asia Pacific (Singapore) – ap-southeast-1</li><li>Europe (Frankfurt) – eu-central-1</li><li>Europe (Paris) – eu-west-3</li><li>Europe (Stockholm) – eu-north-1</li><li>AWS GovCloud (US-West) – us-gov-west-1</li></ul> </td></tr>
+  <tr><td><b>z1d.metal</b></td><td> <ul><li>US East (N. Virginia) – us-east-1</li><li>US West (N. California) – us-west-1</li><li>US West (Oregon) – us-west-2</li><li>Asia Pacific (Singapore) – ap-southeast-1</li><li>Asia Pacific (Tokyo) – ap-northeast-1</li><li>Europe (Ireland) – eu-west-1</li></ul> </td></tr>
+  <tr><td><b>c5, c5d, r5, r5d</b></td><td> <ul><li>China (Beijing) – cn-north-1</li><li>China (Ningxia) – cn-northwest-1</li></ul> </td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2019-04-02-linux.platforms"></a>

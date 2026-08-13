@@ -293,7 +293,7 @@ The following example input shows a Lambda Hook that will receive the definition
 }
 ```
 
-To see all of the properties available for the resource type, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-dynamodb-table.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-dynamodb-table.html).
+To see all of the properties available for the resource type, see [AWS::DynamoDB::Table](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-dynamodb-table.html).
 
 ### Example Lambda function for resource operations
 <a name="lambda-hooks-create-lambda-function-resource-example-function"></a>

@@ -9,6 +9,8 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/monitor
 
 When you specify the target to invoke in an Amazon EventBridge rule, you can choose from over 20 target types and add up to five targets to each rule.
 
+For related information, see [Configuring EventBridge for Systems Manager events](monitoring-systems-manager-events.md).
+
 Of the various targets, you can choose from Automation, OpsCenter, and Run Command, which are tools in AWS Systems Manager, as target actions when an EventBridge event occurs.
 
 The following are several examples of ways you can use these tools as the target of an EventBridge rule.

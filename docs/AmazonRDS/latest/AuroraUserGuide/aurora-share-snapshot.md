@@ -109,13 +109,13 @@ aws rds modify-db-cluster-snapshot-attribute ^
 ```
 When using the Windows command prompt, you must escape double quotes (") in JSON code by prefixing them with a backslash (\\).
 
-To list the AWS accounts enabled to restore a snapshot, use the [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-cluster-snapshot-attributes.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-cluster-snapshot-attributes.html) AWS CLI command.
+To list the AWS accounts enabled to restore a snapshot, use the [`describe-db-cluster-snapshot-attributes`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-cluster-snapshot-attributes.html) AWS CLI command.
 
 ### RDS API
 <a name="aurora-share-snapshot.API"></a>
 
-You can also share a manual DB cluster snapshot with other AWS accounts by using the Amazon RDS API. To do so, call the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBClusterSnapshotAttribute.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBClusterSnapshotAttribute.html) operation. Specify `restore` for `AttributeName`, and use the `ValuesToAdd` parameter to add a list of the IDs for the AWS accounts that are authorized to restore the manual snapshot.
+You can also share a manual DB cluster snapshot with other AWS accounts by using the Amazon RDS API. To do so, call the [`ModifyDBClusterSnapshotAttribute`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBClusterSnapshotAttribute.html) operation. Specify `restore` for `AttributeName`, and use the `ValuesToAdd` parameter to add a list of the IDs for the AWS accounts that are authorized to restore the manual snapshot.
 
 To make a manual snapshot public and restorable by all AWS accounts, use the value `all`. However, take care not to add the `all` value for any manual snapshots that contain private information that you don't want to be available to all AWS accounts. Also, don't specify `all` for encrypted snapshots, because making such snapshots public isn't supported.
 
-To list all of the AWS accounts permitted to restore a snapshot, use the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBClusterSnapshotAttributes.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBClusterSnapshotAttributes.html) API operation.
+To list all of the AWS accounts permitted to restore a snapshot, use the [`DescribeDBClusterSnapshotAttributes`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBClusterSnapshotAttributes.html) API operation.

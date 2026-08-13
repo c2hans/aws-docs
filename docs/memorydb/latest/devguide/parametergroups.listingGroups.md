@@ -103,7 +103,7 @@ The JSON output of this command will look something like this, listing the name,
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/memorydb/describe-parameter-groups.html](https://docs.aws.amazon.com/cli/latest/reference/memorydb/describe-parameter-groups.html).
+For more information, see [`describe-parameter-groups`](https://docs.aws.amazon.com/cli/latest/reference/memorydb/describe-parameter-groups.html).
 
 ## Listing parameter groups by name (MemoryDB API)
 <a name="parametergroups.listingGroups.api"></a>
@@ -182,4 +182,4 @@ The response from this action will look something like this, listing the name, f
 </DescribeParameterGroupsResponse>
 ```
 
-For more information, see [https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DescribeParameterGroups.html](https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DescribeParameterGroups.html).
+For more information, see [`DescribeParameterGroups`](https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DescribeParameterGroups.html).

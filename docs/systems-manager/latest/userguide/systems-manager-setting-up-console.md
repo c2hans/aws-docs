@@ -8,9 +8,3 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 <a name="systems-manager-setting-up-console"></a>
 
 The following topics describe how to set up the unified AWS Systems Manager console for AWS Organizations organizations and single AWS accounts.
-
-**Topics**
-+ [Setting up Systems Manager console access](systems-manager-setting-up-console-access.md)
-+ [Setting up Systems Manager unified console for an organization](systems-manager-setting-up-organizations.md)
-+ [Setting up Systems Manager unified console for a single account and Region](systems-manager-setting-up-single-account-region.md)
-+ [Disabling the Systems Manager unified console](systems-manager-disable-integrated-console.md)

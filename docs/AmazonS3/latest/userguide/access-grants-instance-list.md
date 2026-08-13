@@ -51,7 +51,7 @@ Response:
 <a name="access-grants-instance-list-rest-api"></a>
 
 For information about the Amazon S3 REST API support for managing an S3 Access Grants instance, see the following sections in the *Amazon Simple Storage Service API Reference*:
-+  [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAccessGrantsInstances.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAccessGrantsInstances.html)
++  [ListAccessGrantsInstances](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAccessGrantsInstances.html)
 
 ## Using the AWS SDKs
 <a name="access-grants-instance-list-using-sdk"></a>

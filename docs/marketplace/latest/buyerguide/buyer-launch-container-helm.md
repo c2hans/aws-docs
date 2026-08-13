@@ -18,7 +18,7 @@ The instructions are provided by the seller and are different for each seller an
 
 1. In **Launch target**, choose the environment that you want to deploy on:
    + Choose **Amazon managed Kubernetes** to deploy the application in Amazon EKS.
-   + Choose **Self-managed Kubernetes** to deploy the application in [https://anywhere.eks.amazonaws.com/docs/overview/](https://anywhere.eks.amazonaws.com/docs/overview/) or on any Kubernetes cluster running in Amazon EC2 or on-premises.
+   + Choose **Self-managed Kubernetes** to deploy the application in [EKS Anywhere](https://anywhere.eks.amazonaws.com/docs/overview/) or on any Kubernetes cluster running in Amazon EC2 or on-premises.
 
 1. If launching in an **Amazon managed Kubernetes** cluster:
 

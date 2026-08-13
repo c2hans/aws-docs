@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/list-tag-r
 # Listing tags for a resource
 <a name="list-tag-resource"></a>
 
-Use the [https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListTagsForResource.html](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListTagsForResource.html) action to list tags for [data stores](getting-started-concepts.md#concept-data-store) and [image sets](getting-started-concepts.md#concept-image-set) in AWS HealthImaging. The following code examples describe how to use the `ListTagsForResource` action with the AWS Management Console, AWS CLI, and AWS SDKs. For more information, see [ Tagging your AWS resources](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html) in the *AWS General Reference Guide*.
+Use the [`ListTagsForResource`](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListTagsForResource.html) action to list tags for [data stores](getting-started-concepts.md#concept-data-store) and [image sets](getting-started-concepts.md#concept-image-set) in AWS HealthImaging. The following code examples describe how to use the `ListTagsForResource` action with the AWS Management Console, AWS CLI, and AWS SDKs. For more information, see [ Tagging your AWS resources](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html) in the *AWS General Reference Guide*.
 
 **To list tags for a resource**
 Choose a menu based on your access preference to AWS HealthImaging.

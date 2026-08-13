@@ -29,4 +29,4 @@ When you create an analyzer to analyze access across the organization in a deleg
 
 1. Enable trusted service access for IAM Access Analyzer in AWS Organizations. See [How to Enable or Disable Trusted Access](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html) in the AWS Organizations User Guide.
 
-1. Register a valid member account of your AWS organization as a delegated administrator using the AWS Organizations [https://docs.aws.amazon.com/organizations/latest/APIReference/API_RegisterDelegatedAdministrator.html](https://docs.aws.amazon.com/organizations/latest/APIReference/API_RegisterDelegatedAdministrator.html) API operation or the `register-delegated-administrator` AWS CLI command.
+1. Register a valid member account of your AWS organization as a delegated administrator using the AWS Organizations [`RegisterDelegatedAdministrator`](https://docs.aws.amazon.com/organizations/latest/APIReference/API_RegisterDelegatedAdministrator.html) API operation or the `register-delegated-administrator` AWS CLI command.

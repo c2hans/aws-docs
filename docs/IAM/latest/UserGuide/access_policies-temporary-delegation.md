@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies-tem
 
 Temporary delegation accelerates onboarding and simplifies management for products from Amazon and AWS Partners that integrate with your AWS accounts. Instead of manually configuring multiple AWS services, you can delegate temporary, limited permissions that allow the product provider to complete setup tasks on your behalf in minutes through automated deployment workflows. You maintain administrative control with approval requirements and permission boundaries, while product provider permissions automatically expire after the approved duration with no manual cleanup required. If the product requires persistent access for ongoing operations, the provider can use temporary delegation to create an IAM role with a permission boundary that defines the role's maximum permissions. All product provider activity is tracked through AWS CloudTrail for compliance and security monitoring.
 
+To work with temporary delegation requests, you can [initiate a request](temporary-delegation-initiate-request.md) and [review requests](temporary-delegation-review-requests.md). For more information about monitoring, see [notifications](temporary-delegation-notifications.md) and [CloudTrail logging](temporary-delegation-cloudtrail.md).
+
 **Note**
 Temporary delegation requests can only be created by Amazon products and qualified AWS Partners that have completed the feature onboarding process. Customers review and approve these requests but cannot create them directly. If you are an AWS Partner looking to integrate IAM temporary delegation into your product, see the [Partner Integration Guide](access_policies-temporary-delegation-partner-guide.md) for onboarding and integration instructions.
 

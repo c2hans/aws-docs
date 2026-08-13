@@ -7,7 +7,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 # Connecting Amazon Q Business to IBM DB2 using APIs
 <a name="ibm-db2-api"></a>
 
-You use the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) action to connect a data source to your Amazon Q application.
+You use the [`CreateDataSource`](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) action to connect a data source to your Amazon Q application.
 
 Then, you use the `configuration` parameter to provide a JSON schema with all other configuration information specific to your data source connector.
 

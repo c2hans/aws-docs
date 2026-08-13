@@ -32,12 +32,12 @@ Type: Timestamp
 Required: No
 
  ** deviceIndex **
-The index of the network device used for the health check.
+The index of the network device used for the health check. The value is greater than or equal to 0.
 Type: Integer
 Required: No
 
  ** failureThreshold **
-The number of consecutive failed health checks before the application status is considered impaired.
+The number of consecutive failed health checks before the application status is considered impaired. The value must be greater than 0.
 Type: Integer
 Required: No
 
@@ -47,13 +47,13 @@ Type: Array of [HealthCheckPathResponseObject](API_HealthCheckPathResponseObject
 Required: No
 
  ** initializationGracePeriodSeconds **
-The number of seconds to wait before starting health checks after an instance is launched.
+The number of seconds to wait before starting health checks after an instance is launched. Valid values: 1 to 600.
 Type: Integer
 Valid Range: Minimum value of -1. Maximum value of 600.
 Required: No
 
  ** interval **
-The interval, in seconds, between health checks.
+The interval, in seconds, between health checks. Valid value: 60.
 Type: Integer
 Required: No
 
@@ -96,12 +96,12 @@ Valid Values: `http | https`
 Required: No
 
  ** statusCodeMatcher **
-The HTTP status codes that indicate a successful health check response.
+The comma-separated list of individual HTTP status codes or ranges that indicate a successful health check response.
 Type: String
 Required: No
 
  ** successThreshold **
-The number of consecutive successful health checks before the application status is considered healthy.
+The number of consecutive successful health checks before the application status is considered healthy. The value must be greater than 0.
 Type: Integer
 Required: No
 
@@ -116,7 +116,7 @@ Type: Array of [CustomTagKeyValueResponsePair](API_CustomTagKeyValueResponsePair
 Required: No
 
  ** timeout **
-The amount of time, in seconds, to wait for a health check response.
+The amount of time, in seconds, to wait for a health check response. Valid values: 1 to 30.
 Type: Integer
 Required: No
 

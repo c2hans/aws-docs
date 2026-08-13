@@ -36,3 +36,5 @@ https://{{Your_Account_Alias}}.signin.aws.amazon.com/console/
 **Note**
 Account aliases are not secrets, and they will appear in your public-facing sign-in page URL. Do not include any sensitive information in your account alias.
 The original URL containing your AWS account ID remains active and can be used after you create your AWS account alias.
+
+For instructions on setting up or removing an alias, see [Creating an account alias](account-alias-create.md) and [Deleting an account alias](account-alias-delete.md).

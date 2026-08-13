@@ -29,7 +29,7 @@ This gives us access to the AWS namespace, which provides the ability to set glo
 
 We'll configure the AWS Session by setting our AWS credentials (which are needed for accessing AWS services) and the AWS region to use.
 
-There are a number of ways to [set AWS credentials in the AWS SDK for Ruby](https://docs.aws.amazon.com/AWSRubySDK/latest/index.html#Basic_Configuration): by setting them in environment variables (AWS\_ACCESS\_KEY\_ID and AWS\_SECRET\_ACCESS\_KEY) or by setting them with [https://docs.aws.amazon.com/AWSRubySDK/latest/AWS.html#config-class_method](https://docs.aws.amazon.com/AWSRubySDK/latest/AWS.html#config-class_method). We'll use the latter method, loading them from a YAML configuration file, called `aws-config.txt`, that looks like this.
+There are a number of ways to [set AWS credentials in the AWS SDK for Ruby](https://docs.aws.amazon.com/AWSRubySDK/latest/index.html#Basic_Configuration): by setting them in environment variables (AWS\_ACCESS\_KEY\_ID and AWS\_SECRET\_ACCESS\_KEY) or by setting them with [`AWS.config`](https://docs.aws.amazon.com/AWSRubySDK/latest/AWS.html#config-class_method). We'll use the latter method, loading them from a YAML configuration file, called `aws-config.txt`, that looks like this.
 
 ```
 ---
@@ -45,7 +45,7 @@ We also need to set the AWS region to use. Because we'll be using the [Short Mes
 If you don't have access to **us-east-1**, or don't care about running the demo with SMS messaging enabled, feel free to use any region you wish to. You can remove the SMS functionality from the sample and use email as the sole endpoint to subscribe to the Amazon SNS topic.
 For more information about sending SMS messages, see [Sending and Receiving SMS Notifications Using Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/SMSMessages.html) in the *Amazon Simple Notification Service Developer Guide*.
 
-We'll now add some code to `utils.rb` to load the config file, get the user's credentials, then provide both the credentials and region to [https://docs.aws.amazon.com/AWSRubySDK/latest/AWS.html#config-class_method](https://docs.aws.amazon.com/AWSRubySDK/latest/AWS.html#config-class_method).
+We'll now add some code to `utils.rb` to load the config file, get the user's credentials, then provide both the credentials and region to [`AWS.config`](https://docs.aws.amazon.com/AWSRubySDK/latest/AWS.html#config-class_method).
 
 ```
 require 'yaml'

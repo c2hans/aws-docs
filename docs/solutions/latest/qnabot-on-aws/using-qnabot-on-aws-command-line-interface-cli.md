@@ -11,14 +11,14 @@ The QnABot on AWS CLI supports the capability to import and export questions and
 <a name="setup-prerequisites"></a>
 
 To use the CLI, the following prerequisites are required:
-+ Download the source directory from code base of the QnABot on AWS solution (version 5.2.0 or higher) in the GitHub repository.
++ Download the source directory from code base of the QnABot on AWS guidance (version 5.2.0 or higher) in the GitHub repository.
 +  [AWS Command Line Interface (CLI)](https://aws.amazon.com/cli/).
 + Python version 3.7 or higher. For more information on installing Python, see [Python Setup and Usage](https://docs.python.org/3/using/index.html).
 + IAM permissions having the following [IAM policy](#iam-policy). Attach the following IAM policy to the IAM user or IAM Role that you are using for the AWS CLI. Replace the following values when creating the IAM policy:
 
- **AWS\_REGION** - The AWS Region where you have deployed the QnABot on AWS solution.
+ **AWS\_REGION** - The AWS Region where you have deployed the QnABot on AWS guidance.
 
- **AWS\_ACCOUNT\_ID** - The AWS Account ID where you have deployed the QnABot on AWS solution.
+ **AWS\_ACCOUNT\_ID** - The AWS Account ID where you have deployed the QnABot on AWS guidance.
 
  **YOUR\_QNABOT\_IMPORT\_BUCKET\_NAME** - The name of the QnABot on AWS import bucket name. This can be found by navigating to the Resources section (in AWS CloudFormation) of the deployed QnABot on AWS CloudFormation template.
 

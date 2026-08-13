@@ -26,7 +26,7 @@ After you have created a subscription, you can change the subscription name, sou
 ## AWS CLI
 <a name="USER_Events.Modifying.CLI"></a>
 
-To modify an Amazon RDS event notification subscription, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-event-subscription.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-event-subscription.html) command. Include the following required parameter:
+To modify an Amazon RDS event notification subscription, use the AWS CLI [`modify-event-subscription`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-event-subscription.html) command. Include the following required parameter:
 + `--subscription-name`
 
 **Example**
@@ -49,5 +49,5 @@ aws rds modify-event-subscription ^
 ## API
 <a name="USER_Events.Modifying.API"></a>
 
-To modify an Amazon RDS event, call the Amazon RDS API operation [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyEventSubscription.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyEventSubscription.html). Include the following required parameter:
+To modify an Amazon RDS event, call the Amazon RDS API operation [`ModifyEventSubscription`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyEventSubscription.html). Include the following required parameter:
 + `SubscriptionName`

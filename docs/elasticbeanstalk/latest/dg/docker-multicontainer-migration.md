@@ -23,11 +23,26 @@ The Docker Compose tool uses the `docker-compose.yml` file for configuration of 
 
 Below is an example of a `docker-compose.yml` file and the corresponding `Dockerrun.aws.json v2` file for the same application. For more information on the `docker-compose.yml` file, see [Compose file reference](https://docs.docker.com/compose/compose-file/). For more information on the `Dockerrun.aws.json v2` file, see [`Dockerrun.aws.json` v2](create_deploy_docker_v2config.md#create_deploy_docker_v2config_dockerrun).
 
-| **`docker-compose.yml`** | **`Dockerrun.aws.json v2`** |
-| --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/docker-multicontainer-migration.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/docker-multicontainer-migration.html)  |
-|  <pre>version: '2.4'<br />services:<br />  php-app:<br />    image: "php:fpm"<br />    volumes:<br />      - "./php-app:/var/www/html:ro"<br />      - "${EB_LOG_BASE_DIR}/php-app:/var/log/sample-app"<br />    mem_limit: 128m<br />    environment:<br />      Container: PHP<br />  nginx-proxy:<br />    image: "nginx"<br />    ports:<br />      - "80:80"<br />    volumes:<br />      - "./php-app:/var/www/html:ro"<br />      - "./proxy/conf.d:/etc/nginx/conf.d:ro"<br />      - "${EB_LOG_BASE_DIR}/nginx-proxy:/var/log/nginx"<br />    mem_limit: 128m<br />    links:<br />      - php-app</pre>  |
-|  <pre>{<br />  "AWSEBDockerrunVersion": 2,<br />  "volumes": [<br />    {<br />      "name": "php-app",<br />      "host": {<br />        "sourcePath": "/var/app/current/php-app"<br />      }<br />    },<br />    {<br />      "name": "nginx-proxy-conf",<br />      "host": {<br />        "sourcePath": "/var/app/current/proxy/conf.d"<br />      }<br />    }<br />  ],<br />  "containerDefinitions": [<br />    {<br />      "name": "php-app",<br />      "image": "php:fpm",<br />      "environment": [<br />        {<br />          "name": "Container",<br />          "value": "PHP"<br />        }<br />      ],<br />      "essential": true,<br />      "memory": 128,<br />      "mountPoints": [<br />        {<br />          "sourceVolume": "php-app",<br />          "containerPath": "/var/www/html",<br />          "readOnly": true<br />        }<br />      ]<br />    },<br />    {<br />      "name": "nginx-proxy",<br />      "image": "nginx",<br />      "essential": true,<br />      "memory": 128,<br />      "portMappings": [<br />        {<br />          "hostPort": 80,<br />          "containerPort": 80<br />        }<br />      ],<br />      "links": [<br />        "php-app"<br />      ],<br />      "mountPoints": [<br />        {<br />          "sourceVolume": "php-app",<br />          "containerPath": "/var/www/html",<br />          "readOnly": true<br />        },<br />        {<br />          "sourceVolume": "nginx-proxy-conf",<br />          "containerPath": "/etc/nginx/conf.d",<br />          "readOnly": true<br />        },<br />        {<br />          "sourceVolume": "awseb-logs-nginx-proxy",<br />          "containerPath": "/var/log/nginx"<br />        }<br />      ]<br />    }<br />  ]<br />}<br /> </pre>  |
+<table>
+<thead>
+  <tr><th><b><code>docker-compose.yml</code></b></th><th><b><code>Dockerrun.aws.json v2</code></b></th></tr>
+</thead>
+<tbody>
+  <tr><td>
+<table>
+<tbody>
+  <tr><td> <pre>version: '2.4'<br />services:<br />  php-app:<br />    image: "php:fpm"<br />    volumes:<br />      - "./php-app:/var/www/html:ro"<br />      - "${EB_LOG_BASE_DIR}/php-app:/var/log/sample-app"<br />    mem_limit: 128m<br />    environment:<br />      Container: PHP<br />  nginx-proxy:<br />    image: "nginx"<br />    ports:<br />      - "80:80"<br />    volumes:<br />      - "./php-app:/var/www/html:ro"<br />      - "./proxy/conf.d:/etc/nginx/conf.d:ro"<br />      - "${EB_LOG_BASE_DIR}/nginx-proxy:/var/log/nginx"<br />    mem_limit: 128m<br />    links:<br />      - php-app</pre> </td></tr>
+</tbody>
+</table>
+ </td><td>
+<table>
+<tbody>
+  <tr><td> <pre>{<br />  "AWSEBDockerrunVersion": 2,<br />  "volumes": [<br />    {<br />      "name": "php-app",<br />      "host": {<br />        "sourcePath": "/var/app/current/php-app"<br />      }<br />    },<br />    {<br />      "name": "nginx-proxy-conf",<br />      "host": {<br />        "sourcePath": "/var/app/current/proxy/conf.d"<br />      }<br />    }<br />  ],<br />  "containerDefinitions": [<br />    {<br />      "name": "php-app",<br />      "image": "php:fpm",<br />      "environment": [<br />        {<br />          "name": "Container",<br />          "value": "PHP"<br />        }<br />      ],<br />      "essential": true,<br />      "memory": 128,<br />      "mountPoints": [<br />        {<br />          "sourceVolume": "php-app",<br />          "containerPath": "/var/www/html",<br />          "readOnly": true<br />        }<br />      ]<br />    },<br />    {<br />      "name": "nginx-proxy",<br />      "image": "nginx",<br />      "essential": true,<br />      "memory": 128,<br />      "portMappings": [<br />        {<br />          "hostPort": 80,<br />          "containerPort": 80<br />        }<br />      ],<br />      "links": [<br />        "php-app"<br />      ],<br />      "mountPoints": [<br />        {<br />          "sourceVolume": "php-app",<br />          "containerPath": "/var/www/html",<br />          "readOnly": true<br />        },<br />        {<br />          "sourceVolume": "nginx-proxy-conf",<br />          "containerPath": "/etc/nginx/conf.d",<br />          "readOnly": true<br />        },<br />        {<br />          "sourceVolume": "awseb-logs-nginx-proxy",<br />          "containerPath": "/var/log/nginx"<br />        }<br />      ]<br />    }<br />  ]<br />}<br /> </pre> </td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ### Additional Migration Considerations
 <a name="docker-multicontainer-migration.considerations"></a>

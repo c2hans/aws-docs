@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 <a name="mes-partner-DatadogAdminKey"></a>
 
 ## Secret Value Fields
-<a name="w2aac25c11c17b3"></a>
+<a name="w2aac27c11c17b3"></a>
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
@@ -40,7 +40,7 @@ site
 Your Datadog site (for example, `datadoghq.com`, `datadoghq.eu`, `us5.datadoghq.com`).
 
 ## Secret Metadata Fields
-<a name="w2aac25c11c17b5"></a>
+<a name="w2aac27c11c17b5"></a>
 
 The following are the metadata fields for Datadog Admin Key:
 
@@ -54,7 +54,7 @@ adminSecretArn
 (Optional) The Amazon Resource Name (ARN) for a separate admin secret used for authentication. If not provided, this secret rotates itself using its own credentials (self-rotation).
 
 ## Usage Flow
-<a name="w2aac25c11c17b7"></a>
+<a name="w2aac27c11c17b7"></a>
 
 This rotation type rotates both the API key and Application key together as a pair. It supports self-rotation (default) where the secret uses its own credentials to create replacements, or admin-assisted rotation using a separate admin secret.
 

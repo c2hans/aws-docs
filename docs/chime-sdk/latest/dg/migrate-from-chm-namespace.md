@@ -25,11 +25,11 @@ The following table lists the dedicated Amazon Chime SDK namespaces, endpoints, 
 
 | Endpoint | AWS SDK Namespace | AWS SDK CLI |
 | --- | --- | --- |
-| [identity-chime](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Identity.html) | ChimeSDKIdentity | [https://docs.aws.amazon.com/cli/latest/reference/chime-sdk-identity/index.html](https://docs.aws.amazon.com/cli/latest/reference/chime-sdk-identity/index.html) |
-| [media-pipelines-chime](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Media_Pipelines.html) | ChimeSDKMediaPipelines | [https://docs.aws.amazon.com/cli/latest/reference/chime-sdk-media-pipelines/index.html](https://docs.aws.amazon.com/cli/latest/reference/chime-sdk-media-pipelines/index.html) |
-| [meetings-chime](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Meetings.html) | ChimeSDKMeetings | [https://docs.aws.amazon.com/cli/latest/reference/chime-sdk-meetings/index.html](https://docs.aws.amazon.com/cli/latest/reference/chime-sdk-meetings/index.html) |
-| [messaging-chime](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Messaging.html) | ChimeSDKMessaging | [https://docs.aws.amazon.com/cli/latest/reference/chime-sdk-messaging/index.html](https://docs.aws.amazon.com/cli/latest/reference/chime-sdk-messaging/index.html) |
-| [voice-chime](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Voice.html) | ChimeSDKVoice | [https://docs.aws.amazon.com/cli/latest/reference/chime-sdk-voice/index.html](https://docs.aws.amazon.com/cli/latest/reference/chime-sdk-voice/index.html) |
+| [identity-chime](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Identity.html) | ChimeSDKIdentity | [chime-sdk-identity](https://docs.aws.amazon.com/cli/latest/reference/chime-sdk-identity/index.html) |
+| [media-pipelines-chime](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Media_Pipelines.html) | ChimeSDKMediaPipelines | [chime-sdk-media-pipelines](https://docs.aws.amazon.com/cli/latest/reference/chime-sdk-media-pipelines/index.html) |
+| [meetings-chime](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Meetings.html) | ChimeSDKMeetings | [chime-sdk-meetings](https://docs.aws.amazon.com/cli/latest/reference/chime-sdk-meetings/index.html) |
+| [messaging-chime](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Messaging.html) | ChimeSDKMessaging | [chime-sdk-messaging](https://docs.aws.amazon.com/cli/latest/reference/chime-sdk-messaging/index.html) |
+| [voice-chime](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Voice.html) | ChimeSDKVoice | [chime-sdk-voice](https://docs.aws.amazon.com/cli/latest/reference/chime-sdk-voice/index.html) |
 
 ## Migration help for each service
 <a name="help-per-service"></a>
@@ -46,531 +46,531 @@ All customers should consider using the dedicated Amazon Chime SDK endpoints for
 
 The following table lists the APIs in the `Chime` namespace, and their corresponding dedicated namespaces and APIs. Some of the dedicated APIs differ from the `Chime` APIs, and the table indicates those instances.
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_AssociatePhoneNumbersWithVoiceConnector.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_AssociatePhoneNumbersWithVoiceConnector.html)**
+- **[AssociatePhoneNumbersWithVoiceConnector](https://docs.aws.amazon.com/chime/latest/APIReference/API_AssociatePhoneNumbersWithVoiceConnector.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_AssociatePhoneNumbersWithVoiceConnector.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_AssociatePhoneNumbersWithVoiceConnector.html)
+  - **Dedicated namespace API:** [AssociatePhoneNumbersWithVoiceConnector](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_AssociatePhoneNumbersWithVoiceConnector.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_AssociatePhoneNumbersWithVoiceConnectorGroup.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_AssociatePhoneNumbersWithVoiceConnectorGroup.html) **
+- ** [AssociatePhoneNumbersWithVoiceConnectorGroup](https://docs.aws.amazon.com/chime/latest/APIReference/API_AssociatePhoneNumbersWithVoiceConnectorGroup.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_AssociatePhoneNumbersWithVoiceConnectorGroup.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_AssociatePhoneNumbersWithVoiceConnectorGroup.html)
+  - **Dedicated namespace API:** [AssociatePhoneNumbersWithVoiceConnectorGroup](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_AssociatePhoneNumbersWithVoiceConnectorGroup.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_BatchCreateAttendee.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_BatchCreateAttendee.html) **
+- ** [BatchCreateAttendee](https://docs.aws.amazon.com/chime/latest/APIReference/API_BatchCreateAttendee.html) **
   - **Dedicated namespace:** meetings-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_BatchCreateAttendee.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_BatchCreateAttendee.html)
+  - **Dedicated namespace API:** [BatchCreateAttendee](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_BatchCreateAttendee.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_BatchCreateChannelMembership.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_BatchCreateChannelMembership.html) **
+- ** [BatchCreateChannelMembership](https://docs.aws.amazon.com/chime/latest/APIReference/API_BatchCreateChannelMembership.html) **
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_BatchCreateChannelMembership.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_BatchCreateChannelMembership.html)
+  - **Dedicated namespace API:** [BatchCreateChannelMembership](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_BatchCreateChannelMembership.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateAppInstance.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateAppInstance.html) **
+- ** [CreateAppInstance](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateAppInstance.html) **
   - **Dedicated namespace:**  identity-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateAppInstance.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateAppInstance.html)
+  - **Dedicated namespace API:** [CreateAppInstance](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateAppInstance.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateAppInstanceAdmin.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateAppInstanceAdmin.html) **
+- ** [CreateAppInstanceAdmin](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateAppInstanceAdmin.html) **
   - **Dedicated namespace:** identity-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateAppInstanceAdmin.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateAppInstanceAdmin.html)
+  - **Dedicated namespace API:** [CreateAppInstanceAdmin](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateAppInstanceAdmin.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateAppInstanceUser.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateAppInstanceUser.html)**
+- **[CreateAppInstanceUser](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateAppInstanceUser.html)**
   - **Dedicated namespace:** identity-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateAppInstanceUser.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateAppInstanceUser.html)
+  - **Dedicated namespace API:** [CreateAppInstanceUser](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateAppInstanceUser.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateAttendee.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateAttendee.html)**
+- **[CreateAttendee](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateAttendee.html)**
   - **Dedicated namespace:** meetings-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateAttendee.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateAttendee.html)
+  - **Dedicated namespace API:** [CreateAttendee](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateAttendee.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateChannel.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateChannel.html)**
+- **[CreateChannel](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateChannel.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannel.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannel.html)
+  - **Dedicated namespace API:** [CreateChannel](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannel.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateChannelBan.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateChannelBan.html) **
+- ** [CreateChannelBan](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateChannelBan.html) **
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannelBan.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannelBan.html)
+  - **Dedicated namespace API:** [CreateChannelBan](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannelBan.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateChannelMembership.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateChannelMembership.html) **
+- ** [CreateChannelMembership](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateChannelMembership.html) **
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannelMembership.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannelMembership.html)
+  - **Dedicated namespace API:** [CreateChannelMembership](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannelMembership.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateChannelModerator.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateChannelModerator.html) **
+- ** [CreateChannelModerator](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateChannelModerator.html) **
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannelModerator.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannelModerator.html)
+  - **Dedicated namespace API:** [CreateChannelModerator](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannelModerator.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateMediaCapturePipeline.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateMediaCapturePipeline.html) **
+- ** [CreateMediaCapturePipeline](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateMediaCapturePipeline.html) **
   - **Dedicated namespace:** media-pipelines-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaCapturePipeline.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaCapturePipeline.html)
+  - **Dedicated namespace API:** [CreateMediaCapturePipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaCapturePipeline.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateMeeting.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateMeeting.html) **
+- ** [CreateMeeting](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateMeeting.html) **
   - **Dedicated namespace:** meetings-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html)
+  - **Dedicated namespace API:** [CreateMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateMeetingWithAttendees.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateMeetingWithAttendees.html) **
+- ** [CreateMeetingWithAttendees](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateMeetingWithAttendees.html) **
   - **Dedicated namespace:** meetings-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html)
+  - **Dedicated namespace API:** [CreateMeetingWithAttendees](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateMeetingDialOut.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateMeetingDialOut.html)**\*** **
+- ** [CreateMeetingDialOut](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateMeetingDialOut.html)**\*** **
   - **Dedicated namespace:** n/a
   - **Dedicated namespace API:**
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateProxySession.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateProxySession.html) **
+- ** [CreateProxySession](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateProxySession.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateProxySession.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateProxySession.html)
+  - **Dedicated namespace API:** [CreateProxySession](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateProxySession.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateSipMediaApplication.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateSipMediaApplication.html) **
+- ** [CreateSipMediaApplication](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateSipMediaApplication.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateSipMediaApplication.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateSipMediaApplication.html)
+  - **Dedicated namespace API:** [CreateSipMediaApplication](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateSipMediaApplication.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateSipMediaApplicationCall.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateSipMediaApplicationCall.html) **
+- ** [CreateSipMediaApplicationCall](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateSipMediaApplicationCall.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateSipMediaApplicationCall.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateSipMediaApplicationCall.html)
+  - **Dedicated namespace API:** [CreateSipMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateSipMediaApplicationCall.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateSipRule.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateSipRule.html) **
+- ** [CreateSipRule](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateSipRule.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateSipRule.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateSipRule.html)
+  - **Dedicated namespace API:** [CreateSipRule](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateSipRule.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateVoiceConnector.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateVoiceConnector.html) **
+- ** [CreateVoiceConnector](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateVoiceConnector.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceConnector.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceConnector.html)
+  - **Dedicated namespace API:** [CreateVoiceConnector](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceConnector.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateVoiceConnectorGroup.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateVoiceConnectorGroup.html) **
+- ** [CreateVoiceConnectorGroup](https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateVoiceConnectorGroup.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceConnectorGroup.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceConnectorGroup.html)
+  - **Dedicated namespace API:** [CreateVoiceConnectorGroup](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceConnectorGroup.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteAppInstance.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteAppInstance.html) **
+- ** [DeleteAppInstance](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteAppInstance.html) **
   - **Dedicated namespace:** identity-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_DeleteAppInstance.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_DeleteAppInstance.html)
+  - **Dedicated namespace API:** [DeleteAppInstance](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_DeleteAppInstance.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteAppInstanceAdmin.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteAppInstanceAdmin.html) **
+- ** [DeleteAppInstanceAdmin](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteAppInstanceAdmin.html) **
   - **Dedicated namespace:** identity-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_DeleteAppInstanceAdmin.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_DeleteAppInstanceAdmin.html)
+  - **Dedicated namespace API:** [DeleteAppInstanceAdmin](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_DeleteAppInstanceAdmin.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteAppInstanceStreamingConfigurations.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteAppInstanceStreamingConfigurations.html) **
+- ** [DeleteAppInstanceStreamingConfigurations](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteAppInstanceStreamingConfigurations.html) **
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DeleteAppInstanceStreamingConfigurations.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DeleteAppInstanceStreamingConfigurations.html)
+  - **Dedicated namespace API:** [DeleteAppInstanceStreamingConfigurations](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DeleteAppInstanceStreamingConfigurations.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteAppInstanceUser.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteAppInstanceUser.html) **
+- ** [DeleteAppInstanceUser](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteAppInstanceUser.html) **
   - **Dedicated namespace:** identity-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_DeleteAppInstanceUser.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_DeleteAppInstanceUser.html)
+  - **Dedicated namespace API:** [DeleteAppInstanceUser](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_DeleteAppInstanceUser.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteAttendee.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteAttendee.html) **
+- ** [DeleteAttendee](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteAttendee.html) **
   - **Dedicated namespace:** meetings-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteAttendee.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteAttendee.html)
+  - **Dedicated namespace API:** [DeleteAttendee](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteAttendee.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteChannel.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteChannel.html) **
+- ** [DeleteChannel](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteChannel.html) **
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DeleteChannel.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DeleteChannel.html)
+  - **Dedicated namespace API:** [DeleteChannel](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DeleteChannel.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteChannelBan.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteChannelBan.html) **
+- ** [DeleteChannelBan](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteChannelBan.html) **
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DeleteChannelBan.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DeleteChannelBan.html)
+  - **Dedicated namespace API:** [DeleteChannelBan](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DeleteChannelBan.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteChannelMembership.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteChannelMembership.html) **
+- ** [DeleteChannelMembership](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteChannelMembership.html) **
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DeleteChannelMembership.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DeleteChannelMembership.html)
+  - **Dedicated namespace API:** [DeleteChannelMembership](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DeleteChannelMembership.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteChannelMessage.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteChannelMessage.html) **
+- ** [DeleteChannelMessage](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteChannelMessage.html) **
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DeleteChannelMessage.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DeleteChannelMessage.html)
+  - **Dedicated namespace API:** [DeleteChannelMessage](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DeleteChannelMessage.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteChannelModerator.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteChannelModerator.html) **
+- ** [DeleteChannelModerator](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteChannelModerator.html) **
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DeleteChannelModerator.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DeleteChannelModerator.html)
+  - **Dedicated namespace API:** [DeleteChannelModerator](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DeleteChannelModerator.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteMediaCapturePipeline.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteMediaCapturePipeline.html) **
+- ** [DeleteMediaCapturePipeline](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteMediaCapturePipeline.html) **
   - **Dedicated namespace:**  media-pipelines-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaCapturePipeline.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaCapturePipeline.html)
+  - **Dedicated namespace API:** [DeleteMediaCapturePipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaCapturePipeline.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteMeeting.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteMeeting.html) **
+- ** [DeleteMeeting](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteMeeting.html) **
   - **Dedicated namespace:** meetings-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteMeeting.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteMeeting.html)
+  - **Dedicated namespace API:** [DeleteMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteMeeting.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteProxySession.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteProxySession.html) **
+- ** [DeleteProxySession](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteProxySession.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteProxySession.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteProxySession.html)
+  - **Dedicated namespace API:** [DeleteProxySession](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteProxySession.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteSipMediaApplication.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteSipMediaApplication.html) **
+- ** [DeleteSipMediaApplication](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteSipMediaApplication.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteSipMediaApplication.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteSipMediaApplication.html)
+  - **Dedicated namespace API:** [DeleteSipMediaApplication](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteSipMediaApplication.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteSipRule.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteSipRule.html) **
+- ** [DeleteSipRule](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteSipRule.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteSipRule.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteSipRule.html)
+  - **Dedicated namespace API:** [DeleteSipRule](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteSipRule.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnector.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnector.html) **
+- ** [DeleteVoiceConnector](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnector.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnector.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnector.html)
+  - **Dedicated namespace API:** [DeleteVoiceConnector](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnector.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorEmergencyCallingConfiguration.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorEmergencyCallingConfiguration.html) **
+- ** [DeleteVoiceConnectorEmergencyCallingConfiguration](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorEmergencyCallingConfiguration.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorEmergencyCallingConfiguration.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorEmergencyCallingConfiguration.html)
+  - **Dedicated namespace API:** [DeleteVoiceConnectorEmergencyCallingConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorEmergencyCallingConfiguration.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorGroup.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorGroup.html) **
+- ** [DeleteVoiceConnectorGroup](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorGroup.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorGroup.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorGroup.html)
+  - **Dedicated namespace API:** [DeleteVoiceConnectorGroup](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorGroup.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorOrigination.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorOrigination.html) **
+- ** [DeleteVoiceConnectorOrigination](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorOrigination.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorOrigination.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorOrigination.html)
+  - **Dedicated namespace API:** [DeleteVoiceConnectorOrigination](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorOrigination.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorProxy.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorProxy.html) **
+- ** [DeleteVoiceConnectorProxy](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorProxy.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorProxy.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorProxy.html)
+  - **Dedicated namespace API:** [DeleteVoiceConnectorProxy](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorProxy.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorStreamingConfiguration.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorStreamingConfiguration.html) **
+- ** [DeleteVoiceConnectorStreamingConfiguration](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorStreamingConfiguration.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorStreamingConfiguration.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorStreamingConfiguration.html)
+  - **Dedicated namespace API:** [DeleteVoiceConnectorStreamingConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorStreamingConfiguration.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorTermination.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorTermination.html) **
+- ** [DeleteVoiceConnectorTermination](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorTermination.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorTermination.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorTermination.html)
+  - **Dedicated namespace API:** [DeleteVoiceConnectorTermination](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorTermination.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorTerminationCredentials.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorTerminationCredentials.html) **
+- ** [DeleteVoiceConnectorTerminationCredentials](https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorTerminationCredentials.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorTerminationCredentials.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorTerminationCredentials.html)
+  - **Dedicated namespace API:** [DeleteVoiceConnectorTerminationCredentials](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorTerminationCredentials.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeAppInstance.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeAppInstance.html) **
+- ** [DescribeAppInstance](https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeAppInstance.html) **
   - **Dedicated namespace:** identity-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_DescribeAppInstance.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_DescribeAppInstance.html)
+  - **Dedicated namespace API:** [DescribeAppInstance](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_DescribeAppInstance.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeAppInstanceAdmin.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeAppInstanceAdmin.html)**
+- **[DescribeAppInstanceAdmin](https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeAppInstanceAdmin.html)**
   - **Dedicated namespace:** identity-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_DescribeAppInstanceAdmin.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_DescribeAppInstanceAdmin.html)
+  - **Dedicated namespace API:** [DescribeAppInstanceAdmin](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_DescribeAppInstanceAdmin.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeAppInstanceUser.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeAppInstanceUser.html)**
+- **[DescribeAppInstanceUser](https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeAppInstanceUser.html)**
   - **Dedicated namespace:** identity-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_DescribeAppInstanceUser.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_DescribeAppInstanceUser.html)
+  - **Dedicated namespace API:** [DescribeAppInstanceUser](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_DescribeAppInstanceUser.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeChannel.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeChannel.html)**
+- **[DescribeChannel](https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeChannel.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DescribeChannel.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DescribeChannel.html)
+  - **Dedicated namespace API:** [DescribeChannel](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DescribeChannel.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeChannelBan.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeChannelBan.html)**
+- **[DescribeChannelBan](https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeChannelBan.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DescribeChannelBan.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DescribeChannelBan.html)
+  - **Dedicated namespace API:** [DescribeChannelBan](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DescribeChannelBan.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeChannelMembership.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeChannelMembership.html)**
+- **[DescribeChannelMembership](https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeChannelMembership.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DescribeChannelMembership.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DescribeChannelMembership.html)
+  - **Dedicated namespace API:** [DescribeChannelMembership](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DescribeChannelMembership.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeChannelMembershipForAppInstanceUser.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeChannelMembershipForAppInstanceUser.html)**
+- **[DescribeChannelMembershipForAppInstanceUser](https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeChannelMembershipForAppInstanceUser.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DescribeChannelMembershipForAppInstanceUser.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DescribeChannelMembershipForAppInstanceUser.html)
+  - **Dedicated namespace API:** [DescribeChannelMembershipForAppInstanceUser](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DescribeChannelMembershipForAppInstanceUser.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeChannelModeratedByAppInstanceUser.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeChannelModeratedByAppInstanceUser.html)**
+- **[DescribeChannelModeratedByAppInstanceUser](https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeChannelModeratedByAppInstanceUser.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DescribeChannelModeratedByAppInstanceUser.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DescribeChannelModeratedByAppInstanceUser.html)
+  - **Dedicated namespace API:** [DescribeChannelModeratedByAppInstanceUser](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DescribeChannelModeratedByAppInstanceUser.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeChannelModerator.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeChannelModerator.html)**
+- **[DescribeChannelModerator](https://docs.aws.amazon.com/chime/latest/APIReference/API_DescribeChannelModerator.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DescribeChannelModerator.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DescribeChannelModerator.html)
+  - **Dedicated namespace API:** [DescribeChannelModerator](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_DescribeChannelModerator.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_DisassociatePhoneNumbersFromVoiceConnector.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DisassociatePhoneNumbersFromVoiceConnector.html)**
+- **[DisassociatePhoneNumbersFromVoiceConnector](https://docs.aws.amazon.com/chime/latest/APIReference/API_DisassociatePhoneNumbersFromVoiceConnector.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DisassociatePhoneNumbersFromVoiceConnector.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DisassociatePhoneNumbersFromVoiceConnector.html)
+  - **Dedicated namespace API:** [DisassociatePhoneNumbersFromVoiceConnector](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DisassociatePhoneNumbersFromVoiceConnector.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_DisassociatePhoneNumbersFromVoiceConnectorGroup.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_DisassociatePhoneNumbersFromVoiceConnectorGroup.html)**
+- **[DisassociatePhoneNumbersFromVoiceConnectorGroup](https://docs.aws.amazon.com/chime/latest/APIReference/API_DisassociatePhoneNumbersFromVoiceConnectorGroup.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DisassociatePhoneNumbersFromVoiceConnectorGroup.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DisassociatePhoneNumbersFromVoiceConnectorGroup.html)
+  - **Dedicated namespace API:** [DisassociatePhoneNumbersFromVoiceConnectorGroup](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DisassociatePhoneNumbersFromVoiceConnectorGroup.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_GetAppInstanceRetentionSettings.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetAppInstanceRetentionSettings.html)**
+- **[GetAppInstanceRetentionSettings](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetAppInstanceRetentionSettings.html)**
   - **Dedicated namespace:** identity-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_GetAppInstanceRetentionSettings.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_GetAppInstanceRetentionSettings.html)
+  - **Dedicated namespace API:** [GetAppInstanceRetentionSettings](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_GetAppInstanceRetentionSettings.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_GetAppInstanceStreamingConfigurations.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetAppInstanceStreamingConfigurations.html)**
+- **[GetAppInstanceStreamingConfigurations](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetAppInstanceStreamingConfigurations.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetMessagingStreamingConfigurations.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetMessagingStreamingConfigurations.html)
+  - **Dedicated namespace API:** [GetMessagingStreamingConfigurations](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetMessagingStreamingConfigurations.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_GetAttendee.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetAttendee.html)**
+- **[GetAttendee](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetAttendee.html)**
   - **Dedicated namespace:** meetings-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_GetAttendee.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_GetAttendee.html)
+  - **Dedicated namespace API:** [GetAttendee](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_GetAttendee.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_GetChannelMessage.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetChannelMessage.html) **
+- ** [GetChannelMessage](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetChannelMessage.html) **
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetChannelMessage.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetChannelMessage.html)
+  - **Dedicated namespace API:** [GetChannelMessage](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetChannelMessage.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_GetMediaCapturePipeline.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetMediaCapturePipeline.html) **
+- ** [GetMediaCapturePipeline](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetMediaCapturePipeline.html) **
   - **Dedicated namespace:** media-pipelines-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_GetMediaCapturePipeline.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_GetMediaCapturePipeline.html)
+  - **Dedicated namespace API:** [GetMediaCapturePipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_GetMediaCapturePipeline.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_GetMeeting.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetMeeting.html) **
+- ** [GetMeeting](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetMeeting.html) **
   - **Dedicated namespace:** meetings-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_GetMeeting.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_GetMeeting.html)
+  - **Dedicated namespace API:** [GetMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_GetMeeting.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_GetMessagingSessionEndpoint.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetMessagingSessionEndpoint.html) **
+- ** [GetMessagingSessionEndpoint](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetMessagingSessionEndpoint.html) **
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetMessagingSessionEndpoint.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetMessagingSessionEndpoint.html)
+  - **Dedicated namespace API:** [GetMessagingSessionEndpoint](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetMessagingSessionEndpoint.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_GetProxySession.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetProxySession.html)**
+- **[GetProxySession](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetProxySession.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetProxySession.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetProxySession.html)
+  - **Dedicated namespace API:** [GetProxySession](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetProxySession.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_GetSipMediaApplication.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetSipMediaApplication.html)**
+- **[GetSipMediaApplication](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetSipMediaApplication.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetSipMediaApplication.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetSipMediaApplication.html)
+  - **Dedicated namespace API:** [GetSipMediaApplication](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetSipMediaApplication.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_GetSipMediaApplicationLoggingConfiguration.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetSipMediaApplicationLoggingConfiguration.html)**
+- **[GetSipMediaApplicationLoggingConfiguration](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetSipMediaApplicationLoggingConfiguration.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetSipMediaApplicationLoggingConfiguration.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetSipMediaApplicationLoggingConfiguration.html)
+  - **Dedicated namespace API:** [GetSipMediaApplicationLoggingConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetSipMediaApplicationLoggingConfiguration.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_GetSipRule.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetSipRule.html)**
+- ** [GetSipRule](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetSipRule.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetSipRule.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetSipRule.html)
+  - **Dedicated namespace API:** [GetSipRule](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetSipRule.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnector.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnector.html)**
+- ** [GetVoiceConnector](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnector.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnector.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnector.html)
+  - **Dedicated namespace API:** [GetVoiceConnector](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnector.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorEmergencyCallingConfiguration.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorEmergencyCallingConfiguration.html)**
+- ** [GetVoiceConnectorEmergencyCallingConfiguration](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorEmergencyCallingConfiguration.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorEmergencyCallingConfiguration.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorEmergencyCallingConfiguration.html)
+  - **Dedicated namespace API:** [GetVoiceConnectorEmergencyCallingConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorEmergencyCallingConfiguration.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorGroup.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorGroup.html)**
+- **[GetVoiceConnectorGroup](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorGroup.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorGroup.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorGroup.html)
+  - **Dedicated namespace API:** [GetVoiceConnectorGroup](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorGroup.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorLoggingConfiguration.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorLoggingConfiguration.html)**
+- **[GetVoiceConnectorLoggingConfiguration](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorLoggingConfiguration.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorLoggingConfiguration.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorLoggingConfiguration.html)
+  - **Dedicated namespace API:** [GetVoiceConnectorLoggingConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorLoggingConfiguration.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorOrigination.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorOrigination.html)**
+- **[GetVoiceConnectorOrigination](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorOrigination.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorOrigination.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorOrigination.html)
+  - **Dedicated namespace API:** [GetVoiceConnectorOrigination](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorOrigination.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorProxy.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorProxy.html)**
+- **[GetVoiceConnectorProxy](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorProxy.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorProxy.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorProxy.html)
+  - **Dedicated namespace API:** [GetVoiceConnectorProxy](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorProxy.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorStreamingConfiguration.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorStreamingConfiguration.html)**
+- **[GetVoiceConnectorStreamingConfiguration](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorStreamingConfiguration.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorStreamingConfiguration.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorStreamingConfiguration.html)
+  - **Dedicated namespace API:** [GetVoiceConnectorStreamingConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorStreamingConfiguration.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorTermination.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorTermination.html)**
+- **[GetVoiceConnectorTermination](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorTermination.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorTermination.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorTermination.html)
+  - **Dedicated namespace API:** [GetVoiceConnectorTermination](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorTermination.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorTerminationHealth.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorTerminationHealth.html)**
+- **[GetVoiceConnectorTerminationHealth](https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorTerminationHealth.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorTerminationHealth.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorTerminationHealth.html)
+  - **Dedicated namespace API:** [GetVoiceConnectorTerminationHealth](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorTerminationHealth.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_ListAppInstanceAdmins.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListAppInstanceAdmins.html)**
+- **[ListAppInstanceAdmins](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListAppInstanceAdmins.html)**
   - **Dedicated namespace:** identity-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_ListAppInstanceAdmins.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_ListAppInstanceAdmins.html)
+  - **Dedicated namespace API:** [ListAppInstanceAdmins](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_ListAppInstanceAdmins.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_ListAppInstances.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListAppInstances.html)**
+- **[ListAppInstances](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListAppInstances.html)**
   - **Dedicated namespace:** identity-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_ListAppInstances.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_ListAppInstances.html)
+  - **Dedicated namespace API:** [ListAppInstances](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_ListAppInstances.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_ListAppInstanceUsers.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListAppInstanceUsers.html)**
+- **[ListAppInstanceUsers](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListAppInstanceUsers.html)**
   - **Dedicated namespace:** identity-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_ListAppInstanceUsers.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_ListAppInstanceUsers.html)
+  - **Dedicated namespace API:** [ListAppInstanceUsers](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_ListAppInstanceUsers.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_ListAttendees.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListAttendees.html)**
+- **[ListAttendees](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListAttendees.html)**
   - **Dedicated namespace:** meetings-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_ListAttendees.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_ListAttendees.html)
+  - **Dedicated namespace API:** [ListAttendees](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_ListAttendees.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_ListAttendeeTags.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListAttendeeTags.html)**\*****
+- **[ListAttendeeTags](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListAttendeeTags.html)**\*****
   - **Dedicated namespace:** n/a
   - **Dedicated namespace API:**
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannelBans.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannelBans.html)**
+- **[ListChannelBans](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannelBans.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannelBans.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannelBans.html)
+  - **Dedicated namespace API:** [ListChannelBans](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannelBans.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannelMemberships.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannelMemberships.html)**
+- **[ListChannelMemberships](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannelMemberships.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannelMemberships.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannelMemberships.html)
+  - **Dedicated namespace API:** [ListChannelMemberships](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannelMemberships.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannelMembershipsForAppInstanceUser.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannelMembershipsForAppInstanceUser.html)**
+- **[ListChannelMembershipsForAppInstanceUser](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannelMembershipsForAppInstanceUser.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannelMembershipsForAppInstanceUser.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannelMembershipsForAppInstanceUser.html)
+  - **Dedicated namespace API:** [ListChannelMembershipsForAppInstanceUser](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannelMembershipsForAppInstanceUser.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannelMessages.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannelMessages.html)**
+- ** [ListChannelMessages](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannelMessages.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannelMessages.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannelMessages.html)
+  - **Dedicated namespace API:** [ListChannelMessages](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannelMessages.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannelModerators.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannelModerators.html)**
+- ** [ListChannelModerators](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannelModerators.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannelModerators.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannelModerators.html)
+  - **Dedicated namespace API:** [ListChannelModerators](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannelModerators.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannels.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannels.html)**
+- ** [ListChannels](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannels.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannels.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannels.html)
+  - **Dedicated namespace API:** [ListChannels](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannels.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannelsModeratedByAppInstanceUser.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannelsModeratedByAppInstanceUser.html)**
+- ** [ListChannelsModeratedByAppInstanceUser](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListChannelsModeratedByAppInstanceUser.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannelsModeratedByAppInstanceUser.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannelsModeratedByAppInstanceUser.html)
+  - **Dedicated namespace API:** [ListChannelsModeratedByAppInstanceUser](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListChannelsModeratedByAppInstanceUser.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_ListMediaCapturePipelines.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListMediaCapturePipelines.html)**
+- **[ListMediaCapturePipelines](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListMediaCapturePipelines.html)**
   - **Dedicated namespace:** media-pipelines-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_ListMediaCapturePipelines.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_ListMediaCapturePipelines.html)
+  - **Dedicated namespace API:** [ListMediaCapturePipelines](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_ListMediaCapturePipelines.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_ListMeetings.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListMeetings.html)**\*****
+- **[ListMeetings](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListMeetings.html)**\*****
   - **Dedicated namespace:** n/a
   - **Dedicated namespace API:**
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_ListMeetingTags.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListMeetingTags.html)**\+****
+- ** [ListMeetingTags](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListMeetingTags.html)**\+****
   - **Dedicated namespace:** meetings-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_ListTagsForResource.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_ListTagsForResource.html)
+  - **Dedicated namespace API:** [ListTagsForResource](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_ListTagsForResource.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_ListProxySessions.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListProxySessions.html)**
+- **[ListProxySessions](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListProxySessions.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ListProxySessions.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ListProxySessions.html)
+  - **Dedicated namespace API:** [ListProxySessions](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ListProxySessions.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_ListSipMediaApplications.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListSipMediaApplications.html)**
+- **[ListSipMediaApplications](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListSipMediaApplications.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ListSipMediaApplications.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ListSipMediaApplications.html)
+  - **Dedicated namespace API:** [ListSipMediaApplications](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ListSipMediaApplications.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_ListSipRules.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListSipRules.html)**
+- ** [ListSipRules](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListSipRules.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ListSipRules.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ListSipRules.html)
+  - **Dedicated namespace API:** [ListSipRules](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ListSipRules.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_ListTagsForResource.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListTagsForResource.html)**
+- **[ListTagsForResource](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListTagsForResource.html)**
   - **Dedicated namespace:** identity-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_ListTagsForResource.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_ListTagsForResource.html)
+  - **Dedicated namespace API:** [ListTagsForResource](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_ListTagsForResource.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_ListVoiceConnectorGroups.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListVoiceConnectorGroups.html)**
+- **[ListVoiceConnectorGroups](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListVoiceConnectorGroups.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ListVoiceConnectorGroups.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ListVoiceConnectorGroups.html)
+  - **Dedicated namespace API:** [ListVoiceConnectorGroups](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ListVoiceConnectorGroups.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_ListVoiceConnectors.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListVoiceConnectors.html)**
+- **[ListVoiceConnectors](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListVoiceConnectors.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ListVoiceConnectors.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ListVoiceConnectors.html)
+  - **Dedicated namespace API:** [ListVoiceConnectors](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ListVoiceConnectors.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_ListVoiceConnectorTerminationCredentials.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListVoiceConnectorTerminationCredentials.html)**
+- **[ListVoiceConnectorTerminationCredentials](https://docs.aws.amazon.com/chime/latest/APIReference/API_ListVoiceConnectorTerminationCredentials.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ListVoiceConnectorTerminationCredentials.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ListVoiceConnectorTerminationCredentials.html)
+  - **Dedicated namespace API:** [ListVoiceConnectorTerminationCredentials](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ListVoiceConnectorTerminationCredentials.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_PutAppInstanceRetentionSettings.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutAppInstanceRetentionSettings.html)**
+- **[PutAppInstanceRetentionSettings](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutAppInstanceRetentionSettings.html)**
   - **Dedicated namespace:** identity-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_PutAppInstanceRetentionSettings.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_PutAppInstanceRetentionSettings.html)
+  - **Dedicated namespace API:** [PutAppInstanceRetentionSettings](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_PutAppInstanceRetentionSettings.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_PutAppInstanceStreamingConfigurations.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutAppInstanceStreamingConfigurations.html)**
+- **[PutAppInstanceStreamingConfigurations](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutAppInstanceStreamingConfigurations.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_PutMessagingStreamingConfigurations.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_PutMessagingStreamingConfigurations.html)
+  - **Dedicated namespace API:** [PutMessagingStreamingConfigurations](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_PutMessagingStreamingConfigurations.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_PutSipMediaApplicationLoggingConfiguration.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutSipMediaApplicationLoggingConfiguration.html)**
+- **[PutSipMediaApplicationLoggingConfiguration](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutSipMediaApplicationLoggingConfiguration.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutSipMediaApplicationLoggingConfiguration.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutSipMediaApplicationLoggingConfiguration.html)
+  - **Dedicated namespace API:** [PutSipMediaApplicationLoggingConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutSipMediaApplicationLoggingConfiguration.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorEmergencyCallingConfiguration.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorEmergencyCallingConfiguration.html)**
+- **[PutVoiceConnectorEmergencyCallingConfiguration](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorEmergencyCallingConfiguration.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorEmergencyCallingConfiguration.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorEmergencyCallingConfiguration.html)
+  - **Dedicated namespace API:** [PutVoiceConnectorEmergencyCallingConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorEmergencyCallingConfiguration.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorLoggingConfiguration.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorLoggingConfiguration.html)**
+- **[PutVoiceConnectorLoggingConfiguration](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorLoggingConfiguration.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorLoggingConfiguration.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorLoggingConfiguration.html)
+  - **Dedicated namespace API:** [PutVoiceConnectorLoggingConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorLoggingConfiguration.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorOrigination.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorOrigination.html)**
+- **[PutVoiceConnectorOrigination](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorOrigination.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorOrigination.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorOrigination.html)
+  - **Dedicated namespace API:** [PutVoiceConnectorOrigination](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorOrigination.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorProxy.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorProxy.html)**
+- **[PutVoiceConnectorProxy](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorProxy.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorProxy.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorProxy.html)
+  - **Dedicated namespace API:** [PutVoiceConnectorProxy](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorProxy.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorStreamingConfiguration.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorStreamingConfiguration.html)**
+- **[PutVoiceConnectorStreamingConfiguration](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorStreamingConfiguration.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorStreamingConfiguration.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorStreamingConfiguration.html)
+  - **Dedicated namespace API:** [PutVoiceConnectorStreamingConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorStreamingConfiguration.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorTermination.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorTermination.html)**
+- ** [PutVoiceConnectorTermination](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorTermination.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorTermination.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorTermination.html)
+  - **Dedicated namespace API:** [PutVoiceConnectorTermination](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorTermination.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorTerminationCredentials.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorTerminationCredentials.html)**
+- **[PutVoiceConnectorTerminationCredentials](https://docs.aws.amazon.com/chime/latest/APIReference/API_PutVoiceConnectorTerminationCredentials.html)**
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorTerminationCredentials.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorTerminationCredentials.html)
+  - **Dedicated namespace API:** [PutVoiceConnectorTerminationCredentials](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorTerminationCredentials.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_RedactChannelMessage.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_RedactChannelMessage.html)**
+- **[RedactChannelMessage](https://docs.aws.amazon.com/chime/latest/APIReference/API_RedactChannelMessage.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_RedactChannelMessage.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_RedactChannelMessage.html)
+  - **Dedicated namespace API:** [RedactChannelMessage](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_RedactChannelMessage.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_messaging-chime_SendChannelMessage.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_messaging-chime_SendChannelMessage.html)**
+- **[SendChannelMessage](https://docs.aws.amazon.com/chime/latest/APIReference/API_messaging-chime_SendChannelMessage.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_SendChannelMessage.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_SendChannelMessage.html)
+  - **Dedicated namespace API:** [SendChannelMessage](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_SendChannelMessage.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_StartMeetingTranscription.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_StartMeetingTranscription.html)**
+- **[StartMeetingTranscription](https://docs.aws.amazon.com/chime/latest/APIReference/API_StartMeetingTranscription.html)**
   - **Dedicated namespace:** meetings-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StartMeetingTranscription.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StartMeetingTranscription.html)
+  - **Dedicated namespace API:** [StartMeetingTranscription](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StartMeetingTranscription.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_StopMeetingTranscription.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_StopMeetingTranscription.html)**
+- **[StopMeetingTranscription](https://docs.aws.amazon.com/chime/latest/APIReference/API_StopMeetingTranscription.html)**
   - **Dedicated namespace:** meetings-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StopMeetingTranscription.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StopMeetingTranscription.html)
+  - **Dedicated namespace API:** [StopMeetingTranscription](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_StopMeetingTranscription.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_TagAttendee.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_TagAttendee.html)**\*****
+- **[TagAttendee](https://docs.aws.amazon.com/chime/latest/APIReference/API_TagAttendee.html)**\*****
   - **Dedicated namespace:** n/a
   - **Dedicated namespace API:**
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_TagMeeting.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_TagMeeting.html)**\+****
+- ** [TagMeeting](https://docs.aws.amazon.com/chime/latest/APIReference/API_TagMeeting.html)**\+****
   - **Dedicated namespace:** meetings-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_TagResource.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_TagResource.html)
+  - **Dedicated namespace API:** [TagResource](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_TagResource.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_TagResource.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_TagResource.html)**
-  - **Dedicated namespace:** identity-chime / **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_TagResource.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_TagResource.html)
-  - **Dedicated namespace:** media-pipelines-chime / **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_TagResource.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_TagResource.html)
-  - **Dedicated namespace:** meetings-chime / **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetings-chime_TagResource.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetings-chime_TagResource.html)
-  - **Dedicated namespace:** messaging-chime / **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_TagResource.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_TagResource.html)
-  - **Dedicated namespace:** voice-chime / **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_TagResource.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_TagResource.html)
+- **[TagResource](https://docs.aws.amazon.com/chime/latest/APIReference/API_TagResource.html)**
+  - **Dedicated namespace:** identity-chime / **Dedicated namespace API:** [TagResource](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_TagResource.html)
+  - **Dedicated namespace:** media-pipelines-chime / **Dedicated namespace API:** [TagResource](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_TagResource.html)
+  - **Dedicated namespace:** meetings-chime / **Dedicated namespace API:** [TagResource](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetings-chime_TagResource.html)
+  - **Dedicated namespace:** messaging-chime / **Dedicated namespace API:** [TagResource](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_TagResource.html)
+  - **Dedicated namespace:** voice-chime / **Dedicated namespace API:** [TagResource](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_TagResource.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_UntagAttendee.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_UntagAttendee.html)**\*****
+- **[UntagAttendee](https://docs.aws.amazon.com/chime/latest/APIReference/API_UntagAttendee.html)**\*****
   - **Dedicated namespace:** n/a
   - **Dedicated namespace API:**
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_UntagMeeting.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_UntagMeeting.html)**\+****
+- **[UntagMeeting](https://docs.aws.amazon.com/chime/latest/APIReference/API_UntagMeeting.html)**\+****
   - **Dedicated namespace:** meetings-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_UntagResource.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_UntagResource.html)
+  - **Dedicated namespace API:** [UntagResource](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_UntagResource.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_UntagResource.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_UntagResource.html)**
-  - **Dedicated namespace:** identity-chime  / **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UntagResource.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UntagResource.html)
-  - **Dedicated namespace:** media-pipelines-chime / **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_UntagResource.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_UntagResource.html)
-  - **Dedicated namespace:** meetings-chime / **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetings-chime_UntagResource.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetings-chime_UntagResource.html)
-  - **Dedicated namespace:** messaging-chime / **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_UntagResource.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_UntagResource.html)
-  - **Dedicated namespace:** voice-chime / **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UntagResource.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UntagResource.html)
+- **[UntagResource](https://docs.aws.amazon.com/chime/latest/APIReference/API_UntagResource.html)**
+  - **Dedicated namespace:** identity-chime  / **Dedicated namespace API:** [UntagResource](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UntagResource.html)
+  - **Dedicated namespace:** media-pipelines-chime / **Dedicated namespace API:** [UntagResource](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_UntagResource.html)
+  - **Dedicated namespace:** meetings-chime / **Dedicated namespace API:** [UntagResource](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetings-chime_UntagResource.html)
+  - **Dedicated namespace:** messaging-chime / **Dedicated namespace API:** [UntagResource](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_UntagResource.html)
+  - **Dedicated namespace:** voice-chime / **Dedicated namespace API:** [UntagResource](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UntagResource.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateAppInstance.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateAppInstance.html)**
+- **[UpdateAppInstance](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateAppInstance.html)**
   - **Dedicated namespace:** identity-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateAppInstance.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateAppInstance.html)
+  - **Dedicated namespace API:** [UpdateAppInstance](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateAppInstance.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateAppInstanceUser.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateAppInstanceUser.html)**
+- **[UpdateAppInstanceUser](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateAppInstanceUser.html)**
   - **Dedicated namespace:** identity-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateAppInstanceUser.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateAppInstanceUser.html)
+  - **Dedicated namespace API:** [UpdateAppInstanceUser](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateAppInstanceUser.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateChannel.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateChannel.html)**
+- **[UpdateChannel](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateChannel.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_UpdateChannel.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_UpdateChannel.html)
+  - **Dedicated namespace API:** [UpdateChannel](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_UpdateChannel.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateChannelMessage.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateChannelMessage.html)**
+- **[UpdateChannelMessage](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateChannelMessage.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_UpdateChannelMessage.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_UpdateChannelMessage.html)
+  - **Dedicated namespace API:** [UpdateChannelMessage](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_UpdateChannelMessage.html)
 
-- **[https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateChannelReadMarker.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateChannelReadMarker.html)**
+- **[UpdateChannelReadMarker](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateChannelReadMarker.html)**
   - **Dedicated namespace:** messaging-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_UpdateChannelReadMarker.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_UpdateChannelReadMarker.html)
+  - **Dedicated namespace API:** [UpdateChannelReadMarker](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_UpdateChannelReadMarker.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateProxySession.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateProxySession.html) **
+- ** [UpdateProxySession](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateProxySession.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateProxySession.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateProxySession.html)
+  - **Dedicated namespace API:** [UpdateProxySession](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateProxySession.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateSipMediaApplication.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateSipMediaApplication.html) **
+- ** [UpdateSipMediaApplication](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateSipMediaApplication.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateSipMediaApplication.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateSipMediaApplication.html)
+  - **Dedicated namespace API:** [UpdateSipMediaApplication](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateSipMediaApplication.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateSipMediaApplicationCall.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateSipMediaApplicationCall.html) **
+- ** [UpdateSipMediaApplicationCall](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateSipMediaApplicationCall.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateSipMediaApplicationCall.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateSipMediaApplicationCall.html)
+  - **Dedicated namespace API:** [UpdateSipMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateSipMediaApplicationCall.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateSipRule.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateSipRule.html) **
+- ** [UpdateSipRule](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateSipRule.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateSipRule.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateSipRule.html)
+  - **Dedicated namespace API:** [UpdateSipRule](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateSipRule.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateVoiceConnector.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateVoiceConnector.html) **
+- ** [UpdateVoiceConnector](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateVoiceConnector.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateVoiceConnector.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateVoiceConnector.html)
+  - **Dedicated namespace API:** [UpdateVoiceConnector](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateVoiceConnector.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateVoiceConnectorGroup.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateVoiceConnectorGroup.html) **
+- ** [UpdateVoiceConnectorGroup](https://docs.aws.amazon.com/chime/latest/APIReference/API_UpdateVoiceConnectorGroup.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateVoiceConnectorGroup.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateVoiceConnectorGroup.html)
+  - **Dedicated namespace API:** [UpdateVoiceConnectorGroup](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateVoiceConnectorGroup.html)
 
-- ** [https://docs.aws.amazon.com/chime/latest/APIReference/API_ValidateE911Address.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_ValidateE911Address.html) **
+- ** [ValidateE911Address](https://docs.aws.amazon.com/chime/latest/APIReference/API_ValidateE911Address.html) **
   - **Dedicated namespace:** voice-chime
-  - **Dedicated namespace API:** [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ValidateE911Address.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ValidateE911Address.html)
+  - **Dedicated namespace API:** [ValidateE911Address](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ValidateE911Address.html)
 
 **\+** API has been superseded by an API with another name.
 

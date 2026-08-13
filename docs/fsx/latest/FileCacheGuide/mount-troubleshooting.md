@@ -20,7 +20,7 @@ Is the MGS specification correct?
 Is the filesystem name correct?
 ```
 
-This error can occur if you aren't using the correct `mountname` value when mounting a cache by using the **mount** command. You can get the `mountname` value from the response of the [https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-file-caches.html](https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-file-caches.html) AWS CLI command or the [https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeFileCaches.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeFileCaches.html) API operation, and also from the **Mount name** field on the cache console's **Summary** panel.
+This error can occur if you aren't using the correct `mountname` value when mounting a cache by using the **mount** command. You can get the `mountname` value from the response of the [**describe-file-caches**](https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-file-caches.html) AWS CLI command or the [**DescribeFileCaches**](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeFileCaches.html) API operation, and also from the **Mount name** field on the cache console's **Summary** panel.
 
 ## Cache mount hangs and then fails with timeout error
 <a name="mount-hangs-fails-timeout"></a>

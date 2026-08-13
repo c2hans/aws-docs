@@ -18,13 +18,13 @@ You can attach `SageMakerStudioProjectRoleMachineLearningPolicy` to your users, 
 <a name="SageMakerStudioProjectRoleMachineLearningPolicy-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: November 20, 2024, 21:55 UTC
-+ **Edited time:** July 09, 2026, 17:27 UTC
++ **Edited time:** August 11, 2026, 22:27 UTC
 + **ARN**: `arn:aws:iam::aws:policy/SageMakerStudioProjectRoleMachineLearningPolicy`
 
 ## Policy version
 <a name="SageMakerStudioProjectRoleMachineLearningPolicy-version"></a>
 
-**Policy version:** v41 (default)
+**Policy version:** v42 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -1288,7 +1288,8 @@ The policy's default version is the version that defines the permissions for the
         "datazone:*Message*",
         "datazone:*Conversation*",
         "datazone:*Cell*",
-        "datazone:*Notebook*"
+        "datazone:*Notebook*",
+        "datazone:*Compute*"
       ],
       "Resource" : "*"
     },

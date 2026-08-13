@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 
 To try out CloudWatch Application Signals on a sample app before you instrument your own applications with it, follow the instructions in this section. These instructions use scripts to help you create an Amazon EKS cluster, install a sample application, and instrument the sample application to work with Application Signals.
 
-The sample application is a Spring "Pet Clinic" application that is composed of four microservices. These services run on Amazon EKS on Amazon EC2 and leverage Application Signals enablement scripts to enable the cluster with the Java, Python, or .NET auto-instrumentation agent.
+The sample application is a Spring "Pet Clinic" application that is composed of four microservices. These services run on Amazon EKS on Amazon EC2 and use Application Signals enablement scripts to enable the cluster with the Java, Python, or .NET auto-instrumentation agent.
 
 **Requirements**
 + Application Signals monitors only Java, Python, or .NET applications.

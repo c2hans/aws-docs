@@ -28,16 +28,16 @@ You can use the AWS Device Farm console, AWS CLI, or AWS Device Farm API to view
 
 ## View the projects list (AWS CLI)
 <a name="how-to-view-projects-list-cli"></a>
-+ To view the projects list, run the [https://docs.aws.amazon.com/cli/latest/reference/devicefarm/list-projects.html](https://docs.aws.amazon.com/cli/latest/reference/devicefarm/list-projects.html) command.
++ To view the projects list, run the [**list-projects**](https://docs.aws.amazon.com/cli/latest/reference/devicefarm/list-projects.html) command.
 
-  To view information about a single project, run the [https://docs.aws.amazon.com/cli/latest/reference/devicefarm/get-project.html](https://docs.aws.amazon.com/cli/latest/reference/devicefarm/get-project.html) command.
+  To view information about a single project, run the [**get-project**](https://docs.aws.amazon.com/cli/latest/reference/devicefarm/get-project.html) command.
 
 For information about using Device Farm with the AWS CLI, see [AWS CLI reference](cli-ref.md).
 
 ## View the projects list (API)
 <a name="how-to-view-projects-list-api"></a>
-+ To view the projects list, call the [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListProjects.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListProjects.html) API.
++ To view the projects list, call the [`ListProjects`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListProjects.html) API.
 
-  To view information about a single project, call the [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetProject.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetProject.html) API.
+  To view information about a single project, call the [`GetProject`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetProject.html) API.
 
 For information about the AWS Device Farm API, see [Automating Device Farm](api-ref.md).

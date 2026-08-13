@@ -146,7 +146,7 @@ aws rds create-blue-green-deployment ^
 ### RDS API
 <a name="blue-green-deployments-creating-api"></a>
 
-To create a blue/green deployment by using the Amazon RDS API, use the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateBlueGreenDeployment.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateBlueGreenDeployment.html) operation. For information about each option, see [Settings for creating blue/green deployments](#create-blue-green-settings).
+To create a blue/green deployment by using the Amazon RDS API, use the [`CreateBlueGreenDeployment`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateBlueGreenDeployment.html) operation. For information about each option, see [Settings for creating blue/green deployments](#create-blue-green-settings).
 
 ## Settings for creating blue/green deployments
 <a name="create-blue-green-settings"></a>

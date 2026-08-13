@@ -20,5 +20,5 @@ Note that feature and language support differs for batch and streaming transcrip
 + [Transcribing numbers and punctuation](how-numbers.md)
 
 **API operations to get you started**
-Batch: [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html)
-Streaming: [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartStreamTranscription.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartStreamTranscription.html), StartStreamTranscriptionWebSocket
+Batch: [`StartTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html)
+Streaming: [`StartStreamTranscription`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartStreamTranscription.html), StartStreamTranscriptionWebSocket

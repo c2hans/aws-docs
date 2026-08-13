@@ -36,7 +36,7 @@ To create a self-managed license in AWS License Manager to track the license usa
 ## To create a self-managed license by using the AWS CLI
 <a name="sqlserver-byom-license-manager.create-cli"></a>
 
-To create a self-managed license by using the AWS CLI, call the [https://docs.aws.amazon.com/cli/latest/reference/license-manager/create-license-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/license-manager/create-license-configuration.html) command. Use the `--cli-input-json` or `--cli-input-yaml` parameters to pass the parameters to the command.
+To create a self-managed license by using the AWS CLI, call the [`create-license-configuration`](https://docs.aws.amazon.com/cli/latest/reference/license-manager/create-license-configuration.html) command. Use the `--cli-input-json` or `--cli-input-yaml` parameters to pass the parameters to the command.
 
 **Example**
 

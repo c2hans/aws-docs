@@ -36,7 +36,7 @@ All public repositories are visible on the Amazon ECR Public Gallery. Using a re
    + For **AWS Account IDs**, specify an AWS account number (for example, `111122223333`) to apply the statement to all users under a specific AWS account. Multiple accounts can be specified by using a comma-separated list.
    + For **IAM Entities**, select the roles or users under your AWS account to apply the statement to.
 **Note**
-For more complicated repository policies that are not currently supported in the AWS Management Console, you can apply the policy with the [https://docs.aws.amazon.com/cli/latest/reference/ecr/set-repository-policy.html](https://docs.aws.amazon.com/cli/latest/reference/ecr/set-repository-policy.html) AWS CLI command.
+For more complicated repository policies that are not currently supported in the AWS Management Console, you can apply the policy with the [**set-repository-policy**](https://docs.aws.amazon.com/cli/latest/reference/ecr/set-repository-policy.html) AWS CLI command.
 
 1. For **Actions**, choose the scope of the Amazon ECR API operations that the policy statement applies to from the list of individual API operations.
 

@@ -59,14 +59,14 @@ Note: Amazon EC2 root volumes used as boot volumes for the operating system alwa
   <tr><th>Volume ID</th><th>Type</th><th>Minimum volume size</th><th>Additional space for local snapshots</th><th>Storage efficiency</th><th>% space required on SSD</th></tr>
 </thead>
 <tbody>
-  <tr><td>HANA data</td><td rowspan="4">FSxN \#1 - Single-AZ1 - 1024 MB/s (\*)</td><td>1.2 x RAM</td><td>DB Size x SNAPSHOTS-KEPT-AT-PRIMARY x CHANGE-RATE-DB</td><td>Enabled; expect \~30% savings without encryption, 0% with encryption</td><td>100%</td></tr>
-  <tr><td>HANA log</td><td>IF(RAM ⇐ 512; RAM/2; 512)</td><td>N/A</td><td>Enabled; expect \~30% savings without encryption, 0% with encryption</td><td>100%</td></tr>
-  <tr><td>HANA shared</td><td>MIN(RAM; 1024) x 50%</td><td>Volume Size x SNAPSHOTS-KEPT-AT-PRIMARY x CHANGE-RATE-BINARIES</td><td>Enabled, assume \~50%</td><td>100%</td></tr>
-  <tr><td>APPSRV bin</td><td>100 GB x 50%</td><td>Volume Size x SNAPSHOTS-KEPT-AT-PRIMARY x CHANGE-RATE-BINARIES</td><td>Enabled, assume \~50%</td><td>100%</td></tr>
-  <tr><td>Backup HANA log</td><td>FSxN \#2 - Multi-AZ1\+2 - 512 MB/s (\*\*)</td><td>DB Size x LOG-RATE x RETENTION x % SSD</td><td>N/A</td><td>Optional</td><td>MIN(SNAPSHOTS-KEPT-AT-PRIMARY / RETENTION; 5%)</td></tr>
-  <tr><td>Backup HANA data</td><td rowspan="3">FSxN \#3 - Single-AZ3 - 512 MB/s</td><td>DB Size x (1 \+ RETENTION x CHANGE-RATE-DB) x % SSD</td><td>N/A</td><td>Optional</td><td>\~5%</td></tr>
-  <tr><td>Backup HANA shared</td><td>Volume Size x (1 \+ RETENTION x CHANGE-RATE-BINARIES) x % SSD</td><td>N/A</td><td>Enabled, assume \~50%</td><td>\~5%</td></tr>
-  <tr><td>Backup APPSRV bin</td><td>Volume Size x (1 \+ RETENTION x CHANGE-RATE-BINARIES) x % SSD</td><td>N/A</td><td>Enabled, assume \~50%</td><td>\~5%</td></tr>
+  <tr><td>HANA data</td><td rowspan="4">FSxN #1 - Single-AZ1 - 1024 MB/s (*)</td><td>1.2 x RAM</td><td>DB Size x SNAPSHOTS-KEPT-AT-PRIMARY x CHANGE-RATE-DB</td><td>Enabled; expect ~30% savings without encryption, 0% with encryption</td><td>100%</td></tr>
+  <tr><td>HANA log</td><td>IF(RAM ⇐ 512; RAM/2; 512)</td><td>N/A</td><td>Enabled; expect ~30% savings without encryption, 0% with encryption</td><td>100%</td></tr>
+  <tr><td>HANA shared</td><td>MIN(RAM; 1024) x 50%</td><td>Volume Size x SNAPSHOTS-KEPT-AT-PRIMARY x CHANGE-RATE-BINARIES</td><td>Enabled, assume ~50%</td><td>100%</td></tr>
+  <tr><td>APPSRV bin</td><td>100 GB x 50%</td><td>Volume Size x SNAPSHOTS-KEPT-AT-PRIMARY x CHANGE-RATE-BINARIES</td><td>Enabled, assume ~50%</td><td>100%</td></tr>
+  <tr><td>Backup HANA log</td><td>FSxN #2 - Multi-AZ1+2 - 512 MB/s (**)</td><td>DB Size x LOG-RATE x RETENTION x % SSD</td><td>N/A</td><td>Optional</td><td>MIN(SNAPSHOTS-KEPT-AT-PRIMARY / RETENTION; 5%)</td></tr>
+  <tr><td>Backup HANA data</td><td rowspan="3">FSxN #3 - Single-AZ3 - 512 MB/s</td><td>DB Size x (1 + RETENTION x CHANGE-RATE-DB) x % SSD</td><td>N/A</td><td>Optional</td><td>~5%</td></tr>
+  <tr><td>Backup HANA shared</td><td>Volume Size x (1 + RETENTION x CHANGE-RATE-BINARIES) x % SSD</td><td>N/A</td><td>Enabled, assume ~50%</td><td>~5%</td></tr>
+  <tr><td>Backup APPSRV bin</td><td>Volume Size x (1 + RETENTION x CHANGE-RATE-BINARIES) x % SSD</td><td>N/A</td><td>Enabled, assume ~50%</td><td>~5%</td></tr>
 </tbody>
 </table>
 

@@ -19,7 +19,7 @@ Lambda functions are often deployed behind API instances in [Amazon API Gateway]
 
 When you don’t need the governance features API Gateway offers, you can deploy Lambda functions behind an Application Load Balancer (ALB), which allows load to scale elastically without having to maintain a set of managed APIs.
 
-For more information on how to create applications using AWS Lambda, see the [https://docs.aws.amazon.com/whitepapers/latest/serverless-architectures-lambda/welcome.html](https://docs.aws.amazon.com/whitepapers/latest/serverless-architectures-lambda/welcome.html) whitepaper.
+For more information on how to create applications using AWS Lambda, see the [*Serverless Architectures with AWS Lambda*](https://docs.aws.amazon.com/whitepapers/latest/serverless-architectures-lambda/welcome.html) whitepaper.
 
 **Load Balancing .NET Applications on AWS**
 

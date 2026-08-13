@@ -250,6 +250,8 @@ Alternatively, Amazon SageMaker Unified Studio can use an existing IAM role as t
 1. You should see a screen with the title **Set up Amazon SageMaker Unified Studio**.
 
 1. Choose and select the Execution IAM Role for the Admin
+**Note**
+If [role manager](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_role-manager.html) is enabled in your account, Amazon SageMaker Unified Studio attaches the role for you, and the role options described here are replaced by a **Customize** option. To use a different role, choose **Customize**. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. **Setup S3 table integration with AWS analytics services**. This option is enabled by default, and will allow Amazon SageMaker Unified Studio to access table buckets and integrate the table buckets with AWS analytics services using AWS Glue. If S3 Tables analytics integration has already been configured in your account and Region (that is, the `s3tablescatalog` already exists in the AWS Glue Data Catalog), this option will not be shown. [Learn more](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-integrating-aws.html).
 
@@ -266,8 +268,5 @@ Alternatively, Amazon SageMaker Unified Studio can use an existing IAM role as t
 1. Once the setup is completed, project will automatically be created using the same Execution role. Then you will be redirected to the Administrative pages for managing the domain. See [Access the Domain Administration Page](access-domain-administration-page.md) for details.
 
 1. You can also access the project associated with your Login IAM role by choosing on the first project. See **Navigating within Amazon SageMaker Unified Studio** for details.
-
-**Note**
-To add more IAM roles to the IAM based domain, you can create new projects using the IAM role as the Login IAM role. See additional details to setup [Projects in IAM-based domains](projects-iam-based-domains.md) .
 
 Amazon SageMaker Unified Studio also supports domains configured with AWS IAM Identity Center (IdC). Additional details to setup an Identity Center based domain are available in [Identity Center-based domains](identity-center-based-domains.md).

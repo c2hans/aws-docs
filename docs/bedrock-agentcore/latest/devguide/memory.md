@@ -26,6 +26,7 @@ AgentCore Memory supports a variety of SDKs and agent frameworks. For examples, 
 + [Amazon Bedrock capacity for built-in with overrides strategies](bedrock-capacity.md)
 + [Observability](memory-observability.md)
 + [Best practices](best-practices.md)
++ [Advanced features and topics for Amazon Bedrock AgentCore Memory](memory-advanced.md)
 
 ## Memory types
 <a name="memory-types-overview"></a>

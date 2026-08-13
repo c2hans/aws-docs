@@ -139,7 +139,7 @@ The Amazon EKS subscription ID with the exception.
 HTTP Status Code: 400
 
  ** InvalidStateException **
-Amazon EKS detected upgrade readiness issues. Call the [https://docs.aws.amazon.com/eks/latest/APIReference/API_ListInsights.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListInsights.html) API to view detected upgrade blocking issues. Pass the [https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateClusterVersion.html#API_UpdateClusterVersion_RequestBody](https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateClusterVersion.html#API_UpdateClusterVersion_RequestBody) flag when updating to override upgrade readiness errors.
+Amazon EKS detected upgrade readiness issues. Call the [`ListInsights`](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListInsights.html) API to view detected upgrade blocking issues. Pass the [`force`](https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateClusterVersion.html#API_UpdateClusterVersion_RequestBody) flag when updating to override upgrade readiness errors.
  ** clusterName **
 The Amazon EKS cluster associated with the exception.
 HTTP Status Code: 400

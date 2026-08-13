@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_G
 
 Returns the resource-based policy document attached to the resource, which can be a table or stream, in JSON format.
 
- `GetResourcePolicy` follows an [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html) model. The following list describes the outcomes when you issue the `GetResourcePolicy` request immediately after issuing another request:
+ `GetResourcePolicy` follows an [*eventually consistent*](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html) model. The following list describes the outcomes when you issue the `GetResourcePolicy` request immediately after issuing another request:
 + If you issue a `GetResourcePolicy` request immediately after a `PutResourcePolicy` request, DynamoDB might return a `PolicyNotFoundException`.
 + If you issue a `GetResourcePolicy`request immediately after a `DeleteResourcePolicy` request, DynamoDB might return the policy that was present before the deletion request.
 + If you issue a `GetResourcePolicy` request immediately after a `CreateTable` request, which includes a resource-based policy, DynamoDB might return a `ResourceNotFoundException` or a `PolicyNotFoundException`.

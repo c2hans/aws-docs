@@ -48,58 +48,58 @@ Amazon Polly accepts Cantonese input encoded in UTF-8 only.
   <tr><th>Jyutping</th><th>IPA</th><th>X-SAMPA</th><th>Description</th><th>Jyutping Example</th><th>Viseme</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="6">**Consonants**</td></tr>
-  <tr><td>b</td><td>p </td><td>p</td><td>voiceless bilabial plosive </td><td>巴, **b**aa1</td><td>p </td></tr>
-  <tr><td>c</td><td>tsʰ</td><td>ts\_h</td><td>aspirated voiceless alveolar affricate </td><td>叉, **c**aa1</td><td>s</td></tr>
-  <tr><td>d</td><td>t </td><td>t</td><td>voiceless alveolar plosive </td><td>打, **d**aa2 </td><td>t </td></tr>
-  <tr><td>f</td><td>f</td><td>f</td><td>voiceless labiodental fricative</td><td>花, **f**aa1 </td><td>f </td></tr>
-  <tr><td>g</td><td>k </td><td>k</td><td>voiceless velar plosive</td><td>家, **g**aa1</td><td>k </td></tr>
-  <tr><td>gw</td><td>kʷ </td><td>k\_w</td><td>labialized voiceless velar plosive</td><td>瓜, **gw**aa1 </td><td>u </td></tr>
-  <tr><td>h</td><td>h </td><td>h</td><td>voiceless glottal fricative </td><td>哈, **h**aa1 </td><td>k </td></tr>
-  <tr><td>k</td><td>kʰ </td><td>k\_h</td><td>aspirated voiceless velar plosive</td><td>卡, **k**aa1 </td><td>k </td></tr>
-  <tr><td>kw</td><td>kʷʰ</td><td>k\_wh</td><td>labialized aspirated voiceless velar plosive</td><td>誇, **kw**aa1</td><td>u </td></tr>
-  <tr><td>l</td><td>l</td><td>l</td><td>alveolar lateral approximant</td><td>啦, **l**aa1 </td><td>t </td></tr>
-  <tr><td>m</td><td>m </td><td>m</td><td>bilabial nasal </td><td>媽, **m**aa1 </td><td>p </td></tr>
-  <tr><td>m</td><td>m </td><td>m=</td><td>syllabic bilabial nasal</td><td>唔, **m**4 </td><td>p </td></tr>
-  <tr><td>ng</td><td>ŋ</td><td>N</td><td>velar nasal </td><td>牙, **ng**aa4 </td><td>k </td></tr>
-  <tr><td>ng</td><td>ŋ</td><td>N=</td><td>syllabic velar nasal</td><td>吳, **ng**4 </td><td>k </td></tr>
-  <tr><td>n</td><td>n </td><td>n</td><td>alveolar nasal</td><td>拿, **n**aa4 </td><td>t </td></tr>
-  <tr><td>p</td><td>pʰ</td><td>p\_h</td><td>aspirated voiceless bilabial plosive</td><td>趴, **p**aa1 </td><td>p</td></tr>
-  <tr><td>s</td><td>s</td><td>s</td><td>voiceless alveolar fricative </td><td>沙, **s**aa1 </td><td>s </td></tr>
-  <tr><td>t</td><td>tʰ</td><td>t\_h</td><td>aspirated voiceless alveolar plosive</td><td>他, **t**aa1 </td><td>t </td></tr>
-  <tr><td>w</td><td>w</td><td>w</td><td>labio-velar approximant</td><td>娃, **w**aa1 </td><td>u </td></tr>
-  <tr><td>y</td><td>j</td><td>j</td><td>palatal approximant </td><td>也, **j**aa5 </td><td>i </td></tr>
-  <tr><td>z</td><td>ts</td><td>ts</td><td>voiceless alveolar affricate</td><td>渣, **z**aa1 </td><td>s </td></tr>
-  <tr><td colspan="6">**Vowels**</td></tr>
-  <tr><td>a</td><td>ɐ </td><td>6</td><td>near-open central vowel</td><td>吉, g**a**t1 </td><td>a </td></tr>
-  <tr><td>aa</td><td>ɑ</td><td>A</td><td>open back unrounded vowel</td><td>家, g**aa**1 </td><td>a</td></tr>
-  <tr><td>aai</td><td>ɑi</td><td>Ai</td><td>dipthong</td><td>街, g**aai**1 </td><td>a </td></tr>
-  <tr><td>aau</td><td>ɑu</td><td>Au</td><td>dipthong</td><td>交, g**aau**1 </td><td>a </td></tr>
-  <tr><td>ai</td><td>ɐi</td><td>6i</td><td>dipthong</td><td>雞, g**ai**1</td><td>a </td></tr>
-  <tr><td>au</td><td>ɐu</td><td>6u</td><td>dipthong</td><td>溝, k**au**1</td><td>a </td></tr>
-  <tr><td>e</td><td>ɛ</td><td>E</td><td>open-mid front unrounded vowel</td><td>爹, d**e**1</td><td>E</td></tr>
-  <tr><td>ei</td><td>ei</td><td>ei</td><td>dipthong</td><td>基, g**ei**1</td><td>e</td></tr>
-  <tr><td>eo</td><td>ɵ</td><td>8</td><td>close-mid central rounded vowel </td><td>春, c**eo**n1</td><td>o</td></tr>
-  <tr><td>eoi</td><td>ɵy</td><td>8y</td><td>diphthong </td><td>居, g**eoi**1</td><td>o</td></tr>
-  <tr><td>eu</td><td>ɛu</td><td>Eu</td><td>diphthong </td><td>掉 in 掉垃圾, d**eu**6</td><td>E</td></tr>
-  <tr><td>i</td><td>i </td><td>i</td><td>close front unrounded vowel</td><td>斯, **si**1</td><td>i </td></tr>
-  <tr><td>i</td><td>I</td><td>l</td><td>near-close near-front unrounded vowel</td><td>激, gik****1</td><td>i </td></tr>
-  <tr><td>iu</td><td>iu </td><td>iu</td><td>diphthong </td><td>驕, g**iu**1</td><td>i</td></tr>
-  <tr><td>o</td><td>ɔ</td><td>O</td><td>open-mid back rounded vowel </td><td>哥, g**o**1</td><td>O </td></tr>
-  <tr><td>oe</td><td>œ</td><td>9</td><td>open-mid front rounded vowel</td><td>鋸, g**oe**3</td><td>O</td></tr>
-  <tr><td>oi</td><td>ɔi</td><td>Oi</td><td>dipthong</td><td>該, goi1</td><td>O</td></tr>
-  <tr><td>ou</td><td>ou</td><td>ou</td><td>dipthong</td><td>高, gou1</td><td>o</td></tr>
-  <tr><td>u</td><td>u</td><td>u</td><td>close back rounded vowel</td><td>姑, gu1</td><td>u</td></tr>
-  <tr><td>u</td><td>ʊ</td><td>U</td><td>near-close near-back rounded vowel</td><td>谷, guk5</td><td>u</td></tr>
-  <tr><td>ui</td><td>ui</td><td>ui</td><td>dipthong</td><td>攰, gui6</td><td>u</td></tr>
-  <tr><td>yu</td><td>y</td><td>y</td><td>close front rounded vowel</td><td>於, jyu1</td><td>u</td></tr>
-  <tr><td colspan="6">**Tone marks and Additional Symbols**</td></tr>
-  <tr><td>1</td><td> </td><td></td><td>high level</td><td>詩, si**1** </td><td></td></tr>
-  <tr><td>2</td><td> </td><td></td><td>medium rising</td><td>史, si**2**</td><td></td></tr>
-  <tr><td>3</td><td> </td><td></td><td>medium level</td><td>試, si**3**</td><td></td></tr>
-  <tr><td>4</td><td> </td><td></td><td>very low level</td><td>時, si**4**</td><td></td></tr>
-  <tr><td>5</td><td> </td><td></td><td>low rising</td><td>市, si**5**</td><td></td></tr>
-  <tr><td>6</td><td> </td><td></td><td>low level</td><td>是, si**6**</td><td></td></tr>
+  <tr><td colspan="6"><b>Consonants</b></td></tr>
+  <tr><td>b</td><td>p </td><td>p</td><td>voiceless bilabial plosive </td><td>巴, <b>b</b>aa1</td><td>p </td></tr>
+  <tr><td>c</td><td>tsʰ</td><td>ts_h</td><td>aspirated voiceless alveolar affricate </td><td>叉, <b>c</b>aa1</td><td>s</td></tr>
+  <tr><td>d</td><td>t </td><td>t</td><td>voiceless alveolar plosive </td><td>打, <b>d</b>aa2 </td><td>t </td></tr>
+  <tr><td>f</td><td>f</td><td>f</td><td>voiceless labiodental fricative</td><td>花, <b>f</b>aa1 </td><td>f </td></tr>
+  <tr><td>g</td><td>k </td><td>k</td><td>voiceless velar plosive</td><td>家, <b>g</b>aa1</td><td>k </td></tr>
+  <tr><td>gw</td><td>kʷ </td><td>k_w</td><td>labialized voiceless velar plosive</td><td>瓜, <b>gw</b>aa1 </td><td>u </td></tr>
+  <tr><td>h</td><td>h </td><td>h</td><td>voiceless glottal fricative </td><td>哈, <b>h</b>aa1 </td><td>k </td></tr>
+  <tr><td>k</td><td>kʰ </td><td>k_h</td><td>aspirated voiceless velar plosive</td><td>卡, <b>k</b>aa1 </td><td>k </td></tr>
+  <tr><td>kw</td><td>kʷʰ</td><td>k_wh</td><td>labialized aspirated voiceless velar plosive</td><td>誇, <b>kw</b>aa1</td><td>u </td></tr>
+  <tr><td>l</td><td>l</td><td>l</td><td>alveolar lateral approximant</td><td>啦, <b>l</b>aa1 </td><td>t </td></tr>
+  <tr><td>m</td><td>m </td><td>m</td><td>bilabial nasal </td><td>媽, <b>m</b>aa1 </td><td>p </td></tr>
+  <tr><td>m</td><td>m </td><td>m=</td><td>syllabic bilabial nasal</td><td>唔, <b>m</b>4 </td><td>p </td></tr>
+  <tr><td>ng</td><td>ŋ</td><td>N</td><td>velar nasal </td><td>牙, <b>ng</b>aa4 </td><td>k </td></tr>
+  <tr><td>ng</td><td>ŋ</td><td>N=</td><td>syllabic velar nasal</td><td>吳, <b>ng</b>4 </td><td>k </td></tr>
+  <tr><td>n</td><td>n </td><td>n</td><td>alveolar nasal</td><td>拿, <b>n</b>aa4 </td><td>t </td></tr>
+  <tr><td>p</td><td>pʰ</td><td>p_h</td><td>aspirated voiceless bilabial plosive</td><td>趴, <b>p</b>aa1 </td><td>p</td></tr>
+  <tr><td>s</td><td>s</td><td>s</td><td>voiceless alveolar fricative </td><td>沙, <b>s</b>aa1 </td><td>s </td></tr>
+  <tr><td>t</td><td>tʰ</td><td>t_h</td><td>aspirated voiceless alveolar plosive</td><td>他, <b>t</b>aa1 </td><td>t </td></tr>
+  <tr><td>w</td><td>w</td><td>w</td><td>labio-velar approximant</td><td>娃, <b>w</b>aa1 </td><td>u </td></tr>
+  <tr><td>y</td><td>j</td><td>j</td><td>palatal approximant </td><td>也, <b>j</b>aa5 </td><td>i </td></tr>
+  <tr><td>z</td><td>ts</td><td>ts</td><td>voiceless alveolar affricate</td><td>渣, <b>z</b>aa1 </td><td>s </td></tr>
+  <tr><td colspan="6"><b>Vowels</b></td></tr>
+  <tr><td>a</td><td>ɐ </td><td>6</td><td>near-open central vowel</td><td>吉, g<b>a</b>t1 </td><td>a </td></tr>
+  <tr><td>aa</td><td>ɑ</td><td>A</td><td>open back unrounded vowel</td><td>家, g<b>aa</b>1 </td><td>a</td></tr>
+  <tr><td>aai</td><td>ɑi</td><td>Ai</td><td>dipthong</td><td>街, g<b>aai</b>1 </td><td>a </td></tr>
+  <tr><td>aau</td><td>ɑu</td><td>Au</td><td>dipthong</td><td>交, g<b>aau</b>1 </td><td>a </td></tr>
+  <tr><td>ai</td><td>ɐi</td><td>6i</td><td>dipthong</td><td>雞, g<b>ai</b>1</td><td>a </td></tr>
+  <tr><td>au</td><td>ɐu</td><td>6u</td><td>dipthong</td><td>溝, k<b>au</b>1</td><td>a </td></tr>
+  <tr><td>e</td><td>ɛ</td><td>E</td><td>open-mid front unrounded vowel</td><td>爹, d<b>e</b>1</td><td>E</td></tr>
+  <tr><td>ei</td><td>ei</td><td>ei</td><td>dipthong</td><td>基, g<b>ei</b>1</td><td>e</td></tr>
+  <tr><td>eo</td><td>ɵ</td><td>8</td><td>close-mid central rounded vowel </td><td>春, c<b>eo</b>n1</td><td>o</td></tr>
+  <tr><td>eoi</td><td>ɵy</td><td>8y</td><td>diphthong </td><td>居, g<b>eoi</b>1</td><td>o</td></tr>
+  <tr><td>eu</td><td>ɛu</td><td>Eu</td><td>diphthong </td><td>掉 in 掉垃圾, d<b>eu</b>6</td><td>E</td></tr>
+  <tr><td>i</td><td>i </td><td>i</td><td>close front unrounded vowel</td><td>斯, <b>si</b>1</td><td>i </td></tr>
+  <tr><td>i</td><td>I</td><td>l</td><td>near-close near-front unrounded vowel</td><td>激, gik<b></b>1</td><td>i </td></tr>
+  <tr><td>iu</td><td>iu </td><td>iu</td><td>diphthong </td><td>驕, g<b>iu</b>1</td><td>i</td></tr>
+  <tr><td>o</td><td>ɔ</td><td>O</td><td>open-mid back rounded vowel </td><td>哥, g<b>o</b>1</td><td>O </td></tr>
+  <tr><td>oe</td><td>œ</td><td>9</td><td>open-mid front rounded vowel</td><td>鋸, g<b>oe</b>3</td><td>O</td></tr>
+  <tr><td>oi</td><td>ɔi</td><td>Oi</td><td>dipthong</td><td>該, g<b>oi</b>1</td><td>O</td></tr>
+  <tr><td>ou</td><td>ou</td><td>ou</td><td>dipthong</td><td>高, g<b>ou</b>1</td><td>o</td></tr>
+  <tr><td>u</td><td>u</td><td>u</td><td>close back rounded vowel</td><td>姑, g<b>u</b>1</td><td>u</td></tr>
+  <tr><td>u</td><td>ʊ</td><td>U</td><td>near-close near-back rounded vowel</td><td>谷, g<b>u</b>k5</td><td>u</td></tr>
+  <tr><td>ui</td><td>ui</td><td>ui</td><td>dipthong</td><td>攰, g<b>ui</b>6</td><td>u</td></tr>
+  <tr><td>yu</td><td>y</td><td>y</td><td>close front rounded vowel</td><td>於, j<b>yu</b>1</td><td>u</td></tr>
+  <tr><td colspan="6"><b>Tone marks and Additional Symbols</b></td></tr>
+  <tr><td>1</td><td> </td><td></td><td>high level</td><td>詩, si<b>1</b> </td><td></td></tr>
+  <tr><td>2</td><td> </td><td></td><td>medium rising</td><td>史, si<b>2</b></td><td></td></tr>
+  <tr><td>3</td><td> </td><td></td><td>medium level</td><td>試, si<b>3</b></td><td></td></tr>
+  <tr><td>4</td><td> </td><td></td><td>very low level</td><td>時, si<b>4</b></td><td></td></tr>
+  <tr><td>5</td><td> </td><td></td><td>low rising</td><td>市, si<b>5</b></td><td></td></tr>
+  <tr><td>6</td><td> </td><td></td><td>low level</td><td>是, si<b>6</b></td><td></td></tr>
   <tr><td>-</td><td>.</td><td>.</td><td>syllable boundary</td><td>語音 jyu5-jam1</td><td> </td></tr>
 </tbody>
 </table>

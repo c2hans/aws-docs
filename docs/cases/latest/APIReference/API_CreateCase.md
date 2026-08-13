@@ -6,15 +6,17 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_CreateCase
 <a name="API_connect-cases_CreateCase"></a>
 
 **Note**
-If you provide a value for `PerformedBy.UserArn` you must also have [connect:DescribeUser](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeUser.html) permission on the User ARN resource that you provide
+If you provide a value for `PerformedBy.UserArn`, you must also have the [connect:DescribeUser](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeUser.html) permission on the user ARN that you provide.
 
 Creates a case in the specified Cases domain. Case system and custom fields are taken as an array id/value pairs with a declared data types.
 
 When creating a case from a template that has tag propagation configurations, the specified tags are automatically applied to the case.
 
-The following fields are required when creating a case:
-+  `customer_id` - You must provide the full customer profile ARN in this format: `arn:aws:profile:your_AWS_Region:your_AWS_account ID:domains/your_profiles_domain_name/profiles/profile_ID`
+The following field is always required when creating a case:
 +  `title`
+
+The following field may be required depending on the template configuration:
++  `customer_id` - Required only if the template's `requiredFields` list includes `customer_id`. When required, provide the full customer profile ARN in this format: `arn:aws:profile:your_AWS_Region:your_AWS_account_ID:domains/your_profiles_domain_name/profiles/profile_ID`. When not required, the field is optional and can be omitted, added, changed, or removed after case creation.
 
 ## Request Syntax
 <a name="API_connect-cases_CreateCase_RequestSyntax"></a>
@@ -73,7 +75,7 @@ Type: [UserUnion](API_connect-cases_UserUnion.md) object
 Required: No
 
  ** [tags](#API_connect-cases_CreateCase_RequestSyntax) **   <a name="connect-connect-cases_CreateCase-request-tags"></a>
-A map of of key-value pairs that represent tags on a resource. Tags are used to organize, track, or control access for this resource.
+A map of key-value pairs that represent tags on a resource. Tags are used to organize, track, or control access for this resource.
 Type: String to string map
 Map Entries: Minimum number of 0 items. Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
@@ -165,15 +167,16 @@ This example illustrates one usage of CreateCase.
 {
   "templateId": "[template_id]",
   "fields": [
-  {
-    "id": "customer_id",
-    "value": {
-      "stringValue": "[customer_id]"
-     },
     {
-    "id": "title",
-    "value": {
-      "stringValue": "Incorrect Shipping Address"
+      "id": "customer_id",
+      "value": {
+        "stringValue": "[customer_id]"
+      }
+    },
+    {
+      "id": "title",
+      "value": {
+        "stringValue": "Incorrect Shipping Address"
       }
     }
   ],

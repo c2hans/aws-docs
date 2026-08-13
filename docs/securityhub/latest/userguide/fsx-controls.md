@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon FSx service and resourc
 
 **Resource type:** `AWS::FSx::FileSystem`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/fsx-openzfs-copy-tags-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/fsx-openzfs-copy-tags-enabled.html)
+**AWS Config rule:** [fsx-openzfs-copy-tags-enabled](https://docs.aws.amazon.com/config/latest/developerguide/fsx-openzfs-copy-tags-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -44,7 +44,7 @@ For information about configuring an FSx for OpenZFS file system to copy tags to
 
 **Resource type:** `AWS::FSx::FileSystem`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/fsx-lustre-copy-tags-to-backups.html](https://docs.aws.amazon.com/config/latest/developerguide/fsx-lustre-copy-tags-to-backups.html)
+**AWS Config rule:** [fsx-lustre-copy-tags-to-backups](https://docs.aws.amazon.com/config/latest/developerguide/fsx-lustre-copy-tags-to-backups.html)
 
 **Schedule type:** Periodic
 
@@ -68,7 +68,7 @@ For information about configuring an FSx for Lustre file system to copy tags to 
 
 **Resource type:** `AWS::FSx::FileSystem`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/fsx-openzfs-deployment-type-check.html](https://docs.aws.amazon.com/config/latest/developerguide/fsx-openzfs-deployment-type-check.html)
+**AWS Config rule:** [fsx-openzfs-deployment-type-check](https://docs.aws.amazon.com/config/latest/developerguide/fsx-openzfs-deployment-type-check.html)
 
 **Schedule type:** Periodic
 
@@ -94,7 +94,7 @@ For information about deployment types and options for FSx for OpenZFS file syst
 
 **Resource type:** `AWS::FSx::FileSystem`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/fsx-ontap-deployment-type-check.html](https://docs.aws.amazon.com/config/latest/developerguide/fsx-ontap-deployment-type-check.html)
+**AWS Config rule:** [fsx-ontap-deployment-type-check](https://docs.aws.amazon.com/config/latest/developerguide/fsx-ontap-deployment-type-check.html)
 
 **Schedule type:** Periodic
 
@@ -124,7 +124,7 @@ For information about deployment types and options for FSx for ONTAP file system
 
 **Resource type:** `AWS::FSx::FileSystem`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/fsx-windows-deployment-type-check.html](https://docs.aws.amazon.com/config/latest/developerguide/fsx-windows-deployment-type-check.html)
+**AWS Config rule:** [fsx-windows-deployment-type-check](https://docs.aws.amazon.com/config/latest/developerguide/fsx-windows-deployment-type-check.html)
 
 **Schedule type:** Periodic
 

@@ -37,6 +37,11 @@ Represents the total (metered or unmetered) minutes used by the job.
 Type: [DeviceMinutes](API_DeviceMinutes.md) object
 Required: No
 
+ ** insights **   <a name="devicefarm-Type-Job-insights"></a>
+The insights for the job, including the report status and test-level metrics. This field contains data only if you specified `insightsTypes` when you scheduled the run.
+Type: [JobInsights](API_JobInsights.md) object
+Required: No
+
  ** instanceArn **   <a name="devicefarm-Type-Job-instanceArn"></a>
 The ARN of the instance.
 Type: String

@@ -23,7 +23,7 @@ The AWS SDK for Java 2.x provides different types of S3 clients. The following t
 
 **Note**
 From version 2.18.x and onward, the AWS SDK for Java 2.x uses [virtual hosted-style addressing](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html#virtual-hosted-style-access) when including an endpoint override. This applies as long as the bucket name is a valid DNS label.
-Call the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3BaseClientBuilder.html#forcePathStyle(java.lang.Boolean](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3BaseClientBuilder.html#forcePathStyle(java.lang.Boolean) method with `true` in your client builder to force the client to use path-style addressing for buckets.
+Call the [`forcePathStyle`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3BaseClientBuilder.html#forcePathStyle(java.lang.Boolean) method with `true` in your client builder to force the client to use path-style addressing for buckets.
 The following example shows a service client configured with an endpoint override and using path-style addressing.
 
 ```

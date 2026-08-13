@@ -16,7 +16,7 @@ You can list tags for a cluster from the [AWS CloudHSM console](https://console.
 1. Choose **Tags**.
 
 **To list tags (AWS CLI)**
-+ At a command prompt, issue the [https://docs.aws.amazon.com/cli/latest/reference/cloudhsmv2/list-tags.html](https://docs.aws.amazon.com/cli/latest/reference/cloudhsmv2/list-tags.html) command, specifying the ID of the cluster whose tags you are listing. If you don't know the cluster ID, issue the **[describe-clusters](https://docs.aws.amazon.com/cli/latest/reference/cloudhsmv2/describe-clusters.html)** command.
++ At a command prompt, issue the [**list-tags**](https://docs.aws.amazon.com/cli/latest/reference/cloudhsmv2/list-tags.html) command, specifying the ID of the cluster whose tags you are listing. If you don't know the cluster ID, issue the **[describe-clusters](https://docs.aws.amazon.com/cli/latest/reference/cloudhsmv2/describe-clusters.html)** command.
 
   ```
   $ aws cloudhsmv2 list-tags --resource-id {{<cluster ID>}}
@@ -31,4 +31,4 @@ You can list tags for a cluster from the [AWS CloudHSM console](https://console.
   ```
 
 **To list tags (AWS CloudHSM API)**
-+ Send a [https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ListTags.html](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ListTags.html) request, specifying the ID of the cluster whose tags you are listing.
++ Send a [ListTags](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ListTags.html) request, specifying the ID of the cluster whose tags you are listing.

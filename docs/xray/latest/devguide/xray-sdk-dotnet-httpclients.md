@@ -30,7 +30,7 @@ For asynchronous calls, use `GetAsyncResponseTraced`.
 request.GetAsyncResponseTraced();
 ```
 
-If you use [https://msdn.microsoft.com/en-us/library/system.net.http.httpclient.aspx](https://msdn.microsoft.com/en-us/library/system.net.http.httpclient.aspx), use the `HttpClientXRayTracingHandler` delegating handler to record calls.
+If you use [`system.net.http.httpclient`](https://msdn.microsoft.com/en-us/library/system.net.http.httpclient.aspx), use the `HttpClientXRayTracingHandler` delegating handler to record calls.
 
 **Example HttpClient**
 

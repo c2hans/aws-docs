@@ -26,9 +26,8 @@ Type: Boolean
 Required: No
 
  **Filter.N**
-The filters to use to limit the results. The following filters are supported:
-+  `application-status-check-id` — The ID of the application status check.
-+  `association-type` — The type of association (`tag` or `instance`).
+The filters to use to limit the results.
++  `association-type` – The type of association. Valid values: `tag` and `instance-id`.
 Type: Array of [Filter](API_Filter.md) objects
 Required: No
 
@@ -95,7 +94,7 @@ https://ec2.amazonaws.com/?Action=DescribeApplicationStatusCheckAssociations
     <associationSet>
         <item>
             <applicationStatusCheckId>asc-0123456789abcdef0</applicationStatusCheckId>
-            <associationType>instance</associationType>
+            <associationType>instance-id</associationType>
             <value>i-0123456789abcdef0</value>
         </item>
     </associationSet>

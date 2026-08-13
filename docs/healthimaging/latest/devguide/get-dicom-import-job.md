@@ -10,7 +10,7 @@ Use the `GetDICOMImportJob` action to learn more about AWS HealthImaging import 
 **Note**
 The `jobStatus` refers to the execution of the import job. Therefore, an import job can return a `jobStatus` as `COMPLETED` even if validation issues are discovered during the import process. If a `jobStatus` returns as `COMPLETED`, we still recommend you review the output manifests written to Amazon S3, as they provide details on the success or failure of individual P10 object imports.
 
-The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetDICOMImportJob.html](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetDICOMImportJob.html) in the *AWS HealthImaging API Reference*.
+The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`GetDICOMImportJob`](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetDICOMImportJob.html) in the *AWS HealthImaging API Reference*.
 
 **To get import job properties**
 Choose a menu based on your access preference to AWS HealthImaging.

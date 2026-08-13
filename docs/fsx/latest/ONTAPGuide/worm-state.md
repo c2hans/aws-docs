@@ -24,7 +24,7 @@ You can specify an autocommit period between five minutes and 10 years. The foll
 | Months | 1 - 120 |
 | Years | 1 - 10 |
 
-To turn on autocommit with the Amazon FSx API, use `AutocommitPeriod` in the [https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateSnaplockConfiguration.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateSnaplockConfiguration.html). In the Amazon FSx console, for **Autocommit**, choose **Enabled**. Then, for **Autocommit period**, enter a value and choose a corresponding **Autocommit unit**.
+To turn on autocommit with the Amazon FSx API, use `AutocommitPeriod` in the [`CreateSnaplockConfiguration`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateSnaplockConfiguration.html). In the Amazon FSx console, for **Autocommit**, choose **Enabled**. Then, for **Autocommit period**, enter a value and choose a corresponding **Autocommit unit**.
 
 You can specify a value between 5 minutes and 10 years.
 
@@ -37,7 +37,7 @@ You can't modify existing data in a WORM-protected file. However, SnapLock allow
 + The SnapLock volume must be unmounted.
 + The SnapLock volume must be empty of snapshot copies and user data.
 
-To turn on volume-append mode with the Amazon FSx API, use `VolumeAppendModeEnabled` in the [https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateSnaplockConfiguration.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateSnaplockConfiguration.html). In the Amazon FSx console, for **Volume append mode**, choose **Enabled**.
+To turn on volume-append mode with the Amazon FSx API, use `VolumeAppendModeEnabled` in the [`CreateSnaplockConfiguration`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateSnaplockConfiguration.html). In the Amazon FSx console, for **Volume append mode**, choose **Enabled**.
 
 ## Event-based retention (EBR)
 <a name="worm-state-ebr"></a>

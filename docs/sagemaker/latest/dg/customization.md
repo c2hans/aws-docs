@@ -95,11 +95,11 @@ Environments with software installation restrictions may prevent users from inst
 **Required local dependencies**
 
 Your local machine must have the following components installed:
-+ **[https://code.visualstudio.com/docs/remote/ssh](https://code.visualstudio.com/docs/remote/ssh)**
++ **[**Remote-SSH Extension**](https://code.visualstudio.com/docs/remote/ssh)**
 + — Standard VS Code Marketplace extension for remote development
 + **[Session Manager plugin](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html)** — Required for secure session management
 + **SSH Client** — Standard component on most machines ([OpenSSH recommended for Windows](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse))
-+ **[https://code.visualstudio.com/docs/configure/command-line](https://code.visualstudio.com/docs/configure/command-line)**
++ **[**VS Code CLI Command**](https://code.visualstudio.com/docs/configure/command-line)**
 +  Typically included with VS Code installation
 
 **Platform-specific requirements**

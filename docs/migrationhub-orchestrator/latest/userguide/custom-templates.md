@@ -66,7 +66,7 @@ Your custom template will now be available in the workflow templates list.
 ------
 #### [ AWS CLI ]
 
-You can use the [https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_CreateTemplate.html](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_CreateTemplate.html) Migration Hub Orchestrator API operation to create a custom template using the AWS CLI.
+You can use the [CreateTemplate](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_CreateTemplate.html) Migration Hub Orchestrator API operation to create a custom template using the AWS CLI.
 
 ------
 
@@ -100,7 +100,7 @@ Each template might have prerequisites and manual steps to run the workflow succ
 ------
 #### [ AWS CLI ]
 
-You can use the [https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_CreateWorkflow.html](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_CreateWorkflow.html) Migration Hub Orchestrator API operation to create a custom template using the AWS CLI.
+You can use the [CreateWorkflow](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_CreateWorkflow.html) Migration Hub Orchestrator API operation to create a custom template using the AWS CLI.
 
 ------
 
@@ -143,6 +143,6 @@ Your new custom template will be available in the workflow templates list.
 ------
 #### [ AWS CLI ]
 
-You can use the [https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_UpdateTemplate.html](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_UpdateTemplate.html) Migration Hub Orchestrator API operation to create a custom template using the AWS CLI.
+You can use the [UpdateTemplate](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_UpdateTemplate.html) Migration Hub Orchestrator API operation to create a custom template using the AWS CLI.
 
 ------

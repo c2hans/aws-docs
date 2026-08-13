@@ -91,7 +91,7 @@ For more information about deprecated and desupported minor versions, see [Relea
 With DB engine version management, you control when and how the database engine is patched and upgraded. You get the flexibility to maintain compatibility with database engine patch versions. You can also test new patch versions of RDS for Oracle to ensure they work with your application before deploying them in production. In addition, you upgrade the versions on your own terms and timelines.
 
 **Note**
-Amazon RDS periodically aggregates official Oracle database patches using an Amazon RDS-specific DB engine version. To see a list of which Oracle patches are contained in an Amazon RDS Oracle-specific engine version, go to [https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/Welcome.html](https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/Welcome.html).
+Amazon RDS periodically aggregates official Oracle database patches using an Amazon RDS-specific DB engine version. To see a list of which Oracle patches are contained in an Amazon RDS Oracle-specific engine version, go to [*Amazon RDS for Oracle Release Notes*](https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/Welcome.html).
 
 ## Pre-upgrade checklist
 <a name="USER_UpgradeDBInstance.Oracle.Overview.pre-upgrade-checklist"></a>

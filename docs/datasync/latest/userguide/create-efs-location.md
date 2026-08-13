@@ -32,7 +32,7 @@ The subnet that you specify must be located:
 **Note**
 You don't need to specify a subnet that includes a file system mount target.
 
-The security groups that you specify must allow inbound traffic on Network File System (NFS) port 2049. For information on creating and updating security groups for your mount targets, see the [https://docs.aws.amazon.com/efs/latest/ug/network-access.html](https://docs.aws.amazon.com/efs/latest/ug/network-access.html).
+The security groups that you specify must allow inbound traffic on Network File System (NFS) port 2049. For information on creating and updating security groups for your mount targets, see the [*Amazon EFS User Guide*](https://docs.aws.amazon.com/efs/latest/ug/network-access.html).
 
 **Specifying security groups associated with a mount target**
 You can specify a security group that's associated with one of your file system's mount targets. We recommend this approach from a network management standpoint.

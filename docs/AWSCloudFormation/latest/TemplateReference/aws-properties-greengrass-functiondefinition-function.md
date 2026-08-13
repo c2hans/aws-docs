@@ -9,7 +9,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 <a name="aws-properties-greengrass-functiondefinition-function-description"></a>A function is a Lambda function that's referenced from an AWS IoT Greengrass group. The function is deployed to a Greengrass core where it runs locally. For more information, see [Run Lambda Functions on the AWS IoT Greengrass Core](https://docs.aws.amazon.com/greengrass/v1/developerguide/lambda-functions.html) in the * AWS IoT Greengrass Version 1 Developer Guide *.
 
-<a name="aws-properties-greengrass-functiondefinition-function-inheritance"></a> In an CloudFormation template, the `Functions` property of the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functiondefinitionversion.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functiondefinitionversion.html) property type contains a list of `Function` property types.
+<a name="aws-properties-greengrass-functiondefinition-function-inheritance"></a> In an CloudFormation template, the `Functions` property of the [`FunctionDefinitionVersion`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functiondefinitionversion.html) property type contains a list of `Function` property types.
 
 ## Syntax
 <a name="aws-properties-greengrass-functiondefinition-function-syntax"></a>

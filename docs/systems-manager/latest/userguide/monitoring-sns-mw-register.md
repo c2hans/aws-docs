@@ -119,7 +119,7 @@ To better manage your task options, this procedure uses the command option `--cl
 
    You can also restore options we've omitted from this example if you want to use them. For example, you can save command output to an S3 bucket.
 
-   For more information, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/register-task-with-maintenance-window.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/register-task-with-maintenance-window.html) in the *AWS CLI Command Reference*.
+   For more information, see [register-task-with-maintenance-window](https://docs.aws.amazon.com/cli/latest/reference/ssm/register-task-with-maintenance-window.html) in the *AWS CLI Command Reference*.
 
 1. Save the file.
 

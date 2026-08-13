@@ -8,6 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_FIS"></a>
 
 **Resource types**
++ [AWS::FIS::Experiment](aws-resource-fis-experiment.md)
 + [AWS::FIS::ExperimentTemplate](aws-resource-fis-experimenttemplate.md)
 + [AWS::FIS::SafetyLever](aws-resource-fis-safetylever.md)
 + [AWS::FIS::TargetAccountConfiguration](aws-resource-fis-targetaccountconfiguration.md)

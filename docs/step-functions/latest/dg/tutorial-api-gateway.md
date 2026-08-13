@@ -133,7 +133,7 @@ If you don't want to include the ARN of your state machine in the body of your A
        "stateMachineArn": "$util.escapeJavaScript($stageVariables.arn)"
    }
    ```
-With this approach, you can specify ARNs of different state machines based on your development stage (for example, `dev`, `test`, and `prod`). For more information about specifying stage variables in a mapping template, see [https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-mapping-template-reference.html#stagevariables-template-reference](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-mapping-template-reference.html#stagevariables-template-reference) in the *API Gateway Developer Guide*.
+With this approach, you can specify ARNs of different state machines based on your development stage (for example, `dev`, `test`, and `prod`). For more information about specifying stage variables in a mapping template, see [`$stageVariables`](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-mapping-template-reference.html#stagevariables-template-reference) in the *API Gateway Developer Guide*.
 
 1. The execution starts and the execution ARN and its epoch date are displayed under **Response body**.
 

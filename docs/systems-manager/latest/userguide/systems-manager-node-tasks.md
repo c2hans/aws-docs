@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 # Performing node management tasks with AWS Systems Manager
 <a name="systems-manager-node-tasks"></a>
 
-The following topics describe how to complete common node tasks using the unified AWS Systems Manager console for an AWS Organizations organization and single AWS accounts.
+The following topics describe how to complete common node tasks. You can use the unified AWS Systems Manager console for an AWS Organizations organization and single AWS accounts.
 
 **Topics**
 + [Reviewing node insights](review-node-insights.md)

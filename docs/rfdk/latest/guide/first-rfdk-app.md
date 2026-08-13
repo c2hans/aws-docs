@@ -157,7 +157,7 @@ new HelloRfdkStack(app, 'hello-rfdk', {
 ## Define a Deadline render farm
 <a name="_define_a_deadline_render_farm"></a>
 
-Now you are ready to start building your render farm. The first thing you will need is a [https://docs.aws.amazon.com/cdk/api/latest/docs/@aws-cdk_aws-ec2.Vpc.html](https://docs.aws.amazon.com/cdk/api/latest/docs/@aws-cdk_aws-ec2.Vpc.html) construct instance for your render farm. The `Vpc` provides the foundational networking that will be used by all other components in the farm.
+Now you are ready to start building your render farm. The first thing you will need is a [`Vpc`](https://docs.aws.amazon.com/cdk/api/latest/docs/@aws-cdk_aws-ec2.Vpc.html) construct instance for your render farm. The `Vpc` provides the foundational networking that will be used by all other components in the farm.
 
 ------
 #### [ Python ]
@@ -198,7 +198,7 @@ export class HelloRfdkStack extends cdk.Stack {
 
 ------
 
-The next thing you will need to do is select a version of AWS Thinkbox Deadline to use for your Render Farm. For more details, see the full documentation about [Using AWS Thinkbox ECR Repositories](work-with-rfdk.md#using-aws-thinkbox-ecr-repositories). Once you have selected a Deadline version ({{DEADLINE\_VERSION}}), create a [https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.VersionQuery.html](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.VersionQuery.html) construct in your CDK app.
+The next thing you will need to do is select a version of AWS Thinkbox Deadline to use for your Render Farm. For more details, see the full documentation about [Using AWS Thinkbox ECR Repositories](work-with-rfdk.md#using-aws-thinkbox-ecr-repositories). Once you have selected a Deadline version ({{DEADLINE\_VERSION}}), create a [`VersionQuery`](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.VersionQuery.html) construct in your CDK app.
 
 ------
 #### [ Python ]
@@ -244,7 +244,7 @@ export class HelloRfdkStack extends cdk.Stack {
 
 ------
 
-Next, let’s add in a [https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.Repository.html](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.Repository.html). This construct creates the database and file system that make up the back-end storage of your render farm. Then, it configures them with the [Deadline Repository](https://docs.thinkboxsoftware.com/products/deadline/10.2/1_User%20Manual/manual/overview.html#components) installer. By default, an [Amazon DocumentDB](https://aws.amazon.com/documentdb/) and [Amazon Elastic File System (EFS)](https://aws.amazon.com/efs/) are created.
+Next, let’s add in a [`Repository`](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.Repository.html). This construct creates the database and file system that make up the back-end storage of your render farm. Then, it configures them with the [Deadline Repository](https://docs.thinkboxsoftware.com/products/deadline/10.2/1_User%20Manual/manual/overview.html#components) installer. By default, an [Amazon DocumentDB](https://aws.amazon.com/documentdb/) and [Amazon Elastic File System (EFS)](https://aws.amazon.com/efs/) are created.
 
 **Tip**
 In the Deadline documentation, the Database and Repository are two separate concepts. The RFDK combines the two concepts and calls it the Repository.
@@ -290,7 +290,7 @@ export class HelloRfdkStack extends cdk.Stack {
 
 ------
 
-AWS Thinkbox publishes Deadline container images into a publicly-available **Elastic Container Registry (ECR)** Repository. RFDK provides the [https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.ThinkboxDockerImages.html](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.ThinkboxDockerImages.html) construct that can be used to deploy these container images using **AWS Elastic Container Service (ECS)**.
+AWS Thinkbox publishes Deadline container images into a publicly-available **Elastic Container Registry (ECR)** Repository. RFDK provides the [`ThinkboxDockerImages`](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.ThinkboxDockerImages.html) construct that can be used to deploy these container images using **AWS Elastic Container Service (ECS)**.
 
 To use these images, add a `ThinkboxDockerImages` instance to your CDK app. For this, you will need to read and accept the terms of the [AWS Customer Agreement](https://aws.amazon.com/agreement/) and [AWS Intellectual Property License](https://aws.amazon.com/legal/aws-ip-license-terms/).
 
@@ -349,7 +349,7 @@ export class HelloRfdkStack extends cdk.Stack {
 
 ------
 
-Now that you have Deadline container images and a Deadline Repository, you will need to add a [https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.RenderQueue.html](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.RenderQueue.html). The `RenderQueue` acts as the central service of your render farm that clients and render nodes can connect to. This construct creates a fleet of [Deadline Remote Connection Servers](https://docs.thinkboxsoftware.com/products/deadline/10.2/1_User%20Manual/manual/remote-connection-server.html) running in [Amazon Elastic Container Service (ECS)](https://aws.amazon.com/ecs/).
+Now that you have Deadline container images and a Deadline Repository, you will need to add a [`RenderQueue`](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.RenderQueue.html). The `RenderQueue` acts as the central service of your render farm that clients and render nodes can connect to. This construct creates a fleet of [Deadline Remote Connection Servers](https://docs.thinkboxsoftware.com/products/deadline/10.2/1_User%20Manual/manual/remote-connection-server.html) running in [Amazon Elastic Container Service (ECS)](https://aws.amazon.com/ecs/).
 
 **Tip**
 This example explicitly turns [deletion protection](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/application-load-balancers.html#deletion-protection) off so this stack can be easily cleaned up. By default, it is turned on to prevent accidental deletion of your `RenderQueue`.
@@ -401,7 +401,7 @@ export class HelloRfdkStack extends cdk.Stack {
 
 ------
 
-The last thing you need to add is a fleet of render nodes with the [https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.WorkerInstanceFleet.html](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.WorkerInstanceFleet.html) construct, which creates a fleet of instances running [Deadline Worker](https://docs.thinkboxsoftware.com/products/deadline/10.2/1_User%20Manual/manual/worker.html) in an [Amazon EC2 Auto Scaling Group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html).
+The last thing you need to add is a fleet of render nodes with the [`WorkerInstanceFleet`](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.WorkerInstanceFleet.html) construct, which creates a fleet of instances running [Deadline Worker](https://docs.thinkboxsoftware.com/products/deadline/10.2/1_User%20Manual/manual/worker.html) in an [Amazon EC2 Auto Scaling Group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html).
 
 **Important**
 The `WorkerInstanceFleet` construct requires an [Amazon Machine Image (AMI)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) with the Deadline Worker application installed. Substitute {{your-ami-id}} with your desired AMI ID in the code below. Conveniently, AWS Thinkbox creates public AWS Portal AMIs you can use for this. Follow the steps in the Deadline guide for [finding AWS Portal AMIs](https://docs.thinkboxsoftware.com/products/deadline/10.2/1_User%20Manual/manual/aws-custom-ami.html#finding-which-ami-to-start-from) (these steps instruct you to specifically search for *“Deadline Worker Base”* images, but you can use any Linux-based Deadline Worker image for this tutorial) and copy over your desired AMI ID.

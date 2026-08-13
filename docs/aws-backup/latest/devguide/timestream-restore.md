@@ -74,7 +74,7 @@ aws backup start-restore-job \
 --endpoint-url {{url}}
 ```
 
-You can also use [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_GetRecoveryPointRestoreMetadata.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_GetRecoveryPointRestoreMetadata.html) to assist with restore information.
+You can also use [`GetRecoveryPointRestoreMetadata`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_GetRecoveryPointRestoreMetadata.html) to assist with restore information.
 
 In the AWS CLI, use the operation `get-recovery-point-restore-metadata` and use the following metadata:
 

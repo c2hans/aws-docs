@@ -26,8 +26,6 @@ Smithy RPC v2 CBOR (Concise Binary Object Representation) is a protocol develope
 
 To get started, use the latest AWS SDK/CLI version to use the latest supported protocol for CloudWatch. Upgrade your AWS SDK to the specified version or any subsequent version.
 
-**SDK Client Protocol Support**
-
 | Language | Protocol | SDK versions |
 | --- | --- | --- |
 | C\+\+ | RPC v2 CBOR | [1.11.708](https://github.com/aws/aws-sdk-cpp/releases/tag/1.11.708) |

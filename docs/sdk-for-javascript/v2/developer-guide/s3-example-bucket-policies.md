@@ -18,9 +18,9 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 <a name="w2aac20c25c27c15b9"></a>
 
 In this example, a series of Node.js modules are used to retrieve, set, or delete a bucket policy on an Amazon S3 bucket. The Node.js modules use the SDK for JavaScript to configure policy for a selected Amazon S3 bucket using these methods of the Amazon S3 client class:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#getBucketPolicy-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#getBucketPolicy-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#putBucketPolicy-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#putBucketPolicy-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#deleteBucketPolicy-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#deleteBucketPolicy-property)
++ [`getBucketPolicy`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#getBucketPolicy-property)
++ [`putBucketPolicy`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#putBucketPolicy-property)
++ [`deleteBucketPolicy`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#deleteBucketPolicy-property)
 
 For more information about bucket policies for Amazon S3 buckets, see [ Using Bucket Policies and User Policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-iam-policies.html) in the *Amazon Simple Storage Service User Guide*.
 

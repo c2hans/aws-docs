@@ -33,7 +33,7 @@ For more information about best practices in IAM, see [Security best practices i
 
 To access the AWS Health console, you must have a minimum set of permissions. These permissions must allow you to list and view details about the AWS Health resources in your AWS account. If you create an identity-based policy that is more restrictive than the minimum required permissions, the console won't function as intended for entities (IAM users or roles) with that policy.
 
-To ensure that those entities can still use the AWS Health console, you can attach the following AWS managed policy, [https://console.aws.amazon.com//iam/home?#/policies/arn:aws:iam::aws:policy/AWSHealthFullAccess](https://console.aws.amazon.com//iam/home?#/policies/arn:aws:iam::aws:policy/AWSHealthFullAccess).
+To ensure that those entities can still use the AWS Health console, you can attach the following AWS managed policy, [AWSHealthFullAccess](https://console.aws.amazon.com//iam/home?#/policies/arn:aws:iam::aws:policy/AWSHealthFullAccess).
 
 The `AWSHealthFullAccess` policy grants an entity full access to the following:
 + Enable or disable the AWS Health organizational view feature for all accounts in an AWS organization

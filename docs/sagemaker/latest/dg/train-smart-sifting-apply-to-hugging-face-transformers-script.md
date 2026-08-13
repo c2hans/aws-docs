@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-smart-sifting-
 There are two ways to implement the SageMaker smart sifting into the Transformers `Trainer` class.
 
 **Note**
-If you use one of the DLCs for PyTorch with the SageMaker smart sifting package installed, note that you need to install the `transformers` library. You can install additional packages by [extending the DLCs](prebuilt-containers-extend.md) or passing `requirements.txt` to the training job launcher class for PyTorch ([https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html)) in the SageMaker AI Python SDK.
+If you use one of the DLCs for PyTorch with the SageMaker smart sifting package installed, note that you need to install the `transformers` library. You can install additional packages by [extending the DLCs](prebuilt-containers-extend.md) or passing `requirements.txt` to the training job launcher class for PyTorch ([`sagemaker.pytorch.PyTorch`](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html)) in the SageMaker AI Python SDK.
 
 ## Simple setup
 <a name="train-smart-sifting-apply-to-hugging-face-transformers-script-simple"></a>

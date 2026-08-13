@@ -20,7 +20,7 @@ These controls may not be available in all AWS Regions. For more information, se
 
 **Resource type:** `AWS::ACMPCA::CertificateAuthority`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/acm-pca-root-ca-disabled.html](https://docs.aws.amazon.com/config/latest/developerguide/acm-pca-root-ca-disabled.html)
+**AWS Config rule:** [`acm-pca-root-ca-disabled`](https://docs.aws.amazon.com/config/latest/developerguide/acm-pca-root-ca-disabled.html)
 
 **Schedule type:** Periodic
 

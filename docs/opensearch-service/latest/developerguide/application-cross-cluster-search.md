@@ -202,7 +202,7 @@ After the connection is established, any traffic that flows between the nodes of
 ## Testing your security setup for cross-Region and cross-account data access with cross-cluster search
 <a name="cross-cluster-search-security-testing"></a>
 
-After you've set up access permissions for cross-Region and cross-account data access with cross-cluster search, we recommend testing the setup using [https://www.postman.com/](https://www.postman.com/), a third-party platform for collaborative API development.
+After you've set up access permissions for cross-Region and cross-account data access with cross-cluster search, we recommend testing the setup using [Postman](https://www.postman.com/), a third-party platform for collaborative API development.
 
 **To set your security setup using Postman**
 

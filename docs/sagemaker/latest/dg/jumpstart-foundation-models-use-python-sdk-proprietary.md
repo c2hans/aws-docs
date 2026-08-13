@@ -24,4 +24,4 @@ my_model = ModelPackage(
 )
 ```
 
-For step-by-step examples, find and run the notebook associated with the proprietary foundation model of your choice in SageMaker Studio Classic. See [Use foundation models in Amazon SageMaker Studio Classic](jumpstart-foundation-models-use-studio.md) for more information. For more information on the SageMaker Python SDK, see [https://sagemaker.readthedocs.io/en/stable/api/inference/model.html#sagemaker.model.ModelPackage](https://sagemaker.readthedocs.io/en/stable/api/inference/model.html#sagemaker.model.ModelPackage).
+For step-by-step examples, find and run the notebook associated with the proprietary foundation model of your choice in SageMaker Studio Classic. See [Use foundation models in Amazon SageMaker Studio Classic](jumpstart-foundation-models-use-studio.md) for more information. For more information on the SageMaker Python SDK, see [`ModelPackage`](https://sagemaker.readthedocs.io/en/stable/api/inference/model.html#sagemaker.model.ModelPackage).

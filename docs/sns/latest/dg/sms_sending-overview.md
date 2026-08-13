@@ -433,8 +433,8 @@ If you're sending the message to an Amazon SNS topic, the maximum price applies 
 
 **`AWS.SNS.SMS.SMSType`**
 The type of message that you're sending:
-+ **`Promotional`** (default) – Non-critical messages, such as marketing messages.
-+ **`Transactional`** – Critical messages that support customer transactions, such as one-time passcodes for multi-factor authentication.
++ **`Promotional`** – Non-critical messages, such as marketing messages.
++ **`Transactional`** (default) – Critical messages that support customer transactions, such as one-time passcodes for multi-factor authentication.
 This message-level attribute overrides the account-level attribute `DefaultSMSType`, which you can set using the `SetSMSAttributes` request.
 
 **`AWS.MM.SMS.EntityId`**

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/smf-vfx.
 
 The VFX Reference Platform is a common target platform for the VFX industry. To use the standard service-managed fleet Amazon EC2 instance running Amazon Linux 2023 with software that supports the VFX Reference Platform, review the following considerations when using a service-managed fleet.
 
-The VFX Reference Platform is updated annually. These considerations for using an AL2023 including Deadline Cloud service-managed fleets are based on the calendar year (CY) 2022 through 2024 Reference Platforms. For more information, see [https://vfxplatform.com/](https://vfxplatform.com/).
+The VFX Reference Platform is updated annually. These considerations for using an AL2023 including Deadline Cloud service-managed fleets are based on the calendar year (CY) 2022 through 2024 Reference Platforms. For more information, see [VFX Reference Platform](https://vfxplatform.com/).
 
 **Note**
 If you are creating a custom Amazon Machine Image (AMI) for a customer-managed fleet, you can add these requirements when you prepare the Amazon EC2 instance.

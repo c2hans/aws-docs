@@ -108,7 +108,7 @@ If the **Save** button is not enabled, the tag key or value might not meet the t
 <a name="managing-secrets_taggging-cli-examples"></a>
 
 **Example Add a tag to a secret**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/tag-resource.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/tag-resource.html) example shows how to attach a tag with shorthand syntax.
+The following [`tag-resource`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/tag-resource.html) example shows how to attach a tag with shorthand syntax.
 
 ```
 aws secretsmanager tag-resource \
@@ -117,7 +117,7 @@ aws secretsmanager tag-resource \
 ```
 
 **Example Add multiple tags to a secret**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/tag-resource.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/tag-resource.html) example attaches two key-value tags to a secret.
+The following [`tag-resource`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/tag-resource.html) example attaches two key-value tags to a secret.
 
 ```
 aws secretsmanager tag-resource \
@@ -126,7 +126,7 @@ aws secretsmanager tag-resource \
 ```
 
 **Example Remove tags from a secret**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/untag-resource.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/untag-resource.html) example removes two tags from a secret. For each tag, both key and value are removed.
+The following [`untag-resource`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/untag-resource.html) example removes two tags from a secret. For each tag, both key and value are removed.
 
 ```
 aws secretsmanager untag-resource \
@@ -147,7 +147,7 @@ You can add, list, and remove tags using the Secrets Manager API. For examples, 
 
 To change tags for your secret, use the following API operations:
 + [ListSecrets](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_ListSecrets.html): Use `ListSecrets` to view the tags applied to a secret
-+ [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_TagResource.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_TagResource.html): Add tags to a secret
-+ [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_UntagResource.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_UntagResource.html): Remove tags from a secret
++ [`TagResource`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_TagResource.html): Add tags to a secret
++ [`UntagResource`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_UntagResource.html): Remove tags from a secret
 
 For more information about using the SDK, see [AWS SDKs](asm_access.md#asm-sdks).

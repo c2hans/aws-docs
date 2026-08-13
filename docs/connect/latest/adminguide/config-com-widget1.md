@@ -18,7 +18,7 @@ Use this option to create communication widgets for desktop and mobile [browsers
 
 1. On the **Communication widgets** page, enter a **Name** and **Description** for the communications widget.
 **Note**
-The Name must be unique for each communications widget created in an Connect Customer instance.
+The Name must be unique for each communications widget created in a Connect Customer instance.
 
 1. In the **Communications options** section, choose how your customers can engage with your widget. The following image shows options to allow web calling, video, and screen sharing for customers.
 ![The communication widget page configured for web calling, video, and screen sharing.](http://docs.aws.amazon.com/connect/latest/adminguide/images/comm-widget-page-call.png)

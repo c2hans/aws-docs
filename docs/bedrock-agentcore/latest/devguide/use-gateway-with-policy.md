@@ -164,7 +164,7 @@ curl -X POST \
   }'
 ```
 
-If no session ID is provided and temporal policies are configured, the Gateway generates one and returns it in the response header. Use the returned value in subsequent requests to maintain session continuity.
+The Gateway does not generate a session ID on your behalf. You must generate the session ID and send it on every request, starting with your first request. If you omit the header, or send an empty value, the Gateway does not establish a session. If the associated policy engine contains a temporal policy, requests without a session ID fail with a validation error. Send the same ID with every request in the same session.
 
 ## Policy responses
 <a name="policy-responses"></a>

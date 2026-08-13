@@ -6,7 +6,7 @@ Version 4 (V4) of the AWS SDK for .NET has been released\!
 
 For information about breaking changes and migrating your applications, see the [migration topic](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html).
 
- [https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
+ [![Orange button with text "Click here for details".](http://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # AWS Message Processing Framework for .NET
 <a name="msg-proc-fw"></a>
@@ -25,7 +25,7 @@ For details about these activities and features see the **Features** section of 
 Before you begin, be sure you have [set up your environment](net-dg-config.md) and [configured your project](configuring-the-sdk.md). Also review the information in [Using the SDK](net-dg-sdk-features.md).
 
 **Additional resources**
-+ The [https://www.nuget.org/packages/AWS.Messaging/](https://www.nuget.org/packages/AWS.Messaging/) package on [NuGet.org](https://www.nuget.org/).
++ The [`AWS.Messaging`](https://www.nuget.org/packages/AWS.Messaging/) package on [NuGet.org](https://www.nuget.org/).
 + The [API reference](https://aws.github.io/aws-dotnet-messaging/).
 + The `README` file in the GitHub repo at [https://github.com/aws/aws-dotnet-messaging/](https://github.com/aws/aws-dotnet-messaging/)
 + [.NET dependency injection](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection) from Microsoft.

@@ -14,7 +14,7 @@ You can disable automatic client instrumentation by removing the Instrumentor su
 
 To illustrate support for instrumenting specific AWS SDK clients, the application passes a tracing handler to `AmazonDynamoDBClientBuilder` as a request handler in the user, game, and session model. This code change tells the SDK to instrument all calls to DynamoDB using those clients.
 
-**Example [https://github.com/awslabs/eb-java-scorekeep/tree/xray/src/main/java/scorekeep/SessionModel.java](https://github.com/awslabs/eb-java-scorekeep/tree/xray/src/main/java/scorekeep/SessionModel.java) – Manual AWS SDK client instrumentation**
+**Example [`src/main/java/scorekeep/SessionModel.java`](https://github.com/awslabs/eb-java-scorekeep/tree/xray/src/main/java/scorekeep/SessionModel.java) – Manual AWS SDK client instrumentation**
 
 ```
 import [com.amazonaws.xray.AWSXRay](https://docs.aws.amazon.com/xray-sdk-for-java/latest/javadoc/com/amazonaws/xray/AWSXRay.html);

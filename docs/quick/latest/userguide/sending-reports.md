@@ -20,7 +20,7 @@ In Enterprise edition, you can send a dashboard in report form either once or on
 
 Amazon Quick Sight generates a custom email snapshot for each user or group based on their data permissions, which are defined in the dashboard. Row Level Security (RLS), Column Level Security (CLS) and Dynamic Default Parameters for email reports works for both scheduled and ad hoc (one-time) emails.
 
-Quick authors can run scheduled reports with the **Report now** button in the Quick console or with the [https://docs.aws.amazon.com//quicksight/latest/APIReference/API_StartDashboardSnapshotJobSchedule.html](https://docs.aws.amazon.com//quicksight/latest/APIReference/API_StartDashboardSnapshotJobSchedule.html) API.
+Quick authors can run scheduled reports with the **Report now** button in the Quick console or with the [`StartDashboardSnapshotJobSchedule`](https://docs.aws.amazon.com//quicksight/latest/APIReference/API_StartDashboardSnapshotJobSchedule.html) API.
 
 Subscribers who are readers see an option for **Reports** on the dashboard when an email report is available for that dashboard. They can use the **Schedules** menu to subscribe to or unsubscribe from the emails. For more information, see [Subscribing to email reports in Amazon Quick Sight](subscribing-to-reports.md).
 

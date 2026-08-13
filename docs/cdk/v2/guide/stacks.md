@@ -9,7 +9,7 @@ This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on 
 
 An AWS CDK stack is the smallest single unit of deployment. It represents a collection of AWS resources that you define using CDK constructs. When you deploy CDK apps, the resources within a CDK stack are deployed together as an AWS CloudFormation stack. To learn more about AWS CloudFormation stacks, see [Managing AWS resources as a single unit with AWS CloudFormation stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html) in the * AWS CloudFormation User Guide*.
 
-You define a stack by extending or inheriting from the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html) construct. The following example is a common pattern for defining a CDK stack on a separate file, known as a *stack file*. Here, we extend or inherit the `Stack` class and define a constructor that accepts `scope`, `id`, and `props`. Then, we invoke the base `Stack` class constructor using `super` with the received `scope`, `id`, and `props`:
+You define a stack by extending or inheriting from the [`Stack`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html) construct. The following example is a common pattern for defining a CDK stack on a separate file, known as a *stack file*. Here, we extend or inherit the `Stack` class and define a constructor that accepts `scope`, `id`, and `props`. Then, we invoke the base `Stack` class constructor using `super` with the received `scope`, `id`, and `props`:
 
 **Example**
 
@@ -363,7 +363,7 @@ func main() {
 ## About the stack API
 <a name="stack-api"></a>
 
-The [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html) object provides a rich API, including the following:
+The [`Stack`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html) object provides a rich API, including the following:
 +  `Stack.of(construct)` – A static method that returns the **Stack** in which a construct is defined. This is useful if you need to interact with a stack from within a reusable construct. The call fails if a stack cannot be found in scope.
 +  `stack.stackName` (Python: `stack_name`) – Returns the physical name of the stack. As mentioned previously, all AWS CDK stacks have a physical name that the AWS CDK can resolve during synthesis.
 +  `stack.region` and `stack.account` – Return the AWS Region and account, respectively, into which this stack will be deployed. These properties return one of the following:
@@ -741,7 +741,7 @@ new MyStack(this, "not:a:stack:name", new StackProps
 ### Working with nested stacks
 <a name="stack-nesting"></a>
 
-A *nested stack* is a CDK stack that you create inside another stack, known as the parent stack. You create nested stacks using the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.NestedStack.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.NestedStack.html) construct.
+A *nested stack* is a CDK stack that you create inside another stack, known as the parent stack. You create nested stacks using the [`NestedStack`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.NestedStack.html) construct.
 
 By using nested stacks, you can organize resources across multiple stacks. Nested stacks also offer a way around the AWS CloudFormation 500-resource limit for stacks. A nested stack counts as only one resource in the stack that contains it. However, it can contain up to 500 resources, including additional nested stacks.
 

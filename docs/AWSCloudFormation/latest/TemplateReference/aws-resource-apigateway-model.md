@@ -85,7 +85,7 @@ The schema for the model. For `application/json` models, this should be JSON sch
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the model name, such as `myModel`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-apigateway-model--examples"></a>

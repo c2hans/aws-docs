@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_secu
 
 With AWS PrivateLink for AWS Organizations, you can access the AWS Organizations service from within the Virtual Private Cloud (VPC) without having to cross the public internet.
 
-Amazon VPC lets you launch AWS resources in a custom virtual network. You can use a VPC to control your network settings, such as the IP address range, subnets, route tables, and network gateways. For more information about VPCs, see the [https://docs.aws.amazon.com/vpc/latest/userguide/](https://docs.aws.amazon.com/vpc/latest/userguide/).
+Amazon VPC lets you launch AWS resources in a custom virtual network. You can use a VPC to control your network settings, such as the IP address range, subnets, route tables, and network gateways. For more information about VPCs, see the [*Amazon VPC User Guide*](https://docs.aws.amazon.com/vpc/latest/userguide/).
 
 To connect your Amazon VPC to AWS Organizations, you must first define an interface VPC endpoint (interface endpoints). Interface endpoints are represented by one or more elastic network interfaces (ENIs) that are assigned private IP addresses from subnets in your VPC. Requests from your VPC to AWS Organizations over interface endpoints stay on the Amazon network.
 

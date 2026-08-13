@@ -189,7 +189,7 @@ New packages in AL2023.6:
   - **Architectures:** aarch64, x86\_64
   - **Version:** 1.3.0-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/rust.html](https://docs.aws.amazon.com/linux/al2023/ug/rust.html) **
+- ** [`rust`](https://docs.aws.amazon.com/linux/al2023/ug/rust.html) **
   - **RPM:**  rust-toolset
   - **Architectures:** noarch
   - **Version:** 1.68.2-1.amzn2023.0.6

@@ -106,7 +106,7 @@ The following IAM policy example grants your state machine access to invoke a La
 }
 ```
 
-We also recommend using the [https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) data source when defining IAM policies for your state machines in Terraform. This helps you check if your policy is malformed and substitute any resources with variables.
+We also recommend using the [`aws_iam_policy_document`](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) data source when defining IAM policies for your state machines in Terraform. This helps you check if your policy is malformed and substitute any resources with variables.
 
 The following IAM policy example uses the `aws_iam_policy_document` data source and grants your state machine access to invoke a Lambda function named `{{myFunction}}`.
 

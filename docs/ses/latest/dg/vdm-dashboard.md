@@ -103,7 +103,7 @@ If the date range is greater than 30 days, the *% Difference* column will not ha
 The following example shows you how to access your Virtual Deliverability Manager metric data using the AWS CLI. This is the same data used in the Virtual Deliverability Manager dashboard in the console.
 
 **To access your deliverability metric data using the AWS CLI**
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_BatchGetMetricData.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_BatchGetMetricData.html) operation in the Amazon SES API v2 to access your deliverability metric data. You can call this operation from the AWS CLI as shown in the following examples.
+You can use the [`BatchGetMetricData`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_BatchGetMetricData.html) operation in the Amazon SES API v2 to access your deliverability metric data. You can call this operation from the AWS CLI as shown in the following examples.
 + Access your deliverability metric data:
 
   ```
@@ -125,21 +125,21 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Batc
   }
   ```
 
-  More information about parameter values and related data types can be found by linking from the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_BatchGetMetricDataQuery.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_BatchGetMetricDataQuery.html) data type in the Amazon SES API v2 reference.
+  More information about parameter values and related data types can be found by linking from the [`BatchGetMetricDataQuery`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_BatchGetMetricDataQuery.html) data type in the Amazon SES API v2 reference.
 
 ## Filtering and exporting your deliverability metric data using the AWS CLI
 <a name="vdm-dashboard-export-metric-cli"></a>
 
-This example shows you how to use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateExportJob.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateExportJob.html) operation to filter and export your deliverability metric data to a .csv or .json file using the AWS CLI. This is the same data used in the Virtual Deliverability Manager dashboard's **ISP**, **Sending identities**, and **Configuration sets** tables.
+This example shows you how to use the [`CreateExportJob`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateExportJob.html) operation to filter and export your deliverability metric data to a .csv or .json file using the AWS CLI. This is the same data used in the Virtual Deliverability Manager dashboard's **ISP**, **Sending identities**, and **Configuration sets** tables.
 
 **To filter and export your deliverability metric data to a .csv or .json file using the AWS CLI**
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateExportJob.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateExportJob.html) operation along with the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MetricsDataSource.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MetricsDataSource.html) data type in the Amazon SES API v2 to filter and export your metric data to a .csv or .json file. You call this operation from the AWS CLI as shown in the following example.
+You can use the [`CreateExportJob`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateExportJob.html) operation along with the [`MetricsDataSource`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MetricsDataSource.html) data type in the Amazon SES API v2 to filter and export your metric data to a .csv or .json file. You call this operation from the AWS CLI as shown in the following example.
 + Filter and export your deliverability metric data using an input file:
 
   ```
   aws --region us-east-1 sesv2 create-export-job --cli-input-json file://metric-export-input.json
   ```
-+ In this example, the input file is using [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MetricsDataSource.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MetricsDataSource.html) parameters to filter on all the ISPs you've sent mail to, showing the rate of successful delivery within the given date range, and a .csv format specified for the output file:
++ In this example, the input file is using [`MetricsDataSource`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MetricsDataSource.html) parameters to filter on all the ISPs you've sent mail to, showing the rate of successful delivery within the given date range, and a .csv format specified for the output file:
 
   ```
   {
@@ -165,15 +165,15 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Crea
   }
   ```
 
-  More information about parameter values and related data types can be found in [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MetricsDataSource.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MetricsDataSource.html) as an object of the type [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ExportDataSource.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ExportDataSource.html) in the Amazon SES API v2 reference.
+  More information about parameter values and related data types can be found in [`MetricsDataSource`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MetricsDataSource.html) as an object of the type [`ExportDataSource`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ExportDataSource.html) in the Amazon SES API v2 reference.
 
 ## Finding your sent messages, their delivery & engagement status, and exporting the results using the AWS CLI
 <a name="vdm-dashboard-export-message-cli"></a>
 
-These examples show you how to use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateExportJob.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateExportJob.html) operation to search and find particular messages you've sent, see their current delivery and engagement status, and export the results of your search to a .csv or .json file using the AWS CLI. This is the same data used in the Virtual Deliverability Manager dashboard's **Messages** table.
+These examples show you how to use the [`CreateExportJob`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateExportJob.html) operation to search and find particular messages you've sent, see their current delivery and engagement status, and export the results of your search to a .csv or .json file using the AWS CLI. This is the same data used in the Virtual Deliverability Manager dashboard's **Messages** table.
 
 **To find sent messages, their delivery and engagement status, and export the results to a .csv or .json file using the AWS CLI**
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateExportJob.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateExportJob.html) operation along with the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html) data type in the Amazon SES API v2 to apply filters in order to find particular messages you've sent, see their delivery and engagement status, and export the results to a .csv or .json file. You call this operation from the AWS CLI as shown in the following examples.
+You can use the [`CreateExportJob`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateExportJob.html) operation along with the [`MessageInsightsDataSource`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html) data type in the Amazon SES API v2 to apply filters in order to find particular messages you've sent, see their delivery and engagement status, and export the results to a .csv or .json file. You call this operation from the AWS CLI as shown in the following examples.
 
 **Note**
 If your filtered search returns more than 10,000 messages, the 10,000 messages in the API's result set are a random sample of the total returned.
@@ -182,7 +182,7 @@ If your filtered search returns more than 10,000 messages, the 10,000 messages i
   ```
   aws --region us-east-1 sesv2 create-export-job --cli-input-json file://message-insights-export-input.json
   ```
-+ In this example, the input file is using [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html) parameters to filter on a subject equal to "Sale Ends Tonight\!", and a .csv format specified for the output file:
++ In this example, the input file is using [`MessageInsightsDataSource`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html) parameters to filter on a subject equal to "Sale Ends Tonight\!", and a .csv format specified for the output file:
 
   ```
   {
@@ -202,7 +202,7 @@ If your filtered search returns more than 10,000 messages, the 10,000 messages i
       }
   }
   ```
-+ In this example, the input file is using [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html) parameters to filter on a subject that starts with “Hello”, sent with a FromEmailAddress containing “information” to destinations ending with “@example.com”, and a .json format specified for the output file:
++ In this example, the input file is using [`MessageInsightsDataSource`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html) parameters to filter on a subject that starts with “Hello”, sent with a FromEmailAddress containing “information” to destinations ending with “@example.com”, and a .json format specified for the output file:
 
   ```
   {
@@ -228,7 +228,7 @@ If your filtered search returns more than 10,000 messages, the 10,000 messages i
       }
   }
   ```
-+ In this example, the input file is using [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html) parameters to filter on a subject that starts with “Hello”, exclude results that have "noreply@example.com" as a FromEmailAddress, and a .csv format specified for the output file:
++ In this example, the input file is using [`MessageInsightsDataSource`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html) parameters to filter on a subject that starts with “Hello”, exclude results that have "noreply@example.com" as a FromEmailAddress, and a .csv format specified for the output file:
 
   ```
   {
@@ -253,7 +253,7 @@ If your filtered search returns more than 10,000 messages, the 10,000 messages i
       }
   }
   ```
-+ In this example, the input file is using [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html) parameters to filter on a subject that starts with “Hello”, sent with a FromEmailAddress containing “information” to destinations ending with “@example.com”, using Gmail as the ISP, a last delivery event of “DELIVERY”, a last engagement event that’s either “OPEN” or “CLICK”, and a .json format specified for the output file:
++ In this example, the input file is using [`MessageInsightsDataSource`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html) parameters to filter on a subject that starts with “Hello”, sent with a FromEmailAddress containing “information” to destinations ending with “@example.com”, using Gmail as the ISP, a last delivery event of “DELIVERY”, a last engagement event that’s either “OPEN” or “CLICK”, and a .json format specified for the output file:
 
   ```
   {
@@ -288,7 +288,7 @@ If your filtered search returns more than 10,000 messages, the 10,000 messages i
       }
   }
   ```
-+ In this example, the input file is using [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html) parameters to filter on destinations ending with “@example1.com”, or “@example2.com”, or “@example3.com”, exclude messages with a LastDeliveryEvent equal to “SEND” or “DELIVERY”, and a .csv format specified for the output file:
++ In this example, the input file is using [`MessageInsightsDataSource`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html) parameters to filter on destinations ending with “@example1.com”, or “@example2.com”, or “@example3.com”, exclude messages with a LastDeliveryEvent equal to “SEND” or “DELIVERY”, and a .csv format specified for the output file:
 
   ```
   {
@@ -317,7 +317,7 @@ If your filtered search returns more than 10,000 messages, the 10,000 messages i
   }
   ```
 
-  More information about parameter values and related data types can be found in [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html) as an object of the type [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ExportDataSource.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ExportDataSource.html) in the Amazon SES API v2 reference.
+  More information about parameter values and related data types can be found in [`MessageInsightsDataSource`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageInsightsDataSource.html) as an object of the type [`ExportDataSource`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ExportDataSource.html) in the Amazon SES API v2 reference.
 
 ## Managing your export jobs using the AWS CLI
 <a name="vdm-dashboard-export-manage-cli"></a>
@@ -325,7 +325,7 @@ If your filtered search returns more than 10,000 messages, the 10,000 messages i
 These examples show you how to manage your export jobs by listing them, getting information about them, and canceling them using the AWS CLI.
 
 **To list your export jobs using the AWS CLI**
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListExportJobs.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListExportJobs.html) operation in the Amazon SES API v2 to list your export jobs. You can call this operation from the AWS CLI as shown in the following examples.
+You can use the [`ListExportJobs`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListExportJobs.html) operation in the Amazon SES API v2 to list your export jobs. You can call this operation from the AWS CLI as shown in the following examples.
 + List your export jobs:
 
   ```
@@ -350,10 +350,10 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_List
   }
   ```
 
-  More information about parameter values for the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListExportJobs.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListExportJobs.html) operation can be found in the Amazon SES API v2 reference.
+  More information about parameter values for the [`ListExportJobs`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListExportJobs.html) operation can be found in the Amazon SES API v2 reference.
 
 **To get information about your export job using the AWS CLI**
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetExportJob.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetExportJob.html) operation in the Amazon SES API v2 to get information about your export job. You can call this operation from the AWS CLI as shown in the following examples.
+You can use the [`GetExportJob`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetExportJob.html) operation in the Amazon SES API v2 to get information about your export job. You can call this operation from the AWS CLI as shown in the following examples.
 + Get information about your export job:
 
   ```
@@ -371,10 +371,10 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetE
   }
   ```
 
-  More information about parameter values for the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetExportJob.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetExportJob.html) operation can be found in the Amazon SES API v2 reference.
+  More information about parameter values for the [`GetExportJob`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetExportJob.html) operation can be found in the Amazon SES API v2 reference.
 
 **To cancel your export job using the AWS CLI**
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CancelExportJob.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CancelExportJob.html) operation in the Amazon SES API v2 to cancel your export job. You can call this operation from the AWS CLI as shown in the following examples.
+You can use the [`CancelExportJob`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CancelExportJob.html) operation in the Amazon SES API v2 to cancel your export job. You can call this operation from the AWS CLI as shown in the following examples.
 + Cancel your export job:
 
   ```
@@ -392,7 +392,7 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Canc
   }
   ```
 
-  More information about parameter values for the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_API_CancelExportJob.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_API_CancelExportJob.html) operation can be found in the Amazon SES API v2 reference.
+  More information about parameter values for the [`CancelExportJob`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_API_CancelExportJob.html) operation can be found in the Amazon SES API v2 reference.
 
 ## Seeing a message’s full event history and ISP responses using the AWS CLI
 <a name="vdm-dashboard-messages-cli"></a>
@@ -400,14 +400,14 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Canc
 The following example shows you how to see details of a message’s full event history and any responses or diagnostic codes returned by the mailbox provider using the AWS CLI. This is the same data used in the **Message info** sidebar after selecting a message’s radio button in the Virtual Deliverability Manager dashboard's **Messages** table.
 
 **To see a message's event history and ISP responses using the AWS CLI**
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetMessageInsights.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetMessageInsights.html) operation in the Amazon SES API v2 to see details of a sent message. You can call this operation from the AWS CLI as shown in the following example.
+You can use the [`GetMessageInsights`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetMessageInsights.html) operation in the Amazon SES API v2 to see details of a sent message. You can call this operation from the AWS CLI as shown in the following example.
 + See message details about a sent email identified by its message-id:
 
   ```
   aws --region us-east-1 sesv2 get-message-insights --message-id 01000100001000dd-2a19190d-99d4-0000-9f00-deb5bbf2bfbe-000001
   ```
 
-  More information about parameter values for the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetMessageInsights.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetMessageInsights.html) operation can be found in the Amazon SES API v2 reference.
+  More information about parameter values for the [`GetMessageInsights`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetMessageInsights.html) operation can be found in the Amazon SES API v2 reference.
 
 ## How Virtual Deliverability Manager dashboard metrics are calculated
 <a name="vdm-dashboard-rates"></a>

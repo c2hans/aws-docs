@@ -9,9 +9,9 @@ This solution uses [AWS CloudFormation templates and stacks](https://docs.aws.am
 
 You can download the CloudFormation templates for this solution before deploying it.
 
- [https://s3.amazonaws.com/solutions-reference/instance-scheduler-on-aws/latest/instance-scheduler-on-aws.template](https://s3.amazonaws.com/solutions-reference/instance-scheduler-on-aws/latest/instance-scheduler-on-aws.template) **instance-scheduler-on-aws.template** - Use this template to launch the solution and all associated components. The default configuration deploys an AWS Lambda function, an Amazon DynamoDB table, an Amazon CloudWatch event, and CloudWatch custom metrics, but you can also customize the template based on your specific needs.
+ [![View template](http://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/view-template-button.png)](https://s3.amazonaws.com/solutions-reference/instance-scheduler-on-aws/latest/instance-scheduler-on-aws.template) **instance-scheduler-on-aws.template** - Use this template to launch the solution and all associated components. The default configuration deploys an AWS Lambda function, an Amazon DynamoDB table, an Amazon CloudWatch event, and CloudWatch custom metrics, but you can also customize the template based on your specific needs.
 
- [https://s3.amazonaws.com/solutions-reference/instance-scheduler-on-aws/latest/instance-scheduler-on-aws-remote.template](https://s3.amazonaws.com/solutions-reference/instance-scheduler-on-aws/latest/instance-scheduler-on-aws-remote.template)
+ [![View template](http://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/view-template-button.png)](https://s3.amazonaws.com/solutions-reference/instance-scheduler-on-aws/latest/instance-scheduler-on-aws-remote.template)
 
  **instance-scheduler-on-aws-remote.template** - Use this template to launch the cross-account role used by the solution to schedule instances in spoke accounts. For deployments using AWS Organizations, deploying the template also registers the spoke account with the hub, requiring no manual configuration.
 

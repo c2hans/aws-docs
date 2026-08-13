@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/broad
 # CloudWatch pipelines configuration for Broadcom Carbon Black
 <a name="broadcom-carbonblack-pipeline-setup"></a>
 
-Collects endpoint detection and response data from Broadcom Carbon Black via Amazon S3 bucket ingestion.
+Collects endpoint detection and response data from Broadcom Carbon Black through Amazon S3 bucket ingestion.
 
 Configure the Broadcom Carbon Black source with the following parameters:
 

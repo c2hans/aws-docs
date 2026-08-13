@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/permissions-for-rules.html
 ---
 
-# Security profile permissions for Contact Lens rules
+# Security profile permissions for conversational analytics rules
 <a name="permissions-for-rules"></a>
 
 To view, edit, or add rules for automatic categorization, you must be assigned to a security profile that has **Analytics and Optimization: Rules** permissions.
@@ -13,4 +13,4 @@ To see agent names so you can add them to rules, you need **Users and permission
 
 To see the queue names so you can add them to rules, you need **Routing: Queues - View** permissions in your security profile.
 
-For more information, see [Assign permissions to use Contact Lens conversational analytics in Connect Customer](permissions-for-contact-lens.md).
+For more information, see [Assign permissions to use conversational analytics in Connect Customer](permissions-for-contact-lens.md).

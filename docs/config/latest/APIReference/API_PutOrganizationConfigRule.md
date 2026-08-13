@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PutOrgani
 # PutOrganizationConfigRule
 <a name="API_PutOrganizationConfigRule"></a>
 
-Adds or updates an AWS Config rule for your entire organization to evaluate if your AWS resources comply with your desired configurations. For information on how many organization AWS Config rules you can have per account, see [https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html](https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html) in the * AWS Config Developer Guide*.
+Adds or updates an AWS Config rule for your entire organization to evaluate if your AWS resources comply with your desired configurations. For information on how many organization AWS Config rules you can have per account, see [**Service Limits**](https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html) in the * AWS Config Developer Guide*.
 
  Only a management account and a delegated administrator can create or update an organization AWS Config rule. When calling this API with a delegated administrator, you must ensure AWS Organizations `ListDelegatedAdministrator` permissions are added. An organization can have up to 3 delegated administrators.
 
@@ -161,7 +161,7 @@ One or more of the specified parameters are not valid. Verify that your paramete
 HTTP Status Code: 400
 
  ** MaxNumberOfOrganizationConfigRulesExceededException **
-You have reached the limit of the number of organization AWS Config rules you can create. For more information, see see [https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html](https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html) in the * AWS Config Developer Guide*.
+You have reached the limit of the number of organization AWS Config rules you can create. For more information, see see [**Service Limits**](https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html) in the * AWS Config Developer Guide*.
 HTTP Status Code: 400
 
  ** NoAvailableOrganizationException **

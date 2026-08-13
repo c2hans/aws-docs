@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/EKS-I
 CloudWatch investigations investigation groups can utilize information directly from your Amazon EKS cluster. To get started, first grant access to the `Investigation Group` IAM role. We recommend using the default AWS managed *access policy* `AmazonAIOpsAssistantPolicy` that grants CloudWatch investigations investigation groups access to resources in the cluster. By using this policy you will automatically get policy updates as needed.
 
 **Note**
-`AmazonAIOpsAssistantPolicy` is an access policy. The AWS managed identity policy that authorizes the access associated with CloudWatch investigations investigation groups is [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIOpsAssistantPolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIOpsAssistantPolicy.html).
+`AmazonAIOpsAssistantPolicy` is an access policy. The AWS managed identity policy that authorizes the access associated with CloudWatch investigations investigation groups is [`AIOpsAssistantPolicy`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIOpsAssistantPolicy.html).
 
 Use the **Advanced Configuration** option to scope down the access provided by the access policy to a set of namespaces or the entire cluster. Alternatively, you can further scope access down by associating the access entry to a Kubernetes group RBAC permission. For more information, see [Creating access entries](https://docs.aws.amazon.com/eks/latest/userguide/creating-access-entries.html).
 

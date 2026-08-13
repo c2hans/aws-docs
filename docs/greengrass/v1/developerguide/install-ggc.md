@@ -257,8 +257,7 @@ The `snapd` daemon is preinstalled on Ubuntu.
      (https://docs.aws.amazon.com/greengrass/latest/developerguide/install-ggc.html#gg-snap-support) in
      the AWS IoT Greengrass Developer.
      If you need help, try the AWS IoT Greengrass tag on AWS re:Post
-     (https://repost.aws/tags/TA4ckIed1sR4enZBey29rKTg/aws-io-t-greengrass) or connect with an AWS IQ expert
-     (https://iq.aws.amazon.com/services/aws/greengrass).
+     (https://repost.aws/tags/TA4ckIed1sR4enZBey29rKTg/aws-io-t-greengrass).
    snap-id: SRDuhPJGj4XPxFNNZQKOTvURAp0wxKnd
    channels:
      latest/stable:    1.11.3 2021-06-15 (59) 111MB -

@@ -41,9 +41,9 @@ Note that tags are cached for authorization purposes. Because of this, additions
 <a name="CHAP_Tagging.API"></a>
 
 You can add, list, or remove tags for a AWS DMS resource using the AWS DMS API.
-+ To add a tag to an AWS DMS resource, use the [https://docs.aws.amazon.com/dms/latest/APIReference/API_AddTagsToResource.html](https://docs.aws.amazon.com/dms/latest/APIReference/API_AddTagsToResource.html) operation.
-+ To list tags that are assigned to an AWS DMS resource, use the [https://docs.aws.amazon.com/dms/latest/APIReference/API_ListTagsForResource.html](https://docs.aws.amazon.com/dms/latest/APIReference/API_ListTagsForResource.html) operation.
-+ To remove tags from an AWS DMS resource, use the [https://docs.aws.amazon.com/dms/latest/APIReference/API_RemoveTagsFromResource.html](https://docs.aws.amazon.com/dms/latest/APIReference/API_RemoveTagsFromResource.html) operation.
++ To add a tag to an AWS DMS resource, use the [`AddTagsToResource`](https://docs.aws.amazon.com/dms/latest/APIReference/API_AddTagsToResource.html) operation.
++ To list tags that are assigned to an AWS DMS resource, use the [`ListTagsForResource`](https://docs.aws.amazon.com/dms/latest/APIReference/API_ListTagsForResource.html) operation.
++ To remove tags from an AWS DMS resource, use the [`RemoveTagsFromResource`](https://docs.aws.amazon.com/dms/latest/APIReference/API_RemoveTagsFromResource.html) operation.
 
 To learn more about how to construct the required ARN, see [Constructing an Amazon Resource Name (ARN) for AWS DMS](CHAP_Introduction.AWS.ARN.md).
 

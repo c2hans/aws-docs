@@ -280,11 +280,11 @@ Redis OSS (cluster mode disabled) users running ElastiCache version 3.2.10 for R
   <tr><th>Feature</th><th> 3.2.6 </th><th> 3.2.10 </th><th> 4.0.10 and later </th></tr>
 </thead>
 <tbody>
-  <tr><td> Online cluster resizing \*</td><td>No</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td> In-transit encryption \*\*</td><td>Yes</td><td>No</td><td>Yes</td></tr>
-  <tr><td> At rest encryption \*\*</td><td>Yes</td><td>No</td><td>Yes</td></tr>
-  <tr><td colspan="4">\* Adding, removing, and rebalancing shards.</td></tr>
-  <tr><td colspan="4">\*\* Required for FedRAMP, HIPAA, and PCI DSS compliant applications. For more information, see [Compliance validation for Amazon ElastiCache](elasticache-compliance.md).</td></tr>
+  <tr><td> Online cluster resizing *</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td> In-transit encryption **</td><td>Yes</td><td>No</td><td>Yes</td></tr>
+  <tr><td> At rest encryption **</td><td>Yes</td><td>No</td><td>Yes</td></tr>
+  <tr><td colspan="4">* Adding, removing, and rebalancing shards.</td></tr>
+  <tr><td colspan="4">** Required for FedRAMP, HIPAA, and PCI DSS compliant applications. For more information, see <a href="elasticache-compliance.md">Compliance validation for Amazon ElastiCache</a>.</td></tr>
 </tbody>
 </table>
 
@@ -304,11 +304,11 @@ Amazon ElastiCache introduces the next major version of ElastiCache for the Redi
   <tr><th>Feature</th><th> 3.2.6 </th><th> 3.2.10 </th></tr>
 </thead>
 <tbody>
-  <tr><td> Online cluster resizing \*</td><td>No</td><td>Yes</td></tr>
-  <tr><td> In-transit encryption \*\*</td><td>Yes</td><td>No</td></tr>
-  <tr><td> At rest encryption \*\*</td><td>Yes</td><td>No</td></tr>
-  <tr><td colspan="3">\* Adding, removing, and rebalancing shards.</td></tr>
-  <tr><td colspan="3">\*\* Required for FedRAMP, HIPAA, and PCI DSS compliant applications. For more information, see [Compliance validation for Amazon ElastiCache](elasticache-compliance.md).</td></tr>
+  <tr><td> Online cluster resizing *</td><td>No</td><td>Yes</td></tr>
+  <tr><td> In-transit encryption **</td><td>Yes</td><td>No</td></tr>
+  <tr><td> At rest encryption **</td><td>Yes</td><td>No</td></tr>
+  <tr><td colspan="3">* Adding, removing, and rebalancing shards.</td></tr>
+  <tr><td colspan="3">** Required for FedRAMP, HIPAA, and PCI DSS compliant applications. For more information, see <a href="elasticache-compliance.md">Compliance validation for Amazon ElastiCache</a>.</td></tr>
 </tbody>
 </table>
 
@@ -338,13 +338,13 @@ Amazon ElastiCache version 3.2.4 introduces the next major version of ElastiCach
 <tbody>
   <tr><td> Data partitioning </td><td>No</td><td>Yes</td></tr>
   <tr><td> Geospatial indexing </td><td>Yes</td><td>Yes</td></tr>
-  <tr><td> Change node type </td><td>Yes</td><td>Yes \*</td></tr>
-  <tr><td> Replica scaling </td><td>Yes</td><td>Yes \*</td></tr>
-  <tr><td> Scale out </td><td>No</td><td>Yes \*</td></tr>
+  <tr><td> Change node type </td><td>Yes</td><td>Yes *</td></tr>
+  <tr><td> Replica scaling </td><td>Yes</td><td>Yes *</td></tr>
+  <tr><td> Scale out </td><td>No</td><td>Yes *</td></tr>
   <tr><td> Database support </td><td>Multiple</td><td>Single</td></tr>
-  <tr><td> Parameter group</td><td>`default.redis3.2` \*\* </td><td>`default.redis3.2.cluster.on` \*\* </td></tr>
-  <tr><td colspan="3">\*  See [Restoring from a backup into a new cache](backups-restoring.md)</td></tr>
-  <tr><td colspan="3">\*\* Or one derived from it.</td></tr>
+  <tr><td> Parameter group</td><td><code>default.redis3.2</code> ** </td><td><code>default.redis3.2.cluster.on</code> ** </td></tr>
+  <tr><td colspan="3">*  See <a href="backups-restoring.md">Restoring from a backup into a new cache</a></td></tr>
+  <tr><td colspan="3">** Or one derived from it.</td></tr>
 </tbody>
 </table>
 

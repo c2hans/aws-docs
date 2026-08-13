@@ -138,7 +138,7 @@ Now, use the custom decoding interface to create a decoder manifest.
 
 **Note**
 You only need to create network interfaces and signals if you want to specify custom IDs, which isn't part of this example.
-For information about mapping decoding information when the fully qualified name (FQN) differs from the custom decoding signal ID, see the [https://github.com/aws/aws-iot-fleetwise-edge/blob/main/docs/dev-guide/network-agnostic-dev-guide.md#aaos-vhal](https://github.com/aws/aws-iot-fleetwise-edge/blob/main/docs/dev-guide/network-agnostic-dev-guide.md#aaos-vhal).
+For information about mapping decoding information when the fully qualified name (FQN) differs from the custom decoding signal ID, see the [*Edge Agent Developer Guide*](https://github.com/aws/aws-iot-fleetwise-edge/blob/main/docs/dev-guide/network-agnostic-dev-guide.md#aaos-vhal).
 
 ```
 // Create a network interface that is of type : CUSTOM_DECODING_INTERFACE
@@ -218,7 +218,7 @@ aws iotfleetwise create-vehicle \
 The next step is to focus on the AWS IoT FleetWise Edge code base and write the necessary code extension.
 
 **Note**
-For information about the Edge implementation, see the [https://github.com/aws/aws-iot-fleetwise-edge/blob/main/docs/dev-guide/network-agnostic-dev-guide.md#implementing-your-own-sensors-and-actuators](https://github.com/aws/aws-iot-fleetwise-edge/blob/main/docs/dev-guide/network-agnostic-dev-guide.md#implementing-your-own-sensors-and-actuators).
+For information about the Edge implementation, see the [*Edge Agent Developer Guide*](https://github.com/aws/aws-iot-fleetwise-edge/blob/main/docs/dev-guide/network-agnostic-dev-guide.md#implementing-your-own-sensors-and-actuators).
 
 ## Send command
 <a name="test-command"></a>

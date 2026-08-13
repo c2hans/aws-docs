@@ -10,7 +10,7 @@ Use the AWS Command Line Interface (AWS CLI) to attach, detach, and describe loa
 This topic shows examples of AWS CLI commands that perform common tasks for Amazon EC2 Auto Scaling.
 
 **Important**
-For additional command examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/index.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/index.html) and [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elb/index.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elb/index.html) in the *AWS CLI Command Reference*.
+For additional command examples, see [`aws elbv2`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/index.html) and [`aws elb`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elb/index.html) in the *AWS CLI Command Reference*.
 
 **Topics**
 + [Attach your target group or Classic Load Balancer](#example-attach-traffic-sources)

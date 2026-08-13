@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Searc
 <a name="API_SearchPlaceIndexForPosition"></a>
 
 **Important**
-This operation is no longer current and may be deprecated in the future. We recommend you upgrade to [/location/latest/APIReference/API_geoplaces_ReverseGeocode.html](/location/latest/APIReference/API_geoplaces_ReverseGeocode.html) or [/location/latest/APIReference/API_geoplaces_SearchNearby.html](/location/latest/APIReference/API_geoplaces_SearchNearby.html) unless you require Grab data.
+This operation is no longer current and may be deprecated in the future. We recommend you upgrade to [`ReverseGeocode`](/location/latest/APIReference/API_geoplaces_ReverseGeocode.html) or [`SearchNearby`](/location/latest/APIReference/API_geoplaces_SearchNearby.html) unless you require Grab data.
  `SearchPlaceIndexForPosition` is part of a previous Amazon Location Service Places API (version 1) which has been superseded by a more intuitive, powerful, and complete API (version 2).
 The version 2 `ReverseGeocode` operation gives better results in the address reverse-geocoding use case, while the version 2 `SearchNearby` operation gives better results when searching for businesses and points of interest near a specific location.
 If you are using an AWS SDK or the AWS CLI, note that the Places API version 2 is found under `geo-places` or `geo_places`, not under `location`.

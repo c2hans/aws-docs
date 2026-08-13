@@ -17,19 +17,36 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **September 29, 2020** to all Amazon Linux AMI platforms. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-10-07-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-10-07-linux.html) |
-| **nginx** | Updated platforms supporting the nginx server to [version 1.18.0](https://nginx.org/en/CHANGES-1.18). |
-| **Go** | Updated Go to release 1.15.2. For details, see [go1.15](https://golang.org/doc/devel/release.html#go1.15) in *The Go Programming Language Release History*. |
-| **Java SE**, **Tomcat** | Updated Java 8 to OpenJDK Version 1.8.0\_265.b01. |
-| **Node.js** | Updated the Node.js platform to add support for Node versions [12.18.4](https://nodejs.org/en/blog/release/v12.18.4/) and [10.22.1](https://nodejs.org/en/blog/release/v10.22.1/). |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>September 29, 2020</b> to all Amazon Linux AMI platforms.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>nginx</b></td><td>Updated platforms supporting the nginx server to <a href="https://nginx.org/en/CHANGES-1.18">version 1.18.0</a>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Go</b></td><td>Updated Go to release 1.15.2. For details, see <a href="https://golang.org/doc/devel/release.html#go1.15">go1.15</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Java SE</b>, <b>Tomcat</b></td><td>Updated Java 8 to OpenJDK Version 1.8.0_265.b01.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform to add support for Node versions <a href="https://nodejs.org/en/blog/release/v12.18.4/">12.18.4</a> and <a href="https://nodejs.org/en/blog/release/v10.22.1/">10.22.1</a>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2020-10-07-linux.platforms"></a>

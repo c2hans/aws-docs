@@ -16,7 +16,7 @@ These Security Hub CSPM controls evaluate the AWS DataSync service and resources
 
 **Resource type:** `AWS::DataSync::Task`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/datasync-task-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/datasync-task-logging-enabled.html)
+**AWS Config rule:** [datasync-task-logging-enabled](https://docs.aws.amazon.com/config/latest/developerguide/datasync-task-logging-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -40,7 +40,7 @@ For information about configuring logging for AWS DataSync tasks, see [Monitorin
 
 **Resource type:** `AWS::DataSync::Task`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/datasync-task-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/datasync-task-tagged.html)
+**AWS Config rule:** [datasync-task-tagged](https://docs.aws.amazon.com/config/latest/developerguide/datasync-task-tagged.html)
 
 **Schedule type:** Change triggered
 

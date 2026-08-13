@@ -68,9 +68,9 @@ The full comparison of RPM package versions is below.
   - **AL2023.1.20230809 version:** 1.300025.0-1.amzn2023
   - **AL2023.1.20230823 version:** 1.300026.2-1.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html)  / **Architectures:** noarch
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html)  / **Architectures:** noarch
+- ** [`amazon-linux-onprem`](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html) **
+  - **RPM:**  [`amazon-linux-onprem`](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html)  / **Architectures:** noarch
+  - **RPM:**  [`amazon-onprem-network`](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html)  / **Architectures:** noarch
   - **AL2023.1.20230809 version:** 1.0-0.amzn2023
   - **AL2023.1.20230823 version:** 1.1-0.amzn2023
 
@@ -124,8 +124,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.1.20230809 version:** 6.0.18-1.amzn2023.0.1
   - **AL2023.1.20230823 version:** 6.0.20-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
+- ** [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
+  - **RPM:**  [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.1.20230809 version:** 1.74.1-1.amzn2023
   - **AL2023.1.20230823 version:** 1.75.0-1.amzn2023
@@ -157,8 +157,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.1.20230809 version:** 9.56.1-7.amzn2023.0.2
   - **AL2023.1.20230823 version:** 9.56.1-7.amzn2023.0.3
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:** aarch64, x86\_64
+- ** [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
+  - **RPM:**  [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  golang-bin  / **Architectures:** aarch64, x86\_64
   - **RPM:**  golang-docs  / **Architectures:** noarch
   - **RPM:**  golang-misc  / **Architectures:** noarch
@@ -268,8 +268,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.1.20230809 version:** 3.0.8-1.amzn2023.0.3
   - **AL2023.1.20230823 version:** 3.0.8-1.amzn2023.0.4
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
+- ** [`php8.1`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
+  - **RPM:**  [`php8.1`](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.1-bcmath  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.1-cli  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.1-common  / **Architectures:** aarch64, x86\_64

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/chat-and-ssml-tags.html
 ---
 
-# SSML tags in an Connect Customer chat conversation
+# SSML tags in a Connect Customer chat conversation
 <a name="chat-and-ssml-tags"></a>
 
 If you create text-to-speech text and apply SSML tags, they won't be interpreted in a chat conversation. For example, in the following image both the text **and tags** will be printed in the chat conversation.

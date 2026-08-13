@@ -65,14 +65,14 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  avalon-logkit  | src, noarch |
 |  avalon-logkit-javadoc  | src, noarch |
 |  aws-amitools-ec2  | src, noarch |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-aws-apitools](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-aws-apitools)  | src, noarch |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-aws-apitools](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-aws-apitools)  | src, noarch |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-aws-apitools](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-aws-apitools)  | src, noarch |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-aws-apitools](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-aws-apitools)  | src, noarch |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-aws-apitools](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-aws-apitools)  | src, noarch |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al1.html#deprecated-aws-apitools-al1](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al1.html#deprecated-aws-apitools-al1)  | src, noarch |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-aws-apitools](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-aws-apitools)  | src, noarch |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al1.html#deprecated-aws-apitools-al1](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al1.html#deprecated-aws-apitools-al1)  | src, noarch |
+|  [`aws-apitools-as`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-aws-apitools)  | src, noarch |
+|  [`aws-apitools-cfn`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-aws-apitools)  | src, noarch |
+|  [`aws-apitools-common`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-aws-apitools)  | src, noarch |
+|  [`aws-apitools-ec2`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-aws-apitools)  | src, noarch |
+|  [`aws-apitools-elb`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-aws-apitools)  | src, noarch |
+|  [`aws-apitools-iam`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al1.html#deprecated-aws-apitools-al1)  | src, noarch |
+|  [`aws-apitools-mon`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-aws-apitools)  | src, noarch |
+|  [`aws-apitools-rds`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al1.html#deprecated-aws-apitools-al1)  | src, noarch |
 |  aws-cli  | src, noarch |
 |  aws-cli-plugin-cloudwatch-logs  | src, noarch |
 |  aws-cloudhsm-cli  | src, noarch |
@@ -102,13 +102,13 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  bsh-demo  | noarch |
 |  busybox  | src, x86\_64 |
 |  busybox-petitboot  | src, x86\_64 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr)  | src, noarch |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr)  | src, noarch |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr)  | src, noarch |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr)  | src, x86\_64 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr)  | src, x86\_64 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr)  | src, noarch |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr)  | src, noarch |
+|  [`bzr-common`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr)  | src, noarch |
+|  [`bzr-doc-python26`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr)  | src, noarch |
+|  [`bzr-doc-python27`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr)  | src, noarch |
+|  [`bzr-python26`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr)  | src, x86\_64 |
+|  [`bzr-python27`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr)  | src, x86\_64 |
+|  [`bzr-fastimport-python26`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr)  | src, noarch |
+|  [`bzr-fastimport-python27`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-bzr)  | src, noarch |
 |  cachefilesd  | src, x86\_64 |
 |  cacti  | src, noarch |
 |  castor  | src, noarch |
@@ -287,7 +287,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  ftp  | src, x86\_64 |
 |  fwsnort  | src, noarch |
 |  cpp  | noarch |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  | noarch |
+|  [`gcc`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  | noarch |
 |  gcc-c\+\+  | noarch |
 |  gcc-gfortran  | noarch |
 |  gcc-gnat  | noarch |
@@ -472,18 +472,18 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  java-1.6.0-openjdk-devel  | src, x86\_64 |
 |  java-1.6.0-openjdk-javadoc  | src, x86\_64 |
 |  java-1.6.0-openjdk-src  | src, x86\_64 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-openjdk7](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-openjdk7)  | src, x86\_64 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-openjdk7](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-openjdk7)  | src, x86\_64 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-openjdk7](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-openjdk7)  | src, x86\_64 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-openjdk7](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-openjdk7)  | src, noarch |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-openjdk7](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-openjdk7)  | src, x86\_64 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  | src, x86\_64 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  | src, x86\_64 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  | src, x86\_64 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  | src, x86\_64 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  | src, noarch |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  | src, noarch |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  | src, x86\_64 |
+|  [`java-1.7.0-openjdk`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-openjdk7)  | src, x86\_64 |
+|  [`java-1.7.0-openjdk-demo`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-openjdk7)  | src, x86\_64 |
+|  [`java-1.7.0-openjdk-devel`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-openjdk7)  | src, x86\_64 |
+|  [`java-1.7.0-openjdk-javadoc`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-openjdk7)  | src, noarch |
+|  [`java-1.7.0-openjdk-src`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-openjdk7)  | src, x86\_64 |
+|  [`java-1.8.0-openjdk`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  | src, x86\_64 |
+|  [`java-1.8.0-openjdk-demo`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  | src, x86\_64 |
+|  [`java-1.8.0-openjdk-devel`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  | src, x86\_64 |
+|  [`java-1.8.0-openjdk-headless`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  | src, x86\_64 |
+|  [`java-1.8.0-openjdk-javadoc`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  | src, noarch |
+|  [`java-1.8.0-openjdk-javadoc-zip`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  | src, noarch |
+|  [`java-1.8.0-openjdk-src`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  | src, x86\_64 |
 |  jlex  | src, noarch |
 |  jlex-javadoc  | src, noarch |
 |  jline  | src, noarch |
@@ -523,7 +523,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  lighttpd-mod\_mysql\_vhost  | src, x86\_64 |
 |  log4j-javadoc  | noarch |
 |  log4j-manual  | noarch |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-log4j-hotpatch](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-log4j-hotpatch)  | src, noarch |
+|  [`log4j-cve-2021-44228-hotpatch`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-log4j-hotpatch)  | src, noarch |
 |  logwatch  | src, noarch |
 |  lolcat  | src, noarch |
 |  lslk  | src, x86\_64 |
@@ -746,8 +746,8 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  ntp-doc  | src, noarch |
 |  ntp-perl  | src, noarch |
 |  nuttcp  | src, x86\_64 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated.html#deprecated-compat](https://docs.aws.amazon.com/linux/al2023/ug/deprecated.html#deprecated-compat)  | x86\_64 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated.html#deprecated-compat](https://docs.aws.amazon.com/linux/al2023/ug/deprecated.html#deprecated-compat)  | x86\_64 |
+|  [`compat-openmpi16`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated.html#deprecated-compat)  | x86\_64 |
+|  [`compat-openmpi16-devel`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated.html#deprecated-compat)  | x86\_64 |
 |  openscap-python  | x86\_64 |
 |  openswan  | src, x86\_64 |
 |  openswan-doc  | src, x86\_64 |
@@ -1278,7 +1278,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  python26-docs  | src, noarch |
 |  python27-docs  | src, noarch |
 |  python34-docs  | src, noarch |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  | src, x86\_64 |
+|  [`python38`](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  | src, x86\_64 |
 |  python38-debug  | src, x86\_64 |
 |  python38-devel  | src, x86\_64 |
 |  python38-libs  | src, x86\_64 |
@@ -1622,7 +1622,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  rsh  | src, x86\_64 |
 |  rsh-server  | src, x86\_64 |
 |  rssh  | src, x86\_64 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-rsyslog-gnutls](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-rsyslog-gnutls)  | x86\_64 |
+|  [`rsyslog-gnutls`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-rsyslog-gnutls)  | x86\_64 |
 |  rsyslog-gssapi  | x86\_64 |
 |  rsyslog-mysql  | x86\_64 |
 |  rsyslog-pgsql  | x86\_64 |
@@ -1846,7 +1846,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  unifdef  | src, x86\_64 |
 |  units  | src, x86\_64 |
 |  unix2dos  | src, x86\_64 |
-|  [https://docs.aws.amazon.com/linux/al1/ug/deprecated-al1.html#deprecated-upstart](https://docs.aws.amazon.com/linux/al1/ug/deprecated-al1.html#deprecated-upstart)  | src, x86\_64 |
+|  [`upstart`](https://docs.aws.amazon.com/linux/al1/ug/deprecated-al1.html#deprecated-upstart)  | src, x86\_64 |
 |  urw-fonts  | src, noarch |
 |  usbutils  | src, x86\_64 |
 |  usermode  | src, x86\_64 |
@@ -1904,9 +1904,9 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  xorg-x11-xkb-utils  | src, x86\_64 |
 |  xorg-x11-xkb-utils-devel  | src, x86\_64 |
 |  xrestop  | src, x86\_64 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-yp-nis](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-yp-nis)  | src, x86\_64 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-yp-nis](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-yp-nis)  | src, x86\_64 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-yp-nis](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-yp-nis)  | src, x86\_64 |
+|  [`ypbind`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-yp-nis)  | src, x86\_64 |
+|  [`ypserv`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-yp-nis)  | src, x86\_64 |
+|  [`yp-tools`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-yp-nis)  | src, x86\_64 |
 |  yum  | src, noarch |
 |  yum-cron  | src, noarch |
 |  yum-cron-daily  | src, noarch |

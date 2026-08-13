@@ -21,7 +21,7 @@ To manage Amazon Q plugins, you can take the following actions:
 ## Updating a plugin
 <a name="plugin-update"></a>
 
-To update a plugin, you can use AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdatePlugin.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdatePlugin.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
+To update a plugin, you can use AWS Management Console or the [UpdatePlugin](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdatePlugin.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
 ------
 #### [ Console ]
@@ -105,7 +105,7 @@ aws qbusiness update-plugin \
 ## Deleting a plugin
 <a name="plugin-delete"></a>
 
-To delete a plugin, you can use the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeletePlugin.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeletePlugin.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
+To delete a plugin, you can use the AWS Management Console or the [DeletePlugin](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeletePlugin.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
 ------
 #### [ Console ]
@@ -142,7 +142,7 @@ aws qbusiness delete-plugin \
 ## Getting plugin properties
 <a name="plugin-properties"></a>
 
-To get the details of an Amazon Q plugin, you can use either the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetPlugin.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetPlugin.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
+To get the details of an Amazon Q plugin, you can use either the AWS Management Console or the [GetPlugin](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetPlugin.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
 ------
 #### [ Console ]
@@ -180,7 +180,7 @@ aws qbusiness get-plugin \
 ## Listing plugins
 <a name="plugin-list"></a>
 
-To list Amazon Q plugins, you can use the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListPlugins.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListPlugins.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
+To list Amazon Q plugins, you can use the AWS Management Console or the [ListPlugins](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListPlugins.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
 ------
 #### [ Console ]
@@ -210,7 +210,7 @@ aws qbusiness list-plugins \
 ## Listing configured plugin actions
 <a name="plugin-list-actions"></a>
 
-To list actions configured for a specific Amazon Q plugin, you can use the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListPluginActions.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListPluginActions.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
+To list actions configured for a specific Amazon Q plugin, you can use the AWS Management Console or the [ListPluginActions](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListPluginActions.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
 ------
 #### [ Console ]
@@ -243,7 +243,7 @@ aws qbusiness list-plugin-actions \
 ## Listing available plugin actions
 <a name="plugin-list-actions-type"></a>
 
-To list all available actions for a specific Amazon Q plugin, you can use the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListPluginTypeActions.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListPluginTypeActions.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
+To list all available actions for a specific Amazon Q plugin, you can use the AWS Management Console or the [ListPluginTypeActions](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListPluginTypeActions.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
 ------
 #### [ Console ]
@@ -273,7 +273,7 @@ aws qbusiness list-plugin-type-actions \
 ## Listing plugin metadata
 <a name="plugin-list-metadata"></a>
 
-To list metadata for a specific Amazon Q plugin, you can use the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListPluginTypeMetadata.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListPluginTypeMetadata.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
+To list metadata for a specific Amazon Q plugin, you can use the AWS Management Console or the [ListPluginTypeMetadata](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListPluginTypeMetadata.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
 ------
 #### [ Console ]

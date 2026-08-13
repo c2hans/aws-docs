@@ -13,9 +13,9 @@ You can handle opt outs for end users and entire organizations. Opting out has t
 The following opt-out actions are irreversible. You can't recover deleted data.
 
 **Handling end user opt-outs**
-When end users want to opt out of speaker search, call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceProfile.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceProfile.html) API. This action removes the voice profile, plus the voice embeddings and enrollment audio.
+When end users want to opt out of speaker search, call the [DeleteVoiceProfile](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceProfile.html) API. This action removes the voice profile, plus the voice embeddings and enrollment audio.
 
-To delete a group of voice embeddings, call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceProfileDomain.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceProfileDomain.html) API to remove the domain. This action deletes *all* the voice profiles in a domain.
+To delete a group of voice embeddings, call the [DeleteVoiceProfileDomain](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceProfileDomain.html) API to remove the domain. This action deletes *all* the voice profiles in a domain.
 
 **Handling opt-out at the organizational level**
 To handle opt outs for an entire organization, use an AWS Organizations opt-out policy. Use the `chimesdkvoiceanalytics` service name. For information about the policies, see [ AI services opt-out policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_ai-opt-out.html) in the *AWS Organizations User Guide*.

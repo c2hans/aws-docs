@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-parall
 
 You can use the `codebuild-tests-run` CLI command to split and run your tests across parallel execution environments. The following section provides `buildspec.yml` samples for various frameworks, illustrating the usage of the `codebuild-tests-run` command.
 + Each example below includes a `parallelism` level of five, meaning that five identical execution environments will be created to split your tests across. You can choose a `parallelism` level to suit your project by modifying the `parallelism` value in the `build-fanout` section.
-+ Each example below shows configuring your tests to be split by the test file name, which is by default. This distributes the tests evenly across the parallel execution environments.
++ Each example below shows configuring your tests to be split by the test file name, which is the default. This distributes the tests evenly across the parallel execution environments.
 
 Before you get started, see [Execute parallel tests in batch builds](parallel-test.md) for more information.
 

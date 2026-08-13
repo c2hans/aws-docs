@@ -335,7 +335,7 @@ Copy the following `package.json` file into your local environment's working dir
 ```
 
 **Example — Retrieve the historical token balance from a specific externally owned address (EOA) by using AMB Query `GetTokenBalance` API**
-You can use the `GetTokenBalance` API to get the balance of various tokens (for example, ERC20, ERC721, and ERC1155) and native coins (for example, ETH and BTC), which you can use to get the current balance of an externally owned account (EOA) based on a historical `timestamp` (Unix timestamp - seconds). In this example, you use the [https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIReference/GetTokenBalance.html](https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIReference/GetTokenBalance.html) API to get an address balance of an ERC20 token, USDC, on the Ethereum Mainnet.
+You can use the `GetTokenBalance` API to get the balance of various tokens (for example, ERC20, ERC721, and ERC1155) and native coins (for example, ETH and BTC), which you can use to get the current balance of an externally owned account (EOA) based on a historical `timestamp` (Unix timestamp - seconds). In this example, you use the [`GetTokenBalance`](https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIReference/GetTokenBalance.html) API to get an address balance of an ERC20 token, USDC, on the Ethereum Mainnet.
 To test the `GetTokenBalance` API, copy the following code into a file named `token-balance.js`, and save the file into the same working directory:
 
 ```

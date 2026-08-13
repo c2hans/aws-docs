@@ -136,7 +136,7 @@ The following is an example of the output that appears after you create a Studio
 }
 ```
 
-For more information about the `create-studio` command, see [https://docs.aws.amazon.com/cli/latest/reference/emr/create-studio.html](https://docs.aws.amazon.com/cli/latest/reference/emr/create-studio.html).
+For more information about the `create-studio` command, see [*AWS CLI Command Reference*](https://docs.aws.amazon.com/cli/latest/reference/emr/create-studio.html).
 
 ------
 

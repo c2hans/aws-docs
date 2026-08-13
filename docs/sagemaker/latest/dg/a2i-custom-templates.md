@@ -245,7 +245,7 @@ In Liquid, the text between single curly braces and percent symbols is an instru
 + [Control flow](https://shopify.github.io/liquid/tags/control-flow/): Includes programming logic operators like `if/else`, `unless`, and `case/when`.
 + [Iteration](https://shopify.github.io/liquid/tags/iteration/): Enables you to run blocks of code repeatedly using statements like for loops.
 
-  For example, the following code example demonstrates how you can use the Liquid `for` tag to create a `for` loop. This example loops through the [https://docs.aws.amazon.com/rekognition/latest/dg/API_ModerationLabel.html](https://docs.aws.amazon.com/rekognition/latest/dg/API_ModerationLabel.html) returned from Amazon Rekognition and displays the `moderationLabels` attributes `name` and `parentName` for workers to review:
+  For example, the following code example demonstrates how you can use the Liquid `for` tag to create a `for` loop. This example loops through the [`moderationLabels`](https://docs.aws.amazon.com/rekognition/latest/dg/API_ModerationLabel.html) returned from Amazon Rekognition and displays the `moderationLabels` attributes `name` and `parentName` for workers to review:
 
   ```
    {% for label in task.input.selectedAiServiceResponse.moderationLabels %}
@@ -359,7 +359,7 @@ To automate this simple text classification sample, include the Liquid tag `{{ t
 ## Preview a Worker Task Template
 <a name="a2i-preview-your-custom-template"></a>
 
-To preview a custom worker task template, use the SageMaker AI `RenderUiTemplate` operation. You can use the `RenderUiTemplate` operation with the AWS CLI or your preferred AWS SDK. For documentation on the supported language specific SDKs for this API operation, see the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RenderUiTemplate.html#API_RenderUiTemplate_SeeAlso](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RenderUiTemplate.html#API_RenderUiTemplate_SeeAlso) section of the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RenderUiTemplate.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RenderUiTemplate.html).
+To preview a custom worker task template, use the SageMaker AI `RenderUiTemplate` operation. You can use the `RenderUiTemplate` operation with the AWS CLI or your preferred AWS SDK. For documentation on the supported language specific SDKs for this API operation, see the [`See Also`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RenderUiTemplate.html#API_RenderUiTemplate_SeeAlso) section of the [`RenderUiTemplate`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RenderUiTemplate.html).
 
 **Prerequisites**
 
@@ -373,7 +373,7 @@ To preview your worker task template, the AWS Identity and Access Management (IA
 
 1. In the **`Content`** parameter of **`UiTemplate`**, insert your template.
 
-Once you've configured `RenderUiTemplate`, use your preferred SDK or the AWS CLI to submit a request to render your template. If your request was successful, the response includes [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RenderUiTemplate.html#API_RenderUiTemplate_ResponseSyntax](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RenderUiTemplate.html#API_RenderUiTemplate_ResponseSyntax), a Liquid template that renders the HTML for the worker UI.
+Once you've configured `RenderUiTemplate`, use your preferred SDK or the AWS CLI to submit a request to render your template. If your request was successful, the response includes [`RenderedContent`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RenderUiTemplate.html#API_RenderUiTemplate_ResponseSyntax), a Liquid template that renders the HTML for the worker UI.
 
 **Important**
 To preview your template, you need an IAM role with permissions to read Amazon S3 objects that get rendered on your user interface. For a sample policy that you can attach to your IAM role to grant these permissions, see [Enable Worker Task Template Previews](a2i-permissions-security.md#permissions-for-worker-task-templates-augmented-ai).

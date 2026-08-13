@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/connect-slr.ht
 ## What are service-linked roles (SLR) and why are they important?
 <a name="what-is-slr"></a>
 
-Connect Customer uses AWS Identity and Access Management (IAM) [service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role). A service-linked role is a unique type of IAM role that is linked directly to an Connect Customer instance.
+Connect Customer uses AWS Identity and Access Management (IAM) [service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role). A service-linked role is a unique type of IAM role that is linked directly to a Connect Customer instance.
 
 Service-linked roles are predefined by Connect Customer and include [all the permissions](#slr-permissions) that Connect Customer requires to call other AWS services on your behalf.
 
@@ -46,8 +46,8 @@ The [AmazonConnectServiceLinkedRolePolicy](https://docs.aws.amazon.com/connect/l
 
   Additionally, the following actions are allowed on all resources: `profile:ListRecommenderRecipes`, `profile:ListAccountIntegrations`, and `profile:ListDomains`.
 **Note**
-Each Connect Customer instance can be associated with only one domain at a time. However, you can link any domain to an Connect Customer instance. Cross-domain access within the same AWS account and Region is automatically enabled for all domains that start with the prefix `amazon-connect-`. To restrict cross-domain access, you can either use separate Connect Customer instances to logically partition your data or use Customer Profiles domain names within the same instance that do not start with the `amazon-connect-` prefix, thereby preventing cross-domain access.
-+ Action: Connect AI agents `wisdom:*` on all Connect Customer Connect AI agents resources with resource tag `'AmazonConnectEnabled':'True'` associated with your Connect Customer instance, except for the following actions which are explicitly denied:
+Each Connect Customer instance can be associated with only one domain at a time. However, you can link any domain to a Connect Customer instance. Cross-domain access within the same AWS account and Region is automatically enabled for all domains that start with the prefix `amazon-connect-`. To restrict cross-domain access, you can either use separate Connect Customer instances to logically partition your data or use Customer Profiles domain names within the same instance that do not start with the `amazon-connect-` prefix, thereby preventing cross-domain access.
++ Action: agent assist `wisdom:*` on all Connect Customer agent assist resources with resource tag `'AmazonConnectEnabled':'True'` associated with your Connect Customer instance, except for the following actions which are explicitly denied:
   + `wisdom:DeleteAssistant`
   + `wisdom:DeleteKnowledgeBase`
 + Action: Amazon CloudWatch Metrics `cloudwatch:PutMetricData` to publish Connect Customer usage metrics for an instance to your account.
@@ -62,7 +62,7 @@ Each Connect Customer instance can be associated with only one domain at a time.
   + `social-messaging:GetWhatsAppMessageMedia`
   + `social-messaging:GetLinkedWhatsAppBusinessAccountPhoneNumber`
 
-  The Social APIs are restricted to your phone number resources that are enabled for Connect Customer. A phone number is tagged with `AmazonConnectEnabled : True` when it is imported into an Connect Customer instance.
+  The Social APIs are restricted to your phone number resources that are enabled for Connect Customer. A phone number is tagged with `AmazonConnectEnabled : True` when it is imported into a Connect Customer instance.
 + Action: Connect Customer Messaging WhatsApp message template integration. Grants Connect Customer permission to call AWS End User Messaging Social APIs. An AWS account's WhatsApp business accounts may be listed. Additionally, the templates of a WhatsApp business account may be listed and a template's details may be retrieved as long as the WhatsApp business account is tagged `AmazonConnectEnabled: True`.
   + `social-messaging:ListLinkedWhatsAppBusinessAccounts`
   + `social-messaging:GetWhatsAppMessageTemplate`

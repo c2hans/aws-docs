@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-rules-submit-automated-evaluation.html
 ---
 
-# Create a rule in Contact Lens that submits an automated evaluation
+# Create a rule in conversational analytics that submits an automated evaluation
 <a name="contact-lens-rules-submit-automated-evaluation"></a>
 
-Contact Lens enables you to automatically fill and submit evaluations by using insights and metrics from conversational analytics.
+Conversational analytics enables you to automatically fill and submit evaluations by using insights and metrics from conversational analytics.
 
 ## Step 1: Configure automation on the evaluation form
 <a name="auto-eval-prereq-1"></a>
@@ -29,7 +29,7 @@ Following is an overview of the steps:
 <a name="auto-eval-prereq-2"></a>
 
 You can trigger automated evaluations with two types of rules:
-+ A **Conversational analytics** rule that automatically evaluates the contact after Contact Lens completes its analysis.
++ A **Conversational analytics** rule that automatically evaluates the contact after conversational analytics completes its analysis.
 + An **Evaluation forms** rule that can be used to trigger a situation-specific evaluation form as an outcome of a generic evaluation form. For example, if the answer to the evaluation question *Was the customer interested in purchasing a product* is *Yes*, then you can trigger another evaluation form measuring *Agent sales performance*.
 
 ### Trigger automated evaluations with a conversational analytics rule
@@ -37,7 +37,7 @@ You can trigger automated evaluations with two types of rules:
 
 This is the default rule type that is selected when you create a rule to submit an automated evaluation during form activation. You can also create such a rule by selecting **Create a rule**, **Conversational analytics** on the **Rules** page.
 
-1. Choose **A Contact Lens post-call analysis is available** or **A Contact Lens post-chat analysis is available** as the event source. These two options are highlighted in the following image.
+1. Choose **A conversational analytics post-call analysis is available** or **A conversational analytics post-chat analysis is available** as the event source. These two options are highlighted in the following image.
 ![The post-call analysis and post-chat analysis options.](http://docs.aws.amazon.com/connect/latest/adminguide/images/defined-conditions-evaluations.png)
 
 1. Define conditions to identity contacts to be automatically evaluated, and then choose **Next**.
@@ -70,7 +70,7 @@ You cannot apply rules to past, stored conversations.
 
 1. Go to the **Rules** page. Select **Create a rule**, **Evaluation forms**.
 
-1. Under **When**, select the event source as **A Contact Lens evaluation result is available**.
+1. Under **When**, select the event source as **A conversational analytics evaluation result is available**.
 
 1. Choose **Add condition** to trigger a situation-specific evaluation. For example:
    + A specific answer on another evaluation, shown in the following image.
@@ -91,7 +91,7 @@ You cannot apply rules to past, stored conversations.
 
 1.  **How do I identify automated evaluations?**
 
-    If an evaluation is automatically submitted, it is marked as "submitted by Contact Lens automation" on the **Contact details** page. If an automated evaluation is edited and re-submitted by an evaluator, the "submitted by" contains the name of the evaluator.
+    If an evaluation is automatically submitted, it is marked as "submitted by conversational analytics automation" on the **Contact details** page. If an automated evaluation is edited and re-submitted by an evaluator, the "submitted by" contains the name of the evaluator.
 
 1.  **Can I automatically evaluate a contact using multiple evaluation forms?**
 

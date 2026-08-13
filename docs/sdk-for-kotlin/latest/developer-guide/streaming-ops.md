@@ -12,7 +12,7 @@ In the AWS SDK for Kotlin, binary data (streams) are represented as a [ByteStrea
 
 Responses with a binary stream (such as the Amazon Simple Storage Service (Amazon S3) [GetObject](/AmazonS3/latest/API/API_GetObject.html) API operation) are handled differently from other methods. These methods take a lambda function that handles the response rather than returning the response directly. This limits the scope of the response to the function and simplifies lifetime management for both the caller and the SDK runtime.
 
-After the lambda function returns, any resources like the underlying HTTP connection are released. (The `ByteStream` should not be accessed after the lambda returns and should not be passed out of the closure.) The result of the call is whatever the lambda returns.
+After the lambda function returns, any resources like the underlying HTTP connection are released. (The [`ByteStream`](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime.content/-byte-stream/index.html) should not be accessed after the lambda returns and should not be passed out of the closure.) The result of the call is whatever the lambda returns.
 
 The following code example shows the [getObject](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/get-object.html) function receiving a lambda parameter, which handles the response.
 
@@ -36,7 +36,7 @@ val contentSize = s3Client.getObject(req) { resp ->
 println("wrote $contentSize bytes to $path")
 ```
 
-The `ByteStream` type has the following extensions for common ways of consuming it:
+The [`ByteStream`](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime.content/-byte-stream/index.html) type has the following extensions for common ways of consuming it:
 +  `ByteStream.writeToFile(file: File): Long`
 +  `ByteStream.writeToFile(path: Path): Long`
 +  `ByteStream.toByteArray(): ByteArray`
@@ -47,7 +47,7 @@ All of these are defined in the `aws.smithy.kotlin.runtime.content` package.
 ## Streaming requests
 <a name="streaming-requests"></a>
 
-To supply a `ByteStream`, there are also several convenience methods, including the following:
+To supply a [`ByteStream`](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime.content/-byte-stream/index.html), there are also several convenience methods, including the following:
 +  `ByteStream.fromFile(file: File)`
 +  `File.asByteStream(): ByteStream`
 +  `Path.asByteStream(): ByteStream`
@@ -56,7 +56,7 @@ To supply a `ByteStream`, there are also several convenience methods, including 
 
 All of these are defined in the `aws.smithy.kotlin.runtime.content` package.
 
-The following code example shows the use of `ByteStream` convenience methods that provide the body property in the creation of a [PutObjectRequest](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3.model/-put-object-request/index.html):
+The following code example shows the use of [`ByteStream`](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime.content/-byte-stream/index.html) convenience methods that provide the body property in the creation of a [PutObjectRequest](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3.model/-put-object-request/index.html):
 
 ```
 val req = PutObjectRequest {

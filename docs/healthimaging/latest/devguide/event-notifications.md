@@ -22,31 +22,31 @@ The following table lists all HealthImaging events sent to EventBridge for proce
   <tr><th>HealthImaging event type</th><th>State</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2"> Data store events </td></tr>
-  <tr><td>     Data Store Creating</td><td>CREATING</td></tr>
-  <tr><td>     Data Store Creation Failed</td><td>CREATE\_FAILED</td></tr>
-  <tr><td>     Data Store Created</td><td>ACTIVE</td></tr>
-  <tr><td>     Data Store Deleting</td><td>DELETING</td></tr>
-  <tr><td>     Data Store Deleted</td><td>DELETED</td></tr>
-  <tr><td colspan="2">     For more information, see [datastoreStatus](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_DatastoreProperties.html#healthimaging-Type-DatastoreProperties-datastoreStatus) in the *AWS HealthImaging API Reference.*</td></tr>
-  <tr><td colspan="2"> Import job events </td></tr>
-  <tr><td>     Import Job Submitted</td><td>SUBMITTED</td></tr>
-  <tr><td>     Import Job In Progress</td><td>IN\_PROGRESS</td></tr>
-  <tr><td>     Import Job Completed</td><td>COMPLETED</td></tr>
-  <tr><td>     Import Job Failed</td><td>FAILED</td></tr>
-  <tr><td colspan="2">     For more information, see [jobStatus](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_DICOMImportJobProperties.html#healthimaging-Type-DICOMImportJobProperties-jobStatus) in the *AWS HealthImaging API Reference.*</td></tr>
-  <tr><td colspan="2"> Image set events </td></tr>
-  <tr><td>     Image Set Created</td><td>CREATED</td></tr>
-  <tr><td>     Image Set Copying</td><td>COPYING</td></tr>
-  <tr><td>     Image Set Copying With Read Only Access</td><td>COPYING\_WITH\_READ\_ONLY\_ACCESS</td></tr>
-  <tr><td>     Image Set Copied</td><td>COPIED</td></tr>
-  <tr><td>     Image Set Copy Failed</td><td>COPY\_FAILED</td></tr>
-  <tr><td>     Image Set Updating</td><td>UPDATING</td></tr>
-  <tr><td>     Image Set Updated</td><td>UPDATED</td></tr>
-  <tr><td>     Image Set Update Failed</td><td>UPDATE\_FAILED</td></tr>
-  <tr><td>     Image Set Deleting</td><td>DELETING</td></tr>
-  <tr><td>     Image Set Deleted</td><td>DELETED</td></tr>
-  <tr><td colspan="2">     For more information, see [ImageSetWorkflowStatus](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ImageSetProperties.html#healthimaging-Type-ImageSetProperties-ImageSetWorkflowStatus) in the *AWS HealthImaging API Reference.*</td></tr>
+  <tr><td colspan="2"> <b>Data store events</b> </td></tr>
+  <tr><td>     Data Store Creating</td><td><code>CREATING</code></td></tr>
+  <tr><td>     Data Store Creation Failed</td><td><code>CREATE_FAILED</code></td></tr>
+  <tr><td>     Data Store Created</td><td><code>ACTIVE</code></td></tr>
+  <tr><td>     Data Store Deleting</td><td><code>DELETING</code></td></tr>
+  <tr><td>     Data Store Deleted</td><td><code>DELETED</code></td></tr>
+  <tr><td colspan="2">     For more information, see <a href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_DatastoreProperties.html#healthimaging-Type-DatastoreProperties-datastoreStatus">datastoreStatus</a> in the <i>AWS HealthImaging API Reference.</i></td></tr>
+  <tr><td colspan="2"> <b>Import job events</b> </td></tr>
+  <tr><td>     Import Job Submitted</td><td><code>SUBMITTED</code></td></tr>
+  <tr><td>     Import Job In Progress</td><td><code>IN_PROGRESS</code></td></tr>
+  <tr><td>     Import Job Completed</td><td><code>COMPLETED</code></td></tr>
+  <tr><td>     Import Job Failed</td><td><code>FAILED</code></td></tr>
+  <tr><td colspan="2">     For more information, see <a href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_DICOMImportJobProperties.html#healthimaging-Type-DICOMImportJobProperties-jobStatus">jobStatus</a> in the <i>AWS HealthImaging API Reference.</i></td></tr>
+  <tr><td colspan="2"> <b>Image set events</b> </td></tr>
+  <tr><td>     Image Set Created</td><td><code>CREATED</code></td></tr>
+  <tr><td>     Image Set Copying</td><td><code>COPYING</code></td></tr>
+  <tr><td>     Image Set Copying With Read Only Access</td><td><code>COPYING_WITH_READ_ONLY_ACCESS</code></td></tr>
+  <tr><td>     Image Set Copied</td><td><code>COPIED</code></td></tr>
+  <tr><td>     Image Set Copy Failed</td><td><code>COPY_FAILED</code></td></tr>
+  <tr><td>     Image Set Updating</td><td><code>UPDATING</code></td></tr>
+  <tr><td>     Image Set Updated</td><td><code>UPDATED</code></td></tr>
+  <tr><td>     Image Set Update Failed</td><td><code>UPDATE_FAILED</code></td></tr>
+  <tr><td>     Image Set Deleting</td><td><code>DELETING</code></td></tr>
+  <tr><td>     Image Set Deleted</td><td><code>DELETED</code></td></tr>
+  <tr><td colspan="2">     For more information, see <a href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ImageSetProperties.html#healthimaging-Type-ImageSetProperties-ImageSetWorkflowStatus">ImageSetWorkflowStatus</a> in the <i>AWS HealthImaging API Reference.</i></td></tr>
 </tbody>
 </table>
 

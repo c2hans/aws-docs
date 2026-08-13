@@ -127,7 +127,7 @@ This procedure puts your cluster into the `MODIFY_IN_PROGRESS` state. After migr
 #### [ AWS CloudHSM API ]
 
 **To change the HSM type (AWS CloudHSM API)**
-+ Send a [https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ModifyCluster.html](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ModifyCluster.html) request. Specify the cluster ID and the desired HSM type for the cluster.
++ Send a [ModifyCluster](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ModifyCluster.html) request. Specify the cluster ID and the desired HSM type for the cluster.
 
 This procedure puts your cluster into the `MODIFY_IN_PROGRESS` state. After migration, your cluster returns to the `ACTIVE` state.
 
@@ -206,7 +206,7 @@ This procedure puts your cluster into the `ROLLBACK_IN_PROGRESS` state. After ro
 #### [ AWS CloudHSM API ]
 
 **To roll back your HSM type (AWS CloudHSM API)**
-+ Send a [https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ModifyCluster.html](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ModifyCluster.html) request. Specify the cluster ID and the original HSM type for the cluster.
++ Send a [ModifyCluster](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ModifyCluster.html) request. Specify the cluster ID and the original HSM type for the cluster.
 
 This procedure puts your cluster into the `ROLLBACK_IN_PROGRESS` state. After rollback, your cluster returns to the `ACTIVE` state.
 

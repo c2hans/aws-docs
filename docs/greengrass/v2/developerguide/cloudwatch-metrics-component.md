@@ -635,7 +635,7 @@ Beginning with component version v3.0.0, you can optionally configure this compo
 
  `request`
 The metric in this message.
-The request object contains the metric data to publish to CloudWatch. The metric values must meet the specifications of the [https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricData.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricData.html) operation.
+The request object contains the metric data to publish to CloudWatch. The metric values must meet the specifications of the [`PutMetricData`](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricData.html) operation.
 Type: `object` that contains the following information:
  `namespace`
 The user-defined namespace for the metric data in this request. CloudWatch uses namespaces as containers for metric data points.

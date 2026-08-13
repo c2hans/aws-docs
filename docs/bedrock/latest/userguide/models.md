@@ -22,5 +22,5 @@ Amazon Bedrock supports a wide catalog of foundation models from leading provide
 When picking a model, consider:
 + **Capabilities** – modalities (text, image, embeddings), context window, and tool use support.
 + **Endpoint and API** – whether the model is on `bedrock-runtime`, `bedrock-mantle`, or both, and which APIs it supports. See [Endpoints supported by Amazon Bedrock](endpoints.md).
-+ **Region** – whether the model is available in the AWS Regions you operate in, or via a cross-Region inference profile.
++ **Region** – whether the model is available in the AWS Regions you operate in, or through a cross-Region inference profile.
 + **Cost and throughput** – on-demand pricing vs. [Increase model invocation capacity with Provisioned Throughput in Amazon Bedrock](prov-throughput.md).

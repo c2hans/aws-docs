@@ -42,7 +42,7 @@ This command shows the order of upcoming service jobs in your queue.
 ## Get detailed service job information
 <a name="describe-service-job"></a>
 
-Use the [https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeServiceJob.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeServiceJob.html) operation to get comprehensive information about a specific service job, including its current status, service resource identifiers, and detailed attempt information.
+Use the [`DescribeServiceJob`](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeServiceJob.html) operation to get comprehensive information about a specific service job, including its current status, service resource identifiers, and detailed attempt information.
 
 View detailed information about a specific job:
 

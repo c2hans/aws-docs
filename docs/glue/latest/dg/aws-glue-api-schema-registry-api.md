@@ -27,10 +27,10 @@ The Schema registry API describes the data types and API related to working with
 A wrapper structure that may contain the registry name and Amazon Resource Name (ARN).
 
 **Fields**
-+ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   Name of the registry. Used only for lookup. One of `RegistryArn` or `RegistryName` has to be provided.
-+ `RegistryArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `RegistryArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   Arn of the registry to be updated. One of `RegistryArn` or `RegistryName` has to be provided.
 
@@ -40,10 +40,10 @@ A wrapper structure that may contain the registry name and Amazon Resource Name 
 A structure containing the details for a registry.
 
 **Fields**
-+ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   The name of the registry.
-+ `RegistryArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `RegistryArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource Name (ARN) of the registry.
 + `Description` – Description string, not more than 2048 bytes long, matching the [URI address multi-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-uri).
@@ -65,7 +65,7 @@ A structure containing the details for a registry.
 A structure containing metadata information for a schema version.
 
 **Fields**
-+ `MetadataValue` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #14](aws-glue-api-common.md#regex_14).
++ `MetadataValue` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #19](aws-glue-api-common.md#regex_19).
 
   The metadata key's corresponding value.
 + `CreatedTime` – UTF-8 string.
@@ -81,7 +81,7 @@ A structure containing metadata information for a schema version.
 A structure containing other metadata for a schema version belonging to the same metadata key.
 
 **Fields**
-+ `MetadataValue` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #14](aws-glue-api-common.md#regex_14).
++ `MetadataValue` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #19](aws-glue-api-common.md#regex_19).
 
   The metadata key's corresponding value for the other metadata belonging to the same metadata key.
 + `CreatedTime` – UTF-8 string.
@@ -94,13 +94,13 @@ A structure containing other metadata for a schema version belonging to the same
 An object that contains minimal details for a schema.
 
 **Fields**
-+ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   the name of the registry where the schema resides.
-+ `SchemaName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `SchemaName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   The name of the schema.
-+ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource Name (ARN) for the schema.
 + `Description` – Description string, not more than 2048 bytes long, matching the [URI address multi-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-uri).
@@ -122,10 +122,10 @@ An object that contains minimal details for a schema.
 An object containing the details about a schema version.
 
 **Fields**
-+ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource Name (ARN) of the schema.
-+ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
++ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #42](aws-glue-api-common.md#regex_42).
 
   The unique identifier of the schema version.
 + `VersionNumber` – Number (long), not less than 1 or more than 100000.
@@ -144,10 +144,10 @@ An object containing the details about a schema version.
 A structure containing a key value pair for metadata.
 
 **Fields**
-+ `MetadataKey` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #14](aws-glue-api-common.md#regex_14).
++ `MetadataKey` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #19](aws-glue-api-common.md#regex_19).
 
   A metadata key.
-+ `MetadataValue` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #14](aws-glue-api-common.md#regex_14).
++ `MetadataValue` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #19](aws-glue-api-common.md#regex_19).
 
   A metadata key's corresponding value.
 
@@ -196,13 +196,13 @@ A structure containing the schema version information.
 The unique ID of the schema in the AWS Glue schema registry.
 
 **Fields**
-+ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource Name (ARN) of the schema. One of `SchemaArn` or `SchemaName` has to be provided.
-+ `SchemaName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `SchemaName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   The name of the schema. One of `SchemaArn` or `SchemaName` has to be provided.
-+ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   The name of the schema registry that contains the schema.
 
@@ -235,7 +235,7 @@ The unique ID of the schema in the AWS Glue schema registry.
 Creates a new registry which may be used to hold a collection of schemas.
 
 **Request**
-+ `RegistryName` – *Required:* UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `RegistryName` – *Required:* UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   Name of the registry to be created of max length of 255, and may only contain letters, numbers, hyphen, underscore, dollar sign, or hash mark. No whitespace.
 + `Description` – Description string, not more than 2048 bytes long, matching the [URI address multi-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-uri).
@@ -250,10 +250,10 @@ Creates a new registry which may be used to hold a collection of schemas.
   AWS tags that contain a key value pair and may be searched by console, command line, or API.
 
 **Response**
-+ `RegistryArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `RegistryArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource Name (ARN) of the newly created registry.
-+ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   The name of the registry.
 + `Description` – Description string, not more than 2048 bytes long, matching the [URI address multi-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-uri).
@@ -273,7 +273,6 @@ Creates a new registry which may be used to hold a collection of schemas.
 + `AlreadyExistsException`
 + `ResourceNumberLimitExceededException`
 + `ConcurrentModificationException`
-+ `ThrottlingException`
 + `InternalServiceException`
 
 ## CreateSchema action (Python: create\_schema)
@@ -289,7 +288,7 @@ When this API is called without a `RegistryId`, this will create an entry for a 
 + `RegistryId` – A [RegistryId](#aws-glue-api-schema-registry-api-RegistryId) object.
 
    This is a wrapper shape to contain the registry identity fields. If this is not provided, the default registry will be used. The ARN format for the same will be: `arn:aws:glue:us-east-2:<customer id>:registry/default-registry:random-5-letter-id`.
-+ `SchemaName` – *Required:* UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `SchemaName` – *Required:* UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   Name of the schema to be created of max length of 255, and may only contain letters, numbers, hyphen, underscore, dollar sign, or hash mark. No whitespace.
 + `DataFormat` – *Required:* UTF-8 string (valid values: `AVRO` \| `JSON` \| `PROTOBUF`).
@@ -316,21 +315,21 @@ When this API is called without a `RegistryId`, this will create an entry for a 
   Each value is a UTF-8 string, not more than 256 bytes long.
 
   AWS tags that contain a key value pair and may be searched by console, command line, or API. If specified, follows the AWS tags-on-create pattern.
-+ `SchemaDefinition` – UTF-8 string, not less than 1 or more than 170000 bytes long, matching the [Custom string pattern #13](aws-glue-api-common.md#regex_13).
++ `SchemaDefinition` – UTF-8 string, not less than 1 or more than 170000 bytes long, matching the [Custom string pattern #18](aws-glue-api-common.md#regex_18).
 
   The schema definition using the `DataFormat` setting for `SchemaName`.
 
 **Response**
-+ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   The name of the registry.
-+ `RegistryArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `RegistryArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource Name (ARN) of the registry.
-+ `SchemaName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `SchemaName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   The name of the schema.
-+ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource Name (ARN) of the schema.
 + `Description` – Description string, not more than 2048 bytes long, matching the [URI address multi-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-uri).
@@ -361,7 +360,7 @@ When this API is called without a `RegistryId`, this will create an entry for a 
   Each value is a UTF-8 string, not more than 256 bytes long.
 
   The tags for the schema.
-+ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
++ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #42](aws-glue-api-common.md#regex_42).
 
   The unique identifier of the first schema version.
 + `SchemaVersionStatus` – UTF-8 string (valid values: `AVAILABLE` \| `PENDING` \| `FAILURE` \| `DELETING`).
@@ -375,7 +374,6 @@ When this API is called without a `RegistryId`, this will create an entry for a 
 + `AlreadyExistsException`
 + `ResourceNumberLimitExceededException`
 + `ConcurrentModificationException`
-+ `ThrottlingException`
 + `InternalServiceException`
 
 ## GetSchema action (Python: get\_schema)
@@ -391,16 +389,16 @@ Describes the specified schema in detail.
   + SchemaId$SchemaName: The name of the schema. Either `SchemaArn` or `SchemaName` and `RegistryName` has to be provided.
 
 **Response**
-+ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   The name of the registry.
-+ `RegistryArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `RegistryArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource Name (ARN) of the registry.
-+ `SchemaName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `SchemaName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   The name of the schema.
-+ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource Name (ARN) of the schema.
 + `Description` – Description string, not more than 2048 bytes long, matching the [URI address multi-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-uri).
@@ -435,7 +433,6 @@ Describes the specified schema in detail.
 + `InvalidInputException`
 + `AccessDeniedException`
 + `EntityNotFoundException`
-+ `ThrottlingException`
 + `InternalServiceException`
 
 ## ListSchemaVersions action (Python: list\_schema\_versions)
@@ -468,7 +465,6 @@ Returns a list of schema versions that you have created, with minimal informatio
 + `InvalidInputException`
 + `AccessDeniedException`
 + `EntityNotFoundException`
-+ `ThrottlingException`
 + `InternalServiceException`
 
 ## GetSchemaVersion action (Python: get\_schema\_version)
@@ -482,7 +478,7 @@ Get the specified schema by its unique ID assigned when a version of the schema 
   This is a wrapper structure to contain schema identity fields. The structure contains:
   + SchemaId$SchemaArn: The Amazon Resource Name (ARN) of the schema. Either `SchemaArn` or `SchemaName` and `RegistryName` has to be provided.
   + SchemaId$SchemaName: The name of the schema. Either `SchemaArn` or `SchemaName` and `RegistryName` has to be provided.
-+ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
++ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #42](aws-glue-api-common.md#regex_42).
 
   The `SchemaVersionId` of the schema version. This field is required for fetching by schema ID. Either this or the `SchemaId` wrapper has to be provided.
 + `SchemaVersionNumber` – A [SchemaVersionNumber](#aws-glue-api-schema-registry-api-SchemaVersionNumber) object.
@@ -490,16 +486,16 @@ Get the specified schema by its unique ID assigned when a version of the schema 
   The version number of the schema.
 
 **Response**
-+ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
++ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #42](aws-glue-api-common.md#regex_42).
 
   The `SchemaVersionId` of the schema version.
-+ `SchemaDefinition` – UTF-8 string, not less than 1 or more than 170000 bytes long, matching the [Custom string pattern #13](aws-glue-api-common.md#regex_13).
++ `SchemaDefinition` – UTF-8 string, not less than 1 or more than 170000 bytes long, matching the [Custom string pattern #18](aws-glue-api-common.md#regex_18).
 
   The schema definition for the schema ID.
 + `DataFormat` – UTF-8 string (valid values: `AVRO` \| `JSON` \| `PROTOBUF`).
 
   The data format of the schema definition. Currently `AVRO`, `JSON` and `PROTOBUF` are supported.
-+ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource Name (ARN) of the schema.
 + `VersionNumber` – Number (long), not less than 1 or more than 100000.
@@ -516,7 +512,6 @@ Get the specified schema by its unique ID assigned when a version of the schema 
 + `InvalidInputException`
 + `AccessDeniedException`
 + `EntityNotFoundException`
-+ `ThrottlingException`
 + `InternalServiceException`
 
 ## GetSchemaVersionsDiff action (Python: get\_schema\_versions\_diff)
@@ -543,7 +538,7 @@ This API allows you to compare two schema versions between two schema definition
   Refers to `SYNTAX_DIFF`, which is the currently supported diff type.
 
 **Response**
-+ `Diff` – UTF-8 string, not less than 1 or more than 340000 bytes long, matching the [Custom string pattern #13](aws-glue-api-common.md#regex_13).
++ `Diff` – UTF-8 string, not less than 1 or more than 340000 bytes long, matching the [Custom string pattern #18](aws-glue-api-common.md#regex_18).
 
   The difference between schemas as a string in JsonPatch format.
 
@@ -551,7 +546,6 @@ This API allows you to compare two schema versions between two schema definition
 + `InvalidInputException`
 + `EntityNotFoundException`
 + `AccessDeniedException`
-+ `ThrottlingException`
 + `InternalServiceException`
 
 ## ListRegistries action (Python: list\_registries)
@@ -578,7 +572,6 @@ Returns a list of registries that you have created, with minimal registry inform
 **Errors**
 + `InvalidInputException`
 + `AccessDeniedException`
-+ `ThrottlingException`
 + `InternalServiceException`
 
 ## ListSchemas action (Python: list\_schemas)
@@ -611,7 +604,6 @@ When the `RegistryId` is not provided, all the schemas across registries will be
 + `InvalidInputException`
 + `AccessDeniedException`
 + `EntityNotFoundException`
-+ `ThrottlingException`
 + `InternalServiceException`
 
 ## RegisterSchemaVersion action (Python: register\_schema\_version)
@@ -629,12 +621,12 @@ If the same schema definition is already stored in Schema Registry as a version,
   This is a wrapper structure to contain schema identity fields. The structure contains:
   + SchemaId$SchemaArn: The Amazon Resource Name (ARN) of the schema. Either `SchemaArn` or `SchemaName` and `RegistryName` has to be provided.
   + SchemaId$SchemaName: The name of the schema. Either `SchemaArn` or `SchemaName` and `RegistryName` has to be provided.
-+ `SchemaDefinition` – *Required:* UTF-8 string, not less than 1 or more than 170000 bytes long, matching the [Custom string pattern #13](aws-glue-api-common.md#regex_13).
++ `SchemaDefinition` – *Required:* UTF-8 string, not less than 1 or more than 170000 bytes long, matching the [Custom string pattern #18](aws-glue-api-common.md#regex_18).
 
   The schema definition using the `DataFormat` setting for the `SchemaName`.
 
 **Response**
-+ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
++ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #42](aws-glue-api-common.md#regex_42).
 
   The unique ID that represents the version of this schema.
 + `VersionNumber` – Number (long), not less than 1 or more than 100000.
@@ -649,7 +641,6 @@ If the same schema definition is already stored in Schema Registry as a version,
 + `AccessDeniedException`
 + `EntityNotFoundException`
 + `ResourceNumberLimitExceededException`
-+ `ThrottlingException`
 + `ConcurrentModificationException`
 + `InternalServiceException`
 
@@ -681,13 +672,13 @@ This update will happen only if the schema is in the AVAILABLE state.
   The new description for the schema.
 
 **Response**
-+ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource Name (ARN) of the schema.
-+ `SchemaName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `SchemaName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   The name of the schema.
-+ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   The name of the registry that contains the schema.
 
@@ -696,7 +687,6 @@ This update will happen only if the schema is in the AVAILABLE state.
 + `AccessDeniedException`
 + `EntityNotFoundException`
 + `ConcurrentModificationException`
-+ `ThrottlingException`
 + `InternalServiceException`
 
 ## CheckSchemaVersionValidity action (Python: check\_schema\_version\_validity)
@@ -708,7 +698,7 @@ Validates the supplied schema. This call has no side effects, it simply validate
 + `DataFormat` – *Required:* UTF-8 string (valid values: `AVRO` \| `JSON` \| `PROTOBUF`).
 
   The data format of the schema definition. Currently `AVRO`, `JSON` and `PROTOBUF` are supported.
-+ `SchemaDefinition` – *Required:* UTF-8 string, not less than 1 or more than 170000 bytes long, matching the [Custom string pattern #13](aws-glue-api-common.md#regex_13).
++ `SchemaDefinition` – *Required:* UTF-8 string, not less than 1 or more than 170000 bytes long, matching the [Custom string pattern #18](aws-glue-api-common.md#regex_18).
 
   The definition of the schema that has to be validated.
 
@@ -723,7 +713,6 @@ Validates the supplied schema. This call has no side effects, it simply validate
 **Errors**
 + `InvalidInputException`
 + `AccessDeniedException`
-+ `ThrottlingException`
 + `InternalServiceException`
 
 ## UpdateRegistry action (Python: update\_registry)
@@ -740,10 +729,10 @@ Updates an existing registry which is used to hold a collection of schemas. The 
   A description of the registry. If description is not provided, this field will not be updated.
 
 **Response**
-+ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   The name of the updated registry.
-+ `RegistryArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `RegistryArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource name (ARN) of the updated registry.
 
@@ -752,7 +741,6 @@ Updates an existing registry which is used to hold a collection of schemas. The 
 + `AccessDeniedException`
 + `EntityNotFoundException`
 + `ConcurrentModificationException`
-+ `ThrottlingException`
 + `InternalServiceException`
 
 ## GetSchemaByDefinition action (Python: get\_schema\_by\_definition)
@@ -766,15 +754,15 @@ Retrieves a schema by the `SchemaDefinition`. The schema definition is sent to t
   This is a wrapper structure to contain schema identity fields. The structure contains:
   + SchemaId$SchemaArn: The Amazon Resource Name (ARN) of the schema. One of `SchemaArn` or `SchemaName` has to be provided.
   + SchemaId$SchemaName: The name of the schema. One of `SchemaArn` or `SchemaName` has to be provided.
-+ `SchemaDefinition` – *Required:* UTF-8 string, not less than 1 or more than 170000 bytes long, matching the [Custom string pattern #13](aws-glue-api-common.md#regex_13).
++ `SchemaDefinition` – *Required:* UTF-8 string, not less than 1 or more than 170000 bytes long, matching the [Custom string pattern #18](aws-glue-api-common.md#regex_18).
 
   The definition of the schema for which schema details are required.
 
 **Response**
-+ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
++ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #42](aws-glue-api-common.md#regex_42).
 
   The schema ID of the schema version.
-+ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource Name (ARN) of the schema.
 + `DataFormat` – UTF-8 string (valid values: `AVRO` \| `JSON` \| `PROTOBUF`).
@@ -791,7 +779,6 @@ Retrieves a schema by the `SchemaDefinition`. The schema definition is sent to t
 + `InvalidInputException`
 + `AccessDeniedException`
 + `EntityNotFoundException`
-+ `ThrottlingException`
 + `InternalServiceException`
 
 ## GetRegistry action (Python: get\_registry)
@@ -805,10 +792,10 @@ Describes the specified registry in detail.
   This is a wrapper structure that may contain the registry name and Amazon Resource Name (ARN).
 
 **Response**
-+ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   The name of the registry.
-+ `RegistryArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `RegistryArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource Name (ARN) of the registry.
 + `Description` – Description string, not more than 2048 bytes long, matching the [URI address multi-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-uri).
@@ -828,7 +815,6 @@ Describes the specified registry in detail.
 + `InvalidInputException`
 + `AccessDeniedException`
 + `EntityNotFoundException`
-+ `ThrottlingException`
 + `InternalServiceException`
 
 ## PutSchemaVersionMetadata action (Python: put\_schema\_version\_metadata)
@@ -843,7 +829,7 @@ Puts the metadata key value pair for a specified schema version ID. A maximum of
 + `SchemaVersionNumber` – A [SchemaVersionNumber](#aws-glue-api-schema-registry-api-SchemaVersionNumber) object.
 
   The version number of the schema.
-+ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
++ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #42](aws-glue-api-common.md#regex_42).
 
   The unique version ID of the schema version.
 + `MetadataKeyValue` – *Required:* A [MetadataKeyValuePair](#aws-glue-api-schema-registry-api-MetadataKeyValuePair) object.
@@ -851,13 +837,13 @@ Puts the metadata key value pair for a specified schema version ID. A maximum of
   The metadata key's corresponding value.
 
 **Response**
-+ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource Name (ARN) for the schema.
-+ `SchemaName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `SchemaName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   The name for the schema.
-+ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   The name for the registry.
 + `LatestVersion` – Boolean.
@@ -866,13 +852,13 @@ Puts the metadata key value pair for a specified schema version ID. A maximum of
 + `VersionNumber` – Number (long), not less than 1 or more than 100000.
 
   The version number of the schema.
-+ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
++ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #42](aws-glue-api-common.md#regex_42).
 
   The unique version ID of the schema version.
-+ `MetadataKey` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #14](aws-glue-api-common.md#regex_14).
++ `MetadataKey` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #19](aws-glue-api-common.md#regex_19).
 
   The metadata key.
-+ `MetadataValue` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #14](aws-glue-api-common.md#regex_14).
++ `MetadataValue` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #19](aws-glue-api-common.md#regex_19).
 
   The value of the metadata key.
 
@@ -881,7 +867,6 @@ Puts the metadata key value pair for a specified schema version ID. A maximum of
 + `AccessDeniedException`
 + `AlreadyExistsException`
 + `EntityNotFoundException`
-+ `ThrottlingException`
 + `ResourceNumberLimitExceededException`
 
 ## QuerySchemaVersionMetadata action (Python: query\_schema\_version\_metadata)
@@ -896,7 +881,7 @@ Queries for the schema version metadata information.
 + `SchemaVersionNumber` – A [SchemaVersionNumber](#aws-glue-api-schema-registry-api-SchemaVersionNumber) object.
 
   The version number of the schema.
-+ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
++ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #42](aws-glue-api-common.md#regex_42).
 
   The unique version ID of the schema version.
 + `MetadataList` – An array of [MetadataKeyValuePair](#aws-glue-api-schema-registry-api-MetadataKeyValuePair) objects.
@@ -912,12 +897,12 @@ Queries for the schema version metadata information.
 **Response**
 + `MetadataInfoMap` – A map array of key-value pairs.
 
-  Each key is a UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #14](aws-glue-api-common.md#regex_14).
+  Each key is a UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #19](aws-glue-api-common.md#regex_19).
 
   Each value is a A [MetadataInfo](#aws-glue-api-schema-registry-api-MetadataInfo) object.
 
   A map of a metadata key and associated values.
-+ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
++ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #42](aws-glue-api-common.md#regex_42).
 
   The unique version ID of the schema version.
 + `NextToken` – UTF-8 string.
@@ -927,7 +912,6 @@ Queries for the schema version metadata information.
 **Errors**
 + `InvalidInputException`
 + `AccessDeniedException`
-+ `ThrottlingException`
 + `EntityNotFoundException`
 
 ## RemoveSchemaVersionMetadata action (Python: remove\_schema\_version\_metadata)
@@ -942,7 +926,7 @@ Removes a key value pair from the schema version metadata for the specified sche
 + `SchemaVersionNumber` – A [SchemaVersionNumber](#aws-glue-api-schema-registry-api-SchemaVersionNumber) object.
 
   The version number of the schema.
-+ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
++ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #42](aws-glue-api-common.md#regex_42).
 
   The unique version ID of the schema version.
 + `MetadataKeyValue` – *Required:* A [MetadataKeyValuePair](#aws-glue-api-schema-registry-api-MetadataKeyValuePair) object.
@@ -950,13 +934,13 @@ Removes a key value pair from the schema version metadata for the specified sche
   The value of the metadata key.
 
 **Response**
-+ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource Name (ARN) of the schema.
-+ `SchemaName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `SchemaName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   The name of the schema.
-+ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   The name of the registry.
 + `LatestVersion` – Boolean.
@@ -965,20 +949,19 @@ Removes a key value pair from the schema version metadata for the specified sche
 + `VersionNumber` – Number (long), not less than 1 or more than 100000.
 
   The version number of the schema.
-+ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
++ `SchemaVersionId` – UTF-8 string, not less than 36 or more than 36 bytes long, matching the [Custom string pattern #42](aws-glue-api-common.md#regex_42).
 
   The version ID for the schema version.
-+ `MetadataKey` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #14](aws-glue-api-common.md#regex_14).
++ `MetadataKey` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #19](aws-glue-api-common.md#regex_19).
 
   The metadata key.
-+ `MetadataValue` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #14](aws-glue-api-common.md#regex_14).
++ `MetadataValue` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #19](aws-glue-api-common.md#regex_19).
 
   The value of the metadata key.
 
 **Errors**
 + `InvalidInputException`
 + `AccessDeniedException`
-+ `ThrottlingException`
 + `EntityNotFoundException`
 
 ## DeleteRegistry action (Python: delete\_registry)
@@ -992,10 +975,10 @@ Delete the entire registry including schema and all of its versions. To get the 
   This is a wrapper structure that may contain the registry name and Amazon Resource Name (ARN).
 
 **Response**
-+ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `RegistryName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   The name of the registry being deleted.
-+ `RegistryArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `RegistryArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource Name (ARN) of the registry being deleted.
 + `Status` – UTF-8 string (valid values: `AVAILABLE` \| `DELETING`).
@@ -1006,7 +989,6 @@ Delete the entire registry including schema and all of its versions. To get the 
 + `InvalidInputException`
 + `EntityNotFoundException`
 + `AccessDeniedException`
-+ `ThrottlingException`
 + `ConcurrentModificationException`
 
 ## DeleteSchema action (Python: delete\_schema)
@@ -1020,10 +1002,10 @@ Deletes the entire schema set, including the schema set and all of its versions.
   This is a wrapper structure that may contain the schema name and Amazon Resource Name (ARN).
 
 **Response**
-+ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `SchemaArn` – UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource Name (ARN) of the schema being deleted.
-+ `SchemaName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #46](aws-glue-api-common.md#regex_46).
++ `SchemaName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #43](aws-glue-api-common.md#regex_43).
 
   The name of the schema being deleted.
 + `Status` – UTF-8 string (valid values: `AVAILABLE` \| `PENDING` \| `DELETING`).
@@ -1034,7 +1016,6 @@ Deletes the entire schema set, including the schema set and all of its versions.
 + `InvalidInputException`
 + `EntityNotFoundException`
 + `AccessDeniedException`
-+ `ThrottlingException`
 + `ConcurrentModificationException`
 
 ## DeleteSchemaVersions action (Python: delete\_schema\_versions)
@@ -1052,7 +1033,7 @@ If the compatibility mode forbids deleting of a version that is necessary, such 
 + `SchemaId` – *Required:* A [SchemaId](#aws-glue-api-schema-registry-api-SchemaId) object.
 
   This is a wrapper structure that may contain the schema name and Amazon Resource Name (ARN).
-+ `Versions` – *Required:* UTF-8 string, not less than 1 or more than 100000 bytes long, matching the [Custom string pattern #15](aws-glue-api-common.md#regex_15).
++ `Versions` – *Required:* UTF-8 string, not less than 1 or more than 100000 bytes long, matching the [Custom string pattern #20](aws-glue-api-common.md#regex_20).
 
   A version range may be supplied which may be of the format:
   + a single version number, 5
@@ -1067,5 +1048,4 @@ If the compatibility mode forbids deleting of a version that is necessary, such 
 + `InvalidInputException`
 + `EntityNotFoundException`
 + `AccessDeniedException`
-+ `ThrottlingException`
 + `ConcurrentModificationException`

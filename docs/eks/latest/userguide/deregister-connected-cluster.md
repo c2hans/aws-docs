@@ -21,7 +21,7 @@ This process involves two steps: Deregistering the cluster with Amazon EKS and u
 ## Deregister the Kubernetes cluster
 <a name="deregister-connected-cluster-eks"></a>
 
-To deregister a cluster from Amazon EKS connector, you can use one of these tools:
+To deregister a cluster from Amazon EKS Connector, you can use one of these tools:
 +  [AWS CLI](#awscli_deregister_cluster_connect)
 +  [AWS Management Console](#console_deregister_cluster_connect)
 +  [`eksctl`](#eksctl_deregister_cluster_connect)
@@ -69,10 +69,10 @@ To deregister a cluster from Amazon EKS connector, you can use one of these tool
 <a name="deregister-connected-cluster-k8s"></a>
 
 To uninstall the `eks-connector` agent, use one of the following tools:
-+  [helm](#helm_agent_cluster_deregister)
-+  [yaml](#yaml_agent_cluster_deregister)
++  [Helm](#helm_agent_cluster_deregister)
++  [YAML](#yaml_agent_cluster_deregister)
 
-### helm
+### Helm
 <a name="helm_agent_cluster_deregister"></a>
 
 Run the following command to uninstall the agent.
@@ -81,7 +81,7 @@ Run the following command to uninstall the agent.
 helm -n eks-connector uninstall eks-connector
 ```
 
-### yaml
+### YAML
 <a name="yaml_agent_cluster_deregister"></a>
 
 1. Delete the Amazon EKS Connector YAML file from your Kubernetes cluster.

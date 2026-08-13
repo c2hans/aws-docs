@@ -54,6 +54,14 @@ Length Constraints: Minimum length of 32. Maximum length of 1011.
 Pattern: `^arn:aws:devicefarm:.+`
 Required: No
 
+ ** insightsTypes **   <a name="devicefarm-Type-ScheduleRunConfiguration-insightsTypes"></a>
+The types of insights to generate for a run. Specify one or more values to opt in to insights generation when scheduling a run.
+Insights are currently supported for custom mode runs with Instrumentation, Appium Java TestNG, and XCTest UI test types.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 5 items.
+Valid Values: `TEST_REPORT`
+Required: No
+
  ** locale **   <a name="devicefarm-Type-ScheduleRunConfiguration-locale"></a>
 Information about the locale that is used for the run.
 Type: String

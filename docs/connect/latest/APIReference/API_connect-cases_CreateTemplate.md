@@ -84,6 +84,7 @@ Required: Yes
 
  ** [requiredFields](#API_connect-cases_CreateTemplate_RequestSyntax) **   <a name="connect-connect-cases_CreateTemplate-request-requiredFields"></a>
 A list of fields that must contain a value for a case to be successfully created with this template.
+To require a Customer Profile when creating cases, include `customer_id` in this list. If `customer_id` is omitted, the Customer Profile field is optional and can be added, changed, or removed after case creation.
 Type: Array of [RequiredField](API_connect-cases_RequiredField.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 Required: No

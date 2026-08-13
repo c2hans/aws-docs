@@ -27,7 +27,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ## AWS CLI
 <a name="USER_RebootInstance.CLI"></a>
 
- To reboot a DB instance by using the AWS CLI, call the [https://docs.aws.amazon.com/cli/latest/reference/rds/reboot-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/reboot-db-instance.html) command.
+ To reboot a DB instance by using the AWS CLI, call the [`reboot-db-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/reboot-db-instance.html) command.
 
 **Example**
 For Linux, macOS, or Unix:
@@ -46,4 +46,4 @@ aws rds reboot-db-instance ^
 ## RDS API
 <a name="USER_RebootInstance.API"></a>
 
- To reboot a DB instance by using the Amazon RDS API, call the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RebootDBInstance.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RebootDBInstance.html) operation.
+ To reboot a DB instance by using the Amazon RDS API, call the [`RebootDBInstance`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RebootDBInstance.html) operation.

@@ -28,4 +28,4 @@ When an execution is running, you can also choose **View progress** to open the 
 
 1. (Optional) To view additional details about an execution, in the **Execution name** column, choose an operation name, such as **AWS-DiagnoseUnmanagedEC2NetworkIssues**.
 
-   In the details pane, you can review information about all the steps attempted during the operation, and about all the inputs and outputs for the execution.
+   In the details pane, you can review information about all the steps attempted during the operation. You can also review all the inputs and outputs for the execution.

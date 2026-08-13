@@ -18,22 +18,39 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Framework** | **Details** |
-| --- | --- |
-| **Component** | **Details** |
-| --- | --- |
-| **Windows security updates** | Applied June 2022 security updates for Windows.<br />See the Microsoft [Security Update Guide](https://portal.msrc.microsoft.com/en-us/security-guidance). |
-| **Platform branch retirement** | Today we're announcing the retirement of platform branch **Windows Server 2012 with IIS 8**. This retired platform branch is composed of two platform versions: *Windows Server 2012 with IIS 8* **version 0.1.0** and *Windows Server 2012 with IIS 8* **version 1.2.0**. <br />If you currently use this retiring platform branch, we strongly recommend that you migrate to one of the *Windows Server version 2* platforms, which are current and fully supported:+  Windows Server 2019 with IIS 10.0 version 2.x <br />+  Windows Server 2016 with IIS 10.0 version 2.x <br />+  Windows Server 2012 R2 with IIS 8.5 version 2.x <br />For full migration considerations, see [Major Version Migration](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-v2migration.html) in the *AWS Elastic Beanstalk Developer Guide*. <br />For more information and a listing of retired platform components, see [Elastic Beanstalk platform support policy](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-support-policy.html) in the *AWS Elastic Beanstalk Developer Guide*. |
-| **Framework updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-06-22-windows.html)  |
-| **AWS component updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-06-22-windows.html)  |
-| **.NET Core** | Updated .NET 6 to version 6.0.6 on Windows Server 2019 and 2016 platform versions.<br />Updated .NET 3 to version 3.1.26 on Windows Server 2019 and 2016 platform versions. |
-| **AWS SDK for .NET** | Updated the SDK to version 3.15.1678. |
-| **AMI** | Updated the base AMI to version 2022.06.15. |
-| **CloudWatch Agent** | Updated the CloudWatch Agent to version 1.247352.0. |
-| **SSM Agent** | Updated the SSM Agent to version 3.1.1188.0 |
-| **EC2Config** | Updated EC2Config to version 4.9.4588 on Windows Server 2012 R2 Server Core platform versions. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows security updates</b></td><td>Applied June 2022 security updates for Windows.<br />See the Microsoft <a href="https://portal.msrc.microsoft.com/en-us/security-guidance">Security Update Guide</a>.</td></tr>
+  <tr><td><b>Platform branch retirement</b></td><td>Today we're announcing the retirement of platform branch <b>Windows Server 2012 with IIS 8</b>. This retired platform branch is composed of two platform versions: <i>Windows Server 2012 with IIS 8</i> <b>version 0.1.0</b> and <i>Windows Server 2012 with IIS 8</i> <b>version 1.2.0</b>. <br />If you currently use this retiring platform branch, we strongly recommend that you migrate to one of the <i>Windows Server version 2</i> platforms, which are current and fully supported:<ul><li> Windows Server 2019 with IIS 10.0 version 2.x </li><li> Windows Server 2016 with IIS 10.0 version 2.x </li><li> Windows Server 2012 R2 with IIS 8.5 version 2.x </li></ul><br />For full migration considerations, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-v2migration.html">Major Version Migration</a> in the <i>AWS Elastic Beanstalk Developer Guide</i>. <br />For more information and a listing of retired platform components, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-support-policy.html">Elastic Beanstalk platform support policy</a> in the <i>AWS Elastic Beanstalk Developer Guide</i>.</td></tr>
+  <tr><td><b>Framework updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Framework</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET 6 to version 6.0.6 on Windows Server 2019 and 2016 platform versions.<br />Updated .NET 3 to version 3.1.26 on Windows Server 2019 and 2016 platform versions.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+  <tr><td><b>AWS component updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AWS SDK for .NET</b></td><td>Updated the SDK to version 3.15.1678.</td></tr>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version 2022.06.15.</td></tr>
+  <tr><td><b>CloudWatch Agent</b></td><td>Updated the CloudWatch Agent to version 1.247352.0.</td></tr>
+  <tr><td><b>SSM Agent</b></td><td>Updated the SSM Agent to version 3.1.1188.0</td></tr>
+  <tr><td><b>EC2Config</b></td><td>Updated EC2Config to version 4.9.4588 on Windows Server 2012 R2 Server Core platform versions.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2022-06-22-windows.platforms"></a>

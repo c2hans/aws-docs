@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/visual-
 # Tutorial: Create a runbook using the visual design experience
 <a name="visual-designer-tutorial"></a>
 
-In this tutorial, you will learn the basics of working with the visual design experience provided by Systems Manager Automation. In the visual design experience, you can create a runbook that uses multiple actions. You use the drag and drop feature to arrange actions on the canvas. You also search for, select, and configure these actions. Then, you can view the auto-generated YAML code for your runbook's workflow, exit the visual design experience, run the runbook, and review the execution details.
+In this tutorial, you learn the basics of working with the visual design experience provided by Systems Manager Automation. In the visual design experience, you can create a runbook that uses multiple actions. You use the move feature to arrange actions on the canvas. You also search for, select, and configure these actions. Then, you can view the auto-generated YAML code for your runbook's workflow, exit the visual design experience, run the runbook, and review the execution details.
 
 This tutorial also shows you how to update the runbook and view the new version. At the end of the tutorial, you perform a clean-up step and delete your runbook.
 
@@ -51,7 +51,7 @@ In the visual design experience, a workflow is a graphical representation of you
 
 1. In the **AWS APIs** browser, enter **DescribeInstances** in the search bar.
 
-1. Drag an **Amazon EC2 – DescribeInstances** action to the empty canvas.
+1. Move an **Amazon EC2 – DescribeInstances** action to the empty canvas.
 
 1. For **Step name**, enter a value. For this tutorial, you can use the name **GetInstanceState**.
 ![Choose an Amazon EC2 describe instances API action.](http://docs.aws.amazon.com/systems-manager/latest/userguide/images/visual_designer_tutorial_api_action.png)
@@ -68,7 +68,7 @@ In the visual design experience, a workflow is a graphical representation of you
 
    1. In the **Type** dropdown, choose **String**.
 
-1. Drag a **Branch** action from the **Actions** browser, and drop it below the **`GetInstanceState`** step.
+1. Move a **Branch** action from the **Actions** browser, into the position below the **`GetInstanceState`** step.
 
 1. For **Step name**, enter a value. For this tutorial, use the name `BranchOnInstanceState`.
 
@@ -113,7 +113,7 @@ In the visual design experience, a workflow is a graphical representation of you
 
    1. In the **Default rule**, choose **Go to end** for the **Default step**.
 
-1. Drag a **Change an instance state** action to the empty **Drag action here** box under the **{{ GetInstanceState.InstanceState }} == "stopped"** condition.
+1. Move a **Change an instance state** action to the empty **Drag action here** box under the **{{ GetInstanceState.InstanceState }} == "stopped"** condition.
 
    1. For the **Step name**, enter **StartInstance**.
 
@@ -121,7 +121,7 @@ In the visual design experience, a workflow is a graphical representation of you
 
    1. For the **Desired state**, specify **`running`**.
 
-1. Drag a **Wait on AWS resource** action to the empty **Drag action here** box under the **{{ GetInstanceState.InstanceState }} == "stopping"** condition.
+1. Move a **Wait on AWS resource** action to the empty **Drag action here** box under the **{{ GetInstanceState.InstanceState }} == "stopping"** condition.
 
 1. For **Step name**, enter a value. For this tutorial, use the name `WaitForInstanceStop`.
 
@@ -135,7 +135,7 @@ In the visual design experience, a workflow is a graphical representation of you
 
    1. In the **Configuration** tab of the **WaitForInstanceStop** action, choose **StartInstance** from the **Next step** dropdown.
 
-1. Drag a **Run command on instances** action to the empty **Drag action here** box under the **{{ GetInstanceState.InstanceState }} == "running"** condition.
+1. Move a **Run command on instances** action to the empty **Drag action here** box under the **{{ GetInstanceState.InstanceState }} == "running"** condition.
 
 1. For the **Step name**, enter **SayHello**.
 
@@ -153,7 +153,7 @@ In the visual design experience, a workflow is a graphical representation of you
 ## Step 3: Review the auto-generated code
 <a name="view-generated-code"></a>
 
-As you drag and drop actions from the **Actions** browser onto the canvas, the visual design experience automatically composes the YAML or JSON content of your runbook in real-time. You can view and edit this code. To view the auto-generated code, select **Code** for the **Design** and **Code** toggle.
+As you move actions from the **Actions** browser onto the canvas, the visual design experience automatically composes the YAML or JSON content of your runbook in real-time. You can view and edit this code. To view the auto-generated code, select **Code** for the **Design** and **Code** toggle.
 
 ## Step 4: Run your new runbook
 <a name="use-tutorial-runbook"></a>
@@ -181,7 +181,7 @@ You can view information about a runbook by choosing the runbook name.
 
 1. In the **Input parameters** section, specify the required inputs. Optionally, you can choose an IAM service role from the **AutomationAssumeRole** list.
 
-1. (Optional) Choose a CloudWatch alarm to apply to your automation for monitoring. If your alarm enters `ALARM` state, the automation is canceled and any defined `onCancel` steps run. If you use AWS CloudTrail, you will see the `StopAutomationExecution` API call in your trail. For more information, see [Configuring Automations to monitor CloudWatch Alarms](automation-cw-alarm-monitoring.md).
+1. (Optional) Choose a CloudWatch alarm to apply to your automation for monitoring. If your alarm enters `ALARM` state, the automation is canceled and any defined `onCancel` steps run. If you use AWS CloudTrail, you see the `StopAutomationExecution` API call in your trail. For more information, see [Configuring Automations to monitor CloudWatch Alarms](automation-cw-alarm-monitoring.md).
 
 1. Choose **Execute**.
 

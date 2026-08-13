@@ -33,7 +33,7 @@ For event buses:
 + Dual-stack support for event buses includes archives and replays.
 + EventBridge does not currently support dual-stack endpoints for [global endpoints](eb-global-endpoints.md).
 
-  If you configure the AWS SDK to use dual-stack endpoints, calls to [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html) will result in an error. This is because the SDK uses the dual-stack domain (`events.{{region-code}}.api.aws`) rather than `events.{{region-code}}.amazonaws.com` when constructing the endpoint, resulting in the request being sent to an endpoint that does not exist.
+  If you configure the AWS SDK to use dual-stack endpoints, calls to [`PutEvents`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html) will result in an error. This is because the SDK uses the dual-stack domain (`events.{{region-code}}.api.aws`) rather than `events.{{region-code}}.amazonaws.com` when constructing the endpoint, resulting in the request being sent to an endpoint that does not exist.
 
 For EventBridge Pipes:
 + EventBridge Pipes supports dual-stack requests with [Interface VPC endpoints](eb-related-service-vpc.md).

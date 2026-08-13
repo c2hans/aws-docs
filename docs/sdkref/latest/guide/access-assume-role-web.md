@@ -31,7 +31,7 @@ To configure federation with an external IdP, use an IAM identity provider to in
 
 Configure the SDK or tool to use a JSON Web Token (JWT) from AWS STS for authentication.
 
-When you specify this in a profile, the SDK or tool automatically makes the corresponding AWS STS [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html) API call for you. To retrieve and use temporary credentials using web identity federation, specify the following configuration values in the shared AWS `config` file. For more details on each of these settings, see the [Assume role credential provider settings](feature-assume-role-credentials.md#feature-assume-role-credentials-settings) section.
+When you specify this in a profile, the SDK or tool automatically makes the corresponding AWS STS [`AssumeRoleWithWebIdentity`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html) API call for you. To retrieve and use temporary credentials using web identity federation, specify the following configuration values in the shared AWS `config` file. For more details on each of these settings, see the [Assume role credential provider settings](feature-assume-role-credentials.md#feature-assume-role-credentials-settings) section.
 + `role_arn` - From the IAM role you created in Step 1
 + `web_identity_token_file` - From the external IdP
 + (Optional) `duration_seconds`

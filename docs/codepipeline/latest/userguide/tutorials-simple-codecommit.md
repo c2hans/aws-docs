@@ -156,7 +156,7 @@ In this step, you create the Amazon EC2 instance where you deploy a sample appli
 
 **To create an instance role**
 
-1. Open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/)).
+1. Open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
 1. From the console dashboard, choose **Roles**.
 
@@ -200,7 +200,7 @@ For the purposes of this tutorial, you can proceed without a key pair. To use SS
 
 1. Expand **Advanced details**. In **IAM instance profile**, choose the IAM role you created in the previous procedure (for example, **EC2InstanceRole**).
 
-1. Under **Summary**, under **Number of instances**, enter `1`..
+1. Under **Summary**, under **Number of instances**, enter `1`.
 
 1. Choose **Launch instance**.
 
@@ -209,13 +209,13 @@ For the purposes of this tutorial, you can proceed without a key pair. To use SS
 ## Step 4: Create an application in CodeDeploy
 <a name="codecommit-create-codedeploy-app"></a>
 
-In CodeDeploy, an [https://docs.aws.amazon.com/codedeploy/latest/userguide/applications.html](https://docs.aws.amazon.com/codedeploy/latest/userguide/applications.html) is a resource that contains the software application you want to deploy. Later, you use this application with CodePipeline to automate deployments of the sample application to your Amazon EC2 instance.
+In CodeDeploy, an [*application*](https://docs.aws.amazon.com/codedeploy/latest/userguide/applications.html) is a resource that contains the software application you want to deploy. Later, you use this application with CodePipeline to automate deployments of the sample application to your Amazon EC2 instance.
 
 First, you create a role that allows CodeDeploy to perform deployments. Then, you create a CodeDeploy application.
 
 **To create a CodeDeploy service role**
 
-1. Open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/)).
+1. Open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
 1. From the console dashboard, choose **Roles**.
 
@@ -243,7 +243,7 @@ First, you create a role that allows CodeDeploy to perform deployments. Then, yo
 
 **To create a deployment group in CodeDeploy**
 
-A [https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-groups.html](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-groups.html) is a resource that defines deployment-related settings like which instances to deploy to and how fast to deploy them.
+A [*deployment group*](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-groups.html) is a resource that defines deployment-related settings like which instances to deploy to and how fast to deploy them.
 
 1. On the page that displays your application, choose **Create deployment group**.
 
@@ -317,7 +317,7 @@ Next, you verify the results.
 
 1. View the initial progress of the pipeline. The status of each stage changes from **No executions yet** to **In Progress**, and then to either **Succeeded** or **Failed**. The pipeline should complete the first run within a few minutes.
 
-1. After **Succeeded** is displayed for the pipeline status, in the status area for the **Deploy** stage, choose **CodeDeploy**. This opens the CodeDeploy console. If **Succeeded** is not displayed see [Troubleshooting CodePipeline](troubleshooting.md).
+1. After **Succeeded** is displayed for the pipeline status, in the status area for the **Deploy** stage, choose **CodeDeploy**. This opens the CodeDeploy console. If **Succeeded** is not displayed, see [Troubleshooting CodePipeline](troubleshooting.md).
 
 1.  On the **Deployments** tab, choose the deployment ID. On the page for the deployment, under **Deployment lifecycle events**, choose the instance ID. This opens the EC2 console.
 

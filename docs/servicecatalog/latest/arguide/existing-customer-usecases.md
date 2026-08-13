@@ -10,7 +10,7 @@ AWS Service Catalog AppRegistry is no longer open to new customers. Existing cus
 If you have existing AppRegistry application, AWS recommends that you retroactively apply the `awsApplication` tag to all of the resources in the application, and also ensure any future resources added to the application have the `awsApplication` tag applied. This tutorial provides instructions for both recommendations.
 
 **Note**
-Managing an application's resources by adding or removing the `awsApplication` tag requires specific permissions. Review the minimum permissions for the AppRegistry APIs in the [https://docs.aws.amazon.com/servicecatalog/latest/dg/what-is-service-catalog.html](https://docs.aws.amazon.com/servicecatalog/latest/dg/what-is-service-catalog.html) and the Resource Groups APIs in the [https://docs.aws.amazon.com/ARG/latest/APIReference/Welcome.html](https://docs.aws.amazon.com/ARG/latest/APIReference/Welcome.html).
+Managing an application's resources by adding or removing the `awsApplication` tag requires specific permissions. Review the minimum permissions for the AppRegistry APIs in the [*AWS Service Catalog Developer Guide*](https://docs.aws.amazon.com/servicecatalog/latest/dg/what-is-service-catalog.html) and the Resource Groups APIs in the [*AWS Resource Groups API Reference*](https://docs.aws.amazon.com/ARG/latest/APIReference/Welcome.html).
 
 ## Apply the `awsApplication` tag to the resources in an existing application
 <a name="scar-app-usecase-1"></a>

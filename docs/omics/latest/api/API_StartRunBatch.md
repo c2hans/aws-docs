@@ -88,7 +88,7 @@ Pattern: `[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+`
 Required: Yes
 
  ** [tags](#API_StartRunBatch_RequestSyntax) **   <a name="omics-StartRunBatch-request-tags"></a>
-AWS tags to associate with the batch resource. These tags are not inherited by individual runs. To tag individual runs, use `defaultRunSetting.runTags`.
+ AWS tags to associate with the batch resource. These tags are not inherited by individual runs. To tag individual runs, use `defaultRunSetting.runTags`.
 Type: String to string map
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
 Value Length Constraints: Minimum length of 0. Maximum length of 256.
@@ -138,7 +138,7 @@ Length Constraints: Minimum length of 1. Maximum length of 64.
 Valid Values: `CREATING | PENDING | SUBMITTING | INPROGRESS | STOPPING | CANCELLED | FAILED | PROCESSED | RUNS_DELETING | RUNS_DELETE_FAILED | RUNS_DELETED`
 
  ** [tags](#API_StartRunBatch_ResponseSyntax) **   <a name="omics-StartRunBatch-response-tags"></a>
-AWS tags associated with the run batch.
+ AWS tags associated with the run batch.
 Type: String to string map
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
 Value Length Constraints: Minimum length of 0. Maximum length of 256.

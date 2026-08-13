@@ -268,11 +268,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
-- **   PutBotAlias  **
-  - **SDK client:** lex-models
-  - **IAM action:**  [lex:PutBotAlias](#list_lex-action-PutBotAlias)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [lex:TagResource](#list_lex-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
-
 - **   PutIntent  **
   - **SDK client:** lex-models
   - **IAM action:**  [lex:PutIntent](#list_lex-action-PutIntent)

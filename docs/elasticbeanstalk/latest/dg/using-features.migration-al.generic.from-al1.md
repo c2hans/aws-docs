@@ -84,15 +84,26 @@ This section discusses migration considerations specific to particular Elastic B
 
 The Docker platform branch family based on Amazon Linux AMI (AL1) includes three platform branches. We recommend a different migration path for each.
 
-|  **AL1 Platform branch**  |  **Migration Path to AL2023/AL2**  |
-| --- | --- |
-|  **Area**  |  **Changes and information**  |
-| --- | --- |
-| Multi-container Docker managed by Amazon ECS running on Amazon Linux AMI (AL1) |  ECS based Docker AL2023/AL2 platform branches The *ECS based Docker AL2023/AL2* platform branches offer a straightforward migration path for environments running on the *Multi-container Docker AL1* platform branch. +  Like the previous *Multi-container Docker AL1* branch, the AL2023/AL2 platform branches use Amazon ECS to coordinate deployment of multiple Docker containers to an Amazon ECS cluster in an Elastic Beanstalk environment.  <br />+  The AL2023/AL2 platform branches support all of the features in the previous *Multi-container Docker AL1* branch.  <br />+  The AL2023/AL2 platform branches also support the same `Dockerrun.aws.json` v2 file.  For more information about migrating your applications running on the *Multi-container Docker Amazon Linux* platform branch to an *Amazon ECS running on AL2023/AL2* platform branch, see [Migrating your Elastic Beanstalk application from ECS managed Multi-container Docker on AL1 to ECS on Amazon Linux 2023](migrate-to-ec2-AL2-platform.md). |
-| Docker running on Amazon Linux AMI (AL1)<br />Preconfigured Docker (Glassfish 5.0) running Amazon Linux AMI (AL1) |  Docker Running on AL2023/AL2 platform branch We recommend that you migrate your applications running on environments based on *Preconfigured Docker (Glassfish 5.0)* or *Docker running on Amazon Linux AMI (AL1) * to environments that are based on the *Docker Running on Amazon Linux 2* or *Docker Running on AL2023* platform branches. If your environment is based on the *Preconfigured Docker (Glassfish 5.0)* platform branch, see [Deploying a GlassFish application to the Docker platform: a migration path to Amazon Linux 2023](create_deploy_dockerpreconfig.md#docker-glassfish-tutorial).<br />The following table lists migration information specific to the platform branch *Docker Running on AL2023/AL2*.[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.migration-al.generic.from-al1.html) |
-| Storage | Elastic Beanstalk configures Docker to use [storage drivers](https://docs.docker.com/storage/storagedriver/) to store Docker images and container data. On Amazon Linux AMI, Elastic Beanstalk used the [Device Mapper storage driver](https://docs.docker.com/storage/storagedriver/device-mapper-driver/). To improve performance, Elastic Beanstalk provisioned an extra Amazon EBS volume. On AL2023/AL2 Docker platform versions, Elastic Beanstalk uses the [OverlayFS storage driver](https://docs.docker.com/storage/storagedriver/overlayfs-driver/), and achieves even better performance while not requiring a separate volume anymore.<br />With Amazon Linux AMI, if you used the `BlockDeviceMappings` option of the `aws:autoscaling:launchconfiguration` namespace to add custom storage volumes to a Docker environment, we advised you to also add the `/dev/xvdcz` Amazon EBS volume that Elastic Beanstalk provisions. Elastic Beanstalk doesn't provision this volume anymore, so you should remove it from your configuration files. For details, see [Docker configuration on Amazon Linux AMI (preceding Amazon Linux 2)](create_deploy_docker.container.console.md#docker-alami). |
-| Private repository authentication | When you provide a Docker-generated authentication file to connect to a private repository, you no longer need to convert it to the older format that Amazon Linux AMI Docker platform versions required. AL2023/AL2 Docker platform versions support the new format. For details, see [Authenticating with image repositories](docker-configuration.remote-repo.md). |
-| Proxy server | AL2023/AL2 Docker platform versions don't support standalone containers that don't run behind a proxy server. On Amazon Linux AMI Docker platform versions, this used to be possible through the `none` value of the `ProxyServer` option in the `aws:elasticbeanstalk:environment:proxy` namespace. |
+<table>
+<thead>
+  <tr><th> <b>AL1 Platform branch</b> </th><th> <b>Migration Path to AL2023/AL2</b> </th></tr>
+</thead>
+<tbody>
+  <tr><td>Multi-container Docker managed by Amazon ECS running on Amazon Linux AMI (AL1)</td><td> ECS based Docker AL2023/AL2 platform branches The <i>ECS based Docker AL2023/AL2</i> platform branches offer a straightforward migration path for environments running on the <i>Multi-container Docker AL1</i> platform branch. <ul><li> Like the previous <i>Multi-container Docker AL1</i> branch, the AL2023/AL2 platform branches use Amazon ECS to coordinate deployment of multiple Docker containers to an Amazon ECS cluster in an Elastic Beanstalk environment.  </li><li> The AL2023/AL2 platform branches support all of the features in the previous <i>Multi-container Docker AL1</i> branch.  </li><li> The AL2023/AL2 platform branches also support the same <code>Dockerrun.aws.json</code> v2 file.  </li></ul>For more information about migrating your applications running on the <i>Multi-container Docker Amazon Linux</i> platform branch to an <i>Amazon ECS running on AL2023/AL2</i> platform branch, see <a href="migrate-to-ec2-AL2-platform.md">Migrating your Elastic Beanstalk application from ECS managed Multi-container Docker on AL1 to ECS on Amazon Linux 2023</a>.</td></tr>
+  <tr><td>Docker running on Amazon Linux AMI (AL1)<br />Preconfigured Docker (Glassfish 5.0) running Amazon Linux AMI (AL1)</td><td> Docker Running on AL2023/AL2 platform branch We recommend that you migrate your applications running on environments based on <i>Preconfigured Docker (Glassfish 5.0)</i> or <i>Docker running on Amazon Linux AMI (AL1) </i> to environments that are based on the <i>Docker Running on Amazon Linux 2</i> or <i>Docker Running on AL2023</i> platform branches. If your environment is based on the <i>Preconfigured Docker (Glassfish 5.0)</i> platform branch, see <a href="create_deploy_dockerpreconfig.md#docker-glassfish-tutorial">Deploying a GlassFish application to the Docker platform: a migration path to Amazon Linux 2023</a>.<br />The following table lists migration information specific to the platform branch <i>Docker Running on AL2023/AL2</i>.
+<table>
+<thead>
+  <tr><th> <b>Area</b> </th><th> <b>Changes and information</b> </th></tr>
+</thead>
+<tbody>
+  <tr><td>Storage</td><td>Elastic Beanstalk configures Docker to use <a href="https://docs.docker.com/storage/storagedriver/">storage drivers</a> to store Docker images and container data. On Amazon Linux AMI, Elastic Beanstalk used the <a href="https://docs.docker.com/storage/storagedriver/device-mapper-driver/">Device Mapper storage driver</a>. To improve performance, Elastic Beanstalk provisioned an extra Amazon EBS volume. On AL2023/AL2 Docker platform versions, Elastic Beanstalk uses the <a href="https://docs.docker.com/storage/storagedriver/overlayfs-driver/">OverlayFS storage driver</a>, and achieves even better performance while not requiring a separate volume anymore.<br />With Amazon Linux AMI, if you used the <code>BlockDeviceMappings</code> option of the <code>aws:autoscaling:launchconfiguration</code> namespace to add custom storage volumes to a Docker environment, we advised you to also add the <code>/dev/xvdcz</code> Amazon EBS volume that Elastic Beanstalk provisions. Elastic Beanstalk doesn't provision this volume anymore, so you should remove it from your configuration files. For details, see <a href="create_deploy_docker.container.console.md#docker-alami">Docker configuration on Amazon Linux AMI (preceding Amazon Linux 2)</a>.</td></tr>
+  <tr><td>Private repository authentication</td><td>When you provide a Docker-generated authentication file to connect to a private repository, you no longer need to convert it to the older format that Amazon Linux AMI Docker platform versions required. AL2023/AL2 Docker platform versions support the new format. For details, see <a href="docker-configuration.remote-repo.md">Authenticating with image repositories</a>.</td></tr>
+  <tr><td>Proxy server</td><td>AL2023/AL2 Docker platform versions don't support standalone containers that don't run behind a proxy server. On Amazon Linux AMI Docker platform versions, this used to be possible through the <code>none</code> value of the <code>ProxyServer</code> option in the <code>aws:elasticbeanstalk:environment:proxy</code> namespace.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ### Go
 <a name="using-features.migration-al.specific.go"></a>
@@ -121,31 +132,53 @@ The following table lists migration information for the Corretto platform branch
 
 The following table lists migration information for the AL2023/AL2 platform versions in the [Tomcat platform](java-tomcat-platform.md).
 
-|  **Area**  |  **Changes and information**  |
-| --- | --- |
-|  **Option**  |  **Migration information**  |
-| --- | --- |
-| Configuration options | On AL2023/AL2 platform versions, Elastic Beanstalk supports only a subset of the configuration options and option values in the `aws:elasticbeanstalk:environment:proxy` namespace. Here's the migration information for each option.[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.migration-al.generic.from-al1.html)<br />The `XX:MaxPermSize` option in the `aws:elasticbeanstalk:container:tomcat:jvmoptions` namespace isn't supported on AL2023/AL2 platform versions. The JVM setting to modify the size of the permanent generation applies only to Java 7 and earlier, and is therefore not applicable to AL2023/AL2 platform versions. |
-| Application path | On AL2023/AL2 platforms, the path to the application's directory on Amazon EC2 instances of your environment is `/var/app/current`. It was `/var/lib/tomcat8/webapps` on Amazon Linux AMI platforms. |
-| `GzipCompression` | Unsupported on AL2023/AL2 platform versions. |
-| `ProxyServer` | AL2023/AL2 Tomcat platform versions support both the nginx and the Apache HTTPD version 2.4 proxy servers. However, Apache version 2.2 isn't supported.<br />On Amazon Linux AMI platform versions, the default proxy was Apache 2.4. If you used the default proxy setting and added custom proxy configuration files, your proxy configuration should still work on AL2023/AL2. However, if you used the `apache/2.2` option value, you now have to migrate your proxy configuration to Apache version 2.4. |
+<table>
+<thead>
+  <tr><th> <b>Area</b> </th><th> <b>Changes and information</b> </th></tr>
+</thead>
+<tbody>
+  <tr><td>Configuration options</td><td>On AL2023/AL2 platform versions, Elastic Beanstalk supports only a subset of the configuration options and option values in the <code>aws:elasticbeanstalk:environment:proxy</code> namespace. Here's the migration information for each option.
+<table>
+<thead>
+  <tr><th> <b>Option</b> </th><th> <b>Migration information</b> </th></tr>
+</thead>
+<tbody>
+  <tr><td><code>GzipCompression</code></td><td>Unsupported on AL2023/AL2 platform versions.</td></tr>
+  <tr><td><code>ProxyServer</code></td><td>AL2023/AL2 Tomcat platform versions support both the nginx and the Apache HTTPD version 2.4 proxy servers. However, Apache version 2.2 isn't supported.<br />On Amazon Linux AMI platform versions, the default proxy was Apache 2.4. If you used the default proxy setting and added custom proxy configuration files, your proxy configuration should still work on AL2023/AL2. However, if you used the <code>apache/2.2</code> option value, you now have to migrate your proxy configuration to Apache version 2.4.</td></tr>
+</tbody>
+</table>
+<br />The <code>XX:MaxPermSize</code> option in the <code>aws:elasticbeanstalk:container:tomcat:jvmoptions</code> namespace isn't supported on AL2023/AL2 platform versions. The JVM setting to modify the size of the permanent generation applies only to Java 7 and earlier, and is therefore not applicable to AL2023/AL2 platform versions.</td></tr>
+  <tr><td>Application path</td><td>On AL2023/AL2 platforms, the path to the application's directory on Amazon EC2 instances of your environment is <code>/var/app/current</code>. It was <code>/var/lib/tomcat8/webapps</code> on Amazon Linux AMI platforms.</td></tr>
+</tbody>
+</table>
 
 ### Node.js
 <a name="using-features.migration-al.specific.nodejs"></a>
 
 The following table lists migration information for the AL2023/AL2 platform versions in the [Node.js platform](create_deploy_nodejs.container.md).
 
-|  **Area**  |  **Changes and information**  |
-| --- | --- |
-|  **Option**  |  **Migration information**  |
-| --- | --- |
-| Installed Node.js versions | On AL2023/AL2 platforms, Elastic Beanstalk maintains several Node.js platform branches, and only installs the latest version of the Node.js major version corresponding with the platform branch on each platform version. For example, each platform version in the Node.js 12 platform branch only has Node.js 12.x.y installed by default. On Amazon Linux AMI platform versions, we installed the multiple versions of multiple Node.js versions on each platform version, and only maintained a single platform branch.<br />Choose the Node.js platform branch that corresponds with the Node.js major version that your application needs. |
-| Apache HTTPD log file names | On AL2023/AL2 platforms, if you use the Apache HTTPD proxy server, the HTTPD log file names are `access_log` and `error_log`, which is consistent with all other platforms that support Apache HTTPD. On Amazon Linux AMI platform versions, these log files were named `access.log` and `error.log`, respectively.<br />For details about log file names and locations for all platforms, see [How Elastic Beanstalk sets up CloudWatch Logs](AWSHowTo.cloudwatchlogs.md#AWSHowTo.cloudwatchlogs.loggroups). |
-| Configuration options | On AL2023/AL2 platforms, Elastic Beanstalk doesn't support the configuration options in the `aws:elasticbeanstalk:container:nodejs` namespace. Some of the options have alternatives. Here's the migration information for each option.[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.migration-al.generic.from-al1.html) |
-| `NodeCommand` | Use a `Procfile` or the `scripts` keyword in a `package.json` file to specify the start script. |
-| `NodeVersion` | Use the `engines` keyword in a `package.json` file to specify the Node.js version. Be aware that you can only specify a Node.js version that correspondes with your platform branch. For example, if you're using the Node.js 12 platform branch, you can specify only a 12.x.y Node.js version. For details, see [Specifying Node.js dependencies with a package.json file](nodejs-platform-dependencies.md#nodejs-platform-packagejson). |
-| `GzipCompression` | Unsupported on AL2023/AL2 platform versions. |
-| `ProxyServer` | On AL2023/AL2 Node.js platform versions, this option moved to the `aws:elasticbeanstalk:environment:proxy` namespace. You can choose between `nginx` (the default) and `apache`.<br />AL2023/AL2 Node.js platform versions don't support standalone applications that don't run behind a proxy server. On Amazon Linux AMI Node.js platform versions, this used to be possible through the `none` value of the `ProxyServer` option in the `aws:elasticbeanstalk:container:nodejs` namespace. If your environment runs a standalone application, update your code to listen to the port that the proxy server (nginx or Apache) forwards traffic to.<pre>var port = process.env.PORT || 5000;<br /><br />app.listen(port, function() {<br />  console.log('Server running at http://127.0.0.1:%s', port);<br />});</pre> |
+<table>
+<thead>
+  <tr><th> <b>Area</b> </th><th> <b>Changes and information</b> </th></tr>
+</thead>
+<tbody>
+  <tr><td>Installed Node.js versions</td><td>On AL2023/AL2 platforms, Elastic Beanstalk maintains several Node.js platform branches, and only installs the latest version of the Node.js major version corresponding with the platform branch on each platform version. For example, each platform version in the Node.js 12 platform branch only has Node.js 12.x.y installed by default. On Amazon Linux AMI platform versions, we installed the multiple versions of multiple Node.js versions on each platform version, and only maintained a single platform branch.<br />Choose the Node.js platform branch that corresponds with the Node.js major version that your application needs.</td></tr>
+  <tr><td>Apache HTTPD log file names</td><td>On AL2023/AL2 platforms, if you use the Apache HTTPD proxy server, the HTTPD log file names are <code>access_log</code> and <code>error_log</code>, which is consistent with all other platforms that support Apache HTTPD. On Amazon Linux AMI platform versions, these log files were named <code>access.log</code> and <code>error.log</code>, respectively.<br />For details about log file names and locations for all platforms, see <a href="AWSHowTo.cloudwatchlogs.md#AWSHowTo.cloudwatchlogs.loggroups">How Elastic Beanstalk sets up CloudWatch Logs</a>.</td></tr>
+  <tr><td>Configuration options</td><td>On AL2023/AL2 platforms, Elastic Beanstalk doesn't support the configuration options in the <code>aws:elasticbeanstalk:container:nodejs</code> namespace. Some of the options have alternatives. Here's the migration information for each option.
+<table>
+<thead>
+  <tr><th> <b>Option</b> </th><th> <b>Migration information</b> </th></tr>
+</thead>
+<tbody>
+  <tr><td><code>NodeCommand</code></td><td>Use a <code>Procfile</code> or the <code>scripts</code> keyword in a <code>package.json</code> file to specify the start script.</td></tr>
+  <tr><td><code>NodeVersion</code></td><td>Use the <code>engines</code> keyword in a <code>package.json</code> file to specify the Node.js version. Be aware that you can only specify a Node.js version that correspondes with your platform branch. For example, if you're using the Node.js 12 platform branch, you can specify only a 12.x.y Node.js version. For details, see <a href="nodejs-platform-dependencies.md#nodejs-platform-packagejson">Specifying Node.js dependencies with a package.json file</a>.</td></tr>
+  <tr><td><code>GzipCompression</code></td><td>Unsupported on AL2023/AL2 platform versions.</td></tr>
+  <tr><td><code>ProxyServer</code></td><td>On AL2023/AL2 Node.js platform versions, this option moved to the <code>aws:elasticbeanstalk:environment:proxy</code> namespace. You can choose between <code>nginx</code> (the default) and <code>apache</code>.<br />AL2023/AL2 Node.js platform versions don't support standalone applications that don't run behind a proxy server. On Amazon Linux AMI Node.js platform versions, this used to be possible through the <code>none</code> value of the <code>ProxyServer</code> option in the <code>aws:elasticbeanstalk:container:nodejs</code> namespace. If your environment runs a standalone application, update your code to listen to the port that the proxy server (nginx or Apache) forwards traffic to.<pre>var port = process.env.PORT || 5000;<br /><br />app.listen(port, function() {<br />  console.log('Server running at http://127.0.0.1:%s', port);<br />});</pre></td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ### PHP
 <a name="using-features.migration-al.specific.php"></a>

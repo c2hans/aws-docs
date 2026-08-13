@@ -55,11 +55,11 @@ setx AWS_CA_BUNDLE {{C:\dev\apps\ca-certs\cabundle-2019mar05.pem}}
 Specifies how results are formatted in the AWS CLI and other AWS SDKs and tools.
 **Default value:** `json`
 **Valid values:**
-+ **[https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output-format.html#json-output](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output-format.html#json-output)** – The output is formatted as a [JSON](https://json.org/) string.
-+  **[https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output-format.html#yaml-output](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output-format.html#yaml-output)** – The output is formatted as a [YAML](https://yaml.org/) string.
-+ **[https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output-format.html#yaml-stream-output](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output-format.html#yaml-stream-output)** – The output is streamed and formatted as a [YAML](https://yaml.org/) string. Streaming allows for faster handling of large data types.
-+ **[https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output-format.html#text-output](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output-format.html#text-output)** – The output is formatted as multiple lines of tab-separated string values. This can be useful to pass the output to a text processor, like `grep`, `sed`, or `awk`.
-+ **[https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output-format.html#table-output](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output-format.html#table-output)** – The output is formatted as a table using the characters \+\|- to form the cell borders. It typically presents the information in a "human-friendly" format that is much easier to read than the others, but not as programmatically useful.
++ **[`json`](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output-format.html#json-output)** – The output is formatted as a [JSON](https://json.org/) string.
++  **[`yaml`](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output-format.html#yaml-output)** – The output is formatted as a [YAML](https://yaml.org/) string.
++ **[`yaml-stream`](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output-format.html#yaml-stream-output)** – The output is streamed and formatted as a [YAML](https://yaml.org/) string. Streaming allows for faster handling of large data types.
++ **[`text`](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output-format.html#text-output)** – The output is formatted as multiple lines of tab-separated string values. This can be useful to pass the output to a text processor, like `grep`, `sed`, or `awk`.
++ **[`table`](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output-format.html#table-output)** – The output is formatted as a table using the characters \+\|- to form the cell borders. It typically presents the information in a "human-friendly" format that is much easier to read than the others, but not as programmatically useful.
 
 **`parameter_validation` - shared AWS `config` file setting**
 Specifies whether the SDK or tool attempts to validate command line parameters before sending them to the AWS service endpoint.

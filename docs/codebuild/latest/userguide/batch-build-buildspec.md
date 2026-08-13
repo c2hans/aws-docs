@@ -64,7 +64,7 @@ A Boolean value that indicates whether to run the Docker daemon inside a Docker 
 The identifier of the environment type to use for the task. See **Environment type** in [Build environment compute modes and types](build-env-ref-compute-types.md) for possible values.
 **variables**
 The environment variables that will be present in the build environment. See [env/variables](build-spec-ref.md#build-spec.env.variables) for more information.
-Note that **compute-type** and **fleet** cannot be provided in the same identifer of a single build.
+Note that **compute-type** and **fleet** cannot be provided in the same identifier of a single build.
 
 **ignore-failure**
 Optional. A Boolean value that indicates if a failure of this build task can be ignored.
@@ -139,7 +139,7 @@ A Boolean value that indicates whether to run the Docker daemon inside a Docker 
 The identifier of the environment type to use for the task. See **Environment type** in [Build environment compute modes and types](build-env-ref-compute-types.md) for possible values.
 **variables**
 The environment variables that will be present in the build environment. See [env/variables](build-spec-ref.md#build-spec.env.variables) for more information.
-Note that **compute-type** and **fleet** cannot be provided in the same identifer of a single build.
+Note that **compute-type** and **fleet** cannot be provided in the same identifier of a single build.
 
 **ignore-failure**
 Optional. A Boolean value that indicates if a failure of this build task can be ignored.
@@ -233,9 +233,9 @@ For more information, see [Build matrix](batch-build.md#batch_build_matrix).
 ## `batch/build-fanout`
 <a name="build-spec.batch.build-fanout"></a>
 
-Defines a *build fanout*. A build fanout is used to define a task that is split into multiple builds that runs in parallel. For more information, see [Execute parallel tests in batch builds](parallel-test.md).
+Defines a *build fanout*. A build fanout is used to define a task that is split into multiple builds that run in parallel. For more information, see [Execute parallel tests in batch builds](parallel-test.md).
 
-This element contains an build task that can be split into multiple builds. The `build-fanout` section contains the following properties.
+This element contains a build task that can be split into multiple builds. The `build-fanout` section contains the following properties.
 
 **parallelism**
 Required. The number of builds that will run tests in parallel.

@@ -109,7 +109,7 @@ The node groups listed are [managed node groups](managed-node-groups.md) only.
 
    1. Open the [Amazon EKS console](https://console.aws.amazon.com/eks/home#/clusters).
 
-   1. choose the cluster to delete and choose **Delete**.
+   1. Choose the cluster to delete and choose **Delete**.
 
    1. On the delete cluster confirmation screen, choose **Delete**.
 

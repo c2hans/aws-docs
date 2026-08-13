@@ -61,7 +61,7 @@ The Aurora DB cluster where data is replicated from. You can specify a DB cluste
 
 **Target**
 The data warehouse or lakehouse where the data is replicated to. There are two types of data warehouse: a [provisioned cluster](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html) data warehouse and a [serverless](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-workgroup-namespace.html) data warehouse. A provisioned cluster data warehouse is a collection of computing resources called nodes, which are organized into a group called a *cluster*. A serverless data warehouse is comprised of a workgroup that stores compute resources, and a namespace that houses the database objects and users. Both data warehouses run an analytics engine and contain one or more databases.
-A target lakehouse consists of catalogs, databases, tables, and views. For more information about lakehouse architecture, see [https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/lakehouse-components.html](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/lakehouse-components.html) in the * Amazon SageMaker AI Unified Studio User Guide*.
+A target lakehouse consists of catalogs, databases, tables, and views. For more information about lakehouse architecture, see [SageMaker Lakehouse components](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/lakehouse-components.html) in the * Amazon SageMaker AI Unified Studio User Guide*.
 Multiple source DB clusters can write to the same target.
 For more information, see [Data warehouse system architecture](https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html) in the *Amazon Redshift Developer Guide*.
 

@@ -15,7 +15,7 @@ VPC Lattice uses the service-linked role named AWSServiceRoleForVpcLattice.
 The **AWSServiceRoleForVpcLattice** service-linked role trusts the following service to assume the role:
 + `vpc-lattice.amazonaws.com`
 
-The role permissions policy named AWSVpcLatticeServiceRolePolicy allows VPC Lattice to publish CloudWatch metrics in the `AWS/VpcLattice` namespace. For more information, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSVpcLatticeServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSVpcLatticeServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
+The role permissions policy named AWSVpcLatticeServiceRolePolicy allows VPC Lattice to publish CloudWatch metrics in the `AWS/VpcLattice` namespace. For more information, see [AWSVpcLatticeServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSVpcLatticeServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
 
 You must configure permissions to allow an IAM entity (such as a user, group, or role) to create, edit, or delete a service-linked role. For more information, see [Example policy: Create a service-linked role](security_iam_id-based-policies.md#security_iam_id-based-policy-examples-service-linked-role).
 

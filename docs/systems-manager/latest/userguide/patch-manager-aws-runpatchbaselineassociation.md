@@ -14,8 +14,8 @@ This document supports Amazon Elastic Compute Cloud (Amazon EC2) instances for L
 `AWS-RunPatchBaselineAssociation`, however, differs from `AWS-RunPatchBaseline` in the following ways:
 + `AWS-RunPatchBaselineAssociation` is intended for use primarily with State Manager associations created using [Quick Setup](systems-manager-quick-setup.md), a tool in AWS Systems Manager. Specifically, when you use the Quick Setup Host Management configuration type, if you choose the option **Scan instances for missing patches daily**, the system uses `AWS-RunPatchBaselineAssociation` for the operation.
 
-  In most cases, however, when setting up your own patching operations, you should choose [`AWS-RunPatchBaseline`](patch-manager-aws-runpatchbaseline.md) or [`AWS-RunPatchBaselineWithHooks`](patch-manager-aws-runpatchbaselinewithhooks.md) instead of `AWS-RunPatchBaselineAssociation`.
-+ When you use the `AWS-RunPatchBaselineAssociation` document, you can specify a tag key pair in the document's `BaselineTags` parameter field. If a custom patch baseline in your AWS account shares these tags, Patch Manager, a tool in AWS Systems Manager, uses that tagged baseline when it runs on the target instances instead of the currently specified "default" patch baseline for the operating system type.
+  Usually, however, when setting up your own patching operations, you should choose [`AWS-RunPatchBaseline`](patch-manager-aws-runpatchbaseline.md) or [`AWS-RunPatchBaselineWithHooks`](patch-manager-aws-runpatchbaselinewithhooks.md) instead of `AWS-RunPatchBaselineAssociation`.
++ When you use the `AWS-RunPatchBaselineAssociation` document, you can specify a tag key pair in the document's `BaselineTags` parameter field. If a custom patch baseline in your AWS account shares these tags, Patch Manager uses that tagged baseline when it runs on the target instances instead of the currently specified "default" patch baseline for the operating system type.
 **Note**
 If you choose to use `AWS-RunPatchBaselineAssociation` in patching operations other than those set up using Quick Setup, and you want to use its optional `BaselineTags` parameter, you must provide some additional permissions to the [instance profile](setup-instance-permissions.md) for Amazon Elastic Compute Cloud (Amazon EC2) instances. For more information, see [Parameter name: `BaselineTags`](#patch-manager-aws-runpatchbaselineassociation-parameters-baselinetags).
 
@@ -27,7 +27,7 @@ If you choose to use `AWS-RunPatchBaselineAssociation` in patching operations ot
 **Important**
 Tag keys and values can't contain the following characters: backtick (`), single quote ('), double quote ("), and dollar sign ($).
 + When `AWS-RunPatchBaselineAssociation` runs, the patch compliance data it collects is recorded using the `PutComplianceItems` API command instead of the `PutInventory` command, which is used by `AWS-RunPatchBaseline`. This difference means that the patch compliance information that is stored and reported per a specific *association*. Patch compliance data generated outside of this association isn't overwritten.
-+ The patch compliance information reported after running `AWS-RunPatchBaselineAssociation` indicates whether or not an instance is in compliance. It doesn't include patch-level details, as demonstrated by the output of the following AWS Command Line Interface (AWS CLI) command. The command filters on `Association` as the compliance type:
++ The patch compliance information reported after running `AWS-RunPatchBaselineAssociation` indicates whether an instance is in compliance. It doesn't include patch-level details, as demonstrated by the output of the following AWS Command Line Interface (AWS CLI) command. The command filters on `Association` as the compliance type:
 
   ```
   aws ssm list-compliance-items \
@@ -65,7 +65,7 @@ Tag keys and values can't contain the following characters: backtick (`), single
 
 If a tag key pair value has been specified as a parameter for the `AWS-RunPatchBaselineAssociation` document, Patch Manager searches for a custom patch baseline that matches the operating system type and has been tagged with that same tag-key pair. This search isn't limited to the current specified default patch baseline or the baseline assigned to a patch group. If no baseline is found with the specified tags, Patch Manager next looks for a patch group, if one was specified in the command that runs `AWS-RunPatchBaselineAssociation`. If no patch group is matched, Patch Manager falls back to the current default patch baseline for the operating system account.
 
-If more than one patch baseline is found with the tags specified in the `AWS-RunPatchBaselineAssociation` document, Patch Manager returns an error message indicating that only one patch baseline can be tagged with that key-value pair in order for the operation to proceed.
+If more than one patch baseline is found with the tags specified in the `AWS-RunPatchBaselineAssociation` document, Patch Manager returns an error message indicating that only one patch baseline can be tagged with that key-value pair for the operation to proceed.
 
 **Note**
 On Linux nodes, the appropriate package manager for each node type is used to install packages:
@@ -102,7 +102,7 @@ Scan
 When you choose the `Scan` option, `AWS-RunPatchBaselineAssociation` determines the patch compliance state of the instance and reports this information back to Patch Manager. `Scan` doesn't prompt updates to be installed or instances to be rebooted. Instead, the operation identifies where updates are missing that are approved and applicable to the instance.
 
 Install
-When you choose the `Install` option, `AWS-RunPatchBaselineAssociation` attempts to install the approved and applicable updates that are missing from the instance. Patch compliance information generated as part of an `Install` operation doesn't list any missing updates, but might report updates that are in a failed state if the installation of the update didn't succeed for any reason. Whenever an update is installed on an instance, the instance is rebooted to ensure the update is both installed and active. (Exception: If the `RebootOption` parameter is set to `NoReboot` in the `AWS-RunPatchBaselineAssociation` document, the instance isn't rebooted after Patch Manager runs. For more information, see [Parameter name: `RebootOption`](#patch-manager-aws-runpatchbaselineassociation-parameters-norebootoption).)
+When you choose the `Install` option, `AWS-RunPatchBaselineAssociation` attempts to install the approved and applicable updates that are missing from the instance. Patch compliance information generated as part of an `Install` operation doesn't list any missing updates, but might report updates that are in a failed state if the installation of the update didn't succeed for any reason. Whenever an update is installed on an instance, the instance is rebooted to make sure the update is both installed and active. (Exception: If the `RebootOption` parameter is set to `NoReboot` in the `AWS-RunPatchBaselineAssociation` document, the instance isn't rebooted after Patch Manager runs. For more information, see [Parameter name: `RebootOption`](#patch-manager-aws-runpatchbaselineassociation-parameters-norebootoption).)
 If a patch specified by the baseline rules is installed *before* Patch Manager updates the instance, the system might not reboot as expected. This can happen when a patch is installed manually by a user or installed automatically by another program, such as the `unattended-upgrades` package on Ubuntu Server.
 
 ### Parameter name: `BaselineTags`
@@ -119,7 +119,7 @@ If a patch specified by the baseline rules is installed *before* Patch Manager u
 **Important**
 Tag keys and values can't contain the following characters: backtick (`), single quote ('), double quote ("), and dollar sign ($).
 
-The `BaselineTags` value is used by Patch Manager to ensure that a set of instances that are patched in a single operation all have the exact same set of approved patches. When the patching operation runs, Patch Manager checks to see if a patch baseline for the operating system type is tagged with the same key-value pair you specify for `BaselineTags`. If there is a match, this custom patch baseline is used. If there isn't a match, a patch baseline is identified according to any patch group specified for the patching operating. If there is none, the AWS managed predefined patch baseline for that operating system is used.
+The `BaselineTags` value is used by Patch Manager to make sure that a set of instances that are patched in a single operation all have the exact same set of approved patches. When the patching operation runs, Patch Manager checks to see if a patch baseline for the operating system type is tagged with the same key-value pair you specify for `BaselineTags`. If there is a match, this custom patch baseline is used. If there isn't a match, a patch baseline is identified according to any patch group specified for the patching operating. If there is none, the AWS managed predefined patch baseline for that operating system is used.
 
 **Additional permission requirements**
 If you use `AWS-RunPatchBaselineAssociation` in patching operations other than those set up using Quick Setup, and you want to use the optional `BaselineTags` parameter, you must add the following permissions to the [instance profile](setup-instance-permissions.md) for Amazon Elastic Compute Cloud (Amazon EC2) instances.
@@ -153,7 +153,7 @@ Replace {{patch-baseline-arn}} with the Amazon Resource Name (ARN) of the patch 
 
 **Usage**: Required.
 
-`AssociationId` is the ID of an existing association in State Manager, a tool in AWS Systems Manager. It's used by Patch Manager to add compliance data to a specified association. This association is related to a patch `Scan` operation enabled in a [Host Management configuration created in Quick Setup](quick-setup-host-management.md). By sending patching results as association compliance data instead of inventory compliance data, existing inventory compliance information for your instances isn't overwritten after a patching operation, nor for other association IDs. If you don't already have an association you want to use, you can create one by running [https://docs.aws.amazon.com/cli/latest/reference/ssm/create-association.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/create-association.html) the command. For example:
+`AssociationId` is the ID of an existing association in State Manager. It's used by Patch Manager to add compliance data to a specified association. This association is related to a patch `Scan` operation enabled in a [Host Management configuration created in Quick Setup](quick-setup-host-management.md). By sending patching results as association compliance data instead of inventory compliance data, existing inventory compliance information for your instances isn't overwritten after a patching operation, nor for other association IDs. If you don't already have an association you want to use, you can create one by running [create-association](https://docs.aws.amazon.com/cli/latest/reference/ssm/create-association.html) the command. For example:
 
 ------
 #### [ Linux & macOS ]
@@ -199,7 +199,7 @@ The patching operation behavior when using the `InstallOverrideList` parameter d
 
 On Linux & macOS managed nodes, patches specified in the `InstallOverrideList` are applied only as updates to packages that are already installed on the node. If the `InstallOverrideList` includes patches for packages that are not currently installed on the node, those patches are not installed.
 
-Be aware that compliance reports reflect patch states according to what’s specified in the patch baseline, not what you specify in an `InstallOverrideList` list of patches. In other words, Scan operations ignore the `InstallOverrideList` parameter. This is to ensure that compliance reports consistently reflect patch states according to policy rather than what was approved for a specific patching operation.
+Be aware that compliance reports reflect patch states according to what’s specified in the patch baseline, not what you specify in an `InstallOverrideList` list of patches. In other words, Scan operations ignore the `InstallOverrideList` parameter. This is to make sure that compliance reports consistently reflect patch states according to policy rather than what was approved for a specific patching operation.
 
 **Valid URL formats**
 

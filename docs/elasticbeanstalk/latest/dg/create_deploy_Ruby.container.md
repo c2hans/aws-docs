@@ -79,8 +79,8 @@ The Ruby platform defines the following properties for environment configuration
 + **BUNDLER\_DEPLOYMENT\_MODE** – Set to `true` (the default) to install dependencies in [deployment mode](https://bundler.io/man/bundle-install.1.html#DEPLOYMENT-MODE) using Bundler. Set to `false` to run `bundle install` in development mode.
 **Note**
 This environment property isn't defined on Amazon Linux AMI Ruby platform branches (preceding Amazon Linux 2).
-+  **RAILS\_SKIP\_ASSET\_COMPILATION** – Set to `true` to skip running [http://guides.rubyonrails.org/asset_pipeline.html#precompiling-assets](http://guides.rubyonrails.org/asset_pipeline.html#precompiling-assets) during deployment.
-+  **RAILS\_SKIP\_MIGRATIONS** – Set to `true` to skip running [http://guides.rubyonrails.org/active_record_migrations.html#running-migrations](http://guides.rubyonrails.org/active_record_migrations.html#running-migrations) during deployment.
++  **RAILS\_SKIP\_ASSET\_COMPILATION** – Set to `true` to skip running [`rake assets:precompile`](http://guides.rubyonrails.org/asset_pipeline.html#precompiling-assets) during deployment.
++  **RAILS\_SKIP\_MIGRATIONS** – Set to `true` to skip running [`rake db:migrate`](http://guides.rubyonrails.org/active_record_migrations.html#running-migrations) during deployment.
 +  **RACK\_ENV** – Specify the environment stage for Rack. For example, `development`, `production`, or `test`.
 
 Inside the Ruby environment running in Elastic Beanstalk, environment variables are accessible using the `ENV` object. For example, you could read a property named `API_ENDPOINT` to a variable with the following code:

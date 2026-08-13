@@ -9,7 +9,7 @@ Amazon Kendra is no longer open to new customers. For capabilities similar to Am
 
 When you add a new data source in Amazon Kendra, you can use the Amazon VPC feature if the selected data source connector supports this feature.
 
-You can set up a new Amazon Kendra data source with Amazon VPC enabled by using the AWS Management Console or the Amazon Kendra API. Specifically, use the [https://docs.aws.amazon.com/kendra/latest/APIReference/API_CreateDataSource.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_CreateDataSource.html) API operation, and then use the `VpcConfiguration` parameter to provide the following information:
+You can set up a new Amazon Kendra data source with Amazon VPC enabled by using the AWS Management Console or the Amazon Kendra API. Specifically, use the [CreateDataSource](https://docs.aws.amazon.com/kendra/latest/APIReference/API_CreateDataSource.html) API operation, and then use the `VpcConfiguration` parameter to provide the following information:
 + `SubnetIds` – A list of identifiers of Amazon VPC subnets
 + `SecurityGroupIds` – A list of identifiers of Amazon VPC security groups
 

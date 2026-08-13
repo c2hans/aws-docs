@@ -11,4 +11,4 @@ AWS Marketplace Deployment Service provides the following APIs for data retrieva
 
 | Actions | Description | Access level |
 | --- | --- | --- |
-| <a name="aws-marketplace-ListTagsForResource"></a>[https://docs.aws.amazon.com/marketplace-deployment/latest/api-reference/API_ListTagsForResource.html](https://docs.aws.amazon.com/marketplace-deployment/latest/api-reference/API_ListTagsForResource.html) | List tags for a deployment parameter resource | Read |
+| <a name="aws-marketplace-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/marketplace-deployment/latest/api-reference/API_ListTagsForResource.html) | List tags for a deployment parameter resource | Read |

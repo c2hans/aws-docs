@@ -33,7 +33,7 @@ The following examples demonstrate how to export endpoints from an Amazon Pinpoi
 You can use Amazon Pinpoint by running commands with the AWS CLI.
 
 **Example Create export job command**
-To export the endpoints in your Amazon Pinpoint project, use the [https://docs.aws.amazon.com/cli/latest/reference/pinpoint/create-export-job.html](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/create-export-job.html) command:
+To export the endpoints in your Amazon Pinpoint project, use the [`create-export-job`](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/create-export-job.html) command:
 
 ```
 $ aws pinpoint create-export-job \
@@ -65,7 +65,7 @@ The response to this command provides details about the export job:
 The response provides the job ID with the `Id` attribute. You can use this ID to check the current status of the export job.
 
 **Example Get export job command**
-To check the current status of an export job, use the [https://docs.aws.amazon.com/cli/latest/reference/pinpoint/get-export-job.html](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/get-export-job.html) command:
+To check the current status of an export job, use the [`get-export-job`](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/get-export-job.html) command:
 
 ```
 $ aws pinpoint get-export-job \
@@ -101,7 +101,7 @@ The response to this command provides the current state of the export job:
 The response provides the job status with the `JobStatus` attribute. When the job status value is `COMPLETED`, you can get your exported endpoints from your Amazon S3 bucket.
 
 **Example S3 CP command**
-To download your exported endpoints, use the Amazon S3 [https://docs.aws.amazon.com/cli/latest/reference/s3/cp.html](https://docs.aws.amazon.com/cli/latest/reference/s3/cp.html) command:
+To download your exported endpoints, use the Amazon S3 [`cp`](https://docs.aws.amazon.com/cli/latest/reference/s3/cp.html) command:
 
 ```
 $ aws s3 cp s3://{{bucket-name/prefix/key.gz}} {{/local/directory/}}

@@ -27,7 +27,7 @@ The scaling policy also defines a *target utilization*. Target utilization is th
 
  You can set the automatic scaling target utilization values between 20 and 90 percent for your read and write capacity. The default target utilization rate is 70 percent. You can set the target utilization to be a lower percentage if your traffic changes quickly and you want capacity to begin scaling up sooner. You can also set the target utilization rate to a higher rate if your application traffic changes more slowly and you want to reduce the cost of throughput.
 
-For more information about scaling policies, see [ Target tracking scaling policies for Application Auto Scaling](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-target-tracking.html) in the [https://docs.aws.amazon.com/autoscaling/application/userguide/](https://docs.aws.amazon.com/autoscaling/application/userguide/).
+For more information about scaling policies, see [ Target tracking scaling policies for Application Auto Scaling](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-target-tracking.html) in the [*Application Auto Scaling User Guide*](https://docs.aws.amazon.com/autoscaling/application/userguide/).
 
 When you create a scaling policy, Amazon Keyspaces creates two pairs of Amazon CloudWatch alarms on your behalf. Each pair represents your upper and lower boundaries for provisioned and consumed throughput settings. These CloudWatch alarms are triggered when the table's actual utilization deviates from your target utilization for a sustained period of time. To learn more about Amazon CloudWatch, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/).
 

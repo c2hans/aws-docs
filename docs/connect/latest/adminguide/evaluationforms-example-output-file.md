@@ -33,7 +33,7 @@ For example:
 ## Known issue: Two output files for the same evaluation
 <a name="release-note-evaluation-output"></a>
 
-Contact Lens generates two output files for the same evaluation form.
+Conversational analytics generates two output files for the same evaluation form.
 + One file is written to the new default S3 path. You can configure the path in the AWS console.
 + Another file, which will be deprecated, is written to a different, previous S3 path. You can disregard this file.
 

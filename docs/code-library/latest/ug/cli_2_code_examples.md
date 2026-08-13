@@ -117,7 +117,7 @@ Some services contain additional example categories that show how to leverage li
 + [Image Builder](cli_2_imagebuilder_code_examples.md)
 + [Incident Manager](cli_2_ssm-incidents_code_examples.md)
 + [Incident Manager Contacts](cli_2_ssm-contacts_code_examples.md)
-+ [Amazon Inspector](cli_2_inspector_code_examples.md)
++ [Amazon Inspector](cli_2_inspector2_code_examples.md)
 + [AWS IoT](cli_2_iot_code_examples.md)
 + [Device Advisor](cli_2_iotdeviceadvisor_code_examples.md)
 + [AWS IoT data](cli_2_iot-data-plane_code_examples.md)

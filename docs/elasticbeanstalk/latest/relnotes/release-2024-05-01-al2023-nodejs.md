@@ -18,17 +18,34 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/alas2023.html) on or before **April 25, 2024** to all AL2023 platforms.<br />Applied security updates that address [CVE-2024-27983](https://explore.alas.aws.amazon.com/CVE-2024-27983.html) to the Node.js AL2023 platform branches.<br />  |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2024-05-01-al2023-nodejs.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2024-05-01-al2023-nodejs.html) |
-| **AMI** | Updated the base AMI to version 2023.4.20240429. |
-| **Node.js** | **Language runtime updates**+  Updated Node.js 20 to version [20.12.2](https://nodejs.org/en/blog/release/v20.12.2). <br />+  For Node.js 18, the security updates were backported to the existing [18.18.2](https://nodejs.org/en/blog/release/v18.18.2) language release on the platform branch. <br />This Node.js update is a security release.<br />**Apache HTTP Server**+  Updated Apache HTTP Server 2.4 to version 2.4.59. For details, see [Changes with Apache 2.4.59](https://downloads.apache.org/httpd/CHANGES_2.4.59) on the *Apache Software Foundation* website. <br />This Apache update is security release. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/alas2023.html">Amazon Linux Security Center</a> on or before <b>April 25, 2024</b> to all AL2023 platforms.<br />Applied security updates that address <a href="https://explore.alas.aws.amazon.com/CVE-2024-27983.html">CVE-2024-27983</a> to the Node.js AL2023 platform branches.<br /> </td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version 2023.4.20240429.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Node.js</b></td><td><b>Language runtime updates</b><ul><li> Updated Node.js 20 to version <a href="https://nodejs.org/en/blog/release/v20.12.2">20.12.2</a>. </li><li> For Node.js 18, the security updates were backported to the existing <a href="https://nodejs.org/en/blog/release/v18.18.2">18.18.2</a> language release on the platform branch. </li></ul><br />This Node.js update is a security release.<br /><b>Apache HTTP Server</b><ul><li> Updated Apache HTTP Server 2.4 to version 2.4.59. For details, see <a href="https://downloads.apache.org/httpd/CHANGES_2.4.59">Changes with Apache 2.4.59</a> on the <i>Apache Software Foundation</i> website. </li></ul><br />This Apache update is security release.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2024-05-01-al2023-nodejs.platforms"></a>

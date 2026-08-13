@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sdk-ref.html
 # AWS SDKs and tools reference for AWS CodeBuild
 <a name="sdk-ref"></a>
 
-To use one the AWS SDKs or tools to automate AWS CodeBuild, see the following resources.
+To use one of the AWS SDKs or tools to automate AWS CodeBuild, see the following resources.
 
 If you want to use the AWS CLI to run CodeBuild, see the [Command line reference](cmd-ref.md).
 

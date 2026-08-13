@@ -22,7 +22,7 @@ You specify the model that you want to use when you create the [batch inference 
 **Warning**
 When using S3 URIs in your prompts, all resources must be in the same S3 bucket and folder. The `InputDataConfig` parameter must specify the folder path containing all linked resources (such as videos or images), not just an individual `.jsonl` file. Note that S3 paths are case-sensitive, so ensure your URIs match the exact folder structure.
 
-Ensure that your inputs conform to the batch inference quotas. You can search for the following quotas at [Amazon Bedrock service quotas](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#limits_bedrock):
+Make sure that your inputs conform to the batch inference quotas. You can search for the following quotas at [Amazon Bedrock service quotas](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#limits_bedrock):
 + **Minimum number of records per batch inference job** – The minimum number of records (JSON objects) across JSONL files in the job.
 + **Records per input file per batch inference job** – The maximum number of records (JSON objects) in a single JSONL file in the job.
 + **Records per batch inference job** – The maximum number of records (JSON objects) across JSONL files in the job.

@@ -12,7 +12,7 @@ You can use Amazon EventBridge to perform a target event when supported AWS Syst
 The following procedure provides general steps for creating an EventBridge rule that engages when a specified event is emitted by Systems Manager. For a list of procedures in this user guide that address specific scenarios, see **More info** at the end of this topic.
 
 **Note**
-When a service in your AWS account emits an event, it always goes to your account’s default event bus. To write a rule that responds to events from AWS services in your account, associate it with the default event bus. You can create a rule on a custom event bus that looks for events from AWS services, but this rule only engages when you receive such an event from another account through cross-account event delivery. For more information, see [Sending and receiving Amazon EventBridge events between AWS accounts](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-cross-account.html) in the *Amazon EventBridge User Guide*.
+When a service in your AWS account emits an event, it always goes to your account's default event bus. To write a rule that responds to events from AWS services in your account, associate it with the default event bus. You can create a rule on a custom event bus that looks for events from AWS services, but this rule only engages when you receive such an event from another account through cross-account event delivery. For more information, see [Sending and receiving Amazon EventBridge events between AWS accounts](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-cross-account.html) in the *Amazon EventBridge User Guide*.
 
 **To configure EventBridge for Systems Manager events**
 
@@ -26,7 +26,7 @@ When a service in your AWS account emits an event, it always goes to your accoun
 
    A rule can't have the same name as another rule in the same AWS Region and on the same event bus.
 
-1. For **Event bus**, choose the event bus that you want to associate with this rule. If you want this rule to respond to matching events that come from your own AWS account, select **default**. When an AWS service in your account emits an event, it always goes to your account’s default event bus.
+1. For **Event bus**, choose the event bus that you want to associate with this rule. If you want this rule to respond to matching events that come from your own AWS account, select **default**. When an AWS service in your account emits an event, it always goes to your account's default event bus.
 
 1. For **Rule type**, choose **Rule with an event pattern**.
 

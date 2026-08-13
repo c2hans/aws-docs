@@ -18,7 +18,7 @@ This AWS Security Hub CSPM control evaluates the AWS Service Catalog service and
 
 **Resource type:** `AWS::ServiceCatalog::Portfolio`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/service-catalog-shared-within-organization.html](https://docs.aws.amazon.com/config/latest/developerguide/service-catalog-shared-within-organization.html)
+**AWS Config rule:** [service-catalog-shared-within-organization](https://docs.aws.amazon.com/config/latest/developerguide/service-catalog-shared-within-organization.html)
 
 **Schedule type:** Change triggered
 

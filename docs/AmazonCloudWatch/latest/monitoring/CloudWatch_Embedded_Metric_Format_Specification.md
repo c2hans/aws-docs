@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 
  The CloudWatch embedded metric format is a JSON specification used to instruct CloudWatch Logs to automatically extract metric values embedded in structured log events. You can use CloudWatch to graph and create alarms on the extracted metric values. This section describes embedded metric format specification conventions and the embedded metric format document structure.
 
+**Note**
+Embedded metric format ensures at least one time delivery of metrics extracted from log events, while duplicate metric values may occasionally occur.
+
 ## Embedded metric format specification conventions
 <a name="CloudWatch_Embedded_Metric_Format_Specification_Conventions"></a>
 

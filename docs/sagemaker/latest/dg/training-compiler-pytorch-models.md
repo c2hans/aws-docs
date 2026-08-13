@@ -42,7 +42,7 @@ trainer=Trainer(args=training_args, **kwargs)
 #### For single GPU training
 <a name="training-compiler-pytorch-models-transformers-trainer-single-gpu"></a>
 
-You don't need to change your code when you use the [https://huggingface.co/docs/transformers/main_classes/trainer](https://huggingface.co/docs/transformers/main_classes/trainer) class.
+You don't need to change your code when you use the [`transformers.Trainer`](https://huggingface.co/docs/transformers/main_classes/trainer) class.
 
 #### For distributed training
 <a name="training-compiler-pytorch-models-transformers-trainer-distributed"></a>

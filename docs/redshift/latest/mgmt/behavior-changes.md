@@ -15,6 +15,7 @@ As Amazon Redshift continues to evolve and improve, certain changes in behavior 
 The following describes upcoming behavior changes.
 
 **Topics**
++ [Amazon Redshift enforces user lockout after multiple failed login attempts starting with Patch 204](#user-lockout-patch204)
 + [Enhanced billing model for manual snapshots on Amazon Redshift Serverless and Amazon Redshift RG instances effective June 08, 2026](#snapshot-billing-model-jun2026)
 + [Iceberg DELETE on Lake Formation tables requires DELETE permission starting with Patch 202](#iceberg-delete-lf-permission-patch202)
 + [Amazon Redshift Serverless preserves zero-ETL and S3 event integrations on snapshot restore starting with Patch 202](#serverless-restore-integrations-patch202)
@@ -24,6 +25,20 @@ The following describes upcoming behavior changes.
 + [Amazon Redshift won’t support functions that access consumer information through datasharing after February 16, 2026](#datasharing-feb2026)
 + [Minimum Transport Layer Security (TLS) version changes effective starting August 30, 2026](#tls-changes-aug2026)
 + [Amazon Redshift won’t support the creation of new scalar Python UDFs after October 30, 2025](#python-udf-oct2025)
+
+### Amazon Redshift enforces user lockout after multiple failed login attempts starting with Patch 204
+<a name="user-lockout-patch204"></a>
+
+Starting with Amazon Redshift Patch 204, to enhance the security posture of your data warehouse, Amazon Redshift automatically locks a database user after it exceeds the configured number of consecutive failed login attempts. The feature is enabled by default with a threshold of 5 failed attempts (configurable from 2 to 50) and applies to both provisioned clusters and serverless workgroups.
+
+You may be impacted by this if you connect using database (password-based) connections. Once locked, login attempts are rejected even with the correct password until an administrator or superuser unlocks it. Federated identities that authenticate through IAM or AWS IAM Identity Center are not affected, because they use short-lived tokens rather than static passwords.
+
+To manage this behavior:
++ Set the threshold with `ALTER SYSTEM SET max_failed_login_attempts TO value;` (2–50, default 5).
++ Check lockout status for all users with `SHOW USER LOCKOUT;`.
++ Unlock user with `ALTER USER username LOGIN PASSWORD 'password';`, which also resets the failed-attempt counter.
+
+For more information, see [SHOW USER LOCKOUT](https://docs.aws.amazon.com/redshift/latest/dg/r_SHOW_USER_LOCKOUT.html), [ALTER USER](https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_USER.html), and [max\_failed\_login\_attempts](https://docs.aws.amazon.com/redshift/latest/dg/max_failed_login_attempts.html).
 
 ### Enhanced billing model for manual snapshots on Amazon Redshift Serverless and Amazon Redshift RG instances effective June 08, 2026
 <a name="snapshot-billing-model-jun2026"></a>

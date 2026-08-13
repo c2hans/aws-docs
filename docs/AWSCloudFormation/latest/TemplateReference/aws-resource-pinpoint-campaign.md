@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Schedule](#cfn-pinpoint-campaign-schedule)" : {{Schedule}},
       "[SegmentId](#cfn-pinpoint-campaign-segmentid)" : {{String}},
       "[SegmentVersion](#cfn-pinpoint-campaign-segmentversion)" : {{Integer}},
-      "[Tags](#cfn-pinpoint-campaign-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
+      "[Tags](#cfn-pinpoint-campaign-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
       "[TemplateConfiguration](#cfn-pinpoint-campaign-templateconfiguration)" : {{TemplateConfiguration}},
       "[TreatmentDescription](#cfn-pinpoint-campaign-treatmentdescription)" : {{String}},
       "[TreatmentName](#cfn-pinpoint-campaign-treatmentname)" : {{String}}
@@ -70,7 +70,7 @@ Properties:
   [SegmentId](#cfn-pinpoint-campaign-segmentid): {{String}}
   [SegmentVersion](#cfn-pinpoint-campaign-segmentversion): {{Integer}}
   [Tags](#cfn-pinpoint-campaign-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
   [TemplateConfiguration](#cfn-pinpoint-campaign-templateconfiguration): {{
     TemplateConfiguration}}
   [TreatmentDescription](#cfn-pinpoint-campaign-treatmentdescription): {{String}}
@@ -168,7 +168,7 @@ The version of the segment to associate with the campaign.
 An array of key-value pairs to apply to this resource.
 For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TemplateConfiguration`  <a name="cfn-pinpoint-campaign-templateconfiguration"></a>
@@ -197,14 +197,14 @@ A custom name for the treatment.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a string that combines the unique identifier for the Amazon Pinpoint application with the unique identifier for the segment that the campaign targets.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-pinpoint-campaign-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-pinpoint-campaign-return-values-fn--getatt-fn--getatt"></a>

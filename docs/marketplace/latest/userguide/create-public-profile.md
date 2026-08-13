@@ -34,7 +34,7 @@ The email address of the person who will manage the partner relationship with AW
 
 1. Sign in to the AWS account where you want to register with AWS Marketplace.
 
-1. You will be redirected to the [AWS Partner Central](https://us-east-1.console.aws.amazon.com/partnercentral/home?region=us-east-1) service homepage. Choose [https://us-east-1.console.aws.amazon.com/partnercentral/dashboard?region=us-east-1](https://us-east-1.console.aws.amazon.com/partnercentral/dashboard?region=us-east-1).
+1. You will be redirected to the [AWS Partner Central](https://us-east-1.console.aws.amazon.com/partnercentral/home?region=us-east-1) service homepage. Choose [**Get Started**](https://us-east-1.console.aws.amazon.com/partnercentral/dashboard?region=us-east-1).
 
 1. Follow the [Partner Central registration process](https://docs.aws.amazon.com/partner-central/latest/getting-started/registration-process.html).
 
@@ -53,7 +53,7 @@ If you need additional AWS Marketplace accounts (for example, to manage separate
 
 1. Sign in to the AWS account where you want to register with AWS Marketplace.
 
-1. You will be redirected to the [AWS Partner Central](https://us-east-1.console.aws.amazon.com/partnercentral/home?region=us-east-1) service homepage. Choose [https://us-east-1.console.aws.amazon.com/partnercentral/register/seller?region=us-east-1](https://us-east-1.console.aws.amazon.com/partnercentral/register/seller?region=us-east-1) (located in the bottom right). Do not choose **Get Started** because you already have an AWS Partner account.
+1. You will be redirected to the [AWS Partner Central](https://us-east-1.console.aws.amazon.com/partnercentral/home?region=us-east-1) service homepage. Choose [**Create an AWS Marketplace account**](https://us-east-1.console.aws.amazon.com/partnercentral/register/seller?region=us-east-1) (located in the bottom right). Do not choose **Get Started** because you already have an AWS Partner account.
 
 1. Provide your legal business name and choose **Next**.
 

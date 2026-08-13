@@ -73,7 +73,7 @@ s3client.createBucket(request)
 ## Requests with no required inputs
 <a name="requests-no-required-inputs"></a>
 
-Operations that don’t have required inputs can be called without having to pass a request object. This is often possible with list-type operations, such as the Amazon S3 `listBuckets` API operation.
+Operations that don’t have required inputs can be called without having to pass a request object. This is often possible with list-type operations, such as the Amazon S3 [`listBuckets`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/list-buckets.html) API operation.
 
 For example, the following three statements are equivalent:
 

@@ -39,7 +39,7 @@ You can create a reverse DNS record for your Elastic IP address as follows.
 #### [ AWS CLI ]
 
 **To create a reverse DNS record**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-address-attribute.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-address-attribute.html) command.
+Use the [modify-address-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-address-attribute.html) command.
 
 ```
 aws ec2 modify-address-attribute \
@@ -69,7 +69,7 @@ The following is example output.
 #### [ PowerShell ]
 
 **To create a reverse DNS record**
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2AddressAttribute.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2AddressAttribute.html) cmdlet.
+Use the [Edit-EC2AddressAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2AddressAttribute.html) cmdlet.
 
 ```
 Edit-EC2AddressAttribute `
@@ -126,7 +126,7 @@ The address cannot be released because it is locked to your account.
 #### [ AWS CLI ]
 
 **To remove a reverse DNS record**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/reset-address-attribute.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/reset-address-attribute.html) command.
+Use the [reset-address-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/reset-address-attribute.html) command.
 
 ```
 aws ec2 reset-address-attribute \
@@ -156,7 +156,7 @@ The following is example output.
 #### [ PowerShell ]
 
 **To remove a reverse DNS record**
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Reset-EC2AddressAttribute.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Reset-EC2AddressAttribute.html) cmdlet.
+Use the [Reset-EC2AddressAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Reset-EC2AddressAttribute.html) cmdlet.
 
 ```
 Reset-EC2AddressAttribute `

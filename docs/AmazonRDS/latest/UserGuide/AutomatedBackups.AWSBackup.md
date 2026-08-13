@@ -10,7 +10,7 @@ AWS Backup is a fully managed backup service that makes it easy to centralize an
 **Note**
 Backups managed by AWS Backup are considered manual DB snapshots, but don't count toward the DB snapshot quota for RDS. Backups that were created with AWS Backup have names ending in `awsbackup:{{backup-job-number}}`.
 
-For more information about AWS Backup, see the [https://docs.aws.amazon.com/aws-backup/latest/devguide](https://docs.aws.amazon.com/aws-backup/latest/devguide).
+For more information about AWS Backup, see the [*AWS Backup Developer Guide*](https://docs.aws.amazon.com/aws-backup/latest/devguide).
 
 **To view backups managed by AWS Backup**
 

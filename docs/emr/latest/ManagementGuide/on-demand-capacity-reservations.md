@@ -36,7 +36,7 @@ In this case, Amazon EMR launches capacity in the lowest-price instance pool wit
 | Available Open capacity reservations | 50 | 100 | 100 |
 | --- |--- |--- |--- |
 
-After the instance fleet is launched, you can run [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-capacity-reservations.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-capacity-reservations.html) to see how many unused capacity reservations remain.
+After the instance fleet is launched, you can run [`describe-capacity-reservations`](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-capacity-reservations.html) to see how many unused capacity reservations remain.
 
 **Example 2: Lowest-price instance pool in launch request does not have available open capacity reservations**
 
@@ -136,7 +136,7 @@ In this case, Amazon EMR falls back to launching core nodes using lowest-price s
 | Available open capacity reservations | - | 50 | 50 |
 | --- |--- |--- |--- |
 
-After the instance fleet is launched, you can run [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-capacity-reservations.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-capacity-reservations.html) to see how many unused capacity reservations remain.
+After the instance fleet is launched, you can run [`describe-capacity-reservations`](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-capacity-reservations.html) to see how many unused capacity reservations remain.
 
 **Configure Instance Fleets to use open capacity reservations first**
 
@@ -217,7 +217,7 @@ In this case, Amazon EMR launches capacity in the instance pool with available t
 | Available targeted capacity reservations | - | 50 | 50 |
 | --- |--- |--- |--- |
 
-After the instance fleet is launched, you can run [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-capacity-reservations.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-capacity-reservations.html) to see how many unused capacity reservations remain.
+After the instance fleet is launched, you can run [`describe-capacity-reservations`](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-capacity-reservations.html) to see how many unused capacity reservations remain.
 
 **Configure Instance Fleets to use targeted capacity reservations first**
 

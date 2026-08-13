@@ -7,7 +7,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 # Connecting Salesforce Online to Amazon Q Business
 <a name="salesforce-connector"></a>
 
-Salesforce is a customer relationship management (CRM) tool for managing support, sales, and marketing teams. You can connect Salesforce Online instance to Amazon Q Business—using either the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q web experience.
+Salesforce is a customer relationship management (CRM) tool for managing support, sales, and marketing teams. You can connect Salesforce Online instance to Amazon Q Business—using either the AWS Management Console or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q web experience.
 
 The Amazon Q Salesforce Online connector supports the following Salesforce Online editions: Developer Edition and Enterprise Edition.
 

@@ -21,5 +21,6 @@ The following sections cover how to set up, understand key concepts, and use Hyp
 + [Tasks](sagemaker-hyperpod-eks-operate-console-ui-governance-tasks.md)
 + [Policies](sagemaker-hyperpod-eks-operate-console-ui-governance-policies.md)
 + [Example HyperPod task governance AWS CLI commands](sagemaker-hyperpod-eks-operate-console-ui-governance-cli.md)
++ [Upgrade the task governance add-on](sagemaker-hyperpod-eks-operate-console-ui-governance-upgrade.md)
 + [Troubleshoot](sagemaker-hyperpod-eks-operate-console-ui-governance-troubleshoot.md)
 + [Attribution document for Amazon SageMaker HyperPod task governance](sagemaker-hyperpod-eks-operate-console-ui-governance-attributions.md)

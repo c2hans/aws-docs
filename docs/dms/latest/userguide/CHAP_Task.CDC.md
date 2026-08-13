@@ -41,13 +41,13 @@ PostgreSQL as a source doesn't support a custom CDC start time. This is because 
 + **From a CDC native start point** – You can also start from a native point in the source engine's transaction log. In some cases, you might prefer this approach because a timestamp can indicate multiple native points in the transaction log. AWS DMS supports this feature for the following source endpoints:
   + SQL Server
   + PostgreSQL
+  + Amazon Aurora PostgreSQL
   + Oracle
   + MySQL
+  + Amazon Aurora MySQL
   + MariaDB
 **Note**
 The following database endpoints do not support CDC native start point functionality:
- Amazon Aurora MySQL
- Amazon Aurora PostgreSQL
 Amazon DocumentDB (with MongoDB compatibility)
 Amazon S3
 IBM Db2 for z/OS

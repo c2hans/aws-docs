@@ -5,7 +5,18 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-you
 # Configure access to AWS accounts
 <a name="manage-your-accounts"></a>
 
-AWS IAM Identity Center is integrated with AWS Organizations, which enables you to centrally manage permissions across multiple AWS accounts without configuring each of your accounts manually. You can define permissions and assign these permissions to workforce users to control their access to specific AWS accounts using an [organization instance](organization-instances-identity-center.md) of IAM Identity Center. [Account instances](account-instances-identity-center.md) of IAM Identity Center do not support account access.
+Organization instances of IAM Identity Center are integrated with AWS Organizations. This enables you to centrally manage permissions across multiple AWS accounts without configuring access individually to each account.
+
+The following table compares the account access management options that you should consider:
+
+|   | IAM roles with account access manager | IAM Identity Center permission sets | IAM roles with direct IAM federation |
+| --- | --- | --- | --- |
+| Best for | Workforce users and groups with custom IAM roles that vary across accounts. Decentralized role creation and provisioning with centralized role assignment to users. | Uniform baseline workforce access such as read-only and admin. Centralized role creation and provisioning. | Workloads |
+| Scope | Multiple accounts in an AWS organization | Multiple accounts in an AWS organization | Per account |
+| IAM role provisioning | + Infrastructure as code (IaC)<br />+ Manual provisioning through the AWS IAM console | Automatically provisioned | + Infrastructure as code (IaC)<br />+ Manual provisioning through the AWS IAM console or external IdP consoles |
+| Role-to-identity mapping resides in | Account access manager | IAM Identity Center | External IdP |
+| End user experience | Users access AWS accounts through the account access portal URL. Requires IAM Identity Center authentication. | Users access AWS accounts through the AWS access portal URL. | Users access AWS accounts through account-specific SAML applications (icons) in their IdP portal. |
+| AWS CLI user experience | User signs into AWS and accesses an AWS account with a specific role in a web browser. User types aws login on the command line to retrieve the IAM role session credentials from the browser. For the duration of the IAM role session, the user can work with the AWS CLI without re-authenticating. | User configures a profile including the desired account and role pair by typing aws configure sso. User types aws sso login to initiate a new session using a profile. If there is no active IAM Identity Center session, the user authenticates in a browser. See the AWS IAM Identity Center User Guide for more details. | Custom integrations using AWS SDK credential providers |
 
 ## AWS account types
 <a name="account-types"></a>
@@ -45,6 +56,8 @@ For each task and account type, the following table indicates whether the IAM Id
 <a name="assigning-account-access"></a>
 
 You can use *permission sets* to simplify how you assign users and groups in your organization access to AWS accounts. Permission sets are stored in IAM Identity Center and define the level of access that users and groups have to an AWS account. You can create a single permission set and assign it to multiple AWS accounts within your organization. You can also assign multiple permission sets to the same user.
+
+You can also use [account access manager](https://docs.aws.amazon.com/IAM/latest/UserGuide/account-access-manager.html) — an IAM feature — to assign existing IAM roles to IAM Identity Center users and groups in your organization's accounts. You can use account access manager on its own, or together with permission sets. Account access manager gives you access to the full IAM role feature set, including custom trust policies, role tags for ABAC, and configurable role paths.
 
 For more information about permission sets, see [Create, manage, and delete permission sets](permissionsets.md).
 

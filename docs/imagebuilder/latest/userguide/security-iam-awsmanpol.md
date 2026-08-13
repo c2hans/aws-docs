@@ -29,7 +29,7 @@ This policy includes the following permissions:
 + **Amazon S3** – Access is granted to list buckets belonging to the account, and also Image Builder buckets with "imagebuilder" in their names.
 + **Amazon SNS** – Write permissions are granted to Amazon SNS to verify topic ownership for topics containing "imagebuilder".
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSImageBuilderFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSImageBuilderFullAccess.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AWSImageBuilderFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSImageBuilderFullAccess.html) in the *AWS Managed Policy Reference*.
 
 ## AWSImageBuilderReadOnlyAccess policy
 <a name="sec-iam-manpol-AWSImageBuilderReadOnlyAccess"></a>
@@ -43,7 +43,7 @@ This policy includes the following permissions:
 + **Image Builder** – Access is granted for read-only access to Image Builder resources.
 + **IAM** – Access is granted to verify the existence of the Image Builder service-linked role via the `iam:GetRole` API action.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSImageBuilderReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSImageBuilderReadOnlyAccess.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AWSImageBuilderReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSImageBuilderReadOnlyAccess.html) in the *AWS Managed Policy Reference*.
 
 ## AWSServiceRoleForImageBuilder policy
 <a name="sec-iam-manpol-AWSServiceRoleForImageBuilder"></a>
@@ -83,7 +83,7 @@ The policy includes the following permissions:
   Image Builder is able to read public Parameter Store Parameters, and read and update private Parameters prefixed with `/imagebuilder/` so that it can update the Parameter value with the output AMI IDs that Image Builder creates from a new build.
 + **AWS STS** – Access is granted for Image Builder to assume roles named **EC2ImageBuilderDistributionCrossAccountRole** from your account to any account where the Trust policy on the role permits it. This is used for cross-account image distribution.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceRoleForImageBuilder.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceRoleForImageBuilder.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AWSServiceRoleForImageBuilder](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceRoleForImageBuilder.html) in the *AWS Managed Policy Reference*.
 
 ## EC2ImageBuilderExecutionPolicy policy
 <a name="sec-iam-manpol-EC2ImageBuilderExecutionPolicy"></a>
@@ -121,7 +121,7 @@ The policy includes the following permissions:
   Image Builder can read public Parameter Store Parameters, and read and update private Parameters prefixed with `/imagebuilder/` so that it can update the Parameter value with the output AMI IDs that Image Builder creates from a new build.
 + **AWS STS** – Access is granted for Image Builder to assume roles named **EC2ImageBuilderDistributionCrossAccountRole** from your account to any account where the Trust policy on the role permits it. This is used for cross-account image distribution.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ImageBuilderExecutionPolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ImageBuilderExecutionPolicy.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [EC2ImageBuilderExecutionPolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ImageBuilderExecutionPolicy.html) in the *AWS Managed Policy Reference*.
 
 ## Ec2ImageBuilderCrossAccountDistributionAccess policy
 <a name="sec-iam-manpol-Ec2ImageBuilderCrossAccountDistributionAccess"></a>
@@ -134,7 +134,7 @@ The **Ec2ImageBuilderCrossAccountDistributionAccess** policy grants permissions 
 This policy includes the following permissions:
 + **Amazon EC2** – Access is granted for Amazon EC2 to describe, copy, and modify attributes for an image, and to create tags for any Amazon EC2 images in the account.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Ec2ImageBuilderCrossAccountDistributionAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Ec2ImageBuilderCrossAccountDistributionAccess.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [Ec2ImageBuilderCrossAccountDistributionAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Ec2ImageBuilderCrossAccountDistributionAccess.html) in the *AWS Managed Policy Reference*.
 
 ## EC2ImageBuilderLifecycleExecutionPolicy policy
 <a name="sec-iam-manpol-EC2ImageBuilderLifecycleExecutionPolicy"></a>
@@ -161,7 +161,7 @@ This policy includes the following permissions:
 + **AWS Resource groups** – Access is granted for Image Builder to get resources based on tags.
 + **EC2 Image Builder** – Access is granted for Image Builder to delete Image Builder image resources.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ImageBuilderLifecycleExecutionPolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ImageBuilderLifecycleExecutionPolicy.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [EC2ImageBuilderLifecycleExecutionPolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ImageBuilderLifecycleExecutionPolicy.html) in the *AWS Managed Policy Reference*.
 
 ## EC2InstanceProfileForImageBuilder policy
 <a name="sec-iam-manpol-EC2InstanceProfileForImageBuilder"></a>
@@ -178,7 +178,7 @@ This policy includes the following permissions:
 + **AWS KMS** – Access is granted to decrypt an Image Builder component, if it was encrypted via AWS KMS.
 + **Amazon S3** – Access is granted to get objects stored in an Amazon S3 bucket whose name starts with `ec2imagebuilder-`, or resources that have an ISO file extension.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2InstanceProfileForImageBuilder.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2InstanceProfileForImageBuilder.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [EC2InstanceProfileForImageBuilder](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2InstanceProfileForImageBuilder.html) in the *AWS Managed Policy Reference*.
 
 ## EC2InstanceProfileForImageBuilderECRContainerBuilds policy
 <a name="sec-iam-manpol-EC2InstanceProfileForImageBuilderECRContainerBuilds"></a>
@@ -195,7 +195,7 @@ This policy includes the following permissions:
 + **AWS KMS** – Access is granted to decrypt an Image Builder component or container recipe, if it was encrypted via AWS KMS.
 + **Amazon S3** – Access is granted to get objects stored in an Amazon S3 bucket whose name starts with `ec2imagebuilder-`.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2InstanceProfileForImageBuilderECRContainerBuilds.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2InstanceProfileForImageBuilderECRContainerBuilds.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [EC2InstanceProfileForImageBuilderECRContainerBuilds](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2InstanceProfileForImageBuilderECRContainerBuilds.html) in the *AWS Managed Policy Reference*.
 
 ## Image Builder updates to AWS managed policies
 <a name="security-iam-awsmanpol-updates"></a>

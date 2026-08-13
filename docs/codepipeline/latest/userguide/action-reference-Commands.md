@@ -40,8 +40,8 @@ Because the isolated build environment is used at the account level, an instance
 + All formats are supported except multi-line formats. You must use single-line format when entering commands.
 + The commands action is supported for cross-account actions. To add a cross-account commands action, add `actionRoleArn` from your target account in the action declaration.
 + For this action, CodePipeline will assume the pipeline service role and use that role to allow access to resources at runtime. It is recommended to configure the service role so that the permissions are scoped down to the action level.
-+ The permissions added to the CodePipeline service role are detailed in [Add permissions to the CodePipeline service role](how-to-custom-role.md#how-to-update-role-new-services) .
-+ The permission needed to view logs in the console is detailed in [Permissions required to view compute logs in the console](security-iam-permissions-console-logs.md) .
++ The permissions added to the CodePipeline service role are detailed in [Add permissions to the CodePipeline service role](how-to-custom-role.md#how-to-update-role-new-services).
++ The permission needed to view logs in the console is detailed in [Permissions required to view compute logs in the console](security-iam-permissions-console-logs.md).
 + Unlike other actions in CodePipeline, you do not set fields in the action configuration; you set the action configuration fields outside of the action configuration.
 
 ## Service role policy permissions
@@ -134,7 +134,7 @@ The subnets for the VPC. This field is needed when your commands need to connect
 Required: No
 The security groups for the VPC. This field is needed when your commands need to connect to resources in a VPC.
 
-The following is a JSON example of the action with configuration fields shown for environment and compute type, along with example environment variable.
+The following is a JSON example of the action with configuration fields shown for environment and compute type, along with an example environment variable.
 
 ```
  {

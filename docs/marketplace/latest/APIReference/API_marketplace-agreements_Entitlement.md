@@ -14,7 +14,7 @@ Represents an entitlement associated with an agreement.
 In the following list, the required parameters are described first.
 
  ** licenseArn **   <a name="AWSMarketplaceService-Type-marketplace-agreements_Entitlement-licenseArn"></a>
-The Amazon Resource Name (ARN) of the AWS License Manager license associated with this entitlement.
+The Amazon Resource Name (ARN) of the AWS License Manager license associated with the entitlement.
 Type: String
 Required: No
 

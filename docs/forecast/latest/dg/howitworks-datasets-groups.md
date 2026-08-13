@@ -72,16 +72,16 @@ The first three rows of this table contain the first available sales data for th
 
 <table>
 <thead>
-  <tr><th>timestamp</th><th>item\_id</th><th>store</th><th>demand</th></tr>
+  <tr><th><code>timestamp</code></th><th><code>item_id</code></th><th><code>store</code></th><th><code>demand</code></th></tr>
 </thead>
 <tbody>
-  <tr><td>2019-01-01</td><td>socks</td><td>NYC</td><td> 25 </td></tr>
-  <tr><td>2019-01-05</td><td>socks</td><td>SFO</td><td>45</td></tr>
-  <tr><td>2019-02-01</td><td>shoes</td><td>ORD</td><td>10</td></tr>
-  <tr><td colspan="4">...</td></tr>
-  <tr><td>2019-06-01</td><td>socks</td><td>NYC</td><td>100</td></tr>
-  <tr><td>2019-06-05</td><td>socks</td><td>SFO</td><td>5</td></tr>
-  <tr><td>2019-07-01</td><td>shoes</td><td>ORD</td><td>50</td></tr>
+  <tr><td><code>2019-01-01</code></td><td><code>socks</code></td><td><code>NYC</code></td><td> <code>25</code> </td></tr>
+  <tr><td><code>2019-01-05</code></td><td><code>socks</code></td><td><code>SFO</code></td><td><code>45</code></td></tr>
+  <tr><td><code>2019-02-01</code></td><td><code>shoes</code></td><td><code>ORD</code></td><td><code>10</code></td></tr>
+  <tr><td colspan="4"><code>...</code></td></tr>
+  <tr><td><code>2019-06-01</code></td><td><code>socks</code></td><td><code>NYC</code></td><td><code>100</code></td></tr>
+  <tr><td><code>2019-06-05</code></td><td><code>socks</code></td><td><code>SFO</code></td><td><code>5</code></td></tr>
+  <tr><td><code>2019-07-01</code></td><td><code>shoes</code></td><td><code>ORD</code></td><td><code>50</code></td></tr>
 </tbody>
 </table>
 

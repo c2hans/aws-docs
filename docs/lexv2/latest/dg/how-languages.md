@@ -80,7 +80,9 @@ Amazon Lex V2 supports the following languages and locales.
 | zh\_HK | Cantonese (Hong Kong) |
 | zu\_ZA\* | Zulu (South Africa) |
 
-**\*Locales with limited feature support via [AMAZON.QInConnectIntent](https://docs.aws.amazon.com/lexv2/latest/dg/built-in-intent-qinconnect.html) and Third-party(3P) Automatic Speech Recognition(ASR) or Text-To-Speech(TTS). See below table for a complete list of supported features.**
+Locales marked with an asterisk (\*) have limited feature support via generative AI and third-party Automatic Speech Recognition (ASR) or Text-To-Speech (TTS). See the following table for a complete list of supported features.
+
+Generative AI feature support includes [Assisted NLU](https://docs.aws.amazon.com/lexv2/latest/dg/assisted-nlu.html) in Primary Mode, [Assisted Slot Resolution](https://docs.aws.amazon.com/lexv2/latest/dg/assisted-slot.html), and [Intent Disambiguation](https://docs.aws.amazon.com/lexv2/latest/dg/generative-intent-disambiguation.html).
 
 ## Languages and locales supported by Amazon Lex V2 features
 <a name="language-features"></a>
@@ -100,7 +102,6 @@ The following table lists Amazon Lex V2 features that are limited to certain lan
 | [Improving recognition of slot values with runtime hints in the conversation](using-hints.md) | English (UK) (en\_GB)<br />English (US) (en\_US) |
 | [Capturing slot values with spelling styles during the conversation](spelling-styles.md) | English (Australia) (en\_AU)<br />English (UK) (en\_GB)<br />English (US) (en\_US) |
 | [Using confidence scores to improve conversation accuracy](confidence-scores.md) | English (UK) (en\_GB)<br />English (US) (en\_US) |
-| Only with [AMAZON.QInConnectIntent](https://docs.aws.amazon.com/lexv2/latest/dg/built-in-intent-qinconnect.html) | Afrikaans (South Africa) (af\_ZA)<br />Arabic (Saudi Arabia) (ar\_SA)<br />Bulgarian (Bulgaria) (bg\_BG)<br />Czech (Czech Republic) (cs\_CZ)<br />Croatian (Croatia) (hr\_HR)<br />Danish (Denmark) (da\_DK)<br />Dutch (Belgium) (nl\_BE)<br />English (Scotland) (en\_AB)<br />English (Ireland) (en\_IE)<br />English (New Zealand) (en\_NZ)<br />English (Wales) (en\_WL)<br />Estonian (Estonia) (et\_ET)<br />Farsi (Iran) (fa\_IR)<br />French (Belgium) (fr\_BE)<br />German (Switzerland) (de\_CH)<br />Hebrew (Israel) (he\_IL)<br />Hungarian (Hungary) (hu\_HU)<br />Icelandic (Iceland) (is\_IS)<br />Indonesian (Indonesia) (id\_ID)<br />Khmer (Cambodia) (km\_KH)<br />Latvian (Latvia) (lv\_LV)<br />Lithuanian (Lithuania) (lt\_LT)<br />Malay (Malaysia) (ms\_MY)<br />Romanian (Romania) (ro\_RO)<br />Serbian (Serbia) (sr\_RS)<br />Slovak (Slovakia) (sk\_SK)<br />Slovenian (Slovenia) (sl\_SI)<br />Somali (Somalia) (so\_SO)<br />Spanish (Mexico) (es\_MX)<br />Sundanese (Indonesia) (su\_ID)<br />Tagalog/Filipino (Philippines) (tl\_PH)<br />Thai (Thailand) (th\_TH)<br />Turkish (Turkey) (tr\_TR)<br />Ukrainian (Ukraine) (uk\_UA)<br />Vietnamese (Vietnam) (vi\_VN)<br />Welsh (United Kingdom) (cy\_GB)<br />Zulu (South Africa) (zu\_ZA) |
 | Only with Third-party ASR (Deepgram) | Dutch (Belgium) (nl\_BE)<br />French (Belgium) (fr\_BE) |
 | Only with Third-party TTS (ElevenLabs) | Afrikaans (South Africa) (af\_ZA)<br />Bulgarian (Bulgaria) (bg\_BG)<br />Croatian (Croatia) (hr\_HR)<br />English (Scotland) (en\_AB)<br />Estonian (Estonia) (et\_ET)<br />Farsi (Iran) (fa\_IR)<br />Hebrew (Israel) (he\_IL)<br />Hungarian (Hungary) (hu\_HU)<br />Indonesian (Indonesia) (id\_ID)<br />Latvian (Latvia) (lv\_LV)<br />Lithuanian (Lithuania) (lt\_LT)<br />Malay (Malaysia) (ms\_MY)<br />Serbian (Serbia) (sr\_RS)<br />Slovak (Slovakia) (sk\_SK)<br />Slovenian (Slovenia) (sl\_SI) |
 

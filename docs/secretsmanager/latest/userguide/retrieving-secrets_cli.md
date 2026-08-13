@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrievi
 **Required permissions: **`secretsmanager:GetSecretValue`
 
 **Example Retrieve the encrypted secret value of a secret**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/get-secret-value.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/get-secret-value.html) example gets the current secret value.
+The following [`get-secret-value`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/get-secret-value.html) example gets the current secret value.
 
 ```
 aws secretsmanager get-secret-value \
@@ -16,7 +16,7 @@ aws secretsmanager get-secret-value \
 ```
 
 **Example Retrieve the previous secret value**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/get-secret-value.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/get-secret-value.html) example gets the previous secret value.
+The following [`get-secret-value`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/get-secret-value.html) example gets the previous secret value.
 
 ```
 aws secretsmanager get-secret-value \
@@ -38,7 +38,7 @@ For an example permissions policy, see [Example: Permission to retrieve a group 
 If you have a VPCE policy that denies permission to retrieve an individual secret in the group you are retrieving, `BatchGetSecretValue` will not return any secret values, and it will return an error.
 
 **Example Retrieve the secret value for a group of secrets listed by name**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/batch-get-secret-value.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/batch-get-secret-value.html) example gets the secret value for three secrets.
+The following [`batch-get-secret-value`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/batch-get-secret-value.html) example gets the secret value for three secrets.
 
 ```
 aws secretsmanager batch-get-secret-value \
@@ -46,7 +46,7 @@ aws secretsmanager batch-get-secret-value \
 ```
 
 **Example Retrieve the secret value for a group of secrets selected by filter**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/batch-get-secret-value.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/batch-get-secret-value.html) example gets the secret value for the secrets that have a tag named "Test".
+The following [`batch-get-secret-value`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/batch-get-secret-value.html) example gets the secret value for the secrets that have a tag named "Test".
 
 ```
 aws secretsmanager batch-get-secret-value \

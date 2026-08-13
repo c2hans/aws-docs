@@ -15,6 +15,7 @@ AWS AppConfig supports all of the versions listed in [Older extension versions](
 **Topics**
 + [AWS AppConfig Agent Lambda Extension release notes](#appconfig-integration-lambda-extensions-versions-release-notes)
 + [Finding your Lambda extension version number](#appconfig-integration-lambda-extensions-versions-find)
++ [Retrieving the latest extension ARN from a public parameter](#appconfig-integration-lambda-extensions-versions-public-param)
 + [x86-64 platform](#appconfig-integration-lambda-extensions-enabling-x86-64)
 + [ARM64 platform](#appconfig-integration-lambda-extensions-enabling-ARM64)
 + [Older extension versions](#appconfig-integration-lambda-extensions-enabling-older-versions)
@@ -30,9 +31,9 @@ The following table describes changes made to recent versions of the AWS AppConf
 | --- | --- | --- |
 | 2.0.20159 | 07/13/2026 | Added support for AWS AppConfig experimentation. |
 | 2.0.18836 | 06/22/2026 | Minor enhancements and bug fixes.  |
-| 2.0.17054.0 | 05/14/2026 | Minor enhancements and bug fixes.  |
-| 2.0.14126.0 | 03/25/2026 | Minor enhancements and bug fixes.  |
-| 2.0.11962.0 | 02/20/2026 | Improved environment support, minor enhancements, and bug fixes.  |
+| 2.0.17054 | 05/14/2026 | Minor enhancements and bug fixes.  |
+| 2.0.14126 | 03/25/2026 | Minor enhancements and bug fixes.  |
+| 2.0.11962 | 02/20/2026 | Improved environment support, minor enhancements, and bug fixes.  |
 | 2.0.8693 | 11/20/2025 | Improved environment support, minor enhancements, and bug fixes. Added support for the following AWS Regions+  Asia Pacific (Taipei), ap-east-2 <br />+  Asia Pacific (New Zealand), ap-southeast-6 <br />+  Asia Pacific (Thailand), ap-southeast-7 <br />+  Mexico (Central), mx-central-1  |
 | 2.0.2037 | 05/12/2025 | Added `/ping` path, which exposes a simple health check that returns that agent's version. Also includes minor enhancements and bug fixes.  |
 | 2.0.1079 | 12/12/2024 | Minor enhancements and bug fixes. |
@@ -66,6 +67,93 @@ Use the following procedure to locate the version number of your currently confi
 1. Use the **Test** tab to test the function.
 
 1. After the test completes, view the log output. Locate the AWS AppConfig Agent Lambda extension version in the **Details of the Execution** section. This version must match the required URLs for that version.
+
+## Retrieving the latest extension ARN from a public parameter
+<a name="appconfig-integration-lambda-extensions-versions-public-param"></a>
+
+The latest AWS AppConfig Agent Lambda extension layer ARN is available as a public parameter in AWS Systems Manager Parameter Store in every commercial AWS Region. You can reference these parameters programmatically to always deploy your Lambda function with the latest extension version without manual ARN updates.
+
+The public parameter paths are:
++ **x86\_64**: `/aws/service/aws-appconfig/lambda-extension/x86/latest`
++ **arm64**: `/aws/service/aws-appconfig/lambda-extension/arm64/latest`
+
+**Note**
+The x86 parameter path uses `x86` (not `x86_64`), even though the Lambda architecture is x86\_64.
+
+You don't need special IAM permissions beyond `ssm:GetParameter`. The parameter is public and readable from any AWS account.
+
+### AWS CLI
+<a name="appconfig-integration-lambda-extensions-versions-public-param-cli"></a>
+
+To retrieve the latest ARN versions, run the following commands.
+
+**x86\_64**
+
+```
+aws ssm get-parameter \
+    --name "/aws/service/aws-appconfig/lambda-extension/x86/latest" \
+    --query "Parameter.Value" \
+    --output text
+```
+
+**arm64**
+
+```
+aws ssm get-parameter \
+    --name "/aws/service/aws-appconfig/lambda-extension/arm64/latest" \
+    --query "Parameter.Value" \
+    --output text
+```
+
+### CloudFormation
+<a name="appconfig-integration-lambda-extensions-versions-public-param-cfn"></a>
+
+When you deploy Lambda functions with CloudFormation, you can use the `{{resolve:ssm:...}}` dynamic reference syntax to retrieve the latest extension ARN during stack operations. This ensures that your function always uses the latest extension version without manual updates.
+
+**x86\_64**
+
+```
+Resources:
+  MyFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: my-function
+      Runtime: python3.13
+      Handler: index.handler
+      Architectures:
+        - x86_64
+      Code:
+        ZipFile: |
+          def handler(event, context):
+              return {'statusCode': 200}
+      Layers:
+        - '{{resolve:ssm:/aws/service/aws-appconfig/lambda-extension/x86/latest}}'
+      Role: !GetAtt MyFunctionRole.Arn
+```
+
+**arm64**
+
+```
+Resources:
+  MyFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: my-function
+      Runtime: python3.13
+      Handler: index.handler
+      Architectures:
+        - arm64
+      Code:
+        ZipFile: |
+          def handler(event, context):
+              return {'statusCode': 200}
+      Layers:
+        - '{{resolve:ssm:/aws/service/aws-appconfig/lambda-extension/arm64/latest}}'
+      Role: !GetAtt MyFunctionRole.Arn
+```
+
+**Note**
+The `{{resolve:ssm:{{parameter-name}}}}` syntax automatically retrieves the parameter value during stack operations. This ensures that you always deploy with the current ARN.
 
 ## x86-64 platform
 <a name="appconfig-integration-lambda-extensions-enabling-x86-64"></a>
@@ -223,7 +311,7 @@ Date replaced by newer extension: 07/13/2026
 
 Date replaced by newer extension: 06/22/2026
 
-**Version 2.0.17054.0**
+**Version 2.0.17054**
 
 | Region | ARN |
 | --- | --- |
@@ -268,7 +356,7 @@ Date replaced by newer extension: 06/22/2026
 
 Date replaced by newer extension: 05/14/2026
 
-**Version 2.0.14126.0**
+**Version 2.0.14126**
 
 | Region | ARN |
 | --- | --- |
@@ -311,7 +399,7 @@ Date replaced by newer extension: 05/14/2026
 
 Date replaced by newer extension: 03/25/2026
 
-**Version 2.0.11962.0**
+**Version 2.0.11962**
 
 | Region | ARN |
 | --- | --- |
@@ -902,7 +990,7 @@ Date replaced by newer extension: 07/13/2026
 
 Date replaced by newer extension: 06/22/2026
 
-**Version 2.0.17054.0**
+**Version 2.0.17054**
 
 | Region | ARN |
 | --- | --- |
@@ -947,7 +1035,7 @@ Date replaced by newer extension: 06/22/2026
 
 Date replaced by newer extension: 05/14/2026
 
-**Version 2.0.14126.0**
+**Version 2.0.14126**
 
 | Region | ARN |
 | --- | --- |
@@ -990,7 +1078,7 @@ Date replaced by newer extension: 05/14/2026
 
 Date replaced by newer extension: 03/25/2026
 
-**Version 2.0.11962.0**
+**Version 2.0.11962**
 
 | Region | ARN |
 | --- | --- |

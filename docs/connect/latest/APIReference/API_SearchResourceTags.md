@@ -73,6 +73,7 @@ The list of resource types to be used to search tags from. If not provided or if
 + contact-flow
 + flow- module
 + transfer-destination (also known as quick connect)
++ metric
 Type: Array of strings
 Required: No
 

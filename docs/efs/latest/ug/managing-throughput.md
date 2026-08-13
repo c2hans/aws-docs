@@ -49,4 +49,4 @@ You can change the throughput mode and the provisioned throughput amount after t
 ## Using the AWS CLI
 <a name="manage-throughput-cli"></a>
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/efs/update-file-system.html](https://docs.aws.amazon.com/cli/latest/reference/efs/update-file-system.html) CLI command, or the [UpdateFileSystem](https://docs.aws.amazon.com/efs/latest/APIReference/API_UpdateFileSystem.html) API action to change a file system's throughput mode.
+Use the [update-file-system](https://docs.aws.amazon.com/cli/latest/reference/efs/update-file-system.html) CLI command, or the [UpdateFileSystem](https://docs.aws.amazon.com/efs/latest/APIReference/API_UpdateFileSystem.html) API action to change a file system's throughput mode.

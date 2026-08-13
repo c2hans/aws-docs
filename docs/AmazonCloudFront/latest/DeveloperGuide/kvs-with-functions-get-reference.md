@@ -82,9 +82,9 @@ To get both values, you can use the AWS Command Line Interface (AWS CLI) or the 
 
 **To get the key value store reference**
 
-1. Use the [https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListKeyValueStores.html](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListKeyValueStores.html) API operation to return a list of key value stores. Find the name of the key value store that you want to change.
+1. Use the [CloudFront ListKeyValueStores](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListKeyValueStores.html) API operation to return a list of key value stores. Find the name of the key value store that you want to change.
 
-1. Use the [https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DescribeKeyValueStore.html](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DescribeKeyValueStore.html) API operation and specify the name of the key value store that you returned from the previous step.
+1. Use the [CloudFront DescribeKeyValueStore](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DescribeKeyValueStore.html) API operation and specify the name of the key value store that you returned from the previous step.
 
 ------
 

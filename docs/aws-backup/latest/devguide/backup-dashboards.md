@@ -196,9 +196,9 @@ The **Top problematic reasons** widget shows the message code category to which 
 <a name="dashboard-data-cli"></a>
 
 You can use the command line to retrieve the same data which appears in the console. Use one of the following CLI commands:
-+ [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-backup-job-summaries.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-backup-job-summaries.html)
-+ [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-copy-job-summaries.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-copy-job-summaries.html)
-+ [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-restore-job-summaries.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-restore-job-summaries.html)
++ [`list-backup-job-summaries`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-backup-job-summaries.html)
++ [`list-copy-job-summaries`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-copy-job-summaries.html)
++ [`list-restore-job-summaries`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-restore-job-summaries.html)
 
 There are the valid parameters you can include in each command:
 

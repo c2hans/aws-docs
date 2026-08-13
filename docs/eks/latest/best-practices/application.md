@@ -197,7 +197,7 @@ The `--record` argument record the changes to the Deployment and helps you if yo
 
 By default, when you update a Deployment that requires a recreation of pods, Deployment will perform a [rolling update](https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/). In other words, Kubernetes will only update a portion of the running pods in a Deployment and not all the Pods at once. You can control how Kubernetes performs rolling updates through `RollingUpdateStrategy` property.
 
-When performing a *rolling update* of a Deployment, you can use the [https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#max-unavailable](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#max-unavailable) property to specify the maximum number of Pods that can be unavailable during the update. The `Max Surge` property of Deployment allows you to set the maximum number of Pods that can be created over the desired number of Pods.
+When performing a *rolling update* of a Deployment, you can use the [`Max Unavailable`](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#max-unavailable) property to specify the maximum number of Pods that can be unavailable during the update. The `Max Surge` property of Deployment allows you to set the maximum number of Pods that can be created over the desired number of Pods.
 
 Consider adjusting `max unavailable` to ensure that a rollout doesn’t disrupt your customers. For example, Kubernetes sets 25% `max unavailable` by default, which means if you have 100 Pods, you may have only 75 Pods actively working during a rollout. If your application needs a minimum of 80 Pods, this rollout can be disruptive. Instead, you can set `max unavailable` to 20% to ensure that there are at least 80 functional Pods throughout the rollout.
 
@@ -288,7 +288,7 @@ $ kubectl exec python-app -it ps
  5   root 0:00 python app.py
 ```
 
-In this example, the shell script receives `SIGTERM`, the main process, which happens to be a Python application in this example, doesn’t get a `SIGTERM` signal. When the Pod is terminated, the Python application will be killed abruptly. This can be remediated by changing the [https://docs.docker.com/engine/reference/builder/#entrypoint](https://docs.docker.com/engine/reference/builder/#entrypoint) of the container to launch the Python application. Alternatively, you can use a tool like [dumb-init](https://github.com/Yelp/dumb-init) to ensure that your application can handle signals.
+In this example, the shell script receives `SIGTERM`, the main process, which happens to be a Python application in this example, doesn’t get a `SIGTERM` signal. When the Pod is terminated, the Python application will be killed abruptly. This can be remediated by changing the [`ENTRYPOINT`](https://docs.docker.com/engine/reference/builder/#entrypoint) of the container to launch the Python application. Alternatively, you can use a tool like [dumb-init](https://github.com/Yelp/dumb-init) to ensure that your application can handle signals.
 
 You can also use [Container hooks](https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks) to execute a script or an HTTP request at container start or stop. The `PreStop` hook action runs before the container receives a `SIGTERM` signal and must complete before this signal is sent. The `terminationGracePeriodSeconds` value applies from when the `PreStop` hook action begins executing, not when the `SIGTERM` signal is sent.
 

@@ -40,7 +40,7 @@ Your search might contain more results than are displayed on the first page of r
 
 Use the `describe-parameters` command to view information about one or more parameters in the AWS CLI.
 
-The following examples demonstrate various options you can use to view information about the parameters in your AWS account. For more information about these options, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-parameters.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-parameters.html) in the *AWS Command Line Interface User Guide*.
+The following examples demonstrate various options you can use to view information about the parameters in your AWS account. For more information about these options, see [describe-parameters](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-parameters.html) in the *AWS Command Line Interface User Guide*.
 
 1. Install and configure the AWS Command Line Interface (AWS CLI), if you haven't already.
 

@@ -14,7 +14,7 @@ To grant or deny permissions to a set of objects, you can use wildcard character
 For more information about AWS Identity and Access Management (IAM) policy language, see [Setting up IAM with S3 on Outposts](S3OutpostsIAM.md).
 
 **Note**
-When testing [https://docs.aws.amazon.com/cli/latest/reference/s3outposts/](https://docs.aws.amazon.com/cli/latest/reference/s3outposts/) permissions by using the Amazon S3 console, you must grant additional permissions that the console requires, such as `s3outposts:createendpoint`, `s3outposts:listendpoints`, and so on.
+When testing [s3outposts](https://docs.aws.amazon.com/cli/latest/reference/s3outposts/) permissions by using the Amazon S3 console, you must grant additional permissions that the console requires, such as `s3outposts:createendpoint`, `s3outposts:listendpoints`, and so on.
 
 **Additional resources for creating bucket policies**
 + For a list of the IAM policy actions, resources, and condition keys you can use when creating an S3 on Outposts bucket policy, see [Actions, resources, and condition keys for Amazon S3 on Outposts](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3onoutposts.html).
@@ -34,7 +34,7 @@ A bucket policy is a resource-based AWS Identity and Access Management (IAM) pol
 The following example denies all users from performing any [S3 on Outposts operations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3OutpostsWorkingBuckets.html) on objects in the specified buckets unless the request originates from the specified range of IP addresses.
 
 **Note**
-When restricting access to a specific IP address, make sure that you also specify which VPC endpoints, VPC source IP addresses, or external IP addresses can access the S3 on Outposts bucket. Otherwise, you might lose access to the bucket if your policy denies all users from performing any [https://docs.aws.amazon.com/cli/latest/reference/s3outposts/](https://docs.aws.amazon.com/cli/latest/reference/s3outposts/) operations on objects in your S3 on Outposts bucket without the proper permissions already in place.
+When restricting access to a specific IP address, make sure that you also specify which VPC endpoints, VPC source IP addresses, or external IP addresses can access the S3 on Outposts bucket. Otherwise, you might lose access to the bucket if your policy denies all users from performing any [s3outposts](https://docs.aws.amazon.com/cli/latest/reference/s3outposts/) operations on objects in your S3 on Outposts bucket without the proper permissions already in place.
 
 This policy's `Condition` statement identifies {{`192.0.2.0/24`}} as the range of allowed IP version 4 (IPv4) IP addresses.
 

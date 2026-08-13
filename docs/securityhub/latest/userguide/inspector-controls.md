@@ -20,7 +20,7 @@ These controls may not be available in all AWS Regions. For more information, se
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/inspector-ec2-scan-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/inspector-ec2-scan-enabled.html)
+**AWS Config rule:** [`inspector-ec2-scan-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/inspector-ec2-scan-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -48,7 +48,7 @@ To enable Amazon Inspector EC2 scanning, see [Activating scans](https://docs.aws
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/inspector-ecr-scan-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/inspector-ecr-scan-enabled.html)
+**AWS Config rule:** [`inspector-ecr-scan-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/inspector-ecr-scan-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -76,7 +76,7 @@ To enable Amazon Inspector ECR scanning, see [Activating scans](https://docs.aws
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/inspector-lambda-code-scan-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/inspector-lambda-code-scan-enabled.html)
+**AWS Config rule:** [`inspector-lambda-code-scan-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/inspector-lambda-code-scan-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -104,7 +104,7 @@ To enable Amazon Inspector Lambda code scanning, see [Activating scans](https://
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/inspector-lambda-standard-scan-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/inspector-lambda-standard-scan-enabled.html)
+**AWS Config rule:** [`inspector-lambda-standard-scan-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/inspector-lambda-standard-scan-enabled.html)
 
 **Schedule type:** Periodic
 

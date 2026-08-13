@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DevOpsAgent::Association AzureConfiguration
 <a name="aws-properties-devopsagent-association-azureconfiguration"></a>
 
-<a name="aws-properties-devopsagent-association-azureconfiguration-description"></a>The `AzureConfiguration` property type specifies Property description not available. for an [AWS::DevOpsAgent::Association](aws-resource-devopsagent-association.md).
+Configuration for Azure subscription integration. Specifies the subscription ID to enable the Agent Space to discover and investigate resources in your Azure environment.
 
 ## Syntax
 <a name="aws-properties-devopsagent-association-azureconfiguration-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-association-azureconfiguration-properties"></a>
 
 `SubscriptionId`  <a name="cfn-devopsagent-association-azureconfiguration-subscriptionid"></a>
-Property description not available.
+The Azure subscription ID corresponding to the provided resources.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

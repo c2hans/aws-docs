@@ -47,7 +47,7 @@ Within one project, you can apply:
 
 The following section goes over an example of a blueprint prompt for an audio blueprint. For this use case, we want to create a blueprint to extract information from a conversation between a customer and a customer service representative. The screenshot below shows the prompt window on the console.
 
-![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/bda/audio-bpa-prompt.png)
+![Amazon Bedrock Data Automation audio blueprint prompt configuration.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/bda/audio-bpa-prompt.png)
 
 At the bottom of the screenshot you can see the AI generated prompt based on the input in the box. We can see how the fields we mention get processed. Next, we can look at the blueprint created from the prompt.
 
@@ -72,7 +72,7 @@ Here we can look at the information we'll expect to process from the conversatio
 
 1.  Save and name your Blueprint.
 
-You can also use the Blueprint JSON editor to create or modify a Blueprint. This allows you to adjust the JSON of the Blueprint directly via text editor.
+You can also use the Blueprint JSON editor to create or modify a Blueprint. This allows you to adjust the JSON of the Blueprint directly through text editor.
 
 ### Adding blueprints to projects
 <a name="adding-blueprints-projects"></a>

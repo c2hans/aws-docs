@@ -18,24 +18,41 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/alas2.html) on or before **March 21, 2023** to all Amazon Linux 2 platforms.<br />Some of the platform updates are security releases. For more information, see **Platform-specific updates** in this table. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2023-04-03-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2023-04-03-linux.html) |
-| **AMI** | Updated the base AMI to version 2.0.20230320. |
-| **Apache** | Updated platforms supporting the Apache HTTP Server 2.4 to version 2.4.56. For details, see [Changes with Apache 2.4.56](https://archive.apache.org/dist/httpd/CHANGES_2.4.56) on the *Apache Software Foundation* website. <br />The **Apache 2.4.56** release is a security release. |
-| **Docker** | Updated Amazon ECS Agent to version **1.69.0** on the *ECS Amazon Linux 2* platform branch. |
-| **Go** | Updated Go to release 1.20.2. For details, see [go1.20](https://go.dev/doc/devel/release#go1.20) in *The Go Programming Language Release History*.<br />This is a security release. |
-| **.NET Core** | Updated .NET Core to release [6.0.15](https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0.15/6.0.15.md#notable-changes) . |
-| **Node.js** |  **\*\*New\!\*\*** — Introduced new **Node.js 18** platform branch, running Node.js version 18.15.0. For documentation of the latest version, see [Node.js v18.x Documentation](https://nodejs.org/docs/latest-v18.x/api). |
-| **PHP** | Updated PHP 8.1 release to [8.1.17](https://www.php.net/releases/8_1_17.php). PHP 7.4 is a retiring (deprecated) platform branch. For full version information of Elastic Beanstalk retiring platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.  |
-| **Python** | Updated Pipenv to release 2023.2.20. For details, see the Pipenv [Release and Version History](https://pipenv.pypa.io/en/latest/changelog/). |
-| **Ruby** | Updated RubyGems to release 3.4.10. For details, see [3.4.10 Released](https://blog.rubygems.org/2023/03/27/3.4.10-released.html) on the *RubyGems blog*. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/alas2.html">Amazon Linux Security Center</a> on or before <b>March 21, 2023</b> to all Amazon Linux 2 platforms.<br />Some of the platform updates are security releases. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version 2.0.20230320.</td></tr>
+  <tr><td><b>Apache</b></td><td>Updated platforms supporting the Apache HTTP Server 2.4 to version 2.4.56. For details, see <a href="https://archive.apache.org/dist/httpd/CHANGES_2.4.56">Changes with Apache 2.4.56</a> on the <i>Apache Software Foundation</i> website. <br />The <b>Apache 2.4.56</b> release is a security release.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Docker</b></td><td>Updated Amazon ECS Agent to version <b>1.69.0</b> on the <i>ECS Amazon Linux 2</i> platform branch.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated Go to release 1.20.2. For details, see <a href="https://go.dev/doc/devel/release#go1.20">go1.20</a> in <i>The Go Programming Language Release History</i>.<br />This is a security release.</td></tr>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET Core to release <a href="https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0.15/6.0.15.md#notable-changes">6.0.15</a> .</td></tr>
+  <tr><td><b>Node.js</b></td><td> <b>**New!**</b> — Introduced new <b>Node.js 18</b> platform branch, running Node.js version 18.15.0. For documentation of the latest version, see <a href="https://nodejs.org/docs/latest-v18.x/api">Node.js v18.x Documentation</a>.</td></tr>
+  <tr><td><b>PHP</b></td><td>Updated PHP 8.1 release to <a href="https://www.php.net/releases/8_1_17.php">8.1.17</a>. PHP 7.4 is a retiring (deprecated) platform branch. For full version information of Elastic Beanstalk retiring platform branches, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html">Elastic Beanstalk platform versions scheduled for retirement</a> in the <i>AWS Elastic Beanstalk Platforms</i> guide. </td></tr>
+  <tr><td><b>Python</b></td><td>Updated Pipenv to release 2023.2.20. For details, see the Pipenv <a href="https://pipenv.pypa.io/en/latest/changelog/">Release and Version History</a>.</td></tr>
+  <tr><td><b>Ruby</b></td><td>Updated RubyGems to release 3.4.10. For details, see <a href="https://blog.rubygems.org/2023/03/27/3.4.10-released.html">3.4.10 Released</a> on the <i>RubyGems blog</i>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2023-04-03-linux.platforms"></a>

@@ -11,12 +11,12 @@ AWS Transform provides the following APIs for data retrieval.
 
 | Actions | Description | Access level |
 | --- | --- | --- |
-| <a name="transform-GetAccountSettings"></a>[https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html) | Invoke GetAccountSettings on AWS Transform | Read |
-| <a name="transform-GetAgent"></a>[https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html) | Invoke GetAgent on AWS Transform | Read |
-| <a name="transform-GetAgentRuntimeConfiguration"></a>[https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html) | Invoke GetAgentRuntimeConfiguration on AWS Transform | Read |
-| <a name="transform-GetConnector"></a>[https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html) | Invoke GetConnector on AWS Transform | Read |
-| <a name="transform-GetWebAppUrl"></a>[https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html) | Invoke GetWebAppUrl on AWS Transform | Read |
-| <a name="transform-ListAgents"></a>[https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html) | Invoke ListAgents on AWS Transform | Read |
-| <a name="transform-ListConnectors"></a>[https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html) | Invoke ListConnectors on AWS Transform | List |
-| <a name="transform-ListProfiles"></a>[https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html) | Invoke ListProfiles on AWS Transform | List |
-| <a name="transform-ListTagsForResource"></a>[https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html) | Invoke ListTagsForResource on AWS Transform | Read |
+| <a name="transform-GetAccountSettings"></a>[GetAccountSettings](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html) | Invoke GetAccountSettings on AWS Transform | Read |
+| <a name="transform-GetAgent"></a>[GetAgent](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html) | Invoke GetAgent on AWS Transform | Read |
+| <a name="transform-GetAgentRuntimeConfiguration"></a>[GetAgentRuntimeConfiguration](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html) | Invoke GetAgentRuntimeConfiguration on AWS Transform | Read |
+| <a name="transform-GetConnector"></a>[GetConnector](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html) | Invoke GetConnector on AWS Transform | Read |
+| <a name="transform-GetWebAppUrl"></a>[GetWebAppUrl](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html) | Invoke GetWebAppUrl on AWS Transform | Read |
+| <a name="transform-ListAgents"></a>[ListAgents](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html) | Invoke ListAgents on AWS Transform | Read |
+| <a name="transform-ListConnectors"></a>[ListConnectors](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html) | Invoke ListConnectors on AWS Transform | List |
+| <a name="transform-ListProfiles"></a>[ListProfiles](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html) | Invoke ListProfiles on AWS Transform | List |
+| <a name="transform-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html) | Invoke ListTagsForResource on AWS Transform | Read |

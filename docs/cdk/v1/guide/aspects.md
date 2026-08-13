@@ -9,7 +9,7 @@ This is the AWS CDK v1 Developer Guide. The older CDK v1 entered maintenance on 
 
 Aspects are a way to apply an operation to all constructs in a given scope. The aspect could modify the constructs, such as by adding tags, or it could verify something about the state of the constructs, such as ensuring that all buckets are encrypted.
 
-To apply an aspect to a construct and all constructs in the same scope, call [https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.Aspects.html#static-ofscope](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.Aspects.html#static-ofscope)`.of({{SCOPE}}).add()` with a new aspect, as shown in the following example.
+To apply an aspect to a construct and all constructs in the same scope, call [`Aspects`](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.Aspects.html#static-ofscope)`.of({{SCOPE}}).add()` with a new aspect, as shown in the following example.
 
 ------
 #### [ TypeScript ]

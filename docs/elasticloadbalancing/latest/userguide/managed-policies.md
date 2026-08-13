@@ -18,28 +18,28 @@ For more information, see [AWS managed policies](https://docs.aws.amazon.com/IAM
 
 This policy includes all the permissions that Elastic Load Balancing (Classic Load Balancer) requires to call other AWS services on your behalf. Service-linked roles are predefined. With predefined roles you don't have to manually add the necessary permissions for Elastic Load Balancing to complete actions on your behalf. You cannot attach, detach, modify, or delete this policy.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticLoadBalancingClassicServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticLoadBalancingClassicServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AWSElasticLoadBalancingClassicServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticLoadBalancingClassicServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: AWSElasticLoadBalancingServiceRolePolicy
 <a name="AWSElasticLoadBalancingServiceRolePolicy"></a>
 
 This policy includes all the permissions that Elastic Load Balancing requires to call other AWS services on your behalf. Service-linked roles are predefined. With predefined roles you don't have to manually add the necessary permissions for Elastic Load Balancing to complete actions on your behalf. You cannot attach, detach, modify, or delete this policy.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticLoadBalancingServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticLoadBalancingServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AWSElasticLoadBalancingServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticLoadBalancingServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: ElasticLoadBalancingFullAccess
 <a name="ElasticLoadBalancingFullAccess"></a>
 
 This policy gives full access to the Elastic Load Balancing service and limited access to other services via the AWS Management Console.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ElasticLoadBalancingFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ElasticLoadBalancingFullAccess.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [ElasticLoadBalancingFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ElasticLoadBalancingFullAccess.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: ElasticLoadBalancingReadOnly
 <a name="ElasticLoadBalancingReadOnly"></a>
 
 This policy provides read-only access to Elastic Load Balancing and dependent services.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ElasticLoadBalancingReadOnly.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ElasticLoadBalancingReadOnly.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [ElasticLoadBalancingReadOnly](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ElasticLoadBalancingReadOnly.html) in the *AWS Managed Policy Reference*.
 
 ## Elastic Load Balancing updates to AWS managed policies
 <a name="policy-updates"></a>

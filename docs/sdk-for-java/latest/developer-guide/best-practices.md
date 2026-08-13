@@ -28,7 +28,7 @@ This setting sets the amount of time for a single HTTP attempt, after which the 
 **`apiCallTimeout`**
 The value for this property configures the amount of time for the entire execution, including all retry attempts.
 
-As an alternative to setting these timeout values on the service client, you can use [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/RequestOverrideConfiguration.html#apiCallTimeout()](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/RequestOverrideConfiguration.html#apiCallTimeout()) and `[RequestOverrideConfiguration\#apiCallAttemptTimeout()](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/RequestOverrideConfiguration.html#apiCallAttemptTimeout())` to configure a single request .
+As an alternative to setting these timeout values on the service client, you can use [`RequestOverrideConfiguration#apiCallTimeout()`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/RequestOverrideConfiguration.html#apiCallTimeout()) and `[RequestOverrideConfiguration\#apiCallAttemptTimeout()](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/RequestOverrideConfiguration.html#apiCallAttemptTimeout())` to configure a single request .
 
 The following example configures a single `listBuckets` request with custom timeout values.
 
@@ -71,7 +71,7 @@ As a good starting point, the SDK offers a [smart configuration defaults](http-c
 ## Improve SSL performance with OpenSSL for async clients
 <a name="bestpractice4"></a>
 
-By default, the SDK's [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/nio/netty/NettyNioAsyncHttpClient.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/nio/netty/NettyNioAsyncHttpClient.html) uses the JDK's default SSL implementation as the `SslProvider`. Our testing found that OpenSSL performs better than JDK's default implementation. The Netty community also [recommends using OpenSSL](https://netty.io/wiki/requirements-for-4.x.html#tls-with-openssl).
+By default, the SDK's [`NettyNioAsyncHttpClient`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/nio/netty/NettyNioAsyncHttpClient.html) uses the JDK's default SSL implementation as the `SslProvider`. Our testing found that OpenSSL performs better than JDK's default implementation. The Netty community also [recommends using OpenSSL](https://netty.io/wiki/requirements-for-4.x.html#tls-with-openssl).
 
 To use OpenSSL, add `netty-tcnative` to your dependencies. For configuration details, see the [Netty project documentation](https://netty.io/wiki/forked-tomcat-native.html).
 

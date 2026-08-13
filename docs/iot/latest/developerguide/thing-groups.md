@@ -142,7 +142,7 @@ The **AddThingToThingGroup** command does not produce any output.
 
 **Important**
 You can add a thing to a maximum of 10 groups. But you can't add a thing to more than one group in the same hierarchy. (In other words, you can't add a thing to two groups which share a common parent.)
-If a thing belongs to as many thing groups as possible, and one or more of those groups is a dynamic thing group, you can use the [https://docs.aws.amazon.com/iot/latest/apireference/API_AddThingToThingGroup.html#iot-AddThingToThingGroup-request-overrideDynamicGroups](https://docs.aws.amazon.com/iot/latest/apireference/API_AddThingToThingGroup.html#iot-AddThingToThingGroup-request-overrideDynamicGroups) flag to make static groups take priority over dynamic groups.
+If a thing belongs to as many thing groups as possible, and one or more of those groups is a dynamic thing group, you can use the [**overrideDynamicGroups**](https://docs.aws.amazon.com/iot/latest/apireference/API_AddThingToThingGroup.html#iot-AddThingToThingGroup-request-overrideDynamicGroups) flag to make static groups take priority over dynamic groups.
 
 ## Remove a thing from a static thing group
 <a name="remove-thing-from-group"></a>
@@ -309,7 +309,7 @@ The **ListThingGroupsForThing** command returns a list of the direct thing group
 }
 ```
 
-You can also access this API within the rules engine using the inline function `get_registry_data()`. You can use this function to dynamically access and utilize thing registry information (including attributes, thing types, and group memberships) by calling `DescribeThing` and `ListThingGroupsForThing` APIs directly within AWS IoT rules, enabling real-time message processing and routing based on your device registry data. For more information, see [https://docs.aws.amazon.com//iot/latest/developerguide/iot-sql-functions.html#iot-sql-function-get-registry_data](https://docs.aws.amazon.com//iot/latest/developerguide/iot-sql-functions.html#iot-sql-function-get-registry_data).
+You can also access this API within the rules engine using the inline function `get_registry_data()`. You can use this function to dynamically access and utilize thing registry information (including attributes, thing types, and group memberships) by calling `DescribeThing` and `ListThingGroupsForThing` APIs directly within AWS IoT rules, enabling real-time message processing and routing based on your device registry data. For more information, see [`get_registry_data`](https://docs.aws.amazon.com//iot/latest/developerguide/iot-sql-functions.html#iot-sql-function-get-registry_data).
 
 ## Update a static thing group
 <a name="update-thing-group"></a>

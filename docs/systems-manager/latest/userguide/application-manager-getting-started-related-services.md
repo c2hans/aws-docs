@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/applica
 # Setting up related services
 <a name="application-manager-getting-started-related-services"></a>
 
-Application Manager, a tool in AWS Systems Manager, displays resources and information from other AWS services and Systems Manager tools. To maximize the amount of operations information displayed in Application Manager, we recommend that you set up and configure these other services or tools *before* you use Application Manager.
+Application Manager displays resources and information from other AWS services and Systems Manager tools. To maximize the amount of operations information displayed in Application Manager, we recommend that you set up and configure these other services or tools *before* you use Application Manager.
 
 **Topics**
 + [Set up tasks for importing resources](#application-manager-getting-started-related-services-resources)
@@ -26,7 +26,7 @@ You can use resource groups to organize your AWS resources. Resource groups make
 Application Manager automatically imports all of your resource groups and lists them in the **Custom applications** category.
 
 **(Optional) Set up and deploy your AWS resources by using [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)**
-CloudFormation allows you to create and provision AWS infrastructure deployments predictably and repeatedly. It helps you use AWS services such as Amazon EC2, Amazon Elastic Block Store (Amazon EBS), Amazon Simple Notification Service (Amazon SNS), Elastic Load Balancing, and AWS Auto Scaling. With CloudFormation, you can build reliable, scalable, cost-effective applications in the cloud without worrying about creating and configuring the underlying AWS infrastructure.
+CloudFormation lets you create and provision AWS infrastructure deployments predictably and repeatedly. It helps you use AWS services such as Amazon EC2, Amazon Elastic Block Store (Amazon EBS), Amazon Simple Notification Service (Amazon SNS), Elastic Load Balancing, and AWS Auto Scaling. With CloudFormation, you can build reliable, scalable, cost-effective applications in the cloud without worrying about creating and configuring the underlying AWS infrastructure.
 Application Manager automatically imports all of your CloudFormation resources and lists them in the **CloudFormation stacks** category. You can create CloudFormation stacks and templates in Application Manager. Stack and template changes are automatically synchronized between Application Manager and CloudFormation. You can also create applications in Application Manager and move stacks into them. This helps you view operations information for resources in your stacks in the context of an application. For pricing information, see [CloudFormation Pricing](https://aws.amazon.com/cloudformation/pricing/).
 
 **(Optional) Set up and deploy your applications by using AWS Launch Wizard**
@@ -59,5 +59,5 @@ AWS Config provides a detailed view of the resources associated with your AWS ac
 **(Optional) Create State Manager [associations](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-state.html)**
 You can use Systems Manager State Manager to create a configuration that you assign to your managed nodes. The configuration, called an *association*, defines the state that you want to maintain on your nodes. To view association compliance data in Application Manager, you must configure one or more State Manager associations. State Manager is offered at no additional charge.
 
-**(Optional) Set up and configure [https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter.html)**
+**(Optional) Set up and configure [OpsCenter](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter.html)**
 You can view operational work items (OpsItems) about your resources in Application Manager by using OpsCenter. You can configure Amazon CloudWatch and Amazon EventBridge to automatically send OpsItems to OpsCenter based on alarms and events. You can also enter OpsItems manually. For pricing information, see [AWS Systems Manager Pricing](https://aws.amazon.com/systems-manager/pricing/).

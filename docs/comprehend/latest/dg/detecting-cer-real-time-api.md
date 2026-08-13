@@ -39,7 +39,7 @@ If your command succeeds, Amazon Comprehend responds with the endpoint ARN:
 }
 ```
 
-For more information about this command, its parameter arguments, and its output, see [https://docs.aws.amazon.com/cli/latest/reference/comprehend/create-endpoint.html](https://docs.aws.amazon.com/cli/latest/reference/comprehend/create-endpoint.html) in the AWS CLI Command Reference.
+For more information about this command, its parameter arguments, and its output, see [`create-endpoint`](https://docs.aws.amazon.com/cli/latest/reference/comprehend/create-endpoint.html) in the AWS CLI Command Reference.
 
 ## Running real-time custom entity detection
 <a name="detecting-cer-real-time-run"></a>

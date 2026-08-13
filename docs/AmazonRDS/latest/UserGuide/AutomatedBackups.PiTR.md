@@ -45,7 +45,7 @@ Times are shown in your local time zone, which is indicated by an offset from Co
 ## AWS CLI
 <a name="AutomatedBackups.PiTR.CLI"></a>
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-instance-to-point-in-time.html](https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-instance-to-point-in-time.html) AWS CLI command to create a new DB instance.
+Use the [`restore-db-instance-to-point-in-time`](https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-instance-to-point-in-time.html) AWS CLI command to create a new DB instance.
 
 **To restore a DB instance to a specified time from a replicated backup**
 + Run one of the following commands.
@@ -71,7 +71,7 @@ Use the [https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-instanc
 ## RDS API
 <a name="AutomatedBackups.PiTR.API"></a>
 
-To restore a DB instance to a specified time, call the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceToPointInTime.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceToPointInTime.html) Amazon RDS API operation with the following parameters:
+To restore a DB instance to a specified time, call the [`RestoreDBInstanceToPointInTime`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceToPointInTime.html) Amazon RDS API operation with the following parameters:
 + `SourceDBInstanceAutomatedBackupsArn`
 + `TargetDBInstanceIdentifier`
 + `RestoreTime`

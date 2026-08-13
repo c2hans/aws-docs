@@ -69,7 +69,7 @@ If you are enabling Application Signals for a Node.js application with ESM, skip
 
    The **Console** option uses the advanced configuration of the Amazon CloudWatch Observability EKS add-on to setup Application Signals for your services. For more information about the add-on, see [(Optional) Additional configuration](install-CloudWatch-Observability-EKS-addon.md#install-CloudWatch-Observability-EKS-addon-configuration).
 
-   If you don't see a list of workloads and namespaces, ensure you have the right permissions to view them for this cluster. For more information, see [ Required permissions](https://docs.aws.amazon.com/eks/latest/userguide/view-kubernetes-resources.html#view-kubernetes-resources-permissions).
+   If you don't see a list of workloads and namespaces, make sure you have the right permissions to view them for this cluster. For more information, see [ Required permissions](https://docs.aws.amazon.com/eks/latest/userguide/view-kubernetes-resources.html#view-kubernetes-resources-permissions).
 
    You can either monitor all service workloads by selecting the **Auto monitor** check box or selectively choose specific workloads and namespaces to monitor.
 
@@ -89,7 +89,7 @@ If you are enabling Application Signals for a Node.js application with ESM, skip
 
    1. Use the **Select language(s)** dropdown list to select the language of the workload. Select the languages that you want to enable Application Signals for, and then choose the check mark icon (✓) to save this selection.
 
-      For Python applications, ensure your application follows the required prerequisites before continuing. For more information, see [Python application doesn't start after Application Signals is enabled](CloudWatch-Application-Signals-Enable-Troubleshoot.md#Application-Signals-troubleshoot-starting-Python).
+      For Python applications, make sure your application follows the required prerequisites before continuing. For more information, see [Python application doesn't start after Application Signals is enabled](CloudWatch-Application-Signals-Enable-Troubleshoot.md#Application-Signals-troubleshoot-starting-Python).
 
    1. Choose **Done**. The Amazon CloudWatch Observability EKS add-on will immediately inject AWS Distro for OpenTelemetry autoinstrumentation (ADOT) SDKs into your pods and trigger pod restarts to enable collection of application metrics and traces.
 
@@ -99,7 +99,7 @@ If you are enabling Application Signals for a Node.js application with ESM, skip
 
    1. Use the **Select language(s)** dropdown list to select the language of the namespace. Select the languages that you want to enable Application Signals for, and then choose the check mark icon (✓) to save this selection. This applies it to all workloads in this namespace, whether they are currently deployed or will be deployed in the future.
 
-      For Python applications, ensure your application follows the required prerequisites before continuing. For more information, see [Python application doesn't start after Application Signals is enabled](CloudWatch-Application-Signals-Enable-Troubleshoot.md#Application-Signals-troubleshoot-starting-Python).
+      For Python applications, make sure your application follows the required prerequisites before continuing. For more information, see [Python application doesn't start after Application Signals is enabled](CloudWatch-Application-Signals-Enable-Troubleshoot.md#Application-Signals-troubleshoot-starting-Python).
 
    1. Choose **Done**. The Amazon CloudWatch Observability EKS add-on will immediately inject AWS Distro for OpenTelemetry autoinstrumentation (ADOT) SDKs into your pods and trigger pod restarts to enable collection of application metrics and traces.
 
@@ -251,7 +251,7 @@ For the ESM module format, enabling Application Signals through the console or b
 
 1. Deploy the Node.js application to the cluster.
 
-Once you have enabled your applications on the Amazon EKS Clusters, you can monitor your application health. For more information, see [Monitor the operational health of your applications with Application Signals](Services.md).
+After you have enabled your applications on the Amazon EKS Clusters, you can monitor your application health. For more information, see [Monitor the operational health of your applications with Application Signals](Services.md).
 
 ## Enable Application Signals on an Amazon EKS cluster using the CloudWatch Observability add-on advanced configuration
 <a name="CloudWatch-Application-Signals-Enable-EKS-Addon"></a>
@@ -351,14 +351,14 @@ The MCP server automates the enablement process by understanding your requiremen
 ### Prerequisites
 <a name="CloudWatch-Application-Signals-EKS-MCP-Prerequisites"></a>
 
-Before using the MCP server to enable Application Signals, ensure you have:
+Before using the MCP server to enable Application Signals, make sure you have:
 + A Development Environment that supports MCP (such as Kiro, Claude Desktop, VSCode with MCP extensions, or other MCP-compatible tools)
 + The CloudWatch Application Signals MCP server configured in your IDE. For detailed setup instructions, see [CloudWatch Application Signals MCP Server documentation](https://awslabs.github.io/mcp/servers/cloudwatch-applicationsignals-mcp-server).
 
 ### Using the MCP server
 <a name="CloudWatch-Application-Signals-EKS-MCP-Usage"></a>
 
-Once you have configured the CloudWatch Application Signals MCP server in your IDE, you can request enablement guidance using natural language prompts. While the coding assistant can infer context from your project structure, providing specific details in your prompts helps ensure more accurate and relevant guidance. Include information such as your application language, Amazon EKS cluster name, and absolute paths to your infrastructure and application code.
+After you have configured the CloudWatch Application Signals MCP server in your IDE, you can request enablement guidance using natural language prompts. While the coding assistant can infer context from your project structure, providing specific details in your prompts helps make sure that you receive more accurate and relevant guidance. Include information such as your application language, Amazon EKS cluster name, and absolute paths to your infrastructure and application code.
 
 **Best practice prompts (specific and complete):**
 

@@ -316,7 +316,7 @@ class MainActivity : AppCompatActivity() {
 
 Displaying and reacting to changes in a chat room's connection are essential parts of making a chat app like `chatterbox`. Before we can start interacting with the room, we must subscribe to chat-room connection-state events, to get updates.
 
-In the Chat SDK for coroutine, [https://aws.github.io/amazon-ivs-chat-messaging-sdk-android/1.0.0/-amazon%20-i-v-s%20-chat%20-messaging%20-s-d-k%20for%20-android/com.amazonaws.ivs.chat.messaging/-chat-room/index.html](https://aws.github.io/amazon-ivs-chat-messaging-sdk-android/1.0.0/-amazon%20-i-v-s%20-chat%20-messaging%20-s-d-k%20for%20-android/com.amazonaws.ivs.chat.messaging/-chat-room/index.html) expects us to handle room lifecycle events in [Flow](https://kotlinlang.org/docs/flow.html). For now, the functions will log only confirmation messages, when invoked:
+In the Chat SDK for coroutine, [`ChatRoom`](https://aws.github.io/amazon-ivs-chat-messaging-sdk-android/1.0.0/-amazon%20-i-v-s%20-chat%20-messaging%20-s-d-k%20for%20-android/com.amazonaws.ivs.chat.messaging/-chat-room/index.html) expects us to handle room lifecycle events in [Flow](https://kotlinlang.org/docs/flow.html). For now, the functions will log only confirmation messages, when invoked:
 
 **Kotlin:**
 

@@ -43,7 +43,10 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[DeletionProtection](#cfn-eks-cluster-deletionprotection)" : {{Boolean}},
       "[EncryptionConfig](#cfn-eks-cluster-encryptionconfig)" : {{[ EncryptionConfig, ... ]}},
       "[Force](#cfn-eks-cluster-force)" : {{Boolean}},
+      "[KubeApiServerConfig](#cfn-eks-cluster-kubeapiserverconfig)" : {{KubeApiServerConfig}},
+      "[KubeControllerManagerConfig](#cfn-eks-cluster-kubecontrollermanagerconfig)" : {{KubeControllerManagerConfig}},
       "[KubernetesNetworkConfig](#cfn-eks-cluster-kubernetesnetworkconfig)" : {{KubernetesNetworkConfig}},
+      "[KubeSchedulerConfig](#cfn-eks-cluster-kubeschedulerconfig)" : {{KubeSchedulerConfig}},
       "[Logging](#cfn-eks-cluster-logging)" : {{Logging}},
       "[Name](#cfn-eks-cluster-name)" : {{String}},
       "[OutpostConfig](#cfn-eks-cluster-outpostconfig)" : {{OutpostConfig}},
@@ -77,8 +80,14 @@ Properties:
   [EncryptionConfig](#cfn-eks-cluster-encryptionconfig): {{
     - EncryptionConfig}}
   [Force](#cfn-eks-cluster-force): {{Boolean}}
+  [KubeApiServerConfig](#cfn-eks-cluster-kubeapiserverconfig): {{
+    KubeApiServerConfig}}
+  [KubeControllerManagerConfig](#cfn-eks-cluster-kubecontrollermanagerconfig): {{
+    KubeControllerManagerConfig}}
   [KubernetesNetworkConfig](#cfn-eks-cluster-kubernetesnetworkconfig): {{
     KubernetesNetworkConfig}}
+  [KubeSchedulerConfig](#cfn-eks-cluster-kubeschedulerconfig): {{
+    KubeSchedulerConfig}}
   [Logging](#cfn-eks-cluster-logging): {{
     Logging}}
   [Name](#cfn-eks-cluster-name): {{String}}
@@ -150,10 +159,28 @@ Set this value to `true` to override upgrade-blocking or rollback-blocking readi
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`KubeApiServerConfig`  <a name="cfn-eks-cluster-kubeapiserverconfig"></a>
+The Kubernetes API server configuration for the cluster.
+*Required*: No
+*Type*: [KubeApiServerConfig](aws-properties-eks-cluster-kubeapiserverconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`KubeControllerManagerConfig`  <a name="cfn-eks-cluster-kubecontrollermanagerconfig"></a>
+The Kubernetes controller manager configuration for the cluster.
+*Required*: No
+*Type*: [KubeControllerManagerConfig](aws-properties-eks-cluster-kubecontrollermanagerconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `KubernetesNetworkConfig`  <a name="cfn-eks-cluster-kubernetesnetworkconfig"></a>
 The Kubernetes network configuration for the cluster.
 *Required*: No
 *Type*: [KubernetesNetworkConfig](aws-properties-eks-cluster-kubernetesnetworkconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`KubeSchedulerConfig`  <a name="cfn-eks-cluster-kubeschedulerconfig"></a>
+The Kubernetes scheduler configuration for the cluster.
+*Required*: No
+*Type*: [KubeSchedulerConfig](aws-properties-eks-cluster-kubeschedulerconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Logging`  <a name="cfn-eks-cluster-logging"></a>
@@ -247,14 +274,14 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 
 For the Amazon EKS cluster `myCluster`, `Ref` returns the name of the cluster.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-eks-cluster-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-eks-cluster-return-values-fn--getatt-fn--getatt"></a>
@@ -373,4 +400,4 @@ EKSCluster:
 ## See also
 <a name="aws-resource-eks-cluster--seealso"></a>
 + [Clusters](https://docs.aws.amazon.com/eks/latest/userguide/clusters.html) in the *Amazon EKS User Guide*.
-+ [https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateCluster.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateCluster.html) in the *Amazon EKS API Reference*.
++ [`CreateCluster`](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateCluster.html) in the *Amazon EKS API Reference*.

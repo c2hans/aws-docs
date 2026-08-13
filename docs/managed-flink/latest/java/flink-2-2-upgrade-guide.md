@@ -156,18 +156,18 @@ Wait until `SnapshotStatus` is `READY` before proceeding.
 ## Phase 4: Upgrade application
 <a name="upgrade-guide-phase-4"></a>
 
-You can upgrade your Flink application by using the [https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_UpdateApplication.html) action.
+You can upgrade your Flink application by using the [`UpdateApplication`](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_UpdateApplication.html) action.
 
 You can call the `UpdateApplication` API in multiple ways:
 + **Use the AWS Management Console.**
   + Go to your app page on the AWS Management Console.
   + Choose **Configure**.
   + Select the new runtime and the snapshot that you want to start from, also known as restore configuration. Use the latest setting as the restore configuration to start the app from the latest snapshot. Point to the new upgraded application JAR/zip on Amazon S3.
-+ **Use the AWS CLI** [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kinesisanalyticsv2/update-application.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kinesisanalyticsv2/update-application.html) action.
++ **Use the AWS CLI** [`update-application`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kinesisanalyticsv2/update-application.html) action.
 + **Use CloudFormation.**
   + Update the `RuntimeEnvironment` field. Previously, CloudFormation deleted the application and created a new one, causing your snapshots and other app history to be lost. Now CloudFormation updates your `RuntimeEnvironment` in place and does not delete your application.
 + **Use the AWS SDK.**
-  + Consult the SDK documentation for the programming language of your choice. See [https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_UpdateApplication.html).
+  + Consult the SDK documentation for the programming language of your choice. See [`UpdateApplication`](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_UpdateApplication.html).
 
 You can perform the upgrade while the application is in `RUNNING` state or while the application is stopped in `READY` state. Amazon Managed Service for Apache Flink validates the compatibility between the original runtime version and the target runtime version. This compatibility check runs when you perform `UpdateApplication` while in `RUNNING` state or at the next `StartApplication` if you upgrade while in `READY` state.
 

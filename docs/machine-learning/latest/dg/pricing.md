@@ -13,7 +13,7 @@ Amazon Machine Learning (Amazon ML) charges an hourly rate for the compute time 
 
 Amazon ML estimates the costs for predictions only in the [Amazon ML console](https://console.aws.amazon.com/machinelearning/).
 
-For more information about Amazon ML pricing, see [https://aws.amazon.com/machine-learning/pricing/](https://aws.amazon.com/machine-learning/pricing/).
+For more information about Amazon ML pricing, see [*Amazon Machine Learning Pricing*](https://aws.amazon.com/machine-learning/pricing/).
 
 **Topics**
 + [Estimating Batch Prediction Cost](#w2aab7c20c14)

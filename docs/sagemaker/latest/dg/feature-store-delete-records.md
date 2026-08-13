@@ -20,7 +20,7 @@ There are two ways to delete records from your feature groups, and the behavior 
 ## Delete records from the online store
 <a name="feature-store-delete-records-online-store"></a>
 
-You can soft or hard delete a record from the online store using the `DeleteRecord` API by using the `DeletionMode` request parameter to specify `SoftDelete` (default) or `HardDelete`. For more information on the `DeleteRecord` API, see [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_DeleteRecord.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_DeleteRecord.html) in the Amazon SageMaker API Reference.
+You can soft or hard delete a record from the online store using the `DeleteRecord` API by using the `DeletionMode` request parameter to specify `SoftDelete` (default) or `HardDelete`. For more information on the `DeleteRecord` API, see [`DeleteRecord`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_DeleteRecord.html) in the Amazon SageMaker API Reference.
 
 With the online store:
 + When you soft delete (default), the record is no longer retrievable by GetRecord or BatchGetRecord and the feature column values are set to `null`, except for the `RecordIdentifer` and `EventTime` feature values.
@@ -32,7 +32,7 @@ Note that the `EventTime` specified in `DeleteRecord` should be set later than t
 + For `SoftDelete`, the existing (not deleted) record remains in the `OnlineStore`, though the delete record marker is still written to the `OfflineStore`.
 + `HardDelete` returns `EventTime`: `400 ValidationException` to indicate that the delete operation failed. No delete record marker is written to the `OfflineStore`.
 
-The following examples use the SDK for Python (Boto3) [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime/client/delete_record.html#delete-record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime/client/delete_record.html#delete-record) operation to delete a record from a feature group. To delete a record from a feature group, you will need:
+The following examples use the SDK for Python (Boto3) [`delete_record`](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime/client/delete_record.html#delete-record) operation to delete a record from a feature group. To delete a record from a feature group, you will need:
 + Feature group name (`{{feature-group-name}}`)
 + Record identifier value as a string (`{{record-identifier-value}}`)
 + Deletion event time (`{{deletion-event-time}}`)
@@ -91,7 +91,7 @@ With Amazon SageMaker Feature Store you can soft and hard delete a record from t
 
 To soft and hard delete from your `OfflineStore` Iceberg table, you will need to obtain your Iceberg table name, `{{iceberg-table-name}}`. The following instructions assumes you have already used Feature Store to create a feature group using the offline store storage configuration using the Iceberg table format, with `DisableGlueTableCreation = False` (default). For more information on creating feature groups, see [Get started with Amazon SageMaker Feature Store](feature-store-getting-started.md).
 
-To obtain your `{{iceberg-table-name}}`, use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureGroup.html.title](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureGroup.html.title) API to obtain [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DataCatalogConfig.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DataCatalogConfig.html). This contains the metadata of the Glue table which serves as data catalog for the `OfflineStore`. The `TableName` within the `DataCatalogConfig` is your `{{iceberg-table-name}}`.
+To obtain your `{{iceberg-table-name}}`, use the [`DescribeFeatureGroup`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureGroup.html.title) API to obtain [`DataCatalogConfig`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DataCatalogConfig.html). This contains the metadata of the Glue table which serves as data catalog for the `OfflineStore`. The `TableName` within the `DataCatalogConfig` is your `{{iceberg-table-name}}`.
 
 ### Amazon Athena offline store soft and hard delete example
 <a name="feature-store-delete-records-offline-store-athena"></a>
@@ -125,7 +125,7 @@ The following instructions use Amazon Athena to soft delete then hard delete a r
       )
       ```
 
-   1. Run the `VACUUM` command to remove no longer needed data files for your Iceberg tables, not referenced by the current version. The `VACUUM` command should run after the deleted record is no longer referenced in the current snapshot. For example, `vacuum_max_snapshot_age_seconds` after the deletion. For more information on `VACUUM` with Athena and the syntax, see [https://docs.aws.amazon.com/athena/latest/ug/vacuum-statement.html](https://docs.aws.amazon.com/athena/latest/ug/vacuum-statement.html).
+   1. Run the `VACUUM` command to remove no longer needed data files for your Iceberg tables, not referenced by the current version. The `VACUUM` command should run after the deleted record is no longer referenced in the current snapshot. For example, `vacuum_max_snapshot_age_seconds` after the deletion. For more information on `VACUUM` with Athena and the syntax, see [`VACUUM`](https://docs.aws.amazon.com/athena/latest/ug/vacuum-statement.html).
 
       ```
       VACUUM {{iceberg-table-name}}
@@ -135,7 +135,7 @@ The following instructions use Amazon Athena to soft delete then hard delete a r
 <a name="feature-store-delete-records-offline-store-spark"></a>
 
 To soft and then hard delete a record from the `OfflineStore` Iceberg table using Apache Spark, you can follow the same instructions as in the [Amazon Athena offline store soft and hard delete example](#feature-store-delete-records-offline-store-athena) above, but using Spark procedures. For a full list of procedures, see [Spark Procedures](https://iceberg.apache.org/docs/1.3.1/spark-procedures/) in the Apache Iceberg documentation.
-+ When soft deleting from the `OfflineStore`: instead of using the `DELETE` command in Athena, use the [https://iceberg.apache.org/docs/latest/spark-writes/#delete-from](https://iceberg.apache.org/docs/latest/spark-writes/#delete-from) command in Apache Spark.
++ When soft deleting from the `OfflineStore`: instead of using the `DELETE` command in Athena, use the [`DELETE FROM`](https://iceberg.apache.org/docs/latest/spark-writes/#delete-from) command in Apache Spark.
 + To remove the record from previous versions of your Iceberg tables to hard delete the record from `OfflineStore`:
-  + When changing your Iceberg table configuration: instead of using the `ALTER TABLE` command from Athena, use [https://iceberg.apache.org/docs/1.3.1/spark-procedures/#expire_snapshots](https://iceberg.apache.org/docs/1.3.1/spark-procedures/#expire_snapshots) procedure.
-  + To remove no longer needed data files from your Iceberg tables: instead of using the `VACUUM` command in Athena, use the [https://iceberg.apache.org/docs/1.3.1/spark-procedures/#remove_orphan_files](https://iceberg.apache.org/docs/1.3.1/spark-procedures/#remove_orphan_files) procedure.
+  + When changing your Iceberg table configuration: instead of using the `ALTER TABLE` command from Athena, use [`expire_snapshots`](https://iceberg.apache.org/docs/1.3.1/spark-procedures/#expire_snapshots) procedure.
+  + To remove no longer needed data files from your Iceberg tables: instead of using the `VACUUM` command in Athena, use the [`remove_orphan_files`](https://iceberg.apache.org/docs/1.3.1/spark-procedures/#remove_orphan_files) procedure.

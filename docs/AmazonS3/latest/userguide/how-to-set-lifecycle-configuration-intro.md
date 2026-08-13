@@ -30,7 +30,7 @@ When a lifecycle rule is created or modified, objects that already meet the elig
 When you disable or delete lifecycle rules, Amazon S3 stops scheduling new objects for deletion or transition after a small delay. Any objects that were already scheduled are unscheduled and are not deleted or transitioned.
 
 **Note**
-Before updating, disabling, or deleting lifecycle rules, use the `LIST` API operations (such as [https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html), [https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectVersions.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectVersions.html), and [https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListMultipartUploads.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListMultipartUploads.html)) or [Cataloging and analyzing your data with S3 Inventory](storage-inventory.md) to verify that Amazon S3 has transitioned and expired eligible objects based on your use cases. If you're experiencing any issues with updating, disabling, or deleting lifecycle rules, see [Troubleshooting Amazon S3 Lifecycle issues](troubleshoot-lifecycle.md).
+Before updating, disabling, or deleting lifecycle rules, use the `LIST` API operations (such as [ListObjectsV2](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html), [ListObjectVersions](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectVersions.html), and [ListMultipartUploads](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListMultipartUploads.html)) or [Cataloging and analyzing your data with S3 Inventory](storage-inventory.md) to verify that Amazon S3 has transitioned and expired eligible objects based on your use cases. If you're experiencing any issues with updating, disabling, or deleting lifecycle rules, see [Troubleshooting Amazon S3 Lifecycle issues](troubleshoot-lifecycle.md).
 
 **Existing and new objects**
 When you add a Lifecycle configuration to a bucket, the configuration rules apply to both existing objects and objects that you add later. For example, if you add a Lifecycle configuration rule today with an expiration action that causes objects with a specific prefix to expire 30 days after creation, Amazon S3 will queue for removal any existing objects that are more than 30 days old and that have the specified prefix.
@@ -60,7 +60,7 @@ When you have multiple rules in an S3 Lifecycle configuration, an object can bec
 
 You can set an Amazon S3 Lifecycle configuration on a general purpose bucket by using the Amazon S3 console, the AWS Command Line Interface (AWS CLI), the AWS SDKs, or the Amazon S3 REST API.
 
-For information about AWS CloudFormation templates and examples, see [Working with AWS CloudFormation templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html) and [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-bucket.html#aws-resource-s3-bucket--examples](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-bucket.html#aws-resource-s3-bucket--examples) in the *CloudFormation User Guide*.
+For information about AWS CloudFormation templates and examples, see [Working with AWS CloudFormation templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html) and [AWS::S3::Bucket](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-bucket.html#aws-resource-s3-bucket--examples) in the *CloudFormation User Guide*.
 
 ### Using the S3 console
 <a name="create-lifecycle"></a>
@@ -499,7 +499,7 @@ namespace Amazon.DocSamples.S3
 ------
 #### [ Ruby ]
 
-You can use the AWS SDK for Ruby to manage an S3 Lifecycle configuration on a bucket by using the class [https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/BucketLifecycle.html](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/BucketLifecycle.html). For more information about managing S3 Lifecycle configuration, see [Managing the lifecycle of objects](object-lifecycle-mgmt.md).
+You can use the AWS SDK for Ruby to manage an S3 Lifecycle configuration on a bucket by using the class [AWS::S3::BucketLifecycleConfiguration](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/BucketLifecycle.html). For more information about managing S3 Lifecycle configuration, see [Managing the lifecycle of objects](object-lifecycle-mgmt.md).
 
 ------
 
@@ -507,9 +507,9 @@ You can use the AWS SDK for Ruby to manage an S3 Lifecycle configuration on a bu
 <a name="manage-lifecycle-using-rest"></a>
 
 The following topics in the *Amazon Simple Storage Service API Reference* describe the REST API operations related to S3 Lifecycle configuration:
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLifecycleConfiguration.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLifecycleConfiguration.html)
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLifecycleConfiguration.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLifecycleConfiguration.html)
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketLifecycle.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketLifecycle.html)
++ [PutBucketLifecycleConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLifecycleConfiguration.html)
++ [GetBucketLifecycleConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLifecycleConfiguration.html)
++ [DeleteBucketLifecycle](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketLifecycle.html)
 
 ## Troubleshooting S3 Lifecycle
 <a name="lifecycle-troubleshoot"></a>

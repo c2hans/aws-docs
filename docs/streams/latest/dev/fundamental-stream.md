@@ -122,7 +122,7 @@ Congratulations, you just added data to a stream\! Next you will see how to get 
 aws kinesis get-shard-iterator --shard-id shardId-000000000000 --shard-iterator-type TRIM_HORIZON --stream-name Foo
 ```
 
-Recall that the `aws kinesis` commands have a Kinesis Data Streams API behind them, so if you are curious about any of the parameters shown, you can read about them in the [https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetShardIterator.html](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetShardIterator.html) API reference topic. Successful execution will result in output similar to the following example:
+Recall that the `aws kinesis` commands have a Kinesis Data Streams API behind them, so if you are curious about any of the parameters shown, you can read about them in the [`GetShardIterator`](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetShardIterator.html) API reference topic. Successful execution will result in output similar to the following example:
 
 ```
 {
@@ -134,7 +134,7 @@ The long string of seemingly random characters is the shard iterator (yours will
 
 **GetRecords**
 
-The `get-records` command gets data from the stream, and it resolves to a call to [https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetRecords.html](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetRecords.html) in the Kinesis Data Streams API. The shard iterator specifies the position in the shard from which you want to start reading data records sequentially. If there are no records available in the portion of the shard that the iterator points to, `GetRecords` returns an empty list. It might take multiple calls to get to a portion of the shard that contains records.
+The `get-records` command gets data from the stream, and it resolves to a call to [`GetRecords`](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetRecords.html) in the Kinesis Data Streams API. The shard iterator specifies the position in the shard from which you want to start reading data records sequentially. If there are no records available in the portion of the shard that the iterator points to, `GetRecords` returns an empty list. It might take multiple calls to get to a portion of the shard that contains records.
 
 In the following example of the `get-records` command:
 

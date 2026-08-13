@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/importing-fhi
 # Getting FHIR import job properties
 <a name="importing-fhir-data-describe"></a>
 
-Use `DescribeFHIRImportJob` to get FHIR import job properties. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DescribeFHIRImportJob.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DescribeFHIRImportJob.html) in the *AWS HealthLake API Reference*.
+Use `DescribeFHIRImportJob` to get FHIR import job properties. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`DescribeFHIRImportJob`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DescribeFHIRImportJob.html) in the *AWS HealthLake API Reference*.
 
 **To get FHIR import job properties**
 Choose a menu based on your access preference to AWS HealthLake.
@@ -127,4 +127,4 @@ Can't find what you need? Request a code example using the **Provide feedback** 
 <a name="describe-import-job-console"></a>
 
 **Note**
-FHIR import job information is not available on the HealthLake Console. Instead, use the AWS CLI with `DescribeFHIRImportJob` to request import job properties such as [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ImportJobProperties.html#HealthLake-Type-ImportJobProperties-JobStatus](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ImportJobProperties.html#HealthLake-Type-ImportJobProperties-JobStatus). For more information, refer to the AWS CLI example on this page.
+FHIR import job information is not available on the HealthLake Console. Instead, use the AWS CLI with `DescribeFHIRImportJob` to request import job properties such as [`JobStatus`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ImportJobProperties.html#HealthLake-Type-ImportJobProperties-JobStatus). For more information, refer to the AWS CLI example on this page.

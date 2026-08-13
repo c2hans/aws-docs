@@ -149,8 +149,8 @@ Overlapping segments
 | CENTER\_BODY\_UNSUPPORTED | The CENTER\_BODY in the OEM ephemeris is not supported. Supported values: [Earth] |
 | INTERPOLATION\_MISSING | The INTERPOLATION metadata field is missing from the OEM ephemeris |
 | INTERPOLATION\_DEGREE\_INVALID | The interpolation degree in the OEM ephemeris must be larger than 0 for the interpolation method |
-| AZ\_EL\_SEGMENT\_LIST\_MISSING | The [https://docs.aws.amazon.com/ground-station/latest/APIReference/API_AzElSegments.html](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_AzElSegments.html) field is missing |
-| INSUFFICIENT\_TIME\_AZ\_EL | No [https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TimeAzEl.html](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TimeAzEl.html) fields were present in at least one [https://docs.aws.amazon.com/ground-station/latest/APIReference/API_AzElSegments.html](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_AzElSegments.html) |
+| AZ\_EL\_SEGMENT\_LIST\_MISSING | The [`azElSegmentList`](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_AzElSegments.html) field is missing |
+| INSUFFICIENT\_TIME\_AZ\_EL | No [`TimeAzEl`](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TimeAzEl.html) fields were present in at least one [`azElSegmentList`](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_AzElSegments.html) |
 
 ### Invalid Reason: `TIME_RANGE_INVALID`
 <a name="w2aac74c19c15b7"></a>
@@ -164,10 +164,10 @@ Overlapping segments
 | EXPIRATION\_TIME\_TOO\_EARLY | The provided expiration time is earlier than the ephemeris end time |
 | START\_TIME\_METADATA\_TOO\_EARLY | The START\_TIME metadata value is earlier than the earliest time present in the OEM ephemeris data |
 | STOP\_TIME\_METADATA\_TOO\_LATE | The STOP\_TIME metadata value is later than the latest time present in the OEM ephemeris data |
-| AZ\_EL\_SEGMENT\_END\_TIME\_BEFORE\_START\_TIME | The [https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ISO8601TimeRange.html](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ISO8601TimeRange.html) of at least one data segment is before the segment's [https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ISO8601TimeRange.html](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ISO8601TimeRange.html) |
+| AZ\_EL\_SEGMENT\_END\_TIME\_BEFORE\_START\_TIME | The [`endTime`](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ISO8601TimeRange.html) of at least one data segment is before the segment's [`startTime`](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ISO8601TimeRange.html) |
 | AZ\_EL\_SEGMENT\_TIMES\_OVERLAP | The time range of at least one segment overlaps with other segment time ranges |
 | AZ\_EL\_SEGMENTS\_OUT\_OF\_ORDER | The segments are not temporally ordered |
-| TIME\_AZ\_EL\_ITEMS\_OUT\_OF\_ORDER | The [https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TimeAzEl.html](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TimeAzEl.html) items within a [https://docs.aws.amazon.com/ground-station/latest/APIReference/API_AzElSegment.html](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_AzElSegment.html) must be temporally in order |
+| TIME\_AZ\_EL\_ITEMS\_OUT\_OF\_ORDER | The [`TimeAzEl`](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TimeAzEl.html) items within a [`AzElSegment`](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_AzElSegment.html) must be temporally in order |
 | AZ\_EL\_SEGMENT\_REFERENCE\_EPOCH\_INVALID | The reference epoch for a segment is invalid or incorrectly formatted |
 | AZ\_EL\_SEGMENT\_START\_TIME\_INVALID | The start time in a segment's valid time range does not start after the first segment |
 | AZ\_EL\_SEGMENT\_END\_TIME\_INVALID | The end time in a segment's valid time range does not end after the last segment |
@@ -183,10 +183,10 @@ Overlapping segments
 | Error Code | Error Message |
 | --- | --- |
 | MEAN\_MOTION\_INVALID | The mean motion of the provided TLE ephemeris differs too greatly from the most recent reference ephemeris. Note: Ground Station uses Space-Track ephemerides as a reference during validation |
-| TIME\_AZ\_EL\_AZ\_RADIAN\_RANGE\_INVALID | AzEl [https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TimeAzEl.html](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TimeAzEl.html) must be greater than or equal to -π and less than or equal to 2π radians |
-| TIME\_AZ\_EL\_EL\_RADIAN\_RANGE\_INVALID | AzEl [https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TimeAzEl.html](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TimeAzEl.html) must be greater than or equal to -π/2 and less than or equal to π/2 radians |
-| TIME\_AZ\_EL\_AZ\_DEGREE\_RANGE\_INVALID | AzEl [https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TimeAzEl.html](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TimeAzEl.html) must be greater than or equal to -180 and less or equal to 360 degrees |
-| TIME\_AZ\_EL\_EL\_DEGREE\_RANGE\_INVALID | AzEl [https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TimeAzEl.html](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TimeAzEl.html) must be greater than or equal to -90 degrees and less than or equal to 90 degrees |
+| TIME\_AZ\_EL\_AZ\_RADIAN\_RANGE\_INVALID | AzEl [`az`](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TimeAzEl.html) must be greater than or equal to -π and less than or equal to 2π radians |
+| TIME\_AZ\_EL\_EL\_RADIAN\_RANGE\_INVALID | AzEl [`el`](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TimeAzEl.html) must be greater than or equal to -π/2 and less than or equal to π/2 radians |
+| TIME\_AZ\_EL\_AZ\_DEGREE\_RANGE\_INVALID | AzEl [`az`](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TimeAzEl.html) must be greater than or equal to -180 and less or equal to 360 degrees |
+| TIME\_AZ\_EL\_EL\_DEGREE\_RANGE\_INVALID | AzEl [`el`](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TimeAzEl.html) must be greater than or equal to -90 degrees and less than or equal to 90 degrees |
 | TIME\_AZ\_EL\_ANGLE\_UNITS\_INVALID | Invalid AzEl angle units |
 
 ### Invalid Reason: `KMS_KEY_INVALID`

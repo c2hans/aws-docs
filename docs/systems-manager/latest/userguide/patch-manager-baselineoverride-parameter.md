@@ -7,17 +7,17 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 # Using the BaselineOverride parameter
 <a name="patch-manager-baselineoverride-parameter"></a>
 
-You can define patching preferences at runtime using the baseline override feature in Patch Manager, a tool in AWS Systems Manager. Do this by specifying an Amazon Simple Storage Service (Amazon S3) bucket containing a JSON object with a list of patch baselines. The patching operation uses the baselines provided in the JSON object that match the host operating system instead of applying the rules from the default patch baseline.
+You can define patching preferences at runtime using the baseline override feature in Patch Manager. Do this by specifying an Amazon Simple Storage Service (Amazon S3) bucket containing a JSON object with a list of patch baselines. The patching operation uses the baselines provided in the JSON object that match the host operating system instead of applying the rules from the default patch baseline.
 
 **Important**
 The `BaselineOverride` file name can't contain the following characters: backtick (`), single quote ('), double quote ("), and dollar sign ($).
 
-Except when a patching operation uses a patch policy, using the `BaselineOverride` parameter doesn't overwrite the patch compliance of the baseline provided in the parameter. The output results are recorded in the Stdout logs from Run Command, a tool in AWS Systems Manager. The results only print out packages that are marked as `NON_COMPLIANT`. This means the package is marked as `Missing`, `Failed`, `InstalledRejected`, or `InstalledPendingReboot`.
+Except when a patching operation uses a patch policy, using the `BaselineOverride` parameter doesn't overwrite the patch compliance of the baseline provided in the parameter. The output results are recorded in the Stdout logs from Run Command. The results only print out packages that are marked as `NON_COMPLIANT`. This means the package is marked as `Missing`, `Failed`, `InstalledRejected`, or `InstalledPendingReboot`.
 
 When a patch operation uses a patch policy, however, the system passes the override parameter from the associated S3 bucket, and the compliance value is updated for the managed node. For more information about patch policy behaviors, see [Patch policy configurations in Quick Setup](patch-manager-policies.md).
 
 **Note**
-When you're patching a node that only uses IPv6, ensure that the provided URL is reachable from the node. If the SSM Agent config option `UseDualStackEndpoint` is set to `true`, then a dualstack S3 client is used when an S3 URL is provided. See [Tutorial: Patching a server in an IPv6 only environment](patch-manager-server-patching-iPv6-tutorial.md) for more information on configuring the agent to use dualstack.
+When you're patching a node that only uses IPv6, make sure that the provided URL is reachable from the node. If the SSM Agent config option `UseDualStackEndpoint` is set to `true`, then a dualstack S3 client is used when an S3 URL is provided. See [Tutorial: Patching a server in an IPv6 only environment](patch-manager-server-patching-iPv6-tutorial.md) for more information on configuring the agent to use dualstack.
 
 ## Using the patch baseline override with Snapshot Id or Install Override List parameters
 <a name="patch-manager-baselineoverride-parameter-other-parameters"></a>
@@ -25,7 +25,7 @@ When you're patching a node that only uses IPv6, ensure that the provided URL is
 There are two cases where the patch baseline override has noteworthy behavior.
 
 **Using baseline override and Snapshot Id at the same time**
-Snapshot Ids ensure that all managed nodes in a particular patching command all apply the same thing. For example, if you patch 1,000 nodes at one time, the patches will be the same.
+Snapshot Ids make sure that all managed nodes in a particular patching command all apply the same thing. For example, if you patch 1,000 nodes at one time, the patches will be the same.
 
 When using both a Snapshot Id and a patch baseline override, the Snapshot Id takes precedence over the patch baseline override. The baseline override rules will still be used, but they will only be evaluated once. In the earlier example, the patches across your 1,000 managed nodes will still always be the same. If, midway through the patching operation, you changed the JSON file in the referenced S3 bucket to be something different, the patches applied will still be the same. This is because the Snapshot Id was provided.
 

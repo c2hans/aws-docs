@@ -48,6 +48,9 @@ Content-type: application/json
    "agentRuntimeName": "string",
    "agentRuntimeVersion": "string",
    "authorizerConfiguration": { ... },
+   "capacityProviderConfiguration": {
+      "capacityProviderArn": "string"
+   },
    "createdAt": "string",
    "description": "string",
    "environmentVariables": {
@@ -95,7 +98,7 @@ The following data is returned in JSON format by the service.
  ** [agentRuntimeArn](#API_GetAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetAgentRuntime-response-agentRuntimeArn"></a>
 The Amazon Resource Name (ARN) of the AgentCore Runtime.
 Type: String
-Pattern: `arn:(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:agent/[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}:([0-9]{0,4}[1-9][0-9]{0,4})`
+Pattern: `arn:aws(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:runtime/[a-zA-Z][a-zA-Z0-9_]{0,47}-[a-zA-Z0-9]{10}`
 
  ** [agentRuntimeArtifact](#API_GetAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetAgentRuntime-response-agentRuntimeArtifact"></a>
 The artifact of the AgentCore Runtime.
@@ -122,6 +125,10 @@ Pattern: `([1-9][0-9]{0,4})`
 The authorizer configuration for the AgentCore Runtime.
 Type: [AuthorizerConfiguration](API_AuthorizerConfiguration.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
+
+ ** [capacityProviderConfiguration](#API_GetAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetAgentRuntime-response-capacityProviderConfiguration"></a>
+The capacity provider configuration for the AgentCore Runtime.
+Type: [CapacityProviderConfiguration](API_CapacityProviderConfiguration.md) object
 
  ** [createdAt](#API_GetAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetAgentRuntime-response-createdAt"></a>
 The timestamp when the AgentCore Runtime was created.

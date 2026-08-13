@@ -118,7 +118,7 @@ The following quotas cannot be increased.
 #### Soft
 <a name="limits_sns_api_throttles_soft"></a>
 
-The following quotas vary by AWS Region. The messages per second quota is based on the number of messages published to an Amazon SNS region, per account, combining [https://docs.aws.amazon.com/sns/latest/api/API_Publish.html](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html) and [https://docs.aws.amazon.com/sns/latest/api/API_PublishBatch.html](https://docs.aws.amazon.com/sns/latest/api/API_PublishBatch.html) API requests including both standard and FIFO topic types. To request a soft limit increase, submit an [SNS quota increase request](https://console.aws.amazon.com/servicequotas/home/services/sns/quotas).
+The following quotas vary by AWS Region. The messages per second quota is based on the number of messages published to an Amazon SNS region, per account, combining [`Publish`](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html) and [`PublishBatch`](https://docs.aws.amazon.com/sns/latest/api/API_PublishBatch.html) API requests including both standard and FIFO topic types. To request a soft limit increase, submit an [SNS quota increase request](https://console.aws.amazon.com/servicequotas/home/services/sns/quotas).
 
 For example, if your regional quota is 30,000 messages per second, per account, there are a few ways this quota can be reached:
 + Using the `Publish` action at a rate of 30,000 API requests per second to publish 30,000 messages (one message per API request).

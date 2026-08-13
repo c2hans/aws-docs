@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/pull-request-
 # Pull request comment approval
 <a name="pull-request-build-policy"></a>
 
-CodeBuild supports pull request build policies that provide additional control over builds triggered by pull requests. You may not want to automatically build pull requests from unknown users until their changes can be reviewed. This feature allows you to require one of your team members to first review the code and then run the pipeline. This is commonly used as a security measure when building a code submitted by unknown contributors.
+CodeBuild supports pull request build policies that provide additional control over builds triggered by pull requests. You may not want to automatically build pull requests from unknown users until their changes can be reviewed. This feature allows you to require one of your team members to first review the code and then run the pipeline. This is commonly used as a security measure when building code submitted by unknown contributors.
 
 Pull request build policies allow you to control when CodeBuild triggers builds for pull requests based on the contributor's permissions and approval status. This is particularly important for public repositories or repositories that accept contributions from external collaborators.
 
@@ -17,12 +17,12 @@ When enabled, this feature ensures that builds are only triggered for pull reque
 <a name="pull-request-build-policy.how-it-works"></a>
 
 **Trusted contributors**
-Trusted contributor is a user who’s current role in the source control system is set in the pull request based policy as an approver roles. When a trusted contributor creates a pull request, CodeBuild triggers the build automatically, maintaining the current behavior.
+Trusted contributor is a user whose current role in the source control system is set in the pull request based policy as an approver role. When a trusted contributor creates a pull request, CodeBuild triggers the build automatically, maintaining the current behavior.
 
 **Untrusted contributors**
-Untrusted contributor is a user who’s role is not set in the list of the approver roles. When an untrusted contribute creates a pull request:
+Untrusted contributor is a user whose role is not set in the list of the approver roles. When an untrusted contributor creates a pull request:
 
-1. CodeBuild marks the build status as “Failed" with the message "Pull request approval required for starting a build".
+1. CodeBuild marks the build status as "Failed" with the message "Pull request approval required for starting a build".
 
 1. A trusted contributor must review the changes and post a comment with `/codebuild_run({{<SHA_OF_THE_LATEST_COMMIT>}})` to trigger the build. For example, `/codebuild_run({{046e8b67481d53bdc86c3f6affdd5d1afae6d369}})`.
 
@@ -102,7 +102,7 @@ Standard GitHub roles (Admin, Maintain, Write, Triage, Read) map directly to the
 
 **Enable comment approval for all pull requests**
 To use the AWS CodeBuild SDK to enable or disable Pull Request Build policy for a webhook, use the `pullRequestBuildPolicy` field in the request syntax of the `CreateWebhook` or `UpdateWebhook` API methods. For more information, see [WebhookFilter](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_WebhookFilter.html) in the *CodeBuild API Reference*.
-Users with Github roles Admin, Maintain, and Write will be treated as trusted contributors.
+Users with GitHub roles Admin, Maintain, and Write will be treated as trusted contributors.
 
 ```
 "pullRequestBuildPolicy": {
@@ -112,7 +112,7 @@ Users with Github roles Admin, Maintain, and Write will be treated as trusted co
 ```
 
 **Enable comment approval only for repository admins and maintainers**
-Users with GitHub roles Admin, Maintain, will be treated as trusted contributors.
+Users with GitHub roles Admin and Maintain will be treated as trusted contributors.
 
 ```
 "pullRequestBuildPolicy": {
@@ -132,7 +132,7 @@ Users with GitHub roles Admin, Maintain, will be treated as trusted contributors
 ## AWS CloudFormation
 <a name="pull-request-build-policy.cloudformation"></a>
 
-To use an AWS CloudFormation template to enable or disable Pull Request Build policy for a webhook use PullRequestBuildPolicy property. The following YAML-formatted portion of an AWS CloudFormation template create a project with a webhook that has Pull Request Build Policy enabled for all pull requests. Maintain and Admin roles as specified as approvers.
+To use an AWS CloudFormation template to enable or disable Pull Request Build policy for a webhook, use the PullRequestBuildPolicy property. The following YAML-formatted portion of an AWS CloudFormation template creates a project with a webhook that has Pull Request Build Policy enabled for all pull requests. Maintain and Admin roles are specified as approvers.
 
 ```
 CodeBuildProject:

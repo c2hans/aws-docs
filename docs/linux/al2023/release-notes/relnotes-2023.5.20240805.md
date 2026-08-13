@@ -149,8 +149,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.5.20240730 version:** 8.0.5-1.amzn2023
   - **AL2023.5.20240805 version:** 8.0.7-1.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
+- ** [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
+  - **RPM:**  [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.5.20240730 version:** 1.85.1-1.amzn2023
   - **AL2023.5.20240805 version:** 1.85.3-1.amzn2023
@@ -175,9 +175,9 @@ The full comparison of RPM package versions is below.
   - **AL2023.5.20240730 version:** 9.56.1-7.amzn2023.0.8
   - **AL2023.5.20240805 version:** 9.56.1-7.amzn2023.0.10
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html) **
+- ** [`glibc`](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html) **
   - **RPM:**  compat-libpthread-nonshared  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`glibc`](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  glibc-all-langpacks  / **Architectures:** aarch64, x86\_64
   - **RPM:**  glibc-benchtests  / **Architectures:** aarch64, x86\_64
   - **RPM:**  glibc-common  / **Architectures:** aarch64, x86\_64
@@ -573,8 +573,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.5.20240730 version:** 3.0.8-1.amzn2023.0.12
   - **AL2023.5.20240805 version:** 3.0.8-1.amzn2023.0.14
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
+- ** [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
+  - **RPM:**  [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.2-bcmath  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.2-cli  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.2-common  / **Architectures:** aarch64, x86\_64
@@ -606,7 +606,7 @@ The full comparison of RPM package versions is below.
   - **AL2023.5.20240730 version:** 8.2.18-1.amzn2023.0.1
   - **AL2023.5.20240805 version:** 8.2.21-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
+- ** [`python3.9`](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
   - **RPM:**  python3  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3-debug  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3-devel  / **Architectures:** aarch64, x86\_64

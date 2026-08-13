@@ -80,8 +80,8 @@ aws apigateway update-method \
 #### [ REST API ]
 
 To require an API key on a method, do one of the following:
-+ Call [https://docs.aws.amazon.com/apigateway/latest/api/API_PutMethod.html](https://docs.aws.amazon.com/apigateway/latest/api/API_PutMethod.html) to create a method. Set `apiKeyRequired` to `true` in the request payload.
-+ Call [https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateMethod.html](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateMethod.html) to set `apiKeyRequired` to `true`.
++ Call [`method:put`](https://docs.aws.amazon.com/apigateway/latest/api/API_PutMethod.html) to create a method. Set `apiKeyRequired` to `true` in the request payload.
++ Call [`method:update`](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateMethod.html) to set `apiKeyRequired` to `true`.
 
 ------
 
@@ -127,7 +127,7 @@ The following [create-api-key](https://docs.aws.amazon.com/cli/latest/reference/
 ------
 #### [ REST API ]
 
-Call [https://docs.aws.amazon.com/apigateway/latest/api/API_CreateApiKey.html](https://docs.aws.amazon.com/apigateway/latest/api/API_CreateApiKey.html) to create an API key.
+Call [`apikey:create`](https://docs.aws.amazon.com/apigateway/latest/api/API_CreateApiKey.html) to create an API key.
 
 ------
 
@@ -169,7 +169,7 @@ aws apigateway import-api-key \
 ------
 #### [ REST API ]
 
-Call [https://docs.aws.amazon.com/apigateway/latest/api/API_ImportApiKeys.html](https://docs.aws.amazon.com/apigateway/latest/api/API_ImportApiKeys.html) to import an API key from a file. For the file format, see [API Gateway API key file format](api-key-file-format.md).
+Call [`apikey:import`](https://docs.aws.amazon.com/apigateway/latest/api/API_ImportApiKeys.html) to import an API key from a file. For the file format, see [API Gateway API key file format](api-key-file-format.md).
 
 ------
 

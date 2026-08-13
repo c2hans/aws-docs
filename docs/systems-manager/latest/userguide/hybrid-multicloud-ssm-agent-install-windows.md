@@ -105,7 +105,7 @@ The command does the following:
   DisplayName : Amazon SSM Agent
   ```
 
-The machine is now a *managed node*. These managed nodes are now identified with the prefix "mi-". You can view managed nodes on the **Managed node** page in Fleet Manager, by using the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-instance-information.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-instance-information.html), or by using the API command [https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribeInstanceInformation.html](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribeInstanceInformation.html).
+The machine is now a *managed node*. These managed nodes are now identified with the prefix "mi-". You can view managed nodes on the **Managed node** page in Fleet Manager by using the AWS CLI command [describe-instance-information](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-instance-information.html), or by using the API command [DescribeInstanceInformation](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribeInstanceInformation.html).
 
 ## Setting up private key auto rotation
 <a name="ssm-agent-hybrid-private-key-rotation-windows"></a>

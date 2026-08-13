@@ -120,7 +120,7 @@ Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
  ** type **
-Indicates if this is a subnet used with Amazon Elastic VMware Service (EVS). Possible values are `Elastic VMware Service` or no value. For more information about Amazon EVS, see [https://docs.aws.amazon.com/evs/latest/APIReference/Welcome.html](https://docs.aws.amazon.com/evs/latest/APIReference/Welcome.html).
+Indicates if this is a subnet used with Amazon Elastic VMware Service (EVS). Possible values are `Elastic VMware Service` or no value. For more information about Amazon EVS, see [*Amazon Elastic VMware Service API Reference*](https://docs.aws.amazon.com/evs/latest/APIReference/Welcome.html).
 Type: String
 Required: No
 

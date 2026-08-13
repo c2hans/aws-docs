@@ -21,7 +21,7 @@ Security Hub CSPM retired this control in April 2024. For more information, see 
 
 **Resource type:** `AWS::Athena::WorkGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/athena-workgroup-encrypted-at-rest.html](https://docs.aws.amazon.com/config/latest/developerguide/athena-workgroup-encrypted-at-rest.html)
+**AWS Config rule:** [athena-workgroup-encrypted-at-rest](https://docs.aws.amazon.com/config/latest/developerguide/athena-workgroup-encrypted-at-rest.html)
 
 **Schedule type:** Change triggered
 
@@ -107,7 +107,7 @@ To add tags to an Athena workgroup, see [Adding and deleting tags on an individu
 
 **Resource type:** `AWS::Athena::WorkGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/athena-workgroup-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/athena-workgroup-logging-enabled.html)
+**AWS Config rule:** [athena-workgroup-logging-enabled](https://docs.aws.amazon.com/config/latest/developerguide/athena-workgroup-logging-enabled.html)
 
 **Schedule type:** Change triggered
 

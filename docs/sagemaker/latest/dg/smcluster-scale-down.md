@@ -27,7 +27,7 @@ When scaling down at the instance level with `BatchDeleteCusterNodes`, you can o
 ## Scale down at the instance group level
 <a name="smcluster-scale-down-or-delete"></a>
 
-The [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html) operation allows you to make changes to the configuration of your SageMaker HyperPod cluster, such as scaling down the number of instances of an instance group or removing entire instance groups. This can be useful when you want to adjust the resources allocated to your cluster based on changes in your workload, optimize costs, or change the instance type of an instance group.
+The [`UpdateCluster`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html) operation allows you to make changes to the configuration of your SageMaker HyperPod cluster, such as scaling down the number of instances of an instance group or removing entire instance groups. This can be useful when you want to adjust the resources allocated to your cluster based on changes in your workload, optimize costs, or change the instance type of an instance group.
 
 ### Scale down an instance group
 <a name="smcluster-scale-down-updatecluster"></a>
@@ -76,7 +76,7 @@ The following is an example of an `UpdateCluster` JSON object. Consider the case
 ### Delete instance groups
 <a name="smcluster-remove-instancegroup"></a>
 
-You can use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html) operation to remove entire instance groups from your SageMaker HyperPod cluster when they are no longer needed. This goes beyond simple scaling down, allowing you to completely eliminate specific instance groups from your cluster's configuration.
+You can use the [`UpdateCluster`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html) operation to remove entire instance groups from your SageMaker HyperPod cluster when they are no longer needed. This goes beyond simple scaling down, allowing you to completely eliminate specific instance groups from your cluster's configuration.
 
 **Note**
 When removing an instance group:

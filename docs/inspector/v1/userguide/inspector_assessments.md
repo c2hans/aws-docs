@@ -92,7 +92,7 @@ To delete an assessment template, perform the following procedure.
 **Important**
 When you delete an assessment template, all assessment runs, findings, and versions of the reports associated with this template are also deleted.
 
-You can also delete an assessment template by using the [https://docs.aws.amazon.com/inspector/latest/APIReference/API_DeleteAssessmentTemplate.html](https://docs.aws.amazon.com/inspector/latest/APIReference/API_DeleteAssessmentTemplate.html) API.
+You can also delete an assessment template by using the [`DeleteAssessmentTemplate`](https://docs.aws.amazon.com/inspector/latest/APIReference/API_DeleteAssessmentTemplate.html) API.
 
 ## Assessment runs
 <a name="assessment_runs"></a>
@@ -113,7 +113,7 @@ To delete an assessment run, perform the following procedure.
 **Important**
 When you delete a run, all findings and all versions of the report from that run are also deleted.
 
-You can also delete a run by using the [https://docs.aws.amazon.com/inspector/latest/APIReference/API_DeleteAssessmentRun.html](https://docs.aws.amazon.com/inspector/latest/APIReference/API_DeleteAssessmentRun.html) API.
+You can also delete a run by using the [`DeleteAssessmentRun`](https://docs.aws.amazon.com/inspector/latest/APIReference/API_DeleteAssessmentRun.html) API.
 
 ## Amazon Inspector Classic assessment runs limits
 <a name="assessment_runs-limits"></a>

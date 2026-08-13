@@ -42,7 +42,7 @@ This topic details the changes in the IAM Policy Builder API from version 1 (v1)
 #### v1
 <a name="migration-iam-policy-builder-statement-actions.v1"></a>
 
-The v1 SDK has [`enum` types](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/policy/Action.html) for service actions that represent `[https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_action.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_action.html)` elements in a policy statement. The following `enum` types are some examples.
+The v1 SDK has [`enum` types](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/policy/Action.html) for service actions that represent `[*Action*](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_action.html)` elements in a policy statement. The following `enum` types are some examples.
 + `[IdentityManagementActions](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/policy/actions/IdentityManagementActions.html)`
 + `[DynamoDBv2Actions](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/policy/actions/DynamoDBv2Actions.html)`
 + `[SQSActions](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/policy/actions/SQSActions.html)`
@@ -53,7 +53,7 @@ The following example shows the `SendMessage` constant for `SQSActions`.
 Action action = SQSActions.SendMessage;
 ```
 
-You cannot specify a `[https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notaction.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notaction.html)` element to a statement in v1.
+You cannot specify a `[*NotAction*](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notaction.html)` element to a statement in v1.
 
 #### v2
 <a name="migration-iam-policy-builder-statement-actions.v2"></a>
@@ -64,7 +64,7 @@ In v2, the [IamAction](https://sdk.amazonaws.com/java/api/latest/software/amazon
 IamAction action = IamAction.create("sqs:SendMessage");
 ```
 
-You can specify a `[https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notaction.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notaction.html)` for a statement with v2 as shown in the following code.
+You can specify a `[*NotAction*](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notaction.html)` for a statement with v2 as shown in the following code.
 
 ```
 IamAction action = IamAction.create("sqs:SendMessage");
@@ -77,7 +77,7 @@ IamStatement.builder().addNotAction(action);
 #### v1
 <a name="migration-iam-policy-builder-statement-conditions-v1"></a>
 
-To represent statement conditions, the v1 SDK uses subclasses of [https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/policy/Condition.html](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/policy/Condition.html).
+To represent statement conditions, the v1 SDK uses subclasses of [`Condition`](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/policy/Condition.html).
 +  [ArnCondition](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/policy/conditions/ArnCondition.html)
 +  [BooleanCondition](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/policy/conditions/BooleanCondition.html)
 +  [DateCondition](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/policy/conditions/DateCondition.html)
@@ -106,12 +106,12 @@ IamCondition condition = IamCondition.create(IamConditionOperator.STRING_NOT_LIK
 #### v1
 <a name="migration-iam-policy-builder-statement-resources-v1"></a>
 
-A policy statement's `[https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_resource.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_resource.html)` element is represented by the SDK's `[Resource](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/policy/Resource.html)` class. You supply the ARN as a string in the constructor. The following subclasses provide convenience constructors.
+A policy statement's `[*Resource*](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_resource.html)` element is represented by the SDK's `[Resource](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/policy/Resource.html)` class. You supply the ARN as a string in the constructor. The following subclasses provide convenience constructors.
 + [S3BucketResource](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/policy/resources/S3BucketResource.html)
 + [S3ObjectResource](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/policy/resources/S3ObjectResource.html)
 + [SQSQueueResource](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/policy/resources/SQSQueueResource.html)
 
-In v1, you can specify a `[https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notresource.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notresource.html)` element for a `[Resource](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/policy/Resource.html)` by calling the `withIsNotType` method as shown in the following statement.
+In v1, you can specify a `[*NotResource*](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notresource.html)` element for a `[Resource](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/policy/Resource.html)` by calling the `withIsNotType` method as shown in the following statement.
 
 ```
 Resource resource = new Resource("arn:aws:s3:::amzn-s3-demo-bucket").withIsNotType(true);
@@ -120,13 +120,13 @@ Resource resource = new Resource("arn:aws:s3:::amzn-s3-demo-bucket").withIsNotTy
 #### v2
 <a name="migration-iam-policy-builder-statement-resources-v2"></a>
 
-In v2, you create a `[https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_resource.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_resource.html)` element by passing an ARN to the `IamResource.create` method.
+In v2, you create a `[*Resource*](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_resource.html)` element by passing an ARN to the `IamResource.create` method.
 
 ```
 IamResource resource = IamResource.create("arn:aws:s3:::amzn-s3-demo-bucket");
 ```
 
-An `[IamResource](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/policybuilder/iam/IamResource.html)` can be set as *[https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notresource.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notresource.html)* element as shown in the following snippet.
+An `[IamResource](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/policybuilder/iam/IamResource.html)` can be set as *[`NotResource`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notresource.html)* element as shown in the following snippet.
 
 ```
 IamResource resource = IamResource.create("arn:aws:s3:::amzn-s3-demo-bucket");
@@ -147,7 +147,7 @@ The v1 SDK offers the following `[Principal](https://docs.aws.amazon.com/AWSJava
 + `AllWebProviders`
 + `All`
 
-You cannot add a `[https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notprincipal.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notprincipal.html)` element to a statement.
+You cannot add a `[*NotPrincipal*](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notprincipal.html)` element to a statement.
 
 #### v2
 <a name="migration-iam-policy-builder-statement-principal-v2"></a>
@@ -160,7 +160,7 @@ To represent all members in other types of principals, use the `[IamPrincipalTyp
 + `IamPrincipal.create(IamPrincipalType.FEDERATED,"*")` for all web providers.
 + `IamPrincipal.create(IamPrincipalType.CANONICAL_USER,"*")` for all canonical users.
 
-You can use the `addNotPrincipal` method to represent a `[https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notprincipal.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notprincipal.html)` element when you create a policy statement as shown in the following statement.
+You can use the `addNotPrincipal` method to represent a `[*NotPrincipal*](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notprincipal.html)` element when you create a policy statement as shown in the following statement.
 
 ```
 IamPrincipal principal = IamPrincipal.create(IamPrincipalType.AWS, "arn:aws:iam::444455556666:root");

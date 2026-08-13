@@ -15,7 +15,7 @@ You can change the amount of snapshot reserve on a volume using the NetApp ONTAP
 
    For more information, see [Managing file systems with the ONTAP CLI](managing-resources-ontap-apps.md#fsxadmin-ontap-cli).
 
-1. Use the [https://docs.netapp.com/us-en/ontap-cli-9141/volume-modify.html](https://docs.netapp.com/us-en/ontap-cli-9141/volume-modify.html) ONTAP ClI command to change the percent of disk space used for the Snapshot copy reserve. Replace the following placeholder values with your data:
+1. Use the [`volume modify`](https://docs.netapp.com/us-en/ontap-cli-9141/volume-modify.html) ONTAP ClI command to change the percent of disk space used for the Snapshot copy reserve. Replace the following placeholder values with your data:
    + {{`svm_name`}} — use your SVM's name.
    + {{`vol_name`}} — use your volume's name.
    + {{`percent`}} — the percent of disk space you want to reserve for Snapshot copies.

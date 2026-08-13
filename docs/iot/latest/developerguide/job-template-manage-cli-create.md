@@ -10,7 +10,7 @@ Use the AWS CLI to get information about AWS managed templates and create a job 
 ## List managed templates
 <a name="job-template-manage-cli-list"></a>
 
-The [https://docs.aws.amazon.com/cli/latest/reference/iot/list-managed-job-templates.html](https://docs.aws.amazon.com/cli/latest/reference/iot/list-managed-job-templates.html) AWS CLI command lists all of the job templates in your AWS account.
+The [`list-managed-job-templates`](https://docs.aws.amazon.com/cli/latest/reference/iot/list-managed-job-templates.html) AWS CLI command lists all of the job templates in your AWS account.
 
 ```
  aws iot list-managed-job-templates
@@ -69,7 +69,7 @@ For more information, see [ListManagedJobTemplates](https://docs.aws.amazon.com/
 ## Get details about a managed template
 <a name="job-template-manage-cli-get"></a>
 
-The [https://docs.aws.amazon.com/cli/latest/reference/iot/describe-managed-job-template.html](https://docs.aws.amazon.com/cli/latest/reference/iot/describe-managed-job-template.html) AWS CLI command gets details about a specified job template. Specify the job template name and an optional template version. If the template version is not specified, the predefined, default version is returned. The following shows an example of running the command to get details about the `AWS-Download-File` template.
+The [`describe-managed-job-template`](https://docs.aws.amazon.com/cli/latest/reference/iot/describe-managed-job-template.html) AWS CLI command gets details about a specified job template. Specify the job template name and an optional template version. If the template version is not specified, the predefined, default version is returned. The following shows an example of running the command to get details about the `AWS-Download-File` template.
 
 ```
 aws iot describe-managed-job-template \
@@ -129,7 +129,7 @@ For more information, see [DescribeManagedJobTemplate](https://docs.aws.amazon.c
 ## Create a job by using managed templates
 <a name="job-template-manage-cli-create-job"></a>
 
-The [https://docs.aws.amazon.com/cli/latest/reference/iot/create-job.html](https://docs.aws.amazon.com/cli/latest/reference/iot/create-job.html) AWS CLI command can be used to create a job from a job template. It targets a device named `thingOne` and specifies the Amazon Resource Name (ARN) of the managed template to use as the basis for the job. You can override advanced configurations, such as timeout and cancel configurations, by passing the associated parameters of the `create-job` command.
+The [`create-job`](https://docs.aws.amazon.com/cli/latest/reference/iot/create-job.html) AWS CLI command can be used to create a job from a job template. It targets a device named `thingOne` and specifies the Amazon Resource Name (ARN) of the managed template to use as the basis for the job. You can override advanced configurations, such as timeout and cancel configurations, by passing the associated parameters of the `create-job` command.
 
 The example shows how to create a job that uses the `AWS-Download-File` template. It also shows how to specify the input parameters of the template by using the `document-parameters` parameter.
 

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gener
 # How to resolve issues with write-only properties in AWS::Lambda::Function resources
 <a name="generate-IaC-lambda-function"></a>
 
-This topic explains how to resolve issues with write-only properties in [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-function.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-function.html) resources when using the IaC generator.
+This topic explains how to resolve issues with write-only properties in [AWS::Lambda::Function](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-function.html) resources when using the IaC generator.
 
 ## Issue
 <a name="lambda-function-mutually-exclusive-properties-issue"></a>
@@ -52,7 +52,7 @@ To include `AWS::Lambda::Function` resources in a generated template, you must d
 
 ****If you don’t have a copy of your Lambda code**, you can update your template using the following instructions:**
 
-1. Use the AWS Lambda [https://docs.aws.amazon.com/lambda/latest/api/API_GetFunction.html](https://docs.aws.amazon.com/lambda/latest/api/API_GetFunction.html) API action (for example, by using the [https://docs.aws.amazon.com/cli/latest/reference/lambda/get-function.html](https://docs.aws.amazon.com/cli/latest/reference/lambda/get-function.html) AWS CLI command.
+1. Use the AWS Lambda [`GetFunction`](https://docs.aws.amazon.com/lambda/latest/api/API_GetFunction.html) API action (for example, by using the [`aws lambda get-function`](https://docs.aws.amazon.com/cli/latest/reference/lambda/get-function.html) AWS CLI command.
 
 1. In the response, the `RepositoryType` parameter is `S3` if the code is in a Amazon S3 bucket, or `ECR` if the code is in an Amazon ECR repository.
 

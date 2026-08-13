@@ -40,14 +40,6 @@ The first time you generate a report on a schedule, Systems Manager creates anot
 
 We recommend against attempting to modify these policies and roles. Doing so could cause patch compliance report generation to fail. For more information, see [Troubleshooting patch compliance report generation](#patch-compliance-reports-troubleshooting).
 
-**Topics**
-+ [What's in a generated patch compliance report?](#patch-compliance-reports-to-s3-examples)
-+ [Generating patch compliance reports for a single managed node](#patch-compliance-reports-to-s3-one-instance)
-+ [Generating patch compliance reports for all managed nodes](#patch-compliance-reports-to-s3-all-instances)
-+ [Viewing patch compliance reporting history](#patch-compliance-reporting-history)
-+ [Viewing patch compliance reporting schedules](#patch-compliance-reporting-schedules)
-+ [Troubleshooting patch compliance report generation](#patch-compliance-reports-troubleshooting)
-
 ## What's in a generated patch compliance report?
 <a name="patch-compliance-reports-to-s3-examples"></a>
 
@@ -237,10 +229,6 @@ Use the information in this topic to help you view details about the patch compl
 <a name="patch-compliance-reports-troubleshooting"></a>
 
 Use the following information to help you troubleshoot problems with generating patch compliance report generation in Patch Manager, a tool in AWS Systems Manager.
-
-**Topics**
-+ [A message reports that the `AWS-SystemsManager-PatchManagerExportRolePolicy` policy is corrupted](#patch-compliance-reports-troubleshooting-1)
-+ [After deleting patch compliance policies or roles, scheduled reports aren't generated successfully](#patch-compliance-reports-troubleshooting-2)
 
 ### A message reports that the `AWS-SystemsManager-PatchManagerExportRolePolicy` policy is corrupted
 <a name="patch-compliance-reports-troubleshooting-1"></a>

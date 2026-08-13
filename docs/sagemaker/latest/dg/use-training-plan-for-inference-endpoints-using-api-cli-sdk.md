@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/use-training-plan-fo
 # Deploy an inference endpoint using the API, AWS CLI
 <a name="use-training-plan-for-inference-endpoints-using-api-cli-sdk"></a>
 
-To use SageMaker training plans on a SageMaker inference endpoint, specify the `MlReservationArn` parameter with the desired training plan resource ARN in the `CapacityReservationConfig` when calling the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpointConfig.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpointConfig.html) API operation. You can use exactly one plan per inference endpoint.
+To use SageMaker training plans on a SageMaker inference endpoint, specify the `MlReservationArn` parameter with the desired training plan resource ARN in the `CapacityReservationConfig` when calling the [`CreateEndpointConfig`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpointConfig.html) API operation. You can use exactly one plan per inference endpoint.
 
 **Important**
 The `InstanceType` field set in the `ProductionVariants` section of the `CreateEndpointConfig` request must match the `InstanceType` of your training plan.

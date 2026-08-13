@@ -108,7 +108,7 @@ var bucket = awss3.NewBucket(stack, jsii.String("MyBucket"), &awss3.BucketProps{
 ### Generic structures
 <a name="go-generic-structures"></a>
 
-In some places, the AWS CDK uses JavaScript arrays or untyped objects as input to a method. (See, for example, AWS CodeBuild's [https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_aws-codebuild.BuildSpec.html#to-wbr-build-wbr-spec](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_aws-codebuild.BuildSpec.html#to-wbr-build-wbr-spec) method.) In Go, these objects are represented as slices and an empty interface, respectively.
+In some places, the AWS CDK uses JavaScript arrays or untyped objects as input to a method. (See, for example, AWS CodeBuild's [`BuildSpec.fromObject()`](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_aws-codebuild.BuildSpec.html#to-wbr-build-wbr-spec) method.) In Go, these objects are represented as slices and an empty interface, respectively.
 
 The CDK provides variadic helper functions such as `jsii.Strings` for building slices containing primitive types.
 

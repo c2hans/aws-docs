@@ -164,7 +164,7 @@ The following code example shows how a DTMF configuration would be represented b
     + Select intents from a dropdown list.
     + Filter the dropdown list of intents by locale. Based on the locale selected, intents for the bot are listed in the dropdown list.
 
-    When you select a Lex bot ARN and alias from a dropdown lists, you can add intents for that bot by searching using locale. In order for intents to be listed, the bot must have an Connect Customer tag and the bot alias must have a version associated with it.
+    When you select a Lex bot ARN and alias from a dropdown lists, you can add intents for that bot by searching using locale. In order for intents to be listed, the bot must have a Connect Customer tag and the bot alias must have a version associated with it.
 
     The **Intents** dropdown box does not list intents for Amazon Lex V1 bots, cross region bots, or if the bot ARN is dynamically set. For these intents, try the following options to find them.
     + Check whether the **AmazonConnectEnabled** tag is set to True:

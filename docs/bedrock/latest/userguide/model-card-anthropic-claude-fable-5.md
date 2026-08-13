@@ -23,7 +23,7 @@ Claude Fable 5 is Anthropic's next-generation model for complex knowledge work a
 + **Knowledge cutoff:** January 2026
 + **Marketplace product ID:** prod-h6swdfybvty7y
 
-| **Input Modalities** | **Output Modalities** | **[APIs supported](https://docs.aws.amazon.com/bedrock/latest/userguide/apis.html)** | **[Endpoints supported](https://docs.aws.amazon.com/bedrock/latest/userguide/endpoints.html)** |
+| **Input Modalities** | **Output Modalities** | **[APIs supported](bedrock/latest/userguide/apis.html)** | **[Endpoints supported](bedrock/latest/userguide/endpoints.html)** |
 | --- | --- | --- | --- |
 | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) Audio | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) Embedding | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) Responses | ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) bedrock-runtime |
 | ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) Image | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) Image | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) Chat Completions | ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) bedrock-mantle |
@@ -40,7 +40,7 @@ Claude Fable 5 is Anthropic's next-generation model for complex knowledge work a
 
 | **Supported** | **Not Supported** |
 | --- | --- |
-|  + [Response streaming](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ [Abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html)<br />+ [Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html)<br />+ [Prompt optimization](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-optimize.html)<br />+ [Knowledge base](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html)<br />+ [Model evaluation](https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation.html)<br />+ [Prompt management](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management.html)<br />+ [Flows](https://docs.aws.amazon.com/bedrock/latest/userguide/flows.html)<br />+ [Agents](https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html)<br />+ [Count tokens](https://docs.aws.amazon.com/bedrock/latest/userguide/count-tokens.html)  |  + [Intelligent prompt routing](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-routing.html)  |
+|  + [Response streaming](bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ [Abuse detection](bedrock/latest/userguide/abuse-detection.html)<br />+ [Guardrails](bedrock/latest/userguide/guardrails.html)<br />+ [Prompt optimization](bedrock/latest/userguide/prompt-management-optimize.html)<br />+ [Knowledge base](bedrock/latest/userguide/knowledge-base.html)<br />+ [Model evaluation](bedrock/latest/userguide/evaluation.html)<br />+ [Prompt management](bedrock/latest/userguide/prompt-management.html)<br />+ [Flows](bedrock/latest/userguide/flows.html)<br />+ [Agents](bedrock/latest/userguide/agents.html)<br />+ [Count tokens](bedrock/latest/userguide/count-tokens.html)  |  + [Intelligent prompt routing](bedrock/latest/userguide/prompt-routing.html)  |
 
 ***Bedrock Features***
 
@@ -48,11 +48,11 @@ Claude Fable 5 is Anthropic's next-generation model for complex knowledge work a
 
 | **Supported** | **Not Supported** |
 | --- | --- |
-|  + [Response streaming](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ [Abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html)<br />+ [Count tokens](https://docs.aws.amazon.com/bedrock/latest/userguide/count-tokens.html)  |  + [Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html)<br />+ [Prompt optimization](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-optimize.html)<br />+ [Knowledge base](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html)<br />+ [Model evaluation](https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation.html)<br />+ [Prompt management](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management.html)<br />+ [Flows](https://docs.aws.amazon.com/bedrock/latest/userguide/flows.html)<br />+ [Agents](https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html)<br />+ [Intelligent prompt routing](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-routing.html)  |
+|  + [Response streaming](bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ [Abuse detection](bedrock/latest/userguide/abuse-detection.html)<br />+ [Count tokens](bedrock/latest/userguide/count-tokens.html)  |  + [Guardrails](bedrock/latest/userguide/guardrails.html)<br />+ [Prompt optimization](bedrock/latest/userguide/prompt-management-optimize.html)<br />+ [Knowledge base](bedrock/latest/userguide/knowledge-base.html)<br />+ [Model evaluation](bedrock/latest/userguide/evaluation.html)<br />+ [Prompt management](bedrock/latest/userguide/prompt-management.html)<br />+ [Flows](bedrock/latest/userguide/flows.html)<br />+ [Agents](bedrock/latest/userguide/agents.html)<br />+ [Intelligent prompt routing](bedrock/latest/userguide/prompt-routing.html)  |
 
 ***Prompt caching***
 
-For more information, see [Prompt caching for faster model inference](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html).
+For more information, see [Prompt caching for faster model inference](bedrock/latest/userguide/prompt-caching.html).
 
 | **Prompt caching supported** | **Min tokens per cache checkpoint** | **Max cache checkpoints per request** | **Supported TTL** | **Fields that accept prompt cache checkpoint** |
 | --- | --- | --- | --- | --- |
@@ -68,12 +68,12 @@ Customers should handle `stop_reason: "refusal"` as a primary response path. Pro
 ## Pricing
 <a name="model-card-anthropic-claude-fable-5-pricing"></a>
 
-For pricing, please refer to the [Amazon Bedrock Pricing](https://aws.amazon.com/bedrock/pricing/) page.
+For pricing information, see the [Amazon Bedrock Pricing](https://aws.amazon.com/bedrock/pricing/) page.
 
 ## Programmatic Access
 <a name="model-card-anthropic-claude-fable-5-programmatic-access"></a>
 
-Use the following model IDs and endpoint URLs to access this model programmatically. For more information about the available APIs and endpoints, see [APIs supported](https://docs.aws.amazon.com/bedrock/latest/userguide/apis.html) and [Endpoints supported](https://docs.aws.amazon.com/bedrock/latest/userguide/endpoints.html).
+Use the following model IDs and endpoint URLs to access this model programmatically. For more information about the available APIs and endpoints, see [APIs supported](bedrock/latest/userguide/apis.html) and [Endpoints supported](bedrock/latest/userguide/endpoints.html).
 
 | **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Geo inference ID** | **Global inference ID** |
 | --- | --- | --- | --- | --- |
@@ -85,7 +85,7 @@ Use the following model IDs and endpoint URLs to access this model programmatica
 ## Service Tiers
 <a name="model-card-anthropic-claude-fable-5-tiers"></a>
 
-Amazon Bedrock offers multiple service tiers to match your workload requirements. **Standard** provides pay-per-token access with no commitment. **Priority** offers higher throughput with a time-based commitment. **Flex** provides lower-cost access for flexible, non-time-sensitive workloads. **Reserved** provides dedicated throughput with a term commitment for predictable workloads. For more information, see [service tiers](https://docs.aws.amazon.com/bedrock/latest/userguide/service-tiers-inference.html).
+Amazon Bedrock offers multiple service tiers to match your workload requirements. **Standard** provides pay-per-token access with no commitment. **Priority** offers higher throughput with a time-based commitment. **Flex** provides lower-cost access for flexible, non-time-sensitive workloads. **Reserved** provides dedicated throughput with a term commitment for predictable workloads. For more information, see [service tiers](bedrock/latest/userguide/service-tiers-inference.html).
 
 | **Standard** | **Priority** | **Flex** | **Reserved** |
 | --- | --- | --- | --- |
@@ -137,12 +137,12 @@ Amazon Bedrock offers three inference options: **In-Region** keeps requests with
 ## Data Retention
 <a name="model-card-anthropic-claude-fable-5-data-retention"></a>
 
-To use this model, you must opt in to provider data sharing by setting your data retention mode to `provider_data_share` via the Data Retention API. There is no console UI for this setting at launch. For more information, see [Amazon Bedrock abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html).
+To use this model, you must opt in to provider data sharing by setting your data retention mode to `provider_data_share` via the Data Retention API. There is no console UI for this setting at launch. For more information, see [Amazon Bedrock abuse detection](bedrock/latest/userguide/abuse-detection.html).
 
 ## Quotas and Limits
 <a name="model-card-anthropic-claude-fable-5-quotas"></a>
 
-Your AWS account has default quotas to maintain the performance of the service and to ensure appropriate usage of Amazon Bedrock. The default quotas assigned to an account might be updated depending on regional factors, payment history, fraudulent usage, and/or approval of a quota [increase request](https://docs.aws.amazon.com/bedrock/latest/userguide/quotas-increase.html). For more details, please refer to [Quotas for Amazon Bedrock](quotas.md) documentation and see the [limits](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#limits_bedrock) for the model.
+Your AWS account has default quotas to maintain the performance of the service and to ensure appropriate usage of Amazon Bedrock. The default quotas assigned to an account might be updated depending on regional factors, payment history, fraudulent usage, and/or approval of a quota [increase request](bedrock/latest/userguide/quotas-increase.html). For more information, see [Quotas for Amazon Bedrock](quotas.md) documentation and see the [limits](general/latest/gr/bedrock.html#limits_bedrock) for the model.
 
 ## Sample Code
 <a name="model-card-anthropic-claude-fable-5-sample-code"></a>

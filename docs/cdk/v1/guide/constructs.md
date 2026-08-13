@@ -41,7 +41,7 @@ Composition lets you define reusable components and share them like any other co
 ## Initialization
 <a name="constructs-init"></a>
 
-Constructs are implemented in classes that extend the [https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.Construct.html](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.Construct.html) base class. You define a construct by instantiating the class. All constructs take three parameters when they are initialized:
+Constructs are implemented in classes that extend the [`Construct`](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.Construct.html) base class. You define a construct by instantiating the class. All constructs take three parameters when they are initialized:
 + **scope** — The construct's parent or owner, either a stack or another construct, which determines its place in the [construct tree](#constructs-tree). You should usually pass `this` (or `self` in Python), which represents the current object, for the scope.
 + **id** — An [identifier](identifiers.md) that must be unique within this scope. The identifier serves as a namespace for everything that's defined within the current construct and is used to generate unique identifiers such as [resource names](resources.md#resources-physical-names) and CloudFormation logical IDs.
 + **props** — A set of properties or keyword arguments, depending upon the language, that define the construct's initial configuration. In most cases, constructs provide sensible defaults, and if all props elements are optional, you can leave out the **props** parameter completely.
@@ -380,7 +380,7 @@ Some of our language-specific API references currently have errors in the paths 
 ## Using L2 constructs
 <a name="constructs-using"></a>
 
-The following example defines an Amazon S3 bucket by creating an instance of the [https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_aws-s3.Bucket.html](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_aws-s3.Bucket.html) class, an L2 construct.
+The following example defines an Amazon S3 bucket by creating an instance of the [`Bucket`](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_aws-s3.Bucket.html) class, an L2 construct.
 
 ------
 #### [ TypeScript ]
@@ -1007,7 +1007,7 @@ As we've already seen, in AWS CDK apps, you define constructs "inside" other con
 
 The root of this tree is your app—that is, an instance of the `App` class. Within the app, you instantiate one or more stacks. Within stacks, you instantiate either CloudFormation resources or higher-level constructs, which may themselves instantiate resources or other constructs, and so on down the tree.
 
-Constructs are *always* explicitly defined within the scope of another construct, so there is never any doubt about the relationships between constructs. Almost always, you should pass `this` (in Python, `self`) as the scope, indicating that the new construct is a child of the current construct. The intended pattern is that you derive your construct from [https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.Construct.html](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.Construct.html), then instantiate the constructs it uses in its constructor.
+Constructs are *always* explicitly defined within the scope of another construct, so there is never any doubt about the relationships between constructs. Almost always, you should pass `this` (in Python, `self`) as the scope, indicating that the new construct is a child of the current construct. The intended pattern is that you derive your construct from [`core.Construct`](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.Construct.html), then instantiate the constructs it uses in its constructor.
 
 Passing the scope explicitly allows each construct to add itself to the tree, with this behavior entirely contained within the [`Construct` base class](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.Construct.html). It works the same way in every language supported by the AWS CDK and does not require introspection or other "magic."
 
@@ -1016,7 +1016,7 @@ Technically, it's possible to pass some scope other than `this` when instantiati
 
 The AWS CDK uses the IDs of all constructs in the path from the tree's root to each child construct to generate the unique IDs required by CloudFormation. This approach means that construct IDs need be unique only within their scope, rather than within the entire stack as in native CloudFormation. It does, however, mean that if you move a construct to a different scope, its generated stack-unique ID will change, and CloudFormation will no longer consider it the same resource.
 
-The construct tree is separate from the constructs you define in your AWS CDK code, but it is accessible through any construct's `node` attribute, which is a reference to the node that represents that construct in the tree. Each node is a [https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.ConstructNode.html](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.ConstructNode.html) instance, the attributes of which provide access to the tree's root and to the node's parent scopes and children.
+The construct tree is separate from the constructs you define in your AWS CDK code, but it is accessible through any construct's `node` attribute, which is a reference to the node that represents that construct in the tree. Each node is a [`ConstructNode`](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.ConstructNode.html) instance, the attributes of which provide access to the tree's root and to the node's parent scopes and children.
 + `node.children` – The direct children of the construct.
 + `node.id` – The identifier of the construct within its scope.
 + `node.path` – The full path of the construct including the IDs of all of its parents.

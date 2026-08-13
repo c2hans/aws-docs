@@ -38,15 +38,15 @@ We strongly recommend that you don't run transactions that span both InnoDB and 
 MyRocks doesn’t support `SERIALIZABLE` isolation or gap locks. So, generally you can't use MyRocks with statement-based replication. For more information, see [ MyRocks and Replication](https://mariadb.com/kb/en/myrocks-and-replication/).
 
 Currently, you can modify only the following MyRocks parameters:
-+ [https://mariadb.com/kb/en/myrocks-system-variables/#rocksdb_block_cache_size](https://mariadb.com/kb/en/myrocks-system-variables/#rocksdb_block_cache_size)
-+ [https://mariadb.com/kb/en/myrocks-system-variables/#rocksdb_bulk_load](https://mariadb.com/kb/en/myrocks-system-variables/#rocksdb_bulk_load)
-+ [https://mariadb.com/kb/en/myrocks-system-variables/#rocksdb_bulk_load_size](https://mariadb.com/kb/en/myrocks-system-variables/#rocksdb_bulk_load_size)
-+ [https://mariadb.com/kb/en/myrocks-system-variables/#rocksdb_deadlock_detect](https://mariadb.com/kb/en/myrocks-system-variables/#rocksdb_deadlock_detect)
-+ [https://mariadb.com/kb/en/myrocks-system-variables/#rocksdb_deadlock_detect_depth](https://mariadb.com/kb/en/myrocks-system-variables/#rocksdb_deadlock_detect_depth)
-+ [https://mariadb.com/kb/en/myrocks-system-variables/#rocksdb_max_latest_deadlocks](https://mariadb.com/kb/en/myrocks-system-variables/#rocksdb_max_latest_deadlocks)
++ [`rocksdb_block_cache_size`](https://mariadb.com/kb/en/myrocks-system-variables/#rocksdb_block_cache_size)
++ [`rocksdb_bulk_load`](https://mariadb.com/kb/en/myrocks-system-variables/#rocksdb_bulk_load)
++ [`rocksdb_bulk_load_size`](https://mariadb.com/kb/en/myrocks-system-variables/#rocksdb_bulk_load_size)
++ [`rocksdb_deadlock_detect`](https://mariadb.com/kb/en/myrocks-system-variables/#rocksdb_deadlock_detect)
++ [`rocksdb_deadlock_detect_depth`](https://mariadb.com/kb/en/myrocks-system-variables/#rocksdb_deadlock_detect_depth)
++ [`rocksdb_max_latest_deadlocks`](https://mariadb.com/kb/en/myrocks-system-variables/#rocksdb_max_latest_deadlocks)
 
 The MyRocks storage engine and the InnoDB storage engine can compete for memory based on the settings for the `rocksdb_block_cache_size` and `innodb_buffer_pool_size` parameters. In some cases, you might only intend to use the MyRocks storage engine on a particular DB instance. If so, we recommend setting the `innodb_buffer_pool_size minimal` parameter to a minimal value and setting the `rocksdb_block_cache_size` as high as possible.
 
-You can access MyRocks log files by using the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBLogFiles.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBLogFiles.html) and [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DownloadDBLogFilePortion.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DownloadDBLogFilePortion.html) operations.
+You can access MyRocks log files by using the [`DescribeDBLogFiles`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBLogFiles.html) and [`DownloadDBLogFilePortion`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DownloadDBLogFilePortion.html) operations.
 
 For more information about MyRocks, see [MyRocks](https://mariadb.com/kb/en/myrocks/) on the MariaDB website.

@@ -16,6 +16,13 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: Yes
 
+ ** version **   <a name="bedrockagentcorecontrol-Type-ConnectorSource-version"></a>
+The version of the connector to use (for example, `1.1.0`). If you don't specify a version, the service uses the latest available version.
+Type: String
+Length Constraints: Minimum length of 5. Maximum length of 32.
+Pattern: `(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)`
+Required: No
+
 ## See Also
 <a name="API_ConnectorSource_SeeAlso"></a>
 

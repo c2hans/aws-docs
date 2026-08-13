@@ -90,7 +90,7 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 
  `arn:aws:organizations::123456789012:ou/o-myorg/ou-my-ouid | arn:aws:controltower:us-west-2::control/AWS-GR_AUTOSCALING_LAUNCH_CONFIG_PUBLIC_IP_DISABLED`
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-controltower-enabledcontrol--examples"></a>

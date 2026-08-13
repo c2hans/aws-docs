@@ -13,7 +13,7 @@ To grant an IAM group permission to create temporary security credentials for AW
 
  For more information about the differences between the `AssumeRole` and `GetFederationToken` API operations, see [Request temporary security credentials](id_credentials_temp_request.md).
 
-IAM users can also call [https://docs.aws.amazon.com/STS/latest/APIReference/API_GetSessionToken.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetSessionToken.html) to create temporary security credentials. No permissions are required for a user to call `GetSessionToken`. The purpose of this operation is to authenticate the user using MFA. You cannot use policies to control authentication. This means that you cannot prevent IAM users from calling `GetSessionToken` to create temporary credentials.
+IAM users can also call [`GetSessionToken`](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetSessionToken.html) to create temporary security credentials. No permissions are required for a user to call `GetSessionToken`. The purpose of this operation is to authenticate the user using MFA. You cannot use policies to control authentication. This means that you cannot prevent IAM users from calling `GetSessionToken` to create temporary credentials.
 
 **Example policy that grants permission to assume a role**
 The following example policy grants permission to call `AssumeRole` for the `UpdateApp` role in AWS account `123123123123`. When `AssumeRole` is used, the user (or application) that creates the security credentials on behalf of a federated user cannot delegate any permissions that are not already specified in the role permission policy.

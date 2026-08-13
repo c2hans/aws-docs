@@ -211,7 +211,7 @@ To modify the `OLEDB_ORACLE` option version to another version, use the AWS Mana
 #### CLI
 <a name="LinkedServers_Oracle_OLEDB.Add.CLI"></a>
 
-To modify the `OLEDB_ORACLE` option version, use the [https://docs.aws.amazon.com/cli/latest/reference/rds/add-option-to-option-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/add-option-to-option-group.html)AWS CLI command with the option group and option version that you want to use.
+To modify the `OLEDB_ORACLE` option version, use the [`rds add-option-to-option-group`](https://docs.aws.amazon.com/cli/latest/reference/rds/add-option-to-option-group.html)AWS CLI command with the option group and option version that you want to use.
 
 **To modify the OLEDB\_ORACLE option**
 +

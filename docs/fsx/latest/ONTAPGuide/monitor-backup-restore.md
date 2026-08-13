@@ -23,7 +23,7 @@ Open the Amazon FSx console at [https://console.aws.amazon.com/fsx/](https://con
    + **COMPLETED** indicates that all data has been downloaded to the volume, and the backup restore is complete. Clients now have read-write access. For `RW` volumes, the volume's type changes from `DP` to `RW` at this point.
 
 **To monitor progress when restoring a backup (CLI)**
-+ When you restore a backup to a new volume on a second-generation FSx for ONTAP file system, you can monitor the progress of the restore using the [https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeVolumes.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeVolumes.html) CLI command.
++ When you restore a backup to a new volume on a second-generation FSx for ONTAP file system, you can monitor the progress of the restore using the [`describe-volumes`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeVolumes.html) CLI command.
 
   When restoring a backup to a second-generation file system, the response includes the `AdministrativeActions` object, which provides status information about the data downloading process. The
 

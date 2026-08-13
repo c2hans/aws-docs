@@ -54,8 +54,8 @@ After deleting the stack, you can view the resources that were retained in the c
 
 **To delete a stack using the command line**
 You can use one of the following commands:
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/delete-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/delete-stack.html) (AWS CLI)
-+ [https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-CFNStack.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-CFNStack.html) (AWS Tools for Windows PowerShell)
++ [delete-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/delete-stack.html) (AWS CLI)
++ [Remove-CFNStack](https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-CFNStack.html) (AWS Tools for Windows PowerShell)
 
 For examples of using the command line to delete a stack, see [Examples of CloudFormation stack operation commands for the AWS CLI and PowerShell](service_code_examples.md).
 

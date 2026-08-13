@@ -191,11 +191,11 @@ Use the AWS CLI to create the gateway after obtaining an activation key:
 <a name="backup-gateway-bandwidth-throttling"></a>
 
 **Note**
-This feature will be available on new gateways deployed after December 15, 2022. For existing gateways, this new capability will be available through an automatic software update on or before January 30, 2023. To update the gateway to the latest version manually, use AWS CLI command [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_UpdateGatewaySoftwareNow.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_UpdateGatewaySoftwareNow.html).
+This feature will be available on new gateways deployed after December 15, 2022. For existing gateways, this new capability will be available through an automatic software update on or before January 30, 2023. To update the gateway to the latest version manually, use AWS CLI command [`UpdateGatewaySoftwareNow`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_UpdateGatewaySoftwareNow.html).
 
 You can limit the upload throughput from your gateway to AWS Backup to control the amount of network bandwidth the gateway uses. By default, an activated gateway has no rate limits.
 
-You can configure a bandwidth rate-limit schedule using the AWS Backup Console or using API through the AWS CLI ([https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_PutBandwidthRateLimitSchedule.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_PutBandwidthRateLimitSchedule.html)). When you use a bandwidth rate limit schedule, you can configure limits to change automatically throughout the day or week.
+You can configure a bandwidth rate-limit schedule using the AWS Backup Console or using API through the AWS CLI ([`PutBandwidthRateLimitSchedule`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_PutBandwidthRateLimitSchedule.html)). When you use a bandwidth rate limit schedule, you can configure limits to change automatically throughout the day or week.
 
 Bandwidth rate limiting works by balancing the throughput of all data being uploaded, averaged over each second. While it is possible for uploads to cross the bandwidth rate limit briefly for any given micro- or millisecond, this does not typically result in large spikes over longer periods of time.
 
@@ -239,13 +239,13 @@ Bandwidth rate-limit intervals cannot overlap. The start time of an interval mus
 ### View and edit the bandwidth rate-limit schedule for your gateway using AWS CLI.
 <a name="backup-gateway-view-edit-bandwidth-rate-limit-schedule-cli"></a>
 
-The [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_GetBandwidthRateLimitSchedule.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_GetBandwidthRateLimitSchedule.html) action can be used to view the bandwidth throttle schedule for a specified gateway. If there is no schedule set, the schedule will be an empty list of intervals. Here is an example using the AWS CLI to fetch the bandwidth schedule of a gateway:
+The [`GetBandwidthRateLimitSchedule`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_GetBandwidthRateLimitSchedule.html) action can be used to view the bandwidth throttle schedule for a specified gateway. If there is no schedule set, the schedule will be an empty list of intervals. Here is an example using the AWS CLI to fetch the bandwidth schedule of a gateway:
 
 ```
 aws backup-gateway get-bandwidth-rate-limit-schedule --gateway-arn "arn:aws:backup-gateway:{{region}}:{{account-id}}:gateway/bgw-{{gw id}}"
 ```
 
-To edit a gateway’s bandwidth throttle schedule, you can use the [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_PutBandwidthRateLimitSchedule.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_PutBandwidthRateLimitSchedule.html) action. Note that you can only update a gateway’s schedule as a whole, rather than modifying, adding, or removing individual intervals. Calling this action will overwrite the gateway’s previous bandwidth throttle schedule.
+To edit a gateway’s bandwidth throttle schedule, you can use the [`PutBandwidthRateLimitSchedule`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_PutBandwidthRateLimitSchedule.html) action. Note that you can only update a gateway’s schedule as a whole, rather than modifying, adding, or removing individual intervals. Calling this action will overwrite the gateway’s previous bandwidth throttle schedule.
 
 ```
 aws backup-gateway put-bandwidth-rate-limit-schedule --gateway-arn "arn:aws:backup-gateway:{{region}}:{{account-id}}:gateway/{{gw-id}}" --bandwidth-rate-limit-intervals ...

@@ -31,7 +31,7 @@ Even if the native service API is in camelCase, for example the API action `star
 
 ## Optimized AWS Glue APIs
 <a name="connect-glue-api"></a>
-+ [https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-runs.html#aws-glue-api-jobs-runs-StartJobRun](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-runs.html#aws-glue-api-jobs-runs-StartJobRun)
++ [`StartJobRun`](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-runs.html#aws-glue-api-jobs-runs-StartJobRun)
 
 ## IAM policies for calling AWS Glue
 <a name="glue-iam"></a>

@@ -45,7 +45,7 @@ You can configure any credentials provider that has a `profileFile()` method on 
 Profile credential reloading works only with the following settings in the profile file : `aws_access_key_id`, `aws_secret_access_key`, and `aws_session_token`.
 Settings such as `region`, `sso_session`, `sso_account_id`, and `source_profile` are ignored.
 
-To configure a supported credentials provider to reload profile settings, provide an instance of [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/profiles/ProfileFileSupplier.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/profiles/ProfileFileSupplier.html) to the `profileFile()` builder method. The following code example demonstrates a `ProfileCredentialsProvider` that reloads credential settings from the `[default]` profile.
+To configure a supported credentials provider to reload profile settings, provide an instance of [`ProfileFileSupplier`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/profiles/ProfileFileSupplier.html) to the `profileFile()` builder method. The following code example demonstrates a `ProfileCredentialsProvider` that reloads credential settings from the `[default]` profile.
 
 ```
 ProfileCredentialsProvider provider = ProfileCredentialsProvider

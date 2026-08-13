@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[SecurityConfiguration](#cfn-glue-devendpoint-securityconfiguration)" : {{String}},
       "[SecurityGroupIds](#cfn-glue-devendpoint-securitygroupids)" : {{[ String, ... ]}},
       "[SubnetId](#cfn-glue-devendpoint-subnetid)" : {{String}},
-      "[Tags](#cfn-glue-devendpoint-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
+      "[Tags](#cfn-glue-devendpoint-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
       "[WorkerType](#cfn-glue-devendpoint-workertype)" : {{String}}
     }
 }
@@ -62,7 +62,7 @@ Properties:
     - String}}
   [SubnetId](#cfn-glue-devendpoint-subnetid): {{String}}
   [Tags](#cfn-glue-devendpoint-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
   [WorkerType](#cfn-glue-devendpoint-workertype): {{String}}
 ```
 
@@ -167,7 +167,7 @@ The subnet ID for this `DevEndpoint`.
 `Tags`  <a name="cfn-glue-devendpoint-tags"></a>
 The tags to use with this DevEndpoint.
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `WorkerType`  <a name="cfn-glue-devendpoint-workertype"></a>
@@ -188,7 +188,7 @@ Known issue: when a development endpoint is created with the `G.2X``WorkerType` 
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the endpoint name.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-glue-devendpoint-return-values-fn--getatt"></a>

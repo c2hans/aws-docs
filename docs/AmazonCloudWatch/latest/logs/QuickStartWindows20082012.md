@@ -17,7 +17,7 @@ Use the following steps to enable your instances running Windows Server 2012 and
 ### Download the sample configuration file
 <a name="configure_cwl_download2012"></a>
 
-Download the following sample JSON file to your computer: [https://s3.amazonaws.com/ec2-downloads-windows/CloudWatchConfig/AWS.EC2.Windows.CloudWatch.json](https://s3.amazonaws.com/ec2-downloads-windows/CloudWatchConfig/AWS.EC2.Windows.CloudWatch.json). You edit it in the following steps.
+Download the following sample JSON file to your computer: [`AWS.EC2.Windows.CloudWatch.json`](https://s3.amazonaws.com/ec2-downloads-windows/CloudWatchConfig/AWS.EC2.Windows.CloudWatch.json). You edit it in the following steps.
 
 ### Configure the JSON file for CloudWatch
 <a name="send_logs_to_cwl_json2012"></a>

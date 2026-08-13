@@ -38,7 +38,7 @@ To get a list of the Image Builder resources that you own and can share, specify
 + [List and view image recipe details](image-recipe-details.md)
 + [List and view container recipe details](container-recipe-details.md)
 
-For more information about AWS RAM, see the [https://docs.aws.amazon.com/ram/latest/userguide/what-is.html](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html).
+For more information about AWS RAM, see the [*AWS RAM User Guide*](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html).
 
 ### Prerequisites for sharing Image Builder resources
 <a name="share-ib-resources-prereqs"></a>

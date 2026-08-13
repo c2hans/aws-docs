@@ -26,7 +26,7 @@ Required: No
 
  ** SourceS3Uri **   <a name="sagemaker-Type-ClusterLifeCycleConfig-SourceS3Uri"></a>
 An Amazon S3 bucket path where your lifecycle scripts are stored.
-Make sure that the S3 bucket path starts with `s3://sagemaker-`. The [IAM role for SageMaker HyperPod](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-prerequisites.html#sagemaker-hyperpod-prerequisites-iam-role-for-hyperpod) has the managed [https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanpol-cluster.html](https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanpol-cluster.html) attached, which allows access to S3 buckets with the specific prefix `sagemaker-`.
+Make sure that the S3 bucket path starts with `s3://sagemaker-`. The [IAM role for SageMaker HyperPod](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-prerequisites.html#sagemaker-hyperpod-prerequisites-iam-role-for-hyperpod) has the managed [`AmazonSageMakerClusterInstanceRolePolicy`](https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanpol-cluster.html) attached, which allows access to S3 buckets with the specific prefix `sagemaker-`.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 Pattern: `(https|s3)://([^/]+)/?(.*)`

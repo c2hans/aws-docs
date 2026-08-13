@@ -42,7 +42,7 @@ EKS Hybrid Nodes has the following high-level features:
 
 ## Additional resources
 <a name="hybrid-nodes-resources"></a>
-+  [https://www.eksworkshop.com/docs/networking/eks-hybrid-nodes/](https://www.eksworkshop.com/docs/networking/eks-hybrid-nodes/): Step-by-step instructions for deploying EKS Hybrid Nodes in a demo environment.
-+  [https://www.youtube.com/watch?v=ZxC7SkemxvU](https://www.youtube.com/watch?v=ZxC7SkemxvU): AWS re:Invent session introducing the EKS Hybrid Nodes launch with a customer showing how they are using EKS Hybrid Nodes in their environment.
-+  [https://repost.aws/articles/ARL44xuau6TG2t-JoJ3mJ5Mw/unpacking-the-cluster-networking-for-amazon-eks-hybrid-nodes](https://repost.aws/articles/ARL44xuau6TG2t-JoJ3mJ5Mw/unpacking-the-cluster-networking-for-amazon-eks-hybrid-nodes): Article explaining various methods for setting up networking for EKS Hybrid Nodes.
-+  [https://aws.amazon.com/blogs/containers/run-genai-inference-across-environments-with-amazon-eks-hybrid-nodes/](https://aws.amazon.com/blogs/containers/run-genai-inference-across-environments-with-amazon-eks-hybrid-nodes/): Blog post showing how to run GenAI inference across environments with EKS Hybrid Nodes.
++  [**EKS Hybrid Nodes workshop**](https://www.eksworkshop.com/docs/networking/eks-hybrid-nodes/): Step-by-step instructions for deploying EKS Hybrid Nodes in a demo environment.
++  [** AWS re:Invent: EKS Hybrid Nodes**](https://www.youtube.com/watch?v=ZxC7SkemxvU): AWS re:Invent session introducing the EKS Hybrid Nodes launch with a customer showing how they are using EKS Hybrid Nodes in their environment.
++  [** AWS re:Post: Cluster networking for EKS Hybrid Nodes**](https://repost.aws/articles/ARL44xuau6TG2t-JoJ3mJ5Mw/unpacking-the-cluster-networking-for-amazon-eks-hybrid-nodes): Article explaining various methods for setting up networking for EKS Hybrid Nodes.
++  [** AWS blog: Run GenAI inference across environments with EKS Hybrid Nodes**](https://aws.amazon.com/blogs/containers/run-genai-inference-across-environments-with-amazon-eks-hybrid-nodes/): Blog post showing how to run GenAI inference across environments with EKS Hybrid Nodes.

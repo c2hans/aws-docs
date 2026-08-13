@@ -12,7 +12,7 @@ The following sections explain the differences between the voice and media insig
 ## Stopping tasks
 <a name="va-stopping-tasks"></a>
 
-If you use a Voice Connector to start voice analytics tasks, and you then use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_UpdateMediaInsightsPipelineStatus.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_UpdateMediaInsightsPipelineStatus.html) API to pause the pipeline, the tasks continue running. To stop the tasks, you must call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StopSpeakerSearchTask.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StopSpeakerSearchTask.html) and [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StopVoiceToneAnalysisTask.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StopVoiceToneAnalysisTask.html) APIs.
+If you use a Voice Connector to start voice analytics tasks, and you then use the [UpdateMediaInsightsPipelineStatus](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_UpdateMediaInsightsPipelineStatus.html) API to pause the pipeline, the tasks continue running. To stop the tasks, you must call the [StopSpeakerSearchTask](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StopSpeakerSearchTask.html) and [StopVoiceToneAnalysisTask](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StopVoiceToneAnalysisTask.html) APIs.
 
 ## Understanding the notification differences
 <a name="va-notification-differences"></a>
@@ -40,7 +40,7 @@ You use Amazon Chime SDK Voice Connectors to start analytics tasks. When your re
 **Note**
 This notification is provided only when you have a media insights pipeline configuration with voice analytics enabled and associated with a Voice Connector. This notification is NOT provided when customers call the `CreateMediaInsightsPipeline` API and launch a speaker search task or voice tone analysis task via the Media Pipelines SDK.
 
-The SIP headers returned by a Voice Connector contain the `transactionId`. If you don't have access to the SIP headers, the `AnalyticsReady` notification event also contains the `voiceConnectorId` and `transactionId`. That allows you to programmatically receive the information and call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StartSpeakerSearchTask](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StartSpeakerSearchTask), or [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StartVoiceToneAnalysis.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StartVoiceToneAnalysis.html) APIs.
+The SIP headers returned by a Voice Connector contain the `transactionId`. If you don't have access to the SIP headers, the `AnalyticsReady` notification event also contains the `voiceConnectorId` and `transactionId`. That allows you to programmatically receive the information and call the [StartSpeakerSearchTask](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StartSpeakerSearchTask), or [StartVoiceToneAnalysisTask](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StartVoiceToneAnalysis.html) APIs.
 
 When voice analytics is ready for processing, the Voice Connector sends an event with `"detailStatus": "AnalyticsReady"` to the notification target as a JSON body. If you use Amazon SNS or Amazon SQS, that body appears in the “Records” field in the Amazon SNS or Amazon SQS payload.
 
@@ -88,7 +88,7 @@ The events can have the following statuses:
 #### Identification matches
 <a name="va-id-matches"></a>
 
-After the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StartSpeakerSearchTask](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StartSpeakerSearchTask) API is called for a given `transactionId`, the Voice Connector service returns an identification match notification after 10 seconds of non-silent speech. The service returns the top 10 matches, along with a voice profile ID and confidence score ranging from [0, 1]. The higher the confidence score, the more likely the speaker from the call matches the voice profile ID. If the machine learning model finds no matches, the notification's `detailStatus` field contains `IdentificationNoMatchesFound`.
+After the [StartSpeakerSearchTask](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StartSpeakerSearchTask) API is called for a given `transactionId`, the Voice Connector service returns an identification match notification after 10 seconds of non-silent speech. The service returns the top 10 matches, along with a voice profile ID and confidence score ranging from [0, 1]. The higher the confidence score, the more likely the speaker from the call matches the voice profile ID. If the machine learning model finds no matches, the notification's `detailStatus` field contains `IdentificationNoMatchesFound`.
 
 The following example shows notification for a successful match.
 

@@ -9,7 +9,7 @@ The AWS Cloud Development Kit (AWS CDK) is an Infrastructure-as-Code (IAC) frame
 
 The AWS Construct Library, included with the CDK, provides modules that you can use to model the resources that AWS services provide. For popular services, the library provides curated constructs with smart defaults and best practices. One of these modules, specifically `[aws-ecs-patterns](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs_patterns-readme.html)`, provides high-level abstractions that you can use to define your containerized service and all the necessary supporting resources in a few lines of code.
 
-This topic uses the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs_patterns.ApplicationLoadBalancedFargateService.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs_patterns.ApplicationLoadBalancedFargateService.html) construct. This construct deploys an Amazon ECS service on Fargate behind an application load balancer. The `aws-ecs-patterns` module also includes constructs that use a network load balancer and run on Amazon EC2.
+This topic uses the [`ApplicationLoadBalancedFargateService`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs_patterns.ApplicationLoadBalancedFargateService.html) construct. This construct deploys an Amazon ECS service on Fargate behind an application load balancer. The `aws-ecs-patterns` module also includes constructs that use a network load balancer and run on Amazon EC2.
 
 Before starting this task, set up your AWS CDK development environment, and install the AWS CDK by running the following command. For instructions on how to set up your AWS CDK development environment, see [Getting Started With the AWS CDK - Prerequisites](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_prerequisites).
 
@@ -157,7 +157,7 @@ github.com/aws/aws-cdk-go/awscdk/v2/awsecspatterns
 ## Step 2: Use the AWS CDK to define a containerized web server on Fargate
 <a name="ecs-web-server-cdk-step-2"></a>
 
-Use the container image [https://gallery.ecr.aws/ecs-sample-image/amazon-ecs-sample](https://gallery.ecr.aws/ecs-sample-image/amazon-ecs-sample). This image contains a PHP web app that runs on nginx.
+Use the container image [`amazon-ecs-sample`](https://gallery.ecr.aws/ecs-sample-image/amazon-ecs-sample). This image contains a PHP web app that runs on nginx.
 
 In the AWS CDK project that you created, edit the file that contains the stack definition to resemble one of the following examples.
 
@@ -511,5 +511,5 @@ For information about writing AWS CDK apps in your language of choice, see the f
 ------
 
 For more information about the AWS Construct Library modules used in this topic, see the following AWS CDK API Reference overviews.
-+ [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs-readme.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs-readme.html)
-+  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs_patterns-readme.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs_patterns-readme.html)
++ [aws-ecs](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs-readme.html)
++  [aws-ecs-patterns](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs_patterns-readme.html)

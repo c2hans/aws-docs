@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-aur
 
 AWS Backup restores your Aurora cluster; it does not create or attach an Amazon RDS instance to your cluster. In the following steps, you will create and attach an Amazon RDS instance to your restored Aurora cluster using the CLI.
 
-Restoring an Aurora cluster requires that you specify multiple restore options. For information about these options, see [Overview of Backing Up and Restoring an Aurora DB Cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.Backups.html) in the *Amazon Aurora User Guide*. Specifications for the restore options can be found in the API guide for [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterFromSnapshot.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterFromSnapshot.html).
+Restoring an Aurora cluster requires that you specify multiple restore options. For information about these options, see [Overview of Backing Up and Restoring an Aurora DB Cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.Backups.html) in the *Amazon Aurora User Guide*. Specifications for the restore options can be found in the API guide for [`RestoreDBClusterFromSnapshot`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterFromSnapshot.html).
 
 **To restore an Amazon Aurora cluster**
 
@@ -68,7 +68,7 @@ See [continuous backups and point-in-time restore (PITR)](https://docs.aws.amazo
 Use `[StartRestoreJob](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html)`. The metadata you can include for a restore job will depend if you are restoring a continuous backup to a point in time (PITR) or if you are restoring a snapshot.
 
 **Restore a cluster from a snapshot**
-You can specify the following metadata for an Aurora snapshot restore job. See [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterFromSnapshot.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterFromSnapshot.html) in the *Amazon Relational Database Service API Reference* for additional information and accepted values.
+You can specify the following metadata for an Aurora snapshot restore job. See [`RestoreDBClusterFromSnapshot`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterFromSnapshot.html) in the *Amazon Relational Database Service API Reference* for additional information and accepted values.
 
 ```
 // Required metadata:
@@ -100,7 +100,7 @@ Example:
 ```
 
 **Restore a cluster to a point in time (PITR)**
-You can specify the following metadata when you want to restore an Aurora continuous backup (recovery point) to a specific point in time (PITR). See [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterToPointInTime.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterToPointInTime.html) in the *Amazon Relational Database Service API Reference* for additional information and accepted values.
+You can specify the following metadata when you want to restore an Aurora continuous backup (recovery point) to a specific point in time (PITR). See [`RestoreDBClusterToPointInTime`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterToPointInTime.html) in the *Amazon Relational Database Service API Reference* for additional information and accepted values.
 
 ```
 // Required metadata:

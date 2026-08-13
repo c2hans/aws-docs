@@ -107,7 +107,7 @@ SyntheticsCanary:
 ## Authentication configuration
 <a name="CloudWatch_Synthetics_MultiCheck_Authentication"></a>
 
-When your canary makes HTTP requests to an authenticated endpoint, you can configure the steps of your blueprint canary to use one of four authentication types: Basic, API Key, OAuth Client Credentials, and SigV4. Rather than setting up request headers yourself, you can specify an authentication type in your blueprint definition, and Synthetics follows the specified authentication type to populate the components of your HTTP request with the authentication information provided.
+When your canary makes HTTP requests to an authenticated endpoint, you can configure the steps of your blueprint canary to use one of four authentication types: Basic, API Key, OAuth Client Credentials, and SigV4. Rather than setting up request headers yourself, you can specify an authentication type in your blueprint definition. Synthetics follows the specified authentication type to populate the components of your HTTP request with the authentication information provided.
 
 You specify an authentication type in your blueprint step with the Authentication section. You specify the authentication scheme you want to use, the properties required for your chosen authentication scheme, and Synthetics uses the information provided to construct an authentication header for your HTTP request.
 

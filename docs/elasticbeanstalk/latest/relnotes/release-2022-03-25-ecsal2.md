@@ -17,12 +17,23 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-03-25-ecsal2.html) |
-| **Docker** | Added a new platform branch, **Amazon Elastic Container Service (Amazon ECS) running on Amazon Linux 2**, also known as **ECS AL2.**<br />This platform branch is the Amazon Linux 2 based version of the **Multicontainer Docker** platform branch that runs on Amazon Linux AMI. Like the previous **Multicontainer Docker AL1** version, the new **ECS AL2** platform branch uses Amazon ECS to coordinate a deployment of multiple Docker containers to an Amazon ECS cluster in an Elastic Beanstalk environment. <br />The new **ECS AL2** platform branch supports all of the features in the previous **Multicontainer Docker AL1** platform branch. You can deploy the same source code that's running on the **Multicontainer Docker AL1** platform branch to the new **ECS AL2** platform branch without making any changes.<br />For more information, see [The Docker platform family](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker.html#docker-platform) in the *AWS Elastic Beanstalk Developer Guide*. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Docker</b></td><td>Added a new platform branch, <b>Amazon Elastic Container Service (Amazon ECS) running on Amazon Linux 2</b>, also known as <b>ECS AL2.</b><br />This platform branch is the Amazon Linux 2 based version of the <b>Multicontainer Docker</b> platform branch that runs on Amazon Linux AMI. Like the previous <b>Multicontainer Docker AL1</b> version, the new <b>ECS AL2</b> platform branch uses Amazon ECS to coordinate a deployment of multiple Docker containers to an Amazon ECS cluster in an Elastic Beanstalk environment. <br />The new <b>ECS AL2</b> platform branch supports all of the features in the previous <b>Multicontainer Docker AL1</b> platform branch. You can deploy the same source code that's running on the <b>Multicontainer Docker AL1</b> platform branch to the new <b>ECS AL2</b> platform branch without making any changes.<br />For more information, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker.html#docker-platform">The Docker platform family</a> in the <i>AWS Elastic Beanstalk Developer Guide</i>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2022-03-25-ecsal2.platforms"></a>

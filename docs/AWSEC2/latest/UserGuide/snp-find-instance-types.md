@@ -11,7 +11,7 @@ You can find instance types that support AMD SEV-SNP. The Amazon EC2 console doe
 #### [ AWS CLI ]
 
 **To find the instance types that support AMD SEV-SNP**
-Use the following [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html) command.
+Use the following [describe-instance-types](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html) command.
 
 ```
 aws ec2 describe-instance-types \

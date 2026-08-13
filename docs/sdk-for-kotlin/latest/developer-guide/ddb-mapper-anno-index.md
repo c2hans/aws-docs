@@ -29,7 +29,7 @@ The following table lists the annotations alphabetically.
 <a name="ddb-mapper-anno-index-optin"></a>
 
 The following annotation is not a schema annotation; it gates an opt-in API surface.
-+  ** `@ManualPagination` ** (`aws.sdk.kotlin.hll.dynamodbmapper.annotations`): a [https://kotlinlang.org/docs/opt-in-requirements.html](https://kotlinlang.org/docs/opt-in-requirements.html) marker on the non-paginating `query` and `scan` operations. Opt in at the call site with `@OptIn(ManualPagination::class)` when you need to manage pagination tokens yourself. See [Manual pagination](ddb-mapper-operations.md#ddb-mapper-operations-manual-pagination) in the Operations overview.
++  ** `@ManualPagination` ** (`aws.sdk.kotlin.hll.dynamodbmapper.annotations`): a [`@RequiresOptIn`](https://kotlinlang.org/docs/opt-in-requirements.html) marker on the non-paginating [`query`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) and [`scan`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) operations. Opt in at the call site with `@OptIn(ManualPagination::class)` when you need to manage pagination tokens yourself. See [Manual pagination](ddb-mapper-operations.md#ddb-mapper-operations-manual-pagination) in the Operations overview.
 
 ## Related topics
 <a name="ddb-mapper-anno-index-related"></a>

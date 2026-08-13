@@ -22,7 +22,7 @@ You can configure an `AppInstance` to receive data, such as messages and channel
 
    `aws kinesis start-stream-encryption --stream-name {{chime-messaging-unique-name}} --encryption-type KMS --key-id "{{alias}}/aws/kinesis"`
 
-1. Configure streaming by calling the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_PutMessagingStreamingConfigurations.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_PutMessagingStreamingConfigurations.html) API.
+1. Configure streaming by calling the [PutMessagingStreamingConfigurations](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_PutMessagingStreamingConfigurations.html) API.
 
    You can configure one or both of two data types, and you can choose the same stream or separate streams for them.
 
@@ -53,25 +53,25 @@ Kinesis outputs records in JSON format with the following fields: `EventType` an
   <tr><th>EventType</th><th>Payload format</th><th></th></tr>
 </thead>
 <tbody>
-  <tr><td>`CREATE_CHANNEL_MESSAGE`</td><td rowspan="4"> [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessage.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessage.html) </td><td></td></tr>
-  <tr><td>`REDACT_CHANNEL_MESSAGE`</td><td></td></tr>
-  <tr><td>`UPDATE_CHANNEL_MESSAGE`</td><td></td></tr>
-  <tr><td>`DELETE_CHANNEL_MESSAGE`</td><td></td></tr>
+  <tr><td><code>CREATE_CHANNEL_MESSAGE</code></td><td rowspan="4"> <a href="https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessage.html">https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessage.html</a> </td><td></td></tr>
+  <tr><td><code>REDACT_CHANNEL_MESSAGE</code></td><td></td></tr>
+  <tr><td><code>UPDATE_CHANNEL_MESSAGE</code></td><td></td></tr>
+  <tr><td><code>DELETE_CHANNEL_MESSAGE</code></td><td></td></tr>
   <tr><td></td><td></td><td></td></tr>
-  <tr><td>`CREATE_CHANNEL`</td><td rowspan="4"> [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_Channel.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_Channel.html) </td><td></td></tr>
-  <tr><td>`UPDATE_CHANNEL`</td><td></td></tr>
-  <tr><td>`DELETE_CHANNEL`</td><td></td></tr>
-  <tr><td>`UPDATE_CHANNEL_EXPIRATION_SETTINGS`</td><td></td></tr>
+  <tr><td><code>CREATE_CHANNEL</code></td><td rowspan="4"> <a href="https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_Channel.html">https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_Channel.html</a> </td><td></td></tr>
+  <tr><td><code>UPDATE_CHANNEL</code></td><td></td></tr>
+  <tr><td><code>DELETE_CHANNEL</code></td><td></td></tr>
+  <tr><td><code>UPDATE_CHANNEL_EXPIRATION_SETTINGS</code></td><td></td></tr>
   <tr><td></td><td></td><td></td></tr>
-  <tr><td>`CREATE_CHANNEL_MEMBERSHIP`</td><td rowspan="2"> [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMembership.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMembership.html) </td><td></td></tr>
-  <tr><td>`DELETE_CHANNEL_MEMBERSHIP`</td><td></td></tr>
+  <tr><td><code>CREATE_CHANNEL_MEMBERSHIP</code></td><td rowspan="2"> <a href="https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMembership.html">https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMembership.html</a> </td><td></td></tr>
+  <tr><td><code>DELETE_CHANNEL_MEMBERSHIP</code></td><td></td></tr>
   <tr><td></td><td></td><td></td></tr>
-  <tr><td>`CREATE_CHANNEL_BAN`</td><td rowspan="2"> [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelBan.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelBan.html) </td><td></td></tr>
-  <tr><td>`DELETE_CHANNEL_BAN`</td><td></td></tr>
+  <tr><td><code>CREATE_CHANNEL_BAN</code></td><td rowspan="2"> <a href="https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelBan.html">https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelBan.html</a> </td><td></td></tr>
+  <tr><td><code>DELETE_CHANNEL_BAN</code></td><td></td></tr>
   <tr><td></td><td></td><td></td></tr>
-  <tr><td>`CREATE_CHANNEL_MODERATOR`</td><td rowspan="2"> [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelModerator.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelModerator.html) </td><td></td></tr>
-  <tr><td>`DELETE_CHANNEL_MODERATOR`</td><td></td></tr>
-  <tr><td>`CREATE_SUB_CHANNEL`</td><td rowspan="2">[https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListSubChannels.html#API_messaging-chime_ListSubChannels_RequestSyntax](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListSubChannels.html#API_messaging-chime_ListSubChannels_RequestSyntax)<br />[https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_SubChannelSummary.html#chimesdk-Type-messaging-chime_SubChannelSummary-SubChannelId](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_SubChannelSummary.html#chimesdk-Type-messaging-chime_SubChannelSummary-SubChannelId)</td><td></td></tr>
-  <tr><td>`DELETE_SUB_CHANNEL`</td><td></td></tr>
+  <tr><td><code>CREATE_CHANNEL_MODERATOR</code></td><td rowspan="2"> <a href="https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelModerator.html">https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelModerator.html</a> </td><td></td></tr>
+  <tr><td><code>DELETE_CHANNEL_MODERATOR</code></td><td></td></tr>
+  <tr><td><code>CREATE_SUB_CHANNEL</code></td><td rowspan="2"><a href="https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListSubChannels.html#API_messaging-chime_ListSubChannels_RequestSyntax">https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ListSubChannels.html#API_messaging-chime_ListSubChannels_RequestSyntax</a><br /><a href="https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_SubChannelSummary.html#chimesdk-Type-messaging-chime_SubChannelSummary-SubChannelId">https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_SubChannelSummary.html#chimesdk-Type-messaging-chime_SubChannelSummary-SubChannelId</a></td><td></td></tr>
+  <tr><td><code>DELETE_SUB_CHANNEL</code></td><td></td></tr>
 </tbody>
 </table>

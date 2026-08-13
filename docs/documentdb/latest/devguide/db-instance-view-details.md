@@ -33,7 +33,7 @@ You can modify the cluster associated with your instance by selecting **Modify**
 ------
 #### [ Using the AWS CLI ]
 
-To view the details of your Amazon DocumentDB instances using the AWS CLI, use the `describe-db-clusters` command as shown in the following examples. For more information, see [https://docs.aws.amazon.com/documentdb/latest/APIReference/API_DescribeDBInstances.html](https://docs.aws.amazon.com/documentdb/latest/APIReference/API_DescribeDBInstances.html) in the *Amazon DocumentDB Resource Management API Reference*.
+To view the details of your Amazon DocumentDB instances using the AWS CLI, use the `describe-db-clusters` command as shown in the following examples. For more information, see [`DescribeDBInstances`](https://docs.aws.amazon.com/documentdb/latest/APIReference/API_DescribeDBInstances.html) in the *Amazon DocumentDB Resource Management API Reference*.
 
 **Note**
 For certain management features such as cluster and instance lifecycle management, Amazon DocumentDB leverages operational technology that is shared with Amazon RDS. The `filterName=engine,Values=docdb` filter parameter returns only Amazon DocumentDB clusters.

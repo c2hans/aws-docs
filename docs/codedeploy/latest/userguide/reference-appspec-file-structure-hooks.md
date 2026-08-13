@@ -296,20 +296,20 @@ The following table lists the lifecycle event hooks available for each deploymen
   <tr><th>Lifecycle event name</th><th>Auto Scaling launch deployment¹</th><th>Auto Scaling termination deployment¹</th><th>In-place deployment²</th><th>Blue/green deployment: Original instances</th><th>Blue/green deployment: Replacement instances</th><th>Blue/green deployment rollback: Original instances</th><th>Blue/green deployment rollback: Replacement instances</th></tr>
 </thead>
 <tbody>
-  <tr><td>ApplicationStop</td><td>✓</td><td>✓</td><td>✓</td><td></td><td>✓</td><td></td><td></td></tr>
-  <tr><td>DownloadBundle³</td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td></td><td></td></tr>
-  <tr><td>BeforeInstall</td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td></td><td></td></tr>
-  <tr><td>Install³</td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td></td><td></td></tr>
-  <tr><td>AfterInstall</td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td></td><td></td></tr>
-  <tr><td>ApplicationStart</td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td></td><td></td></tr>
-  <tr><td>ValidateService</td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td></td><td></td></tr>
-  <tr><td>BeforeBlockTraffic</td><td></td><td>✓</td><td>✓</td><td>✓</td><td></td><td></td><td>✓</td></tr>
-  <tr><td>BlockTraffic³</td><td></td><td>✓</td><td>✓</td><td>✓</td><td></td><td></td><td>✓</td></tr>
-  <tr><td>AfterBlockTraffic</td><td></td><td>✓</td><td>✓</td><td>✓</td><td></td><td></td><td>✓</td></tr>
-  <tr><td>BeforeAllowTraffic</td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td>✓</td><td></td></tr>
-  <tr><td>AllowTraffic³</td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td>✓</td><td></td></tr>
-  <tr><td>AfterAllowTraffic</td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td>✓</td><td></td></tr>
-  <tr><td colspan="8">¹ For information about Amazon EC2 Auto Scaling deployments, see [How Amazon EC2 Auto Scaling works with CodeDeploy](integrations-aws-auto-scaling.md#integrations-aws-auto-scaling-behaviors).<br />² Also applies to the rollback of an in-place deployment.<br />³ Reserved for CodeDeploy operations. Cannot be used to run scripts.</td></tr>
+  <tr><td><b>ApplicationStop</b></td><td>✓</td><td>✓</td><td>✓</td><td></td><td>✓</td><td></td><td></td></tr>
+  <tr><td><b>DownloadBundle</b>³</td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td></td><td></td></tr>
+  <tr><td><b>BeforeInstall</b></td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td></td><td></td></tr>
+  <tr><td><b>Install</b>³</td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td></td><td></td></tr>
+  <tr><td><b>AfterInstall</b></td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td></td><td></td></tr>
+  <tr><td><b>ApplicationStart</b></td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td></td><td></td></tr>
+  <tr><td><b>ValidateService</b></td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td></td><td></td></tr>
+  <tr><td><b>BeforeBlockTraffic</b></td><td></td><td>✓</td><td>✓</td><td>✓</td><td></td><td></td><td>✓</td></tr>
+  <tr><td><b>BlockTraffic</b>³</td><td></td><td>✓</td><td>✓</td><td>✓</td><td></td><td></td><td>✓</td></tr>
+  <tr><td><b>AfterBlockTraffic</b></td><td></td><td>✓</td><td>✓</td><td>✓</td><td></td><td></td><td>✓</td></tr>
+  <tr><td><b>BeforeAllowTraffic</b></td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td>✓</td><td></td></tr>
+  <tr><td><b>AllowTraffic</b>³</td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td>✓</td><td></td></tr>
+  <tr><td><b>AfterAllowTraffic</b></td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td>✓</td><td></td></tr>
+  <tr><td colspan="8">¹ For information about Amazon EC2 Auto Scaling deployments, see <a href="integrations-aws-auto-scaling.md#integrations-aws-auto-scaling-behaviors">How Amazon EC2 Auto Scaling works with CodeDeploy</a>.<br />² Also applies to the rollback of an in-place deployment.<br />³ Reserved for CodeDeploy operations. Cannot be used to run scripts.</td></tr>
 </tbody>
 </table>
 

@@ -38,7 +38,7 @@ Don’t add personally identifiable information (PII) or other confidential or s
 ### Remediation
 <a name="appconfig-1-remediation"></a>
 
-To add tags to an AWS AppConfig application, see [https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_TagResource.html](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_TagResource.html) in the *AWS AppConfig API Reference*.
+To add tags to an AWS AppConfig application, see [TagResource](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_TagResource.html) in the *AWS AppConfig API Reference*.
 
 ## [AppConfig.2] AWS AppConfig configuration profiles should be tagged
 <a name="appconfig-2"></a>
@@ -69,7 +69,7 @@ Don’t add personally identifiable information (PII) or other confidential or s
 ### Remediation
 <a name="appconfig-2-remediation"></a>
 
-To add tags to an AWS AppConfig configuration profile, see [https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_TagResource.html](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_TagResource.html) in the *AWS AppConfig API Reference*.
+To add tags to an AWS AppConfig configuration profile, see [TagResource](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_TagResource.html) in the *AWS AppConfig API Reference*.
 
 ## [AppConfig.3] AWS AppConfig environments should be tagged
 <a name="appconfig-3"></a>
@@ -100,7 +100,7 @@ Don’t add personally identifiable information (PII) or other confidential or s
 ### Remediation
 <a name="appconfig-3-remediation"></a>
 
-To add tags to an AWS AppConfig environment, see [https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_TagResource.html](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_TagResource.html) in the *AWS AppConfig API Reference*.
+To add tags to an AWS AppConfig environment, see [TagResource](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_TagResource.html) in the *AWS AppConfig API Reference*.
 
 ## [AppConfig.4] AWS AppConfig extension associations should be tagged
 <a name="appconfig-4"></a>
@@ -131,4 +131,4 @@ Don’t add personally identifiable information (PII) or other confidential or s
 ### Remediation
 <a name="appconfig-4-remediation"></a>
 
-To add tags to an AWS AppConfig extension association, see [https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_TagResource.html](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_TagResource.html) in the *AWS AppConfig API Reference*.
+To add tags to an AWS AppConfig extension association, see [TagResource](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_TagResource.html) in the *AWS AppConfig API Reference*.

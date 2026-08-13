@@ -12,7 +12,7 @@ Custom document enrichment (CDE) is an Amazon Q Business feature that you can us
 + A role for `PostExtractionHookConfiguration` with permissions to run `PreExtractionHookConfiguration` and to access the Amazon S3 bucket when you use `PostExtractionHookConfiguration`.
 
 **Important**
-IAM roles for Custom Document Enrichmmnt (CDE) Lambda functions should belong to the same account as the account using [BatchPutDocument](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) API operation or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) operation to configure CDE.
+IAM roles for Custom Document Enrichmmnt (CDE) Lambda functions should belong to the same account as the account using [BatchPutDocument](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) API operation or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) operation to configure CDE.
 
 Both AWS Identity and Access Management (IAM) roles must have the permissions to:
 + Run `PreExtractionHookConfiguration` and/or `PostExtractionHookConfiguration`. To apply advanced alterations of your document metadata and content during the ingestion process, configure a Lambda function for `PreExtractionHookConfiguration` and/or `PostExtractionHookConfiguration`.

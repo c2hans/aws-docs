@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/view-ag
 You can use the **Explore nodes** page in Systems Manager to review details of managed nodes in your organization or account according to the criteria you specify in filters. You can also use Systems Manager integration with Amazon Q Developer (Amazon Q), an AWS generative AI solution, to search using text prompts.
 
 **Before you begin**
-In order to use the **Explore nodes** feature, you must first onboard your organization or account to the unified Systems Manager console. For more information, see [Setting up Systems Manager unified console for an organization](systems-manager-setting-up-organizations.md).
+To use the **Explore nodes** feature, you must first onboard your organization or account to the unified Systems Manager console. For more information, see [Setting up Systems Manager unified console for an organization](systems-manager-setting-up-organizations.md).
 
 After onboarding, open the [Systems Manager console](https://console.aws.amazon.com/systems-manager/) and choose **Explore nodes**.
 

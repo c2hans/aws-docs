@@ -118,7 +118,7 @@ When exporting S3 Storage Lens metrics to S3 tables, the data is organized into 
 |  all\_unsupported\_tls\_request\_count  | long | Number of unsupported TLS requests for the current referenced item |
 |  bad\_request\_error\_400\_count  | long | Number of 400 bad request errors for the current referenced item |
 |  delete\_request\_count  | long | Number of delete requests for the current referenced item |
-|  downloaded\_bytes  | decimal(0,0) | Number of downloaded bytes for the current referenced item |
+|  downloaded\_bytes  | decimal(38,0) | Number of downloaded bytes for the current referenced item |
 |  error\_4xx\_count  | long | Number of 4xx errors for the current referenced item |
 |  error\_5xx\_count  | long | Number of 5xx errors for the current referenced item |
 |  forbidden\_error\_403\_count  | long | Number of 403 forbidden errors for the current referenced item |
@@ -132,10 +132,10 @@ When exporting S3 Storage Lens metrics to S3 tables, the data is organized into 
 |  post\_request\_count  | long | Number of post requests for the current referenced item |
 |  put\_request\_count  | long | Number of put requests for the current referenced item |
 |  select\_request\_count  | long | Number of select requests for the current referenced item |
-|  select\_returned\_bytes  | decimal(0,0) | Number of bytes returned by select requests for the current referenced item |
-|  select\_scanned\_bytes  | decimal(0,0) | Number of bytes scanned by select requests for the current referenced item |
+|  select\_returned\_bytes  | decimal(38,0) | Number of bytes returned by select requests for the current referenced item |
+|  select\_scanned\_bytes  | decimal(38,0) | Number of bytes scanned by select requests for the current referenced item |
 |  service\_unavailable\_error\_503\_count  | long | Number of 503 service unavailable errors for the current referenced item |
-|  uploaded\_bytes  | decimal(0,0) | Number of uploaded bytes for the current referenced item |
+|  uploaded\_bytes  | decimal(38,0) | Number of uploaded bytes for the current referenced item |
 |  average\_first\_byte\_latency  | long | Average per-request time between when an S3 bucket receives a complete request and when it starts returning the response, measured over the past 24 hours |
 |  average\_total\_request\_latency  | long | Average elapsed per-request time between the first byte received and the last byte sent to an S3 bucket, measured over the past 24 hours |
 |  read\_0kb\_request\_count  | long | Number of GetObject requests with data sizes of 0KB, including both range-based requests and whole object requests |
@@ -176,11 +176,11 @@ When exporting S3 Storage Lens metrics to S3 tables, the data is organized into 
 |  write\_larger\_than\_4gb\_request\_count  | long | Number of PutObject, UploadPart, and CreateMultipartUpload requests with data sizes greater than 4GB |
 |  concurrent\_put\_503\_error\_count  | long | Number of 503 errors that are generated due to concurrent writes to the same object |
 |  cross\_region\_request\_count  | long | Number of requests that originate from a client in different Region than bucket's home Region |
-|  cross\_region\_transferred\_bytes  | decimal(0,0) | Number of bytes that are transferred from calls in different Region than bucket's home Region |
+|  cross\_region\_transferred\_bytes  | decimal(38,0) | Number of bytes that are transferred from calls in different Region than bucket's home Region |
 |  cross\_region\_without\_replication\_request\_count  | long | Number of requests that originate from a client in different Region than bucket's home Region, excluding cross-region replication requests |
-|  cross\_region\_without\_replication\_transferred\_bytes  | decimal(0,0) | Number of bytes that are transferred from calls in different Region than bucket's home Region, excluding cross-region replication bytes |
+|  cross\_region\_without\_replication\_transferred\_bytes  | decimal(38,0) | Number of bytes that are transferred from calls in different Region than bucket's home Region, excluding cross-region replication bytes |
 |  inregion\_request\_count  | long | Number of requests that originate from a client in same Region as bucket's home Region |
-|  inregion\_transferred\_bytes  | decimal(0,0) | Number of bytes that are transferred from calls from same Region as bucket's home Region |
+|  inregion\_transferred\_bytes  | decimal(38,0) | Number of bytes that are transferred from calls from same Region as bucket's home Region |
 |  unique\_objects\_accessed\_daily\_count  | long | Number of objects that were accessed at least once in last 24 hrs |
 
 ## Next steps

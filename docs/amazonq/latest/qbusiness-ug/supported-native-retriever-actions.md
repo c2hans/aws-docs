@@ -18,9 +18,9 @@ To manage Amazon Q Business indexes, you can take the following actions:
 ## Deleting an Amazon Q Business index
 <a name="delete-native-retriever"></a>
 
-To delete a Amazon Q Business index, you can use the console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteIndex.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteIndex.html) API operation.
+To delete a Amazon Q Business index, you can use the console or the [DeleteIndex](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteIndex.html) API operation.
 
-If you use the console, deleting an index automatically deletes the retriever attached to it. If you use the API, you must also use the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteRetriever.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteRetriever.html) API operation to delete the Amazon Q Business retriever attached to your index.
+If you use the console, deleting an index automatically deletes the retriever attached to it. If you use the API, you must also use the [DeleteRetriever](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteRetriever.html) API operation to delete the Amazon Q Business retriever attached to your index.
 
 The following tabs provide a procedure for the AWS Management Console and code examples for the AWS CLI.
 
@@ -67,7 +67,7 @@ aws qbusiness delete-retriever \
 ## Getting properties of an Amazon Q Business index
 <a name="describe-native-retriever"></a>
 
-To get the properties of an Amazon Q Business index and retriever, you can use the console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetIndex.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetIndex.html) and [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetRetriever.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetRetriever.html) API operation.
+To get the properties of an Amazon Q Business index and retriever, you can use the console or the [GetIndex](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetIndex.html) and [GetRetriever](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetRetriever.html) API operation.
 
 The following tabs provide a procedure for the AWS Management Console and code examples for the AWS CLI.
 
@@ -115,7 +115,7 @@ aws qbusiness get-retriever \
 ## Listing Amazon Q Business indices and retrievers
 <a name="list-native-retriever"></a>
 
-To list your native Amazon Q Business indices and retrievers, you can use the console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListIndices.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListIndices.html) API operation and the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListRetrievers.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListRetrievers.html) API operation.
+To list your native Amazon Q Business indices and retrievers, you can use the console or the [ListIndices](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListIndices.html) API operation and the [ListRetrievers](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListRetrievers.html) API operation.
 
 If you use the console, the list of Amazon Q Business indices and retrievers can be found within the list of data sources that you have created.
 
@@ -156,7 +156,7 @@ aws qbusiness list-retrievers \
 ## Editing Amazon Q Business indices
 <a name="update-native-retriever"></a>
 
-To edit your Amazon Q Business index, you can use the console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndices.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndices.html) API operation.
+To edit your Amazon Q Business index, you can use the console or the [UpdateIndices](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndices.html) API operation.
 
 **Note**
 When you update a native index, you can only update the number of storage units you provisioned for it. You can't change any other settings.

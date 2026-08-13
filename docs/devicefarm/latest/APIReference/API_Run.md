@@ -91,6 +91,18 @@ Length Constraints: Minimum length of 20. Maximum length of 2048.
 Pattern: `^arn:aws:iam::[0-9]{12}:role/.+`
 Required: No
 
+ ** insights **   <a name="devicefarm-Type-Run-insights"></a>
+The insights for the run, including the report status and job-level metrics. This field contains data only if you specified `insightsTypes` when you scheduled the run.
+Type: [RunInsights](API_RunInsights.md) object
+Required: No
+
+ ** insightsTypes **   <a name="devicefarm-Type-Run-insightsTypes"></a>
+The types of insights requested for the run.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 5 items.
+Valid Values: `TEST_REPORT`
+Required: No
+
  ** jobTimeoutMinutes **   <a name="devicefarm-Type-Run-jobTimeoutMinutes"></a>
 The number of minutes the job executes before it times out.
 Type: Integer

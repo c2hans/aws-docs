@@ -57,7 +57,7 @@ Proactive rules do not remediate resources that are flagged as NON\_COMPLIANT or
 1. Choose **Save**.
 
 **Note**
-You can also turn on proactive evaluation using the [http://docs.aws.amazon.com/cli/latest/reference/configservice/put-config-rule.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-config-rule.html) command and enabling `PROACTIVE` for `EvaluationModes` or using the [PutConfigRule](https://docs.aws.amazon.com/config/latest/APIReference/API_PutConfigRule.html) action and enabling `PROACTIVE` for `EvaluationModes`.
+You can also turn on proactive evaluation using the [`put-config-rule`](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-config-rule.html) command and enabling `PROACTIVE` for `EvaluationModes` or using the [PutConfigRule](https://docs.aws.amazon.com/config/latest/APIReference/API_PutConfigRule.html) action and enabling `PROACTIVE` for `EvaluationModes`.
 
 After you have turned on proactive evaluation, you can use the [StartResourceEvaluation](https://docs.aws.amazon.com/config/latest/APIReference/API_StartResourceEvaluation.html) API and [GetResourceEvaluationSummary](https://docs.aws.amazon.com/config/latest/APIReference/API_GetResourceEvaluationSummary.html) API to check if the resources you specify in these commands would be flagged as NON\_COMPLIANT by the proactive rules in your account in your Region.
 

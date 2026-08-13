@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-retriev
 **Important**
 Guardrails are applied only to the input and the generated response from the LLM. They are not applied to the references retrieved from Knowledge Bases at runtime.
 
-After your knowledge base is set up, you can query it and retrieve chunks from your source data that is relevant to the query by using the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) API operation. You can also [use a reranking model](rerank.md) instead of the default Amazon Bedrock Knowledge Bases ranker to rank source chunks for relevance during retrieval.
+After your knowledge base is set up, you can query it and retrieve chunks from your source data that is relevant to the query by using the [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) API operation. You can also [use a reranking model](rerank.md) instead of the default Amazon Bedrock Knowledge Bases ranker to rank source chunks for relevance during retrieval.
 
 **Managed knowledge base considerations**
 When querying a managed knowledge base, the following considerations apply:
@@ -104,7 +104,7 @@ To learn how to query your knowledge base, choose the tab for your preferred met
 ------
 #### [ API ]
 
-To query a knowledge base and only return relevant text from data sources, send a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) request with an [Agents for Amazon Bedrock runtime endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-rt).
+To query a knowledge base and only return relevant text from data sources, send a [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) request with an [Agents for Amazon Bedrock runtime endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-rt).
 
 The following fields are required:
 

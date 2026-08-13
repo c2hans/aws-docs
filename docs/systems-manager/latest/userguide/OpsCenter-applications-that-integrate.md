@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCent
 # Integrate OpsCenter with other AWS services
 <a name="OpsCenter-applications-that-integrate"></a>
 
-OpsCenter, a tool in AWS Systems Manager, integrates with multiple AWS services to diagnose and remediate issues with AWS resources. You must set up the AWS service before you integrate it with OpsCenter.
+OpsCenter integrates with multiple AWS services to diagnose and remediate issues with AWS resources. You must set up the AWS service before you integrate it with OpsCenter.
 
 By default, the following AWS services are integrated with OpsCenter and can create OpsItems automatically:
 + [Amazon CloudWatch](#OpsCenter-about-cloudwatch)
@@ -136,7 +136,7 @@ AWS Security Hub CSPM collects security data, called *findings*, from across AWS
 OpsCenter has bidirectional integration with Security Hub CSPM. This means that if you update the **Status** or **Severity** field for an OpsItem related to a security finding, the system synchronizes the changes with Security Hub CSPM. Likewise, any changes to a finding are automatically updated in the corresponding OpsItems in OpsCenter.
 When an OpsItem is created from a Security Hub CSPM finding, Security Hub CSPM metadata is automatically added to the operational data field of the OpsItem. If this metadata is deleted, the bidirectional updates no longer function.
 
-By default, Systems Manager creates OpsItems for critical and high severity findings. You can manually configure OpsCenter to create OpsItems for medium and low severity findings. OpsCenter doesn’t create OpsItems for informational findings as they don't require remediation. For more information about Security Hub CSPM severity levels, see [Severity](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_Severity.html) in the *AWS Security Hub API Reference*.
+By default, Systems Manager creates OpsItems for critical and high severity findings. You can manually configure OpsCenter to create OpsItems for medium and low severity findings. OpsCenter doesn’t create OpsItems for informational findings as they don't require remediation. For more information about Security Hub CSPM severity levels, see [Severity](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Severity.html) in the *AWS Security Hub API Reference*.
 
 **Before you begin**
 Before you configure OpsCenter to create OpsItems based on Security Hub CSPM findings, verify that you completed the Security Hub CSPM set up tasks. For more information, see [Setting up Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-settingup.html) in the *AWS Security Hub User Guide*.
@@ -179,7 +179,7 @@ Use the following procedure if you no longer want the system to create OpsItems 
 
 1. In the **Security Hub CSPM findings** section, choose **Edit.**
 
-1. Choose the slider to change **Enabled** to **Disabled**. If you aren't able to toggle the slider, Security Hub CSPM hasn't been enabled for your AWS account.
+1. Choose the slider to change **Enabled** to **Disabled**. If you can't toggle the slider, Security Hub CSPM hasn't been enabled for your AWS account.
 
 1. Choose **Save** to save your configuration. OpsCenter no longer creates OpsItems based on Security Hub CSPM findings.
 
@@ -189,7 +189,7 @@ A Systems Manager delegated administrator or the AWS Organizations management ac
 ## Understanding OpsCenter integration with Incident Manager
 <a name="OpsCenter-about-incident-manager"></a>
 
-Incident Manager, a tool in AWS Systems Manager, provides an incident management console that helps you mitigate and recover from incidents affecting your AWS hosted applications. An *incident* is any unplanned interruption or reduction in quality of services. After you set up and configure [Incident Manager](https://docs.aws.amazon.com/incident-manager/latest/userguide/what-is-incident-manager.html), the system automatically creates OpsItems in OpsCenter.
+Incident Manager provides an incident management console that helps you mitigate and recover from incidents affecting your AWS hosted applications. An *incident* is any unplanned interruption or reduction in quality of services. After you set up and configure [Incident Manager](https://docs.aws.amazon.com/incident-manager/latest/userguide/what-is-incident-manager.html), the system automatically creates OpsItems in OpsCenter.
 
 When the system creates an incident in Incident Manager, it also creates an OpsItem in OpsCenter, and displays the incident as a related item. If the OpsItem already exists, Incident Manager doesn't create an OpsItem. The first OpsItem is known as the parent OpsItem. If an incident grows in scale and scope, you can add incidents to an existing OpsItem. If required, you can manually create an incident for an OpsItem. After an incident is closed, you can create an analysis in Incident Manager to review and improve the remediation process for similar issues.
 

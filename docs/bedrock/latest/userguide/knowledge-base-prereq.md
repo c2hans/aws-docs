@@ -19,7 +19,7 @@ If you choose to have Amazon Bedrock create a new service role for you, the user
 
 1. (Optional) Set up extra security configurations by following the steps at [Encryption of knowledge base resources](encryption-kb.md).
 
-1. (Optional) If you plan to use the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) API operation to generate responses based on information retrieved from your knowledge base, request access to the models that you'll use in the Regions that you'll use them in by following the steps at [Request access to models](model-access.md).
+1. (Optional) If you plan to use the [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) API operation to generate responses based on information retrieved from your knowledge base, request access to the models that you'll use in the Regions that you'll use them in by following the steps at [Request access to models](model-access.md).
 
 **Topics**
 + [Prerequisites for your Amazon Bedrock knowledge base data](knowledge-base-ds.md)

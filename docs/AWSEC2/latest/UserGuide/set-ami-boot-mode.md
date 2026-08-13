@@ -19,7 +19,7 @@ To convert an existing Legacy BIOS-based instance to UEFI, or an existing UEFI-b
 
 **Considerations**
 + Setting the AMI boot mode parameter does not automatically configure the operating system for the specified boot mode. You must first make suitable modifications to the instance's volume and operating system to support booting using the selected boot mode. Otherwise, the resulting AMI is not usable. For example, if you are converting a Legacy BIOS-based Windows instance to UEFI, you can use the [MBR2GPT](https://learn.microsoft.com/en-us/windows/deployment/mbr-to-gpt) tool from Microsoft to convert the system disk from MBR to GPT. The modifications that are required are operating system-specific. For more information, see the manual for your operating system.
-+ You can't use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) command or the [https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html) cmdlet to create an AMI that supports both [NitroTPM](nitrotpm.md) and UEFI Preferred.
++ You can't use the [register-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) command or the [Register-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html) cmdlet to create an AMI that supports both [NitroTPM](nitrotpm.md) and UEFI Preferred.
 + Some features, like UEFI Secure Boot, are only available on instances that boot on UEFI. When you use the `uefi-preferred` AMI boot mode parameter with an instance type that does not support UEFI, the instance launches as Legacy BIOS and the UEFI-dependent feature is disabled. If you rely on the availability of a UEFI-dependent feature, set your AMI boot mode parameter to `uefi`.
 
 ------
@@ -31,7 +31,7 @@ To convert an existing Legacy BIOS-based instance to UEFI, or an existing UEFI-b
 **Warning**
 If you don't perform this step, the AMI will not be usable.
 
-1. To find the volume ID of the instance, use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command. You'll create a snapshot of this volume in the next step.
+1. To find the volume ID of the instance, use the [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command. You'll create a snapshot of this volume in the next step.
 
    ```
    aws ec2 describe-instances \
@@ -57,7 +57,7 @@ If you don't perform this step, the AMI will not be usable.
    ]
    ```
 
-1. To create a snapshot of the volume, use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/create-snapshot.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-snapshot.html) command. Use the volume ID from the previous step.
+1. To create a snapshot of the volume, use the [create-snapshot](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-snapshot.html) command. Use the volume ID from the previous step.
 
    ```
    aws ec2 create-snapshot \
@@ -82,7 +82,7 @@ If you don't perform this step, the AMI will not be usable.
    }
    ```
 
-1. Wait until the state of the snapshot is `completed` before you go to the next step. To get the state of the snapshot, use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-snapshots.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-snapshots.html) command with the snapshot ID from the previous step.
+1. Wait until the state of the snapshot is `completed` before you go to the next step. To get the state of the snapshot, use the [describe-snapshots](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-snapshots.html) command with the snapshot ID from the previous step.
 
    ```
    aws ec2 describe-snapshots \
@@ -97,7 +97,7 @@ If you don't perform this step, the AMI will not be usable.
    completed
    ```
 
-1. To create a new AMI, use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) command. Use the value of `SnapshotId` from the output of **CreateSnapshot**.
+1. To create a new AMI, use the [register-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) command. Use the value of `SnapshotId` from the output of **CreateSnapshot**.
    + To set the boot mode to UEFI, add the `--boot-mode` parameter with a value of `uefi`.
 
      ```
@@ -123,7 +123,7 @@ If you don't perform this step, the AMI will not be usable.
         --boot-mode uefi-preferred
      ```
 
-1. (Optional) To verify that the newly-created AMI has the boot mode that you specified, use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command.
+1. (Optional) To verify that the newly-created AMI has the boot mode that you specified, use the [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command.
 
    ```
    aws ec2 describe-images \
@@ -147,7 +147,7 @@ If you don't perform this step, the AMI will not be usable.
 **Warning**
 If you don't perform this step, the AMI will not be usable.
 
-1. To find the volume ID of the instance, use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
+1. To find the volume ID of the instance, use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
 
    ```
    (Get-EC2Instance `
@@ -165,7 +165,7 @@ If you don't perform this step, the AMI will not be usable.
    VolumeId            : vol-01234567890abcdef
    ```
 
-1. To create a snapshot of the volume, use the [https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Snapshot.html](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Snapshot.html) cmdlet. Use the volume ID from the previous step.
+1. To create a snapshot of the volume, use the [New-EC2Snapshot](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Snapshot.html) cmdlet. Use the volume ID from the previous step.
 
    ```
    New-EC2Snapshot `
@@ -192,7 +192,7 @@ If you don't perform this step, the AMI will not be usable.
    VolumeSize                : 30
    ```
 
-1. Wait until the state of the snapshot is `completed` before you go to the next step. To get the state of the snapshot, use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Snapshot.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Snapshot.html) cmdlet with the snapshot ID from the previous step.
+1. Wait until the state of the snapshot is `completed` before you go to the next step. To get the state of the snapshot, use the [Get-EC2Snapshot](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Snapshot.html) cmdlet with the snapshot ID from the previous step.
 
    ```
    (Get-EC2Snapshot `
@@ -205,7 +205,7 @@ If you don't perform this step, the AMI will not be usable.
    completed
    ```
 
-1. To create a new AMI, use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html) cmdlet. Use the value of `SnapshotId` from the output of **New-EC2Snapshot**.
+1. To create a new AMI, use the [Register-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html) cmdlet. Use the value of `SnapshotId` from the output of **New-EC2Snapshot**.
    + To set the boot mode to UEFI, add the `-BootMode` parameter with a value of `uefi`.
 
      ```
@@ -231,7 +231,7 @@ If you don't perform this step, the AMI will not be usable.
         -BootMode uefi-preferred
      ```
 
-1. (Optional) To verify that the newly-created AMI has the boot mode that you specified, use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet.
+1. (Optional) To verify that the newly-created AMI has the boot mode that you specified, use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet.
 
    ```
    (Get-EC2Image `

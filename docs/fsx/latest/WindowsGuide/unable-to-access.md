@@ -108,7 +108,7 @@ If you're unable to access a file system using a DNS alias, use the following pr
 
    1. **Using the Amazon FSx console** – Choose the file system that you're trying to access. On the **File system details** page, the **DNS aliases** are shown on the **Network & security** tab.
 
-   1. **Using the CLI or API** – Use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/fsx/describe-file-system-aliases.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/fsx/describe-file-system-aliases.html) CLI command, or the [DescribeFileSystemAliases](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeFileSystemAliases.html) API operation to retrieve the aliases currently associated with the file system.
+   1. **Using the CLI or API** – Use the [`describe-file-system-aliases`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/fsx/describe-file-system-aliases.html) CLI command, or the [DescribeFileSystemAliases](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeFileSystemAliases.html) API operation to retrieve the aliases currently associated with the file system.
 
 1. If the DNS alias is not listed, you must associate it with the file system. For more information, see [Managing DNS aliases on existing file systems](manage-aliases-existing-fs.md).
 

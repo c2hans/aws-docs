@@ -74,29 +74,29 @@ A "`…`" row indicates all of the data points in between the previous and succe
 
 <table>
 <thead>
-  <tr><th>timestamp</th><th>item\_id</th><th>store</th><th>price</th></tr>
+  <tr><th><code>timestamp</code></th><th><code>item_id</code></th><th><code>store</code></th><th><code>price</code></th></tr>
 </thead>
 <tbody>
   <tr><td>2019-01-01</td><td>socks</td><td>NYC</td><td>10</td></tr>
   <tr><td>2019-01-02</td><td>socks</td><td>NYC</td><td>10</td></tr>
   <tr><td>2019-01-03</td><td>socks</td><td>NYC</td><td>15</td></tr>
-  <tr><td>...</td><td></td><td></td><td></td></tr>
+  <tr><td><code>...</code></td><td></td><td></td><td></td></tr>
   <tr><td>2019-06-01</td><td>socks</td><td>NYC</td><td>10</td></tr>
-  <tr><td>...</td><td></td><td></td><td></td></tr>
+  <tr><td><code>...</code></td><td></td><td></td><td></td></tr>
   <tr><td>2019-07-01</td><td>socks</td><td>NYC</td><td>10</td></tr>
-  <tr><td>...</td><td></td><td></td><td></td></tr>
+  <tr><td><code>...</code></td><td></td><td></td><td></td></tr>
   <tr><td>2019-07-11</td><td>socks</td><td>NYC</td><td>20</td></tr>
   <tr><td>2019-01-05</td><td>socks</td><td>SFO</td><td>45</td></tr>
-  <tr><td>...</td><td></td><td></td><td></td></tr>
+  <tr><td><code>...</code></td><td></td><td></td><td></td></tr>
   <tr><td>2019-06-05</td><td>socks</td><td>SFO</td><td>10</td></tr>
-  <tr><td>...</td><td></td><td></td><td></td></tr>
+  <tr><td><code>...</code></td><td></td><td></td><td></td></tr>
   <tr><td>2019-07-01</td><td>socks</td><td>SFO</td><td>10</td></tr>
-  <tr><td>...</td><td></td><td></td><td></td></tr>
+  <tr><td><code>...</code></td><td></td><td></td><td></td></tr>
   <tr><td>2019-07-11</td><td>socks</td><td>SFO</td><td>30</td></tr>
   <tr><td>2019-02-01</td><td>shoes</td><td>ORD</td><td>50</td></tr>
-  <tr><td>...</td><td></td><td></td><td></td></tr>
+  <tr><td><code>...</code></td><td></td><td></td><td></td></tr>
   <tr><td>2019-07-01</td><td>shoes</td><td>ORD</td><td>75</td></tr>
-  <tr><td>...</td><td></td><td></td><td></td></tr>
+  <tr><td><code>...</code></td><td></td><td></td><td></td></tr>
   <tr><td>2019-07-11</td><td>shoes</td><td>ORD</td><td>60</td></tr>
 </tbody>
 </table>

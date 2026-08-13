@@ -36,7 +36,7 @@ This section shows how to manage Amazon SageMaker Neo compilation jobs for machi
    }
    ```
 
-   You can optionally specify the framework version you used with the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_InputConfig.html#sagemaker-Type-InputConfig-FrameworkVersion](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_InputConfig.html#sagemaker-Type-InputConfig-FrameworkVersion) field if you used the PyTorch framework to train your model and your target device is a `ml_* `target.
+   You can optionally specify the framework version you used with the [`FrameworkVersion`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_InputConfig.html#sagemaker-Type-InputConfig-FrameworkVersion) field if you used the PyTorch framework to train your model and your target device is a `ml_* `target.
 
    ```
    {

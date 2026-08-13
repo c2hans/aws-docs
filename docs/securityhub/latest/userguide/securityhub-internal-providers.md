@@ -127,7 +127,7 @@ Security Hub CSPM transforms AWS Config rule evaluations into findings that foll
 #### Interpreting severity label
 <a name="integration-config-view-interpret-severity"></a>
 
-All findings from AWS Config rule evaluations have a default severity label of **MEDIUM** in the ASFF. You can update the severity label of a finding with the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) API operation.
+All findings from AWS Config rule evaluations have a default severity label of **MEDIUM** in the ASFF. You can update the severity label of a finding with the [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) API operation.
 
 #### Typical finding from AWS Config
 <a name="integration-config-view-typical-finding"></a>
@@ -218,7 +218,7 @@ After you enable Security Hub CSPM, this integration is automatically activated.
 
 To learn more about the integration, view the **Integrations** page in the Security Hub CSPM console.
 
-To learn more about Firewall Manager, see the [https://docs.aws.amazon.com/waf/latest/developerguide/](https://docs.aws.amazon.com/waf/latest/developerguide/).
+To learn more about Firewall Manager, see the [*AWS WAF Developer Guide*](https://docs.aws.amazon.com/waf/latest/developerguide/).
 
 ### Amazon GuardDuty (Sends findings)
 <a name="integration-amazon-guardduty"></a>
@@ -532,7 +532,7 @@ The following AWS services are integrated with Security Hub CSPM and receive fin
 
 AWS Audit Manager receives findings from Security Hub CSPM. These findings help Audit Manager users to prepare for audits.
 
-To learn more about Audit Manager, see the [https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html](https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html). [AWS Security Hub CSPM checks supported by AWS Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-data-sources-ash.html) lists the controls for which Security Hub CSPM sends findings to Audit Manager.
+To learn more about Audit Manager, see the [*AWS Audit Manager User Guide*](https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html). [AWS Security Hub CSPM checks supported by AWS Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-data-sources-ash.html) lists the controls for which Security Hub CSPM sends findings to Audit Manager.
 
 ### Amazon Q Developer in chat applications (Receives findings)
 <a name="integration-chatbot"></a>

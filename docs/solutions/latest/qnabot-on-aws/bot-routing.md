@@ -40,7 +40,7 @@ The example image shows an integration we’ve developed which communicates with
 + Simple name - A short string that we expect web user interfaces to use as a breadcrumb to identify where in an enterprise the user is interacting.
 
 **Note**
-When integrating with other Amazon Lex bots or Lambda functions, the permission to communicate with the target Amazon Lex bot or with a new `BotRouter` Lambda function need to be added to the solution’s `Fulfillment` Lambda role.
+When integrating with other Amazon Lex bots or Lambda functions, the permission to communicate with the target Amazon Lex bot or with a new `BotRouter` Lambda function need to be added to the guidance’s `Fulfillment` Lambda role.
 
 ## Message protocol for a new bot router implemented in Lambda
 <a name="message-protocol-for-a-new-bot-router-implemented-in-lambda"></a>

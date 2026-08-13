@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/dp-sql-capa
 # SQL capabilities of AWS Clean Rooms Differential Privacy
 <a name="dp-sql-capabilities"></a>
 
-AWS Clean Rooms Differential Privacy uses a general-purpose query structure to support complex SQL queries. Custom analysis templates are validated against this structure to ensure that they can run on tables protected by differential privacy. The following table indicates which functions are supported. See [Query structure and syntax](analysis-rules-custom.md#dp-query-structure-syntax) for more information.
+AWS Clean Rooms Differential Privacy uses a general-purpose query structure to support complex SQL queries. Custom analysis templates are validated against this structure to ensure that they can run on tables protected by differential privacy. The following table indicates which functions are supported. See [Query structure and syntax](custom-diff-privacy.md#dp-query-structure-syntax) for more information.
 
 | Category | SQL constructs supported in the Spark analytics engine | Common table expressions (CTEs) | Final SELECT clause |
 | --- |--- |--- |--- |

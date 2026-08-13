@@ -15,7 +15,7 @@ When you invoke your HTTP API, API Gateway routes the request to your Lambda fun
 
 To complete this exercise, you need an AWS account and an AWS Identity and Access Management user with console access. For more information, see [Set up to use API Gateway](setting-up.md).
 
-In this tutorial, you use the AWS Management Console. For an AWS SAM template that creates this API and all related resources, see [samples/http-dynamo-tutorial.zip](samples/http-dynamo-tutorial.zip).
+In this tutorial, you use the AWS Management Console. For an AWS SAM template that creates this API and all related resources, see [`template.yaml`](samples/http-dynamo-tutorial.zip).
 
 **Topics**
 + [Step 1: Create a DynamoDB table](#http-api-dynamo-db-create-table)
@@ -440,6 +440,6 @@ To prevent unnecessary costs, delete the resources that you created as part of t
 ## Next steps: Automate with AWS SAM or CloudFormation
 <a name="http-api-dynamo-db-next-steps"></a>
 
-You can automate the creation and cleanup of AWS resources by using CloudFormation or AWS SAM. For an example AWS SAM template for this tutorial, see [samples/http-dynamo-tutorial.zip](samples/http-dynamo-tutorial.zip).
+You can automate the creation and cleanup of AWS resources by using CloudFormation or AWS SAM. For an example AWS SAM template for this tutorial, see [`template.yaml`](samples/http-dynamo-tutorial.zip).
 
 For example CloudFormation templates, see [example CloudFormation templates](https://github.com/awsdocs/amazon-api-gateway-developer-guide/tree/main/cloudformation-templates).

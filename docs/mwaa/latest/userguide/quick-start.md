@@ -465,7 +465,7 @@ The AWS Command Line Interface (AWS CLI) is an open source tool that you can use
    cd mwaaproject
    ```
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command to create the stack using the AWS CLI.
+1. Use the [`aws cloudformation create-stack`](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command to create the stack using the AWS CLI.
 
    ```
    aws cloudformation create-stack --stack-name mwaa-environment-public-network --template-body file://mwaa-public-network.yml --capabilities CAPABILITY_IAM

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/use-training-plan-fo
 # Create a SageMaker HyperPod cluster on training plans using the SageMaker API, or AWS CLI
 <a name="use-training-plan-for-hyperpod-creation-using-api-cli-sdk"></a>
 
-To use SageMaker training plans for your Amazon SageMaker HyperPod cluster, specify the ARN of the training plan you want to use in the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ClusterInstanceGroupSpecification.html#sagemaker-Type-ClusterInstanceGroupSpecification-TrainingPlanArn](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ClusterInstanceGroupSpecification.html#sagemaker-Type-ClusterInstanceGroupSpecification-TrainingPlanArn) parameter of the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ClusterInstanceGroupSpecification.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ClusterInstanceGroupSpecification.html) when calling the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html) API operation.
+To use SageMaker training plans for your Amazon SageMaker HyperPod cluster, specify the ARN of the training plan you want to use in the [`TrainingPlanArn`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ClusterInstanceGroupSpecification.html#sagemaker-Type-ClusterInstanceGroupSpecification-TrainingPlanArn) parameter of the [`ClusterInstanceGroupSpecification`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ClusterInstanceGroupSpecification.html) when calling the [`CreateCluster`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html) API operation.
 
 Ensure that the subnet associated with the designated AZ of your plan is included in the `VPCConfig` of your cluster configuration. You can retrieve the `AvailabilityZone` of a training plan in the response of a [``DescribeTrainingPlan](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeTrainingPlan.html) API call.
 
@@ -35,7 +35,7 @@ aws sagemaker create-cluster \
         }]'
 ```
 
-For information about how to create an HyperPod cluster using the AWS CLI, see [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-cluster.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-cluster.html).
+For information about how to create an HyperPod cluster using the AWS CLI, see [`create-cluster`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-cluster.html).
 
 After creating the cluster, you can verify that your instance group was properly assigned capacity from the training plan by calling the `DescribeCluster` API.
 

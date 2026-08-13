@@ -33,7 +33,11 @@ An entity supported by a given `ConnectionType`.
 + `Category` – UTF-8 string.
 
   The type of entities that are present in the response. This value depends on the source connection. For example this is `SObjects` for Salesforce and `databases` or `schemas` or `tables` for sources like Amazon Redshift.
-+ `CustomProperties` –
++ `CustomProperties` – A map array of key-value pairs.
+
+  Each key is a UTF-8 string.
+
+  Each value is a UTF-8 string.
 
   An optional map of keys which may be returned for an entity by a connector.
 
@@ -52,7 +56,7 @@ The `Field` object has information about the different properties associated wit
 + `Description` – UTF-8 string.
 
   A description of the field.
-+ `FieldType` – UTF-8 string (valid values: `INT` \| `SMALLINT` \| `BIGINT` \| `FLOAT` \| `LONG` \| `DATE` \| `BOOLEAN` \| `MAP` \| `ARRAY` \| `STRING` \| `TIMESTAMP` \| `DECIMAL` \| `BYTE` \| `SHORT` \| `DOUBLE` \| `STRUCT`).
++ `FieldType` – UTF-8 string (valid values: `INT` \| `SMALLINT` \| `BIGINT` \| `FLOAT` \| `LONG` \| `DATE` \| `BOOLEAN` \| `MAP` \| `ARRAY` \| `STRING` \| `TIMESTAMP` \| `DECIMAL` \| `BYTE` \| `SHORT` \| `DOUBLE` \| `STRUCT` \| `BINARY` \| `UNION`).
 
   The type of data in the field.
 + `IsPrimaryKey` – Boolean.
@@ -82,13 +86,23 @@ The `Field` object has information about the different properties associated wit
 + `IsDefaultOnCreate` – Boolean.
 
   Indicates whether this field is populated automatically when the object is created, such as a created at timestamp.
-+ `SupportedValues` – .
++ `SupportedValues` – An array of UTF-8 strings.
 
   A list of supported values for the field.
 + `SupportedFilterOperators` – An array of UTF-8 strings.
 
   Indicates the support filter operators for this field.
-+ `CustomProperties` –
++ `ParentField` – UTF-8 string.
+
+  A parent field name for a nested field.
++ `NativeDataType` – UTF-8 string.
+
+  The data type returned by the SaaS API, such as "picklist" or "textarea" from Salesforce.
++ `CustomProperties` – A map array of key-value pairs.
+
+  Each key is a UTF-8 string.
+
+  Each value is a UTF-8 string.
 
   Optional map of keys which may be returned.
 
@@ -116,7 +130,7 @@ Returns the available entities supported by the connection type.
 + `NextToken` – UTF-8 string, not less than 1 or more than 2048 bytes long, matching the [Custom string pattern #11](aws-glue-api-common.md#regex_11).
 
   A continuation token, included if this is a continuation call.
-+ `DataStoreApiVersion` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #23](aws-glue-api-common.md#regex_23).
++ `DataStoreApiVersion` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #28](aws-glue-api-common.md#regex_28).
 
   The API version of the SaaS connector.
 
@@ -157,7 +171,7 @@ Provides details regarding the entity used with the connection type, with a desc
 + `NextToken` – UTF-8 string, not less than 1 or more than 2048 bytes long, matching the [Custom string pattern #11](aws-glue-api-common.md#regex_11).
 
   A continuation token, included if this is a continuation call.
-+ `DataStoreApiVersion` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #23](aws-glue-api-common.md#regex_23).
++ `DataStoreApiVersion` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #28](aws-glue-api-common.md#regex_28).
 
   The version of the API used for the data store.
 
@@ -200,14 +214,14 @@ Spark connectors generate schemas according to the same data type mapping as in 
 + `NextToken` – UTF-8 string, not less than 1 or more than 2048 bytes long, matching the [Custom string pattern #11](aws-glue-api-common.md#regex_11).
 
   A continuation token, included if this is a continuation call.
-+ `DataStoreApiVersion` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #23](aws-glue-api-common.md#regex_23).
++ `DataStoreApiVersion` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #28](aws-glue-api-common.md#regex_28).
 
   The API version of the SaaS connector.
 + `ConnectionOptions` – A map array of key-value pairs, not more than 100 pairs.
 
-  Each key is a UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #18](aws-glue-api-common.md#regex_18).
+  Each key is a UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #23](aws-glue-api-common.md#regex_23).
 
-  Each value is a UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #17](aws-glue-api-common.md#regex_17).
+  Each value is a UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #22](aws-glue-api-common.md#regex_22).
 
   Connector options that are required to query the data.
 + `FilterPredicate` – UTF-8 string, not less than 1 or more than 100000 bytes long.
@@ -216,6 +230,9 @@ Spark connectors generate schemas according to the same data type mapping as in 
 + `Limit` – *Required:* Number (long), not less than 1 or more than 1000.
 
   Limits the number of records fetched with the request.
++ `OrderBy` – UTF-8 string.
+
+  A parameter that orders the response preview data.
 + `SelectedFields` – An array of UTF-8 strings, not less than 1 or more than 1000 strings.
 
    List of fields that we want to fetch as part of preview data.

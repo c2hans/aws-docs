@@ -49,7 +49,7 @@ Before you try to perform these tasks for a table, make sure that you have the f
 + `s3tables:PutTableRecordExpirationConfiguration` – This action allows you to enable, configure, and disable record expiration settings for tables.
 + `s3tables:GetTableRecordExpirationJobStatus` – This action allows you to monitor the status of record expiration operations (jobs) for tables and access metrics for the operations.
 
-The following sections explain how to enable, configure, and disable record expiration settings for a table by using the Amazon S3 console and the AWS CLI. To perform these tasks with the Amazon S3 REST API or an AWS SDK, use the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_PutTableRecordExpirationConfiguration.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_PutTableRecordExpirationConfiguration.html) operation. For more information, see [Developing with Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/API/developing-s3.html) in the *Amazon Simple Storage Service API Reference*.
+The following sections explain how to enable, configure, and disable record expiration settings for a table by using the Amazon S3 console and the AWS CLI. To perform these tasks with the Amazon S3 REST API or an AWS SDK, use the [PutTableRecordExpirationConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_PutTableRecordExpirationConfiguration.html) operation. For more information, see [Developing with Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/API/developing-s3.html) in the *Amazon Simple Storage Service API Reference*.
 
 ### Using the S3 console
 <a name="configure-table-record-expiration-console"></a>
@@ -81,7 +81,7 @@ To subsequently disable record expiration, repeat steps 1 through 5. Then, for s
 ### Using the AWS CLI
 <a name="configure-table-record-expiration-CLI"></a>
 
-To configure and manage record expiration settings for an S3 table by using the AWS CLI, run the [https://docs.aws.amazon.com/cli/latest/reference/s3tables/put-table-record-expiration-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/s3tables/put-table-record-expiration-configuration.html) command.
+To configure and manage record expiration settings for an S3 table by using the AWS CLI, run the [put-table-record-expiration-configuration](https://docs.aws.amazon.com/cli/latest/reference/s3tables/put-table-record-expiration-configuration.html) command.
 
 You can start by creating a JSON file that contains the record expiration settings to apply to the table. The following example shows the contents of a JSON file that enables record expiration for a table. It also specifies a retention period of 30 days for records in the table. In other words, it specifies that table records should expire after 30 days.
 
@@ -122,7 +122,7 @@ To use the preceding example, replace the `{{user input placeholders}}` with you
 ## Monitoring record expiration for a table
 <a name="s3-tables-record-expiration-monitor"></a>
 
-To monitor the status and results of record expiration operations for your S3 tables, use the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_GetTableRecordExpirationJobStatus.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_GetTableRecordExpirationJobStatus.html) operation or, if you're using the AWS CLI, run the [https://docs.aws.amazon.com/cli/latest/reference/s3tables/get-table-record-expiration-job-status.html](https://docs.aws.amazon.com/cli/latest/reference/s3tables/get-table-record-expiration-job-status.html) command. In your request, specify the Amazon Resource Name (ARN) of the table.
+To monitor the status and results of record expiration operations for your S3 tables, use the [GetTableRecordExpirationJobStatus](https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_GetTableRecordExpirationJobStatus.html) operation or, if you're using the AWS CLI, run the [get-table-record-expiration-job-status](https://docs.aws.amazon.com/cli/latest/reference/s3tables/get-table-record-expiration-job-status.html) command. In your request, specify the Amazon Resource Name (ARN) of the table.
 
 For example, the following AWS CLI command retrieves the status of record expiration operations for a specific table in a table bucket. To use this example, replace the `{{user input placeholders}}` with your own information.
 

@@ -237,7 +237,7 @@ kubectl describe pod {{POD_NAME}}
 kubectl logs {{POD_NAME}}
 ```
 
- **Check `kubectl` logs**
+ **Check `kubelet` logs**
 
 ```
 systemctl status kubelet

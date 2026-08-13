@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gr
 
 When you run a Gremlin traversal that returns a large number of results, Neptune streams them back to the client in batches over the WebSocket connection. Neptune sends result batches as they are produced, without waiting for the client to request more. This can be advantageous if you want to process results as they are being returned from the server, but requires using lazy iteration patterns to avoid collecting the full result set into memory.
 
-Neptune sends results in batches of 64 per WebSocket frame by default. You cannot change this server-side default, but the batch size can be overridden on a per-request basis from the client using the [https://tinkerpop.apache.org/docs/current/reference/#gremlin-java-configuration](https://tinkerpop.apache.org/docs/current/reference/#gremlin-java-configuration) request option (called `Tokens.ARGS_BATCH_SIZE` in the Java driver, or `connectionPool.resultIterationBatchSize` as a driver-level default).
+Neptune sends results in batches of 64 per WebSocket frame by default. You cannot change this server-side default, but the batch size can be overridden on a per-request basis from the client using the [`batchSize`](https://tinkerpop.apache.org/docs/current/reference/#gremlin-java-configuration) request option (called `Tokens.ARGS_BATCH_SIZE` in the Java driver, or `connectionPool.resultIterationBatchSize` as a driver-level default).
 
 For details on configuring `batchSize` in other language drivers, see the Configuration section for each driver in the [Apache TinkerPop Gremlin Drivers and Variants](https://tinkerpop.apache.org/docs/current/reference/#gremlin-drivers-variants) documentation.
 

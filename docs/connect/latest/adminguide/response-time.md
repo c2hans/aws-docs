@@ -2,12 +2,12 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/response-time.html
 ---
 
-# Investigate response time during chats in Contact Lens
+# Investigate response time during chats in conversational analytics
 <a name="response-time"></a>
 
 Use the response time metric to understand the responsiveness of the agent or customer during a chat contact.
 
-Contact Lens calculates the following metrics:
+Conversational analytics calculates the following metrics:
 + **Agent greeting time**. This is the first response time for the agent, which is how fast the agent engaged with the customer after the agent joined the chat. A long first response time may explain, for example, if a customer has a negative sentiment in the beginning of conversation.
 + **Avg agent response time** and **Avg customer response time**. The agent response time helps you check an agent's performance against your organization's base line.
 + **Max agent response time** and **Max customer response time**.

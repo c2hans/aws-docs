@@ -15,7 +15,7 @@ A AWS CloudTrail log file includes information about the requested API operation
 ## Example – CloudTrail log file for `GetObject` data event
 <a name="example-ct-log-s3tables"></a>
 
-The following example shows a CloudTrail log file example that demonstrates the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) API operation.
+The following example shows a CloudTrail log file example that demonstrates the [`GetObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) API operation.
 
 ```
     {
@@ -121,7 +121,7 @@ The following is a CloudTrail log file example that demonstrates a maintenance e
 ## Example – CloudTrail log file for `PutObject` data event
 <a name="example-ct-log-s3tables-2"></a>
 
-The following example shows a CloudTrail log file example that demonstrates the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html) API operation.
+The following example shows a CloudTrail log file example that demonstrates the [`PutObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html) API operation.
 
 ```
 {

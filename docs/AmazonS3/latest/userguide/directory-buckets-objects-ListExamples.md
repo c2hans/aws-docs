@@ -128,4 +128,4 @@ The following `list-directory-buckets` example command shows how you can use the
 aws s3api list-directory-buckets --region {{us-east-1}}
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-directory-buckets.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-directory-buckets.html) in the *AWS CLI Command Reference*.
+For more information, see [list-directory-buckets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-directory-buckets.html) in the *AWS CLI Command Reference*.

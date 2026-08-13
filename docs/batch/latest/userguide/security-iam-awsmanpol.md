@@ -26,7 +26,7 @@ This policy allows AWS Batch to complete the following actions on specific resou
 + `iam` - Allows AWS Batch to validate and pass roles provided by owner to Amazon EC2, Amazon EC2 Auto Scaling and Amazon ECS.
 + `logs` – Allows AWS Batch to create and manage log groups and log streams for AWS Batch jobs.
 
-To view the JSON for the policy, see [BatchServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/BatchServiceRolePolicy.html) in the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html).
+To view the JSON for the policy, see [BatchServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/BatchServiceRolePolicy.html) in the [*AWS managed policies Reference Guide*](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html).
 
 ## AWS managed policy: **AWSBatchServiceRolePolicyForSageMaker**
 <a name="security-iam-awsmanpol-sagemaker-service-role-policy"></a>
@@ -37,7 +37,7 @@ This policy allows AWS Batch to complete the following actions on specific resou
 + `sagemaker` – Allows AWS Batch to manage SageMaker AI training jobs and other SageMaker AI resources.
 + `iam:PassRole` – Allows AWS Batch to pass customer-defined execution roles to SageMaker AI for job execution. The resource constraint allows passing roles to SageMaker AI services.
 
-To view the JSON for the policy, see [AWSBatchServiceRolePolicyForSageMaker](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBatchServiceRolePolicyForSageMaker.html) in the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html).
+To view the JSON for the policy, see [AWSBatchServiceRolePolicyForSageMaker](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBatchServiceRolePolicyForSageMaker.html) in the [*AWS managed policies Reference Guide*](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html).
 
 ## AWS managed policy: **AWSBatchServiceRole** policy
 <a name="security-iam-awsmanpol-AWSBatchServiceRolePolicy"></a>
@@ -51,7 +51,7 @@ The **AWSBatchServiceRole** managed IAM policy is often used by a role named **A
 + `iam` - Allows AWS Batch to validate and pass roles provided by owner to Amazon EC2, Amazon EC2 Auto Scaling and Amazon ECS.
 + `logs` – Allows AWS Batch to create and manage log groups and log streams for AWS Batch jobs.
 
-To view the JSON for the policy, see [AWSBatchServiceRole](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBatchServiceRole.html) in the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html).
+To view the JSON for the policy, see [AWSBatchServiceRole](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBatchServiceRole.html) in the [*AWS managed policies Reference Guide*](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html).
 
 ## AWS managed policy: **AWSBatchFullAccess**
 <a name="security-iam-awsmanpol-BatchFullAccess"></a>
@@ -60,7 +60,7 @@ The **AWSBatchFullAccess** policy grants AWS Batch actions full access to AWS Ba
 
 You can attach **AWSBatchFullAccess** to your IAM entities. AWS Batch also attaches this policy to a service role that allows AWS Batch to perform actions on your behalf.
 
-To view the JSON for the policy, see [AWSBatchFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBatchFullAccess.html) in the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html).
+To view the JSON for the policy, see [AWSBatchFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBatchFullAccess.html) in the [*AWS managed policies Reference Guide*](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html).
 
 ## AWS Batch updates to AWS managed policies
 <a name="security-iam-awsmanpol-updates"></a>

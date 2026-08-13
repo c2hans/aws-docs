@@ -9,7 +9,7 @@ This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on 
 
 An AWS Cloud Development Kit (AWS CDK) *stage* represents a group of one or more CDK stacks that are configured to deploy together. Use stages to deploy the same grouping of stacks to multiple environments, such as development, testing, and production.
 
-To configure a CDK stage, import and use the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stage.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stage.html) construct.
+To configure a CDK stage, import and use the [`Stage`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stage.html) construct.
 
 The following is a basic example that defines a CDK stage named `MyAppStage`. We add two CDK stacks, named `AppStack` and `DatabaseStack` to our stage. For this example, `AppStack` contains application resources and `DatabaseStack` contains database resources. We then create two instances of `MyAppStage`, for development and production environments:
 

@@ -13,7 +13,7 @@ The member object listed by the request.
  ** abilities **   <a name="API-Type-MemberSummary-abilities"></a>
 The abilities granted to the collaboration member.
 Type: Array of strings
-Valid Values: `CAN_QUERY | CAN_RECEIVE_RESULTS | CAN_RUN_JOB`
+Valid Values: `CAN_QUERY | CAN_RECEIVE_RESULTS | CAN_RUN_JOB | CAN_EXPORT_QUERY_ANALYSIS_LOG`
 Required: Yes
 
  ** accountId **   <a name="API-Type-MemberSummary-accountId"></a>

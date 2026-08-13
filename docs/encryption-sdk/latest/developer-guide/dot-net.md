@@ -9,7 +9,7 @@ The AWS Encryption SDK for .NET is a client-side encryption library for develope
 
 **Note**
 Version 4.0.0 of the AWS Encryption SDK for .NET deviates from the AWS Encryption SDK Message Specification. As a result, messages encrypted by version 4.0.0 can only be decrypted by version 4.0.0 or later of the AWS Encryption SDK for .NET. They cannot be decrypted by any other programming language implementation.
-Version 4.0.1 of the AWS Encryption SDK for .NET writes messages according to the AWS Encryption SDK Message Specification, and is interoperable with other programming language implementations. By default, version 4.0.1 can read messages encrypted by version 4.0.0. However, if you do not want to decrypt messages encrypted by version 4.0.0, you can specify the [https://github.com/aws/aws-encryption-sdk/tree/mainline/AwsEncryptionSDK/runtimes/net/Examples/NetV4_0_0Example.cs](https://github.com/aws/aws-encryption-sdk/tree/mainline/AwsEncryptionSDK/runtimes/net/Examples/NetV4_0_0Example.cs) property to prevent the client from reading these messages. For more information, see the [v4.0.1 release notes](https://github.com/aws/aws-encryption-sdk/releases/tag/v4.0.1) in the aws-encryption-sdk repository on GitHub.
+Version 4.0.1 of the AWS Encryption SDK for .NET writes messages according to the AWS Encryption SDK Message Specification, and is interoperable with other programming language implementations. By default, version 4.0.1 can read messages encrypted by version 4.0.0. However, if you do not want to decrypt messages encrypted by version 4.0.0, you can specify the [`NetV4_0_0_RetryPolicy`](https://github.com/aws/aws-encryption-sdk/tree/mainline/AwsEncryptionSDK/runtimes/net/Examples/NetV4_0_0Example.cs) property to prevent the client from reading these messages. For more information, see the [v4.0.1 release notes](https://github.com/aws/aws-encryption-sdk/releases/tag/v4.0.1) in the aws-encryption-sdk repository on GitHub.
 
 The AWS Encryption SDK for .NET differs from some of the other programming language implementations of the AWS Encryption SDK in the following ways:
 + No support for [data key caching](data-key-caching.md)
@@ -25,7 +25,7 @@ The AWS Encryption SDK for .NET is a product of the AWS Encryption SDK in [Dafny
 
 **Learn More**
 + For examples showing how to configure options in the AWS Encryption SDK, such as specifying an alternate algorithm suite, limiting encrypted data keys, and using AWS KMS multi-Region keys, see [Configuring the AWS Encryption SDK](configure.md).
-+ For details about programming with the AWS Encryption SDK for .NET, see the [https://github.com/aws/aws-encryption-sdk/tree/mainline/AwsEncryptionSDK/runtimes/net/](https://github.com/aws/aws-encryption-sdk/tree/mainline/AwsEncryptionSDK/runtimes/net/) directory of the aws-encryption-sdk repository on GitHub.
++ For details about programming with the AWS Encryption SDK for .NET, see the [`aws-encryption-sdk-net`](https://github.com/aws/aws-encryption-sdk/tree/mainline/AwsEncryptionSDK/runtimes/net/) directory of the aws-encryption-sdk repository on GitHub.
 
 **Topics**
 + [Install and build](#dot-net-install)
@@ -35,7 +35,7 @@ The AWS Encryption SDK for .NET is a product of the AWS Encryption SDK in [Dafny
 ## Installing the AWS Encryption SDK for .NET
 <a name="dot-net-install"></a>
 
-The AWS Encryption SDK for .NET is available as the [https://www.nuget.org/packages/AWS.Cryptography.EncryptionSDK](https://www.nuget.org/packages/AWS.Cryptography.EncryptionSDK) package in NuGet. For details about installing and building the AWS Encryption SDK for .NET, see the [README.md](https://github.com/aws/aws-encryption-sdk/tree/mainline/AwsEncryptionSDK/runtimes/net/#readme) file in the `aws-encryption-sdk-net` repository.
+The AWS Encryption SDK for .NET is available as the [`AWS.Cryptography.EncryptionSDK`](https://www.nuget.org/packages/AWS.Cryptography.EncryptionSDK) package in NuGet. For details about installing and building the AWS Encryption SDK for .NET, see the [README.md](https://github.com/aws/aws-encryption-sdk/tree/mainline/AwsEncryptionSDK/runtimes/net/#readme) file in the `aws-encryption-sdk-net` repository.
 
 **Version 3.x**
 Version 3.*x* of the AWS Encryption SDK for .NET supports .NET Framework 4.5.2 – 4.8 only on Windows. It supports .NET Core 3.0\+ and .NET 5.0 and later on all supported operating systems.

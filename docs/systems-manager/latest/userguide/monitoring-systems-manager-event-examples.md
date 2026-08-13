@@ -104,7 +104,7 @@ Event modifications and timing considerations
 Adjacent and overlapping events
 + When calendar events are scheduled within 5 minutes of each other, state transition events might or might not occur, depending on the actual state change.
 + Creating overlapping events in certain orders might generate additional EventBridge events even when no actual state change occurs.
-+ To ensure predictable behavior, avoid creating or modifying calendar events close to their execution times.
++ To help ensure predictable behavior, avoid creating or modifying calendar events close to their execution times.
 
 Best practices
 + Design your EventBridge rules and downstream automation to handle potential duplicate events.

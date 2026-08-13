@@ -145,11 +145,11 @@ While the index is being created, it will have the index status of `In progress`
 
 Create a backup index through CLI
 
-Use the AWS CLI command [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-backup-plan.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-backup-plan.html) to make a new backup plan. Or, use [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/update-backup-plan.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/update-backup-plan.html) to modify an existing plan.
+Use the AWS CLI command [`create-backup-plan`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-backup-plan.html) to make a new backup plan. Or, use [`update-backup-plan`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/update-backup-plan.html) to modify an existing plan.
 
 For either operation, within the parameter `--backup-plan -rules`, include `IndexActions`.
 
-See [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_IndexAction.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_IndexAction.html) in [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BackupRuleInput.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BackupRuleInput.html) in the *AWS Backup API Reference Guide* for more information.
+See [`IndexActions`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_IndexAction.html) in [`BackupRuleInput`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BackupRuleInput.html) in the *AWS Backup API Reference Guide* for more information.
 
 Once a recovery point has an index, you can update its settings.
 
@@ -357,7 +357,7 @@ You can narrow the possible returned results of a search job by including multip
 
 Many customers choose to search through their backups - and the objects or files within them - to find a specific recovery point or items to restore. See [Restore a backup by resource type](restoring-a-backup.md) for information on restores in general.
 
-You can restore from your search results in the AWS Backup console by navigating to **Jobs > Search job results > Restore**. To restore through AWS CLI, use [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html) with metadata specific to the resource type, recovery point, and items involved in the restore.
+You can restore from your search results in the AWS Backup console by navigating to **Jobs > Search job results > Restore**. To restore through AWS CLI, use [`start-restore-job`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html) with metadata specific to the resource type, recovery point, and items involved in the restore.
 
 See [Restore S3 data using AWS Backup](restoring-s3.md) for information on how to restore a recovery point with S3 data, to restore an S3 bucket, or to restore up to five objects or folders with an S3 bucket.
 

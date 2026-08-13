@@ -159,7 +159,7 @@ s3Client.getObject(b -> b
 
 The SDK returns a response object for most service operations. Your code can process the information in the response object according to your needs.
 
-For example, the following code snippet prints out the first instance id returned with the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/ec2/model/RunInstancesResponse.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/ec2/model/RunInstancesResponse.html) object from the previous request.
+For example, the following code snippet prints out the first instance id returned with the [`RunInstancesResponse`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/ec2/model/RunInstancesResponse.html) object from the previous request.
 
 ```
 RunInstancesResponse runInstancesResponse = ec2Client.runInstances(runInstancesRequest);
@@ -168,7 +168,7 @@ System.out.println(runInstancesResponse.instances().get(0).instanceId());
 
 Not all operations return a response object with service-specific data, however. In these situations, you can query the HTTP response status to learn if the operation was successful.
 
-For example, the code in the following snippet checks the HTTP response to see if the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sesv2/SesV2Client.html#deleteContactList(software.amazon.awssdk.services.sesv2.model.DeleteContactListRequest)](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sesv2/SesV2Client.html#deleteContactList(software.amazon.awssdk.services.sesv2.model.DeleteContactListRequest)) operation of Amazon Simple Email Service was successful.
+For example, the code in the following snippet checks the HTTP response to see if the [`DeleteContactList`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sesv2/SesV2Client.html#deleteContactList(software.amazon.awssdk.services.sesv2.model.DeleteContactListRequest)) operation of Amazon Simple Email Service was successful.
 
 ```
 SesV2Client sesv2Client = SesV2Client.create();

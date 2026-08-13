@@ -125,7 +125,7 @@ The maximum value is 24 hours.
 ## Create a schedule using the AWS CLI
 <a name="getting-started-cli"></a>
 
-The following example shows how to use the AWS CLI command [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/create-schedule.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/create-schedule.html) to create a EventBridge Scheduler schedule with a templated Amazon SQS target. Replace the placeholder values for the following parameters with your information:
+The following example shows how to use the AWS CLI command [`create-schedule`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/create-schedule.html) to create a EventBridge Scheduler schedule with a templated Amazon SQS target. Replace the placeholder values for the following parameters with your information:
 + **--name** – Enter a name for the schedule.
 + **RoleArn** – Enter the ARN for the execution role you want to associate with the schedule.
 + **Arn** – Enter the ARN for the target. In this case, the target is an Amazon SQS queue.

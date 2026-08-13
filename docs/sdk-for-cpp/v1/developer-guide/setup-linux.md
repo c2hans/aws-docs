@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/setup-lin
 
 To set up the AWS SDK for C\+\+, you can either build the SDK yourself directly from the source or download the libraries using a package manager.
 
-The SDK source is separated into individual packages by service. Installing the entire SDK can take up to an hour. Installing only the specific subset of services that your program uses decreases installation time and also reduces size on disk. To choose which services to install, you need to know the package name of each service your program uses. You can see the list of package directories at [https://github.com/aws/aws-sdk-cpp](https://github.com/aws/aws-sdk-cpp) on GitHub. The package name is the suffix of the directory name for the service.
+The SDK source is separated into individual packages by service. Installing the entire SDK can take up to an hour. Installing only the specific subset of services that your program uses decreases installation time and also reduces size on disk. To choose which services to install, you need to know the package name of each service your program uses. You can see the list of package directories at [`aws/aws-sdk-cpp`](https://github.com/aws/aws-sdk-cpp) on GitHub. The package name is the suffix of the directory name for the service.
 
 ```
 aws-sdk-cpp\aws-cpp-sdk-{{<packageName>}}   # Repo directory name and packageName
@@ -57,7 +57,7 @@ You can build the SDK from source using command-line tools as an alternative to 
 
    Version 1.11 uses git submodules to wrap external dependencies. This includes the [CRT libraries](https://docs.aws.amazon.com/sdkref/latest/guide/common-runtime.html) described in the *AWS SDKs and Tools Reference Guide*.
 
-   Download or clone the SDK source from [https://github.com/aws/aws-sdk-cpp](https://github.com/aws/aws-sdk-cpp) on GitHub:
+   Download or clone the SDK source from [`aws/aws-sdk-cpp`](https://github.com/aws/aws-sdk-cpp) on GitHub:
    + Clone with Git: HTTPS
 
      ```

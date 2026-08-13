@@ -81,9 +81,24 @@ The identity provider information for the cluster.
 Type: [Identity](API_Identity.md) object
 Required: No
 
+ ** kubeApiServerConfig **   <a name="AmazonEKS-Type-Cluster-kubeApiServerConfig"></a>
+The Kubernetes API server configuration for the cluster.
+Type: [KubeApiServerConfigResponse](API_KubeApiServerConfigResponse.md) object
+Required: No
+
+ ** kubeControllerManagerConfig **   <a name="AmazonEKS-Type-Cluster-kubeControllerManagerConfig"></a>
+The Kubernetes controller manager configuration for the cluster.
+Type: [KubeControllerManagerConfigResponse](API_KubeControllerManagerConfigResponse.md) object
+Required: No
+
  ** kubernetesNetworkConfig **   <a name="AmazonEKS-Type-Cluster-kubernetesNetworkConfig"></a>
 The Kubernetes network configuration for the cluster.
 Type: [KubernetesNetworkConfigResponse](API_KubernetesNetworkConfigResponse.md) object
+Required: No
+
+ ** kubeSchedulerConfig **   <a name="AmazonEKS-Type-Cluster-kubeSchedulerConfig"></a>
+The Kubernetes scheduler configuration for the cluster.
+Type: [KubeSchedulerConfigResponse](API_KubeSchedulerConfigResponse.md) object
 Required: No
 
  ** logging **   <a name="AmazonEKS-Type-Cluster-logging"></a>

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/host-vpc.html
 ## Configure a Model for Amazon VPC Access
 <a name="host-vpc-configure"></a>
 
-To specify subnets and security groups in your private VPC, use the `VpcConfig` request parameter of the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) API, or provide this information when you create a model in the SageMaker AI console. SageMaker AI uses this information to create network interfaces and attach them to your model containers. The network interfaces provide your model containers with a network connection within your VPC that is not connected to the internet. They also enable your model to connect to resources in your private VPC.
+To specify subnets and security groups in your private VPC, use the `VpcConfig` request parameter of the [`CreateModel`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) API, or provide this information when you create a model in the SageMaker AI console. SageMaker AI uses this information to create network interfaces and attach them to your model containers. The network interfaces provide your model containers with a network connection within your VPC that is not connected to the internet. They also enable your model to connect to resources in your private VPC.
 
 **Note**
 You must create at least two subnets in different availability zones in your private VPC, even if you have only one hosting instance.

@@ -19,7 +19,7 @@ This quick start guide provides step-by-step instructions for creating and confi
 ## Prerequisites
 <a name="amazon-lightsail-quick-start-guide-almalinux-prerequisites"></a>
 + If you're a new AWS customer, complete the setup prerequisites before you start using Amazon Lightsail. For more information, see [Set up AWS account and administrative users for Lightsail](setting-up.md).
-+ Read the AlmaLinux documentation on the [https://wiki.almalinux.org/](https://wiki.almalinux.org/) site.
++ Read the AlmaLinux documentation on the [*AlmaLinux Wiki*](https://wiki.almalinux.org/) site.
 
 ## Create an AlmaLinux instance in Lightsail
 <a name="amazon-lightsail-quick-start-guide-almalinux-create-instance"></a>

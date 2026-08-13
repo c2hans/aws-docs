@@ -9,7 +9,7 @@ The following Python code example uses the AWS SDK for Python (Boto) to delete a
 
 The following code example uses default credentials stored in the AWS SDK configuration file. For information about creating the configuration file, see [Setting up the AWS CLI](setup-cli.md).
 
-For more information on this operation, see the reference for the [https://docs.aws.amazon.com/polly/latest/APIReference/API_DeleteLexicon.html](https://docs.aws.amazon.com/polly/latest/APIReference/API_DeleteLexicon.html) API.
+For more information on this operation, see the reference for the [`DeleteLexicon`](https://docs.aws.amazon.com/polly/latest/APIReference/API_DeleteLexicon.html) API.
 
 ```
 from argparse import ArgumentParser

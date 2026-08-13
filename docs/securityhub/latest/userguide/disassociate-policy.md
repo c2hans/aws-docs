@@ -33,7 +33,7 @@ Choose your preferred method, and follow the steps to disassociate an account, O
 
 **To disassociate an account or OU from its current configuration**
 
-1. Invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StartConfigurationPolicyDisassociation.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StartConfigurationPolicyDisassociation.html) API from the Security Hub CSPM delegated administrator account in the home Region.
+1. Invoke the [StartConfigurationPolicyDisassociation](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StartConfigurationPolicyDisassociation.html) API from the Security Hub CSPM delegated administrator account in the home Region.
 
 1.  For `ConfigurationPolicyIdentifier`, provide the Amazon Resource Name (ARN) or ID of the configuration policy that you want to disassociate. Provide `SELF_MANAGED_SECURITY_HUB` for this field to disassociate self-managed behavior.
 
@@ -53,7 +53,7 @@ Choose your preferred method, and follow the steps to disassociate an account, O
 
 **To disassociate an account or OU from its current configuration**
 
-1. Run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/start-configuration-policy-disassociation.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/start-configuration-policy-disassociation.html) command from the Security Hub CSPM delegated administrator account in the home Region.
+1. Run the [start-configuration-policy-disassociation](https://docs.aws.amazon.com/cli/latest/reference/securityhub/start-configuration-policy-disassociation.html) command from the Security Hub CSPM delegated administrator account in the home Region.
 
 1.  For `configuration-policy-identifier`, provide the Amazon Resource Name (ARN) or ID of the configuration policy that you want to disassociate. Provide `SELF_MANAGED_SECURITY_HUB` for this field to disassociate self-managed behavior.
 

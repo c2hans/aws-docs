@@ -17,7 +17,7 @@ Before you use the AWS SDK for Ruby, you must authenticate with AWS. For informa
 
 You can install the AWS SDK for Ruby as you would any Ruby gem. The gems are available at [RubyGems](https://rubygems.org/gems/aws-sdk/). The AWS SDK for Ruby is designed to be modular and is separated by AWS service. Installing the entire `aws-sdk` gem is large and may take over an hour.
 
-We recommend only installing the gems for the AWS services you use. These are named like `aws-sdk-{{service_abbreviation}}` and the complete list is found in the [Supported Services](https://github.com/aws/aws-sdk-ruby/#supported-services) table of the AWS SDK for Ruby README file. For example, the gem for interfacing with the Amazon S3 service is directly available at [https://rubygems.org/gems/aws-sdk-s3](https://rubygems.org/gems/aws-sdk-s3).
+We recommend only installing the gems for the AWS services you use. These are named like `aws-sdk-{{service_abbreviation}}` and the complete list is found in the [Supported Services](https://github.com/aws/aws-sdk-ruby/#supported-services) table of the AWS SDK for Ruby README file. For example, the gem for interfacing with the Amazon S3 service is directly available at [`aws-sdk-s3`](https://rubygems.org/gems/aws-sdk-s3).
 
 ### Ruby version manager
 <a name="installing-rvm"></a>

@@ -559,7 +559,7 @@ If you are using a `Map` state, and want to ensure predictable responses for the
 
 `Return` is represented as a field of the `MockedResponse` objects. It specifies the successful result of a mocked Task state.
 
-The following is an example of a `Return` object that contains a mocked response for calling [https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html) on a Lambda function:
+The following is an example of a `Return` object that contains a mocked response for calling [`Invoke`](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html) on a Lambda function:
 
 ```
 "Return": {
@@ -576,7 +576,7 @@ The following is an example of a `Return` object that contains a mocked response
 
 `Throw` is represented as a field of the `MockedResponse` objects. It specifies the [error output](concepts-error-handling.md) of a failed Task. The value of `Throw` must be an object containing an `Error` and `Cause` fields with string values. In addition, the string value you specify in `Error` field in the `MockConfigFile.json` must match the errors handled in the `Retry` and `Catch` sections of your state machine.
 
-The following is an example of a `Throw` object that contains a mocked response for calling [https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html) on a Lambda function:
+The following is an example of a `Throw` object that contains a mocked response for calling [`Invoke`](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html) on a Lambda function:
 
 ```
 "Throw": {

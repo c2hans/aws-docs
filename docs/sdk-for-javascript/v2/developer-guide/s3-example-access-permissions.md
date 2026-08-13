@@ -16,8 +16,8 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 <a name="w2aac20c25c27c13b9"></a>
 
 In this example, a Node.js module is used to display the bucket access control list (ACL) for a selected bucket and apply changes to the ACL for a selected bucket. The Node.js module uses the SDK for JavaScript to manage Amazon S3 bucket access permissions using these methods of the Amazon S3 client class:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#getBucketAcl-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#getBucketAcl-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#putBucketAcl-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#putBucketAcl-property)
++ [`getBucketAcl`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#getBucketAcl-property)
++ [`putBucketAcl`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#putBucketAcl-property)
 
 For more information about access control lists for Amazon S3 buckets, see [ Managing Access with ACLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3_ACLs_UsingACLs.html) in the *Amazon Simple Storage Service User Guide*.
 

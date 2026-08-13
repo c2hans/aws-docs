@@ -19,24 +19,24 @@ For ciphers with elliptic curve key exchange algorithms, CloudFront supports the
   <tr><th>OpenSSL and s2n cipher name</th><th>RFC cipher name</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2">Supported ECDSA ciphers</td></tr>
-  <tr><td>ECDHE-ECDSA-AES256-GCM-SHA384</td><td>TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_GCM\_SHA384</td></tr>
-  <tr><td>ECDHE-ECDSA-AES256-SHA384</td><td>TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_CBC\_SHA384</td></tr>
-  <tr><td>ECDHE-ECDSA-AES256-SHA</td><td>TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_CBC\_SHA</td></tr>
-  <tr><td>ECDHE-ECDSA-AES128-GCM-SHA256</td><td>TLS\_ECDHE\_ECDSA\_WITH\_AES\_128\_GCM\_SHA256</td></tr>
-  <tr><td>ECDHE-ECDSA-AES128-SHA256</td><td>TLS\_ECDHE\_ECDSA\_WITH\_AES\_128\_CBC\_SHA256</td></tr>
-  <tr><td>ECDHE-ECDSA-AES128-SHA</td><td>TLS\_ECDHE\_ECDSA\_WITH\_AES\_128\_CBC\_SHA</td></tr>
-  <tr><td colspan="2">Supported RSA ciphers</td></tr>
-  <tr><td>ECDHE-RSA-AES256-GCM-SHA384</td><td>TLS\_ECDHE\_RSA\_WITH\_AES\_256\_GCM\_SHA384</td></tr>
-  <tr><td>ECDHE-RSA-AES256-SHA384</td><td>TLS\_ECDHE\_RSA\_WITH\_AES\_256\_CBC\_SHA384</td></tr>
-  <tr><td>ECDHE-RSA-AES256-SHA</td><td>TLS\_ECDHE\_RSA\_WITH\_AES\_256\_CBC\_SHA</td></tr>
-  <tr><td>ECDHE-RSA-AES128-GCM-SHA256</td><td>TLS\_ECDHE\_RSA\_WITH\_AES\_128\_GCM\_SHA256</td></tr>
-  <tr><td>ECDHE-RSA-AES128-SHA256</td><td>TLS\_ECDHE\_RSA\_WITH\_AES\_128\_CBC\_SHA256</td></tr>
-  <tr><td>ECDHE-RSA-AES128-SHA</td><td>TLS\_ECDHE\_RSA\_WITH\_AES\_128\_CBC\_SHA</td></tr>
-  <tr><td>AES256-SHA</td><td>TLS\_RSA\_WITH\_AES\_256\_CBC\_SHA</td></tr>
-  <tr><td>AES128-SHA</td><td>TLS\_RSA\_WITH\_AES\_128\_CBC\_SHA</td></tr>
-  <tr><td>DES-CBC3-SHA</td><td>TLS\_RSA\_WITH\_3DES\_EDE\_CBC\_SHA</td></tr>
-  <tr><td>RC4-MD5</td><td>TLS\_RSA\_WITH\_RC4\_128\_MD5</td></tr>
+  <tr><td colspan="2"><b>Supported ECDSA ciphers</b></td></tr>
+  <tr><td>ECDHE-ECDSA-AES256-GCM-SHA384</td><td>TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384</td></tr>
+  <tr><td>ECDHE-ECDSA-AES256-SHA384</td><td>TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384</td></tr>
+  <tr><td>ECDHE-ECDSA-AES256-SHA</td><td>TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA</td></tr>
+  <tr><td>ECDHE-ECDSA-AES128-GCM-SHA256</td><td>TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</td></tr>
+  <tr><td>ECDHE-ECDSA-AES128-SHA256</td><td>TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256</td></tr>
+  <tr><td>ECDHE-ECDSA-AES128-SHA</td><td>TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA</td></tr>
+  <tr><td colspan="2"><b>Supported RSA ciphers</b></td></tr>
+  <tr><td>ECDHE-RSA-AES256-GCM-SHA384</td><td>TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384</td></tr>
+  <tr><td>ECDHE-RSA-AES256-SHA384</td><td>TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384</td></tr>
+  <tr><td>ECDHE-RSA-AES256-SHA</td><td>TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</td></tr>
+  <tr><td>ECDHE-RSA-AES128-GCM-SHA256</td><td>TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</td></tr>
+  <tr><td>ECDHE-RSA-AES128-SHA256</td><td>TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256</td></tr>
+  <tr><td>ECDHE-RSA-AES128-SHA</td><td>TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</td></tr>
+  <tr><td>AES256-SHA</td><td>TLS_RSA_WITH_AES_256_CBC_SHA</td></tr>
+  <tr><td>AES128-SHA</td><td>TLS_RSA_WITH_AES_128_CBC_SHA</td></tr>
+  <tr><td>DES-CBC3-SHA</td><td>TLS_RSA_WITH_3DES_EDE_CBC_SHA</td></tr>
+  <tr><td>RC4-MD5</td><td>TLS_RSA_WITH_RC4_128_MD5</td></tr>
 </tbody>
 </table>
 

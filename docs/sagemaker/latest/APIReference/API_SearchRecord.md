@@ -54,7 +54,7 @@ Required: No
 A container for your trained model that can be deployed for SageMaker inference. This can include inference code, artifacts, and metadata. The model package type can be one of the following.
 + Versioned model: A part of a model package group in Model Registry.
 + Unversioned model: Not part of a model package group and used in AWS Marketplace.
-For more information, see [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModelPackage.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModelPackage.html).
+For more information, see [`CreateModelPackage`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModelPackage.html).
 Type: [ModelPackage](API_ModelPackage.md) object
 Required: No
 

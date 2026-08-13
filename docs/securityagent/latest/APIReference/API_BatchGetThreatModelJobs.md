@@ -71,6 +71,7 @@ Content-type: application/json
          "executionStartTime": "string",
          "integratedRepositories": [
             {
+               "branch": "string",
                "integrationId": "string",
                "providerResourceId": "string"
             }

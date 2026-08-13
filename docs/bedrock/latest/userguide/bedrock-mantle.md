@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-mantle.
 # Inference using Responses API
 <a name="bedrock-mantle"></a>
 
-Amazon Bedrock provides the OpenAI Responses API via the `bedrock-mantle` endpoint, powered by Mantle, a distributed inference engine for large-scale machine learning model serving. This endpoint allows you to use familiar OpenAI SDKs and tools with Amazon Bedrock models, enabling you to migrate existing applications with minimal code changes—simply update your base URL and API key.
+Amazon Bedrock provides the OpenAI Responses API through the `bedrock-mantle` endpoint, powered by Mantle, a distributed inference engine for large-scale machine learning model serving. This endpoint allows you to use familiar OpenAI SDKs and tools with Amazon Bedrock models, enabling you to migrate existing applications with minimal code changes—simply update your base URL and API key.
 
 **Important**
 When using the OpenAI SDK with Amazon Bedrock, you must point it to the Amazon Bedrock endpoint, not the OpenAI endpoint. Set the following environment variables:
@@ -50,7 +50,7 @@ The `bedrock-mantle` endpoint is available in the following AWS Regions:
 ## Prerequisites
 <a name="bedrock-mantle-prereq"></a>
 
-Before using OpenAI APIs, ensure you have the following:
+Before using OpenAI APIs, make sure you have the following:
 + **Authentication** – You can authenticate using:
   + Amazon Bedrock API key (required for OpenAI SDK)
   + AWS credentials (supported for HTTP requests)

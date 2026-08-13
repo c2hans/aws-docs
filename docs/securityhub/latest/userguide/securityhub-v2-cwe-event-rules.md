@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 # Configuring rules for EventBridge
 <a name="securityhub-v2-cwe-event-rules"></a>
 
-You can create a rule in Amazon EventBridge that defines an action to take when a **Findings Imported V2** event is received. **Findings Imported V2** events are triggered by updates through [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindingsV2.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindingsV2.html).
+You can create a rule in Amazon EventBridge that defines an action to take when a **Findings Imported V2** event is received. **Findings Imported V2** events are triggered by updates through [`BatchUpdateFindingsV2`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindingsV2.html).
 
 Each rule contains an event pattern, which identifies the events that trigger the rule. The event pattern always contains the event source (`aws.securityhub`) and the event type (**Findings Imported V2**). The event pattern can also specify filters to identify the findings that the rule applies to.
 
@@ -13,7 +13,7 @@ The event rule then identifies the rule targets. The targets are the actions to 
 
 The instructions provided here use the EventBridge console. When you use the console, EventBridge automatically creates the required resource-based policy that enables EventBridge to write to Amazon CloudWatch Logs.
 
-You can also use the [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutRule.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutRule.html) operation of the EventBridge API. However, if you use the EventBridge API, then you must create the resource-based policy. For information about the required policy, see [CloudWatch Logs permissions](https://docs.aws.amazon.com/eventbridge/latest/userguide/resource-based-policies-eventbridge.html#cloudwatchlogs-permissions) in the *Amazon EventBridge User Guide*.
+You can also use the [`PutRule`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutRule.html) operation of the EventBridge API. However, if you use the EventBridge API, then you must create the resource-based policy. For information about the required policy, see [CloudWatch Logs permissions](https://docs.aws.amazon.com/eventbridge/latest/userguide/resource-based-policies-eventbridge.html#cloudwatchlogs-permissions) in the *Amazon EventBridge User Guide*.
 
 ## Format of the event pattern
 <a name="securityhub-cwe-all-findings-rule-format"></a>
@@ -96,4 +96,4 @@ You can use a predefined event pattern or a custom event pattern to create a rul
    For details about creating rules, see [Creating Amazon EventBridge rules that react to events](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule.html) in the *Amazon EventBridge User Guide*.
 
 **Note**
- If you have EventBridge rules defined for findings in Security Hub CSPM, the rules could overlap with rules defined for Security Hub. To avoid sending duplicate findings, evaluate the rules you have defined for Security Hub CSPM to determine if they overlap with rules you are have defined for Security Hub. Where applicable disable any Security Hub CSPM rules that are replaced by Security Hub rules.
+ If you have EventBridge rules defined for findings in Security Hub CSPM, the rules could overlap with rules defined for Security Hub. To avoid sending duplicate findings, evaluate the rules you have defined for Security Hub CSPM to determine if they overlap with rules you have defined for Security Hub. Where applicable, disable any Security Hub CSPM rules that are replaced by Security Hub rules.

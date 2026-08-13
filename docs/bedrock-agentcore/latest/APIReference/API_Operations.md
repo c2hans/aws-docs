@@ -16,6 +16,7 @@ The following actions are supported:
 +  [CreatePaymentSession](API_CreatePaymentSession.md)
 +  [DeleteABTest](API_DeleteABTest.md)
 +  [DeleteBatchEvaluation](API_DeleteBatchEvaluation.md)
++  [DeleteCapacityProviderSession](API_DeleteCapacityProviderSession.md)
 +  [DeleteEvent](API_DeleteEvent.md)
 +  [DeleteMemoryRecord](API_DeleteMemoryRecord.md)
 +  [DeletePaymentInstrument](API_DeletePaymentInstrument.md)

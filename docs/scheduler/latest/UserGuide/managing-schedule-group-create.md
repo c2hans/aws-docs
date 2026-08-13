@@ -51,7 +51,7 @@ You can't edit the `default` schedule group.
 
 1. Open a new command prompt window.
 
-1. From the AWS Command Line Interface (AWS CLI), enter the following [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/create-schedule-group.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/create-schedule-group.html) command to create a new group. This command creates a group with one tag: `environment:development`. You can use this tag or a similar tagging system to label your schedule groups according to the environment they belong to.
+1. From the AWS Command Line Interface (AWS CLI), enter the following [`create-schedule-group`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/create-schedule-group.html) command to create a new group. This command creates a group with one tag: `environment:development`. You can use this tag or a similar tagging system to label your schedule groups according to the environment they belong to.
 
    Replace the schedule name and the tag key and value with your information.
 
@@ -92,7 +92,7 @@ Use the following steps to associate a new schedule with the group you created i
 
 1. Open a new command prompt window.
 
-1. From the AWS Command Line Interface (AWS CLI), enter the following [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/create-schedule.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/create-schedule.html) command. This creates a schedule and associates it with the group from the [previous step](#create-schedule-group), named `sqs-test-schedule`. This schedule uses the templated [Amazon SQS](managing-targets-templated.md#managing-targets-templated-sqs) target type to invoke the `SendMessage` operation. Replace the schedule name, target, and group name with your information.
+1. From the AWS Command Line Interface (AWS CLI), enter the following [`create-schedule`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/create-schedule.html) command. This creates a schedule and associates it with the group from the [previous step](#create-schedule-group), named `sqs-test-schedule`. This schedule uses the templated [Amazon SQS](managing-targets-templated.md#managing-targets-templated-sqs) target type to invoke the `SendMessage` operation. Replace the schedule name, target, and group name with your information.
 
    ```
    $ aws scheduler create-schedule --name {{sqs-test-schedule}} --schedule-expression 'rate(5 minutes)' \

@@ -25,7 +25,7 @@ The request uses the following URI parameters.
  ** [ManagedByAWSBackupOnly](#API_ListRecoveryPointsByResource_RequestSyntax) **   <a name="Backup-ListRecoveryPointsByResource-request-uri-ManagedByAWSBackupOnly"></a>
 This attribute filters recovery points based on ownership.
 If this is set to `TRUE`, the response will contain recovery points associated with the selected resources that are managed by AWS Backup.
-If this is set to `FALSE`, the response will contain all recovery points associated with the selected resource.
+If this is set to `FALSE`, the response will contain all recovery points associated with the selected resource, except for EBS snapshots copied within the same Region and account.
 Type: Boolean
 
  ** [MaxResults](#API_ListRecoveryPointsByResource_RequestSyntax) **   <a name="Backup-ListRecoveryPointsByResource-request-uri-MaxResults"></a>

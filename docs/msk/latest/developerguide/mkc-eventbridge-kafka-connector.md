@@ -86,7 +86,7 @@ In addition, you must make sure that your IAM role for the connector contains th
 ### An EventBridge rule for incoming events
 <a name="mkc-eb-kafka-create-rule"></a>
 
-You create [rules](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html) that match incoming events with event data criteria, known as [https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html). With an event pattern, you can define the criteria to filter incoming events, and determine which events should trigger a particular rule and subsequently be routed to a designated [target](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-targets.html). The following example of an event pattern matches Kafka events sent to the EventBridge event bus.
+You create [rules](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html) that match incoming events with event data criteria, known as [*event pattern*](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html). With an event pattern, you can define the criteria to filter incoming events, and determine which events should trigger a particular rule and subsequently be routed to a designated [target](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-targets.html). The following example of an event pattern matches Kafka events sent to the EventBridge event bus.
 
 ```
 {

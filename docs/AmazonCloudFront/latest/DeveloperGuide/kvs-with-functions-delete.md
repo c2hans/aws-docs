@@ -50,6 +50,6 @@ You can delete your key value store by using the Amazon CloudFront console or AP
 
 1. Verify if the key value stores is associated with a function. If it is, remove the association. For more information on both these steps, see [Update functions](update-function.md).
 
-1. To delete the key value store, use the CloudFront [https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteKeyValueStore.html](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteKeyValueStore.html) API operation.
+1. To delete the key value store, use the CloudFront [DeleteKeyValueStore](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteKeyValueStore.html) API operation.
 
 ------

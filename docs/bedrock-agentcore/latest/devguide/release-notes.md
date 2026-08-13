@@ -10,6 +10,22 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## August 2026
 <a name="_august_2026"></a>
 
+### Memory, policy, and harness are now available in AWS GovCloud (US-West)
+<a name="memory_policy_and_harness_are_now_available_in_shared_aws_govcloud_us_west"></a>
+
+AgentCore memory, policy, and harness are now available in the AWS GovCloud (US-West) Region (`us-gov-west-1`).
+
+You can now give your agents short-term and long-term memory. You can enforce authorization and content policies on agent actions. You can also run agents on the fully managed harness, with no orchestration code and no container to build.
+
+These capabilities join AgentCore runtime, gateway, identity, built-in tools, observability, and evaluations, which were already available in the Region.
+
+For more information about Region support, see [Supported AWS Regions](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-regions.html). For more information about AgentCore in AWS GovCloud (US), see the [AWS GovCloud (US) documentation for AgentCore](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-bedrock-agentcore.html). For more information about Amazon Bedrock AgentCore, see [Amazon Bedrock AgentCore](https://aws.amazon.com/bedrock/agentcore/) on the AWS website.
+
+### Runtime: Instances compute type with capacity providers
+<a name="_runtime_instances_compute_type_with_capacity_providers_2"></a>
+
+AgentCore Runtime now offers the **Instances** compute type. Instances runs your agents on AWS managed Amazon EC2 infrastructure in your own AWS account. You define the compute with a capacity provider, which specifies the operating system, allowed instance types, networking, and storage. AgentCore handles provisioning, scaling, and teardown. Instances support persistent sessions of up to 14 days and GPU-accelerated instance types. Multiple agents can collaborate on a shared instance. Your data stays in your account, and you can apply existing Savings Plans and On-Demand Capacity Reservations (ODCRs). At launch, Instances support Linux on `x86_64` and `arm64`. See [Run agents on Instances with capacity providers](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-instances-how-it-works.html).
+
 ### AWS Agent Registry launches under the new `agent-registry` namespace
 <a name="shared_aws_agent_registry_launches_under_the_new_agent_registry_namespace"></a>
 
@@ -32,6 +48,19 @@ Multiple limits can be configured on a single gateway and are evaluated using AN
 Rate limit configuration changes propagate to the data plane fleet within 30 seconds. The system fails open on transient errors — individual enforcement failures allow the affected request rather than blocking customer traffic.
 
 Six API operations manage rate limits: `CreateRateLimit`, `GetRateLimit`, `UpdateRateLimit`, `DeleteRateLimit`, `ListRateLimits`, and `BatchPutRateLimitEntries`. See [Configure rate limits for your AgentCore gateway](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-rate-limits.html).
+
+### Amazon Bedrock AgentCore Runtime: Simplified and increased API rate quotas
+<a name="_amazon_bedrock_agentcore_runtime_simplified_and_increased_api_rate_quotas_2"></a>
+
+Amazon Bedrock AgentCore Runtime now consolidates its API rate quotas into a smaller set of shared limits with higher default values, making them easier to understand and to scale against.
+
+Data plane requests, including `InvokeAgentRuntime`, now share a single adjustable quota of 1,000 TPS per account, increased from the previous limit of 200 TPS. This single quota is shared across all data plane APIs rather than enforced for each API.
+
+New session creation is now a single adjustable quota of 25 TPS per account, shared across all endpoints. It unifies and replaces the previous per-endpoint limits of 400 transactions per minute for container-image agents and 25 TPS for direct code deployment agents.
+
+Control plane requests are grouped into three shared, non-adjustable quotas, each shared across all APIs in its group rather than enforced for each API: mutation APIs at 50 TPS, Get APIs at 150 TPS, and List APIs at 25 TPS.
+
+Resource quotas (such as active session workloads, agents, versions, and endpoints per account), invocation limits, session storage limits, and lifecycle limits remain unchanged.
 
 ## July 2026
 <a name="_july_2026"></a>
@@ -81,10 +110,7 @@ Each framework has its own page covering how to instrument your agent, how spans
 ### Runtime and Built-in Tools: ActiveSessionCount Metric
 <a name="_runtime_and_built_in_tools_activesessioncount_metric_2"></a>
 
-AgentCore runtime and built-in tools now publish an `ActiveSessionCount` metric directly to your AWS account in the `AWS/Bedrock-AgentCore` CloudWatch namespace. This real-time gauge shows how many sessions are currently active, published once per minute per service type. Use the `Service` dimension — with values `AgentCore.Runtime`, `AgentCore.CodeInterpreter`, or `AgentCore.Browser` — to filter by workload type. Use this metric to monitor capacity utilization, set CloudWatch alarms for unexpected usage spikes, and understand your session quota consumption. Available in all AWS Regions where AgentCore runtime is available. See [AgentCore runtime metrics](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-runtime-metrics.html).
-
-## June 2026
-<a name="_june_2026"></a>
+AgentCore runtime and built-in tools now publish an `ActiveSessionCount` metric directly to your AWS account in the `AWS/Bedrock-AgentCore` CloudWatch namespace. This real-time gauge shows how many sessions are currently active, published once per minute per service type. Use the `Service` dimension — with values `AgentCore.Runtime`, `AgentCore.CodeInterpreter`, or `AgentCore.Browser` — to filter by workload type. Use this metric to monitor capacity utilization, set CloudWatch alarms for unexpected usage spikes, and understand your session quota consumption. Available in all AWS Regions where AgentCore runtime is available. See [AgentCore runtime metrics](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-runtime-metrics.html). == June 2026
 
 ### Runtime: Increased Default Service Quotas
 <a name="_runtime_increased_default_service_quotas_2"></a>

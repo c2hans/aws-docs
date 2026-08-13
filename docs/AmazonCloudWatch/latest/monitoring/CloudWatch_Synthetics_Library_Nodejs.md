@@ -106,7 +106,7 @@ The following earlier runtime versions for Node.js are still supported.
 
  **Changes in syn-nodejs-3.1**
 + Synthetics runtime namespace migration.
-+ Type definition is available in [npm Registry](https://www.npmjs.com/package/@aws/synthetics-core). Please ensure the type definition package version matches your canary's runtime version.
++ Type definition is available in [npm Registry](https://www.npmjs.com/package/@aws/synthetics-core). Please make sure the type definition package version matches your canary's runtime version.
 
 ### syn-nodejs-3.0
 <a name="Synthetics_runtimeversion-syn-nodejs-3.0"></a>

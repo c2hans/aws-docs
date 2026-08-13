@@ -12,7 +12,7 @@ The AWS SDK for C\+\+ provides a modern C\+\+ (version C\+\+ 11 or later) interf
 [Getting started with the AWS SDK for C\+\+](getting-started.md)
 
 **Note**
-The AWS IoT SDKs and the `aws-iot-device-sdk-cpp` are separate from this SDK. The AWS IoT Device SDK for C\+\+ v2 is available at [https://github.com/aws/aws-iot-device-sdk-cpp-v2](https://github.com/aws/aws-iot-device-sdk-cpp-v2) on GitHub.
+The AWS IoT SDKs and the `aws-iot-device-sdk-cpp` are separate from this SDK. The AWS IoT Device SDK for C\+\+ v2 is available at [`aws-iot-device-sdk-cpp-v2`](https://github.com/aws/aws-iot-device-sdk-cpp-v2) on GitHub.
 For more information about AWS IoT, see [What is AWS IoT](https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html) in the AWS IoT Developer Guide.
 
 ## Additional documentation and resources

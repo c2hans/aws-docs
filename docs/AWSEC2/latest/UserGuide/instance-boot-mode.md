@@ -28,7 +28,7 @@ When an instance is launched, the value for its boot mode parameter is determine
 #### [ AWS CLI ]
 
 **To determine the boot mode of an instance**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command to determine the boot mode of an instance. You can also determine the boot mode of the AMI that was used to the create the instance.
+Use the [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command to determine the boot mode of an instance. You can also determine the boot mode of the AMI that was used to the create the instance.
 
 ```
 aws ec2 describe-instances \
@@ -48,7 +48,7 @@ uefi
 #### [ PowerShell ]
 
 **To determine the boot mode of an instance**
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet to determine the boot mode of an instance. You can also determine the boot mode of the AMI that was used to the create the instance.
+Use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet to determine the boot mode of an instance. You can also determine the boot mode of the AMI that was used to the create the instance.
 
 ```
 (Get-EC2Instance `

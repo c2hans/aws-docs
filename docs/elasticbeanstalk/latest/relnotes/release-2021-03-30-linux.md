@@ -17,15 +17,26 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **March 12, 2021** to all Amazon Linux AMI platforms.<br />The **Go** release is a security release. For more information, see **Platform-specific updates** in this table. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2021-03-30-linux.html) |
-| **Multicontainer Docker** | Updated the ECS agent to version **1.50.3**. |
-| **Go** | Updated Go to release **1.16.2**. For details, see [go1.16](https://golang.org/doc/devel/release.html#go1.16) in *The Go Programming Language Release History*.<br />The Go 1.16.1 release (included in this platform update) is a security release. |
-| **Java SE**, **Tomcat** | Updated Java 8 to OpenJDK Version **1.8.0.282**.<br />Updated Tomcat 8.5 to [Tomcat 8.5.63](https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.63_(markt)). |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>March 12, 2021</b> to all Amazon Linux AMI platforms.<br />The <b>Go</b> release is a security release. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Multicontainer Docker</b></td><td>Updated the ECS agent to version <b>1.50.3</b>.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated Go to release <b>1.16.2</b>. For details, see <a href="https://golang.org/doc/devel/release.html#go1.16">go1.16</a> in <i>The Go Programming Language Release History</i>.<br />The Go 1.16.1 release (included in this platform update) is a security release.</td></tr>
+  <tr><td><b>Java SE</b>, <b>Tomcat</b></td><td>Updated Java 8 to OpenJDK Version <b>1.8.0.282</b>.<br />Updated Tomcat 8.5 to <a href="https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.63_(markt)">Tomcat 8.5.63</a>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2021-03-30-linux.platforms"></a>

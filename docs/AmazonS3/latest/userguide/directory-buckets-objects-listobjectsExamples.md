@@ -16,4 +16,4 @@ The following `list-objects-v2` example command shows how you can use the AWS CL
 aws s3api list-objects-v2 --bucket {{bucket-base-name}}--{{zone-id}}--x-s3
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-objects-v2.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-objects-v2.html) in the *AWS CLI Command Reference*.
+For more information, see [list-objects-v2](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-objects-v2.html) in the *AWS CLI Command Reference*.

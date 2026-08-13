@@ -60,7 +60,7 @@ For Tomcat, add a `<filter>` to your project's `web.xml` file. Use the `fixedNam
 ## Adding a tracing filter to your application (spring)
 <a name="xray-sdk-java-filters-spring"></a>
 
-For Spring, add a `Filter` to your `WebConfig` class. Pass the segment name to the [https://docs.aws.amazon.com/xray-sdk-for-java/latest/javadoc/com/amazonaws/xray/javax/servlet/AWSXRayServletFilter.html](https://docs.aws.amazon.com/xray-sdk-for-java/latest/javadoc/com/amazonaws/xray/javax/servlet/AWSXRayServletFilter.html) constructor as a string.
+For Spring, add a `Filter` to your `WebConfig` class. Pass the segment name to the [`AWSXRayServletFilter`](https://docs.aws.amazon.com/xray-sdk-for-java/latest/javadoc/com/amazonaws/xray/javax/servlet/AWSXRayServletFilter.html) constructor as a string.
 
 **Example src/main/java/myapp/WebConfig.java - spring**
 
@@ -92,7 +92,7 @@ If your application serves requests for multiple domains, you can configure the 
 
 For example, you might have a single application serving requests to three subdomains– `www.example.com`, `api.example.com`, and `static.example.com`. You can use a dynamic naming strategy with the pattern `*.example.com` to identify segments for each subdomain with a different name, resulting in three service nodes on the service map. If your application receives requests with a hostname that doesn't match the pattern, you will see a fourth node on the service map with a fallback name that you specify.
 
-To use the same name for all request segments, specify the name of your application when you initialize the servlet filter, as shown in [the previous section](#xray-sdk-java-filters-tomcat). This has the same effect as creating a fixed [SegmentNamingStrategy](https://docs.aws.amazon.com/xray-sdk-for-java/latest/javadoc/com/amazonaws/xray/strategy/SegmentNamingStrategy.html) by calling `SegmentNamingStrategy.fixed()` and passing it to the [https://docs.aws.amazon.com/xray-sdk-for-java/latest/javadoc/com/amazonaws/xray/javax/servlet/AWSXRayServletFilter.html](https://docs.aws.amazon.com/xray-sdk-for-java/latest/javadoc/com/amazonaws/xray/javax/servlet/AWSXRayServletFilter.html) constructor.
+To use the same name for all request segments, specify the name of your application when you initialize the servlet filter, as shown in [the previous section](#xray-sdk-java-filters-tomcat). This has the same effect as creating a fixed [SegmentNamingStrategy](https://docs.aws.amazon.com/xray-sdk-for-java/latest/javadoc/com/amazonaws/xray/strategy/SegmentNamingStrategy.html) by calling `SegmentNamingStrategy.fixed()` and passing it to the [`AWSXRayServletFilter`](https://docs.aws.amazon.com/xray-sdk-for-java/latest/javadoc/com/amazonaws/xray/javax/servlet/AWSXRayServletFilter.html) constructor.
 
 **Note**
 You can override the default service name that you define in code with the `AWS_XRAY_TRACING_NAME` [environment variable](xray-sdk-java-configuration.md#xray-sdk-java-configuration-envvars).

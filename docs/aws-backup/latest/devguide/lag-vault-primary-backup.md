@@ -146,7 +146,7 @@ The logically air-gapped vault must be in the same account and Region as your ba
 ------
 #### [ AWS CLI ]
 
-Use the CLI command [https://docs.aws.amazon.com/aws-backup/latest/devguide/creating-a-backup-plan.html#create-backup-plan-cli](https://docs.aws.amazon.com/aws-backup/latest/devguide/creating-a-backup-plan.html#create-backup-plan-cli) to create a new plan, or [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UpdateBackupPlan.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UpdateBackupPlan.html) to update an existing plan, and include the `TargetLogicallyAirGappedBackupVaultArn` parameter in your backup rule.
+Use the CLI command [`create-backup-plan`](https://docs.aws.amazon.com/aws-backup/latest/devguide/creating-a-backup-plan.html#create-backup-plan-cli) to create a new plan, or [`update-backup-plan`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UpdateBackupPlan.html) to update an existing plan, and include the `TargetLogicallyAirGappedBackupVaultArn` parameter in your backup rule.
 
 Example CLI command to create a backup plan using a JSON document:
 
@@ -224,7 +224,7 @@ You can monitor the status of your backups and copy jobs using the AWS Backup co
 ### Monitor for Backup Jobs
 <a name="lag-primary-backup-monitor-backup-jobs"></a>
 
-Monitor backup job status ([https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeBackupJob.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeBackupJob.html)) to ensure your resources remain protected. A failed backup job indicates no recovery point was created.
+Monitor backup job status ([`DescribeBackupJob`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeBackupJob.html)) to ensure your resources remain protected. A failed backup job indicates no recovery point was created.
 + **Verify recovery point creation location** - When a backup job completes successfully, you have a recovery point in either your target backup vault or your target logically air-gapped vault. Check the `BackupVaultArn` field to determine where the recovery point was created.
 + **Verify job status** - If a resource is not supported by logically air-gapped vaults, the backup job completes with a `MessageCategory` of `LOGICALLY_AIR_GAPPED_BACKUP_VAULT_NOT_SUPPORTED` and a status message explaining why the backup was created in your backup vault instead.
 + **Verify temporary recovery point type** - To check if a recovery point is temporary, look for the `RecoveryPointLifecycle.DeleteAfterEvent` field with a value of `DELETE_AFTER_COPY`.
@@ -232,9 +232,9 @@ Monitor backup job status ([https://docs.aws.amazon.com/aws-backup/latest/devgui
 ### Monitor for Copy Jobs
 <a name="lag-primary-backup-monitor-copy-jobs"></a>
 
-Monitor copy jobs ([https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListCopyJobs.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListCopyJobs.html)) to your logically air-gapped vault for failures. A failed copy job means your recovery point remains in your standard backup vault without logically air-gapped vault protection.
+Monitor copy jobs ([`ListCopyJobs`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListCopyJobs.html)) to your logically air-gapped vault for failures. A failed copy job means your recovery point remains in your standard backup vault without logically air-gapped vault protection.
 + **Verify copy job status** - You can monitor copy job status using the existing `Copy Job State Change` EventBridge event. Optionally, filter on the destination vault (`destinationBackupVaultArn`) to focus on logically air-gapped vault copies.
-+ **Verify copies for a source recovery point** - Use the [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListCopyJobs.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListCopyJobs.html) API with the new `BySourceRecoveryPointArn` filter to find all copy jobs associated with a specific recovery point, including both automatic copies to your logically air-gapped vault and scheduled copies to other destinations.
++ **Verify copies for a source recovery point** - Use the [`ListCopyJobs`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListCopyJobs.html) API with the new `BySourceRecoveryPointArn` filter to find all copy jobs associated with a specific recovery point, including both automatic copies to your logically air-gapped vault and scheduled copies to other destinations.
 + **Verify deletion of temporary recovery point** - Track completion of temporary recovery point deletion. If the copy job state is `RUNNING`, the recovery point has not yet been deleted. If the copy to your logically air-gapped vault has `FAILED`, the recovery point will be retained per your specified retention period.
 
 **Note**
@@ -243,7 +243,7 @@ Copy job records expire and are removed 30 days after they finish. After this pe
 ### Monitor for Recovery point
 <a name="lag-primary-backup-monitor-recovery-points"></a>
 
-Monitor for `EXPIRED` recovery points ([https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListRecoveryPointsByBackupVault.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListRecoveryPointsByBackupVault.html)), which may indicate AWS Backup could not delete them (possibly due to missing permissions). `EXPIRED` recovery points can have cost implications.
+Monitor for `EXPIRED` recovery points ([`ListRecoveryPointsByBackupVault`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListRecoveryPointsByBackupVault.html)), which may indicate AWS Backup could not delete them (possibly due to missing permissions). `EXPIRED` recovery points can have cost implications.
 + **Verify recovery point state** - Use the existing Recovery Point State Change EventBridge event to monitor expirations.
 + **Verify deletion of temporary recovery point** - If a recovery point with `DeleteAfterEvent: DELETE_AFTER_COPY` has not been deleted, use the `ListCopyJobs` API to determine the reason, as mentioned above.
 

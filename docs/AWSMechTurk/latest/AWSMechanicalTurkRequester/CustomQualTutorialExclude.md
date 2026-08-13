@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkRequ
 # Tutorial: Creating a qualification type to exclude workers from selected tasks
 <a name="CustomQualTutorialExclude"></a>
 
-In the following example, we create a qualification type that describes a group of workers that have demonstrated they don't perform well at our tasks and excludes them in our qualification requirements. To start, we use the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateQualificationTypeOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateQualificationTypeOperation.html) operation to create the type with which we want to work.
+In the following example, we create a qualification type that describes a group of workers that have demonstrated they don't perform well at our tasks and excludes them in our qualification requirements. To start, we use the [`CreateQualificationType`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateQualificationTypeOperation.html) operation to create the type with which we want to work.
 
 ```
 {

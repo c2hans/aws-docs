@@ -49,7 +49,7 @@ During hyperparameter tuning, SageMaker AI attempts to infer if your hyperparame
 ## Choosing the best number of parallel training jobs
 <a name="automatic-model-tuning-parallelism"></a>
 
-You can use the results of previous trials to improve the performance of subsequent trials. Choose the largest number of parallel jobs that would provide a meaningful incremental result that is also within your region and account compute constraints. Use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ResourceLimits.html#MaxParallelTrainingJobs](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ResourceLimits.html#MaxParallelTrainingJobs) field to limit the number of training jobs that a hyperparameter tuning job can launch in parallel. For more information, see [Running multiple HPO jobs in parallel on Amazon SageMaker AI](https://aws.amazon.com/blogs/machine-learning/running-multiple-hpo-jobs-in-parallel-on-amazon-sagemaker).
+You can use the results of previous trials to improve the performance of subsequent trials. Choose the largest number of parallel jobs that would provide a meaningful incremental result that is also within your region and account compute constraints. Use the [`MaxParallelTrainingJobs`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ResourceLimits.html#MaxParallelTrainingJobs) field to limit the number of training jobs that a hyperparameter tuning job can launch in parallel. For more information, see [Running multiple HPO jobs in parallel on Amazon SageMaker AI](https://aws.amazon.com/blogs/machine-learning/running-multiple-hpo-jobs-in-parallel-on-amazon-sagemaker).
 
 ## Running training jobs on multiple instances
 <a name="automatic-model-tuning-distributed-metrics"></a>

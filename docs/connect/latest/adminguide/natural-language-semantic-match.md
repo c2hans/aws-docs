@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/natural-langua
 # Use Generative AI to semantically match contacts with natural language statements
 <a name="natural-language-semantic-match"></a>
 
-Within a Contact Lens **conversational analytics** rule, you have the option to specify a **Natural language - semantic match** condition that uses generative AI to find contacts that match a natural language statement. Natural language - Semantic match is used when you want to match contacts with context-specific criteria (for example, the customer's issue was resolved during the call) or when there are too many possible words or phrases to use the **Words or phrases** conditions.
+Within a conversational analytics **conversational analytics** rule, you have the option to specify a **Natural language - semantic match** condition that uses generative AI to find contacts that match a natural language statement. Natural language - Semantic match is used when you want to match contacts with context-specific criteria (for example, the customer's issue was resolved during the call) or when there are too many possible words or phrases to use the **Words or phrases** conditions.
 
 Pro Tip: Use generative AI-powered Natural language- Semantic match if you previously used Words or Phrases - Semantic Match.
 
@@ -21,7 +21,7 @@ Pro Tip: Use generative AI-powered Natural language- Semantic match if you previ
 1. Then select **Create a Rule** and choose **Conversational analytics**.
 ![Import from word collection option in the UI.](http://docs.aws.amazon.com/connect/latest/adminguide/images/create-natural-semantic-match-rule.png)
 
-1. Select either "A Contact Lens post-call analysis is available" or "A Contact Lens post-chat analysis is available".
+1. Select either "A conversational analytics post-call analysis is available" or "A conversational analytics post-chat analysis is available".
 
 1. Select **Add condition** and then choose **Natural language - semantic match**.
 ![Import from word collection option in the UI.](http://docs.aws.amazon.com/connect/latest/adminguide/images/choose-natural-semantic-match.png)

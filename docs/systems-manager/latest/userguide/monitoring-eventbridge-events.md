@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/monitor
 # Monitoring Systems Manager events with Amazon EventBridge
 <a name="monitoring-eventbridge-events"></a>
 
-Amazon EventBridge is a serverless event bus service that allows you to connect your applications with data from a variety of sources. EventBridge delivers a stream of real-time data from your own applications, software-as-a-service (SaaS) applications, and AWS services and routes that data to targets such as AWS Lambda. You can set up routing rules to determine where to send your data to build application architectures that react in real time to all of your data sources. EventBridge allows you to build event driven architectures, which are loosely coupled and distributed.
+Amazon EventBridge is a serverless event bus service that lets you connect your applications with data from a variety of sources. EventBridge delivers a stream of real-time data from your own applications, software-as-a-service (SaaS) applications, and AWS services and routes that data to targets such as AWS Lambda. You can set up routing rules to determine where to send your data to build application architectures that react in real time to all of your data sources. EventBridge lets you build event driven architectures, which are loosely coupled and distributed.
 
 EventBridge was formerly called Amazon CloudWatch Events. EventBridge includes new features that allow you to receive events from SaaS partners and your own applications. Existing CloudWatch Events users can access their existing default bus, rules, and events in the new EventBridge console and in the CloudWatch Events console. EventBridge uses the same CloudWatch Events API, so all of your existing CloudWatch Events API usage remains the same.
 
@@ -45,7 +45,7 @@ EventBridge supports the following three Systems Manager tools as targets of an 
 
 For suggested ways you might use these targets, see [Sample scenarios: Systems Manager targets in Amazon EventBridge rules](monitoring-systems-manager-targets.md).
 
-For more information about how to get started with EventBridge and set up rules, see [Getting started with Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-get-started.html) in the *Amazon EventBridge User Guide*. For complete information about working with EventBridge, see the [https://docs.aws.amazon.com/eventbridge/latest/userguide/](https://docs.aws.amazon.com/eventbridge/latest/userguide/).
+For more information about how to get started with EventBridge and set up rules, see [Getting started with Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-get-started.html) in the *Amazon EventBridge User Guide*. For complete information about working with EventBridge, see the [*Amazon EventBridge User Guide*](https://docs.aws.amazon.com/eventbridge/latest/userguide/).
 
 **Topics**
 + [Configuring EventBridge for Systems Manager events](monitoring-systems-manager-events.md)

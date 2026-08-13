@@ -347,7 +347,7 @@ You can use the `files` key to create files on the EC2 instance. The content can
 | `owner` | The name of the owning user for this file. Not supported for Windows systems. |
 | `mode` | A six-digit octal value representing the mode for this file. Not supported for Windows systems. Use the first three digits for symlinks and the last three digits for setting permissions. To create a symlink, specify **120{{xxx}}**, where `xxx` defines the permissions of the target file. To specify permissions for a file, use the last three digits, such as **000644**. |
 | `authentication` | The name of an authentication method to use. This overrides any default authentication. You can use this property to select an authentication method you define with the [`AWS::CloudFormation::Authentication`](aws-resource-authentication.md) resource. |
-| `context` | Specifies a context for files that are to be processed as [Mustache templates](https://mustache.github.io/mustache.5.html). To use this key, you must have installed `aws-cfn-bootstrap` 1.3 –11 or later in addition to [https://github.com/defunkt/pystache](https://github.com/defunkt/pystache). |
+| `context` | Specifies a context for files that are to be processed as [Mustache templates](https://mustache.github.io/mustache.5.html). To use this key, you must have installed `aws-cfn-bootstrap` 1.3 –11 or later in addition to [pystache](https://github.com/defunkt/pystache). |
 
 ### Examples
 <a name="w2aac19c23c19c15b7"></a>

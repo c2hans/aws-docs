@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DeleteSn
 You can delete DB snapshots managed by Amazon RDS when you no longer need them.
 
 **Note**
-To delete backups managed by AWS Backup, use the AWS Backup console. For information about AWS Backup, see the [https://docs.aws.amazon.com/aws-backup/latest/devguide](https://docs.aws.amazon.com/aws-backup/latest/devguide).
+To delete backups managed by AWS Backup, use the AWS Backup console. For information about AWS Backup, see the [*AWS Backup Developer Guide*](https://docs.aws.amazon.com/aws-backup/latest/devguide).
 
 ## Deleting a DB snapshot
 <a name="USER_DeleteRDSSnapshot"></a>

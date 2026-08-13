@@ -584,7 +584,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [CopyWorkspaceImage](https://docs.aws.amazon.com/workspaces/latest/api/API_CopyWorkspaceImage.html)  **
   - **Description:** Grants permission to copy a WorkSpace image
   - **Resource types (\*required):** [workspaceimage\*](#list_workspaces-resource-workspaceimage)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_workspaces-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_workspaces-aws_TagKeys)
   - **Access level:** Write
 
 - **   [CreateAccountLinkInvitation](https://docs.aws.amazon.com/workspaces/latest/api/API_CreateAccountLinkInvitation.html)  **
@@ -613,8 +613,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [CreateStandbyWorkspaces](https://docs.aws.amazon.com/workspaces/latest/api/API_CreateStandbyWorkspaces.html)  **
   - **Description:** Grants permission to create one or more Standby WorkSpaces
-  - **Resource types (\*required):** [directoryid\*](#list_workspaces-resource-directoryid)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [directoryid\*](#list_workspaces-resource-directoryid) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [workspaceid\*](#list_workspaces-resource-workspaceid) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_workspaces-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_workspaces-aws_TagKeys)
   - **Access level:** Write
 
 - **   [CreateTags](https://docs.aws.amazon.com/workspaces/latest/api/API_CreateTags.html)  **
@@ -626,31 +626,33 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [CreateUpdatedWorkspaceImage](https://docs.aws.amazon.com/workspaces/latest/api/API_CreateUpdatedWorkspaceImage.html)  **
   - **Description:** Grants permission to create an updated WorkSpace image
   - **Resource types (\*required):** [workspaceimage\*](#list_workspaces-resource-workspaceimage)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_workspaces-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_workspaces-aws_TagKeys)
   - **Access level:** Write
 
 - **   [CreateWorkspaceBundle](https://docs.aws.amazon.com/workspaces/latest/api/API_CreateWorkspaceBundle.html)  **
   - **Description:** Grants permission to create a WorkSpace bundle
-  - **Resource types (\*required):** [workspaceimage\*](#list_workspaces-resource-workspaceimage)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [workspacebundle\*](#list_workspaces-resource-workspacebundle) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_workspaces-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_workspaces-aws_TagKeys)
+  - **Resource types (\*required):** [workspaceimage\*](#list_workspaces-resource-workspaceimage) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [CreateWorkspaceImage](https://docs.aws.amazon.com/workspaces/latest/api/API_CreateWorkspaceImage.html)  **
   - **Description:** Grants permission to create a new WorkSpace image
-  - **Resource types (\*required):** [workspaceid\*](#list_workspaces-resource-workspaceid)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [workspaceid\*](#list_workspaces-resource-workspaceid) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [workspaceimage\*](#list_workspaces-resource-workspaceimage) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_workspaces-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_workspaces-aws_TagKeys)
   - **Access level:** Write
 
 - **   [CreateWorkspaces](https://docs.aws.amazon.com/workspaces/latest/api/API_CreateWorkspaces.html)  **
   - **Description:** Grants permission to create one or more WorkSpaces
   - **Resource types (\*required):** [directoryid\*](#list_workspaces-resource-directoryid) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [workspacebundle\*](#list_workspaces-resource-workspacebundle) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [workspaceid\*](#list_workspaces-resource-workspaceid) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_workspaces-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_workspaces-aws_TagKeys)
   - **Access level:** Write
 
 - **   [CreateWorkspacesPool](https://docs.aws.amazon.com/workspaces/latest/api/API_CreateWorkspacesPool.html)  **
   - **Description:** Grants permission to create a WorkSpaces Pool
   - **Resource types (\*required):** [directoryid\*](#list_workspaces-resource-directoryid) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [workspacebundle\*](#list_workspaces-resource-workspacebundle) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [workspacespool\*](#list_workspaces-resource-workspacespool) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_workspaces-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_workspaces-aws_TagKeys)
   - **Access level:** Write
 
 - **   [DeleteAccountLinkInvitation](https://docs.aws.amazon.com/workspaces/latest/api/API_DeleteAccountLinkInvitation.html)  **
@@ -890,13 +892,13 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [ImportCustomWorkspaceImage](https://docs.aws.amazon.com/workspaces/latest/api/API_ImportCustomWorkspaceImage.html)  **
   - **Description:** Grants permission to import Bring Your Own License (BYOL) images into Amazon WorkSpaces
   - **Resource types (\*required):**
-  - **Condition keys:**
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_workspaces-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_workspaces-aws_TagKeys)
   - **Access level:** Write
 
 - **   [ImportWorkspaceImage](https://docs.aws.amazon.com/workspaces/latest/api/API_ImportWorkspaceImage.html)  **
   - **Description:** Grants permission to import Bring Your Own License (BYOL) images into Amazon WorkSpaces
   - **Resource types (\*required):**
-  - **Condition keys:**
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_workspaces-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_workspaces-aws_TagKeys)
   - **Access level:** Write
 
 - **   [ListAccountLinks](https://docs.aws.amazon.com/workspaces/latest/api/API_ListAccountLinks.html)  **

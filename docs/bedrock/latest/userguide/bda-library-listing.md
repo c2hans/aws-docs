@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-library-lis
 # Listing Libraries
 <a name="bda-library-listing"></a>
 
-Use the [ListDataAutomationLibraries](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-automation_ListDataAutomationLibraries.html) api to retrieve the list of libraries.
+Use the [ListDataAutomationLibraries](bedrock/latest/APIReference/API_data-automation_ListDataAutomationLibraries.html) API to retrieve the list of libraries.
 
 ## AWS CLI Example:
 <a name="bda-library-listing-cli"></a>

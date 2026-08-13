@@ -41,7 +41,7 @@ Choose a preferred method to disassociate (remove) a member account from your or
 ------
 #### [ API ]
 
-1. To retrieve the account ID for the member account that you want to remove, use the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListMembers.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListMembers.html) API. Include the `OnlyAssociated` parameter in your request. If you set this parameter's value to `true`, GuardDuty returns a `members` array that provides details about only those accounts that are currently GuardDuty members.
+1. To retrieve the account ID for the member account that you want to remove, use the [ListMembers](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListMembers.html) API. Include the `OnlyAssociated` parameter in your request. If you set this parameter's value to `true`, GuardDuty returns a `members` array that provides details about only those accounts that are currently GuardDuty members.
 
    Alternatively, you can use AWS Command Line Interface (AWS CLI) to run the following command:
 
@@ -51,7 +51,7 @@ Choose a preferred method to disassociate (remove) a member account from your or
 
    Replace {{us-east-1}} by the Region where you want to remove this account.
 
-1. To remove one or more GuardDuty member accounts, run [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DisassociateMembers.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DisassociateMembers.html) to remove the member account that is associated with the administrator account.
+1. To remove one or more GuardDuty member accounts, run [DisassociateMembers](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DisassociateMembers.html) to remove the member account that is associated with the administrator account.
 
    Alternatively, you can use AWS CLI to run the following command:
 

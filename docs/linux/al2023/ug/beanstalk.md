@@ -11,6 +11,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/beanstalk.html
 
  Elastic Beanstalk Linux platforms use Amazon EC2 instances, and these instances run Amazon Linux. As of August 4, 2023, Elastic Beanstalk offers the following platform branches based on Amazon Linux 2023: Docker, Tomcat, Java SE, Node.js, PHP, and Python. Elastic Beanstalk is working on releasing support for AL2023 to more Elastic Beanstalk platforms.
 
- The full list of Elastic Beanstalk platform support and current platforms built on top of AL2023 can be found in the [Elastic Beanstalk Linux platforms](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-linux.html) section of the [https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome).
+ The full list of Elastic Beanstalk platform support and current platforms built on top of AL2023 can be found in the [Elastic Beanstalk Linux platforms](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-linux.html) section of the [*Elastic Beanstalk Developer Guide*](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome).
 
  You can find the Release Notes for new Elastic Beanstalk platforms and versions of existing platforms in the [Elastic Beanstalk Release Notes](https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/relnotes.html).

@@ -146,9 +146,9 @@ You can view and manage tags for your state machines in the Step Functions conso
 <a name="tagging-api"></a>
 
 To manage tags using the Step Functions API, use the following API actions:
-+ [https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListTagsForResource.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListTagsForResource.html)
-+ [https://docs.aws.amazon.com/step-functions/latest/apireference/API_TagResource.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_TagResource.html)
-+ [https://docs.aws.amazon.com/step-functions/latest/apireference/API_UntagResource.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_UntagResource.html)
++ [`ListTagsForResource`](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListTagsForResource.html)
++ [`TagResource`](https://docs.aws.amazon.com/step-functions/latest/apireference/API_TagResource.html)
++ [`UntagResource`](https://docs.aws.amazon.com/step-functions/latest/apireference/API_UntagResource.html)
 
 ## Using timeouts to avoid stuck Step Functions workflow executions
 <a name="sfn-stuck-execution"></a>
@@ -309,7 +309,7 @@ For more information, see the following:
 ## Avoiding latency when polling for activity tasks
 <a name="bp-activity-pollers"></a>
 
-The `[GetActivityTask](https://docs.aws.amazon.com/step-functions/latest/apireference/API_GetActivityTask.html)` API is designed to provide a [https://docs.aws.amazon.com/step-functions/latest/apireference/API_GetActivityTask.html#StepFunctions-GetActivityTask-response-taskToken](https://docs.aws.amazon.com/step-functions/latest/apireference/API_GetActivityTask.html#StepFunctions-GetActivityTask-response-taskToken) *exactly once*. If a `taskToken` is dropped while communicating with an activity worker, a number of `GetActivityTask` requests can be blocked for 60 seconds waiting for a response until `GetActivityTask` times out.
+The `[GetActivityTask](https://docs.aws.amazon.com/step-functions/latest/apireference/API_GetActivityTask.html)` API is designed to provide a [`taskToken`](https://docs.aws.amazon.com/step-functions/latest/apireference/API_GetActivityTask.html#StepFunctions-GetActivityTask-response-taskToken) *exactly once*. If a `taskToken` is dropped while communicating with an activity worker, a number of `GetActivityTask` requests can be blocked for 60 seconds waiting for a response until `GetActivityTask` times out.
 
 If you only have a small number of polls waiting for a response, it's possible that all requests will queue up behind the blocked request and stop. However, if you have a large number of outstanding polls for each activity Amazon Resource Name (ARN), and some percentage of your requests are stuck waiting, there will be many more that can still get a `taskToken` and begin to process work.
 

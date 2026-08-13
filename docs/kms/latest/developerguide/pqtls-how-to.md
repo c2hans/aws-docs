@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/pqtls-how-to.h
 
 In this procedure, add a Maven dependency for the AWS Common Runtime HTTP Client. Next, configure an HTTP client that prefers post-quantum TLS. Then, create an AWS KMS client that uses the HTTP client.
 
-To see a complete working examples of configuring and using hybrid post-quantum TLS with AWS KMS, see the [https://github.com/aws-samples/aws-kms-pq-tls-example](https://github.com/aws-samples/aws-kms-pq-tls-example) repository.
+To see a complete working examples of configuring and using hybrid post-quantum TLS with AWS KMS, see the [aws-kms-pq-tls-example](https://github.com/aws-samples/aws-kms-pq-tls-example) repository.
 
 **Note**
 The AWS Common Runtime HTTP Client, which has been available as a preview, became generally available in February 2023. In that release, the `tlsCipherPreference` class and the `tlsCipherPreference()` method parameter are replaced by the `postQuantumTlsEnabled()` method parameter. If you were using this example during the preview, you need to update your code.
@@ -26,7 +26,7 @@ The AWS Common Runtime HTTP Client, which has been available as a preview, becam
 
 1. To enable the hybrid post-quantum cipher suites, add the AWS SDK for Java 2.x to your project and initialize it. Then enable the hybrid post-quantum cipher suites on your HTTP client as shown in the following example.
 
-   This code uses the `postQuantumTlsEnabled()` method parameter to configure an [AWS common runtime HTTP client](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http-configuration-crt.html) that prefers the recommended hybrid post-quantum cipher suite, ECDH with ML-KEM. Then it uses the configured HTTP client to build an instance of the AWS KMS asynchronous client, [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/kms/KmsAsyncClient.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/kms/KmsAsyncClient.html). After this code completes, all [AWS KMS API](https://docs.aws.amazon.com/kms/latest/APIReference/) requests on the `KmsAsyncClient` instance use hybrid post-quantum TLS.
+   This code uses the `postQuantumTlsEnabled()` method parameter to configure an [AWS common runtime HTTP client](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http-configuration-crt.html) that prefers the recommended hybrid post-quantum cipher suite, ECDH with ML-KEM. Then it uses the configured HTTP client to build an instance of the AWS KMS asynchronous client, [`KmsAsyncClient`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/kms/KmsAsyncClient.html). After this code completes, all [AWS KMS API](https://docs.aws.amazon.com/kms/latest/APIReference/) requests on the `KmsAsyncClient` instance use hybrid post-quantum TLS.
 
    ```
    // Configure HTTP client

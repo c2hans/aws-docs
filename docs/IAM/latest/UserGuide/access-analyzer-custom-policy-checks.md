@@ -41,12 +41,12 @@ You can run IAM Access Analyzer custom policy checks from the AWS CLI or the IAM
 
 ### To run IAM Access Analyzer custom policy checks (AWS CLI)
 <a name="access-analyzer-custom-policy-checks-cli"></a>
-+ To check whether new access is allowed for an updated policy when compared to the existing policy, run the following command: [https://docs.aws.amazon.com/cli/latest/reference/accessanalyzer/check-no-new-access.html](https://docs.aws.amazon.com/cli/latest/reference/accessanalyzer/check-no-new-access.html)
-+ To check whether the specified access isn't allowed by a policy, run the following command: [https://docs.aws.amazon.com/cli/latest/reference/accessanalyzer/check-access-not-granted.html](https://docs.aws.amazon.com/cli/latest/reference/accessanalyzer/check-access-not-granted.html)
-+ To check whether a resource policy can grant public access to a specified resource type, run the following command: [https://docs.aws.amazon.com/cli/latest/reference/accessanalyzer/check-no-public-access.html](https://docs.aws.amazon.com/cli/latest/reference/accessanalyzer/check-no-public-access.html)
++ To check whether new access is allowed for an updated policy when compared to the existing policy, run the following command: [check-no-new-access](https://docs.aws.amazon.com/cli/latest/reference/accessanalyzer/check-no-new-access.html)
++ To check whether the specified access isn't allowed by a policy, run the following command: [check-access-not-granted](https://docs.aws.amazon.com/cli/latest/reference/accessanalyzer/check-access-not-granted.html)
++ To check whether a resource policy can grant public access to a specified resource type, run the following command: [check-no-public-access](https://docs.aws.amazon.com/cli/latest/reference/accessanalyzer/check-no-public-access.html)
 
 ### To run IAM Access Analyzer custom policy checks (API)
 <a name="access-analyzer-custom-policy-checks-api"></a>
-+ To check whether new access is allowed for an updated policy when compared to the existing policy, use the [https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_CheckNoNewAccess.html](https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_CheckNoNewAccess.html) API operation.
-+ To check whether the specified access isn't allowed by a policy, use the [https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_CheckAccessNotGranted.html](https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_CheckAccessNotGranted.html) API operation.
-+ To check whether a resource policy can grant public access to a specified resource type, use the [https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_CheckNoPublicAccess.html](https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_CheckNoPublicAccess.html) API operation.
++ To check whether new access is allowed for an updated policy when compared to the existing policy, use the [CheckNoNewAccess](https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_CheckNoNewAccess.html) API operation.
++ To check whether the specified access isn't allowed by a policy, use the [CheckAccessNotGranted](https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_CheckAccessNotGranted.html) API operation.
++ To check whether a resource policy can grant public access to a specified resource type, use the [CheckNoPublicAccess](https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_CheckNoPublicAccess.html) API operation.

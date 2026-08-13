@@ -60,8 +60,8 @@ This role grants permission for Image Builder to call AWS services on your behal
 We recommend that you don't pass the [AWSServiceRoleForImageBuilder](security-iam-awsmanpol.md#sec-iam-manpol-AWSServiceRoleForImageBuilder) service-linked role as your execution role. Instead, create a custom IAM role and attach the [EC2ImageBuilderExecutionPolicy](security-iam-awsmanpol.md#sec-iam-manpol-EC2ImageBuilderExecutionPolicy) AWS managed policy. This policy grants the same permissions that Image Builder needs to call AWS services on your behalf. Using a custom role gives you full control over the permissions that Image Builder uses. It also keeps your service control policies (SCPs) and resource control policies (RCPs) in effect for operations that Image Builder performs on your behalf.
 **Instance profile role**
 This role grants permission for the actions that the service performs on the EC2 instance. You can specify an instance profile role in your infrastructure configuration resource. Attach the following managed policies to your instance profile role to ensure that you have all of the permissions needed for the import process:
-  + [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2InstanceProfileForImageBuilder.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2InstanceProfileForImageBuilder.html)
-  + [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSSMManagedInstanceCore.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSSMManagedInstanceCore.html)
+  + [EC2InstanceProfileForImageBuilder](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2InstanceProfileForImageBuilder.html)
+  + [AmazonSSMManagedInstanceCore](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSSMManagedInstanceCore.html)
 For more information, see [Manage Image Builder infrastructure configuration](manage-infra-config.md).
 
 ## Optional import settings

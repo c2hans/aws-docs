@@ -405,7 +405,7 @@ In addition to the AWS SDKs, AWS Explorers are available for Visual Studio and E
 For more information, see [Developing with Amazon S3 using the AWS SDKs ](https://docs.aws.amazon.com/AmazonS3/latest/API/sdk-general-information-section.html) in the *Amazon S3 API Reference*.
 
 **Sample Code and Libraries**
-The [AWS Developer Center](https://aws.amazon.com/code/Amazon-S3) and [AWS Code Sample Catalog](https://docs.aws.amazon.com/code-samples/latest/catalog/welcome.html) have sample code and libraries written especially for Amazon S3. You can use these code samples to understand how to implement the Amazon S3 API. You can also view the [https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html) to understand the Amazon S3 API operations in detail.
+The [AWS Developer Center](https://aws.amazon.com/code/Amazon-S3) and [AWS Code Sample Catalog](https://docs.aws.amazon.com/code-samples/latest/catalog/welcome.html) have sample code and libraries written especially for Amazon S3. You can use these code samples to understand how to implement the Amazon S3 API. You can also view the [*Amazon Simple Storage Service API Reference*](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html) to understand the Amazon S3 API operations in detail.
 
 ### Learn from tutorials
 <a name="s3-getting-started-tutorials-list"></a>

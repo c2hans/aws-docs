@@ -215,7 +215,7 @@ Either an array or a string specifying the command to run. If you use an array, 
 `waitAfterCompletion`
 (Optional) Seconds to wait after the command completes before running the next command. The default value is **60** seconds. You can also specify **forever**.
 System reboots during deployment are not supported. If the system reboots as a result of a command, instance initialization will fail, causing the deployment to fail.
-As a workaround, you can use this [https://github.com/awsdocs/elastic-beanstalk-samples/tree/main/configuration-files/aws-provided/instance-configuration/windows-configuration/scheduled-restart.config](https://github.com/awsdocs/elastic-beanstalk-samples/tree/main/configuration-files/aws-provided/instance-configuration/windows-configuration/scheduled-restart.config) to schedule reboots after deployment is complete.
+As a workaround, you can use this [`.ebextensions configuration`](https://github.com/awsdocs/elastic-beanstalk-samples/tree/main/configuration-files/aws-provided/instance-configuration/windows-configuration/scheduled-restart.config) to schedule reboots after deployment is complete.
 
 ### Example
 <a name="windows-commands-snippet"></a>
@@ -332,7 +332,7 @@ A string or array of strings to run.
 `waitAfterCompletion`
 (Optional) Seconds to wait after the command completes before running the next command. The default value is **60** seconds. You can also specify **forever**.
 System reboots during deployment are not supported. If the system reboots as a result of a command, instance initialization will fail, causing the deployment to fail.
-As a workaround, you can use this [https://github.com/awsdocs/elastic-beanstalk-samples/tree/main/configuration-files/aws-provided/instance-configuration/windows-configuration/scheduled-restart.config](https://github.com/awsdocs/elastic-beanstalk-samples/tree/main/configuration-files/aws-provided/instance-configuration/windows-configuration/scheduled-restart.config) to schedule reboots after deployment is complete.
+As a workaround, you can use this [`.ebextensions configuration`](https://github.com/awsdocs/elastic-beanstalk-samples/tree/main/configuration-files/aws-provided/instance-configuration/windows-configuration/scheduled-restart.config) to schedule reboots after deployment is complete.
 
 ### Example
 <a name="windows-container-commands-snippet"></a>

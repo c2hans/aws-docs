@@ -510,6 +510,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [ec2:CreateIpamExternalResourceVerificationToken](#list_ec2-action-CreateIpamExternalResourceVerificationToken)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [ec2:CreateTags](#list_ec2-action-CreateTags)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   CreateIpamInternetRegistryAssociation  **
+  - **IAM action:**  [ec2:CreateTags](#list_ec2-action-CreateTags)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
+
 - **   CreateIpamPolicy  **
   - **IAM action:**  [ec2:CreateIpamPolicy](#list_ec2-action-CreateIpamPolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [ec2:CreateTags](#list_ec2-action-CreateTags)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write

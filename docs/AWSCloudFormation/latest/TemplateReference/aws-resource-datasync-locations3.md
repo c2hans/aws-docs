@@ -9,7 +9,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 The `AWS::DataSync::LocationS3` resource specifies an endpoint for an Amazon S3 bucket.
 
-For more information, see the [https://docs.aws.amazon.com/datasync/latest/userguide/create-s3-location.html](https://docs.aws.amazon.com/datasync/latest/userguide/create-s3-location.html).
+For more information, see the [*AWS DataSync User Guide*](https://docs.aws.amazon.com/datasync/latest/userguide/create-s3-location.html).
 
 ## Syntax
 <a name="aws-resource-datasync-locations3-syntax"></a>

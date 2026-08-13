@@ -163,7 +163,7 @@ This task definition enables the collection and export of NGINX Prometheus metri
 
 1. Create a service to run the task by entering the following command:
 
-   Be sure not to change the service name. We will be running a CloudWatch agent service using a configuration that searches for tasks using the name patterns of the services that started them. For example, for the CloudWatch agent to find the task launched by this command, you can specify the value of `sd_service_name_pattern` to be `^nginx-service$`. The next section provides more details.
+   Be sure not to change the service name. You will be running a CloudWatch agent service using a configuration that searches for tasks using the name patterns of the services that started them. For example, for the CloudWatch agent to find the task launched by this command, you can specify the value of `sd_service_name_pattern` to be `^nginx-service$`. The next section provides more details.
 
    ```
    aws ecs create-service \
@@ -176,7 +176,7 @@ This task definition enables the collection and export of NGINX Prometheus metri
 ### Configure the CloudWatch agent to scrape NGINX Prometheus metrics
 <a name="ContainerInsights-Prometheus-nginx-ecs-setup-agent"></a>
 
-The final step is to configure the CloudWatch agent to scrape the NGINX metrics. In this example, the CloudWatch agent discovers the task via the service name pattern, and the port 9113, where the exporter exposes the prometheus metrics for NGINX. With the task discovered and the metrics available, the CloudWatch agent begins posting the collected metrics to the log stream **nginx-prometheus-exporter**.
+The final step is to configure the CloudWatch agent to scrape the NGINX metrics. In this example, the CloudWatch agent discovers the task through the service name pattern, and the port 9113, where the exporter exposes the prometheus metrics for NGINX. With the task discovered and the metrics available, the CloudWatch agent begins posting the collected metrics to the log stream **nginx-prometheus-exporter**.
 
 **To configure the CloudWatch agent to scrape the NGINX metrics**
 

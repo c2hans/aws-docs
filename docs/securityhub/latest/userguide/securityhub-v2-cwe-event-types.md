@@ -14,7 +14,7 @@ On the EventBridge dashboard for Security Hub, **All Events** includes all of th
 
  Security Hub automatically sends all new findings and all updates to existing findings to EventBridge as **Findings Imported V2** events. Each **Findings Imported V2** event contains a single finding.
 
- Every finding that's imported and every finding updated through a [https://docs.aws.amazon.com/](https://docs.aws.amazon.com/) request triggers a **Findings Imported V2** event.
+ Every finding that is imported and every finding updated through a [`BatchUpdateFindingsV2`](https://docs.aws.amazon.com/) request triggers a **Findings Imported V2** event.
 
 For administrator accounts, the event feed in EventBridge includes events for findings from both their account and from their member accounts.
 

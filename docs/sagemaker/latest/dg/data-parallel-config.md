@@ -44,7 +44,7 @@ One way to achieve this is by using a gradual learning rate warmup where the lea
 
 The SageMaker AI distributed data parallel library employs Message Passing Interface (MPI), a popular standard for managing communication between nodes in a high-performance cluster, and uses NVIDIA’s NCCL library for GPU-level communication. When you use the data parallel library with a TensorFlow or Pytorch `ModelTrainer`, the respective container sets up the MPI environment and executes the `mpirun` command to start jobs on the cluster nodes.
 
-You can set custom MPI operations using the `custom_mpi_options` parameter in the `ModelTrainer`. Any `mpirun` flags passed in this field are added to the `mpirun` command and executed by SageMaker AI for training. For example, you may define the `distribution` parameter of an `ModelTrainer` using the following to use the [https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/env.html#nccl-debug](https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/env.html#nccl-debug) variable to print the NCCL version at the start of the program:
+You can set custom MPI operations using the `custom_mpi_options` parameter in the `ModelTrainer`. Any `mpirun` flags passed in this field are added to the `mpirun` command and executed by SageMaker AI for training. For example, you may define the `distribution` parameter of an `ModelTrainer` using the following to use the [`NCCL_DEBUG`](https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/env.html#nccl-debug) variable to print the NCCL version at the start of the program:
 
 ```
 distribution = {'smdistributed':{'dataparallel':{'enabled': True, "custom_mpi_options": "-verbose -x NCCL_DEBUG=VERSION"}}}

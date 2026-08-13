@@ -32,7 +32,7 @@ Managed Integrations supports the use of symmetric customer managed key that you
 
 Managed Integrations uses these keys by default to automatically encrypt sensitive customer data. You can't view, manage, or audit their use. You don't have to take any action or change any programs to protect the keys that encrypt your data. Encryption of data at rest by default helps reduce the operational overhead and complexity involved in protecting sensitive data. At the same time, it enables you to build secure applications that meet strict encryption compliance and regulatory requirements.
 
-The default encryption key used is AWS owned keys. Alternatively, the optional API to update your encryption key is [https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_PutDefaultEncryptionConfiguration.html](https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_PutDefaultEncryptionConfiguration.html).
+The default encryption key used is AWS owned keys. Alternatively, the optional API to update your encryption key is [`PutDefaultEncryptionConfiguration`](https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_PutDefaultEncryptionConfiguration.html).
 
 For more information on the types of AWS KMS encryption keys, see [AWS KMS keys](https://docs.aws.amazon.com//kms/latest/developerguide/concepts.html).
 

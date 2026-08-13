@@ -166,16 +166,16 @@ AWS Proton supports two repository path layouts. In the following examples, the 
   <tr><th>Resource type</th><th>Name parameter</th><th>=</th><th>Resource name</th></tr>
 </thead>
 <tbody>
-  <tr><td>Environment</td><td>environment.name</td><td rowspan="10">=</td><td>"env-prod"</td></tr>
-  <tr><td>Environment</td><td>environment.name</td><td>"env-staged"</td></tr>
-  <tr><td>Service</td><td>service.name</td><td>"service-one"</td></tr>
-  <tr><td>  Service instance</td><td>service\_instance.name</td><td>"instance-one-prod"</td></tr>
-  <tr><td>  Service instance</td><td>service\_instance.name</td><td>"instance-one-staged"</td></tr>
-  <tr><td>Service</td><td>service.name</td><td>"service-two"</td></tr>
-  <tr><td>  Service instance</td><td>service\_instance.name</td><td>"instance-two-prod"</td></tr>
-  <tr><td>    Component</td><td>service\_instance.components.default.name</td><td>"component-prod"</td></tr>
-  <tr><td>  Service instance</td><td>service\_instance.name</td><td>"instance-two-staged"</td></tr>
-  <tr><td>    Component</td><td>service\_instance.components.default.name</td><td>"component-staged"</td></tr>
+  <tr><td>Environment</td><td><code>environment.name</code></td><td rowspan="10">=</td><td><code>"env-prod"</code></td></tr>
+  <tr><td>Environment</td><td><code>environment.name</code></td><td><code>"env-staged"</code></td></tr>
+  <tr><td>Service</td><td><code>service.name</code></td><td><code>"service-one"</code></td></tr>
+  <tr><td>  Service instance</td><td><code>service_instance.name</code></td><td><code>"instance-one-prod"</code></td></tr>
+  <tr><td>  Service instance</td><td><code>service_instance.name</code></td><td><code>"instance-one-staged"</code></td></tr>
+  <tr><td>Service</td><td><code>service.name</code></td><td><code>"service-two"</code></td></tr>
+  <tr><td>  Service instance</td><td><code>service_instance.name</code></td><td><code>"instance-two-prod"</code></td></tr>
+  <tr><td>    Component</td><td><code>service_instance.components.default.name</code></td><td><code>"component-prod"</code></td></tr>
+  <tr><td>  Service instance</td><td><code>service_instance.name</code></td><td><code>"instance-two-staged"</code></td></tr>
+  <tr><td>    Component</td><td><code>service_instance.components.default.name</code></td><td><code>"component-staged"</code></td></tr>
 </tbody>
 </table>
 

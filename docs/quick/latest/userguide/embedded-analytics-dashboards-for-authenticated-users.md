@@ -466,7 +466,7 @@ aws quicksight generate-embed-url-for-registered-user \
         --experience-configuration Dashboard={InitialDashboardId={{1a1ac2b2-3fc3-4b44-5e5d-c6db6778df89}}}
 ```
 
-For more information about using this operation, see [https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUser.html](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUser.html). You can use this and other API operations in your own code.
+For more information about using this operation, see [GenerateEmbedUrlForRegisteredUser](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUser.html). You can use this and other API operations in your own code.
 
 ## Step 3: Embed the dashboard URL
 <a name="embedded-dashboards-for-authenticated-users-step-3"></a>

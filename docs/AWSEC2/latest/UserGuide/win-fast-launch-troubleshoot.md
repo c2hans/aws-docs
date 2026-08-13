@@ -88,4 +88,4 @@ Your IAM user or role lacks the necessary permissions to enable EC2 Fast Launch.
 #### Solution
 <a name="ts-fast-launch-sc-insufficient-perms-solution"></a>
 
-Verify that your IAM principal (user or role) that enables EC2 Fast Launch has the `EC2FastLaunchFullAccess` policy attached. This AWS managed policy grants full access to all EC2 Fast Launch resources. To view the permissions for this policy, see the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2FastLaunchFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2FastLaunchFullAccess.html) policy in the *AWS Managed Policy Reference*.
+Verify that your IAM principal (user or role) that enables EC2 Fast Launch has the `EC2FastLaunchFullAccess` policy attached. This AWS managed policy grants full access to all EC2 Fast Launch resources. To view the permissions for this policy, see the [EC2FastLaunchFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2FastLaunchFullAccess.html) policy in the *AWS Managed Policy Reference*.

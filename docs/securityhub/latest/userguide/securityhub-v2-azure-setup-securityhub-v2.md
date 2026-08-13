@@ -29,7 +29,7 @@ After you complete the [prerequisite tasks](securityhub-v2-azure-prereqs.md) and
 
 To create an Microsoft Azure connector for your environment, complete the following steps by using the AWS Security Hub console or the API.
 
-1. Open the AWS Security Hub console at [https://console.aws.amazon.com/securityhub/v2](https://console.aws.amazon.com/securityhub/v2).
+1. Open the AWS Security Hub console at [https://console.aws.amazon.com/securityhub/advanced/home?region=us-east-1.](https://console.aws.amazon.com/securityhub/advanced/home?region=us-east-1.).
 
 1. In the navigation pane, choose **Integrations**.
 
@@ -47,13 +47,13 @@ To create an Microsoft Azure connector for your environment, complete the follow
 The connector name cannot be changed after creation.
    + For **Description**, optionally enter a brief description of the connector. The description can contain up to 200 characters.
 **Important**
-Names and descriptions are used to identify your content, and we recommend you do not include sensitive, confidential, or personally identifiable information (PII) in them.
+Names and descriptions are used to identify your content. Do not include sensitive, confidential, or personally identifiable information (PII) in them.
    + For **Subscriptions**, choose **All subscriptions** to monitor all current and future subscriptions in the tenant, or **Specific subscriptions** to monitor only the subscriptions that you specify. If you choose to monitor only specific subscriptions, enter the ID for each one.
-   + For **Regions**, choose **All regions** to monitor resources in all Azure regions, or **Specific regions** to monitor only the regions that you specify.
+   + For **Regions**, choose **All regions** to monitor resources in all Azure regions, or **Specific regions** to monitor only the Regions that you specify.
 **Note**
-If you already created a connector in Security Hub CSPM or Amazon Inspector for the same Azure tenant, the scope of the connector in Security Hub must include the same subscriptions and regions as the connector in Security Hub CSPM or Amazon Inspector.
+If you already created a connector in Security Hub CSPM or Amazon Inspector for the same Azure tenant, the scope of the connector in Security Hub must include the same subscriptions and Regions as the connector in Security Hub CSPM or Amazon Inspector.
 **Note**
-Controls that evaluate Microsoft Entra ID and Microsoft Graph resources require the global region scope to be included in your integration configuration. If you select specific Azure Regions only, these controls will not generate findings.
+Controls that evaluate Microsoft Entra ID and Microsoft Graph resources require the global Region scope to be included in your integration configuration. If you select specific Azure Regions only, these controls do not generate findings.
 
 1. Review the connector configuration.
 **Note**
@@ -348,7 +348,7 @@ After you create an Microsoft Azure connector, you can adjust the scope of the c
 Before you adjust the scope of a connector, note the following:
 + When you change the scope of a connector in Security Hub, the associated service-linked connectors in Security Hub CSPM and Amazon Inspector are automatically updated to match.
 + The scope of a Security Hub connector can never be less than any existing customer-managed connector in Security Hub CSPM or Amazon Inspector for the same Azure tenant.
-+ If you add a region to the connector scope, you must re-run the setup script to provision Event Hub infrastructure in the new region. Your existing Event Hub configuration is not affected.
++ If you add a Region to the connector scope, you must re-run the setup script to provision Event Hub infrastructure in the new Region. Your existing Event Hub configuration is not affected.
 
 ## Verify the health of an Azure connector
 <a name="securityhub-v2-azure-setup-securityhub-v2-verify"></a>
@@ -357,7 +357,7 @@ You can check the health of an Microsoft Azure connector at any time to confirm 
 
 **To verify the health of a connector**
 
-1. Open the AWS Security Hub console at [https://console.aws.amazon.com/securityhub/v2](https://console.aws.amazon.com/securityhub/v2).
+1. Open the AWS Security Hub console at [https://console.aws.amazon.com/securityhub/advanced/home?region=us-east-1.](https://console.aws.amazon.com/securityhub/advanced/home?region=us-east-1.).
 
 1. In the navigation pane, choose **Integrations** and select your Azure connector.
 
@@ -378,11 +378,11 @@ For real-time visibility into recording failures, check the CloudWatch metrics i
 If you experience issues with your connector, review the following common issues and resolutions.
 
 **Connector status is Unhealthy**
-This issue typically occurs if federated credentials aren't configured correctly in Azure.
+This issue typically occurs if federated credentials are not configured correctly in Azure.
 To address this issue, verify that the Token Issuer URL and subject ARN in your Azure federated credentials match your AWS account.
 
 **No findings after 30 minutes**
-This issue can occur if the Event Hub isn't receiving Activity Logs.
+This issue can occur if the Event Hub is not receiving Activity Logs.
 To address this issue, check that diagnostic settings are configured on your Azure subscriptions and that the Event Hub namespace is tagged correctly with `AWSConfig-{{account-id}}-{{region}}`.
 
 **All controls show NO\_DATA**
@@ -404,13 +404,13 @@ To address the error, do the following:
 1. Verify that the service principal has the Reader role at the tenant root management group scope.
 
 **Findings appear for some subscriptions only**
-This issue can occur if Activity Log export isn't configured for all target subscriptions.
+This issue can occur if Activity Log export is not configured for all target subscriptions.
 To address this issue, confirm that the diagnostic settings cover all subscriptions included in the connector scope.
 
 ## How Security Hub handles resource and finding identifiers
 <a name="securityhub-v2-azure-setup-securityhub-v2-identifiers"></a>
 
-By enabling your Azure integration for AWS Security Hub, resource and security finding identifiers from other cloud providers will be stored in AWS Config, Security Hub, and other AWS services (as needed) as metadata related to the management of the corresponding resource configuration and security finding data collected from the other cloud providers. Such identifiers do not constitute Your Content, and we recommend you do not include sensitive, confidential, or personally identifiable information in them.
+By enabling your Azure integration for AWS Security Hub, resource and security finding identifiers from other cloud providers are stored in AWS Config, Security Hub, and other AWS services (as needed) as metadata related to the management of the corresponding resource configuration and security finding data collected from the other cloud providers. Such identifiers do not constitute Your Content. Do not include sensitive, confidential, or personally identifiable information in them.
 
 The following identifiers from your connected cloud environment are stored and used by AWS to provide multicloud security capabilities:
 + **Resource identifiers:** Azure Tenant ID, Subscription ID, Location (region), Resource ID (Resource Group IDs or Names, Resource Provider, Resource Type)

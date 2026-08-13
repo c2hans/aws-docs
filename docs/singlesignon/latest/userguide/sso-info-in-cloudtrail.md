@@ -33,20 +33,20 @@ The following list contains the CloudTrail events that the public IAM Identity C
 
  You might find additional events in CloudTrail for IAM Identity Center console API operations that the console relies on. For more information about these console APIs, see the [Service Authorization Reference](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiamidentitycenter.html).
 
-+ [https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_AttachCustomerManagedPolicyReferenceToPermissionSet.html](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_AttachCustomerManagedPolicyReferenceToPermissionSet.html)
++ [AttachCustomerManagedPolicyReferenceToPermissionSet](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_AttachCustomerManagedPolicyReferenceToPermissionSet.html)
 + [ AttachManagedPolicyToPermissionSet](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_AttachManagedPolicyToPermissionSet.html)
 + [ CreateAccountAssignment](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_CreateAccountAssignment.html)
 + [CreateApplication ](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_CreateApplication.html)
 + [ CreateApplicationAssignment](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_CreateApplicationAssignment.html)
 + [ CreateInstance ](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_CreateInstance.html)
 + [ CreateInstanceAccessControlAttributeConfiguration ](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_CreateInstanceAccessControlAttributeConfiguration.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_CreatePermissionSet.html](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_CreatePermissionSet.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_CreateTrustedTokenIssuer.html](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_CreateTrustedTokenIssuer.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteAccountAssignment.html](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteAccountAssignment.html)
-+  [https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteApplication.html](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteApplication.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteApplicationAccessScope.html](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteApplicationAccessScope.html)
-+  [https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteApplicationAssignment.html](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteApplicationAssignment.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteApplicationAuthenticationMethod.html](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteApplicationAuthenticationMethod.html)
++ [CreatePermissionSet](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_CreatePermissionSet.html)
++ [CreateTrustedTokenIssuer](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_CreateTrustedTokenIssuer.html)
++ [DeleteAccountAssignment](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteAccountAssignment.html)
++  [DeleteApplication](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteApplication.html)
++ [DeleteApplicationAccessScope](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteApplicationAccessScope.html)
++  [DeleteApplicationAssignment](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteApplicationAssignment.html)
++ [DeleteApplicationAuthenticationMethod](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteApplicationAuthenticationMethod.html)
 + [ DeleteApplicationGrant ](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteApplicationGrant.html)
 + [ DeleteInlinePolicyFromPermissionSet ](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteInlinePolicyFromPermissionSet.html)
 + [ DeleteInstance ](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteInstance.html)
@@ -113,32 +113,32 @@ The following list contains the CloudTrail events that the public IAM Identity C
 The following list contains the CloudTrail events that the public Identity Store operations emit with the `identitystore.amazonaws.com` event source. For more information about the public Identity Store API operations, see the [Identity Store API Reference](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/welcome.html).
 
  You might find additional events in CloudTrail for the Identity Store console API operations with the `sso-directory.amazonaws.com` event source. These APIs support the console and AWS access portal. If you need to detect the occurrence of a particular operation, such as adding member to a group, we recommend you consider both public and console API operations. For more information about these console APIs, see the [Service Authorization Reference](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsidentitystore.html).
-+ [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateGroup.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateGroup.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateGroupMembership.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateGroupMembership.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateUser.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateUser.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DeleteGroup.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DeleteGroup.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DeleteGroupMembership.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DeleteGroupMembership.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DeleteUser.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DeleteUser.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeGroup.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeGroup.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeGroupMembership.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeGroupMembership.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeUser.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeUser.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_GetGroupId.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_GetGroupId.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_GetGroupMembershipId.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_GetGroupMembershipId.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_GetUserId.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_GetUserId.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_IsMemberInGroups.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_IsMemberInGroups.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_ListGroupMemberships.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_ListGroupMemberships.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_ListGroupMembershipsForMember.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_ListGroupMembershipsForMember.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_ListGroups.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_ListGroups.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_ListUsers.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_ListUsers.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_UpdateGroup.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_UpdateGroup.html)
-+ [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_UpdateUser.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_UpdateUser.html)
++ [CreateGroup](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateGroup.html)
++ [CreateGroupMembership](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateGroupMembership.html)
++ [CreateUser](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateUser.html)
++ [DeleteGroup](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DeleteGroup.html)
++ [DeleteGroupMembership](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DeleteGroupMembership.html)
++ [DeleteUser](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DeleteUser.html)
++ [DescribeGroup](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeGroup.html)
++ [DescribeGroupMembership](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeGroupMembership.html)
++ [DescribeUser](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeUser.html)
++ [GetGroupId](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_GetGroupId.html)
++ [GetGroupMembershipId](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_GetGroupMembershipId.html)
++ [GetUserId](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_GetUserId.html)
++ [IsMemberInGroups](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_IsMemberInGroups.html)
++ [ListGroupMemberships](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_ListGroupMemberships.html)
++ [ListGroupMembershipsForMember](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_ListGroupMembershipsForMember.html)
++ [ListGroups](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_ListGroups.html)
++ [ListUsers](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_ListUsers.html)
++ [UpdateGroup](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_UpdateGroup.html)
++ [UpdateUser](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_UpdateUser.html)
 
 ## CloudTrail events of OIDC API operations
 <a name="cloudtrail-events-oidc-operations"></a>
 
 The following list contains the CloudTrail events that the public OIDC operations emit. For more information about the public OIDC API operations, see the [OIDC API Reference](https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/Welcome.html).
-+ [https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/API_CreateToken.html](https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/API_CreateToken.html) (event source `sso.amazonaws.com`)
-+ [https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/API_CreateTokenWithIAM.html](https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/API_CreateTokenWithIAM.html) (event source `sso-oauth.amazonaws.com`)
++ [CreateToken](https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/API_CreateToken.html) (event source `sso.amazonaws.com`)
++ [CreateTokenWithIAM](https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/API_CreateTokenWithIAM.html) (event source `sso-oauth.amazonaws.com`)
 
 ## CloudTrail events of AWS access portal API operations
 <a name="cloudtrail-events-access-portal-operations"></a>
@@ -146,12 +146,12 @@ The following list contains the CloudTrail events that the public OIDC operation
 The following list contains the CloudTrail events that the AWS access portal API operations emit with the `sso.amazonaws.com` event source. The API operations noted as being unavailable in the public API support the operations of the AWS access portal. Using the AWS CLI can lead to the emission of CloudTrail events of both the public AWS access portal API operations and those that are unavailable in the public API. For more information about public AWS access portal API operations, see the [AWS access portal API Reference](https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/Welcome.html).
 + Authenticate (Not available in the public API. Provides login to the AWS access portal.)
 + Federate (Not available in the public API. Provides federation into applications.)
-+  [https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/API_ListAccountRoles.html](https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/API_ListAccountRoles.html)
-+  [https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/API_ListAccounts.html](https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/API_ListAccounts.html)
++  [ListAccountRoles](https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/API_ListAccountRoles.html)
++  [ListAccounts](https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/API_ListAccounts.html)
 +  ListApplications (Not available in the public API. Provides users’ assigned resources for display in the AWS access portal.)
 +  ListProfilesForApplication (Not available in the public API. Provides application metadata for display in the AWS access portal.)
-+  [https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/API_GetRoleCredentials.html](https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/API_GetRoleCredentials.html)
-+  [https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/API_Logout.html](https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/API_Logout.html)
++  [GetRoleCredentials](https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/API_GetRoleCredentials.html)
++  [Logout](https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/API_Logout.html)
 
 ## CloudTrail events of SCIM API operations
 <a name="cloudtrail-events-scim-api-operations"></a>

@@ -206,7 +206,7 @@ When you [launch an instance](LaunchingAndUsingInstances.md) with the following 
 After you’ve launched your instance, you can verify that it is ready to be configured to support UEFI Secure Boot (in other words, you can proceed to [Step 2](#step2-launch-uefi-sb)) by checking whether UEFI data is present. The presence of UEFI data indicates that non-volatile data is persisted.
 
 **To verify whether your instance is ready for Step 2**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/get-instance-uefi-data.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-instance-uefi-data.html) command and specify the instance ID.
+Use the [get-instance-uefi-data](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-instance-uefi-data.html) command and specify the instance ID.
 
 ```
 aws ec2 get-instance-uefi-data --instance-id {{i-1234567890abcdef0}}
@@ -253,7 +253,7 @@ If SetupMode is enabled (the value is `1`), the keys can be enrolled by running 
 **To verify that UEFI Secure Boot is enabled**
 To verify that UEFI Secure Boot is enabled, follow the steps in [Verify whether an Amazon EC2 instance is enabled for UEFI Secure Boot](verify-uefi-secure-boot.md).
 
-You can now export your UEFI variable store with the [https://docs.aws.amazon.com/cli/latest/reference/ec2/get-instance-uefi-data.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-instance-uefi-data.html) CLI command, or you continue to the next step and sign your boot images to reboot into a UEFI Secure Boot-enabled instance.
+You can now export your UEFI variable store with the [get-instance-uefi-data](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-instance-uefi-data.html) CLI command, or you continue to the next step and sign your boot images to reboot into a UEFI Secure Boot-enabled instance.
 
 ### Step 3: Create an AMI from the instance
 <a name="step3-launch-uefi-sb"></a>
@@ -297,7 +297,7 @@ You can create the variable store *offline* without a running instance by using 
 ### Step 2: Upload the binary blob on AMI creation
 <a name="uefi-secure-boot-upload-binary-blob-on-ami-creation"></a>
 
-Use [https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) to pass your UEFI variable store data. For the `--uefi-data` parameter, specify your binary blob, and for the `--boot-mode` parameter, specify `uefi`.
+Use [register-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) to pass your UEFI variable store data. For the `--uefi-data` parameter, specify your binary blob, and for the `--boot-mode` parameter, specify `uefi`.
 
 ```
 aws ec2 register-image \

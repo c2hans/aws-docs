@@ -9,7 +9,7 @@ Checkpointing is the method that is used for implementing fault tolerance in Ama
 
 For details on checkpointing in Apache Flink applications, see [Checkpoints](https://nightlies.apache.org/flink/flink-docs-release-1.19/docs/ops/state/checkpoints/) in the Apache Flink Documentation.
 
-A *snapshot* is a manually created and managed backup of application state. Snapshots let you restore your application to a previous state by calling [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html). For more information, see [Manage application backups using snapshots](how-snapshots.md).
+A *snapshot* is a manually created and managed backup of application state. Snapshots let you restore your application to a previous state by calling [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html). For more information, see [Manage application backups using snapshots](how-snapshots.md).
 
 If checkpointing is enabled for your application, then the service provides fault tolerance by creating and loading backups of application data in the event of unexpected application restarts. These unexpected application restarts could be caused by unexpected job restarts, instance failures, etc. This gives the application the same semantics as failure-free execution during these restarts.
 
@@ -20,7 +20,7 @@ If snapshots are enabled for the application, and configured using the applicati
 
 You can configure your application's checkpointing behavior. You can define whether it persists the checkpointing state, how often it saves its state to checkpoints, and the minimum interval between the end of one checkpoint operation and the beginning of another.
 
-You configure the following settings using the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) or [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) API operations:
+You configure the following settings using the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) or [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) API operations:
 + `CheckpointingEnabled` — Indicates whether checkpointing is enabled in the application.
 + `CheckpointInterval` — Contains the time in milliseconds between checkpoint (persistence) operations.
 + `ConfigurationType` — Set this value to `DEFAULT` to use the default checkpointing behavior. Set this value to `CUSTOM` to configure other values.
@@ -42,7 +42,7 @@ This section includes example requests for API actions for configuring checkpoin
 ### Configure checkpointing for a new application
 <a name="how-fault-examples-create-config"></a>
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action configures checkpointing when you are creating an application:
+The following example request for the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action configures checkpointing when you are creating an application:
 
 ```
 {
@@ -72,7 +72,7 @@ The following example request for the [https://docs.aws.amazon.com/managed-servi
 ### Disable checkpointing for a new application
 <a name="how-fault-examples-create-disable"></a>
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action disables checkpointing when you are creating an application:
+The following example request for the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action disables checkpointing when you are creating an application:
 
 ```
 {
@@ -99,7 +99,7 @@ The following example request for the [https://docs.aws.amazon.com/managed-servi
 ### Configure checkpointing for an existing application
 <a name="how-fault-examples-update-config"></a>
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action configures checkpointing for an existing application:
+The following example request for the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action configures checkpointing for an existing application:
 
 ```
 {
@@ -120,7 +120,7 @@ The following example request for the [https://docs.aws.amazon.com/managed-servi
 ### Disable checkpointing for an existing application
 <a name="how-fault-examples-update-update-disable"></a>
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action disables checkpointing for an existing application:
+The following example request for the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action disables checkpointing for an existing application:
 
 ```
 {

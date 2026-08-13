@@ -68,8 +68,8 @@ For information about the permissions needed to disable trusted access, see [Per
 To convert an account-level trail or event data store to an organization trail or organization event data store, do the following:
 + From the CloudTrail console, update the [trail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-update-a-trail-console.html) or [event data store](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-update.html) and choose the **Enable for all accounts in my organization** option.
 + From the AWS CLI, do the following:
-  + To update a trail, run the [https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/update-trail.html](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/update-trail.html) command and include the `--is-organization-trail` parameter.
-  + To update an event data store, run the [https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/update-event-data-store.html](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/update-event-data-store.html) command and include the `--organization-enabled` parameter.
+  + To update a trail, run the [update-trail](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/update-trail.html) command and include the `--is-organization-trail` parameter.
+  + To update an event data store, run the [update-event-data-store](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/update-event-data-store.html) command and include the `--organization-enabled` parameter.
 
 Only an administrator in the AWS Organizations management account can disable trusted access with AWS CloudTrail. You can disable trusted access only with the Organizations tools, using either the AWS Organizations console, running an Organizations AWS CLI command, or calling an Organizations API operation in one of the AWS SDKs.
 

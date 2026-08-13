@@ -102,7 +102,7 @@ The API actions [ UpdatePosition](https://docs.aws.amazon.com/iot-wireless/lates
 You can enable positioning when creating a new Sidewalk device or when updating an existing device.
 
 **Create a new device with positioning enabled**
-To create a new Sidewalk device with positioning enabled, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessDevice.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessDevice.html) API operation. Set `Positioning` to `"Enabled"` and provide the location destination name in the `Sidewalk.Positioning` parameter.
+To create a new Sidewalk device with positioning enabled, use the [`CreateWirelessDevice`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessDevice.html) API operation. Set `Positioning` to `"Enabled"` and provide the location destination name in the `Sidewalk.Positioning` parameter.
 
 **Sample CreateWirelessDevice request**
 
@@ -125,7 +125,7 @@ Content-type: application/json
 ```
 
 **Update an existing device to enable positioning**
-To enable positioning for an existing Sidewalk device, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateWirelessDevice.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateWirelessDevice.html) API operation. Set `Positioning` to `"Enabled"` and provide the location destination name.
+To enable positioning for an existing Sidewalk device, use the [`UpdateWirelessDevice`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateWirelessDevice.html) API operation. Set `Positioning` to `"Enabled"` and provide the location destination name.
 
 **Sample UpdateWirelessDevice request**
 
@@ -152,7 +152,7 @@ This command returns no response body (`204 No Content`). To verify that positio
 You can enable location capabilities using the AWS CLI when creating a new device or updating an existing device.
 
 **Create a new device with location enabled**
-To create a Sidewalk device with location enabled, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessDevice.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessDevice.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-wireless-device.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-wireless-device.html) CLI command with the `--positioning` parameter set to `Enabled`.
+To create a Sidewalk device with location enabled, use the [`CreateWirelessDevice`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessDevice.html) API operation or the [`create-wireless-device`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-wireless-device.html) CLI command with the `--positioning` parameter set to `Enabled`.
 
 ```
 aws iotwireless create-wireless-device \
@@ -164,7 +164,7 @@ aws iotwireless create-wireless-device \
 ```
 
 **Update an existing device to enable location**
-To enable location for an existing Sidewalk device, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateWirelessDevice.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateWirelessDevice.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/update-wireless-device.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/update-wireless-device.html) CLI command.
+To enable location for an existing Sidewalk device, use the [`UpdateWirelessDevice`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateWirelessDevice.html) API operation or the [`update-wireless-device`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/update-wireless-device.html) CLI command.
 
 ```
 aws iotwireless update-wireless-device \

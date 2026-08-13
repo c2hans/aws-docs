@@ -335,6 +335,6 @@ Refer to [Web SDK Data format ](web-sdk.md#data-format-definition-2)definition.
 ## References
 <a name="reference-link-4"></a>
 
- [https://github.com/awslabs/clickstream-flutter](https://github.com/awslabs/clickstream-flutter)
+ [*Source code*](https://github.com/awslabs/clickstream-flutter)
 
- [https://github.com/awslabs/clickstream-flutter/issues](https://github.com/awslabs/clickstream-flutter/issues)
+ [*Project issue*](https://github.com/awslabs/clickstream-flutter/issues)

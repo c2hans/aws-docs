@@ -25,11 +25,11 @@ While a custom key store is disconnected, all attempts to create KMS keys in the
 ## Identify the KMS key associated with a key reference
 <a name="key-reference-filter"></a>
 
-The following procedures demonstrate how to use the [https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html) command in CloudHSM CLI with the `key-reference` attribute filter to find the key in your cluster that serves as key material for a particular KMS key in your AWS CloudHSM key store.
+The following procedures demonstrate how to use the [**key list**](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html) command in CloudHSM CLI with the `key-reference` attribute filter to find the key in your cluster that serves as key material for a particular KMS key in your AWS CloudHSM key store.
 
 1. Disconnect the AWS CloudHSM key store, if it is not already disconnected, then log in as `kmsuser`, as explained in [How to disconnect and log in](fix-keystore.md#login-kmsuser-1).
 
-1. Use the [https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html) command in CloudHSM CLI to filter by the `key-reference` attribute. Specify the `verbose` argument to include all attributes and key information for the matched key. If you don't specify the `verbose` argument, the **key list** operation only returns the matched key's key-reference and label attribute.
+1. Use the [**key list**](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html) command in CloudHSM CLI to filter by the `key-reference` attribute. Specify the `verbose` argument to include all attributes and key information for the matched key. If you don't specify the `verbose` argument, the **key list** operation only returns the matched key's key-reference and label attribute.
 
    Before running this command, replace the example `key-reference` with a valid one from your account.
 
@@ -90,11 +90,11 @@ The following procedures demonstrate how to use the [https://docs.aws.amazon.com
 ## Identify the KMS key associated with a backing key ID
 <a name="backing-key-id-filter"></a>
 
-All CloudTrail log entries for cryptographic operations with a KMS key in an AWS CloudHSM key store include an `additionalEventData` field with the `customKeyStoreId` and `backingKeyId`. The value returned in the `backingKeyId` field correlates to the CloudHSM key `id` attribute. You can filter the [https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html) operation by the `id` attribute to identify the KMS key associated with a specific `backingKeyId`.
+All CloudTrail log entries for cryptographic operations with a KMS key in an AWS CloudHSM key store include an `additionalEventData` field with the `customKeyStoreId` and `backingKeyId`. The value returned in the `backingKeyId` field correlates to the CloudHSM key `id` attribute. You can filter the [**key list**](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html) operation by the `id` attribute to identify the KMS key associated with a specific `backingKeyId`.
 
 1. Disconnect the AWS CloudHSM key store, if it is not already disconnected, then log in as `kmsuser`, as explained in [How to disconnect and log in](fix-keystore.md#login-kmsuser-1).
 
-1. Use the [https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html) command in CloudHSM CLI with the attribute filter to find the key in your cluster that serves as key material for a particular KMS key in your AWS CloudHSM key store.
+1. Use the [**key list**](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html) command in CloudHSM CLI with the attribute filter to find the key in your cluster that serves as key material for a particular KMS key in your AWS CloudHSM key store.
 
    The following example demonstrates how to filter by the `id` attribute. AWS CloudHSM recognizes the `id` value as a hexadecimal value. To filter the **key list** operation by the `id` attribute, you must first convert the `backingKeyId` value that you identified in your CloudTrail log entry into a format that AWS CloudHSM recognizes.
 

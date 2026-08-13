@@ -10,9 +10,9 @@ When configuration is handled directly in code, the configuration scope is limit
 ## `Aws.config`
 <a name="config"></a>
 
-To provide global configuration within your code for all AWS classes, use [https://github.com/aws/aws-sdk-ruby/blob/version-3/gems/aws-sdk-core/lib/aws-sdk-core/plugins/global_configuration.rb](https://github.com/aws/aws-sdk-ruby/blob/version-3/gems/aws-sdk-core/lib/aws-sdk-core/plugins/global_configuration.rb) that is available in the `aws-sdk-core` gem.
+To provide global configuration within your code for all AWS classes, use [`Aws.config`](https://github.com/aws/aws-sdk-ruby/blob/version-3/gems/aws-sdk-core/lib/aws-sdk-core/plugins/global_configuration.rb) that is available in the `aws-sdk-core` gem.
 
- `Aws.config` supports two syntaxes for different uses. Global settings can either be applied for all AWS services or for a specific service. For the complete list of supported settings, see the `Client` [https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MachineLearning/Client.html#initialize-instance_method](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MachineLearning/Client.html#initialize-instance_method) in the *AWS SDK for Ruby API Reference*.
+ `Aws.config` supports two syntaxes for different uses. Global settings can either be applied for all AWS services or for a specific service. For the complete list of supported settings, see the `Client` [`Options`](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MachineLearning/Client.html#initialize-instance_method) in the *AWS SDK for Ruby API Reference*.
 
 ### Global settings through `Aws.config`
 <a name="global-config"></a>

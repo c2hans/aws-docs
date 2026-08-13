@@ -10,8 +10,8 @@ To use your corporate Active Directory or AWS Managed Microsoft AD for user auth
 **Note**
 Using Directory Service, you can create a hosted Active Directory domain service in the AWS Cloud.
 To use AWS Managed Microsoft AD with an Amazon EC2 gateway, you must create the Amazon EC2 instance in the same VPC as the AWS Managed Microsoft AD, add the \_workspaceMembers security group to the Amazon EC2 instance, and join the AD domain using the Admin credentials from the AWS Managed Microsoft AD.
-For more information about AWS Managed Microsoft AD, see the [https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html).
-For more information about Amazon EC2, see the [https://docs.aws.amazon.com/ec2/](https://docs.aws.amazon.com/ec2/).
+For more information about AWS Managed Microsoft AD, see the [*AWS Directory Service Administration Guide*](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html).
+For more information about Amazon EC2, see the [*Amazon Elastic Compute Cloud Documentation*](https://docs.aws.amazon.com/ec2/).
 
 You can also activate access control lists (ACLs) on your SMB file share. For information about how to activate ACLs, see [Using Windows ACLs to limit SMB file share access](smb-acl.md).
 

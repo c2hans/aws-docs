@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/view-call-tran
 
 At the end of a call, you can see an unredacted transcript of your conversation in the CCP or agent workspace. You can view the entire transcript for reference, and copy any useful text into your notes.
 
-The call transcript displays any [categories](rules.md) identified by Contact Lens. For example, in the following image, an issue has been identified at 22 seconds.
+The call transcript displays any [categories](rules.md) identified by conversational analytics. For example, in the following image, an issue has been identified at 22 seconds.
 
 ![The CCP, a transcript, an issue.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ccp-view-call-transcript.png)
 
@@ -21,4 +21,4 @@ Customer sentiment score is not included in the CCP or agent workspace.
 Add the following permissions to the agent's security profile:
 **Analytics and Optimization** - **Contact transcripts (unredacted) - Access**
 **Analytics and Optimization** - **View My Contacts** or **Contact search**
-**Contact Control Panel (CCP)** - **Contact Lens data**
+**Contact Control Panel (CCP)** - **conversational analytics data**

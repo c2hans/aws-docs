@@ -119,7 +119,7 @@ The private endpoint overrides for the custom OAuth2 provider configuration.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PrivateKeyJwtConfig`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-privatekeyjwtconfig"></a>
-Property description not available.
+The private\_key\_jwt client authentication configuration for this credential provider. When specified, the credential provider uses JWT client assertions to authenticate with the token endpoint.
 *Required*: No
 *Type*: [PrivateKeyJwtConfig](aws-properties-bedrockagentcore-oauth2credentialprovider-privatekeyjwtconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

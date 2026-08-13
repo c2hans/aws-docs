@@ -18,21 +18,38 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/alas2.html) on or before **February 21, 2022** to all released Amazon Linux 2 platforms.<br /> Some of the platform updates are security releases. For more information, see **Platform-specific updates** in this table. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-03-02-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-03-02-linux.html) |
-| **Base AMI** | Updated the base AMI to version **2.0.20220207**. |
-| **Go** | Updated Go to release **1.17.7**. For details, see [go1.17](https://golang.org/doc/devel/release.html#go1.17) in *The Go Programming Language Release History*. |
-| **Corretto** | Updated Corretto 11 to version **11.0.14.10.1**. For more information, see [Change Log for Amazon Corretto 11](https://github.com/corretto/corretto-11/blob/develop/CHANGELOG.md) in the Corretto 11 repository on GitHub. |
-| **Node.js** | Added a new platform branch, **Node.js 16**. For documentation of the latest version, see [Node.js v16.x Documentation](https://nodejs.org/dist/latest-v16.x/docs/api/). Graviton instance type support for the Node.js 16 platform branch will be available in the next Node.js platform update.<br />Updated Node.js 14 to add support for Node version [14.19.0](https://nodejs.org/en/blog/release/v14.19.0/).<br />Updated Node.js 12 to add support for Node version [12.22.10](https://nodejs.org/en/blog/release/v12.22.10/). This new Node.js 12 version is a security release.<br />The platform branch **Node.js 12 running on 64bit Amazon Linux 2** has been scheduled for retirement on October 31, 2022. For more information, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide. |
-| **PHP** | The platform branch **PHP 7.4 running on 64bit Amazon Linux 2** has been scheduled for retirement on May 31, 2023. For more information, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide. |
-| **Ruby** | Updated RubyGems to release [3.3.7](https://blog.rubygems.org/2022/02/09/3.3.7-released.html).<br />Updated Puma to version [5.6.2](https://github.com/puma/puma/releases/tag/v5.6.2). This new Puma version is a security release.<br />The platform branch **Ruby 2.6 running on 64bit Amazon Linux 2** has been scheduled for retirement on September 30, 2022. For more information, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/alas2.html">Amazon Linux Security Center</a> on or before <b>February 21, 2022</b> to all released Amazon Linux 2 platforms.<br /> Some of the platform updates are security releases. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Base AMI</b></td><td>Updated the base AMI to version <b>2.0.20220207</b>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Go</b></td><td>Updated Go to release <b>1.17.7</b>. For details, see <a href="https://golang.org/doc/devel/release.html#go1.17">go1.17</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Corretto</b></td><td>Updated Corretto 11 to version <b>11.0.14.10.1</b>. For more information, see <a href="https://github.com/corretto/corretto-11/blob/develop/CHANGELOG.md">Change Log for Amazon Corretto 11</a> in the Corretto 11 repository on GitHub.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Added a new platform branch, <b>Node.js 16</b>. For documentation of the latest version, see <a href="https://nodejs.org/dist/latest-v16.x/docs/api/">Node.js v16.x Documentation</a>. Graviton instance type support for the Node.js 16 platform branch will be available in the next Node.js platform update.<br />Updated Node.js 14 to add support for Node version <a href="https://nodejs.org/en/blog/release/v14.19.0/">14.19.0</a>.<br />Updated Node.js 12 to add support for Node version <a href="https://nodejs.org/en/blog/release/v12.22.10/">12.22.10</a>. This new Node.js 12 version is a security release.<br />The platform branch <b>Node.js 12 running on 64bit Amazon Linux 2</b> has been scheduled for retirement on October 31, 2022. For more information, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html">Elastic Beanstalk platform versions scheduled for retirement</a> in the <i>AWS Elastic Beanstalk Platforms</i> guide.</td></tr>
+  <tr><td><b>PHP</b></td><td>The platform branch <b>PHP 7.4 running on 64bit Amazon Linux 2</b> has been scheduled for retirement on May 31, 2023. For more information, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html">Elastic Beanstalk platform versions scheduled for retirement</a> in the <i>AWS Elastic Beanstalk Platforms</i> guide.</td></tr>
+  <tr><td><b>Ruby</b></td><td>Updated RubyGems to release <a href="https://blog.rubygems.org/2022/02/09/3.3.7-released.html">3.3.7</a>.<br />Updated Puma to version <a href="https://github.com/puma/puma/releases/tag/v5.6.2">5.6.2</a>. This new Puma version is a security release.<br />The platform branch <b>Ruby 2.6 running on 64bit Amazon Linux 2</b> has been scheduled for retirement on September 30, 2022. For more information, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html">Elastic Beanstalk platform versions scheduled for retirement</a> in the <i>AWS Elastic Beanstalk Platforms</i> guide.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2022-03-02-linux.platforms"></a>

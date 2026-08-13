@@ -117,7 +117,7 @@ The value of the `Statement` element is an object array. The array in the exampl
 ## Policy document exceeds maximum size
 <a name="scptoolong"></a>
 
-The maximum size of an SCP document is 5,120 characters. This maximum size includes all characters, including white space. To reduce the size of your SCP, you can remove all white space characters (such as spaces and line breaks) that are outside quotation marks.
+The maximum size of an SCP document is 10,240 characters. This maximum size includes all characters, including white space. To reduce the size of your SCP, you can remove all white space characters (such as spaces and line breaks) that are outside quotation marks.
 
 **Note**
 If you save the policy by using the AWS Management Console, extra white space between JSON elements and outside of quotation marks is removed and not counted. If you save the policy using an SDK operation or the AWS CLI, then the policy is saved exactly as you provided and no automatic removal of characters occurs.

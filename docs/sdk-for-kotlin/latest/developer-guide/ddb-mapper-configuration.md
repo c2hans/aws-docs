@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 # Configure DynamoDB Mapper
 <a name="ddb-mapper-configuration"></a>
 
-You configure a `DynamoDbMapper` by passing a configuration block when you create it. The primary configuration mechanism is **interceptors**, which are objects that hook into the mapper’s request pipeline to observe or modify operations as they run.
+You configure a [`DynamoDbMapper`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html) by passing a configuration block when you create it. The primary configuration mechanism is **interceptors**, which are objects that hook into the mapper’s request pipeline to observe or modify operations as they run.
 
 ```
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbMapper
@@ -26,7 +26,7 @@ Every mapper operation flows through a five-step pipeline:
 
 1.  **Serialization**: convert the high-level request (and your objects) into a low-level request (and DynamoDB items).
 
-1.  **Low-level invocation**: call the underlying `DynamoDbClient`.
+1.  **Low-level invocation**: call the underlying [`DynamoDbClient`](/sdk-for-kotlin/api/latest/dynamodb/aws.sdk.kotlin.services.dynamodb/-dynamo-db-client/index.html).
 
 1.  **Deserialization**: convert the low-level response (and DynamoDB items) into a high-level response (and your objects).
 

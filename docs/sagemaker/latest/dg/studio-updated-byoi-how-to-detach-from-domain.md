@@ -103,7 +103,7 @@ If you do not have that file, you can create a new json file instead.
 ------
 #### [ Code Editor: update domain configuration file example ]
 
-   A configuration file example for Code Editor, using [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CodeEditorAppSettings.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CodeEditorAppSettings.html).
+   A configuration file example for Code Editor, using [`CodeEditorAppSettings`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CodeEditorAppSettings.html).
 
    ```
    {
@@ -120,7 +120,7 @@ If you do not have that file, you can create a new json file instead.
 ------
 #### [ JupyterLab: update domain configuration file example ]
 
-   A configuration file example for JupyterLab, using [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_JupyterLabAppSettings.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_JupyterLabAppSettings.html).
+   A configuration file example for JupyterLab, using [`JupyterLabAppSettings`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_JupyterLabAppSettings.html).
 
    ```
    {

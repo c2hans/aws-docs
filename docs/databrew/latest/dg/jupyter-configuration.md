@@ -35,7 +35,7 @@ After you install JupyterLab, you need to configure it to secure data access and
 
    For more information, see [Starting JupyterLab](https://JupyterLab.readthedocs.io/en/stable/getting_started/starting.html) in the JupyterLab documentation.
 
-1. While JupyterLab is running, you can access it at a URL similar to the following: [http://localhost:8888/lab](http://localhost:8888/lab). If you set up encryption, use `https` instead of `http`. If you customized the port, substitute your port number instead of `8888`.
+1. While JupyterLab is running, you can access it at a URL similar to the following: [`http://localhost:{{8888}}/lab`](http://localhost:8888/lab). If you set up encryption, use `https` instead of `http`. If you customized the port, substitute your port number instead of `8888`.
 
 Use the following procedure to enable the third-party extensions.
 

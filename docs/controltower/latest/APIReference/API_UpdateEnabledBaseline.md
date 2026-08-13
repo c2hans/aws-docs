@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Upd
 # UpdateEnabledBaseline
 <a name="API_UpdateEnabledBaseline"></a>
 
-Updates an `EnabledBaseline` resource's applied parameters or version. For usage examples, see [https://docs.aws.amazon.com/controltower/latest/userguide/baseline-api-examples.html](https://docs.aws.amazon.com/controltower/latest/userguide/baseline-api-examples.html).
+Updates an `EnabledBaseline` resource's applied parameters or version. For usage examples, see [*the AWS Control Tower User Guide*](https://docs.aws.amazon.com/controltower/latest/userguide/baseline-api-examples.html).
 
 ## Request Syntax
 <a name="API_UpdateEnabledBaseline_RequestSyntax"></a>

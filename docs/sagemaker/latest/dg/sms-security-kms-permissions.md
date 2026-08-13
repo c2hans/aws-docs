@@ -17,7 +17,7 @@ This section describes the IAM policies you must attach to your customer managed
 
 If you specify an AWS KMS customer managed key to encrypt output data, you must add an IAM policy similar to the following to that key. This policy gives the IAM execution role that you use to create your labeling job permission to use this key to perform all of the actions listed in `"Action"`. To learn more about these actions, see [AWS KMS permissions](https://docs.aws.amazon.com/kms/latest/developerguide/kms-api-permissions-reference.html) in the AWS Key Management Service Developer Guide.
 
-To use this policy, replace the IAM service-role ARN in `"Principal"` with the ARN of the execution role you use to create the labeling job. When you create a labeling job in the console, this is the role you specify for **IAM Role** under the **Job overview** section. When you create a labeling job using `CreateLabelingJob`, this is ARN you specify for [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html#sagemaker-CreateLabelingJob-request-RoleArn](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html#sagemaker-CreateLabelingJob-request-RoleArn).
+To use this policy, replace the IAM service-role ARN in `"Principal"` with the ARN of the execution role you use to create the labeling job. When you create a labeling job in the console, this is the role you specify for **IAM Role** under the **Job overview** section. When you create a labeling job using `CreateLabelingJob`, this is ARN you specify for [`RoleArn`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html#sagemaker-CreateLabelingJob-request-RoleArn).
 
 ```
 {
@@ -40,9 +40,9 @@ To use this policy, replace the IAM service-role ARN in `"Principal"` with the A
 ## Encrypt Automated Data Labeling ML Compute Instance Storage Volume
 <a name="sms-security-kms-permissions-storage-volume"></a>
 
-If you specify a [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_LabelingJobResourceConfig.html#sagemaker-Type-LabelingJobResourceConfig-VolumeKmsKeyId](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_LabelingJobResourceConfig.html#sagemaker-Type-LabelingJobResourceConfig-VolumeKmsKeyId) to encrypt the storage volume attached to the ML compute instance used for automated data labeling training and inference, you must do the following:
+If you specify a [`VolumeKmsKeyId`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_LabelingJobResourceConfig.html#sagemaker-Type-LabelingJobResourceConfig-VolumeKmsKeyId) to encrypt the storage volume attached to the ML compute instance used for automated data labeling training and inference, you must do the following:
 + Attach permissions described in [Encrypt Output Data using KMS](#sms-security-kms-permissions-output-data) to the customer managed key.
-+ Attach a policy similar to the following to the IAM execution role you use to create your labeling job. This is the IAM role you specify for [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html#sagemaker-CreateLabelingJob-request-RoleArn](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html#sagemaker-CreateLabelingJob-request-RoleArn) in `CreateLabelingJob`. To learn more about the `"kms:CreateGrant"` action that this policy permits, see [https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) in the AWS Key Management Service API Reference.
++ Attach a policy similar to the following to the IAM execution role you use to create your labeling job. This is the IAM role you specify for [`RoleArn`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html#sagemaker-CreateLabelingJob-request-RoleArn) in `CreateLabelingJob`. To learn more about the `"kms:CreateGrant"` action that this policy permits, see [`CreateGrant`](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) in the AWS Key Management Service API Reference.
 
 ------
 #### [ JSON ]

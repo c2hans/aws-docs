@@ -13,6 +13,7 @@ Returns information about the DB nodes for the specified VM cluster.
 ```
 {
    "cloudVmClusterId": "{{string}}",
+   "exadbVmClusterId": "{{string}}",
    "maxResults": {{number}},
    "nextToken": "{{string}}"
 }
@@ -26,11 +27,18 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [cloudVmClusterId](#API_ListDbNodes_RequestSyntax) **   <a name="odb-ListDbNodes-request-cloudVmClusterId"></a>
-The unique identifier of the VM cluster.
+The unique identifier of the VM cluster. You must specify either this parameter or `exadbVmClusterId`.
 Type: String
 Length Constraints: Minimum length of 6. Maximum length of 64.
 Pattern: `[a-zA-Z0-9_~.-]+`
-Required: Yes
+Required: No
+
+ ** [exadbVmClusterId](#API_ListDbNodes_RequestSyntax) **   <a name="odb-ListDbNodes-request-exadbVmClusterId"></a>
+The unique identifier of the Exascale VM cluster. You must specify either this parameter or `cloudVmClusterId`.
+Type: String
+Length Constraints: Minimum length of 6. Maximum length of 64.
+Pattern: `[a-zA-Z0-9_~.-]+`
+Required: No
 
  ** [maxResults](#API_ListDbNodes_RequestSyntax) **   <a name="odb-ListDbNodes-request-maxResults"></a>
 The maximum number of items to return for this request. To get the next page of items, make another request with the token returned in the output.

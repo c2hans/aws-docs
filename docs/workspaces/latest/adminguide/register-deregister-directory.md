@@ -9,7 +9,7 @@ To allow WorkSpaces to use an existing Directory Service directory, you must reg
 
 **Requirements:** To register a directory for use with WorkSpaces, it must meet the following requirement:
 + If you're using AWS Managed Microsoft AD or Simple AD, your directory can be in a dedicated private subnet, as long as the directory has access to the VPC where the WorkSpaces are located.
-+ For more information about directory and VPC design, see the [https://d1.awsstatic.com/whitepapers/Best-Practices-for-Deploying-Amazon-WorkSpaces.pdf](https://d1.awsstatic.com/whitepapers/Best-Practices-for-Deploying-Amazon-WorkSpaces.pdf) whitepaper.
++ For more information about directory and VPC design, see the [*Best Practices for Deploying Amazon WorkSpaces*](https://d1.awsstatic.com/whitepapers/Best-Practices-for-Deploying-Amazon-WorkSpaces.pdf) whitepaper.
 
 **Note**
 Simple AD and AD Connector are made available to you free of charge to use with WorkSpaces. If there are no WorkSpaces being used with your Simple AD or AD Connector directory for 30 consecutive days, this directory will be automatically deregistered for use with Amazon WorkSpaces, and you will be charged for this directory as per the [AWS Directory Service pricing terms](https://aws.amazon.com/directoryservice/pricing/).

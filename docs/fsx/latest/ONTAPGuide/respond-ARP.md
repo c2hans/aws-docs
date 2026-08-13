@@ -28,7 +28,7 @@ The following procedures explain how to use the ONTAP CLI to view Autonomous Ran
   Number of Attacks: 1
   ```
 
-  For more information about this command, see [https://docs.netapp.com/us-en/ontap-cli/security-anti-ransomware-volume-show.html#description](https://docs.netapp.com/us-en/ontap-cli/security-anti-ransomware-volume-show.html#description) in the NetApp documentation center.
+  For more information about this command, see [`security anti-ransomware volume show`](https://docs.netapp.com/us-en/ontap-cli/security-anti-ransomware-volume-show.html#description) in the NetApp documentation center.
 
 ## Generating ARP reports
 <a name="generate-ARP-report"></a>
@@ -40,7 +40,7 @@ The following procedures explain how to use the ONTAP CLI to view Autonomous Ran
   security anti-ransomware volume attack generate-report -volume {{vol_name}} -dest-path {{/file_location/}}
   ```
 
-  For more information about this command, see [https://docs.netapp.com/us-en/ontap-cli/security-anti-ransomware-volume-attack-generate-report.html#description](https://docs.netapp.com/us-en/ontap-cli/security-anti-ransomware-volume-attack-generate-report.html#description) in the NetApp documentation center.
+  For more information about this command, see [`security anti-ransomware volume attack generate-report`](https://docs.netapp.com/us-en/ontap-cli/security-anti-ransomware-volume-attack-generate-report.html#description) in the NetApp documentation center.
 
 ## Taking action on ARP reports
 <a name="take-action-ARP"></a>
@@ -52,7 +52,7 @@ The following procedures explain how to use the ONTAP CLI to view Autonomous Ran
   security anti-ransomware volume attack clear-suspect -vserver {{svm_name}} -volume {{vol_name}} {{[extension identifiers]}} -false-positive true
   ```
 
-  For more information about this command, see [https://docs.netapp.com/us-en/ontap-cli/security-anti-ransomware-volume-attack-clear-suspect.html#description](https://docs.netapp.com/us-en/ontap-cli/security-anti-ransomware-volume-attack-clear-suspect.html#description) in the NetApp documentation center.
+  For more information about this command, see [`security anti-ransomware volume attack clear-suspect`](https://docs.netapp.com/us-en/ontap-cli/security-anti-ransomware-volume-attack-clear-suspect.html#description) in the NetApp documentation center.
 **Note**
 When you mark an alert as a false positive, it updates the ransomware profile. After doing so, you won't receive an alert about that particular scenario again.
 
@@ -63,4 +63,4 @@ When you mark an alert as a false positive, it updates the ransomware profile. A
   security anti-ransomware volume attack clear-suspect -vserver {{svm_name}} -volume {{vol_name}} {{[extension identifiers]}} -false-positive false
   ```
 
-  For more information about this command, see [https://docs.netapp.com/us-en/ontap-cli/security-anti-ransomware-volume-attack-clear-suspect.html#description](https://docs.netapp.com/us-en/ontap-cli/security-anti-ransomware-volume-attack-clear-suspect.html#description) in the NetApp documentation center.
+  For more information about this command, see [`security anti-ransomware volume attack clear-suspect`](https://docs.netapp.com/us-en/ontap-cli/security-anti-ransomware-volume-attack-clear-suspect.html#description) in the NetApp documentation center.

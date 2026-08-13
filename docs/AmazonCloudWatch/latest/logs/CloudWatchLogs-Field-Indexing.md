@@ -43,9 +43,10 @@ CloudWatch Logs indexes only the log events ingested after an index policy is cr
 **Note**
 If you create a field index policy in a monitoring account, that policy is not used for log groups in linked source accounts. A field index policy applies only in the account where it is created.
 
-The rest of the topics in this section explain how to create field indexes. For information about referring to field indexes in your queries, see [filterIndex](CWL_QuerySyntax-FilterIndex.md) and [filter](CWL_QuerySyntax-Filter.md).
+The rest of the topics in this section explain automatically indexed fields and how to create field indexes. For information about referring to field indexes in your queries, see [filterIndex](CWL_QuerySyntax-FilterIndex.md) and [filter](CWL_QuerySyntax-Filter.md).
 
 **Topics**
++ [Automatically indexed fields](CloudWatchLogs-Field-Indexing-Automatic.md)
 + [Field index syntax and quotas](CloudWatchLogs-Field-Indexing-Syntax.md)
 + [Create an account-level field index policy](CloudWatchLogs-Field-Indexing-CreateAccountLevel.md)
 + [Create a log-group level field index policy](CloudWatchLogs-Field-Indexing-CreateLogGroupLevel.md)

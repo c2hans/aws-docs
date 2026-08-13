@@ -733,7 +733,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action with the preceding request to create the application:
+1. Execute the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action with the preceding request to create the application:
 
    ```
    aws kinesisanalyticsv2 create-application --cli-input-json file://create_request.json
@@ -744,7 +744,7 @@ The application is now created. You start the application in the next step.
 ##### Start the Application
 <a name="get-started-exercise-7-cli-start-1-13"></a>
 
-In this section, you use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action to start the application.
+In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action to start the application.
 
 **To start the application**
 
@@ -761,7 +761,7 @@ In this section, you use the [https://docs.aws.amazon.com/managed-service-for-ap
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action with the preceding request to start the application:
+1. Execute the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action with the preceding request to start the application:
 
    ```
    aws kinesisanalyticsv2 start-application --cli-input-json file://start_request.json
@@ -772,7 +772,7 @@ The application is now running. You can check the Managed Service for Apache Fli
 ##### Stop the Application
 <a name="get-started-exercise-7-cli-stop-1-13"></a>
 
-In this section, you use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action to stop the application.
+In this section, you use the [`StopApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action to stop the application.
 
 **To stop the application**
 
@@ -784,7 +784,7 @@ In this section, you use the [https://docs.aws.amazon.com/managed-service-for-ap
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action with the following request to stop the application:
+1. Execute the [`StopApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action with the following request to stop the application:
 
    ```
    aws kinesisanalyticsv2 stop-application --cli-input-json file://stop_request.json
@@ -800,7 +800,7 @@ You can use the AWS CLI to add an Amazon CloudWatch log stream to your applicati
 ##### Update Environment Properties
 <a name="get-started-exercise-7-cli-update-env-1-13"></a>
 
-In this section, you use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action to change the environment properties for the application without recompiling the application code. In this example, you change the Region of the source and destination streams.
+In this section, you use the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action to change the environment properties for the application without recompiling the application code. In this example, you change the Region of the source and destination streams.
 
 **To update environment properties for the application**
 
@@ -832,7 +832,7 @@ In this section, you use the [https://docs.aws.amazon.com/managed-service-for-ap
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action with the preceding request to update environment properties:
+1. Execute the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action with the preceding request to update environment properties:
 
    ```
    aws kinesisanalyticsv2 update-application --cli-input-json file://update_properties_request.json
@@ -841,7 +841,7 @@ In this section, you use the [https://docs.aws.amazon.com/managed-service-for-ap
 ##### Update the Application Code
 <a name="get-started-exercise-7-cli-update-code-1-13"></a>
 
-When you need to update your application code with a new version of your code package, you use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) AWS CLI action.
+When you need to update your application code with a new version of your code package, you use the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) AWS CLI action.
 
 **Note**
 To load a new version of the application code with the same file name, you must specify the new object version. For more information about using Amazon S3 object versions, see [Enabling or Disabling Versioning](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/enable-versioning.html).
@@ -1562,7 +1562,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action with the preceding request to create the application:
+1. Execute the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action with the preceding request to create the application:
 
    ```
    aws kinesisanalyticsv2 create-application --cli-input-json file://create_request.json
@@ -1573,7 +1573,7 @@ The application is now created. You start the application in the next step.
 ##### Start the application
 <a name="earlier-gs-1_11-get-started-exercise-7-cli-start"></a>
 
-In this section, you use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action to start the application.
+In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action to start the application.
 
 **To start the application**
 
@@ -1590,7 +1590,7 @@ In this section, you use the [https://docs.aws.amazon.com/managed-service-for-ap
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action with the preceding request to start the application:
+1. Execute the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action with the preceding request to start the application:
 
    ```
    aws kinesisanalyticsv2 start-application --cli-input-json file://start_request.json
@@ -1601,7 +1601,7 @@ The application is now running. You can check the Managed Service for Apache Fli
 ##### Stop the application
 <a name="earlier-gs-1_11-get-started-exercise-7-cli-stop"></a>
 
-In this section, you use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action to stop the application.
+In this section, you use the [`StopApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action to stop the application.
 
 **To stop the application**
 
@@ -1613,7 +1613,7 @@ In this section, you use the [https://docs.aws.amazon.com/managed-service-for-ap
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action with the following request to stop the application:
+1. Execute the [`StopApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action with the following request to stop the application:
 
    ```
    aws kinesisanalyticsv2 stop-application --cli-input-json file://stop_request.json
@@ -1629,7 +1629,7 @@ You can use the AWS CLI to add an Amazon CloudWatch log stream to your applicati
 ##### Update environment properties
 <a name="earlier-gs-1_11-get-started-exercise-7-cli-update-env"></a>
 
-In this section, you use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action to change the environment properties for the application without recompiling the application code. In this example, you change the Region of the source and destination streams.
+In this section, you use the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action to change the environment properties for the application without recompiling the application code. In this example, you change the Region of the source and destination streams.
 
 **To update environment properties for the application**
 
@@ -1661,7 +1661,7 @@ In this section, you use the [https://docs.aws.amazon.com/managed-service-for-ap
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action with the preceding request to update environment properties:
+1. Execute the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action with the preceding request to update environment properties:
 
    ```
    aws kinesisanalyticsv2 update-application --cli-input-json file://update_properties_request.json
@@ -1670,7 +1670,7 @@ In this section, you use the [https://docs.aws.amazon.com/managed-service-for-ap
 ##### Update the application code
 <a name="earlier-gs-1_11-get-started-exercise-7-cli-update-code"></a>
 
-When you need to update your application code with a new version of your code package, you use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) AWS CLI action.
+When you need to update your application code with a new version of your code package, you use the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) AWS CLI action.
 
 **Note**
 To load a new version of the application code with the same file name, you must specify the new object version. For more information about using Amazon S3 object versions, see [Enabling or Disabling Versioning](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/enable-versioning.html).
@@ -2388,7 +2388,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action with the preceding request to create the application:
+1. Execute the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action with the preceding request to create the application:
 
    ```
    aws kinesisanalyticsv2 create-application --cli-input-json file://create_request.json
@@ -2399,7 +2399,7 @@ The application is now created. You start the application in the next step.
 ##### Start the application
 <a name="earlier-gs-1_8-exercise-7-cli-start"></a>
 
-In this section, you use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action to start the application.
+In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action to start the application.
 
 **To start the application**
 
@@ -2416,7 +2416,7 @@ In this section, you use the [https://docs.aws.amazon.com/managed-service-for-ap
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action with the preceding request to start the application:
+1. Execute the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action with the preceding request to start the application:
 
    ```
    aws kinesisanalyticsv2 start-application --cli-input-json file://start_request.json
@@ -2427,7 +2427,7 @@ The application is now running. You can check the Managed Service for Apache Fli
 ##### Stop the application
 <a name="earlier-gs-1_8-exercise-7-cli-stop"></a>
 
-In this section, you use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action to stop the application.
+In this section, you use the [`StopApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action to stop the application.
 
 **To stop the application**
 
@@ -2439,7 +2439,7 @@ In this section, you use the [https://docs.aws.amazon.com/managed-service-for-ap
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action with the following request to stop the application:
+1. Execute the [`StopApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action with the following request to stop the application:
 
    ```
    aws kinesisanalyticsv2 stop-application --cli-input-json file://stop_request.json
@@ -2455,7 +2455,7 @@ You can use the AWS CLI to add an Amazon CloudWatch log stream to your applicati
 ##### Update environment properties
 <a name="earlier-gs-1_8-exercise-7-cli-update-env"></a>
 
-In this section, you use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action to change the environment properties for the application without recompiling the application code. In this example, you change the Region of the source and destination streams.
+In this section, you use the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action to change the environment properties for the application without recompiling the application code. In this example, you change the Region of the source and destination streams.
 
 **To update environment properties for the application**
 
@@ -2487,7 +2487,7 @@ In this section, you use the [https://docs.aws.amazon.com/managed-service-for-ap
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action with the preceding request to update environment properties:
+1. Execute the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action with the preceding request to update environment properties:
 
    ```
    aws kinesisanalyticsv2 update-application --cli-input-json file://update_properties_request.json
@@ -2496,7 +2496,7 @@ In this section, you use the [https://docs.aws.amazon.com/managed-service-for-ap
 ##### Update the application code
 <a name="earlier-gs-1_8-exercise-7-cli-update-code"></a>
 
-When you need to update your application code with a new version of your code package, you use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) AWS CLI action.
+When you need to update your application code with a new version of your code package, you use the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) AWS CLI action.
 
 **Note**
 To load a new version of the application code with the same file name, you must specify the new object version. For more information about using Amazon S3 object versions, see [Enabling or Disabling Versioning](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/enable-versioning.html).
@@ -3198,7 +3198,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action with the preceding request to create the application:
+1. Execute the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action with the preceding request to create the application:
 
    ```
    aws kinesisanalyticsv2 create-application --cli-input-json file://create_request.json
@@ -3209,7 +3209,7 @@ The application is now created. You start the application in the next step.
 ##### Start the application
 <a name="earlier-gs-1_6-exercise-7-cli-start"></a>
 
-In this section, you use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action to start the application.
+In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action to start the application.
 
 **To start the application**
 
@@ -3226,7 +3226,7 @@ In this section, you use the [https://docs.aws.amazon.com/managed-service-for-ap
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action with the preceding request to start the application:
+1. Execute the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action with the preceding request to start the application:
 
    ```
    aws kinesisanalyticsv2 start-application --cli-input-json file://start_request.json
@@ -3237,7 +3237,7 @@ The application is now running. You can check the Managed Service for Apache Fli
 ##### Stop the application
 <a name="earlier-gs-1_6-exercise-7-cli-stop"></a>
 
-In this section, you use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action to stop the application.
+In this section, you use the [`StopApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action to stop the application.
 
 **To stop the application**
 
@@ -3249,7 +3249,7 @@ In this section, you use the [https://docs.aws.amazon.com/managed-service-for-ap
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action with the following request to stop the application:
+1. Execute the [`StopApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action with the following request to stop the application:
 
    ```
    aws kinesisanalyticsv2 stop-application --cli-input-json file://stop_request.json
@@ -3265,7 +3265,7 @@ You can use the AWS CLI to add an Amazon CloudWatch log stream to your applicati
 ##### Update environment properties
 <a name="earlier-gs-1_6-exercise-7-cli-update-env"></a>
 
-In this section, you use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action to change the environment properties for the application without recompiling the application code. In this example, you change the Region of the source and destination streams.
+In this section, you use the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action to change the environment properties for the application without recompiling the application code. In this example, you change the Region of the source and destination streams.
 
 **To update environment properties for the application**
 
@@ -3297,7 +3297,7 @@ In this section, you use the [https://docs.aws.amazon.com/managed-service-for-ap
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action with the preceding request to update environment properties:
+1. Execute the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action with the preceding request to update environment properties:
 
    ```
    aws kinesisanalyticsv2 update-application --cli-input-json file://update_properties_request.json
@@ -3306,7 +3306,7 @@ In this section, you use the [https://docs.aws.amazon.com/managed-service-for-ap
 ##### Update the application code
 <a name="earlier-gs-1_6-exercise-7-cli-update-code"></a>
 
-When you need to update your application code with a new version of your code package, you use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) AWS CLI action.
+When you need to update your application code with a new version of your code package, you use the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) AWS CLI action.
 
 To use the AWS CLI, delete your previous code package from your Amazon S3 bucket, upload the new version, and call `UpdateApplication`, specifying the same Amazon S3 bucket and object name. The application will restart with the new code package.
 
@@ -5661,7 +5661,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action with the preceding request to create the application:
+1. Execute the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action with the preceding request to create the application:
 
    ```
    aws kinesisanalyticsv2 create-application --cli-input-json file://create_request.json
@@ -5672,7 +5672,7 @@ The application is now created. You start the application in the next step.
 ##### Start the application
 <a name="get-started-exercise-fh-7-cli-start"></a>
 
-In this section, you use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action to start the application.
+In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action to start the application.
 
 **To start the application**
 
@@ -5689,7 +5689,7 @@ In this section, you use the [https://docs.aws.amazon.com/managed-service-for-ap
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action with the preceding request to start the application:
+1. Execute the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action with the preceding request to start the application:
 
    ```
    aws kinesisanalyticsv2 start-application --cli-input-json file://start_request.json
@@ -5700,7 +5700,7 @@ The application is now running. You can check the Managed Service for Apache Fli
 ##### Stop the application
 <a name="get-started-exercise-fh-7-cli-stop"></a>
 
-In this section, you use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action to stop the application.
+In this section, you use the [`StopApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action to stop the application.
 
 **To stop the application**
 
@@ -5712,7 +5712,7 @@ In this section, you use the [https://docs.aws.amazon.com/managed-service-for-ap
    }
    ```
 
-1. Execute the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action with the following request to stop the application:
+1. Execute the [`StopApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action with the following request to stop the application:
 
    ```
    aws kinesisanalyticsv2 stop-application --cli-input-json file://stop_request.json
@@ -5728,7 +5728,7 @@ You can use the AWS CLI to add an Amazon CloudWatch log stream to your applicati
 ##### Update the application code
 <a name="get-started-exercise-fh-7-cli-update-code"></a>
 
-When you need to update your application code with a new version of your code package, you use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) AWS CLI action.
+When you need to update your application code with a new version of your code package, you use the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) AWS CLI action.
 
 To use the AWS CLI, delete your previous code package from your Amazon S3 bucket, upload the new version, and call `UpdateApplication`, specifying the same Amazon S3 bucket and object name.
 
@@ -6604,7 +6604,7 @@ The application code is located in the `tumbling-windows.py` file. Note the foll
           .group_by("ticker, ten_second_window")
           .select("ticker, price.min as price, to_string(ten_second_window.end) as event_time")
   ```
-+ The application uses the Kinesis Flink connector, from the [https://mvnrepository.com/artifact/org.apache.flink/flink-sql-connector-kinesis/1.15.2](https://mvnrepository.com/artifact/org.apache.flink/flink-sql-connector-kinesis/1.15.2) .
++ The application uses the Kinesis Flink connector, from the [`flink-sql-connector-kinesis-1.15.2.jar`](https://mvnrepository.com/artifact/org.apache.flink/flink-sql-connector-kinesis/1.15.2) .
 
 ##### Compress and upload the Apache Flink streaming Python code
 <a name="examples-python-tumbling-upload"></a>

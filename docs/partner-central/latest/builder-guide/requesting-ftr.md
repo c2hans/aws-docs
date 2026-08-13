@@ -58,12 +58,12 @@ Your submission is reviewed automatically. You receive approval or feedback with
 
 After you submit, the FTR status on your solution updates to reflect the outcome:
 + **Approved** — Your solution passed FTR validation. The Validation tab displays the FTR expiration date and your solution is eligible for program benefits including badging, Partner Solutions Finder listing, and APN program eligibility.
-+ **Action required** — Your submission did not pass one or more validation controls. The Validation tab displays specific feedback identifying which controls failed and what to address. Review the feedback, work with your auditor or team to resolve the issues, then choose **Resubmit** to upload an updated report.
++ **Action required** — Your submission did not pass one or more validation checks. The Validation tab displays specific feedback identifying which checks failed and what to address. Review the feedback, work with your auditor or team to resolve the issues, then choose **Resubmit** to upload an updated report.
 
-## Validation controls
+## Validation checks
 <a name="ftr-validation-controls"></a>
 
-The automated review evaluates your submitted report against the following controls. For the full list of FTR requirements, see the [Software FTR guide](https://partnercentral.awspartner.com/partnercentral2/s/article?category=Introductory_resources&article=AWS-Foundational-Technical-Review).
+The automated review evaluates your submitted report against the following checks. For the full list of FTR requirements, see the [Software FTR guide](https://partnercentral.awspartner.com/partnercentral2/s/article?category=Introductory_resources&article=AWS-Foundational-Technical-Review).
 
 **SOC 2 Type II reports:**
 + Report issue date is within 1 year
@@ -76,6 +76,7 @@ The automated review evaluates your submitted report against the following contr
 + Report is less than 1 year old
 + Zero high-risk issues (HRIs) identified in the Security, Operational Excellence, and Reliability pillars
 + The specific partner solution is referenced in either the workload name or workload description
++ The reviewer's full name and email address are referenced in the reviewer owner field
 + The WAFR is conducted using the AWS Well-Architected Tool (the review can be performed by the partner as a self-service exercise, or with the assistance of an AWS employee, a Well-Architected Program Partner (WAPP), or ISV tools)
 
 ## Resubmit after feedback

@@ -10,7 +10,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 The intrinsic function `Fn::ImportValue` returns the value of an output exported by another stack. You typically use this function to create cross-stack references. For more information, see [Walkthrough: Refer to resource outputs in another CloudFormation stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/walkthrough-crossstackref.html) in the *AWS CloudFormation User Guide*.
 
 **Tip**
-To reference stack outputs across AWS accounts or Regions without requiring explicit exports, use [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getstackoutput.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getstackoutput.html). `Fn::GetStackOutput` creates a weak reference that is resolved at stack create or update time and does not require the referenced stack to declare an `Export`.
+To reference stack outputs across AWS accounts or Regions without requiring explicit exports, use [`Fn::GetStackOutput`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getstackoutput.html). `Fn::GetStackOutput` creates a weak reference that is resolved at stack create or update time and does not require the referenced stack to declare an `Export`.
 
 In the following example template snippets, Stack A exports VPC security group values and Stack B imports them.
 

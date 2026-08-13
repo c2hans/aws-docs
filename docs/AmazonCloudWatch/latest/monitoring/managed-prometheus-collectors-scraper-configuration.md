@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/manag
 
 Amazon CloudWatch managed Prometheus collectors use a Prometheus-compatible YAML configuration to define how the collector scrapes metrics. You provide this configuration as a base64-encoded blob when creating or updating a scraper. The configuration uses standard Prometheus scrape configuration format, with some limitations specific to managed collectors.
 
-You can use [https://docs.aws.amazon.com/prometheus/latest/APIReference/API_GetDefaultScraperConfiguration.html](https://docs.aws.amazon.com/prometheus/latest/APIReference/API_GetDefaultScraperConfiguration.html) to retrieve a general-purpose scraper configuration, or provide your own.
+You can use [GetDefaultScraperConfiguration](https://docs.aws.amazon.com/prometheus/latest/APIReference/API_GetDefaultScraperConfiguration.html) to retrieve a general-purpose scraper configuration, or provide your own.
 
 ## Supported configuration sections
 <a name="managed-prometheus-collectors-scraper-configuration-supported"></a>
@@ -74,6 +74,6 @@ If your scraper is not collecting metrics as expected, check the following:
 + Verify that the security group attached to the scraper allows outbound traffic to your target ports.
 + Confirm that your targets are reachable from the subnets that you specified in the scraper configuration.
 + Check that DNS names used in `dns_sd_configs` resolve correctly within the VPC.
-+ Ensure your targets respond on the configured `metrics_path` with valid Prometheus exposition format.
++ Make sure your targets respond on the configured `metrics_path` with valid Prometheus exposition format.
 
 For additional troubleshooting guidance, see [Troubleshooting managed collectors](https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-troubleshooting.html) in the *Amazon Managed Service for Prometheus User Guide*.

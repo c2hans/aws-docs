@@ -18,10 +18,10 @@ Manage Amazon Simple Workflow Service tags using the AWS SDKs or by interacting 
 
 **Note**
 There is a limit of 50 tags per resource. See [General Account Quotas for Amazon SWF](swf-dg-limits.md#swf-dg-limits-general)
-+ [https://docs.aws.amazon.com/amazonswf/latest/apireference/API_RegisterDomain.html](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_RegisterDomain.html)
-+ [https://docs.aws.amazon.com/amazonswf/latest/apireference/API_ListTagsForResource.html](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_ListTagsForResource.html)
-+ [https://docs.aws.amazon.com/amazonswf/latest/apireference/API_TagResource.html](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_TagResource.html)
-+ [https://docs.aws.amazon.com/amazonswf/latest/apireference/API_UntagResource.html](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_UntagResource.html)
++ [`RegisterDomain`](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_RegisterDomain.html)
++ [`ListTagsForResource`](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_ListTagsForResource.html)
++ [`TagResource`](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_TagResource.html)
++ [`UntagResource`](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_UntagResource.html)
 
 For more information see [Working with Amazon SWF APIs](swf-dg-using-swf-api.md), and [Amazon Simple Workflow Service API Reference](https://docs.aws.amazon.com/amazonswf/latest/apireference/).
 

@@ -455,22 +455,22 @@ You can't subscribe distributions to a pricing plan if their configuration conta
   <tr><th>Unsupported features</th><th>Alternative options</th><th>AWS service</th></tr>
 </thead>
 <tbody>
-  <tr><td> [Multi-tenant distributions](distribution-config-options.md) </td><td>Use a [standard distribution ](Introduction.md#choose-standard-or-multi-tenant)or pay-as-you-go pricing</td><td>CloudFront</td></tr>
-  <tr><td>[Continuous deployment](continuous-deployment.md) and [Staging distributions](understanding-continuous-deployment.md#updating-staging-and-primary-distributions)</td><td>Use pay-as-you-go pricing</td><td>CloudFront</td></tr>
-  <tr><td>[Anycast IP list](request-static-ips.md) configuration</td><td>Use pay-as-you-go pricing</td><td>CloudFront</td></tr>
-  <tr><td> [Real-time access logs](real-time-logs.md) </td><td>Use [standard access logs](DownloadDistValuesGeneral.md#DownloadDistValuesLoggingOnOff) or pay-as-you-go pricing</td><td>CloudFront</td></tr>
+  <tr><td> <a href="distribution-config-options.md">Multi-tenant distributions</a> </td><td>Use a <a href="Introduction.md#choose-standard-or-multi-tenant">standard distribution </a>or pay-as-you-go pricing</td><td>CloudFront</td></tr>
+  <tr><td><a href="continuous-deployment.md">Continuous deployment</a> and <a href="understanding-continuous-deployment.md#updating-staging-and-primary-distributions">Staging distributions</a></td><td>Use pay-as-you-go pricing</td><td>CloudFront</td></tr>
+  <tr><td><a href="request-static-ips.md">Anycast IP list</a> configuration</td><td>Use pay-as-you-go pricing</td><td>CloudFront</td></tr>
+  <tr><td> <a href="real-time-logs.md">Real-time access logs</a> </td><td>Use <a href="DownloadDistValuesGeneral.md#DownloadDistValuesLoggingOnOff">standard access logs</a> or pay-as-you-go pricing</td><td>CloudFront</td></tr>
   <tr><td>Targeted Bots</td><td>Use common bots or pay-as-you-go pricing</td><td>AWS WAF</td></tr>
   <tr><td>Partner Managed Rules</td><td>Use pay-as-you-go pricing</td><td>AWS WAF</td></tr>
   <tr><td>Account Creation Fraud Prevention</td><td>Use pay-as-you-go pricing</td><td>AWS WAF</td></tr>
   <tr><td>Account Takeover Protection</td><td>Use pay-as-you-go pricing</td><td>AWS WAF</td></tr>
   <tr><td>Rule Groups</td><td>Create individual rules (rule groups are shared AWS WAF rules that can be applied to a web ACL, similar to policies on CloudFront)</td><td>AWS WAF</td></tr>
-  <tr><td colspan="2"> Legacy features </td><td></td></tr>
-  <tr><td>[ForwardedValues](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ForwardedValues.html) configuration</td><td>Use [Origin request policies](controlling-origin-requests.md)</td><td>CloudFront</td></tr>
-  <tr><td> [Dedicated IP/SSL](cnames-and-https-switch-dedicated-to-sni.md) </td><td>Use pay-as-you-go pricing</td><td>CloudFront</td></tr>
-  <tr><td> [Field level encryption](field-level-encryption.md) </td><td>Use pay-as-you-go pricing</td><td>CloudFront</td></tr>
-  <tr><td> [AWS Identity and Access Management (IAM) server certificates](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_server-certs.html) </td><td>Use AWS Certificate Manager (ACM) certificates</td><td>CloudFront</td></tr>
-  <tr><td> [Origin access identity (OAI)](private-content-restricting-access-to-s3.md#migrate-from-oai-to-oac) </td><td>Use [Origin access control (OAC)](private-content-restricting-access-to-origin.md)</td><td>CloudFront</td></tr>
-  <tr><td>Legacy cache settings</td><td>Use [cache policies](cache-key-understand-cache-policy.md) and [origin request policies](understanding-how-origin-request-policies-and-cache-policies-work-together.md).</td><td>CloudFront</td></tr>
+  <tr><td colspan="2"> <b>Legacy features</b> </td><td></td></tr>
+  <tr><td><a href="https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ForwardedValues.html">ForwardedValues</a> configuration</td><td>Use <a href="controlling-origin-requests.md">Origin request policies</a></td><td>CloudFront</td></tr>
+  <tr><td> <a href="cnames-and-https-switch-dedicated-to-sni.md">Dedicated IP/SSL</a> </td><td>Use pay-as-you-go pricing</td><td>CloudFront</td></tr>
+  <tr><td> <a href="field-level-encryption.md">Field level encryption</a> </td><td>Use pay-as-you-go pricing</td><td>CloudFront</td></tr>
+  <tr><td> <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_server-certs.html">AWS Identity and Access Management (IAM) server certificates</a> </td><td>Use AWS Certificate Manager (ACM) certificates</td><td>CloudFront</td></tr>
+  <tr><td> <a href="private-content-restricting-access-to-s3.md#migrate-from-oai-to-oac">Origin access identity (OAI)</a> </td><td>Use <a href="private-content-restricting-access-to-origin.md">Origin access control (OAC)</a></td><td>CloudFront</td></tr>
+  <tr><td>Legacy cache settings</td><td>Use <a href="cache-key-understand-cache-policy.md">cache policies</a> and <a href="understanding-how-origin-request-policies-and-cache-policies-work-together.md">origin request policies</a>.</td><td>CloudFront</td></tr>
 </tbody>
 </table>
 

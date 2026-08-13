@@ -1604,10 +1604,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   InvokeGuardrailChecks  **
   - **SDK client:** bedrock-runtime
-  - **IAM action:**  [bedrock:InvokeGuardrailChecks](#list_bedrock-action-InvokeGuardrailChecks)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Read
+  - **IAM action:**  [bedrock:CallWithBearerToken](#list_bedrock-action-CallWithBearerToken)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [bedrock:InvokeGuardrailChecks](#list_bedrock-action-InvokeGuardrailChecks)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
 
 - **   InvokeModel  **
   - **SDK client:** bedrock-runtime

@@ -315,9 +315,9 @@ The following example populates the `Person` table with two items, then performs
 
 The first scan accesses all items in the table in order to compare the results to the other scan operations.
 
-The second scan uses the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/ScanEnhancedRequest.Builder.html#addNestedAttributeToProject(software.amazon.awssdk.enhanced.dynamodb.NestedAttributeName)](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/ScanEnhancedRequest.Builder.html#addNestedAttributeToProject(software.amazon.awssdk.enhanced.dynamodb.NestedAttributeName)) builder method to return only the `street` attribute value.
+The second scan uses the [`addNestedAttributeToProject()`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/ScanEnhancedRequest.Builder.html#addNestedAttributeToProject(software.amazon.awssdk.enhanced.dynamodb.NestedAttributeName)) builder method to return only the `street` attribute value.
 
-The third scan operation uses the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/ScanEnhancedRequest.Builder.html#attributesToProject(java.lang.String...)](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/ScanEnhancedRequest.Builder.html#attributesToProject(java.lang.String...)) builder method to return the data for the first-level attribute, `hobbies`. The attribute type of `hobbies` is a list. To access individual list items, perform a `get()` operation on the list.
+The third scan operation uses the [`attributesToProject()`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/ScanEnhancedRequest.Builder.html#attributesToProject(java.lang.String...)) builder method to return the data for the first-level attribute, `hobbies`. The attribute type of `hobbies` is a list. To access individual list items, perform a `get()` operation on the list.
 
 ```
         personDynamoDbTable = getDynamoDbEnhancedClient().table("Person", PERSON_TABLE_SCHEMA);
@@ -595,7 +595,7 @@ The following example show two filter expressions that are used in scan operatio
 
 To update an item that contains complex types, you have two basic approaches:
 + Approach 1: First retrieve the item (by using `getItem`), update the object, then call `DynamoDbTable#updateItem`.
-+ Approach 2: Don't retrieve the item, but construct a new instance, set the properties you want to update, and submit the instance to `DynamoDbTable#updateItem` by setting the appropriate value of [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/IgnoreNullsMode.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/IgnoreNullsMode.html) . This approach does not require that you fetch the item before updating it.
++ Approach 2: Don't retrieve the item, but construct a new instance, set the properties you want to update, and submit the instance to `DynamoDbTable#updateItem` by setting the appropriate value of [`IgnoreNullsMode`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/IgnoreNullsMode.html) . This approach does not require that you fetch the item before updating it.
 
 The examples shown in this section use the `Person`, `Address`, and `PhoneNumber` classes shown previously.
 
@@ -652,7 +652,7 @@ The following example demonstrates that no data is lost if you first retrieve th
 
 To update an item in DynamoDB, you can provide a new object that has only the properties that you want updated and leave the other values as null. With this approach, you need to be aware of how null values in the object are treated by the SDK and how you can control the behavior.
 
-To specify which null-valued properties you want the SDK to ignore, provide an `IgnoreNullsMode` enum when you build the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/UpdateItemEnhancedRequest.Builder.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/UpdateItemEnhancedRequest.Builder.html). As an example of using one of the enumerated values, the following snippet uses the `IgnoreNullsMode.SCALAR_ONLY` mode.
+To specify which null-valued properties you want the SDK to ignore, provide an `IgnoreNullsMode` enum when you build the [`UpdateItemEnhancedRequest`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/UpdateItemEnhancedRequest.Builder.html). As an example of using one of the enumerated values, the following snippet uses the `IgnoreNullsMode.SCALAR_ONLY` mode.
 
 ```
 // Create a new Person object to update the existing item in DynamoDB.

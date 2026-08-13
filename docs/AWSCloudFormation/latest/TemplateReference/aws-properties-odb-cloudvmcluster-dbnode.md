@@ -101,7 +101,7 @@ The unique identifier of the DB node.
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `DbNodeStorageSizeInGBs`  <a name="cfn-odb-cloudvmcluster-dbnode-dbnodestoragesizeingbs"></a>
-The amount of local node storage, in gigabytes (GBs), that's allocated on the DB node.
+The amount of local node storage, in gigabytes (GB), that's allocated on the DB node.
 *Required*: No
 *Type*: Integer
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)

@@ -68,9 +68,9 @@ If you just have questions about AL2023, feel free to start or join a [discussio
 
 New packages in AL2023.0.20230419:
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html)  / **Architectures:** noarch
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html)  / **Architectures:** noarch
+- ** [`amazon-linux-onprem`](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html) **
+  - **RPM:**  [`amazon-linux-onprem`](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html)  / **Architectures:** noarch
+  - **RPM:**  [`amazon-onprem-network`](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html)  / **Architectures:** noarch
   - **Version:** 1.0-0.amzn2023
 
 - ** `dovecot` **
@@ -120,8 +120,8 @@ New packages in AL2023.0.20230419:
 
 The full comparison of RPM package versions is below.
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
+- ** [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
+  - **RPM:**  [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
   - **Architectures:** noarch
   - **AL2023.0.20230329 version:** 1.34.5-1.amzn2023
   - **AL2023.0.20230419 version:** 1.35.0-1.amzn2023
@@ -153,8 +153,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.0.20230329 version:** 1.0-2.amzn2023.0.5
   - **AL2023.0.20230419 version:** 1.1-1.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
+- ** [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
+  - **RPM:**  [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.0.20230329 version:** 1.68.2-1.amzn2023
   - **AL2023.0.20230419 version:** 1.70.1-1.amzn2023

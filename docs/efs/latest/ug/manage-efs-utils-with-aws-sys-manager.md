@@ -10,7 +10,7 @@ You can use AWS Systems Manager to simplify the management of the Amazon EFS cli
 + Centrally storing and systematically distributing the Amazon EFS client to your Amazon EC2 instances.
 + Automate the process of keeping your EC2 instances in a defined state.
 
-For more information, see the [https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html).
+For more information, see the [*AWS Systems Manager User Guide*](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html).
 
 ## What the Amazon EFS client does during installation
 <a name="what-efs-utils-does"></a>

@@ -2,12 +2,12 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-ai-guardrails.html
 ---
 
-# Create AI guardrails for Connect AI agents
+# Create AI guardrails for AI agents
 <a name="create-ai-guardrails"></a>
 
 An *AI guardrail* is a resource that enables you to implement safeguards based on your use cases and responsible AI policies.
 
-Connect AI agents use Amazon Bedrock guardrails. You can create and edit these guardrails in the Connect Customer admin website.
+AI agents use Amazon Bedrock guardrails. You can create and edit these guardrails in the Connect Customer admin website.
 
 **Topics**
 + [Important things to know](#important-ai-guardrail)
@@ -19,7 +19,7 @@ Connect AI agents use Amazon Bedrock guardrails. You can create and edit these g
 <a name="important-ai-guardrail"></a>
 + You can create up to three custom guardrails.
 + Orchestration AI agents do not support contextual grounding policies. If you create or update an orchestration AI agent that uses an AI guardrail with a contextual grounding policy, you will then see a validation error.
-+ Guardrails for Connect AI agents support the same languages as Amazon Bedrock guardrails classic tier. For a complete list of supported languages, see [Languages supported by Amazon Bedrock Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-supported-languages.html). Evaluating text content in other languages will be ineffective.
++ Guardrails for AI agents support the same languages as Amazon Bedrock guardrails classic tier. For a complete list of supported languages, see [Languages supported by Amazon Bedrock Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-supported-languages.html). Evaluating text content in other languages will be ineffective.
 + When configuring or editing a guardrail, we strongly recommend that you experiment and benchmark with different configurations. It's possible that some of your combinations may have unintended consequences. Test the guardrail to ensure that the results meet your use-case requirements.
 + When guardrails are enabled with streaming responses, there is additional latency because text chunks must be buffered and scanned before being delivered. This primarily affects time-to-first-token (TTFT), as the system needs to accumulate enough text to perform a meaningful guardrail evaluation before streaming the first chunk to the end user. Minor additional latency on top of TTFT is expected, depending on guardrail configurations. Shorter responses may experience proportionally more noticeable latency since the guardrail scan must still process a minimum buffer of text. This is an inherent tradeoff between content safety accuracy and response speed. If your use case is latency-sensitive, consider whether guardrails are necessary for all interactions, or if they can be selectively applied. For more information about synchronous guardrail streaming mode, see [Configure streaming response behavior to filter content](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-streaming.html) in the *Amazon Bedrock User Guide*.
 

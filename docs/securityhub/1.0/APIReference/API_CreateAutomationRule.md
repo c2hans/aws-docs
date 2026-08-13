@@ -385,7 +385,7 @@ Valid Range: Minimum value of 1. Maximum value of 1000.
 Required: Yes
 
  ** [RuleStatus](#API_CreateAutomationRule_RequestSyntax) **   <a name="securityhub-CreateAutomationRule-request-RuleStatus"></a>
- Whether the rule is active after it is created. If this parameter is equal to `ENABLED`, Security Hub CSPM starts applying the rule to findings and finding updates after the rule is created. To change the value of this parameter after creating a rule, use [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateAutomationRules.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateAutomationRules.html).
+ Whether the rule is active after it is created. If this parameter is equal to `ENABLED`, Security Hub CSPM starts applying the rule to findings and finding updates after the rule is created. To change the value of this parameter after creating a rule, use [`BatchUpdateAutomationRules`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateAutomationRules.html).
 Type: String
 Valid Values: `ENABLED | DISABLED`
 Required: No

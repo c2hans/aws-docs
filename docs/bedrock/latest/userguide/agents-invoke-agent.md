@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-invoke-a
 # Invoke an agent from your application
 <a name="agents-invoke-agent"></a>
 
-Use your agent in an application by making an [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request with an [Agents for Amazon Bedrock runtime endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-rt).
+Use your agent in an application by making an [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request with an [Agents for Amazon Bedrock runtime endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-rt).
 
 By default, the response from `InvokeAgent` includes a chunk that contains the complete response from the agent, which can take a while to complete. Alternatively, you can configure `InvokeAgent` to stream the response in multiple smaller chunks. This decreases the latency of the initial response from the agent.
 
@@ -36,7 +36,7 @@ Each chunk has at least 3 characters except for the last chunk.
 ## Invoke an agent
 <a name="invoke-agent-example"></a>
 
-The following Python example shows how to call the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) operation and display the output from the agent, as well as any [trace](trace-events.md) information that the call generates.
+The following Python example shows how to call the [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) operation and display the output from the agent, as well as any [trace](trace-events.md) information that the call generates.
 
 **To invoke an agent**
 

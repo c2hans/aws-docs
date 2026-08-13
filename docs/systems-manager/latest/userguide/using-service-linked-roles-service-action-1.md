@@ -39,9 +39,9 @@ Systems Manager doesn't allow you to edit the `AWSServiceRoleForAmazonSSM` servi
 ## Deleting the `AWSServiceRoleForAmazonSSM` service-linked role for Systems Manager
 <a name="delete-service-linked-role-service-action-1"></a>
 
-If you no longer need to use any feature or service that requires a service-linked role, then we recommend that you delete that role. That way you don’t have an unused entity that isn't actively monitored or maintained. You can use the IAM console, the AWS CLI, or the IAM API to manually delete the service-linked role. To do this, you must first manually clean up the resources for your service-linked role, and then you can manually delete it.
+If you no longer need to use any feature or service that requires a service-linked role, then we recommend that you delete that role. That way you don’t have an unused entity that isn't actively monitored or maintained. You can use the IAM console, the AWS CLI, or the IAM API to manually delete the service-linked role. To do this, you must first manually clean up the resources for your service-linked role. Then, you can manually delete it.
 
-Because the `AWSServiceRoleForAmazonSSM` service-linked role can be used by multiple tools, ensure that none are using the role before attempting to delete it.
+Because the `AWSServiceRoleForAmazonSSM` service-linked role can be used by multiple tools, make sure that none are using the role before attempting to delete it.
 + **Inventory:** If you delete the service-linked role used by the Inventory tool, then the Inventory data for tags and resource groups will no longer be synchronized. You must clean up the resources for your service-linked role before you can manually delete it.
 + **Explorer:** If you delete the service-linked role used by the Explorer tool, then the cross-account and cross-Region OpsData and OpsItems are no longer viewable.
 

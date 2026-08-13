@@ -12,14 +12,14 @@ To address the latest security issues, Amazon SageMaker AI automatically patches
 
 Avoid deleting any of the following resources if you have existing endpoints that use them:
 + The model definition that you create with the [CreateModel](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) action in the Amazon SageMaker API.
-+ Any model artifacts that you specify for the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ContainerDefinition.html#sagemaker-Type-ContainerDefinition-ModelDataUrl](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ContainerDefinition.html#sagemaker-Type-ContainerDefinition-ModelDataUrl) parameter.
-+ The IAM role and permissions that you specify for the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html#sagemaker-CreateModel-request-ExecutionRoleArn](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html#sagemaker-CreateModel-request-ExecutionRoleArn) parameter.
++ Any model artifacts that you specify for the [`ModelDataUrl`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ContainerDefinition.html#sagemaker-Type-ContainerDefinition-ModelDataUrl) parameter.
++ The IAM role and permissions that you specify for the [`ExecutionRoleArn`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html#sagemaker-CreateModel-request-ExecutionRoleArn) parameter.
 **Reminder**
 In the model definition that your endpoint uses, ensure that the IAM role that you specified has the correct permissions. For more information about the required permissions for Amazon SageMaker AI endpoints, see [CreateModel API: Execution Role Permissions](sagemaker-roles.md#sagemaker-roles-createmodel-perms).
-+ The inference images that you specify for the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ContainerDefinition.html#sagemaker-Type-ContainerDefinition-Image](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ContainerDefinition.html#sagemaker-Type-ContainerDefinition-Image) parameter, if you use your own inference code.
++ The inference images that you specify for the [`Image`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ContainerDefinition.html#sagemaker-Type-ContainerDefinition-Image) parameter, if you use your own inference code.
 **Reminder**
 If you use the private registry feature, ensure that Amazon SageMaker AI can access the private registry as long as you're using the endpoint.
-+ The Amazon VPC subnets and security groups that you specify for the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html#sagemaker-CreateModel-request-VpcConfig](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html#sagemaker-CreateModel-request-VpcConfig) parameter.
++ The Amazon VPC subnets and security groups that you specify for the [`VpcConfig`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html#sagemaker-CreateModel-request-VpcConfig) parameter.
 + The endpoint configuration that you create with the [CreateEndpointConfig](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpointConfig.html) action in the Amazon SageMaker API.
 + Any KMS keys or Amazon S3 buckets that you specify in the endpoint configuration.
 **Reminder**

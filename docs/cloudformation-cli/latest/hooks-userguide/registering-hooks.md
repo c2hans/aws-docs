@@ -23,7 +23,7 @@ mvn clean package
 
 **To register a Hook**
 
-1. (Optional) Configure your default AWS Region name to `us-west-2`, by submitting the [https://docs.aws.amazon.com/cli/latest/reference/configure/](https://docs.aws.amazon.com/cli/latest/reference/configure/) operation.
+1. (Optional) Configure your default AWS Region name to `us-west-2`, by submitting the [configure](https://docs.aws.amazon.com/cli/latest/reference/configure/) operation.
 
    ```
    $ aws configure
@@ -39,7 +39,7 @@ mvn clean package
    $ cfn submit --dry-run
    ```
 
-1. Register your Hook by using the CloudFormation CLI [https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-cli-submit.html](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-cli-submit.html) operation.
+1. Register your Hook by using the CloudFormation CLI [submit](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-cli-submit.html) operation.
 
    ```
    $ cfn submit --set-default
@@ -58,7 +58,7 @@ mvn clean package
 
 Verify that your Hook is available in your AWS account and in the Regions to which you have submitted it.
 
-1. To verify your Hook, use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-types.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-types.html) command to list your newly registered Hook and return a summary description of it.
+1. To verify your Hook, use the [list-types](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-types.html) command to list your newly registered Hook and return a summary description of it.
 
    ```
    $ aws cloudformation list-types
@@ -93,7 +93,7 @@ To learn how to publish Hooks for public use, see [Publishing Hooks for public u
 <a name="configure-hooks"></a>
 
 After you've developed and registered your Hook, you can configure your Hook in your AWS account by publishing it to the registry.
-+ To configure a Hook in your account, use the [https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetTypeConfiguration.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetTypeConfiguration.html) operation. This operation enables the Hook’s properties that are defined in the Hook’s schema `properties` section. In the following example, the `minBuckets` property is set to `1` in the configuration.
++ To configure a Hook in your account, use the [SetTypeConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetTypeConfiguration.html) operation. This operation enables the Hook’s properties that are defined in the Hook’s schema `properties` section. In the following example, the `minBuckets` property is set to `1` in the configuration.
 **Note**
 By enabling Hooks in your account, you are authorizing a Hook to use defined permissions from your AWS account. CloudFormation removes non-required permissions before passing your permissions to the Hook. CloudFormation recommends customers or Hook users to review the Hook permissions and be aware of what permissions the Hooks are allowed to before enabling Hooks in your account.
 
@@ -110,7 +110,7 @@ To enable your Hook to proactively inspect the configuration of your stack, you 
 ## Accessing AWS APIs in handlers
 <a name="accessing-apis-in-handlers"></a>
 
-If your Hooks uses an AWS API in any of its handlers, the CFN-CLI automatically creates an IAM execution role template, `hook-role.yaml`. The `hook-role.yaml` template is based on the permissions specified for each handler in the handler's section of the Hook schema. If the `--role-arn` flag is not used during the [https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-cli-generate.html](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-cli-generate.html) operation, the role in this stack will be provisioned and used as the execution role of the Hook.
+If your Hooks uses an AWS API in any of its handlers, the CFN-CLI automatically creates an IAM execution role template, `hook-role.yaml`. The `hook-role.yaml` template is based on the permissions specified for each handler in the handler's section of the Hook schema. If the `--role-arn` flag is not used during the [generate](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-cli-generate.html) operation, the role in this stack will be provisioned and used as the execution role of the Hook.
 
 For more information, see [Accessing AWS APIs from a resource type.](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-develop.html#resource-type-develop-executionrole)
 

@@ -60,7 +60,7 @@ We highly recommend that you use Amazon FSx as your data channel if you are usin
 
 If you encounter the error message `ValueError: Invalid backend: 'smddp'` when calling `init_process_group`, this is due to the breaking change in the SMDDP library v1.4.0 and later. You must import the PyTorch client of the library, `smdistributed.dataparallel.torch.torch_smddp`, which registers `smddp` as a backend for PyTorch. To learn more, see [Use the SMDDP library in your PyTorch training script](data-parallel-modify-sdp-pt.md).
 
-**Q: (For the SMDDP library v1.4.0 or later) I would like to call the collective primitives of the [https://pytorch.org/docs/stable/distributed.html](https://pytorch.org/docs/stable/distributed.html) interface. Which primitives does the `smddp` backend support?**
+**Q: (For the SMDDP library v1.4.0 or later) I would like to call the collective primitives of the [`torch.distributed`](https://pytorch.org/docs/stable/distributed.html) interface. Which primitives does the `smddp` backend support?**
 
 In v1.4.0, the SMDDP library supports `all_reduce`, `broadcast`, `reduce`, `all_gather`, and `barrier` of of the `torch.distributed` interface.
 

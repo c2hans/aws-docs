@@ -66,7 +66,7 @@ Choose one of the following MCP-compatible AI assistants or any MCP-compatible t
 ## Step 1: Configure your AI assistant
 <a name="_step_1_configure_your_ai_assistant"></a>
 
-Choose from any one of the following options to setup your AI code assistant. Completing this step sets up your AI code assistant to use the MCP Proxy for AWS, which is required for secure, authenticated access to the Amazon EKS MCP Server. This involves adding or editing the MCP configuration file (e.g., `~/.aws/amazonq/mcp.json` for Amazon Q Developer CLI). The proxy acts as a client-side bridge, handling AWS SigV4 authentication using your local AWS credentials and enabling dynamic tool discovery for interacting with backend AWS MCP servers like the EKS MCP Server. To learn more, see the [https://github.com/aws/mcp-proxy-for-aws](https://github.com/aws/mcp-proxy-for-aws).
+Choose from any one of the following options to setup your AI code assistant. Completing this step sets up your AI code assistant to use the MCP Proxy for AWS, which is required for secure, authenticated access to the Amazon EKS MCP Server. This involves adding or editing the MCP configuration file (e.g., `~/.aws/amazonq/mcp.json` for Amazon Q Developer CLI). The proxy acts as a client-side bridge, handling AWS SigV4 authentication using your local AWS credentials and enabling dynamic tool discovery for interacting with backend AWS MCP servers like the EKS MCP Server. To learn more, see the [*MCP Proxy for AWS repository*](https://github.com/aws/mcp-proxy-for-aws).
 
 ### Option A: Amazon Q Developer CLI
 <a name="_option_a_amazon_q_developer_cli"></a>
@@ -153,7 +153,7 @@ Kiro is an AI-first coding workspace with built-in [MCP support](https://kiro.de
 <a name="_1_open_kiro_settings"></a>
 + Open Kiro
 + Go to **Kiro** → **Settings** and search for "MCP Config"
-+ Or press `Cmd+Shift+P,` (Mac) or `Ctrl+Shift+P,` (Windows/Linux) and search for "MCP Config"
++ Or press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows/Linux) and search for "MCP Config"
 
 #### 2. Add MCP Server Configuration
 <a name="_2_add_mcp_server_configuration_2"></a>
@@ -464,7 +464,7 @@ If you work with multiple AWS accounts, create separate MCP server configuration
       "command": "uvx",
       "args": [
         "mcp-proxy-for-aws@latest",
-        "https://eks-mcp.{region}.api.aws/mcp",
+        "https://eks-mcp.us-west-2.api.aws/mcp",
         "--service",
         "eks-mcp",
         "--profile",
@@ -479,7 +479,7 @@ If you work with multiple AWS accounts, create separate MCP server configuration
       "command": "uvx",
       "args": [
         "mcp-proxy-for-aws@latest",
-        "https://eks-mcp.{region}.api.aws/mcp",
+        "https://eks-mcp.us-east-1.api.aws/mcp",
         "--service",
         "eks-mcp",
         "--profile",
@@ -505,7 +505,7 @@ If you work with multiple AWS accounts, create separate MCP server configuration
         "--from",
         "mcp-proxy-for-aws@latest",
         "mcp-proxy-for-aws.exe",
-        "https://eks-mcp.{region}.api.aws/mcp",
+        "https://eks-mcp.us-west-2.api.aws/mcp",
         "--service",
         "eks-mcp",
         "--profile",
@@ -522,7 +522,7 @@ If you work with multiple AWS accounts, create separate MCP server configuration
         "--from",
         "mcp-proxy-for-aws@latest",
         "mcp-proxy-for-aws.exe",
-        "https://eks-mcp.{region}.api.aws/mcp",
+        "https://eks-mcp.us-east-1.api.aws/mcp",
         "--service",
         "eks-mcp",
         "--profile",
@@ -549,7 +549,7 @@ Create a read-only configuration for production environments.
       "command": "uvx",
       "args": [
         "mcp-proxy-for-aws@latest",
-        "https://eks-mcp.{region}.api.aws/mcp",
+        "https://eks-mcp.us-west-2.api.aws/mcp",
         "--service",
         "eks-mcp",
         "--profile",
@@ -579,7 +579,7 @@ Create a read-only configuration for production environments.
         "--from",
         "mcp-proxy-for-aws@latest",
         "mcp-proxy-for-aws.exe",
-        "https://eks-mcp.{region}.api.aws/mcp",
+        "https://eks-mcp.us-west-2.api.aws/mcp",
         "--service",
         "eks-mcp",
         "--profile",
@@ -612,7 +612,7 @@ For development environments with full write access.
       "command": "uvx",
       "args": [
         "mcp-proxy-for-aws@latest",
-        "https://eks-mcp.{region}.api.aws/mcp",
+        "https://eks-mcp.us-east-1.api.aws/mcp",
         "--service",
         "eks-mcp",
         "--profile",
@@ -636,7 +636,7 @@ For development environments with full write access.
         "--from",
         "mcp-proxy-for-aws@latest",
         "mcp-proxy-for-aws.exe",
-        "https://eks-mcp.{region}.api.aws/mcp",
+        "https://eks-mcp.us-east-1.api.aws/mcp",
         "--service",
         "eks-mcp",
         "--profile",

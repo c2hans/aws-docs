@@ -5,11 +5,11 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/github-webhoo
 # Filter GitHub webhook events (CloudFormation)
 <a name="github-webhook-events-cfn"></a>
 
- To use an CloudFormation template to filter webhook events, use the AWS CodeBuild project's `FilterGroups` property.
+ To use a CloudFormation template to filter webhook events, use the AWS CodeBuild project's `FilterGroups` property.
 
 For more information about GitHub webhook events, see [GitHub webhook events](github-webhook.md).
 
-The following YAML-formatted portion of an CloudFormation template creates two filter groups. Together, they trigger a build when one or both evaluate to true:
+The following YAML-formatted portion of a CloudFormation template creates two filter groups. Together, they trigger a build when one or both evaluate to true:
 +  The first filter group specifies pull requests are created or updated on branches with Git reference names that match the regular expression `^refs/heads/main$` by a GitHub user who does not have account ID `12345`.
 +  The second filter group specifies push requests are created on files with names that match the regular expression `READ_ME` in branches with Git reference names that match the regular expression `^refs/heads/.*`.
 + The third filter group specifies a push request with a head commit message matching the regular expression `\[CodeBuild\]`.

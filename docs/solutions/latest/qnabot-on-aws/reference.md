@@ -5,14 +5,14 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/reference
 # Reference
 <a name="reference"></a>
 
-This section includes information about an optional feature for [collecting unique metrics](#anonymized-data-collection) for this solution, [pointers to related resources](#related-aws-documentation), and a [list of builders](#contributors) who contributed to this solution.
+This section includes information about an optional feature for [collecting unique metrics](#anonymized-data-collection) for this guidance, [pointers to related resources](#related-aws-documentation), and a [list of builders](#contributors) who contributed to this guidance.
 
 ## Anonymized data collection
 <a name="anonymized-data-collection"></a>
 
-This solution includes an option to send anonymized operational metrics to AWS. We use this data to better understand how customers use this solution and related services and products. When invoked, the following information is collected and sent to AWS:
+This guidance includes an option to send anonymized operational metrics to AWS. We use this data to better understand how customers use this guidance and related services and products. When invoked, the following information is collected and sent to AWS:
 +  **Solution ID** - The AWS solution identifier
-+  **Unique ID (UUID)** - Randomly generated, unique identifier for each solution deployment
++  **Unique ID (UUID)** - Randomly generated, unique identifier for each guidance deployment
 +  **Timestamp** - The UTC formatted timestamp of when the event occurred
 +  **Data** - The Region where the stack launched, request type (whether the stack was created, updated, or deleted), and details about the option chosen (for example, language, OpenSearch node count, OpenSearch EBS volume size, LLM API, etc.) For example:
 
@@ -56,7 +56,7 @@ AWS owns the data gathered through this survey. Data collection is subject to th
 
 1. Under **Upload a template file**, choose **Choose file** and select the edited template from your local drive.
 
-1. Choose **Next** and follow the steps in Launch the stack for the relevant deployment option in the [Deploy the solution](deploy-the-solution.md) section of this guide.
+1. Choose **Next** and follow the steps in Launch the stack for the relevant deployment option in the [Deploy the guidance](deploy-the-solution.md) section of this guide.
 
 ## Related AWS documentation
 <a name="related-aws-documentation"></a>

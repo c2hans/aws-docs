@@ -2,12 +2,12 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-analytics.html
 ---
 
-# Enable conversational analytics in Connect Customer Contact Lens
+# Enable conversational analytics in Connect Customer conversational analytics
 <a name="enable-analytics"></a>
 
-You can enable Contact Lens conversational analytics in a few steps:
+You can enable conversational analytics in a few steps:
 
-1. Enable Contact Lens on your Connect Customer instance.
+1. Enable conversational analytics on your Connect Customer instance.
 
 1. Add a [Set recording and analytics behavior](set-recording-behavior.md) block to a flow, and configure it to enable conversational analytics for voice, chat, email, or a combination of channels.
 
@@ -22,7 +22,7 @@ For new flows, the [Set recording, analytics and processing behavior](set-record
 
 **Topics**
 + [Important things to know](#important-set-behaviorblock)
-+ [Enable Contact Lens for your Connect Customer instance](#enable-cl)
++ [Enable conversational analytics for your Connect Customer instance](#enable-cl)
 + [Enable call recording and speech analytics](#enable-callrecording-speechanalytics)
 + [Enable chat analytics](#enable-chatanalytics)
 + [Enable email analytics](#enable-emailanalytics)
@@ -39,27 +39,27 @@ For new flows, the [Set recording, analytics and processing behavior](set-record
 + **Collect data after transferring a contact**: If you want to continue using conversational analytics to collect data after transferring a contact to another agent or queue, you need to add another [Set recording and analytics behavior](set-recording-behavior.md) block with **Enable analytics** enabled for the flow. This is because a transfer generates a second contact ID and contact record. Conversational analytics needs to run on that contact record as well.
 **Note**
 For [queue-to-queue transfers](queue-to-queue-transfer.md) the configuration information for conversational analytics is copied to the transferred contact.
-+ When you choose a language that is supported by sentiment analysis, AND select **Enable Contact Lens speech analytics**, **Enable chat analytics**, or **Enable email analytics** in the [Set recording and analytics behavior](set-recording-behavior.md) block, sentiment analysis is enabled by default. You can choose to [disable sentiment analysis](#disable-sentiment-analysis-voice-and-chat).
++ When you choose a language that is supported by sentiment analysis, AND select **Enable conversational analytics speech analytics**, **Enable chat analytics**, or **Enable email analytics** in the [Set recording and analytics behavior](set-recording-behavior.md) block, sentiment analysis is enabled by default. You can choose to [disable sentiment analysis](#disable-sentiment-analysis-voice-and-chat).
 + Where you place the [Set recording and analytics behavior](set-recording-behavior.md) block in a flow affects the agent's experience with key highlights. For more information, see [Design a flow for key highlights](#call-summarization-agent).
 
-## Enable Contact Lens for your Connect Customer instance
+## Enable conversational analytics for your Connect Customer instance
 <a name="enable-cl"></a>
 
-Before you can enable conversational analytics, you first need to enable Contact Lens for your instance.
+Before you can enable conversational analytics, you first need to enable conversational analytics for your instance.
 
 1. Open the Connect Customer console at [https://console.aws.amazon.com/connect/](https://console.aws.amazon.com/connect/).
 
 1. On the instances page, choose the instance alias. The instance alias is also your **instance name**, which appears in your Connect Customer URL. The following image shows the **Connect Customer virtual contact center instances** page, with a box around the instance alias.
 ![The Connect Customer virtual contact center instances page, the instance alias.](http://docs.aws.amazon.com/connect/latest/adminguide/images/instance.png)
 
-1. In the Connect Customer console, in the navigation pane, choose **Analytics tools**, and then choose **Enable Contact Lens**.
+1. In the Connect Customer console, in the navigation pane, choose **Analytics tools**, and then choose **Enable conversational analytics**.
 
 1. Choose **Save**.
 
 ## Enable call recording and speech analytics
 <a name="enable-callrecording-speechanalytics"></a>
 
-After Contact Lens is enabled for your instance, you can add [Set recording and analytics behavior](set-recording-behavior.md) blocks to your flows. You then enable conversational analytics when you configure the **Set recording and analytics behavior** block.
+After conversational analytics is enabled for your instance, you can add [Set recording and analytics behavior](set-recording-behavior.md) blocks to your flows. You then enable conversational analytics when you configure the **Set recording and analytics behavior** block.
 
 1. In the flow designer add a [Set recording and analytics behavior](set-recording-behavior.md) block to your flow.
 
@@ -69,17 +69,17 @@ After Contact Lens is enabled for your instance, you can add [Set recording and 
 
    Both agent and customer call recordings are required to use conversational analytics for voice contacts.
 
-1. Under **Analytics**, choose **Enable Contact Lens conversational analytics**, **Enable speech analytics**.
+1. Under **Analytics**, choose **Enable conversational analytics**, **Enable speech analytics**.
 
-   If you don't see this option, Connect Customer Contact Lens hasn't been enabled for your instance. For instructions to enable it, see [Enable Contact Lens for your Connect Customer instance](#enable-cl).
+   If you don't see this option, Connect Customer conversational analytics hasn't been enabled for your instance. For instructions to enable it, see [Enable conversational analytics for your Connect Customer instance](#enable-cl).
 
 1. Choose one of the following:
 
-   1. **Post-call analytics**: Contact Lens analyzes the call recording after the conversation and After Contact Work (ACW) is complete. This option provides the best transcription accuracy.
+   1. **Post-call analytics**: conversational analytics analyzes the call recording after the conversation and After Contact Work (ACW) is complete. This option provides the best transcription accuracy.
 
-   1. **Real-time analytics**: Contact Lens provides both real-time insights during the call, and post-call analytics after the conversation has ended and After Contact Work (ACW) is complete.
+   1. **Real-time analytics**: conversational analytics provides both real-time insights during the call, and post-call analytics after the conversation has ended and After Contact Work (ACW) is complete.
 
-      If you choose this option, we recommend setting up alerts based on keywords and phrases that the customer may utter during the call. Contact Lens analyzes the conversation real-time to detect the specified keywords or phrases, and alerts supervisors. From there, supervisors can listen in on the live call and provide guidance to the agent to help them resolve the issue faster.
+      If you choose this option, we recommend setting up alerts based on keywords and phrases that the customer may utter during the call. conversational analytics analyzes the conversation real-time to detect the specified keywords or phrases, and alerts supervisors. From there, supervisors can listen in on the live call and provide guidance to the agent to help them resolve the issue faster.
 
       For information about setting up alerts, see [Alert supervisors in real-time for calls](add-rules-for-alerts.md).
 
@@ -93,16 +93,16 @@ After Contact Lens is enabled for your instance, you can add [Set recording and 
 
 1. Choose **Save**.
 
-1. If the contact is going to be transferred to another agent or queue, repeat these steps to add another [Set recording and analytics behavior](set-recording-behavior.md) block with **Enable Contact Lens for conversational analytics** enabled.
+1. If the contact is going to be transferred to another agent or queue, repeat these steps to add another [Set recording and analytics behavior](set-recording-behavior.md) block with **Enable conversational analytics for conversational analytics** enabled.
 
 ## Enable chat analytics
 <a name="enable-chatanalytics"></a>
 
-1. In the [Set recording and analytics behavior](set-recording-behavior.md) block, under **Analytics**, choose **Enable Contact Lens conversational analytics**, and **Enable chat analytics**.
+1. In the [Set recording and analytics behavior](set-recording-behavior.md) block, under **Analytics**, choose **Enable conversational analytics**, and **Enable chat analytics**.
 **Note**
 By choosing this option you will receive both real-time and post-chat analytics.
 
-   If you don't see this option, Connect Customer Contact Lens hasn't been enabled for your instance. For instructions to enable it, see [Enable Contact Lens for your Connect Customer instance](#enable-cl).
+   If you don't see this option, Connect Customer conversational analytics hasn't been enabled for your instance. For instructions to enable it, see [Enable conversational analytics for your Connect Customer instance](#enable-cl).
 
 1. Choose from the [list of available languages](supported-languages.md#supported-languages-contact-lens).
 
@@ -112,12 +112,12 @@ By choosing this option you will receive both real-time and post-chat analytics.
 
 1. Choose **Save**.
 
-1. If the contact is going to be transferred to another agent or queue, repeat these steps to add another [Set recording and analytics behavior](set-recording-behavior.md) block with **Enable Contact Lens for conversational analytics** enabled.
+1. If the contact is going to be transferred to another agent or queue, repeat these steps to add another [Set recording and analytics behavior](set-recording-behavior.md) block with **Enable conversational analytics for conversational analytics** enabled.
 
 ## Enable email analytics
 <a name="enable-emailanalytics"></a>
 
-You can enable Contact Lens conversational analytics for email contacts to automatically categorize emails, redact sensitive data, and generate contact summaries.
+You can enable conversational analytics for email contacts to automatically categorize emails, redact sensitive data, and generate contact summaries.
 
 1. In the flow designer, add a [Set recording, analytics and processing behavior](set-recording-analytics-processing-behavior.md) block to your inbound email flow. Place the block before the email contact is routed to a queue or agent.
 
@@ -125,19 +125,19 @@ You can enable Contact Lens conversational analytics for email contacts to autom
 
 1. For **Channel**, choose **Email**.
 
-1. Under **Analytics**, choose **Enable Contact Lens conversational analytics**, and **Enable email analytics**.
+1. Under **Analytics**, choose **Enable conversational analytics**, and **Enable email analytics**.
 
-   If you don't see this option, Connect Customer Contact Lens hasn't been enabled for your instance. For instructions to enable it, see [Enable Contact Lens for your Connect Customer instance](#enable-cl).
+   If you don't see this option, Connect Customer conversational analytics hasn't been enabled for your instance. For instructions to enable it, see [Enable conversational analytics for your Connect Customer instance](#enable-cl).
 
 1. Choose from the [list of available languages](supported-languages.md#supported-languages-contact-lens).
 
 1. Optionally, enable redaction of sensitive data. For more information, see [Enable redaction](#enable-redaction).
 
-1. Optionally, under **Contact Lens Generative AI capabilities**, enable **Contact summary** to generate summaries for email contacts.
+1. Optionally, under **Generative AI capabilities**, enable **Contact summary** to generate summaries for email contacts.
 
 1. Choose **Save**.
 
-1. If the email contact is going to be transferred to another agent or queue, repeat these steps to add another [Set recording, analytics and processing behavior](set-recording-analytics-processing-behavior.md) block with **Enable Contact Lens for conversational analytics** enabled.
+1. If the email contact is going to be transferred to another agent or queue, repeat these steps to add another [Set recording, analytics and processing behavior](set-recording-analytics-processing-behavior.md) block with **Enable conversational analytics for conversational analytics** enabled.
 
 ## Enable redaction of sensitive data
 <a name="enable-redaction"></a>
@@ -146,7 +146,7 @@ When you configure the [Set recording and analytics behavior](set-recording-beha
 + Redact all personally identifiable information (PII) data (all PII entities supported).
 + Choose which PII entities to redact from the list of supported entities.
 
-If you accept the default settings, Contact Lens conversational analytics redacts all personally identifiable information (PII) it identifies, and replaces it with **[PII]** in the transcript. The default settings are shown in the following image because the following options are selected: **Redact sensitive data**, **Redact All PII data**, and **Replace with placeholder PII**.
+If you accept the default settings, conversational analytics redacts all personally identifiable information (PII) it identifies, and replaces it with **[PII]** in the transcript. The default settings are shown in the following image because the following options are selected: **Redact sensitive data**, **Redact All PII data**, and **Replace with placeholder PII**.
 
 ![The default settings for sensitive data redaction.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-enable-redaction-default.png)
 
@@ -169,7 +169,7 @@ For more information about using redaction, see [Use sensitive data redaction](s
 ## Review sensitive data redaction for accuracy
 <a name="review-sensitive-data-redaction"></a>
 
-The redaction feature is designed to identify and remove sensitive data. However, due to the predictive nature of machine learning, it may not identify and remove all instances of sensitive data in a transcript generated by Contact Lens. We recommend you review any redacted output to ensure it meets your needs.
+The redaction feature is designed to identify and remove sensitive data. However, due to the predictive nature of machine learning, it may not identify and remove all instances of sensitive data in a transcript generated by conversational analytics. We recommend you review any redacted output to ensure it meets your needs.
 
 **Important**
 The redaction feature does not meet the requirements for de-identification under medical privacy laws like the U.S. Health Insurance Portability and Accountability Act of 1996 (HIPAA), so we recommend you continue to treat it as protected health information after redaction.
@@ -278,4 +278,4 @@ It's possible that the [Set recording and analytics behavior](set-recording-beha
 ## Multi-party calls and conversational analytics
 <a name="multiparty-calls-contactlens"></a>
 
-Contact Lens conversational analytics supports calls with up to 2 participants. For example, if there are more than two parties (agent and customer) on a call, or a call is getting transferred to a third party, the quality of the transcription and analytics, such as sentiment, redaction, categories among others, can get degraded. We recommend you disable conversational analytics for multi-party or third-party calls if there are more than two parties (agent and customer). To do this, add another [Set recording and analytics behavior](set-recording-behavior.md) block to the flow and disable conversational analytics. For more information about the behavior of the flow block, see [Configuration tips](set-recording-behavior.md#set-recording-behavior-tips).
+Conversational analytics supports calls with up to 2 participants. For example, if there are more than two parties (agent and customer) on a call, or a call is getting transferred to a third party, the quality of the transcription and analytics, such as sentiment, redaction, categories among others, can get degraded. We recommend you disable conversational analytics for multi-party or third-party calls if there are more than two parties (agent and customer). To do this, add another [Set recording and analytics behavior](set-recording-behavior.md) block to the flow and disable conversational analytics. For more information about the behavior of the flow block, see [Configuration tips](set-recording-behavior.md#set-recording-behavior-tips).

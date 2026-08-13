@@ -96,7 +96,7 @@ Custom networking is not used in the setup represented in the diagram below. Rat
 
 You can enable Kubernetes to automatically apply the corresponding ENIConfig for the worker node Availability Zone (AZ).
 
-Kubernetes automatically adds the tag [http://topology.kubernetes.io/zone](http://topology.kubernetes.io/zone) to your worker nodes. Amazon EKS recommends using the availability zone as your ENI config name when you only have one secondary subnet (alternate CIDR) per AZ. You can then set label used to discover the ENI config name to `topology.kubernetes.io/zone`. Note that tag `failure-domain.beta.kubernetes.io/zone` is deprecated and replaced with the tag `topology.kubernetes.io/zone`.
+Kubernetes automatically adds the tag [`topology.kubernetes.io/zone`](http://topology.kubernetes.io/zone) to your worker nodes. Amazon EKS recommends using the availability zone as your ENI config name when you only have one secondary subnet (alternate CIDR) per AZ. You can then set label used to discover the ENI config name to `topology.kubernetes.io/zone`. Note that tag `failure-domain.beta.kubernetes.io/zone` is deprecated and replaced with the tag `topology.kubernetes.io/zone`.
 
 1. Set `name` field to the Availability Zone of your VPC.
 
@@ -109,7 +109,7 @@ kubectl set env daemonset aws-node -n kube-system "AWS_VPC_K8S_CNI_CUSTOM_NETWOR
 kubectl set env daemonset aws-node -n kube-system "ENI_CONFIG_LABEL_DEF=topology.kubernetes.io/zone"
 ```
 
-If you have multiple secondary subnets per availability zone, you need create a specific `ENI_CONFIG_LABEL_DEF`. You might consider configuring `ENI_CONFIG_LABEL_DEF` as [http://k8s.amazonaws.com/eniConfig](http://k8s.amazonaws.com/eniConfig) and label nodes with custom eniConfig names, such as [http://k8s.amazonaws.com/eniConfig=us-west-2a-subnet-1](http://k8s.amazonaws.com/eniConfig=us-west-2a-subnet-1) and [http://k8s.amazonaws.com/eniConfig=us-west-2a-subnet-2](http://k8s.amazonaws.com/eniConfig=us-west-2a-subnet-2).
+If you have multiple secondary subnets per availability zone, you need create a specific `ENI_CONFIG_LABEL_DEF`. You might consider configuring `ENI_CONFIG_LABEL_DEF` as [`k8s.amazonaws.com/eniConfig`](http://k8s.amazonaws.com/eniConfig) and label nodes with custom eniConfig names, such as [`k8s.amazonaws.com/eniConfig=us-west-2a-subnet-1`](http://k8s.amazonaws.com/eniConfig=us-west-2a-subnet-1) and [`k8s.amazonaws.com/eniConfig=us-west-2a-subnet-2`](http://k8s.amazonaws.com/eniConfig=us-west-2a-subnet-2).
 
 ### Replace Pods when Configuring Secondary Networking
 <a name="_replace_pods_when_configuring_secondary_networking"></a>

@@ -25,7 +25,7 @@ Before you begin deploying SCIM, we recommend that you first review the [Conside
 <a name="pingone-prereqs"></a>
 
 You'll need the following before you can get started:
-+ A PingOne subscription or free trial, with both federated authentication and provisioning capabilities. For more information about how to obtain a free trial, see the [https://www.pingidentity.com/en/trials.html](https://www.pingidentity.com/en/trials.html) website.
++ A PingOne subscription or free trial, with both federated authentication and provisioning capabilities. For more information about how to obtain a free trial, see the [Ping Identity](https://www.pingidentity.com/en/trials.html) website.
 + An IAM Identity Center-enabled account ([free](https://aws.amazon.com/single-sign-on/)). For more information, see [Enable IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/setup-enable-idc.html).
 + The PingOne IAM Identity Center application added to your PingOne admin portal. You can obtain the PingOne IAM Identity Center application from the PingOne Application Catalog. For general information, see [Add an application from the Application Catalog](https://docs.pingidentity.com/pingone/applications/p1_applicationcatalog.html) on the Ping Identity website.
 + A SAML connection from your PingOne instance to IAM Identity Center. After the PingOne IAM Identity Center application has been added to your PingOne admin portal, you must use it to configure a SAML connection from your PingOne instance to IAM Identity Center. Use the “download” and “import" metadata feature on both ends to exchange SAML metadata between PingOne and IAM Identity Center. For instructions on how to configure this connection, see the PingOne documentation.

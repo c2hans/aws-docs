@@ -29,7 +29,7 @@ Before your web experience users can create and use plugins, the web experience 
 ## Adding plugins in Amazon Q Apps
 <a name="qapps-plugins-add"></a>
 
-To add a plugin to your Q App you can use either the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_CreateQApp.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_CreateQApp.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
+To add a plugin to your Q App you can use either the AWS Management Console or the [CreateQApp](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_CreateQApp.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
 **Note**
 You can also add a plugin to your Q App through your Amazon Q Business web experience URL.
@@ -79,7 +79,7 @@ aws qapps create-q-app \
 ## Using plugins in Amazon Q Apps
 <a name="qapps-plugins-use"></a>
 
-To use a plugin within a Q App you can use either the Amazon Q Business web experience URL or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_StartQAppSession.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_StartQAppSession.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
+To use a plugin within a Q App you can use either the Amazon Q Business web experience URL or the [StartQAppSession](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_StartQAppSession.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
 ------
 #### [ Web experience ]

@@ -11,7 +11,7 @@ The following prerequisites are also required to complete this walkthrough:
   +  `Oracle-HR-Schema-Build.sql` — SQL statements to build the **HR** schema.
   +  `Oracle_Aurora_For_DMSDemo.template` — an AWS CloudFormation template.
 
-    These scripts are available at the following link: [http://docs.aws.amazon.com/dms/latest/sbs/samples/dms-sbs-RDSOracle2Aurora.zip](http://docs.aws.amazon.com/dms/latest/sbs/samples/dms-sbs-RDSOracle2Aurora.zip).
+    These scripts are available at the following link: [`dms-sbs-RDSOracle2Aurora.zip`](http://docs.aws.amazon.com/dms/latest/sbs/samples/dms-sbs-RDSOracle2Aurora.zip).
 
     Each step in the walkthrough also contains a link to download the file involved or includes the exact query in the step.
 + A user with AWS Identity and Access Management (IAM) credentials that allow you to launch Amazon Relational Database Service (Amazon RDS) and AWS Database Migration Service (AWS DMS) instances in your AWS Region. For information about IAM credentials, see [Setting up for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_SettingUp.html#CHAP_SettingUp.IAM).

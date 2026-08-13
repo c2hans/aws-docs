@@ -21,8 +21,8 @@ Type: String
 Required: Yes
 
  ** batchMode **   <a name="iot-Type-FirehoseAction-batchMode"></a>
-Whether to deliver the Kinesis Data Firehose stream as a batch by using [https://docs.aws.amazon.com/firehose/latest/APIReference/API_PutRecordBatch.html](https://docs.aws.amazon.com/firehose/latest/APIReference/API_PutRecordBatch.html). The default value is `false`.
-When `batchMode` is `true` and the rule's SQL statement evaluates to an Array, each Array element forms one record in the [https://docs.aws.amazon.com/firehose/latest/APIReference/API_PutRecordBatch.html](https://docs.aws.amazon.com/firehose/latest/APIReference/API_PutRecordBatch.html) request. The resulting array can't have more than 500 records.
+Whether to deliver the Kinesis Data Firehose stream as a batch by using [`PutRecordBatch`](https://docs.aws.amazon.com/firehose/latest/APIReference/API_PutRecordBatch.html). The default value is `false`.
+When `batchMode` is `true` and the rule's SQL statement evaluates to an Array, each Array element forms one record in the [`PutRecordBatch`](https://docs.aws.amazon.com/firehose/latest/APIReference/API_PutRecordBatch.html) request. The resulting array can't have more than 500 records.
 Type: Boolean
 Required: No
 

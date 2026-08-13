@@ -13,7 +13,7 @@ To get started using Amazon S3 Transfer Acceleration, perform the following step
 
    You can enable Transfer Acceleration on a bucket any of the following ways:
    + Use the Amazon S3 console.
-   + Use the REST API [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTaccelerate.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTaccelerate.html) operation.
+   + Use the REST API [PutBucketAccelerateConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTaccelerate.html) operation.
    + Use the AWS CLI and AWS SDKs. For more information, see [Developing with Amazon S3 using the AWS SDKs](https://docs.aws.amazon.com/AmazonS3/latest/API/sdk-general-information-section.html) in the *Amazon S3 API Reference*.
 
    For more information, see [Enabling and using S3 Transfer Acceleration](transfer-acceleration-examples.md).
@@ -30,15 +30,15 @@ For your bucket to work with transfer acceleration, the bucket name must conform
 **Note**
 Your data transfer application must use one of the following two types of endpoints to access the bucket for faster data transfer: `.s3-accelerate.amazonaws.com` or `.s3-accelerate.dualstack.amazonaws.com` for the dual-stack endpoint. If you want to use standard data transfer, you can continue to use the regular endpoints.
 
-   You can point your Amazon S3 `PUT` object and `GET` object requests to the `s3-accelerate` endpoint domain name after you enable Transfer Acceleration. For example, suppose that you currently have a REST API application using [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPUT.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPUT.html) that uses the hostname `{{amzn-s3-demo-bucket}}.s3.us-east-1.amazonaws.com` in the `PUT` request. To accelerate the `PUT`, you change the hostname in your request to `{{amzn-s3-demo-bucket}}.s3-accelerate.amazonaws.com`. To go back to using the standard upload speed, change the name back to `{{amzn-s3-demo-bucket}}.s3.us-east-1.amazonaws.com`.
+   You can point your Amazon S3 `PUT` object and `GET` object requests to the `s3-accelerate` endpoint domain name after you enable Transfer Acceleration. For example, suppose that you currently have a REST API application using [PutObject](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPUT.html) that uses the hostname `{{amzn-s3-demo-bucket}}.s3.us-east-1.amazonaws.com` in the `PUT` request. To accelerate the `PUT`, you change the hostname in your request to `{{amzn-s3-demo-bucket}}.s3-accelerate.amazonaws.com`. To go back to using the standard upload speed, change the name back to `{{amzn-s3-demo-bucket}}.s3.us-east-1.amazonaws.com`.
 
    After Transfer Acceleration is enabled, it can take up to 20 minutes for you to realize the performance benefit. However, the accelerate endpoint is available as soon as you enable Transfer Acceleration.
 
    You can use the accelerate endpoint in the AWS CLI, AWS SDKs, and other tools that transfer data to and from Amazon S3. If you are using the AWS SDKs, some of the supported languages use an accelerate endpoint client configuration flag so you don't need to explicitly set the endpoint for Transfer Acceleration to `{{bucket-name}}.s3-accelerate.amazonaws.com`. For examples of how to use an accelerate endpoint client configuration flag, see [Enabling and using S3 Transfer Acceleration](transfer-acceleration-examples.md).
 
 You can use all Amazon S3 operations through the transfer acceleration endpoints *except* for the following:
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTServiceGET.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTServiceGET.html)
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUT.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUT.html)
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketDELETE.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketDELETE.html)
++ [ListBuckets](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTServiceGET.html)
++ [CreateBucket](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUT.html)
++ [DeleteBucket](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketDELETE.html)
 
-Also, Amazon S3 Transfer Acceleration does not support cross-Region copies using [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectCOPY.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectCOPY.html).
+Also, Amazon S3 Transfer Acceleration does not support cross-Region copies using [CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectCOPY.html).

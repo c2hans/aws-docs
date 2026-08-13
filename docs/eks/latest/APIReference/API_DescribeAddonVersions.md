@@ -22,7 +22,7 @@ GET /addons/supported-versions?addonName={{addonName}}&kubernetesVersion={{kuber
 The request uses the following URI parameters.
 
  ** [addonName](#API_DescribeAddonVersions_RequestSyntax) **   <a name="AmazonEKS-DescribeAddonVersions-request-uri-addonName"></a>
-The name of the add-on. The name must match one of the names returned by [https://docs.aws.amazon.com/eks/latest/APIReference/API_ListAddons.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListAddons.html).
+The name of the add-on. The name must match one of the names returned by [`ListAddons`](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListAddons.html).
 
  ** [kubernetesVersion](#API_DescribeAddonVersions_RequestSyntax) **   <a name="AmazonEKS-DescribeAddonVersions-request-uri-kubernetesVersion"></a>
 The Kubernetes versions that you can use the add-on with.

@@ -36,7 +36,7 @@ Choose your preferred method, and follow the steps to disassociate a member acco
 
 **To disassociate a member account from the organization**
 
-Invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DisassociateMembers.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DisassociateMembers.html) API from the delegated administrator account. You must provide the AWS account IDs for the member accounts to disassociate. To view a list of member accounts, invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListMembers.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListMembers.html) API.
+Invoke the [`DisassociateMembers`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DisassociateMembers.html) API from the delegated administrator account. You must provide the AWS account IDs for the member accounts to disassociate. To view a list of member accounts, invoke the [`ListMembers`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListMembers.html) API.
 
 ------
 #### [ AWS CLI ]

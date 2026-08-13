@@ -74,13 +74,13 @@ The examples presented in these procedures show how to provision the iSCSI proto
 
    For more information, see [Managing file systems with the ONTAP CLI](managing-resources-ontap-apps.md#fsxadmin-ontap-cli).
 
-1. Using the ONTAP CLI [https://docs.netapp.com/us-en/ontap-cli-9141/lun-igroup-create.html](https://docs.netapp.com/us-en/ontap-cli-9141/lun-igroup-create.html), create the initiator group, or `igroup`. An initiator group maps to iSCSI LUNs and controls which initiators (clients) have access to LUNs. Replace `host_initiator_name` with the initiator name from your Windows host that you retrieved in the previous procedure.
+1. Using the ONTAP CLI [**lun igroup create**](https://docs.netapp.com/us-en/ontap-cli-9141/lun-igroup-create.html), create the initiator group, or `igroup`. An initiator group maps to iSCSI LUNs and controls which initiators (clients) have access to LUNs. Replace `host_initiator_name` with the initiator name from your Windows host that you retrieved in the previous procedure.
 
    ```
    ::> lun igroup create -vserver {{svm_name}} -igroup {{igroup_name}} -initiator {{host_initiator_name}} -protocol iscsi -ostype windows
    ```
 
-   Io make the LUNs mapped to this `igroup` available to multiple hosts, you can specify multiple comma-separated initiator names using [https://docs.netapp.com/us-en/ontap-cli-9141/lun-create.html#parameters](https://docs.netapp.com/us-en/ontap-cli-9141/lun-create.html#parameters) ONTAP CLI command.
+   Io make the LUNs mapped to this `igroup` available to multiple hosts, you can specify multiple comma-separated initiator names using [`lun igroup create`](https://docs.netapp.com/us-en/ontap-cli-9141/lun-create.html#parameters) ONTAP CLI command.
 
 1. Confirm that the `igroup` was created successfully using the [lun igroup show](https://docs.netapp.com/us-en/ontap-cli-9141/lun-igroup-show.html) ONTAP CLI command:
 

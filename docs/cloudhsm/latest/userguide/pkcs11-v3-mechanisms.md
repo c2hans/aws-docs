@@ -27,60 +27,60 @@ A ✔ mark indicates that AWS CloudHSM supports the mechanism for the function. 
   <tr><th>Mechanism</th><th colspan="7">Functions</th><th></th></tr>
 </thead>
 <tbody>
-  <tr><td> </td><td>**Generate Key** or **Key Pair**</td><td>**Sign & Verify**</td><td>**SR & VR**</td><td>**Digest**</td><td>**Encrypt & Decrypt**</td><td>**Derive Key**</td><td>**Wrap & UnWrap**</td><td></td></tr>
-  <tr><td>`CKM_RSA_PKCS_KEY_PAIR_GEN`</td><td>**✔**</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_RSA_X9_31_KEY_PAIR_GEN`</td><td>**✔**[2](#pkcs11-v3-mech2)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_RSA_X_509`</td><td> </td><td>**✔**</td><td> </td><td> </td><td>**✔**</td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_RSA_PKCS`**see note [8](#pkcs11-v3-mech8)**</td><td> </td><td>✔[1](#pkcs11-v3-mech1)</td><td>✖</td><td> </td><td>✔[1](#pkcs11-v3-mech1)</td><td> </td><td>✔[1](#pkcs11-v3-mech1)</td><td></td></tr>
-  <tr><td>`CKM_RSA_PKCS_OAEP`</td><td> </td><td> </td><td> </td><td> </td><td>**✔**[1](#pkcs11-v3-mech1)</td><td> </td><td>**✔**[6](#pkcs11-v3-mech6)</td><td></td></tr>
-  <tr><td>`CKM_SHA1_RSA_PKCS`</td><td> </td><td>**✔**[3.2](#pkcs11-v3-mech3-2)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_SHA224_RSA_PKCS`</td><td> </td><td>**✔**[3.2](#pkcs11-v3-mech3-2)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_SHA256_RSA_PKCS`</td><td> </td><td>**✔**[3.2](#pkcs11-v3-mech3-2)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_SHA384_RSA_PKCS`</td><td> </td><td>**✔**[2](#pkcs11-v3-mech2),[3.2](#pkcs11-v3-mech3-2)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_SHA512_RSA_PKCS`</td><td> </td><td>**✔**[3.2](#pkcs11-v3-mech3-2)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_RSA_PKCS_PSS`</td><td> </td><td>**✔**[1](#pkcs11-v3-mech1)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_SHA1_RSA_PKCS_PSS`</td><td> </td><td>**✔**[3.2](#pkcs11-v3-mech3-2)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_SHA224_RSA_PKCS_PSS`</td><td> </td><td>**✔**[3.2](#pkcs11-v3-mech3-2)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_SHA256_RSA_PKCS_PSS`</td><td> </td><td>**✔**[3.2](#pkcs11-v3-mech3-2)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_SHA384_RSA_PKCS_PSS`</td><td> </td><td>**✔**[2](#pkcs11-v3-mech2),[3.2](#pkcs11-v3-mech3-2)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_SHA512_RSA_PKCS_PSS`</td><td> </td><td>**✔**[3.2](#pkcs11-v3-mech3-2)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_EC_KEY_PAIR_GEN`</td><td>**✔**</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_ECDSA`</td><td> </td><td>**✔**[1](#pkcs11-v3-mech1)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_ECDSA_SHA1`</td><td> </td><td>**✔**[3.2](#pkcs11-v3-mech3-2)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_ECDSA_SHA224`</td><td> </td><td>**✔**[3.2](#pkcs11-v3-mech3-2)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_ECDSA_SHA256`</td><td> </td><td>**✔**[3.2](#pkcs11-v3-mech3-2)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_ECDSA_SHA384`</td><td> </td><td>**✔**[3.2](#pkcs11-v3-mech3-2)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_ECDSA_SHA512`</td><td> </td><td>**✔**[3.2](#pkcs11-v3-mech3-2)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_ECDH1_DERIVE`</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>**✔**[5](#pkcs11-v3-mech5)</td><td> </td><td></td></tr>
-  <tr><td>`CKM_SP800_108_COUNTER_KDF`</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>**✔**</td><td> </td><td></td></tr>
-  <tr><td>`CKM_GENERIC_SECRET_KEY_GEN`</td><td>**✔**</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_AES_KEY_GEN`</td><td>**✔**</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_AES_ECB`</td><td> </td><td> </td><td> </td><td> </td><td>**✔**</td><td> </td><td>✖</td><td></td></tr>
-  <tr><td>`CKM_AES_CTR`</td><td> </td><td> </td><td> </td><td> </td><td>**✔**</td><td> </td><td>✖</td><td></td></tr>
-  <tr><td>`CKM_AES_CBC`</td><td> </td><td> </td><td> </td><td> </td><td>**✔**[3.3](#pkcs11-v3-mech3-3)</td><td> </td><td>✖</td><td></td></tr>
-  <tr><td>`CKM_AES_CBC_PAD`</td><td> </td><td> </td><td> </td><td> </td><td>**✔**</td><td> </td><td>✖</td><td></td></tr>
-  <tr><td>`CKM_DES3_KEY_GEN` **see note [8](#pkcs11-v3-mech8)**</td><td>**✔**</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_DES3_CBC` **see note [8](#pkcs11-v3-mech8)**</td><td> </td><td> </td><td> </td><td> </td><td>**✔**[3.3](#pkcs11-v3-mech3-3)</td><td> </td><td>✖</td><td></td></tr>
-  <tr><td>`CKM_DES3_CBC_PAD` **see note [8](#pkcs11-v3-mech8)**</td><td> </td><td> </td><td> </td><td> </td><td>**✔**</td><td> </td><td>✖</td><td></td></tr>
-  <tr><td>`CKM_DES3_ECB` **see note [8](#pkcs11-v3-mech8)**</td><td> </td><td> </td><td> </td><td> </td><td>**✔**</td><td> </td><td>✖</td><td></td></tr>
-  <tr><td>`CKM_AES_GCM`</td><td> </td><td> </td><td> </td><td> </td><td>**✔**[3.3](#pkcs11-v3-mech3-3), [4](#pkcs11-v3-mech4) </td><td> </td><td>**✔**[7.1](#pkcs11-v3-mech7-1)</td><td></td></tr>
-  <tr><td>`CKM_CLOUDHSM_AES_GCM`</td><td> </td><td> </td><td> </td><td> </td><td>**✔**[7.1](#pkcs11-v3-mech7-1)</td><td> </td><td>**✔**[7.1](#pkcs11-v3-mech7-1)</td><td></td></tr>
-  <tr><td>`CKM_SHA_1`</td><td> </td><td> </td><td> </td><td>**✔**[3.1](#pkcs11-v3-mech3-1)</td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_SHA_1_HMAC`</td><td> </td><td>**✔**[3.3](#pkcs11-v3-mech3-3)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_SHA224`</td><td> </td><td> </td><td> </td><td>**✔**[3.1](#pkcs11-v3-mech3-1)</td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_SHA224_HMAC`</td><td> </td><td>**✔**[3.3](#pkcs11-v3-mech3-3)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_SHA256`</td><td> </td><td> </td><td> </td><td>**✔**[3.1](#pkcs11-v3-mech3-1)</td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_SHA256_HMAC`</td><td> </td><td>**✔**[3.3](#pkcs11-v3-mech3-3)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_SHA384`</td><td> </td><td> </td><td> </td><td>**✔**[3.1](#pkcs11-v3-mech3-1)</td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_SHA384_HMAC`</td><td> </td><td>**✔**[3.3](#pkcs11-v3-mech3-3)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_SHA512`</td><td> </td><td> </td><td> </td><td>**✔**[3.1](#pkcs11-v3-mech3-1)</td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_SHA512_HMAC`</td><td> </td><td>**✔**[3.3](#pkcs11-v3-mech3-3)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
-  <tr><td>`CKM_RSA_AES_KEY_WRAP`</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>**✔**</td><td></td></tr>
-  <tr><td>`CKM_AES_KEY_WRAP`</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>**✔**</td><td></td></tr>
-  <tr><td>`CKM_AES_KEY_WRAP_PAD`</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>**✔**</td><td></td></tr>
-  <tr><td>`CKM_CLOUDHSM_AES_KEY_WRAP_NO_PAD`</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>**✔**[7.1](#pkcs11-v3-mech7-1)</td><td></td></tr>
-  <tr><td>`CKM_CLOUDHSM_AES_KEY_WRAP_PKCS5_PAD`</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>**✔**[7.1](#pkcs11-v3-mech7-1)</td><td></td></tr>
-  <tr><td>`CKM_CLOUDHSM_AES_KEY_WRAP_ZERO_PAD`</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>**✔**[7.1](#pkcs11-v3-mech7-1)</td><td></td></tr>
+  <tr><td> </td><td><b>Generate Key</b> or <b>Key Pair</b></td><td><b>Sign &amp; Verify</b></td><td><b>SR &amp; VR</b></td><td><b>Digest</b></td><td><b>Encrypt &amp; Decrypt</b></td><td><b>Derive Key</b></td><td><b>Wrap &amp; UnWrap</b></td><td></td></tr>
+  <tr><td><code>CKM_RSA_PKCS_KEY_PAIR_GEN</code></td><td><b>✔</b></td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_RSA_X9_31_KEY_PAIR_GEN</code></td><td><b>✔</b><a href="#pkcs11-v3-mech2">2</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_RSA_X_509</code></td><td> </td><td><b>✔</b></td><td> </td><td> </td><td><b>✔</b></td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_RSA_PKCS</code><b>see note <a href="#pkcs11-v3-mech8">8</a></b></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech1">1</a></td><td>✖</td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech1">1</a></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech1">1</a></td><td></td></tr>
+  <tr><td><code>CKM_RSA_PKCS_OAEP</code></td><td> </td><td> </td><td> </td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech1">1</a></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech6">6</a></td><td></td></tr>
+  <tr><td><code>CKM_SHA1_RSA_PKCS</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-2">3.2</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_SHA224_RSA_PKCS</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-2">3.2</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_SHA256_RSA_PKCS</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-2">3.2</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_SHA384_RSA_PKCS</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech2">2</a>,<a href="#pkcs11-v3-mech3-2">3.2</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_SHA512_RSA_PKCS</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-2">3.2</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_RSA_PKCS_PSS</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech1">1</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_SHA1_RSA_PKCS_PSS</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-2">3.2</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_SHA224_RSA_PKCS_PSS</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-2">3.2</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_SHA256_RSA_PKCS_PSS</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-2">3.2</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_SHA384_RSA_PKCS_PSS</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech2">2</a>,<a href="#pkcs11-v3-mech3-2">3.2</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_SHA512_RSA_PKCS_PSS</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-2">3.2</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_EC_KEY_PAIR_GEN</code></td><td><b>✔</b></td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_ECDSA</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech1">1</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_ECDSA_SHA1</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-2">3.2</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_ECDSA_SHA224</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-2">3.2</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_ECDSA_SHA256</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-2">3.2</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_ECDSA_SHA384</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-2">3.2</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_ECDSA_SHA512</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-2">3.2</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_ECDH1_DERIVE</code></td><td> </td><td> </td><td> </td><td> </td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech5">5</a></td><td> </td><td></td></tr>
+  <tr><td><code>CKM_SP800_108_COUNTER_KDF</code></td><td> </td><td> </td><td> </td><td> </td><td> </td><td><b>✔</b></td><td> </td><td></td></tr>
+  <tr><td><code>CKM_GENERIC_SECRET_KEY_GEN</code></td><td><b>✔</b></td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_AES_KEY_GEN</code></td><td><b>✔</b></td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_AES_ECB</code></td><td> </td><td> </td><td> </td><td> </td><td><b>✔</b></td><td> </td><td>✖</td><td></td></tr>
+  <tr><td><code>CKM_AES_CTR</code></td><td> </td><td> </td><td> </td><td> </td><td><b>✔</b></td><td> </td><td>✖</td><td></td></tr>
+  <tr><td><code>CKM_AES_CBC</code></td><td> </td><td> </td><td> </td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-3">3.3</a></td><td> </td><td>✖</td><td></td></tr>
+  <tr><td><code>CKM_AES_CBC_PAD</code></td><td> </td><td> </td><td> </td><td> </td><td><b>✔</b></td><td> </td><td>✖</td><td></td></tr>
+  <tr><td><code>CKM_DES3_KEY_GEN</code> <b>see note <a href="#pkcs11-v3-mech8">8</a></b></td><td><b>✔</b></td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_DES3_CBC</code> <b>see note <a href="#pkcs11-v3-mech8">8</a></b></td><td> </td><td> </td><td> </td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-3">3.3</a></td><td> </td><td>✖</td><td></td></tr>
+  <tr><td><code>CKM_DES3_CBC_PAD</code> <b>see note <a href="#pkcs11-v3-mech8">8</a></b></td><td> </td><td> </td><td> </td><td> </td><td><b>✔</b></td><td> </td><td>✖</td><td></td></tr>
+  <tr><td><code>CKM_DES3_ECB</code> <b>see note <a href="#pkcs11-v3-mech8">8</a></b></td><td> </td><td> </td><td> </td><td> </td><td><b>✔</b></td><td> </td><td>✖</td><td></td></tr>
+  <tr><td><code>CKM_AES_GCM</code></td><td> </td><td> </td><td> </td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-3">3.3</a>, <a href="#pkcs11-v3-mech4">4</a> </td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech7-1">7.1</a></td><td></td></tr>
+  <tr><td><code>CKM_CLOUDHSM_AES_GCM</code></td><td> </td><td> </td><td> </td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech7-1">7.1</a></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech7-1">7.1</a></td><td></td></tr>
+  <tr><td><code>CKM_SHA_1</code></td><td> </td><td> </td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-1">3.1</a></td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_SHA_1_HMAC</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-3">3.3</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_SHA224</code></td><td> </td><td> </td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-1">3.1</a></td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_SHA224_HMAC</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-3">3.3</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_SHA256</code></td><td> </td><td> </td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-1">3.1</a></td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_SHA256_HMAC</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-3">3.3</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_SHA384</code></td><td> </td><td> </td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-1">3.1</a></td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_SHA384_HMAC</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-3">3.3</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_SHA512</code></td><td> </td><td> </td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-1">3.1</a></td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_SHA512_HMAC</code></td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech3-3">3.3</a></td><td> </td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+  <tr><td><code>CKM_RSA_AES_KEY_WRAP</code></td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td><b>✔</b></td><td></td></tr>
+  <tr><td><code>CKM_AES_KEY_WRAP</code></td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td><b>✔</b></td><td></td></tr>
+  <tr><td><code>CKM_AES_KEY_WRAP_PAD</code></td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td><b>✔</b></td><td></td></tr>
+  <tr><td><code>CKM_CLOUDHSM_AES_KEY_WRAP_NO_PAD</code></td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech7-1">7.1</a></td><td></td></tr>
+  <tr><td><code>CKM_CLOUDHSM_AES_KEY_WRAP_PKCS5_PAD</code></td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech7-1">7.1</a></td><td></td></tr>
+  <tr><td><code>CKM_CLOUDHSM_AES_KEY_WRAP_ZERO_PAD</code></td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td><b>✔</b><a href="#pkcs11-v3-mech7-1">7.1</a></td><td></td></tr>
 </tbody>
 </table>
 

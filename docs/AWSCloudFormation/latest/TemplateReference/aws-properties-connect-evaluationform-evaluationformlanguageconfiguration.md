@@ -37,5 +37,5 @@ To declare this entity in your CloudFormation template, use the following syntax
 The language for the evaluation form.
 *Required*: No
 *Type*: String
-*Allowed values*: `de-DE | en-US | es-ES | fr-FR | it-IT | pt-BR | ja-JP | ko-KR | zh-CN`
+*Allowed values*: `de-DE | en-US | es-ES | fr-FR | it-IT | pt-BR | ja-JP | ko-KR | zh-CN | ms-MY`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

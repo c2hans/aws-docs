@@ -51,13 +51,13 @@ When you create an access key for your user, that key pair is active by default,
 #### [ AWS CLI ]
 
 Run the following command:
-+ [https://docs.aws.amazon.com/cli/latest/reference/iam/create-access-key.html](https://docs.aws.amazon.com/cli/latest/reference/iam/create-access-key.html)
++ [`aws iam create-access-key`](https://docs.aws.amazon.com/cli/latest/reference/iam/create-access-key.html)
 
 ------
 #### [ API ]
 
 Call the following operation:
-+ [https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateAccessKey.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateAccessKey.html)
++ [`CreateAccessKey`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateAccessKey.html)
 
 ------
 
@@ -83,13 +83,13 @@ After an access key is deactivated, it can no longer be used by API calls. You c
 #### [ AWS CLI ]
 
 Run the following command:
-+ [https://docs.aws.amazon.com/cli/latest/reference/iam/update-access-key.html](https://docs.aws.amazon.com/cli/latest/reference/iam/update-access-key.html)
++ [`aws iam update-access-key`](https://docs.aws.amazon.com/cli/latest/reference/iam/update-access-key.html)
 
 ------
 #### [ API ]
 
 Call the following operation:
-+ [https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccessKey.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccessKey.html)
++ [`UpdateAccessKey`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccessKey.html)
 
 ------
 
@@ -113,13 +113,13 @@ After an access key is activated, it can be used by API calls. You can deactivat
 #### [ AWS CLI ]
 
 Run the following command:
-+ [https://docs.aws.amazon.com/cli/latest/reference/iam/update-access-key.html](https://docs.aws.amazon.com/cli/latest/reference/iam/update-access-key.html)
++ [`aws iam update-access-key`](https://docs.aws.amazon.com/cli/latest/reference/iam/update-access-key.html)
 
 ------
 #### [ API ]
 
 Call the following operation:
-+ [https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccessKey.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccessKey.html)
++ [`UpdateAccessKey`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccessKey.html)
 
 ------
 
@@ -147,13 +147,13 @@ After an access key is deleted, it can't be recovered.
 #### [ AWS CLI ]
 
 Run the following command:
-+ [https://docs.aws.amazon.com/cli/latest/reference/iam/delete-access-key.html](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-access-key.html)
++ [`aws iam delete-access-key`](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-access-key.html)
 
 ------
 #### [ API ]
 
 Call the following operation:
-+ [https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteAccessKey.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteAccessKey.html)
++ [`DeleteAccessKey`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteAccessKey.html)
 
 ------
 
@@ -181,13 +181,13 @@ Each IAM user can have two access keys.
 #### [ AWS CLI ]
 
 Run the following command:
-+ [https://docs.aws.amazon.com/cli/latest/reference/iam/list-access-keys.html](https://docs.aws.amazon.com/cli/latest/reference/iam/list-access-keys.html)
++ [`aws iam list-access-keys`](https://docs.aws.amazon.com/cli/latest/reference/iam/list-access-keys.html)
 
 ------
 #### [ API ]
 
 Call the following operation:
-+ [https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAccessKeys.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAccessKeys.html)
++ [`ListAccessKeys`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAccessKeys.html)
 
 ------
 
@@ -261,12 +261,12 @@ The most recent use of an access key is displayed in the user's list on the IAM 
 #### [ AWS CLI ]
 
 Run the following command:
-+ [https://docs.aws.amazon.com/cli/latest/reference/iam/get-access-key-last-used.html](https://docs.aws.amazon.com/cli/latest/reference/iam/get-access-key-last-used.html)
++ [`aws iam get-access-key-last-used`](https://docs.aws.amazon.com/cli/latest/reference/iam/get-access-key-last-used.html)
 
 ------
 #### [ API ]
 
 Call the following operation:
-+ [https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccessKeyLastUsed.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccessKeyLastUsed.html)
++ [`GetAccessKeyLastUsed`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccessKeyLastUsed.html)
 
 ------

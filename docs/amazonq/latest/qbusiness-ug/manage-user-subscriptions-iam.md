@@ -17,7 +17,7 @@ To manage user subscriptions added to an application environment, you can perfor
 ## Updating subscription tiers
 <a name="update-user-subscriptions-tier-iam"></a>
 
-You can update a subscription tier using the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateSubscription.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateSubscription.html) API operation.
+You can update a subscription tier using the AWS Management Console or the [UpdateSubscription](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateSubscription.html) API operation.
 
 Amazon Q Business automatically assigns subscriptions to users in an IAM-federated application. You can update the auto-subscription tier for your application. When you update the auto-subscription tier for the Amazon Q Business application, the new tier applies to new users logging into your web experience. Existing subscription types assigned to users don't get updated when you update your subscription tier.
 
@@ -107,7 +107,7 @@ aws qbusiness cancel-subscription \
 ## Listing user subscriptions
 <a name="list-user-subscriptions-iam"></a>
 
-To see a list of user and group subscriptions within a specific Amazon Q Business application, you can use the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListSubscriptions.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListSubscriptions.html) API operation.
+To see a list of user and group subscriptions within a specific Amazon Q Business application, you can use the AWS Management Console or the [ListSubscriptions](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListSubscriptions.html) API operation.
 
 For a consolidated view of your user subscriptions—including a list of subscribed users, their subscription status, and applications, accounts, or services a user can access through their subscriptions—you can also view the [Amazon Q subscriptions page](https://console.aws.amazon.com/amazonq/subscriptions).
 

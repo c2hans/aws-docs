@@ -71,7 +71,7 @@ To specify all Kinesis Video Streams operations, use the asterisk (\*) wild card
 "Action": "kinesisvideo:*"
 ```
 
-For the complete list of Kinesis Video Streams API actions, see the [https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_Reference.html](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_Reference.html).
+For the complete list of Kinesis Video Streams API actions, see the [*Kinesis Video Streams API reference*](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_Reference.html).
 
 ## Amazon Resource Names (ARNs)
 <a name="kinesis-using-iam-arn-format"></a>

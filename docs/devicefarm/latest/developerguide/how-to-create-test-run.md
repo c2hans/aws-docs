@@ -30,11 +30,7 @@ You must have a project in Device Farm. Follow the instructions in [Creating a p
 
 1. Open your project, and then choose **Create run**.
 
-1. (Optional) Under **Run settings**, in the **Run name** section, enter a name for your run. If no name is provided, the Device Farm console will name your run 'My Device Farm run' by default.
-
-1. (Optional) Under **Run settings**, in the **Job timeout** section, you can specify the execution timeout for your test run. If you're using unlimited testing slots, confirm that **Unmetered** is selected under **Billing method**.
-
-1. Under **Run settings**, in the **Run type** section, select your run type. Select **Android app** if you do not have an app ready for testing, or if you are testing an android (.apk) app. Select **iOS app** if you are testing an iOS (.ipa) app. Select **Web app** if you want to test web applications.
+1. Under **Select app and run type**, in the **Run type** section, select your run type. Select **Android app** if you do not have an app ready for testing, or if you are testing an android (.apk) app. Select **iOS app** if you are testing an iOS (.ipa) app. Select **Web app** if you want to test web applications.
 
 1. Under **Select app**, in the **App selection options** section, choose **Select sample app provided by Device Farm** if you do not have an app available for testing. If you are bringing your own app, select **Upload own app**, and choose your application file. If you're uploading an iOS app, be sure to choose **iOS device**, as opposed to a simulator.
 
@@ -61,6 +57,12 @@ If you don't have any tests available, choose **Built-in: Fuzz** to run a standa
 
    For more information, see [Device support in AWS Device FarmDevices](devices.md).
 
+1. (Optional) To configure run-level properties, update the **Run Settings** section. Here you can do the following:
+   + Assign your run with a custom **Run name**. If no name is provided, the Device Farm console will name your run 'My Device Farm run' by default.
+   + Choose **Generate test report** under **Test Insights** to get a detailed structured test report for each job and an aggregated summary at the run level. This insight is generated in addition to any test report that you might generate as part of your test execution.
+   + Assign a **Job timeout**, which is the maximum number of minutes a job can run on a device. If your tests are complete before the job timeout, the job completes, and you are not charged for the remainder of the job timeout. The default is 150 minutes.
+   + Choose a **Billing method**. By default, if you do not have slots purchased on your account, the Device Farm console selects Metered. If you have slots, the console defaults to Unmetered.
+
 1. (Optional) To add additional configuration, open the **Additional configuration** dropdown. In this section, you can do any of the following:
    + To provide an execution role ARN, or override one configured on the parent project, use the Exectuion role ARN field.
    + To provide other data for Device Farm to use during the run, next to **Add extra data**, choose **Choose File**, and then browse to and choose the .zip file that contains the data.
@@ -69,13 +71,12 @@ If you don't have any tests available, choose **Built-in: Fuzz** to run a standa
    + To preset the device latitude and longitude for the run, next to **Device location**, enter the coordinates.
    + To preset the device locale for the run, in **Device locale**, choose the locale.
    + Select **Enable video recording** to record video during testing.
-   + Select **Enable app performance data capture** to capture performance data from the device.
 **Note**
 Setting the device radio state and locale are options only available for Android native tests at this time.
 **Note**
 If you have private devices, configuration specific to private devices is also displayed.
 
-1. At the bottom of the page, choose **Create run** to schedule the run.
+1. At the bottom of the page, choose **Confirm and start run** to schedule the run.
 
 Device Farm starts the run as soon as devices are available, typically within a few minutes. During your test run, the Device Farm console displays a pending icon ![Device Farm scheduled a job.](http://docs.aws.amazon.com/devicefarm/latest/developerguide/images/df-run-calendar.png) in the run table. Each device in the run will also start with the pending icon, then switch to the running icon ![Device Farm progress indicator.](http://docs.aws.amazon.com/devicefarm/latest/developerguide/images/df-run-progress.png) when the test begins. As each test finishes, a test result icon is displayed next to the device name. When all tests have been completed, the pending icon next to the run changes to a test result icon.
 
@@ -182,7 +183,7 @@ To create your upload request and get an Amazon Simple Storage Service (Amazon S
 + The name of your app file.
 + The type of the upload.
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/devicefarm/create-upload.html](https://docs.aws.amazon.com/cli/latest/reference/devicefarm/create-upload.html).
+For more information, see [**create-upload**](https://docs.aws.amazon.com/cli/latest/reference/devicefarm/create-upload.html).
 
 1. To upload a file, run **create-upload** with the `–-project-arn`, `--name`, and `--type` parameters.
 
@@ -404,7 +405,7 @@ Device Farm maintains a default test spec file for each supported test type. Nex
    }
    ```
 
-   To update your custom test spec, run **update-upload**, specifying the upload ARN for the test spec. For more information, see [https://docs.aws.amazon.com/cli/latest/reference/devicefarm/update-upload.html](https://docs.aws.amazon.com/cli/latest/reference/devicefarm/update-upload.html).
+   To update your custom test spec, run **update-upload**, specifying the upload ARN for the test spec. For more information, see [**update-upload**](https://docs.aws.amazon.com/cli/latest/reference/devicefarm/update-upload.html).
 
 ### Step 6: Schedule a test run
 <a name="how-to-create-test-run-cli-step6"></a>
@@ -464,7 +465,7 @@ To schedule a test run with the AWS CLI, run **schedule-run**, specifying:
   }
   ```
 
-  For more information, see [https://docs.aws.amazon.com/cli/latest/reference/devicefarm/schedule-run.html](https://docs.aws.amazon.com/cli/latest/reference/devicefarm/schedule-run.html).
+  For more information, see [**schedule-run**](https://docs.aws.amazon.com/cli/latest/reference/devicefarm/schedule-run.html).
 
 **To schedule a run in a custom test environment**
 + The steps are the almost the same as those for the standard test environment, with an additional `testSpecArn` attribute in the `--test` parameter.
@@ -482,21 +483,21 @@ To schedule a test run with the AWS CLI, run **schedule-run**, specifying:
   aws devicefarm get-run --arn arn:aws:devicefarm:us-west-2:111122223333:run:5e01a8c7-c861-4c0a-b1d5-12345runEXAMPLE
   ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/devicefarm/get-run.html](https://docs.aws.amazon.com/cli/latest/reference/devicefarm/get-run.html). For information about using Device Farm with the AWS CLI, see [AWS CLI reference](cli-ref.md).
+For more information, see [**get-run**](https://docs.aws.amazon.com/cli/latest/reference/devicefarm/get-run.html). For information about using Device Farm with the AWS CLI, see [AWS CLI reference](cli-ref.md).
 
 ## Create a test run (API)
 <a name="how-to-create-test-run-api"></a>
 
 The steps are the same as those described in the AWS CLI section. See [Create a test run (AWS CLI)](#how-to-create-test-run-cli).
 
-You need this information to call the [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ScheduleRun.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ScheduleRun.html) API:
-+ A project ARN. See [Create a project (API)](how-to-create-project.md#how-to-create-project-api) and [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateProject.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateProject.html).
-+ An application upload ARN. See [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateUpload.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateUpload.html).
-+ A test package upload ARN. See [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateUpload.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateUpload.html).
-+ A device pool ARN. See [Creating a device pool](how-to-create-device-pool.md) and [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateDevicePool.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateDevicePool.html).
+You need this information to call the [`ScheduleRun`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ScheduleRun.html) API:
++ A project ARN. See [Create a project (API)](how-to-create-project.md#how-to-create-project-api) and [`CreateProject`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateProject.html).
++ An application upload ARN. See [`CreateUpload`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateUpload.html).
++ A test package upload ARN. See [`CreateUpload`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateUpload.html).
++ A device pool ARN. See [Creating a device pool](how-to-create-device-pool.md) and [`CreateDevicePool`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateDevicePool.html).
 
 **Note**
-If you're running tests in a custom test environment, you also need your test spec upload ARN. For more information, see [Step 5: (Optional) Upload your custom test spec](#how-to-create-test-run-cli-step5) and [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateUpload.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateUpload.html).
+If you're running tests in a custom test environment, you also need your test spec upload ARN. For more information, see [Step 5: (Optional) Upload your custom test spec](#how-to-create-test-run-cli-step5) and [`CreateUpload`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateUpload.html).
 
 For information about using the Device Farm API, see [Automating Device Farm](api-ref.md).
 

@@ -16,7 +16,7 @@ To create a pipeline that only tests your source code:
 1. Sign in to the AWS Management Console by using:
    + Your AWS root account. This is not recommended. For more information, see [The account root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) in the *user Guide*.
    + An administrator user in your AWS account. For more information, see [Creating your first AWS account root user and group](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html) in the *user Guide*.
-   + An user in your AWS account with permission to use the following minimum set of actions:
+   + A user in your AWS account with permission to use the following minimum set of actions:
 
      ```
      codepipeline:*
@@ -66,7 +66,7 @@ This is not the source bucket for your pipeline's source code. This is the artif
 1. Choose **Next**.
 
 1. On the **Step 2: Add source stage** page, for **Source provider**, do one of the following:
-   + If your source code is stored in an S3 bucket, choose **Amazon S3**. For **Bucket**, select the S3 bucket that contains your source code. For **S3 object key**, enter the name of the file the contains the source code (for example, `{{file-name}}.zip`). Choose **Next**.
+   + If your source code is stored in an S3 bucket, choose **Amazon S3**. For **Bucket**, select the S3 bucket that contains your source code. For **S3 object key**, enter the name of the file that contains the source code (for example, `{{file-name}}.zip`). Choose **Next**.
    + If your source code is stored in an AWS CodeCommit repository, choose **CodeCommit**. For **Repository name**, choose the name of the repository that contains the source code. For **Branch name**, choose the name of the branch that contains the version of the source code you want to build. Choose **Next**.
    + If your source code is stored in a GitHub repository, choose **GitHub**. Choose **Connect to GitHub**, and follow the instructions to authenticate with GitHub. For **Repository**, choose the name of the repository that contains the source code. For **Branch**, choose the name of the branch that contains the version of the source code you want to build.
 

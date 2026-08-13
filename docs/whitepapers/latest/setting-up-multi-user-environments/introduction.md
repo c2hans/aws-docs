@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/setting-up-multi-user
 
  A user can be an individual, such as a student or teaching assistant, or an application, such as a research application, that requires access to AWS services. You can create users, groups, roles, and federation capabilities using the AWS Management Console, APIs, or a variety of AWS Partner products.
 
- For instructions on how to create new users and manage AWS credentials, see [Creating an IAM user in your AWS account](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_SettingUpUser.html) in the [https://docs.aws.amazon.com/IAM/latest/UserGuide/IAM_Introduction.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/IAM_Introduction.html).
+ For instructions on how to create new users and manage AWS credentials, see [Creating an IAM user in your AWS account](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_SettingUpUser.html) in the [*AWS Identity and Access Management User Guide*](https://docs.aws.amazon.com/IAM/latest/UserGuide/IAM_Introduction.html).
 
  Depending on your teaching or research needs, there are several ways to set up a multi-user environment in the AWS Cloud. The following sections introduce three possible scenarios.
 

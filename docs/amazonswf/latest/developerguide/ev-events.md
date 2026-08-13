@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/ev-event
 # EventBridge for Amazon SWF execution status changes
 <a name="ev-events"></a>
 
-You use Amazon EventBridge to respond to state changes or events in an AWS resource. When Amazon SWF emits an event, it always goes to the default EventBridge event bus for your account. You can create a rule for events, associate it with the default event bus, and specify a target action to take when EventBridge receives an event that matches the rule. In this way, you can monitor your workflows without having to constantly poll using the [https://docs.aws.amazon.com/amazonswf/latest/apireference/API_GetWorkflowExecutionHistory.html](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_GetWorkflowExecutionHistory.html) API. Based on changes in workflow executions, you can use an EventBridge target to call AWS Lambda functions, publish messages to Amazon Simple Notification Service (Amazon SNS) topics, and more.
+You use Amazon EventBridge to respond to state changes or events in an AWS resource. When Amazon SWF emits an event, it always goes to the default EventBridge event bus for your account. You can create a rule for events, associate it with the default event bus, and specify a target action to take when EventBridge receives an event that matches the rule. In this way, you can monitor your workflows without having to constantly poll using the [`GetWorkflowExecutionHistory`](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_GetWorkflowExecutionHistory.html) API. Based on changes in workflow executions, you can use an EventBridge target to call AWS Lambda functions, publish messages to Amazon Simple Notification Service (Amazon SNS) topics, and more.
 
-You can see the full contents of an execution status change event using [https://docs.aws.amazon.com/amazonswf/latest/apireference/API_DescribeWorkflowExecution.html](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_DescribeWorkflowExecution.html).
+You can see the full contents of an execution status change event using [`DescribeWorkflowExecution`](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_DescribeWorkflowExecution.html).
 
 For more information, see the [Amazon EventBridge User Guide](https://docs.aws.amazon.com/eventbridge/latest/userguide/).
 
@@ -62,7 +62,7 @@ The following are examples of Amazon SWF sending events to EventBridge:
 + [Execution timed out](#ev-events-execution-timed-out)
 + [Execution terminated](#ev-events-execution-aborted)
 
-In each case, the `detail` section in the event data provides the same information as the [https://docs.aws.amazon.com/amazonswf/latest/apireference/API_DescribeWorkflowExecution.html](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_DescribeWorkflowExecution.html) API. The `executionStatus` field indicates the status of the execution at the time the event was sent, either `OPEN` or `CLOSED`.
+In each case, the `detail` section in the event data provides the same information as the [`DescribeWorkflowExecution`](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_DescribeWorkflowExecution.html) API. The `executionStatus` field indicates the status of the execution at the time the event was sent, either `OPEN` or `CLOSED`.
 
 ### Execution started
 <a name="ev-events-execution-started"></a>

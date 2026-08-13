@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/app-keys-tenant-ids.
 
 You can use AppKeys and TenantIDs to limit access *from a network* to specific applications' Amazon Chime SDK WebRTC media sessions.
 
-Developers use the Amazon Chime SDK to create applications that send and receive real-time video over UDP. Application users require UDP access to the [https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html](https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html) subnet. Organizations (network owners) can use AppKeys and TenantIDs to limit access from their network to only a specific application's WebRTC media sessions.
+Developers use the Amazon Chime SDK to create applications that send and receive real-time video over UDP. Application users require UDP access to the [`CHIME_MEETINGS`](https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html) subnet. Organizations (network owners) can use AppKeys and TenantIDs to limit access from their network to only a specific application's WebRTC media sessions.
 
 **Example 1: Using AppKeys**
 If App-A and App-B use the Amazon Chime SDK, an organization can allow App-A to access the WebRTC media sessions from their network, but block App-B and any other applications that use the Amazon Chime SDK. Organizations can do that with App-A's AppKey and an HTTPS proxy. For more information, refer to [Limiting access to a specific application](#limit-app-access), later in this topic.
@@ -60,7 +60,7 @@ A *TenantID* is an opaque identifier created by developers. Remember the followi
 + TenantIDs are case senstitive. Enter them exactly as prescribed by the developer.
 + An organization can limit access to multiple applications, but only specify TenantIDs for some of those applications. Applications without TenantIDs can connect to all WebRTC media sessions.
 
-To associate a media session with TenantIDs, a developer must first add the `TenantIds` property and a list of TenantIDs to a [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html) or [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html) request.
+To associate a media session with TenantIDs, a developer must first add the `TenantIds` property and a list of TenantIDs to a [CreateMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html) or [CreateMeetingWithAttendees](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html) request.
 
 For example:
 

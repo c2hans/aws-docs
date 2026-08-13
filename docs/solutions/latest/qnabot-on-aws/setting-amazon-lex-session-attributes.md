@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/setting-a
 # Setting Amazon Lex session attributes
 <a name="setting-amazon-lex-session-attributes"></a>
 
-The QnABot on AWS solution provides support for a question in the content designer UI to set an Amazon Lex session attribute.
+The QnABot on AWS guidance provides support for a question in the content designer UI to set an Amazon Lex session attribute.
 
 In early versions (v5.0.0 and earlier), using Handlebars in an answer would set a session attribute. For example, the following code can set an attribute called `attributeName` to the value `attributeValue`.
 

@@ -31,7 +31,7 @@ This checkpointing method is recommended if you use PyTorch and the SageMaker mo
 
 **Partial checkpointing**
 
-To save checkpoints of a model trained with model parallelism, use the [https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.save_checkpoint](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.save_checkpoint) API with the partial checkpointing option set to true (`partial=True`). This saves each model partition individually. In addition to the model and the optimizer state, you can also save any additional custom data through the `user_content` argument. The checkpointed model, optimizer, and user content are saved as separate files. The `save_checkpoint` API call creates checkpoint folders in the following structure.
+To save checkpoints of a model trained with model parallelism, use the [`smdistributed.modelparallel.torch.save_checkpoint`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.save_checkpoint) API with the partial checkpointing option set to true (`partial=True`). This saves each model partition individually. In addition to the model and the optimizer state, you can also save any additional custom data through the `user_content` argument. The checkpointed model, optimizer, and user content are saved as separate files. The `save_checkpoint` API call creates checkpoint folders in the following structure.
 
 ```
 - path
@@ -45,7 +45,7 @@ To save checkpoints of a model trained with model parallelism, use the [https://
   - newest (a file that indicates the newest checkpoint)
 ```
 
-To resume training from partial checkpoints, use the [https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.resume_from_checkpoint](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.resume_from_checkpoint) API with `partial=True`, and specify the checkpoint directory and the tag used while saving the partial checkpoints. Note that the actual loading of model weights happens after model partitioning, during the first run of the `smdistributed.modelparallel.torch.step`-decorated training step function.
+To resume training from partial checkpoints, use the [`smdistributed.modelparallel.torch.resume_from_checkpoint`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.resume_from_checkpoint) API with `partial=True`, and specify the checkpoint directory and the tag used while saving the partial checkpoints. Note that the actual loading of model weights happens after model partitioning, during the first run of the `smdistributed.modelparallel.torch.step`-decorated training step function.
 
 When saving a partial checkpoint, the library also saves the model partition decision as files with `.pt` file extension. Conversely, when resuming from the partial checkpoint, the library loads the partition decision files together. Once the partition decision is loaded, you can't change the partition.
 
@@ -123,7 +123,7 @@ smp_checkpoint = smp.resume_from_checkpoint(
 ### Checkpointing a distributed PyTorch model (for the SageMaker model parallelism library between v1.6.0 and v1.9.0)
 <a name="model-parallel-extended-features-pytorch-saving-loading-checkpoints"></a>
 
-The SageMaker model parallelism library provides Python functions for saving partial or full checkpoints for training jobs with tensor parallelism. The following procedure shows how to use [https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.save](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.save) and [https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.load](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.load) to save and load a checkpoint when you use tensor parallelism.
+The SageMaker model parallelism library provides Python functions for saving partial or full checkpoints for training jobs with tensor parallelism. The following procedure shows how to use [`smp.save()`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.save) and [`smp.load()`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.load) to save and load a checkpoint when you use tensor parallelism.
 
 **Note**
 This checkpointing method is recommended if you use PyTorch, [Tensor Parallelism](model-parallel-extended-features-pytorch-tensor-parallelism.md), and the SageMaker model parallelism library between v1.6.0 and v1.9.0.
@@ -157,7 +157,7 @@ This checkpointing method is recommended if you use PyTorch, [Tensor Parallelism
    optimizer = smp.DistributedOptimizer(optimizer)
    ```
 
-1. Save the model and the optimizer state using [https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.save](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.save). Depending on how you want to save checkpoints, choose one of the following two options:
+1. Save the model and the optimizer state using [`smp.save()`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.save). Depending on how you want to save checkpoints, choose one of the following two options:
    + **Option 1:** Save a partial model on each `mp_rank` for a single `MP_GROUP`.
 
      ```
@@ -193,7 +193,7 @@ If you set `gather_to_rank0=True`, all ranks other than `0` return empty diction
 For full checkpointing, you can only checkpoint the model. Full checkpointing of optimizer states is currently not supported.
 The full model only needs to be saved at `smp.rank() == 0`.
 
-1. Load the checkpoints using [https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.load](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.load). Depending on how you checkpointed in the previous step, choose one of the following two options:
+1. Load the checkpoints using [`smp.load()`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html#smdistributed.modelparallel.torch.load). Depending on how you checkpointed in the previous step, choose one of the following two options:
    + **Option 1:** Load the partial checkpoints.
 
      ```
@@ -217,8 +217,8 @@ The full model only needs to be saved at `smp.rank() == 0`.
 <a name="distributed-model-parallel-checkpoint-tensorflow"></a>
 
 To save a TensorFlow model while training with model parallelism, use the following functions provided by the SageMaker model parallelism library.
-+ [https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_tensorflow.html#smp.DistributedModel.save_model](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_tensorflow.html#smp.DistributedModel.save_model)
-+ [https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_tensorflow.html#smp.CheckpointManager](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_tensorflow.html#smp.CheckpointManager)
++ [`smdistributed.modelparallel.tensorflow.DistributedModel.save_model`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_tensorflow.html#smp.DistributedModel.save_model)
++ [`smdistributed.modelparallel.tensorflow.CheckpointManager`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_tensorflow.html#smp.CheckpointManager)
 
 ## Fine-tuning a distributed model
 <a name="distributed-model-parallel-fine-tuning"></a>

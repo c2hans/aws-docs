@@ -59,7 +59,7 @@ Amazon Keyspaces multi-Region replication is supported in the following AWS Regi
 + Asia Pacific (Hong Kong) Region
 + Middle East (Bahrain) Region
 
-Before you can use a Region that's disabled by default with Amazon Keyspaces multi-Region replication, you first have to enable the Region. For more information, see [ Enable or disable AWS Regions in your account](https://docs.aws.amazon.com/general/latest/gr/rande-manage.html#rande-manage-enable) in the [https://docs.aws.amazon.com/organizations/latest/userguide/](https://docs.aws.amazon.com/organizations/latest/userguide/).
+Before you can use a Region that's disabled by default with Amazon Keyspaces multi-Region replication, you first have to enable the Region. For more information, see [ Enable or disable AWS Regions in your account](https://docs.aws.amazon.com/general/latest/gr/rande-manage.html#rande-manage-enable) in the [*AWS Organizations User Guide*](https://docs.aws.amazon.com/organizations/latest/userguide/).
 
 After you've enabled a Region, you can create new Amazon Keyspaces resources in the Region and add the Region to a multi-Region keyspace.
 

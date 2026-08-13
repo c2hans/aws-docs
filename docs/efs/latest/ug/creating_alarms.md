@@ -39,10 +39,10 @@ The following procedures outline how to create alarms for Amazon EFS.
 <a name="set-alarms-cli"></a>
 
 **To set an alarm using the AWS CLI**
-+ Call `[https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-alarm.html](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-alarm.html)`. For more information, see the [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/).
++ Call `[put-metric-alarm](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-alarm.html)`. For more information, see the [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/).
 
 ## Using the CloudWatch API
 <a name="set-alarms-api"></a>
 
 **To set an alarm using the CloudWatch API**
-+ Call `[https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricAlarm.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricAlarm.html)`. For more information, see the [Amazon CloudWatch API Reference](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/).
++ Call `[PutMetricAlarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricAlarm.html)`. For more information, see the [Amazon CloudWatch API Reference](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/).

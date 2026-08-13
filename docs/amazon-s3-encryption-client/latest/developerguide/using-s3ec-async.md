@@ -144,7 +144,7 @@ The following walkthrough demonstrates how encrypt and decrypt asynchronously wi
    }
    ```
 
-1. Call [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html) to encrypt a plaintext object and upload it to Amazon S3.
+1. Call [`PutObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html) to encrypt a plaintext object and upload it to Amazon S3.
 
    The asynchronous client stores the response to confirm that the `PutObject` request completed when you call `GetObject` in the future.
 
@@ -163,7 +163,7 @@ The following walkthrough demonstrates how encrypt and decrypt asynchronously wi
    }
    ```
 
-1. Call [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) to download and decrypt the encrypted object.
+1. Call [`GetObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) to download and decrypt the encrypted object.
 
    ```
    // v4

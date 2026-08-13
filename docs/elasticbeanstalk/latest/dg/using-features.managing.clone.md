@@ -36,6 +36,8 @@ You can see resources that may not be cloned by checking the drift status of you
 1. In the **New Environment** section, you can optionally change the **Environment name**, **Environment URL**, **Description**, **Platform version**, and **Service role** values that Elastic Beanstalk automatically set based on the original environment.
 **Note**
 If the platform version used in the original environment isn't the one recommended for use in the platform branch, you are warned that a different platform version is recommended. Choose **Platform version**, and you can see the recommended platform version on the list—for example, **3.3.2 (Recommended)**.
+**Note**
+If role manager is enabled in your account, Elastic Beanstalk attaches the service role for you, and the **Service role** dropdown and **Create role** steps described here are replaced by a **Customize** option. To use a different role, choose **Customize**. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. When you are ready, choose **Clone**.
 

@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 # Use secondary indexes with DynamoDB Mapper
 <a name="ddb-mapper-secondary-indexes"></a>
 
-A [secondary index](/amazondynamodb/latest/developerguide/SecondaryIndexes.html) lets you query a table using an alternate key. DynamoDB Mapper models an index as **its own item type**: a class describing the attributes projected into the index, with a schema whose keys are the index’s keys. You obtain an `Index` reference from a table and then run `query` and `scan` operations on it, just as you would on a table.
+A [secondary index](/amazondynamodb/latest/developerguide/SecondaryIndexes.html) lets you query a table using an alternate key. DynamoDB Mapper models an index as **its own item type**: a class describing the attributes projected into the index, with a schema whose keys are the index’s keys. You obtain an [`Index`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.model/-index/index.html) reference from a table and then run [`query`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) and [`scan`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) operations on it, just as you would on a table.
 
-Indexes are **read-only**: you write through the base table, and DynamoDB propagates the changes to the index. An `Index` reference therefore supports only `query` and `scan`, not item writes.
+Indexes are **read-only**: you write through the base table, and DynamoDB propagates the changes to the index. An [`Index`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.model/-index/index.html) reference therefore supports only [`query`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) and [`scan`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html), not item writes.
 
 **Note**
-DynamoDB Mapper does not create indexes. Define the secondary index on your table with the `DynamoDbClient` (or another tool), then read from it with the mapper.
+DynamoDB Mapper does not create indexes. Define the secondary index on your table with the [`DynamoDbClient`](/sdk-for-kotlin/api/latest/dynamodb/aws.sdk.kotlin.services.dynamodb/-dynamo-db-client/index.html) (or another tool), then read from it with the mapper.
 
 ## Define an item type for the index
 <a name="ddb-mapper-secondary-indexes-define"></a>
@@ -40,7 +40,7 @@ As with any annotated class, the schema generator produces a `ProductByCategoryS
 ## Get an index reference
 <a name="ddb-mapper-secondary-indexes-get"></a>
 
-Call `getIndex` on the base table, passing the index name and the index’s schema. The result is an `Index` typed to the index’s item type:
+Call [`getIndex`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.model/-table/get-index.html) on the base table, passing the index name and the index’s schema. The result is an [`Index`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.model/-index/index.html) typed to the index’s item type:
 
 ```
 import com.example.store.model.dynamodbmapper.generatedschemas.ProductByCategorySchema
@@ -71,7 +71,7 @@ The `keyCondition` always constrains the partition key and can add a condition o
 ## Scan an index
 <a name="ddb-mapper-secondary-indexes-scan"></a>
 
-You can also `scan` an index to read every projected item, optionally narrowing the results with a filter expression:
+You can also [`scan`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) an index to read every projected item, optionally narrowing the results with a filter expression:
 
 ```
 val discountable = byCategory
@@ -84,6 +84,6 @@ val discountable = byCategory
 ## Related topics
 <a name="ddb-mapper-secondary-indexes-related"></a>
 +  [Use expressions](ddb-mapper-expressions.md): key conditions, filter expressions, and update expressions.
-+  [Operations overview](ddb-mapper-operations.md): the `query`/`scan` operations and pagination.
++  [Operations overview](ddb-mapper-operations.md): the [`query`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html)/[`scan`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) operations and pagination.
 +  [DynamoDB Mapper annotations reference](ddb-mapper-anno-index.md): the annotations used to define the index item type.
 +  [Manually define schemas](ddb-mapper-code-schemas.md): build an index schema in code.

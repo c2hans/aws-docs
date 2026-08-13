@@ -32,7 +32,7 @@ You can update this setting using the Audit Manager console, the AWS Command Lin
 
 1. To create a new SNS topic, choose **Create new topic**.
 
-1. When you’re done, choose **Save**.
+1. When you're done, choose **Save**.
 
 ------
 #### [ AWS CLI ]

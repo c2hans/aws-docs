@@ -213,7 +213,7 @@ aws elasticache decrease-replica-count ^
     --apply-immediately
 ```
 
-For more information, see the AWS CLI topics [https://docs.aws.amazon.com/cli/latest/reference/elasticache/decrease-replica-count.html](https://docs.aws.amazon.com/cli/latest/reference/elasticache/decrease-replica-count.html).
+For more information, see the AWS CLI topics [`decrease-replica-count`](https://docs.aws.amazon.com/cli/latest/reference/elasticache/decrease-replica-count.html).
 
 ## Using the ElastiCache API with Valkey or Redis OSS
 <a name="Clusters.DeleteNode.API2"></a>
@@ -245,7 +245,7 @@ https://elasticache.us-west-2.amazonaws.com/
     &X-Amz-Signature=<signature>
 ```
 
-For more information, see ElastiCache API topic [https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DecreaseReplicaCount.html](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DecreaseReplicaCount.html).
+For more information, see ElastiCache API topic [`DecreaseReplicaCount`](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DecreaseReplicaCount.html).
 
 ## Using the ElastiCache API with Memcached
 <a name="Clusters.DeleteNode.API"></a>
@@ -282,4 +282,4 @@ https://elasticache.us-west-2.amazonaws.com/
     &X-Amz-Signature=<signature>
 ```
 
-For more information, see ElastiCache API topic [https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_ModifyCacheCluster.html](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_ModifyCacheCluster.html).
+For more information, see ElastiCache API topic [`ModifyCacheCluster`](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_ModifyCacheCluster.html).

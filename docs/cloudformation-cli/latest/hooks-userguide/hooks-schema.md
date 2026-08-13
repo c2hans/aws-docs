@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 
 This section describes the syntax of the schema that you use to develop CloudFormation Hooks.
 
-A Hook includes a Hook specification represented by a JSON schema and Hook handlers. The first step in creating a custom Hook is modeling a schema that defines the Hook, its properties, and their attributes. When you initialize a custom Hook project using the CloudFormation CLI [https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-cli-init.html](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-cli-init.html) command, a Hook schema file is created for you. Use this schema file as a starting point for defining the shape and semantics of your custom Hook.
+A Hook includes a Hook specification represented by a JSON schema and Hook handlers. The first step in creating a custom Hook is modeling a schema that defines the Hook, its properties, and their attributes. When you initialize a custom Hook project using the CloudFormation CLI [init](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-cli-init.html) command, a Hook schema file is created for you. Use this schema file as a starting point for defining the shape and semantics of your custom Hook.
 
 ## Schema syntax
 <a name="schema-syntax"></a>

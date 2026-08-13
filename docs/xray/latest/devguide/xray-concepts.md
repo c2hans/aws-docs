@@ -65,7 +65,7 @@ Both viewpoints are useful, as the downstream service records precisely when it 
 X-Ray uses the data that your application sends to generate a **service graph**. Each AWS resource that sends data to X-Ray appears as a service in the graph. **Edges** connect the services that work together to serve requests. Edges connect clients to your application, and your application to the downstream services and resources that it uses.
 
 **Service Names**
-A segment's `name` should match the domain name or logical name of the service that generates the segment. However, this is not enforced. Any application that has permission to [https://docs.aws.amazon.com/xray/latest/api/API_PutTraceSegments.html](https://docs.aws.amazon.com/xray/latest/api/API_PutTraceSegments.html) can send segments with any name.
+A segment's `name` should match the domain name or logical name of the service that generates the segment. However, this is not enforced. Any application that has permission to [`PutTraceSegments`](https://docs.aws.amazon.com/xray/latest/api/API_PutTraceSegments.html) can send segments with any name.
 
 A service graph is a JSON document that contains information about the services and resources that make up your application. The X-Ray console uses the service graph to generate a visualization or *service map*.
 
@@ -153,7 +153,7 @@ For more information about groups, see [Configuring groups](xray-console-groups.
 
 When you instrument your application, the X-Ray SDK records information about incoming and outgoing requests, the AWS resources used, and the application itself. You can add other information to the segment document as annotations and metadata. Annotations and metadata are aggregated at the trace level, and can be added to any segment or subsegment.
 
-**Annotations** are simple key-value pairs that are indexed for use with [filter expressions](xray-console-filters.md). Use annotations to record data that you want to use to group traces in the console, or when calling the [https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSummaries.html](https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSummaries.html) API.
+**Annotations** are simple key-value pairs that are indexed for use with [filter expressions](xray-console-filters.md). Use annotations to record data that you want to use to group traces in the console, or when calling the [`GetTraceSummaries`](https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSummaries.html) API.
 
 X-Ray indexes up to 50 annotations per trace.
 

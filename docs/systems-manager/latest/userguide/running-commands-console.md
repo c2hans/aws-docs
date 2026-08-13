@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/running
 # Running commands from the console
 <a name="running-commands-console"></a>
 
-You can use Run Command, a tool in AWS Systems Manager, from the AWS Management Console to configure managed nodes without having to log into them. This topic includes an example that shows how to [update SSM Agent](run-command-tutorial-update-software.md#rc-console-agentexample) on a managed node by using Run Command.
+You can use Run Command from the AWS Management Console to configure managed nodes without having to log into them. This topic includes an example that shows how to [update SSM Agent](run-command-tutorial-update-software.md#rc-console-agentexample) on a managed node by using Run Command.
 
 **Before you begin**
 Before you send a command using Run Command, verify that your managed nodes meet all Systems Manager [setup requirements](systems-manager-setting-up-nodes.md).
@@ -56,7 +56,7 @@ For information about canceling a command, see [Canceling a command](cancel-run-
 <a name="run-command-rerun"></a>
 
 Systems Manager includes two options to help you rerun a command from the **Run Command** page in the Systems Manager console.
-+ **Rerun**: This button allows you to run the same command without making changes to it.
++ **Rerun**: This button lets you run the same command without making changes to it.
 + **Copy to new**: This button copies the settings of one command to a new command and gives you the option to edit those settings before you run it.
 
 **To rerun a command**

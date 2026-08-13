@@ -22,8 +22,8 @@ To connect to your Amazon DynamoDB tables with NoSQL Workbench, you must first c
    For more information about how to obtain the access keys, see [Getting an AWS access key](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SettingUp.DynamoWebService.html#SettingUp.DynamoWebService.GetCredentials).
 
    You can optionally, specify the following:
-   + [https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html)
-   + [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns)
+   + [**Session token**](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html)
+   + [**IAM role ARN**](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns)
 
 1. Choose **Connect**.
 

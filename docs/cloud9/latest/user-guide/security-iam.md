@@ -58,7 +58,7 @@ For centralized access management, we recommend AWS IAM Identity Center. For mor
 
 An *[IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html)* is an identity with specific permissions for a single person or application. We recommend using temporary credentials instead of IAM users with long-term credentials. For more information, see [Require human users to use federation with an identity provider to access AWS using temporary credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-users-federation-idp) in the *IAM User Guide*.
 
-An [https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html) specifies a collection of IAM users and makes permissions easier to manage for large sets of users. For more information, see [Use cases for IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/gs-identities-iam-users.html) in the *IAM User Guide*.
+An [*IAM group*](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html) specifies a collection of IAM users and makes permissions easier to manage for large sets of users. For more information, see [Use cases for IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/gs-identities-iam-users.html) in the *IAM User Guide*.
 
 ### IAM roles
 <a name="security_iam_authentication-iamrole"></a>
@@ -1375,7 +1375,7 @@ The owner of an EC2 environment can turn on or off AWS managed temporary credent
 1. Use **AWS managed temporary credentials** to turn AWS managed temporary credentials on or off.
 
 **Note**
-You can also turn on or off AWS managed temporary credentials by calling the AWS Cloud9 API operation [https://docs.aws.amazon.com/cloud9/latest/APIReference/API_UpdateEnvironment.html](https://docs.aws.amazon.com/cloud9/latest/APIReference/API_UpdateEnvironment.html) and assigning a value to the `managedCredentialsAction` parameter. You can request this API operation using standard AWS tools such as AWS SDKs and the AWS CLI.
+You can also turn on or off AWS managed temporary credentials by calling the AWS Cloud9 API operation [`UpdateEnvironment`](https://docs.aws.amazon.com/cloud9/latest/APIReference/API_UpdateEnvironment.html) and assigning a value to the `managedCredentialsAction` parameter. You can request this API operation using standard AWS tools such as AWS SDKs and the AWS CLI.
 
 If you turn off AWS managed temporary credentials, the environment cannot access any AWS services, regardless of the AWS entity who makes the request. But, suppose that you can't or don't want to turn on AWS managed temporary credentials for an environment, and you still need the environment to access AWS services. Then, consider the following alternatives:
 + Attach an instance profile to the Amazon EC2 instance that connects to the environment. For instructions, see [Create and Use an Instance Profile to Manage Temporary Credentials](credentials.md#credentials-temporary).

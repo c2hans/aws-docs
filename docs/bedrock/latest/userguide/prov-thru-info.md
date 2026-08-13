@@ -25,7 +25,7 @@ To learn how to view information about a Provisioned Throughput that you've purc
 
 To retrieve information about a specific Provisioned Throughput, send a [GetProvisionedModelThroughput](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetProvisionedModelThroughput.html) request with an [Amazon Bedrock control plane endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#br-cp). Specify either the name of the Provisioned Throughput or its ARN as the `provisionedModelId`.
 
-To list information about all the Provisioned Throughputs in an account, send a [ListProvisionedModelThroughputs](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListProvisionedModelThroughputs.html) request with an [Amazon Bedrock control plane endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#br-cp). To control the number of results that are returned, you can specify the following optional parameters:
+To list information about all the Provisioned Throughputs in an account, send a [ListProvisionedModelThroughputs](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListProvisionedModelThroughputs.html) request with an [Amazon Bedrock control plane endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#br-cp). You can specify the following optional parameters to control the number of results:
 
 ****
 

@@ -39,7 +39,7 @@ The following table describes the permissions granted by this policy.
 
 **To define the AwsGlueDataBrewSpecificS3BucketPolicy IAM policy for DataBrew (console)**
 
-1. Download the JSON for the [samples/AwsGlueDataBrewSpecificS3BucketPolicy.json.zip](samples/AwsGlueDataBrewSpecificS3BucketPolicy.json.zip) IAM policy.
+1. Download the JSON for the [`AwsGlueDataBrewSpecificS3BucketPolicy`](samples/AwsGlueDataBrewSpecificS3BucketPolicy.json.zip) IAM policy.
 
 1. Sign in to the AWS Management Console and open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
@@ -57,7 +57,7 @@ The following table describes the permissions granted by this policy.
 
 **To define the AwsGlueDataBrewSpecificS3BucketPolicy IAM policy for DataBrew (AWS CLI)**
 
-1. Download the JSON for [samples/AwsGlueDataBrewSpecificS3BucketPolicy.json.zip](samples/AwsGlueDataBrewSpecificS3BucketPolicy.json.zip).
+1. Download the JSON for [`AwsGlueDataBrewSpecificS3BucketPolicy`](samples/AwsGlueDataBrewSpecificS3BucketPolicy.json.zip).
 
 1. Customize the policy as described in the first step of the previous procedure.
 

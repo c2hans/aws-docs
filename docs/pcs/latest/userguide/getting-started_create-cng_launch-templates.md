@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/getting-started_cre
 # Create launch templates for AWS PCS
 <a name="getting-started_create-cng_launch-templates"></a>
 
- When you create a compute node group, you provide an EC2 launch template that AWS PCS uses to configure EC2 instances it launches. This includes settings such as security groups and scripts that run when the instance launches.
+ When you create a compute node group, you provide an EC2 launch template that AWS PCS uses to configure EC2 instances it launches. The launch template defines settings such as security groups and the SSH key pair for access. File system mounting is handled separately through node lifecycle actions, which you configure when you create the node group (see [Create compute node group for login nodes](getting-started_create-cng_login-nodes.md) and [Create compute node group for jobs](getting-started_create-cng_workers.md)).
 
  In this step, one CloudFormation template will be used to create two EC2 launch templates. One template will be used to create login nodes, and the other will be used to create compute nodes. The key difference between them is that the login nodes can be configured to allow inbound SSH access.
 
@@ -30,10 +30,6 @@ https://aws-hpc-recipes.s3.amazonaws.com/main/recipes/pcs/getting_started/assets
     + For **ClusterSecurityGroupId**, select the group named `cluster-getstarted-sg`
     + For **SshSecurityGroupId**, select the group named `inbound-ssh-getstarted-sg`
     + For **SshKeyName**, select your preferred SSH key pair.
-  + Under **File systems**
-    + For **EfsFilesystemId**, enter the file system ID from the EFS file system you created earlier in the tutorial.
-    + For **FSxLustreFilesystemId**, enter the file system ID from the FSx for Lustre file system you created earlier in the tutorial.
-    + For **FSxLustreFilesystemMountName**, enter the mount name for that same FSx for Lustre file system.
 + Choose **Next**, then choose **Next** again.
 + Choose **Submit**.
 

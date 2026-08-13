@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/modifying
 # Modifying configuration settings
 <a name="modifying-configuration-settings"></a>
 
-The solution uses a DynamoDB Table to hold default and custom configuration settings. You can view and edit these settings using the Settings menu in the content designer.
+The guidance uses a DynamoDB Table to hold default and custom configuration settings. You can view and edit these settings using the Settings menu in the content designer.
 
-Explore the available configuration settings, and override the defaults to configure the solution’s customize keyword filtering, answer field scoring, messages, redaction from logs and metrics (**ENABLE\_REDACTING** and **REDACTING\_REGEX**), and more. You can also enable the debug mode (**ENABLE\_DEBUG\_RESPONSES** and **ENABLE\_DEBUG\_LOGGING**), initiate fuzzy matching (**ES\_USE\_FUZZY\_MATCH**), and experiment with score boosting for exact phrase matches (**ES\_PHRASE\_BOOST**). Follows are a set of example of settings frequently use. For more complete information on the settings, see [QnABot Settings](https://github.com/aws-solutions/qnabot-on-aws/blob/main/source/docs/settings.md) in the GitHub repository.
+Explore the available configuration settings and override the defaults. You can configure custom keyword filtering, answer field scoring, messages, and redaction from logs and metrics (**ENABLE\_REDACTING** and **REDACTING\_REGEX**), and more. You can also enable debug mode (**ENABLE\_DEBUG\_RESPONSES** and **ENABLE\_DEBUG\_LOGGING**). Additionally, you can initiate fuzzy matching (**ES\_USE\_FUZZY\_MATCH**) and experiment with score boosting for exact phrase matches (**ES\_PHRASE\_BOOST**). The following are examples of frequently used settings. For more complete information on the settings, see [QnABot Settings](https://github.com/aws-solutions/qnabot-on-aws/blob/main/source/docs/settings.md) in the GitHub repository.
 
 **Note**
-Custom settings are kept when you upgrade the solution.
+Custom settings are kept when you upgrade the guidance.
 
 ## Configure keyword filters feature
 <a name="configure-keyword-filters-feature"></a>
@@ -72,9 +72,9 @@ You must enter a question into the QnA question bank with an utterance that is t
 **Note**
 Button values in the response cards are still displayed with their original value as input in the chat conversation.
 
-When deploying the QnABot on AWS solution (version 5.5.0 and higher) CloudFormation template, there will be a **Language** parameter in which you have the option of selecting one of the 33 languages. This **Language** parameter is used as the core language for your QnABot on AWSdeployment. The Language Analyzer for your Opensearch index setting uses the language that you have specified in this parameter. In the case that your input has a low confidence rate, it defaults to English since that is the backup language.
+When you deploy the QnABot on AWS guidance (version 5.5.0 and higher) CloudFormation template, a **Language** parameter lets you select one of 33 languages. This **Language** parameter is used as the core language for your QnABot on AWS deployment. The Language Analyzer for your OpenSearch index setting uses the language that you have specified in this parameter. In the case that your input has a low confidence rate, it defaults to English since that is the backup language.
 + Custom terminology also supports your `NATIVE_LANGUAGE`.
-+ If using the thumbs up and down feature, you should translate *thumbs up* and *thumbs down* into your native language and put that phrase in the `PROTECTED_UTTERANCES` setting. This is to prevent it from being treated as a question by the solution. To do this, complete the following steps:
++ If using the thumbs up and down feature, you should translate *thumbs up* and *thumbs down* into your native language and put that phrase in the `PROTECTED_UTTERANCES` setting. This is to prevent it from being treated as a question by the guidance. To do this, complete the following steps:
 
   1. Use the AWS translate API to translate *thumbs up* and *thumbs down* to your deployment language, if it is not English.
 
@@ -107,7 +107,7 @@ For more information, see the [MultiLanguage Support](https://github.com/aws-sol
 ## Using automatic translation
 <a name="using-automatic-translation"></a>
 
-This solution supports automatic translation to the end user’s language using [Amazon Translate](https://aws.amazon.com/translate/).
+This guidance supports automatic translation to the end user’s language using [Amazon Translate](https://aws.amazon.com/translate/).
 
 1. Turn on multiple-language support by setting: **ENABLE\_MULTI\_LANGUAGE\_SUPPORT** to `TRUE`*0*
 
@@ -115,11 +115,11 @@ This solution supports automatic translation to the end user’s language using 
 
 1. The chatbot replies to you in French.
 
-The solution also supports speech recognition and voice interaction in multiple languages. When you install or update QnABot on AWS, specify the languages using the **LexV2BotLocaleIds** CloudFormation parameter. The default languages are US English, US Spanish, and Canadian French, but you can customize the list to use any of the [languages supported by Amazon LexV2](https://docs.aws.amazon.com/lexv2/latest/dg/how-languages.html).
+The guidance also supports speech recognition and voice interaction in multiple languages. When you install or update QnABot on AWS, specify the languages using the **LexV2BotLocaleIds** CloudFormation parameter. The default languages are US English, US Spanish, and Canadian French, but you can customize the list to use any of the [languages supported by Amazon LexV2](https://docs.aws.amazon.com/lexv2/latest/dg/how-languages.html).
 
 Use the **ENABLE\_DEBUG\_RESPONSES** setting to see how local language questions are translated to English by QnABot on AWS. Use this translation to tune the content as needed to ensure that QnABot on AWS finds the best answer to a non-English question.
 
-The solution also supports Amazon Translate [custom terminology](https://docs.aws.amazon.com/translate/latest/dg/how-custom-terminology.html) to provide additional control over the translation of entities and phrases. Custom terminology supports the language that you are deploying with. For more information on how to use the Import Custom Terminology tool in the content designer, see the [Using Custom Terminologies with Amazon Translate](https://github.com/aws-solutions/qnabot-on-aws/blob/main/source/docs/custom_terminology_guide/README.md) section in the GitHub repository.
+The guidance also supports Amazon Translate [custom terminology](https://docs.aws.amazon.com/translate/latest/dg/how-custom-terminology.html) to provide additional control over the translation of entities and phrases. Custom terminology supports the language that you are deploying with. For more information on how to use the Import Custom Terminology tool in the content designer, see the [Using Custom Terminologies with Amazon Translate](https://github.com/aws-solutions/qnabot-on-aws/blob/main/source/docs/custom_terminology_guide/README.md) section in the GitHub repository.
 
 ## Configure personally identifiable information (PII) rejection and redaction
 <a name="configure-personally-identifiable-information-pii-rejection-and-redaction"></a>

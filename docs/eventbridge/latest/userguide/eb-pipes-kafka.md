@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes-ka
 # Apache Kafka streams as a source in EventBridge Pipes
 <a name="eb-pipes-kafka"></a>
 
-Apache Kafka is an open-source event streaming platform that supports workloads such as data pipelines and streaming analytics. You can use [Amazon Managed Streaming for Apache Kafka](eb-pipes-msk.md) (Amazon MSK), or a self managed Apache Kafka cluster. In AWS terminology, a *self managed* cluster refers to any Apache Kafka cluster not hosted by AWS. This includes both clusters you manage yourself, as well as those hosted by a third-party provider, such as [https://www.confluent.io/](https://www.confluent.io/), [https://www.cloudkarafka.com/](https://www.cloudkarafka.com/), or [https://redpanda.com/](https://redpanda.com/).
+Apache Kafka is an open-source event streaming platform that supports workloads such as data pipelines and streaming analytics. You can use [Amazon Managed Streaming for Apache Kafka](eb-pipes-msk.md) (Amazon MSK), or a self managed Apache Kafka cluster. In AWS terminology, a *self managed* cluster refers to any Apache Kafka cluster not hosted by AWS. This includes both clusters you manage yourself, as well as those hosted by a third-party provider, such as [Confluent Cloud](https://www.confluent.io/), [CloudKarafka](https://www.cloudkarafka.com/), or [Redpanda](https://redpanda.com/).
 
 For more information on other AWS hosting options for your cluster, see [Best Practices for Running Apache Kafka on AWS](https://aws.amazon.com/blogs/big-data/best-practices-for-running-apache-kafka-on-aws/) on the *AWS Big Data Blog*.
 

@@ -28,7 +28,7 @@ You can customize endpoint resolution of a service client with two properties th
 
 You can set a value for `endpointUrl` to indicate a "base" hostname for the service. This value, however, is not final since it is passed as a parameter to the client’s `EndpointProvider` instance. The `EndpointProvider` implementation then can inspect and potentially modify that value to determine the final endpoint.
 
-As an example, if you specify an `endpointUrl` value for an Amazon Simple Storage Service (Amazon S3) client and perform a `GetObject` operation, the default endpoint provider implementation injects the bucket name into the hostname value.
+As an example, if you specify an `endpointUrl` value for an Amazon Simple Storage Service (Amazon S3) client and perform a [`GetObject`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/get-object.html) operation, the default endpoint provider implementation injects the bucket name into the hostname value.
 
 In practice, users set an `endpointUrl` value to point at a development or preview instance of a service.
 
@@ -84,7 +84,7 @@ S3Client.fromEnvironment {
 
 The statement that sets the `endpointUrl` property specifies a *base* URL that is passed to the (default) provider, which can be modified as part of endpoint resolution.
 
-The statement that sets the `endpointProvider` specifies the *final* URL the `S3Client` uses.
+The statement that sets the `endpointProvider` specifies the *final* URL the [`S3Client`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/index.html) uses.
 
 Although you can set both properties, in most cases that need customization, you provide one of them. As a general SDK user, you most often provide an `endpointUrl` value.
 

@@ -12,12 +12,12 @@ The AWS SDK for Kotlin can provide all three common telemetry signals: metrics, 
 By default, only logging is enabled and other telemetry signals are disabled in the SDK. This topic explains how to enable and configure telemetry output.
 
 **Important**
- `TelemetryProvider` is currently an experimental API that must be opted in to use.
+ [`TelemetryProvider`](/smithy-kotlin/api/latest/telemetry-api/aws.smithy.kotlin.runtime.telemetry/-telemetry-provider/index.html) is currently an experimental API that must be opted in to use.
 
 ## Configure a `TelemetryProvider`
 <a name="observability-conf-telemetry-provider"></a>
 
-You can configure a `TelemetryProvider` in your application globally for all service clients or for individual clients. The following examples use a hypothetical `getConfiguredProvider()` function to demonstrate the `TelemetryProvider` API operations. The [Telemetry providers](observability-telemetry-providers.md) section describes information for implementations provided by the SDK. If a provider isn’t supported, you can implement your own support or [open a feature request on GitHub](https://github.com/awslabs/aws-sdk-kotlin/issues/new/choose).
+You can configure a [`TelemetryProvider`](/smithy-kotlin/api/latest/telemetry-api/aws.smithy.kotlin.runtime.telemetry/-telemetry-provider/index.html) in your application globally for all service clients or for individual clients. The following examples use a hypothetical `getConfiguredProvider()` function to demonstrate the [`TelemetryProvider`](/smithy-kotlin/api/latest/telemetry-api/aws.smithy.kotlin.runtime.telemetry/-telemetry-provider/index.html) API operations. The [Telemetry providers](observability-telemetry-providers.md) section describes information for implementations provided by the SDK. If a provider isn’t supported, you can implement your own support or [open a feature request on GitHub](https://github.com/awslabs/aws-sdk-kotlin/issues/new/choose).
 
 ### Configure the default global telemetry provider
 <a name="observability-conf-telemetry-provider-global"></a>

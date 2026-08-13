@@ -26,6 +26,7 @@ The following sections provide an overview of the basic backup management tasks 
 + [Backup and tag edits](editing-a-backup.md)
 + [Backup search](backup-search.md)
 + [Backup tiering](backup-tiering.md)
++ [Access points](backup-access-points.md)
 + [Restore a backup by resource type](restoring-a-backup.md)
 + [Restore testing](restore-testing.md)
 + [Stop a backup job](stopping-a-backup-job.md)

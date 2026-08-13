@@ -30,6 +30,9 @@ Content-type: application/json
       }
    ],
    "clientToken": "{{string}}",
+   "filesystemConfigurations": [
+      { ... }
+   ],
    "name": "{{string}}",
    "sessionTimeoutSeconds": {{number}}
 }
@@ -68,6 +71,12 @@ A unique, case-sensitive identifier to ensure that the API request completes no 
 Type: String
 Length Constraints: Minimum length of 33. Maximum length of 256.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,256}`
+Required: No
+
+ ** [filesystemConfigurations](#API_StartCodeInterpreterSession_RequestSyntax) **   <a name="BedrockAgentCore-StartCodeInterpreterSession-request-filesystemConfigurations"></a>
+The file system configurations to mount into the code interpreter session. Use these configurations to mount your own Amazon Simple Storage Service (Amazon S3) Files or Amazon Elastic File System (Amazon EFS) access points. Your session can then read and write your data. If you don't specify this field, no additional file systems are mounted.
+Type: Array of [ToolsFileSystemConfiguration](API_ToolsFileSystemConfiguration.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Required: No
 
  ** [name](#API_StartCodeInterpreterSession_RequestSyntax) **   <a name="BedrockAgentCore-StartCodeInterpreterSession-request-name"></a>

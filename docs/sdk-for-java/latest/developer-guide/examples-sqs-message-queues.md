@@ -48,7 +48,7 @@ See the [complete sample](https://github.com/awsdocs/aws-doc-sdk-examples/blob/c
 
 To list the Amazon Simple Queue Service queues for your account, call the `SqsClient’s` `listQueues` method with a `[ListQueuesRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/model/ListQueuesRequest.html)` object.
 
-When you use the form of the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/SqsClient.html#listQueues()](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/SqsClient.html#listQueues()) method that takes no parameters, the service returns *all queues*—up to 1,000 queues.
+When you use the form of the [`listQueues`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/SqsClient.html#listQueues()) method that takes no parameters, the service returns *all queues*—up to 1,000 queues.
 
 You can supply a queue name prefix to the `[ListQueuesRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/model/ListQueuesRequest.html)` object to limit the results to queues that match that prefix as shown in the following code.
 

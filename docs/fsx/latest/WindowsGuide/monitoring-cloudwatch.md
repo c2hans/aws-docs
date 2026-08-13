@@ -177,15 +177,15 @@ Amazon FSx provides actionable recommendations that you can use to optimize your
   <tr><th>If there's a warning for this metric</th><th>Do this</th></tr>
 </thead>
 <tbody>
-  <tr><td>Network throughput – utilization</td><td rowspan="5">[Increase throughput capacity](increase-throughput-capacity.md)</td></tr>
-  <tr><td>File server > Disk IOPS – utilization</td></tr>
-  <tr><td>File server > Disk throughput – utilization</td></tr>
-  <tr><td>File server > Disk IOPS - burst balance</td></tr>
-  <tr><td>File server > Disk throughput – burst balance</td></tr>
-  <tr><td>Storage capacity utilization</td><td>[Increase storage capacity](increase-storage-capacity.md)</td></tr>
-  <tr><td>Storage volume > Disk throughput – utilization (HDD)</td><td rowspan="2">[Increase storage capacity](increase-storage-capacity.md) or [switch to SDD storage type](updating-storage-type.md)</td></tr>
-  <tr><td>Storage volume > Disk throughput – burst balance (HDD)</td></tr>
-  <tr><td>Storage volume > Disk IOPS – utilization (SSD)</td><td>[Increase SSD IOPS](how-to-provision-ssd-iops.md)</td></tr>
+  <tr><td>Network throughput – utilization</td><td rowspan="5"><a href="increase-throughput-capacity.md">Increase throughput capacity</a></td></tr>
+  <tr><td>File server &gt; Disk IOPS – utilization</td></tr>
+  <tr><td>File server &gt; Disk throughput – utilization</td></tr>
+  <tr><td>File server &gt; Disk IOPS - burst balance</td></tr>
+  <tr><td>File server &gt; Disk throughput – burst balance</td></tr>
+  <tr><td>Storage capacity utilization</td><td><a href="increase-storage-capacity.md">Increase storage capacity</a></td></tr>
+  <tr><td>Storage volume &gt; Disk throughput – utilization (HDD)</td><td rowspan="2"><a href="increase-storage-capacity.md">Increase storage capacity</a> or <a href="updating-storage-type.md">switch to SDD storage type</a></td></tr>
+  <tr><td>Storage volume &gt; Disk throughput – burst balance (HDD)</td></tr>
+  <tr><td>Storage volume &gt; Disk IOPS – utilization (SSD)</td><td><a href="how-to-provision-ssd-iops.md">Increase SSD IOPS</a></td></tr>
 </tbody>
 </table>
 

@@ -24,22 +24,39 @@ For more information about security-related software updates for Amazon Linux, s
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/alas2.html) on or before **December 17, 2021** to all released Amazon Linux 2 platforms.<br />In particular, the release includes the [Amazon Linux hotpatch tool for Apache Log4j](https://alas.aws.amazon.com/announcements/2021-001.html). This tool can help mitigate recently discovered Log4j vulnerabilities. See the **Important** message at the top of this release note page.<br />The **Go**, **Corretto**, **.NET Core**, and **Ruby** releases are security releases. For more information, see **Platform-specific updates** in this table. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2021-12-21-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2021-12-21-linux.html) |
-| **Base AMI** | Updated the base AMI to version **2.0.20211201**. |
-| **Go** | Updated Go to release **1.17.5**. For details, see [go1.17](https://golang.org/doc/devel/release.html#go1.17) in *The Go Programming Language Release History*.<br />The Go 1.17.5 release is a security release. |
-| **Corretto**, **Tomcat** | Updated Corretto 11 to version **11.0.13.8.2**. For more information, see [Change Log for Amazon Corretto 11](https://github.com/corretto/corretto-11/blob/develop/CHANGELOG.md) in the Corretto 11 repository on GitHub.<br />Updated Corretto 8 to version **8.312.07.2**. For more information, see [Change Log for Amazon Corretto 8](https://github.com/corretto/corretto-8/blob/develop/CHANGELOG.md) in the Corretto 8 repository on GitHub.<br />Both Corretto updates are security releases. |
-| **.NET Core** | Updated .NET Core to releases [5.0.13](https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0.13/5.0.13.md) and [3.1.22](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1.22/3.1.22.md). <br />Both .NET Core updates are security releases. |
-| **Node.js** | Updated Node.js 14 to add support for Node version [14.18.2](https://nodejs.org/en/blog/release/v14.18.2/).<br />Updated Node.js 12 to add support for Node version [12.22.8](https://nodejs.org/en/blog/release/v12.22.8/). |
-| **Python** | Updated Pipenv to release **2021.11.9**. For details, see the Pipenv [Release and Version History](https://pipenv.pypa.io/en/latest/changelog/). |
-| **Ruby** | Updated Ruby 3.0, 2.7, and 2.6 to releases [3.0.3](https://www.ruby-lang.org/en/news/2021/11/24/ruby-3-0-3-released/), [2.7.5](https://www.ruby-lang.org/en/news/2021/11/24/ruby-2-7-5-released/), and [2.6.9](https://www.ruby-lang.org/en/news/2021/11/24/ruby-2-6-9-released/), respectively.<br />Updated RubyGems to release [3.2.32](https://blog.rubygems.org/2021/11/23/3.2.32-released.html).<br />The three Ruby updates are security releases. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/alas2.html">Amazon Linux Security Center</a> on or before <b>December 17, 2021</b> to all released Amazon Linux 2 platforms.<br />In particular, the release includes the <a href="https://alas.aws.amazon.com/announcements/2021-001.html">Amazon Linux hotpatch tool for Apache Log4j</a>. This tool can help mitigate recently discovered Log4j vulnerabilities. See the <b>Important</b> message at the top of this release note page.<br />The <b>Go</b>, <b>Corretto</b>, <b>.NET Core</b>, and <b>Ruby</b> releases are security releases. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Base AMI</b></td><td>Updated the base AMI to version <b>2.0.20211201</b>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Go</b></td><td>Updated Go to release <b>1.17.5</b>. For details, see <a href="https://golang.org/doc/devel/release.html#go1.17">go1.17</a> in <i>The Go Programming Language Release History</i>.<br />The Go 1.17.5 release is a security release.</td></tr>
+  <tr><td><b>Corretto</b>, <b>Tomcat</b></td><td>Updated Corretto 11 to version <b>11.0.13.8.2</b>. For more information, see <a href="https://github.com/corretto/corretto-11/blob/develop/CHANGELOG.md">Change Log for Amazon Corretto 11</a> in the Corretto 11 repository on GitHub.<br />Updated Corretto 8 to version <b>8.312.07.2</b>. For more information, see <a href="https://github.com/corretto/corretto-8/blob/develop/CHANGELOG.md">Change Log for Amazon Corretto 8</a> in the Corretto 8 repository on GitHub.<br />Both Corretto updates are security releases.</td></tr>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET Core to releases <a href="https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0.13/5.0.13.md">5.0.13</a> and <a href="https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1.22/3.1.22.md">3.1.22</a>. <br />Both .NET Core updates are security releases.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated Node.js 14 to add support for Node version <a href="https://nodejs.org/en/blog/release/v14.18.2/">14.18.2</a>.<br />Updated Node.js 12 to add support for Node version <a href="https://nodejs.org/en/blog/release/v12.22.8/">12.22.8</a>.</td></tr>
+  <tr><td><b>Python</b></td><td>Updated Pipenv to release <b>2021.11.9</b>. For details, see the Pipenv <a href="https://pipenv.pypa.io/en/latest/changelog/">Release and Version History</a>.</td></tr>
+  <tr><td><b>Ruby</b></td><td>Updated Ruby 3.0, 2.7, and 2.6 to releases <a href="https://www.ruby-lang.org/en/news/2021/11/24/ruby-3-0-3-released/">3.0.3</a>, <a href="https://www.ruby-lang.org/en/news/2021/11/24/ruby-2-7-5-released/">2.7.5</a>, and <a href="https://www.ruby-lang.org/en/news/2021/11/24/ruby-2-6-9-released/">2.6.9</a>, respectively.<br />Updated RubyGems to release <a href="https://blog.rubygems.org/2021/11/23/3.2.32-released.html">3.2.32</a>.<br />The three Ruby updates are security releases.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2021-12-21-linux.platforms"></a>

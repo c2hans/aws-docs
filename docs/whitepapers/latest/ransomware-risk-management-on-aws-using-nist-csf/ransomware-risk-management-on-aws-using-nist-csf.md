@@ -24,7 +24,7 @@ Publication date: **August 30, 2021** ([Document history](document-revisions.md)
 
  Ransomware attacks are typically opportunistic in nature, targeting end users through emails, embedding malicious code within websites, or gaining access through unpatched systems. Ransomware can cost organizations a significant amount of resources in response and recovery, as well as impact their ability to operate.
 
- To help entities establish a holistic defense, the [National Institute of Standards and Technology](https://www.nist.gov/news-events/news/2021/06/ransomware-risk-management-preliminary-draft-nistir-8374-available-comment) (NIST) developed the Framework for Improving Critical Infrastructure Cybersecurity (NIST Cybersecurity Framework, or CSF). See [https://d1.awsstatic.com/whitepapers/compliance/NIST_Cybersecurity_Framework_CSF.pdf?did=wp_card&trk=wp_card](https://d1.awsstatic.com/whitepapers/compliance/NIST_Cybersecurity_Framework_CSF.pdf?did=wp_card&trk=wp_card) for additional information.
+ To help entities establish a holistic defense, the [National Institute of Standards and Technology](https://www.nist.gov/news-events/news/2021/06/ransomware-risk-management-preliminary-draft-nistir-8374-available-comment) (NIST) developed the Framework for Improving Critical Infrastructure Cybersecurity (NIST Cybersecurity Framework, or CSF). See [*NIST Cybersecurity Framework (CSF): Aligning to the NIST CSF in the AWS Cloud*](https://d1.awsstatic.com/whitepapers/compliance/NIST_Cybersecurity_Framework_CSF.pdf?did=wp_card&trk=wp_card) for additional information.
 
  NIST subsequently published additional draft guidance and practice guides for organizations specific to ransomware.
 

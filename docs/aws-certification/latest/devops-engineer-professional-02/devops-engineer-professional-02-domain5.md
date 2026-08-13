@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/devops-engineer
 ### Skills in:
 <a name="dop-02-task-5-1-skills"></a>
 + Integrating AWS event sources (for example, AWS Health, EventBridge, CloudTrail)
-+ Building event processing workflows (for example, Amazon Simple Queue Service [Amazon SQS], Amazon Kinesis, Amazon Simple Notification Service [Amazon SNS], AWS Lambda, AWS Step Functions)
++ Building event processing workflows (for example, Amazon SQS, Amazon Kinesis, Amazon SNS, AWS Lambda, AWS Step Functions)
 
 ## Task Statement 5.2: Implement configuration changes in response to events.
 <a name="dop-02-task-5-2"></a>
@@ -44,4 +44,4 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/devops-engineer
 ### Skills in:
 <a name="dop-02-task-5-3-skills"></a>
 + Analyzing failed deployments (for example, AWS CodePipeline, AWS CodeBuild, AWS CodeDeploy, AWS CloudFormation, CloudWatch synthetic monitoring)
-+ Analyzing incidents regarding failed processes (for example, auto scaling, Amazon Elastic Container Service [Amazon ECS], Amazon Elastic Kubernetes Service [Amazon EKS])
++ Analyzing incidents regarding failed processes (for example, auto scaling, Amazon ECS, Amazon EKS)

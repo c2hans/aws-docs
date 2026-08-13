@@ -15,7 +15,7 @@ Before you can create this pipeline, you must configure the required resources. 
 
 **Important**
 Many of the actions you add to your pipeline in this procedure involve AWS resources that you need to create before you create the pipeline. AWS resources for your source actions must always be created in the same AWS Region where you create your pipeline. For example, if you create your pipeline in the US East (Ohio) Region, your CodeCommit repository must be in the US East (Ohio) Region.
-You can add cross-region actions when you create your pipeline. AWS resources for cross-region actions must be in the same AWS Region where you plan to execute the action. For more information, see [Add a cross-Region action in CodePipeline](actions-create-cross-region.md).
+You can add cross-region actions when you create your pipeline. AWS resources for cross-region actions must be in the same AWS Region where you plan to execute the action. For more information, see [Add a cross-region action in CodePipeline](actions-create-cross-region.md).
 
 **Important**
 As part of creating a pipeline, an S3 artifact bucket provided by the customer will be used by CodePipeline for artifacts. (This is different from the bucket used for an S3 source action.) If the S3 artifact bucket is in a different account from the account for your pipeline, make sure that the S3 artifact bucket is owned by AWS accounts that are safe and will be dependable.
@@ -54,7 +54,7 @@ You have set the required system environment variables so that Rake commands can
    + If you will be deploying your sample to Amazon Linux, RHEL, or Ubuntu Server instances, choose [codepipeline-jenkins-aws-codedeploy\_linux.zip](https://github.com/awslabs/aws-codepipeline-jenkins-aws-codedeploy_linux).
    + If you will be deploying your sample to Windows Server instances, choose [CodePipeline-Jenkins-AWSCodeDeploy\_Windows.zip](https://github.com/awslabs/AWSCodePipeline-Jenkins-AWSCodeDeploy_windows).
 
-1. From the repository, choose **Fork** to clone the sample repo into a repo in your Github account. For more information, see the [GitHub documentation](https://help.github.com/articles/create-a-repo/).
+1. From the repository, choose **Fork** to clone the sample repo into a repo in your GitHub account. For more information, see the [GitHub documentation](https://help.github.com/articles/create-a-repo/).
 
 ### Create an IAM role to use for Jenkins integration
 <a name="tutorials-four-stage-pipeline-prerequisites-jenkins-iam-role"></a>
@@ -169,7 +169,7 @@ You can use your own CodeDeploy resources or create new ones, but you might incu
 
 1. In **Step 7: Review**, review the information, and then choose **Create pipeline**.
 
-1. The pipeline automatically starts and runs the sample through the pipeline. You can view progress and success and failure messages as the pipeline builds the Haml sample to HTML and deploys it a webpage to each of the Amazon EC2 instances in the CodeDeploy deployment.
+1. The pipeline automatically starts and runs the sample through the pipeline. You can view progress and success and failure messages as the pipeline builds the Haml sample to HTML and deploys it as a webpage to each of the Amazon EC2 instances in the CodeDeploy deployment.
 
 ## Step 3: Add another stage to your pipeline
 <a name="tutorials-four-stage-pipeline-add-stage"></a>

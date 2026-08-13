@@ -17,7 +17,7 @@ The high-level steps to configure a CodeBuild project to run GitLab CI/CD pipeli
 
 For a more detailed procedure, see [Tutorial: Configure a CodeBuild-hosted GitLab runner](sample-gitlab-runners.md).
 
-This feature allows your GitLab CI/CD pipeline jobs to get native integration with AWS, which provides security and convenience through features like IAM, AWS CloudTrail, and Amazon VPC. You can access latest instance types, including ARM-based instances.
+This feature allows your GitLab CI/CD pipeline jobs to get native integration with AWS, which provides security and convenience through features like IAM, AWS CloudTrail, and Amazon VPC. You can access the latest instance types, including ARM-based instances.
 
 **Topics**
 + [About the CodeBuild-hosted GitLab runner](gitlab-runner-questions.md)

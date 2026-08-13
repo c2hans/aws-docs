@@ -11,7 +11,7 @@ There are three major steps in developing a custom Hook:
 
 1. **Initiate**
 
-   To develop custom Hooks, you must configure and use the CloudFormation CLI. To initiate a Hook's project and its required files, use the CloudFormation CLI [https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-cli-init.html](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-cli-init.html) command and specify that you want to create a Hook. For more information, see [Initiating a custom CloudFormation Hooks project](hooks-init.md).
+   To develop custom Hooks, you must configure and use the CloudFormation CLI. To initiate a Hook's project and its required files, use the CloudFormation CLI [init](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-cli-init.html) command and specify that you want to create a Hook. For more information, see [Initiating a custom CloudFormation Hooks project](hooks-init.md).
 
 1. **Model**
 

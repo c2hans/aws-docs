@@ -41,4 +41,4 @@ When creating a DB instance, some database engines require that a database name 
 Amazon RDS creates a master user account for your DB instance as part of the creation process. This master user has permissions to create databases and to perform create, delete, select, update, and insert operations on tables the master user creates. You must set the master user password when you create a DB instance, but you can change it at any time using the AWS CLI, Amazon RDS API operations, or the AWS Management Console. You can also change the master user password and manage users using standard SQL commands.
 
 **Note**
-This guide covers non-Aurora Amazon RDS database engines. For information about using Amazon Aurora, see the [https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html).
+This guide covers non-Aurora Amazon RDS database engines. For information about using Amazon Aurora, see the [*Amazon Aurora User Guide*](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html).

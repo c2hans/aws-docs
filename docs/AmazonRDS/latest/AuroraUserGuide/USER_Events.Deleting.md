@@ -26,7 +26,7 @@ You can delete a subscription when you no longer need it. All subscribers to the
 ## AWS CLI
 <a name="USER_Events.Deleting.CLI"></a>
 
-To delete an Amazon RDS event notification subscription, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/delete-event-subscription.html](https://docs.aws.amazon.com/cli/latest/reference/rds/delete-event-subscription.html) command. Include the following required parameter:
+To delete an Amazon RDS event notification subscription, use the AWS CLI [`delete-event-subscription`](https://docs.aws.amazon.com/cli/latest/reference/rds/delete-event-subscription.html) command. Include the following required parameter:
 + `--subscription-name`
 
 **Example**
@@ -39,5 +39,5 @@ aws rds delete-event-subscription --subscription-name {{myrdssubscription}}
 ## API
 <a name="USER_Events.Deleting.API"></a>
 
-To delete an Amazon RDS event notification subscription, use the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteEventSubscription.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteEventSubscription.html) command. Include the following required parameter:
+To delete an Amazon RDS event notification subscription, use the RDS API [`DeleteEventSubscription`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteEventSubscription.html) command. Include the following required parameter:
 + `SubscriptionName`

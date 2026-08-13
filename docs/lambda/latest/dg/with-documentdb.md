@@ -79,7 +79,7 @@ Before you can use Amazon DocumentDB as an event source for your Lambda function
 + **Activate change streams on your Amazon DocumentDB cluster.** For more information, see [Using Change Streams with Amazon DocumentDB](https://docs.aws.amazon.com/documentdb/latest/developerguide/change_streams.html) in the *Amazon DocumentDB Developer Guide*.
 + **Provide Lambda with credentials to access your Amazon DocumentDB cluster.** When setting up the event source, provide the [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) key that contains the authentication details (username and password) required to access your cluster. To provide this key during setup, do either of the following:
   + If you're using the Lambda console for setup, then provide the key in the **Secrets manager key** field.
-  + If you're using the AWS Command Line Interface (AWS CLI) for setup, then provide this key in the `source-access-configurations` option. You can include this option with either the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/create-event-source-mapping.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/create-event-source-mapping.html) command or the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/update-event-source-mapping.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/update-event-source-mapping.html) command. For example:
+  + If you're using the AWS Command Line Interface (AWS CLI) for setup, then provide this key in the `source-access-configurations` option. You can include this option with either the [`create-event-source-mapping`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/create-event-source-mapping.html) command or the [`update-event-source-mapping`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/update-event-source-mapping.html) command. For example:
 
     ```
     aws lambda create-event-source-mapping \
@@ -241,7 +241,7 @@ To create or manage an Amazon DocumentDB event source mapping with an [AWS SDK](
 + [UpdateEventSourceMapping](https://docs.aws.amazon.com/lambda/latest/api/API_UpdateEventSourceMapping.html)
 + [DeleteEventSourceMapping](https://docs.aws.amazon.com/lambda/latest/api/API_DeleteEventSourceMapping.html)
 
-To create the event source mapping with the AWS CLI, use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/create-event-source-mapping.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/create-event-source-mapping.html) command. The following example uses this command to map a function named `my-function` to an Amazon DocumentDB change stream. The event source is specified by an Amazon Resource Name (ARN), with a batch size of 500, starting from the timestamp in Unix time. The command also specifies the Secrets Manager key that Lambda uses to connect to Amazon DocumentDB. Additionally, it includes `document-db-event-source-config` parameters that specify the database and the collection to read from.
+To create the event source mapping with the AWS CLI, use the [`create-event-source-mapping`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/create-event-source-mapping.html) command. The following example uses this command to map a function named `my-function` to an Amazon DocumentDB change stream. The event source is specified by an Amazon Resource Name (ARN), with a batch size of 500, starting from the timestamp in Unix time. The command also specifies the Secrets Manager key that Lambda uses to connect to Amazon DocumentDB. Additionally, it includes `document-db-event-source-config` parameters that specify the database and the collection to read from.
 
 ```
 aws lambda create-event-source-mapping --function-name my-function \
@@ -274,7 +274,7 @@ You should see output that looks like this:
 }
 ```
 
-After creation, you can use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/update-event-source-mapping.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/update-event-source-mapping.html) command to update the settings for your Amazon DocumentDB event source. The following example updates the batch size to 1,000 and the batch window to 10 seconds. For this command, you need the UUID of your event source mapping, which you can retrieve using the `list-event-source-mapping` command or the Lambda console.
+After creation, you can use the [`update-event-source-mapping`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/update-event-source-mapping.html) command to update the settings for your Amazon DocumentDB event source. The following example updates the batch size to 1,000 and the batch window to 10 seconds. For this command, you need the UUID of your event source mapping, which you can retrieve using the `list-event-source-mapping` command or the Lambda console.
 
 ```
 aws lambda update-event-source-mapping --function-name my-function \
@@ -304,7 +304,7 @@ You should see this output that looks like this:
 }
 ```
 
-Lambda updates settings asynchronously, so you might not see these changes in the output until the process completes. To view the current settings of your event source mapping, use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/get-event-source-mapping.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/get-event-source-mapping.html) command.
+Lambda updates settings asynchronously, so you might not see these changes in the output until the process completes. To view the current settings of your event source mapping, use the [`get-event-source-mapping`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/get-event-source-mapping.html) command.
 
 ```
 aws lambda get-event-source-mapping --uuid f89f8514-cdd9-4602-9e1f-01a5b77d449b
@@ -331,7 +331,7 @@ You should see this output that looks like this:
 }
 ```
 
-To delete your Amazon DocumentDB event source mapping, use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/delete-event-source-mapping.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/delete-event-source-mapping.html) command.
+To delete your Amazon DocumentDB event source mapping, use the [`delete-event-source-mapping`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/delete-event-source-mapping.html) command.
 
 ```
 aws lambda delete-event-source-mapping \

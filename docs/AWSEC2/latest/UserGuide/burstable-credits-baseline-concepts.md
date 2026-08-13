@@ -88,11 +88,11 @@ The following table summarizes the key credit differences between the burstable 
   <tr><th>Type</th><th>Type of CPU credits supported</th><th>Credit configuration modes</th><th>Accrued CPU credits lifespan between instance starts and stops</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="4">Latest generation</td></tr>
+  <tr><td colspan="4"><b>Latest generation</b></td></tr>
   <tr><td>T4g</td><td>Earned credits, Accrued credits, Spent credits, Surplus credits (Unlimited mode only)</td><td>Standard, Unlimited (default)</td><td>7 days (credits persist for 7 days after an instance stops)</td></tr>
   <tr><td>T3a</td><td>Earned credits, Accrued credits, Spent credits, Surplus credits (Unlimited mode only)</td><td>Standard, Unlimited (default)</td><td>7 days (credits persist for 7 days after an instance stops)</td></tr>
   <tr><td>T3</td><td>Earned credits, Accrued credits, Spent credits, Surplus credits (Unlimited mode only)</td><td>Standard, Unlimited (default)</td><td>7 days (credits persist for 7 days after an instance stops)</td></tr>
-  <tr><td colspan="4">Previous generation</td></tr>
+  <tr><td colspan="4"><b>Previous generation</b></td></tr>
   <tr><td>T2</td><td>Earned credits, Accrued credits, Spent credits, Launch credits (Standard mode only), Surplus credits (Unlimited mode only)</td><td>Standard (default), Unlimited</td><td>0 days (credits are lost when an instance stops)</td></tr>
 </tbody>
 </table>

@@ -167,7 +167,7 @@ Joining an SVM to your self-managed Active Directory fails with the following er
 
 To resolve this issue, use the following procedure:
 
-1. If only some of the domain controllers in your Active Directory are reachable, for example due to geographical limitations or firewalls, you can add preferred domain controllers. Using this option, Amazon FSx attempts to contact the preferred domain controllers. Add preferred domain controllers using the [https://docs.netapp.com/us-en/ontap/smb-admin/add-preferred-domain-controllers-task.html](https://docs.netapp.com/us-en/ontap/smb-admin/add-preferred-domain-controllers-task.html) NetApp ONTAP CLI command, as follows:
+1. If only some of the domain controllers in your Active Directory are reachable, for example due to geographical limitations or firewalls, you can add preferred domain controllers. Using this option, Amazon FSx attempts to contact the preferred domain controllers. Add preferred domain controllers using the [`vserver cifs domain preferred-dc add`](https://docs.netapp.com/us-en/ontap/smb-admin/add-preferred-domain-controllers-task.html) NetApp ONTAP CLI command, as follows:
 
    1. To access the ONTAP CLI, establish an SSH session on the management port of the Amazon FSx for NetApp ONTAP file system or SVM by running the following command. Replace `{{management_endpoint_ip}}` with the IP address of the file system's management port.
 
@@ -192,7 +192,7 @@ To resolve this issue, use the following procedure:
       FsxId123456789::> vserver cifs domain preferred-dc add -vserver vs1 -domain cifs.lab.example.com -preferred-dc 172.17.102.25,172.17.102.24
       ```
 
-1. Check to see if your Domain Controller can be resolved with DNS. Use the [https://docs.netapp.com/us-en/ontap-cli-9121/vserver-services-access-check-dns-forward-lookup.html](https://docs.netapp.com/us-en/ontap-cli-9121/vserver-services-access-check-dns-forward-lookup.html) NetApp ONTAP CLI command to return the IP address of a hostname based on the look up on the DNS server specified or the vserver’s DNS configuration.
+1. Check to see if your Domain Controller can be resolved with DNS. Use the [`vserver services access-check dns forward-lookup`](https://docs.netapp.com/us-en/ontap-cli-9121/vserver-services-access-check-dns-forward-lookup.html) NetApp ONTAP CLI command to return the IP address of a hostname based on the look up on the DNS server specified or the vserver’s DNS configuration.
 
    1. To access the ONTAP CLI, establish an SSH session on the management port of the Amazon FSx for NetApp ONTAP file system or SVM by running the following command. Replace `{{management_endpoint_ip}}` with the IP address of the file system's management port.
 

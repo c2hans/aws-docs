@@ -58,13 +58,14 @@ Amazon Polly generative voices are available in the following regions:
 + Asia Pacific (Tokyo): ap-northeast-1
 + Asia Pacific (Seoul): ap-northeast-2
 + Asia Pacific (Singapore): ap-southeast-1
++ Asia Pacific (Sydney): ap-southeast-2
 + Europe (London): eu-west-2
 + Canada (Central): ca-central-1
 + Europe (Zurich): eu-central-2
 + Other Regions are not available
 
 **The following features are supported for generative voices:**
-+ Bidirectional Streaming API is now offered in Generative engine and allows for streaming input and output at the same time. This API is available in the following AWS regions: US East (N. Virginia), Europe (Frankfurt), US West (Oregon), Asia Pacific (Singapore), Europe (London), Canada (Central), and Europe (Zurich). Visit the [documentation](https://docs.aws.amazon.com/polly/latest/dg/API_StartSpeechSynthesisStream.html) to learn more about how to use it.
++ Bidirectional Streaming API is now offered in Generative engine and allows for streaming input and output at the same time. This API is available in the following AWS regions: US East (N. Virginia), Europe (Frankfurt), US West (Oregon), Asia Pacific (Singapore), Asia Pacific (Sydney), Europe (London), Canada (Central), and Europe (Zurich). Visit the [documentation](https://docs.aws.amazon.com/polly/latest/dg/API_StartSpeechSynthesisStream.html) to learn more about how to use it.
 + Real-time and asynchronous speech synthesis operations.
 + Newscaster speaking style is not supported in the **Generative** engine.
 + Many (but not all) SSML tags are supported by Amazon Polly. For more information about NTTS-supported SSML tags, see [Supported SSML tags](https://docs.aws.amazon.com/polly/latest/dg/supportedtags.html)

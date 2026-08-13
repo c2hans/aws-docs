@@ -686,7 +686,7 @@ main "$@"
   + [StopTask](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/StopTask)
   + [TerminateInstances](https://docs.aws.amazon.com/goto/aws-cli/ec2-2016-11-15/TerminateInstances)
   + [UpdateService](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/UpdateService)
-  + [Wait](https://docs.aws.amazon.com/goto/aws-cli/ec2-2016-11-15/Wait)
+  + [Wait](https://docs.aws.amazon.com/goto/aws-cli/iam-2010-05-08/Wait)
 
 ------
 

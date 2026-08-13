@@ -39,7 +39,7 @@ Amazon S3 actions
  `s3:PutObject`
  `s3:PutObjectAcl`
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubStrategyServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubStrategyServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
+To view the permissions for this policy, see [AWSMigrationHubStrategyServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubStrategyServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
 
 To view the update history of this policy, see [Strategy Recommendations updates to AWS managed policies](security-iam-awsmanpol.md#security-iam-awsmanpol-updates).
 

@@ -21,7 +21,7 @@ To manage data source connectors, you can perform the following actions:
 ## Deleting an Amazon Q Business data source connector
 <a name="delete-datasource"></a>
 
-To delete an Amazon Q Business data source connector, you can use the console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteDataSource.html) API operation .
+To delete an Amazon Q Business data source connector, you can use the console or the [DeleteDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteDataSource.html) API operation .
 
 The following tabs provide a procedure for the AWS Management Console and code examples for the AWS CLI.
 
@@ -61,7 +61,7 @@ aws qbusiness delete-data-source \
 ## Getting properties of an Amazon Q Business data source connector
 <a name="describe-datasource"></a>
 
-To get the properties of an Amazon Q Business data source connector, you can use the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetDataSource.html) API operation.
+To get the properties of an Amazon Q Business data source connector, you can use the [GetDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetDataSource.html) API operation.
 
 The following tabs provide a procedure for the AWS Management Console and code examples for the AWS CLI.
 
@@ -125,7 +125,7 @@ aws qbusiness get-data-source \
 ## Listing Amazon Q Business data source connectors
 <a name="list-datasources"></a>
 
-To list Amazon Q Business data source connectors, you can use the console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListDataSources.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListDataSources.html) API operation.
+To list Amazon Q Business data source connectors, you can use the console or the [ListDataSources](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListDataSources.html) API operation.
 
 The following tabs provide a procedure for the AWS Management Console and code examples for the AWS CLI.
 
@@ -159,7 +159,7 @@ aws qbusiness list-data-sources \
 ## Updating Amazon Q Business data source connectors
 <a name="update-datasources"></a>
 
-To update your Amazon Q Business data source connectors, you can use the console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateDataSource.html) API operation.
+To update your Amazon Q Business data source connectors, you can use the console or the [UpdateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateDataSource.html) API operation.
 
 The following tabs provide a procedure for the AWS Management Console and code examples for the AWS CLI.
 
@@ -218,7 +218,7 @@ aws qbusiness update-data-source \
 ## Starting data source connector sync jobs
 <a name="start-datasource-sync-jobs"></a>
 
-To start Amazon Q Business data source connector sync jobs, you can use the console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_StartDataSourceSyncJobs.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_StartDataSourceSyncJobs.html) API operation.
+To start Amazon Q Business data source connector sync jobs, you can use the console or the [StartDataSourceSyncJobs](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_StartDataSourceSyncJobs.html) API operation.
 
 The following tabs provide a procedure for the AWS Management Console and code examples for the AWS CLI.
 
@@ -256,7 +256,7 @@ aws qbusiness start-data-source-sync-job \
 ## Stopping data source connector sync jobs
 <a name="end-datasource-sync-jobs"></a>
 
-To stop your Amazon Q Business connector sync jobs, you can use the console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_StopDataSourceSyncJobs.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_StopDataSourceSyncJobs.html) API operation.
+To stop your Amazon Q Business connector sync jobs, you can use the console or the [StopDataSourceSyncJobs](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_StopDataSourceSyncJobs.html) API operation.
 
 **Note**
 You can only stop a sync job already in progress.
@@ -297,7 +297,7 @@ aws qbusiness stop-data-source-sync-job \
 ## Listing data source connector sync jobs
 <a name="list-datasource-sync-jobs"></a>
 
-To list Amazon Q Business data source connector sync jobs that are in progress, you can use the console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListDataSourceSyncJobs.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListDataSourceSyncJobs.html) API operation.
+To list Amazon Q Business data source connector sync jobs that are in progress, you can use the console or the [ListDataSourceSyncJobs](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListDataSourceSyncJobs.html) API operation.
 
 The following tabs provide a procedure for the AWS Management Console and code examples for the AWS CLI.
 

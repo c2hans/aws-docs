@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/attachments.html
 Email attachments in SES are files that you can include with your email messages when using the SES API v2 `SendEmail` and `SendBulkEmail` operations. This feature enables you to enrich your email content by including documents such as PDFs, Word files, images, or other file types that comply with SES supported MIME types. You can also include inline images that render directly in the email content without requiring recipients to download them separately. You can include multiple attachments per email, up to the 40MB total message size limit.
 
 **Note**
-[https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) SES API v2 with `Raw` content type, SMTP interface, and SES API v1 continue to handle attachments through [raw email MIME message construction](send-email-raw.md#send-email-raw-mime).
+[`SendEmail`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) SES API v2 with `Raw` content type, SMTP interface, and SES API v1 continue to handle attachments through [raw email MIME message construction](send-email-raw.md#send-email-raw-mime).
 
 ## How attachments work in SES
 <a name="how-attachments-work"></a>
@@ -31,7 +31,7 @@ Think of it like this—it's similar to sending a package through the mail. Firs
 ## Attachment object structure
 <a name="attachment-structure"></a>
 
-When you send an email with attachments through SES, the service handles the complex MIME message construction automatically. You simply need to provide the attachment content and metadata through the following the SES API v2 [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Attachment.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Attachment.html) object structure:
+When you send an email with attachments through SES, the service handles the complex MIME message construction automatically. You simply need to provide the attachment content and metadata through the following the SES API v2 [`Attachment`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Attachment.html) object structure:
 + `FileName` (Required) – The file name displayed to recipients (must include file extension). If not provided, SES will derive a `ContentType` from the extension of the `FileName`.
 + `ContentType` (Optional) – [IANA-compliant media type identifier](https://www.iana.org/assignments/media-types/media-types.xhtml).
 + `ContentDisposition` (Optional) – Specifies how the attachment should be rendered: `ATTACHMENT` *(default)* or `INLINE`.
@@ -43,7 +43,7 @@ All attached content must be encoded to base64 before transferring to the SES en
 + Plain text content: `Text attachment sample content.`
 + Base64 encoded: `VGV4dCBhdHRhY2htZW50IHNhbXBsZSBjb250ZW50Lg==`
 
-The following examples show how to use the attachment object structure when specifying attachments with the SES API v2 [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) and [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendBulkEmail.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendBulkEmail.html) operations using the AWS CLI referencing a JSON file containing attachment object elements.
+The following examples show how to use the attachment object structure when specifying attachments with the SES API v2 [`SendEmail`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) and [`SendBulkEmail`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendBulkEmail.html) operations using the AWS CLI referencing a JSON file containing attachment object elements.
 
 **Example – SendEmail with simple content**
 

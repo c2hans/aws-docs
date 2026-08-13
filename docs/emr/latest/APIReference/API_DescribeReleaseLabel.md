@@ -74,7 +74,7 @@ The list of applications available for the target release label. `Name` is the n
 Type: Array of [SimplifiedApplication](API_SimplifiedApplication.md) objects
 
  ** [AvailableOSReleases](#API_DescribeReleaseLabel_ResponseSyntax) **   <a name="EMR-DescribeReleaseLabel-response-AvailableOSReleases"></a>
-The list of available Amazon Linux release versions for an Amazon EMR release. Contains a Label field that is formatted as shown in [https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-al2.html](https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-al2.html). For example, [2.0.20220218.1](https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-20220218.html).
+The list of available Amazon Linux release versions for an Amazon EMR release. Contains a Label field that is formatted as shown in [*Amazon Linux 2 Release Notes*](https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-al2.html). For example, [2.0.20220218.1](https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-20220218.html).
 Type: Array of [OSRelease](API_OSRelease.md) objects
 
  ** [NextToken](#API_DescribeReleaseLabel_ResponseSyntax) **   <a name="EMR-DescribeReleaseLabel-response-NextToken"></a>

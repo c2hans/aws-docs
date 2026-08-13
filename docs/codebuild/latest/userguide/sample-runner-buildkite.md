@@ -37,9 +37,9 @@ In this step, you will generate an agent token within Buildkite that will be use
    +  In **Project configuration**, select **Runner project**. In **Runner**:
      +  For **Runner provider**, choose **Buildkite**.
      + For **Buildkite agent token**, choose **Create a new agent token by using the create secret page**. You will be prompted to create a new secret in AWS Secrets Manager with a secret value equal to the Buildkite agent token you generated above.
-     + (Optional) If you would like to use CodeBuild managed credentials for your job, select your job’s source repository provider under **Buildkite source credential options** and verify that credentials are configured for your account. Additionally, verify that your Buildkite pipeline uses **Checkout using HTTPS**.
+     + (Optional) If you would like to use CodeBuild managed credentials for your job, select your job's source repository provider under **Buildkite source credential options** and verify that credentials are configured for your account. Additionally, verify that your Buildkite pipeline uses **Checkout using HTTPS**.
 **Note**
-Buildkite requires source credentials within the build environment in order to pull your job’s source. See [Authenticating Buildkite to a Private Repository](#sample-runner-buildkite-config) for available source credential options.
+Buildkite requires source credentials within the build environment to pull the source for your job. See [Authenticating Buildkite to a Private Repository](#sample-runner-buildkite-config) for available source credential options.
    + (Optional) In **Environment**:
      + Choose a supported **Environment image** and **Compute**.
 
@@ -60,7 +60,7 @@ In this step, you will use the **Payload URL** and **Secret** values from the Co
 
 **To create a new webhook in Buildkite**
 
-1. Navigate to your Buildkite organization’s **Settings** page.
+1. Open your Buildkite organization's **Settings** page.
 
 1. Under **Integrations**, select **Notification Services**.
 
@@ -81,13 +81,13 @@ In this step, you will use the **Payload URL** and **Secret** values from the Co
 ## Step 4: Update your Buildkite pipeline steps
 <a name="sample-runner-buildkite-update-pipeline"></a>
 
-In this step, you will update your Buildkite pipeline’s steps in order to add necessary labels and optional overrides. For the full list of supported label overrides, see [Label overrides supported with the CodeBuild-hosted Buildkite runner](buildkite-runner-update-labels.md).
+In this step, update the steps of your Buildkite pipeline to add necessary labels and optional overrides. For the full list of supported label overrides, see [Label overrides supported with the CodeBuild-hosted Buildkite runner](buildkite-runner-update-labels.md).
 
 **Update your pipeline steps**
 
-1. Navigate to your Buildkite pipeline steps page by selecting your Buildkite pipeline, choosing **Settings**, and then choosing **Steps**.
+1. Open the Buildkite pipeline steps page by choosing your Buildkite pipeline, choosing **Settings**, and then choosing **Steps**.
 
-   If you haven’t already, choose **Convert to YAML steps**.
+   If you haven't already, choose **Convert to YAML steps**.
 ![Steps to update YAML.](http://docs.aws.amazon.com/codebuild/latest/userguide/images/buildkite-steps.png)
 
 1. At a minimum, you will need to specify a [ Buildkite agent tag ](https://buildkite.com/docs/agent/v3/cli-start#agent-targeting) referencing the name of your CodeBuild pipeline. The project name is needed to link the AWS-related settings of your Buildkite job to a specific CodeBuild project. By including the project name in the YAML, CodeBuild is allowed to invoke jobs with the correct project settings.
@@ -174,7 +174,7 @@ In this step, you will update your Buildkite pipeline’s steps in order to add 
      - command: "echo \"Hello World\""
    ```
 
-1. Optionally, you can provide labels outside of those that CodeBuild supports. These labels will be ignored for the purpose of overriding attributes of the build, but will not fail the webhook request. For example, adding `myLabel: “testLabel"` as a label will not prevent the build from running.
+1. Optionally, you can provide labels outside of those that CodeBuild supports. These labels will be ignored for the purpose of overriding attributes of the build, but will not fail the webhook request. For example, adding `myLabel: "testLabel"` as a label will not prevent the build from running.
 
 ## Step 5: Review your results
 <a name="sample-runner-buildkite-verify"></a>
@@ -192,11 +192,11 @@ If you have a private repository configured within your Buildkite pipeline, Buil
 
 **To authenticate with CodeBuild**
 
-CodeBuild offers managed credentials handling for Supported source types. In order to use CodeBuild source credentials to pull your job’s source repository, you can use the following steps:
+CodeBuild offers managed credentials handling for Supported source types. In order to use CodeBuild source credentials to pull your job's source repository, you can use the following steps:
 
 1. In the CodeBuild console, navigate to **Edit project** or create a new CodeBuild project using the steps in [Step 2: Create a CodeBuild project with a webhook](#sample-runner-buildkite-create-project).
 
-1. Under **Buildkite source credential options**, select your job’s source repository provider.
+1. Under **Buildkite source credential options**, select your job's source repository provider.
 
    1. If you would like to use account-level CodeBuild credentials, verify that they are configured correctly. Additionally, if your project has an inline buildspec configured, verify that [ git-credential-helper ](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html#build-spec.env.git-credential-helper) is enabled.
 
@@ -238,4 +238,4 @@ Buildkite maintains an [ ssh-checkout plugin](https://github.com/buildkite-plugi
 
 You can specify the following environment variables in your project configuration to modify the setup configuration of your self-hosted runners:
 + `CODEBUILD_CONFIG_BUILDKITE_AGENT_TOKEN`: CodeBuild will fetch the secret value configured as the value of this environment variable from AWS Secrets Manager in order to register the Buildkite self-hosted runner agent. This environment variable must be of type `SECRETS_MANAGER`, and the value should be the name of your secret in Secrets Manager. A Buildkite agent token environment variable is required for all Buildkite runner projects.
-+ `CODEBUILD_CONFIG_BUILDKITE_CREDENTIAL_DISABLE`: By default, CodeBuild will load account or project level source credentials into the build environment, as these credentials are used by the Buildkite agent to pull the job’s source repository. To disable this behavior, you can add this environment variable to your project with the value set to `true`, which will prevent source credentials from being loaded into the build environment.
++ `CODEBUILD_CONFIG_BUILDKITE_CREDENTIAL_DISABLE`: By default, CodeBuild will load account or project level source credentials into the build environment, as these credentials are used by the Buildkite agent to pull the job's source repository. To disable this behavior, you can add this environment variable to your project with the value set to `true`, which will prevent source credentials from being loaded into the build environment.

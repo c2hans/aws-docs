@@ -10,7 +10,7 @@ Amazon SageMaker AI provides prebuilt Docker images that include deep learning f
 ## Using the SageMaker AI Python SDK
 <a name="pre-built-containers-frameworks-deep-learning-sdk"></a>
 
-With the [SageMaker Python SDK](https://github.com/aws/sagemaker-python-sdk#installing-the-sagemaker-python-sdk), you can train and deploy models using these popular deep learning frameworks. For instructions on installing and using the SDK, see [https://github.com/aws/sagemaker-python-sdk#installing-the-sagemaker-python-sdk](https://github.com/aws/sagemaker-python-sdk#installing-the-sagemaker-python-sdk). The following table lists the available frameworks and instructions on how to use them with the [SageMaker Python SDK](https://github.com/aws/sagemaker-python-sdk#installing-the-sagemaker-python-sdk):
+With the [SageMaker Python SDK](https://github.com/aws/sagemaker-python-sdk#installing-the-sagemaker-python-sdk), you can train and deploy models using these popular deep learning frameworks. For instructions on installing and using the SDK, see [[Amazon SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable)](https://github.com/aws/sagemaker-python-sdk#installing-the-sagemaker-python-sdk). The following table lists the available frameworks and instructions on how to use them with the [SageMaker Python SDK](https://github.com/aws/sagemaker-python-sdk#installing-the-sagemaker-python-sdk):
 
 | Framework | Instructions |
 | --- | --- |

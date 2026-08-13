@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the AWS Key Management Service (AW
 
 **Resource type:** `AWS::IAM::Policy`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/iam-customer-policy-blocked-kms-actions.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-customer-policy-blocked-kms-actions.html)
+**AWS Config rule:** [iam-customer-policy-blocked-kms-actions](https://docs.aws.amazon.com/config/latest/developerguide/iam-customer-policy-blocked-kms-actions.html)
 
 **Schedule type:** Change triggered
 
@@ -53,7 +53,7 @@ To modify an IAM customer managed policy, see [Editing customer managed policies
 + `AWS::IAM::Role`
 + `AWS::IAM::User`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/iam-inline-policy-blocked-kms-actions.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-inline-policy-blocked-kms-actions.html)
+**AWS Config rule:** [iam-inline-policy-blocked-kms-actions](https://docs.aws.amazon.com/config/latest/developerguide/iam-inline-policy-blocked-kms-actions.html)
 
 **Schedule type:** Change triggered
 
@@ -114,7 +114,7 @@ To cancel a scheduled KMS key deletion, see **To cancel key deletion** under [Sc
 
 **Resource type:** `AWS::KMS::Key`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cmk-backing-key-rotation-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/cmk-backing-key-rotation-enabled.html)
+**AWS Config rule:** [cmk-backing-key-rotation-enabled](https://docs.aws.amazon.com/config/latest/developerguide/cmk-backing-key-rotation-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -138,7 +138,7 @@ To enable KMS key rotation, see [How to enable and disable automatic key rotatio
 
 **Resource type:** `AWS::KMS::Key`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/kms-key-policy-no-public-access.html](https://docs.aws.amazon.com/config/latest/developerguide/kms-key-policy-no-public-access.html)
+**AWS Config rule:** [kms-key-policy-no-public-access](https://docs.aws.amazon.com/config/latest/developerguide/kms-key-policy-no-public-access.html)
 
 **Schedule type:** Change triggered
 

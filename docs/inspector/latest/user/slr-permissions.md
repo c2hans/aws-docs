@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/slr-permissions.ht
 # Service-linked role permissions for Amazon Inspector
 <a name="slr-permissions"></a>
 
- Amazon Inspector uses the managed policy named [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonInspector2ServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonInspector2ServiceRolePolicy.html). This service-linked role trusts the `inspector2.amazonaws.com` service to assume the role.
+ Amazon Inspector uses the managed policy named [`AWSServiceRoleForAmazonInspector2`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonInspector2ServiceRolePolicy.html). This service-linked role trusts the `inspector2.amazonaws.com` service to assume the role.
 
-The permissions policy for the role, which is named [https://docs.aws.amazon.com/inspector/latest/user/security-iam-awsmanpol.html#security-iam-awsmanpol-AmazonInspector2ServiceRolePolicy](https://docs.aws.amazon.com/inspector/latest/user/security-iam-awsmanpol.html#security-iam-awsmanpol-AmazonInspector2ServiceRolePolicy), allows Amazon Inspector to perform tasks such as:
+The permissions policy for the role, which is named [`AmazonInspector2ServiceRolePolicy`](https://docs.aws.amazon.com/inspector/latest/user/security-iam-awsmanpol.html#security-iam-awsmanpol-AmazonInspector2ServiceRolePolicy), allows Amazon Inspector to perform tasks such as:
 + Use Amazon Elastic Compute Cloud (Amazon EC2) actions to retrieve information about your instances and network paths.
 + Use AWS Systems Manager actions to retrieve inventory from your Amazon EC2 instances, and to retrieve information about third-party packages from custom paths.
 + Use the AWS Systems Manager `SendCommand` action to invoke CIS scans for target instances.

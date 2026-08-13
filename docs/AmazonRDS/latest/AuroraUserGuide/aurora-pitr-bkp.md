@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 # Restoring a DB cluster to a specified time using AWS Backup
 <a name="aurora-pitr-bkp"></a>
 
-You can use AWS Backup to manage your automated backups, and then to restore them to a specified time. To do this, you create a backup plan in AWS Backup and assign your DB cluster as a resource. Then you enable continuous backups for PITR in the backup rule. For more information on backup plans and backup rules, see the [https://docs.aws.amazon.com/aws-backup/latest/devguide](https://docs.aws.amazon.com/aws-backup/latest/devguide).
+You can use AWS Backup to manage your automated backups, and then to restore them to a specified time. To do this, you create a backup plan in AWS Backup and assign your DB cluster as a resource. Then you enable continuous backups for PITR in the backup rule. For more information on backup plans and backup rules, see the [*AWS Backup Developer Guide*](https://docs.aws.amazon.com/aws-backup/latest/devguide).
 
 ## Enabling continuous backups in AWS Backup
 <a name="aurora-pitr-bkp.enable"></a>

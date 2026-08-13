@@ -46,7 +46,7 @@ This table shows how AWS Incident Manager Incidents map to ServiceNow Incidents.
   <tr><th>Incident Manager Incident </th><th colspan="3">ServiceNow Incident</th></tr>
 </thead>
 <tbody>
-  <tr><td></td><td>Impact</td><td>Urgency</td><td>Priority (Calculated)</td></tr>
+  <tr><td></td><td><b>Impact</b></td><td><b>Urgency</b></td><td><b>Priority (Calculated)</b></td></tr>
   <tr><td>Critical</td><td>High</td><td>High</td><td>Critical (1)</td></tr>
   <tr><td>High</td><td>High</td><td>High</td><td>Critical (1)</td></tr>
   <tr><td>Medium</td><td>Medium</td><td>High</td><td>High (2)</td></tr>

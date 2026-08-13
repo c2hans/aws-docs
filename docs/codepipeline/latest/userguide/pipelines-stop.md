@@ -86,7 +86,7 @@ If you do not see an inbound execution, then there are no pending executions at 
 
    The names of all pipelines associated with your AWS account will be displayed.
 
-1. Choose the name of the pipeline for which you want to stop the inbound execution, Do one of the following:
+1. Choose the name of the pipeline for which you want to stop the inbound execution. Do one of the following:
    + In the Pipeline view, choose the inbound execution ID and then choose to stop the execution.
    + Choose the pipeline and choose **View history**. In the execution history, choose the inbound execution ID and then choose to stop the execution.
 
@@ -106,7 +106,7 @@ To use the AWS CLI to manually stop a pipeline, use the **stop-pipeline-executio
 Command format:
 
 ```
-aws codepipeline stop-pipeline-execution --pipeline-name {{Pipeline_Name}} –-pipeline-execution-id {{Execution_ID}} [--abandon | --no-abandon] [--reason {{STOP_EXECUTION_REASON}}]
+aws codepipeline stop-pipeline-execution --pipeline-name {{Pipeline_Name}} --pipeline-execution-id {{Execution_ID}} [--abandon | --no-abandon] [--reason {{STOP_EXECUTION_REASON}}]
 ```
 
 1. Open a terminal (Linux, macOS, or Unix) or command prompt (Windows).
@@ -152,7 +152,7 @@ To use the AWS CLI to manually stop an inbound execution, use the **stop-pipelin
 Command format:
 
 ```
-aws codepipeline stop-pipeline-execution --pipeline-name {{Pipeline_Name}} –-pipeline-execution-id {{Inbound_Execution_ID}} [--abandon | --no-abandon] [--reason {{STOP_EXECUTION_REASON}}]
+aws codepipeline stop-pipeline-execution --pipeline-name {{Pipeline_Name}} --pipeline-execution-id {{Inbound_Execution_ID}} [--abandon | --no-abandon] [--reason {{STOP_EXECUTION_REASON}}]
 ```
 
 Follow the steps in the procedure above to enter the command and specify the stop method.

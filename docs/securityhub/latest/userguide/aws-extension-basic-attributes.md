@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/aws-extensi
 
  These are fundamental attributes used for resource identification, location, and basic metadata. They consist of simple data types such as strings, timestamps, and arrays.
 
-## Cloud Partition
+## Cloud partition
 <a name="cloud-partition"></a>
 
  The cloud partition where the resource exists.
@@ -21,7 +21,7 @@ String
 **OCSF status**
 Existing
 
-**Example**
+Example
 
 ```
 {
@@ -47,7 +47,7 @@ String
 **OCSF status**
 Existing
 
-**Example**
+Example
 
 ```
 {
@@ -63,7 +63,7 @@ Existing
 }
 ```
 
-## Resource Type
+## Resource type
 <a name="resource-type"></a>
 
  The AWS CloudFormation resource type that identifies the specific service and resource.
@@ -80,7 +80,7 @@ Must follow AWS CloudFormation resource type naming convention: `AWS::<Service>:
 **OCSF status**
 Existing
 
-**Example**
+Example
 
 ```
 {
@@ -95,7 +95,7 @@ Existing
 ## Resource identifier
 <a name="resource-id"></a>
 
- The unique identifier for the cloud resource (e.g. i-1234567890abcdef0).
+ The unique identifier for the cloud resource (for example, i-1234567890abcdef0).
 
 **Requirement**
 Recommended
@@ -109,7 +109,7 @@ Must be a valid resource identifier. Minimum length of 1. Maximum length of 768.
 **OCSF status**
 Existing
 
-**Example**
+Example
 
 ```
 {
@@ -121,7 +121,7 @@ Existing
 }
 ```
 
-## Alternate Resource Identifier
+## Alternate resource identifier
 <a name="arn"></a>
 
  The unique identifier for the cloud resource, typically the Amazon Resource Name (ARN).
@@ -142,7 +142,7 @@ Note: Some services like S3 use variations such as arn:aws:s3:::bucket-name (wit
 **OCSF status**
 Existing
 
-**Examples**
+Examples
 
 ```
 {
@@ -155,16 +155,16 @@ Existing
 ```
 
 ```
-"{
+{
   "resources": [
     {
       "uid_alt": "arn:aws:s3:::my-bucket-name"
     }
   ]
-}"
+}
 ```
 
-## Resource Name
+## Resource name
 <a name="resource-name"></a>
 
  The unique name for the cloud resource.
@@ -181,7 +181,7 @@ User-created names whose values will depend on the environment.
 **OCSF status**
 Existing
 
-**Example**
+Example
 
 ```
 {
@@ -193,7 +193,7 @@ Existing
 }
 ```
 
-## Cloud Region
+## Cloud region
 <a name="cloud-region"></a>
 
  The AWS region where the resource is located.
@@ -205,12 +205,12 @@ Recommended
 String
 
 **Format**
-Valid cloud region identifier (e.g., us-east-1, eu-west-1, ap-southeast-2)
+Valid cloud region identifier (for example, us-east-1, eu-west-1, ap-southeast-2)
 
 **OCSF status**
 Existing
 
-**Example**
+Example
 
 ```
 {
@@ -222,7 +222,7 @@ Existing
 }
 ```
 
-## Resource Creation Time
+## Resource creation time
 <a name="resource-creation-time"></a>
 
  The time when the resource was created.
@@ -239,7 +239,7 @@ Unix timestamp in milliseconds since epoch (January 1, 1970, 00:00:00 UTC)
 **OCSF status**
 Existing
 
-**Example**
+Example
 
 ```
 {
@@ -268,7 +268,7 @@ A generic object allowing to define a key:value pair.
 **OCSF status**
 Existing
 
-**Example**
+Example
 
 ```
 {
@@ -289,7 +289,7 @@ Existing
 }
 ```
 
-## IP Address
+## IP address
 <a name="ip-address"></a>
 
  The IP address associated with the instance in either IPv4 or IPv6 format.
@@ -306,7 +306,7 @@ Valid IPv4 or IPv6 address
 **OCSF status**
 Existing
 
-**Example**
+Example
 
 ```
 {
@@ -318,7 +318,7 @@ Existing
 }
 ```
 
-## IP Addresses
+## IP addresses
 <a name="ip-addresses"></a>
 
  An array of IP addresses (IPv4 or IPv6) associated with the device. These may include both public and private IP addresses.
@@ -332,7 +332,7 @@ Array of IP addresses
 **OCSF status**
 New
 
-**Example**
+Example
 
 ```
 {
@@ -356,12 +356,12 @@ Optional
 String
 
 **Format**
-VPC identifier (e.g. vpc-12345678900)
+VPC identifier (for example, vpc-12345678900)
 
 **OCSF status**
 Added to `resource_details`
 
-**Example**
+Example
 
 ```
 {

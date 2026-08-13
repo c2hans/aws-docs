@@ -61,7 +61,7 @@ Publishing RDS for Db2 logs to CloudWatch Logs isn't enabled by default. Publish
 ### AWS CLI
 <a name="USER_LogAccess.Db2.PublishtoCloudWatchLogs.CLI"></a>
 
-To publish RDS for Db2 logs, you can use the [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) command with the following parameters:
+To publish RDS for Db2 logs, you can use the [`modify-db-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) command with the following parameters:
 + `--db-instance-identifier`
 + `--cloudwatch-logs-export-configuration`
 
@@ -69,9 +69,9 @@ To publish RDS for Db2 logs, you can use the [https://docs.aws.amazon.com/cli/la
 A change to the `--cloudwatch-logs-export-configuration` option is always applied to the DB instance immediately. Therefore, the `--apply-immediately` and `--no-apply-immediately` options have no effect.
 
 You can also publish RDS for Db2 logs using the following commands:
-+ [https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-instance-from-db-snapshot.html](https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-instance-from-db-snapshot.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-instance-to-point-in-time.html](https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-instance-to-point-in-time.html)
++ [`create-db-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html)
++ [`restore-db-instance-from-db-snapshot`](https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-instance-from-db-snapshot.html)
++ [`restore-db-instance-to-point-in-time`](https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-instance-to-point-in-time.html)
 
 **Example**
 The following example creates an RDS for Db2 DB instance with CloudWatch Logs publishing enabled. The `--enable-cloudwatch-logs-exports` value is a JSON array of strings that can include `diag.log`, `notify.log`, or both.

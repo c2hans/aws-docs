@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/configuri
 # Configuring intent and slot matching
 <a name="configuring-intent-and-slot-matching"></a>
 
-The solution supports different types of question and answer workflows. For example:
+The guidance supports different types of question and answer workflows. For example:
 + You can create a question and answer experience to help answer frequently asked questions. In this model, the user asks a question and QnABot on AWS responds with the most relevant answer to the question (from the list of created Item IDs). For more information, see [Step 3. Populate the chatbot with your questions and answers](step-3-populate-the-chatbot-with-your-questions-and-answers.md).
 + Build a diagnostic or questionnaire-based workflow, where a question from a user can result with QnABot on AWS asking follow-up questions. If you are creating a survey or building a diagnostic workflow where you may require inputs to different questions, you can use the `ResponseBots` and `Document Chaining` capabilities of QnABot on AWS. For more information, see [Configuring the chatbot to ask the questions and use response bots](configuring-the-chatbot-to-ask-the-questions-and-use-response-bots.md).
 

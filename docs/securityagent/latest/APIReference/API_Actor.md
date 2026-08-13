@@ -20,8 +20,18 @@ A description of the actor.
 Type: String
 Required: No
 
+ ** enableEmailMfa **   <a name="securityagent-Type-Actor-enableEmailMfa"></a>
+Whether email-based MFA is enabled for this actor.
+Type: Boolean
+Required: No
+
  ** identifier **   <a name="securityagent-Type-Actor-identifier"></a>
 The unique identifier for the actor.
+Type: String
+Required: No
+
+ ** mfaForwardingAddress **   <a name="securityagent-Type-Actor-mfaForwardingAddress"></a>
+Server-generated email forwarding address for receiving MFA codes.
 Type: String
 Required: No
 

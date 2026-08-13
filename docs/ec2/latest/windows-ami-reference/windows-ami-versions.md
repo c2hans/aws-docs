@@ -21,9 +21,9 @@ We perform the following changes using automation on AWS to take the current Win
 + Install all Microsoft recommended Windows security patches. We release images shortly after the monthly Microsoft patches are made available.
 + Install the latest drivers for AWS hardware, including network and disk drivers, the EC2WinUtil utility for troubleshooting, as well as GPU drivers in selected AMIs.
 + Include the following AWS launch agent software by default:
-  + [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-v2.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-v2.html) for Windows Server 2022 and 2025, and optionally for Windows Server 2019 and 2016 with specific AMIs.
-  + [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch.html) for Windows Server 2016 and 2019.
-  + [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2config-service.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2config-service.html) for Windows Server 2012 R2 and earlier.
+  + [EC2Launch v2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-v2.html) for Windows Server 2022 and 2025, and optionally for Windows Server 2019 and 2016 with specific AMIs.
+  + [EC2Launch v1](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch.html) for Windows Server 2016 and 2019.
+  + [EC2Config](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2config-service.html) for Windows Server 2012 R2 and earlier.
 + Configure Windows Time to use the [Amazon Time Sync Service](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-time.html).
 + Change all power schemes to set the display to never turn off.
 + Perform minor bug fixes – generally one-line registry changes to enable or disable features that we have found to improve performance on AWS.
@@ -66,6 +66,6 @@ After AWS makes an AMI private, you may no longer retrieve it by any method. In 
 If an AMI is deprecated but is not yet marked private, you can still use it. However, we recommend that you always use the latest version.
 
 The AWS Windows AMIs; in each release have new AMI IDs. Therefore, we recommend that you write scripts that locate the latest AWS Windows AMIs by their names, rather than by their IDs. For more information, see the following examples:
-+ [https://docs.aws.amazon.com/powershell/latest/userguide/pstools-ec2-get-amis.html#pstools-ec2-get-ec2imagebyname](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-ec2-get-amis.html#pstools-ec2-get-ec2imagebyname) (AWS Tools for Windows PowerShell)
++ [Get-EC2ImageByName](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-ec2-get-amis.html#pstools-ec2-get-ec2imagebyname) (AWS Tools for Windows PowerShell)
 + [Query for the Latest AWS Windows AMI Using Systems Manager Parameter Store](https://aws.amazon.com/blogs/mt/query-for-the-latest-windows-ami-using-systems-manager-parameter-store/)
 + [Walkthrough: Looking Up Amazon Machine Image IDs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/walkthrough-custom-resources-lambda-lookup-amiids.html) (AWS Lambda, AWS CloudFormation)

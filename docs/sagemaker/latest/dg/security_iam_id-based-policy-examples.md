@@ -775,7 +775,7 @@ For more information on how to use roles with SageMaker AI, see [SageMaker AI Ro
 
 Restrict an AWS user to creating training jobs from within a Amazon VPC. When a training job is created within a VPC, use VPC flow logs to monitor all traffic to and from the training cluster. For information about using VPC flow logs, see [VPC Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html) in the *Amazon Virtual Private Cloud User Guide*.
 
-The following policy enforces that a training job is created by a user calling [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) from within a VPC:
+The following policy enforces that a training job is created by a user calling [`CreateTrainingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) from within a VPC:
 
 ------
 #### [ JSON ]
@@ -1163,7 +1163,7 @@ To specify the list of IP addresses that have access to the API call, use the:
 
 For information about IAM condition operators, see [IAM JSON Policy Elements: Condition Operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html) in the *AWS Identity and Access Management User Guide*. For information about IAM condition context keys, see [AWS Global Condition Context Keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html).
 
-For example, the following policy allows access to the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) only from IP addresses in the ranges `192.0.2.0`-`192.0.2.255` and `203.0.113.0`-`203.0.113.255`:
+For example, the following policy allows access to the [`CreateTrainingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) only from IP addresses in the ranges `192.0.2.0`-`192.0.2.255` and `203.0.113.0`-`203.0.113.255`:
 
 ------
 #### [ JSON ]
@@ -1197,7 +1197,7 @@ For example, the following policy allows access to the [https://docs.aws.amazon.
 ## Limit access to a notebook instance by IP address
 <a name="nbi-ip-filter"></a>
 
-You can allow access to a notebook instance only from IP addresses in a list that you specify. To do so, create an IAM policy that denies access to [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreatePresignedNotebookInstanceUrl.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreatePresignedNotebookInstanceUrl.html) unless the call comes from an IP address in the list. Then, attach this policy to every AWS Identity and Access Management user, group, or role used to access the notebook instance. For information about creating IAM policies, see [Creating IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) in the *AWS Identity and Access Management User Guide*.
+You can allow access to a notebook instance only from IP addresses in a list that you specify. To do so, create an IAM policy that denies access to [`CreatePresignedNotebookInstanceUrl`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreatePresignedNotebookInstanceUrl.html) unless the call comes from an IP address in the list. Then, attach this policy to every AWS Identity and Access Management user, group, or role used to access the notebook instance. For information about creating IAM policies, see [Creating IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) in the *AWS Identity and Access Management User Guide*.
 
 To specify the list of IP addresses that you want to have access to the notebook instance, use the:
 + `IpAddress` condition operator
@@ -1279,7 +1279,7 @@ The following procedure provides a simple example that helps you understand the 
 
 **To control access to API calls (example)**
 
-1. Add a tag with the key `Project` and value `A` to the notebook instances used for the first project. For information about adding tags to SageMaker AI resources, see [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AddTags.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AddTags.html).
+1. Add a tag with the key `Project` and value `A` to the notebook instances used for the first project. For information about adding tags to SageMaker AI resources, see [`AddTags`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AddTags.html).
 
 1. Add a tag with the key `Project` and value `B` to the notebook instances used for the second project.
 

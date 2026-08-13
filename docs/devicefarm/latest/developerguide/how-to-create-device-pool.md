@@ -71,7 +71,7 @@ Although you can use the boxes in the column header row to change the list of di
 
 **Tip**
 If you do not enter the max number of devices, Device Farm will pick all devices in the fleet that match the rule(s) you created. To avoid additional charges, set this number to an amount that matches your actual parallel execution and device variety requirements.
-+ Run the [https://docs.aws.amazon.com/cli/latest/reference/devicefarm/create-device-pool.html](https://docs.aws.amazon.com/cli/latest/reference/devicefarm/create-device-pool.html) command.
++ Run the [**create-device-pool**](https://docs.aws.amazon.com/cli/latest/reference/devicefarm/create-device-pool.html) command.
 
 For information about using Device Farm with the AWS CLI, see [AWS CLI reference](cli-ref.md).
 
@@ -80,6 +80,6 @@ For information about using Device Farm with the AWS CLI, see [AWS CLI reference
 
 **Tip**
 If you do not enter the max number of devices, Device Farm will pick all devices in the fleet that match the rule(s) you created. To avoid additional charges, set this number to an amount that matches your actual parallel execution and device variety requirements.
-+ Call the [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateDevicePool.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateDevicePool.html) API.
++ Call the [`CreateDevicePool`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateDevicePool.html) API.
 
 For information about using the Device Farm API, see [Automating Device Farm](api-ref.md).

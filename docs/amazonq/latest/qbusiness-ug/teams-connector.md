@@ -9,7 +9,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 You can connect Microsoft Teams to Amazon Q Business to index and search your team's messages, channel posts, and files. This connection enables your organization to find relevant information from Teams conversations and shared content through your Amazon Q web experience.
 
-Use the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API to create the connection.
+Use the AWS Management Console or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API to create the connection.
 
 **Topics**
 + [Microsoft Teams connector versions](teams-versions.md)

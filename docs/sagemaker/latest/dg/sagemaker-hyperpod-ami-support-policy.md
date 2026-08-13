@@ -22,7 +22,7 @@ The policy defines the window during which HyperPod will ship security patches f
 ## Support policy
 <a name="sagemaker-hyperpod-ami-support-policy-windows"></a>
 
-The following table outlines the release schedule for HyperPod AMI versions and their planned support timelines. AWS provides ongoing security patches for supported AMI versions. In some cases, an AMI version may need to be designated end of support earlier than originally planned if:
+The following table outlines the release schedule for HyperPod AMI versions and their planned support timelines. AWS provides ongoing security patches for supported AMI versions. In some cases, an AMI version might need to be designated end of support earlier than originally planned if:
 
 1. security issues cannot be addressed while maintaining semantic versioning guidelines,
 
@@ -32,7 +32,7 @@ The following table outlines the release schedule for HyperPod AMI versions and 
 
 | Version | Description | Support window |
 | --- | --- | --- |
-| Major | HyperPod AMI major version releases involve upgrading core components (EFA, NVIDIA driver, NCCL, CUDA, OS kernel) to new major versions. These releases may introduce breaking changes, such as NVIDIA driver changes from 570.x to 580.x, that require workload validation. Major versions are denoted by the first number in the version string (for example, 1.0, 2.0, 3.0). | 12 months |
+| Major | HyperPod AMI major version releases involve upgrading core components (EFA, NVIDIA driver, NCCL, CUDA, OS kernel) to new major versions. These releases might introduce breaking changes, such as NVIDIA driver changes from 570.x to 580.x, that require workload validation. Major versions are denoted by the first number in the version string (for example, 1.0, 2.0, 3.0). | 12 months |
 | Minor | HyperPod AMI minor version releases include upgrading core components to newer compatible minor versions within the same major version. Minor versions are denoted by the second number in the version string (for example, 1.1, 1.2, 2.1). | 6 months |
 | Patch | HyperPod AMI patch version releases include security fixes and bug fixes for the supported components. Patch releases do not change the major or minor versions of any bundled component. Patch versions are denoted by the third number in the version string (for example, 1.1.1, 1.2.1, 2.1.3). | Until a new patch version is released |
 
@@ -56,7 +56,7 @@ HyperPod EKS AMIs are versioned independently of the Kubernetes version they shi
 ### AMI version list
 <a name="sagemaker-hyperpod-ami-support-eks-version-list"></a>
 
-The following table lists the supported HyperPod EKS AMI versions, the Kubernetes minor versions they ship with, and their planned end of support dates. When creating or updating clusters, we recommend that you choose supported AMI versions from the table below. The **Supported package versions** column lists the in-scope components covered by this support policy; for the full list of bundled packages in each release, see the Amazon SageMaker HyperPod AMI release notes for Amazon EKS in [SageMaker HyperPod AMI releases for Amazon EKS](sagemaker-hyperpod-release-ami-eks.md).
+The following table lists the supported HyperPod EKS AMI versions, the Kubernetes minor versions they ship with, and their planned end of support dates. When creating or updating clusters, we recommend that you choose supported AMI versions from the following table. The **Supported package versions** column lists the in-scope components covered by this support policy; for the full list of bundled packages in each release, see the Amazon SageMaker HyperPod AMI release notes for Amazon EKS in [SageMaker HyperPod AMI releases for Amazon EKS](sagemaker-hyperpod-release-ami-eks.md).
 
 | AMI version | Latest patch | Supported EKS versions | Supported package versions | First released |
 | --- | --- | --- | --- | --- |
@@ -70,11 +70,11 @@ The following table lists the supported HyperPod EKS AMI versions, the Kubernete
 
 **Can I still use an older AMI after it is no longer supported?**
 
-Older AMIs remain available on existing HyperPod clusters after they reach end of support. However, you cannot create a new cluster using an end-of-support AMI. We strongly recommend upgrading to a supported AMI version, which continues to receive security patches. Customers are responsible for managing any vulnerabilities that may arise from running an AMI version no longer supported by AWS.
+Older AMIs remain available on existing HyperPod clusters after they reach end of support. However, you cannot create a new cluster using an end-of-support AMI. We strongly recommend upgrading to a supported AMI version, which continues to receive security patches. You are responsible for managing any vulnerabilities that might arise from running an AMI version no longer supported by AWS.
 
 **What happens when a new patch version is released?**
 
-When a new patch version is released, the previous patch version within the same minor version reaches end of support. If auto-patching is enabled, patch updates will be applied automatically without disrupting running workloads.
+When a new patch version is released, the previous patch version within the same minor version reaches end of support. If auto-patching is enabled, HyperPod applies patch updates automatically without disrupting running workloads.
 
 **How will I be notified about new AMI versions or end-of-support dates?**
 

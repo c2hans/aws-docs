@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/send-personalized-email-ap
 <a name="send-personalized-email-api"></a>
 
 In Amazon SES you can send templated email either by using a *stored template* or by using an *inline template*.
-+ **Stored template** – Refers to the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Template.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Template.html) resource that is created and saved in SES by using the `CreateEmailTemplate` operation in the Amazon SES v2 API. The template contains the subject and body of the email containing variables (placeholders) inline with the written content. The name of the stored template and the dynamic data to the placeholder variables in the template are provided when calling either the `SendEmail` or `SendBulkEmail` v2 API operations.
++ **Stored template** – Refers to the [`Template`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Template.html) resource that is created and saved in SES by using the `CreateEmailTemplate` operation in the Amazon SES v2 API. The template contains the subject and body of the email containing variables (placeholders) inline with the written content. The name of the stored template and the dynamic data to the placeholder variables in the template are provided when calling either the `SendEmail` or `SendBulkEmail` v2 API operations.
 
   *Stored templates* can be easily reused and can save you time and effort when sending similar types of emails. Instead of creating each email from scratch, you only need to create the base structure and design once, then simply update the dynamic content within the template.
 + **Inline template** – The `Template` resource is not used, but rather, the subject and body of the email containing variables (placeholders) inline with the written content along with the values for those placeholder variables are provided when calling either the `SendEmail` or `SendBulkEmail` v2 API operations.
@@ -22,7 +22,7 @@ The following limit applies when using *inline templates*:
 
 The following applies to both *stored* and *inline templates*:
 + There are no limits to the number of replacement variables that can be used.
-+ You can send email to up to 50 destination objects in each call to the `SendBulkEmail` operation. The [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Destination.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Destination.html) object can contain multiple recipients defined in **ToAddresses**, **CcAddresses**, and **BccAddresses**. The number of destinations you can contact in a single call to the v2 API may be limited by your account's maximum sending rate. For more information, see [Managing your Amazon SES sending limits](manage-sending-quotas.md).
++ You can send email to up to 50 destination objects in each call to the `SendBulkEmail` operation. The [`Destination`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Destination.html) object can contain multiple recipients defined in **ToAddresses**, **CcAddresses**, and **BccAddresses**. The number of destinations you can contact in a single call to the v2 API may be limited by your account's maximum sending rate. For more information, see [Managing your Amazon SES sending limits](manage-sending-quotas.md).
 
 This chapter includes procedures with examples for using both *stored templates* and *inline templates*.
 
@@ -49,7 +49,7 @@ The procedure in this section is optional, but highly recommended.
 ## (Optional) Part 2: Create an email template
 <a name="send-personalized-email-create-template"></a>
 
-If you intend on using a *stored template*, this section will show you how to use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateEmailTemplate.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateEmailTemplate.html) SES v2 API operation to create the template. You can skip this step if you want to use an *inline template*.
+If you intend on using a *stored template*, this section will show you how to use the [`CreateEmailTemplate`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateEmailTemplate.html) SES v2 API operation to create the template. You can skip this step if you want to use an *inline template*.
 
 This procedure assumes that you've already installed and configured the AWS CLI. For more information about installing and configuring the AWS CLI, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/).
 
@@ -77,7 +77,7 @@ This procedure assumes that you've already installed and configured the AWS CLI.
 
 1. Customize the preceding example to fit your needs, and then save the file as {{mytemplate.json}}.
 
-1. At the command line, type the following command to create a new template using the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateEmailTemplate.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateEmailTemplate.html) v2 API operation:
+1. At the command line, type the following command to create a new template using the [`CreateEmailTemplate`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateEmailTemplate.html) v2 API operation:
 
    ```
    aws sesv2 create-email-template --cli-input-json file://{{mytemplate.json}}
@@ -87,15 +87,15 @@ This procedure assumes that you've already installed and configured the AWS CLI.
 <a name="send-personalized-email-api-operations"></a>
 
 You can use the following two SES v2 API operations to send emails using either *stored templates* or *inline templates*:
-+ The [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) operation is useful for sending a customized email to a single destination object. The v2 API [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Destination.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Destination.html) object can contain the *ToAddresses*, *CcAddresses*, and *BccAddresses* properties. These can be used in any combination and can contain one or more email addresses that will receive the same email.
-+ The [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendBulkEmail.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendBulkEmail.html) operation is useful for sending unique emails to multiple destination objects in a single call to the v2 API.
++ The [`SendEmail`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) operation is useful for sending a customized email to a single destination object. The v2 API [`Destination`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Destination.html) object can contain the *ToAddresses*, *CcAddresses*, and *BccAddresses* properties. These can be used in any combination and can contain one or more email addresses that will receive the same email.
++ The [`SendBulkEmail`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendBulkEmail.html) operation is useful for sending unique emails to multiple destination objects in a single call to the v2 API.
 
 This section provides examples of how to use the AWS CLI to send templated email using both of these send operations.
 
 ### Sending templated email to a single destination object
 <a name="send-templated-email-single-destination"></a>
 
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) operation to send an email to one or more recipients defined in a single destination object. All of the recipients in the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Destination.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Destination.html) object will receive the same email.
+You can use the [`SendEmail`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) operation to send an email to one or more recipients defined in a single destination object. All of the recipients in the [`Destination`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Destination.html) object will receive the same email.
 
 **To send a templated email to a single destination object**
 
@@ -185,7 +185,7 @@ We recommend that you use a configuration set that is configured to publish Rend
 ### Sending templated email to multiple destination objects
 <a name="send-templated-email-multiple-destinations"></a>
 
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendBulkEmail.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendBulkEmail.html) operation to send an email to multiple destination objects in a single call to the SES v2 API. SES sends a unique email to the recipient or recipients in each [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Destination.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Destination.html) object.
+You can use the [`SendBulkEmail`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendBulkEmail.html) operation to send an email to multiple destination objects in a single call to the SES v2 API. SES sends a unique email to the recipient or recipients in each [`Destination`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Destination.html) object.
 
 **To send a templated email to multiple destination objects**
 

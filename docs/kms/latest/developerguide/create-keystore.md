@@ -56,7 +56,7 @@ On January 1, 2025, AWS CloudHSM will end support for the Client SDK 3 command l
 
 1. Follow the getting started procedures as described in the [Getting started with CloudHSM Command Line Interface (CLI)](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-getting-started.html) topic of the *AWS CloudHSM User Guide*.
 
-1. Use the [https://docs.aws.amazon.com/cloudhsm/latest/userguide/create-user-cloudhsm-cli.html](https://docs.aws.amazon.com/cloudhsm/latest/userguide/create-user-cloudhsm-cli.html) command to create a CU named `kmsuser`.
+1. Use the [**user create**](https://docs.aws.amazon.com/cloudhsm/latest/userguide/create-user-cloudhsm-cli.html) command to create a CU named `kmsuser`.
 
    The password must consist of 7-32 alphanumeric characters. It is case-sensitive and cannot contain any special characters.
 

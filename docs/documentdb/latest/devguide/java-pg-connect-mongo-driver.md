@@ -79,7 +79,7 @@ The different options available for the connection string are as follows:
 
 **`tls=true|false`** — This option enables or disables Transport Layer Security (TLS). By default, encryption in transit is enabled on Amazon DocumentDB cluster and therefore, unless TLS is disabled at the cluster level, the value for this option should be `true`.
 
-When using TLS, the code needs to provide an SSL certificate when creating connection to a DocumentDB cluster. Download the certificate that is required to make the secure connection to the cluster: [https://truststore.pki.rds.amazonaws.com/global/global-bundle.pem](https://truststore.pki.rds.amazonaws.com/global/global-bundle.pem). There are two ways to use the `global-bundle.pem` file.
+When using TLS, the code needs to provide an SSL certificate when creating connection to a DocumentDB cluster. Download the certificate that is required to make the secure connection to the cluster: [`global-bundle.pem`](https://truststore.pki.rds.amazonaws.com/global/global-bundle.pem). There are two ways to use the `global-bundle.pem` file.
 + **Option 1** — Extract all the certificates from the `global-bundle.pem` file and use Java’s keytool to store them in a `.jks` file that can be later used in the code. Refer to the Java tab in [Connecting with TLS enabled](connect_programmatically.md#connect_programmatically-tls_enabled) for the script that shows how to do this.
 + **Option 2** — Dynamically add the `global-bundle.pem` file in the code, build an in-memory keystore and use `SSLContext` to provide the certificate as part of making the connection.
 
@@ -124,9 +124,9 @@ Timeout is a mechanism to limit the amount of time an operation or connection at
 <a name="step3-write-connect-code"></a>
 
 The following code example shows how to make a TLS connection to Amazon DocumentDB:
-+ It creates Java’s [https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.html](https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.html) and [`SSLContext`>](https://docs.oracle.com/javase/8/docs/api/javax/net/ssl/SSLContext.html) objects.
-+ It also creates the [https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-core/com/mongodb/MongoClientSettings.html](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-core/com/mongodb/MongoClientSettings.html) object by passing it to the [https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-core/com/mongodb/ConnectionString.html](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-core/com/mongodb/ConnectionString.html) object. To make TLS connection, you must use the `MongoClientSettings` object to bind the `connectionstring` and `sslcontext`.
-+ Using [https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/MongoClients.html](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/MongoClients.html) gets a [https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/MongoClient.html](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/MongoClient.html) object.
++ It creates Java’s [`KeyStore`](https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.html) and [`SSLContext`>](https://docs.oracle.com/javase/8/docs/api/javax/net/ssl/SSLContext.html) objects.
++ It also creates the [`MongoClientSettings`](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-core/com/mongodb/MongoClientSettings.html) object by passing it to the [`ConnectionString`](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-core/com/mongodb/ConnectionString.html) object. To make TLS connection, you must use the `MongoClientSettings` object to bind the `connectionstring` and `sslcontext`.
++ Using [`MongoClients`](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/MongoClients.html) gets a [`MongoClient`](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/MongoClient.html) object.
 
 ```
 public static MongoClient makeDbConnection(String dbName, String DbUserName, String DbPassword,
@@ -195,6 +195,6 @@ public static void TestConnection() {
 <a name="java-connect-best-practices"></a>
 
 The following are best practices to consider when connecting to Amazon DocumentDB with a MongoDB Java driver:
-+ Always close your [https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/MongoClient.html](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/MongoClient.html) when you no longer need the client to release resources.
++ Always close your [`MongoClient`](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/MongoClient.html) when you no longer need the client to release resources.
 + Handle exceptions appropriately and implement proper error logging.
 + Use environment variables or AWS Secrets Manager to store sensitive information like usernames and passwords.

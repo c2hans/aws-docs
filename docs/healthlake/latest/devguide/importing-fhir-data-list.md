@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/importing-fhi
 # Listing FHIR import jobs
 <a name="importing-fhir-data-list"></a>
 
-Use `ListFHIRImportJobs` to list FHIR import jobs for an active HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ListFHIRImportJobs.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ListFHIRImportJobs.html) in the *AWS HealthLake API Reference*.
+Use `ListFHIRImportJobs` to list FHIR import jobs for an active HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`ListFHIRImportJobs`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ListFHIRImportJobs.html) in the *AWS HealthLake API Reference*.
 
 **To list FHIR import jobs**
 Choose a menu based on your access preference to AWS HealthLake.

@@ -10,7 +10,7 @@ Connect Customer provides you with the ability to automatically evaluate the qua
 **Note**
 Performance evaluations of self-service interactions is only available as part of Connect Customer (with unlimited AI). For more information, see [Connect Customer pricing](https://aws.amazon.com/connect/pricing/).
 
-To automatically evaluate self-service interactions, you need to first [Enable conversational analytics in Connect Customer Contact Lens](enable-analytics.md) (automated interactions include self-service and post-call workflows like surveys). Performance evaluations can evaluate the entire self-service interaction, irrespective of whether it's handled by touch tone, Lex bots, Connect Customer AI agents or custom bots within Connect Customer. The steps to set up automated evaluations of self-service interactions are as follows:
+To automatically evaluate self-service interactions, you need to first [Enable conversational analytics in Connect Customer conversational analytics](enable-analytics.md) (automated interactions include self-service and post-call workflows like surveys). Performance evaluations can evaluate the entire self-service interaction, irrespective of whether it's handled by touch tone, Lex bots, Connect Customer AI agents or custom bots within Connect Customer. The steps to set up automated evaluations of self-service interactions are as follows:
 + [Step 1: Create a draft evaluation form](#step-create-draft-form-self-service)
 + [Step 2: Set up automation](#step-setup-automation-self-service)
 + [Step 3: Set up a rule to automatically submit evaluations of self-service interactions](#step-setup-rule-self-service)
@@ -80,7 +80,7 @@ Connect Customer understands the following keywords within semantic match rules:
 + **Automated interaction:** Part of the customer interaction where human agent was not present on the conversation, including self-service interaction with bot or AI agent, and wait time in the queue
 + **Human agent interaction:** Customer interaction with the human agent
 
-![Rule configuration interface showing conditions for Contact Lens post-chat analysis, queue assignment.](http://docs.aws.amazon.com/connect/latest/adminguide/images/self-service-eval-containment-rule.png)
+![Rule configuration interface showing conditions for conversational analytics post-chat analysis, queue assignment.](http://docs.aws.amazon.com/connect/latest/adminguide/images/self-service-eval-containment-rule.png)
 
 + If you are using a Connect Customer AI agent, you can also check if the AI agent for self-service escalated to a human or not.
 
@@ -134,4 +134,4 @@ After you have defined conditions:
 
 1. Choose **Add action**, select **Submit automated evaluation**, and select the form that you want to use for automatically submitting an evaluation. (This action is already selected on the page if you created the rule when you activate the form.)
 
-For more information, see [Create a rule in Contact Lens that submits an automated evaluation](contact-lens-rules-submit-automated-evaluation.md).
+For more information, see [Create a rule in conversational analytics that submits an automated evaluation](contact-lens-rules-submit-automated-evaluation.md).

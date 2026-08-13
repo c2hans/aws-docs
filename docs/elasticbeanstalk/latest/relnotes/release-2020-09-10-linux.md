@@ -17,20 +17,37 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **September 4, 2020** to all Amazon Linux AMI platforms.<br />The **Apache**, **Go**, **PHP**, and **Python** releases include security fixes. For more information, see **Cross-platform updates** and **Platform-specific updates** in this table. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-09-10-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-09-10-linux.html) |
-| **Apache** | Updated platforms supporting the Apache HTTP Server 2.4 to version 2.4.46. For details, see [Changes with Apache 2.4.x](https://downloads.apache.org/httpd/CHANGES_2.4) on the *Apache Software Foundation* website.<br />The **Apache 2.4.46** release includes security fixes. |
-| **Multicontainer Docker** | Updated the ECS agent to version 1.44.3. |
-| **Go** | Updated Go to release 1.15.1. For details, see [go1.15](https://golang.org/doc/devel/release.html#go1.15) in *The Go Programming Language Release History*.<br />The **Go 1.15.1** release includes security fixes. |
-| **PHP** | Updated PHP 7.3 and 7.2 to releases [7.3.21](https://www.php.net/releases/7_3_21.php) and [7.2.33](https://www.php.net/releases/7_2_33.php), respectively.<br />These versions include security fixes. |
-| **Python** | Updated Python 3.6 to [Python 3.6.12](https://docs.python.org/3.6/whatsnew/changelog.html#python-3-6-12-final).<br />The **Python 3.6.12** release includes security fixes. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>September 4, 2020</b> to all Amazon Linux AMI platforms.<br />The <b>Apache</b>, <b>Go</b>, <b>PHP</b>, and <b>Python</b> releases include security fixes. For more information, see <b>Cross-platform updates</b> and <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Apache</b></td><td>Updated platforms supporting the Apache HTTP Server 2.4 to version 2.4.46. For details, see <a href="https://downloads.apache.org/httpd/CHANGES_2.4">Changes with Apache 2.4.x</a> on the <i>Apache Software Foundation</i> website.<br />The <b>Apache 2.4.46</b> release includes security fixes.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Multicontainer Docker</b></td><td>Updated the ECS agent to version 1.44.3.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated Go to release 1.15.1. For details, see <a href="https://golang.org/doc/devel/release.html#go1.15">go1.15</a> in <i>The Go Programming Language Release History</i>.<br />The <b>Go 1.15.1</b> release includes security fixes.</td></tr>
+  <tr><td><b>PHP</b></td><td>Updated PHP 7.3 and 7.2 to releases <a href="https://www.php.net/releases/7_3_21.php">7.3.21</a> and <a href="https://www.php.net/releases/7_2_33.php">7.2.33</a>, respectively.<br />These versions include security fixes.</td></tr>
+  <tr><td><b>Python</b></td><td>Updated Python 3.6 to <a href="https://docs.python.org/3.6/whatsnew/changelog.html#python-3-6-12-final">Python 3.6.12</a>.<br />The <b>Python 3.6.12</b> release includes security fixes.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2020-09-10-linux.platforms"></a>

@@ -25,27 +25,27 @@ The following table lists all HealthLake events sent to EventBridge for processi
   <tr><th>HealthLake event type</th><th>State</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2"> Data store events </td></tr>
-  <tr><td>     Data Store Creating</td><td>CREATING</td></tr>
-  <tr><td>     Data Store Active</td><td>ACTIVE</td></tr>
-  <tr><td>     Data Store Deleting</td><td>DELETING</td></tr>
-  <tr><td>     Data Store Deleted</td><td>DELETED</td></tr>
-  <tr><td>     Data Store Creation Failed</td><td>CREATE\_FAILED</td></tr>
-  <tr><td colspan="2">For more information, see [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DatastoreProperties.html#HealthLake-Type-DatastoreProperties-DatastoreStatus](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DatastoreProperties.html#HealthLake-Type-DatastoreProperties-DatastoreStatus) in the *AWS HealthLake API Reference.*</td></tr>
-  <tr><td colspan="2"> Import job events </td></tr>
-  <tr><td>     Import Job Submitted</td><td>SUBMITTED</td></tr>
-  <tr><td>     Import Job In Progress</td><td>IN\_PROGRESS</td></tr>
-  <tr><td>     Import Job Completed With Errors</td><td>COMPLETED\_WITH\_ERRORS</td></tr>
-  <tr><td>     Import Job Completed</td><td>COMPLETED</td></tr>
-  <tr><td>     Import Job Failed</td><td>FAILED</td></tr>
-  <tr><td colspan="2">For more information, see [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ImportJobProperties.html#HealthLake-Type-ImportJobProperties-JobStatus](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ImportJobProperties.html#HealthLake-Type-ImportJobProperties-JobStatus) in the *AWS HealthLake API Reference.*</td></tr>
-  <tr><td colspan="2"> Export job events </td></tr>
-  <tr><td>     Export Job Submitted</td><td>SUBMITTED</td></tr>
-  <tr><td>     Export Job In Progress</td><td>IN\_PROGRESS</td></tr>
-  <tr><td>     Export Job Completed With Errors</td><td>COMPLETED\_WITH\_ERRORS</td></tr>
-  <tr><td>     Export Job Completed</td><td>COMPLETED</td></tr>
-  <tr><td>     Export Job Failed</td><td>FAILED</td></tr>
-  <tr><td colspan="2">For more information, see [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ExportJobProperties.html#HealthLake-Type-ExportJobProperties-JobStatus](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ExportJobProperties.html#HealthLake-Type-ExportJobProperties-JobStatus) in the *AWS HealthLake API Reference.*</td></tr>
+  <tr><td colspan="2"> <b>Data store events</b> </td></tr>
+  <tr><td>     Data Store Creating</td><td><code>CREATING</code></td></tr>
+  <tr><td>     Data Store Active</td><td><code>ACTIVE</code></td></tr>
+  <tr><td>     Data Store Deleting</td><td><code>DELETING</code></td></tr>
+  <tr><td>     Data Store Deleted</td><td><code>DELETED</code></td></tr>
+  <tr><td>     Data Store Creation Failed</td><td><code>CREATE_FAILED</code></td></tr>
+  <tr><td colspan="2">For more information, see <a href="https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DatastoreProperties.html#HealthLake-Type-DatastoreProperties-DatastoreStatus">https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DatastoreProperties.html#HealthLake-Type-DatastoreProperties-DatastoreStatus</a> in the <i>AWS HealthLake API Reference.</i></td></tr>
+  <tr><td colspan="2"> <b>Import job events</b> </td></tr>
+  <tr><td>     Import Job Submitted</td><td><code>SUBMITTED</code></td></tr>
+  <tr><td>     Import Job In Progress</td><td><code>IN_PROGRESS</code></td></tr>
+  <tr><td>     Import Job Completed With Errors</td><td><code>COMPLETED_WITH_ERRORS</code></td></tr>
+  <tr><td>     Import Job Completed</td><td><code>COMPLETED</code></td></tr>
+  <tr><td>     Import Job Failed</td><td><code>FAILED</code></td></tr>
+  <tr><td colspan="2">For more information, see <a href="https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ImportJobProperties.html#HealthLake-Type-ImportJobProperties-JobStatus">https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ImportJobProperties.html#HealthLake-Type-ImportJobProperties-JobStatus</a> in the <i>AWS HealthLake API Reference.</i></td></tr>
+  <tr><td colspan="2"> <b>Export job events</b> </td></tr>
+  <tr><td>     Export Job Submitted</td><td><code>SUBMITTED</code></td></tr>
+  <tr><td>     Export Job In Progress</td><td><code>IN_PROGRESS</code></td></tr>
+  <tr><td>     Export Job Completed With Errors</td><td><code>COMPLETED_WITH_ERRORS</code></td></tr>
+  <tr><td>     Export Job Completed</td><td><code>COMPLETED</code></td></tr>
+  <tr><td>     Export Job Failed</td><td><code>FAILED</code></td></tr>
+  <tr><td colspan="2">For more information, see <a href="https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ExportJobProperties.html#HealthLake-Type-ExportJobProperties-JobStatus">https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ExportJobProperties.html#HealthLake-Type-ExportJobProperties-JobStatus</a> in the <i>AWS HealthLake API Reference.</i></td></tr>
 </tbody>
 </table>
 

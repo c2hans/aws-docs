@@ -279,8 +279,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   CreateUserPoolReplica  **
-  - **IAM action:**  [cognito-idp:CreateUserPoolReplica](#list_cognito-idp-action-CreateUserPoolReplica)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [cognito-idp:TagResource](#list_cognito-idp-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [cognito-idp:CreateUserPoolReplica](#list_cognito-idp-action-CreateUserPoolReplica)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   DeleteGroup  **
   - **IAM action:**  [cognito-idp:DeleteGroup](#list_cognito-idp-action-DeleteGroup)

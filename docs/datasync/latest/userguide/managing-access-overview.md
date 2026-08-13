@@ -91,7 +91,7 @@ The following example policy grants permissions to all `List*` actions on all re
 }
 ```
 
-For more information about using identity-based policies with DataSync, see [AWS managed policies](security-iam-awsmanpol.md) and [customer managed policies](using-identity-based-policies.md). For more information about IAM identities, see the [https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html) .
+For more information about using identity-based policies with DataSync, see [AWS managed policies](security-iam-awsmanpol.md) and [customer managed policies](using-identity-based-policies.md). For more information about IAM identities, see the [*IAM User Guide*](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html) .
 
 ### Resource-based policies
 <a name="resource-based-policies"></a>

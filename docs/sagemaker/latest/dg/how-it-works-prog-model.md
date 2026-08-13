@@ -20,7 +20,7 @@ Making API calls directly from code is cumbersome, and requires you to write cod
 
     + To set defaults for SageMaker API calls made by the SageMaker AI Python SDK, you use a default configuration dictionary. For more information, see [Configuring and using defaults with the SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable/overview.html#configuring-and-using-defaults-with-the-sagemaker-python-sdk).
 
-  + **The AWS SDKs** – The SDKs provide methods that correspond to the SageMaker API (see [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Operations.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Operations.html)). Use the SDKs to programmatically start a model training job and host the model in SageMaker AI. SDK clients handle authentication for you, so you don't need to write authentication code. They are available in multiple languages and platforms. For more information, see the preceding list in the overview.
+  + **The AWS SDKs** – The SDKs provide methods that correspond to the SageMaker API (see [`Operations`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Operations.html)). Use the SDKs to programmatically start a model training job and host the model in SageMaker AI. SDK clients handle authentication for you, so you don't need to write authentication code. They are available in multiple languages and platforms. For more information, see the preceding list in the overview.
 
   In [Guide to getting set up with Amazon SageMaker AI](gs.md), you train and deploy a model using an algorithm provided by SageMaker AI. That exercise shows how to use both of these libraries. For more information, see [Guide to getting set up with Amazon SageMaker AI](gs.md).
 

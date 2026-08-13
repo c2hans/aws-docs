@@ -138,7 +138,7 @@ The following earlier runtime versions for Node.js and Playwright are still supp
 
  **Changes in syn-nodejs-playwright-5.1**
 + Synthetics runtime namespace migration.
-+ Type definition is available in [npm Registry](https://www.npmjs.com/package/@aws/synthetics-playwright). Please ensure the type definition package version matches your canary's runtime version.
++ Type definition is available in [npm Registry](https://www.npmjs.com/package/@aws/synthetics-playwright). Please make sure the type definition package version matches your canary's runtime version.
 
 ### syn-nodejs-playwright-5.0
 <a name="Synthetics_runtimeversion-syn-nodejs-playwright-5.0"></a>

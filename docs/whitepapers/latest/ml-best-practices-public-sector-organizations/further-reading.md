@@ -10,4 +10,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/ml-best-practices-pub
  For additional information, see:
 +  [AWS Architecture Center](https://aws.amazon.com/architecture/)
 +  [Machine Learning on AWS](https://aws.amazon.com/machine-learning/)
-+  [https://aws.amazon.com/health/](https://aws.amazon.com/health/)
++  [[AWS ML Blog](https://aws.amazon.com/blogs/machine-learning/)](https://aws.amazon.com/health/)

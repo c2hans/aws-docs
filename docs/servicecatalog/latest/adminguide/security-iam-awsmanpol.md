@@ -52,7 +52,7 @@ This policy grants {{contributor}} permissions that allow full access to the end
 
 This policy includes the following permissions.
 + `servicecatalog` – Allows principals full permissions to the end user console view and the ability to launch products and manage provisioned products.
-+ `cloudformation`– Allows AWS Service Catalog full permissions to list, read, write, and tag AWS CloudFormation stacks.
++ `cloudformation`– Allows AWS Service Catalog full permissions to list, read, write, tag, and untag AWS CloudFormation stacks.
 + `config`– Allows AWS Service Catalog limited permissions to list and read details about portfolios, products, and provisioned products via AWS Config.
 + `ssm` – Allows AWS Service Catalog to use AWS Systems Manager to read Systems Manager documents in the current AWS account and AWS Region.
 
@@ -152,6 +152,8 @@ View details about updates to AWS managed policies for AppRegistry since this se
 
 | Change | Description | Date |
 | --- | --- | --- |
+| [AWSServiceCatalogEndUserFullAccess](#security-iam-awsmanpol-AWSServiceCatalogEndUserFullAccess) – Update managed policy | With this update, you can now remove tags from AWS CloudFormation resources that AWS Service Catalog manages. The `AWSServiceCatalogEndUserFullAccess` policy now includes the `cloudformation:UntagResource` permission, which AWS CloudFormation requires for IAM authorization on the `UntagResource` API. | August 4, 2026 |
+| [AWSServiceCatalogAdminFullAccess](#security-iam-awsmanpol-AWSServiceCatalogAdminFullAccess) – Update managed policy | AWS Service Catalog added the `cloudformation:UntagResource` permission to the `AWSServiceCatalogAdminFullAccess` policy. With this permission, AWS Service Catalog administrators can remove tags from AWS CloudFormation resources that AWS Service Catalog manages. AWS CloudFormation now enforces IAM authorization on the `UntagResource` API. This enforcement requires the `cloudformation:UntagResource` permission. | August 4, 2026 |
 | [AWSServiceCatalogSyncServiceRolePolicy](#security-iam-awsmanpol-AWSServiceCatalogSyncServiceRolePolicy) – Update managed policy | AWS Service Catalog updated the `AWSServiceCatalogSyncServiceRolePolicy` policy to change `codestar-connections` to `codeconnections`. | May 7, 2024 |
 | [AWSServiceCatalogAdminFullAccess](#security-iam-awsmanpol-AWSServiceCatalogAdminFullAccess) – Update managed policy | AWS Service Catalog updated the `AWSServiceCatalogAdminFullAccess` policy to include permissions required for the AWS Service Catalog administrator to create the `AWSServiceRoleForServiceCatalogOrgsDataSync` service-linked role (SLR) in their account.  | April 14, 2023 |
 | [AWSServiceCatalogOrgsDataSyncServiceRolePolicy](#security-iam-awsmanpol-AWSServiceCatalogOrgsDataSyncServiceRolePolicy) – New managed policy | AWS Service Catalog added the `AWSServiceCatalogOrgsDataSyncServiceRolePolicy`, which is attached to the `AWSServiceRoleForServiceCatalogOrgsDataSync` service-linked role (SLR), allowing AWS Service Catalog to sync with AWS Organizations. This policy allows limited access to AWS Service Catalog actions (for example, API calls), and to other AWS service actions that AWS Service Catalog depends on.  | April 14, 2023 |

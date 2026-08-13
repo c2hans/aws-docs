@@ -45,10 +45,10 @@ For chat interactions, the same transcript contains the agent interaction and th
 – OR –
 
 1.  Assign the following individual permissions:
-   + **Call recordings (redacted) - Access**: If your organization uses Connect Customer Contact Lens, you can assign this permission so agents access only those agent call recordings in which sensitive data has been redacted.
-   + **Contact transcripts (redacted) - Access**: If your organization uses Connect Customer Contact Lens, you can assign this permission so agents access only those contact transcripts in which sensitive data has been redacted.
+   + **Call recordings (redacted) - Access**: If your organization uses Connect Customer conversational analytics, you can assign this permission so agents access only those agent call recordings in which sensitive data has been redacted.
+   + **Contact transcripts (redacted) - Access**: If your organization uses Connect Customer conversational analytics, you can assign this permission so agents access only those contact transcripts in which sensitive data has been redacted.
 
-     The redaction feature is provided as part of Contact Lens. For more information, see [Use sensitive data redaction to protect customer privacy using Contact Lens](sensitive-data-redaction.md).
+     The redaction feature is provided as part of conversational analytics. For more information, see [Use sensitive data redaction to protect customer privacy using conversational analytics](sensitive-data-redaction.md).
    + **Manager monitor**: This permission allows users to monitor live conversations and listen to recordings.
 **Tip**
 Be sure to assign managers to the **Agent** security profile so they can access the Contact Control Panel (CCP). This enables them can monitor the conversation through the CCP.
@@ -57,7 +57,7 @@ Be sure to assign managers to the **Agent** security profile so they can access 
      Note the following:
      + If users do not have **Call recordings (unredacted) - Access** permission—or they're not logged in to Connect Customer—they cannot listen to the call recording or access the URL in S3, even if they know how the URL is formed.
      + The **Call recordings (unredacted) - Enable download button** permission controls only whether the download button appears in the user interface. It does not control access to the recording.
-   + **Contact transcripts (unredacted) - Access**: Use this permission to manage who can view unredacted chat and email conversations, and unredacted voice transcripts produced by Contact Lens on the **Contact search** and **Contact details** pages.
+   + **Contact transcripts (unredacted) - Access**: Use this permission to manage who can view unredacted chat and email conversations, and unredacted voice transcripts produced by conversational analytics on the **Contact search** and **Contact details** pages.
 
      Note the following:
      + If users do not have **Call recordings (unredacted) - Access** permission—or they're not logged in to Connect Customer.

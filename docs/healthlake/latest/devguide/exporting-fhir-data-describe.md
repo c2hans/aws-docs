@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/exporting-fhi
 # Getting FHIR export job properties
 <a name="exporting-fhir-data-describe"></a>
 
-Use `DescribeFHIRExportJob` to get export job properties from a HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DescribeFHIRExportJob.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DescribeFHIRExportJob.html) in the *AWS HealthLake API Reference*.
+Use `DescribeFHIRExportJob` to get export job properties from a HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`DescribeFHIRExportJob`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DescribeFHIRExportJob.html) in the *AWS HealthLake API Reference*.
 
 **Note**
 HealthLake supports the [FHIR R4 specification](https://hl7.org/fhir/R4/index.html) for health care data exchange. Therefore, all health data is exported in FHIR R4 format.
@@ -133,4 +133,4 @@ Can't find what you need? Request a code example using the **Provide feedback** 
 <a name="describe-export-job-console"></a>
 
 **Note**
-FHIR export job information is not available on the HealthLake Console. Instead, use the AWS CLI with `DescribeFHIRExportJob` to request export job properties such as [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ExportJobProperties.html#HealthLake-Type-ExportJobProperties-JobStatus](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ExportJobProperties.html#HealthLake-Type-ExportJobProperties-JobStatus). For more information, refer to the AWS CLI example on this page.
+FHIR export job information is not available on the HealthLake Console. Instead, use the AWS CLI with `DescribeFHIRExportJob` to request export job properties such as [`JobStatus`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ExportJobProperties.html#HealthLake-Type-ExportJobProperties-JobStatus). For more information, refer to the AWS CLI example on this page.

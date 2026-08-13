@@ -11,7 +11,7 @@ User-defined Lambda functions use `StreamManagerClient` in the AWS IoT Greengras
 
 ![Object model diagram of the ExportDefinition property type.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/stream-manager-exportconfigs.png)
 
-You can define zero or more export configurations on a stream, including multiple export configurations for a single destination type. For example, you can export a stream to two AWS IoT Analytics channels and one Kinesis data stream.
+You can define zero or more export configurations on a stream, including multiple export configurations for a single destination type. For example, you can export a stream to two Kinesis data streams and one Amazon S3 bucket.
 
 For failed export attempts, stream manager continually retries exporting data to the AWS Cloud at intervals of up to five minutes. The number of retry attempts doesn't have a maximum limit.
 
@@ -19,65 +19,22 @@ For failed export attempts, stream manager continually retries exporting data to
 <a name="streammanagerclient-http-config"></a>`StreamManagerClient` also provides a target destination you can use to export streams to an HTTP server. This target is intended for testing purposes only. It is not stable or supported for use in production environments.
 
 **Topics**
-+ [AWS IoT Analytics channels](#export-to-iot-analytics)
++ [AWS IoT Analytics channels (discontinued)](#export-to-iot-analytics)
 + [Amazon Kinesis data streams](#export-to-kinesis)
 + [AWS IoT SiteWise asset properties](#export-to-iot-sitewise)
 + [Amazon S3 objects](#export-to-s3)
 
 You are reponsible for maintaining these AWS Cloud resources.
 
-## AWS IoT Analytics channels
+## AWS IoT Analytics channels (discontinued)
 <a name="export-to-iot-analytics"></a>
 
-Stream manager supports automatic exports to AWS IoT Analytics. <a name="ita-export-destination"></a>AWS IoT Analytics lets you perform advanced analysis on your data to help make business decisions and improve machine learning models. For more information, see [What is AWS IoT Analytics?](https://docs.aws.amazon.com/iotanalytics/latest/userguide/welcome.html) in the *AWS IoT Analytics User Guide*.
+**AWS IoT Analytics discontinued**
+AWS IoT Analytics was discontinued on December 15, 2025. Stream manager exports to AWS IoT Analytics channels no longer function. If you have streams configured with `IoTAnalyticsConfig` export destinations, remove them to avoid continuous failed export attempts.
 
-In the AWS IoT Greengrass Core SDK, your Lambda functions use the `IoTAnalyticsConfig` to define the export configuration for this destination type. For more information, see the SDK reference for your target language:
-+ [IoTAnalyticsConfig](https://aws.github.io/aws-greengrass-core-sdk-python/_apidoc/greengrasssdk.stream_manager.data.html#greengrasssdk.stream_manager.data.IoTAnalyticsConfig) in the Python SDK
-+ [IoTAnalyticsConfig](https://aws.github.io/aws-greengrass-core-sdk-java/com/amazonaws/greengrass/streammanager/model/export/IoTAnalyticsConfig.html) in the Java SDK
-+ [IoTAnalyticsConfig](https://aws.github.io/aws-greengrass-core-sdk-js/aws-greengrass-core-sdk.StreamManager.IoTAnalyticsConfig.html) in the Node.js SDK
+To remove AWS IoT Analytics export configurations from an existing stream, update your stream definition to omit the `IoTAnalyticsConfig` entry. Alternatively, delete and recreate the stream without the AWS IoT Analytics export configuration.
 
-### Requirements
-<a name="export-to-iot-analytics-reqs"></a>
-
-This export destination has the following requirements:
-+ Target channels in AWS IoT Analytics must be in the same AWS account and AWS Region as the Greengrass group.
-+ The [Greengrass group role](group-role.md) must allow the `iotanalytics:BatchPutMessage` permission to target channels. For example:
-
-------
-#### [ JSON ]
-
-****
-
-  ```
-  {
-      "Version":"2012-10-17",
-      "Statement": [
-          {
-              "Effect": "Allow",
-              "Action": [
-                  "iotanalytics:BatchPutMessage"
-              ],
-              "Resource": [
-              "arn:aws:iotanalytics:{{us-east-1}}:{{123456789012}}:channel/{{channel_1_name}}",
-      "arn:aws:iotanalytics:{{us-east-1}}:{{123456789012}}:channel/{{channel_2_name}}"
-              ]
-          }
-      ]
-  }
-  ```
-
-------
-
-  <a name="wildcards-grant-granular-conditional-access"></a>You can grant granular or conditional access to resources, for example, by using a wildcard `*` naming scheme. For more information, see [Adding and removing IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html) in the *IAM User Guide*.
-
-### Exporting to AWS IoT Analytics
-<a name="export-streams-to-iot-analytics"></a>
-
-To create a stream that exports to AWS IoT Analytics, your Lambda functions [create a stream](work-with-streams.md#streammanagerclient-create-message-stream) with an export definition that includes one or more `IoTAnalyticsConfig` objects. This object defines export settings, such as the target channel, batch size, batch interval, and priority.
-
-When your Lambda functions receive data from devices, they [append messages](work-with-streams.md#streammanagerclient-append-message) that contain a blob of data to the target stream.
-
-Then, stream manager exports the data based on the batch settings and priority defined in the stream's export configurations.
+Consider migrating to one of the other supported export destinations, such as [Amazon Kinesis data streams](#export-to-kinesis) or [Amazon S3 objects](#export-to-s3).
 
 ## Amazon Kinesis data streams
 <a name="export-to-kinesis"></a>

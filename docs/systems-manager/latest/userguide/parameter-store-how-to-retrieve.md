@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/paramet
 ## Prerequisites
 <a name="parameter-store-getting-started-prerequisites"></a>
 
- Before you begin, make sure that you have the following:
+ Before you begin, make sure you have the following:
 +  An AWS account.
 +  A place to run AWS CLI commands. You can use AWS CloudShell, a local client with the AWS CLI installed and configured, or an Amazon EC2 instance that has the AWS CLI installed.
 +  IAM permissions to create, retrieve, update, and delete Parameter Store parameters. For this tutorial, the principal running the commands needs IAM permissions such as `ssm:PutParameter`, `ssm:GetParameter`, `ssm:GetParameters`, `ssm:GetParametersByPath`, `ssm:DeleteParameter`, and `ssm:DeleteParameters`. For more information, see [Managing access to Parameter Store parameters using IAM policies](parameter-store-setting-up.md#sysman-paramstore-access)
@@ -34,7 +34,7 @@ aws ssm put-parameter \
 ## Step 2: Retrieve the parameter value
 <a name="parameter-store-getting-started-retrieve-string"></a>
 
-Run the [https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameter.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameter.html) command to retrieve the value of a single parameter. The following example retrieves the value of the `/myapp/dev/log-level` parameter.
+Run the [get-parameter](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameter.html) command to retrieve the value of a single parameter. The following example retrieves the value of the `/myapp/dev/log-level` parameter.
 
 ```
 aws ssm get-parameter \
@@ -74,7 +74,7 @@ aws ssm put-parameter \
 ## Step 4: Retrieve multiple parameters
 <a name="parameter-store-getting-started-get-parameters"></a>
 
- Run the [https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameters.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameters.html) command to specify up to 10 parameters in a list. The following example specifies the `/myapp/dev/log-level` and `/myapp/dev/subnet-ids` parameters by name.
+ Run the [get-parameters](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameters.html) command to specify up to 10 parameters in a list. The following example specifies the `/myapp/dev/log-level` and `/myapp/dev/subnet-ids` parameters by name.
 
 ```
 aws ssm get-parameters \
@@ -172,7 +172,7 @@ aws ssm put-parameter \
 }
 ```
 
- Run the [https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameter-history.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameter-history.html) command to view the history of the `/myapp/dev/log-level` parameter.
+ Run the [get-parameter-history](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameter-history.html) command to view the history of the `/myapp/dev/log-level` parameter.
 
 ```
 aws ssm get-parameter-history \
@@ -208,7 +208,7 @@ aws ssm get-parameter-history \
 ## Step 7: Retrieve parameters by path
 <a name="parameter-store-getting-started-retrieve-by-path"></a>
 
- Run the [https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameters-by-path.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameters-by-path.html) command to retrieve parameters under the `/myapp/dev/` path. The `--recursive` option includes parameters in lower levels of the hierarchy.
+ Run the [get-parameters-by-path](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameters-by-path.html) command to retrieve parameters under the `/myapp/dev/` path. The `--recursive` option includes parameters in lower levels of the hierarchy.
 
 ```
 aws ssm get-parameters-by-path \

@@ -8,4 +8,5 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_InternetMonitor"></a>
 
 **Resource types**
++ [AWS::InternetMonitor::InternetEvent](aws-resource-internetmonitor-internetevent.md)
 + [AWS::InternetMonitor::Monitor](aws-resource-internetmonitor-monitor.md)

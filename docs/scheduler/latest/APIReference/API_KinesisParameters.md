@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_Kinesi
 # KinesisParameters
 <a name="API_KinesisParameters"></a>
 
-The templated target type for the Amazon Kinesis [https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecord.html](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecord.html) API operation.
+The templated target type for the Amazon Kinesis [`PutRecord`](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecord.html) API operation.
 
 ## Contents
 <a name="API_KinesisParameters_Contents"></a>

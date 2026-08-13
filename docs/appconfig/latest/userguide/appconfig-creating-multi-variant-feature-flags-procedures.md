@@ -81,7 +81,7 @@ Complete the following tasks before you create a multi-variant feature flag by u
 
 **To create a multi-variant feature flag**
 
-1. Create a configuration file on your local machine that specifies the details of the multi-variant flag you want to create. Save the file with a `.json` file extension. The file must adhere to the [https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-type-reference-feature-flags.html](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-type-reference-feature-flags.html) JSON schema. The schema contents of your configuration file will be similar to the following.
+1. Create a configuration file on your local machine that specifies the details of the multi-variant flag you want to create. Save the file with a `.json` file extension. The file must adhere to the [`AWS.AppConfig.FeatureFlags`](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-type-reference-feature-flags.html) JSON schema. The schema contents of your configuration file will be similar to the following.
 
    ```
    {
@@ -242,4 +242,4 @@ Complete the following tasks before you create a multi-variant feature flag by u
 
    The `service_returned_content_file` contains your configuration data that includes some AWS AppConfig generated metadata.
 **Note**
-When you create the hosted configuration version, AWS AppConfig verifies that your data conforms to the [https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-type-reference-feature-flags.html](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-type-reference-feature-flags.html) JSON schema. AWS AppConfig additionally validates that each feature flag attribute in your data satisfies the constraints you defined for those attributes.
+When you create the hosted configuration version, AWS AppConfig verifies that your data conforms to the [`AWS.AppConfig.FeatureFlags`](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-type-reference-feature-flags.html) JSON schema. AWS AppConfig additionally validates that each feature flag attribute in your data satisfies the constraints you defined for those attributes.

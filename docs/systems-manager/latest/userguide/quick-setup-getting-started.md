@@ -9,10 +9,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/quick-s
 
 Use the information in this topic to help you prepare to use Quick Setup.
 
-**Topics**
-+ [IAM roles and permissions for Quick Setup onboarding](#quick-setup-getting-started-iam)
-+ [Manual onboarding for working with Quick Setup API programmatically](#quick-setup-api-manual-onboarding)
-
 ## IAM roles and permissions for Quick Setup onboarding
 <a name="quick-setup-getting-started-iam"></a>
 
@@ -210,7 +206,7 @@ During onboarding, Quick Setup creates the following AWS Identity and Access Man
 + `AWS-QuickSetup-PatchPolicy-LocalAdministrationRole` – Grants permissions to AWS CloudFormation to assume `AWS-QuickSetup-PatchPolicy-LocalExecutionRole`.
 
 If you're onboarding a management account—the account that you use to create an organization in AWS Organizations—Quick Setup also creates the following roles on your behalf:
-+ `AWS-QuickSetup-SSM-RoleForEnablingExplorer` – Grants permissions to the `AWS-EnableExplorer` automation runbook. The `AWS-EnableExplorer` runbook configures Explorer, a tool in Systems Manager, to display information for multiple AWS accounts and AWS Regions.
++ `AWS-QuickSetup-SSM-RoleForEnablingExplorer` – Grants permissions to the `AWS-EnableExplorer` automation runbook. The `AWS-EnableExplorer` runbook configures Explorer, a tool in Systems Manager to display information for multiple AWS accounts and AWS Regions.
 + `AWSServiceRoleForAmazonSSM` – A service-linked role that grants access to AWS resources managed and used by Systems Manager.
 + `AWSServiceRoleForAmazonSSM_AccountDiscovery` – A service-linked role that grants permissions to Systems Manager to call AWS services to discover AWS account information when synchronizing data. For more information, see [Using roles to collect AWS account information for OpsCenter and Explorer](using-service-linked-roles-service-action-2.md).
 

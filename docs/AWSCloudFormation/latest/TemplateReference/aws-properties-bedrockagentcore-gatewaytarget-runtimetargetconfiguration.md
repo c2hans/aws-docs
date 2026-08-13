@@ -49,7 +49,7 @@ The Amazon Resource Name (ARN) of the AgentCore Runtime to route requests to.
 The qualifier for the agent runtime, used to target a specific endpoint version. If not specified, the default endpoint is used.
 *Required*: No
 *Type*: String
-*Pattern*: `^(([1-9][0-9]{0,4})|([a-zA-Z][a-zA-Z0-9_]{0,47}))$`
+*Pattern*: `([1-9][0-9]{0,4})|([a-zA-Z][a-zA-Z0-9_]{0,47})`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Schema`  <a name="cfn-bedrockagentcore-gatewaytarget-runtimetargetconfiguration-schema"></a>

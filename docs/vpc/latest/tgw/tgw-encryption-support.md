@@ -43,5 +43,6 @@ When a transit gateway has Encryption support enabled, the following attachment 
 + When the transit gateway encryption state is **enabled**, you can create VPC, Direct Connect attachments, VPN attachments, and VPC attachments in any Encryption Control mode.
 + When the transit gateway encryption state is **disabling**, you cannot create new VPC attachments with Encryption control enforced.
 + Connect attachments, Peering attachments, Network Firewall attachments, VPN Concentrator attachments, Client VPN attachments, security group references, and multicast features are not supported with Encryption Support.
++ Encryption Support is not supported for VPC attachments in the Availability Zone `use1-az3`. When Encryption Support is enabled on a transit gateway, you cannot create a VPC attachment that uses a subnet in this Availability Zone. To attach a subnet in `use1-az3`, you must first disable Encryption Support on the transit gateway.
 
 Attempting to create incompatible attachments will fail with an API error.

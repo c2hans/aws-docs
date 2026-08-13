@@ -90,7 +90,7 @@ FsxId0abcdef123456789::>
 
 The `fsxadmin`'s administrative view is at the file system level, which includes all SVMs and volumes in the file system. The `fsxadmin` role performs the role of the ONTAP cluster administrator. Because Amazon FSx for NetApp ONTAP file systems are fully managed, the `fsxadmin` role can run a subset of the available ONTAP CLI commands.
 
-To see a list of the commands that `fsxadmin` can run, use the following [https://docs.netapp.com/us-en/ontap-cli/security-login-role-show.html](https://docs.netapp.com/us-en/ontap-cli/security-login-role-show.html) ONTAP CLI command:
+To see a list of the commands that `fsxadmin` can run, use the following [`security login role show`](https://docs.netapp.com/us-en/ontap-cli/security-login-role-show.html) ONTAP CLI command:
 
 ```
 FsxId0abc123def456::> security login role show -role fsxadmin -access !none

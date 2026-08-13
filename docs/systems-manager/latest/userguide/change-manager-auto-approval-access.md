@@ -41,6 +41,6 @@ You can add the following policy as an inline policy, where the condition is spe
 
 ------
 
-For information about specifying inline policies, see [Inline policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-vs-inline.html#inline-policies) and [Adding and removing IAM identity permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_manage-attach-detach.html) in the *IAM User Guide*.
+For information about specifying inline policies, see [Inline policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#inline-policies) and [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html) in the *IAM User Guide*.
 
 For more information about condition keys for Systems Manager policies, see [Condition keys for Systems Manager](security_iam_service-with-iam.md#policy-conditions).

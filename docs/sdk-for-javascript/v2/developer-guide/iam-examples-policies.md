@@ -19,11 +19,11 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 You grant permissions to a user by creating a *policy*, which is a document that lists the actions that a user can perform and the resources those actions can affect. Any actions or resources that are not explicitly allowed are denied by default. Policies can be created and attached to users, groups of users, roles assumed by users, and resources.
 
 In this example, a series of Node.js modules are used to manage policies in IAM. The Node.js modules use the SDK for JavaScript to create and delete policies as well as attaching and detaching role policies using these methods of the `AWS.IAM` client class:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/IAM.html#createPolicy-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/IAM.html#createPolicy-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/IAM.html#getPolicy-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/IAM.html#getPolicy-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/IAM.html#listAttachedRolePolicies-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/IAM.html#listAttachedRolePolicies-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/IAM.html#attachRolePolicy-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/IAM.html#attachRolePolicy-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/IAM.html#detachRolePolicy-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/IAM.html#detachRolePolicy-property)
++ [`createPolicy`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/IAM.html#createPolicy-property)
++ [`getPolicy`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/IAM.html#getPolicy-property)
++ [`listAttachedRolePolicies`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/IAM.html#listAttachedRolePolicies-property)
++ [`attachRolePolicy`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/IAM.html#attachRolePolicy-property)
++ [`detachRolePolicy`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/IAM.html#detachRolePolicy-property)
 
 For more information about IAM users, see [Overview of Access Management: Permissions and Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_access-management.html) in the *IAM User Guide*.
 

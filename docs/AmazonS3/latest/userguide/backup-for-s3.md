@@ -11,8 +11,14 @@ When using AWS Backup for Amazon S3, you can perform the following actions:
 + Create continuous backups and periodic backups. Continuous backups are useful for point-in-time restore, and periodic backups are useful to meet your long-term data-retention needs.
 + Automate backup scheduling and retention by centrally configuring backup policies.
 + Restore backups of Amazon S3 data to a point in time that you specify.
++ Access backup data directly through S3 access points without initiating a restore, enabling targeted file recovery, data validation, and compliance auditing.
 
 Along with AWS Backup, you can use S3 Versioning and S3 Replication to help recover from accidental deletions and perform your own self-recovery operations.
+
+**Accessing backup data**
+AWS Backup lets you read Amazon S3 backup data directly through S3 access points without initiating a full restore. You create a backup access point for a specific S3 recovery point, and AWS Backup provisions an S3 access point that you can use with standard S3 read operations such as `GetObject`, `HeadObject`, and `ListObjectsV2`.
+
+For more information, see [Backup access points](https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-access-points.html) in the *AWS Backup Developer Guide*.
 
 **Prerequisites**
 You must activate [S3 Versioning](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html) on your bucket before AWS Backup can back it up.

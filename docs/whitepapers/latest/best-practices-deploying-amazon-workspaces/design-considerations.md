@@ -271,7 +271,7 @@ As shown in the diagram, The Web Access client has different [network requiremen
 ```
 Tags enable you to associate metadata with AWS resources. Tags can be used with Amazon WorkSpaces to registered directories,
   bundles, IP Access Control Groups, or images. Tags assist with cost allocation to internal cost centers. Before using tags with Amazon WorkSpaces,
-  refer to the [https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf](https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf) whitepaper.
+  refer to the [*Tagging Best Practices*](https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf) whitepaper.
 
 Tag restrictions
 ```

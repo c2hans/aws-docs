@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/built-
 # Built-in evaluators
 <a name="built-in-evaluators-overview"></a>
 
-Built-in evaluators in AgentCore AgentCore Evaluations provide pre-configured evaluator for assessing your agents. These evaluators use predefined evaluator models and prompt templates that have been optimized for common evaluation scenarios.
+Built-in evaluators in AgentCore Evaluations provide pre-configured evaluator for assessing your agents. These evaluators use predefined evaluator models and prompt templates that have been optimized for common evaluation scenarios.
 
 You can use built-in evaluators with both online and on-demand evaluations. To specify a built-in evaluator, use its ID in the following format: `Builtin.EvaluatorName` , such as `Builtin.Helpfulness`.
 

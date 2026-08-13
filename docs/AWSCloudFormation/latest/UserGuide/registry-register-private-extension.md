@@ -14,7 +14,7 @@ Before you continue, confirm that you have the required [IAM permissions](regist
 
 1. Locate the Amazon S3 bucket that contains the project package for the private extension you want to register in your account.
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/register-type.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/register-type.html) command to register the private extension in your account.
+1. Use the [register-type](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/register-type.html) command to register the private extension in your account.
 
    For example, the following command registers the `My::Resource::Example` resource type in the specified AWS account.
 
@@ -38,7 +38,7 @@ Before you continue, confirm that you have the required [IAM permissions](regist
    --execution-role-arn {{arn:aws:iam::123456789012:role/MyIAMRole}}
    ```
 
-1. (Optional) Use the registration token with the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-type-registration.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-type-registration.html) command to track the progress of your registration request.
+1. (Optional) Use the registration token with the [describe-type-registration](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-type-registration.html) command to track the progress of your registration request.
 
    When CloudFormation completes the registration request, it sets the progress status of the request to `COMPLETE`.
 
@@ -72,7 +72,7 @@ If the extension you are registering is a Hook, this next step is required. You 
    export HOOK_TYPE_ARN="{{arn:aws:cloudformation:us-west-2:123456789012:type/hook/Organization-Service-Hook/}}"
    ```
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html) command to specify the configuration data. The JSON you pass for `--configuration` must validate against the Hook's configuration schema. To activate the Hook, you must set the `HookInvocationStatus` property to `ENABLED` in the `HookConfiguration` section.
+1. Use the [set-type-configuration](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html) command to specify the configuration data. The JSON you pass for `--configuration` must validate against the Hook's configuration schema. To activate the Hook, you must set the `HookInvocationStatus` property to `ENABLED` in the `HookConfiguration` section.
 
    ```
    aws cloudformation set-type-configuration \

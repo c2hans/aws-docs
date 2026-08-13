@@ -200,5 +200,5 @@ Schedule offsets are supported for CRON expressions only.
 + [Create a maintenance window using the console](sysman-maintenance-create-mw.md)
 + [Tutorial: Create and configure a maintenance window using the AWS CLI](maintenance-windows-cli-tutorials-create.md)
 + [CreateMaintenanceWindow](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_CreateMaintenanceWindow.html) in the *AWS Systems Manager API Reference*
-+ [https://docs.aws.amazon.com/cli/latest/reference/ssm/create-maintenance-window.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/create-maintenance-window.html) in the *AWS Systems Manager section of the AWS CLI Command Reference*
++ [create-maintenance-window](https://docs.aws.amazon.com/cli/latest/reference/ssm/create-maintenance-window.html) in the *AWS Systems Manager section of the AWS CLI Command Reference*
 + [Time Zone Database](https://www.iana.org/time-zones) on the IANA website

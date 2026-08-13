@@ -18,7 +18,7 @@ Group ID
 Artifact ID
 `roles-anywhere-java`
 
- For the current version, release notes, and signature verification instructions, see the plugin's page on the [https://central.sonatype.com/artifact/software.amazon.rolesanywhere.plugin/roles-anywhere-java](https://central.sonatype.com/artifact/software.amazon.rolesanywhere.plugin/roles-anywhere-java) website and the [roles-anywhere-java](https://github.com/aws-sdk-plugin/roles-anywhere-java) repository on the GitHub website.
+ For the current version, release notes, and signature verification instructions, see the plugin's page on the [Maven Central](https://central.sonatype.com/artifact/software.amazon.rolesanywhere.plugin/roles-anywhere-java) website and the [roles-anywhere-java](https://github.com/aws-sdk-plugin/roles-anywhere-java) repository on the GitHub website.
 
  The plugin targets a minimum Java 8 runtime. The plugin follows its own release cadence, independent of the AWS SDK for Java. Consult the plugin's release notes for the SDK versions each release supports.
 

@@ -38,7 +38,7 @@ To view a task summary from this page, choose **Task ID** for the task you just 
 
 ## To release files (CLI)
 <a name="create-release-task-cli"></a>
-+ Use the [https://docs.aws.amazon.com/cli/latest/reference/fsx/create-data-repository-task.html](https://docs.aws.amazon.com/cli/latest/reference/fsx/create-data-repository-task.html) CLI command to create a task that releases files on your FSx for Lustre file system. The corresponding API operation is [https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateDataRepositoryTask.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateDataRepositoryTask.html).
++ Use the [`create-data-repository-task`](https://docs.aws.amazon.com/cli/latest/reference/fsx/create-data-repository-task.html) CLI command to create a task that releases files on your FSx for Lustre file system. The corresponding API operation is [`CreateDataRepositoryTask`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateDataRepositoryTask.html).
 
   Set the following parameters:
   + Set `--file-system-id` to the ID of the file system that you are releasing files from.

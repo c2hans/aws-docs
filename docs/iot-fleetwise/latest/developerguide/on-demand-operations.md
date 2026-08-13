@@ -10,7 +10,7 @@ AWS IoT FleetWise is no longer open to new customers. Existing AWS IoT FleetWise
 **Important**
 Access to certain AWS IoT FleetWise features is currently gated. For more information, see [AWS Region and feature availability in AWS IoT FleetWise](fleetwise-regions.md).
 
-You can fetch a vehicle's last known state using the[https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCommand.html](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCommand.html) AWS IoT Core control plane API operation or the AWS IoT FleetWise console.
+You can fetch a vehicle's last known state using the[`CreateCommand`](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCommand.html) AWS IoT Core control plane API operation or the AWS IoT FleetWise console.
 
 **Important**
 A validation exception can occur in any of the following scenarios:

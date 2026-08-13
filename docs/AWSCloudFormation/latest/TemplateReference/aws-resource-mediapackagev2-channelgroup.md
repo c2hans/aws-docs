@@ -74,7 +74,7 @@ The tags associated with the channel group.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns`arn:aws:mediapackagev2:region:AccountId:ChannelGroup/ChannelGroupName`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-mediapackagev2-channelgroup-return-values-fn--getatt"></a>

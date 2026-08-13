@@ -14,7 +14,7 @@ Elastic Load Balancing uses the service-linked role named AWSServiceRoleForElast
 
 AWSServiceRoleForElasticLoadBalancing trusts the `elasticloadbalancing.amazonaws.com` service to assume the role.
 
-The role permissions policy is AWSElasticLoadBalancingServiceRolePolicy. To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticLoadBalancingServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticLoadBalancingServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
+The role permissions policy is AWSElasticLoadBalancingServiceRolePolicy. To view the permissions for this policy, see [AWSElasticLoadBalancingServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSElasticLoadBalancingServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
 
 ## Create the service-linked role
 <a name="create-service-linked-role"></a>

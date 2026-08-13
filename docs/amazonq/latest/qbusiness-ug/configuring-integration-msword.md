@@ -36,7 +36,7 @@ As admins, before you can integrate the Amazon Q Business Microsoft Word (Word) 
 
 1. Add the two IAM roles and trust policies for adding integrations. For more information, see [IAM roles and trust policy for your integrations](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/amazon-q-business-integrations-iam.html).
 
-1. To use this feature, you must enable **Allow end users to send queries directly to the LLM** in your Admin controls and guardrails. For more information, see the [Response settings](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails-global-controls.html#guardrails-global-response) topic in [Admin controls and guardrails](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails.html) and [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ChatSync.html#qbusiness-ChatSync-request-chatMode](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ChatSync.html#qbusiness-ChatSync-request-chatMode) if you are configuring programmatically.
+1. To use this feature, you must enable **Allow end users to send queries directly to the LLM** in your Admin controls and guardrails. For more information, see the [Response settings](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails-global-controls.html#guardrails-global-response) topic in [Admin controls and guardrails](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails.html) and [`chatMode`](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ChatSync.html#qbusiness-ChatSync-request-chatMode) if you are configuring programmatically.
 
 ## Integrating Microsoft Word with theAmazon Q Business Add-in
 <a name="integrating-integration-msword"></a>

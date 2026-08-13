@@ -110,7 +110,7 @@ The generated Object Lambda Access Point alias name has two fields:
 + The `Value` field is the alias value of the Object Lambda Access Point.
 + The `Status` field is the status of the Object Lambda Access Point alias. If the status is `PROVISIONING`, Amazon S3 is provisioning the Object Lambda Access Point alias, and the alias is not yet ready for use. If the status is `READY`, the Object Lambda Access Point alias has been successfully provisioned and is ready for use.
 
-For more information about the `ObjectLambdaAccessPointAlias` data type in the REST API, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateAccessPointForObjectLambda.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateAccessPointForObjectLambda.html) and [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ObjectLambdaAccessPointAlias.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ObjectLambdaAccessPointAlias.html) in the *Amazon Simple Storage Service API Reference*.
+For more information about the `ObjectLambdaAccessPointAlias` data type in the REST API, see [CreateAccessPointForObjectLambda](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateAccessPointForObjectLambda.html) and [ObjectLambdaAccessPointAlias](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ObjectLambdaAccessPointAlias.html) in the *Amazon Simple Storage Service API Reference*.
 
 ### How to use the Object Lambda Access Point alias
 <a name="use-olap-alias"></a>

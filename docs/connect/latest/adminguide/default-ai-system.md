@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/default-ai-sys
 # Default AI prompts and AI agents
 <a name="default-ai-system"></a>
 
-Connect Customer provides a set of system AI prompts and AI agents. It uses them to power the out-of-the-box experience with Connect AI agents.
+Connect Customer provides a set of system AI prompts and AI agents. It uses them to power the out-of-the-box experience with AI agents.
 
 ## Default AI prompts
 <a name="default-ai-prompts"></a>
@@ -38,14 +38,14 @@ Following are the default AI prompts.
 + **SalesAgent**: Identifies sales opportunities in end-customer conversations by gathering their preferences and recent activity, asking permission to suggest items, and choosing the best recommendation approach based on the customer's preferences.
 + **SelfServiceAnswerGeneration**: Generates an answer to a customer query by making use of documents and excerpts in a knowledge base.
 
-  To learn more about enabling Connect AI agents for self-service uses cases for both testing and production purposes, see [(legacy) Use generative AI-powered self-service](generative-ai-powered-self-service.md).
+  To learn more about enabling AI agents for self-service uses cases for both testing and production purposes, see [(legacy) Use generative AI-powered self-service](generative-ai-powered-self-service.md).
 + **SelfServiceOrchestration**: Configures a helpful AI customer service agent that responds directly to customer inquiries and can perform actions to resolve their issues based strictly on available tools.
 + **SelfServicePreProcessing**: Determines what it should be doing in self-service. For example, having a conversation, completing a task, or answering a question? If it's "answering a question," then it hands off to **AnswerGeneration**.
 
 ## Default AI agents
 <a name="default-ai-agents"></a>
 
-Each AI agent configures one use case in the Connect AI agents experience. It specifies which AI prompts and AI guardrail that use case uses. Following are the default AI agents:
+Each AI agent configures one use case in the AI agents experience. It specifies which AI prompts and AI guardrail that use case uses. Following are the default AI agents:
 + **AgentAssistanceOrchestrator** – Orchestrates the agent assistance experience. It coordinates other AI agents and tools to help agents resolve customer issues.
 + **AnswerRecommendation** – Recommends answers to the agent by searching the knowledge base. It uses the conversation transcript to find relevant articles.
 + **CaseSummarization** – Generates a summary of a case by analyzing key case fields and items in the activity feed.

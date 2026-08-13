@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/StartSpeechSynthesisTask
 
 The following Java code sample show how to use Java-based applications to synthesize a long speech (up to 100,000 billed characters) and store it directly in an Amazon S3 bucket.
 
-For more information, see the reference for [https://docs.aws.amazon.com/polly/latest/APIReference/API_StartSpeechSynthesisTask.html](https://docs.aws.amazon.com/polly/latest/APIReference/API_StartSpeechSynthesisTask.html) API.
+For more information, see the reference for [`StartSpeechSynthesisTask`](https://docs.aws.amazon.com/polly/latest/APIReference/API_StartSpeechSynthesisTask.html) API.
 
 ## SDK v2
 <a name="start-sdk-v2"></a>

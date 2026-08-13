@@ -41,7 +41,7 @@ The following table describes the permissions granted by this policy.
 
 **To define the AwsGlueDataBrewS3EncryptedPolicy IAM policy for DataBrew (console)**
 
-1. Download the JSON for the [samples/AwsGlueDataBrewS3EncryptedPolicy.json.zip](samples/AwsGlueDataBrewS3EncryptedPolicy.json.zip) IAM policy.
+1. Download the JSON for the [`AwsGlueDataBrewS3EncryptedPolicy`](samples/AwsGlueDataBrewS3EncryptedPolicy.json.zip) IAM policy.
 
 1. Sign in to the AWS Management Console and open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
@@ -59,7 +59,7 @@ The following table describes the permissions granted by this policy.
 
 **To define the AwsGlueDataBrewS3EncryptedPolicy IAM policy for DataBrew (AWS CLI)**
 
-1. Download the JSON for [samples/AwsGlueDataBrewS3EncryptedPolicy.json.zip](samples/AwsGlueDataBrewS3EncryptedPolicy.json.zip).
+1. Download the JSON for [`AwsGlueDataBrewS3EncryptedPolicy`](samples/AwsGlueDataBrewS3EncryptedPolicy.json.zip).
 
 1. Customize the policy as described in the first step of the previous procedure.
 

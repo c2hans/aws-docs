@@ -31,7 +31,7 @@ Use the following procedure to change an existing standard parameter to an advan
 ------
 #### [ AWS CLI ]
 
-You can override the default setting by specifying the parameter tier using the `[https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_PutParameter.html](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_PutParameter.html)` operation. For example, you might want to share the default AMI value across AWS accounts. The following AWS CLI example explicitly sets the parameter tier to `Advanced` for the `default-ami` parameter in Linux & macOS.
+You can override the default setting by specifying the parameter tier using the `[PutParameter](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_PutParameter.html)` operation. For example, you might want to share the default AMI value across AWS accounts. The following AWS CLI example explicitly sets the parameter tier to `Advanced` for the `default-ami` parameter in Linux & macOS.
 
 ```
 aws ssm put-parameter \

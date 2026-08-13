@@ -35,7 +35,7 @@ Amazon Transcribe is covered under AWS’s HIPAA eligibility and BAA which requi
 
 Amazon Transcribe is a pay-as-you-go service; pricing is based on seconds of transcribed audio, billed on a monthly basis.
 
-Usage is billed in one-second increments, with a minimum per request charge of 15 seconds. Note that additional charges apply for features such as PII content redaction and custom language models.
+Usage is now charged in precise 1-second increments with no minimum duration applied. Note that additional charges apply for features such as PII content redaction and custom language models.
 
 For cost information for each AWS Region, refer to [Amazon Transcribe Pricing](https://aws.amazon.com/transcribe/pricing/).
 

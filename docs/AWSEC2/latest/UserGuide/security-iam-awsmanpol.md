@@ -16,63 +16,63 @@ Additionally, AWS supports managed policies for job functions that span multiple
 
 You can attach the `AmazonEC2FullAccess` policy to your IAM identities. This policy grants permissions that allow full access to Amazon EC2.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2FullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2FullAccess.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AmazonEC2FullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2FullAccess.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: AmazonEC2ReadOnlyAccess
 <a name="security-iam-awsmanpol-AmazonEC2ReadOnlyAccess"></a>
 
 You can attach the `AmazonEC2ReadOnlyAccess` policy to your IAM identities. This policy grants permissions that allow read-only access to Amazon EC2.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2ReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2ReadOnlyAccess.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AmazonEC2ReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2ReadOnlyAccess.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: AmazonEC2ImageReferencesAccessPolicy
 <a name="security-iam-awsmanpol-AmazonEC2ImageReferencesAccessPolicy"></a>
 
 You can attach the `AmazonEC2ImageReferencesAccessPolicy` policy to your IAM identities. This policy grants the permissions needed to use the EC2 DescribeImageReferences API, including permission to view EC2 instances, launch templates, Systems Manager parameters, and Image Builder recipes. The policy supports the `IncludeAllResourceTypes` flag and will continue to work when AWS adds support for new resource types, removing the need for future policy updates.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2ImageReferencesAccessPolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2ImageReferencesAccessPolicy.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AmazonEC2ImageReferencesAccessPolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEC2ImageReferencesAccessPolicy.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: AWSEC2CapacityReservationFleetRolePolicy
 <a name="security-iam-awsmanpol-AWSEC2CapacityReservationFleetRolePolicy"></a>
 
 This policy is attached to the service-linked role named **AWSServiceRoleForEC2CapacityReservationFleet** to allow the service to create, modify, and cancel Capacity Reservations in a Capacity Reservation Fleet on your behalf. For more information, see [Using service-linked roles for Capacity Reservation FleetUsing service-linked roles for EC2 Capacity Manager](using-service-linked-roles.md).
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2CapacityReservationFleetRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2CapacityReservationFleetRolePolicy.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AWSEC2CapacityReservationFleetRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2CapacityReservationFleetRolePolicy.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: AWSEC2FleetServiceRolePolicy
 <a name="security-iam-awsmanpol-AWSEC2FleetServiceRolePolicy"></a>
 
 This policy is attached to the service-linked role named **AWSServiceRoleForEC2Fleet** to allow EC2 Fleet to request, launch, terminate, and tag instances on your behalf. For more information, see [Service-linked role for EC2 Fleet](ec2-fleet-prerequisites.md#ec2-fleet-service-linked-role).
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2FleetServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2FleetServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AWSEC2FleetServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2FleetServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: AWSEC2SpotFleetServiceRolePolicy
 <a name="security-iam-awsmanpol-AWSEC2SpotFleetServiceRolePolicy"></a>
 
 This policy is attached to the service-linked role named **AWSServiceRoleForEC2SpotFleet** to allow Spot Fleet to launch and manage instances on your behalf. For more information, see [Service-linked role for Spot Fleet](spot-fleet-prerequisites.md#service-linked-roles-spot-fleet-requests).
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2SpotFleetServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2SpotFleetServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AWSEC2SpotFleetServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2SpotFleetServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: AWSEC2SpotServiceRolePolicy
 <a name="security-iam-awsmanpol-AWSEC2SpotServiceRolePolicy"></a>
 
 This policy is attached to the service-linked role named **AWSServiceRoleForEC2Spot** to allow Amazon EC2 to launch and manage Spot Instances on your behalf. For more information, see [Service-linked role for Spot Instance requests](service-linked-roles-spot-instance-requests.md).
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2SpotServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2SpotServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AWSEC2SpotServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2SpotServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: AWSEC2VssSnapshotPolicy
 <a name="security-iam-awsmanpol-AWSEC2VssSnapshotPolicy"></a>
 
 You can attach this managed policy to the IAM instance profile role that you use for your Amazon EC2 Windows instances. The policy grants permissions to allow Amazon EC2 to create and manage VSS snapshots on your behalf.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2VssSnapshotPolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2VssSnapshotPolicy.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AWSEC2VssSnapshotPolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2VssSnapshotPolicy.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: DeclarativePoliciesEC2Report
 <a name="security-iam-awsmanpol-DeclarativePoliciesEC2Report"></a>
 
 This policy is attached to the service-linked role named `AWSServiceRoleForDeclarativePoliciesEC2Report` to provide access to read-only APIs needed to generate the account status report for declarative policies.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/DeclarativePoliciesEC2Report.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/DeclarativePoliciesEC2Report.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [DeclarativePoliciesEC2Report](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/DeclarativePoliciesEC2Report.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: EC2FastLaunchFullAccess
 <a name="security-iam-awsmanpol-EC2FastLaunchFullAccess"></a>
@@ -85,35 +85,35 @@ You can attach the `EC2FastLaunchFullAccess` policy to your instance profile or 
 + **IAM** – Access is granted to get and use instance profiles whose name contains `ec2fastlaunch` to create the EC2FastLaunchServiceRolePolicy service-linked role.
 + **CloudFormation** – Access is granted for EC2 Fast Launch to describe and create CloudFormation stacks, and to delete stacks that it created.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2FastLaunchFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2FastLaunchFullAccess.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [EC2FastLaunchFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2FastLaunchFullAccess.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: AWSEC2CapacityManagerServiceRolePolicy
 <a name="security-iam-awsmanpol-AWSEC2CapacityManagerServiceRolePolicy"></a>
 
 This policy is attached to the service-linked role named **AWSServiceRoleForEC2CapacityManager** to allow EC2 Capacity Manager to manage capacity resources and integrate with AWS Organizations on your behalf. For more information, see [Service-linked roles for EC2 Capacity Manager](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-service-linked-roles-cm.html).
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2CapacityManagerServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2CapacityManagerServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AWSEC2CapacityManagerServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2CapacityManagerServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: EC2FastLaunchServiceRolePolicy
 <a name="security-iam-awsmanpol-EC2FastLaunchServiceRolePolicy"></a>
 
 This policy is attached to the service-linked role named **AWSServiceRoleForEC2FastLaunch** to allow Amazon EC2 to create and manage a set of pre-provisioned snapshots that reduce the time it takes to launch instances from your EC2 Fast Launch-enabled AMI. For more information, see [Service-linked role for EC2 Fast Launch](slr-windows-fast-launch.md).
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2FastLaunchServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2FastLaunchServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [EC2FastLaunchServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2FastLaunchServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: Ec2InstanceConnect
 <a name="Ec2InstanceConnect"></a>
 
 You can attach the `Ec2InstanceConnect` policy to your IAM identities. This policy grants permissions that allows customers to call EC2 Instance Connect to publish ephemeral keys to their EC2 instances and connect via ssh or the EC2 Instance Connect CLI.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2InstanceConnect.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2InstanceConnect.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [Ec2InstanceConnect](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2InstanceConnect.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: Ec2InstanceConnectEndpoint
 <a name="Ec2InstanceConnectEndpoint"></a>
 
 This policy is attached to a service-linked role named **AWSServiceRoleForEC2InstanceConnect** to allow EC2 Instance Connect Endpoint to perform actions on your behalf. For more information, see [Service-linked role for EC2 Instance Connect Endpoint](eice-slr.md).
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Ec2InstanceConnectEndpoint.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Ec2InstanceConnectEndpoint.html) in the *AWS Managed Policy Reference*. For a description of the updates to this policy, see [Amazon EC2 updates to AWS managed policies](#security-iam-awsmanpol-updates).
+To view the permissions for this policy, see [Ec2InstanceConnectEndpoint](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Ec2InstanceConnectEndpoint.html) in the *AWS Managed Policy Reference*. For a description of the updates to this policy, see [Amazon EC2 updates to AWS managed policies](#security-iam-awsmanpol-updates).
 
 ## Amazon EC2 updates to AWS managed policies
 <a name="security-iam-awsmanpol-updates"></a>

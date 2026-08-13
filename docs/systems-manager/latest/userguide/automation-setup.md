@@ -7,9 +7,9 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 # Setting up Automation
 <a name="automation-setup"></a>
 
-To set up Automation, a tool in AWS Systems Manager, you must verify user access to the Automation service and situationally configure roles so that the service can perform actions on your resources. We also recommend that you opt in to the adaptive concurrency mode in your Automation preferences. Adaptive concurrency automatically scales your automation quota to meet your needs. For more information, see [Allowing Automation to adapt to your concurrency needs](adaptive-concurrency.md).
+To set up Automation, you must verify user access to the Automation service and situationally configure roles so that the service can perform actions on your resources. We also recommend that you opt in to the adaptive concurrency mode in your Automation preferences. Adaptive concurrency automatically scales your automation quota to meet your needs. For more information, see [Allowing Automation to adapt to your concurrency needs](adaptive-concurrency.md).
 
-To ensure proper access to AWS Systems Manager Automation, review the following user and service role requirements.
+To make sure you have proper access to AWS Systems Manager Automation, review the following user and service role requirements.
 
 ## Verifying user access for runbooks
 <a name="automation-setup-user-access"></a>
@@ -17,7 +17,7 @@ To ensure proper access to AWS Systems Manager Automation, review the following 
 Verify that you have permission to use runbooks. If your user, group, or role is assigned administrator permissions, then you have access to Systems Manager Automation. If you don't have administrator permissions, then an administrator must give you permission by assigning the `AmazonSSMFullAccess` managed policy, or a policy that provides comparable permissions, to your user, group, or role.
 
 **Important**
-The IAM policy `AmazonSSMFullAccess` grants permissions to Systems Manager actions. However, some runbooks require permissions to other services, such as the runbook `AWS-ReleaseElasticIP`, which requires IAM permissions for `ec2:ReleaseAddress`. Therefore, you must review the actions taken in a runbook to ensure your user, group, or role is assigned the necessary permissions to perform the actions included in the runbook.
+The IAM policy `AmazonSSMFullAccess` grants permissions to Systems Manager actions. However, some runbooks require permissions to other services, such as the runbook `AWS-ReleaseElasticIP`, which requires IAM permissions for `ec2:ReleaseAddress`. Therefore, you must review the actions taken in a runbook to make sure your user, group, or role is assigned the necessary permissions to perform the actions included in the runbook.
 
 ## Configuring a service role (assume role) access for automations
 <a name="automation-setup-configure-role"></a>
@@ -31,13 +31,3 @@ However, the following situations require that you specify a service role for Au
 + When you're running a runbook not owned by Amazon that uses the `aws:executeScript` action to call an AWS API operation or to act on an AWS resource. For information, see [Permissions for using runbooks](automation-document-script-considerations.md#script-permissions).
 
 If you need to create a service role for Automation, you can use one of the following methods.
-
-**Topics**
-+ [Verifying user access for runbooks](#automation-setup-user-access)
-+ [Configuring a service role (assume role) access for automations](#automation-setup-configure-role)
-+ [Create service roles for Automation by using CloudFormation](automation-setup-cloudformation.md)
-+ [Create the service roles for Automation using the console](automation-setup-iam.md)
-+ [Setting up identity based policies examples](automation-setup-identity-based-policies.md)
-+ [Allowing Automation to adapt to your concurrency needs](adaptive-concurrency.md)
-+ [Configuring automatic retry for throttled operations](automation-throttling-retry.md)
-+ [Implement change controls for Automation](automation-change-calendar-integration.md)

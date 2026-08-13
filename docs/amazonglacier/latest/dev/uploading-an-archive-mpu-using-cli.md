@@ -68,9 +68,9 @@ Before starting this procedure, make sure that you've performed all of the prere
 
 The following procedure uses the `initiate-multipart-upload`, `upload-multipart-part`, and `complete-multipart-upload` AWS CLI commands.
 
-For more detailed information about each of these commands, see [https://docs.aws.amazon.com/cli/latest/reference/glacier/initiate-multipart-upload.html](https://docs.aws.amazon.com/cli/latest/reference/glacier/initiate-multipart-upload.html), [https://docs.aws.amazon.com/cli/latest/reference/glacier/upload-multipart-part.html](https://docs.aws.amazon.com/cli/latest/reference/glacier/upload-multipart-part.html), and [https://docs.aws.amazon.com/cli/latest/reference/glacier/complete-multipart-upload.html](https://docs.aws.amazon.com/cli/latest/reference/glacier/complete-multipart-upload.html) in the *AWS CLI Command Reference*.
+For more detailed information about each of these commands, see [initiate-multipart-upload](https://docs.aws.amazon.com/cli/latest/reference/glacier/initiate-multipart-upload.html), [upload-multipart-part](https://docs.aws.amazon.com/cli/latest/reference/glacier/upload-multipart-part.html), and [complete-multipart-upload](https://docs.aws.amazon.com/cli/latest/reference/glacier/complete-multipart-upload.html) in the *AWS CLI Command Reference*.
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/glacier/initiate-multipart-upload.html](https://docs.aws.amazon.com/cli/latest/reference/glacier/initiate-multipart-upload.html) command to create a multipart upload resource. In your request, specify the part size in number of bytes. Each part that you upload, except the last part, will be this size. You don't need to know the overall archive size when initiating an upload. However, you will need the total size, in bytes, of each part when completing the upload on the final step.
+1. Use the [initiate-multipart-upload](https://docs.aws.amazon.com/cli/latest/reference/glacier/initiate-multipart-upload.html) command to create a multipart upload resource. In your request, specify the part size in number of bytes. Each part that you upload, except the last part, will be this size. You don't need to know the overall archive size when initiating an upload. However, you will need the total size, in bytes, of each part when completing the upload on the final step.
 
    In the following command, replace the values for the `--vault-name` and `--account-ID` parameters with your own information. This command specifies that you will upload an archive with a part size of 1 mebibyte (MiB) (1024 x 1024 bytes) per file. Replace this `--part-size` parameter value if needed.
 
@@ -121,7 +121,7 @@ The following command creates a 4.4 MiB file, named `file_to_upload`, on Windows
    chunkae
    ```
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/glacier/upload-multipart-part.html](https://docs.aws.amazon.com/cli/latest/reference/glacier/upload-multipart-part.html) command to upload a part of an archive. You can upload archive parts in any order. You can also upload them in parallel. You can upload up to 10,000 parts for a multipart upload.
+1. Use the [upload-multipart-part](https://docs.aws.amazon.com/cli/latest/reference/glacier/upload-multipart-part.html) command to upload a part of an archive. You can upload archive parts in any order. You can also upload them in parallel. You can upload up to 10,000 parts for a multipart upload.
 
    In the following command, replace the values for the `--vault-name`, `--account-ID`, and `--upload-id` parameters. The upload ID must match the ID given as output of the `initiate-multipart-upload` command. The `--range` parameter specifies that you will upload a part with a size of 1 MiB (1024 x 1024 bytes). This size must match what you specified in the `initiate-multipart-upload` command. Adjust this size value if needed. The `--body` parameter specifies the name of the part that you're uploading.
 
@@ -171,7 +171,7 @@ The final command's `--range` parameter value is smaller because the final part 
    $ 3d760edb291bfc9d90d35809243de092aea4c47b308290ad12d084f69988ae0c
    ```
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/glacier/complete-multipart-upload.html](https://docs.aws.amazon.com/cli/latest/reference/glacier/complete-multipart-upload.html) command to finish the archive upload. Replace the values for the `--vault-name`, `--account-ID`, `--upload-ID`, and `--checksum` parameters. The `--archive` parameter value specifies the total size, in bytes, of the archive. This value must be the sum of all the sizes of the individual parts that you uploaded. Replace this value if needed.
+1. Use the [complete-multipart-upload](https://docs.aws.amazon.com/cli/latest/reference/glacier/complete-multipart-upload.html) command to finish the archive upload. Replace the values for the `--vault-name`, `--account-ID`, `--upload-ID`, and `--checksum` parameters. The `--archive` parameter value specifies the total size, in bytes, of the archive. This value must be the sum of all the sizes of the individual parts that you uploaded. Replace this value if needed.
 
    ```
    aws glacier complete-multipart-upload --archive-size {{4608000}} --vault-name {{awsexamplevault}} --account-id {{123456789012}} --upload-id {{upload_ID}} --checksum {{checksum}}

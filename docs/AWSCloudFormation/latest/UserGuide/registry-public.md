@@ -143,9 +143,9 @@ While extension aliases are only required to be unique in a given account and Re
 <a name="registry-commonly-used-commands-public-extensions"></a>
 
 The commonly used commands for working with public extensions include:
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/activate-type.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/activate-type.html) to activate a public third-party module or resource type in your account.
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html) to specify the configuration data for an extension in your account and to disable and enable Hooks.
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-types.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-types.html) to list the extensions in your account.
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-type.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-type.html) to return detailed information about a specific extension or specific extension version, including current configuration data.
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-default-version.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-default-version.html) to specify which version of an extension is the default version.
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deactivate-type.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deactivate-type.html) to deactivate a public third-party module or resource type that was previously activated in your account.
++ [activate-type](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/activate-type.html) to activate a public third-party module or resource type in your account.
++ [set-type-configuration](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html) to specify the configuration data for an extension in your account and to disable and enable Hooks.
++ [list-types](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-types.html) to list the extensions in your account.
++ [describe-type](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-type.html) to return detailed information about a specific extension or specific extension version, including current configuration data.
++ [set-type-default-version](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-default-version.html) to specify which version of an extension is the default version.
++ [deactivate-type](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deactivate-type.html) to deactivate a public third-party module or resource type that was previously activated in your account.

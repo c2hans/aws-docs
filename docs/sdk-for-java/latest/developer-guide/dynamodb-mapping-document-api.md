@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/dyna
 
 The Document API supports working with JSON-style documents as single items in a DynamoDB table. The V1 Document API has a corresponding API in V2, but instead of using a separate client for the document API as in V1, V2 incorporates document API features in the DynamoDB enhanced client.
 
-In V1, the [https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/dynamodbv2/document/Item.html](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/dynamodbv2/document/Item.html) class represents an unstructured record from a DynamoDB table. In V2, an unstructured record is represented by an instance of the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/document/EnhancedDocument.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/document/EnhancedDocument.html) class. Note that primary keys are defined in the table schema for V2, and on the item itself in V1.
+In V1, the [`Item`](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/dynamodbv2/document/Item.html) class represents an unstructured record from a DynamoDB table. In V2, an unstructured record is represented by an instance of the [`EnhancedDocument`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/document/EnhancedDocument.html) class. Note that primary keys are defined in the table schema for V2, and on the item itself in V1.
 
 The table below compares the differences between the Document APIs in V1 and V2.
 

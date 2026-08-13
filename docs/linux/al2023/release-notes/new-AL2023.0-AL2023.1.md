@@ -17,13 +17,13 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/new-AL2023.0-
 
 New packages in AL2023.1:
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html)  / **Architectures:** noarch
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html)  / **Architectures:** noarch
+- ** [`amazon-linux-onprem`](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html) **
+  - **RPM:**  [`amazon-linux-onprem`](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html)  / **Architectures:** noarch
+  - **RPM:**  [`amazon-onprem-network`](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html)  / **Architectures:** noarch
   - **Version:** 1.0-0.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html](https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html](https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html)
+- ** [`amazon-linux-sb-keys`](https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html) **
+  - **RPM:**  [`amazon-linux-sb-keys`](https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html)
   - **Architectures:** noarch
   - **Version:** 2023.1-1.amzn2023.0.3
 
@@ -180,13 +180,13 @@ New packages in AL2023.1:
   - **Architectures:** aarch64, x86\_64
   - **Version:** 2.100-1.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
+- ** [`php8.1`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
   - **RPM:**  php8.1-pspell  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.1-snmp  / **Architectures:** aarch64, x86\_64
   - **Version:** 8.1.16-1.amzn2023.0.2
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
+- ** [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
+  - **RPM:**  [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.2-bcmath  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.2-cli  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.2-common  / **Architectures:** aarch64, x86\_64

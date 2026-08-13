@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-foundation-m
 
 You can use a high-level `ModelRunner` wrapper to create a custom evaluation based on a model that is hosted outside of JumpStart.
 
-This tutorial shows how to load the [Anthropic Claude 2 model](https://www.anthropic.com/index/claude-2), which is available in Amazon Bedrock, and ask this model to summarize text prompts. Then, this tutorial shows how to evaluate the model response for accuracy using the [https://huggingface.co/spaces/evaluate-metric/rouge](https://huggingface.co/spaces/evaluate-metric/rouge), [https://huggingface.co/spaces/evaluate-metric/meteor](https://huggingface.co/spaces/evaluate-metric/meteor), and [https://huggingface.co/spaces/evaluate-metric/bertscore](https://huggingface.co/spaces/evaluate-metric/bertscore) metrics.
+This tutorial shows how to load the [Anthropic Claude 2 model](https://www.anthropic.com/index/claude-2), which is available in Amazon Bedrock, and ask this model to summarize text prompts. Then, this tutorial shows how to evaluate the model response for accuracy using the [Rouge-L](https://huggingface.co/spaces/evaluate-metric/rouge), [Meteor](https://huggingface.co/spaces/evaluate-metric/meteor), and [BERTScore](https://huggingface.co/spaces/evaluate-metric/bertscore) metrics.
 
 The tutorials show how to do the following:
 + Set up your environment.
@@ -262,7 +262,7 @@ Before you can use an Amazon Bedrock model, you have to request access to it.
    ]
    ```
 
-   The previous example output displays the three accuracy scores: [https://huggingface.co/spaces/evaluate-metric/meteor](https://huggingface.co/spaces/evaluate-metric/meteor), [https://huggingface.co/spaces/evaluate-metric/rouge](https://huggingface.co/spaces/evaluate-metric/rouge), and [https://huggingface.co/spaces/evaluate-metric/bertscore](https://huggingface.co/spaces/evaluate-metric/bertscore), the input `prompt_template`, a `category_score` if you requested one, any errors, and the `output_path`. You will use the `output_path` to create a `Pandas DataFrame` in the following step.
+   The previous example output displays the three accuracy scores: [Meteor](https://huggingface.co/spaces/evaluate-metric/meteor), [Rouge](https://huggingface.co/spaces/evaluate-metric/rouge), and [BERTScore](https://huggingface.co/spaces/evaluate-metric/bertscore), the input `prompt_template`, a `category_score` if you requested one, any errors, and the `output_path`. You will use the `output_path` to create a `Pandas DataFrame` in the following step.
 
 1. Import your results and read them into a `DataFrame`, and attach the accuracy scores to the model input, model output, and target output as follows:
 

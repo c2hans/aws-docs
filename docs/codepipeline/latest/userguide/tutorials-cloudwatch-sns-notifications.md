@@ -20,7 +20,7 @@ As you create the resources for this tutorial, such as the Amazon SNS notificati
 ## Step 1: Set up an email notification using Amazon SNS
 <a name="create-filter-for-target"></a>
 
-Amazon SNS coordinates use of topics to deliver messages to subscribing endpoints or clients. Use Amazon SNS to create a notification topic and then subscribe to the topic using your email address. The Amazon SNS topic will be added as a target to your CloudWatch Events rule. For more information, see the [Amazon Simple Notification Service Developer Guide](https://docs.aws.amazon.com/sns/latest/dg/) .
+Amazon SNS coordinates use of topics to deliver messages to subscribing endpoints or clients. Use Amazon SNS to create a notification topic and then subscribe to the topic using your email address. The Amazon SNS topic will be added as a target to your CloudWatch Events rule. For more information, see the [Amazon Simple Notification Service Developer Guide](https://docs.aws.amazon.com/sns/latest/dg/).
 
 Create or identify a topic in Amazon SNS. CodePipeline will use CloudWatch Events to send notifications to this topic through Amazon SNS. To create a topic:
 

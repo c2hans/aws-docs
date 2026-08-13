@@ -63,7 +63,7 @@ In addition to direct access of the data stored as a `KeyValue`, there are also 
 
 **Time**
 
-Time is from the Go [https://pkg.go.dev/time#Time](https://pkg.go.dev/time#Time) package. You can print a time in a number of different formats. For example, to print the time that an alert fired in the format `Monday, 1st January 2022 at 10:00AM`, you write the following template:
+Time is from the Go [`time`](https://pkg.go.dev/time#Time) package. You can print a time in a number of different formats. For example, to print the time that an alert fired in the format `Monday, 1st January 2022 at 10:00AM`, you write the following template:
 
 ```
 {{ .StartsAt.Format "Monday, 2 January 2006 at 3:04PM" }}

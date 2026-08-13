@@ -19,7 +19,7 @@ You can customize the dashboards (for example, re-size and re-arrange the visual
 + [Specify time range and "Compare to" benchmark](#required-dashboard-filters)
 + [Save, download, and share your dashboard](#dashboard-actions)
 + [Customize your dashboard](dashboard-customize-widgets.md)
-+ [Contact Lens conversational analytics dashboard](contact-lens-conversational-analytics-dashboard.md)
++ [Conversational analytics dashboard](contact-lens-conversational-analytics-dashboard.md)
 + [Agent performance evaluations dashboard](agent-performance-evaluation-dashboard.md)
 + [AI Agent performance dashboard](ai-agent-performance-dashboard.md)
 + [Cases performance dashboard](cases-performance-dashboard.md)
@@ -70,7 +70,7 @@ All dashboards have the following required filters:
 
     Both **Week to Date** and **Month to Date** support custom time range comparisons, to compare with a custom week or month respectively.
 
-Each dashboard has additional filters specific to that feature. For example, the following image of the **Conversational analytics dashboard** shows the available filters for that widget. **Contact category** is specific to Contact Lens.
+Each dashboard has additional filters specific to that feature. For example, the following image of the **Conversational analytics dashboard** shows the available filters for that widget. **Contact category** is specific to conversational analytics.
 
 ![Required dashboard filters.](http://docs.aws.amazon.com/connect/latest/adminguide/images/conversational-analytics-dashboards-performance-overview-filters.png)
 

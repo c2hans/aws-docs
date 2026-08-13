@@ -34,7 +34,7 @@ For step-by-step instructions on creating a policy, see [Create your Automated R
 ## Fidelity report
 <a name="ar-concept-fidelity-report"></a>
 
-A *fidelity report* measures how accurately an extracted policy represents the source documents it was generated from. The report is automatically generated when you create a policy from a source document, and provides two key scores along with detailed grounding information that links every rule and variable back to specific statements in your source content.
+A *fidelity report* measures how accurately an extracted policy represents the source documents it was generated from. The report is automatically generated when you create a policy from a source document. It provides two key scores along with detailed grounding information that links every rule and variable back to specific statements in your source content.
 
 The fidelity report is designed to help non-technical subject matter experts explore and validate a policy without needing to understand formal logic. In the console, the **Source Document** tab displays the fidelity report as a table of numbered atomic statements extracted from your document, showing which rules and variables each statement grounds. You can filter by specific rules or variables and search for content within the statements.
 

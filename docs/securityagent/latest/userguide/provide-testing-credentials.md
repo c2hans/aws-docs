@@ -25,7 +25,7 @@ If you select **Advanced setting**, you can choose from three credential strateg
 +  **Lambda function** - For dynamic credential generation or complex authentication flows
 
 ## Input credentials directly
-<a name="_input_credentials_directly"></a>
+<a name="provide-testing-credentials-input"></a>
 
 1. Select **Input credentials**.
 
@@ -91,7 +91,7 @@ As another example, if you instead have an API key to be provided in an HTTP hea
 Then, configure the authentication instructions: . Enter the following into **Agent Space login prompt**: "Set the X-API-Key header to the provided API key for all requests."
 
 **Important**
-Only TOTP-based 2FA is supported. SMS, email, push notifications, hardware keys, and OAuth authentication are not supported.
+AWS Security Agent supports TOTP-based 2FA and email-based MFA. It does not support SMS, push notifications, hardware keys, or OAuth authentication. For applications that send a one-time code or verification link by email, see [Configure email MFA](#provide-testing-credentials-email-mfa).
 
 ### Select available Lambda function to retrieve credentials dynamically
 <a name="_select_available_lambda_function_to_retrieve_credentials_dynamically"></a>
@@ -112,6 +112,82 @@ When the penetration test runs, AWS Security Agent invokes your AWS Lambda funct
 +  `actor_identifier` – The **Credential name** you assigned to this credential in the console (for example, `Credential1`). Use it to return the correct credential when a single function serves multiple credentials.
 
 The agent uses the function’s output directly as the credential. Use the **Agent Space login prompt** to tell the agent how to apply those credentials to your application, the same way you would with AWS Secrets Manager. Refer to [Select static credential from connected AWS Secrets Manager](#provide-testing-credentials-secrets-manager) for examples of how to format the output of your Lambda function and supported authentication types.
+
+## Configure email MFA
+<a name="provide-testing-credentials-email-mfa"></a>
+
+Use email MFA when your application sends a one-time code or verification link by email as part of its authentication flow. If your application uses an authenticator app instead, provide a TOTP secret as described in [Input credentials directly](#provide-testing-credentials-input).
+
+When you enable email MFA, AWS Security Agent generates a unique forwarding address for each credential. You then create a rule in your email provider that forwards only your application’s MFA messages to that address. During login, AWS Security Agent reads the forwarded message and submits the code or link to complete authentication.
+
+**Note**
+Email MFA is available for both the input credentials and advanced setting credential methods, and in both the console and the AWS CLI or API.
+
+### Enable email MFA in the console
+<a name="_enable_email_mfa_in_the_console"></a>
+
+1. In the credential section, select your credential input method and enter your credentials as described earlier in this topic.
+
+1. Expand **2FA - optional**, then choose **Email MFA**.
+
+1. Create the penetration test. AWS Security Agent then displays the **Email MFA forwarding address** for the credential. You cannot choose this address yourself.
+
+1. Copy the forwarding address, then configure forwarding in your email provider. For more information, see [Set up email forwarding](#provide-testing-credentials-email-forwarding).
+
+**Note**
+If you dismiss this display before you copy the address, you can retrieve it later from the **Configurations** page of the penetration test, which shows the **Email MFA forwarding address** for each credential.
+
+### Enable email MFA with the AWS CLI or API
+<a name="_enable_email_mfa_with_the_aws_cli_or_api"></a>
+
+Set `enableEmailMfa` to `true` for the actor in the `assets` parameter of your `create-pentest` or `update-pentest` request. For example:
+
+```
+aws securityagent create-pentest \
+  --title "My penetration test" \
+  --agent-space-id "your-agent-space-id" \
+  --assets '{"actors": [{"identifier": "test-user", "enableEmailMfa": true}]}'
+```
+
+AWS Security Agent returns an `mfaForwardingAddress` for each actor in the `assets` field of the response.
+
+### Set up email forwarding
+<a name="provide-testing-credentials-email-forwarding"></a>
+
+Create a separate forwarding rule for each credential that uses email MFA. The general steps are the same for every provider:
+
+1. Sign in to the email account that receives your application’s MFA messages.
+
+1. Create a rule that matches only your application’s MFA messages. For example, match on the sender address or on a subject line that identifies the message.
+
+1. Set the rule to forward matching messages to the MFA forwarding address that you copied.
+
+1. Send a test MFA message from your application, then confirm that the rule forwards it.
+
+**Important**
+Your email provider must forward to an address without verifying it first. Some providers send a verification message to the destination address and require you to open a link in that message before forwarding begins. AWS Security Agent manages the MFA forwarding address, and you cannot read the messages sent to it, so you cannot complete verification.
+
+The following providers support automatic forwarding to the MFA forwarding address:
++  **Microsoft 365 and Outlook** - Create an inbox rule that forwards or redirects matching messages. For more information, see [Use rules to automatically forward messages](https://support.microsoft.com/en-us/office/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746) in the Microsoft documentation.
++  **iCloud Mail** - In Mail on iCloud.com, create a rule that forwards matching messages. Each rule forwards to one address. For more information, see [Automatically forward email in Mail on iCloud.com](https://support.apple.com/guide/icloud/automatically-forward-email-mm6b1a3960/icloud) in the iCloud User Guide.
++  **Custom domains and self-hosted mail servers** - Add a server-side alias, sieve rule, or filter that forwards only the matching messages. For more information, consult your mail server’s documentation.
+
+The following providers do not support automatic forwarding to the MFA forwarding address, because they verify the destination address before forwarding begins:
++  **Gmail and Google Workspace** - Before a Gmail filter can forward to an address, you must add the address under **Settings > Forwarding and POP/IMAP**. Gmail sends a verification message to that address and requires you to open a link in it, which you cannot do. For more information, see [Automatically forward Gmail messages to another account](https://support.google.com/mail/answer/10957) in the Google documentation.
++  **Yahoo Mail** - Forwarding requires a Yahoo Mail Plus subscription, and Yahoo verifies the destination address before forwarding begins. For more information, see [Enable automatic email forwarding in Yahoo Mail](https://help.yahoo.com/kb/SLN3525.html) in the Yahoo documentation.
+
+Any other provider that forwards to an unverified external address also works. Consult your provider’s documentation for the equivalent steps.
+
+**Note**
+Even when your provider does not support automatic forwarding, you can forward MFA messages manually. You do not need to verify the destination address when you forward a single message. Because MFA codes expire quickly, forward each message to the MFA forwarding address as soon as it arrives during login.
+
+**Important**
+Forward only your application’s MFA messages. Do not forward your entire inbox. A narrow rule keeps unrelated email out of the penetration test and limits what your rule sends to AWS Security Agent.
+
+### Data retention
+<a name="_data_retention"></a>
+
+AWS Security Agent stores the messages that it receives at the forwarding address only to complete the penetration test login. AWS Security Agent automatically deletes these messages 24 hours after receiving them.
 
 ## Configure multiple credentials
 <a name="_configure_multiple_credentials"></a>

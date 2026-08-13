@@ -50,7 +50,7 @@ When sending or receiving data between services, the maximum input or result for
 <a name="connect-eventbridge-apis"></a>
 
 Supported EventBridge API and syntax include:
-+ [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html)
++ [`PutEvents`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html)
 
 ## Error handling
 <a name="connect-eventbridge-error"></a>

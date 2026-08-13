@@ -58,7 +58,7 @@ The following services integrate their usage metrics with Service Quotas:
 
       The alarm creation page appears.
 
-   1. Under **Conditions**, ensure that **Threshold type** is **Static** and **Whenever Expression1 is** is set to **Greater**. Under **than**, enter **80**. This creates an alarm that goes into ALARM state when your usage exceeds 80 percent of the quota.
+   1. Under **Conditions**, make sure that **Threshold type** is **Static** and **Whenever Expression1 is** is set to **Greater**. Under **than**, enter **80**. This creates an alarm that goes into ALARM state when your usage exceeds 80 percent of the quota.
 
    1. Choose **Next**.
 

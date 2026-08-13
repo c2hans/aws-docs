@@ -76,7 +76,7 @@ Database Insights provides the following information for each lock request. To v
 | `user` | The name of the user logged into this backend. | No | `pg_stat_activity.usename` |
 | `host` | The host name of the connected client, as reported by a reverse DNS lookup of `client_addr`. This field will only be non-null for IP connections, and only when [log\_hostname](https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-HOSTNAME) is enabled. | No | `pg_stat_activity.client_hostname` |
 | `port` | The TCP port number that the client is using for communication with this backend, or `-1` if a Unix socket is used. If this field is null, it indicates that this is an internal server process. | No | `pg_stat_activity.client_port` |
-| `client_address` | The IP address of the client connected to this backend. If this field is null, it indicates either that the client is connected via a Unix socket on the server machine or that this is an internal process such as autovacuum. | No | `pg_stat_activity.client_addr` |
+| `client_address` | The IP address of the client connected to this backend. If this field is null, it indicates either that the client is connected through a Unix socket on the server machine or that this is an internal process such as autovacuum. | No | `pg_stat_activity.client_addr` |
 | `granted` | The value is true if lock is held and false if lock is awaited. | No | `pg_locks.granted` |
 | `waiting_tuple` | The tuple number targeted by the lock within the page, or null if the target is not a tuple. | No | `pg_locks.tuple` |
 | `waiting_page` | The page number targeted by the lock within the relation, or null if the target is not a relation page or tuple. | No | `pg_locks.page` |

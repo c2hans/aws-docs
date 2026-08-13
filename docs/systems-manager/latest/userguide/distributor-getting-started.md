@@ -7,12 +7,12 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/distrib
 # Setting up Distributor
 <a name="distributor-getting-started"></a>
 
-Before you use Distributor, a tool in AWS Systems Manager, to create, manage, and deploy software packages, follow these steps.
+Before you use Distributor to create, manage, and deploy software packages, follow these steps.
 
 ## Complete Distributor prerequisites
 <a name="distributor-prerequisites"></a>
 
-Before you use Distributor, a tool in AWS Systems Manager, be sure your environment meets the following requirements.
+Before you use Distributor, be sure your environment meets the following requirements.
 
 **Distributor prerequisites**
 
@@ -33,12 +33,12 @@ By default, AWS Systems Manager doesn't have permission to perform actions on yo
 **Note**
 When you configure your edge devices to run AWS IoT Greengrass Core software and SSM Agent, you specify an IAM service role that enables Systems Manager to peform actions on it. You don't need to configure managed edge devices with an instance profile.
 
-If you already use other Systems Manager tools, such as Run Command and State Manager, an instance profile with the required permissions for Distributor is already attached to your instances. The simplest way to ensure that you have permissions to perform Distributor tasks is to attach the **AmazonSSMManagedInstanceCore** policy to your instance profile. For more information, see [Configure instance permissions required for Systems Manager](setup-instance-permissions.md).
+If you already use other Systems Manager tools, such as Run Command and State Manager, an instance profile with the required permissions for Distributor is already attached to your instances. The simplest way to make sure that you have permissions to perform Distributor tasks is to attach the **AmazonSSMManagedInstanceCore** policy to your instance profile. For more information, see [Configure instance permissions required for Systems Manager](setup-instance-permissions.md).
 
 ## Control user access to packages
 <a name="distributor-getting-started-restrict-access"></a>
 
-Using AWS Identity and Access Management (IAM) policies, you can control who can create, deploy, and manage packages. You also control which Run Command and State Manager API operations they can perform on managed nodes. Like Distributor, both Run Command and State Manager, are tools in AWS Systems Manager.
+Using AWS Identity and Access Management (IAM) policies, you can control who can create, deploy, and manage packages. You also control which Run Command and State Manager API operations they can perform on managed nodes. Like Distributor, both Run Command and State Manager are tools in AWS Systems Manager.
 
 **ARN Format**
 User-defined packages are associated with document Amazon Resource Names (ARNs) and have the following format.
@@ -64,4 +64,4 @@ For information about how to create policies and attach them to users or groups,
 
 When you create a package by using the **Simple** workflow in the AWS Systems Manager console, you choose an existing Amazon Simple Storage Service (Amazon S3) bucket to which Distributor uploads your software. Distributor is a tool in AWS Systems Manager. In the **Advanced** workflow, you must upload .zip files of your software or assets to an Amazon S3 bucket before you begin. Whether you create a package by using the **Simple** or **Advanced** workflows in the console, or by using the API, you must have an Amazon S3 bucket before you start creating your package. As part of the package creation process, Distributor copies your installable software and assets from this bucket to an internal Systems Manager store. Because the assets are copied to an internal store, you can delete or repurpose your Amazon S3 bucket when package creation is finished.
 
-For more information about how to create a bucket, see [Create a Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/CreatingABucket.html) in the *Amazon Simple Storage Service Getting Started Guide*. For more information about how to run an AWS CLI command to create a bucket, see [https://docs.aws.amazon.com/cli/latest/reference/s3/mb.html](https://docs.aws.amazon.com/cli/latest/reference/s3/mb.html) in the *AWS CLI Command Reference*.
+For more information about how to create a bucket, see [Create a Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/CreatingABucket.html) in the *Amazon Simple Storage Service Getting Started Guide*. For more information about how to run an AWS CLI command to create a bucket, see [**mb**](https://docs.aws.amazon.com/cli/latest/reference/s3/mb.html) in the *AWS CLI Command Reference*.

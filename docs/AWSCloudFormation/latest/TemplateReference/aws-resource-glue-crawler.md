@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Schedule](#cfn-glue-crawler-schedule)" : {{Schedule}},
       "[SchemaChangePolicy](#cfn-glue-crawler-schemachangepolicy)" : {{SchemaChangePolicy}},
       "[TablePrefix](#cfn-glue-crawler-tableprefix)" : {{String}},
-      "[Tags](#cfn-glue-crawler-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
+      "[Tags](#cfn-glue-crawler-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
       "[Targets](#cfn-glue-crawler-targets)" : {{Targets}}
     }
 }
@@ -63,7 +63,7 @@ Properties:
     SchemaChangePolicy}}
   [TablePrefix](#cfn-glue-crawler-tableprefix): {{String}}
   [Tags](#cfn-glue-crawler-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
   [Targets](#cfn-glue-crawler-targets): {{
     Targets}}
 ```
@@ -157,7 +157,7 @@ The prefix added to the names of tables that are created.
 `Tags`  <a name="cfn-glue-crawler-tags"></a>
 The tags to use with this crawler.
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Targets`  <a name="cfn-glue-crawler-targets"></a>
@@ -174,7 +174,7 @@ A collection of targets to crawl.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the crawler name.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-glue-crawler--examples"></a>

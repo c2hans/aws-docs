@@ -67,6 +67,6 @@ Ensure that you have the `cases:CreateRelatedItem ` permission for your IAM enti
 
 1. Optionally, set up [case event streams](case-event-streams.md) to get near real-time updates when cases are created or modified.
 
-1. Optionally, set up a [Connect AI agents domain](ai-agent-initial-setup.md) and [Configure your flow](ai-agent-initial-setup.md#enable-ai-agents-step4) to generate AI-powered Case Summaries in the agent workspace
+1. Optionally, set up a [AI agents domain](ai-agent-initial-setup.md) and [Configure your flow](ai-agent-initial-setup.md#enable-ai-agents-step4) to generate AI-powered Case Summaries in the agent workspace
 
 1. Optionally, [set up tag-based access controls for cases](cases-tag-based-access-control.md).

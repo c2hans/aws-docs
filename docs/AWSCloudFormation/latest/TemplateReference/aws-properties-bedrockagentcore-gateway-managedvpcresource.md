@@ -70,7 +70,6 @@ The security group IDs to associate with the VPC Lattice resource gateway. If no
 The subnet IDs within the VPC where the VPC Lattice resource gateway is placed.
 *Required*: Yes
 *Type*: Array of String
-*Minimum*: `1`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `VpcIdentifier`  <a name="cfn-bedrockagentcore-gateway-managedvpcresource-vpcidentifier"></a>

@@ -36,9 +36,9 @@ Agents use the Contact Control Panel (CCP) to communicate with contacts. But bef
 
 Want your agents to handle contacts and access customer profiles, cases, and knowledge all in one place? Use the [agent workspace](agent-user-guide.md)\!
 
-The *agent workspace* is a single web browser interface that hosts the CCP, [Customer Profiles](ag-cp-select.md), [Cases](search-cases.md), and [Connect AI agents](search-for-answers.md).
+The *agent workspace* is a single web browser interface that hosts the CCP, [Customer Profiles](ag-cp-select.md), [Cases](search-cases.md), and [agent assist](search-for-answers.md).
 
-If you're using the CCP that is provided with Connect Customer, after you enable Customer Profiles, Cases, or Connect AI agents, share the following URL with your agents so they can access it in the agent workspace:
+If you're using the CCP that is provided with Connect Customer, after you enable Customer Profiles, Cases, or agent assist, share the following URL with your agents so they can access it in the agent workspace:
 + **https://{{instance name}}.my.connect.aws/agent-app-v2/**
 
 For help finding your instance name, see [Find your Connect Customer instance name](find-instance-name.md).

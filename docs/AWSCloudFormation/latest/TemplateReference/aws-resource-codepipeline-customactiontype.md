@@ -122,7 +122,7 @@ The version identifier of the custom action.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the custom action name, such as custo-MyCus-A1BCDEFGHIJ2.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-codepipeline-customactiontype--examples"></a>

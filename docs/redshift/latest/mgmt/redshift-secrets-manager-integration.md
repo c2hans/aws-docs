@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-secrets-ma
 # Managing Amazon Redshift admin passwords using AWS Secrets Manager
 <a name="redshift-secrets-manager-integration"></a>
 
- Amazon Redshift can integrate with AWS Secrets Manager to generate and manage your admin credentials inside an encrypted secret. With AWS Secrets Manager, you can replace your admin passwords with an API call to programmatically retrieve the secret when it’s needed. Using secrets instead of hard-coded credentials reduces the risk of those credentials being exposed or compromised. For more information about AWS Secrets Manager, see the [https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html).
+ Amazon Redshift can integrate with AWS Secrets Manager to generate and manage your admin credentials inside an encrypted secret. With AWS Secrets Manager, you can replace your admin passwords with an API call to programmatically retrieve the secret when it’s needed. Using secrets instead of hard-coded credentials reduces the risk of those credentials being exposed or compromised. For more information about AWS Secrets Manager, see the [*AWS Secrets Manager User Guide*](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html).
 
 You can specify that Amazon Redshift manages your admin password using AWS Secrets Manager when you perform one of the following operations:
 + Create a provisioned cluster or serverless namespace

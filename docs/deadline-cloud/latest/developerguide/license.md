@@ -25,7 +25,7 @@ The following table summarizes the options. The sections after the table describ
 
 UBL licenses cover processing jobs on workers. They don't license the interactive DCC applications on your workstations. For the list of supported products and the per-hour rate for each, see [AWS Deadline Cloud pricing](https://aws.amazon.com/deadline-cloud/pricing/).
 
-On service-managed fleets, UBL is available with no setup: supported products are licensed automatically when they run on a worker. On customer-managed fleets, you create a *license endpoint* in your VPC to route license requests to Deadline Cloud, and a subset of the UBL products is available. For the product list and setup steps, see [Connect customer-managed fleets to a license endpoint](cmf-ubl.md).
+On service-managed fleets, UBL is available with no setup: supported products are licensed automatically when they run on a worker. Deadline Cloud sets the license environment variables on each worker when the instance launches, before the worker agent starts and before any host configuration script runs. On customer-managed fleets, you create a *license endpoint* in your VPC to route license requests to Deadline Cloud, and a subset of the UBL products is available. For the product list and setup steps, see [Connect customer-managed fleets to a license endpoint](cmf-ubl.md).
 
 ## Bring your own license
 <a name="license-overview-byol"></a>

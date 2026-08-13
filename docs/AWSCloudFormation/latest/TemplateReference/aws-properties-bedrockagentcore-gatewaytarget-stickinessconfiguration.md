@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Identifier](#cfn-bedrockagentcore-gatewaytarget-stickinessconfiguration-identifier)" : {{String}},
-  "[Timeout](#cfn-bedrockagentcore-gatewaytarget-stickinessconfiguration-timeout)" : {{Integer}}
+  "[Timeout](#cfn-bedrockagentcore-gatewaytarget-stickinessconfiguration-timeout)" : {{Number}}
 }
 ```
 
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [Identifier](#cfn-bedrockagentcore-gatewaytarget-stickinessconfiguration-identifier): {{String}}
-  [Timeout](#cfn-bedrockagentcore-gatewaytarget-stickinessconfiguration-timeout): {{Integer}}
+  [Timeout](#cfn-bedrockagentcore-gatewaytarget-stickinessconfiguration-timeout): {{Number}}
 ```
 
 ## Properties
@@ -46,7 +46,7 @@ The expression that identifies where to extract the session identifier from the 
 `Timeout`  <a name="cfn-bedrockagentcore-gatewaytarget-stickinessconfiguration-timeout"></a>
 The session stickiness timeout, in seconds. After this duration of inactivity, the session affinity expires. Valid values range from 1 to 86400.
 *Required*: No
-*Type*: Integer
+*Type*: Number
 *Minimum*: `1`
 *Maximum*: `86400`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

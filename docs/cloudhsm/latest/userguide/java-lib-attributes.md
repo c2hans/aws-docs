@@ -38,17 +38,17 @@ You can set values for the attributes listed in the table below. As a best pract
   <tr><th>Attribute</th><th colspan="3">Default Value</th><th>Notes</th></tr>
 </thead>
 <tbody>
-  <tr><td></td><td>Symmetric Key</td><td>Public Key in Key Pair</td><td>Private Key in Key Pair</td><td></td></tr>
-  <tr><td>CKA\_TOKEN</td><td>FALSE</td><td>FALSE</td><td>FALSE</td><td>A permanent key which is replicated across all HSMs in the cluster and included in backups. CKA\_TOKEN = FALSE implies a session key, which is only loaded onto one HSM and automatically erased when the connection to the HSM is broken.</td></tr>
-  <tr><td>CKA\_LABEL</td><td> </td><td></td><td></td><td>A user-defined string. It allows you to conveniently identify keys on your HSM. </td></tr>
-  <tr><td>CKA\_EXTRACTABLE</td><td>TRUE</td><td></td><td>TRUE</td><td>True indicates you can export this key out of the HSM.</td></tr>
-  <tr><td>CKA\_ENCRYPT</td><td>TRUE</td><td>TRUE</td><td></td><td>True indicates you can use the key to encrypt any buffer.</td></tr>
-  <tr><td>CKA\_DECRYPT</td><td>TRUE</td><td></td><td>TRUE</td><td>True indicates you can use the key to decrypt any buffer. You generally set this to FALSE for a key whose CKA\_WRAP is set to true. </td></tr>
-  <tr><td>CKA\_WRAP</td><td>TRUE</td><td>TRUE</td><td></td><td>True indicates you can use the key to wrap another key. You will generally set this to FALSE for private keys.</td></tr>
-  <tr><td>CKA\_UNWRAP</td><td>TRUE</td><td></td><td>TRUE</td><td>True indicates you can use the key to unwrap (import) another key.</td></tr>
-  <tr><td>CKA\_SIGN</td><td>TRUE</td><td></td><td>TRUE</td><td>True indicates you can use the key to sign a message digest. This is generally set to FALSE for public keys and for private keys that you have archived.</td></tr>
-  <tr><td>CKA\_VERIFY</td><td>TRUE</td><td>TRUE</td><td></td><td>True indicates you can use the key to verify a signature. This is generally set to FALSE for private keys.</td></tr>
-  <tr><td>CKA\_PRIVATE</td><td>TRUE</td><td>TRUE</td><td>TRUE</td><td>True indicates that a user may not access the key until the user is authenticated. For clarity, users cannot access any keys on CloudHSM until they are authenticated, even if this attribute is set to FALSE.</td></tr>
+  <tr><td></td><td><b>Symmetric Key</b></td><td><b>Public Key in Key Pair</b></td><td><b>Private Key in Key Pair</b></td><td></td></tr>
+  <tr><td><code>CKA_TOKEN</code></td><td><code>FALSE</code></td><td><code>FALSE</code></td><td><code>FALSE</code></td><td>A permanent key which is replicated across all HSMs in the cluster and included in backups. CKA_TOKEN = FALSE implies a session key, which is only loaded onto one HSM and automatically erased when the connection to the HSM is broken.</td></tr>
+  <tr><td><code>CKA_LABEL</code></td><td> </td><td></td><td></td><td>A user-defined string. It allows you to conveniently identify keys on your HSM. </td></tr>
+  <tr><td><code>CKA_EXTRACTABLE</code></td><td><code>TRUE</code></td><td></td><td><code>TRUE</code></td><td>True indicates you can export this key out of the HSM.</td></tr>
+  <tr><td><code>CKA_ENCRYPT</code></td><td><code>TRUE</code></td><td><code>TRUE</code></td><td></td><td>True indicates you can use the key to encrypt any buffer.</td></tr>
+  <tr><td><code>CKA_DECRYPT</code></td><td><code>TRUE</code></td><td></td><td><code>TRUE</code></td><td>True indicates you can use the key to decrypt any buffer. You generally set this to FALSE for a key whose CKA_WRAP is set to true. </td></tr>
+  <tr><td><code>CKA_WRAP</code></td><td><code>TRUE</code></td><td><code>TRUE</code></td><td></td><td>True indicates you can use the key to wrap another key. You will generally set this to FALSE for private keys.</td></tr>
+  <tr><td><code>CKA_UNWRAP</code></td><td><code>TRUE</code></td><td></td><td><code>TRUE</code></td><td>True indicates you can use the key to unwrap (import) another key.</td></tr>
+  <tr><td><code>CKA_SIGN</code></td><td><code>TRUE</code></td><td></td><td><code>TRUE</code></td><td>True indicates you can use the key to sign a message digest. This is generally set to FALSE for public keys and for private keys that you have archived.</td></tr>
+  <tr><td><code>CKA_VERIFY</code></td><td><code>TRUE</code></td><td><code>TRUE</code></td><td></td><td>True indicates you can use the key to verify a signature. This is generally set to FALSE for private keys.</td></tr>
+  <tr><td><code>CKA_PRIVATE</code></td><td><code>TRUE</code></td><td><code>TRUE</code></td><td><code>TRUE</code></td><td>True indicates that a user may not access the key until the user is authenticated. For clarity, users cannot access any keys on CloudHSM until they are authenticated, even if this attribute is set to FALSE.</td></tr>
 </tbody>
 </table>
 

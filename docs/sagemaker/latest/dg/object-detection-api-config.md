@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/object-detection-api
 # Object Detection Hyperparameters
 <a name="object-detection-api-config"></a>
 
-In the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) request, you specify the training algorithm that you want to use. You can also specify algorithm-specific hyperparameters that are used to help estimate the parameters of the model from a training dataset. The following table lists the hyperparameters provided by Amazon SageMaker AI for training the object detection algorithm. For more information about how object training works, see [How Object Detection Works](algo-object-detection-tech-notes.md).
+In the [`CreateTrainingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) request, you specify the training algorithm that you want to use. You can also specify algorithm-specific hyperparameters that are used to help estimate the parameters of the model from a training dataset. The following table lists the hyperparameters provided by Amazon SageMaker AI for training the object detection algorithm. For more information about how object training works, see [How Object Detection Works](algo-object-detection-tech-notes.md).
 
 | Parameter Name | Description |
 | --- | --- |

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 # Create service roles for Automation by using CloudFormation
 <a name="automation-setup-cloudformation"></a>
 
-You can create a service role for Automation, a tool in AWS Systems Manager, from an AWS CloudFormation template. After you create the service role, you can specify the service role in runbooks using the parameter `AutomationAssumeRole`.
+You can create a service role for Automation from an AWS CloudFormation template. After you create the service role, you can specify the service role in runbooks using the parameter `AutomationAssumeRole`.
 
 ## Create the service role using CloudFormation
 <a name="create-iam-service-role"></a>
@@ -16,7 +16,7 @@ Use the following procedure to create the required AWS Identity and Access Manag
 
 **To create the required IAM role**
 
-1. Download and unzip the [https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWS-SystemsManager-AutomationServiceRole.zip](https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWS-SystemsManager-AutomationServiceRole.zip) file. This file includes the `AWS-SystemsManager-AutomationServiceRole.yaml` CloudFormation template file.
+1. Download and unzip the [`AWS-SystemsManager-AutomationServiceRole.zip`](https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWS-SystemsManager-AutomationServiceRole.zip) file. This file includes the `AWS-SystemsManager-AutomationServiceRole.yaml` CloudFormation template file.
 
 1. Open the CloudFormation console at [https://console.aws.amazon.com/cloudformation](https://console.aws.amazon.com/cloudformation/).
 

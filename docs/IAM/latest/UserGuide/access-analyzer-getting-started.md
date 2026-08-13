@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-get
 
 Use the information in this topic to learn about the requirements necessary to use and manage AWS Identity and Access Management Access Analyzer.
 
+If you are using IAM Access Analyzer within an AWS Organizations organization, you can [Add a delegated administrator for IAM Access Analyzer](access-analyzer-delegated-administrator-add.md). For information about service limits, see [IAM Access Analyzer quotas](access-analyzer-quotas.md).
+
 ## Permissions required to use IAM Access Analyzer
 <a name="access-analyzer-permissions"></a>
 
@@ -49,9 +51,9 @@ For all types of access analyzers, updates for findings might not be reflected i
 <a name="access-analyzer-permissions-dashboard"></a>
 
 To view the [IAM Access Analyzer findings dashboard](access-analyzer-dashboard.md), the account you use must be granted access to perform the following required actions:
-+ [https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_GetAnalyzer.html](https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_GetAnalyzer.html)
-+ [https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_ListAnalyzers.html](https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_ListAnalyzers.html)
-+ [https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_GetFindingsStatistics.html](https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_GetFindingsStatistics.html)
++ [`GetAnalyzer`](https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_GetAnalyzer.html)
++ [`ListAnalyzers`](https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_ListAnalyzers.html)
++ [`GetFindingsStatistics`](https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_GetFindingsStatistics.html)
 
 To view all of the actions defined by IAM Access Analyzer, see [Actions defined by IAM Access Analyzer](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiamaccessanalyzer.html#awsiamaccessanalyzer-actions-as-permissions) in the *Service Authorization Reference*.
 

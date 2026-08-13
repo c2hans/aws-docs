@@ -31,7 +31,7 @@ Upon activation, Amazon Inspector scans all Lambda functions invoked or updated 
 
 Amazon Inspector monitors each Lambda function throughout its lifetime until it's either deleted or excluded from scanning.
 
-You can check when a Lambda function was last checked for vulnerabilities from the **Lambda functions** tab on the **Account management** page or by using the [https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListCoverage.html](https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListCoverage.html) API. Amazon Inspector updates the **Last scanned at** field for a Lambda function in response to the following events:
+You can check when a Lambda function was last checked for vulnerabilities from the **Lambda functions** tab on the **Account management** page or by using the [ListCoverage](https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListCoverage.html) API. Amazon Inspector updates the **Last scanned at** field for a Lambda function in response to the following events:
 + When Amazon Inspector completes an initial scan of a Lambda function.
 + When a Lambda function is updated.
 + When Amazon Inspector re-scans a Lambda function because a new CVE item impacting that function was added to the Amazon Inspector database.

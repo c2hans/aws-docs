@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ai-agent-sessi
 # Add customer data to an AI agent session
 <a name="ai-agent-session"></a>
 
-Connect Customer supports adding custom data to a Connect AI agent session so that it can be used to drive the generative AI driven solutions. Custom data can be used by first adding it to a session using the [UpdateSessionData](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_UpdateSessionData.html) API, and then using the data added to customize AI prompts..
+Connect Customer supports adding custom data to an AI agent session so that it can be used to drive the generative AI driven solutions. Custom data can be used by first adding it to a session using the [UpdateSessionData](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_UpdateSessionData.html) API, and then using the data added to customize AI prompts..
 
 ## Add and update data on a session
 <a name="adding-updating-data-ai-agent-session"></a>
@@ -25,7 +25,7 @@ Since sessions are created for contacts, a useful way to add session data is by 
 
 Here's what you do:
 
-1. Add a [Connect assistant](connect-assistant-block.md) block to your flow. It associates an Connect AI agent domain to a contact so Connect Customer can search knowledge bases for real-time recommendations.
+1. Add a [Connect assistant](connect-assistant-block.md) block to your flow. It associates an AI agent domain to a contact so Connect Customer can search knowledge bases for real-time recommendations.
 
 1. Place the [AWS Lambda function](invoke-lambda-function-block.md) block after your [Connect assistant](connect-assistant-block.md) block. The [UpdateSessionData](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_UpdateSessionData.html) API requires the sessionId. You can retrieve the sessionId by using the [DescribeContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeContact.html) API and the assistantId that is associated with the [Connect assistant](connect-assistant-block.md) block.
 

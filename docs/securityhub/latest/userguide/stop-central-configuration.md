@@ -44,7 +44,7 @@ Choose your preferred method, and follow the steps to stop using central configu
 
 **To disable central configuration (API)**
 
-1. Invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateOrganizationConfiguration.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateOrganizationConfiguration.html) API.
+1. Invoke the [UpdateOrganizationConfiguration](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateOrganizationConfiguration.html) API.
 
 1. Set the `ConfigurationType` field in the `OrganizationConfiguration` object to `LOCAL`. The API returns an error if you have existing configuration policies or policy associations. To disassociate a configuration policy, invoke the `StartConfigurationPolicyDisassociation` API. To delete a configuration policy, invoke the `DeleteConfigurationPolicy` API.
 
@@ -66,7 +66,7 @@ Choose your preferred method, and follow the steps to stop using central configu
 
 **To disable central configuration (AWS CLI)**
 
-1. Run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-organization-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-organization-configuration.html) command.
+1. Run the [update-organization-configuration](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-organization-configuration.html) command.
 
 1. Set the `ConfigurationType` field in the `organization-configuration` object to `LOCAL`. The command returns an error if you have existing configuration policies or policy associations. To disassociate a configuration policy, run the `start-configuration-policy-disassociation` command. To delete a configuration policy, run the `delete-configuration-policy` command.
 

@@ -78,7 +78,7 @@ There is no additional cost for the usage of the VPC endpoint.
      ```
 
      Make sure to replace the organization {{o-abcdef0123}} with your organization ID.
-   + To restrict accessing a resource by an organization ID, add your `ResourceOrgID` to the policy. For more information, see [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourceorgid](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourceorgid) in the *IAM User Guide*.
+   + To restrict accessing a resource by an organization ID, add your `ResourceOrgID` to the policy. For more information, see [`aws:ResourceOrgID`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourceorgid) in the *IAM User Guide*.
 
      ```
      "aws:ResourceOrgID": "o-abcdef0123"

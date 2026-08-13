@@ -9,7 +9,7 @@ To run AWS IoT SiteWise Edge on Siemens Industrial Edge, you need the following:
 + A [Siemens Digital Exchange Platform](https://www.dex.siemens.com/) account.
 + A Siemens Industrial Edge Hub (iehub) account.
 +  A Siemens Industrial Edge Management instance.
-  + The IE App Configuration Service. To learn more, see [https://docs.eu1.edge.siemens.cloud/get_started_and_operate/industrial_edge_management/how_to_setup_operate/vm/operation/app_projects/app_configurations/ie_application_configuration_service/installing_the_ie_acs_manually.html](https://docs.eu1.edge.siemens.cloud/get_started_and_operate/industrial_edge_management/how_to_setup_operate/vm/operation/app_projects/app_configurations/ie_application_configuration_service/installing_the_ie_acs_manually.html) in the *Siemens Industrial Edge Management* documentation.
+  + The IE App Configuration Service. To learn more, see [Installing the IE App Configuration Service manually](https://docs.eu1.edge.siemens.cloud/get_started_and_operate/industrial_edge_management/how_to_setup_operate/vm/operation/app_projects/app_configurations/ie_application_configuration_service/installing_the_ie_acs_manually.html) in the *Siemens Industrial Edge Management* documentation.
 + Access to version 2.0.1 or higher of the AWS IoT SiteWise Edge application. For more information, see [Access the AWS IoT SiteWise Edge application](sa-get-app.md).
 + Either a Siemens Industrial Edge Device (IED) or a Siemens Industrial Edge virtual Device (IEVD).
   + A minimum of 15 GB disk space for hardware requirements.

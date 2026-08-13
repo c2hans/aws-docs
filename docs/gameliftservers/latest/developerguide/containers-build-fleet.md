@@ -64,7 +64,7 @@ For Graviton ARM instances, make sure the container images in your container gro
 ------
 #### [ AWS CLI ]
 
-To create a container fleet with the AWS CLI, open a command line window and use the `create-container-fleet` command. For more information about this command, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/gamelift/create-container-fleet.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/gamelift/create-container-fleet.html) in the *AWS CLI Command Reference*.
+To create a container fleet with the AWS CLI, open a command line window and use the `create-container-fleet` command. For more information about this command, see [`create-container-fleet`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/gamelift/create-container-fleet.html) in the *AWS CLI Command Reference*.
 
 The example `create-container-fleet` request shown below creates a new container fleet with the following characteristics:
 + The ContainerGroupsConfiguration specifies a game server container group definition only: `MyAdventureGameContainerGroup`. The number of game server container groups that will be deployed to each fleet instance is calculated by Amazon GameLift Servers.

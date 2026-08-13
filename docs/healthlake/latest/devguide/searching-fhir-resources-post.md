@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/searching-fhi
 # Searching FHIR resources with POST
 <a name="searching-fhir-resources-post"></a>
 
-You can use the FHIR [https://hl7.org/fhir/R4/search.html](https://hl7.org/fhir/R4/search.html) interaction with `POST` requests to search a HealthLake data store. When using `POST`, HealthLake supports search parameters in either the URL or in a request body, but you cannot use both in a single request.
+You can use the FHIR [`search`](https://hl7.org/fhir/R4/search.html) interaction with `POST` requests to search a HealthLake data store. When using `POST`, HealthLake supports search parameters in either the URL or in a request body, but you cannot use both in a single request.
 
 **Important**
 For searches that involve personally identifiable information (PII) or protected health information (PHI), security best practices call for using `POST` requests, as PII and PHI is added as part of the request body and is encrypted in transit.
@@ -34,7 +34,7 @@ The following procedure is followed by examples using FHIR R4 `search` interacti
 **Note**
 When making a `POST` request with search parameters in the request body, use `Content-Type: application/x-www-form-urlencoded` as part of the header.
 
-   The following `curl` example makes a POST-based search request on the `Observation` resource type. The request uses the [https://hl7.org/fhir/R4/observation.html#search](https://hl7.org/fhir/R4/observation.html#search) search parameter to look for medical code `266919005` which indicates value `Never smoker`. To view the entire example, scroll over the **Copy** button.
+   The following `curl` example makes a POST-based search request on the `Observation` resource type. The request uses the [`value-concept`](https://hl7.org/fhir/R4/observation.html#search) search parameter to look for medical code `266919005` which indicates value `Never smoker`. To view the entire example, scroll over the **Copy** button.
 
 ------
 #### [ SigV4 ]
@@ -55,7 +55,7 @@ When making a `POST` request with search parameters in the request body, use `Co
 ------
 #### [ SMART on FHIR ]
 
-   SMART on FHIR authorization example for the [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
+   SMART on FHIR authorization example for the [`IdentityProviderConfiguration`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
 
    ```
    {
@@ -82,7 +82,7 @@ HealthLake supports a subset of FHIR R4 search parameters. For more information,
 ------
 #### [ Patient (age) ]
 
-Although age is not a defined resource type in FHIR, it is captured as an element in the [https://hl7.org/fhir/R4/patient.html](https://hl7.org/fhir/R4/patient.html) resource type. Use the following example to make a `POST`-based search request on the `Patient` resource type. The following search example uses the `eq` [search comparator](reference-fhir-search-parameters.md#search-comparators) to search for individuals born in 1997.
+Although age is not a defined resource type in FHIR, it is captured as an element in the [`Patient`](https://hl7.org/fhir/R4/patient.html) resource type. Use the following example to make a `POST`-based search request on the `Patient` resource type. The following search example uses the `eq` [search comparator](reference-fhir-search-parameters.md#search-comparators) to search for individuals born in 1997.
 
 ```
 POST https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}}/r4/Patient/_search

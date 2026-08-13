@@ -20,9 +20,9 @@ The following table lists the current quota in Amazon CodeGuru Reviewer. This qu
 </thead>
 <tbody>
   <tr><td>Maximum repository size</td><td>4 GB</td></tr>
-  <tr><td colspan="2"> CodeCommit repositories</td></tr>
+  <tr><td colspan="2"> <b>CodeCommit repositories</b></td></tr>
   <tr><td>Maximum number of analyzed pull requests per month</td><td>5,000</td></tr>
-  <tr><td colspan="2"> Source code files</td></tr>
+  <tr><td colspan="2"> <b>Source code files</b></td></tr>
   <tr><td>Maximum Java source code size</td><td>300 MB</td></tr>
   <tr><td>Maximum Python source code size</td><td>50 MB</td></tr>
 </tbody>

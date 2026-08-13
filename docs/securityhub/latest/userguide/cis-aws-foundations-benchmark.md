@@ -458,9 +458,9 @@ When you enable one or more versions of the CIS AWS Foundations Benchmark, you b
 **CIS AWS Foundations Benchmark v1.2.0**
 `arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0`
 
-You can use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetEnabledStandards.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetEnabledStandards.html) operation of the Security Hub CSPM API to find the ARN of an enabled standard.
+You can use the [GetEnabledStandards](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetEnabledStandards.html) operation of the Security Hub CSPM API to find the ARN of an enabled standard.
 
-The preceding values are for `StandardsArn`. However, `StandardsSubscriptionArn` refers to the standard subscription resource that Security Hub CSPM creates when you subscribe to a standard by calling [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchEnableStandards.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchEnableStandards.html) in a Region.
+The preceding values are for `StandardsArn`. However, `StandardsSubscriptionArn` refers to the standard subscription resource that Security Hub CSPM creates when you subscribe to a standard by calling [BatchEnableStandards](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchEnableStandards.html) in a Region.
 
 **Note**
 When you enable a version of the CIS AWS Foundations Benchmark, it can take up to 18 hours for Security Hub CSPM to generate findings for controls that use the same AWS Config service-linked rule as enabled controls in other enabled standards. For more information about the schedule for generating control findings, see [Schedule for running security checks](securityhub-standards-schedule.md).

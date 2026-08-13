@@ -81,7 +81,7 @@ Length Constraints: Minimum length of 1. Maximum length of 100.
 Pattern: `.*[\S]`
 
  ** [tags](#API_connect-cases_GetDomain_ResponseSyntax) **   <a name="connect-connect-cases_GetDomain-response-tags"></a>
-A map of of key-value pairs that represent tags on a resource. Tags are used to organize, track, or control access for this resource.
+A map of key-value pairs that represent tags on a resource. Tags are used to organize, track, or control access for this resource.
 Type: String to string map
 
 ## Errors

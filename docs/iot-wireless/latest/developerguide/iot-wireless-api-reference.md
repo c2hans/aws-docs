@@ -13,10 +13,10 @@ The following sections contain additional information about these API operations
 <a name="iot-wireless-device-profiles"></a>
 
 You can perform the following API operations for yourLoRaWAN and Sidewalk device profiles:
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateDeviceProfile.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateDeviceProfile.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-device-profile.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-device-profile.html) CLI
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDeviceProfile.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDeviceProfile.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-device-profile.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-device-profile.html) CLI
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDeviceProfiles.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDeviceProfiles.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-device-profiles.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-device-profiles.html) CLI
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteDeviceProfile.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteDeviceProfile.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-device-profile.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-device-profile.html) CLI
++ [`CreateDeviceProfile`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateDeviceProfile.html) API or the [`create-device-profile`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-device-profile.html) CLI
++ [`GetDeviceProfile`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDeviceProfile.html) API or the [`get-device-profile`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-device-profile.html) CLI
++ [`ListDeviceProfiles`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDeviceProfiles.html) API or the [`list-device-profiles`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-device-profiles.html) CLI
++ [`DeleteDeviceProfile`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteDeviceProfile.html) API or the [`delete-device-profile`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-device-profile.html) CLI
 
 The following sections show you how to list and delete profiles. For information about creating and retrieving device profiles, see:
 + [Add device profiles](lorawan-define-profiles.md#lorawan-device-profiles)
@@ -25,7 +25,7 @@ The following sections show you how to list and delete profiles. For information
 ### List device profiles in your AWS account
 <a name="iot-wireless-profile-list"></a>
 
-You can use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDeviceProfiles.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDeviceProfiles.html) API operation to list device profiles in your AWS account that you added to AWS IoT Wireless. You can use this information to identify the devices that you want to associate this profile to.
+You can use the [`ListDeviceProfiles`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDeviceProfiles.html) API operation to list device profiles in your AWS account that you added to AWS IoT Wireless. You can use this information to identify the devices that you want to associate this profile to.
 
 To filter the list to display only LoRaWAN or Sidewalk device profiles, set the `Type` when running the API. Following shows an example CLI command:
 
@@ -55,7 +55,7 @@ Running this command returns a list of device profiles that you added, including
 ### Delete device profiles from your AWS account
 <a name="iot-wireless-profile-delete"></a>
 
-You can delete your device profiles using the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteDeviceProfile.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteDeviceProfile.html) API operation. The following shows an example CLI command:
+You can delete your device profiles using the [`DeleteDeviceProfile`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteDeviceProfile.html) API operation. The following shows an example CLI command:
 
 **Warning**
 Deletion actions can't be undone. The device profile will be permanently removed from your AWS account.
@@ -70,13 +70,13 @@ This command doesn't produce any output. You can use the `GetDeviceProfile` API 
 <a name="iot-wireless-api-devices"></a>
 
 You can perform the following API operations for your LoRaWAN and Sidewalk devices:
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessDevice.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessDevice.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/create-wireless-device.html](https://docs.aws.amazon.com/cli/latest/reference/create-wireless-device.html) CLI
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDevice.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDevice.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/get-wireless-device.html](https://docs.aws.amazon.com/cli/latest/reference/get-wireless-device.html) CLI
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListWirelessDevices.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListWirelessDevices.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/list-wireless-devices.html](https://docs.aws.amazon.com/cli/latest/reference/list-wireless-devices.html) CLI
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteWirelessDevice.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteWirelessDevice.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/delete-wireless-device.html](https://docs.aws.amazon.com/cli/latest/reference/delete-wireless-device.html) CLI
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateWirelessDevice.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateWirelessDevice.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/update-wireless-device.html](https://docs.aws.amazon.com/cli/latest/reference/update-wireless-device.html) CLI
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_AssociateWirelessDeviceWithThing.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_AssociateWirelessDeviceWithThing.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/associate-wireless-device-with-thing.html](https://docs.aws.amazon.com/cli/latest/reference/associate-wireless-device-with-thing.html) CLI
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DisassociateWirelessDeviceFromThing.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DisassociateWirelessDeviceFromThing.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/disassociate-wireless-device-from-thing.html](https://docs.aws.amazon.com/cli/latest/reference/disassociate-wireless-device-from-thing.html) CLI
++ [`CreateWirelessDevice`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessDevice.html) API or the [`create-wireless-device`](https://docs.aws.amazon.com/cli/latest/reference/create-wireless-device.html) CLI
++ [`GetWirelessDevice`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDevice.html) API or the [`get-wireless-device`](https://docs.aws.amazon.com/cli/latest/reference/get-wireless-device.html) CLI
++ [`ListWirelessDevices`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListWirelessDevices.html) API or the [`list-wireless-devices`](https://docs.aws.amazon.com/cli/latest/reference/list-wireless-devices.html) CLI
++ [`DeleteWirelessDevice`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteWirelessDevice.html) API or the [`delete-wireless-device`](https://docs.aws.amazon.com/cli/latest/reference/delete-wireless-device.html) CLI
++ [`UpdateWirelessDevice`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateWirelessDevice.html) API or the [`update-wireless-device`](https://docs.aws.amazon.com/cli/latest/reference/update-wireless-device.html) CLI
++ [`AssociateWirelessDeviceWithThing`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_AssociateWirelessDeviceWithThing.html) API or the [`associate-wireless-device-with-thing`](https://docs.aws.amazon.com/cli/latest/reference/associate-wireless-device-with-thing.html) CLI
++ [`DisassociateWirelessDeviceFromThing`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DisassociateWirelessDeviceFromThing.html) API or the [`disassociate-wireless-device-from-thing`](https://docs.aws.amazon.com/cli/latest/reference/disassociate-wireless-device-from-thing.html) CLI
 
 The following sections show you how to list and delete devices. For information about creating wireless devices and retrieving device information, see:
 + [Add your wireless device to AWS IoT Core for LoRaWAN](lorawan-end-devices-add.md)
@@ -87,7 +87,7 @@ The following sections show you how to list and delete devices. For information 
 
 To associate your LoRaWAN and Sidewalk devices with an AWS IoT thing, use the `AssociateWirelessDeviceWithThing` API operation.
 
-Things in AWS IoT make it easier to search and manage your devices. Associating a thing with your device lets the device access other AWS IoT Core features. For more information about using this API, see [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_AssociateWirelessDeviceWithThing.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_AssociateWirelessDeviceWithThing.html).
+Things in AWS IoT make it easier to search and manage your devices. Associating a thing with your device lets the device access other AWS IoT Core features. For more information about using this API, see [`AssociateWirelessDeviceWithThing`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_AssociateWirelessDeviceWithThing.html).
 
 The following shows an example of running this command. Running this command doesn't produce any output.
 
@@ -97,7 +97,7 @@ aws iotwireless associate-wireless-device-with-thing \
     --thing-arn "arn:aws:iot:{{us-east-1:123456789012:}}thing/{{MySidewalkThing}}"
 ```
 
-To disassociate your wireless device from an AWS IoT thing, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DisassociateWirelessDeviceFromThing.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DisassociateWirelessDeviceFromThing.html) API operation, as shown in the following example.
+To disassociate your wireless device from an AWS IoT thing, use the [`DisassociateWirelessDeviceFromThing`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DisassociateWirelessDeviceFromThing.html) API operation, as shown in the following example.
 
 ```
 aws iotwireless disassociate-wireless-device-from-thing \
@@ -107,7 +107,7 @@ aws iotwireless disassociate-wireless-device-from-thing \
 ### List wireless devices in your AWS account
 <a name="iot-wireless-list-devices"></a>
 
-To list wireless devices in your AWS account that you added to AWS IoT Wireless, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListWirelessDevices.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListWirelessDevices.html) API operation. To filter the list to return only LoRaWAN or Sidewalk devices, set the `WirelessDeviceType`.
+To list wireless devices in your AWS account that you added to AWS IoT Wireless, use the [`ListWirelessDevices`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListWirelessDevices.html) API operation. To filter the list to return only LoRaWAN or Sidewalk devices, set the `WirelessDeviceType`.
 
 The following shows an example of running this command:
 
@@ -115,7 +115,7 @@ The following shows an example of running this command:
 aws iotwireless list-wireless-devices --wireless-device-type Sidewalk
 ```
 
-Running this command returns a list of devices that you added, including their profile identifier and the Amazon Resource Name (ARN). To retrieve additional details about a specific device, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDevice.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDevice.html) API operation.
+Running this command returns a list of devices that you added, including their profile identifier and the Amazon Resource Name (ARN). To retrieve additional details about a specific device, use the [`GetWirelessDevice`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDevice.html) API operation.
 
 ```
 {
@@ -177,7 +177,7 @@ Running this command returns a list of devices that you added, including their p
 ### Delete wireless devices from your AWS account
 <a name="iot-wireless-delete-devices"></a>
 
-To delete your wireless devices, pass the `WirelessDeviceID` of the devices you want to delete to the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteWirelessDevice.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteWirelessDevice.html) API operation.
+To delete your wireless devices, pass the `WirelessDeviceID` of the devices you want to delete to the [`DeleteWirelessDevice`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteWirelessDevice.html) API operation.
 
 The following shows an example command:
 
@@ -191,18 +191,18 @@ This command doesn't produce any output. You can use the `GetWirelessDevice` API
 <a name="iot-wireless-api-destinations"></a>
 
 You can perform the following API operations for destinations for your LoRaWAN and Sidewalk devices:
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateDestination.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateDestination.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/create-destination.html](https://docs.aws.amazon.com/cli/latest/reference/create-destination.html) CLI
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDestination.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDestination.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/get-destination.html](https://docs.aws.amazon.com/cli/latest/reference/get-destination.html) CLI
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateDestination.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateDestination.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/update-destination.html](https://docs.aws.amazon.com/cli/latest/reference/update-destination.html) CLI
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDestinations.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDestinations.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/list-destinations.html](https://docs.aws.amazon.com/cli/latest/reference/list-destinations.html) CLI
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteDestination.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteDestination.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/delete-destination.html](https://docs.aws.amazon.com/cli/latest/reference/delete-destination.html) CLI
++ [`CreateDestination`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateDestination.html) API or the [`create-destination`](https://docs.aws.amazon.com/cli/latest/reference/create-destination.html) CLI
++ [`GetDestination`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDestination.html) API or the [`get-destination`](https://docs.aws.amazon.com/cli/latest/reference/get-destination.html) CLI
++ [`UpdateDestination`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateDestination.html) API or the [`update-destination`](https://docs.aws.amazon.com/cli/latest/reference/update-destination.html) CLI
++ [`ListDestinations`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDestinations.html) API or the [`list-destinations`](https://docs.aws.amazon.com/cli/latest/reference/list-destinations.html) CLI
++ [`DeleteDestination`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteDestination.html) API or the [`delete-destination`](https://docs.aws.amazon.com/cli/latest/reference/delete-destination.html) CLI
 
 The following sections show you how to get, list, update, and delete destinations. For information about creating destinations, see [Add a destination for your Sidewalk end device](iot-sidewalk-qsg-destination.md).
 
 ### Get information about your destination
 <a name="iot-wireless-get-destination"></a>
 
-You can use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDestination.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDestination.html) API operation to get information about the destination that you added to your account for AWS IoT Wireless. Provide the destination name as input to the API. The API will return information about the destination matching the specified identifier.
+You can use the [`GetDestination`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDestination.html) API operation to get information about the destination that you added to your account for AWS IoT Wireless. Provide the destination name as input to the API. The API will return information about the destination matching the specified identifier.
 
 The following shows an example CLI command:
 
@@ -225,7 +225,7 @@ Running this command returns the parameters of your destination.
 ### Update properties of your destination
 <a name="iot-wireless-update-destination"></a>
 
-Use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateDestination.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateDestination.html) API operation to update properties of your destination that you added to your account for AWS IoT Wireless. The following shows an example CLI command that updates the description property:
+Use the [`UpdateDestination`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateDestination.html) API operation to update properties of your destination that you added to your account for AWS IoT Wireless. The following shows an example CLI command that updates the description property:
 
 ```
 aws iotwireless update-destination --name {{SidewalkDestination}} \
@@ -235,7 +235,7 @@ aws iotwireless update-destination --name {{SidewalkDestination}} \
 ### List destinations in your AWS account
 <a name="iot-wireless-list-destinations"></a>
 
-Use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDestinations.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDestinations.html) API operation to list destinations in your AWS account that you added to AWS IoT Wireless. To filter the list to return only destinations for LoRaWAN and Sidewalk end devices, use the `WirelessDeviceType` parameter.
+Use the [`ListDestinations`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDestinations.html) API operation to list destinations in your AWS account that you added to AWS IoT Wireless. To filter the list to return only destinations for LoRaWAN and Sidewalk end devices, use the `WirelessDeviceType` parameter.
 
 The following shows an example CLI command:
 
@@ -268,7 +268,7 @@ Running this command returns a list of destinations that you added, including th
 ### Delete destinations from your AWS account
 <a name="iot-wireless-delete-destination"></a>
 
-To delete your destination, pass the name of the destination to be deleted as input to the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteDestination.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteDestination.html) API operation. The following shows an example CLI command:
+To delete your destination, pass the name of the destination to be deleted as input to the [`DeleteDestination`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteDestination.html) API operation. The following shows an example CLI command:
 
 **Warning**
 Deletion actions can't be undone. The destination will be permanently removed from your AWS account.
@@ -283,20 +283,20 @@ This command doesn't produce any output. You can use the `GetDestination` API or
 <a name="iot-sidewalk-apis-provisioning"></a>
 
 You can perform the following API operations for bulk provisioning your Sidewalk end devices:
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartWirelessDeviceImportTask.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartWirelessDeviceImportTask.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/start-wireless-device-import-task.html](https://docs.aws.amazon.com/cli/latest/reference/start-wireless-device-import-task.html) CLI
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartSingleWirelessDeviceImportTask.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartSingleWirelessDeviceImportTask.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/start-single-wireless-device-import-task.html](https://docs.aws.amazon.com/cli/latest/reference/start-single-wireless-device-import-task.html) CLI
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListWirelessDeviceImportTasks.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListWirelessDeviceImportTasks.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/list-wireless-device-import-tasks.html](https://docs.aws.amazon.com/cli/latest/reference/list-wireless-device-import-tasks.html) CLI
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDevicesForWirelessDeviceImportTask.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDevicesForWirelessDeviceImportTask.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/list-devices-for-wireless-device-import-task.html](https://docs.aws.amazon.com/cli/latest/reference/list-devices-for-wireless-device-import-task.html) CLI
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDeviceImportTask.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDeviceImportTask.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/get-wireless-device-import-task.html](https://docs.aws.amazon.com/cli/latest/reference/get-wireless-device-import-task.html) CLI
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateWirelessDeviceImportTask.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateWirelessDeviceImportTask.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/update-wireless-device-import-task.html](https://docs.aws.amazon.com/cli/latest/reference/update-wireless-device-import-task.html) CLI
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteWirelessDeviceImportTask.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteWirelessDeviceImportTask.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/delete-wireless-device-import-task.html](https://docs.aws.amazon.com/cli/latest/reference/delete-wireless-device-import-task.html) CLI
++ [`StartWirelessDeviceImportTask`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartWirelessDeviceImportTask.html) API or the [`start-wireless-device-import-task`](https://docs.aws.amazon.com/cli/latest/reference/start-wireless-device-import-task.html) CLI
++ [`StartSingleWirelessDeviceImportTask`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartSingleWirelessDeviceImportTask.html) API or the [`start-single-wireless-device-import-task`](https://docs.aws.amazon.com/cli/latest/reference/start-single-wireless-device-import-task.html) CLI
++ [`ListWirelessDeviceImportTasks`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListWirelessDeviceImportTasks.html) API or the [`list-wireless-device-import-tasks`](https://docs.aws.amazon.com/cli/latest/reference/list-wireless-device-import-tasks.html) CLI
++ [`ListDevicesForWirelessDeviceImportTask`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDevicesForWirelessDeviceImportTask.html) API or the [`list-devices-for-wireless-device-import-task`](https://docs.aws.amazon.com/cli/latest/reference/list-devices-for-wireless-device-import-task.html) CLI
++ [`GetWirelessDeviceImportTask`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDeviceImportTask.html) API or the [`get-wireless-device-import-task`](https://docs.aws.amazon.com/cli/latest/reference/get-wireless-device-import-task.html) CLI
++ [`UpdateWirelessDeviceImportTask`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateWirelessDeviceImportTask.html) API or the [`update-wireless-device-import-task`](https://docs.aws.amazon.com/cli/latest/reference/update-wireless-device-import-task.html) CLI
++ [`DeleteWirelessDeviceImportTask`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteWirelessDeviceImportTask.html) API or the [`delete-wireless-device-import-task`](https://docs.aws.amazon.com/cli/latest/reference/delete-wireless-device-import-task.html) CLI
 
 The following sections show you how to get, list, update, and delete import tasks. For information about creating import tasks, see [Provisioning Sidewalk devices using import tasks](sidewalk-provision-bulk-import.md).
 
 ### Get information about your import task
 <a name="iot-sidewalk-get-import-task"></a>
 
-You can use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDevicesForWirelessDeviceImportTask.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDevicesForWirelessDeviceImportTask.html) API operation to retrieve information about a particular import task and the onboarding status of devices in that task. As input to the API operation, specify the import task ID that you obtained from either the `StartWirelessDeviceImportTask` or `StartSingleWirelessDeviceImportTask` API operations. The API will then return information about the import task matching the specified identifier.
+You can use the [`ListDevicesForWirelessDeviceImportTask`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListDevicesForWirelessDeviceImportTask.html) API operation to retrieve information about a particular import task and the onboarding status of devices in that task. As input to the API operation, specify the import task ID that you obtained from either the `StartWirelessDeviceImportTask` or `StartSingleWirelessDeviceImportTask` API operations. The API will then return information about the import task matching the specified identifier.
 
 The following shows an example CLI command:
 
@@ -342,7 +342,7 @@ Running this command returns your import task information and device onboarding 
 ### Get import task device summary
 <a name="iot-sidewalk-get-device-summary"></a>
 
-To get a count of summary information of the onboarding status of devices that you added to a particular import task, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDeviceImportTask.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDeviceImportTask.html) API operation. The following shows an example CLI command.
+To get a count of summary information of the onboarding status of devices that you added to a particular import task, use the [`GetWirelessDeviceImportTask`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDeviceImportTask.html) API operation. The following shows an example CLI command.
 
 ```
 aws iotwireless get-wireless-device-import-task --Id {{"e2a5995e-743b-41f2-a1e4-3ca6a5c5249f"}}

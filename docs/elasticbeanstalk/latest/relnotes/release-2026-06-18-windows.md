@@ -17,22 +17,39 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Framework** | **Details** |
-| --- | --- |
-| **Component** | **Details** |
-| --- | --- |
-| **Windows security updates** | Applied June 2026 security updates for Windows.<br />This release includes updates from the monthly Microsoft *Patch Tuesday* Windows release. Windows security updates in this release are current up to the second Tuesday of the month.<br />For more details and a list of security updates, see the Microsoft [Security Update Guide](https://portal.msrc.microsoft.com/en-us/security-guidance). |
-| **Framework updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2026-06-18-windows.html)  |
-| **AWS component updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2026-06-18-windows.html)  |
-| **.NET Core** | Updated .NET 10 to version [10.0.9](https://github.com/dotnet/core/blob/main/release-notes/10.0/10.0.9/10.0.9.md).<br />Updated .NET 9 to version [9.0.17](https://github.com/dotnet/core/blob/main/release-notes/9.0/9.0.17/9.0.17.md).<br />Updated .NET 8 to version [8.0.28](https://github.com/dotnet/core/blob/main/release-notes/8.0/8.0.28/8.0.28.md). |
-| **AMI** | Updated the base AMI to version 2026.06.10. |
-| **AWS SDK for .NET** | Updated the SDK to version [3.7.1252.1](https://github.com/aws/aws-sdk-net/releases/tag/3.7.1252.1) (Windows Server 2016, 2019, and 2022 platforms only). |
-| **CloudWatch Agent** | Updated the CloudWatch Agent to version [1.300069.0b1529](https://github.com/aws/amazon-cloudwatch-agent/releases/tag/v1.300069.0). |
-| **EC2Launch** | Updated EC2Launch to version 2.5.1. |
-| **SSM Agent** | Updated the SSM Agent to version [3.3.4515.0](https://github.com/aws/amazon-ssm-agent/releases/tag/3.3.4515.0). |
-| **X-Ray daemon** | Updated the X-Ray daemon to version [3.6.5](https://github.com/aws/aws-xray-daemon/releases/tag/v3.6.5). |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows security updates</b></td><td>Applied June 2026 security updates for Windows.<br />This release includes updates from the monthly Microsoft <i>Patch Tuesday</i> Windows release. Windows security updates in this release are current up to the second Tuesday of the month.<br />For more details and a list of security updates, see the Microsoft <a href="https://portal.msrc.microsoft.com/en-us/security-guidance">Security Update Guide</a>.</td></tr>
+  <tr><td><b>Framework updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Framework</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET 10 to version <a href="https://github.com/dotnet/core/blob/main/release-notes/10.0/10.0.9/10.0.9.md">10.0.9</a>.<br />Updated .NET 9 to version <a href="https://github.com/dotnet/core/blob/main/release-notes/9.0/9.0.17/9.0.17.md">9.0.17</a>.<br />Updated .NET 8 to version <a href="https://github.com/dotnet/core/blob/main/release-notes/8.0/8.0.28/8.0.28.md">8.0.28</a>.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+  <tr><td><b>AWS component updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version 2026.06.10.</td></tr>
+  <tr><td><b>AWS SDK for .NET</b></td><td>Updated the SDK to version <a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1252.1">3.7.1252.1</a> (Windows Server 2016, 2019, and 2022 platforms only).</td></tr>
+  <tr><td><b>CloudWatch Agent</b></td><td>Updated the CloudWatch Agent to version <a href="https://github.com/aws/amazon-cloudwatch-agent/releases/tag/v1.300069.0">1.300069.0b1529</a>.</td></tr>
+  <tr><td><b>EC2Launch</b></td><td>Updated EC2Launch to version 2.5.1.</td></tr>
+  <tr><td><b>SSM Agent</b></td><td>Updated the SSM Agent to version <a href="https://github.com/aws/amazon-ssm-agent/releases/tag/3.3.4515.0">3.3.4515.0</a>.</td></tr>
+  <tr><td><b>X-Ray daemon</b></td><td>Updated the X-Ray daemon to version <a href="https://github.com/aws/aws-xray-daemon/releases/tag/v3.6.5">3.6.5</a>.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2026-06-18-windows.platforms"></a>

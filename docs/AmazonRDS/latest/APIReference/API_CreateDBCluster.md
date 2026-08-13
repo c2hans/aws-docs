@@ -41,7 +41,7 @@ Valid Values:
 +  `aurora-postgresql`
 +  `mysql`
 +  `postgres`
-+  `neptune` - For information about using Amazon Neptune, see the [https://docs.aws.amazon.com/neptune/latest/userguide/intro.html](https://docs.aws.amazon.com/neptune/latest/userguide/intro.html).
++  `neptune` - For information about using Amazon Neptune, see the [*Amazon Neptune User Guide*](https://docs.aws.amazon.com/neptune/latest/userguide/intro.html).
 Type: String
 Required: Yes
 

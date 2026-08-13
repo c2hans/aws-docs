@@ -146,26 +146,26 @@ The following table shows the supported ciphers along with the TLS encryption pr
 <a name="AuroraMySQL.Security.SSL.ConfiguringCipherSuites.support"></a>
 <table>
 <thead>
-  <tr><th>Cipher</th><th>Aurora MySQL 2.11.0\+</th><th>Aurora MySQL 3.04.0\+</th><th>Aurora MySQL 8.4.7\+</th></tr>
+  <tr><th>Cipher</th><th>Aurora MySQL 2.11.0+</th><th>Aurora MySQL 3.04.0+</th><th>Aurora MySQL 8.4.7+</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="4">TLS 1.0 Ciphers</td></tr>
-  <tr><td>`ECDHE-RSA-AES128-SHA`</td><td>✓</td><td>✓</td><td>X</td></tr>
-  <tr><td>`ECDHE-RSA-AES256-SHA`</td><td>✓</td><td>✓</td><td>X</td></tr>
-  <tr><td>`ECDHE-ECDSA-AES128-SHA`</td><td>✓</td><td>✓</td><td>X</td></tr>
-  <tr><td>`ECDHE-ECDSA-AES256-SHA`</td><td>✓</td><td>✓</td><td>X</td></tr>
-  <tr><td colspan="4">TLS 1.2 Ciphers</td></tr>
-  <tr><td>`ECDHE-RSA-AES128-GCM-SHA256`</td><td>✓</td><td>✓</td><td>✓</td></tr>
-  <tr><td>`ECDHE-RSA-AES256-GCM-SHA384`</td><td>✓</td><td>✓</td><td>✓</td></tr>
-  <tr><td>`ECDHE-ECDSA-AES128-GCM-SHA256`</td><td>✓</td><td>✓</td><td>✓</td></tr>
-  <tr><td>`ECDHE-ECDSA-AES256-GCM-SHA384`</td><td>✓</td><td>✓</td><td>✓</td></tr>
-  <tr><td>`ECDHE-RSA-AES128-SHA256`</td><td>✓</td><td>✓</td><td>X</td></tr>
-  <tr><td>`ECDHE-RSA-CHACHA20-POLY1305`</td><td>✓</td><td>✓</td><td>X</td></tr>
-  <tr><td>`ECDHE-ECDSA-CHACHA20-POLY1305`</td><td>✓</td><td>✓</td><td>X</td></tr>
-  <tr><td colspan="4">TLS 1.3 Ciphers</td></tr>
-  <tr><td>`TLS_AES_128_GCM_SHA256`</td><td>X</td><td>✓</td><td>✓</td></tr>
-  <tr><td>`TLS_AES_256_GCM_SHA384`</td><td>X</td><td>✓</td><td>✓</td></tr>
-  <tr><td>`TLS_CHACHA20_POLY1305_SHA256`</td><td>X</td><td>✓</td><td>X</td></tr>
+  <tr><td colspan="4"><b>TLS 1.0 Ciphers</b></td></tr>
+  <tr><td><code>ECDHE-RSA-AES128-SHA</code></td><td>✓</td><td>✓</td><td>X</td></tr>
+  <tr><td><code>ECDHE-RSA-AES256-SHA</code></td><td>✓</td><td>✓</td><td>X</td></tr>
+  <tr><td><code>ECDHE-ECDSA-AES128-SHA</code></td><td>✓</td><td>✓</td><td>X</td></tr>
+  <tr><td><code>ECDHE-ECDSA-AES256-SHA</code></td><td>✓</td><td>✓</td><td>X</td></tr>
+  <tr><td colspan="4"><b>TLS 1.2 Ciphers</b></td></tr>
+  <tr><td><code>ECDHE-RSA-AES128-GCM-SHA256</code></td><td>✓</td><td>✓</td><td>✓</td></tr>
+  <tr><td><code>ECDHE-RSA-AES256-GCM-SHA384</code></td><td>✓</td><td>✓</td><td>✓</td></tr>
+  <tr><td><code>ECDHE-ECDSA-AES128-GCM-SHA256</code></td><td>✓</td><td>✓</td><td>✓</td></tr>
+  <tr><td><code>ECDHE-ECDSA-AES256-GCM-SHA384</code></td><td>✓</td><td>✓</td><td>✓</td></tr>
+  <tr><td><code>ECDHE-RSA-AES128-SHA256</code></td><td>✓</td><td>✓</td><td>X</td></tr>
+  <tr><td><code>ECDHE-RSA-CHACHA20-POLY1305</code></td><td>✓</td><td>✓</td><td>X</td></tr>
+  <tr><td><code>ECDHE-ECDSA-CHACHA20-POLY1305</code></td><td>✓</td><td>✓</td><td>X</td></tr>
+  <tr><td colspan="4"><b>TLS 1.3 Ciphers</b></td></tr>
+  <tr><td><code>TLS_AES_128_GCM_SHA256</code></td><td>X</td><td>✓</td><td>✓</td></tr>
+  <tr><td><code>TLS_AES_256_GCM_SHA384</code></td><td>X</td><td>✓</td><td>✓</td></tr>
+  <tr><td><code>TLS_CHACHA20_POLY1305_SHA256</code></td><td>X</td><td>✓</td><td>X</td></tr>
 </tbody>
 </table>
 

@@ -11,7 +11,7 @@ Amazon SageMaker Debugger is no longer open to new customers. Existing customers
 To start collecting model output tensors and debug training issues, make the following modifications to your PyTorch training script.
 
 **Note**
-SageMaker Debugger cannot collect model output tensors from the [https://pytorch.org/docs/stable/nn.functional.html](https://pytorch.org/docs/stable/nn.functional.html) API operations. When you write a PyTorch training script, it is recommended to use the [https://pytorch.org/docs/stable/generated/torch.nn.NLLLoss.html](https://pytorch.org/docs/stable/generated/torch.nn.NLLLoss.html) modules instead.
+SageMaker Debugger cannot collect model output tensors from the [`torch.nn.functional`](https://pytorch.org/docs/stable/nn.functional.html) API operations. When you write a PyTorch training script, it is recommended to use the [`torch.nn`](https://pytorch.org/docs/stable/generated/torch.nn.NLLLoss.html) modules instead.
 
 ## For PyTorch 1.12.0
 <a name="debugger-modify-script-pytorch-1-12-0"></a>
@@ -80,7 +80,7 @@ If you collect the entire output tensors from a large deep learning model, the t
        hook.set_mode(ModeKeys.EVAL)
    ```
 
-1. Use [https://sagemaker-debugger.readthedocs.io/en/website/hook-constructor.html#smdebug.core.hook.BaseHook.save_scalar](https://sagemaker-debugger.readthedocs.io/en/website/hook-constructor.html#smdebug.core.hook.BaseHook.save_scalar) to save custom scalars. You can save scalar values that aren’t in your model. For example, if you want to record the accuracy values computed during evaluation, add the following line of code below the line where you calculate accuracy.
+1. Use [`hook.save_scalar()`](https://sagemaker-debugger.readthedocs.io/en/website/hook-constructor.html#smdebug.core.hook.BaseHook.save_scalar) to save custom scalars. You can save scalar values that aren’t in your model. For example, if you want to record the accuracy values computed during evaluation, add the following line of code below the line where you calculate accuracy.
 
    ```
    hook.save_scalar("accuracy", accuracy)
@@ -88,7 +88,7 @@ If you collect the entire output tensors from a large deep learning model, the t
 
    Note that you need to provide a string as the first argument to name the custom scalar collection. This is the name that'll be used for visualizing the scalar values in TensorBoard, and can be any string you want.
 
-1. <a name="debugger-modify-script-pytorch-save-custom-tensor"></a>Use [https://sagemaker-debugger.readthedocs.io/en/website/hook-constructor.html#smdebug.core.hook.BaseHook.save_tensor](https://sagemaker-debugger.readthedocs.io/en/website/hook-constructor.html#smdebug.core.hook.BaseHook.save_tensor) to save custom tensors. Similarly to [https://sagemaker-debugger.readthedocs.io/en/website/hook-constructor.html#smdebug.core.hook.BaseHook.save_scalar](https://sagemaker-debugger.readthedocs.io/en/website/hook-constructor.html#smdebug.core.hook.BaseHook.save_scalar), you can save additional tensors, defining your own tensor collection. For example, you can extract input image data that are passed into the model and save as a custom tensor by adding the following code line, where `"images"` is an example name of the custom tensor, `image_inputs` is an example variable for the input image data.
+1. <a name="debugger-modify-script-pytorch-save-custom-tensor"></a>Use [`hook.save_tensor()`](https://sagemaker-debugger.readthedocs.io/en/website/hook-constructor.html#smdebug.core.hook.BaseHook.save_tensor) to save custom tensors. Similarly to [`hook.save_scalar()`](https://sagemaker-debugger.readthedocs.io/en/website/hook-constructor.html#smdebug.core.hook.BaseHook.save_scalar), you can save additional tensors, defining your own tensor collection. For example, you can extract input image data that are passed into the model and save as a custom tensor by adding the following code line, where `"images"` is an example name of the custom tensor, `image_inputs` is an example variable for the input image data.
 
    ```
    hook.save_tensor("images", image_inputs)

@@ -49,7 +49,7 @@ Specify the target device to receive and execute the Command. Use a Thing name f
 
 Target devices can be Things registered in the AWS IoT registry. Things simplify device search and management.
 
-Register devices as Things from the [Connect device page](https://console.aws.amazon.com/iot/home#/connect-overview) or using [https://docs.aws.amazon.com/iot/latest/apireference/API_CreateThing.html](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateThing.html). Find existing Things from [Thing Hub](https://console.aws.amazon.com/iot/home#/thinghub) or using [https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeThing.html](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeThing.html). See [Managing things with the registry](https://docs.aws.amazon.com/iot/latest/developerguide/thing-registry) for registration details.
+Register devices as Things from the [Connect device page](https://console.aws.amazon.com/iot/home#/connect-overview) or using [`CreateThing`](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateThing.html). Find existing Things from [Thing Hub](https://console.aws.amazon.com/iot/home#/thinghub) or using [`DescribeThing`](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeThing.html). See [Managing things with the registry](https://docs.aws.amazon.com/iot/latest/developerguide/thing-registry) for registration details.
 
 #### Client ID
 <a name="iot-command-execution-target-clientid"></a>
@@ -119,7 +119,7 @@ To start running the command from the console, go to the [Command Hub](https://c
 ### Start a command execution (AWS CLI)
 <a name="iot-remote-command-execution-start-cli"></a>
 
-Use the [https://docs.aws.amazon.com/iot/latest/apireference/API_StartCommandExecution.html](https://docs.aws.amazon.com/iot/latest/apireference/API_StartCommandExecution.html) HTTP data plane API operation to start a command execution. The API request and response are correlated by the command execution ID. After the device completes executing the command, it can report the status and execution result to the cloud by publishing a message to the commands response topic. For a custom response code, application codes that you own can process the response message and post the result to AWS IoT.
+Use the [`StartCommandExecution`](https://docs.aws.amazon.com/iot/latest/apireference/API_StartCommandExecution.html) HTTP data plane API operation to start a command execution. The API request and response are correlated by the command execution ID. After the device completes executing the command, it can report the status and execution result to the cloud by publishing a message to the commands response topic. For a custom response code, application codes that you own can process the response message and post the result to AWS IoT.
 
 If your devices have subscribed to the commands request topic, the `StartCommandExecution` API will publish the payload message to the topic. The payload can use any format of your choice. For more information, see [Command payload](iot-remote-command-create-manage.md#iot-commands-payload).
 
@@ -452,7 +452,7 @@ If you chose an AWS IoT thing as your target device when running the command, yo
 ### Retrieve a command execution (CLI)
 <a name="iot-remote-command-execution-get-cli"></a>
 
-Use the [https://docs.aws.amazon.com/iot/latest/apireference/API_GetCommandExecution.html](https://docs.aws.amazon.com/iot/latest/apireference/API_GetCommandExecution.html) AWS IoT Core control plane HTTP API operation to retrieve information about a command execution. You must have already executed this command using the `StartCommandExecution` API operation.
+Use the [`GetCommandExecution`](https://docs.aws.amazon.com/iot/latest/apireference/API_GetCommandExecution.html) AWS IoT Core control plane HTTP API operation to retrieve information about a command execution. You must have already executed this command using the `StartCommandExecution` API operation.
 
 #### Sample IAM policy
 <a name="iot-remote-command-execution-get-policy"></a>
@@ -605,7 +605,7 @@ If you chose an AWS IoT thing as your target device when running the command, an
 ### List command executions in your account (CLI)
 <a name="iot-remote-command-execution-list-cli"></a>
 
-Use the [https://docs.aws.amazon.com/iot/latest/apireference/API_ListCommandExecutions.html](https://docs.aws.amazon.com/iot/latest/apireference/API_ListCommandExecutions.html) AWS IoT Core control plane HTTP API operation to list all command executions in your account.
+Use the [`ListCommandExecutions`](https://docs.aws.amazon.com/iot/latest/apireference/API_ListCommandExecutions.html) AWS IoT Core control plane HTTP API operation to list all command executions in your account.
 
 #### Sample IAM policy
 <a name="iot-remote-command-execution-list-policy"></a>

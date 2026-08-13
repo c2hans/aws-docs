@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-sagemaker-endpointconfig-clarifyexplainerconfig-properties"></a>
 
 `EnableExplanations`  <a name="cfn-sagemaker-endpointconfig-clarifyexplainerconfig-enableexplanations"></a>
-A JMESPath boolean expression used to filter which records to explain. Explanations are activated by default. See [https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-online-explainability-create-endpoint.html#clarify-online-explainability-create-endpoint-enable](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-online-explainability-create-endpoint.html#clarify-online-explainability-create-endpoint-enable)for additional information.
+A JMESPath boolean expression used to filter which records to explain. Explanations are activated by default. See [`EnableExplanations`](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-online-explainability-create-endpoint.html#clarify-online-explainability-create-endpoint-enable)for additional information.
 *Required*: No
 *Type*: String
 *Pattern*: `.*`

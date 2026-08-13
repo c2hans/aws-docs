@@ -90,9 +90,7 @@ The following section displays the steps to attach the VPC endpoints for the AWS
 
    1. Choose your environment's Amazon VPC in **VPC**.
 
-   1. Ensure that your two private subnets in different Availability Zones are selected, and that that private DNS is enabled by selecting **Enable DNS name**.
-
-   1. Choose your environment's Amazon VPC security groups.
+   1. Make sure that you choose the route table for your two private subnets.
 
    1. Choose **Full Access** in **Policy**.
 

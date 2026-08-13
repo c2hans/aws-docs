@@ -18,14 +18,25 @@ The following table lists the changes included in this release.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 *March 3, 2020 update:* When we released this update on February 28, 2020, we published a couple of wrong version numbers. The Go platform version should be 2.14.3, and the Node.js platform version should be 4.13.1. They're now fixed in the release notes and the platforms document.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **February 13, 2020** to all Linux-based platforms.<br />The **Node.js** release includes security fixes. For more information, see **Platform-specific updates** in this table. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-02-28-linux.html) |
-| **Go** | Updated to Go release 1.13.8. For details, see [go1.13](https://golang.org/doc/devel/release.html#go1.13) in *The Go Programming Language Release History*. |
-| **Node.js** | Updated the Node.js platform to add support for Node versions [12.16.1](https://nodejs.org/en/blog/release/v12.16.1/), [12.15.0](https://nodejs.org/en/blog/release/v12.15.0/), and [10.19.0](https://nodejs.org/en/blog/release/v10.19.0/).<br />The latest Node.js 12.15 and 10.19 versions are security releases and include fixes for vulnerabilities. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>February 13, 2020</b> to all Linux-based platforms.<br />The <b>Node.js</b> release includes security fixes. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Go</b></td><td>Updated to Go release 1.13.8. For details, see <a href="https://golang.org/doc/devel/release.html#go1.13">go1.13</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform to add support for Node versions <a href="https://nodejs.org/en/blog/release/v12.16.1/">12.16.1</a>, <a href="https://nodejs.org/en/blog/release/v12.15.0/">12.15.0</a>, and <a href="https://nodejs.org/en/blog/release/v10.19.0/">10.19.0</a>.<br />The latest Node.js 12.15 and 10.19 versions are security releases and include fixes for vulnerabilities.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2020-02-28-linux.platforms"></a>

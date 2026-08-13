@@ -505,7 +505,7 @@ A change set is created for your request. The response to this request gives you
 
 The change request is added to a queue and processed, including scanning the container images and other information to ensure that it meets the [AWS Marketplace guidelines for container products](https://docs.aws.amazon.com/marketplace/latest/userguide/container-product-policies.html). This process can take a few minutes to hours, depending on the number and size of your containers.
 
-You can check the status of the request through the AWS Marketplace Management Portal, or through the AWS Marketplace Catalog API by using the `[https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeChangeSet.html](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeChangeSet.html)` API operation.
+You can check the status of the request through the AWS Marketplace Management Portal, or through the AWS Marketplace Catalog API by using the `[DescribeChangeSet](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeChangeSet.html)` API operation.
 
 For more information about change sets, see [Working with change sets](catalog-apis.md#working-with-change-sets). For more information about errors in seller product change sets, see [Change set status and errors](work-with-seller-products.md#seller-product-change-set-errors).
 

@@ -14,7 +14,7 @@ To use custom routing in this scenario, you can configure a VPC-CNI plugin to se
 
 **Port mappings**
 When you add a VPC subnet, Global Accelerator creates a static port mapping of listener port ranges to the port ranges supported by the subnet. The port mapping for a specific subnet never changes.
-You can view the port mapping list for a custom routing accelerator programmatically. For more information, see [https://docs.aws.amazon.com/global-accelerator/latest/api/API_ListCustomRoutingPortMappings.html](https://docs.aws.amazon.com/global-accelerator/latest/api/API_ListCustomRoutingPortMappings.html).
+You can view the port mapping list for a custom routing accelerator programmatically. For more information, see [`ListCustomRoutingPortMappings`](https://docs.aws.amazon.com/global-accelerator/latest/api/API_ListCustomRoutingPortMappings.html).
 
 **VPC subnet size**
 VPC subnets that you add to a custom routing accelerator must be a minimum of /28 and a maximum of /17.

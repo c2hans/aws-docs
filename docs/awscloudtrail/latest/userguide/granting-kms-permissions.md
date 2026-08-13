@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/granting-
 # Granting permissions to create a KMS key
 <a name="granting-kms-permissions"></a>
 
-You can grant users permission to create an AWS KMS key with the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSKeyManagementServicePowerUser.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSKeyManagementServicePowerUser.html) policy.
+You can grant users permission to create an AWS KMS key with the [`AWSKeyManagementServicePowerUser`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSKeyManagementServicePowerUser.html) policy.
 
 **To grant permission to create a KMS key**
 

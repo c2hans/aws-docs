@@ -10,12 +10,12 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/change-
 **Change Manager availability change**
 AWS Systems Manager Change Manager will no longer be open to new customers starting November 7, 2025. If you would like to use Change Manager, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [AWS Systems Manager Change Manager availability change](https://docs.aws.amazon.com/systems-manager/latest/userguide/change-manager-availability-change.html).
 
-You can use the sample change template `AWS-HelloWorldChangeTemplate`, which uses the sample Automation runbook `AWS-HelloWorld`, to test the review and approval process after you have finished setting up Change Manager, a tool in AWS Systems Manager. This template is designed for testing or verifying your configured permissions, approver assignments, and approval process. Approval to use this change template in your organization or account has already been provided by AWS. Any change request based on this change template, however, must still be approved by reviewers in your organization or account.
+You can use the sample change template `AWS-HelloWorldChangeTemplate`, which uses the sample Automation runbook `AWS-HelloWorld`, to test the review and approval process after you have finished setting up Change Manager. This template is designed for testing or verifying your configured permissions, approver assignments, and approval process. Approval to use this change template in your organization or account has already been provided by AWS. Any change request based on this change template, however, must still be approved by reviewers in your organization or account.
 
 Rather than make changes to a resource, the result of the runbook workflow associated with this template is to print a message in the output of an Automation step.
 
 **Before you begin**
-Before you begin, ensure you have completed the following tasks:
+Before you begin, make sure you have completed the following tasks:
 + If you're using AWS Organizations to manage change across an organization, complete the organization setup tasks described in [Setting up Change Manager for an organization (management account)](change-manager-organization-setup.md).
 + Configure Change Manager for your delegated administrator account or single account, as described in [Configuring Change Manager options and best practices](change-manager-account-setup.md).
 **Note**

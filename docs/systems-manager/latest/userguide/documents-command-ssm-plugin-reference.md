@@ -62,7 +62,7 @@ The following document plugins are supported on Amazon Elastic Compute Cloud (Am
 With SSM Agent version 3.0.502 and later only, all plugins can use the following inputs:
 
 **finallyStep**
-The last step you want the document to run. If this input is defined for a step, it takes precedence over an `exit` value specified in the `onFailure` or `onSuccess` inputs. In order for a step with this input to run as expected, the step must be the last one defined in the `mainSteps` of your document.
+The last step you want the document to run. If this input is defined for a step, it takes precedence over an `exit` value specified in the `onFailure` or `onSuccess` inputs. For a step with this input to run as expected, the step must be the last one defined in the `mainSteps` of your document.
 Type: Boolean
 Valid values: `true` \| `false`
 Required: No
@@ -440,7 +440,7 @@ The name of the log file.
 
 1. To find the name of the log, in Event Viewer, in the navigation pane, select **Applications and Services Logs**.
 
-1. In the list of logs, right-click the log you want to upload (for example, `Microsoft` > `Windows` > `Backup` > `Operational`), and then select **Create Custom View**.
+1. In the list of logs, open the context menu for the log you want to upload (for example, `Microsoft` > `Windows` > `Backup` > `Operational`), and then select **Create Custom View**.
 
 1. In the **Create Custom View** dialog box, select the **XML** tab. The **LogName** is in the <Select Path=> tag (for example, `Microsoft-Windows-Backup`). Copy this text into the **LogName** parameter.
 Type: String
@@ -959,7 +959,7 @@ Required: Yes
 + owner: The repository owner.
 + repository: The name of the repository.
 + path: The path to the file or directory you want to download.
-+ getOptions: Extra options to retrieve content from a branch other than master or from a specific commit in the repository. getOptions can be omitted if you're using the latest commit in the master branch. If your repository was created after October 1, 2020 the default branch might be named main instead of master. In this case, you will need to specify values for the getOptions parameter.
++ getOptions: Extra options to retrieve content from a branch other than master or from a specific commit in the repository. getOptions can be omitted if you're using the latest commit in the master branch. If your repository was created after October 1, 2020 the default branch might be named main instead of master. In this case, you need to specify values for the getOptions parameter.
 
   This parameter uses the following format:
   + branch:refs/heads/{{branch\_name}}
@@ -1750,7 +1750,7 @@ Required: No
 (Schema version 2.0 or later) Gather metadata about applications, files, and configurations on your managed instances. This plugin runs on Linux and Microsoft Windows Server operating systems. When you configure inventory collection, you start by creating an AWS Systems Manager State Manager association. Systems Manager collects the inventory data when the association is run. If you don't create the association first, and attempt to invoke the `aws:softwareInventory` plugin the system returns the following error:
 
 ```
-The aws:softwareInventory plugin can only be invoked via ssm-associate.
+The aws:softwareInventory plugin can only be invoked through ssm-associate.
 ```
 
 An instance can have only one inventory association configured at a time. If you configure an instance with two or more associations, the inventory association doesn't run and no inventory data is collected. For more information about collecting inventory, see [AWS Systems Manager Inventory](systems-manager-inventory.md).

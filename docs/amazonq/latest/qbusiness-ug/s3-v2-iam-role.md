@@ -7,7 +7,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 # IAM role
 <a name="s3-v2-iam-role"></a>
 
-Whether you use the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API, you must provide an IAM role that allows Amazon Q Business to access your Amazon S3 bucket.
+Whether you use the AWS Management Console or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API, you must provide an IAM role that allows Amazon Q Business to access your Amazon S3 bucket.
 
 If you use the AWS CLI or an AWS SDK, you must create an AWS Identity and Access Management (IAM) policy before you create an Amazon Q Business resource. When you call the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) operation, you provide the Amazon Resource Name (ARN) role with the policy attached.
 
@@ -20,7 +20,7 @@ Cross-account Amazon S3 buckets are supported with Amazon Q Business. However, y
 
 When you use an Amazon S3 bucket as a data source, you must provide a role that has permissions to:
 + Access your Amazon S3 bucket.
-+ Permission to access the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) and [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchDeleteDocument.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchDeleteDocument.html) API operations in order to ingest documents.
++ Permission to access the [`BatchPutDocument`](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) and [`BatchDeleteDocument`](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchDeleteDocument.html) API operations in order to ingest documents.
 + Permission to access the Principal Store APIs needed to ingest access control and identity information from documents.
 
 **To allow Amazon Q to use an Amazon S3 bucket as a data source, use the following role policy:**

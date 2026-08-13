@@ -44,8 +44,8 @@ Each invitation shows the administrator account number, the date that the invita
 You can list behavior graph invitations from the Detective API or the AWS Command Line Interface.
 
 **To retrieve a list of open and accepted invitations to behavior graphs (Detective API, AWS CLI)**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_ListInvitations.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListInvitations.html) operation.
-+ **AWS CLI:** At the command line, run the [https://docs.aws.amazon.com/cli/latest/reference/detective/list-invitations.html](https://docs.aws.amazon.com/cli/latest/reference/detective/list-invitations.html) command.
++ **Detective API:** Use the [`ListInvitations`](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListInvitations.html) operation.
++ **AWS CLI:** At the command line, run the [`list-invitations`](https://docs.aws.amazon.com/cli/latest/reference/detective/list-invitations.html) command.
 
   ```
   aws detective list-invitations

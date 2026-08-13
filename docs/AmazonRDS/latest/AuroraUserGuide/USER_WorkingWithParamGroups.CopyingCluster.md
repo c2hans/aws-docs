@@ -35,7 +35,7 @@ You can't copy a DB cluster parameter group to a different AWS account or AWS Re
 ## AWS CLI
 <a name="USER_WorkingWithParamGroups.CopyingCluster.CLI"></a>
 
-To copy a DB cluster parameter group, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/copy-db-cluster-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/copy-db-cluster-parameter-group.html) command with the following required parameters:
+To copy a DB cluster parameter group, use the AWS CLI [`copy-db-cluster-parameter-group`](https://docs.aws.amazon.com/cli/latest/reference/rds/copy-db-cluster-parameter-group.html) command with the following required parameters:
 + `--source-db-cluster-parameter-group-identifier`
 + `--target-db-cluster-parameter-group-identifier`
 + `--target-db-cluster-parameter-group-description`
@@ -63,7 +63,7 @@ aws rds copy-db-cluster-parameter-group ^
 ## RDS API
 <a name="USER_WorkingWithParamGroups.Copying.API"></a>
 
-To copy a DB cluster parameter group, use the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CopyDBClusterParameterGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CopyDBClusterParameterGroup.html) operation with the following required parameters:
+To copy a DB cluster parameter group, use the RDS API [`CopyDBClusterParameterGroup`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CopyDBClusterParameterGroup.html) operation with the following required parameters:
 + `SourceDBClusterParameterGroupIdentifier`
 + `TargetDBClusterParameterGroupIdentifier`
 + `TargetDBClusterParameterGroupDescription`

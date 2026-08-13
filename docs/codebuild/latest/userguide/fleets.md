@@ -9,12 +9,12 @@ CodeBuild offers the following compute fleets:
 + On-demand fleets
 + Reserved capacity fleets
 
-With on-demand fleets, CodeBuild provides compute for your builds. The machines are destroyed when the build finishes. On-demand fleets are fully managed, and includes automatic scaling capabilities to handle spikes in demand.
+With on-demand fleets, CodeBuild provides compute for your builds. The machines are destroyed when the build finishes. On-demand fleets are fully managed, and include automatic scaling capabilities to handle spikes in demand.
 
 **Note**
-On-demand ﬂeets do not support macOS.
+On-demand fleets do not support macOS.
 
-CodeBuild also offers reserved capacity fleets which contain instances powered by Amazon EC2 that are maintained by CodeBuild. With reserved capacity fleets, you configure a set of dedicated instances for your build environment. These machines remain idle, ready to process builds or tests immediately and reduces build durations. With reserved capacity fleets, your machines are always running and will continue to incur costs as long they're provisioned.
+CodeBuild also offers reserved capacity fleets which contain instances powered by Amazon EC2 that are maintained by CodeBuild. With reserved capacity fleets, you configure a set of dedicated instances for your build environment. These machines remain idle, ready to process builds or tests immediately, and reduce build durations. With reserved capacity fleets, your machines are always running and will continue to incur costs as long as they're provisioned.
 
 **Important**
 Regardless of how long you run an instance for, reserved capacity fleets incur an initial charge per instance, after which there may be additional associated costs. For more information, see [https://aws.amazon.com/codebuild/pricing/](https://aws.amazon.com/codebuild/pricing/).
@@ -63,7 +63,7 @@ Make sure that your fleet role has the necessary permissions. For more informati
      + For **Default behavior**, choose to allow or deny outgoing traffic to all destinations by default.
      + For **Proxy rules**, choose **Add proxy rule** to specify destination domains or IPs to allow or deny network access control to.
    + Select **Configure custom AMI - optional** to use a custom Amazon Machine Image (AMI).
-     + From the **AMI** drop-down menu, select a an Amazon Machine Image (AMI) for your fleet.
+     + From the **AMI** drop-down menu, select an Amazon Machine Image (AMI) for your fleet.
      + In the **Fleet Service Role** field, choose an existing service role.
 **Note**
 Make sure that your fleet role has the necessary permissions. For more information, see [Allow a user to add a permission policy for a fleet service role](auth-and-access-control-iam-identity-based-access-control.md#customer-managed-policies-example-permission-policy-fleet-service-role).
@@ -106,7 +106,7 @@ When using the reserved capacity feature, data cached on fleet instances, includ
 If you choose `ATTRIBUTE_BASED_COMPUTE` as your fleet's `computeType`, you can specify the attributes in a new field called `computeConfiguration`. These attributes include vCPUs, memory, disk space, and the `machineType`. This `machineType` is either `GENERAL` or `NVME`. After specifying one or some of the available attributes, CodeBuild will choose a compute type from the available supported instance types as the finalized `computeConfiguration`.
 
 **Note**
-CodeBuild will choose the cheapest instance that match all input requirements. The chosen instances' memory, vCPUs, and disk space will all be greater than or equal to the input requirements. You can check the resolved `computeConfiguration` in the created or updated fleet.
+CodeBuild will choose the cheapest instance that matches all input requirements. The chosen instances' memory, vCPUs, and disk space will all be greater than or equal to the input requirements. You can check the resolved `computeConfiguration` in the created or updated fleet.
 
 If you input a `computeConfiguration` that is not possible to satisfy in CodeBuild, you'll receive a validation exception. Also note that on-demand fleet overflow behavior will be overridden to queue behavior if the `computeConfiguration` is not available for on-demand.
 

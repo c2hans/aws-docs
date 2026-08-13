@@ -21,7 +21,7 @@ When you request an AI analysis, Elastic Beanstalk runs a script on an instance 
 Before you use AI analysis, verify that your environment meets the following requirements:
 + Environment running a [supported platform version](#health-ai-analysis-supported-platforms)
 + [Instance profile](iam-instanceprofile.md) with required permissions (see [Required permissions](#health-ai-analysis-permissions) below)
-+ **Anthropic use case details (commercial regions)** – In commercial regions, AI analysis uses Anthropic Claude models through Amazon Bedrock. Anthropic requires you to submit a one-time use case details form before you can invoke their models. To submit this form, select any Anthropic model from the model catalog in the [Amazon Bedrock console](https://console.aws.amazon.com/bedrock/), or call the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_PutUseCaseForModelAccess.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_PutUseCaseForModelAccess.html) API. You only need to do this once per AWS account. If you submit the form from the AWS Organizations management account, it automatically covers all member accounts in the organization. For more information, see [Access Amazon Bedrock foundation models](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html).
++ **Anthropic use case details (commercial regions)** – In commercial regions, AI analysis uses Anthropic Claude models through Amazon Bedrock. Anthropic requires you to submit a one-time use case details form before you can invoke their models. To submit this form, select any Anthropic model from the model catalog in the [Amazon Bedrock console](https://console.aws.amazon.com/bedrock/), or call the [`PutUseCaseForModelAccess`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_PutUseCaseForModelAccess.html) API. You only need to do this once per AWS account. If you submit the form from the AWS Organizations management account, it automatically covers all member accounts in the organization. For more information, see [Access Amazon Bedrock foundation models](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html).
   + Even after submitting the use case details form, the first invocation of an Anthropic Claude model in your account requires AWS Marketplace permissions to complete an automatic model subscription. If your instance profile doesn't have these permissions, AI analysis fails with the following error:
 
     `AccessDeniedException: Model access is denied due to IAM user or service role is not authorized to perform the required AWS Marketplace actions (aws-marketplace:ViewSubscriptions, aws-marketplace:Subscribe) to enable access to this model.`
@@ -58,7 +58,7 @@ You can also access AI analysis from the **Logs** page in the navigation pane. C
 You can use the Elastic Beanstalk API through the AWS CLI to request and retrieve AI analysis programmatically.
 
 **Request AI analysis**
-Use the [http://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_RequestEnvironmentInfo.html](http://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_RequestEnvironmentInfo.html) operation with the `InfoType` parameter set to `analyze`.
+Use the [`RequestEnvironmentInfo`](http://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_RequestEnvironmentInfo.html) operation with the `InfoType` parameter set to `analyze`.
 
 **Example AWS CLI - Request AI analysis**
 
@@ -70,7 +70,7 @@ aws elasticbeanstalk request-environment-info \
 ```
 
 **Retrieve AI analysis**
-Use the [http://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_RetrieveEnvironmentInfo.html](http://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_RetrieveEnvironmentInfo.html) operation with the `InfoType` parameter set to `analyze` to retrieve the analysis results.
+Use the [`RetrieveEnvironmentInfo`](http://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_RetrieveEnvironmentInfo.html) operation with the `InfoType` parameter set to `analyze` to retrieve the analysis results.
 
 **Example AWS CLI - Retrieve AI analysis**
 

@@ -28,9 +28,9 @@ When applying resource-based policies to replicas, ensure that you don't deny an
 ### Auto scaling service-linked role
 <a name="globaltables-autoscaling-slr"></a>
 
-When configuring a global table for provisioned capacity mode, auto scaling must be configured for the global table. DynamoDB auto scaling uses the AWS Application Auto Scaling service to dynamically adjust provisioned throughput capacity on your global table replicas. The Application Auto Scaling service creates a service-linked role (SLR) named [https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.html](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.html). This service-linked role is automatically created in your AWS account when you first configure auto scaling for a DynamoDB table. It allows Application Auto Scaling to managed provisioned table capacity and create CloudWatch alarms.
+When configuring a global table for provisioned capacity mode, auto scaling must be configured for the global table. DynamoDB auto scaling uses the AWS Application Auto Scaling service to dynamically adjust provisioned throughput capacity on your global table replicas. The Application Auto Scaling service creates a service-linked role (SLR) named [`AWSServiceRoleForApplicationAutoScaling_DynamoDBTable`](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.html). This service-linked role is automatically created in your AWS account when you first configure auto scaling for a DynamoDB table. It allows Application Auto Scaling to managed provisioned table capacity and create CloudWatch alarms.
 
- When applying resource-based policies to replicas, ensure that you don't deny any permissions defined in the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationAutoscalingDynamoDBTablePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationAutoscalingDynamoDBTablePolicy.html) to the Application Auto Scaling SLR principal, as this will interrupt auto scaling functionality.
+ When applying resource-based policies to replicas, ensure that you don't deny any permissions defined in the [`AWSApplicationAutoscalingDynamoDBTablePolicy`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSApplicationAutoscalingDynamoDBTablePolicy.html) to the Application Auto Scaling SLR principal, as this will interrupt auto scaling functionality.
 
 ### Example IAM policies for service-linked roles
 <a name="globaltables-example-slr"></a>
@@ -79,7 +79,7 @@ The permissions required to create global tables depend on whether you're creati
 The following permissions are required both for initial global table creation and for adding replicas later. These permissions apply to both Multi-Region Eventual Consistency (MREC) and Multi-Region Strong Consistency (MRSC) global tables.
 + Global tables require cross-Region replication, which DynamoDB manages through the [`AWSServiceRoleForDynamoDBReplication`](#globaltables-replication-slr) service-linked role (SLR). The following permission allows DynamoDB to create this role automatically when you create a global table for the first time:
   + `iam:CreateServiceLinkedRole`
-+ To create a global table or add a replica using the [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTable.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTable.html) API, you must have the following permission on the source table resource:
++ To create a global table or add a replica using the [`UpdateTable`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTable.html) API, you must have the following permission on the source table resource:
   + `dynamodb:UpdateTable`
 + You must have the following permissions on the table resource in the Regions for the replicas to be added:
   + `dynamodb:CreateTable`
@@ -339,11 +339,11 @@ This identity-based policy allows you to create a MRSC global table with replica
 ### Updating global tables
 <a name="globaltables-update-iam"></a>
 
-To modify replica settings for an existing global table using the [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTable.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTable.html) API, you need the following permission on the table resource in the Region where you're making the API call:
+To modify replica settings for an existing global table using the [`UpdateTable`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTable.html) API, you need the following permission on the table resource in the Region where you're making the API call:
 + `dynamodb:UpdateTable`
 
 You can additionally update other global table configurations, such as auto scaling policies and Time to Live settings. The following permissions are required for these additional update operations:
-+ To update a replica auto scaling policy with the [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTableReplicaAutoScaling.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTableReplicaAutoScaling.html) API, you must have the following permissions on the table resource in all Regions containing replicas:
++ To update a replica auto scaling policy with the [`UpdateTableReplicaAutoScaling`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTableReplicaAutoScaling.html) API, you must have the following permissions on the table resource in all Regions containing replicas:
   + `application-autoscaling:DeleteScalingPolicy`
   + `application-autoscaling:DeleteScheduledAction`
   + `application-autoscaling:DeregisterScalableTarget`
@@ -354,7 +354,7 @@ You can additionally update other global table configurations, such as auto scal
   + `application-autoscaling:PutScalingPolicy`
   + `application-autoscaling:PutScheduledAction`
   + `application-autoscaling:RegisterScalableTarget`
-+ To update Time to Live settings with the [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTimeToLive.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTimeToLive.html) API, you must have the following permission on the table resource in all Regions containing replicas:
++ To update Time to Live settings with the [`UpdateTimeToLive`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTimeToLive.html) API, you must have the following permission on the table resource in all Regions containing replicas:
   + `dynamodb:UpdateTimeToLive`
 
   Note that Time to Live (TTL) is only supported for global tables configured with Multi-Region Eventual Consistency (MREC). For more information about how global tables work with TTL, see [How DynamoDB global tables work](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_HowItWorks.html).
@@ -368,7 +368,7 @@ To delete a global table, you must remove all replicas. The permissions required
 <a name="globaltables-delete-iam-all-types"></a>
 
 The following permissions are required both for removing individual replicas and for completely deleting global tables. Deleting a global table configuration only removes the replication relationship between tables in different Regions. It does not delete the underlying DynamoDB table in the last remaining Region. The table in the last Region continues to exist as a standard DynamoDB table with the same data and settings. These permissions apply to both Multi-Region Eventual Consistency (MREC) and Multi-Region Strong Consistency (MRSC) global tables.
-+ To remove replicas from a global table using the [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTable.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTable.html) API, you need the following permission on the table resource in the Region from which you're making the API call:
++ To remove replicas from a global table using the [`UpdateTable`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTable.html) API, you need the following permission on the table resource in the Region from which you're making the API call:
   + `dynamodb:UpdateTable`
 + You need the following permissions on the table resource in each Region where you're removing a replica:
   + `dynamodb:DeleteTable`

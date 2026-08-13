@@ -87,7 +87,7 @@ Type: Double
 Required: No
 
  ** [dbNodeStorageSizeInGBs](#API_CreateCloudVmCluster_RequestSyntax) **   <a name="odb-CreateCloudVmCluster-request-dbNodeStorageSizeInGBs"></a>
-The amount of local node storage, in gigabytes (GBs), to allocate for the VM cluster.
+The amount of local node storage, in gigabytes (GB), to allocate for the VM cluster.
 Type: Integer
 Required: No
 
@@ -141,7 +141,7 @@ Valid Values: `BRING_YOUR_OWN_LICENSE | LICENSE_INCLUDED`
 Required: No
 
  ** [memorySizeInGBs](#API_CreateCloudVmCluster_RequestSyntax) **   <a name="odb-CreateCloudVmCluster-request-memorySizeInGBs"></a>
-The amount of memory, in gigabytes (GBs), to allocate for the VM cluster.
+The amount of memory, in gigabytes (GB), to allocate for the VM cluster.
 Type: Integer
 Required: No
 

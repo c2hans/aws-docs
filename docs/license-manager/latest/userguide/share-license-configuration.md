@@ -45,7 +45,7 @@ The following procedure will increase your current quota for `Number of accounts
 
 **To increase the supported accounts quota for License Manager**
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/organizations/describe-organization.html](https://docs.aws.amazon.com/cli/latest/reference/organizations/describe-organization.html) AWS CLI command to determine your organization’s ARN by using the operation:
+1. Use the [describe-organization](https://docs.aws.amazon.com/cli/latest/reference/organizations/describe-organization.html) AWS CLI command to determine your organization’s ARN by using the operation:
 
    ```
    aws organizations describe-organization
@@ -68,7 +68,7 @@ The following procedure will increase your current quota for `Number of accounts
    }
    ```
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/ram/get-resource-shares.html](https://docs.aws.amazon.com/cli/latest/reference/ram/get-resource-shares.html) AWS CLI command to determine your organization’s ARN by using the operation:
+1. Use the [get-resource-shares](https://docs.aws.amazon.com/cli/latest/reference/ram/get-resource-shares.html) AWS CLI command to determine your organization’s ARN by using the operation:
 
    ```
    aws ram  get-resource-shares --resource-owner SELF --tag-filters tagKey=Service,tagValues=LicenseManager --region {{us-east-1}}
@@ -95,7 +95,7 @@ The following procedure will increase your current quota for `Number of accounts
    }
    ```
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/ram/enable-sharing-with-aws-organization.html](https://docs.aws.amazon.com/cli/latest/reference/ram/enable-sharing-with-aws-organization.html) AWS CLI command to enable resource sharing with AWS RAM:
+1. Use the [enable-sharing-with-aws-organization](https://docs.aws.amazon.com/cli/latest/reference/ram/enable-sharing-with-aws-organization.html) AWS CLI command to enable resource sharing with AWS RAM:
 
    ```
    aws ram enable-sharing-with-aws-organization
@@ -105,7 +105,7 @@ The following procedure will increase your current quota for `Number of accounts
    }
    ```
 
-   You can use the [https://docs.aws.amazon.com/cli/latest/reference/organizations/list-aws-service-access-for-organization.html](https://docs.aws.amazon.com/cli/latest/reference/organizations/list-aws-service-access-for-organization.html) AWS CLI command to verify that Organizations lists service principals are enabled for License Manager and AWS RAM:
+   You can use the [list-aws-service-access-for-organization](https://docs.aws.amazon.com/cli/latest/reference/organizations/list-aws-service-access-for-organization.html) AWS CLI command to verify that Organizations lists service principals are enabled for License Manager and AWS RAM:
 
    ```
    aws organizations list-aws-service-access-for-organization
@@ -130,7 +130,7 @@ The following procedure will increase your current quota for `Number of accounts
 **Important**
  It can take up to six hours for AWS RAM to finish this operation for your organization. This process must complete before you can proceed.
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/ram/associate-resource-share.html](https://docs.aws.amazon.com/cli/latest/reference/ram/associate-resource-share.html) AWS CLI command to associate your License Manager resources share with your organization:
+1. Use the [associate-resource-share](https://docs.aws.amazon.com/cli/latest/reference/ram/associate-resource-share.html) AWS CLI command to associate your License Manager resources share with your organization:
 
    ```
    aws ram associate-resource-share --resource-share-arn arn:aws:ram:{{us-east-1}}:{{111122223333}}:resource-share/{{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} --principals arn:aws:organizations::{{111122223333}}:organization/{{o-abcde12345}} --region {{us-east-1}}
@@ -148,7 +148,7 @@ The following procedure will increase your current quota for `Number of accounts
    }
    ```
 
-   You can use the [https://docs.aws.amazon.com/cli/latest/reference/ram/get-resource-share-associations.html](https://docs.aws.amazon.com/cli/latest/reference/ram/get-resource-share-associations.html) AWS CLI command to validate that the resource share association's `status` is `ASSOCIATED`:
+   You can use the [get-resource-share-associations](https://docs.aws.amazon.com/cli/latest/reference/ram/get-resource-share-associations.html) AWS CLI command to validate that the resource share association's `status` is `ASSOCIATED`:
 
    ```
    aws ram get-resource-share-associations --association-type "PRINCIPAL" --principal arn:aws:organizations::{{111122223333}}:organization/{{o-abcde12345}}--resource-share-arns arn:aws:ram:{{us-east-1}}:{{111122223333}}:resource-share/{{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} --region {{us-east-1}}

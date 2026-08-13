@@ -5,20 +5,20 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/solution-
 # Create a custom question and answer chatbot
 <a name="solution-overview"></a>
 
-The QnABot on AWS solution is a generative AI-enabled multi-channel, multi-language conversational chatbot that responds to your customer’s questions, answers, and feedback. It is built on [Amazon Lex](https://aws.amazon.com/lex/), [Amazon Polly](https://aws.amazon.com/polly/), [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/), [Amazon Translate](https://aws.amazon.com/translate/), [Amazon Comprehend](https://aws.amazon.com/comprehend/), [Amazon Kendra](https://aws.amazon.com/kendra/), and [Amazon Bedrock](https://aws.amazon.com/bedrock/). This solution helps you to quickly deploy self-service conversational artificial intelligence (AI) on multiple channels, including your contact centers, websites, social media channels, SMS text messaging, or Amazon Alexa without programming.
+The QnABot on AWS guidance is a multi-channel, multi-language conversational chatbot powered by generative artificial intelligence (generative AI) that responds to your customers' questions, answers, and feedback. It is built on [Amazon Lex](https://aws.amazon.com/lex/), [Amazon Polly](https://aws.amazon.com/polly/), [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/), [Amazon Translate](https://aws.amazon.com/translate/), [Amazon Comprehend](https://aws.amazon.com/comprehend/), [Amazon Kendra](https://aws.amazon.com/kendra/), and [Amazon Bedrock](https://aws.amazon.com/bedrock/). This guidance helps you to quickly deploy self-service conversational artificial intelligence (AI) on multiple channels, including your contact centers, websites, social media channels, SMS text messaging, or Amazon Alexa without programming.
 
-This implementation guide provides an overview of the QnABot on AWS solution, its reference architecture and components, considerations for planning the deployment, configuration steps for deploying the solution to the Amazon Web Services (AWS) Cloud. It also includes a user’s guide with prescriptive guidance for using QnABot on AWS.
+This implementation guide provides an overview of the QnABot on AWS guidance, its reference architecture and components, considerations for planning the deployment, configuration steps for deploying the guidance to the Amazon Web Services (AWS) Cloud. It also includes a user’s guide with prescriptive guidance for using QnABot on AWS.
 
 Use this navigation table to quickly find answers to these questions:
 
 | If you want to . . . | Read . . . |
 | --- | --- |
-| Know the cost for running this solution |  [Cost](cost.md)  |
-| Understand the security considerations for this solution |  [Security](security-1.md)  |
-| Know how to plan for quotas for this solution |  [Quotas](quotas.md)  |
-| Know which AWS Regions are supported for this solution |  [Supported AWS Regions](plan-your-deployment.md#supported-aws-regions)  |
-| View or download the AWS CloudFormation template included in this solution to automatically deploy the infrastructure resources (the "stack") for this solution |  [AWS CloudFormation template](aws-cloudformation-template.md)  |
-| Access the source code and optionally use the AWS Cloud Development Kit (AWS CDK) (AWS CDK) to deploy the solution |  [GitHub repository](https://github.com/aws-solutions/qnabot-on-aws)  |
+| Know the cost for running this guidance |  [Cost](cost.md)  |
+| Understand the security considerations for this guidance |  [Security](security-1.md)  |
+| Know how to plan for quotas for this guidance |  [Quotas](quotas.md)  |
+| Know which AWS Regions are supported for this guidance |  [Supported AWS Regions](plan-your-deployment.md#supported-aws-regions)  |
+| View or download the AWS CloudFormation template included in this guidance to automatically deploy the infrastructure resources (the "stack") for this guidance |  [AWS CloudFormation template](aws-cloudformation-template.md)  |
+| Access the source code and optionally use the AWS Cloud Development Kit (AWS CDK) (AWS CDK) to deploy the guidance |  [GitHub repository](https://github.com/aws-solutions/qnabot-on-aws)  |
 
 ## Use cases
 <a name="use-cases"></a>
@@ -38,7 +38,7 @@ Streamline internal enterprise work activities and enhance productivity.
 ## Features and benefits
 <a name="features-and-benefits"></a>
 
-With the solution’s content management environment and the Contact Center Integration wizard, you can set up and customize an environment that provides the following benefits:
+With the guidance’s content management environment and the Contact Center Integration wizard, you can set up and customize an environment that provides the following benefits:
 + Enhance your customer’s experience by providing personalized tutorials and question and answer support with intelligent multi-part interaction.
 + Uncover insights and business trends.
 + Reduce call center wait times by automating customer support workflows.
@@ -50,7 +50,7 @@ QnABot on AWS provides the following features:
 
  **High quality speech recognition and natural language understanding (NLU)**
 
-This solution uses automatic speech recognition (ASR) and NLU technologies to create a Speech Language Understanding (SLU) system with Amazon Lex. Amazon Lex uses the same proven technology that powers Alexa. Amazon Lex is able to learn the multiple ways users can express their intent based on a few sample utterances provided by the developer. The SLU system takes natural language speech and text input, understands the intent behind the input, and fulfills the user intent by invoking the appropriate response.
+This guidance uses automatic speech recognition (ASR) and NLU technologies to create a Speech Language Understanding (SLU) system with Amazon Lex. Amazon Lex uses the same proven technology that powers Alexa. Amazon Lex is able to learn the multiple ways users can express their intent based on a few sample utterances provided by the developer. The SLU system takes natural language speech and text input, understands the intent behind the input, and fulfills the user intent by invoking the appropriate response.
 
  **Context management**
 
@@ -63,7 +63,7 @@ Integration with the various large language models (LLMs) hosted on Amazon Bedro
 + Dynamically generate answers from relevant FAQs, Amazon Kendra search results, and Amazon Bedrock knowledge bases
 + Ask questions and summarize data from a single uploaded document
 
-Generated responses reduce the number of FAQs you must maintain because the solution synthesizes concise answers from existing documents. You can customize responses to be short, concise, and suitable for voice channel contact center bots as well as website text bots. Text generation is fully compatible with this solution’s multi-language support, allowing users to interact in their chosen languages and receive generated answers in the same language.
+Generated responses reduce the number of FAQs you must maintain because the guidance synthesizes concise answers from existing documents. You can customize responses to be short, concise, and suitable for voice channel contact center bots as well as website text bots. Text generation is fully compatible with this guidance’s multi-language support, allowing users to interact in their chosen languages and receive generated answers in the same language.
 
 **Note**
 By choosing to use the generative responses features, you acknowledge that QnABot on AWS engages third-party generative AI models that AWS does not own or otherwise has any control over (`"Third-Party Generative AI Models"`). Your use of the Third-Party Generative AI Models is governed by the terms provided to you by the Third-Party Generative AI Model providers when you acquired your license to use them (for example, their terms of service, license agreement, acceptable use policy, and privacy policy).
@@ -73,11 +73,11 @@ AWS does not make any representations, warranties, or guarantees regarding the T
 
  **8 kHz telephony audio support**
 
-This solution uses high fidelity with telephone speech interactions, such as through a contact center application or helpdesk. This feature leverages the Amazon Lex speech recognition engine, which has been trained on telephony audio (8 kHz sampling rate).
+This guidance uses high fidelity with telephone speech interactions, such as through a contact center application or helpdesk. This feature leverages the Amazon Lex speech recognition engine, which has been trained on telephony audio (8 kHz sampling rate).
 
  **Multi-turn dialog**
 
-After the solution identifies an intent, it prompts users for information that is required for the intent to be fulfilled (for example, if `"Book hotel"` is the intent, then the user is prompted for the location, check-in date, number of nights, etc.). QnABot on AWS gives you an easy way to build multi-turn conversations for your chatbots. You simply list the slots/parameters you want to collect from your bot users, as well as the corresponding prompts, and the Amazon Lex component takes care of orchestrating the dialogue by prompting for the appropriate slot.
+After the guidance identifies an intent, it prompts users for information that is required for the intent to be fulfilled (for example, if `"Book hotel"` is the intent, then the user is prompted for the location, check-in date, number of nights, etc.). QnABot on AWS gives you an easy way to build multi-turn conversations for your chatbots. You simply list the slots/parameters you want to collect from your bot users, as well as the corresponding prompts, and the Amazon Lex component takes care of orchestrating the dialogue by prompting for the appropriate slot.
 
  **Early implementation of intent and slot matching**
 
@@ -85,7 +85,7 @@ This new capability supports creating dedicated custom Intents for a QnABot Item
 
  **Custom domain names in QnABot content designer and QnABot client**
 
-This solution supports using custom domain names for QnABot content designer and client interfaces. For more details, see the [Set up custom domain name for QnABot content designer and client](https://github.com/aws-solutions/qnabot-on-aws/blob/main/source/docs/custom_domain_name_setup/README.md) section in the GitHub repository.
+This guidance supports using custom domain names for QnABot content designer and client interfaces. For more details, see the [Set up custom domain name for QnABot content designer and client](https://github.com/aws-solutions/qnabot-on-aws/blob/main/source/docs/custom_domain_name_setup/README.md) section in the GitHub repository.
 
  **Importing and exporting questions and answers using CLI**
 
@@ -97,7 +97,7 @@ With the Amazon Kendra Redirect feature, you can now include an Amazon Kendra qu
 
  **Enhanced functionality for Excel**
 
-This solution supports importing QnABot questions and answers from an Excel file when uploaded to the [Amazon Simple Storage Service](https://aws.amazon.com/s3/) (Amazon S3) data folder, as well as support for importing session attributes via Excel.
+This guidance supports importing QnABot questions and answers from an Excel file when uploaded to the [Amazon Simple Storage Service](https://aws.amazon.com/s3/) (Amazon S3) data folder, as well as support for importing session attributes via Excel.
 
 ## Concepts and definitions
 <a name="concepts-and-definitions"></a>

@@ -18,28 +18,22 @@ The benefits of managing your instances with Systems Manager include the followi
 
 *Fleet Manager, Inventory, Patch Manager, and Session Manager are tools in Systems Manager.*
 
-Using Default Host Management Configuration, you can manage EC2 instances without having to manually create an AWS Identity and Access Management (IAM) instance profile. Instead, Default Host Management Configuration creates and applies a default IAM role to ensure that Systems Manager has permissions to manage all instances in the AWS account and AWS Region where it's activated.
+Using Default Host Management Configuration, you can manage EC2 instances without having to manually create an AWS Identity and Access Management (IAM) instance profile. Instead, Default Host Management Configuration creates and applies a default IAM role to make sure that Systems Manager has permissions to manage all instances in the AWS account and AWS Region where it's activated.
 
 If the permissions provided aren't sufficient for your use case, you can also add policies to the default IAM role created by the Default Host Management Configuration. Alternatively, if you don't need permissions for all of the capabilities provided by the default IAM role, you can create your own custom role and policies. Any changes made to the IAM role you choose for Default Host Management Configuration applies to all managed Amazon EC2 instances in the Region and account.
 
 For more information about the policy used by Default Host Management Configuration, see [AWS managed policy: AmazonSSMManagedEC2InstanceDefaultPolicy](security-iam-awsmanpol.md#security-iam-awsmanpol-AmazonSSMManagedEC2InstanceDefaultPolicy).
 
 **Implement least privilege access**
-The procedures in this topic are intended to be performed only by administrators. Therefore, we recommend implementing *least privilege access* in order to prevent non-administrative users from configuring or modifying the Default Host Management Configuration. To view example policies that restrict access to the Default Host Management Configuration, see [Least privilege policy examples for Default Host Management Configuration](#least-privilege-examples) later in this topic.
+The procedures in this topic are intended to be performed only by administrators. Therefore, we recommend implementing *least privilege access* to prevent non-administrative users from configuring or modifying the Default Host Management Configuration. To view example policies that restrict access to the Default Host Management Configuration, see [Least privilege policy examples for Default Host Management Configuration](#least-privilege-examples) later in this topic.
 
 **Important**
 Registration information for instances registered using Default Host Management Configuration is stored locally in the `var/lib/amazon/ssm` or `C:\ProgramData\Amazon` directories. Removing these directories or their files will prevent the instance from acquiring the necessary credentials to connect to Systems Manager using Default Host Management Configuration. In these cases, you must use an IAM instance profile to provide the required permissions to your instance, or recreate the instance.
 
-**Topics**
-+ [Prerequisites](#dhmc-prerequisites)
-+ [Activating the Default Host Management Configuration setting](#dhmc-activate)
-+ [Deactivating the Default Host Management Configuration setting](#dhmc-deactivate)
-+ [Least privilege policy examples for Default Host Management Configuration](#least-privilege-examples)
-
 ## Prerequisites
 <a name="dhmc-prerequisites"></a>
 
-In order to use Default Host Management Configuration in the AWS Region and AWS account where you activate the setting, the following requirements must be met.
+To use Default Host Management Configuration in the AWS Region and AWS account where you activate the setting, the following requirements must be met.
 + An instance to be managed must use Instance Metadata Service Version 2 (IMDSv2).
 
   Default Host Management Configuration doesn't support Instance Metadata Service Version 1. For information about transitioning to IMDSv2, see [Transition to using Instance Metadata Service Version 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-metadata-transition-to-version-2.html) in the *Amazon EC2 User Guide*

@@ -49,7 +49,7 @@ To revert back to the default service-generated URL, update your private environ
 
 Use the following steps to set up the required networking infrastructure to use with your custom domain in your AWS account.
 
-1. Get the IP addresses for the Amazon VPC Endpoint Network Interfaces (ENI). To do this, first, use [https://awscli.amazonaws.com/v2/documentation/api/2.9.6/reference/mwaa/get-environment.html](https://awscli.amazonaws.com/v2/documentation/api/2.9.6/reference/mwaa/get-environment.html) to find the `WebserverVpcEndpointService` for your environment.
+1. Get the IP addresses for the Amazon VPC Endpoint Network Interfaces (ENI). To do this, first, use [`get-environment`](https://awscli.amazonaws.com/v2/documentation/api/2.9.6/reference/mwaa/get-environment.html) to find the `WebserverVpcEndpointService` for your environment.
 
    ```
    aws mwaa get-environment --name {{your-environment-name}}

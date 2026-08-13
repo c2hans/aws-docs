@@ -14,7 +14,7 @@ If you added channels from this workspace to the AWS Support App, you must first
 
 **To delete a Slack workspace configuration**
 
-1. Sign in to the [https://console.aws.amazon.com/support/app](https://console.aws.amazon.com/support/app) and choose **Slack configuration**.
+1. Sign in to the [**AWS Support Center Console**](https://console.aws.amazon.com/support/app) and choose **Slack configuration**.
 
 1. On the **Slack configuration** page, under **Slack workspaces**, choose **Delete a workspace**.
 

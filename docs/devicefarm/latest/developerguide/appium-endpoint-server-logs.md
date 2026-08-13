@@ -22,7 +22,7 @@ Once you've [started an Appium session](appium-endpoint-interaction.md), you can
 
 *Note: this example uses the [command-line tool `curl`](https://curl.se/) to pull the log from Device Farm.*
 
-During or after the session, you can use Device Farm's [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListArtifacts.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListArtifacts.html) API to download the Appium server log.
+During or after the session, you can use Device Farm's [`ListArtifacts`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListArtifacts.html) API to download the Appium server log.
 
 ```
 $ aws devicefarm list-artifacts \
@@ -93,7 +93,7 @@ info Appium   useDrivers: [ 'uiautomator' ] }
 
 *Note: this example uses the third-party `requests` package to download the log, as well as the AWS SDK for Python `boto3`.*
 
-During or after the session, you can use Device Farm's [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListArtifacts.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListArtifacts.html) API to retrieve the Appium server log URL, then download it.
+During or after the session, you can use Device Farm's [`ListArtifacts`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListArtifacts.html) API to retrieve the Appium server log URL, then download it.
 
 ```
 import pathlib
@@ -160,7 +160,7 @@ info Appium { address: '127.0.0.1', allowInsecure: [ 'execute_driver_script', ..
 
 *Note: this example uses the AWS SDK for Java v2 and `HttpClient` to download the log, and is compatible with JDK versions 11 and higher.*
 
-During or after the session, you can use Device Farm's [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListArtifacts.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListArtifacts.html) API to retrieve the Appium server log URL, then download it.
+During or after the session, you can use Device Farm's [`ListArtifacts`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListArtifacts.html) API to retrieve the Appium server log URL, then download it.
 
 ```
 import java.io.IOException;
@@ -261,7 +261,7 @@ info Appium { address: '127.0.0.1', ..., useDrivers: [ 'uiautomator' ] }
 
 *Note: this example uses AWS SDK for JavaScript (v3) and Node 18\+ `fetch` to download the log.*
 
-During or after the session, you can use Device Farm's [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListArtifacts.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListArtifacts.html) API to retrieve the Appium server log URL, then download it.
+During or after the session, you can use Device Farm's [`ListArtifacts`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListArtifacts.html) API to retrieve the Appium server log URL, then download it.
 
 ```
 import { DeviceFarmClient, ListArtifactsCommand } from "@aws-sdk/client-device-farm";
@@ -328,7 +328,7 @@ info Appium { address: '127.0.0.1', allowInsecure: [ 'execute_driver_script', ..
 
 *Note: this example uses the AWS SDK for .NET and `HttpClient` to download the log.*
 
-During or after the session, you can use Device Farm's [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListArtifacts.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListArtifacts.html) API to retrieve the Appium server log URL, then download it.
+During or after the session, you can use Device Farm's [`ListArtifacts`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListArtifacts.html) API to retrieve the Appium server log URL, then download it.
 
 ```
 using System;
@@ -408,7 +408,7 @@ info Appium { address: '127.0.0.1', ..., useDrivers: [ 'uiautomator' ] }
 
 *Note: this example uses the AWS SDK for Ruby and `Net::HTTP` to download the log.*
 
-During or after the session, you can use Device Farm's [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListArtifacts.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListArtifacts.html) API to retrieve the Appium server log URL, then download it.
+During or after the session, you can use Device Farm's [`ListArtifacts`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListArtifacts.html) API to retrieve the Appium server log URL, then download it.
 
 ```
 require "aws-sdk-devicefarm"

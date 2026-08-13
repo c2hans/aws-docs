@@ -11,7 +11,7 @@ Provides replication details for objects stored in the Amazon Security Lake data
 <a name="API_DataLakeReplicationConfiguration_Contents"></a>
 
  ** regions **   <a name="securitylake-Type-DataLakeReplicationConfiguration-regions"></a>
-Specifies one or more centralized rollup Regions. The AWS Region specified in the `region` parameter of the [https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDataLake.html](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDataLake.html) or [https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDataLake.html](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDataLake.html) operations contributes data to the rollup Region or Regions specified in this parameter.
+Specifies one or more centralized rollup Regions. The AWS Region specified in the `region` parameter of the [`CreateDataLake`](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDataLake.html) or [`UpdateDataLake`](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDataLake.html) operations contributes data to the rollup Region or Regions specified in this parameter.
 Replication enables automatic, asynchronous copying of objects across Amazon S3 buckets. S3 buckets that are configured for object replication can be owned by the same AWS account or by different accounts. You can replicate objects to a single destination bucket or to multiple destination buckets. The destination buckets can be in different Regions or within the same Region as the source bucket.
 Type: Array of strings
 Pattern: `(us(-gov)?|af|ap|ca|eu|me|sa)-(central|north|(north(?:east|west))|south|south(?:east|west)|east|west)-\d+`

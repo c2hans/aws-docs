@@ -237,7 +237,7 @@ Choose a preferred method to view the generated findings in your account.
 #### [ API ]
 + Run [ListFindings](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFindings.html) to view the findings for a specific detector ID. You can specific parameters to filter findings.
 
-  To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+  To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
 ------
 #### [ AWS CLI ]
@@ -247,7 +247,7 @@ Choose a preferred method to view the generated findings in your account.
   aws guardduty list-findings --region {{us-east-1}} --detector-id {{12abc34d567e8fa901bc2d34EXAMPLE}}
   ```
 
-  To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+  To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
   For more information about the parameters that you can use to filter findings, see [list-findings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/guardduty/list-findings.html) in the *AWS CLI Command Reference*.
 

@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[NumberOfWorkers](#cfn-glue-job-numberofworkers)" : {{Integer}},
       "[Role](#cfn-glue-job-role)" : {{String}},
       "[SecurityConfiguration](#cfn-glue-job-securityconfiguration)" : {{String}},
-      "[Tags](#cfn-glue-job-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
+      "[Tags](#cfn-glue-job-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
       "[Timeout](#cfn-glue-job-timeout)" : {{Integer}},
       "[WorkerType](#cfn-glue-job-workertype)" : {{String}}
     }
@@ -79,7 +79,7 @@ Properties:
   [Role](#cfn-glue-job-role): {{String}}
   [SecurityConfiguration](#cfn-glue-job-securityconfiguration): {{String}}
   [Tags](#cfn-glue-job-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
   [Timeout](#cfn-glue-job-timeout): {{Integer}}
   [WorkerType](#cfn-glue-job-workertype): {{String}}
 ```
@@ -244,7 +244,7 @@ The name of the `SecurityConfiguration` structure to be used with this job.
 `Tags`  <a name="cfn-glue-job-tags"></a>
 The tags to use with this job.
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Timeout`  <a name="cfn-glue-job-timeout"></a>
@@ -281,7 +281,7 @@ R Worker Types (Memory-optimized workers):
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the job name.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-glue-job--examples"></a>

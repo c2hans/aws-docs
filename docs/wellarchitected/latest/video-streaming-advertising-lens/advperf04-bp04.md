@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ## Resources
 <a name="resources-45"></a>
 +  [Monitor real-time Amazon RDS OS metrics with flexible granularity using Enhanced Monitoring](https://aws.amazon.com/blogs/database/monitor-real-time-amazon-rds-os-metrics-with-flexible-granularity-using-enhanced-monitoring/)
-+  [https://aws.amazon.com/blogs/networking-and-content-delivery/optimizing-adtech-end-user-experiences-using-amazon-cloudwatch-internet-monitor/](https://aws.amazon.com/blogs/networking-and-content-delivery/optimizing-adtech-end-user-experiences-using-amazon-cloudwatch-internet-monitor/)
-+  [https://aws.amazon.com/blogs/database/tuning-amazon-rds-for-mysql-with-performance-insights/](https://aws.amazon.com/blogs/database/tuning-amazon-rds-for-mysql-with-performance-insights/)
-+  [https://aws.amazon.com/blogs/database/analyze-amazon-aurora-mysql-workloads-with-performance-insights/](https://aws.amazon.com/blogs/database/analyze-amazon-aurora-mysql-workloads-with-performance-insights/)
-+  [https://aws.amazon.com/blogs/mt/new-container-insights-with-enhanced-observability-for-amazon-eks/](https://aws.amazon.com/blogs/mt/new-container-insights-with-enhanced-observability-for-amazon-eks/)
++  [*Optimizing AdTech end-user experiences Using Amazon CloudWatch Internet Monitor*](https://aws.amazon.com/blogs/networking-and-content-delivery/optimizing-adtech-end-user-experiences-using-amazon-cloudwatch-internet-monitor/)
++  [*Tuning Amazon RDS for MySQL with Performance Insights*](https://aws.amazon.com/blogs/database/tuning-amazon-rds-for-mysql-with-performance-insights/)
++  [*Analyze Amazon Aurora MySQL Workloads with Performance Insights*](https://aws.amazon.com/blogs/database/analyze-amazon-aurora-mysql-workloads-with-performance-insights/)
++  [*Announcing Amazon CloudWatch Container Insights with Enhanced Observability for Amazon EKS on EC2*](https://aws.amazon.com/blogs/mt/new-container-insights-with-enhanced-observability-for-amazon-eks/)

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 
 The object describing a `CloudWatchEvent` event source type.
 
-AWS Serverless Application Model (AWS SAM) generates an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html) resource when this event type is set.
+AWS Serverless Application Model (AWS SAM) generates an [AWS::Events::Rule](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html) resource when this event type is set.
 
 **Important Note**: [EventBridgeRule](sam-property-statemachine-statemachineeventbridgerule.md) is the preferred event source type to use, instead of `CloudWatchEvent`. `EventBridgeRule` and `CloudWatchEvent` use the same underlying service, API, and CloudFormation resources. However, AWS SAM will add support for new features only to `EventBridgeRule`.
 

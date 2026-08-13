@@ -91,7 +91,7 @@ The following includes a `Task` state that publishes to an Amazon SNS topic, and
 
 ## Optimized Amazon SNS APIs
 <a name="connect-sns-api"></a>
-+ [https://docs.aws.amazon.com/sns/latest/api/API_Publish.html](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html)
++ [`Publish`](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html)
 
 **Parameters in Step Functions are expressed in PascalCase**
 Even if the native service API is in camelCase, for example the API action `startSyncExecution`, you specify parameters in PascalCase, such as: `StateMachineArn`.

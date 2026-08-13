@@ -9,7 +9,7 @@ S3 on Outposts supports AWS PrivateLink, which provides direct management access
 
 With AWS PrivateLink for Amazon S3 on Outposts, you can provision *interface VPC endpoints* in your virtual private cloud (VPC) to access your S3 on Outposts [bucket management](S3OutpostsAPI.md#S3OutpostsAPIsBucket) and [endpoint management](S3OutpostsAPI.md#S3OutpostsAPIs) APIs. Interface VPC endpoints are directly accessible from applications deployed in your VPC or on premises over your virtual private network (VPN) or AWS Direct Connect. You can access the bucket and endpoint management APIs through AWS PrivateLink. AWS PrivateLink doesn't support [data transfer](S3OutpostsAPI.md#S3OutpostsAPIsObject) API operations, such as GET, PUT, and similar APIs. These operations are already transferred privately through the S3 on Outposts endpoint and access point configuration. For more information, see [Networking for S3 on Outposts](S3OutpostsNetworking.md).
 
-Interface endpoints are represented by one or more elastic network interfaces (ENIs) that are assigned private IP addresses from subnets in your VPC. Requests made to interface endpoints for S3 on Outposts are automatically routed to S3 on Outposts bucket and endpoint management APIs on the AWS network. You can also access interface endpoints in your VPC from on-premises applications through AWS Direct Connect or AWS Virtual Private Network (Site-to-Site VPN). For more information about how to connect your VPC with your on-premises network, see the [https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html) and the [https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html).
+Interface endpoints are represented by one or more elastic network interfaces (ENIs) that are assigned private IP addresses from subnets in your VPC. Requests made to interface endpoints for S3 on Outposts are automatically routed to S3 on Outposts bucket and endpoint management APIs on the AWS network. You can also access interface endpoints in your VPC from on-premises applications through AWS Direct Connect or AWS Virtual Private Network (Site-to-Site VPN). For more information about how to connect your VPC with your on-premises network, see the [*Direct Connect User Guide*](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html) and the [*AWS Site-to-Site VPN User Guide*](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html).
 
 Interface endpoints route requests for S3 on Outposts bucket and endpoint management APIs over the AWS network and through AWS PrivateLink, as illustrated in the following diagram.
 
@@ -89,7 +89,7 @@ s3ControlClient = S3ControlClient.builder().region(region)
                                  .endpointOverride(URI.create("https://{{vpce-1a2b3c4d-5e6f.s3-outposts.us-east-1.vpce.amazonaws.com}}"))
                                  .build()
 ```
-For more information, see [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3control/S3ControlClient.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3control/S3ControlClient.html) in the *AWS SDK for Java API Reference*.
+For more information, see [`S3ControlClient`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3control/S3ControlClient.html) in the *AWS SDK for Java API Reference*.
 
 ------
 

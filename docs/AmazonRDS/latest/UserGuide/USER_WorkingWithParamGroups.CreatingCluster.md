@@ -40,7 +40,7 @@ The following limitations apply to the DB cluster parameter group name:
 ## AWS CLI
 <a name="USER_WorkingWithParamGroups.CreatingCluster.CLI"></a>
 
-To create a DB cluster parameter group, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-cluster-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-cluster-parameter-group.html) command.
+To create a DB cluster parameter group, use the AWS CLI [`create-db-cluster-parameter-group`](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-cluster-parameter-group.html) command.
 
 The following example creates a DB cluster parameter group named *mydbclusterparametergroup* for RDS for MySQL version 8.0 with a description of "*My new cluster parameter group*."
 
@@ -91,7 +91,7 @@ This command produces output similar to the following:
 ## RDS API
 <a name="USER_WorkingWithParamGroups.CreatingCluster.API"></a>
 
-To create a DB cluster parameter group, use the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBClusterParameterGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBClusterParameterGroup.html) action.
+To create a DB cluster parameter group, use the RDS API [`CreateDBClusterParameterGroup`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBClusterParameterGroup.html) action.
 
 Include the following required parameters:
 + `DBClusterParameterGroupName`

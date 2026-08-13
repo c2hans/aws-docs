@@ -17,16 +17,27 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **June 17, 2020** to all Amazon Linux AMI platforms.<br />The **Node v12.18.0** and **Node v10.21.0** releases include security fixes. For more information, see **Platform-specific updates** in this table. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-07-06-linux.html) |
-| **Multicontainer Docker** | Updated the ECS agent to version 1.40.0. |
-| **Go** | Updated Go to release 1.14.4. For details, see [go1.14](https://golang.org/doc/devel/release.html#go1.14) in *The Go Programming Language Release History*. |
-| **Tomcat** | Updated Tomcat 8.5 to [Tomcat 8.5.56](https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.56_(markt)).<br />Updated Tomcat 7 to [Tomcat 7.0.104](https://tomcat.apache.org/tomcat-7.0-doc/changelog.html#Tomcat_7.0.104_(violetagg)). |
-| **Node.js** | Updated the Node.js platform to add support for Node versions [12.18.1](https://nodejs.org/en/blog/release/v12.18.1/), [12.18.0](https://nodejs.org/en/blog/release/v12.18.0/) (a security release), [12.16.3](https://nodejs.org/en/blog/release/v12.16.3/), [10.21.0](https://nodejs.org/en/blog/release/v10.21.0/) (a security release), and [10.20.1](https://nodejs.org/en/blog/release/v10.20.1/). |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>June 17, 2020</b> to all Amazon Linux AMI platforms.<br />The <b>Node v12.18.0</b> and <b>Node v10.21.0</b> releases include security fixes. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Multicontainer Docker</b></td><td>Updated the ECS agent to version 1.40.0.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated Go to release 1.14.4. For details, see <a href="https://golang.org/doc/devel/release.html#go1.14">go1.14</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Tomcat</b></td><td>Updated Tomcat 8.5 to <a href="https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.56_(markt)">Tomcat 8.5.56</a>.<br />Updated Tomcat 7 to <a href="https://tomcat.apache.org/tomcat-7.0-doc/changelog.html#Tomcat_7.0.104_(violetagg)">Tomcat 7.0.104</a>.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform to add support for Node versions <a href="https://nodejs.org/en/blog/release/v12.18.1/">12.18.1</a>, <a href="https://nodejs.org/en/blog/release/v12.18.0/">12.18.0</a> (a security release), <a href="https://nodejs.org/en/blog/release/v12.16.3/">12.16.3</a>, <a href="https://nodejs.org/en/blog/release/v10.21.0/">10.21.0</a> (a security release), and <a href="https://nodejs.org/en/blog/release/v10.20.1/">10.20.1</a>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2020-07-06-linux.platforms"></a>

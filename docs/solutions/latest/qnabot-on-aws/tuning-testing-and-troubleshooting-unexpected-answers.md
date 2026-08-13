@@ -12,7 +12,7 @@ You can use the content designer to tune, test, and troubleshoot answers to fix 
 
 By default, QnABot on AWS attempts to match an end user’s question to the list of questions and answers stored in Amazon OpenSearch Service. QnABot on AWS uses full text search to find the item that is the best match for the question asked. Words that are used infrequently score higher than words that are used often, so sentence constructs such as prepositions have lower weighting than unique keywords. The closer the alignment between a question associated with an item and a question asked by the user, the greater the probability that QnABot on AWS will choose that item as the most relevant answer.
 
-The solution tries to find the best answer to questions by applying the keyword filters, and by matching the words used in the end user’s question to the words used in the question fields of the stored answers—​giving preference when the same words are used in the same order.
+The guidance tries to find the best answer to questions by applying the keyword filters, and by matching the words used in the end user’s question to the words used in the question fields of the stored answers—​giving preference when the same words are used in the same order.
 
 You might find that end users ask questions in ways that you haven’t anticipated, resulting in unexpected answers being returned by QnABot on AWS. When this happens, you can use the content designer to troubleshoot and fix the problem.
 
@@ -38,7 +38,7 @@ Use the following procedure to test your questions.
 
 When you ask QnABot on AWS a question, it is processed and transcribed by either Amazon Lex or Alexa using an ASR engine. QnABot on AWS initially trains the ASR to match a wide variety of possible questions and statements, so that the Amazon Lex chatbot and Alexa skill will accept almost any question a user asks.
 
-This solution supports `AMAZON.FallbackIntent` in both Amazon Lex and Alexa, which allows it to process anything end users say without needing to retrain and rebuild the Amazon Lex chatbot or Alexa skill.
+This guidance supports `AMAZON.FallbackIntent` in both Amazon Lex and Alexa, which allows it to process anything end users say without needing to retrain and rebuild the Amazon Lex chatbot or Alexa skill.
 
 Occasionally, the transcription shown in the web client or the Alexa app isn’t accurate. This can happen with unusual words that are confused for other more common words or phrases. Use one of the following approaches to troubleshoot this error:
 + Use the content designer to add additional question variants that match the actual transcription shown in the web client or in the Alexa app; this allows QnABot on AWS to anticipate the transcription accuracy problem, and respond anyway.
@@ -69,7 +69,7 @@ QnABot on AWS can generate additional ASR training data for Alexa using question
 ## Monitoring QnABot on AWS usage and user feedback
 <a name="monitoring-qnabot-on-aws-usage-and-user-feedback"></a>
 
-The solution logs everything that end users say to the chatbot. Amazon Data Firehose stores logged utterances to a new index in Amazon OpenSearch Service.
+The guidance logs everything that end users say to the chatbot. Amazon Data Firehose stores logged utterances to a new index in Amazon OpenSearch Service.
 
 You can also allow your end users to provide feedback about the chatbot’s answers. Use the following procedure to set up the feedback mechanism.
 
@@ -85,7 +85,7 @@ Use the web UI to ask a question, such as: *"What happens if I ask an unanticipa
 
 From the web UI, say or type *"Thumbs down"*, or select the *Thumbs down* icon beside the answer.
 
-The solution publishes *Thumbs down* feedback messages to the Amazon Simple Notification Service (SNS) topic identified by the **FeedbackSNSTopic** on the **Outputs** tab of the CloudFormation stack. To learn how to subscribe to the SNS topic, and receive a message from the each time a user provides feedback, see [Subscribing to an Amazon SNS topic](https://docs.aws.amazon.com/sns/latest/dg/sns-create-subscribe-endpoint-to-topic.html) in the *Amazon Simple Service Notification Developer Guide.*
+The guidance publishes *Thumbs down* feedback messages to the Amazon Simple Notification Service (SNS) topic identified by the **FeedbackSNSTopic** on the **Outputs** tab of the CloudFormation stack. To learn how to subscribe to the SNS topic, and receive a message from the each time a user provides feedback, see [Subscribing to an Amazon SNS topic](https://docs.aws.amazon.com/sns/latest/dg/sns-create-subscribe-endpoint-to-topic.html) in the *Amazon Simple Service Notification Developer Guide.*
 
 If you have selected a non-English language for your QnABot on AWS deployment and have multi-language enabled then you should do the following steps:
 
@@ -111,7 +111,7 @@ Use the following process to visualize the usage logs and feedback using [OpenSe
 ## Using Amazon CloudWatch to monitor and troubleshoot
 <a name="using-amazon-cloudwatch-to-monitor-and-troubleshoot"></a>
 
-The solution’s metrics and logs are available in an Amazon CloudWatch dashboard. Use the following procedure to launch the dashboard and visualize the solution’s AWS resources.
+The guidance’s metrics and logs are available in an Amazon CloudWatch dashboard. Use the following procedure to launch the dashboard and visualize the guidance’s AWS resources.
 
 1. From the CloudFormation stack’s **Outputs** tab, select the **CloudWatchDashboardURL** link.
 
@@ -122,7 +122,7 @@ The solution’s metrics and logs are available in an Amazon CloudWatch dashboar
        **FulfillmentLambda function**
 ![image24](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image24.jpeg)
 
-   1. Inspect the log messages. Each interaction with the solution is delimited by **START** and **END** messages. Between these messages are insights into how the solution processes the question.
+   1. Inspect the log messages. Each interaction with the guidance is delimited by **START** and **END** messages. Between these messages are insights into how the guidance processes the question.
 
 ### Use Log Insights to query logs from CloudWatch groups
 <a name="use-log-insights-to-query-logs-from-cloudwatch-groups"></a>

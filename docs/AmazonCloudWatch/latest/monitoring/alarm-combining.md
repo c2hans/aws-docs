@@ -38,7 +38,7 @@ All composite alarms contain rule expressions. Rule expressions tell composite a
   OK ("alarm-name or alarm-ARN") is TRUE if the alarm is in OK state.
 + INSUFFICIENT\_DATA
 
-  INSUFFICIENT\_DATA (“alarm-name or alarm-ARN") is TRUE if the named alarm is in INSUFFICIENT\_DATA state.
+  INSUFFICIENT\_DATA ("alarm-name or alarm-ARN") is TRUE if the named alarm is in INSUFFICIENT\_DATA state.
 
 **Note**
 TRUE always evaluates to TRUE, and FALSE always evaluates to FALSE.

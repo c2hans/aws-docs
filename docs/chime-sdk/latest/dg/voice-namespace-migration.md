@@ -85,7 +85,7 @@ Both namespaces uses the `chime.amazonaws.com` service principal. If you have ac
 The [Amazon Chime SDK Voice](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Voice.html) namespace only contains APIs to create and manage voice actions. The [Amazon Chime](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime.html) namespace includes APIs for voice and other parts of the Amazon Chime service, such as meetings.
 
 **Tagging**
-Only the [Amazon Chime SDK Voice](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Voice.html) namespace supports tags. For more information about tags, refer to [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_TagResource.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_TagResource.html) and [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UntagResource.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UntagResource.html).
+Only the [Amazon Chime SDK Voice](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Voice.html) namespace supports tags. For more information about tags, refer to [TagResource](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_TagResource.html) and [UntagResource](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UntagResource.html).
 
 **Media Regions**
 If you use the `Chime` namespace to create resources such as Voice Connectors and SIP media application, you can only do so in `us-east-1` and `us-west-2`, and you must use the `us-east-1` endpoint.

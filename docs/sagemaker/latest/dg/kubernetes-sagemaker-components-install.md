@@ -62,7 +62,7 @@ Complete the following steps to set up your node.
 
    Attach the following policies to the IAM role:
    + CloudWatchLogsFullAccess
-   + [https://console.aws.amazon.com/iam/home?region=us-east-1#/policies/arn%3Aaws%3Aiam%3A%3Aaws%3Apolicy%2FAWSCloudFormationFullAccess](https://console.aws.amazon.com/iam/home?region=us-east-1#/policies/arn%3Aaws%3Aiam%3A%3Aaws%3Apolicy%2FAWSCloudFormationFullAccess)
+   + [AWSCloudFormationFullAccess](https://console.aws.amazon.com/iam/home?region=us-east-1#/policies/arn%3Aaws%3Aiam%3A%3Aaws%3Apolicy%2FAWSCloudFormationFullAccess)
    + IAMFullAccess
    + AmazonS3FullAccess
    + AmazonEC2FullAccess
@@ -77,9 +77,9 @@ Complete the following steps to set up your node.
    Install and configure the following tools and resources on your gateway node to access the Amazon EKS cluster and KFP User Interface (UI).
    + [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html): The command line tool for working with AWS services. For AWS CLI configuration information, see [Configuring the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html).
    + [aws-iam-authenticator](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html) version 0.1.31 and above: A tool to use AWS IAM credentials to authenticate to a Kubernetes cluster.
-   + [https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html) version above 0.15: The command line tool for working with Amazon EKS clusters.
-   + [https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl): The command line tool for working with Kubernetes clusters. The version needs to match your Kubernetes version within one minor version.
-   + [https://aws.amazon.com/sdk-for-python/](https://aws.amazon.com/sdk-for-python/).
+   + [`eksctl`](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html) version above 0.15: The command line tool for working with Amazon EKS clusters.
+   + [`kubectl`](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl): The command line tool for working with Kubernetes clusters. The version needs to match your Kubernetes version within one minor version.
+   + [`AWS SDK for Python (Boto3)`](https://aws.amazon.com/sdk-for-python/).
 
      ```
      pip install boto3

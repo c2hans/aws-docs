@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 # Deploy SQL Server to a new or existing VPC (AWS CLI)
 <a name="launch-wizard-sql-deploying-cli"></a>
 
-You can use the AWS Launch Wizard [https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_CreateDeployment.html](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_CreateDeployment.html) API operation to deploy SQL Server. To create a deployment, you must provide values for various *specifications*. Specifications are a collection of settings that define how your deployment should be created and configured. A workload will have one or more deployment patterns with differing required and optional specifications.
+You can use the AWS Launch Wizard [CreateDeployment](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_CreateDeployment.html) API operation to deploy SQL Server. To create a deployment, you must provide values for various *specifications*. Specifications are a collection of settings that define how your deployment should be created and configured. A workload will have one or more deployment patterns with differing required and optional specifications.
 
 If you want to use the **Clone deployment** action on your deployment, you must create your deployment using the Launch Wizard console.
 
@@ -23,7 +23,7 @@ You can create a deployment for your SQL Server application using the `CreateDep
 
 **To create a deployment for SQL Server using the AWS CLI**
 
-1. List the available workload names using the [https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloads.html](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloads.html) Launch Wizard API operation.
+1. List the available workload names using the [ListWorkloads](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloads.html) Launch Wizard API operation.
 
    The following example shows listing the available workloads:
 
@@ -52,7 +52,7 @@ You can create a deployment for your SQL Server application using the `CreateDep
    }
    ```
 
-1. Specify the desired workload name with the [https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloadDeploymentPatterns.html](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloadDeploymentPatterns.html) operation to describe the supported values for the deployment pattern names.
+1. Specify the desired workload name with the [ListWorkloadDeploymentPatterns](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloadDeploymentPatterns.html) operation to describe the supported values for the deployment pattern names.
 
    The following example lists the available workload patterns for a given workload:
 
@@ -73,7 +73,7 @@ You can create a deployment for your SQL Server application using the `CreateDep
    }
    ```
 
-1. Use the workload and deployment pattern names you discovered with the [https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_GetWorkloadDeploymentPattern.html](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_GetWorkloadDeploymentPattern.html) operation to list the specification details.
+1. Use the workload and deployment pattern names you discovered with the [GetWorkloadDeploymentPattern](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_GetWorkloadDeploymentPattern.html) operation to list the specification details.
 
    The following example lists the workload specifications of a given workload and deployment pattern:
 

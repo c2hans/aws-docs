@@ -450,7 +450,7 @@ You may also consider limiting the scope of your transfers. For example, you can
 ## Creating your transfer location for an Amazon S3 general purpose bucket
 <a name="create-s3-location-how-to"></a>
 
-To create a location for your transfer, you need an existing S3 general purpose bucket. If you don't have one, see the [https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html).
+To create a location for your transfer, you need an existing S3 general purpose bucket. If you don't have one, see the [*Amazon S3 User Guide*](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html).
 
 **Important**
 Before you create your location, make sure that you read the following sections:
@@ -534,7 +534,7 @@ You can use this location as a source or destination for your DataSync task.
 ## Creating your transfer location for an S3 on Outposts bucket
 <a name="create-s3-location-outposts-how-to"></a>
 
-To create a location for your transfer, you need an existing Amazon S3 on Outposts bucket. If you don't have one, see the [https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/S3onOutposts.html](https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/S3onOutposts.html).
+To create a location for your transfer, you need an existing Amazon S3 on Outposts bucket. If you don't have one, see the [*Amazon S3 on Outposts User Guide*](https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/S3onOutposts.html).
 
 You also need a DataSync agent. For more information, see [Deploying your Basic mode agent on AWS Outposts](deploy-agents.md#outposts-agent).
 
@@ -551,7 +551,7 @@ When transferring from an S3 on Outposts bucket prefix that contains a large dat
 
 1. For **S3 bucket**, choose an Amazon S3 access point that can access your S3 on Outposts bucket.
 
-   For more information, see the [https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points.html).
+   For more information, see the [*Amazon S3 User Guide*](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points.html).
 
 1. For **S3 storage class when used as a destination**, choose a storage class that you want your objects to use when Amazon S3 is a transfer destination.
 
@@ -595,7 +595,7 @@ DataSync can't transfer objects with a prefix that begins with a slash (`/`) or 
 
 1. For `--s3-bucket-arn`, specify the ARN an Amazon S3 access point that can access your S3 on Outposts bucket.
 
-   For more information, see the [https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points.html).
+   For more information, see the [*Amazon S3 User Guide*](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points.html).
 
 1. For `--s3-storage-class`, specify a storage class that you want your objects to use when Amazon S3 is a transfer destination.
 

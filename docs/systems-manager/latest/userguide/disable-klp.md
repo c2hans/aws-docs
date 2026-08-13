@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/disable
 To turn off Kernel Live Patching, you can either run `yum` commands on your managed nodes or use Run Command and the custom SSM document `AWS-ConfigureKernelLivePatching`.
 
 **Note**
-If you no longer need to use Kernel Live Patching, you can turn it off at any time. In most cases, turning off the feature isn't necessary.
+If you no longer need to use Kernel Live Patching, you can turn it off at any time. Usually, turning off the feature isn't necessary.
 
 For information about turning off Kernel Live Patching by running `yum` commands directly on the managed node, see [Enable Kernel Live Patching](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/al2-live-patching.html#al2-live-patching-enable) in the *Amazon EC2 User Guide*.
 
@@ -62,4 +62,4 @@ When you turn off Kernel Live Patching, the process uninstalls the Kernel Live P
   + `--targets "Key=instanceids,Values={{instance-id1}},{{instance-id2}}"`
   + `--targets "Key=tag:{{tag-key}},Values={{tag-value}}"`
 
-  For information about other options you can use in the command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html) in the *AWS CLI Command Reference*.
+  For information about other options you can use in the command, see [send-command](https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html) in the *AWS CLI Command Reference*.

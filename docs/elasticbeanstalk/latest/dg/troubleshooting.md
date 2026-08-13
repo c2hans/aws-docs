@@ -46,7 +46,7 @@ The document `AWSSupport-TroubleshootElasticBeanstalk` is an Automation runbook 
 
 It also provides an option to upload bundled log files from your environment to AWS Support.
 
-For more information, see [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-troubleshoot-elastic-beanstalk.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-troubleshoot-elastic-beanstalk.html) in the *AWS Systems Manager Automation runbook reference*.
+For more information, see [`AWSSupport-TroubleshootElasticBeanstalk`](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-troubleshoot-elastic-beanstalk.html) in the *AWS Systems Manager Automation runbook reference*.
 
 **Use Systems Manager to run `AWSSupport-TroubleshootElasticBeanstalk` runbook**
 **Note**
@@ -106,7 +106,7 @@ This message indicates that Elastic Beanstalk was not able to fetch one or more 
 + If this event was triggered through the `RestartAppServer` operation, once the issue is fixed, retry the `RestartAppServer` call to resolve the issue.
 + If the event was triggered through an `UpdateEnvironment` call, retry the `UpdateEnvironment` operation.
 
-For examples of these commands, see [https://docs.aws.amazon.com//cli/latest/userguide/cli_elastic-beanstalk_code_examples.html](https://docs.aws.amazon.com//cli/latest/userguide/cli_elastic-beanstalk_code_examples.html). For more information about the API actions for these operations, see the *[AWS Elastic Beanstalk API Reference](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/)*.
+For examples of these commands, see [*AWS CLI examples for Elastic Beanstalk*](https://docs.aws.amazon.com//cli/latest/userguide/cli_elastic-beanstalk_code_examples.html). For more information about the API actions for these operations, see the *[AWS Elastic Beanstalk API Reference](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/)*.
 
 **Event:** *Instance deployment detected one or more multiline environment values, which are not supported for this platform*
 
@@ -114,7 +114,7 @@ Multiline variables are not supported for Amazon Linux 2 platforms, excluding Do
 
 **Event:** *CreateEnvironment fails when a secret is specified*
 
-When `CreateEnvironment` fails and you have secrets as environment variables, you need to address the underlying issue and then use `UpdateEnvironment` to complete the environment setup. Do not use `RestartAppServer`, as it will not be sufficient to bring the environment up in this situation. For examples of these commands, see [https://docs.aws.amazon.com//cli/latest/userguide/cli_elastic-beanstalk_code_examples.html](https://docs.aws.amazon.com//cli/latest/userguide/cli_elastic-beanstalk_code_examples.html). For more information about the API actions for these operations, see the *[AWS Elastic Beanstalk API Reference](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/)*.
+When `CreateEnvironment` fails and you have secrets as environment variables, you need to address the underlying issue and then use `UpdateEnvironment` to complete the environment setup. Do not use `RestartAppServer`, as it will not be sufficient to bring the environment up in this situation. For examples of these commands, see [*AWS CLI examples for Elastic Beanstalk*](https://docs.aws.amazon.com//cli/latest/userguide/cli_elastic-beanstalk_code_examples.html). For more information about the API actions for these operations, see the *[AWS Elastic Beanstalk API Reference](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/)*.
 
 ## Environment creation and instance launches
 <a name="troubleshooting-envcreate"></a>
@@ -166,7 +166,7 @@ These messages indicate that your load balancer health checks are failing on one
 + Verify security groups allow inbound traffic from the load balancer to instances on the health check port. In the EC2 console, check the inbound rules on the instance's security group to confirm the health check port is open to the load balancer's security group.
 + Check CPU and memory utilization in CloudWatch metrics (`CPUUtilization`, `EnvironmentHealth`). Resource exhaustion can cause health check timeouts.
 
-For more details, [retrieve full bundle logs](using-features.logging.md) or [enable CloudWatch log streaming](AWSHowTo.cloudwatchlogs.md). You can also run the [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-troubleshoot-elastic-beanstalk.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-troubleshoot-elastic-beanstalk.html) automation runbook to help diagnose the issue.
+For more details, [retrieve full bundle logs](using-features.logging.md) or [enable CloudWatch log streaming](AWSHowTo.cloudwatchlogs.md). You can also run the [`AWSSupport-TroubleshootElasticBeanstalk`](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-troubleshoot-elastic-beanstalk.html) automation runbook to help diagnose the issue.
 
 **Event:** *Elastic Load Balancer awseb-{{myapp}} Cannot Be Found*
 
@@ -183,7 +183,7 @@ Elastic Beanstalk is not receiving health data from any of your instances. This 
 + Check the health monitoring agent. Look at `/var/log/healthd/daemon.log` for health agent errors and `/var/log/messages` for system-level errors. Verify the healthd service is running by connecting to the instance via SSH and running `systemctl status healthd`.
 + Check for system-level issues such as resource exhaustion (memory, CPU, disk space), NTP/system clock synchronization, and instance metadata service connectivity.
 
-For more details, [retrieve full bundle logs](using-features.logging.md) or [enable CloudWatch log streaming](AWSHowTo.cloudwatchlogs.md). You can also run the [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-troubleshoot-elastic-beanstalk.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-troubleshoot-elastic-beanstalk.html) automation runbook to help diagnose the issue.
+For more details, [retrieve full bundle logs](using-features.logging.md) or [enable CloudWatch log streaming](AWSHowTo.cloudwatchlogs.md). You can also run the [`AWSSupport-TroubleshootElasticBeanstalk`](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-troubleshoot-elastic-beanstalk.html) automation runbook to help diagnose the issue.
 
 ## Environments with dual-stack configured load balancers
 <a name="troubleshooting-dual-stack-load-balancer"></a>

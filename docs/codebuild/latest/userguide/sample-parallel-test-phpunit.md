@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-parall
 # Configure parallel tests with PHPUnit
 <a name="sample-parallel-test-phpunit"></a>
 
-The following is sample of a `buildspec.yml` that shows parallel test execution with PHPUnit on an Linux platform:
+The following is sample of a `buildspec.yml` that shows parallel test execution with PHPUnit on a Linux platform:
 
 ```
 version: 0.2

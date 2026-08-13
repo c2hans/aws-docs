@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/hybrid-
 # Create the IAM service role required for Systems Manager in hybrid and multicloud environments
 <a name="hybrid-multicloud-service-role"></a>
 
-Non-EC2 (Amazon Elastic Compute Cloud) machines in a [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) environment require an AWS Identity and Access Management (IAM) service role to communicate with the AWS Systems Manager service. The role grants AWS Security Token Service (AWS STS) [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) trust to the Systems Manager service. You only need to create a service role for a hybrid and multicloud environment once for each AWS account. However, you might choose to create multiple service roles for different hybrid activations if machines in your hybrid and multicloud environment require different permissions.
+Non-EC2 (Amazon Elastic Compute Cloud) machines in a [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) environment require an AWS Identity and Access Management (IAM) service role to communicate with the AWS Systems Manager service. The role grants AWS Security Token Service (AWS STS) [`AssumeRole`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) trust to the Systems Manager service. You only need to create a service role for a hybrid and multicloud environment once for each AWS account. However, you might choose to create multiple service roles for different hybrid activations if machines in your hybrid and multicloud environment require different permissions.
 
 The following procedures describe how to create the required service role using the Systems Manager console or your preferred command line tool.
 
@@ -48,7 +48,7 @@ The console retains your selection even if you search for other policies.
 
 1. For **Role name**, enter a name for your new IAM server role, such as **SSMServerRole**.
 **Note**
-Make a note of the role name. You will choose this role when you register new machines that you want to manage by using Systems Manager.
+Make a note of the role name. Choose this role when you register new machines that you want to manage by using Systems Manager.
 
 1. (Optional) For **Description**, update the description for this IAM server role.
 
@@ -59,7 +59,7 @@ Make a note of the role name. You will choose this role when you register new ma
 ## Using the AWS CLI to create an IAM service role for Systems Manager hybrid activations
 <a name="create-service-role-hybrid-activation-cli"></a>
 
-Use the following procedure to create a service role for hybrid activation. This procedure uses the `AmazonSSMManagedInstanceCore` policy Systems Manager core functionality. Depending on your use case, you might need to add additional policies to your service role for your non-EC2 machines in a [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) environment to be able to access other tools or AWS services.
+Use the following procedure to create a service role for hybrid activation. This procedure uses the `AmazonSSMManagedInstanceCore` policy for Systems Manager core functionality. Depending on your use case, you might need to add more policies to your service role so that your non-EC2 machines can access other AWS services.
 
 **S3 bucket policy requirement**
 If either of the following cases are true, you must create a custom IAM permission policy for Amazon Simple Storage Service (Amazon S3) buckets before completing this procedure:
@@ -200,7 +200,7 @@ The policies you add for a service profile for managed nodes in a hybrid and mul
 
 ------
 
-   (Optional) Run the following command to allow the CloudWatch agent to run on your managed nodes. This command makes it possible to read information on a node and write it to CloudWatch. Your service profile needs this policy only if you will use services such as Amazon EventBridge or Amazon CloudWatch Logs.
+   (Optional) Run the following command to allow the CloudWatch agent to run on your managed nodes. This command makes it possible to read information on a node and write it to CloudWatch. Your service profile needs this policy only if you use services such as Amazon EventBridge or Amazon CloudWatch Logs.
 
    ```
    aws iam attach-role-policy \
@@ -250,7 +250,7 @@ The policies you add for a service profile for managed nodes in a hybrid and mul
 
 ------
 
-1. Open PowerShell in administrative mode, and in the directory where you created the JSON file, run [New-IAMRole](https://docs.aws.amazon.com//powershell/latest/reference/items/Register-IAMRolePolicy.html) as follows to create a service role. This example creates a role named `SSMServiceRole`. You can choose another name if you prefer.
+1. Open PowerShell in administrative mode, and in the directory where you created the JSON file, run [New-IAMRole](https://docs.aws.amazon.com/powershell/latest/reference/items/New-IAMRole.html) as follows to create a service role. This example creates a role named `SSMServiceRole`. You can choose another name if you prefer.
 
    ```
    New-IAMRole `
@@ -286,7 +286,7 @@ The policies you add for a service profile for managed nodes in a hybrid and mul
        -PolicyArn arn:aws:iam::aws:policy/AmazonSSMDirectoryServiceAccess
    ```
 
-   (Optional) Run the following command to allow the CloudWatch agent to run on your managed nodes. This command makes it possible to read information on a node and write it to CloudWatch. Your service profile needs this policy only if you will use services such as Amazon EventBridge or Amazon CloudWatch Logs.
+   (Optional) Run the following command to allow the CloudWatch agent to run on your managed nodes. This command makes it possible to read information on a node and write it to CloudWatch. Your service profile needs this policy only if you use services such as Amazon EventBridge or Amazon CloudWatch Logs.
 
    ```
    Register-IAMRolePolicy `

@@ -168,6 +168,6 @@ When a foundation model transitions to the Legacy state, customization capabilit
 + Create a new custom model deployment for on-demand inference.
 + Continue using any existing on-demand deployments or any existing Provisioned Throughput (PT) endpoints, provided they were created before the model entered Legacy state.
 
-However, once the model is in Legacy state, you cannot create new fine-tuning jobs on that model. You cannot create new Provisioned Throughput (PT) endpoints. New customers cannot start using the legacy model and existing customers may lose access after 15 days of inactivity.
+However, after the model is in Legacy state, you cannot create new fine-tuning jobs on that model. You cannot create new Provisioned Throughput (PT) endpoints. New customers cannot start using the legacy model and existing customers may lose access after 15 days of inactivity.
 
 Because Legacy models are scheduled for retirement, customers are strongly encouraged to begin transitioning workloads and customized deployments to an Active model as soon as the Legacy announcement is made, and complete migration before the model's End-of-Life (EOL) date.

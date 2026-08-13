@@ -24,7 +24,7 @@ Required: Yes
  ** batchMode **   <a name="iot-Type-IotEventsAction-batchMode"></a>
 Whether to process the event actions as a batch. The default value is `false`.
 When `batchMode` is `true`, you can't specify a `messageId`.
-When `batchMode` is `true` and the rule SQL statement evaluates to an Array, each Array element is treated as a separate message when it's sent to AWS IoT Events by calling [https://docs.aws.amazon.com/iotevents/latest/apireference/API_iotevents-data_BatchPutMessage.html](https://docs.aws.amazon.com/iotevents/latest/apireference/API_iotevents-data_BatchPutMessage.html). The resulting array can't have more than 10 messages.
+When `batchMode` is `true` and the rule SQL statement evaluates to an Array, each Array element is treated as a separate message when it's sent to AWS IoT Events by calling [`BatchPutMessage`](https://docs.aws.amazon.com/iotevents/latest/apireference/API_iotevents-data_BatchPutMessage.html). The resulting array can't have more than 10 messages.
 Type: Boolean
 Required: No
 

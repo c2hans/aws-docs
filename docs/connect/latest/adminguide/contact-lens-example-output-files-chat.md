@@ -2,15 +2,15 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-example-output-files-chat.html
 ---
 
-# Example Contact Lens output files for a chat analyzed by Contact Lens conversational analytics
+# Example conversational analytics output files for a chat analyzed by conversational analytics
 <a name="contact-lens-example-output-files-chat"></a>
 
-This section shows an example schema for a chat conversation that has been analyzed by Contact Lens conversational analytics. The example shows inferred sentiment, matched categories, contact summary, and response time.
+This section shows an example schema for a chat conversation that has been analyzed by conversational analytics. The example shows inferred sentiment, matched categories, contact summary, and response time.
 
-The original, analyzed file contains the full chat transcript. The same content that is present in the chat **Transcript** field on the **Contact details** page is present in `Transcript` field in the original Contact Lens analysis file. In addition, the analyzed file may contain more fields, such as a `Redaction` section to indicate that there is redacted data in the redacted analysis file.
+The original, analyzed file contains the full chat transcript. The same content that is present in the chat **Transcript** field on the **Contact details** page is present in `Transcript` field in the original conversational analytics analysis file. In addition, the analyzed file may contain more fields, such as a `Redaction` section to indicate that there is redacted data in the redacted analysis file.
 
 **Note**
- Some `ConversationCharacteristics` include `DetailsByParticipantRole` maps, with participant roles as keys. However, not all roles from the `Participants` list (such as `CUSTOMER` or `AGENT`) are guaranteed to have corresponding keys in the `DetailsByParticipantRole` objects. The presence of a key for a participant depends on whether there was eligible data for Contact Lens analysis.
+ Some `ConversationCharacteristics` include `DetailsByParticipantRole` maps, with participant roles as keys. However, not all roles from the `Participants` list (such as `CUSTOMER` or `AGENT`) are guaranteed to have corresponding keys in the `DetailsByParticipantRole` objects. The presence of a key for a participant depends on whether there was eligible data for conversational analytics analysis.
 
 ## Categories
 <a name="chat-categories"></a>
@@ -44,7 +44,7 @@ Currently, key highlights are inferred for `text/plain` chat messages only.
 ### Overall sentiment
 <a name="chat-overallsentiment"></a>
 
-The `DetailsByParticipantRole` field sentiment score for contact participants is similar to the Contact Lens for speech analytics file.
+The `DetailsByParticipantRole` field sentiment score for contact participants is similar to the conversational analytics for speech analytics file.
 
 `DetailsByInteraction` field has `CUSTOMER` sentiment score for parts of chat interaction `WithAgent` and `WithoutAgent`. If there were no customer messages in those parts of interaction, the respective field will be absent.
 
@@ -71,7 +71,7 @@ Sentiment shift provides information about how the participant's sentiment chang
 
 To calculate the `Average` and `Maximum` response times for a given participant, they need to respond to a message from another participant (`AGENT` needs to responds to the `CUSTOMER`, or vice versa).
 
-For example, if there was only one message from `CUSTOMER` and then only one message from `AGENT` before the chat ended, Contact Lens will calculate a response time for the `AGENT`, but not for the `CUSTOMER`.
+For example, if there was only one message from `CUSTOMER` and then only one message from `AGENT` before the chat ended, conversational analytics will calculate a response time for the `AGENT`, but not for the `CUSTOMER`.
 
 **Note**
 Currently, response time is inferred is for ` text/plain`, `text/markdown` chat messages only.

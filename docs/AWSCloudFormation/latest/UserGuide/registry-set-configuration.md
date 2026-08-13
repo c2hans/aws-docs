@@ -20,8 +20,8 @@ For more information about how configuration definitions are defined when develo
 <a name="registry-set-configuration-considerations"></a>
 
 If your configuration data includes dynamic references to values stored in AWS Systems Manager or AWS Secrets Manager, any role used to provision the type (for example, when creating or updating a stack) must have the proper permissions to retrieve that value. Specifically:
-+ If the configuration data contains a parameter stored in AWS Systems Manager Parameter Store, the user or role used to provision the type must have permissions to call [https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameter.html](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameter.html).
-+ If the configuration data contains a secret stored in AWS Secrets Manager, the user or role used to provision the type must have permissions to call [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html).
++ If the configuration data contains a parameter stored in AWS Systems Manager Parameter Store, the user or role used to provision the type must have permissions to call [GetParameter](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameter.html).
++ If the configuration data contains a secret stored in AWS Secrets Manager, the user or role used to provision the type must have permissions to call [GetSecretValue](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html).
 
 For more information, see [Get values stored in other services using dynamic references](dynamic-references.md).
 
@@ -70,12 +70,12 @@ Follow the steps in this section to use the AWS CLI to:
 + Update extension configuration data for your account
 
 **To view the current configuration data for an extension**
-+ Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-type.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-type.html) command to return detailed information about the extension. The `ConfigurationSchema` element of the output contains the current configuration definition of the extension in a given Region.
++ Use the [describe-type](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-type.html) command to return detailed information about the extension. The `ConfigurationSchema` element of the output contains the current configuration definition of the extension in a given Region.
 
-  Alternatively, use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/batch-describe-type-configurations.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/batch-describe-type-configurations.html) command to return configuration data about multiple extensions.
+  Alternatively, use the [batch-describe-type-configurations](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/batch-describe-type-configurations.html) command to return configuration data about multiple extensions.
 
 **To update configuration data for an extension**
-+ Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html) command to specify the configuration data. The JSON you pass for `--configuration` must validate against the extension's configuration schema.
++ Use the [set-type-configuration](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html) command to specify the configuration data. The JSON you pass for `--configuration` must validate against the extension's configuration schema.
 
   In the following example, the **set-type-configuration** command specifies the configuration data {{`"{"CredentialKey": "testUserCredential"}"`}} for the `--configuration` option.
 

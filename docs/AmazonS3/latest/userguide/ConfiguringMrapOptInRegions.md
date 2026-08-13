@@ -45,7 +45,7 @@ If you disable opt-in Region that is part of your Multi-Region Access Point, req
 ## Enabling a previously disabled AWS opt-in Region
 <a name="EnablingDisabledMrapOptInRegions"></a>
 
-To enable an opt-in AWS Region that was previously disabled for your Multi-Region Access Point, make sure to update your AWS account settings. After you re-enable the opt-in Region, run the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutMultiRegionAccessPointPolicy.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutMultiRegionAccessPointPolicy.html) API operation to apply the Multi-Region Access Points policy to the opt-in Region.
+To enable an opt-in AWS Region that was previously disabled for your Multi-Region Access Point, make sure to update your AWS account settings. After you re-enable the opt-in Region, run the [PutMultiRegionAccessPointPolicy](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutMultiRegionAccessPointPolicy.html) API operation to apply the Multi-Region Access Points policy to the opt-in Region.
 
 If your Multi-Region Access Point is accessed through a VPC endpoint, we recommend that you update your VPCE policy and use the [ModifyVpcEndpoint](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpcEndpoint.html) API operation to apply the updated VPC endpoint policy to the re-enabled opt-in Region.
 

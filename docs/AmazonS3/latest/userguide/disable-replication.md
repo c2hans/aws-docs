@@ -32,7 +32,7 @@ If you disable a replication rule and then later re-enable the rule, any new or 
 ## Pausing or stopping replication
 <a name="replication-pause"></a>
 
-To temporarily pause replication and have it automatically resume later, you can use the `aws:s3:bucket-pause-replication` action in AWS Fault Injection Service. For more information, see [https://docs.aws.amazon.com/fis/latest/userguide/fis-actions-reference.html#bucket-pause-replication](https://docs.aws.amazon.com/fis/latest/userguide/fis-actions-reference.html#bucket-pause-replication) and [Pause S3 Replication](https://docs.aws.amazon.com/fis/latest/userguide/cross-region-scenario.html#cross-region-scenario-actions-pause-s3-replication) in the *AWS Fault Injection Service User Guide*.
+To temporarily pause replication and have it automatically resume later, you can use the `aws:s3:bucket-pause-replication` action in AWS Fault Injection Service. For more information, see [aws:s3:bucket-pause-replication](https://docs.aws.amazon.com/fis/latest/userguide/fis-actions-reference.html#bucket-pause-replication) and [Pause S3 Replication](https://docs.aws.amazon.com/fis/latest/userguide/cross-region-scenario.html#cross-region-scenario-actions-pause-s3-replication) in the *AWS Fault Injection Service User Guide*.
 
 To stop replication in Amazon S3, we recommend disabling your replication rules. If you disable a replication rule and then later re-enable the rule, any new or changed objects that weren't replicated while the rule was disabled are *not* automatically replicated when the rule is re-enabled. To replicate those objects, you must use S3 Batch Replication. For more information, see [Replicating existing objects with Batch Replication](s3-batch-replication-batch.md).
 

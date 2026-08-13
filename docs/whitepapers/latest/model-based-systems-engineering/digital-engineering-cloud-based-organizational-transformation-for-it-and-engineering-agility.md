@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
 
 ![Diagram showing Enterprise Transformation Journey with Cloud](http://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/enterprise-transformation-journey.png)
 
- The above figure shows a typical journey for an enterprise. We typically see customers start with a *project phase* where they start testing the cloud implementation. Then, the foundation stage has been setup with employing frameworks such as [https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/overview-aws-cloud-adoption-framework.pdf#introduction](https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/overview-aws-cloud-adoption-framework.pdf#introduction) such as building **Cloud Center of Excellence (CCoE)** and working on **Well-Architected Strategies**.
+ The above figure shows a typical journey for an enterprise. We typically see customers start with a *project phase* where they start testing the cloud implementation. Then, the foundation stage has been setup with employing frameworks such as [**Cloud Adoption Framework**](https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/overview-aws-cloud-adoption-framework.pdf#introduction) such as building **Cloud Center of Excellence (CCoE)** and working on **Well-Architected Strategies**.
 
  The next stages of *migration* and *innovation* are when the value of the cloud becomes evident. These are the stages where our customers benefit from differentiated experience.
 

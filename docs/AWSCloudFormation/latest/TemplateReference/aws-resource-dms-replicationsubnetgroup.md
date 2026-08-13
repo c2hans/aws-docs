@@ -81,14 +81,7 @@ One or more tags to be assigned to the subnet group.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the replication subnet group, such as `mystack-myrepsubnetgroup-0a12bc456789de0fg`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
-
-### Fn::GetAtt
-<a name="aws-resource-dms-replicationsubnetgroup-return-values-fn--getatt"></a>
-
-The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
-
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-dms-replicationsubnetgroup--examples"></a>

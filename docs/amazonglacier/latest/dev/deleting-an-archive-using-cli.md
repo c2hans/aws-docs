@@ -46,7 +46,7 @@ You can delete archives in Amazon Glacier (Amazon Glacier) using the AWS Command
 ## Example: Deleting an Archive Using the AWS CLI
 <a name="Deleting-Archives-CLI-Implementation"></a>
 
-1. Use the [http://docs.aws.amazon.com/cli/latest/reference/glacier/initiate-job.html](http://docs.aws.amazon.com/cli/latest/reference/glacier/initiate-job.html) command to start an inventory retrieval job.
+1. Use the [initiate-job](http://docs.aws.amazon.com/cli/latest/reference/glacier/initiate-job.html) command to start an inventory retrieval job.
 
    ```
    aws glacier initiate-job --vault-name {{awsexamplevault}} --account-id {{111122223333}} --job-parameters="{\"Type\":\"inventory-retrieval\"}"
@@ -61,7 +61,7 @@ You can delete archives in Amazon Glacier (Amazon Glacier) using the AWS Command
    }
    ```
 
-1. Use the [http://docs.aws.amazon.com/cli/latest/reference/glacier/describe-job.html](http://docs.aws.amazon.com/cli/latest/reference/glacier/describe-job.html) command to check status of the previous retrieval job.
+1. Use the [describe-job](http://docs.aws.amazon.com/cli/latest/reference/glacier/describe-job.html) command to check status of the previous retrieval job.
 
    ```
    aws glacier describe-job --vault-name {{awsexamplevault}} --account-id {{111122223333}} --job-id {{*** jobid ***}}
@@ -89,7 +89,7 @@ You can delete archives in Amazon Glacier (Amazon Glacier) using the AWS Command
 
    You can set notification configuration for specific events on the vault. For more information, see [Configuring Vault Notifications in Amazon Glacier](configuring-notifications.md). Amazon Glacier sends a message to the specified SNS topic anytime the specific event occurs.
 
-1. When it's complete, use the [http://docs.aws.amazon.com/cli/latest/reference/glacier/get-job-output.html](http://docs.aws.amazon.com/cli/latest/reference/glacier/get-job-output.html) command to download the retrieval job to the file `output.json`.
+1. When it's complete, use the [get-job-output](http://docs.aws.amazon.com/cli/latest/reference/glacier/get-job-output.html) command to download the retrieval job to the file `output.json`.
 
    ```
    aws glacier get-job-output --vault-name {{awsexamplevault}} --account-id {{111122223333}} --job-id {{*** jobid ***}} output.json

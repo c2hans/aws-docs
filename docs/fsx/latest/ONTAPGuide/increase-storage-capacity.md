@@ -135,6 +135,6 @@ To decrease the SSD storage capacity and provisioned IOPS for an FSx for ONTAP f
    }
    ```
 
-To monitor the progress of the update, use the [https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-file-systems.html](https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-file-systems.html) AWS CLI command. Look for the `AdministrativeActions` section in the output.
+To monitor the progress of the update, use the [`describe-file-systems`](https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-file-systems.html) AWS CLI command. Look for the `AdministrativeActions` section in the output.
 
-For more information, see [https://docs.aws.amazon.com/fsx/latest/APIReference/API_AdministrativeAction.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_AdministrativeAction.html) in the Amazon FSx for NetApp ONTAP API Reference.
+For more information, see [`AdministrativeAction`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_AdministrativeAction.html) in the Amazon FSx for NetApp ONTAP API Reference.

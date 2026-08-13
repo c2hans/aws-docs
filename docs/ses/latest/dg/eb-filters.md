@@ -75,10 +75,10 @@ The following reference table lists all the policy statement properties that are
 
 | Property | Expression type |
 | --- | --- |
-| Recipient address<br />Abusix Mail Intelligence [*(if subscribed)*](eb-addons.md)+  Listed on <br />Spamhaus Domain Block List [*(if subscribed)*](eb-addons.md)+  Listed on  | [https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_IngressStringExpression.html](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_IngressStringExpression.html) |
-| Sender IP range | [https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_IngressIpv4Expression.html](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_IngressIpv4Expression.html) |
-| TLS protocol version | [https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_IngressTlsProtocolExpression.html](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_IngressTlsProtocolExpression.html) |
-| Abusix Mail Intelligence [*(if subscribed)*](eb-addons.md)+  Is listed <br />Spamhaus Domain Block List [*(if subscribed)*](eb-addons.md)+  Is listed  | [https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_IngressBooleanExpression.html](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_IngressBooleanExpression.html) |
+| Recipient address<br />Abusix Mail Intelligence [*(if subscribed)*](eb-addons.md)+  Listed on <br />Spamhaus Domain Block List [*(if subscribed)*](eb-addons.md)+  Listed on  | [*Valid operators and values for string expressions*](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_IngressStringExpression.html) |
+| Sender IP range | [*Valid operators and values for IP expressions*](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_IngressIpv4Expression.html) |
+| TLS protocol version | [*Valid operators and values for TLS protocol expressions*](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_IngressTlsProtocolExpression.html) |
+| Abusix Mail Intelligence [*(if subscribed)*](eb-addons.md)+  Is listed <br />Spamhaus Domain Block List [*(if subscribed)*](eb-addons.md)+  Is listed  | [*Valid operators and values for boolean expressions*](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_IngressBooleanExpression.html) |
 
 **Recipient address matching and subaddressing**
 The *Recipient address* property uses the full SMTP envelope recipient address exactly as received, including any subaddress extension (also known as "plus addressing"). For example, if a message is sent to `user+tag@example.com`, the recipient address evaluated in the policy statement is `user+tag@example.com`, not `user@example.com`.

@@ -44,7 +44,7 @@ You can conduct investigations without any additional configuration in CloudWatc
 Configuration of CloudWatch investigations creates an investigation group in your account. Each account can have one investigation group with up to 2 concurrent active investigations in the investigation group. Each month, each account can create up to 150 enhanced investigations with AI analysis. Investigation groups are account-level configurations. When an investigation group is created in an account, it is used with all investigations started in the account.
 
 **Note**
-When you configure CloudWatch investigations , CloudWatch will use the provided IAM role to periodically scan resources in your account for the purpose of mapping resources and telemetry. Some services like Lambda will invoke the KMS decrypt API on behalf of CloudWatch for certain API calls related to describing or listing resources. This background process is performed to ensure that the topology reflects the most recent state of the account and its dependencies. This refresh occurs regardless of whether there is an active investigation or not.
+When you configure CloudWatch investigations , CloudWatch will use the provided IAM role to periodically scan resources in your account for the purpose of mapping resources and telemetry. Some services like Lambda will invoke the KMS decrypt API on behalf of CloudWatch for certain API calls related to describing or listing resources. This background process is performed to make sure that the topology reflects the most recent state of the account and its dependencies. This refresh occurs regardless of whether there is an active investigation or not.
 
 **Topics**
 + [Methods to create an investigation](creation-methods.md)

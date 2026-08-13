@@ -55,7 +55,7 @@ To enable clients to communicate with an MSK cluster that uses IAM access contro
    + Python: [https://github.com/aws/aws-msk-iam-sasl-signer-python\#get-started](https://github.com/aws/aws-msk-iam-sasl-signer-python#get-started)
    + Go: [https://github.com/aws/aws-msk-iam-sasl-signer-go\#getting-started](https://github.com/aws/aws-msk-iam-sasl-signer-go#getting-started)
    + .NET: [https://github.com/aws/aws-msk-iam-sasl-signer-net\#getting-started](https://github.com/aws/aws-msk-iam-sasl-signer-net#getting-started)
-   + JAVA: SASL\_OAUTHBEARER support for Java is available through the [https://github.com/aws/aws-msk-iam-auth/releases](https://github.com/aws/aws-msk-iam-auth/releases) jar file
+   + JAVA: SASL\_OAUTHBEARER support for Java is available through the [`aws-msk-iam-auth`](https://github.com/aws/aws-msk-iam-auth/releases) jar file
 
 ## Use the MSK custom AWS\_MSK\_IAM mechanism to configure IAM
 <a name="configure-clients-for-iam-access-control-msk-iam"></a>

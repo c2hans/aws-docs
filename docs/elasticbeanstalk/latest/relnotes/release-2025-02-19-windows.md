@@ -18,25 +18,48 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **OS** | **Details** |
-| --- | --- |
-| **Framework** | **Details** |
-| --- | --- |
-| **Component** | **Details** |
-| --- | --- |
-| **Operating system updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-02-19-windows.html)  |
-| **Windows security updates** | Applied February 2025 security updates for Windows.<br />This release includes updates from the monthly Microsoft *Patch Tuesday* Windows release. Windows security updates in this release are current up to the second Tuesday of the month.<br />For more details and a list of security updates, see the Microsoft [Security Update Guide](https://portal.msrc.microsoft.com/en-us/security-guidance). |
-| **Framework updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-02-19-windows.html)  |
-| **AWS component updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-02-19-windows.html)  |
-| **Additional changes with this release** | [Elastic Beanstalk Amazon S3 bucket](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.S3.html) ownership checks no longer require s3:GetBucketLocation IAM permissions. |
-| **Windows Server 2025** | **\*\*New\!\*\*** — Added support for Windows Server 2025 as two new Windows Server platform branches:+  Windows Server 2025 with IIS 10.0 <br />+  Windows Server Core 2025 with IIS 10.0 <br />For more information, see [ What's new in Windows Server 2025](https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025) on the Microsoft website. |
-| **.NET Core** | Updated .NET 8 to version 8.0.13. |
-| **AMI** | Updated the base AMI to version 2025.02.13. |
-| **AWS SDK for .NET** | Updated the SDK to version 3.7.981.0. |
-| **CloudWatch Agent** | Updated the CloudWatch Agent to version 1.300052.0b1024. |
-| **SSM Agent** | Updated the SSM Agent to version 3.3.1611.0. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Operating system updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>OS</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows Server 2025</b></td><td><b>**New!**</b> — Added support for Windows Server 2025 as two new Windows Server platform branches:<ul><li> Windows Server 2025 with IIS 10.0 </li><li> Windows Server Core 2025 with IIS 10.0 </li></ul><br />For more information, see <a href="https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025"> What's new in Windows Server 2025</a> on the Microsoft website.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+  <tr><td><b>Windows security updates</b></td><td>Applied February 2025 security updates for Windows.<br />This release includes updates from the monthly Microsoft <i>Patch Tuesday</i> Windows release. Windows security updates in this release are current up to the second Tuesday of the month.<br />For more details and a list of security updates, see the Microsoft <a href="https://portal.msrc.microsoft.com/en-us/security-guidance">Security Update Guide</a>.</td></tr>
+  <tr><td><b>Framework updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Framework</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET 8 to version 8.0.13.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+  <tr><td><b>AWS component updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version 2025.02.13.</td></tr>
+  <tr><td><b>AWS SDK for .NET</b></td><td>Updated the SDK to version 3.7.981.0.</td></tr>
+  <tr><td><b>CloudWatch Agent</b></td><td>Updated the CloudWatch Agent to version 1.300052.0b1024.</td></tr>
+  <tr><td><b>SSM Agent</b></td><td>Updated the SSM Agent to version 3.3.1611.0.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+  <tr><td><b>Additional changes with this release</b></td><td><a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.S3.html">Elastic Beanstalk Amazon S3 bucket</a> ownership checks no longer require s3:GetBucketLocation IAM permissions.</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2025-02-19-windows.platforms"></a>

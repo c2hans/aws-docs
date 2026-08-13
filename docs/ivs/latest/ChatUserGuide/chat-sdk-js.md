@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-sdk-js.htm
 # IVS Chat Client Messaging SDK: JavaScript Guide
 <a name="chat-sdk-js"></a>
 
-The Amazon Interactive Video (IVS) Chat Client Messaging JavaScript SDK allows you to incorporate our [https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/welcome.html](https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/welcome.html) on platforms using a Web browser.
+The Amazon Interactive Video (IVS) Chat Client Messaging JavaScript SDK allows you to incorporate our [*Amazon IVS Chat Messaging API*](https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/welcome.html) on platforms using a Web browser.
 
 **Latest version of IVS Chat Client Messaging JavaScript SDK:** 1.0.2 ([Release Notes](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/release-notes.html#nov09-22))
 

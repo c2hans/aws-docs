@@ -55,7 +55,7 @@ A logically air-gapped vault is a secondary vault that serves as part of a data 
    If this alias is not included, copy operations from a logically air-gapped vault to a backup vault and restore operations of EC2 instances from a logically air-gapped vault will fail with an error message such as "Source AMI ami-xxxxxx not found in Region."
 + The ARN (Amazon Resource Name) of a recovery point stored in a logically air-gapped vault will have `backup` in place of the underlying resource type. For example, if the original ARN begins with `arn:aws:ec2:{{region}}::image/ami-*` , then the ARN of the recovery point in the logically air-gapped vault will be `arn:aws:backup:{{region}}:{{account-id}}:recovery-point:*`.
 
-  You can use the CLI command [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListRecoveryPointsByBackupVault.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListRecoveryPointsByBackupVault.html) to determine the ARN.
+  You can use the CLI command [`list-recovery-points-by-backup-vault`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListRecoveryPointsByBackupVault.html) to determine the ARN.
 
 ## Compare and contrast with a standard backup vault
 <a name="lag-compare-and-contrast"></a>
@@ -135,7 +135,7 @@ Create a logically air-gapped vault from CLI
 
 You can use AWS CLI to programmatically carry out operations for logically air-gapped vaults. Each CLI is specific to the AWS service in which it originates. Commands related to sharing are prepended with `aws ram`; all other commands should be prepended with `aws backup`.
 
-Use the CLI command [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-logically-air-gapped-backup-vault.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-logically-air-gapped-backup-vault.html), modified with the following parameters:
+Use the CLI command [`create-logically-air-gapped-backup-vault`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-logically-air-gapped-backup-vault.html), modified with the following parameters:
 
 ```
 aws backup create-logically-air-gapped-backup-vault
@@ -174,7 +174,7 @@ aws backup create-logically-air-gapped-backup-vault
 
 See [CreateLogicallyAirGappedBackupVault API response elements](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CreateLogicallyAirGappedBackupVault.html) for information after the create operation. If the operation was successful, the new logically air-gapped vault will have the VaultState of `CREATING`.
 
-Once the creation is complete and the KMS encrypted key has been assigned, the VaultState will transition to `AVAILABLE`. Once available, the vault can be used. `VaultState` can be retrieved by calling [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeBackupVault.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeBackupVault.html) or [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListBackupVaults.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListBackupVaults.html).
+Once the creation is complete and the KMS encrypted key has been assigned, the VaultState will transition to `AVAILABLE`. Once available, the vault can be used. `VaultState` can be retrieved by calling [`DescribeBackupVault`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeBackupVault.html) or [`ListBackupVaults`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListBackupVaults.html).
 
 ------
 
@@ -201,7 +201,7 @@ You can see the vault details such as summary, the recovery points, the protecte
 
 View details of a logically air-gapped vault through CLI
 
-The CLI command [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/describe-backup-vault.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/describe-backup-vault.html) can be used to obtain details about a vault. Parameter `backup-vault-name` is required; `region` is optional.
+The CLI command [`describe-backup-vault`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/describe-backup-vault.html) can be used to obtain details about a vault. Parameter `backup-vault-name` is required; `region` is optional.
 
 ```
 aws backup describe-backup-vault
@@ -246,7 +246,7 @@ When you create or copy a backup of other resource types (ones [not fully manage
 
 **Create or copy backups to a logically air-gapped vault through a backup plan**
 
-You can copy a backup (recovery point) from a standard backup vault to a logically air-gapped vault by [creating a new backup plan](creating-a-backup-plan.md) or [updating an existing one](updating-a-backup-plan.md) in the AWS Backup console or through the AWS CLI commands [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-backup-plan.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-backup-plan.html) and [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/update-backup-plan.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/update-backup-plan.html). You can also create backups directly in a logically air-gapped vault by using it as a primary target. See [Primary backups to logically air-gapped vaults](lag-vault-primary-backup.md) for more details.
+You can copy a backup (recovery point) from a standard backup vault to a logically air-gapped vault by [creating a new backup plan](creating-a-backup-plan.md) or [updating an existing one](updating-a-backup-plan.md) in the AWS Backup console or through the AWS CLI commands [`create-backup-plan`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-backup-plan.html) and [`update-backup-plan`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/update-backup-plan.html). You can also create backups directly in a logically air-gapped vault by using it as a primary target. See [Primary backups to logically air-gapped vaults](lag-vault-primary-backup.md) for more details.
 
 You can copy a backup from one logically air-gapped vault to another logically air-gapped vault on-demand (this type of backup cannot be scheduled in a backup plan). You can copy a backup from a logically air-gapped vault to a standard backup vault as long as the copy is encrypted with a customer managed key.
 
@@ -398,11 +398,11 @@ Steps 1 through 4 are conducted with the account that owns the logically air-gap
 
 1. In the CLI, assume credentials of the recipient account.
 
-1. Get resource share invitation with [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/get-resource-share-invitations.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/get-resource-share-invitations.html). For more information, see [ Accepting and rejecting invitations](https://docs.aws.amazon.com/ram/latest/userguide/working-with-shared-invitations.html) in the *AWS RAM User Guide*.
+1. Get resource share invitation with [`get-resource-share-invitations`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/get-resource-share-invitations.html). For more information, see [ Accepting and rejecting invitations](https://docs.aws.amazon.com/ram/latest/userguide/working-with-shared-invitations.html) in the *AWS RAM User Guide*.
 
 1. Accept the invitation in destination (recovery) account.
 
-   1. Use [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/accept-resource-share-invitation.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/accept-resource-share-invitation.html) (can also [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/reject-resource-share-invitation.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/reject-resource-share-invitation.html)).
+   1. Use [`accept-resource-share-invitation`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/accept-resource-share-invitation.html) (can also [`reject-resource-share-invitation`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/reject-resource-share-invitation.html)).
 
 You can use AWS RAM CLI commands to view shared items:
 + Resources you have shared:
@@ -424,7 +424,7 @@ You can restore a backup stored in a logically air-gapped vault from either the 
 
 See [Restoring a backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-a-backup.html) for information on how to restore a recovery point through the AWS Backup console.
 
-Once a backup has been shared from a logically air-gapped vault to your account, you can use [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/start-restore-job.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/start-restore-job.html) to restore the backup.
+Once a backup has been shared from a logically air-gapped vault to your account, you can use [`start-restore-job`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/start-restore-job.html) to restore the backup.
 
 A sample CLI input can include the following command and parameters:
 
@@ -448,7 +448,7 @@ A restore access backup vault is a view of an underlying logically air-gapped va
 
 Deletion of a vault also deletes the key associated with the vault seven days after the vault is deleted in accordance with key deletion policy.
 
-The following sample CLI command [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/delete-backup-vault.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/delete-backup-vault.html) can be used to delete a vault.
+The following sample CLI command [`delete-backup-vault`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/delete-backup-vault.html) can be used to delete a vault.
 
 ```
 aws backup delete-backup-vault
@@ -459,7 +459,7 @@ aws backup delete-backup-vault
 ## Additional programmatic options for logically air-gapped vaults
 <a name="lag-programmatic"></a>
 
-The CLI command [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListBackupVaults.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListBackupVaults.html) can be modified to list all the vaults owned by and present in the account:
+The CLI command [`list-backup-vaults`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListBackupVaults.html) can be modified to list all the vaults owned by and present in the account:
 
 ```
 aws backup list-backup-vaults

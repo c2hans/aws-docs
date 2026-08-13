@@ -11,7 +11,7 @@ After installing the EFS mount helper, you can upgrade your system's version of 
 
 **To upgrade `stunnel` on Amazon Linux, Amazon Linux 2, and other supported Linux distributions (except for [SLES 12](#stunnel-on-sles12))**
 
-1.  In a web browser, go to the `stunnel` downloads page [https://www.stunnel.org/downloads.html](https://www.stunnel.org/downloads.html).
+1.  In a web browser, go to the `stunnel` downloads page [https://stunnel.org/downloads.html](https://www.stunnel.org/downloads.html).
 
 1. Locate the latest `stunnel` version that is available in `tar.gz` format. Note the name of the file as you will need it in the following steps.
 

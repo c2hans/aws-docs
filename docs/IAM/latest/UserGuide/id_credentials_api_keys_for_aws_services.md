@@ -212,11 +212,11 @@ aws iam update-service-specific-credential \
 <a name="id_credentials_api_keys_api"></a>
 
 You can use the following IAM API operations to manage long-term API keys for any supported service:
-+  [https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateServiceSpecificCredential.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateServiceSpecificCredential.html)
-+  [https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListServiceSpecificCredentials.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListServiceSpecificCredentials.html)
-+  [https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateServiceSpecificCredential.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateServiceSpecificCredential.html)
-+  [https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteServiceSpecificCredential.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteServiceSpecificCredential.html)
-+  [https://docs.aws.amazon.com/IAM/latest/APIReference/API_ResetServiceSpecificCredential.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ResetServiceSpecificCredential.html)
++  [CreateServiceSpecificCredential](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateServiceSpecificCredential.html)
++  [ListServiceSpecificCredentials](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListServiceSpecificCredentials.html)
++  [UpdateServiceSpecificCredential](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateServiceSpecificCredential.html)
++  [DeleteServiceSpecificCredential](https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteServiceSpecificCredential.html)
++  [ResetServiceSpecificCredential](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ResetServiceSpecificCredential.html)
 
 ## Short-term API keys (select services)
 <a name="id_credentials_api_keys_short_term"></a>

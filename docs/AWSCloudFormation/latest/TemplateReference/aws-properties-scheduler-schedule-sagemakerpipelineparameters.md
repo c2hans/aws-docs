@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Scheduler::Schedule SageMakerPipelineParameters
 <a name="aws-properties-scheduler-schedule-sagemakerpipelineparameters"></a>
 
-The templated target type for the Amazon SageMaker [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartPipelineExecution.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartPipelineExecution.html) API operation.
+The templated target type for the Amazon SageMaker [`StartPipelineExecution`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartPipelineExecution.html) API operation.
 
 ## Syntax
 <a name="aws-properties-scheduler-schedule-sagemakerpipelineparameters-syntax"></a>

@@ -38,7 +38,7 @@ In this step, you install and build the `snpguest` utility, which you use to gen
    $ perl --version; cargo --version; git --version
    ```
 
-1. Run the following commands to build the `snpguest` utility from the [https://github.com/virtee/snpguest](https://github.com/virtee/snpguest).
+1. Run the following commands to build the `snpguest` utility from the [snpguest repository](https://github.com/virtee/snpguest).
 
    ```
    $ git clone https://github.com/virtee/snpguest.git
@@ -133,7 +133,7 @@ In this step, you install and build the `snpguest` utility, which you use to gen
 
 1. Connect to your instance.
 
-1. Run the following commands to build the `snpguest` utility from the [https://github.com/virtee/snpguest](https://github.com/virtee/snpguest).
+1. Run the following commands to build the `snpguest` utility from the [snpguest repository](https://github.com/virtee/snpguest).
 
    ```
    $ git clone https://github.com/virtee/snpguest.git

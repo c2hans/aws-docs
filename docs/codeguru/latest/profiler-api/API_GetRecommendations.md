@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetReco
 # GetRecommendations
 <a name="API_GetRecommendations"></a>
 
- Returns a list of [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Recommendation.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Recommendation.html) objects that contain recommendations for a profiling group for a given time period. A list of [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Anomaly.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Anomaly.html) objects that contains details about anomalies detected in the profiling group for the same time period is also returned.
+ Returns a list of [`Recommendation`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Recommendation.html) objects that contain recommendations for a profiling group for a given time period. A list of [`Anomaly`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Anomaly.html) objects that contains details about anomalies detected in the profiling group for the same time period is also returned.
 
 ## Request Syntax
 <a name="API_GetRecommendations_RequestSyntax"></a>

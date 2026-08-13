@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/securit
 # AWS Systems Manager identity-based policy examples
 <a name="security_iam_id-based-policy-examples"></a>
 
-By default, AWS Identity and Access Management (IAM) entities (users and roles) don't have permission to create or modify AWS Systems Manager resources. They also can't perform tasks using the Systems Manager console, AWS Command Line Interface (AWS CLI), or AWS API. An administrator must create IAM policies that grant users and roles permission to perform specific API operations on the specified resources they need. The administrator must then attach those policies to the users or groups that require those permissions.
+By default, AWS Identity and Access Management (IAM) entities (users and roles) don't have permission to create or modify AWS Systems Manager resources. They also can't perform tasks using the Systems Manager console, AWS Command Line Interface (AWS CLI), or AWS API. An administrator is needed to create IAM policies that grant users and roles permission to perform specific API operations on the specified resources they need. The administrator must then attach those policies to the users or groups that require those permissions.
 
 The following is an example of a permissions policy that allows a user to delete documents with names that begin with **MyDocument-** in the US East (Ohio) (us-east-2) AWS Region.
 
@@ -67,7 +67,7 @@ If you create an identity-based policy that is more restrictive than the minimum
 
 You don't need to allow minimum console permissions for users that are making calls only to the AWS CLI or the AWS API. Instead, allow access to only the actions that match the API operation that you're trying to perform.
 
-To ensure that users and roles can still use the Systems Manager console, also attach the [AmazonSSMFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSSMFullAccess.html) or [AmazonSSMReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSSMReadOnlyAccess.html) AWS managed policy to the entities. For more information, see [Adding permissions to a user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
+To make sure that users and roles can still use the Systems Manager console, also attach the [AmazonSSMFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSSMFullAccess.html) or [AmazonSSMReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSSMReadOnlyAccess.html) AWS managed policy to the entities. For more information, see [Adding permissions to a user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
 
 ## Example: Permission to allow users to view their own permissions
 <a name="security_iam_id-based-policy-examples-view-own-permissions"></a>
@@ -226,7 +226,7 @@ The following example IAM policy allows a user to do the following in the US Eas
 + Start and stop workflows in Automation, a tool in AWS Systems Manager.
 + Get information about Automation workflows.
 
-If you want to give a user permission to use this document to send commands on any node for which the user has access, you could specify an entry similar to the following in the `Resource` section and remove the other node entries. The following example uses the US East (Ohio) Region (us-east-2).
+To give a user permission to use this document to send commands on any node they have access to, specify an entry similar to the following in the `Resource` section. Remove the other node entries. This example uses the US East (Ohio) Region (us-east-2).
 
 ```
 "arn:aws:ec2:us-east-2:*:instance/*"

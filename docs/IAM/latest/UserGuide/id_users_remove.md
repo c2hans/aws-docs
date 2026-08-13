@@ -82,11 +82,11 @@ Unlike the AWS Management Console, when you delete a IAM user with the AWS CLI, 
 
 1. Delete the user's inline policies.
 
-   `[aws iam list-user-policies](https://docs.aws.amazon.com/cli/latest/reference/iam/list-user-policies.html)` (to list the inline policies for the user) and [https://docs.aws.amazon.com/cli/latest/reference/iam/delete-user-policy.html](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-user-policy.html) (to delete the policy)
+   `[aws iam list-user-policies](https://docs.aws.amazon.com/cli/latest/reference/iam/list-user-policies.html)` (to list the inline policies for the user) and [`aws iam delete-user-policy`](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-user-policy.html) (to delete the policy)
 
 1. Detach any managed policies that are attached to the user.
 
-   `[aws iam list-attached-user-policies](https://docs.aws.amazon.com/cli/latest/reference/iam/list-attached-user-policies.html)` (to list the managed policies attached to the user) and [https://docs.aws.amazon.com/cli/latest/reference/iam/detach-user-policy.html](https://docs.aws.amazon.com/cli/latest/reference/iam/detach-user-policy.html) (to detach the policy)
+   `[aws iam list-attached-user-policies](https://docs.aws.amazon.com/cli/latest/reference/iam/list-attached-user-policies.html)` (to list the managed policies attached to the user) and [`aws iam detach-user-policy`](https://docs.aws.amazon.com/cli/latest/reference/iam/detach-user-policy.html) (to detach the policy)
 
 1. Remove the user from any IAM groups.
 

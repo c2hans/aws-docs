@@ -21,7 +21,7 @@ Use the following sections to learn more about these options.
 ## Use MaxConcurrentTaskCount to control the flow of data objects
 <a name="sms-batching-maxconcurrenttaskcount"></a>
 
-[https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanTaskConfig.html#sagemaker-Type-HumanTaskConfig-MaxConcurrentTaskCount](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanTaskConfig.html#sagemaker-Type-HumanTaskConfig-MaxConcurrentTaskCount) defines the maximum number of data objects available at one time in the worker-portal task queue. If you use the console, this parameter is set to 1,000. If you use `CreateLabelingJob`, you can set this parameter to any integer between 1 and 5,000, inclusive.
+[`MaxConcurrentTaskCount`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanTaskConfig.html#sagemaker-Type-HumanTaskConfig-MaxConcurrentTaskCount) defines the maximum number of data objects available at one time in the worker-portal task queue. If you use the console, this parameter is set to 1,000. If you use `CreateLabelingJob`, you can set this parameter to any integer between 1 and 5,000, inclusive.
 
 Use the following example to better understand how the number of entries in your manifest file, the `NumberOfHumanWorkersPerDataObject`, and the `MaxConcurrentTaskCount` define what tasks workers see in their task queue in the worker-portal UI.
 

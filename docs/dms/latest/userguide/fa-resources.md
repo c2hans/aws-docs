@@ -22,7 +22,7 @@ To configure your Amazon S3 bucket and IAM resources, do one of the following:
 A CloudFormation stack is a collection of AWS resources that you can manage as a single unit. To simplify creating required resources for DMS Fleet Advisor, you can use the CloudFormation template files to create CloudFormation stacks. For more information, see [Creating a stack on the CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-create-stack.html) in *CloudFormation User Guide*.
 
 **Note**
-This section only applies to using the standalone DMS Fleet Advisor collector. For information about using a single on-premises collector for gathering information about both databases and servers, see [ Application Discovery Service Agentless Collector ](https://docs.aws.amazon.com/application-discovery/latest/userguide/agentless-collector.html) in the [https://docs.aws.amazon.com/](https://docs.aws.amazon.com/).
+This section only applies to using the standalone DMS Fleet Advisor collector. For information about using a single on-premises collector for gathering information about both databases and servers, see [ Application Discovery Service Agentless Collector ](https://docs.aws.amazon.com/application-discovery/latest/userguide/agentless-collector.html) in the [*AWS Application Discovery Service User Guide*](https://docs.aws.amazon.com/).
 
 ### Amazon S3 and IAM resources created by CloudFormation
 <a name="fa-resources-cf.resources"></a>

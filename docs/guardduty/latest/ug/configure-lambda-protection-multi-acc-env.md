@@ -35,11 +35,11 @@ Choose your preferred access method to enable or disable Lambda Network Activity
 ------
 #### [ API/CLI ]
 
-Run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html) API operation using your own regional detector ID and passing the `features` object `name` as `LAMBDA_NETWORK_LOGS` and `status` as `ENABLED`.
+Run the [updateDetector](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html) API operation using your own regional detector ID and passing the `features` object `name` as `LAMBDA_NETWORK_LOGS` and `status` as `ENABLED`.
 
 Alternatively, you can use AWS CLI to enable Lambda Protection. Run the following command, and replace {{12abc34d567e8fa901bc2d34e56789f0}} with your account's detector ID and {{us-east-1}} with the Region where you want to enable Lambda Protection.
 
-To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
 ```
 aws guardduty update-detector --detector-id {{12abc34d567e8fa901bc2d34e56789f0}} --region {{us-east-1}} --features '[{"Name": "LAMBDA_NETWORK_LOGS", "Status": "ENABLED"}]'
@@ -90,11 +90,11 @@ By default, this action automatically turns on the **Auto-enable GuardDuty for n
 ------
 #### [ API/CLI ]
 
-To selectively enable or disable Lambda Network Activity Monitoring for your member accounts, invoke the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetectors.html) API operation using your own {{detector ID}}.
+To selectively enable or disable Lambda Network Activity Monitoring for your member accounts, invoke the [updateMemberDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetectors.html) API operation using your own {{detector ID}}.
 
 Alternatively, you can use AWS CLI to enable Lambda Protection. Run the following command, and replace {{12abc34d567e8fa901bc2d34e56789f0}} with your account's detector ID and {{us-east-1}} with the Region where you want to enable Lambda Protection.
 
-To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
 ```
 aws guardduty update-member-detectors --detector-id {{12abc34d567e8fa901bc2d34e56789f0}} --account-ids {{111122223333}} --region {{us-east-1}}--features '[{"Name": "LAMBDA_NETWORK_LOGS", "Status": "{{ENABLED}}"}]'
@@ -131,7 +131,7 @@ Choose your preferred access method to enable Lambda Network Activity Monitoring
 ------
 #### [ API/CLI ]
 
-To selectively enable or disable Lambda Network Activity Monitoring for your member accounts, invoke the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetectors.html) API operation using your own {{detector ID}}.
+To selectively enable or disable Lambda Network Activity Monitoring for your member accounts, invoke the [updateMemberDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetectors.html) API operation using your own {{detector ID}}.
 
 Alternatively, you can use AWS CLI to enable Lambda Protection. Run the following command, and replace {{12abc34d567e8fa901bc2d34e56789f0}} with your account's detector ID and {{us-east-1}} with the Region where you want to enable Lambda Protection.
 
@@ -186,11 +186,11 @@ The delegated GuardDuty administrator account can enable Lambda Network Activity
 ------
 #### [ API/CLI ]
 
-To enable Lambda Network Activity Monitoring for new member accounts, invoke the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateOrganizationConfiguration.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateOrganizationConfiguration.html) API operation using your own {{detector ID}}.
+To enable Lambda Network Activity Monitoring for new member accounts, invoke the [UpdateOrganizationConfiguration](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateOrganizationConfiguration.html) API operation using your own {{detector ID}}.
 
 Alternatively, you can use AWS CLI to enable Lambda Protection. The following example shows how you can enable Lambda Network Activity Monitoring for a single member account. Replace {{12abc34d567e8fa901bc2d34e56789f0}} with your account's detector ID and {{us-east-1}} with the Region where you want to enable Lambda Protection. If you don't want to enable it for all the new accounts joining the organization, set `AutoEnable` to `NONE`.
 
-To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
 ```
 aws guardduty update-organization-configuration --detector-id {{12abc34d567e8fa901bc2d34e56789f0}} --region {{us-east-1}} --auto-enable --features '[{"Name": "LAMBDA_NETWORK_LOGS", "AutoEnable": "{{NEW}}"}]'
@@ -223,11 +223,11 @@ Choose your preferred access method to selectively enable or disable Lambda Netw
 ------
 #### [ API/CLI ]
 
-Invoke the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetectors.html) API using your own {{detector ID}}.
+Invoke the [updateMemberDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetectors.html) API using your own {{detector ID}}.
 
 Alternatively, you can use AWS CLI to enable Lambda Protection. Replace {{12abc34d567e8fa901bc2d34e56789f0}} with your account's detector ID and {{us-east-1}} with the Region where you want to enable Lambda Protection.
 
-To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
 ```
 aws guardduty update-member-detectors --detector-id {{12abc34d567e8fa901bc2d34e56789f0}} --region {{us-east-1}} --account-ids {{111122223333}} --features '[{"Name": "LAMBDA_NETWORK_LOGS", "Status": "{{ENABLED}}"}]'

@@ -17,7 +17,7 @@ Updating a resource entails changing resource property values. The properties of
 ## Composing the patch document
 <a name="resource-operations-update-patch"></a>
 
-To update a resource, you first define the updates as a list of *patch operations* contained in a JSON patch document. This patch document must adhere to the standard defined in [https://datatracker.ietf.org/doc/html/rfc6902](https://datatracker.ietf.org/doc/html/rfc6902).
+To update a resource, you first define the updates as a list of *patch operations* contained in a JSON patch document. This patch document must adhere to the standard defined in [*RFC 6902 - JavaScript Object Notation (JSON) Patch*](https://datatracker.ietf.org/doc/html/rfc6902).
 
 Each patch operation defines a single update to a specific resource property. The following properties are required:
 + `op`: The operation type. Cloud Control API supports all operations defined in RFC 6902: `add`, `remove`, `replace`, `move`, `copy`, and `test`.
@@ -27,7 +27,7 @@ Depending on the operation, additional properties may be required. Refer to RFC 
 
 When using the `update-resource` command, you can specify the patch document inline as a string, or specify a file location.
 
-The following example updates the retention policy of an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html) resource named `CloudControlApiLogGroup` to 90 days.
+The following example updates the retention policy of an [`AWS::Logs::LogGroup`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html) resource named `CloudControlApiLogGroup` to 90 days.
 
 ```
 $ aws cloudcontrol update-resource --type-name AWS::Logs::LogGroup \
@@ -50,7 +50,7 @@ To update a resource, Cloud Control API first retrieves the current state of the
 
   If the update handler fails at any point, *Cloud Control API does not roll back the resource to its previous state.*
 
-For example, consider the following patch document that is defined to update an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html) resource. The document contains two patch operations. The first operation is of type `test` and checks to see if the resource's retention policy is set to 3653 days. If that is the case, the resource passes the test and Cloud Control API proceeds to the next operation. This operation replaces the current retention policy value with 180 days. If the resource's retention policy is set to a value of other than 3653 days, the first `test` operation fails and Cloud Control API never runs the second `replace` operation.
+For example, consider the following patch document that is defined to update an [`AWS::Logs::LogGroup`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html) resource. The document contains two patch operations. The first operation is of type `test` and checks to see if the resource's retention policy is set to 3653 days. If that is the case, the resource passes the test and Cloud Control API proceeds to the next operation. This operation replaces the current retention policy value with 180 days. If the resource's retention policy is set to a value of other than 3653 days, the first `test` operation fails and Cloud Control API never runs the second `replace` operation.
 
 ```
 [

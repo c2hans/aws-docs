@@ -52,10 +52,10 @@ One or more variables to be inserted into the environment of the test execution 
   }
   ```
 
-  For more information, see [https://docs.aws.amazon.com/cli/latest/reference/devicefarm/create-project.html](https://docs.aws.amazon.com/cli/latest/reference/devicefarm/create-project.html) and [AWS CLI reference](cli-ref.md).
+  For more information, see [**create-project**](https://docs.aws.amazon.com/cli/latest/reference/devicefarm/create-project.html) and [AWS CLI reference](cli-ref.md).
 
 ## Create a project (API)
 <a name="how-to-create-project-api"></a>
-+ Call the [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateProject.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateProject.html) API.
++ Call the [`CreateProject`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateProject.html) API.
 
 For information about using the Device Farm API, see [Automating Device Farm](api-ref.md).

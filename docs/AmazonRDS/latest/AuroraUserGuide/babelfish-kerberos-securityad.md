@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 
 Starting from Babelfish version 4.2.0, you can setup Kerberos authentication for Babelfish with Active Directory security groups. The following are prerequisites to complete for setting up Kerberos authentication using Active Directory:
 +  You must follow all the steps mentioned at [Kerberos authentication with Babelfish](babelfish-active-directory.md).
-+ Ensure that DB instance is associated with Active Directory. To verify this, you can view the status of the domain membership in the console or by running the [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html) AWS CLI command.
++ Ensure that DB instance is associated with Active Directory. To verify this, you can view the status of the domain membership in the console or by running the [describe-db-instances](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html) AWS CLI command.
 
   The status of the DB instance should be kerberos-enabled. For more information on understanding domain membership, see [Understanding Domain membership](postgresql-kerberos-managing.md#postgresql-kerberos-managing.understanding).
 + Verify mappings between NetBIOS domain name and DNS domain name using the following query:

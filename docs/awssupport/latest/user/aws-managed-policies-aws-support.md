@@ -16,16 +16,16 @@ AWS Support has the following managed policies.
 ## AWS managed policy: AWSSupportAccess
 <a name="security-iam-awsmanpol-AWSSupportAccess"></a>
 
-AWS Support uses the [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSSupportAccess$jsonEditor](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSSupportAccess$jsonEditor) AWS managed policy. This policy manages your support case lifecycle through the Support API. Enhanced functionality in the AWS Support Center Console is provided through the support-console API service. You can attach this policy to your IAM entities. For more information, see [Service-linked role permissions for Support](using-service-linked-roles-sup.md#service-linked-role-permissions).
+AWS Support uses the [AWSSupportAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSSupportAccess$jsonEditor) AWS managed policy. This policy manages your support case lifecycle through the Support API. Enhanced functionality in the AWS Support Center Console is provided through the support-console API service. You can attach this policy to your IAM entities. For more information, see [Service-linked role permissions for Support](using-service-linked-roles-sup.md#service-linked-role-permissions).
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportAccess.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AWSSupportAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportAccess.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: AWSSupportServiceRolePolicy
 <a name="security-iam-awsmanpol-AWSSupportServiceRolePolicy"></a>
 
-AWS Support uses the [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSSupportServiceRolePolicy$jsonEditor](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSSupportServiceRolePolicy$jsonEditor) AWS managed policy. This managed policy is attached to the `AWSServiceRoleForSupport` service-linked role. The policy allows the service-linked role to complete actions on your behalf. You can't attach this policy to your IAM entities. For more information, see [Service-linked role permissions for Support](using-service-linked-roles-sup.md#service-linked-role-permissions).
+AWS Support uses the [AWSSupportServiceRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSSupportServiceRolePolicy$jsonEditor) AWS managed policy. This managed policy is attached to the `AWSServiceRoleForSupport` service-linked role. The policy allows the service-linked role to complete actions on your behalf. You can't attach this policy to your IAM entities. For more information, see [Service-linked role permissions for Support](using-service-linked-roles-sup.md#service-linked-role-permissions).
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AWSSupportServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
 
 For a list of changes to the policy, see [AWS Support updates to AWS managed policies](#security-iam-awsmanpol-updates) and [Permission changes for AWSSupportServiceRolePolicy](aws-support-service-link-role-updates.md).
 

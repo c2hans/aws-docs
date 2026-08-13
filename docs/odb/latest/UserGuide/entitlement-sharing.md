@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/entitlement-sharing
 # Entitlement sharing in Oracle Database@AWS
 <a name="entitlement-sharing"></a>
 
-With Oracle Database@AWS, you can share AWS Marketplace entitlements for Oracle Database@AWS across AWS accounts in the same AWS organization. This allows other accounts to provision their own Oracle Exadata infrastructure and ODB network resources using your subscription.
+With Oracle Database@AWS, you can share AWS Marketplace entitlements for Oracle Database@AWS across AWS accounts in the same AWS organization. With this sharing, other accounts can provision their own Oracle Exadata infrastructure, ODB network, Autonomous Database Serverless (ADB-S), and Oracle Exadata Database Service on Exascale Infrastructure (ExaDB-XS) resources using your subscription.
 
 ## Sharing methods
 <a name="sharing-methods"></a>
@@ -14,14 +14,14 @@ Oracle Database@AWS supports two methods for sharing:
 
 ### Entitlement sharing with AWS License Manager
 <a name="entitlement-sharing-method"></a>
-+ Grant other accounts the ability to provision their own Oracle Exadata infrastructure and ODB network resources
++ Grant other accounts the ability to provision their own Oracle Exadata infrastructure, ODB network, ADB-S, and ExaDB-XS resources
 + Each account operates independently with full resource lifecycle control
 + Best for enabling self-service provisioning across teams or business units
 
 ### Resource sharing with AWS Resource Access Manager (AWS RAM)
 <a name="ram-sharing-method"></a>
 + Share already provisioned Oracle Exadata infrastructure and ODB network resources
-+ Centralize infrastructure management while allowing recipient accounts to create VM clusters
++ Centralize infrastructure management and allow recipient accounts to create VM clusters, ADB-S instances, or ExaDB-XS resources
 + Optimize costs by having multiple accounts use the same infrastructure
 
 You can use both sharing methods simultaneously based on your organizational needs.

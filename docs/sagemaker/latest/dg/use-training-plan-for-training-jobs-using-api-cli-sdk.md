@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/use-training-plan-fo
 # Create a training job using the API, AWS CLI, SageMaker SDK
 <a name="use-training-plan-for-training-jobs-using-api-cli-sdk"></a>
 
-To use SageMaker training plans for your SageMaker training job, specify the `TrainingPlanArn` parameter of the desired plan in the `ResourceConfig` when calling the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) API operation. You can use exactly one plan per job.
+To use SageMaker training plans for your SageMaker training job, specify the `TrainingPlanArn` parameter of the desired plan in the `ResourceConfig` when calling the [`CreateTrainingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) API operation. You can use exactly one plan per job.
 
 **Important**
 The `InstanceType` field set in the `ResourceConfig` section of the `CreateTrainingJob` request must match the`InstanceType` of your training plan.
@@ -15,7 +15,7 @@ The `InstanceType` field set in the `ResourceConfig` section of the `CreateTrain
 
 The following example demonstrates how to create a SageMaker training job and associate it with a provided training plan using the `TrainingPlanArn` attribute in the `create-training-job` AWS CLI command.
 
-For more information about how to create a training job using the AWS CLI [CreateTrainingJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) command, see [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-training-job.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-training-job.html).
+For more information about how to create a training job using the AWS CLI [CreateTrainingJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) command, see [`create-training-job`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-training-job.html).
 
 ```
 # Create a training job

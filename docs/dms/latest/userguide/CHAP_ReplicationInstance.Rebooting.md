@@ -44,7 +44,7 @@ To reboot a replication instance, use the AWS console.
 ## Rebooting a replication instance using the CLI
 <a name="CHAP_ReplicationInstance.Rebooting.CLI"></a>
 
-To reboot a replication instance, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/dms/reboot-replication-instance.html](https://docs.aws.amazon.com/cli/latest/reference/dms/reboot-replication-instance.html) command with the following parameter:
+To reboot a replication instance, use the AWS CLI [`reboot-replication-instance`](https://docs.aws.amazon.com/cli/latest/reference/dms/reboot-replication-instance.html) command with the following parameter:
 + `--replication-instance-arn`
 
 **Example simple reboot**
@@ -67,7 +67,7 @@ aws dms reboot-replication-instance \
 ## Rebooting a replication instance using the API
 <a name="CHAP_ReplicationInstance.Rebooting.API"></a>
 
-To reboot a replication instance, use the AWS DMS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html) action with the following parameters:
+To reboot a replication instance, use the AWS DMS API [`RebootReplicationInstance`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html) action with the following parameters:
 + `ReplicationInstanceArn = {{arn of my rep instance}}`
 
 **Example simple reboot**

@@ -9,4 +9,4 @@ The CloudWatch investigations feature is a generative AI-powered assistant that 
 
 You can use API actions to create, manage, and delete investigation groups and investigation group policies. To start and manage investigations, you must use the CloudWatch console.
 
-This document was last published on August 6, 2026.
+This document was last published on August 13, 2026.

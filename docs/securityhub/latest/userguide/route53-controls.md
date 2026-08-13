@@ -51,7 +51,7 @@ To add tags to a Route 53 health check, see [ Naming and tagging health checks]
 
 **Resource type:** `AWS::Route53::HostedZone`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/route53-query-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/route53-query-logging-enabled.html)
+**AWS Config rule:** [`route53-query-logging-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/route53-query-logging-enabled.html)
 
 **Schedule type:** Change triggered
 

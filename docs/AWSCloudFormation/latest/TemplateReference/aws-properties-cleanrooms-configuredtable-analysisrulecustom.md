@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::CleanRooms::ConfiguredTable AnalysisRuleCustom
 <a name="aws-properties-cleanrooms-configuredtable-analysisrulecustom"></a>
 
-A type of analysis rule that enables the table owner to approve custom SQL queries on their configured tables. It supports differential privacy.
+A type of analysis rule that enables the table owner to approve custom SQL queries on their configured tables. It supports differential privacy, minimum aggregation thresholds, and comparison controls.
 
 ## Syntax
 <a name="aws-properties-cleanrooms-configuredtable-analysisrulecustom-syntax"></a>

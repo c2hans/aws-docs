@@ -119,8 +119,8 @@ Next, you will need to [Install peer dependencies](work-with-rfdk-typescript.md#
 <a name="deadline-container-images"></a>
 
 RFDK deploys Deadline server components, such as:
-+ The [https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.RenderQueue.html](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.RenderQueue.html) construct, and
-+ The [https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.UsageBasedLicensing.html](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.UsageBasedLicensing.html) construct,
++ The [`RenderQueue`](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.RenderQueue.html) construct, and
++ The [`UsageBasedLicensing`](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.UsageBasedLicensing.html) construct,
 
 using **AWS Elastic Container Service (ECS)**. RFDK integrates with the Deadline container images and recipes published by [AWS Thinkbox](https://www.awsthinkbox.com/). These images and recipes can be extended to customize the images deployed to your RFDK render farm. The two supported workflows to deploy Deadline conatiner images are:
 
@@ -135,7 +135,7 @@ using **AWS Elastic Container Service (ECS)**. RFDK integrates with the Deadline
 ### Using AWS Thinkbox ECR Repositories
 <a name="using-aws-thinkbox-ecr-repositories"></a>
 
-RFDK provides a [https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.ThinkboxDockerImages.html](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.ThinkboxDockerImages.html) construct that can be used to provide Deadline container images from AWS Thinkbox’s public ECR Repositories to other RFDK constructs in your CDK app.
+RFDK provides a [`ThinkboxDockerImages`](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.ThinkboxDockerImages.html) construct that can be used to provide Deadline container images from AWS Thinkbox’s public ECR Repositories to other RFDK constructs in your CDK app.
 
 It is recommended that you pin this version to the latest available version of Deadline when building your farm. Please consult Deadline’s [CHANGELOG](https://docs.thinkboxsoftware.com/products/deadline/10.2/1_User%20Manual/manual/release-notes.html) for a list of available versions.
 
@@ -325,7 +325,7 @@ Please check with the [RFDK release notes](https://github.com/aws/aws-rfdk/relea
 
 The default behavior of `stage-deadline` is to create a `stage` subdirectory under the current working directory and stage the files into it. The choice of destination directory can be changed by specifying a `--output {{OUTPUT_DIR}} ` command-line argument.
 
-RFDK provides a [https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.ThinkboxDockerRecipes.html](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.ThinkboxDockerRecipes.html) construct that interacts with the Deadline Docker recipes within a staging directory.
+RFDK provides a [`ThinkboxDockerRecipes`](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.deadline.ThinkboxDockerRecipes.html) construct that interacts with the Deadline Docker recipes within a staging directory.
 
 The following sample code demonstrates how to use `ThinkboxDockerRecipes`:
 

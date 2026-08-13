@@ -155,7 +155,7 @@ You can create a JSON policy for an AWS service and attach it to your execution 
 ## Grant access to Amazon S3 bucket with account-level public access block
 <a name="mwaa-create-role-s3-publicaccessblock"></a>
 
-You might want to block access to all buckets in your account by using the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutPublicAccessBlock.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutPublicAccessBlock.html) Amazon S3 operation. When you block access to all buckets in your account, your environment execution role must include the `s3:GetAccountPublicAccessBlock` action in a permission policy.
+You might want to block access to all buckets in your account by using the [`PutPublicAccessBlock`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutPublicAccessBlock.html) Amazon S3 operation. When you block access to all buckets in your account, your environment execution role must include the `s3:GetAccountPublicAccessBlock` action in a permission policy.
 
 The following example demonstrates the policy you must attach to your execution role when blocking access to all Amazon S3 buckets in your account.
 
@@ -326,7 +326,7 @@ Next, you need to allow Amazon MWAA to assume this role to perform actions on yo
 
 ------
 
-Then attach the following JSON policy to your [Customer-managed key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-cmk). This policy uses the [https://docs.aws.amazon.com/kms/latest/developerguide/policy-conditions.html#conditions-kms-encryption-context](https://docs.aws.amazon.com/kms/latest/developerguide/policy-conditions.html#conditions-kms-encryption-context) condition key prefix to permit access to your Apache Airflow logs group in CloudWatch Logs.
+Then attach the following JSON policy to your [Customer-managed key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-cmk). This policy uses the [`kms:EncryptionContext`](https://docs.aws.amazon.com/kms/latest/developerguide/policy-conditions.html#conditions-kms-encryption-context) condition key prefix to permit access to your Apache Airflow logs group in CloudWatch Logs.
 
 ```
 {

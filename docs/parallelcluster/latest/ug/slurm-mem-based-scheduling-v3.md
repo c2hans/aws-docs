@@ -25,8 +25,8 @@ Slurm uses a power of 2 notation for its labels, such as MB or GB. Read these la
 <a name="slurm-mem-based-scheduling-config-v3"></a>
 
 With `EnableMemoryBasedScheduling: true`, Slurm sets the following Slurm configuration parameters:
-+ [https://slurm.schedmd.com/slurm.conf.html#OPT_CR_CPU_Memory](https://slurm.schedmd.com/slurm.conf.html#OPT_CR_CPU_Memory) in the `slurm.conf`. This option configures node memory to be a consumable resource in Slurm.
-+ [https://slurm.schedmd.com/cgroup.conf.html#OPT_ConstrainRAMSpace](https://slurm.schedmd.com/cgroup.conf.html#OPT_ConstrainRAMSpace) in the Slurm `cgroup.conf`. With this option, a job's access to memory is limited to the amount of memory that the job requested when submitted.
++ [`SelectTypeParameters=CR_CPU_Memory`](https://slurm.schedmd.com/slurm.conf.html#OPT_CR_CPU_Memory) in the `slurm.conf`. This option configures node memory to be a consumable resource in Slurm.
++ [`ConstrainRAMSpace=yes`](https://slurm.schedmd.com/cgroup.conf.html#OPT_ConstrainRAMSpace) in the Slurm `cgroup.conf`. With this option, a job's access to memory is limited to the amount of memory that the job requested when submitted.
 
 **Note**
 Several other Slurm configuration parameters can impact the behavior of the Slurm scheduler and resource manager when these two options are set. For more information, see the [Slurm Documentation](https://slurm.schedmd.com/documentation.html).
@@ -42,7 +42,7 @@ For example, suppose that a user submits two jobs with `--mem=5GB`. If requested
 
 **Warning**
 When memory-based scheduling is disabled, Slurm doesn't track the amount of memory that jobs use. Jobs that run on the same node might compete for memory resources and cause the other job to fail.
-When memory-based scheduling is disabled, we recommend that users don't specify the [https://slurm.schedmd.com/srun.html#OPT_mem-per-cpu](https://slurm.schedmd.com/srun.html#OPT_mem-per-cpu) or [https://slurm.schedmd.com/srun.html#OPT_mem-per-gpu](https://slurm.schedmd.com/srun.html#OPT_mem-per-gpu) options. These options might cause behavior that differs from what's described in the [Slurm Documentation](https://slurm.schedmd.com/documentation.html).
+When memory-based scheduling is disabled, we recommend that users don't specify the [`--mem-per-cpu`](https://slurm.schedmd.com/srun.html#OPT_mem-per-cpu) or [`--mem-per-gpu`](https://slurm.schedmd.com/srun.html#OPT_mem-per-gpu) options. These options might cause behavior that differs from what's described in the [Slurm Documentation](https://slurm.schedmd.com/documentation.html).
 
 **`EnableMemoryBasedScheduling: true`**
 
@@ -53,8 +53,8 @@ Using the previous example, a user submits two jobs with `--mem=5GB`. The jobs c
 With memory-based scheduling enabled, `--mem-per-cpu` and `--mem-per-gpu` behave consistently with what's described in the Slurm documentation. For example, a job is submitted with `--ntasks-per-node=2 -c 1 --mem-per-cpu=2GB`. In this case, Slurm assigns the job a total of 4 GiB for each node.
 
 **Warning**
-When memory-based scheduling is enabled, we recommend that users include a `--mem` specification when submitting a job. With the default Slurm configuration that's included with AWS ParallelCluster, if no memory option is included (`--mem`, `--mem-per-cpu`, or `--mem-per-gpu`), Slurm assigns entire memory of the allocated nodes to the job, even if it requests only a portion of the other resources, such as CPUs or GPUs. This effectively prevents node sharing until the job is finished because no memory is available to other jobs. This happens because Slurm sets the memory per node for the job to [https://slurm.schedmd.com/slurm.conf.html#OPT_DefMemPerNode](https://slurm.schedmd.com/slurm.conf.html#OPT_DefMemPerNode) when no memory specifications are provided at job submission time. The default value for this parameter is 0 and specifies unlimited access to a node’s memory.
-If multiple types of compute resources with different amounts of memory are available in the same queue, a job submitted without memory options might be assigned different amounts of memory on different nodes. This depends on which nodes the scheduler makes available to the job. Users can define a custom value for options, such as `DefMemPerNode` or [https://slurm.schedmd.com/slurm.conf.html#OPT_DefMemPerCPU](https://slurm.schedmd.com/slurm.conf.html#OPT_DefMemPerCPU), at the cluster or partition level in the Slurm configuration files to prevent this behavior.
+When memory-based scheduling is enabled, we recommend that users include a `--mem` specification when submitting a job. With the default Slurm configuration that's included with AWS ParallelCluster, if no memory option is included (`--mem`, `--mem-per-cpu`, or `--mem-per-gpu`), Slurm assigns entire memory of the allocated nodes to the job, even if it requests only a portion of the other resources, such as CPUs or GPUs. This effectively prevents node sharing until the job is finished because no memory is available to other jobs. This happens because Slurm sets the memory per node for the job to [`DefMemPerNode`](https://slurm.schedmd.com/slurm.conf.html#OPT_DefMemPerNode) when no memory specifications are provided at job submission time. The default value for this parameter is 0 and specifies unlimited access to a node’s memory.
+If multiple types of compute resources with different amounts of memory are available in the same queue, a job submitted without memory options might be assigned different amounts of memory on different nodes. This depends on which nodes the scheduler makes available to the job. Users can define a custom value for options, such as `DefMemPerNode` or [`DefMemPerCPU`](https://slurm.schedmd.com/slurm.conf.html#OPT_DefMemPerCPU), at the cluster or partition level in the Slurm configuration files to prevent this behavior.
 
 ## Slurm RealMemory and AWS ParallelCluster SchedulableMemory
 <a name="slurm-mem-based-scheduling-realmemory-v3"></a>
@@ -71,6 +71,6 @@ The default setting might not be optimal for all instance types:
 
 You can use [`SlurmQueues`](Scheduling-v3.md#Scheduling-v3-SlurmQueues) / [`ComputeResources`](Scheduling-v3.md#Scheduling-v3-SlurmQueues-ComputeResources) / [`SchedulableMemory`](Scheduling-v3.md#yaml-Scheduling-SlurmQueues-ComputeResources-SchedulableMemory) to fine-tune the value of `RealMemory` configured by AWS ParallelCluster for compute nodes. To override the default, define a custom value for `SchedulableMemory` specifically for your cluster configuration.
 
-To check a compute node's actual available memory, run the `/opt/slurm/sbin/slurmd -C` command on the node. This command returns the hardware configuration of the node, including the [https://slurm.schedmd.com/slurm.conf.html#OPT_RealMemory](https://slurm.schedmd.com/slurm.conf.html#OPT_RealMemory) value. For more information, see [https://slurm.schedmd.com/slurmd.html#OPT_-C](https://slurm.schedmd.com/slurmd.html#OPT_-C).
+To check a compute node's actual available memory, run the `/opt/slurm/sbin/slurmd -C` command on the node. This command returns the hardware configuration of the node, including the [`RealMemory`](https://slurm.schedmd.com/slurm.conf.html#OPT_RealMemory) value. For more information, see [`slurmd -C`](https://slurm.schedmd.com/slurmd.html#OPT_-C).
 
 Make sure that the compute node's operating system processes have sufficient memory. To do this, limit the memory available to jobs by setting the `SchedulableMemory` value to lower than the `RealMemory` value that the `slurmd -C` command returned.

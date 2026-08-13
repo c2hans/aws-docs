@@ -31,7 +31,7 @@ You can use YAML manifests when installing the agent. Alternatively, you can use
 ## Step 1: Registering the cluster
 <a name="connector-connecting"></a>
 
-To register a cluster to Amazon EKS connector, you can use one of these tools:
+To register a cluster to Amazon EKS Connector, you can use one of these tools:
 +  [AWS CLI](#awscli_register_cluster_connect)
 +  [AWS Management Console](#console_register_cluster_connect)
 +  [`eksctl`](#eksctl_register_cluster_connect)
@@ -119,10 +119,10 @@ Continue to the next step to apply the manifest file to your Kubernetes cluster.
 
    This creates files on your local computer. These files must be applied to the external cluster within 3 days, or the registration expires.
 
-1. In a terminal that can access the cluster, apply the `eks-connector-binding.yaml` file:
+1. In a terminal that can access the cluster, apply the generated files:
 
    ```
-   kubectl apply -f eks-connector-binding.yaml
+   kubectl apply -f eks-connector.yaml,eks-connector-clusterrole.yaml,eks-connector-console-dashboard-full-access-group.yaml
    ```
 
 ## Step 2: Installing the `eks-connector` agent
@@ -130,7 +130,7 @@ Continue to the next step to apply the manifest file to your Kubernetes cluster.
 
 To install the `eks-connector` agent, use one of the following tools:
 +  [Helm](#helm_agent_cluster_connect)
-+  [yaml](#yaml_agent_cluster_connect)
++  [YAML](#yaml_agent_cluster_connect)
 
 ### Helm
 <a name="helm_agent_cluster_connect"></a>
@@ -153,7 +153,7 @@ If you registered the cluster with `eksctl`, use the YAML manifest method instea
 
 1. Check the healthiness of the installed `eks-connector` deployment and wait for the status of the registered cluster in Amazon EKS to be `ACTIVE`.
 
-### yaml
+### YAML
 <a name="yaml_agent_cluster_connect"></a>
 
 Complete the connection by applying the Amazon EKS Connector manifest file to your Kubernetes cluster. To do this, you must use the methods described previously. If the manifest isn’t applied within three days, the Amazon EKS Connector registration expires. If the cluster connection expires, the cluster must be deregistered before connecting the cluster again.

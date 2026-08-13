@@ -48,21 +48,21 @@ The additional configuration parameters in Table 3 are non-persistent. They are 
   <tr><td>Topic1</td><td>R/W</td><td>{Empty}</td><td>≥128</td><td>Custom defined topic 1</td></tr>
   <tr><td>Topic2</td><td>R/W</td><td>{Empty}</td><td></td><td>Custom defined topic 2</td></tr>
   <tr><td>...</td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>Topic<Max Topic></td><td>R/W</td><td>{Empty}</td><td></td><td>Custom defined topic MaxTopic</td></tr>
+  <tr><td>Topic&lt;Max Topic&gt;</td><td>R/W</td><td>{Empty}</td><td></td><td>Custom defined topic MaxTopic</td></tr>
   <tr><td>EnableShadow</td><td>R/W</td><td>0</td><td>1</td><td>0 - disabled, or 1 - enabled</td></tr>
-  <tr><td colspan="5">Shadow configuration parameters (required only by modules that support the Shadow feature, see [10.2 AWS IoT Device Shadow](elpg-iot-services.md#elpg-device-shadow)) </td></tr>
+  <tr><td colspan="5">Shadow configuration parameters (required only by modules that support the Shadow feature, see <a href="elpg-iot-services.md#elpg-device-shadow">10.2 AWS IoT Device Shadow</a>) </td></tr>
   <tr><td>Shadow1</td><td>R/W</td><td>{Empty}</td><td>64</td><td>Custom defined named shadow</td></tr>
   <tr><td>...</td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>Shadow<MaxShadow></td><td>R/W</td><td>{Empty}</td><td></td><td>Custom defined named shadow</td></tr>
-  <tr><td colspan="5">BLE configuration parameters (required only by modules that support BLE host control, see [13 Bluetooth Low Energy (BLE)](elpg-ble.md)) </td></tr>
+  <tr><td>Shadow&lt;MaxShadow&gt;</td><td>R/W</td><td>{Empty}</td><td></td><td>Custom defined named shadow</td></tr>
+  <tr><td colspan="5">BLE configuration parameters (required only by modules that support BLE host control, see <a href="elpg-ble.md">13 Bluetooth Low Energy (BLE)</a>) </td></tr>
   <tr><td>BLECentral1</td><td>R/W</td><td>{Empty}</td><td>≥ 128</td><td>GAP Central discovery/connect configurations. </td></tr>
   <tr><td>BLECentral2</td><td>R/W</td><td>{Empty}</td><td>≥ 128</td><td></td></tr>
   <tr><td>...</td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>BLECentral<MaxBLECentral></td><td>R/W</td><td>{Empty}</td><td>≥ 128</td><td></td></tr>
+  <tr><td>BLECentral&lt;MaxBLECentral&gt;</td><td>R/W</td><td>{Empty}</td><td>≥ 128</td><td></td></tr>
   <tr><td>BLEGATT1</td><td>R/W</td><td>{Empty}</td><td>≥ 128</td><td>GATT Characteristic definitions (JSON). </td></tr>
   <tr><td>BLEGATT2</td><td>R/W</td><td>{Empty}</td><td>≥ 128</td><td></td></tr>
   <tr><td>...</td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>BLEGATT<MaxBLEGatt></td><td>R/W</td><td>{Empty}</td><td>≥ 128</td><td></td></tr>
+  <tr><td>BLEGATT&lt;MaxBLEGatt&gt;</td><td>R/W</td><td>{Empty}</td><td>≥ 128</td><td></td></tr>
   <tr><td>BLEPeripheral</td><td>R/W</td><td>{Empty}</td><td>≥ 128</td><td>GAP Peripheral advertising configuration.</td></tr>
   <tr><td>BLEAllowList</td><td>R</td><td>{Empty}</td><td>≥ 128</td><td>BLE Allow list</td></tr>
   <tr><td>BLEBondLIstl</td><td>R</td><td>{Empty}</td><td>≥ 128</td><td>BLE Bonding list</td></tr>

@@ -37,7 +37,7 @@ Pattern: `.*\S.*`
 Required: No
 
  ** [Filters](#API_DescribeConfigRules_RequestSyntax) **   <a name="config-DescribeConfigRules-request-Filters"></a>
-Returns a list of Detective or Proactive AWS Config rules. By default, this API returns an unfiltered list. For more information on Detective or Proactive AWS Config rules, see [https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config-rules.html](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config-rules.html) in the * AWS Config Developer Guide*.
+Returns a list of Detective or Proactive AWS Config rules. By default, this API returns an unfiltered list. For more information on Detective or Proactive AWS Config rules, see [**Evaluation Mode**](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config-rules.html) in the * AWS Config Developer Guide*.
 Type: [DescribeConfigRulesFilters](API_DescribeConfigRulesFilters.md) object
 Required: No
 

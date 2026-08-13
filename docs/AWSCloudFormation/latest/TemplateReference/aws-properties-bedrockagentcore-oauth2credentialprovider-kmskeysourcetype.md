@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::BedrockAgentCore::OAuth2CredentialProvider KmsKeySourceType
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-kmskeysourcetype"></a>
 
-<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-kmskeysourcetype-description"></a>The `KmsKeySourceType` property type specifies Property description not available. for an [AWS::BedrockAgentCore::OAuth2CredentialProvider](aws-resource-bedrockagentcore-oauth2credentialprovider.md).
+Contains the AWS KMS key configuration for a JWT client assertion.
 
 ## Syntax
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-kmskeysourcetype-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-kmskeysourcetype-properties"></a>
 
 `KmsKeyArn`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-kmskeysourcetype-kmskeyarn"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the AWS KMS key used to sign the JWT client assertion. The key must be an asymmetric key with key usage SIGN\_VERIFY and a key spec compatible with the configured signing algorithm.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^arn:aws(|-cn|-us-gov):kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}$`

@@ -24,7 +24,7 @@ The name of the add-on. The name must match one of the names returned by `Descri
 Required: Yes
 
  ** [addonVersion](#API_DescribeAddonConfiguration_RequestSyntax) **   <a name="AmazonEKS-DescribeAddonConfiguration-request-uri-addonVersion"></a>
-The version of the add-on. The version must match one of the versions returned by [https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeAddonVersions.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeAddonVersions.html).
+The version of the add-on. The version must match one of the versions returned by [`DescribeAddonVersions`](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeAddonVersions.html).
 Required: Yes
 
 ## Request Body
@@ -64,7 +64,7 @@ The name of the add-on.
 Type: String
 
  ** [addonVersion](#API_DescribeAddonConfiguration_ResponseSyntax) **   <a name="AmazonEKS-DescribeAddonConfiguration-response-addonVersion"></a>
-The version of the add-on. The version must match one of the versions returned by [https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeAddonVersions.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeAddonVersions.html).
+The version of the add-on. The version must match one of the versions returned by [`DescribeAddonVersions`](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeAddonVersions.html).
 Type: String
 
  ** [configurationSchema](#API_DescribeAddonConfiguration_ResponseSyntax) **   <a name="AmazonEKS-DescribeAddonConfiguration-response-configurationSchema"></a>

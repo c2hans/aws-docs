@@ -86,7 +86,7 @@ $ aws textract analyze-document \
 
 ------
 
-After you run `AnalyzeDocument` with a human loop configured, Amazon A2I monitors the results from `AnalyzeDocument` and checks it against the flow definition's activation conditions. If the Amazon Textract inference confidence score for one or more key-value pairs meets the conditions for review, Amazon A2I starts a human review loop and includes the [https://docs.aws.amazon.com/textract/latest/dg/API_HumanLoopActivationOutput.html](https://docs.aws.amazon.com/textract/latest/dg/API_HumanLoopActivationOutput.html) object in the `AnalyzeDocument` response.
+After you run `AnalyzeDocument` with a human loop configured, Amazon A2I monitors the results from `AnalyzeDocument` and checks it against the flow definition's activation conditions. If the Amazon Textract inference confidence score for one or more key-value pairs meets the conditions for review, Amazon A2I starts a human review loop and includes the [`HumanLoopActivationOutput`](https://docs.aws.amazon.com/textract/latest/dg/API_HumanLoopActivationOutput.html) object in the `AnalyzeDocument` response.
 
 ### Create an Amazon Rekognition Human Loop
 <a name="a2i-human-loop-rekognition"></a>

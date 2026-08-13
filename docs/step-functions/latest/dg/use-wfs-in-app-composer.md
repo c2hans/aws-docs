@@ -35,7 +35,7 @@ When you use Workflow Studio in Infrastructure Composer, you can switch back and
    The following animation shows how you can switch to the Workflow Studio for editing your state machine definition.
 ![An animation that illustrates how you can use Workflow Studio in Infrastructure Composer.](http://docs.aws.amazon.com/step-functions/latest/dg/images/use-wfs-in-app-composer.gif)
 
-   The integration with Workflow Studio to edit state machines resources created in Infrastructure Composer is only available for [https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-statemachine.html](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-statemachine.html) resource. This integration is not available for templates that use the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html) resource.
+   The integration with Workflow Studio to edit state machines resources created in Infrastructure Composer is only available for [`AWS::Serverless::StateMachine`](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-statemachine.html) resource. This integration is not available for templates that use the [`AWS::StepFunctions::StateMachine`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html) resource.
 
 ## Dynamically reference resources using CloudFormation definition substitutions in Workflow Studio
 <a name="use-cfn-sub-edit-state-machine-resource"></a>
@@ -53,7 +53,7 @@ You can connect the tasks that call [optimized service integrations](integrate-o
 
 If you map optimized service integration tasks with [standard component cards](https://docs.aws.amazon.com/application-composer/latest/dg/using-composer-cards.html#using-composer-cards-component-intro), the connection line doesn't appear on the Infrastructure Composer canvas.
 
-The following animation shows how you can connect an optimized task to an enhanced component card and view the changes in [https://docs.aws.amazon.com/application-composer/latest/dg/using-change-inspector.html](https://docs.aws.amazon.com/application-composer/latest/dg/using-change-inspector.html).
+The following animation shows how you can connect an optimized task to an enhanced component card and view the changes in [**Change Inspector**](https://docs.aws.amazon.com/application-composer/latest/dg/using-change-inspector.html).
 
 ![Animation showing how to connect tasks and optimized service integrations.](http://docs.aws.amazon.com/step-functions/latest/dg/images/make-connections-wfs-app-composer.gif)
 

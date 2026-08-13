@@ -9,7 +9,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 <a name="aws-properties-greengrass-functiondefinitionversion-functionconfiguration-description"></a>The group-specific configuration settings for a Lambda function. These settings configure the function's behavior in the Greengrass group. For more information, see [Controlling Execution of Greengrass Lambda Functions by Using Group-Specific Configuration](https://docs.aws.amazon.com/greengrass/v1/developerguide/lambda-group-config.html) in the * AWS IoT Greengrass Version 1 Developer Guide *.
 
-<a name="aws-properties-greengrass-functiondefinitionversion-functionconfiguration-inheritance"></a> In an CloudFormation template, `FunctionConfiguration` is a property of the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-function.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-function.html) property type.
+<a name="aws-properties-greengrass-functiondefinitionversion-functionconfiguration-inheritance"></a> In an CloudFormation template, `FunctionConfiguration` is a property of the [`Function`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-function.html) property type.
 
 ## Syntax
 <a name="aws-properties-greengrass-functiondefinitionversion-functionconfiguration-syntax"></a>

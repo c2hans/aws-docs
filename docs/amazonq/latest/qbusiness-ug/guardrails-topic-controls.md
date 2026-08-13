@@ -57,7 +57,7 @@ User level rule creation is not currently supported for the following IAM Identi
 ## Creating topic controls
 <a name="guardrails-topic-controls-customizing"></a>
 
-To create an Amazon Q Business topic-level control for your web experience chat, you can use AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateChatControlsConfiguration.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateChatControlsConfiguration.html) operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
+To create an Amazon Q Business topic-level control for your web experience chat, you can use AWS Management Console or the [UpdateChatControlConfiguration](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateChatControlsConfiguration.html) operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
 ------
 #### [ Console ]

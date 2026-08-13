@@ -16,7 +16,7 @@ The properties of a resource are defined in its resource type schema. This inclu
 
 The desired state that you specify must be valid against the resource type schema.
 
-As an example, suppose you wanted to create an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html) resource with a specific name and a retention policy of 90 days. As a first step, you must compose the desired state of the resource, formatted as JSON text.
+As an example, suppose you wanted to create an [`AWS::Logs::LogGroup`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html) resource with a specific name and a retention policy of 90 days. As a first step, you must compose the desired state of the resource, formatted as JSON text.
 
 ```
 {

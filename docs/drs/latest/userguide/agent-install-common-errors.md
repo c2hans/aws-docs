@@ -22,6 +22,8 @@ This topic covers platform-agnostic installation errors related to AWS credentia
 + [Error: Secure connection failed while downloading installation files](#error-download-ssl-failure)
 + [Error: Operating system is not supported](#error-unsupported-os)
 + [Error: Invalid endpoint](#error-invalid-endpoint)
++ [Error: Connection attempt failed on port 443](#error-connection-timeout)
++ [Error: Root or administrator privileges required](#error-root-privileges)
 
 ## Error: Outdated agent installer version
 <a name="error-outdated-installer"></a>
@@ -248,3 +250,52 @@ AWS Elastic Disaster Recovery volume limits:
 + Omit the `--endpoint` parameter so that the installer uses the default Regional endpoint.
 + If you must set the `--endpoint` parameter, provide a valid HTTPS URL.
 + Verify that the `--region` value is a valid AWS Region code, for example `us-east-1`.
+
+## Error: Connection attempt failed on port 443
+<a name="error-connection-timeout"></a>
+
+**Error:** The installer cannot reach the AWS Elastic Disaster Recovery endpoint and returns this error: Connection attempt to {{region}} on port 443 failed.
+
+**Cause:** The source server cannot open an outbound TCP connection on port 443 to the AWS Elastic Disaster Recovery endpoints. This error is usually caused by one of the following:
++ A missing route from the source server to the AWS Elastic Disaster Recovery endpoints
++ A firewall that blocks outbound connections, either on the source server or on a network appliance
++ An incorrect web proxy configuration on the source server, for example a proxy that does not pass HTTPS traffic
+
+**Resolution:** Verify that your firewall, security group, and web proxy configuration allow outbound traffic on port 443 to the following endpoints:
++ `drs.{{region}}.amazonaws.com`
++ `s3.{{region}}.amazonaws.com`
+
+To test connectivity on Linux, run the following command on the source server:
+
+```
+$ curl -v https://drs.{{region}}.amazonaws.com
+```
+
+To test connectivity on Windows, run the following command on the source server:
+
+```
+Test-NetConnection drs.{{region}}.amazonaws.com -Port 443
+```
+
+To avoid this error, verify connectivity to these endpoints from the source server before you run the AWS Elastic Disaster Recovery agent installer.
+
+## Error: Root or administrator privileges required
+<a name="error-root-privileges"></a>
+
+**Error:** The installer exits immediately without making any changes. On Linux, the installer returns the following error message:
+
+You do not have enough privileges to run this application installer. Run the installer again, using root privileges.
+
+On Windows, the installer returns the following error message:
+
+Please run this script as Administrator.
+
+**Cause:** You ran the installer without the privileges it requires. The installer checks for sufficient privileges before it does any work, so it does not modify the source server.
+
+**Resolution:** On Linux, run the installer with `sudo`:
+
+```
+$ sudo ./aws-replication-installer-init
+```
+
+On Windows, open a Command Prompt or PowerShell window with **Run as administrator** and run the installer from there.

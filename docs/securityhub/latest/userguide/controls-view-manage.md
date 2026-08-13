@@ -39,7 +39,7 @@ The **Controls** page displays a summary security score from 0–100 percent. Th
 
 When you enable Security Hub CSPM, Security Hub CSPM calculates the initial security score within 30 minutes after your first visit to the **Summary** page or **Security standards** page on the Security Hub CSPM console. It can take up to 24 hours for first-time security scores to be generated in the China Regions and AWS GovCloud (US) Regions.
 
-In addition to the overall security score, Security Hub CSPM calculates a standard security score for each enabled standard within 30 minutes after your first visit to the **Summary** page or **Security standards** page. To view a list of standards that are currently enabled, use the [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_GetEnabledStandards.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_GetEnabledStandards.html) API operation.
+In addition to the overall security score, Security Hub CSPM calculates a standard security score for each enabled standard within 30 minutes after your first visit to the **Summary** page or **Security standards** page. To view a list of standards that are currently enabled, use the [`GetEnabledStandards`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_GetEnabledStandards.html) API operation.
 
 AWS Config must be enabled with resource recording for scores to appear. For information about how Security Hub CSPM calculates security scores, see [Calculating security scores](standards-security-score.md).
 

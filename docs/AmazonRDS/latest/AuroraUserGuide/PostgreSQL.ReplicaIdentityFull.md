@@ -110,7 +110,7 @@ ALTER TABLE my_table REPLICA IDENTITY USING INDEX my_table_replica_idx;
 ```
 
 **Note**
-To avoid blocking writes while the index is built, use the [https://www.postgresql.org/docs/current/sql-createindex.html#SQL-CREATEINDEX-CONCURRENTLY](https://www.postgresql.org/docs/current/sql-createindex.html#SQL-CREATEINDEX-CONCURRENTLY) clause: `CREATE UNIQUE INDEX CONCURRENTLY my_table_replica_idx ON my_table (col1, col2);`
+To avoid blocking writes while the index is built, use the [`CONCURRENTLY`](https://www.postgresql.org/docs/current/sql-createindex.html#SQL-CREATEINDEX-CONCURRENTLY) clause: `CREATE UNIQUE INDEX CONCURRENTLY my_table_replica_idx ON my_table (col1, col2);`
 
 **Note**
 The index used for replica identity must be unique, must not be partial, must not be deferrable, and must include only columns with `NOT NULL` constraints.
@@ -177,7 +177,7 @@ LIMIT 10;
 A table with a high `heap_blks_read` value relative to `idx_blks_read` can indicate that the apply worker is not using an efficient index to locate rows for `UPDATE` and `DELETE` operations. This is a common source of replication lag when `REPLICA IDENTITY FULL` is in use.
 
 **Note**
-This query requires the [https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-COUNTS](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-COUNTS) parameter to be enabled on the subscriber. This parameter is on by default.
+This query requires the [`track_counts`](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-COUNTS) parameter to be enabled on the subscriber. This parameter is on by default.
 
 ### Evaluate whether REPLICA IDENTITY FULL is necessary
 <a name="PostgreSQL.ReplicaIdentityFull.Evaluate"></a>

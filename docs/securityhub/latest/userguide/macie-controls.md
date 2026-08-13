@@ -20,13 +20,13 @@ These controls may not be available in all AWS Regions. For more information, se
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/macie-status-check.html](https://docs.aws.amazon.com/config/latest/developerguide/macie-status-check.html)
+**AWS Config rule:** [`macie-status-check`](https://docs.aws.amazon.com/config/latest/developerguide/macie-status-check.html)
 
 **Schedule type:** Periodic
 
 This control checks whether Amazon Macie is enabled for an account. The control fails if Macie isn't enabled for the account.
 
-Amazon Macie discovers sensitive data using machine learning and pattern matching, provides visibility into data security risks, and enables automated protection against those risks. Macie automatically and continually evaluates your Amazon Simple Storage Service (Amazon S3) buckets for security and access control, and generates findings to notify you of potential issues with the security or privacy of your Amazon S3 data. Macie also automates discovery and reporting of sensitive data, such as personally identifiable information (PII), to provide you with a better understanding of the data that you store in Amazon S3. To learn more, see the [https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html](https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html).
+Amazon Macie discovers sensitive data using machine learning and pattern matching, provides visibility into data security risks, and enables automated protection against those risks. Macie automatically and continually evaluates your Amazon Simple Storage Service (Amazon S3) buckets for security and access control, and generates findings to notify you of potential issues with the security or privacy of your Amazon S3 data. Macie also automates discovery and reporting of sensitive data, such as personally identifiable information (PII), to provide you with a better understanding of the data that you store in Amazon S3. To learn more, see the [*Amazon Macie User Guide*](https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html).
 
 ### Remediation
 <a name="macie-1-remediation"></a>
@@ -44,7 +44,7 @@ To enable Macie, see [Enable Macie](https://docs.aws.amazon.com/macie/latest/use
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/macie-auto-sensitive-data-discovery-check.html](https://docs.aws.amazon.com/config/latest/developerguide/macie-auto-sensitive-data-discovery-check.html)
+**AWS Config rule:** [`macie-auto-sensitive-data-discovery-check`](https://docs.aws.amazon.com/config/latest/developerguide/macie-auto-sensitive-data-discovery-check.html)
 
 **Schedule type:** Periodic
 

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/invento
 
 This section describes how to configure AWS Systems Manager Inventory collection on one or more managed nodes by using the Systems Manager console. For an example of how to configure inventory collection by using the AWS Command Line Interface (AWS CLI), see [Using the AWS CLI to configure inventory data collection](inventory-collection-cli.md).
 
-When you configure inventory collection, you start by creating a AWS Systems Manager State Manager association. Systems Manager collects the inventory data when the association is run. If you don't create the association first, and attempt to invoke the `aws:softwareInventory` plugin by using, for example, AWS Systems Manager Run Command, the system returns the following error: `The aws:softwareInventory plugin can only be invoked via ssm-associate.`
+When you configure inventory collection, you start by creating a AWS Systems Manager State Manager association. Systems Manager collects the inventory data when the association is run. If you don't create the association first, and attempt to invoke the `aws:softwareInventory` plugin by using, for example, AWS Systems Manager Run Command, the system returns the following error: `The aws:softwareInventory plugin can only be invoked through ssm-associate.`
 
 **Note**
 Be aware of the following behavior if you create multiple inventory associations for a managed node:
@@ -20,7 +20,7 @@ If a node is assigned multiple inventory associations and each uses a tag key/va
 
 **Before You Begin**
 Before you configure inventory collection, complete the following tasks.
-+ Update AWS Systems Manager SSM Agent on the nodes you want to inventory. By running the latest version of SSM Agent, you ensure that you can collect metadata for all supported inventory types. For information about how to update SSM Agent by using State Manager, see [Walkthrough: Automatically update SSM Agent with the AWS CLI](state-manager-update-ssm-agent-cli.md).
++ Update AWS Systems Manager SSM Agent on the nodes you want to inventory. By running the latest version of SSM Agent, you make sure that you can collect metadata for all supported inventory types. For information about how to update SSM Agent by using State Manager, see [Walkthrough: Automatically update SSM Agent with the AWS CLI](state-manager-update-ssm-agent-cli.md).
 + Verify that you have completed the setup requirements for your Amazon Elastic Compute Cloud (Amazon EC2) instances and non-EC2 machines in a [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) environment. For information, see [Setting up managed nodes for AWS Systems Manager](systems-manager-setting-up-nodes.md).
 + For Microsoft Windows Server nodes, verify that your managed node is configured with Windows PowerShell 3.0 (or later). SSM Agent uses the `ConvertTo-Json` cmdlet in PowerShell to convert Windows update inventory data to the required format.
 + (Optional) Create a resource data sync to centrally store inventory data in an Amazon S3 bucket. resource data sync then automatically updates the centralized data when new inventory data is collected. For more information, see [Walkthrough: Using resource data sync to aggregate inventory data](inventory-resource-data-sync.md).

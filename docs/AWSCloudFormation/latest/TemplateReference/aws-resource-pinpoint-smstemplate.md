@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[Body](#cfn-pinpoint-smstemplate-body)" : {{String}},
       "[DefaultSubstitutions](#cfn-pinpoint-smstemplate-defaultsubstitutions)" : {{String}},
-      "[Tags](#cfn-pinpoint-smstemplate-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
+      "[Tags](#cfn-pinpoint-smstemplate-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
       "[TemplateDescription](#cfn-pinpoint-smstemplate-templatedescription)" : {{String}},
       "[TemplateName](#cfn-pinpoint-smstemplate-templatename)" : {{String}}
     }
@@ -39,7 +39,7 @@ Properties:
   [Body](#cfn-pinpoint-smstemplate-body): {{String}}
   [DefaultSubstitutions](#cfn-pinpoint-smstemplate-defaultsubstitutions): {{String}}
   [Tags](#cfn-pinpoint-smstemplate-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
   [TemplateDescription](#cfn-pinpoint-smstemplate-templatedescription): {{String}}
   [TemplateName](#cfn-pinpoint-smstemplate-templatename): {{String}}
 ```
@@ -63,7 +63,7 @@ A JSON object that specifies the default values to use for message variables in 
 An array of key-value pairs to apply to this resource.
 For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TemplateDescription`  <a name="cfn-pinpoint-smstemplate-templatedescription"></a>
@@ -86,14 +86,14 @@ The name of the message template to use for the message. If specified, this valu
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the message template (`TemplateName`).
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-pinpoint-smstemplate-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-pinpoint-smstemplate-return-values-fn--getatt-fn--getatt"></a>

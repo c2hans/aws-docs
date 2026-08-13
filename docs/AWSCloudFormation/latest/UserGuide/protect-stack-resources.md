@@ -212,19 +212,19 @@ For information about writing stack policies, see [Defining a stack policy](#sta
    + To use a policy defined in a separate file, choose **Upload a file**, then **Choose file** to select the file containing the stack policy.
 
 **To set a stack policy when you create a stack (AWS CLI)**
-+ Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command with the `--stack-policy-body` option to type in a modified policy or the `--stack-policy-url` option to specify a file containing the policy.
++ Use the [create-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command with the `--stack-policy-body` option to type in a modified policy or the `--stack-policy-url` option to specify a file containing the policy.
 
 **To set a stack policy on an existing stack (AWS CLI only)**
-+ Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-stack-policy.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-stack-policy.html) command with the `--stack-policy-body` option to type in a modified policy or the `--stack-policy-url` option to specify a file containing the policy.
++ Use the [set-stack-policy](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-stack-policy.html) command with the `--stack-policy-body` option to type in a modified policy or the `--stack-policy-url` option to specify a file containing the policy.
 **Note**
-To add a policy to an existing stack, you must have permission to the CloudFormation [https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetStackPolicy.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetStackPolicy.html) action.
+To add a policy to an existing stack, you must have permission to the CloudFormation [SetStackPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetStackPolicy.html) action.
 
 ## Updating protected resources
 <a name="protect-stack-resources-updating"></a>
 
 To update protected resources, create a temporary policy that overrides the stack policy and allows updates on those resources. Specify the override policy when you update the stack. The override policy doesn't permanently change the stack policy.
 
-To update protected resources, you must have permission to use the CloudFormation [https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetStackPolicy.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetStackPolicy.html) action. For information about setting CloudFormation permissions, see [Control CloudFormation access with AWS Identity and Access Management](control-access-with-iam.md).
+To update protected resources, you must have permission to use the CloudFormation [SetStackPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetStackPolicy.html) action. For information about setting CloudFormation permissions, see [Control CloudFormation access with AWS Identity and Access Management](control-access-with-iam.md).
 
 **Note**
 During a stack update, CloudFormation automatically updates resources that depend on other updated resources. For example, CloudFormation updates a resource that references an updated resource. CloudFormation makes no physical changes, such as the resources' ID, to automatically updated resources, but if a stack policy is associated with those resources, you must have permission to update them.
@@ -289,19 +289,19 @@ At this point, you also have the option to view the change set to review your pr
    If the stack update fails, CloudFormation; automatically rolls back changes, and sets the stack status to `UPDATE_ROLLBACK_COMPLETE`.
 
 **To update a protected resource (AWS CLI)**
-+ Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack.html) command with the `--stack-policy-during-update-body` option to type in a modified policy or the `--stack-policy-during-update-url` option to specify a file containing the policy.
++ Use the [update-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack.html) command with the `--stack-policy-during-update-body` option to type in a modified policy or the `--stack-policy-during-update-url` option to specify a file containing the policy.
 **Note**
 CloudFormation applies the override policy only during this update. The override policy doesn't permanently change the stack policy. To modify a stack policy, see [Modifying a stack policy](#protect-stack-resources-modifying).
 
 ## Modifying a stack policy
 <a name="protect-stack-resources-modifying"></a>
 
-To protect additional resources or to remove protection from resources, modify the stack policy. For example, when you add a database that you want to protect to your stack, add a `Deny` statement for that database to the stack policy. To modify the policy, you must have permission to use the [https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetStackPolicy.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetStackPolicy.html) action.
+To protect additional resources or to remove protection from resources, modify the stack policy. For example, when you add a database that you want to protect to your stack, add a `Deny` statement for that database to the stack policy. To modify the policy, you must have permission to use the [SetStackPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetStackPolicy.html) action.
 
 Use the AWS CLI to modify stack policies.
 
 **To modify a stack policy (AWS CLI)**
-+ Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-stack-policy.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-stack-policy.html) command with the `--stack-policy-body` option to type in a modified policy or the `--stack-policy-url` option to specify a file containing the policy.
++ Use the [set-stack-policy](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-stack-policy.html) command with the `--stack-policy-body` option to type in a modified policy or the `--stack-policy-url` option to specify a file containing the policy.
 
 You can't delete a stack policy. To remove all protection from all resources, you modify the policy to explicitly allow all actions on all resources. The following policy allows all updates on all resources:
 

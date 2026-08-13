@@ -78,7 +78,7 @@ When using the agent-based scan method, Amazon Inspector initiates new vulnerabi
 
 Amazon Inspector updates the **Last scanned** field for an EC2 instance when an initial scan is completed. After this, the **Last scanned** field is updated when Amazon Inspector evaluates SSM inventory (every 30 minutes by default), or when an instance is re-scanned because a new CVE impacting that instance was added to the Amazon Inspector database.
 
-You can check when an EC2 instance was last scanned for vulnerabilities from the Instances tab on the **Account management** page or by using the [https://docs.aws.amazon.com//inspector/v2/APIReference/API_ListCoverage.html](https://docs.aws.amazon.com//inspector/v2/APIReference/API_ListCoverage.html) command.
+You can check when an EC2 instance was last scanned for vulnerabilities from the Instances tab on the **Account management** page or by using the [ListCoverage](https://docs.aws.amazon.com//inspector/v2/APIReference/API_ListCoverage.html) command.
 
 ### Configuring the SSM Agent
 <a name="configure-ssm"></a>
@@ -89,7 +89,7 @@ The SSM Agent is installed by default on EC2 instances created from some Amazon 
 
 The following procedure describes how to configure an Amazon EC2 instance as a managed instance using an IAM instance profile. The procedure also provides links to more detailed information in the *AWS Systems Manager User Guide*.
 
-[https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSSMManagedInstanceCore.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSSMManagedInstanceCore.html) is the recommended policy to use when you attach an instance profile. This policy has all the permissions needed for Amazon Inspector EC2 scanning.
+[AmazonSSMManagedInstanceCore](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSSMManagedInstanceCore.html) is the recommended policy to use when you attach an instance profile. This policy has all the permissions needed for Amazon Inspector EC2 scanning.
 
 **Note**
 You can also automate SSM management of all your EC2 instances, without the use of IAM instance profiles, by using SSM Default Host Management Configuration. For more information, see [Default Host Management Configuration](https://docs.aws.amazon.com/systems-manager/latest/userguide/managed-instances-default-host-management.html).
@@ -100,7 +100,7 @@ You can also automate SSM management of all your EC2 instances, without the use 
 
 1. Use the AWS CLI to verify that the SSM Agent is running. For more information, see [Checking SSM Agent status and starting the agent](https://docs.aws.amazon.com//systems-manager/latest/userguide/ssm-agent-status-and-restart.html).
 
-1. Grant permission for SSM to manage your instance. You can grant permission by creating an IAM instance profile and attaching it to your instance. We recommend using the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSSMManagedInstanceCore.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSSMManagedInstanceCore.html) policy, because this policy has the permissions for SSM Distributor, SSM Inventory and SSM State manager, that Amazon Inspector needs for scans. For instructions on creating an instance profile with these permissions and attaching it to an instance, see [Configure instance permissions for Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-permissions.html#instance-profile-add-permissions).
+1. Grant permission for SSM to manage your instance. You can grant permission by creating an IAM instance profile and attaching it to your instance. We recommend using the [AmazonSSMManagedInstanceCore](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSSMManagedInstanceCore.html) policy, because this policy has the permissions for SSM Distributor, SSM Inventory and SSM State manager, that Amazon Inspector needs for scans. For instructions on creating an instance profile with these permissions and attaching it to an instance, see [Configure instance permissions for Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-permissions.html#instance-profile-add-permissions).
 
 1. (Optional) Activate automatic updates for the SSM Agent. For more information, see [Automating updates to SSM Agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent-automatic-updates.html).
 
@@ -176,7 +176,7 @@ When your account is configured for **Hybrid scanning**, Amazon Inspector perfor
 
 Amazon Inspector updates the **Last scanned** field for an Amazon EC2 instance whenever it scans extracted snapshots from an instance after an agentless scan.
 
-You can check when an EC2 instance was last scanned for vulnerabilities from the Instances tab on the Account management page or by using the [https://docs.aws.amazon.com//inspector/v2/APIReference/API_ListCoverage.html](https://docs.aws.amazon.com//inspector/v2/APIReference/API_ListCoverage.html) command.
+You can check when an EC2 instance was last scanned for vulnerabilities from the Instances tab on the Account management page or by using the [ListCoverage](https://docs.aws.amazon.com//inspector/v2/APIReference/API_ListCoverage.html) command.
 
 ## Managing scan mode
 <a name="scan-mode"></a>

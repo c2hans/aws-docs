@@ -67,7 +67,7 @@ Your saved searches display contacts from both ACGR instances. Any previously sa
 When you open a contact details page, you see comprehensive information regardless of which Region the contact originated from, including:
 + Overview, connection details, and queue information
 + Contact tags and attributes
-+ Contact Lens data (conversational analytics, voice transcripts, chat transcripts)
++ Conversational analytics data (voice transcripts, chat transcripts)
 + Screen and audio recordings
 + Chat transcripts and IVR interactions
 + Email attachments and transcripts
@@ -77,12 +77,12 @@ The contact's active Region is displayed on the contact details page under **Glo
 ![The contact details page showing the Global resiliency metadata section with the active Region information.](http://docs.aws.amazon.com/connect/latest/adminguide/images/global-resiliency-metadata.png)
 
 **Note**
-If the contact's active Region is impaired, some information may be unavailable, including screen and audio recordings, chat transcripts, IVR interactions, email attachments and transcripts, and Contact Lens data.
+If the contact's active Region is impaired, some information may be unavailable, including screen and audio recordings, chat transcripts, IVR interactions, email attachments and transcripts, and conversational analytics data.
 
-### Contact Lens data access
+### Conversational analytics data access
 <a name="contact-lens-data-access-across-regions"></a>
 
-You have full access to Contact Lens data across Regions, including:
+You have full access to conversational analytics data across Regions, including:
 + In-progress contacts: Conversational analytics, voice transcripts (redacted and unredacted), and chat transcripts.
 + Completed contacts: All conversational analytics, voice transcripts (redacted and unredacted), and chat transcripts.
 + Recordings: Screen and audio recordings are accessible regardless of the contact's active Region.

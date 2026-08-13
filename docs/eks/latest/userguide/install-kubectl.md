@@ -54,7 +54,7 @@ Install or update `kubectl` on one of the following operating systems:
 +  [Windows](#windows_kubectl)
 
 **Note**
-If downloads are slow to your AWS Region from the AWS Regions used in this section, consider setting up CloudFront to front the content. For further information, see [Get started with a basic CloudFront distribution](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/GettingStartedSimpleDistributon.html).
+If downloads are slow to your AWS Region from the AWS Regions used in this section, consider setting up CloudFront to front the content. For further information, see [Get started with a basic CloudFront distribution](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/GettingStartedSimpleDistribution.html).
 
 ### macOS
 <a name="macos_kubectl"></a>
@@ -509,7 +509,7 @@ Procedure:
       Get-FileHash kubectl.exe
       ```
 
-   1. Make sure that the generated checksum in the output matches the checksum in the downloaded `kubectl.sha256` file. The PowerShell output should be an uppercase equivalent string of characters.
+   1. Make sure that the generated checksum in the output matches the checksum in the downloaded `kubectl.exe.sha256` file. The PowerShell output should be an uppercase equivalent string of characters.
 
 1. Copy the binary to a folder in your `PATH`. If you have an existing directory in your `PATH` that you use for command line utilities, copy the binary to that directory. Otherwise, complete the following steps.
 
@@ -540,7 +540,7 @@ Procedure:
 
 The `eksctl` CLI is used to work with EKS clusters. It automates many individual tasks. See [Installation](https://eksctl.io/installation) in the `eksctl` documentation for instructions on installing `eksctl`. For Linux, use the UNIX instructions.
 
-When using `eksctl` the IAM security principal that you’re using must have permissions to work with Amazon EKS IAM roles, service linked roles, AWS CloudFormation, a VPC, and related resources. For more information, see [Actions](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelastickubernetesservice.html) and [Using service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html) in the IAM User Guide. You must complete all steps in this guide as the same user. To check the current user, run the following command:
+When using `eksctl`, the IAM security principal that you’re using must have permissions to work with Amazon EKS IAM roles, service-linked roles, AWS CloudFormation, a VPC, and related resources. For more information, see [Actions](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelastickubernetesservice.html) and [Using service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html) in the IAM User Guide. You must complete all steps in this guide as the same user. To check the current user, run the following command:
 
 ```
 aws sts get-caller-identity

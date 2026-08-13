@@ -164,7 +164,7 @@ You can configure logging on the group's **Settings** page.
 ### Configure logging (API)
 <a name="config-logs-api"></a>
 
-You can use AWS IoT Greengrass logger APIs to configure logging programmatically. For example, use the [https://docs.aws.amazon.com/greengrass/v1/apireference/createloggerdefinition-post.html](https://docs.aws.amazon.com/greengrass/v1/apireference/createloggerdefinition-post.html) action to create a logger definition based on a [https://docs.aws.amazon.com/greengrass/v1/apireference/definitions-loggerdefinitionversion.html](https://docs.aws.amazon.com/greengrass/v1/apireference/definitions-loggerdefinitionversion.html) payload, which uses the following syntax:
+You can use AWS IoT Greengrass logger APIs to configure logging programmatically. For example, use the [`CreateLoggerDefinition`](https://docs.aws.amazon.com/greengrass/v1/apireference/createloggerdefinition-post.html) action to create a logger definition based on a [`LoggerDefinitionVersion`](https://docs.aws.amazon.com/greengrass/v1/apireference/definitions-loggerdefinitionversion.html) payload, which uses the following syntax:
 
 ```
 {
@@ -184,7 +184,7 @@ You can use AWS IoT Greengrass logger APIs to configure logging programmatically
 }
 ```
 
-`LoggerDefinitionVersion` is an array of one or more [https://docs.aws.amazon.com/greengrass/v1/apireference/definitions-logger.html](https://docs.aws.amazon.com/greengrass/v1/apireference/definitions-logger.html) objects that have the following properties:
+`LoggerDefinitionVersion` is an array of one or more [`Logger`](https://docs.aws.amazon.com/greengrass/v1/apireference/definitions-logger.html) objects that have the following properties:
 
 `Id`
 An identifier for the logger.

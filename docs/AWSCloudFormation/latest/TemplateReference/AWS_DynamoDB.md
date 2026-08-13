@@ -10,4 +10,5 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 **Resource types**
 + [AWS::DynamoDB::Export](aws-resource-dynamodb-export.md)
 + [AWS::DynamoDB::GlobalTable](aws-resource-dynamodb-globaltable.md)
++ [AWS::DynamoDB::Stream](aws-resource-dynamodb-stream.md)
 + [AWS::DynamoDB::Table](aws-resource-dynamodb-table.md)

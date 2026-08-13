@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateNodegr
 # UpdateNodegroupConfig
 <a name="API_UpdateNodegroupConfig"></a>
 
-Updates an Amazon EKS managed node group configuration. Your node group continues to function during the update. The response output includes an update ID that you can use to track the status of your node group update with the [https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeUpdate.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeUpdate.html) API operation. You can update the Kubernetes labels and taints for a node group and the scaling and version update configuration.
+Updates an Amazon EKS managed node group configuration. Your node group continues to function during the update. The response output includes an update ID that you can use to track the status of your node group update with the [`DescribeUpdate`](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeUpdate.html) API operation. You can update the Kubernetes labels and taints for a node group and the scaling and version update configuration.
 
 ## Request Syntax
 <a name="API_UpdateNodegroupConfig_RequestSyntax"></a>

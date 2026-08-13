@@ -14,7 +14,7 @@ Alternatively, these options can also be configured in your code, as shown in th
 ## Default retry configuration
 <a name="defaultRetryConfig"></a>
 
- Every service client defaults to the `standard` retry strategy configuration provided through the [https://docs.rs/aws-smithy-types/latest/aws_smithy_types/retry/struct.RetryConfig.html](https://docs.rs/aws-smithy-types/latest/aws_smithy_types/retry/struct.RetryConfig.html) struct. By default, a call will be tried three times (*the initial attempt, plus two retries*). Additionally, each retry will be delayed by a short, random duration to avoid retry storms. This convention is suitable for the majority of use cases but might be unsuitable in specific circumstances such as high-throughput systems.
+ Every service client defaults to the `standard` retry strategy configuration provided through the [`RetryConfig`](https://docs.rs/aws-smithy-types/latest/aws_smithy_types/retry/struct.RetryConfig.html) struct. By default, a call will be tried three times (*the initial attempt, plus two retries*). Additionally, each retry will be delayed by a short, random duration to avoid retry storms. This convention is suitable for the majority of use cases but might be unsuitable in specific circumstances such as high-throughput systems.
 
  Only some types of errors are considered retryable by the SDKs. Examples of retryable errors are:
 + socket timeouts
@@ -31,7 +31,7 @@ You can customize the `standard` retry strategy by setting the maximum attempts,
 ## Maximum Attempts
 <a name="maxAttempts"></a>
 
-You can customize the maximum attempts in your code by supplying a modified [https://docs.rs/aws-smithy-types/latest/aws_smithy_types/retry/struct.RetryConfig.html](https://docs.rs/aws-smithy-types/latest/aws_smithy_types/retry/struct.RetryConfig.html) to your `aws_config::defaults`:
+You can customize the maximum attempts in your code by supplying a modified [`RetryConfig`](https://docs.rs/aws-smithy-types/latest/aws_smithy_types/retry/struct.RetryConfig.html) to your `aws_config::defaults`:
 
 ```
 const CUSTOM_MAX_ATTEMPTS: u32 = 5;
@@ -54,7 +54,7 @@ If a retry is necessary, the default retry strategy waits before it makes the su
 
 Random jitter is applied to the delays between all attempts. The jitter helps mitigate the effect of large fleets that can cause retry storms. For a deeper discussion about exponential backoff and jitter, see [Exponential Backoff And Jitter](https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/) in the *AWS Architecture Blog*.
 
- You can customize the delay settings in your code by supplying a modified [https://docs.rs/aws-smithy-types/latest/aws_smithy_types/retry/struct.RetryConfig.html](https://docs.rs/aws-smithy-types/latest/aws_smithy_types/retry/struct.RetryConfig.html) to your `aws_config::defaults`. The following code sets the configuration to delay the first retry attempt for up to 100 milliseconds and that the maximum amount of time between any retry attempt is 5 seconds.
+ You can customize the delay settings in your code by supplying a modified [`RetryConfig`](https://docs.rs/aws-smithy-types/latest/aws_smithy_types/retry/struct.RetryConfig.html) to your `aws_config::defaults`. The following code sets the configuration to delay the first retry attempt for up to 100 milliseconds and that the maximum amount of time between any retry attempt is 5 seconds.
 
 ```
 let retry_config = RetryConfig::standard()
@@ -81,7 +81,7 @@ Adaptive retries includes all the features of standard retries. It adds a client
 
 The rate adapts in real time to changing service conditions and traffic patterns and might increase or decrease the rate of traffic accordingly. Critically, the rate limiter might delay initial attempts in high-traffic scenarios.
 
-You can select the `adaptive` retry strategy in code by supplying a modified [https://docs.rs/aws-smithy-types/latest/aws_smithy_types/retry/struct.RetryConfig.html](https://docs.rs/aws-smithy-types/latest/aws_smithy_types/retry/struct.RetryConfig.html):
+You can select the `adaptive` retry strategy in code by supplying a modified [`RetryConfig`](https://docs.rs/aws-smithy-types/latest/aws_smithy_types/retry/struct.RetryConfig.html):
 
 ```
 let config = aws_config::defaults(BehaviorVersion::latest())

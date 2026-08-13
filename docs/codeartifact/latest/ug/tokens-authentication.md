@@ -38,14 +38,14 @@ The following table describes the parameters for the `login` command.
   <tr><th>Parameter</th><th>Required</th><th>Description</th></tr>
 </thead>
 <tbody>
-  <tr><td>`--tool`</td><td>Yes</td><td>The package manager to authenticate to. Possible values are `dotnet`, `npm`, `nuget`, `pip`, `swift` and `twine`.</td></tr>
-  <tr><td>`--domain`</td><td>Yes</td><td>The domain name that the repository belongs to.</td></tr>
-  <tr><td>`--domain-owner`</td><td>No</td><td>The ID of the owner of the domain. This parameter is required if accessing a domain that is owned by an AWS account that you are not authenticated to. For more information, see [Cross-account domains](domain-overview.md#domain-overview-cross-account).</td></tr>
-  <tr><td>`--repository`</td><td>Yes</td><td>The name of the repository to authenticate to.</td></tr>
-  <tr><td>`--duration-seconds`</td><td>No</td><td>The time, in seconds, that the login information is valid. The minimum value is 900\* and maximum value is 43200.</td></tr>
-  <tr><td>`--namespace`</td><td>No</td><td>Associates a namespace with your repository tool.</td></tr>
-  <tr><td>`--dry-run`</td><td>No</td><td>Only print the commands that would be executed to connect your tool with your repository without making any changes to your configuration.</td></tr>
-  <tr><td colspan="3">\*A value of 0 is also valid when calling `login` while assuming a role. Calling `login` with `--duration-seconds 0` creates a token with a lifetime equal to the remaining time in the session duration of an assumed role.</td></tr>
+  <tr><td><code>--tool</code></td><td>Yes</td><td>The package manager to authenticate to. Possible values are <code>dotnet</code>, <code>npm</code>, <code>nuget</code>, <code>pip</code>, <code>swift</code> and <code>twine</code>.</td></tr>
+  <tr><td><code>--domain</code></td><td>Yes</td><td>The domain name that the repository belongs to.</td></tr>
+  <tr><td><code>--domain-owner</code></td><td>No</td><td>The ID of the owner of the domain. This parameter is required if accessing a domain that is owned by an AWS account that you are not authenticated to. For more information, see <a href="domain-overview.md#domain-overview-cross-account">Cross-account domains</a>.</td></tr>
+  <tr><td><code>--repository</code></td><td>Yes</td><td>The name of the repository to authenticate to.</td></tr>
+  <tr><td><code>--duration-seconds</code></td><td>No</td><td>The time, in seconds, that the login information is valid. The minimum value is 900* and maximum value is 43200.</td></tr>
+  <tr><td><code>--namespace</code></td><td>No</td><td>Associates a namespace with your repository tool.</td></tr>
+  <tr><td><code>--dry-run</code></td><td>No</td><td>Only print the commands that would be executed to connect your tool with your repository without making any changes to your configuration.</td></tr>
+  <tr><td colspan="3">*A value of 0 is also valid when calling <code>login</code> while assuming a role. Calling <code>login</code> with <code>--duration-seconds 0</code> creates a token with a lifetime equal to the remaining time in the session duration of an assumed role.</td></tr>
 </tbody>
 </table>
 

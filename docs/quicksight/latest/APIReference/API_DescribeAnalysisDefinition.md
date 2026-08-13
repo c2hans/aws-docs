@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 Provides a detailed description of the definition of an analysis.
 
 **Note**
-If you do not need to know details about the content of an Analysis, for instance if you are trying to check the status of a recently created or updated Analysis, use the [https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeAnalysis.html](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeAnalysis.html) instead.
+If you do not need to know details about the content of an Analysis, for instance if you are trying to check the status of a recently created or updated Analysis, use the [`DescribeAnalysis`](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeAnalysis.html) instead.
 
 ## Request Syntax
 <a name="API_DescribeAnalysisDefinition_RequestSyntax"></a>

@@ -39,7 +39,7 @@ Since the Amazon S3 Select response size is unknown, Amazon S3 streams the respo
 
 Each message consists of two sections: the prelude and the data. The prelude section consists of 1) the total byte-length of the message, and 2) the combined byte-length of all the headers. The data section consists of 1) the headers, and 2) a payload.
 
-Each section ends with a 4-byte big-endian integer checksum (CRC). Amazon S3 Select uses CRC32 (often referred to as GZIP CRC32) to calculate both CRCs. For more information about CRC32, see [https://www.ietf.org/rfc/rfc1952.txt](https://www.ietf.org/rfc/rfc1952.txt).
+Each section ends with a 4-byte big-endian integer checksum (CRC). Amazon S3 Select uses CRC32 (often referred to as GZIP CRC32) to calculate both CRCs. For more information about CRC32, see [*GZIP file format specification version 4.3*](https://www.ietf.org/rfc/rfc1952.txt).
 
 Total message overhead including the prelude and both checksums is 16 bytes.
 

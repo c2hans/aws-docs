@@ -54,7 +54,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 
  Choose **Setting** in **System** - **Users** in the web console of the guidance as Administrator user. Configure the roles of the guidance mapping to the groups or roles in your OIDC provider.
 
- By default, the guidance supports mapping [https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-user-groups.html](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-user-groups.html) to multiple roles in the guidance with the following rules:
+ By default, the guidance supports mapping [*group information from the Cognito user pool*](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-user-groups.html) to multiple roles in the guidance with the following rules:
 
 |  **Group name in Cognito**  |  **Solution role**  |
 | --- | --- |

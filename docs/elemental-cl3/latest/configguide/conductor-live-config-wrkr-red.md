@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/conduct
 
 To set up worker nodes for failover resiliency, you create one or more redundancy groups, then you add worker nodes to each group.
 
-For general information about how failover resiliency works, and for detailed information about design redundancy groups that meet your requirements, see [https://docs.aws.amazon.com/elemental-cl3/latest/ug](https://docs.aws.amazon.com/elemental-cl3/latest/ug).
+For general information about how failover resiliency works, and for detailed information about design redundancy groups that meet your requirements, see [*Conductor Live User Guide*](https://docs.aws.amazon.com/elemental-cl3/latest/ug).
 
 **To create a redundancy group**
 

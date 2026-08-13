@@ -117,7 +117,7 @@ You can adjust a fleet's hosting capacity after the fleet reaches ACTIVE status.
 ------
 #### [ AWS CLI ]
 
-Use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/gamelift/create-fleet.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/gamelift/create-fleet.html) command to create a fleet of compute type `EC2`. Amazon GameLift Servers creates the fleet resource in your current default AWS Region (or you can add a --region tag to specify a different AWS Region).
+Use the [`create-fleet`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/gamelift/create-fleet.html) command to create a fleet of compute type `EC2`. Amazon GameLift Servers creates the fleet resource in your current default AWS Region (or you can add a --region tag to specify a different AWS Region).
 
 **Create a minimal managed fleet**
 

@@ -23,45 +23,45 @@ The following templates are available:
 
   For more information, see the following topics:
 
-  [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-entityresolution-matchingworkflow.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-entityresolution-matchingworkflow.html) in the *CloudFormation User Guide*
+  [AWS::EntityResolution::MatchingWorkflow](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-entityresolution-matchingworkflow.html) in the *CloudFormation User Guide*
 
-  [https://docs.aws.amazon.com/entityresolution/latest/apireference/API_CreateMatchingWorkflow.html](https://docs.aws.amazon.com/entityresolution/latest/apireference/API_CreateMatchingWorkflow.html) in the *AWS Entity Resolution API Reference*
+  [CreateMatchingWorkflow](https://docs.aws.amazon.com/entityresolution/latest/apireference/API_CreateMatchingWorkflow.html) in the *AWS Entity Resolution API Reference*
 + *Schema mapping*
 
   Create a schema mapping, which defines the schema of the input customer records table.
 
   For more information, see the following topics:
 
-  [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-entityresolution-schemamapping.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-entityresolution-schemamapping.html) in the *CloudFormation User Guide*
+  [AWS::EntityResolution::SchemaMapping](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-entityresolution-schemamapping.html) in the *CloudFormation User Guide*
 
-  [https://docs.aws.amazon.com/entityresolution/latest/apireference/API_CreateSchemaMapping.html](https://docs.aws.amazon.com/entityresolution/latest/apireference/API_CreateSchemaMapping.html) in the *AWS Entity Resolution API Reference*
+  [CreateSchemaMapping](https://docs.aws.amazon.com/entityresolution/latest/apireference/API_CreateSchemaMapping.html) in the *AWS Entity Resolution API Reference*
 + *ID mapping workflow*
 
   Create an `IdMappingWorkflow` object, which stores the configuration of the data processing job to run.
 
   For more information, see the following topics:
 
-  [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-entityresolution-idmappingworkflow.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-entityresolution-idmappingworkflow.html) in the *CloudFormation User Guide*
+  [AWS::EntityResolution::IdMappingWorkflow](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-entityresolution-idmappingworkflow.html) in the *CloudFormation User Guide*
 
-  [https://docs.aws.amazon.com/entityresolution/latest/apireference/API_CreateIdMappingWorkflow.html](https://docs.aws.amazon.com/entityresolution/latest/apireference/API_CreateIdMappingWorkflow.html) in the *AWS Entity Resolution API Reference*
+  [CreateIdMappingWorkflow](https://docs.aws.amazon.com/entityresolution/latest/apireference/API_CreateIdMappingWorkflow.html) in the *AWS Entity Resolution API Reference*
 + *ID namespace*
 
   Create an `IdNamespace` object, which stores the metadata explaining the dataset and how to use it.
 
   For more information, see the following topics:
 
-  [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-entityresolution-idnamespace.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-entityresolution-idnamespace.html) in the *CloudFormation User Guide*
+  [AWS::EntityResolution::IdNamespace](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-entityresolution-idnamespace.html) in the *CloudFormation User Guide*
 
-  [https://docs.aws.amazon.com/entityresolution/latest/apireference/API_CreateIdNamespace.html](https://docs.aws.amazon.com/entityresolution/latest/apireference/API_CreateIdNamespace.html) in the *AWS Entity Resolution API Reference*
+  [CreateIdNamespace](https://docs.aws.amazon.com/entityresolution/latest/apireference/API_CreateIdNamespace.html) in the *AWS Entity Resolution API Reference*
 + *PolicyStatement*
 
   Create an `PolicyStatement` object.
 
   For more information, see the following topics:
 
-  [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-entityresolution-policystatement.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-entityresolution-policystatement.html) in the *CloudFormation User Guide*
+  [AWS::EntityResolution::PolicyStatement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-entityresolution-policystatement.html) in the *CloudFormation User Guide*
 
-  [https://docs.aws.amazon.com/entityresolution/latest/apireference/API_AddPolicyStatement.html](https://docs.aws.amazon.com/entityresolution/latest/apireference/API_AddPolicyStatement.html) in the *AWS Entity Resolution API Reference*
+  [AddPolicyStatement](https://docs.aws.amazon.com/entityresolution/latest/apireference/API_AddPolicyStatement.html) in the *AWS Entity Resolution API Reference*
 
 ## Learn more about CloudFormation
 <a name="learn-more-cloudformation"></a>

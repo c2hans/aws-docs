@@ -23,6 +23,7 @@ Blue/green deployments are *not* supported with the following engines:
 <a name="Concepts.RDS_Fea_Regions_DB-eng.Feature.BlueGreenDeployments.mdb"></a>
 
 For RDS for MariaDB, blue/green deployments are supported for the following versions:
++ RDS for MariaDB 12.3 (All available versions)
 + RDS for MariaDB 11.8 (All available versions)
 + RDS for MariaDB 11.4 (All available versions)
 + RDS for MariaDB 10.2 and higher 10 versions

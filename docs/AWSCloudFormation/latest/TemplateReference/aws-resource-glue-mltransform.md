@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Name](#cfn-glue-mltransform-name)" : {{String}},
       "[NumberOfWorkers](#cfn-glue-mltransform-numberofworkers)" : {{Integer}},
       "[Role](#cfn-glue-mltransform-role)" : {{String}},
-      "[Tags](#cfn-glue-mltransform-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
+      "[Tags](#cfn-glue-mltransform-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
       "[Timeout](#cfn-glue-mltransform-timeout)" : {{Integer}},
       "[TransformEncryption](#cfn-glue-mltransform-transformencryption)" : {{TransformEncryption}},
       "[TransformParameters](#cfn-glue-mltransform-transformparameters)" : {{TransformParameters}},
@@ -54,7 +54,7 @@ Properties:
   [NumberOfWorkers](#cfn-glue-mltransform-numberofworkers): {{Integer}}
   [Role](#cfn-glue-mltransform-role): {{String}}
   [Tags](#cfn-glue-mltransform-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
   [Timeout](#cfn-glue-mltransform-timeout): {{Integer}}
   [TransformEncryption](#cfn-glue-mltransform-transformencryption): {{
     TransformEncryption}}
@@ -136,7 +136,7 @@ The name or Amazon Resource Name (ARN) of the IAM role with the required permiss
 `Tags`  <a name="cfn-glue-mltransform-tags"></a>
 The tags to use with this machine learning transform. You may use tags to limit access to the machine learning transform. For more information about tags in AWS Glue, see [AWS Tags in AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/monitor-tags.html) in the developer guide.
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Timeout`  <a name="cfn-glue-mltransform-timeout"></a>
@@ -182,7 +182,7 @@ The type of predefined worker that is allocated when a task of this transform ru
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the transform ID.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-glue-mltransform-return-values-fn--getatt"></a>

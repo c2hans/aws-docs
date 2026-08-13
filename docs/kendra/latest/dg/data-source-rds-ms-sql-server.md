@@ -161,7 +161,7 @@ If a table name includes special characters (non alphanumeric) in the name, you 
 **To connect Amazon Kendra to Amazon RDS (Microsoft SQL Server)**
 
 You must specify the following using the [TemplateConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) API:
-+ **Data source**—Specify the data source type as `JDBC` when you use the [https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) JSON schema. Also specify the data source as `TEMPLATE` when you call the [https://docs.aws.amazon.com/kendra/latest/dg/API_CreateDataSource.html](https://docs.aws.amazon.com/kendra/latest/dg/API_CreateDataSource.html) API.
++ **Data source**—Specify the data source type as `JDBC` when you use the [TemplateConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) JSON schema. Also specify the data source as `TEMPLATE` when you call the [CreateDataSource](https://docs.aws.amazon.com/kendra/latest/dg/API_CreateDataSource.html) API.
 + **Database type**—You must specify the database type as `sqlserver`.
 + **SQL query**—Specify SQL query statements like SELECT and JOIN operations. SQL queries must be less than 32KB. Amazon Kendra will crawl all database content that matches your query.
 **Note**

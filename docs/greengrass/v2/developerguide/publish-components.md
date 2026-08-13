@@ -9,7 +9,7 @@ After you build or complete a version of a component, you can publish it to the 
 
 If you use the [Greengrass Development Kit CLI (GDK CLI)](greengrass-development-kit-cli.md) to [develop and build a component](create-components.md), you can [use the GDK CLI](#publish-component-gdk-cli) to publish the component to the AWS Cloud. Otherwise, [use built-in shell commands and the AWS CLI](#publish-component-shell-commands) to publish the component.
 
-You can also use AWS CloudFormation to create components and other AWS resources from templates. For more information, see [What is AWS CloudFormation?](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) and [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrassv2-componentversion.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrassv2-componentversion.html) in the *AWS CloudFormation User Guide*.
+You can also use AWS CloudFormation to create components and other AWS resources from templates. For more information, see [What is AWS CloudFormation?](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) and [AWS::GreengrassV2::ComponentVersion](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrassv2-componentversion.html) in the *AWS CloudFormation User Guide*.
 
 **Topics**
 + [Publish a component (GDK CLI)](#publish-component-gdk-cli)

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sms-text-classificat
 **Note**
 Amazon SageMaker Ground Truth is no longer open to new customers. Existing customers can continue to use the service as normal. AWS continues to invest in security and availability improvements for Ground Truth, but we do not plan to introduce new features.
 
-To categorize articles and text into predefined categories, use text classification. For example, you can use text classification to identify the sentiment conveyed in a review or the emotion underlying a section of text. Use Amazon SageMaker Ground Truth text classification to have workers sort text into categories that you define. You create a text classification labeling job using the Ground Truth section of the Amazon SageMaker AI console or the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html) operation.
+To categorize articles and text into predefined categories, use text classification. For example, you can use text classification to identify the sentiment conveyed in a review or the emotion underlying a section of text. Use Amazon SageMaker Ground Truth text classification to have workers sort text into categories that you define. You create a text classification labeling job using the Ground Truth section of the Amazon SageMaker AI console or the [`CreateLabelingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html) operation.
 
 **Important**
 If you manually create an input manifest file, use `"source"` to identify the text that you want labeled. For more information, see [Input data](sms-data-input.md).
@@ -25,7 +25,7 @@ Ground Truth provides a worker UI similar to the following for labeling tasks. W
 ## Create a Text Classification Labeling Job (API)
 <a name="sms-creating-text-classification-api"></a>
 
-To create a text classification labeling job, use the SageMaker API operation `CreateLabelingJob`. This API defines this operation for all AWS SDKs. To see a list of language-specific SDKs supported for this operation, review the **See Also** section of [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html).
+To create a text classification labeling job, use the SageMaker API operation `CreateLabelingJob`. This API defines this operation for all AWS SDKs. To see a list of language-specific SDKs supported for this operation, review the **See Also** section of [`CreateLabelingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html).
 
 Follow the instructions on [Create a Labeling Job (API)](sms-create-labeling-job-api.md) and do the following while you configure your request:
 + Pre-annotation Lambda functions for this task type end with `PRE-TextMultiClass`. To find the pre-annotation Lambda ARN for your Region, see [PreHumanTaskLambdaArn](https://docs.aws.amazon.com/sagemaker/latest/dg/API_HumanTaskConfig.html#SageMaker-Type-HumanTaskConfig-PreHumanTaskLambdaArn) .
@@ -89,7 +89,7 @@ response = client.create_labeling_job(
 ### Provide a Template for Text Classification Labeling Jobs
 <a name="worker-template-text-classification"></a>
 
-If you create a labeling job using the API, you must supply a worker task template in `UiTemplateS3Uri`. Copy and modify the following template. Only modify the [https://docs.aws.amazon.com/sagemaker/latest/dg/sms-creating-instruction-pages.html#sms-creating-quick-instructions](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-creating-instruction-pages.html#sms-creating-quick-instructions), [https://docs.aws.amazon.com/sagemaker/latest/dg/sms-creating-instruction-pages.html#sms-creating-full-instructions](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-creating-instruction-pages.html#sms-creating-full-instructions), and `header`.
+If you create a labeling job using the API, you must supply a worker task template in `UiTemplateS3Uri`. Copy and modify the following template. Only modify the [`short-instructions`](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-creating-instruction-pages.html#sms-creating-quick-instructions), [`full-instructions`](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-creating-instruction-pages.html#sms-creating-full-instructions), and `header`.
 
 Upload this template to S3, and provide the S3 URI for this file in `UiTemplateS3Uri`.
 

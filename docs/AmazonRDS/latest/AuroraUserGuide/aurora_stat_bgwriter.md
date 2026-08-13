@@ -22,7 +22,7 @@ None
 ## Return type
 <a name="aurora_stat_bgwriter-return-type"></a>
 
-SETOF record with all `pg_stat_bgwriter` columns and the following additional columns. For more information on `pg_stat_bgwriter` columns, see [https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-BGWRITER-VIEW](https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-BGWRITER-VIEW).
+SETOF record with all `pg_stat_bgwriter` columns and the following additional columns. For more information on `pg_stat_bgwriter` columns, see [`pg_stat_bgwriter`](https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-BGWRITER-VIEW).
 
 You can reset stats for this function using `pg_stat_reset_shared("bgwriter")`.
 + `orcache_blks_written` – Total number of optimized reads cache data blocks written.

@@ -129,7 +129,7 @@ Confirm that you successfully created an Amazon S3 gateway endpoint by using the
 #### AWS CLI
 <a name="db2-confirming-endpoint-cli"></a>
 
-To confirm an Amazon S3 gateway endpoint, run the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-vpc-endpoints.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-vpc-endpoints.html) command. In the following example, replace {{vpc\_id}} with the VPC ID, {{region}} with your AWS Region, and {{profile}} with your profile name.
+To confirm an Amazon S3 gateway endpoint, run the [describe-vpc-endpoints](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-vpc-endpoints.html) command. In the following example, replace {{vpc\_id}} with the VPC ID, {{region}} with your AWS Region, and {{profile}} with your profile name.
 
 For Linux, macOS, or Unix:
 

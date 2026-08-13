@@ -9,7 +9,7 @@ After a [service client is created](creating-clients.md), the service client use
 
 Each service client has a `withConfig` extension so that you can modify a copy of the existing configuration. The `withConfig` extension returns a new service client with a modified configuration. The original client exists independently and uses its original configuration.
 
-The following example shows the creation of an `S3Client` instance that calls two operations.
+The following example shows the creation of an [`S3Client`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/index.html) instance that calls two operations.
 
 ```
 val s3 = S3Client.fromEnvironment {
@@ -22,7 +22,7 @@ s3.listBuckets { ... }
 s3.listObjectsV2 { ... }
 ```
 
-The following snippet shows how to override the configuration for a single `listObjectV2` operation.
+The following snippet shows how to override the configuration for a single [`listObjectV2`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/list-objects-v2.html) operation.
 
 ```
 s3.withConfig {
@@ -34,7 +34,7 @@ s3.withConfig {
 
 The operation calls on the `s3` client use the original configuration that was specified when the client was created. Its configuration includes [request logging](logging.md#sdk-log-mode) and `us-west-2 region` for the Region.
 
-The `listObjectsV2` invocation on the `overriddenS3` client uses same settings as the original `s3` client except for the Region, which is now `eu-central-1`.
+The [`listObjectsV2`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/list-objects-v2.html) invocation on the `overriddenS3` client uses same settings as the original `s3` client except for the Region, which is now `eu-central-1`.
 
 ## Lifecycle of an overridden client
 <a name="override-client-lifecycle"></a>

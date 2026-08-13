@@ -18,21 +18,38 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/alas2.html) on or before **June 16, 2022** to all released Amazon Linux 2 platforms.<br />The **Go** and **.NET Core** releases are security releases. For more information, see **Platform-specific updates** in this table. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-06-22-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-06-22-linux.html) |
-| **Base AMI** | Updated the base AMI to version **2.0.20220606**. |
-| **Docker** | Updated Amazon ECS to version **1.61.1** on the *ECS running on Amazon Linux 2* platform branch. |
-| **Go** | Updated Go to release **1.18.3**. For details, see [go1.18](https://golang.org/doc/devel/release.html#go1.18) in *The Go Programming Language Release History*.<br />The Go 1.18.3 release is a security release. |
-| **.NET Core** | Updated .NET Core to releases [6.0.6](https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0.6/6.0.6.md) and and [3.1.26](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1.26/3.1.26.md) <br />Both .NET Core updates are security releases. |
-| **Node.js** | Updated Node.js 16 to add support for Node version [16.15.1](https://nodejs.org/en/blog/release/v16.15.1/).<br /> |
-| **PHP** | Updated PHP 8.0 and 7.4 to releases [8.0.18](https://www.php.net/releases/8_0_18.php) and [7.4.29](https://www.php.net/releases/7_4_29.php), respectively.<br /> |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/alas2.html">Amazon Linux Security Center</a> on or before <b>June 16, 2022</b> to all released Amazon Linux 2 platforms.<br />The <b>Go</b> and <b>.NET Core</b> releases are security releases. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Base AMI</b></td><td>Updated the base AMI to version <b>2.0.20220606</b>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Docker</b></td><td>Updated Amazon ECS to version <b>1.61.1</b> on the <i>ECS running on Amazon Linux 2</i> platform branch.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated Go to release <b>1.18.3</b>. For details, see <a href="https://golang.org/doc/devel/release.html#go1.18">go1.18</a> in <i>The Go Programming Language Release History</i>.<br />The Go 1.18.3 release is a security release.</td></tr>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET Core to releases <a href="https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0.6/6.0.6.md">6.0.6</a> and and <a href="https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1.26/3.1.26.md">3.1.26</a> <br />Both .NET Core updates are security releases.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated Node.js 16 to add support for Node version <a href="https://nodejs.org/en/blog/release/v16.15.1/">16.15.1</a>.<br /></td></tr>
+  <tr><td><b>PHP</b></td><td>Updated PHP 8.0 and 7.4 to releases <a href="https://www.php.net/releases/8_0_18.php">8.0.18</a> and <a href="https://www.php.net/releases/7_4_29.php">7.4.29</a>, respectively.<br /></td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2022-06-22-linux.platforms"></a>

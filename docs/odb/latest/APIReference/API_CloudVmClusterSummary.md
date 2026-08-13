@@ -183,7 +183,7 @@ Type: Float
 Required: No
 
  ** scanDnsName **   <a name="odb-Type-CloudVmClusterSummary-scanDnsName"></a>
-The FQDN of the DNS record for the Single Client Access Name (SCAN) IP addresses that are associated with the VM cluster.
+The fully qualified domain name (FQDN) of the DNS record for the Single Client Access Name (SCAN) IP addresses that are associated with the VM cluster.
 Type: String
 Required: No
 

@@ -11,7 +11,7 @@ The following procedure describes how to patch a server environment by using a c
 
 **Before you begin**
 + Install or update the SSM Agent on your managed nodes. To patch Linux managed nodes, your nodes must be running SSM Agent version 2.0.834.0 or later. For more information, see [Updating the SSM Agent using Run Command](run-command-tutorial-update-software.md#rc-console-agentexample).
-+ Configure roles and permissions for Maintenance Windows, a tool in AWS Systems Manager. For more information, see [Setting up Maintenance Windows](setting-up-maintenance-windows.md).
++ Configure roles and permissions for Maintenance Windows. For more information, see [Setting up Maintenance Windows](setting-up-maintenance-windows.md).
 + Install and configure the AWS Command Line Interface (AWS CLI), if you haven't already.
 
   For information, see [Installing or updating the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
@@ -380,7 +380,7 @@ It's expected to see zeroes for the number of managed nodes in the summary until
    }
    ```
 
-1. Run the following command to get patch summary states per-managed node for a patch group. The per-managed node summary includes a number of patches in the respective patch states per managed node for a patch group.
+1. Run the following command to get patch summary states per-managed node for a patch group. The per-managed node summary includes several patches in the respective patch states per managed node for a patch group.
 
 ------
 #### [ Linux & macOS ]

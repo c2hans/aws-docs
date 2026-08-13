@@ -121,7 +121,7 @@ You must specify the full AWS KMS key Amazon Resource Name (ARN). The KMS key ID
 #### Using the REST API
 <a name="update-sse-encryption-single-object-rest-api"></a>
 
-You can send REST requests to update encryption for an object. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_UpdateObjectEncryption.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UpdateObjectEncryption.html).
+You can send REST requests to update encryption for an object. For more information, see [UpdateObjectEncryption](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UpdateObjectEncryption.html).
 
 #### Using the AWS SDKs
 <a name="update-sse-encryption-single-object-sdk"></a>

@@ -79,7 +79,7 @@ You can create a SnapLock audit log volume with the Amazon FSx console, the AWS 
 **Note**
  A data protection (DP) volume can't be used as a SnapLock audit log volume.
 
-To turn on the SnapLock audit log volume with the Amazon FSx API, use `AuditLogVolume` in the [https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateSnaplockConfiguration.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateSnaplockConfiguration.html). In the Amazon FSx console, for **Audit log volume**, choose **Enabled**. Make sure that the **Junction path** is set to `/snaplock_audit_log`.
+To turn on the SnapLock audit log volume with the Amazon FSx API, use `AuditLogVolume` in the [`CreateSnaplockConfiguration`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateSnaplockConfiguration.html). In the Amazon FSx console, for **Audit log volume**, choose **Enabled**. Make sure that the **Junction path** is set to `/snaplock_audit_log`.
 
 ## Accessing your data in a SnapLock volume
 <a name="accessing-snaplock-data"></a>

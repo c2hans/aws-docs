@@ -174,7 +174,7 @@ To pause a ML Detect Security Profile by using the CLI, use the `detach-security
 ```
 $aws iot detach-security-profile --security-profile-name {{SecurityProfileName}} --security-profile-target-arn {{arn:aws:iot:us-east-1:123456789012:all/registered-things}}
 ```
-This option is only available in AWS CLI. Similar to the console workflow, you need to set the target of your Security Profile back to a device group with devices within 30 days, or you won't be able to reactivate the Security Profile. To attach a Security Profile to a device group, use the [https://docs.aws.amazon.com/cli/latest/reference/iot/attach-security-profile.html](https://docs.aws.amazon.com/cli/latest/reference/iot/attach-security-profile.html) command.
+This option is only available in AWS CLI. Similar to the console workflow, you need to set the target of your Security Profile back to a device group with devices within 30 days, or you won't be able to reactivate the Security Profile. To attach a Security Profile to a device group, use the [`attach-security-profile`](https://docs.aws.amazon.com/cli/latest/reference/iot/attach-security-profile.html) command.
 
 **Delete a ML Detect Security Profile by using the CLI**
 You can delete a Security Profile by using the `delete-security-profile` command below:

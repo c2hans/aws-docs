@@ -32,7 +32,7 @@ This policy includes the following permissions.
 + `s3` – Grants permissions that allow creating and reading from the S3 buckets used by Migration Hub Orchestrator.
 + `secretsmanager` – Grants permissions that allow access to AWS Secrets Manager.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubOrchestratorConsoleFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubOrchestratorConsoleFullAccess.html) in the *AWS Managed Policy Reference Guide*.
+To view the permissions for this policy, see [AWSMigrationHubOrchestratorConsoleFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubOrchestratorConsoleFullAccess.html) in the *AWS Managed Policy Reference Guide*.
 
 ## AWS managed policy: AWSMigrationHubOrchestratorPlugin
 <a name="security-iam-awsmanpol-AWSMigrationHubOrchestratorPlugin"></a>
@@ -48,7 +48,7 @@ This policy includes the following permissions.
 + `s3` – Grants permissions that allow write access to the S3 buckets used by Migration Hub Orchestrator.
 + `secretsmanager` – Grants permissions that allow access to AWS Secrets Manager.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubOrchestratorPlugin.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubOrchestratorPlugin.html) in the *AWS Managed Policy Reference Guide*.
+To view the permissions for this policy, see [AWSMigrationHubOrchestratorPlugin](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubOrchestratorPlugin.html) in the *AWS Managed Policy Reference Guide*.
 
 ## AWS managed policy: AWSMigrationHubOrchestratorInstanceRolePolicy
 <a name="security-iam-awsmanpol-AWSMigrationHubOrchestratorInstanceRolePolicy"></a>
@@ -64,7 +64,7 @@ This policy includes the following permissions.
 + `s3` – Grants permissions that allow read/write access to Amazon S3 buckets used by Migration Hub Orchestrator.
 + `secretsmanager` – Grants permissions that allow access to AWS Secrets Manager.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubOrchestratorInstanceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubOrchestratorInstanceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
+To view the permissions for this policy, see [AWSMigrationHubOrchestratorInstanceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMigrationHubOrchestratorInstanceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
 
 ## Migration Hub Orchestrator updates to AWS managed policies
 <a name="security-iam-awsmanpol-updates"></a>

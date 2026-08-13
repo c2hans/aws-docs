@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Sour
 # SourceAwsConfiguration
 <a name="API_SourceAwsConfiguration"></a>
 
-Configuration for AWS source account integration. Note: passRole check on 'assumableRoleArn' is not supported.
+Configuration for AWS source account integration. Setting the role ARNs on this configuration requires the caller to have at least the iam:PassRole permission (see assumableRoleArn).
 
 ## Contents
 <a name="API_SourceAwsConfiguration_Contents"></a>
@@ -23,7 +23,7 @@ Valid Values: `source`
 Required: Yes
 
  ** assumableRoleArn **   <a name="devopsagent-Type-SourceAwsConfiguration-assumableRoleArn"></a>
-Role ARN to be assumed by AIDevOps to operate on behalf of customer.
+Role ARN to be assumed by AIDevOps to operate on behalf of customer. To set this role ARN on AssociateService or UpdateAssociation, the caller must have at least the iam:PassRole permission on arn:aws:iam::<account-id>:role/\* in the caller's own account, with the condition iam:PassedToService set to aidevops.amazonaws.com. A broader iam:PassRole grant also satisfies this requirement.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `arn:aws:iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`

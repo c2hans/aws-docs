@@ -28,13 +28,13 @@ The following are the API operations that you can use to acquire temporary crede
 ## Requesting credentials for cross-account delegation and federation through a custom identity broker
 <a name="api_assumerole"></a>
 
-The [https://docs.aws.amazon.com//STS/latest/APIReference/API_AssumeRole.html](https://docs.aws.amazon.com//STS/latest/APIReference/API_AssumeRole.html) API operation is useful for allowing existing IAM users to access AWS resources that they don't already have access to. For example, the user might need access to resources in another AWS account. It is also useful as a means to temporarily gain privileged access—for example, to provide multi-factor authentication (MFA). You must call this API using active credentials. To learn who can call this operation, see [Compare AWS STS credentials](id_credentials_sts-comparison.md). For more information, see [Create a role to give permissions to an IAM user](id_roles_create_for-user.md) and [Secure API access with MFA](id_credentials_mfa_configure-api-require.md).
+The [`AssumeRole`](https://docs.aws.amazon.com//STS/latest/APIReference/API_AssumeRole.html) API operation is useful for allowing existing IAM users to access AWS resources that they don't already have access to. For example, the user might need access to resources in another AWS account. It is also useful as a means to temporarily gain privileged access—for example, to provide multi-factor authentication (MFA). You must call this API using active credentials. To learn who can call this operation, see [Compare AWS STS credentials](id_credentials_sts-comparison.md). For more information, see [Create a role to give permissions to an IAM user](id_roles_create_for-user.md) and [Secure API access with MFA](id_credentials_mfa_configure-api-require.md).
 
 **To request temporary security credentials for cross-account delegation and federation through a custom identity broker**
 
 1. Authenticate with your AWS security credentials. This call must be made using valid AWS security credentials.
 
-1. Call the operation [https://docs.aws.amazon.com//STS/latest/APIReference/API_AssumeRole.html](https://docs.aws.amazon.com//STS/latest/APIReference/API_AssumeRole.html).
+1. Call the operation [`AssumeRole`](https://docs.aws.amazon.com//STS/latest/APIReference/API_AssumeRole.html).
 
 The following example shows a sample request and response using `AssumeRole`. This example request assumes the `demo` role for the specified duration with the included [session policy](access_policies.md#policies_session), [session tags](id_session-tags.md), [external ID](id_roles_common-scenarios_third-party.md), and [source identity](id_credentials_temp_control-access_monitor.md). The resulting session is named `John-session`.
 
@@ -112,14 +112,14 @@ An AWS conversion compresses the passed session policies and session tags into a
 ## Requesting credentials through an OIDC provider
 <a name="api_assumerolewithwebidentity"></a>
 
-The [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html) API operation returns a set of temporary AWS security credentials in exchange for a JSON Web Token (JWT). This includes public identity providers, such as Login with Amazon, Facebook, Google, and providers that issue JWTs that are compatible with OpenID Connect (OIDC) discovery, such as GitHub actions or Azure Devops. For more information, see [OIDC federation](id_roles_providers_oidc.md).
+The [`AssumeRoleWithWebIdentity`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html) API operation returns a set of temporary AWS security credentials in exchange for a JSON Web Token (JWT). This includes public identity providers, such as Login with Amazon, Facebook, Google, and providers that issue JWTs that are compatible with OpenID Connect (OIDC) discovery, such as GitHub actions or Azure Devops. For more information, see [OIDC federation](id_roles_providers_oidc.md).
 
 **Note**
 `AssumeRoleWithWebIdentity` requests are not signed with, and do not require AWS credentials.
 
 **Requesting credentials through an OIDC provider**
 
-1. Call the operation [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html).
+1. Call the operation [`AssumeRoleWithWebIdentity`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html).
 
    When you call `AssumeRoleWithWebIdentity`, AWS validates the token presented by verifying the digital signature using public keys made available through your IdP's JSON web keyset (JWKS). If the token is valid, and all conditions set forth in the IAM role trust policy are met, AWS returns the following information to you:
    + A set of temporary security credentials. These consist of an access key ID, a secret access key, and a session token.
@@ -133,9 +133,9 @@ Your application should cache the credentials returned by AWS STS and refresh th
 ## Requesting credentials through a SAML 2.0 identity provider
 <a name="api_assumerolewithsaml"></a>
 
-The [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithSAML.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithSAML.html) API operation returns a set of temporary security credentials for SAML federated principals who are authenticated by your organization's existing identity system. The users must also use [SAML](https://www.oasis-open.org/standards#samlv2.0) 2.0 (Security Assertion Markup Language) to pass authentication and authorization information to AWS. This API operation is useful in organizations that have integrated their identity systems (such as Windows Active Directory or OpenLDAP) with software that can produce SAML assertions. Such an integration provides information about user identity and permissions (such as Active Directory Federation Services or Shibboleth). For more information, see [SAML 2.0 federation](id_roles_providers_saml.md).
+The [`AssumeRoleWithSAML`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithSAML.html) API operation returns a set of temporary security credentials for SAML federated principals who are authenticated by your organization's existing identity system. The users must also use [SAML](https://www.oasis-open.org/standards#samlv2.0) 2.0 (Security Assertion Markup Language) to pass authentication and authorization information to AWS. This API operation is useful in organizations that have integrated their identity systems (such as Windows Active Directory or OpenLDAP) with software that can produce SAML assertions. Such an integration provides information about user identity and permissions (such as Active Directory Federation Services or Shibboleth). For more information, see [SAML 2.0 federation](id_roles_providers_saml.md).
 
-1. Call the operation [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithSAML.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithSAML.html).
+1. Call the operation [`AssumeRoleWithSAML`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithSAML.html).
 
    This is an unsigned call, meaning you do not need to authenticate AWS security credentials prior to making the request.
 **Note**
@@ -157,11 +157,11 @@ Your app should cache the credentials. By default the credentials expire after a
 ## Requesting credentials through a custom identity broker
 <a name="api_getfederationtoken"></a>
 
-The [https://docs.aws.amazon.com/STS/latest/APIReference/API_GetFederationToken.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetFederationToken.html) API operation returns a set of temporary security credentials for AWS STS federated user principals. This API differs from `AssumeRole` in that the default expiration period is substantially longer (12 hours instead of one hour). Additionally, you can use the `DurationSeconds` parameter to specify a duration for the temporary security credentials to remain valid. The resulting credentials are valid for the specified duration, between 900 seconds (15 minutes) to 129,600 seconds (36 hours). The longer expiration period can help reduce the number of calls to AWS because you do not need to get new credentials as often.
+The [`GetFederationToken`](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetFederationToken.html) API operation returns a set of temporary security credentials for AWS STS federated user principals. This API differs from `AssumeRole` in that the default expiration period is substantially longer (12 hours instead of one hour). Additionally, you can use the `DurationSeconds` parameter to specify a duration for the temporary security credentials to remain valid. The resulting credentials are valid for the specified duration, between 900 seconds (15 minutes) to 129,600 seconds (36 hours). The longer expiration period can help reduce the number of calls to AWS because you do not need to get new credentials as often.
 
 1. Authenticate with the AWS security credentials of your specific IAM user. This call must be made using valid AWS security credentials.
 
-1. Call the operation [https://docs.aws.amazon.com/STS/latest/APIReference/API_GetFederationToken.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetFederationToken.html).
+1. Call the operation [`GetFederationToken`](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetFederationToken.html).
 
 The `GetFederationToken` call returns temporary security credentials that consist of the session token, access key, secret key, and expiration. You can use `GetFederationToken` if you want to manage permissions inside your organization (for example, using the proxy application to assign permissions).
 
@@ -232,11 +232,11 @@ For example, assume your AWS account number is 111122223333, and you have an Ama
 ## Requesting credentials for users in untrusted environments
 <a name="api_getsessiontoken"></a>
 
-The [https://docs.aws.amazon.com/STS/latest/APIReference/API_GetSessionToken.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetSessionToken.html) API operation returns a set of temporary security credentials to an existing IAM user. This is useful for providing enhanced security, such as allowing AWS requests only when MFA is enabled for the IAM user. Because the credentials are temporary, they provide enhanced security when you have an IAM user who accesses your resources through a less secure environment. Examples of less secure environments include a mobile device or web browser.
+The [`GetSessionToken`](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetSessionToken.html) API operation returns a set of temporary security credentials to an existing IAM user. This is useful for providing enhanced security, such as allowing AWS requests only when MFA is enabled for the IAM user. Because the credentials are temporary, they provide enhanced security when you have an IAM user who accesses your resources through a less secure environment. Examples of less secure environments include a mobile device or web browser.
 
 1. Authenticate with the AWS security credentials of your specific IAM user. This call must be made using valid AWS security credentials.
 
-1. Call the operation [https://docs.aws.amazon.com/STS/latest/APIReference/API_GetSessionToken.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetSessionToken.html).
+1. Call the operation [`GetSessionToken`](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetSessionToken.html).
 
 1. `GetSessionToken` returns temporary security credentials consisting of a session token, an access key ID, and a secret access key.
 

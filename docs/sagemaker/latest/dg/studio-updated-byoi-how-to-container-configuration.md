@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-byoi-
 # Update container configuration
 <a name="studio-updated-byoi-how-to-container-configuration"></a>
 
-You can bring custom Docker images into your machine learning workflows. A key aspect of customizing these images is configuring the container configurations, or [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ContainerConfig.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ContainerConfig.html). The following page provides an example on how to configure your `ContainerConfig`.
+You can bring custom Docker images into your machine learning workflows. A key aspect of customizing these images is configuring the container configurations, or [`ContainerConfig`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ContainerConfig.html). The following page provides an example on how to configure your `ContainerConfig`.
 
 An entrypoint is the command or script that runs when the container starts. Custom entrypoints enable you to set up your environment, initialize services, or perform any necessary setup before your application launches.
 
@@ -34,7 +34,7 @@ This example provides instructions on how to configure a custom entrypoint, for 
      If you followed the instructions in [Attach your custom image to your domain](studio-updated-byoi-how-to-attach-to-domain.md), you may want to use the same image name you used in that process.
    + `{{custom-image-version}}` is the version number of your custom image. This should be an integer, representing the version of your image. To view your custom image details, see [View custom image details (console)](studio-updated-byoi-view-images.md#studio-updated-byoi-view-images-console).
 
-1. Use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateAppImageConfig.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateAppImageConfig.html) API to create an image configuration.
+1. Use the [`CreateAppImageConfig`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateAppImageConfig.html) API to create an image configuration.
 
    ```
    aws sagemaker create-app-image-config \
@@ -48,7 +48,7 @@ This example provides instructions on how to configure a custom entrypoint, for 
        }"
    ```
 
-1. Use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateDomain.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateDomain.html) API to update the default settings for your domain. This will attach the custom image as well as the application image configuration.
+1. Use the [`UpdateDomain`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateDomain.html) API to update the default settings for your domain. This will attach the custom image as well as the application image configuration.
 
    ```
    aws sagemaker update-domain \

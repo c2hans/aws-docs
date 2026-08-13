@@ -11,7 +11,7 @@ To make a request to an AWS service, you must first create and [configure](confi
 
  To interact with AWS services in AWS SDK for Rust, create a service-specific client, use its API methods with fluent builder-style chaining, and call `send()` to execute the request.
 
-The `Client` exposes one method for each API operation exposed by the service. The return value of each of these methods is a "fluent builder", where different inputs for that API are added by builder-style function call chaining. After calling the service's methods, call `send()` to get a [https://doc.rust-lang.org/nightly/core/future/trait.Future.html](https://doc.rust-lang.org/nightly/core/future/trait.Future.html) that will result in either a successful output or a `SdkError`. For more information on `SdkError`, see [Handling errors in the AWS SDK for Rust](error-handling.md).
+The `Client` exposes one method for each API operation exposed by the service. The return value of each of these methods is a "fluent builder", where different inputs for that API are added by builder-style function call chaining. After calling the service's methods, call `send()` to get a [`Future`](https://doc.rust-lang.org/nightly/core/future/trait.Future.html) that will result in either a successful output or a `SdkError`. For more information on `SdkError`, see [Handling errors in the AWS SDK for Rust](error-handling.md).
 
 The following example demonstrates a basic operation using Amazon S3 to create a bucket in the `us-west-2` AWS Region:
 
@@ -40,5 +40,5 @@ Each service crate has additional modules used for API inputs, such as the follo
 +  The `primitives` module has simpler types for representing data such as date times or binary blobs.
 
  See the [API reference documentation](https://awslabs.github.io/aws-sdk-rust/) for the service crate for more detailed crate organization and information. For example, the `aws-sdk-s3` crate for the Amazon Simple Storage Service has several [Modules](https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/#modules). Two of which are:
-+ [https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/types/index.html](https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/types/index.html)
-+ [https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/primitives/index.html](https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/primitives/index.html)
++ [`aws_sdk_s3::types`](https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/types/index.html)
++ [`aws_sdk_s3::primitives`](https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/primitives/index.html)

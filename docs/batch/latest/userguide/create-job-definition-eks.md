@@ -69,7 +69,7 @@ The prefix for a pod annotation can't contain `kubernetes.io/`, `k8s.io/`, or `b
 
       1. For **Name**, enter a unique name for the container. The name must start with a letter or number, and can be up to 63 characters long. It can contain uppercase and lowercase letters, numbers, and hyphens (-).
 
-      1. For **Image**, choose the Docker image to use for your job. By default, images in the Docker Hub registry are available. You can also specify other repositories with `{{repository-url}}/{{image}}:{{tag}}`. The name can be up to 255 characters long. It can contain uppercase and lowercase letters, numbers, hyphens (-), underscores (\_), colons (:), periods (.), forward slashes (/), and number signs (\#). This parameter maps to `Image` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `IMAGE` parameter of [https://docs.docker.com/engine/reference/commandline/run/](https://docs.docker.com/engine/reference/commandline/run/)
+      1. For **Image**, choose the Docker image to use for your job. By default, images in the Docker Hub registry are available. You can also specify other repositories with `{{repository-url}}/{{image}}:{{tag}}`. The name can be up to 255 characters long. It can contain uppercase and lowercase letters, numbers, hyphens (-), underscores (\_), colons (:), periods (.), forward slashes (/), and number signs (\#). This parameter maps to `Image` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `IMAGE` parameter of [**docker run**](https://docs.docker.com/engine/reference/commandline/run/)
 **Note**
 Docker image architecture must match the processor architecture of the compute resources that they're scheduled on. For example, ARM-based Docker images can only run on ARM-based compute resources.
          + Images in Amazon ECR Public repositories use the full `registry/repository[:tag]` or `registry/repository[@digest]` naming conventions (for example, `public.ecr.aws/{{registry_alias}}/{{my-web-app}}:{{latest}}`).
@@ -92,9 +92,9 @@ If you choose **Add parameter**, you must configure at least one parameter or ch
 
    1. In the **Environment configuration** section:
 
-      1. For **vCPUs**, enter the number of vCPUs to reserve for the container. This parameter maps to `CpuShares` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--cpu-shares` option to [https://docs.docker.com/engine/reference/commandline/run/](https://docs.docker.com/engine/reference/commandline/run/). Each vCPU is equivalent to 1,024 CPU shares. You must specify at least one vCPU.
+      1. For **vCPUs**, enter the number of vCPUs to reserve for the container. This parameter maps to `CpuShares` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--cpu-shares` option to [**docker run**](https://docs.docker.com/engine/reference/commandline/run/). Each vCPU is equivalent to 1,024 CPU shares. You must specify at least one vCPU.
 
-      1. For **Memory**, enter the memory limit available to the container. If your container attempts to exceed the memory specified here, the container is stopped. This parameter maps to `Memory` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--memory` option to [https://docs.docker.com/engine/reference/commandline/run/](https://docs.docker.com/engine/reference/commandline/run/). You must specify at least 4 MiB of memory for a job.
+      1. For **Memory**, enter the memory limit available to the container. If your container attempts to exceed the memory specified here, the container is stopped. This parameter maps to `Memory` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--memory` option to [**docker run**](https://docs.docker.com/engine/reference/commandline/run/). You must specify at least 4 MiB of memory for a job.
 **Note**
 To maximize your resource utilization, prioritize memory for jobs of a specific instance type. For more information, see [Compute resource memory management](memory-management.md).
 
@@ -118,7 +118,7 @@ The user ID must exist in the image for the container to run.
 **Note**
 The group ID must exist in the image for the container to run.
 
-   1. (Optional) To give your job's container elevated permissions on the host instance (similar to the `root` user), drag the **Privileged** slider to the right. This parameter maps to `Privileged` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--privileged` option to [https://docs.docker.com/engine/reference/commandline/run/](https://docs.docker.com/engine/reference/commandline/run/).
+   1. (Optional) To give your job's container elevated permissions on the host instance (similar to the `root` user), drag the **Privileged** slider to the right. This parameter maps to `Privileged` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--privileged` option to [**docker run**](https://docs.docker.com/engine/reference/commandline/run/).
 
    1. (Optional) Turn on **Read-only root filesystem** to remove write access to the root filesystem.
 

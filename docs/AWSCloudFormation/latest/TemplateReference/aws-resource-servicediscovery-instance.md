@@ -106,7 +106,7 @@ The ID or Amazon Resource Name (ARN) of the service that you want to use for set
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the value of `Id` for the instance, such as `i-abcd1234`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-servicediscovery-instance-return-values-fn--getatt"></a>

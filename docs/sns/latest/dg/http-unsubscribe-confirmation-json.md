@@ -16,7 +16,7 @@ The type of message. For a unsubscribe confirmation, the type is `UnsubscribeCon
 A Universally Unique Identifier (UUID), unique for each message published. For a message that Amazon SNS resends during a retry, the message ID of the original message is used.
 
 **`Token`**
-A value you can use with the [https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html](https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html) action to re-confirm the subscription. Alternatively, you can simply visit the `SubscribeURL`.
+A value you can use with the [`ConfirmSubscription`](https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html) action to re-confirm the subscription. Alternatively, you can simply visit the `SubscribeURL`.
 
 **`TopicArn`**
 The Amazon Resource Name (ARN) for the topic that this endpoint has been unsubscribed from.
@@ -29,7 +29,7 @@ You have chosen to deactivate subscription arn:aws:sns:us-east-2:123456789012:My
 ```
 
 **`SubscribeURL`**
-The URL that you must visit in order to re-confirm the subscription. Alternatively, you can instead use the `Token` with the [https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html](https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html) action to re-confirm the subscription.
+The URL that you must visit in order to re-confirm the subscription. Alternatively, you can instead use the `Token` with the [`ConfirmSubscription`](https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html) action to re-confirm the subscription.
 
 **`Timestamp`**
 The time (GMT) when the unsubscribe confirmation was sent.

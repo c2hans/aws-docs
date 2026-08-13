@@ -42,7 +42,7 @@ Required: Yes
 
  ** [SecurityGroupArns](#API_CreateLocationFsxLustre_RequestSyntax) **   <a name="DataSync-CreateLocationFsxLustre-request-SecurityGroupArns"></a>
 Specifies the Amazon Resource Names (ARNs) of up to five security groups that provide access to your FSx for Lustre file system.
-The security groups must be able to access the file system's ports. The file system must also allow access from the security groups. For information about file system access, see the [https://docs.aws.amazon.com/fsx/latest/LustreGuide/limit-access-security-groups.html](https://docs.aws.amazon.com/fsx/latest/LustreGuide/limit-access-security-groups.html).
+The security groups must be able to access the file system's ports. The file system must also allow access from the security groups. For information about file system access, see the [*Amazon FSx for Lustre User Guide*](https://docs.aws.amazon.com/fsx/latest/LustreGuide/limit-access-security-groups.html).
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 5 items.
 Length Constraints: Maximum length of 128.

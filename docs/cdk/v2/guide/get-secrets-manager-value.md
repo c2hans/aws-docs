@@ -7,7 +7,7 @@ This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on 
 # Get a value from AWS Secrets Manager
 <a name="get-secrets-manager-value"></a>
 
-To use values from AWS Secrets Manager in your AWS CDK app, use the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_secretsmanager.Secret.html#static-fromwbrsecretwbrattributesscope-id-attrs](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_secretsmanager.Secret.html#static-fromwbrsecretwbrattributesscope-id-attrs) method. It represents a value that is retrieved from Secrets Manager and used at AWS CloudFormation deployment time. The following is an example:
+To use values from AWS Secrets Manager in your AWS CDK app, use the [`fromSecretAttributes()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_secretsmanager.Secret.html#static-fromwbrsecretwbrattributesscope-id-attrs) method. It represents a value that is retrieved from Secrets Manager and used at AWS CloudFormation deployment time. The following is an example:
 
 **Example**
 
@@ -100,11 +100,11 @@ public class SecretsManagerStack : Stack
 ```
 
 **Tip**
-Use the AWS CLI [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_secretsmanager.Secret.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_secretsmanager.Secret.html) CLI command to create a secret from the command line, such as when testing:
+Use the AWS CLI [`create-secret`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_secretsmanager.Secret.html) CLI command to create a secret from the command line, such as when testing:
 
 ```
 aws secretsmanager create-secret --name ImportedSecret --secret-string mygroovybucket
 ```
 The command returns an ARN that you can use with the preceding example.
 
-Once you have created a `Secret` instance, you can get the secret’s value from the instance’s `secretValue` attribute. The value is represented by a [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.SecretValue.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.SecretValue.html) instance, a special type of [Tokens and the AWS CDK](tokens.md). Because it’s a token, it has meaning only after resolution. Your CDK app does not need to access its actual value. Instead, the app can pass the `SecretValue` instance (or its string or numeric representation) to whatever CDK method needs the value.
+Once you have created a `Secret` instance, you can get the secret’s value from the instance’s `secretValue` attribute. The value is represented by a [`SecretValue`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.SecretValue.html) instance, a special type of [Tokens and the AWS CDK](tokens.md). Because it’s a token, it has meaning only after resolution. Your CDK app does not need to access its actual value. Instead, the app can pass the `SecretValue` instance (or its string or numeric representation) to whatever CDK method needs the value.

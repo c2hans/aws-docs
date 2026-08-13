@@ -21,4 +21,4 @@ View information about a transit gateway used for peering.
 
 1. In the **Details** section, choose the **Resource ID** link.
 
-   The **Transit gateways** page appears in a new window. Depending on your permissions, you can add or modify your transit gateways or transit gateway route tables. For more information on working with transit gateways, see the [https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html).
+   The **Transit gateways** page appears in a new window. Depending on your permissions, you can add or modify your transit gateways or transit gateway route tables. For more information on working with transit gateways, see the [*AWS Transit Gateway Guide*](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html).

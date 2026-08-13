@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/combining-recording-
 # Combining transcription with recording sinks for the Amazon Chime SDK
 <a name="combining-recording-transcription"></a>
 
-You can combine Amazon Transcribe and Amazon Transcribe Call Analytics processors with an Amazon S3 recording sink. Builders can pass an S3RecordingSinkConfiguration in addition to the Amazon Transcribe processors in a [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaInsightsPipelineConfiguration.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaInsightsPipelineConfiguration.html) API call, or by using the console.
+You can combine Amazon Transcribe and Amazon Transcribe Call Analytics processors with an Amazon S3 recording sink. Builders can pass an S3RecordingSinkConfiguration in addition to the Amazon Transcribe processors in a [CreateMediaInsightsPipelineConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaInsightsPipelineConfiguration.html) API call, or by using the console.
 
 In conjunction with the Amazon S3 recording sink, you can use an Amazon Transcribe or an Amazon Transcribe Call Analytics processor, but never both. You can also add voice analytics to the same configuration in addition to a recording sink, with or without a transcribe processor.
 

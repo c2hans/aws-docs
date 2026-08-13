@@ -38,7 +38,7 @@ Before you can launch instances with AMD SEV-SNP on a Dedicated Host, you must a
 #### [ AWS CLI ]
 
 **To allocate a Dedicated Host with AMD SEV-SNP enabled**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/allocate-hosts.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/allocate-hosts.html) command with the `--instance-type` and `--cpu-options` parameters.
+Use the [allocate-hosts](https://docs.aws.amazon.com/cli/latest/reference/ec2/allocate-hosts.html) command with the `--instance-type` and `--cpu-options` parameters.
 
 ```
 aws ec2 allocate-hosts \
@@ -76,7 +76,7 @@ You can also launch instances without AMD SEV-SNP enabled on a Dedicated Host th
 #### [ AWS CLI ]
 
 **To launch an instance with AMD SEV-SNP on a Dedicated Host**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command with the `--cpu-options` and `--placement` options. Replace {{h-0123456789abcdef0}} with the ID of your allocated Dedicated Host.
+Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command with the `--cpu-options` and `--placement` options. Replace {{h-0123456789abcdef0}} with the ID of your allocated Dedicated Host.
 
 ```
 aws ec2 run-instances \
@@ -118,7 +118,7 @@ To apply firmware updates, allocate a new host (which receives the latest firmwa
        --instance-ids {{i-0123456789example}}
    ```
 
-1. Modify the instance placement to target the new Dedicated Host. Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-placement.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-placement.html) command.
+1. Modify the instance placement to target the new Dedicated Host. Use the [modify-instance-placement](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-placement.html) command.
 
    ```
    aws ec2 modify-instance-placement \
@@ -133,7 +133,7 @@ To apply firmware updates, allocate a new host (which receives the latest firmwa
        --instance-ids {{i-0123456789example}}
    ```
 
-1. Release the old Dedicated Host. Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/release-hosts.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/release-hosts.html) command.
+1. Release the old Dedicated Host. Use the [release-hosts](https://docs.aws.amazon.com/cli/latest/reference/ec2/release-hosts.html) command.
 
    ```
    aws ec2 release-hosts \
@@ -152,7 +152,7 @@ You can launch an instance with AMD SEV-SNP on shared tenancy in US East (Ohio) 
 #### [ AWS CLI ]
 
 **To launch an instance with AMD SEV-SNP on shared tenancy**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command with the `--cpu-options` option.
+Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command with the `--cpu-options` option.
 
 ```
 aws ec2 run-instances \
@@ -185,7 +185,7 @@ You can find instances that are enabled for AMD SEV-SNP. The Amazon EC2 console 
 #### [ AWS CLI ]
 
 **To check whether AMD SEV-SNP is enabled for an instance**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command.
+Use the [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command.
 
 ```
 aws ec2 describe-instances \

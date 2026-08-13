@@ -9,7 +9,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 <a name="aws-properties-greengrass-resourcedefinitionversion-localdeviceresourcedata-description"></a>Settings for a local device resource, which represents a file under `/dev`. For more information, see [Access Local Resources with Lambda Functions](https://docs.aws.amazon.com/greengrass/v1/developerguide/access-local-resources.html) in the * AWS IoT Greengrass Version 1 Developer Guide *.
 
-<a name="aws-properties-greengrass-resourcedefinitionversion-localdeviceresourcedata-inheritance"></a> In an CloudFormation template, `LocalDeviceResourceData` can be used in the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-resourcedatacontainer.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-resourcedatacontainer.html) property type.
+<a name="aws-properties-greengrass-resourcedefinitionversion-localdeviceresourcedata-inheritance"></a> In an CloudFormation template, `LocalDeviceResourceData` can be used in the [`ResourceDataContainer`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-resourcedatacontainer.html) property type.
 
 ## Syntax
 <a name="aws-properties-greengrass-resourcedefinitionversion-localdeviceresourcedata-syntax"></a>

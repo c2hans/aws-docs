@@ -369,7 +369,9 @@ This same behavior applies to any certificate field that contains multiple value
  We define a source identity prefix as follows:
 + `"CN="`: the common name of the subject in the certificate is set and less than or equal to 61 characters.
 + `"ID="`: the common name of the subject in the certificate is not set. This value is left-padded with zero to be even in length.
-+ `""`: (empty string) the common name of the subject in the certificate is set and has a length from 62 to 64 characters.
++ `""` (empty string): the common name of the subject in the certificate is set and has a length from 62 to 256 characters.
+
+IAM Roles Anywhere does not support subject common names longer than 256 characters, and the `CreateSession` request fails.
 
 Hex encoding example:
 + Decimal serial number 291 converts to hex 123, which becomes `ID=0123`
@@ -378,6 +380,6 @@ Hex encoding example:
 ## Revocation
 <a name="revocation"></a>
 
-Certificate revocation is supported through the use of imported certificate revocation lists (CRLs). Currently, certification revocation is only supported by the API and CLI. You can import a CRL that is generated from your CA using [https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_ImportCrl.html](https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_ImportCrl.html) API or [https://docs.aws.amazon.com/cli/latest/reference/rolesanywhere/import-crl.html](https://docs.aws.amazon.com/cli/latest/reference/rolesanywhere/import-crl.html) CLI command. Certificates used for authentication will be checked for their revocation status.
+Certificate revocation is supported through the use of imported certificate revocation lists (CRLs). Currently, certification revocation is only supported by the API and CLI. You can import a CRL that is generated from your CA using [`ImportCrl`](https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_ImportCrl.html) API or [`import-crl`](https://docs.aws.amazon.com/cli/latest/reference/rolesanywhere/import-crl.html) CLI command. Certificates used for authentication will be checked for their revocation status.
 
  Callbacks to CRL Distribution Points (CDPs) or Online Certificate Status Protocol (OCSP) endpoints are not supported.

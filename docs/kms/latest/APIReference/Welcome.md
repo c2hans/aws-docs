@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/Welcome.html
 # Welcome
 <a name="Welcome"></a>
 
- AWS Key Management Service (AWS KMS) is an encryption and key management web service. This guide describes the AWS KMS operations that you can call programmatically. For general information about AWS KMS, see the [https://docs.aws.amazon.com/kms/latest/developerguide/](https://docs.aws.amazon.com/kms/latest/developerguide/).
+ AWS Key Management Service (AWS KMS) is an encryption and key management web service. This guide describes the AWS KMS operations that you can call programmatically. For general information about AWS KMS, see the [* AWS Key Management Service Developer Guide*](https://docs.aws.amazon.com/kms/latest/developerguide/).
 
 **Note**
  AWS KMS has replaced the term *customer master key (CMK)* with * AWS Key Management Service key* and *KMS key*. The concept has not changed. To prevent breaking changes, AWS KMS is keeping some variations of this term.
@@ -45,4 +45,4 @@ Of the API operations discussed in this guide, the following will prove the most
 +  [GenerateDataKey](API_GenerateDataKey.md)
 +  [GenerateDataKeyWithoutPlaintext](API_GenerateDataKeyWithoutPlaintext.md)
 
-This document was last published on August 6, 2026.
+This document was last published on August 13, 2026.

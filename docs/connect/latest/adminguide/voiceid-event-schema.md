@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/voiceid-event-
 <a name="voiceid-event-schema"></a>
 
 **Note**
-End of support notice: On May 20, 2026, AWS will end support for Amazon Connect Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Amazon Connect console, access Voice ID features on the Connect Customer admin website or Contact Control Panel, or access Voice ID resources. For more information, visit [Amazon Connect Voice ID end of support](https://docs.aws.amazon.com/connect/latest/adminguide/amazonconnect-voiceid-end-of-support.html).
+End of support notice: On May 20, 2026, AWS will end support for Amazon Connect Customer Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Amazon Connect Customer console, access Voice ID features on the Connect Customer admin website or Contact Control Panel, or access Voice ID resources. For more information, visit [Amazon Connect Customer Voice ID end of support](https://docs.aws.amazon.com/connect/latest/adminguide/amazonconnect-voiceid-end-of-support.html).
 
 Voice ID generates events for every transaction: enrollment, authentication, or detection of fraudsters in a watchlist. Events are sent to the EventBridge default event bus.
 

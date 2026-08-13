@@ -156,7 +156,7 @@ Later in this tutorial, you add these permissions when [creating an IAM role](#s
 ## Prerequisite: Required destination account permissions
 <a name="s3-s3-cross-account-required-permissions-dest-account"></a>
 
-In your destination account, your *user permissions* must allow you to update your destination bucket's policy and disable its access control lists (ACLs). For more information on these specific permissions, see the [https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html).
+In your destination account, your *user permissions* must allow you to update your destination bucket's policy and disable its access control lists (ACLs). For more information on these specific permissions, see the [*[Amazon S3 User Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/)*](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html).
 
 ## Step 1: In your source account, create a DataSync IAM role for destination bucket access
 <a name="s3-s3-cross-account-create-iam-role-source-account"></a>

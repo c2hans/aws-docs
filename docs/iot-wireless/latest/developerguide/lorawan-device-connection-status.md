@@ -176,7 +176,7 @@ The following sections show you how to check the connection status using the AWS
 ### Check device connection status using the console
 <a name="lorawan-device-connection-status-console"></a>
 
-To check the connection status using the console, navigate to the [https://console.aws.amazon.com/iot/home#/wireless/devices](https://console.aws.amazon.com/iot/home#/wireless/devices) page of the AWS IoT console and choose the device you've added. In the **Details** section of the Wireless devices details page, you'll see the date and time the last uplink was received.
+To check the connection status using the console, navigate to the [**Devices**](https://console.aws.amazon.com/iot/home#/wireless/devices) page of the AWS IoT console and choose the device you've added. In the **Details** section of the Wireless devices details page, you'll see the date and time the last uplink was received.
 
 ### Check device connection status using the API
 <a name="lorawan-device-connection-status-api"></a>

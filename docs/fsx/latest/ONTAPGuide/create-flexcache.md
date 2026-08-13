@@ -21,9 +21,9 @@ The commands in these procedures use the following aliases for the cluster, SVM,
 + `CacheVol` – the FlexCache volume name
 
 The procedures in this section use the following NetApp ONTAP CLI commands.
-+ [https://docs.netapp.com/us-en/ontap-cli-9141/network-interface-show.html](https://docs.netapp.com/us-en/ontap-cli-9141/network-interface-show.html)
-+ [https://docs.netapp.com/us-en/ontap-cli-9141/cluster-peer-create.html](https://docs.netapp.com/us-en/ontap-cli-9141/cluster-peer-create.html) commands
-+ [https://docs.netapp.com/us-en/ontap-cli-9141/volume-flexcache-create.html](https://docs.netapp.com/us-en/ontap-cli-9141/volume-flexcache-create.html)
++ [`network interfaces show`](https://docs.netapp.com/us-en/ontap-cli-9141/network-interface-show.html)
++ [`cluster peer`](https://docs.netapp.com/us-en/ontap-cli-9141/cluster-peer-create.html) commands
++ [`volume flexcache create`](https://docs.netapp.com/us-en/ontap-cli-9141/volume-flexcache-create.html)
 
 ## Prerequisites
 <a name="flexcache_prerequisite"></a>
@@ -63,7 +63,7 @@ For scale-out file systems, there are two inter-cluster endpoint IP addresses fo
 ## Establish cluster peering between the origin and cache
 <a name="establish-cluster-peering"></a>
 
-Establish a cluster peer relationship on the **Cache** and **Source** cluster using the [https://docs.netapp.com/us-en/ontap-cli-9141/cluster-peer-create.html](https://docs.netapp.com/us-en/ontap-cli-9141/cluster-peer-create.html) ONTAP CLI command. You will provide the inter-cluster IP addresses that you saved previously in the [Record the source and destination inter-cluster LIFs](#record-lifs) procedure. When prompted, you will be asked to create a `{{cluster-peer-passphrase}}` that you will need to enter in when you establish cluster peering on the **Origin** cluster.
+Establish a cluster peer relationship on the **Cache** and **Source** cluster using the [**cluster peer create**](https://docs.netapp.com/us-en/ontap-cli-9141/cluster-peer-create.html) ONTAP CLI command. You will provide the inter-cluster IP addresses that you saved previously in the [Record the source and destination inter-cluster LIFs](#record-lifs) procedure. When prompted, you will be asked to create a `{{cluster-peer-passphrase}}` that you will need to enter in when you establish cluster peering on the **Origin** cluster.
 
 1. Set up cluster peering on the `Cache` cluster (your FSx for ONTAP file system).
 
@@ -158,7 +158,7 @@ After successfully creating the SVM peering relationship, the next step is to cr
      FSx-Cache::> volume flexcache create -vserver {{CacheSVM}} -size 2t -volume {{CacheVol}} -origin-volume {{OriginVol}} -origin-vserver {{OriginSVM}} -junction-path {{/flexcache}} -aggr-list {{aggr1}} -is-writeback-enabled true
      ```
 **Note**
-You can use the [https://docs.netapp.com/us-en/ontap-cli-9151/volume-flexcache-config-modify.html#description](https://docs.netapp.com/us-en/ontap-cli-9151/volume-flexcache-config-modify.html#description) command to modify the write mode. Before using this command, make sure you enter ONTAP CLI advanced mode by using the [https://docs.netapp.com/us-en/ontap/system-admin/set-privilege-level-task.html](https://docs.netapp.com/us-en/ontap/system-admin/set-privilege-level-task.html) command.
+You can use the [`volume flexcache config modify -is-writeback-enabled {true|false}`](https://docs.netapp.com/us-en/ontap-cli-9151/volume-flexcache-config-modify.html#description) command to modify the write mode. Before using this command, make sure you enter ONTAP CLI advanced mode by using the [`set -privilege advanced`](https://docs.netapp.com/us-en/ontap/system-admin/set-privilege-level-task.html) command.
 
 1. Verify the FlexCache relationship between the FlexCache volume and the origin volume.
    + For a FlexCache write-around volume, your output will look similar to the following example.

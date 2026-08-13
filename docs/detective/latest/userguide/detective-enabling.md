@@ -48,8 +48,8 @@ You can only enable Detective once in each Region. If you already are the admini
 You can enable Amazon Detective from the Detective API or the AWS Command Line Interface.
 
 **To enable Detective (Detective API, AWS CLI)**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_CreateGraph.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_CreateGraph.html) operation.
-+ **AWS CLI:** At the command line, run the [https://docs.aws.amazon.com/cli/latest/reference/detective/create-graph.html](https://docs.aws.amazon.com/cli/latest/reference/detective/create-graph.html) command.
++ **Detective API:** Use the [`CreateGraph`](https://docs.aws.amazon.com/detective/latest/APIReference/API_CreateGraph.html) operation.
++ **AWS CLI:** At the command line, run the [`create-graph`](https://docs.aws.amazon.com/cli/latest/reference/detective/create-graph.html) command.
 
   ```
   aws detective create-graph --tags '{"{{tagName}}": "{{tagValue}}"}'

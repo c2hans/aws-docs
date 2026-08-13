@@ -51,7 +51,7 @@ To diagnose the replication failure:
 ## Analyzing binary logs
 <a name="USER_ReadRepl.Troubleshooting.MissingRecords.BinlogAnalysis"></a>
 
-To investigate a replication failure at a specific transaction, you can use the [https://dev.mysql.com/doc/refman/en/mysqlbinlog.html](https://dev.mysql.com/doc/refman/en/mysqlbinlog.html) utility to examine the binary log file. For example, if replication failed at `end_log_pos` position `899` in the binary log file `mysql-bin-changelog.031523`, you can analyze this specific location to identify the cause of the failure.
+To investigate a replication failure at a specific transaction, you can use the [`mysqlbinlog`](https://dev.mysql.com/doc/refman/en/mysqlbinlog.html) utility to examine the binary log file. For example, if replication failed at `end_log_pos` position `899` in the binary log file `mysql-bin-changelog.031523`, you can analyze this specific location to identify the cause of the failure.
 
 **Note**
 The `end_log_pos` value indicates the end position of the failing event. In the decoded binary log output, look for the event whose `end_log_pos` matches this value.

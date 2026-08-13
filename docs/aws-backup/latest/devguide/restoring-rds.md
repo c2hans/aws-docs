@@ -39,7 +39,7 @@ Restoring an Amazon RDS database requires specifying multiple restore options. F
 ## Use the AWS Backup API, CLI, or SDK to restore Amazon RDS recovery points
 <a name="rds-restore-cli"></a>
 
-Use `[StartRestoreJob](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html)`. For information on accepted metadata and values, see [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceFromDBSnapshot.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceFromDBSnapshot.html) and [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceToPointInTime.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceToPointInTime.html) in the *Amazon RDS API Reference*. Additionally, AWS Backup accepts the following information-only attributes. However, including them will not affect the restore:
+Use `[StartRestoreJob](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html)`. For information on accepted metadata and values, see [`RestoreDBInstanceFromDBSnapshot`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceFromDBSnapshot.html) and [`RestoreDBInstanceToPointInTime`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceToPointInTime.html) in the *Amazon RDS API Reference*. Additionally, AWS Backup accepts the following information-only attributes. However, including them will not affect the restore:
 
 ```
 EngineVersion

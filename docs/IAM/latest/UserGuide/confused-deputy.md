@@ -42,7 +42,7 @@ Example Corp can address the confused deputy problem by requiring that you inclu
 
 In our scenario, imagine Example Corp's unique identifier for you is 12345, and its identifier for the other customer is 67890. These identifiers are simplified for this scenario. Generally, these identifiers are GUIDs. Assuming that these identifiers are unique among Example Corp's customers, they are sensible values to use for the external ID.
 
-Example Corp gives the external ID value of 12345 to you. You must then add a `Condition` element to the role's trust policy that requires the [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#condition-keys-sts](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#condition-keys-sts) value to be 12345, like this:
+Example Corp gives the external ID value of 12345 to you. You must then add a `Condition` element to the role's trust policy that requires the [`sts:ExternalId`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#condition-keys-sts) value to be 12345, like this:
 
 ------
 #### [ JSON ]

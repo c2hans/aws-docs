@@ -71,4 +71,4 @@ You can use the AWS CLI to uninstall a Distributor package from managed nodes by
       --parameters '{"action":["Uninstall"],"name":["Test-ConfigureAWSPackage"]}'
   ```
 
-For information about other options you can use with the **send-command** command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html) in the AWS Systems Manager section of the *AWS CLI Command Reference*.
+For information about other options you can use with the **send-command** command, see [**send-command**](https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html) in the AWS Systems Manager section of the *AWS CLI Command Reference*.

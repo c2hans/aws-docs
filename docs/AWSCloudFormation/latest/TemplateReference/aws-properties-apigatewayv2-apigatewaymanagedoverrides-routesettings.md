@@ -19,9 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[DataTraceEnabled](#cfn-apigatewayv2-apigatewaymanagedoverrides-routesettings-datatraceenabled)" : {{Boolean}},
   "[DetailedMetricsEnabled](#cfn-apigatewayv2-apigatewaymanagedoverrides-routesettings-detailedmetricsenabled)" : {{Boolean}},
-  "[LoggingLevel](#cfn-apigatewayv2-apigatewaymanagedoverrides-routesettings-logginglevel)" : {{String}},
   "[ThrottlingBurstLimit](#cfn-apigatewayv2-apigatewaymanagedoverrides-routesettings-throttlingburstlimit)" : {{Integer}},
   "[ThrottlingRateLimit](#cfn-apigatewayv2-apigatewaymanagedoverrides-routesettings-throttlingratelimit)" : {{Number}}
 }
@@ -31,9 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-apigatewayv2-apigatewaymanagedoverrides-routesettings-syntax.yaml"></a>
 
 ```
-  [DataTraceEnabled](#cfn-apigatewayv2-apigatewaymanagedoverrides-routesettings-datatraceenabled): {{Boolean}}
   [DetailedMetricsEnabled](#cfn-apigatewayv2-apigatewaymanagedoverrides-routesettings-detailedmetricsenabled): {{Boolean}}
-  [LoggingLevel](#cfn-apigatewayv2-apigatewaymanagedoverrides-routesettings-logginglevel): {{String}}
   [ThrottlingBurstLimit](#cfn-apigatewayv2-apigatewaymanagedoverrides-routesettings-throttlingburstlimit): {{Integer}}
   [ThrottlingRateLimit](#cfn-apigatewayv2-apigatewaymanagedoverrides-routesettings-throttlingratelimit): {{Number}}
 ```
@@ -41,22 +37,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 ## Properties
 <a name="aws-properties-apigatewayv2-apigatewaymanagedoverrides-routesettings-properties"></a>
 
-`DataTraceEnabled`  <a name="cfn-apigatewayv2-apigatewaymanagedoverrides-routesettings-datatraceenabled"></a>
-Specifies whether (`true`) or not (`false`) data trace logging is enabled for this route. This property affects the log entries pushed to Amazon CloudWatch Logs. Supported only for WebSocket APIs.
-*Required*: No
-*Type*: Boolean
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
 `DetailedMetricsEnabled`  <a name="cfn-apigatewayv2-apigatewaymanagedoverrides-routesettings-detailedmetricsenabled"></a>
 Specifies whether detailed metrics are enabled.
 *Required*: No
 *Type*: Boolean
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-`LoggingLevel`  <a name="cfn-apigatewayv2-apigatewaymanagedoverrides-routesettings-logginglevel"></a>
-Specifies the logging level for this route: `INFO`, `ERROR`, or `OFF`. This property affects the log entries pushed to Amazon CloudWatch Logs. Supported only for WebSocket APIs.
-*Required*: No
-*Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ThrottlingBurstLimit`  <a name="cfn-apigatewayv2-apigatewaymanagedoverrides-routesettings-throttlingburstlimit"></a>

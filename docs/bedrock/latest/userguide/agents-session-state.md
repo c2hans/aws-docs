@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-session-
 # Control agent session context
 <a name="agents-session-state"></a>
 
-For greater control of session context, you can modify the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_SessionState.html#bedrock-Type-agent-runtime_SessionState](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_SessionState.html#bedrock-Type-agent-runtime_SessionState) object in your agent. The [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_SessionState.html#bedrock-Type-agent-runtime_SessionState](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_SessionState.html#bedrock-Type-agent-runtime_SessionState) object contains information that can be maintained across turns (separate [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request and responses). You can use this information to provide conversational context for the agent during user conversations.
+For greater control of session context, you can modify the [SessionState](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_SessionState.html#bedrock-Type-agent-runtime_SessionState) object in your agent. The [SessionState](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_SessionState.html#bedrock-Type-agent-runtime_SessionState) object contains information that can be maintained across turns (separate [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request and responses). You can use this information to provide conversational context for the agent during user conversations.
 
-The general format of the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_SessionState.html#bedrock-Type-agent-runtime_SessionState](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_SessionState.html#bedrock-Type-agent-runtime_SessionState) object is as follows.
+The general format of the [SessionState](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_SessionState.html#bedrock-Type-agent-runtime_SessionState) object is as follows.
 
 ```
 {
@@ -50,7 +50,7 @@ The general format of the [https://docs.aws.amazon.com/bedrock/latest/APIReferen
 }
 ```
 
-Select a topic to learn more about fields in the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_SessionState.html#bedrock-Type-agent-runtime_SessionState](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_SessionState.html#bedrock-Type-agent-runtime_SessionState) object.
+Select a topic to learn more about fields in the [SessionState](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_SessionState.html#bedrock-Type-agent-runtime_SessionState) object.
 
 **Topics**
 + [Session and prompt session attributes](#session-state-attributes)
@@ -63,13 +63,13 @@ Select a topic to learn more about fields in the [https://docs.aws.amazon.com/be
 <a name="session-state-attributes"></a>
 
 Amazon Bedrock Agents allows you to define the following types of contextual attributes that persist over parts of a session:
-+ **sessionAttributes** – Attributes that persist over a [session](advanced-prompts.md#advanced-prompts-terminology) between a user and agent. All [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) requests made with the same `sessionId` belong to the same session, as long as the session time limit (the `idleSessionTTLinSeconds`) has not been surpassed.
++ **sessionAttributes** – Attributes that persist over a [session](advanced-prompts.md#advanced-prompts-terminology) between a user and agent. All [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) requests made with the same `sessionId` belong to the same session, as long as the session time limit (the `idleSessionTTLinSeconds`) has not been surpassed.
 + **conversationHistory** – For multi-agent collaboration, accepts additional context for processing run time requests if `conversationalHistorySharing` is enabled for a collaborator agent. By default, this field is automatically constructed by supervisor agent when invoking the collaborator agent. You can optionally use this field to provide additional context. For more information, see [Use multi-agent collaboration with Amazon Bedrock Agents](agents-multi-agent-collaboration.md).
-+ **promptSessionAttributes** – Attributes that persist over a single [turn](advanced-prompts.md#advanced-prompts-terminology) (one [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) call). You can use the $prompt\_session\_attributes$ [placeholder](prompt-placeholders.md) when you edit the orchestration base prompt template. This placeholder will be populated at runtime with the attributes that you specify in the `promptSessionAttributes` field.
++ **promptSessionAttributes** – Attributes that persist over a single [turn](advanced-prompts.md#advanced-prompts-terminology) (one [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) call). You can use the $prompt\_session\_attributes$ [placeholder](prompt-placeholders.md) when you edit the orchestration base prompt template. This placeholder will be populated at runtime with the attributes that you specify in the `promptSessionAttributes` field.
 
 You can define the session state attributes at two different steps:
 + When you set up an action group and [write the Lambda function](agents-lambda.md), include `sessionAttributes` or `promptSessionAttributes` in the [response event](agents-lambda.md#agents-lambda-response) that is returned to Amazon Bedrock.
-+ During runtime, when you send an [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request, include a `sessionState` object in the request body to dynamically change the session state attributes in the middle of the conversation.
++ During runtime, when you send an [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request, include a `sessionState` object in the request body to dynamically change the session state attributes in the middle of the conversation.
 
 ## Session attribute example
 <a name="session-attribute-ex"></a>
@@ -78,7 +78,7 @@ The following example uses a session attribute to personalize a message to your 
 
 1. Write your application code to ask the user to provide their first name and the request they want to make to the agent and to store the answers as the variables {{<first\_name>}} and {{<request>}}.
 
-1. Write your application code to send an [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request with the following body:
+1. Write your application code to send an [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request with the following body:
 
    ```
    {
@@ -104,7 +104,7 @@ The following general example uses a prompt session attribute to provide tempora
 
 1. Write your application code to retrieve the time zone at the user's location if the user uses a word indicating relative time (such as "tomorrow") in the {{<request>}}, and store in a variable called {{<timezone>}}.
 
-1. Write your application to send an [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request with the following body:
+1. Write your application to send an [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request with the following body:
 
    ```
    {
@@ -128,10 +128,10 @@ The following general example uses a prompt session attribute to provide tempora
 ## Action group invocation results
 <a name="session-state-return-control"></a>
 
-If you configured an action group to [return control in an [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response](agents-returncontrol.md), you can send the results from invoking the action group in the `sessionState` of a subsequent [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response by including the following fields:
-+ `invocationId` – This ID must match the `invocationId` returned in the [ReturnControlPayload](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ReturnControlPayload.html) object in the `returnControl` field of the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response.
+If you configured an action group to [return control in an [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response](agents-returncontrol.md), you can send the results from invoking the action group in the `sessionState` of a subsequent [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response by including the following fields:
++ `invocationId` – This ID must match the `invocationId` returned in the [ReturnControlPayload](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ReturnControlPayload.html) object in the `returnControl` field of the [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response.
 + `returnControlInvocationResults` – Includes results that you obtain from invoking the action. You can set up your application to pass the [ReturnControlPayload](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ReturnControlPayload.html) object to perform an API request or call a function that you define. You can then provide the results of that action here. Each member of the `returnControlInvocationResults` list is one of the following:
-  + An [ApiResult](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ApiResult.html) object containing the API operation that the agent predicted should be called in a previous [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) sequence and the results from invoking the action in your systems. The general format is as follows:
+  + An [ApiResult](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ApiResult.html) object containing the API operation that the agent predicted should be called in a previous [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) sequence and the results from invoking the action in your systems. The general format is as follows:
 
     ```
     {
@@ -148,7 +148,7 @@ If you configured an action group to [return control in an [https://docs.aws.ama
         }
     }
     ```
-  + A [FunctionResult](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_FunctionResult.html) object containing the function that the agent predicted should be called in a previous [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) sequence and the results from invoking the action in your systems. The general format is as follows:
+  + A [FunctionResult](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_FunctionResult.html) object containing the function that the agent predicted should be called in a previous [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) sequence and the results from invoking the action in your systems. The general format is as follows:
 
     ```
     {

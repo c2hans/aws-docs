@@ -9,7 +9,7 @@ You must use the AWS CLI to rename the customer managed configuration recorder. 
 
 **Renaming the customer managed configuration recorder using the AWS CLI**
 
-1. Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorders.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorders.html) command to look up the name of your current customer managed configuration recorder:
+1. Use the [`describe-configuration-recorders`](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorders.html) command to look up the name of your current customer managed configuration recorder:
 
    ```
    $ aws configservice describe-configuration-recorders
@@ -23,19 +23,19 @@ You must use the AWS CLI to rename the customer managed configuration recorder. 
    }
    ```
 
-1. Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/delete-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/delete-configuration-recorder.html) command to delete your customer managed current configuration recorder:
+1. Use the [`delete-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/delete-configuration-recorder.html) command to delete your customer managed current configuration recorder:
 
    ```
    $ aws configservice delete-configuration-recorder --configuration-recorder-name {{default}}
    ```
 
-1. Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) command to create a customer managed configuration recorder with the new name:
+1. Use the [`put-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) command to create a customer managed configuration recorder with the new name:
 
    ```
    $ aws configservice put-configuration-recorder --configuration-recorder name={{configRecorderName}},roleARN={{arn:aws:iam::012345678912:role/myConfigRole}}
    ```
 
-1. Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/start-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/start-configuration-recorder.html) command to resume recording:
+1. Use the [`start-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/start-configuration-recorder.html) command to resume recording:
 
    ```
    $ aws configservice start-configuration-recorder --configuration-recorder-name {{configRecorderName}}

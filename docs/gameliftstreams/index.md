@@ -11,6 +11,7 @@ Amazon GameLift Streams helps developers stream games at up to 1080p resolution 
 - [Web SDK API Reference v1.3.0](https://gameliftstreams-public-website-assets.s3.us-west-2.amazonaws.com/AmazonGameLiftStreamsWebSDKReference-v1.3.0.pdf): Describes all the Web SDK API operations for the Amazon GameLift Streams Web SDK.
 - [Amazon GameLift Streams in the AWS CLI Reference](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/gameliftstreams/index.html): Documents the Amazon GameLift Streams commands available in the AWS Command Line Interface (AWS CLI).
 - [Amazon GameLift Streams in the AWS SDK for JavaScript v3](/AWSJavaScriptSDK/v3/latest/client/gameliftstreams/): Documents the Amazon GameLift Streams API operations available in the AWS SDK for JavaScript v3.
+- [Compatible devices and browsers](/gameliftstreams/latest/developerguide/compatible-devices-browsers.html): Lists the devices, operating systems, and web browsers that support Amazon GameLift Streams streaming, including known issues and limitations.
 
 ---
 

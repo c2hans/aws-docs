@@ -115,7 +115,7 @@ After submitting a new EKS cluster creation request, wait until the EKS cluster 
 
 1. For **Kubernetes version**, choose a version from the drop-down menu. For more information about Kubernetes versions, see [Understand the Kubernetes version lifecycle on EKS](https://docs.aws.amazon.com//eks/latest/userguide/kubernetes-versions.html) from the *Amazon EKS User Guide*.
 
-1. For **Operators**, choose **Use default Helm charts and add-ons** or **Don't install operators**. The option defaults to **Use default Helm charts and add-ons**, which will be used to install operators on the EKS cluster. For more information about the default Helm charts and add-ons, see [https://github.com/aws/sagemaker-hyperpod-cli/tree/main/helm_chart/HyperPodHelmChart](https://github.com/aws/sagemaker-hyperpod-cli/tree/main/helm_chart/HyperPodHelmChart) from the GitHub repository. For more information, see [Installing packages on the Amazon EKS cluster using Helm](sagemaker-hyperpod-eks-install-packages-using-helm-chart.md).
+1. For **Operators**, choose **Use default Helm charts and add-ons** or **Don't install operators**. The option defaults to **Use default Helm charts and add-ons**, which will be used to install operators on the EKS cluster. For more information about the default Helm charts and add-ons, see [`helm_chart`](https://github.com/aws/sagemaker-hyperpod-cli/tree/main/helm_chart/HyperPodHelmChart) from the GitHub repository. For more information, see [Installing packages on the Amazon EKS cluster using Helm](sagemaker-hyperpod-eks-install-packages-using-helm-chart.md).
 
 1. For **Enabled operators**, view the list of enabled operators. To edit the operators, uncheck the box at top and choose operators to enable for the EKS cluster.
 **Note**

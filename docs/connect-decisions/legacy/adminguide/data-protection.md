@@ -64,13 +64,13 @@ A virtual private cloud (VPC) endpoint for AWS Supply Chain is a logical entity 
 
 AWS Supply Chain requires a [grant](/kms/latest/developerguide/grants.html) to use your customer managed key.
 
-AWS Supply Chain creates several grants using the AWS KMS key that is passed during the **CreateInstance** operation. AWS Supply Chain creates a grant on your behalf by sending [/kms/latest/APIReference/API_CreateGrant.html](/kms/latest/APIReference/API_CreateGrant.html) requests to AWS KMS. Grants in AWS KMS are used to give AWS Supply Chain access to the AWS KMS key in a customer account.
+AWS Supply Chain creates several grants using the AWS KMS key that is passed during the **CreateInstance** operation. AWS Supply Chain creates a grant on your behalf by sending [**CreateGrant**](/kms/latest/APIReference/API_CreateGrant.html) requests to AWS KMS. Grants in AWS KMS are used to give AWS Supply Chain access to the AWS KMS key in a customer account.
 
 **Note**
 AWS Supply Chain uses it's own authorization mechanism. Once an user is added to AWS Supply Chain, you cannot deny list the same user using the AWS KMS policy.
 
 AWS Supply Chain uses the grant for the following:
-+ To send **GenerateDataKey** requests to AWS KMS to [/forecast/latest/dg/data-protection.html#kms-grants](/forecast/latest/dg/data-protection.html#kms-grants) the data stored in your instance.
++ To send **GenerateDataKey** requests to AWS KMS to [**encrypt**](/forecast/latest/dg/data-protection.html#kms-grants) the data stored in your instance.
 + To send **Decrypt** requests to AWS KMS in order to read your encrypted data associated with the instance.
 + To add *DescribeKey*, *CreateGrant*, and *RetireGrant* permissions in order to keep your data secured when sending it to other AWS services like Amazon Forecast.
 

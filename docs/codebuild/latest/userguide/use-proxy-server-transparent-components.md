@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/use-proxy-ser
 +  A VPC.
 +  One public subnet in your VPC for the proxy server.
 +  One private subnet in your VPC for CodeBuild.
-+  An internet gateway that allows communcation between the VPC and the internet.
++  An internet gateway that allows communication between the VPC and the internet.
 
  The following diagram shows how the components interact.
 

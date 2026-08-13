@@ -56,9 +56,7 @@ Now that you have a project, you can create and then start a run. For more infor
 
 1. On the **Automated tests** tab, choose **Create run**. Alternatively, you can follow the in-console tutorial by selecting **Create run with tutorial**.
 
-1. (Optional) Under **Run settings**, in the **Run name** section, enter a name for your run. If no name is provided, the Device Farm console will name your run 'My Device Farm run' by default.
-
-1. Under **Run settings**, in the **Run type** section, select your run type. Select **Android app** if you do not have an app ready for testing, or if you are testing an android (.apk) app. Select **iOS app** if you are testing an iOS (.ipa) app.
+1. Under **Select app and run type**, in the **Run type** section, select your run type. Select **Android app** if you do not have an app ready for testing, or if you are testing an android (.apk) app. Select **iOS app** if you are testing an iOS (.ipa) app.
 
 1. Under **Select app**, in the **App selection options** section, choose **Select sample app provided by Device Farm** if you do not have an app available for testing. If you are bringing your own app, select **Upload own app**, and choose your application file. If you're uploading an iOS app, be sure to choose **iOS device**, as opposed to a simulator.
 
@@ -75,13 +73,18 @@ Now that you have a project, you can create and then start a run. For more infor
    + To preset the device latitude and longitude for the run, next to **Device location**, enter the coordinates.
    + To preset the device locale for the run, in **Device locale**, choose the locale.
    + Select **Enable video recording** to record video during testing.
-   + Select **Enable app performance data capture** to capture performance data from the device.
 **Note**
 Setting the device radio state and locale are options only available for Android native tests at this time.
 **Note**
 If you have private devices, configuration specific to private devices is also displayed.
 
-1. At the bottom of the page, choose **Create run** to schedule the run.
+1. (Optional) To configure run-level properties, update the **Run Settings** section. Here you can do the following:
+   + Assign your run with a custom **Run name**. If no name is provided, the Device Farm console will name your run 'My Device Farm run' by default.
+   + Choose **Generate test report** under **Test Insights** to get a detailed structured test report for each job and an aggregated summary at the run level. This insight is generated in addition to any test report that you might generate as part of your test execution.
+   + Assign a **Job timeout**, which is the maximum number of minutes a job can run on a device. If your tests are complete before the job timeout, the job completes, and you are not charged for the remainder of the job timeout. The default is 150 minutes.
+   + Choose a **Billing method**. By default, if you do not have slots purchased on your account, the Device Farm console selects Metered. If you have slots, the console defaults to Unmetered.
+
+1. At the bottom of the page, choose **Confirm and start run** to schedule the run.
 
 Device Farm starts the run as soon as devices are available, typically within a few minutes. To view the run status, on the **Automated tests** page of your project, choose the name of your run. One the run page, under **Devices**, each device starts with the pending icon ![Device Farm scheduled a job.](http://docs.aws.amazon.com/devicefarm/latest/developerguide/images/df-run-calendar.png) in the device table, then switches to the running icon ![Device Farm progress indicator.](http://docs.aws.amazon.com/devicefarm/latest/developerguide/images/df-run-progress.png) when the test begins. As each test finishes, the console displays a test result icon next to the device name. When all tests are complete, the pending icon next to the run changes to a test result icon.
 

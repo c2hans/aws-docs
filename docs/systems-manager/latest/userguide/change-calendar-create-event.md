@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/change-
 # Creating a Change Calendar event
 <a name="change-calendar-create-event"></a>
 
-When you add an event to an entry in Change Calendar, a tool in AWS Systems Manager, you're specifying a period of time during which the default action of the calendar entry is suspended. For example, if the calendar entry type is closed by default, the calendar is open to changes during events. (Alternatively, you can create an advisory event, which serves an informational role on the calendar only.)
+When you add an event to an entry in Change Calendar, you specify a period of time when the default action of the calendar entry is suspended. For example, if the calendar entry type is closed by default, the calendar is open to changes during events. You can also create an advisory event, which serves an informational role on the calendar only.
 
 Currently, you can only create a Change Calendar event by using the console. Events are added to the Change Calendar document that you create when you create a Change Calendar entry.
 

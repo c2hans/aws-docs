@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon MQ service and resource
 
 **Resource type:** `AWS::AmazonMQ::Broker`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/mq-cloudwatch-audit-log-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/mq-cloudwatch-audit-log-enabled.html)
+**AWS Config rule:** [`mq-cloudwatch-audit-log-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/mq-cloudwatch-audit-log-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -75,7 +75,7 @@ To add tags to an Amazon MQ broker, see [Tagging resources](https://docs.aws.ama
 
 **Resource type:** `AWS::AmazonMQ::Broker`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/mq-active-deployment-mode.html](https://docs.aws.amazon.com/config/latest/developerguide/mq-active-deployment-mode.html)
+**AWS Config rule:** [`mq-active-deployment-mode`](https://docs.aws.amazon.com/config/latest/developerguide/mq-active-deployment-mode.html)
 
 **Schedule type:** Change triggered
 
@@ -101,7 +101,7 @@ To create a new ActiveMQ broker with active/standby deployment mode, see [ Creat
 
 **Resource type:** `AWS::AmazonMQ::Broker`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/mq-rabbit-deployment-mode.html](https://docs.aws.amazon.com/config/latest/developerguide/mq-rabbit-deployment-mode.html)
+**AWS Config rule:** [`mq-rabbit-deployment-mode`](https://docs.aws.amazon.com/config/latest/developerguide/mq-rabbit-deployment-mode.html)
 
 **Schedule type:** Change triggered
 

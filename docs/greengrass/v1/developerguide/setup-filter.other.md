@@ -20,10 +20,10 @@ Yocto Project
 An open source collaboration project that helps you build custom Linux-based systems for embedded applications regardless hardware architecture. For more information, see the [Yocto Project](https://www.yoctoproject.org/).
 
 `meta-aws`
-An AWS managed project that provides Yocto recipes. You can use the recipes to develop AWS edge sofware in Linux-based systems built with [OpenEmbedded](https://www.openembedded.org/wiki/Main_Page) and Yocto Project. For more information about this community supported capability, see the [https://github.com/aws/meta-aws](https://github.com/aws/meta-aws)project on GitHub.
+An AWS managed project that provides Yocto recipes. You can use the recipes to develop AWS edge sofware in Linux-based systems built with [OpenEmbedded](https://www.openembedded.org/wiki/Main_Page) and Yocto Project. For more information about this community supported capability, see the [`meta-aws`](https://github.com/aws/meta-aws)project on GitHub.
 
 `meta-aws-demos`
-An AWS managed project that contains demonstrations for the `meta-aws` project. For more examples about the integration process, see the [https://github.com/aws-samples/meta-aws-demos](https://github.com/aws-samples/meta-aws-demos) project on GitHub.
+An AWS managed project that contains demonstrations for the `meta-aws` project. For more examples about the integration process, see the [`meta-aws-demos`](https://github.com/aws-samples/meta-aws-demos) project on GitHub.
 
 To use a different device or [supported platform](what-is-gg.md#gg-platforms), follow the steps in this topic.
 

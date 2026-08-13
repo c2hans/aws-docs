@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/mainten
 # Using pseudo parameters when registering maintenance window tasks
 <a name="maintenance-window-tasks-pseudo-parameters"></a>
 
-When you register a task in Maintenance Windows, a tool in AWS Systems Manager, you specify the parameters that are unique to each of the four task types. (In CLI commands, these are provided using the `--task-invocation-parameters` option.)
+When you register a task in Maintenance Windows, you specify the parameters that are unique to each of the four task types. (In CLI commands, these are provided using the `--task-invocation-parameters` option.)
 
  You can also reference certain values using *pseudo parameter* syntax, such as `{{RESOURCE_ID}}`, `{{TARGET_TYPE}}`, and `{{WINDOW_TARGET_ID}}`. When the maintenance window task runs, it passes the correct values instead of the pseudo parameter placeholders. The full list of pseudo parameters you can use is provided later in this topic in [Supported pseudo parameters](#pseudo-parameters).
 

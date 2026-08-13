@@ -12,13 +12,24 @@ This release applies Windows July 2018 security updates to the Windows Server pl
 ## Changes
 <a name="release-2018-07-25-windows.changes"></a>
 
-| **Category** | **Description** |
-| --- | --- |
-| **Instance type** | **Regions** |
-| --- | --- |
-| **Windows security updates** | Applied July 2018 security updates for Windows.<br />See Microsoft's [Security TechCenter](https://portal.msrc.microsoft.com/en-us/) and [Security Advisories and Bulletins](https://technet.microsoft.com/en-us/library/security/). |
-| **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-07-25-windows.html) |
-| **X1e** | AWS GovCloud (US)—us-gov-west-1 |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows security updates</b></td><td>Applied July 2018 security updates for Windows.<br />See Microsoft's <a href="https://portal.msrc.microsoft.com/en-us/">Security TechCenter</a> and <a href="https://technet.microsoft.com/en-us/library/security/">Security Advisories and Bulletins</a>.</td></tr>
+  <tr><td><b>Instance types</b></td><td>Added support for more Amazon EC2 instance types in some AWS Regions, as follows:
+<table>
+<thead>
+  <tr><th><b>Instance type</b></th><th><b>Regions</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>X1e</b></td><td>AWS GovCloud (US)—us-gov-west-1</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## Updated platform configurations
 <a name="release-2018-07-25-windows.platforms"></a>

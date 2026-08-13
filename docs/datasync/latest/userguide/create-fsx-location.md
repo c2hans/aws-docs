@@ -74,7 +74,7 @@ Before you begin, make sure that you have an existing FSx for Windows File Serve
 
 1. For **Security groups**, choose up to five Amazon EC2 security groups that provide access to your file system's preferred subnet.
 
-   The security groups that you choose must be able to communicate with your file system's security groups. For information about configuring security groups for file system access, see the [https://docs.aws.amazon.com/fsx/latest/WindowsGuide/limit-access-security-groups.html](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/limit-access-security-groups.html).
+   The security groups that you choose must be able to communicate with your file system's security groups. For information about configuring security groups for file system access, see the [*Amazon FSx for Windows File Server User Guide*](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/limit-access-security-groups.html).
 **Note**
 If you choose a security group that doesn't allow connections from within itself, do one of the following:
 Configure the security group to allow it to communicate within itself.
@@ -113,7 +113,7 @@ Choose a different security group that can communicate with the mount target's s
   + `fsx-filesystem-arn` – Specify the Amazon Resource Name (ARN) of the file system that you want to transfer to or from.
   + `security-group-arns` – Specify the ARNs of up to five Amazon EC2 security groups that provide access to your file system's preferred subnet.
 
-    The security groups that you specify must be able to communicate with your file system's security groups. For information about configuring security groups for file system access, see the [https://docs.aws.amazon.com/fsx/latest/WindowsGuide/limit-access-security-groups.html](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/limit-access-security-groups.html).
+    The security groups that you specify must be able to communicate with your file system's security groups. For information about configuring security groups for file system access, see the [*Amazon FSx for Windows File Server User Guide*](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/limit-access-security-groups.html).
 **Note**
 If you choose a security group that doesn't allow connections from within itself, do one of the following:
 Configure the security group to allow it to communicate within itself.

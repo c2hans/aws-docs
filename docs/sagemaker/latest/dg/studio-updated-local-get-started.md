@@ -85,7 +85,7 @@ When the [Rootless Docker configuration](#studio-updated-local-rootless) is enab
 ## Rootless Docker configuration
 <a name="studio-updated-local-rootless"></a>
 
-When [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DockerSettings.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DockerSettings.html) is enabled, Studio uses a [rootless Docker daemon](https://docs.docker.com/engine/security/rootless/) that routes traffic through your VPC. This provides enhanced security and allows access to additional Docker registries. The key differences with `RootlessDocker` are:
+When [`RootlessDocker`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DockerSettings.html) is enabled, Studio uses a [rootless Docker daemon](https://docs.docker.com/engine/security/rootless/) that routes traffic through your VPC. This provides enhanced security and allows access to additional Docker registries. The key differences with `RootlessDocker` are:
 + Your VPC configuration determines which registries are accessible for Docker operations. `VpcOnlyTrustedAccounts` is ignored and Docker traffic routes through your VPC configuration.
 
 To use rootless Docker, you will need to set both `EnableDockerAccess` and `RootlessDocker` to `ENABLED` for your `DockerSettings`. For example, in the [Setting `EnableDockerAccess`](#studio-updated-local-enable) examples above, you can modify your domain settings to include:

@@ -10,4 +10,4 @@ While QnABot on AWS provides integration with Genesys Cloud CX, you are responsi
 
 1. Sign in to the content designer, select the tools menu (☰), and then choose **Genesys Cloud**.
 
-1. Follow the step-by-step directions in the wizard to create a contact center using the solution to answer caller’s questions.
+1. Follow the step-by-step directions in the wizard to create a contact center using the guidance to answer caller’s questions.

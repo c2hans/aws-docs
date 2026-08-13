@@ -122,7 +122,7 @@ The following third-party service is related to AWS Clean Rooms:
 
 You can access AWS Clean Rooms through the following options:
 + Directly through the AWS Clean Rooms console at [https://console.aws.amazon.com/cleanrooms/](https://console.aws.amazon.com/cleanrooms/).
-+ Programmatically through the AWS Clean Rooms API. For more information, see the [https://docs.aws.amazon.com/clean-rooms/latest/apireference/Welcome.html](https://docs.aws.amazon.com/clean-rooms/latest/apireference/Welcome.html).
++ Programmatically through the AWS Clean Rooms API. For more information, see the [*AWS Clean Rooms API Reference*](https://docs.aws.amazon.com/clean-rooms/latest/apireference/Welcome.html).
 
 ## Pricing for AWS Clean Rooms
 <a name="pricing"></a>

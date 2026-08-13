@@ -73,16 +73,16 @@ const customEtlJob = new KinesisstreamsToGluejob(this, "CustomETL", {
 
 |  **Name**  |  **Type**  |  **Description**  |
 | --- | --- | --- |
-| existingStreamObj? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kinesis.Stream.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kinesis.Stream.html)  | Existing instance of Kinesis Stream, providing both this and `kinesisStreamProps` will cause an error. |
-| kinesisStreamProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kinesis.StreamProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kinesis.StreamProps.html)  | Optional user-provided props to override the default props for the Kinesis stream. |
-| glueJobProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnJobProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnJobProps.html)  | User provided props to override the default props for the AWS Glue Job. |
-| existingGlueJob? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnJob.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnJob.html)  | Existing instance of AWS Glue Job, providing both this and `glueJobProps` will cause an error. |
-| fieldSchema? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnTable.ColumnProperty.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnTable.ColumnProperty.html)  | User provided schema structure to create an AWS Glue Table. |
-| existingTable? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnTable.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnTable.html)  | Existing instance of AWS Glue Table. If this is set, tableProps and fieldSchema are ignored. |
-| tableProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.TableProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.TableProps.html)  | User provided AWS Glue Table props to override default props used to create a Glue Table. |
-| existingDatabase? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnDatabase.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnDatabase.html)  | Existing instance of AWS Glue Database. If this is set, then databaseProps is ignored. |
-| databaseProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnDatabaseProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnDatabaseProps.html)  | User provided Glue Database Props to override the default props used to create the Glue Database. |
-| outputDataStore? |  [#sinkdatastoreprops](#sinkdatastoreprops)  | User provided properties for S3 bucket that stores Glue Job output. Current datastore types supported is only S3. |
+| existingStreamObj? |  [`kinesis.Stream`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kinesis.Stream.html)  | Existing instance of Kinesis Stream, providing both this and `kinesisStreamProps` will cause an error. |
+| kinesisStreamProps? |  [`kinesis.StreamProps`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kinesis.StreamProps.html)  | Optional user-provided props to override the default props for the Kinesis stream. |
+| glueJobProps? |  [`cfnJob.CfnJobProps`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnJobProps.html)  | User provided props to override the default props for the AWS Glue Job. |
+| existingGlueJob? |  [`cfnJob.CfnJob`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnJob.html)  | Existing instance of AWS Glue Job, providing both this and `glueJobProps` will cause an error. |
+| fieldSchema? |  [`CfnTable.ColumnProperty[]`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnTable.ColumnProperty.html)  | User provided schema structure to create an AWS Glue Table. |
+| existingTable? |  [`CfnTable`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnTable.html)  | Existing instance of AWS Glue Table. If this is set, tableProps and fieldSchema are ignored. |
+| tableProps? |  [`CfnTableProps`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.TableProps.html)  | User provided AWS Glue Table props to override default props used to create a Glue Table. |
+| existingDatabase? |  [`CfnDatabase`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnDatabase.html)  | Existing instance of AWS Glue Database. If this is set, then databaseProps is ignored. |
+| databaseProps? |  [`CfnDatabaseProps`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnDatabaseProps.html)  | User provided Glue Database Props to override the default props used to create the Glue Database. |
+| outputDataStore? |  [`SinkDataStoreProps`](#sinkdatastoreprops)  | User provided properties for S3 bucket that stores Glue Job output. Current datastore types supported is only S3. |
 | createCloudWatchAlarms? |  `boolean`  | Whether to create recommended CloudWatch alarms for Kinesis Data Stream. Default value is set to `true`. |
 | etlCodeAsset? |  [s3assets.Asset](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3_assets.Asset.html)  | User provided instance of the Asset class that represents the ETL code on the local filesystem |
 
@@ -91,9 +91,9 @@ const customEtlJob = new KinesisstreamsToGluejob(this, "CustomETL", {
 
 |  **Name**  |  **Type**  |  **Description**  |
 | --- | --- | --- |
-| existingS3OutputBucket? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html)  | Existing instance of S3 bucket where the data should be written. Providing both this and `outputBucketProps` will cause an error. |
-| outputBucketProps |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.BucketProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.BucketProps.html)  | User provided bucket properties to create the S3 bucket to store the output from the AWS Glue Job. |
-| datastoreType |  [#sinkstoretype](#sinkstoretype)  | Sink data store type. |
+| existingS3OutputBucket? |  [`Bucket`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html)  | Existing instance of S3 bucket where the data should be written. Providing both this and `outputBucketProps` will cause an error. |
+| outputBucketProps |  [`BucketProps`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.BucketProps.html)  | User provided bucket properties to create the S3 bucket to store the output from the AWS Glue Job. |
+| datastoreType |  [`SinkStoreType`](#sinkstoretype)  | Sink data store type. |
 
 ### SinkStoreType
 <a name="_sinkstoretype"></a>
@@ -109,13 +109,13 @@ Enumeration of data store types that could include S3, DynamoDB, DocumentDB, RDS
 
 |  **Name**  |  **Type**  |  **Description**  |
 | --- | --- | --- |
-| kinesisStream |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kinesis.Stream.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kinesis.Stream.html)  | Returns an instance of the Kinesis stream created or used by the pattern. |
-| glueJob |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnJob.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnJob.html)  | Returns an instance of AWS Glue Job created by the construct. |
-| glueJobRole |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.Role.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.Role.html)  | Returns an instance of the IAM Role created by the construct for the Glue Job. |
-| database |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnDatabase.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnDatabase.html)  | Returns an instance of AWS Glue Database created by the construct. |
-| table |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnTable.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnTable.html)  | Returns an instance of the AWS Glue Table created by the construct |
-| outputBucket? |  [https://docs.aws.amazon.com/cdk/api/latest/docs/aws-s3-readme.html](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-s3-readme.html)  | Returns an instance of the output bucket created by the construct for the AWS Glue Job. |
-| cloudwatchAlarms? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudwatch.Alarm.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudwatch.Alarm.html)  | Returns an array of recommended CloudWatch Alarms created by the construct for Kinesis Data stream. |
+| kinesisStream |  [`kinesis.Stream`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kinesis.Stream.html)  | Returns an instance of the Kinesis stream created or used by the pattern. |
+| glueJob |  [`CfnJob`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnJob.html)  | Returns an instance of AWS Glue Job created by the construct. |
+| glueJobRole |  [`iam.Role`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.Role.html)  | Returns an instance of the IAM Role created by the construct for the Glue Job. |
+| database |  [`CfnDatabase`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnDatabase.html)  | Returns an instance of AWS Glue Database created by the construct. |
+| table |  [`CfnTable`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnTable.html)  | Returns an instance of the AWS Glue Table created by the construct |
+| outputBucket? |  [`s3.Bucket`](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-s3-readme.html)  | Returns an instance of the output bucket created by the construct for the AWS Glue Job. |
+| cloudwatchAlarms? |  [`cloudwatch.Alarm[]`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudwatch.Alarm.html)  | Returns an array of recommended CloudWatch Alarms created by the construct for Kinesis Data stream. |
 
 ## Default settings
 <a name="_default_settings"></a>
@@ -167,4 +167,4 @@ Go to the [Github repo](https://github.com/awslabs/aws-solutions-constructs/tree
 ## Reference Implementation
 <a name="_reference_implementation"></a>
 
-A sample use case which uses this pattern is available under [https://github.com/awslabs/aws-solutions-constructs/tree/master/source/use_cases/aws-custom-glue-etl](https://github.com/awslabs/aws-solutions-constructs/tree/master/source/use_cases/aws-custom-glue-etl).
+A sample use case which uses this pattern is available under [`use_cases/aws-custom-glue-etl`](https://github.com/awslabs/aws-solutions-constructs/tree/master/source/use_cases/aws-custom-glue-etl).

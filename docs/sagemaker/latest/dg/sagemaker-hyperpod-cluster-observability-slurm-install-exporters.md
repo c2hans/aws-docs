@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-c
 # Installing metrics exporter packages on your HyperPod cluster
 <a name="sagemaker-hyperpod-cluster-observability-slurm-install-exporters"></a>
 
-In the [base configuration lifecycle scripts](sagemaker-hyperpod-lifecycle-best-practices-slurm-slurm-base-config.md) that the SageMaker HyperPod team provides also includes installation of various metric exporter packages. To activate the installation step, the only thing you need to do is to set the parameter `enable_observability=True` in the [https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts/base-config/config.py](https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts/base-config/config.py) file. The lifecycle scripts are designed to bootstrap your cluster with the following open-source metric exporter packages.
+In the [base configuration lifecycle scripts](sagemaker-hyperpod-lifecycle-best-practices-slurm-slurm-base-config.md) that the SageMaker HyperPod team provides also includes installation of various metric exporter packages. To activate the installation step, the only thing you need to do is to set the parameter `enable_observability=True` in the [`config.py`](https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts/base-config/config.py) file. The lifecycle scripts are designed to bootstrap your cluster with the following open-source metric exporter packages.
 
 |  |  |  |
 | --- |--- |--- |
@@ -14,7 +14,7 @@ In the [base configuration lifecycle scripts](sagemaker-hyperpod-lifecycle-best-
 | [Elastic Fabric Adapter (EFA) node exporter](https://github.com/aws-samples/awsome-distributed-training/tree/main/4.validation_and_observability/3.efa-node-exporter) | Compute node | Exports metrics from cluster nodes and EFA. The package is a fork of the [Prometheus node exporter](https://github.com/prometheus/node_exporter). |
 | [NVIDIA Data Center GPU Management (DCGM) exporter](https://github.com/NVIDIA/dcgm-exporter) | Compute node | Exports NVIDIA DCGM metrics about health and performance of NVIDIA GPUs. |
 
-With `enable_observability=True` in the [https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts/base-config/config.py](https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts/base-config/config.py) file, the following installation step is activated in the [https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts/base-config/lifecycle_script.py](https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts/base-config/lifecycle_script.py) script.
+With `enable_observability=True` in the [`config.py`](https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts/base-config/config.py) file, the following installation step is activated in the [`lifecycle_script.py`](https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts/base-config/lifecycle_script.py) script.
 
 ```
 # Install metric exporting software and Prometheus for observability
@@ -35,6 +35,6 @@ On the compute nodes, the script installs the NVIDIA Data Center GPU Management 
 
 On the head node, the script installs the Slurm exporter for Prometheus and the [Prometheus open-source software](https://prometheus.io/docs/introduction/overview/). The Slurm exporter provides Prometheus with metrics related to Slurm jobs, partitions, and node states.
 
-Note that the lifecycle scripts are designed to install all the exporter packages as docker containers, so the Docker package also should be installed on both the head and compute nodes. The scripts for these components are conveniently provided in the [https://github.com/aws-samples/awsome-distributed-training/tree/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts/base-config/utils](https://github.com/aws-samples/awsome-distributed-training/tree/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts/base-config/utils) folder of the *Awsome Distributed Training GitHub repository*.
+Note that the lifecycle scripts are designed to install all the exporter packages as docker containers, so the Docker package also should be installed on both the head and compute nodes. The scripts for these components are conveniently provided in the [`utils`](https://github.com/aws-samples/awsome-distributed-training/tree/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts/base-config/utils) folder of the *Awsome Distributed Training GitHub repository*.
 
 After you have successfully set up your HyperPod cluster installed with the exporter packages, proceed to the next topic to finish setting up Amazon Managed Service for Prometheus and Amazon Managed Grafana.

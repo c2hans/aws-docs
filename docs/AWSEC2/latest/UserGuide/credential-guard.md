@@ -52,7 +52,7 @@ Follow the steps to [launch an instance](ec2-launch-instance-wizard.md), specify
 #### [ AWS CLI ]
 
 **To launch an instance**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command to launch an instance using a supported instance type and preconfigured Windows AMI.
+Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command to launch an instance using a supported instance type and preconfigured Windows AMI.
 
 ```
 aws ec2 run-instances \
@@ -67,7 +67,7 @@ aws ec2 run-instances \
 #### [ PowerShell ]
 
 **To launch an instance**
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) command to launch an instance using a supported instance type and preconfigured Windows AMI.
+Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) command to launch an instance using a supported instance type and preconfigured Windows AMI.
 
 ```
 New-EC2Instance `

@@ -369,7 +369,7 @@ Returns a generic outcome consisting of success or failure with an error message
 ## UpdatePlayerSessionCreationPolicy()
 <a name="integration-server-sdk-unreal-ref-updateplayersessioncreationpolicy"></a>
 
-Updates the current game session's ability to accept new player sessions. A game session can be set to either accept or deny all new player sessions. (See also the [https://docs.aws.amazon.com/gamelift/latest/apireference/API_UpdateGameSession.html](https://docs.aws.amazon.com/gamelift/latest/apireference/API_UpdateGameSession.html) action in the *Amazon GameLift Servers Service API Reference*).
+Updates the current game session's ability to accept new player sessions. A game session can be set to either accept or deny all new player sessions. (See also the [`UpdateGameSession()`](https://docs.aws.amazon.com/gamelift/latest/apireference/API_UpdateGameSession.html) action in the *Amazon GameLift Servers Service API Reference*).
 
 ### Syntax
 <a name="integration-server-sdk-unreal-ref-updateplayersessioncreationpolicy-syntax"></a>

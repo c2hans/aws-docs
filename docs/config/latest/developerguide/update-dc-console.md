@@ -72,7 +72,7 @@ Write-CFGDeliveryChannel -ConfigSnapshotDeliveryProperties_DeliveryFrequency Twe
 
 ------
 
-(Optional) You can use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-delivery-channels.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-delivery-channels.html) command to verify that the delivery channel settings are updated:
+(Optional) You can use the [`describe-delivery-channels`](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-delivery-channels.html) command to verify that the delivery channel settings are updated:
 
 ```
 $ aws configservice describe-delivery-channels

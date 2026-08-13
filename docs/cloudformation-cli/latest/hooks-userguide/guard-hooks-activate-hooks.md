@@ -100,7 +100,7 @@ Before you continue, confirm that you have created the Guard rule and the execut
 
 **To activate a Guard Hook for use in your account (AWS CLI)**
 
-1. To start activating a Hook, use the following [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/activate-type.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/activate-type.html) command, replacing the placeholders with your specific values. This command authorizes the Hook to use a specified execution role from your AWS account.
+1. To start activating a Hook, use the following [activate-type](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/activate-type.html) command, replacing the placeholders with your specific values. This command authorizes the Hook to use a specified execution role from your AWS account.
 
    ```
    aws cloudformation activate-type --type HOOK \
@@ -149,7 +149,7 @@ Before you continue, confirm that you have created the Guard rule and the execut
    + `logBucket`: (Optional) Specify the name of an S3 bucket for Guard JSON reports.
    + `TargetFilters`: Specify the types of actions that will invoke the Hook.
 
-1. Use the following [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html) command, along with the JSON file you created, to apply the configuration. Replace the placeholders with your specific values.
+1. Use the following [set-type-configuration](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html) command, along with the JSON file you created, to apply the configuration. Replace the placeholders with your specific values.
 
    ```
    aws cloudformation set-type-configuration \
@@ -161,4 +161,4 @@ Before you continue, confirm that you have created the Guard rule and the execut
 ## Related resources
 <a name="related-resources-guard-hooks"></a>
 
-We provide template examples that you can use to understand how to declare a Guard Hook in a CloudFormation stack template. For more information, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-guardhook.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-guardhook.html) in the *AWS CloudFormation User Guide*.
+We provide template examples that you can use to understand how to declare a Guard Hook in a CloudFormation stack template. For more information, see [AWS::CloudFormation::GuardHook](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-guardhook.html) in the *AWS CloudFormation User Guide*.

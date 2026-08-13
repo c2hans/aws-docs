@@ -18,9 +18,9 @@ With each successful append operation, you create a part of the object and each 
 
 Appending data to objects is only supported for objects in directory buckets that are stored in the S3 Express One Zone storage class. For more information on S3 Express One Zone Zone, see [Getting started with S3 Express One Zone](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-getting-started.html).
 
-To get started appending data to objects in your directory buckets, you can use the AWS SDKs, AWS CLI, and the `PutObject` API . When you make a `PutObject` request, you set the `x-amz-write-offset-bytes` header to the size of the object that you are appending to. To use the `PutObject` API operation, you must use the `CreateSession` API to establish temporary security credentials to access the objects in your directory buckets. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html) and [https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateSession.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateSession.html) in the *Amazon S3 API Reference*.
+To get started appending data to objects in your directory buckets, you can use the AWS SDKs, AWS CLI, and the `PutObject` API . When you make a `PutObject` request, you set the `x-amz-write-offset-bytes` header to the size of the object that you are appending to. To use the `PutObject` API operation, you must use the `CreateSession` API to establish temporary security credentials to access the objects in your directory buckets. For more information, see [`PutObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html) and [`CreateSession`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateSession.html) in the *Amazon S3 API Reference*.
 
-Each successful append operation is billed as a `PutObject` request. To learn more about pricing, see [https://aws.amazon.com/s3/pricing/](https://aws.amazon.com/s3/pricing/).
+Each successful append operation is billed as a `PutObject` request. To learn more about pricing, see [`Amazon S3 pricing`](https://aws.amazon.com/s3/pricing/).
 
 **Note**
 Starting with the 1.12 release, Mountpoint for Amazon S3 supports appending data to objects stored in S3 Express One Zone. To get started, you must opt-in by setting the `--incremental-upload ` flag. For more information on Mountpoint, see [Working with Mountpoint](https://docs.aws.amazon.com/AmazonS3/latest/userguide/mountpoint.html).
@@ -69,4 +69,4 @@ s3.put_object(Bucket='{{amzn-s3-demo-bucket}}--{{use2-az2}}--x-s3', Key='2024-11
 ### Using the REST API
 <a name="directory-bucket-append-api"></a>
 
- You can send REST requests to append data to an object. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html#API_PutObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html#API_PutObject).
+ You can send REST requests to append data to an object. For more information, see [`PutObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html#API_PutObject).

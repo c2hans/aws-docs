@@ -12,7 +12,7 @@ When generating CloudFormation templates from existing resources, write-only pro
 ## Mutually exclusive properties
 <a name="write-only-mutually-exclusive-properties"></a>
 
-Some resources have multiple sets of mutually exclusive properties, at least some of which are write-only. In these cases, the IaC generator can't determine which set of exclusive properties was applied to the resource during creation. For example, you can provide the code for a [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-function.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-function.html) using one of these sets of properties.
+Some resources have multiple sets of mutually exclusive properties, at least some of which are write-only. In these cases, the IaC generator can't determine which set of exclusive properties was applied to the resource during creation. For example, you can provide the code for a [AWS::Lambda::Function](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-function.html) using one of these sets of properties.
 + `Code/S3Bucket`, `Code/S3Key`, and optionally `Code/S3ObjectVersion`
 + `Code/ImageUri`
 + `Code/ZipFile`
@@ -22,7 +22,7 @@ All of these properties are write-only. The IaC generator selects one of the exc
 ## Mutually exclusive types
 <a name="write-only-mutually-exclusive-types"></a>
 
-In some cases, a write-only property can be of multiple data types. For example, the `Body` property of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-apigateway-restapi.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-apigateway-restapi.html) can be either an `object` or a `string`. When this is the case, the IaC generator includes the property in the generated template using the type of `string` and sets a warning type of `MUTUALLY_EXCLUSIVE_TYPES`.
+In some cases, a write-only property can be of multiple data types. For example, the `Body` property of [AWS::ApiGateway::RestApi](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-apigateway-restapi.html) can be either an `object` or a `string`. When this is the case, the IaC generator includes the property in the generated template using the type of `string` and sets a warning type of `MUTUALLY_EXCLUSIVE_TYPES`.
 
 ## Array properties
 <a name="write-only-array-properties"></a>

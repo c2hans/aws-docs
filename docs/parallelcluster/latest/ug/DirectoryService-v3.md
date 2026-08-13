@@ -63,7 +63,7 @@ The Amazon Resource Name (ARN) of the AWS Secrets Manager secret that contains t
 When you use the AWS Secrets Manager console to create a secret, be sure to select "Other type of secret", select plaintext, and only include the password text in the secret.
 For more information on how to use AWS Secrets Manager to create a secret refer to [Create an AWS Secrets Manager Secret](https://docs.aws.amazon.com//secretsmanager/latest/userguide/create_secret)
 The LDAP client uses the password to authenticate to the AD domain as a `DomainReadOnlyUser` when it requests identity information.
-If the user has the permission to [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DescribeSecret.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DescribeSecret.html), `PasswordSecretArn` is validated. `PasswordSecretArn` is valid if the specified secret exists. If the user IAM policy doesn't include `DescribeSecret`, `PasswordSecretArn` isn't validated and a warning message is displayed. For more information, see [Base AWS ParallelCluster `pcluster` user policy](iam-roles-in-parallelcluster-v3.md#iam-roles-in-parallelcluster-v3-base-user-policy).
+If the user has the permission to [`DescribeSecret`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DescribeSecret.html), `PasswordSecretArn` is validated. `PasswordSecretArn` is valid if the specified secret exists. If the user IAM policy doesn't include `DescribeSecret`, `PasswordSecretArn` isn't validated and a warning message is displayed. For more information, see [Base AWS ParallelCluster `pcluster` user policy](iam-roles-in-parallelcluster-v3.md#iam-roles-in-parallelcluster-v3-base-user-policy).
 When the value of the secret changes, the cluster *isn't* automatically updated. To update the cluster for the new secret value, you must stop the compute fleet with the [`pcluster update-compute-fleet`](pcluster.update-compute-fleet-v3.md) command and then run the following command from within the head node.
 
 ```
@@ -146,7 +146,7 @@ DirectoryService:
     ldap_search_base: OU=Users,OU=CORP,DC=corp,DC=example,DC=com
     cache_credentials: False
 ```
-This example specifies the configuration of an SSSD [https://www.mankier.com/5/sssd-simple](https://www.mankier.com/5/sssd-simple) `access_provider`. Users from the `EngineeringTeam` are provided access to the directory. [`DirectoryService`](#DirectoryService-v3) / [`LdapAccessFilter`](#yaml-DirectoryService-LdapAccessFilter) must not be set in this case.
+This example specifies the configuration of an SSSD [`simple`](https://www.mankier.com/5/sssd-simple) `access_provider`. Users from the `EngineeringTeam` are provided access to the directory. [`DirectoryService`](#DirectoryService-v3) / [`LdapAccessFilter`](#yaml-DirectoryService-LdapAccessFilter) must not be set in this case.
 
 ```
 DirectoryService:

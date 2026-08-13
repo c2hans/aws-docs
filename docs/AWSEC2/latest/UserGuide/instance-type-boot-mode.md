@@ -12,7 +12,7 @@ The Amazon EC2 console does not display the supported boot modes of an instance 
 ------
 #### [ AWS CLI ]
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html) command to determine the supported boot modes of an instance type. The `--query` parameter filters the output to return only the supported boot modes.
+Use the [describe-instance-types](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html) command to determine the supported boot modes of an instance type. The `--query` parameter filters the output to return only the supported boot modes.
 
 The following example shows that the specified instance type supports both UEFI and Legacy BIOS boot modes.
 
@@ -54,7 +54,7 @@ The following is example output.
 ------
 #### [ PowerShell ]
 
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceType.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceType.html) cmdlet to determine the supported boot modes of an instance type.
+Use the [Get-EC2InstanceType](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceType.html) cmdlet to determine the supported boot modes of an instance type.
 
 The following example shows that `m5.2xlarge` supports both UEFI and Legacy BIOS boot modes.
 

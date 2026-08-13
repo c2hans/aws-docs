@@ -69,7 +69,7 @@ For a table showing which processors support which level, see the [Conditional p
 Processors that support entry-level conditions also support `when_else`. An entry with `when_else` acts as a fallback — it executes only when none of the other `when` conditions in the same processor matched. The expression value provided to `when_else` identifies which set of `when` conditions to consider, but the entry itself runs based solely on whether those conditions all evaluated to false. There is no explicit negation check — the entry simply runs when no other `when` matched.
 
 **Example Fallback entry with when\_else**
-The first entry runs when the log level is ERROR. The second entry uses `when_else` and runs only when the first entry's `when` condition did not match (i.e., the log level is anything other than ERROR).
+The first entry runs when the log level is ERROR. The second entry uses `when_else` and runs only when the first entry's `when` condition did not match (that is, the log level is anything other than ERROR).
 
 ```
 processor:
@@ -87,8 +87,6 @@ processor:
 <a name="conditional-support"></a>
 
 The following table shows which processors support conditional processing and at what level.
-
-**Processor conditional support**
 
 | Processor | Conditional support | Level |
 | --- | --- | --- |
@@ -117,7 +115,7 @@ The following table shows which processors support conditional processing and at
 ## Operators
 <a name="expression-operators"></a>
 
-**Supported operators**
+The following table lists the supported operators.
 
 | Category | Operators | Example |
 | --- | --- | --- |

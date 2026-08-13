@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prov-thru-delet
 
 Your Provisioned Throughput will automatically renew at the end of each commitment term, maintaining your current input and output tokens configurations.
 
-If you don't want to keep your Provisioned Throughput, you can delete it or, for Provisioned Throughput by Tokens, cancel auto renew to prevent it renewing when the current term ends.
+If you don't want to keep your Provisioned Throughput, you can delete it. For Provisioned Throughput by Tokens, you can also cancel auto renew to prevent it from renewing when the current term ends.
 
 ## Deleting a Provisioned Throughput
 <a name="prov-thru-delete-del"></a>
@@ -53,7 +53,7 @@ If you cancel auto renew, your Provisioned Throughput will remain in service unt
 After you cancel auto renew for a Provisioned Throughput, you can't make any further modifications to your Provisioned Throughput for the remainder of the commitment term.
 
 **Note**
-Auto renew cannot be re-enabled once cancelled. If you need Provisioned Throughput after your current term expires, you will need to purchase a new Provisioned Throughput.
+Auto renew cannot be re-enabled after it is cancelled. If you need Provisioned Throughput after your current term expires, you will need to purchase a new Provisioned Throughput.
 
 To learn how to cancel auto renew for a Provisioned Throughput by Tokens, choose the tab for your preferred method, and then follow the steps:
 

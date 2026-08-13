@@ -18,7 +18,7 @@ HealthImaging cross-account/cross-region import use cases include:
 
 1.  The HealthImaging data store owner must add the Amazon S3 bucket to their IAM `ImportJobDataAccessRole`. See [Create an IAM role for import](getting-started-setting-up.md#setting-up-create-iam-role-import).
 
-1.  The HealthImaging data store owner must provide the [https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_StartDICOMImportJob.html#healthimaging-StartDICOMImportJob-request-inputOwnerAccountId](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_StartDICOMImportJob.html#healthimaging-StartDICOMImportJob-request-inputOwnerAccountId) for the Amazon S3 input bucket when starting the import job.
+1.  The HealthImaging data store owner must provide the [`inputOwnerAccountId`](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_StartDICOMImportJob.html#healthimaging-StartDICOMImportJob-request-inputOwnerAccountId) for the Amazon S3 input bucket when starting the import job.
 **Note**
 By providing the `inputOwnerAccountId`, the data store owner validates the input Amazon S3 bucket belongs to the specified account to maintain compliance with industry standards and mitigate potential security risks.
 

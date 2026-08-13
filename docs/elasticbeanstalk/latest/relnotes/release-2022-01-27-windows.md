@@ -18,14 +18,25 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Details** |
-| --- | --- |
-| **Windows security updates** | Applied January 2022 security updates for Windows on Windows Server 2019, 2016 and 2012 R2 platform verions.<br />See the Microsoft [Security Update Guide](https://portal.msrc.microsoft.com/en-us/security-guidance). |
-| **AWS component updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-01-27-windows.html)  |
-| **AWS SDK for .NET** | Updated the SDK to version 3.15.1511 on Windows Server 2019, 2016 and 2012 R2 platform verions. |
-| **AMI** | Updated the base AMI to version 2022.01.12 on Windows Server 2019, 2016 and 2012 R2 platform verions. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows security updates</b></td><td>Applied January 2022 security updates for Windows on Windows Server 2019, 2016 and 2012 R2 platform verions.<br />See the Microsoft <a href="https://portal.msrc.microsoft.com/en-us/security-guidance">Security Update Guide</a>.</td></tr>
+  <tr><td><b>AWS component updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AWS SDK for .NET</b></td><td>Updated the SDK to version 3.15.1511 on Windows Server 2019, 2016 and 2012 R2 platform verions.</td></tr>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version 2022.01.12 on Windows Server 2019, 2016 and 2012 R2 platform verions.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2022-01-27-windows.platforms"></a>

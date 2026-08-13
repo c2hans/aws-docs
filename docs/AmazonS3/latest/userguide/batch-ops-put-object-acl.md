@@ -26,6 +26,6 @@ If the objects in the manifest are in a bucket that uses the **Bucket owner enfo
 <a name="batch-ops-put-object-acl-restrictions"></a>
 
 When you're using Batch Operations to replace ACLs, the following restrictions and limitations apply:
-+ The AWS Identity and Access Management (IAM) role that you specify to run the **Replace access control list (ACL)** job must have permissions to perform the underlying Amazon S3 `PutObjectAcl` operation. For more information about the permissions required, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html) in the *Amazon Simple Storage Service API Reference*.
++ The AWS Identity and Access Management (IAM) role that you specify to run the **Replace access control list (ACL)** job must have permissions to perform the underlying Amazon S3 `PutObjectAcl` operation. For more information about the permissions required, see [PutObjectAcl](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html) in the *Amazon Simple Storage Service API Reference*.
 + S3 Batch Operations uses the Amazon S3 `PutObjectAcl` operation to apply the specified ACL to every object in the manifest. Therefore, all restrictions and limitations that apply to the underlying `PutObjectAcl` operation also apply to S3 Batch Operations **Replace access control list (ACL)** jobs.
 + A single replace access control list job can support a manifest with up to 20 billion objects.

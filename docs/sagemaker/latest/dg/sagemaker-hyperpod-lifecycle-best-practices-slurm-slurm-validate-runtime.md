@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-l
 # Validating runtime before running production workloads on a HyperPod Slurm cluster
 <a name="sagemaker-hyperpod-lifecycle-best-practices-slurm-slurm-validate-runtime"></a>
 
-To check the runtime before running any production workloads on a Slurm cluster on HyperPod, use the runtime validation script [https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/5.sagemaker-hyperpod/hyperpod-precheck.py](https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/5.sagemaker-hyperpod/hyperpod-precheck.py). This script checks if the Slurm cluster has all packages installed for running Docker, if the cluster has a properly mounted FSx for Lustre file system and a user directory sharing the file system, and if the Slurm deamon is running on all compute nodes.
+To check the runtime before running any production workloads on a Slurm cluster on HyperPod, use the runtime validation script [`hyperpod-precheck.py`](https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/5.sagemaker-hyperpod/hyperpod-precheck.py). This script checks if the Slurm cluster has all packages installed for running Docker, if the cluster has a properly mounted FSx for Lustre file system and a user directory sharing the file system, and if the Slurm deamon is running on all compute nodes.
 
 To run the script on multiple nodes at once, use `srun` as shown in the following example command of running the script on a Slurm cluster of 8 nodes.
 

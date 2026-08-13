@@ -16,7 +16,7 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 <a name="sns-examples-publishing-messages-scenario"></a>
 
 In this example, you use a series of Node.js modules to publish messages from Amazon SNS to topic endpoints, emails, or phone numbers. The Node.js modules use the SDK for JavaScript to send messages using this method of the `AWS.SNS` client class:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#publish-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#publish-property)
++ [`publish`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#publish-property)
 
 ## Prerequisite Tasks
 <a name="sns-examples-publishing-messages-prerequisites"></a>

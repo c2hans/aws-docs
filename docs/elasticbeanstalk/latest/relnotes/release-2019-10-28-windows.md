@@ -12,21 +12,44 @@ This release provides new Windows Server platform versions for AWS Elastic Beans
 ## Changes
 <a name="release-2019-10-28-windows.changes"></a>
 
-| **Category** | **Description** |
-| --- | --- |
-| **OS** | **Details** |
-| --- | --- |
-| **Framework** | **Details** |
-| --- | --- |
-| **Instance types** | **Regions** |
-| --- | --- |
-| **Windows security updates** | Applied October 2019 security updates for Windows.<br />See Microsoft's [Security TechCenter](https://portal.msrc.microsoft.com/en-us/) and [Security Advisories and Bulletins](https://technet.microsoft.com/en-us/library/security/). |
-| **Operating system updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-10-28-windows.html)  |
-| **Framework updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-10-28-windows.html)  |
-| **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows: [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-10-28-windows.html)<br />For more information about G4 instances, see [Amazon EC2 G4 Instances](https://aws.amazon.com/ec2/instance-types/g4/). |
-| **Windows 2008 Server** | Removed Windows 2008 Server platform versions. They had been previously available as retiring platforms, with an announced end date of October 16, 2019. For more information from Microsoft, see [Prepare for Windows Server 2008 end of support](https://www.microsoft.com/en-us/cloud-platform/windows-server-2008). |
-| **.NET Core 3.0** *New* | Added support for .NET Core 3.0. For details from Microsoft, see [What's new in .NET Core 3.0](https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-core-3-0).<br />.NET Core 3.0 supports Windows Server 2012 R2 or later. We don't support it on the Windows Server 2012 platform versions. |
-| **g4dn.xlarge, g4dn.2xlarge, g4dn.12xlarge** |  + US East (Ohio) – us-east-2<br />+ US West (N. California) – us-west-1<br />+ Asia Pacific (Sydney) – ap-southeast-2<br />+ Europe (Ireland) – eu-west-1<br />+ Europe (London) – eu-west-2  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows security updates</b></td><td>Applied October 2019 security updates for Windows.<br />See Microsoft's <a href="https://portal.msrc.microsoft.com/en-us/">Security TechCenter</a> and <a href="https://technet.microsoft.com/en-us/library/security/">Security Advisories and Bulletins</a>.</td></tr>
+  <tr><td><b>Operating system updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>OS</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows 2008 Server</b></td><td>Removed Windows 2008 Server platform versions. They had been previously available as retiring platforms, with an announced end date of October 16, 2019. For more information from Microsoft, see <a href="https://www.microsoft.com/en-us/cloud-platform/windows-server-2008">Prepare for Windows Server 2008 end of support</a>.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+  <tr><td><b>Framework updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Framework</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>.NET Core 3.0</b> <i>New</i></td><td>Added support for .NET Core 3.0. For details from Microsoft, see <a href="https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-core-3-0">What's new in .NET Core 3.0</a>.<br />.NET Core 3.0 supports Windows Server 2012 R2 or later. We don't support it on the Windows Server 2012 platform versions.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+  <tr><td><b>Instance types</b></td><td>Added support for more Amazon EC2 instance types in some AWS Regions, as follows:
+<table>
+<thead>
+  <tr><th><b>Instance types</b></th><th><b>Regions</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>g4dn.xlarge, g4dn.2xlarge, g4dn.12xlarge</b></td><td> <ul><li>US East (Ohio) – us-east-2</li><li>US West (N. California) – us-west-1</li><li>Asia Pacific (Sydney) – ap-southeast-2</li><li>Europe (Ireland) – eu-west-1</li><li>Europe (London) – eu-west-2</li></ul> </td></tr>
+</tbody>
+</table>
+<br />For more information about G4 instances, see <a href="https://aws.amazon.com/ec2/instance-types/g4/">Amazon EC2 G4 Instances</a>.</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2019-10-28-windows.platforms"></a>

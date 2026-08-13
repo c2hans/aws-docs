@@ -7,26 +7,39 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-bases
 
 Amazon Bedrock supports a monitoring system to help you understand the execution of any data ingestion jobs for your knowledge bases. The following sections cover how to enable and configure the logging system for Amazon Bedrock knowledge bases using both the AWS Management Console and CloudWatch API. You can gain visibility into the data ingestion of your knowledge base resources with this logging system.
 
-## Knowledge bases logging using the console
+## Prerequisites
+<a name="knowledge-bases-logging-permissions-other-requirements"></a>
+
+Before you enable logging for an Amazon Bedrock knowledge base, confirm the following:
++ The user account signed into the console has the `bedrock:AllowVendedLogDeliveryForResource` permission. This permission allows logs to be delivered for the knowledge base resource. For an example IAM policy with all the required permissions, see [Vended logs permissions for different delivery destinations](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html#AWS-vended-logs-permissions-V2). Follow the IAM role/permission policy example for your logging destination, including allowing updates to your specific logging destination resource (whether CloudWatch Logs, Amazon S3, or Amazon Data Firehose).
++ Check whether there are quota limits for CloudWatch Logs delivery-related API calls. For more information, see the [CloudWatch Logs service quotas documentation](https://docs.aws.amazon.com/general/latest/gr/cwl_region.html). If you exceed a limit, it results in a `ServiceQuotaExceededException` error.
+
+### Supported log types
+<a name="knowledge-bases-logging-log-types"></a>
+
+Amazon Bedrock knowledge bases support the following log types:
++ `APPLICATION_LOGS`: Logs that track the current status of a specific file during a data ingestion job.
+
+## Enabling logging for an Amazon Bedrock knowledge base (console)
 <a name="knowledge-bases-logging-console"></a>
 
-To enable logging for an Amazon Bedrock knowledge base using the AWS Management Console:
+**To enable logging using the console**
 
-1. **Create a knowledge base**: Use the AWS Management Console for Amazon Bedrock to [create a new knowledge base](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-create.html).
+1. Create a knowledge base. For instructions, see [Create a knowledge base](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-create.html).
 
-1. **Add a log delivery option**: After creating the knowledge base, edit or update your knowledge base to add a log delivery option.
+1. Edit your knowledge base to add a log delivery option.
 **Note**
 Log deliveries are not supported when creating a knowledge base with a structured data store, or for a Kendra GenAI Index.
 
-   **Configure log delivery details**: Enter the details for the log delivery, including:
-   + Logging destination (either CloudWatch Logs, Amazon S3, Amazon Data Firehose)
-   + (If using CloudWatch Logs as the logging destination) Log group name
-   + (If using Amazon S3 as the logging destination) Bucket name
-   + (If using Amazon Data Firehose as the logging destination) Firehose stream
+1. Configure the log delivery details, including:
+   + **Logging destination** (CloudWatch Logs, Amazon S3, or Amazon Data Firehose)
+   + (If using CloudWatch Logs) **Log group name**
+   + (If using Amazon S3) **Bucket name**
+   + (If using Amazon Data Firehose) **Firehose stream**
 
-1. **Include access permissions**: The user who is signed into the console must have the necessary permissions to write the collected logs to the chosen destination.
+1. Attach an IAM policy to your account to grant permissions to write logs to the destination.
 
-   The following example IAM policy can be attached to the user signed into the console to grant the necessary permissions when using CloudWatch Logs
+   The following example IAM policy grants the necessary permissions when using CloudWatch Logs:
 
 ------
 #### [ JSON ]
@@ -52,16 +65,18 @@ Log deliveries are not supported when creating a knowledge base with a structure
 
 ------
 
-1. **Confirm delivery status**: Verify that the log delivery status is "Delivery active" in the console.
+1. Verify that the log delivery status shows **Delivery active** in the console.
 
-## Knowledge bases logging using the CloudWatch API
+## Enabling logging for an Amazon Bedrock knowledge base (CloudWatch API)
 <a name="knowledge-bases-logging-cloudwatch-api"></a>
 
-To enable logging for an Amazon Bedrock knowledge base using the CloudWatch API:
+**To enable logging using the CloudWatch API**
 
-1. **Get the ARN of your knowledge base**: After [creating a knowledge base](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-create.html) using either the Amazon Bedrock API or the Amazon Bedrock console, get the Amazon Resource Name of the knowledge base. You can get the Amazon Resource Name by calling [GetKnowledgeBase](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetKnowledgeBase.html) API. A knowledge base Amazon Resource Name follows this format: {{arn:aws:bedrock:your-region:your-account-id:knowledge-base/knowledge-base-id}}
+1. Create a knowledge base using the Amazon Bedrock API or the Amazon Bedrock console. For instructions, see [Create a knowledge base](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-create.html).
 
-1. **Call `PutDeliverySource`**: Use the [PutDeliverySource](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliverySource.html) API provided by Amazon CloudWatch to create a delivery source for the knowledge base. Pass the knowledge base Amazon Resource Name as the `resourceArn`. `logType` specifies `APPLICATION_LOGS` as the type of logs that are collected. `APPLICATION_LOGS` track the current status of files during an ingestion job.
+1. Get the ARN of your knowledge base. Call the [GetKnowledgeBase](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetKnowledgeBase.html) API to retrieve the ARN. A knowledge base ARN follows this format: {{arn:aws:bedrock:your-region:your-account-id:knowledge-base/knowledge-base-id}}
+
+1. Call the [PutDeliverySource](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliverySource.html) API to create a delivery source for the knowledge base. Pass the knowledge base ARN as the `resourceArn`. Set `logType` to `APPLICATION_LOGS`, which tracks the status of files during an ingestion job.
 
    ```
    {
@@ -71,7 +86,15 @@ To enable logging for an Amazon Bedrock knowledge base using the CloudWatch API:
    }
    ```
 
-1. **Call `PutDeliveryDestination`**: Use the [PutDeliveryDestination](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestination.html) API provided by Amazon CloudWatch to configure where the logs will be stored. You can choose either CloudWatch Logs, Amazon S3, or Amazon Data Firehose as the destination for storing logs. You must specify the Amazon Resource Name of one of the destination options for where your logs will be stored. You can choose the `outputFormat` of the logs to be one of the following: `json`, `plain`, `w3c`, `raw`, `parquet`. The following is an example of configuring logs to be stored in an Amazon S3 bucket and in JSON format.
+1. Call the [PutDeliveryDestination](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestination.html) API to configure where the logs are stored.
+
+   1. Choose CloudWatch Logs, Amazon S3, or Amazon Data Firehose as the destination.
+
+   1. Specify the ARN of your chosen destination.
+
+   1. Set `outputFormat` to one of the following: `json`, `plain`, `w3c`, `raw`, `parquet`.
+
+   The following example stores logs in an Amazon S3 bucket in JSON format:
 
    ```
    {
@@ -86,9 +109,9 @@ To enable logging for an Amazon Bedrock knowledge base using the CloudWatch API:
    }
    ```
 
-   Note that if you are delivering logs cross-account, you must use the `PutDeliveryDestinationPolicy` API to assign an AWS Identity and Access Management (IAM) policy to the destination account. The IAM policy allows delivery from one account to another account.
+   To deliver logs cross-account, use the `PutDeliveryDestinationPolicy` API to assign an IAM policy to the destination account. The policy allows delivery from one account to another.
 
-1. **Call `CreateDelivery`**: Use the [CreateDelivery](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateDelivery.html) API call to link the delivery source to the destination that you created in the previous steps. This API operation associates the delivery source with the end destination.
+1. Call the [CreateDelivery](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateDelivery.html) API to link the delivery source to the destination. This associates the delivery source with the end destination.
 
    ```
    {
@@ -106,23 +129,6 @@ If you want to use CloudFormation, you can use the following:
 [DeliveryDestination](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-deliverydestination.html)
 [DeliverySource](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-deliverysource.html)
 The `ResourceArn` is the `KnowledgeBaseARN`, and `LogType` must be `APPLICATION_LOGS` as the supported log type.
-
-## Supported log types
-<a name="knowledge-bases-logging-log-types"></a>
-
-Amazon Bedrock knowledge bases support the following log types:
-+ `APPLICATION_LOGS`: Logs that track the current status of a specific file during a data ingestion job.
-
-## User permissions and limits
-<a name="knowledge-bases-logging-permissions-other-requirements"></a>
-
-To enable logging for an Amazon Bedrock knowledge base, the following permissions are required for the user account signed into the console:
-
-1. `bedrock:AllowVendedLogDeliveryForResource` – Required to allow logs to be delivered for the knowledge base resource.
-
-   You can view an example IAM role/permissions policy with all the required permissions for your specific logging destination. See [Vended logs permissions for different delivery destinations](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html#AWS-vended-logs-permissions-V2), and follow the IAM role/permission policy example for your logging destination, including allowing updates to your specific logging destination resource (whether CloudWatch Logs, Amazon S3, or Amazon Data Firehose).
-
-You can also check if there are any quota limits for making CloudWatch logs delivery-related API calls in the [CloudWatch Logs service quotas documentation](https://docs.aws.amazon.com/general/latest/gr/cwl_region.html). Quota limits set a maximum number of times you can call an API or create a resource. If you exceed a limit, it will result in a `ServiceQuotaExceededException` error.
 
 ## Examples of knowledge base logs
 <a name="knowledge-bases-logging-example-logs"></a>

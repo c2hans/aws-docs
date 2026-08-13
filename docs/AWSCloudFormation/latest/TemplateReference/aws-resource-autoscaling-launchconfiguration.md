@@ -223,7 +223,7 @@ The Base64-encoded user data to make available to the launched EC2 instances. Fo
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name. For example: `mystack-mylaunchconfig-1DDYF1E3B3I`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Remarks
 <a name="aws-resource-autoscaling-launchconfiguration--remarks"></a>

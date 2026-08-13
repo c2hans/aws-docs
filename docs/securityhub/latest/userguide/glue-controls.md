@@ -47,7 +47,7 @@ To add tags to a AWS Glue job, see [AWS tags in AWS Glue](https://docs.aws.amazo
 
 **Resource type:** `AWS::Glue::MLTransform`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/glue-ml-transform-encrypted-at-rest.html](https://docs.aws.amazon.com/config/latest/developerguide/glue-ml-transform-encrypted-at-rest.html)
+**AWS Config rule:** [glue-ml-transform-encrypted-at-rest](https://docs.aws.amazon.com/config/latest/developerguide/glue-ml-transform-encrypted-at-rest.html)
 
 **Schedule type:** Change triggered
 
@@ -73,7 +73,7 @@ To configure encryption for AWS Glue machine learning transforms, see [Working w
 
 **Resource type:** `AWS::Glue::Job`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/glue-spark-job-supported-version.html](https://docs.aws.amazon.com/config/latest/developerguide/glue-spark-job-supported-version.html)
+**AWS Config rule:** [glue-spark-job-supported-version](https://docs.aws.amazon.com/config/latest/developerguide/glue-spark-job-supported-version.html)
 
 **Schedule type:** Change triggered
 

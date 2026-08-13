@@ -43,8 +43,8 @@ SageMaker AI can run an entrypoint script bundled inside your Docker container.
   ```
 
   The `exec` form of the `ENTRYPOINT` instruction starts the executable directly, not as a child of `/bin/sh`. This enables it to receive signals like `SIGTERM` and `SIGKILL` from SageMaker APIs. The following conditions apply when using the SageMaker APIs.
-  + The [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) API has a stopping condition that directs SageMaker AI to stop model training after a specific time.
-  + The following shows the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopTrainingJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopTrainingJob.html) API. This API issues the equivalent of the `docker stop`, with a 2-minute timeout command to gracefully stop the specified container.
+  + The [`CreateTrainingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) API has a stopping condition that directs SageMaker AI to stop model training after a specific time.
+  + The following shows the [`StopTrainingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopTrainingJob.html) API. This API issues the equivalent of the `docker stop`, with a 2-minute timeout command to gracefully stop the specified container.
 
     ```
     docker stop -t 120

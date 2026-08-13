@@ -13,7 +13,7 @@ You can use the **`AWSSupport-ExecuteEC2Rescue`** runbook to troubleshoot and po
 
 **Windows**: See *Rescue Action* in [Using EC2Rescue for Windows Server with the Command Line](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2rw-cli.html#ec2rw-rescue).
 
-**Linux** and **macOS**: Some EC2Rescue for Linux modules detect and attempt to remediate issues. For more information, see the [https://github.com/awslabs/aws-ec2rescue-linux/tree/master/docs](https://github.com/awslabs/aws-ec2rescue-linux/tree/master/docs) documentation for each module on GitHub.
+**Linux** and **macOS**: Some EC2Rescue for Linux modules detect and attempt to remediate issues. For more information, see the [`aws-ec2rescue-linux`](https://github.com/awslabs/aws-ec2rescue-linux/tree/master/docs) documentation for each module on GitHub.
 
 ## How it works
 <a name="automation-ec2rescue-how"></a>
@@ -31,7 +31,7 @@ Troubleshooting an instance with Automation and the **`AWSSupport-ExecuteEC2Resc
 <a name="automation-ec2rescue-begin"></a>
 
 Before you run the following Automation, do the following:
-+ Copy the instance ID of the unreachable instance. You will specify this ID in the procedure.
++ Copy the instance ID of the unreachable instance. Specify this ID in the procedure.
 + Optionally, collect the ID of a subnet in the same availability zone as your unreachable instance. The EC2Rescue instance will be created in this subnet. If you don’t specify a subnet, then Automation creates a new temporary VPC in your AWS account. Verify that your AWS account has at least one VPC available. By default, you can create five VPCs in a Region. If you already created five VPCs in the Region, the automation fails without making changes to your instance. For more information about Amazon VPC quotas, see [VPC and Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html#vpc-limits-vpcs-subnets) in the *Amazon VPC User Guide*.
 + Optionally, you can create and specify an AWS Identity and Access Management (IAM) role for Automation. If you don't specify this role, then Automation runs in the context of the user who ran the automation.
 
@@ -145,7 +145,7 @@ CloudFormation automates the process of creating IAM roles and policies by using
 
 **To create the required IAM roles and policies for EC2Rescue**
 
-1. Download [https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWSSupport-EC2RescueRole.zip](https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWSSupport-EC2RescueRole.zip) and extract the `AWSSupport-EC2RescueRole.json` file to a directory on your local machine.
+1. Download [`AWSSupport-EC2RescueRole.zip`](https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWSSupport-EC2RescueRole.zip) and extract the `AWSSupport-EC2RescueRole.json` file to a directory on your local machine.
 
 1. If your AWS account is in a special partition, edit the template to change the ARN values to those for your partition.
 

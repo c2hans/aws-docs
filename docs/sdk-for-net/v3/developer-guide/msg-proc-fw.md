@@ -23,7 +23,7 @@ For details about these activities and features see the **Features** section of 
 Before you begin, be sure you have [set up your environment and project](net-dg-config.md). Also review the information in [SDK features](net-dg-sdk-features.md).
 
 **Additional resources**
-+ The [https://www.nuget.org/packages/AWS.Messaging/](https://www.nuget.org/packages/AWS.Messaging/) package on [NuGet.org](https://www.nuget.org/).
++ The [`AWS.Messaging`](https://www.nuget.org/packages/AWS.Messaging/) package on [NuGet.org](https://www.nuget.org/).
 + The [API reference](https://aws.github.io/aws-dotnet-messaging/).
 + The `README` file in the GitHub repo at [https://github.com/aws/aws-dotnet-messaging/](https://github.com/aws/aws-dotnet-messaging/)
 + [.NET dependency injection](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection) from Microsoft.

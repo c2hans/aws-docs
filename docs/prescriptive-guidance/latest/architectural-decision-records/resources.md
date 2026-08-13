@@ -14,4 +14,4 @@ If you are on a greenfield project, apply the ADR process and start capturing al
 ## Resources
 <a name="resources-b"></a>
 + *Architecture Decision Records*. [https://adr.github.io/](https://adr.github.io/).
-+ Richards, Mark and Neal Ford. 2020. [https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/](https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/). Sebastopol: O'Reilly Media.
++ Richards, Mark and Neal Ford. 2020. [*Fundamentals of Software Architecture*](https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/). Sebastopol: O'Reilly Media.

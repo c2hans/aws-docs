@@ -44,8 +44,8 @@ The following sections describe the steps to set up and deploy the original vers
 
 This guide assumes that you have completed the following prerequisites:
 + Install the following tools on the client machine used to access your Kubernetes cluster:
-  + [https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html) Version 1.13 or later. Use a `kubectl` version that is within one minor version of your Amazon EKS cluster control plane. For example, a 1.13 `kubectl` client works with Kubernetes 1.13 and 1.14 clusters. OpenID Connect (OIDC) is not supported in versions earlier than 1.13.
-  + [https://github.com/weaveworks/eksctl](https://github.com/weaveworks/eksctl) Version 0.7.0 or later
+  + [`kubectl`](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html) Version 1.13 or later. Use a `kubectl` version that is within one minor version of your Amazon EKS cluster control plane. For example, a 1.13 `kubectl` client works with Kubernetes 1.13 and 1.14 clusters. OpenID Connect (OIDC) is not supported in versions earlier than 1.13.
+  + [`eksctl`](https://github.com/weaveworks/eksctl) Version 0.7.0 or later
   + [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv1.html) Version 1.16.232 or later
   + (optional) [Helm](https://helm.sh/docs/intro/install/) Version 3.0 or later
   + [aws-iam-authenticator](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html)
@@ -450,7 +450,7 @@ Take note of `ROLE ARN`. You pass this value to your operator.
 ##### Attach the AmazonSageMakerFullAccess policy to your role
 <a name="attach-the-amazonsagemakerfullaccess-policy-to-your-role"></a>
 
-To give the role access to SageMaker AI, attach the [https://console.aws.amazon.com/iam/home?#/policies/arn:aws:iam::aws:policy/AmazonSageMakerFullAccess](https://console.aws.amazon.com/iam/home?#/policies/arn:aws:iam::aws:policy/AmazonSageMakerFullAccess) policy. If you want to limit permissions to the operator, you can create your own custom policy and attach it.
+To give the role access to SageMaker AI, attach the [`AmazonSageMakerFullAccess`](https://console.aws.amazon.com/iam/home?#/policies/arn:aws:iam::aws:policy/AmazonSageMakerFullAccess) policy. If you want to limit permissions to the operator, you can create your own custom policy and attach it.
 
  To attach `AmazonSageMakerFullAccess`, run the following command:
 

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/integrate-idp.html
 ---
 
-# Integrate your identity provider (IdP) with an Connect Customer Global Resiliency SAML sign in endpoint
+# Integrate your identity provider (IdP) with a Connect Customer Global Resiliency SAML sign in endpoint
 <a name="integrate-idp"></a>
 
 To enable your agents to sign in once and be logged into both AWS Regions to process contacts from the current active Region, you need to configure IAM settings to use the global sign in SAML endpoint.
@@ -24,7 +24,7 @@ You must enable SAML for your Connect Customer instance to use Connect Customer 
 + You must associate agents to a traffic distribution group before agents attempt to sign in. Otherwise agent sign-in will fail with a `ResourceNotFoundException`. For information about how to setup your traffic distribution groups and associate agents to them, see [Associate agents to Connect Customer instances across multiple AWS Regions](associate-agents-across-regions.md).
 + When your agents federate into Connect Customer with the new SAML sign-in URL, Connect Customer Global Resiliency always attempts to log the agent into both your source and replica Regions / instances, no matter how `SignInConfig` is configured in your traffic distribution group. You can verify this by checking CloudTrail logs.
 + The `SignInConfig` distribution in your default traffic distribution group only determines which AWS Region is used to help sign-in. Regardless of how your `SignInConfig` distribution is configured, Connect Customer always attempts to sign in agents to both Regions of your Connect Customer instance.
-+ After replicating an Connect Customer instance, only one SAML sign-in endpoint is generated for your instances. This endpoint always contains the source AWS Region in the URL.
++ After replicating a Connect Customer instance, only one SAML sign-in endpoint is generated for your instances. This endpoint always contains the source AWS Region in the URL.
 + You don't need to configure a relay state when using the personalized SAML sign-in URL with Connect Customer Global Resiliency.
 
 ## How to integrate your identity provider

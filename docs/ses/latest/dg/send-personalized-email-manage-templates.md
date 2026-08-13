@@ -15,7 +15,7 @@ The procedures in this section assume that you've already installed and configur
 ## Viewing a list of email templates
 <a name="send-personalized-email-manage-templates-list"></a>
 
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListEmailTemplate.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListEmailTemplate.html) SES v2 API operation to view a list of all of your existing email templates.
+You can use the [`ListEmailTemplate`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListEmailTemplate.html) SES v2 API operation to view a list of all of your existing email templates.
 
 **To view a list of email templates**
 + At the command line, enter the following command:
@@ -46,7 +46,7 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_List
 ## Viewing the contents of a specific email template
 <a name="send-personalized-email-manage-templates-get"></a>
 
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetEmailTemplate.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetEmailTemplate.html) SES v2 API operation to view the contents of a specific email template.
+You can use the [`GetEmailTemplate`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetEmailTemplate.html) SES v2 API operation to view the contents of a specific email template.
 
 **To view the contents of an email template**
 + At the command line, enter the following command:
@@ -75,7 +75,7 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetE
 ## Deleting an email template
 <a name="send-personalized-email-manage-templates-delete"></a>
 
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteEmailTemplate.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteEmailTemplate.html) SES v2 API operation to delete a specific email template.
+You can use the [`DeleteEmailTemplate`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteEmailTemplate.html) SES v2 API operation to delete a specific email template.
 
 **To delete an email template**
 + At the command line, enter the following command:
@@ -91,7 +91,7 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Dele
 ## Updating an email template
 <a name="send-personalized-email-manage-templates-update"></a>
 
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_UpdateEmailTemplate.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_UpdateEmailTemplate.html) SES v2 API operation to update an existing email template. For example, this operation is helpful if you want to change the subject line of the email template, or if you need to modify the body of the message itself.
+You can use the [`UpdateEmailTemplate`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_UpdateEmailTemplate.html) SES v2 API operation to update an existing email template. For example, this operation is helpful if you want to change the subject line of the email template, or if you need to modify the body of the message itself.
 
 **To update an email template**
 
@@ -130,6 +130,6 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Upda
 
    In the preceding command, replace {{path/to/update\_template.json}} with the path to the `update_template.json` file that you created in the previous step.
 
-   If the template is updated successfully, this command doesn't provide any output. You can verify that the template was updated by using the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetEmailTemplate.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetEmailTemplate.html) operation.
+   If the template is updated successfully, this command doesn't provide any output. You can verify that the template was updated by using the [`GetEmailTemplate`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetEmailTemplate.html) operation.
 
    If the template that you specified doesn't exist, this command returns a `TemplateDoesNotExist` error. If the template doesn't contain either the `TextPart` or `HtmlPart` property (or both), this command returns an `InvalidParameterValue` error.

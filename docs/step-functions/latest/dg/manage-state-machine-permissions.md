@@ -60,6 +60,8 @@ To review the permissions that Workflow Studio automatically generates for your 
 If you delete the IAM role that Step Functions creates, Step Functions can't recreate it later. Similarly, if you modify the role (for example, by removing Step Functions from the principals in the IAM policy), Step Functions can't restore its original settings later.
 
       If Workflow Studio can't generate all the required IAM policies, it displays a banner with the message **Permissions for certain actions cannot be auto-generated. An IAM role will be created with partial permissions only.** For information about how to add the missing permissions, see [Resolving role generation problems](#resolve-role-gen-problem).
+**Role manager enabled**
+If role manager is enabled in your account, Step Functions attaches an execution role for you, and the **Execution role** options described here (**Create new role**, **Review auto-generated permissions**) are replaced by a **Customize** option. To use a different role, choose **Customize**. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
    1. Choose **Create** if you're creating a state machine. Otherwise, choose **Save**.
 

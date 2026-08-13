@@ -30,7 +30,7 @@ If your table definition contains capital letters, you receive the following err
 
 You can integrate table buckets with Data Catalog and AWS analytics services using IAM access controls by default, or optionally use Lake Formation access controls.
 
-When you integrate using IAM access controls, you require IAM privileges to access Amazon S3 table buckets and tables, Data Catalog objects, and the query engine you're using. If you choose to integrate using Lake Formation, then both IAM access controls and Lake Formation grants determine the access to Data Catalog resources. Please refer to [https://docs.aws.amazon.com/lake-formation/latest/dg/create-s3-tables-catalog.html](https://docs.aws.amazon.com/lake-formation/latest/dg/create-s3-tables-catalog.html) to learn more about Lake Formation integration.
+When you integrate using IAM access controls, you require IAM privileges to access Amazon S3 table buckets and tables, Data Catalog objects, and the query engine you're using. If you choose to integrate using Lake Formation, then both IAM access controls and Lake Formation grants determine the access to Data Catalog resources. Please refer to [*AWS Lake Formation Developer Guide*](https://docs.aws.amazon.com/lake-formation/latest/dg/create-s3-tables-catalog.html) to learn more about Lake Formation integration.
 
 The following sections describe how you could use Amazon S3 management console or AWS CLI to configure the integration with IAM access controls.
 
@@ -112,7 +112,7 @@ The following steps show how to use the AWS CLI to integrate table buckets. To u
 ### Migrating to the updated integration process
 <a name="migrate-integrate-console"></a>
 
-The AWS analytics services integration process has been updated to use IAM permissions by default. If you've already set up the integration, you can continue to use your current integration. However, if you want to change your existing integration to use IAM permissions instead, see [https://docs.aws.amazon.com/lake-formation/latest/dg/create-s3-tables-catalog.html](https://docs.aws.amazon.com/lake-formation/latest/dg/create-s3-tables-catalog.html). You can also redo the integration to delete your existing setup in AWS Glue Data Catalog and AWS Lake Formation and re-run the integration. This will remove all existing Lake Formation grants and associated access permissions to the `s3tablescatalog`.
+The AWS analytics services integration process has been updated to use IAM permissions by default. If you've already set up the integration, you can continue to use your current integration. However, if you want to change your existing integration to use IAM permissions instead, see [*AWS Lake Formation Developer Guide*](https://docs.aws.amazon.com/lake-formation/latest/dg/create-s3-tables-catalog.html). You can also redo the integration to delete your existing setup in AWS Glue Data Catalog and AWS Lake Formation and re-run the integration. This will remove all existing Lake Formation grants and associated access permissions to the `s3tablescatalog`.
 
 1. Open the AWS Lake Formation console at [https://console.aws.amazon.com/lakeformation/](https://console.aws.amazon.com/lakeformation/), and sign in as a data lake administrator. For more information about how to create a data lake administrator, see [Create a data lake administrator](https://docs.aws.amazon.com/lake-formation/latest/dg/initial-lf-config.html#create-data-lake-admin) in the *AWS Lake Formation Developer Guide*.
 

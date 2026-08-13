@@ -26,19 +26,19 @@ The following table lists the data entities and columns used by Demand Planning.
   <tr><th>Column</th><th>Is the column required?</th><th>How is this column used in Forecasting?</th></tr>
 </thead>
 <tbody>
-  <tr><td>id</td><td>Required</td><td rowspan="3">*id*, *cust\_order\_id*, and *product\_id* are used to uniquely identify a record in the data entity and this combination should always be unique. Make sure the column values do not have invalid characters such as asterisk and double-quotes.</td></tr>
-  <tr><td>cust\_order\_id</td><td>Required</td></tr>
-  <tr><td>product\_id</td><td>Required</td></tr>
-  <tr><td>order\_date</td><td>Required</td><td>Required for forecast creation. Identifies the period for time-series forecasting.</td></tr>
-  <tr><td>final\_quantity\_requested</td><td>Required</td><td>Required for forecast creation. Identifies the quantity used for time-series forecasting. This column must not contain null values and must be *numerical*. Make sure there are no commas in the values. For example, 500000.00 is an accepted value in Demand Planning.</td></tr>
-  <tr><td>ship\_from\_site\_id</td><td>Conditionally required</td><td rowspan="2">This column is conditionally required for forecast creation *if* the column is selected for forecast dimension (Site Hierarchy). This column must have a value and is used for filtering and analysis of data.</td></tr>
-  <tr><td>ship\_to\_site\_id</td><td>Conditionally required</td></tr>
-  <tr><td>channel\_id</td><td>Conditionally required</td><td>This column is conditionally required for forecast creation *if* the column is selected for forecast dimension (Channel Hierarchy). This column must have a value and is used for filtering and analysis of data.</td></tr>
-  <tr><td>customer\_tpartner\_id</td><td>Conditionally required</td><td>This column is conditionally required for forecast creation *if* the column is selected for forecast dimension (Customer Hierarchy). This column must have a value and is used for filtering and analysis of data.</td></tr>
-  <tr><td>ship\_to\_site\_address\_city</td><td>Conditionally required</td><td rowspan="3">This column is conditionally required for forecast creation *if* the column is selected for forecast dimension (Site Hierarchy). This column must have a value and is used for filtering and analysis of data.</td></tr>
-  <tr><td>ship\_to\_site\_address\_state</td><td>Conditionally required</td></tr>
-  <tr><td>ship\_to\_site\_address\_country</td><td>Conditionally required</td></tr>
-  <tr><td>status</td><td>Recommended for forecast quality</td><td>This column is recommended for forecast quality. Orders with *canceled* status are not considered as forecast input.</td></tr>
+  <tr><td>id</td><td>Required</td><td rowspan="3"><i>id</i>, <i>cust_order_id</i>, and <i>product_id</i> are used to uniquely identify a record in the data entity and this combination should always be unique. Make sure the column values do not have invalid characters such as asterisk and double-quotes.</td></tr>
+  <tr><td>cust_order_id</td><td>Required</td></tr>
+  <tr><td>product_id</td><td>Required</td></tr>
+  <tr><td>order_date</td><td>Required</td><td>Required for forecast creation. Identifies the period for time-series forecasting.</td></tr>
+  <tr><td>final_quantity_requested</td><td>Required</td><td>Required for forecast creation. Identifies the quantity used for time-series forecasting. This column must not contain null values and must be <i>numerical</i>. Make sure there are no commas in the values. For example, 500000.00 is an accepted value in Demand Planning.</td></tr>
+  <tr><td>ship_from_site_id</td><td>Conditionally required</td><td rowspan="2">This column is conditionally required for forecast creation <i>if</i> the column is selected for forecast dimension (Site Hierarchy). This column must have a value and is used for filtering and analysis of data.</td></tr>
+  <tr><td>ship_to_site_id</td><td>Conditionally required</td></tr>
+  <tr><td>channel_id</td><td>Conditionally required</td><td>This column is conditionally required for forecast creation <i>if</i> the column is selected for forecast dimension (Channel Hierarchy). This column must have a value and is used for filtering and analysis of data.</td></tr>
+  <tr><td>customer_tpartner_id</td><td>Conditionally required</td><td>This column is conditionally required for forecast creation <i>if</i> the column is selected for forecast dimension (Customer Hierarchy). This column must have a value and is used for filtering and analysis of data.</td></tr>
+  <tr><td>ship_to_site_address_city</td><td>Conditionally required</td><td rowspan="3">This column is conditionally required for forecast creation <i>if</i> the column is selected for forecast dimension (Site Hierarchy). This column must have a value and is used for filtering and analysis of data.</td></tr>
+  <tr><td>ship_to_site_address_state</td><td>Conditionally required</td></tr>
+  <tr><td>ship_to_site_address_country</td><td>Conditionally required</td></tr>
+  <tr><td>status</td><td>Recommended for forecast quality</td><td>This column is recommended for forecast quality. Orders with <i>canceled</i> status are not considered as forecast input.</td></tr>
 </tbody>
 </table>
 
@@ -58,21 +58,21 @@ Demand Planning uses the product attributes to establish hierarchy filters for d
 <tbody>
   <tr><td>id</td><td>Required</td><td>Required for data ingestion into Supply Chain Data Lake (SCDL). Make sure the column values do not have duplicate IDs and special characters such as asterix and double-quotes.</td></tr>
   <tr><td>description</td><td>Required</td><td>Required for data ingestion into Supply Chain Data Lake (SCDL). This column can contain special characters such as asterix, hyphen, quotes, and double-quotes.</td></tr>
-  <tr><td>parent\_product\_id</td><td>Conditionally required</td><td rowspan="5">This column is conditionally required for forecast creation *if* the column is selected for forecast dimensions (Product Hierarchy). Make sure the column has values and is used for filtering and analysis of data and model training.</td></tr>
-  <tr><td>product\_group\_id</td><td>Conditionally required</td></tr>
-  <tr><td>product\_type</td><td>Conditionally required</td></tr>
-  <tr><td>brand\_name</td><td>Conditionally required</td></tr>
+  <tr><td>parent_product_id</td><td>Conditionally required</td><td rowspan="5">This column is conditionally required for forecast creation <i>if</i> the column is selected for forecast dimensions (Product Hierarchy). Make sure the column has values and is used for filtering and analysis of data and model training.</td></tr>
+  <tr><td>product_group_id</td><td>Conditionally required</td></tr>
+  <tr><td>product_type</td><td>Conditionally required</td></tr>
+  <tr><td>brand_name</td><td>Conditionally required</td></tr>
   <tr><td>color</td><td>Conditionally required</td></tr>
-  <tr><td>display\_desc</td><td>Conditionally required</td><td></td></tr>
-  <tr><td>product\_available\_day</td><td>Recommended for forecast quality</td><td>Recommended. The value in this column improves forecast quality by allowing the forecasting model to consider the timing of new product introductions.</td></tr>
-  <tr><td>discontinue\_day</td><td>Recommended for forecast quality</td><td>Recommended. The value in this column improves forecast quality by allowing the forecasting model to consider the timing for product retirements.</td></tr>
-  <tr><td>base\_uom</td><td>Recommended for forecast quality</td><td>Unit of measure for product. Default is Eaches. Currently demand planning only supports Eaches.</td></tr>
-  <tr><td>is\_deleted</td><td>Recommended for forecast quality</td><td>Recommended. Enter *Y* if the product ID should be excluded from forecasting.</td></tr>
-  <tr><td>pkg\_height</td><td>Recommended for forecast quality</td><td rowspan="5">Recommended. The physical characteristics of the product that the forecasting models can understand.</td></tr>
-  <tr><td>pkg\_length</td><td>Recommended for forecast quality</td></tr>
-  <tr><td>pkg\_width</td><td>Recommended for forecast quality</td></tr>
-  <tr><td>shipping\_dimension</td><td>Recommended for forecast quality</td></tr>
-  <tr><td>casepack\_size</td><td>Recommended for forecast quality</td></tr>
+  <tr><td>display_desc</td><td>Conditionally required</td><td></td></tr>
+  <tr><td>product_available_day</td><td>Recommended for forecast quality</td><td>Recommended. The value in this column improves forecast quality by allowing the forecasting model to consider the timing of new product introductions.</td></tr>
+  <tr><td>discontinue_day</td><td>Recommended for forecast quality</td><td>Recommended. The value in this column improves forecast quality by allowing the forecasting model to consider the timing for product retirements.</td></tr>
+  <tr><td>base_uom</td><td>Recommended for forecast quality</td><td>Unit of measure for product. Default is Eaches. Currently demand planning only supports Eaches.</td></tr>
+  <tr><td>is_deleted</td><td>Recommended for forecast quality</td><td>Recommended. Enter <i>Y</i> if the product ID should be excluded from forecasting.</td></tr>
+  <tr><td>pkg_height</td><td>Recommended for forecast quality</td><td rowspan="5">Recommended. The physical characteristics of the product that the forecasting models can understand.</td></tr>
+  <tr><td>pkg_length</td><td>Recommended for forecast quality</td></tr>
+  <tr><td>pkg_width</td><td>Recommended for forecast quality</td></tr>
+  <tr><td>shipping_dimension</td><td>Recommended for forecast quality</td></tr>
+  <tr><td>casepack_size</td><td>Recommended for forecast quality</td></tr>
 </tbody>
 </table>
 

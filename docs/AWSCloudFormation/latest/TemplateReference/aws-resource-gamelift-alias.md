@@ -84,7 +84,7 @@ A list of labels to assign to the new alias resource. Tags are developer-defined
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the alias ID, such as `alias-1111aaaa-22bb-33cc-44dd-5555eeee66ff`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-gamelift-alias-return-values-fn--getatt"></a>

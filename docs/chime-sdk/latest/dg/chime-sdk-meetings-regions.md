@@ -31,7 +31,7 @@ Remember these factors when choosing a control Region for an Amazon Chime SDK me
 <a name="choose-media-region"></a>
 
 **Note**
-We recommend that you always specify a value in the `MediaRegion` parameter in the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateMeeting.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateMeeting.html) API action. For more information about the Regions, refer to [Available AWS Regions for the Amazon Chime SDK](sdk-available-regions.md).
+We recommend that you always specify a value in the `MediaRegion` parameter in the [CreateMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateMeeting.html) API action. For more information about the Regions, refer to [Available AWS Regions for the Amazon Chime SDK](sdk-available-regions.md).
 
 When choosing a media Region to use for your Amazon Chime SDK meeting, consider these common factors:
 
@@ -53,14 +53,14 @@ Recommended if your Amazon Chime SDK meeting attendees are located in the same A
 ## Finding the nearest media Region
 <a name="choose-nearest-media-region"></a>
 
-To find the nearest media Region capable of hosting an Amazon Chime SDK meeting, call [https://nearest-media-region.l.chime.aws](https://nearest-media-region.l.chime.aws). This endpoint returns a single Region, such as `{"region": "us-west-2"}`. Call the URL from your client application to identify the Region closest to the user, and then use the result in the `MediaRegion` parameter of the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html) API to create the meeting in that Region.
+To find the nearest media Region capable of hosting an Amazon Chime SDK meeting, call [https://nearest-media-region.l.chime.aws](https://nearest-media-region.l.chime.aws). This endpoint returns a single Region, such as `{"region": "us-west-2"}`. Call the URL from your client application to identify the Region closest to the user, and then use the result in the `MediaRegion` parameter of the [CreateMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html) API to create the meeting in that Region.
 
 You usually call the URL when the client application starts, or its network connection changes. By predetermining the nearest Region, you avoid adding the call’s latency at the time of meeting creation.
 
 ## Finding the nearest AWS GovCloud (US) media Region
 <a name="choose-gov-cloud-region"></a>
 
-To find the nearest AWS GovCloud (US) Region that can host an Amazon Chime SDK meeting, call [https://nearest-us-gov-media-region.l.chime.aws](https://nearest-us-gov-media-region.l.chime.aws). This endpoint returns the nearest region, such as `{"region": "us-gov-west-1"}`. Call the URL from your client application to identify the AWS GovCloud (US) closest to the user, and use the result in the `MediaRegion` parameter of the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html) API to create the meeting in that Region.
+To find the nearest AWS GovCloud (US) Region that can host an Amazon Chime SDK meeting, call [https://nearest-us-gov-media-region.l.chime.aws](https://nearest-us-gov-media-region.l.chime.aws). This endpoint returns the nearest region, such as `{"region": "us-gov-west-1"}`. Call the URL from your client application to identify the AWS GovCloud (US) closest to the user, and use the result in the `MediaRegion` parameter of the [CreateMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html) API to create the meeting in that Region.
 
 You usually call the URL when the client application starts, or its network connection changes. By predetermining the nearest Region, you avoid adding the call’s latency at the time of meeting creation.
 

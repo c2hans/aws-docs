@@ -62,7 +62,7 @@ The log file names are based on the file name pattern specified in the `log_file
 
 If you set `log_rotation_age` parameter to less than 60 minutes, set the `log_filename` parameter to the minute format.
 
-For more information, see [https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-ROTATION-AGE](https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-ROTATION-AGE) and [https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-ROTATION-SIZE](https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-ROTATION-SIZE) in the PostgreSQL documentation.
+For more information, see [`log_rotation_age`](https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-ROTATION-AGE) and [`log_rotation_size`](https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-ROTATION-SIZE) in the PostgreSQL documentation.
 
 ## Setting the log destination (`stderr`, `csvlog`)
 <a name="USER_LogAccess.Concepts.PostgreSQL.Log_Format"></a>

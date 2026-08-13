@@ -41,6 +41,11 @@ Defines a legal term containing documents proposed to buyers, such as EULAs and 
 Type: [LegalTerm](API_marketplace-discovery_LegalTerm.md) object
 Required: No
 
+ ** netPaymentTerm **   <a name="AWSMarketplaceService-Type-marketplace-discovery_OfferTerm-netPaymentTerm"></a>
+A net payment term.
+Type: [NetPaymentTerm](API_marketplace-discovery_NetPaymentTerm.md) object
+Required: No
+
  ** paymentScheduleTerm **   <a name="AWSMarketplaceService-Type-marketplace-discovery_OfferTerm-paymentScheduleTerm"></a>
 Defines a payment schedule term with installment payments at specified dates.
 Type: [PaymentScheduleTerm](API_marketplace-discovery_PaymentScheduleTerm.md) object

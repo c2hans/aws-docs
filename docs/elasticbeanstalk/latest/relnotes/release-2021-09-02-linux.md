@@ -17,18 +17,29 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/alas2.html) on or before **August 16, 2021** to all released Amazon Linux 2 platforms.<br />The **.NET Core** and **Node.js** releases are security releases. For more information, see **Platform-specific updates** in this table. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2021-09-02-linux.html) |
-| **Docker** | Updated Docker to version [20.10.7](https://docs.docker.com/engine/release-notes/#20107). |
-| **Go** | Updated Go to release **1.17**. For details, see [go1.17](https://golang.org/doc/devel/release.html#go1.17) in *The Go Programming Language Release History*. |
-| **Tomcat** | Updated Tomcat 8.5 to [Tomcat 8.5.69](https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.69_(schultz)). |
-| **.NET Core** | Updated .NET Core to releases [5.0.9](https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0.9/5.0.9.md). [3.1.18](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1.18/3.1.18.md), and [2.1.30](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1.30/2.1.30.md).<br />These are security releases. |
-| **Node.js** | Updated Node.js 14 to add support for Node versions [14.17.5](https://nodejs.org/en/blog/release/v14.17.5/) and [14.17.4](https://nodejs.org/en/blog/release/v14.17.4/).<br />Updated Node.js 12 to add support for Node versions [12.22.5](https://nodejs.org/en/blog/release/v12.22.5/) and [12.22.4](https://nodejs.org/en/blog/release/v12.22.4/).<br />The new Node.js versions are security releases. |
-| **Ruby** | Updated RubyGems to release [3.2.25](https://blog.rubygems.org/2021/07/30/3.2.25-released.html).<br />Updated Puma to version [5.4.0](https://github.com/puma/puma/releases/tag/v5.4.0). |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/alas2.html">Amazon Linux Security Center</a> on or before <b>August 16, 2021</b> to all released Amazon Linux 2 platforms.<br />The <b>.NET Core</b> and <b>Node.js</b> releases are security releases. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Docker</b></td><td>Updated Docker to version <a href="https://docs.docker.com/engine/release-notes/#20107">20.10.7</a>.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated Go to release <b>1.17</b>. For details, see <a href="https://golang.org/doc/devel/release.html#go1.17">go1.17</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Tomcat</b></td><td>Updated Tomcat 8.5 to <a href="https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.69_(schultz)">Tomcat 8.5.69</a>.</td></tr>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET Core to releases <a href="https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0.9/5.0.9.md">5.0.9</a>. <a href="https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1.18/3.1.18.md">3.1.18</a>, and <a href="https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1.30/2.1.30.md">2.1.30</a>.<br />These are security releases.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated Node.js 14 to add support for Node versions <a href="https://nodejs.org/en/blog/release/v14.17.5/">14.17.5</a> and <a href="https://nodejs.org/en/blog/release/v14.17.4/">14.17.4</a>.<br />Updated Node.js 12 to add support for Node versions <a href="https://nodejs.org/en/blog/release/v12.22.5/">12.22.5</a> and <a href="https://nodejs.org/en/blog/release/v12.22.4/">12.22.4</a>.<br />The new Node.js versions are security releases.</td></tr>
+  <tr><td><b>Ruby</b></td><td>Updated RubyGems to release <a href="https://blog.rubygems.org/2021/07/30/3.2.25-released.html">3.2.25</a>.<br />Updated Puma to version <a href="https://github.com/puma/puma/releases/tag/v5.4.0">5.4.0</a>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2021-09-02-linux.platforms"></a>

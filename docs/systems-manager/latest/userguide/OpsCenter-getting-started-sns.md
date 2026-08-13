@@ -57,7 +57,7 @@ You have to associate an Amazon SNS topic with OpsItems. Use the following proce
    }
    ```
 **Note**
-The `aws:SourceAccount` global condition key protects against the confused deputy scenario. To use this condition key, set the value to the account ID of the OpsItem owner. For more information, see [Confused Deputy](https://docs.aws.amazon.com//IAM/latest/UserGuide/confused-deputy.html) in the *IAM User Guide*.
+The `aws:SourceAccount` global condition key protects against the confused deputy scenario. To use this condition key, set the value to the account ID of the OpsItem owner. For more information, see [Confused Deputy](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html) in the *IAM User Guide*.
 
 1. Choose **Save changes**.
 

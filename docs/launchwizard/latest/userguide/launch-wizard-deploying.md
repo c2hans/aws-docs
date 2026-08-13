@@ -33,7 +33,7 @@ The following steps guide you through a SQL Server Always On application deploym
 ------
 #### [ General ]
    + **Deployment name**. Enter a unique application name for your deployment.
-   + (Optional) **Simple Notification Service (SNS) topic ARN**. Specify an SNS topic where AWS Launch Wizard can send notifications and alerts. For more information, see the [https://docs.aws.amazon.com/sns/latest/dg/welcome.html](https://docs.aws.amazon.com/sns/latest/dg/welcome.html).
+   + (Optional) **Simple Notification Service (SNS) topic ARN**. Specify an SNS topic where AWS Launch Wizard can send notifications and alerts. For more information, see the [*Amazon Simple Notification Service Developer Guide*](https://docs.aws.amazon.com/sns/latest/dg/welcome.html).
    + (Optional for HA deployments) **CloudWatch application monitoring**. Select the check box to set up monitors and automated insights for your deployment using CloudWatch Application Insights. For more information, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-application-insights.html).
    + **Enable rollback on failed deployment**. By default, if a deployment fails, your provisioned resources will not be rolled back/deleted. This default configuration helps you to troubleshoot errors at the resource level as you debug deployment issues. If you want your provisioned resources to be immediately deleted if a deployment fails, select the check box.
 
@@ -191,7 +191,7 @@ The following steps guide you through a SQL Failover Clustering application depl
 ------
 #### [ General ]
    + **Deployment name**. Enter a unique application name for your deployment.
-   + (Optional) **Simple Notification Service (SNS) topic ARN**. Specify an SNS topic where AWS Launch Wizard can send notifications and alerts. For more information, see the [https://docs.aws.amazon.com/sns/latest/dg/welcome.html](https://docs.aws.amazon.com/sns/latest/dg/welcome.html).
+   + (Optional) **Simple Notification Service (SNS) topic ARN**. Specify an SNS topic where AWS Launch Wizard can send notifications and alerts. For more information, see the [*Amazon Simple Notification Service Developer Guide*](https://docs.aws.amazon.com/sns/latest/dg/welcome.html).
    + (Optional for HA deployments) **CloudWatch application monitoring**. Select the check box to set up monitors and automated insights for your deployment using CloudWatch Application Insights. For more information, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-application-insights.html).
    + **Enable rollback on failed deployment**. By default, if a deployment fails, your provisioned resources will not be rolled back/deleted. This default configuration helps you to troubleshoot errors at the resource level as you debug deployment issues. If you want your provisioned resources to be immediately deleted if a deployment fails, select the check box.
 

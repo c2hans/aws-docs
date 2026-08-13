@@ -9,7 +9,7 @@ The following code sample shows how to use Java-based applications to synthesize
 
 For more information on this functionality, see [Speech marks](speechmarks.md).
 
-For more information on the API, see the reference for [https://docs.aws.amazon.com/polly/latest/APIReference/API_SynthesizeSpeech.html](https://docs.aws.amazon.com/polly/latest/APIReference/API_SynthesizeSpeech.html) API.
+For more information on the API, see the reference for [`SynthesizeSpeech`](https://docs.aws.amazon.com/polly/latest/APIReference/API_SynthesizeSpeech.html) API.
 
 ## SDK v2
 <a name="synth-sdk-v2"></a>

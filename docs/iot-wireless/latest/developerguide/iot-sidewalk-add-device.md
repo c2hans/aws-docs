@@ -56,7 +56,7 @@ To add your Sidewalk device and download the JSON files that will be used to pro
 ### Step 1: Create a device profile
 <a name="iot-sidewalk-profile-create"></a>
 
-To create a device profile in your AWS account, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateDeviceProfile.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateDeviceProfile.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/create-device-profile.html](https://docs.aws.amazon.com/cli/latest/reference/create-device-profile.html) CLI command. When creating your device profile, specify the name and provide any optional tags as name-value pairs.
+To create a device profile in your AWS account, use the [`CreateDeviceProfile`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateDeviceProfile.html) API operation or the [`create-device-profile`](https://docs.aws.amazon.com/cli/latest/reference/create-device-profile.html) CLI command. When creating your device profile, specify the name and provide any optional tags as name-value pairs.
 
 For example, the following command creates a device profile for your Sidewalk devices:
 
@@ -77,10 +77,10 @@ Running this command returns the Amazon Resource Name (ARN) and the ID of the de
 ### Step 2: Add your Sidewalk device
 <a name="iot-sidewalk-device-create"></a>
 
-To add your Sidewalk device to your account for AWS IoT Core for Amazon Sidewalk, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessDevice.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessDevice.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/create-wireless-device.html](https://docs.aws.amazon.com/cli/latest/reference/create-wireless-device.html) CLI command. When creating your device, specify the following parameters, in addition to an optional name and description for your Sidewalk device.
+To add your Sidewalk device to your account for AWS IoT Core for Amazon Sidewalk, use the [`CreateWirelessDevice`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessDevice.html) API operation or the [`create-wireless-device`](https://docs.aws.amazon.com/cli/latest/reference/create-wireless-device.html) CLI command. When creating your device, specify the following parameters, in addition to an optional name and description for your Sidewalk device.
 
 **Note**
-If you want to associate your Sidewalk device with an AWS IoT thing, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_AssociateWirelessDeviceWithThing.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_AssociateWirelessDeviceWithThing.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/associate-wireless-device-with-thing.html](https://docs.aws.amazon.com/cli/latest/reference/associate-wireless-device-with-thing.html) CLI command.
+If you want to associate your Sidewalk device with an AWS IoT thing, use the [`AssociateWirelessDeviceWithThing`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_AssociateWirelessDeviceWithThing.html) API operation or the [`associate-wireless-device-with-thing`](https://docs.aws.amazon.com/cli/latest/reference/associate-wireless-device-with-thing.html) CLI command.
 
 The following command shows an example of creating a Sidewalk device:
 

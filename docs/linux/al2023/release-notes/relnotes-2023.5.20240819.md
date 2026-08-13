@@ -105,8 +105,8 @@ New packages in AL2023.5.20240819:
 
 The full comparison of RPM package versions is below.
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html](https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html](https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html)
+- ** [`amazon-ec2-net-utils`](https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html) **
+  - **RPM:**  [`amazon-ec2-net-utils`](https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html)
   - **Architectures:** noarch
   - **AL2023.5.20240805 version:** 2.4.1-1.amzn2023.0.1
   - **AL2023.5.20240819 version:** 2.5.1-1.amzn2023.0.1
@@ -133,8 +133,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.5.20240805 version:** 1.100-1.amzn2023.0.1
   - **AL2023.5.20240819 version:** 1.104-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
+- ** [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
+  - **RPM:**  [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.5.20240805 version:** 1.85.3-1.amzn2023
   - **AL2023.5.20240819 version:** 1.86.0-1.amzn2023

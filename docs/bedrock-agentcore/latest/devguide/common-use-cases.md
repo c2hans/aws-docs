@@ -60,7 +60,7 @@ On-behalf-of (OBO) token exchange enables agents to access downstream resource s
 
 1.  **Mike (identity admin)** configures the HR application as an OAuth Credential Provider in AgentCore Identity, including the OBO token exchange mode. Once set up, no per-user provisioning is needed — any employee who can authenticate to the agent can reach the HR application through it.
 
-1.  **Bob (agent developer)** adds a tool that calls the HR application. He doesn’t write any token exchange logic or handle client secrets. He calls [https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_GetResourceOauth2Token.html](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_GetResourceOauth2Token.html) with the workload access token, and AgentCore Identity returns a scoped downstream token. Bob focuses on what the agent does with the data, not how it gets authorized.
+1.  **Bob (agent developer)** adds a tool that calls the HR application. He doesn’t write any token exchange logic or handle client secrets. He calls [`GetResourceOauth2Token`](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_GetResourceOauth2Token.html) with the workload access token, and AgentCore Identity returns a scoped downstream token. Bob focuses on what the agent does with the data, not how it gets authorized.
 
 1.  **Sarah (end user)** signs into the agent and asks it to pull her benefits summary. She is not prompted to sign in a second time. Behind the scenes, AgentCore Identity exchanges Sarah’s inbound token for a downstream access token that carries her identity. The HR application applies its existing access policies and returns only Sarah’s data — the same data she would see if she accessed the application directly.
 

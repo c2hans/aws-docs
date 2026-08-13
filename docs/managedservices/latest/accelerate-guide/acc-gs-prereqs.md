@@ -37,7 +37,7 @@ If you are creating VPC endpoints in your account for all of the above mentioned
 ## Outbound internet connectivity in Accelerate
 <a name="acc-gs-prereqs-ob"></a>
 
-1. Download [samples/egressMgmt.zip](samples/egressMgmt.zip).
+1. Download [`egressMgmt.zip`](samples/egressMgmt.zip).
 
 1. Open the **`ams-egress.json`** file.
 

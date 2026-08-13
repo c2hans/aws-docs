@@ -34,7 +34,7 @@ If your request is successful, the console displays the **Deployments** tab for 
 ------
 #### [ AWS CLI ]
 
-To create a container fleet with the AWS CLI, open a command line window and use the `update-container-fleet` command. For more information about this command, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/gamelift/update-container-fleet.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/gamelift/update-container-fleet.html) in the *AWS CLI Command Reference*.
+To create a container fleet with the AWS CLI, open a command line window and use the `update-container-fleet` command. For more information about this command, see [`update-container-fleet`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/gamelift/update-container-fleet.html) in the *AWS CLI Command Reference*.
 
 The following example updates an existing container fleet with the following characteristics:
 + It updates the game server container group definition to use version 2.

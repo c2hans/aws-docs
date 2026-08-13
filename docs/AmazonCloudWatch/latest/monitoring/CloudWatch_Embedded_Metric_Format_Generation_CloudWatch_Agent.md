@@ -21,7 +21,7 @@ Install the CloudWatch agent for each service which is to send embedded metric f
 
 First, install the CloudWatch agent on the instance. For more information, see [Installing the CloudWatch agent](install-CloudWatch-Agent-on-EC2-Instance.md).
 
-Once you have installed the agent, configure the agent to listen on a UDP or TCP port for the embedded metric format logs. The following is an example of this configuration that listens on the default socket `tcp:25888`. For more information about agent configuration, see [Manually create or edit the CloudWatch agent configuration file](CloudWatch-Agent-Configuration-File-Details.md).
+After you have installed the agent, configure the agent to listen on a UDP or TCP port for the embedded metric format logs. The following is an example of this configuration that listens on the default socket `tcp:25888`. For more information about agent configuration, see [Manually create or edit the CloudWatch agent configuration file](CloudWatch-Agent-Configuration-File-Details.md).
 
 ```
 {
@@ -156,9 +156,8 @@ aws ecs run-task \
 --network-configuration "awsvpcConfiguration={subnets=[{{subnetId}}],securityGroups=[{{sgId}}],assignPublicIp=ENABLED}"
 ```
 
-**Ensure permissions**
-
-Ensure the IAM role executing your tasks has permission to read from the SSM Parameter Store. You can add this permission by attaching the **AmazonSSMReadOnlyAccess** policy. To do so, enter the following command.
+**Required permissions**
+Make sure the IAM role executing your tasks has permission to read from the SSM Parameter Store. You can add this permission by attaching the **AmazonSSMReadOnlyAccess** policy. To do so, enter the following command.
 
 ```
 aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/AmazonSSMReadOnlyAccess \
@@ -172,7 +171,7 @@ Parts of this process can be skipped if you have already installed CloudWatch Co
 
 Permissions
 
-If you have not already installed Container Insights, then first ensure that your Amazon EKS nodes have the appropriate IAM permissions. They should have the **CloudWatchAgentServerPolicy** attached. For more information, see [Setup guide (AWS CLI)](container-insights-eks-classic-setup.md).
+If you have not already installed Container Insights, then first make sure that your Amazon EKS nodes have the appropriate IAM permissions. They should have the **CloudWatchAgentServerPolicy** attached. For more information, see [Setup guide (AWS CLI)](container-insights-eks-classic-setup.md).
 
 **Create ConfigMap**
 

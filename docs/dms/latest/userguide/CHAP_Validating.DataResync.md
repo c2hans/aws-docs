@@ -221,8 +221,8 @@ Any modification done to the task such as stoping the replication task during th
 **Note**
 When upgrading or moving a task to DMS version 3.6.1 and above, any failures in the `awsdms_control.awsdms_validation_failures_v1` table are not resynced. Only failures in the `awsdms_validation_failures_v2` table are resynced. To resync failures in `awsdms_control.awsdms_validation_failures_v2` table, you must reload the task, reload one or more tables in the task, or re-validate one or more tables. For more information, see the following links:
 To reload a task, see [`StartReplicationTask` API reference](https://docs.aws.amazon.com/dms/latest/APIReference/API_StartReplicationTask.html).
-To reload one or more tables in a task, see [https://docs.aws.amazon.com/cli/latest/reference/dms/reload-tables.html](https://docs.aws.amazon.com/cli/latest/reference/dms/reload-tables.html) in the *AWS CLI command reference* documentation.
-To re-validate one or more tables, see the `validate-only` option in the [https://docs.aws.amazon.com/cli/latest/reference/dms/reload-tables.html](https://docs.aws.amazon.com/cli/latest/reference/dms/reload-tables.html) section in the *AWS CLI command reference* documentation.
+To reload one or more tables in a task, see [`reload-tables`](https://docs.aws.amazon.com/cli/latest/reference/dms/reload-tables.html) in the *AWS CLI command reference* documentation.
+To re-validate one or more tables, see the `validate-only` option in the [`reload-tables`](https://docs.aws.amazon.com/cli/latest/reference/dms/reload-tables.html) section in the *AWS CLI command reference* documentation.
 .
 
 ## Cron expression rules

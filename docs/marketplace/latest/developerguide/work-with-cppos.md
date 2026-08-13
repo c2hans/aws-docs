@@ -30,6 +30,7 @@ The following topics describe how to use the Catalog API to create and update CP
 + [Define the expiration date of agreements](#update-validity-terms-cppo)
 + [Update pricing](#update-pricing-terms-cppo)
 + [Update payment schedule details](#update-payment-schedule-terms-cppo)
++ [Update net payment terms](#update-cppo-net-payment-terms)
 + [Publish the CPPO](#release-offer-cppo)
 + [Define an existing CPPO](#describe-entity-cppo)
 
@@ -123,13 +124,13 @@ The response to this request gives you the status of the request. If the status 
 }
 ```
 
-You can use the `GET` `DescribeEntity` request to describe the draft offer rules and terms created from `ResaleAuthorization` in the AWS Marketplace Catalog API Reference. For more information, see [https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeChangeSet.html](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeChangeSet.html).
+You can use the `GET` `DescribeEntity` request to describe the draft offer rules and terms created from `ResaleAuthorization` in the AWS Marketplace Catalog API Reference. For more information, see [`DescribeChangeSet`](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeChangeSet.html).
 
 **Terms and rules from ResaleAuthorization**
-+ **LegalTerms** – Provisions describing legal terms, such as the EULA in the ResaleAuthorization will be added to the draft offer. You can add legal terms using the `UpdateLegalTerms` change type. For more information, see [https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/cppos.html#update-legal-terms-cppo](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/cppos.html#update-legal-terms-cppo).
-+ **PricingTerms** – All the pricing terms (`ConfigurableUpfrontPricingTerm`, `FixedUpfrontPricingTerm`, `UsageBasedPricingTerm`, `PaymentScheduleTerms`) described by the Manufacturer in the ResaleAuthorization will be added to the draft offer. You can choose to increase the pricing (for each dimension) for your targeted buyers using the `UpdateMarkup` change type. For more information, see [https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/cppos.html#update-markup](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/cppos.html#update-markup) in this guide.
-+ **PaymentTerms** – If the manufacturer has defined the Future Payment Schedule in the ResaleAuthorization, then you will be able to see the payment terms in the draft offer. You can choose to increase the payment schedule amount for your targeted buyers using the `UpdateMarkup` change type. If you want to set the payment schedule for your buyers, you can use `UpdatePaymentScheduleTerms`. For more information, see [https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/cppos.html#update-payment-schedule-terms-cppo](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/cppos.html#update-payment-schedule-terms-cppo).
-+ **TargetingRule** – If the ResaleAuthorization is targeted to specific buyers, then channel partners can give private offers to a subset of buyers using PositiveTargeting. By default, the rule will include all the buyers from ResaleAuthorization. You can select specific buyers and update the draft offer using the `UpdateTargeting` change type. For more information, see [https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/cppos.html#update-targeting-cppo](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/cppos.html#update-targeting-cppo).
++ **LegalTerms** – Provisions describing legal terms, such as the EULA in the ResaleAuthorization will be added to the draft offer. You can add legal terms using the `UpdateLegalTerms` change type. For more information, see [`UpdateLegalTerms`](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/cppos.html#update-legal-terms-cppo).
++ **PricingTerms** – All the pricing terms (`ConfigurableUpfrontPricingTerm`, `FixedUpfrontPricingTerm`, `UsageBasedPricingTerm`, `PaymentScheduleTerms`) described by the Manufacturer in the ResaleAuthorization will be added to the draft offer. You can choose to increase the pricing (for each dimension) for your targeted buyers using the `UpdateMarkup` change type. For more information, see [`UpdateMarkup`](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/cppos.html#update-markup) in this guide.
++ **PaymentTerms** – If the manufacturer has defined the Future Payment Schedule in the ResaleAuthorization, then you will be able to see the payment terms in the draft offer. You can choose to increase the payment schedule amount for your targeted buyers using the `UpdateMarkup` change type. If you want to set the payment schedule for your buyers, you can use `UpdatePaymentScheduleTerms`. For more information, see [`UpdatePaymentScheduleTerms`](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/cppos.html#update-payment-schedule-terms-cppo).
++ **TargetingRule** – If the ResaleAuthorization is targeted to specific buyers, then channel partners can give private offers to a subset of buyers using PositiveTargeting. By default, the rule will include all the buyers from ResaleAuthorization. You can select specific buyers and update the draft offer using the `UpdateTargeting` change type. For more information, see [`UpdateTargeting`](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/cppos.html#update-targeting-cppo).
 
 ```
 {
@@ -1082,6 +1083,77 @@ The following errors are specific to `UpdatePaymentScheduleTerms` actions in the
 | INVALID\_CURRENCY\_CODE | Provide a supported CurrencyCode. |
 | INVALID\_CURRENCY\_CODE | Provide the same CurrencyCode across all pricing and payment terms. |
 | TOO\_MANY\_BACKDATED\_CHARGES | Provide up to 1 scheduled payment before AvailabilityEndDate. |
+
+## Update net payment terms
+<a name="update-cppo-net-payment-terms"></a>
+
+If the Resale Authorization that you use to create a channel partner private offer (CPPO) contains a net payment term, that term is the maximum period that you can offer to your buyer. The term from the Resale Authorization is applied to your CPPO automatically when you create it.
+
+To offer your buyer a shorter payment period than the one that the seller authorized, call the `StartChangeSet` API operation with the `UpdateNetPaymentTerms` change type on your offer, as shown in the following example. If you want to use the same period that the seller authorized, you don't need to call `UpdateNetPaymentTerms`.
+
+**Note**
+The term type on an offer is `NetPaymentTerm`, and the term type on a Resale Authorization is `ResaleNetPaymentTerm`. For more information about setting net payment terms on a Resale Authorization, see [Update net payment terms](work-with-resale-authorizations.md#update-resale-net-payment-terms).
+
+If the Resale Authorization doesn't contain a net payment term, you can't add one to the CPPO, and your buyer's payment terms with AWS apply. You also can't remove the net payment term from a CPPO when the Resale Authorization contains one.
+
+**Request Syntax**
+
+```
+POST /StartChangeSet HTTP/1.1
+Content-type: application/json
+
+{
+  "Catalog": "AWSMarketplace",
+  "ChangeSet": [
+    {
+      "ChangeType": "UpdateNetPaymentTerms",
+      "Entity": {
+        "Type": "Offer@1.0",
+        "Identifier": "offer-123456789"
+      },
+      "DetailsDocument": {
+        "Terms": [
+          {
+            "Type": "NetPaymentTerm",
+            "PaymentDuePeriod": "P30D"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+Provide information for the fields to add the `UpdateNetPaymentTerms` change type:
++ **Entity** (object) (required) – Your offer.
+  + **Type** (string) (required) – The `Type` is always `Offer@1.0`.
+  + **Identifier** (string) (required) – Your offer ID. For more information, see [Identifier](catalog-apis.md#identifier).
++ **DetailsDocument** (object) (required) – The JSON value of specifics of the request.
+  + **Terms** (array of structures) (required) – List of net payment terms that you want to update. An offer can contain at most one net payment term. Supported terms are:
+    + **NetPaymentTerm** (object) (required) – Defines the net payment terms that are negotiated with the buyer.
+      + **Type** (string) (required) – Type of the term being updated. This is the object value: `"NetPaymentTerm"`.
+      + **PaymentDuePeriod** (string) (required) – The number of days after the invoice issuance date that payment is due. This field supports the ISO 8601 format. Supported values are `P15D`, `P30D`, `P45D`, `P60D`, `P90D`, and `P120D`. This value can't exceed the `PaymentDuePeriod` in the `ResaleNetPaymentTerm` of the Resale Authorization.
+
+**Synchronous Validations**
+
+The following schema validations are specific to `UpdateNetPaymentTerms` actions in the AWS Marketplace Catalog API. These validations are performed when you call `StartChangeSet`. If the request doesn't meet the following requirements, it will fail with an HTTP response.
+
+| Input field | Validation rule | HTTP code |
+| --- | --- | --- |
+| Terms | Required<br />Only `NetPaymentTerm` is allowed<br />List size must be less than 2 | 422 |
+| Terms[].Type | Required<br />Can only be `NetPaymentTerm` | 422 |
+| Terms[].NetPaymentTerm.PaymentDuePeriod | Required<br />Expected format: ISO 8601 duration<br />Allowed values: ["P15D", "P30D", "P45D", "P60D", "P90D", "P120D"] | 422 |
+
+**Asynchronous Errors**
+
+The following errors are specific to `UpdateNetPaymentTerms` actions on a CPPO in the AWS Marketplace Catalog API. These errors are returned when you call `DescribeChangeSet` after a change set is processing. For more information about using `DescribeChangeSet` to get the status of a change request, see [Working with change sets](catalog-apis.md#working-with-change-sets).
+
+| Error code | Error message |
+| --- | --- |
+| INVALID\_PAYMENT\_DUE\_PERIOD | Provide a supported PaymentDuePeriod. |
+| INCOMPATIBLE\_RESALE\_AUTHORIZATION | NetPaymentTerm isn't supported because the ResaleAuthorization doesn't contain a NetPaymentTerm. |
+| INCOMPATIBLE\_RESALE\_AUTHORIZATION | Ensure PaymentDuePeriod in NetPaymentTerm is compatible with the ResaleAuthorization. |
+| INCOMPATIBLE\_RESALE\_AUTHORIZATION | NetPaymentTerm can't be removed because the ResaleAuthorization contains a NetPaymentTerm. |
 
 ## Publish the CPPO
 <a name="release-offer-cppo"></a>

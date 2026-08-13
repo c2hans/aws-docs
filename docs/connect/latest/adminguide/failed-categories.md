@@ -2,18 +2,18 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/failed-categories.html
 ---
 
-# When a rule or category fails to be evaluated by Connect Customer Contact Lens
+# When a rule or category fails to be evaluated by Connect Customer conversational analytics
 <a name="failed-categories"></a>
 
-When Connect Customer Contact Lens evaluates a rule or category during a post-contact analysis for a voice or chat contact, it is possible that the rule or category fails to evaluate.
+When Connect Customer conversational analytics evaluates a rule or category during a post-contact analysis for a voice or chat contact, it is possible that the rule or category fails to evaluate.
 
 Following are the possible category outcomes when a rule or category is evaluated during contact analysis:
 
 1. **Successfully matched and applied to the contact**. When categories are displayed on the **Contact details** page, it indicates they were successfully matched and applied to the contact.
 
-1. **Successfully evaluated and but they don't apply to the contact**. When categories are absent from the **Contact details** page, it indicates they don't apply to the contact but were successfully evaluated by Contact Lens rules.
+1. **Successfully evaluated and but they don't apply to the contact**. When categories are absent from the **Contact details** page, it indicates they don't apply to the contact but were successfully evaluated by conversational analytics rules.
 
-1. **The contact analysis was completed but a specific category was not evaluated**. When a category fails to be evaluated, it doesn't mean the category doesn't apply to the contact (based on its criteria), but rather that Contact Lens completed the contact analysis without evaluating this specific category.
+1. **The contact analysis was completed but a specific category was not evaluated**. When a category fails to be evaluated, it doesn't mean the category doesn't apply to the contact (based on its criteria), but rather that conversational analytics completed the contact analysis without evaluating this specific category.
 
 The following image shows that failed categories are denoted with their dashed borders, transparent backgrounds, error icons, and failed prefixes. When you hover over a failed category, details about why the category failed to evaluate are displayed.
 
@@ -27,7 +27,7 @@ These failed categories only exist from rules with the semantic match condition.
 
 We recommend adding more conditions to your semantic match rules to narrow down the number of contacts it may apply to. This will help avoid quota exceeded failures.
 
-## Contact Lens post-contact analysis output customer S3 file
+## Conversational analytics post-contact analysis output customer S3 file
 <a name="failed-categories-output-file"></a>
 
 Failed categories appear in the analysis file under JobDetails > Skipped Analysis.
@@ -73,4 +73,4 @@ Following is an example of failed categories within `JobDetails`:
 },
 ```
 
-For more information, see [Example Contact Lens conversational analytics output files for a call](contact-lens-example-output-files.md).
+For more information, see [Example conversational analytics output files for a call](contact-lens-example-output-files.md).

@@ -26,7 +26,7 @@ Amazon MQ supports two major version releases of RabbitMQ:
 ## Listing supported engine versions
 <a name="rabbitmq-version-management-listing-versions"></a>
 
- You can list all supported minor and major engine versions by using the [https://docs.aws.amazon.com/cli/latest/reference/mq/describe-broker-instance-options.html](https://docs.aws.amazon.com/cli/latest/reference/mq/describe-broker-instance-options.html) AWS CLI command.
+ You can list all supported minor and major engine versions by using the [`describe-broker-instance-options`](https://docs.aws.amazon.com/cli/latest/reference/mq/describe-broker-instance-options.html) AWS CLI command.
 
 ```
 aws mq describe-broker-instance-options

@@ -211,9 +211,9 @@ This example illustrates one usage of DescribeAgreement.
    "proposer": {
         "accountId": "123456789010"
    },
-   "startTime": 2019-10-08T21:40:43.644Z,
-   "endTime": 2023-10-08T21:40:43.644Z,
-   "acceptanceTime": 2019-10-08T00:00:00.000Z,
+   "startTime": "2019-10-08T21:40:43.644Z",
+   "endTime": "2023-10-08T21:40:43.644Z",
+   "acceptanceTime": "2019-10-08T00:00:00.000Z",
    "agreementType": "PurchaseAgreement",
    "proposalSummary": {
        "resources": [

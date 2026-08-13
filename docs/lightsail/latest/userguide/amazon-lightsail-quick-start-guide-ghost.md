@@ -23,7 +23,7 @@ Here are a few steps you should take to get started after your Ghost instance is
 ## Step 1: Read the Bitnami documentation
 <a name="amazon-lightsail-read-the-bitnami-documentation-ghost"></a>
 
-Read the Bitnami documentation to learn how to configure your Ghost application. For more information, see the [https://docs.bitnami.com/general/apps/ghost/](https://docs.bitnami.com/general/apps/ghost/).
+Read the Bitnami documentation to learn how to configure your Ghost application. For more information, see the [*Ghost Packaged By Bitnami For AWS Cloud*](https://docs.bitnami.com/general/apps/ghost/).
 
 ## Step 2: Get the default application password to access the Ghost administration dashboard
 <a name="amazon-lightsail-get-the-default-user-password-ghost"></a>

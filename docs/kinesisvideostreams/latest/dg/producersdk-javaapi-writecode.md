@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producersd
 
 In this section of the [Java producer library procedure](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producer-sdk-javaapi.html), you write and examine the Java example code that you downloaded in the previous section.
 
-The Java test application ([https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-java/blob/master/src/main/demo/com/amazonaws/kinesisvideo/demoapp/DemoAppMain.java](https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-java/blob/master/src/main/demo/com/amazonaws/kinesisvideo/demoapp/DemoAppMain.java)) shows the following coding pattern:
+The Java test application ([`DemoAppMain`](https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-java/blob/master/src/main/demo/com/amazonaws/kinesisvideo/demoapp/DemoAppMain.java)) shows the following coding pattern:
 + Create an instance of `KinesisVideoClient`.
 + Create an instance of `MediaSource`.
 + Register the `MediaSource` with the client.

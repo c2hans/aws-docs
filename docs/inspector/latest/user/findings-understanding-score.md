@@ -56,7 +56,7 @@ This section summarizes available intelligence about the CVE from Amazon as well
 **Note**
 Intel from CISA or Amazon won't be available for all CVEs.
 
-You can view vulnerability intelligence details in the console or by using the [https://docs.aws.amazon.com/inspector/v2/APIReference/API_BatchGetFindingDetails.html](https://docs.aws.amazon.com/inspector/v2/APIReference/API_BatchGetFindingDetails.html) API. The following details are available in the console:
+You can view vulnerability intelligence details in the console or by using the [BatchGetFindingDetails](https://docs.aws.amazon.com/inspector/v2/APIReference/API_BatchGetFindingDetails.html) API. The following details are available in the console:
 
 **ATT&CK**
 This section shows the MITRE tactics, techniques, and procedures (TTPs) associated with the CVE. The associated TTPs are shown, if there are more than two applicable TTPs you can select the link to see a complete list. Selecting a tactic or technique opens information about it on the MITRE website.

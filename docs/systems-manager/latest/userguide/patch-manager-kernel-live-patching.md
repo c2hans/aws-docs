@@ -7,21 +7,14 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 # Using Kernel Live Patching on Amazon Linux 2 managed nodes
 <a name="patch-manager-kernel-live-patching"></a>
 
-Kernel Live Patching for Amazon Linux 2 allows you to apply security vulnerability and critical bug patches to a running Linux kernel without reboots or disruptions to running applications. This allows you to benefit from improved service and application availability, while keeping your infrastructure secure and up to date. Kernel Live Patching is supported on Amazon EC2 instances, AWS IoT Greengrass core devices, and [on-premises virtual machines](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-linux-2-virtual-machine.html) running Amazon Linux 2.
+Kernel Live Patching for Amazon Linux 2 lets you apply security vulnerability and critical bug patches to a running Linux kernel without reboots or disruptions to running applications. This lets you benefit from improved service and application availability, while keeping your infrastructure secure and up to date. Kernel Live Patching is supported on Amazon EC2 instances, AWS IoT Greengrass core devices, and [on-premises virtual machines](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-linux-2-virtual-machine.html) running Amazon Linux 2.
 
 For general information about Kernel Live Patching, see [Kernel Live Patching on AL2](https://docs.aws.amazon.com/linux/al2/ug/al2-live-patching.html) in the *Amazon Linux 2 User Guide*.
 
-After you turn on Kernel Live Patching on an Amazon Linux 2 managed node, you can use Patch Manager, a tool in AWS Systems Manager, to apply kernel live patches to the managed node. Using Patch Manager is an alternative to using existing yum workflows on the node to apply the updates.
+After you turn on Kernel Live Patching on an Amazon Linux 2 managed node, you can use Patch Manager to apply kernel live patches to the managed node. Using Patch Manager is an alternative to using existing yum workflows on the node to apply the updates.
 
 **Before you begin**
-To use Patch Manager to apply kernel live patches to your Amazon Linux 2 managed nodes, ensure your nodes are based on the correct architecture and kernel version. For information, see [Supported configurations and prerequisites](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/al2-live-patching.html#al2-live-patching-prereq) in the *Amazon EC2 User Guide*.
-
-**Topics**
-+ [Kernel Live Patching  using  Patch Manager](#about-klp)
-+ [How Kernel Live Patching using Patch Manager works](#how-klp-works)
-+ [Turning on Kernel Live Patching using Run Command](enable-klp.md)
-+ [Applying kernel live patches using Run Command](install-klp.md)
-+ [Turning off Kernel Live Patching using Run Command](disable-klp.md)
+To use Patch Manager to apply kernel live patches to your Amazon Linux 2 managed nodes, make sure your nodes are based on the correct architecture and kernel version. For information, see [Supported configurations and prerequisites](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/al2-live-patching.html#al2-live-patching-prereq) in the *Amazon EC2 User Guide*.
 
 ## Kernel Live Patching  using  Patch Manager
 <a name="about-klp"></a>
@@ -59,9 +52,9 @@ We recommend the following strategy to patch your managed nodes with kernel live
 
 1. Turn on Kernel Live Patching on your Amazon Linux 2 managed nodes.
 
-1. Use Run Command, a tool in AWS Systems Manager, to run a `Scan` operation on your managed nodes using the predefined `AWS-AmazonLinux2DefaultPatchBaseline` or a custom patch baseline that also targets only `Security` updates with severity classified as `Critical` and `Important`, and the `Bugfix` severity of `All`.
+1. Use Run Command to run a `Scan` operation on your managed nodes using the predefined `AWS-AmazonLinux2DefaultPatchBaseline` or a custom patch baseline that also targets only `Security` updates with severity classified as `Critical` and `Important`, and the `Bugfix` severity of `All`.
 
-1. Use Compliance, a tool in AWS Systems Manager, to review whether non-compliance for patching is reported for any of the managed nodes that were scanned. If so, view the node compliance details to determine whether any kernel live patches are missing from the managed node.
+1. Use Compliance to review whether non-compliance for patching is reported for any of the managed nodes that were scanned. If so, view the node compliance details to determine whether any kernel live patches are missing from the managed node.
 
 1. To install missing kernel live patches, use Run Command with the same patch baseline you specified before, but this time run an `Install` operation instead of a `Scan` operation.
 

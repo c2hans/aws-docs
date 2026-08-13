@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/sdkoption
 # General configuration using `Aws::SDKOptions` in the AWS SDK for C\+\+
 <a name="sdkoptions"></a>
 
-The [https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aws-cpp-sdk-core/html/struct_aws_1_1_s_d_k_options.html](https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aws-cpp-sdk-core/html/struct_aws_1_1_s_d_k_options.html) struct contains SDK configuration options. `Aws::SDKOptions` focuses on general SDK configuration, whereas the [`ClientConfiguration`](client-config.md) struct focuses on configuration of communicating with AWS services.
+The [`Aws::SDKOptions`](https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aws-cpp-sdk-core/html/struct_aws_1_1_s_d_k_options.html) struct contains SDK configuration options. `Aws::SDKOptions` focuses on general SDK configuration, whereas the [`ClientConfiguration`](client-config.md) struct focuses on configuration of communicating with AWS services.
 
-An instance of [https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aws-cpp-sdk-core/html/struct_aws_1_1_s_d_k_options.html](https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aws-cpp-sdk-core/html/struct_aws_1_1_s_d_k_options.html) is passed to the [`Aws::InitAPI` and `Aws::ShutdownAPI` methods](basic-use.md). The same instance should be sent to both methods.
+An instance of [`Aws::SDKOptions`](https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aws-cpp-sdk-core/html/struct_aws_1_1_s_d_k_options.html) is passed to the [`Aws::InitAPI` and `Aws::ShutdownAPI` methods](basic-use.md). The same instance should be sent to both methods.
 
 The following samples demonstrate some of the available options.
 + Turn logging on using the default logger

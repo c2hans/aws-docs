@@ -7,7 +7,18 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-m
 # AWS Systems Manager Fleet Manager
 <a name="fleet-manager"></a>
 
-Fleet Manager, a tool in AWS Systems Manager, is a unified user interface (UI) experience that helps you remotely manage your nodes running on AWS or on premises. With Fleet Manager, you can view the health and performance status of your entire server fleet from one console. You can also gather data from individual nodes to perform common troubleshooting and management tasks from the console. This includes connecting to Windows instances using the Remote Desktop Protocol (RDP), viewing folder and file contents, Windows registry management, operating system user management, and more.
+Fleet Manager is a unified user interface (UI) experience that helps you remotely manage your nodes running on AWS or on premises. With Fleet Manager, you can view the health and performance status of your entire server fleet from one console. You can also gather data from individual nodes to perform common troubleshooting and management tasks from the console. This includes connecting to Windows instances using the Remote Desktop Protocol (RDP), viewing folder and file contents, Windows registry management, operating system user management, and more.
+
+This section includes the following topics.
++ [Setting up Fleet Manager](setting-up-fleet-manager.md)
++ [Monitoring managed node performance](fleet-manager-monitoring-node-performance.md)
++ [Connecting to a Windows Server managed instance using Remote Desktop](fleet-manager-remote-desktop-connections.md)
++ [Managing Amazon EBS volumes on managed instances](fleet-manager-manage-amazon-ebs-volumes.md)
++ [Accessing the Red Hat Knowledge base portal](fleet-manager-red-hat-knowledge-base-access.md)
++ [Viewing logs on managed nodes](fleet-manager-view-node-logs.md)
++ [Working with processes](fleet-manager-manage-processes.md)
++ [Managing OS user accounts and groups on managed nodes using Fleet Manager](fleet-manager-manage-os-user-accounts.md)
++ [Troubleshooting managed node availability using `ssm-cli`](troubleshooting-managed-nodes-using-ssm-cli.md)
 
 To get started with Fleet Manager, open the [Systems Manager console](https://console.aws.amazon.com/systems-manager/fleet-manager). In the navigation pane, choose **Fleet Manager**.
 
@@ -49,15 +60,3 @@ If you stopped your managed instance before July 12, 2021, it won't display the 
 + **Control access to features**
 
   Control access to Fleet Manager features using AWS Identity and Access Management (IAM) policies. With these policies, you can control which individual users or groups in your organization can use various Fleet Manager features, and which managed nodes they can manage.
-
-**Topics**
-+ [Who should use Fleet Manager?](#fleet-who)
-+ [How can Fleet Manager benefit my organization?](#fleet-benefits)
-+ [What are the features of Fleet Manager?](#fleet-features)
-+ [Setting up Fleet Manager](setting-up-fleet-manager.md)
-+ [Working with managed nodes](fleet-manager-managed-nodes.md)
-+ [Managing EC2 instances automatically with Default Host Management Configuration](fleet-manager-default-host-management-configuration.md)
-+ [Connecting to a Windows Server managed instance using Remote Desktop](fleet-manager-remote-desktop-connections.md)
-+ [Managing Amazon EBS volumes on managed instances](fleet-manager-manage-amazon-ebs-volumes.md)
-+ [Accessing the Red Hat Knowledge base portal](fleet-manager-red-hat-knowledge-base-access.md)
-+ [Troubleshooting managed node availability](fleet-manager-troubleshooting-managed-nodes.md)

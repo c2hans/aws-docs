@@ -7,7 +7,7 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 # Monitoring and updating incidents
 <a name="mon-update-incident-console"></a>
 
-You can update, monitor, and review incident reports and service requests, both called cases, by using the AMS console, or programmatically using the Support API. For information on using the Support API, see [https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeCases.html](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeCases.html) operation.
+You can update, monitor, and review incident reports and service requests, both called cases, by using the AMS console, or programmatically using the Support API. For information on using the Support API, see [`DescribeCases`](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeCases.html) operation.
 
 To monitor a case, incident or service request, using the AMS console, follow these steps.
 

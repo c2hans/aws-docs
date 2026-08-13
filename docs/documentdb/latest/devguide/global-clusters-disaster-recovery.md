@@ -10,6 +10,7 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/global-cluste
 + [Performing a manual failover for an Amazon DocumentDB global cluster](#manual-failover)
 + [Performing a switchover for an Amazon DocumentDB global cluster](#global-cluster-switchover)
 + [Unblocking a global cluster switchover or failover](#unblocking-gc-so-fo)
++ [Managing RPOs for Amazon DocumentDB global clusters](#global-clusters-manage-recovery)
 
 By using a global cluster, you can recover from disasters such as Region failures quickly. Recovery from disaster is typically measured using values for RTO and RPO.
 + **Recovery time objective (RTO)** — The time it takes a system to return to a working state after a disaster. In other words, RTO measures downtime. For a global cluster, RTO in minutes.
@@ -79,7 +80,7 @@ You can fail over your Amazon DocumentDB global cluster using the AWS Management
 
 **Perform a managed failover on your Amazon DocumentDB global cluster**
 
-Run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/failover-global-cluster.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/failover-global-cluster.html) CLI command to fail over your Amazon DocumentDB global cluster. With the command, pass values for the following options:
+Run the [`failover-global-cluster`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/failover-global-cluster.html) CLI command to fail over your Amazon DocumentDB global cluster. With the command, pass values for the following options:
 + `--region`
 + `--global-cluster-identifier`
 + `--target-db-cluster-identifier`
@@ -209,7 +210,7 @@ You can switch over your Amazon DocumentDB global cluster using the AWS Manageme
 
 **Perform a switchover on your Amazon DocumentDB global cluster**
 
-Run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/switchover-global-cluster.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/switchover-global-cluster.html) CLI command to switch over your Amazon DocumentDB global cluster. With the command, pass values for the following options:
+Run the [`switchover-global-cluster`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/switchover-global-cluster.html) CLI command to switch over your Amazon DocumentDB global cluster. With the command, pass values for the following options:
 + `--region`
 + `--global-cluster-identifier`
 + `--target-db-cluster-identifier`
@@ -277,7 +278,7 @@ To unblock a global cluster switchover or failover, you must determine if there 
 
 1. Run the following on each secondary Region's regional cluster first and then for the primary Regions regional cluster.
 
-1. Run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-pending-maintenance-actions.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-pending-maintenance-actions.html) CLI command with the `--resource-identifier` option to determine if any maintenance actions are available for your Amazon DocumentDB regional cluster.
+1. Run the [`describe-pending-maintenance-actions`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-pending-maintenance-actions.html) CLI command with the `--resource-identifier` option to determine if any maintenance actions are available for your Amazon DocumentDB regional cluster.
 
    In the following examples, replace each {{user input placeholder}} with your cluster's information.
 
@@ -317,7 +318,7 @@ To unblock a global cluster switchover or failover, you must determine if there 
    }
    ```
 
-1. If a maintenance action is needed, run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/apply-pending-maintenance-action.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/apply-pending-maintenance-action.html) CLI command with the following options:
+1. If a maintenance action is needed, run the [`apply-pending-maintenance-action`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/apply-pending-maintenance-action.html) CLI command with the following options:
    + `--resource-identifier`
    + `--apply-action`
    + `--opt-in-type`
@@ -345,7 +346,7 @@ To unblock a global cluster switchover or failover, you must determine if there 
       --region {{us-east-1}}
    ```
 
-1. Once the maintenance action has completed, run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-pending-maintenance-actions.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-pending-maintenance-actions.html) command again to ensure that there are no other actions pending for your cluster.
+1. Once the maintenance action has completed, run the [`describe-pending-maintenance-actions`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-pending-maintenance-actions.html) command again to ensure that there are no other actions pending for your cluster.
 
    The result you want is:
 
@@ -365,5 +366,173 @@ To unblock a global cluster switchover or failover, you must determine if there 
 1. Call the [PendingMaintenanceAction](https://docs.aws.amazon.com/documentdb/latest/APIReference/API_PendingMaintenanceAction.html) API to determine if any maintenance actions are available for your Amazon DocumentDB global cluster.
 
 1. Apply any changes by calling the [ApplyPendingMaintenanceAction](https://docs.aws.amazon.com/documentdb/latest/APIReference/API_ApplyPendingMaintenanceAction.html) API.
+
+------
+
+## Managing RPOs for Amazon DocumentDB global clusters
+<a name="global-clusters-manage-recovery"></a>
+
+ With a Amazon DocumentDB global cluster, you can manage the recovery point objective (RPO) by using the `global_db_rpo` parameter. RPO represents the maximum amount of data that can be lost in the event of an outage.
+
+ When you set an RPO for your Amazon DocumentDB global cluster, Amazon DocumentDB monitors the *RPO lag time* of all secondary clusters. This monitoring ensures that at least one secondary cluster stays within the target RPO window.
+
+ The RPO setting controls how Amazon DocumentDB manages write transactions on the primary cluster to limit potential data loss if a failover occurs. Amazon DocumentDB evaluates RPO and RPO lag times to commit (or block) transactions on the primary as follows:
++  Commits the transaction if at least one secondary DB cluster has an RPO lag time less than the RPO.
++  Blocks the transaction if all secondary DB clusters have RPO lag times that are larger than the RPO.
+
+ In other words, if all secondary clusters are behind the target RPO, Amazon DocumentDB pauses transactions on the primary cluster. Amazon DocumentDB resumes and commits paused transactions as soon as the lag time of at least one secondary DB cluster drops below the RPO. The result is that no transactions can commit until the RPO is met.
+
+ The `global_db_rpo` parameter is dynamic. If you decide that you don't want all write transactions to stall until the lag decreases sufficiently, you can reset it quickly. In this case, Amazon DocumentDB applies the change after a short delay.
+
+**Important**
+ In a global database with only two AWS Regions, we recommend keeping the `global_db_rpo` parameter's default value in the secondary Region's parameter group. Otherwise, performing a failover due to a loss of the primary AWS Region could cause Amazon DocumentDB to pause transactions. Instead, wait until Amazon DocumentDB completes rebuilding the cluster in the old failed AWS Region before changing this parameter to enforce a maximum RPO.
+
+**Topics**
++ [Setting the recovery point objective](#global-clusters-set-rpo)
++ [Viewing the recovery point objective](#global-clusters-view-rpo)
++ [Disabling the recovery point objective](#global-clusters-disable-rpo)
+
+### Setting the recovery point objective
+<a name="global-clusters-set-rpo"></a>
+
+ The `global_db_rpo` parameter controls the RPO setting for a Amazon DocumentDB database. Valid values range from 20 seconds to 2,147,483,647 seconds (68 years). Choose a realistic value to meet your business need. For example, you might want to allow up to 10 minutes for your RPO, in which case you set the value to 600.
+
+ You can set this value for your Amazon DocumentDB global cluster by using the AWS Management Console, the AWS CLI, or the Amazon DocumentDB API.
+
+------
+#### [ Using the AWS Management Console ]
+
+**To set the RPO**
+
+1. Sign in to the AWS Management Console, and open the Amazon DocumentDB console at [https://console.aws.amazon.com/docdb](https://console.aws.amazon.com/docdb).
+
+1.  Choose the primary cluster of your Amazon DocumentDB global cluster and open the **Configuration** tab to find its DB cluster parameter group.
+
+    Parameter groups can't be edited directly. Instead, you do the following:
+   +  Create a custom DB cluster parameter group using the appropriate default parameter group as the starting point.
+   +  On your custom DB cluster parameter group, set the value of the **global\_db\_rpo** parameter to meet your use case. Valid values range from 20 seconds up to the maximum integer value of 2,147,483,647 (68 years).
+   +  Apply the modified DB cluster parameter group to your Amazon DocumentDB DB cluster.
+
+ For more information about modifying DB cluster parameter groups, see [Modifying Amazon DocumentDB cluster parameter groups](cluster_parameter_groups-modify.md).
+
+------
+#### [ Using the AWS CLI ]
+
+ To set the `global_db_rpo` parameter, use the [modify-db-cluster-parameter-group](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/modify-db-cluster-parameter-group.html) CLI command. In the command, specify the name of your primary cluster's parameter group and values for the RPO parameter.
+
+ The following example sets the RPO to 600 seconds (10 minutes) for the primary DB cluster's parameter group named `my_custom_global_parameter_group`.
+
+For Linux, macOS, or Unix:
+
+```
+aws docdb modify-db-cluster-parameter-group \
+    --db-cluster-parameter-group-name {{my_custom_global_parameter_group}} \
+    --parameters "ParameterName=global_db_rpo,ParameterValue={{600}},ApplyMethod=immediate"
+```
+
+For Windows:
+
+```
+aws docdb modify-db-cluster-parameter-group ^
+    --db-cluster-parameter-group-name {{my_custom_global_parameter_group}} ^
+    --parameters "ParameterName=global_db_rpo,ParameterValue={{600}},ApplyMethod=immediate"
+```
+
+------
+#### [ Using the Amazon DocumentDB API ]
+
+ To modify the `global_db_rpo` parameter, use the [ModifyDBClusterParameterGroup](https://docs.aws.amazon.com/documentdb/latest/developerguide/API_ModifyDBClusterParameterGroup.html) API operation.
+
+------
+
+### Viewing the recovery point objective
+<a name="global-clusters-view-rpo"></a>
+
+ The recovery point objective (RPO) of a global cluster is stored in the `global_db_rpo` parameter for each DB cluster.
+
+ You can use the CLI to view the `global_db_rpo` parameter for a Amazon DocumentDB DB cluster. Use the `--query` option to return only the `global_db_rpo` parameter from the parameter group.
+
+For Linux, macOS, or Unix:
+
+```
+aws docdb describe-db-cluster-parameters \
+    --db-cluster-parameter-group-name {{my_custom_global_parameter_group}} \
+    --query "Parameters[?ParameterName=='global_db_rpo']"
+```
+
+For Windows:
+
+```
+aws docdb describe-db-cluster-parameters ^
+    --db-cluster-parameter-group-name {{my_custom_global_parameter_group}} ^
+    --query "Parameters[?ParameterName=='global_db_rpo']"
+```
+
+ The command returns output similar to the following.
+
+```
+[
+    {
+        "ParameterName": "global_db_rpo",
+        "Description": "(s) Recovery point objective threshold, in seconds, that blocks user commits when it is violated.",
+        "Source": "engine-default",
+        "ApplyType": "dynamic",
+        "DataType": "integer",
+        "AllowedValues": "20-2147483647",
+        "IsModifiable": true,
+        "ApplyMethod": "immediate"
+    }
+]
+```
+
+ For more information about viewing parameters of the cluster parameter group, see [Managing Amazon DocumentDB cluster parameter groups](cluster_parameter_groups.md).
+
+### Disabling the recovery point objective
+<a name="global-clusters-disable-rpo"></a>
+
+ To disable the RPO, reset the `global_db_rpo` parameter. You can reset parameters using the AWS Management Console, the AWS CLI, or the Amazon DocumentDB API.
+
+------
+#### [ Using the AWS Management Console ]
+
+**To disable the RPO**
+
+1. Sign in to the AWS Management Console, and open the Amazon DocumentDB console at [https://console.aws.amazon.com/docdb](https://console.aws.amazon.com/docdb).
+
+1. In the navigation pane, choose **Parameter groups**.
+
+1. In the list, choose your primary DB cluster parameter group.
+
+1. Choose the radio button next to the **global\_db\_rpo** parameter.
+
+1. Choose **Reset to default** and confirm it.
+
+ For more information about how to reset a parameter with the console, see [Modifying Amazon DocumentDB cluster parameter groups](cluster_parameter_groups-modify.md).
+
+------
+#### [ Using the AWS CLI ]
+
+ To reset the `global_db_rpo` parameter, use the [reset-db-cluster-parameter-group](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/reset-db-cluster-parameter-group.html) command.
+
+For Linux, macOS, or Unix:
+
+```
+aws docdb reset-db-cluster-parameter-group \
+    --db-cluster-parameter-group-name {{my_custom_global_parameter_group}} \
+    --parameters "ParameterName=global_db_rpo,ApplyMethod=immediate"
+```
+
+For Windows:
+
+```
+aws docdb reset-db-cluster-parameter-group ^
+    --db-cluster-parameter-group-name {{my_custom_global_parameter_group}} ^
+    --parameters "ParameterName=global_db_rpo,ApplyMethod=immediate"
+```
+
+------
+#### [ Using the Amazon DocumentDB API ]
+
+ To reset the `global_db_rpo` parameter, use the [ResetDBClusterParameterGroup](https://docs.aws.amazon.com/documentdb/latest/developerguide/API_ResetDBClusterParameterGroup.html) API operation.
 
 ------

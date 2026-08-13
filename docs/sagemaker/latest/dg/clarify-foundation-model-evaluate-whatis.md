@@ -46,7 +46,7 @@ You can update the inference parameters in Studio after adding the model to your
 
 Automatic model evaluation jobs use metrics based on benchmarks to measure toxic, harmful, or otherwise poor responses to your customers. Model responses are scored using either built-in datasets specific to the task or you can specify your own custom prompt dataset.
 
-To create an automatic model evaluation job you can use Studio or the [https://github.com/aws/fmeval?tab=readme-ov-file#foundation-model-evaluations-library](https://github.com/aws/fmeval?tab=readme-ov-file#foundation-model-evaluations-library) library. Automatic model evaluation jobs support the use of a single model. In Studio, you can use either a JumpStart model or you can use JumpStart model that you've previously deployed to an endpoint.
+To create an automatic model evaluation job you can use Studio or the [`fmeval`](https://github.com/aws/fmeval?tab=readme-ov-file#foundation-model-evaluations-library) library. Automatic model evaluation jobs support the use of a single model. In Studio, you can use either a JumpStart model or you can use JumpStart model that you've previously deployed to an endpoint.
 
 Alternatively, you can deploy the `fmeval` library into your own code base, and customize the model evaluation job for your own use cases.
 

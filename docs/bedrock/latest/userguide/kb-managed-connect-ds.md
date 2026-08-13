@@ -31,7 +31,12 @@ Within `dataSourceConfiguration`, you must specify the following:
 + `managedKnowledgeBaseConnectorConfiguration` – Configuration for the connector. Contains the following fields:
   + `connectorParameters` (required) – Contains a `type` field that specifies the connector type and a required `version` field set to `1`. Supported type values are `S3`, `ONEDRIVE`, `CONFLUENCE`, `SHAREPOINT`, `WEB_CRAWLER`, and `GOOGLE_DRIVE`. The remaining fields in `connectorParameters` differ by connector type — refer to each data connector page for more details.
   + `deletionProtectionConfiguration` (optional) – A safeguard against accidental bulk deletion of indexed content. Contains `deletionProtectionStatus` (`ENABLED` or `DISABLED`) and, when enabled, an optional `deletionProtectionThreshold` (0–100, defaults to 15). The threshold is the maximum percentage of documents that a sync job can delete from your index. If a sync would delete more than this percentage, the sync skips its delete phase, leaving your indexed documents in place. Not supported for the Custom connector.
-  + `mediaExtractionConfiguration` (optional) – Configuration for extracting media (images, audio, video) from data source files.
+  + `mediaExtractionConfiguration` (optional) – Configuration for extracting media (images, audio, video) from data source files. Contains three sub-configurations that you can enable independently:
+    + `imageExtractionConfiguration` (optional) – Processes, extracts, and indexes content from standalone image files (.png, .jpg, .jpeg, .jpe, .tif, .tiff, .gif, .bmp, .webp, .svg, .jp2, .heic) and embedded visuals in .pdf, .docx, .ppt, .pptx files.
+    + `audioExtractionConfiguration` (optional) – Processes, extracts, and indexes content from supported audio files (.mp3, .wav, .m4a, .flac, .ogg).
+    + `videoExtractionConfiguration` (optional) – Processes, extracts, and indexes content from supported video files (.mp4, .mov, .m4v).
+
+    For the full field reference, see [MediaExtractionConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_MediaExtractionConfiguration.html) in the Amazon Bedrock API Reference.
 
 **Optional fields:**
 
@@ -81,6 +86,7 @@ The following example shows a `CreateDataSource` request with an S3 connector:
 To learn more about a specific connector and its configuration, select a topic below.
 
 **Topics**
++ [Box](kb-managed-ds-box.md)
 + [Amazon S3](kb-managed-ds-s3.md)
 + [Confluence](kb-managed-ds-confluence.md)
 + [Custom](kb-managed-ds-custom.md)

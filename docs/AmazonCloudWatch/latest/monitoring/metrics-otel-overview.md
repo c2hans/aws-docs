@@ -19,7 +19,7 @@ Use OpenTelemetry metrics when:
 | Page | Description |
 | --- | --- |
 | [Send metrics using OpenTelemetry](metrics-otel-send.md) | Publish custom metrics through the OTLP endpoint using OTel SDKs or collectors |
-| [AWS vended metrics in OpenTelemetry format](CloudWatch-OTelEnrichment.md) | Enable AWS services to publish metrics as OTel data points with resource tags. Uses OTel Vended Metric Enrichment to convert existing AWS service metrics (Amazon EC2, Amazon RDS, ELB, etc.) into the OTel path with full label enrichment — no agent or code changes required. |
+| [AWS vended metrics in OpenTelemetry format](CloudWatch-OTelEnrichment.md) | Enable AWS services to publish metrics as OTel data points with resource tags. Uses OTel Vended Metric Enrichment to convert existing AWS service metrics (Amazon EC2, Amazon RDS, ELB, and so on) into the OTel path with full label enrichment — no agent or code changes required. |
 | [Query metrics with PromQL](CloudWatch-PromQL.md) | Query, aggregate, and filter OTel metrics using the Prometheus Query Language |
 | [OTel metrics pricing and storage](metrics-otel-pricing.md) | Per-GB ingestion pricing, included 15-month retention, no per-metric or API charges |
 | [Migrate from Classic to OTel metrics](metrics-otel-migrate.md) | Incremental migration from PutMetricData/EMF to OTLP |

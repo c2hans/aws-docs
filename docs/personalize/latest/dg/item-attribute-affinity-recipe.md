@@ -33,7 +33,7 @@ The table also provides the following information for each hyperparameter:
   <tr><th>Name</th><th>Description</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2">Algorithm hyperparameters</td></tr>
-  <tr><td>hidden\_dimension</td><td>The number of hidden variables used in the model. *Hidden variables* recreate users' purchase history and item statistics to generate ranking scores. Specify a greater number of hidden dimensions when your Interactions dataset includes more complicated patterns. Using more hidden dimensions requires a larger dataset and more time to process. <br />Default value: 149<br />Range: [32, 256]<br />Value type: Integer</td></tr>
+  <tr><td colspan="2"><b>Algorithm hyperparameters</b></td></tr>
+  <tr><td><code>hidden_dimension</code></td><td>The number of hidden variables used in the model. <i>Hidden variables</i> recreate users' purchase history and item statistics to generate ranking scores. Specify a greater number of hidden dimensions when your Interactions dataset includes more complicated patterns. Using more hidden dimensions requires a larger dataset and more time to process. <br />Default value: 149<br />Range: [32, 256]<br />Value type: Integer</td></tr>
 </tbody>
 </table>

@@ -115,7 +115,7 @@ For more information, see [Specify a table location in Amazon S3](tables-locatio
 ## Use CalledVia context keys to allow only calls from Athena to another service
 <a name="s3-permissions-calledvia"></a>
 
-For added security, you can use the [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-calledvia](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-calledvia) global condition context key. The `aws:CalledVia` condition key contains a list of services that you allow to call another service. For example, you can allow `InvokeFunction` calls to AWS Lambda only if the calls come from Athena by specifying the Athena service principal name `athena.amazonaws.com` for the `aws:CalledVia` context key. For more information, see [Use CalledVia context keys for Athena](security-iam-athena-calledvia.md).
+For added security, you can use the [aws:CalledVia](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-calledvia) global condition context key. The `aws:CalledVia` condition key contains a list of services that you allow to call another service. For example, you can allow `InvokeFunction` calls to AWS Lambda only if the calls come from Athena by specifying the Athena service principal name `athena.amazonaws.com` for the `aws:CalledVia` context key. For more information, see [Use CalledVia context keys for Athena](security-iam-athena-calledvia.md).
 
 ## Additional resources
 <a name="s3-permissions-additional-resources"></a>

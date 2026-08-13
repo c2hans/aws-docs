@@ -39,7 +39,7 @@ aws s3api put-bucket-notification-configuration --bucket {{amzn-s3-demo-bucket1}
 ## Using the REST API
 <a name="eventbridge-api"></a>
 
-You can programmatically enable Amazon EventBridge on a bucket by calling the Amazon S3 REST API. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketNotificationConfiguration.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketNotificationConfiguration.html) in the *Amazon Simple Storage Service API Reference*.
+You can programmatically enable Amazon EventBridge on a bucket by calling the Amazon S3 REST API. For more information, see [PutBucketNotificationConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketNotificationConfiguration.html) in the *Amazon Simple Storage Service API Reference*.
 
 The following example shows the XML used to create a bucket notification configuration with Amazon EventBridge enabled.
 

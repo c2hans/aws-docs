@@ -11,7 +11,7 @@ You can edit your pipeline type, variables, and triggers using the pipeline edit
 
 Unlike creating a pipeline, editing a pipeline does not rerun the most recent revision through the pipeline. If you want to run the most recent revision through a pipeline you've just edited, you must manually rerun it. Otherwise, the edited pipeline runs the next time you make a change to a source location configured in the source stage. For information, see [Start a pipeline manually](pipelines-rerun-manually.md).
 
-You can add actions to your pipeline that are in an AWS Region different from your pipeline. When an AWS service is the provider for an action, and this action type/provider type are in a different AWS Region from your pipeline, this is a cross-Region action. For more information about cross-Region actions, see [Add a cross-Region action in CodePipeline](actions-create-cross-region.md).
+You can add actions to your pipeline that are in an AWS Region different from your pipeline. When an AWS service is the provider for an action, and this action type/provider type are in a different AWS Region from your pipeline, this is a cross-Region action. For more information about cross-Region actions, see [Add a cross-region action in CodePipeline](actions-create-cross-region.md).
 
 CodePipeline uses change detection methods to start your pipeline when a source code change is pushed. These detection methods are based on source type:
 + CodePipeline uses Amazon CloudWatch Events to detect changes in your CodeCommit source repository or your Amazon S3 source bucket.
@@ -183,7 +183,7 @@ This is just a portion of the file, not the entire structure. For more informati
 
    CodePipeline uses Amazon CloudWatch Events to detect changes in your CodeCommit source repository and branch or your Amazon S3 source bucket. The next step includes instructions for creating these resources manually. Setting the flag to `false` disables periodic checks, which are not required when you use the recommended change detection methods.
 
-1. To add a build, test, or deploy action in a Region different from your pipeline, you must add the following to your pipeline structure. For detailed instructions, see [Add a cross-Region action in CodePipeline](actions-create-cross-region.md).
+1. To add a build, test, or deploy action in a Region different from your pipeline, you must add the following to your pipeline structure. For detailed instructions, see [Add a cross-region action in CodePipeline](actions-create-cross-region.md).
    + Add the `Region` parameter to your action's pipeline structure.
    + Use the `artifactStores` parameter to specify an artifact bucket for each Region where you have an action.
 

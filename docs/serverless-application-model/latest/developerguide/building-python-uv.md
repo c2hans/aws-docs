@@ -23,7 +23,7 @@ Use the AWS Serverless Application Model Command Line Interface (AWS SAM CLI) w
 To install Python, see [Download Python](https://www.python.org/downloads/) in the *Python website*.
 
 **uv**
-The AWS SAM CLI requires installation of [https://docs.astral.sh/uv/](https://docs.astral.sh/uv/), an extremely fast Python package installer and resolver. For installation instructions, see [Installation](https://docs.astral.sh/uv/getting-started/installation/) in the *uv documentation*.
+The AWS SAM CLI requires installation of [uv](https://docs.astral.sh/uv/), an extremely fast Python package installer and resolver. For installation instructions, see [Installation](https://docs.astral.sh/uv/getting-started/installation/) in the *uv documentation*.
 
 **Opt in to AWS SAM CLI beta feature**
 Since this feature is in preview, you must opt in using one of the following methods:

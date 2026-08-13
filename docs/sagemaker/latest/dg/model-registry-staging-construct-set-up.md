@@ -32,9 +32,9 @@ The following table contains Model Registry pre-defined stage construct template
 | Archived | Retired |
 
 The `ModelLifeCycle` parameter can be invoked by the following APIs:
-+ [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModelPackage.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModelPackage.html)
-+ [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateModelPackage.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateModelPackage.html)
-+ [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeModelPackage.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeModelPackage.html)
++ [`CreateModelPackage`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModelPackage.html)
++ [`UpdateModelPackage`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateModelPackage.html)
++ [`DescribeModelPackage`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeModelPackage.html)
 
 ------
 #### [ Policy for a data scientist role ]

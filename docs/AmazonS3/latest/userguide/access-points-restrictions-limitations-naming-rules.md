@@ -5,12 +5,13 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-
 # Access points naming rules, restrictions, and limitations
 <a name="access-points-restrictions-limitations-naming-rules"></a>
 
-Access points are named network endpoints attached to a bucket or a volume on an Amazon FSx file system that simplify managing data. When you create an access point you choose a name and the AWS Region to create it in. The following topics provide information about access point naming rules, restrictions and limitations.
+Access points are named network endpoints attached to a bucket, a volume on an Amazon FSx file system, or an Amazon S3 recovery point in AWS Backup that simplify managing data. When you create an access point you choose a name and the AWS Region to create it in. The following topics provide information about access point naming rules, restrictions and limitations.
 
 **Topics**
 + [Naming rules for access points](#access-points-names)
 + [Restrictions and limitations for access points](#access-points-restrictions-limitations)
 + [Restrictions and limitations for access points attached to a volume on an Amazon FSx file system](#access-points-restrictions-limitations-fsx)
++ [Restrictions and limitations for access points attached to an Amazon S3 recovery point in AWS Backup](#access-points-restrictions-limitations-backup)
 
 ## Naming rules for access points
 <a name="access-points-names"></a>
@@ -53,9 +54,20 @@ Amazon S3 access points have the following restrictions and limitations:
 
 The following are specific limitations when using access points attached to a volume on an Amazon FSx file system:
 + When creating an access points you can only attach the access point to a volume on a Amazon FSx file systems that you own. You cannot attach to a volume owned by another AWS account.
-+ You cannot use the `CreateAccessPoint` API when creating and attaching an access point to a volume on a Amazon FSx file system. You must use the [https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateAndAttachS3AccessPoint.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateAndAttachS3AccessPoint.html) API.
++ You cannot use the `CreateAccessPoint` API when creating and attaching an access point to a volume on a Amazon FSx file system. You must use the [CreateAndAttachS3AccessPoint](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateAndAttachS3AccessPoint.html) API.
 + You can not turn off any block public access settings when creating or using an access point attached to a volume on an Amazon FSx file system.
 + You can't list objects or use **Copy** or **Move** operations in the S3 console with access points attached to a volume on an Amazon FSx file system.
 + `CopyObject` is supported for access points attached to an FSx for NetApp ONTAP or FSx for OpenZFS volume only if the source and destination are the same access point. For more information, about access point compatibility, see [Access point compatibility](access-points-service-api-support.md).
 + Multipart uploads are limited to 5GB.
 + FSx for OpenZFS deployment type and storage class support varies by AWS Region. For more information, see [Availability by AWS Region](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/available-aws-regions.html) in the *OpenZFS User Guide*.
+
+## Restrictions and limitations for access points attached to an Amazon S3 recovery point in AWS Backup
+<a name="access-points-restrictions-limitations-backup"></a>
+
+The following are specific limitations when using access points attached to an S3 recovery point in AWS Backup:
++ Access points for S3 recovery points are read-only. Write operations such as `PutObject`, `DeleteObject`, `CopyObject` and multipart uploads are not supported.
++ Use the AWS Backup `CreateBackupAccessPoint` API or the AWS Backup console to create access points. The S3 `CreateAccessPoint` API is not supported.
++ To delete these access points use the AWS Backup `DeleteBackupAccessPoint` API or the AWS Backup console.
++ Each account can have up to 5 access points per recovery point, regardless of status.
++ Access point names share the S3 access point namespace. A name used by a backup access point cannot be reused for a standard S3 access point in the same account and Region.
++ For more information, see [Backup access points](https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-access-points.html) in the *AWS Backup Developer Guide*.

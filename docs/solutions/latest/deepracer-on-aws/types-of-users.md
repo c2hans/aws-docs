@@ -21,7 +21,7 @@ Racers can be promoted by an admin to either a race facilitator or to an admin (
   <tr><th>Capability</th><th>Racer</th><th>Race Facilitator</th><th>Admin</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="4"> ** **Models — Own** ** </td></tr>
+  <tr><td colspan="4"> <b> <b>Models — Own</b> </b> </td></tr>
   <tr><td>Create and train own model</td><td>✓</td><td>✓</td><td>✓</td></tr>
   <tr><td>Evaluate own model</td><td>✓</td><td>✓</td><td>✓</td></tr>
   <tr><td>Clone own model</td><td>✓</td><td>✓</td><td>✓</td></tr>
@@ -29,17 +29,17 @@ Racers can be promoted by an admin to either a race facilitator or to an admin (
   <tr><td>Export own virtual model</td><td>✓</td><td>✓</td><td>✓</td></tr>
   <tr><td>Export own physical car model</td><td>✓</td><td>✓</td><td>✓</td></tr>
   <tr><td>Delete own model</td><td>✓</td><td>✓</td><td>✓</td></tr>
-  <tr><td colspan="4"> ** **Models — Other users** ** </td></tr>
+  <tr><td colspan="4"> <b> <b>Models — Other users</b> </b> </td></tr>
   <tr><td>View another user’s models</td><td>✗</td><td>✓</td><td>✓</td></tr>
   <tr><td>Download another user’s physical car model</td><td>✗</td><td>✓</td><td>✓</td></tr>
   <tr><td>Delete another user’s model(s)</td><td>✗</td><td>✗</td><td>✓</td></tr>
-  <tr><td colspan="4"> ** **Community races** ** </td></tr>
+  <tr><td colspan="4"> <b> <b>Community races</b> </b> </td></tr>
   <tr><td>View race and leaderboard</td><td>✓</td><td>✓</td><td>✓</td></tr>
   <tr><td>Enter open race</td><td>✓</td><td>✓</td><td>✓</td></tr>
   <tr><td>Create race</td><td>✗</td><td>✓</td><td>✓</td></tr>
   <tr><td>Edit race</td><td>✗</td><td>✓</td><td>✓</td></tr>
   <tr><td>Delete race</td><td>✗</td><td>✓</td><td>✓</td></tr>
-  <tr><td colspan="4"> ** **Live races** ** </td></tr>
+  <tr><td colspan="4"> <b> <b>Live races</b> </b> </td></tr>
   <tr><td>Watch live race</td><td>✓</td><td>✓</td><td>✓</td></tr>
   <tr><td>Submit model to live race</td><td>✓</td><td>✓</td><td>✓</td></tr>
   <tr><td>Launch evaluation</td><td>✗</td><td>✓</td><td>✓</td></tr>
@@ -48,18 +48,18 @@ Racers can be promoted by an admin to either a race facilitator or to an admin (
   <tr><td>Open/close submissions</td><td>✗</td><td>✓</td><td>✓</td></tr>
   <tr><td>Declare winner</td><td>✗</td><td>✓</td><td>✓</td></tr>
   <tr><td>Clear leaderboard</td><td>✗</td><td>✓</td><td>✓</td></tr>
-  <tr><td colspan="4"> ** **Profiles — Own** ** </td></tr>
+  <tr><td colspan="4"> <b> <b>Profiles — Own</b> </b> </td></tr>
   <tr><td>View own profile</td><td>✓</td><td>✓</td><td>✓</td></tr>
   <tr><td>Edit own profile</td><td>✓</td><td>✓</td><td>✓</td></tr>
   <tr><td>Delete own profile</td><td>✓</td><td>✓</td><td>✓</td></tr>
-  <tr><td colspan="4"> ** **Profiles — Other users** ** </td></tr>
+  <tr><td colspan="4"> <b> <b>Profiles — Other users</b> </b> </td></tr>
   <tr><td>View all profiles</td><td>✗</td><td>✗</td><td>✓</td></tr>
   <tr><td>View number of users</td><td>✗</td><td>✗</td><td>✓</td></tr>
   <tr><td>Delete another user’s profile</td><td>✗</td><td>✗</td><td>✓</td></tr>
-  <tr><td colspan="4"> ** **Usage - Own** ** </td></tr>
+  <tr><td colspan="4"> <b> <b>Usage - Own</b> </b> </td></tr>
   <tr><td>View own model count</td><td>✓</td><td>✓</td><td>✓</td></tr>
   <tr><td>View own compute usage</td><td>✓</td><td>✓</td><td>✓</td></tr>
-  <tr><td colspan="4"> ** **User management** ** </td></tr>
+  <tr><td colspan="4"> <b> <b>User management</b> </b> </td></tr>
   <tr><td>Update another user’s role</td><td>✗</td><td>✗</td><td>✓</td></tr>
   <tr><td>View another user’s basic profile attributes</td><td>✗</td><td>✗</td><td>✓</td></tr>
   <tr><td>View another user’s current compute usage</td><td>✗</td><td>✗</td><td>✓</td></tr>
@@ -67,7 +67,7 @@ Racers can be promoted by an admin to either a race facilitator or to an admin (
   <tr><td>View another user’s model storage</td><td>✗</td><td>✗</td><td>✓</td></tr>
   <tr><td>Update another user’s compute usage limit</td><td>✗</td><td>✗</td><td>✓</td></tr>
   <tr><td>Update another user’s model limit</td><td>✗</td><td>✗</td><td>✓</td></tr>
-  <tr><td colspan="4"> ** **Instance management** ** </td></tr>
+  <tr><td colspan="4"> <b> <b>Instance management</b> </b> </td></tr>
   <tr><td>Update the default compute usage limit for new users</td><td>✗</td><td>✗</td><td>✓</td></tr>
   <tr><td>Update the default model count limit for new users</td><td>✗</td><td>✗</td><td>✓</td></tr>
   <tr><td>Update the global compute usage limit</td><td>✗</td><td>✗</td><td>✓</td></tr>

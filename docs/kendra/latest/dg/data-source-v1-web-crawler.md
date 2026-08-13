@@ -143,10 +143,10 @@ IAM roles used for indexes cannot be used for data sources. If you are unsure if
 **To connect Amazon Kendra to web crawler**
 
 You must specify the following using the [WebCrawlerConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_WebCrawlerConfiguration.html) API:
-+ **URLs**—Specify the seed or starting point URLs of the websites or the sitemap URLs of the websites you want to crawl using [https://docs.aws.amazon.com/kendra/latest/dg/API_SeedUrlConfiguration.html](https://docs.aws.amazon.com/kendra/latest/dg/API_SeedUrlConfiguration.html) and [https://docs.aws.amazon.com/kendra/latest/dg/API_SiteMapsConfiguration.html](https://docs.aws.amazon.com/kendra/latest/dg/API_SiteMapsConfiguration.html).
++ **URLs**—Specify the seed or starting point URLs of the websites or the sitemap URLs of the websites you want to crawl using [SeedUrlConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_SeedUrlConfiguration.html) and [SiteMapsConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_SiteMapsConfiguration.html).
 **Note**
 If you want to crawl a sitemap, check that the base or root URL is the same as the URLs listed on your sitemap page. For example, if your sitemap URL is *https://example.com/sitemap-page.html*, the URLs listed on this sitemap page should also use the base URL "https://example.com/".
-+ **Secret Amazon Resource Name (ARN)**—If a website requires basic authentication, you provide the host name, port number and a secret that stores your basic authentication credentials of your user name and password. You provide the secret ARN using the [https://docs.aws.amazon.com/kendra/latest/dg/API_AuthenticationConfiguration.html](https://docs.aws.amazon.com/kendra/latest/dg/API_AuthenticationConfiguration.html) API. The secret is stored in a JSON structure with the following keys:
++ **Secret Amazon Resource Name (ARN)**—If a website requires basic authentication, you provide the host name, port number and a secret that stores your basic authentication credentials of your user name and password. You provide the secret ARN using the [AuthenticationConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_AuthenticationConfiguration.html) API. The secret is stored in a JSON structure with the following keys:
 
   ```
   {
@@ -155,7 +155,7 @@ If you want to crawl a sitemap, check that the base or root URL is the same as t
   }
   ```
 
-  You can also provide web proxy credentials using an AWS Secrets Manager secret. You use the [https://docs.aws.amazon.com/kendra/latest/dg/API_ProxyConfiguration.html](https://docs.aws.amazon.com/kendra/latest/dg/API_ProxyConfiguration.html) API to provide the website host name and port number, and optionally the secret that stores your web proxy credentials.
+  You can also provide web proxy credentials using an AWS Secrets Manager secret. You use the [ProxyConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_ProxyConfiguration.html) API to provide the website host name and port number, and optionally the secret that stores your web proxy credentials.
 + **IAM role**—Specify `RoleArn` when you call `CreateDataSource` to provide an IAM role with permissions to access your Secrets Manager secret and to call the required public APIs for the web crawler connector and Amazon Kendra. For more information, see [IAM roles for web crawler data sources](https://docs.aws.amazon.com/kendra/latest/dg/iam-roles.html#iam-roles-ds).
 
 You can also add the following optional features:

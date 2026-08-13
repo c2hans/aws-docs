@@ -107,13 +107,13 @@ Uses the specified profile from an AWS `config` file to resolve credentials.
 `[SSOAWSCredentialIdentityResolver](https://sdk.amazonaws.com/swift/api/awssdkidentity/latest/documentation/awssdkidentity/ssoawscredentialidentityresolver)`
 Resolves credentials using a single-sign-on login with AWS IAM Identity Center.
 
-[https://sdk.amazonaws.com/swift/api/awssdkidentity/latest/documentation/awssdkidentity/staticawscredentialidentityresolver](https://sdk.amazonaws.com/swift/api/awssdkidentity/latest/documentation/awssdkidentity/staticawscredentialidentityresolver)
+[`StaticAWSCredentialIdentityResolver`](https://sdk.amazonaws.com/swift/api/awssdkidentity/latest/documentation/awssdkidentity/staticawscredentialidentityresolver)
 A credential resolver that uses specified credentials in the form of an `[AWSCredentialIdentity](https://sdk.amazonaws.com/swift/api/smithyidentity/latest/documentation/smithyidentity/awscredentialidentity)` object.
 
 `[STSAssumeRoleAWSCredentialIdentityResolver](https://sdk.amazonaws.com/swift/api/awssdkidentity/latest/documentation/awssdkidentity/stsassumeroleawscredentialidentityresolver)`
 Uses another credential identity resolver to assume a specified AWS Identity and Access Management role, then fetch the assumed credentials using AWS Security Token Service.
 
-[https://sdk.amazonaws.com/swift/api/awssdkidentity/latest/documentation/awssdkidentity/stswebidentityawscredentialidentityresolver](https://sdk.amazonaws.com/swift/api/awssdkidentity/latest/documentation/awssdkidentity/stswebidentityawscredentialidentityresolver)
+[`STSWebIdentityAWSCredentialIdentityResolver`](https://sdk.amazonaws.com/swift/api/awssdkidentity/latest/documentation/awssdkidentity/stswebidentityawscredentialidentityresolver)
 Exchanges a JSON Web Token (JWT) for credentials using AWS Security Token Service.
 
 ## Getting credentials from an identity

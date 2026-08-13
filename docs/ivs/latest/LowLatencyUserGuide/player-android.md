@@ -16,9 +16,9 @@ The `com.amazonaws.ivs.player` package implements the interface described in thi
 + Receive events.
 + Receive errors.
 
-**Latest version of Android player:** 1.54.1 ([Release Notes](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html#jul21-26-player-web-ll))
+**Latest version of Android player:** 1.55.0 ([Release Notes](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html#aug06-26-player-mobile-ll))
 
-**Reference documentation:** For information on the most important methods available in the Amazon IVS Android player, see the reference documentation at [https://aws.github.io/amazon-ivs-player-docs/1.54.1/android/](https://aws.github.io/amazon-ivs-player-docs/1.54.1/android/).
+**Reference documentation:** For information on the most important methods available in the Amazon IVS Android player, see the reference documentation at [https://aws.github.io/amazon-ivs-player-docs/1.55.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.55.0/android/).
 
 **Sample code: **See the Android sample repository on GitHub: [https://github.com/aws-samples/amazon-ivs-player-android-sample](https://github.com/aws-samples/amazon-ivs-player-android-sample).
 

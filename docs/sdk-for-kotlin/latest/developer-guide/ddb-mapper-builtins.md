@@ -33,7 +33,7 @@ data class ShoppingCart(
 With this annotation, you don’t compute `expiresAt` yourself; the mapper populates it on every put, update, batch write, and transactional write.
 
 **Note**
-The annotation makes the mapper *write* the expiration timestamp, but DynamoDB only *deletes* expired items if TTL is enabled for that attribute on the table. Enable TTL on the table’s attribute using the `DynamoDbClient` or the console, as described in [Enabling Time to Live](/amazondynamodb/latest/developerguide/time-to-live-ttl-how-to.html). TTL deletions typically occur within a few days of expiration, not immediately.
+The annotation makes the mapper *write* the expiration timestamp, but DynamoDB only *deletes* expired items if TTL is enabled for that attribute on the table. Enable TTL on the table’s attribute using the [`DynamoDbClient`](/sdk-for-kotlin/api/latest/dynamodb/aws.sdk.kotlin.services.dynamodb/-dynamo-db-client/index.html) or the console, as described in [Enabling Time to Live](/amazondynamodb/latest/developerguide/time-to-live-ttl-how-to.html). TTL deletions typically occur within a few days of expiration, not immediately.
 
 ## Atomic counters
 <a name="ddb-mapper-builtins-counters"></a>

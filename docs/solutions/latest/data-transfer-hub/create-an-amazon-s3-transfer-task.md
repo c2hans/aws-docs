@@ -34,7 +34,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/creat
    +  If the source bucket is not in the same account where Data Transfer Hub was deployed, select **No**, then specify the credentials for the source bucket.
    +  If you choose to synchronize objects with multiple prefixes, please transfer the prefix list file separated by rows to the root directory of the bucket where Data Transfer Hub is deployed, and then fill in the name of the file. For details, please refer to [Multi-Prefix List Configuration Tutorial](https://github.com/awslabs/data-transfer-hub/blob/main/docs/USING_PREFIX_LIST.md).
 
-1.  To create credential info, choose [https://console.aws.amazon.com/secretsmanager/home](https://console.aws.amazon.com/secretsmanager/home) to navigate to the current Region’s AWS Secrets Manager console.
+1.  To create credential info, choose [**Secrets Manager**](https://console.aws.amazon.com/secretsmanager/home) to navigate to the current Region’s AWS Secrets Manager console.
 
    1.  From the left menu, select **Secrets**, then choose **Store a new secret** and select the **other type of secrets** key type.
 
@@ -87,9 +87,9 @@ If your destination bucket in Amazon S3 is set to require all data uploads to be
 
  **Destination bucket encrypted with Amazon S3 managed keys**
 
- Select "SSE-S3 AES256" from the dropdown menu under 'Destination bucket policy check' in the destination's configuration. For more information, refer to this [https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingServerSideEncryption.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingServerSideEncryption.html).
+ Select "SSE-S3 AES256" from the dropdown menu under 'Destination bucket policy check' in the destination's configuration. For more information, refer to this [*documentation*](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingServerSideEncryption.html).
 
- If your destination bucket is set to require that objects be encrypted using only SSE-KMS (Server-Side Encryption with AWS Key Management Service), which is detailed in this [https://docs.aws.amazon.com/AmazonS3/latest/userguide/specifying-kms-encryption.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/specifying-kms-encryption.html), and your policy looks something like the example provided:
+ If your destination bucket is set to require that objects be encrypted using only SSE-KMS (Server-Side Encryption with AWS Key Management Service), which is detailed in this [*documentation*](https://docs.aws.amazon.com/AmazonS3/latest/userguide/specifying-kms-encryption.html), and your policy looks something like the example provided:
 
 ------
 #### [ JSON ]
@@ -178,10 +178,10 @@ This tutorial provides guidance for the backend-only version. For more details, 
 1.  Choose the following to launch the CloudFormation Stack.
    +  For AWS China Regions
 
-      [https://console.amazonaws.cn/cloudformation/home#/stacks/create/template?stackName=DTHS3Stack&templateURL=https:%2F%2Fsolutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferS3Stack.template](https://console.amazonaws.cn/cloudformation/home#/stacks/create/template?stackName=DTHS3Stack&templateURL=https:%2F%2Fsolutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferS3Stack.template)
+      [![Blue rectangular button labeled "Launch Stack" with a play icon.](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/launch-stack.png)](https://console.amazonaws.cn/cloudformation/home#/stacks/create/template?stackName=DTHS3Stack&templateURL=https:%2F%2Fsolutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferS3Stack.template)
    +  For AWS Global Regions
 
-      [https://console.aws.amazon.com/cloudformation/home#/stacks/create/template?stackName=DTHS3Stack&templateURL=https://solutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferS3Stack.template](https://console.aws.amazon.com/cloudformation/home#/stacks/create/template?stackName=DTHS3Stack&templateURL=https://solutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferS3Stack.template)
+      [![Blue rectangular button labeled "Launch Stack" with a play icon.](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/create/template?stackName=DTHS3Stack&templateURL=https://solutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferS3Stack.template)
 
 1. Choose **Next**. Specify values to parameters accordingly. Change the stack name if required.
 

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/api-getsign
 # GetSigningProfile
 <a name="api-getsigningprofile"></a>
 
-The following Java example shows how to use the [https://docs.aws.amazon.com/signer/latest/api/API_SetSigningProfile.html](https://docs.aws.amazon.com/signer/latest/api/API_SetSigningProfile.html) operation.
+The following Java example shows how to use the [`GetSigningProfile`](https://docs.aws.amazon.com/signer/latest/api/API_SetSigningProfile.html) operation.
 
 ```
 package com.examples;

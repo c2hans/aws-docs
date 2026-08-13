@@ -15,7 +15,7 @@ You can use the AWS CLI, console, SDK, or CloudFormation to specify a local cach
 ## Specify local caching (CLI)
 <a name="caching-local-cli"></a>
 
-You can use the the `--cache` parameter in the AWS CLI to specify each of the three local cache types.
+You can use the `--cache` parameter in the AWS CLI to specify each of the three local cache types.
 + To specify a source cache:
 
   ```

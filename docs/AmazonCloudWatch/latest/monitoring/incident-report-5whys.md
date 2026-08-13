@@ -122,7 +122,7 @@ CloudWatch investigations provides a guided 5 Whys analysis workflow to help you
 ### Interactive analysis experience
 <a name="interactive-analysis"></a>
 
-The 5 Whys analysis in CloudWatch investigations uses an interactive, chat-based approach that guides you through the investigation process. This conversational method helps ensure comprehensive analysis while maintaining logical flow between questions.
+The 5 Whys analysis in CloudWatch investigations uses an interactive, chat-based approach that guides you through the investigation process. This conversational method helps make sure comprehensive analysis while maintaining logical flow between questions.
 
 **Key features of the interactive experience:**
 + **Fact-based initialization** - The system presents relevant facts from your investigation upfront, using them to pre-populate obvious answers and clearly indicating fact-based versus inference-based suggestions
@@ -142,14 +142,14 @@ This approach ensures that you capture all relevant information while maintainin
 
 1. Follow the guided prompts to systematically work through each "why" question, building a complete causal chain from symptoms to root cause.
 
-The guided workflow helps ensure you capture comprehensive root cause information by walking you through each step of the 5 Whys methodology. The analysis results are automatically incorporated into your incident report, providing structured documentation for post-incident reviews and organizational learning.
+The guided workflow helps make sure you capture comprehensive root cause information by walking you through each step of the 5 Whys methodology. The analysis results are automatically incorporated into your incident report, providing structured documentation for post-incident reviews and organizational learning.
 
 You can also request a 5 Whys analysis through the chat interface by asking questions such as "Perform a 5 Whys analysis for this incident" or "What is the root cause using 5 Whys methodology?"
 
 ## Handling complex incidents with multiple causes
 <a name="branch-analysis"></a>
 
-Some incidents involve multiple contributing factors that require parallel analysis paths. CloudWatch investigations supports branch analysis to ensure all significant causes are identified and addressed.
+Some incidents involve multiple contributing factors that require parallel analysis paths. CloudWatch investigations supports branch analysis to make sure all significant causes are identified and addressed.
 
 **When branch analysis is needed:**
 + Multiple independent failures occurred simultaneously
@@ -178,7 +178,7 @@ To maximize the effectiveness of 5 Whys analysis in your incident reports, follo
 <a name="question-formulation"></a>
 + **Start with customer impact** - Begin each analysis with the customer-facing problem to maintain focus on business impact
 + **Increase technical depth progressively** - Move from business impact to technical details as you progress through the questions
-+ **Maintain logical continuity** - Ensure each answer naturally leads to the next question without logical gaps
++ **Maintain logical continuity** - Make sure each answer naturally leads to the next question without logical gaps
 + **Include supporting evidence** - Reference specific metrics, logs, or timeline events to validate each answer
 
 ### Analysis validation
@@ -195,7 +195,7 @@ Validate your 5 Whys analysis using these criteria:
 + **Stopping at symptoms** - Don't conclude the analysis at the first technical failure; continue until you reach systemic or process causes
 + **Blame-focused analysis** - Focus on system and process failures rather than individual actions
 + **Single-path thinking** - Consider multiple contributing factors and use branch analysis when appropriate
-+ **Insufficient evidence** - Ensure each answer is supported by concrete data from your investigation
++ **Insufficient evidence** - Make sure each answer is supported by concrete data from your investigation
 
 ### Integration with incident report sections
 <a name="5whys-integration"></a>

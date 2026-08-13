@@ -6,7 +6,7 @@ Version 5 (V5) of the AWS Tools for PowerShell has been released\!
 
 For information about breaking changes and migrating your applications, see the [migration topic](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html).
 
- [https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
+ [![Orange button with text "Click here for details".](http://docs.aws.amazon.com/powershell/v5/userguide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
 
 # What are the AWS Tools for PowerShell?
 <a name="pstools-welcome"></a>
@@ -34,7 +34,7 @@ For information about maintenance and support for SDK major versions and their u
 ## `AWS.Tools` - A modularized version of the AWS Tools for PowerShell
 <a name="pwsh_structure_pstools"></a>
 
- [https://www.powershellgallery.com/packages/AWS.Tools.Installer](https://www.powershellgallery.com/packages/AWS.Tools.Installer) [https://www.powershellgallery.com/packages/AWS.Tools.Common](https://www.powershellgallery.com/packages/AWS.Tools.Common) [https://sdk-for-net.amazonwebservices.com/ps/v5/latest/AWS.Tools.zip](https://sdk-for-net.amazonwebservices.com/ps/v5/latest/AWS.Tools.zip)
+ [![PowerShell Gallery AWS.Tools.Installer module icon.](http://docs.aws.amazon.com/powershell/v5/userguide/images/PowerShell-Gallery-AWS.Tools.Installer-blue.png)](https://www.powershellgallery.com/packages/AWS.Tools.Installer) [![PowerShell Gallery module icon for AWS.Tools.Common.](http://docs.aws.amazon.com/powershell/v5/userguide/images/PowerShell-Gallery-AWS.Tools.Common-blue.png)](https://www.powershellgallery.com/packages/AWS.Tools.Common) [![Icon representing ZIP Archive AWS Tools, showing a folder with AWS logo.](http://docs.aws.amazon.com/powershell/v5/userguide/images/ZIP-Archive-AWS.Tools-yellow.png)](https://sdk-for-net.amazonwebservices.com/ps/v5/latest/AWS.Tools.zip)
 
 This version of AWS Tools for PowerShell is the recommended version for any computer running PowerShell in a production environment. Because it's modularized, you need to download and load only the modules for the services you want to use. This reduces download times, memory usage, and, in most cases, enables auto-importing of `AWS.Tools` cmdlets without the need to manually call `Import-Module` first.
 
@@ -55,7 +55,7 @@ In this guide, you can find details about installing `AWS.Tools` on [Windows](ps
 ## AWSPowerShell.NetCore - A single-module version of the AWS Tools for PowerShell
 <a name="pwsh_structure_pscore"></a>
 
-[https://www.powershellgallery.com/packages/AWSPowerShell.NetCore/](https://www.powershellgallery.com/packages/AWSPowerShell.NetCore/) [https://sdk-for-net.amazonwebservices.com/ps/v5/latest/AWSPowerShell.NetCore.zip](https://sdk-for-net.amazonwebservices.com/ps/v5/latest/AWSPowerShell.NetCore.zip)
+[![PowerShell Gallery and AWSPowerShell.NetCore module icons.](http://docs.aws.amazon.com/powershell/v5/userguide/images/PowerShell-Gallery-AWSPowerShell.NetCore-blue.png)](https://www.powershellgallery.com/packages/AWSPowerShell.NetCore/) [![Icon representing a ZIP archive file labeled "AWSPowerShell.NetCore".](http://docs.aws.amazon.com/powershell/v5/userguide/images/ZIP-Archive-AWSPowerShell.NetCore-yellow.png)](https://sdk-for-net.amazonwebservices.com/ps/v5/latest/AWSPowerShell.NetCore.zip)
 
 This version consists of a single, large module that contains support for all AWS services. Before you can use this module, you must manually import it.
 
@@ -70,7 +70,7 @@ In this guide, you can find details about installing AWSPowerShell.NetCore on [W
 ## AWSPowerShell - A single-module version for Windows PowerShell
 <a name="pwsh_structure_psoldwin"></a>
 
-[https://www.powershellgallery.com/packages/AWSPowerShell/](https://www.powershellgallery.com/packages/AWSPowerShell/) [https://sdk-for-net.amazonwebservices.com/ps/v5/latest/AWSPowerShell.zip](https://sdk-for-net.amazonwebservices.com/ps/v5/latest/AWSPowerShell.zip)
+[![PowerShell Gallery and AWSPowerShell module icons displayed side by side.](http://docs.aws.amazon.com/powershell/v5/userguide/images/PowerShell-Gallery-AWSPowerShell-blue.png)](https://www.powershellgallery.com/packages/AWSPowerShell/) [![Icon representing ZIP Archive with "AWSPowerShell" text label.](http://docs.aws.amazon.com/powershell/v5/userguide/images/ZIP-20Archive-AWSPowerShell-yellow.png)](https://sdk-for-net.amazonwebservices.com/ps/v5/latest/AWSPowerShell.zip)
 
 This *legacy* version of AWS Tools for PowerShell is only compatible with and installable on Windows computers that are running Windows PowerShell versions 2.0 through 5.1. It is not compatible with PowerShell Core 6.0 or later, or any other operating system (Linux or macOS). This version consists of a single, large module that contains support for all AWS services.
 

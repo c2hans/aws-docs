@@ -17,7 +17,7 @@ When you create or modify an event notification subscription, the event categori
 ## AWS CLI
 <a name="USER_Events.ListingCategories.CLI"></a>
 
-To list the Amazon RDS event notification categories, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-event-categories.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-event-categories.html) command. This command has no required parameters.
+To list the Amazon RDS event notification categories, use the AWS CLI [`describe-event-categories`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-event-categories.html) command. This command has no required parameters.
 
 **Example**
 
@@ -28,4 +28,4 @@ aws rds describe-event-categories
 ## API
 <a name="USER_Events.ListingCategories.API"></a>
 
-To list the Amazon RDS event notification categories, use the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeEventCategories.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeEventCategories.html) command. This command has no required parameters.
+To list the Amazon RDS event notification categories, use the Amazon RDS API [`DescribeEventCategories`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeEventCategories.html) command. This command has no required parameters.

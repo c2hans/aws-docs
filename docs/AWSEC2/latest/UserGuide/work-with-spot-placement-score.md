@@ -17,6 +17,9 @@ Ensure that you have the required permissions. For more information, see [Requir
 
 **Looking for an automated solution?** Instead of following the manual steps in this user guide, you can build a Spot placement score tracker dashboard that automatically captures and stores the scores in Amazon CloudWatch. For more information, see [Guidance for Building a Spot Placement Score Tracker Dashboard on AWS](https://aws.amazon.com/solutions/guidance/building-a-spot-placement-score-tracker-dashboard-on-aws/).
 
+**Local Zones**
+To include Local Zones when using the Amazon EC2 console, your account must have at least one Local Zone enabled. For more information, see [Getting started with AWS Local Zones](https://docs.aws.amazon.com/local-zones/latest/ug/getting-started.html) in the *AWS Local Zones User Guide*.
+
 ## Calculate using instance attributes
 <a name="sps-specify-instance-attributes-console"></a>
 
@@ -48,6 +51,8 @@ Ensure that you have the required permissions. For more information, see [Requir
 
 1. (Optional) To display the Spot placement score for specific Regions, for **Regions to evaluate**, select the Regions to evaluate, and then choose **Calculate placement scores**.
 
+1. (Optional) Under **Score options**, select **Include Local Zones**.
+
 1. (Optional) To display the Spot placement score for the Availability Zones in the displayed Regions, select the **Provide placement scores per Availability Zone** checkbox. A list of scored Availability Zones is useful if you want to launch all of your Spot capacity into a single Availability Zone.
 
 1. (Optional) To edit your compute requirements and get a new placement score, choose **Edit**, make the necessary adjustments, and then choose **Calculate placement scores**.
@@ -74,6 +79,8 @@ Ensure that you have the required permissions. For more information, see [Requir
 1. Choose **Load placement scores**, and review the results.
 
 1. (Optional) To display the Spot placement score for specific Regions, for **Regions to evaluate**, select the Regions to evaluate, and then choose **Calculate placement scores**.
+
+1. (Optional) Under **Score options**, select **Include Local Zones**.
 
 1. (Optional) To display the Spot placement score for the Availability Zones in the displayed Regions, select the **Provide placement scores per Availability Zone** checkbox. A list of scored Availability Zones is useful if you want to launch all of your Spot capacity into a single Availability Zone.
 
@@ -176,7 +183,8 @@ Ensure that you have the required permissions. For more information, see [Requir
        },
        "DryRun": true,
        "MaxResults": 0,
-       "NextToken": ""
+       "NextToken": "",
+       "IncludeLocalZones": true
    }
    ```
 
@@ -189,6 +197,8 @@ Ensure that you have the required permissions. For more information, see [Requir
       Valid values: `units` (which translates to number of instances) \| `vcpu` \| `memory-mib`
 
    1. For `SingleAvailabilityZone`, specify `true` for a response that returns a list of scored Availability Zones. A list of scored Availability Zones is useful if you want to launch all of your Spot capacity into a single Availability Zone. If you omit this parameter, it defaults to `false`, and the response returns a list of scored Regions.
+
+   1. (Optional) For `IncludeLocalZones`, specify `true` to include Local Zones. For regional scores, Local Zone capacity counts toward the parent Region. For zonal scores, the response can include individual Local Zone scores. If omitted or set to `false`, Local Zones are ignored.
 
    1. (Optional) For `RegionNames`, specify the Regions to use as a filter. You must specify the Region code, for example, `us-east-1`.
 
@@ -227,7 +237,7 @@ Ensure that you have the required permissions. For more information, see [Requir
       ...
    ```
 
-   Example output if `SingleAvailabilityZone` is set to `true` – a scored list of Availability Zones is returned.
+   Example output if `SingleAvailabilityZone` is set to `true` – a scored list of Availability Zones and, when `IncludeLocalZones` is `true`, Local Zones is returned.
 
    ```
    "SpotPlacementScores": [

@@ -96,7 +96,7 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 
  `arn:aws:controltower:us-west-2:123456789012:enabledbaseline/AB12CD34EF56GH789`
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-controltower-enabledbaseline-return-values-fn--getatt"></a>

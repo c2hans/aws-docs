@@ -19,6 +19,9 @@ AgentCore Runtime lets agents communicate with other agents and tools via Model 
 Session isolation
 In AgentCore Runtime, each user session runs in a dedicated microVM with isolated CPU, memory, and filesystem resources. This helps create complete separation between user sessions, safeguarding stateful agent reasoning processes and helps prevent cross-session data contamination. After session completion, the entire microVM is terminated and memory is sanitized, delivering deterministic security even when working with non-deterministic AI processes.
 
+Compute type choice
+AgentCore Runtime offers two compute types. Choose **microVMs** for fully managed, serverless sessions that start instantly and scale on demand, where you pay only for what you use. Choose **Instances** to run agents on AWS managed Amazon EC2 infrastructure in your own account. Instances support persistent, multi-day sessions, GPU-accelerated workloads, and multiple collaborating agents on a shared instance. For more information, see [Run agents on Instances with capacity providers](runtime-instances.md).
+
 Extended execution time
 AgentCore Runtime supports both real-time interactions and long-running workloads up to 8 hours, enabling complex agent reasoning and asynchronous workloads that may involve multi-agent collaboration or extended problem-solving sessions.
 
@@ -44,7 +47,7 @@ Unified set of agent-specific capabilities
 AgentCore Runtime is delivered through a single, comprehensive SDK that provides streamlined access to the complete AgentCore capabilities including Memory, Tools, and Gateway. This integrated approach eliminates the integration work typically required when building equivalent agent infrastructure from disparate components.
 
 **Topics**
-+ [How it works](runtime-how-it-works.md)
++ [How it works](runtime-compute-how-it-works.md)
 + [Understand the AgentCore Runtime service contract](runtime-service-contract.md)
 + [IAM Permissions for AgentCore Runtime](runtime-permissions.md)
 + [Get started with AgentCore Runtime](runtime-getting-started.md)

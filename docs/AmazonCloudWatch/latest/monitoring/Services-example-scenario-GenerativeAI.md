@@ -50,7 +50,7 @@ Application Signals generates the following generative AI attributes for Amazon 
 
 ![Generative AI attributes using Application Signals.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/AppSignalsAIExample_1.png)
 
-For example, your can leverage the analytic capability from Transaction Search to compare the token usage and cost across different LLM models for the same prompt, enabling cost-efficient model selection.
+For example, you can use the analytic capability from Transaction Search to compare the token usage and cost across different LLM models for the same prompt, enabling cost-efficient model selection.
 
 ![Generative AI attributes using Application Signals.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/AppSignalsAIExample_2.png)
 

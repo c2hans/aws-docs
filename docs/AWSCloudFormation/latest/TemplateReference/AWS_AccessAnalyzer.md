@@ -9,3 +9,4 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::AccessAnalyzer::Analyzer](aws-resource-accessanalyzer-analyzer.md)
++ [AWS::AccessAnalyzer::ArchiveRule](aws-resource-accessanalyzer-archiverule.md)

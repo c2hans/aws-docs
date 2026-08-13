@@ -5,10 +5,10 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-mediaco
 # Create an AWS Elemental MediaConvert job with Step Functions
 <a name="connect-mediaconvert"></a>
 
-Learn how to use Step Functions to create an AWS Elemental MediaConvert job using the [https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobspost](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobspost) API.
+Learn how to use Step Functions to create an AWS Elemental MediaConvert job using the [`CreateJob`](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobspost) API.
 
 **Experiment with Step Functions and MediaConvert**
-Learn how to use the MediaConvert optimized integration in a workflow that detects and removes SMTPE color bars of unknown length from the beginning of a video clip. Read the blog post from Apr, 12, 2024: [https://aws.amazon.com/blogs/media/low-code-workflows-with-aws-elemental-mediaconvert/](https://aws.amazon.com/blogs/media/low-code-workflows-with-aws-elemental-mediaconvert/)
+Learn how to use the MediaConvert optimized integration in a workflow that detects and removes SMTPE color bars of unknown length from the beginning of a video clip. Read the blog post from Apr, 12, 2024: [*Low code workflows with AWS Elemental MediaConvert*](https://aws.amazon.com/blogs/media/low-code-workflows-with-aws-elemental-mediaconvert/)
 
 To learn about integrating with AWS services in Step Functions, see [Integrating services](integrate-services.md) and [Passing parameters to a service API in Step Functions](connect-parameters.md).
 
@@ -91,12 +91,12 @@ Even if the native service API is in camelCase, for example the API action `star
 
 ## Optimized MediaConvert APIs
 <a name="connect-mediaconvert-api"></a>
-+ [https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobspost](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobspost)
++ [`CreateJob`](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobspost)
   + [Request syntax](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-request-body-post-example)
   + Supported parameters:
-    + [https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-createjobrequest-role](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-createjobrequest-role) (Required)
-    + [https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-createjobrequest-settings](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-createjobrequest-settings) (Required)
-    + [https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-model-createjobrequest](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-model-createjobrequest) (Optional)
+    + [`Role`](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-createjobrequest-role) (Required)
+    + [`Settings`](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-createjobrequest-settings) (Required)
+    + [`CreateJobRequest`](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-model-createjobrequest) (Optional)
   + [Response syntax](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-response-examples) – see **CreateJobResponse schema**
 
 ## IAM policies for calling AWS Elemental MediaConvert

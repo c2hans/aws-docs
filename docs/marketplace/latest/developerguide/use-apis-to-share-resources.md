@@ -42,7 +42,7 @@ You can share an AWS Marketplace entity that you own using the AWS Marketplace c
 See [Creating a Resource Share](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing.html#working-with-sharing-create) in the *AWS RAM User Guide*.
 
 **To share an AWS Marketplace entity that you own using the AWS CLI**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ram/create-resource-share.html](https://docs.aws.amazon.com/cli/latest/reference/ram/create-resource-share.html) command.
+Use the [create-resource-share](https://docs.aws.amazon.com/cli/latest/reference/ram/create-resource-share.html) command.
 
 **Note**
 For resource types such as entities that support resource-based policies, you can use AWS RAM to share resources to use additional AWS RAM features. For more information, see [Resource-based policy](https://docs.aws.amazon.com/ram/latest/userguide/getting-started-terms-and-concepts.html#term-resource-based-policy) in the *AWS RAM User Guide*. AWS RAM uses the AWS Marketplace Catalog API to automatically construct the resource policy from permissions in a resource share and manages that resource policy for you.

@@ -44,7 +44,7 @@ The IAM role that grants the device's data permission to access the rule named i
 ## Create a destination (CLI)
 <a name="iot-sidewalk-destination-create-cli"></a>
 
-To create a destination, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateDestination.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateDestination.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-destination.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-destination.html) CLI command. For example, the following command creates a destination for your Sidewalk end device:
+To create a destination, use the [`CreateDestination`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateDestination.html) API operation or the [`create-destination`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-destination.html) CLI command. For example, the following command creates a destination for your Sidewalk end device:
 
 ```
 aws iotwireless create-destination --name {{SidewalkDestination}} \

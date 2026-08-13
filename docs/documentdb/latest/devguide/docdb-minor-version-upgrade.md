@@ -45,7 +45,7 @@ To perform a minor version upgrade using the AWS Management Console:
 ------
 #### [ Using the AWS CLI ]
 
-Use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/modify-db-cluster.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/modify-db-cluster.html) command with the `--engine-version` parameter:
+Use the [`modify-db-cluster`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/modify-db-cluster.html) command with the `--engine-version` parameter:
 
 ```
 aws docdb modify-db-cluster \

@@ -23,7 +23,7 @@ You can get a list of all parameters in a DB parameter group and their values.
 ## AWS CLI
 <a name="USER_WorkingWithParamGroups.Viewing.CLI"></a>
 
-To view the parameter values for a DB parameter group, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-parameters.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-parameters.html) command with the following required parameter.
+To view the parameter values for a DB parameter group, use the AWS CLI [`describe-db-parameters`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-parameters.html) command with the following required parameter.
 + `--db-parameter-group-name`
 
 **Example**
@@ -46,5 +46,5 @@ DBPARAMETER  socket                    /tmp/mysql.sock  system           string 
 ## RDS API
 <a name="USER_WorkingWithParamGroups.Viewing.API"></a>
 
-To view the parameter values for a DB parameter group, use the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBParameters.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBParameters.html) command with the following required parameter.
+To view the parameter values for a DB parameter group, use the RDS API [`DescribeDBParameters`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBParameters.html) command with the following required parameter.
 + `DBParameterGroupName`

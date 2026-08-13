@@ -21,7 +21,7 @@ The CDK comes with a default synthesizer and bootstrapping configuration that ar
 ## How to configure CDK stack synthesis
 <a name="bootstrapping-synthesizers"></a>
 
-You configure CDK stack synthesis using the `synthesizer` property of your [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html) instance. This property specifies how your CDK stacks will be synthesized. You provide an instance of a class that implements [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.IStackSynthesizer.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.IStackSynthesizer.html) or [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.IReusableStackSynthesizer.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.IReusableStackSynthesizer.html). Its methods will be invoked every time an asset is added to the stack or when the stack is synthesized. The following is a basic example of using this property within your stack:
+You configure CDK stack synthesis using the `synthesizer` property of your [`Stack`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html) instance. This property specifies how your CDK stacks will be synthesized. You provide an instance of a class that implements [`IStackSynthesizer`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.IStackSynthesizer.html) or [`IReusableStackSynthesizer`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.IReusableStackSynthesizer.html). Its methods will be invoked every time an asset is added to the stack or when the stack is synthesized. The following is a basic example of using this property within your stack:
 
 **Example**
 

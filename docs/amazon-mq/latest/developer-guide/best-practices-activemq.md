@@ -20,7 +20,7 @@ You must not modify or delete this network interface. Modifying or deleting the 
 ## Always Use Connection Pooling
 <a name="always-use-connection-pooling"></a>
 
-In a scenario with a single producer and single consumer (such as the [Getting started: Creating and connecting to an ActiveMQ broker](getting-started-activemq.md) tutorial), you can use a single [https://activemq.apache.org/maven/apidocs/org/apache/activemq/ActiveMQConnectionFactory.html](https://activemq.apache.org/maven/apidocs/org/apache/activemq/ActiveMQConnectionFactory.html) class for every producer and consumer. For example:
+In a scenario with a single producer and single consumer (such as the [Getting started: Creating and connecting to an ActiveMQ broker](getting-started-activemq.md) tutorial), you can use a single [`ActiveMQConnectionFactory`](https://activemq.apache.org/maven/apidocs/org/apache/activemq/ActiveMQConnectionFactory.html) class for every producer and consumer. For example:
 
 ```
 // Create a connection factory.
@@ -35,7 +35,7 @@ final Connection consumerConnection = connectionFactory.createConnection();
 consumerConnection.start();
 ```
 
-However, in more realistic scenarios with multiple producers and consumers, it can be costly and inefficient to create a large number of connections for multiple producers. In these scenarios, you should group multiple producer requests using the [https://activemq.apache.org/maven/apidocs/org/apache/activemq/jms/pool/PooledConnectionFactory.html](https://activemq.apache.org/maven/apidocs/org/apache/activemq/jms/pool/PooledConnectionFactory.html) class. For example:
+However, in more realistic scenarios with multiple producers and consumers, it can be costly and inefficient to create a large number of connections for multiple producers. In these scenarios, you should group multiple producer requests using the [`PooledConnectionFactory`](https://activemq.apache.org/maven/apidocs/org/apache/activemq/jms/pool/PooledConnectionFactory.html) class. For example:
 
 **Note**
 Message consumers should *never* use the `PooledConnectionFactory` class.

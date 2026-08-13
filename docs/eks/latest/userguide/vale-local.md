@@ -53,7 +53,7 @@ Vale uses the `.vale.ini` configuration file in your project root to determine w
    vale sync
    ```
 
-1. Wait for Vale to finish downloading and syncing style rules
+1. Wait for Vale to finish downloading and syncing style rules.
 
 ## View style feedback in VS Code
 <a name="_view_style_feedback_in_vs_code"></a>

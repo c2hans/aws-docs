@@ -50,7 +50,7 @@ You can only go to the next step when you complete the required fields in the cu
 
 1. Open the AWS Marketplace Management Portal at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home), and then sign in to your seller account.
 
-1. From the **Build** menu, choose **Server**. Or, you can go directly to the [https://aws.amazon.com/marketplace/management/products/server](https://aws.amazon.com/marketplace/management/products/server) page.
+1. From the **Build** menu, choose **Server**. Or, you can go directly to the [**Server Products**](https://aws.amazon.com/marketplace/management/products/server) page.
 
 1. From the **Server products** tab, select **Create server product**, select **Amazon Machine Image (AMI)**, and then select one of the licensing types for single-AMI products:
    + **Bring your own license (BYOL)** – A product that the user gets a license from you outside of AWS Marketplace. It can be either a paid or free license.

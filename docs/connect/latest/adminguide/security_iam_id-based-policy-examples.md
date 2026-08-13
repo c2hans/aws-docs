@@ -17,7 +17,7 @@ To learn how to create an IAM identity-based policy using these example JSON pol
 + [Describe and update Connect Customer users based on tags](#security_iam_id-based-policy-examples-view-widget-tags)
 + [Create Connect Customer users based on tags](#connect-access-control-resources-example1)
 + [Create and view Amazon AppIntegrations resources](#appintegration-resources-example1)
-+ [Create and view Connect AI agents Assistants](#wisdom-resources-example1)
++ [Create and view Connect Customer agent assist Assistants](#wisdom-resources-example1)
 + [Manage outbound campaigns resources](#outboundcommunications-policy-example1)
 
 ## Policy best practices
@@ -247,10 +247,10 @@ The following sample policy allows event integrations to be created, listed, and
 
 ------
 
-## Create and view Connect AI agents Assistants
+## Create and view Connect Customer agent assist Assistants
 <a name="wisdom-resources-example1"></a>
 
-The following sample policy allows Connect AI agents assistants to be created, listed, fetched, and deleted.
+The following sample policy allows agent assist assistants to be created, listed, fetched, and deleted.
 
 ------
 #### [ JSON ]

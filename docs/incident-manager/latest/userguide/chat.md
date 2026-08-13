@@ -96,7 +96,7 @@ The steps in this procedure provide the recommended permission settings to allow
 + Follow the steps in [Tutorial: Get started with Slack](https://docs.aws.amazon.com/chatbot/latest/adminguide/slack-setup.html) in the *Amazon Q Developer in chat applications Administrator Guide* and include the following in your configuration.
   + In step 10, for **Role settings**, choose **Channel role**.
   + In step 10d, for **Policy templates**, select **Incident Manager permissions**.
-  + In step 11, for **Channel guardrail policies**, for **Policy name**, choose [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSIncidentManagerResolverAccess$jsonEditor](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSIncidentManagerResolverAccess$jsonEditor).
+  + In step 11, for **Channel guardrail policies**, for **Policy name**, choose [`AWSIncidentManagerResolverAccess`](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSIncidentManagerResolverAccess$jsonEditor).
   + In step 12, in the **SNS topics** section, do the following:
     + For **Region 1**, select an AWS Region that is included in your replication set.
     + For **Topics 1**, select the SNS topic you created in that Region to use to send incident notifications to the chat channel.
@@ -111,7 +111,7 @@ The steps in this procedure provide the recommended permission settings to allow
 + Follow the steps in [Tutorial: Get started with Microsoft Teams](https://docs.aws.amazon.com/chatbot/latest/adminguide/teams-setup.html) in the *Amazon Q Developer in chat applications Administrator Guide* and include the following in your configuration:
   + In step 10, for **Role settings**, choose **Channel role**.
   + In step 10d, for **Policy templates**, select **Incident Manager permissions**.
-  + In step 11, for **Channel guardrail policies**, for **Policy name**, choose [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSIncidentManagerResolverAccess$jsonEditor](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSIncidentManagerResolverAccess$jsonEditor).
+  + In step 11, for **Channel guardrail policies**, for **Policy name**, choose [`AWSIncidentManagerResolverAccess`](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSIncidentManagerResolverAccess$jsonEditor).
   + In step 12, in the **SNS topics** section, do the following:
     + For **Region 1**, select an AWS Region that is included in your replication set.
     + For **Topics 1**, select the SNS topic you created in that Region to use to send incident notifications to the chat channel.

@@ -95,7 +95,7 @@ run:
 **Note**
 **Evaluate post-trained model**
 To evaluate a post-trained model after a Nova SFT training job, follow these steps after running a successful training job. At the end of the training logs, you will see the log message "Training is complete". You will also find a `manifest.json` file in your output bucket containing the location of your checkpoint. This file will be located within an `output.tar.gz` file at your output S3 location. To proceed with evaluation, use this checkpoint by setting it as the value for `run.model_name_or_path` in your recipe configuration.
-+ `replica`: The number of compute instances to use for distributed inference (running inference across multiple nodes). Set `replica` > 1 to enable multi-node inference, which accelerates evaluation. If both `instance_count` and `replica` are specified, `instance_count` takes precedence. Note that multiple replicas only apply to SageMaker AI training jobs, not .
++ `replica`: The number of compute instances to use for distributed inference (running inference across multiple nodes). Set `replica` > 1 to enable multi-node inference, which accelerates evaluation. If both `instance_count` and `replica` are specified, `instance_count` takes precedence. Note that multiple replicas only apply to SageMaker AI training jobs, not SageMaker HyperPod.
 + `data_s3_path`: The input dataset Amazon S3 path. This field is required but should always left empty.
 + `mlflow_tracking_uri`: (Optional) The location of the MLflow tracking server (only needed on SMHP)
 + `mlflow_experiment_name`: (Optional) Name of the experiment to group related ML runs together
@@ -674,7 +674,7 @@ Key changes for CPT evaluation:
 ## Running evaluation training jobs
 <a name="nova-model-evaluation-notebook"></a>
 
-Start a training job using the following sample notebook. Please refer to below notebook as example to run the evaluation training job. For more information, see [Use a SageMaker AI estimator to run a training job](https://docs.aws.amazon.com//sagemaker/latest/dg/docker-containers-adapt-your-own-private-registry-estimator.html).
+Start a training job using the following sample Jupyter notebook. Please refer to below notebook as example to run the evaluation training job. For more information, see [Use a SageMaker AI estimator to run a training job](https://docs.aws.amazon.com//sagemaker/latest/dg/docker-containers-adapt-your-own-private-registry-estimator.html).
 
 ### Reference tables
 <a name="nova-model-evaluation-reference-table"></a>

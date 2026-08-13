@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/quizzes.h
 # Quizzes
 <a name="quizzes"></a>
 
-The solution’s content designer allows you to set up QnABot on AWS to use its Questionnaire Bot feature to create simple quizzes for your users.
+The guidance’s content designer allows you to set up QnABot on AWS to use its Questionnaire Bot feature to create simple quizzes for your users.
 
 QnABot on AWS comes with a simple quiz example that you can customize:
 

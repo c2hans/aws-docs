@@ -14,3 +14,4 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 + [`AWSSupport-TroubleshootAPIGatewayCustomDomainConfig`](automation-awssupport-troubleshootapigateway-customdomainconfig.md)
 + [`AWSSupport-TroubleshootAPIGatewayHttpErrors`](automation-aws-troubleshootapigatewayhttp-errors.md)
 + [`AWSSupport-TroubleshootAPIGatewayLambdaInvocation`](automation-awssupport-troubleshootapigatewaylambdainvocation.md)
++ [`AWSSupport-TroubleshootAPIGatewayVpcLinkIntegration`](automation-awssupport-troubleshootapigatewayvpclinkintegration.md)

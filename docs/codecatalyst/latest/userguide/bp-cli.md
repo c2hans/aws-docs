@@ -36,7 +36,7 @@ The [blueprint CLI](https://www.npmjs.com/package/@amazon-codecatalyst/blueprint
    import { {{<tooling-function-name>}} } from '@amazon-codecatalyst/blueprint-util.cli/lib/{{<tooling-folder-name>}}/{{<tooling-file-name>}};
    ```
 **Tip**
-You can to the [https://github.com/aws/codecatalyst-blueprints/tree/main/packages/utils/blueprint-cli](https://github.com/aws/codecatalyst-blueprints/tree/main/packages/utils/blueprint-cli) to find the name of the tooling you want to use.
+You can to the [`CodeCatalyst blueprints GitHub repository`](https://github.com/aws/codecatalyst-blueprints/tree/main/packages/utils/blueprint-cli) to find the name of the tooling you want to use.
 
    **If you want to use the image uploading tool, add the following to your script:**
 

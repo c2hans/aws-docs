@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/Welcome.htm
 
 Amazon Textract detects and analyzes text in documents and converts it into machine-readable text. This is the API reference documentation for Amazon Textract.
 
-This document was last published on August 6, 2026.
+This document was last published on August 13, 2026.

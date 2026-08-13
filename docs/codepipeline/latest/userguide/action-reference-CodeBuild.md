@@ -69,6 +69,13 @@ We strongly discourage the use of environment variables to store sensitive value
 When you enter the `name`, `value`, and `type` for your environment variables configuration, especially if the environment variable contains CodePipeline output variable syntax, do not exceed the 1000-character limit for the configuration’s value field. A validation error is returned when this limit is exceeded.
 For more information, see [ EnvironmentVariable](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_EnvironmentVariable.html) in the AWS CodeBuild API Reference. For an example CodeBuild action with an environment variable that resolves to the GitHub branch name, see [Example: Use a BranchName variable with CodeBuild environment variables](actions-variables.md#actions-variables-examples-env-branchname).
 
+**ServiceRoleArnOverride**
+Required: No
+An IAM role ARN that CodeBuild uses as the service role for builds triggered by this action, overriding the default service role configured on the CodeBuild project. When absent, the CodeBuild project uses its default service role.
+The specified role must have a trust policy that allows the `codebuild.amazonaws.com` service to assume it. Both the identity used to create or update the pipeline and the pipeline service role must have `iam:PassRole` permission for the specified role. For an example policy, see [Service role permissions: CodeBuild action](#edit-role-codebuild).
+As a security best practice, when a CodeBuild project is shared across multiple pipelines, we recommend specifying a scoped role for each pipeline to follow the principle of least privilege. For pipelines using CodeConnections source actions, see [Add CodeBuild GitClone permissions for connections to Bitbucket, GitHub, GitHub Enterprise Server, or GitLab.com](troubleshooting.md#codebuild-role-connections) for an example of scoping the role's connection permissions to a specific repository.
+The role must be in the same AWS account as the CodeBuild project.
+
 ## Input artifacts
 <a name="action-reference-CodeBuild-input"></a>
 + **Number of artifacts:** `1 to 5`
@@ -126,6 +133,21 @@ For CodeBuild support, add the following to your policy statement:
 
 ------
 
+If you use the `ServiceRoleArnOverride` parameter, add the following `iam:PassRole` permission to allow CodePipeline to pass the role to CodeBuild:
+
+```
+{
+    "Effect": "Allow",
+    "Action": "iam:PassRole",
+    "Resource": "arn:aws:iam::{{111122223333}}:role/{{your-codebuild-override-role}}",
+    "Condition": {
+        "StringEquals": {
+            "iam:PassedToService": "codebuild.amazonaws.com"
+        }
+    }
+}
+```
+
 ## Action declaration (CodeBuild example)
 <a name="action-reference-CodeBuild-example"></a>
 
@@ -148,6 +170,7 @@ Actions:
       ProjectName: my-build-project
       PrimarySource: MyApplicationSource1
       EnvironmentVariables: '[{"name":"TEST_VARIABLE","value":"TEST_VALUE","type":"PLAINTEXT"},{"name":"ParamStoreTest","value":"PARAMETER_NAME","type":"PARAMETER_STORE"}]'
+      ServiceRoleArnOverride: 'arn:aws:iam::111122223333:role/my-scoped-codebuild-role'
     OutputArtifacts:
       - Name: MyPipeline-BuildArtifact
     InputArtifacts:
@@ -176,7 +199,8 @@ Actions:
                 "CombineArtifacts": "true",
                 "ProjectName": "my-build-project",
                 "PrimarySource": "MyApplicationSource1",
-                "EnvironmentVariables": "[{\"name\":\"TEST_VARIABLE\",\"value\":\"TEST_VALUE\",\"type\":\"PLAINTEXT\"},{\"name\":\"ParamStoreTest\",\"value\":\"PARAMETER_NAME\",\"type\":\"PARAMETER_STORE\"}]"
+                "EnvironmentVariables": "[{\"name\":\"TEST_VARIABLE\",\"value\":\"TEST_VALUE\",\"type\":\"PLAINTEXT\"},{\"name\":\"ParamStoreTest\",\"value\":\"PARAMETER_NAME\",\"type\":\"PARAMETER_STORE\"}]",
+                "ServiceRoleArnOverride": "arn:aws:iam::111122223333:role/my-scoped-codebuild-role"
             },
             "OutputArtifacts": [
                 {

@@ -43,7 +43,7 @@ When the file system is **Available**, data compression is turned on.
 
 ### To turn on data compression when creating a file system (CLI)
 <a name="create-compression-fs-cli"></a>
-+ To create an FSx for Lustre file system with data compression turned on, use the Amazon FSx CLI command [https://docs.aws.amazon.com/cli/latest/reference/fsx/create-file-system.html](https://docs.aws.amazon.com/cli/latest/reference/fsx/create-file-system.html) with the `DataCompressionType` parameter, as shown following. The corresponding API operation is [CreateFileSystem](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSystem.html).
++ To create an FSx for Lustre file system with data compression turned on, use the Amazon FSx CLI command [`create-file-system`](https://docs.aws.amazon.com/cli/latest/reference/fsx/create-file-system.html) with the `DataCompressionType` parameter, as shown following. The corresponding API operation is [CreateFileSystem](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSystem.html).
 
   ```
   $ aws fsx create-file-system \
@@ -133,7 +133,7 @@ $ aws fsx update-file-system \
 
 You can use an available backup to create a new Amazon FSx for Lustre file system. When you create a new file system from backup, there is no need to specify the `DataCompressionType`; the setting will be applied using the backup's `DataCompressionType` setting. If you choose to specify the `DataCompressionType` when creating from backup, the value must match the backup's `DataCompressionType` setting.
 
-To view the settings on a backup, choose it from the **Backups** tab of the Amazon FSx console. Details of the backup will be listed on the **Summary** page for the backup. You can also run the [https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-backups.html](https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-backups.html) AWS CLI command (the equivalent API action is [https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeBackups.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeBackups.html)).
+To view the settings on a backup, choose it from the **Backups** tab of the Amazon FSx console. Details of the backup will be listed on the **Summary** page for the backup. You can also run the [`describe-backups`](https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-backups.html) AWS CLI command (the equivalent API action is [`DescribeBackups`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeBackups.html)).
 
 ## Compressing previously written files
 <a name="migrate-compression"></a>

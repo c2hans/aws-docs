@@ -13,7 +13,7 @@ Run [update-cluster-software](https://docs.aws.amazon.com/cli/latest/reference/s
 When this API is called, SageMaker HyperPod doesn’t drain or redistribute the jobs (Pods) running on the nodes. Make sure to check if there are any jobs running on the nodes before calling this API.
 The patching process replaces the root volume with the updated AMI, which means that your previous data stored in the instance root volume will be lost. Make sure that you back up your data from the instance root volume to Amazon S3 or Amazon FSx for Lustre.
 All cluster nodes experience downtime (nodes appear as `<NotReady>` in the output of `kubectl get node`) while the patching is in progress. We recommend that you terminate all workloads before patching and resume them after the patch completes.
-If the security patch fails, you can retrieve failure messages by running the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeCluster.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeCluster.html) API as instructed at [Describe a cluster](sagemaker-hyperpod-eks-operate-cli-command-cluster-details.md#sagemaker-hyperpod-eks-operate-cli-command-describe-cluster).
+If the security patch fails, you can retrieve failure messages by running the [`DescribeCluster`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeCluster.html) API as instructed at [Describe a cluster](sagemaker-hyperpod-eks-operate-cli-command-cluster-details.md#sagemaker-hyperpod-eks-operate-cli-command-describe-cluster).
 
 ```
 aws sagemaker update-cluster-software --cluster-name {{your-hyperpod-cluster}}

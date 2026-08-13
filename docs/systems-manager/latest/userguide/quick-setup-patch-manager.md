@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/quick-s
 # Configure patching for instances in an organization using a Quick Setup patch policy
 <a name="quick-setup-patch-manager"></a>
 
-With Quick Setup, a tool in AWS Systems Manager, you can create patch policies powered by Patch Manager. A patch policy defines the schedule and baseline to use when automatically patching your Amazon Elastic Compute Cloud (Amazon EC2) instances and other managed nodes. Using a single patch policy configuration, you can define patching for all accounts in multiple AWS Regions in your organization, for only the accounts and Regions you choose, or for a single account-Region pair. For more information about patch policies, see [Patch policy configurations in Quick Setup](patch-manager-policies.md).
+With Quick Setup, you can create patch policies powered by Patch Manager. A patch policy defines the schedule and baseline to use when automatically patching your Amazon Elastic Compute Cloud (Amazon EC2) instances and other managed nodes. Using a single patch policy configuration, you can define patching for all accounts in multiple AWS Regions in your organization, for only the accounts and Regions you choose, or for a single account-Region pair. For more information about patch policies, see [Patch policy configurations in Quick Setup](patch-manager-policies.md).
 
 **Prerequisite**
 To define a patch policy for a node using Quick Setup, the node must be a *managed node*. For more information about managing your nodes, see [Setting up Systems Manager unified console for an organization](systems-manager-setting-up-organizations.md).
@@ -59,7 +59,7 @@ The permissions policy you need in either case is located in the section below, 
 
 Patch policy configurations include an option to **Add required IAM policies to existing instance profiles attached to your instances**.
 
-If you don't choose this option but want Quick Setup to patch your managed nodes using this patch policy, you must ensure that the following are implemented:
+If you don't choose this option but want Quick Setup to patch your managed nodes using this patch policy, you must make sure that the following are implemented:
 + The IAM managed policy `AmazonSSMManagedInstanceCore` must be attached to the [IAM instance profile](setup-instance-permissions.md) or [IAM service role](hybrid-multicloud-service-role.md) that's used to provide Systems Manager permissions to your managed nodes.
 + You must add permissions to access your patch policy bucket as an inline policy to the IAM instance profile or IAM service role. You can provide wildcard access to all `aws-quicksetup-patchpolicy` buckets or only the specific bucket created for your organization or account, as shown in the earlier code samples.
 + You must tag your IAM instance profile or IAM service role with the following key-value pair.
@@ -148,13 +148,13 @@ After the patch policy configuration is created, you can locate the full name of
 ## Random patch baseline IDs in patch policy operations
 <a name="qs-patch-baselines-and-compliance"></a>
 
-Patching operations for patch policies utilize the `BaselineOverride` parameter in the `AWS-RunPatchBaseline` SSM Command document.
+Patching operations for patch policies use the `BaselineOverride` parameter in the `AWS-RunPatchBaseline` SSM Command document.
 
 When you use `AWS-RunPatchBaseline` for patching *outside* of a patch policy, you can use `BaselineOverride` to specify a list of patch baselines to use during the operation that are different from the specified defaults. You create this list in a file named `baseline_overrides.json` and manually add it to an Amazon S3 bucket that you own, as explained in [Using the BaselineOverride parameter](patch-manager-baselineoverride-parameter.md).
 
 For patching operations based on patch policies, however, Systems Manager automatically creates an S3 bucket and adds a `baseline_overrides.json` file to it. Then, every time Quick Setup runs a patching operation (using the Run Command tool, the system generates a random ID for each patch baseline. This ID is different for every patch policy patching operation, and the patch baseline it represents is not stored or accessible to you in your account.
 
-As a result, you will not see the ID of the patch baseline selected in your configuration in patching logs. This applies to both AWS managed patch baselines and custom patch baselines you might have selected. The baseline ID reported in the log is instead that one that was generated for that specific patching operation.
+As a result, the ID of the patch baseline selected in your configuration in patching logs. This applies to both AWS managed patch baselines and custom patch baselines you might have selected. The baseline ID reported in the log is instead that one that was generated for that specific patching operation.
 
 In addition, if you attempt to view details in Patch Manager about a patch baseline that was generated with a random ID, the system reports that the patch baseline doesn't exist. This is expected behavior and can be ignored.
 
@@ -250,4 +250,4 @@ For information, see [Case 1: Use your own instance profile or service role with
 
 1. Choose **Create**.
 
-   To review patching status after the patch policy is created, you can access the configuration from the [https://console.aws.amazon.com/systems-manager/quick-setup](https://console.aws.amazon.com/systems-manager/quick-setup) page.
+   To review patching status after the patch policy is created, you can access the configuration from the [Quick Setup](https://console.aws.amazon.com/systems-manager/quick-setup) page.

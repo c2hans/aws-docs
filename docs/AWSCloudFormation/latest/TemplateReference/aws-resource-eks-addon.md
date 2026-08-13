@@ -112,7 +112,7 @@ Specifying this option preserves the add-on software on your cluster but Amazon 
 How to resolve field value conflicts for an Amazon EKS add-on. Conflicts are handled based on the value you choose:
 + **None** – If the self-managed version of the add-on is installed on your cluster, Amazon EKS doesn't change the value. Creation of the add-on might fail.
 + **Overwrite** – If the self-managed version of the add-on is installed on your cluster and the Amazon EKS default value is different than the existing value, Amazon EKS changes the value to the Amazon EKS default value.
-+ **Preserve** – This is similar to the NONE option. If the self-managed version of the add-on is installed on your cluster Amazon EKS doesn't change the add-on resource properties. Creation of the add-on might fail if conflicts are detected. This option works differently during the update operation. For more information, see [https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateAddon.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateAddon.html).
++ **Preserve** – This is similar to the NONE option. If the self-managed version of the add-on is installed on your cluster Amazon EKS doesn't change the add-on resource properties. Creation of the add-on might fail if conflicts are detected. This option works differently during the update operation. For more information, see [`UpdateAddon`](https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateAddon.html).
 If you don't currently have the self-managed version of the add-on installed on your cluster, the Amazon EKS add-on is installed. Amazon EKS sets all values to default values, regardless of the option that you specify.
 *Required*: No
 *Type*: String
@@ -146,14 +146,14 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 
 For the add-on `vpc-cni`, `Ref` returns the name of the add-on. For example, `cluster-name|vpc-cni`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-eks-addon-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-eks-addon-return-values-fn--getatt-fn--getatt"></a>
@@ -164,4 +164,4 @@ The ARN of the add-on, such as `arn:aws:eks:us-west-2:111122223333:addon/1-19/vp
 ## See also
 <a name="aws-resource-eks-addon--seealso"></a>
 + [Amazon EKS add-ons](https://docs.aws.amazon.com/eks/latest/userguide/eks-add-ons.html) in the *Amazon EKS User Guide*.
-+ [https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateAddon.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateAddon.html) in the *Amazon EKS API Reference*.
++ [`CreateAddon`](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateAddon.html) in the *Amazon EKS API Reference*.

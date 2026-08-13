@@ -13,7 +13,7 @@ For each table, you must define:
 
   A primary key can be *simple*, consisting of a single partition (HASH) key, or *composite*, consisting of a partition and a sort (RANGE) key.
 
-  Each key value has an associated *data type*, enumerated by the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/ScalarAttributeType.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/ScalarAttributeType.html) class. The key value can be binary (B), numeric (N), or a string (S). For more information, see [Naming Rules and Data Types](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html) in the Amazon DynamoDB Developer Guide.
+  Each key value has an associated *data type*, enumerated by the [`ScalarAttributeType`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/ScalarAttributeType.html) class. The key value can be binary (B), numeric (N), or a string (S). For more information, see [Naming Rules and Data Types](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html) in the Amazon DynamoDB Developer Guide.
 +  *Provisioned throughput* are values that define the number of reserved read/write capacity units for the table.
 **Note**
  [Amazon DynamoDB pricing](https://aws.amazon.com/dynamodb/pricing/) is based on the provisioned throughput values that you set on your tables, so reserve only as much capacity as you think you’ll need for your table.
@@ -31,7 +31,7 @@ If a table with the name you chose already exists, a `[DynamoDbException](https:
 ### Create a table with a simple primary key
 <a name="dynamodb-create-table-simple"></a>
 
-This code creates a table with one attribute that is the table's simple primary key. the example uses `[AttributeDefinition](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/AttributeDefinition.html)` and `[KeySchemaElement](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/KeySchemaElement.html)` objects for the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/CreateTableRequest.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/CreateTableRequest.html).
+This code creates a table with one attribute that is the table's simple primary key. the example uses `[AttributeDefinition](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/AttributeDefinition.html)` and `[KeySchemaElement](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/KeySchemaElement.html)` objects for the [`CreateTableRequest`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/CreateTableRequest.html).
 
  **Imports**
 
@@ -171,7 +171,7 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 You can list the tables in a particular Region by calling the `DynamoDbClient’s` `listTables` method.
 
 **Note**
-If the named table doesn’t exist for your account and Region, a [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/ResourceNotFoundException.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/ResourceNotFoundException.html) is thrown.
+If the named table doesn’t exist for your account and Region, a [`ResourceNotFoundException`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/ResourceNotFoundException.html) is thrown.
 
  **Imports**
 
@@ -228,7 +228,7 @@ import java.util.List;
     }
 ```
 
-By default, up to 100 tables are returned per call—​use `lastEvaluatedTableName` on the returned [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/ListTablesResponse.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/ListTablesResponse.html) object to get the last table that was evaluated. You can use this value to start the listing after the last returned value of the previous listing.
+By default, up to 100 tables are returned per call—​use `lastEvaluatedTableName` on the returned [`ListTablesResponse`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/ListTablesResponse.html) object to get the last table that was evaluated. You can use this value to start the listing after the last returned value of the previous listing.
 
 See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/0b1785e42949ebf959eaa0f0da4dc2a48f92ea25/javav2/example_code/dynamodb/src/main/java/com/example/dynamodb/ListTables.java) on GitHub.
 
@@ -238,7 +238,7 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 Use the `DynamoDbClient’s` `describeTable` method to get information about a table.
 
 **Note**
-If the named table doesn’t exist for your account and Region, a [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/ResourceNotFoundException.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/ResourceNotFoundException.html) is thrown.
+If the named table doesn’t exist for your account and Region, a [`ResourceNotFoundException`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/ResourceNotFoundException.html) is thrown.
 
  **Imports**
 

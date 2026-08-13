@@ -7,13 +7,13 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # `CreationPolicy` attribute
 <a name="aws-attribute-creationpolicy"></a>
 
-Associate the `CreationPolicy` attribute with a resource to prevent its status from reaching create complete until CloudFormation receives a specified number of success signals or the timeout period is exceeded. To signal a resource, you can use the [cfn-signal](cfn-signal.md) helper script or [https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SignalResource.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SignalResource.html) API. CloudFormation publishes valid signals to the stack events so that you track the number of signals sent.
+Associate the `CreationPolicy` attribute with a resource to prevent its status from reaching create complete until CloudFormation receives a specified number of success signals or the timeout period is exceeded. To signal a resource, you can use the [cfn-signal](cfn-signal.md) helper script or [SignalResource](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SignalResource.html) API. CloudFormation publishes valid signals to the stack events so that you track the number of signals sent.
 
 The creation policy is invoked only when CloudFormation creates the associated resource. Currently, the only CloudFormation resources that support creation policies are:
-+ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-appstream-fleet.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-appstream-fleet.html)
-+ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-autoscaling-autoscalinggroup.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-autoscaling-autoscalinggroup.html)
-+ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ec2-instance.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ec2-instance.html)
-+ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-waitcondition.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-waitcondition.html)
++ [AWS::AppStream::Fleet](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-appstream-fleet.html)
++ [AWS::AutoScaling::AutoScalingGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-autoscaling-autoscalinggroup.html)
++ [AWS::EC2::Instance](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ec2-instance.html)
++ [AWS::CloudFormation::WaitCondition](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-waitcondition.html)
 
 Use the `CreationPolicy` attribute when you want to wait on resource configuration actions before stack creation proceeds. For example, if you install and configure software applications on an EC2 instance, you might want those applications to be running before proceeding. In such cases, you can add a `CreationPolicy` attribute to the instance, and then send a success signal to the instance after the applications are installed and configured. For a detailed example, see [Deploying applications on Amazon EC2 with CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/deploying.applications.html) in the *AWS CloudFormation User Guide*.
 
@@ -178,7 +178,7 @@ AutoScalingGroup:
 
 The following example shows how to add a creation policy to a wait condition for CloudFormation resources beyond Amazon EC2.
 
-To signal the `WaitCondition` resource, use the [https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SignalResource.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SignalResource.html) API. This API is designed to work with `WaitCondition` resources that you configure using a `CreationPolicy`.
+To signal the `WaitCondition` resource, use the [SignalResource](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SignalResource.html) API. This API is designed to work with `WaitCondition` resources that you configure using a `CreationPolicy`.
 
 #### JSON
 <a name="aws-attribute-creationpolicy-example-2.json"></a>

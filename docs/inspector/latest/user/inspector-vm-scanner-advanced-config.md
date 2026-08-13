@@ -25,6 +25,8 @@ Use `--state-dir` with `--send-results disabled` to save the SBOM locally.
 + `--mem-profile` enables the Go runtime memory profiler and configures where the result is written.
 + `--config-path` directs Inspector VM Scanner to derive arguments from a local configuration file. If the same argument is passed in both the CLI and configuration file, the CLI value is prioritized.
   + Inspector VM Scanner configuration files are specified in TOML, with all argument names identical to the CLI.
+  + By default, Inspector VM Scanner looks for a configuration file at `/opt/aws/inspector/etc/config` on Linux and macOS, or `C:\\ProgramData\\Amazon\\Inspector\\Config\\config` on Windows. The file has no extension but uses TOML format.
+  + When you specify `--config-path`, the specified path takes precedence over the default path.
 
  The following example shows a configuration file:
 

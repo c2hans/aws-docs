@@ -229,7 +229,7 @@ Open the [MQTT client in the AWS IoT console](https://console.aws.amazon.com//io
       }
       ```
 
-      Notice that the `device_id` value is a quoted string and the `temperature` value is numeric. This is because the [https://docs.aws.amazon.com//iot/latest/developerguide/iot-sql-functions.html#iot-function-topic](https://docs.aws.amazon.com//iot/latest/developerguide/iot-sql-functions.html#iot-function-topic) function extracted the string from the input message's topic name while the `temperature` value uses the numeric value from the input message's payload.
+      Notice that the `device_id` value is a quoted string and the `temperature` value is numeric. This is because the [`topic()`](https://docs.aws.amazon.com//iot/latest/developerguide/iot-sql-functions.html#iot-function-topic) function extracted the string from the input message's topic name while the `temperature` value uses the numeric value from the input message's payload.
 
       If you want to make the `device_id` value a numeric value, replace `topic(2)` in the rule query statement with:
 

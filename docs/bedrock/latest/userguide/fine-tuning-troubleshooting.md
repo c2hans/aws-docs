@@ -8,11 +8,11 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/fine-tuning-tro
 This section summarizes errors that you might encounter and what to check if you do.
 
 ## Permissions issues
-<a name="w2aac17c31c44b5b1"></a>
+<a name="w2aac17c31c42b5b1"></a>
 
 If you encounter an issue with permissions to access an Amazon S3 bucket, check that the following are true:
 
-1. If the Amazon S3 bucket uses a customer managed AWS Key Management Service (KMS key) for server-side encryption, ensure that the IAM role passed to Amazon Bedrock has `kms:Decrypt` permissions for the KMS key. For example, see [Allow a user to enccrypt and decrypt with any AWS KMS key in a specific AWS account](https://docs.aws.amazon.com/kms/latest/developerguide/customer-managed-policies.html#iam-policy-example-encrypt-decrypt-one-account).
+1. If the Amazon S3 bucket uses a customer managed AWS Key Management Service (KMS key) for server-side encryption, make sure that the IAM role passed to Amazon Bedrock has `kms:Decrypt` permissions for the KMS key. For example, see [Allow a user to enccrypt and decrypt with any AWS KMS key in a specific AWS account](https://docs.aws.amazon.com/kms/latest/developerguide/customer-managed-policies.html#iam-policy-example-encrypt-decrypt-one-account).
 
 1. The Amazon S3 bucket is in the same Region as the Amazon Bedrock model customization job.
 
@@ -36,7 +36,7 @@ Amazon S3 perms missing (PutObject): Could not validate PutObject permissions to
 If you encounter the preceding error, check that the IAM role passed to the service has `s3:PutObject` permissions for the output data Amazon S3 URI.
 
 ## Data issues
-<a name="w2aac17c31c44b5b3"></a>
+<a name="w2aac17c31c42b5b3"></a>
 
 The following errors are related to issues with the training, validation, or output data files:
 
@@ -67,7 +67,7 @@ If you encounter the preceding error, check that the following are true:
 Input size exceeded in file {{fileName.jsonl}} for record starting with...
 ```
 
-If you encounter an error beginning with the text above, ensure that the number of characters conforms to the character quota in [Prepare data for fine-tuning your models](model-customization-prepare.md).
+If you encounter an error beginning with the text above, make sure that the number of characters conforms to the character quota in [Prepare data for fine-tuning your models](model-customization-prepare.md).
 
 **Token count exceeded**
 
@@ -80,7 +80,7 @@ Max sum of input and output token length 4097 exceeds total limit of 4096
 If you encounter an error similar to the preceeding example, make sure that the number of tokens conforms to the token quota in [Prepare data for fine-tuning your models](model-customization-prepare.md).
 
 ## Third-party license terms and policy issues
-<a name="w2aac17c31c44b5b5"></a>
+<a name="w2aac17c31c42b5b5"></a>
 
 The following errors are related to third-party's license terms and their policies:
 
@@ -90,10 +90,10 @@ The following errors are related to third-party's license terms and their polici
 Automated tests flagged this fine-tuning job as including materials that are potentially inconsistent with Anthropic's third-party license terms. Please contact support.
 ```
 
-If you encounter the preceding error, ensure your training dataset does not contain content that is inconsistent with Anthropic's usage policies. If the issue persists, contact Support.
+If you encounter the preceding error, make sure your training dataset does not contain content that is inconsistent with Anthropic's usage policies. If the issue persists, contact Support.
 
 ## Internal error
-<a name="w2aac17c31c44b5b7"></a>
+<a name="w2aac17c31c42b5b7"></a>
 
 ```
 Encountered an unexpected error when processing the request, please try again

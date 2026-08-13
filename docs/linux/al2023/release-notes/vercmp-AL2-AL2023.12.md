@@ -178,14 +178,14 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.300067.1-1.amzn2
   - **AL2023.12 version:** 1.300067.1-1.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
+- ** [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
+  - **RPM:**  [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
   - **Architectures:** aarch64, noarch, x86\_64
   - **AL2 version:** 3.1.3-1.amzn2
   - **AL2023.12 version:** 3.1.3-1.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html)
+- ** [`amazon-linux-onprem`](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html) **
+  - **RPM:**  [`amazon-linux-onprem`](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html)
   - **Architectures:** noarch
   - **AL2 version:** 1.0-0.amzn2
   - **AL2023.12 version:** 1.2-0.amzn2023
@@ -570,14 +570,14 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 9.11.4-26.P2.amzn2.13.16
   - **AL2023.12 version:** 9.18.50-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  / **Architectures:** aarch64, x86\_64
+- ** [`binutils`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) **
+  - **RPM:**  [`binutils`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  binutils-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 2.29.1-31.amzn2.0.2
   - **AL2023.12 version:** 2.41-50.amzn2023.0.5
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (`gcc10-binutils` in AL2) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (gcc10-binutils in AL2)  / **Architectures:**
+- ** [`binutils`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (`gcc10-binutils` in AL2) **
+  - **RPM:**  [`binutils`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (gcc10-binutils in AL2)  / **Architectures:**
   - **RPM:**  binutils-devel (gcc10-binutils-devel in AL2)  / **Architectures:**
   - **AL2 version:** 2.35.2-9.amzn2.0.5
   - **AL2023.12 version:** 2.41-50.amzn2023.0.5
@@ -967,8 +967,8 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 3.5-4.amzn2
   - **AL2023.12 version:** 3.17.1-1.amzn2023.0.3
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-cron](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-cron) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-cron](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-cron)  / **Architectures:** aarch64, x86\_64
+- ** [`cronie`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-cron) **
+  - **RPM:**  [`cronie`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-cron)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  cronie-anacron  / **Architectures:** aarch64, x86\_64
   - **RPM:**  cronie-noanacron  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 1.4.11-23.amzn2
@@ -1030,9 +1030,9 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.2.6-2.amzn2.0.2
   - **AL2023.12 version:** 0.2.7-8.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
+- ** [`curl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal) **
+  - **RPM:**  [`curl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`libcurl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libcurl-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 8.3.0-1.amzn2.0.12
   - **AL2023.12 version:** 8.17.0-1.amzn2023.0.3
@@ -1362,8 +1362,8 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.0.11-1.amzn2
   - **AL2023.12 version:** 1.0.11-0.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/connecting-to-instances.html](https://docs.aws.amazon.com/linux/al2023/ug/connecting-to-instances.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/connecting-to-instances.html](https://docs.aws.amazon.com/linux/al2023/ug/connecting-to-instances.html)
+- ** [`ec2-instance-connect`](https://docs.aws.amazon.com/linux/al2023/ug/connecting-to-instances.html) **
+  - **RPM:**  [`ec2-instance-connect`](https://docs.aws.amazon.com/linux/al2023/ug/connecting-to-instances.html)
   - **Architectures:** noarch
   - **AL2 version:** 1.1-19.amzn2
   - **AL2023.12 version:** 1.1-19.amzn2023
@@ -1707,9 +1707,9 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 7.6.4-3.amzn2.0.2
   - **AL2023.12 version:** 8.0.4-5.amzn2023.0.2
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) **
+- ** [`gcc`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) **
   - **RPM:**  cpp  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`gcc`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gcc-c\+\+  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gcc-gdb-plugin  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gcc-gfortran  / **Architectures:** aarch64, x86\_64
@@ -1718,9 +1718,9 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 7.3.1-18.amzn2
   - **AL2023.12 version:** 11.5.0-5.amzn2023.0.5
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (`gcc10` in AL2) **
+- ** [`gcc`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (`gcc10` in AL2) **
   - **RPM:**  cpp (cpp10 in AL2)  / **Architectures:**
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (gcc10 in AL2)  / **Architectures:**
+  - **RPM:**  [`gcc`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (gcc10 in AL2)  / **Architectures:**
   - **RPM:**  gcc-c\+\+ (gcc10-c\+\+ in AL2)  / **Architectures:**
   - **RPM:**  gcc-gdb-plugin (gcc10-gdb-plugin in AL2)  / **Architectures:**
   - **RPM:**  gcc-gfortran (gcc10-gfortran in AL2)  / **Architectures:**
@@ -1867,8 +1867,8 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 2.56.1-9.amzn2.0.14
   - **AL2023.12 version:** 2.82.2-770.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  / **Architectures:** aarch64, x86\_64
+- ** [`glibc`](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html) **
+  - **RPM:**  [`glibc`](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  glibc-all-langpacks  / **Architectures:** aarch64, x86\_64
   - **RPM:**  glibc-benchtests  / **Architectures:** aarch64, x86\_64
   - **RPM:**  glibc-common  / **Architectures:** aarch64, x86\_64
@@ -2189,8 +2189,8 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 3.0.8-4.amzn2.0.1
   - **AL2023.12 version:** 3.0.11-9.amzn2023.0.2
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  / **Architectures:** aarch64, x86\_64
+- ** [`gnupg2`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal) **
+  - **RPM:**  [`gnupg2`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gnupg2-smime  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 2.0.22-5.amzn2.0.6
   - **AL2023.12 version:** 2.3.7-1.amzn2023.0.9
@@ -2218,8 +2218,8 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.56.1-1.amzn2
   - **AL2023.12 version:** 1.82.0-1.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:** aarch64, x86\_64
+- ** [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
+  - **RPM:**  [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  golang-bin  / **Architectures:** aarch64, x86\_64
   - **RPM:**  golang-docs  / **Architectures:** noarch
   - **RPM:**  golang-misc  / **Architectures:** noarch
@@ -2693,12 +2693,12 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.11.8-4.amzn2.0.2
   - **AL2023.12 version:** 2.4.1-3.amzn2023.0.6
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** noarch
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** noarch
+- ** [`hyperv-daemons`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html) **
+  - **RPM:**  [`hyperv-daemons`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** x86\_64
+  - **RPM:**  [`hyperv-daemons-license`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** noarch
+  - **RPM:**  [`hypervfcopyd`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** x86\_64
+  - **RPM:**  [`hypervkvpd`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** x86\_64
+  - **RPM:**  [`hyperv-tools`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** noarch
   - **RPM:**  hypervvssd  / **Architectures:** x86\_64
   - **AL2 version:** 0-0.32.20161211git.amzn2
   - **AL2023.12 version:** 0-0.42.20220731git.amzn2023.0.1
@@ -2938,21 +2938,21 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.11a-16.1.amzn2
   - **AL2023.12 version:** 0.11b-21.amzn2023.0.3
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+- ** [`java-11-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
+  - **RPM:**  [`java-11-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  java-11-amazon-corretto-debugsymbols  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-11-amazon-corretto-headless`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-11-amazon-corretto-javadoc`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 11.0.31\+11-1.amzn2
   - **AL2023.12 version:** 11.0.31\+11-1.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+- ** [`java-17-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
+  - **RPM:**  [`java-17-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  java-17-amazon-corretto-debugsymbols  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-17-amazon-corretto-devel`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-17-amazon-corretto-headless`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-17-amazon-corretto-javadoc`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-17-amazon-corretto-jmods`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 17.0.19\+10-1.amzn2.1
   - **AL2023.12 version:** 17.0.19\+10-1.amzn2023.1
 
@@ -3400,8 +3400,8 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.14-7.amzn2.0.2
   - **AL2023.12 version:** 0.14-21.amzn2023.0.2
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb)  / **Architectures:** aarch64, x86\_64
+- ** [`libdb`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb) **
+  - **RPM:**  [`libdb`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libdb-cxx  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libdb-cxx-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libdb-devel  / **Architectures:** aarch64, x86\_64
@@ -4484,8 +4484,8 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.0.1-5.git036e314.amzn2.0.1
   - **AL2023.12 version:** 1.1.0-12.git85e5583.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  / **Architectures:** aarch64, x86\_64
+- ** [`llvm`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) **
+  - **RPM:**  [`llvm`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  llvm-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  llvm-doc  / **Architectures:** noarch
   - **RPM:**  llvm-googletest  / **Architectures:** aarch64, x86\_64
@@ -4495,8 +4495,8 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 11.1.0-1.amzn2.0.2
   - **AL2023.12 version:** 15.0.7-3.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (`llvm7.0` in AL2) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (llvm7.0 in AL2)  / **Architectures:**
+- ** [`llvm`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (`llvm7.0` in AL2) **
+  - **RPM:**  [`llvm`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (llvm7.0 in AL2)  / **Architectures:**
   - **RPM:**  llvm-devel (llvm7.0-devel in AL2)  / **Architectures:**
   - **RPM:**  llvm-doc (llvm7.0-doc in AL2)  / **Architectures:**
   - **RPM:**  llvm-libs (llvm7.0-libs in AL2)  / **Architectures:**
@@ -5701,11 +5701,11 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 3.5.1-3.amzn2
   - **AL2023.12 version:** 3.7.0-3.amzn2023.0.2
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre)  / **Architectures:** aarch64, x86\_64
+- ** [`pcre`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre) **
+  - **RPM:**  [`pcre`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`pcre-devel`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`pcre-static`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`pcre-tools`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre)  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 8.32-17.amzn2.0.3
   - **AL2023.12 version:** 8.44-3.amzn2023.1.0.3
 
@@ -5739,8 +5739,8 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.4.10-13.amzn2
   - **AL2023.12 version:** 1.4.34-1.amzn2023.0.3
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/perl.html](https://docs.aws.amazon.com/linux/al2023/ug/perl.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/perl.html](https://docs.aws.amazon.com/linux/al2023/ug/perl.html)  / **Architectures:** aarch64, x86\_64
+- ** [`perl`](https://docs.aws.amazon.com/linux/al2023/ug/perl.html) **
+  - **RPM:**  [`perl`](https://docs.aws.amazon.com/linux/al2023/ug/perl.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  perl-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  perl-ExtUtils-Embed  / **Architectures:** noarch
   - **RPM:**  perl-libs  / **Architectures:** aarch64, x86\_64
@@ -7623,8 +7623,8 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.109-10.amzn2.0.1
   - **AL2023.12 version:** 116-2.amzn2023.0.2
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (`php` in AL2) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (php in AL2)  / **Architectures:** aarch64, x86\_64
+- ** [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (`php` in AL2) **
+  - **RPM:**  [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (php in AL2)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.2-bcmath (php-bcmath in AL2)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.2-cli (php-cli in AL2)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.2-common (php-common in AL2)  / **Architectures:** aarch64, x86\_64
@@ -7935,7 +7935,7 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.5.6-9.amzn2
   - **AL2023.12 version:** 2.4.7-6.amzn2023.0.2
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html) (`python3` in AL2) **
+- ** [`python3.9`](https://docs.aws.amazon.com/linux/al2023/ug/python.html) (`python3` in AL2) **
   - **RPM:**  python3  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3-debug  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3-devel  / **Architectures:** aarch64, x86\_64
@@ -8445,10 +8445,10 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 2.0.0.648-36.amzn2.0.20
   - **AL2023.12 version:** 3.2.8-184.amzn2023.0.6
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/rust.html](https://docs.aws.amazon.com/linux/al2023/ug/rust.html) **
+- ** [`rust`](https://docs.aws.amazon.com/linux/al2023/ug/rust.html) **
   - **RPM:**  cargo  / **Architectures:** aarch64, x86\_64
   - **RPM:**  clippy  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/rust.html](https://docs.aws.amazon.com/linux/al2023/ug/rust.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`rust`](https://docs.aws.amazon.com/linux/al2023/ug/rust.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  rust-analysis  / **Architectures:** aarch64, x86\_64
   - **RPM:**  rust-analyzer  / **Architectures:** aarch64, x86\_64
   - **RPM:**  rust-debugger-common  / **Architectures:** noarch
@@ -10362,16 +10362,16 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.28.4-1.amzn2.0.1
   - **AL2023.12 version:** 1.6.4-115.amzn2023.0.2
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (`llvm3.9` in AL2) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (llvm3.9 in AL2)  / **Architectures:**
+- ** [`llvm`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (`llvm3.9` in AL2) **
+  - **RPM:**  [`llvm`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (llvm3.9 in AL2)  / **Architectures:**
   - **RPM:**  llvm-devel (llvm3.9-devel in AL2)  / **Architectures:**
   - **RPM:**  llvm-libs (llvm3.9-libs in AL2)  / **Architectures:**
   - **RPM:**  llvm-static (llvm3.9-static in AL2)  / **Architectures:**
   - **AL2 version:** 3.9.1-7.amzn2.0.1
   - **AL2023.12 version:** 15.0.7-3.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (`llvm5.0` in AL2) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (llvm5.0 in AL2)  / **Architectures:**
+- ** [`llvm`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (`llvm5.0` in AL2) **
+  - **RPM:**  [`llvm`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (llvm5.0 in AL2)  / **Architectures:**
   - **RPM:**  llvm-devel (llvm5.0-devel in AL2)  / **Architectures:**
   - **RPM:**  llvm-doc (llvm5.0-doc in AL2)  / **Architectures:**
   - **RPM:**  llvm-libs (llvm5.0-libs in AL2)  / **Architectures:**
@@ -10379,10 +10379,10 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 5.0.1-7.amzn2.0.1
   - **AL2023.12 version:** 15.0.7-3.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/rust.html](https://docs.aws.amazon.com/linux/al2023/ug/rust.html) **
+- ** [`rust`](https://docs.aws.amazon.com/linux/al2023/ug/rust.html) **
   - **RPM:**  cargo  / **Architectures:**
   - **RPM:**  clippy  / **Architectures:**
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/rust.html](https://docs.aws.amazon.com/linux/al2023/ug/rust.html)  / **Architectures:**
+  - **RPM:**  [`rust`](https://docs.aws.amazon.com/linux/al2023/ug/rust.html)  / **Architectures:**
   - **RPM:**  rust-analysis  / **Architectures:**
   - **RPM:**  rust-debugger-common  / **Architectures:**
   - **RPM:**  rust-doc  / **Architectures:**
@@ -10414,8 +10414,8 @@ The full comparison of RPM package versions is below.
 ## golang1.11 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-golang1.11"></a>
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:**
+- ** [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
+  - **RPM:**  [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:**
   - **RPM:**  golang-bin  / **Architectures:**
   - **RPM:**  golang-docs  / **Architectures:**
   - **RPM:**  golang-misc  / **Architectures:**
@@ -10429,8 +10429,8 @@ The full comparison of RPM package versions is below.
 ## golang1.19 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-golang1.19"></a>
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:**
+- ** [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
+  - **RPM:**  [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:**
   - **RPM:**  golang-bin  / **Architectures:**
   - **RPM:**  golang-docs  / **Architectures:**
   - **RPM:**  golang-misc  / **Architectures:**
@@ -10541,8 +10541,8 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.0.18-2.amzn2
   - **AL2023.12 version:** 1.0.19-5.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (`php` in AL2) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (php in AL2)  / **Architectures:**
+- ** [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (`php` in AL2) **
+  - **RPM:**  [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (php in AL2)  / **Architectures:**
   - **RPM:**  php8.2-bcmath (php-bcmath in AL2)  / **Architectures:**
   - **RPM:**  php8.2-cli (php-cli in AL2)  / **Architectures:**
   - **RPM:**  php8.2-common (php-common in AL2)  / **Architectures:**
@@ -10640,8 +10640,8 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.08-6.amzn2
   - **AL2023.12 version:** 1.13-1.amzn2023.0.2
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (`php` in AL2) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (php in AL2)  / **Architectures:**
+- ** [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (`php` in AL2) **
+  - **RPM:**  [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (php in AL2)  / **Architectures:**
   - **RPM:**  php8.2-bcmath (php-bcmath in AL2)  / **Architectures:**
   - **RPM:**  php8.2-cli (php-cli in AL2)  / **Architectures:**
   - **RPM:**  php8.2-common (php-common in AL2)  / **Architectures:**
@@ -10703,8 +10703,8 @@ The full comparison of RPM package versions is below.
 ## php7.3 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-php7.3"></a>
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (`php` in AL2) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (php in AL2)  / **Architectures:**
+- ** [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (`php` in AL2) **
+  - **RPM:**  [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (php in AL2)  / **Architectures:**
   - **RPM:**  php8.2-bcmath (php-bcmath in AL2)  / **Architectures:**
   - **RPM:**  php8.2-cli (php-cli in AL2)  / **Architectures:**
   - **RPM:**  php8.2-common (php-common in AL2)  / **Architectures:**
@@ -10766,8 +10766,8 @@ The full comparison of RPM package versions is below.
 ## php7.4 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-php7.4"></a>
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (`php` in AL2) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (php in AL2)  / **Architectures:**
+- ** [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (`php` in AL2) **
+  - **RPM:**  [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (php in AL2)  / **Architectures:**
   - **RPM:**  php8.2-bcmath (php-bcmath in AL2)  / **Architectures:**
   - **RPM:**  php8.2-cli (php-cli in AL2)  / **Architectures:**
   - **RPM:**  php8.2-common (php-common in AL2)  / **Architectures:**
@@ -10829,8 +10829,8 @@ The full comparison of RPM package versions is below.
 ## php8.0 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-php8.0"></a>
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (`php` in AL2) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (php in AL2)  / **Architectures:**
+- ** [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (`php` in AL2) **
+  - **RPM:**  [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (php in AL2)  / **Architectures:**
   - **RPM:**  php8.2-bcmath (php-bcmath in AL2)  / **Architectures:**
   - **RPM:**  php8.2-cli (php-cli in AL2)  / **Architectures:**
   - **RPM:**  php8.2-common (php-common in AL2)  / **Architectures:**
@@ -10862,8 +10862,8 @@ The full comparison of RPM package versions is below.
 ## php8.1 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-php8.1"></a>
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (`php` in AL2) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (php in AL2)  / **Architectures:**
+- ** [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (`php` in AL2) **
+  - **RPM:**  [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (php in AL2)  / **Architectures:**
   - **RPM:**  php8.2-bcmath (php-bcmath in AL2)  / **Architectures:**
   - **RPM:**  php8.2-cli (php-cli in AL2)  / **Architectures:**
   - **RPM:**  php8.2-common (php-common in AL2)  / **Architectures:**
@@ -10895,8 +10895,8 @@ The full comparison of RPM package versions is below.
 ## php8.2 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-php8.2"></a>
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (`php` in AL2) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (php in AL2)  / **Architectures:**
+- ** [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (`php` in AL2) **
+  - **RPM:**  [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (php in AL2)  / **Architectures:**
   - **RPM:**  php8.2-bcmath (php-bcmath in AL2)  / **Architectures:**
   - **RPM:**  php8.2-cli (php-cli in AL2)  / **Architectures:**
   - **RPM:**  php8.2-common (php-common in AL2)  / **Architectures:**
@@ -11511,8 +11511,8 @@ The full comparison of RPM package versions is below.
 ## ecs AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-ecs"></a>
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
+- ** [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
+  - **RPM:**  [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2 version:** 1.105.1-1.amzn2
   - **AL2023.12 version:** 1.105.1-1.amzn2023
@@ -11526,10 +11526,10 @@ The full comparison of RPM package versions is below.
 ## corretto8 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-corretto8"></a>
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+- ** [`java-1.8.0-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
+  - **RPM:**  [`java-1.8.0-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  java-1.8.0-amazon-corretto-debugsymbols  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`java-1.8.0-amazon-corretto-devel`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 1.8.0\_492.b09-1.amzn2
   - **AL2023.12 version:** 1.8.0\_492.b09-1.amzn2023
 

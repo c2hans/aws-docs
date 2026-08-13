@@ -10,7 +10,7 @@ These are the steps that a manager does to download past recordings or transcrip
 + If the contact reached you by chat (the Chat channel), you can download a .json file.
 
 **Tip**
-To have Connect Customer create transcripts of phone calls, see the Contact Lens feature.
+To have Connect Customer create transcripts of phone calls, see the conversational analytics feature.
 
 ## Download a voice recording as a .wav file
 <a name="download-voice-recordings"></a>

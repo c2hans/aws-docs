@@ -11,4 +11,4 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/java.html
 
  There is an [Amazon Corretto](https://aws.amazon.com/corretto/) package available for each of Corretto 1.8.0, Corretto 11, and Corretto 17.
 
- Each Corretto version in AL2023 is supported for the same period of time as the Corretto version is, or until the end of life of AL2023, whichever is sooner. For more information, see [Amazon Linux package support statements](https://docs.aws.amazon.com/linux/al2023/release-notes/support-info-by-support-statement.html) and the [Amazon Corretto FAQs](https://aws.amazon.com/corretto/faqs).
+ Each Corretto version in AL2023 is supported for the same period of time as the Corretto version is, or until the end of life of AL2023, whichever is sooner. For more information, see [Amazon Linux package support statements](https://docs.aws.amazon.com/linux/al2023/release-notes/all-packages-AL2023.12.html) and the [Amazon Corretto FAQs](https://aws.amazon.com/corretto/faqs).

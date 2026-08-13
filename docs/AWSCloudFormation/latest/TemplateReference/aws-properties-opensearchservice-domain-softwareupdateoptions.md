@@ -19,7 +19,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[AutoSoftwareUpdateEnabled](#cfn-opensearchservice-domain-softwareupdateoptions-autosoftwareupdateenabled)" : {{Boolean}}
+  "[AutoSoftwareUpdateEnabled](#cfn-opensearchservice-domain-softwareupdateoptions-autosoftwareupdateenabled)" : {{Boolean}},
+  "[UseLatestServiceSoftwareForBlueGreen](#cfn-opensearchservice-domain-softwareupdateoptions-uselatestservicesoftwareforbluegreen)" : {{Boolean}}
 }
 ```
 
@@ -28,6 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [AutoSoftwareUpdateEnabled](#cfn-opensearchservice-domain-softwareupdateoptions-autosoftwareupdateenabled): {{Boolean}}
+  [UseLatestServiceSoftwareForBlueGreen](#cfn-opensearchservice-domain-softwareupdateoptions-uselatestservicesoftwareforbluegreen): {{Boolean}}
 ```
 
 ## Properties
@@ -35,6 +37,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `AutoSoftwareUpdateEnabled`  <a name="cfn-opensearchservice-domain-softwareupdateoptions-autosoftwareupdateenabled"></a>
 Specifies whether automatic service software updates are enabled for the domain.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`UseLatestServiceSoftwareForBlueGreen`  <a name="cfn-opensearchservice-domain-softwareupdateoptions-uselatestservicesoftwareforbluegreen"></a>
+Whether the domain should use the latest service software version during a blue/green deployment. If enabled, the domain will automatically use the latest available service software when a blue/green deployment is triggered.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

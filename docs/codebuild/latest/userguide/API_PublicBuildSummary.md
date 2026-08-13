@@ -19,7 +19,7 @@ Type: String
 Required: No
 
  **primaryArtifact**   <a name="CodeBuild-Type-PublicBuildSummary-primaryArtifact"></a>
-Represents a resolved build artifact. A resolve artifact is an artifact that is built and deployed to the destination, such as Amazon S3.
+Represents a resolved build artifact. A resolved artifact is an artifact that is built and deployed to the destination, such as Amazon S3.
 Type: [ResolvedArtifact](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ResolvedArtifact.html) object
 Required: No
 

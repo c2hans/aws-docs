@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Description](#cfn-mediaconvert-preset-description)" : {{String}},
       "[Name](#cfn-mediaconvert-preset-name)" : {{String}},
       "[SettingsJson](#cfn-mediaconvert-preset-settingsjson)" : {{Json}},
-      "[Tags](#cfn-mediaconvert-preset-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}}
+      "[Tags](#cfn-mediaconvert-preset-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}}
     }
 }
 ```
@@ -46,7 +46,7 @@ Properties:
   [SettingsJson](#cfn-mediaconvert-preset-settingsjson): {{
     Json}}
   [Tags](#cfn-mediaconvert-preset-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
 ```
 
 ## Properties
@@ -81,7 +81,7 @@ For more information about MediaConvert output presets, see [Working with AWS El
 An array of key-value pairs to apply to this resource.
 For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
@@ -92,7 +92,7 @@ For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/la
 
 When you pass the logical ID of an `AWS::MediaConvert::Preset` resource to the intrinsic `Ref` function, the function returns the name of the output preset, such as `HEVC high res`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-mediaconvert-preset-return-values-fn--getatt"></a>

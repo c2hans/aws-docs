@@ -62,14 +62,14 @@ For more information about using pipeline resolvers, see [Pipeline resolvers](pi
 ------
 #### [ API ]
 
-1. Create a resolver object by calling the [https://docs.aws.amazon.com/appsync/latest/APIReference/API_CreateResolver.html](https://docs.aws.amazon.com/appsync/latest/APIReference/API_CreateResolver.html) API.
+1. Create a resolver object by calling the [`CreateResolver`](https://docs.aws.amazon.com/appsync/latest/APIReference/API_CreateResolver.html) API.
 
-1. You can modify your resolver's fields by calling the [https://docs.aws.amazon.com/appsync/latest/APIReference/API_UpdateResolver.html](https://docs.aws.amazon.com/appsync/latest/APIReference/API_UpdateResolver.html) API.
+1. You can modify your resolver's fields by calling the [`UpdateResolver`](https://docs.aws.amazon.com/appsync/latest/APIReference/API_UpdateResolver.html) API.
 
 ------
 #### [ CLI ]
 
-1. Create a resolver by running the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-resolver.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-resolver.html) command.
+1. Create a resolver by running the [`create-resolver`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-resolver.html) command.
 
    You'll need to type in 6 parameters for this particular command:
 
@@ -118,7 +118,7 @@ For more information about using pipeline resolvers, see [Pipeline resolvers](pi
    }
    ```
 
-1. To modify a resolver's fields and/or mapping templates, run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/update-resolver.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/update-resolver.html) command.
+1. To modify a resolver's fields and/or mapping templates, run the [`update-resolver`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/update-resolver.html) command.
 
    With the exception of the `api-id` parameter, the parameters used in the `create-resolver` command will be overwritten by the new values from the `update-resolver` command.
 

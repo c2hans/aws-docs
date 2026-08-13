@@ -21,7 +21,7 @@ Validated query result files are invaluable in security and forensic investigati
 ## Validate saved query results with the AWS CLI
 <a name="cloudtrail-query-results-validation-cli"></a>
 
-You can validate the integrity of the query result files and sign file by using the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/verify-query-results.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/verify-query-results.html) command.
+You can validate the integrity of the query result files and sign file by using the [**aws cloudtrail verify-query-results**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/verify-query-results.html) command.
 
 ### Prerequisites
 <a name="cloudtrail-query-results-validation-cli-prerequisites"></a>

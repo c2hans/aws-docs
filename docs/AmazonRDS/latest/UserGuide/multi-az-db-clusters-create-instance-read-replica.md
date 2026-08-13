@@ -73,7 +73,7 @@ The allocated storage for the DB instance read replica must be the same as the a
 ### AWS CLI
 <a name="multi-az-db-clusters-create-instance-read-replica-cli"></a>
 
-To create a DB instance read replica from a Multi-AZ DB cluster, use the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance-read-replica.html](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance-read-replica.html). For `--source-db-cluster-identifier`, specify the identifier of the Multi-AZ DB cluster.
+To create a DB instance read replica from a Multi-AZ DB cluster, use the AWS CLI command [`create-db-instance-read-replica`](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance-read-replica.html). For `--source-db-cluster-identifier`, specify the identifier of the Multi-AZ DB cluster.
 
 For Linux, macOS, or Unix:
 
@@ -94,7 +94,7 @@ aws rds create-db-instance-read-replica ^
 ### RDS API
 <a name="multi-az-db-clusters-create-instance-read-replica-api"></a>
 
-To create a DB instance read replica from a Multi-AZ DB cluster, use the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstanceReadReplica.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstanceReadReplica.html) operation.
+To create a DB instance read replica from a Multi-AZ DB cluster, use the [`CreateDBInstanceReadReplica`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstanceReadReplica.html) operation.
 
 ## Promoting the DB instance read replica
 <a name="multi-az-db-clusters-promote-instance-read-replica"></a>

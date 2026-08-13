@@ -11,7 +11,7 @@ Use the information in this section to help you manually install or reinstall SS
 
 **Before you begin**
 Before you install SSM Agent on an AlmaLinux instance, note the following:
-+ Ensure that Python 3 is installed on your AlmaLinux instance. This is required in order for SSM Agent to work properly.
++ Make sure that Python 3 is installed on your AlmaLinux instance. This is required for SSM Agent to work properly.
 + For important information that applies to installation of SSM Agent on all Linux-based operating systems, see [Manually installing and uninstalling SSM Agent on EC2 instances for Linux](manually-install-ssm-agent-linux.md).
 
 **Topics**
@@ -25,7 +25,7 @@ Use the following steps to manually install SSM Agent on a single instance. This
 
 **Before you begin**
 Before you install SSM Agent on a AlmaLinux instance, note the following:
-+ Ensure that Python 3 is installed on your AlmaLinux instance. This is required in order for SSM Agent to work properly.
++ Make sure that Python 3 is installed on your AlmaLinux instance. This is required for SSM Agent to work properly.
 
 **To install SSM Agent on AlmaLinux**
 

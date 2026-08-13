@@ -28,12 +28,12 @@ You can customize the standard retry strategy by setting the maximum attempts, d
 
 The AWS SDK for Kotlin uses a preconfigured retry policy that determines which exceptions are retryable. Service client configuration has a `retryPolicy` property that specifies the policy applied to retries. If no custom value is specified, the default value is [AwsRetryPolicy](/sdk-for-kotlin/api/latest/aws-http/aws.sdk.kotlin.runtime.http.retries/-aws-retry-policy/).
 
-The following exceptions are determined to be retryable by `AwsRetryPolicy`:
+The following exceptions are determined to be retryable by [`AwsRetryPolicy`](/sdk-for-kotlin/api/latest/aws-http/aws.sdk.kotlin.runtime.http.retries/-aws-retry-policy/index.html):
 
 #### Retryable by error code
 <a name="retries-retryable-by-error-code"></a>
 
-Any `ServiceException` with an `sdkErrorMetadata.errorCode` of:
+Any [`ServiceException`](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime/-service-exception/index.html) with an `sdkErrorMetadata.errorCode` of:
 +  `BandwidthLimitExceeded`
 +  `EC2ThrottledException`
 +  `IDPCommunicationError`
@@ -55,7 +55,7 @@ Any `ServiceException` with an `sdkErrorMetadata.errorCode` of:
 #### Retryable by HTTP status code
 <a name="retries-retryable-by-status-code"></a>
 
-Any `ServiceException` with an `sdkErrorMetadata.statusCode` of:
+Any [`ServiceException`](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime/-service-exception/index.html) with an `sdkErrorMetadata.statusCode` of:
 + 500 (Internal Service Error)
 + 502 (Bad Gateway)
 + 503 (Service Unavailable)
@@ -64,7 +64,7 @@ Any `ServiceException` with an `sdkErrorMetadata.statusCode` of:
 #### Retryable by error type
 <a name="retries-retryable-by-error-type"></a>
 
-Any `ServiceException` with an `sdkErrorMetadata.errorType` of:
+Any [`ServiceException`](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime/-service-exception/index.html) with an `sdkErrorMetadata.errorType` of:
 +  `ErrorType.Server` (such as internal service errors)
 +  `ErrorType.Client` (such as an invalid request, a resource not found, access denied, etc.)
 
@@ -118,10 +118,10 @@ When the SDK’s retry mechanism cannot resolve an issue, exceptions are thrown 
 Your code will catch the following types of exceptions when retries are exhausted or disabled:
 
 Service exceptions after retry exhaustion
-When all retry attempts fail, your code catches the final service exception (subclass of `AwsServiceException`) that caused the last retry attempt to fail. This could be a throttling error, server error, or other service-specific exception that the SDK could not resolve through retries.
+When all retry attempts fail, your code catches the final service exception (subclass of [`AwsServiceException`](/sdk-for-kotlin/api/latest/aws-core/aws.sdk.kotlin.runtime/-aws-service-exception/index.html)) that caused the last retry attempt to fail. This could be a throttling error, server error, or other service-specific exception that the SDK could not resolve through retries.
 
 Network exceptions after retry exhaustion
-When network issues persist through all retry attempts, your code catches `ClientException` instances for problems like connection timeouts, DNS resolution failures, and other connectivity issues that the SDK could not resolve.
+When network issues persist through all retry attempts, your code catches [`ClientException`](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime/-client-exception/index.html) instances for problems like connection timeouts, DNS resolution failures, and other connectivity issues that the SDK could not resolve.
 
 Use the following pattern to handle these exceptions in your application:
 
@@ -224,7 +224,7 @@ Depending on the value of the `useCircuitBreakerMode` setting, attempts to decre
 + If the setting is FALSE, there is a delay – For example, delays until the bucket has sufficient capacity again.
 
 **Note**
-When the circuit breaker activates (token bucket reaches zero capacity), the SDK throws a `ClientException` with the message "Retry capacity exceeded". This is a client-side exception, not an `AwsServiceException`, because it originates from the SDK’s retry logic rather than the AWS service. The exception is thrown immediately without attempting the operation, helping prevent retry storms during service outages.
+When the circuit breaker activates (token bucket reaches zero capacity), the SDK throws a [`ClientException`](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime/-client-exception/index.html) with the message "Retry capacity exceeded". This is a client-side exception, not an [`AwsServiceException`](/sdk-for-kotlin/api/latest/aws-core/aws.sdk.kotlin.runtime/-aws-service-exception/index.html), because it originates from the SDK’s retry logic rather than the AWS service. The exception is thrown immediately without attempting the operation, helping prevent retry storms during service outages.
 
 The token bucket parameters are configurable in the [tokenBucket DSL block](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime.retries.delay/-standard-retry-token-bucket/-config/index.html):
 

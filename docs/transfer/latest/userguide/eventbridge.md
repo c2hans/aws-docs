@@ -233,7 +233,7 @@ The targets that you specify might require specific permissions or configuration
 ## Additional EventBridge resources
 <a name="eventbridge-additonal-resources"></a>
 
-Refer to the following topics in the [https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html) for more information on how to use EventBridge to process and manage events.
+Refer to the following topics in the [*Amazon EventBridge User Guide*](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html) for more information on how to use EventBridge to process and manage events.
 + For detailed information on how event buses work, see [Amazon EventBridge event bus](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-bus.html).
 + For information on event structure, see [Events](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events.html).
 + For information on constructing event patterns for EventBridge to use when matching events against rules, see [Event patterns](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html).

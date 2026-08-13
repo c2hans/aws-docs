@@ -10,7 +10,7 @@ The following topics cover the most common causes why an Amazon SQS message may 
 ## Empty queue
 <a name="troubleshooting-empty-queue"></a>
 
-To determine if a queue is empty, use long polling to call the [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html) API. You can also use the `ApproximateNumberOfMessagesVisible`, `ApproximateNumberOfMessagesNotVisible`, and `ApproximateNumberOfMessagesDelayed` CloudWatch metrics. If all the metric values are set to 0 for several minutes, the queue is considered empty.
+To determine if a queue is empty, use long polling to call the [`ReceiveMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html) API. You can also use the `ApproximateNumberOfMessagesVisible`, `ApproximateNumberOfMessagesNotVisible`, and `ApproximateNumberOfMessagesDelayed` CloudWatch metrics. If all the metric values are set to 0 for several minutes, the queue is considered empty.
 
 ## In flight limit reached
 <a name="troubleshooting-in-flight-limit-reached"></a>
@@ -20,7 +20,7 @@ If you use [long polling](sqs-short-and-long-polling.md#sqs-long-polling) and if
 ## Message delay
 <a name="troubleshooting-message-delayed"></a>
 
-If the Amazon SQS queue is configured as a [delay queue](sqs-delay-queues.md), or the messages were sent with [message timers](sqs-message-timers.md), then the messages aren't visible until the delay time ends. To verify if a queue is configured as a delay queue, use the [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueAttributes.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueAttributes.html) API `DelaySeconds` attribute, or from the queue console under **Delivery delay**. Check the [`ApproximateNumberOfMessagesDelayed`](sqs-available-cloudwatch-metrics.md) CloudWatch metric to understand if any messages are delayed.
+If the Amazon SQS queue is configured as a [delay queue](sqs-delay-queues.md), or the messages were sent with [message timers](sqs-message-timers.md), then the messages aren't visible until the delay time ends. To verify if a queue is configured as a delay queue, use the [`GetQueueAttributes`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueAttributes.html) API `DelaySeconds` attribute, or from the queue console under **Delivery delay**. Check the [`ApproximateNumberOfMessagesDelayed`](sqs-available-cloudwatch-metrics.md) CloudWatch metric to understand if any messages are delayed.
 
 ## Message is in flight
 <a name="troubleshooting-message-in-flight"></a>

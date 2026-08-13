@@ -23,7 +23,7 @@ Use the following procedure to adjust how long the Session Manager temporary log
 
    If the file `amazon-ssm-agent.json` doesn't exist, copy the contents of the `amazon-ssm-agent.json.template` to a new file in the same directory. Name the new file `amazon-ssm-agent.json`.
 
-1. Change the value of `SessionLogsRetentionDurationHours` to the desired number of hours. If `SessionLogsRetentionDurationHours` is set to 0, the temporary log file is created during the session and deleted when the session is completed. This setting should ensure the log file doesn't persist after the session ends.
+1. Change the value of `SessionLogsRetentionDurationHours` to the desired number of hours. If `SessionLogsRetentionDurationHours` is set to 0, the temporary log file is created during the session and deleted when the session is completed. This setting should make sure the log file doesn't persist after the session ends.
 
 1. Save your changes.
 

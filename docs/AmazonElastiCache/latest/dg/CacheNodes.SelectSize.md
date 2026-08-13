@@ -84,7 +84,7 @@ In a scenario where you want to have 35 GB of cache memory, you can set up any o
 
 <table>
 <thead>
-  <tr><th>Node type</th><th> Memory (in GiB)</th><th> Cores </th><th> Hourly cost \* </th><th> Nodes needed </th><th> Total memory (in GiB)</th><th> Total cores </th><th> Monthly cost  </th></tr>
+  <tr><th>Node type</th><th> Memory (in GiB)</th><th> Cores </th><th> Hourly cost * </th><th> Nodes needed </th><th> Total memory (in GiB)</th><th> Total cores </th><th> Monthly cost  </th></tr>
 </thead>
 <tbody>
   <tr><td>cache.t2.medium</td><td>3.22</td><td>2</td><td>$ 0.068</td><td>11</td><td>35.42</td><td>22</td><td>$ 538.56</td></tr>
@@ -95,7 +95,7 @@ In a scenario where you want to have 35 GB of cache memory, you can set up any o
   <tr><td>cache.r4.large</td><td>12.3</td><td>2</td><td>$ 0.228</td><td>3</td><td>36.9</td><td>6</td><td>$ 492.48</td></tr>
   <tr><td>cache.r5.large</td><td>13.07</td><td>2</td><td>$ 0.216</td><td>3</td><td>39.22 </td><td>6</td><td>$ 466.56</td></tr>
   <tr><td>cache.r6g.large</td><td>13.07</td><td>2</td><td>$ 0.205</td><td>3</td><td>42.12</td><td>6</td><td>$ 442</td></tr>
-  <tr><td colspan="8">\* Hourly cost per node as of October 8, 2020.</td></tr>
+  <tr><td colspan="8">* Hourly cost per node as of October 8, 2020.</td></tr>
   <tr><td colspan="8"> Monthly cost at 100% usage for 30 days (720 hours).</td></tr>
 </tbody>
 </table>

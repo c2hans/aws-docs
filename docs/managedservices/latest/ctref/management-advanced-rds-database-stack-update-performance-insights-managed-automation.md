@@ -7,7 +7,7 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 # RDS Database Stack \| Update Performance Insights (Managed Automation)
 <a name="management-advanced-rds-database-stack-update-performance-insights-managed-automation"></a>
 
-Update Performance Insights for a DB instance or Multi-AZ DB cluster. Amazon RDS Performance Insights is a database performance tuning and monitoring feature that helps you assess the load on your database. You can change settings, enable, or disable the feature.
+Update Performance Insights for a DB instance or Multi-AZ DB cluster. Amazon RDS Performance Insights is a database performance tuning and monitoring feature that helps you assess the load on your database. You can change settings, turn on, or turn off the feature.
 
 **Full classification:** Management \| Advanced stack components \| RDS database stack \| Update Performance Insights (managed automation)
 

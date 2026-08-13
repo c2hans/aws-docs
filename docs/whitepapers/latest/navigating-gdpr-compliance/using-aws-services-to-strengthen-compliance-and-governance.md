@@ -6,17 +6,17 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 <a name="using-aws-services-to-strengthen-compliance-and-governance"></a>
 
 To meet regulatory obligations such as those under the GDPR, organizations must combine technical, operational, and organizational safeguards. AWS provides a suite of services that help customers implement and manage these safeguards across multi-account cloud environments. The following sections explain how specific AWS services can support key areas of a security and compliance strategy:
-+ [https://aws.amazon.com/controltower/](https://aws.amazon.com/controltower/) – for setting up and governing secure multi-account environments with built-in guardrails.
-+ [https://aws.amazon.com/security-hub/](https://aws.amazon.com/security-hub/) – for centralized visibility into security and compliance findings.
-+ [https://aws.amazon.com/guardduty/](https://aws.amazon.com/guardduty/) – for intelligent threat detection and analysis of activity logs.
-+ [https://aws.amazon.com/inspector/](https://aws.amazon.com/inspector/) – for automated vulnerability management and security assessments.
-+ [https://aws.amazon.com/eventbridge/](https://aws.amazon.com/eventbridge/) (formerly CloudWatch Events) – for triggering automated responses to events and incidents.
-+ [https://aws.amazon.com/organizations/](https://aws.amazon.com/organizations/) – for centralized policy management across multiple accounts.
-+ [https://aws.amazon.com/systems-manager/](https://aws.amazon.com/systems-manager/) – for operational visibility, automation, and patch compliance.
-+ [https://aws.amazon.com/security-lake/](https://aws.amazon.com/security-lake/) – for aggregating and analyzing security data at scale.
-+ [https://aws.amazon.com/audit-manager/](https://aws.amazon.com/audit-manager/) – for automating evidence collection and managing audit frameworks.
-+ [https://aws.amazon.com/premiumsupport/technology/trusted-advisor/](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/) – for continuous checks and recommendations across security domains.
-+ [https://aws.amazon.com/macie](https://aws.amazon.com/macie) – for sensitive data discovery and protection across S3 buckets.
++ [**AWS Control Tower**](https://aws.amazon.com/controltower/) – for setting up and governing secure multi-account environments with built-in guardrails.
++ [**AWS Security Hub**](https://aws.amazon.com/security-hub/) – for centralized visibility into security and compliance findings.
++ [**Amazon ****GuardDuty**](https://aws.amazon.com/guardduty/) – for intelligent threat detection and analysis of activity logs.
++ [**Amazon Inspector**](https://aws.amazon.com/inspector/) – for automated vulnerability management and security assessments.
++ [**Amazon ****EventBridge**](https://aws.amazon.com/eventbridge/) (formerly CloudWatch Events) – for triggering automated responses to events and incidents.
++ [**AWS Organizations**](https://aws.amazon.com/organizations/) – for centralized policy management across multiple accounts.
++ [**AWS Systems Manager**](https://aws.amazon.com/systems-manager/) – for operational visibility, automation, and patch compliance.
++ [**AWS Security Lake**](https://aws.amazon.com/security-lake/) – for aggregating and analyzing security data at scale.
++ [**AWS Audit Manager**](https://aws.amazon.com/audit-manager/) – for automating evidence collection and managing audit frameworks.
++ [**AWS Trusted Advisor**](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/) – for continuous checks and recommendations across security domains.
++ [**Amazon Macie**](https://aws.amazon.com/macie) – for sensitive data discovery and protection across S3 buckets.
 
 ## AWS Control Tower
 <a name="aws-control-tower"></a>

@@ -39,18 +39,18 @@ All of the following API operations use the `scheduling.deadline.{{[Region]}}.am
 <a name="cmf-network-bootstrap"></a>
 
 When a worker host starts, the worker agent registers with the fleet. The bootstrap credentials require the permissions in the `AWSDeadlineCloud-WorkerHost` AWS managed policy, or equivalent custom permissions. The bootstrap phase uses the following API operations:
-+ [https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_CreateWorker.html](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_CreateWorker.html) – Registers the worker with the fleet. Sends the host name and IP addresses. Receives a worker ID.
-+ [https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_AssumeFleetRoleForWorker.html](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_AssumeFleetRoleForWorker.html) – Obtains fleet role credentials. Receives temporary AWS credentials that the worker agent uses for subsequent operations.
++ [`CreateWorker`](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_CreateWorker.html) – Registers the worker with the fleet. Sends the host name and IP addresses. Receives a worker ID.
++ [`AssumeFleetRoleForWorker`](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_AssumeFleetRoleForWorker.html) – Obtains fleet role credentials. Receives temporary AWS credentials that the worker agent uses for subsequent operations.
 
 ### Operational phase
 <a name="cmf-network-operational"></a>
 
 After bootstrap, the worker agent polls for work and processes sessions. The fleet role requires the permissions in the `AWSDeadlineCloud-FleetWorker` AWS managed policy, or equivalent custom permissions, and uses the following API operations:
-+ [https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_UpdateWorker.html](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_UpdateWorker.html) – Updates the worker status, for example to `STOPPED` during shutdown.
-+ [https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_UpdateWorkerSchedule.html](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_UpdateWorkerSchedule.html) – Polls for work assignments. Sends session action status updates including completion status, progress percent, progress message, and output manifest hashes. Receives assigned sessions (job ID, queue ID, session actions, log configuration), cancellation requests, desired worker status, and the update interval.
-+ [https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_BatchGetJobEntity.html](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_BatchGetJobEntity.html) – Fetches job details for assigned work. Sends job entity identifiers. Receives job details, environment details, and job attachment details.
-+ [https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_AssumeFleetRoleForWorker.html](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_AssumeFleetRoleForWorker.html) – Periodically refreshes fleet role credentials.
-+ [https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_AssumeQueueRoleForWorker.html](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_AssumeQueueRoleForWorker.html) – Obtains queue role credentials scoped to a specific queue. The worker uses these credentials to access job attachments in Amazon S3.
++ [`UpdateWorker`](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_UpdateWorker.html) – Updates the worker status, for example to `STOPPED` during shutdown.
++ [`UpdateWorkerSchedule`](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_UpdateWorkerSchedule.html) – Polls for work assignments. Sends session action status updates including completion status, progress percent, progress message, and output manifest hashes. Receives assigned sessions (job ID, queue ID, session actions, log configuration), cancellation requests, desired worker status, and the update interval.
++ [`BatchGetJobEntity`](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_BatchGetJobEntity.html) – Fetches job details for assigned work. Sends job entity identifiers. Receives job details, environment details, and job attachment details.
++ [`AssumeFleetRoleForWorker`](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_AssumeFleetRoleForWorker.html) – Periodically refreshes fleet role credentials.
++ [`AssumeQueueRoleForWorker`](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_AssumeQueueRoleForWorker.html) – Obtains queue role credentials scoped to a specific queue. The worker uses these credentials to access job attachments in Amazon S3.
 
 ## Other data transmitted
 <a name="cmf-network-other"></a>

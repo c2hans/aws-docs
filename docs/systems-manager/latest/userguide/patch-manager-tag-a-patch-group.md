@@ -7,22 +7,22 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 # Creating and managing patch groups
 <a name="patch-manager-tag-a-patch-group"></a>
 
-If you are *not* using patch policies in your operations, you can organize your patching efforts by adding managed nodes to patch groups by using tags.
+If you are *not* using patch policies, you can organize patching by adding managed nodes to patch groups using tags.
 
 **Note**
 Patch groups are not used in patching operations that are based on *patch policies*. For information about working with patch policies, see [Patch policy configurations in Quick Setup](patch-manager-policies.md).
-Patch group functionality is not supported in the console for account-Region pairs that did not already use patch groups before patch policy support was released on December 22, 2022. Patch group functionality is still available in account-Region pairs that began using patch groups before this date.
+Patch group functionality is not supported in the console for account-Region pairs that didn't use patch groups before December 22, 2022. It is still available in account-Region pairs that used patch groups before this date.
 
 To use tags in patching operations, you must apply the tag key `Patch Group` or `PatchGroup` to your managed nodes. You must also specify the name that you want to give the patch group as the value of the tag. You can specify any tag value, but the tag key must be `Patch Group` or `PatchGroup`.
 
 `PatchGroup` (without a space) is required if you have [allowed tags in EC2 instance metadata](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#allow-access-to-tags-in-IMDS).
 
-After you group your managed nodes using tags, you add the patch group value to a patch baseline. By registering the patch group with a patch baseline, you ensure that the correct patches are installed during the patching operation. For more information about patch groups, see [Patch groups](patch-manager-patch-groups.md).
+After you group your managed nodes using tags, you add the patch group value to a patch baseline. By registering the patch group with a patch baseline, you make sure that the correct patches are installed during the patching operation. For more information about patch groups, see [Patch groups](patch-manager-patch-groups.md).
 
 Complete the tasks in this topic to prepare your managed nodes for patching using tags with your nodes and patch baseline. Task 1 is required only if you are patching Amazon EC2 instances. Task 2 is required only if you are patching non-EC2 instances in a [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) environment. Task 3 is required for all managed nodes.
 
 **Tip**
-You can also add tags to managed nodes using the AWS CLI command `[https://docs.aws.amazon.com/cli/latest/reference/ssm/add-tags-to-resource.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/add-tags-to-resource.html)` or the Systems Manager API operation ssm-agent-minimum-s3-permissions-required`[https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_AddTagsToResource.html](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_AddTagsToResource.html)`.
+You can also add tags to managed nodes using the AWS CLI command `[add-tags-to-resource](https://docs.aws.amazon.com/cli/latest/reference/ssm/add-tags-to-resource.html)` or the Systems Manager API operation ssm-agent-minimum-s3-permissions-required`[AddTagsToResource](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_AddTagsToResource.html)`.
 
 **Topics**
 + [Task 1: Add EC2 instances to a patch group using tags](#sysman-patch-group-tagging-ec2)
@@ -107,7 +107,7 @@ If a managed node you expect to see isn't listed, see [Troubleshooting managed n
 ## Task 3: Add a patch group to a patch baseline
 <a name="sysman-patch-group-patchbaseline"></a>
 
-To associate a specific patch baseline with your managed nodes, you must add the patch group value to the patch baseline. By registering the patch group with a patch baseline, you can ensure that the correct patches are installed during a patching operation. This task is required whether you are patching EC2 instances, non-EC2 managed nodes, or both.
+To associate a specific patch baseline with your managed nodes, you must add the patch group value to the patch baseline. By registering the patch group with a patch baseline, you can make sure that the correct patches are installed during a patching operation. This task is required whether you are patching EC2 instances, non-EC2 managed nodes, or both.
 
 For more information about patch groups, see [Patch groups](patch-manager-patch-groups.md).
 
@@ -134,4 +134,4 @@ The steps you follow depend on whether you first accessed Patch Manager before o
    + (Recommended) Set up a patch policy in Quick Setup, a tool in AWS Systems Manager, to map a patch baseline to one or more EC2 instances.
 
      For more information, see [Using Quick Setup patch policies](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager-policies.html) and [Automate organization-wide patching using a Quick Setup patch policy](https://docs.aws.amazon.com/systems-manager/latest/userguide/quick-setup-patch-manager.html).
-   + Use the [https://docs.aws.amazon.com/cli/latest/reference/ssm/register-patch-baseline-for-patch-group.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/register-patch-baseline-for-patch-group.html) command in the AWS Command Line Interface (AWS CLI) to configure a patch group.
+   + Use the [register-patch-baseline-for-patch-group](https://docs.aws.amazon.com/cli/latest/reference/ssm/register-patch-baseline-for-patch-group.html) command in the AWS Command Line Interface (AWS CLI) to configure a patch group.

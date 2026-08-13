@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/standard-web-a
 <tbody>
   <tr><td colspan="3">Event Attributes</td></tr>
   <tr><td>EventId</td><td>String</td><td>Unique identifier for a web analytics event.</td></tr>
-  <tr><td>EventType</td><td>String</td><td>Type of the web analytics event, like - Page View, form submission, button choose, sPull up mainline<br />\\u0000<br />earch bar interaction, app error prompts, cart interactions, purchases, scrolls, etc.</td></tr>
+  <tr><td>EventType</td><td>String</td><td>Type of the web analytics event, like - Page View, form submission, button choose, sPull up mainline<br />\u0000<br />earch bar interaction, app error prompts, cart interactions, purchases, scrolls, etc.</td></tr>
   <tr><td>EventTimestamp</td><td>Number</td><td>Epoch millisecond timestamp of the event.</td></tr>
   <tr><td>EventDuration</td><td>Number</td><td>EventDuration represents the amount of time a user spent during a particular interaction, measured in seconds. Common use cases include: Time spent viewing a product, Length of a browsing session on a particular page, Time spent on a feature, etc.</td></tr>
   <tr><td>EventValue</td><td>Number</td><td>EventValue is a numerical attribute that represents the value or importance of an interaction event. Common use cases include: Purchase amount for transaction events, Rating values for product ratings, Percentage completion for video views, etc.</td></tr>
@@ -50,9 +50,9 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/standard-web-a
   <tr><td>Search.SortOrder</td><td>String</td><td>Sort order for Search results - Ascending/Descending.</td></tr>
   <tr><td colspan="3">Item/Item List</td></tr>
   <tr><td>Item</td><td>Item</td><td>Focused item in an event, indicating, the item added to a cart, item viewed, etc.</td></tr>
-  <tr><td>ItemsList</td><td>List<Item></td><td>Focused list of items in an event, indicating, items purchased, items in a cart, item search results, etc.</td></tr>
+  <tr><td>ItemsList</td><td>List&lt;Item&gt;</td><td>Focused list of items in an event, indicating, items purchased, items in a cart, item search results, etc.</td></tr>
   <tr><td colspan="3">Item Impressions</td></tr>
-  <tr><td>AdditionalItemImpressions</td><td>List<Item></td><td>Additional Item impressions list</td></tr>
+  <tr><td>AdditionalItemImpressions</td><td>List&lt;Item&gt;</td><td>Additional Item impressions list</td></tr>
   <tr><td colspan="3">Cart</td></tr>
   <tr><td>Cart.Id</td><td>String</td><td>Unique identifier for a cart.</td></tr>
   <tr><td>Cart.ItemsCount</td><td>Number</td><td>Number of items in the cart.</td></tr>
@@ -87,7 +87,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/standard-web-a
   <tr><td>Application.Version</td><td>String</td><td>If the device is Mobile, we can capture the Application Version here. User could also consider using this for population A/B testing or experimentation attributes.</td></tr>
   <tr><td>Application.Environment</td><td>String</td><td>Application environments, like - Beta, Gamma, Prod.</td></tr>
   <tr><td colspan="3">Custom Attributes</td></tr>
-  <tr><td>Attributes</td><td>Map<String, String></td><td>Any custom attributes or metadata to add to the event.</td></tr>
+  <tr><td>Attributes</td><td>Map&lt;String, String&gt;</td><td>Any custom attributes or metadata to add to the event.</td></tr>
 </tbody>
 </table>
 

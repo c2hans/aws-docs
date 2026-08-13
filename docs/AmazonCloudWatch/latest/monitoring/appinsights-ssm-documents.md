@@ -18,7 +18,7 @@ The following table lists the SSM documents that are managed by Application Insi
 | --- | --- | --- |
 | `AWSEC2-DetectWorkload` | Auto detects applications running in your application environment that can be set up to be monitored by Application Insights. | This document runs hourly in your application environment to get up-to-date application details. |
 | `AWSEC2-CheckPerformanceCounterSets` | Checks whether Performance Counter namespaces are enabled on your Amazon EC2 Windows instances. | This document runs hourly in your application environment and only monitors Performance Counter metrics if the corresponding namespaces are enabled. |
-| `AWSEC2-ApplicationInsightsCloudwatchAgentInstallAndConfigure` | Installs and configures CloudWatch Agent based on the monitoring configuration of your application components. | This document runs every 30 minutes to ensure that the CloudWatch Agent configuration is always accurate and up-to-date. The document also runs immediately after a change is made to your application monitoring setup such as adding or removing metrics or updating log configurations.  |
+| `AWSEC2-ApplicationInsightsCloudwatchAgentInstallAndConfigure` | Installs and configures CloudWatch Agent based on the monitoring configuration of your application components. | This document runs every 30 minutes to make sure that the CloudWatch Agent configuration is always accurate and up-to-date. The document also runs immediately after a change is made to your application monitoring setup such as adding or removing metrics or updating log configurations.  |
 
 ## Documents managed by AWS Systems Manager
 <a name="ssm-documents-aws-managed"></a>

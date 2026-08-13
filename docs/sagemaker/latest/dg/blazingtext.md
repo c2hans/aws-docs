@@ -195,7 +195,7 @@ However, the binaries are only supported when training on CPU and single GPU; tr
 
 For `cbow` and `skipgram` modes, BlazingText supports single CPU and single GPU instances. Both of these modes support learning of `subwords` embeddings. To achieve the highest speed without compromising accuracy, we recommend that you use an ml.p3.2xlarge instance.
 
-For `batch_skipgram` mode, BlazingText supports single or multiple CPU instances. When training on multiple instances, set the value of the `S3DataDistributionType` field of the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_S3DataSource.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_S3DataSource.html) object that you pass to [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) to `FullyReplicated`. BlazingText takes care of distributing data across machines.
+For `batch_skipgram` mode, BlazingText supports single or multiple CPU instances. When training on multiple instances, set the value of the `S3DataDistributionType` field of the [`S3DataSource`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_S3DataSource.html) object that you pass to [`CreateTrainingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) to `FullyReplicated`. BlazingText takes care of distributing data across machines.
 
 For the supervised text classification mode, a C5 instance is recommended if the training dataset is less than 2 GB. For larger datasets, use an instance with a single GPU. BlazingText supports P2, P3, G4dn, and G5 instances for training and inference.
 

@@ -38,7 +38,7 @@ You can reschedule an event so that it occurs at a specific date and time that s
 #### [ AWS CLI ]
 
 **To reschedule an event**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-event-start-time.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-event-start-time.html) command.
+Use the [modify-instance-event-start-time](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-event-start-time.html) command.
 
 ```
 aws ec2 modify-instance-event-start-time \

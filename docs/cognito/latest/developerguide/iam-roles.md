@@ -183,7 +183,7 @@ The permissions that you attach to a role apply to all users who assume that rol
 For additional security protection, Amazon Cognito applies a scope-down policy to credentials that you assign your unauthenticated users in the [enhanced flow](https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html), using `GetCredentialsForIdentity`. The scope-down policy adds an [Inline session policy](#access-policies-inline-policy) and an [AWS managed session policy](#access-policies-managed-policy) to the IAM policies that you apply to your unauthenticated role. Because you must grant access in both the IAM policies for your role and the session policies, the scope-down policy limits users' access to services other than those in the list that follows.
 
 **Note**
-In the basic (classic) flow, you make your own [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html) API request, and can apply these restrictions to the request. As a best security practice, don't assign any permissions above this scope-down policy to unauthenticated users.
+In the basic (classic) flow, you make your own [AssumeRoleWithWebIdentity](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html) API request, and can apply these restrictions to the request. As a best security practice, don't assign any permissions above this scope-down policy to unauthenticated users.
 
 Amazon Cognito also prevents authenticated and unauthenticated users from making API requests to Amazon Cognito identity pools and Amazon Cognito Sync. Other AWS services might place restrictions on service access from web identities.
 

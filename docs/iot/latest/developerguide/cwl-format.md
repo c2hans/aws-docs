@@ -357,7 +357,7 @@ The port where the request originated.
 ### GetRetainedMessage log entry
 <a name="log-mb-get-retain"></a>
 
-The AWS IoT message broker generates a log entry with an `eventType` of `GetRetainedMessage` when [https://docs.aws.amazon.com//iot/latest/developerguide/API_iotdata_GetRetainedMessage.html](https://docs.aws.amazon.com//iot/latest/developerguide/API_iotdata_GetRetainedMessage.html) is called.
+The AWS IoT message broker generates a log entry with an `eventType` of `GetRetainedMessage` when [`GetRetainedMessage`](https://docs.aws.amazon.com//iot/latest/developerguide/API_iotdata_GetRetainedMessage.html) is called.
 
 #### GetRetainedMessage log entry example
 <a name="log-mb-get-retain-example"></a>
@@ -394,7 +394,7 @@ The name of the subscribed topic.
 ### ListRetainedMessage log entry
 <a name="log-mb-list-retain"></a>
 
-The AWS IoT message broker generates a log entry with an `eventType` of `ListRetainedMessage` when [/iot/latest/developerguide/API_iotdata_ListRetainedMessages.html](/iot/latest/developerguide/API_iotdata_ListRetainedMessages.html) is called.
+The AWS IoT message broker generates a log entry with an `eventType` of `ListRetainedMessage` when [`ListRetainedMessages`](/iot/latest/developerguide/API_iotdata_ListRetainedMessages.html) is called.
 
 #### ListRetainedMessage log entry example
 <a name="log-mb-list-retain-example"></a>

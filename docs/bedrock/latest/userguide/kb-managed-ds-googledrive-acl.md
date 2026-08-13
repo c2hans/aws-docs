@@ -33,7 +33,7 @@ When ACLs are enabled, Bedrock Managed Knowledge Base crawls file-level sharing 
 To enable ACL awareness for a Google Drive data source, set `aclEnabled` to `true` in the `connectorParameters` and use the `SERVICE_ACCOUNT` auth type. The service account must have domain-wide delegation enabled in your Google Workspace admin console.
 
 **Important**
-ACL configuration is permanent. You cannot enable ACLs on a data source created without ACL support, and you cannot disable ACLs once enabled.
+ACL configuration is permanent. You cannot enable ACLs on a data source created without ACL support, and you cannot disable ACLs after they are enabled.
 
 The AWS Secrets Manager secret must include `adminAccountEmail`, `clientEmail`, and `privateKey`. For step-by-step instructions to create the service account, configure domain-wide delegation, and obtain these values, see [Set up service account authentication for Google Drive](kb-managed-googledrive-service-account-setup.md).
 

@@ -33,17 +33,17 @@ The following table describes the most recent predefined security policies that 
 
 <table>
 <thead>
-  <tr><th>Security policy</th><th>TLS13\_1\_3\_2022\_10</th><th>TLS13\_1\_2\_2022\_10</th><th>TLS12\_1\_2\_2022\_10</th><th colspan="2">TLS12\_1\_0\_2016\_01\*</th><th colspan="2">TLS12\_1\_0\_2015\_01\*</th><th>TLS13\_1\_2\_2022\_01\*</th></tr>
+  <tr><th><b>Security policy</b></th><th>TLS13_1_3_2022_10</th><th>TLS13_1_2_2022_10</th><th>TLS12_1_2_2022_10</th><th colspan="2">TLS12_1_0_2016_01*</th><th colspan="2">TLS12_1_0_2015_01*</th><th>TLS13_1_2_2022_01*</th></tr>
 </thead>
 <tbody>
-  <tr><td>TCP Port</td><td>443/8443/8883</td><td>443/8443/8883</td><td>443/8443/8883</td><td>443</td><td>8443/8883</td><td>443</td><td>8443/8883</td><td>443/8443/8883</td></tr>
-  <tr><td colspan="9">TLS Protocols</td></tr>
+  <tr><td><b>TCP Port</b></td><td>443/8443/8883</td><td>443/8443/8883</td><td>443/8443/8883</td><td>443</td><td>8443/8883</td><td>443</td><td>8443/8883</td><td>443/8443/8883</td></tr>
+  <tr><td colspan="9"><b>TLS Protocols</b></td></tr>
   <tr><td>TLS 1.2</td><td></td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
   <tr><td>TLS 1.3</td><td>✓</td><td>✓</td><td></td><td></td><td></td><td></td><td></td><td>✓</td></tr>
-  <tr><td colspan="9">TLS Ciphers</td></tr>
-  <tr><td>TLS\_AES\_128\_GCM\_SHA256</td><td>✓</td><td>✓</td><td></td><td></td><td></td><td></td><td></td><td>✓</td></tr>
-  <tr><td>TLS\_AES\_256\_GCM\_SHA384</td><td>✓</td><td>✓</td><td></td><td></td><td></td><td></td><td></td><td>✓</td></tr>
-  <tr><td>TLS\_CHACHA20\_POLY1305\_SHA256</td><td>✓</td><td>✓</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td colspan="9"><b>TLS Ciphers</b></td></tr>
+  <tr><td>TLS_AES_128_GCM_SHA256</td><td>✓</td><td>✓</td><td></td><td></td><td></td><td></td><td></td><td>✓</td></tr>
+  <tr><td>TLS_AES_256_GCM_SHA384</td><td>✓</td><td>✓</td><td></td><td></td><td></td><td></td><td></td><td>✓</td></tr>
+  <tr><td>TLS_CHACHA20_POLY1305_SHA256</td><td>✓</td><td>✓</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
   <tr><td>ECDHE-RSA-AES128-GCM-SHA256</td><td></td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
   <tr><td>ECDHE-RSA-AES128-SHA256</td><td></td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
   <tr><td>ECDHE-RSA-AES128-SHA</td><td></td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>

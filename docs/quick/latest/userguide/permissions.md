@@ -13,3 +13,4 @@ Permission management in Quick controls what actions users can perform and which
 + [IAM policy assignments](iam-policy-assignments.md)
 + [Extension access](extension-access.md)
 + [Custom permissions](custom-permissions.md)
++ [Limit profiles](limit-profiles.md)

@@ -47,7 +47,7 @@ The following are considerations for pipelines when changing the mode for the pi
 
 For example, when switching from PARALLEL mode to a QUEUED or SUPERSEDED mode, the execution started in PARALLEL mode will continue to run. These can be viewed on the execution history page. The pipeline view will show the execution that ran on QUEUED or SUPERSEDED mode earlier or an empty state otherwise.
 
-As another example, when switching from QUEUED or SUPERSEDED to PARALLEL mode, you will no longer see the pipeline view/state page. To view an execution in PARALLEL mode, use the visualization tab on the execution details page. Executions started in SUPERSEDED or QUEUED mode will be cancelled.
+As another example, when switching from QUEUED or SUPERSEDED to PARALLEL mode, you will no longer see the pipeline view/state page. To view an execution in PARALLEL mode, use the visualization tab on the execution details page. Executions started in SUPERSEDED or QUEUED mode will be canceled.
 
 The following table provides more detail.
 
@@ -55,10 +55,10 @@ The following table provides more detail.
 
 | Mode change | Pending and active execution details | Pipeline state details |
 | --- | --- | --- |
-| SUPERSEDED to SUPERSEDED / SUPERSEDED to QUEUED |  +  Active executions are cancelled after in-progress actions complete. <br />+  Pending executions are cancelled.   | The pipeline state, such as cancelled, is preserved between the version of the first mode and the second mode. |
-| QUEUED to QUEUED / QUEUED to SUPERSEDED |  +  Active executions are cancelled after in-progress actions complete. <br />+  Pending executions are cancelled.   | The pipeline state, such as cancelled, is preserved between the version of the first mode and the second mode. |
+| SUPERSEDED to SUPERSEDED / SUPERSEDED to QUEUED |  +  Active executions are canceled after in-progress actions complete. <br />+  Pending executions are canceled.   | The pipeline state, such as canceled, is preserved between the version of the first mode and the second mode. |
+| QUEUED to QUEUED / QUEUED to SUPERSEDED |  +  Active executions are canceled after in-progress actions complete. <br />+  Pending executions are canceled.   | The pipeline state, such as canceled, is preserved between the version of the first mode and the second mode. |
 | PARALLEL to PARALLEL | All executions are allowed to run independently of pipeline definition updates. | Empty. Parallel mode does not have a pipeline state. |
-| SUPERSEDED to PARALLEL / QUEUED to PARALLEL |  +  Active executions are cancelled after in-progress actions complete. <br />+  Pending executions are cancelled.   | Empty. Parallel mode does not have a pipeline state. |
+| SUPERSEDED to PARALLEL / QUEUED to PARALLEL |  +  Active executions are canceled after in-progress actions complete. <br />+  Pending executions are canceled.   | Empty. Parallel mode does not have a pipeline state. |
 
 ## Set or change the pipeline execution mode (console)
 <a name="execution-modes-console"></a>

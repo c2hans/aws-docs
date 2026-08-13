@@ -169,7 +169,7 @@ Type: Integer
 Required: No
 
 Approvers
-A list of AWS authenticated principals who are able to either approve or reject the action. The maximum number of approvers is 10. You can specify principals by using any of the following formats:
+A list of AWS authenticated principals who can either approve or reject the action. The maximum number of approvers is 10. You can specify principals by using any of the following formats:
 + A user name
 + A user ARN
 + An IAM role ARN
@@ -178,7 +178,7 @@ Type: StringList
 Required: Yes
 
 EnhancedApprovals
-This input is only used for Change Manager templates. A list of AWS authenticated principals who are able to either approve or reject the action, the type of IAM principal, and the minimum number of approvers. The following is an example:
+This input is only used for Change Manager templates. A list of AWS authenticated principals who can either approve or reject the action, the type of IAM principal, and the minimum number of approvers. The following is an example:
 
 ```
 schemaVersion: "0.3"

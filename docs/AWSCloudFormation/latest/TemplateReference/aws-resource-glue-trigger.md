@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Predicate](#cfn-glue-trigger-predicate)" : {{Predicate}},
       "[Schedule](#cfn-glue-trigger-schedule)" : {{String}},
       "[StartOnCreation](#cfn-glue-trigger-startoncreation)" : {{Boolean}},
-      "[Tags](#cfn-glue-trigger-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
+      "[Tags](#cfn-glue-trigger-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
       "[Type](#cfn-glue-trigger-type)" : {{String}},
       "[WorkflowName](#cfn-glue-trigger-workflowname)" : {{String}}
     }
@@ -52,7 +52,7 @@ Properties:
   [Schedule](#cfn-glue-trigger-schedule): {{String}}
   [StartOnCreation](#cfn-glue-trigger-startoncreation): {{Boolean}}
   [Tags](#cfn-glue-trigger-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
   [Type](#cfn-glue-trigger-type): {{String}}
   [WorkflowName](#cfn-glue-trigger-workflowname): {{String}}
 ```
@@ -111,7 +111,7 @@ Set to true to start `SCHEDULED` and `CONDITIONAL` triggers when created. True i
 `Tags`  <a name="cfn-glue-trigger-tags"></a>
 The tags to use with this trigger.
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Type`  <a name="cfn-glue-trigger-type"></a>
@@ -135,7 +135,7 @@ The name of the workflow associated with the trigger.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the trigger name.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-glue-trigger--examples"></a>

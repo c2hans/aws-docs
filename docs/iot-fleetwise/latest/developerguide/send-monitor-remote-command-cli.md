@@ -36,7 +36,7 @@ To send a command from the console, go to the [Vehicles](https://console.aws.ama
 ## Send a command (AWS CLI)
 <a name="send-remote-command-cli"></a>
 
-You can use the [https://docs.aws.amazon.com/iot/latest/apireference/API_iot_data_StartCommandExecution.html](https://docs.aws.amazon.com/iot/latest/apireference/API_iot_data_StartCommandExecution.html) AWS IoT data plane API operation to send a command to a vehicle. The vehicle then forwards the command to an automotive middleware service (like SOME/IP (Scalable Service-Oriented Middleware over IP)) or publishes it on a vehicle network (like a controller area network (CAN) device interface). The following example uses the AWS CLI.
+You can use the [`StartCommandExecution`](https://docs.aws.amazon.com/iot/latest/apireference/API_iot_data_StartCommandExecution.html) AWS IoT data plane API operation to send a command to a vehicle. The vehicle then forwards the command to an automotive middleware service (like SOME/IP (Scalable Service-Oriented Middleware over IP)) or publishes it on a vehicle network (like a controller area network (CAN) device interface). The following example uses the AWS CLI.
 
 **Topics**
 + [Considerations when sending a command](#send-remote-command-considerations)
@@ -175,7 +175,7 @@ For an example that shows how you can use the AWS IoT Core MQTT test client to s
 ## Get command execution
 <a name="get-remote-command-execution-cli"></a>
 
-You can use the [https://docs.aws.amazon.com/iot/latest/apireference/API_GetCommandExecution.html](https://docs.aws.amazon.com/iot/latest/apireference/API_GetCommandExecution.html) AWS IoT control plane API operation to retrieve information about a command execution. You must have already executed this command using the `StartCommandExecution` API operation.
+You can use the [`GetCommandExecution`](https://docs.aws.amazon.com/iot/latest/apireference/API_GetCommandExecution.html) AWS IoT control plane API operation to retrieve information about a command execution. You must have already executed this command using the `StartCommandExecution` API operation.
 
 To retrieve the metadata of an executed command, run the following command.
 + Replace {{execution-id}} with the ID of the command. You can obtain this information from the response of the `start-command-execution` CLI command.
@@ -217,7 +217,7 @@ The `completedAt` field in the execution response corresponds to the time when t
 ## List command executions in your account
 <a name="list-remote-command-execution-cli"></a>
 
-Use the [https://docs.aws.amazon.com/iot/latest/apireference/API_ListCommandExecutions.html](https://docs.aws.amazon.com/iot/latest/apireference/API_ListCommandExecutions.html) AWS IoT Core control plane HTTP API operation to list all command executions in your account. The example uses the AWS CLI.
+Use the [`ListCommandExecutions`](https://docs.aws.amazon.com/iot/latest/apireference/API_ListCommandExecutions.html) AWS IoT Core control plane HTTP API operation to list all command executions in your account. The example uses the AWS CLI.
 
 **Topics**
 + [Considerations when listing command executions](#list-remote-command-considerations)

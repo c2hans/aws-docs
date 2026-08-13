@@ -53,7 +53,7 @@ The final `maxPods` value applied to a node depends on several components that i
 
 1.  **kubelet `maxPods` configuration** – If you set `maxPods` directly in the kubelet configuration (for example, through a launch template with a custom AMI), this value takes precedence over `maxPodsExpression`.
 
-1.  **nodeadm `maxPodsExpression` ** – If you use [https://awslabs.github.io/amazon-eks-ami/nodeadm/doc/examples/#defining-a-max-pods-expression](https://awslabs.github.io/amazon-eks-ami/nodeadm/doc/examples/#defining-a-max-pods-expression) in your `NodeConfig`, nodeadm evaluates the expression to calculate `maxPods`. This is only effective when the value is not already set by a higher-precedence source.
+1.  **nodeadm `maxPodsExpression` ** – If you use [`maxPodsExpression`](https://awslabs.github.io/amazon-eks-ami/nodeadm/doc/examples/#defining-a-max-pods-expression) in your `NodeConfig`, nodeadm evaluates the expression to calculate `maxPods`. This is only effective when the value is not already set by a higher-precedence source.
 
 1.  **Default ENI-based calculation** – If no other value is set, the AMI calculates `maxPods` based on the number of elastic network interfaces and IP addresses supported by the instance type. This is equivalent to the formula `(number of ENIs × (IPs per ENI − 1)) + 2`. The `+ 2` accounts for the Amazon VPC CNI and `kube-proxy` running on every node, which don’t consume a Pod IP address.
 

@@ -109,7 +109,7 @@ When acting as a delegated administrator, you must include `--call-as DELEGATED_
 
 **To create a StackSet**
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-set.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-set.html) command to create a new StackSet named `{{my-stackset}}`. The following example uses a template stored in an S3 bucket, enables automatic deployments, and preserves stacks when accounts are removed. For more information, see [Enable or disable automatic deployments for StackSets in AWS Organizations](stacksets-orgs-manage-auto-deployment.md).
+1. Use the [create-stack-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-set.html) command to create a new StackSet named `{{my-stackset}}`. The following example uses a template stored in an S3 bucket, enables automatic deployments, and preserves stacks when accounts are removed. For more information, see [Enable or disable automatic deployments for StackSets in AWS Organizations](stacksets-orgs-manage-auto-deployment.md).
 
    ```
    aws cloudformation create-stack-set \
@@ -119,7 +119,7 @@ When acting as a delegated administrator, you must include `--call-as DELEGATED_
      --auto-deployment Enabled={{true}},RetainStacksOnAccountRemoval={{true}},DependsOn={{ARN1,ARN2}}
    ```
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-stack-sets.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-stack-sets.html) command to confirm that your StackSet was created. Your new StackSet is listed in the results.
+1. Use the [list-stack-sets](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-stack-sets.html) command to confirm that your StackSet was created. Your new StackSet is listed in the results.
 
    ```
    aws cloudformation list-stack-sets
@@ -128,7 +128,7 @@ When acting as a delegated administrator, you must include `--call-as DELEGATED_
    + If you set the `--call-as` option to `SELF` while signed in to your AWS account, **list-stack-sets** returns all self-managed StackSets in your AWS account.
    + If you set the `--call-as` option to `SELF` while signed in to the organization's management account, **list-stack-sets** returns all StackSets in the organization's management account.
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-instances.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-instances.html) command to add stacks to your StackSet. For the `--deployment-targets` option, specify the organization root ID to deploy to all accounts in your organization.
+1. Use the [create-stack-instances](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-instances.html) command to add stacks to your StackSet. For the `--deployment-targets` option, specify the organization root ID to deploy to all accounts in your organization.
 
    Set concurrent account processing and other deployment preferences using the `--operation-preferences` option. This example uses count-based settings. Note that `MaxConcurrentCount` must not exceed `FailureToleranceCount` \+ 1. For percentage-based settings, use `FailureTolerancePercentage` or `MaxConcurrentPercentage` instead.
 
@@ -141,7 +141,7 @@ When acting as a delegated administrator, you must include `--call-as DELEGATED_
 
    For more information, see [CreateStackInstances](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStackInstances.html) in the *AWS CloudFormation API Reference*.
 
-1. Using the `operation-id` that was returned as part of the **create-stack-instances** output, use the following [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-set-operation.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-set-operation.html) command to verify that your stacks were created successfully.
+1. Using the `operation-id` that was returned as part of the **create-stack-instances** output, use the following [describe-stack-set-operation](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-set-operation.html) command to verify that your stacks were created successfully.
 
    ```
    aws cloudformation describe-stack-set-operation \
@@ -154,7 +154,7 @@ When acting as a delegated administrator, you must include `--call-as DELEGATED_
 
 **To create a StackSet**
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-set.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-set.html) command to create a new StackSet named `{{my-stackset}}`. The following example uses a template stored in an S3 bucket and includes a parameter that sets a `{{KeyPairName}}` with the value `{{TestKey}}`
+1. Use the [create-stack-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-set.html) command to create a new StackSet named `{{my-stackset}}`. The following example uses a template stored in an S3 bucket and includes a parameter that sets a `{{KeyPairName}}` with the value `{{TestKey}}`
 
    ```
    aws cloudformation create-stack-set \
@@ -164,7 +164,7 @@ When acting as a delegated administrator, you must include `--call-as DELEGATED_
      --parameters {{ParameterKey=KeyPairName,ParameterValue=TestKey}}
    ```
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-stack-sets.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-stack-sets.html) command to confirm that your StackSet was created. Your new StackSet is listed in the results.
+1. Use the [list-stack-sets](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-stack-sets.html) command to confirm that your StackSet was created. Your new StackSet is listed in the results.
 
    ```
    aws cloudformation list-stack-sets
@@ -173,7 +173,7 @@ When acting as a delegated administrator, you must include `--call-as DELEGATED_
    + If you set the `--call-as` option to `SELF` while signed in to your AWS account, **list-stack-sets** returns all self-managed StackSets in your AWS account.
    + If you set the `--call-as` option to `SELF` while signed in to the organization's management account, **list-stack-sets** returns all StackSets in the organization's management account.
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-instances.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-instances.html) command to add stacks to your StackSet. For the `--deployment-targets` option, specify the OU IDs to deploy to.
+1. Use the [create-stack-instances](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-instances.html) command to add stacks to your StackSet. For the `--deployment-targets` option, specify the OU IDs to deploy to.
 
    Set concurrent account processing and other deployment preferences using the `--operation-preferences` option. This example uses count-based settings. Note that `MaxConcurrentCount` must not exceed `FailureToleranceCount` \+ 1. For percentage-based settings, use `FailureTolerancePercentage` or `MaxConcurrentPercentage` instead.
 
@@ -186,7 +186,7 @@ When acting as a delegated administrator, you must include `--call-as DELEGATED_
 
    For more information, see [CreateStackInstances](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStackInstances.html) in the *AWS CloudFormation API Reference*.
 
-1. Using the `operation-id` that was returned as part of the **create-stack-instances** output, use the following [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-set-operation.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-set-operation.html) command to verify that your stacks were created successfully.
+1. Using the `operation-id` that was returned as part of the **create-stack-instances** output, use the following [describe-stack-set-operation](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-set-operation.html) command to verify that your stacks were created successfully.
 
    ```
    aws cloudformation describe-stack-set-operation \

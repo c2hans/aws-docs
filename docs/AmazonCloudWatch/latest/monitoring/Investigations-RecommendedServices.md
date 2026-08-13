@@ -40,7 +40,7 @@ For more information about application signals, see [Application Signals](CloudW
 
 We recommend that you enable AWS X-Ray. X-Ray collects traces about requests that your applications serve. For any traced request to your application, you can see detailed information not only about the request and response, but also about calls that your application makes to downstream AWS resources, microservices, databases, and web APIs. This information can help CloudWatch investigations during investigations.
 
-For more information, see [https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html)
+For more information, see [**What is AWS X-Ray**](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html)
 
 ## Container insights
 <a name="Investigations-ContainerInsights"></a>

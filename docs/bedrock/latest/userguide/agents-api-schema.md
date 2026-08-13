@@ -46,7 +46,7 @@ The following list describes fields in the OpenAPI schema
 
 Minimally, each method requires the following fields:
 + `description` – A description of the API operation. Use this field to inform the agent when to call this API operation and what the operation does.
-+ `operationId` – A unique string that identifies an operation in an API, like a function name. This is a required field for all new toolUse enabled models such as Anthropic Claude 3.5 Sonnet, Meta Llama, etc. Ensure that the identifier (Id) you provide is unique across all operations and follows simple alphanumeric pattern with only hyphens or underscores as separators.
++ `operationId` – A unique string that identifies an operation in an API, like a function name. This is a required field for all new toolUse enabled models such as Anthropic Claude 3.5 Sonnet, Meta Llama, etc. Make sure that the identifier (Id) you provide is unique across all operations and follows simple alphanumeric pattern with only hyphens or underscores as separators.
 + `responses` – Contains properties that the agent returns in the API response. The agent uses the response properties to construct prompts, accurately process the results of an API call, and determine a correct set of steps for performing a task. The agent can use response values from one operation as inputs for subsequent steps in the orchestration.
 
 The fields within the following two objects provide more information for your agent to effectively take advantage of your action group. For each field, set the value of the `required` field to `true` if required and to `false` if optional.

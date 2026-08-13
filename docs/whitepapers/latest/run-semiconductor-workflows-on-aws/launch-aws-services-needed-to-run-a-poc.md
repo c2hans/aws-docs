@@ -134,7 +134,7 @@ AWS uses vCPU to denote processors or symmetric multi-threading. This table uses
 
  You can import your own on-premises image to use for your AMI. This process includes extra steps, but may result in time savings. Before importing an on-premises OS image, you first build a virtual machine (VM) image for your OS. AWS supports certain VM formats (for example, Linux VMs that use VMware ESX) that must be uploaded to an S3 bucket, and subsequently converted into an AMI. For detailed information and instructions, see [VM Import/Export](https://aws.amazon.com/ec2/vm-import/). The same operating system requirements mentioned previously are also applicable to imported images.
 
- To verify that you can launch your AMI on a Nitro based instance, first launch the AMI on a Xen based instance type (e.g., C4), and then run the [https://github.com/awslabs/aws-support-tools/tree/master/EC2/NitroInstanceChecks](https://github.com/awslabs/aws-support-tools/tree/master/EC2/NitroInstanceChecks) script found on the AWS Support Tools GitHub repository. This script analyzes your AMI and determines if it can run on a Nitro based instance. If it cannot, it displays recommended changes.
+ To verify that you can launch your AMI on a Nitro based instance, first launch the AMI on a Xen based instance type (e.g., C4), and then run the [*NitroInstanceChecks*](https://github.com/awslabs/aws-support-tools/tree/master/EC2/NitroInstanceChecks) script found on the AWS Support Tools GitHub repository. This script analyzes your AMI and determines if it can run on a Nitro based instance. If it cannot, it displays recommended changes.
 
 ## Network
 <a name="network"></a>

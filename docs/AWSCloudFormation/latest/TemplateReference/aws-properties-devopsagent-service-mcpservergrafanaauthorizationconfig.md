@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DevOpsAgent::Service MCPServerGrafanaAuthorizationConfig
 <a name="aws-properties-devopsagent-service-mcpservergrafanaauthorizationconfig"></a>
 
-<a name="aws-properties-devopsagent-service-mcpservergrafanaauthorizationconfig-description"></a>The `MCPServerGrafanaAuthorizationConfig` property type specifies Property description not available. for an [AWS::DevOpsAgent::Service](aws-resource-devopsagent-service.md).
+The authorization configuration for a Grafana MCP server.
 
 ## Syntax
 <a name="aws-properties-devopsagent-service-mcpservergrafanaauthorizationconfig-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-service-mcpservergrafanaauthorizationconfig-properties"></a>
 
 `BearerToken`  <a name="cfn-devopsagent-service-mcpservergrafanaauthorizationconfig-bearertoken"></a>
-Property description not available.
+Bearer token authorization details.
 *Required*: Yes
 *Type*: [BearerTokenDetails](aws-properties-devopsagent-service-bearertokendetails.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

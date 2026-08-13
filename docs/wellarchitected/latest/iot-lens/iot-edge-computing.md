@@ -25,7 +25,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/iot-edge
 +  Client device authentication
 +  IP detector
 
- Note: The published messages from client devices must be in JSON format or [https://protobuf.dev/](https://protobuf.dev/) format.
+ Note: The published messages from client devices must be in JSON format or [*Protocol Buffers (protobuf)Protocol Buffers*](https://protobuf.dev/) format.
 
  This architecture pattern describes how to set up AWS IoT Greengrass for IoT edge computing.
 

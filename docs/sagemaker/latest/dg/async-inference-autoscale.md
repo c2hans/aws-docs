@@ -24,7 +24,7 @@ If you attach multiple scaling policies to the same autoscaling group, you might
 ## Define a scaling policy
 <a name="async-inference-autoscale-define-async"></a>
 
-To specify the metrics and target values for a scaling policy, you configure a target-tracking scaling policy. Define the scaling policy as a JSON block in a text file. You use that text file when invoking the AWS CLI or the Application Auto Scaling API. For more information about policy configuration syntax, see [https://docs.aws.amazon.com/autoscaling/application/APIReference/API_TargetTrackingScalingPolicyConfiguration.html](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_TargetTrackingScalingPolicyConfiguration.html) in the Application Auto Scaling API Reference.
+To specify the metrics and target values for a scaling policy, you configure a target-tracking scaling policy. Define the scaling policy as a JSON block in a text file. You use that text file when invoking the AWS CLI or the Application Auto Scaling API. For more information about policy configuration syntax, see [`TargetTrackingScalingPolicyConfiguration`](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_TargetTrackingScalingPolicyConfiguration.html) in the Application Auto Scaling API Reference.
 
 For asynchronous endpoints SageMaker AI strongly recommends that you create a policy configuration for target-tracking scaling for a variant. In this configuration example, we use a custom metric, `CustomizedMetricSpecification`, called `ApproximateBacklogSizePerInstance`.
 
@@ -45,7 +45,7 @@ TargetTrackingScalingPolicyConfiguration={
 ## Define a scaling policy that scales to zero
 <a name="async-inference-autoscale-define-async-zero"></a>
 
-The following shows you how to both define and register your endpoint variant with application autoscaling using the AWS SDK for Python (Boto3). After defining a low-level client object representing application autoscaling with Boto3, we use the [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.register_scalable_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.register_scalable_target) method to register the production variant. We set `MinCapacity` to 0 because Asynchronous Inference enables you to autoscale to 0 when there are no requests to process.
+The following shows you how to both define and register your endpoint variant with application autoscaling using the AWS SDK for Python (Boto3). After defining a low-level client object representing application autoscaling with Boto3, we use the [`RegisterScalableTarget`](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.register_scalable_target) method to register the production variant. We set `MinCapacity` to 0 because Asynchronous Inference enables you to autoscale to 0 when there are no requests to process.
 
 ```
 # Common class representing application autoscaling for SageMaker

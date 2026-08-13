@@ -73,7 +73,7 @@ The following data is returned in JSON format by the service.
 
  ** [associations](#API_ListPodIdentityAssociations_ResponseSyntax) **   <a name="AmazonEKS-ListPodIdentityAssociations-response-associations"></a>
 The list of summarized descriptions of the associations that are in the cluster and match any filters that you provided.
-Each summary is simplified by removing these fields compared to the full [https://docs.aws.amazon.com/eks/latest/APIReference/API_PodIdentityAssociation.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_PodIdentityAssociation.html):
+Each summary is simplified by removing these fields compared to the full [`PodIdentityAssociation`](https://docs.aws.amazon.com/eks/latest/APIReference/API_PodIdentityAssociation.html):
 + The IAM role: `roleArn`
 + The timestamp that the association was created at: `createdAt`
 + The most recent timestamp that the association was modified at:. `modifiedAt`

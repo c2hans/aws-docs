@@ -24,7 +24,7 @@ rules=[
 
 For more information about default parameter values and descriptions of the built-in rule, see [List of Debugger built-in rules](debugger-built-in-rules.md).
 
-To find the SageMaker Debugger API reference, see [https://sagemaker.readthedocs.io/en/stable/api/training/debugger.html#sagemaker.debugger.sagemaker.debugger.rule_configs](https://sagemaker.readthedocs.io/en/stable/api/training/debugger.html#sagemaker.debugger.sagemaker.debugger.rule_configs) and [https://sagemaker.readthedocs.io/en/stable/api/training/debugger.html#sagemaker.debugger.Rule](https://sagemaker.readthedocs.io/en/stable/api/training/debugger.html#sagemaker.debugger.Rule).
+To find the SageMaker Debugger API reference, see [`sagemaker.debugger.rule_configs`](https://sagemaker.readthedocs.io/en/stable/api/training/debugger.html#sagemaker.debugger.sagemaker.debugger.rule_configs) and [`sagemaker.debugger.Rule`](https://sagemaker.readthedocs.io/en/stable/api/training/debugger.html#sagemaker.debugger.Rule).
 
 For example, to inspect the overall training performance and progress of your model, construct a SageMaker AI estimator with the following built-in rule configuration.
 

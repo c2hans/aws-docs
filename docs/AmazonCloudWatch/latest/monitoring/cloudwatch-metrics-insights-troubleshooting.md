@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloud
 
 This means that the query includes a **GROUP BY** clause that specifies a label key that is not used in some of the metrics that are returned by the query. In this case, a null group named `Other` is returned. The metrics that do not include that label key are probably aggregated metrics that return values aggregated across all values of that label key.
 
- For example, suppose we have the following query:
+ For example, suppose you have the following query:
 
 ```
 SELECT AVG(Faults)
@@ -48,29 +48,29 @@ The following example shows how this affects query results. A metric has two tag
 
 <table>
 <thead>
-  <tr><th colspan="4">env=beta with 1-minute period</th></tr>
+  <tr><th colspan="4"><b>env=beta with 1-minute period</b></th></tr>
   <tr><th>Statistic</th><th>Expected</th><th>Returned</th><th>Difference</th></tr>
 </thead>
 <tbody>
-  <tr><td>SUM</td><td>270</td><td>271</td><td>\+1</td></tr>
+  <tr><td>SUM</td><td>270</td><td>271</td><td>+1</td></tr>
   <tr><td>AVG</td><td>3.0</td><td>3.0</td><td>0</td></tr>
   <tr><td>MIN</td><td>1</td><td>1</td><td>0</td></tr>
   <tr><td>MAX</td><td>5</td><td>5</td><td>0</td></tr>
-  <tr><td>SAMPLE\_COUNT</td><td>90</td><td>91</td><td>\+1</td></tr>
+  <tr><td>SAMPLE_COUNT</td><td>90</td><td>91</td><td>+1</td></tr>
 </tbody>
 </table>
 
 <table>
 <thead>
-  <tr><th colspan="4">env=gamma with 1-minute period</th></tr>
+  <tr><th colspan="4"><b>env=gamma with 1-minute period</b></th></tr>
   <tr><th>Statistic</th><th>Expected</th><th>Returned</th><th>Difference</th></tr>
 </thead>
 <tbody>
-  <tr><td>SUM</td><td>270</td><td>275</td><td>\+5</td></tr>
+  <tr><td>SUM</td><td>270</td><td>275</td><td>+5</td></tr>
   <tr><td>AVG</td><td>3.0</td><td>3.0</td><td>0</td></tr>
   <tr><td>MIN</td><td>1</td><td>1</td><td>0</td></tr>
   <tr><td>MAX</td><td>5</td><td>5</td><td>0</td></tr>
-  <tr><td>SAMPLE\_COUNT</td><td>90</td><td>91</td><td>\+1</td></tr>
+  <tr><td>SAMPLE_COUNT</td><td>90</td><td>91</td><td>+1</td></tr>
 </tbody>
 </table>
 
@@ -78,29 +78,29 @@ With a 1-minute period, the alignment adjustment is small (1 minute), so only 1 
 
 <table>
 <thead>
-  <tr><th colspan="4">env=beta with 3-hour period</th></tr>
+  <tr><th colspan="4"><b>env=beta with 3-hour period</b></th></tr>
   <tr><th>Statistic</th><th>Expected</th><th>Returned</th><th>Difference</th></tr>
 </thead>
 <tbody>
-  <tr><td>SUM</td><td>270</td><td>540</td><td>\+270</td></tr>
+  <tr><td>SUM</td><td>270</td><td>540</td><td>+270</td></tr>
   <tr><td>AVG</td><td>3.0</td><td>3.0</td><td>0</td></tr>
   <tr><td>MIN</td><td>1</td><td>1</td><td>0</td></tr>
   <tr><td>MAX</td><td>5</td><td>5</td><td>0</td></tr>
-  <tr><td>SAMPLE\_COUNT</td><td>90</td><td>180</td><td>\+90</td></tr>
+  <tr><td>SAMPLE_COUNT</td><td>90</td><td>180</td><td>+90</td></tr>
 </tbody>
 </table>
 
 <table>
 <thead>
-  <tr><th colspan="4">env=gamma with 3-hour period</th></tr>
+  <tr><th colspan="4"><b>env=gamma with 3-hour period</b></th></tr>
   <tr><th>Statistic</th><th>Expected</th><th>Returned</th><th>Difference</th></tr>
 </thead>
 <tbody>
-  <tr><td>SUM</td><td>270</td><td>540</td><td>\+270</td></tr>
+  <tr><td>SUM</td><td>270</td><td>540</td><td>+270</td></tr>
   <tr><td>AVG</td><td>3.0</td><td>3.0</td><td>0</td></tr>
   <tr><td>MIN</td><td>1</td><td>1</td><td>0</td></tr>
   <tr><td>MAX</td><td>5</td><td>5</td><td>0</td></tr>
-  <tr><td>SAMPLE\_COUNT</td><td>90</td><td>180</td><td>\+90</td></tr>
+  <tr><td>SAMPLE_COUNT</td><td>90</td><td>180</td><td>+90</td></tr>
 </tbody>
 </table>
 

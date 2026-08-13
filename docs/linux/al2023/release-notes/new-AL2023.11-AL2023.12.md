@@ -27,12 +27,12 @@ New packages in AL2023.12:
   - **Architectures:** noarch
   - **Version:** 47.6-1.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
+- ** [`java-1.8.0-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
   - **RPM:**  java-1.8.0-amazon-corretto-debugsymbols
   - **Architectures:** aarch64, x86\_64
   - **Version:** 1.8.0\_492.b09-1.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
+- ** [`java-11-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
   - **RPM:**  java-11-amazon-corretto-debugsymbols
   - **Architectures:** aarch64, x86\_64
   - **Version:** 11.0.31\+11-1.amzn2023

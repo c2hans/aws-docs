@@ -165,4 +165,4 @@ def _get_analytics_type(detail_type: str):
 ```
 
 **Important**
-You must receive consent before you call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StartSpeakerSearchTask](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StartSpeakerSearchTask) or [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StartVoiceToneAnalysis.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StartVoiceToneAnalysis.html) APIs. We recommend that you persist the events in a holding area, such as Amazon DynamoDB, until you receive consent.
+You must receive consent before you call the [StartSpeakerSearchTask](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StartSpeakerSearchTask) or [StartVoiceToneAnalysis](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StartVoiceToneAnalysis.html) APIs. We recommend that you persist the events in a holding area, such as Amazon DynamoDB, until you receive consent.

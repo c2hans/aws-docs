@@ -68,7 +68,7 @@ If you are impacted, either downgrade the version or disable your runtime metric
 ## Python application doesn't start after Application Signals is enabled
 <a name="Application-Signals-troubleshoot-starting-Python"></a>
 
-It is a known issue in OpenTelemetry auto-instrumentation that a missing `PYTHONPATH` environment variable can sometimes cause the application to fail to start . To resolve this, ensure that you set the `PYTHONPATH` environment variable to the location of your application's working directory. For more information about this issue, see [ Python autoinstrumentation setting of PYTHONPATH is not compliant with Python's module resolution behavior, breaking Django applications](https://github.com/open-telemetry/opentelemetry-operator/issues/2302).
+It is a known issue in OpenTelemetry auto-instrumentation that a missing `PYTHONPATH` environment variable can sometimes cause the application to fail to start . To resolve this, make sure that you set the `PYTHONPATH` environment variable to the location of your application's working directory. For more information about this issue, see [ Python autoinstrumentation setting of PYTHONPATH is not compliant with Python's module resolution behavior, breaking Django applications](https://github.com/open-telemetry/opentelemetry-operator/issues/2302).
 
 For Django applications, there are additional required configurations, which are outlined in the [ OpenTelemetry Python documentation](https://opentelemetry-python.readthedocs.io/en/latest/examples/django/README.html).
 + Use the `--noreload` flag to prevent automatic reloading.
@@ -145,7 +145,7 @@ Be sure that you are using the latest version of ADOT Python and the Amazon Clou
 ## My Node.js application is not instrumented or isn't generating Application Signals telemetry
 <a name="Application-Signals-troubleshoot-telemetry-nodejs"></a>
 
-To enable Application Signals for Node.js, you must ensure that your Node.js application uses the CommonJS (CJS) module format. The AWS Distro for OpenTelemetry Node.js doesn't support the ESM module format, because OpenTelemetry JavaScript's support of ESM is experimental and is a work in progress.
+To enable Application Signals for Node.js, you must make sure that your Node.js application uses the CommonJS (CJS) module format. The AWS Distro for OpenTelemetry Node.js doesn't support the ESM module format, because OpenTelemetry JavaScript's support of ESM is experimental and is a work in progress.
 
 To determine if your application is using CJS and not ESM, make sure that your application does not fulfill the [ conditions to enable ESM](https://nodejs.org/api/esm.html#enabling).
 

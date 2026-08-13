@@ -557,6 +557,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   ListFreeTrialStatusesV2  **
+  - **IAM action:**  [securityhub:ListFreeTrialStatusesV2](#list_securityhub-action-ListFreeTrialStatusesV2)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   ListInvitations  **
   - **IAM action:**  [securityhub:ListInvitations](#list_securityhub-action-ListInvitations)
   - **Condition key:**
@@ -1236,6 +1242,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to retrieve a list of finding aggregators, which contain the cross-Region finding aggregation configuration
   - **Resource types (\*required):**
   - **Condition keys:**
+  - **Access level:** List
+
+- **   [ListFreeTrialStatusesV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListFreeTrialStatusesV2.html)  **
+  - **Description:** Grants permission to retrieve a list of Security Hub free trial statuses for an account or accounts in an organization
+  - **Resource types (\*required):** [hubv2\*](#list_securityhub-resource-hubv2)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityhub-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
 - **   [ListInvitations](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListInvitations.html)  **

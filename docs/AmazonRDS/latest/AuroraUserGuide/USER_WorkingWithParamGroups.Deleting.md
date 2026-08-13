@@ -27,7 +27,7 @@ You can delete a DB parameter group using the AWS Management Console, AWS CLI, o
 ## AWS CLI
 <a name="USER_WorkingWithParamGroups.Deleting.CLI"></a>
 
-To delete a DB parameter group, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/delete-db-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/delete-db-parameter-group.html) command with the following required parameter.
+To delete a DB parameter group, use the AWS CLI [`delete-db-parameter-group`](https://docs.aws.amazon.com/cli/latest/reference/rds/delete-db-parameter-group.html) command with the following required parameter.
 + `--db-parameter-group-name`
 
 **Example**
@@ -40,5 +40,5 @@ aws rds delete-db-parameter-group --db-parameter-group-name {{mydbparametergroup
 ## RDS API
 <a name="USER_WorkingWithParamGroups.Deleting.API"></a>
 
-To delete a DB parameter group, use the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteDBParameterGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteDBParameterGroup.html) command with the following required parameter.
+To delete a DB parameter group, use the RDS API [`DeleteDBParameterGroup`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteDBParameterGroup.html) command with the following required parameter.
 + `DBParameterGroupName`

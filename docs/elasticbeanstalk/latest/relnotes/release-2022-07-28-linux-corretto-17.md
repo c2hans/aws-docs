@@ -18,13 +18,24 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/alas2.html) on or before **July 14, 2022** to all released Amazon Linux 2 Corretto platforms. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-07-28-linux-corretto-17.html) |
-| **Corretto** | **\*\*New\!\*\*** — Introduced new **Corretto 17** platform branch, running Corretto version **17.0.3.6.1**.<br />For more information, see [Change Log for Amazon Corretto 17](https://github.com/corretto/corretto-17/blob/develop/CHANGELOG.md#corretto-version-170361) in the Corretto 17 repository on GitHub. Also, see the [Amazon Corretto](https://aws.amazon.com/corretto) website. Refer to the following **Note** in the next section if you use the AWS CLI or EB CLI to create environments based on the **Corretto 11** or **Corretto 8** platform versions in this release.  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/alas2.html">Amazon Linux Security Center</a> on or before <b>July 14, 2022</b> to all released Amazon Linux 2 Corretto platforms.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Corretto</b></td><td><b>**New!**</b> — Introduced new <b>Corretto 17</b> platform branch, running Corretto version <b>17.0.3.6.1</b>.<br />For more information, see <a href="https://github.com/corretto/corretto-17/blob/develop/CHANGELOG.md#corretto-version-170361">Change Log for Amazon Corretto 17</a> in the Corretto 17 repository on GitHub. Also, see the <a href="https://aws.amazon.com/corretto">Amazon Corretto</a> website. Refer to the following <b>Note</b> in the next section if you use the AWS CLI or EB CLI to create environments based on the <b>Corretto 11</b> or <b>Corretto 8</b> platform versions in this release. </td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2022-07-28-linux-corretto-17.platforms"></a>

@@ -766,7 +766,7 @@ end
 ```
 
  **Behavior:**
-+ Pattern syntax follows Go's [https://pkg.go.dev/path/filepath#Match](https://pkg.go.dev/path/filepath#Match): `*`, `?`, `[abc]`, `[a-z]`.
++ Pattern syntax follows Go's [`filepath.Match`](https://pkg.go.dev/path/filepath#Match): `*`, `?`, `[abc]`, `[a-z]`.
 + Input patterns and output paths are normalized: redundant separators (`a//b`), dot segments (`a/./b`), and trailing separators (`a/b/`) are collapsed.
 + Output is deduplicated; the first occurrence of a path wins. Input pattern order is preserved across the result.
 + Patterns that match nothing return no entries. Empty-string patterns are silently skipped. Malformed patterns (e.g. mismatched brackets) emit a warning and are skipped.

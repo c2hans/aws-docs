@@ -280,7 +280,7 @@ The console is a web-based user interface for managing Amazon S3 and AWS resourc
 
 You can use the AWS command line tools to issue commands or build scripts at your system's command line to perform AWS (including S3) tasks.
 
-The [AWS Command Line Interface (AWS CLI)](https://aws.amazon.com/cli/) provides commands for a broad set of AWS services. The AWS CLI is supported on Windows, macOS, and Linux. To get started, see the [https://docs.aws.amazon.com/cli/latest/userguide/](https://docs.aws.amazon.com/cli/latest/userguide/). For more information about the commands for Amazon S3, see [s3api](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/index.html) and [s3control](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/index.html) in the *AWS CLI Command Reference*.
+The [AWS Command Line Interface (AWS CLI)](https://aws.amazon.com/cli/) provides commands for a broad set of AWS services. The AWS CLI is supported on Windows, macOS, and Linux. To get started, see the [*AWS Command Line Interface User Guide*](https://docs.aws.amazon.com/cli/latest/userguide/). For more information about the commands for Amazon S3, see [s3api](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/index.html) and [s3control](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/index.html) in the *AWS CLI Command Reference*.
 
 ### AWS SDKs
 <a name="access-aws-sdks"></a>
@@ -312,7 +312,7 @@ Amazon S3 charges you only for what you actually use, with no hidden fees and no
 
 When you sign up for AWS, your AWS account is automatically signed up for all services in AWS, including Amazon S3. However, you are charged only for the services that you use. If you are a new Amazon S3 customer, you can get started with Amazon S3 for free. For more information, see [AWS free tier](https://aws.amazon.com/free).
 
-To see your bill, go to the Billing and Cost Management Dashboard in the [AWS Billing and Cost Management console](https://console.aws.amazon.com/billing/). To learn more about AWS account billing, see the [https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-what-is.html](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-what-is.html). If you have questions concerning AWS billing and AWS accounts, contact [AWS Support](https://aws.amazon.com/contact-us/).
+To see your bill, go to the Billing and Cost Management Dashboard in the [AWS Billing and Cost Management console](https://console.aws.amazon.com/billing/). To learn more about AWS account billing, see the [*AWS Billing User Guide*](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-what-is.html). If you have questions concerning AWS billing and AWS accounts, contact [AWS Support](https://aws.amazon.com/contact-us/).
 
 ## PCI DSS compliance
 <a name="pci-dss-compliance"></a>

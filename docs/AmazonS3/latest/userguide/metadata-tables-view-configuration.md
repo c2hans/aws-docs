@@ -96,7 +96,7 @@ To use the following example command, replace the `{{user input placeholders}}` 
 ### Using the REST API
 <a name="metadata-tables-view-configuration-rest-api"></a>
 
-You can send REST requests to view a metadata table configuration. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketMetadataTableConfiguration.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketMetadataTableConfiguration.html).
+You can send REST requests to view a metadata table configuration. For more information, see [GetBucketMetadataTableConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketMetadataTableConfiguration.html).
 
 **Note**
 You can use the V2 `GetBucketMetadataConfiguration` API operation with V1 or V2 metadata table configurations. However, if you try to use the V1 `GetBucketMetadataTableConfiguration` API operation with V2 configurations, you will receive an HTTP `405 Method Not Allowed` error.

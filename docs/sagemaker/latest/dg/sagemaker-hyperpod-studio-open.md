@@ -13,7 +13,7 @@ You can also choose your custom file system from the list of options. For inform
 
 Alternatively, you can create a space and launch an IDE using the AWS CLI. Use the following commands to do so. The following example creates a `Private` `JupyterLab` space for `{{user-profile-name}}` with the `{{fs-id}}` FSx for Lustre file system attached.
 
-1. Create a space using the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sagemaker/create-space.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sagemaker/create-space.html) AWS CLI.
+1. Create a space using the [`create-space`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sagemaker/create-space.html) AWS CLI.
 
    ```
    aws sagemaker create-space \
@@ -23,7 +23,7 @@ Alternatively, you can create a space and launch an IDE using the AWS CLI. Use t
    --space-settings "AppType=JupyterLab,CustomFileSystems=[{FSxLustreFileSystem={FileSystemId={{fs-id}}}}]"
    ```
 
-1. Create the app using the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sagemaker/create-app.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sagemaker/create-app.html) AWS CLI.
+1. Create the app using the [`create-app`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sagemaker/create-app.html) AWS CLI.
 
    ```
    aws sagemaker create-app \

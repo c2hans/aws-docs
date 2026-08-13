@@ -116,7 +116,7 @@ After you set the logins map, make a call to `refresh` or `get` to retrieve the 
 
 To add Facebook authentication, first follow the [Facebook guide](https://developers.facebook.com/docs/ios) and integrate the Facebook SDK into your application. Then add a [Login with Facebook button](https://developers.facebook.com/docs/facebook-login/ios) to your user interface. The Facebook SDK uses a session object to track its state. Amazon Cognito uses the access token from this session object to authenticate the user and bind them to a unique Amazon Cognito identity pools (federated identities).
 
-To provide the Facebook access token to Amazon Cognito, implement the [https://github.com/aws-amplify/aws-sdk-ios](https://github.com/aws-amplify/aws-sdk-ios) protocol.
+To provide the Facebook access token to Amazon Cognito, implement the [AWSIdentityProviderManager](https://github.com/aws-amplify/aws-sdk-ios) protocol.
 
 When you implement the `logins` method, return a dictionary that contains `AWSIdentityProviderFacebook`. This dictionary acts as the key, and the current access token from the authenticated Facebook user acts as the value, as shown in the following code example.
 
@@ -144,7 +144,7 @@ To add Facebook authentication, first follow the [Facebook guide](https://develo
 **Note**
 Amazon Cognito identity pools federation isn't compatible with [Facebook Limited Login](https://developers.facebook.com/docs/facebook-login/limited-login). For more information about how to set up Facebook Login for iOS without exceeding the permissions set for Limited Login, see [Facebook Login for iOS - Quickstart](https://developers.facebook.com/docs/facebook-login/ios) at *Meta for Developers*.
 
-To provide the Facebook access token to Amazon Cognito, implement the [https://github.com/aws-amplify/aws-sdk-ios](https://github.com/aws-amplify/aws-sdk-ios) protocol.
+To provide the Facebook access token to Amazon Cognito, implement the [AWSIdentityProviderManager](https://github.com/aws-amplify/aws-sdk-ios) protocol.
 
 When you implement the `logins` method, return a dictionary containing `AWSIdentityProviderFacebook`. This dictionary acts as the key, and the current access token from the authenticated Facebook user acts as the value, as shown in the following code example.
 
@@ -159,7 +159,7 @@ class FacebookProvider: NSObject, AWSIdentityProviderManager {
 }
 ```
 
-When you instantiate the `AWSCognitoCredentialsProvider`, pass the class that implements `AWSIdentityProviderManager` as the value of `identityProviderManager` in the constructor. For more information, go to the [https://github.com/aws-amplify/aws-sdk-ios](https://github.com/aws-amplify/aws-sdk-ios) reference page and choose **initWithRegionType:identityPoolId:identityProviderManager**.
+When you instantiate the `AWSCognitoCredentialsProvider`, pass the class that implements `AWSIdentityProviderManager` as the value of `identityProviderManager` in the constructor. For more information, go to the [AWSCognitoCredentialsProvider](https://github.com/aws-amplify/aws-sdk-ios) reference page and choose **initWithRegionType:identityPoolId:identityProviderManager**.
 
 ### JavaScript
 <a name="using-facebook-1.javascript"></a>

@@ -11,7 +11,7 @@ You can access Resource Groups through any of the following entry points.
 + In the [AWS Management Console](https://console.aws.amazon.com/console/home), in the top navigation bar, choose **Services**. Then, under **Management & Governance**, choose **Resource Groups & Tag Editor**.
 
   Direct link: [AWS Resource Groups console](https://console.aws.amazon.com/resource-groups)
-+ By using the Resource Groups API, in AWS CLI commands or AWS SDK programming languages. See the [https://docs.aws.amazon.com/ARG/latest/APIReference/Welcome.html](https://docs.aws.amazon.com/ARG/latest/APIReference/Welcome.html) for more information.
++ By using the Resource Groups API, in AWS CLI commands or AWS SDK programming languages. See the [* AWS Resource Groups API Reference*](https://docs.aws.amazon.com/ARG/latest/APIReference/Welcome.html) for more information.
 
 **To work with resource groups on the AWS Management Console home**
 

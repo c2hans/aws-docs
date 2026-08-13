@@ -96,7 +96,7 @@ To generate an object list automatically and save it as a manifest file, you spe
 ### Object filter criteria
 <a name="manifest-generator-filter-criteria"></a>
 
-To filter the list of objects to be included in an automatically generated object list, you can specify the following criteria. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_JobManifestGeneratorFilter.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_JobManifestGeneratorFilter.html) in the *Amazon S3 API Reference*.
+To filter the list of objects to be included in an automatically generated object list, you can specify the following criteria. For more information, see [JobManifestGeneratorFilter](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_JobManifestGeneratorFilter.html) in the *Amazon S3 API Reference*.
 
 **CreatedAfter**
 If provided, the generated manifest includes only source bucket objects that were created after this time.
@@ -176,7 +176,7 @@ You can specify an existing manifest to create a Batch Operations job by using o
 **Note**
 S3 Batch Operations supports CSV *inventory reports *that are encrypted with SSE-KMS.
 If you submit an inventory report manifest that's encrypted with SSE-KMS, your IAM policy must include the permissions `"kms:Decrypt"` and `"kms:GenerateDataKey"` for the `manifest.json` object and all associated CSV data files.
-+ **CSV file** – Each row in the file must include the bucket name, object key, and optionally, the object version. Object keys must be URL-encoded, as shown in the following examples. The manifest must either include version IDs for all objects or omit version IDs for all objects. For more information about the CSV manifest format, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_JobManifestSpec.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_JobManifestSpec.html) in the *Amazon Simple Storage Service API Reference*.
++ **CSV file** – Each row in the file must include the bucket name, object key, and optionally, the object version. Object keys must be URL-encoded, as shown in the following examples. The manifest must either include version IDs for all objects or omit version IDs for all objects. For more information about the CSV manifest format, see [JobManifestSpec](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_JobManifestSpec.html) in the *Amazon Simple Storage Service API Reference*.
 **Note**
 S3 Batch Operations doesn't support CSV *manifest files* that are encrypted with SSE-KMS.
 
@@ -328,7 +328,7 @@ Batch Operations jobs that perform actions on directory buckets require specific
 
 1. Use the following example command to create an `S3PutObjectTagging` job.
 
-   The `manifest.csv` file provides a list of bucket and object key values. The job applies the specified tags to the objects that are identified in the manifest. The `ETag` is the ETag of the `manifest.csv` object, which you can get from the Amazon S3 console. This request specifies the `no-confirmation-required` parameter, so that you can run the job without having to confirm it with the `update-job-status` command. For more information, see [https://docs.aws.amazon.com/cli/latest/reference/s3control/create-job.html](https://docs.aws.amazon.com/cli/latest/reference/s3control/create-job.html) in the *AWS CLI Command Reference*.
+   The `manifest.csv` file provides a list of bucket and object key values. The job applies the specified tags to the objects that are identified in the manifest. The `ETag` is the ETag of the `manifest.csv` object, which you can get from the Amazon S3 console. This request specifies the `no-confirmation-required` parameter, so that you can run the job without having to confirm it with the `update-job-status` command. For more information, see [create-job](https://docs.aws.amazon.com/cli/latest/reference/s3control/create-job.html) in the *AWS CLI Command Reference*.
 
    To use this example command, replace the `{{user input placeholders}}` with your own information. Replace {{`IAM-role`}} with the ARN of the IAM role that you created earlier.
 
@@ -445,7 +445,7 @@ Batch Operations jobs that perform actions on directory buckets require specific
 
    In this example, the values in the `--report` section specify the bucket, prefix, format, and scope of the job report that will be generated. The `--manifest-generator` section specifies information about the source bucket that contains the objects the job will act upon, information about the manifest output list that will be generated for the job, and filter criteria to narrow the scope of objects to be included in the manifest by creation date, name constraints, size, and storage class. The command also specifies the job's priority, IAM role, and AWS Region.
 
-   For more information, see [https://docs.aws.amazon.com/cli/latest/reference/s3control/create-job.html](https://docs.aws.amazon.com/cli/latest/reference/s3control/create-job.html) in the *AWS CLI Command Reference*.
+   For more information, see [create-job](https://docs.aws.amazon.com/cli/latest/reference/s3control/create-job.html) in the *AWS CLI Command Reference*.
 
    To use this example command, replace the `{{user input placeholders}}` with your own information. Replace {{`IAM-role`}} with the ARN of the IAM role that you created earlier.
 
@@ -516,7 +516,7 @@ For examples of how to create S3 Batch Operations jobs with the AWS SDK for Java
 ### Using the REST API
 <a name="batch-ops-examples-rest-create-job"></a>
 
-You can use the REST API to create a Batch Operations job. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateJob.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateJob.html) in the *Amazon Simple Storage Service API Reference*.
+You can use the REST API to create a Batch Operations job. For more information, see [CreateJob](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateJob.html) in the *Amazon Simple Storage Service API Reference*.
 
 ## Job responses
 <a name="batch-ops-create-job-response-elements"></a>

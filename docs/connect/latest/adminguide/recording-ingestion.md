@@ -7,10 +7,8 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/recording-inge
 
 This guide provides instructions for importing voice recordings from third-party voice systems into Connect Customer and generating conversational analytics.
 
-The workflow consists of three sequential API calls:
-+ [CreateContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateContact.html) – Create a voice contact to represent the call
-+ [CreateAttachedFile](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateAttachedFile.html) – Import a recording from your Amazon S3 bucket and attach it to the contact
-+ [StartContactConversationalAnalyticsJob](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartContactConversationalAnalyticsJob.html) – Create the conversational analytics for the contact
+**Note**
+Recording ingestion is only available in [Amazon Connect Customer](https://docs.aws.amazon.com//connect/latest/adminguide/enable-nextgeneration-amazonconnect.html) instances.
 
 ## Common use cases
 <a name="recording-ingestion-use-cases"></a>
@@ -22,6 +20,10 @@ Recording ingestion and conversational analytics help address several customer n
 
 ## Getting started
 <a name="recording-ingestion-getting-started"></a>
+
+Before using recording ingestion, complete the following configuration steps:
++ **Service quotas** – Request increases for required API quotas
++ **Prerequisites** – Verify your instance setup and permissions
 
 ### Service quotas
 <a name="recording-ingestion-service-quotas"></a>
@@ -61,7 +63,7 @@ The following service quotas apply to recording ingestion.
 + Test the end-to-end workflow in a non-production Connect Customer instance before using in production.
 + Ensure WAV files meet the format requirements before ingestion — invalid formats are rejected.
 + Wait for the recording attachment to complete before calling StartContactConversationalAnalyticsJob. Monitor your contact trace record (CTR) delivery via Amazon Kinesis Data Stream or Amazon Kinesis Data Firehose to confirm attachment status. For more information, see [Enable data streaming for your Connect Customer instance](data-streaming.md).
-+ Configure EventBridge to receive analytics job failure notifications. For more information, see [Error notifications: When Contact Lens can't analyze a contact](contact-lens-error-notifications.md).
++ Configure EventBridge to receive analytics job failure notifications. For more information, see [Error notifications: When conversational analytics can't analyze a contact](contact-lens-error-notifications.md).
 
 ## Verification
 <a name="recording-ingestion-verification"></a>

@@ -14,7 +14,7 @@ If you're on a team, and teammates are looking for features to use in their mode
 
 You can add searchable parameters and descriptions to make your features more discoverable. For more information, see [Adding searchable metadata to your features](feature-store-add-metadata.md).
 
-You can search for features using either the console or by using the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html) API operation in SageMaker AI. The following table lists all of the searchable metadata and whether you can search for it in the console or with the API.
+You can search for features using either the console or by using the [`Search`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html) API operation in SageMaker AI. The following table lists all of the searchable metadata and whether you can search for it in the console or with the API.
 
 ****
 
@@ -79,7 +79,7 @@ Use the latest version of Amazon SageMaker Studio Classic so that you have the m
 ### Search for your features using SDK for Python (Boto3)
 <a name="feature-store-search-metadata-how-to-with-sdk"></a>
 
-The code in this section uses the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html) operation in the AWS SDK for Python (Boto3) to run the search query to find features in your feature groups. For information about the other languages to submit a query, see [See Also](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html#API_Search_SeeAlso) in the *Amazon SageMaker API Reference*.
+The code in this section uses the [`Search`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html) operation in the AWS SDK for Python (Boto3) to run the search query to find features in your feature groups. For information about the other languages to submit a query, see [See Also](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html#API_Search_SeeAlso) in the *Amazon SageMaker API Reference*.
 
 For more Feature Store examples and resources, see [Amazon SageMaker Feature Store resources](feature-store-resources.md).
 

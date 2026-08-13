@@ -20,7 +20,7 @@ For information about AWS root accounts and administrator users, see [The AWS ac
    You should have already signed in to the AWS Management Console by using one of the following:
    + Your AWS root account. This is not recommended. For more information, see [The AWS account root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) in the *user Guide*.
    + An administrator user in your AWS account. For more information, see [Creating Your First AWS account root user and Group](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html) in the *user Guide*.
-   + An user in your AWS account with permission to perform the following minimum set of actions:
+   + A user in your AWS account with permission to perform the following minimum set of actions:
 
      ```
      iam:AttachGroupPolicy
@@ -230,7 +230,7 @@ This policy allows access to all CodeBuild actions and to a potentially large nu
    aws iam put-group-policy --group-name {{group-name}} --policy-name CodeBuildGroupAccessPolicy --policy-document file://put-group-policy.json
    ```
 
-   For an user:
+   For a user:
 
    ```
    aws iam put-user-policy --user-name {{user-name}} --policy-name CodeBuildUserAccessPolicy --policy-document file://put-user-policy.json

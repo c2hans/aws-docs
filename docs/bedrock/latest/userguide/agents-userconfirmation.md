@@ -14,11 +14,11 @@ To enable user confirmation for an action, see [Add an action group to your agen
 ## How user confirmation works
 <a name="user-confirmation-works"></a>
 
-The user confirmation is configured for an action in the action group by the agent developer. If the agent decides that it should call that action, the API or the function details elicited from the user and the user confirmation configured by the agent developer will be returned in the `invocationInputs` field in the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response, alongside `invocationType`, and an unique `invocationId`.
+The user confirmation is configured for an action in the action group by the agent developer. If the agent decides that it should call that action, the API or the function details elicited from the user and the user confirmation configured by the agent developer will be returned in the `invocationInputs` field in the [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response, alongside `invocationType`, and an unique `invocationId`.
 
 The agent invokes the API or the function that was provided in the `invocationInputs`. If the user confirmation is enabled for the function or the API, the user is presented with an option to **CONFIRM** or **DENY** the action mentioned in the response.
 
-The results from the agent’s invocation of the function or API is sent in another [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request, in the `sessionState` field, to provide context to the agent. The request parameter for `InvokeAgent` uses `returnControlInvocationResults`, which is a list of map to `apiResult` or `functionResult` objects. The `apiResult` and `functionResult` objects have an additional field of `confirmationState`. This field has the user confirmation response.
+The results from the agent’s invocation of the function or API is sent in another [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request, in the `sessionState` field, to provide context to the agent. The request parameter for `InvokeAgent` uses `returnControlInvocationResults`, which is a list of map to `apiResult` or `functionResult` objects. The `apiResult` and `functionResult` objects have an additional field of `confirmationState`. This field has the user confirmation response.
 
 If the user response is **CONFIRM**, the function or the API in the response is implemented.
 

@@ -16,14 +16,14 @@ AMB Access collects the following metrics for each peer node in the `aws/managed
   <tr><th>Metric name</th><th>Description</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2">Fabric metrics</td></tr>
-  <tr><td>ChaincodeExecuteTimeouts</td><td>The number of chaincode executions (`Init` or `Invoke`) that have timed out.<br />Units: Count</td></tr>
+  <tr><td colspan="2"><b>Fabric metrics</b></td></tr>
+  <tr><td>ChaincodeExecuteTimeouts</td><td>The number of chaincode executions (<code>Init</code> or <code>Invoke</code>) that have timed out.<br />Units: Count</td></tr>
   <tr><td>EndorserProposalDuration</td><td>For each proposal, the time to complete the proposal.<br />Units: Seconds</td></tr>
   <tr><td>EndorserProposalValidationFailures</td><td>The number of proposals that have failed initial validation.<br />Units: Count</td></tr>
   <tr><td>EndorserProposalsReceived</td><td>The number of proposals received.<br />Units: Count</td></tr>
   <tr><td>EndorserSuccessfulProposals</td><td>The number of successful proposals.<br />Units: Count</td></tr>
   <tr><td>Transactions</td><td>The number of transactions that a peer node receives per minute.<br />Units: Count</td></tr>
-  <tr><td colspan="2">Utilization metrics</td></tr>
+  <tr><td colspan="2"><b>Utilization metrics</b></td></tr>
   <tr><td>CPUUtilization</td><td>The percentage of total CPU capacity used on the peer node's AMB Access instance at any given instant.<br />Units: Percent</td></tr>
   <tr><td>MemoryUtilization</td><td>The percentage of total available memory used on the peer node's AMB Access instance at any given instant.<br />Units: Percent</td></tr>
 </tbody>

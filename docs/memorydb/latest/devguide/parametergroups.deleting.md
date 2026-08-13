@@ -72,4 +72,4 @@ https://memory-db.us-east-1.amazonaws.com/
    &X-Amz-Credential=<credential>
 ```
 
-For more information, see [https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DeleteParameterGroup.html](https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DeleteParameterGroup.html).
+For more information, see [`DeleteParameterGroup`](https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DeleteParameterGroup.html).

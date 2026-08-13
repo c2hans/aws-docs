@@ -32,7 +32,7 @@ aws observabilityadmin start-telemetry-enrichment
 ## Step 2: Verify your endpoint configuration
 <a name="SageMaker-AI-Insights-verify-config"></a>
 
-Ensure that `EnableDetailedObservability` is set to `true` on your endpoint configuration. This is the default for new endpoints.
+Make sure that `EnableDetailedObservability` is set to `true` on your endpoint configuration. This is the default for new endpoints.
 
 ```
 aws sagemaker describe-endpoint-config --endpoint-config-name {{name}}

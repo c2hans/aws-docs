@@ -83,7 +83,7 @@ Make sure that there is not a space between the `-p` option and the entered pass
    mysql> UNLOCK TABLES;
    ```
 
-   For more information on making backups for use with replication, see [http://dev.mysql.com/doc/refman/8.0/en/replication-solutions-backups-read-only.html](http://dev.mysql.com/doc/refman/8.0/en/replication-solutions-backups-read-only.html) in the MySQL documentation.
+   For more information on making backups for use with replication, see [Backing up a source or replica by making it read only](http://dev.mysql.com/doc/refman/8.0/en/replication-solutions-backups-read-only.html) in the MySQL documentation.
 
 1. In the Amazon RDS Management Console, add the IP address of the server that hosts the source MySQL database to the VPC security group for the Amazon Aurora DB cluster. For more information on modifying a VPC security group, see [Security groups for your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html) in the *Amazon Virtual Private Cloud User Guide*.
 

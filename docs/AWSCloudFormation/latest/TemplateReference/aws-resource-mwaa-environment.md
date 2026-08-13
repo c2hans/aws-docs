@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[SourceBucketArn](#cfn-mwaa-environment-sourcebucketarn)" : {{String}},
       "[StartupScriptS3ObjectVersion](#cfn-mwaa-environment-startupscripts3objectversion)" : {{String}},
       "[StartupScriptS3Path](#cfn-mwaa-environment-startupscripts3path)" : {{String}},
-      "[Tags](#cfn-mwaa-environment-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
+      "[Tags](#cfn-mwaa-environment-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
       "[WebserverAccessMode](#cfn-mwaa-environment-webserveraccessmode)" : {{String}},
       "[WeeklyMaintenanceWindowStart](#cfn-mwaa-environment-weeklymaintenancewindowstart)" : {{String}},
       "[WorkerReplacementStrategy](#cfn-mwaa-environment-workerreplacementstrategy)" : {{String}}
@@ -82,7 +82,7 @@ Properties:
   [StartupScriptS3ObjectVersion](#cfn-mwaa-environment-startupscripts3objectversion): {{String}}
   [StartupScriptS3Path](#cfn-mwaa-environment-startupscripts3path): {{String}}
   [Tags](#cfn-mwaa-environment-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
   [WebserverAccessMode](#cfn-mwaa-environment-webserveraccessmode): {{String}}
   [WeeklyMaintenanceWindowStart](#cfn-mwaa-environment-weeklymaintenancewindowstart): {{String}}
   [WorkerReplacementStrategy](#cfn-mwaa-environment-workerreplacementstrategy): {{String}}
@@ -268,7 +268,7 @@ The relative path to the startup shell script in your Amazon S3 bucket. For exam
 The key-value tag pairs associated to your environment. For example, `"Environment": "Staging"`. To learn more, see [Tagging](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html).
 If you specify new tags for an existing environment, the update requires service interruption before taking effect.
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `WebserverAccessMode`  <a name="cfn-mwaa-environment-webserveraccessmode"></a>
@@ -307,7 +307,7 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-mwaa-environment-return-values-fn--getatt-fn--getatt"></a>

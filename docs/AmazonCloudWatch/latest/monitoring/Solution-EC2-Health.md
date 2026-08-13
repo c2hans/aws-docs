@@ -43,7 +43,7 @@ The solution delivers EC2 server monitoring using the CloudWatch Agent, providin
 
 Below are the key advantages of the solution:
 + Automates metric collection for EC2 instances eliminating manual instrumentation.
-+ Provides a pre-configured, consolidated CloudWatch dashboard for EC2 instance metrics. The dashboard will automatically handle metrics from new EC2 instances configured using the solution, even if those metrics don't exist when you first create the dashboard. It also allows you to observe EC2 instances managed via Auto Scaling groups.
++ Provides a pre-configured, consolidated CloudWatch dashboard for EC2 instance metrics. The dashboard will automatically handle metrics from new EC2 instances configured using the solution, even if those metrics don't exist when you first create the dashboard. It also allows you to observe EC2 instances managed through Auto Scaling groups.
 
 The following image is an example of the dashboard for this solution.
 
@@ -94,7 +94,7 @@ The metrics collected by the agent are defined in the agent configuration. The s
 The steps for deploying the solution are described later in [Deploy the agent for your solution](#Solution-EC2-Health-Deploy). The following information is intended to help you understand how to customize the agent configuration for your environment.
 
 **Note**
-If an EC2 instance is not part of an Auto Scaling group, the CloudWatch agent drops the `AutoScalingGroupName` dimension entirely. This behavior helps to prevent dimension names with null/empty values. Each metric widget included in the solution dashboard searches for metrics which include and exclude the `AutoScalingGroup` dimension. This helps to ensure that all EC2 instances where the solution is applied are supported by the same dashboard.
+If an EC2 instance is not part of an Auto Scaling group, the CloudWatch agent drops the `AutoScalingGroupName` dimension entirely. This behavior helps to prevent dimension names with null/empty values. Each metric widget included in the solution dashboard searches for metrics which include and exclude the `AutoScalingGroup` dimension. This helps to make sure that all EC2 instances where the solution is applied are supported by the same dashboard.
 
 If you wish to make any modifications to the agent configuration, you must apply the same changes to the solution's accompanying dashboard. For example, if you decide to omit the ImageId dimension, the same dimension must be removed from the metric search expression used in the dashboard widgets.
 
@@ -172,12 +172,12 @@ If you are already running the CloudWatch agent on the EC2 hosts and managing th
 Using Systems Manager to deploy the following CloudWatch agent configurations will replace or overwrite any existing CloudWatch agent configuration on your EC2 instances. You can modify this configuration to suit your unique environment or use case. The metrics defined in configuration are the minimum required for the dashboard provided the solution.
 
 The deployment process includes the following steps:
-+ Step 1: Ensure that the target EC2 instances have the required IAM permissions.
++ Step 1: Make sure that the target EC2 instances have the required IAM permissions.
 + Step 2: Store the recommended agent configuration file in the Systems Manager Parameter Store.
 + Step 3: Install the CloudWatch agent on one or more EC2 instances using an CloudFormation stack.
 + Step 4: Verify the agent setup is configured properly.
 
-### Step 1: Ensure the target EC2 instances have the required IAM permissions
+### Step 1: Make sure the target EC2 instances have the required IAM permissions
 <a name="Solution-EC2-Health-Deploy-Step1"></a>
 
 You must grant permission for Systems Manager to install and configure the CloudWatch agent. You must also grant permission for the CloudWatch agent to publish telemetry from your EC2 instance to CloudWatch. Make sure that the IAM role attached to the instance has the **CloudWatchAgentServerPolicy** and **AmazonSSMManagedInstanceCore** IAM policies attached.
@@ -255,7 +255,7 @@ If you want to immediately apply changes to this Systems Manager parameter, you 
 <a name="Solution-EC2-Health-Deploy-Step4"></a>
 
 You can verify whether the CloudWatch agent is installed by following the steps in [Verify that the CloudWatch agent is running](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/troubleshooting-CloudWatch-Agent.html#CloudWatch-Agent-troubleshooting-verify-running). If the CloudWatch agent is not installed and running, make sure you have set up everything correctly.
-+ Be sure you have attached a role with correct permissions for the EC2 instance as described in [Step 1: Ensure the target EC2 instances have the required IAM permissions](#Solution-EC2-Health-Deploy-Step1).
++ Be sure you have attached a role with correct permissions for the EC2 instance as described in [Step 1: Make sure the target EC2 instances have the required IAM permissions](#Solution-EC2-Health-Deploy-Step1).
 + Be sure you have correctly configured the JSON for the Systems Manager parameter. Follow the steps in [Troubleshooting installation of the CloudWatch agent with CloudFormation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent-New-Instances-CloudFormation.html#CloudWatch-Agent-CloudFormation-troubleshooting).
 
 **To verify that EC2 health metrics are being published to CloudWatch**
@@ -284,7 +284,7 @@ By using the CloudWatch console to create a dashboard, you can preview the dashb
 The dashboard created with CloudFormation in this solution displays metrics from the Region where the solution is deployed. Be sure to create the CloudFormation stack in the Region where your EC2 metrics are published.
 If you've specified a custom namespace other than `CWAgent` in the CloudWatch agent configuration, you'll have to change the CloudFormation template for the dashboard to replace `CWAgent` with the customized namespace you are using.
 
-**To create the dashboard via CloudWatch Console**
+**To create the dashboard through CloudWatch Console**
 
 1. Open the CloudWatch Console **Create Dashboard** using this link: [ https://console.aws.amazon.com/cloudwatch/home?\#dashboards?dashboardTemplate=Ec2LinuxMacOsHealth&referrer=os-catalog ](https://console.aws.amazon.com/cloudwatch/home?#dashboards?dashboardTemplate=Ec2LinuxMacOsHealth&referrer=os-catalog).
 
@@ -296,7 +296,7 @@ If you've specified a custom namespace other than `CWAgent` in the CloudWatch ag
 
 1. Preview the dashboard and choose **Save** to create the dashboard.
 
-**To create the dashboard via CloudFormation**
+**To create the dashboard through CloudFormation**
 
 1. Open the CloudFormation **Quick create stack** wizard using this link: [ https://console.aws.amazon.com/cloudformation/home?\#/stacks/quickcreate?templateURL=https://aws-observability-solutions-prod-us-east-1.s3.us-east-1.amazonaws.com/EC2\_Health/CloudWatch/CFN/v1.0.0/dashboard-template-linux-macos-1.0.0.json ](https://console.aws.amazon.com/cloudformation/home?#/stacks/quickcreate?templateURL=https://aws-observability-solutions-prod-us-east-1.s3.us-east-1.amazonaws.com/EC2_Health/CloudWatch/CFN/v1.0.0/dashboard-template-linux-macos-1.0.0.json).
 

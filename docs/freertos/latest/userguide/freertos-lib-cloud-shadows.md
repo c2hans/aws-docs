@@ -26,6 +26,6 @@ This library can be freely used and is distributed under the [MIT open source li
 </thead>
 <tbody>
   <tr><td>shadow.c</td><td>1.2K</td><td>0.9K</td></tr>
-  <tr><td>Total estimates</td><td>1.2K</td><td>0.9K</td></tr>
+  <tr><td><b>Total estimates</b></td><td><b>1.2K</b></td><td><b>0.9K</b></td></tr>
 </tbody>
 </table>

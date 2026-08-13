@@ -193,7 +193,7 @@ For issues you may encounter during restore jobs of continuous backups (recovery
 
 Each action within the Backup console has a corresponding API call.
 
-To programmatically configure and manage AWS Backup and its resources, use the API call [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartBackupJob.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartBackupJob.html) to backup an SAP HANA database on an EC2 instance.
+To programmatically configure and manage AWS Backup and its resources, use the API call [`StartBackupJob`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartBackupJob.html) to backup an SAP HANA database on an EC2 instance.
 
 Use `start-backup-job` as the CLI command.
 

@@ -85,6 +85,6 @@ or
 aws rds describe-db-instance-automated-backups --dbi-resource-id {{DbiResourceId}}
 ```
 
-To describe the retained automated backups for your existing DB instances using the RDS API, call the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstanceAutomatedBackups.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstanceAutomatedBackups.html) action with one of the following parameters:
+To describe the retained automated backups for your existing DB instances using the RDS API, call the [`DescribeDBInstanceAutomatedBackups`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstanceAutomatedBackups.html) action with one of the following parameters:
 + `DBInstanceIdentifier`
 + `DbiResourceId`

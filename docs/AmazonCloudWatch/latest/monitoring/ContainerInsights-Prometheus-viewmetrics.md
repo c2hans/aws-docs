@@ -33,7 +33,7 @@ Container Insights also provides custom dashboards for each of the workloads tha
 
    In the other drop-down box, choose a cluster to view
 
-We have also provided custom dashboards for NGINX, App Mesh, Memcached, HAProxy, and Java/JMX.
+AWS also provides custom dashboards for NGINX, App Mesh, Memcached, HAProxy, and Java/JMX.
 
 **To use a custom dashboard that Amazon has provided**
 

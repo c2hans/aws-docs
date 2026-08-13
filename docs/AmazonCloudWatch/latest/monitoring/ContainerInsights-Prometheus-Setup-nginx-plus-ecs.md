@@ -274,7 +274,7 @@ This task definition enables the collection and export of NGINX Plus Prometheus 
 ### Configure the CloudWatch agent to scrape NGINX Plus Prometheus metrics
 <a name="ContainerInsights-Prometheus-nginx-plus-ecs-setup-agent"></a>
 
-The final step is to configure the CloudWatch agent to scrape the NGINX metrics. In this example, the CloudWatch agent discovers the task via the service name pattern, and the port 9113, where the exporter exposes the prometheus metrics for NGINX. With the task discovered and the metrics available, the CloudWatch agent begins posting the collected metrics to the log stream **nginx-prometheus-exporter**.
+The final step is to configure the CloudWatch agent to scrape the NGINX metrics. In this example, the CloudWatch agent discovers the task through the service name pattern, and the port 9113, where the exporter exposes the prometheus metrics for NGINX. With the task discovered and the metrics available, the CloudWatch agent begins posting the collected metrics to the log stream **nginx-prometheus-exporter**.
 
 **To configure the CloudWatch agent to scrape the NGINX metrics**
 

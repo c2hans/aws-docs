@@ -21,7 +21,7 @@ After a version is created, it can be helpful to provide updated information to 
 
 1. Open the AWS Marketplace Management Portal at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home), and then sign in to your seller account.
 
-1. Go to the [https://aws.amazon.com/marketplace/management/products/server](https://aws.amazon.com/marketplace/management/products/server) page, on the **Server products** tab, then select the product that you want to modify.
+1. Go to the [**Current server product**](https://aws.amazon.com/marketplace/management/products/server) page, on the **Server products** tab, then select the product that you want to modify.
 
 1. From the **Request changes** dropdown, choose **Update version information**.
 
@@ -53,7 +53,7 @@ For information about creating an AMI for AWS Marketplace, see [Best practices f
 
 1. Open the AWS Marketplace Management Portal at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home), and then sign in to your seller account.
 
-1. Go to the [https://aws.amazon.com/marketplace/management/products/server](https://aws.amazon.com/marketplace/management/products/server) page, on the **Current server product** tab, then select the product that you want to modify.
+1. Go to the [**Server products**](https://aws.amazon.com/marketplace/management/products/server) page, on the **Current server product** tab, then select the product that you want to modify.
 
 1. From the **Request changes** dropdown, choose **Add new version**. The **Add a new version** form appears, populated with the information from your most recent version.
 **Note**
@@ -101,7 +101,7 @@ When adding new AMI versions, AFI IDs can be configured if you select the AMI (s
 
 1. Verify that the request appears on the **Requests** tab with the **Under review** status. If there are errors to fix, the page displays the errors in a table at the top of the page, and the specific fields that need to be updated display in red.
 
-You can check the status of your request at any time from the **Requests** tab of the [https://aws.amazon.com/marketplace/management/products/server](https://aws.amazon.com/marketplace/management/products/server) page. The new version will be reviewed and, if successful, published as a new public version of your product. If there is an issue, the status might be **Action required**. Select the request to see details, including any issues.
+You can check the status of your request at any time from the **Requests** tab of the [**Server products**](https://aws.amazon.com/marketplace/management/products/server) page. The new version will be reviewed and, if successful, published as a new public version of your product. If there is an issue, the status might be **Action required**. Select the request to see details, including any issues.
 
 If your request is successful, your existing users receive the following email message. The message notifies them that the new version is available, links to the version's release notes, and suggests that they upgrade to the latest version. As the AWS account root user, you also receive a copy of the email message in the email account that's associated with your AWS account.
 
@@ -142,7 +142,7 @@ All subscribers can use the current version regardless of the restriction status
 
 1. Open the AWS Marketplace Management Portal at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home), and then sign in to your seller account.
 
-1. Go to the [https://aws.amazon.com/marketplace/management/products/server](https://aws.amazon.com/marketplace/management/products/server) page, on the **Current server product** tab, then select the product that you want to modify.
+1. Go to the [**Server products**](https://aws.amazon.com/marketplace/management/products/server) page, on the **Current server product** tab, then select the product that you want to modify.
 
 1. From the **Request changes** dropdown, choose **Restrict version**.
 
@@ -155,7 +155,7 @@ All subscribers can use the current version regardless of the restriction status
 **Note**
 You can't restrict all versions of a product. If you try to restrict the last remaining public version of a product, you will receive an error. To completely remove a product, see [Removing a product from AWS Marketplace](removing-products-from-aws-marketplace.md).
 
-You can check the status of your request at any time from the **Requests** tab of the [https://aws.amazon.com/marketplace/management/products/server](https://aws.amazon.com/marketplace/management/products/server) page. For more information, see [Get the status of a change request](single-ami-create-change-request.md#single-ami-getting-change-request-status).
+You can check the status of your request at any time from the **Requests** tab of the [**Server products**](https://aws.amazon.com/marketplace/management/products/server) page. For more information, see [Get the status of a change request](single-ami-create-change-request.md#single-ami-getting-change-request-status).
 
 **Note**
 Restricting a version can take up to 3 days to complete.

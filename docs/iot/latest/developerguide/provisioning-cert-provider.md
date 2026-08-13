@@ -318,4 +318,4 @@ The following shows an example output for this command:
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com//iot/latest/apireference/API_ListCertificateProviders.html](https://docs.aws.amazon.com//iot/latest/apireference/API_ListCertificateProviders.html) from the *AWS IoT* *API Reference*.
+For more information, see [`ListCertificateProvider`](https://docs.aws.amazon.com//iot/latest/apireference/API_ListCertificateProviders.html) from the *AWS IoT* *API Reference*.

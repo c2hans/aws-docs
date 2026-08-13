@@ -26,7 +26,7 @@ You can configure multiple receivers in a single collector, allowing you to coll
 ## Getting started
 <a name="CloudWatch-OTLPSimplesetupGettingStarted"></a>
 
-Prerequisite – If using the OTLP endpoint for tracing, ensure that Transaction Search is enabled.
+Prerequisite – If using the OTLP endpoint for tracing, make sure that Transaction Search is enabled.
 
 Steps:
 
@@ -70,7 +70,7 @@ Steps:
 
    1. Choose **Next**.
 
-   1. On the **Review and create** page, ensure that you are satisfied with the user name and that the **CloudWatchAgentServerPolicy** policy is under the **Permissions summary**.
+   1. On the **Review and create** page, make sure that you are satisfied with the user name and that the **CloudWatchAgentServerPolicy** policy is under the **Permissions summary**.
 
    1. Choose **Create user**.
 

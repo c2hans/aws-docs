@@ -95,6 +95,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   DeleteCapacityProviderSession  **
+  - **SDK client:** bedrock-agentcore
+  - **IAM action:**  [bedrock-agentcore:DeleteCapacityProviderSession](#list_bedrock-agentcore-action-DeleteCapacityProviderSession)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   DeleteEvent  **
   - **SDK client:** bedrock-agentcore
   - **IAM action:**  [bedrock-agentcore:DeleteEvent](#list_bedrock-agentcore-action-DeleteEvent)
@@ -472,10 +479,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   BatchPutGatewayRateLimits  **
+  - **SDK client:** bedrock-agentcore-control
+  - **IAM action:**  [bedrock-agentcore:BatchPutGatewayRateLimits](#list_bedrock-agentcore-action-BatchPutGatewayRateLimits)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   CreateAgentRuntime  **
   - **SDK client:** bedrock-agentcore-control
   - **IAM action:**  [bedrock-agentcore:CreateAgentRuntime](#list_bedrock-agentcore-action-CreateAgentRuntime)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [bedrock-agentcore:CreateAgentRuntimeEndpoint](#list_bedrock-agentcore-action-CreateAgentRuntimeEndpoint)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [bedrock-agentcore:PassCapacityProvider](#list_bedrock-agentcore-action-PassCapacityProvider)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [bedrock-agentcore:TagResource](#list_bedrock-agentcore-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** bedrock-agentcore.amazonaws.com / **Access level:** Write
 
@@ -499,6 +514,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **SDK client:** bedrock-agentcore-control
   - **IAM action:**  [bedrock-agentcore:CreateBrowserProfile](#list_bedrock-agentcore-action-CreateBrowserProfile)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [bedrock-agentcore:TagResource](#list_bedrock-agentcore-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateCapacityProvider  **
+  - **SDK client:** bedrock-agentcore-control
+  - **IAM action:**  [bedrock-agentcore:CreateCapacityProvider](#list_bedrock-agentcore-action-CreateCapacityProvider)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [bedrock-agentcore:TagResource](#list_bedrock-agentcore-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** bedrock-agentcore.amazonaws.com, ec2.amazonaws.com / **Access level:** Write
 
 - **   CreateCodeInterpreter  **
   - **SDK client:** bedrock-agentcore-control
@@ -535,6 +556,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [bedrock-agentcore:TagResource](#list_bedrock-agentcore-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** bedrock-agentcore.amazonaws.com / **Access level:** Write
 
+- **   CreateGatewayRateLimit  **
+  - **SDK client:** bedrock-agentcore-control
+  - **IAM action:**  [bedrock-agentcore:CreateGatewayRateLimit](#list_bedrock-agentcore-action-CreateGatewayRateLimit)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   CreateGatewayRule  **
   - **SDK client:** bedrock-agentcore-control
   - **IAM action:**  [bedrock-agentcore:CreateGatewayRule](#list_bedrock-agentcore-action-CreateGatewayRule)
@@ -551,6 +579,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **SDK client:** bedrock-agentcore-control
   - **IAM action:**  [bedrock-agentcore:CreateAgentRuntime](#list_bedrock-agentcore-action-CreateAgentRuntime)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [bedrock-agentcore:CreateHarness](#list_bedrock-agentcore-action-CreateHarness)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [bedrock-agentcore:CreateMemory](#list_bedrock-agentcore-action-CreateMemory)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [bedrock-agentcore:GetMemory](#list_bedrock-agentcore-action-GetMemory)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [bedrock-agentcore:TagResource](#list_bedrock-agentcore-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** bedrock-agentcore.amazonaws.com / **Access level:** Write
@@ -659,6 +688,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   DeleteCapacityProvider  **
+  - **SDK client:** bedrock-agentcore-control
+  - **IAM action:**  [bedrock-agentcore:DeleteCapacityProvider](#list_bedrock-agentcore-action-DeleteCapacityProvider)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   DeleteCodeInterpreter  **
   - **SDK client:** bedrock-agentcore-control
   - **IAM action:**  [bedrock-agentcore:DeleteCodeInterpreter](#list_bedrock-agentcore-action-DeleteCodeInterpreter)
@@ -697,6 +733,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   DeleteGateway  **
   - **SDK client:** bedrock-agentcore-control
   - **IAM action:**  [bedrock-agentcore:DeleteGateway](#list_bedrock-agentcore-action-DeleteGateway)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteGatewayRateLimit  **
+  - **SDK client:** bedrock-agentcore-control
+  - **IAM action:**  [bedrock-agentcore:DeleteGatewayRateLimit](#list_bedrock-agentcore-action-DeleteGatewayRateLimit)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -846,6 +889,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   GetCapacityProvider  **
+  - **SDK client:** bedrock-agentcore-control
+  - **IAM action:**  [bedrock-agentcore:GetCapacityProvider](#list_bedrock-agentcore-action-GetCapacityProvider)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetCodeInterpreter  **
   - **SDK client:** bedrock-agentcore-control
   - **IAM action:**  [bedrock-agentcore:GetCodeInterpreter](#list_bedrock-agentcore-action-GetCodeInterpreter)
@@ -884,6 +934,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   GetGateway  **
   - **SDK client:** bedrock-agentcore-control
   - **IAM action:**  [bedrock-agentcore:GetGateway](#list_bedrock-agentcore-action-GetGateway)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetGatewayRateLimit  **
+  - **SDK client:** bedrock-agentcore-control
+  - **IAM action:**  [bedrock-agentcore:GetGatewayRateLimit](#list_bedrock-agentcore-action-GetGatewayRateLimit)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -1049,6 +1106,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   ListAgentRuntimeVersionsByCapacityProvider  **
+  - **SDK client:** bedrock-agentcore-control
+  - **IAM action:**  [bedrock-agentcore:ListAgentRuntimeVersionsByCapacityProvider](#list_bedrock-agentcore-action-ListAgentRuntimeVersionsByCapacityProvider)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   ListAgentRuntimes  **
   - **SDK client:** bedrock-agentcore-control
   - **IAM action:**  [bedrock-agentcore:ListAgentRuntimes](#list_bedrock-agentcore-action-ListAgentRuntimes)
@@ -1073,6 +1137,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   ListBrowsers  **
   - **SDK client:** bedrock-agentcore-control
   - **IAM action:**  [bedrock-agentcore:ListBrowsers](#list_bedrock-agentcore-action-ListBrowsers)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListCapacityProviders  **
+  - **SDK client:** bedrock-agentcore-control
+  - **IAM action:**  [bedrock-agentcore:ListCapacityProviders](#list_bedrock-agentcore-action-ListCapacityProviders)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
@@ -1122,6 +1193,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   ListEvaluators  **
   - **SDK client:** bedrock-agentcore-control
   - **IAM action:**  [bedrock-agentcore:ListEvaluators](#list_bedrock-agentcore-action-ListEvaluators)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListGatewayRateLimits  **
+  - **SDK client:** bedrock-agentcore-control
+  - **IAM action:**  [bedrock-agentcore:ListGatewayRateLimits](#list_bedrock-agentcore-action-ListGatewayRateLimits)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
@@ -1338,6 +1416,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   UpdateAgentRuntime  **
   - **SDK client:** bedrock-agentcore-control
+  - **IAM action:**  [bedrock-agentcore:PassCapacityProvider](#list_bedrock-agentcore-action-PassCapacityProvider)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [bedrock-agentcore:UpdateAgentRuntime](#list_bedrock-agentcore-action-UpdateAgentRuntime)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** bedrock-agentcore.amazonaws.com / **Access level:** Write
 
@@ -1351,6 +1430,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   UpdateApiKeyCredentialProvider  **
   - **SDK client:** bedrock-agentcore-control
   - **IAM action:**  [bedrock-agentcore:UpdateApiKeyCredentialProvider](#list_bedrock-agentcore-action-UpdateApiKeyCredentialProvider)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateCapacityProvider  **
+  - **SDK client:** bedrock-agentcore-control
+  - **IAM action:**  [bedrock-agentcore:UpdateCapacityProvider](#list_bedrock-agentcore-action-UpdateCapacityProvider)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -1387,6 +1473,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **SDK client:** bedrock-agentcore-control
   - **IAM action:**  [bedrock-agentcore:UpdateGateway](#list_bedrock-agentcore-action-UpdateGateway)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** bedrock-agentcore.amazonaws.com / **Access level:** Write
+
+- **   UpdateGatewayRateLimit  **
+  - **SDK client:** bedrock-agentcore-control
+  - **IAM action:**  [bedrock-agentcore:UpdateGatewayRateLimit](#list_bedrock-agentcore-action-UpdateGatewayRateLimit)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   UpdateGatewayRule  **
   - **SDK client:** bedrock-agentcore-control
@@ -1516,6 +1609,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [BatchPutGatewayRateLimits](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_BatchPutGatewayRateLimits.html)  **
+  - **Description:** Grants permission to batch put rate limits on a gateway
+  - **Resource types (\*required):** [gateway\*](#list_bedrock-agentcore-resource-gateway)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [BatchUpdateMemoryRecords](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_BatchUpdateMemoryRecords.html)  **
   - **Description:** Grants permission to update one or more memory records
   - **Resource types (\*required):** [memory\*](#list_bedrock-agentcore-resource-memory)
@@ -1578,6 +1677,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-agentcore-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-agentcore-aws_TagKeys)
   - **Access level:** Write
 
+- **   [CreateCapacityProvider](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_CreateCapacityProvider.html)  **
+  - **Description:** Grants permission to create a new capacity provider
+  - **Resource types (\*required):**
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-agentcore-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-agentcore-aws_TagKeys)
+  - **Access level:** Write
+
 - **   [CreateCodeInterpreter](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_CreateCodeInterpreter.html)  **
   - **Description:** Grants permission to create a new custom code interpreter
   - **Resource types (\*required):**
@@ -1618,6 +1723,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to create a new gateway
   - **Resource types (\*required):**
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-agentcore-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-agentcore-aws_TagKeys)
+  - **Access level:** Write
+
+- **   [CreateGatewayRateLimit](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_CreateGatewayRateLimit.html)  **
+  - **Description:** Grants permission to create a rate limit on a gateway
+  - **Resource types (\*required):** [gateway\*](#list_bedrock-agentcore-resource-gateway)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [CreateGatewayRule](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_CreateGatewayRule.html)  **
@@ -1764,6 +1875,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [DeleteCapacityProvider](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_DeleteCapacityProvider.html)  **
+  - **Description:** Grants permission to delete a capacity provider
+  - **Resource types (\*required):** [capacity-provider\*](#list_bedrock-agentcore-resource-capacity-provider)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [DeleteCapacityProviderSession](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_DeleteCapacityProviderSession.html)  **
+  - **Description:** Grants permission to delete a capacity provider session
+  - **Resource types (\*required):** [capacity-provider\*](#list_bedrock-agentcore-resource-capacity-provider)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [DeleteCodeInterpreter](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_DeleteCodeInterpreter.html)  **
   - **Description:** Grants permission to delete a custom code interpreter
   - **Resource types (\*required):** [code-interpreter-custom\*](#list_bedrock-agentcore-resource-code-interpreter-custom)
@@ -1802,6 +1925,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [DeleteGateway](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_DeleteGateway.html)  **
   - **Description:** Grants permission to delete an existing gateway
+  - **Resource types (\*required):** [gateway\*](#list_bedrock-agentcore-resource-gateway)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [DeleteGatewayRateLimit](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_DeleteGatewayRateLimit.html)  **
+  - **Description:** Grants permission to delete a rate limit on a gateway
   - **Resource types (\*required):** [gateway\*](#list_bedrock-agentcore-resource-gateway)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
   - **Access level:** Write
@@ -1987,6 +2116,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [browser-custom\*](#list_bedrock-agentcore-resource-browser-custom) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [GetCapacityProvider](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_GetCapacityProvider.html)  **
+  - **Description:** Grants permission to get details of a capacity provider
+  - **Resource types (\*required):** [capacity-provider\*](#list_bedrock-agentcore-resource-capacity-provider)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
 - **   [GetCodeInterpreter](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_GetCodeInterpreter.html)  **
   - **Description:** Grants permission to get details of a code interpreter
   - **Resource types (\*required):** [code-interpreter-custom\*](#list_bedrock-agentcore-resource-code-interpreter-custom)
@@ -2031,6 +2166,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [GetGateway](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_GetGateway.html)  **
   - **Description:** Grants permission to retrieve an existing gateway
+  - **Resource types (\*required):** [gateway\*](#list_bedrock-agentcore-resource-gateway)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetGatewayRateLimit](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_GetGatewayRateLimit.html)  **
+  - **Description:** Grants permission to retrieve a rate limit on a gateway
   - **Resource types (\*required):** [gateway\*](#list_bedrock-agentcore-resource-gateway)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
   - **Access level:** Read
@@ -2312,6 +2453,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** List
 
+- **   [ListAgentRuntimeVersionsByCapacityProvider](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_ListAgentRuntimeVersionsByCapacityProvider.html)  **
+  - **Description:** Grants permission to list agent runtime versions by capacity provider
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
 - **   [ListAgentRuntimes](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_ListAgentRuntimes.html)  **
   - **Description:** Grants permission to list agent runtimes
   - **Resource types (\*required):**
@@ -2344,6 +2491,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ListBrowsers](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_ListBrowsers.html)  **
   - **Description:** Grants permission to list browsers
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
+- **   [ListCapacityProviders](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_ListCapacityProviders.html)  **
+  - **Description:** Grants permission to list capacity providers
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** List
@@ -2400,6 +2553,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to list events
   - **Resource types (\*required):** [memory\*](#list_bedrock-agentcore-resource-memory)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)<br />[bedrock-agentcore:actorId](#list_bedrock-agentcore-bedrock-agentcore_actorId)<br />[bedrock-agentcore:sessionId](#list_bedrock-agentcore-bedrock-agentcore_sessionId)
+  - **Access level:** List
+
+- **   [ListGatewayRateLimits](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_ListGatewayRateLimits.html)  **
+  - **Description:** Grants permission to list rate limits on a gateway
+  - **Resource types (\*required):** [gateway\*](#list_bedrock-agentcore-resource-gateway)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
 - **   [ListGatewayRules](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_ListGatewayRules.html)  **
@@ -2569,6 +2728,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [apikeycredentialprovider](#list_bedrock-agentcore-resource-apikeycredentialprovider) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [browser-custom](#list_bedrock-agentcore-resource-browser-custom) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [browser-profile](#list_bedrock-agentcore-resource-browser-profile) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [capacity-provider](#list_bedrock-agentcore-resource-capacity-provider) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [code-interpreter-custom](#list_bedrock-agentcore-resource-code-interpreter-custom) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [evaluator](#list_bedrock-agentcore-resource-evaluator) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [gateway](#list_bedrock-agentcore-resource-gateway) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
@@ -2702,6 +2862,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [apikeycredentialprovider](#list_bedrock-agentcore-resource-apikeycredentialprovider) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-agentcore-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-agentcore-aws_TagKeys)
   - **Resource types (\*required):** [browser-custom](#list_bedrock-agentcore-resource-browser-custom) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-agentcore-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-agentcore-aws_TagKeys)
   - **Resource types (\*required):** [browser-profile](#list_bedrock-agentcore-resource-browser-profile) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-agentcore-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-agentcore-aws_TagKeys)
+  - **Resource types (\*required):** [capacity-provider](#list_bedrock-agentcore-resource-capacity-provider) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-agentcore-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-agentcore-aws_TagKeys)
   - **Resource types (\*required):** [code-interpreter-custom](#list_bedrock-agentcore-resource-code-interpreter-custom) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-agentcore-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-agentcore-aws_TagKeys)
   - **Resource types (\*required):** [evaluator](#list_bedrock-agentcore-resource-evaluator) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-agentcore-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-agentcore-aws_TagKeys)
   - **Resource types (\*required):** [gateway](#list_bedrock-agentcore-resource-gateway) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-agentcore-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-agentcore-aws_TagKeys)
@@ -2724,6 +2885,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [apikeycredentialprovider](#list_bedrock-agentcore-resource-apikeycredentialprovider) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-agentcore-aws_TagKeys)
   - **Resource types (\*required):** [browser-custom](#list_bedrock-agentcore-resource-browser-custom) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-agentcore-aws_TagKeys)
   - **Resource types (\*required):** [browser-profile](#list_bedrock-agentcore-resource-browser-profile) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-agentcore-aws_TagKeys)
+  - **Resource types (\*required):** [capacity-provider](#list_bedrock-agentcore-resource-capacity-provider) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-agentcore-aws_TagKeys)
   - **Resource types (\*required):** [code-interpreter-custom](#list_bedrock-agentcore-resource-code-interpreter-custom) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-agentcore-aws_TagKeys)
   - **Resource types (\*required):** [evaluator](#list_bedrock-agentcore-resource-evaluator) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-agentcore-aws_TagKeys)
   - **Resource types (\*required):** [gateway](#list_bedrock-agentcore-resource-gateway) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-agentcore-aws_TagKeys)
@@ -2771,6 +2933,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [browser-custom\*](#list_bedrock-agentcore-resource-browser-custom) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [UpdateCapacityProvider](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_UpdateCapacityProvider.html)  **
+  - **Description:** Grants permission to update a capacity provider
+  - **Resource types (\*required):** [capacity-provider\*](#list_bedrock-agentcore-resource-capacity-provider)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [UpdateConfigurationBundle](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_UpdateConfigurationBundle.html)  **
   - **Description:** Grants permission to update a configuration bundle
   - **Resource types (\*required):** [configuration-bundle\*](#list_bedrock-agentcore-resource-configuration-bundle)
@@ -2797,6 +2965,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [UpdateGateway](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_UpdateGateway.html)  **
   - **Description:** Grants permission to update an existing gateway
+  - **Resource types (\*required):** [gateway\*](#list_bedrock-agentcore-resource-gateway)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [UpdateGatewayRateLimit](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_UpdateGatewayRateLimit.html)  **
+  - **Description:** Grants permission to update a rate limit on a gateway
   - **Resource types (\*required):** [gateway\*](#list_bedrock-agentcore-resource-gateway)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
   - **Access level:** Write
@@ -2970,6 +3144,18 @@ The following actions are defined by Amazon Bedrock Agentcore but are not direct
   - **Resource types (\*required):** [policy-engine\*](#list_bedrock-agentcore-resource-policy-engine) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
   - **Access level:** Permissions management, Write
 
+- **   [PassCapacityProvider](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/welcome.html)  **
+  - **Description:** Grants permission to pass a capacity provider to a runtime resource
+  - **Resource types (\*required):** [capacity-provider\*](#list_bedrock-agentcore-resource-capacity-provider)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [PutSystemLogEvents](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/welcome.html)  **
+  - **Description:** Grants permission to collect system logs from the runtime instances
+  - **Resource types (\*required):** [capacity-provider\*](#list_bedrock-agentcore-resource-capacity-provider)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)<br />[bedrock-agentcore:runtimeSessionId](#list_bedrock-agentcore-bedrock-agentcore_runtimeSessionId)
+  - **Access level:** Write
+
 - **   [SynchronizeGatewayTargets](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/welcome.html)  **
   - **Description:** Grants permission to enable search on gateways
   - **Resource types (\*required):** [gateway\*](#list_bedrock-agentcore-resource-gateway)
@@ -2991,6 +3177,7 @@ The following resource types are defined by this service and can be used in the 
 |  [browser](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/browser.html)  | arn:${Partition}:bedrock-agentcore:${Region}:aws:browser/${BrowserId} |   |
 |  [browser-custom](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/browser.html)  | arn:${Partition}:bedrock-agentcore:${Region}:${Account}:browser-custom/${BrowserId} | [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_) |
 |  [browser-profile](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/browserProfile.html)  | arn:${Partition}:bedrock-agentcore:${Region}:${Account}:browser-profile/${BrowserProfileId} | [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_) |
+|  [capacity-provider](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/capacityProvider.html)  | arn:${Partition}:bedrock-agentcore:${Region}:${Account}:capacity-provider/${CapacityProviderId} | [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_) |
 |  [code-interpreter](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/codeInterpreter.html)  | arn:${Partition}:bedrock-agentcore:${Region}:aws:code-interpreter/${CodeInterpreterId} |   |
 |  [code-interpreter-custom](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/codeInterpreter.html)  | arn:${Partition}:bedrock-agentcore:${Region}:${Account}:code-interpreter-custom/${CodeInterpreterId} | [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_) |
 |  [configuration-bundle](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/configurationBundle.html)  | arn:${Partition}:bedrock-agentcore:${Region}:${Account}:configuration-bundle/${ConfigurationBundleId} | [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_) |
@@ -3053,8 +3240,9 @@ Amazon Bedrock Agentcore defines the following condition keys that can be used i
 |   [bedrock-agentcore:RuntimeAuthorizerType](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-authorizer-type-condition-key.html)  | Filters access by the authorizer type configured for the AgentCore runtime | String |
 |   [bedrock-agentcore:actorId](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/#condition-keys-actorId)  | Filters access by Actor Id | String |
 |   [bedrock-agentcore:namespace](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/#condition-keys-namespace)  | Filters access by namespace | String |
+|   [bedrock-agentcore:runtimeSessionId](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/#condition-keys-runtimeSessionId)  | Filters access by Runtime Session Id | String |
 |   [bedrock-agentcore:securityGroups](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/security-vpc-condition.html)  | Filters access by the ID of security groups configured for an AgentCore resource | ArrayOfString |
-|   [bedrock-agentcore:sessionId](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/#condition-keys-sessionId)  | Filters access by Session Id | String |
+|   [bedrock-agentcore:sessionId](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/#condition-keys-sessionId)  | Filters access by Memory Session Id | String |
 |   [bedrock-agentcore:strategyId](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/#condition-keys-strategyId)  | Filters access by Memory Strategy Id | String |
 |   [bedrock-agentcore:subnets](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/security-vpc-condition.html)  | Filters access by the ID of subnets configured for an AgentCore resource | ArrayOfString |
 |   [bedrock-agentcore:userid](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/#condition-keys-userid)  | Filters access by the static user ID value passed in the request | String |

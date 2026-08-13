@@ -41,7 +41,7 @@ Choose your preferred method, and follow the steps to create a custom insight in
 
 **To create a custom insight (API)**
 
-1. To create a custom insight, use the [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_CreateInsight.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_CreateInsight.html) operation of the Security Hub CSPM API. If you use the AWS CLI, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/create-insight.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/create-insight.html) command.
+1. To create a custom insight, use the [CreateInsight](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_CreateInsight.html) operation of the Security Hub CSPM API. If you use the AWS CLI, run the [create-insight](https://docs.aws.amazon.com/cli/latest/reference/securityhub/create-insight.html) command.
 
 1. Populate the `Name` parameter with a name for your custom insight.
 

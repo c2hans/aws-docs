@@ -22,7 +22,7 @@ AppFabric supports receiving user information and audit logs from JumpCloud.
 <a name="jumpcloud-prerequisites"></a>
 
 To use AppFabric to transfer audit logs from JumpCloud to supported destinations, you must meet the following requirements:
-+ You must have an active paid JumpCloud subscription plan. For more information, see [https://jumpcloud.com/pricing](https://jumpcloud.com/pricing) on the JumpCloud website.
++ You must have an active paid JumpCloud subscription plan. For more information, see [Select a package that's right for you](https://jumpcloud.com/pricing) on the JumpCloud website.
 + You must have the "Admins with Billing" role.
 
 ### Rate limit considerations

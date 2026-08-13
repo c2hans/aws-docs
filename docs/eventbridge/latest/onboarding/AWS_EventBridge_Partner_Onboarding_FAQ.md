@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/onboarding/AWS_EventB
 
 1.  **How can customers create event buses in different Regions?**
 
-   EventBridge is a regional service and event buses must exist in the same Region as the partner event sources they are attached to. You should allow your customers to select which Region they want to create the event source in when they register their AWS account with you. You can call [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_CreatePartnerEventSource.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_CreatePartnerEventSource.html) in any Region regardless of where the call originates from. You can use SDK to specify the Region when you create a client.
+   EventBridge is a regional service and event buses must exist in the same Region as the partner event sources they are attached to. You should allow your customers to select which Region they want to create the event source in when they register their AWS account with you. You can call [`CreatePartnerEventSource`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_CreatePartnerEventSource.html) in any Region regardless of where the call originates from. You can use SDK to specify the Region when you create a client.
 
 1.  **What happens to events sent to a partner event source before the customer attaches an event bus?**
 

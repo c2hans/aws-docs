@@ -14,4 +14,4 @@ To learn more about AWS RAM, see the following resources:
 +  [AWS Resource Access Manager product page](http://aws.amazon.com/ram)
 +  [AWS Resource Access Manager User Guide](https://docs.aws.amazon.com/ram/latest/userguide/)
 
-This document was last published on August 6, 2026.
+This document was last published on August 13, 2026.

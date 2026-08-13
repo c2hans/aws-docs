@@ -41,10 +41,10 @@ You can manually specify the member accounts to invite to contribute their data 
 ------
 #### [ Detective API/AWS CLI ]
 
-You can use the Detective API or the AWS Command Line Interface to invite member accounts to contribute their data to a behavior graph. To get the ARN of your behavior graph to use in the request, use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html) operation.
+You can use the Detective API or the AWS Command Line Interface to invite member accounts to contribute their data to a behavior graph. To get the ARN of your behavior graph to use in the request, use the [`ListGraphs`](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html) operation.
 
 **To invite member accounts to a behavior graph (Detective API, AWS CLI)**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_CreateMembers.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_CreateMembers.html) operation. You must provide the graph ARN. For each account, specify the account identifier and the root user email address.
++ **Detective API:** Use the [`CreateMembers`](https://docs.aws.amazon.com/detective/latest/APIReference/API_CreateMembers.html) operation. You must provide the graph ARN. For each account, specify the account identifier and the root user email address.
 
   To not send invitation emails to the member accounts, set `DisableEmailNotification` to true. By default, `DisableEmailNotification` is false .
 

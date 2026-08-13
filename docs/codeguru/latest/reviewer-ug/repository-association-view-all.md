@@ -41,7 +41,7 @@ For information about using the AWS CLI with CodeGuru Reviewer, see the [CodeGur
    aws codeguru-reviewer list-repository-associations
    ```
 
-1. If successful, this command outputs one [https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociationSummary.html](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociationSummary.html) object for each of your associated repositories.
+1. If successful, this command outputs one [`RepositoryAssociationSummary`](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociationSummary.html) object for each of your associated repositories.
 
    ```
    {

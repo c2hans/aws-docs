@@ -14,6 +14,7 @@ The following example removes the stack tag with value Prod from a cluster:
 
 ```
 {
+   "ClusterId": "{{string}}",
    "ResourceId": "{{string}}",
    "TagKeys": [ "{{string}}" ]
 }
@@ -25,6 +26,12 @@ The following example removes the stack tag with value Prod from a cluster:
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [ClusterId](#API_RemoveTags_RequestSyntax) **   <a name="EMR-RemoveTags-request-ClusterId"></a>
+The ID of the cluster that scopes the tag operation. Required when the resource being untagged is a session-scoped resource.
+Type: String
+Length Constraints: Maximum length of 256.
+Required: No
 
  ** [ResourceId](#API_RemoveTags_RequestSyntax) **   <a name="EMR-RemoveTags-request-ResourceId"></a>
 The Amazon EMR resource identifier from which tags will be removed. For example, a cluster identifier or an Amazon EMR Studio ID.

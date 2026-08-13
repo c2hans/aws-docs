@@ -61,7 +61,7 @@ If your instance was created before **October 2018**, add the `connect:*` policy
 ## Step 3: Link your Apple Messages for Business ID to Connect Customer
 <a name="link-apple-messages-for-business"></a>
 
-In this step you create an Connect Customer support ticket to link your Apple Messages for Business ID to Connect Customer.
+In this step you create a Connect Customer support ticket to link your Apple Messages for Business ID to Connect Customer.
 
 1. Create a [special Support ticket](https://support.console.aws.amazon.com/support/home#/case/create?issueType=customer-service&serviceCode=service-chime-end-user&categoryCode=other) to link your Apple Messages for Business to Connect Customer.
 
@@ -135,7 +135,7 @@ Record a demo experience for review by Connect Customer and Apple Messages for B
 + **We encourage the use of satisfaction surveys:** Once you complete an interaction with a customer, you may want to provide them with a customer service satisfaction (CSAT) survey. For a better customer experience, provide the CSAT surveys after the experience and not after every FAQ. For more information, see [Satisfaction Surveys](https://register.apple.com/resources/messages/messaging-documentation/ux-design#satisfaction-surveys).
 + **Typing indicators:** When an agent, live or automated, starts typing, the typing indicator should be displayed, so the experience is consistent. The typing indicator should be displayed before any message type (text or interactive). For messages sent by bots, as well as messages in sequence, use only a 1-second typing indicators before each message. For more information, see [Typing Indicator Message](https://register.apple.com/resources/messages/msp-rest-api/common-specs#typingindicatormessage).
 
-After your experience review recording is created, you can once again create an Connect Customer support ticket to share. Feedback will be provided by Connect Customer and Apple Messages for Business before final approval.
+After your experience review recording is created, you can once again create a Connect Customer support ticket to share. Feedback will be provided by Connect Customer and Apple Messages for Business before final approval.
 
 1. Create a [special Support ticket](https://support.console.aws.amazon.com/support/home#/case/create?issueType=customer-service&serviceCode=service-chime-end-user&categoryCode=other) to share your experience review recording. If prompted, login using your AWS account.
 

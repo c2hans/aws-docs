@@ -134,7 +134,7 @@ The new value for Dedicated Log Volume appears on the **Configuration** tab of t
 ### CLI
 <a name="USER_PIOPS.modify-dlv.CLI"></a>
 
-To enable or disable DLV on an existing DB instance using Provisioned IOPS storage, use the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html). Set the following parameters:
+To enable or disable DLV on an existing DB instance using Provisioned IOPS storage, use the AWS CLI command [`modify-db-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html). Set the following parameters:
 + `--dedicated-log-volume` – Enables a dedicated log volume.
 
   Use `--no-dedicated-log-volume` (the default) to disable a dedicated log volume.
@@ -145,7 +145,7 @@ To enable or disable DLV on an existing DB instance using Provisioned IOPS stora
 ### RDS API
 <a name="USER_PIOPS.modify-dlv.API"></a>
 
-To enable or disable DLV on an existing DB instance using Provisioned IOPS storage, use the Amazon RDS API operation [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html). Set the following parameters:
+To enable or disable DLV on an existing DB instance using Provisioned IOPS storage, use the Amazon RDS API operation [`ModifyDBInstance`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html). Set the following parameters:
 + `DedicatedLogVolume` – Set this option to `true` to enable a dedicated log volume.
 
   Set this option to `false` to disable a dedicated log volume. This is the default value.

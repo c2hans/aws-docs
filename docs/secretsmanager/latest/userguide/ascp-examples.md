@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/ascp-exa
 <a name="ascp-auth-access-examples"></a>
 
 ### Example: IAM policy allowing Amazon EKS Pod Identity service (pods.eks.amazonaws.com) to assume the role and tag the session:
-<a name="w2aac19c17c18b5b3"></a>
+<a name="w2aac21c17c18b5b3"></a>
 
 ------
 #### [ JSON ]
@@ -42,7 +42,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/ascp-exa
 You use YAML to describe which secrets to mount in Amazon EKS using the ASCP. For examples, see [SecretProviderClass usage](#ascp-scenarios-secretproviderclass).
 
 ### SecretProviderClass YAML structure
-<a name="w2aac19c17c18c25b5"></a>
+<a name="w2aac21c17c18c25b5"></a>
 
 ```
 apiVersion: secrets-store.csi.x-k8s.io/v1
@@ -87,7 +87,7 @@ To prevent character substitution, enter the string `False`.
 **objects**
 A string containing a YAML declaration of the secrets to be mounted. We recommend using a YAML multi-line string or pipe (\|) character.
 **objectName**
-Required. Specifies the name of the secret or parameter to be fetched. For Secrets Manager this is the [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html#API_GetSecretValue_RequestParameters](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html#API_GetSecretValue_RequestParameters) parameter and can be either the friendly name or full ARN of the secret. For SSM Parameter Store, this is the [https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameter.html#API_GetParameter_RequestParameters](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameter.html#API_GetParameter_RequestParameters) of the parameter and can be either the name or full ARN of the parameter.
+Required. Specifies the name of the secret or parameter to be fetched. For Secrets Manager this is the [`SecretId`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html#API_GetSecretValue_RequestParameters) parameter and can be either the friendly name or full ARN of the secret. For SSM Parameter Store, this is the [`Name`](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameter.html#API_GetParameter_RequestParameters) of the parameter and can be either the name or full ARN of the parameter.
 **objectType**
 Required if you don't use a Secrets Manager ARN for `objectName`. Can be either `secretsmanager` or `ssmparameter`.
 **objectAlias**
@@ -117,7 +117,7 @@ The name or full ARN of the failover secret. If you use an ARN, the Region in th
 (Optional) The alias for the version. The default is the most recent version AWSCURRENT. For more information, see [Secret versions](whats-in-a-secret.md#term_version).
 
 ### Create a basic SecretProviderClass configuration to mount secrets in your Amazon EKS Pods.
-<a name="w2aac19c17c18c25c11"></a>
+<a name="w2aac21c17c18c25c11"></a>
 
 ------
 #### [ Pod Identity ]

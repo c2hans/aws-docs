@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/parallel-test
 # Use the `codebuild-tests-run` CLI command
 <a name="parallel-test-tests-run"></a>
 
-AWS CodeBuild provides CLI that will take test command and test file location as input. The CLI with these input will split the tests into number of shards as specified in the `parallelism` field based on test file names. The assignment of test files to shard is decided by the sharding strategy.
+AWS CodeBuild provides a CLI that will take a test command and test file location as input. The CLI with this input will split the tests into the number of shards as specified in the `parallelism` field based on test file names. The assignment of test files to shard is decided by the sharding strategy.
 
 ```
 codebuild-tests-run \

@@ -23,6 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[RoutingDomain](#cfn-bedrockagentcore-gatewaytarget-managedvpcresource-routingdomain)" : {{String}},
   "[SecurityGroupIds](#cfn-bedrockagentcore-gatewaytarget-managedvpcresource-securitygroupids)" : {{[ String, ... ]}},
   "[SubnetIds](#cfn-bedrockagentcore-gatewaytarget-managedvpcresource-subnetids)" : {{[ String, ... ]}},
+  "[Tags](#cfn-bedrockagentcore-gatewaytarget-managedvpcresource-tags)" : {{{{{Key}}: {{Value}}, ...}}},
   "[VpcIdentifier](#cfn-bedrockagentcore-gatewaytarget-managedvpcresource-vpcidentifier)" : {{String}}
 }
 ```
@@ -37,6 +38,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     - String}}
   [SubnetIds](#cfn-bedrockagentcore-gatewaytarget-managedvpcresource-subnetids): {{
     - String}}
+  [Tags](#cfn-bedrockagentcore-gatewaytarget-managedvpcresource-tags): {{
+    {{Key}}: {{Value}}}}
   [VpcIdentifier](#cfn-bedrockagentcore-gatewaytarget-managedvpcresource-vpcidentifier): {{String}}
 ```
 
@@ -70,7 +73,15 @@ The security group IDs to associate with the VPC Lattice resource gateway. If no
 The subnet IDs within the VPC where the VPC Lattice resource gateway is placed.
 *Required*: Yes
 *Type*: Array of String
-*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Tags`  <a name="cfn-bedrockagentcore-gatewaytarget-managedvpcresource-tags"></a>
+Tags to apply to the managed VPC Lattice resource gateway.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[a-zA-Z0-9\s._:/=+@-]{1,128}$`
+*Minimum*: `0`
+*Maximum*: `256`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `VpcIdentifier`  <a name="cfn-bedrockagentcore-gatewaytarget-managedvpcresource-vpcidentifier"></a>

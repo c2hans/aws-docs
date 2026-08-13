@@ -169,7 +169,7 @@ PROD:
 ### Complete example to publish and deploy a new version with an alias
 <a name="aws-resource-stepfunctions-statemachinealias--examples--Complete_example_to_publish_and_deploy_a_new_version_with_an_alias"></a>
 
-The following example publishes multiple versions of the same state machine with the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachineversion.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachineversion.html) resource. The example also creates an alias with the `AWS::StepFunctions::StateMachineAlias` resource and uses that alias to deploy a new state machine version.
+The following example publishes multiple versions of the same state machine with the [`AWS::StepFunctions::StateMachineVersion`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachineversion.html) resource. The example also creates an alias with the `AWS::StepFunctions::StateMachineAlias` resource and uses that alias to deploy a new state machine version.
 
 #### YAML
 <a name="aws-resource-stepfunctions-statemachinealias--examples--Complete_example_to_publish_and_deploy_a_new_version_with_an_alias--yaml"></a>
@@ -219,7 +219,7 @@ PROD:
 ### Publish and deploy a version that always points to the most recent state machine revision
 <a name="aws-resource-stepfunctions-statemachinealias--examples--Publish_and_deploy_a_version_that_always_points_to_the_most_recent_state_machine_revision"></a>
 
-The following example demonstrates the use of [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachineversion.html#cfn-stepfunctions-statemachineversion-statemachinerevisionid](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachineversion.html#cfn-stepfunctions-statemachineversion-statemachinerevisionid) property to return the value of revision ID for the state machine resource. CloudFormation automatically detects if this property's value is different from the value in previous stack and publishes a new version that always points to the most recent revision of your state machine. The example then creates an alias named PROD to deploy this new version.
+The following example demonstrates the use of [`StateMachineRevisionId`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachineversion.html#cfn-stepfunctions-statemachineversion-statemachinerevisionid) property to return the value of revision ID for the state machine resource. CloudFormation automatically detects if this property's value is different from the value in previous stack and publishes a new version that always points to the most recent revision of your state machine. The example then creates an alias named PROD to deploy this new version.
 
 #### YAML
 <a name="aws-resource-stepfunctions-statemachinealias--examples--Publish_and_deploy_a_version_that_always_points_to_the_most_recent_state_machine_revision--yaml"></a>

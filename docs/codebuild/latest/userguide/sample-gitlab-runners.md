@@ -8,11 +8,11 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-gitlab
 This tutorial shows you how to configure your CodeBuild projects to run GitLab CI/CD pipeline jobs. For more information about using GitLab or GitLab Self Managed with CodeBuild, see [Self-managed GitLab runners in AWS CodeBuild](gitlab-runner.md).<a name="sample-gitlab-runners-prerequisites"></a>
 
 To complete this tutorial, you must first:
-+ Connect with a OAuth app by using CodeConnections. Note that when connecting with an OAuth app, you must use the CodeBuild console to do so. For more instructions, see [GitLab access in CodeBuild](access-tokens-gitlab-overview.md).
++ Connect with an OAuth app by using CodeConnections. Note that when connecting with an OAuth app, you must use the CodeBuild console to do so. For more instructions, see [GitLab access in CodeBuild](access-tokens-gitlab-overview.md).
 + Connect CodeBuild to your GitLab account. To do so, you can add GitLab as a source provider in the console. For instructions, see [GitLab access in CodeBuild](access-tokens-gitlab-overview.md).
 **Note**
 This only needs to be done if you haven't connected to GitLab for your account.
-With this feature, CodeBuild needs additional permissions. such as `create_runner` and `manage_runner` from the GitLab OAuth app. If there are existing CodeConnections for a particular GitLab account, then it doesn't automatically request for permission updates. To do so, you can go to the CodeConnections console and create a dummy connection to the same GitLab account to trigger the reauthorization to get the additional prmissions. With this, all the existing connections can use the runner feature. Once complete, you can delete the dummy connection.
+With this feature, CodeBuild needs additional permissions, such as `create_runner` and `manage_runner` from the GitLab OAuth app. If there are existing CodeConnections for a particular GitLab account, then it doesn't automatically request for permission updates. To do so, you can go to the CodeConnections console and create a dummy connection to the same GitLab account to trigger the reauthorization to get the additional permissions. After completing this step, all existing connections can use the runner feature. Once complete, you can delete the dummy connection.
 
 ## Step 1: Create a CodeBuild project with a webhook
 <a name="sample-gitlab-runners-create-project"></a>
@@ -38,7 +38,7 @@ If you have not already created a connection to your provider, you'll have to cr
    +  In **Environment**:
      + Choose a supported **Environment image** and **Compute**. Note that you have the option to override the image and instance settings by using a label in your GitLab CI/CD pipeline YAML. For more information, see [Step 2: Create a .gitlab-ci.yml file in your repository](#sample-gitlab-runners-gitlab-ci).
    +  In **Buildspec**:
-     + Note that your buildspec will be ignored unless `buildspec-override:true` is added as a label. Instead, CodeBuild will override it to use commands that will setup the self-managed runner.
+     + Note that your buildspec will be ignored unless `buildspec-override:true` is added as a label. Instead, CodeBuild will override it to use commands that will set up the self-managed runner.
 
 1. Continue with the default values and then choose **Create build project**.
 
@@ -47,7 +47,7 @@ If you have not already created a connection to your provider, you'll have to cr
 ## Step 2: Create a .gitlab-ci.yml file in your repository
 <a name="sample-gitlab-runners-gitlab-ci"></a>
 
-In this step, you will create a `.gitlab-ci.yml` file in [https://gitlab.com/](https://gitlab.com/) to configure your build environment and use GitLab self-managed runners in CodeBuild. For more information, see [Use self-managed runners](https://docs.gitlab.com/runner/#use-self-managed-runners).
+In this step, you will create a `.gitlab-ci.yml` file in [`GitLab`](https://gitlab.com/) to configure your build environment and use GitLab self-managed runners in CodeBuild. For more information, see [Use self-managed runners](https://docs.gitlab.com/runner/#use-self-managed-runners).
 
 ### Update your GitLab CI/CD pipeline YAML
 <a name="sample-gitlab-runners-update-yaml.setup"></a>
@@ -60,7 +60,7 @@ Navigate to `https://gitlab.com/{{user-name}}/{{project-name}}/-/tree/{{branch-n
       - codebuild-{{<codebuild-project-name>}}-$CI_PROJECT_ID-$CI_PIPELINE_IID-$CI_JOB_NAME
   ```
 
-  `$CI_PROJECT_ID-$CI_PIPELINE_IID-$CI_JOB_NAME` is required to map the build to specific pipeline job runs and stop the build when the pipeline run is cancelled.
+  `$CI_PROJECT_ID-$CI_PIPELINE_IID-$CI_JOB_NAME` is required to map the build to specific pipeline job runs and stop the build when the pipeline run is canceled.
 **Note**
 Make sure that your {{<project-name>}} matches the name of the project that you created in CodeBuild. If it doesn't match, CodeBuild will not process the webhook and the GitLab CI/CD pipeline might hang.
 
@@ -139,7 +139,7 @@ Make sure that your {{<project-name>}} matches the name of the project that you 
 
 After you commit your changes to `.gitlab-ci.yml`, a GitLab pipeline will be triggered and the `build-job` will send a webhook notification that will start your build in CodeBuild.
 
-### Run buildspec commands the INSTALL, PRE\_BUILD, and POST\_BUILD phases
+### Run buildspec commands in the INSTALL, PRE\_BUILD, and POST\_BUILD phases
 <a name="sample-gitlab-runners-update-yaml.buildspec"></a>
 
 By default, CodeBuild ignores any buildspec commands when running a self-managed GitLab build. To run buildspec commands during the build, `buildspec-override:true` can be added as a suffix to `tags`:
@@ -155,7 +155,7 @@ By using this command, CodeBuild will create a folder called `gitlab-runner` in 
 There are several limitations when using a buildspec override in a self-managed GitLab build:
 + CodeBuild will not run buildspec commands during the `BUILD` phase, as the self-managed runner runs in the `BUILD` phase.
 + CodeBuild will not download any primary or secondary sources during the `DOWNLOAD_SOURCE` phase. If you have a buildspec file configured, only that file will be downloaded from the project's primary source.
-+ If a build command fails in the `PRE_BUILD` or `INSTALL` phase, CodeBuild will not start the self-managed runner and the GitLab CI/CD pipeline job will need to be cancelled manually.
++ If a build command fails in the `PRE_BUILD` or `INSTALL` phase, CodeBuild will not start the self-managed runner and the GitLab CI/CD pipeline job needs to be canceled manually.
 + CodeBuild fetches the runner token during the `DOWNLOAD_SOURCE` phase, which has an expiration time of one hour. If your `PRE_BUILD` or `INSTALL` phases exceed an hour, the runner token may expire before the GitLab self-managed runner starts.
 
 ## Step 3: Review your results
@@ -170,7 +170,7 @@ You can review the requested labels in the log while the job is waiting to be pi
 ## Filter GitLab webhook events (CloudFormation)
 <a name="sample-gitlab-runners-webhooks-cfn"></a>
 
-The following YAML-formatted portion of an CloudFormation template creates a filter group that triggers a build when it evaluates to true. The following filter group specifies a GitLab CI/CD pipeline job request with a CI/CD pipeline name matching the regular expression `\[CI-CodeBuild\]`.
+The following YAML-formatted portion of a CloudFormation template creates a filter group that triggers a build when it evaluates to true. The following filter group specifies a GitLab CI/CD pipeline job request with a CI/CD pipeline name matching the regular expression `\[CI-CodeBuild\]`.
 
 ```
 CodeBuildProject:

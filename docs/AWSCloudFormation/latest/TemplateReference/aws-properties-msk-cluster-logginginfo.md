@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[AuthorizerLogs](#cfn-msk-cluster-logginginfo-authorizerlogs)" : {{AuthorizerLogs}},
   "[BrokerLogs](#cfn-msk-cluster-logginginfo-brokerlogs)" : {{BrokerLogs}}
 }
 ```
@@ -27,6 +28,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-msk-cluster-logginginfo-syntax.yaml"></a>
 
 ```
+  [AuthorizerLogs](#cfn-msk-cluster-logginginfo-authorizerlogs): {{
+    AuthorizerLogs}}
   [BrokerLogs](#cfn-msk-cluster-logginginfo-brokerlogs): {{
     BrokerLogs}}
 ```
@@ -34,8 +37,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 ## Properties
 <a name="aws-properties-msk-cluster-logginginfo-properties"></a>
 
+`AuthorizerLogs`  <a name="cfn-msk-cluster-logginginfo-authorizerlogs"></a>
+Property description not available.
+*Required*: No
+*Type*: [AuthorizerLogs](aws-properties-msk-cluster-authorizerlogs.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `BrokerLogs`  <a name="cfn-msk-cluster-logginginfo-brokerlogs"></a>
 You can configure your MSK cluster to send broker logs to different destination types. This configuration specifies the details of these destinations.
-*Required*: Yes
+*Required*: No
 *Type*: [BrokerLogs](aws-properties-msk-cluster-brokerlogs.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

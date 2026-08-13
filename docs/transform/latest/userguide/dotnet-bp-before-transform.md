@@ -10,7 +10,7 @@ Review the following recommendations before you start a .NET transformation job.
 ## Use the .NET conversational AI assistant
 <a name="dotnet-bp-use-assistant"></a>
 
-Use the new .NET agent for best transformation results. The conversational AI assistant is available for Visual Studio through the [AWS Toolkit for Visual Studio](https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.AWSToolkitforVisualStudio2022). It is also available for [https://kiro.dev/](https://kiro.dev/) or other IDEs through the Kiro power for AWS Transform and AWS Transform MCP agents. The new .NET agent is not yet available in web console.
+Use the new .NET agent for best transformation results. The conversational AI assistant is available for Visual Studio through the [AWS Toolkit for Visual Studio](https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.AWSToolkitforVisualStudio2022). It is also available for [Kiro](https://kiro.dev/) or other IDEs through the Kiro power for AWS Transform and AWS Transform MCP agents. The new .NET agent is not yet available in web console.
 
 ## Use other tools if the objective is not .NET to .NET transformation
 <a name="dotnet-bp-use-other-tools"></a>

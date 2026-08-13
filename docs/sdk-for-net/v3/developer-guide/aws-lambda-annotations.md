@@ -67,5 +67,5 @@ As is shown in the example, Lambda Annotations can remove the need for certain b
 For details about how to use the framework as well as additional information, see the following resources:
 + The [GitHub README](https://github.com/aws/aws-lambda-dotnet/blob/master/Libraries/src/Amazon.Lambda.Annotations/README.md) for documentation on the APIs and attributes of Lambda Annotations.
 + The [blog post](https://aws.amazon.com/blogs/developer/net-lambda-annotations-framework/) for Lambda Annotations.
-+ The [https://www.nuget.org/packages/Amazon.Lambda.Annotations](https://www.nuget.org/packages/Amazon.Lambda.Annotations) NuGet package.
++ The [`Amazon.Lambda.Annotations`](https://www.nuget.org/packages/Amazon.Lambda.Annotations) NuGet package.
 + The [Photo Asset Management project](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/PhotoAssetManager) on GitHub. Specifically, see the [PamApiAnnotations](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/PhotoAssetManager/PamApiAnnotations) folder and references to Lambda Annotations in the project [README](https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/dotnetv3/cross-service/PhotoAssetManager/README.md).

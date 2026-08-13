@@ -43,7 +43,7 @@ If you attempt to test this feature using the MQTT test client within console, i
 ## AWS CLI
 <a name="configure-propagating-attributes-cli"></a>
 
-1. To add propagating attributes for message enrichment by creating a new thing type using the AWS CLI, run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/create-thing-type.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/create-thing-type.html) command. An example command can be the following.
+1. To add propagating attributes for message enrichment by creating a new thing type using the AWS CLI, run the [**create-thing-type**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/create-thing-type.html) command. An example command can be the following.
 
    ```
    aws iot create-thing-type \
@@ -61,7 +61,7 @@ If you attempt to test this feature using the MQTT test client within console, i
    }
    ```
 
-1. To configure message enrichment by updating a thing type using AWS CLI, run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-thing-type.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-thing-type.html) command. Note that you can only update `mqtt5Configuration` when you run this command. An example command can be the following.
+1. To configure message enrichment by updating a thing type using AWS CLI, run the [**update-thing-type**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-thing-type.html) command. Note that you can only update `mqtt5Configuration` when you run this command. An example command can be the following.
 
    ```
    aws iot update-thing-type \

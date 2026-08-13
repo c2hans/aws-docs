@@ -71,7 +71,7 @@ Constructs are defined inside of other constructs using the `scope` argument tha
 
 The root of this tree is your app, which is an instance of the `App` class. Within the app, you instantiate one or more stacks. Within stacks, you instantiate constructs, which may themselves instantiate resources or other constructs, and so on down the tree.
 
-Constructs are *always* explicitly defined within the scope of another construct, which creates relationships between constructs. Almost always, you should pass `this` (in Python, `self`) as the scope, indicating that the new construct is a child of the current construct. The intended pattern is that you derive your construct from [https://docs.aws.amazon.com/cdk/api/v2/docs/constructs.Construct.html](https://docs.aws.amazon.com/cdk/api/v2/docs/constructs.Construct.html), then instantiate the constructs it uses in its constructor.
+Constructs are *always* explicitly defined within the scope of another construct, which creates relationships between constructs. Almost always, you should pass `this` (in Python, `self`) as the scope, indicating that the new construct is a child of the current construct. The intended pattern is that you derive your construct from [`Construct`](https://docs.aws.amazon.com/cdk/api/v2/docs/constructs.Construct.html), then instantiate the constructs it uses in its constructor.
 
 Passing the scope explicitly allows each construct to add itself to the tree, with this behavior entirely contained within the [`Construct` base class](https://docs.aws.amazon.com/cdk/api/v2/docs/constructs.Construct.html). It works the same way in every language supported by the AWS CDK and does not require additional customization.
 
@@ -80,7 +80,7 @@ Technically, it’s possible to pass some scope other than `this` when instantia
 
 The AWS CDK uses the IDs of all constructs in the path from the tree’s root to each child construct to generate the unique IDs required by AWS CloudFormation. This approach means that construct IDs only need to be unique within their scope, rather than within the entire stack as in native AWS CloudFormation. However, if you move a construct to a different scope, its generated stack-unique ID changes, and AWS CloudFormation won’t consider it the same resource.
 
-The construct tree is separate from the constructs that you define in your AWS CDK code. However, it’s accessible through any construct’s `node` attribute, which is a reference to the node that represents that construct in the tree. Each node is a [https://docs.aws.amazon.com/cdk/api/v2/docs/constructs.Node.html](https://docs.aws.amazon.com/cdk/api/v2/docs/constructs.Node.html) instance, the attributes of which provide access to the tree’s root and to the node’s parent scopes and children.
+The construct tree is separate from the constructs that you define in your AWS CDK code. However, it’s accessible through any construct’s `node` attribute, which is a reference to the node that represents that construct in the tree. Each node is a [`Node`](https://docs.aws.amazon.com/cdk/api/v2/docs/constructs.Node.html) instance, the attributes of which provide access to the tree’s root and to the node’s parent scopes and children.
 
 1.  `node.children` – The direct children of the construct.
 

@@ -181,6 +181,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   GetSession  **
+  - **IAM action:**  [elasticmapreduce:GetSession](#list_emr-action-GetSession)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetSessionEndpoint  **
+  - **IAM action:**  [elasticmapreduce:GetSessionEndpoint](#list_emr-action-GetSessionEndpoint)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   GetStudioSessionMapping  **
   - **IAM action:**  [elasticmapreduce:GetStudioSessionMapping](#list_emr-action-GetStudioSessionMapping)
   - **Condition key:**
@@ -231,6 +243,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ListSecurityConfigurations  **
   - **IAM action:**  [elasticmapreduce:ListSecurityConfigurations](#list_emr-action-ListSecurityConfigurations)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListSessions  **
+  - **IAM action:**  [elasticmapreduce:ListSessions](#list_emr-action-ListSessions)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
@@ -361,6 +379,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   StartSession  **
   - **IAM action:**  [elasticmapreduce:AddTags](#list_emr-action-AddTags)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [elasticmapreduce:StartSession](#list_emr-action-StartSession)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** elasticmapreduce.amazonaws.com / **Access level:** Write
 
 - **   StopNotebookExecution  **
@@ -371,6 +390,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   TerminateJobFlows  **
   - **IAM action:**  [elasticmapreduce:TerminateJobFlows](#list_emr-action-TerminateJobFlows)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   TerminateSession  **
+  - **IAM action:**  [elasticmapreduce:TerminateSession](#list_emr-action-TerminateSession)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -421,6 +446,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [cluster](#list_emr-resource-cluster) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_emr-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_emr-aws_TagKeys)<br />[elasticmapreduce:RequestTag/${TagKey}](#list_emr-elasticmapreduce_RequestTag___TagKey_)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_)
   - **Resource types (\*required):** [editor](#list_emr-resource-editor) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_emr-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_emr-aws_TagKeys)<br />[elasticmapreduce:RequestTag/${TagKey}](#list_emr-elasticmapreduce_RequestTag___TagKey_)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_)
   - **Resource types (\*required):** [notebook-execution](#list_emr-resource-notebook-execution) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_emr-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_emr-aws_TagKeys)<br />[elasticmapreduce:RequestTag/${TagKey}](#list_emr-elasticmapreduce_RequestTag___TagKey_)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [session](#list_emr-resource-session) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_emr-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_emr-aws_TagKeys)<br />[elasticmapreduce:RequestTag/${TagKey}](#list_emr-elasticmapreduce_RequestTag___TagKey_)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_)
   - **Resource types (\*required):** [studio](#list_emr-resource-studio) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_emr-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_emr-aws_TagKeys)<br />[elasticmapreduce:RequestTag/${TagKey}](#list_emr-elasticmapreduce_RequestTag___TagKey_)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_)
   - **Access level:** Tagging, Write
 
@@ -562,6 +588,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[elasticmapreduce:ExecutionRoleArn](#list_emr-elasticmapreduce_ExecutionRoleArn)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [GetSession](https://docs.aws.amazon.com/emr/latest/APIReference/API_GetSession.html)  **
+  - **Description:** Grants permission to get details of a Spark Connect session
+  - **Resource types (\*required):** [session\*](#list_emr-resource-session)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetSessionEndpoint](https://docs.aws.amazon.com/emr/latest/APIReference/API_GetSessionEndpoint.html)  **
+  - **Description:** Grants permission to get the endpoint and credentials for a Spark Connect session
+  - **Resource types (\*required):** [session\*](#list_emr-resource-session)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [GetStudioSessionMapping](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio.html)  **
   - **Description:** Grants permission to view information about an EMR Studio session mapping
   - **Resource types (\*required):** [studio\*](#list_emr-resource-studio)
@@ -614,6 +652,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to list available security configurations in this account by name, along with creation dates and times
   - **Resource types (\*required):**
   - **Condition keys:**
+  - **Access level:** List
+
+- **   [ListSessions](https://docs.aws.amazon.com/emr/latest/APIReference/API_ListSessions.html)  **
+  - **Description:** Grants permission to list Spark Connect sessions on an Amazon EMR cluster
+  - **Resource types (\*required):** [cluster\*](#list_emr-resource-cluster)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_)
   - **Access level:** List
 
 - **   [ListSteps](https://docs.aws.amazon.com/emr/latest/APIReference/API_ListSteps.html)  **
@@ -705,6 +749,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [cluster](#list_emr-resource-cluster) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_emr-aws_TagKeys)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_)
   - **Resource types (\*required):** [editor](#list_emr-resource-editor) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_emr-aws_TagKeys)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_)
   - **Resource types (\*required):** [notebook-execution](#list_emr-resource-notebook-execution) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_emr-aws_TagKeys)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [session](#list_emr-resource-session) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_emr-aws_TagKeys)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_)
   - **Resource types (\*required):** [studio](#list_emr-resource-studio) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_emr-aws_TagKeys)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_)
   - **Access level:** Tagging, Write
 
@@ -744,6 +789,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [editor\*](#list_emr-resource-editor) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_emr-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_emr-aws_TagKeys)<br />[elasticmapreduce:RequestTag/${TagKey}](#list_emr-elasticmapreduce_RequestTag___TagKey_)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [StartSession](https://docs.aws.amazon.com/emr/latest/APIReference/API_StartSession.html)  **
+  - **Description:** Grants permission to start a Spark Connect session on an Amazon EMR cluster
+  - **Resource types (\*required):** [cluster\*](#list_emr-resource-cluster)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_emr-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_emr-aws_TagKeys)<br />[elasticmapreduce:ExecutionRoleArn](#list_emr-elasticmapreduce_ExecutionRoleArn)<br />[elasticmapreduce:RequestTag/${TagKey}](#list_emr-elasticmapreduce_RequestTag___TagKey_)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [StopNotebookExecution](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-headless.html)  **
   - **Description:** Grants permission to stop notebook execution
   - **Resource types (\*required):** [notebook-execution\*](#list_emr-resource-notebook-execution)
@@ -753,6 +804,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [TerminateJobFlows](https://docs.aws.amazon.com/emr/latest/APIReference/API_TerminateJobFlows.html)  **
   - **Description:** Grants permission to terminate a cluster (job flow)
   - **Resource types (\*required):** [cluster\*](#list_emr-resource-cluster)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [TerminateSession](https://docs.aws.amazon.com/emr/latest/APIReference/API_TerminateSession.html)  **
+  - **Description:** Grants permission to terminate a Spark Connect session on an Amazon EMR cluster
+  - **Resource types (\*required):** [session\*](#list_emr-resource-session)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_)
   - **Access level:** Write
 
@@ -913,6 +970,7 @@ The following resource types are defined by this service and can be used in the 
 |  [cluster](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-overview.html)  | arn:${Partition}:elasticmapreduce:${Region}:${Account}:cluster/${ClusterId} | [aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_) |
 |  [editor](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks.html)  | arn:${Partition}:elasticmapreduce:${Region}:${Account}:editor/${EditorId} | [aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_) |
 |  [notebook-execution](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-headless.html)  | arn:${Partition}:elasticmapreduce:${Region}:${Account}:notebook-execution/${NotebookExecutionId} | [aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_) |
+|  [session](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-overview.html)  | arn:${Partition}:elasticmapreduce:${Region}:${Account}:cluster/${ClusterId}/session/${SessionId} | [aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_) |
 |  [studio](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio.html)  | arn:${Partition}:elasticmapreduce:${Region}:${Account}:studio/${StudioId} | [aws:ResourceTag/${TagKey}](#list_emr-aws_ResourceTag___TagKey_)<br />[elasticmapreduce:ResourceTag/${TagKey}](#list_emr-elasticmapreduce_ResourceTag___TagKey_) |
 
 ## Condition keys for Amazon Elastic MapReduce

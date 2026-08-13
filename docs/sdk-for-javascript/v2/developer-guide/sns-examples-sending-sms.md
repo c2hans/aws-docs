@@ -21,11 +21,11 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 You can use Amazon SNS to send text messages, or SMS messages, to SMS-enabled devices. You can send a message directly to a phone number, or you can send a message to multiple phone numbers at once by subscribing those phone numbers to a topic and sending your message to the topic.
 
 In this example, you use a series of Node.js modules to publish SMS text messages from Amazon SNS to SMS-enabled devices. The Node.js modules use the SDK for JavaScript to publish SMS messages using these methods of the `AWS.SNS` client class:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#getSMSAttributes-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#getSMSAttributes-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#setSMSAttributes-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#setSMSAttributes-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#checkIfPhoneNumberIsOptedOut-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#checkIfPhoneNumberIsOptedOut-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#listPhoneNumbersOptedOut-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#listPhoneNumbersOptedOut-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#publish-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#publish-property)
++ [`getSMSAttributes`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#getSMSAttributes-property)
++ [`setSMSAttributes`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#setSMSAttributes-property)
++ [`checkIfPhoneNumberIsOptedOut`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#checkIfPhoneNumberIsOptedOut-property)
++ [`listPhoneNumbersOptedOut`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#listPhoneNumbersOptedOut-property)
++ [`publish`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#publish-property)
 
 ## Prerequisite Tasks
 <a name="sns-examples-sending-sms-prerequisites"></a>

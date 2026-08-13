@@ -27,7 +27,7 @@ You can delete a scaling policy by using the AWS Management Console.
 ## AWS CLI
 <a name="Aurora.Integrating.AutoScaling.Delete.CLI"></a>
 
-To delete a scaling policy from your Aurora DB cluster, use the [https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/delete-scaling-policy.html](https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/delete-scaling-policy.html) AWS CLI command with the following parameters:
+To delete a scaling policy from your Aurora DB cluster, use the [`delete-scaling-policy`](https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/delete-scaling-policy.html) AWS CLI command with the following parameters:
 + `--policy-name` – The name of the scaling policy.
 + `--resource-id` – The resource identifier for the Aurora DB cluster. For this parameter, the resource type is `cluster` and the unique identifier is the name of the Aurora DB cluster, for example `cluster:myscalablecluster`.
 + `--service-namespace` – Set this value to `rds`.
@@ -57,7 +57,7 @@ aws application-autoscaling delete-scaling-policy ^
 ## Application Auto Scaling API
 <a name="Aurora.Integrating.AutoScaling.Delete.API"></a>
 
-To delete a scaling policy from your Aurora DB cluster, use the [https://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_DeleteScalingPolicy.html](https://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_DeleteScalingPolicy.html) the Application Auto Scaling API operation with the following parameters:
+To delete a scaling policy from your Aurora DB cluster, use the [`DeleteScalingPolicy`](https://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_DeleteScalingPolicy.html) the Application Auto Scaling API operation with the following parameters:
 + `PolicyName` – The name of the scaling policy.
 + `ServiceNamespace` – Set this value to `rds`.
 + `ResourceID` – The resource identifier for the Aurora DB cluster. For this parameter, the resource type is `cluster` and the unique identifier is the name of the Aurora DB cluster, for example `cluster:myscalablecluster`.

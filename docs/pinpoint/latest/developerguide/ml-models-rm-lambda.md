@@ -16,7 +16,7 @@ This feature is available in the following AWS Regions: US East (N. Virginia); U
 ## Authorize Amazon Pinpoint to invoke a Lambda function using the AWS CLI and the Lambda add-permission command
 <a name="ml-models-rm-lambda-trust-policy-assign"></a>
 
-After you assign a Lambda function policy to a function, you can add permissions that allow Amazon Pinpoint to invoke the function for a specific project, campaign, or journey. You can do this using the AWS Command Line Interface (AWS CLI) and the Lambda [https://docs.aws.amazon.com/cli/latest/reference/lambda/add-permission.html](https://docs.aws.amazon.com/cli/latest/reference/lambda/add-permission.html) command. The following example shows how to do this for a specific project ({{projectId}}):
+After you assign a Lambda function policy to a function, you can add permissions that allow Amazon Pinpoint to invoke the function for a specific project, campaign, or journey. You can do this using the AWS Command Line Interface (AWS CLI) and the Lambda [`add-permission`](https://docs.aws.amazon.com/cli/latest/reference/lambda/add-permission.html) command. The following example shows how to do this for a specific project ({{projectId}}):
 
 ```
 $ aws lambda add-permission \

@@ -90,7 +90,7 @@ It’s important **not** to use the `ec2:Owner` context key. Amazon owns the EKS
 | us-gov-east-1 | 446077414359 |
 | us-gov-west-1 | 446098668741 |
 
-## Associate Public IP address
+## Associate Public IP Address
 <a name="_associate_public_ip_address"></a>
 
 When `ec2:RunInstances` is called the `AssociatePublicIpAddress` field for an instance launch is determined automatically by the type of subnet that the instance is being launched into. An SCP may be used to enforce that this value is explicitly set to false, regardless of the type of subnet being launched into. In this case the NodeClass field `spec.advancedNetworking.associatePublicIPAddress` can also be set to false to satisfy the requirements of the SCP.

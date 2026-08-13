@@ -11,7 +11,7 @@ You can interact with a Amazon Neptune DB cluster after establishing network con
 <a name="get-started-access-graph-tools"></a>
 
 Neptune supports several tools for submitting queries and managing your graph data:
-+ **AWS CLI**   –   Use the `aws neptunedata` commands to run Gremlin and openCypher queries, check engine status, manage bulk loads, and more. For more information, see [https://docs.aws.amazon.com/cli/latest/reference/neptunedata/](https://docs.aws.amazon.com/cli/latest/reference/neptunedata/) in the AWS CLI Command Reference.
++ **AWS CLI**   –   Use the `aws neptunedata` commands to run Gremlin and openCypher queries, check engine status, manage bulk loads, and more. For more information, see [neptunedata](https://docs.aws.amazon.com/cli/latest/reference/neptunedata/) in the AWS CLI Command Reference.
 + **AWS SDKs**   –   Use the Neptune Data API through the AWS SDKs to run queries programmatically. SDKs are available for [Gremlin](access-graph-gremlin-sdk.md) and [openCypher](access-graph-opencypher-sdk.md).
 + **`curl` and `awscurl`**   –   Use `curl` to submit HTTP requests directly to the Neptune endpoints. If IAM authentication is enabled, use [awscurl](https://github.com/okigan/awscurl) or `curl` 7.75.0\+ with the `--aws-sigv4` option to sign requests. For more information, see [Using `awscurl` with temporary credentials to securely connect to a DB cluster with IAM authentication enabled](iam-auth-connect-command-line.md#iam-auth-connect-awscurl).
 + **Neptune notebooks**   –   Use Neptune notebooks to run interactive queries in a Jupyter environment with built-in visualizations. For more information, see [Using Neptune with graph notebooks](graph-notebooks.md).

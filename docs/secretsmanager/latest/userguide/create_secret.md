@@ -105,7 +105,7 @@ Secrets Manager generates a CloudTrail log entry when you create a secret. For m
 When you enter commands in a command shell, there is a risk of the command history being accessed or utilities having access to your command parameters. See [Mitigate the risks of using the AWS CLI to store your AWS Secrets Manager secrets](security_cli-exposure-risks.md).
 
 **Example Create a secret from database credentials in a JSON file**
-The following [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/secretsmanager/create-secret.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/secretsmanager/create-secret.html) example creates a secret from credentials in a file. For more information, see [Loading AWS CLI parameters from a file](https://docs.aws.amazon.com//cli/latest/userguide/cli-usage-parameters-file.html) in the AWS CLI User Guide.
+The following [`create-secret`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/secretsmanager/create-secret.html) example creates a secret from credentials in a file. For more information, see [Loading AWS CLI parameters from a file](https://docs.aws.amazon.com//cli/latest/userguide/cli-usage-parameters-file.html) in the AWS CLI User Guide.
 For Secrets Manager to be able to rotate the secret, you must make sure the JSON matches the [JSON structure of a secret](reference_secret_json_structure.md).
 
 ```
@@ -127,7 +127,7 @@ Contents of mycreds.json:
 ```
 
 **Example Create a secret**
-The following [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/secretsmanager/create-secret.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/secretsmanager/create-secret.html) example creates a secret with two key-value pairs.
+The following [`create-secret`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/secretsmanager/create-secret.html) example creates a secret with two key-value pairs.
 
 ```
 aws secretsmanager create-secret \
@@ -137,7 +137,7 @@ aws secretsmanager create-secret \
 ```
 
 **Example Create a secret**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/create-secret.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/create-secret.html) example creates a secret with two tags.
+The following [`create-secret`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/create-secret.html) example creates a secret with two tags.
 
 ```
 aws secretsmanager create-secret \
@@ -150,4 +150,4 @@ aws secretsmanager create-secret \
 ## AWS SDK
 <a name="create_secret_sdk"></a>
 
-To create a secret by using one of the AWS SDKs, use the [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_CreateSecret.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_CreateSecret.html) action. For more information, see [AWS SDKs](asm_access.md#asm-sdks).
+To create a secret by using one of the AWS SDKs, use the [`CreateSecret`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_CreateSecret.html) action. For more information, see [AWS SDKs](asm_access.md#asm-sdks).

@@ -12,7 +12,7 @@ The permissions of your user and any roles that you switch to aren't cumulative.
 When you switch roles in the AWS Management Console, the console always uses your original credentials to authorize the switch. For example, if you switch to RoleA, IAM uses your original credentials to determine whether you are allowed to assume RoleA. If you then switch to RoleB *while you are using RoleA*, AWS still uses your **original** credentials to authorize the switch, not the credentials for RoleA.
 
 **Note**
-When you sign in as a user in IAM Identity Center, as a SAML-federated role, or as a web-identity federated role you assume an IAM role when you start your session. For example, when a user in IAM Identity Center signs in to the AWS access portal they must choose a permission set that correlates to a role before they can access AWS resources.
+When you sign in as a user in IAM Identity Center, as a SAML-federated role, or as a web-identity federated role you assume an IAM role when you start your session. For example, when a user in IAM Identity Center signs in to the AWS access portal they can choose a permission set or access a role assigned through [account access manager](account-access-manager.md) before they can access AWS resources.
 
 ## Role sessions
 <a name="id_roles_iam_user-switch-role-sessions"></a>
@@ -36,7 +36,7 @@ Some AWS service consoles can autorenew your role session when it expires withou
 <a name="id_roles_iam_user-switch-role-considerations"></a>
 + You can't switch roles if you sign in as the AWS account root user.
 + Users must be granted permission to switch roles by policy. For instructions, see [Grant a user permissions to switch roles](id_roles_use_permissions-to-switch.md).
-+ You can't switch roles in the AWS Management Console to a role that requires an [ExternalId](id_roles_common-scenarios_third-party.md#id_roles_third-party_external-id) value. You can switch to such a role only by calling the [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) API that supports the `ExternalId` parameter.
++ You can't switch roles in the AWS Management Console to a role that requires an [ExternalId](id_roles_common-scenarios_third-party.md#id_roles_third-party_external-id) value. You can switch to such a role only by calling the [`AssumeRole`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) API that supports the `ExternalId` parameter.
 
 ## To switch to a role
 <a name="id_roles_iam_user-switch-role-console-procedure"></a>

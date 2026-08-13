@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/mw-cli-
 # Examples: Register tasks with a maintenance window
 <a name="mw-cli-register-tasks-examples"></a>
 
-You can register a task in Run Command, a tool in AWS Systems Manager, with a maintenance window using the AWS Command Line Interface (AWS CLI), as demonstrated in [Register tasks with the maintenance window](mw-cli-tutorial-tasks.md). You can also register tasks for Systems Manager Automation workflows, AWS Lambda functions, and AWS Step Functions tasks, as demonstrated later in this topic.
+You can register a task in Run Command, with a maintenance window using the AWS Command Line Interface (AWS CLI), as demonstrated in [Register tasks with the maintenance window](mw-cli-tutorial-tasks.md). You can also register tasks for Systems Manager Automation workflows, AWS Lambda functions, and AWS Step Functions tasks, as demonstrated later in this topic.
 
 **Note**
 Specify one or more targets for maintenance window Run Command-type tasks. Depending on the task, targets are optional for other maintenance window task types (Automation, AWS Lambda, and AWS Step Functions). For more information about running tasks that don't specify targets, see [Registering maintenance window tasks without targets](maintenance-windows-targetless-tasks.md).
@@ -50,8 +50,8 @@ In some examples, we use *pseudo parameters* as the method to pass ID informatio
 
 **More info**
 + [Parameter options for the register-task-with-maintenance-windows command](mw-cli-task-options.md).
-+ [https://docs.aws.amazon.com/cli/latest/reference/ssm/register-task-with-maintenance-window.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/register-task-with-maintenance-window.html) in the *AWS CLI Command Reference*
-+ [https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_RegisterTaskWithMaintenanceWindow.html](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_RegisterTaskWithMaintenanceWindow.html) in the *AWS Systems Manager API Reference*
++ [register-task-with-maintenance-window](https://docs.aws.amazon.com/cli/latest/reference/ssm/register-task-with-maintenance-window.html) in the *AWS CLI Command Reference*
++ [RegisterTaskWithMaintenanceWindow](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_RegisterTaskWithMaintenanceWindow.html) in the *AWS Systems Manager API Reference*
 
 ## Task registration examples
 <a name="task-examples"></a>
@@ -190,6 +190,9 @@ aws ssm register-task-with-maintenance-window ^
 
 The following examples demonstrate how to register Lambda function tasks with a maintenance window using the AWS CLI.
 
+**Important**
+Lambda functions must be in the same AWS account as the maintenance window when using the service-linked role (`AWSServiceRoleForAmazonSSM`). Cross-account Lambda invocation is not supported with the service-linked role. If you need to invoke a Lambda function in a different account, specify a custom service role using the `--service-role-arn` parameter with permissions explicitly scoped to the target account, and add a resource-based policy on the target Lambda function granting invoke access to your custom role.
+
 For these examples, the user who created the Lambda function named it `SSMrestart-my-instances` and created two parameters called `instanceId` and `targetType`.
 
 **Important**
@@ -265,6 +268,9 @@ aws ssm register-task-with-maintenance-window `
 <a name="register-tasks-tutorial-step-functions"></a>
 
 The following examples demonstrate how to register Step Functions state machine tasks with a maintenance window using the AWS CLI.
+
+**Important**
+Step Functions state machines must be in the same AWS account as the maintenance window. Cross-account Step Functions invocation is not supported regardless of whether you use the service-linked role or a custom service role.
 
 **Note**
 Maintenance window tasks support Step Functions Standard state machine workflows only. They don't support Express state machine workflows. For information about state machine workflow types, see [Standard vs. Express Workflows](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-standard-vs-express.html) in the *AWS Step Functions Developer Guide*.

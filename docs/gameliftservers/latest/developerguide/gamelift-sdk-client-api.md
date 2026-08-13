@@ -21,7 +21,7 @@ Add the AWS SDK for C\+\+ with Amazon GameLift Servers to a project.
 
 Add code to initialize an Amazon GameLift Servers client and store key settings. This code must run before any code dependent on Amazon GameLift Servers.
 
-1. Set up a client configuration. Use the default client configuration or create a custom client configuration object. For more information, see [https://sdk.amazonaws.com/cpp/api/LATEST/aws-cpp-sdk-core/html/struct_aws_1_1_client_1_1_client_configuration.html](https://sdk.amazonaws.com/cpp/api/LATEST/aws-cpp-sdk-core/html/struct_aws_1_1_client_1_1_client_configuration.html) (C\+\+) or [AmazonGameLiftConfig](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/GameLift/TGameLiftConfig.html) (C\#).
+1. Set up a client configuration. Use the default client configuration or create a custom client configuration object. For more information, see [AWS::Client::ClientConfiguration](https://sdk.amazonaws.com/cpp/api/LATEST/aws-cpp-sdk-core/html/struct_aws_1_1_client_1_1_client_configuration.html) (C\+\+) or [AmazonGameLiftConfig](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/GameLift/TGameLiftConfig.html) (C\#).
 
    A client configuration specifies a target region and endpoint to use when contacting Amazon GameLift Servers. Region identifies the set of deployed resources (fleets, queues, and matchmakers) to use. The default client configuration sets location to the US East (N. Virginia) Region. To use any other Region, create a custom configuration.
 

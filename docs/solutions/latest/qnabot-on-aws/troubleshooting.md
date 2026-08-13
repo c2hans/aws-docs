@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/troublesh
 # Troubleshooting
 <a name="troubleshooting"></a>
 
-If you need help with this solution, contact AWS Support to open a support case for this solution.
+If you need help with this guidance, contact AWS Support to open a support case for this guidance.
 
 ## Contact AWS Support
 <a name="contact-aws-support"></a>
 
-If you have [AWS Business Support\+](https://aws.amazon.com/premiumsupport/plans/business-plus/), [AWS Enterprise Support](https://aws.amazon.com/premiumsupport/plans/enterprise/), or [AWS Unified Operations](https://aws.amazon.com/premiumsupport/plans/unified-operations/), you can use the AWS Support Center to get expert assistance with this solution. The following sections provide instructions.
+If you have [AWS Business Support\+](https://aws.amazon.com/premiumsupport/plans/business-plus/), [AWS Enterprise Support](https://aws.amazon.com/premiumsupport/plans/enterprise/), or [AWS Unified Operations](https://aws.amazon.com/premiumsupport/plans/unified-operations/), you can use the AWS Support Center to get expert assistance with this guidance. The following sections provide instructions.
 
 ### Create case
 <a name="create-case"></a>

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/start-med-custom-vo
 # Transcribing an audio file using a medical custom vocabulary
 <a name="start-med-custom-vocab-job"></a>
 
-Use the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartMedicalTranscriptionJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartMedicalTranscriptionJob.html) or the AWS Management Console to start a transcription job that uses a custom vocabulary to improve transcription accuracy.
+Use the [`StartMedicalTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartMedicalTranscriptionJob.html) or the AWS Management Console to start a transcription job that uses a custom vocabulary to improve transcription accuracy.
 
 ## AWS Management Console
 <a name="start-med-custom-vocab-job-console"></a>
@@ -30,7 +30,7 @@ Use the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartMed
 <a name="start-med-custom-vocab-api"></a>
 
 **To enable speaker partitioning in an audio file using a batch transcription job (API)**
-+ For the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartMedicalTranscriptionJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartMedicalTranscriptionJob.html) API, specify the following.
++ For the [`StartMedicalTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartMedicalTranscriptionJob.html) API, specify the following.
 
   1. For `MedicalTranscriptionJobName`, specify a name that is unique in your AWS account.
 

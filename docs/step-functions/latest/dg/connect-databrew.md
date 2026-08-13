@@ -40,7 +40,7 @@ Even if the native service API is in camelCase, for example the API action `star
 
 ## Supported DataBrew APIs
 <a name="connect-databrew-api"></a>
-+ `[https://docs.aws.amazon.com/databrew/latest/dg/API_StartJobRun.html](https://docs.aws.amazon.com/databrew/latest/dg/API_StartJobRun.html)`
++ `[`StartJobRun`](https://docs.aws.amazon.com/databrew/latest/dg/API_StartJobRun.html)`
 
 ## IAM policies for calling DataBrew
 <a name="databrew-iam"></a>

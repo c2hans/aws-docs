@@ -19,13 +19,13 @@ AWS IoT Jobs and AWS IoT Core share the same AWS Region-specific endpoints.
 **How do I locate the AWS IoT Jobs data plane endpoint?**
 AWS IoT Jobs supports data plane API operations using the HTTPS and MQTT protocols. Verify you have connected to the correct data plane endpoint using the HTTPS or MQTT protocol.
 + HTTPS protocol
-  + Use the following [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-endpoint.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-endpoint.html) CLI command shown below or the [https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeEndpoint.html](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeEndpoint.html) REST API. For the endpoint type, use `iot:Jobs`.
+  + Use the following [**describe-endpoint**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-endpoint.html) CLI command shown below or the [`DescribeEndpoint`](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeEndpoint.html) REST API. For the endpoint type, use `iot:Jobs`.
 
     ```
     aws iot describe-endpoint --endpoint-type iot:Jobs
     ```
 + MQTT protocol
-  + Use the following [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-endpoint.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-endpoint.html) CLI command shown below or the [https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeEndpoint.html](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeEndpoint.html) REST API. For the endpoint type, use `iot:Data-ATS`.
+  + Use the following [**describe-endpoint**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-endpoint.html) CLI command shown below or the [`DescribeEndpoint`](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeEndpoint.html) REST API. For the endpoint type, use `iot:Data-ATS`.
 
     ```
     aws iot describe-endpoint --endpoint-type iot:Data-ATS
@@ -50,13 +50,13 @@ Additionally, you can set up CloudWatch alarms to alert you of specific metrics 
 **A job execution maintains a status of `QUEUED` indefinitely**
 When a job execution with a status state of `QUEUED` does not proceed to the next logical status state such as `IN_PROGRESS`, `FAILED`, or `TIMED_OUT`, one of the following scenarios may be the cause:
 + Review your device activity in the CloudWatch logs located in the [CloudWatch console](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatchLogs.html). For more information, refer to [Monitor AWS IoT using CloudWatch Logs](https://docs.aws.amazon.com/iot/latest/developerguide/cloud-watch-logs.html).
-+ The IAM role associated with the job and subsequent job execution may not have the correct permissions listed in one of the policy statements of the IAM policy attached to that IAM role. Use the [https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJob.html](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJob.html) API to identify the IAM role linked to that job and subsequent job execution and review the IAM policy for correct permissions. Once the policy permission statements have been updated, you should be able to perform the [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) API command on the resource.
++ The IAM role associated with the job and subsequent job execution may not have the correct permissions listed in one of the policy statements of the IAM policy attached to that IAM role. Use the [`describe-job`](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJob.html) API to identify the IAM role linked to that job and subsequent job execution and review the IAM policy for correct permissions. Once the policy permission statements have been updated, you should be able to perform the [`AssumeRole`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) API command on the resource.
 
 **A job execution was not created for my thing or thing group**
 When a job updates its status state to `IN_PROGRESS`, it will begin the job document rollout to all devices in your target group. This status state update will create a job execution for each target device. If a job execution was not created for one of the target devices, refer to the following guidance:
 + Is the `thing` *directly* targeted by the job, the job has a status state of `IN_PROGRESS`, and the job is concurrent? If all three conditions are met, then the job is still sending out job executions to all devices in your target group and that specific `thing` has not received its job execution yet.
-  + Review the devices in your target group for the job and the job status state in the AWS Management Console or use the [https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJob.html](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJob.html) API command.
-  + Use the [https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJob.html](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJob.html) API command to review if the job has the `IsConcurrent` property set to true or false. For more information, see [Job limits](https://docs.aws.amazon.com/iot/latest/developerguide/job-limits.html).
+  + Review the devices in your target group for the job and the job status state in the AWS Management Console or use the [`describe-job`](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJob.html) API command.
+  + Use the [`describe-job`](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJob.html) API command to review if the job has the `IsConcurrent` property set to true or false. For more information, see [Job limits](https://docs.aws.amazon.com/iot/latest/developerguide/job-limits.html).
 + The `thing` is *not directly* targeted by the job.
   + If the `Thing` was added to a `ThingGroup` and the job targeted the `ThingGroup`, then verify the `Thing` is part of the `ThingGroup`.
   + If the job is a snapshot job with a status state of `IN_PROGRESS` and is concurrent, then the job is still sending out job executions to all devices in your target group and that specific `Thing` has not received its job execution yet.

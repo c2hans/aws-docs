@@ -22,8 +22,8 @@ A comparison of the RPMs present on the Amazon Linux 2 and AL2023 base container
 |  coreutils-single  |  | 8.32 |
 |  cpio  | 2.12 |  |
 |  crypto-policies  |  | 20220428 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 8.3.0 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
+|  [`curl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 8.3.0 |  |
+|  [`curl-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
 |  cyrus-sasl-lib  | 2.1.26 |  |
 |  diffutils  | 3.3 |  |
 |  dnf  |  | 4.14.0 |
@@ -39,13 +39,13 @@ A comparison of the RPMs present on the Amazon Linux 2 and AL2023 base container
 |  gdbm  | 1.13 |  |
 |  gdbm-libs  |  | 1.19 |
 |  glib2  | 2.56.1 | 2.74.7 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  | 2.26 | 2.34 |
+|  [`glibc`](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  | 2.26 | 2.34 |
 |  glibc-common  | 2.26 | 2.34 |
 |  glibc-langpack-en  | 2.26 |  |
 |  glibc-minimal-langpack  | 2.26 | 2.34 |
 |  gmp  | 6.0.0 | 6.2.1 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  | 2.0.22 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  |  | 2.3.7 |
+|  [`gnupg2`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  | 2.0.22 |  |
+|  [`gnupg2-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  |  | 2.3.7 |
 |  gpgme  | 1.3.2 | 1.15.1 |
 |  grep  | 2.20 | 3.8 |
 |  info  | 5.1 |  |
@@ -62,9 +62,9 @@ A comparison of the RPMs present on the Amazon Linux 2 and AL2023 base container
 |  libcom\_err  | 1.42.9 | 1.46.5 |
 |  libcomps  |  | 0.1.20 |
 |  libcrypt  | 2.26 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 8.3.0 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb)  | 5.3.21 |  |
+|  [`libcurl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 8.3.0 |  |
+|  [`libcurl-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
+|  [`libdb`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb)  | 5.3.21 |  |
 |  libdb-utils  | 5.3.21 |  |
 |  libdnf  |  | 0.69.0 |
 |  libffi  | 3.0.13 | 3.4.4 |
@@ -115,7 +115,7 @@ A comparison of the RPMs present on the Amazon Linux 2 and AL2023 base container
 |  openssl-libs  | 1.0.2k | 3.0.8 |
 |  p11-kit  | 0.23.22 | 0.24.1 |
 |  p11-kit-trust  | 0.23.22 | 0.24.1 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre)  | 8.32 |  |
+|  [`pcre`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre)  | 8.32 |  |
 |  pcre2  |  | 10.40 |
 |  pcre2-syntax  |  | 10.40 |
 |  pinentry  | 0.8.1 |  |
@@ -124,7 +124,7 @@ A comparison of the RPMs present on the Amazon Linux 2 and AL2023 base container
 |  publicsuffix-list-dafsa  | 20240208 | 20240212 |
 |  pygpgme  | 0.3 |  |
 |  pyliblzma  | 0.5.3 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  | 2.7.18 |  |
+|  [`python`](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  | 2.7.18 |  |
 |  python2-rpm  | 4.11.3 |  |
 |  python3  |  | 3.9.16 |
 |  python3-dnf  |  | 4.14.0 |

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/paramet
 
 Sharing advanced parameters simplifies configuration data management in a multi-account environment. You can centrally store and manage your parameters and share them with other AWS accounts that need to reference them.
 
-Parameter Store integrates with AWS Resource Access Manager (AWS RAM) to enable advanced parameter sharing. AWS RAM is a service that enables you to share resources with other AWS accounts or through AWS Organizations.
+Parameter Store integrates with AWS Resource Access Manager (AWS RAM) to enable advanced parameter sharing. AWS RAM is a service that lets you share resources with other AWS accounts or through AWS Organizations.
 
 With AWS RAM, you share resources that you own by creating a resource share. A resource share specifies the resources to share, permissions to grant, and the consumers with whom to share. Consumers can include:
 + Specific AWS accounts inside or outside of its organization in AWS Organizations
@@ -64,9 +64,9 @@ Make the following selections as you complete the procedure:
 Choose other options based on your parameter sharing objectives.
 
 **To share a parameter that you own using the AWS CLI**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ram/create-resource-share.html](https://docs.aws.amazon.com/cli/latest/reference/ram/create-resource-share.html) command to add parameters to a new resource share.
+Use the [create-resource-share](https://docs.aws.amazon.com/cli/latest/reference/ram/create-resource-share.html) command to add parameters to a new resource share.
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ram/associate-resource-share.html](https://docs.aws.amazon.com/cli/latest/reference/ram/associate-resource-share.html) command to add parameters to an existing resource share.
+Use the [associate-resource-share](https://docs.aws.amazon.com/cli/latest/reference/ram/associate-resource-share.html) command to add parameters to an existing resource share.
 
 The following example creates a new resource share to share parameters with consumers in an organization and in an individual account.
 
@@ -96,7 +96,7 @@ Use the [disassociate-resource-share](https://docs.aws.amazon.com/cli/latest/ref
 Owners and consumers can identify shared parameters using the AWS CLI.
 
 **To identify shared parameters using the AWS CLI**
-To identify shared parameters using the AWS CLI, you can choose from the Systems Manager `[https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-parameters.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-parameters.html)` command and the AWS RAM `[list-resources](https://docs.aws.amazon.com/cli/latest/reference/ram/list-resources.html)` command.
+To identify shared parameters using the AWS CLI, you can choose from the Systems Manager `[describe-parameters](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-parameters.html)` command and the AWS RAM `[list-resources](https://docs.aws.amazon.com/cli/latest/reference/ram/list-resources.html)` command.
 
 When you use the `--shared` option with `describe-parameters`, the command returns the parameters that are shared with you.
 
@@ -112,7 +112,7 @@ aws ssm describe-parameters --shared
 Consumers can access shared parameters using the AWS command line tools, and AWS SDKs. For consumer accounts, parameters shared with that account aren't included in the **My parameters** page.
 
 **CLI Example: Accessing shared parameter details using the AWS CLI**
-To access shared parameter details using the AWS CLI, you can use the [https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameter.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameter.html) or [https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameters.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameters.html) commands. You must specify the full parameter ARN as the `--name` in order to retrieve the parameter from another account.
+To access shared parameter details using the AWS CLI, you can use the [get-parameter](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameter.html) or [get-parameters](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameters.html) commands. You must specify the full parameter ARN as the `--name` in order to retrieve the parameter from another account.
 
 The following is an example.
 
@@ -149,7 +149,7 @@ Allowed actions: `DescribeParameters`, `GetParameter`, `GetParameters`
 **AWSRAMPermissionSSMParameterReadOnlyWithHistory**
 Allowed actions: `DescribeParameters`, `GetParameter`, `GetParameters`, `GetParameterHistory`
 
-When you folllow the steps in [Creating a resource share in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing.html#working-with-sharing-create) in the *AWS RAM User Guide*, choose `Parameter Store Advanced Parameters` as the resource type and either of these managed permissions, depending on whether you want users to view parameter history or not.
+When you follow the steps in [Creating a resource share in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing.html#working-with-sharing-create) in the *AWS RAM User Guide*, choose `Parameter Store Advanced Parameters` as the resource type. Select either of the managed permissions based on whether you want users to view parameter history.
 
 **Note**
 If you're retrieving shared parameters programmatically (for example, using AWS Lambda) you might need to add the `ssm:GetResourcePolicies` and `ssm:PutResourcePolicy` permissions to any IAM roles calling AWS Resource Access Manager API actions.
@@ -157,7 +157,7 @@ If you're retrieving shared parameters programmatically (for example, using AWS 
 ## Maximum throughput for shared parameters
 <a name="throughput"></a>
 
-Systems Manager limits the maximum throughput (transactions per second) for the [https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameter.html](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameter.html) and [https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameters.html](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameters.html). operations. Throughput is enforced at the individual account level. Therefore, each account that consumes a shared parameter can use its maximum allowed throughput without being affected by other accounts. For more information about maximum throughput for parameters, see the following topics:
+Systems Manager limits the maximum throughput (transactions per second) for the [GetParameter](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameter.html) and [GetParameters](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameters.html). operations. Throughput is enforced at the individual account level. Therefore, each account that consumes a shared parameter can use its maximum allowed throughput without being affected by other accounts. For more information about maximum throughput for parameters, see the following topics:
 + [Increasing Parameter Store throughput](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-throughput.html)
 + [Systems Manager Service quotas](https://docs.aws.amazon.com/general/latest/gr/ssm.html#limits_ssm) in the *Amazon Web Services General Reference*.
 

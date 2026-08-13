@@ -31,6 +31,7 @@ You can also use tags in AWS STS to add custom attributes when you assume a role
 + [Tag instance profiles for Amazon EC2 roles](id_tags_instance-profiles.md)
 + [Tag server certificates](id_tags_server-certificates.md)
 + [Tag virtual MFA devices](id_tags_virtual-mfa.md)
++ [Tag account access manager instances](id_tags_aam.md)
 + [Pass session tags in AWS STS](id_session-tags.md)
 
 ## Choose an AWS tag naming convention

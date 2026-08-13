@@ -22,7 +22,7 @@ It is impractical to perform locally debug canaries that rely on visual monitori
 
 1. Install the AWS SAM CLI. For more information, see [Installing the AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html).
 
-1. Install Visual Studio Code Editor or JetBrains IDE. For more information, see [https://code.visualstudio.com/](https://code.visualstudio.com/) or [https://www.jetbrains.com/ides/](https://www.jetbrains.com/ides/)
+1. Install Visual Studio Code Editor or JetBrains IDE. For more information, see [Visual Studio Code](https://code.visualstudio.com/) or [JetBrains IDE](https://www.jetbrains.com/ides/)
 
 1. Install Docker to work with the AWS SAM CLI. Make sure to start the docker daemon. For more information, see [Installing  Docker to use with the AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-docker.html).
 

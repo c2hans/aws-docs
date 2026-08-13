@@ -111,7 +111,7 @@ If you later want to change the scope of an associated access policy, run the pr
    ```
    {
        "clusterName": "my-cluster",
-       "principalArn": "arn:aws:iam::111122223333",
+       "principalArn": "arn:aws:iam::111122223333:role/my-role",
        "associatedAccessPolicies": [
            {
                "policyArn": "arn:aws:eks::aws:cluster-access-policy/AmazonEKSViewPolicy",

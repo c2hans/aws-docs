@@ -65,7 +65,7 @@ For procedures describing how to use for configuring Active Directory authentica
 ## Creating new ONTAP users for file system and SVM administration
 <a name="file-system-roles-and-users"></a>
 
-Each ONTAP user is associated with an SVM or the file system. File system users with the `fsxadmin` role can create new SVM roles and users by using the [https:/docs.netapp.com/us-en/ontap-cli-9141/security-login-create.html](https:/docs.netapp.com/us-en/ontap-cli-9141/security-login-create.html) ONTAP CLI command.
+Each ONTAP user is associated with an SVM or the file system. File system users with the `fsxadmin` role can create new SVM roles and users by using the [`security login create`](https:/docs.netapp.com/us-en/ontap-cli-9141/security-login-create.html) ONTAP CLI command.
 
 The `security login create` command creates a login method for the management utility. A login method consists of a user name, an application (access method), and an authentication method. A user name can be associated with multiple applications. It can optionally include an access-control role name. If an Active Directory, LDAP, or NIS group name is used, then the login method gives access to users belonging to the specified group. If the user is a member of multiple groups provisioned in the security login table, then the user will get access to a combined list of the commands authorized for the individual groups.
 

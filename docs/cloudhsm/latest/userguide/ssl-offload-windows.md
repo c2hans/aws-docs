@@ -62,7 +62,7 @@ For information on creating a user, see [Managing HSM users with CloudHSM CLI](m
 
 1. [Set the login credentials for the HSM](ksp-library-authentication.md), using the CU user name and password that you created in the previous step.
 
-1. In step 5, if you used Windows Credentials Manager to set HSM credentials, download [https://live.sysinternals.com/psexec.exe](https://live.sysinternals.com/psexec.exe) from SysInternals to run the following command as *NT Authority\\SYSTEM*:
+1. In step 5, if you used Windows Credentials Manager to set HSM credentials, download [`psexec.exe`](https://live.sysinternals.com/psexec.exe) from SysInternals to run the following command as *NT Authority\\SYSTEM*:
 
    ```
    psexec.exe -s "C:\Program Files\Amazon\CloudHsm\tools\set_cloudhsm_credentials.exe" --username {{<USERNAME>}} --password {{<PASSWORD>}}
@@ -131,7 +131,7 @@ For information on creating a user, see [Managing HSM users with CloudHSM CLI](m
 
 1. [Set the login credentials for the HSM](ksp-library-prereq.md), using the CU user name and password that you created in the previous step.
 
-1. In step 5, if you used Windows Credentials Manager to set HSM credentials, download [https://live.sysinternals.com/psexec.exe](https://live.sysinternals.com/psexec.exe) from SysInternals to run the following command as *NT Authority\\SYSTEM*:
+1. In step 5, if you used Windows Credentials Manager to set HSM credentials, download [`psexec.exe`](https://live.sysinternals.com/psexec.exe) from SysInternals to run the following command as *NT Authority\\SYSTEM*:
 
    ```
    psexec.exe -s "C:\Program Files\Amazon\CloudHsm\tools\set_cloudhsm_credentials.exe" --username {{<USERNAME>}} --password {{<PASSWORD>}}

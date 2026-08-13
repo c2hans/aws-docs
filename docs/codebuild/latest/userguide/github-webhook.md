@@ -16,6 +16,7 @@ For GitHub, you can choose one or more of the following events: `PUSH`, `PULL_RE
 
 **One or more optional filters**
 Use a regular expression to specify a filter. For an event to trigger a build, every filter within the group associated with it must evaluate to true.
+CodeBuild evaluates filter patterns using RE2 regular expression syntax, which does not support lookahead, lookbehind, backreferences, or atomic groups. For more information, see the RE2 [Syntax](https://github.com/google/re2/wiki/Syntax) page on the GitHub website.
 `ACTOR_ACCOUNT_ID` (`ACTOR_ID` in the console)
 A webhook event triggers a build when a GitHub or GitHub Enterprise Server account ID matches the regular expression pattern. This value is found in the `id` property of the `sender` object in the webhook payload.
 `HEAD_REF`
@@ -34,7 +35,7 @@ A webhook triggers a build when the release name matches the regular expression 
 `REPOSITORY_NAME`
 A webhook triggers a build when the repository name matches the regular expression pattern. A `REPOSITORY_NAME` filter can only be used with GitHub global or organization webhooks.
 `ORGANIZATION_NAME`
-A webhook triggers a build when the organization name matches the regular expression pattern. A `ORGANIZATION_NAME` filter can only be used with GitHub global webhooks.
+A webhook triggers a build when the organization name matches the regular expression pattern. An `ORGANIZATION_NAME` filter can only be used with GitHub global webhooks.
 `WORKFLOW_NAME`
 A webhook triggers a build when the workflow name matches the regular expression pattern. A `WORKFLOW_NAME` filter can be used with GitHub Actions workflow job queued request events.
 

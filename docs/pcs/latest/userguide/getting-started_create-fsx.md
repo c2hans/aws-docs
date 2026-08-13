@@ -21,7 +21,7 @@ Amazon FSx for Lustre makes it easy and cost-effective to launch and run the pop
 1. On the **Specify file system details** page, set the following parameters:
    + Under **File system details**
      + For **Name**, enter `getstarted-fsx`
-     + For **Deployment and storage type**, choose **Persistent, SSD**
+     + For **Deployment and storage type**, choose **Persistent, SSD**. Persistent file systems store data durably, which suits a shared directory that outlives individual compute nodes.
      + For **Throughput per unit of storage**, choose **125 MB/s/TiB**
      + For **Storage capacity**, enter 1.2 TiB
      + For **Metadata Configuration**, choose **Automatic**
@@ -29,7 +29,7 @@ Amazon FSx for Lustre makes it easy and cost-effective to launch and run the pop
    + Under **Network & security**
      + For **Virtual Private Cloud (VPC)**, choose the VPC named `hpc-networking:Large-Scale-HPC`
      + For **VPC Security Groups**, leave the security group named `default`
-     + For **Subnet**, choose the subnet where the name starts with `hpc-networking:PrivateSubnetA`
+     + For **Subnet**, choose the subnet where the name starts with `hpc-networking:PrivateSubnetA`. Place the file system in the same subnet as your compute nodes so that they reach it over the local network.
    + Leave the other options set to their default values.
    + Choose **Next**.
 
@@ -37,7 +37,7 @@ Amazon FSx for Lustre makes it easy and cost-effective to launch and run the pop
 
 1.  Navigate to the details page for the FSx for Lustre file system you created.
 
-1. Make a note of the **File system ID** and the **Mount name**. You use this information later.
+1. Make a note of the **DNS name** and the **Mount name**. You provide both values later when you configure the node lifecycle action that mounts this file system. The `mount-fsx-lustre` script mounts the file system by its DNS name, not its file system ID.
 
 **Note**
  The **Status** field shows **Creating** while the file system is being provisioned. File system creation can take several minutes. Wait until it completes before proceeding with the rest of the tutorial.

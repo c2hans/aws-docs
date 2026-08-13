@@ -23,12 +23,12 @@ You can use the following operators in calculated fields. Quick uses the standar
 + NOT
 
 Amazon Quick supports applying the following mathematical functions to an expression.
-+ `[https://docs.aws.amazon.com/quicksight/latest/user/mod-function.html](https://docs.aws.amazon.com/quicksight/latest/user/mod-function.html)({{number}}, {{divisor}})` – Finds the remainder after dividing a number by a divisor.
-+ `[https://docs.aws.amazon.com/quicksight/latest/user/log-function.html](https://docs.aws.amazon.com/quicksight/latest/user/log-function.html)({{expression}}) `– Returns the base 10 logarithm of a given expression.
-+ `[https://docs.aws.amazon.com/quicksight/latest/user/ln-function.html](https://docs.aws.amazon.com/quicksight/latest/user/ln-function.html)({{expression}}) `– Returns the natural logarithm of a given expression.
-+ `[https://docs.aws.amazon.com/quicksight/latest/user/abs-function.html](https://docs.aws.amazon.com/quicksight/latest/user/abs-function.html)({{expression}}) `– Returns the absolute value of a given expression.
-+ `[https://docs.aws.amazon.com/quicksight/latest/user/sqrt-function.html](https://docs.aws.amazon.com/quicksight/latest/user/sqrt-function.html)({{expression}}) `– Returns the square root of a given expression.
-+ `[https://docs.aws.amazon.com/quicksight/latest/user/exp-function.html](https://docs.aws.amazon.com/quicksight/latest/user/exp-function.html)({{expression}}) `– Returns the base of natural log *e* raised to the power of a given expression.
++ `[Mod](https://docs.aws.amazon.com/quicksight/latest/user/mod-function.html)({{number}}, {{divisor}})` – Finds the remainder after dividing a number by a divisor.
++ `[Log](https://docs.aws.amazon.com/quicksight/latest/user/log-function.html)({{expression}}) `– Returns the base 10 logarithm of a given expression.
++ `[Ln](https://docs.aws.amazon.com/quicksight/latest/user/ln-function.html)({{expression}}) `– Returns the natural logarithm of a given expression.
++ `[Abs](https://docs.aws.amazon.com/quicksight/latest/user/abs-function.html)({{expression}}) `– Returns the absolute value of a given expression.
++ `[Sqrt](https://docs.aws.amazon.com/quicksight/latest/user/sqrt-function.html)({{expression}}) `– Returns the square root of a given expression.
++ `[Exp](https://docs.aws.amazon.com/quicksight/latest/user/exp-function.html)({{expression}}) `– Returns the base of natural log *e* raised to the power of a given expression.
 
 To make lengthy calculations easier to read, you can use parenthesis to clarify groupings and precedence in calculations. In the following statement, you don't need parentheses. The multiplication statement is processed first, and then the result is added to five, returning a value of 26. However, parentheses make the statement easier to read and thus maintain.
 

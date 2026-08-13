@@ -66,6 +66,9 @@ Content-type: application/json
          "location": { ... }
       }
    ],
+   "filesystemConfigurations": [
+      { ... }
+   ],
    "lastUpdatedAt": "string",
    "name": "string",
    "profileConfiguration": {
@@ -128,6 +131,11 @@ Array Members: Minimum number of 0 items. Maximum number of 100 items.
 The list of browser extensions that are configured in the browser session.
 Type: Array of [BrowserExtension](API_BrowserExtension.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
+
+ ** [filesystemConfigurations](#API_GetBrowserSession_ResponseSyntax) **   <a name="BedrockAgentCore-GetBrowserSession-response-filesystemConfigurations"></a>
+The file system configurations for the browser session. Each entry describes an access point and its mount path.
+Type: Array of [ToolsFileSystemConfiguration](API_ToolsFileSystemConfiguration.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 
  ** [lastUpdatedAt](#API_GetBrowserSession_ResponseSyntax) **   <a name="BedrockAgentCore-GetBrowserSession-response-lastUpdatedAt"></a>
 The time at which the browser session was last updated.

@@ -95,7 +95,7 @@ If you set the task definition parameter `initProcessEnabled` to `true`, this st
 ### Turning on ECS Exec for your tasks and services
 <a name="ecs-exec-enabling"></a>
 
-You can turn on the ECS Exec feature for your services and standalone tasks by specifying the `--enable-execute-command` flag when using one of the following AWS CLI commands: [https://docs.aws.amazon.com/cli/latest/reference/ecs/create-service.html](https://docs.aws.amazon.com/cli/latest/reference/ecs/create-service.html), [https://docs.aws.amazon.com/cli/latest/reference/ecs/update-service.html](https://docs.aws.amazon.com/cli/latest/reference/ecs/update-service.html), [https://docs.aws.amazon.com/cli/latest/reference/ecs/start-task.html](https://docs.aws.amazon.com/cli/latest/reference/ecs/start-task.html), or [https://docs.aws.amazon.com/cli/latest/reference/ecs/run-task.html](https://docs.aws.amazon.com/cli/latest/reference/ecs/run-task.html).
+You can turn on the ECS Exec feature for your services and standalone tasks by specifying the `--enable-execute-command` flag when using one of the following AWS CLI commands: [`create-service`](https://docs.aws.amazon.com/cli/latest/reference/ecs/create-service.html), [`update-service`](https://docs.aws.amazon.com/cli/latest/reference/ecs/update-service.html), [`start-task`](https://docs.aws.amazon.com/cli/latest/reference/ecs/start-task.html), or [`run-task`](https://docs.aws.amazon.com/cli/latest/reference/ecs/run-task.html).
 
 For example, if you run the following command, the ECS Exec feature is turned on for a newly created service that runs on Fargate. For more information about creating services, see [create-service](https://docs.aws.amazon.com/cli/latest/reference/ecs/create-service.html).
 

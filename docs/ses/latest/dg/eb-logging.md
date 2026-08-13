@@ -89,16 +89,16 @@ To enable logging for Mail Manager resources using the console:
 
 To enable logging for Mail Manager resources using the CloudWatch Logs API, you will need to:
 
-1. Create a DeliverySource with [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliverySource.html](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliverySource.html).
+1. Create a DeliverySource with [`PutDeliverySource`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliverySource.html).
 
-1. Create a DeliveryDestination with [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestination.html](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestination.html).
+1. Create a DeliveryDestination with [`PutDeliveryDestination`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestination.html).
 
-1. Create a Delivery by pairing exactly one delivery source and one delivery destination by using [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateDelivery.html](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateDelivery.html).
+1. Create a Delivery by pairing exactly one delivery source and one delivery destination by using [`CreateDelivery`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateDelivery.html).
 
 You can view examples of IAM role and permissions policies with all the required permissions for your specific logging destination in the [Logging that requires additional permissions [V2]](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html#AWS-vended-logs-permissions-V2) section of the *Amazon CloudWatch Logs User Guide*, and follow the IAM role and permissions policy examples for your logging destination, including allowing updates to your specific logging destination resource, such as *CloudWatch Logs*, *S3*, or *Firehose*.
 
 **Note**
-When creating a DeliverySource, the [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliverySource.html#API_PutDeliverySource_RequestSyntax](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliverySource.html#API_PutDeliverySource_RequestSyntax) can be an Ingress endpoint ARN or a Rule set ARN. Depending on the DeliverySource, the [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliverySource.html#API_PutDeliverySource_RequestSyntax](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliverySource.html#API_PutDeliverySource_RequestSyntax) can be as follows:
+When creating a DeliverySource, the [`resourceArn`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliverySource.html#API_PutDeliverySource_RequestSyntax) can be an Ingress endpoint ARN or a Rule set ARN. Depending on the DeliverySource, the [`logType`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliverySource.html#API_PutDeliverySource_RequestSyntax) can be as follows:
 **Ingress endpoint ARN** – `APPLICATION_LOGS` or `TRAFFIC_POLICY_DEBUG_LOGS`
 **Rule set ARN** – `APPLICATION_LOGS`
 

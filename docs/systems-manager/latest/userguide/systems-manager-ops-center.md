@@ -9,9 +9,9 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 
 Operations tools are a suite of capabilities that help you manage your AWS resources.
 + [Amazon CloudWatch dashboards hosted by Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-cloudwatch-dashboards.html) are customizable home pages in the CloudWatch console that you can use to monitor your resources across AWS Regions in a single view.
-+ [https://docs.aws.amazon.com/systems-manager/latest/userguide/Explorer.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/Explorer.html) is a customizable operations dashboard that reports information about your AWS resources. Explorer displays an aggregated view of operations data (OpsData) for your AWS accounts and across AWS Regions.
++ [Explorer](https://docs.aws.amazon.com/systems-manager/latest/userguide/Explorer.html) is a customizable operations dashboard that reports information about your AWS resources. Explorer displays an aggregated view of operations data (OpsData) for your AWS accounts and across AWS Regions.
 + [Incident Manager](https://docs.aws.amazon.com/incident-manager/latest/userguide/what-is-incident-manager.html) helps you mitigate and recover from incidents affecting your applications hosted on AWS.
-+ [https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter.html) provides a central location where operations engineers and IT professionals can view, investigate, and resolve operational work items (OpsItems) related to AWS resources.
++ [OpsCenter](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter.html) provides a central location where operations engineers and IT professionals can view, investigate, and resolve operational work items (OpsItems) related to AWS resources.
 
 **Topics**
 + [AWS Systems Manager Incident Manager](incident-manager.md)

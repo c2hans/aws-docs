@@ -97,7 +97,7 @@ This policy includes the following permissions.
 + `workspaces` – Allow principals to troubleshoot technical support cases related to Amazon WorkSpaces. This includes technical support categories such as Workspaces (Windows).
 + `workspaces-web` – Allow principals to troubleshoot technical support cases related to Amazon WorkSpaces Secure Browser. This includes technical support categories such as Workspaces (Windows).
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerLedSupportReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerLedSupportReadOnlyAccess.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AWSPartnerLedSupportReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerLedSupportReadOnlyAccess.html) in the *AWS Managed Policy Reference*.
 
 ## AWS Partner-Led Support updates to AWS managed policies
 <a name="managed-policies-partner-led-support-updates"></a>

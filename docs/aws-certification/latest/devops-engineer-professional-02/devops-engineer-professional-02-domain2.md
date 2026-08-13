@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/devops-engineer
 
 ### Skills in:
 <a name="dop-02-task-2-1-skills"></a>
-+ Composing and deploying IaC templates (for example, AWS Serverless Application Model [AWS SAM], AWS CloudFormation, AWS Cloud Development Kit [AWS CDK])
++ Composing and deploying IaC templates (for example, AWS SAM, AWS CloudFormation, AWS CDK)
 + Applying CloudFormation stack sets across multiple accounts and AWS Regions
 + Determining optimal configuration management services (for example, AWS OpsWorks, AWS Systems Manager, AWS Config, AWS AppConfig)
 + Implementing infrastructure patterns, governance controls, and security standards into reusable IaC templates (for example, AWS Service Catalog, CloudFormation modules, AWS CDK)

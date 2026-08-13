@@ -159,7 +159,7 @@ IAM roles used for indexes cannot be used for data sources. If you are unsure if
 **To connect Amazon Kendra to Aurora (PostgreSQL)**
 
 You must specify the following using the [TemplateConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) API:
-+ **Data source**—Specify the data source type as `JDBC` when you use the [https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) JSON schema. Also specify the data source as `TEMPLATE` when you call the [https://docs.aws.amazon.com/kendra/latest/dg/API_CreateDataSource.html](https://docs.aws.amazon.com/kendra/latest/dg/API_CreateDataSource.html) API.
++ **Data source**—Specify the data source type as `JDBC` when you use the [TemplateConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) JSON schema. Also specify the data source as `TEMPLATE` when you call the [CreateDataSource](https://docs.aws.amazon.com/kendra/latest/dg/API_CreateDataSource.html) API.
 + **Database type**—You must specify the database type as `postgresql`.
 + **SQL query**—Specify SQL query statements like SELECT and JOIN operations. SQL queries must be less than 32KB. Amazon Kendra will crawl all database content that matches your query.
 + **Sync mode**—Specify how Amazon Kendra should update your index when your data source content changes. When you sync your data source with Amazon Kendra for the first time, all content is crawled and indexed by default. You must run a full sync of your data if your initial sync failed, even if you don't choose full sync as your sync mode option. You can choose between:

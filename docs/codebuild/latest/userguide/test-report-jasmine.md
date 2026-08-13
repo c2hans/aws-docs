@@ -11,7 +11,7 @@ The procedure requires the following prerequisites:
 + You have an existing CodeBuild project.
 + Your project is a Node.js project that is set up to use the Jasmine testing framework.
 
-Add the [https://www.npmjs.com/package/jasmine-reporters](https://www.npmjs.com/package/jasmine-reporters) package to the `devDependencies` section of your project's `package.json` file. This package has a collection of JavaScript reporter classes that can be used with Jasmine.
+Add the [`jasmine-reporters`](https://www.npmjs.com/package/jasmine-reporters) package to the `devDependencies` section of your project's `package.json` file. This package has a collection of JavaScript reporter classes that can be used with Jasmine.
 
 ```
 npm install --save-dev jasmine-reporters
@@ -89,7 +89,7 @@ reports:
     base-directory: {{<test report directory>}}
 ```
 
-If you are using the the `NunitXml` report format, change the `file-format` value to the following.
+If you are using the `NunitXml` report format, change the `file-format` value to the following.
 
 ```
     file-format: NUNITXML

@@ -30,6 +30,7 @@ X-Amzn-SageMaker-Target-Container-Hostname: {{TargetContainerHostname}}
 X-Amzn-SageMaker-Inference-Id: {{InferenceId}}
 X-Amzn-SageMaker-Inference-Component: {{InferenceComponentName}}
 X-Amzn-SageMaker-Session-Id: {{SessionId}}
+X-Amzn-SageMaker-Prefix-Aware-Id: {{PrefixAwareId}}
 
 {{Body}}
 ```
@@ -69,6 +70,12 @@ Pattern: `^[a-zA-Z0-9]([\-a-zA-Z0-9]*[a-zA-Z0-9])?$`
 
  ** [InferenceId](#API_runtime_InvokeEndpointWithResponseStream_RequestSyntax) **   <a name="sagemaker-runtime_InvokeEndpointWithResponseStream-request-InferenceId"></a>
 An identifier that you assign to your request.
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `\A\S[\p{Print}]*\z`
+
+ ** [PrefixAwareId](#API_runtime_InvokeEndpointWithResponseStream_RequestSyntax) **   <a name="sagemaker-runtime_InvokeEndpointWithResponseStream-request-PrefixAwareId"></a>
+An optional, stable identifier that serves as a routing hint for prefix-aware routing. The service routes requests with the same prefix and the same identifier to the same instance. If requests from different applications might have the same prompt prefix, set a different identifier for each application to differentiate their routing decisions.
+Applies only to endpoints configured with a `RoutingStrategy` of `PREFIX_AWARE`.
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `\A\S[\p{Print}]*\z`
 

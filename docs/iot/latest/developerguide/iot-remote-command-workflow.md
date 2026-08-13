@@ -24,7 +24,7 @@ To create and manage commands for your devices, perform the following steps.
 
 **Create a command resource**
 
-   Create a Command from the [Command Hub](https://console.aws.amazon.com/iot/home#/commandHub) or using the [https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCommand.html](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCommand.html) API.
+   Create a Command from the [Command Hub](https://console.aws.amazon.com/iot/home#/commandHub) or using the [`CreateCommand`](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCommand.html) API.
 
 1.
 

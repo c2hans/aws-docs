@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/ddm-example.html
 # Dynamic data masking end-to-end example
 <a name="ddm-example"></a>
 
-The following is an end-to-end example showing how you can create and attach masking policies to a column. These policies let users access a column and see different values, depending on the degree of obfuscation in the policies attached to their roles. You must be a superuser or have the [https://docs.aws.amazon.com/redshift/latest/dg/r_roles-default.html](https://docs.aws.amazon.com/redshift/latest/dg/r_roles-default.html) role to run this example.
+The following is an end-to-end example showing how you can create and attach masking policies to a column. These policies let users access a column and see different values, depending on the degree of obfuscation in the policies attached to their roles. You must be a superuser or have the [`sys:secadmin`](https://docs.aws.amazon.com/redshift/latest/dg/r_roles-default.html) role to run this example.
 
 ## Creating a masking policy
 <a name="ddm-example-create"></a>

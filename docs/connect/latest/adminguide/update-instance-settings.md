@@ -89,7 +89,7 @@ If you enabled chat barge-in before the release of multi-party chats in December
 
 1. In the navigation pane, choose **Analytics tools**.
 
-1. Choose **Enable Contact Lens**. For more information, see [Analyze conversations using conversational analytics in Connect Customer Contact Lens](analyze-conversations.md).
+1. Choose **Enable conversational analytics**. For more information, see [Analyze conversations using conversational analytics in Connect Customer conversational analytics](analyze-conversations.md).
 
 1. Choose **Save**.
 

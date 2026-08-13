@@ -35,7 +35,7 @@ Choose your preferred access method, and follow these steps to review details fo
 + The severity of the control.
 + The status of the control.
 
-On the console, you can also review a list of recent findings for the control. To do this programmatically, you can use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindings.html) operation of the Security Hub CSPM API.
+On the console, you can also review a list of recent findings for the control. To do this programmatically, you can use the [GetFindings](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindings.html) operation of the Security Hub CSPM API.
 
 ------
 #### [ Security Hub CSPM console ]
@@ -49,7 +49,7 @@ On the console, you can also review a list of recent findings for the control. T
 ------
 #### [ Security Hub CSPM API ]
 
-1. Run `[https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListSecurityControlDefinitions.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListSecurityControlDefinitions.html)`, and provide one or more standard ARNs to get a list of control IDs for that standard. To obtain standard ARNs, run [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_DescribeStandards.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_DescribeStandards.html). If you don't provide a standard ARN, this API returns all Security Hub CSPM control IDs. This API returns standard-agnostic security control IDs, not the standard-based control IDs that existed prior to these feature releases.
+1. Run `[`ListSecurityControlDefinitions`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListSecurityControlDefinitions.html)`, and provide one or more standard ARNs to get a list of control IDs for that standard. To obtain standard ARNs, run [`DescribeStandards`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_DescribeStandards.html). If you don't provide a standard ARN, this API returns all Security Hub CSPM control IDs. This API returns standard-agnostic security control IDs, not the standard-based control IDs that existed prior to these feature releases.
 
    **Example request:**
 
@@ -59,7 +59,7 @@ On the console, you can also review a list of recent findings for the control. T
    }
    ```
 
-1. Run `[https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchGetSecurityControls.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchGetSecurityControls.html)` to get details about one or more controls in the current AWS account and AWS Region.
+1. Run `[`BatchGetSecurityControls`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchGetSecurityControls.html)` to get details about one or more controls in the current AWS account and AWS Region.
 
    **Example request:**
 
@@ -72,13 +72,13 @@ On the console, you can also review a list of recent findings for the control. T
 ------
 #### [ AWS CLI ]
 
-1. Run the `[https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-security-control-definitions.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-security-control-definitions.html)` command, and provide one or more standard ARNs to get a list of control IDs. To obtain standard ARNs, run the `describe-standards` command. If you don't provide a standard ARN, this command returns all Security Hub CSPM control IDs. This command returns standard-agnostic security control IDs, not the standard-based control IDs that existed prior to these feature releases.
+1. Run the `[`list-security-control-definitions`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-security-control-definitions.html)` command, and provide one or more standard ARNs to get a list of control IDs. To obtain standard ARNs, run the `describe-standards` command. If you don't provide a standard ARN, this command returns all Security Hub CSPM control IDs. This command returns standard-agnostic security control IDs, not the standard-based control IDs that existed prior to these feature releases.
 
    ```
    aws securityhub --region {{us-east-1}} list-security-control-definitions --standards-arn "arn:aws:securityhub:{{us-east-1::standards/aws-foundational-security-best-practices/v/1.0.0}}"
    ```
 
-1. Run the `[https://docs.aws.amazon.com/cli/latest/reference/securityhub/batch-get-security-controls.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/batch-get-security-controls.html)` command to get details about one or more controls in the current AWS account and AWS Region.
+1. Run the `[`batch-get-security-controls`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/batch-get-security-controls.html)` command to get details about one or more controls in the current AWS account and AWS Region.
 
    ```
    aws securityhub --region {{us-east-1}} batch-get-security-controls --security-control-ids {{'["Config.1", "IAM.1"]'}}

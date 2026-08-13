@@ -74,7 +74,7 @@ The following example creates an Amazon FSx file system linked to the `amzn-s3-d
 **Note**
 The default import preferences setting for importing data from a linked S3 bucket using the CLI and API is `NONE`, which is different from the default behavior when using the console.
 
-To create an FSx for Lustre file system, use the Amazon FSx CLI command [https://docs.aws.amazon.com/cli/latest/reference/fsx/create-file-system.html](https://docs.aws.amazon.com/cli/latest/reference/fsx/create-file-system.html), as shown below. The corresponding API operation is [https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSystem.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSystem.html).
+To create an FSx for Lustre file system, use the Amazon FSx CLI command [`create-file-system`](https://docs.aws.amazon.com/cli/latest/reference/fsx/create-file-system.html), as shown below. The corresponding API operation is [`CreateFileSystem`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSystem.html).
 
 ```
 $ aws fsx create-file-system \
@@ -160,7 +160,7 @@ You can view a file system's export path using the FSx for Lustre console, the A
 ------
 #### [ CLI ]
 
-To determine the export path for your file system, use the [https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-file-systems.html](https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-file-systems.html) AWS CLI command.
+To determine the export path for your file system, use the [`describe-file-systems`](https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-file-systems.html) AWS CLI command.
 
 ```
 aws fsx describe-file-systems
@@ -218,7 +218,7 @@ The data repository lifecycle state provides status information about the file s
 + **Updating**: The data repository configuration is undergoing a customer-initiated update that might affect its availability.
 + **Misconfigured**: Amazon FSx cannot automatically import updates from the S3 bucket until the data repository configuration is corrected. For more information, see [Troubleshooting a misconfigured linked S3 bucket](troubleshooting-misconfigured-data-repository.md).
 
-You can view a file system's linked data repository lifecycle state using the Amazon FSx console, the AWS Command Line Interface, and the Amazon FSx API. In the Amazon FSx console, you can access the data repository **Lifecycle state** in the **Data Repository Integration** pane of the **Data Repository** tab for the file system. The `Lifecycle` property is located in the `DataRepositoryConfiguration` object in the response of a [https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-file-systems.html](https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-file-systems.html) CLI command (the equivalent API action is [https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeFileSystems.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeFileSystems.html)).
+You can view a file system's linked data repository lifecycle state using the Amazon FSx console, the AWS Command Line Interface, and the Amazon FSx API. In the Amazon FSx console, you can access the data repository **Lifecycle state** in the **Data Repository Integration** pane of the **Data Repository** tab for the file system. The `Lifecycle` property is located in the `DataRepositoryConfiguration` object in the response of a [`describe-file-systems`](https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-file-systems.html) CLI command (the equivalent API action is [`DescribeFileSystems`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeFileSystems.html)).
 
 ## Automatically import updates from your S3 bucket
 <a name="legacy-auto-import-from-s3"></a>
@@ -290,7 +290,7 @@ You can also update a file system's import preferences after it is created using
 ------
 #### [ CLI ]
 
-To update import preferences, use the [https://docs.aws.amazon.com/cli/latest/reference/fsx/update-file-system.html](https://docs.aws.amazon.com/cli/latest/reference/fsx/update-file-system.html) CLI command. The corresponding API operation is [https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileSystem.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileSystem.html).
+To update import preferences, use the [`update-file-system`](https://docs.aws.amazon.com/cli/latest/reference/fsx/update-file-system.html) CLI command. The corresponding API operation is [`UpdateFileSystem`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileSystem.html).
 
 After you successfully update the file system's `AutoImportPolicy`, Amazon FSx returns the description of the updated file system as JSON, as shown here:
 

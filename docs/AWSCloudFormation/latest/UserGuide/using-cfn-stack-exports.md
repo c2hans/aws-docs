@@ -15,7 +15,7 @@ To share information between stacks, you *export* output values from one stack a
 
 1. When you create or update that stack, CloudFormation exports the output values, making them available to other stacks in the same AWS account and Region.
 
-1. In the other stack's template, you use the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-importvalue.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-importvalue.html) function to import the exported values from the first stack.
+1. In the other stack's template, you use the [Fn::ImportValue](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-importvalue.html) function to import the exported values from the first stack.
 
 1. When you create or update the second stack (for example, the web server stack), CloudFormation automatically retrieves the exported values from the first stack and uses them.
 
@@ -55,7 +55,7 @@ If you need to view the exported output values from your stacks, use one of the 
 1. From the left navigation pane, choose **Exports**.
 
 **To list exported output values (AWS CLI)**
-Use the following [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-exports.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-exports.html) command. Replace {{us-east-1}} with your AWS Region.
+Use the following [list-exports](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-exports.html) command. Replace {{us-east-1}} with your AWS Region.
 
 ```
 aws cloudformation list-exports --region {{us-east-1}}
@@ -103,7 +103,7 @@ To view the stacks that import an exported output value, use one of the followin
 1. To see which stacks import a given export value, choose the **Export Name** for that export value. CloudFormation displays the export details page, which lists all the stacks that are importing the value.
 
 **To list stacks that import an exported output value (AWS CLI)**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-imports.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-imports.html) command. Replace {{us-east-1}} with your AWS Region and `{{private-vpc-vpcid}}` with the name of the exported output value.
+Use the [list-imports](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-imports.html) command. Replace {{us-east-1}} with your AWS Region and `{{private-vpc-vpcid}}` with the name of the exported output value.
 
 ```
 aws cloudformation list-imports --region {{us-east-1}} \

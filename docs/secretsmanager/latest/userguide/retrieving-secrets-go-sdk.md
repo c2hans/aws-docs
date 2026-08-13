@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrievi
 
 In applications, you can retrieve your secrets by calling `GetSecretValue` or `BatchGetSecretValue`in any of the AWS SDKs. However, we recommend that you cache your secret values by using client-side caching. Caching secrets improves speed and reduces your costs.
 
-For Go applications, use the [Secrets Manager Go-based caching component](retrieving-secrets_cache-go.md) or call the SDK directly with [https://docs.aws.amazon.com/sdk-for-go/api/service/secretsmanager/#SecretsManager.GetSecretValue](https://docs.aws.amazon.com/sdk-for-go/api/service/secretsmanager/#SecretsManager.GetSecretValue) or [https://docs.aws.amazon.com/sdk-for-go/api/service/secretsmanager/#SecretsManager.BatchGetSecretValue](https://docs.aws.amazon.com/sdk-for-go/api/service/secretsmanager/#SecretsManager.BatchGetSecretValue).
+For Go applications, use the [Secrets Manager Go-based caching component](retrieving-secrets_cache-go.md) or call the SDK directly with [`GetSecretValue`](https://docs.aws.amazon.com/sdk-for-go/api/service/secretsmanager/#SecretsManager.GetSecretValue) or [`BatchGetSecretValue`](https://docs.aws.amazon.com/sdk-for-go/api/service/secretsmanager/#SecretsManager.BatchGetSecretValue).
 
 The following code example shows how to get a Secrets Manager secret value.
 

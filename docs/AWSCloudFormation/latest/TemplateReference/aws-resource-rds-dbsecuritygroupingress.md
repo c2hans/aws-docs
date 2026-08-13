@@ -91,7 +91,7 @@ AWS account number of the owner of the EC2 security group specified in the `EC2S
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the DB security group that this ingress rule is associated with.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-rds-dbsecuritygroupingress-return-values-fn--getatt"></a>

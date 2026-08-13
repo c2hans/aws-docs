@@ -19,7 +19,7 @@ The following sections describe how to create an Object Lambda Access Point by u
 + An AWS CloudFormation template
 + The AWS Cloud Development Kit (AWS CDK)
 
-For information about how to create an Object Lambda Access Point by using the REST API, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateAccessPointForObjectLambda.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateAccessPointForObjectLambda.html) in the *Amazon Simple Storage Service API Reference*.
+For information about how to create an Object Lambda Access Point by using the REST API, see [`CreateAccessPointForObjectLambda`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateAccessPointForObjectLambda.html) in the *Amazon Simple Storage Service API Reference*.
 
 ## Create an Object Lambda Access Point
 <a name="create-olap"></a>
@@ -216,7 +216,7 @@ You can create an Object Lambda Access Point by using the default configuration 
 
 For information about modifying the AWS CloudFormation template's default configuration, see [Automate S3 Object Lambda setup with a CloudFormation template](olap-using-cfn-template.md).
 
-For information about configuring Object Lambda Access Points by using CloudFormation without the template, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3objectlambda-accesspoint.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3objectlambda-accesspoint.html) in the *AWS CloudFormation User Guide*.
+For information about configuring Object Lambda Access Points by using CloudFormation without the template, see [`AWS::S3ObjectLambda::AccessPoint`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3objectlambda-accesspoint.html) in the *AWS CloudFormation User Guide*.
 
 **To upload the Lambda function deployment package**
 

@@ -73,7 +73,7 @@ To add tags to an existing queue using the Amazon SQS console, see [ Configuring
 
 **Resource type:** `AWS::SQS::Queue`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sqs-queue-no-public-access.html](https://docs.aws.amazon.com/config/latest/developerguide/sqs-queue-no-public-access.html)
+**AWS Config rule:** [sqs-queue-no-public-access](https://docs.aws.amazon.com/config/latest/developerguide/sqs-queue-no-public-access.html)
 
 **Schedule type:** Change triggered
 

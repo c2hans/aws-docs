@@ -9,7 +9,7 @@ To contribute to this user guide, choose the **Edit this page on GitHub** link t
 # Migrating existing `aws-auth ConfigMap` entries to access entries
 <a name="migrating-access-entries"></a>
 
-If you’ve added entries to the `aws-auth` `ConfigMap` on your cluster, we recommend that you create access entries for the existing entries in your `aws-auth` `ConfigMap`. After creating the access entries, you can remove the entries from your `ConfigMap`. You can’t associate [access policies](access-policies.md) to entries in the `aws-auth` `ConfigMap`. If you want to associate access polices to your IAM principals, create access entries.
+If you’ve added entries to the `aws-auth` `ConfigMap` on your cluster, we recommend that you create access entries for the existing entries in your `aws-auth` `ConfigMap`. After creating the access entries, you can remove the entries from your `ConfigMap`. You can’t associate [access policies](access-policies.md) to entries in the `aws-auth` `ConfigMap`. If you want to associate access policies to your IAM principals, create access entries.
 
 **Important**
 When a cluster is in `API_AND_CONFIGMAP` authentication mode and there’s a mapping for the same IAM role in both the `aws-auth` `ConfigMap` and in access entries, the role will use the access entry’s mapping for authentication. Access entries take precedence over `ConfigMap` entries for the same IAM principal.

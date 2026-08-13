@@ -19,7 +19,7 @@ This tutorial provides two options:
 
 **Important**
 Many of the actions you add to your pipeline in this procedure involve AWS resources that you need to create before you create the pipeline. AWS resources for your source actions must always be created in the same AWS Region where you create your pipeline. For example, if you create your pipeline in the US East (Ohio) Region, your CodeCommit repository must be in the US East (Ohio) Region.
-You can add cross-region actions when you create your pipeline. AWS resources for cross-region actions must be in the same AWS Region where you plan to execute the action. For more information, see [Add a cross-Region action in CodePipeline](actions-create-cross-region.md).
+You can add cross-region actions when you create your pipeline. AWS resources for cross-region actions must be in the same AWS Region where you plan to execute the action. For more information, see [Add a cross-region action in CodePipeline](actions-create-cross-region.md).
 
 ## Option 1: Deploy static website files to Amazon S3
 <a name="tutorials-s3deploy-acc"></a>
@@ -140,7 +140,7 @@ The deployment fails if you do not select **Extract file before deploy**. This i
 
    1. (Optional) In **Canned ACL**, you can apply a set of predefined grants, known as a [canned ACL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.html#canned-acl), to the uploaded artifacts.
 
-   1. (Optional) In **Cache control**, enter the caching parameters. You can set this to control caching behavior for requests/responses. For valid values, see the [http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9) header field for HTTP operations.
+   1. (Optional) In **Cache control**, enter the caching parameters. You can set this to control caching behavior for requests/responses. For valid values, see the [`Cache-Control`](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9) header field for HTTP operations.
 
    1. Choose **Next**.
 
@@ -306,7 +306,7 @@ In this section, you create a pipeline with the following actions:
 
    1. (Optional) In **Canned ACL**, you can apply a set of predefined grants, known as a [canned ACL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.html#canned-acl), to the uploaded artifacts.
 
-   1. (Optional) In **Cache control**, enter the caching parameters. You can set this to control caching behavior for requests/responses. For valid values, see the [http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9) header field for HTTP operations.
+   1. (Optional) In **Cache control**, enter the caching parameters. You can set this to control caching behavior for requests/responses. For valid values, see the [`Cache-Control`](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9) header field for HTTP operations.
 
    1. Choose **Next**.
 

@@ -18,6 +18,6 @@ The following AWS services can be specified as sources for EventBridge Pipes:
 + [Apache Kafka stream](eb-pipes-kafka.md)
 
   When you specify an Apache Kafka stream as a pipe source, you can specify an Apache Kafka stream that you manage yourself, or one managed by a third-party provider such as:
-  + [https://www.confluent.io/](https://www.confluent.io/)
-  + [https://www.cloudkarafka.com/](https://www.cloudkarafka.com/)
-  + [https://redpanda.com/](https://redpanda.com/)
+  + [Confluent Cloud](https://www.confluent.io/)
+  + [CloudKarafka](https://www.cloudkarafka.com/)
+  + [Redpanda](https://redpanda.com/)

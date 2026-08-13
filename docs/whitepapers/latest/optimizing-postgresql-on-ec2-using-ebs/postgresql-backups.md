@@ -76,7 +76,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql
 
  Additionally, you can use AWS Backup, which creates crash-consistent backups of Amazon EBS volumes that are attached to an Amazon EC2 instance. Crash consistency means that the snapshots for every Amazon EBS volume attached to the same Amazon EC2 instance are taken at the exact same moment. You no longer have to stop your instances or coordinate between multiple Amazon EBS volumes to ensure crash-consistency of your application state.
 
- Refer to the [https://docs.aws.amazon.com/aws-backup/latest/devguide/multi-volume-crash-consistent.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/multi-volume-crash-consistent.html) for details.
+ Refer to the [*AWS Backup Developer Guide*](https://docs.aws.amazon.com/aws-backup/latest/devguide/multi-volume-crash-consistent.html) for details.
 
  You can evaluate PostgreSQL performance related to storage by looking at latency when you run into performance issues of transactional operations. Further, if the performance is degraded due to PostgreSQL loading or replicating data, then throughput is evaluated. These issues are diagnosed by looking at the Amazon EBS volume metrics collected by [CloudWatch](https://aws.amazon.com/cloudwatch/).
 

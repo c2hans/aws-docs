@@ -124,7 +124,7 @@ To obtain the unique ARN for an IAM role, [view the list of roles in the IAM con
 
           `arn:aws:iam::123456789012:user/bob`
 **Note**
-To obtain the unique ARN for an IAM user, [view the list of users in the IAM console](https://console.aws.amazon.com/iamv2/home?#/users), use the [https://docs.aws.amazon.com/cli/latest/reference/iam/get-user.html](https://docs.aws.amazon.com/cli/latest/reference/iam/get-user.html) AWS CLI command, or the [https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetUser.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetUser.html) API action.
+To obtain the unique ARN for an IAM user, [view the list of users in the IAM console](https://console.aws.amazon.com/iamv2/home?#/users), use the [get-user](https://docs.aws.amazon.com/cli/latest/reference/iam/get-user.html) AWS CLI command, or the [GetUser](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetUser.html) API action.
       +  **Service principal** – To add a service principal, choose **Service principal** from the **Select principal type** dropbox. Enter the AWS service principal's name. Use the following syntax:
         + `{{service-id}}.amazonaws.com`
 
@@ -148,7 +148,7 @@ To obtain the unique ARN for an IAM user, [view the list of users in the IAM con
 #### [ AWS CLI ]
 
 **To create a resource share**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ram/create-resource-share.html](https://docs.aws.amazon.com/cli/latest/reference/ram/create-resource-share.html) command. The following command creates a resource share that is shared with all of the AWS accounts in the organization. The share contains an AWS License Manager license configuration, and it grants the default managed permissions for that resource type.
+Use the [create-resource-share](https://docs.aws.amazon.com/cli/latest/reference/ram/create-resource-share.html) command. The following command creates a resource share that is shared with all of the AWS accounts in the organization. The share contains an AWS License Manager license configuration, and it grants the default managed permissions for that resource type.
 
 **Note**
 If you want to use a customer managed permission with a resource type in this resource share, you can either use an existing customer managed permission or create a new customer managed permission. Make note of the ARN for the customer managed permission, and then create the resource share. For more information, see [Create a customer managed permission](create-customer-managed-permissions.md#create_cmp).

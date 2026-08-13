@@ -14,7 +14,7 @@ The following table lists quotas related to FIFO queues.
   - The default (minimum) delay for a queue is 0 seconds. The maximum is 15 minutes.
 
 - **Listed queues**
-  - 1,000 queues per [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ListQueues.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ListQueues.html) request.
+  - 1,000 queues per [`ListQueues`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ListQueues.html) request.
 
 - **Long polling wait time**
   - The maximum long polling wait time is 20 seconds.

@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/using-cost-
 
 **To access the Cost Estimator from the Security Hub landing page**
 
-1.  Sign in to your AWS account with your AWS organization management or delegated administrator account credentials. Open the Security Hub console in the us-east-1 region at [https://console.aws.amazon.com/securityhub/v2/home]( https://us-east-1.console.aws.amazon.com/securityhub/v2/home).
+1.  Sign in to your AWS account with your AWS organization management or delegated administrator account credentials. Open the Security Hub console in the us-east-1 region at [https://console.aws.amazon.com/securityhub/v2/home](https://us-east-1.console.aws.amazon.com/securityhub/v2/home).
 
 1. On the landing page, locate the **Pricing** card.
 
@@ -85,12 +85,12 @@ The estimator displays data from multiple sources, indicated by labels:
 
  **With cross-account access configured:**
 +  Cost Explorer data is available with organization-wide usage.
-+  Opens in view mode by default (same as management account). Can switch to edit mode to modify estimates.
++  Opens in view mode by default (same as management account). You can switch to edit mode to modify estimates.
 
  **Without cross-account access configured:**
 +  Alert displays: "Organizational usage data is not available for this account".
 +  Opens in edit mode by default for manual entry.
-+  Click "View instructions" in alert for setup guidance.
++  Choose **View instructions** in the alert for setup guidance.
 
 ### Management account
 <a name="behavior-management-account"></a>
@@ -191,40 +191,28 @@ Enter custom values in edit mode.
 <a name="cross-account-access-not-working"></a>
 
 **Problem**
-"Delegated administrator or member account displays "Organizational usage data is not available for this account" alert.
+Delegated administrator or member account displays "Organizational usage data is not available for this account" alert.
 
-**Possible causes and solutions**
+ **Review the following common causes and their solutions:**
 
-1. Cross-account role doesn't exist in management account.
+Cross-account role does not exist in management account
+Contact Management Account administrator to create the role. The cost estimator provides guided setup instructions for management account users.
 
-   1.  **Solution:** Contact Management Account administrator to create the role.
+Role name does not match exactly
+Required role name: `AwsSecurityHubCostEstimatorCrossAccountRole`. Verify role name in IAM console matches exactly (case-sensitive).
 
-   1.  The cost estimator provides guided setup instructions for management account users.
+Trust policy does not allow your account
+Verify trust policy principal includes your account ID and role name. Format: `arn:aws:iam::{YOUR_ACCOUNT_ID}:role/{YOUR_ROLE_NAME}`.
 
-1. Role name doesn't match exactly.
-
-   1.  Required role name: `AwsSecurityHubCostEstimatorCrossAccountRole`.
-
-   1.  **Solution:** Verify role name in IAM console matches exactly (case-sensitive).
-
-1. Trust policy doesn't allow your account.
-
-   1.  **Solution:** Verify trust policy principal includes your account ID and role name.
-
-   1.  Format: `arn:aws:iam::{YOUR_ACCOUNT_ID}:role/{YOUR_ROLE_NAME}`.
-
-1. Missing AssumeRole permission.
-
-   1.  **Solution:** Verify your IAM principal has `sts:AssumeRole` permission.
-
-   1.  ontact your AWS administrator to add this permission.
+Missing AssumeRole permission
+Verify your IAM principal has `sts:AssumeRole` permission. Contact your AWS administrator to add this permission.
 
  **Workaround:**
 
  Enter custom values in edit mode to manually estimate costs without Cost Explorer data.
 
  **Getting detailed instructions**
-+ Click "View instructions" link in the alert to open a modal with:
++ Choose **View instructions** in the alert to open a modal with:
   + Step-by-step setup guidance
   + Pre-populated policy templates
   + Troubleshooting tips specific to your error
@@ -237,7 +225,7 @@ Enter custom values in edit mode.
 
 **To resolve permission errors**
 
-1. Note the denied operation from the error message (e.g., `ce:GetCostAndUsage`).
+1. Note the denied operation from the error message (for example, `ce:GetCostAndUsage`).
 
 1. Choose **Copy** to copy the error details.
 
@@ -274,7 +262,7 @@ Capability displays "Not applicable" in Individual services column.
 **Explanation**
 This capability is only available through Security Hub simplified pricing, not as a standalone service.
 
-### Modified costs don't match Cost Explorer
+### Modified costs do not match Cost Explorer
 <a name="modified-costs-dont-match"></a>
 
 **Problem**

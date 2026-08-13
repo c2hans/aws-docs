@@ -53,7 +53,7 @@ Choose your preferred method, and complete the following steps to create a custo
 
 **To create a custom automation rule (API)**
 
-1. Run [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateAutomationRule.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateAutomationRule.html) from the Security Hub CSPM administrator account. This API creates a rule with a specific Amazon Resource Name (ARN).
+1. Run [`CreateAutomationRule`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateAutomationRule.html) from the Security Hub CSPM administrator account. This API creates a rule with a specific Amazon Resource Name (ARN).
 
 1. Provide a name and description for the rule.
 

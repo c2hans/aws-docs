@@ -98,32 +98,32 @@ An Application Load Balancer can be deployed on c5/c5d, m5/m5d, r5/r5d, c7i, m7i
   <tr><th>Instance type and size</th><th>EBS volume (GB)</th><th></th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2">c5/c5d</td><td></td></tr>
+  <tr><td colspan="2"><b>c5/c5d</b></td><td></td></tr>
   <tr><td>large</td><td>25</td><td></td></tr>
   <tr><td>xlarge</td><td>25</td><td></td></tr>
   <tr><td>2xlarge</td><td>25</td><td></td></tr>
   <tr><td>4xlarge</td><td>25</td><td></td></tr>
-  <tr><td colspan="2">m5/m5d</td><td></td></tr>
+  <tr><td colspan="2"><b>m5/m5d</b></td><td></td></tr>
   <tr><td>large</td><td>25</td><td></td></tr>
   <tr><td>xlarge</td><td>25</td><td></td></tr>
   <tr><td>2xlarge</td><td>25</td><td></td></tr>
   <tr><td>4xlarge</td><td>25</td><td></td></tr>
-  <tr><td colspan="2">r5/r5d</td><td></td></tr>
+  <tr><td colspan="2"><b>r5/r5d</b></td><td></td></tr>
   <tr><td>large</td><td>25</td><td></td></tr>
   <tr><td>xlarge</td><td>25</td><td></td></tr>
   <tr><td>2xlarge</td><td>25</td><td></td></tr>
   <tr><td>4xlarge</td><td>25</td><td></td></tr>
-  <tr><td colspan="2">c7i</td><td></td></tr>
+  <tr><td colspan="2"><b>c7i</b></td><td></td></tr>
   <tr><td>large</td><td>25</td><td></td></tr>
   <tr><td>xlarge</td><td>25</td><td></td></tr>
   <tr><td>2xlarge</td><td>25</td><td></td></tr>
   <tr><td>4xlarge</td><td>25</td><td></td></tr>
-  <tr><td colspan="2">m7i</td><td></td></tr>
+  <tr><td colspan="2"><b>m7i</b></td><td></td></tr>
   <tr><td>large</td><td>25</td><td></td></tr>
   <tr><td>xlarge</td><td>25</td><td></td></tr>
   <tr><td>2xlarge</td><td>25</td><td></td></tr>
   <tr><td>4xlarge</td><td>25</td><td></td></tr>
-  <tr><td colspan="2">r7i</td><td></td></tr>
+  <tr><td colspan="2"><b>r7i</b></td><td></td></tr>
   <tr><td>large</td><td>25</td><td></td></tr>
   <tr><td>xlarge</td><td>25</td><td></td></tr>
   <tr><td>2xlarge</td><td>25</td><td></td></tr>

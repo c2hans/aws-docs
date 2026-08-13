@@ -95,7 +95,7 @@ An [IAM role](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles.html) i
 ### Using temporary credentials with Tag Editor
 <a name="security_iam_roles-tempcreds"></a>
 
-In Tag Editor, you can use temporary credentials to sign in with federation, assume an IAM role, or to assume a cross-account role. You obtain temporary security credentials by calling AWS STS API operations such as [https://docs.aws.amazon.com//STS/latest/APIReference/API_AssumeRole.html](https://docs.aws.amazon.com//STS/latest/APIReference/API_AssumeRole.html) or [https://docs.aws.amazon.com//STS/latest/APIReference/API_GetFederationToken.html](https://docs.aws.amazon.com//STS/latest/APIReference/API_GetFederationToken.html).
+In Tag Editor, you can use temporary credentials to sign in with federation, assume an IAM role, or to assume a cross-account role. You obtain temporary security credentials by calling AWS STS API operations such as [AssumeRole](https://docs.aws.amazon.com//STS/latest/APIReference/API_AssumeRole.html) or [GetFederationToken](https://docs.aws.amazon.com//STS/latest/APIReference/API_GetFederationToken.html).
 
 ### Service-linked roles
 <a name="security_iam_roles-service-linked"></a>

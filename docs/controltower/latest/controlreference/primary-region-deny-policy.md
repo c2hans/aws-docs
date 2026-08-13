@@ -139,4 +139,4 @@ The format for this control is based on the following SCP.
 Based on this example SCP format, AWS Control Tower adds your governed Regions into the `aws:RequestedRegion` statement. You cannot exclude your home Region. Actions not listed in the SCP are not permitted.
 
 **Limitations**
-The OU Region deny control is subject to limitations of the [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requestedregion](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requestedregion) global condition key and [Service Control Policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) in general.
+The OU Region deny control is subject to limitations of the [`aws:RequestedRegion`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requestedregion) global condition key and [Service Control Policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) in general.

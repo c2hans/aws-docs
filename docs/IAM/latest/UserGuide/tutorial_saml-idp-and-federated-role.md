@@ -173,8 +173,8 @@ As a final step, you'll delete the stack and the resources it contains.
 <a name="tutorial_saml-idp-and-federated-role-template-resources"></a>
 
 The CloudFormation template for this tutorial will create the following resources in your account:
-+ [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-samlprovider.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-samlprovider.html): A SAML IdP that establishes trust between AWS and your external IdP.
-+ [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html): A federated IAM role that can be assumed by users authenticated through the SAML IdP.
++ [`AWS::IAM::SAMLProvider`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-samlprovider.html): A SAML IdP that establishes trust between AWS and your external IdP.
++ [`AWS::IAM::Role`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html): A federated IAM role that can be assumed by users authenticated through the SAML IdP.
 
 ### Configuration
 <a name="tutorial_saml-idp-and-federated-role-configuration"></a>

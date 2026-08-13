@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/what-is-
 AWS Cloud WAN is a managed wide-area networking (WAN) service that you can use to build, manage, and monitor a unified global network that connects resources running across your cloud and on-premises environments. It provides a central dashboard from which you can connect on-premises branch offices, data centers, and Amazon Virtual Private Clouds (VPCs) across the AWS global network. You can use simple network policies to centrally configure and automate network management and security tasks, and get a complete view of your global network. For key concepts and terms about global and core networks, see [Global and core network key concepts](#cloudwan-concepts-key).
 
 **Note**
-AWS Cloud WAN is designed to work with a core network. You can create a core network at the time you create your global network, or you can create one later on. If you want to create a global network without using a core network, use AWS Global Networks for Transit Gateways. For more information, see the [https://docs.aws.amazon.com/network-manager/latest/tgwnm/what-are-global-networks.html](https://docs.aws.amazon.com/network-manager/latest/tgwnm/what-are-global-networks.html).
+AWS Cloud WAN is designed to work with a core network. You can create a core network at the time you create your global network, or you can create one later on. If you want to create a global network without using a core network, use AWS Global Networks for Transit Gateways. For more information, see the [*AWS Global Networks for Transit Gateways User Guide*](https://docs.aws.amazon.com/network-manager/latest/tgwnm/what-are-global-networks.html).
 
 There are a number of ways you can work with AWS Cloud WAN to create and maintain your core network, policies, segments, and attachments:
 + **AWS Management console**
@@ -90,7 +90,7 @@ Costs associated with using PrivateLink are separate from any Cloud WAN costs yo
 PrivateLink only supports IPv6 dual-stack endpoints.
 Support for PrivateLink through Cloud WAN is currently available only in the us-west-2 and us-gov-west-1 Regions.
 
-For more information on PrivateLink, see the [https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html](https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html).
+For more information on PrivateLink, see the [*AWS PrivateLink Guide*](https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html).
 
 ## IPv6 support
 <a name="cloudwan-ipv6"></a>

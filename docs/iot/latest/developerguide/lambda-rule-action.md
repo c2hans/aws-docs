@@ -36,7 +36,7 @@ If you add a permission for an AWS IoT principal without providing the `source-a
       --statement-id {{unique_id}}
       --action "lambda:InvokeFunction"
   ```
-+ If you use the AWS IoT console to create a rule for the Lambda rule action, the Lambda function is triggered automatically. If you use AWS CloudFormation instead with the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-lambdaaction.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-lambdaaction.html), you must add an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html) resource. The resource then grants you permission to trigger the Lambda function.
++ If you use the AWS IoT console to create a rule for the Lambda rule action, the Lambda function is triggered automatically. If you use AWS CloudFormation instead with the [`AWS::IoT::TopicRule LambdaAction`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-lambdaaction.html), you must add an [`AWS::lambda::Permission`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html) resource. The resource then grants you permission to trigger the Lambda function.
 
   The following code shows an example of how to add this resource. In this example, replace:
   + {{function\_name}} with the name of the Lambda function.

@@ -166,7 +166,7 @@ Linting can be used to verify that your Dockerfiles are adhering to a set of pre
 ### Build images from Scratch
 <a name="_build_images_from_scratch"></a>
 
-Reducing the attack surface of your container images should be primary aim when building images. The ideal way to do this is by creating minimal images that are devoid of binaries that can be used to exploit vulnerabilities. Fortunately, Docker has a mechanism to create images from [https://docs.docker.com/develop/develop-images/baseimages/#create-a-simple-parent-image-using-scratch](https://docs.docker.com/develop/develop-images/baseimages/#create-a-simple-parent-image-using-scratch). With languages like Go, you can create a static linked binary and reference it in your Dockerfile as in this example:
+Reducing the attack surface of your container images should be primary aim when building images. The ideal way to do this is by creating minimal images that are devoid of binaries that can be used to exploit vulnerabilities. Fortunately, Docker has a mechanism to create images from [`scratch`](https://docs.docker.com/develop/develop-images/baseimages/#create-a-simple-parent-image-using-scratch). With languages like Go, you can create a static linked binary and reference it in your Dockerfile as in this example:
 
 ```
 ############################

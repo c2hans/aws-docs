@@ -183,8 +183,8 @@ If the customer managed KMS key associated with your dataset is deleted, schedul
 + CloudWatch can't decrypt existing data that was encrypted with the unusable key, so query operations fail.
 
 Your recovery options depend on the key state:
-+ **Key is disabled** — Re-enable the key in AWS KMS. This is the preferred recovery path because CloudWatch can resume decrypting your existing metric data once the key is active again.
-+ **Key is pending deletion** — Cancel the key deletion in AWS KMS before the waiting period expires. Once the key returns to an enabled state, CloudWatch resumes normal operations.
++ **Key is disabled** — Re-enable the key in AWS KMS. This is the preferred recovery path because CloudWatch can resume decrypting your existing metric data after the key is active again.
++ **Key is pending deletion** — Cancel the key deletion in AWS KMS before the waiting period expires. After the key returns to an enabled state, CloudWatch resumes normal operations.
 + **Key has been permanently deleted or is otherwise unrecoverable** — Remove the stale association or rotate to a new key (see below). Note that existing data encrypted with the deleted key is permanently unreadable.
 
 If the key is permanently deleted or otherwise unrecoverable, you can remove the association or rotate to a new key without needing access to the old key:

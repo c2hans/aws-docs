@@ -5,14 +5,14 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/model-contact-
 # Model contact transfers and conferencing in Connect Customer
 <a name="model-contact-transfers-conferencing"></a>
 
-This topic is for developers who have integrated their external voice system with Connect Customer Contact Lens.
+This topic is for developers who have integrated their external voice system with Connect Customer conversational analytics.
 
 Your external voice system may support contact transfers (cold and warm) and conferencing multiple agents in a single call. You can signal these cases to Connect Customer by calling the [CreateContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateContact.html) and [StopContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StopContact.html) APIs. These APIs create a contact chain similar to native Connect Customer voice contacts. Each leg of the call will get its own recording, contact record, and analytics, just like native Connect Customer voice contacts.
 
 Each agent-customer interaction is modeled by an independent contact segment.
 + To model adding an agent to an ongoing call, you create a new contact segment using the [CreateContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateContact.html) API with initiation method `TRANSFER`. Transfer contacts are linked to the previous contact by their `previousContactId`.
 + If enabled, call recordings are generated independently for each contact segment and delivered upon completion of that segment.
-+ Contact Lens real-time and post-call analytics are generated for each contact segment independently.
++ Conversational analytics real-time and post-call analytics are generated for each contact segment independently.
 + A contact record is generated for each independent contact segment.
 + To model an agent leaving a call, you can end a contact segment by calling the [StopContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StopContact.html) API.
 

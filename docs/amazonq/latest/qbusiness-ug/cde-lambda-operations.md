@@ -37,7 +37,7 @@ Amazon Q Business can't create a target document attribute field if it isn't alr
 ## Lambda functions using the Amazon Q Business API
 <a name="cde-lambda-operations-api"></a>
 
-To apply a Lambda function, you specify your advanced data manipulation logic using the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentEnrichmentConfiguration.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentEnrichmentConfiguration.html) object when you use either the [BatchPutDocument](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) API operation or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) operation.
+To apply a Lambda function, you specify your advanced data manipulation logic using the [DocumentEnrichmentConfiguration](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentEnrichmentConfiguration.html) object when you use either the [BatchPutDocument](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) API operation or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) operation.
 
 Your Lambda functions must follow the mandatory request and response structures. For more information, see [Data contracts for Lambda functions](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/cde-lambda-operations.html#cde-lambda-operations-data-contracts).
 
@@ -56,9 +56,9 @@ You can configure Amazon Q Business to invoke a Lambda function only if a condit
 
 For more information, see the following topics in the *Amazon Q Business API Reference*:
 + [BatchPutDocument](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html)
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html)
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentEnrichmentConfiguration.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentEnrichmentConfiguration.html)
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeCondition.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeCondition.html)
++ [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html)
++ [DocumentEnrichmentConfiguration](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentEnrichmentConfiguration.html)
++ [DocumentAttributeCondition](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeCondition.html)
 
 ## Lambda functions using the Amazon Q Business console
 <a name="cde-lambda-operations-console"></a>
@@ -77,7 +77,7 @@ When you use the Lambda functions for CDE, you need an IAM role for the followin
 + A role for `PostExtractionHookConfiguration` with permissions to run `PreExtractionHookConfiguration` and to access the Amazon S3 bucket when you use `PostExtractionHookConfiguration`.
 
 **Important**
-IAM roles for Custom Document Enrichmmnt (CDE) Lambda functions should belong to the same account as the account using [BatchPutDocument](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) API operation or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) operation to configure CDE.
+IAM roles for Custom Document Enrichmmnt (CDE) Lambda functions should belong to the same account as the account using [BatchPutDocument](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) API operation or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) operation to configure CDE.
 
 Both AWS Identity and Access Management (IAM) roles must have the permissions to:
 + Run `PreExtractionHookConfiguration` and/or `PostExtractionHookConfiguration`. To apply advanced alterations of your document metadata and content during the ingestion process, configure a Lambda function for `PreExtractionHookConfiguration` and/or `PostExtractionHookConfiguration`.

@@ -133,7 +133,7 @@ To enable ActiveMQ console access for specific users, make sure they belong to t
 For authorization, permissions search bases are specified in the broker configuration. Authorization is done on a per-destination basis (or wildcard, destination set) via the `cachedLdapAuthorizationMap` element, found in the broker’s `activemq.xml` configuration file. For more information, see [Cached LDAP Authorization Module](https://activemq.apache.org/cached-ldap-authorization-module).
 
 **Note**
-To be able to use the `cachedLDAPAuthorizationMap` element in your broker's `activemq.xml` configuration file, you must choose the **LDAP Authentication and Authorization** option when [creating a configuration via the AWS Management Console](amazon-mq-creating-applying-configurations.md), or set the [creating a configuration via the AWS Management Console](amazon-mq-creating-applying-configurations.md), or set the [https://docs.aws.amazon.com//amazon-mq/latest/api-reference/configurations.html#configurations-model-authenticationstrategy](https://docs.aws.amazon.com//amazon-mq/latest/api-reference/configurations.html#configurations-model-authenticationstrategy) property to `LDAP` when creating a new configuration using the Amazon MQ API.
+To be able to use the `cachedLDAPAuthorizationMap` element in your broker's `activemq.xml` configuration file, you must choose the **LDAP Authentication and Authorization** option when [creating a configuration via the AWS Management Console](amazon-mq-creating-applying-configurations.md), or set the [creating a configuration via the AWS Management Console](amazon-mq-creating-applying-configurations.md), or set the [`authenticationStrategy`](https://docs.aws.amazon.com//amazon-mq/latest/api-reference/configurations.html#configurations-model-authenticationstrategy) property to `LDAP` when creating a new configuration using the Amazon MQ API.
 
 You must provide the following three attributes as part of the `cachedLDAPAuthorizationMap` element:
 + `queueSearchBase`
@@ -145,7 +145,7 @@ To prevent sensitive information from being directly placed in the broker's conf
 `connectionURL`
 `connectionUsername`
 `connectionPassword`
-When you create a broker, Amazon MQ substitutes the values you provide via the AWS Management Console, or in the [https://docs.aws.amazon.com//amazon-mq/latest/api-reference/brokers.html#brokers-prop-createbrokerinput-ldapservermetadata](https://docs.aws.amazon.com//amazon-mq/latest/api-reference/brokers.html#brokers-prop-createbrokerinput-ldapservermetadata) property of your API request, for the above attributes.
+When you create a broker, Amazon MQ substitutes the values you provide via the AWS Management Console, or in the [`ldapServerMetadata`](https://docs.aws.amazon.com//amazon-mq/latest/api-reference/brokers.html#brokers-prop-createbrokerinput-ldapservermetadata) property of your API request, for the above attributes.
 
 The following demonstrates a working example of the `cachedLdapAuthorizationMap`.
 

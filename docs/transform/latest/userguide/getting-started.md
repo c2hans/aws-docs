@@ -11,6 +11,7 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/getting-start
 + [Quick start: Trying AWS Transform](#transform-app-admin-starting-standalone)
 + [Managing users](transform-user-management.md)
 + [AWS Transform environment](transform-environment.md)
++ [AWS Transform Connectors](transform-user-connectors.md)
 
 ## Enable AWS Transform
 <a name="transform-enable"></a>

@@ -33,7 +33,7 @@ Use the following steps to determine if you have any groups, users, or roles tha
 
 **To update a group, user, or role to use the `AmazonECS_FullAccess` policy (AWS CLI)**
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/iam/generate-service-last-accessed-details.html](https://docs.aws.amazon.com/cli/latest/reference/iam/generate-service-last-accessed-details.html) command to generate a report that includes details about when the phased out policy was last used.
+1. Use the [generate-service-last-accessed-details](https://docs.aws.amazon.com/cli/latest/reference/iam/generate-service-last-accessed-details.html) command to generate a report that includes details about when the phased out policy was last used.
 
    ```
    aws iam generate-service-last-accessed-details \
@@ -48,7 +48,7 @@ Use the following steps to determine if you have any groups, users, or roles tha
    }
    ```
 
-1. Use the job ID from the previous output with the [https://docs.aws.amazon.com/cli/latest/reference/iam/get-service-last-accessed-details.html](https://docs.aws.amazon.com/cli/latest/reference/iam/get-service-last-accessed-details.html) command to retrieve the last accessed report of the service. This report displays the Amazon Resource Name (ARN) of the IAM entities that last used the phased out policy.
+1. Use the job ID from the previous output with the [get-service-last-accessed-details](https://docs.aws.amazon.com/cli/latest/reference/iam/get-service-last-accessed-details.html) command to retrieve the last accessed report of the service. This report displays the Amazon Resource Name (ARN) of the IAM entities that last used the phased out policy.
 
    ```
    aws iam get-service-last-accessed-details \
@@ -56,11 +56,11 @@ Use the following steps to determine if you have any groups, users, or roles tha
    ```
 
 1. Use one of the following commands to detach the `AmazonEC2ContainerServiceFullAccess` policy from a group, user, or role.
-   + [https://docs.aws.amazon.com/cli/latest/reference/iam/detach-group-policy.html](https://docs.aws.amazon.com/cli/latest/reference/iam/detach-group-policy.html)
-   + [https://docs.aws.amazon.com/cli/latest/reference/iam/detach-role-policy.html](https://docs.aws.amazon.com/cli/latest/reference/iam/detach-role-policy.html)
-   + [https://docs.aws.amazon.com/cli/latest/reference/iam/detach-user-policy.html](https://docs.aws.amazon.com/cli/latest/reference/iam/detach-user-policy.html)
+   + [detach-group-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/detach-group-policy.html)
+   + [detach-role-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/detach-role-policy.html)
+   + [detach-user-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/detach-user-policy.html)
 
 1. Use one of the following commands to attach the `AmazonECS_FullAccess` policy to a group, user, or role.
-   + [https://docs.aws.amazon.com/cli/latest/reference/iam/attach-group-policy.html](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-group-policy.html)
-   + [https://docs.aws.amazon.com/cli/latest/reference/iam/attach-role-policy.html](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-role-policy.html)
-   + [https://docs.aws.amazon.com/cli/latest/reference/iam/attach-user-policy.html](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-user-policy.html)
+   + [attach-group-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-group-policy.html)
+   + [attach-role-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-role-policy.html)
+   + [attach-user-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-user-policy.html)

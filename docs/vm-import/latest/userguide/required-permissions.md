@@ -123,7 +123,7 @@ You must enable AWS Security Token Service (AWS STS) in any Region where you pla
 
 ------
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/iam/create-role.html](https://docs.aws.amazon.com/cli/latest/reference/iam/create-role.html) command to create a role named `vmimport` and grant VM Import/Export access to it. Ensure that you specify the full path to the location of the `trust-policy.json` file that you created in the previous step, and that you include the `file://` prefix as shown the following example:
+1. Use the [create-role](https://docs.aws.amazon.com/cli/latest/reference/iam/create-role.html) command to create a role named `vmimport` and grant VM Import/Export access to it. Ensure that you specify the full path to the location of the `trust-policy.json` file that you created in the previous step, and that you include the `file://` prefix as shown the following example:
 
    ```
    aws iam create-role --role-name vmimport --assume-role-policy-document "file://{{C:\import\trust-policy.json}}"
@@ -215,7 +215,7 @@ You must enable AWS Security Token Service (AWS STS) in any Region where you pla
    }
    ```
 
-1. Use the following [https://docs.aws.amazon.com/cli/latest/reference/iam/put-role-policy.html](https://docs.aws.amazon.com/cli/latest/reference/iam/put-role-policy.html) command to attach the policy to the role created above. Ensure that you specify the full path to the location of the `role-policy.json` file.
+1. Use the following [put-role-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/put-role-policy.html) command to attach the policy to the role created above. Ensure that you specify the full path to the location of the `role-policy.json` file.
 
    ```
    aws iam put-role-policy --role-name vmimport --policy-name vmimport --policy-document "file://{{C:\import\role-policy.json}}"

@@ -18,7 +18,7 @@ Use this short tutorial to get started performing resource operations with AWS C
 ## Step 1: Create a resource
 <a name="getting-started-step1"></a>
 
-For this tutorial, create a resource of type `[https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html)`. Name this log group **CloudControlExample**, and set the retention policy on it to 90 days.
+For this tutorial, create a resource of type `[`AWS::Logs::LogGroup`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html)`. Name this log group **CloudControlExample**, and set the retention policy on it to 90 days.
 
 1. In the AWS Command Line Interface (AWS CLI), run the `create-resource` command with the following parameters:
    + Specify the `type-name` as `AWS::Logs::LogGroup`.

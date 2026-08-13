@@ -248,7 +248,7 @@ Ensure that:
 Machine learning distributed training jobs benefit significantly from the minimized latency of same-zone node configurations. These workloads deploy multiple pods to a specific zone. This can be achieved by setting Pod Affinity for all co-scheduled pods or Node Affinity using `topologyKey: failure-domain.beta.kubernetes.io/zone`. The Cluster Autoscaler will then scale out a specific zone to match demands. You may wish to allocate multiple EC2 Auto Scaling Groups, one per availability zone to enable failover for the entire co-scheduled workload.
 
 Ensure that:
-+ Node group balancing is enabled by setting `balance-similar-node-groups=false`
++ Node group balancing is enabled by setting `balance-similar-node-groups=true`
 +  [Node Affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity) and/or [Pod Preemption](https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/) is used when clusters include both Regional and Zonal Node Groups.
   + Use [Node Affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity) to force or encourage regional pods to avoid zonal Node Groups, and vice versa.
   + If zonal pods schedule onto regional node groups, this will result in imbalanced capacity for your regional pods.

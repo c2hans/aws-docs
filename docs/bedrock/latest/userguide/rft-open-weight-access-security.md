@@ -10,7 +10,7 @@ Before you begin reinforcement fine-tuning (RFT), make sure that you understand 
 ## Prerequisites
 <a name="fine-tuning-openai-prereq"></a>
 
-Before using Amazon Bedrock's OpenAI-compatible fine-tuning APIs, ensure you have the following:
+Before using Amazon Bedrock's OpenAI-compatible fine-tuning APIs, make sure you have the following:
 
 1. An AWS account with appropriate permissions to access Amazon Bedrock
 

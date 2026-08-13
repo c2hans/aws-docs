@@ -515,7 +515,7 @@ To force applications off of a database on your RDS for Db2 DB instance, call th
 
 You can generate performance reports with a procedure or a script. For information about using a procedure, see [DBSUMMARY procedure ‐ Generate a summary report of system and application performance metrics](https://www.ibm.com/docs/en/db2/11.5?topic=mm-dbsummary-procedure-generate-summary-report-system-application-performance-metrics) in the IBM Db2 documentation.
 
-Db2 includes a `db2mon.sh` file in its `~sqllib/sample/perf` directory. Running the script produces a low-cost, extensive SQL metrics report. To download the `db2mon.sh` file and related script files, see the [https://github.com/IBM/db2-samples/tree/master/perf](https://github.com/IBM/db2-samples/tree/master/perf) directory in the IBM db2-samples GitHub repository.
+Db2 includes a `db2mon.sh` file in its `~sqllib/sample/perf` directory. Running the script produces a low-cost, extensive SQL metrics report. To download the `db2mon.sh` file and related script files, see the [perf](https://github.com/IBM/db2-samples/tree/master/perf) directory in the IBM db2-samples GitHub repository.
 
 **To generate performance reports with the script**
 

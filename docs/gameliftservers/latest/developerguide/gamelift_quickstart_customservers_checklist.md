@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 
 Use the following checklists to validate each deployment phase of your game. Items marked **[Critical]** are critical for your production launch.
 
-Download and complete the Amazon GameLift Servers launch questionnaire, which is available in the [https://console.aws.amazon.com/gamelift/prepare-to-launch](https://console.aws.amazon.com/gamelift/prepare-to-launch). We want every game developer using Amazon GameLift Servers to have a smooth launch day, and the requested information helps us help you prepare for upcoming load testing, soft launch or public launch. Plan to submit the completed questionnaire at least three (3) months before conducting your first load test.
+Download and complete the Amazon GameLift Servers launch questionnaire, which is available in the [[Amazon GameLift Servers console](https://console.aws.amazon.com/gamelift/)](https://console.aws.amazon.com/gamelift/prepare-to-launch). We want every game developer using Amazon GameLift Servers to have a smooth launch day, and the requested information helps us help you prepare for upcoming load testing, soft launch or public launch. Plan to submit the completed questionnaire at least three (3) months before conducting your first load test.
 
 **Topics**
 + [Get your game ready](#gamelift_quickstart_customservers_prepgameserver_checklist)

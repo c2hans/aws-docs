@@ -181,7 +181,7 @@ IAM roles used for indexes cannot be used for data sources. If you are unsure if
 **To connect Amazon Kendra to Zendesk**
 
 You must specify a JSON of the [data source schema](https://docs.aws.amazon.com/kendra/latest/dg/ds-schemas.html) using the [TemplateConfiguration](https://docs.aws.amazon.com/kendra/latest/APIReference/API_TemplateConfiguration.html) API. You must provide the following information:
-+ **Data source**—Specify the data source type as `ZENDESK` when you use the [https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) JSON schema. Also specify the data source as `TEMPLATE` when you call the [https://docs.aws.amazon.com/kendra/latest/dg/API_CreateDataSource.html](https://docs.aws.amazon.com/kendra/latest/dg/API_CreateDataSource.html) API.
++ **Data source**—Specify the data source type as `ZENDESK` when you use the [TemplateConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) JSON schema. Also specify the data source as `TEMPLATE` when you call the [CreateDataSource](https://docs.aws.amazon.com/kendra/latest/dg/API_CreateDataSource.html) API.
 + **Host URL**—Provide your Zendesk host URL as part of the connection configuration or repository endpoint details. For example, {{ https://yoursubdomain.zendesk.com}}.
 +  **Change log**—Whether Amazon Kendra should use the Zendesk data source change log mechanism to determine if a document must be updated in the index.
 **Note**

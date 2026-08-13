@@ -19,7 +19,7 @@ You configure this connection in Google Workspace using your SCIM endpoint for I
 The steps in this tutorial help guide you through establishing the SAML connection between Google Workspace and AWS. Later, you will synchronize users from Google Workspace using SCIM. To verify everything is configured correctly, after completing the configuration steps you will sign-in as a Google Workspace user and verify access to AWS resources. Note that this tutorial is based on a small Google Workspace directory test environment. Directory structures such as groups and organization units aren't included in this tutorial. After completing this tutorial, your users will be able to access the AWS access portal with your Google Workspace credentials.
 
 **Note**
-To sign up for a free trial of Google Workspace visit [https://workspace.google.com/](https://workspace.google.com/) on Google's website.
+To sign up for a free trial of Google Workspace visit [Google Workspace](https://workspace.google.com/) on Google's website.
 If you haven't enabled IAM Identity Center yet, see [Enable IAM Identity Center](enable-identity-center.md).
 
 ## Considerations

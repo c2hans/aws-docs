@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 Patch groups are not used in patching operations that are based on *patch policies*. For information about working with patch policies, see [Patch policy configurations in Quick Setup](patch-manager-policies.md).
 Patch group functionality is not supported in the console for account-Region pairs that did not already use patch groups before patch policy support was released on December 22, 2022. Patch group functionality is still available in account-Region pairs that began using patch groups before this date.
 
-You can use a *patch group* to associate managed nodes with a specific patch baseline in Patch Manager, a tool in AWS Systems Manager. Patch groups help ensure that you're deploying the appropriate patches, based on the associated patch baseline rules, to the correct set of nodes. Patch groups can also help you avoid deploying patches before they have been adequately tested. For example, you can create patch groups for different environments (such as Development, Test, and Production) and register each patch group to an appropriate patch baseline.
+You can use a *patch group* to associate managed nodes with a specific patch baseline in Patch Manager. Patch groups help make sure that you're deploying the appropriate patches, based on the associated patch baseline rules, to the correct set of nodes. Patch groups can also help you avoid deploying patches before they have been adequately tested. For example, you can create patch groups for different environments (such as Development, Test, and Production) and register each patch group to an appropriate patch baseline.
 
 When you run `AWS-RunPatchBaseline` or other SSM Command documents for patching, you can target managed nodes using their ID or tags. SSM Agent and Patch Manager then evaluate which patch baseline to use based on the patch group value that you added to the managed node.
 
@@ -33,7 +33,7 @@ You create a patch group by using tags applied to your Amazon Elastic Compute Cl
       --patch-group DEV
   ```
 
-  Combining values from different keys into a single target is unique to this Patch Manager command for creating a new patch group and not supported by other API actions. For example, if you run [https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html) actions using `PatchGroup` and `Patch Group` keys with the same values, you are targeting two completely different sets of nodes:
+  Combining values from different keys into a single target is unique to this Patch Manager command for creating a new patch group and not supported by other API actions. For example, if you run [send-command](https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html) actions using `PatchGroup` and `Patch Group` keys with the same values, you are targeting two completely different sets of nodes:
 
   ```
   aws ssm send-command \

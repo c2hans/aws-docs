@@ -12,22 +12,39 @@ This release applies security updates to Linux-based platforms for AWS Elastic B
 ## Changes
 <a name="release-2018-09-25-linux.changes"></a>
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Instance type** | **Regions** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before September 5, 2018 to all Linux-based platforms. |
-| **Platform-specific updates** | Made these platrform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-09-25-linux.html) |
-| **Worker environment tier** | Added support for worker environment tier version 2.4. For details about worker environment tiers, see [AWS Elastic Beanstalk Worker Environments](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features-managing-env-tiers.html) in the *AWS Elastic Beanstalk Developer Guide*. |
-| **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-09-25-linux.html) |
-| **Go** | Updated the Go platform with the [Go 1.11 release](https://blog.golang.org/go1.11). |
-| **Node.js** | Updated the Node.js platform with [August 2018 Security Releases](https://nodejs.org/en/blog/vulnerability/august-2018-security-releases/). The Node.js Foundation applied these security updates to the new versions 6.14.4 and 8.11.4. We changed the default version for the platform to 6.14.4. |
-| **p3** |  + Asia Pacific (Singapore)—ap-southeast-1<br />+ Asia Pacific (Sydney)—ap-southeast-2<br />+ Canada (Central)—ca-central-1<br />+ China (Ningxia)—cn-northwest-1<br />+ EU (Frankfurt)—eu-central-1<br />+ EU (London)—eu-west-2  |
-| **c5d** |  + US West (N. California)—us-west-1<br />+ Asia Pacific (Seoul)—ap-northeast-2<br />+ Asia Pacific (Singapore)—ap-southeast-1<br />+ Asia Pacific (Sydney)—ap-southeast-2<br />+ Asia Pacific (Tokyo)—ap-northeast-1<br />+ EU (Frankfurt)—eu-central-1<br />+ EU (London)—eu-west-2  |
-| **m5d** |  + US West (N. California)—us-west-1<br />+ Asia Pacific (Seoul)—ap-northeast-2<br />+ Asia Pacific (Singapore)—ap-southeast-1<br />+ Asia Pacific (Sydney)—ap-southeast-2<br />+ Asia Pacific (Tokyo)—ap-northeast-1<br />+ EU (Frankfurt)—eu-central-1<br />+ EU (London)—eu-west-2  |
-| **t3** |  + US East (N. Virginia)—us-east-1<br />+ US East (Ohio)—us-east-2<br />+ US West (N. California)—us-west-1<br />+ US West (Oregon)—us-west-2<br />+ Asia Pacific (Singapore)—ap-southeast-1<br />+ Asia Pacific (Sydney)—ap-southeast-2<br />+ Asia Pacific (Tokyo)—ap-northeast-1<br />+ Canada (Central)—ca-central-1<br />+ EU (Frankfurt)—eu-central-1<br />+ EU (Ireland)—eu-west-1<br />+ EU (London)—eu-west-2<br />+ South America (São Paulo)—sa-east-1  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before September 5, 2018 to all Linux-based platforms.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platrform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Go</b></td><td>Updated the Go platform with the <a href="https://blog.golang.org/go1.11">Go 1.11 release</a>.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform with <a href="https://nodejs.org/en/blog/vulnerability/august-2018-security-releases/">August 2018 Security Releases</a>. The Node.js Foundation applied these security updates to the new versions 6.14.4 and 8.11.4. We changed the default version for the platform to 6.14.4.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Worker environment tier</b></td><td>Added support for worker environment tier version 2.4. For details about worker environment tiers, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features-managing-env-tiers.html">AWS Elastic Beanstalk Worker Environments</a> in the <i>AWS Elastic Beanstalk Developer Guide</i>.</td></tr>
+  <tr><td><b>Instance types</b></td><td>Added support for more Amazon EC2 instance types in some AWS Regions, as follows:
+<table>
+<thead>
+  <tr><th><b>Instance type</b></th><th><b>Regions</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>p3</b></td><td> <ul><li>Asia Pacific (Singapore)—ap-southeast-1</li><li>Asia Pacific (Sydney)—ap-southeast-2</li><li>Canada (Central)—ca-central-1</li><li>China (Ningxia)—cn-northwest-1</li><li>EU (Frankfurt)—eu-central-1</li><li>EU (London)—eu-west-2</li></ul> </td></tr>
+  <tr><td><b>c5d</b></td><td> <ul><li>US West (N. California)—us-west-1</li><li>Asia Pacific (Seoul)—ap-northeast-2</li><li>Asia Pacific (Singapore)—ap-southeast-1</li><li>Asia Pacific (Sydney)—ap-southeast-2</li><li>Asia Pacific (Tokyo)—ap-northeast-1</li><li>EU (Frankfurt)—eu-central-1</li><li>EU (London)—eu-west-2</li></ul> </td></tr>
+  <tr><td><b>m5d</b></td><td> <ul><li>US West (N. California)—us-west-1</li><li>Asia Pacific (Seoul)—ap-northeast-2</li><li>Asia Pacific (Singapore)—ap-southeast-1</li><li>Asia Pacific (Sydney)—ap-southeast-2</li><li>Asia Pacific (Tokyo)—ap-northeast-1</li><li>EU (Frankfurt)—eu-central-1</li><li>EU (London)—eu-west-2</li></ul> </td></tr>
+  <tr><td><b>t3</b></td><td> <ul><li>US East (N. Virginia)—us-east-1</li><li>US East (Ohio)—us-east-2</li><li>US West (N. California)—us-west-1</li><li>US West (Oregon)—us-west-2</li><li>Asia Pacific (Singapore)—ap-southeast-1</li><li>Asia Pacific (Sydney)—ap-southeast-2</li><li>Asia Pacific (Tokyo)—ap-northeast-1</li><li>Canada (Central)—ca-central-1</li><li>EU (Frankfurt)—eu-central-1</li><li>EU (Ireland)—eu-west-1</li><li>EU (London)—eu-west-2</li><li>South America (São Paulo)—sa-east-1</li></ul> </td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## Updated platform configurations
 <a name="release-2018-09-25-linux.platforms"></a>

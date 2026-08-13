@@ -17,7 +17,7 @@ You must call `mockkStatic("<MODULE_CLASS_NAME>")` before setting up your mocks.
 +  **Waiters**: `aws.sdk.kotlin.services.<service>.waiters.WaitersKt`
 +  **Presigners**: `aws.sdk.kotlin.services.<service>.presigners.PresignersKt`
 
-For example, in the following test that includes mocking `listBucketsPaginated`—a paginator extenstion function—we add `mockkStatic("aws.sdk.kotlin.services.s3.paginators.PaginatorsKt")`:
+For example, in the following test that includes mocking [`listBucketsPaginated`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3.paginators/list-buckets-paginated.html)—a paginator extenstion function—we add `mockkStatic("aws.sdk.kotlin.services.s3.paginators.PaginatorsKt")`:
 
 ```
     @Test

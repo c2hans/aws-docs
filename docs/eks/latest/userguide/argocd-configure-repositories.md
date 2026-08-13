@@ -31,14 +31,14 @@ For direct AWS service integrations (ECR Helm charts, CodeCommit repositories, a
   <tr><th>Method</th><th>Use Case</th><th>IAM Permissions Required</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="3"> **Direct integration with AWS services** </td></tr>
-  <tr><td>CodeCommit</td><td>Direct integration with AWS CodeCommit Git repositories. No Repository configuration needed.</td><td> `codecommit:GitPull` </td></tr>
-  <tr><td>CodeConnections</td><td>Connect to GitHub, GitLab, or Bitbucket with managed authentication. Requires connection setup.</td><td> `codeconnections:UseConnection` </td></tr>
-  <tr><td>ECR OCI Artifacts</td><td>Direct integration with AWS ECR for OCI Helm charts and manifest images. No Repository configuration needed.</td><td> `arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPullOnly` </td></tr>
-  <tr><td colspan="3"> **Repository configuration with credentials** </td></tr>
-  <tr><td> AWS Secrets Manager (Username/Token)</td><td>Store personal access tokens or passwords. Enables credential rotation without Kubernetes access.</td><td> `arn:aws:iam::aws:policy/AWSSecretsManagerClientReadOnlyAccess` </td></tr>
-  <tr><td> AWS Secrets Manager (SSH Key)</td><td>Use SSH key authentication. Enables credential rotation without Kubernetes access.</td><td> `arn:aws:iam::aws:policy/AWSSecretsManagerClientReadOnlyAccess` </td></tr>
-  <tr><td> AWS Secrets Manager (GitHub App)</td><td>GitHub App authentication with private key. Enables credential rotation without Kubernetes access.</td><td> `arn:aws:iam::aws:policy/AWSSecretsManagerClientReadOnlyAccess` </td></tr>
+  <tr><td colspan="3"> <b>Direct integration with AWS services</b> </td></tr>
+  <tr><td>CodeCommit</td><td>Direct integration with AWS CodeCommit Git repositories. No Repository configuration needed.</td><td> <code>codecommit:GitPull</code> </td></tr>
+  <tr><td>CodeConnections</td><td>Connect to GitHub, GitLab, or Bitbucket with managed authentication. Requires connection setup.</td><td> <code>codeconnections:UseConnection</code> </td></tr>
+  <tr><td>ECR OCI Artifacts</td><td>Direct integration with AWS ECR for OCI Helm charts and manifest images. No Repository configuration needed.</td><td> <code>arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPullOnly</code> </td></tr>
+  <tr><td colspan="3"> <b>Repository configuration with credentials</b> </td></tr>
+  <tr><td> AWS Secrets Manager (Username/Token)</td><td>Store personal access tokens or passwords. Enables credential rotation without Kubernetes access.</td><td> <code>arn:aws:iam::aws:policy/AWSSecretsManagerClientReadOnlyAccess</code> </td></tr>
+  <tr><td> AWS Secrets Manager (SSH Key)</td><td>Use SSH key authentication. Enables credential rotation without Kubernetes access.</td><td> <code>arn:aws:iam::aws:policy/AWSSecretsManagerClientReadOnlyAccess</code> </td></tr>
+  <tr><td> AWS Secrets Manager (GitHub App)</td><td>GitHub App authentication with private key. Enables credential rotation without Kubernetes access.</td><td> <code>arn:aws:iam::aws:policy/AWSSecretsManagerClientReadOnlyAccess</code> </td></tr>
   <tr><td>Kubernetes Secret</td><td>Standard Argo CD method using in-cluster secrets</td><td>None (permissions handled by EKS Access Entry with Kubernetes RBAC)</td></tr>
 </tbody>
 </table>

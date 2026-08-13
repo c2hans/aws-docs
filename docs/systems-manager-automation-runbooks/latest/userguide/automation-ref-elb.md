@@ -17,4 +17,5 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 + [`AWSConfigRemediation-EnableNLBCrossZoneLoadBalancing`](automation-aws-enable-nlb-crosszone.md)
 + [`AWS-UpdateALBDesyncMitigationMode`](AWS-UpdateALBDesyncMitigationMode.md)
 + [`AWS-UpdateCLBDesyncMitigationMode`](AWS-UpdateCLBDesyncMitigationMode.md)
++ [`AWSSupport-TroubleshootALB5XXErrors`](automation-awssupport-troubleshootalb5xxerrors.md)
 + [`AWSSupport-TroubleshootELBHealthChecks`](automation-aws-troubleshootelbhealthchecks.md)

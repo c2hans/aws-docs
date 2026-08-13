@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/appendix-g
 # Appendix A: GitHub (via OAuth app) source actions
 <a name="appendix-github-oauth"></a>
 
-This appendix provides information about (via OAuth app) of the GitHub action in CodePipeline.
+This appendix provides information about the GitHub (via OAuth app) action in CodePipeline.
 
 **Note**
 While we don’t recommend using the GitHub (via OAuth app) action, existing pipelines with the GitHub (via OAuth app) action will continue to work without any impact. For a pipeline with a GitHub (via OAuth app) action, CodePipeline uses OAuth-based tokens to connect to your GitHub repository. By contrast, the GitHub action (via GitHub App) uses a connection resource to associate AWS resources to your GitHub repository. The connection resource uses app-based tokens to connect. For more information about updating your pipeline to the recommended GitHub action that uses a connection, see [Update a GitHub (via OAuth app) source action to a GitHub (via GitHub App) source action](update-github-action-connections.md). For more information about OAuth-based GitHub access in contrast to app-based GitHub access, see [https://docs.github.com/en/developers/apps/differences-between-github-apps-and-oauth-apps](https://docs.github.com/en/developers/apps/differences-between-github-apps-and-oauth-apps).
@@ -42,7 +42,7 @@ You add GitHub (via OAuth app) source actions to CodePipeline by:
 <a name="action-reference-GitHub"></a>
 
 **Note**
-While we don’t recommend using the GitHub (via OAuth app) action, existing pipelines with the GitHub (via OAuth app) action will continue to work without any impact. For a pipeline with a GitHub GitHub (via OAuth app) source action, CodePipeline uses OAuth-based tokens to connect to your GitHub repository. By contrast, the new GitHub action (via GitHub App) uses a connection resource to associate AWS resources to your GitHub repository. The connection resource uses app-based tokens to connect. For more information about updating your pipeline to the recommended GitHub action that uses a connection, see [Update a GitHub (via OAuth app) source action to a GitHub (via GitHub App) source action](update-github-action-connections.md).
+While we don’t recommend using the GitHub (via OAuth app) action, existing pipelines with the GitHub (via OAuth app) action will continue to work without any impact. For a pipeline with a GitHub (via OAuth app) source action, CodePipeline uses OAuth-based tokens to connect to your GitHub repository. By contrast, the new GitHub action (via GitHub App) uses a connection resource to associate AWS resources to your GitHub repository. The connection resource uses app-based tokens to connect. For more information about updating your pipeline to the recommended GitHub action that uses a connection, see [Update a GitHub (via OAuth app) source action to a GitHub (via GitHub App) source action](update-github-action-connections.md).
 
 Triggers the pipeline when a new commit is made on the configured GitHub repository and branch.
 
@@ -220,4 +220,4 @@ When you use the CLI or an CloudFormation template, you must provide the value f
 The following related resources can help you as you work with this action.
 + Resource reference for the [AWS CloudFormation User Guide AWS::CodePipeline::Webhook](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html) – This includes field definitions, examples, and snippets for the resource in CloudFormation.
 + Resource reference for the [AWS CloudFormation User Guide AWS::CodeStar::GitHubRepository](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codestar-githubrepository.html) – This includes field definitions, examples, and snippets for the resource in CloudFormation.
-+ [Tutorial: Create a pipeline that builds and tests your Android app with AWS Device Farm](tutorials-codebuild-devicefarm.md) – This tutorial provides a sample build spec file and sample application to create a pipeline with a GitHub source. It builds and tests an Android app with CodeBuild and AWS Device Farm.
++ [Tutorial: Create a pipeline that builds and tests your Android app with AWS Device Farm](tutorials-codebuild-devicefarm.md) – This tutorial provides a sample buildspec file and sample application to create a pipeline with a GitHub source. It builds and tests an Android app with CodeBuild and AWS Device Farm.

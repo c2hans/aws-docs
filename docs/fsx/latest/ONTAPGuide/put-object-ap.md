@@ -13,4 +13,4 @@ The example uploads the file {{`my-new-image.jpg`}} through the access point {{`
 $ aws s3api put-object --bucket {{my-ontap-ap-hrzrlukc5m36ft7okagglf3gmwluquse1b}}-ext-s3alias --key {{my-new-image.jpg}} --body  {{my-new-image.jpg}}
 ```
 
-You can also use the REST API to upload an object through an access point. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html) in the *Amazon Simple Storage Service API Reference*.
+You can also use the REST API to upload an object through an access point. For more information, see [PutObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html) in the *Amazon Simple Storage Service API Reference*.

@@ -74,7 +74,7 @@ Do this procedure from the account with the certificate to transfer.
 
 **To begin to transfer a certificate to another AWS account**
 
-1. Use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-certificate.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-certificate.html) command to deactivate the certificate.
+1. Use the [**update-certificate**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-certificate.html) command to deactivate the certificate.
 
    ```
    aws iot update-certificate --certificate-id {{certificateId}} --new-status INACTIVE
@@ -82,13 +82,13 @@ Do this procedure from the account with the certificate to transfer.
 
 1. Detach all policies.
 
-   1. Use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-attached-policies.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-attached-policies.html) command to list the policies attached to the certificate.
+   1. Use the [**list-attached-policies**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-attached-policies.html) command to list the policies attached to the certificate.
 
       ```
       aws iot list-attached-policies --target {{certificateArn}}
       ```
 
-   1. For each attached policy, use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/detach-policy.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/detach-policy.html) command to detach the policy.
+   1. For each attached policy, use the [**detach-policy**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/detach-policy.html) command to detach the policy.
 
       ```
       aws iot detach-policy --target {{certificateArn}} --policy-name {{policy-name}}
@@ -96,19 +96,19 @@ Do this procedure from the account with the certificate to transfer.
 
 1. Detach all things.
 
-   1. Use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-principal-things.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-principal-things.html) command to list the things attached to the certificate.
+   1. Use the [**list-principal-things**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-principal-things.html) command to list the things attached to the certificate.
 
       ```
       aws iot list-principal-things --principal {{certificateArn}}
       ```
 
-   1. For each attached thing, use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/detach-thing-principal.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/detach-thing-principal.html) command to detach the thing.
+   1. For each attached thing, use the [**detach-thing-principal**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/detach-thing-principal.html) command to detach the thing.
 
       ```
       aws iot detach-thing-principal --principal {{certificateArn}} --thing-name {{thing-name}}
       ```
 
-1. Use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/transfer-certificate.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/transfer-certificate.html) command to start the certificate transfer.
+1. Use the [**transfer-certificate**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/transfer-certificate.html) command to start the certificate transfer.
 
    ```
    aws iot transfer-certificate --certificate-id {{certificateId}} --target-aws-account {{account-id}}
@@ -147,13 +147,13 @@ Do this procedure from the account receiving the certificate that was transferre
 
 **To accept or reject a certificate that was transferred to your AWS account**
 
-1. Use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/accept-certificate-transfer.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/accept-certificate-transfer.html) command to accept the certificate.
+1. Use the [**accept-certificate-transfer**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/accept-certificate-transfer.html) command to accept the certificate.
 
    ```
    aws iot accept-certificate-transfer --certificate-id {{certificateId}}
    ```
 
-1. Use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/reject-certificate-transfer.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/reject-certificate-transfer.html) command to reject the certificate.
+1. Use the [**reject-certificate-transfer**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/reject-certificate-transfer.html) command to reject the certificate.
 
    ```
    aws iot reject-certificate-transfer --certificate-id {{certificateId}}
@@ -191,7 +191,7 @@ To complete this procedure, you'll need the {{certificateId}} of the certificate
 
 Do this procedure from the account that initiated the certificate transfer.
 
-Use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/cancel-certificate-transfer.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/cancel-certificate-transfer.html) command to cancel the certificate transfer.
+Use the [**cancel-certificate-transfer**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/cancel-certificate-transfer.html) command to cancel the certificate transfer.
 
 ```
 aws iot cancel-certificate-transfer --certificate-id {{certificateId}}

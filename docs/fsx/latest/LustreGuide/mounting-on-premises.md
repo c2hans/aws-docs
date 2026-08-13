@@ -24,7 +24,7 @@ The following table illustrates IP address requirements for accessing Amazon FSx
   <tr><th>For clients located in...</th><th>Access to file systems created before December 17, 2020</th><th>Access to file systems created on or after December 17, 2020</th></tr>
 </thead>
 <tbody>
-  <tr><td>Peered VPCs using VPC Peering or AWS Transit Gateway</td><td rowspan="2">Clients with IP addresses in an [RFC 1918](http://www.faqs.org/rfcs/rfc1918.html) private IP address range:+ 10.0.0.0/8<br />+ 172.16.0.0/12<br />+ 192.168.0.0/16</td><td>✓</td></tr>
+  <tr><td>Peered VPCs using VPC Peering or AWS Transit Gateway</td><td rowspan="2">Clients with IP addresses in an <a href="http://www.faqs.org/rfcs/rfc1918.html">RFC 1918</a> private IP address range:<ul><li>10.0.0.0/8</li><li>172.16.0.0/12</li><li>192.168.0.0/16</li></ul></td><td>✓</td></tr>
   <tr><td>Peered networks using Direct Connect or Site-to-Site VPN</td><td>✓</td></tr>
 </tbody>
 </table>

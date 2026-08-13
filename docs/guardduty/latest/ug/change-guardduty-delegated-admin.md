@@ -17,15 +17,15 @@ Before you remove a delegated GuardDuty administrator account, you must disassoc
 
 **Step 1 - To remove existing delegated GuardDuty administrator account in each Region**
 
-1. As the existing delegated GuardDuty administrator account, list all the member accounts linked with your administrator account. Run [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListMembers.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListMembers.html) with `OnlyAssociated=false`.
+1. As the existing delegated GuardDuty administrator account, list all the member accounts linked with your administrator account. Run [ListMembers](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListMembers.html) with `OnlyAssociated=false`.
 
-1. If the auto-enable preference for GuardDuty or any of the optional protection plans is set to `ALL`, then run [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateOrganizationConfiguration.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateOrganizationConfiguration.html) to update the organization configuration to either `NEW` or `NONE`. This action will prevent an error when you disassociate all the member accounts in the next step.
+1. If the auto-enable preference for GuardDuty or any of the optional protection plans is set to `ALL`, then run [UpdateOrganizationConfiguration](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateOrganizationConfiguration.html) to update the organization configuration to either `NEW` or `NONE`. This action will prevent an error when you disassociate all the member accounts in the next step.
 
-1. Run [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DisassociateMembers.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DisassociateMembers.html) to disassociate all the member accounts that are associated with the administrator account.
+1. Run [DisassociateMembers](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DisassociateMembers.html) to disassociate all the member accounts that are associated with the administrator account.
 
-1. Run [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteMembers.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteMembers.html) to delete the associations between the administrator account and member accounts.
+1. Run [DeleteMembers](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteMembers.html) to delete the associations between the administrator account and member accounts.
 
-1. As the organization management account, run [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DisableOrganizationAdminAccount.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DisableOrganizationAdminAccount.html) to remove the existing delegated GuardDuty administrator account.
+1. As the organization management account, run [DisableOrganizationAdminAccount](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DisableOrganizationAdminAccount.html) to remove the existing delegated GuardDuty administrator account.
 
 1. Repeat these steps in each AWS Region where you have this delegated GuardDuty administrator account.
 

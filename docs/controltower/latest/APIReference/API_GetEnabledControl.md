@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Get
 # GetEnabledControl
 <a name="API_GetEnabledControl"></a>
 
-Retrieves details about an enabled control. For usage examples, see the [https://docs.aws.amazon.com/controltower/latest/controlreference/control-api-examples-short.html](https://docs.aws.amazon.com/controltower/latest/controlreference/control-api-examples-short.html).
+Retrieves details about an enabled control. For usage examples, see the [*Controls Reference Guide*](https://docs.aws.amazon.com/controltower/latest/controlreference/control-api-examples-short.html).
 
 ## Request Syntax
 <a name="API_GetEnabledControl_RequestSyntax"></a>

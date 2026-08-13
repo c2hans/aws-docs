@@ -188,7 +188,8 @@ AWS Clean Rooms ML has additional quotas listed below
 | Total number of completed lookalike segment (audience) generation jobs | No limit |   |
 | Total number of completed export lookalike segment (audience) jobs | No limit |   |
 | Maximum duration of a lookalike model (audience model) generation job | 25 hours |   |
-| Maximum duration of a lookalike segment (audience) generation job | 10 hours | After you provide a seed, Clean Rooms ML takes a maximum of 10 hours to generate a lookalike segment. If you use an SQL query as the seed data, it can take up to 12 hours to run the query in addition to the 10 hours to generate the lookalike segment. |
+| Maximum duration of a lookalike segment (audience) generation job | 10 hours | After you provide a seed, Clean Rooms ML takes a maximum of 10 hours to generate a lookalike segment. If you use an SQL query as the seed data, the query can take up to 24 hours to run before segment generation begins. A lookalike segment generation job times out after 35 hours, including the time taken by the seed query. |
+| Maximum duration of a lookalike segment (audience) export job | 1 hour | After you start an export, Clean Rooms ML takes a maximum of 1 hour to export a lookalike segment to your Amazon S3 bucket. |
 | Minimum percentage for a segment (audience) size bin | 1% |   |
 | Maximum percentage for a segment (audience) size bin | 20% |   |
 | Minimum absolute size for a segment (audience) size bin | 1% of the number of distinct users |   |

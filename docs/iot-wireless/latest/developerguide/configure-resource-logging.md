@@ -70,7 +70,7 @@ The API actions can be categorized into the following types depending on whether
 **Note**
 You can also perform this procedure with the API by using the methods in the AWS API that correspond to the CLI commands shown here.
 
-1. By default, all resources have log level set to `ERROR`. To set the default log levels, or log levels by resource types for all resources in your account, use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/update-log-levels-by-resource-types.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/update-log-levels-by-resource-types.html) command. The following example shows how you can create a JSON file, `Input.json`, and provide it as an input to the CLI command. You can use this command to selectively disable logging or override the default log level for specific types of resources and events.
+1. By default, all resources have log level set to `ERROR`. To set the default log levels, or log levels by resource types for all resources in your account, use the [**update-log-levels-by-resource-types**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/update-log-levels-by-resource-types.html) command. The following example shows how you can create a JSON file, `Input.json`, and provide it as an input to the CLI command. You can use this command to selectively disable logging or override the default log level for specific types of resources and events.
 
    ```
    {
@@ -167,7 +167,7 @@ The log level you want to use for individual resource types and events. These lo
    }
    ```
 
-1. The **update-log-levels-by-resource-types** command doesn't return any output. Use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/get-log-levels-by-resource-types.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/get-log-levels-by-resource-types.html) command to retrieve resource-specific logging information. The command returns the default log level, and the wireless device and wireless gateway log options.
+1. The **update-log-levels-by-resource-types** command doesn't return any output. Use the [**get-log-levels-by-resource-types**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/get-log-levels-by-resource-types.html) command to retrieve resource-specific logging information. The command returns the default log level, and the wireless device and wireless gateway log options.
 **Note**
 The **get-log-levels-by-resource-types** command can't directly retrieve the log levels in the CloudWatch console. You can use the **get-log-levels-by-resource-types** command to get the latest log-level information that you've specified for your resources using the **update-log-levels-by-resource-types** command.
 
@@ -204,9 +204,9 @@ The **get-log-levels-by-resource-types** command can't directly retrieve the log
    ```
 
 1. To control log levels for individual wireless gateways or wireless device resources, use the following CLI commands:
-   + [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/put-resource-log-level.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/put-resource-log-level.html)
-   + [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/get-resource-log-level.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/get-resource-log-level.html)
-   + [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/reset-resource-log-level.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/reset-resource-log-level.html)
+   + [**put-resource-log-level**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/put-resource-log-level.html)
+   + [**get-resource-log-level**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/get-resource-log-level.html)
+   + [**reset-resource-log-level**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/reset-resource-log-level.html)
 
    For an example for when to use these CLIs, say that you have a large number of wireless devices or gateways in your account that are being logged. If you want to troubleshoot errors for only some of your wireless devices, you can disable logging for all wireless devices by setting the `DefaultLogLevel` to `DISABLED`, and use the **put-resource-log-level** to set the `LogLevel` to `ERROR` for only those devices in your account.
 
@@ -219,7 +219,7 @@ The **get-log-levels-by-resource-types** command can't directly retrieve the log
 
    In this example, the command sets the log level to `ERROR` only for the specified wireless device resource and the logs for all other resources are disabled. This command doesn't produce any output. To retrieve this information and verify that the log levels were set, use the **get-resource-log-level** command.
 
-1. In the previous step, after you've debugged the issue and resolved the error, you can run the **reset-resource-log-level** command to reset the log level for that resource to `null`. If you used the `put-resource-log-level` command to set the log-level override for more than one FUOTA task, wireless device, or gateway resource, such as for troubleshooting errors for multiple devices, you can reset the log-level overrides back to `null` for all those resources using the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/reset-all-resource-log-levels.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/reset-all-resource-log-levels.html) command.
+1. In the previous step, after you've debugged the issue and resolved the error, you can run the **reset-resource-log-level** command to reset the log level for that resource to `null`. If you used the `put-resource-log-level` command to set the log-level override for more than one FUOTA task, wireless device, or gateway resource, such as for troubleshooting errors for multiple devices, you can reset the log-level overrides back to `null` for all those resources using the [**reset-all-resource-log-levels**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/reset-all-resource-log-levels.html) command.
 
    ```
    aws iotwireless reset-all-resource-log-levels

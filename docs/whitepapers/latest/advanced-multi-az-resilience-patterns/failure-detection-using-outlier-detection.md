@@ -28,7 +28,7 @@ First, establish the *null hypothesis*, which defines what you believe the defau
 | use1-az3 |  25  |  25  |
 | use1-az4 |  25  |  35  |
 
-So, you see that the distribution in reality isn’t even. However, you might believe that this occurred due to some level of randomness in the data points you sampled. There’s some level of probability that this type of distribution could occur in the sample set and still assume that the null hypothesis is true. This leads to the following question: What is the probability of getting a result at least this extreme? If that probability is below a defined threshold, you reject the null hypothesis. To be [https://en.wikipedia.org/wiki/Statistical_significance](https://en.wikipedia.org/wiki/Statistical_significance), this probability should be 5% or less.1
+So, you see that the distribution in reality isn’t even. However, you might believe that this occurred due to some level of randomness in the data points you sampled. There’s some level of probability that this type of distribution could occur in the sample set and still assume that the null hypothesis is true. This leads to the following question: What is the probability of getting a result at least this extreme? If that probability is below a defined threshold, you reject the null hypothesis. To be [*statistically significant*](https://en.wikipedia.org/wiki/Statistical_significance), this probability should be 5% or less.1
 
 1 Craparo, Robert M. (2007). "Significance level". In Salkind, Neil J. Encyclopedia of Measurement and Statistics 3. Thousand Oaks, CA: SAGE Publications. pp. 889–891. ISBN 1-412-91611-9.
 
@@ -51,7 +51,7 @@ So, you see that the distribution in reality isn’t even. However, you might be
 <table>
 <thead>
   <tr><th>Degrees of freedom</th><th colspan="5"> Probability less than the critical value </th></tr>
-  <tr><th> </th><th> 0.75 </th><th> 0.90 </th><th> 0.95 </th><th> 0.99 </th><th> 0.999 </th></tr>
+  <tr><th> </th><th> <b>0.75</b> </th><th> <b>0.90</b> </th><th> <b>0.95</b> </th><th> <b>0.99</b> </th><th> <b>0.999</b> </th></tr>
 </thead>
 <tbody>
   <tr><td> 1 </td><td> 1.323 </td><td> 2.706 </td><td> 3.841 </td><td> 6.635 </td><td> 10.828 </td></tr>

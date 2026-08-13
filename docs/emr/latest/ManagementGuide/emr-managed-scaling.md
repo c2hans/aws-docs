@@ -67,7 +67,7 @@ You must configure the following parameters for managed scaling. The limit only 
 + **Maximum core nodes **(`MaximumCoreCapacityUnits`) (Optional) – The upper boundary of allowed EC2 capacity for core node type in a cluster. If this parameter is not specified, it defaults to the value of `MaximumCapacityUnits`.
   + This parameter is used to split capacity allocation between core and task nodes. For example, if you set the minimum parameter as 2 instances, the maximum as 100 instances, the maximum core node as 17 instances, then Amazon EMR managed scaling scales up to 17 core nodes and allocates the remaining 83 instances to task nodes. For more information, see [Node allocation scenarios](managed-scaling-allocation-strategy.md#node-allocation-scenarios).
 
-For more information about managed scaling parameters, see [https://docs.aws.amazon.com/emr/latest/APIReference/API_ComputeLimits.html](https://docs.aws.amazon.com/emr/latest/APIReference/API_ComputeLimits.html).
+For more information about managed scaling parameters, see [`ComputeLimits`](https://docs.aws.amazon.com/emr/latest/APIReference/API_ComputeLimits.html).
 
 ## Considerations for Amazon EMR managed scaling
 <a name="emr-managed-scaling-considerations"></a>

@@ -16,14 +16,14 @@ Once a HIT has been created in the Amazon Mechanical Turk (Mechanical Turk) mark
 ## Modify expiration time
 <a name="mturk-creating-hits-modify-expiration"></a>
 
-When a HIT is created, the `LifetimeInSeconds` is used to calculate an `ExpiresAt` value that tells Mechanical Turk when to remove a HIT from the marketplace if it hasn't been completed yet. You can use the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_UpdateExpirationForHITOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_UpdateExpirationForHITOperation.html) operation to either extend this time further into the future to allow workers more time to complete it or shorten the time if responses are no longer valuable.
+When a HIT is created, the `LifetimeInSeconds` is used to calculate an `ExpiresAt` value that tells Mechanical Turk when to remove a HIT from the marketplace if it hasn't been completed yet. You can use the [`UpdateExpirationForHIT`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_UpdateExpirationForHITOperation.html) operation to either extend this time further into the future to allow workers more time to complete it or shorten the time if responses are no longer valuable.
 
 A common use of `UpdateExpirationForHIT` is to call it with a value of 0 or a time in the past to tell Mechanical Turk to immediately expire a HIT. This is useful when you make a mistake in your HIT definition and immediately need to remove the task from the marketplace. Note that this won't prevent workers who have already accepted your HIT from completing and submitting it.
 
 ## Add additional assignments
 <a name="mturk-creating-hits-modify-add-assignments"></a>
 
-When a HIT is created, the `MaxAssignments` value is provided and informs Mechanical Turk of how many workers can submit responses for the task. If you need to allow additional workers to provide responses, you can call [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateAdditionalAssignmentsForHITOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateAdditionalAssignmentsForHITOperation.html) to add additional available assignments.
+When a HIT is created, the `MaxAssignments` value is provided and informs Mechanical Turk of how many workers can submit responses for the task. If you need to allow additional workers to provide responses, you can call [`CreateAdditionalAssignmentsForHIT`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateAdditionalAssignmentsForHITOperation.html) to add additional available assignments.
 
 A common pattern for managing quality in Mechanical Turk is to ask multiple workers to provide responses for a given task and then compare the results. One approach for doing this is to start with a minimal number of assignments and then add additional assignments if there is disagreement among workers. You can use this approach to limit the number of assignments needed for tasks where there is general agreement, while gathering additional data points for tasks that are more ambiguous.
 

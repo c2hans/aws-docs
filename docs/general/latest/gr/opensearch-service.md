@@ -161,7 +161,7 @@ Your AWS account has the following additional OpenSearch Serverless limits:
 | --- | --- | --- | --- |
 | Collection tags | 50 | No |  |
 | Collections per collection group (Classic) | 1,500 | No | The maximum number of collections per Classic collection group. The actual number of collections can be further limited by MaxOCUs based on the size of collections. |
-| Collections per NextGen collection group | 10,000 | Yes | The maximum number of collections per NextGen collection group. You can request an increase through the Service Quotas console. |
+| Collections per collection group (NextGen) | 10,000 | Yes | The maximum number of collections per NextGen collection group. You can request an increase through the Service Quotas console. |
 | Collections with unique KMS keys (not in a collection group) | Maximum OCU/2 | No | This limit only applies to collections that are not part of a collection group. It depends on the maximum number of OCUs you set and how many OCUs are already in use. Collections within a collection group have a separate limit of 1,500 collections per group, regardless of the number of unique KMS keys used. |
 | OpenSearch Serverless-managed VPC endpoints | 50 | No | This limit only applies to OpenSearch Serverless-managed VPC endpoints. It doesn't include OpenSearch Service-managed VPC endpoints. |
 | Indexes per Amazon OpenSearch Serverless collection | 1000 | No | The maximum number of indexes per Amazon OpenSearch Serverless collection is 1000. |

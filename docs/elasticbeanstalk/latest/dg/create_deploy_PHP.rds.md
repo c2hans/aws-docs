@@ -46,10 +46,10 @@ For more information about configuring a database instance coupled with an Elast
 <a name="php-rds-drivers"></a>
 
 To use PHP Data Objects (PDO) to connect to the database, install the driver that matches the database engine that you chose.
-+ **MySQL** – [http://php.net/manual/en/ref.pdo-mysql.php](http://php.net/manual/en/ref.pdo-mysql.php)
-+ **PostgreSQL** – [http://php.net/manual/en/ref.pdo-pgsql.php](http://php.net/manual/en/ref.pdo-pgsql.php)
-+ **Oracle** – [http://php.net/manual/en/ref.pdo-oci.php](http://php.net/manual/en/ref.pdo-oci.php)
-+ **SQL Server** – [http://php.net/manual/en/ref.pdo-sqlsrv.php](http://php.net/manual/en/ref.pdo-sqlsrv.php)
++ **MySQL** – [`PDO_MYSQL`](http://php.net/manual/en/ref.pdo-mysql.php)
++ **PostgreSQL** – [`PDO_PGSQL`](http://php.net/manual/en/ref.pdo-pgsql.php)
++ **Oracle** – [`PDO_OCI`](http://php.net/manual/en/ref.pdo-oci.php)
++ **SQL Server** – [`PDO_SQLSRV`](http://php.net/manual/en/ref.pdo-sqlsrv.php)
 
 For more information, see [http://php.net/manual/en/pdo.installation.php](http://php.net/manual/en/pdo.installation.php).
 

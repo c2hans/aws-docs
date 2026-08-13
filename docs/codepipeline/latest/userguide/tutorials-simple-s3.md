@@ -19,7 +19,7 @@ After you create this simple pipeline, you add another stage and then disable an
 
 **Important**
 Many of the actions you add to your pipeline in this procedure involve AWS resources that you need to create before you create the pipeline. AWS resources for your source actions must always be created in the same AWS Region where you create your pipeline. For example, if you create your pipeline in the US East (Ohio) Region, your CodeCommit repository must be in the US East (Ohio) Region.
-You can add cross-region actions when you create your pipeline. AWS resources for cross-region actions must be in the same AWS Region where you plan to execute the action. For more information, see [Add a cross-Region action in CodePipeline](actions-create-cross-region.md).
+You can add cross-region actions when you create your pipeline. AWS resources for cross-region actions must be in the same AWS Region where you plan to execute the action. For more information, see [Add a cross-region action in CodePipeline](actions-create-cross-region.md).
 
 Before you begin, you should complete the prerequisites in [Getting started with CodePipeline](getting-started-codepipeline.md).
 
@@ -91,7 +91,7 @@ In this step, you create the Windows Server Amazon EC2 instances to which you wi
 
 **To create an instance role**
 
-1. Open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/)).
+1. Open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
 1. From the console dashboard, choose **Roles**.
 
@@ -117,7 +117,7 @@ Make a note of your role name for the next step. You choose this role when you a
 
 1. Under **Name and tags**, in **Name**, enter **MyCodePipelineDemo**. This assigns the instances a tag **Key** of **Name** and a tag **Value** of **MyCodePipelineDemo**. Later, you create a CodeDeploy application that deploys the sample application to the instances. CodeDeploy selects instances to deploy based on the tags.
 
-1. Under **Application and OS Images (Amazon Machine Image)**, choose the **Windows** option. (This AMI is described as the **Microsoft Windows Server 2019 Base** and is labeled "Free tier eligible" and can be found under **Quick Start**..)
+1. Under **Application and OS Images (Amazon Machine Image)**, choose the **Windows** option. (This AMI is described as the **Microsoft Windows Server 2019 Base** and is labeled "Free tier eligible" and can be found under **Quick Start**.)
 
 1. Under **Instance type**, choose the free tier eligible `t2.micro` type as the hardware configuration for your instance.
 
@@ -136,7 +136,7 @@ For the purposes of this tutorial, you can proceed without a key pair. To use SS
 
 1. Expand **Advanced details**. In **IAM instance profile**, choose the IAM role you created in the previous procedure (for example, **EC2InstanceRole**).
 
-1. Under **Summary**, under **Number of instances**, enter `2`..
+1. Under **Summary**, under **Number of instances**, enter `2`.
 
 1. Choose **Launch instance**.
 
@@ -155,7 +155,7 @@ You first create a service role for CodeDeploy to use. If you have already creat
 
 **To create a CodeDeploy service role**
 
-1. Open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/)).
+1. Open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
 1. From the console dashboard, choose **Roles**.
 

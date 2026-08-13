@@ -25,7 +25,7 @@ To invoke an agent from your chat channel with Amazon Q Developer in chat applic
 **Tip**
 The most minimal way to achieve this is to create a new IAM policy with just the required `InvokeAgent` permissions and add it to your channel guardrail policies.
 
-The Amazon Q Developer in chat applications Bedrock Agent connector requires the [https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_id-based-policy-examples-agent.html#security_iam_id-based-policy-examples-perform-actions-agent](https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_id-based-policy-examples-agent.html#security_iam_id-based-policy-examples-perform-actions-agent) IAM action.
+The Amazon Q Developer in chat applications Bedrock Agent connector requires the [`bedrock:InvokeAgent`](https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_id-based-policy-examples-agent.html#security_iam_id-based-policy-examples-perform-actions-agent) IAM action.
 
 ### Example role policy
 <a name="bedrock-example-policy"></a>

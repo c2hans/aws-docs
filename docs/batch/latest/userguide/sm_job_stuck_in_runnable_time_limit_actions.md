@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/sm_job_stuck_in_r
 # Automatic remediation with `jobStateTimeLimitActions`
 <a name="sm_job_stuck_in_runnable_time_limit_actions"></a>
 
-You can configure the `jobStateTimeLimitActions` parameter through `[CreateJobQueue](https://docs.aws.amazon.com/batch/latest/APIReference/API_CreateJobQueue.html)` and [https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateJobQueue.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateJobQueue.html) API actions. The `jobStateTimeLimitActions` parameter specifies a set of actions that AWS Batch performs on jobs in a specific state. You can set a time threshold in seconds through the `maxTimeSeconds` field.
+You can configure the `jobStateTimeLimitActions` parameter through `[CreateJobQueue](https://docs.aws.amazon.com/batch/latest/APIReference/API_CreateJobQueue.html)` and [`UpdateJobQueue`](https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateJobQueue.html) API actions. The `jobStateTimeLimitActions` parameter specifies a set of actions that AWS Batch performs on jobs in a specific state. You can set a time threshold in seconds through the `maxTimeSeconds` field.
 
 For job queues connected to `SAGEMAKER_TRAINING` service environments, the only action you can use with `jobStateTimeLimitActions.action` is `TERMINATE`, which will terminate a job.
 

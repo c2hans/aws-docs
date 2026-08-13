@@ -121,21 +121,21 @@ new CloudFrontToApiGateway(this, "test-cloudfront-apigateway", new CloudFrontToA
 
 |  **Name**  |  **Type**  |  **Description**  |
 | --- | --- | --- |
-| existingApiGatewayObj |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApi.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApi.html)  | The regional API Gateway that will be fronted with the CloudFront |
-| cloudFrontDistributionProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.DistributionProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.DistributionProps.html) \| any | Optional user provided props to override the default props for CloudFront Distribution |
+| existingApiGatewayObj |  [`api.RestApi`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApi.html)  | The regional API Gateway that will be fronted with the CloudFront |
+| cloudFrontDistributionProps? |  [`cloudfront.DistributionProps`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.DistributionProps.html) \| any | Optional user provided props to override the default props for CloudFront Distribution |
 | insertHttpSecurityHeaders? |  `boolean`  | Optional user provided props to turn on/off the automatic injection of best practice HTTP security headers in all responses from CloudFront |
-| responseHeadersPolicyProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.ResponseHeadersPolicyProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.ResponseHeadersPolicyProps.html)  | Optional user provided configuration that cloudfront applies to all http responses. |
-| cloudFrontLoggingBucketProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.BucketProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.BucketProps.html)  | Optional user provided props to override the default props for the CloudFront Logging Bucket. |
+| responseHeadersPolicyProps? |  [`cloudfront.ResponseHeadersPolicyProps`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.ResponseHeadersPolicyProps.html)  | Optional user provided configuration that cloudfront applies to all http responses. |
+| cloudFrontLoggingBucketProps? |  [`s3.BucketProps`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.BucketProps.html)  | Optional user provided props to override the default props for the CloudFront Logging Bucket. |
 
 ## Pattern Properties
 <a name="_pattern_properties"></a>
 
 |  **Name**  |  **Type**  |  **Description**  |
 | --- | --- | --- |
-| cloudFrontWebDistribution |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.Distribution.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.Distribution.html)  | Returns an instance of cloudfront.Distribution created by the construct |
-| apiGateway |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApi.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApi.html)  | Returns an instance of the API Gateway REST API created by the pattern. |
-| cloudFrontFunction? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.Function.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.Function.html)  | Returns an instance of the Cloudfront function created by the pattern. |
-| cloudFrontLoggingBucket |  [https://docs.aws.amazon.com/cdk/api/latest/docs/aws-s3-readme.html](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-s3-readme.html)  | Returns an instance of the logging bucket for CloudFront Distribution. |
+| cloudFrontWebDistribution |  [`cloudfront.Distribution`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.Distribution.html)  | Returns an instance of cloudfront.Distribution created by the construct |
+| apiGateway |  [`api.RestApi`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApi.html)  | Returns an instance of the API Gateway REST API created by the pattern. |
+| cloudFrontFunction? |  [`cloudfront.Function`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.Function.html)  | Returns an instance of the Cloudfront function created by the pattern. |
+| cloudFrontLoggingBucket |  [`s3.Bucket`](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-s3-readme.html)  | Returns an instance of the logging bucket for CloudFront Distribution. |
 
 ## Default settings
 <a name="_default_settings"></a>

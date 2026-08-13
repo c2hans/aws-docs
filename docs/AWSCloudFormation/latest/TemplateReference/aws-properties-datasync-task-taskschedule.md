@@ -41,7 +41,7 @@ Use cron expressions for task schedules that run on a specific time and day. For
  `cron(0 8 * * 3#1)`
 Use rate expressions for task schedules that run on a regular interval. For example, the following rate expression creates a task schedule that runs every 12 hours:
  `rate(12 hours)`
-For information about cron and rate expression syntax, see the [https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-scheduled-rule-pattern.html](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-scheduled-rule-pattern.html).
+For information about cron and rate expression syntax, see the [*Amazon EventBridge User Guide*](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-scheduled-rule-pattern.html).
 *Required*: No
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9\ \_\*\?\,\|\^\-\/\#\s\(\)\+]*$`

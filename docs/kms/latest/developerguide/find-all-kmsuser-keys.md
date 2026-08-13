@@ -19,7 +19,7 @@ To run this procedure you need to disconnect the AWS CloudHSM key store temporar
 **Note**
 While a custom key store is disconnected, all attempts to create KMS keys in the custom key store or to use existing KMS keys in cryptographic operations will fail. This action can prevent users from storing and accessing sensitive data.
 
-1. Use the [https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html) command in CloudHSM CLI to find all keys for the current user present in your AWS CloudHSM cluster.
+1. Use the [**key list**](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html) command in CloudHSM CLI to find all keys for the current user present in your AWS CloudHSM cluster.
 
    By default, only 10 keys of the currently logged in user are displayed, and only the `key-reference` and `label` are displayed as output. For more options, see [key list](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-list.html#chsm-cli-key-list-syntax) in the *AWS CloudHSM User Guide*.
 

@@ -127,7 +127,7 @@ This section documents the AWS Identity and Access Management (IAM) policies tha
 
 `AWS::Events::Rule` to `AWS::SNS::Topic`
 **Policy type**
-[https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-topicpolicy.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-topicpolicy.html) attached to the `AWS::SNS::Topic`.
+[`AWS::SNS::TopicPolicy`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-topicpolicy.html) attached to the `AWS::SNS::Topic`.
 **Access categories**
 `Write`
 

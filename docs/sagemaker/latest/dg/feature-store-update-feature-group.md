@@ -20,9 +20,9 @@ The following sections provide an overview of using Feature Store APIs to add fe
 ## API
 <a name="feature-store-update-feature-group-api"></a>
 
-Use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateFeatureGroup.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateFeatureGroup.html) operation to add features to a feature group.
+Use the [`UpdateFeatureGroup`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateFeatureGroup.html) operation to add features to a feature group.
 
-You can use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureGroup.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureGroup.html) operation to see if you have added the features successfully.
+You can use the [`DescribeFeatureGroup`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureGroup.html) operation to see if you have added the features successfully.
 
 To add or overwrite records, use the [PutRecord](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_PutRecord.html) operation. To write up to 25 records in a single request, use the `BatchWriteRecord` operation.
 
@@ -48,7 +48,7 @@ The example code walks you through the following process:
 ### Step 1: Add features to a feature group
 <a name="feature-store-update-feature-group-step-1"></a>
 
-The following code uses the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateFeatureGroup.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateFeatureGroup.html) operation to add new features to the feature group. It assumes that you have set up Feature Store and created a feature group. For more information about getting started, see [Introduction to Feature Store example notebook](feature-store-introduction-notebook.md).
+The following code uses the [`UpdateFeatureGroup`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateFeatureGroup.html) operation to add new features to the feature group. It assumes that you have set up Feature Store and created a feature group. For more information about getting started, see [Introduction to Feature Store example notebook](feature-store-introduction-notebook.md).
 
 ```
 import boto3
@@ -65,7 +65,7 @@ sagemaker_client.update_feature_group(
 )
 ```
 
-The following code uses the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureGroup.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureGroup.html) operation to check the status of the update. If the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureGroup.html#sagemaker-DescribeFeatureGroup-response-LastUpdateStatus](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureGroup.html#sagemaker-DescribeFeatureGroup-response-LastUpdateStatus) field is `Successful`, you have added the features successfully.
+The following code uses the [`DescribeFeatureGroup`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureGroup.html) operation to check the status of the update. If the [`LastUpdateStatus`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureGroup.html#sagemaker-DescribeFeatureGroup-response-LastUpdateStatus) field is `Successful`, you have added the features successfully.
 
 ```
 sagemaker_client.describe_feature_group(
@@ -76,7 +76,7 @@ sagemaker_client.describe_feature_group(
 ### Step 2: Add a new record to the feature group
 <a name="feature-store-update-feature-group-step-2"></a>
 
-The following code uses the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_PutRecord.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_PutRecord.html) operation to add records to the feature group that you have created.
+The following code uses the [`PutRecord`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_PutRecord.html) operation to add records to the feature group that you have created.
 
 ```
 record_identifier_value = {{'new_record'}}
@@ -110,7 +110,7 @@ sagemaker_runtime_client.put_record(
 )
 ```
 
-Use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_GetRecord.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_GetRecord.html) operation to see which records in your feature group do not have data for the features that you have added. You can use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_PutRecord.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_PutRecord.html) operation to overwrite the records that do not have data for the features that you have added.
+Use the [`GetRecord`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_GetRecord.html) operation to see which records in your feature group do not have data for the features that you have added. You can use the [`PutRecord`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_PutRecord.html) operation to overwrite the records that do not have data for the features that you have added.
 
 ### Step 3: Add multiple records in bulk using BatchWriteRecord
 <a name="feature-store-update-feature-group-step-3"></a>

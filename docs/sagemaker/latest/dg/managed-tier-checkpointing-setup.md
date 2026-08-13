@@ -33,7 +33,7 @@ You must opt in to use managed tiered checkpointing.
 
 Enable managed tiered checkpointing through the HyperPod APIs when creating or updating your cluster. The service automatically installs the memory management system when you specify the `TieredStorageConfig` parameter.
 
-For new clusters, you can use [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-cluster.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-cluster.html) AWS CLI.
+For new clusters, you can use [`create-cluster`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-cluster.html) AWS CLI.
 
 ```
 aws sagemaker create-cluster \

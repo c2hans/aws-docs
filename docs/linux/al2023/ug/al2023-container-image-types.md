@@ -18,7 +18,7 @@ A comparison of the RPMs present on the AL2023 base container image compared wit
 |  ca-certificates  | 2023.2.68 | 2023.2.68 |
 |  coreutils-single  | 8.32 | 8.32 |
 |  crypto-policies  | 20220428 | 20220428 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 8.5.0 | 8.5.0 |
+|  [`curl-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 8.5.0 | 8.5.0 |
 |  dnf  | 4.14.0 |  |
 |  dnf-data  | 4.14.0 | 4.14.0 |
 |  elfutils-default-yama-scope  | 0.188 |  |
@@ -30,11 +30,11 @@ A comparison of the RPMs present on the AL2023 base container image compared wit
 |  gawk  | 5.1.0 | 5.1.0 |
 |  gdbm-libs  | 1.19 |  |
 |  glib2  | 2.74.7 | 2.74.7 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  | 2.34 | 2.34 |
+|  [`glibc`](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  | 2.34 | 2.34 |
 |  glibc-common  | 2.34 | 2.34 |
 |  glibc-minimal-langpack  | 2.34 | 2.34 |
 |  gmp  | 6.2.1 | 6.2.1 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  | 2.3.7 | 2.3.7 |
+|  [`gnupg2-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  | 2.3.7 | 2.3.7 |
 |  gobject-introspection  |  | 1.73.0 |
 |  gpgme  | 1.15.1 | 1.15.1 |
 |  grep  | 3.8 | 3.8 |
@@ -50,7 +50,7 @@ A comparison of the RPMs present on the AL2023 base container image compared wit
 |  libcap-ng  | 0.8.2 | 0.8.2 |
 |  libcom\_err  | 1.46.5 | 1.46.5 |
 |  libcomps  | 0.1.20 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 8.5.0 | 8.5.0 |
+|  [`libcurl-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 8.5.0 | 8.5.0 |
 |  libdnf  | 0.69.0 | 0.69.0 |
 |  libffi  | 3.4.4 | 3.4.4 |
 |  libgcc  | 11.4.1 | 11.4.1 |

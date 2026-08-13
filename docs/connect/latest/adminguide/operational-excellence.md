@@ -10,7 +10,7 @@ Operational excellence includes the ability to run and monitor systems to delive
 ## Prepare
 <a name="prepare"></a>
 
-Consider the following areas to prepare for an Connect Customer workload.
+Consider the following areas to prepare for a Connect Customer workload.
 
 ### AWS account
 <a name="awsaccount"></a>
@@ -29,7 +29,7 @@ Connect Customer Region selection is contingent upon data governance requirement
   When porting phone numbers for critical workloads, include all requirements and use case information in your claim/port number several months before the go-live date. This includes requests for live cutover support, communication prior, during, and after cutover, monitoring, and anything else specific to your use case.
 
   For detailed information about porting your numbers, see [Port a current phone number to Connect Customer](port-phone-number.md).
-+ **Carrier diversity** In the US, you should use Connect Customer telephony services for US toll-free numbers, allowing you to route toll-free traffic across multiple suppliers in an active-active fashion at no additional charge. In situations where you are forwarding inbound traffic to an Connect Customer phone number, you should request redundant DID or Toll-Free numbers across multiple telephony providers. If you are claiming or porting multiple DID or Toll-Free numbers outside of the US, you should request that those numbers be claimed or ported to a variety of telephony providers for increased resiliency.
++ **Carrier diversity** In the US, you should use Connect Customer telephony services for US toll-free numbers, allowing you to route toll-free traffic across multiple suppliers in an active-active fashion at no additional charge. In situations where you are forwarding inbound traffic to a Connect Customer phone number, you should request redundant DID or Toll-Free numbers across multiple telephony providers. If you are claiming or porting multiple DID or Toll-Free numbers outside of the US, you should request that those numbers be claimed or ported to a variety of telephony providers for increased resiliency.
 + **International toll-free and high-concurrency DIDs** If you are using an existing toll-free national service to redirect inbound traffic to DIDs, you should request DID phone numbers across multiple telephony providers. A general recommendation for this configuration is 100 sessions per-DID and your AWS Solutions Architect can help with capacity calculations and setup.
 + **Testing** Thoroughly test all use case scenarios, preferably using the same or similar environment as your agents and customers. Ensure that you test several inbound and outbound scenarios for quality of experience, Caller ID functionality, and measure latency to ensure it falls within acceptable range for your use case. Any deviations from your target agent and customer environments need to be measured and accounted for. For more information, including use case testing instructions and criteria, see [Troubleshooting Issues with the Contact Control Panel (CCP)](troubleshooting.md).
 
@@ -69,7 +69,7 @@ Before any migration or implementation to Connect Customer, follow our best prac
 ## Operate
 <a name="operate-bp"></a>
 
-Consider the following areas to operate an Connect Customer workload.
+Consider the following areas to operate a Connect Customer workload.
 
 ### Logging and monitoring
 <a name="logging-monitoring-bp"></a>

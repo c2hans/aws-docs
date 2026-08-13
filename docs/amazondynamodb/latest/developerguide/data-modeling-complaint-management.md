@@ -114,11 +114,11 @@ Since this is a complaint management system, most access patterns revolve around
 
 We can use a generic sort key valued called "metadata" (or "AA") to store complaint-specific information such as `CustomerID`, `State`, `Severity`, and `CreationDate`. We use singleton operations with `PK=ComplaintID` and `SK=“metadata”` to do the following:
 
-1. [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutItem.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutItem.html) to create a new complaint
+1. [`PutItem`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutItem.html) to create a new complaint
 
-1. [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateItem.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateItem.html) to update the severity or other fields in the complaint metadata
+1. [`UpdateItem`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateItem.html) to update the severity or other fields in the complaint metadata
 
-1. [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GetItem.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GetItem.html) to fetch metadata for the complaint
+1. [`GetItem`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GetItem.html) to fetch metadata for the complaint
 
 ![Primary key, sort key, and attribute values, such as customer_id and severity, for a complaint item.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/ComplaintManagement-7-Step1.png)
 
@@ -158,7 +158,7 @@ Let's add more dummy data to the table.
 
 **Step 4: Address access patterns 8 (`getAComplaintbyCustomerIDAndComplaintID`) and 9 (`getAllComplaintsByCustomerID`)**
 
-Access patterns 8 (`getAComplaintbyCustomerIDAndComplaintID`) and 9 (`getAllComplaintsByCustomerID`) introduces a new search criteria: `CustomerID`. Fetching it from the existing table requires an expensive [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Scan.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Scan.html) to read all data and then filter relevant items for the `CustomerID` in question. We can make this search more efficient by creating a [global secondary index (GSI)](GSI.md) with `CustomerID` as the partition key. Keeping in mind the one-to-many relationship between customer and complaints as well as access pattern 9 (`getAllComplaintsByCustomerID`), `ComplaintID` would be the right candidate for the sort key.
+Access patterns 8 (`getAComplaintbyCustomerIDAndComplaintID`) and 9 (`getAllComplaintsByCustomerID`) introduces a new search criteria: `CustomerID`. Fetching it from the existing table requires an expensive [`Scan`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Scan.html) to read all data and then filter relevant items for the `CustomerID` in question. We can make this search more efficient by creating a [global secondary index (GSI)](GSI.md) with `CustomerID` as the partition key. Keeping in mind the one-to-many relationship between customer and complaints as well as access pattern 9 (`getAllComplaintsByCustomerID`), `ComplaintID` would be the right candidate for the sort key.
 
 The data in the GSI would look like this:
 

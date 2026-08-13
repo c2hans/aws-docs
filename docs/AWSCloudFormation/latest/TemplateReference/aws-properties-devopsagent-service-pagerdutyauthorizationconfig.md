@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DevOpsAgent::Service PagerDutyAuthorizationConfig
 <a name="aws-properties-devopsagent-service-pagerdutyauthorizationconfig"></a>
 
-<a name="aws-properties-devopsagent-service-pagerdutyauthorizationconfig-description"></a>The `PagerDutyAuthorizationConfig` property type specifies Property description not available. for an [AWS::DevOpsAgent::Service](aws-resource-devopsagent-service.md).
+The OAuth authorization configuration for a PagerDuty service.
 
 ## Syntax
 <a name="aws-properties-devopsagent-service-pagerdutyauthorizationconfig-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-service-pagerdutyauthorizationconfig-properties"></a>
 
 `OAuthClientCredentials`  <a name="cfn-devopsagent-service-pagerdutyauthorizationconfig-oauthclientcredentials"></a>
-Property description not available.
+OAuth client credentials authorization details.
 *Required*: No
 *Type*: [OAuthClientDetails](aws-properties-devopsagent-service-oauthclientdetails.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

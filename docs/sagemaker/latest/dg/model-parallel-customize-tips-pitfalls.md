@@ -27,7 +27,7 @@ Review the following tips and pitfalls before using Amazon SageMaker AI's model 
 
 ## The `@smp.step` Decorator
 <a name="model-parallel-customize-tips-pitfalls-smp-step-decorator"></a>
-+ If an `smp.step`-decorated function has a tensor argument that does not have a batch dimension, the argument name must be provided in the `non_split_inputs` list when calling `smp.step`. This prevents the library from attempting to split the tensor into microbatches. For more information see [https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_common_api.html](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_common_api.html) in the API documentation.
++ If an `smp.step`-decorated function has a tensor argument that does not have a batch dimension, the argument name must be provided in the `non_split_inputs` list when calling `smp.step`. This prevents the library from attempting to split the tensor into microbatches. For more information see [`smp.step`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_common_api.html) in the API documentation.
 
 ## Delaying Parameter Initialization
 <a name="model-parallel-customize-tips-pitfalls-delaying-param-initialization"></a>

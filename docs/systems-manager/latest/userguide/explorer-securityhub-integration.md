@@ -13,7 +13,7 @@ Security Hub CSPM sends findings to Amazon EventBridge, which uses an event rule
 
 **Warning**
 Note the following important information:
-Explorer is integrated with OpsCenter, a tool in Systems Manager. After you enable Explorer integration with Security Hub CSPM, OpsCenter automatically creates OpsItems for Security Hub CSPM findings. Depending on your AWS environment, enabling integration can result in large numbers of OpsItems, at a cost.
+Explorer is integrated with OpsCenter. After you enable Explorer integration with Security Hub CSPM, OpsCenter automatically creates OpsItems for Security Hub CSPM findings. Depending on your AWS environment, enabling integration can result in large numbers of OpsItems, at a cost.
 Before you continue, read about OpsCenter integration with Security Hub CSPM. The topic includes specific details about how changes and updates to findings and OpsItems are charged to your account. For more information, see [Understanding OpsCenter integration with AWS Security Hub CSPM](OpsCenter-applications-that-integrate.md#OpsCenter-integrate-with-security-hub). For OpsCenter pricing information, see [AWS Systems Manager Pricing](https://aws.amazon.com/systems-manager/pricing/).
 If you create a resource data sync in Explorer while logged into the administrator account, Security Hub CSPM integration is automatically enabled for the administrator and all member accounts in the sync. Once enabled, OpsCenter automatically creates OpsItems for Security Hub CSPM findings, at a cost. For more information about creating a resource data sync, see [Setting up Systems Manager Explorer to display data from multiple accounts and Regions](Explorer-resource-data-sync.md).
 
@@ -22,7 +22,7 @@ If you create a resource data sync in Explorer while logged into the administrat
 
 Explorer receives [all findings](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-cwe-integration-types.html#securityhub-cwe-integration-types-all-findings) from Security Hub CSPM. You can see all findings based on severity in the Explorer widget when you turn on the Security Hub CSPM default settings. By default, Explorer creates OpsItems for critical and high severity findings. You can manually configure Explorer to create OpsItems for medium and low severity findings.
 
-Though Explorer doesn't create OpsItems for informational findings, you can view informational operations data (OpsData) in the Security Hub CSPM findings summary widget. Explorer creates OpsData for all findings regardless of severity. For more information about Security Hub CSPM severity levels, see [Severity](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_Severity.html) in the *AWS Security Hub API Reference*.
+Though Explorer doesn't create OpsItems for informational findings, you can view informational operations data (OpsData) in the Security Hub CSPM findings summary widget. Explorer creates OpsData for all findings regardless of severity. For more information about Security Hub CSPM severity levels, see [Severity](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Severity.html) in the *AWS Security Hub API Reference*.
 
 ## Enabling integration
 <a name="explorer-securityhub-integration-receive-enable"></a>

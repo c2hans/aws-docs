@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkRequ
 
 In the following example, we create a qualification type that we can use to record how well workers did on a previous set of tasks and then build a qualification requirement that requires them to have achieved at least 80% accuracy. In this approach, we start by posting a set of HITs to which we already know the answer. When workers respond to these HITs, we can track their responses against the known answers and assign them a score as a qualification.
 
-To start, we use the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateQualificationTypeOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateQualificationTypeOperation.html) operation to create the type with which we want to work.
+To start, we use the [`CreateQualificationType`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateQualificationTypeOperation.html) operation to create the type with which we want to work.
 
 ```
 {
@@ -18,7 +18,7 @@ To start, we use the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI
 
 ```
 
-The `CreateQualificationType` operation returns an ID, 3TL87MO8CLOFYXKXNRLM00EXAMPLE, that we can assign to workers. For each worker, we call the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_AssociateQualificationWithWorkerOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_AssociateQualificationWithWorkerOperation.html) operation to record the score they achieved on the earlier tasks. In the example below, we record that the worker was 93% accurate on the test HITs.
+The `CreateQualificationType` operation returns an ID, 3TL87MO8CLOFYXKXNRLM00EXAMPLE, that we can assign to workers. For each worker, we call the [`AssociateQualificationWithWorker`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_AssociateQualificationWithWorkerOperation.html) operation to record the score they achieved on the earlier tasks. In the example below, we record that the worker was 93% accurate on the test HITs.
 
 ```
 {

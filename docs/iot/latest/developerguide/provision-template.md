@@ -362,7 +362,7 @@ The following JSON file is an example of a complete provisioning template that s
 **Important**
 You must use `CertificateId` in a template that's used for JIT provisioning.
 
-For more information about the type of a provisioning template, see [https://docs.aws.amazon.com/iot/latest/apireference/API_CreateProvisioningTemplate.html#iot-CreateProvisioningTemplate-request-type](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateProvisioningTemplate.html#iot-CreateProvisioningTemplate-request-type) in the AWS API reference.
+For more information about the type of a provisioning template, see [`CreateProvisioningTemplate`](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateProvisioningTemplate.html#iot-CreateProvisioningTemplate-request-type) in the AWS API reference.
 
 For more information about how to use this template for just-in-time provisioning, see: [Just-in-time provisioning](https://docs.aws.amazon.com/iot/latest/developerguide/jit-provisioning.html).
 

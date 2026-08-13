@@ -35,7 +35,7 @@ To accelerate high-performance computing (HPC) and machine learning applications
 ------
 #### [ AWS CLI ]
 
-+ To use the AWS CLI, you must have the ID of the DLAMI that you want to use, the AWS Region and EC2 instance type, and your security token information. Then, you can launch the instance using the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/run-instances.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/run-instances.html) AWS CLI command.
++ To use the AWS CLI, you must have the ID of the DLAMI that you want to use, the AWS Region and EC2 instance type, and your security token information. Then, you can launch the instance using the [**ec2 run-instances**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/run-instances.html) AWS CLI command.
 
   For instructions on installing and configuring the AWS CLI, see [Get started with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started) in the *AWS Command Line Interface User Guide*. For more information, including command examples, see [Launch, list, and close Amazon EC2 instances for the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-ec2-instances.html).
 

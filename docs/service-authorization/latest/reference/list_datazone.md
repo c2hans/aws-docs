@@ -2504,6 +2504,12 @@ The following actions are defined by Amazon DataZone but are not directly invoca
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_datazone-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [BatchUpdateNotifications](${APIReferenceDocPage}API_BatchUpdateNotifications.html)  **
+  - **Description:** Grants permission to update mutable fields of the calling user's own notifications
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [DeleteDomainSharingPolicy](${APIReferenceDocPage}API_DeleteDomainSharingPolicy.html)  **
   - **Description:** Grants permission to delete a resource policy for a DataZone Domain
   - **Resource types (\*required):**

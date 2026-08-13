@@ -62,8 +62,8 @@ Each delivery policy is comprised of four phases.
 You can define how Amazon SNS retries message delivery to HTTP/S endpoints using a delivery policy with four phases: *no-delay*, *pre-backoff*, *backoff*, and *post-backoff*. This policy allows you to override the default retry settings and customize them to match the capacity of your HTTP server.
 
 You can define your HTTP/S delivery policy as a JSON object at either the **topic** or **subscription** level:
-+ **Topic-level policy** – Applies to all HTTP/S subscriptions linked to the topic. Use the [https://docs.aws.amazon.com/sns/latest/api/API_CreateTopic.html](https://docs.aws.amazon.com/sns/latest/api/API_CreateTopic.html) or [https://docs.aws.amazon.com/sns/latest/api/API_SetTopicAttributes.html](https://docs.aws.amazon.com/sns/latest/api/API_SetTopicAttributes.html) API action to set this policy.
-+ **Subscription-level policy** – Applies only to a specific subscription. Use the [https://docs.aws.amazon.com/sns/latest/api/API_Subscribe.html](https://docs.aws.amazon.com/sns/latest/api/API_Subscribe.html) or [https://docs.aws.amazon.com/sns/latest/api/API_SetSubscriptionAttributes.html](https://docs.aws.amazon.com/sns/latest/api/API_SetSubscriptionAttributes.html) API action to set this policy.
++ **Topic-level policy** – Applies to all HTTP/S subscriptions linked to the topic. Use the [`CreateTopic`](https://docs.aws.amazon.com/sns/latest/api/API_CreateTopic.html) or [`SetTopicAttributes`](https://docs.aws.amazon.com/sns/latest/api/API_SetTopicAttributes.html) API action to set this policy.
++ **Subscription-level policy** – Applies only to a specific subscription. Use the [`Subscribe`](https://docs.aws.amazon.com/sns/latest/api/API_Subscribe.html) or [`SetSubscriptionAttributes`](https://docs.aws.amazon.com/sns/latest/api/API_SetSubscriptionAttributes.html) API action to set this policy.
 
 Alternatively, you can also use the [AWS::SNS::Subscription](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html) resource in your CloudFormation templates.
 

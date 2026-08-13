@@ -13,13 +13,13 @@ Contains information about an agent runtime endpoint. An endpoint provides a way
  ** agentRuntimeArn **   <a name="bedrockagentcorecontrol-Type-AgentRuntimeEndpoint-agentRuntimeArn"></a>
 The Amazon Resource Name (ARN) of the agent runtime associated with the endpoint.
 Type: String
-Pattern: `arn:(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:agent/[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}:([0-9]{0,4}[1-9][0-9]{0,4})`
+Pattern: `arn:aws(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:runtime/[a-zA-Z][a-zA-Z0-9_]{0,47}-[a-zA-Z0-9]{10}`
 Required: Yes
 
  ** agentRuntimeEndpointArn **   <a name="bedrockagentcorecontrol-Type-AgentRuntimeEndpoint-agentRuntimeEndpointArn"></a>
 The Amazon Resource Name (ARN) of the agent runtime endpoint.
 Type: String
-Pattern: `arn:(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:agentEndpoint/[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
+Pattern: `arn:aws(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:runtime/[a-zA-Z][a-zA-Z0-9_]{0,47}-[a-zA-Z0-9]{10}/runtime-endpoint/[a-zA-Z][a-zA-Z0-9_]{0,47}`
 Required: Yes
 
  ** createdAt **   <a name="bedrockagentcorecontrol-Type-AgentRuntimeEndpoint-createdAt"></a>

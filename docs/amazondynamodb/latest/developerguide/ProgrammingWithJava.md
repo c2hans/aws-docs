@@ -255,7 +255,7 @@ package org.example;
  }
 ```
 
-The `DependencyFactory` class that Maven creates contains the `dynamoDbClient` factory method that builds and returns an [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html) instance. The `DynamoDbClient` instance uses an instance of the Apache-based HTTP client. This is because you specified `apache-client` when Maven prompted you for which HTTP client to use.
+The `DependencyFactory` class that Maven creates contains the `dynamoDbClient` factory method that builds and returns an [`DynamoDbClient`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html) instance. The `DynamoDbClient` instance uses an instance of the Apache-based HTTP client. This is because you specified `apache-client` when Maven prompted you for which HTTP client to use.
 
 The following code shows the `DependencyFactory` class.
 
@@ -316,7 +316,7 @@ To fill in the logic, replace the entire contents of the `Handler` class with th
 #### `Handler` class, implemented
 <a name="code-collapse4"></a>
 
-The following code uses the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html) instance to retrieve a list of existing tables. If tables exist for a given account and AWS Region, then the code uses the `Logger` instance to log the names of these tables.
+The following code uses the [`DynamoDbClient`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html) instance to retrieve a list of existing tables. If tables exist for a given account and AWS Region, then the code uses the `Logger` instance to log the names of these tables.
 
 ```
 package org.example;
@@ -718,13 +718,13 @@ public class DynamoDbEnhancedDocumentClientPutItem {
 ```
 
 To convert JSON documents to and from the native Amazon DynamoDB data types, you can use the following utility methods:
-+ [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/document/EnhancedDocument.html#fromJson(java.lang.String)](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/document/EnhancedDocument.html#fromJson(java.lang.String)) – Creates a new EnhancedDocument instance from a JSON string.
-+ [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/document/EnhancedDocument.html#toJson()](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/document/EnhancedDocument.html#toJson()) – Creates a JSON string representation of the document that you can use in your application like any other JSON object.
++ [`EnhancedDocument.fromJson(String json)`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/document/EnhancedDocument.html#fromJson(java.lang.String)) – Creates a new EnhancedDocument instance from a JSON string.
++ [`EnhancedDocument.toJson()`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/document/EnhancedDocument.html#toJson()) – Creates a JSON string representation of the document that you can use in your application like any other JSON object.
 
 ### Comparing interfaces with a `Query` example
 <a name="CompareJavaInterfacesQueryEx"></a>
 
-This section shows the same [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html) call expressed using the various interfaces. To fine tune the results of these queries, note the following:
+This section shows the same [`Query`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html) call expressed using the various interfaces. To fine tune the results of these queries, note the following:
 + DynamoDB targets one specific partition key value, so you must specify the partition key completely.
 + To have the query target only cart items, the sort key has a key condition expression that uses `begins_with`.
 + We use `limit()` to limit the query to a maximum of 100 returned items.
@@ -922,7 +922,7 @@ The `DynamoDbAsyncClient` and `DynamoDbEnhancedAsyncClient` classes provide asyn
 
 The AWS SDK for Java 2.x uses the native support for non-blocking I/O. The AWS SDK for Java 1.x had to simulate non-blocking I/O.
 
-The asynchronous methods return before a response is available, so you need a way to get the response when it's ready. These methods in the AWS SDK for Java return a [https://docs.oracle.com/javase/8/docs/api/index.html?java/util/concurrent/CompletableFuture.html](https://docs.oracle.com/javase/8/docs/api/index.html?java/util/concurrent/CompletableFuture.html) object that contains the results of the asynchronous operation in the future. When you call `get()` or `join()` on these `CompletableFuture` objects, your code blocks until the result is available. If you call these at the same time that you make the request, then the behavior is similar to a plain synchronous call.
+The asynchronous methods return before a response is available, so you need a way to get the response when it's ready. These methods in the AWS SDK for Java return a [`CompletableFuture`](https://docs.oracle.com/javase/8/docs/api/index.html?java/util/concurrent/CompletableFuture.html) object that contains the results of the asynchronous operation in the future. When you call `get()` or `join()` on these `CompletableFuture` objects, your code blocks until the result is available. If you call these at the same time that you make the request, then the behavior is similar to a plain synchronous call.
 
 For more information about asynchronous programming, see [Use asynchronous programming](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/asynchronous.html) in the *AWS SDK for Java 2.x Developer Guide*.
 
@@ -944,12 +944,12 @@ The following list presents some of the possible HTTP clients:
 ### Apache-based HTTP client
 <a name="ApacheHttpClient"></a>
 
-The [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/apache/ApacheHttpClient.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/apache/ApacheHttpClient.html) class supports synchronous service clients. It's the default HTTP client for synchronous use. For information about configuring the `ApacheHttpClient` class, see [Configure the Apache-based HTTP client](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http-configuration-apache.html) in the *AWS SDK for Java 2.x Developer Guide*.
+The [`ApacheHttpClient`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/apache/ApacheHttpClient.html) class supports synchronous service clients. It's the default HTTP client for synchronous use. For information about configuring the `ApacheHttpClient` class, see [Configure the Apache-based HTTP client](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http-configuration-apache.html) in the *AWS SDK for Java 2.x Developer Guide*.
 
 ### `URLConnection`-based HTTP client
 <a name="URLConnHttpClient"></a>
 
-The [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/urlconnection/UrlConnectionHttpClient.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/urlconnection/UrlConnectionHttpClient.html) class is another option for synchronous clients. It loads more quickly than the Apache-based HTTP client, but has fewer features. For information about configuring the `UrlConnectionHttpClient` class, see [Configure the URLConnection-based HTTP client](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http-configuration-url.html) in the *AWS SDK for Java 2.x Developer Guide*.
+The [`UrlConnectionHttpClient`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/urlconnection/UrlConnectionHttpClient.html) class is another option for synchronous clients. It loads more quickly than the Apache-based HTTP client, but has fewer features. For information about configuring the `UrlConnectionHttpClient` class, see [Configure the URLConnection-based HTTP client](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http-configuration-url.html) in the *AWS SDK for Java 2.x Developer Guide*.
 
 ### Netty-based HTTP client
 <a name="NettyHttpClient"></a>
@@ -984,7 +984,7 @@ When configuring a client, you can provide various configuration options, includ
 + Enabling the tracking of [client-side performance metrics](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/metrics.html). Using this feature helps you to collect metrics about the service clients in your application and analyze the output in Amazon CloudWatch.
 + Specifying an alternate executor service to be used for scheduling tasks, such as async retry attempts and timeout tasks.
 
-You control the configuration by providing a [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/client/config/ClientOverrideConfiguration.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/client/config/ClientOverrideConfiguration.html) object to the service client `Builder` class. You'll see this in some code examples in the following sections.
+You control the configuration by providing a [`ClientOverrideConfiguration`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/client/config/ClientOverrideConfiguration.html) object to the service client `Builder` class. You'll see this in some code examples in the following sections.
 
 The `ClientOverrideConfiguration` provides standard configuration choices. The different pluggable HTTP clients have implementation-specific configuration possibilities as well.
 
@@ -1022,16 +1022,16 @@ You can find an expanded definition of these retry modes in the [Retry behavior]
 #### Retry strategies
 <a name="RetryPolicies"></a>
 
-Each retry mode is implemented by a retry *strategy*. The retry strategy API (the `software.amazon.awssdk.retries` package) supersedes the older retry *policy* API (`RetryPolicy` and `RetryCondition` in `software.amazon.awssdk.core.retry`). Existing `RetryPolicy` configurations continue to work—the SDK adapts them to a retry strategy—but new code should use a [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/api/RetryStrategy.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/api/RetryStrategy.html). The AWS SDK for Java 2.x provides three built-in strategies:
-+ [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/StandardRetryStrategy.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/StandardRetryStrategy.html) – The recommended strategy for most use cases.
-+ [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/LegacyRetryStrategy.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/LegacyRetryStrategy.html) – The default strategy when you don't specify one. It treats throttling and non-throttling exceptions differently.
-+ [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/AdaptiveRetryStrategy.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/AdaptiveRetryStrategy.html) – For resource-constrained use cases. It adds a client-side rate limiter and assumes the client works against a single resource.
+Each retry mode is implemented by a retry *strategy*. The retry strategy API (the `software.amazon.awssdk.retries` package) supersedes the older retry *policy* API (`RetryPolicy` and `RetryCondition` in `software.amazon.awssdk.core.retry`). Existing `RetryPolicy` configurations continue to work—the SDK adapts them to a retry strategy—but new code should use a [`RetryStrategy`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/api/RetryStrategy.html). The AWS SDK for Java 2.x provides three built-in strategies:
++ [`StandardRetryStrategy`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/StandardRetryStrategy.html) – The recommended strategy for most use cases.
++ [`LegacyRetryStrategy`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/LegacyRetryStrategy.html) – The default strategy when you don't specify one. It treats throttling and non-throttling exceptions differently.
++ [`AdaptiveRetryStrategy`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/AdaptiveRetryStrategy.html) – For resource-constrained use cases. It adds a client-side rate limiter and assumes the client works against a single resource.
 
 For more information, see [Configure retry behavior in the AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/retry-strategy.html).
 
 When a client encounters a retryable error, such as a throttling exception or a temporary server error, then the SDK automatically retries the request. You can control how many times and how quickly these retries happen by customizing the retry strategy with the following:
 + `maxAttempts` – The maximum number of attempts (the first attempt plus retries) before a request is considered to be failed. For DynamoDB clients, the default is 8 attempts for all strategies.
-+ `backoffStrategy` – A [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/api/BackoffStrategy.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/api/BackoffStrategy.html) that determines the delay between retries. The standard strategy uses `BackoffStrategy.exponentialDelay` with a base delay of 100 ms and a maximum delay of 20 seconds.
++ `backoffStrategy` – A [`BackoffStrategy`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/api/BackoffStrategy.html) that determines the delay between retries. The standard strategy uses `BackoffStrategy.exponentialDelay` with a base delay of 100 ms and a maximum delay of 20 seconds.
 + `retryOnException` – Adds exception types to the set that triggers a retry, in addition to the SDK's default set of retryable exceptions.
 
 The following code configures a DynamoDB client with a standard retry strategy customized to a maximum of six attempts (the first attempt plus five retries) and an exponential backoff that starts at 100 ms and is capped at one second.
@@ -1112,7 +1112,7 @@ DynamoDbClient client = DynamoDbClient.builder()
 ```
 
 **`URLConnection`-based HTTP client**
-Any synchronous client that uses the `URLConnection`-based HTTP client [https://docs.oracle.com/javase/8/docs/api/java/net/HttpURLConnection.html](https://docs.oracle.com/javase/8/docs/api/java/net/HttpURLConnection.html) doesn't have a [mechanism](https://docs.oracle.com/javase/8/docs/api/java/net/doc-files/net-properties.html) to enable keep-alive.
+Any synchronous client that uses the `URLConnection`-based HTTP client [`HttpURLConnection`](https://docs.oracle.com/javase/8/docs/api/java/net/HttpURLConnection.html) doesn't have a [mechanism](https://docs.oracle.com/javase/8/docs/api/java/net/doc-files/net-properties.html) to enable keep-alive.
 
 **Example to enable TCP Keep-Alive on a Netty-based HTTP client**
 
@@ -1151,23 +1151,23 @@ DynamoDbAsyncClient client = DynamoDbAsyncClient.builder()
 
 When it comes to exception handling, the AWS SDK for Java 2.x uses runtime (unchecked) exceptions.
 
-The base exception, covering all SDK exceptions, is [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/exception/SdkServiceException.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/exception/SdkServiceException.html), which extends from the Java unchecked `RuntimeException`. If you catch this, you'll catch all exceptions that the SDK throws.
+The base exception, covering all SDK exceptions, is [`SdkServiceException`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/exception/SdkServiceException.html), which extends from the Java unchecked `RuntimeException`. If you catch this, you'll catch all exceptions that the SDK throws.
 
-`SdkServiceException` has a subclass called [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/awscore/exception/AwsServiceException.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/awscore/exception/AwsServiceException.html). This subclass indicates any issue in communication with the AWS service. It has a subclass called [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/DynamoDbException.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/DynamoDbException.html), which indicates an issue in communication with DynamoDB. If you catch this, you'll catch all exceptions related to DynamoDB, but no other SDK exceptions.
+`SdkServiceException` has a subclass called [`AwsServiceException`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/awscore/exception/AwsServiceException.html). This subclass indicates any issue in communication with the AWS service. It has a subclass called [`DynamoDbException`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/DynamoDbException.html), which indicates an issue in communication with DynamoDB. If you catch this, you'll catch all exceptions related to DynamoDB, but no other SDK exceptions.
 
-There are more specific [exception types](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/DynamoDbException.html) under `DynamoDbException`. Some of these exception types apply to control-plane operations such as [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/TableAlreadyExistsException.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/TableAlreadyExistsException.html). Others apply to data-plane operations. The following is an example of a common data-plane exception:
-+ [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/ConditionalCheckFailedException.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/ConditionalCheckFailedException.html) – You specified a condition in the request that evaluated to false. For example, you might have tried to perform a conditional update on an item, but the actual value of the attribute did not match the expected value in the condition. A request that fails in this manner isn't retried.
+There are more specific [exception types](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/DynamoDbException.html) under `DynamoDbException`. Some of these exception types apply to control-plane operations such as [`TableAlreadyExistsException`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/TableAlreadyExistsException.html). Others apply to data-plane operations. The following is an example of a common data-plane exception:
++ [`ConditionalCheckFailedException`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/ConditionalCheckFailedException.html) – You specified a condition in the request that evaluated to false. For example, you might have tried to perform a conditional update on an item, but the actual value of the attribute did not match the expected value in the condition. A request that fails in this manner isn't retried.
 
 Other situations don't have a specific exception defined. For example, when your requests get throttled the specific `ProvisionedThroughputExceededException` might get thrown, while in other cases the more generic `DynamoDbException` is thrown. In either case, you can determine if throttling caused the exception by checking if `isThrottlingException()` returns `true`.
 
 Depending on your application needs, you can catch all `AwsServiceException` or `DynamoDbException` instances. However, you often need different behavior in different situations. The logic to deal with a condition check failure is different than that to handle throttling. Define which exceptional paths you want to deal with and make sure to test the alternative paths. This helps you make sure that you can deal with all relevant scenarios.
 
-For lists of common errors that you might encounter, see [Error handling with DynamoDB](Programming.Errors.md). Also see [Common Errors](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/CommonErrors.html) in the *Amazon DynamoDB API Reference*. The API Reference also provides the exact errors possible for each API operation, such as for the [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html) operation. For information about handling exceptions, see [Exception handling for the AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/handling-exceptions.html) in the *AWS SDK for Java 2.x Developer Guide*.
+For lists of common errors that you might encounter, see [Error handling with DynamoDB](Programming.Errors.md). Also see [Common Errors](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/CommonErrors.html) in the *Amazon DynamoDB API Reference*. The API Reference also provides the exact errors possible for each API operation, such as for the [`Query`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html) operation. For information about handling exceptions, see [Exception handling for the AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/handling-exceptions.html) in the *AWS SDK for Java 2.x Developer Guide*.
 
 ## AWS request ID
 <a name="JavaRequestID"></a>
 
-Each request includes a request ID, which can be useful to pull if you're working with AWS Support to diagnose an issue. Each exception derived from `SdkServiceException` has a [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/exception/SdkServiceException.html#requestId()](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/exception/SdkServiceException.html#requestId()) method available to retrieve the request ID.
+Each request includes a request ID, which can be useful to pull if you're working with AWS Support to diagnose an issue. Each exception derived from `SdkServiceException` has a [`requestId()`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/exception/SdkServiceException.html#requestId()) method available to retrieve the request ID.
 
 ## Logging
 <a name="JavaLogging"></a>
@@ -1244,7 +1244,7 @@ Here is an example of the log output:
 ## Pagination
 <a name="JavaPagination"></a>
 
-Some requests, such as [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html) and [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Scan.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Scan.html), limit the size of data returned on a single request and require you make repeated requests to pull subsequent pages.
+Some requests, such as [`Query`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html) and [`Scan`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Scan.html), limit the size of data returned on a single request and require you make repeated requests to pull subsequent pages.
 
 You can control the maximum number of items to read for each page with the `Limit` parameter. For example, you can use the `Limit` parameter to retrieve only the last 10 items. This limit specifies how many items to read from the table before any filtering is applied. If you want exactly 10 items after filtering, there's no way to specify that. You can control only the pre-filtered count and check client-side when you've actually retrieved 10 items. Regardless of the limit, responses always have a maximum size of 1 MB.
 
@@ -1277,7 +1277,7 @@ while (true) {
 
 The AWS SDK for Java 2.x can simplify this interaction with DynamoDB by providing auto-pagination methods that make multiple service calls to automatically get the next pages of results for you. This simplifies your code, but it takes away some control of resource usage that you would keep by manually reading pages.
 
-By using the `Iterable` methods available in the DynamoDB client, such as [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html#queryPaginator(software.amazon.awssdk.services.dynamodb.model.QueryRequest)](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html#queryPaginator(software.amazon.awssdk.services.dynamodb.model.QueryRequest)) and [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html#scanPaginator(software.amazon.awssdk.services.dynamodb.model.ScanRequest)](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html#scanPaginator(software.amazon.awssdk.services.dynamodb.model.ScanRequest)), the SDK takes care of the pagination. The return type of these methods is a custom iterable that you can use to iterate through all the pages. The SDK internally handles service calls for you. Using the Java Stream API, you can handle the result of `QueryPaginator` as shown in the following example.
+By using the `Iterable` methods available in the DynamoDB client, such as [`QueryPaginator`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html#queryPaginator(software.amazon.awssdk.services.dynamodb.model.QueryRequest)) and [`ScanPaginator`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html#scanPaginator(software.amazon.awssdk.services.dynamodb.model.ScanRequest)), the SDK takes care of the pagination. The return type of these methods is a custom iterable that you can use to iterate through all the pages. The SDK internally handles service calls for you. Using the Java Stream API, you can handle the result of `QueryPaginator` as shown in the following example.
 
 ```
 QueryPublisher queryPublisher =

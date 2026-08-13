@@ -9,8 +9,8 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/security.encryp
 <a name="w2aac62c22c29b3"></a>
 
  To use a customer managed key with ephemeris data, your key policy must grant the following permissions to the AWS Ground Station service:
-+  [https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) - Creates an access grant on a customer managed key. Grants AWS Ground Station access to perform [grant operations](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html#terms-grant-operations) on the customer managed key for reading and storing encrypted data.
-+  [https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) - Provides the customer managed key details to allow AWS Ground Station to validate the key before attempting to use the provided key.
++  [`kms:CreateGrant`](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) - Creates an access grant on a customer managed key. Grants AWS Ground Station access to perform [grant operations](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html#terms-grant-operations) on the customer managed key for reading and storing encrypted data.
++  [`kms:DescribeKey`](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) - Provides the customer managed key details to allow AWS Ground Station to validate the key before attempting to use the provided key.
 
  For more information about [Using Grants](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html), see the AWS Key Management Service Developer Guide.
 
@@ -20,8 +20,8 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/security.encryp
  When AWS Ground Station uses a customer managed key in cryptographic operations, it acts on behalf of the user who is creating the ephemeris resource.
 
  To create an ephemeris resource using a customer managed key, a user must have permissions to call the following operations on the customer managed key:
-+  [https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) - Allows the user to create grants on the customer managed key on behalf of AWS Ground Station.
-+  [https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) - Allows the user to view the customer managed key details to validate the key.
++  [`kms:CreateGrant`](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) - Allows the user to create grants on the customer managed key on behalf of AWS Ground Station.
++  [`kms:DescribeKey`](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) - Allows the user to view the customer managed key details to validate the key.
 
  You can specify these required permissions in a key policy, or in an IAM policy if the key policy allows it. These permissions ensure that users can authorize AWS Ground Station to use the customer managed key for encryption operations on their behalf.
 

@@ -96,7 +96,6 @@ For services that use the [CloudWatch agent](Install-CloudWatch-Agent.md), you m
 | Amazon Interactive Video Service | `AWS::IVSChat::LoggingConfiguration` | Yes | Yes |
 | AWS IoT | `AWS::IoT::TopicRule` | Yes | Yes |
 | AWS IoT 1-Click | `AWS::IoT1Click::Device` | Yes | No |
-| AWS IoT Events |  | No | Yes |
 | AWS IoT FleetWise | `AWS::IoTFleetWise::Vehicle` | No | Yes |
 | AWS IoT SiteWise |  | No | Yes |
 | AWS Key Management Service | `AWS::KMS::Key` | Yes | No |

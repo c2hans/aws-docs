@@ -32,7 +32,13 @@ Type: [ApplicationStatusReason](API_ApplicationStatusReason.md) object
 Required: No
 
  ** status **
-The status of the individual application status check. This value reflects the actual health check result and is not affected by the aggregation setting or suppression. Only the instance-level `ApplicationStatus$status` is affected by those settings.
+The status of the individual application status check. Possible values:
++  `passed` – The check reached its success threshold.
++  `failed` – The check reached its failure threshold.
++  `initializing` – The check is initializing or has not reached a success or failure threshold.
++  `insufficient-data` – The check does not have enough data to determine a result.
++  `not-applicable` – The check does not apply to the instance.
+This value reflects the check result and is not affected by aggregation or suppression.
 Type: String
 Valid Values: `passed | failed | initializing | insufficient-data | not-applicable`
 Required: No

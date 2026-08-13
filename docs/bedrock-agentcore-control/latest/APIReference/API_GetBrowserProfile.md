@@ -92,7 +92,7 @@ Pattern: `[a-zA-Z][a-zA-Z0-9_]{0,47}`
  ** [profileArn](#API_GetBrowserProfile_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetBrowserProfile-response-profileArn"></a>
 The Amazon Resource Name (ARN) of the browser profile.
 Type: String
-Pattern: `arn:(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:browser-profile/[a-zA-Z][a-zA-Z0-9_]{0,47}-[a-zA-Z0-9]{10}`
+Pattern: `arn:aws(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:browser-profile/[a-zA-Z][a-zA-Z0-9_]{0,47}-[a-zA-Z0-9]{10}`
 
  ** [profileId](#API_GetBrowserProfile_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetBrowserProfile-response-profileId"></a>
 The unique identifier of the browser profile.

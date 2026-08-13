@@ -580,7 +580,7 @@ For more examples, see [How Amazon ECS manages CPU and memory resources](https:/
 `gpu`
 Type: [ResourceRequirement](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ResourceRequirement.html) object
 Required: No
-The number of physical `GPUs` that the Amazon ECS container agent reserves for the container. You can specify a numeric value or `ALL`. When you specify `ALL`, all GPUs on the container instance are allocated to the container. The number of GPUs reserved for all containers in a task must not exceed the number of available GPUs on the container instance the task is launched on. For more information, see [Amazon ECS task definitions for GPU workloads](ecs-gpu.md).
+The number of physical `GPUs` that the Amazon ECS container agent reserves for the container. You can specify an integer value, a decimal value for fractional GPUs, or `ALL`. When you specify `ALL`, all GPUs on the container instance are allocated to the container. When you specify a decimal value (such as `0.125`, `0.25`, or `0.5`), Amazon ECS places the task on a fractional GPU instance (G6f) that provides the requested GPU capacity. The number of GPUs reserved for all containers in a task must not exceed the number of available GPUs on the container instance the task is launched on. For more information, see [Amazon ECS task definitions for GPU workloads](ecs-gpu.md).
 
 `Neuron device`
 Type: [ResourceRequirement](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ResourceRequirement.html) object
@@ -625,7 +625,7 @@ The command that's passed to the container. This parameter maps to `Cmd` in the 
 `workingDirectory`
 Type: String
 Required: No
-The working directory to run commands inside the container in. This parameter maps to `WorkingDir` in the [Create a container](https://docs.docker.com/reference/api/engine/version/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/reference/api/engine/version/v1.38/) and the `--workdir` option to [https://docs.docker.com/reference/cli/docker/container/run/](https://docs.docker.com/reference/cli/docker/container/run/).
+The working directory to run commands inside the container in. This parameter maps to `WorkingDir` in the [Create a container](https://docs.docker.com/reference/api/engine/version/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/reference/api/engine/version/v1.38/) and the `--workdir` option to [**docker run**](https://docs.docker.com/reference/cli/docker/container/run/).
 
 ```
 "workingDirectory": "string"
@@ -1019,7 +1019,7 @@ The type of resource to assign to a container. The supported values are `GPU` an
 Type: String
 Required: Yes
 The value for the specified resource type.
-If the `GPU` type is used, the value is the number of physical `GPUs` the Amazon ECS container agent reserves for the container. You can also specify `ALL` to allocate all GPUs on the container instance to the container. The number of GPUs that's reserved for all containers in a task can't exceed the number of available GPUs on the container instance the task is launched on.
+If the `GPU` type is used, the value is the number of physical `GPUs` the Amazon ECS container agent reserves for the container. You can specify an integer value for full GPUs, a decimal value (`0.125`, `0.25`, or `0.5`) for fractional GPUs on G6f instances, or `ALL` to allocate all GPUs on the container instance to the container. The number of GPUs reserved for all containers in a task cannot exceed the number of available GPUs on the container instance the task is launched on.
 GPUs aren't available for tasks that are running on Fargate.
 If the `NeuronDevice` type is used, the only supported value is `ALL`. When `ALL` is specified, the container gets exclusive access to all Neuron devices on the instance.
 Neuron devices aren't available for tasks that are running on Fargate.

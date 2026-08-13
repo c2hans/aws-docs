@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Finding
 <a name="API_FindingHistoryUpdate_Contents"></a>
 
  ** NewValue **   <a name="securityhub-Type-FindingHistoryUpdate-NewValue"></a>
- The value of the ASFF field after the finding change event. To preserve storage and readability, Security Hub CSPM omits this value if [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_FindingHistoryRecord.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_FindingHistoryRecord.html) exceeds database limits.
+ The value of the ASFF field after the finding change event. To preserve storage and readability, Security Hub CSPM omits this value if [`FindingHistoryRecord`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_FindingHistoryRecord.html) exceeds database limits.
 Type: String
 Pattern: `.*\S.*`
 Required: No

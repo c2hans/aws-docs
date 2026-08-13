@@ -381,5 +381,5 @@ actions:
 <a name="action-reference-EC2Deploy-links"></a>
 
 The following related resources can help you as you work with this action.
-+  [Tutorial: Deploy to Amazon EC2 instances with CodePipeline](tutorials-ec2-deploy.md) – This tutorial walks you through the creation of a EC2 instances where you will deploy a script file, along with creation of the pipeline using the EC2 action.
++  [Tutorial: Deploy to Amazon EC2 instances with CodePipeline](tutorials-ec2-deploy.md) – This tutorial walks you through the creation of EC2 instances where you will deploy a script file, along with creation of the pipeline using the EC2 action.
 + [EC2 Deploy action fails with an error message `No such file`](troubleshooting.md#troubleshooting-ec2-deploy) – This topic describes troubleshooting for file not found errors with the EC2 action.

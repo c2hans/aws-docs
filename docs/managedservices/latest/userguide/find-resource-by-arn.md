@@ -16,7 +16,7 @@ There is no direct path in AWS to look up all resource details from the resource
 + The related AWS service (the third ARN segment) tells you what AWS console to look at to find the resource
 + The resource ID (the sixth or seventh ARN segment) confirms that you've found the right resource
 
-Or you can look for the AWS CLI commands available for that service in the [https://docs.aws.amazon.com/cli/latest/index.html](https://docs.aws.amazon.com/cli/latest/index.html) for information about obtaining details about the resource.
+Or you can look for the AWS CLI commands available for that service in the [*AWS CLI Command Reference*](https://docs.aws.amazon.com/cli/latest/index.html) for information about obtaining details about the resource.
 
 For example, from the following ARN, you can determine that the service is `lambda`, the account is `123456789012`, the resource type is `function`, and the name of the function is `TestFunction`.
 

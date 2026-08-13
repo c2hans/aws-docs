@@ -45,7 +45,7 @@ Your changes will apply to all the Regions that you enabled Security Lake in dur
 ------
 #### [ API ]
 
-To configure retention settings programmatically when you're onboarding to Security Lake, use the [https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDataLake.html](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDataLake.html) operation of the Security Lake API. If you're using the AWS CLI, run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/create-data-lake.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/create-data-lake.html) command. Specify the retention settings you want in the `lifecycleConfiguration` parameters as follows:
+To configure retention settings programmatically when you're onboarding to Security Lake, use the [CreateDataLake](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDataLake.html) operation of the Security Lake API. If you're using the AWS CLI, run the [create-data-lake](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/create-data-lake.html) command. Specify the retention settings you want in the `lifecycleConfiguration` parameters as follows:
 + For `transitions`, specify the total number of days (`days`) that you want to store S3 objects in a particular Amazon S3 storage class (`storageClass`).
 + For `expiration`, specify the total number of days that you want to store objects in Amazon S3, using any storage class, after objects are created. When this time period ends, objects expire and Amazon S3 deletes them.
 
@@ -84,7 +84,7 @@ Follow these instructions to update retention settings for one or more Regions a
 ------
 #### [ API ]
 
-To update retention settings programmatically, use the [https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDataLake.html](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDataLake.html) operation of the Security Lake API. If you're using the AWS CLI, run the [https://docs.aws.amazon.com/cli/latest/reference/securitylake/update-data-lake.html](https://docs.aws.amazon.com/cli/latest/reference/securitylake/update-data-lake.html) command. In your request, use the `lifecycleConfiguration` parameter to specify the new settings:
+To update retention settings programmatically, use the [UpdateDataLake](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDataLake.html) operation of the Security Lake API. If you're using the AWS CLI, run the [update-data-lake](https://docs.aws.amazon.com/cli/latest/reference/securitylake/update-data-lake.html) command. In your request, use the `lifecycleConfiguration` parameter to specify the new settings:
 + To change the transition settings, use the `transitions` parameters to specify each new time period in days (`days`) that you want to store S3 objects in a particular Amazon S3 storage class (`storageClass`).
 + To change the overall retention period, use the `expiration` parameter to specify the total number of days that you want to store S3 objects, using any storage class, after objects are created. When this retention period ends, objects expire and Amazon S3 deletes them.
 

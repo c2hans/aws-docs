@@ -42,7 +42,7 @@ SES deliverability settings control engagement tracking and optimized shared del
 ### Changing SES deliverability settings using the AWS CLI
 <a name="vdm-settings-ses-cli"></a>
 
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccountVdmAttributes.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccountVdmAttributes.html) and [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutConfigurationSetVdmOptions.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutConfigurationSetVdmOptions.html) operations in the Amazon SES API v2 to change your SES deliverability settings.
+You can use the [`PutAccountVdmAttributes`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccountVdmAttributes.html) and [`PutConfigurationSetVdmOptions`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutConfigurationSetVdmOptions.html) operations in the Amazon SES API v2 to change your SES deliverability settings.
 + Enable or disable engagement tracking, optimized shared delivery, or both using an input file:
 
   ```
@@ -65,7 +65,7 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutA
   }
   ```
 
-  You can find more information about parameter values and related data types by linking from the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_VdmAttributes.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_VdmAttributes.html) data type in the Amazon SES API v2 reference.
+  You can find more information about parameter values and related data types by linking from the [`VdmAttributes`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_VdmAttributes.html) data type in the Amazon SES API v2 reference.
 + Define custom settings for how a configuration set will use engagement tracking and optimized shared delivery by overriding how they've been defined in Virtual Deliverability Manager:
 
   ```
@@ -88,13 +88,13 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutA
   }
   ```
 
-  For more information about parameter values and related data types, see the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_VdmOptions.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_VdmOptions.html) data type in the Amazon SES API v2 reference.
+  For more information about parameter values and related data types, see the [`VdmOptions`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_VdmOptions.html) data type in the Amazon SES API v2 reference.
 + To verify the outcome:
 
   ```
   aws --region us-east-1 sesv2 get-configuration-set --configuration-set-name example
   ```
-+ Not specifying [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DashboardOptions.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DashboardOptions.html) or [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GuardianOptions.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GuardianOptions.html) options at the configuration set level results in your Virtual Deliverability Manager account-level settings applying to traffic sent through that configuration set.
++ Not specifying [`DashboardOptions`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DashboardOptions.html) or [`GuardianOptions`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GuardianOptions.html) options at the configuration set level results in your Virtual Deliverability Manager account-level settings applying to traffic sent through that configuration set.
 
 ## Global deliverability settings
 <a name="vdm-settings-global"></a>

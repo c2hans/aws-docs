@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 
 Changes or asserts the state of the instance.
 
-This action can be used in assert mode (doesn't run the API to change the state but verifies the instance is in the desired state.) To use assert mode, set the `CheckStateOnly` parameter to true. This mode is useful when running the Sysprep command on Windows Server, which is an asynchronous command that can run in the background for a long time. You can ensure that the instance is stopped before you create an Amazon Machine Image (AMI).
+This action can be used in assert mode (doesn't run the API to change the state but verifies the instance is in the desired state.) To use assert mode, set the `CheckStateOnly` parameter to true. This mode is useful when running the Sysprep command on Windows Server, which is an asynchronous command that can run in the background for a long time. You can make sure that the instance is stopped before you create an Amazon Machine Image (AMI).
 
 **Note**
 The default timeout value for this action is 3600 seconds (one hour). You can limit or extend the timeout by specifying the `timeoutSeconds` parameter for an `aws:changeInstanceState` step.

@@ -15,7 +15,7 @@ Projects can only be used with models that use the OpenAI-compatible APIs agains
 
 A Project is a logical boundary used to isolate workloads such as applications, environments, or experiments within Amazon Bedrock. Projects provide:
 + **Access isolation**: Control who can access specific project resources using [IAM policies for Amazon Bedrock Projects](security-iam-projects.md)
-+ **Cost monitoring**: Track spending at the project level using [AWS tags](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/what-are-tags.html) and [AWS Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html)
++ **Cost monitoring**: Track spending at the project level using [AWS tags](whitepapers/latest/tagging-best-practices/what-are-tags.html) and [AWS Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html)
 
 Projects allow you to manage multiple generative AI workloads in production without creating separate AWS accounts or organizations, reducing operational complexity while maintaining security and governance.
 
@@ -43,13 +43,13 @@ Both Projects API and [Inference Profiles](inference-profiles-create.md) provide
 | Access Control | Project as a resource in IAM policies | IAM policies on inference profile ARN |
 | Cost Tracking | AWS tags on projects | AWS tags on inference profiles |
 
-## Projects vs. AWS Accounts
+## Projects vs. AWS accounts
 <a name="projects-vs-aws-accounts"></a>
 
 [AWS Accounts](https://docs.aws.amazon.com/accounts/latest/reference/accounts-welcome.html) and [AWS Organizations](https://docs.aws.amazon.com/controltower/latest/userguide/organizations.html) represent billing and ownership boundaries at the infrastructure level. Projects represent workload and application boundaries within a single account.
 
 Using Projects instead of separate AWS accounts provides:
-+ **Faster setup**: Create projects in seconds via API calls
++ **Faster setup**: Create projects in seconds through API calls.
 + **Reduced complexity**: Manage multiple workloads without account sprawl
 + **Simplified operations**: Centralized management within a single account
 + **Lower overhead**: No need for cross-account IAM roles or resource sharing
@@ -62,7 +62,7 @@ This page walks you through creating your first project, associating it with inf
 ### Prerequisites
 <a name="projects-prerequisites"></a>
 
-Before you begin, ensure you have:
+Before you begin, make sure you have:
 + An AWS account with Amazon Bedrock access
 + IAM permissions to create and manage Bedrock projects
 + Python 3.7 or later installed
@@ -82,7 +82,7 @@ export OPENAI_BASE_URL="https://bedrock-mantle.<your-region>.api.aws/v1"
 Replace `<your-region>` with your AWS region (e.g., us-east-1, us-west-2).
 
 **Note**
-Amazon Bedrock offers [two types of keys](https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys-how.html): short-term and long-term. While you can use long-term API keys for exploration of Amazon Bedrock, we recommend short-term keys for applications with greater security requirements. If you use long-term keys with Projects, note that the default policy attached to long term keys only allows you to get and list projects, but not create/update/archive them. If you would like your long-term key to manage projects, then you will have to assign additional IAM policies to your keys to enable these operations.
+Amazon Bedrock offers [two types of keys](bedrock/latest/userguide/api-keys-how.html): short-term and long-term. While you can use long-term API keys for exploration of Amazon Bedrock, we recommend short-term keys for applications with greater security requirements. If you use long-term keys with Projects, note that the default policy attached to long term keys only allows you to get and list projects, but not create/update/archive them. If you would like your long-term key to manage projects, then you will have to assign additional IAM policies to your keys to enable these operations.
 
 ### Step 2: Discover Available Models
 <a name="projects-discover-models"></a>

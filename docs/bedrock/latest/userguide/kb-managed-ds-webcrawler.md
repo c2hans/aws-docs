@@ -43,7 +43,7 @@ The Web Crawler supports four authentication methods. Choose the method that mat
 **For the website you want to crawl, make sure you**:
 + Have permission to crawl the website and its content.
 + Confirm that `robots.txt` for the site does not disallow the URLs you want to crawl. The Web Crawler defaults to disallow if a `robots.txt` file is not found.
-+ If the site requires sign-in, identify the authentication method (basic, form, or SAML). For form and SAML, locate the XPath expressions for the user name field, password field, and submit button on the login page. To find an XPath, right-click the form element in your browser and choose **Inspect**, then copy the XPath from the developer tools.
++ If the site requires sign-in, identify the authentication method (basic, form, or SAML). For form and SAML, locate the XPath expressions for the user name field, password field, and submit button on the login page. To find an XPath, open the context (right-click) menu for the form element in your browser and choose **Inspect**, then copy the XPath from the developer tools.
 
 **In your AWS account, make sure you**:
 + If your site requires authentication, store your credentials in an [AWS Secrets Manager secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/create_secret.html) and note its Amazon Resource Name (ARN). For the exact key-value pairs, see [Authentication credentials](#kb-managed-webcrawler-credentials).
@@ -213,7 +213,7 @@ For SAML authentication, provide the SAML identity provider's login page URL and
 ```
 
 **Note**
-To find an XPath in your browser, right-click the form element on the login page and choose **Inspect**. In the developer tools, right-click the highlighted HTML, choose **Copy**, and then choose **Copy XPath**.
+To find an XPath in your browser, open the context (right-click) menu for the form element on the login page and choose **Inspect**. In the developer tools, open the context (right-click) menu for the highlighted HTML, then choose **Copy**, and then choose **Copy XPath**.
 
 ## Troubleshooting
 <a name="kb-managed-ds-webcrawler-troubleshooting"></a>

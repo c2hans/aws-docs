@@ -34,25 +34,25 @@ The following table shows the relationship between Athena data types and Iceberg
   <tr><th>Iceberg type</th><th>Athena type</th><th>Notes</th></tr>
 </thead>
 <tbody>
-  <tr><td>boolean</td><td>boolean</td><td></td></tr>
-  <tr><td>-</td><td>tinyint</td><td>Not supported for Iceberg tables in Athena.</td></tr>
-  <tr><td>-</td><td>smallint</td><td>Not supported for Iceberg tables in Athena.</td></tr>
-  <tr><td>int</td><td>int</td><td>In Athena DML statements, this type is INTEGER.</td></tr>
-  <tr><td>long</td><td>bigint</td><td></td></tr>
-  <tr><td>double</td><td>double</td><td></td></tr>
-  <tr><td>float</td><td>float</td><td></td></tr>
-  <tr><td>decimal(P, S)</td><td>decimal(P, S)</td><td>P is precision, S is scale.</td></tr>
-  <tr><td>-</td><td>char</td><td>Not supported for Iceberg tables in Athena.</td></tr>
-  <tr><td>string</td><td>string</td><td>In Athena DML statements, this type is VARCHAR.</td></tr>
-  <tr><td>binary</td><td>binary</td><td></td></tr>
-  <tr><td>date</td><td>date</td><td></td></tr>
-  <tr><td>time</td><td>-</td><td rowspan="3">Only Iceberg timestamp (without time zone) is supported for Athena Iceberg DDL statements like CREATE TABLE, but all timestamp types can be queried through Athena.</td></tr>
-  <tr><td>timestamp</td><td>timestamp</td></tr>
-  <tr><td>timestamptz</td><td>timestamptz</td></tr>
-  <tr><td>list<E></td><td>array</td><td></td></tr>
-  <tr><td>map<K,V></td><td>map</td><td></td></tr>
-  <tr><td>struct<...></td><td>struct</td><td></td></tr>
-  <tr><td>fixed(L)</td><td>-</td><td>The fixed(L) type is not currently supported in Athena.</td></tr>
+  <tr><td><code>boolean</code></td><td><code>boolean</code></td><td></td></tr>
+  <tr><td>-</td><td><code>tinyint</code></td><td>Not supported for Iceberg tables in Athena.</td></tr>
+  <tr><td>-</td><td><code>smallint</code></td><td>Not supported for Iceberg tables in Athena.</td></tr>
+  <tr><td><code>int</code></td><td><code>int</code></td><td>In Athena DML statements, this type is <code>INTEGER</code>.</td></tr>
+  <tr><td><code>long</code></td><td><code>bigint</code></td><td></td></tr>
+  <tr><td><code>double</code></td><td><code>double</code></td><td></td></tr>
+  <tr><td><code>float</code></td><td><code>float</code></td><td></td></tr>
+  <tr><td><code>decimal(P, S)</code></td><td><code>decimal(P, S)</code></td><td><code>P</code> is precision, <code>S</code> is scale.</td></tr>
+  <tr><td>-</td><td><code>char</code></td><td>Not supported for Iceberg tables in Athena.</td></tr>
+  <tr><td><code>string</code></td><td><code>string</code></td><td>In Athena DML statements, this type is <code>VARCHAR</code>.</td></tr>
+  <tr><td><code>binary</code></td><td><code>binary</code></td><td></td></tr>
+  <tr><td><code>date</code></td><td><code>date</code></td><td></td></tr>
+  <tr><td><code>time</code></td><td>-</td><td rowspan="3">Only Iceberg timestamp (without time zone) is supported for Athena Iceberg DDL statements like <code>CREATE TABLE</code>, but all timestamp types can be queried through Athena.</td></tr>
+  <tr><td><code>timestamp</code></td><td><code>timestamp</code></td></tr>
+  <tr><td><code>timestamptz</code></td><td><code>timestamptz</code></td></tr>
+  <tr><td><code>list&lt;E&gt;</code></td><td><code>array</code></td><td></td></tr>
+  <tr><td><code>map&lt;K,V&gt;</code></td><td><code>map</code></td><td></td></tr>
+  <tr><td><code>struct&lt;...&gt;</code></td><td><code>struct</code></td><td></td></tr>
+  <tr><td><code>fixed(L)</code></td><td>-</td><td>The <code>fixed(L)</code> type is not currently supported in Athena.</td></tr>
 </tbody>
 </table>
 

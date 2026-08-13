@@ -37,7 +37,7 @@ You can launch an Amazon EC2 instance with an IAM role through the AWS Managemen
 
 **Launch an EC2 instance with AWS CLI**
 
-Use AWS CLI to launch an instance that uses the instance profile. For more information, see [https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) in the *AWS CLI Command Reference.*
+Use AWS CLI to launch an instance that uses the instance profile. For more information, see [ run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) in the *AWS CLI Command Reference.*
 
 The code below is an example command that illustrates how to launch an EC2 instance with the instance profile:
 

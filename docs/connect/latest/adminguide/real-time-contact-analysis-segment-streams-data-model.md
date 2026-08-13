@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/real-time-contact-analysis-segment-streams-data-model.html
 ---
 
-# Data model for conversational analytics segment streams to analyze voice contacts in Contact Lens
+# Data model for conversational analytics segment streams to analyze voice contacts in conversational analytics
 <a name="real-time-contact-analysis-segment-streams-data-model"></a>
 
 Real-time contact analysis segment streams are generated in JSON. Event JSON blobs are published to the associated stream for every contact that has real-time conversational analytics enabled. The following types of events can be published for a conversational analytics session for a voice contact:
@@ -40,7 +40,7 @@ Type: String
 **LanguageCode**
 The language code associated to this contact.
 Type: String
-Valid values: the language code for one of the [supported languages for Contact Lens real-time call analytics](supported-languages.md#supported-languages-contact-lens).
+Valid values: the language code for one of the [supported languages for conversational analytics real-time call analytics](supported-languages.md#supported-languages-contact-lens).
 
 **EventType**
 The type of event published.

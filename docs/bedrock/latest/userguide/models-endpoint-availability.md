@@ -10,7 +10,7 @@ Amazon Bedrock supports two endpoints: bedrock-runtime and bedrock-mantle. Pleas
 | **Endpoint** | **Supported APIs** | **Description** |
 | --- | --- | --- |
 | bedrock-mantle.{region}.api.aws | [Responses API](bedrock-mantle.md) / [Chat Completions API](bedrock-mantle.md) / [Messages API](model-parameters-anthropic-claude-messages.md) | Region-specific endpoints for making inference requests for models hosted in Amazon Bedrock using the OpenAI-compatible endpoints and the Anthropic Messages API. |
-| bedrock-runtime.{region}.amazonaws.com | [InvokeModel](inference-invoke.md) / [Converse](conversation-inference.md) / [Chat Completions](inference-chat-completions.md) / [Messages API](model-parameters-anthropic-claude-messages.md) | Region-specific endpoints for making inference requests for models hosted in Amazon Bedrock using the InvokeModel/Converse/Chat Completions/Messages APIs. Read more on Amazon Bedrock Runtime APIs [here](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operations_Amazon_Bedrock_Runtime.html). |
+| bedrock-runtime.{region}.amazonaws.com | [InvokeModel](inference-invoke.md) / [Converse](conversation-inference.md) / [Chat Completions](inference-chat-completions.md) / [Messages API](model-parameters-anthropic-claude-messages.md) | Region-specific endpoints for making inference requests for models hosted in Amazon Bedrock using the InvokeModel/Converse/Chat Completions/Messages APIs. For more information, see [Amazon Bedrock Runtime API operations](bedrock/latest/APIReference/API_Operations_Amazon_Bedrock_Runtime.html). |
 
 The following tables show which Amazon Bedrock endpoints support each model, organized by provider.
 
@@ -164,6 +164,8 @@ The following tables show which Amazon Bedrock endpoints support each model, org
 | Model name | `bedrock-runtime` | `bedrock-mantle` |
 | --- | --- | --- |
 | [GPT-5.6 Sol](model-card-openai-gpt-56-sol.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| [Daybreak Red: GPT-5.6 Cyber](model-card-openai-gpt-56-cyber.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| [Daybreak Blue: GPT-5.6 Sol](model-card-openai-gpt-daybreak-blue-56-sol.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [GPT-5.6 Terra](model-card-openai-gpt-56-terra.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [GPT-5.6 Luna](model-card-openai-gpt-56-luna.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [GPT-5.5](model-card-openai-gpt-55.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |

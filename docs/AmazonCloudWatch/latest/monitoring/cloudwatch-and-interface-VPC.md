@@ -95,7 +95,7 @@ You do not need to change the settings for CloudWatch Synthetics. CloudWatch Syn
 ### Controlling access to your CloudWatch Synthetics VPC endpoint
 <a name="CloudWatch-Synthetics-VPC-endpoint-policy"></a>
 
-A VPC endpoint policy is an IAM resource policy that you attach to an endpoint when you create or modify the endpoint. If you don't attach a policy when you create an endpoint, we attach a default policy for you that allows full access to the service. An endpoint policy doesn't override or replace user policies or service-specific policies. It's a separate policy for controlling access from the endpoint to the specified service.
+A VPC endpoint policy is an IAM resource policy that you attach to an endpoint when you create or modify the endpoint. If you don't attach a policy when you create an endpoint, a default policy is attached that allows full access to the service. An endpoint policy doesn't override or replace user policies or service-specific policies. It's a separate policy for controlling access from the endpoint to the specified service.
 
 Endpoint policies affect canaries that are managed privately by VPC. They are not needed for canaries that run on private subnets.
 

@@ -131,7 +131,7 @@ Type: String
 
  ** [NumberOfRecoveryPoints](#API_DescribeBackupVault_ResponseSyntax) **   <a name="Backup-DescribeBackupVault-response-NumberOfRecoveryPoints"></a>
 The number of recovery points that are stored in a backup vault.
-Recovery point count value displayed in the console can be an approximation. Use [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListRecoveryPointsByBackupVault.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListRecoveryPointsByBackupVault.html) API to obtain the exact count.
+Recovery point count value displayed in the console can be an approximation. Use [`ListRecoveryPointsByBackupVault`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListRecoveryPointsByBackupVault.html) API to obtain the exact count.
 Type: Long
 
  ** [SourceBackupVaultArn](#API_DescribeBackupVault_ResponseSyntax) **   <a name="Backup-DescribeBackupVault-response-SourceBackupVaultArn"></a>

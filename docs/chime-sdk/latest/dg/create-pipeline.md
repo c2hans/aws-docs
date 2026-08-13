@@ -10,7 +10,7 @@ You follow a multi-step process to create an Amazon Chime SDK media pipeline, an
 + Create a service-linked role named `AWSServiceRoleForAmazonChimeSDKMediaPipelines`. This allows media pipelines to access meetings on your behalf. For more information, refer to [Creating a service-linked role for Amazon Chime SDK media pipelines](create-pipeline-role.md).
 + Create an IAM role with sufficient permission to interact with the [ Amazon Chime SDK media pipeline APIs ](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Media_Pipelines.html). To create that role, we recommend adding the [AmazonChimeSDK](https://docs.aws.amazon.com/chime-sdk/latest/ag/security_iam_id-based-policy-examples.html#security_iam_id-based-policy-examples-chime-sdk) managed policy from the IAM console. The policy contains the necessary APIs.
 
-  Your IAM role must also have permission to call the Amazon S3 [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketPolicy.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketPolicy.html) API on all resources. The following example shows a typical policy for doing so.
+  Your IAM role must also have permission to call the Amazon S3 [GetBucketPolicy](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketPolicy.html) API on all resources. The following example shows a typical policy for doing so.
 
 ------
 #### [ JSON ]

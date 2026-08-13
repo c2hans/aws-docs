@@ -261,7 +261,7 @@ The query returned items with a `forumName` value of *Forum02* and a `lastPosted
 
 The SDK for Java 2.x DynamoDB Enhanced Client supports composite keys for global secondary indexes. You can define up to four partition key attributes and four sort key attributes for a single GSI. This removes the need to concatenate multiple attributes into a single string key on the client side.
 
-Use the `order` parameter on the `@DynamoDbSecondaryPartitionKey` and `@DynamoDbSecondarySortKey` annotations to specify the position of each attribute in the composite key. The `order` parameter accepts values from the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/mapper/Order.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/mapper/Order.html) enum (part of the Enhanced DynamoDB Client): `FIRST`, `SECOND`, `THIRD`, and `FOURTH`.
+Use the `order` parameter on the `@DynamoDbSecondaryPartitionKey` and `@DynamoDbSecondarySortKey` annotations to specify the position of each attribute in the composite key. The `order` parameter accepts values from the [`Order`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/mapper/Order.html) enum (part of the Enhanced DynamoDB Client): `FIRST`, `SECOND`, `THIRD`, and `FOURTH`.
 
 ### Annotate data class with composite key annotations
 <a name="ddb-en-client-use-secindex-composite-anno"></a>

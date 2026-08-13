@@ -6,8 +6,8 @@ source_url: https://docs.aws.amazon.com//solutions/network-orchestration-aws-tra
 
 Automate setting up and managing your transit networks with AWS Transit Gateway
 
-- **Version**: 3.3.27
-- **Released**: 7/2026
+- **Version**: 3.3.28
+- **Released**: 8/2026
 - **Author**: AWS
 - **Est. deployment time**: 25 mins
 - **Estimated cost**: [See details](https://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/cost.html)

@@ -9,16 +9,16 @@ The following table describes how Amazon S3 event types are mapped to Amazon Eve
 
 |  S3 event type |  Amazon EventBridge detail type  |
 | --- | --- |
-| [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html)<br />[https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPOST.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPOST.html)<br />[https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html)<br />[https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html) | Object Created |
+| [ObjectCreated:Put](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html)<br />[ObjectCreated:Post](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPOST.html)<br />[ObjectCreated:Copy](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html)<br />[ObjectCreated:CompleteMultipartUpload](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html) | Object Created |
 | ObjectRemoved:Delete<br />ObjectRemoved:DeleteMarkerCreated<br />LifecycleExpiration:Delete<br />LifecycleExpiration:DeleteMarkerCreated | Object Deleted |
-| [https://docs.aws.amazon.com/AmazonS3/latest/API/API_RestoreObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_RestoreObject.html) | Object Restore Initiated |
+| [ObjectRestore:Post](https://docs.aws.amazon.com/AmazonS3/latest/API/API_RestoreObject.html) | Object Restore Initiated |
 | ObjectRestore:Completed | Object Restore Completed |
 | ObjectRestore:Delete | Object Restore Expired |
 | LifecycleTransition | Object Storage Class Changed |
 | IntelligentTiering | Object Access Tier Changed |
-| [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectTagging.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectTagging.html) | Object Tags Added |
-| [https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjectTagging.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjectTagging.html) | Object Tags Deleted |
-| [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html) | Object ACL Updated |
+| [ObjectTagging:Put](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectTagging.html) | Object Tags Added |
+| [ObjectTagging:Delete](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjectTagging.html) | Object Tags Deleted |
+| [ObjectAcl:Put](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html) | Object ACL Updated |
 | ObjectAnnotation:Put | Object Annotation Created |
 | ObjectAnnotation:Delete | Object Annotation Removed |
 

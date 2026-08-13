@@ -11,4 +11,5 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::InspectorV2::CisScanConfiguration](aws-resource-inspectorv2-cisscanconfiguration.md)
 + [AWS::InspectorV2::CodeSecurityIntegration](aws-resource-inspectorv2-codesecurityintegration.md)
 + [AWS::InspectorV2::CodeSecurityScanConfiguration](aws-resource-inspectorv2-codesecurityscanconfiguration.md)
++ [AWS::InspectorV2::Connector](aws-resource-inspectorv2-connector.md)
 + [AWS::InspectorV2::Filter](aws-resource-inspectorv2-filter.md)

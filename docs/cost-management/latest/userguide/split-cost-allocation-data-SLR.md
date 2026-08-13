@@ -28,7 +28,7 @@ The role permissions policy, `SplitCostAllocationDataServiceRolePolicy`, allows 
 
 For more information, see [Allows split cost allocation data to call services required to make the service work](https://docs.aws.amazon.com/cost-management/latest/userguide/billing-permissions-ref.html#split-cost-allocation-data-managedIAM).
 
-To view the full permissions details of the service-linked role `SplitCostAllocationDataServiceRolePolicy`, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CostOptimizationHubServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CostOptimizationHubServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
+To view the full permissions details of the service-linked role `SplitCostAllocationDataServiceRolePolicy`, see [`SplitCostAllocationDataServiceRolePolicy`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CostOptimizationHubServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
 
  You must configure permissions to allow an IAM entity (such as a user, group, or role) to create, edit, or delete a service-linked role. For more information, see [Service-linked role permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#service-linked-role-permissions) in the IAM User Guide.
 

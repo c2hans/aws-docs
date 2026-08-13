@@ -14,36 +14,36 @@ Additionally, AWS supports managed policies for job functions that span multiple
 ## AWS managed policy: `AWSCloudTrail_FullAccess`
 <a name="security-iam-awsmanpol-AWSCloudTrail-FullAccess"></a>
 
-A user identity that has the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudTrail_FullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudTrail_FullAccess.html) policy attached to its role has full administrative access in CloudTrail.
+A user identity that has the [AWSCloudTrail\_FullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudTrail_FullAccess.html) policy attached to its role has full administrative access in CloudTrail.
 
-For a JSON listing of the policy details, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudTrail_FullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudTrail_FullAccess.html) in the *AWS Managed Policy reference guide*.
+For a JSON listing of the policy details, see [AWSCloudTrail\_FullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudTrail_FullAccess.html) in the *AWS Managed Policy reference guide*.
 
 ## AWS managed policy: `AWSCloudTrail_ReadOnlyAccess`
 <a name="security-iam-awsmanpol-AWSCloudTrail-ReadOnlyAccess"></a>
 
-A user identity that has the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudTrail_ReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudTrail_ReadOnlyAccess.html) policy attached to its role can perform read-only actions in CloudTrail, such as `Get*`, `List*`, and `Describe*` actions on trails, CloudTrail Lake event data stores, or Lake queries.
+A user identity that has the [AWSCloudTrail\_ReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudTrail_ReadOnlyAccess.html) policy attached to its role can perform read-only actions in CloudTrail, such as `Get*`, `List*`, and `Describe*` actions on trails, CloudTrail Lake event data stores, or Lake queries.
 
-For a JSON listing of the policy details, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudTrail_ReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudTrail_ReadOnlyAccess.html) in the *AWS Managed Policy reference guide*.
+For a JSON listing of the policy details, see [AWSCloudTrail\_ReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCloudTrail_ReadOnlyAccess.html) in the *AWS Managed Policy reference guide*.
 
 ## AWS managed policy: `AWSServiceRoleForCloudTrail`
 <a name="security-iam-awsmanpol-CloudTrailServiceRolePolicy"></a>
 
-The [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudTrailServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudTrailServiceRolePolicy.html) policy allows AWS CloudTrail to perform actions on organization trails and organization event data stores on your behalf. The policy includes required AWS Organizations permissions for describing and listing the organization accounts and delegated administrators in an AWS Organizations organization.
+The [CloudTrailServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudTrailServiceRolePolicy.html) policy allows AWS CloudTrail to perform actions on organization trails and organization event data stores on your behalf. The policy includes required AWS Organizations permissions for describing and listing the organization accounts and delegated administrators in an AWS Organizations organization.
 
 This policy additionally includes the required AWS Glue and AWS Lake Formation permissions to [disable Lake federation](query-disable-federation.md) on an organization event data store.
 
 This policy is attached to the **AWSServiceRoleForCloudTrail** service-linked role that allows CloudTrail to perform actions on your behalf. You cannot attach this policy to your users, groups, or roles.
 
-For a JSON listing of the policy details, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudTrailServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudTrailServiceRolePolicy.html) in the *AWS Managed Policy reference guide*.
+For a JSON listing of the policy details, see [CloudTrailServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudTrailServiceRolePolicy.html) in the *AWS Managed Policy reference guide*.
 
 ## AWS managed policy: `CloudTrailEventContext`
 <a name="security-iam-awsmanpol-CloudTrailEventContext"></a>
 
-The [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudTrailEventContext.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudTrailEventContext.html) policy allows AWS CloudTrail to manage CloudTrail Event Context and EventBridge rules on your behalf. The policy includes required EventBridge permissions for creating, managing, and describing the rules it creates for you.
+The [CloudTrailEventContext](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudTrailEventContext.html) policy allows AWS CloudTrail to manage CloudTrail Event Context and EventBridge rules on your behalf. The policy includes required EventBridge permissions for creating, managing, and describing the rules it creates for you.
 
 This policy is attached to the **AWSServiceRoleForCloudTrailEventContext** service-linked role that allows CloudTrail to perform actions on your behalf. You cannot attach this policy to your users, groups, or roles.
 
-For a JSON listing of the policy details, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudTrailEventContext.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudTrailEventContext.html) in the *AWS Managed Policy reference guide*.
+For a JSON listing of the policy details, see [CloudTrailEventContext](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudTrailEventContext.html) in the *AWS Managed Policy reference guide*.
 
 ## CloudTrail updates to AWS managed policies
 <a name="security-iam-awsmanpol-updates"></a>

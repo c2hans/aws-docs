@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-m
 # Configure inference output in generated containers
 <a name="autopilot-automate-model-development-container-output"></a>
 
-Autopilot generates an ordered [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ContainerDefinition.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ContainerDefinition.html) list. This can be used to build a model to deploy in a machine learning pipeline. This model can be used for online hosting and inference.
+Autopilot generates an ordered [`ContainerDefinition`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ContainerDefinition.html) list. This can be used to build a model to deploy in a machine learning pipeline. This model can be used for online hosting and inference.
 
-Customers can list inference container definitions with the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListCandidateForAutoMLJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListCandidateForAutoMLJob.html) API. The list of inference container definitions that represent the best candidate is also available in the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeAutoMLJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeAutoMLJob.html) response.
+Customers can list inference container definitions with the [`ListCandidateForAutoMLJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListCandidateForAutoMLJob.html) API. The list of inference container definitions that represent the best candidate is also available in the [`DescribeAutoMLJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeAutoMLJob.html) response.
 
 ## Inference container definitions for regression and classification problem types
 <a name="autopilot-problem-type-container-output"></a>

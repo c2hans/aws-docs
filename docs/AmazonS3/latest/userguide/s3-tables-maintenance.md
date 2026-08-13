@@ -63,7 +63,7 @@ aws s3tables put-table-maintenance-configuration \
    --name {{testtable}} \
    --value='{"status":"enabled","settings":{"icebergCompaction":{"targetFileSizeMB":256}}}'
 ```
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3tables/put-table-maintenance-configuration.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3tables/put-table-maintenance-configuration.html) in the *AWS CLI Command Reference*.
+For more information, see [put-table-maintenance-configuration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3tables/put-table-maintenance-configuration.html) in the *AWS CLI Command Reference*.
 
 **To configure the compaction strategy by using the AWS CLI**
 The following example will change the compaction strategy to `sort` using the `PutTableMaintenanceConfiguration` API. When setting compaction you can choose from the following compaction strategies: `auto`,`binpack`,`sort`, or `z-order`
@@ -79,7 +79,7 @@ aws s3tables put-table-maintenance-configuration \
    --name {{testtable}} \
    --value='{"status":"enabled","settings":{"icebergCompaction":{"strategy":"sort"}}}'
 ```
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3tables/put-table-maintenance-configuration.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3tables/put-table-maintenance-configuration.html) in the *AWS CLI Command Reference*.
+For more information, see [put-table-maintenance-configuration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3tables/put-table-maintenance-configuration.html) in the *AWS CLI Command Reference*.
 
 **To disable compaction by using the AWS CLI**
 The following example will disable compaction using the `PutTableMaintenanceConfiguration` API.
@@ -92,7 +92,7 @@ aws s3tables put-table-maintenance-configuration \
    --name {{testtable}} \
    --value='{"status":"disabled","settings":{"icebergCompaction":{"targetFileSizeMB":256}}}'
 ```
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3tables/put-table-maintenance-configuration.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3tables/put-table-maintenance-configuration.html) in the *AWS CLI Command Reference*.
+For more information, see [put-table-maintenance-configuration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3tables/put-table-maintenance-configuration.html) in the *AWS CLI Command Reference*.
 
 ## Snapshot management
 <a name="s3-tables-maintenance-snapshot"></a>
@@ -157,7 +157,7 @@ aws s3tables put-table-maintenance-configuration \
 --value '{"status":"disabled","settings":{"icebergSnapshotManagement":{"minSnapshotsToKeep":1,"maxSnapshotAgeHours":120}}}'
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3tables/put-table-maintenance-configuration.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3tables/put-table-maintenance-configuration.html) in the *AWS CLI Command Reference*.
+For more information, see [put-table-maintenance-configuration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3tables/put-table-maintenance-configuration.html) in the *AWS CLI Command Reference*.
 
 ## Consideration and limitations
 <a name="s3-tables-considerations-see-more"></a>

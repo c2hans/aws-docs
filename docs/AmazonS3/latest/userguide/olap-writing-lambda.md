@@ -506,7 +506,7 @@ The presigned URL will include the following properties if they're specified:
 
 Other properties won't be presigned, and thus won't be included. Non-signed options sent as headers can be added manually to the request when calling the presigned URL that's found in the `userRequest` headers. Server-side encryption options are not supported for `HeadObject`.
 
-For the request syntax URI parameters, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html) in the *Amazon Simple Storage Service API Reference*.
+For the request syntax URI parameters, see [`HeadObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html) in the *Amazon Simple Storage Service API Reference*.
 
 The following example shows a Lambda JSON input payload for `HeadObject`.
 
@@ -650,7 +650,7 @@ Unlike `GetObject` and `HeadObject`, the presigned URL will include the followin
 + `requestPayer` (in the `x-amz-request-payer` header)
 + `expectedBucketOwner` (in the `x-amz-expected-bucket-owner` header)
 
-For the request syntax URI parameters, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjects.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjects.html) in the *Amazon Simple Storage Service API Reference*.
+For the request syntax URI parameters, see [`ListObjects`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjects.html) in the *Amazon Simple Storage Service API Reference*.
 
 **Important**
 We recommend that you use the newer version, [ListObjectsV2](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html), when developing applications. For backward compatibility, Amazon S3 continues to support `ListObjects`.
@@ -827,7 +827,7 @@ Unlike `GetObject` and `HeadObject`, the presigned URL will include the followin
 + `requestPayer` (in the `x-amz-request-payer` header)
 + `expectedBucketOwner` (in the `x-amz-expected-bucket-owner` header)
 
-For the request syntax URI parameters, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html) in the *Amazon Simple Storage Service API Reference*.
+For the request syntax URI parameters, see [`ListObjectsV2`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html) in the *Amazon Simple Storage Service API Reference*.
 
 The following example shows the Lambda JSON input payload for `ListObjectsV2`.
 

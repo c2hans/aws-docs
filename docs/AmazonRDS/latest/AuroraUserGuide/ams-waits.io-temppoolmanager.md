@@ -29,9 +29,9 @@ When a session first requests a temporary tablespace, MySQL allocates session te
 + Optimizer-generated internal temporary tables
 
 The default `TempTable` engine uses the following overflow mechanism to handle temporary tables:
-+ Stores tables in RAM up to the [https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_temptable_max_ram](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_temptable_max_ram) limit.
++ Stores tables in RAM up to the [`temptable_max_ram`](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_temptable_max_ram) limit.
 + Moves to memory-mapped files on local storage when RAM is full.
-+ Uses the shared cluster volume when memory-mapped files reach their [https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_temptable_max_mmap](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_temptable_max_mmap) limit.
++ Uses the shared cluster volume when memory-mapped files reach their [`temptable_max_mmap`](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_temptable_max_mmap) limit.
 
 After temporary tables exceed both RAM and local storage limits, MySQL manages them using on-disk tablespace.
 
@@ -81,9 +81,9 @@ After identifying queries creating temporary tables, take these optimization ste
 + Modify queries to reduce temporary table usage where possible.
 
 If query optimization alone doesn't resolve performance issues, consider adjusting these configuration parameters:
-+  [https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_temptable_max_ram](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_temptable_max_ram)- Controls maximum RAM usage for temporary tables.
-+  [https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_temptable_max_mmap](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_temptable_max_mmap) - Sets the limit for memory-mapped file storage.
-+ [https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_tmp_table_size](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_tmp_table_size)- Applies when `aurora_tmptable_enable_per_table_limit` is enabled (disabled by default).
++  [`temptable_max_ram`](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_temptable_max_ram)- Controls maximum RAM usage for temporary tables.
++  [`temptable_max_mmap`](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_temptable_max_mmap) - Sets the limit for memory-mapped file storage.
++ [`tmp_table_size`](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_tmp_table_size)- Applies when `aurora_tmptable_enable_per_table_limit` is enabled (disabled by default).
 
 **Important**
 Note that certain query conditions will always require on-disk temporary tables, regardless of configuration settings. For more information `TempTable` storage engine, see [ Use the TempTable storage engine on Amazon RDS for MySQL and Amazon Aurora MySQL ](https://aws.amazon.com/blogs/database/use-the-temptable-storage-engine-on-amazon-rds-for-mysql-and-amazon-aurora-mysql/).

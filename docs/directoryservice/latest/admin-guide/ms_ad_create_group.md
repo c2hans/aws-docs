@@ -76,7 +76,7 @@ aws ds-data create-group \
     }'
 ```
 
-For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-data/create-group.html](https://docs.aws.amazon.com//cli/latest/reference/ds-data/create-group.html).
+For more information, see [`create-group`](https://docs.aws.amazon.com//cli/latest/reference/ds-data/create-group.html).
 
 ------
 #### [ PowerShell ]
@@ -96,6 +96,6 @@ New-DSDGroup `
     }
 ```
 
-For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/New-DSDGroup.html](https://docs.aws.amazon.com//powershell/latest/reference/items/New-DSDGroup.html).
+For more information, see [`New-DSDGroup`](https://docs.aws.amazon.com//powershell/latest/reference/items/New-DSDGroup.html).
 
 ------

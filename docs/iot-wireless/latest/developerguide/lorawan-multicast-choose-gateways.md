@@ -44,7 +44,7 @@ In the AWS IoT console, you can choose the gateways that you want to use for rec
 ## Choose gateways for multicast downlink (CLI)
 <a name="lorawan-multicast-gateways-cli"></a>
 
-To specify the gateways for receiving the downlink messages, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateMulticastGroup.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateMulticastGroup.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-multicast-group.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-multicast-group.html) CLI command.
+To specify the gateways for receiving the downlink messages, use the [`CreateMulticastGroup`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateMulticastGroup.html) API operation or the [`create-multicast-group`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-multicast-group.html) CLI command.
 
 ```
 aws iotwireless create-multicast-group \

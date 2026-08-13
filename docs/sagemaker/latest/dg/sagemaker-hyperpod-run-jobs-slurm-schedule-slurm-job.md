@@ -19,7 +19,7 @@ All SageMaker HyperPod examples are available in the `3.test_cases` folder of th
    $ git clone https://github.com/aws-samples/awsome-distributed-training/
    ```
 
-1. Run the [https://github.com/aws-samples/awsome-distributed-training/blob/main/3.test_cases/10.FSDP/0.create_conda_env.sh](https://github.com/aws-samples/awsome-distributed-training/blob/main/3.test_cases/10.FSDP/0.create_conda_env.sh) script. This creates a `conda` environment on your Amazon FSx file system. Make sure that the file system is accessible to all nodes in the cluster.
+1. Run the [`create_conda_env.sh`](https://github.com/aws-samples/awsome-distributed-training/blob/main/3.test_cases/10.FSDP/0.create_conda_env.sh) script. This creates a `conda` environment on your Amazon FSx file system. Make sure that the file system is accessible to all nodes in the cluster.
 
 1. Build the virtual Conda environment by launching a single node slurm job as follows.
 

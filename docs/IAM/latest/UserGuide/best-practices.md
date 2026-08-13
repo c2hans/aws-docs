@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 
 To help secure your AWS resources, follow these best practices for AWS Identity and Access Management (IAM).
 
+After you implement these best practices, see [Security in IAM and AWS STS](security.md) for additional security topics including compliance validation, resilience, and infrastructure security.
+
 **Topics**
 + [Require human users to use federation with an identity provider to access AWS using temporary credentials](#bp-users-federation-idp)
 + [Require workloads to use temporary credentials with IAM roles to access AWS](#bp-workloads-use-roles)
@@ -29,6 +31,8 @@ To help secure your AWS resources, follow these best practices for AWS Identity 
 Human users, also known as *human identities,* are the people, administrators, developers, operators, and consumers of your applications. They must have an identity to access your AWS environments and applications. Human users that are members of your organization are also known as *workforce identities.* Human users can also be external users with whom you collaborate, and who interact with your AWS resources. They can do this via a web browser, client application, mobile app, or interactive command-line tools.
 
 Require your human users to use temporary credentials when accessing AWS. You can use an identity provider for your human users to provide federated access to AWS accounts by assuming roles, which provide temporary credentials. For centralized access management, we recommend that you use [AWS IAM Identity Center (IAM Identity Center)](https://docs.aws.amazon.com/singlesignon/latest/userguide/getting-started.html) to manage access to your accounts and permissions within those accounts. You can manage your user identities with IAM Identity Center, or manage access permissions for user identities in IAM Identity Center from an external identity provider. For more information, see [What is AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) in the *AWS IAM Identity Center User Guide*.
+
+You can use [account access manager](account-access-manager.md) — an IAM feature that lets you assign existing IAM roles across your organization's accounts to IAM Identity Center users and groups. Account access manager gives you access to the full IAM role feature set, including custom trust policies, role tags for ABAC, and configurable role paths. You can use it alongside permission sets or on its own.
 
 For more information about roles, see [Roles terms and concepts](id_roles.md#id_roles_terms-and-concepts).
 
@@ -119,5 +123,3 @@ However, SCPs and RCPs alone are insufficient to grant permissions to principals
 <a name="bp-permissions-boundaries"></a>
 
 In some scenarios, you might want to delegate permissions management within an account to others. For example, you could allow developers to create and manage roles for their workloads. When you delegate permissions to others, use *permissions boundaries* to set the maximum permissions that you delegate. A permissions boundary is an advanced feature for using a managed policy to set the maximum permissions that an identity-based policy can grant to an IAM role. A permissions boundary does not grant permissions on its own. For more information, see [Permissions boundaries for IAM entities](access_policies_boundaries.md).
-
-After implementing these best practices, see [Security in IAM and AWS STS](security.md) for additional security topics including compliance validation, resilience, and infrastructure security.

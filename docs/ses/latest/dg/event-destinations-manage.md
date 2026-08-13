@@ -53,7 +53,7 @@ The following steps show how to create or add an event destination to a configur
 
 **Event types**
         + **Sends** – the send request was successful and Amazon SES will attempt to deliver the message to the recipient’s mail server.
-        + **Rendering failures** – the email wasn't sent because of a template rendering issue. This event type can occur when template data is missing, or when there is a mismatch between template parameters and data. (This event type only occurs when you send email using the [https://docs.aws.amazon.com/ses/latest/APIReference/API_SendTemplatedEmail.html](https://docs.aws.amazon.com/ses/latest/APIReference/API_SendTemplatedEmail.html) or [https://docs.aws.amazon.com/ses/latest/APIReference/API_SendBulkTemplatedEmail.html](https://docs.aws.amazon.com/ses/latest/APIReference/API_SendBulkTemplatedEmail.html) API operations.)
+        + **Rendering failures** – the email wasn't sent because of a template rendering issue. This event type can occur when template data is missing, or when there is a mismatch between template parameters and data. (This event type only occurs when you send email using the [`SendTemplatedEmail`](https://docs.aws.amazon.com/ses/latest/APIReference/API_SendTemplatedEmail.html) or [`SendBulkTemplatedEmail`](https://docs.aws.amazon.com/ses/latest/APIReference/API_SendBulkTemplatedEmail.html) API operations.)
         + **Rejects** – Amazon SES accepted the email, but determined that it contained a virus and didn’t attempt to deliver it to the recipient’s mail server.
         + **Deliveries** – Amazon SES successfully delivered the email to the recipient's mail server.
         + **Hard bounces** – the recipient's mail server permanently rejected the email. (*Soft bounces* are only included when Amazon SES fails to deliver the email after retrying for a period of time.)
@@ -102,7 +102,7 @@ You can update the **Custom redirect domain** in the configuration set for open 
 You can also create an event destination using the Amazon SES console, the Amazon SES API v2, or the Amazon SES CLI v2.
 
 **To create an event destination using the SES API:**
-+ For creating an event destination using the SES API, see [https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateConfigurationSetEventDestination.html](https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateConfigurationSetEventDestination.html).
++ For creating an event destination using the SES API, see [`CreateConfigurationSetEventDestination`](https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateConfigurationSetEventDestination.html).
 
 ## Editing, disabling/enabling, or deleting an event destination
 <a name="event-destination-edit"></a>
@@ -130,6 +130,6 @@ You can also edit, disable/enable, or delete an event destination using the Amaz
 
 **To edit, disable/enable, or delete an event destination using the SES API:**
 
-1. For disabling/enabling an event destination using the SES API, see [https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateConfigurationSetEventDestination.html](https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateConfigurationSetEventDestination.html).
+1. For disabling/enabling an event destination using the SES API, see [`UpdateConfigurationSetEventDestination`](https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateConfigurationSetEventDestination.html).
 
-1. For deleting an event destination using the SES API, see [https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteConfigurationSetEventDestination.html](https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteConfigurationSetEventDestination.html).
+1. For deleting an event destination using the SES API, see [`DeleteConfigurationSetEventDestination`](https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteConfigurationSetEventDestination.html).

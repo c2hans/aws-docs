@@ -160,11 +160,11 @@ For more information about Kubernetes role-based access control (RBAC) configura
 
 1. Edit the `aws-auth` `ConfigMap`. You can use a tool such as `eksctl` to update the `ConfigMap` or you can update it manually by editing it.
 **Important**
-We recommend using `eksctl`, or another tool, to edit the `ConfigMap`. For information about other tools you can use, see [Use tools to make changes to the aws-authConfigMap](https://aws.github.io/aws-eks-best-practices/security/docs/iam/#use-tools-to-make-changes-to-the-aws-auth-configmap) in the Amazon EKS best practices guides. An improperly formatted `aws-auth` `ConfigMap` can cause you to lose access to your cluster.
+We recommend using `eksctl`, or another tool, to edit the `ConfigMap`. For information about other tools you can use, see [Use tools to make changes to the aws-auth ConfigMap](https://aws.github.io/aws-eks-best-practices/security/docs/iam/#use-tools-to-make-changes-to-the-aws-auth-configmap) in the Amazon EKS best practices guides. An improperly formatted `aws-auth` `ConfigMap` can cause you to lose access to your cluster.
    + View steps to [edit configmap with eksctl](#configmap-eksctl).
    + View steps to [edit configmap manually](#configmap-manual).
 
-### Edit Configmap with Eksctl
+### Edit ConfigMap with eksctl
 <a name="configmap-eksctl"></a>
 
 1. You need version `0.215.0` or later of the `eksctl` command line tool installed on your device or AWS CloudShell. To install or update `eksctl`, see [Installation](https://eksctl.io/installation) in the `eksctl` documentation.
@@ -229,7 +229,7 @@ The role ARN can’t include a path such as `role/my-team/developers/my-role`. T
    arn:aws:iam::111122223333:user/my-user                                                          my-user                                 eks-console-dashboard-restricted-access-group
    ```
 
-### Edit Configmap manually
+### Edit ConfigMap manually
 <a name="configmap-manual"></a>
 
 1. Open the `ConfigMap` for editing.

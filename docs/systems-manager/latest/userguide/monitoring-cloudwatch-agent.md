@@ -57,7 +57,7 @@ In these cases, it will be necessary to turn off log collection in SSM Agent and
 [Installing the CloudWatch agent on on-premises servers](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-premise.html)
 
 **Before you begin**
-Before you begin a migration to the CloudWatch agent for log collection, ensure that the nodes on which you will perform the migration meet these requirements:
+Before you begin a migration to the CloudWatch agent for log collection, make sure that the nodes on which you perform the migration meet these requirements:
 + The OS is a 64-bit version of Windows Server.
 + SSM Agent 2.2.93.0 or later is installed on the node.
 + SSM Agent is configured for monitoring on the node.
@@ -75,7 +75,7 @@ For EC2 instances for Windows Server only, you can use the AWS Systems Manager c
 AWS Systems Manager supports migrating from SSM Agent to the unified CloudWatch agent for collecting logs and metrics on 64-bit versions of Windows only. For information about setting up the unified CloudWatch agent on other operating systems, and for complete information about using the CloudWatch agent, see [Collecting metrics and logs from Amazon EC2 instances and on-premises servers with the CloudWatch agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html) in the *[Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/)*.
 You can use the CloudWatch agent on other supported operating systems, but you won't be able to use Systems Manager to perform a tool migration.
 
-After the migration succeeds, check your results in CloudWatch to ensure you're receiving the metrics, logs, or Windows event logs you expect. If you're satisfied with the results, you can optionally [Store CloudWatch agent configuration settings in Parameter Store](#monitoring-cloudwatch-agent-store-config). If the migration isn't successful or the results aren't as expected, you can try [Rolling back to log collection with SSM Agent](#monitoring-cloudwatch-agent-roll-back).
+After the migration succeeds, check your results in CloudWatch to make sure you're receiving the metrics, logs, or Windows event logs you expect. If you're satisfied with the results, you can optionally [Store CloudWatch agent configuration settings in Parameter Store](#monitoring-cloudwatch-agent-store-config). If the migration isn't successful or the results aren't as expected, you can try [Rolling back to log collection with SSM Agent](#monitoring-cloudwatch-agent-roll-back).
 
 **Note**
 If you want to migrate a source configuration file that includes a `{hostname}` entry, then be aware that the `{hostname}` entry can change the value of the field after the migration is complete. For example, say that the following `"LogStream": "{hostname}"` entry maps to a server named *MyLogServer001*.
@@ -192,7 +192,7 @@ The S3 permissions that grant the ability to write the data to an S3 bucket are 
 1. Choose **Run**.
 
 **Two: To update config data JSON format**
-+ To update the JSON formatting of the existing config settings for the CloudWatch agent, use **Run Command**, a tool in AWS Systems Manager, or log in to the node directly with an RDP connection to run the following Windows PowerShell commands on the node, one at a time.
++ To update the JSON formatting of the existing config settings for the CloudWatch agent, use **Run Command**, or log in to the node directly with an RDP connection to run the following Windows PowerShell commands on the node, one at a time.
 
   ```
   cd ${{{Env:ProgramFiles}}}\\Amazon\\AmazonCloudWatchAgent

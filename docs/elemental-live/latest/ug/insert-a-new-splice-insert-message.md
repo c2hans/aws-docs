@@ -24,13 +24,13 @@ The XML body contains one cue\_point elements containing the following tags:
   <tr><th>Tag</th><th>Sub-tag</th><th>Type</th><th>Value</th></tr>
 </thead>
 <tbody>
-  <tr><td>event\_id</td><td> </td><td>integer</td><td>Specify an ID for this SCTE-35 request to allow for canceling of the insertion later ([Cancel a pending ad avail](cancel-a-pending-ad-avail.md)).<br />Or leave blank, in which case an ID is generated and returned in the response.</td></tr>
-  <tr><td>splice\_time</td><td> </td><td> </td><td>Include this in order to specify the insertion point relative to the stream timecode. Include either splice\_time or splice\_offset, not both.<br />See [Specifying Time with splice_time Tag](#splicetime) for details.<br />Specify the time by including the hours, minutes, seconds, and frames tags. </td></tr>
+  <tr><td>event_id</td><td> </td><td>integer</td><td>Specify an ID for this SCTE-35 request to allow for canceling of the insertion later (<a href="cancel-a-pending-ad-avail.md">Cancel a pending ad avail</a>).<br />Or leave blank, in which case an ID is generated and returned in the response.</td></tr>
+  <tr><td>splice_time</td><td> </td><td> </td><td>Include this in order to specify the insertion point relative to the stream timecode. Include either splice_time or splice_offset, not both.<br />See <a href="#splicetime">Specifying Time with splice_time Tag</a> for details.<br />Specify the time by including the hours, minutes, seconds, and frames tags. </td></tr>
   <tr><td> </td><td>hours</td><td>integer</td><td rowspan="3">The start time of the ad avail. All fields are required. <br />Enter the time in 24-hour format.<br />To insert the ad avail immediately (taking into account that there is a small delay while the request is processed), enter 0 in all fields.</td></tr>
   <tr><td> </td><td>minutes</td><td>integer</td></tr>
   <tr><td> </td><td>seconds</td><td>integer</td></tr>
   <tr><td> </td><td>frames</td><td>integer</td><td>The frame within the specified seconds at which to insert the ad avail.<br />If blank, the start time is the first frame in the specified second.</td></tr>
-  <tr><td>splice\_offset</td><td> </td><td>integer</td><td>The start time of the ad avail. Include either splice\_time or splice\_offset, not both.<br />Include in order to specify the start time for the ad avail as the specified milliseconds after the request is received. See [Specifying Time with splice_offset Tag](#spliceoffset).<br />Specify the milliseconds. The number cannot be negative.</td></tr>
+  <tr><td>splice_offset</td><td> </td><td>integer</td><td>The start time of the ad avail. Include either splice_time or splice_offset, not both.<br />Include in order to specify the start time for the ad avail as the specified milliseconds after the request is received. See <a href="#spliceoffset">Specifying Time with splice_offset Tag</a>.<br />Specify the milliseconds. The number cannot be negative.</td></tr>
   <tr><td>duration</td><td> </td><td>integer</td><td>Optional.<br />You can include a duration so that a start time is included and an end time is implied by the length of time for the duration. <br />Or you can omit the duration so that only a start time is included. If you omit the duration, you must enter a separate command for the end time. </td></tr>
 </tbody>
 </table>
@@ -78,12 +78,12 @@ The body of the response is XML content consisting of one **response** element c
   <tr><th>Tag</th><th>Sub-tag</th><th>Sub-sub-tag</th><th>Type</th><th>Description</th></tr>
 </thead>
 <tbody>
-  <tr><td>event\_id</td><td> </td><td> </td><td>integer</td><td>The event ID of this SCTE-35 request. </td></tr>
-  <tr><td>splice\_time</td><td>hours</td><td> </td><td>integer</td><td rowspan="4">If splice\_time was specified, the hour, minutes, seconds and frame at which to insert the ad avail.<br />If splice\_offset was specified, all tags specify “0.”</td></tr>
+  <tr><td>event_id</td><td> </td><td> </td><td>integer</td><td>The event ID of this SCTE-35 request. </td></tr>
+  <tr><td>splice_time</td><td>hours</td><td> </td><td>integer</td><td rowspan="4">If splice_time was specified, the hour, minutes, seconds and frame at which to insert the ad avail.<br />If splice_offset was specified, all tags specify “0.”</td></tr>
   <tr><td> </td><td>minutes</td><td> </td><td>integer</td></tr>
   <tr><td> </td><td>seconds</td><td> </td><td>integer</td></tr>
   <tr><td> </td><td>frames</td><td> </td><td>integer</td></tr>
-  <tr><td>splice\_offset</td><td> </td><td> </td><td>integer</td><td>If splice\_offset was specified, the time at which to insert the ad avail.<br />If splice\_time was specified, this tag has a null value.</td></tr>
+  <tr><td>splice_offset</td><td> </td><td> </td><td>integer</td><td>If splice_offset was specified, the time at which to insert the ad avail.<br />If splice_time was specified, this tag has a null value.</td></tr>
   <tr><td>message</td><td> </td><td> </td><td>string</td><td>A description of the action taken.</td></tr>
   <tr><td>errors</td><td> </td><td> </td><td> </td><td>Included only in an error response.</td></tr>
   <tr><td></td><td>error</td><td>code</td><td> </td><td>An error code. </td></tr>

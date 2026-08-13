@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_TagPolicyExc
 <a name="API_TagPolicyException"></a>
 
 **Note**
- `TagPolicyException` is deprecated. See [https://docs.aws.amazon.com/evs/latest/APIReference/API_ValidationException.html](https://docs.aws.amazon.com/evs/latest/APIReference/API_ValidationException.html) instead.
+ `TagPolicyException` is deprecated. See [`ValidationException`](https://docs.aws.amazon.com/evs/latest/APIReference/API_ValidationException.html) instead.
 
 The request doesn't comply with IAM tag policy. Correct your request and then retry it.
 

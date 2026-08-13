@@ -46,7 +46,7 @@ Get your Windows Server 2016 instance up and running in Lightsail. For more info
 
    A plan includes a low, predictable cost, machine configuration (RAM, SSD, vCPU), and data transfer allowance. You can try the $9.50 USD Lightsail plan without charge for one month (up to 750 hours). AWS credits one free month to your account.
 **Note**
-As part of the AWS Free Tier, you can get started with Amazon Lightsail for free on select instance bundles. For more information, see **AWS Free Tier** on the [Amazon Lightsail Pricing page](https://aws.amazon.com/lightsail/pricing).
+As part of the AWS Free Tier, you can get started with Amazon Lightsail for free. For more information, see the [AWS Free Tier FAQs](https://aws.amazon.com/free/free-tier-faqs/).
 
 1. Enter a name for your instance.
 

@@ -95,7 +95,7 @@ The tags to be assigned to the cluster parameter group.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the DBClusterParameterGroup's name, such as `sample-db-cluster-param-group`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-docdb-dbclusterparametergroup-return-values-fn--getatt"></a>

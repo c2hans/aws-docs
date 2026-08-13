@@ -17,7 +17,7 @@ For more information about handling timeouts in an automation, see [Handling tim
 ## About automation statuses
 <a name="automation-statuses-about"></a>
 
-Automation reports status details for individual automation actions in addition to the overall automation.
+Automation reports status details for individual automation actions besides the overall automation.
 
 The overall automation status can be different than the status reported by an individual action or step as noted in the following tables.
 
@@ -30,7 +30,7 @@ The overall automation status can be different than the status reported by an in
 | Waiting | The step is waiting for input. |
 | Success | The step completed successfully. This is a terminal state. |
 | TimedOut | A step or approval wasn't completed before the specified timeout period. This is a terminal state. |
-| Cancelling | The step is in the process of stopping after being canceled by a requester. |
+| Cancelling | The step is currently stopping after being canceled by a requester. |
 | Cancelled | The step was stopped by a requester before it completed. This is a terminal state. |
 | Failed | The step didn't complete successfully. This is a terminal state. |
 | Exited | Only returned by the `aws:loop` action. The loop didn't fully complete. A step inside the loop moved to an outside step using the `nextStep`, `onCancel`, or `onFailure` properties. |
@@ -44,6 +44,6 @@ The overall automation status can be different than the status reported by an in
 | Waiting | The automation is waiting for input. |
 | Success | The automation completed successfully. This is a terminal state. |
 | TimedOut | A step or approval wasn't completed before the specified timeout period. This is a terminal state. |
-| Cancelling | The automation is in the process of stopping after being canceled by a requester. |
+| Cancelling | The automation is currently stopping after being canceled by a requester. |
 | Cancelled | The automation was stopped by a requester before it completed. This is a terminal state. |
 | Failed | The automation didn't complete successfully. This is a terminal state. |

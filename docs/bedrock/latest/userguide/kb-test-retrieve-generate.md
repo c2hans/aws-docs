@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-retriev
 **Important**
 Guardrails are applied only to the input and the generated response from the LLM. They are not applied to the references retrieved from Knowledge Bases at runtime.
 
-After your knowledge base is set up, you can query it and generate responses based on the chunks retrieved from your source data by using the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) API operation. The responses are returned with citations to the original source data. You can also [use a reranking model](rerank.md) instead of the default Amazon Bedrock Knowledge Bases ranker to rank source chunks for relevance during retrieval.
+After your knowledge base is set up, you can query it and generate responses based on the chunks retrieved from your source data by using the [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) API operation. The responses are returned with citations to the original source data. You can also [use a reranking model](rerank.md) instead of the default Amazon Bedrock Knowledge Bases ranker to rank source chunks for relevance during retrieval.
 
 **Multimodal content limitations**
 `RetrieveAndGenerate` has limited support for multimodal content. When using Nova Multimodal Embeddings, RAG functionality is restricted to text content only. For full multimodal support including audio and video processing, use BDA with text embedding models. For details, see [Build a knowledge base for multimodal content](kb-multimodal.md).
@@ -56,14 +56,14 @@ To learn how to query your knowledge base, choose the tab for your preferred met
 ------
 #### [ API ]
 
-To query a knowledge base and use a foundation model to generate responses based off the results from the data sources, send a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request with a [Agents for Amazon Bedrock runtime endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-rt).
+To query a knowledge base and use a foundation model to generate responses based off the results from the data sources, send a [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request with a [Agents for Amazon Bedrock runtime endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-rt).
 
-The [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerateStream.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerateStream.html) API returns data in a streaming format and allows you to access the generated responses in chunks without waiting for the entire result.
+The [RetrieveAndGenerateStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerateStream.html) API returns data in a streaming format and allows you to access the generated responses in chunks without waiting for the entire result.
 
 The following fields are required:
 
 **Note**
-The API response contains citation events. The `citation` member has been deprecated. We recommend that you use the `generatedResponse` and `retrievedReferences` fields instead. For reference, see [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_CitationEvent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_CitationEvent.html).
+The API response contains citation events. The `citation` member has been deprecated. We recommend that you use the `generatedResponse` and `retrievedReferences` fields instead. For reference, see [`CitationEvent`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_CitationEvent.html).
 
 ****
 

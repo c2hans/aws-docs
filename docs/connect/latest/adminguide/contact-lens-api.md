@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-api.html
 ---
 
-# Use Contact Lens APIs for chat analytics
+# Use conversational analytics APIs for chat analytics
 <a name="contact-lens-api"></a>
 
-Contact Lens includes two APIs that support conversational analytics. Use these APIs to build solutions that make your contact center more efficient.
+Conversational analytics includes two APIs that support conversational analytics. Use these APIs to build solutions that make your contact center more efficient.
 + [ListRealtimeContactAnalysisSegments](https://docs.aws.amazon.com/contact-lens/latest/APIReference/API_ListRealtimeContactAnalysisSegments.html): Use for voice contacts.
 + [ListRealtimeContactAnalysisSegmentsV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRealtimeContactAnalysisSegmentsV2.html): Use for chat contacts.
 

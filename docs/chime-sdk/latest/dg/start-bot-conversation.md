@@ -247,7 +247,7 @@ The following example shows a typical `ACTION_SUCCESSFUL` event for the `StartBo
 The result of the conversation between the user and the bot.
 
 **SessionId**
-The identifier of the bot conversation session. When a user starts a conversation with your bot, Amazon Lex creates a session. A session encapsulates the information exchanged between your user and the bot. The `StartBotConversation` action uses the call ID as the bot's `SessionId`. You can modify the session state between your user and your bot by using the Lex [https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_PutSession.html](https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_PutSession.html) API. For more information, see [ Managing sessions with the Amazon Lex V2 API ](https://docs.aws.amazon.com/lexv2/latest/dg/using-sessions.html) in the *Amazon Lex Developer Guide*.
+The identifier of the bot conversation session. When a user starts a conversation with your bot, Amazon Lex creates a session. A session encapsulates the information exchanged between your user and the bot. The `StartBotConversation` action uses the call ID as the bot's `SessionId`. You can modify the session state between your user and your bot by using the Lex [PutSession](https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_PutSession.html) API. For more information, see [ Managing sessions with the Amazon Lex V2 API ](https://docs.aws.amazon.com/lexv2/latest/dg/using-sessions.html) in the *Amazon Lex Developer Guide*.
 
 **SessionState**
 The state of the user’s Amazon Lex v2 session.
@@ -343,7 +343,7 @@ The following table lists the error messages that a Lambda function can return i
 ## Granting permissions to use a bot
 <a name="bot-permissions"></a>
 
-The following example grants the Amazon Chime SDK permission to call the Amazon Lex [https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_StartConversation.html](https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_StartConversation.html) APIs. You must explicitly grant the Audio Service permission to use your bot. The condition block is required for service principals. The condition block must use the global context keys `AWS:SourceAccount` and `AWS:SourceArn`. The `AWS:SourceAccount` is your AWS account ID. The `AWS:SourceArn` is the resource ARN of the PSTN audio application that invokes the Lex bot.
+The following example grants the Amazon Chime SDK permission to call the Amazon Lex [StartConversation](https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_StartConversation.html) APIs. You must explicitly grant the Audio Service permission to use your bot. The condition block is required for service principals. The condition block must use the global context keys `AWS:SourceAccount` and `AWS:SourceArn`. The `AWS:SourceAccount` is your AWS account ID. The `AWS:SourceArn` is the resource ARN of the PSTN audio application that invokes the Lex bot.
 
 ------
 #### [ JSON ]

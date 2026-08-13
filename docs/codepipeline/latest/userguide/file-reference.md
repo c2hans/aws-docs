@@ -81,7 +81,7 @@ Before you create your pipeline, use the following steps to set up the `imagedef
 **Note**
 If your source repository is an Amazon S3 bucket, remember to zip the JSON file.
 
-   1. If your pipeline has a build stage, add a command to your build spec file that outputs the image definitions file in your source repository during the build phase. The following example uses the **printf** command to create an `imagedefinitions.json` file. List this command in the `post_build` section of the `buildspec.yml` file:
+   1. If your pipeline has a build stage, add a command to your buildspec file that outputs the image definitions file in your source repository during the build phase. The following example uses the **printf** command to create an `imagedefinitions.json` file. List this command in the `post_build` section of the `buildspec.yml` file:
 
       ```
       printf '[{"name":"{{container_name}}","imageUri":"{{image_URI}}"}]' >
@@ -176,7 +176,7 @@ Before you create your pipeline, use the following steps to set up the `imageDet
 
    1. If your pipeline has a build stage, perform the following:
 
-      1. Add a command to your build spec file that outputs the image definitions file in your source repository during the build phase. The following example uses the **printf** command to create an `imageDetail.json` file. List this command in the `post_build` section of the buildspec.yml file:
+      1. Add a command to your buildspec file that outputs the image definitions file in your source repository during the build phase. The following example uses the **printf** command to create an `imageDetail.json` file. List this command in the `post_build` section of the buildspec.yml file:
 
          ```
          printf '{"ImageURI":"{{image_URI}}"}' > imageDetail.json

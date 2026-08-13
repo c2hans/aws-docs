@@ -16,7 +16,7 @@ The following are required before you can create a Direct Connect gateway attach
 + You must have a Direct Connect account and a valid Direct Connect gateway. A specific Direct Connect gateway can't be used for any other gateway types as long as it remains associated with a core network. This includes virtual gateways, transit gateways, and private virtual interfaces.
 + Only one core network can be associated with a Direct Connect gateway.
 
- For more information about Direct Connect, see the [https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html).
+ For more information about Direct Connect, see the [*AWS Direct Connect User Guide*](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html).
 
 ## Limitations
 <a name="cloudwan-dxattach-limits"></a>

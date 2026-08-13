@@ -120,7 +120,7 @@ The following command deletes an object named test.txt from a bucket named `{{am
 aws s3api delete-object --bucket {{amzn-s3-demo-bucket1}} --key test.txt --version-id {{versionID}}
 ```
 
-For more information about `delete-object` see [https://docs.aws.amazon.com/cli/latest/reference/s3api/delete-object.html](https://docs.aws.amazon.com/cli/latest/reference/s3api/delete-object.html) in the *AWS CLI Command Reference*.
+For more information about `delete-object` see [delete-object](https://docs.aws.amazon.com/cli/latest/reference/s3api/delete-object.html) in the *AWS CLI Command Reference*.
 
 For more information about deleting object versions, see the following topics:
 + [Working with delete markers](DeleteMarker.md)

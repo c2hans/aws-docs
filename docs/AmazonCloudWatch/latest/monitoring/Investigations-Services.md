@@ -24,7 +24,7 @@ You can launch investigations from telemetry data (such as CloudWatch metrics, a
 + Amazon SQS
 + AWS Step Functions
 
-The list of services will continue to be expanded over time. CloudWatch investigations utilizes a wide range of data sources to determine dependency relationships and plan analysis paths, including telemetry data configurations, service configurations, and observed relationships through CloudWatch Application Signals and X-Ray. Where none of the above is available, CloudWatch investigations will attempt to infer dependency relationships through co-occurring telemetry anomalies.
+The list of services will continue to be expanded over time. CloudWatch investigations uses a wide range of data sources to determine dependency relationships and plan analysis paths, including telemetry data configurations, service configurations, and observed relationships through CloudWatch Application Signals and X-Ray. Where none of the above is available, CloudWatch investigations will attempt to infer dependency relationships through co-occurring telemetry anomalies.
 
 **Best practice setup**
 

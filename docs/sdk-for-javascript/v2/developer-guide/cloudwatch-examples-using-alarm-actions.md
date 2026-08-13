@@ -18,8 +18,8 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 Using alarm actions, you can create alarms that automatically stop, terminate, reboot, or recover your Amazon EC2 instances. You can use the stop or terminate actions when you no longer need an instance to be running. You can use the reboot and recover actions to automatically reboot those instances.
 
 In this example, a series of Node.js modules are used to define an alarm action in CloudWatch that triggers the reboot of an Amazon EC2 instance. The Node.js modules use the SDK for JavaScript to manage Amazon EC2 instances using these methods of the `CloudWatch` client class:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatch.html#enableAlarmActions-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatch.html#enableAlarmActions-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatch.html#disableAlarmActions-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatch.html#disableAlarmActions-property)
++ [`enableAlarmActions`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatch.html#enableAlarmActions-property)
++ [`disableAlarmActions`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatch.html#disableAlarmActions-property)
 
 For more information about CloudWatch alarm actions, see [Create Alarms to Stop, Terminate, Reboot, or Recover an Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/UsingAlarmActions.html) in the *Amazon CloudWatch User Guide*.
 

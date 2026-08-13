@@ -40,6 +40,10 @@ The URL to the certificate that was used to sign the message.
 **`UnsubscribeURL`**
 A URL that you can use to unsubscribe the endpoint from this topic. If you visit this URL, Amazon SNS unsubscribes the endpoint and stops sending notifications to this endpoint.
 
+**`MessageAttributes`**
+Amazon SNS represents the message attributes that you attached to the published message as a JSON object. This object maps each attribute name to an object with a `Type` and a `Value`. For more information about attribute types, see [Amazon SNS message attributes](sns-message-attributes.md).
+`MessageAttributes` is optional. If the published message has no message attributes, this name-value pair does not appear in this JSON document.
+
 The following HTTP POST message is an example of a `Notification` message to an HTTP endpoint.
 
 ```

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/account-au
 
 The account auto-enrollment feature is available for landing zones of version 3.1 and above.
 
-If you optionally enable this feature, you can utilize the AWS Organizations APIs and console to move accounts into AWS Control Tower, without creating [https://docs.aws.amazon.com//controltower/latest/userguide/governance-drift.html](https://docs.aws.amazon.com//controltower/latest/userguide/governance-drift.html). The account automatically receives baseline resources and control configurations from the destination organizational unit (OU) in AWS Control Tower. This optional capability also allows you to move accounts between OUs within AWS Control Tower, without creating inheritance drift, if the two OUs have the same baseline configuration and the same controls enabled.
+If you optionally enable this feature, you can utilize the AWS Organizations APIs and console to move accounts into AWS Control Tower, without creating [*inheritance drift*](https://docs.aws.amazon.com//controltower/latest/userguide/governance-drift.html). The account automatically receives baseline resources and control configurations from the destination organizational unit (OU) in AWS Control Tower. This optional capability also allows you to move accounts between OUs within AWS Control Tower, without creating inheritance drift, if the two OUs have the same baseline configuration and the same controls enabled.
 
 **To activate auto-enrollment:** You can select auto-enrollment of accounts on the landing zone **Settings** page in the AWS Control Tower console, or by calling the AWS Control Tower `CreateLandingZone` or `UpdateLandingZone` APIs, with the value of the `RemediationType` parameter set to **Inheritance Drift**.
 
@@ -31,7 +31,7 @@ Specific roles and permissions are required for you to use the AWS Organizations
 ## API usage examples
 <a name="w2aac44c24c18c19"></a>
 
-For more information and examples regarding these APIs, see [https://docs.aws.amazon.com//organizations/latest/APIReference/API_CreateAccount.html](https://docs.aws.amazon.com//organizations/latest/APIReference/API_CreateAccount.html) and [https://docs.aws.amazon.com//organizations/latest/APIReference/API_MoveAccount.html](https://docs.aws.amazon.com//organizations/latest/APIReference/API_MoveAccount.html) in the *AWS Organizations API Reference*.
+For more information and examples regarding these APIs, see [`CreateAccount`](https://docs.aws.amazon.com//organizations/latest/APIReference/API_CreateAccount.html) and [`MoveAccount`](https://docs.aws.amazon.com//organizations/latest/APIReference/API_MoveAccount.html) in the *AWS Organizations API Reference*.
 
 ## Considerations
 <a name="w2aac44c24c18c21"></a>

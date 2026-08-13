@@ -30,7 +30,7 @@ You can view the following types of assessment reports:
 
 1. In the **Assessment report** dialog box, choose the type of report that you want to view (either a **Findings** or a **Full** report) and the report format (HTML or PDF). Then choose **Generate report**.
 
-You can also generate assessment reports through the [http://docs.aws.amazon.com/inspector/latest/APIReference/API_GetAssessmentReport.html](http://docs.aws.amazon.com/inspector/latest/APIReference/API_GetAssessmentReport.html) API.
+You can also generate assessment reports through the [GetAssessmentReport](http://docs.aws.amazon.com/inspector/latest/APIReference/API_GetAssessmentReport.html) API.
 
 To delete an assessment report, perform the following procedure.
 
@@ -39,4 +39,4 @@ To delete an assessment report, perform the following procedure.
 **Important**
 In Amazon Inspector Classic, you can't delete individual reports. When you delete an assessment run, all versions of the report from that run and all findings are also deleted.
 
-  You can also delete an assessment run by using the [https://docs.aws.amazon.com/inspector/latest/APIReference/API_DeleteAssessmentRun.html](https://docs.aws.amazon.com/inspector/latest/APIReference/API_DeleteAssessmentRun.html) API.
+  You can also delete an assessment run by using the [DeleteAssessmentRun](https://docs.aws.amazon.com/inspector/latest/APIReference/API_DeleteAssessmentRun.html) API.

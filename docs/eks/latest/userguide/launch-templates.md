@@ -125,7 +125,7 @@ kind: NodeConfig spec: [...]
 
 --BOUNDARY--
 ```
-In AL2, the metadata from these parameters was discovered from the Amazon EKS `DescribeCluster` API call. With AL2023, this behavior has changed since the additional API call risks throttling during large node scale ups. This change doesn’t affect you if you’re using managed node groups without a launch template or if you’re using Karpenter. For more information on `certificateAuthority` and service `cidr`, see [https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeCluster.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeCluster.html) in the *Amazon EKS API Reference*.
+In AL2, the metadata from these parameters was discovered from the Amazon EKS `DescribeCluster` API call. With AL2023, this behavior has changed since the additional API call risks throttling during large node scale ups. This change doesn’t affect you if you’re using managed node groups without a launch template or if you’re using Karpenter. For more information on `certificateAuthority` and service `cidr`, see [`DescribeCluster`](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeCluster.html) in the *Amazon EKS API Reference*.
 Here’s a complete example of AL2023 user data that combines a shell script for customizing the node (like installing packages or pre-caching container images) with the required `nodeadm` configuration. This example shows common customizations including: \* Installing additional system packages \* Pre-caching container images to improve Pod startup time \* Setting up HTTP proxy configuration \* Configuring `kubelet` flags for node labeling
 
 ```

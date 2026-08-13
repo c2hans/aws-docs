@@ -59,7 +59,7 @@ Both the source and destination buckets must be versioning-enabled when you conf
 
 S3 Intelligent-Tiering is a storage class that is designed to optimize storage costs by automatically moving data to the most cost-effective access tier. For a small monthly object monitoring and automation charge, S3 Intelligent-Tiering monitors access patterns and automatically moves objects that have not been accessed to lower-cost access tiers.
 
-Replicating objects stored in S3 Intelligent-Tiering with S3 Batch Replication or invoking [https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html) or [https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPartCopy.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPartCopy.html) constitutes access. In these cases, the source objects of the copy or replication operations are tiered up.
+Replicating objects stored in S3 Intelligent-Tiering with S3 Batch Replication or invoking [CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html) or [UploadPartCopy](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPartCopy.html) constitutes access. In these cases, the source objects of the copy or replication operations are tiered up.
 
 For more information about S3 Intelligent-Tiering see, [Managing storage costs with Amazon S3 Intelligent-Tiering](intelligent-tiering.md).
 

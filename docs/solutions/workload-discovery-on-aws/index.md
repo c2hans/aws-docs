@@ -6,8 +6,8 @@ source_url: https://docs.aws.amazon.com//solutions/workload-discovery-on-aws//in
 
 Maintain an inventory of the AWS resources across your accounts and AWS Regions
 
-- **Version**: 2.3.24
-- **Released**: 7/2026
+- **Version**: 2.3.25
+- **Released**: 8/2026
 - **Author**: AWS
 - **Est. deployment time**: 30 mins
 - **Estimated cost**: [See details](/solutions/latest/workload-discovery-on-aws/cost.html)

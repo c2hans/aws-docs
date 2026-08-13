@@ -24,7 +24,7 @@ Required: No
 
  ** StandardMetricName **   <a name="sagemaker-Type-MetricDatum-StandardMetricName"></a>
 The name of the standard metric.
-For definitions of the standard metrics, see [https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-model-support-validation.html#autopilot-metrics](https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-model-support-validation.html#autopilot-metrics).
+For definitions of the standard metrics, see [`Autopilot candidate metrics`](https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-model-support-validation.html#autopilot-metrics).
 Type: String
 Valid Values: `Accuracy | MSE | F1 | F1macro | AUC | RMSE | MAE | R2 | BalancedAccuracy | Precision | PrecisionMacro | Recall | RecallMacro | LogLoss | InferenceLatency | MAPE | MASE | WAPE | AverageWeightedQuantileLoss | Rouge1 | Rouge2 | RougeL | RougeLSum | Perplexity | ValidationLoss | TrainingLoss`
 Required: No

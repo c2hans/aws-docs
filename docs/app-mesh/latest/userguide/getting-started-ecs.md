@@ -493,7 +493,7 @@ The Envoy container requires AWS Identity and Access Management credentials for 
 If a task is deployed with the Amazon EC2 launch type and access is blocked to the Amazon EC2 metadata server, as described in the *Important* annotation in [IAM Role for Tasks](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html), then a task IAM role must also be attached to the task. The role that you assign to the instance or task must have an IAM policy attached to it as described in [Proxy authorization](https://docs.aws.amazon.com/app-mesh/latest/userguide/proxy-authorization.html).
 
 **To update your task definition using the AWS CLI**
-You use Amazon ECS AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/ecs/register-task-definition.html](https://docs.aws.amazon.com/cli/latest/reference/ecs/register-task-definition.html). The example task definition below shows how to configure App Mesh for your service.
+You use Amazon ECS AWS CLI command [`register-task-definition`](https://docs.aws.amazon.com/cli/latest/reference/ecs/register-task-definition.html). The example task definition below shows how to configure App Mesh for your service.
 
 **Note**
 Configuring App Mesh for Amazon ECS through the console is unavailable.

@@ -89,12 +89,12 @@ The following data is returned in JSON format by the service.
  ** [agentRuntimeArn](#API_UpdateAgentRuntimeEndpoint_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdateAgentRuntimeEndpoint-response-agentRuntimeArn"></a>
 The Amazon Resource Name (ARN) of the AgentCore Runtime.
 Type: String
-Pattern: `arn:(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:agent/[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}:([0-9]{0,4}[1-9][0-9]{0,4})`
+Pattern: `arn:aws(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:runtime/[a-zA-Z][a-zA-Z0-9_]{0,47}-[a-zA-Z0-9]{10}`
 
  ** [agentRuntimeEndpointArn](#API_UpdateAgentRuntimeEndpoint_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdateAgentRuntimeEndpoint-response-agentRuntimeEndpointArn"></a>
 The Amazon Resource Name (ARN) of the AgentCore Runtime endpoint.
 Type: String
-Pattern: `arn:(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:agentEndpoint/[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
+Pattern: `arn:aws(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:runtime/[a-zA-Z][a-zA-Z0-9_]{0,47}-[a-zA-Z0-9]{10}/runtime-endpoint/[a-zA-Z][a-zA-Z0-9_]{0,47}`
 
  ** [createdAt](#API_UpdateAgentRuntimeEndpoint_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdateAgentRuntimeEndpoint-response-createdAt"></a>
 The timestamp when the AgentCore Runtime endpoint was created.

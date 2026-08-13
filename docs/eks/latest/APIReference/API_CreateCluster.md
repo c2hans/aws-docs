@@ -53,12 +53,37 @@ Content-type: application/json
          "resources": [ "{{string}}" ]
       }
    ],
+   "kubeApiServerConfig": {
+      "eventTtl": "{{string}}",
+      "serviceNodePortRange": {
+         "maxPort": {{number}},
+         "minPort": {{number}}
+      }
+   },
+   "kubeControllerManagerConfig": {
+      "horizontalPodAutoscalerControllerConfig": {
+         "horizontalPodAutoscalerSyncPeriod": "{{string}}"
+      }
+   },
    "kubernetesNetworkConfig": {
       "elasticLoadBalancing": {
          "enabled": {{boolean}}
       },
       "ipFamily": "{{string}}",
       "serviceIpv4Cidr": "{{string}}"
+   },
+   "kubeSchedulerConfig": {
+      "nodeResourcesFit": {
+         "scoringStrategy": {
+            "resources": [
+               {
+                  "name": "{{string}}",
+                  "weight": {{number}}
+               }
+            ],
+            "type": "{{string}}"
+         }
+      }
    },
    "logging": {
       "clusterLogging": [
@@ -168,9 +193,24 @@ Type: Array of [EncryptionConfig](API_EncryptionConfig.md) objects
 Array Members: Maximum number of 1 item.
 Required: No
 
+ ** [kubeApiServerConfig](#API_CreateCluster_RequestSyntax) **   <a name="AmazonEKS-CreateCluster-request-kubeApiServerConfig"></a>
+The Kubernetes API server configuration for the new cluster.
+Type: [KubeApiServerConfigRequest](API_KubeApiServerConfigRequest.md) object
+Required: No
+
+ ** [kubeControllerManagerConfig](#API_CreateCluster_RequestSyntax) **   <a name="AmazonEKS-CreateCluster-request-kubeControllerManagerConfig"></a>
+The Kubernetes controller manager configuration for the new cluster.
+Type: [KubeControllerManagerConfigRequest](API_KubeControllerManagerConfigRequest.md) object
+Required: No
+
  ** [kubernetesNetworkConfig](#API_CreateCluster_RequestSyntax) **   <a name="AmazonEKS-CreateCluster-request-kubernetesNetworkConfig"></a>
 The Kubernetes network configuration for the cluster.
 Type: [KubernetesNetworkConfigRequest](API_KubernetesNetworkConfigRequest.md) object
+Required: No
+
+ ** [kubeSchedulerConfig](#API_CreateCluster_RequestSyntax) **   <a name="AmazonEKS-CreateCluster-request-kubeSchedulerConfig"></a>
+The Kubernetes scheduler configuration for the new cluster.
+Type: [KubeSchedulerConfigRequest](API_KubeSchedulerConfigRequest.md) object
 Required: No
 
  ** [logging](#API_CreateCluster_RequestSyntax) **   <a name="AmazonEKS-CreateCluster-request-logging"></a>
@@ -296,6 +336,18 @@ Content-type: application/json
             "issuer": "string"
          }
       },
+      "kubeApiServerConfig": {
+         "eventTtl": "string",
+         "serviceNodePortRange": {
+            "maxPort": number,
+            "minPort": number
+         }
+      },
+      "kubeControllerManagerConfig": {
+         "horizontalPodAutoscalerControllerConfig": {
+            "horizontalPodAutoscalerSyncPeriod": "string"
+         }
+      },
       "kubernetesNetworkConfig": {
          "elasticLoadBalancing": {
             "enabled": boolean
@@ -303,6 +355,19 @@ Content-type: application/json
          "ipFamily": "string",
          "serviceIpv4Cidr": "string",
          "serviceIpv6Cidr": "string"
+      },
+      "kubeSchedulerConfig": {
+         "nodeResourcesFit": {
+            "scoringStrategy": {
+               "resources": [
+                  {
+                     "name": "string",
+                     "weight": number
+                  }
+               ],
+               "type": "string"
+            }
+         }
       },
       "logging": {
          "clusterLogging": [

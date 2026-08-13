@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/snaplock-complianc
 This section describes use cases and considerations for the SnapLock Compliance retention mode.
 
 You might choose the Compliance retention mode for the following use cases.
-+ You can use SnapLock Compliance to address government or industry-specific mandates such as SEC Rule 17a-4(f), FINRA Rule 4511, and CFTC Regulation 1.31. SnapLock Compliance on Amazon FSx for NetApp ONTAP was assessed for these mandates and regulations by Cohasset Associates. For more information, see the [https://d1.awsstatic.com/r2018/b/FSx/cohasset_assessment_for_fsx_for_ontap_report.pdf](https://d1.awsstatic.com/r2018/b/FSx/cohasset_assessment_for_fsx_for_ontap_report.pdf).
++ You can use SnapLock Compliance to address government or industry-specific mandates such as SEC Rule 17a-4(f), FINRA Rule 4511, and CFTC Regulation 1.31. SnapLock Compliance on Amazon FSx for NetApp ONTAP was assessed for these mandates and regulations by Cohasset Associates. For more information, see the [*Compliance Assessment Report for Amazon FSx for NetApp ONTAP*](https://d1.awsstatic.com/r2018/b/FSx/cohasset_assessment_for_fsx_for_ontap_report.pdf).
 + You can use SnapLock Compliance to complement or enhance a comprehensive data protection strategy to combat ransomware attacks.
 
 Here are some important items to consider about the SnapLock Compliance retention mode.

@@ -22,14 +22,14 @@ Default constructor for a `SecretCacheConfiguration` object.
 
 `public AWSSecretsManager getClient()`
 
-Returns the [https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html) that the cache retrieves secrets from.
+Returns the [`AWSSecretsManagerClient`](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html) that the cache retrieves secrets from.
 
 ### setClient
 <a name="retrieving-secrets_cache-java-ref_SecretCacheConfiguration_methods-setClient"></a>
 
 `public void setClient(AWSSecretsManager client)`
 
-Sets the [https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html) client that the cache retrieves secrets from.
+Sets the [`AWSSecretsManagerClient`](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html) client that the cache retrieves secrets from.
 
 ### getCacheHook
 <a name="retrieving-secrets_cache-java-ref_SecretCacheConfiguration_methods-getCacheHook"></a>
@@ -64,7 +64,7 @@ Sets the maximum cache size. The default is 1024 secrets.
 
 `public long getCacheItemTTL()`
 
-Returns the TTL in milliseconds for the cached items. When a cached secret exceeds this TTL, the cache retrieves a new copy of the secret from the [https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html). The default is 1 hour in milliseconds.
+Returns the TTL in milliseconds for the cached items. When a cached secret exceeds this TTL, the cache retrieves a new copy of the secret from the [`AWSSecretsManagerClient`](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html). The default is 1 hour in milliseconds.
 
 The cache refreshes the secret synchronously when the secret is requested after the TTL. If the synchronous refresh fails, the cache returns the stale secret.
 
@@ -73,7 +73,7 @@ The cache refreshes the secret synchronously when the secret is requested after 
 
 `public void setCacheItemTTL(long cacheItemTTL)`
 
-Sets the TTL in milliseconds for the cached items. When a cached secret exceeds this TTL, the cache retrieves a new copy of the secret from the [https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html). The default is 1 hour in milliseconds.
+Sets the TTL in milliseconds for the cached items. When a cached secret exceeds this TTL, the cache retrieves a new copy of the secret from the [`AWSSecretsManagerClient`](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html). The default is 1 hour in milliseconds.
 
 ### getVersionStage
 <a name="retrieving-secrets_cache-java-ref_SecretCacheConfiguration_methods-getVersionStage"></a>
@@ -94,7 +94,7 @@ Sets the version of secrets that you want to cache. For more information, see [S
 
 `public SecretCacheConfiguration withClient(AWSSecretsManager client)`
 
-Sets the [https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html) to retrieve secrets from. Returns the updated `SecretCacheConfiguration` object with the new setting.
+Sets the [`AWSSecretsManagerClient`](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html) to retrieve secrets from. Returns the updated `SecretCacheConfiguration` object with the new setting.
 
 ### SecretCacheConfiguration withCacheHook
 <a name="retrieving-secrets_cache-java-ref_SecretCacheConfiguration_methods-withCacheHook"></a>
@@ -115,7 +115,7 @@ Sets the maximum cache size. Returns the updated `SecretCacheConfiguration` obje
 
 `public SecretCacheConfiguration withCacheItemTTL(long cacheItemTTL)`
 
-Sets the TTL in milliseconds for the cached items. When a cached secret exceeds this TTL, the cache retrieves a new copy of the secret from the [https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html). The default is 1 hour in milliseconds. Returns the updated `SecretCacheConfiguration` object with the new setting.
+Sets the TTL in milliseconds for the cached items. When a cached secret exceeds this TTL, the cache retrieves a new copy of the secret from the [`AWSSecretsManagerClient`](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html). The default is 1 hour in milliseconds. Returns the updated `SecretCacheConfiguration` object with the new setting.
 
 ### SecretCacheConfiguration withVersionStage
 <a name="retrieving-secrets_cache-java-ref_SecretCacheConfiguration_methods-withVersionStage"></a>

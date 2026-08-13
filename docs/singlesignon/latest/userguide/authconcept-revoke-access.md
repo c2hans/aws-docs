@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/authconcep
 
 To immediately deny access to make authorized API calls when an IAM Identity Center user's access is disabled or the user is deleted, you can:
 
-1. [Add or update](howtoviewandchangepermissionset.md) the [inline policy](permissionsetcustom.md#permissionsetsinlineconcept) of the permission set(s) assigned to the user by adding an explicit `Deny` effect for all actions on all resources.
+1. [Add or update](howtoviewandchangepermissionset.md) the [inline policy](permissionsetcustom.md#permissionsetsinlineconcept) of the permission set(s) (or IAM role policy when using [account access manager](https://docs.aws.amazon.com/IAM/latest/UserGuide/account-access-manager.html)) assigned to the user by adding an explicit `Deny` effect for all actions on all resources.
 
 1. Specify the `aws:userid` or `identitystore:userid` condition key.
 

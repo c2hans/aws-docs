@@ -84,6 +84,26 @@ Required: Yes
       ],
       "eventCount": number,
       "executionRoleArn": "string",
+      "insights": {
+         "jobReport": {
+            "jobDetailsUrl": "string",
+            "message": "string",
+            "metrics": {
+               "averageJobExecutionDurationSeconds": number,
+               "jobsErrored": number,
+               "jobsFailed": number,
+               "jobsPassed": number,
+               "jobsPassedPercentage": number,
+               "jobsSkipped": number,
+               "jobsStopped": number,
+               "jobsTotal": number,
+               "medianJobExecutionDurationSeconds": number,
+               "totalJobExecutionDurationSeconds": number
+            }
+         },
+         "status": "string"
+      },
+      "insightsTypes": [ "string" ],
       "jobTimeoutMinutes": number,
       "locale": "string",
       "location": {

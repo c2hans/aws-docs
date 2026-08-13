@@ -36,8 +36,6 @@ When configuring the pipeline to read data from Zeek, choose Zeek as the data so
 
 This integration supports OCSF schema version v1.5.0 and events that map to multiple OCSF classes. The following table lists the supported event mappings.
 
-**Zeek OCSF event mappings**
-
 | Event name | OCSF class |
 | --- | --- |
 | conn | Network Activity (4001) |

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCent
 # (Optional) Configure OpsCenter to manage OpsItems across accounts by using Quick Setup
 <a name="OpsCenter-quick-setup-cross-account"></a>
 
-Quick Setup, a tool in AWS Systems Manager, simplifies setup and configuration tasks for Systems Manager tools. Quick Setup for OpsCenter helps you complete the following tasks for managing OpsItems across accounts:
+Quick Setup simplifies setup and configuration tasks for Systems Manager tools. Quick Setup for OpsCenter helps you complete the following tasks for managing OpsItems across accounts:
 + Specifying the delegated administrator account
 + Creating required AWS Identity and Access Management (IAM) policies and roles
 + Specifying an AWS Organizations organization, or a subset of member accounts, where a delegated administrator can manage OpsItems across accounts

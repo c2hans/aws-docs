@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/SECTION_pro
 # Aurora DSQL Connector for PHP `PDO_PGSQL`
 <a name="SECTION_program-with-dsql-connector-for-php-pdo-pgsql"></a>
 
-The [Aurora DSQL Connector for PHP](https://github.com/awslabs/aurora-dsql-connectors/tree/main/php/pdo_pgsql) is a PHP connector built on [https://www.php.net/manual/en/ref.pdo-pgsql.php](https://www.php.net/manual/en/ref.pdo-pgsql.php) that integrates IAM authentication for connecting PHP applications to Amazon Aurora DSQL clusters.
+The [Aurora DSQL Connector for PHP](https://github.com/awslabs/aurora-dsql-connectors/tree/main/php/pdo_pgsql) is a PHP connector built on [`PDO_PGSQL`](https://www.php.net/manual/en/ref.pdo-pgsql.php) that integrates IAM authentication for connecting PHP applications to Amazon Aurora DSQL clusters.
 
 The connector handles token generation, SSL configuration, and connection management so you can focus on your application logic.
 

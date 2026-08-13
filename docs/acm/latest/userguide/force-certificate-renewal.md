@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/force-certificate-r
 # Force certificate renewal
 <a name="force-certificate-renewal"></a>
 
-You can renew your ACM public and private certificates with the ACM console, [renew-certificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/renew-certificate.html) AWS CLI, or [https://docs.aws.amazon.com/acm/latest/APIReference/API_RenewCertificate.html](https://docs.aws.amazon.com/acm/latest/APIReference/API_RenewCertificate.html) API action. You can only renew certificates that have been previously exported.
+You can renew your ACM public and private certificates with the ACM console, [renew-certificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/renew-certificate.html) AWS CLI, or [`RenewCertificate`](https://docs.aws.amazon.com/acm/latest/APIReference/API_RenewCertificate.html) API action. You can only renew certificates that have been previously exported.
 
 **Important**
 When you renew an ACM exportable public certificates, you're charged an additional fee. For the latest ACM pricing information, see the [AWS Certificate Manager Service Pricing](https://aws.amazon.com//certificate-manager/pricing/) page on the AWS website.
@@ -28,7 +28,7 @@ The following procedure walks you through how you can force the renewal of an AC
 ## Renew a certificate (AWS CLI)
 <a name="renew-certificate-cli"></a>
 
-Use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/renew-certificate.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/renew-certificate.html) AWS CLI command or [https://docs.aws.amazon.com/acm/latest/APIReference/API_RenewCertificate.html](https://docs.aws.amazon.com/acm/latest/APIReference/API_RenewCertificate.html) API action to renew an ACM public or private certificate. You can retrieve the certificate's ARN by calling the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/list-certificates.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/list-certificates.html) command. The `renew-certificate` command does not return a response.
+Use the [`renew-certificate`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/renew-certificate.html) AWS CLI command or [`RenewCertificate`](https://docs.aws.amazon.com/acm/latest/APIReference/API_RenewCertificate.html) API action to renew an ACM public or private certificate. You can retrieve the certificate's ARN by calling the [`list-certificates`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/list-certificates.html) command. The `renew-certificate` command does not return a response.
 
 ```
 $ aws acm renew-certificate \

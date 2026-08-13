@@ -249,7 +249,7 @@ aws rds create-integration ^
 ### RDS API
 <a name="zero-etl.create-api"></a>
 
-To create a zero-ETL integration by using the Amazon RDS API, use the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateIntegration.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateIntegration.html) operation with the following parameters:
+To create a zero-ETL integration by using the Amazon RDS API, use the [`CreateIntegration`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateIntegration.html) operation with the following parameters:
 
 **Note**
 Catalog names are limited to 19 characters. Ensure your IntegrationName parameter meets this requirement if it will be used as a catalog name.

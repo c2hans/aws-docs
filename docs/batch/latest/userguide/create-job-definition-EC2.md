@@ -43,7 +43,7 @@ If you choose **Add evaluate on exit**, you must configure at least one paramete
 
 1. In the **Container configuration** section:
 
-   1. For **Image**, choose the Docker image to use for your job. By default, images in the Docker Hub registry are available. You can also specify other repositories with `{{repository-url}}/{{image}}:{{tag}}`. The name can be up to 225 characters in length. It can contain uppercase and lowercase letters, numbers, hyphens (-), underscores (\_), colons (:), forward slashes (/), and number signs (\#). This parameter maps to `Image` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `IMAGE` parameter of [https://docs.docker.com/engine/reference/commandline/run/](https://docs.docker.com/engine/reference/commandline/run/).
+   1. For **Image**, choose the Docker image to use for your job. By default, images in the Docker Hub registry are available. You can also specify other repositories with `{{repository-url}}/{{image}}:{{tag}}`. The name can be up to 225 characters in length. It can contain uppercase and lowercase letters, numbers, hyphens (-), underscores (\_), colons (:), forward slashes (/), and number signs (\#). This parameter maps to `Image` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `IMAGE` parameter of [**docker run**](https://docs.docker.com/engine/reference/commandline/run/).
 **Note**
 Docker image architecture must match the processor architecture of the compute resources that they're scheduled on. For example, ARM-based Docker images can only run on ARM-based compute resources.
       + Images in Amazon ECR Public repositories use the full `registry/repository[:tag]` or `registry/repository[@digest]` naming conventions (for example, `public.ecr.aws/{{registry_alias}}/{{my-web-app}}:{{latest}}`).
@@ -54,7 +54,7 @@ Docker image architecture must match the processor architecture of the compute r
 
    1. For **Command**, enter the commands into the field as their **JSON** string array equivalent.
 
-      This parameter maps to `Cmd` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `COMMAND` parameter to [https://docs.docker.com/engine/reference/commandline/run/](https://docs.docker.com/engine/reference/commandline/run/). For more information about the Docker `CMD` parameter, see [https://docs.docker.com/engine/reference/builder/\#cmd](https://docs.docker.com/engine/reference/builder/#cmd).
+      This parameter maps to `Cmd` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `COMMAND` parameter to [**docker run**](https://docs.docker.com/engine/reference/commandline/run/). For more information about the Docker `CMD` parameter, see [https://docs.docker.com/engine/reference/builder/\#cmd](https://docs.docker.com/engine/reference/builder/#cmd).
 **Note**
 You can use default values for parameter substitution and placeholders in your command. For more information, see [Parameters](job_definition_parameters.md#parameters).
 
@@ -68,9 +68,9 @@ Only roles that have the **Amazon Elastic Container Service Task Role** trust re
 
 1. In the **Environment configuration** section:
 
-   1. For **vCPUs**, enter the number of vCPUs to reserve for the container. This parameter maps to `CpuShares` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--cpu-shares` option to [https://docs.docker.com/engine/reference/commandline/run/](https://docs.docker.com/engine/reference/commandline/run/). Each vCPU is equivalent to 1,024 CPU shares. You must specify at least one vCPU.
+   1. For **vCPUs**, enter the number of vCPUs to reserve for the container. This parameter maps to `CpuShares` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--cpu-shares` option to [**docker run**](https://docs.docker.com/engine/reference/commandline/run/). Each vCPU is equivalent to 1,024 CPU shares. You must specify at least one vCPU.
 
-   1. For **Memory**, enter the memory limit available to the container. If your container attempts to exceed the amount of memory that you specify here, the container is stopped. This parameter maps to `Memory` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--memory` option to [https://docs.docker.com/engine/reference/commandline/run/](https://docs.docker.com/engine/reference/commandline/run/). You must specify at least 4 MiB of memory for a job.
+   1. For **Memory**, enter the memory limit available to the container. If your container attempts to exceed the amount of memory that you specify here, the container is stopped. This parameter maps to `Memory` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--memory` option to [**docker run**](https://docs.docker.com/engine/reference/commandline/run/). You must specify at least 4 MiB of memory for a job.
 **Note**
 To maximize your resource utilization, prioritize memory for jobs of a specific instance type. For more information, see [Compute resource memory management](memory-management.md).
 
@@ -84,9 +84,9 @@ To maximize your resource utilization, prioritize memory for jobs of a specific 
 
 1. In the **Linux configuration** section:
 
-   1. For **User**, enter the user name to use inside the container. This parameter maps to `User` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--user` option to [https://docs.docker.com/engine/reference/commandline/run/](https://docs.docker.com/engine/reference/commandline/run/).
+   1. For **User**, enter the user name to use inside the container. This parameter maps to `User` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--user` option to [**docker run**](https://docs.docker.com/engine/reference/commandline/run/).
 
-   1. (Optional) To give the job container elevated permissions on the host instance (similar to the `root` user), drag the **Privileged** slider to the right. This parameter maps to `Privileged` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--privileged` option to [https://docs.docker.com/engine/reference/commandline/run/](https://docs.docker.com/engine/reference/commandline/run/).
+   1. (Optional) To give the job container elevated permissions on the host instance (similar to the `root` user), drag the **Privileged** slider to the right. This parameter maps to `Privileged` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--privileged` option to [**docker run**](https://docs.docker.com/engine/reference/commandline/run/).
 
    1. (Optional) Turn on **Enable init process** to run an `init` process inside the container. This process forwards signals and reaps processes.
 

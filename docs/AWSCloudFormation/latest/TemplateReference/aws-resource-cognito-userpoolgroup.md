@@ -97,7 +97,7 @@ The ID of the user pool where you want to create a user group.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the user pool group. For example: `Admins`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-cognito-userpoolgroup--examples"></a>

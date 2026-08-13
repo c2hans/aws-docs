@@ -19,7 +19,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[BedrockEvaluatorModelConfig](#cfn-bedrockagentcore-evaluator-evaluatormodelconfig-bedrockevaluatormodelconfig)" : {{BedrockEvaluatorModelConfig}}
+  "[BedrockEvaluatorModelConfig](#cfn-bedrockagentcore-evaluator-evaluatormodelconfig-bedrockevaluatormodelconfig)" : {{BedrockEvaluatorModelConfig}},
+  "[ResponsesEvaluatorModelConfig](#cfn-bedrockagentcore-evaluator-evaluatormodelconfig-responsesevaluatormodelconfig)" : {{OpenResponsesEvaluatorModelConfig}}
 }
 ```
 
@@ -29,6 +30,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [BedrockEvaluatorModelConfig](#cfn-bedrockagentcore-evaluator-evaluatormodelconfig-bedrockevaluatormodelconfig): {{
     BedrockEvaluatorModelConfig}}
+  [ResponsesEvaluatorModelConfig](#cfn-bedrockagentcore-evaluator-evaluatormodelconfig-responsesevaluatormodelconfig): {{
+    OpenResponsesEvaluatorModelConfig}}
 ```
 
 ## Properties
@@ -36,6 +39,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `BedrockEvaluatorModelConfig`  <a name="cfn-bedrockagentcore-evaluator-evaluatormodelconfig-bedrockevaluatormodelconfig"></a>
  The Amazon Bedrock model configuration for evaluation.
-*Required*: Yes
+*Required*: No
 *Type*: [BedrockEvaluatorModelConfig](aws-properties-bedrockagentcore-evaluator-bedrockevaluatormodelconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ResponsesEvaluatorModelConfig`  <a name="cfn-bedrockagentcore-evaluator-evaluatormodelconfig-responsesevaluatormodelconfig"></a>
+Property description not available.
+*Required*: No
+*Type*: [OpenResponsesEvaluatorModelConfig](aws-properties-bedrockagentcore-evaluator-openresponsesevaluatormodelconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

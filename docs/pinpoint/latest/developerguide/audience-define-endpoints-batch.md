@@ -22,7 +22,7 @@ The following examples show you how to add two endpoints at once by including th
 You can use Amazon Pinpoint by running commands with the AWS CLI.
 
 **Example Update endpoints batch command**
-To submit an endpoint batch request, use the [https://docs.aws.amazon.com/cli/latest/reference/pinpoint/update-endpoints-batch.html](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/update-endpoints-batch.html) command:
+To submit an endpoint batch request, use the [`update-endpoints-batch`](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/update-endpoints-batch.html) command:
 
 ```
 $ aws pinpoint update-endpoints-batch \

@@ -98,6 +98,7 @@ The following actions are supported:
 +  [ListConnectorsV2](API_ListConnectorsV2.md)
 +  [ListEnabledProductsForImport](API_ListEnabledProductsForImport.md)
 +  [ListFindingAggregators](API_ListFindingAggregators.md)
++  [ListFreeTrialStatusesV2](API_ListFreeTrialStatusesV2.md)
 +  [ListInvitations](API_ListInvitations.md)
 +  [ListMembers](API_ListMembers.md)
 +  [ListOrganizationAdminAccounts](API_ListOrganizationAdminAccounts.md)

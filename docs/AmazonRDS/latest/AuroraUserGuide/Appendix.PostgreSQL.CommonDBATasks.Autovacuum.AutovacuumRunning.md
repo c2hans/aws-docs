@@ -30,7 +30,7 @@ After running the query, you should see output similar to the following.
          |          |       |        |            |                         | ORDER BY xact_start;                                                                                  +
 ```
 
-Several issues can cause a long-running autovacuum session (that is, multiple days long). The most common issue is that your [https://www.postgresql.org/docs/current/static/runtime-config-resource.html#GUC-MAINTENANCE-WORK-MEM](https://www.postgresql.org/docs/current/static/runtime-config-resource.html#GUC-MAINTENANCE-WORK-MEM) parameter value is set too low for the size of the table or rate of updates.
+Several issues can cause a long-running autovacuum session (that is, multiple days long). The most common issue is that your [`maintenance_work_mem`](https://www.postgresql.org/docs/current/static/runtime-config-resource.html#GUC-MAINTENANCE-WORK-MEM) parameter value is set too low for the size of the table or rate of updates.
 
 We recommend that you use the following formula to set the `maintenance_work_mem` parameter value.
 

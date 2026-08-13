@@ -105,7 +105,7 @@ The table also provides the following information for each hyperparameter:
   <tr><th>Name</th><th>Description</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2">Featurization hyperparameters</td></tr>
-  <tr><td>action\_optimization\_period</td><td>The window of time Amazon Personalize uses when predicting the next best actions for a user. For example, the actions the user will most likely take in the next 14 days.<br />If you don’t have much action interaction data, specify a larger value. If you aren’t sure what value to specify, use the default.<br />Default value: 14<br />Range: [7, 28]<br />Value type: Integer<br />HPO tunable: No</td></tr>
+  <tr><td colspan="2"><b>Featurization hyperparameters</b></td></tr>
+  <tr><td><code>action_optimization_period</code></td><td>The window of time Amazon Personalize uses when predicting the next best actions for a user. For example, the actions the user will most likely take in the next 14 days.<br />If you don’t have much action interaction data, specify a larger value. If you aren’t sure what value to specify, use the default.<br />Default value: 14<br />Range: [7, 28]<br />Value type: Integer<br />HPO tunable: No</td></tr>
 </tbody>
 </table>

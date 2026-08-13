@@ -12,7 +12,7 @@ The official HashiCorp AWS provider supports AWS Service Catalog resources. You 
 + The Terraform user that authenticates the AWS account must have access to the AWS Service Catalog products. For more information, see [AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs) in the Terraform documentation.
 + The IAM user that authenticates the AWS account must have permissions to use the AWS Service Catalog products created by Launch Wizard. For steps to grant access to users, see [Granting Access to Users](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_portfolios_users.html) in the *AWS Service Catalog User Guide*.
 
-The Terraform resource named [https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/servicecatalog_provisioned_product](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/servicecatalog_provisioned_product) is used to launch the AWS Service Catalog product created with Launch Wizard.
+The Terraform resource named [`aws_servicecatalog_product`](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/servicecatalog_provisioned_product) is used to launch the AWS Service Catalog product created with Launch Wizard.
 
 **Example Terraform script**
 

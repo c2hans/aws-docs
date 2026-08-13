@@ -34,13 +34,13 @@ The following table shows a section of a correctly configured item metadata data
 
 <table>
 <thead>
-  <tr><th>item\_id</th><th>brand</th><th>model</th><th>color</th><th>waterproof</th></tr>
+  <tr><th><code>item_id</code></th><th><code>brand</code></th><th><code>model</code></th><th><code>color</code></th><th><code>waterproof</code></th></tr>
 </thead>
 <tbody>
   <tr><td>1</td><td>amazon</td><td>paperwhite</td><td>black</td><td>yes</td></tr>
   <tr><td>2</td><td>amazon</td><td>paperwhite</td><td>blue</td><td>yes</td></tr>
-  <tr><td>3</td><td>amazon</td><td>base\_model</td><td>black</td><td>no</td></tr>
-  <tr><td>4</td><td>amazon</td><td>base\_model</td><td>white</td><td>no</td></tr>
+  <tr><td>3</td><td>amazon</td><td>base_model</td><td>black</td><td>no</td></tr>
+  <tr><td>4</td><td>amazon</td><td>base_model</td><td>white</td><td>no</td></tr>
   <tr><td colspan="5">...</td></tr>
 </tbody>
 </table>

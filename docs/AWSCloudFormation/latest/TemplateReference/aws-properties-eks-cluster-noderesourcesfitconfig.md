@@ -1,0 +1,41 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-eks-cluster-noderesourcesfitconfig.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::EKS::Cluster NodeResourcesFitConfig
+<a name="aws-properties-eks-cluster-noderesourcesfitconfig"></a>
+
+The NodeResourcesFit plugin configuration for the Kubernetes scheduler.
+
+## Syntax
+<a name="aws-properties-eks-cluster-noderesourcesfitconfig-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-eks-cluster-noderesourcesfitconfig-syntax.json"></a>
+
+```
+{
+  "[ScoringStrategy](#cfn-eks-cluster-noderesourcesfitconfig-scoringstrategy)" : {{ScoringStrategy}}
+}
+```
+
+### YAML
+<a name="aws-properties-eks-cluster-noderesourcesfitconfig-syntax.yaml"></a>
+
+```
+  [ScoringStrategy](#cfn-eks-cluster-noderesourcesfitconfig-scoringstrategy): {{
+    ScoringStrategy}}
+```
+
+## Properties
+<a name="aws-properties-eks-cluster-noderesourcesfitconfig-properties"></a>
+
+`ScoringStrategy`  <a name="cfn-eks-cluster-noderesourcesfitconfig-scoringstrategy"></a>
+The scoring strategy used to rank nodes during scheduling.
+*Required*: No
+*Type*: [ScoringStrategy](aws-properties-eks-cluster-scoringstrategy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

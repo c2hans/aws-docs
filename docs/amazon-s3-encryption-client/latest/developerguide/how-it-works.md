@@ -21,7 +21,7 @@ The Amazon S3 Encryption Client works as an intermediary between you and Amazon 
 
 1. Specify your wrapping key and create a [keyring](concepts.md#keyring) when you instantiate your client.
 
-1. Encrypt your plaintext object by calling [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html).
+1. Encrypt your plaintext object by calling [`PutObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html).
 
    1. The Amazon S3 Encryption Client provides the encryption materials: one plaintext data key and one copy of that data key encrypted by your wrapping key.
 
@@ -29,7 +29,7 @@ The Amazon S3 Encryption Client works as an intermediary between you and Amazon 
 
    1. The Amazon S3 Encryption Client uploads the encrypted data key and the encrypted object to Amazon S3 as part of the `PutObject` call.
 
-1. Decrypt your encrypted object by calling [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html).
+1. Decrypt your encrypted object by calling [`GetObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html).
 
    1. The Amazon S3 Encryption Client uses your wrapping key to decrypt the encrypted data key.
 

@@ -22,7 +22,7 @@ To set up a method response, you must have created the method request.
 
 The status code of a method response defines a type of response. For example, responses of 200, 400, and 500 indicate successful, client-side error and server-side error responses, respectively.
 
-To set up a method response status code, set the [https://docs.aws.amazon.com/apigateway/latest/api/API_MethodResponse.html#statusCode](https://docs.aws.amazon.com/apigateway/latest/api/API_MethodResponse.html#statusCode) property to an HTTP status code. The following [put-method-response](https://docs.aws.amazon.com/cli/latest/reference/apigateway/put-method-response.html) command creates `200` method response.
+To set up a method response status code, set the [`statusCode`](https://docs.aws.amazon.com/apigateway/latest/api/API_MethodResponse.html#statusCode) property to an HTTP status code. The following [put-method-response](https://docs.aws.amazon.com/cli/latest/reference/apigateway/put-method-response.html) command creates `200` method response.
 
 ```
 aws apigateway put-method-response \
@@ -37,7 +37,7 @@ aws apigateway put-method-response \
 
 Method response parameters define which headers the client receives in response to the associated method request. Response parameters also specify a target to which API Gateway maps an integration response parameter, according to mappings prescribed in the API method's integration response.
 
-To set up the method response parameters, add to the [https://docs.aws.amazon.com/apigateway/latest/api/API_MethodResponse.html#responseParameters](https://docs.aws.amazon.com/apigateway/latest/api/API_MethodResponse.html#responseParameters) map of `MethodResponse` key-value pairs of the `"{parameter-name}":"{boolean}"` format. The following [put-method-response](https://docs.aws.amazon.com/cli/latest/reference/apigateway/put-method-response.html) command sets the `my-header` header.
+To set up the method response parameters, add to the [`responseParameters`](https://docs.aws.amazon.com/apigateway/latest/api/API_MethodResponse.html#responseParameters) map of `MethodResponse` key-value pairs of the `"{parameter-name}":"{boolean}"` format. The following [put-method-response](https://docs.aws.amazon.com/cli/latest/reference/apigateway/put-method-response.html) command sets the `my-header` header.
 
 ```
 aws apigateway put-method-response \
@@ -72,9 +72,9 @@ aws apigateway create-model \
               }'
 ```
 
-The result is created as an API Gateway [https://docs.aws.amazon.com/apigateway/latest/api/API_Model.html](https://docs.aws.amazon.com/apigateway/latest/api/API_Model.html) resource.
+The result is created as an API Gateway [`Model`](https://docs.aws.amazon.com/apigateway/latest/api/API_Model.html) resource.
 
-To set up the method response models to define the payload format, add the "application/json":"PetStorePet" key-value pair to the [https://docs.aws.amazon.com/apigateway/latest/api/API_MethodResponse.html#responseModels](https://docs.aws.amazon.com/apigateway/latest/api/API_MethodResponse.html#responseModels) map of [https://docs.aws.amazon.com/apigateway/latest/api/API_MethodResponse.html](https://docs.aws.amazon.com/apigateway/latest/api/API_MethodResponse.html) resource. The following [put-method-response](https://docs.aws.amazon.com/cli/latest/reference/apigateway/put-method-response.html) command creates a method response that uses a response model to define the payload format:
+To set up the method response models to define the payload format, add the "application/json":"PetStorePet" key-value pair to the [`requestModels`](https://docs.aws.amazon.com/apigateway/latest/api/API_MethodResponse.html#responseModels) map of [`MethodResponse`](https://docs.aws.amazon.com/apigateway/latest/api/API_MethodResponse.html) resource. The following [put-method-response](https://docs.aws.amazon.com/cli/latest/reference/apigateway/put-method-response.html) command creates a method response that uses a response model to define the payload format:
 
 ```
 aws apigateway put-method-response \

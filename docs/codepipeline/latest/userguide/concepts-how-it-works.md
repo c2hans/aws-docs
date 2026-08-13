@@ -79,7 +79,7 @@ When you choose to stop and wait, the selected execution continues until in-prog
 1. The execution stops when the stopping process is complete. If the build action is completed successfully, its status is **Succeeded**, and the pipeline execution shows a status of **Stopped**. Subsequent actions do not start. The **Retry** button is enabled.
 
    In the history view, the execution status is **Stopped** after the in-progress action is completed.
-![Image showing the the history view where the execution status is Stopped after the in-progress action is completed](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/stop-exec-wait-hist-1.png)
+![Image showing the history view where the execution status is Stopped after the in-progress action is completed](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/stop-exec-wait-hist-1.png)
 
 **Option 2: Stop and abandon**
 
@@ -90,7 +90,7 @@ When you choose to stop and abandon, the selected execution does not wait for in
 1. After the pipeline execution stops, the build action shows a status of **Abandoned**, and the pipeline execution shows a status of **Stopped**. Subsequent actions do not start. The **Retry** button is enabled.
 
 1. In the history view, the execution status is **Stopped**.
-![Image showing the the history view where the execution status is Stopped](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/stop-exec-abandon-hist-1.png)
+![Image showing the history view where the execution status is Stopped](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/stop-exec-abandon-hist-1.png)
 
 **Use cases for stopping a pipeline execution**
 
@@ -144,7 +144,7 @@ For more information about considerations for viewing and switching between exec
 ## How executions are processed in PARALLEL mode
 <a name="concepts-how-it-works-executions-parallel"></a>
 
-For pipelines in PARALLEL mode, executions are independent of one another and don’t wait for other executions to complete before starting. There are no queues. To view parallel executions in the pipeline, use the execution history view.
+For pipelines in PARALLEL mode, executions are independent of one another and don't wait for other executions to complete before starting. There are no queues. To view parallel executions in the pipeline, use the execution history view.
 
 Use PARALLEL mode in development environments where each feature has its own feature branch and deploys to targets that are not shared by other users.
 

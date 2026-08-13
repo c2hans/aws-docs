@@ -90,7 +90,7 @@ For an on-premises host, you will need to provide AWS authorization to your devi
 
    1. From the **Permissions policies** list, select the **CloudWatchAgentServerPolicy** policy to add to your user. Then choose **Next**.
 
-   1. On the **Review and create** page, ensure that you are satisfied with the user name and that the **CloudWatchAgentServerPolicy** policy is in the **Permissions summary**.
+   1. On the **Review and create** page, make sure that you are satisfied with the user name and that the **CloudWatchAgentServerPolicy** policy is in the **Permissions summary**.
 
    1. Choose **Create user**
 
@@ -245,7 +245,7 @@ If you're using a pre-fork server (WSGI or ASGI) such as Gunicorn, uWSGI, or Uvi
    ```
 
    Before you enable Application Signals for your Python applications, be aware of the following considerations.
-   + In some containerized applications, a missing `PYTHONPATH` environment variable can sometimes cause the application to fail to start. To resolve this, ensure that you set the `PYTHONPATH` environment variable to the location of your application's working directory. This is due to a known issue with OpenTelemetry auto-instrumentation. For more information about this issue, see [ Python autoinstrumentation setting of PYTHONPATH is not compliant](https://github.com/open-telemetry/opentelemetry-operator/issues/2302).
+   + In some containerized applications, a missing `PYTHONPATH` environment variable can sometimes cause the application to fail to start. To resolve this, make sure that you set the `PYTHONPATH` environment variable to the location of your application's working directory. This is due to a known issue with OpenTelemetry auto-instrumentation. For more information about this issue, see [ Python autoinstrumentation setting of PYTHONPATH is not compliant](https://github.com/open-telemetry/opentelemetry-operator/issues/2302).
    + For Django applications, there are additional required configurations, which are outlined in the [ OpenTelemetry Python documentation](https://opentelemetry-python.readthedocs.io/en/latest/examples/django/README.html).
      + Use the `--noreload` flag to prevent automatic reloading.
      + Set the `DJANGO_SETTINGS_MODULE` environment variable to the location of your Django application's `settings.py` file. This ensures that OpenTelemetry can correctly access and integrate with your Django settings.
@@ -528,4 +528,4 @@ For more information about configuring and using the CloudWatch Application Sign
 ## (Optional) Monitor your application health
 <a name="CloudWatch-Application-Signals-Monitor-EC2"></a>
 
-Once you have enabled your applications on Amazon EC2, you can monitor your application health. For more information, see [Monitor the operational health of your applications with Application Signals](Services.md).
+After you have enabled your applications on Amazon EC2, you can monitor your application health. For more information, see [Monitor the operational health of your applications with Application Signals](Services.md).

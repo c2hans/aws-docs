@@ -92,8 +92,8 @@ The `config.json` file supports the following properties:
 | <a name="shared-config-capath"></a>caPath | The path to the AWS IoT root CA relative to the `/{{greengrass-root}}/certs` directory. | For backward compatibility with versions earlier than 1.7.0. This property is ignored when the `crypto` object is present. Make sure that your [endpoints correspond to your certificate type](#certificate-endpoints).  |
 | <a name="shared-config-certpath"></a>certPath | The path to the core device certificate relative to the `/{{greengrass-root}}/certs` directory. | For backward compatibility with versions earlier than 1.7.0. This property is ignored when the crypto object is present. |
 | <a name="shared-config-keypath"></a>keyPath | The path to the core private key relative to /{{greengrass-root}}/certs directory. | For backward compatibility with versions earlier than 1.7.0. This property is ignored when the crypto object is present. |
-| <a name="shared-config-thingarn"></a>thingArn | The Amazon Resource Name (ARN) of the AWS IoT thing that represents the AWS IoT Greengrass core device. | Find the ARN for your core in the AWS IoT Greengrass console under Cores, or by running the [https://docs.aws.amazon.com/cli/latest/reference/greengrass/get-core-definition-version.html](https://docs.aws.amazon.com/cli/latest/reference/greengrass/get-core-definition-version.html) CLI command. |
-| <a name="shared-config-iothost-v1.9"></a>iotHost | Your AWS IoT endpoint. | Find the endpoint in the AWS IoT console under **Settings**, or by running the [https://docs.aws.amazon.com/cli/latest/reference/iot/describe-endpoint.html](https://docs.aws.amazon.com/cli/latest/reference/iot/describe-endpoint.html) CLI command.<br />This command returns the Amazon Trust Services (ATS) endpoint. For more information, see the [Server authentication](https://docs.aws.amazon.com/iot/latest/developerguide/server-authentication.html) documentation. Make sure that your [endpoints correspond to your certificate type](#certificate-endpoints). <br />Make sure that your [ endpoints correspond to your AWS Region](https://docs.aws.amazon.com/general/latest/gr/greengrass.html).   |
+| <a name="shared-config-thingarn"></a>thingArn | The Amazon Resource Name (ARN) of the AWS IoT thing that represents the AWS IoT Greengrass core device. | Find the ARN for your core in the AWS IoT Greengrass console under Cores, or by running the [`aws greengrass get-core-definition-version`](https://docs.aws.amazon.com/cli/latest/reference/greengrass/get-core-definition-version.html) CLI command. |
+| <a name="shared-config-iothost-v1.9"></a>iotHost | Your AWS IoT endpoint. | Find the endpoint in the AWS IoT console under **Settings**, or by running the [`aws iot describe-endpoint --endpoint-type iot:Data-ATS`](https://docs.aws.amazon.com/cli/latest/reference/iot/describe-endpoint.html) CLI command.<br />This command returns the Amazon Trust Services (ATS) endpoint. For more information, see the [Server authentication](https://docs.aws.amazon.com/iot/latest/developerguide/server-authentication.html) documentation. Make sure that your [endpoints correspond to your certificate type](#certificate-endpoints). <br />Make sure that your [ endpoints correspond to your AWS Region](https://docs.aws.amazon.com/general/latest/gr/greengrass.html).   |
 | <a name="shared-config-gghost-v1.9"></a>ggHost | Your AWS IoT Greengrass endpoint. | This is your `iotHost` endpoint with the host prefix replaced by *greengrass* (for example, `greengrass-ats.iot.{{region}}.amazonaws.com`). Use the same AWS Region as `iotHost`. Make sure that your [endpoints correspond to your certificate type](#certificate-endpoints). <br />Make sure that your [ endpoints correspond to your AWS Region](https://docs.aws.amazon.com/general/latest/gr/greengrass.html).   |
 | <a name="shared-config-iotmqttport"></a>iotMqttPort | Optional. The port number to use for MQTT communication with AWS IoT. | Valid values are 8883 or 443. The default value is 8883. For more information, see [Connect on port 443 or through a network proxy](#alpn-network-proxy). |
 | <a name="shared-config-iothttpport"></a>iotHttpPort | Optional. The port number used to create HTTPS connections to AWS IoT. | Valid values are 8443 or 443. The default value is 8443. For more information, see [Connect on port 443 or through a network proxy](#alpn-network-proxy). |
@@ -116,7 +116,7 @@ The `config.json` file supports the following properties:
 | postStartHealthCheckTimeout | Optional. The time (in milliseconds) after starting that the Greengrass daemon waits for the health check to finish. | The default timeout is 30 seconds (30000 ms). |
 | `cgroup` |
 | --- |
-| useSystemd | Indicates whether your device uses [https://en.wikipedia.org/wiki/Systemd](https://en.wikipedia.org/wiki/Systemd). | Valid values are yes or no. Run the check\_ggc\_dependencies script in [Module 1](module1.md) to see if your device uses systemd. |
+| useSystemd | Indicates whether your device uses [`systemd`](https://en.wikipedia.org/wiki/Systemd). | Valid values are yes or no. Run the check\_ggc\_dependencies script in [Module 1](module1.md) to see if your device uses systemd. |
 
 **crypto**
 
@@ -500,7 +500,7 @@ On a Greengrass core device, endpoints are specified in the `coreThing` object i
 ```
 
 **AWS IoT Core endpoint**
-You can get your AWS IoT Core endpoint by running the [https://docs.aws.amazon.com/cli/latest/reference/iot/describe-endpoint.html](https://docs.aws.amazon.com/cli/latest/reference/iot/describe-endpoint.html) CLI command with the appropriate `--endpoint-type` parameter.
+You can get your AWS IoT Core endpoint by running the [**aws iot describe-endpoint**](https://docs.aws.amazon.com/cli/latest/reference/iot/describe-endpoint.html) CLI command with the appropriate `--endpoint-type` parameter.
 + To return an ATS signed endpoint, run:
 
   ```
@@ -888,7 +888,7 @@ This feature is available for AWS IoT Greengrass Core v1.6 and later. Earlier ve
 
 You can configure AWS IoT Greengrass to cache messages to the file system so they persist across core restarts. To do this, you deploy a function definition version where the `GGCloudSpooler` function sets the storage type to `FileSystem`. You must use the AWS IoT Greengrass API to configure the local storage cache. You can't do this in the console.
 
-The following procedure uses the [https://docs.aws.amazon.com/cli/latest/reference/greengrass/create-function-definition-version.html](https://docs.aws.amazon.com/cli/latest/reference/greengrass/create-function-definition-version.html) CLI command to configure the spooler to save queued messages to the file system. It also configures a 2.6 MB queue size.
+The following procedure uses the [`create-function-definition-version`](https://docs.aws.amazon.com/cli/latest/reference/greengrass/create-function-definition-version.html) CLI command to configure the spooler to save queued messages to the file system. It also configures a 2.6 MB queue size.
 
 1. <a name="get-group-id-latestversion"></a>Get the IDs of the target Greengrass group and group version. This procedure assumes that this is the latest group and group version. The following query returns the most recently created group.
 
@@ -924,12 +924,12 @@ The following procedure uses the [https://docs.aws.amazon.com/cli/latest/referen
    arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/bcfc6b49-beb0-4396-b703-6dEXAMPLEcu5/versions/0f7337b4-922b-45c5-856f-1aEXAMPLEsf6
    ```
 **Note**
-Or, you can create a function definition by running the [https://docs.aws.amazon.com/cli/latest/reference/greengrass/create-function-definition.html](https://docs.aws.amazon.com/cli/latest/reference/greengrass/create-function-definition.html) command, and then copying the ID from the output.
+Or, you can create a function definition by running the [`create-function-definition`](https://docs.aws.amazon.com/cli/latest/reference/greengrass/create-function-definition.html) command, and then copying the ID from the output.
 
 1. Add a function definition version to the function definition.
    + Replace {{function-definition-id}} with the `Id` that you copied for the function definition.
    + Replace {{arbitrary-function-id}} with a name for the function, such as **spooler-function**.
-   + Add any Lambda functions that you want to include in this version to the `functions` array. You can use the [https://docs.aws.amazon.com/cli/latest/reference/greengrass/get-function-definition-version.html](https://docs.aws.amazon.com/cli/latest/reference/greengrass/get-function-definition-version.html) command to get the Greengrass Lambda functions from an existing function definition version.
+   + Add any Lambda functions that you want to include in this version to the `functions` array. You can use the [`get-function-definition-version`](https://docs.aws.amazon.com/cli/latest/reference/greengrass/get-function-definition-version.html) command to get the Greengrass Lambda functions from an existing function definition version.
 **Warning**
 Make sure that you specify a value for `GG_CONFIG_MAX_SIZE_BYTES` that's **greater than or equal to 262144**. A smaller size prevents the AWS IoT Greengrass Core software from starting.
 
@@ -1003,7 +1003,7 @@ You can use the [maxWorkItemCount](#config-json-runtime) configuration property 
 
 You can configure AWS IoT Greengrass to use persistent sessions with AWS IoT Core. To do this, you deploy a function definition version where the `GGCloudSpooler` function sets the subscription quality to `AtLeastOncePersistent`. This setting applies to all your subscriptions that have AWS IoT Core (`cloud`) as the source. You must use the AWS IoT Greengrass API to configure persistent sessions. You can't do this in the console.
 
-The following procedure uses the [https://docs.aws.amazon.com/cli/latest/reference/greengrass/create-function-definition-version.html](https://docs.aws.amazon.com/cli/latest/reference/greengrass/create-function-definition-version.html) CLI command to configure the spooler to use persistent sessions. In this procedure, we assume that you're updating the configuration of the latest group version of an existing group.
+The following procedure uses the [`create-function-definition-version`](https://docs.aws.amazon.com/cli/latest/reference/greengrass/create-function-definition-version.html) CLI command to configure the spooler to use persistent sessions. In this procedure, we assume that you're updating the configuration of the latest group version of an existing group.
 
 1. <a name="get-group-id-latestversion"></a>Get the IDs of the target Greengrass group and group version. This procedure assumes that this is the latest group and group version. The following query returns the most recently created group.
 
@@ -1039,12 +1039,12 @@ The following procedure uses the [https://docs.aws.amazon.com/cli/latest/referen
    arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/bcfc6b49-beb0-4396-b703-6dEXAMPLEcu5/versions/0f7337b4-922b-45c5-856f-1aEXAMPLEsf6
    ```
 **Note**
-Or, you can create a function definition by running the [https://docs.aws.amazon.com/cli/latest/reference/greengrass/create-function-definition.html](https://docs.aws.amazon.com/cli/latest/reference/greengrass/create-function-definition.html) command, and then copying the ID from the output.
+Or, you can create a function definition by running the [`create-function-definition`](https://docs.aws.amazon.com/cli/latest/reference/greengrass/create-function-definition.html) command, and then copying the ID from the output.
 
 1. Add a function definition version to the function definition.
    + Replace {{function-definition-id}} with the `Id` that you copied for the function definition.
    + Replace {{arbitrary-function-id}} with a name for the function, such as **spooler-function**.
-   + Add any Lambda functions that you want to include in this version to the `functions` array. You can use the [https://docs.aws.amazon.com/cli/latest/reference/greengrass/get-function-definition-version.html](https://docs.aws.amazon.com/cli/latest/reference/greengrass/get-function-definition-version.html) command to get the Greengrass Lambda functions from an existing function definition version.
+   + Add any Lambda functions that you want to include in this version to the `functions` array. You can use the [`get-function-definition-version`](https://docs.aws.amazon.com/cli/latest/reference/greengrass/get-function-definition-version.html) command to get the Greengrass Lambda functions from an existing function definition version.
 
    ```
    aws greengrass create-function-definition-version \
@@ -1279,9 +1279,9 @@ To manage automatic discovery with the AWS IoT Greengrass API, you must configur
    arn:aws:greengrass:{{region}}:{{account-id}}:/greengrass/groups/{{function-definition-id}}/versions/{{function-definition-version-id}}
    ```
 **Note**
-You can optionally create a function definition by running the [https://docs.aws.amazon.com/cli/latest/reference/greengrass/create-function-definition.html](https://docs.aws.amazon.com/cli/latest/reference/greengrass/create-function-definition.html) command, and then copy the ID from the output.
+You can optionally create a function definition by running the [`create-function-definition`](https://docs.aws.amazon.com/cli/latest/reference/greengrass/create-function-definition.html) command, and then copy the ID from the output.
 
-1.  Use the [https://docs.aws.amazon.com/cli/latest/reference/greengrass/get-function-definition-version.html](https://docs.aws.amazon.com/cli/latest/reference/greengrass/get-function-definition-version.html) command to get the current definition state. Use the {{function-definition-id}} you copied for the function definiton. For example, {{4d941bc7-92a1-4f45-8d64-EXAMPLEf76c3}}.
+1.  Use the [`get-function-definition-version`](https://docs.aws.amazon.com/cli/latest/reference/greengrass/get-function-definition-version.html) command to get the current definition state. Use the {{function-definition-id}} you copied for the function definiton. For example, {{4d941bc7-92a1-4f45-8d64-EXAMPLEf76c3}}.
 
    ```
    aws greengrass get-function-definition-version

@@ -20,7 +20,7 @@ Use the AWS Serverless Application Model Command Line Interface (AWS SAM CLI) w
 To install Rust, see [Install Rust](https://www.rust-lang.org/tools/install) in the *Rust language website*.
 
 **Cargo Lambda**
-The AWS SAM CLI requires installation of [https://www.cargo-lambda.info/guide/what-is-cargo-lambda.html](https://www.cargo-lambda.info/guide/what-is-cargo-lambda.html), a subcommand for Cargo. For installation instructions, see [Installation](https://www.cargo-lambda.info/guide/installation.html) in the *Cargo Lambda documentation*.
+The AWS SAM CLI requires installation of [Cargo Lambda](https://www.cargo-lambda.info/guide/what-is-cargo-lambda.html), a subcommand for Cargo. For installation instructions, see [Installation](https://www.cargo-lambda.info/guide/installation.html) in the *Cargo Lambda documentation*.
 
 **Docker**
 Building and testing Rust Lambda functions requires Docker. For installation instructions, see [Installing Docker](install-docker.md).

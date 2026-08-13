@@ -29,9 +29,9 @@ To view a history of how automation rules have changed your findings, see [Revie
 
 **To view automation rules (API)**
 
-1. To view the automation rules for your account, run [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListAutomationRules.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListAutomationRules.html) from the Security Hub CSPM administrator account. This API returns the rule ARNs and other metadata for your rules. No input parameters are required for this API, but you can optionally provide `MaxResults` to limit the number of results and `NextToken` as a pagination parameter. The initial value of `NextToken` should be `NULL`.
+1. To view the automation rules for your account, run [`ListAutomationRules`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListAutomationRules.html) from the Security Hub CSPM administrator account. This API returns the rule ARNs and other metadata for your rules. No input parameters are required for this API, but you can optionally provide `MaxResults` to limit the number of results and `NextToken` as a pagination parameter. The initial value of `NextToken` should be `NULL`.
 
-1. For additional rule details, including the criteria and actions for a rule, run [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchGetAutomationRules.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchGetAutomationRules.html) from the Security Hub CSPM administrator account. Provide the ARNs of the automation rules that you want details for.
+1. For additional rule details, including the criteria and actions for a rule, run [`BatchGetAutomationRules`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchGetAutomationRules.html) from the Security Hub CSPM administrator account. Provide the ARNs of the automation rules that you want details for.
 
    The following example retrieves details for the specified automation rules. This example is formatted for Linux, macOS, or Unix, and it uses the backslash (\\) line-continuation character to improve readability.
 

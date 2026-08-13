@@ -20,7 +20,7 @@ Video chapter summarization provides descriptive summaries for individual scenes
 ## IAB Taxonomy
 <a name="video-iab-classification"></a>
 
-The Interactive Advertising Bureau (IAB) classification applies a standard advertising taxonomy to classify video scenes based on visual and audio elements. For Preview, BDA will support 24 top-level (L1) categories and 85 second-level (L2) categories. To download the list of IAB categories supported by BDA, click [here](samples/iab-taxonomy.zip).
+The Interactive Advertising Bureau (IAB) classification applies a standard advertising taxonomy to classify video scenes based on visual and audio elements. For Preview, BDA will support 24 top-level (L1) categories and 85 second-level (L2) categories. To download the list of IAB categories supported by BDA, download the [IAB taxonomy (ZIP)](samples/iab-taxonomy.zip).
 
 ## Full Audio Transcript
 <a name="full-audio-transcript"></a>

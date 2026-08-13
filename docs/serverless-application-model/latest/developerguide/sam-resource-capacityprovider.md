@@ -92,14 +92,14 @@ The ARN of the AWS KMS key used to encrypt data at rest and in transit for the c
 
 When the logical ID of this resource is provided to the `Ref` intrinsic function, it returns the name of the capacity provider.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html) in the *AWS CloudFormation User Guide*.
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html) in the *AWS CloudFormation User Guide*.
 
 ### Fn::GetAtt
 <a name="sam-resource-capacityprovider-return-values-fn--getatt"></a>
 
 `Fn::GetAtt` returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using `Fn::GetAtt`, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html) in the *AWS CloudFormation User Guide*.
+For more information about using `Fn::GetAtt`, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html) in the *AWS CloudFormation User Guide*.
 
 `Arn`  <a name="Arn-fn::getatt"></a>
 The ARN of the capacity provider.

@@ -204,11 +204,11 @@ If the instance you want to connect to is running a game build with server SDK v
      $ chmod 400 MyPrivateKey.pem
      ```
 
-1. **Open a port for the remote connection.** You can access instances in Amazon GameLift Servers fleets through any port authorized in the fleet configuration. You can view a fleet's port settings using the command [https://docs.aws.amazon.com/cli/latest/reference/gamelift/describe-fleet-port-settings.html](https://docs.aws.amazon.com/cli/latest/reference/gamelift/describe-fleet-port-settings.html).
+1. **Open a port for the remote connection.** You can access instances in Amazon GameLift Servers fleets through any port authorized in the fleet configuration. You can view a fleet's port settings using the command [`describe-fleet-port-settings`](https://docs.aws.amazon.com/cli/latest/reference/gamelift/describe-fleet-port-settings.html).
 
    As a best practice, we recommend opening ports for remote access only when you need them and closing them when you're finished. You can't update port settings after creating a fleet but before it's active. If you get stuck, re-create the fleet with the port settings open.
 
-   Use the command [https://docs.aws.amazon.com/cli/latest/reference/gamelift/update-fleet-port-settings.html](https://docs.aws.amazon.com/cli/latest/reference/gamelift/update-fleet-port-settings.html) to add a port setting for the remote connection (such as `22` for SSH or `3389` for RDP). For the IP range value, specify the IP addresses for the devices you plan to use to connect (converted to CIDR format). Example:
+   Use the command [`update-fleet-port-settings`](https://docs.aws.amazon.com/cli/latest/reference/gamelift/update-fleet-port-settings.html) to add a port setting for the remote connection (such as `22` for SSH or `3389` for RDP). For the IP range value, specify the IP addresses for the devices you plan to use to connect (converted to CIDR format). Example:
 
    ```
    $ AWS gamelift update-fleet-port-settings

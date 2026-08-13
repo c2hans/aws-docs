@@ -12,7 +12,7 @@ The following examples show you how to find your RAG evaluation jobs using the A
 ------
 #### [ Amazon Bedrock console ]
 
-1. Open the Amazon Bedrock console: [https://console.aws.amazon.com/bedrock/home](https://console.aws.amazon.com/bedrock/home)
+1. Open the Amazon Bedrock console: [[https://console.aws.amazon.com/bedrock/](https://console.aws.amazon.com/bedrock/)](https://console.aws.amazon.com/bedrock/home)
 
 1. In the navigation pane, under **Inference and assessment**, choose **Evaluations**.
 

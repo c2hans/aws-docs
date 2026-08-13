@@ -17,7 +17,7 @@ You can access AWS-managed component logs from EKS Auto Mode to gain deeper obse
 
 Logs can be delivered to a [delivery destination](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html) of your choice.
 
-When you create an EKS Auto cluster, you have the option to enable control plane logging (API server, Audit, Authenticator, Controller manager, Scheduler). EKS Auto managed component logs (such as Compute, Block storage, Load balancing, and IPAM) require separate configuration through log delivery.
+When you create an EKS Auto Mode cluster, you have the option to enable control plane logging (API server, Audit, Authenticator, Controller manager, Scheduler). EKS Auto managed component logs (such as Compute, Block storage, Load balancing, and IPAM) require separate configuration through log delivery.
 
 ## Setting up log delivery
 <a name="_setting_up_log_delivery"></a>

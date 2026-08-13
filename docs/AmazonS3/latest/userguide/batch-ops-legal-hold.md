@@ -13,7 +13,7 @@ S3 Batch Operations verifies that Object Lock is enabled on your S3 bucket befor
 
 When you create an S3 Batch Operations job to remove a legal hold, you only need to specify `Off` as the legal hold status. For more information, see [Object Lock considerations](object-lock-managing.md).
 
-For information about how to use this operation with the Amazon S3 REST API, see `S3PutObjectLegalHold` in the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateJob.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateJob.html) operation in the *Amazon Simple Storage Service API Reference*.
+For information about how to use this operation with the Amazon S3 REST API, see `S3PutObjectLegalHold` in the [CreateJob](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateJob.html) operation in the *Amazon Simple Storage Service API Reference*.
 
 For an example of using this operation, see [Using the AWS SDK for Java](batch-ops-legal-hold-off.md#batch-ops-examples-java-object-lock-legalhold).
 

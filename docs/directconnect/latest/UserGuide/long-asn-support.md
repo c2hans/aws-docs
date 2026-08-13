@@ -9,7 +9,7 @@ Support for long ASNs (4-byte) allows you to configure long Autonomous System Nu
 
 You can set an ASN or Long ASN range on either the console or through the APIs.
 + When using the console, the **ASN** field supports both ASNs and long ASNs. You can add any range from 1 to 4294967294.
-+ When using the APIs to create a virtual interface, you can specify either an ASN (`asn`) or the Long ASN (`asnLong`) but not both. For more information on using ASN or Long ASN, see the following APIs in the [https://docs.aws.amazon.com/directconnect/latest/APIReference/Welcome.html](https://docs.aws.amazon.com/directconnect/latest/APIReference/Welcome.html):
++ When using the APIs to create a virtual interface, you can specify either an ASN (`asn`) or the Long ASN (`asnLong`) but not both. For more information on using ASN or Long ASN, see the following APIs in the [*Direct Connect API Reference*](https://docs.aws.amazon.com/directconnect/latest/APIReference/Welcome.html):
   + `BGPPeer`
   + `DeleteBGPPeerRequest`
   + `NewBGPPeer`

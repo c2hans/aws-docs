@@ -29,7 +29,7 @@ The following steps show the general process for promoting a Oracle replica to a
 
 1. Wait for RDS Custom for Oracle to apply all updates to your Oracle replica.
 
-1. Promote your Oracle replica by choosing the **Promote** option on the Amazon RDS console, the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/promote-read-replica.html](https://docs.aws.amazon.com/cli/latest/reference/rds/promote-read-replica.html), or the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_PromoteReadReplica.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_PromoteReadReplica.html) Amazon RDS API operation.
+1. Promote your Oracle replica by choosing the **Promote** option on the Amazon RDS console, the AWS CLI command [`promote-read-replica`](https://docs.aws.amazon.com/cli/latest/reference/rds/promote-read-replica.html), or the [`PromoteReadReplica`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_PromoteReadReplica.html) Amazon RDS API operation.
 
 Promoting a Oracle replica takes a few minutes to complete. During the process, RDS Custom for Oracle stops replication and reboots your replica. When the reboot completes, the Oracle replica is available as a standalone DB instance. For information about troubleshooting replica promotion, see [Troubleshooting replica promotion for RDS Custom for Oracle](custom-troubleshooting.md#custom-troubleshooting-promote).
 
@@ -55,7 +55,7 @@ Promoting a Oracle replica takes a few minutes to complete. During the process, 
 ## AWS CLI
 <a name="USER_ReadRepl.Promote.CLI"></a>
 
-To promote your RDS Custom for Oracle replica to a standalone DB instance, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/promote-read-replica.html](https://docs.aws.amazon.com/cli/latest/reference/rds/promote-read-replica.html) command.
+To promote your RDS Custom for Oracle replica to a standalone DB instance, use the AWS CLI [`promote-read-replica`](https://docs.aws.amazon.com/cli/latest/reference/rds/promote-read-replica.html) command.
 
 **Example**
 For Linux, macOS, or Unix:
@@ -78,4 +78,4 @@ aws rds promote-read-replica ^
 ## RDS API
 <a name="USER_ReadRepl.Promote.API"></a>
 
-To promote your RDS Custom for Oracle replica to be a standalone DB instance, call the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_PromoteReadReplica.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_PromoteReadReplica.html) operation with the required parameter `DBInstanceIdentifier`.
+To promote your RDS Custom for Oracle replica to be a standalone DB instance, call the Amazon RDS API [`PromoteReadReplica`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_PromoteReadReplica.html) operation with the required parameter `DBInstanceIdentifier`.

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Scheduler::Schedule KinesisParameters
 <a name="aws-properties-scheduler-schedule-kinesisparameters"></a>
 
-The templated target type for the Amazon Kinesis [https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecord.html](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecord.html) API operation.
+The templated target type for the Amazon Kinesis [`PutRecord`](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecord.html) API operation.
 
 ## Syntax
 <a name="aws-properties-scheduler-schedule-kinesisparameters-syntax"></a>

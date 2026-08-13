@@ -23,12 +23,12 @@ The following Map Rendering SDKs are available for web frontend application deve
   <tr><th>Language / Framework</th><th>Map Rendering Framework</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2">**Fully supported**</td></tr>
-  <tr><td>JavaScript</td><td>[https://github.com/maplibre/maplibre-gl-js](https://github.com/maplibre/maplibre-gl-js)</td></tr>
-  <tr><td>ReactJS</td><td>[https://github.com/maplibre/maplibre-react-native](https://github.com/maplibre/maplibre-react-native)</td></tr>
-  <tr><td>TypeScript</td><td>[https://github.com/maplibre/maplibre-gl-js](https://github.com/maplibre/maplibre-gl-js)</td></tr>
-  <tr><td colspan="2">**Partially supported**</td></tr>
-  <tr><td>Flutter</td><td>[https://github.com/maplibre/flutter-maplibre-gl](https://github.com/maplibre/flutter-maplibre-gl)<br />The MapLibre Flutter library is considered experimental.</td></tr>
+  <tr><td colspan="2"><b>Fully supported</b></td></tr>
+  <tr><td>JavaScript</td><td><a href="https://github.com/maplibre/maplibre-gl-js">https://github.com/maplibre/maplibre-gl-js</a></td></tr>
+  <tr><td>ReactJS</td><td><a href="https://github.com/maplibre/maplibre-react-native">https://github.com/maplibre/maplibre-react-native</a></td></tr>
+  <tr><td>TypeScript</td><td><a href="https://github.com/maplibre/maplibre-gl-js">https://github.com/maplibre/maplibre-gl-js</a></td></tr>
+  <tr><td colspan="2"><b>Partially supported</b></td></tr>
+  <tr><td>Flutter</td><td><a href="https://github.com/maplibre/flutter-maplibre-gl">https://github.com/maplibre/flutter-maplibre-gl</a><br />The MapLibre Flutter library is considered experimental.</td></tr>
   <tr><td>Node.js</td><td> There is no MapLibre support for Node.js.</td></tr>
   <tr><td>PHP</td><td> There is no MapLibre support for PHP.</td></tr>
 </tbody>
@@ -44,14 +44,14 @@ The following Map Rendering SDKs are available for mobile frontend application d
   <tr><th>Language / Framework</th><th>Map Rendering Framework</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2">**Fully supported**</td></tr>
-  <tr><td>Java</td><td>[https://github.com/maplibre/maplibre-native](https://github.com/maplibre/maplibre-native)</td></tr>
-  <tr><td>Kotlin</td><td>[https://github.com/maplibre/maplibre-native](https://github.com/maplibre/maplibre-native)<br />Requires custom bindings, as MapLibre is Java-based.</td></tr>
-  <tr><td>ObjectiveC</td><td>[https://github.com/maplibre/maplibre-native](https://github.com/maplibre/maplibre-native)</td></tr>
-  <tr><td>ReactNative</td><td>[https://github.com/maplibre/maplibre-react-native](https://github.com/maplibre/maplibre-react-native)</td></tr>
-  <tr><td>Swift</td><td>[https://github.com/maplibre/maplibre-native](https://github.com/maplibre/maplibre-native)</td></tr>
-  <tr><td colspan="2">**Partially supported**</td></tr>
-  <tr><td>Flutter</td><td>[https://github.com/maplibre/flutter-maplibre-gl](https://github.com/maplibre/flutter-maplibre-gl)<br />The MapLibre Flutter library is considered experimental.</td></tr>
+  <tr><td colspan="2"><b>Fully supported</b></td></tr>
+  <tr><td>Java</td><td><a href="https://github.com/maplibre/maplibre-native">https://github.com/maplibre/maplibre-native</a></td></tr>
+  <tr><td>Kotlin</td><td><a href="https://github.com/maplibre/maplibre-native">https://github.com/maplibre/maplibre-native</a><br />Requires custom bindings, as MapLibre is Java-based.</td></tr>
+  <tr><td>ObjectiveC</td><td><a href="https://github.com/maplibre/maplibre-native">https://github.com/maplibre/maplibre-native</a></td></tr>
+  <tr><td>ReactNative</td><td><a href="https://github.com/maplibre/maplibre-react-native">https://github.com/maplibre/maplibre-react-native</a></td></tr>
+  <tr><td>Swift</td><td><a href="https://github.com/maplibre/maplibre-native">https://github.com/maplibre/maplibre-native</a></td></tr>
+  <tr><td colspan="2"><b>Partially supported</b></td></tr>
+  <tr><td>Flutter</td><td><a href="https://github.com/maplibre/flutter-maplibre-gl">https://github.com/maplibre/flutter-maplibre-gl</a><br />The MapLibre Flutter library is considered experimental.</td></tr>
 </tbody>
 </table>
 

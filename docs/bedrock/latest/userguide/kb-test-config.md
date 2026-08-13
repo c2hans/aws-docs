@@ -30,7 +30,7 @@ Follow the console steps at [Query a knowledge base and retrieve data](kb-test-r
 ------
 #### [ API ]
 
-When you make a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) or [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request, include a `retrievalConfiguration` field, mapped to a [KnowledgeBaseRetrievalConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseRetrievalConfiguration.html) object. To see the location of this field, refer to the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) and [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request bodies in the API reference.
+When you make a [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) or [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request, include a `retrievalConfiguration` field, mapped to a [KnowledgeBaseRetrievalConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseRetrievalConfiguration.html) object. To see the location of this field, refer to the [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) and [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request bodies in the API reference.
 
 The following JSON object shows the minimal fields required in the [KnowledgeBaseRetrievalConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseRetrievalConfiguration.html) object to set the maximum number of results to return:
 
@@ -67,7 +67,7 @@ Follow the console steps at [Query a knowledge base and retrieve data](kb-test-r
 ------
 #### [ API ]
 
-When you make a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) or [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request, include a `retrievalConfiguration` field, mapped to a [KnowledgeBaseRetrievalConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseRetrievalConfiguration.html) object. To see the location of this field, refer to the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) and [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request bodies in the API reference.
+When you make a [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) or [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request, include a `retrievalConfiguration` field, mapped to a [KnowledgeBaseRetrievalConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseRetrievalConfiguration.html) object. To see the location of this field, refer to the [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) and [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request bodies in the API reference.
 
 The following JSON object shows the minimal fields required in the [KnowledgeBaseRetrievalConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseRetrievalConfiguration.html) object to set search type configurations:
 
@@ -97,7 +97,7 @@ Follow the console steps at [Query a knowledge base and generate responses based
 ------
 #### [ API ]
 
-To stream responses, use the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerateStream.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerateStream.html) API. For more details about filling out the fields, see the **API** tab at [Query a knowledge base and generate responses based off the retrieved data](kb-test-retrieve-generate.md).
+To stream responses, use the [RetrieveAndGenerateStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerateStream.html) API. For more details about filling out the fields, see the **API** tab at [Query a knowledge base and generate responses based off the retrieved data](kb-test-retrieve-generate.md).
 
 ------
 
@@ -185,7 +185,7 @@ The following image shows an example filter configuration that returns all docum
 ------
 #### [ API ]
 
-When you make a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) or [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request, include a `retrievalConfiguration` field, mapped to a [KnowledgeBaseRetrievalConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseRetrievalConfiguration.html) object. To see the location of this field, refer to the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) and [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request bodies in the API reference.
+When you make a [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) or [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request, include a `retrievalConfiguration` field, mapped to a [KnowledgeBaseRetrievalConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseRetrievalConfiguration.html) object. To see the location of this field, refer to the [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) and [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request bodies in the API reference.
 
 The following JSON objects show the minimal fields required in the [KnowledgeBaseRetrievalConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseRetrievalConfiguration.html) object to set filters for different use cases:
 
@@ -326,7 +326,7 @@ Amazon Bedrock Knowledge Base generates and applies a retrieval filter based on 
 **Note**
 Implicit metadata filtering is supported by Anthropic Claude models. For more information about supported models, see [models at a glance](model-cards.md).
 
-The `implicitFilterConfiguration` is specified in the `vectorSearchConfiguration` of the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) request body. Include the following fields:
+The `implicitFilterConfiguration` is specified in the `vectorSearchConfiguration` of the [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) request body. Include the following fields:
 + `metadataAttributes` – In this array, provide schemas describing metadata attributes that the model will generate a filter for.
 + `modelArn` – The ARN of the model to use.
 
@@ -388,7 +388,7 @@ Follow the console steps at [Query a knowledge base and retrieve data](kb-test-r
 ------
 #### [ API ]
 
-When you make a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request, include the `guardrailConfiguration` field within the `generationConfiguration` to use your guardrail with the request. To see the location of this field, refer to the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request body in the API reference.
+When you make a [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request, include the `guardrailConfiguration` field within the `generationConfiguration` to use your guardrail with the request. To see the location of this field, refer to the [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request body in the API reference.
 
 The following JSON object shows the minimal fields required in the [GenerationConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GenerationConfiguration.html) to set the `guardrailConfiguration`:
 
@@ -470,7 +470,7 @@ To learn how to modify the inference parameters, choose the tab for your preferr
 ------
 #### [ API ]
 
-You provide the model parameters in the call to the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) API. You can customize the model by providing inference parameters in the `inferenceConfig` field of either the `knowledgeBaseConfiguration` (if you query a knowledge base) or the `externalSourcesConfiguration` (if you [chat with your document](knowledge-base-chatdoc.md)).
+You provide the model parameters in the call to the [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) API. You can customize the model by providing inference parameters in the `inferenceConfig` field of either the `knowledgeBaseConfiguration` (if you query a knowledge base) or the `externalSourcesConfiguration` (if you [chat with your document](knowledge-base-chatdoc.md)).
 
 Within the `inferenceConfig` field is a `textInferenceConfig` field that contains the following parameters that you can:
 + temperature
@@ -486,7 +486,7 @@ You can customize the model by using the following parameters in the `inferenceC
 
 For a detailed explanation of the function of each of these parameters, see [Influence response generation with inference parameters](inference-parameters.md).
 
-Additionally, you can provide custom parameters not supported by `textInferenceConfig` via the `additionalModelRequestFields` map. You can provide parameters unique to specific models with this argument, for the unique parameters see [Inference request parameters and response fields for foundation models](model-parameters.md).
+Additionally, you can provide custom parameters not supported by `textInferenceConfig` through the `additionalModelRequestFields` map. You can provide parameters unique to specific models with this argument, for the unique parameters see [Inference request parameters and response fields for foundation models](model-parameters.md).
 
 If a parameter is omitted from `textInferenceConfig`, a default value will be used. Any parameters not recognized in `textInferneceConfig` will be ignored, while any parameters not recognized in `AdditionalModelRequestFields` will cause an exception.
 
@@ -546,7 +546,7 @@ Follow the console steps at [Query a knowledge base and retrieve data](kb-test-r
 ------
 #### [ API ]
 
-When you make a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request, include a `generationConfiguration` field, mapped to a [GenerationConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GenerationConfiguration.html) object. To see the location of this field, refer to the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request body in the API reference.
+When you make a [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request, include a `generationConfiguration` field, mapped to a [GenerationConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GenerationConfiguration.html) object. To see the location of this field, refer to the [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) request body in the API reference.
 
 The following JSON object shows the minimal fields required in the [GenerationConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GenerationConfiguration.html) object to set the maximum number of retrieved results to return:
 

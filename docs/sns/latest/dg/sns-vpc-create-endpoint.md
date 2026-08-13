@@ -22,7 +22,7 @@ When you create an endpoint, specify Amazon SNS as the service that you want you
 When you configure Amazon SNS to send messages from Amazon VPC, you must enable private DNS and specify endpoints in the format `sns.{{us-east-2}}.amazonaws.com`.
 Private DNS doesn't support legacy endpoints such as `queue.amazonaws.com` or `{{us-east-2}}.queue.amazonaws.com`.
 
-For information about creating and configuring an endpoint using AWS CloudFormation, see the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html) resource in the *AWS CloudFormation User Guide*.
+For information about creating and configuring an endpoint using AWS CloudFormation, see the [`AWS::EC2::VPCEndpoint`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html) resource in the *AWS CloudFormation User Guide*.
 
 ## Testing the connection between your VPC and Amazon SNS
 <a name="sns-vpc-publish"></a>
@@ -41,7 +41,7 @@ After you create an endpoint for Amazon SNS, you can publish messages from your 
    + *ec2-key-pair.pem* is the file that contains the key pair that Amazon EC2 provided when you created the instance.
    + *instance-hostname* is the public hostname of the instance. To get the hostname in the [Amazon EC2 console](https://console.aws.amazon.com/ec2): Choose **Instances**, choose your instance, and find the value for **Public DNS**.
 
-1. From your instance, use the Amazon SNS [https://docs.aws.amazon.com/cli/latest/reference/sns/publish.html](https://docs.aws.amazon.com/cli/latest/reference/sns/publish.html) command with the AWS CLI. You can send a simple message to a topic with the following command:
+1. From your instance, use the Amazon SNS [`publish`](https://docs.aws.amazon.com/cli/latest/reference/sns/publish.html) command with the AWS CLI. You can send a simple message to a topic with the following command:
 
    ```
    $ aws sns publish --region {{aws-region}} --topic-arn {{sns-topic-arn}} --message "Hello"

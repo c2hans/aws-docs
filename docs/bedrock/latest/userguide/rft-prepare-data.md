@@ -85,7 +85,7 @@ You can use customer-side stored Invoke/Converse API invocation logs from Amazon
 
 To use invocation logs for reinforcement fine-tuning, set the model invocation logging on, use one of the model invocation operations, and make sure that you've set up an Amazon S3 bucket as the destination for the logs. For more information about setting up the invocation logs, see [Monitor model invocation using CloudWatch Logs and Amazon S3](https://docs.aws.amazon.com/bedrock/latest/userguide/model-invocation-logging.html).
 
-Before you can start the reinforcement fine-tuning job with invocation logs from an S3 bucket as input, you must provide Amazon Bedrock permissions to access the logs from an S3 Bucket. For more information, see [Model customization access and security](custom-model-job-access-security.md).
+Before you start the reinforcement fine-tuning job with invocation logs from an S3 bucket as input, provide Amazon Bedrock permissions to access the logs. For more information, see [Model customization access and security](custom-model-job-access-security.md).
 
 You can optionally add request metadata to the prompt-response pairs in the invocation log using one of the model invocation operations and then later use it to filter the logs. Amazon Bedrock can use the filtered logs to fine-tune the model.
 

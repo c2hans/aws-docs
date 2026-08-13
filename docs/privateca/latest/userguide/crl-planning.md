@@ -101,9 +101,9 @@ When you configure CRLs as the certificate revocation method, AWS Private CA cre
   <tr><th>PCA</th><th>S3</th><th>Service principal</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2">Both in same Region</td><td>`acm-pca.amazonaws.com`</td></tr>
-  <tr><td>Enabled</td><td>Enabled</td><td>`acm-pca.amazonaws.com`</td></tr>
-  <tr><td>Disabled</td><td>Enabled</td><td>`acm-pca.{{Region}}.amazonaws.com`</td></tr>
+  <tr><td colspan="2">Both in same Region</td><td><code>acm-pca.amazonaws.com</code></td></tr>
+  <tr><td>Enabled</td><td>Enabled</td><td><code>acm-pca.amazonaws.com</code></td></tr>
+  <tr><td>Disabled</td><td>Enabled</td><td><code>acm-pca.Region.amazonaws.com</code></td></tr>
   <tr><td>Enabled</td><td>Disabled</td><td>Not supported</td></tr>
 </tbody>
 </table>

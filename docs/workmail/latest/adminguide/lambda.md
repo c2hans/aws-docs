@@ -19,7 +19,7 @@ Email messages that match the flow rule are passed to a Lambda function for proc
 
 Whether you choose a synchronous or asynchronous configuration, the event object passed to your Lambda function contains metadata for the inbound or outbound email event. You can also use the message ID in the metadata to access the full content of the email message. For more information, see [Retrieving message content with AWS Lambda](lambda-content.md). For more information about email events, see [Lambda event data](#lambda-data).
 
-For more information about inbound and outbound email flow rules, see [Managing email flows](email-flows.md). For more information about Lambda, see the [https://docs.aws.amazon.com/lambda/latest/dg/welcome.html](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html).
+For more information about inbound and outbound email flow rules, see [Managing email flows](email-flows.md). For more information about Lambda, see the [*AWS Lambda Developer Guide*](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html).
 
 **Note**
 Currently, Lambda email flow rules reference only Lambda functions in the same AWS Region and AWS account as the Amazon WorkMail organization being configured.
@@ -43,7 +43,7 @@ aws --region {{REGION}} lambda add-permission --function-name {{MY_FUNCTION_NAME
 --source-arn arn:aws:workmail:{{REGION:AWS_ACCOUNT_ID}}:organization/{{WORKMAIL_ORGANIZATION_ID}}
 ```
 
-For more information about using the AWS CLI, see the [https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html).
+For more information about using the AWS CLI, see the [*AWS Command Line Interface User Guide*](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html).
 
 ## Configuring synchronous **Run Lambda** rules
 <a name="synchronous-rules"></a>

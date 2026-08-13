@@ -101,7 +101,7 @@ Whether the invoice unit based tax inheritance is/ should be enabled or disabled
 ### Ref
 <a name="aws-resource-invoicing-invoiceunit-return-values-ref"></a>
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-invoicing-invoiceunit-return-values-fn--getatt"></a>

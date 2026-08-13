@@ -65,7 +65,7 @@ If you use [Rule-based redaction for screen recordings](rule-based-redaction-scr
 ### The redacted recording is missing
 <a name="troubleshoot-redacted-recording-missing"></a>
 
-The redacted recording is produced after the contact ends and after the unredacted recording is finalized. It can take longer than the unredacted version to appear, especially when Contact Lens call recording redaction is also enabled, because the redacted audio must be available before the redacted video is stitched. Allow extra time before treating it as missing.
+The redacted recording is produced after the contact ends and after the unredacted recording is finalized. It can take longer than the unredacted version to appear, especially when conversational analytics call recording redaction is also enabled, because the redacted audio must be available before the redacted video is stitched. Allow extra time before treating it as missing.
 
 If the redacted recording still has not appeared after a reasonable wait, check the following.
 + Confirm that screen recording was enabled for the contact by checking the contact record.
@@ -76,8 +76,8 @@ If the redacted recording still has not appeared after a reasonable wait, check 
 ### The redacted recording has no audio
 <a name="troubleshoot-redacted-recording-no-audio"></a>
 
-When rule-based redaction is enabled for a contact, Connect Customer stitches the redacted video with the redacted call recording only if Contact Lens call recording redaction is also enabled for the contact. If Contact Lens call recording redaction is not enabled, the redacted recording is produced with no audio. This prevents the original audio from being exposed alongside a redacted video and is by design.
-+ To produce a redacted recording that includes redacted audio, enable Contact Lens call recording redaction for the contact in addition to rule-based screen redaction. See [Use sensitive data redaction with Contact Lens](https://docs.aws.amazon.com/connect/latest/adminguide/sensitive-data-redaction.html).
+When rule-based redaction is enabled for a contact, Connect Customer stitches the redacted video with the redacted call recording only if conversational analytics call recording redaction is also enabled for the contact. If conversational analytics call recording redaction is not enabled, the redacted recording is produced with no audio. This prevents the original audio from being exposed alongside a redacted video and is by design.
++ To produce a redacted recording that includes redacted audio, enable conversational analytics call recording redaction for the contact in addition to rule-based screen redaction. See [Use sensitive data redaction with conversational analytics](https://docs.aws.amazon.com/connect/latest/adminguide/sensitive-data-redaction.html).
 + If a user needs to review the original audio, remove the **Screen recording (redacted) - Access** permission and grant them the **Screen recording - Access** permission so they can play the unredacted recording, which preserves the original audio.
 
 ### The redaction overlay appears in the wrong position

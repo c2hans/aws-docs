@@ -29,7 +29,7 @@ Choose your preferred method, and follow the steps to view your configuration po
 ------
 #### [ Security Hub CSPM API ]
 
-To view a summary list of all your configuration policies, use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListConfigurationPolicies.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListConfigurationPolicies.html) operation of the Security Hub CSPM API. If you use the AWS CLI, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-configuration-policies.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-configuration-policies.html) command. The delegated Security Hub CSPM administrator account should invoke the operation in the home Region.
+To view a summary list of all your configuration policies, use the [ListConfigurationPolicies](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListConfigurationPolicies.html) operation of the Security Hub CSPM API. If you use the AWS CLI, run the [list-configuration-policies](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-configuration-policies.html) command. The delegated Security Hub CSPM administrator account should invoke the operation in the home Region.
 
 ```
 $ aws securityhub list-configuration-policies \
@@ -37,21 +37,21 @@ $ aws securityhub list-configuration-policies \
 --starting-token {{U2FsdGVkX19nUI2zoh+Pou9YyutlYJHWpn9xnG4hqSOhvw3o2JqjI23QDxdf}}
 ```
 
-To view details about a specific configuration policy, use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetConfigurationPolicy.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetConfigurationPolicy.html) operation. If you use the AWS CLI, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-configuration-policy.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-configuration-policy.html). The delegated administrator account should invoke the operation in the home Region. Provide the Amazon Resource Name (ARN) or ID of the configuration policy whose details you want to see.
+To view details about a specific configuration policy, use the [GetConfigurationPolicy](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetConfigurationPolicy.html) operation. If you use the AWS CLI, run the [get-configuration-policy](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-configuration-policy.html). The delegated administrator account should invoke the operation in the home Region. Provide the Amazon Resource Name (ARN) or ID of the configuration policy whose details you want to see.
 
 ```
 $ aws securityhub get-configuration-policy \
 --identifier "{{arn:aws:securityhub:us-east-1:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}"
 ```
 
-To view a summary list of all your configuration policies and their account associations, use the use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListConfigurationPolicyAssociations.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListConfigurationPolicyAssociations.html) operation. If you use the AWS CLI, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-configuration-policy-associations.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-configuration-policy-associations.html) command. The delegated administrator account should invoke the operation in the home Region. Optionally, you can provide pagination parameters or filter the results by a specific policy ID, association type, or association status.
+To view a summary list of all your configuration policies and their account associations, use the use the [ListConfigurationPolicyAssociations](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListConfigurationPolicyAssociations.html) operation. If you use the AWS CLI, run the [list-configuration-policy-associations](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-configuration-policy-associations.html) command. The delegated administrator account should invoke the operation in the home Region. Optionally, you can provide pagination parameters or filter the results by a specific policy ID, association type, or association status.
 
 ```
 $ aws securityhub list-configuration-policy-associations \
 --filters '{"AssociationType": "{{APPLIED}}"}'
 ```
 
-To view associations for a specific account, use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetConfigurationPolicyAssociation.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetConfigurationPolicyAssociation.html) operation. If you use the AWS CLI, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-configuration-policy-association.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-configuration-policy-association.html) command. The delegated administrator account should invoke the operation in the home Region. For `target`, provide the account number, OU ID, or root ID.
+To view associations for a specific account, use the [GetConfigurationPolicyAssociation](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetConfigurationPolicyAssociation.html) operation. If you use the AWS CLI, run the [get-configuration-policy-association](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-configuration-policy-association.html) command. The delegated administrator account should invoke the operation in the home Region. For `target`, provide the account number, OU ID, or root ID.
 
 ```
 $ aws securityhub get-configuration-policy-association \

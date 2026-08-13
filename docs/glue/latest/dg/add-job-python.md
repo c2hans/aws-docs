@@ -106,7 +106,7 @@ The environment for running a Python shell job supports the following libraries:
   <tr><th>Python version</th><th>Python 3.6</th><th colspan="2">Python 3.9</th></tr>
 </thead>
 <tbody>
-  <tr><td>Library set</td><td>N/A</td><td>analytics</td><td>none</td></tr>
+  <tr><td><b>Library set</b></td><td><b>N/A</b></td><td><b>analytics</b></td><td><b>none</b></td></tr>
   <tr><td>avro</td><td></td><td>1.11.0</td><td></td></tr>
   <tr><td>awscli</td><td>116.242</td><td>1.23.5</td><td>1.23.5</td></tr>
   <tr><td>awswrangler</td><td></td><td>2.15.1</td><td></td></tr>

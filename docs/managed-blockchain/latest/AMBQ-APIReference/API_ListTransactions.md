@@ -52,7 +52,7 @@ Pattern: `[-A-Za-z0-9]{13,74}`
 Required: Yes
 
  ** [confirmationStatusFilter](#API_ListTransactions_RequestSyntax) **   <a name="ManagedBlockchainQueryAPIReference-ListTransactions-request-confirmationStatusFilter"></a>
-This filter is used to include transactions in the response that haven't reached [https://docs.aws.amazon.com/managed-blockchain/latest/ambq-dg/key-concepts.html#finality](https://docs.aws.amazon.com/managed-blockchain/latest/ambq-dg/key-concepts.html#finality). Transactions that have reached finality are always part of the response.
+This filter is used to include transactions in the response that haven't reached [*finality*](https://docs.aws.amazon.com/managed-blockchain/latest/ambq-dg/key-concepts.html#finality). Transactions that have reached finality are always part of the response.
 Type: [ConfirmationStatusFilter](API_ConfirmationStatusFilter.md) object
 Required: No
 

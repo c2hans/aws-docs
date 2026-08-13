@@ -38,7 +38,7 @@ The database manager configuration parameters and the registry variables are set
 ### AWS CLI
 <a name="db2-viewing-parameter-group-parameters-cli"></a>
 
-You can view the database manager configuration parameters and the registry variables for a Db2 version by running the [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-engine-default-parameters.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-engine-default-parameters.html) command. Specify one of the following values for the `--db-parameter-group-family` option:
+You can view the database manager configuration parameters and the registry variables for a Db2 version by running the [describe-engine-default-parameters](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-engine-default-parameters.html) command. Specify one of the following values for the `--db-parameter-group-family` option:
 + `db2-ae-11.5`
 + `db2-se-11.5`
 + `db2-ae-12.1`
@@ -104,7 +104,7 @@ aws rds describe-engine-default-parameters ^
 ### RDS API
 <a name="db2-viewing-parameter-group-parameters-api"></a>
 
-To view the parameter values for a DB parameter group, use the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBParameters.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBParameters.html) operation with the following required parameter.
+To view the parameter values for a DB parameter group, use the [`DescribeDBParameters`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBParameters.html) operation with the following required parameter.
 + `DBParameterGroupName`
 
 ## Viewing all parameters with Db2 commands
@@ -172,7 +172,7 @@ You can modify the database manager configuration parameters and the registry va
 
 **To modify database manager configuration parameters and registry variables**
 
-1. Create a custom parameter group by running the [https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-parameter-group.html) command.
+1. Create a custom parameter group by running the [create-db-parameter-group](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-parameter-group.html) command.
 
    Include the following required options:
    + `--db-parameter-group-name` – A name for the parameter group that you are creating.
@@ -181,7 +181,7 @@ You can modify the database manager configuration parameters and the registry va
 
    For more information about creating a DB parameter group, see [Creating a DB parameter group in Amazon RDS](USER_WorkingWithParamGroups.Creating.md).
 
-1. Modify the parameters in the custom parameter group that you created by running the [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-parameter-group.html) command.
+1. Modify the parameters in the custom parameter group that you created by running the [modify-db-parameter-group](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-parameter-group.html) command.
 
    Include the following required options:
    + `--db-parameter-group-name` – The name of the parameter group that you created.
@@ -194,7 +194,7 @@ You can modify the database manager configuration parameters and the registry va
 
 **To modify database manager configuration parameters and registry variables**
 
-1. Create a custom DB parameter group by using the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBParameterGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBParameterGroup.html) operation.
+1. Create a custom DB parameter group by using the [CreateDBParameterGroup](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBParameterGroup.html) operation.
 
    Include the following required parameters:
    + `DBParameterGroupName`
@@ -203,7 +203,7 @@ You can modify the database manager configuration parameters and the registry va
 
    For more information about creating a DB parameter group, see [Creating a DB parameter group in Amazon RDS](USER_WorkingWithParamGroups.Creating.md).
 
-1. Modify the parameters in the custom parameter group that you created by using the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBParameterGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBParameterGroup.html) operation.
+1. Modify the parameters in the custom parameter group that you created by using the [ModifyDBParameterGroup](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBParameterGroup.html) operation.
 
    Include the following required parameters:
    + `DBParameterGroupName`

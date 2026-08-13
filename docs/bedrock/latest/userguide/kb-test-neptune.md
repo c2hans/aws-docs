@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-neptune
 # Query a knowledge base connected to an Amazon Neptune Analytics graph
 <a name="kb-test-neptune"></a>
 
-You can query a knowledge base that uses an Amazon Neptune Analytics graph, and return only relevant text from data sources. For this query, send a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) request with an [Agents for Amazon Bedrock runtime endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-rt), like with a standard knowledge base. For information about querying a knowledge base and retrieving data and generating responses, see:
+You can query a knowledge base that uses an Amazon Neptune Analytics graph, and return only relevant text from data sources. For this query, send a [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) request with an [Agents for Amazon Bedrock runtime endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-rt), like with a standard knowledge base. For information about querying a knowledge base and retrieving data and generating responses, see:
 +  [Query a knowledge base and retrieve data](kb-test-retrieve.md)
 +  [Query a knowledge base and generate responses based off the retrieved data](kb-test-retrieve-generate.md)
 
@@ -24,7 +24,7 @@ The following table describes the fields from Neptune Analytics that you might s
 ## Using metadata and filtering
 <a name="kb-test-neptune-metadata"></a>
 
-When you query the knowledge base and generate responses, you can filter on metadata for finding more relevant documents. For example, you can filter based on the publication date of the document. You can use the Amazon Bedrock console or the runtime API [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrievalFilter.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrievalFilter.html) for this purpose, which can specify some general filter conditions.
+When you query the knowledge base and generate responses, you can filter on metadata for finding more relevant documents. For example, you can filter based on the publication date of the document. You can use the Amazon Bedrock console or the runtime API [`RetrievalFilter`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrievalFilter.html) for this purpose, which can specify some general filter conditions.
 
 The following are some considerations for using the `RetrievalFilter` API for Neptune Analytics graphs.
 + The `listContains` filter is not supported.

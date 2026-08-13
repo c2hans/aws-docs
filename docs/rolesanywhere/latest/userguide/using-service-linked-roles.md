@@ -16,7 +16,7 @@ For information about other services that support service-linked roles, see [AWS
 ## Service-linked role permissions for IAM Roles Anywhere
 <a name="slr-permissions"></a>
 
- IAM Roles Anywhere uses the service-linked role named **AWSServiceRoleForRolesAnywhere** which allows IAM Roles Anywhere to publish CloudWatch metrics and check the configuration of AWS Private CA in your account. This service-linked role has an IAM policy attached to it named [https://docs.aws.amazon.com/rolesanywhere/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-AWSServiceRoleForRolesAnywhere](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-AWSServiceRoleForRolesAnywhere).
+ IAM Roles Anywhere uses the service-linked role named **AWSServiceRoleForRolesAnywhere** which allows IAM Roles Anywhere to publish CloudWatch metrics and check the configuration of AWS Private CA in your account. This service-linked role has an IAM policy attached to it named [AWSRolesAnywhereServicePolicy](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-AWSServiceRoleForRolesAnywhere).
 
  The AWSServiceRoleForRolesAnywhere service-linked role trusts the following services to assume the role:
 + `rolesanywhere.amazonaws.com`

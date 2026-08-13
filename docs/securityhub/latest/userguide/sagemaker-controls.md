@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon SageMaker AI service an
 
 **Resource type:** `AWS::SageMaker::NotebookInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-notebook-no-direct-internet-access.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-notebook-no-direct-internet-access.html)
+**AWS Config rule:** [sagemaker-notebook-no-direct-internet-access](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-notebook-no-direct-internet-access.html)
 
 **Schedule type:** Periodic
 
@@ -44,7 +44,7 @@ You can't change the internet access setting after creating a notebook instance.
 
 **Resource type:** `AWS::SageMaker::NotebookInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-notebook-instance-inside-vpc.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-notebook-instance-inside-vpc.html)
+**AWS Config rule:** [sagemaker-notebook-instance-inside-vpc](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-notebook-instance-inside-vpc.html)
 
 **Schedule type:** Change triggered
 
@@ -70,7 +70,7 @@ You can't change the VPC setting after creating a notebook instance. Instead, yo
 
 **Resource type:** `AWS::SageMaker::NotebookInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-notebook-instance-root-access-check.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-notebook-instance-root-access-check.html)
+**AWS Config rule:** [sagemaker-notebook-instance-root-access-check](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-notebook-instance-root-access-check.html)
 
 **Schedule type:** Change triggered
 
@@ -96,7 +96,7 @@ To restrict root access to SageMaker AI notebook instances, see [Control root ac
 
 **Resource type:** `AWS::SageMaker::EndpointConfig`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-endpoint-config-prod-instance-count.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-endpoint-config-prod-instance-count.html)
+**AWS Config rule:** [sagemaker-endpoint-config-prod-instance-count](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-endpoint-config-prod-instance-count.html)
 
 **Schedule type:** Periodic
 
@@ -123,7 +123,7 @@ For more information about the parameters of endpoint configuration, see [Create
 
 **Resource type:** `AWS::SageMaker::Model`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-isolation-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-isolation-enabled.html)
+**AWS Config rule:** [sagemaker-model-isolation-enabled](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-isolation-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -150,7 +150,7 @@ For more information about network isolation for SageMaker AI models, see [Run t
 
 **Resource type:** `AWS::SageMaker::AppImageConfig`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-app-image-config-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-app-image-config-tagged.html)
+**AWS Config rule:** [sagemaker-app-image-config-tagged](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-app-image-config-tagged.html)
 
 **Schedule type:** Change triggered
 
@@ -181,7 +181,7 @@ To add tags to an Amazon SageMaker AI app image configuration (`AppImageConfig`)
 
 **Resource type:** `AWS::SageMaker::Image`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-image-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-image-tagged.html)
+**AWS Config rule:** [sagemaker-image-tagged](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-image-tagged.html)
 
 **Schedule type:** Change triggered
 
@@ -212,7 +212,7 @@ To add tags to an Amazon SageMaker AI image, you can use the [AddTags](https://d
 
 **Resource type:** `AWS::SageMaker::NotebookInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-notebook-instance-platform-version.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-notebook-instance-platform-version.html)
+**AWS Config rule:** [sagemaker-notebook-instance-platform-version](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-notebook-instance-platform-version.html)
 
 **Schedule type:** Periodic
 
@@ -237,7 +237,7 @@ For information about the platforms that Amazon SageMaker AI currently supports 
 
 **Resource type:** `AWS::SageMaker::DataQualityJobDefinition`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-data-quality-job-encrypt-in-transit.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-data-quality-job-encrypt-in-transit.html)
+**AWS Config rule:** [sagemaker-data-quality-job-encrypt-in-transit](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-data-quality-job-encrypt-in-transit.html)
 
 **Schedule type:** Change triggered
 
@@ -261,7 +261,7 @@ For more information about inter-container traffic encryption for Amazon SageMak
 
 **Resource type:** `AWS::SageMaker::ModelExplainabilityJobDefinition`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-explainability-job-encrypt-in-transit.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-explainability-job-encrypt-in-transit.html)
+**AWS Config rule:** [sagemaker-model-explainability-job-encrypt-in-transit](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-explainability-job-encrypt-in-transit.html)
 
 **Schedule type:** Change triggered
 
@@ -274,7 +274,7 @@ Enabling inter-container traffic encryption protects sensitive ML data such as m
 ### Remediation
 <a name="sagemaker-10-remediation"></a>
 
-For an existing SageMaker model explainability job definition, inter-container traffic encryption cannot be updated in place. To create a new SageMaker model explainability job definition with inter-container traffic encryption enabled, use [API](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModelExplainabilityJobDefinition.html) or [CLI](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-model-explainability-job-definition.html) or [ CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sagemaker-modelexplainabilityjobdefinition.html) and set [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_MonitoringNetworkConfig.html#API_MonitoringNetworkConfig_Contents](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_MonitoringNetworkConfig.html#API_MonitoringNetworkConfig_Contents) to `True`.
+For an existing SageMaker model explainability job definition, inter-container traffic encryption cannot be updated in place. To create a new SageMaker model explainability job definition with inter-container traffic encryption enabled, use [API](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModelExplainabilityJobDefinition.html) or [CLI](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-model-explainability-job-definition.html) or [ CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sagemaker-modelexplainabilityjobdefinition.html) and set [`EnableInterContainerTrafficEncryption`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_MonitoringNetworkConfig.html#API_MonitoringNetworkConfig_Contents) to `True`.
 
 ## [SageMaker.11] SageMaker data quality job definitions should have network isolation enabled
 <a name="sagemaker-11"></a>
@@ -285,7 +285,7 @@ For an existing SageMaker model explainability job definition, inter-container t
 
 **Resource type:** `AWS::SageMaker::DataQualityJobDefinition`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-data-quality-job-isolation.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-data-quality-job-isolation.html)
+**AWS Config rule:** [sagemaker-data-quality-job-isolation](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-data-quality-job-isolation.html)
 
 **Schedule type:** Change triggered
 
@@ -309,7 +309,7 @@ For more information about network isolation for SageMaker AI, see [Run training
 
 **Resource type:** `AWS::SageMaker::ModelBiasJobDefinition`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-bias-job-isolation.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-bias-job-isolation.html)
+**AWS Config rule:** [sagemaker-model-bias-job-isolation](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-bias-job-isolation.html)
 
 **Schedule type:** Change triggered
 
@@ -333,7 +333,7 @@ To enable network isolation, you must create a new model bias job definition wit
 
 **Resource type:** `AWS::SageMaker::ModelQualityJobDefinition`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-quality-job-encrypt-in-transit.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-quality-job-encrypt-in-transit.html)
+**AWS Config rule:** [ssagemaker-model-quality-job-encrypt-in-transit](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-quality-job-encrypt-in-transit.html)
 
 **Schedule type:** Change triggered
 
@@ -357,7 +357,7 @@ To enable inter-container traffic encryption for your Amazon SageMaker model qua
 
 **Resource type:** `AWS::SageMaker::MonitoringSchedule`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-monitoring-schedule-isolation.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-monitoring-schedule-isolation.html)
+**AWS Config rule:** [sagemaker-monitoring-schedule-isolation](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-monitoring-schedule-isolation.html)
 
 **Schedule type:** Change triggered
 
@@ -381,7 +381,7 @@ For information about configuring network isolation in the NetworkConfig paramet
 
 **Resource type:** `AWS::SageMaker::ModelBiasJobDefinition`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-bias-job-encrypt-in-transit.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-bias-job-encrypt-in-transit.html)
+**AWS Config rule:** [sagemaker-model-bias-job-encrypt-in-transit](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-bias-job-encrypt-in-transit.html)
 
 **Schedule type:** Change triggered
 
@@ -405,7 +405,7 @@ To enable inter-container traffic encryption for SageMaker model bias job defini
 
 **Resource type:** `AWS::SageMaker::Model`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-private-registry-required.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-private-registry-required.html)
+**AWS Config rule:** [sagemaker-model-private-registry-required](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-private-registry-required.html)
 
 **Schedule type:** Change triggered
 
@@ -429,7 +429,7 @@ To configure private docker registries for SageMaker AI real-time inference cont
 
 **Resource type:** `AWS::SageMaker::FeatureGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-featuregroup-encryption-at-rest.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-featuregroup-encryption-at-rest.html)
+**AWS Config rule:** [sagemaker-featuregroup-encryption-at-rest](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-featuregroup-encryption-at-rest.html)
 
 **Schedule type:** Change triggered
 
@@ -455,7 +455,7 @@ For information on enabling encryption at rest for SageMaker Feature Store offli
 
 **Resource type:** `AWS::SageMaker::FeatureGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-featuregroup-online-store-encryption.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-featuregroup-online-store-encryption.html)
+**AWS Config rule:** [sagemaker-featuregroup-online-store-encryption](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-featuregroup-online-store-encryption.html)
 
 **Schedule type:** Change triggered
 
@@ -479,7 +479,7 @@ For information on enabling encryption at rest for SageMaker Feature Store onlin
 
 **Resource type:** `AWS::SageMaker::Model`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-multicontainer-private-registry.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-multicontainer-private-registry.html)
+**AWS Config rule:** [sagemaker-model-multicontainer-private-registry](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-multicontainer-private-registry.html)
 
 **Schedule type:** Change triggered
 
@@ -503,7 +503,7 @@ To configure private docker registries for SageMaker AI real-time inference cont
 
 **Resource type:** `AWS::SageMaker::ModelExplainabilityJobDefinition`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-explainability-job-network-isolation.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-explainability-job-network-isolation.html)
+**AWS Config rule:** [sagemaker-model-explainability-job-network-isolation](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-explainability-job-network-isolation.html)
 
 **Schedule type:** Change triggered
 
@@ -527,7 +527,7 @@ To enable network isolation for a SageMaker AI model explainability job definiti
 
 **Resource type:** `AWS::SageMaker::NotebookInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-notebook-instance-storage-vol-kms-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-notebook-instance-storage-vol-kms-encrypted.html)
+**AWS Config rule:** [sagemaker-notebook-instance-storage-vol-kms-encrypted](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-notebook-instance-storage-vol-kms-encrypted.html)
 
 **Schedule type:** Change triggered
 
@@ -551,7 +551,7 @@ To configure a KMS key for a SageMaker AI notebook instance, see [Notebook insta
 
 **Resource type:** `AWS::SageMaker::MonitoringSchedule`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-monitoring-schedule-traffic-encryption.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-monitoring-schedule-traffic-encryption.html)
+**AWS Config rule:** [sagemaker-monitoring-schedule-traffic-encryption](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-monitoring-schedule-traffic-encryption.html)
 
 **Schedule type:** Change triggered
 
@@ -575,7 +575,7 @@ For an existing SageMaker AI monitoring schedule, inter-container traffic encryp
 
 **Resource type:** `AWS::SageMaker::InferenceExperiment`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-inf-experiment-instance-storage-kms-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-inf-experiment-instance-storage-kms-encrypted.html)
+**AWS Config rule:** [sagemaker-inf-experiment-instance-storage-kms-encrypted](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-inf-experiment-instance-storage-kms-encrypted.html)
 
 **Schedule type:** Change triggered
 
@@ -599,7 +599,7 @@ To configure a KMS key for a SageMaker AI inference experiment, specify the `Kms
 
 **Resource type:** `AWS::SageMaker::InferenceExperiment`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-inf-experiment-data-storage-kms-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-inf-experiment-data-storage-kms-encrypted.html)
+**AWS Config rule:** [sagemaker-inf-experiment-data-storage-kms-encrypted](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-inf-experiment-data-storage-kms-encrypted.html)
 
 **Schedule type:** Change triggered
 
@@ -623,7 +623,7 @@ To configure a KMS key for data storage in a SageMaker AI inference experiment, 
 
 **Resource type:** `AWS::SageMaker::ModelQualityJobDefinition`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-quality-job-definition-isolation.html](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-quality-job-definition-isolation.html)
+**AWS Config rule:** [sagemaker-model-quality-job-definition-isolation](https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-model-quality-job-definition-isolation.html)
 
 **Schedule type:** Change triggered
 

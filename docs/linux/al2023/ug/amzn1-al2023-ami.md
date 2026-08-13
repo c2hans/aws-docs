@@ -14,9 +14,9 @@ A comparison of the RPMs present on the AL1 and AL2023 standard AMIs.
 |  alsa-lib  | 1.0.22 |  |
 |  alternatives  |  | 1.15 |
 |  amazon-chrony-config  |  | 4.3 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html](https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html)  |  | 2.5.1 |
+|  [`amazon-ec2-net-utils`](https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html)  |  | 2.5.1 |
 |  amazon-linux-repo-s3  |  | 2023.6.20241031 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html](https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html)  |  | 2023.1 |
+|  [`amazon-linux-sb-keys`](https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html)  |  | 2023.1 |
 |  amazon-rpm-config  |  | 228 |
 |  amazon-ssm-agent  | 3.2.2222.0 | 3.3.987.0 |
 |  amd-ucode-firmware  |  | 20210208 |
@@ -36,7 +36,7 @@ A comparison of the RPMs present on the AL1 and AL2023 standard AMIs.
 |  bind-libs  | 9.8.2 | 9.18.28 |
 |  bind-license  |  | 9.18.28 |
 |  bind-utils  | 9.8.2 | 9.18.28 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  | 2.27 | 2.39 |
+|  [`binutils`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  | 2.27 | 2.39 |
 |  boost-filesystem  |  | 1.75.0 |
 |  boost-system  |  | 1.75.0 |
 |  boost-thread  |  | 1.75.0 |
@@ -57,15 +57,15 @@ A comparison of the RPMs present on the AL1 and AL2023 standard AMIs.
 |  cpio  | 2.10 | 2.13 |
 |  cracklib  | 2.8.16 | 2.9.6 |
 |  cracklib-dicts  | 2.8.16 | 2.9.6 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-cron](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-cron)  | 1.4.4 |  |
+|  [`cronie`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-cron)  | 1.4.4 |  |
 |  cronie-anacron  | 1.4.4 |  |
 |  crontabs  | 1.10 | 1.11 |
 |  crypto-policies  |  | 20220428 |
 |  crypto-policies-scripts  |  | 20220428 |
 |  cryptsetup  | 1.6.7 | 2.6.1 |
 |  cryptsetup-libs  | 1.6.7 | 2.6.1 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 7.61.1 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
+|  [`curl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 7.61.1 |  |
+|  [`curl-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
 |  cyrus-sasl  | 2.1.23 |  |
 |  cyrus-sasl-lib  | 2.1.23 | 2.1.27 |
 |  cyrus-sasl-plain  | 2.1.23 | 2.1.27 |
@@ -106,7 +106,7 @@ A comparison of the RPMs present on the AL1 and AL2023 standard AMIs.
 |  e2fsprogs  | 1.43.5 | 1.46.5 |
 |  e2fsprogs-libs  | 1.43.5 | 1.46.5 |
 |  ec2-hibinit-agent  | 1.0.0 | 1.0.8 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/connecting-to-instances.html](https://docs.aws.amazon.com/linux/al2023/ug/connecting-to-instances.html)  |  | 1.1 |
+|  [`ec2-instance-connect`](https://docs.aws.amazon.com/linux/al2023/ug/connecting-to-instances.html)  |  | 1.1 |
 |  ec2-instance-connect-selinux  |  | 1.1 |
 |  ec2-net-utils  | 0.7 |  |
 |  ec2-utils  | 0.7 | 2.2.0 |
@@ -145,14 +145,14 @@ A comparison of the RPMs present on the AL1 and AL2023 standard AMIs.
 |  ghc-srpm-macros  |  | 1.5.0 |
 |  giflib  | 4.1.6 |  |
 |  glib2  | 2.36.3 | 2.74.7 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  | 2.17 | 2.34 |
+|  [`glibc`](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  | 2.17 | 2.34 |
 |  glibc-all-langpacks  |  | 2.34 |
 |  glibc-common  | 2.17 | 2.34 |
 |  glibc-gconv-extra  |  | 2.34 |
 |  glibc-locale-source  |  | 2.34 |
 |  gmp  | 6.0.0 | 6.2.1 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  | 2.0.28 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  |  | 2.3.7 |
+|  [`gnupg2`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  | 2.0.28 |  |
+|  [`gnupg2-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  |  | 2.3.7 |
 |  gnutls  |  | 3.8.0 |
 |  go-srpm-macros  |  | 3.2.0 |
 |  gpgme  | 1.4.3 | 1.15.1 |
@@ -187,7 +187,7 @@ A comparison of the RPMs present on the AL1 and AL2023 standard AMIs.
 |  iputils  | 20121221 | 20210202 |
 |  irqbalance  | 1.5.0 | 1.9.0 |
 |  jansson  |  | 2.14 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-openjdk7](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-openjdk7)  | 1.7.0.321 |  |
+|  [`java-1.7.0-openjdk`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-openjdk7)  | 1.7.0.321 |  |
 |  javapackages-tools  | 0.9.1 |  |
 |  jemalloc  |  | 5.2.1 |
 |  jitterentropy  |  | 3.4.1 |
@@ -227,9 +227,9 @@ A comparison of the RPMs present on the AL1 and AL2023 standard AMIs.
 |  libcom\_err  | 1.43.5 | 1.46.5 |
 |  libcomps  |  | 0.1.20 |
 |  libconfig  |  | 1.7.2 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 7.61.1 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb)  |  | 5.3.28 |
+|  [`libcurl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 7.61.1 |  |
+|  [`libcurl-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
+|  [`libdb`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb)  |  | 5.3.28 |
 |  libdhash  |  | 0.5.0 |
 |  libdnf  |  | 0.69.0 |
 |  libeconf  |  | 0.4.0 |
@@ -330,7 +330,7 @@ A comparison of the RPMs present on the AL1 and AL2023 standard AMIs.
 |  linux-firmware-whence  |  | 20210208 |
 |  lm\_sensors-libs  |  | 3.6.0 |
 |  lmdb-libs  |  | 0.9.29 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-log4j-hotpatch](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-log4j-hotpatch)  | 1.3 |  |
+|  [`log4j-cve-2021-44228-hotpatch`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-log4j-hotpatch)  | 1.3 |  |
 |  logrotate  | 3.7.8 | 3.20.1 |
 |  lsof  | 4.82 | 4.94.0 |
 |  lua  | 5.1.4 |  |
@@ -393,10 +393,10 @@ A comparison of the RPMs present on the AL1 and AL2023 standard AMIs.
 |  passwd  | 0.79 | 0.80 |
 |  pciutils  | 3.1.10 | 3.7.0 |
 |  pciutils-libs  | 3.1.10 | 3.7.0 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre)  | 8.21 |  |
+|  [`pcre`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre)  | 8.21 |  |
 |  pcre2  |  | 10.40 |
 |  pcre2-syntax  |  | 10.40 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/perl.html](https://docs.aws.amazon.com/linux/al2023/ug/perl.html)  | 5.16.3 |  |
+|  [`perl`](https://docs.aws.amazon.com/linux/al2023/ug/perl.html)  | 5.16.3 |  |
 |  perl-Carp  | 1.26 | 1.50 |
 |  perl-Class-Struct  |  | 0.66 |
 |  perl-constant  | 1.27 | 1.33 |
@@ -644,7 +644,7 @@ A comparison of the RPMs present on the AL1 and AL2023 standard AMIs.
 |  udev  | 173 |  |
 |  unzip  | 6.0 | 6.0 |
 |  update-motd  | 1.0.1 | 2.2 |
-|  [https://docs.aws.amazon.com/linux/al1/ug/deprecated-al1.html#deprecated-upstart](https://docs.aws.amazon.com/linux/al1/ug/deprecated-al1.html#deprecated-upstart)  | 0.6.5 |  |
+|  [`upstart`](https://docs.aws.amazon.com/linux/al1/ug/deprecated-al1.html#deprecated-upstart)  | 0.6.5 |  |
 |  userspace-rcu  |  | 0.12.1 |
 |  ustr  | 1.0.4 |  |
 |  util-linux  | 2.23.2 | 2.37.4 |

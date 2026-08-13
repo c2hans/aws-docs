@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html
 
 AWS Identity and Access Management (IAM) is a web service that helps you securely control access to AWS resources. With IAM, you can manage permissions that control which AWS resources users can access. You use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources. IAM provides the infrastructure necessary to control authentication and authorization for your AWS accounts.
 
+For instructions on setting up your AWS account and creating identities, see [Getting started with IAM](getting-started.md).
+
 **Identities**
 
  When you create an AWS account, you begin with one sign-in identity called the AWS account *root user* that has complete access to all AWS services and resources. We strongly recommend that you don't use the root user for everyday tasks. For tasks that require root user credentials, see [Tasks that require root user credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#root-user-tasks) in the *IAM User Guide*.
@@ -20,8 +22,8 @@ After a user is set up in IAM, they use their sign-in credentials to authenticat
 Once authorized, the principal can take action or perform operations on resources in your AWS account. For example, the principal could launch a new Amazon Elastic Compute Cloud instance, modify IAM group membership, or delete Amazon Simple Storage Service buckets.
 
 **Tip**
-AWS Training and Certification provides a 10-minute video introduction to IAM:
-[Introduction to AWS Identity and Access Management](https://www.aws.training/learningobject/video?id=16448).
+AWS Skill Builder provides a 10-minute video introduction to IAM:
+[Introduction to AWS Identity and Access Management](https://skillbuilder.aws/learn/M1QWQ1MURQ/introduction-to-aws-identity-and-access-management-iam/W4W2NQF2AR) on the AWS Skill Builder website.
 
 **Service availability**
 
@@ -38,5 +40,3 @@ For information about the pricing of other AWS products, see the [Amazon Web Ser
 **Integration with other AWS services**
 
 IAM is integrated with many AWS services. For a list of AWS services that work with IAM and the IAM features the services support, see [AWS services that work with IAM](reference_aws-services-that-work-with-iam.md).
-
-To set up your AWS account and start creating identities, see [Getting started with IAM](getting-started.md).

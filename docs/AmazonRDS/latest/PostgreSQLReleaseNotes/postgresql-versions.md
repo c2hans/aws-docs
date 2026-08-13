@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/
 
 Amazon RDS supports DB instances running several versions of PostgreSQL. You can specify any currently available PostgreSQL version when creating a new DB instance. You can specify the major version (such as PostgreSQL 10) and any available minor version for the specified major version. If no version is specified, Amazon RDS defaults to an available version, typically the most recent version. If a major version is specified but a minor version isn't, Amazon RDS defaults to a recent release of the major version that you specified.
 
-To see a list of available versions, and also defaults for newly created DB instances, use the [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-engine-versions.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-engine-versions.html) AWS CLI command. For example, to display the default PostgreSQL engine version, use the following command.
+To see a list of available versions, and also defaults for newly created DB instances, use the [`describe-db-engine-versions`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-engine-versions.html) AWS CLI command. For example, to display the default PostgreSQL engine version, use the following command.
 
 ```
 aws rds describe-db-engine-versions --default-only --engine postgres

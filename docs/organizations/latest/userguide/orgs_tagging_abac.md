@@ -88,7 +88,7 @@ The following example shows how to allow an action only when the specified tag (
 
 ------
 
-For more information about how to use this element, see [Controlling access for IAM principals](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_iam-tags.html#access_iam-tags_control-principals) and [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principaltag](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principaltag) in the *IAM User Guide*.
+For more information about how to use this element, see [Controlling access for IAM principals](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_iam-tags.html#access_iam-tags_control-principals) and [`aws:PrincipalTag`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principaltag) in the *IAM User Guide*.
 
 ## Check the tags that are included as parameters in the request
 <a name="abac-request"></a>
@@ -101,7 +101,7 @@ To check the tag key, or a list of keys, specify a `Condition` element with the 
 "aws:TagKeys": [ "tag-key-1", "tag-key-2", ... , "tag-key-n" ]
 ```
 
-You can use [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_multi-value-conditions.html#reference_policies_multi-key-or-value-conditions](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_multi-value-conditions.html#reference_policies_multi-key-or-value-conditions) to preface the comparison operator to ensure that all of the keys in the request must match one of the keys specified in the policy. For example, the following sample policy allows any Organizations operation only if all tags present in the request are a***subset of the three*** tags in this policy.
+You can use [`ForAllValues:`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_multi-value-conditions.html#reference_policies_multi-key-or-value-conditions) to preface the comparison operator to ensure that all of the keys in the request must match one of the keys specified in the policy. For example, the following sample policy allows any Organizations operation only if all tags present in the request are a***subset of the three*** tags in this policy.
 
 ------
 #### [ JSON ]
@@ -130,7 +130,7 @@ You can use [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies
 
 ------
 
-Alternatively, you can use [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_multi-value-conditions.html#reference_policies_multi-key-or-value-conditions](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_multi-value-conditions.html#reference_policies_multi-key-or-value-conditions) to preface a comparison operator to ensure that at least one of the keys in the request must match one of the keys specified in the policy. For example, the following policy allows an Organizations operation only if ***at least one*** of the specified tag keys is present in the request.
+Alternatively, you can use [`ForAnyValue:`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_multi-value-conditions.html#reference_policies_multi-key-or-value-conditions) to preface a comparison operator to ensure that at least one of the keys in the request must match one of the keys specified in the policy. For example, the following policy allows an Organizations operation only if ***at least one*** of the specified tag keys is present in the request.
 
 ------
 #### [ JSON ]

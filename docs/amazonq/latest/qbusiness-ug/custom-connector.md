@@ -12,9 +12,9 @@ Use a custom data source when you have a repository that Amazon Q Business doesn
 **You can use a custom data source connector to:**
 + See the same run history metrics that Amazon Q data sources provide even when you can't use Amazon Q data sources to sync your repositories.
 + Create a consistent sync monitoring experience between Amazon Q data sources and custom data sources.
-+ See sync metrics for a data source connector that you created using the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) and [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchDeleteDocument.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchDeleteDocument.html) API operations.
++ See sync metrics for a data source connector that you created using the [BatchPutDocument](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) and [BatchDeleteDocument](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchDeleteDocument.html) API operations.
 
-You can create an Amazon Q custom data source connector using either the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html).
+You can create an Amazon Q custom data source connector using either the AWS Management Console or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html).
 
 **When you create a custom data source using the `CreateDataSource` API operation:**
 + The action returns an ID to use when you synchronize the data source.
@@ -27,7 +27,7 @@ You can create an Amazon Q custom data source connector using either the AWS Man
   "version": "1.0.0"
   }
   ```
-+ When indexing documents later, you must specify the main title of your documents using the [Document](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Document.html) object, and `_source_uri` in [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttribute.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttribute.html). The main title is required so that `DocumentTitle` and `DocumentURI` are included in the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ChatSync.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ChatSync.html) or [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Chat.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Chat.html) response.
++ When indexing documents later, you must specify the main title of your documents using the [Document](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Document.html) object, and `_source_uri` in [DocumentAttribute](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttribute.html). The main title is required so that `DocumentTitle` and `DocumentURI` are included in the [ChatSync](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ChatSync.html) or [Chat](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Chat.html) response.
 
 **When you create a custom data source using the console:**
 + The console returns an ID to use when you synchronize the data source.

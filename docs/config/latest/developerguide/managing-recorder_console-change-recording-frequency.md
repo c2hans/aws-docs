@@ -29,7 +29,7 @@ You can use the AWS Config console or the AWS CLI change the recording frequency
 ------
 #### [ To change the recording frequency (CLI) ]
 
-Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) command to change the recording frequency for the configuration recorder:
+Use the [`put-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) command to change the recording frequency for the configuration recorder:
 
 ```
 $ aws configservice put-configuration-recorder \
@@ -55,7 +55,7 @@ The `configurationRecorder.json` file specifies `name` and `roleArn` as well as 
 }
 ```
 
-[http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) uses the following fields for the `--configuration-recorder` parameter:
+[`put-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) uses the following fields for the `--configuration-recorder` parameter:
 + `name` – The name of the configuration recorder. AWS Config automatically assigns the name of "default" when creating the configuration recorder.
 + `roleARN` – Amazon Resource Name (ARN) of the IAM role assumed by AWS Config and used by the configuration recorder.
 + `recordingMode` – Specifies the default recording frequency that AWS Config uses to record configuration changes. AWS Config supports *Continuous recording* and *Daily recording*. Continuous recording allows you to record configuration changes continuously whenever a change occurs. Daily recording allows you to receive a configuration item (CI) representing the most recent state of your resources over the last 24-hour period, only if it’s different from the previous CI recorded.
@@ -69,7 +69,7 @@ AWS Firewall Manager depends on continuous recording to monitor your resources. 
 
 **Note**
 **Required and optional fields**
-The `recordingMode` field for [http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) is optional. By default, the recording frequency for the configuration recorder is set to Continuous recording.
+The `recordingMode` field for [`put-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) is optional. By default, the recording frequency for the configuration recorder is set to Continuous recording.
 
 **Note**
 **Limits**

@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon DynamoDB service and re
 
 **Resource type:** `AWS::DynamoDB::Table`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/dynamodb-autoscaling-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/dynamodb-autoscaling-enabled.html)
+**AWS Config rule:** [`dynamodb-autoscaling-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/dynamodb-autoscaling-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -51,7 +51,7 @@ To enable DynamoDB automatic scaling on existing tables in capacity mode, see [E
 
 **Resource type:** `AWS::DynamoDB::Table`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/dynamodb-pitr-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/dynamodb-pitr-enabled.html)
+**AWS Config rule:** [`dynamodb-pitr-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/dynamodb-pitr-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -77,7 +77,7 @@ To restore a DynamoDB table to a point in time, see [Restoring a DynamoDB table 
 
 **Resource type:** `AWS::DAX::Cluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/dax-encryption-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/dax-encryption-enabled.html)
+**AWS Config rule:** [`dax-encryption-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/dax-encryption-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -103,7 +103,7 @@ You cannot enable or disable encryption at rest after a cluster is created. You 
 
 **Resource type:** `AWS::DynamoDB::Table`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/dynamodb-resources-protected-by-backup-plan.html](https://docs.aws.amazon.com/config/latest/developerguide/dynamodb-resources-protected-by-backup-plan.html) ``
+**AWS Config rule:** [`dynamodb-resources-protected-by-backup-plan`](https://docs.aws.amazon.com/config/latest/developerguide/dynamodb-resources-protected-by-backup-plan.html) ``
 
 **Schedule type:** Periodic
 
@@ -164,7 +164,7 @@ To add tags to a DynamoDB table, see [Tagging resources in DynamoDB](https://doc
 
 **Resource type:** `AWS::DynamoDB::Table`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/dynamodb-table-deletion-protection-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/dynamodb-table-deletion-protection-enabled.html) ``
+**AWS Config rule:** [`dynamodb-table-deletion-protection-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/dynamodb-table-deletion-protection-enabled.html) ``
 
 **Schedule type:** Change triggered
 
@@ -190,7 +190,7 @@ To enable deletion protection for a DynamoDB table, see [Using deletion protecti
 
 **Resource type:** `AWS::DAX::Cluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/dax-tls-endpoint-encryption.html](https://docs.aws.amazon.com/config/latest/developerguide/dax-tls-endpoint-encryption.html)
+**AWS Config rule:** [`dax-tls-endpoint-encryption`](https://docs.aws.amazon.com/config/latest/developerguide/dax-tls-endpoint-encryption.html)
 
 **Schedule type:** Periodic
 

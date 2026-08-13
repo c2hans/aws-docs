@@ -9,7 +9,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 <a name="aws-properties-greengrass-resourcedefinition-resourceinstance-description"></a>A local resource, machine learning resource, or secret resource. For more information, see [Access Local Resources with Lambda Functions](https://docs.aws.amazon.com/greengrass/v1/developerguide/access-local-resources.html), [Perform Machine Learning Inference](https://docs.aws.amazon.com/greengrass/v1/developerguide/ml-inference.html), and [Deploy Secrets to the AWS IoT Greengrass Core](https://docs.aws.amazon.com/greengrass/v1/developerguide/secrets.html) in the * AWS IoT Greengrass Version 1 Developer Guide *.
 
-<a name="aws-properties-greengrass-resourcedefinition-resourceinstance-inheritance"></a> In an CloudFormation template, the `Resources` property of the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinition.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinition.html) resource contains a list of `ResourceInstance` property types.
+<a name="aws-properties-greengrass-resourcedefinition-resourceinstance-inheritance"></a> In an CloudFormation template, the `Resources` property of the [`AWS::Greengrass::ResourceDefinition`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinition.html) resource contains a list of `ResourceInstance` property types.
 
 ## Syntax
 <a name="aws-properties-greengrass-resourcedefinition-resourceinstance-syntax"></a>

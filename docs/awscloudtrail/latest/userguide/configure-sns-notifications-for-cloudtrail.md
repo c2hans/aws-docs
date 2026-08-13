@@ -53,9 +53,9 @@ If multiple log files are delivered to your Amazon S3 bucket, a notification may
 
 If you choose to receive notifications by email, the body of the email consists of the content of the `Message` field. For information about the JSON structure, see [Fanout to Amazon SQS queues](https://docs.aws.amazon.com/sns/latest/dg/sns-sqs-as-subscriber.html) in the *Amazon Simple Notification Service Developer Guide*. Only the `Message` field shows CloudTrail information. The other fields contain information from the Amazon SNS service.
 
-If you create a trail with the CloudTrail API, you can specify an existing Amazon SNS topic that you want CloudTrail to send notifications to with the [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_CreateTrail.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_CreateTrail.html) or [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_UpdateTrail.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_UpdateTrail.html) operations. You must make sure that the topic exists and that it has permissions that allow CloudTrail to send notifications to it. See [Amazon SNS topic policy for CloudTrail](cloudtrail-permissions-for-sns-notifications.md).
+If you create a trail with the CloudTrail API, you can specify an existing Amazon SNS topic that you want CloudTrail to send notifications to with the [`CreateTrail`](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_CreateTrail.html) or [`UpdateTrail`](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_UpdateTrail.html) operations. You must make sure that the topic exists and that it has permissions that allow CloudTrail to send notifications to it. See [Amazon SNS topic policy for CloudTrail](cloudtrail-permissions-for-sns-notifications.md).
 
 ### Additional resources
 <a name="cloudtrail-notifications-more-info-4"></a>
 
-For more information about Amazon SNS topics and about subscribing to them, see the [https://docs.aws.amazon.com/sns/latest/dg/](https://docs.aws.amazon.com/sns/latest/dg/).
+For more information about Amazon SNS topics and about subscribing to them, see the [*Amazon Simple Notification Service Developer Guide*](https://docs.aws.amazon.com/sns/latest/dg/).

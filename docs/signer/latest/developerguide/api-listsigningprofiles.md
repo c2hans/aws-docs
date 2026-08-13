@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/api-listsig
 # ListSigningProfiles
 <a name="api-listsigningprofiles"></a>
 
-The following Java example shows how to use the [https://docs.aws.amazon.com/signer/latest/api/API_ListSigningProfiles.html](https://docs.aws.amazon.com/signer/latest/api/API_ListSigningProfiles.html) operation.
+The following Java example shows how to use the [`ListSigningProfiles`](https://docs.aws.amazon.com/signer/latest/api/API_ListSigningProfiles.html) operation.
 
 ```
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;

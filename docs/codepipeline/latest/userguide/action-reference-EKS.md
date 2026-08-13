@@ -54,18 +54,18 @@ Required: Yes (Required only for **Helm** type)
 The chart location for your deployment.
 **HelmValuesFiles **
 Required: No (Optional only for **Helm** type)
-To override for helm values files, enter the comma-separated helm values files in the helm chart location.
+To override for Helm values files, enter the comma-separated Helm values files in the Helm chart location.
 
 **Options under Kubectl**
 The following are available options when **Kubectl** is the selected deployment tool.
 **ManifestFiles**
 Required: Yes (Required only for **Kubectl** type)
-The name of your manifest file, the text file that describes your service's container name and the image and tag. You use this file to parameterize your image URI and other information. You can use environment variable for this purpose.
+The name of your manifest file, the text file that describes your service's container name and the image and tag. You use this file to parameterize your image URI and other information. You can use an environment variable for this purpose.
  You store this file in the source repository for your pipeline.
 
 **Namespace**
 Required: No
-The kubernetes namepsace to be used in `kubectl` or `helm` commands.
+The Kubernetes namespace to be used in `kubectl` or `helm` commands.
 
 **Subnets**
 Required: No
@@ -78,7 +78,7 @@ The security groups for the VPC for your cluster. These are part of the same VPC
 ## Input artifacts
 <a name="action-reference-EKS-input"></a>
 + **Number of artifacts:** `1`
-+ **Description:** The action looks for the Kubernetes manifest file or Helm chart in the source file repository for the pipeline. If you want to use helm charts in .tgz format stored in an S3 bucket, you can do so by configuring the S3 Bucket/Key as your source action. For example, the object key provided would be `my-chart-0.1.0.tgz`.
++ **Description:** The action looks for the Kubernetes manifest file or Helm chart in the source file repository for the pipeline. If you want to use Helm charts in .tgz format stored in an S3 bucket, you can do so by configuring the S3 Bucket/Key as your source action. For example, the object key provided would be `my-chart-0.1.0.tgz`.
 
 ## Output artifacts
 <a name="action-reference-EKS-output"></a>
@@ -88,7 +88,7 @@ The security groups for the VPC for your cluster. These are part of the same VPC
 ## Environment variables
 <a name="action-reference-EKS-env-variables"></a>
 
-Used to replace variables such as image repositories or image tags in manifest files or helm chart values files.
+Used to replace variables such as image repositories or image tags in manifest files or Helm chart values files.
 
 **Key**
 The key in a key-value environment variable pair, such as `$IMAGE_TAG`.

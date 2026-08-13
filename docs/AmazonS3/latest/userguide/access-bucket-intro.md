@@ -42,7 +42,7 @@ If you've signed up for an AWS account, you can access the Amazon S3 console by 
 
 You can use the AWS CLI to issue commands or build scripts at your system's command line to perform AWS (including S3) tasks. For example, if you need to access multiple buckets, you can save time by using the AWS CLI to automate common and repetitive tasks. Scriptability and repeatability for common actions are frequent considerations as organizations scale.
 
-The [AWS CLI](https://aws.amazon.com/cli/) provides commands for a broad set of AWS services. The AWS CLI is supported on Windows, macOS, and Linux. To get started, see the [https://docs.aws.amazon.com/cli/latest/userguide/](https://docs.aws.amazon.com/cli/latest/userguide/). For more information about the commands for Amazon S3, see [s3api](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/index.html) and [s3control](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/index.html) in the *AWS CLI Command Reference*.
+The [AWS CLI](https://aws.amazon.com/cli/) provides commands for a broad set of AWS services. The AWS CLI is supported on Windows, macOS, and Linux. To get started, see the [*AWS Command Line Interface User Guide*](https://docs.aws.amazon.com/cli/latest/userguide/). For more information about the commands for Amazon S3, see [s3api](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/index.html) and [s3control](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/index.html) in the *AWS CLI Command Reference*.
 
 ## AWS SDKs
 <a name="accessing-aws-sdks"></a>

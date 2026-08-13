@@ -89,7 +89,9 @@ If you are testing or using the new sign-in experience, also add the following d
 + \*.apps.signin-fips.aws-us-gov.com
 + \*.apps.signin.aws-us-gov.com
 + \*.threat-mitigation.aws.amazon.com
-+ \*.s3.dualstack.\*.amazonaws.com
++ \*.s3.dualstack.{{Region}}.amazonaws.com
+
+  Replace {{Region}} with us-east-1, us-west-2, and the location of your Connect Customer instance.
 
 **Important**
 Do not remove the domains already in your allowlist, such as the following domains:

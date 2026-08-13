@@ -35,7 +35,7 @@ The RDS console shows the status of the DB parameter group associated with a DB 
 ## AWS CLI
 <a name="USER_WorkingWithParamGroups.Modifying.CLI"></a>
 
-To modify a DB parameter group, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-parameter-group.html) command with the following required options:
+To modify a DB parameter group, use the AWS CLI [`modify-db-parameter-group`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-parameter-group.html) command with the following required options:
 + `--db-parameter-group-name`
 + `--parameters`
 
@@ -67,6 +67,6 @@ DBPARAMETERGROUP  mydbparametergroup
 ## RDS API
 <a name="USER_WorkingWithParamGroups.Modifying.API"></a>
 
-To modify a DB parameter group, use the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBParameterGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBParameterGroup.html) operation with the following required parameters:
+To modify a DB parameter group, use the RDS API [`ModifyDBParameterGroup`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBParameterGroup.html) operation with the following required parameters:
 + `DBParameterGroupName`
 + `Parameters`

@@ -16,14 +16,14 @@ Additionally, AWS supports managed policies for job functions that span multiple
 
 You can attach the `AWSDataSyncReadOnlyAccess` policy to your IAM identities. This policy grants read-only permissions for DataSync.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSDataSyncReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSDataSyncReadOnlyAccess.html) in the *AWS Managed Policy Reference* .
+To view the permissions for this policy, see [AWSDataSyncReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSDataSyncReadOnlyAccess.html) in the *AWS Managed Policy Reference* .
 
 ## AWS managed policy: AWSDataSyncFullAccess
 <a name="security-iam-awsmanpol-awsdatasyncfullaccess"></a>
 
 You can attach the `AWSDataSyncFullAccess` policy to your IAM identities. This policy grants administrative permissions for DataSync and is required for AWS Management Console access to the service. `AWSDataSyncFullAccess` provides full access to DataSync API operations and the operations that interact with related resources (such as Amazon S3 buckets, Amazon EFS file systems, AWS KMS keys, and Secrets Manager secrets). The policy also grants permissions for Amazon CloudWatch, including creating log groups and creating or updating a resource policy.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSDataSyncFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSDataSyncFullAccess.html) in the *AWS Managed Policy Reference* .
+To view the permissions for this policy, see [AWSDataSyncFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSDataSyncFullAccess.html) in the *AWS Managed Policy Reference* .
 
 ## AWS managed policy: AWSDataSyncServiceRolePolicy
 <a name="security-iam-awsmanpol-awsdatasyncservicerolepolicy"></a>

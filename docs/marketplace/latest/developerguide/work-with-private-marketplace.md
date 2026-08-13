@@ -652,22 +652,22 @@ The following errors are specific to the private marketplace actions in the AWS 
   <tr><th>Change type</th><th>Error code</th><th>Error message</th><th>Description</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="4">Errors returned directly by the StartChangeSet action</td></tr>
+  <tr><td colspan="4"><b>Errors returned directly by the StartChangeSet action</b></td></tr>
   <tr><td>All</td><td>422</td><td>Document not valid JSON format</td><td>Invalid JSON input used, check your syntax.</td></tr>
   <tr><td>AllowProductProcurement, DenyProductProcurement</td><td>422</td><td>Values in Ids array must be unique</td><td>You can't include the same product multiple times in a single change request.</td></tr>
   <tr><td>AllowProductProcurement, DenyProductProcurement</td><td>422</td><td>Cumulative number of values in Ids array must be less than or equal to 50</td><td>You can allow or deny up to 50 products in a single change request.</td></tr>
-  <tr><td colspan="4">Errors found by calling the DescribeChangeSet action</td></tr>
-  <tr><td>CreateBrandingSettings, UpdateBrandingSettings</td><td>INVALID\_URL</td><td>Image could not be fetched from the input URL</td><td>You must specify a valid, reachable URL for the logo field in `BrandingSettings`.</td></tr>
-  <tr><td>CreateBrandingSettings, UpdateBrandingSettings</td><td>INVALID\_IMAGE</td><td>Image verification for type, content, or file size failed. Only .png and .svg file types with sizes less than or equal to 500KB are supported.</td><td>Your image file must match the logo requirements for branding settings.</td></tr>
-  <tr><td>AllowProductProcurement, DenyProductProcurement</td><td>ENTITY\_NOT\_FOUND</td><td>Procurement policy missing from Experience</td><td>You must create a `ProcurementPolicy` before allowing or denying products.</td></tr>
-  <tr><td>CreateProcurementPolicy</td><td>ENTITY\_ALREADY\_EXISTS</td><td>Procurement policy exists for Experience</td><td>You can only have a single procurement policy for a private marketplace.</td></tr>
-  <tr><td>UpdateProcurementPolicy</td><td>ENTITY\_NOT\_FOUND</td><td>Procurement policy missing from Experience</td><td>You must create a `ProcurementPolicy` before updating the procurement policy.</td></tr>
-  <tr><td>CreateBrandingSettings</td><td>ENTITY\_ALREADY\_EXISTS</td><td>Branding settings exists for Experience</td><td>You can only have a single branding settings for a private marketplace.</td></tr>
-  <tr><td>UpdateBrandingSettings</td><td>ENTITY\_NOT\_FOUND</td><td>Branding settings missing from Experience</td><td>You must create a `BrandingSettings` entity before updating the branding settings.</td></tr>
-  <tr><td>AssociateAudience</td><td>CALLER\_NOT\_AUTHORIZED</td><td>Caller not authorized to execute the action</td><td>You must have permissions to call the action. The accounts being added must be in the same organization.</td></tr>
-  <tr><td>CreateExperience</td><td>CALLER\_NOT\_AUTHORIZED</td><td>Caller not authorized to create experience. </td><td>You must have permissions to create an experience.</td></tr>
-  <tr><td>AssociateAudience</td><td>ENTITY\_ALREADY\_EXISTS</td><td>An experience is already associated with the account {accountId}. Disassociate previous experience before updating</td><td>You can only associate a single experience with an account. Disassociate the current experience before associating a new one. </td></tr>
-  <tr><td>AssociateAudience, DisassociateAudience</td><td>ENTITY\_IN\_USE</td><td>There is already a conflicting change in progress for the selected account. Try again later</td><td>You can't change the association with an account while another change request to change the association is already in progress.</td></tr>
+  <tr><td colspan="4"><b>Errors found by calling the DescribeChangeSet action</b></td></tr>
+  <tr><td>CreateBrandingSettings, UpdateBrandingSettings</td><td>INVALID_URL</td><td>Image could not be fetched from the input URL</td><td>You must specify a valid, reachable URL for the logo field in <code>BrandingSettings</code>.</td></tr>
+  <tr><td>CreateBrandingSettings, UpdateBrandingSettings</td><td>INVALID_IMAGE</td><td>Image verification for type, content, or file size failed. Only .png and .svg file types with sizes less than or equal to 500KB are supported.</td><td>Your image file must match the logo requirements for branding settings.</td></tr>
+  <tr><td>AllowProductProcurement, DenyProductProcurement</td><td>ENTITY_NOT_FOUND</td><td>Procurement policy missing from Experience</td><td>You must create a <code>ProcurementPolicy</code> before allowing or denying products.</td></tr>
+  <tr><td>CreateProcurementPolicy</td><td>ENTITY_ALREADY_EXISTS</td><td>Procurement policy exists for Experience</td><td>You can only have a single procurement policy for a private marketplace.</td></tr>
+  <tr><td>UpdateProcurementPolicy</td><td>ENTITY_NOT_FOUND</td><td>Procurement policy missing from Experience</td><td>You must create a <code>ProcurementPolicy</code> before updating the procurement policy.</td></tr>
+  <tr><td>CreateBrandingSettings</td><td>ENTITY_ALREADY_EXISTS</td><td>Branding settings exists for Experience</td><td>You can only have a single branding settings for a private marketplace.</td></tr>
+  <tr><td>UpdateBrandingSettings</td><td>ENTITY_NOT_FOUND</td><td>Branding settings missing from Experience</td><td>You must create a <code>BrandingSettings</code> entity before updating the branding settings.</td></tr>
+  <tr><td>AssociateAudience</td><td>CALLER_NOT_AUTHORIZED</td><td>Caller not authorized to execute the action</td><td>You must have permissions to call the action. The accounts being added must be in the same organization.</td></tr>
+  <tr><td>CreateExperience</td><td>CALLER_NOT_AUTHORIZED</td><td>Caller not authorized to create experience. </td><td>You must have permissions to create an experience.</td></tr>
+  <tr><td>AssociateAudience</td><td>ENTITY_ALREADY_EXISTS</td><td>An experience is already associated with the account {accountId}. Disassociate previous experience before updating</td><td>You can only associate a single experience with an account. Disassociate the current experience before associating a new one. </td></tr>
+  <tr><td>AssociateAudience, DisassociateAudience</td><td>ENTITY_IN_USE</td><td>There is already a conflicting change in progress for the selected account. Try again later</td><td>You can't change the association with an account while another change request to change the association is already in progress.</td></tr>
 </tbody>
 </table>
 

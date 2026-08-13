@@ -19,7 +19,7 @@ Required: Yes
  ** KeyId **   <a name="connect-Type-EncryptionConfig-KeyId"></a>
 The full ARN of the encryption key.
 Be sure to provide the full ARN of the encryption key, not just the ID.
-Connect Customer supports only KMS keys with the default key spec of [https://docs.aws.amazon.com/kms/latest/developerguide/asymmetric-key-specs.html#key-spec-symmetric-default](https://docs.aws.amazon.com/kms/latest/developerguide/asymmetric-key-specs.html#key-spec-symmetric-default).
+Connect Customer supports only KMS keys with the default key spec of [`SYMMETRIC_DEFAULT`](https://docs.aws.amazon.com/kms/latest/developerguide/asymmetric-key-specs.html#key-spec-symmetric-default).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Required: Yes

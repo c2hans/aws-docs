@@ -13,7 +13,8 @@ Stops the specified DB node in a VM cluster.
 ```
 {
    "cloudVmClusterId": "{{string}}",
-   "dbNodeId": "{{string}}"
+   "dbNodeId": "{{string}}",
+   "exadbVmClusterId": "{{string}}"
 }
 ```
 
@@ -25,11 +26,11 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [cloudVmClusterId](#API_StopDbNode_RequestSyntax) **   <a name="odb-StopDbNode-request-cloudVmClusterId"></a>
-The unique identifier of the VM cluster that contains the DB node to stop.
+The unique identifier of the VM cluster that contains the DB node to stop. You must specify either this parameter or `exadbVmClusterId`.
 Type: String
 Length Constraints: Minimum length of 6. Maximum length of 64.
 Pattern: `[a-zA-Z0-9_~.-]+`
-Required: Yes
+Required: No
 
  ** [dbNodeId](#API_StopDbNode_RequestSyntax) **   <a name="odb-StopDbNode-request-dbNodeId"></a>
 The unique identifier of the DB node to stop.
@@ -37,6 +38,13 @@ Type: String
 Length Constraints: Minimum length of 6. Maximum length of 64.
 Pattern: `[a-zA-Z0-9_~.-]+`
 Required: Yes
+
+ ** [exadbVmClusterId](#API_StopDbNode_RequestSyntax) **   <a name="odb-StopDbNode-request-exadbVmClusterId"></a>
+The unique identifier of the Exascale VM cluster that contains the DB node to stop. You must specify either this parameter or `cloudVmClusterId`.
+Type: String
+Length Constraints: Minimum length of 6. Maximum length of 64.
+Pattern: `[a-zA-Z0-9_~.-]+`
+Required: No
 
 ## Response Syntax
 <a name="API_StopDbNode_ResponseSyntax"></a>

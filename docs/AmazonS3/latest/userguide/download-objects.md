@@ -65,7 +65,7 @@ The following `get-object` example command shows how you can use the AWS CLI to 
 aws s3api get-object --bucket {{{{amzn-s3-demo-bucket1}}}} --key {{folder/my_image}} {{my_downloaded_image.jpg}}
 ```
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object.html) in the *AWS CLI Command Reference*.
+For more information and examples, see [get-object](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object.html) in the *AWS CLI Command Reference*.
 
 ### Using the AWS SDKs
 <a name="download-object-sdk"></a>
@@ -77,7 +77,7 @@ For general information about using different AWS SDKs, see [Developing with Ama
 ### Using the REST API
 <a name="download-object-rest"></a>
 
-You can use the REST API to retrieve objects from Amazon S3. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) in the *Amazon Simple Storage Service API Reference*.
+You can use the REST API to retrieve objects from Amazon S3. For more information, see [GetObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) in the *Amazon Simple Storage Service API Reference*.
 
 ## Downloading multiple objects
 <a name="download-multiple-objects"></a>
@@ -140,7 +140,7 @@ The following command downloads all of the objects under the prefix `{{logs}}` i
 aws s3 cp s3://{{amzn-s3-demo-bucket1}}/{{logs}}/ . --recursive --exclude "{{*}}" --include "{{*.log}}"
 ```
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/cp.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/cp.html) in the *AWS CLI Command Reference*.
+For more information and examples, see [cp](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/cp.html) in the *AWS CLI Command Reference*.
 
 ### Using the AWS SDKs
 <a name="download-objects-sdks"></a>
@@ -163,7 +163,7 @@ The following example command performs a `GET` request for a range of bytes in t
 aws s3api get-object --bucket {{amzn-s3-demo-bucket1}} --key {{folder/my_data}} --range bytes={{0-500}} {{my_data_range}}
 ```
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object.html) in the *AWS CLI Command Reference*.
+For more information and examples, see [get-object](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object.html) in the *AWS CLI Command Reference*.
 
 For more information about the HTTP `Range` header, see [RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html#name-range) on the RFC Editor website.
 
@@ -173,7 +173,7 @@ Amazon S3 doesn't support retrieving multiple ranges of data in a single `GET` r
 ### Using the REST API
 <a name="download-objects-part-rest"></a>
 
-You can use the `partNumber` and `Range` parameters in the REST API to retrieve object parts from Amazon S3. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) in the *Amazon Simple Storage Service API Reference*.
+You can use the `partNumber` and `Range` parameters in the REST API to retrieve object parts from Amazon S3. For more information, see [GetObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) in the *Amazon Simple Storage Service API Reference*.
 
 ## Downloading an object from another AWS account
 <a name="download-objects-from-another-account"></a>
@@ -223,7 +223,7 @@ For instructions, see [Restoring an archived object](restoring-objects.md). Afte
 
 You can add preconditions to download an object based on it's metadata using a conditional read request. You can return an object based on it's Entity tag (ETag) or last modified date. This can limit an S3 operation to objects updated since a specified date or only return a specific object version.
 
-You can use conditional writes for [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) or [https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html) requests.
+You can use conditional writes for [GetObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) or [HeadObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html) requests.
 
 For more information about conditional requests see, [Add preconditions to S3 operations with conditional requests](conditional-requests.md).
 

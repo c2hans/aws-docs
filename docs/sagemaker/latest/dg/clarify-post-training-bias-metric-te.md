@@ -34,4 +34,4 @@ The range of values for differences in conditional rejection for binary and mult
 + Negative values occur when the ratio of false negatives to false positives for facet *d* is less than that for facet *a*.
 
 **Note**
-A previous version stated that the Treatment Equality metric is computed as FPa / FNa - FPd / FNd instead of FNd / FPd - FNa / FPa. While either of the versions can be used. For more information, see [https://pages.awscloud.com/rs/112-TZM-766/images/Fairness.Measures.for.Machine.Learning.in.Finance.pdf](https://pages.awscloud.com/rs/112-TZM-766/images/Fairness.Measures.for.Machine.Learning.in.Finance.pdf).
+A previous version stated that the Treatment Equality metric is computed as FPa / FNa - FPd / FNd instead of FNd / FPd - FNa / FPa. While either of the versions can be used. For more information, see [`Fairness measures for Machine Learning in Finance`](https://pages.awscloud.com/rs/112-TZM-766/images/Fairness.Measures.for.Machine.Learning.in.Finance.pdf).

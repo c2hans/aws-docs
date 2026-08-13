@@ -52,7 +52,7 @@ exports.handler = async () => {
 };
 ```
 
-Next, we'll expand the script to use Synthetics logging and make a call using the AWS SDK. For demonstration purposes, this script will create an Amazon DynamoDB client and make a call to the DynamoDB listTables API. It logs the response to the request and logs either pass or fail depending on whether the request was successful.
+Next, expand the script to use Synthetics logging and make a call using the AWS SDK. For demonstration purposes, this script will create an Amazon DynamoDB client and make a call to the DynamoDB listTables API. It logs the response to the request and logs either pass or fail depending on whether the request was successful.
 
 ```
 const log = require('@aws/synthetics-logger');
@@ -160,7 +160,7 @@ Be sure to set your canary's script entry point (handler) as ` myCanaryFilename.
 
 This section explains how to take Puppeteer scripts and modify them to run as Synthetics canary scripts. For more information about Puppeteer, see [Puppeteer API v1.14.0](https://github.com/puppeteer/puppeteer/blob/v1.14.0/docs/api.md).
 
-We'll start with this example Puppeteer script:
+Start with this example Puppeteer script:
 
 ```
 const puppeteer = require('puppeteer');

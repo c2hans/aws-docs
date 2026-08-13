@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-cli-
 # Import trail events to an event data store with the AWS CLI
 <a name="lake-cli-import-trail-events"></a>
 
-This section shows how to create and configure an event data store by running the [https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/create-event-data-store.html](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/create-event-data-store.html) command and then how to import the events to that event data store by using the [https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/start-import.html](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/start-import.html) command. For more information about importing trail events, see [Copy trail events to an event data store](cloudtrail-copy-trail-to-lake-eds.md).
+This section shows how to create and configure an event data store by running the [create-event-data-store](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/create-event-data-store.html) command and then how to import the events to that event data store by using the [start-import](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/start-import.html) command. For more information about importing trail events, see [Copy trail events to an event data store](cloudtrail-copy-trail-to-lake-eds.md).
 
 ## Preparing to import trail events
 <a name="lake-cli-import-trail-events-prereqs"></a>
@@ -134,7 +134,7 @@ If you're creating the event data store to replace your trail, we recommend conf
    }
    ```
 
-1. Run the [https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-import.html](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-import.html) command to get information about the import.
+1. Run the [get-import](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-import.html) command to get information about the import.
 
    ```
    aws cloudtrail get-import --import-id {{import-id}}
@@ -171,7 +171,7 @@ If you're creating the event data store to replace your trail, we recommend conf
 
    An import finishes with an `ImportStatus` of `COMPLETED` if there were no failures, or `FAILED` if there were failures.
 
-   If the import had `FailedEntries`, you can run the [https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/list-import-failures.html](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/list-import-failures.html) command to return a list of failures.
+   If the import had `FailedEntries`, you can run the [list-import-failures](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/list-import-failures.html) command to return a list of failures.
 
    ```
    aws cloudtrail list-import-failures --import-id {{import-id}}

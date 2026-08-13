@@ -22,8 +22,8 @@ You can also use your own recipient list or campaign management tool by choosing
 ![The Campaign setup page showing the Name field where users enter the campaign name.](http://docs.aws.amazon.com/connect/latest/adminguide/images/how-to-create-campaigns-3.png)
 
 1.  Select a **[Customer Segment](https://docs.aws.amazon.com/connect/latest/adminguide/customer-segments-managing-segments.html)** to use for this campaign.  Recipients for the campaign will be determined at the campaign's scheduled start time using the chosen segment.
-**Important**
-If you are running a campaign initiated by a customer event and using segment powered by Spark SQL, the campaign checks the segment membership as of the last time the segment was exported (segment snapshot), not at the point when the campaign is running. The API provides this as an attribute (lastComputedAt). If you receive a 4XX error, you also need to run a new export (segment snapshot). If you need Connect to automatically check membership as the campaign is running, please use Classic Segmentation.
+**Spark SQL segments not supported**
+Managed campaigns do not support the use of Spark SQL segments. You must use Classic segments.
 
 1.  Choose the **Channel** for the main communication of the campaign. The supported channels include **Agent assisted voice**, **Automated voice**, **Email**, and **SMS**.
 ![The Channel selection interface showing options for Agent assisted voice, Automated voice, Email.](http://docs.aws.amazon.com/connect/latest/adminguide/images/how-to-create-campaigns-4.png)

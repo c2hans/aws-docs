@@ -98,7 +98,7 @@ Type: [ManagedSecretConfig](API_ManagedSecretConfig.md) object
 
  ** [SecurityGroupArns](#API_DescribeLocationFsxWindows_ResponseSyntax) **   <a name="DataSync-DescribeLocationFsxWindows-response-SecurityGroupArns"></a>
 The ARNs of the Amazon EC2 security groups that provide access to your file system's preferred subnet.
-For information about configuring security groups for file system access, see the [https://docs.aws.amazon.com/fsx/latest/WindowsGuide/limit-access-security-groups.html](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/limit-access-security-groups.html).
+For information about configuring security groups for file system access, see the [*Amazon FSx for Windows File Server User Guide*](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/limit-access-security-groups.html).
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 5 items.
 Length Constraints: Maximum length of 128.

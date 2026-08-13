@@ -12,7 +12,7 @@ For EKS AL2 AMIs, AWS Batch runs `/etc/eks/bootstrap.sh`. Don't run `/etc/eks/bo
 For EKS AL2023, AWS Batch utilizes the [NodeConfigSpec](https://awslabs.github.io/amazon-eks-ami/nodeadm/doc/api/#nodeconfigspec) from EKS to make instances join the EKS cluster. AWS Batch populates [ClusterDetails](https://awslabs.github.io/amazon-eks-ami/nodeadm/doc/api/#clusterdetails) in [NodeConfigSpec](https://awslabs.github.io/amazon-eks-ami/nodeadm/doc/api/#nodeconfigspec) for the EKS cluster and you don't need to specify them.
 
 **Note**
-We recommend that you do not set any of the follow [https://awslabs.github.io/amazon-eks-ami/nodeadm/doc/api/#nodeconfigspec](https://awslabs.github.io/amazon-eks-ami/nodeadm/doc/api/#nodeconfigspec) settings in the launch template as AWS Batch will override your values. For more information, see [Shared responsibility of the Kubernetes nodes](eks-ce-shared-responsibility.md).
+We recommend that you do not set any of the follow [NodeConfigSpec](https://awslabs.github.io/amazon-eks-ami/nodeadm/doc/api/#nodeconfigspec) settings in the launch template as AWS Batch will override your values. For more information, see [Shared responsibility of the Kubernetes nodes](eks-ce-shared-responsibility.md).
 `Taints`
 `Cluster Name`
 `apiServerEndpoint`
@@ -21,7 +21,7 @@ We recommend that you do not set any of the follow [https://awslabs.github.io/am
 Do not create a labels with the prefix `batch.amazonaws.com/`
 
 **Note**
-If the launch template is changed after [CreateComputeEnvironment](https://docs.aws.amazon.com/batch/latest/APIReference/API_CreateComputeEnvironment.html) is called, [https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateComputeEnvironment.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateComputeEnvironment.html) must be called to evaluate the version of the launch template for replacement.
+If the launch template is changed after [CreateComputeEnvironment](https://docs.aws.amazon.com/batch/latest/APIReference/API_CreateComputeEnvironment.html) is called, [UpdateComputeEnvironment](https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateComputeEnvironment.html) must be called to evaluate the version of the launch template for replacement.
 
 **Topics**
 + [Add `kubelet` extra arguments](#kubelet-extra-args)
@@ -32,7 +32,7 @@ If the launch template is changed after [CreateComputeEnvironment](https://docs.
 ## Add `kubelet` extra arguments
 <a name="kubelet-extra-args"></a>
 
-AWS Batch supports adding extra arguments to the `kubelet` command. For the list of supported parameters, see [https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/) in the *Kubernetes documentation*. In the following example for EKS AL2 AMIs, `{{--node-labels mylabel=helloworld}}` is added to the `kubelet` command line.
+AWS Batch supports adding extra arguments to the `kubelet` command. For the list of supported parameters, see [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/) in the *Kubernetes documentation*. In the following example for EKS AL2 AMIs, `{{--node-labels mylabel=helloworld}}` is added to the `kubelet` command line.
 
 ```
 MIME-Version: 1.0
@@ -49,7 +49,7 @@ MIME-Version: 1.0
       --==MYBOUNDARY==--
 ```
 
-For EKS AL2023 AMIs the file format is YAML. For the list of supported parameters, see [https://awslabs.github.io/amazon-eks-ami/nodeadm/doc/api/#nodeconfigspec](https://awslabs.github.io/amazon-eks-ami/nodeadm/doc/api/#nodeconfigspec) in the *Kubernetes documentation*. In the following example for EKS AL2023 AMIs, `{{--node-labels mylabel=helloworld}}` is added to the `kubelet` command line.
+For EKS AL2023 AMIs the file format is YAML. For the list of supported parameters, see [NodeConfigSpec](https://awslabs.github.io/amazon-eks-ami/nodeadm/doc/api/#nodeconfigspec) in the *Kubernetes documentation*. In the following example for EKS AL2023 AMIs, `{{--node-labels mylabel=helloworld}}` is added to the `kubelet` command line.
 
 ```
 MIME-Version: 1.0
@@ -71,12 +71,12 @@ spec:
 ## Configure the container runtime
 <a name="change-container-runtime"></a>
 
-You can use the AWS Batch `CONTAINER_RUNTIME` environment variable to configure the container runtime on a managed node. The following example sets the container runtime to `containerd` when `bootstrap.sh` runs. For more information, see [https://kubernetes.io/docs/setup/production-environment/container-runtimes/#containerd](https://kubernetes.io/docs/setup/production-environment/container-runtimes/#containerd) in the *Kubernetes documentation*.
+You can use the AWS Batch `CONTAINER_RUNTIME` environment variable to configure the container runtime on a managed node. The following example sets the container runtime to `containerd` when `bootstrap.sh` runs. For more information, see [`containerd`](https://kubernetes.io/docs/setup/production-environment/container-runtimes/#containerd) in the *Kubernetes documentation*.
 
 If you are using an optimized `EKS_AL2023` or `EKS_AL2023_NVIDIA` AMI you do not need to specify the container runtime as only **containerd** is supported.
 
 **Note**
-The `CONTAINER_RUNTIME` environment variable is equivalent to the `--container-runtime` option of `bootstrap.sh`. For more information, see [https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/#options](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/#options) in the *Kubernetes documentation*.
+The `CONTAINER_RUNTIME` environment variable is equivalent to the `--container-runtime` option of `bootstrap.sh`. For more information, see [Options](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/#options) in the *Kubernetes documentation*.
 
 ```
 MIME-Version: 1.0

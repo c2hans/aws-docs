@@ -122,33 +122,33 @@ This section lists the primary AWS services deployed by the foundation. For the 
 
 ### Data lake and storage
 <a name="data-lake-and-storage"></a>
-+  [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/) — lake bucket (Iceberg, KMS-encrypted, versioned, server-side access logging)
-+  [https://aws.amazon.com/glue/](https://aws.amazon.com/glue/) — 10 databases (9 products \+ 1 dimensions)
-+  [https://aws.amazon.com/lake-formation/](https://aws.amazon.com/lake-formation/) — tag-based access control, fine-grained permissions
-+  [https://aws.amazon.com/athena/](https://aws.amazon.com/athena/) — serverless SQL queries (Engine V3) with Lake Formation inheritance
-+  [https://aws.amazon.com/glue/](https://aws.amazon.com/glue/) (Glue 5.1) — Spark-based data generation and transformation
++  [**Amazon S3**](https://aws.amazon.com/s3/) — lake bucket (Iceberg, KMS-encrypted, versioned, server-side access logging)
++  [**AWS Glue Data Catalog**](https://aws.amazon.com/glue/) — 10 databases (9 products \+ 1 dimensions)
++  [**AWS Lake Formation**](https://aws.amazon.com/lake-formation/) — tag-based access control, fine-grained permissions
++  [**Amazon Athena**](https://aws.amazon.com/athena/) — serverless SQL queries (Engine V3) with Lake Formation inheritance
++  [**AWS Glue ETL**](https://aws.amazon.com/glue/) (Glue 5.1) — Spark-based data generation and transformation
 
 ### Catalog and governance
 <a name="catalog-and-governance"></a>
-+  [https://aws.amazon.com/datazone/](https://aws.amazon.com/datazone/) — V2 domain, 10 projects, auto-grant subscriptions, lineage
-+  [https://aws.amazon.com/cloudtrail/](https://aws.amazon.com/cloudtrail/) — data-event logging on lake bucket
-+  [https://aws.amazon.com/macie/](https://aws.amazon.com/macie/) — automated PII classification on lake prefixes
-+  [https://aws.amazon.com/iam/identity-center/](https://aws.amazon.com/iam/identity-center/) — 3 groups per stage (`data-owners`, `data-consumers`, `platform-admins`)
-+  [https://aws.amazon.com/kms/](https://aws.amazon.com/kms/) — encryption key management for lake bucket and Glue catalog
++  [**Amazon DataZone**](https://aws.amazon.com/datazone/) — V2 domain, 10 projects, auto-grant subscriptions, lineage
++  [**AWS CloudTrail**](https://aws.amazon.com/cloudtrail/) — data-event logging on lake bucket
++  [**Amazon Macie**](https://aws.amazon.com/macie/) — automated PII classification on lake prefixes
++  [**AWS IAM Identity Center**](https://aws.amazon.com/iam/identity-center/) — 3 groups per stage (`data-owners`, `data-consumers`, `platform-admins`)
++  [**AWS KMS**](https://aws.amazon.com/kms/) — encryption key management for lake bucket and Glue catalog
 
 ### Knowledge and AI
 <a name="knowledge-and-ai"></a>
-+  [https://aws.amazon.com/bedrock/knowledge-bases/](https://aws.amazon.com/bedrock/knowledge-bases/) — `vehicle_knowledge_base` product (DTCs, TSBs, recalls, owner manuals)
-+  [https://aws.amazon.com/opensearch-service/](https://aws.amazon.com/opensearch-service/) — vector index backing the Bedrock Knowledge Base (\~$345/mo AOSS commitment per stage)
++  [**Amazon Bedrock Knowledge Bases**](https://aws.amazon.com/bedrock/knowledge-bases/) — `vehicle_knowledge_base` product (DTCs, TSBs, recalls, owner manuals)
++  [**Amazon OpenSearch Serverless**](https://aws.amazon.com/opensearch-service/) — vector index backing the Bedrock Knowledge Base (\~$345/mo AOSS commitment per stage)
 
 ### Analytics and machine learning
 <a name="analytics-and-machine-learning"></a>
-+  [https://aws.amazon.com/sagemaker/studio/](https://aws.amazon.com/sagemaker/studio/) — reference-consumer predictive-maintenance notebook (Isolation-Forest)
-+  [https://aws.amazon.com/cloudwatch/](https://aws.amazon.com/cloudwatch/) — data-quality dashboard
++  [**Amazon SageMaker Studio**](https://aws.amazon.com/sagemaker/studio/) — reference-consumer predictive-maintenance notebook (Isolation-Forest)
++  [**Amazon CloudWatch**](https://aws.amazon.com/cloudwatch/) — data-quality dashboard
 
 ### Networking
 <a name="networking"></a>
-+  [https://aws.amazon.com/vpc/](https://aws.amazon.com/vpc/) — `network` stack; VPC endpoints for S3, Glue, Athena
++  [**Amazon VPC**](https://aws.amazon.com/vpc/) — `network` stack; VPC endpoints for S3, Glue, Athena
 
 ## Well-Architected Framework alignment
 <a name="well-architected-framework-alignment"></a>

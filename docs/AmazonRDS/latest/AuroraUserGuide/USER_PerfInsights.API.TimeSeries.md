@@ -32,7 +32,7 @@ For example, assume that a metric is collected for 300 seconds (5 minutes), and 
 + Sum – 15
 + Sample count – 5
 
-For information about using the `get-resource-metrics` AWS CLI command, see [https://docs.aws.amazon.com/cli/latest/reference/pi/get-resource-metrics.html](https://docs.aws.amazon.com/cli/latest/reference/pi/get-resource-metrics.html).
+For information about using the `get-resource-metrics` AWS CLI command, see [`get-resource-metrics`](https://docs.aws.amazon.com/cli/latest/reference/pi/get-resource-metrics.html).
 
 For the `--metric-queries` option, specify one or more queries that you want to get results for. Each query consists of a mandatory `Metric` and optional `GroupBy` and `Filter` parameters. The following is an example of a `--metric-queries` option specification.
 

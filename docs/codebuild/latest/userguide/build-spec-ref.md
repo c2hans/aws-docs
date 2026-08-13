@@ -275,7 +275,7 @@ Required sequence. Represents the commands CodeBuild runs during each phase of t
 In buildspec version 0.1, CodeBuild runs each command in a separate instance of the default shell in the build environment. This means that each command runs in isolation from all other commands. Therefore, by default, you cannot run a single command that relies on the state of any previous commands (for example, changing directories or setting environment variables). To get around this limitation, we recommend that you use version 0.2, which solves this issue. If you must use buildspec version 0.1, we recommend the approaches in [Shells and commands in build environments](build-env-ref-cmd.md).
 
 phases/\*/**run-as**  <a name="build-spec.phases.run-as"></a>
-Optional sequence. Use in a build phase to specify a Linux user that runs its commands. If `run-as` is also specified globally for all commands at the top of the buildspec file, then the phase-level user takes precedence. For example, if globally `run-as` specifies User-1, and for the `install` phase only a `run-as` statement specifies User-2, then all commands in then buildspec file are run as User-1 *except* commands in the `install` phase, which are run as User-2.
+Optional sequence. Use in a build phase to specify a Linux user that runs its commands. If `run-as` is also specified globally for all commands at the top of the buildspec file, then the phase-level user takes precedence. For example, if globally `run-as` specifies User-1, and for the `install` phase only a `run-as` statement specifies User-2, then all commands in the buildspec file are run as User-1 *except* commands in the `install` phase, which are run as User-2.
 
 phases/\*/**on-failure**  <a name="build-spec.phases.on-failure"></a>
 Optional sequence. Specifies the action to take if a failure occurs during the phase. This can be one of the following values:
@@ -283,7 +283,7 @@ Optional sequence. Specifies the action to take if a failure occurs during the p
 + `CONTINUE` - Continue to the next phase.
 + `RETRY` - Retry the build up to 3 times with an error message that matches the regular expression `.*`.
 + `RETRY-{{count}}` - Retry the build for a specified number of times, as represented by {{count}} with an error message that matches the regular expression `.*`. Note that {{count}} must be between 0 and 100. For example, valid values include `RETRY-4` and `RETRY-8`.
-+ `RETRY-{{regex}}` - Retry the build up to 3 times, and use {{regex}} to include a regular expression to match a specifed error message. For example, valid values include `Retry-.*Error: Unable to connect to database.*` and `RETRY-invalid+`.
++ `RETRY-{{regex}}` - Retry the build up to 3 times, and use {{regex}} to include a regular expression to match a specified error message. For example, valid values include `Retry-.*Error: Unable to connect to database.*` and `RETRY-invalid+`.
 + `RETRY-{{count}}-{{regex}}` - Retry the build for a specified number of times, as represented by {{count}}. Note that {{count}} must be between 0 and 100. You can also use {{regex}} to include a regular expression to match the error message. For example, valid values include `Retry-3-.*connection timed out.*` and `RETRY-8-invalid+`.
 If this property is not specified, the failure process follows the transition phases as shown in [Build phase transitions](view-build-details-phases.md).
 The `on-failure` attribute is not supported when using Lambda compute or reserved capacity. This attribute only works with EC2 compute images provided by CodeBuild.
@@ -516,7 +516,7 @@ artifacts/**s3-prefix**  <a name="build-spec.artifacts.s3-prefix"></a>
 Optional. Specifies a prefix used when the artifacts are output to an Amazon S3 bucket and the namespace type is `BUILD_ID`. When used, the output path in the bucket is `<s3-prefix>/<build-id>/<name>.zip`.
 
 artifacts/**secondary-artifacts**  <a name="build-spec.artifacts.secondary-artifacts"></a>
-Optional sequence. Represents one or more artifact definitions as a mapping between an artifact identifier and an artifact definition. Each artifact identifiers in this block must match an artifact defined in the `secondaryArtifacts` attribute of your project. Each separate definition has the same syntax as the `artifacts` block above.
+Optional sequence. Represents one or more artifact definitions as a mapping between an artifact identifier and an artifact definition. Each artifact identifier in this block must match an artifact defined in the `secondaryArtifacts` attribute of your project. Each separate definition has the same syntax as the `artifacts` block above.
 The [`artifacts/files`](#build-spec.artifacts.files) sequence is always required, even when there are only secondary artifacts defined.
 For example, if your project has the following structure:
 

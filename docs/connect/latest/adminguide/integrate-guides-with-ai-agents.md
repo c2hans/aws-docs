@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/integrate-guides-with-ai-agents.html
 ---
 
-# Integrate Connect AI agents with step-by-step guides
+# Integrate agent assist with step-by-step guides
 <a name="integrate-guides-with-ai-agents"></a>
 
-To help agents get to solutions faster, you can associate [step-by-step guides](step-by-step-guided-experiences.md) with knowledge base content, such as knowledge articles. Then, when Connect AI agents provides a recommended solution to an agent, it also provides them with the option to start the step-by-step guide that you associated with the content.
+To help agents get to solutions faster, you can associate [step-by-step guides](step-by-step-guided-experiences.md) with knowledge base content, such as knowledge articles. Then, when agent assist provides a recommended solution to an agent, it also provides them with the option to start the step-by-step guide that you associated with the content.
 
 This topic explains how to associate step-by-step guides with knowledge base content.
 
@@ -148,7 +148,7 @@ aws qconnect list-content-associations \
 <a name="enable-guide-experience"></a>
 
 Assign the following **Agent Applications** security profile permissions to the agents so they can view the knowledge base content and the step-by-step guides.
-+ **Connect AI agents - View**: Enables agents to search for and view content. They can also receive automatic recommendations during calls if Contact Lens conversational analytics is enabled.
++ **agent assist - View**: Enables agents to search for and view content. They can also receive automatic recommendations during calls if conversational analytics is enabled.
 + **Custom views - Access**: Enables agents to see step-by-step guides in their agent workspace.
 
 For information about how to add more permissions to an existing security profile, see [Update security profiles in Connect Customer](update-security-profiles.md).

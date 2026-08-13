@@ -274,7 +274,7 @@ To simplify the launch process for your customers, we suggest minimizing the num
      + `secretsManager:ReplicateSecretToRegions`
      + `secretsManager:GetSecretValue`
 **Note**
-If your product requires seller-provided CloudFormation deployment parameters (for example, API keys and [external IDs](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html)), use the `PutDeploymentParameter` operation to share the parameter with your customers. For more information, see [https://docs.aws.amazon.com/marketplace-deployment/latest/api-reference/API_PutDeploymentParameter.html](https://docs.aws.amazon.com/marketplace-deployment/latest/api-reference/API_PutDeploymentParameter.html) in the *AWS Marketplace Deployment Service API Reference*.
+If your product requires seller-provided CloudFormation deployment parameters (for example, API keys and [external IDs](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html)), use the `PutDeploymentParameter` operation to share the parameter with your customers. For more information, see [PutDeploymentParameter](https://docs.aws.amazon.com/marketplace-deployment/latest/api-reference/API_PutDeploymentParameter.html) in the *AWS Marketplace Deployment Service API Reference*.
 
 1. (Optional) For **Manual configuration instructions**, provide instructions for buyers who want to configure your product manually. Consider including links to your product's onboarding guide and documentation.
 

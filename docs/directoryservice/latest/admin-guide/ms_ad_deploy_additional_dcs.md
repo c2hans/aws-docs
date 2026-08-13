@@ -16,7 +16,7 @@ For example, in the below illustration, DC-1 and DC-2 represent the two domain c
 This process eliminates the need for you to manually configure directory data replication, automated daily snapshots, or monitoring for the additional domain controllers. It's also easier for you to migrate and run mission critical Active Directory–integrated workloads in the AWS Cloud without having to deploy and maintain your own Active Directory infrastructure.
 
 You can use either of the following tools to deploy or remove additional domain controllers to your AWS Managed Microsoft AD:
-+ [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ds/update-number-of-domain-controllers.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ds/update-number-of-domain-controllers.html) AWS CLI command
++ [`update-number-of-domain-controllers`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ds/update-number-of-domain-controllers.html) AWS CLI command
 + [UpdateNumberOfDomainControllers](https://docs.aws.amazon.com/directoryservice/latest/devguide/API_UpdateNumberOfDomainControllers.html) API
 + [Adding or removing additional domain controllers with the AWS Management Console](#addremovedcs)
 
@@ -71,7 +71,7 @@ Use the following procedure to deploy or remove additional domain controllers in
    aws ds describe-directories --directory-id {{d-1234567890}} | grep DesiredNumberOfDomainControllers
    ```
 
-1. To add or remove domain controllers, you can use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ds/update-number-of-domain-controllers.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ds/update-number-of-domain-controllers.html) command. For example, you can use the following command to set the total number of domain controllers to 4. Ensure you replace the Directory ID with your AWS Managed Microsoft AD Directory ID and the `desired-number` parameter with the number of domain controllers you want to deploy.
+1. To add or remove domain controllers, you can use the [`update-number-of-domain-controllers`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ds/update-number-of-domain-controllers.html) command. For example, you can use the following command to set the total number of domain controllers to 4. Ensure you replace the Directory ID with your AWS Managed Microsoft AD Directory ID and the `desired-number` parameter with the number of domain controllers you want to deploy.
 
    ```
    aws ds update-number-of-domain-controllers --directory-id {{d-1234567890}} --desired-number {{4}}
@@ -88,7 +88,7 @@ Use the following procedure to deploy or remove additional domain controllers in
    Get-DSDirectory -DirectoryId {{d-1234567890}} | Select-Object DesiredNumberOfDomainControllers
    ```
 
-1. To add or remove domain controllers, you can use the [https://docs.aws.amazon.com//powershell/latest/reference/items/Set-DSDomainControllerCount.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Set-DSDomainControllerCount.html) command. For example, you can use the following command to set the total number of domain controllers to 4. Ensure you replace the Directory ID with your AWS Managed Microsoft AD Directory ID and the `DesiredNumber` parameter with the number of domain controllers you want to deploy.
+1. To add or remove domain controllers, you can use the [`Set-DSDomainControllerCount`](https://docs.aws.amazon.com//powershell/latest/reference/items/Set-DSDomainControllerCount.html) command. For example, you can use the following command to set the total number of domain controllers to 4. Ensure you replace the Directory ID with your AWS Managed Microsoft AD Directory ID and the `DesiredNumber` parameter with the number of domain controllers you want to deploy.
 
    ```
    Set-DSDomainControllerCount -DirectoryId {{d-1234567890}} -DesiredNumber {{4}}

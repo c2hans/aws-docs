@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-online-expla
 # The `EnableExplanations` expression
 <a name="clarify-online-explainability-create-endpoint-enable"></a>
 
-The `EnableExplanations` parameter is a [https://jmespath.org/](https://jmespath.org/) Boolean expression string. It is evaluated for **each record** in the explainability request. If this parameter is evaluated to be **true**, then the record will be explained. If this parameter is evaluated to be **false**, then explanations are not be generated.
+The `EnableExplanations` parameter is a [`JMESPath`](https://jmespath.org/) Boolean expression string. It is evaluated for **each record** in the explainability request. If this parameter is evaluated to be **true**, then the record will be explained. If this parameter is evaluated to be **false**, then explanations are not be generated.
 
 SageMaker Clarify deserializes the model container output for each record into a JSON compatible data structure, and then uses the `EnableExplanations` parameter to evaluate the data.
 

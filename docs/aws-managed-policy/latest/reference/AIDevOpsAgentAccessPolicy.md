@@ -18,13 +18,13 @@ You can attach `AIDevOpsAgentAccessPolicy` to your users, groups, and roles.
 <a name="AIDevOpsAgentAccessPolicy-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: March 26, 2026, 03:42 UTC
-+ **Edited time:** July 02, 2026, 23:42 UTC
++ **Edited time:** August 12, 2026, 23:07 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy`
 
 ## Policy version
 <a name="AIDevOpsAgentAccessPolicy-version"></a>
 
-**Policy version:** v9 (default)
+**Policy version:** v10 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -217,8 +217,33 @@ The policy's default version is the version that defines the permissions for the
         "codeartifact:List*",
         "codebuild:BatchGetFleets",
         "codebuild:List*",
+        "codecommit:BatchDescribe*",
+        "codecommit:BatchGet*",
+        "codecommit:Describe*",
+        "codecommit:EvaluatePullRequestApprovalRules",
+        "codecommit:GetApprovalRuleTemplate",
+        "codecommit:GetBranch",
+        "codecommit:GetComment",
+        "codecommit:GetCommentReactions",
+        "codecommit:GetCommentsForComparedCommit",
+        "codecommit:GetCommentsForPullRequest",
+        "codecommit:GetCommit",
+        "codecommit:GetCommitHistory",
+        "codecommit:GetCommitsFromMergeBase",
+        "codecommit:GetDifferences",
+        "codecommit:GetMergeCommit",
+        "codecommit:GetMergeConflicts",
+        "codecommit:GetMergeOptions",
+        "codecommit:GetObjectIdentifier",
+        "codecommit:GetPullRequest",
+        "codecommit:GetPullRequestApprovalStates",
+        "codecommit:GetPullRequestOverrideState",
+        "codecommit:GetReferences",
         "codecommit:GetRepository",
         "codecommit:GetRepositoryTriggers",
+        "codecommit:GetTree",
+        "codecommit:GetUploadArchiveStatus",
+        "codecommit:List*",
         "codedeploy:BatchGetDeployments",
         "codedeploy:BatchGetDeploymentTargets",
         "codedeploy:GetApplication",
@@ -265,8 +290,10 @@ The policy's default version is the version that defines the permissions for the
         "comprehend:Describe*",
         "comprehend:List*",
         "config:Describe*",
+        "config:GetAggregateResourceConfig",
         "config:GetStoredQuery",
         "config:List*",
+        "config:SelectAggregateResourceConfig",
         "connect:Describe*",
         "connect:GetTaskTemplate",
         "connect:List*",
@@ -411,6 +438,7 @@ The policy's default version is the version that defines the permissions for the
         "glue:GetJobBookmark",
         "glue:GetJobRun",
         "glue:GetJobRuns",
+        "glue:getPartition",
         "glue:GetPartitions",
         "glue:GetRegistry",
         "glue:GetResourcePolicy",
@@ -536,13 +564,19 @@ The policy's default version is the version that defines the permissions for the
         "kinesisanalytics:Describe*",
         "kinesisanalytics:List*",
         "kinesisvideo:Describe*",
+        "kms:DescribeCustomKeyStores",
         "kms:DescribeKey",
-        "kms:ListResourceTags",
-        "kms:ListKeys",
         "kms:GetKeyPolicy",
         "kms:GetKeyRotationStatus",
+        "kms:GetParametersForImport",
+        "kms:GetPublicKey",
         "kms:ListAliases",
+        "kms:ListGrants",
+        "kms:ListKeyPolicies",
         "kms:ListKeyRotations",
+        "kms:ListKeys",
+        "kms:ListResourceTags",
+        "kms:ListRetirableGrants",
         "lakeformation:Describe*",
         "lakeformation:GetLFTag",
         "lakeformation:GetResourceLFTags",

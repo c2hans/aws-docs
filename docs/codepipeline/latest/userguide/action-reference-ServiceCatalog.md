@@ -154,4 +154,4 @@ Configuration:
 
 The following related resources can help you as you work with this action.
 + [Service Catalog User Guide](https://docs.aws.amazon.com/servicecatalog/latest/userguide/) – For information about resources and templates in Service Catalog, see the *Service Catalog User Guide*.
-+ [Tutorial: Create a pipeline that deploys to Service Catalog](tutorials-S3-servicecatalog.md) – This tutorial tutorial shows you how to create and configure a pipeline to deploy your product template to Service Catalog and deliver changes you have made in your source repository.
++ [Tutorial: Create a pipeline that deploys to Service Catalog](tutorials-S3-servicecatalog.md) – This tutorial shows you how to create and configure a pipeline to deploy your product template to Service Catalog and deliver changes you have made in your source repository.

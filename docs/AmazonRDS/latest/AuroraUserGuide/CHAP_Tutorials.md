@@ -135,7 +135,7 @@ The following collection of workshops and other hands-on content helps you to ga
 + [ Using Machine Learning ](https://catalog.workshops.aws/apgimmday/en-US/generative-ai/aurora-pg-ml)
 
   Learn about Aurora Machine Learning.
-+ [https://catalog.workshops.aws/apgimmday/en-US/performance-and-scalability/aurora-serverless-v2](https://catalog.workshops.aws/apgimmday/en-US/performance-and-scalability/aurora-serverless-v2)
++ [Aurora serverless](https://catalog.workshops.aws/apgimmday/en-US/performance-and-scalability/aurora-serverless-v2)
 
   Learn about Aurora serverless.
 + [ Trusted Language Extensions for Aurora PostgreSQL ](https://catalog.workshops.aws/apgimmday/en-US/developer-productivity/trustedlanguageextension)
@@ -176,7 +176,7 @@ The following collection of workshops and other hands-on content helps you to ga
 + [ Aurora Global Database ](https://catalog.workshops.aws/awsauroramysql/en-US/global)
 
   Learn about Aurora Global Database.
-+ [https://catalog.workshops.aws/awsauroramysql/en-US/sv2](https://catalog.workshops.aws/awsauroramysql/en-US/sv2)
++ [Aurora serverless](https://catalog.workshops.aws/awsauroramysql/en-US/sv2)
 
   Learn about Aurora serverless.
 + [ Using Machine Learning ](https://catalog.workshops.aws/awsauroramysql/en-US/ml)

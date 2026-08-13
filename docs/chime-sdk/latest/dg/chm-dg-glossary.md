@@ -131,7 +131,7 @@ Session Initiation Protocol, a signaling protocol used to initiate, maintain, an
 Parameters in AWS Lambda functions that contain call control data, plus other data such as user account IDs.
 
 **SIP media application**
-A managed object that passes values from a SIP rule to a target AWS Lambda function. Developers can call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateSipMediaApplication.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateSipMediaApplication.html) API to create SIP media applications, but they must have administrative permissions to do so.
+A managed object that passes values from a SIP rule to a target AWS Lambda function. Developers can call the [CreateSipMediaApplication](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateSipMediaApplication.html) API to create SIP media applications, but they must have administrative permissions to do so.
 
 **SIP rule**
 A managed object that passes phone numbers for Amazon Chime SDK Voice Connector URIs to a target SIP media application.

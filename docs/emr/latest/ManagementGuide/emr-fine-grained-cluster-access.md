@@ -90,7 +90,7 @@ To create a cluster with a tag, you must also have permission for the `elasticma
 
 For the `PassRole` resources, you must provide the AWS account ID or alias, the service role name in the `PassRoleForEMR` statement, and the instance profile name in the `PassRoleForEC2` statement. For more information about the IAM ARN format, see [IAM ARNs](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) in the *IAM User Guide*.
 
-For more information about matching tag-key values, see [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag) in the *IAM User Guide*.
+For more information about matching tag-key values, see [`aws:RequestTag/tag-key`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag) in the *IAM User Guide*.
 
 ------
 #### [ JSON ]

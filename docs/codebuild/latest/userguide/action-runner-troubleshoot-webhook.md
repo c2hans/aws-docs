@@ -44,12 +44,12 @@ If the error persists, use the following instructions to debug the issue.
 
 1. Open the GitHub console at `https://github.com/{{user-name}}/{{repository-name}}/settings/hooks` to view your repository's webhook settings. On this page, you'll see a webhook that was created for your repository.
 
-1. Choose **Edit** and conﬁrm that the webhook is enabled to deliver **Workﬂow jobs** events.
+1. Choose **Edit** and confirm that the webhook is enabled to deliver **Workflow jobs** events.
 ![Workflow job events are enabled in your webhook.](http://docs.aws.amazon.com/codebuild/latest/userguide/images/github-actions-workflow-jobs.png)
 
 1.  Navigate to the **Recent Deliveries** tab, find the corresponding `workflow_job.queued` event, and expand the event.
 
-1.  Review the **labels** field in the **Payload** and make sure it’s as expected.
+1.  Review the **labels** field in the **Payload** and make sure it's as expected.
 
 1.  Finally, review the **Response** tab, as this contains the response or error message returned from CodeBuild.
 ![The response or error message returned from CodeBuild.](http://docs.aws.amazon.com/codebuild/latest/userguide/images/github-actions-workflow-jobs-response.png)
@@ -74,6 +74,6 @@ If the error persists, use the following instructions to debug the issue.
 
 **Issue:** Your GitHub Actions with [deployment protection](https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-deployments/reviewing-deployments) rules enabled triggers builds within CodeBuild before the deployment has been approved.
 
-**Possible causes:** CodeBuild fetches the deployment and environment associated with the GitHub Actions job if they exist to verify if the is approved. If CodeBuild fails to fetch either the deployment or environment, the CodeBuild build may be triggered prematurely.
+**Possible causes:** CodeBuild fetches the deployment and environment associated with the GitHub Actions job if they exist to verify if the deployment is approved. If CodeBuild fails to fetch either the deployment or environment, the CodeBuild build may be triggered prematurely.
 
 **Recommended solutions:** Verify that the credentials associated with your CodeBuild projects have read permissions for deployments and actions within GitHub.

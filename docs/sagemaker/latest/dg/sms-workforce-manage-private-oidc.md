@@ -14,7 +14,7 @@ You can only assign one team to each labeling job or human review workflow. You 
 ## Prerequisites
 <a name="sms-workforce-manage-private-oidc-prerequisites"></a>
 
-To create and manage private work teams using your OIDC IdP groups, first you must create a workforce using the SageMaker API operation [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateWorkforce.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateWorkforce.html). To learn more, see [Create a Private Workforce (OIDC IdP)](sms-workforce-create-private-oidc.md).
+To create and manage private work teams using your OIDC IdP groups, first you must create a workforce using the SageMaker API operation [`CreateWorkforce`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateWorkforce.html). To learn more, see [Create a Private Workforce (OIDC IdP)](sms-workforce-create-private-oidc.md).
 
 ## Add work teams
 <a name="sms-workforce-manage-private-oidc-workteams"></a>
@@ -91,9 +91,9 @@ Additionally, you must give the work team a name using the `WorkteamName` parame
 ## Add or remove IdP groups from work teams
 <a name="sms-workforce-manage-private-oidc-workteam-update"></a>
 
-After you've created a work team, you can use the SageMaker API to manage that work team. Use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateWorkteam.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateWorkteam.html) operation to update the IdP user groups included in that work team.
+After you've created a work team, you can use the SageMaker API to manage that work team. Use the [`UpdateWorkteam`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateWorkteam.html) operation to update the IdP user groups included in that work team.
 + Use the `WorkteamName` parameter to identify the work team that you want to update.
-+ When you use this operation, list all user groups that you want included in the work team in the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_OidcMemberDefinition.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_OidcMemberDefinition.html) parameter `Groups`. If a user group is associated with a work team and you do *not* include it in this list, that user group is no longer associated with this work team.
++ When you use this operation, list all user groups that you want included in the work team in the [`OidcMemberDefinition`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_OidcMemberDefinition.html) parameter `Groups`. If a user group is associated with a work team and you do *not* include it in this list, that user group is no longer associated with this work team.
 
 ## Delete a work team
 <a name="sms-workforce-manage-private-oidc-workteam-delete"></a>
@@ -126,8 +126,8 @@ When you create a workforce using your own OIDC IdP, you cannot use Ground Truth
 <a name="sms-workforce-manage-private-oidc-workforce"></a>
 
 You can update, delete, and describe your OIDC IdP workforce using the SageMaker API. The following is a list of API operations that you can use to manage your workforce. For additional details, including how you can locate your workforce name, see [Private workforce management using the Amazon SageMaker API](sms-workforce-management-private-api.md).
-+ [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateWorkforce.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateWorkforce.html) – You may want to update a workforce created using your own OIDC IdP to specify a different authorization endpoint, token endpoint, or issuer. You can update any parameter found in `[OidcConfig](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_OidcConfig.html)` using this operation.
++ [`UpdateWorkforce`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateWorkforce.html) – You may want to update a workforce created using your own OIDC IdP to specify a different authorization endpoint, token endpoint, or issuer. You can update any parameter found in `[OidcConfig](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_OidcConfig.html)` using this operation.
 
   You can only update your OIDC IdP configuration when there are no work teams associated with your workforce. To learn how to delete work teams, see [Delete a work team](#sms-workforce-manage-private-oidc-workteam-delete).
-+ [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteWorkforce.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteWorkforce.html) – Use this operation to delete your private workforce. If you have any work teams associated with your workforce, you must delete those work teams before you delete your work force. For more information, see [Delete a work team](#sms-workforce-manage-private-oidc-workteam-delete).
-+ [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeWorkforce.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeWorkforce.html) – Use this operation to list private workforce information, including workforce name, Amazon Resource Name (ARN), and, if applicable, allowed IP address ranges (CIDRs).
++ [`DeleteWorkforce`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteWorkforce.html) – Use this operation to delete your private workforce. If you have any work teams associated with your workforce, you must delete those work teams before you delete your work force. For more information, see [Delete a work team](#sms-workforce-manage-private-oidc-workteam-delete).
++ [`DescribeWorkforce`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeWorkforce.html) – Use this operation to list private workforce information, including workforce name, Amazon Resource Name (ARN), and, if applicable, allowed IP address ranges (CIDRs).

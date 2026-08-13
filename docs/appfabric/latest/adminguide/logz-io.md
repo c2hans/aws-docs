@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/logz-io.html
 # Logz.io
 <a name="logz-io"></a>
 
-Logz.io helps cloud native businesses monitor and secure their environments via the [http://logz.io/](http://logz.io/) Open 360 Platform – transforming observability and security from a high-cost, low-value burden into a high-value, cost-efficient enabler of better business outcomes.
+Logz.io helps cloud native businesses monitor and secure their environments via the [Logz.io](http://logz.io/) Open 360 Platform – transforming observability and security from a high-cost, low-value burden into a high-value, cost-efficient enabler of better business outcomes.
 
 Logz.io Cloud SIEM directly addresses today’s leading security challenges – from data overload to the omnipresent cyber skills gap – via fast querying, multidimensional detection and deep customizable security content to help monitor and investigate across the full-expanse of your cloud environment – with no performance degradation, regardless of data volumes.
 

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-res
 # Gray failures
 <a name="gray-failures"></a>
 
-Gray failures are defined by the characteristic of [https://doi.org/10.1145/3102980.3103005](https://doi.org/10.1145/3102980.3103005), meaning that different entities observe the failure differently. Let’s define what this means.
+Gray failures are defined by the characteristic of [*differential observability*](https://doi.org/10.1145/3102980.3103005), meaning that different entities observe the failure differently. Let’s define what this means.
 
 ## Differential observability
 <a name="differential-observability"></a>

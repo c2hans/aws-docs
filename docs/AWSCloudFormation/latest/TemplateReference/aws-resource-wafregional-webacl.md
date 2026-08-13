@@ -90,7 +90,7 @@ An array that contains the action for each `Rule` in a `WebACL`, the priority of
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name, such as 1234a1a-a1b1-12a1-abcd-a123b123456.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-wafregional-webacl-return-values-fn--getatt"></a>

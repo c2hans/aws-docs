@@ -23,7 +23,7 @@ Certain pages on the Connect Customer console, such as [Tasks](#tasks-page) and 
 + [Data storage page](#data-storage-page)
 + [Data streaming page](#data-streaming-page)
 + [Flows page](#contact-flows-page)
-+ [Contact Lens connectors page](#contactlensconnectors-page)
++ [Conversational analytics connectors page](#contactlensconnectors-page)
 + [Voice transfer integrations page](#voice-transfer-integrations-page)
 + [Application integration page](#application-integration-page)
 + [Customer Profiles page](#customer-profiles-page)
@@ -32,9 +32,9 @@ Certain pages on the Connect Customer console, such as [Tasks](#tasks-page) and 
 + [Cases page](#cases-page)
 + [Customer authentication page](#customer-authentication-page)
 + [Outbound campaigns page](#outbound-campaigns-page)
-+ [Connect AI agents page](#wisdom-page)
++ [agent assist page](#wisdom-page)
 + [Voice ID page](#voiceid-page)
-+ [Forecasting, capacity planning, and scheduling page](#forecasting-page)
++ [Forecasting & agent scheduling page](#forecasting-page)
 + [Federations](#federations)
 
 ## AWS managed policy: AmazonConnect\_FullAccess policy
@@ -89,7 +89,7 @@ Use the permissions listed in the following table to manage access to this page.
 | List instance | `connect:ListInstances`<br />`ds:DescribeDirectories` |
 | Describe instance: View the details of the instance/ current settings | `connect:DescribeInstance`<br />`connect:ListLambdaFunctions`<br />`connect:ListLexBots`<br />`connect:ListInstanceStorageConfigs`<br />`connect:ListApprovedOrigins`<br />`connect:ListSecurityKeys`<br />`connect:DescribeInstanceAttributes`<br />`connect:DescribeInstanceStorageConfig`<br />`ds:DescribeDirectories` |
 | Create instance | `connect:AssociateCustomerProfilesDomain`<br />`connect:CreateInstance`<br />`connect:DescribeInstance`<br />`connect:ListInstances`<br />`connect:AssociateInstanceStorageConfig`<br />`connect:UpdateInstanceAttribute`<br />`ds:CheckAlias`<br />`ds:CreateAlias`<br />`ds:AuthorizeApplication`<br />`ds:UnauthorizeApplication`<br />`ds:CreateIdentityPoolDirectory`<br />`ds:DescribeDirectories`<br />`iam:CreateServiceLinkedRole`<br />`iam:PutRolePolicy`<br />`kms:CreateGrant`<br />`kms:DescribeKey`<br />`kms:ListAliases`<br />`kms:RetireGrant`<br />`logs:CreateLogGroup`<br />`s3:CreateBucket`<br />`s3:GetBucketLocation`<br />`s3:ListAllMyBuckets`<br />`servicequotas:GetServiceQuota`<br />`profile:CreateDomain`<br />`profile:GetDomain`<br />`profile:GetProfileObjectType`<br />`profile:ListAccountIntegrations`<br />`profile:ListDomains`<br />`profile:ListProfileObjectTypeTemplates`<br />`profile:PutIntegration` |
-| Create a replica instance (Connect Customer Global Resiliency): Replicate an instance in another AWS Region with the [https://docs.aws.amazon.com/connect/latest/APIReference/API_ReplicateInstance.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_ReplicateInstance.html) API | `connect:ReplicateInstance`<br />Because this action creates a new instance in the replica AWS Region, you also need the permissions listed for **Create instance** in the preceding rows. |
+| Create a replica instance (Connect Customer Global Resiliency): Replicate an instance in another AWS Region with the [ReplicateInstance](https://docs.aws.amazon.com/connect/latest/APIReference/API_ReplicateInstance.html) API | `connect:ReplicateInstance`<br />Because this action creates a new instance in the replica AWS Region, you also need the permissions listed for **Create instance** in the preceding rows. |
 | Delete instance | `connect:DescribeInstance`<br />`connect:DeleteInstance`<br />`connect:ListInstances`<br />`ds:DescribeDirectories`<br />`ds:DeleteDirectory`<br />`ds:UnauthorizeApplication` |
 
 ## Detailed instance pages
@@ -236,13 +236,13 @@ To perform `Edit` actions, users also need `List` and `Describe` permissions.
 | View Amazon Polly option | `connect:DescribeInstance`<br />`connect:DescribeInstanceAttribute` |
 | Update Amazon Polly option | `connect:UpdateInstanceAttribute` |
 
-## Contact Lens connectors page
+## Conversational analytics connectors page
 <a name="contactlensconnectors-page"></a>
 
 | Action/Use case | Permissions needed |
 | --- | --- |
-| View Contact Lens connectors | `connect:ListIntegrationAssociations`<br />`chime:GetVoiceConnector`<br />`chime:GetVoiceConnectorLoggingConfiguration`<br />`chime:GetVoiceConnectorTermination`<br />`chime:GetVoiceConnectorTerminationHealth`<br />`chime:ListVoiceConnectors`<br />`chime:ListVoiceConnectorTerminationCredentials`<br />`chime:GetVoiceConnectorExternalSystemsConfiguration` |
-| Add/Update/Remove Contact Lens connectors | `chime:CreateVoiceConnector`<br />`chime:DeleteVoiceConnector`<br />`chime:DeleteVoiceConnectorTermination`<br />`chime:DeleteVoiceConnectorTerminationCredentials`<br />`chime:GetVoiceConnector`<br />`chime:GetVoiceConnectorLoggingConfiguration`<br />`chime:GetVoiceConnectorTermination`<br />`chime:GetVoiceConnectorTerminationHealth`<br />`chime:ListVoiceConnectors`<br />`chime:ListVoiceConnectorTerminationCredentials`<br />`chime:PutVoiceConnectorLoggingConfiguration`<br />`chime:PutVoiceConnectorTermination`<br />`chime:PutVoiceConnectorTerminationCredentials`<br />`chime:UpdateVoiceConnector`<br />`chime:CreateConnectAnalyticsConnector`<br />`chime:PutVoiceConnectorExternalSystemsConfiguration`<br />`chime:GetVoiceConnectorExternalSystemsConfiguration`<br />`chime:DeleteVoiceConnectorExternalSystemsConfiguration`<br />`chime:AssociateVoiceConnectorConnect`<br />`chime:DisassociateVoiceConnectorConnect`<br />`chime:TagResources`<br />`chime:UntagResources`<br />`chime:ListTagsForResource` |
+| View conversational analytics connectors | `connect:ListIntegrationAssociations`<br />`chime:GetVoiceConnector`<br />`chime:GetVoiceConnectorLoggingConfiguration`<br />`chime:GetVoiceConnectorTermination`<br />`chime:GetVoiceConnectorTerminationHealth`<br />`chime:ListVoiceConnectors`<br />`chime:ListVoiceConnectorTerminationCredentials`<br />`chime:GetVoiceConnectorExternalSystemsConfiguration` |
+| Add/Update/Remove conversational analytics connectors | `chime:CreateVoiceConnector`<br />`chime:DeleteVoiceConnector`<br />`chime:DeleteVoiceConnectorTermination`<br />`chime:DeleteVoiceConnectorTerminationCredentials`<br />`chime:GetVoiceConnector`<br />`chime:GetVoiceConnectorLoggingConfiguration`<br />`chime:GetVoiceConnectorTermination`<br />`chime:GetVoiceConnectorTerminationHealth`<br />`chime:ListVoiceConnectors`<br />`chime:ListVoiceConnectorTerminationCredentials`<br />`chime:PutVoiceConnectorLoggingConfiguration`<br />`chime:PutVoiceConnectorTermination`<br />`chime:PutVoiceConnectorTerminationCredentials`<br />`chime:UpdateVoiceConnector`<br />`chime:CreateConnectAnalyticsConnector`<br />`chime:PutVoiceConnectorExternalSystemsConfiguration`<br />`chime:GetVoiceConnectorExternalSystemsConfiguration`<br />`chime:DeleteVoiceConnectorExternalSystemsConfiguration`<br />`chime:AssociateVoiceConnectorConnect`<br />`chime:DisassociateVoiceConnectorConnect`<br />`chime:TagResources`<br />`chime:UntagResources`<br />`chime:ListTagsForResource` |
 
 ## Voice transfer integrations page
 <a name="voice-transfer-integrations-page"></a>
@@ -308,7 +308,7 @@ To perform `Edit` actions, users also need `List` and `Describe` permissions.
 |  View outbound campaigns  | `connect:ListIntegrationAssociations`<br />`connect:ListPhoneNumbersV2`<br />`connect:SearchEmailAddresses`<br />`connect:DescribeInstance`<br />`connect:DescribeInstanceAttribute`<br />`kms:DescribeKey`<br />`kms:ListKeys`<br />`profile:ListAccountIntegrations`<br />`profile:ListIntegrations`<br />`profile:ListDomains`<br />`profile:GetDomain`<br />`wisdom:ListKnowledgeBases`<br />`wisdom:GetKnowledgeBase`<br />`connect-campaigns:GetInstanceOnboardingJobStatus`<br />`connect-campaigns:GetConnectInstanceConfig`<br />`connect-campaigns:ListConnectInstanceIntegrations` |
 |  Create outbound campaigns  | `connect-campaigns:StartInstanceOnboardingJob`<br />`connect-campaigns:DeleteInstanceOnboardingJob`<br />`connect-campaigns:GetConnectInstanceConfig`<br />`connect-campaigns:GetInstanceOnboardingJobStatus`<br />`connect-campaigns:DeleteConnectInstanceConfig`<br />`connect:DescribeInstance`<br />`connect:DescribeInstanceAttribute`<br />`connect:UpdateInstanceAttribute`<br />`iam:CreateServiceLinkedRole`<br />`iam:DeleteServiceLinkedRole`<br />`iam:AttachRolePolicy`<br />`iam:PutRolePolicy`<br />`iam:DeleteRolePolicy`<br />`events:PutRule`<br />`events:PutTargets`<br />`events:DeleteRule`<br />`events:RemoveTargets`<br />`events:DescribeRule`<br />`events:ListTargetsByRule`<br />`ds:DescribeDirectories`<br />`kms:DescribeKey`<br />`kms:ListKeys`<br />`kms:CreateGrant`<br />`kms:RetireGrant`<br />`profile:CreateDomain`<br />`profile:ListAccountIntegrations`<br />`profile:ListIntegrations`<br />`profile:PutIntegration`<br />`profile:PutProfileObjectType`<br />`connect:CreateIntegrationAssociation`<br />`connect:ListIntegrationAssociations`<br />`connect:UpdateInstanceAttribute`<br />`connect:AssociateCustomerProfilesDomain`<br />`connect-campaigns:ListConnectInstanceIntegrations`<br />`connect-campaigns:PutConnectInstanceIntegration`<br />`wisdom:CreateKnowledgeBase`<br />`wisdom:ListKnowledgeBases` |
 
-## Connect AI agents page
+## agent assist page
 <a name="wisdom-page"></a>
 
 | Action/Use case | Permissions needed |
@@ -325,14 +325,14 @@ To perform `Edit` actions, users also need `List` and `Describe` permissions.
 | View Voice ID integrations | `voiceid:DescribeDomain`<br />`voiceid:ListDomains`<br />`voiceid:RegisterComplianceConsent`<br />`voiceid:DescribeComplianceConsent`<br />`connect:ListIntegrationAssociations` |
 | Edit Voice ID integrations | `voiceid:DescribeDomain`<br />`voiceid:ListDomains`<br />`voiceid:RegisterComplianceConsent`<br />`voiceid:DescribeComplianceConsent`<br />`voiceid:UpdateDomain`<br />`voiceid:CreateDomain`<br />`connect:ListIntegrationAssociations`<br />`connect:CreateIntegrationAssociation`<br />`connect:DeleteIntegrationAssociation`<br />`events:PutRule`<br />`events:DeleteRule`<br />`events:PutTargets`<br />`events:RemoveTargets`<br />`iam:PutRolePolicy` |
 
-## Forecasting, capacity planning, and scheduling page
+## Forecasting & agent scheduling page
 <a name="forecasting-page"></a>
 
 | Action/Use case | Permissions needed |
 | --- | --- |
-| View forecasting, capacity planning, and scheduling | `connect:DescribeForecastingPlanningSchedulingIntegration` |
-| Enable forecasting, capacity planning, and scheduling | `connect:UpdateInstanceAttribute`<br />`connect:StartForecastingPlanningSchedulingIntegration` |
-| Disable forecasting, capacity planning, and scheduling | `connect:UpdateInstanceAttribute`<br />`connect:StopForecastingPlanningSchedulingIntegration` |
+| View forecasting & agent scheduling | `connect:DescribeForecastingPlanningSchedulingIntegration` |
+| Enable forecasting & agent scheduling | `connect:UpdateInstanceAttribute`<br />`connect:StartForecastingPlanningSchedulingIntegration` |
+| Disable forecasting & agent scheduling | `connect:UpdateInstanceAttribute`<br />`connect:StopForecastingPlanningSchedulingIntegration` |
 
 ## Federations
 <a name="federations"></a>

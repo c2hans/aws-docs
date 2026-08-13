@@ -24,7 +24,7 @@ The Amazon is the largest rainforest on the
 The Amazon is the largest rainforest on the planet.
 ```
 
-These partial results are present in your transcription output within the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_Result.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_Result.html) objects. Also in this object block is an **IsPartial** field. If this field is true, your transcription segment is not yet complete. You can view the difference between an incomplete and a complete segment below:
+These partial results are present in your transcription output within the [`Results`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_Result.html) objects. Also in this object block is an **IsPartial** field. If this field is true, your transcription segment is not yet complete. You can view the difference between an incomplete and a complete segment below:
 
 ```
 {{"IsPartial": true (incomplete segment)}}

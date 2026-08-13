@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCent
 # Configure CloudWatch alarms to create OpsItems
 <a name="OpsCenter-create-OpsItems-from-CloudWatch-Alarms"></a>
 
-During the integrated setup of OpsCenter, a tool in AWS Systems Manager, you enable Amazon CloudWatch to automatically create OpsItems based on common alarms. You can create an alarm or edit an existing alarm to create OpsItems in OpsCenter.
+During the integrated setup of OpsCenter, you enable Amazon CloudWatch to automatically create OpsItems based on common alarms. You can create an alarm or edit an existing alarm to create OpsItems in OpsCenter.
 
 CloudWatch creates a new service-linked role in AWS Identity and Access Management (IAM) when you configure an alarm to create OpsItems. The new role is named `AWSServiceRoleForCloudWatchAlarms_ActionSSM`. For more information about CloudWatch service-linked roles, see [Using service-linked roles for CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/using-service-linked-roles.html) in the *Amazon CloudWatch User Guide*.
 

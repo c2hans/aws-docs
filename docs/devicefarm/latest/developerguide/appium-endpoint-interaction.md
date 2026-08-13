@@ -31,8 +31,8 @@ To use an uploaded app with your Appium session, follow these steps:
 **Upload and install your app**
 
    There are two ways to upload and install an app onto the device under test:
-   + Include the app ARN in your [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateRemoteAccessSession.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateRemoteAccessSession.html) request. The app is automatically installed onto the device when the session starts. You can also include auxiliary app ARNs, which will be installed alongside the primary app.
-   + Install the app during an active session using the [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_InstallToRemoteAccessSession.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_InstallToRemoteAccessSession.html) API, or by uploading it through the Device Farm console. This allows you to change the app under test without creating a new session.
+   + Include the app ARN in your [`CreateRemoteAccessSession`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateRemoteAccessSession.html) request. The app is automatically installed onto the device when the session starts. You can also include auxiliary app ARNs, which will be installed alongside the primary app.
+   + Install the app during an active session using the [`InstallToRemoteAccessSession`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_InstallToRemoteAccessSession.html) API, or by uploading it through the Device Farm console. This allows you to change the app under test without creating a new session.
 
 1.
 
@@ -244,7 +244,7 @@ First, verify that your AWS CLI version is up-to-date by [downloading and instal
 **Important**
 The Appium endpoint field isn't available in older versions of the AWS CLI.
 
-Once your session is up and running, the Appium endpoint URL will be available via a field named `remoteDriverEndpoint` in the response to a call to the [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRemoteAccessSession.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRemoteAccessSession.html) API:
+Once your session is up and running, the Appium endpoint URL will be available via a field named `remoteDriverEndpoint` in the response to a call to the [`GetRemoteAccessSession`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRemoteAccessSession.html) API:
 
 ```
 $ aws devicefarm get-remote-access-session \
@@ -292,7 +292,7 @@ This will show output such as the following:
 ------
 #### [ Python ]
 
-Once your session is up and running, the Appium endpoint URL will be available via a field named `remoteDriverEndpoint` in the response to a call to the [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRemoteAccessSession.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRemoteAccessSession.html) API:
+Once your session is up and running, the Appium endpoint URL will be available via a field named `remoteDriverEndpoint` in the response to a call to the [`GetRemoteAccessSession`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRemoteAccessSession.html) API:
 
 ```
 # To get the URL
@@ -333,7 +333,7 @@ driver.quit()
 
 *Note: this example uses the AWS SDK for Java v2, and is compatible with JDK versions 11 and higher.*
 
-Once your session is up and running, the Appium endpoint URL will be available via a field named `remoteDriverEndpoint` in the response to a call to the [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRemoteAccessSession.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRemoteAccessSession.html) API:
+Once your session is up and running, the Appium endpoint URL will be available via a field named `remoteDriverEndpoint` in the response to a call to the [`GetRemoteAccessSession`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRemoteAccessSession.html) API:
 
 ```
 // To get the URL
@@ -391,7 +391,7 @@ public class ExampleTest {
 
 *Note: this example uses AWS SDK for JavaScript v3 and WebdriverIO v8\+ using Node 18\+.*
 
-Once your session is up and running, the Appium endpoint URL will be available via a field named `remoteDriverEndpoint` in the response to a call to the [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRemoteAccessSession.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRemoteAccessSession.html) API:
+Once your session is up and running, the Appium endpoint URL will be available via a field named `remoteDriverEndpoint` in the response to a call to the [`GetRemoteAccessSession`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRemoteAccessSession.html) API:
 
 ```
 // To get the URL
@@ -438,7 +438,7 @@ import { remote } from "webdriverio";
 ------
 #### [ C\# ]
 
-Once your session is up and running, the Appium endpoint URL will be available via a field named `remoteDriverEndpoint` in the response to a call to the [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRemoteAccessSession.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRemoteAccessSession.html) API:
+Once your session is up and running, the Appium endpoint URL will be available via a field named `remoteDriverEndpoint` in the response to a call to the [`GetRemoteAccessSession`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRemoteAccessSession.html) API:
 
 ```
 // To get the URL
@@ -500,7 +500,7 @@ class Example
 ------
 #### [ Ruby ]
 
-Once your session is up and running, the Appium endpoint URL will be available via a field named `remoteDriverEndpoint` in the response to a call to the [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRemoteAccessSession.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRemoteAccessSession.html) API:
+Once your session is up and running, the Appium endpoint URL will be available via a field named `remoteDriverEndpoint` in the response to a call to the [`GetRemoteAccessSession`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRemoteAccessSession.html) API:
 
 ```
 # To get the URL

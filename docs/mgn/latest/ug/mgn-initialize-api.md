@@ -37,17 +37,17 @@ To initialize MGN with the API, create the following IAM roles through the [IAM 
 <table>
 <thead>
   <tr><th>Role name</th><th colspan="3">Trusted entities</th></tr>
-  <tr><th></th><th>Principal</th><th>Action</th><th>Condition</th></tr>
+  <tr><th></th><th><b>Principal</b></th><th><b>Action</b></th><th><b>Condition</b></th></tr>
 </thead>
 <tbody>
-  <tr><td>**AWSApplicationMigrationReplicationServerRole**</td><td>"ec2.amazonaws.com"</td><td>"sts:AssumeRole"</td><td>-</td></tr>
-  <tr><td>**AWSApplicationMigrationConversionServerRole**</td><td>"ec2.amazonaws.com"</td><td>"sts:AssumeRole"</td><td>-</td></tr>
-  <tr><td>**AWSApplicationMigrationMGHRole**</td><td>"mgn.amazonaws.com"</td><td>"sts:AssumeRole"</td><td>-</td></tr>
-  <tr><td>**AWSApplicationMigrationLaunchInstanceWithDrsRole**</td><td>"ec2.amazonaws.com"</td><td>"sts:AssumeRole"</td><td>-</td></tr>
-  <tr><td>**AWSApplicationMigrationLaunchInstanceWithSsmRole**</td><td>"ec2.amazonaws.com"</td><td>"sts:AssumeRole" </td><td>-</td></tr>
-  <tr><td>**AWSApplicationMigrationFsxProxyRole**</td><td>"mgn.amazonaws.com"</td><td>"sts:AssumeRole"</td><td>-</td></tr>
-  <tr><td>**AWSApplicationMigrationFsxProxyLinkRole**</td><td>"mgn.amazonaws.com"</td><td>"sts:AssumeRole"</td><td>-</td></tr>
-  <tr><td>**AWSApplicationMigrationAgentRole**</td><td>"mgn.amazonaws.com"</td><td>["sts:AssumeRole", "sts:SetSourceIdentity"]</td><td>{"StringLike": {"sts:SourceIdentity": "s-\*", "aws:SourceAccount": "<SOURCE-ACCOUNT-ID>"}</td></tr>
+  <tr><td><b>AWSApplicationMigrationReplicationServerRole</b></td><td>"ec2.amazonaws.com"</td><td>"sts:AssumeRole"</td><td>-</td></tr>
+  <tr><td><b>AWSApplicationMigrationConversionServerRole</b></td><td>"ec2.amazonaws.com"</td><td>"sts:AssumeRole"</td><td>-</td></tr>
+  <tr><td><b>AWSApplicationMigrationMGHRole</b></td><td>"mgn.amazonaws.com"</td><td>"sts:AssumeRole"</td><td>-</td></tr>
+  <tr><td><b>AWSApplicationMigrationLaunchInstanceWithDrsRole</b></td><td>"ec2.amazonaws.com"</td><td>"sts:AssumeRole"</td><td>-</td></tr>
+  <tr><td><b>AWSApplicationMigrationLaunchInstanceWithSsmRole</b></td><td>"ec2.amazonaws.com"</td><td>"sts:AssumeRole" </td><td>-</td></tr>
+  <tr><td><b>AWSApplicationMigrationFsxProxyRole</b></td><td>"mgn.amazonaws.com"</td><td>"sts:AssumeRole"</td><td>-</td></tr>
+  <tr><td><b>AWSApplicationMigrationFsxProxyLinkRole</b></td><td>"mgn.amazonaws.com"</td><td>"sts:AssumeRole"</td><td>-</td></tr>
+  <tr><td><b>AWSApplicationMigrationAgentRole</b></td><td>"mgn.amazonaws.com"</td><td>["sts:AssumeRole", "sts:SetSourceIdentity"]</td><td>{"StringLike": {"sts:SourceIdentity": "s-*", "aws:SourceAccount": "&lt;SOURCE-ACCOUNT-ID&gt;"}</td></tr>
 </tbody>
 </table>
 

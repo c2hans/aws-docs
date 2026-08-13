@@ -21,14 +21,14 @@ You must create roles in IAM if you'll be taking one or more of the following ac
 + [Creating a subscriber with query access](prereqs-query-subscriber.md#iam-role-query-subscriber) – Subscribers with permissions can query data from Security Lake using services like Amazon Athena.
 + [Configuring a rollup Region](add-rollup-region.md#iam-role-replication) – A rollup Region consolidates data from multiple AWS Regions.
 
-After creating the roles previously mentioned, attach the [https://docs.aws.amazon.com/security-lake/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-AmazonSecurityLakeAdministrator](https://docs.aws.amazon.com/security-lake/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-AmazonSecurityLakeAdministrator) AWS managed policy to the role that you're using to enable Security Lake. This policy grants administrative permissions that allow a principal to onboard to Security Lake and access all Security Lake actions.
+After creating the roles previously mentioned, attach the [AmazonSecurityLakeAdministrator](https://docs.aws.amazon.com/security-lake/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-AmazonSecurityLakeAdministrator) AWS managed policy to the role that you're using to enable Security Lake. This policy grants administrative permissions that allow a principal to onboard to Security Lake and access all Security Lake actions.
 
-Attach the [https://docs.aws.amazon.com/security-lake/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-AmazonSecurityLakeAdministrator](https://docs.aws.amazon.com/security-lake/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-AmazonSecurityLakeAdministrator) AWS managed policy to create your data lake or query data from Security Lake. This policy is necessary for Security Lake to support extract, transform, and load (ETL) jobs on raw log and event data that it receives from sources.
+Attach the [AmazonSecurityLakeMetaStoreManager](https://docs.aws.amazon.com/security-lake/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-AmazonSecurityLakeAdministrator) AWS managed policy to create your data lake or query data from Security Lake. This policy is necessary for Security Lake to support extract, transform, and load (ETL) jobs on raw log and event data that it receives from sources.
 
 ## Step 2: Enable Amazon Security Lake
 <a name="enable-service-programmatic"></a>
 
-To enable Security Lake programmatically, use the [https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDataLake.html](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDataLake.html) operation of the Security Lake API. If you're using the AWS CLI, run the [create-data-lake](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/create-data-lake.html) command. In your request, use the `region` field of the `configurations` object to specify the Region code for the Region in which to enable Security Lake. For a list of Region codes, see [Amazon Security Lake endpoints](https://docs.aws.amazon.com/general/latest/gr/securitylake.html) in the *AWS General Reference*.
+To enable Security Lake programmatically, use the [CreateDataLake](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDataLake.html) operation of the Security Lake API. If you're using the AWS CLI, run the [create-data-lake](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/create-data-lake.html) command. In your request, use the `region` field of the `configurations` object to specify the Region code for the Region in which to enable Security Lake. For a list of Region codes, see [Amazon Security Lake endpoints](https://docs.aws.amazon.com/general/latest/gr/securitylake.html) in the *AWS General Reference*.
 
 **Example 1**
 
@@ -51,7 +51,7 @@ $ aws securitylake create-data-lake \
 ```
 
 **Note**
-If you've already enabled Security Lake and want to update the configuration settings for a Region or source, use the [https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDataLake.html](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDataLake.html) operation, or if using the AWS CLI, the [update-data-lake](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/update-data-lake.html) command. Don't use the `CreateDataLake` operation.
+If you've already enabled Security Lake and want to update the configuration settings for a Region or source, use the [UpdateDataLake](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDataLake.html) operation, or if using the AWS CLI, the [update-data-lake](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/update-data-lake.html) command. Don't use the `CreateDataLake` operation.
 
 ## Step 3: Configure sources
 <a name="define-collection-objective-programmatic"></a>
@@ -72,7 +72,7 @@ When you enable Security Lake in an account for the first time, all the selected
 
 You can specify the Amazon S3 storage class in which you want Security Lake to store your data and for how long. You can also specify a rollup Region to consolidate data from multiple Regions. These are optional steps. For more information, see [Lifecycle management in Security Lake](lifecycle-management.md).
 
-To define a target objective programmatically when you enable Security Lake, use the [https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDataLake.html](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDataLake.html) operation of the Security Lake API. If you've already enabled Security Lake and want to define a target objective, use the [https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDataLake.html](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDataLake.html) operation, not the `CreateDataLake` operation.
+To define a target objective programmatically when you enable Security Lake, use the [CreateDataLake](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDataLake.html) operation of the Security Lake API. If you've already enabled Security Lake and want to define a target objective, use the [UpdateDataLake](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDataLake.html) operation, not the `CreateDataLake` operation.
 
 For either operation, use the supported parameters to specify the configuration settings that you want:
 + To specify a rollup Region, use the `region` field to specify the Region that you want to contribute data to the rollup Regions. In the `regions` array of the `replicationConfiguration` object, specify the Region code for each rollup Region. For a list of Region codes, see [Amazon Security Lake endpoints](https://docs.aws.amazon.com/general/latest/gr/securitylake.html) in the *AWS General Reference*.
@@ -90,9 +90,9 @@ $ aws securitylake create-data-lake \
 --meta-store-manager-role-arn "{{arn:aws:iam::123456789012:role/service-role/AmazonSecurityLakeMetaStoreManager}}"
 ```
 
-You have now created your data lake. Use the [https://docs.aws.amazon.com/security-lake/latest/APIReference/API_ListDataLakes.html](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_ListDataLakes.html) operation of the Security Lake API to verify enablement of Security Lake and your data lake settings in each Region.
+You have now created your data lake. Use the [ListDataLakes](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_ListDataLakes.html) operation of the Security Lake API to verify enablement of Security Lake and your data lake settings in each Region.
 
-If issues or errors arise in the creation of your data lake, you can view a list of exceptions by using the [https://docs.aws.amazon.com/security-lake/latest/APIReference/API_ListDataLakeExceptions.html](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_ListDataLakeExceptions.html) operation, and notify users of exceptions with the [https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDataLakeExceptionSubscription.html](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDataLakeExceptionSubscription.html) operation. For more information, see [Troubleshooting data lake status](securitylake-data-lake-troubleshoot.md).
+If issues or errors arise in the creation of your data lake, you can view a list of exceptions by using the [ListDataLakeExceptions](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_ListDataLakeExceptions.html) operation, and notify users of exceptions with the [CreateDataLakeExceptionSubscription](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDataLakeExceptionSubscription.html) operation. For more information, see [Troubleshooting data lake status](securitylake-data-lake-troubleshoot.md).
 
 ## Step 5: View and query your own data
 <a name="explore-data-lake-programmatic"></a>

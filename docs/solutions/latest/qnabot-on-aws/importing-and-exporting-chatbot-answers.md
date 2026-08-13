@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/importing
 # Importing and exporting chatbot answers
 <a name="importing-and-exporting-chatbot-answers"></a>
 
-The solution’s content designer allows you to export and import your content using JSON and Excel files.
+The guidance’s content designer allows you to export and import your content using JSON and Excel files.
 
 Use the export feature to create backup versions of your content that you can use to restore if you accidentally delete items or need to go back to a previous version. You can also use the exported files to load content into another instance of your chatbot to help with test deployments.
 

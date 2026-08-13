@@ -183,7 +183,7 @@ The following PHP example illustrates the use of the `copyObject()` method to co
 |  |  |
 | --- |--- |
 | 1 | Create an instance of an Amazon S3 client by using the `Aws\S3\S3Client` class constructor. |
-| 2 | To make multiple copies of an object, you run a batch of calls to the Amazon S3 client [https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#_getCommand](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#_getCommand) method, which is inherited from the [https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html) class. You provide the `CopyObject` command as the first argument and an array containing the source bucket, source key name, target bucket, and target key name as the second argument.  |
+| 2 | To make multiple copies of an object, you run a batch of calls to the Amazon S3 client [getCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#_getCommand) method, which is inherited from the [Aws\\CommandInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html) class. You provide the `CopyObject` command as the first argument and an array containing the source bucket, source key name, target bucket, and target key name as the second argument.  |
 
 ```
  require 'vendor/autoload.php';
@@ -344,7 +344,7 @@ run_demo if $PROGRAM_NAME == __FILE__
 ### Using the REST API
 <a name="CopyingObjectUsingREST"></a>
 
-This example describes how to copy an object by using the Amazon S3 REST API. For more information about the REST API, see [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectCOPY.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectCOPY.html).
+This example describes how to copy an object by using the Amazon S3 REST API. For more information about the REST API, see [CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectCOPY.html).
 
 This example copies the `flotsam` object from the `{{amzn-s3-demo-bucket1}}` bucket to the `jetsam` object of the `{{amzn-s3-demo-bucket2}}` bucket, preserving its metadata.
 
@@ -391,7 +391,7 @@ Amazon S3 returns the following response that specifies the ETag of the object a
 ### Using the AWS CLI
 <a name="copy-object-cli"></a>
 
-You can also use the AWS Command Line Interface (AWS CLI) to copy an S3 object. For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/copy-object.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/copy-object.html) in the *AWS CLI Command Reference*.
+You can also use the AWS Command Line Interface (AWS CLI) to copy an S3 object. For more information, see [copy-object](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/copy-object.html) in the *AWS CLI Command Reference*.
 
 For information about the AWS CLI, see [What is the AWS Command Line Interface?](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in the *AWS Command Line Interface User Guide*.
 
@@ -433,7 +433,7 @@ You can't use S3 access point aliases as the source or destination for **Move** 
 ### Using the AWS CLI
 <a name="move-object-cli"></a>
 
-You can also use the AWS Command Line Interface (AWS CLI) to move an S3 object. For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/mv.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/mv.html) in the *AWS CLI Command Reference*.
+You can also use the AWS Command Line Interface (AWS CLI) to move an S3 object. For more information, see [mv](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/mv.html) in the *AWS CLI Command Reference*.
 
 For information about the AWS CLI, see [What is the AWS Command Line Interface?](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in the *AWS Command Line Interface User Guide*.
 

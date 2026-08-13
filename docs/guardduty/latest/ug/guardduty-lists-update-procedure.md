@@ -50,7 +50,7 @@ To begin with the following procedures, you need the ID, such as `trustedEntityS
 
 **To update and activate a trusted entity list**
 
-1. Run [UpdateTrustedEntitySet](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateTrustedEntitySet.html). Make sure to provide the `detectorId` of the member account for which you want to update this trusted entity list. To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+1. Run [UpdateTrustedEntitySet](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateTrustedEntitySet.html). Make sure to provide the `detectorId` of the member account for which you want to update this trusted entity list. To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
    **List naming constraints** – The name of your list can include lowercase letters, uppercase letters, numbers, dash (-), and underscore (\_).
 
@@ -74,7 +74,7 @@ To begin with the following procedures, you need the ID, such as `trustedEntityS
 
 **To update and activate a threat entity list**
 
-1. Run [UpdateThreatEntitySet](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateThreatEntitySet.html). Make sure to provide the `detectorId` of the member account for which you want to create this threat entity list. To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+1. Run [UpdateThreatEntitySet](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateThreatEntitySet.html). Make sure to provide the `detectorId` of the member account for which you want to create this threat entity list. To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
    **List naming constraints** – The name of your list can include lowercase letters, uppercase letters, numbers, dash (-), and underscore (\_).
 
@@ -98,7 +98,7 @@ To begin with the following procedures, you need the ID, such as `trustedEntityS
 
 **To update and activate a trusted IP address list**
 
-1. Run [CreateIPSet](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateIPSet.html). Make sure to provide the `detectorId` of the member account for which you want to update this trusted IP address list. To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+1. Run [CreateIPSet](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateIPSet.html). Make sure to provide the `detectorId` of the member account for which you want to update this trusted IP address list. To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
    **List naming constraints** – The name of your list can include lowercase letters, uppercase letters, numbers, dash (-), and underscore (\_).
 
@@ -122,7 +122,7 @@ To begin with the following procedures, you need the ID, such as `trustedEntityS
 
 **To add and activate threat IP lists**
 
-1. Run [CreateThreatIntelSet](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateThreatIntelSet.html). Make sure to provide the `detectorId` of the member account for which you want to create this threat IP address list. To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+1. Run [CreateThreatIntelSet](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateThreatIntelSet.html). Make sure to provide the `detectorId` of the member account for which you want to create this threat IP address list. To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
    **List naming constraints** – The name of your list can include lowercase letters, uppercase letters, numbers, dash (-), and underscore (\_).
 

@@ -154,8 +154,8 @@ New packages in AL2023.3.20231211:
 
 The full comparison of RPM package versions is below.
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html](https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html](https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html)
+- ** [`amazon-linux-sb-keys`](https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html) **
+  - **RPM:**  [`amazon-linux-sb-keys`](https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html)
   - **Architectures:** noarch
   - **AL2023.2.20231113 version:** 2023.1-1.amzn2023.0.3
   - **AL2023.3.20231211 version:** 2023.1-1.amzn2023.0.4
@@ -214,8 +214,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.2.20231113 version:** 6.0.23-1.amzn2023.0.1
   - **AL2023.3.20231211 version:** 6.0.25-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
+- ** [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
+  - **RPM:**  [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.2.20231113 version:** 1.79.0-1.amzn2023
   - **AL2023.3.20231211 version:** 1.79.1-1.amzn2023
@@ -281,8 +281,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.2.20231113 version:** 3.0.8-1.amzn2023.0.9
   - **AL2023.3.20231211 version:** 3.0.8-1.amzn2023.0.10
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/perl.html](https://docs.aws.amazon.com/linux/al2023/ug/perl.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/perl.html](https://docs.aws.amazon.com/linux/al2023/ug/perl.html)  / **Architectures:** aarch64, x86\_64
+- ** [`perl`](https://docs.aws.amazon.com/linux/al2023/ug/perl.html) **
+  - **RPM:**  [`perl`](https://docs.aws.amazon.com/linux/al2023/ug/perl.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  perl-Attribute-Handlers  / **Architectures:** noarch
   - **RPM:**  perl-AutoLoader  / **Architectures:** noarch
   - **RPM:**  perl-AutoSplit  / **Architectures:** noarch
@@ -386,8 +386,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.2.20231113 version:** 5.32.1-477.amzn2023.0.5
   - **AL2023.3.20231211 version:** 5.32.1-477.amzn2023.0.6
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  / **Architectures:** aarch64, x86\_64
+- ** [`python3.11`](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
+  - **RPM:**  [`python3.11`](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.11-debug  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.11-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.11-idle  / **Architectures:** aarch64, x86\_64

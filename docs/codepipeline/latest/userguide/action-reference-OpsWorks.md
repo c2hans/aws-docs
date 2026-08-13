@@ -19,15 +19,15 @@ You use an AWS OpsWorks action to deploy with OpsWorks using your pipeline.
 
 **App**
 Required: Yes
-The OpsWorks stack. A stack is a container for your application infrastructure.
+The OpsWorks app. The app represents the code you want to deploy and run.
 
 **Stack**
 Required: Yes
-The OpsWorks app. The app represents the code you want to deploy and run.
+The OpsWorks stack. A stack is a container for your application infrastructure.
 
 **Layer**
 Required: No
-The OpsWorks stack. A layer specifies the configuration and resources for a set of instances.
+The OpsWorks layer. A layer specifies the configuration and resources for a set of instances.
 
 ## Input artifacts
 <a name="action-reference-OpsWorks-input"></a>

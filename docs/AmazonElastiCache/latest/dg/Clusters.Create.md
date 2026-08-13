@@ -207,7 +207,7 @@ aws elasticache create-cache-cluster ^
 
 Valkey or Redis OSS (cluster mode enabled) clusters (API/CLI: replication groups) cannot be created using the `create-cache-cluster` operation. To create a Valkey or Redis OSS (cluster mode enabled) cluster (API/CLI: replication group), see [Creating a Valkey or Redis OSS (Cluster Mode Enabled) replication group from scratch (AWS CLI)](Replication.CreatingReplGroup.NoExistingCluster.Cluster.md#Replication.CreatingReplGroup.NoExistingCluster.Cluster.CLI).
 
-For more information, see the AWS CLI for ElastiCache reference topic [https://docs.aws.amazon.com/cli/latest/reference/elasticache/create-replication-group.html](https://docs.aws.amazon.com/cli/latest/reference/elasticache/create-replication-group.html).
+For more information, see the AWS CLI for ElastiCache reference topic [`create-replication-group`](https://docs.aws.amazon.com/cli/latest/reference/elasticache/create-replication-group.html).
 
 ## Creating a cluster for Valkey or Redis OSS (ElastiCache API)
 <a name="Clusters.Create.API.red-heading"></a>
@@ -255,4 +255,4 @@ https://elasticache.us-west-2.amazonaws.com/
 
 Valkey or Redis OSS (cluster mode enabled) clusters (API/CLI: replication groups) cannot be created using the `CreateCacheCluster` operation. To create a Valkey or Redis OSS (cluster mode enabled) cluster (API/CLI: replication group), see [Creating a replication group in Valkey or Redis OSS (Cluster Mode Enabled) from scratch (ElastiCache API)](Replication.CreatingReplGroup.NoExistingCluster.Cluster.md#Replication.CreatingReplGroup.NoExistingCluster.Cluster.API).
 
-For more information, see the ElastiCache API reference topic [https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_CreateReplicationGroup.html](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_CreateReplicationGroup.html).
+For more information, see the ElastiCache API reference topic [`CreateReplicationGroup`](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_CreateReplicationGroup.html).

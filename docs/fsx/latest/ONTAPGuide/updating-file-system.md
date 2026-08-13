@@ -62,7 +62,7 @@ The following procedures provide you with instructions on how to make updates to
 
 1. Choose **Update credentials** to save your change.
 **Note**
-If you receive an error stating that the new password does not meet the password requirements, you can use the [https://docs.netapp.com/us-en/ontap-cli-9141/security-login-role-config-show.html#description](https://docs.netapp.com/us-en/ontap-cli-9141/security-login-role-config-show.html#description) ONTAP CLI command to view the password requirement settings on the file system. For more information, including instructions on how to change password setting, see [Updating the `fsxadmin` account password fails](updating-admin-password.md).
+If you receive an error stating that the new password does not meet the password requirements, you can use the [`security login role config show`](https://docs.netapp.com/us-en/ontap-cli-9141/security-login-role-config-show.html#description) ONTAP CLI command to view the password requirement settings on the file system. For more information, including instructions on how to change password setting, see [Updating the `fsxadmin` account password fails](updating-admin-password.md).
 
 **To update VPC route tables on Multi-AZ file systems**
 

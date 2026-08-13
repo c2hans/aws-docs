@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/monitor
 # Logging AWS Systems Manager API calls with AWS CloudTrail
 <a name="monitoring-cloudtrail-logs"></a>
 
-AWS Systems Manager is integrated with [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html), a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures all API calls for Systems Manager as events. The calls captured include calls from the Systems Manager console and code calls to the Systems Manager API operations. Using the information collected by CloudTrail, you can determine the request that was made to Systems Manager, the IP address from which the request was made, when it was made, and additional details.
+AWS Systems Manager is integrated with [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html), a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures all API calls for Systems Manager as events. The calls captured include calls from the Systems Manager console and code calls to the Systems Manager API operations. You can use CloudTrail information to determine the request that was made to Systems Manager, the source IP address, and when it was made.
 
 Every event or log entry contains information about who generated the request. The identity information helps you determine the following:
 + Whether the request was made with root user or user credentials.
@@ -30,7 +30,7 @@ CloudTrail Lake event data stores and queries incur costs. When you create an ev
 ## Systems Manager data events in CloudTrail
 <a name="cloudtrail-data-events"></a>
 
-[Data events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html#logging-data-events) provide information about the resource operations performed on or in a resource (for example, creating or opening a control channel). These are also known as data plane operations. Data events are often high-volume activities. By default, CloudTrail doesn’t log data events. The CloudTrail **Event history** doesn't record data events.
+[Data events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html#logging-data-events) provide information about the resource operations performed on or in a resource (for example, creating or opening a control channel). These are also known as data plane operations. Data events are often high-volume activities. By default, CloudTrail doesn't log data events. The CloudTrail **Event history** doesn't record data events.
 
 Additional charges apply for data events. For more information about CloudTrail pricing, see [AWS CloudTrail Pricing](https://aws.amazon.com/cloudtrail/pricing/).
 
@@ -43,7 +43,7 @@ The following table lists the Systems Manager resource types for which you can l
 | Systems Manager |  AWS::SSMMessages::ControlChannel  | +  `CreateControlChannel` <br />+  `OpenControlChannel` For more information about these operations, see [ Actions defined by Amazon Message Gateway Service](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmessagegatewayservice.html#amazonmessagegatewayservice-actions-as-permissions) in the *Service Authorization Reference*. |
 | Systems Manager managed node |  AWS::SSM::ManagedNode  | +  `RequestManagedInstanceRoleToken` – This event is generated when the AWS Systems Manager Agent (SSM Agent) running on a node managed by Systems Manager requests credentials from the Systems Manager credential service. For more information about the `RequestManagedInstanceRoleToken` operation, see [Validating hybrid-activated machines using a hardware fingerprint](ssm-agent-technical-details.md#fingerprint-validation) |
 
-You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
+You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [AdvancedFieldSelector](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
 
 ## Systems Manager management events in CloudTrail
 <a name="cloudtrail-management-events"></a>

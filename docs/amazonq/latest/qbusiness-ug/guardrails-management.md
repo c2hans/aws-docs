@@ -19,7 +19,7 @@ You can't create or delete guardrail global controls. You can only update existi
 ## Deleting topic controls
 <a name="guardrails-update"></a>
 
-To delete configured chat controls, you can use AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteChatControlsConfiguration.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteChatControlsConfiguration.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
+To delete configured chat controls, you can use AWS Management Console or the [DeleteChatControlsConfiguration](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteChatControlsConfiguration.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
 ------
 #### [ Console ]
@@ -53,7 +53,7 @@ aws qbusiness delete-chat-controls-configuration \
 ## Getting topic control properties
 <a name="topic-control-properties"></a>
 
-To get the details of Amazon Q Business topic controls, you can use either the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetChatControlsConfiguration.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetChatControlsConfiguration.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
+To get the details of Amazon Q Business topic controls, you can use either the AWS Management Console or the [GetChatControlsConfiguration](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetChatControlsConfiguration.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
 ------
 #### [ Console ]

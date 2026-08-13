@@ -19,7 +19,7 @@ This guide explains the basic steps to get started with Amazon Monitron:
 
 1. **Understanding alerts**—This is the daily use of Amazon Monitron and is done using the mobile app. It consists of daily monitoring, as well as the tasks that have to be dealt with when Amazon Monitron discovers a possible machine abnormality.
 
-For more detailed steps, refer to the [https://docs.aws.amazon.com/Monitron/latest/user-guide/what-is-monitron.html](https://docs.aws.amazon.com/Monitron/latest/user-guide/what-is-monitron.html). To learn more about Amazon Monitron, you can visit the [Amazon Monitron product detail page](https://aws.amazon.com/monitron/).
+For more detailed steps, refer to the [*Amazon Monitron User Guide*](https://docs.aws.amazon.com/Monitron/latest/user-guide/what-is-monitron.html). To learn more about Amazon Monitron, you can visit the [Amazon Monitron product detail page](https://aws.amazon.com/monitron/).
 
 **Topics**
 + [Setting up a project](step-1.md)

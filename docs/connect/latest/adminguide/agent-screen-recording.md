@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agent-screen-r
 # Set up and review agent screen recordings in Connect Customer
 <a name="agent-screen-recording"></a>
 
-To help coach your agents to provide great customer service, you can use the Contact Lens screen recording feature to gain quality management insights. It records the agent's desktop, which helps you identify opportunities to improve performance. This information is also useful for ensuring compliance.
+To help coach your agents to provide great customer service, you can use the screen recording feature to gain quality management insights. It records the agent's desktop, which helps you identify opportunities to improve performance. This information is also useful for ensuring compliance.
 
 For example, let's assume it takes most agents two minutes to process a refund, but Jane Doe takes four minutes. You can watch a recording of her desktop when she's doing a refund and discover why she is taking longer.
 

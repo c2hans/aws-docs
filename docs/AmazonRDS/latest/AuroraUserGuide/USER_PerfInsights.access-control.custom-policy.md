@@ -17,7 +17,7 @@ For users who don't have either the `AmazonRDSPerformanceInsightsReadOnly` or `A
 
 1. On the **Create Policy** page, choose the **JSON** option.
 
-1. Copy and paste the text provided in the *JSON policy document* section in the *AWS Managed Policy Reference Guide* for [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonRDSPerformanceInsightsReadOnly.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonRDSPerformanceInsightsReadOnly.html) or [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonRDSPerformanceInsightsFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonRDSPerformanceInsightsFullAccess.html) policy.
+1. Copy and paste the text provided in the *JSON policy document* section in the *AWS Managed Policy Reference Guide* for [AmazonRDSPerformanceInsightsReadOnly](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonRDSPerformanceInsightsReadOnly.html) or [AmazonRDSPerformanceInsightsFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonRDSPerformanceInsightsFullAccess.html) policy.
 
 1. Choose **Review policy**.
 

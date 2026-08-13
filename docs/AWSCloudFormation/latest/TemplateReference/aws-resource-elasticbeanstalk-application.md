@@ -73,7 +73,7 @@ Specifies an application resource lifecycle configuration to prevent your applic
 
 When the logical ID of this resource is provided to the `Ref` intrinsic function, `Ref` returns the resource name.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-elasticbeanstalk-application--examples"></a>

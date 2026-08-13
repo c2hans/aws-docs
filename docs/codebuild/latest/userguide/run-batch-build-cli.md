@@ -23,7 +23,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/run-batch-bui
 
 1. If you run the **start-build-batch** command with the `--idempotency-token` option, a unique case-sensitive identifier, or token, is included with the `start-build-batch` request. The token is valid for 5 minutes after the request. If you repeat the `start-build-batch` request with the same token, but change a parameter, CodeBuild returns a parameter mismatch error.
 
-1. If you run the **start-build-batch** command with the `--generate-cli-skeleton` option, JSON-formatted data is output to the {{<json-file>}} file. This file is similar to the skelton produced by the **start-build** command, with the addition of the following object. For more information about the common objects, see [Run a build (AWS CLI)](run-build-cli.md).
+1. If you run the **start-build-batch** command with the `--generate-cli-skeleton` option, JSON-formatted data is output to the {{<json-file>}} file. This file is similar to the skeleton produced by the **start-build** command, with the addition of the following object. For more information about the common objects, see [Run a build (AWS CLI)](run-build-cli.md).
 
    Modify this file to add any build overrides, and save your results.
 
@@ -41,7 +41,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/run-batch-bui
      }
    ```
 
-   The `buildBatchConfigOverride` object is a [ProjectBuildBatchConfig](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ProjectBuildBatchConfig.html) structure that contains the batch build configuration overides for this build.
+   The `buildBatchConfigOverride` object is a [ProjectBuildBatchConfig](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ProjectBuildBatchConfig.html) structure that contains the batch build configuration overrides for this build.
 {{combineArtifacts}}
 A boolean that specifies if the build artifacts for the batch build should be combined into a single artifact location.
 {{allowedComputeTypes}}

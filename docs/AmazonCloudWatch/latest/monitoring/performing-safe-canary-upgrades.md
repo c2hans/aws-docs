@@ -65,7 +65,7 @@ You can test the canary update using the following options:
 
 1. On the **Synthetics** list page, you will see a text next to the ** Runtime** version for the canary that displays the progress of the dry run (this is only displayed for dry runs involving a runtime update).
 
-   Once the dry run succeeds, you will see an **Initiate Update** text.
+   After the dry run succeeds, you will see an **Initiate Update** text.
 
 1. Choose **Initiate Update** to commit the runtime update.
 

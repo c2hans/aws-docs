@@ -49,6 +49,8 @@ The desktop application uses a three-step wizard to create and upload assets.
 1. Select the folder or files to upload
 **Note**
 You can also choose **Create Empty Asset** to create an asset without uploading files immediately. Files can be added later.
+**Tip**
+If you have the Amazon S3 Import connector configured, you can also import files directly from an S3 bucket without downloading and re-uploading them. For more information, see [Importing files from Amazon S3](connector-s3-import.md).
 
 1. Choose **Next**
 

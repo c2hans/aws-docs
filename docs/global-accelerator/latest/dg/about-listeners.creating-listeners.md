@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/about-liste
 # Add a standard listener
 <a name="about-listeners.creating-listeners"></a>
 
-This section provides the steps to create a standard listener on the AWS Global Accelerator console. To complete this task by using an API operation instead of the console, see [https://docs.aws.amazon.com/global-accelerator/latest/api/API_CreateListener.html](https://docs.aws.amazon.com/global-accelerator/latest/api/API_CreateListener.html), in the *AWS Global Accelerator API Reference*.
+This section provides the steps to create a standard listener on the AWS Global Accelerator console. To complete this task by using an API operation instead of the console, see [`CreateListener`](https://docs.aws.amazon.com/global-accelerator/latest/api/API_CreateListener.html), in the *AWS Global Accelerator API Reference*.
 
 # To add a listener
 

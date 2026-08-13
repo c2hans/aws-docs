@@ -73,8 +73,8 @@ To designate the Detective administrator account, you can use an API call or the
 If you already have a delegated administrator account for Detective in organizations, then you must choose either that account or your account we recommend that you choose the delegated administrator account.
 
 **To designate the Detective administrator account (Detective API, AWS CLI)**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_EnableOrganizationAdminAccount.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_EnableOrganizationAdminAccount.html) operation. You must provide the AWS account identifier of the Detective administrator account. To obtain the account identifier, use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_ListOrganizationAdminAccounts.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListOrganizationAdminAccounts.html) operation.
-+ **AWS CLI:** At the command line, run the [https://docs.aws.amazon.com/cli/latest/reference/detective/enable-organization-admin-account.html](https://docs.aws.amazon.com/cli/latest/reference/detective/enable-organization-admin-account.html) command.
++ **Detective API:** Use the [`EnableOrganizationAdminAccount`](https://docs.aws.amazon.com/detective/latest/APIReference/API_EnableOrganizationAdminAccount.html) operation. You must provide the AWS account identifier of the Detective administrator account. To obtain the account identifier, use the [`ListOrganizationAdminAccounts`](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListOrganizationAdminAccounts.html) operation.
++ **AWS CLI:** At the command line, run the [`enable-organization-admin-account`](https://docs.aws.amazon.com/cli/latest/reference/detective/enable-organization-admin-account.html) command.
 
   ```
   aws detective enable-organization-admin-account --account-id {{<admin account ID>}}

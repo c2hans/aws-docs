@@ -18,7 +18,7 @@ These controls may not be available in all AWS Regions. For more information, se
 
 **Resource type:** `AWS::WorkSpaces::Workspace`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/workspaces-user-volume-encryption-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/workspaces-user-volume-encryption-enabled.html)
+**AWS Config rule:** [`workspaces-user-volume-encryption-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/workspaces-user-volume-encryption-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -42,7 +42,7 @@ To encrypt a WorkSpaces user volume, see [ Encrypt a WorkSpace](https://docs.aws
 
 **Resource type:** `AWS::WorkSpaces::Workspace`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/workspaces-root-volume-encryption-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/workspaces-root-volume-encryption-enabled.html)
+**AWS Config rule:** [`workspaces-root-volume-encryption-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/workspaces-root-volume-encryption-enabled.html)
 
 **Schedule type:** Change triggered
 

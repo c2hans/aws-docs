@@ -267,7 +267,7 @@ To authenticate devices using custom authentication with X.509 client certificat
 ### Set authentication type and application protocol in domain configuration (CLI)
 <a name="custom-auth-509cert-cli"></a>
 
-If you don't have a domain configuration, use the [https://docs.aws.amazon.com//cli/latest/reference/iot/create-domain-configuration.html](https://docs.aws.amazon.com//cli/latest/reference/iot/create-domain-configuration.html) command to create one. The value of `authenticationType` must be `CUSTOM_AUTH_X509`, and the value of `applicationProtocol` can either be `SECURE_MQTT` or `HTTPS`.
+If you don't have a domain configuration, use the [**create-domain-configuration**](https://docs.aws.amazon.com//cli/latest/reference/iot/create-domain-configuration.html) command to create one. The value of `authenticationType` must be `CUSTOM_AUTH_X509`, and the value of `applicationProtocol` can either be `SECURE_MQTT` or `HTTPS`.
 
 ```
 aws iot create-domain-configuration \
@@ -279,7 +279,7 @@ aws iot create-domain-configuration \
     }'
 ```
 
-If you already have a domain configuration, use the [https://docs.aws.amazon.com//cli/latest/reference/iot/update-domain-configuration.html](https://docs.aws.amazon.com//cli/latest/reference/iot/update-domain-configuration.html) command update `authenticationType` and `applicationProtocol` if needed. Note that you can't change the authentication type or protocol on the default endpoint (`iot:Data-ATS`).
+If you already have a domain configuration, use the [**update-domain-configuration**](https://docs.aws.amazon.com//cli/latest/reference/iot/update-domain-configuration.html) command update `authenticationType` and `applicationProtocol` if needed. Note that you can't change the authentication type or protocol on the default endpoint (`iot:Data-ATS`).
 
 ```
 aws iot update-domain-configuration \

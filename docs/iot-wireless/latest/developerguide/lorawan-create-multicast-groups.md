@@ -89,7 +89,7 @@ To create multicast groups and add devices to the group by using the API:
 
 **Create a multicast group**
 
-   To create your multicast group, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateMulticastGroup.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateMulticastGroup.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-multicast-group.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-multicast-group.html) CLI command. You can provide an `input.json` file as input to the `create-multicast-group` command.
+   To create your multicast group, use the [`CreateMulticastGroup`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateMulticastGroup.html) API operation or the [`create-multicast-group`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-multicast-group.html) CLI command. You can provide an `input.json` file as input to the `create-multicast-group` command.
 **Note**
 When creating a multicast group, you can optionally specify the gateways that you want to use for receiving the multicast downlink message using the `ParticipatingGateways` parameter. For more information, see [Choose participating gateways to receive multicast downlink messages](lorawan-multicast-choose-gateways.md).
 **Note**
@@ -120,17 +120,17 @@ Alternatively, you can specify default session parameters, such as the downlink 
    ```
 
    After you create your multicast group, you can use the following API operations or CLI commands to update, delete, or get information about your multicast groups.
-   + [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateMulticastGroup](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateMulticastGroup) or [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/update-multicast-group.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/update-multicast-group.html)
-   + [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateMulticastGroup](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateMulticastGroup) or [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-multicast-group.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-multicast-group.html)
-   + [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListMulticastGroups](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListMulticastGroups) or [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-multicast-groups.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-multicast-groups.html)
-   + [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteMulticastGroup](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteMulticastGroup) or [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/delete-multicast-group.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/delete-multicast-group.html)
+   + [`UpdateMulticastGroup`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateMulticastGroup) or [`update-multicast-group`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/update-multicast-group.html)
+   + [`GetMulticastGroup`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateMulticastGroup) or [`get-multicast-group`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-multicast-group.html)
+   + [`ListMulticastGroups`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListMulticastGroups) or [`list-multicast-groups`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-multicast-groups.html)
+   + [`DeleteMulticastGroup`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteMulticastGroup) or [`delete-multicast-group`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/delete-multicast-group.html)
 
 1.
 
 **Add devices to a multicast group**
 
    You can add devices to your multicast group individually or in bulk.
-   + To add devices in bulk to your multicast group, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartBulkAssociateWirelessDeviceWithMulticastGroup.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartBulkAssociateWirelessDeviceWithMulticastGroup.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/start-bulk-associate-wireless-device-with-multicast-group.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/start-bulk-associate-wireless-device-with-multicast-group.html) CLI command. To filter the devices you want to associate in bulk to your multicast group, provide a query string. The following shows how you can add a group of devices that has a device profile with the specified ID linked to it.
+   + To add devices in bulk to your multicast group, use the [`StartBulkAssociateWirelessDeviceWithMulticastGroup`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartBulkAssociateWirelessDeviceWithMulticastGroup.html) API operation or the [`start-bulk-associate-wireless-device-with-multicast-group`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/start-bulk-associate-wireless-device-with-multicast-group.html) CLI command. To filter the devices you want to associate in bulk to your multicast group, provide a query string. The following shows how you can add a group of devices that has a device profile with the specified ID linked to it.
 
      ```
      aws iotwireless start-bulk-associate-wireless-device-with-multicast-group \
@@ -155,7 +155,7 @@ Alternatively, you can specify default session parameters, such as the downlink 
      ```
 
      Here, `multicast-groups/d6d8ef8e-7045-496d-b3f4-ebcaa1d564bf/bulk` is the URL that's used to associate devices with the group.
-   + To add devices individually to your multicast group, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_AssociateWirelessDeviceWithMulticastGroup.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_AssociateWirelessDeviceWithMulticastGroup.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/associate-wireless-device-with-multicast-group.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/associate-wireless-device-with-multicast-group.html) CLI. Provide the wireless device ID for each device you want to add to your group.
+   + To add devices individually to your multicast group, use the [`AssociateWirelessDeviceWithMulticastGroup`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_AssociateWirelessDeviceWithMulticastGroup.html) API operation or the [`associate-wireless-device-with-multicast-group`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/associate-wireless-device-with-multicast-group.html) CLI. Provide the wireless device ID for each device you want to add to your group.
 
      ```
      aws iotwireless associate-wireless-device-with-multicast-group \
@@ -164,9 +164,9 @@ Alternatively, you can specify default session parameters, such as the downlink 
      ```
 
    After you create your multicast group, you can use the following API operations or CLI commands to get information about your multicast group or to disassociate devices.
-   + [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DisassociateWirelessDeviceFromMulticastGroup.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DisassociateWirelessDeviceFromMulticastGroup.html) or [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/disassociate-wireless-device-from-multicast-group.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/disassociate-wireless-device-from-multicast-group.html)
-   + [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartBulkDisassociateWirelessDeviceFromMulticastGroup.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartBulkDisassociateWirelessDeviceFromMulticastGroup.html) or [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/start-bulk-disassociate-wireless-device-from-multicast-group.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/start-bulk-disassociate-wireless-device-from-multicast-group.html)
-   + [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListWirelessDevices](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListWirelessDevices) or [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-wireless-devices.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-wireless-devices.html)
+   + [`DisassociateWirelessDeviceFromMulticastGroup`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DisassociateWirelessDeviceFromMulticastGroup.html) or [`disassociate-wireless-device-from-multicast-group`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/disassociate-wireless-device-from-multicast-group.html)
+   + [`StartBulkDisassociateWirelessDeviceFromMulticastGroup`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartBulkDisassociateWirelessDeviceFromMulticastGroup.html) or [`start-bulk-disassociate-wireless-device-from-multicast-group`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/start-bulk-disassociate-wireless-device-from-multicast-group.html)
+   + [`ListWirelessDevices`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListWirelessDevices) or [`list-wireless-devices`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-wireless-devices.html)
 **Note**
 The `ListWirelessDevices` API operation can be used to list wireless devices in general, and wireless devices that are associated with a multicast group or a FUOTA task.
 To list wireless devices associated with a multicast group, use the `ListWirelessDevices` API operation with `MulticastGroupID` as the filter.

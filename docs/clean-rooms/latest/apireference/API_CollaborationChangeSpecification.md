@@ -13,7 +13,7 @@ Defines the specific changes being requested for a collaboration, including conf
  ** autoApprovedChangeTypes **   <a name="API-Type-CollaborationChangeSpecification-autoApprovedChangeTypes"></a>
 Defines requested updates to properties of the collaboration. Currently, this only supports modifying which change types are auto-approved for the collaboration.
 Type: Array of strings
-Valid Values: `ADD_MEMBER | GRANT_RECEIVE_RESULTS_ABILITY | REVOKE_RECEIVE_RESULTS_ABILITY`
+Valid Values: `ADD_MEMBER | GRANT_RECEIVE_RESULTS_ABILITY | REVOKE_RECEIVE_RESULTS_ABILITY | GRANT_EXPORT_QUERY_ANALYSIS_LOG_ABILITY | REVOKE_EXPORT_QUERY_ANALYSIS_LOG_ABILITY`
 Required: No
 
 ## See Also

@@ -35,10 +35,8 @@ For more information about tags, and controlling access to resources in AWS Glue
 
 Adds tags to a resource. A tag is a label you can assign to an AWS resource. In AWS Glue, you can tag only certain resources. For information about what resources you can tag, see [AWS Tags in AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/monitor-tags.html).
 
-In addition to the tagging permissions to call tag related APIs, you also need the `glue:GetConnection` permission to call tagging APIs on connections, and the `glue:GetDatabase` permission to call tagging APIs on databases.
-
 **Request**
-+ `ResourceArn` – *Required:* UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `ResourceArn` – *Required:* UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The ARN of the AWS Glue resource to which to add the tags. For more information about AWS Glue resource ARNs, see the [AWS Glue ARN string pattern](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-common.html#aws-glue-api-regex-aws-glue-arn-id).
 + `TagsToAdd` – *Required:* A map array of key-value pairs, not more than 50 pairs.
@@ -53,7 +51,9 @@ In addition to the tagging permissions to call tag related APIs, you also need t
 + *No Response parameters.*
 
 **Errors**
-+ `ResourceNotFoundException`
++ `EntityNotFoundException`
++ `InvalidInputException`
++ `InternalServiceException`
 
 ## UntagResource action (Python: untag\_resource)
 <a name="aws-glue-api-tags-UntagResource"></a>
@@ -61,7 +61,7 @@ In addition to the tagging permissions to call tag related APIs, you also need t
 Removes the specified tags from an integration resource.
 
 **Request**
-+ `ResourceArn` – *Required:* UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `ResourceArn` – *Required:* UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource Name (ARN) for the integration resource.
 + `TagsToRemove` – *Required:* An array of UTF-8 strings, not more than 50 strings.
@@ -72,7 +72,9 @@ Removes the specified tags from an integration resource.
 + *No Response parameters.*
 
 **Errors**
-+ `ResourceNotFoundException`
++ `EntityNotFoundException`
++ `InvalidInputException`
++ `InternalServiceException`
 
 ## GetTags action (Python: get\_tags)
 <a name="aws-glue-api-tags-GetTags"></a>
@@ -80,7 +82,7 @@ Removes the specified tags from an integration resource.
 Retrieves a list of tags associated with a resource.
 
 **Request**
-+ `ResourceArn` – *Required:* UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
++ `ResourceArn` – *Required:* UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #47](aws-glue-api-common.md#regex_47).
 
   The Amazon Resource Name (ARN) of the resource for which to retrieve tags.
 

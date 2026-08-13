@@ -72,7 +72,7 @@ The following AWS services use the instance identity role:
 + **Amazon EC2** – [EC2 Instance Connect](connect-linux-inst-eic.md) uses the instance identity role to update the host keys for a Linux instance.
 + **Amazon GuardDuty** – [GuardDuty Runtime Monitoring](https://docs.aws.amazon.com/guardduty/latest/ug/runtime-monitoring.html) uses the instance identity role to allow the runtime agent to send security telemetry to the GuardDuty VPC endpoint.
 + **AWS Lambda** – [Lambda Managed Instances](https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances.html) uses the instance identity role for lifecycle hooks, telemetry, and artifact distribution.
-+ **AWS Security Token Service (AWS STS)** – Instance identity role credentials can be used with the AWS STS [https://docs.aws.amazon.com/STS/latest/APIReference/API_GetCallerIdentity.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetCallerIdentity.html) action.
++ **AWS Security Token Service (AWS STS)** – Instance identity role credentials can be used with the AWS STS [`GetCallerIdentity`](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetCallerIdentity.html) action.
 + **AWS Systems Manager** – When using [Default Host Management Configuration](https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-manager-default-host-management-configuration.html), AWS Systems Manager uses the identity provided by the instance identity role to register EC2 instances. After identifying your instance, Systems Manager can pass your `AWSSystemsManagerDefaultEC2InstanceManagementRole` IAM role to your instance.
 
 Instance identity roles can’t be used with other AWS services or features because they do not have an integration with instance identity roles.

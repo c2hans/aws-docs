@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sending-email-subscription
 # Using subscription management
 <a name="sending-email-subscription-management"></a>
 
-Amazon SES provides a subscription management capability, in which Amazon SES automatically enables the unsubscribe links in every outgoing email when you specify the `contactListName` and `topicName` within [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html) in the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) operation request.
+Amazon SES provides a subscription management capability, in which Amazon SES automatically enables the unsubscribe links in every outgoing email when you specify the `contactListName` and `topicName` within [`ListManagementOptions`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html) in the [`SendEmail`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) operation request.
 
 If a contact unsubscribes from a particular topic or list, Amazon SES does not allow email sending to the contact for that topic or list in the future.
 
@@ -27,9 +27,9 @@ You should consider the following factors when you use subscription management:
   + If the topic is not specified, then the contact will be unsubscribed from all the topics in the list.
 + Contacts will be taken to an unsubscribe landing page when they click an unsubscribe link in the email footer.
 + The unsubscribe landing page will give contacts an option to update their preferences, meaning `OPT_IN` or `OPT_OUT`, for all the topics in a particular list. The landing page also gives an option to unsubscribe from all topics in the list.
-+ If using [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html), you must include the `{{amazonSESUnsubscribeUrl}}` placeholder in your emails to indicate where Amazon SES needs to insert the unsubscribe URL. You can include the placeholder two times maximum. If used more than two times, only the first two occurrences are replaced.
++ If using [`ListManagementOptions`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html), you must include the `{{amazonSESUnsubscribeUrl}}` placeholder in your emails to indicate where Amazon SES needs to insert the unsubscribe URL. You can include the placeholder two times maximum. If used more than two times, only the first two occurrences are replaced.
 + The `List-Unsubscribe` header and `ListManagementOptions` footer links are added only if the email is being sent to a single recipient.
-+ For transactional emails where you don't want contacts to be able to unsubscribe, you can omit the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html) field with your [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) request.
++ For transactional emails where you don't want contacts to be able to unsubscribe, you can omit the [`ListManagementOptions`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html) field with your [`SendEmail`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) request.
 
 ## Unsubscribe header considerations
 <a name="unsubscribe-header-considerations"></a>
@@ -40,7 +40,7 @@ Subscription management through an unsubscribe link is enabled when the email co
 
 `List-Unsubscribe-Post`
 
-When you use Amazon SES's subscription management, [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html), Amazon SES will override these headers if they are present in the email.
+When you use Amazon SES's subscription management, [`ListManagementOptions`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html), Amazon SES will override these headers if they are present in the email.
 
 Recipients who unsubscribe by clicking the link produced by these headers will have a different experience depending on their email client or inbox provider because some providers do not recognize the `List-Unsubscribe` and `List-Unsubscribe-Post` headers; email sent to recipients using such providers will not see the Unsubscribe link.
 
@@ -61,4 +61,4 @@ Placeholder replacement is supported only for HTML and TEXT content types.
 You can include the placeholder two times maximum. If used more than two times, only the first two occurrences are replaced.
 
 **Note**
-The `{{amazonSESUnsubscribeUrl}}` placeholder can only be used if [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html) is specified as a header while using the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) operation or X-SES-LIST-MANAGEMENT-OPTIONS is specified as a header while using the SMTP interface. (Not to be confused with the `List-Unsubscribe` or `List-Unsubscribe-Post` headers which are not dependent on `ListManagementOptions` and can be used by themselves.)
+The `{{amazonSESUnsubscribeUrl}}` placeholder can only be used if [`ListManagementOptions`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html) is specified as a header while using the [`SendEmail`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) operation or X-SES-LIST-MANAGEMENT-OPTIONS is specified as a header while using the SMTP interface. (Not to be confused with the `List-Unsubscribe` or `List-Unsubscribe-Post` headers which are not dependent on `ListManagementOptions` and can be used by themselves.)

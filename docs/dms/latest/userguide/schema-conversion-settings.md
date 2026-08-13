@@ -74,7 +74,7 @@ You cannot modify settings while any schema conversion operation is running on t
 ------
 #### [ AWS CLI ]
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/dms/modify-conversion-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/dms/modify-conversion-configuration.html) command. Pass settings as a nested JSON object to the `--conversion-configuration` parameter. Use section names as the top-level keys, such as `"Common project settings"` for common settings or a conversion path specific name such as `"MSSQL_TO_POSTGRESQL_15"`. A flat JSON structure without section names as top-level keys is not valid.
+Use the [`modify-conversion-configuration`](https://docs.aws.amazon.com/cli/latest/reference/dms/modify-conversion-configuration.html) command. Pass settings as a nested JSON object to the `--conversion-configuration` parameter. Use section names as the top-level keys, such as `"Common project settings"` for common settings or a conversion path specific name such as `"MSSQL_TO_POSTGRESQL_15"`. A flat JSON structure without section names as top-level keys is not valid.
 
 **Note**
 You can pass the conversion configuration to `--conversion-configuration` in the following ways. This is a standard AWS CLI feature that works with any string parameter.
@@ -97,7 +97,7 @@ The full JSON structure looks like this:
 }
 ```
 
-Include only the sections and keys you want to change. The [https://docs.aws.amazon.com/cli/latest/reference/dms/modify-conversion-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/dms/modify-conversion-configuration.html) command merges the supplied values with the existing configuration. The following example sets `ShowSeverityLevelInSql` to `HIGH`:
+Include only the sections and keys you want to change. The [`modify-conversion-configuration`](https://docs.aws.amazon.com/cli/latest/reference/dms/modify-conversion-configuration.html) command merges the supplied values with the existing configuration. The following example sets `ShowSeverityLevelInSql` to `HIGH`:
 
 ```
 aws dms modify-conversion-configuration \

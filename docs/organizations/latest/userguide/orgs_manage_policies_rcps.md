@@ -66,9 +66,11 @@ RCPs apply to actions for the following AWS services:
 + [AWS CodeCommit](https://docs.aws.amazon.com/codecommit) `(prefix:codecommit)`
 + [AWS CodePipeline](https://docs.aws.amazon.com/codepipeline) `(prefix:codepipeline)`
 + [AWS Cost Optimization Hub](https://docs.aws.amazon.com/cost-management/latest/userguide/cost-optimization-hub) `(prefix:cost-optimization-hub)`
++ [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge) `(prefix:events)`
 + [AWS Fault Injection Service](https://docs.aws.amazon.com/fis) `(prefix:fis)`
 + [AWS Health](https://docs.aws.amazon.com/health) `(prefix:health)`
 + [AWS Key Management Service](https://docs.aws.amazon.com/kms) `(prefix:kms)`
++ [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service) `(prefix:opensearch)`
 + [AWS Pricing Calculator](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/price-changes.html) `(prefix:pricing)`
 + [AWS Private CA Connector for Active Directory](https://docs.aws.amazon.com/privateca/latest/userguide/connector-for-ad) `(prefix:pca-connector-ad)`
 + [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager) `(prefix:secretsmanager)`

@@ -10,7 +10,7 @@ Creates a role alias.
 Requires permission to access the [CreateRoleAlias](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiot.html#awsiot-actions-as-permissions) action.
 
 **Important**
-The value of [https://docs.aws.amazon.com/iot/latest/apireference/API_CreateRoleAlias.html#iot-CreateRoleAlias-request-credentialDurationSeconds](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateRoleAlias.html#iot-CreateRoleAlias-request-credentialDurationSeconds) must be less than or equal to the maximum session duration of the IAM role that the role alias references. For more information, see [ Modifying a role maximum session duration (AWS API)](https://docs.aws.amazon.com/IAM/latest/UserGuide/roles-managingrole-editing-api.html#roles-modify_max-session-duration-api) from the AWS Identity and Access Management User Guide.
+The value of [`credentialDurationSeconds`](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateRoleAlias.html#iot-CreateRoleAlias-request-credentialDurationSeconds) must be less than or equal to the maximum session duration of the IAM role that the role alias references. For more information, see [ Modifying a role maximum session duration (AWS API)](https://docs.aws.amazon.com/IAM/latest/UserGuide/roles-managingrole-editing-api.html#roles-modify_max-session-duration-api) from the AWS Identity and Access Management User Guide.
 
 ## Request Syntax
 <a name="API_CreateRoleAlias_RequestSyntax"></a>

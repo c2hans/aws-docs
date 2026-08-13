@@ -9,8 +9,6 @@ Before you use IAM to manage access to Internet Monitor, learn what IAM features
 
 To see tables showing a similar high-level view of how AWS services work with most IAM features, see [AWS services that work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html) in the *IAM User Guide*.
 
-**IAM features you can use with Internet Monitor**
-
 | IAM feature | Internet Monitor support |
 | --- | --- |
 | [Identity-based policies](#security_iam_service-with-iam-id-based-policies) |  Yes |

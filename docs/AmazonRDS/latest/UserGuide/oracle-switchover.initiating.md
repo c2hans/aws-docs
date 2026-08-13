@@ -39,7 +39,7 @@ Before initiating a switchover, verify the following:
 ## AWS CLI
 <a name="USER_ReadRepl.Promote.CLI"></a>
 
-To switch over an Oracle replica to the primary DB role, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/switchover-read-replica.html](https://docs.aws.amazon.com/cli/latest/reference/rds/switchover-read-replica.html) command. The following examples make the Oracle replica named {{replica-to-be-made-primary}} into the new primary database.
+To switch over an Oracle replica to the primary DB role, use the AWS CLI [`switchover-read-replica`](https://docs.aws.amazon.com/cli/latest/reference/rds/switchover-read-replica.html) command. The following examples make the Oracle replica named {{replica-to-be-made-primary}} into the new primary database.
 
 **Example**
 For Linux, macOS, or Unix:
@@ -58,4 +58,4 @@ aws rds switchover-read-replica ^
 ## RDS API
 <a name="USER_ReadRepl.Promote.API"></a>
 
-To switch over an Oracle replica to the primary DB role, call the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_SwitchoverReadReplica.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_SwitchoverReadReplica.html) operation with the required parameter `DBInstanceIdentifier`. This parameter specifies the name of the Oracle replica that you want to assume the primary DB role.
+To switch over an Oracle replica to the primary DB role, call the Amazon RDS API [`SwitchoverReadReplica`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_SwitchoverReadReplica.html) operation with the required parameter `DBInstanceIdentifier`. This parameter specifies the name of the Oracle replica that you want to assume the primary DB role.

@@ -27,7 +27,7 @@ The following list briefly explains the key terms associated with attack sequenc
 **Detector**
 Amazon GuardDuty is a regional service. When you enable GuardDuty in a specific AWS Region, your AWS account gets associated with a detector ID. This 32-character alphanumeric ID is unique to your account in that Region. For example, when you enable GuardDuty for the same account in a different Region, your account will get associated with a different detector ID. The format of a detectorId is `12abc34d567e8fa901bc2d34e56789f0`.
 All GuardDuty findings, accounts, and actions about managing findings and the GuardDuty service use detector ID to run an API operation.
-To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 In multiple-account environments, all findings for member accounts roll up to the administrator account's detector.
 Some GuardDuty functionality is configured through the detector, such as configuring CloudWatch Events notification frequency, and the enabling or disabling of optional protection plans for GuardDuty to process.
 **Using Malware Protection for S3 within GuardDuty**
@@ -42,7 +42,7 @@ A feature object configured for your GuardDuty protection plan helps to detect a
 
 **Finding**
 A potential security issue discovered by GuardDuty. For more information, see [Understanding and generating Amazon GuardDuty findings](guardduty_findings.md).
-Findings are displayed in the GuardDuty console and contain a detailed description of the security issue. You can also retrieve your generated findings by calling the [GetFindings](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetFindings.html) and [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFindings.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFindings.html) API operations.
+Findings are displayed in the GuardDuty console and contain a detailed description of the security issue. You can also retrieve your generated findings by calling the [GetFindings](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetFindings.html) and [ListFindings](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFindings.html) API operations.
 You can also see your GuardDuty findings through Amazon CloudWatch events. GuardDuty sends findings to Amazon CloudWatch through HTTPS protocol. For more information, see [Processing GuardDuty findings with Amazon EventBridge](guardduty_findings_eventbridge.md).
 
 **IAM role**

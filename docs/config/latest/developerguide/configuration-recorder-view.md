@@ -21,7 +21,7 @@ You can use the AWS Config console or the AWS CLI view details about your config
 ------
 #### [ To view your configuration recorders (CLI) ]
 
-Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorders.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorders.html) command to view details about your configuration recorders:
+Use the [`describe-configuration-recorders`](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorders.html) command to view details about your configuration recorders:
 
 ```
 $ aws configservice describe-configuration-recorders
@@ -35,7 +35,7 @@ $ aws configservice describe-configuration-recorders
 }
 ```
 
-Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorder-status.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorder-status.html) command to view the current status of your configuration recorders:
+Use the [`describe-configuration-recorder-status`](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-configuration-recorder-status.html) command to view the current status of your configuration recorders:
 
 ```
 $ aws configservice describe-configuration-recorder-status

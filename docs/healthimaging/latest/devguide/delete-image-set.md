@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/delete-ima
 # Deleting an image set
 <a name="delete-image-set"></a>
 
-Use the `DeleteImageSet` action to delete an [image set](getting-started-concepts.md#concept-image-set) in HealthImaging. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_DeleteImageSet.html](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_DeleteImageSet.html) in the *AWS HealthImaging API Reference*.
+Use the `DeleteImageSet` action to delete an [image set](getting-started-concepts.md#concept-image-set) in HealthImaging. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`DeleteImageSet`](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_DeleteImageSet.html) in the *AWS HealthImaging API Reference*.
 
 **To delete an image set**
 Choose a menu based on your access preference to AWS HealthImaging.

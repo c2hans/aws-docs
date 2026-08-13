@@ -28,4 +28,4 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ## Resources
 <a name="resources-14"></a>
 +  [ Using IAM Access Analyzer ](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer.html)
-+  [https://docs.aws.amazon.com/config/latest/developerguide/iam-user-policy-check.html](https://docs.aws.amazon.com/config/latest/developerguide/iam-user-policy-check.html)
++  [` iam-user-policy-check `](https://docs.aws.amazon.com/config/latest/developerguide/iam-user-policy-check.html)

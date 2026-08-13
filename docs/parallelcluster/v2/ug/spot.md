@@ -26,7 +26,7 @@ When this interruption occurs, AWS ParallelCluster tries to replace the instance
 The behavior of this interruption depends on the scheduler being used.
 
 Slurm
-The job fails with a state code of `NODE_FAIL`, and the job is requeued (unless `--no-requeue` is specified when the job is submitted). If the node is a static node, it's replaced. If the node is a dynamic node, the node is terminated and reset. For more information about `sbatch`, including the `--no-requeue` parameter, see [https://slurm.schedmd.com/sbatch.html](https://slurm.schedmd.com/sbatch.html) in the *Slurm documentation*.
+The job fails with a state code of `NODE_FAIL`, and the job is requeued (unless `--no-requeue` is specified when the job is submitted). If the node is a static node, it's replaced. If the node is a dynamic node, the node is terminated and reset. For more information about `sbatch`, including the `--no-requeue` parameter, see [sbatch](https://slurm.schedmd.com/sbatch.html) in the *Slurm documentation*.
 This behavior changed in AWS ParallelCluster version 2.9.0. Earlier versions terminated the job with a state code of `NODE_FAIL` and the node was removed from the scheduler queue.
 
 SGE

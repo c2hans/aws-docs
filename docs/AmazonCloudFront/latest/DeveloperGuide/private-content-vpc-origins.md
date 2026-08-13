@@ -57,7 +57,7 @@ Do not create your own security group with a name starting with `CloudFront-VPCO
 VPC origins do not support the following:
 + gRPC traffic
 + Origin request and origin response triggers with Lambda@Edge
-+ Network Access Control Lists (NACLs): Subnet-level allow and deny rules are not evaluated for this traffic.
++ Network Access Control Lists (NACLs) – Inbound NACL rules are not evaluated for traffic from CloudFront to your VPC origin. However, outbound NACL rules are evaluated on the return path and must allow traffic on ephemeral TCP ports (1024–65535) to `0.0.0.0/0` or to the CloudFront origin-facing IP ranges.
 
 ## Create a VPC origin (new distribution)
 <a name="new-vpc-origin"></a>

@@ -5,11 +5,11 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/mobile-push-send-devicetok
 # Integrating device tokens with Amazon SNS for mobile notifications
 <a name="mobile-push-send-devicetoken"></a>
 
-When you first register an app and mobile device with a notification service, such as Apple Push Notification Service (APNs) and Firebase Cloud Messaging (FCM), device tokens or registration IDs are returned by the service. These tokens/IDs are added to Amazon SNS to create an endpoint for the app and device, using the [https://docs.aws.amazon.com/sns/latest/api/API_PlatformApplication.html](https://docs.aws.amazon.com/sns/latest/api/API_PlatformApplication.html) API. Once the endpoint is created, an [https://docs.aws.amazon.com/sns/latest/api/API_Endpoint.html](https://docs.aws.amazon.com/sns/latest/api/API_Endpoint.html) is returned, which Amazon SNS uses to direct notifications to the correct app/device.
+When you first register an app and mobile device with a notification service, such as Apple Push Notification Service (APNs) and Firebase Cloud Messaging (FCM), device tokens or registration IDs are returned by the service. These tokens/IDs are added to Amazon SNS to create an endpoint for the app and device, using the [`PlatformApplicationArn`](https://docs.aws.amazon.com/sns/latest/api/API_PlatformApplication.html) API. Once the endpoint is created, an [`EndpointArn`](https://docs.aws.amazon.com/sns/latest/api/API_Endpoint.html) is returned, which Amazon SNS uses to direct notifications to the correct app/device.
 
 You can add device tokens or registration IDs to Amazon SNS in the following ways:
 + Manually add a single token via the AWS Management Console
-+ Upload several tokens using the [https://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformEndpoint.html](https://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformEndpoint.html) API
++ Upload several tokens using the [`CreatePlatformEndpoint`](https://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformEndpoint.html) API
 + Register tokens for future devices
 
 ****To manually add a device token or registration ID****
@@ -69,8 +69,8 @@ You have two options for this process:
 **Use the Amazon Cognito service**
 Your mobile app can use temporary security credentials to create endpoints. Amazon Cognito is recommended to generate temporary credentials. For more information, see the *[Amazon Cognito Developer Guide](https://docs.aws.amazon.com/cognito/latest/developerguide/)*
 To track app [registrations](application-event-notifications.md), use Amazon SNS events to receive notifications when new endpoint ARNs are created.
-Alternatively, you can use the [https://docs.aws.amazon.com/sns/latest/api/API_ListEndpointsByPlatformApplication.html](https://docs.aws.amazon.com/sns/latest/api/API_ListEndpointsByPlatformApplication.html) API to retrieve the list of registered endpoints.
+Alternatively, you can use the [`ListEndpointByPlatformApplication`](https://docs.aws.amazon.com/sns/latest/api/API_ListEndpointsByPlatformApplication.html) API to retrieve the list of registered endpoints.
 
 **Use a proxy server**
-If your app infrastructure already supports device registration on installation, you can use your server as a proxy. It will forward device tokens to Amazon SNS via the [https://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformEndpoint.html](https://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformEndpoint.html) API.
+If your app infrastructure already supports device registration on installation, you can use your server as a proxy. It will forward device tokens to Amazon SNS via the [`CreatePlatformEndpoint`](https://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformEndpoint.html) API.
 The endpoint ARN created by Amazon SNS will be returned and can be stored by your server for future message publishing.

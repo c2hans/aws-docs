@@ -22,6 +22,7 @@ You can also search the AWS documentation website for a product's API reference.
 To browse this Online Register by service, see the following topics.
 
 **Topics**
++ [Data retrieval APIs for Account access manager](accountaccessmanager.md)
 + [Data retrieval APIs for AWS Account Management](awsaccountmanagement.md)
 + [Data retrieval APIs for AWS Action Recommendations](awsactionrecommendations.md)
 + [Data retrieval APIs for AWS Activate](awsactivate.md)

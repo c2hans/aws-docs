@@ -7,10 +7,10 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-blueprint-i
 
 Blueprints are artifacts that you can use to configure your file processing business logic. Each blueprint consists of a list of field names that you can extract, the data format in which you want the response for the field to be extracted—such as string, number, or boolean—as well as natural language context for each field that you can use to specify data normalization and validation rules. You can create a blueprint for each class of file that you want to process, such as a W2, pay stub or ID card. Blueprints can be created using the console or the API. Each blueprint that you create is an AWS resource with its own blueprint ID and ARN.
 
-When using a blueprint for extraction, you can use a catalog blueprint or a custom created blueprint. If you already know the kind of file you're looking to extract from, catalog bluprints provide a premade starting place. You can create custom blueprints for files that aren't in the catalog. When creating a blueprint you can use several methods, such as a generated blueprint via the blueprint prompt, manual creation by adding individual fields, or creating the JSON of a blueprint using the JSON Editor. These can be saved to your account and shared.
+When using a blueprint for extraction, you can use a catalog blueprint or a custom created blueprint. If you already know the kind of file you're looking to extract from, catalog bluprints provide a premade starting place. You can create custom blueprints for files that aren't in the catalog. When creating a blueprint you can use several methods, such as a generated blueprint through the blueprint prompt, manual creation by adding individual fields, or creating the JSON of a blueprint using the JSON Editor. These can be saved to your account and shared.
 
 **Note**
-Audio blueprints cannot be created via Blueprint Prompts.
+Audio blueprints cannot be created through Blueprint Prompts.
 
 A blueprint's maximum size is 100,000 characters, JSON formatted. For blueprints that are intended to be used with the [InvokeDataAutomationAsync](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-automation-runtime_InvokeDataAutomationAsync.html) API the maximum fields per blueprint is 100. For Blueprints that are intended to be used with the [InvokeDataAutomation](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-automation-runtime_InvokeDataAutomation.html) API the maximum fields per blueprint is 15.
 

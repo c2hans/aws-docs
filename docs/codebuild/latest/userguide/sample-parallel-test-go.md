@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-parall
 # Configure parallel tests with Go
 <a name="sample-parallel-test-go"></a>
 
-The following is sample of a `buildspec.yml` that shows parallel test execution with Go on an Linux platform:
+The following is sample of a `buildspec.yml` that shows parallel test execution with Go on a Linux platform:
 
 ```
 version: 0.2
@@ -38,4 +38,4 @@ phases:
       - echo "Test execution completed"
 ```
 
-In above example, `calculator.go` function contains simple mathematical functions to test and all test files and `calculator.go` file is inside `calc` folder.
+In the above example, `calculator.go` function contains simple mathematical functions to test and all test files and `calculator.go` file is inside `calc` folder.

@@ -22,8 +22,9 @@ The abilities granted to the collaboration member. These determine what actions 
 The following values are currently not supported: `CAN_QUERY` and `CAN_RUN_JOB`.
 Set the value of `memberAbilities` to `[]` to allow a member to contribute data.
 Set the value of `memberAbilities` to `[CAN_RECEIVE_RESULTS]` to allow a member to contribute data and receive results.
+Set the value of `memberAbilities` to `[CAN_EXPORT_QUERY_ANALYSIS_LOG]` so that the member can export the analysis logs for a protected query. Having this ability isn't sufficient on its own: You can export logs only for queries that you ran or paid for.
 Type: Array of strings
-Valid Values: `CAN_QUERY | CAN_RECEIVE_RESULTS | CAN_RUN_JOB`
+Valid Values: `CAN_QUERY | CAN_RECEIVE_RESULTS | CAN_RUN_JOB | CAN_EXPORT_QUERY_ANALYSIS_LOG`
 Required: Yes
 
  ** displayName **   <a name="API-Type-MemberChangeSpecification-displayName"></a>

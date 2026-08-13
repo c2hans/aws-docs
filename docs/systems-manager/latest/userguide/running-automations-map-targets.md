@@ -114,7 +114,7 @@ Use the following format to specify multiple parameter values by using the `Targ
 ```
 aws ssm start-automation-execution \
     --document-name {{runbook name}} \
-    --target-maps “{{parameter}}={{value}}, {{parameter 2}}={{value}}, {{parameter 3}}={{value}}”  “{{parameter 4}}={{value}}, {{parameter 5}}={{value}}, {{parameter 6}}={{value}}”
+    --target-maps "{{parameter}}={{value}}, {{parameter 2}}={{value}}, {{parameter 3}}={{value}}"  "{{parameter 4}}={{value}}, {{parameter 5}}={{value}}, {{parameter 6}}={{value}}"
 ```
 
 If you want to enter more than 50 parameter values for the `TargetMaps` option, then specify the values in a file by using the following JSON format. Using a JSON file also improves readability when providing multiple parameter values.
@@ -122,9 +122,9 @@ If you want to enter more than 50 parameter values for the `TargetMaps` option, 
 ```
 [
 
-    {“parameter”: "value", “parameter 2”: "value", “parameter 3”: "value"},
+    {"parameter": "value", "parameter 2": "value", "parameter 3": "value"},
 
-    {“parameter 4”: "value", “parameter 5”: "value", "parameter 6": "value"}
+    {"parameter 4": "value", "parameter 5": "value", "parameter 6": "value"}
 
 ]
 ```

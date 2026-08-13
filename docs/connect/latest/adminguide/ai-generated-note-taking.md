@@ -66,7 +66,7 @@ Administrators control whether AI-generated note taking is enabled for their ins
 
 Following is an overview of the steps to configure AI-generated note taking for your contact center.
 
-1. [Enable Connect AI agents for your instance](ai-agent-initial-setup.md).
+1. [Enable AI agents for your instance](ai-agent-initial-setup.md).
 
 1. Enable NoteTaking for your instance.
 

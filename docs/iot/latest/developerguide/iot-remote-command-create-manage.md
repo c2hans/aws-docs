@@ -103,7 +103,7 @@ To create a Command from the console, go to [Command Hub](https://console.aws.am
 ### Create a command resource (CLI)
 <a name="iot-remote-command-create-cli"></a>
 
-Use the [https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCommand.html](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCommand.html) API or [https://docs.aws.amazon.com/cli/latest/reference/iot/create-command.html](https://docs.aws.amazon.com/cli/latest/reference/iot/create-command.html) CLI command to create a Command.
+Use the [`CreateCommand`](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCommand.html) API or [`create-command`](https://docs.aws.amazon.com/cli/latest/reference/iot/create-command.html) CLI command to create a Command.
 
 **Topics**
 + [Command payload](#iot-commands-payload)
@@ -220,7 +220,7 @@ In addition to the command details, you can see the command history, which provi
 ### Retrieve a command resource (CLI)
 <a name="iot-remote-command-get-cli"></a>
 
-Use the [https://docs.aws.amazon.com/iot/latest/apireference/API_GetCommand.html](https://docs.aws.amazon.com/iot/latest/apireference/API_GetCommand.html) HTTP control plane API operation or the [https://docs.aws.amazon.com/cli/latest/reference/get-command.html](https://docs.aws.amazon.com/cli/latest/reference/get-command.html) AWS CLI command to retrieve information about a command resource. You must've already created the command using the `CreateCommand` API request or the `create-command` CLI.
+Use the [`GetCommand`](https://docs.aws.amazon.com/iot/latest/apireference/API_GetCommand.html) HTTP control plane API operation or the [`get-command`](https://docs.aws.amazon.com/cli/latest/reference/get-command.html) AWS CLI command to retrieve information about a command resource. You must've already created the command using the `CreateCommand` API request or the `create-command` CLI.
 
 #### Sample IAM policy
 <a name="iot-remote-command-get-iam"></a>
@@ -293,7 +293,7 @@ In the AWS IoT console, you can find the list of commands that you created and t
 ### List commands in your account (CLI)
 <a name="iot-remote-command-list-cli"></a>
 
-To list the commands that you created, use the [https://docs.aws.amazon.com/iot/latest/apireference/API_ListCommands.html](https://docs.aws.amazon.com/iot/latest/apireference/API_ListCommands.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iot/list-commands.html](https://docs.aws.amazon.com/cli/latest/reference/iot/list-commands.html) CLI.
+To list the commands that you created, use the [`ListCommands`](https://docs.aws.amazon.com/iot/latest/apireference/API_ListCommands.html) API operation or the [`list-commands`](https://docs.aws.amazon.com/cli/latest/reference/iot/list-commands.html) CLI.
 
 #### Sample IAM policy
 <a name="iot-remote-command-list-iam"></a>
@@ -350,7 +350,7 @@ To update a command from the console, go to the [Command Hub](https://console.aw
 ### Update a command resource (CLI)
 <a name="iot-remote-command-update-cli"></a>
 
-Use the [https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCommand.html](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCommand.html) control plane API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iot/update-command.html](https://docs.aws.amazon.com/cli/latest/reference/iot/update-command.html) AWS CLI to update a command resource. Using this API, you can:
+Use the [`UpdateCommand`](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCommand.html) control plane API operation or the [`update-command`](https://docs.aws.amazon.com/cli/latest/reference/iot/update-command.html) AWS CLI to update a command resource. Using this API, you can:
 + Edit the display name and description of a command that you created.
 + Deprecate a command resource, or restore a command that has already been deprecated.
 

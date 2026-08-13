@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/js-meeting-features.
 # Selecting meeting features using the Amazon Chime SDK
 <a name="js-meeting-features"></a>
 
-When you call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html) API, you can specify features to make available to the clients that join the session. Note that some feature options incur additional billing.
+When you call the [CreateMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html) API, you can specify features to make available to the clients that join the session. Note that some feature options incur additional billing.
 
 The following features are available for sessions:
 + `Audio.EchoReduction` – Machine learning echo reduction.
@@ -101,7 +101,7 @@ Attendee capacity costs apply for high-definition sessions. Refer to the [Amazon
 ### Creating a meeting with specified features
 <a name="js-create-meetings-sdk-namespace"></a>
 
-To create a meeting, call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html) API and specify the desired meeting features. The following example shows how to specify all the features.
+To create a meeting, call the [CreateMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html) API and specify the desired meeting features. The following example shows how to specify all the features.
 
 ```
 // You must migrate to the Amazon Chime SDK Meetings namespace.

@@ -27,7 +27,7 @@ Secrets Manager generates a CloudTrail log entry when you restore a secret. For 
 <a name="manage_restore-secret_CLI"></a>
 
 **Example Restore a previously deleted secret**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/restore-secret.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/restore-secret.html) example restores a secret that was previously scheduled for deletion.
+The following [`restore-secret`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/restore-secret.html) example restores a secret that was previously scheduled for deletion.
 
 ```
 aws secretsmanager restore-secret \
@@ -37,4 +37,4 @@ aws secretsmanager restore-secret \
 ## AWS SDK
 <a name="manage_restore-secret_SDK"></a>
 
-To restore a secret marked for deletion, use the [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_RestoreSecret.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_RestoreSecret.html) command. For more information, see [AWS SDKs](asm_access.md#asm-sdks).
+To restore a secret marked for deletion, use the [`RestoreSecret`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_RestoreSecret.html) command. For more information, see [AWS SDKs](asm_access.md#asm-sdks).

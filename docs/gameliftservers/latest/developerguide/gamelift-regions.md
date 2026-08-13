@@ -96,4 +96,4 @@ For more information about setting up FlexMatch for your hosting solution, see t
 
 When using Amazon GameLift Servers for resources in the China (Beijing) Region, operated by Sinnet, or the China (Ningxia) Region, operated by NWCD, you must have a separate AWS (China) account. Be aware that some features are unavailable in the China Regions. For more information about using Amazon GameLift Servers in these Regions, see the following resources:
 +  [Amazon Web Services in China](https://www.amazonaws.cn/en/about-aws/china/)
-+  [https://docs.amazonaws.cn/en_us/aws/latest/userguide/gamelift.html](https://docs.amazonaws.cn/en_us/aws/latest/userguide/gamelift.html) (Getting Started with Amazon Web Services in China)
++  [Amazon GameLift Servers](https://docs.amazonaws.cn/en_us/aws/latest/userguide/gamelift.html) (Getting Started with Amazon Web Services in China)

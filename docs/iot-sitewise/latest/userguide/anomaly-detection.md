@@ -270,7 +270,7 @@ If you are new to AWS IoT SiteWise, you must call the `CreateBulkImportJob` API 
    + For more information about how to update an existing asset model, see [Update an asset model, component model, or interface (AWS CLI)](update-asset-models.md#update-asset-model-cli)
 
 1. Add a Lookout for Equipment composite model (`assetModelCompositeModels`) to the asset model by adding the following code.
-   + Replace `{{Property}}` with the ID of the properties that you want to include. To get those IDs, call [https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeAssetModel.html](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeAssetModel.html).
+   + Replace `{{Property}}` with the ID of the properties that you want to include. To get those IDs, call [`DescribeAssetModel`](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeAssetModel.html).
    + Replace `{{RoleARN}}` with the ARN of an IAM role that allows Lookout for Equipment to access your AWS IoT SiteWise data.
 
    ```

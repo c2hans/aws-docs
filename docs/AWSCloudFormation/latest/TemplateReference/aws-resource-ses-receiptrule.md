@@ -69,10 +69,16 @@ The name of the rule set where the receipt rule is added.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-ses-receiptrule-return-values-fn--getatt"></a>
+
+####
+<a name="aws-resource-ses-receiptrule-return-values-fn--getatt-fn--getatt"></a>
+
+`RuleName`  <a name="RuleName-fn::getatt"></a>
+The name of the receipt rule to reposition.
 
 ## Examples
 <a name="aws-resource-ses-receiptrule--examples"></a>

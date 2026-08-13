@@ -40,7 +40,7 @@ Active Regions are available to everyone that uses temporary credentials in that
 
 1. Sign in as a root user or a user with permissions to perform IAM administration tasks.
 
-1. Open the [IAM console](https://console.aws.amazon.com/iam/home?#home) and in the navigation pane choose [https://console.aws.amazon.com/iam/home?#account_settings](https://console.aws.amazon.com/iam/home?#account_settings).
+1. Open the [IAM console](https://console.aws.amazon.com/iam/home?#home) and in the navigation pane choose [**Account settings**](https://console.aws.amazon.com/iam/home?#account_settings).
 
 1. In the **Security Token Service (STS)** section **Endpoints**, find the Region that you want to configure, and then choose **Active** or **Inactive** in the **STS status** column.
 
@@ -92,8 +92,8 @@ Session tokens that are valid in all AWS Region include more characters than tok
 
 **To change the Region compatibility of session tokens for the global endpoint (AWS CLI)**
 Set the session token version. Version 1 tokens are valid only in AWS Regions that are available by default. These tokens do not work in manually enabled Regions, such as Asia Pacific (Hong Kong). Version 2 tokens are valid in all Regions. However, version 2 tokens include more characters and might affect systems where you temporarily store tokens.
-+ [https://docs.aws.amazon.com/cli/latest/reference/iam/set-security-token-service-preferences.html](https://docs.aws.amazon.com/cli/latest/reference/iam/set-security-token-service-preferences.html)
++ [`aws iam set-security-token-service-preferences`](https://docs.aws.amazon.com/cli/latest/reference/iam/set-security-token-service-preferences.html)
 
 **To change the Region compatibility of session tokens for the global endpoint (AWS API)**
 Set the session token version. Version 1 tokens are valid only in AWS Regions that are available by default. These tokens do not work in manually enabled Regions, such as Asia Pacific (Hong Kong). Version 2 tokens are valid in all Regions. However, version 2 tokens include more characters and might affect systems where you temporarily store tokens.
-+ [https://docs.aws.amazon.com/IAM/latest/APIReference/API_SetSecurityTokenServicePreferences.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_SetSecurityTokenServicePreferences.html)
++ [`SetSecurityTokenServicePreferences`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_SetSecurityTokenServicePreferences.html)

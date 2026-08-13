@@ -2,15 +2,15 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/deploy-the-solution.html
 ---
 
-# Deploy the solution
+# Deploy the guidance
 <a name="deploy-the-solution"></a>
 
-This solution uses [AWS CloudFormation templates and stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-concepts.html) to automate its deployment. The CloudFormation templates to describe the AWS resources included in this solution and their properties. The CloudFormation stack provisions the resources that are described in the template.
+This guidance uses [AWS CloudFormation templates and stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-concepts.html) to automate its deployment. The CloudFormation templates to describe the AWS resources included in this guidance and their properties. The CloudFormation stack provisions the resources that are described in the template.
 
 ## Deployment process overview
 <a name="deployment-process-overview"></a>
 
-Before you launch the solution, review the [cost](cost.md), [architecture](architecture-overview.md), [security](security-1.md), and [other considerations](plan-your-deployment.md) discussed in this guide. Follow the step-by-step instructions in this section to configure and deploy the solution into your account.
+Before you launch the guidance, review the [cost](cost.md), [architecture](architecture-overview.md), [security](security-1.md), and [other considerations](plan-your-deployment.md) discussed in this guide. Follow the step-by-step instructions in this section to configure and deploy the guidance into your account.
 
  **Time to deploy:** Approximately 30-45 minutes
 
@@ -29,5 +29,5 @@ Before you launch the solution, review the [cost](cost.md), [architecture](archi
 + Interact with the chatbot through voice or text.
 
 **Important**
-This solution includes an option to send anonymized operational metrics to AWS. We use this data to better understand how customers use this solution and related services and products. AWS owns the data gathered though this survey. Data collection is subject to the [AWS Privacy Policy](https://aws.amazon.com/privacy/).
-To opt out of this feature, download the template, modify the AWS CloudFormation mapping section, and then use the AWS CloudFormation console to upload your updated template and deploy the solution. For more information, see the [Anonymized data collection](reference.md#anonymized-data-collection) section of this guide.
+This guidance includes an option to send anonymized operational metrics to AWS. We use this data to better understand how customers use this guidance and related services and products. AWS owns the data gathered though this survey. Data collection is subject to the [AWS Privacy Policy](https://aws.amazon.com/privacy/).
+To opt out of this feature, download the template, modify the AWS CloudFormation mapping section, and then use the AWS CloudFormation console to upload your updated template and deploy the guidance. For more information, see the [Anonymized data collection](reference.md#anonymized-data-collection) section of this guide.

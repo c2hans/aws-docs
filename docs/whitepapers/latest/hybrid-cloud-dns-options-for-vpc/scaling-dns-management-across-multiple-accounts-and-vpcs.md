@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-opti
 
  In alignment with AWS best practices, many organizations build out a cloud environment with multiple accounts. Whether you’re using shared VPCs with multiple accounts hosted in a single VPC to share resources, or using the more traditional model where a VPC is tied to a single account, there are architectural considerations to make. This whitepaper focuses on the more traditional model.
 
- For more information on Shared VPCs, refer to [https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html).
+ For more information on Shared VPCs, refer to [*Share your VPC with other accounts*](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html).
 
  While having multiple accounts and VPCs helps provide a reduction of blast radius and granular account-level billing, it can make DNS infrastructure more complex. The Route 53 ability to associate PHZs with VPCs and accounts helps reduce these complexities for both centralized and decentralized architectures. We discuss both centralized and decentralized design paradigms in this section.
 

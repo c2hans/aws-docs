@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-core-
 
 *Activation checkpointing* is a technique to reduce memory usage by clearing activations of certain layers and recomputing them during the backward pass. Effectively, this trades extra computation time for reducing memory usage. If a module is checkpointed, at the end of a forward pass, only the initial inputs to the module and final outputs from the module stay in memory. PyTorch releases any intermediate tensors that are part of the computation inside that module during the forward pass. During the backward pass of the checkpointed modules, PyTorch recomputes these tensors. At this point, the layers beyond this checkpointed module have finished their backward pass, so the peak memory usage with checkpointing becomes lower.
 
-SMP v2 supports the PyTorch activation checkpointing module, [https://pytorch.org/blog/scaling-multimodal-foundation-models-in-torchmultimodal-with-pytorch-distributed/#activation-checkpointing](https://pytorch.org/blog/scaling-multimodal-foundation-models-in-torchmultimodal-with-pytorch-distributed/#activation-checkpointing). The following are examples of activation checkpointing of the Hugging Face GPT-NeoX model.
+SMP v2 supports the PyTorch activation checkpointing module, [`apply_activation_checkpointing`](https://pytorch.org/blog/scaling-multimodal-foundation-models-in-torchmultimodal-with-pytorch-distributed/#activation-checkpointing). The following are examples of activation checkpointing of the Hugging Face GPT-NeoX model.
 
 **Checkpointing Transformer layers of the Hugging Face GPT-NeoX model**
 

@@ -80,8 +80,8 @@ New packages in AL2023.6.20250123:
 
 The full comparison of RPM package versions is below.
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html](https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html](https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html)
+- ** [`amazon-ec2-net-utils`](https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html) **
+  - **RPM:**  [`amazon-ec2-net-utils`](https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html)
   - **Architectures:** noarch
   - **AL2023.6.20250115 version:** 2.5.1-1.amzn2023.0.1
   - **AL2023.6.20250123 version:** 2.5.2-1.amzn2023.0.1
@@ -116,8 +116,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.6.20250115 version:** 20220428-1.gitdfb10ea.amzn2023.0.2
   - **AL2023.6.20250123 version:** 20240828-2.git626aa59.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
+- ** [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
+  - **RPM:**  [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.6.20250115 version:** 1.89.2-1.amzn2023
   - **AL2023.6.20250123 version:** 1.89.3-1.amzn2023
@@ -213,8 +213,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.6.20250115 version:** 1.9.1-1.amzn2023.0.3
   - **AL2023.6.20250123 version:** 1.9.1-1.amzn2023.0.4
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/python.html](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  / **Architectures:** aarch64, x86\_64
+- ** [`python3.12`](https://docs.aws.amazon.com/linux/al2023/ug/python.html) **
+  - **RPM:**  [`python3.12`](https://docs.aws.amazon.com/linux/al2023/ug/python.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.12-debug  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.12-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.12-idle  / **Architectures:** aarch64, x86\_64

@@ -123,7 +123,7 @@ The following complex data type example demonstrates how signals and data types 
 ```
 
 **Note**
-You can download a [demo script](https://raw.githubusercontent.com/aws/aws-iot-fleetwise-edge/main/tools/cloud/ros2-to-nodes.py) to convert ROS 2 messages to VSS .json files that are compatible with the signal catalog. For more information, see the [https://github.com/aws/aws-iot-fleetwise-edge/blob/main/docs/dev-guide/vision-system-data/vision-system-data-demo.ipynb](https://github.com/aws/aws-iot-fleetwise-edge/blob/main/docs/dev-guide/vision-system-data/vision-system-data-demo.ipynb).
+You can download a [demo script](https://raw.githubusercontent.com/aws/aws-iot-fleetwise-edge/main/tools/cloud/ros2-to-nodes.py) to convert ROS 2 messages to VSS .json files that are compatible with the signal catalog. For more information, see the [*Vision System Data Developer Guide*](https://github.com/aws/aws-iot-fleetwise-edge/blob/main/docs/dev-guide/vision-system-data/vision-system-data-demo.ipynb).
 Vision system data is in preview release and is subject to change.
 
 ### Configure struct

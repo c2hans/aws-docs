@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 
 The object describing an `SNS` event source type.
 
-SAM generates [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html) resource when this event type is set
+SAM generates [AWS::SNS::Subscription](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html) resource when this event type is set
 
 ## Syntax
 <a name="sam-property-function-sns-syntax"></a>

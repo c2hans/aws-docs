@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-
 # Working with parameters in Parameter Store using Run Command commands
 <a name="sysman-param-runcommand"></a>
 
-You can work with parameters in Run Command, a tool in AWS Systems Manager. For more information, see [AWS Systems Manager Run Command](run-command.md).
+You can work with parameters in Run Command. For more information, see [AWS Systems Manager Run Command](run-command.md).
 
 ## Running a String parameter using the console
 <a name="param-test-console"></a>
@@ -147,9 +147,9 @@ The command returns information like the following.
 ```
 
 After a command execution completes, you can view more information about it using the following commands:
-+ [https://docs.aws.amazon.com/cli/latest/reference/ssm/get-command-invocation.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-command-invocation.html) – View detailed information about the command execution.
-+ [https://docs.aws.amazon.com/cli/latest/reference/ssm/link-cli-ref-list-command-invocations.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/link-cli-ref-list-command-invocations.html) – View the command execution status on a specific managed node.
-+ [https://docs.aws.amazon.com/cli/latest/reference/ssm/link-cli-ref-list-commands.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/link-cli-ref-list-commands.html) – View the command execution status across managed nodes.
++ [get-command-invocation](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-command-invocation.html) – View detailed information about the command execution.
++ [list-command-invocations](https://docs.aws.amazon.com/cli/latest/reference/ssm/link-cli-ref-list-command-invocations.html) – View the command execution status on a specific managed node.
++ [list-commands](https://docs.aws.amazon.com/cli/latest/reference/ssm/link-cli-ref-list-commands.html) – View the command execution status across managed nodes.
 
 **Example 2: Decrypt a `SecureString` parameter value**
 The next example command uses a `SecureString` parameter named **SecureMerchantId**. The command used in the `parameters` field retrieves and decrypts the value of the `SecureString` parameter without including the plaintext value directly in the command.

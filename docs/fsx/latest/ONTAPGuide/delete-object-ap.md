@@ -11,4 +11,4 @@ The following `delete-object` example command shows how you can use the AWS CLI 
 $ aws s3api delete-object --bucket {{my-ontap-ap-hrzrlukc5m36ft7okagglf3gmwluquse1b}}-ext-s3alias --key {{my-image.jpg}}
 ```
 
-You can also use the REST API to delete an object through an access point. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html) in the *Amazon Simple Storage Service API Reference*.
+You can also use the REST API to delete an object through an access point. For more information, see [DeleteObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html) in the *Amazon Simple Storage Service API Reference*.

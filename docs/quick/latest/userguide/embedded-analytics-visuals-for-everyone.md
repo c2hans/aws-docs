@@ -468,7 +468,7 @@ aws quicksight generate-embed-url-for-anonymous-user \
     --experience-configuration 'DashboardVisual={InitialDashboardVisualId={DashboardId={{dashboard_id}},SheetId={{sheet_id}},VisualId={{visual_id}}}}'
 ```
 
-For more information about using this operation, see [https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForAnonymousUser.html](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForAnonymousUser.html). You can use this and other API operations in your own code.
+For more information about using this operation, see [GenerateEmbedUrlForAnonymousUser](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForAnonymousUser.html). You can use this and other API operations in your own code.
 
 ## Step 3: Embed the visual URL
 <a name="embedded-analytics-visuals-with-anonymous-users-step-3"></a>

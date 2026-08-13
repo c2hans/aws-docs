@@ -26,7 +26,7 @@ For information about how to quickly configure and collect inventory data from a
 ## Aggregating inventory data to see counts of nodes that collect specific types of data
 <a name="inventory-aggregate-type"></a>
 
-You can use the AWS Systems Manager [GetInventory](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetInventory.html) API operation to view aggregated counts of nodes that collect one or more inventory types and data types. For example, the `AWS:InstanceInformation` inventory type allows you to view an aggregate of operating systems by using the GetInventory API operation with the `AWS:InstanceInformation.PlatformType` data type. Here is an example AWS CLI command and output.
+You can use the AWS Systems Manager [GetInventory](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetInventory.html) API operation to view aggregated counts of nodes that collect one or more inventory types and data types. For example, the `AWS:InstanceInformation` inventory type lets you view an aggregate of operating systems by using the GetInventory API operation with the `AWS:InstanceInformation.PlatformType` data type. Here is an example AWS CLI command and output.
 
 ```
 aws ssm get-inventory --aggregators "Expression=AWS:InstanceInformation.PlatformType"

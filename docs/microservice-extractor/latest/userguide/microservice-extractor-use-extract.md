@@ -14,11 +14,11 @@ Review the arrangement of the group or groups you selected and their individual 
    If a class accesses a state that is shared by classes that belong to multiple groups in the application, modification of the shared state may result in errors when you extract the nodes as a smaller service. If the **Shared state access detected** message appears next to a class, check whether the class accesses a state that is shared by classes that belong to other groups. If so, update your application source code to remove access to the shared state. Analyze the application again before proceeding with the extraction.
 
    The following shared state accesses are detected:
-   + `TempData` property in [https://docs.microsoft.com/en-us/dotnet/api/system.web.mvc.controllerbase.tempdata?view=aspnet-mvc-5.2#System_Web_Mvc_ControllerBase_TempData](https://docs.microsoft.com/en-us/dotnet/api/system.web.mvc.controllerbase.tempdata?view=aspnet-mvc-5.2#System_Web_Mvc_ControllerBase_TempData) class.
-   + `Session` property in [https://docs.microsoft.com/en-us/dotnet/api/system.web.mvc.controller](https://docs.microsoft.com/en-us/dotnet/api/system.web.mvc.controller) class.
-   + `Session` property in ASP.NET Core [https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext.session](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext.session) class.
-   + `Items` property in ASP.NET Core [https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext.items](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext.items) class.
-   + `TempData` property in ASP.NET Core [https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.controller.tempdata](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.controller.tempdata) class.
+   + `TempData` property in [`ControllerBase`](https://docs.microsoft.com/en-us/dotnet/api/system.web.mvc.controllerbase.tempdata?view=aspnet-mvc-5.2#System_Web_Mvc_ControllerBase_TempData) class.
+   + `Session` property in [`Controller`](https://docs.microsoft.com/en-us/dotnet/api/system.web.mvc.controller) class.
+   + `Session` property in ASP.NET Core [`HttpContext`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext.session) class.
+   + `Items` property in ASP.NET Core [`HttpContext`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext.items) class.
+   + `TempData` property in ASP.NET Core [`Controller`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.controller.tempdata) class.
    + `TempData` property in ASP.NET Core `WebApi` controller.
 
 1. Select the options under **Method invocations from the original application to the extracted service**. Consider the following limitations for each method.

@@ -38,7 +38,7 @@ When you automatically enable new controls using the following instructions, you
 
 **To automatically enable new controls**
 
-1. Run [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateSecurityHubConfiguration.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateSecurityHubConfiguration.html).
+1. Run [`UpdateSecurityHubConfiguration`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateSecurityHubConfiguration.html).
 
 1. To automatically enable new controls for enabled standards, set `AutoEnableControls` to `true`. If you don't want to automatically enable new controls, set `AutoEnableControls` to false.
 
@@ -47,7 +47,7 @@ When you automatically enable new controls using the following instructions, you
 
 **To automatically enable new controls**
 
-1. Run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-security-hub-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-security-hub-configuration.html) command.
+1. Run the [`update-security-hub-configuration`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-security-hub-configuration.html) command.
 
 1. To automatically enable new controls for enabled standards, specify `--auto-enable-controls`. If you don't want to automatically enable new controls, specify `--no-auto-enable-controls`.
 

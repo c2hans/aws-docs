@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[RouteSettings](#cfn-apigatewayv2-stage-routesettings)" : {{Json}},
       "[StageName](#cfn-apigatewayv2-stage-stagename)" : {{String}},
       "[StageVariables](#cfn-apigatewayv2-stage-stagevariables)" : {{Json}},
-      "[Tags](#cfn-apigatewayv2-stage-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}}
+      "[Tags](#cfn-apigatewayv2-stage-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}}
     }
 }
 ```
@@ -55,7 +55,7 @@ Properties:
   [StageName](#cfn-apigatewayv2-stage-stagename): {{String}}
   [StageVariables](#cfn-apigatewayv2-stage-stagevariables): {{Json}}
   [Tags](#cfn-apigatewayv2-stage-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
 ```
 
 ## Properties
@@ -124,7 +124,7 @@ A map that defines the stage variables for a `Stage`. Variable names can have al
 `Tags`  <a name="cfn-apigatewayv2-stage-tags"></a>
 The collection of tags. Each tag element is associated with a given resource.
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
@@ -135,7 +135,7 @@ The collection of tags. Each tag element is associated with a given resource.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the stage name, such as `MyTestStage`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-apigatewayv2-stage--examples"></a>

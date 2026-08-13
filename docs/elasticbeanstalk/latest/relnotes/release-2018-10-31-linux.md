@@ -12,26 +12,43 @@ This release applies security updates to Linux-based platforms for AWS Elastic B
 ## Changes
 <a name="release-2018-10-31-linux.changes"></a>
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Instance type** | **Regions** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before October 18, 2018 to all Linux-based platforms. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-10-31-linux.html) |
-| **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-10-31-linux.html) |
-| **Go** | Updated the Go platform to version 1.11.1. |
-| **Node.js** | Updated the Node.js platform to support [Node v8.12.0](https://nodejs.org/en/blog/release/v8.12.0/). |
-| **PHP** | Updated the PHP 7.2, 7.1, 7.0, and 5.6 configurations to PHP releases [7.2.11](http://php.net/archive/2018.php#id2018-10-11-2), [7.1.23](http://php.net/archive/2018.php#id2018-10-11-3), [7.0.32](http://php.net/archive/2018.php#id2018-09-13-3), and [5.6.38](http://php.net/archive/2018.php#id2018-09-13-5), respectively. |
-| **Ruby** | Updated the Ruby 2.5, 2.4, and 2.3 configurations to Ruby releases [2.5.3](https://www.ruby-lang.org/en/news/2018/10/18/ruby-2-5-3-released/), [2.4.5](https://www.ruby-lang.org/en/news/2018/10/17/ruby-2-4-5-released/), and [2.3.8](https://www.ruby-lang.org/en/news/2018/10/17/ruby-2-3-8-released/), respectively. |
-| **c5d** |  + AWS GovCloud (US-West) – us-gov-west-1  |
-| **f1.4xlarge** |  + US East (N. Virginia) – us-east-1<br />+ US West (Oregon) – us-west-2<br />+ Europe (Ireland) – eu-west-1<br />+ AWS GovCloud (US-West) – us-gov-west-1  |
-| **g3** |  + Canada (Central) – ca-central-1  |
-| **g3s** |  + US East (Ohio) – us-east-2<br />+ US East (N. Virginia) – us-east-1<br />+ US West (Oregon) – us-west-2<br />+ Asia Pacific (Sydney) – ap-southeast-2<br />+ Asia Pacific (Tokyo) – ap-northeast-1<br />+ Europe (Frankfurt) – eu-central-1<br />+ Europe (Ireland) – eu-west-1  |
-| **m5d** |  + AWS GovCloud (US-West) – us-gov-west-1  |
-| **r5** |  + US West (N. California) – us-west-1<br />+ Asia Pacific (Seoul) – ap-northeast-2<br />+ Asia Pacific (Singapore) – ap-southeast-1<br />+ Asia Pacific (Sydney) – ap-southeast-2<br />+ Asia Pacific (Tokyo) – ap-northeast-1<br />+ Canada (Central) – ca-central-1<br />+ Europe (Frankfurt) – eu-central-1<br />+ Europe (Ireland) – eu-west-1<br />+ Europe (London) – eu-west-2<br />+ Europe (Paris) – eu-west-3<br />+ AWS GovCloud (US-West) – us-gov-west-1  |
-| **r5d** |  + US West (N. California) – us-west-1<br />+ Asia Pacific (Seoul) – ap-northeast-2<br />+ Asia Pacific (Singapore) – ap-southeast-1<br />+ Asia Pacific (Sydney) – ap-southeast-2<br />+ Asia Pacific (Tokyo) – ap-northeast-1<br />+ Canada (Central) – ca-central-1<br />+ Europe (Frankfurt) – eu-central-1<br />+ Europe (Ireland) – eu-west-1<br />+ Europe (London) – eu-west-2  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before October 18, 2018 to all Linux-based platforms.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Go</b></td><td>Updated the Go platform to version 1.11.1.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform to support <a href="https://nodejs.org/en/blog/release/v8.12.0/">Node v8.12.0</a>.</td></tr>
+  <tr><td><b>PHP</b></td><td>Updated the PHP 7.2, 7.1, 7.0, and 5.6 configurations to PHP releases <a href="http://php.net/archive/2018.php#id2018-10-11-2">7.2.11</a>, <a href="http://php.net/archive/2018.php#id2018-10-11-3">7.1.23</a>, <a href="http://php.net/archive/2018.php#id2018-09-13-3">7.0.32</a>, and <a href="http://php.net/archive/2018.php#id2018-09-13-5">5.6.38</a>, respectively.</td></tr>
+  <tr><td><b>Ruby</b></td><td>Updated the Ruby 2.5, 2.4, and 2.3 configurations to Ruby releases <a href="https://www.ruby-lang.org/en/news/2018/10/18/ruby-2-5-3-released/">2.5.3</a>, <a href="https://www.ruby-lang.org/en/news/2018/10/17/ruby-2-4-5-released/">2.4.5</a>, and <a href="https://www.ruby-lang.org/en/news/2018/10/17/ruby-2-3-8-released/">2.3.8</a>, respectively.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Instance types</b></td><td>Added support for more Amazon EC2 instance types in some AWS Regions, as follows:
+<table>
+<thead>
+  <tr><th><b>Instance type</b></th><th><b>Regions</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>c5d</b></td><td> <ul><li>AWS GovCloud (US-West) – us-gov-west-1</li></ul> </td></tr>
+  <tr><td><b>f1.4xlarge</b></td><td> <ul><li>US East (N. Virginia) – us-east-1</li><li>US West (Oregon) – us-west-2</li><li>Europe (Ireland) – eu-west-1</li><li>AWS GovCloud (US-West) – us-gov-west-1</li></ul> </td></tr>
+  <tr><td><b>g3</b></td><td> <ul><li>Canada (Central) – ca-central-1</li></ul> </td></tr>
+  <tr><td><b>g3s</b></td><td> <ul><li>US East (Ohio) – us-east-2</li><li>US East (N. Virginia) – us-east-1</li><li>US West (Oregon) – us-west-2</li><li>Asia Pacific (Sydney) – ap-southeast-2</li><li>Asia Pacific (Tokyo) – ap-northeast-1</li><li>Europe (Frankfurt) – eu-central-1</li><li>Europe (Ireland) – eu-west-1</li></ul> </td></tr>
+  <tr><td><b>m5d</b></td><td> <ul><li>AWS GovCloud (US-West) – us-gov-west-1</li></ul> </td></tr>
+  <tr><td><b>r5</b></td><td> <ul><li>US West (N. California) – us-west-1</li><li>Asia Pacific (Seoul) – ap-northeast-2</li><li>Asia Pacific (Singapore) – ap-southeast-1</li><li>Asia Pacific (Sydney) – ap-southeast-2</li><li>Asia Pacific (Tokyo) – ap-northeast-1</li><li>Canada (Central) – ca-central-1</li><li>Europe (Frankfurt) – eu-central-1</li><li>Europe (Ireland) – eu-west-1</li><li>Europe (London) – eu-west-2</li><li>Europe (Paris) – eu-west-3</li><li>AWS GovCloud (US-West) – us-gov-west-1</li></ul> </td></tr>
+  <tr><td><b>r5d</b></td><td> <ul><li>US West (N. California) – us-west-1</li><li>Asia Pacific (Seoul) – ap-northeast-2</li><li>Asia Pacific (Singapore) – ap-southeast-1</li><li>Asia Pacific (Sydney) – ap-southeast-2</li><li>Asia Pacific (Tokyo) – ap-northeast-1</li><li>Canada (Central) – ca-central-1</li><li>Europe (Frankfurt) – eu-central-1</li><li>Europe (Ireland) – eu-west-1</li><li>Europe (London) – eu-west-2</li></ul> </td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## Updated platform configurations
 <a name="release-2018-10-31-linux.platforms"></a>

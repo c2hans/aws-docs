@@ -27,7 +27,7 @@ The request uses the following URI parameters.
 
  ** [controlDomainId](#API_ListControlInsightsByControlDomain_RequestSyntax) **   <a name="auditmanager-ListControlInsightsByControlDomain-request-uri-controlDomainId"></a>
 The unique identifier for the control domain.
-Audit Manager supports the control domains that are provided by AWS Control Catalog. For information about how to find a list of available control domains, see [https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListDomains.html](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListDomains.html) in the AWS Control Catalog API Reference.
+Audit Manager supports the control domains that are provided by AWS Control Catalog. For information about how to find a list of available control domains, see [`ListDomains`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListDomains.html) in the AWS Control Catalog API Reference.
 Length Constraints: Minimum length of 13. Maximum length of 2048.
 Pattern: `^arn:.*:controlcatalog:.*:.*:domain/.*|UNCATEGORIZED|^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`
 Required: Yes

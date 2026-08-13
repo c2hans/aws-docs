@@ -148,14 +148,14 @@ Some sections contain 'R' for both AMS and Customers. This is because, in the AW
 
 <table>
 <thead>
-  <tr><th>Activity</th><th>**Customer**</th><th>**AWS Managed Services (AMS)**</th></tr>
+  <tr><th><b>Activity</b></th><th><b>Customer</b></th><th><b>AWS Managed Services (AMS)</b></th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="3">**AMS patterns**</td></tr>
+  <tr><td colspan="3"><b>AMS patterns</b></td></tr>
   <tr><td>Create new patterns</td><td>I</td><td>R</td></tr>
   <tr><td>Deploy and customize patterns</td><td>R</td><td>C, I</td></tr>
   <tr><td>Test and remove patterns</td><td>R</td><td>I</td></tr>
-  <tr><td colspan="3">**Application lifecycle**</td></tr>
+  <tr><td colspan="3"><b>Application lifecycle</b></td></tr>
   <tr><td>Application development</td><td>R</td><td>I</td></tr>
   <tr><td>Application infrastructure requirements, analysis, and design</td><td>R</td><td>I</td></tr>
   <tr><td>Application deployment</td><td>R</td><td>I</td></tr>
@@ -167,7 +167,7 @@ Some sections contain 'R' for both AMS and Customers. This is because, in the AW
   <tr><td>Monitoring supported for AWS infrastructure</td><td>C</td><td>R</td></tr>
   <tr><td>Incident response for AWS network issues</td><td>C</td><td>R</td></tr>
   <tr><td>Incident response for AWS resource issues</td><td>C</td><td>R</td></tr>
-  <tr><td colspan="3">**Managed Account onboarding**</td></tr>
+  <tr><td colspan="3"><b>Managed Account onboarding</b></td></tr>
   <tr><td>Grant access to the AWS Managed Account for the AMS team and tools</td><td>R</td><td>C</td></tr>
   <tr><td>Implement changes in the account or environment to allow the deployment of tools in the account. For example, changes in Service Control Policies (SCPs)</td><td>R</td><td>C</td></tr>
   <tr><td>Install SSM agents in EC2 instances</td><td>R</td><td>C</td></tr>
@@ -179,7 +179,7 @@ Some sections contain 'R' for both AMS and Customers. This is because, in the AW
   <tr><td>Manage the lifecycle of users and their permissions, for local directory services, used to access AWS accounts and instances</td><td>R</td><td>I</td></tr>
   <tr><td>Recommend reserved instances optimization</td><td>I</td><td>R</td></tr>
   <tr><td>Onboard account(s) to Trusted Remediator</td><td>C,I</td><td>R</td></tr>
-  <tr><td colspan="3">**Patch management**</td></tr>
+  <tr><td colspan="3"><b>Patch management</b></td></tr>
   <tr><td>Collect all required inputs to configure patch maintenance windows, patch baselines, and target</td><td>R</td><td>I</td></tr>
   <tr><td>Request the configuration of patch maintenance windows and baselines, and provide all required inputs</td><td>R</td><td>I</td></tr>
   <tr><td>Configure patch maintenance windows, patch baselines, and targets as requested by the customer</td><td>C</td><td>R</td></tr>
@@ -193,7 +193,7 @@ Some sections contain 'R' for both AMS and Customers. This is because, in the AW
   <tr><td>Patch installed applications, software, or application dependencies not managed by Windows Update</td><td>R</td><td>I</td></tr>
   <tr><td>Patch the Linux operating system and any package that is enabled for management by the operating system's native package manager (for example Yum, Apt, Zypper)</td><td>I</td><td>R</td></tr>
   <tr><td>Patch installed applications, software, or application dependencies not managed by the Linux operating system's native package manager</td><td>R</td><td>I</td></tr>
-  <tr><td colspan="3">**Backup**</td></tr>
+  <tr><td colspan="3"><b>Backup</b></td></tr>
   <tr><td>Collect all required inputs to configure backup plans and target resources</td><td>R</td><td>I</td></tr>
   <tr><td>Request the configuration of Backup plans and provide all required inputs</td><td>R</td><td>I</td></tr>
   <tr><td>Configure backup plans and targets as requested by the customer</td><td>C</td><td>R</td></tr>
@@ -205,19 +205,19 @@ Some sections contain 'R' for both AMS and Customers. This is because, in the AW
   <tr><td>Request backup restoration for resources of supported AWS services resources as part of incident management</td><td>R</td><td>I</td></tr>
   <tr><td>Perform backup restoration activities for resources of supported AWS services</td><td>I</td><td>R</td></tr>
   <tr><td>Restore affected custom or third-party applications</td><td>R</td><td>I</td></tr>
-  <tr><td colspan="3">**Networking**</td></tr>
+  <tr><td colspan="3"><b>Networking</b></td></tr>
   <tr><td>Provisioning and configuration of Managed Account VPCs, IGWs, Direct connect, and other AWS networking Services</td><td>R</td><td>I</td></tr>
   <tr><td>Configure and operate AWS Security Groups/NAT/NACL inside the Managed account</td><td>R</td><td>I</td></tr>
   <tr><td>Networking configuration and implementation within customer network (for example DirectConnect)</td><td>R</td><td>I</td></tr>
   <tr><td>Networking configuration and implementation within AWS network</td><td>R</td><td>I</td></tr>
   <tr><td>Monitor defined by AMS for network security, including security groups</td><td>I</td><td>R</td></tr>
   <tr><td>Network-level logging configuration and management (VPC flow logs and others)</td><td>I</td><td>R</td></tr>
-  <tr><td colspan="3">**Logging**</td></tr>
+  <tr><td colspan="3"><b>Logging</b></td></tr>
   <tr><td>Record all application change logs</td><td>R</td><td>I</td></tr>
   <tr><td>Record AWS infrastructure change logs</td><td>I</td><td>R</td></tr>
   <tr><td>Enable and aggregate AWS audit trail</td><td>I</td><td>R</td></tr>
   <tr><td>Aggregate logs from AWS resources</td><td>I</td><td>R</td></tr>
-  <tr><td colspan="3">**Monitoring and Remediation**</td></tr>
+  <tr><td colspan="3"><b>Monitoring and Remediation</b></td></tr>
   <tr><td>Collect all required inputs to configure alarm manager, resource tagger, and alarm thresholds</td><td>R</td><td>I</td></tr>
   <tr><td>Request the configuration of alarm manager and provide all required inputs</td><td>R</td><td>I</td></tr>
   <tr><td>Configure alarm manager, resource tagger, and alarm thresholds as requested by the customer.</td><td>C</td><td>R</td></tr>
@@ -232,12 +232,12 @@ Some sections contain 'R' for both AMS and Customers. This is because, in the AW
   <tr><td>Manually remediate supported Trusted Advisor checks</td><td>R</td><td>C</td></tr>
   <tr><td>Report remediation status</td><td>I</td><td>R</td></tr>
   <tr><td>Troubleshoot remediation failures</td><td>R</td><td>C</td></tr>
-  <tr><td colspan="3">**Security Architecture**</td></tr>
+  <tr><td colspan="3"><b>Security Architecture</b></td></tr>
   <tr><td>Review AMS resources and code for security issues and potential threats</td><td>I</td><td>R</td></tr>
   <tr><td>Implement security controls in AMS resources and code to mitigate security risks</td><td>I</td><td>R</td></tr>
   <tr><td>Enable supported AWS services for security management of the account and its AWS resources</td><td>I</td><td>R</td></tr>
   <tr><td>Manage privileged credentials for account and OS access for AMS engineers</td><td>I</td><td>R</td></tr>
-  <tr><td colspan="3">**Security Risk Management**</td></tr>
+  <tr><td colspan="3"><b>Security Risk Management</b></td></tr>
   <tr><td>Monitor supported AWS services for security management, like GuardDuty and Macie</td><td>I</td><td>R</td></tr>
   <tr><td>Define and create AMS-defined Config Rules to detect if AWS resources comply with Center for Internet Security (CIS) and NIST security best practices.</td><td>I</td><td>R</td></tr>
   <tr><td>Monitor AMS-defined Config Rules</td><td>I</td><td>R</td></tr>
@@ -249,7 +249,7 @@ Some sections contain 'R' for both AMS and Customers. This is because, in the AW
   <tr><td>Remediate supported AMS-defined Config Rules in the AWS account</td><td>C</td><td>R</td></tr>
   <tr><td>Remediate non-supported AMS-defined Config Rules in the AWS account</td><td>R</td><td>I</td></tr>
   <tr><td>Define, monitor, and investigate customer-specific Config Rules</td><td>R</td><td>I</td></tr>
-  <tr><td colspan="3">**Incident Management**</td></tr>
+  <tr><td colspan="3"><b>Incident Management</b></td></tr>
   <tr><td>Notify about incidents detected by AMS in AWS resources</td><td>I</td><td>R</td></tr>
   <tr><td>Notify about incidents in AWS resources</td><td>R</td><td>I</td></tr>
   <tr><td>Notify about incidents for AWS resources based on monitoring</td><td>I</td><td>R</td></tr>
@@ -257,21 +257,21 @@ Some sections contain 'R' for both AMS and Customers. This is because, in the AW
   <tr><td>Categorize incident priority</td><td>I</td><td>R</td></tr>
   <tr><td>Provide incident response</td><td>I</td><td>R</td></tr>
   <tr><td>Provide incident resolution or infrastructure restore for resources with available backups</td><td>C</td><td>R</td></tr>
-  <tr><td colspan="3">**Security Incident Response – Prepare**</td></tr>
-  <tr><td colspan="3">**Communications**</td></tr>
+  <tr><td colspan="3"><b>Security Incident Response – Prepare</b></td></tr>
+  <tr><td colspan="3"><b>Communications</b></td></tr>
   <tr><td>Provide and update customer security contact details for AMS to use during security events notifications and security escalations</td><td>R</td><td>I</td></tr>
   <tr><td>Store and manage the supplied customer security contact details to use during security events and security escalations</td><td>C</td><td>R</td></tr>
-  <tr><td colspan="3">**Training**</td></tr>
+  <tr><td colspan="3"><b>Training</b></td></tr>
   <tr><td>Provide customer with documentation to support AMS during incident response process</td><td>I</td><td>R</td></tr>
   <tr><td>Practice shared responsibility during incident response processes through security gamedays</td><td>R</td><td>R</td></tr>
-  <tr><td colspan="3">**Resource management**</td></tr>
+  <tr><td colspan="3"><b>Resource management</b></td></tr>
   <tr><td>Configure supported security management AWS services for alerting, alerts correlation, noise reduction and additional rules</td><td>I</td><td>R</td></tr>
   <tr><td>Maintain a comprehensive inventory of AWS resources (Amazon EC2, Amazon S3 etc.), including details on the value and criticality of each asset to the business. This information will be instrumental in determining an effective containment strategy</td><td>R</td><td>C</td></tr>
   <tr><td>Employ AWS tags to identify resources and workloads</td><td>R</td><td>C</td></tr>
   <tr><td>Define and configure log retention and archival</td><td>I</td><td>R</td></tr>
   <tr><td>Establish a secure baseline by defining and enforcing the organization's security policies and configurations for AWS accounts, services, and access management</td><td>R</td><td>I</td></tr>
-  <tr><td colspan="3">**Security Incident Response - Detect**</td></tr>
-  <tr><td colspan="3">**Logging, indicators and monitoring**</td></tr>
+  <tr><td colspan="3"><b>Security Incident Response - Detect</b></td></tr>
+  <tr><td colspan="3"><b>Logging, indicators and monitoring</b></td></tr>
   <tr><td>Configure logging and monitoring to enable event management for instance and accounts</td><td>I</td><td>R</td></tr>
   <tr><td>Monitor supported AWS services for security alerts</td><td>I</td><td>R</td></tr>
   <tr><td>Deploy and manage endpoint security tools</td><td>R</td><td>I</td></tr>
@@ -282,12 +282,12 @@ Some sections contain 'R' for both AMS and Customers. This is because, in the AW
   <tr><td>Record AWS infrastructure change logs</td><td>R</td><td>I</td></tr>
   <tr><td>Enable and configure logging, monitoring to enable event management for the application</td><td>R</td><td>C</td></tr>
   <tr><td>Implement and maintain an allow-list, deny-list, and custom detections on supported AWS security services (for example, Amazon GuardDuty)</td><td>R</td><td>R</td></tr>
-  <tr><td colspan="3">**Security event reporting**</td></tr>
+  <tr><td colspan="3"><b>Security event reporting</b></td></tr>
   <tr><td>Notify AMS of a suspicious activity or an active security investigation</td><td>R</td><td>I</td></tr>
   <tr><td>Notify detected security events and incidents to the customer</td><td>I</td><td>R</td></tr>
   <tr><td>Notify planned event that might trigger Security Incident Response process</td><td>R</td><td>I</td></tr>
-  <tr><td colspan="3">**Security Incident Response - Analyze**</td></tr>
-  <tr><td colspan="3">**Investigation and analysis**</td></tr>
+  <tr><td colspan="3"><b>Security Incident Response - Analyze</b></td></tr>
+  <tr><td colspan="3"><b>Investigation and analysis</b></td></tr>
   <tr><td>Perform initial response for supported security alert generated by a supported detection source</td><td>I</td><td>R</td></tr>
   <tr><td>Assess false/true positives using the available data</td><td>R</td><td>R</td></tr>
   <tr><td>Generate a snapshot of affected instances to be shared with the customer if needed</td><td>I</td><td>R</td></tr>
@@ -296,51 +296,51 @@ Some sections contain 'R' for both AMS and Customers. This is because, in the AW
   <tr><td>Collect data and logs to aid investigation on security alerts</td><td>R</td><td>R</td></tr>
   <tr><td>Engage SMEs within AWS services on security investigations</td><td>C</td><td>R</td></tr>
   <tr><td>Share investigation logs from supported AWS services to customers during an investigation</td><td>I</td><td>R</td></tr>
-  <tr><td colspan="3">**Communication**</td></tr>
+  <tr><td colspan="3"><b>Communication</b></td></tr>
   <tr><td>Send alert and notifications from AMS detection sources for managed resources</td><td>I</td><td>R</td></tr>
   <tr><td>Manage alert and notifications for application security events</td><td>R</td><td>I</td></tr>
   <tr><td>Engage customer security point of contact during a security incident investigation</td><td>R</td><td>I</td></tr>
-  <tr><td colspan="3">**Security Incident Response - Contain**</td></tr>
-  <tr><td colspan="3">**Containment strategy and execution**</td></tr>
+  <tr><td colspan="3"><b>Security Incident Response - Contain</b></td></tr>
+  <tr><td colspan="3"><b>Containment strategy and execution</b></td></tr>
   <tr><td>Assess risks and decide the containment strategy, acknowledging potential service impacts</td><td>R</td><td>C</td></tr>
   <tr><td>Make a backup of affected systems for further analysis</td><td>I</td><td>R</td></tr>
   <tr><td>Contain applications and workloads (through application specific configuration or response activity)</td><td>R</td><td>C</td></tr>
   <tr><td>Define the containment strategy based on the security incident and the affected resource</td><td>I</td><td>R</td></tr>
   <tr><td>Enable encryption and secure storage of point in time backups of affected systems</td><td>C</td><td>R</td></tr>
   <tr><td>Execute supported containment actions for AWS resources including EC2 instances, network, and IAM</td><td>I</td><td>R</td></tr>
-  <tr><td colspan="3">**Security Incident Response - Eradicate**</td></tr>
-  <tr><td colspan="3">**Eradication strategy and execution**</td></tr>
+  <tr><td colspan="3"><b>Security Incident Response - Eradicate</b></td></tr>
+  <tr><td colspan="3"><b>Eradication strategy and execution</b></td></tr>
   <tr><td>Define eradication options based on the security incident and the affected resource on customer application workloads</td><td>C</td><td>R</td></tr>
   <tr><td>Decide on the agreed eradication strategy, timing of eradication execution and the consequences</td><td>R</td><td>I</td></tr>
   <tr><td>Define eradication steps based on the security incident and the affected resource on AMS managed workloads</td><td>C</td><td>R</td></tr>
   <tr><td>Eradicate threats and harden AWS resources including EC2 instances, network, and IAM eradication</td><td>R</td><td>C</td></tr>
   <tr><td>Eradicate threats and harden applications and workloads (through application specific configuration or response activity)</td><td>R</td><td>I</td></tr>
-  <tr><td colspan="3">**Security Incident Response - Recover**</td></tr>
-  <tr><td colspan="3">**Recovery preparation and execution**</td></tr>
+  <tr><td colspan="3"><b>Security Incident Response - Recover</b></td></tr>
+  <tr><td colspan="3"><b>Recovery preparation and execution</b></td></tr>
   <tr><td>Configure backup plans and targets as requested by the customer</td><td>I</td><td>R</td></tr>
   <tr><td>Review backup plans to restore AMS managed workloads</td><td>R</td><td>I</td></tr>
   <tr><td>Perform backup restoration activities for resources of supported AWS services</td><td>I</td><td>R</td></tr>
   <tr><td>Backup customer application, APP configuration, and deployment settings, and review backup plans to restore customer applications and workloads post-incident</td><td>R</td><td>I</td></tr>
   <tr><td>Restore applications and customer workloads (through application specific restoration steps)</td><td>R</td><td>I</td></tr>
-  <tr><td colspan="3">**Security Incident Response – Post Incident Report**</td></tr>
-  <tr><td colspan="3">**Post incident reporting**</td></tr>
+  <tr><td colspan="3"><b>Security Incident Response – Post Incident Report</b></td></tr>
+  <tr><td colspan="3"><b>Post incident reporting</b></td></tr>
   <tr><td>Share appropriate lessons learned and action items with customer post incident as required</td><td>I</td><td>R</td></tr>
-  <tr><td colspan="3">**Problem Management**</td></tr>
+  <tr><td colspan="3"><b>Problem Management</b></td></tr>
   <tr><td>Correlate incidents to identify problems </td><td>I</td><td>R</td></tr>
   <tr><td>Perform root cause analysis (RCA) for problems</td><td>I</td><td>R</td></tr>
   <tr><td>Remediate problems</td><td>I</td><td>R</td></tr>
   <tr><td>Identify and remediate application problems</td><td>R</td><td>I</td></tr>
-  <tr><td colspan="3">**Service Management**</td></tr>
+  <tr><td colspan="3"><b>Service Management</b></td></tr>
   <tr><td>Request information using service requests</td><td>R</td><td>I</td></tr>
   <tr><td>Reply to service requests</td><td>I</td><td>R</td></tr>
   <tr><td>Provide cost-optimization recommendations</td><td>I</td><td>R</td></tr>
   <tr><td>Prepare and deliver monthly service report</td><td>I</td><td>R</td></tr>
-  <tr><td colspan="3">**Change Management**</td></tr>
+  <tr><td colspan="3"><b>Change Management</b></td></tr>
   <tr><td>Change management processes and tooling for provisioning and updating resources in the managed environment</td><td>R</td><td>I</td></tr>
   <tr><td>Maintenance of application change calendar</td><td>R</td><td>I</td></tr>
   <tr><td>Notice of upcoming maintenance Window</td><td>R</td><td>I</td></tr>
   <tr><td>Record changes made by AMS Operations</td><td>I</td><td>R</td></tr>
-  <tr><td colspan="3">**Cost Optimization**</td></tr>
+  <tr><td colspan="3"><b>Cost Optimization</b></td></tr>
   <tr><td>Collect all required inputs to configure Resource Scheduler</td><td>R</td><td>I</td></tr>
   <tr><td>Request the onboarding, configuration of Resource Scheduler and provide all required inputs</td><td>R</td><td>I</td></tr>
   <tr><td>Deploy Resource Scheduler per customer configuration</td><td>C, I</td><td>R</td></tr>

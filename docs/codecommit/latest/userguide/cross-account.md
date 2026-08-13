@@ -22,7 +22,7 @@ To configure cross-account access:
 + The repository user in AccountB, to emulate the activities of a developer, signs in as an IAM user who is a member of the IAM group created to allow access to the CodeCommit repository in AccountA. This account must be configured with:
   + AWS Management Console access.
   + An access key and secret key to use when connecting to AWS resources and the ARN of the role to assume when accessing repositories in AccountA.
-  + The **git-remote-codecommit** utility on the local computer where the repository is cloned. This utility requires Python and its installer, pip. You can download the utility from [https://pypi.org/project/git-remote-codecommit/](https://pypi.org/project/git-remote-codecommit/) on the Python Package Index website.
+  + The **git-remote-codecommit** utility on the local computer where the repository is cloned. This utility requires Python and its installer, pip. You can download the utility from [**git-remote-codecommit**](https://pypi.org/project/git-remote-codecommit/) on the Python Package Index website.
 
   For more information, see [Setup steps for HTTPS connections to AWS CodeCommit with git-remote-codecommit](setting-up-git-remote-codecommit.md) and [IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_identity-management.html#intro-identity-users).
 

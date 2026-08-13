@@ -96,7 +96,7 @@ Incident Manager integrates with several other AWS services and third-party serv
 
 You can access Incident Manager in any of the following ways:
 + **The [Incident Manager console](https://console.aws.amazon.com/systems-manager/incidents/home)**
-+ **AWS CLI** – For general information, see [Getting started with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) in the *AWS Command Line Interface User Guide*. For information about CLI commands for Incident Manager, see [https://docs.aws.amazon.com/cli/latest/reference/ssm-incidents/](https://docs.aws.amazon.com/cli/latest/reference/ssm-incidents/) and [https://docs.aws.amazon.com/cli/latest/reference/ssm-contacts/](https://docs.aws.amazon.com/cli/latest/reference/ssm-contacts/) in the *AWS CLI Command Reference*.
++ **AWS CLI** – For general information, see [Getting started with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) in the *AWS Command Line Interface User Guide*. For information about CLI commands for Incident Manager, see [ssm-incidents](https://docs.aws.amazon.com/cli/latest/reference/ssm-incidents/) and [ssm-contacts](https://docs.aws.amazon.com/cli/latest/reference/ssm-contacts/) in the *AWS CLI Command Reference*.
 + **Incident Manager API** – For more information, see the [AWS Systems Manager Incident Manager API Reference](https://docs.aws.amazon.com/incident-manager/latest/APIReference/Welcome.html).
 + **AWS SDKs** – For more information, see [Tools to Build on AWS](http://aws.amazon.com/developer/tools).
 

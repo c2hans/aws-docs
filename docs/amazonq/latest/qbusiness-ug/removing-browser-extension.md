@@ -30,7 +30,7 @@ To disable the browser extension to your existing web experience, Admin users ca
 ## Using the AWS API
 <a name="removing-browser-extension-using-aws-api"></a>
 
-You can disable browser extensions using the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateWebExperience.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateWebExperience.html) API
+You can disable browser extensions using the [`UpdateWebExperience`](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateWebExperience.html) API
 
 ## Blocking and removing the browser extension
 <a name="blocking-removing-extension"></a>

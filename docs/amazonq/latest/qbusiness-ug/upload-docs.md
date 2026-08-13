@@ -7,7 +7,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 # Uploading files
 <a name="upload-docs"></a>
 
-To upload documents directly to an Amazon Q Business application environment, you can use the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) API operation.
+To upload documents directly to an Amazon Q Business application environment, you can use the AWS Management Console or the [BatchPutDocument](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) API operation.
 
 If you use an Amazon Kendra index to retrieve your documents, you can't directly upload documents.
 

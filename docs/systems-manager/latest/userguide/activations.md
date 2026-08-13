@@ -13,7 +13,7 @@ To configure non-EC2 machines for use with AWS Systems Manager in a [hybrid and 
 + AWS IoT and non-AWS edge devices
 + Virtual machines (VMs), including VMs in other cloud environments
 
-When you run the [https://docs.aws.amazon.com/cli/latest/reference/ssm/create-activation.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/create-activation.html) command to start a hybrid activation process, you receive an activation code and ID in the command response. You then include the activation code and ID with the command to install SSM Agent on the machine, as described in step 3 of [Install SSM Agent on hybrid Linux nodes](hybrid-multicloud-ssm-agent-install-linux.md) and step 4 of [Install SSM Agent on hybrid Windows Server nodes](hybrid-multicloud-ssm-agent-install-windows.md).
+When you run the [create-activation](https://docs.aws.amazon.com/cli/latest/reference/ssm/create-activation.html) command to start a hybrid activation process, you receive an activation code and ID in the command response. You then include the activation code and ID with the command to install SSM Agent on the machine, as described in step 3 of [Install SSM Agent on hybrid Linux nodes](hybrid-multicloud-ssm-agent-install-linux.md) and step 4 of [Install SSM Agent on hybrid Windows Server nodes](hybrid-multicloud-ssm-agent-install-windows.md).
 
 This activation process applies to all non-EC2 machine types *except* AWS IoT Greengrass core devices. For information about configuring AWS IoT Greengrass core devices for Systems Manager, see [Managing edge devices with Systems Manager](systems-manager-setting-up-edge-devices.md).
 

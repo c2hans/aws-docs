@@ -27,11 +27,11 @@ Choose your preferred access method to configure Lambda Protection for a standal
 ------
 #### [ API/CLI ]
 
-Run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html) API operation using your own regional detector ID and passing the `features` object `name` as `LAMBDA_NETWORK_LOGS` and `status` as `ENABLED`.
+Run the [updateDetector](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html) API operation using your own regional detector ID and passing the `features` object `name` as `LAMBDA_NETWORK_LOGS` and `status` as `ENABLED`.
 
 Alternatively, you can use AWS CLI to enable Lambda Protection. Run the following command, and replace {{12abc34d567e8fa901bc2d34e56789f0}} with your account's detector ID and {{us-east-1}} with the Region where you want to enable Lambda Protection.
 
-To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
 ```
 aws guardduty update-detector --detector-id {{12abc34d567e8fa901bc2d34e56789f0}} --region {{us-east-1}} --features [{"Name" : "LAMBDA_NETWORK_LOGS", "Status" : "ENABLED"}]'

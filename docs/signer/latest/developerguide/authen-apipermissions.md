@@ -14,25 +14,25 @@ To specify an action, use the `signer` prefix followed by the API operation name
 
 |  API Operation  |  Required Permissions (API Actions)  |
 | --- | --- |
-| [https://docs.aws.amazon.com/signer/latest/api/API_AddProfilePermission.html](https://docs.aws.amazon.com/signer/latest/api/API_AddProfilePermission.html) | `signer:AddProfilePermission` |
-| [https://docs.aws.amazon.com/signer/latest/api/API_CancelSigningProfile.html](https://docs.aws.amazon.com/signer/latest/api/API_CancelSigningProfile.html) | `signer:CancelSigningProfile` |
-| [https://docs.aws.amazon.com/signer/latest/api/API_DescribeSigningJob.html](https://docs.aws.amazon.com/signer/latest/api/API_DescribeSigningJob.html) | `signer:DescribeSigningJob` |
-| [https://docs.aws.amazon.com/signer/latest/api/API_GetRevocationStatus.html](https://docs.aws.amazon.com/signer/latest/api/API_GetRevocationStatus.html) | `signer:GetRevocationStatus` |
-| [https://docs.aws.amazon.com/signer/latest/api/API_GetSigningPlatform.html](https://docs.aws.amazon.com/signer/latest/api/API_GetSigningPlatform.html) | `signer:GetSigningPlatform` |
-| [https://docs.aws.amazon.com/signer/latest/api/API_GetSigningProfile.html](https://docs.aws.amazon.com/signer/latest/api/API_GetSigningProfile.html) | `signer:GetSigningProfile` |
-| [https://docs.aws.amazon.com/signer/latest/api/API_ListProfilePermissions.html](https://docs.aws.amazon.com/signer/latest/api/API_ListProfilePermissions.html) | `signer:ListProfilePermissions` |
-| [https://docs.aws.amazon.com/signer/latest/api/API_ListSigningJobs.html](https://docs.aws.amazon.com/signer/latest/api/API_ListSigningJobs.html) | `signer:ListSigningJobs` |
-| [https://docs.aws.amazon.com/signer/latest/api/API_ListSigningPlatforms.html](https://docs.aws.amazon.com/signer/latest/api/API_ListSigningPlatforms.html) | `signer:ListSigningPlatforms` |
-| [https://docs.aws.amazon.com/signer/latest/api/API_ListSigningProfiles.html](https://docs.aws.amazon.com/signer/latest/api/API_ListSigningProfiles.html) | `signer:ListSigningProfiles` |
-| [https://docs.aws.amazon.com/signer/latest/api/API_ListTagsForResource.html](https://docs.aws.amazon.com/signer/latest/api/API_ListTagsForResource.html) | `signer:ListTagsForResource` |
-| [https://docs.aws.amazon.com/signer/latest/api/API_PutSigningProfile.html](https://docs.aws.amazon.com/signer/latest/api/API_PutSigningProfile.html) | `signer:PutSigningProfile` |
-| [https://docs.aws.amazon.com/signer/latest/api/API_RemoveProfilePermission.html](https://docs.aws.amazon.com/signer/latest/api/API_RemoveProfilePermission.html) | `signer:RemoveProfilePermission` |
-| [https://docs.aws.amazon.com/signer/latest/api/API_RevokeSignature.html](https://docs.aws.amazon.com/signer/latest/api/API_RevokeSignature.html) | `signer:RevokeSignature` |
-| [https://docs.aws.amazon.com/signer/latest/api/API_RevokeSigningProfile.html](https://docs.aws.amazon.com/signer/latest/api/API_RevokeSigningProfile.html) | `signer:RevokeSigningProfile` |
-| [https://docs.aws.amazon.com/signer/latest/api/API_SignPayload.html](https://docs.aws.amazon.com/signer/latest/api/API_SignPayload.html) | `signer:SignPayload` |
-| [https://docs.aws.amazon.com/signer/latest/api/API_StartSigningJob.html](https://docs.aws.amazon.com/signer/latest/api/API_StartSigningJob.html) | `signer:StartSigningJob` |
-| [https://docs.aws.amazon.com/signer/latest/api/API_TagResource.html](https://docs.aws.amazon.com/signer/latest/api/API_TagResource.html) | `signer:TagResource` |
-| [https://docs.aws.amazon.com/signer/latest/api/API_UntagResource.html](https://docs.aws.amazon.com/signer/latest/api/API_UntagResource.html) | `signer:UntagResource` |
+| [`AddProfilePermission`](https://docs.aws.amazon.com/signer/latest/api/API_AddProfilePermission.html) | `signer:AddProfilePermission` |
+| [`CancelSigningProfile`](https://docs.aws.amazon.com/signer/latest/api/API_CancelSigningProfile.html) | `signer:CancelSigningProfile` |
+| [`DescribeSigningJob`](https://docs.aws.amazon.com/signer/latest/api/API_DescribeSigningJob.html) | `signer:DescribeSigningJob` |
+| [`GetRevocationStatus`](https://docs.aws.amazon.com/signer/latest/api/API_GetRevocationStatus.html) | `signer:GetRevocationStatus` |
+| [`GetSigningPlatform`](https://docs.aws.amazon.com/signer/latest/api/API_GetSigningPlatform.html) | `signer:GetSigningPlatform` |
+| [`GetSigningProfile`](https://docs.aws.amazon.com/signer/latest/api/API_GetSigningProfile.html) | `signer:GetSigningProfile` |
+| [`ListProfilePermissions`](https://docs.aws.amazon.com/signer/latest/api/API_ListProfilePermissions.html) | `signer:ListProfilePermissions` |
+| [`ListSigningJobs`](https://docs.aws.amazon.com/signer/latest/api/API_ListSigningJobs.html) | `signer:ListSigningJobs` |
+| [`ListSigningPlatforms`](https://docs.aws.amazon.com/signer/latest/api/API_ListSigningPlatforms.html) | `signer:ListSigningPlatforms` |
+| [`ListSigningProfiles`](https://docs.aws.amazon.com/signer/latest/api/API_ListSigningProfiles.html) | `signer:ListSigningProfiles` |
+| [`ListTagsForResource`](https://docs.aws.amazon.com/signer/latest/api/API_ListTagsForResource.html) | `signer:ListTagsForResource` |
+| [`PutSigningProfile`](https://docs.aws.amazon.com/signer/latest/api/API_PutSigningProfile.html) | `signer:PutSigningProfile` |
+| [`RemoveProfilePermission`](https://docs.aws.amazon.com/signer/latest/api/API_RemoveProfilePermission.html) | `signer:RemoveProfilePermission` |
+| [`RevokeSignature`](https://docs.aws.amazon.com/signer/latest/api/API_RevokeSignature.html) | `signer:RevokeSignature` |
+| [`RevokeSigningProfile`](https://docs.aws.amazon.com/signer/latest/api/API_RevokeSigningProfile.html) | `signer:RevokeSigningProfile` |
+| [`SignPayload`](https://docs.aws.amazon.com/signer/latest/api/API_SignPayload.html) | `signer:SignPayload` |
+| [`StartSigningJob`](https://docs.aws.amazon.com/signer/latest/api/API_StartSigningJob.html) | `signer:StartSigningJob` |
+| [`TagResource`](https://docs.aws.amazon.com/signer/latest/api/API_TagResource.html) | `signer:TagResource` |
+| [`UntagResource`](https://docs.aws.amazon.com/signer/latest/api/API_UntagResource.html) | `signer:UntagResource` |
 
 For the actions `StartSigningJob`, `GetSigningProfile`, `CancelSigningProfile`,`RevokeSigningProfile`, and `SignPayload`, use the `signer:ProfileVersion` condition key to limit what version of a signing profile a principal has access to.
 
@@ -40,4 +40,4 @@ For the actions `StartSigningJob`, `GetSigningProfile`, `CancelSigningProfile`,`
 
 |  Condition Key  |  Description  |  APIs  |
 | --- | --- | --- |
-| `signer:ProfileVersion` | Limit access to a specific version of a Signing Profile  | [https://docs.aws.amazon.com/signer/latest/api/API_StartSigningJob.html](https://docs.aws.amazon.com/signer/latest/api/API_StartSigningJob.html)<br />[https://docs.aws.amazon.com/signer/latest/api/API_GetSigningProfile.html](https://docs.aws.amazon.com/signer/latest/api/API_GetSigningProfile.html)<br />[https://docs.aws.amazon.com/signer/latest/api/API_CancelSigningProfile.html](https://docs.aws.amazon.com/signer/latest/api/API_CancelSigningProfile.html)<br />[https://docs.aws.amazon.com/signer/latest/api/API_RevokeSigningProfile.html](https://docs.aws.amazon.com/signer/latest/api/API_RevokeSigningProfile.html)<br />[https://docs.aws.amazon.com/signer/latest/api/API_SignPayload.html](https://docs.aws.amazon.com/signer/latest/api/API_SignPayload.html) |
+| `signer:ProfileVersion` | Limit access to a specific version of a Signing Profile  | [`StartSigningJob`](https://docs.aws.amazon.com/signer/latest/api/API_StartSigningJob.html)<br />[`GetSigningProfile`](https://docs.aws.amazon.com/signer/latest/api/API_GetSigningProfile.html)<br />[`CancelSigningProfile`](https://docs.aws.amazon.com/signer/latest/api/API_CancelSigningProfile.html)<br />[`RevokeSigningProfile`](https://docs.aws.amazon.com/signer/latest/api/API_RevokeSigningProfile.html)<br />[`SignPayload`](https://docs.aws.amazon.com/signer/latest/api/API_SignPayload.html) |

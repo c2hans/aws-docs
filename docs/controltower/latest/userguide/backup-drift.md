@@ -15,7 +15,7 @@ If you delete or modify the AWS Backup plan, your plan can enter a state of drif
 + Do not detach, attach, or update the AWS Backup SCP that is applied to the Security OU.
 + Do not detach, attach, or update the AWS Backup SCP that is applied to other OUs.
 + Do not remove the **Backup Administrator** account's permission for AWS Backup.
-+ Do not update your cross-account backup settings to turn off cross-account backups. For more information about cross-account backups, see [https://docs.aws.amazon.com//aws-backup/latest/devguide/API_UpdateGlobalSettings.html](https://docs.aws.amazon.com//aws-backup/latest/devguide/API_UpdateGlobalSettings.html) in the *AWS Backup API Reference*.
++ Do not update your cross-account backup settings to turn off cross-account backups. For more information about cross-account backups, see [`UpdateGlobalSettings`](https://docs.aws.amazon.com//aws-backup/latest/devguide/API_UpdateGlobalSettings.html) in the *AWS Backup API Reference*.
 + Do not delete your AWS KMS key.
 + Do not modify your AWS KMS key policy after it is set.
 + Do not disable the service's trusted access for AWS Backup.

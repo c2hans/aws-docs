@@ -365,6 +365,7 @@ The `c5n`, `d3`, `d3en`, `g3`, `g3s`, `g4dn`, `i3`, `i3en`, `inf1`, `m5dn`, `m5n
 | mac2-m1ultra.metal | 7 | 12 |
 | mac2-m2.metal | 7 | 12 |
 | mac2-m2pro.metal | 7 | 12 |
+| mac-m3ultra.metal | 7 | 12 |
 | mac-m4.metal | 7 | 12 |
 | mac-m4pro.metal | 7 | 12 |
 | mac-m4max.metal | 7 | 12 |

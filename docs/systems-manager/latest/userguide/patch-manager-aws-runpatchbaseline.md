@@ -7,14 +7,14 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 # SSM Command document for patching: `AWS-RunPatchBaseline`
 <a name="patch-manager-aws-runpatchbaseline"></a>
 
-AWS Systems Manager supports `AWS-RunPatchBaseline`, a Systems Manager document (SSM document) for Patch Manager, a tool in AWS Systems Manager. This SSM document performs patching operations on managed nodes for both security related and other types of updates. When the document is run, it uses the patch baseline specified as the "default" for an operating system type if no patch group is specified. Otherwise, it uses the patch baseline that is associated with the patch group. For information about patch groups, see [Patch groups](patch-manager-patch-groups.md).
+AWS Systems Manager supports `AWS-RunPatchBaseline`, a Systems Manager document (SSM document) for Patch Manager. This SSM document performs patching operations on managed nodes for both security related and other types of updates. When the document is run, it uses the patch baseline specified as the "default" for an operating system type if no patch group is specified. Otherwise, it uses the patch baseline that is associated with the patch group. For information about patch groups, see [Patch groups](patch-manager-patch-groups.md).
 
 You can use the document `AWS-RunPatchBaseline` to apply patches for both operating systems and applications. (On Windows Server, application support is limited to updates for applications released by Microsoft.)
 
 This document supports Linux, macOS, and Windows Server managed nodes. The document will perform the appropriate actions for each platform.
 
 **Note**
-Patch Manager also supports the legacy SSM document `AWS-ApplyPatchBaseline`. However, this document supports patching on Windows managed nodes only. We encourage you to use `AWS-RunPatchBaseline` instead because it supports patching on Linux, macOS, and Windows Server managed nodes. Version 2.0.834.0 or later of SSM Agent is required in order to use the `AWS-RunPatchBaseline` document.
+Patch Manager also supports the legacy SSM document `AWS-ApplyPatchBaseline`. However, this document supports patching on Windows managed nodes only. We encourage you to use `AWS-RunPatchBaseline` instead because it supports patching on Linux, macOS, and Windows Server managed nodes. Version 2.0.834.0 or later of SSM Agent is required to use the `AWS-RunPatchBaseline` document.
 
 ------
 #### [ Windows Server ]
@@ -36,7 +36,7 @@ On macOS managed nodes, the `AWS-RunPatchBaseline` document invokes a Python mod
 
 ------
 
-Each snapshot is specific to an AWS account, patch group, operating system, and snapshot ID. The snapshot is delivered through a presigned Amazon Simple Storage Service (Amazon S3) URL, which expires 24 hours after the snapshot is created. After the URL expires, however, if you want to apply the same snapshot content to other managed nodes, you can generate a new presigned Amazon S3 URL up to 3 days after the snapshot was created. To do this, use the [https://docs.aws.amazon.com/cli/latest/reference/ssm/get-deployable-patch-snapshot-for-instance.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-deployable-patch-snapshot-for-instance.html) command.
+Each snapshot is specific to an AWS account, patch group, operating system, and snapshot ID. The snapshot is delivered through a presigned Amazon Simple Storage Service (Amazon S3) URL, which expires 24 hours after the snapshot is created. After the URL expires, however, if you want to apply the same snapshot content to other managed nodes, you can generate a new presigned Amazon S3 URL up to 3 days after the snapshot was created. To do this, use the [get-deployable-patch-snapshot-for-instance](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-deployable-patch-snapshot-for-instance.html) command.
 
 After all approved and applicable updates have been installed, with reboots performed as necessary, patch compliance information is generated on a managed node and reported back to Patch Manager.
 
@@ -70,7 +70,7 @@ Scan
 When you choose the `Scan` option, `AWS-RunPatchBaseline` determines the patch compliance state of the managed node and reports this information back to Patch Manager. `Scan` doesn't prompt updates to be installed or managed nodes to be rebooted. Instead, the operation identifies where updates are missing that are approved and applicable to the node.
 
 Install
-When you choose the `Install` option, `AWS-RunPatchBaseline` attempts to install the approved and applicable updates that are missing from the managed node. Patch compliance information generated as part of an `Install` operation doesn't list any missing updates, but might report updates that are in a failed state if the installation of the update didn't succeed for any reason. Whenever an update is installed on a managed node, the node is rebooted to ensure the update is both installed and active. (Exception: If the `RebootOption` parameter is set to `NoReboot` in the `AWS-RunPatchBaseline` document, the managed node isn't rebooted after Patch Manager runs. For more information, see [Parameter name: `RebootOption`](#patch-manager-aws-runpatchbaseline-parameters-norebootoption).)
+When you choose the `Install` option, `AWS-RunPatchBaseline` attempts to install the approved and applicable updates that are missing from the managed node. Patch compliance information generated as part of an `Install` operation doesn't list any missing updates, but might report updates that are in a failed state if the installation of the update didn't succeed for any reason. Whenever an update is installed on a managed node, the node is rebooted to make sure the update is both installed and active. (Exception: If the `RebootOption` parameter is set to `NoReboot` in the `AWS-RunPatchBaseline` document, the managed node isn't rebooted after Patch Manager runs. For more information, see [Parameter name: `RebootOption`](#patch-manager-aws-runpatchbaseline-parameters-norebootoption).)
 If a patch specified by the baseline rules is installed *before* Patch Manager updates the managed node, the system might not reboot as expected. This can happen when a patch is installed manually by a user or installed automatically by another program, such as the `unattended-upgrades` package on Ubuntu Server.
 
 ### Parameter name: `AssociationId`
@@ -78,19 +78,19 @@ If a patch specified by the baseline rules is installed *before* Patch Manager u
 
 **Usage**: Optional.
 
-`AssociationId` is the ID of an existing association in State Manager, a tool in AWS Systems Manager. It's used by Patch Manager to add compliance data to a specified association. This association is related to a patching operation that's [set up in a patch policy in Quick Setup](quick-setup-patch-manager.md).
+`AssociationId` is the ID of an existing association in State Manager. It's used by Patch Manager to add compliance data to a specified association. This association is related to a patching operation that's [set up in a patch policy in Quick Setup](quick-setup-patch-manager.md).
 
 **Note**
 With the `AWS-RunPatchBaseline`, if an `AssociationId` value is provided along with a patch policy baseline override, patching is done as a `PatchPolicy` operation and the `ExecutionType` value reported in `AWS:ComplianceItem` is also `PatchPolicy`. If no `AssociationId` value is provided, patching is done as a `Command` operation and the `ExecutionType` value report in on the `AWS:ComplianceItem` submitted is also `Command`.
 
-If you don't already have an association you want to use, you can create one by running [https://docs.aws.amazon.com/cli/latest/reference/ssm/create-association.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/create-association.html) the command.
+If you don't already have an association you want to use, you can create one by running [create-association](https://docs.aws.amazon.com/cli/latest/reference/ssm/create-association.html) the command.
 
 ### Parameter name: `Snapshot ID`
 <a name="patch-manager-aws-runpatchbaseline-parameters-snapshot-id"></a>
 
 **Usage**: Optional.
 
-`Snapshot ID` is a unique ID (GUID) used by Patch Manager to ensure that a set of managed nodes that are patched in a single operation all have the exact same set of approved patches. Although the parameter is defined as optional, our best practice recommendation depends on whether or not you're running `AWS-RunPatchBaseline` in a maintenance window, as described in the following table.
+`Snapshot ID` is a unique ID (GUID) used by Patch Manager to ensure that a set of managed nodes that are patched in a single operation all have the exact same set of approved patches. Although the parameter is defined as optional, our best practice recommendation depends on whether you're running `AWS-RunPatchBaseline` in a maintenance window, as described in the following table.
 
 **`AWS-RunPatchBaseline` best practices**
 
@@ -99,9 +99,9 @@ If you don't already have an association you want to use, you can create one by 
   <tr><th>Mode</th><th>Best practice</th><th>Details</th></tr>
 </thead>
 <tbody>
-  <tr><td>Running AWS-RunPatchBaseline inside a maintenance window</td><td>Don't supply a Snapshot ID. Patch Manager will supply it for you.</td><td>If you use a maintenance window to run `AWS-RunPatchBaseline`, you shouldn't provide your own generated Snapshot ID. In this scenario, Systems Manager provides a GUID value based on the maintenance window execution ID. This ensures that a correct ID is used for all the invocations of `AWS-RunPatchBaseline` in that maintenance window. <br />If you do specify a value in this scenario, note that the snapshot of the patch baseline might not remain in place for more than 3 days. After that, a new snapshot will be generated even if you specify the same ID after the snapshot expires. </td></tr>
-  <tr><td>Running AWS-RunPatchBaseline outside of a maintenance window</td><td>Generate and specify a custom GUID value for the Snapshot ID.¹</td><td>When you aren't using a maintenance window to run `AWS-RunPatchBaseline`, we recommend that you generate and specify a unique Snapshot ID for each patch baseline, particularly if you're running the `AWS-RunPatchBaseline` document on multiple managed nodes in the same operation. If you don't specify an ID in this scenario, Systems Manager generates a different Snapshot ID for each managed node the command is sent to. This might result in varying sets of patches being specified among the managed nodes.<br />For instance, say that you're running the `AWS-RunPatchBaseline` document directly through Run Command, a tool in AWS Systems Manager, and targeting a group of 50 managed nodes. Specifying a custom Snapshot ID results in the generation of a single baseline snapshot that is used to evaluate and patch all the nodes, ensuring that they end up in a consistent state. </td></tr>
-  <tr><td colspan="3">¹ You can use any tool capable of generating a GUID to generate a value for the Snapshot ID parameter. For example, in PowerShell, you can use the `New-Guid` cmdlet to generate a GUID in the format of `12345699-9405-4f69-bc5e-9315aEXAMPLE`.</td></tr>
+  <tr><td>Running <code>AWS-RunPatchBaseline</code> inside a maintenance window</td><td>Don't supply a Snapshot ID. Patch Manager will supply it for you.</td><td>If you use a maintenance window to run <code>AWS-RunPatchBaseline</code>, you shouldn't provide your own generated Snapshot ID. In this scenario, Systems Manager provides a GUID value based on the maintenance window execution ID. This ensures that a correct ID is used for all the invocations of <code>AWS-RunPatchBaseline</code> in that maintenance window. <br />If you do specify a value in this scenario, note that the snapshot of the patch baseline might not remain in place for more than 3 days. After that, a new snapshot will be generated even if you specify the same ID after the snapshot expires. </td></tr>
+  <tr><td>Running <code>AWS-RunPatchBaseline</code> outside of a maintenance window</td><td>Generate and specify a custom GUID value for the Snapshot ID.¹</td><td>When you aren't using a maintenance window to run <code>AWS-RunPatchBaseline</code>, we recommend that you generate and specify a unique Snapshot ID for each patch baseline, particularly if you're running the <code>AWS-RunPatchBaseline</code> document on multiple managed nodes in the same operation. If you don't specify an ID in this scenario, Systems Manager generates a different Snapshot ID for each managed node the command is sent to. This might result in varying sets of patches being specified among the managed nodes.<br />For instance, say that you're running the <code>AWS-RunPatchBaseline</code> document directly through Run Command, and targeting a group of 50 managed nodes. Specifying a custom Snapshot ID results in the generation of a single baseline snapshot that is used to evaluate and patch all the nodes, ensuring that they end up in a consistent state. </td></tr>
+  <tr><td colspan="3">¹ You can use any tool capable of generating a GUID to generate a value for the Snapshot ID parameter. For example, in PowerShell, you can use the <code>New-Guid</code> cmdlet to generate a GUID in the format of <code>12345699-9405-4f69-bc5e-9315aEXAMPLE</code>.</td></tr>
 </tbody>
 </table>
 
@@ -110,7 +110,7 @@ If you don't already have an association you want to use, you can create one by 
 
 **Usage**: Optional.
 
-Using `InstallOverrideList`, you specify an https URL or an Amazon S3 path-style URL to a list of patches to be installed. This patch installation list, which you maintain in YAML format, overrides the patches specified by the current default patch baseline. This provides you with more granular control over which patches are installed on your managed nodes.
+Using `InstallOverrideList`, you specify an https URL or an Amazon S3 path-style URL to a list of patches to be installed. This patch installation list, which you maintain in YAML format, overrides the patches specified by the current default patch baseline. This gives you more granular control over which patches are installed on your managed nodes.
 
 **Important**
 The `InstallOverrideList` file name can't contain the following characters: backtick (`), single quote ('), double quote ("), and dollar sign ($).
@@ -119,10 +119,10 @@ The patching operation behavior when using the `InstallOverrideList` parameter d
 
 On Linux & macOS managed nodes, patches specified in the `InstallOverrideList` are applied only as updates to packages that are already installed on the node. If the `InstallOverrideList` includes patches for packages that are not currently installed on the node, those patches are not installed.
 
-Be aware that compliance reports reflect patch states according to what’s specified in the patch baseline, not what you specify in an `InstallOverrideList` list of patches. In other words, Scan operations ignore the `InstallOverrideList` parameter. This is to ensure that compliance reports consistently reflect patch states according to policy rather than what was approved for a specific patching operation.
+Be aware that compliance reports reflect patch states according to what’s specified in the patch baseline, not what you specify in an `InstallOverrideList` list of patches. In other words, Scan operations ignore the `InstallOverrideList` parameter. This is to make sure that compliance reports consistently reflect patch states according to policy rather than what was approved for a specific patching operation.
 
 **Note**
-When you're patching a node that only uses IPv6, ensure that the provided URL is reachable from the node. If the SSM Agent config option `UseDualStackEndpoint` is set to `true`, then a dualstack S3 client is used when an S3 URL is provided. See [Tutorial: Patching a server in an IPv6 only environment](patch-manager-server-patching-iPv6-tutorial.md) for more information on configuring the agent to use dualstack.
+When you're patching a node that only uses IPv6, make sure that the provided URL is reachable from the node. If the SSM Agent config option `UseDualStackEndpoint` is set to `true`, then a dualstack S3 client is used when an S3 URL is provided. See [Tutorial: Patching a server in an IPv6 only environment](patch-manager-server-patching-iPv6-tutorial.md) for more information on configuring the agent to use dualstack.
 
 For a description of how you might use the `InstallOverrideList` parameter to apply different types of patches to a target group, on different maintenance window schedules, while still using a single patch baseline, see [Sample scenario for using the InstallOverrideList parameter in `AWS-RunPatchBaseline` or `AWS-RunPatchBaselineAssociation`](patch-manager-override-lists.md).
 

@@ -84,21 +84,21 @@ Numbers of unique findings are used to calculate load on Security Hub CSPM. A un
 For example, if one finding populated only `ThreatIntelndicators` and another populated only `Resources.Details.AWSEc2Instance`, those are two unique findings.
 
 **Does the partner have a graceful way of handling 4xx and 5xx errors such that they are not throttled and all findings can be sent at a later time?**
-There is currently a 30–50 TPS burst rate on the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation. If 4xx or 5xx errors are returned, you must retain the state of those failed findings so that you can retry them in totality later. You can do this through a dead letter queue or another AWS messaging services such as Amazon SNS or Amazon SQS.
+There is currently a 30–50 TPS burst rate on the [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation. If 4xx or 5xx errors are returned, you must retain the state of those failed findings so that you can retry them in totality later. You can do this through a dead letter queue or another AWS messaging services such as Amazon SNS or Amazon SQS.
 
 **Does the partner maintain the state of their findings so that they know to archive findings that are no longer present?**
 If you plan to update findings by overwriting the original finding ID, you must have a mechanism to retain state so that the correct information is updated for the correct finding.
-If you provide findings, do not use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation to update findings. This operation should only be used by customers. You only use [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) when you investigate and take action on findings.
+If you provide findings, do not use the [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation to update findings. This operation should only be used by customers. You only use [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) when you investigate and take action on findings.
 
 **Does the partner handle retries in a way that does not compromise previously sent successful findings?**
 You should have a mechanism to retain the original finding IDs in the case of errors so that you do not duplicate or overwrite successful findings in error.
 
 **Does the partner update findings by calling the `BatchImportFindings` operation with the existing findings' finding ID?**
 To update a finding, you must overwrite the existing finding by submitting the same finding ID.
-The [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation should only be used by customers.
+The [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation should only be used by customers.
 
 **Does the partner update findings using the `BatchUpdateFindings` API?**
-If you take action on findings, you can use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation to update specific fields.
+If you take action on findings, you can use the [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation to update specific fields.
 
 **Does the partner provide information on the amount of latency between when a finding is created and when it is sent from their product to Security Hub CSPM?**
 You should minimize latency to ensure that customers see findings as soon as possible in Security Hub CSPM.

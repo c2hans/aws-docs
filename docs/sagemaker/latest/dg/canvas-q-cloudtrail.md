@@ -12,7 +12,7 @@ Your interactions with Q Developer are sent as `SendConversation` API calls to t
 **Note**
 For privacy and security reasons, the content of your conversations is hidden in the logs, appearing as `HIDDEN_DUE_TO_SECURITY_REASONS` in the request and response elements.
 
-To learn more about CloudTrail, see the [https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html). To learn more about CloudTrail in SageMaker AI, see [Logging Amazon SageMaker AI API calls using AWS CloudTrail](logging-using-cloudtrail.md).
+To learn more about CloudTrail, see the [*AWS CloudTrail User Guide*](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html). To learn more about CloudTrail in SageMaker AI, see [Logging Amazon SageMaker AI API calls using AWS CloudTrail](logging-using-cloudtrail.md).
 
 The following is an example log file entry for the `SendConversation` API:
 

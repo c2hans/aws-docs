@@ -75,7 +75,7 @@ To use the AWS IoT Greengrass Core SDK for Python to interact with stream manage
    ```
 
  **Install the AWS IoT Greengrass Core SDK for Python on the core device**
-If you're running Python Lambda functions, you can also use [https://pypi.org/project/pip/](https://pypi.org/project/pip/) to install the AWS IoT Greengrass Core SDK for Python on the core device. Then you can deploy your functions without including the SDK in the Lambda function deployment package. For more information, see [greengrasssdk](https://pypi.org/project/greengrasssdk/).
+If you're running Python Lambda functions, you can also use [`pip`](https://pypi.org/project/pip/) to install the AWS IoT Greengrass Core SDK for Python on the core device. Then you can deploy your functions without including the SDK in the Lambda function deployment package. For more information, see [greengrasssdk](https://pypi.org/project/greengrasssdk/).
 This support is intended for cores with size constraints. We recommend that you include the SDK in your Lambda function deployment packages when possible.
 
 **AWS IoT Greengrass Machine Learning SDK**  <a name="lambda-sdks-ml"></a>

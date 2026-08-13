@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::QBusiness::DataSource DocumentAttributeCondition
 <a name="aws-properties-qbusiness-datasource-documentattributecondition"></a>
 
-The condition used for the target document attribute or metadata field when ingesting documents into Amazon Q Business. You use this with [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeTarget.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeTarget.html) to apply the condition.
+The condition used for the target document attribute or metadata field when ingesting documents into Amazon Q Business. You use this with [`DocumentAttributeTarget`](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeTarget.html) to apply the condition.
 
 For example, you can create the 'Department' target field and have it prefill department names associated with the documents based on information in the 'Source\_URI' field. Set the condition that if the 'Source\_URI' field contains 'financial' in its URI value, then prefill the target field 'Department' with the target value 'Finance' for the document.
 

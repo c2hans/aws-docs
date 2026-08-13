@@ -22,7 +22,7 @@ On the AWS Transfer Family console, you can delete a server host key.
 
 The host key is deleted from the **Servers** page.
 
-To delete the host key by using the AWS CLI, use the [https://docs.aws.amazon.com/transfer/latest/APIReference/API_DeleteHostKey](https://docs.aws.amazon.com/transfer/latest/APIReference/API_DeleteHostKey) API operation and provide the server ID and host key ID.
+To delete the host key by using the AWS CLI, use the [DeleteHostKey](https://docs.aws.amazon.com/transfer/latest/APIReference/API_DeleteHostKey) API operation and provide the server ID and host key ID.
 
 The following example `delete-host-key` AWS CLI command deletes a host key for the specified SFTP-enabled server.
 

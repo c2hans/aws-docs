@@ -209,9 +209,9 @@ For the {{OS\_FAMILY}}, you must choose one of `linux`, `macos` or `windows`.
                           "max": 4096
                       },
                       "osFamily": "{{OS_FAMILY}}",
-                      "cpuArchitectureType": "x86_64",
-                  },
-              },
+                      "cpuArchitectureType": "x86_64"
+                  }
+              }
           }
       }
       ```

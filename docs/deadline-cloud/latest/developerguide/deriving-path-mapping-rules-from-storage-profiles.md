@@ -8,10 +8,10 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/der
  Path mapping rules describe how paths should be remapped from the job to the path's actual location on a worker host. When a task is running on a worker, the storage profile from the job is compared to the storage profile of the worker's fleet to derive the path mapping rules for the task.
 
  Deadline Cloud creates a mapping rule for each of the required file system locations in the queue's configuration. For example, a job submitted with the `WSAll` storage profile to queue `Q1` has the path mapping rules:
-+  `FSComm`: `/shared/common -> /mnt/common`
++  `FSCommon`: `/shared/common -> /mnt/common`
 +  `FS1`: `/shared/projects/project1 -> /mnt/projects/project1`
 
- Deadline Cloud creates rules for the `FSComm` and `FS1` file system locations, but not the `FS2` file system location even though both the `WSAll` and `WorkerConfig` storage profiles define `FS2`. The reason is that queue `Q1`'s list of required file system locations is `["FSComm", "FS1"]`.
+ Deadline Cloud creates rules for the `FSCommon` and `FS1` file system locations, but not the `FS2` file system location even though both the `WSAll` and `WorkerConfig` storage profiles define `FS2`. The reason is that queue `Q1`'s list of required file system locations is `["FSCommon", "FS1"]`.
 
  You can confirm the path mapping rules available to jobs submitted with a particular storage profile by submitting a job that prints out [Open Job Description's path mapping rules file](https://github.com/OpenJobDescription/openjd-specifications/wiki/How-Jobs-Are-Run#path-mapping), and then reading the session log after the job has completed:
 
@@ -68,7 +68,7 @@ JJSON log results (see below)
 ...
 ```
 
-The log contains mapping for both the `FS1` and `FSComm` file systems. Reformatted for readability, the log entry looks like this:
+The log contains mapping for both the `FS1` and `FSCommon` file systems. Reformatted for readability, the log entry looks like this:
 
 ```
 {
@@ -85,6 +85,7 @@ The log contains mapping for both the `FS1` and `FSComm` file systems. Reformatt
             "destination_path": "/mnt/common"
         }
     ]
+}
 ```
 
  You can submit jobs with different storage profiles to see how the path mapping rules change.

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/api-describ
 # DescribeSigningJob
 <a name="api-describesigningjob"></a>
 
-The following Java example shows you how to use the [https://docs.aws.amazon.com/signer/latest/api/API_DescribeSigningJob.html](https://docs.aws.amazon.com/signer/latest/api/API_DescribeSigningJob.html) operation. Call the [url-signer-api;API_StartSigningJob.html](url-signer-api;API_StartSigningJob.html) operation before calling `DescribeSigningJob`. `StartSigningJob` returns a `jobId` value that you use when you call `DescribeSigningJob`.
+The following Java example shows you how to use the [`DescribeSigningJob`](https://docs.aws.amazon.com/signer/latest/api/API_DescribeSigningJob.html) operation. Call the [`StartSigningJob`](url-signer-api;API_StartSigningJob.html) operation before calling `DescribeSigningJob`. `StartSigningJob` returns a `jobId` value that you use when you call `DescribeSigningJob`.
 
 ```
 package com.amazonaws.samples;

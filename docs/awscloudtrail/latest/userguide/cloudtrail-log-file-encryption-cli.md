@@ -18,13 +18,13 @@ This topic describes how to enable and disable SSE-KMS encryption for CloudTrail
 
 **Enable encryption for log files and digest files for a trail**
 
-1. Create a key with the AWS CLI. The key that you create must be in the same Region as the S3 bucket that receives your CloudTrail log files. For this step, you use the AWS KMS [https://docs.aws.amazon.com/cli/latest/reference/kms/create-key.html](https://docs.aws.amazon.com/cli/latest/reference/kms/create-key.html) command.
+1. Create a key with the AWS CLI. The key that you create must be in the same Region as the S3 bucket that receives your CloudTrail log files. For this step, you use the AWS KMS [**create-key**](https://docs.aws.amazon.com/cli/latest/reference/kms/create-key.html) command.
 
-1. Get the existing key policy so that you can modify it for use with CloudTrail. You can retrieve the key policy with the AWS KMS [https://docs.aws.amazon.com/cli/latest/reference/kms/get-key-policy.html](https://docs.aws.amazon.com/cli/latest/reference/kms/get-key-policy.html) command.
+1. Get the existing key policy so that you can modify it for use with CloudTrail. You can retrieve the key policy with the AWS KMS [**get-key-policy**](https://docs.aws.amazon.com/cli/latest/reference/kms/get-key-policy.html) command.
 
 1. Add required sections to the key policy so that CloudTrail can encrypt and users can decrypt your log files and digest files. Be sure that all users who read the log files are granted decrypt permissions. Do not change existing sections of the policy. For information about the policy sections to include, see [Configure AWS KMS key policies for CloudTrail](create-kms-key-policy-for-cloudtrail.md).
 
-1. Attach the modified JSON policy file to the key by using the AWS KMS [https://docs.aws.amazon.com/cli/latest/reference/kms/put-key-policy.html](https://docs.aws.amazon.com/cli/latest/reference/kms/put-key-policy.html) command.
+1. Attach the modified JSON policy file to the key by using the AWS KMS [**put-key-policy**](https://docs.aws.amazon.com/cli/latest/reference/kms/put-key-policy.html) command.
 
 1. Run the CloudTrail `create-trail` or `update-trail` command with the `--kms-key-id` parameter. This command enables encryption of log files and digest files.
 
@@ -55,9 +55,9 @@ This topic describes how to enable and disable SSE-KMS encryption for CloudTrail
 
 **Enable encryption for an event data store**
 
-1. Create a key with the AWS CLI. The key that you create must be in the same Region as the event data store. For this step, run the AWS KMS [https://docs.aws.amazon.com/cli/latest/reference/kms/create-key.html](https://docs.aws.amazon.com/cli/latest/reference/kms/create-key.html) command.
+1. Create a key with the AWS CLI. The key that you create must be in the same Region as the event data store. For this step, run the AWS KMS [**create-key**](https://docs.aws.amazon.com/cli/latest/reference/kms/create-key.html) command.
 
-1. Get the existing key policy to edit for use with CloudTrail. You can get the key policy by running the AWS KMS [https://docs.aws.amazon.com/cli/latest/reference/kms/get-key-policy.html](https://docs.aws.amazon.com/cli/latest/reference/kms/get-key-policy.html) command.
+1. Get the existing key policy to edit for use with CloudTrail. You can get the key policy by running the AWS KMS [**get-key-policy**](https://docs.aws.amazon.com/cli/latest/reference/kms/get-key-policy.html) command.
 
 1. Add required sections to the key policy so that CloudTrail can encrypt and users can decrypt your event data store. Be sure that all users who read the event data store are granted decrypt permissions. Do not change existing sections of the policy. For information about the policy sections to include, see [Configure AWS KMS key policies for CloudTrail](create-kms-key-policy-for-cloudtrail.md).
 

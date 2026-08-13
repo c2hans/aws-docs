@@ -32,14 +32,14 @@ After you disassociate yourself from the administrator account, the invitation t
 
 **To disassociate from your administrator account**
 
-Invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DisassociateFromAdministratorAccount.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DisassociateFromAdministratorAccount.html) API.
+Invoke the [`DisassociateFromAdministratorAccount`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DisassociateFromAdministratorAccount.html) API.
 
 ------
 #### [ AWS CLI ]
 
 **To disassociate from your administrator account**
 
-Run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/disassociate-from-administrator-account.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/disassociate-from-administrator-account.html) command.
+Run the [`disassociate-from-administrator-account`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/disassociate-from-administrator-account.html) command.
 
 ```
 aws securityhub disassociate-from-administrator-account

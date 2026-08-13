@@ -180,6 +180,32 @@ When you create a VM cluster, you specify information that includes the followin
 
 You can configure the CPU cores, memory, and local storage for each VM in a VM cluster. For more information, see [Step 3: Create an Exadata VM cluster or Autonomous VM cluster in Oracle Database@AWS](getting-started.md#getting-started-vm).
 
+## Exascale Storage Vaults
+<a name="how-it-works.exascale-storage-vault"></a>
+
+An Exascale Storage Vault is a pooled, shared storage resource for Oracle Exadata Database Service on Exascale Infrastructure (ExaDB-XS). Unlike dedicated Exadata infrastructure, an Exascale Storage Vault provides elastic storage. Multiple Exascale VM clusters can draw from it independently.
+
+When you create an Exascale Storage Vault, you specify information that includes the following:
++ An Availability Zone
++ The initial storage capacity (starting from 300 GB)
+
+You can expand the Exascale Storage Vault storage capacity at any time without downtime. Multiple Exascale VM clusters can reference the same Exascale Storage Vault, and each cluster draws compute and storage from the vault independently.
+
+## Exascale VM clusters
+<a name="how-it-works.exascale-vm"></a>
+
+An Exascale VM cluster is a set of VMs for ExaDB-XS. An Exascale VM cluster references an Exascale Storage Vault for its storage instead of requiring dedicated Oracle Exadata infrastructure. It provides elastic compute starting from 8 ECPUs.
+
+Key differences from Exadata VM clusters:
++ No dedicated Exadata infrastructure is required. The Exascale VM cluster references an Exascale Storage Vault instead.
++ Compute (ECPUs) and storage scale independently.
++ You pay for the resources you consume rather than provisioning a fixed number of database and storage servers.
+
+When you create an Exascale VM cluster, you specify information that includes the following:
++ An ODB network
++ An Exascale Storage Vault
++ The ECPU count (starting from 8 ECPUs)
+
 ## Autonomous VM clusters
 <a name="how-it-works.ADB"></a>
 

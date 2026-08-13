@@ -21,7 +21,7 @@ This deployment assumes that you want to limit your use of standard AWS Regions,
 
 1. Sign in to the AWS Management Console of your organization’s management account and select the following button to launch the `AWSAccelerator-GovCloudAccountVending` AWS CloudFormation template.
 
-    [https://s3.amazonaws.com/solutions-reference/landing-zone-accelerator-on-aws/latest/AWSAccelerator-GovCloudAccountVending.template](https://s3.amazonaws.com/solutions-reference/landing-zone-accelerator-on-aws/latest/AWSAccelerator-GovCloudAccountVending.template) **AWSAccelerator-GovCloudAccountVending.template** - Use this template to launch the AWS GovCloud (US) account vending component.
+    [![View Template](http://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/view-template.png)](https://s3.amazonaws.com/solutions-reference/landing-zone-accelerator-on-aws/latest/AWSAccelerator-GovCloudAccountVending.template) **AWSAccelerator-GovCloudAccountVending.template** - Use this template to launch the AWS GovCloud (US) account vending component.
 
 1. On the **Create stack** page, verify that the correct template URL is in the **Amazon S3 URL** text box and choose **Next**.
 

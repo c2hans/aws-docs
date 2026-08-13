@@ -7,13 +7,13 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Co
 
 Amazon RDS supports DB instances running several editions of PostgreSQL. You can specify any currently available PostgreSQL version when creating a new DB instance. You can specify the major version (such as PostgreSQL 14), and any available minor version for the specified major version. If no version is specified, Amazon RDS defaults to an available version, typically the most recent version. If a major version is specified but a minor version is not, Amazon RDS defaults to a recent release of the major version you have specified.
 
-To see a list of available versions, as well as defaults for newly created DB instances, use the [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-engine-versions.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-engine-versions.html) AWS CLI command. For example, to display the default PostgreSQL engine version, use the following command:
+To see a list of available versions, as well as defaults for newly created DB instances, use the [`describe-db-engine-versions`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-engine-versions.html) AWS CLI command. For example, to display the default PostgreSQL engine version, use the following command:
 
 ```
 aws rds describe-db-engine-versions --default-only --engine postgres
 ```
 
-For details about the PostgreSQL versions that are supported on Amazon RDS, see the [https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/Welcome.html](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/Welcome.html). You can also view information about support dates for major engine versions by running the [describe-db-major-engine-versions](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-major-engine-versions.html) AWS CLI command or by using the [DescribeDBMajorEngineVersions](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBMajorEngineVersions.html) RDS API operation.
+For details about the PostgreSQL versions that are supported on Amazon RDS, see the [*Amazon RDS for PostgreSQL Release Notes*](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/Welcome.html). You can also view information about support dates for major engine versions by running the [describe-db-major-engine-versions](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-major-engine-versions.html) AWS CLI command or by using the [DescribeDBMajorEngineVersions](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBMajorEngineVersions.html) RDS API operation.
 
 If you aren't ready to manually upgrade to a new major engine version before the RDS end of standard support date, Amazon RDS will automatically enroll your databases in Amazon RDS Extended Support after the RDS end of standard support date. Then, you can continue to run RDS for PostgreSQL version 11 and higher. For more information, see [Amazon RDS Extended Support with Amazon RDS](extended-support.md) and [Amazon RDS pricing](https://aws.amazon.com/rds/pricing/).
 

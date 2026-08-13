@@ -50,7 +50,7 @@ This component can be installed on core devices that run the following operating
 
 This component has the following requirements:
 + The [token exchange role](device-service-role.md) must allow access to the AWS Cloud destinations that you use with stream manager. For more information, see:<a name="export-destinations-links"></a>
-  + [AWS IoT Analytics channels](stream-export-configurations.md#export-to-iot-analytics)
+  + [AWS IoT Analytics channels (discontinued)](stream-export-configurations.md#export-to-iot-analytics)
   + [Amazon Kinesis data streams](stream-export-configurations.md#export-to-kinesis)
   + [AWS IoT SiteWise asset properties](stream-export-configurations.md#export-to-iot-sitewise)
   + [Amazon S3 objects](stream-export-configurations.md#export-to-s3)
@@ -70,10 +70,12 @@ This component must be able to perform outbound requests to the following endpoi
 
 | Endpoint | Port | Required | Description |
 | --- | --- | --- | --- |
-| `iotanalytics.{{region}}.amazonaws.com` | 443 | No | Required if you publish data to AWS IoT Analytics. |
 | `kinesis.{{region}}.amazonaws.com` | 443 | No | Required if you publish data to Firehose. |
 | `data.iotsitewise.{{region}}.amazonaws.com` | 443 | No | Required if you publish data to AWS IoT SiteWise. |
 | `*.s3.amazonaws.com` | 443 | No | Required if you publish data to S3 buckets.<br />You can replace `*` with the name of each bucket where you publish data. |
+
+**AWS IoT Analytics discontinued**
+AWS IoT Analytics was discontinued on December 15, 2025. The `iotanalytics.{{region}}.amazonaws.com` endpoint is no longer functional. If you have streams configured with `IoTAnalyticsConfig` export destinations, remove them to avoid continuous failed export attempts. For more information, see [AWS IoT Analytics channels (discontinued)](stream-export-configurations.md#export-to-iot-analytics).
 
 ## Dependencies
 <a name="stream-manager-component-dependencies"></a>

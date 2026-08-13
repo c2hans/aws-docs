@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/applica
 # Using Application Manager to manage CloudFormation templates
 <a name="application-manager-working-templates-overview"></a>
 
-Application Manager, a tool in AWS Systems Manager, includes a template library and other tools to help you manage AWS CloudFormation templates. This section includes the following information.
+Application Manager includes a template library and other tools to help you manage AWS CloudFormation templates. This section includes the following information.
 
 **Topics**
 + [Working with the template library](#application-manager-working-stacks-template-library-working)
@@ -71,7 +71,7 @@ Use the following procedure to create a CloudFormation template in Application M
 After you create the content of your CloudFormation template in JSON or YAML, you can use the AWS Command Line Interface (AWS CLI) or AWS Tools for PowerShell to save the template as an SSM document. Replace each {{example resource placeholder}} with your own information.
 
 **Before you begin**
-Install and configure the AWS CLI or the AWS Tools for PowerShell, if you have not already. For information, see [Installing or updating the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and [Installing the AWS Tools for PowerShell](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-getting-set-up.html).
+Install and configure the AWS CLI or the AWS Tools for PowerShell if you have not already. For information, see [Installing or updating the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and [Installing the AWS Tools for PowerShell](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-getting-set-up.html).
 
 ------
 #### [ Linux & macOS ]

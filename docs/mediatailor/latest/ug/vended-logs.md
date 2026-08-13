@@ -80,18 +80,18 @@ In CloudWatch Logs, you must create three elements to represent the pieces of lo
 
 **To configure log delivery in CloudWatch Logs (API)**
 
-1. Use [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliverySource.html](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliverySource.html) to add the source of logs.
+1. Use [`PutDeliverySource`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliverySource.html) to add the source of logs.
 
    A `DeliverySource` represents the playback configuration that's generating the logs. You need the name of the playback configuration to create the `DeliverySource`.
 
-1. Use [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestination.html](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestination.html) to add the destination where logs will be written.
+1. Use [`PutDeliveryDestination`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestination.html) to add the destination where logs will be written.
 
    A `DeliveryDestination` represents the delivery destination. You need the ARN of the log group, bucket, or stream to create the `DeliveryDestination`.
 
-1. Use [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestinationPolicy.html](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestinationPolicy.html) if you are delivering logs across accounts.
+1. Use [`PutDeliveryDestinationPolicy`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestinationPolicy.html) if you are delivering logs across accounts.
 
    If the delivery destination is in a different account from the playback configuration, you need a `DeliveryDestinationPolicy`. This policy allows CloudWatch Logs to deliver logs to the `DeliveryDestination`.
 
-1. Use [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateDelivery.html](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateDelivery.html) to link the `DeliverySource` to the `DeliveryDestination`.
+1. Use [`CreateDelivery`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateDelivery.html) to link the `DeliverySource` to the `DeliveryDestination`.
 
    A `Delivery` represents the connection between the `DeliverySource` and `DeliveryDestination`.

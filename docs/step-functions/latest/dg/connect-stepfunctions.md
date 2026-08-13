@@ -17,7 +17,7 @@ For more information, see the following:
 
 ## Optimized Step Functions APIs
 <a name="connect-stepfunctions-api"></a>
-+ [https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartExecution.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartExecution.html)
++ [`StartExecution`](https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartExecution.html)
 
 ## Workflow Examples
 <a name="connect-stepfunctions-api-examples"></a>

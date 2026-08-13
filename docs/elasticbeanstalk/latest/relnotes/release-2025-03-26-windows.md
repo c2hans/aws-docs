@@ -18,22 +18,39 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Framework** | **Details** |
-| --- | --- |
-| **Component** | **Details** |
-| --- | --- |
-| **Windows security updates** | Applied March 2025 security updates for Windows.<br />This release includes updates from the monthly Microsoft *Patch Tuesday* Windows release. Windows security updates in this release are current up to the second Tuesday of the month.<br />For more details and a list of security updates, see the Microsoft [Security Update Guide](https://portal.msrc.microsoft.com/en-us/security-guidance). |
-| **Framework updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-03-26-windows.html)  |
-| **AWS component updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-03-26-windows.html)  |
-| **\*\*New\!\*\* — Elastic Beanstalk supports configuration of environment variables to store secret and parameter data.** | Starting with this release Elastic Beanstalk supports the option to reference AWS Secrets Manager secrets and Systems Manager Parameter Store parameters with environment variables.<br />To learn more about this feature, see [Using Elastic Beanstalk with Secrets Manager and Systems Manager Parameter Store](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.secrets.html). |
-| **.NET Core** | Updated .NET 8 to version 8.0.14. |
-| **AMI** | Updated the base AMI to version 2025.03.12. |
-| **AWS SDK for .NET** | Updated the SDK to version 3.7.1000.0. |
-| **CloudWatch Agent** | Updated the CloudWatch Agent to version 1.300053.0b1046. |
-| **EC2Launch** | Updated EC2Launch V2 to version 2.0.2081. |
-| **AWS X-Ray** | Updated the X-Ray daemon to version 3.3.14. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows security updates</b></td><td>Applied March 2025 security updates for Windows.<br />This release includes updates from the monthly Microsoft <i>Patch Tuesday</i> Windows release. Windows security updates in this release are current up to the second Tuesday of the month.<br />For more details and a list of security updates, see the Microsoft <a href="https://portal.msrc.microsoft.com/en-us/security-guidance">Security Update Guide</a>.</td></tr>
+  <tr><td><b>Framework updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Framework</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>**New!** — Elastic Beanstalk supports configuration of environment variables to store secret and parameter data.</b></td><td>Starting with this release Elastic Beanstalk supports the option to reference AWS Secrets Manager secrets and Systems Manager Parameter Store parameters with environment variables.<br />To learn more about this feature, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.secrets.html">Using Elastic Beanstalk with Secrets Manager and Systems Manager Parameter Store</a>.</td></tr>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET 8 to version 8.0.14.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+  <tr><td><b>AWS component updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version 2025.03.12.</td></tr>
+  <tr><td><b>AWS SDK for .NET</b></td><td>Updated the SDK to version 3.7.1000.0.</td></tr>
+  <tr><td><b>CloudWatch Agent</b></td><td>Updated the CloudWatch Agent to version 1.300053.0b1046.</td></tr>
+  <tr><td><b>EC2Launch</b></td><td>Updated EC2Launch V2 to version 2.0.2081.</td></tr>
+  <tr><td><b>AWS X-Ray</b></td><td>Updated the X-Ray daemon to version 3.3.14.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2025-03-26-windows.platforms"></a>

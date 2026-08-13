@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/visual-
 # Configuring inputs and outputs for your actions
 <a name="visual-designer-action-inputs-outputs"></a>
 
-Each automation action responds based on input that it receives. In most cases, you then pass output to the subsequent actions. In the visual design experience, you can configure an action's input and output data in the **Inputs** and **Outputs** tabs of the **Form** panel.
+Each automation action responds based on input that it receives. Usually, you then pass output to the subsequent actions. In the visual design experience, you can configure an action's input and output data in the **Inputs** and **Outputs** tabs of the **Form** panel.
 
 For detailed information about how to define and use output for automation actions, see [Using action outputs as inputs](automation-action-outputs-inputs.md).
 
@@ -16,7 +16,7 @@ For detailed information about how to define and use output for automation actio
 
 Each automation action has one or more inputs that you must provide a value for. The value you provide for an action's input is determined by the data type and format that's accepted by the action. For example, the `aws:sleep` actions requires an ISO 8601 formatted string value for the `Duration` input.
 
-Generally, you use actions in your runbook's workflow that return output that you want to use in subsequent actions. It's important to make sure your input values are correct to avoid errors in your runbook's workflow. Input values are also important because they determine whether the action returns the expected output. For example, when using the `aws:executeAwsApi` action, you want to make sure that you're providing the right value for the API operation.
+Generally, you use actions in your runbook's workflow that return output that you want to use in subsequent actions. It's important to make sure your input values are correct to avoid errors in your runbook's workflow. Input values are also important because they determine whether the action returns the expected output. For example, when using the `aws:executeAwsApi` action, you want to make sure you're providing the right value for the API operation.
 
 ## Define output data for an action
 <a name="defining-output"></a>
@@ -25,7 +25,7 @@ Some automation actions return output after performing their defined operations.
 
 Defining your own outputs for an automation action requires that you specify a name of the output, the data type, and the output value. To continue using the `aws:executeAwsApi` action as an example, let's say you're calling the `DescribeInstances` API operation from Amazon EC2. In this example, you want to return, or output, the `State` of an Amazon EC2 instance and branch your runbook's workflow based on the output. You choose to name the output **InstanceState**, and use the **String** data type.
 
-The process to define the actual value of the output differs, depending on the action. For example, if you're using the `aws:executeScript` action, you must use `return` statements in your functions to provide data to your outputs. With other actions like `aws:executeAwsApi`, `aws:waitForAwsResourceProperty`, and `aws:assertAwsResourceProperty`, a `Selector` is required. The `Selector`, or `PropertySelector` as some actions refer to it, is a JSONPath string that is used to process the JSON response from an API operation. It's important to understand how the JSON response object from an API operation is structured so you can select the correct value for your output. Using the `DescribeInstances` API operation mentioned earlier, see the following example JSON response:
+How you define the output value depends on the action. For example, with `aws:executeScript`, use `return` statements in your functions to provide data to outputs. With actions like `aws:executeAwsApi`, `aws:waitForAwsResourceProperty`, and `aws:assertAwsResourceProperty`, a `Selector` is required. The `Selector` (also called `PropertySelector`) is a JSONPath string that processes the JSON response from an API operation. You need to understand how the JSON response is structured so you can select the correct value. Using the `DescribeInstances` API operation, see the following example response:
 
 ```
 {

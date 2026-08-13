@@ -45,7 +45,7 @@ Resource-based policies are JSON policy documents that you attach to a resource.
 
 To enable cross-account access, you can specify an entire account or IAM entities in another account as the principal in a resource-based policy. For more information, see [Cross account resource access in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies-cross-account-resource-access.html) in the *IAM User Guide*.
 
-Security Hub does not support resource-based policies. You can't attach an IAM policy directly to a Security Hub resource.
+Security Hub does not support resource-based policies. You cannot attach an IAM policy directly to a Security Hub resource.
 
 ## Policy actions for Security Hub
 <a name="sh_security_iam_service-with-iam-id-based-policies-actions"></a>
@@ -127,7 +127,7 @@ For a list of Security Hub condition keys, see [Condition Keys for AWS Security 
 
 Access control lists (ACLs) control which principals (account members, users, or roles) have permissions to access a resource. ACLs are similar to resource-based policies, although they do not use the JSON policy document format.
 
-Security Hub doesn't support ACLs, which means you can't attach an ACL to a Security Hub resource.
+Security Hub does not support ACLs, which means you cannot attach an ACL to a Security Hub resource.
 
 ## Attribute-based access control (ABAC) with Security Hub
 <a name="sh_security_iam_service-with-iam-tags"></a>
@@ -171,7 +171,7 @@ For other tasks, Security Hub uses a service-linked role to perform actions on y
 ## Service roles for Security Hub
 <a name="sh_security_iam_service-with-iam-roles-service"></a>
 
-Security Hub doesn't assume or use service roles. To perform actions on your behalf, Security Hub uses a service-linked role. For details about this role, see [Service-linked roles for AWS Security Hub](sh-using-service-linked-roles.md).
+Security Hub does not assume or use service roles. To perform actions on your behalf, Security Hub uses a service-linked role. For details about this role, see [Service-linked roles for AWS Security Hub](sh-using-service-linked-roles.md).
 
 **Warning**
 Changing the permissions for a service role may create operational issues with your use of Security Hub. Edit service roles only when Security Hub provides guidance to do so.

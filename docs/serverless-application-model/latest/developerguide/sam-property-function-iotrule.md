@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 
 The object describing an `IoTRule` event source type.
 
-Creates an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-topicrule.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-topicrule.html) resource to declare an AWS IoT rule. For more information see [CloudFormation documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-topicrule.html)
+Creates an [AWS::IoT::TopicRule](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-topicrule.html) resource to declare an AWS IoT rule. For more information see [CloudFormation documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-topicrule.html)
 
 ## Syntax
 <a name="sam-property-function-iotrule-syntax"></a>

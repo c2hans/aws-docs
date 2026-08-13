@@ -311,7 +311,7 @@ To collect these metrics, you must meet the following prerequisites:
   + To enable the metrics when you are using Helm chart, use the following option when you create or update the add-on. `--set metrics.enabled=true`
 + Your cluster must have worker nodes running on EC2 instance types that support instance store volumes. For more information, see [Considerations](https://docs.aws.amazon.com/eks/latest/userguide/lis-csi.html#lis-csi-considerations) in the Amazon EKS User Guide.
 
-Once the prerequisites are met, the CloudWatch agent automatically discovers and collects metrics from the local instance store CSI driver. No additional CloudWatch agent configuration is required.
+After the prerequisites are met, the CloudWatch agent automatically discovers and collects metrics from the local instance store CSI driver. No additional CloudWatch agent configuration is required.
 
 The following table lists the metrics that are collected.
 

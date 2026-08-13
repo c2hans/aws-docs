@@ -38,4 +38,4 @@ The validation tasks in this topic are to ensure that you have considered differ
 
 1. Events are received successfully.
 
-Partners are required to describe how their integration handles event sources that move from a PENDING to NONEXISTENT state, as well as the mechanism used for handling errors from the [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutPartnerEvents.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutPartnerEvents.html) API call.
+Partners are required to describe how their integration handles event sources that move from a PENDING to NONEXISTENT state, as well as the mechanism used for handling errors from the [`PutPartnerEvents`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutPartnerEvents.html) API call.

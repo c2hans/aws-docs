@@ -181,4 +181,4 @@ $ aws payment-cryptography delete-key \
 }
 ```
 
-Take note of two fields in the output. The `deletePendingTimestamp` is set to seven days in the future by default. The keyState is set to `DELETE_PENDING`. You can cancel this deletion any time before the scheduled deletion time by calling [https://docs.aws.amazon.com/cli/latest/reference/payment-cryptography/restore-key.html](https://docs.aws.amazon.com/cli/latest/reference/payment-cryptography/restore-key.html).
+Take note of two fields in the output. The `deletePendingTimestamp` is set to seven days in the future by default. The keyState is set to `DELETE_PENDING`. You can cancel this deletion any time before the scheduled deletion time by calling [`restore-key`](https://docs.aws.amazon.com/cli/latest/reference/payment-cryptography/restore-key.html).

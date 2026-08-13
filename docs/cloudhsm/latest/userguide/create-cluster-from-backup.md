@@ -91,4 +91,4 @@ To determine the backup ID, issue the **[describe-backups](https://docs.aws.amaz
 <a name="create-cluster-backup-api"></a>
 
 Refer to the following topic to learn how to create clusters from backups by using the API.
-+  [https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CreateCluster.html](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CreateCluster.html)
++  [CreateCluster](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CreateCluster.html)

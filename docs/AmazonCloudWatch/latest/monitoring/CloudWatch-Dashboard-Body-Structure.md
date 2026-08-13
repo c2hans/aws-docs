@@ -583,7 +583,7 @@ Required: No
 **metrics**
 Specify a `metrics` array to include one or more metrics (without alarms), a Metrics Insights query, math expressions, or search expressions. One `metrics` array can include 0–500 metrics and expressions. Use this parameter only for metric widgets. For more information about the format of `metrics`, see [Metric Widget: Format for Each Metric in the Array](#CloudWatch-Dashboard-Properties-Metrics-Array-Format).
 One metrics array can include no more than one Metrics Insights query.
-A single `expression` field can't include both a Metrics Insights query and a math expression, but you can use the returned results of a Metrics Insights query from one expression as input in a math expression in a different expression in the array.
+A single `expression` field can't include both a Metrics Insights query and a math expression. However, you can use the returned results of a Metrics Insights query from one expression as input in a math expression in a different expression in the array.
 Type: Array of arrays
 Required: Yes, when the widget `type` is `metric` and `annotations` is not specified.
 
@@ -1505,7 +1505,7 @@ The following example widget specifies the same four alarms, but the widget disp
 ## Properties of a Chart Widget Object
 <a name="CloudWatch-Dashboard-Properties-Chart-Widget-Object"></a>
 
-A widget of type `chart` is a multi-data-source chart widget that supports PromQL queries against CloudWatch metrics. Use a chart widget to visualize metrics that are queryable with PromQL, including metrics ingested via OpenTelemetry Line Protocol (OTLP) and AWS vended metrics that have been enriched for OTel. For more information about querying with PromQL, see [Query metrics with PromQL](CloudWatch-PromQL.md).
+A widget of type `chart` is a multi-data-source chart widget that supports PromQL queries against CloudWatch metrics. Use a chart widget to visualize metrics that are queryable with PromQL, including metrics ingested through OpenTelemetry Line Protocol (OTLP) and AWS vended metrics that have been enriched for OTel. For more information about querying with PromQL, see [Query metrics with PromQL](CloudWatch-PromQL.md).
 
 A widget of type `chart` can have the following fields within `properties`:
 

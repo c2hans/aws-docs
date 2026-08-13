@@ -36,7 +36,7 @@ Fixes and other enhancements to fine-tune handling in a managed environment. Add
 + Fixed an issue which can cause the reader instance to restart when the writer instance grows the database volume to a multiple of 160GB.
 + Fixed an issue where an Aurora MySQL database instance with the enhanced binary log feature enabled might get stuck during the database instance startup as the binary log recovery process is being executed.
 + Fixed an issue during zero downtime patching which causes an instance restart that leads to the database connections being unexpectedly closed.
-+ Fixed an issue which can cause a database instance restart due to a deadlatch when running [https://dev.mysql.com/doc/refman/8.0/en/show-status.html](https://dev.mysql.com/doc/refman/8.0/en/show-status.html) and [https://dev.mysql.com/doc/refman/8.0/en/purge-binary-logs.html](https://dev.mysql.com/doc/refman/8.0/en/purge-binary-logs.html) statements concurrently. The purge binary logs is a managed statement that is executed to honor the user configured binlog retention period.
++ Fixed an issue which can cause a database instance restart due to a deadlatch when running [`SHOW STATUS`](https://dev.mysql.com/doc/refman/8.0/en/show-status.html) and [`PURGE BINARY LOGS`](https://dev.mysql.com/doc/refman/8.0/en/purge-binary-logs.html) statements concurrently. The purge binary logs is a managed statement that is executed to honor the user configured binlog retention period.
 + Fixed an issue which can cause a database instance restart due to a long semaphore wait when using the enhanced binlog feature on a cluster with an Aurora replica.
 
  **General improvements:**

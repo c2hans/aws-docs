@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/exporting-fhi
 # Listing FHIR export jobs
 <a name="exporting-fhir-data-list"></a>
 
-Use `ListFHIRExportJobs` to list FHIR export jobs for a HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ListFHIRExportJobs.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ListFHIRExportJobs.html) in the *AWS HealthLake API Reference*.
+Use `ListFHIRExportJobs` to list FHIR export jobs for a HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`ListFHIRExportJobs`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ListFHIRExportJobs.html) in the *AWS HealthLake API Reference*.
 
 **Note**
 HealthLake supports the [FHIR R4 specification](https://hl7.org/fhir/R4/index.html) for health care data exchange. Therefore, all health data is exported in FHIR R4 format.

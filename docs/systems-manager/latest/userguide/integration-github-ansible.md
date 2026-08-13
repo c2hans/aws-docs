@@ -56,7 +56,7 @@ To use the version of your scripts that are in a particular *commit* in your rep
 `"getOptions": "commitID:bbc1ddb94...b76d3bEXAMPLE",`
    + In the **Command Line** field, enter parameters for the script execution. Here is an example.
 
-     **ansible-playbook -i “localhost,” --check -c local webserver.yml**
+     **ansible-playbook -i \\\\"localhost,\\\\" --check -c local webserver.yml**
    + (Optional) In the **Working Directory** field, enter the name of a directory on the node where you want to download and run the script.
    + (Optional) In **Execution Timeout**, specify the number of seconds for the system to wait before failing the script command execution.
 
@@ -106,5 +106,5 @@ The S3 permissions that grant the ability to write the data to an S3 bucket are 
    aws ssm send-command \
        --document-name "AWS-RunRemoteScript" \
        --instance-ids "i-02573cafcfEXAMPLE" \
-       --parameters '{"sourceType":["GitHub"],"sourceInfo":["{\"owner\":\"TestUser1\", \"repository\": \"GitHubPrivateTest\", \"path\": \"scripts/webserver.yml\", \"tokenInfo\":\"{{ssm-secure:mySecureStringParameter}}\" }"],"commandLine":["ansible-playbook -i “localhost,” --check -c local webserver.yml"]}'
+       --parameters '{"sourceType":["GitHub"],"sourceInfo":["{\"owner\":\"TestUser1\", \"repository\": \"GitHubPrivateTest\", \"path\": \"scripts/webserver.yml\", \"tokenInfo\":\"{{ssm-secure:mySecureStringParameter}}\" }"],"commandLine":["ansible-playbook -i \\"localhost,\\" --check -c local webserver.yml"]}'
    ```

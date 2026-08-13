@@ -302,12 +302,8 @@ You can create Amazon Data Lifecycle Manager snapshot lifecycle policies that au
 
 The following table provides an overview of the supported features.
 
-|
-|
-| Resource location | Snapshot destination | Cross-region copy | Fast snapshot restore | Cross-account sharing |
-| --- |--- |--- |--- |--- |
-| To Region | To Outpost |
-| --- |--- |
+| Resource location | Snapshot destination | Cross-region copy to Region | Cross-region copy to Outpost | Fast snapshot restore | Cross-account sharing |
+| --- | --- | --- | --- | --- | --- |
 | Region | Region | ✓ | ✓ | ✓ | ✓ |
 | Outpost | Region | ✓ | ✓ | ✓ | ✓ |
 | Outpost | Outpost | ✗ | ✗ | ✗ | ✗ |

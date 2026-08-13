@@ -71,7 +71,7 @@ You can use the AWS Command Line Interface to add permissions for scheduling and
 
 **To add permission to schedule and cancel key deletion**
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/kms/get-key-policy.html](https://docs.aws.amazon.com/cli/latest/reference/kms/get-key-policy.html) command to retrieve the existing key policy, and then save the policy document to a file.
+1. Use the [`aws kms get-key-policy`](https://docs.aws.amazon.com/cli/latest/reference/kms/get-key-policy.html) command to retrieve the existing key policy, and then save the policy document to a file.
 
 1. Open the policy document in your preferred text editor. In the policy statement for key administrators, add the `kms:ScheduleKeyDeletion` and `kms:CancelKeyDeletion` permissions. The following example shows a policy statement with these two permissions:
 
@@ -98,4 +98,4 @@ You can use the AWS Command Line Interface to add permissions for scheduling and
    }
    ```
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/kms/put-key-policy.html](https://docs.aws.amazon.com/cli/latest/reference/kms/put-key-policy.html) command to apply the key policy to the KMS key.
+1. Use the [`aws kms put-key-policy`](https://docs.aws.amazon.com/cli/latest/reference/kms/put-key-policy.html) command to apply the key policy to the KMS key.

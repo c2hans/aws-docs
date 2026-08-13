@@ -11,12 +11,12 @@ The following table helps you identify which IAM sections apply to your use case
 
 | Use case | Integration method | Source type in pipeline configuration | IAM sections you need |
 | --- | --- | --- | --- |
-| [Third-party integrations (API Pull)](data-sources.md#data-sources-third-party) | Pipeline pulls from vendor API using stored credentials | microsoft\_office365, okta\_sso, palo\_alto\_ngfw, etc. | [API caller permissions](#api-caller-permissions) \+ [Third-party sources (API Pull)](#third-party-api-pull) \+ [Resource policies](#resource-policies) |
+| [Third-party integrations (API Pull)](data-sources.md#data-sources-third-party) | Pipeline pulls from vendor API using stored credentials | microsoft\_office365, okta\_sso, palo\_alto\_ngfw, and so on. | [API caller permissions](#api-caller-permissions) \+ [Third-party sources (API Pull)](#third-party-api-pull) \+ [Resource policies](#resource-policies) |
 | [Third-party integrations (S3 delivery)](data-sources.md#data-sources-third-party) | Vendor delivers files to your S3 bucket | s3 | [API caller permissions](#api-caller-permissions) \+ [Third-party sources (S3 delivery)](#third-party-s3-delivery) \+ [Resource policies](#resource-policies) |
 | [Custom data from S3](data-sources.md#data-sources-custom) | Your applications write to S3, pipeline reads from bucket | s3 | [API caller permissions](#api-caller-permissions) \+ [Custom data from S3](#custom-data-s3) \+ [Resource policies](#resource-policies) |
 | [Custom data from CloudWatch Logs](data-sources.md#data-sources-custom) | Your applications log to a CloudWatch Logs log group | cloudwatch\_logs | [API caller permissions](#api-caller-permissions) \+ [Custom data from CloudWatch Logs](#custom-data-cloudwatch-logs) |
 | [Vended AWS service logs](data-sources.md#data-sources-aws-services) | AWS services deliver logs to CloudWatch Logs (VPC Flow Logs, Route 53) | cloudwatch\_logs | [API caller permissions](#api-caller-permissions) \+ [Vended AWS service logs](#vended-service-logs) |
-| [CloudWatch Metrics (OTel)](data-sources.md#data-sources-metrics-otel) | AWS services emit metrics via OTLP | cloudwatch\_metrics | [Pipeline rule permissions for CloudWatch Metrics sources](#pipeline-rule-permissions-metrics) |
+| [CloudWatch Metrics (OTel)](data-sources.md#data-sources-metrics-otel) | AWS services emit metrics through OTLP | cloudwatch\_metrics | [Pipeline rule permissions for CloudWatch Metrics sources](#pipeline-rule-permissions-metrics) |
 
 **Note**
 S3-based sources (`s3`) require a resource policy after pipeline creation. CloudWatch Logs sources (`cloudwatch_logs`) do not.

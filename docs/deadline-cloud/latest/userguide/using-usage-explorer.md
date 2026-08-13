@@ -19,7 +19,7 @@ The following sections show you the steps for accessing and using the Deadline C
 ## Prerequisite
 <a name="usage-explorer-prereqs"></a>
 
-To use the Deadline Cloud usage explorer, you must have either `MANAGER` or `OWNER` farm permissions. For more information, see [Understanding access levels](manage-users-by-farm.md).
+To use the Deadline Cloud usage explorer, you must have either `MANAGER` or `OWNER` farm permissions. For more information, see [How permissions work in Deadline Cloud](permissions-overview.md).
 
 **Note**
 If your time zone doesn't align to a full hour, such as India Standard Time (UTC\+5:30), the usage explorer doesn't show usage metrics. To see metrics, set your time zone to a zone that aligns to a full hour.

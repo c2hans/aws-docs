@@ -17,7 +17,7 @@ To manage user subscriptions added to an application environment, you can perfor
 ## Updating user subscriptions
 <a name="update-user-subscriptions"></a>
 
-To update a subscription in an Amazon Q Business application, you can use either the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateSubscription.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateSubscription.html) API operation.
+To update a subscription in an Amazon Q Business application, you can use either the AWS Management Console or the [UpdateSubscription](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateSubscription.html) API operation.
 
 For more information on user subscriptions for an IAM Identity Center-integrated Amazon Q Business application, see [Subscriptions for applications using IAM Identity Center](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/tiers.html#managing-sub-tiers-sso).
 
@@ -57,7 +57,7 @@ aws qbusiness update-subscription \
 ## Canceling user or group subscriptions
 <a name="delete-user-subscriptions"></a>
 
-To cancel subscriptions, you can use the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CancelSubscription.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CancelSubscription.html) API operation.
+To cancel subscriptions, you can use the AWS Management Console or the [CancelSubscription](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CancelSubscription.html) API operation.
 
 When you unsubscribe and remove a user or group, it unsubscribes them from the application environment and removes them from the user list.
 
@@ -102,7 +102,7 @@ aws qbusiness cancel-subscription \
 ## Listing user subscriptions
 <a name="list-user-subscriptions"></a>
 
-To see a list of user and group subscriptions within a specific Amazon Q Business application, you can use the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListSubscriptions.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListSubscriptions.html) API operation.
+To see a list of user and group subscriptions within a specific Amazon Q Business application, you can use the AWS Management Console or the [ListSubscriptions](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListSubscriptions.html) API operation.
 
 For a consolidated view of your user subscriptions—including a list of subscribed users, their subscription status, and applications, accounts, or services a user can access through their subscriptions—you can also view the [Amazon Q subscriptions page](https://console.aws.amazon.com/amazonq/subscriptions).
 

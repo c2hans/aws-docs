@@ -19,7 +19,7 @@ At a minimum, the Python module that implements your custom model needs to conta
 ## Custom model training script development in Neptune ML
 <a name="machine-learning-custom-model-training-script"></a>
 
-Your custom model training script should be an executable Python script like the Neptune ML toolkit's [https://github.com/awslabs/neptuneml-toolkit/blob/main/examples/custom-models/introduction/movie-lens-rgcn/node-class/src/train.py](https://github.com/awslabs/neptuneml-toolkit/blob/main/examples/custom-models/introduction/movie-lens-rgcn/node-class/src/train.py) example. It must accept hyperparameter names and values as command-line arguments. During model training, the hyperparameter names are obtained from the `model-hpo-configuration.json` file. The hyperparameter values either fall within the valid hyperparameter range if the hyperparameter is tunable, or take the default hyperparameter value if it is not tunable.
+Your custom model training script should be an executable Python script like the Neptune ML toolkit's [`train.py`](https://github.com/awslabs/neptuneml-toolkit/blob/main/examples/custom-models/introduction/movie-lens-rgcn/node-class/src/train.py) example. It must accept hyperparameter names and values as command-line arguments. During model training, the hyperparameter names are obtained from the `model-hpo-configuration.json` file. The hyperparameter values either fall within the valid hyperparameter range if the hyperparameter is tunable, or take the default hyperparameter value if it is not tunable.
 
 Your training script is run on a SageMaker AI training instance using a syntax like this:
 

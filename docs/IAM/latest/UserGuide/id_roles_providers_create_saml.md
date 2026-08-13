@@ -124,32 +124,32 @@ IAM uses the private key you uploaded to the IAM SAML provider to decrypt encryp
 You can use the AWS CLI to create, update, and delete SAML providers. For help with SAML federation, see [Troubleshooting SAML federation](troubleshoot_saml.md).
 
 **To create an IAM identity provider and upload a metadata document (AWS CLI)**
-+ Run this command: [https://docs.aws.amazon.com/cli/latest/reference/iam/create-saml-provider.html](https://docs.aws.amazon.com/cli/latest/reference/iam/create-saml-provider.html)
++ Run this command: [`aws iam create-saml-provider`](https://docs.aws.amazon.com/cli/latest/reference/iam/create-saml-provider.html)
 
 **To update an IAM SAML identity provider (AWS CLI)**
 
 You can update the metadata file, SAML encryption settings, and rotate private key decryption files for your IAM SAML provider. To rotate private keys, add your new private key and then remove the old key in a separate request. For more information about rotating private keys, see [Manage SAML encryption keys](#id_federation_manage-saml-encryption).
-+ Run this command:[https://docs.aws.amazon.com/cli/latest/reference/iam/update-saml-provider.html](https://docs.aws.amazon.com/cli/latest/reference/iam/update-saml-provider.html)
++ Run this command:[`aws iam update-saml-provider`](https://docs.aws.amazon.com/cli/latest/reference/iam/update-saml-provider.html)
 
 **To tag an existing IAM identity provider (AWS CLI)**
-+ Run this command:[https://docs.aws.amazon.com/cli/latest/reference/iam/tag-saml-provider.html](https://docs.aws.amazon.com/cli/latest/reference/iam/tag-saml-provider.html)
++ Run this command:[`aws iam tag-saml-provider`](https://docs.aws.amazon.com/cli/latest/reference/iam/tag-saml-provider.html)
 
 **To list tags for existing IAM identity provider (AWS CLI)**
-+ Run this command:[https://docs.aws.amazon.com/cli/latest/reference/iam/list-saml-provider-tags.html](https://docs.aws.amazon.com/cli/latest/reference/iam/list-saml-provider-tags.html)
++ Run this command:[`aws iam list-saml-provider-tags`](https://docs.aws.amazon.com/cli/latest/reference/iam/list-saml-provider-tags.html)
 
 **To remove tags on an existing IAM identity provider (AWS CLI)**
-+ Run this command:[https://docs.aws.amazon.com/cli/latest/reference/iam/untag-saml-provider.html](https://docs.aws.amazon.com/cli/latest/reference/iam/untag-saml-provider.html)
++ Run this command:[`aws iam untag-saml-provider`](https://docs.aws.amazon.com/cli/latest/reference/iam/untag-saml-provider.html)
 
 **To delete an IAM SAML identity provider (AWS CLI)**
 
 1. (Optional) To list information for all providers, such as the ARN, creation date, and expiration, run the following command:
-   + [https://docs.aws.amazon.com/cli/latest/reference/iam/list-saml-providers.html](https://docs.aws.amazon.com/cli/latest/reference/iam/list-saml-providers.html)
+   + [`aws iam list-saml-providers`](https://docs.aws.amazon.com/cli/latest/reference/iam/list-saml-providers.html)
 
 1. (Optional) To get information about a specific provider, such as the ARN, creation date, expiration date, encryption settings, and private key information, run the following command:
-   + [https://docs.aws.amazon.com/cli/latest/reference/iam/get-saml-provider.html](https://docs.aws.amazon.com/cli/latest/reference/iam/get-saml-provider.html)
+   + [`aws iam get-saml-provider`](https://docs.aws.amazon.com/cli/latest/reference/iam/get-saml-provider.html)
 
 1. To delete an IAM identity provider, run the following command:
-   + [https://docs.aws.amazon.com/cli/latest/reference/iam/delete-saml-provider.html](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-saml-provider.html)
+   + [`aws iam delete-saml-provider`](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-saml-provider.html)
 
 ## Create and manage an IAM SAML identity provider (AWS API)
 <a name="idp-create-identityprovider-API"></a>
@@ -157,32 +157,32 @@ You can update the metadata file, SAML encryption settings, and rotate private k
 You can use the AWS API to create, update, and delete SAML providers. For help with SAML federation, see [Troubleshooting SAML federation](troubleshoot_saml.md).
 
 **To create an IAM identity provider and upload a metadata document (AWS API)**
-+ Call this operation: [https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateSAMLProvider.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateSAMLProvider.html)
++ Call this operation: [`CreateSAMLProvider`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateSAMLProvider.html)
 
 **To update an IAM SAML identity provider (AWS API)**
 
 You can update the metadata file, SAML encryption settings, and rotate private key decryption files for your IAM SAML provider. To rotate private keys, add your new private key and then remove the old key in a separate request. For more information about rotating private keys, see [Manage SAML encryption keys](#id_federation_manage-saml-encryption).
-+ Call this operation: [https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateSAMLProvider.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateSAMLProvider.html)
++ Call this operation: [`UpdateSAMLProvider`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateSAMLProvider.html)
 
 **To tag an existing IAM identity provider (AWS API)**
-+ Call this operation: [https://docs.aws.amazon.com/IAM/latest/APIReference/API_TagSAMLProvider.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_TagSAMLProvider.html)
++ Call this operation: [`TagSAMLProvider`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_TagSAMLProvider.html)
 
 **To list tags for an existing IAM identity provider (AWS API)**
-+ Call this operation: [https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListSAMLProviderTags.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListSAMLProviderTags.html)
++ Call this operation: [`ListSAMLProviderTags`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListSAMLProviderTags.html)
 
 **To remove tags on an existing IAM identity provider (AWS API)**
-+ Call this operation: [https://docs.aws.amazon.com/IAM/latest/APIReference/API_UntagSAMLProvider.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UntagSAMLProvider.html)
++ Call this operation: [`UntagSAMLProvider`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UntagSAMLProvider.html)
 
 **To delete an IAM identity provider (AWS API)**
 
 1. (Optional) To list information for all IdPs, such as the ARN, creation date, and expiration, call the following operation:
-   + [https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListSAMLProviders.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListSAMLProviders.html)
+   + [`ListSAMLProviders`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListSAMLProviders.html)
 
 1. (Optional) To get information about a specific provider, such as the ARN, creation date, expiration date, encryption settings, and private key information, call the following operation:
-   + [https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetSAMLProvider.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetSAMLProvider.html)
+   + [`GetSAMLProvider`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetSAMLProvider.html)
 
 1. To delete an IdP, call the following operation:
-   + [https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteSAMLProvider.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteSAMLProvider.html)
+   + [`DeleteSAMLProvider`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteSAMLProvider.html)
 
 ## Next steps
 <a name="id_roles_create-for-saml-next-steps"></a>

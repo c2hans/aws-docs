@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enter-script-rule.html
 ---
 
-# Enter a script in a Contact Lens rule for agents to follow
+# Enter a script in a conversational analytics rule for agents to follow
 <a name="enter-script-rule"></a>
 
-Enter a script in a Contact Lens rule when you need agents to use exact wording in customer calls.
+Enter a script in a conversational analytics rule when you need agents to use exact wording in customer calls.
 
 To enter a script in a rule, enter phrases. For example, if you want to highlight when agents say *Thank you for being a member. We appreciate your business*, enter two phrases:
 + Thank you for being a member.

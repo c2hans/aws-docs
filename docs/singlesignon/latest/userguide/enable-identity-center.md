@@ -35,6 +35,17 @@ Choose the tab for the type of IAM Identity Center instance you want to enable, 
 
 1. Open the [IAM Identity Center console](https://console.aws.amazon.com/singlesignon).
 
+1. This step applies only to [AWS Regions that are enabled by default](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html#manage-acct-regions-considerations). If you are enabling IAM Identity Center in another Region, skip to Step 4.
+
+   Under **Instance configuration**, choose one of the following options:
+   + **Single-Region instance** – Your instance is created in the current Region.
+   + **Multi-Region instance** – Your instance is created in the current Region and replicated to an additional Region for resilient AWS account and application access. A customer managed multi-Region KMS key is created automatically to support multi-Region. AWS KMS charges apply.
+   + **Custom instance** – Configure your instance settings individually.
+
+   For more information about each option, see [Instance configuration options](organization-instances-identity-center.md#instance-configuration-options).
+
+   Choose **Enable** to create your instance.
+
 1. (Optional) If you want to use a customer managed KMS key for encryption at rest rather than the default AWS managed key, configure the customer managed key in the **Key for encrypting IAM Identity Center data at rest** section. For more information, refer to [Implementing customer managed KMS keys in AWS IAM Identity Center](identity-center-customer-managed-keys.md).
 **Important**
 Perform this step only if you've configured the necessary permissions for use of the KMS customer managed key. Without proper permissions, this step may fail or disrupt IAM Identity Center administration and AWS managed applications.

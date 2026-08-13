@@ -10,7 +10,7 @@ Learn about advanced table schema features in the DynamoDB Enhanced Client API.
 ## Understand table schema types
 <a name="ddb-en-client-adv-features-schm-overview"></a>
 
-`[TableSchema](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/TableSchema.html)` is the interface to the mapping functionality of the DynamoDB Enhanced Client API. It can map a data object to and from a map of [AttributeValues](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/AttributeValue.html). A `TableSchema` object needs to know about the structure of the table it is mapping. This structure information is stored in a [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/TableMetadata.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/TableMetadata.html) object.
+`[TableSchema](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/TableSchema.html)` is the interface to the mapping functionality of the DynamoDB Enhanced Client API. It can map a data object to and from a map of [AttributeValues](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/AttributeValue.html). A `TableSchema` object needs to know about the structure of the table it is mapping. This structure information is stored in a [`TableMetadata`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/TableMetadata.html) object.
 
 The enhanced client API has several implementations of `TableSchema`, which follow.
 

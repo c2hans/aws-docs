@@ -242,7 +242,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/identity
 
 ------
 
- Attach your device identity (certificate or Amazon Cognito Federated Identity) to the thing in the AWS IoT registry using [https://docs.aws.amazon.com/iot/latest/apireference/API_AttachThingPrincipal.html](https://docs.aws.amazon.com/iot/latest/apireference/API_AttachThingPrincipal.html) and attach the policy to principals using [https://docs.aws.amazon.com/iot/latest/apireference/API_AttachPolicy.html](https://docs.aws.amazon.com/iot/latest/apireference/API_AttachPolicy.html).
+ Attach your device identity (certificate or Amazon Cognito Federated Identity) to the thing in the AWS IoT registry using [`AttachThingPrincipal`](https://docs.aws.amazon.com/iot/latest/apireference/API_AttachThingPrincipal.html) and attach the policy to principals using [`AttachPolicy`](https://docs.aws.amazon.com/iot/latest/apireference/API_AttachPolicy.html).
 
  Although these scenarios apply to a single device communicating with its own set of topics and device shadows, there are scenarios where a single device needs to act upon the state or topics of other devices. For example, you may be operating an edge appliance in an industrial setting, creating a home gateway to manage coordinating automation in the home, or allowing a user to gain access to a different set of devices based on their specific role. For these use cases, leverage a known entity, such as a group identifier or the identity of the edge gateway as the prefix for all of the devices that communicate to the gateway. By making all of the endpoint devices use the same prefix, you can make use of wildcards, `"*"`, in your IoT policies. This approach balances MQTT topic security with manageability.
 

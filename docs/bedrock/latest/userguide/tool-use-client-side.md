@@ -122,7 +122,7 @@ For more details on the using Function Calling on Responses API and Chat Complet
 
 **Using Converse API for client-side tooling**
 
-You can use the [Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html) to let a model use a tool in a conversation. The following Python examples show how to use a tool that returns the most popular song on a fictional radio station.
+You can use the [Converse API](bedrock/latest/userguide/conversation-inference.html) to let a model use a tool in a conversation. The following Python examples show how to use a tool that returns the most popular song on a fictional radio station.
 
 ```
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
@@ -275,4 +275,4 @@ if __name__ == "__main__":
 
 **Using Invoke APIs for client-side tool use**
 
-It is possible to use tools with the base inference operations ([InvokeModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html) or [InvokeModelWithResponseStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)). To find the inference parameters that you pass in the request body, see the [inference parameters](https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters.html) for the model that you want to use.
+It is possible to use tools with the base inference operations ([InvokeModel](bedrock/latest/APIReference/API_runtime_InvokeModel.html) or [InvokeModelWithResponseStream](bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)). To find the inference parameters that you pass in the request body, see the [inference parameters](bedrock/latest/userguide/model-parameters.html) for the model that you want to use.

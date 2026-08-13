@@ -95,7 +95,7 @@ Choosing this option prevents you from possibly being billed for resources whose
 **Create the stack using CloudFormation (AWS CLI)**
 
 You can also use the AWS CLI to create the stack.
-+ Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command.
++ Use the [`create-stack`](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command.
   +  Accept the default template parameter values, specifying the stack name, email address, and bucket name. Use the `template-body` parameter to pass the template contents, or `template-url` to specify a URL location.
 
     ```
@@ -216,12 +216,12 @@ The CloudFormation template for this tutorial will create the following resource
 
 **Important**
 You will be billed for the Amazon resources used if you create a stack from this template.
-+ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-s3-bucket.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-s3-bucket.html): An Amazon S3 bucket that acts as the event source for the rule, with EventBridge notifications enabled.
-+ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sns-topic.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sns-topic.html): An Amazon SNS topic that acts as the target for the events matched by the rule.
-+ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sns-subscription.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sns-subscription.html): An email subscription to the SNS topic.
-+ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-role.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-role.html): IAM execution roles granting permissions to the EventBridge service and Lambda cleanup function.
-+ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-events-rule.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-events-rule.html): The rule connecting the Amazon S3 bucket events to the Amazon SNS topic.
-+ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-function.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-function.html): A Lambda function that empties the Amazon S3 bucket when the stack is deleted, enabling clean deletion of all resources.
++ [`AWS::S3::Bucket`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-s3-bucket.html): An Amazon S3 bucket that acts as the event source for the rule, with EventBridge notifications enabled.
++ [`AWS::SNS::Topic`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sns-topic.html): An Amazon SNS topic that acts as the target for the events matched by the rule.
++ [`AWS::SNS::Subscription`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sns-subscription.html): An email subscription to the SNS topic.
++ [`AWS::IAM::Role`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-role.html): IAM execution roles granting permissions to the EventBridge service and Lambda cleanup function.
++ [`AWS::Events::Rule`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-events-rule.html): The rule connecting the Amazon S3 bucket events to the Amazon SNS topic.
++ [`AWS::Lambda::Function`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-function.html): A Lambda function that empties the Amazon S3 bucket when the stack is deleted, enabling clean deletion of all resources.
 
 ### Permissions
 <a name="event-bus-rule-get-started-template-perms"></a>

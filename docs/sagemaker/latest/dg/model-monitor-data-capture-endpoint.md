@@ -131,7 +131,7 @@ Deploy your model and create an HTTPS endpoint with `DataCapture` enabled.
 
 Provide the endpoint configuration to SageMaker AI. The service launches the ML compute instances and deploys the model or models as specified in the configuration.
 
-Once you have your model and endpoint configuration, use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html) API to create your endpoint. The endpoint name must be unique within an AWS Region in your AWS account.
+Once you have your model and endpoint configuration, use the [`CreateEndpoint`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html) API to create your endpoint. The endpoint name must be unique within an AWS Region in your AWS account.
 
 The following creates an endpoint using the endpoint configuration specified in the request. Amazon SageMaker AI uses the endpoint to provision resources and deploy models.
 
@@ -147,7 +147,7 @@ create_endpoint_response = sagemaker_client.create_endpoint(
                                             EndpointConfigName=endpoint_config_name)
 ```
 
-For more information, see the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html) API.
+For more information, see the [`CreateEndpoint`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html) API.
 
 ------
 #### [ SageMaker Python SDK ]

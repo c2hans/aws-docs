@@ -22,9 +22,9 @@ The redrive task resets the retention period. All redriven messages are consider
 
 | API action | Description |
 | --- | --- |
-| [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_StartMessageMoveTask.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_StartMessageMoveTask.html) | Starts an asynchronous task to move messages from a specified source queue to a specified destination queue. |
-| [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ListMessageMoveTasks.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ListMessageMoveTasks.html) | Gets the most recent message movement tasks (up to 10) under a specific source queue. |
-| [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CancelMessageMoveTask.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CancelMessageMoveTask.html) | Cancels a specified message movement task. A message movement can only be cancelled when the current status is RUNNING. |
+| [`StartMessageMoveTask`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_StartMessageMoveTask.html) | Starts an asynchronous task to move messages from a specified source queue to a specified destination queue. |
+| [`ListMessageMoveTasks`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ListMessageMoveTasks.html) | Gets the most recent message movement tasks (up to 10) under a specific source queue. |
+| [`CancelMessageMoveTask`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CancelMessageMoveTask.html) | Cancels a specified message movement task. A message movement can only be cancelled when the current status is RUNNING. |
 
 ## Configuring a dead-letter queue redrive for an existing standard queue using the Amazon SQS console
 <a name="sqs-configure-dead-letter-queue-redrive-console"></a>
@@ -72,7 +72,7 @@ Use the following steps to configure minimum permissions for a dead-letter queue
 
 1. In the navigation pane, select **Policies**.
 
-1. Create a new [https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) and add the following permissions. Attach the policy to the IAM [user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) or [role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) that will perform the redrive operation.
+1. Create a new [**policy**](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) and add the following permissions. Attach the policy to the IAM [user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) or [role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) that will perform the redrive operation.
    + Permissions for the DLQ (source queue):
      + `sqs:StartMessageMoveTask`
      + `sqs:CancelMessageMoveTask`
@@ -156,7 +156,7 @@ Follow these steps to configure the minimum permissions required for handling a 
 
 1. In the navigation pane, select **Policies**.
 
-1. Create a new [https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) and add the following permissions. Attach the policy to the IAM [user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) or [role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) that will perform the redrive operation.
+1. Create a new [**policy**](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) and add the following permissions. Attach the policy to the IAM [user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) or [role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) that will perform the redrive operation.
    + Permissions for the DLQ (source queue):
      + `sqs:StartMessageMoveTask`
      + `sqs:CancelMessageMoveTask`

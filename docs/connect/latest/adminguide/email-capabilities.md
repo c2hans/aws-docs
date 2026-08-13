@@ -17,6 +17,7 @@ Connect Customer Email integrates with [Amazon Simple Email Service (SES)](https
 + [Every email message is a unique email contact](#email-capabilities-howmanaged)
 + [Email threads](#email-capabilities-howthreadsmanaged)
 + [Send email](#email-capabilities-howemailssent)
++ [Self-addressed emails](#email-capabilities-selfaddressed)
 
 ## Receive emails
 <a name="email-capabilities-howreceived"></a>
@@ -111,3 +112,13 @@ The following diagram shows that the [StartOutboundEmailContact](https://docs.aw
 The [StartOutboundEmailContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartOutboundEmailContact.html) API is the primary API of all integration methods for outbound email contacts including agent replies to inbound contact and agent-initiated outbound email contacts.
 + It functions similarly to [StartEmailContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartEmailContact.html) API, however it is the inverse since it is outbound.
 +  It requires at least one email address in either the To or CC email address attributes and it requires an outbound whisper flow for handling the outbound contact.
+
+## Emails that loop back to the same address
+<a name="email-capabilities-selfaddressed"></a>
+
+**Automatic behavior**
+Connect Customer applies this behavior automatically, and you cannot turn it off. It prevents duplicate emails from creating unwanted contacts in your contact center.
+
+When an agent replies to an email, the reply is sent from the queue's configured email address. If an agent CCs or includes that same address in the To field, the email is delivered back to your Connect Customer instance.
+
+Connect Customer automatically ignores these emails and does not create new inbound contacts. This prevents duplicate contacts and ensures replies or outbound emails are not re-routed back to agents.

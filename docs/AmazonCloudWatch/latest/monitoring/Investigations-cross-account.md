@@ -57,7 +57,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
         ```
 
 ------
-      + If the monitoring account owner removes a source account from the cross-account configuration, the IAM policy will not update automatically. You must manually update the IAM role and policy to ensure it always has the minimum permissions possible.
+      + If the monitoring account owner removes a source account from the cross-account configuration, the IAM policy will not update automatically. You must manually update the IAM role and policy to make sure it always has the minimum permissions possible.
       + You might reach the limit of managed policies per role if the permissions are not manually updated when a source account is removed. You must delete any unused managed policies attached to your investigation role.
 
    1. Manually

@@ -129,12 +129,12 @@ Use the S3 control client to create a Multi-Region Access Point by specifying th
     }
 ```
 
-Because the creation of a Multi-Region Access Point is an asynchronous operation, you use the token that you receive from the immediate response to check on the status of the creation process. After the status check returns a success message, you can use the `GetMultiRegionAccessPoint` operation to get the Multi-Region Access Point’s alias. The alias is the last component of the ARN, which you need for object-level operations.
+Because the creation of a Multi-Region Access Point is an asynchronous operation, you use the token that you receive from the immediate response to check on the status of the creation process. After the status check returns a success message, you can use the [`GetMultiRegionAccessPoint`](/sdk-for-kotlin/api/latest/s3control/aws.sdk.kotlin.services.s3control/-s3-control-client/get-multi-region-access-point.html) operation to get the Multi-Region Access Point’s alias. The alias is the last component of the ARN, which you need for object-level operations.
 
 ### Use token to check status
 <a name="_use_token_to_check_status"></a>
 
-Use the `DescribeMultiRegionAccessPointOperation` to check the status of the last operation. After the `requestStatus` value becomes "SUCCEEDED", you can work with the Multi-Region Access Point.
+Use the [`DescribeMultiRegionAccessPointOperation`](/sdk-for-kotlin/api/latest/s3control/aws.sdk.kotlin.services.s3control/-s3-control-client/describe-multi-region-access-point-operation.html) to check the status of the last operation. After the `requestStatus` value becomes "SUCCEEDED", you can work with the Multi-Region Access Point.
 
 ```
         suspend fun waitForSucceededStatus(
@@ -199,7 +199,7 @@ After you add the dependencies, configure the S3 client to use the SigV4a signin
 
 After you configure the S3 client, operations that S3 supports for Multi-Region Access Points work the same. The only difference is that the bucket parameter must be the ARN of the Multi-Region Access Point. You can get the ARN from the Amazon S3 console or programmatically as shown previously in the `createMrap` function that returns an ARN.
 
-The following code example shows the ARN used in a `GetObject` operation.
+The following code example shows the ARN used in a [`GetObject`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/get-object.html) operation.
 
 ```
     suspend fun getObjectFromMrap(

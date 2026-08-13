@@ -519,7 +519,7 @@ Connect Customer Outbound Campaigns now supports WhatsApp, expanding on the What
 
 Previously, Outbound Campaigns supported SMS, email, and voice channels, while WhatsApp was available only for customers to initiate conversations with your agents. With WhatsApp support in Outbound Campaigns, you can now proactively reach customers through an additional messaging platform while maintaining a unified campaign management experience. You can personalize WhatsApp messages using real-time customer data, track delivery and engagement metrics, and manage communication frequency and timing to ensure compliance. This expansion provides greater flexibility to connect with customers on their preferred platforms while streamlining your omnichannel outreach strategy.
 
-For more information, see [Create an outbound campaign using the console](how-to-create-campaigns.md).
+For more information, see [Create an outbound campaign using the admin website](how-to-create-campaigns.md).
 
 ## November 2025 Updates
 <a name="november2025"></a>
@@ -805,7 +805,7 @@ For more information, see [Use generative AI-powered email conversation overview
 
 Connect Customer supports [Get customer input](get-customer-input.md) and [Store customer input](store-customer-input.md) flow blocks for outbound voice whisper flows. The **Get customer input block** allows a prompt to be played to a customer on an outbound call after they answer the call but before they are connected with an agent, and the customer's response can be collected through either DTMF input or by using an Amazon Lex bot.
 
-This capability allows you to capture interactive and dynamic customer input on outbound calls before these are connected to an agent. For example, you can use the **Get customer input** block to obtain customer consent for call recording as part of outbound calls placed by agents, and use it to trigger Connect Customer Contact Lens recording and analytics.
+This capability allows you to capture interactive and dynamic customer input on outbound calls before these are connected to an agent. For example, you can use the **Get customer input** block to obtain customer consent for call recording as part of outbound calls placed by agents, and use it to trigger Connect Customer conversational analytics recording and analytics.
 
 ### Agent time-off balance data in the Connect Customer analytics data lake
 <a name="screenrecording-oct25"></a>
@@ -826,7 +826,7 @@ For more information, see [Connect Customer Client Application](amazon-connect-c
 
 Connect Customer now supports scheduling of individual agents, giving you more flexibility in scheduling your workforce. For example, when onboarding 100 new agents to a business unit with schedules already published for next two months, you can create schedules for only those new agents and automatically merge them with existing schedules. This eliminates the need for workarounds such as manually copying schedules from existing agents to new agents or regenerating schedules for entire business unit, thus improving manager productivity and operational efficiency.
 
-For more information, see [Forecasting, capacity planning, and scheduling in Connect Customer](forecasting-capacity-planning-scheduling.md).
+For more information, see [Forecasting & agent scheduling in Connect Customer](forecasting-capacity-planning-scheduling.md).
 
 ### Email supports threaded views and includes conversation history in replies
 <a name="threaded-views-and-includes-conversation-history-in-agent-email-replies-oct25"></a>
@@ -847,7 +847,7 @@ For more information, see [Enable persistent connection for Connect Customer age
 
 Connect Customer now supports copy and bulk edit of agent scheduling configuration, making it easier to set up and maintain agent schedules. You can create new scheduling configurations by copying existing ones — for example, copy a weekday shift profile to create a weekend variant, or, copy scheduling configuration (time-zone, weekly working hours, days off, etc.) from an existing agent to multiple new hires. When bulk editing, you can select specific fields to update, such as update time-zone and start date for new hires without changing their weekly working hours. These updates reduce time spent by managers on configuration management, thus improving productivity and operational efficiency.
 
-For more information, see [Forecasting, capacity planning, and scheduling in Connect Customer](forecasting-capacity-planning-scheduling.md).
+For more information, see [Forecasting & agent scheduling in Connect Customer](forecasting-capacity-planning-scheduling.md).
 
 ### Customize service level calculations
 <a name="customize-service-level-calculations-oct25"></a>
@@ -884,10 +884,10 @@ For example, managers can choose to count callback contacts, exclude contacts tr
 
 For more information, see [Create custom calculations of service level metrics](dashboard-customize-widgets.md#dashboard-custom-sl).
 
-### Connect Customer Contact Lens sensitive data redaction in 7 additional languages
+### Connect Customer conversational analytics sensitive data redaction in 7 additional languages
 <a name="cllanguages-sept25"></a>
 
-Connect Customer Contact Lens  provides sensitive data redaction from voice and chat conversational analytics in French (France, Canada), Portuguese (Portugal, Brazil), Italian, German, and Spanish (Spain).
+Connect Customer conversational analytics  provides sensitive data redaction from voice and chat conversational analytics in French (France, Canada), Portuguese (Portugal, Brazil), Italian, German, and Spanish (Spain).
 
 For more information, see [AI features](supported-languages.md#supported-languages-contact-lens).
 
@@ -937,10 +937,10 @@ Supervisors and managers can enable manual assignment by updating agent configur
 ## August 2025 Updates
 <a name="august2025"></a>
 
-### Contact Lens with external voice expanded to additional AWS Regions
+### conversational analytics with external voice expanded to additional AWS Regions
 <a name="contact-lens-with-voice-regions-aug25"></a>
 
-Contact Lens with external voice is now supported in Asia Pacific (Tokyo), Asia Pacific (Sydney), Canada (Central), Europe (Frankfurt), and Europe (London). For more information, see [Integrate Connect Customer Contact Lens with external voice systems](contact-lens-integration.md) and [Conversational analytics availability by Region](regions.md#contactlens_region).
+conversational analytics with external voice is now supported in Asia Pacific (Tokyo), Asia Pacific (Sydney), Canada (Central), Europe (Frankfurt), and Europe (London). For more information, see [Integrate Connect Customer conversational analytics with external voice systems](contact-lens-integration.md) and [Conversational analytics availability by Region](regions.md#contactlens_region).
 
 ### Multi-user web, in-app, and video calling
 <a name="multiparty-aug25"></a>
@@ -950,7 +950,7 @@ Connect Customer supports multi-user web, in-app, and video calling, allowing mu
 ### Recurring activities in agent schedules
 <a name="recurring-activities-aug25"></a>
 
-Connect Customer supports recurring activities in agent schedules, allowing you to add repeating events in a few clicks. You can schedule activities such as daily stand-up at 8 a.m. or team meeting every Monday at 9 a.m. as a series that automatically gets added to agent schedules. These can be scheduled as individual recurring series for each agent or a shared recurring series across multiple agents. For more information, see [Forecasting, capacity planning, and scheduling in Connect Customer](forecasting-capacity-planning-scheduling.md).
+Connect Customer supports recurring activities in agent schedules, allowing you to add repeating events in a few clicks. You can schedule activities such as daily stand-up at 8 a.m. or team meeting every Monday at 9 a.m. as a series that automatically gets added to agent schedules. These can be scheduled as individual recurring series for each agent or a shared recurring series across multiple agents. For more information, see [Forecasting & agent scheduling in Connect Customer](forecasting-capacity-planning-scheduling.md).
 
 ### Connect Customer communications widget supports task and email forms for websites and applications
 <a name="communications-widget-forms-august25"></a>
@@ -1292,7 +1292,7 @@ The following updates have been released for email quotas and feature specificat
 ### End of support notice for Connect Customer Voice ID
 <a name="voiceid-may25"></a>
 
-End of support notice: On May 20, 2026, AWS will end support for Amazon Connect Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Amazon Connect console, access Voice ID features on the Connect Customer admin website or Contact Control Panel, or access Voice ID resources. For more information, visit [Amazon Connect Voice ID end of support](https://docs.aws.amazon.com/connect/latest/adminguide/amazonconnect-voiceid-end-of-support.html).
+End of support notice: On May 20, 2026, AWS will end support for Amazon Connect Customer Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Amazon Connect Customer console, access Voice ID features on the Connect Customer admin website or Contact Control Panel, or access Voice ID resources. For more information, visit [Amazon Connect Customer Voice ID end of support](https://docs.aws.amazon.com/connect/latest/adminguide/amazonconnect-voiceid-end-of-support.html).
 
 ### Audio optimization for Omnissa cloud desktops
 <a name="omnissa-may25"></a>
@@ -1309,10 +1309,10 @@ You can use an agent hierarchy groups table to incorporate organizational struct
 
 Connect Customer supports WhatsApp Business messaging and SMS in additional Regions. For more information, see [Availability of Connect Customer features by Region](regions.md).
 
-### Access Contact Lens real-time dashboards in AWS GovCloud (US) Region
+### Access conversational analytics real-time dashboards in AWS GovCloud (US) Region
 <a name="analytics-dashboards-may25"></a>
 
-You can access Connect Customer Contact Lens real-time queue and agent performance dashboards, and flows performance dashboards in AWS GovCloud (US) Region, a secure cloud environment designed for government and public sector customers. For more information, see [Conversational analytics features by Region](regions.md#regions-contactlens).
+You can access Connect Customer conversational analytics real-time queue and agent performance dashboards, and flows performance dashboards in AWS GovCloud (US) Region, a secure cloud environment designed for government and public sector customers. For more information, see [Conversational analytics features by Region](regions.md#regions-contactlens).
 
 ### Administrator access for agent schedules
 <a name="admin-access-schedules-may25"></a>
@@ -1330,7 +1330,7 @@ The DescribeContact API provides richer contact information, enabling more effic
 ### New metrics and dashboard drill downs for outbound campaigns
 <a name="outbound-campaign-metrics-apr25"></a>
 
-Outbound campaigns provides enhanced reporting capabilities for outbound campaigns, including five new metrics and detailed dashboard drill downs. Contact Lens dashboards show campaign engagement metrics, execution-level performance data, and delivery issue details. Admins can monitor campaign progress in real-time and troubleshoot delivery issues with granular insights. These metrics are accessible through the [GetMetricDataV2 API](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html) and [Zero-ETL data lake](data-lake-outbound-campaigns-data.md) for custom reporting. For more information, see [Outbound campaign metrics in Connect Customer](outbound-campaign-metrics.md).
+Outbound campaigns provides enhanced reporting capabilities for outbound campaigns, including five new metrics and detailed dashboard drill downs. conversational analytics dashboards show campaign engagement metrics, execution-level performance data, and delivery issue details. Admins can monitor campaign progress in real-time and troubleshoot delivery issues with granular insights. These metrics are accessible through the [GetMetricDataV2 API](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html) and [Zero-ETL data lake](data-lake-outbound-campaigns-data.md) for custom reporting. For more information, see [Outbound campaign metrics in Connect Customer](outbound-campaign-metrics.md).
 
 ### View real-time adherence on the Queue and agent performance dashboard
 <a name="adherence-apr25"></a>
@@ -1355,10 +1355,10 @@ Connect Customer Cases provides capabilities to help contact centers track and m
 ## March 2025 Updates
 <a name="mar25-release-notes"></a>
 
-### Enable or disable Contact Lens sentiment analysis
+### Enable or disable conversational analytics sentiment analysis
 <a name="sentiment-analysis-mar25"></a>
 
-In Connect Customer Contact Lens, when you choose a language that is supported by sentiment analysis, and choose **Enable speech analytics** or **Enable chat analytics**, sentiment analysis is enabled by default for all agents and customers. For a list of languages supported by sentiment analysis, see [AI features](supported-languages.md#supported-languages-contact-lens). For information about disabling sentiment analysis, see [Disable sentiment analysis](enable-analytics.md#disable-sentiment-analysis-voice-and-chat).
+In Connect Customer conversational analytics, when you choose a language that is supported by sentiment analysis, and choose **Enable speech analytics** or **Enable chat analytics**, sentiment analysis is enabled by default for all agents and customers. For a list of languages supported by sentiment analysis, see [AI features](supported-languages.md#supported-languages-contact-lens). For information about disabling sentiment analysis, see [Disable sentiment analysis](enable-analytics.md#disable-sentiment-analysis-voice-and-chat).
 
 ### Customize the wait time for DTMF input
 <a name="customize-dtmf-waittimes-mar25"></a>
@@ -1367,12 +1367,12 @@ You can customize the number of seconds that Connect Customer waits between a ca
 
 This update applies to keypad button presses. To configure wait times for voice input for Amazon Lex, you use the [Get customer input](get-customer-input.md) block. See *Configurable time-outs for voice input* in the [Get customer input](get-customer-input.md) topic.
 
-### Added 34 languages to Connect Customer Contact Lens conversational analytics
+### Added 34 languages to Connect Customer conversational analytics conversational analytics
 <a name="cl-language-update-mar25"></a>
 
-Connect Customer Contact Lens added support for conversational analytics in 34 new languages including Afrikaans, Arabic (Modern Standard), Bengali, Bosnian, Bulgarian, Chinese (Cantonese), Croatian, Czech, Estonian, Farsi, Galician, Greek, Hebrew, Hungarian, Kannada, Latvian, Lithuanian, Macedonian, Malayalam, Marathi, Romanian, Russian, Serbian, Sinhala, Slovak, Slovenian, Somali, Sundanese, Telugu, Thai, Turkish, Ukrainian, Vietnamese, and Zulu.
+Connect Customer conversational analytics added support for conversational analytics in 34 new languages including Afrikaans, Arabic (Modern Standard), Bengali, Bosnian, Bulgarian, Chinese (Cantonese), Croatian, Czech, Estonian, Farsi, Galician, Greek, Hebrew, Hungarian, Kannada, Latvian, Lithuanian, Macedonian, Malayalam, Marathi, Romanian, Russian, Serbian, Sinhala, Slovak, Slovenian, Somali, Sundanese, Telugu, Thai, Turkish, Ukrainian, Vietnamese, and Zulu.
 
-For more information, see the [Connect Customer Contact Lens language table](supported-languages.md#supported-languages-contact-lens).
+For more information, see the [Connect Customer conversational analytics language table](supported-languages.md#supported-languages-contact-lens).
 
 ### View agents' adherence to their work schedules in a calendar view
 <a name="schedule-adherence-mar25"></a>
@@ -1391,16 +1391,16 @@ For more information, see [Set up Connect Customer outbound campaigns](enable-ou
 ### Track agent acknowledgements of performance evaluations
 <a name="eval-mar25"></a>
 
-You can capture and review agent acknowledgements of performance evaluations within  Contact Lens. This helps you ensure that agents have reviewed evaluation feedback and understand performance expectations. Agents can acknowledge their review of performance evaluations within the Connect Customer admin website, and add optional notes (for example, "reviewed and accepted feedback on being more empathetic towards angry customers"). Managers can then track agent acknowledgements, to confirm that agents are regularly reviewing the feedback on performance evaluations for improving their performance.
+You can capture and review agent acknowledgements of performance evaluations within  conversational analytics. This helps you ensure that agents have reviewed evaluation feedback and understand performance expectations. Agents can acknowledge their review of performance evaluations within the Connect Customer admin website, and add optional notes (for example, "reviewed and accepted feedback on being more empathetic towards angry customers"). Managers can then track agent acknowledgements, to confirm that agents are regularly reviewing the feedback on performance evaluations for improving their performance.
 
 For more information, see [Acknowledge performance evaluations in Connect Customer](acknowledge-evaluations.md).
 
-### Configure Connect AI agents directly from the Connect Customer admin website
+### Configure agent assist directly from the Connect Customer admin website
 <a name="qic-mar25"></a>
 
-You can customize your Connect AI agents experience directly from the Connect Customer admin website. With this no-code approach, contact center administrators can configure AI agent behaviors, create or edit custom prompts and set appropriate guardrails. For example, users can update AI prompts when launching new products, adjust AI guardrails to filter inappropriate content, or refine AI agents.
+You can customize your agent assist experience directly from the Connect Customer admin website. With this no-code approach, contact center administrators can configure AI agent behaviors, create or edit custom prompts and set appropriate guardrails. For example, users can update AI prompts when launching new products, adjust AI guardrails to filter inappropriate content, or refine AI agents.
 
-For more information, see [Customize Connect AI agents](customize-connect-ai-agents.md).
+For more information, see [Customize AI agents](customize-connect-ai-agents.md).
 
 ### Increased limit on number of routing criteria updates per queued contact
 <a name="route-contact-mar25"></a>
@@ -1572,7 +1572,7 @@ Connect Customer allows you to exclude certain proficiencies from consideration 
 
 You can use the Connect Customer admin website to permanently delete queues and routing profiles. For example, if your team set up sample queues to test a use case that is no longer needed, or you're consolidating your routing profiles because you have reorganized agents, you can easily remove the unwanted resources by using the Connect Customer admin website. For more information, see [Delete a queue](delete-queue.md) and [Delete a routing profile](delete-routing-profiles.md).
 
-#### Connect AI agents supports 64 languages for agent assistance capabilities
+#### agent assist supports 64 languages for agent assistance capabilities
 <a name="multi-language-q-dec24"></a>
 
 Customer service agents can chat with Q for assistance in their native language and Q will provide answers, knowledge article links, and recommended step-by-step guides in that language. New languages supported include: Chinese, French, French (Canadian), Italian, Japanese, Korean, Malay, Portuguese, Spanish, Swedish, and Tagalog. For the full list of supported languages, see [AI features](supported-languages.md#supported-languages-contact-lens).
@@ -1644,20 +1644,20 @@ You can proactively engage your customers in a personalized manner. Connect Cust
 
 For more information, see [Use the segment AI assistant in Connect Customer](customer-segments-ai-assistant.md) and [Create an outbound campaign using event triggers](how-to-create-campaigns-using-event-triggers.md).
 
-#### Generative AI-powered self-service with Connect AI agents
+#### Generative AI-powered self-service with agent assist
 <a name="gen-ai-self-service-q-dec24"></a>
 
-Connect AI agents, a generative-AI powered assistant for customer service, supports end-customer self-service interactions across Interactive Voice Response (IVR) and digital channels. With this launch, businesses can augment their existing self-service experiences with generative AI capabilities to create more personalized and dynamic experiences to improve customer satisfaction and first contact resolution. For more information, see [(legacy) Use generative AI-powered self-service with Connect AI agents](generative-ai-powered-self-service.md).
+agent assist, a generative-AI powered assistant for customer service, supports end-customer self-service interactions across Interactive Voice Response (IVR) and digital channels. With this launch, businesses can augment their existing self-service experiences with generative AI capabilities to create more personalized and dynamic experiences to improve customer satisfaction and first contact resolution. For more information, see [(legacy) Use generative AI-powered self-service with AI agents](generative-ai-powered-self-service.md).
 
-#### AI guardrails for Connect AI agents
+#### AI guardrails for agent assist
 <a name="ai-guardrails-q-dec24"></a>
 
-Connect AI agents, a generative AI powered assistant for customer service, enables you to natively configure AI guardrails to implement safeguards based on their use cases and responsible AI policies. Contact center administrators can configure company-specific guardrails for Connect AI agents to filter harmful and inappropriate responses, redact sensitive personal information, and limit incorrect information in the responses due to potential large language model (LLM) hallucination. For more information, see [Create AI guardrails for Connect AI agents](create-ai-guardrails.md).
+agent assist, a generative AI powered assistant for customer service, enables you to natively configure AI guardrails to implement safeguards based on their use cases and responsible AI policies. Contact center administrators can configure company-specific guardrails for agent assist to filter harmful and inappropriate responses, redact sensitive personal information, and limit incorrect information in the responses due to potential large language model (LLM) hallucination. For more information, see [Create AI guardrails for AI agents](create-ai-guardrails.md).
 
 #### Built-in dashboards to analyze conversational AI bot performance
 <a name="dashboards-ai-bot-performance-dec24"></a>
 
-You can use built-in dashboards to monitor the performance of your conversational AI bots. This makes it easy for you to analyze and continuously improve your self-service and automated experiences. From the Contact Lens flows performance dashboard, you can view Amazon Lex and Q in Connect bot analytics including how your customers communicate their issues, the most common contact reasons, and the outcomes of the interaction. From the dashboard, you can navigate to the bot management page and make updates in a couple clicks to improve bot accuracy. These new capabilities make it easy for you analyze the performance of your conversational AI experiences, all within the Connect Customer admin website.
+You can use built-in dashboards to monitor the performance of your conversational AI bots. This makes it easy for you to analyze and continuously improve your self-service and automated experiences. From the conversational analytics flows performance dashboard, you can view Amazon Lex and Q in Connect bot analytics including how your customers communicate their issues, the most common contact reasons, and the outcomes of the interaction. From the dashboard, you can navigate to the bot management page and make updates in a couple clicks to improve bot accuracy. These new capabilities make it easy for you analyze the performance of your conversational AI experiences, all within the Connect Customer admin website.
 
 For more information, see [Flows and conversational bot performance dashboard](flows-performance-dashboard.md).
 
@@ -1680,7 +1680,7 @@ For more information, see [Monitor automated interactions (IVR) in Connect Custo
 #### Intraday forecast dashboards
 <a name="intraday-forecast-dashboards-dec24"></a>
 
-With the Intraday forecast dashboards you can compare intraday forecasts against previously published forecasts, review projected daily performance, and receive predictions for effective staffing, all available within the Connect Customer Contact Lens dashboards. With intraday forecasts, you receive updates every 15 minutes with predictions for rest-of-day contact volumes, average queue answer time, average handle time, and, now, effective staffing. These forecasts allow you to take proactive actions to improve customer wait time and service level. For example, contact center managers can now track agent use at the queue level, enabling them to identify potential imbalances or staffing shortages and take action before wait times are impacted.
+With the Intraday forecast dashboards you can compare intraday forecasts against previously published forecasts, review projected daily performance, and receive predictions for effective staffing, all available within the Connect Customer conversational analytics dashboards. With intraday forecasts, you receive updates every 15 minutes with predictions for rest-of-day contact volumes, average queue answer time, average handle time, and, now, effective staffing. These forecasts allow you to take proactive actions to improve customer wait time and service level. For example, contact center managers can now track agent use at the queue level, enabling them to identify potential imbalances or staffing shortages and take action before wait times are impacted.
 
 This release includes a new metric: [Effective staffing](metrics-definitions.md#effective-staffing).
 
@@ -1689,24 +1689,24 @@ For more information, see [Intraday forecast performance dashboard](intraday-for
 #### Automatically categorize your contacts using generative AI
 <a name="categorize-contacts-dec24"></a>
 
-Connect Customer Contact Lens allows you to automatically categorize your contacts using generative AI, making it easy to identify top drivers, customer experience, and agent behavior for your contacts. You can provide criteria to categorize contacts in natural language, such as *Did the customer try to make a payment on their balance?*. Contact Lens then automatically labels contacts that meet the match criteria, and provides relevant points from the conversation. For more information, see [Use Generative AI to semantically match contacts with natural language statements](natural-language-semantic-match.md) and [Automatically categorize contacts by matching conversations with natural language statements, or specific words and phrases](rules.md).
+Connect Customer conversational analytics allows you to automatically categorize your contacts using generative AI, making it easy to identify top drivers, customer experience, and agent behavior for your contacts. You can provide criteria to categorize contacts in natural language, such as *Did the customer try to make a payment on their balance?*. conversational analytics then automatically labels contacts that meet the match criteria, and provides relevant points from the conversation. For more information, see [Use Generative AI to semantically match contacts with natural language statements](natural-language-semantic-match.md) and [Automatically categorize contacts by matching conversations with natural language statements, or specific words and phrases](rules.md).
 
-#### Connect Customer Contact Lens automates agent performance evaluations using generative AI
+#### Connect Customer conversational analytics automates agent performance evaluations using generative AI
 <a name="contact-lens-performance-evaluation-dec24"></a>
 
-Connect Customer Contact Lens provides you with the ability to use generative AI to automatically fill and submit agent performance evaluations. Managers can specify their evaluation criteria in natural language, and use generative AI for automating evaluations of any or all of agents' customer interactions, and get aggregated agent performance insights across cohorts of agents over time.. For more information, see [Create an evaluation form in Connect Customer](create-evaluation-forms.md).
+Connect Customer conversational analytics provides you with the ability to use generative AI to automatically fill and submit agent performance evaluations. Managers can specify their evaluation criteria in natural language, and use generative AI for automating evaluations of any or all of agents' customer interactions, and get aggregated agent performance insights across cohorts of agents over time.. For more information, see [Create an evaluation form in Connect Customer](create-evaluation-forms.md).
 
 #### Integrate WhatsApp with Connect Customer
 <a name="integrate-whatsapp-dec24"></a>
 
 You can integrate WhatsApp with Connect Customer and enable customers to use WhatsApp to message your call centers. For more information, see [Set up WhatsApp Business messaging](whatsapp-integration.md).
 
-#### Integrate Connect Customer Contact Lens with on-premise voice systems
+#### Integrate Connect Customer conversational analytics with on-premise voice systems
 <a name="contact-lens-integration-nov24"></a>
 
-You can integrate Connect Customer Contact Lens with other voice systems for real-time and post-call analytics. Using Contact Lens with your existing voice system can help you improve customer experience and agent performance. In addition, this can be a first step to migrating to a cloud contact center. You can start with Contact Lens analytics and performance insights and then at a later date migrate your agents to Connect Customer.
+You can integrate Connect Customer conversational analytics with other voice systems for real-time and post-call analytics. Using conversational analytics with your existing voice system can help you improve customer experience and agent performance. In addition, this can be a first step to migrating to a cloud contact center. You can start with conversational analytics analytics and performance insights and then at a later date migrate your agents to Connect Customer.
 
-For more information, see [Integrate Connect Customer Contact Lens with external voice systems](contact-lens-integration.md).
+For more information, see [Integrate Connect Customer conversational analytics with external voice systems](contact-lens-integration.md).
 
 ### November 2024 Updates
 <a name="nov24-release-notes"></a>
@@ -1720,7 +1720,7 @@ You can configure auto-responses, prioritize emails, create or update cases, and
 
 This release includes additional APIs. For more information, see [Email actions](https://docs.aws.amazon.com/connect/latest/APIReference/email-api.html) in the *Connect Customer API Reference Guide*.
 
-#### Connect Customer Contact Lens launches calibrations for agent performance evaluations
+#### Connect Customer conversational analytics launches calibrations for agent performance evaluations
 <a name="performance-calibrations-nov24"></a>
 
 You can conduct calibration sessions to drive consistency and accuracy in how managers evaluate agent performance. Through calibrations, you can review differences in evaluations filled by different managers to align managers on evaluation best practices and identify opportunities to improve the evaluation form. For more information, see [Calibration sessions for performance evaluations](calibrations-performance-evaluations.md).
@@ -1743,10 +1743,10 @@ You can create custom dashboards, as well as add and remove widgets from existin
 
 Your customers can request voice callbacks by sending you a chat and task, in addition to when they make voice calls. For example, if a customer reaches out after hours when no agent is available, they can request a voice callback by sending a chat message or completing a webform request (which uses tasks). Callbacks allow your customers to get a voice call from an available agent during normal business hours, without requiring them to stay on the line. For more information, see [Callbacks from a chat, task, or email contact](setup-queued-cb.md#queued-callback-chat-task).
 
-#### Monitor Connect AI agents by using CloudWatch Logs
+#### Monitor agent assist by using CloudWatch Logs
 <a name="monitor-qic-oct24"></a>
 
-To gain visibility into the real-time recommendations that Connect AI agents provides to your agents, and the customer intents it detects through natural language understanding, you can query CloudWatch Logs. For more information, see [Monitor AI agents using CloudWatch](monitor-ai-agents.md).
+To gain visibility into the real-time recommendations that agent assist provides to your agents, and the customer intents it detects through natural language understanding, you can query CloudWatch Logs. For more information, see [Monitor AI agents using CloudWatch](monitor-ai-agents.md).
 
 #### Forecasting data in Connect Customer Analytics data lake
 <a name="forecasting-data-oct24"></a>
@@ -1765,12 +1765,12 @@ You can use screen sharing with Connect Customer web and video calls, and pass c
 
 Connect Customer Chat provides SDKs for iOS and Android, allowing you to deliver native in-app chat experiences that improve customer satisfaction and reduce operational costs. These SDKs provide pre-built components for network and session management. For more information, see [Integrate Connect Customer chat into a mobile application](integrate-chat-with-mobile.md).
 
-#### Connect AI agents adds personalized guidance for agents
+#### agent assist adds personalized guidance for agents
 <a name="q-in-connect-personalized-agents-oct24"></a>
 
-Connect AI agents can recommend personalized guidance to agents using customer data from Connect Customer and other third-party CRM systems. Connect AI agents detects the customer's intent from the real-time voice or chat conversation and understands customer data to recommend what an agent should say or what action they should take.
+agent assist can recommend personalized guidance to agents using customer data from Connect Customer and other third-party CRM systems. agent assist detects the customer's intent from the real-time voice or chat conversation and understands customer data to recommend what an agent should say or what action they should take.
 
-For more information, see [Use Connect AI agents for real-time assistance](connect-ai-agent.md).
+For more information, see [Use AI agents for real-time assistance](connect-ai-agent.md).
 
 #### Added new configuration capabilities to metrics dashboards
 <a name="dashboard-metrics-oct24"></a>
@@ -1797,17 +1797,17 @@ Released the following enhancements for automated evaluations:
 + You can automatically mark a performance evaluation question as not applicable based on conversational insights (for example, detected call reason). This enables you to automatically fill and submit evaluation forms that contain situation-specific questions, for example, if the customer called to open an account, did the agent explain the account benefits and pricing?
 + Automatically fill answers to evaluation form questions using additional contact metrics such as longest hold duration, number of holds, agent interaction, and hold time.
 
-For more information, see [Create a rule in Contact Lens that submits an automated evaluation](contact-lens-rules-submit-automated-evaluation.md).
+For more information, see [Create a rule in conversational analytics that submits an automated evaluation](contact-lens-rules-submit-automated-evaluation.md).
 
 ### August 2024 Updates
 <a name="august24-release-notes"></a>
 
-#### Contact Lens supports additional languages
+#### conversational analytics supports additional languages
 <a name="cl-languages-august24"></a>
 
-Contact Lens can generate transcriptions in 10 more languages: Catalan (Spain), Danish (Denmark), Dutch (Netherlands), Finnish (Finland), Indonesian (Indonesia), Malay (Malaysia), Norwegian Bokmål (Norway), Polish (Poland), Swedish (Sweden), and Tagalog/Filipino (Philippines). These languages are not available in Connect Customer instances created in the Africa (Cape Town) AWS Region.
+conversational analytics can generate transcriptions in 10 more languages: Catalan (Spain), Danish (Denmark), Dutch (Netherlands), Finnish (Finland), Indonesian (Indonesia), Malay (Malaysia), Norwegian Bokmål (Norway), Polish (Poland), Swedish (Sweden), and Tagalog/Filipino (Philippines). These languages are not available in Connect Customer instances created in the Africa (Cape Town) AWS Region.
 
-With this launch, Contact Lens conversational analytics provides transcription support for 33 languages. For the complete list, see [AI features](supported-languages.md#supported-languages-contact-lens).
+With this launch, conversational analytics conversational analytics provides transcription support for 33 languages. For the complete list, see [AI features](supported-languages.md#supported-languages-contact-lens).
 
 #### View the Intraday forecast performance dashboard
 <a name="intraday-august24"></a>
@@ -1928,10 +1928,10 @@ You can use the outbound campaigns performance dashboard to understand the perfo
 
 You can now offer a contact in a queue to a specific agent or set of agents based on user ID; if the agent is not available within a given period of time, you can expire off the routing criteria to instead offer the contact to any available agent in queue. For more information, see [Set up routing in Connect Customer based on agent proficiencies](proficiency-routing.md).
 
-#### Connect AI agents recommends step-by-step guides
+#### agent assist recommends step-by-step guides
 <a name="qic-june24"></a>
 
-Connect AI agents, a generative-AI powered assistant for contact center agents, recommends step-by-step guides in real-time. Agents use step-by-step guides to quickly take action to resolve customer issues. For more information, see [Integrate Connect AI agents with step-by-step guides](integrate-guides-with-ai-agents.md).
+agent assist, a generative-AI powered assistant for contact center agents, recommends step-by-step guides in real-time. Agents use step-by-step guides to quickly take action to resolve customer issues. For more information, see [Integrate agent assist with step-by-step guides](integrate-guides-with-ai-agents.md).
 
 In addition, see the following new APIs that are part of this release:
 +  [CreateContentAssociation](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_CreateContentAssociation.html)
@@ -1976,7 +1976,7 @@ Time zone support in forecasts simplifies the day-to-day experience for managers
 #### Updated `AmazonConnectServiceLinkedRolePolicy` service-linked role managed policy
 <a name="wisdom-slr-may24"></a>
 
-Updated the service-linked role managed policy with the Connect AI agents API action `wisdom:ListContentAssociations`. For a description of the additional action, see [Connect Customer updates to AWS managed policies](https://docs.aws.amazon.com/connect/latest/adminguide/security_iam_awsmanpol.html#security-iam-awsmanpol-updates).
+Updated the service-linked role managed policy with the agent assist API action `wisdom:ListContentAssociations`. For a description of the additional action, see [Connect Customer updates to AWS managed policies](https://docs.aws.amazon.com/connect/latest/adminguide/security_iam_awsmanpol.html#security-iam-awsmanpol-updates).
 
 #### New flow and flow module analytics
 <a name="flow-metrics-24"></a>
@@ -1989,7 +1989,7 @@ You can use the following historical metrics for flows and flow modules to ident
 + [Maximum flow time](metrics-definitions.md#maximum-flow-time)
 + [Minimum flow time](metrics-definitions.md#minimum-flow-time)
 
-These metrics are available in the Connect Customer admin website. You can also access them programmatically by using the [https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html) API.
+These metrics are available in the Connect Customer admin website. You can also access them programmatically by using the [GetMetricDataV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html) API.
 
 You can use the [flows dashboard](flows-performance-dashboard.md) to view and compare real-time and historical aggregated performance, trends, and insights using custom-defined time periods (for example, week over week), charts, and tables. The flows dashboard can help you answer questions such as "how many contacts dropped out of my contact center before reaching a queue?" or "how long does it take for contacts to navigate through my self-service voice flow?"
 
@@ -2003,10 +2003,10 @@ You can configure rules to automatically create a task, send an email, or genera
 
 Connect Customer Cases provides attached file APIs that make it easy to upload attachments, check attachments details, and delete attachments from cases. For more information on enabling and working with attachments, see [Enable attachments](enable-attachments.md) and [Uploading Attached Files](https://docs.aws.amazon.com/connect/latest/APIReference/working-with-acps-api.html#uploading-attachments-connect-service). To view the attached file APIs, see [Files actions](https://docs.aws.amazon.com/connect/latest/APIReference/files-api.html).
 
-#### Connect Customer Contact Lens provides generative AI-powered agent performance evaluations (Preview)
+#### Connect Customer conversational analytics provides generative AI-powered agent performance evaluations (Preview)
 <a name="gen-ai-performance-evaluations24"></a>
 
-Connect Customer Contact Lens provides managers with generative AI-powered recommendations for answers to questions in agent evaluation forms, enabling them to perform evaluations faster and more accurately. For more information, see [Evaluate agent performance in Connect Customer using generative AI](generative-ai-performance-evaluations.md).
+Connect Customer conversational analytics provides managers with generative AI-powered recommendations for answers to questions in agent evaluation forms, enabling them to perform evaluations faster and more accurately. For more information, see [Evaluate agent performance in Connect Customer using generative AI](generative-ai-performance-evaluations.md).
 
 #### New metrics available on the Historical metrics page
 <a name="may24-metricsui"></a>
@@ -2060,10 +2060,10 @@ Voice contacts rejected by an agent used to have a state of `ERROR` for Contact 
 ### March 2024 Updates
 <a name="mar24-release-notes"></a>
 
-#### Contact Lens enables you to automatically fill and submit evaluations
+#### conversational analytics enables you to automatically fill and submit evaluations
 <a name="cl-automated-evaluations-mar24"></a>
 
-Contact Lens enables you to automatically fill and submit evaluations, using insights and metrics from conversational analytics. For more information on creating a rule that submits an automated evaluation, see [Create a rule in Contact Lens that submits an automated evaluation](contact-lens-rules-submit-automated-evaluation.md).
+conversational analytics enables you to automatically fill and submit evaluations, using insights and metrics from conversational analytics. For more information on creating a rule that submits an automated evaluation, see [Create a rule in conversational analytics that submits an automated evaluation](contact-lens-rules-submit-automated-evaluation.md).
 
 #### Connect Customer allows you to create rich, interactive chat experiences for customers using step-by-step guides
 <a name="guides-in-chat-mar24"></a>
@@ -2157,7 +2157,7 @@ Prompts are audio files, such as on-hold music, that can be customized and confi
 #### Connect Customer provides an API to programmatically update the priority of contacts
 <a name="customer-queues-dec23"></a>
 
-Programmatically update the priority of contacts, such as voice calls, callbacks, chats, and tasks, in addition to the existing [Change routing priority/age](change-routing-priority.md) flow block. With this API, you can update a contact's or customer's position in a queue directly from your custom monitoring dashboards. For more information, see the [https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContactRoutingData.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContactRoutingData.html) API.
+Programmatically update the priority of contacts, such as voice calls, callbacks, chats, and tasks, in addition to the existing [Change routing priority/age](change-routing-priority.md) flow block. With this API, you can update a contact's or customer's position in a queue directly from your custom monitoring dashboards. For more information, see the [UpdateContactRoutingData](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContactRoutingData.html) API.
 
 #### Route contacts according to the proficiency of agents
 <a name="routing-proficiency-dec23"></a>
@@ -2169,29 +2169,29 @@ You create and use agent proficiencies for routing a contact to the best availab
 
 Added [AWS::Connect::PredefinedAttribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-predefinedattribute.html) and [AWS::Connect::User UserProficiency](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-connect-user-userproficiency.html) Cloudformation resources.
 
-#### Connect Customer Contact Lens provides an API to programmatically search for contacts
+#### Connect Customer conversational analytics provides an API to programmatically search for contacts
 <a name="search-contacts-dec23"></a>
 
-Programmatically search for contacts using filters such as contact attributes (time range, agent, channel, queue, etc.) and keywords within a conversation. Using this API, you can build custom user interfaces that enable managers and agents to search for completed or in progress contacts. For more information, see the [https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchContacts.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchContacts.html) API.
+Programmatically search for contacts using filters such as contact attributes (time range, agent, channel, queue, etc.) and keywords within a conversation. Using this API, you can build custom user interfaces that enable managers and agents to search for completed or in progress contacts. For more information, see the [SearchContacts](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchContacts.html) API.
 
 #### Pause and resume tasks
 <a name="tasks-dec23"></a>
 
-You can pause and resume all tasks that aren't expired, disconnected, or scheduled for a later time. This enables agents to free up an active slot so they can receive more critical tasks when their current task is stalled, for example, because of a missing approval or waiting on an external input. For more information, see [Concepts: Pause and resume tasks](https://docs.aws.amazon.com/connect/latest/adminguide/concepts-pause-and-resume-tasks.html). Also see the [https://docs.aws.amazon.com/connect/latest/APIReference/API_PauseContact.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_PauseContact.html) and [https://docs.aws.amazon.com/connect/latest/APIReference/API_ResumeContact.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_ResumeContact.html) APIs.
+You can pause and resume all tasks that aren't expired, disconnected, or scheduled for a later time. This enables agents to free up an active slot so they can receive more critical tasks when their current task is stalled, for example, because of a missing approval or waiting on an external input. For more information, see [Concepts: Pause and resume tasks](https://docs.aws.amazon.com/connect/latest/adminguide/concepts-pause-and-resume-tasks.html). Also see the [PauseContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_PauseContact.html) and [ResumeContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_ResumeContact.html) APIs.
 
 #### Manage your cases and set up escalation workflows using the rules designer in the Connect Customer UI
 <a name="rules-and-cases-dec23"></a>
 
- you can create rules to automatically create a task, update a case, or send email alerts to a manager whenever a case is created or updated. In addition, you can create rules using Connect Customer Contact Lens to automatically create a case for post-conversation follow-up, such as when negative customer sentiment or specific key words are detected in a conversation.
+ you can create rules to automatically create a task, update a case, or send email alerts to a manager whenever a case is created or updated. In addition, you can create rules using Connect Customer conversational analytics to automatically create a case for post-conversation follow-up, such as when negative customer sentiment or specific key words are detected in a conversation.
 
-For more information, see [Automatically monitor and update cases in Connect Customer Cases](create-alerts-on-cases.md), [Allow Connect Customer Cases to send updates to Contact Lens rules](cases-rules-integration-onboarding.md), [Create a rule in Contact Lens that creates a case](contact-lens-rules-create-case.md), [Create a rule in Contact Lens that ends associated tasks from a case](contact-lens-rules-ends-tasks.md), and [Create a rule in Contact Lens that updates a case](contact-lens-rules-update-case.md).
+For more information, see [Automatically monitor and update cases in Connect Customer Cases](create-alerts-on-cases.md), [Allow Connect Customer Cases to send updates to conversational analytics rules](cases-rules-integration-onboarding.md), [Create a rule in conversational analytics that creates a case](contact-lens-rules-create-case.md), [Create a rule in conversational analytics that ends associated tasks from a case](contact-lens-rules-ends-tasks.md), and [Create a rule in conversational analytics that updates a case](contact-lens-rules-update-case.md).
 
 #### Get a more granular view of your Connect Customer bill and usage
 <a name="granularbilling-dec23"></a>
 
 You can get detailed billing reports in AWS Cost Explorer and AWS Cost & Usage Reports by using cost allocation tags (key:value pairs) to aggregate the data. You can gain more insights into your Connect Customer bill and better organize your bill by lines of business/departments (for example, support, banking, sales, claims), types of issues, phone numbers, environments, and more.
 
-For more information, see [Set up granular billing for a detailed view of your Connect Customer usage](granular-billing.md). Also see [https://docs.aws.amazon.com/connect/latest/APIReference/API_TagContact.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_TagContact.html) and [https://docs.aws.amazon.com/connect/latest/APIReference/API_UntagContact.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_UntagContact.html) in the *Connect Customer API Reference*.
+For more information, see [Set up granular billing for a detailed view of your Connect Customer usage](granular-billing.md). Also see [TagContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_TagContact.html) and [UntagContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_UntagContact.html) in the *Connect Customer API Reference*.
 
 #### Customer Profiles calculated attributes that turn customer data into actionable insights
 <a name="customer-profiles-calc-insights-dec23"></a>
@@ -2216,28 +2216,28 @@ Customer Profiles provides a generative AI powered customer data mapping capabil
 
 This feature allows you to create and manage the UI pages shown to agents in step-by-step guides. Using a drag-and-drop interface you are able to define static and dynamic content for the agent's UI. This includes layouts, styles, and dynamic data, which enables you to control the look and feel of your agent's experience. With this capability, you are able define what gets displayed in your agent's UI during the step-by-step guided experience. For more information, see the [Use the UI builder in Connect Customer for resources in step-by-step guides](no-code-ui-builder.md) documentation.
 
-#### Added Connect AI agents
+#### Added agent assist
 <a name="reinvent-q-nov23"></a>
 
-Connect AI agents is a generative AI customer service assistant. It is an LLM-enhanced evolution of Connect Customer Wisdom that delivers real-time recommendations to help contact center agents resolve customer issues quickly and accurately.
+Connect Customer agent assist is a generative AI customer service assistant. It is an LLM-enhanced evolution of Connect Customer Wisdom that delivers real-time recommendations to help contact center agents resolve customer issues quickly and accurately.
 
-Connect AI agents automatically detects customer intent during calls and chats using conversational analytics and natural language understanding (NLU). It then provides agents with immediate, real-time generative responses and suggested actions. It also provides links to relevant documents and articles.
+Connect Customer agent assist automatically detects customer intent during calls and chats using conversational analytics and natural language understanding (NLU). It then provides agents with immediate, real-time generative responses and suggested actions. It also provides links to relevant documents and articles.
 
-For more information, see [Use Connect AI agents for real-time assistance](connect-ai-agent.md) and the [Connect AI agents API Reference](https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/Welcome.html).
+For more information, see [Use AI agents for real-time assistance](connect-ai-agent.md) and the [agent assist API Reference](https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/Welcome.html).
 
-#### Connect Customer Contact Lens provides real-time conversational analytics for chat
+#### Connect Customer conversational analytics provides real-time conversational analytics for chat
 <a name="reinvent-realtimechat-nov23"></a>
 
-Contact Lens provides real-time conversational analytics for chat, extending the machine learning-powered post-contact analytics (for example, sentiment analysis, automated contact categorization, and more) to real-time contact scenarios. These capabilities enable contact center managers to help detect customer issues during in-progress chat contacts, and help them resolve customer issues faster. For example, managers can get a real-time email alert when customer sentiment for a chat contact turns negative, allowing them to join the in-progress contact and help resolve the customer issue.
+conversational analytics provides real-time conversational analytics for chat, extending the machine learning-powered post-contact analytics (for example, sentiment analysis, automated contact categorization, and more) to real-time contact scenarios. These capabilities enable contact center managers to help detect customer issues during in-progress chat contacts, and help them resolve customer issues faster. For example, managers can get a real-time email alert when customer sentiment for a chat contact turns negative, allowing them to join the in-progress contact and help resolve the customer issue.
 
-For more information, see [Analyze conversations using conversational analytics in Connect Customer Contact Lens](analyze-conversations.md). In addition, see the [https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRealtimeContactAnalysisSegmentsV2.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRealtimeContactAnalysisSegmentsV2.html) action in the *Connect Customer API Reference*.
+For more information, see [Analyze conversations using conversational analytics in Connect Customer conversational analytics](analyze-conversations.md). In addition, see the [ListRealtimeContactAnalysisSegmentsV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRealtimeContactAnalysisSegmentsV2.html) action in the *Connect Customer API Reference*.
 
-#### Connect Customer Contact Lens provides generative AI-powered post-contact summaries (Preview)
+#### Connect Customer conversational analytics provides generative AI-powered post-contact summaries (Preview)
 <a name="reinvent-generative-ai-summarization-nov23"></a>
 
-Contact Lensprovides generative AI-powered post-contact summaries, enabling contact center managers to more efficiently monitor and help improve contact quality and agent performance.
+conversational analyticsprovides generative AI-powered post-contact summaries, enabling contact center managers to more efficiently monitor and help improve contact quality and agent performance.
 
-Contact Lens already labels parts of contact transcripts as issue, outcome, and action item. With this launch, Contact Lens condenses a long customer conversation into a concise and coherent summary (for example, customer didn't receive reimbursement for last minute flight cancellation, and the agent didn't offer partial reimbursement as per the SOP). This enables managers to help reduce the overall time spent on evaluating contact quality and agent performance, as they no longer have to read long contact transcripts or listen to call recordings.
+conversational analytics already labels parts of contact transcripts as issue, outcome, and action item. With this launch, conversational analytics condenses a long customer conversation into a concise and coherent summary (for example, customer didn't receive reimbursement for last minute flight cancellation, and the agent didn't offer partial reimbursement as per the SOP). This enables managers to help reduce the overall time spent on evaluating contact quality and agent performance, as they no longer have to read long contact transcripts or listen to call recordings.
 
 For more information, see [View generative AI-powered post-contact summaries in Connect Customer](view-generative-ai-contact-summaries.md).
 
@@ -2246,7 +2246,7 @@ For more information, see [View generative AI-powered post-contact summaries in 
 
 The Connect Customer in-app, web, and video calling capabilities enable your customers to contact you without ever leaving your web or mobile application. You can use these capabilities to pass contextual information to Connect Customer. This enables you to personalize the customer experience based on attributes such as the customer's profile or other information, like actions previously taken within the app.
 
-For more information, see [Set up in-app, web, video calling, and screen sharing capabilities](inapp-calling.md). In addition, see the [https://docs.aws.amazon.com/connect/latest/APIReference/API_StartWebRTCContact.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartWebRTCContact.html) action in the *Connect Customer API Reference*.
+For more information, see [Set up in-app, web, video calling, and screen sharing capabilities](inapp-calling.md). In addition, see the [StartWebRTCContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartWebRTCContact.html) action in the *Connect Customer API Reference*.
 
 #### Connect Customer supports two-way SMS
 <a name="reinvent-sms-nov23"></a>
@@ -2266,14 +2266,14 @@ For more information, see [Set up SMS messaging in Connect Customer](setup-sms-m
 #### Analytics data lake (Preview)
 <a name="reinvent-analytics-datalake-preview-nov23"></a>
 
-You can use Analytics data lake as a central location to query various types of data from Connect Customer. This data includes contact records and Contact Lens conversational analytics. Data is refreshed around every 24 hours. You can use the Analytics data lake to create custom reports or run SQL queries.
+You can use Analytics data lake as a central location to query various types of data from Connect Customer. This data includes contact records and conversational analytics conversational analytics. Data is refreshed around every 24 hours. You can use the Analytics data lake to create custom reports or run SQL queries.
 
 For more information, see [Access Connect Customer data lake](access-datalake.md). In addition, see new actions in the [Analytics data lake actions](https://docs.aws.amazon.com/connect/latest/APIReference/analyticsdataset-api.html) topic in the *Connect Customer API Reference*.
 
 #### Added metrics to the `GetMetricDataV2` action
 <a name="reinvent-metrics-nov23"></a>
 
-Added the following agent and contact performance metrics to the [https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html) action:
+Added the following agent and contact performance metrics to the [GetMetricDataV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html) action:
 + [After contact work time](metrics-definitions.md#after-contact-work-time)
 + [Agent interaction and hold time](metrics-definitions.md#agent-interaction-and-hold-time)
 + [Agent interaction time](metrics-definitions.md#agent-interaction-time)
@@ -2307,12 +2307,12 @@ Service Quotas allows you to view both default and applied quota values for reso
 #### Added an action to `AmazonConnectServiceLinkedRolePolicy`
 <a name="wisdom-putfeedback-nov23"></a>
 
-Updated `AmazonConnectServiceLinkedRolePolicy` with an action for Connect AI agents. For a description of the additional action, see [Connect Customer updates to AWS managed policies](security_iam_awsmanpol.md#security-iam-awsmanpol-updates).
+Updated `AmazonConnectServiceLinkedRolePolicy` with an action for Connect Customer agent assist. For a description of the additional action, see [Connect Customer updates to AWS managed policies](security_iam_awsmanpol.md#security-iam-awsmanpol-updates).
 
-#### Connect Customer provides a Contact Lens conversational analytics dashboard
+#### Connect Customer provides a conversational analytics conversational analytics dashboard
 <a name="conversational-analytics-dashboard-nov23"></a>
 
-Connect Customer provides a pre-built Contact Lens conversational analytics dashboard that enables customers to understand why customers are contacting, the trends of contact drivers over time, and the performance of each of those call drivers (for example, average handle time for call driver "where's my stuff?"). For more information, see [Contact Lens conversational analytics dashboard](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-conversational-analytics-dashboard.html).
+Connect Customer provides a pre-built conversational analytics conversational analytics dashboard that enables customers to understand why customers are contacting, the trends of contact drivers over time, and the performance of each of those call drivers (for example, average handle time for call driver "where's my stuff?"). For more information, see [conversational analytics conversational analytics dashboard](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-conversational-analytics-dashboard.html).
 
 #### Connect Customer provides a pre-built queue performance dashboard
 <a name="queue-performance-dashboard-nov23"></a>
@@ -2332,12 +2332,12 @@ You can integrate Connect Customer with your preferred file scanning application
 #### Connect Customer outbound campaigns voice dialing API
 <a name="outbound-campaigns-api-nov23"></a>
 
-You can create contacts for all high-volume voice outreach by using the [https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchPutContact.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchPutContact.html) API. This API makes it easier for you to track outcomes of all campaign calls by using the Connect Customer [contact record](ctr-data-model.md#ctr-ContactTraceRecord).
+You can create contacts for all high-volume voice outreach by using the [BatchPutContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchPutContact.html) API. This API makes it easier for you to track outcomes of all campaign calls by using the Connect Customer [contact record](ctr-data-model.md#ctr-ContactTraceRecord).
 
 #### Connect Customer Cases supports author name on comments
 <a name="outbound-campaigns-slr-nov23"></a>
 
-You can programmatically add and view author comments by using the [https://docs.aws.amazon.com/cases/latest/APIReference/API_CreateRelatedItem.html](https://docs.aws.amazon.com/cases/latest/APIReference/API_CreateRelatedItem.html) and [https://docs.aws.amazon.com/cases/latest/APIReference/API_SearchRelatedItems.html](https://docs.aws.amazon.com/cases/latest/APIReference/API_SearchRelatedItems.html) APIs.
+You can programmatically add and view author comments by using the [CreateRelatedItem](https://docs.aws.amazon.com/cases/latest/APIReference/API_CreateRelatedItem.html) and [SearchRelatedItems](https://docs.aws.amazon.com/cases/latest/APIReference/API_SearchRelatedItems.html) APIs.
 
 #### Updated `AmazonConnectCampaignsServiceLinkedRolePolicy` service-linked role managed policy
 <a name="outbound-campaigns-slr-nov23"></a>
@@ -2347,7 +2347,7 @@ Updated the service-linked role managed policy for outbound campaigns. For a des
 #### Added Create persistent chat association flow block and CreatePersistentContactAssociation API
 <a name="persistentchat-nov23"></a>
 
-You can set up a chat to be persistent either when the chat session is initially created or at any time during the lifetime of the chat. To set up persistent chat after the chat session has started, use the new [https://docs.aws.amazon.com/connect/latest/APIReference/API_CreatePersistentContactAssociation.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreatePersistentContactAssociation.html) API or include the new [Create persistent contact association](create-persistent-contact-association-block.md) block in your flow.
+You can set up a chat to be persistent either when the chat session is initially created or at any time during the lifetime of the chat. To set up persistent chat after the chat session has started, use the new [CreatePersistentContactAssociation](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreatePersistentContactAssociation.html) API or include the new [Create persistent contact association](create-persistent-contact-association-block.md) block in your flow.
 
 #### Optimization to how the CCP detects and handles stale WebSocket connections
 <a name="optimization-nov23"></a>
@@ -2361,17 +2361,17 @@ Connect Customer can identify, within about 2 minutes, a situation where a chat 
 
 Added `AmazonConnectSynchronizationServiceRolePolicy` service-linked role policy and `AWSServiceRoleForAmazonConnectSynchronization` service-linked role for managed synchronization. The policy and role provide access to read, create, update, and delete Connect Customer resources and is used to automatically synchronize AWS resources across AWS regions. For more information, see [AWS managed policy: AmazonConnectSynchronizationServiceRolePolicy](security_iam_awsmanpol.md#amazonconnectsynchronizationservicerolepolicy) and [Using service-linked roles for Connect Customer Managed Synchronization](managed-synchronization-slr.md).
 
-#### Added Contact Lens conversational analytics metrics to the GetMetricDataV2 API
+#### Added conversational analytics conversational analytics metrics to the GetMetricDataV2 API
 <a name="resiliency-nov23"></a>
 
-You can analyze aggregate agent and contact performance using Contact Lens conversational analytics metrics in the [https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html). The following new metrics were added: **non-talk time percent**, **talk time percent**, **talk time agent percent**, and **talk time customer percent**. For descriptions of these metrics, see [Metric definitions in Connect Customer](metrics-definitions.md).
+You can analyze aggregate agent and contact performance using conversational analytics conversational analytics metrics in the [GetMetricDataV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html). The following new metrics were added: **non-talk time percent**, **talk time percent**, **talk time agent percent**, and **talk time customer percent**. For descriptions of these metrics, see [Metric definitions in Connect Customer](metrics-definitions.md).
 
 #### Added configuration management across AWS Regions for Connect Customer Global Resiliency customers
 <a name="resiliency-nov23"></a>
 
-Connect Customer Global Resiliency customers can use the [https://docs.aws.amazon.com/connect/latest/APIReference/API_ReplicateInstance.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_ReplicateInstance.html) API to copy configuration information for resources such as users, routing profiles, queues, and flows across AWS Regions. The API also automatically matches the service quotas for these resources across AWS Regions as part of the replication process. For more information, see [Create a replica of your existing Connect Customer instance](create-replica-connect-instance.md).
+Connect Customer Global Resiliency customers can use the [ReplicateInstance](https://docs.aws.amazon.com/connect/latest/APIReference/API_ReplicateInstance.html) API to copy configuration information for resources such as users, routing profiles, queues, and flows across AWS Regions. The API also automatically matches the service quotas for these resources across AWS Regions as part of the replication process. For more information, see [Create a replica of your existing Connect Customer instance](create-replica-connect-instance.md).
 
-Added the [https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchGetFlowAssociation.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchGetFlowAssociation.html) API. Use this API to obtain a list of flow-associations for the resource identifiers provided in the API request. For example, you can list which phone numbers are associated with which flows in an Connect Customer instance.
+Added the [BatchGetFlowAssociation](https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchGetFlowAssociation.html) API. Use this API to obtain a list of flow-associations for the resource identifiers provided in the API request. For example, you can list which phone numbers are associated with which flows in an Connect Customer instance.
 
 ### October 2023 Updates
 <a name="oct23-release-notes"></a>
@@ -2390,14 +2390,14 @@ You can integrate third-party applications into the agent workspace. For more in
 <a name="wisdom-2-oct23"></a>
 
 **Note**
-In November 2023 we released Amazon Q. It includes real-time agent assist functionality formerly known as Connect Customer Wisdom, along with generative AI-powered recommended responses, actions, and links to more information.
+In November 2023, we released real-time agent assist functionality (formerly known as Amazon Q in Connect and Amazon Connect Wisdom), along with generative AI-powered recommended responses, actions, and links to more information.
 
  Updated `AmazonConnectServiceLinkedRolePolicy` with actions for Connect Customer Wisdom. For a description of the additional actions, see [Connect Customer updates to AWS managed policies](security_iam_awsmanpol.md#security-iam-awsmanpol-updates).
 
 #### Added the UpdatePhoneNumberMetadata API
 <a name="phoneapi-oct23"></a>
 
-Use the [https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdatePhoneNumberMetadata.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdatePhoneNumberMetadata.html) to update the metadata for a phone number, such as the phone number description.
+Use the [UpdatePhoneNumberMetadata](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdatePhoneNumberMetadata.html) to update the metadata for a phone number, such as the phone number description.
 
 #### Add as many as four access control tags to a single security profile
 <a name="sec-profile-access-tags-oct23"></a>
@@ -2422,7 +2422,7 @@ You can create and customize up to 15 communications widgets per Connect Custome
 #### Access the trailing 90 days of historical agent and contact metrics
 <a name="getmetricdatav2-oct23"></a>
 
-You can access the trailing 90 days of historical agent and contact metrics (for example, [Service level *X*](metrics-definitions.md#service-level), [Average handle time](metrics-definitions.md#average-handle-time)) by using the [https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html) API. You can also make requests spanning up to 35 days with data categorized by customizable time intervals such as 15 minutes, hourly, or weekly.
+You can access the trailing 90 days of historical agent and contact metrics (for example, [Service level *X*](metrics-definitions.md#service-level), [Average handle time](metrics-definitions.md#average-handle-time)) by using the [GetMetricDataV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html) API. You can also make requests spanning up to 35 days with data categorized by customizable time intervals such as 15 minutes, hourly, or weekly.
 
 In addition, added the following metrics to the `GetMetricDataV2` API. These metrics are not available in Connect Customer admin website.
 + [Abandonment rate](metrics-definitions.md#abandonment-rate)
@@ -2435,7 +2435,7 @@ In addition, added the following metrics to the `GetMetricDataV2` API. These met
 <a name="wisdom-oct23"></a>
 
 **Note**
-In November 2023 we released Amazon Q. It includes real-time agent assist functionality formerly known as Connect Customer Wisdom, along with generative AI-powered recommended responses, actions, and links to more information.
+In November 2023, we released real-time agent assist functionality (formerly known as Amazon Q in Connect and Amazon Connect Wisdom), along with generative AI-powered recommended responses, actions, and links to more information.
 
 Updated `AmazonConnectServiceLinkedRolePolicy` with actions for Connect Customer Wisdom. For a description of the additional actions, see [Connect Customer updates to AWS managed policies](security_iam_awsmanpol.md#security-iam-awsmanpol-updates).
 
@@ -2450,7 +2450,7 @@ Released Connect Customer Client Application v1.0.2.38. This version contains mi
 #### Added "View my contacts" permission
 <a name="viewmycontact-sept23"></a>
 
-Added a new security profile permission: View my contacts. On the **Contact search** page, agents who have this permission can access the contacts that they've handled. If you're using Contact Lens, agents can also review the analyzed recording and transcripts of the contact. For more information, see [Assign permissions to use Contact Lens conversational analytics in Connect Customer](permissions-for-contact-lens.md).
+Added a new security profile permission: View my contacts. On the **Contact search** page, agents who have this permission can access the contacts that they've handled. If you're using conversational analytics, agents can also review the analyzed recording and transcripts of the contact. For more information, see [Assign permissions to use conversational analytics in Connect Customer](permissions-for-contact-lens.md).
 
 #### Streams API upgrade for third-party cookies
 <a name="streamsapi-sept23"></a>
@@ -2509,7 +2509,7 @@ Connect Customer supports Universal International Freephone number (UIFN) in mor
 #### Voice dialing for outbound campaigns, no agents required
 <a name="campaigns-august23"></a>
 
-You can use Connect Customer outbound campaigns for high-volume outreach with no agents required. A new dialer type called "Agentless" makes it easier to proactively communicate with your customers for use cases such as personalized voice notifications and appointment reminders. For more information, see [Create an outbound campaign](https://docs.aws.amazon.com/connect/latest/adminguide/how-to-create-campaigns.html) and the [https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API_CreateCampaign.html](https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API_CreateCampaign.html) API.
+You can use Connect Customer outbound campaigns for high-volume outreach with no agents required. A new dialer type called "Agentless" makes it easier to proactively communicate with your customers for use cases such as personalized voice notifications and appointment reminders. For more information, see [Create an outbound campaign](https://docs.aws.amazon.com/connect/latest/adminguide/how-to-create-campaigns.html) and the [CreateCampaign](https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API_CreateCampaign.html) API.
 
 #### Connect Customer Cases supports nine additional languages
 <a name="cases-august23"></a>
@@ -2541,11 +2541,11 @@ Released the following Connect Customer Global Resiliency capabilities for gener
 + Custom and embedded Contact Control Panel enhancements that enable agents to process contacts from their current active Region without needing to know which Region is active at any given time.
 
 For more information, see [Set up your agent's experience with Connect Customer Global Resiliency](overview-agent-distribution.md). Also see the following new APIs:
-+ [https://docs.aws.amazon.com/connect/latest/APIReference/API_AssociateTrafficDistributionGroupUser.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_AssociateTrafficDistributionGroupUser.html)
-+ [https://docs.aws.amazon.com/connect/latest/APIReference/API_DisassociateTrafficDistributionGroupUser.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_DisassociateTrafficDistributionGroupUser.html)
-+ [https://docs.aws.amazon.com/connect/latest/APIReference/API_ListTrafficDistributionGroupUsers.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListTrafficDistributionGroupUsers.html)
++ [AssociateTrafficDistributionGroupUser](https://docs.aws.amazon.com/connect/latest/APIReference/API_AssociateTrafficDistributionGroupUser.html)
++ [DisassociateTrafficDistributionGroupUser](https://docs.aws.amazon.com/connect/latest/APIReference/API_DisassociateTrafficDistributionGroupUser.html)
++ [ListTrafficDistributionGroupUsers](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListTrafficDistributionGroupUsers.html)
 
-Updated [https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateTrafficDistribution.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateTrafficDistribution.html) with `SignInConfig` and `AgentConfig` parameters.
+Updated [UpdateTrafficDistribution](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateTrafficDistribution.html) with `SignInConfig` and `AgentConfig` parameters.
 
 To create a CloudFormation template for traffic distribution groups, see the following topic:
 + [AWS::Connect::TrafficDistributionGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-trafficdistributiongroup.html)
@@ -2639,16 +2639,16 @@ The Connect Customer Client Application is used to [record agent screens](agent-
 
 Case assignment helps organizations reduce the time to resolve customer issues by clearly tracking case activities and resolution ownership. Agents can associate a case with a queue or an individual agent for resolution. Agents can view and filter cases assigned to their queue, and managers can directly assign cases to individual agents. For more information, see [Set up a case assignment in Connect Customer Cases](case-assignment.md).
 
-#### Contact Lens Conversational Analytics metrics in the API
+#### conversational analytics Conversational Analytics metrics in the API
 <a name="contact-lens-conversational-analytics-july23"></a>
 
-You can analyze aggregate agent and contact performance using Contact Lens Conversational Analytics metrics in the [GetMetricDataV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html) API. The list of metrics include Average contact duration, Average conversation duration, Average greeting time agent, Average holds, Average interruptions agent, Average interruption time agent, Average non-talk time, Average talk time, Average talk time agent, and Average talk time customer. For more information, see [Metric definitions in Connect Customer](metrics-definitions.md) and [https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html).
+You can analyze aggregate agent and contact performance using conversational analytics Conversational Analytics metrics in the [GetMetricDataV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html) API. The list of metrics include Average contact duration, Average conversation duration, Average greeting time agent, Average holds, Average interruptions agent, Average interruption time agent, Average non-talk time, Average talk time, Average talk time agent, and Average talk time customer. For more information, see [Metric definitions in Connect Customer](metrics-definitions.md) and [GetMetricDataV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html).
 
 #### Connect Customer Wisdom supports real-time recommendations for chat conversations
 <a name="wisdom-july23"></a>
 
 **Note**
-In November 2023 we released Amazon Q. It includes real-time agent assist functionality formerly known as Connect Customer Wisdom, along with generative AI-powered recommended responses, actions, and links to more information.
+In November 2023, we released real-time agent assist functionality (formerly known as Amazon Q in Connect and Amazon Connect Wisdom), along with generative AI-powered recommended responses, actions, and links to more information.
 
 Connect Customer Wisdom delivers ML-powered, real-time recommended information to help chat agents quickly solve customer needs.
 
@@ -2658,7 +2658,7 @@ Connect Customer Wisdom delivers ML-powered, real-time recommended information t
 You can delete queues and routing profiles programmatically. For more information, see the following topics:
 + [DeleteQueue](https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteQueue.html) action
 + [delete-queue](https://docs.aws.amazon.com/cli/latest/reference/connect/delete-queue.html) AWS CLI
-+ [https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteRoutingProfile.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteRoutingProfile.html) action
++ [DeleteRoutingProfile](https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteRoutingProfile.html) action
 + [delete-routing-profile](https://docs.aws.amazon.com/cli/latest/reference/connect/delete-routing-profile.html) AWS CLI
 
 To create an CloudFormation template for queues and routing profiles, see the following topics:
@@ -2681,19 +2681,19 @@ Connect Customer Chat supports new interactive message types: quick replies and 
 #### GetMetricDataV2 API: Region availability and new functionality
 <a name="GetMetricDataV2-june23"></a>
 
-The [https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html) API is available in the AWS GovCloud (US-West) Region. GetMetricDataV2 is now released in all AWS Regions where Connect Customer is offered. This API enables you to access the trailing 35 days of historical agent and contact metrics (for example, service level, average handle time) with customizable filters and groupings.
+The [GetMetricDataV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html) API is available in the AWS GovCloud (US-West) Region. GetMetricDataV2 is now released in all AWS Regions where Connect Customer is offered. This API enables you to access the trailing 35 days of historical agent and contact metrics (for example, service level, average handle time) with customizable filters and groupings.
 
-You can use GetMetricDataV2 to build custom dashboards to measure queue and agent performance over time. For example, you can identify the number of contacts that were disconnected by an agent versus disconnected by a customer hanging up. For more information, see [https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html).
+You can use GetMetricDataV2 to build custom dashboards to measure queue and agent performance over time. For example, you can identify the number of contacts that were disconnected by an agent versus disconnected by a customer hanging up. For more information, see [GetMetricDataV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html).
 
 #### Search for existing tags within an Connect Customer instance
 <a name="searchresourcetags-api-june23"></a>
 
-Connect Customer provides the ability to search for existing tags within an instance, both programmatically via API and within the UI. When tagging resources, you can search from pre-existing key:value pairs before creating new ones. For more information, see the [https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchResourceTags.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchResourceTags.html) API.
+Connect Customer provides the ability to search for existing tags within an instance, both programmatically via API and within the UI. When tagging resources, you can search from pre-existing key:value pairs before creating new ones. For more information, see the [SearchResourceTags](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchResourceTags.html) API.
 
-#### Added screen recording capabilities to Contact Lens
+#### Added screen recording capabilities to conversational analytics
 <a name="screen-recording-june23"></a>
 
-Connect Customer Contact Lens provides screen recording capabilities, making it easy for you to help agents improve their performance. With screen recording, you can identify areas for agent coaching (for example, long contact handle duration or non-compliance with business processes) by not only listening to customer calls or reviewing chat transcripts, but also watching the agent's actions while they are handling a contact. For more information, see [Set up and review agent screen recordings in Connect Customer](agent-screen-recording.md).
+Connect Customer conversational analytics provides screen recording capabilities, making it easy for you to help agents improve their performance. With screen recording, you can identify areas for agent coaching (for example, long contact handle duration or non-compliance with business processes) by not only listening to customer calls or reviewing chat transcripts, but also watching the agent's actions while they are handling a contact. For more information, see [Set up and review agent screen recordings in Connect Customer](agent-screen-recording.md).
 
 #### Connect Customer scheduling allows agents to manage time off requests
 <a name="agent-time-off-scheduling-june23"></a>
@@ -2708,10 +2708,10 @@ Connect Customer Customer Profiles supports real-time data export of unified cus
 ### May 2023 Updates
 <a name="may23-release-notes"></a>
 
-#### Added theme detection to Contact Lens
+#### Added theme detection to conversational analytics
 <a name="themedetection-may23"></a>
 
-Contact Lens provides a machine learning powered capability for businesses to help identify top contact drivers by grouping customer conversations into themes. For more information, see [Use theme detection in Connect Customer Contact Lens to discover issues with contacts](use-theme-detection.md).
+conversational analytics provides a machine learning powered capability for businesses to help identify top contact drivers by grouping customer conversations into themes. For more information, see [Use theme detection in Connect Customer conversational analytics to discover issues with contacts](use-theme-detection.md).
 
 #### New APIs for managing prompts
 <a name="prompt-apis-may23"></a>
@@ -2721,7 +2721,7 @@ You can programmatically create and manage prompts using APIs, for example, to e
 #### Added supervisor alerts on agent performance
 <a name="alert-supervisors-may23"></a>
 
-Connect Customer Contact Lens provides supervisor alerts on agent performance. This enables you to identify which contacts (for example, those with an evaluation score less < 50%) that require supervisors follow-up with agents on their team. For more information, see [Notify supervisors and agents about performance evaluations](create-evaluation-rules.md).
+Connect Customer conversational analytics provides supervisor alerts on agent performance. This enables you to identify which contacts (for example, those with an evaluation score less < 50%) that require supervisors follow-up with agents on their team. For more information, see [Notify supervisors and agents about performance evaluations](create-evaluation-rules.md).
 
 #### Interactive messages: Rich formatting in chat titles and subtitles
 <a name="interactive-messages-may23"></a>
@@ -2745,7 +2745,7 @@ To manage evaluation forms programmatically, see the [Evaluation](https://docs.a
 #### New API: Use `CreateParticipant` to customize chat flow experiences
 <a name="chat-apr23"></a>
 
-Added the [https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateParticipant.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateParticipant.html) API which you can use to customize chat flow experiences. You use it to integrate custom participants. For more information, see [Customize chat flow experiences in Connect Customer by integrating custom participants](chat-customize-flow.md).
+Added the [CreateParticipant](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateParticipant.html) API which you can use to customize chat flow experiences. You use it to integrate custom participants. For more information, see [Customize chat flow experiences in Connect Customer by integrating custom participants](chat-customize-flow.md).
 
 #### Customer Profiles displays case information in the agent workspace
 <a name="agent-workspace-case-info-apr23"></a>
@@ -2757,7 +2757,7 @@ Using Connect Customer Customer Profiles inside the agent workspace, agents can 
 
 You can configure an agent's routing profile to receive contacts from multiple channels at the same time. For example, while an agent is on a voice contact, they can be offered contacts from any other channels enabled in the routing profile, such as chats and tasks.
 
-For more information, see [Create a routing profile in Connect Customer to link queues to agents](routing-profiles.md). Also see the [https://docs.aws.amazon.com/connect/latest/APIReference/API_CrossChannelBehavior.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_CrossChannelBehavior.html) API.
+For more information, see [Create a routing profile in Connect Customer to link queues to agents](routing-profiles.md). Also see the [CrossChannelBehavior](https://docs.aws.amazon.com/connect/latest/APIReference/API_CrossChannelBehavior.html) API.
 
 #### Set Voice ID block supports fraud watchlist ID
 <a name="set-voiceid-apr23"></a>
@@ -2776,9 +2776,9 @@ Schedulers can quickly search, sort, and filter agent schedules from within the 
 <a name="wisdom-mar23"></a>
 
 **Note**
-In November 2023 we released Amazon Q. It includes real-time agent assist functionality formerly known as Connect Customer Wisdom, along with generative AI-powered recommended responses, actions, and links to more information.
+In November 2023, we released real-time agent assist functionality (formerly known as Amazon Q in Connect and Amazon Connect Wisdom), along with generative AI-powered recommended responses, actions, and links to more information.
 
-You can choose Microsoft SharePoint Online as knowledge base for Wisdom articles. For more information, see [Initial set-up for AI agents](ai-agent-initial-setup.md). Also see the [https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_AppIntegrationsConfiguration.html](https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_AppIntegrationsConfiguration.html) API in the *Connect AI agents API Reference*.
+You can choose Microsoft SharePoint Online as knowledge base for Wisdom articles. For more information, see [Initial set-up for AI agents](ai-agent-initial-setup.md). Also see the [AppIntegrationsConfiguration](https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_AppIntegrationsConfiguration.html) API in the *Connect Customer agent assist API Reference*.
 
 #### Create step-by-step guides for your agents
 <a name="step-by-step-guides-mar23"></a>
@@ -2823,7 +2823,7 @@ With a panel template, you can present customers with up to 10 choices under one
 #### Added `GetMetricDataV2` API
 <a name="getmetricdatav2-mar23"></a>
 
-Added the [GetMetricDataV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html) API to the *Connect Customer API Reference Guide*. This API enables you to programmatically access trailing 14 days of historical agent and contact metrics data. It extends the capabilities of the [https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricData.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricData.html) API, provides new [historical metrics](https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html) (for example, the number of [contacts disconnected](https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html#contacts-disconnected), and the number of [callback attempts](https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html#callback-attempts)), and provides the ability to filter metrics with more granularity.
+Added the [GetMetricDataV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html) API to the *Connect Customer API Reference Guide*. This API enables you to programmatically access trailing 14 days of historical agent and contact metrics data. It extends the capabilities of the [GetMetricData](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricData.html) API, provides new [historical metrics](https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html) (for example, the number of [contacts disconnected](https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html#contacts-disconnected), and the number of [callback attempts](https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html#callback-attempts)), and provides the ability to filter metrics with more granularity.
 
 ### February 2023 Updates
 <a name="feb23-release-notes"></a>
@@ -2831,17 +2831,17 @@ Added the [GetMetricDataV2](https://docs.aws.amazon.com/connect/latest/APIRefere
 #### Added new attribute type `ENHANCED_CONTACT_MONITORING` to the Describe, List, and Update Instance Attribute APIs
 <a name="enhanced-monitoring-feb23"></a>
 
-This release updates the APIs: `DescribeInstanceAttribute`, `ListInstanceAttributes`, and `UpdateInstanceAttribute`. You can use it to programmatically enable/disable enhanced contact monitoring using attribute type `ENHANCED_CONTACT_MONITORING` on the specified Amazon Connect instance. For more information, see [https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeInstanceAttribute.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeInstanceAttribute.html), [https://docs.aws.amazon.com/connect/latest/APIReference/API_ListInstanceAttributes.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListInstanceAttributes.html), and [https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateInstanceAttribute.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateInstanceAttribute.html).
+This release updates the APIs: `DescribeInstanceAttribute`, `ListInstanceAttributes`, and `UpdateInstanceAttribute`. You can use it to programmatically enable/disable enhanced contact monitoring using attribute type `ENHANCED_CONTACT_MONITORING` on the specified Amazon Connect instance. For more information, see [DescribeInstanceAttribute](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeInstanceAttribute.html), [ListInstanceAttributes](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListInstanceAttributes.html), and [UpdateInstanceAttribute](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateInstanceAttribute.html).
 
 #### Added the `DeleteDomain` API for Cases
 <a name="cases-feb23"></a>
 
-For more information, see the [https://docs.aws.amazon.com/cases/latest/APIReference/API_DeleteDomain.html](https://docs.aws.amazon.com/cases/latest/APIReference/API_DeleteDomain.html) API in the *Connect Customer Cases API Reference Guide*.
+For more information, see the [DeleteDomain](https://docs.aws.amazon.com/cases/latest/APIReference/API_DeleteDomain.html) API in the *Connect Customer Cases API Reference Guide*.
 
 #### Added `RelatedContactId` to `StartTaskContact` API
 <a name="tasks-feb23"></a>
 
-You can link together an unlimited number of task contacts using the `RelatedContactID` parameter supported in the `StartTaskContact` API. For more information, see [Linked tasks](https://docs.aws.amazon.com/connect/latest/adminguide/tasks.html#linked-tasks) and the [https://docs.aws.amazon.com/connect/latest/APIReference/API_StartTaskContact.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartTaskContact.html) API in the *Connect Customer API Reference Guide*.
+You can link together an unlimited number of task contacts using the `RelatedContactID` parameter supported in the `StartTaskContact` API. For more information, see [Linked tasks](https://docs.aws.amazon.com/connect/latest/adminguide/tasks.html#linked-tasks) and the [StartTaskContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartTaskContact.html) API in the *Connect Customer API Reference Guide*.
 
 #### Connect Customer Cases integrates with AWS PrivateLink
 <a name="cases-privatelink-feb23"></a>
@@ -2879,9 +2879,9 @@ You can use CloudFormation templates to manage Connect Customer instances for as
 #### Added long lasting, persistent chat experiences
 <a name="chat-jan23"></a>
 
-Connect Customer makes it easier for you to deliver long lasting, persistent chat experiences for your customers. Persistent chats enable customers to resume previous conversations with the context, metadata, and transcripts carried over, eliminating the need for customers to repeat themselves and allowing agents to provide personalized service with access to the entire conversation history. To set up persistent chat experiences, provide a previous contact ID when calling the [https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html) API to create a new chat contact.
+Connect Customer makes it easier for you to deliver long lasting, persistent chat experiences for your customers. Persistent chats enable customers to resume previous conversations with the context, metadata, and transcripts carried over, eliminating the need for customers to repeat themselves and allowing agents to provide personalized service with access to the entire conversation history. To set up persistent chat experiences, provide a previous contact ID when calling the [StartChatContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html) API to create a new chat contact.
 
-For more information, see [Enable persistent chat](https://docs.aws.amazon.com/connect/latest/adminguide/chat-persistence.html). Also see changes to [https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html) in the *Connect Customer API Reference Guide*, and see the new `RelatedContactId` parameter in the [https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_GetTranscript.html](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_GetTranscript.html) API in the *Connect Customer Participant Service API Reference Guide*.
+For more information, see [Enable persistent chat](https://docs.aws.amazon.com/connect/latest/adminguide/chat-persistence.html). Also see changes to [StartChatContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html) in the *Connect Customer API Reference Guide*, and see the new `RelatedContactId` parameter in the [GetTranscript](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_GetTranscript.html) API in the *Connect Customer Participant Service API Reference Guide*.
 
 ### December 2022 Updates
 <a name="dec22-release-notes"></a>
@@ -2889,12 +2889,12 @@ For more information, see [Enable persistent chat](https://docs.aws.amazon.com/c
 #### Added message receipts feature for chat messages
 <a name="messages-dec-2022"></a>
 
-The message receipts feature allows customers to receive *Message delivered* and *Read* receipts after they send a chat message. For more information, see [Enable message Delivered and Read receipts in your chat user interface](https://docs.aws.amazon.com/connect/latest/adminguide/message-receipts.html). Also see the [https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_SendEvent.html](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_SendEvent.html) action, and the [https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_Item.html](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_Item.html), [https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_MessageMetadata.html](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_MessageMetadata.html), and [https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_Receipt.html](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_Receipt.html) data types in the *Connect Customer Participant Service API Reference Guide*.
+The message receipts feature allows customers to receive *Message delivered* and *Read* receipts after they send a chat message. For more information, see [Enable message Delivered and Read receipts in your chat user interface](https://docs.aws.amazon.com/connect/latest/adminguide/message-receipts.html). Also see the [SendEvent](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_SendEvent.html) action, and the [Item](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_Item.html), [MessageMetadata](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_MessageMetadata.html), and [Receipt](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_Receipt.html) data types in the *Connect Customer Participant Service API Reference Guide*.
 
 #### Updates to GetCurrentMetricData and GetCurrentUserData
 <a name="getcurrentmetricdata-dec-2022"></a>
 
-For the [https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentMetricData.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentMetricData.html) API, added support for routing profile filter, sort criteria, and grouping by routing profiles. For the [https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentUserData.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentUserData.html) API, added support for routing profiles, user hierarchy groups, and agents as filters, and next status and agent status name. For both APIs, added ApproximateTotalCount.
+For the [GetCurrentMetricData](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentMetricData.html) API, added support for routing profile filter, sort criteria, and grouping by routing profiles. For the [GetCurrentUserData](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentUserData.html) API, added support for routing profiles, user hierarchy groups, and agents as filters, and next status and agent status name. For both APIs, added ApproximateTotalCount.
 
 #### Added chat timeouts for chat participants
 <a name="chat-timeouts-dec-2022"></a>
@@ -2909,22 +2909,22 @@ Connect Customer now supports Microsoft Edge Chromium. For more information abou
 #### Connect Customer supports JSON as a content type for chat messages
 <a name="jsoncontenttype-dec-2022"></a>
 
-By supporting JSON as a content type, Connect Customer provides you with a way to pass additional information over chat to provide rich personalized experiences. For example, rendering updates to a custom UI, customer-built interactive messages, language translation capabilities, and passing customer metadata to a third party bot. For more information, see [https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html) in the *Connect Customer API Reference Guide*, and [https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_SendMessage.html](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_SendMessage.html) in the *Connect Customer Participant Service API Reference Guide*.
+By supporting JSON as a content type, Connect Customer provides you with a way to pass additional information over chat to provide rich personalized experiences. For example, rendering updates to a custom UI, customer-built interactive messages, language translation capabilities, and passing customer metadata to a third party bot. For more information, see [StartChatContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html) in the *Connect Customer API Reference Guide*, and [SendMessage](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_SendMessage.html) in the *Connect Customer Participant Service API Reference Guide*.
 
 #### Added topic on Connect Customer availability by Region
 <a name="regions-dec-2022"></a>
 
 For more information, see [Availability of Connect Customer services by Region](https://docs.aws.amazon.com/connect/latest/adminguide/regions.html).
 
-#### Contact Lens granular data redaction
+#### conversational analytics granular data redaction
 <a name="contactlens-redaction-dec-2022"></a>
 
-When you set up Contact Lens sensitive data redaction, you can choose which entities you want to redact, and how you want the redaction to appear in the transcript. For more information, see [Enable redaction of sensitive data](https://docs.aws.amazon.com/connect/latest/adminguide/enable-analytics.html#enable-redaction).
+When you set up conversational analytics sensitive data redaction, you can choose which entities you want to redact, and how you want the redaction to appear in the transcript. For more information, see [Enable redaction of sensitive data](https://docs.aws.amazon.com/connect/latest/adminguide/enable-analytics.html#enable-redaction).
 
-#### Additional Contact Lens language support and Region availability
+#### Additional conversational analytics language support and Region availability
 <a name="contactlens-regions-dec-2022"></a>
 
-Contact Lens now [supports the following languages](https://docs.aws.amazon.com/connect/latest/adminguide/supported-languages.html#supported-languages-contact-lens): English - New Zealand, English - South Africa. It is also [available in the following Regions](https://docs.aws.amazon.com/connect/latest/adminguide/enable-analytics.html#regions-contactlens): Africa (Cape Town), Asia Pacific (Seoul), Asia Pacific (Singapore).
+conversational analytics now [supports the following languages](https://docs.aws.amazon.com/connect/latest/adminguide/supported-languages.html#supported-languages-contact-lens): English - New Zealand, English - South Africa. It is also [available in the following Regions](https://docs.aws.amazon.com/connect/latest/adminguide/enable-analytics.html#regions-contactlens): Africa (Cape Town), Asia Pacific (Seoul), Asia Pacific (Singapore).
 
 #### Released Barge to allow contact center managers to join ongoing calls
 <a name="monitor-barge-dec-2022"></a>
@@ -2977,15 +2977,15 @@ Connect Customer provides a set of services powered by machine learning that hel
 
 For more information, see [Forecasting, capacity planning, and scheduling](https://docs.aws.amazon.com/connect/latest/adminguide/forecasting-capacity-planning-scheduling.html).
 
-#### Released Contact Lens evaluation forms for preview
+#### Released conversational analytics evaluation forms for preview
 <a name="contactlens-chat-nov-2022"></a>
 
 You can create evaluation forms, and then make them available to managers to review conversations alongside contact details, recordings, transcripts, and summaries, without the need to switch applications. Conversational analytics automatically pre-populates evaluation scores for criteria like script adherence, sensitive data collection, and customer greetings. For more information, see [Evaluate performance (Preview)](https://docs.aws.amazon.com/connect/latest/adminguide/evaluations.html).
 
-#### Released Contact Lens conversational analytics capabilities for Connect Customer chat
+#### Released conversational analytics conversational analytics capabilities for Connect Customer chat
 <a name="contactlens-chat-nov-2022"></a>
 
-Connect Customer Contact Lens provides conversational analytics capabilities for Connect Customer chat, extending the machine learning powered analytics to better assess chat contacts. For more information, see [Analyze conversations using Connect Customer Contact Lens](https://docs.aws.amazon.com/connect/latest/adminguide/analyze-conversations.html).
+Connect Customer conversational analytics provides conversational analytics capabilities for Connect Customer chat, extending the machine learning powered analytics to better assess chat contacts. For more information, see [Analyze conversations using Connect Customer conversational analytics](https://docs.aws.amazon.com/connect/latest/adminguide/analyze-conversations.html).
 
 #### Added configurable Lex timeouts in chat
 <a name="lextimeouts-nov-2022"></a>
@@ -2995,12 +2995,12 @@ You can configure how long to wait for a response from a customer in a chatbot c
 #### Create rules that send email notifications
 <a name="rules-nov-2022"></a>
 
-You can create Contact Lens rules that send email notifications to people in your organization. For more information, see [Create Contact Lens rules that send email notifications](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-rules-email.html).
+You can create conversational analytics rules that send email notifications to people in your organization. For more information, see [Create conversational analytics rules that send email notifications](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-rules-email.html).
 
 #### Added MonitorContact API
 <a name="monitor-contact-api-nov-2022"></a>
 
-Added a new API for programmatically initiating monitoring of ongoing contacts. For more information, see [https://docs.aws.amazon.com/connect/latest/APIReference/API_MonitorContact.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_MonitorContact.html) API.
+Added a new API for programmatically initiating monitoring of ongoing contacts. For more information, see [MonitorContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_MonitorContact.html) API.
 
 #### Manage saved reports (admin)
 <a name="managed-saved-reports-nov-2022"></a>
@@ -3010,7 +3010,7 @@ You can view and delete all saved reports in your instance, including reports th
 #### Search for profiles using multiple search keys
 <a name="multi-key-search-nov-2022"></a>
 
-In addition to searching for profiles with a single search key (i.e., a key-values(s) pair), the SearchProfiles API has been enhanced to support searching for profiles using multiple keys and logical operators. This new functionality allows you to use between 1 and 5 search keys with `AND` or `OR` logic to find profiles with attributes that match the search criteria. For more information, see the [https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_SearchProfiles.html](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_SearchProfiles.html) API reference topic.
+In addition to searching for profiles with a single search key (i.e., a key-values(s) pair), the SearchProfiles API has been enhanced to support searching for profiles using multiple keys and logical operators. This new functionality allows you to use between 1 and 5 search keys with `AND` or `OR` logic to find profiles with attributes that match the search criteria. For more information, see the [SearchProfiles](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_SearchProfiles.html) API reference topic.
 
 #### Delete quick connects using the Connect Customer console
 <a name="quickconnects-nov-2022"></a>
@@ -3020,7 +3020,7 @@ In addition to deleting quick connects programmatically, you can now delete them
 #### Added DismissUserContact API
 <a name="dismissusercontact-api-nov-2022"></a>
 
-Added a new API for programmatically clearing the notifications agents receive after they have missed or rejected a contact, making them eligible to be routed new contacts. This API can also be used to clear similar notifications when an agent encounters an error with accepting the contact or is handling After Contact Work. For more information, see the [https://docs.aws.amazon.com/connect/latest/APIReference/API_DismissUserContact.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_DismissUserContact.html) API reference topic.
+Added a new API for programmatically clearing the notifications agents receive after they have missed or rejected a contact, making them eligible to be routed new contacts. This API can also be used to clear similar notifications when an agent encounters an error with accepting the contact or is handling After Contact Work. For more information, see the [DismissUserContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_DismissUserContact.html) API reference topic.
 
 ### October 2022 Updates
 <a name="oct22-release-notes"></a>
@@ -3065,7 +3065,7 @@ Connect Customer Cases allows your agents to quickly track and manage customer i
 #### Searching for a contact? Choose from a list of categories
 <a name="contact-search-sep-2022"></a>
 
-When you search a contact and filter results by Contact Lens categories, you can pick from a list of categories, rather than manually typing the name of a category.
+When you search a contact and filter results by conversational analytics categories, you can pick from a list of categories, rather than manually typing the name of a category.
 
 #### Updated flow designer
 <a name="flow-designer-sept-2022"></a>
@@ -3107,10 +3107,10 @@ You can visualize historical queue data by using time series graphs to help iden
 ### August 2022 Updates
 <a name="aug22-release-notes"></a>
 
-#### Contact search: Apply "Match any" or "Match all" to Contact Lens category searches
+#### Contact search: Apply "Match any" or "Match all" to conversational analytics category searches
 <a name="contact-lens-aug-2022"></a>
 
-When you search for contacts, and filter by Contact Lens categories, you can apply **Match any** or **Match all** to the search. For example, you can search contacts with both "category A" and "category B," or with either one of the two categories.
+When you search for contacts, and filter by conversational analytics categories, you can apply **Match any** or **Match all** to the search. For example, you can search contacts with both "category A" and "category B," or with either one of the two categories.
 
 #### Evaluate calls for voice spoofing
 <a name="voice-spoofing-2022"></a>
@@ -3120,7 +3120,7 @@ Use Voice ID to evaluate calls for voice spoofing. For more information, see [Vo
 #### Added SearchSecurityProfiles API
 <a name="searchsecurityprofiles-api-aug22"></a>
 
-Added a new API for programmatically searching security profiles. For more information, see [https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchSecurityProfiles.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchSecurityProfiles.html).
+Added a new API for programmatically searching security profiles. For more information, see [SearchSecurityProfiles](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchSecurityProfiles.html).
 
 #### Released Schedule Adherence (Preview)
 <a name="schedule-adherence-aug22"></a>
@@ -3222,7 +3222,7 @@ Released Connect Customer outbound campaigns, formerly known as High-volume outb
 #### Released GetCurrentUserData API
 <a name="getcurrentuserdata-june-2022"></a>
 
-Released the [https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentUserData.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentUserData.html) API. It enables you to return the real-time active user data from the specified Connect Customer instance.
+Released the [GetCurrentUserData](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentUserData.html) API. It enables you to return the real-time active user data from the specified Connect Customer instance.
 
 #### Released task templates
 <a name="task-templates-june-2022"></a>
@@ -3247,7 +3247,7 @@ Updated the workflow for onboarding to outbound campaigns using the Connect Cust
 #### Voice ID expires speakers
 <a name="voiceid-may-2022"></a>
 
-For BIPA Compliance, Connect Customer Voice ID automatically expires speakers that have not been accessed for enrollment, re-enrollment, or successful authentication for three years. You can see a speaker's last access time by looking at the `lastAccessedAt` attribute returned by the [DescribeSpeaker](https://docs.aws.amazon.com/voiceid/latest/APIReference/API_DescribeSpeaker.html) and [https://docs.aws.amazon.com/voiceid/latest/APIReference/API_ListSpeakers.html](https://docs.aws.amazon.com/voiceid/latest/APIReference/API_ListSpeakers.html) APIs.
+For BIPA Compliance, Connect Customer Voice ID automatically expires speakers that have not been accessed for enrollment, re-enrollment, or successful authentication for three years. You can see a speaker's last access time by looking at the `lastAccessedAt` attribute returned by the [DescribeSpeaker](https://docs.aws.amazon.com/voiceid/latest/APIReference/API_DescribeSpeaker.html) and [ListSpeakers](https://docs.aws.amazon.com/voiceid/latest/APIReference/API_ListSpeakers.html) APIs.
 
 For more information, see [What data is stored?](https://docs.aws.amazon.com/connect/latest/adminguide/voice-id.html#voice-id-data-storage) in the [Use real-time caller authentication with Voice ID](https://docs.aws.amazon.com/connect/latest/adminguide/voice-id.html) topic.
 
@@ -3257,7 +3257,7 @@ For more information, see [What data is stored?](https://docs.aws.amazon.com/con
 #### New API to change an agent's current status
 <a name="api-april28-2022"></a>
 
-Connect Customer provides an API to programmatically change the current status of an agent. [Agent statuses](metrics-agent-status.md) are used to determine when an agent is **Available** to be routed contacts in Connect Customer, versus when they are set to **Offline** or a custom status such as **Lunch** or **Break** and should not be routed contacts. For more information, see [https://docs.aws.amazon.com/connect/latest/APIReference/API_PutUserStatus.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_PutUserStatus.html) in the [Connect Customer API Reference](https://docs.aws.amazon.com/connect/latest/APIReference/Welcome.html).
+Connect Customer provides an API to programmatically change the current status of an agent. [Agent statuses](metrics-agent-status.md) are used to determine when an agent is **Available** to be routed contacts in Connect Customer, versus when they are set to **Offline** or a custom status such as **Lunch** or **Break** and should not be routed contacts. For more information, see [PutUserStatus](https://docs.aws.amazon.com/connect/latest/APIReference/API_PutUserStatus.html) in the [Connect Customer API Reference](https://docs.aws.amazon.com/connect/latest/APIReference/Welcome.html).
 
 #### New API to search for users by name, agent hierarchies, and tags
 <a name="api-april22"></a>
@@ -3326,12 +3326,12 @@ Added the following Amazon CloudWatch metrics for chat: **ConcurrentActiveChats*
 #### Configure maximum chat duration up to 7 days
 <a name="chat-jan22"></a>
 
-You can configure the maximum chat duration to last up to 7 days. For more information, see the `ChatDurationInMinutes` parameter in the [https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html) API.
+You can configure the maximum chat duration to last up to 7 days. For more information, see the `ChatDurationInMinutes` parameter in the [StartChatContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html) API.
 
-#### Add custom vocabularies to Contact Lens
+#### Add custom vocabularies to conversational analytics
 <a name="contact-lens-jan22"></a>
 
-Improve the accuracy of speech recognition for product names, brand names, and domain-specific terminology, by expanding and tailoring the vocabulary of the speech-to-text engine in Contact Lens. For more information, see [Add custom vocabularies to Contact Lens using the Connect Customer admin website](add-custom-vocabulary.md).
+Improve the accuracy of speech recognition for product names, brand names, and domain-specific terminology, by expanding and tailoring the vocabulary of the speech-to-text engine in conversational analytics. For more information, see [Add custom vocabularies to conversational analytics using the Connect Customer admin website](add-custom-vocabulary.md).
 
 ### December 2021 Updates
 <a name="dec21-release-notes"></a>
@@ -3357,7 +3357,7 @@ Connect Customer released the unified agent application to improve the agent exp
 #### Released key highlights
 <a name="call-summarization-nov21"></a>
 
-Connect Customer Contact Lens provides the option for you to view key highlights. The highlights show only those lines where Contact Lens has identified an issue, outcome, or action item in the transcript. For more information, see [View key highlights of customer conversations in Connect Customer](key-highlights.md).
+Connect Customer conversational analytics provides the option for you to view key highlights. The highlights show only those lines where conversational analytics has identified an issue, outcome, or action item in the transcript. For more information, see [View key highlights of customer conversations in Connect Customer](key-highlights.md).
 
 #### Released Identity Resolution to consolidate similar profiles
 <a name="identity-resolution-nov21"></a>
@@ -3392,12 +3392,12 @@ Added the [Customer profiles](https://docs.aws.amazon.com/connect/latest/admingu
 #### Released Contact APIs
 <a name="contact-apis-nov21"></a>
 
-Added APIs so you can get and update contact details programmatically. For example, you can describe contact details such as queue information, chat attachments, task references, and update contact information such as task name. For more information, see [https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeContact.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeContact.html), [UpdateContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContact.html), and [https://docs.aws.amazon.com/connect/latest/APIReference/API_ListReferences.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListReferences.html) in the *Connect Customer API Reference*.
+Added APIs so you can get and update contact details programmatically. For example, you can describe contact details such as queue information, chat attachments, task references, and update contact information such as task name. For more information, see [DescribeContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeContact.html), [UpdateContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContact.html), and [ListReferences](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListReferences.html) in the *Connect Customer API Reference*.
 
 #### Released scheduled tasks
 <a name="tasks-nov21"></a>
 
-Added the ability to schedule tasks up to six days in the future to follow-up on customer issues when promised. You can also update the scheduled date and time using the [https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContactSchedule.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContactSchedule.html) API. For more information, see the [Create task](https://docs.aws.amazon.com/connect/latest/adminguide/create-task-block.html) block and the [Create a task](https://docs.aws.amazon.com/connect/latest/adminguide/create-task.html) topic in the *Agent training guide*.
+Added the ability to schedule tasks up to six days in the future to follow-up on customer issues when promised. You can also update the scheduled date and time using the [UpdateContactSchedule](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContactSchedule.html) API. For more information, see the [Create task](https://docs.aws.amazon.com/connect/latest/adminguide/create-task-block.html) block and the [Create a task](https://docs.aws.amazon.com/connect/latest/adminguide/create-task.html) topic in the *Agent training guide*.
 
 #### Released security profiles APIs
 <a name="security-profiles-nov21"></a>
@@ -3436,9 +3436,9 @@ Released the Connect Customer `HoursOfOperation` APIs for general availability (
 <a name="wisdom-sept21"></a>
 
 **Note**
-In November 2023 we released Amazon Q. It includes real-time agent assist functionality formerly known as Connect Customer Wisdom, along with generative AI-powered recommended responses, actions, and links to more information.
+In November 2023, we released real-time agent assist functionality (formerly known as Amazon Q in Connect and Amazon Connect Wisdom), along with generative AI-powered recommended responses, actions, and links to more information.
 
-For more information, see [Use Connect AI agents for real-time assistance](connect-ai-agent.md) and the [Connect AI agents API Reference](https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/Welcome.html).
+For more information, see [Use AI agents for real-time assistance](connect-ai-agent.md) and the [Connect Customer agent assist API Reference](https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/Welcome.html).
 
 #### Connect Customer Voice ID - General Availability
 <a name="voiceid-sept21"></a>
@@ -3485,10 +3485,10 @@ Released a redesigned and improved user interface for the Connect Customer conso
 
 Released for ungated preview new APIs for managing hours of operation and agent status. For more information, see [Connect Customer Service API Reference](https://docs.aws.amazon.com/connect/latest/APIReference/Welcome.html).
 
-#### Contact Lens: Build rules that generate tasks and EventBridge events
+#### conversational analytics: Build rules that generate tasks and EventBridge events
 <a name="contact-lens-august21"></a>
 
-Contact Lens rules now allow you to automatically generate tasks and EventBridge events based on uttered keywords, sentiment scores, customer attributes, and other criteria. For more information, see [Create Contact Lens rules using the Connect Customer admin website](build-rules-for-contact-lens.md).
+conversational analytics rules now allow you to automatically generate tasks and EventBridge events based on uttered keywords, sentiment scores, customer attributes, and other criteria. For more information, see [Create conversational analytics rules using the Connect Customer admin website](build-rules-for-contact-lens.md).
 
 #### Networking: Allow AWS Global Accelerator
 <a name="august-networking-2021"></a>
@@ -3631,9 +3631,9 @@ The following changes were release for Contact search:
 #### Customer Profiles: Identity resolution
 <a name="customer-profiles-april2021-"></a>
 
-Added identity resolution APIs to Customer Profiles. For more information, see the [https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetMatches.html](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetMatches.html) and [https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_MergeProfiles.html](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_MergeProfiles.html) APIs in the Connect Customer Customer Profiles API reference.
+Added identity resolution APIs to Customer Profiles. For more information, see the [GetMatches](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetMatches.html) and [MergeProfiles](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_MergeProfiles.html) APIs in the Connect Customer Customer Profiles API reference.
 
-#### Contact Lens: Use category tags to navigate transcript
+#### conversational analytics: Use category tags to navigate transcript
 <a name="contact-lens-april2021-"></a>
 
 For more information, see [Tap or click category tags to navigate through transcript](turn-by-turn-transcript.md#category-navigation).
@@ -3663,7 +3663,7 @@ In addition, note the following fixes for contact records and the agent event st
 #### Connect Customer is now available in the Canada (Central) Region
 <a name="new-domain"></a>
 
-Connect Customer is now available in the Canada (Central) Region. You can claim toll-free and local telephone numbers from Canadian telephony suppliers. For a list of countries were the Canada (Central) Region is supported, see [Region requirements for phone numbers](https://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html). For a list of Contact Lens features available in the Canada (Central) Region, see [Availability of Contact Lens features by Region](https://docs.aws.amazon.com/connect/latest/adminguide/enable-analytics.html#regions-contactlens).
+Connect Customer is now available in the Canada (Central) Region. You can claim toll-free and local telephone numbers from Canadian telephony suppliers. For a list of countries were the Canada (Central) Region is supported, see [Region requirements for phone numbers](https://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html). For a list of conversational analytics features available in the Canada (Central) Region, see [Availability of conversational analytics features by Region](https://docs.aws.amazon.com/connect/latest/adminguide/enable-analytics.html#regions-contactlens).
 
 #### Domain for new Connect Customer instances is "my.connect.aws"
 <a name="new-domain"></a>
@@ -3724,10 +3724,10 @@ To help you validate connectivity to Connect Customer, or troubleshoot when your
 ### February 2021 Updates
 <a name="february21-release-notes"></a>
 
-#### Contact Lens: Availability of real-time analytics
+#### conversational analytics: Availability of real-time analytics
 <a name="february21-contact-lens"></a>
 
-Contact Lens real-time analytics is available in Europe (London), Europe (Frankfurt), and Asia (Tokyo). For more information, see [Conversational analytics features by Region](regions.md#regions-contactlens).
+conversational analytics real-time analytics is available in Europe (London), Europe (Frankfurt), and Asia (Tokyo). For more information, see [Conversational analytics features by Region](regions.md#regions-contactlens).
 
 #### Ingest data into Customer Profiles using Amazon S3
 <a name="february21-customer-profiles"></a>
@@ -3859,8 +3859,8 @@ Added support for chat attachments. For more information, see [Enable attachment
 
 Added the following APIs:
 + [CompleteAttachmentUpload](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_CompleteAttachmentUpload.html)
-+ [https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_GetAttachment.html](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_GetAttachment.html)
-+ [https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_StartAttachmentUpload.html](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_StartAttachmentUpload.html)
++ [GetAttachment](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_GetAttachment.html)
++ [StartAttachmentUpload](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_StartAttachmentUpload.html)
 
 #### Configurable DTMF timeouts for Lex bots
 <a name="december20-confdtmf"></a>
@@ -3895,10 +3895,10 @@ Added the Amazon AppIntegrations APIs (Preview), which enables you to configure 
 
 Added Connect Customer Customer Profiles, enabling agents to create a customer profile for every new contact that comes in. You can also integrate with external applications that provide customer profile data. For more information, see [Use Connect Customer Customer Profiles](customer-profiles.md) and the [Connect Customer Customer Profiles API Reference](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/Welcome.html).
 
-#### Real-time analytics using Contact Lens
+#### Real-time analytics using conversational analytics
 <a name="december20-contactlens"></a>
 
-Added real-time analytics for Contact Lens so you can detect and resolve customer issues more proactively while the call is in progress. For more information, see [Analyze conversations using conversational analytics in Connect Customer Contact Lens](analyze-conversations.md) and the [Connect Customer Contact Lens API Reference](https://docs.aws.amazon.com/contact-lens/latest/APIReference/Welcome.html).
+Added real-time analytics for conversational analytics so you can detect and resolve customer issues more proactively while the call is in progress. For more information, see [Analyze conversations using conversational analytics in Connect Customer conversational analytics](analyze-conversations.md) and the [Connect Customer conversational analytics API Reference](https://docs.aws.amazon.com/contact-lens/latest/APIReference/Welcome.html).
 
 #### Connect Customer Voice ID (Preview)
 <a name="december20-voiceid"></a>
@@ -3909,7 +3909,7 @@ Added Connect Customer Voice ID (Preview), which provides for real-time caller a
 <a name="december20-wisdom"></a>
 
 **Note**
-In November 2023 we released Amazon Q. It includes real-time agent assist functionality formerly known as Connect Customer Wisdom, along with generative AI-powered recommended responses, actions, and links to more information.
+In November 2023, we released real-time agent assist functionality (formerly known as Amazon Q in Connect and Amazon Connect Wisdom), along with generative AI-powered recommended responses, actions, and links to more information.
 
 Added Connect Customer Wisdom (Preview), which enables agents to search and find content across multiple repositories, such as frequently asked questions (FAQs), wikis, articles, and step-by-step instructions for handling different customer issues.
 
@@ -3995,23 +3995,23 @@ The following updates were released in September 2020:
 <a name="september20-apis"></a>
 
 Added the following APIs for flows:
-+ [https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateContactFlow.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateContactFlow.html)
-+ [https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeContactFlow.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeContactFlow.html)
-+ [https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContactFlowContent.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContactFlowContent.html)
-+ [https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContactFlowName.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContactFlowName.html)
++ [CreateContactFlowf](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateContactFlow.html)
++ [DescribeContactFlow](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeContactFlow.html)
++ [UpdateContactFlowContent](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContactFlowContent.html)
++ [UpdateContactFlowName](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContactFlowName.html)
 
 Added the following API to list prompts:
-+ [https://docs.aws.amazon.com/connect/latest/APIReference/API_ListPrompts.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListPrompts.html)
++ [ListPrompts](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListPrompts.html)
 
 Added the following APIs for routing profiles:
-+ [https://docs.aws.amazon.com/connect/latest/APIReference/API_AssociateRoutingProfileQueues.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_AssociateRoutingProfileQueues.html)
-+ [https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateRoutingProfile.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateRoutingProfile.html)
-+ [https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeRoutingProfile.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeRoutingProfile.html)
-+ [https://docs.aws.amazon.com/connect/latest/APIReference/API_DisassociateRoutingProfileQueues.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_DisassociateRoutingProfileQueues.html)
-+ [https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRoutingProfileQueues.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRoutingProfileQueues.html)
-+ [https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRoutingProfileConcurrency.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRoutingProfileConcurrency.html)
-+ [https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRoutingProfileName.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRoutingProfileName.html)
-+ [https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRoutingProfileQueues.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRoutingProfileQueues.html)
++ [AssociateRoutingProfileQueues](https://docs.aws.amazon.com/connect/latest/APIReference/API_AssociateRoutingProfileQueues.html)
++ [CreateRoutingProfile](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateRoutingProfile.html)
++ [DescribeRoutingProfile](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeRoutingProfile.html)
++ [DisassociateRoutingProfileQueues](https://docs.aws.amazon.com/connect/latest/APIReference/API_DisassociateRoutingProfileQueues.html)
++ [ListRoutingProfileQueues](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRoutingProfileQueues.html)
++ [UpdateRoutingProfileConcurrency](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRoutingProfileConcurrency.html)
++ [UpdateRoutingProfileName](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRoutingProfileName.html)
++ [UpdateRoutingProfileQueues](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRoutingProfileQueues.html)
 
 ### August 2020 Updates
 <a name="august20-release-notes"></a>
@@ -4031,9 +4031,9 @@ The following updates were released in August 2020:
 <a name="august20-monitoring"></a>
 + Added logging of Connect Customer Participant Service calls with AWS CloudTrail. For more information, see [Log Connect Customer API calls with AWS CloudTrail](logging-using-cloudtrail.md).
 
-#### Connect Customer Contact Lens
+#### Connect Customer conversational analytics
 <a name="august20-contact-flows"></a>
-+ Updated the security profile permissions for the redaction feature. For more information, see [Assign permissions to use Contact Lens conversational analytics in Connect Customer](permissions-for-contact-lens.md).
++ Updated the security profile permissions for the redaction feature. For more information, see [Assign permissions to use conversational analytics in Connect Customer](permissions-for-contact-lens.md).
 
 ### July 2020 Updates
 <a name="july20-release-notes"></a>
@@ -4046,11 +4046,11 @@ The following updates were released in July 2020:
 
 #### APIs
 <a name="july20-apis"></a>
-+ Added [https://docs.aws.amazon.com/connect/latest/APIReference/API_StartContactRecording.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartContactRecording.html), [https://docs.aws.amazon.com/connect/latest/APIReference/API_StopContactRecording.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_StopContactRecording.html), [https://docs.aws.amazon.com/connect/latest/APIReference/API_SuspendContactRecording.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_SuspendContactRecording.html), [https://docs.aws.amazon.com/connect/latest/APIReference/API_ResumeContactRecording.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_ResumeContactRecording.html) to the Connect Customer Service API.
++ Added [StartContactRecording](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartContactRecording.html), [StopContactRecording](https://docs.aws.amazon.com/connect/latest/APIReference/API_StopContactRecording.html), [SuspendContactRecording](https://docs.aws.amazon.com/connect/latest/APIReference/API_SuspendContactRecording.html), [ResumeContactRecording](https://docs.aws.amazon.com/connect/latest/APIReference/API_ResumeContactRecording.html) to the Connect Customer Service API.
 
-#### Connect Customer Contact Lens
+#### Connect Customer conversational analytics
 <a name="july20-contact-lens"></a>
-+ Updated Contact Lens for general availability. This feature lets you analyze customer-agent conversations, by using speech transcription, natural language processing, and intelligent search capabilities. For more information, see [Analyze conversations using conversational analytics in Connect Customer Contact Lens](analyze-conversations.md).
++ Updated conversational analytics for general availability. This feature lets you analyze customer-agent conversations, by using speech transcription, natural language processing, and intelligent search capabilities. For more information, see [Analyze conversations using conversational analytics in Connect Customer conversational analytics](analyze-conversations.md).
 
 #### Metrics
 <a name="july20-metrics"></a>
@@ -4225,7 +4225,7 @@ The following update was released in December 2019:
 
 #### Monitoring
 <a name="dec19-monitoring"></a>
-+ Added Contact Lens for preview. This feature enables you search conversations for keywords, sentiment scores, and non-talk time. For more information, see [Analyze conversations using conversational analytics in Connect Customer Contact Lens](analyze-conversations.md).
++ Added conversational analytics for preview. This feature enables you search conversations for keywords, sentiment scores, and non-talk time. For more information, see [Analyze conversations using conversational analytics in Connect Customer conversational analytics](analyze-conversations.md).
 + Added logging of Connect Customer API calls with AWS CloudTrail. For more information, see [Log Connect Customer API calls with AWS CloudTrail](logging-using-cloudtrail.md).
 
 ### November 2019 Update
@@ -4329,7 +4329,7 @@ Updated the following flow blocks for chat:
 
 #### API
 <a name="nov19-api"></a>
-+ Added [https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html), [https://docs.aws.amazon.com/connect/latest/APIReference/API_ListTagsForResource.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListTagsForResource.html), [TagResource](https://docs.aws.amazon.com/connect/latest/APIReference/API_TagResource.html), [https://docs.aws.amazon.com/connect/latest/APIReference/API_UntagResource.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_UntagResource.html) to the Connect Customer Service API.
++ Added [StartChatContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html), [ListTagsForResource](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListTagsForResource.html), [TagResource](https://docs.aws.amazon.com/connect/latest/APIReference/API_TagResource.html), [UntagResource](https://docs.aws.amazon.com/connect/latest/APIReference/API_UntagResource.html) to the Connect Customer Service API.
 + Added the [Connect Customer Participant Service](https://docs.aws.amazon.com/connect-participant/latest/APIReference/Welcome.html) API. These APIs are used chat participants, such as agents and customers.
 
 #### Contact Control Panel (CCP)
@@ -4543,7 +4543,7 @@ The following updates were released in September 2018:
 
 #### API
 <a name="sep18-api"></a>
-+ Released the [https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContactAttributes.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContactAttributes.html) operation for the Connect Customer API.
++ Released the [UpdateContactAttributes](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContactAttributes.html) operation for the Connect Customer API.
 
 ### August 2018 Updates
 <a name="aug18-release-notes"></a>
@@ -4681,6 +4681,6 @@ The following updates were released in April and May 2018:
 #### Contact Control Panel (CCP)
 <a name="may18-ccp"></a>
 + Added a **Save** button to the settings menu for the CCP when an agent is using a desk phone. The **Save** button saves the deskphone configuration between sessions.
-+ Agent username is now available as part of agent configuration data in the [https://github.com/aws/amazon-connect-streams/blob/master/Documentation.md](https://github.com/aws/amazon-connect-streams/blob/master/Documentation.md) API.
++ Agent username is now available as part of agent configuration data in the [Connect Customer Streams](https://github.com/aws/amazon-connect-streams/blob/master/Documentation.md) API.
 + Contact attributes are now available when using the streams.js (Streams API) for screenpops after queued callbacks.
 + Fixed issue where for some auto-accept calls, the agent continued to hear ringing after accepting and joining the call.

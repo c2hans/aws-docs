@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon GuardDuty service and r
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/guardduty-enabled-centralized.html](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-enabled-centralized.html)
+**AWS Config rule:** [guardduty-enabled-centralized](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-enabled-centralized.html)
 
 **Schedule type:** Periodic
 
@@ -62,7 +62,7 @@ Don’t add personally identifiable information (PII) or other confidential or s
 ### Remediation
 <a name="guardduty-2-remediation"></a>
 
-To add tags to a GuardDuty filter, see [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_TagResource.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_TagResource.html) in the *Amazon GuardDuty API Reference*.
+To add tags to a GuardDuty filter, see [TagResource](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_TagResource.html) in the *Amazon GuardDuty API Reference*.
 
 ## [GuardDuty.3] GuardDuty IPSets should be tagged
 <a name="guardduty-3"></a>
@@ -93,7 +93,7 @@ Don’t add personally identifiable information (PII) or other confidential or s
 ### Remediation
 <a name="guardduty-3-remediation"></a>
 
-To add tags to a GuardDuty IPSet, see [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_TagResource.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_TagResource.html) in the *Amazon GuardDuty API Reference*.
+To add tags to a GuardDuty IPSet, see [TagResource](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_TagResource.html) in the *Amazon GuardDuty API Reference*.
 
 ## [GuardDuty.4] GuardDuty detectors should be tagged
 <a name="guardduty-4"></a>
@@ -124,7 +124,7 @@ Don’t add personally identifiable information (PII) or other confidential or s
 ### Remediation
 <a name="guardduty-4-remediation"></a>
 
-To add tags to a GuardDuty detector, see [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_TagResource.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_TagResource.html) in the *Amazon GuardDuty API Reference*.
+To add tags to a GuardDuty detector, see [TagResource](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_TagResource.html) in the *Amazon GuardDuty API Reference*.
 
 ## [GuardDuty.5] GuardDuty EKS Audit Log Monitoring should be enabled
 <a name="guardduty-5"></a>
@@ -135,7 +135,7 @@ To add tags to a GuardDuty detector, see [https://docs.aws.amazon.com/guardduty/
 
 **Resource type:** `AWS::GuardDuty::Detector`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/guardduty-eks-protection-audit-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-eks-protection-audit-enabled.html)
+**AWS Config rule:** [guardduty-eks-protection-audit-enabled](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-eks-protection-audit-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -163,7 +163,7 @@ To enable GuardDuty EKS Audit Log Monitoring, see [EKS Audit Log Monitoring](htt
 
 **Resource type:** `AWS::GuardDuty::Detector`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/guardduty-lambda-protection-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-lambda-protection-enabled.html)
+**AWS Config rule:** [guardduty-lambda-protection-enabled](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-lambda-protection-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -191,7 +191,7 @@ To enable GuardDuty Lambda Protection, see [Configuring Lambda Protection](https
 
 **Resource type:** `AWS::GuardDuty::Detector`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/guardduty-eks-protection-runtime-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-eks-protection-runtime-enabled.html)
+**AWS Config rule:** [guardduty-eks-protection-runtime-enabled](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-eks-protection-runtime-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -217,7 +217,7 @@ To enable EKS Runtime Monitoring with automated agent management, see [Enabling 
 
 **Resource type:** `AWS::GuardDuty::Detector`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/guardduty-malware-protection-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-malware-protection-enabled.html)
+**AWS Config rule:** [guardduty-malware-protection-enabled](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-malware-protection-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -245,7 +245,7 @@ To enable GuardDuty Malware Protection for EC2, see [Configuring GuardDuty-initi
 
 **Resource type:** `AWS::GuardDuty::Detector`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/guardduty-rds-protection-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-rds-protection-enabled.html)
+**AWS Config rule:** [guardduty-rds-protection-enabled](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-rds-protection-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -273,7 +273,7 @@ To enable GuardDuty RDS Protection, see [GuardDuty RDS Protection](https://docs.
 
 **Resource type:** `AWS::GuardDuty::Detector`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/guardduty-s3-protection-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-s3-protection-enabled.html)
+**AWS Config rule:** [guardduty-s3-protection-enabled](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-s3-protection-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -299,7 +299,7 @@ To enable GuardDuty S3 Protection, see [Amazon S3 Protection in Amazon GuardDuty
 
 **Resource type:** `AWS::GuardDuty::Detector`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/guardduty-runtime-monitoring-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-runtime-monitoring-enabled.html)
+**AWS Config rule:** [guardduty-runtime-monitoring-enabled](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-runtime-monitoring-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -325,7 +325,7 @@ For information about configuring and enabling GuardDuty Runtime Monitoring, see
 
 **Resource type:** `AWS::GuardDuty::Detector`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/guardduty-ecs-protection-runtime-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-ecs-protection-runtime-enabled.html)
+**AWS Config rule:** [guardduty-ecs-protection-runtime-enabled](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-ecs-protection-runtime-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -351,7 +351,7 @@ To enable and manage the security agent for GuardDuty Runtime Monitoring of ECS-
 
 **Resource type:** `AWS::GuardDuty::Detector`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/guardduty-ec2-protection-runtime-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-ec2-protection-runtime-enabled.html)
+**AWS Config rule:** [guardduty-ec2-protection-runtime-enabled](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-ec2-protection-runtime-enabled.html)
 
 **Schedule type:** Periodic
 

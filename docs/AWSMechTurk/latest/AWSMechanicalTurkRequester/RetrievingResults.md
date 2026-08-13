@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkRequ
 # Retrieving results
 <a name="RetrievingResults"></a>
 
-Retrieving the results of a HIT involves gathering the responses from each of the assignment submissions provided by workers. At any point in a HIT's lifecycle (before it is disposed) you can call the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ListAssignmentsForHITOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ListAssignmentsForHITOperation.html) operation to retrieve all of assignments that have been submitted and the answers provided by workers. If the some of the assignments are still awaiting submission by workers, you receive partial results containing the assignments have been submitted so far.
+Retrieving the results of a HIT involves gathering the responses from each of the assignment submissions provided by workers. At any point in a HIT's lifecycle (before it is disposed) you can call the [`ListAssignmentsForHIT`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ListAssignmentsForHITOperation.html) operation to retrieve all of assignments that have been submitted and the answers provided by workers. If the some of the assignments are still awaiting submission by workers, you receive partial results containing the assignments have been submitted so far.
 
 **Topics**
 + [Assignment attributes](#AssignmentAttributes)
@@ -14,7 +14,7 @@ Retrieving the results of a HIT involves gathering the responses from each of th
 ## Assignment attributes
 <a name="AssignmentAttributes"></a>
 
-The `ListAssignmentsForHIT` operation returns an array of zero or more assignments, each captured in an [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_AssignmentDataStructureArticle.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_AssignmentDataStructureArticle.html) data structure. The following example shows the data structure that is returned. Each assignment includes the ID of the HIT with which it's associated, the worker who submitted it, and the ID of the assignment itself. The `AssignmentStatus` is one of `Submitted`, `Approved`, or `Rejected`. When a worker first submits an assignment, the status is `Submitted`, and changes based on your decision to approve or reject the assignment.
+The `ListAssignmentsForHIT` operation returns an array of zero or more assignments, each captured in an [`Assignment`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_AssignmentDataStructureArticle.html) data structure. The following example shows the data structure that is returned. Each assignment includes the ID of the HIT with which it's associated, the worker who submitted it, and the ID of the assignment itself. The `AssignmentStatus` is one of `Submitted`, `Approved`, or `Rejected`. When a worker first submits an assignment, the status is `Submitted`, and changes based on your decision to approve or reject the assignment.
 
 ```
 {
@@ -37,7 +37,7 @@ The `AutoApprovalTime` indicates when the assignment will be automatically appro
 ## Assignment answer
 <a name="AssignmentAnswer"></a>
 
-The `Answer` value is returned as a string containing a [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QuestionFormAnswersDataStructureArticle.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QuestionFormAnswersDataStructureArticle.html) XML data structure. The layout of this data structure corresponds to the HTML form fields you provided in your question HTML. For example, consider the following task form using a standard HTML form element and form field.
+The `Answer` value is returned as a string containing a [`QuestionFormAnswers`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QuestionFormAnswersDataStructureArticle.html) XML data structure. The layout of this data structure corresponds to the HTML form fields you provided in your question HTML. For example, consider the following task form using a standard HTML form element and form field.
 
 ```
 <form method='post' id='mturk_form' action='https://www.mturk.com/mturk/externalSubmit'>

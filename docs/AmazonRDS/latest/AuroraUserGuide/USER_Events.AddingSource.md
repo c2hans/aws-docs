@@ -15,7 +15,7 @@ You can easily add or remove source identifiers using the Amazon RDS console by 
 ## AWS CLI
 <a name="USER_Events.AddingSource.CLI"></a>
 
-To add a source identifier to an Amazon RDS event notification subscription, use the AWS CLI [https://docs.aws.amazon.com/](https://docs.aws.amazon.com/) command. Include the following required parameters:
+To add a source identifier to an Amazon RDS event notification subscription, use the AWS CLI [`add-source-identifier-to-subscription`](https://docs.aws.amazon.com/) command. Include the following required parameters:
 + `--subscription-name`
 + `--source-identifier`
 
@@ -39,6 +39,6 @@ aws rds add-source-identifier-to-subscription ^
 ## API
 <a name="USER_Events.AddingSource.API"></a>
 
-To add a source identifier to an Amazon RDS event notification subscription, call the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_AddSourceIdentifierToSubscription.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_AddSourceIdentifierToSubscription.html). Include the following required parameters:
+To add a source identifier to an Amazon RDS event notification subscription, call the Amazon RDS API [`AddSourceIdentifierToSubscription`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_AddSourceIdentifierToSubscription.html). Include the following required parameters:
 + `SubscriptionName`
 + `SourceIdentifier`

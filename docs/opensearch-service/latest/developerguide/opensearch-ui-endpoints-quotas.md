@@ -51,3 +51,4 @@ Your AWS account has the following quotas related to OpenSearch UI resources.
 | Name | Default | Adjustable | Notes |
 | --- | --- | --- | --- |
 | OpenSearch UI applications per Account per Region | 30 | Yes | The maximum number of OpenSearch UI applications you can create per account per Region.<br />You can increase the limit to 50 using service quota and get it automatically approved. To request a higher limit, submit a support ticket. |
+| Maximum [workspaces](./application-workspaces.html) per application | 100 | Yes | The maximum number of workspaces you can create per OpenSearch UI application.<br />To request a higher limit, submit a support ticket. |

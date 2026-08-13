@@ -313,22 +313,22 @@ Tested using [Transformer models](https://github.com/huggingface/transformers) w
   <tr><td>distilbert-base-uncased</td><td>wikitext-2-raw-v1</td><td>p3.2xlarge</td><td>float16</td><td>128</td><td>176</td></tr>
   <tr><td>distilbert-base-uncased</td><td>wikitext-2-raw-v1</td><td>p3.8xlarge</td><td>float16</td><td>128</td><td>160</td></tr>
   <tr><td>distilbert-base-uncased</td><td>wikitext-2-raw-v1</td><td>g5.4xlarge</td><td>float16</td><td>256</td><td>258</td></tr>
-  <tr><td>google\_electra-small-discriminator</td><td>wikitext-2-raw-v1</td><td>g4dn.16xlarge</td><td>float16</td><td>256</td><td>216</td></tr>
-  <tr><td>google\_electra-small-discriminator</td><td>wikitext-2-raw-v1</td><td>p3.2xlarge</td><td>float16</td><td>256</td><td>230</td></tr>
-  <tr><td>google\_electra-small-discriminator</td><td>wikitext-2-raw-v1</td><td>p3.8xlarge</td><td>float16</td><td>256</td><td>224</td></tr>
-  <tr><td>google\_electra-small-discriminator</td><td>wikitext-2-raw-v1</td><td>g5.4xlarge</td><td>float16</td><td>256</td><td>320</td></tr>
+  <tr><td>google_electra-small-discriminator</td><td>wikitext-2-raw-v1</td><td>g4dn.16xlarge</td><td>float16</td><td>256</td><td>216</td></tr>
+  <tr><td>google_electra-small-discriminator</td><td>wikitext-2-raw-v1</td><td>p3.2xlarge</td><td>float16</td><td>256</td><td>230</td></tr>
+  <tr><td>google_electra-small-discriminator</td><td>wikitext-2-raw-v1</td><td>p3.8xlarge</td><td>float16</td><td>256</td><td>224</td></tr>
+  <tr><td>google_electra-small-discriminator</td><td>wikitext-2-raw-v1</td><td>g5.4xlarge</td><td>float16</td><td>256</td><td>320</td></tr>
   <tr><td>gpt2</td><td>wikitext-2-raw-v1</td><td>g4dn.16xlarge</td><td>float16</td><td>80</td><td>64</td></tr>
   <tr><td>gpt2</td><td>wikitext-2-raw-v1</td><td>p3.2xlarge</td><td>float16</td><td>80</td><td>77</td></tr>
   <tr><td>gpt2</td><td>wikitext-2-raw-v1</td><td>p3.8xlarge</td><td>float16</td><td>80</td><td>72</td></tr>
   <tr><td>gpt2</td><td>wikitext-2-raw-v1</td><td>g5.4xlarge</td><td>float16</td><td>128</td><td>120</td></tr>
-  <tr><td>jplu\_tf-xlm-roberta-base</td><td>wikitext-2-raw-v1</td><td>g4dn.16xlarge</td><td>float16</td><td>28</td><td>24</td></tr>
-  <tr><td>jplu\_tf-xlm-roberta-base</td><td>wikitext-2-raw-v1</td><td>p3.2xlarge</td><td>float16</td><td>32</td><td>24</td></tr>
-  <tr><td>jplu\_tf-xlm-roberta-base</td><td>wikitext-2-raw-v1</td><td>p3.8xlarge</td><td>float16</td><td>32</td><td>26</td></tr>
-  <tr><td>jplu\_tf-xlm-roberta-base</td><td>wikitext-2-raw-v1</td><td>g5.4xlarge</td><td>float16</td><td>66</td><td>52</td></tr>
-  <tr><td>microsoft\_mpnet-base</td><td>wikitext-2-raw-v1</td><td>g4dn.16xlarge</td><td>float16</td><td>96</td><td>92</td></tr>
-  <tr><td>microsoft\_mpnet-base</td><td>wikitext-2-raw-v1</td><td>p3.2xlarge</td><td>float16</td><td>96</td><td>101</td></tr>
-  <tr><td>microsoft\_mpnet-base</td><td>wikitext-2-raw-v1</td><td>p3.8xlarge</td><td>float16</td><td>96</td><td>101</td></tr>
-  <tr><td>microsoft\_mpnet-base</td><td>wikitext-2-raw-v1</td><td>g5.4xlarge</td><td>float16</td><td>128</td><td>152</td></tr>
+  <tr><td>jplu_tf-xlm-roberta-base</td><td>wikitext-2-raw-v1</td><td>g4dn.16xlarge</td><td>float16</td><td>28</td><td>24</td></tr>
+  <tr><td>jplu_tf-xlm-roberta-base</td><td>wikitext-2-raw-v1</td><td>p3.2xlarge</td><td>float16</td><td>32</td><td>24</td></tr>
+  <tr><td>jplu_tf-xlm-roberta-base</td><td>wikitext-2-raw-v1</td><td>p3.8xlarge</td><td>float16</td><td>32</td><td>26</td></tr>
+  <tr><td>jplu_tf-xlm-roberta-base</td><td>wikitext-2-raw-v1</td><td>g5.4xlarge</td><td>float16</td><td>66</td><td>52</td></tr>
+  <tr><td>microsoft_mpnet-base</td><td>wikitext-2-raw-v1</td><td>g4dn.16xlarge</td><td>float16</td><td>96</td><td>92</td></tr>
+  <tr><td>microsoft_mpnet-base</td><td>wikitext-2-raw-v1</td><td>p3.2xlarge</td><td>float16</td><td>96</td><td>101</td></tr>
+  <tr><td>microsoft_mpnet-base</td><td>wikitext-2-raw-v1</td><td>p3.8xlarge</td><td>float16</td><td>96</td><td>101</td></tr>
+  <tr><td>microsoft_mpnet-base</td><td>wikitext-2-raw-v1</td><td>g5.4xlarge</td><td>float16</td><td>128</td><td>152</td></tr>
   <tr><td>roberta-base</td><td>wikitext-2-raw-v1</td><td>g4dn.16xlarge</td><td>float16</td><td>64</td><td>72</td></tr>
   <tr><td>roberta-base</td><td>wikitext-2-raw-v1</td><td>p3.2xlarge</td><td>float16</td><td>64</td><td>84</td></tr>
   <tr><td>roberta-base</td><td>wikitext-2-raw-v1</td><td>p3.8xlarge</td><td>float16</td><td>64</td><td>86</td></tr>
@@ -347,17 +347,17 @@ Tested using [TensorFlow Model Garden](https://github.com/tensorflow/models) wit
   <tr><th>Model</th><th>Dataset</th><th>Instance type</th><th>Batch size for native frameworks </th><th>Batch size for SageMaker Training Compiler </th></tr>
 </thead>
 <tbody>
-  <tr><td>ResNet50</td><td>ImageNet</td><td>ml.g4dn.2xlarge</td><td>192</td><td>256\*</td></tr>
+  <tr><td>ResNet50</td><td>ImageNet</td><td>ml.g4dn.2xlarge</td><td>192</td><td>256*</td></tr>
   <tr><td rowspan="3">ResNet101</td><td rowspan="3">ImageNet</td><td>ml.g4dn.2xlarge</td><td>128</td><td>160</td></tr>
-  <tr><td>ml.g5.2xlarge</td><td>224</td><td>256\*</td></tr>
+  <tr><td>ml.g5.2xlarge</td><td>224</td><td>256*</td></tr>
   <tr><td>ml.p3.16xlarge</td><td>1536</td><td>1792</td></tr>
   <tr><td rowspan="3">ResNet152</td><td rowspan="3">ImageNet</td><td>ml.g5.2xlarge</td><td>192</td><td>224</td></tr>
   <tr><td>ml.p3.2xlarge</td><td>160</td><td>160</td></tr>
   <tr><td>ml.p3.16xlarge</td><td>1024</td><td>1280</td></tr>
-  <tr><td rowspan="4">VisionTransformer</td><td rowspan="4">ImageNet</td><td>ml.g4dn.2xlarge</td><td>80</td><td>128\*</td></tr>
-  <tr><td>ml.g5.2xlarge</td><td>112</td><td>128\*</td></tr>
-  <tr><td>ml.p3.2xlarge</td><td>56</td><td>128\*</td></tr>
-  <tr><td>ml.p3.16xlarge</td><td>640</td><td>1024\*</td></tr>
+  <tr><td rowspan="4">VisionTransformer</td><td rowspan="4">ImageNet</td><td>ml.g4dn.2xlarge</td><td>80</td><td>128*</td></tr>
+  <tr><td>ml.g5.2xlarge</td><td>112</td><td>128*</td></tr>
+  <tr><td>ml.p3.2xlarge</td><td>56</td><td>128*</td></tr>
+  <tr><td>ml.p3.16xlarge</td><td>640</td><td>1024*</td></tr>
   <tr><td rowspan="4">DetectionTransformer-ResNet50</td><td rowspan="4">COCO-2017</td><td>ml.g4dn.2xlarge</td><td>2</td><td>2</td></tr>
   <tr><td>ml.g5.2xlarge</td><td>3</td><td>6</td></tr>
   <tr><td>ml.p3.2xlarge</td><td>2</td><td>4</td></tr>

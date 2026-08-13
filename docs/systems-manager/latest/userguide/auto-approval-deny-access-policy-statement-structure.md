@@ -178,7 +178,7 @@ When creating the context of an auto-approval or deny-access policy using variou
 
 - **like**
   - **Types and overloads:** (string, string) → Boolean
-  - **Description:** Infix operator. t like p checks if the text t matches the pattern p, which may include wildcard characters \* that match 0 or more of any character. In order to match a literal star character in t, you can use the special escaped character sequence \\\* in p.
+  - **Description:** Infix operator. t like p checks if the text t matches the pattern p, which may include wildcard characters \* that match 0 or more of any character. To match a literal star character in t, you can use the special escaped character sequence \\\* in p.
 
 - **.hasTag()**
   - **Types and overloads:** (entity, string) → Boolean

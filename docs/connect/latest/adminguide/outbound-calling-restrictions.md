@@ -26,7 +26,7 @@ UIFN numbers are designed to be used for inbound calls only. They cannot be used
 ## Redirection of calls
 <a name="restriction3"></a>
 
-If you are using Amazon Connect to redirect calls: If you are receiving calls with Anonymous (withheld CLI), you must use an Connect Customer number for the transfer.
+If you are using Amazon Connect to redirect calls: If you are receiving calls with Anonymous (withheld CLI), you must use a Connect Customer number for the transfer.
 
 **Important:** Anonymous calls (calls without caller ID) are increasingly blocked by carriers as anti-spam measures and may violate telecommunications regulations in many countries. Always configure a valid caller ID number from your Amazon Connect instance to ensure reliable call delivery.
 

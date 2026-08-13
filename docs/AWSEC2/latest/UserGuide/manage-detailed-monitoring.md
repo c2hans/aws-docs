@@ -24,7 +24,7 @@ The following table highlights the differences between basic monitoring and deta
 ## Required permissions
 <a name="iam-detailed-monitoring"></a>
 
-To enable detailed monitoring for an instance, your user must have permission to use the [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MonitorInstances.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MonitorInstances.html) API action. To turn off detailed monitoring for an instance, your user must have permission to use the [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UnmonitorInstances.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UnmonitorInstances.html) API action.
+To enable detailed monitoring for an instance, your user must have permission to use the [MonitorInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MonitorInstances.html) API action. To turn off detailed monitoring for an instance, your user must have permission to use the [UnmonitorInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UnmonitorInstances.html) API action.
 
 ## Enable detailed monitoring at launch
 <a name="enable-detailed-monitoring"></a>

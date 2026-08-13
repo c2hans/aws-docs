@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/k-means-api-config.h
 # K-Means Hyperparameters
 <a name="k-means-api-config"></a>
 
-In the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) request, you specify the training algorithm that you want to use. You can also specify algorithm-specific hyperparameters as string-to-string maps. The following table lists the hyperparameters for the k-means training algorithm provided by Amazon SageMaker AI. For more information about how k-means clustering works, see [How K-Means Clustering Works](algo-kmeans-tech-notes.md).
+In the [`CreateTrainingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) request, you specify the training algorithm that you want to use. You can also specify algorithm-specific hyperparameters as string-to-string maps. The following table lists the hyperparameters for the k-means training algorithm provided by Amazon SageMaker AI. For more information about how k-means clustering works, see [How K-Means Clustering Works](algo-kmeans-tech-notes.md).
 
 | Parameter Name | Description |
 | --- | --- |

@@ -26,7 +26,7 @@ The role allows App Runner to perform the following tasks:
 The AWSServiceRoleForAppRunnerNetworking service-linked role trusts the following services to assume the role:
 + `networking.apprunner.amazonaws.com`
 
-The role permissions policy named [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AppRunnerNetworkingServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AppRunnerNetworkingServiceRolePolicy.html) contains all of the permissions that App Runner needs to complete actions on your behalf.
+The role permissions policy named [`AppRunnerNetworkingServiceRolePolicy`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AppRunnerNetworkingServiceRolePolicy.html) contains all of the permissions that App Runner needs to complete actions on your behalf.
 
 You must configure permissions to allow an IAM entity (such as a user, group, or role) to create, edit, or delete a service-linked role. For more information, see [Service-Linked Role Permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#service-linked-role-permissions) in the *IAM User Guide*.
 

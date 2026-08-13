@@ -13,7 +13,6 @@ The following related resources can help you as you work with this service.
 Each AWS service has its own documentation that you can use to help understand the service.
 + **[AWS Pricing Calculator Frequently Asked Questions](https://aws.amazon.com/calculator/calculator-faq/)** – Explore the FAQs that are listed in the AWS Marketing pages
 + **[AWS Pricing Calculator pricing assumptions](https://aws.amazon.com/calculator/calculator-assumptions/) –** Understand the disclaimers for AWS Pricing Calculator prices.
-+ **[AWS IQ](https://aws.amazon.com/iq/?ref=c_pc) –** Connect with AWS certified experts on AWS IQ to get help with your estimations.
 + **[Amazon Elastic Compute Cloud documentation](https://aws.amazon.com/documentation/ec2/?id=docs_gateway)** – Provides the documentation for using Amazon Elastic Compute Cloud (Amazon EC2).
 + **[Elastic Load Balancing documentation](https://docs.aws.amazon.com/elasticloadbalancing/)** – Provides the documentation for using Elastic Load Balancing.
 + **[Amazon Elastic Block Store documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html)** – Provides the documentation for using Amazon Elastic Block Store.

@@ -59,7 +59,7 @@ To create this role, go to your IAM console and create the `ResourceSnapshotJobR
 
 ------
 
-After creating this role, you need to attach the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralSellingResourceSnapshotJobExecutionRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralSellingResourceSnapshotJobExecutionRolePolicy.html) AWS managed policy, or attach the following permissions policy:
+After creating this role, you need to attach the [AWSPartnerCentralSellingResourceSnapshotJobExecutionRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralSellingResourceSnapshotJobExecutionRolePolicy.html) AWS managed policy, or attach the following permissions policy:
 
 ------
 #### [ JSON ]
@@ -96,7 +96,7 @@ After creating this role, you need to attach the [https://docs.aws.amazon.com/aw
 
 Replace `{account}` with your AWS account ID.
 
-After you create the `ResourceSnapshotJobRole` role and attach the permissions, you need to set the `ResourceSnapshotJobRole` for your organization. Use the [https://docs.aws.amazon.com/partner-central/latest/APIReference/API_PutSellingSystemSettings.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_PutSellingSystemSettings.html) action to set the role you created as the `ResourceSnapshotJobRole` for your company (identified by your AWS account):
+After you create the `ResourceSnapshotJobRole` role and attach the permissions, you need to set the `ResourceSnapshotJobRole` for your organization. Use the [PutSellingSystemSettings](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_PutSellingSystemSettings.html) action to set the role you created as the `ResourceSnapshotJobRole` for your company (identified by your AWS account):
 
 ```
 aws-cli/2.13.5 Python/3.11.4 Linux/4.14.255-314-253.539.amzn2.x86_64
@@ -119,13 +119,13 @@ Partners can collaborate on opportunities that originate from both partners and 
 
 1. Follow the steps in [Finding and connecting with partners](https://docs.aws.amazon.com/partner-central/latest/sales-guide/partner-connections.html#finding-partners) in the *AWS Partner Central Sales Guide*. You must connect with partners before you can invite them to opportunities. This connection grants mutual access to each other's account IDs, ensuring invitations reach the intended partner account.
 
-1. Use the [https://docs.aws.amazon.com/partner-central/latest/APIReference/API_StartEngagementFromOpportunityTask.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_StartEngagementFromOpportunityTask.html) action to create an engagement and associate an opportunity with it. This asynchronous action performs the following tasks sequentially:
+1. Use the [StartEngagementFromOpportunityTask](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_StartEngagementFromOpportunityTask.html) action to create an engagement and associate an opportunity with it. This asynchronous action performs the following tasks sequentially:
 
    1. Creates an engagement.
 
    1. Associates the opportunity with the engagement.
 
-   1. Invokes the [https://docs.aws.amazon.com/partner-central/latest/APIReference/API_CreateEngagementInvitation.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_CreateEngagementInvitation.html) action to AWS.
+   1. Invokes the [CreateEngagementInvitation](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_CreateEngagementInvitation.html) action to AWS.
 
    1. Submits the opportunity to AWS.
 
@@ -133,7 +133,7 @@ Partners can collaborate on opportunities that originate from both partners and 
 
 1. Invite other partners to join.
 
-   1. To get the engagement ID associated with your opportunity, use the [https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListEngagementFromOpportunityTasks.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListEngagementFromOpportunityTasks.html) action, filtered by the `TaskIdentifier` returned in the previous step.
+   1. To get the engagement ID associated with your opportunity, use the [ListEngagementFromOpportunityTasks](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListEngagementFromOpportunityTasks.html) action, filtered by the `TaskIdentifier` returned in the previous step.
 
    1. Use the receiving partner's engagement ID and account ID to send an invitation with `CreateEngagementInvitation`.
 
@@ -142,7 +142,7 @@ A successful invitation sends an engagement invitation created event to the rece
 ## Retrieving engagement invitation details
 <a name="retrieving-invitation-details"></a>
 
- When you receive an engagement invitation created event, use the [https://docs.aws.amazon.com/partner-central/latest/APIReference/API_GetEngagementInvitation.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_GetEngagementInvitation.html) action to retrieve the invitation details. The response includes essential information about the customer opportunity associated with the engagement.
+ When you receive an engagement invitation created event, use the [GetEngagementInvitation](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_GetEngagementInvitation.html) action to retrieve the invitation details. The response includes essential information about the customer opportunity associated with the engagement.
 
 Review the invitation details, particularly the `InvitationMessage`, `Project.Title`, `Project.CustomerUseCase`, and `Project.CustomerBusinessProblem` fields. This information provides context about the customer opportunity and the inviting partner's expectations for collaboration.
 
@@ -154,10 +154,10 @@ Use these details to evaluate if you want to pursue the opportunity by accepting
 When a partner sends you an engagement invitation, it creates an engagement invitation created event that notifies you of the invitation. You have the option to accept or reject the invitation. This decision determines your involvement in the multipartner opportunity.
 
 **To reject an engagement invitation:**
-Use the [https://docs.aws.amazon.com/partner-central/latest/APIReference/API_RejectEngagementInvitation.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_RejectEngagementInvitation.html) action to reject the invitation. You must provide a `RejectionReason` parameter explaining your decision. Once rejected, you lose access to the invitation details, and an engagement invitation rejected event notifies the sending partner that you have rejected their invitation.
+Use the [RejectEngagementInvitation](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_RejectEngagementInvitation.html) action to reject the invitation. You must provide a `RejectionReason` parameter explaining your decision. Once rejected, you lose access to the invitation details, and an engagement invitation rejected event notifies the sending partner that you have rejected their invitation.
 
 **To accept an engagement invitation:**
-To accept the invitation and proceed with the multipartner opportunity, use the [https://docs.aws.amazon.com/partner-central/latest/APIReference/API_StartEngagementByAcceptingInvitationTask.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_StartEngagementByAcceptingInvitationTask.html) action. This asynchronous action performs the following tasks sequentially:
+To accept the invitation and proceed with the multipartner opportunity, use the [StartEngagementByAcceptingInvitationTask](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_StartEngagementByAcceptingInvitationTask.html) action. This asynchronous action performs the following tasks sequentially:
 
 1. Accepts the engagement invitation.
 
@@ -198,9 +198,9 @@ If the sending partner initiates an engagement on an opportunity with `Lifecycle
 
 1. An opportunity created event is triggered with the corresponding opportunity ID.
 
-1. Partners can use the [https://docs.aws.amazon.com/partner-central/latest/APIReference/API_GetOpportunity.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_GetOpportunity.html) action with the opportunity ID to retrieve the full opportunity details.
+1. Partners can use the [GetOpportunity](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_GetOpportunity.html) action with the opportunity ID to retrieve the full opportunity details.
 
-However, the approved opportunity may not have some partner-specific details that were not copied from the sending partner's opportunity. The receiving partner should update these details using the [https://docs.aws.amazon.com/partner-central/latest/APIReference/API_UpdateOpportunity.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_UpdateOpportunity.html) action when the opportunity stage is updated to `Qualified` or a later stage:
+However, the approved opportunity may not have some partner-specific details that were not copied from the sending partner's opportunity. The receiving partner should update these details using the [UpdateOpportunity](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_UpdateOpportunity.html) action when the opportunity stage is updated to `Qualified` or a later stage:
 +  `Project.CustomerUseCase`
 +  `Project.DeliveryModels`
 +  `Solution`
@@ -211,7 +211,7 @@ However, the approved opportunity may not have some partner-specific details tha
 +  `Marketing.source`
 +  `Marketing.AwsFundingUsed`
 
- Once the opportunity is created in the receiving partner's account, it can be managed and updated like any other opportunity within the partner's system. Partners can use the [https://docs.aws.amazon.com/partner-central/latest/APIReference/API_UpdateOpportunity.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_UpdateOpportunity.html) action to make changes or provide more information about their involvement in the opportunity.
+ Once the opportunity is created in the receiving partner's account, it can be managed and updated like any other opportunity within the partner's system. Partners can use the [UpdateOpportunity](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_UpdateOpportunity.html) action to make changes or provide more information about their involvement in the opportunity.
 
 ## Using snapshots to receive partner updates
 <a name="using-snapshots-to-receive-partner-updates"></a>
@@ -219,11 +219,11 @@ However, the approved opportunity may not have some partner-specific details tha
 Within an engagement, partners maintain and update their opportunities independently. When someone revises an engagement's resources, such as adding an opportunity, an engagement resource snapshot created event is published.
 
 To stay informed about changes and access the most current information from other partners' opportunities, you can use the following actions:
-+ [https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListEngagementResourceAssociations.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListEngagementResourceAssociations.html) – Use this action to retrieve the engagement ID associated with the opportunity.
-+ [https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListResourceSnapshots.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListResourceSnapshots.html) – Use this action to retrieve a comprehensive list of all opportunity snapshots associated with the engagement, providing an overview of available snapshots across all partners.
-+ [https://docs.aws.amazon.com/partner-central/latest/APIReference/API_GetResourceSnapshot.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_GetResourceSnapshot.html) – Use this action to obtain real-time summaries of specific opportunity snapshots, allowing you to view the most up-to-date information without directly accessing another partner's opportunity.
++ [ListEngagementResourceAssociations](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListEngagementResourceAssociations.html) – Use this action to retrieve the engagement ID associated with the opportunity.
++ [ListResourceSnapshots](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListResourceSnapshots.html) – Use this action to retrieve a comprehensive list of all opportunity snapshots associated with the engagement, providing an overview of available snapshots across all partners.
++ [GetResourceSnapshot](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_GetResourceSnapshot.html) – Use this action to obtain real-time summaries of specific opportunity snapshots, allowing you to view the most up-to-date information without directly accessing another partner's opportunity.
 
-If you identify relevant changes or updates from another partner's opportunity that should be reflected in your own, use the [https://docs.aws.amazon.com/partner-central/latest/APIReference/API_UpdateOpportunity.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_UpdateOpportunity.html) action. This action facilitates selectively incorporating pertinent data into your opportunity, ensuring alignment and consistency across the engagement.
+If you identify relevant changes or updates from another partner's opportunity that should be reflected in your own, use the [UpdateOpportunity](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_UpdateOpportunity.html) action. This action facilitates selectively incorporating pertinent data into your opportunity, ensuring alignment and consistency across the engagement.
 
 ## Viewing engagement members
 <a name="viewing-engagement-members"></a>
@@ -232,9 +232,9 @@ An engagement on a multipartner opportunity can have up to ten partners. Wheneve
 
 To view all members collaborating within an engagement, follow these steps:
 
-1.  Use the [https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListEngagementResourceAssociations.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListEngagementResourceAssociations.html) action to retrieve the engagement ID associated with the opportunity.
+1.  Use the [ListEngagementResourceAssociations](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListEngagementResourceAssociations.html) action to retrieve the engagement ID associated with the opportunity.
 
-1. Provide the ID from step 1 to the [https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListEngagementMembers.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListEngagementMembers.html) action to fetch the partner details of engagement members.
+1. Provide the ID from step 1 to the [ListEngagementMembers](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListEngagementMembers.html) action to fetch the partner details of engagement members.
 **Note**
  Only members of an engagement can invoke the `ListEngagementMembers` action.
 
@@ -245,11 +245,11 @@ To view all members collaborating within an engagement, follow these steps:
 
 To track the status of resource snapshot jobs associated with a multipartner opportunity in an engagement, follow these steps:
 
-1. Use the [https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListEngagementResourceAssociations.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListEngagementResourceAssociations.html) action to retrieve the engagement ID associated with the opportunity.
+1. Use the [ListEngagementResourceAssociations](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListEngagementResourceAssociations.html) action to retrieve the engagement ID associated with the opportunity.
 
-1. Provide the ID from step 1 to the [https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListResourceSnapshotJobs.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListResourceSnapshotJobs.html) action to generate a list of all snapshot jobs owned by the caller in the engagement. Retrieve the job ID from the response.
+1. Provide the ID from step 1 to the [ListResourceSnapshotJobs](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_ListResourceSnapshotJobs.html) action to generate a list of all snapshot jobs owned by the caller in the engagement. Retrieve the job ID from the response.
 
-1. Provide the job ID to the [https://docs.aws.amazon.com/partner-central/latest/APIReference/API_GetResourceSnapshotJob.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_GetResourceSnapshotJob.html) action to track the job status and see if it's running.
+1. Provide the job ID to the [GetResourceSnapshotJob](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_GetResourceSnapshotJob.html) action to track the job status and see if it's running.
 
  The `ResourceSnapshotJob` operation publishes metrics to Amazon CloudWatch for its asynchronous operations. CloudWatch processes the data into readable, near real-time metrics to help you monitor the performance and health of the service.
 

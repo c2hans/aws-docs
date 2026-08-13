@@ -113,7 +113,7 @@ Type: Boolean
 Required: No
 
  ** readonlyRootFilesystem **   <a name="Batch-Type-ContainerDetail-readonlyRootFilesystem"></a>
-When this parameter is true, the container is given read-only access to its root file system. This parameter maps to `ReadonlyRootfs` in the [Create a container](https://docs.docker.com/engine/api/v1.23/#create-a-container) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.23/) and the `--read-only` option to [https://docs.docker.com/engine/reference/commandline/run/](https://docs.docker.com/engine/reference/commandline/run/).
+When this parameter is true, the container is given read-only access to its root file system. This parameter maps to `ReadonlyRootfs` in the [Create a container](https://docs.docker.com/engine/api/v1.23/#create-a-container) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.23/) and the `--read-only` option to [`docker run`](https://docs.docker.com/engine/reference/commandline/run/).
 Type: Boolean
 Required: No
 

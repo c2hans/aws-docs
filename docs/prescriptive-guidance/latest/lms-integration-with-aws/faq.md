@@ -61,7 +61,7 @@ In this section, we'll use Moodle as our example LMS platform to demonstrate the
 
 ![Moodle plugin calls API Gateway, Lambda, and Amazon Bedrock for AI responses.](http://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/803d15f1-bcc9-4951-abe8-dded8f474b92.png)
 
-[https://aws.amazon.com/bedrock/guardrails/](https://aws.amazon.com/bedrock/guardrails/)
+[*Amazon Bedrock*](https://aws.amazon.com/bedrock/guardrails/)
 
 *Figure 6: LMS Plugin Integration with *
 

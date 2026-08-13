@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/additional-capabilities.html
 ---
 
-# Additional Capabilities
+# Additional capabilities
 <a name="additional-capabilities"></a>
 
 Amazon Bedrock provides additional capabilities to enhance your generative AI applications:

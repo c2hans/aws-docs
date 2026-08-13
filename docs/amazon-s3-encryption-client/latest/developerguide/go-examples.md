@@ -64,7 +64,7 @@ The following example shows you how to use the Amazon S3 Encryption Client for G
    }
    ```
 
-1. Encrypt your plaintext object by calling [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html). To include an optional material description, add an `EncryptionContext` value to the `context` and supply this value to the `PutObject` request.
+1. Encrypt your plaintext object by calling [`PutObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html). To include an optional material description, add an `EncryptionContext` value to the `context` and supply this value to the `PutObject` request.
 
    1. The Amazon S3 Encryption Client provides the encryption materials: one plaintext data key and one copy of that data key encrypted by your wrapping key.
 
@@ -89,7 +89,7 @@ The following example shows you how to use the Amazon S3 Encryption Client for G
    }
    ```
 
-1. Decrypt your encrypted object by calling [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html).
+1. Decrypt your encrypted object by calling [`GetObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html).
 
    1. The Amazon S3 Encryption Client uses your wrapping key to decrypt the encrypted data key.
 

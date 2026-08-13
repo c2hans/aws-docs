@@ -28,9 +28,9 @@ Instead of logging on directly to a server to create a user account or group, yo
 
 1. Enter a value for the **Name** of the new user.
 
-1. (Recommended) Select the check box next to **Set password**. You will be prompted to provide a password for the new user at the end of the procedure.
+1. (Recommended) Select the check box next to **Set password**. You are prompted to provide a password for the new user at the end of the procedure.
 
-1. Select **Create user**. If you selected the check box to create a password for the new user, you will be prompted to enter a value for the password and select **Done**. If the password you specify doesn't meet the requirements specified by your managed node's local or domain policies, an error is returned.
+1. Select **Create user**. If you selected the check box to create a password for the new user, you are prompted to enter a value for the password and select **Done**. If the password you specify doesn't meet the requirements specified by your managed node's local or domain policies, an error is returned.
 
 **To create an OS group using Fleet Manager**
 

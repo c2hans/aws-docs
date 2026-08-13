@@ -89,7 +89,7 @@ Learn about how customers scale AWS Glue beyond the traditional setup and how th
 <a name="accessing-aws-glue"></a>
 
  You can create, view, and manage your AWS Glue jobs using the following interfaces:
-+  **AWS Glue console** – Provides a web interface for you to create, view, and manage your AWS Glue jobs. To access the console, see [https://console.aws.amazon.com/glue](https://console.aws.amazon.com/glue).
++  **AWS Glue console** – Provides a web interface for you to create, view, and manage your AWS Glue jobs. To access the console, see [AWS Glue](https://console.aws.amazon.com/glue).
 +  **AWS Glue Studio** – Provides a graphical interface for you to create and edit your AWS Glue jobs visually. For more information, see [Building visual ETL jobs](author-job-glue.md).
 +  **AWS Glue section of the AWS CLI Reference** – Provides AWS CLI commands that you can use with AWS Glue. For more information, see [AWS CLI Reference for AWS Glue](https://docs.aws.amazon.com/cli/latest/reference/glue/index.html).
 +  **AWS Glue API** – Provides a complete API reference for developers. For more information, see [AWS Glue API](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api.html).

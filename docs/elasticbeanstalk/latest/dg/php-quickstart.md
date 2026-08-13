@@ -70,7 +70,7 @@ Use the following command to run your application locally.
 ~$ php -S localhost:5000
 ```
 
-Open a browser to [http://localhost:5000](http://localhost:5000).
+Open a browser to [`http://localhost:5000`](http://localhost:5000).
 
 You should see your hello message in the browser and log messages in your terminal.
 

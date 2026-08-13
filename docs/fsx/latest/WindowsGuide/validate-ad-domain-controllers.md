@@ -110,4 +110,4 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/validate-ad-doma
    ```
 
 **Note**
-As an alternative to the above procedure, you can use the `AWSSupport-ValidateFSxWindowsADConfig` runbook to validate your self-managed Active Directory configuration. For more information, see [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/awssupport-validate-fsxwindows-adconfig.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/awssupport-validate-fsxwindows-adconfig.html) in the *AWS Systems Manager Automation runbook reference*.
+As an alternative to the above procedure, you can use the `AWSSupport-ValidateFSxWindowsADConfig` runbook to validate your self-managed Active Directory configuration. For more information, see [`AWSSupport-ValidateFSxWindowsADConfig`](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/awssupport-validate-fsxwindows-adconfig.html) in the *AWS Systems Manager Automation runbook reference*.

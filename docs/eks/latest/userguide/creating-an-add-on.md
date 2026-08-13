@@ -263,14 +263,14 @@ You can create an Amazon EKS add-on using `eksctl`, the AWS Management Console, 
 
 1. Determine if the add-on requires IAM permissions. If so, you need to (1) determine if you want to use EKS Pod Identities or IAM Roles for Service Accounts (IRSA), (2) determine the ARN of the IAM role to use with the add-on, and (3) determine the name of the Kubernetes service account used by the add-on. For more information, see [Retrieve IAM information about an Amazon EKS add-on](retreive-iam-info.md).
    + Amazon EKS suggests using EKS Pod Identities if the add-on supports it. This requires the [Pod Identity Agent is installed on your cluster](pod-identities.md). For more information about using Pod Identities with Add-ons, see [IAM roles for Amazon EKS add-ons](add-ons-iam.md).
-   + If the add-on or your cluster is not setup for EKS Pod Identities, use IRSA. [Confirm IRSA is setup on your cluster. ](iam-roles-for-service-accounts.md)
-   +  [Review the Amazon EKS Add-ons documentation to determine if the add-on requires IAM permissions and the name of the associated Kubernetes service account. ](eks-add-ons.md)
+   + If the add-on or your cluster is not set up for EKS Pod Identities, use IRSA. [Confirm IRSA is set up on your cluster.](iam-roles-for-service-accounts.md)
+   +  [Review the Amazon EKS Add-ons documentation to determine if the add-on requires IAM permissions and the name of the associated Kubernetes service account.](eks-add-ons.md)
 
      1. Create an Amazon EKS add-on. Copy the command that follows to your device. Make the following modifications to the command as needed and then run the modified command:
    + Replace {{my-cluster}} with the name of your cluster.
    + Replace {{vpc-cni}} with an add-on name returned in the output of the previous step that you want to create.
    + Replace {{version-number}} with the version returned in the output of the previous step that you want to use.
-   + If you want to install the add-on into a custom Kubernetes namespace, add the `--namespace-config 'namespace=<my-namespace>` option. This option is only available for AWS and community add-ons. For more information, see [Custom namespace for add-ons](eks-add-ons.md#custom-namespace)
+   + If you want to install the add-on into a custom Kubernetes namespace, add the `--namespace-config 'namespace=<my-namespace>'` option. This option is only available for AWS and community add-ons. For more information, see [Custom namespace for add-ons](eks-add-ons.md#custom-namespace)
    + If the add-on doesn’t require IAM permissions, delete {{<service-account-configuration>}}.
    + Do one of the following:
      + If the add-on (1) requires IAM permissions, and (2) your cluster uses EKS Pod Identities, replace {{<service-account-configuration>}} with the following pod identity association. Replace {{<service-account-name>}} with the service account name used by the add-on. Replace {{<role-arn>}} with the ARN of an IAM role. The role must have the trust policy required by EKS Pod Identities.

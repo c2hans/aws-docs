@@ -42,7 +42,7 @@ Next, modify the change stream retention period based on how long you would like
 ## Step 3: Migrate your indexes
 <a name="docdb-migration.versions-step3"></a>
 
-Create the same indexes on your target Amazon DocumentDB cluster that you have on your source Amazon DocumentDB cluster. Although AWS DMS handles the migration of data, it does not migrate indexes. To migrate the indexes, use the Amazon DocumentDB Index Tool to export indexes from the source Amazon DocumentDB cluster. You can get the tool by creating a clone of the Amazon DocumentDB tools GitHub repo and following the instructions in [https://github.com/awslabs/amazon-documentdb-tools/blob/master/index-tool/README.md](https://github.com/awslabs/amazon-documentdb-tools/blob/master/index-tool/README.md). You can run the tool from an Amazon EC2 instance or an AWS Cloud9 environment running in the same Amazon VPC as your Amazon DocumentDB cluster.
+Create the same indexes on your target Amazon DocumentDB cluster that you have on your source Amazon DocumentDB cluster. Although AWS DMS handles the migration of data, it does not migrate indexes. To migrate the indexes, use the Amazon DocumentDB Index Tool to export indexes from the source Amazon DocumentDB cluster. You can get the tool by creating a clone of the Amazon DocumentDB tools GitHub repo and following the instructions in [`README.md`](https://github.com/awslabs/amazon-documentdb-tools/blob/master/index-tool/README.md). You can run the tool from an Amazon EC2 instance or an AWS Cloud9 environment running in the same Amazon VPC as your Amazon DocumentDB cluster.
 
 In the following example, replace each {{user input placeholder}} with your own information.
 

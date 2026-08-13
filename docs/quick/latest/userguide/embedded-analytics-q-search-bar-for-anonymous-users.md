@@ -90,7 +90,7 @@ In the following section, you can find how to authenticate your user and get the
 
 When a user accesses your app, the app assumes the IAM role on the user's behalf. Then the app adds the user to Amazon Quick Sight, if that user doesn't already exist. Next, it passes an identifier as the unique role session ID.
 
-For more information, see [https://docs.aws.amazon.com/quicksight/latest/APIReference/AnonymousUserQSearchBarEmbeddingConfiguration.html](https://docs.aws.amazon.com/quicksight/latest/APIReference/AnonymousUserQSearchBarEmbeddingConfiguration.html).
+For more information, see [`AnonymousUserQSearchBarEmbeddingConfiguration`](https://docs.aws.amazon.com/quicksight/latest/APIReference/AnonymousUserQSearchBarEmbeddingConfiguration.html).
 
 ### Java
 <a name="embedded-q-bar-for-anonymous-users-java"></a>
@@ -422,7 +422,7 @@ aws quicksight generate-embed-url-for-anonymous-user \
 --session-lifetime-in-minutes 15
 ```
 
-For more information about using this operation, see [https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUser.html](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUser.html). You can use this and other API operations in your own code.
+For more information about using this operation, see [GenerateEmbedUrlForRegisteredUser](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUser.html). You can use this and other API operations in your own code.
 
 ## Step 3: Embed the Q search bar URL
 <a name="embedded-q-bar-for-anonymous-users-step-3"></a>

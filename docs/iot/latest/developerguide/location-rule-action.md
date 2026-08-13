@@ -21,7 +21,7 @@ This rule action has the following requirements:
 When you create an AWS IoT rule with this action, you must specify the following information:
 
 `deviceId`
-The unique ID of the device providing the location data. For more information, see [https://docs.aws.amazon.com//location/latest/APIReference/API_DevicePositionUpdate.html](https://docs.aws.amazon.com//location/latest/APIReference/API_DevicePositionUpdate.html) from the *Amazon Location Service API Reference*.
+The unique ID of the device providing the location data. For more information, see [`DeviceId`](https://docs.aws.amazon.com//location/latest/APIReference/API_DevicePositionUpdate.html) from the *Amazon Location Service API Reference*.
 Supports [substitution templates](iot-substitution-templates.md): Yes
 
 `latitude`
@@ -102,7 +102,7 @@ The following JSON example defines a Location action with substitution templates
 }
 ```
 
-The following MQTT payload example shows how substitution templates in the preceding example accesses data. You can use the [https://docs.aws.amazon.com/cli/latest/reference/location/get-device-position-history.html](https://docs.aws.amazon.com/cli/latest/reference/location/get-device-position-history.html) CLI command to verify that the MQTT payload data is delivered in your location tracker.
+The following MQTT payload example shows how substitution templates in the preceding example accesses data. You can use the [**get-device-position-history**](https://docs.aws.amazon.com/cli/latest/reference/location/get-device-position-history.html) CLI command to verify that the MQTT payload data is delivered in your location tracker.
 
 ```
 {

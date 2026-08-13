@@ -24,9 +24,9 @@ Associations that run Chef recipes aren't supported on macOS.
 ## Getting started
 <a name="state-manager-chef-prereqs"></a>
 
-Before you create an `AWS-ApplyChefRecipes` document, prepare your Chef cookbooks and cookbook repository. If you don't already have a Chef cookbook that you want to use, you can get started by using a test `HelloWorld` cookbook that AWS has prepared for you. The `AWS-ApplyChefRecipes` document already points to this cookbook by default. Your cookbooks should be set up similarly to the following directory structure. In the following example, `jenkins` and `nginx` are examples of Chef cookbooks that are available in the [https://supermarket.chef.io/](https://supermarket.chef.io/) on the Chef website.
+Before you create an `AWS-ApplyChefRecipes` document, prepare your Chef cookbooks and cookbook repository. If you don't already have a Chef cookbook that you want to use, you can get started by using a test `HelloWorld` cookbook that AWS has prepared for you. The `AWS-ApplyChefRecipes` document already points to this cookbook by default. Your cookbooks should be set up similarly to the following directory structure. In the following example, `jenkins` and `nginx` are examples of Chef cookbooks that are available in the [Chef Supermarket](https://supermarket.chef.io/) on the Chef website.
 
-Though AWS can't officially support cookbooks on the [https://supermarket.chef.io/](https://supermarket.chef.io/) website, many of them work with the `AWS-ApplyChefRecipes` document. The following are examples of criteria to determine when you're testing a community cookbook:
+Though AWS can't officially support cookbooks on the [Chef Supermarket](https://supermarket.chef.io/) website, many of them work with the `AWS-ApplyChefRecipes` document. The following are examples of criteria to determine when you're testing a community cookbook:
 + The cookbook should support the Linux-based operating systems of the Systems Manager managed nodes that you're targeting.
 + The cookbook should be valid for the Chef client version (Chef 11 through Chef 18) that you use.
 + The cookbook is compatible with Chef Infra Client, and, doesn't require a Chef server.

@@ -40,7 +40,7 @@ Once you create a group, you can't remove a schedule from that group, or associa
 
 1. Open a new command prompt window.
 
-1. From the AWS Command Line Interface (AWS CLI), enter the following[https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/delete-schedule-group.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/delete-schedule-group.html) command to delete the schedule group. Replace the value for `--name` with your information.
+1. From the AWS Command Line Interface (AWS CLI), enter the following[`delete-schedule-group`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/delete-schedule-group.html) command to delete the schedule group. Replace the value for `--name` with your information.
 
    ```
    $ aws scheduler delete-schedule-group --name {{TestGroup}}
@@ -48,7 +48,7 @@ Once you create a group, you can't remove a schedule from that group, or associa
 
     If successful, this AWS CLI operation doesn't return a response.
 
-1. To verify that the group is in the `DELETING` state, run the following [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/get-schedule-group.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/get-schedule-group.html) command.
+1. To verify that the group is in the `DELETING` state, run the following [`get-schedule-group`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/get-schedule-group.html) command.
 
    ```
    $ aws scheduler get-schedule-group --name {{TestGroup}}

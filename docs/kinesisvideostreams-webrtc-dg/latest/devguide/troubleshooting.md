@@ -108,7 +108,7 @@ aws kinesisvideo get-signaling-channel-endpoint \
     --single-master-channel-endpoint-configuration Protocols=WSS,HTTPS,Role=MASTER
 ```
 
-The output from the [https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_GetSignalingChannelEndpoint.html](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_GetSignalingChannelEndpoint.html) command returns a response that looks like this:
+The output from the [`get-signaling-channel-endpoint`](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_GetSignalingChannelEndpoint.html) command returns a response that looks like this:
 
 ```
 {

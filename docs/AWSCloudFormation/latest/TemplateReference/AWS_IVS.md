@@ -9,6 +9,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::IVS::Channel](aws-resource-ivs-channel.md)
++ [AWS::IVS::Composition](aws-resource-ivs-composition.md)
 + [AWS::IVS::EncoderConfiguration](aws-resource-ivs-encoderconfiguration.md)
 + [AWS::IVS::IngestConfiguration](aws-resource-ivs-ingestconfiguration.md)
 + [AWS::IVS::PlaybackKeyPair](aws-resource-ivs-playbackkeypair.md)

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/testing-replay.ht
 
 The AWS SDK for Rust provides multiple approaches for testing your code that interacts with AWS services. This topic describes how to use the `StaticReplayClient` to create a fake HTTP client that can be used instead of the standard HTTP client that is normally used by AWS services. This client returns the HTTP responses that you specify rather than communicating with the service over the network, so that tests get known data for testing purposes.
 
-The `aws-smithy-http-client` crate includes a test utility class called [https://docs.rs/aws-smithy-http-client/latest/aws_smithy_http_client/test_util/struct.StaticReplayClient.html](https://docs.rs/aws-smithy-http-client/latest/aws_smithy_http_client/test_util/struct.StaticReplayClient.html). This HTTP client class can be specified instead of the default HTTP client when creating an AWS service object.
+The `aws-smithy-http-client` crate includes a test utility class called [`StaticReplayClient`](https://docs.rs/aws-smithy-http-client/latest/aws_smithy_http_client/test_util/struct.StaticReplayClient.html). This HTTP client class can be specified instead of the default HTTP client when creating an AWS service object.
 
 When initializing the `StaticReplayClient`, you provide a list of HTTP request and response pairs as `ReplayEvent` objects. While the test is running, each HTTP request is recorded and the client returns the next HTTP response found in the next `ReplayEvent` in the event list as the HTTP client's response. This lets the test run using known data and without a network connection.
 
@@ -32,7 +32,7 @@ The next response in the list is always returned, even if the sent request doesn
 
 Let's look at the tests for the same `determine_prefix_file_size()` function in the previous example, but using static replay instead of mocking.
 
-1. In a command prompt for your project directory, add the [https://crates.io/crates/aws-smithy-http-client](https://crates.io/crates/aws-smithy-http-client) crate as a dependency:
+1. In a command prompt for your project directory, add the [`aws-smithy-http-client`](https://crates.io/crates/aws-smithy-http-client) crate as a dependency:
 
    ```
    $ cargo add --dev aws-smithy-http-client --features test-util

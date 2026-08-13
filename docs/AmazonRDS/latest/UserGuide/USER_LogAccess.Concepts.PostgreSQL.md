@@ -59,7 +59,7 @@ After you complete the configuration, Amazon RDS publishes the log events to log
 ### AWS CLI
 <a name="USER_LogAccess.Concepts.PostgreSQL.PublishtoCloudWatchLogs.CLI"></a>
 
-You can publish PostgreSQL logs with the AWS CLI. You can call the [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) command with the following parameters.
+You can publish PostgreSQL logs with the AWS CLI. You can call the [`modify-db-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) command with the following parameters.
 + `--db-instance-identifier`
 + `--cloudwatch-logs-export-configuration`
 
@@ -67,9 +67,9 @@ You can publish PostgreSQL logs with the AWS CLI. You can call the [https://docs
 A change to the `--cloudwatch-logs-export-configuration` option is always applied to the DB instance immediately. Therefore, the `--apply-immediately` and `--no-apply-immediately` options have no effect.
 
 You can also publish PostgreSQL logs by calling the following CLI commands:
-+ [https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-instance-from-db-snapshot.html](https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-instance-from-db-snapshot.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-instance-to-point-in-time.html](https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-instance-to-point-in-time.html)
++ [`create-db-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html)
++ [`restore-db-instance-from-db-snapshot`](https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-instance-from-db-snapshot.html)
++ [`restore-db-instance-to-point-in-time`](https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-instance-to-point-in-time.html)
 
 Run one of these CLI commands with the following options:
 + `--db-instance-identifier`
@@ -120,7 +120,7 @@ For Windows:
 ### RDS API
 <a name="USER_LogAccess.Concepts.PostgreSQL.PublishtoCloudWatchLogs.API"></a>
 
-You can publish PostgreSQL logs with the RDS API. You can call the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html) action with the following parameters:
+You can publish PostgreSQL logs with the RDS API. You can call the [`ModifyDBInstance`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html) action with the following parameters:
 + `DBInstanceIdentifier`
 + `CloudwatchLogsExportConfiguration`
 
@@ -128,9 +128,9 @@ You can publish PostgreSQL logs with the RDS API. You can call the [https://docs
 A change to the `CloudwatchLogsExportConfiguration` parameter is always applied to the DB instance immediately. Therefore, the `ApplyImmediately` parameter has no effect.
 
 You can also publish PostgreSQL logs by calling the following RDS API operations:
-+ [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html)
-+ [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceFromDBSnapshot.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceFromDBSnapshot.html)
-+ [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceToPointInTime.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceToPointInTime.html)
++ [`CreateDBInstance`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html)
++ [`RestoreDBInstanceFromDBSnapshot`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceFromDBSnapshot.html)
++ [`RestoreDBInstanceToPointInTime`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceToPointInTime.html)
 
 Run one of these RDS API operations with the following parameters:
 + `DBInstanceIdentifier`

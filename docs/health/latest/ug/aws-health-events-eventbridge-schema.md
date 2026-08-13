@@ -17,15 +17,15 @@ The following is the schema for AWS Health events. The contents of the details p
   <tr><th colspan="4">Parameter</th><th>Description</th><th>Required</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="4">version</td><td>EventBridge version, currently "0".</td><td>Yes</td></tr>
-  <tr><td colspan="4">id</td><td>The unique identifier for the EventBridge event.</td><td>Yes</td></tr>
-  <tr><td colspan="4">detail-type</td><td>The type of detail. For AWS Health events, supported values are &AWS Health Event and AWS Health Abuse Event</td><td> Yes</td></tr>
-  <tr><td colspan="4">source</td><td>The event bus source. For AWS Health events, the supported value is `aws.health`</td><td>Yes</td></tr>
-  <tr><td colspan="4">account</td><td>The account ID to which the AWS Health event was sent . For organizational views this is a different account than the affected account if it's received in the management account or delegated administrator account. </td><td>Yes</td></tr>
-  <tr><td colspan="4">time</td><td>The time at which the notification was sent to EventBridge. Format: yyyy-mm-ddThh:mm:ssZ.</td><td>Yes</td></tr>
-  <tr><td colspan="4">region</td><td>The AWS Region that the notification was delivered to. This field doesn't indicate the impacted Region for this AWS Health event. That information is reported in `detail.eventRegion`. </td><td>Yes</td></tr>
-  <tr><td colspan="4">resources</td><td>Describes the list of affected resources, if any, within an account.<br />This field is empty if there are no resources referenced.</td><td>No</td></tr>
-  <tr><td colspan="4">detail</td><td>The section containing details of the AWS Health event, as described in the table immediately following this one.</td><td>Yes</td></tr>
+  <tr><td colspan="4"><b>version</b></td><td>EventBridge version, currently "0".</td><td>Yes</td></tr>
+  <tr><td colspan="4"><b>id</b></td><td>The unique identifier for the EventBridge event.</td><td>Yes</td></tr>
+  <tr><td colspan="4"><b>detail-type</b></td><td>The type of detail. For AWS Health events, supported values are <code>&amp;AWS Health Event</code> and <code>AWS Health Abuse Event</code></td><td> Yes</td></tr>
+  <tr><td colspan="4"><b>source</b></td><td>The event bus source. For AWS Health events, the supported value is <code>aws.health</code></td><td>Yes</td></tr>
+  <tr><td colspan="4"><b>account</b></td><td>The account ID to which the AWS Health event was sent . For organizational views this is a different account than the affected account if it's received in the management account or delegated administrator account. </td><td>Yes</td></tr>
+  <tr><td colspan="4"><b>time</b></td><td>The time at which the notification was sent to EventBridge. Format: <code>yyyy-mm-ddThh:mm:ssZ</code>.</td><td>Yes</td></tr>
+  <tr><td colspan="4"><b>region</b></td><td>The AWS Region that the notification was delivered to. This field doesn't indicate the impacted Region for this AWS Health event. That information is reported in <code>detail.eventRegion</code>. </td><td>Yes</td></tr>
+  <tr><td colspan="4"><b>resources</b></td><td>Describes the list of affected resources, if any, within an account.<br />This field is empty if there are no resources referenced.</td><td>No</td></tr>
+  <tr><td colspan="4"><b>detail</b></td><td>The section containing details of the AWS Health event, as described in the table immediately following this one.</td><td>Yes</td></tr>
 </tbody>
 </table>
 

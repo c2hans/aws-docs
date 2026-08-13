@@ -101,8 +101,8 @@ In addition, you can override your Lambda environment settings by using the foll
   <tr><th>Environment type</th><th>Runtime version</th><th>Instance size</th><th></th><th></th><th></th></tr>
 </thead>
 <tbody>
-  <tr><td>`linux-lambda`</td><td rowspan="2">`dotnet6`<br />`go1.21`<br />`corretto11`<br />`corretto17`<br />`corretto21`<br />`nodejs18`<br />`nodejs20`<br />`python3.11`<br />`python3.12`<br />`ruby3.2`</td><td rowspan="2">`1GB`<br />`2GB`<br />`4GB`<br />`8GB`<br />`10GB`</td><td></td><td></td><td></td></tr>
-  <tr><td>`arm-lambda`</td><td></td><td></td><td></td></tr>
+  <tr><td><code>linux-lambda</code></td><td rowspan="2"><code>dotnet6</code><br /><code>go1.21</code><br /><code>corretto11</code><br /><code>corretto17</code><br /><code>corretto21</code><br /><code>nodejs18</code><br /><code>nodejs20</code><br /><code>python3.11</code><br /><code>python3.12</code><br /><code>ruby3.2</code></td><td rowspan="2"><code>1GB</code><br /><code>2GB</code><br /><code>4GB</code><br /><code>8GB</code><br /><code>10GB</code></td><td></td><td></td><td></td></tr>
+  <tr><td><code>arm-lambda</code></td><td></td><td></td><td></td></tr>
 </tbody>
 </table>
 

@@ -119,4 +119,4 @@ For instructions about enabling a delegated administrator account for Cost Optim
 
 To disable the delegated admin Cost Optimization Hub account using the Cost Optimization Hub console, see [ Delegate an administrator account](https://docs.aws.amazon.com/cost-management/latest/userguide/coh-delegated-admin.html) in the *AWS Cost Management User Guide*.
 
- To remove a delegated administrator using the AWS CLI, see [https://docs.aws.amazon.com/cli/latest/](https://docs.aws.amazon.com/cli/latest/) in the *AWS Config CLI Reference*.
+ To remove a delegated administrator using the AWS CLI, see [`deregister-delegated-administrator`](https://docs.aws.amazon.com/cli/latest/) in the *AWS Config CLI Reference*.

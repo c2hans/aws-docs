@@ -53,7 +53,7 @@ To trace AWS SDK clients, the X-Ray SDK for Node.js requires a minimum version o
 <a name="xray-sdk-nodejs-dependencies"></a>
 
 The X-Ray SDK for Node.js is available from NPM.
-+ **Package** – [https://www.npmjs.com/package/aws-xray-sdk](https://www.npmjs.com/package/aws-xray-sdk)
++ **Package** – [`aws-xray-sdk`](https://www.npmjs.com/package/aws-xray-sdk)
 
 For local development, install the SDK in your project directory with npm.
 

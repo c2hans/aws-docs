@@ -44,3 +44,5 @@ On the settings page, you can do the following.
 + Configure lifecycle settings based on the total count of application versions or the age of application versions.
 + Specify whether to delete the source bundle from S3 when the application version is deleted.
 + Specify the service role under which the application version is deleted. To include all permissions required for version deletion, choose the default Elastic Beanstalk service role, named `aws-elasticbeanstalk-service-role`, or another service role using the Elastic Beanstalk managed service policies. For more information, see [Managing Elastic Beanstalk service roles](iam-servicerole.md).
+**Note**
+If role manager is enabled in your account, Elastic Beanstalk attaches the service role for you, and the **Service role** dropdown and **Create role** steps described here are replaced by a **Customize** option. To use a different role, choose **Customize**. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.

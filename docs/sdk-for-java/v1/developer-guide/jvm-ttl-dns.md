@@ -21,7 +21,7 @@ To modify the JVM’s TTL, set the [networkaddress.cache.ttl](https://docs.oracl
 ### Option 1: Set it programmatically in your application
 <a name="set-ttl-programmatically"></a>
 
-Call [https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/Security.html](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/Security.html) early in your application startup, before any AWS SDK clients are created and before any network requests are made:
+Call [`java.security.Security.setProperty()`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/Security.html) early in your application startup, before any AWS SDK clients are created and before any network requests are made:
 
 ```
 import java.security.Security;

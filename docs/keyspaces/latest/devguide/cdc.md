@@ -15,7 +15,7 @@ Amazon Keyspaces CDC streams are completely serverless, and you don't need to ma
 
 You can use the Amazon Keyspaces Streams API to build applications that consume Amazon Keyspaces CDC streams and take action based on the contents. For available endpoints, see [How to access CDC stream endpoints in Amazon Keyspaces](CDC_access-endpoints.md).
 
-For a complete listing of all operations available for Amazon Keyspaces in the Streams API, see [https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/Welcome.html](https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/Welcome.html).
+For a complete listing of all operations available for Amazon Keyspaces in the Streams API, see [*Amazon Keyspaces Streams API Reference*](https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/Welcome.html).
 
 **Topics**
 + [How change data capture (CDC) streams work in Amazon Keyspaces](cdc_how-it-works.md)

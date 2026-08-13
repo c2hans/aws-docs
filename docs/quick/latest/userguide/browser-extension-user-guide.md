@@ -144,7 +144,7 @@ As an author, after enabling the browser extension in your Quick application, yo
 
 For Google Chrome Enterprise environments, you can use organizational unit policies to manage extension deployment. The Chrome Web Store for Enterprise provides additional deployment options specifically designed for organizational use. Mozilla Firefox Enterprise offers similar capabilities through policy templates and enterprise distribution methods that allow for automated extension deployment across the organization. Microsoft Edge Enterprise provides policy settings for managing extensions through mobile device management (MDM) software.
 
-Policy settings from browser vendors: [https://mozilla.github.io/policy-templates/#extensionsettings](https://mozilla.github.io/policy-templates/#extensionsettings), [https://chromeenterprise.google/policies/#ExtensionSettings](https://chromeenterprise.google/policies/#ExtensionSettings), and [https://learn.microsoft.com/en-us/DeployEdge/microsoft-edge-policies#extensionsettings](https://learn.microsoft.com/en-us/DeployEdge/microsoft-edge-policies#extensionsettings).
+Policy settings from browser vendors: [Firefox](https://mozilla.github.io/policy-templates/#extensionsettings), [Chrome](https://chromeenterprise.google/policies/#ExtensionSettings), and [Edge](https://learn.microsoft.com/en-us/DeployEdge/microsoft-edge-policies#extensionsettings).
 
 **Deploy to Google Chrome Enterprise**
 

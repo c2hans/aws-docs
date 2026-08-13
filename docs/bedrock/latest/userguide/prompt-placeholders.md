@@ -23,8 +23,8 @@ Variables in the **Routing classifier** tab (such as `$action_routing$` and `$kn
 <tbody>
   <tr><td>$functions$</td><td>Anthropic Claude Instant, Claude v2.0</td><td rowspan="2">Action group API operations and knowledge bases configured for the agent. </td></tr>
   <tr><td>$tools$</td><td>Anthropic Claude v2.1, Claude 3 Sonnet, Claude 3 Haiku, Claude 3 Opus, Amazon Titan Text Premier</td></tr>
-  <tr><td>$conversation\_history$</td><td>Anthropic Claude Instant, Claude v2.0, Claude v2.1</td><td>Conversation history for the current session.</td></tr>
-  <tr><td>$question$</td><td>All</td><td>User input for the current InvokeAgent call in the session.</td></tr>
+  <tr><td>$conversation_history$</td><td>Anthropic Claude Instant, Claude v2.0, Claude v2.1</td><td>Conversation history for the current session.</td></tr>
+  <tr><td>$question$</td><td>All</td><td>User input for the current <code>InvokeAgent</code> call in the session.</td></tr>
 </tbody>
 </table>
 
@@ -40,19 +40,19 @@ Variables in the **Routing classifier** tab (such as `$action_routing$` and `$kn
 <tbody>
   <tr><td>$functions$</td><td>Anthropic Claude Instant, Claude v2.0</td><td rowspan="2">Action group API operations and knowledge bases configured for the agent. </td></tr>
   <tr><td>$tools$</td><td>Anthropic Claude v2.1, Claude 3 Sonnet, Claude 3 Haiku, Claude 3 Opus, Amazon Titan Text Premier</td></tr>
-  <tr><td>$agent\_scratchpad$</td><td>All</td><td>Designates an area for the model to write down its thoughts and actions it has taken. Replaced by predictions and output of the previous iterations in the current turn. Provides the model with context of what has been achieved for the given user input and what the next step should be.</td></tr>
-  <tr><td>$any\_function\_name$</td><td>Anthropic Claude Instant, Claude v2.0</td><td>A randomly chosen API name from the API names that exist in the agent's action groups.</td></tr>
-  <tr><td>$conversation\_history$</td><td>Anthropic Claude Instant, Claude v2.0, Claude v2.1</td><td>Conversation history for the current session</td></tr>
+  <tr><td>$agent_scratchpad$</td><td>All</td><td>Designates an area for the model to write down its thoughts and actions it has taken. Replaced by predictions and output of the previous iterations in the current turn. Provides the model with context of what has been achieved for the given user input and what the next step should be.</td></tr>
+  <tr><td>$any_function_name$</td><td>Anthropic Claude Instant, Claude v2.0</td><td>A randomly chosen API name from the API names that exist in the agent's action groups.</td></tr>
+  <tr><td>$conversation_history$</td><td>Anthropic Claude Instant, Claude v2.0, Claude v2.1</td><td>Conversation history for the current session</td></tr>
   <tr><td>$instruction$</td><td>All</td><td>Model instructions configured for the agent.</td></tr>
-  <tr><td>$model\_instruction$</td><td>Amazon Titan Text Premier</td><td>Model instructions configured for the agent.</td></tr>
-  <tr><td>$prompt\_session\_attributes$ </td><td>All</td><td>Session attributes preserved across a prompt.</td></tr>
-  <tr><td>$question$</td><td>All</td><td>User input for the current InvokeAgent call in the session.</td></tr>
+  <tr><td>$model_instruction$</td><td>Amazon Titan Text Premier</td><td>Model instructions configured for the agent.</td></tr>
+  <tr><td>$prompt_session_attributes$ </td><td>All</td><td>Session attributes preserved across a prompt.</td></tr>
+  <tr><td>$question$</td><td>All</td><td>User input for the current <code>InvokeAgent</code> call in the session.</td></tr>
   <tr><td>$thought$</td><td>Amazon Titan Text Premier</td><td>Thought prefix to start the thinking of each turn for the model.</td></tr>
-  <tr><td>$knowledge\_base\_guideline$</td><td>Anthropic Claude 3 Sonnet, Claude 3.5 Sonnet, Claude 3 Haiku, Claude 3 Opus</td><td>Instructions for the model to format the output with citations, if the results contain information from a knowledge base. These instructions are only added if a knowledge base is associated with the agent.</td></tr>
-  <tr><td>$knowledge\_base\_additional\_guideline$</td><td>Llama 3.1, Llama 3.2</td><td>Additional guidelines for using knowledge base search results to answer questions concisely with proper citations and structure. These are only added if a knowledge base is associated with the agent.</td></tr>
-  <tr><td>$memory\_content$</td><td>Anthropic Claude 3 Sonnet, Claude 3 Haiku</td><td>Content of the memory associated with the given memory ID</td></tr>
-  <tr><td>$memory\_guideline$</td><td>Anthropic Claude 3 Sonnet, Claude 3 Haiku</td><td>General instructions for the model when memory is enabled. See Default text for details.</td></tr>
-  <tr><td>$memory\_action\_guideline$</td><td>Anthropic Claude 3 Sonnet, Claude 3 Haiku</td><td>Specific instructions for the model to use memory data when memory is enabled. See Default text for more details.</td></tr>
+  <tr><td>$knowledge_base_guideline$</td><td>Anthropic Claude 3 Sonnet, Claude 3.5 Sonnet, Claude 3 Haiku, Claude 3 Opus</td><td>Instructions for the model to format the output with citations, if the results contain information from a knowledge base. These instructions are only added if a knowledge base is associated with the agent.</td></tr>
+  <tr><td>$knowledge_base_additional_guideline$</td><td>Llama 3.1, Llama 3.2</td><td>Additional guidelines for using knowledge base search results to answer questions concisely with proper citations and structure. These are only added if a knowledge base is associated with the agent.</td></tr>
+  <tr><td>$memory_content$</td><td>Anthropic Claude 3 Sonnet, Claude 3 Haiku</td><td>Content of the memory associated with the given memory ID</td></tr>
+  <tr><td>$memory_guideline$</td><td>Anthropic Claude 3 Sonnet, Claude 3 Haiku</td><td>General instructions for the model when memory is enabled. See <b>Default text</b> for details.</td></tr>
+  <tr><td>$memory_action_guideline$</td><td>Anthropic Claude 3 Sonnet, Claude 3 Haiku</td><td>Specific instructions for the model to use memory data when memory is enabled. See <b>Default text</b> for more details.</td></tr>
 </tbody>
 </table>
 
@@ -102,7 +102,7 @@ Variables in the **Routing classifier** tab (such as `$action_routing$` and `$kn
 
 You can use the following placeholder variables if you allow the agent to ask the user for more information by doing one of the following actions:
 + In the console, set in the **User input** in the agent details.
-+ Set the `parentActionGroupSignature` to `AMAZON.UserInput` with a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html) or [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentActionGroup.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentActionGroup.html) request.
++ Set the `parentActionGroupSignature` to `AMAZON.UserInput` with a [CreateAgentActionGroup](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html) or [UpdateAgentActionGroup](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentActionGroup.html) request.
 
 ****
 
@@ -111,12 +111,12 @@ You can use the following placeholder variables if you allow the agent to ask th
   <tr><th>Variable</th><th>Models supported</th><th>Replaced by</th></tr>
 </thead>
 <tbody>
-  <tr><td>$ask\_user\_missing\_parameters$</td><td>Anthropic Claude Instant, Claude v2.0</td><td rowspan="2">Instructions for the model to ask the user to provide required missing information.</td></tr>
-  <tr><td>$ask\_user\_missing\_information$</td><td>Anthropic Claude v2.1, Claude 3 Sonnet, Claude 3 Haiku, Claude 3 Opus</td></tr>
-  <tr><td>$ask\_user\_confirm\_parameters$</td><td>Anthropic Claude Instant, Anthropic Claude v2.0</td><td>Instructions for the model to ask the user to confirm parameters that the agent hasn't yet received or is unsure of.</td></tr>
-  <tr><td>$ask\_user\_function$</td><td>Anthropic Claude Instant, Anthropic Claude v2.0</td><td>A function to ask the user a question.</td></tr>
-  <tr><td>$ask\_user\_function\_format$</td><td>Anthropic Claude Instant, Anthropic Claude v2.0</td><td>The format of the function to ask the user a question.</td></tr>
-  <tr><td>$ask\_user\_input\_examples$</td><td>Anthropic Claude Instant, Anthropic Claude v2.0</td><td>Few-shot examples to inform the model how to predict when it should ask the user a question.</td></tr>
+  <tr><td>$ask_user_missing_parameters$</td><td>Anthropic Claude Instant, Claude v2.0</td><td rowspan="2">Instructions for the model to ask the user to provide required missing information.</td></tr>
+  <tr><td>$ask_user_missing_information$</td><td>Anthropic Claude v2.1, Claude 3 Sonnet, Claude 3 Haiku, Claude 3 Opus</td></tr>
+  <tr><td>$ask_user_confirm_parameters$</td><td>Anthropic Claude Instant, Anthropic Claude v2.0</td><td>Instructions for the model to ask the user to confirm parameters that the agent hasn't yet received or is unsure of.</td></tr>
+  <tr><td>$ask_user_function$</td><td>Anthropic Claude Instant, Anthropic Claude v2.0</td><td>A function to ask the user a question.</td></tr>
+  <tr><td>$ask_user_function_format$</td><td>Anthropic Claude Instant, Anthropic Claude v2.0</td><td>The format of the function to ask the user a question.</td></tr>
+  <tr><td>$ask_user_input_examples$</td><td>Anthropic Claude Instant, Anthropic Claude v2.0</td><td>Few-shot examples to inform the model how to predict when it should ask the user a question.</td></tr>
 </tbody>
 </table>
 
@@ -182,7 +182,7 @@ You can use the following placeholder variables if you allow the agent to ask th
 
 You can use the following placeholder variables if you allow the agent to ask the user for more information by doing one of the following actions:
 + In the console, set in the **User input** in the agent details.
-+ Set the `parentActionGroupSignature` to `AMAZON.UserInput` with a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html) or [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentActionGroup.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentActionGroup.html) request.
++ Set the `parentActionGroupSignature` to `AMAZON.UserInput` with a [CreateAgentActionGroup](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html) or [UpdateAgentActionGroup](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentActionGroup.html) request.
 
 ****
 
@@ -191,11 +191,11 @@ You can use the following placeholder variables if you allow the agent to ask th
   <tr><th>Variable</th><th>Models supported</th><th>Replaced by</th></tr>
 </thead>
 <tbody>
-  <tr><td>$ask\_user\_missing\_parameters$</td><td>Anthropic Claude Instant, Claude v2.0</td><td rowspan="2">Instructions for the model to ask the user to provide required missing information.</td></tr>
-  <tr><td>$ask\_user\_missing\_information$</td><td>Anthropic Claude v2.1, Claude 3 Sonnet, Claude 3 Haiku, Claude 3 Opus</td></tr>
-  <tr><td>$ask\_user\_confirm\_parameters$</td><td>Anthropic Claude Instant, Anthropic Claude v2.0</td><td>Instructions for the model to ask the user to confirm parameters that the agent hasn't yet received or is unsure of.</td></tr>
-  <tr><td>$ask\_user\_function$</td><td>Anthropic Claude Instant, Anthropic Claude v2.0</td><td>A function to ask the user a question.</td></tr>
-  <tr><td>$ask\_user\_function\_format$</td><td>Anthropic Claude Instant, Anthropic Claude v2.0</td><td>The format of the function to ask the user a question.</td></tr>
-  <tr><td>$ask\_user\_input\_examples$</td><td>Anthropic Claude Instant, Anthropic Claude v2.0</td><td>Few-shot examples to inform the model how to predict when it should ask the user a question.</td></tr>
+  <tr><td>$ask_user_missing_parameters$</td><td>Anthropic Claude Instant, Claude v2.0</td><td rowspan="2">Instructions for the model to ask the user to provide required missing information.</td></tr>
+  <tr><td>$ask_user_missing_information$</td><td>Anthropic Claude v2.1, Claude 3 Sonnet, Claude 3 Haiku, Claude 3 Opus</td></tr>
+  <tr><td>$ask_user_confirm_parameters$</td><td>Anthropic Claude Instant, Anthropic Claude v2.0</td><td>Instructions for the model to ask the user to confirm parameters that the agent hasn't yet received or is unsure of.</td></tr>
+  <tr><td>$ask_user_function$</td><td>Anthropic Claude Instant, Anthropic Claude v2.0</td><td>A function to ask the user a question.</td></tr>
+  <tr><td>$ask_user_function_format$</td><td>Anthropic Claude Instant, Anthropic Claude v2.0</td><td>The format of the function to ask the user a question.</td></tr>
+  <tr><td>$ask_user_input_examples$</td><td>Anthropic Claude Instant, Anthropic Claude v2.0</td><td>Few-shot examples to inform the model how to predict when it should ask the user a question.</td></tr>
 </tbody>
 </table>

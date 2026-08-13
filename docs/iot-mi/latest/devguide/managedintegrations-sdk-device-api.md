@@ -24,7 +24,7 @@ The following section illustrates the [OnOff cluster](https://github.com/project
 ## OnOff cluster API
 <a name="managedintegrations-sdk-device-api-onoff"></a>
 
-The [https://github.com/project-chip/connectedhomeip/blob/5bb5c9e23d532cea40476fc0bd1d3008522792ba/data_model/clusters/OnOff.xml](https://github.com/project-chip/connectedhomeip/blob/5bb5c9e23d532cea40476fc0bd1d3008522792ba/data_model/clusters/OnOff.xml) cluster supports these attributes and commands: .
+The [OnOff.xml](https://github.com/project-chip/connectedhomeip/blob/5bb5c9e23d532cea40476fc0bd1d3008522792ba/data_model/clusters/OnOff.xml) cluster supports these attributes and commands: .
 + Attributes:
   + `OnOff (boolean)`
   + `GlobalSceneControl (boolean)`

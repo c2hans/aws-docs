@@ -20,7 +20,7 @@ The diagnosis process examines each group of EC2 instances at once according to 
 ## Problem category: Security group configuration and HTTPS communications
 <a name="unmanaged-ec2-issue-security-groups"></a>
 
-A diagnosis operation might find that SSM Agent isn't able to communicate with the Systems Manager service over HTTPS. In those cases, you can choose to execute an Automation runbook that attempts to update security groups that are attached to the instances.
+A diagnosis operation might find that SSM Agent can't communicate with the Systems Manager service over HTTPS. In those cases, you can choose to execute an Automation runbook that attempts to update security groups that are attached to the instances.
 
 **Note**
 Occasionally, Systems Manager might not be able to automatically remediate these issues, but you can manually edit the affected security groups.

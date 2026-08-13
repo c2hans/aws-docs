@@ -182,6 +182,10 @@ Required: Yes
                "Status": "string"
             },
             "RoutingConfig": {
+               "PrefixAwareRoutingConfig": {
+                  "ConcurrencyThreshold": number,
+                  "PrefixLength": number
+               },
                "RoutingStrategy": "string"
             },
             "VariantName": "string",
@@ -236,6 +240,10 @@ Required: Yes
                "Status": "string"
             },
             "RoutingConfig": {
+               "PrefixAwareRoutingConfig": {
+                  "ConcurrencyThreshold": number,
+                  "PrefixLength": number
+               },
                "RoutingStrategy": "string"
             },
             "VariantName": "string",
@@ -305,6 +313,10 @@ Required: Yes
             "Status": "string"
          },
          "RoutingConfig": {
+            "PrefixAwareRoutingConfig": {
+               "ConcurrencyThreshold": number,
+               "PrefixLength": number
+            },
             "RoutingStrategy": "string"
          },
          "VariantName": "string",
@@ -372,6 +384,10 @@ Required: Yes
             "Status": "string"
          },
          "RoutingConfig": {
+            "PrefixAwareRoutingConfig": {
+               "ConcurrencyThreshold": number,
+               "PrefixLength": number
+            },
             "RoutingStrategy": "string"
          },
          "VariantName": "string",
@@ -395,7 +411,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [AsyncInferenceConfig](#API_DescribeEndpoint_ResponseSyntax) **   <a name="sagemaker-DescribeEndpoint-response-AsyncInferenceConfig"></a>
-Returns the description of an endpoint configuration created using the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpointConfig.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpointConfig.html) API.
+Returns the description of an endpoint configuration created using the [`CreateEndpointConfig`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpointConfig.html) API.
 Type: [AsyncInferenceConfig](API_AsyncInferenceConfig.md) object
 
  ** [CreationTime](#API_DescribeEndpoint_ResponseSyntax) **   <a name="sagemaker-DescribeEndpoint-response-CreationTime"></a>

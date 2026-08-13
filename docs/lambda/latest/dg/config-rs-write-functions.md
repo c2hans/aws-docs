@@ -38,7 +38,7 @@ export const echo = awslambda.streamifyResponse(async (event, responseStream, _c
 });
 ```
 
-While `responseStream` offers the `write()` method to write to the stream, we recommend that you use [https://nodejs.org/api/stream.html#streampipelinesource-transforms-destination-callback](https://nodejs.org/api/stream.html#streampipelinesource-transforms-destination-callback) wherever possible. Using `pipeline()` ensures that the writable stream is not overwhelmed by a faster readable stream.
+While `responseStream` offers the `write()` method to write to the stream, we recommend that you use [`pipeline()`](https://nodejs.org/api/stream.html#streampipelinesource-transforms-destination-callback) wherever possible. Using `pipeline()` ensures that the writable stream is not overwhelmed by a faster readable stream.
 
 ## Ending the stream
 <a name="config-rs-write-functions-end"></a>

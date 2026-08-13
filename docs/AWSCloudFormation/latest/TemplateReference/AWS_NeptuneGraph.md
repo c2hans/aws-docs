@@ -8,6 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_NeptuneGraph"></a>
 
 **Resource types**
++ [AWS::NeptuneGraph::ExportTask](aws-resource-neptunegraph-exporttask.md)
 + [AWS::NeptuneGraph::Graph](aws-resource-neptunegraph-graph.md)
 + [AWS::NeptuneGraph::GraphSnapshot](aws-resource-neptunegraph-graphsnapshot.md)
 + [AWS::NeptuneGraph::PrivateGraphEndpoint](aws-resource-neptunegraph-privategraphendpoint.md)

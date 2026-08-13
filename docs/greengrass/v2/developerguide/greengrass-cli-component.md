@@ -375,6 +375,7 @@ The following table describes the changes in each version of the component.
 
 |  **Version**  |  **Changes**  |
 | --- | --- |
+| 2.18.3 | Updates the component version for the Greengrass nucleus version 2.18.3 release. |
 | 2.18.2 | Updates the component version for the Greengrass nucleus version 2.18.2 release. |
 | 2.18.1 | Updates the component version for the Greengrass nucleus version 2.18.1 release. |
 | 2.18.0 | Updates the component version for the Greengrass nucleus version 2.18.0 release. |

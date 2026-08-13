@@ -46,7 +46,7 @@ The **Manual snapshots** list appears, with the new DB snapshot's status shown a
 ## AWS CLI
 <a name="USER_CreateSnapshot.CLI"></a>
 
-When you create a DB snapshot using the AWS CLI, you need to identify which DB instance you are going to back up, and then give your DB snapshot a name so you can restore from it later. You can do this by using the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-snapshot.html](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-snapshot.html) command with the following parameters:
+When you create a DB snapshot using the AWS CLI, you need to identify which DB instance you are going to back up, and then give your DB snapshot a name so you can restore from it later. You can do this by using the AWS CLI [`create-db-snapshot`](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-snapshot.html) command with the following parameters:
 + `--db-instance-identifier`
 + `--db-snapshot-identifier`
 
@@ -71,6 +71,6 @@ For Windows:
 ## RDS API
 <a name="USER_CreateSnapshot.API"></a>
 
-When you create a DB snapshot using the Amazon RDS API, you need to identify which DB instance you are going to back up, and then give your DB snapshot a name so you can restore from it later. You can do this by using the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBSnapshot.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBSnapshot.html) command with the following parameters:
+When you create a DB snapshot using the Amazon RDS API, you need to identify which DB instance you are going to back up, and then give your DB snapshot a name so you can restore from it later. You can do this by using the Amazon RDS API [`CreateDBSnapshot`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBSnapshot.html) command with the following parameters:
 + `DBInstanceIdentifier`
 + `DBSnapshotIdentifier`

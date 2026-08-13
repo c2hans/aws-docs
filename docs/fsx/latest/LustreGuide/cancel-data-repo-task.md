@@ -28,7 +28,7 @@ You can cancel a data repository task while it's in either the PENDING or EXECUT
 ## To cancel a data repository task (CLI)
 <a name="w2aac13c33c17c13b7b3"></a>
 
-Use the Amazon FSx [https://docs.aws.amazon.com/cli/latest/reference/fsx/cancel-data-repository-task.html](https://docs.aws.amazon.com/cli/latest/reference/fsx/cancel-data-repository-task.html) CLI command, to cancel a task. [https://docs.aws.amazon.com/fsx/latest/APIReference/API_CancelDataRepositoryTask.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CancelDataRepositoryTask.html) is the equivalent API command.
+Use the Amazon FSx [`cancel-data-repository-task`](https://docs.aws.amazon.com/cli/latest/reference/fsx/cancel-data-repository-task.html) CLI command, to cancel a task. [`CancelDataRepositoryTask`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CancelDataRepositoryTask.html) is the equivalent API command.
 + Use the following command to cancel a data repository task.
 
   ```

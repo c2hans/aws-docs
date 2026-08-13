@@ -21,18 +21,18 @@ AWS services have a standard set of data types that must be mapped to ABAP data 
   <tr><th>AWS data type</th><th>ABAP data type</th><th>Comments</th></tr>
 </thead>
 <tbody>
-  <tr><td>boolean</td><td>C</td><td>Single character "X" and " "</td></tr>
+  <tr><td>boolean</td><td>C</td><td>Single character <code>"X"</code> and <code>" "</code></td></tr>
   <tr><td>String</td><td>STRING</td><td></td></tr>
   <tr><td>Byte</td><td>INT2</td><td>INT2 has a larger range than 0-255. Most AWS services will truncate overflows but this behavior is not formally defined.</td></tr>
   <tr><td>Short</td><td>INT2</td><td></td></tr>
   <tr><td>Integer</td><td>INT4</td><td></td></tr>
   <tr><td>Long</td><td>DEC19</td><td>INT8 is not available until ABAP 750. DEC19 is used for compatibility and consistency across all supported ABAP platforms.</td></tr>
   <tr><td>Blob</td><td>XSTRING</td><td>Represents binary data</td></tr>
-  <tr><td>Float</td><td>STRING</td><td rowspan="2">While ABAP supports DECFLOATs, it cannot represent values such as  NaN, Infinity  and -Infinity. AWS SDK represents these internally as STRINGs, and converts them to DECFLOAT16 at runtime. If NaN, Infinity or \+Infinity are represented, the developer may process these in response to a special set of exceptions or mappings.</td></tr>
+  <tr><td>Float</td><td>STRING</td><td rowspan="2">While ABAP supports DECFLOATs, it cannot represent values such as  NaN, Infinity  and -Infinity. AWS SDK represents these internally as STRINGs, and converts them to DECFLOAT16 at runtime. If NaN, Infinity or +Infinity are represented, the developer may process these in response to a special set of exceptions or mappings.</td></tr>
   <tr><td>Double</td><td>STRING</td></tr>
   <tr><td>bigInteger</td><td>STRING</td><td rowspan="2">These values represent infinite-length numbers that cannot be represented in ABAP, and STRINGs are used instead of bigInteger.</td></tr>
   <tr><td>bigDecimal</td><td>STRING</td></tr>
-  <tr><td>Timestamp</td><td> TZNTSTMPS </td><td>TZNTSTMPS enables processing with native ABAP timestamp functions.</td></tr>
+  <tr><td>Timestamp</td><td> <code>TZNTSTMPS</code> </td><td><code>TZNTSTMPS</code> enables processing with native ABAP timestamp functions.</td></tr>
 </tbody>
 </table>
 

@@ -11,7 +11,7 @@ Updates the content of a related item associated with a case. The following rela
 
  **Important things to know**
 + When updating a Custom related item, all existing and new fields, and their associated values should be included in the request. Fields not included as part of this request will be removed.
-+ If you provide a value for `performedBy.userArn` you must also have [DescribeUser](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeUser.html) permission on the ARN of the user that you provide.
++ If you provide a value for `performedBy.userArn`, you must also have [DescribeUser](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeUser.html) permission on the ARN of the user that you provide.
 +  [System case fields](https://docs.aws.amazon.com/connect/latest/adminguide/case-fields.html#system-case-fields) cannot be used in a custom related item.
 
  **Endpoints**: See [Connect Customer endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/connect_region.html).
@@ -124,7 +124,7 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 500.
 
  ** [tags](#API_connect-cases_UpdateRelatedItem_ResponseSyntax) **   <a name="connect-connect-cases_UpdateRelatedItem-response-tags"></a>
-A map of of key-value pairs that represent tags on a resource. Tags are used to organize, track, or control access for this resource.
+A map of key-value pairs that represent tags on a resource. Tags are used to organize, track, or control access for this resource.
 Type: String to string map
 
  ** [type](#API_connect-cases_UpdateRelatedItem_ResponseSyntax) **   <a name="connect-connect-cases_UpdateRelatedItem-response-type"></a>

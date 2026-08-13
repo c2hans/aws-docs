@@ -18,19 +18,36 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Framework** | **Details** |
-| --- | --- |
-| **Component** | **Details** |
-| --- | --- |
-| **Framework updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-05-20-windows.html)  |
-| **AWS component updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-05-20-windows.html)  |
-| **.NET Core** | Added support for .NET 9. This platform includes .NET 9 version 9.0.5.<br />Updated .NET 8 to version 8.0.16. |
-| **AMI** | Updated the base AMI to version 2025.05.15. |
-| **AWS SDK for .NET** | Updated the SDK to version 3.7.1044.0. |
-| **CloudWatch Agent** | Updated the CloudWatch Agent to version 1.300055.1b1106. |
-| **SSM Agent** | Updated the SSM Agent to version 3.3.2299.0. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Framework updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Framework</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>.NET Core</b></td><td>Added support for .NET 9. This platform includes .NET 9 version 9.0.5.<br />Updated .NET 8 to version 8.0.16.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+  <tr><td><b>AWS component updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version 2025.05.15.</td></tr>
+  <tr><td><b>AWS SDK for .NET</b></td><td>Updated the SDK to version 3.7.1044.0.</td></tr>
+  <tr><td><b>CloudWatch Agent</b></td><td>Updated the CloudWatch Agent to version 1.300055.1b1106.</td></tr>
+  <tr><td><b>SSM Agent</b></td><td>Updated the SSM Agent to version 3.3.2299.0.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2025-05-20-windows.platforms"></a>

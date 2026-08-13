@@ -122,7 +122,7 @@ The output from this command should look something like this.
 
 When the parameter group is created, it will have the family's default values. To change the default values you must modify the parameter group. For more information, see [Modifying an ElastiCache parameter group](ParameterGroups.Modifying.md).
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/elasticache/create-cache-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/elasticache/create-cache-parameter-group.html).
+For more information, see [`create-cache-parameter-group`](https://docs.aws.amazon.com/cli/latest/reference/elasticache/create-cache-parameter-group.html).
 
 ## Creating an ElastiCache parameter group (ElastiCache API)
 <a name="ParameterGroups.Creating.API"></a>
@@ -206,4 +206,4 @@ The response from this action should look something like this.
 
 When the parameter group is created, it will have the family's default values. To change the default values you must modify the parameter group. For more information, see [Modifying an ElastiCache parameter group](ParameterGroups.Modifying.md).
 
-For more information, see [https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_CreateCacheParameterGroup.html](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_CreateCacheParameterGroup.html).
+For more information, see [`CreateCacheParameterGroup`](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_CreateCacheParameterGroup.html).

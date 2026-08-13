@@ -17,16 +17,27 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **January 15, 2020** to all Linux-based platforms. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-01-21-linux.html) |
-| **Multicontainer Docker** | Updated the ECS agent to version 1.35.0. |
-| **Go** | Updated to Go release 1.13.6. For details, see [go1.13](https://golang.org/doc/devel/release.html#go1.13) in *The Go Programming Language Release History*. |
-| **Java SE**, **Java with Tomcat** | Updated the Java 8 platform versions to OpenJDK Version 1.8.0.232.b09.<br />Updated Tomcat 8.5 to [Tomcat 8.5.50](https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.50_(markt)). |
-| **Node.js** | Updated the Node.js platform to add support for Node versions [12.14.1](https://nodejs.org/en/blog/release/v12.14.1/), [12.14.0](https://nodejs.org/en/blog/release/v12.14.0/), [10.18.1](https://nodejs.org/en/blog/release/v10.18.1/), [10.18.0](https://nodejs.org/en/blog/release/v10.18.0/), and [8.17.0](https://nodejs.org/en/blog/release/v8.17.0/). |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>January 15, 2020</b> to all Linux-based platforms.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Multicontainer Docker</b></td><td>Updated the ECS agent to version 1.35.0.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated to Go release 1.13.6. For details, see <a href="https://golang.org/doc/devel/release.html#go1.13">go1.13</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Java SE</b>, <b>Java with Tomcat</b></td><td>Updated the Java 8 platform versions to OpenJDK Version 1.8.0.232.b09.<br />Updated Tomcat 8.5 to <a href="https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.50_(markt)">Tomcat 8.5.50</a>.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform to add support for Node versions <a href="https://nodejs.org/en/blog/release/v12.14.1/">12.14.1</a>, <a href="https://nodejs.org/en/blog/release/v12.14.0/">12.14.0</a>, <a href="https://nodejs.org/en/blog/release/v10.18.1/">10.18.1</a>, <a href="https://nodejs.org/en/blog/release/v10.18.0/">10.18.0</a>, and <a href="https://nodejs.org/en/blog/release/v8.17.0/">8.17.0</a>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2020-01-21-linux.platforms"></a>

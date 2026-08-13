@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contactlens-integration-supportedflowblocks.html
 ---
 
-# Supported flow blocks for Contact Lens integration
+# Supported flow blocks for conversational analytics integration
 <a name="contactlens-integration-supportedflowblocks"></a>
 
 The following tables list the flow blocks that you can use to specify how Connect Customer processes the audio stream sessions.
@@ -28,7 +28,7 @@ The following tables list the flow blocks that you can use to specify how Connec
 
 | Flow block | Effect | Description |
 | --- | --- | --- |
-| Set Recording and Analytics behavior | Supported | Sets options for recording and enables features in Contact Lens. |
+| Set Recording and Analytics behavior | Supported | Sets options for recording and enables features in conversational analytics. |
 | Set logging behavior | Supported | Enable or disable flow logs |
 
 **Logic blocks**

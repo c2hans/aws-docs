@@ -223,7 +223,7 @@ The action provider, such as CodeBuild.
 ## `InputArtifacts`
 <a name="action.inputArtifacts"></a>
 
-This field is contains the input artifact structure, if supported for the action category. The input artifact of an action must exactly match the output artifact declared in a preceding action. For example, if a preceding action includes the following declaration:
+This field contains the input artifact structure, if supported for the action category. The input artifact of an action must exactly match the output artifact declared in a preceding action. For example, if a preceding action includes the following declaration:
 
 ```
 "outputArtifacts": [
@@ -257,7 +257,7 @@ The artifact name for the action's input artifacts.
 
 Output artifact names must be unique in a pipeline. For example, a pipeline can include one action that has an output artifact named `"MyApp"` and another action that has an output artifact named `"MyBuiltApp"`. However, a pipeline cannot include two actions that both have an output artifact named `"MyApp"`.
 
- This field is contains the output artifact structure, if supported for the action category. The output artifact of an action must exactly match the output artifact declared in a preceding action. For example, if a preceding action includes the following declaration:
+ This field contains the output artifact structure, if supported for the action category. The output artifact of an action must exactly match the output artifact declared in a preceding action. For example, if a preceding action includes the following declaration:
 
 ```
 "outputArtifacts": [
@@ -317,4 +317,4 @@ The default `runOrder` value for an action is 1. The value must be a positive in
 For example, if you want three actions to run in sequence in a stage, you would give the first action the `runOrder` value of 1, the second action the `runOrder` value of 2, and the third the `runOrder` value of 3. However, if you want the second and third actions to run in parallel, you would give the first action the `runOrder` value of 1 and both the second and third actions the `runOrder` value of 2.
 
 **Note**
-The numbering of serial actions do not have to be in strict sequence. For example, if you have three actions in a sequence and decide to remove the second action, you do not need to renumber the `runOrder` value of the third action. Because the `runOrder` value of that action (3) is higher than the `runOrder` value of the first action (1), it runs serially after the first action in the stage.
+The numbering of serial actions does not have to be in strict sequence. For example, if you have three actions in a sequence and decide to remove the second action, you do not need to renumber the `runOrder` value of the third action. Because the `runOrder` value of that action (3) is higher than the `runOrder` value of the first action (1), it runs serially after the first action in the stage.

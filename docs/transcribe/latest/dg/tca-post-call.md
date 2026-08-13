@@ -36,7 +36,7 @@ When enabled, post-call analytics from an audio stream produces a transcript sim
 
   1. An unredacted audio file
 
-Note that if you enable post-call analytics ([https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_PostCallAnalyticsSettings.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_PostCallAnalyticsSettings.html)) with your request, and you're using `FLAC` or `OPUS-OGG` media, you **do not** get `loudnessScore` in your transcript and no audio recordings of your stream are created. Transcribe may also not be able to provide post-call analytics for long-running audio streams lasting longer than 90 minutes.
+Note that if you enable post-call analytics ([`PostCallAnalyticsSettings`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_PostCallAnalyticsSettings.html)) with your request, and you're using `FLAC` or `OPUS-OGG` media, you **do not** get `loudnessScore` in your transcript and no audio recordings of your stream are created. Transcribe may also not be able to provide post-call analytics for long-running audio streams lasting longer than 90 minutes.
 
 For more information on the insights available with post-call analytics for audio streams, refer to the [post-call analytics insights](call-analytics-batch.md#call-analytics-insights-batch) section.
 
@@ -46,11 +46,11 @@ If you enable post-call analytics with your real-time Call Analytics request, al
 ## Enabling post-call analytics
 <a name="tca-post-call-enable"></a>
 
-To enable post-call analytics, you must include the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_PostCallAnalyticsSettings.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_PostCallAnalyticsSettings.html) parameter in your real-time Call Analytics request. The following parameters must be included when `PostCallAnalyticsSettings` is enabled:
+To enable post-call analytics, you must include the [`PostCallAnalyticsSettings`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_PostCallAnalyticsSettings.html) parameter in your real-time Call Analytics request. The following parameters must be included when `PostCallAnalyticsSettings` is enabled:
 + `OutputLocation`: The Amazon S3 bucket where you want your post-call transcript stored.
 + `DataAccessRoleArn`: The Amazon Resource Name (ARN) of the Amazon S3 role that has permissions to access the specified Amazon S3 bucket. Note that you must also use the [Trust policy for real-time analytics](security_iam_id-based-policy-examples.md#trust-policy).
 
-If you want a redacted version of your transcript, you can include `ContentRedactionOutput` or `ContentRedactionType` in your request. For more information on these parameters, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartCallAnalyticsStreamTranscription.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartCallAnalyticsStreamTranscription.html) in the API Reference.
+If you want a redacted version of your transcript, you can include `ContentRedactionOutput` or `ContentRedactionType` in your request. For more information on these parameters, see [`StartCallAnalyticsStreamTranscription`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartCallAnalyticsStreamTranscription.html) in the API Reference.
 
 To start a real-time Call Analytics transcription with post-call analytics enabled, you can use the **AWS Management Console** (demo only), **HTTP/2**, or **WebSockets**. For examples, see [Starting a real-time Call Analytics transcription](tca-start-stream.md).
 

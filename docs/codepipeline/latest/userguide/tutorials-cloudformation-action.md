@@ -16,7 +16,7 @@ As part of creating a pipeline, an S3 artifact bucket provided by the customer w
 + [Prerequisites: Create an AWS CloudFormation service role and a CodeCommit repository](#tutorials-cloudformation-action-prereq)
 + [Step 1: Download, edit, and upload the sample AWS CloudFormation template](#tutorials-cloudformation-action-upload)
 + [Step 2: Create your pipeline](#tutorials-cloudformation-action-pipeline)
-+ [Step 3: Add an CloudFormation deployment action to create the change set](#tutorials-cloudformation-action-changeset)
++ [Step 3: Add a CloudFormation deployment action to create the change set](#tutorials-cloudformation-action-changeset)
 + [Step 4: Add a manual approval action](#tutorials-cloudformation-action-approval)
 + [Step 5: Add a CloudFormation deployment action to execute the change set](#tutorials-cloudformation-action-deployment)
 + [Step 6: Add a CloudFormation deployment action to delete the stack](#tutorials-cloudformation-action-delete)
@@ -84,7 +84,7 @@ Download the sample AWS CloudFormation template file and upload it to your CodeC
 
 In this section, you create a pipeline with the following actions:
 + A source stage with a CodeCommit action where the source artifact is your template file.
-+ A deployment stage with an CloudFormation deployment action.
++ A deployment stage with a CloudFormation deployment action.
 
 Each action in the source and deployment stages created by the wizard is assigned a variable namespace, `SourceVariables` and `DeployVariables`, respectively. Because the actions have a namespace assigned, the variables configured in this example are available to downstream actions. For more information, see [Variables reference](reference-variables.md).
 
@@ -163,7 +163,7 @@ For more information, see [Input and output artifacts](welcome-introducing-artif
 
    1. On **Step 7: Review**, choose **Create pipeline**. You should see a diagram that shows the pipeline stages. Allow your pipeline to run. Your two-stage pipeline is complete and ready for the additional stages to be added.
 
-## Step 3: Add an CloudFormation deployment action to create the change set
+## Step 3: Add a CloudFormation deployment action to create the change set
 <a name="tutorials-cloudformation-action-changeset"></a>
 
 Create a next action in your pipeline that will allow CloudFormation to create the change set before the manual approval action.

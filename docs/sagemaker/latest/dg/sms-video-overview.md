@@ -51,7 +51,7 @@ When you create a labeling job in the console, you can specify this time limit w
 
 When you create a video object tracking or video object detection labeling job, you specify the type of annotation that you want workers to create while working on your labeling task. The annotation type determines the type of output data Ground Truth returns and defines the *task type* for your labeling job.
 
-If you are creating a labeling job using the API operation [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html), you specify the task type using the label category configuration file parameter `annotationType`. To learn more, see [Labeling category configuration file with label category and frame attributes reference](sms-label-cat-config-attributes.md).
+If you are creating a labeling job using the API operation [`CreateLabelingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html), you specify the task type using the label category configuration file parameter `annotationType`. To learn more, see [Labeling category configuration file with label category and frame attributes reference](sms-label-cat-config-attributes.md).
 
 The following task types are available for both video object tracking or video object detection labeling jobs:
 + **Bounding box ** – Workers are provided with tools to create bounding box annotations. A bounding box is a box that a worker draws around an objects to identify the pixel-location and label of that object in the frame.
@@ -73,7 +73,7 @@ To learn how to create and manage a private workforce, see [Private workforce](s
 
 Ground Truth provides a worker user interface (UI), tools, and assistive labeling features to help workers complete your video labeling tasks. You can preview the worker UI when you create a labeling job in the console.
 
-When you create a labeling job using the API operation `CreateLabelingJob`, you must provide an ARN provided by Ground Truth in the parameter [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UiConfig.html#sagemaker-Type-UiConfig-UiTemplateS3Uri](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UiConfig.html#sagemaker-Type-UiConfig-UiTemplateS3Uri) to specify the worker UI for your task type. You can use `HumanTaskUiArn` with the SageMaker AI [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RenderUiTemplate.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RenderUiTemplate.html) API operation to preview the worker UI.
+When you create a labeling job using the API operation `CreateLabelingJob`, you must provide an ARN provided by Ground Truth in the parameter [`HumanTaskUiArn`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UiConfig.html#sagemaker-Type-UiConfig-UiTemplateS3Uri) to specify the worker UI for your task type. You can use `HumanTaskUiArn` with the SageMaker AI [`RenderUiTemplate`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RenderUiTemplate.html) API operation to preview the worker UI.
 
 You provide worker instructions, labels, and optionally, attributes that workers can use to provide more information about labels and video frames. These attributes are referred to as label category attributes and frame attributes respectively. They are all displayed in the worker UI.
 
@@ -125,7 +125,7 @@ In addition to your instructions, Ground Truth provides a link to help workers n
 
 Workers are able to decline tasks.
 
-Workers decline a task if the instructions are not clear, input data is not displaying correctly, or if they encounter some other issue with the task. If the number of workers per dataset object ([https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanTaskConfig.html#sagemaker-Type-HumanTaskConfig-NumberOfHumanWorkersPerDataObject](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanTaskConfig.html#sagemaker-Type-HumanTaskConfig-NumberOfHumanWorkersPerDataObject)) decline the task, the data object is marked as expired and will not be sent to additional workers.
+Workers decline a task if the instructions are not clear, input data is not displaying correctly, or if they encounter some other issue with the task. If the number of workers per dataset object ([`NumberOfHumanWorkersPerDataObject`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanTaskConfig.html#sagemaker-Type-HumanTaskConfig-NumberOfHumanWorkersPerDataObject)) decline the task, the data object is marked as expired and will not be sent to additional workers.
 
 ## Video frame job permission requirements
 <a name="sms-security-permission-video-frame"></a>

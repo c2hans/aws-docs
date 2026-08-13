@@ -93,3 +93,4 @@ AWS SigV4 can be expressed in the HTTP Authorization header or as a query string
   + AWS SDK for PHP – [SignatureV4.php](https://github.com/aws/aws-sdk-php/blob/master/src/Signature/SignatureV4.php)
   + AWS SDK for Python (Boto) – [signers.py](https://github.com/boto/botocore/blob/develop/botocore/signers.py)
   + AWS SDK for Ruby – [signer.rb](https://github.com/aws/aws-sdk-ruby/blob/version-3/gems/aws-sigv4/lib/aws-sigv4/signer.rb)
++ If you encounter errors when signing requests, see [Troubleshoot Signature Version 4 signing for AWS API requests](reference_sigv-troubleshooting.md).

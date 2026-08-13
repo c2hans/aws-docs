@@ -37,6 +37,7 @@ The following data types are supported by AWS Marketplace Agreement Service:
 +  [InvoicingEntity](API_marketplace-agreements_InvoicingEntity.md)
 +  [ItemizedCharge](API_marketplace-agreements_ItemizedCharge.md)
 +  [LegalTerm](API_marketplace-agreements_LegalTerm.md)
++  [NetPaymentTerm](API_marketplace-agreements_NetPaymentTerm.md)
 +  [PaymentRequestSummary](API_marketplace-agreements_PaymentRequestSummary.md)
 +  [PaymentScheduleTerm](API_marketplace-agreements_PaymentScheduleTerm.md)
 +  [PricingCurrencyAmount](API_marketplace-agreements_PricingCurrencyAmount.md)

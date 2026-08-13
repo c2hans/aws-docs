@@ -417,6 +417,7 @@ M8a, M8g, M8gd, M8i, M8id, M8i-flex, M9g, M9gd instance types support configurab
   <tr><td>mac2-m1ultra.metal 2</td><td colspan="2">10000</td><td colspan="2">1250.0</td><td colspan="2">55000</td></tr>
   <tr><td>mac2-m2.metal 2</td><td colspan="2">8000</td><td colspan="2">1000.0</td><td colspan="2">55000</td></tr>
   <tr><td>mac2-m2pro.metal 2</td><td colspan="2">8000</td><td colspan="2">1000.0</td><td colspan="2">55000</td></tr>
+  <tr><td>mac-m3ultra.metal 2</td><td colspan="2">10000</td><td colspan="2">1250.0</td><td colspan="2">55000</td></tr>
   <tr><td>mac-m4.metal 2</td><td colspan="2">8000</td><td colspan="2">1000.0</td><td colspan="2">55000</td></tr>
   <tr><td>mac-m4pro.metal 2</td><td colspan="2">8000</td><td colspan="2">1000.0</td><td colspan="2">55000</td></tr>
   <tr><td>mac-m4max.metal 2</td><td colspan="2">10000</td><td colspan="2">1250.0</td><td colspan="2">55000</td></tr>

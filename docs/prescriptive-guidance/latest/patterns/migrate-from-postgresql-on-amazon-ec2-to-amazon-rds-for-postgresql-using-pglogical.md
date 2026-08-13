@@ -32,8 +32,8 @@ This pattern outlines steps for migrating a PostgreSQL database (version 9.5 and
 
 ## Tools
 <a name="migrate-from-postgresql-on-amazon-ec2-to-amazon-rds-for-postgresql-using-pglogical-tools"></a>
-+ [https://github.com/2ndQuadrant/pglogical](https://github.com/2ndQuadrant/pglogical) extension
-+ PostgreSQL native utilities: [https://www.postgresql.org/docs/9.5/app-pgdump.html](https://www.postgresql.org/docs/9.5/app-pgdump.html) and [https://www.postgresql.org/docs/9.6/app-pgrestore.html](https://www.postgresql.org/docs/9.6/app-pgrestore.html)
++ [**pglogical**](https://github.com/2ndQuadrant/pglogical) extension
++ PostgreSQL native utilities: [**pg\_dump**](https://www.postgresql.org/docs/9.5/app-pgdump.html) and [**pg\_restore**](https://www.postgresql.org/docs/9.6/app-pgrestore.html)
 
 ## Epics
 <a name="migrate-from-postgresql-on-amazon-ec2-to-amazon-rds-for-postgresql-using-pglogical-epics"></a>

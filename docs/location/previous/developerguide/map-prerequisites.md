@@ -22,7 +22,7 @@ You can create a map resource using the Amazon Location Service console, the AWS
 
 **To create a map resource using the Amazon Location Service console**
 
-1. In the Amazon Location console, on the [https://console.aws.amazon.com/location/maps/home](https://console.aws.amazon.com/location/maps/home) page, choose **Create map** to preview map styles.
+1. In the Amazon Location console, on the [**Maps**](https://console.aws.amazon.com/location/maps/home) page, choose **Create map** to preview map styles.
 
 1. Add a name and description for the new map resource.
 

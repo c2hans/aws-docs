@@ -54,7 +54,7 @@ In this step, you create a cluster in EKS.
 ### Create a private cluster in Amazon EKS
 <a name="tutorials-eks-deploy-cluster-private"></a>
 
-In case you choose to create a cluster with a private endpoint, make sure to attach the private subnets only, and make sure they have internet connection.
+In case you choose to create a cluster with a private endpoint, make sure to attach the private subnets only, and make sure they have an internet connection.
 
 Follow the next five sub-steps for creating a cluster with a private endpoint.
 
@@ -93,7 +93,7 @@ Update the route table for the private subnet to direct traffic to the NAT gatew
 
 1. Navigate to the VPC console, and then choose **Subnets**.
 
-1. For each private subnet, choose it and then choose the route table for that subnet on the details page, Choose **Edit route table**.
+1. For each private subnet, choose it and then choose the route table for that subnet on the details page. Choose **Edit route table**.
 
 1. Update the route table for the private subnet to direct internet traffic to the NAT gateway. Choose **Add route**. Choose **NAT gateway** from the options to add. Choose the internet gateway you created.
 
@@ -127,13 +127,13 @@ This step is applicable only if you have created a private cluster. This step is
 ## Step 3: Update the CodePipeline service role policy in IAM
 <a name="tutorials-eks-deploy-role"></a>
 
-In this step, you will update an existing CodePipeline service role, such as `cp-service-role`, with permissions required by CodePipeline to connect with your cluster. If you do not have existing role, create a new one.
+In this step, you will update an existing CodePipeline service role, such as `cp-service-role`, with permissions required by CodePipeline to connect with your cluster. If you do not have an existing role, create a new one.
 
 Update your CodePipeline service role with the following steps.
 
 **To update your CodePipeline service role policy**
 
-1. Open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/)).
+1. Open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
 1. From the console dashboard, choose **Roles**.
 
@@ -285,7 +285,7 @@ This is the policy that the CodePipeline action uses to talk to Kubernetes. As a
 
 1. On the review page, choose **Create**.
 
-## Step 5: Create a source repository and add the `helm chart` config files
+## Step 5: Create a source repository and add the `Helm chart` config files
 <a name="tutorials-eks-deploy-source"></a>
 
 In this step, you create a config file that is appropriate for your action (Kubernetes manifest files or Helm chart) and store the config file in your source repository. Use the appropriate file for your configuration. For more information, see [https://kubernetes.io/docs/reference/kubectl/quick-reference/](https://kubernetes.io/docs/reference/kubectl/quick-reference/) or [https://helm.sh/docs/topics/charts/](https://helm.sh/docs/topics/charts/).
@@ -294,7 +294,7 @@ In this step, you create a config file that is appropriate for your action (Kube
 
 1. Create or use an existing GitHub repository.
 
-1. Create a new structure in your repository for your helm chart files as shown in the example below.
+1. Create a new structure in your repository for your Helm chart files as shown in the example below.
 
    ```
    mychart
@@ -341,7 +341,7 @@ Use the CodePipeline wizard to create your pipeline stages and connect your sour
 
    1. Under **Deploy configuration type**, choose **Helm**.
 
-   1. In **Helm chart location**, enter the release name, such as `my-release`. For **Helm chart location**, enter the path for your helm chart files, such as `mychart`.
+   1. In **Helm chart location**, enter the release name, such as `my-release`. For **Helm chart location**, enter the path for your Helm chart files, such as `mychart`.
 
    1. Choose **Next**.
 

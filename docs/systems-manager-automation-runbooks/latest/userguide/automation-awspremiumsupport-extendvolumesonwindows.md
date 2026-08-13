@@ -28,6 +28,20 @@ Access to `AWSPremiumSupport-*` runbooks requires a Business \+ Support, Enterpr
 
  [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/automation/execute/AWSPremiumSupport-ExtendVolumesOnWindows)
 
+**Document type**
+
+Automation
+
+**Owner**
+
+Amazon
+
+**Platforms**
+
+Windows
+
+**Parameters**
+
 **Required IAM permissions**
 
 The `AutomationAssumeRole` parameter requires the following actions to use the runbook successfully.
@@ -35,10 +49,13 @@ The `AutomationAssumeRole` parameter requires the following actions to use the r
 + `ec2:CreateImage`
 + `ec2:DescribeImages`
 + `ec2:DescribeVolumes`
++ `ec2:DescribeVolumesModifications`
 + `ec2:ModifyVolume`
 + `ssm:SendCommand`
 + `ssm:ListCommandInvocations`
 + `ssm:DescribeInstanceInformation`
++ `ssm:DescribeAutomationExecutions`
++ `ssm:GetAutomationExecution`
 
 Example IAM policy:
 
@@ -53,10 +70,13 @@ Example IAM policy:
                  "ec2:CreateImage",
                  "ec2:DescribeImages",
                  "ec2:DescribeVolumes",
+                 "ec2:DescribeVolumesModifications",
                  "ec2:ModifyVolume",
                  "ssm:SendCommand",
                  "ssm:DescribeInstanceInformation",
-                 "ssm:ListCommandInvocations"
+                 "ssm:ListCommandInvocations",
+                 "ssm:DescribeAutomationExecutions",
+                 "ssm:GetAutomationExecution"
              ],
              "Resource": "*"
          }
@@ -68,7 +88,7 @@ Example IAM policy:
 
 Follow these steps to configure the automation:
 
-1. Navigate to [https://console.aws.amazon.com/systems-manager/documents/AWSPremiumSupport-ExtendVolumesOnWindows/description](https://console.aws.amazon.com/systems-manager/documents/AWSPremiumSupport-ExtendVolumesOnWindows/description) in Systems Manager under Documents.
+1. Navigate to [`AWSPremiumSupport-ExtendVolumesOnWindows`](https://console.aws.amazon.com/systems-manager/documents/AWSPremiumSupport-ExtendVolumesOnWindows/description) in Systems Manager under Documents.
 
 1. Select **Execute automation.**
 

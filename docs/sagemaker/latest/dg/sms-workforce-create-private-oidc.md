@@ -9,7 +9,7 @@ Create a private workforce using an OpenID Connect (OIDC) Identity Provider (IdP
 
 To create a workforce using an OIDC IdP, your IdP must support *groups* because Ground Truth and Amazon A2I use one or more groups that you specify to create work teams. You use work teams to specify workers for your labeling jobs and human review tasks. Because groups are not a [standard claim](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims), your IdP may have a different naming convention for a group of users (workers). Therefore, you must identify one or more user groups to which a worker belongs using the custom claim `sagemaker:groups` that is sent to Ground Truth or Amazon A2I from your IdP. To learn more, see [Send Required and Optional Claims to Ground Truth and Amazon A2I](#sms-workforce-create-private-oidc-configure-idp).
 
-You create an OIDC IdP workforce using the SageMaker API operation [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateWorkforce.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateWorkforce.html). Once you create a private workforce, that workforce and all work teams and workers associated with it are available to use for all Ground Truth labeling job tasks and Amazon A2I human review workflows tasks. To learn more, see [Create an OIDC IdP Workforce](#sms-workforce-create-private-oidc-createworkforce).
+You create an OIDC IdP workforce using the SageMaker API operation [`CreateWorkforce`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateWorkforce.html). Once you create a private workforce, that workforce and all work teams and workers associated with it are available to use for all Ground Truth labeling job tasks and Amazon A2I human review workflows tasks. To learn more, see [Create an OIDC IdP Workforce](#sms-workforce-create-private-oidc-createworkforce).
 
 ## Send Required and Optional Claims to Ground Truth and Amazon A2I
 <a name="sms-workforce-create-private-oidc-configure-idp"></a>
@@ -50,7 +50,7 @@ Ground Truth or Amazon A2I compares the groups listed in `sagemaker:groups` or `
 
 You can create a workforce using the SageMaker API operation `CreateWorkforce` and associated language-specific SDKs. Specify a `WorkforceName` and information about your OIDC IDP in the parameter `OidcConfig`. It is recommended that you configure your OIDC with a place-holder redirect URI, and then update the URI with the worker portal URL after you create the workforce. To learn more, see [Configure your OIDC IdP](#sms-workforce-create-private-oidc-configure-url).
 
-The following shows an example of the request. See [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateWorkforce.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateWorkforce.html) to learn more about each parameter in this request.
+The following shows an example of the request. See [`CreateWorkforce`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateWorkforce.html) to learn more about each parameter in this request.
 
 ```
 CreateWorkforceRequest: {
@@ -77,9 +77,9 @@ CreateWorkforceRequest: {
 
 How you configure your OIDC IdP depends on the IdP you use, and your business requirements.
 
-When you configure your IdP, you must to specify a callback or redirect URI. After Ground Truth or Amazon A2I authenticates a worker, this URI will redirect the worker to the worker portal where the workers can access labeling or human review tasks. To create a worker portal URL, you need to create a workforce with your OIDC IdP details using the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateWorkforce.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateWorkforce.html) API operation. Specifically, you must configure your OIDC IdP with required custom sagemaker claims (see the next section for more details). Therefore, it is recommended that you configure your OIDC with a place-holder redirect URI, and then update the URI after you create the workforce. See [Create an OIDC IdP Workforce](#sms-workforce-create-private-oidc-createworkforce) to learn how to create a workforce using this API.
+When you configure your IdP, you must to specify a callback or redirect URI. After Ground Truth or Amazon A2I authenticates a worker, this URI will redirect the worker to the worker portal where the workers can access labeling or human review tasks. To create a worker portal URL, you need to create a workforce with your OIDC IdP details using the [`CreateWorkforce`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateWorkforce.html) API operation. Specifically, you must configure your OIDC IdP with required custom sagemaker claims (see the next section for more details). Therefore, it is recommended that you configure your OIDC with a place-holder redirect URI, and then update the URI after you create the workforce. See [Create an OIDC IdP Workforce](#sms-workforce-create-private-oidc-createworkforce) to learn how to create a workforce using this API.
 
-You can view your worker portal URL in the SageMaker Ground Truth console, or using the SageMaker API operation, `DescribeWorkforce`. The worker portal URL is in the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Workforce.html#sagemaker-Type-Workforce-SubDomain](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Workforce.html#sagemaker-Type-Workforce-SubDomain) parameter in the response.
+You can view your worker portal URL in the SageMaker Ground Truth console, or using the SageMaker API operation, `DescribeWorkforce`. The worker portal URL is in the [`SubDomain`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Workforce.html#sagemaker-Type-Workforce-SubDomain) parameter in the response.
 
 **Important**
 Make sure you add the workforce subdomain to your OIDC IdP allow list. When you add the subdomain to your allow list, it must end with `/oauth2/idpresponse`.
@@ -96,7 +96,7 @@ Make sure you add the workforce subdomain to your OIDC IdP allow list. When you 
 
 **To view your worker portal URL after creating a private workforce (API):**
 
-When you create a private workforce using `[CreateWorkforce](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateWorkforce.html)`, you specify a `WorkforceName`. Use this name to call [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeWorkforce.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeWorkforce.html). The following table includes examples of requests using the AWS CLI and AWS SDK for Python (Boto3).
+When you create a private workforce using `[CreateWorkforce](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateWorkforce.html)`, you specify a `WorkforceName`. Use this name to call [`DescribeWorkforce`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeWorkforce.html). The following table includes examples of requests using the AWS CLI and AWS SDK for Python (Boto3).
 
 ------
 #### [ SDK for Python (Boto3) ]

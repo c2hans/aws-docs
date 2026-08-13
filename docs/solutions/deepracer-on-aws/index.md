@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/deepracer-on-aws//index.html
 
 Developers of all skill levels can get hands on with machine learning through a 3D racing simulator and fully autonomous 1/18th scale race cars driven by reinforcement learning.
 
-- **Version**: 1.2.7
+- **Version**: 1.2.9
 - **Release**: 08/2026
 - **Author**: AWS
 - **Est. deployment time**: 30 mins
@@ -103,6 +103,14 @@ Follow these links for direct access to the artifacts for this AWS Solution.
 [Download guide](https://docs.aws.amazon.com/pdfs/solutions/latest/deepracer-on-aws/deepracer-on-aws.pdf)
 
 ## Related content
+
+- **Custom OS installation on AWS DeepRacer devices**: Learn how to upgrade or install a custom operating system on your AWS DeepRacer device using a newly released developer bootloader, extending the life of your hardware with modern Linux distributions and custom software stacks.
+
+[Read blog post](https://aws.amazon.com/blogs/machine-learning/custom-os-installation-now-available-on-aws-deepracer-devices/)
+
+- **Building a custom car for AWS DeepRacer**: Explore how to build a modern AWS DeepRacer replacement using off-the-shelf components, with step-by-step guidance for constructing your own autonomous racing car.
+
+[Read on Builder](https://builder.aws.com/content/3CzhcPjj9cJE37Ft4j8JUWX5A5U/building-a-modern-aws-deepracer-replacement-using-off-the-shelf-components-part-1)
 
 - **Amazon DeepRacer Chatbot**: This Guidance illustrates how to deploy and use the AWS DeepRacer Chatbot, an intelligent virtual assistant powered by multimodal generative AI and domain adaptation techniques.
 

@@ -9,7 +9,7 @@ The offline store is used for historical data when sub-second retrieval is not n
 
 When you enable both the online and offline stores for your feature group, both stores sync to avoid discrepancies between training and serving data. Please note that an online store feature group with the `InMemory` storage type enabled does not currently support a corresponding feature group in the offline store (no online to offline replication). For more information about ML model serving in Amazon SageMaker Feature Store, see [Online store](feature-store-storage-configurations-online-store.md).
 
-The offline store contains the following `TableFormat` options. For information about the offline store contents, see [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_OfflineStoreConfig.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_OfflineStoreConfig.html) in the Amazon SageMaker API Reference.
+The offline store contains the following `TableFormat` options. For information about the offline store contents, see [`OfflineStoreConfig`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_OfflineStoreConfig.html) in the Amazon SageMaker API Reference.
 
 ## Glue table format
 <a name="feature-store-storage-configurations-offline-store-glue-table-format"></a>

@@ -47,7 +47,7 @@ To start the process, complete the following steps.
 | Square logo SVG (URL) | Logo displayed when a customer chooses your integration. |  |
 | Square Logo PNG (URL) | Logo displayed when a user clicks into your integration. |  |
 | Logo SVG (URL) | Logo displayed when a user loads the ** *partner event sources* ** page. |  |
-| Logo PNG (URL) | Logo displayed on the [https://aws.amazon.com/eventbridge/integrations/](https://aws.amazon.com/eventbridge/integrations/)page. |  |
+| Logo PNG (URL) | Logo displayed on the [** *Amazon EventBridge Integrations* **](https://aws.amazon.com/eventbridge/integrations/)page. |  |
 |  *Other*  |  |  |
 | Architecture diagram (Preferred) | Architecture diagram for illustrating integration use case(s). Displayed when a customer chooses your integration under the heading 'How does it work?'  |  |
 | Use cases  | Use case(s) for your integration. Displayed when a customer chooses your integration. |  |

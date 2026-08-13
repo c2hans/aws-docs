@@ -14,7 +14,7 @@ Publication date: **March 8, 2021** ([Document Revisions](document-revisions.md)
 
  In-memory data caching can be one of the most effective strategies for improving your overall application performance and reducing your database costs.
 
- You can apply caching to any type of database, including relational databases (such as [https://aws.amazon.com/rds/](https://aws.amazon.com/rds/) (Amazon RDS)) or NoSQL databases (such as [https://aws.amazon.com/dynamodb/](https://aws.amazon.com/dynamodb/), [Amazon DocumentDB](https://aws.amazon.com/documentdb/) (with MongoDB compatibility), and [Amazon Keyspaces](https://aws.amazon.com/keyspaces/) (for Apache Cassandra)).
+ You can apply caching to any type of database, including relational databases (such as [*Amazon Relational Database Service*](https://aws.amazon.com/rds/) (Amazon RDS)) or NoSQL databases (such as [*Amazon DynamoDB*](https://aws.amazon.com/dynamodb/), [Amazon DocumentDB](https://aws.amazon.com/documentdb/) (with MongoDB compatibility), and [Amazon Keyspaces](https://aws.amazon.com/keyspaces/) (for Apache Cassandra)).
 
  One of the benefits of caching is that it’s an easier option to implement, and it dramatically improves the speed and scalability of your application. Caching can also apply to objects (for instance, objects stored in [Amazon Simple Storage Service](https://aws.amazon.com/s3/)), as this paper will explore.
 

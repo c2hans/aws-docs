@@ -156,8 +156,8 @@ Specify whether the collector needs traces in `JSON` or `PROTO` encoded format. 
 Set the following environment variable to use your own tracing configuration.
 
 `ENVOY_TRACING_CFG_FILE`
-Specify a file path in the Envoy container file system. For more information, see [https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/trace/v3/http_tracer.proto#envoy-v3-api-msg-config-trace-v3-tracing](https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/trace/v3/http_tracer.proto#envoy-v3-api-msg-config-trace-v3-tracing) in the Envoy documentation.
-If the tracing configuration requires specifying a tracing cluster, make sure to configure the associated cluster configuration under `static_resources` in the same tracing config file. For example, Zipkin has a [https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/trace/v3/zipkin.proto#config-trace-v3-zipkinconfig](https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/trace/v3/zipkin.proto#config-trace-v3-zipkinconfig) field for the cluster name that hosts the trace collectors, and that cluster needs to be statically defined.
+Specify a file path in the Envoy container file system. For more information, see [`config.trace.v3.Tracing`](https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/trace/v3/http_tracer.proto#envoy-v3-api-msg-config-trace-v3-tracing) in the Envoy documentation.
+If the tracing configuration requires specifying a tracing cluster, make sure to configure the associated cluster configuration under `static_resources` in the same tracing config file. For example, Zipkin has a [`collector_cluster`](https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/trace/v3/zipkin.proto#config-trace-v3-zipkinconfig) field for the cluster name that hosts the trace collectors, and that cluster needs to be statically defined.
 
 ### DogStatsD variables
 <a name="envoy-dogstatsd-config"></a>

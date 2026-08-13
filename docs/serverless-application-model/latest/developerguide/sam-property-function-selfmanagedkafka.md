@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 
 The object describing a `SelfManagedKafka` event source type. For more information, see [Using AWS Lambda with self-managed Apache Kafka](https://docs.aws.amazon.com/lambda/latest/dg/with-kafka.html) in the *AWS Lambda Developer Guide*.
 
-AWS Serverless Application Model (AWS SAM) generates an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html) resource when this event type is set.
+AWS Serverless Application Model (AWS SAM) generates an [AWS::Lambda::EventSourceMapping](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html) resource when this event type is set.
 
 To use Schema Registry, you need to define specific IAM role permissions for your function. See [Complete setup with IAM roles](sam-property-function-msk.md#sam-property-function-msk-example-complete) for an example of the required configuration.
 

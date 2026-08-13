@@ -14,7 +14,7 @@ To choose your method of authentication and configure it for the SDK, see [Authe
 We recommend that new users who are developing locally and are not given a method of authentication by their employer to set up AWS IAM Identity Center. This method includes installing the AWS CLI for ease of configuration and for regularly signing in to the AWS access portal. If you choose this method, your environment should contain the following elements after you complete the procedure for [IAM Identity Center authentication](https://docs.aws.amazon.com/sdkref/latest/guide/access-sso.html) in the *AWS SDKs and Tools Reference Guide*:
 + The AWS CLI, which you use to start an AWS access portal session before you run your application.
 + A [shared AWS`config` file](https://docs.aws.amazon.com/sdkref/latest/guide/file-format.html) having a `[default]` profile with a set of configuration values that can be referenced from the SDK. To find the location of this file, see [Location of the shared files](https://docs.aws.amazon.com/sdkref/latest/guide/file-location.html) in the *AWS SDKs and Tools Reference Guide*.
-+  The shared `config` file sets the [https://docs.aws.amazon.com/sdkref/latest/guide/feature-region.html](https://docs.aws.amazon.com/sdkref/latest/guide/feature-region.html) setting. This sets the default AWS Region that the SDK uses for AWS requests. This Region is used for SDK service requests that aren't specified with a Region to use.
++  The shared `config` file sets the [`region`](https://docs.aws.amazon.com/sdkref/latest/guide/feature-region.html) setting. This sets the default AWS Region that the SDK uses for AWS requests. This Region is used for SDK service requests that aren't specified with a Region to use.
 +  The SDK uses the profile's [SSO token provider configuration](https://docs.aws.amazon.com/sdkref/latest/guide/feature-sso-credentials.html#feature-sso-credentials-profile) to acquire credentials before sending requests to AWS. The `sso_role_name` value, which is an IAM role connected to an IAM Identity Center permission set, allows access to the AWS services used in your application.
 
   The following sample `config` file shows a default profile set up with SSO token provider configuration. The profile's `sso_session` setting refers to the named [`sso-session` section](https://docs.aws.amazon.com/sdkref/latest/guide/file-format.html#section-session). The `sso-session` section contains settings to initiate an AWS access portal session.
@@ -35,7 +35,7 @@ We recommend that new users who are developing locally and are not given a metho
 
 The AWS SDK for JavaScript v3 does not need additional packages (such as `SSO` and `SSOOIDC`) to be added to your application to use IAM Identity Center authentication.
 
-For details on using this credential provider explicitly, see [https://www.npmjs.com/package/@aws-sdk/credential-providers#fromsso](https://www.npmjs.com/package/@aws-sdk/credential-providers#fromsso) on the npm (Node.js package manager) website.
+For details on using this credential provider explicitly, see [`fromSSO()`](https://www.npmjs.com/package/@aws-sdk/credential-providers#fromsso) on the npm (Node.js package manager) website.
 
 ## Start an AWS access portal session
 <a name="accessportal"></a>
@@ -65,7 +65,7 @@ The sign-in process might prompt you to allow the AWS CLI access to your data. B
 
 You can use your existing AWS Management Console sign-in credentials for programmatic access to AWS services. After a browser-based authentication flow, AWS generates temporary credentials that work across local development tools like the AWS CLI and AWS SDK for JavaScript. This feature simplifies the process of configuring and managing AWS CLI credentials. To learn how to get started, follow the instructions to [Login for AWS local development using console credentials](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sign-in.html).
 
-When you run the **aws login** command, you can select from your active console sessions, or sign in through the browser-based authentication flow and this will automatically generate temporary credentials. The AWS SDK for JavaScript automatically refreshes credentials 5 minutes before expiration, with each set of credentials valid for up to 12 hours. For more information see [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromlogincredentials](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromlogincredentials).
+When you run the **aws login** command, you can select from your active console sessions, or sign in through the browser-based authentication flow and this will automatically generate temporary credentials. The AWS SDK for JavaScript automatically refreshes credentials 5 minutes before expiration, with each set of credentials valid for up to 12 hours. For more information see [`fromLoginCredentials()`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromlogincredentials).
 
 ## More authentication information
 <a name="credother"></a>

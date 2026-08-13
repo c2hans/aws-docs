@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::SNS::Topic LoggingConfig
 <a name="aws-properties-sns-topic-loggingconfig"></a>
 
-The `LoggingConfig` property type specifies the `Delivery` status logging configuration for an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-topic.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-topic.html).
+The `LoggingConfig` property type specifies the `Delivery` status logging configuration for an [`AWS::SNS::Topic`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-topic.html).
 
 ## Syntax
 <a name="aws-properties-sns-topic-loggingconfig-syntax"></a>

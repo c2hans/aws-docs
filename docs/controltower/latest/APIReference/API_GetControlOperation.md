@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Get
 # GetControlOperation
 <a name="API_GetControlOperation"></a>
 
-Returns the status of a particular `EnableControl` or `DisableControl` operation. Displays a message in case of error. Details for an operation are available for 90 days. For usage examples, see the [https://docs.aws.amazon.com/controltower/latest/controlreference/control-api-examples-short.html](https://docs.aws.amazon.com/controltower/latest/controlreference/control-api-examples-short.html).
+Returns the status of a particular `EnableControl` or `DisableControl` operation. Displays a message in case of error. Details for an operation are available for 90 days. For usage examples, see the [*Controls Reference Guide*](https://docs.aws.amazon.com/controltower/latest/controlreference/control-api-examples-short.html).
 
 ## Request Syntax
 <a name="API_GetControlOperation_RequestSyntax"></a>

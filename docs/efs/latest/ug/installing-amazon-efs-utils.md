@@ -19,7 +19,7 @@ The installation procedures for supported operating systems are described in the
 
 The `amazon-efs-utils` package for installing on Amazon EC2 Linux instances from the following locations:
 + The Amazon Machine Images (AMI) package repositories for Amazon Linux. The following instructions are for installing the `amazon-efs-utils` package from the AMI package repositories.
-+ The AWS [https://github.com/aws/efs-utils](https://github.com/aws/efs-utils) GitHub repository. For more information about installing the `amazon-efs-utils` package from GitHub, see [Installing the Amazon EFS client on other Linux distributions](#installing-other-distro).
++ The AWS [efs-utils](https://github.com/aws/efs-utils) GitHub repository. For more information about installing the `amazon-efs-utils` package from GitHub, see [Installing the Amazon EFS client on other Linux distributions](#installing-other-distro).
 
 **Note**
 If you're using Direct Connect, you can find installation instructions in [Prerequisites](mounting-fs-mount-helper-direct.md#efs-onpremises).

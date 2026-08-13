@@ -24,7 +24,7 @@ These events are generated directly from OCI, such as events related to Oracle E
 ## Oracle Database@AWS events from AWS
 <a name="monitoring-events-aws"></a>
 
-Oracle Database@AWS events from AWS include lifecycle changes related to the ODB network during creation and deletion. These events are delivered to the default event bus in your AWS account. The delivery type is [https://docs.aws.amazon.com/eventbridge/latest/ref/event-delivery-level.html](https://docs.aws.amazon.com/eventbridge/latest/ref/event-delivery-level.html).
+Oracle Database@AWS events from AWS include lifecycle changes related to the ODB network during creation and deletion. These events are delivered to the default event bus in your AWS account. The delivery type is [*best effort*](https://docs.aws.amazon.com/eventbridge/latest/ref/event-delivery-level.html).
 
 **ODB network events**
 

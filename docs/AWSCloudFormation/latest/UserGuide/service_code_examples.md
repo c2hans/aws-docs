@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/servi
 # Examples of CloudFormation stack operation commands for the AWS CLI and PowerShell
 <a name="service_code_examples"></a>
 
-The following command line examples demonstrate how to perform individual CloudFormation actions with the AWS CLI and PowerShell. These examples include only the most commonly used actions. For a complete list, see [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/) in the *AWS CLI Command Reference*.
+The following command line examples demonstrate how to perform individual CloudFormation actions with the AWS CLI and PowerShell. These examples include only the most commonly used actions. For a complete list, see [cloudformation](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/) in the *AWS CLI Command Reference*.
 
 The examples in this guide use the convention of a backslash (\\) to indicate that a long command line continues on the next line.
 
@@ -29,7 +29,7 @@ The examples in this guide use the convention of a backslash (\\) to indicate th
 ## Cancel a stack update
 <a name="cancel-update-stack-sdk"></a>
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/cancel-update-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/cancel-update-stack.html) command command to cancel a stack update. For more information, see [Cancel a stack update](using-cfn-stack-update-cancel.md).
+Use the [cancel-update-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/cancel-update-stack.html) command command to cancel a stack update. For more information, see [Cancel a stack update](using-cfn-stack-update-cancel.md).
 
 ------
 #### [ CLI ]
@@ -67,7 +67,7 @@ Stop-CFNUpdateStack -StackName "myStack"
 ## Continue rolling back an update
 <a name="continue-update-rollback-sdk"></a>
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/continue-update-rollback.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/continue-update-rollback.html) command to continue rolling back an update. For more information, see [Continue rolling back an update](using-cfn-updating-stacks-continueupdaterollback.md).
+Use the [continue-update-rollback](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/continue-update-rollback.html) command to continue rolling back an update. For more information, see [Continue rolling back an update](using-cfn-updating-stacks-continueupdaterollback.md).
 
 ------
 #### [ CLI ]
@@ -107,7 +107,7 @@ Resume-CFNUpdateRollback -StackName "myStack"
 ## Create a stack
 <a name="create-stack-sdk"></a>
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command to create a stack. You must provide the stack name, the location of a valid template, and any input parameters. The parameter key names are case sensitive. If you mistype a parameter key name, CloudFormation doesn't create the stack and reports that the template doesn't contain that parameter.
+Use the [create-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command to create a stack. You must provide the stack name, the location of a valid template, and any input parameters. The parameter key names are case sensitive. If you mistype a parameter key name, CloudFormation doesn't create the stack and reports that the template doesn't contain that parameter.
 
 The following examples show how to create a new stack with the specified name, template, and input parameters.
 
@@ -245,7 +245,7 @@ aws cloudformation create-stack --stack-name {{myteststack}} \
 ## Create a stack that includes transforms
 <a name="deploy-sdk"></a>
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deploy/](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deploy/) command to create a stack that includes transforms. When you create a stack from a template that includes transforms, you must use a change set. The `deploy` command combines two steps (creating a change set and executing it) into a single command.
+Use the [deploy](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deploy/) command to create a stack that includes transforms. When you create a stack from a template that includes transforms, you must use a change set. The `deploy` command combines two steps (creating a change set and executing it) into a single command.
 
 ------
 #### [ AWS CLI ]
@@ -263,7 +263,7 @@ aws cloudformation deploy --stack-name {{myteststack}} \
 ## Delete a stack
 <a name="delete-stack-sdk"></a>
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/delete-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/delete-stack.html) command to delete a stack. For more information, see [Delete a stack](cfn-console-delete-stack.md).
+Use the [delete-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/delete-stack.html) command to delete a stack. For more information, see [Delete a stack](cfn-console-delete-stack.md).
 
 ------
 #### [ CLI ]
@@ -333,7 +333,7 @@ For more information, see [Express mode](cloudformation-express-mode.md).
 ## Describe stack events
 <a name="describe-stack-events-sdk"></a>
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-events.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-events.html) command to describe stack events. For more information, see [Monitor stack progress](monitor-stack-progress.md).
+Use the [describe-stack-events](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-events.html) command to describe stack events. For more information, see [Monitor stack progress](monitor-stack-progress.md).
 
 ------
 #### [ CLI ]
@@ -829,7 +829,7 @@ Get-CFNStackResourceSummary -StackName "myStack"
 ## List stacks
 <a name="list-stacks-sdk"></a>
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-stacks.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-stacks.html) command to list stacks. To list only stacks with the specified status codes, include the `--stack-status-filter` option. You can specify one or more stack status codes for the `--stack-status-filter` option. For more information, see [Stack status codes](view-stack-events.md#cfn-console-view-stack-data-resources-status-codes).
+Use the [list-stacks](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-stacks.html) command to list stacks. To list only stacks with the specified status codes, include the `--stack-status-filter` option. You can specify one or more stack status codes for the `--stack-status-filter` option. For more information, see [Stack status codes](view-stack-events.md#cfn-console-view-stack-data-resources-status-codes).
 
 ------
 #### [ CLI ]
@@ -901,7 +901,7 @@ Get-CFNStackSummary -StackStatusFilter @("CREATE_IN_PROGRESS", "UPDATE_IN_PROGRE
 ## Update a stack
 <a name="update-stack-sdk"></a>
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack.html) command to directly update a stack. You specify the stack, and parameter values and capabilities that you want to update, and, if you want use an updated template, the name of the template. For more information, see [Update stacks directly](using-cfn-updating-stacks-direct.md).
+Use the [update-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack.html) command to directly update a stack. You specify the stack, and parameter values and capabilities that you want to update, and, if you want use an updated template, the name of the template. For more information, see [Update stacks directly](using-cfn-updating-stacks-direct.md).
 
 ------
 #### [ CLI ]
@@ -1022,7 +1022,7 @@ For more information, see [Express mode](cloudformation-express-mode.md).
 ## Validate your template
 <a name="validate-template-sdk"></a>
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/validate-template.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/validate-template.html) command to check your template file for syntax errors.
+Use the [validate-template](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/validate-template.html) command to check your template file for syntax errors.
 
 During validation, CloudFormation first checks if the template is valid JSON. If it isn't, CloudFormation checks if the template is valid YAML. If both checks fail, CloudFormation returns a template validation error.
 

@@ -52,7 +52,7 @@ If you have nested stacks that are stuck in an in-progress operation, see Troubl
 ------
 
 **To delete a change set (AWS CLI)**
-+ Run the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/delete-change-set.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/delete-change-set.html) command, specifying the ID of the change set that you want to delete, as shown in the following example:
++ Run the [delete-change-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/delete-change-set.html) command, specifying the ID of the change set that you want to delete, as shown in the following example:
 
   ```
   aws cloudformation delete-change-set \

@@ -25,4 +25,4 @@ Step 3: Integrate AWS Elemental MediaPackage.
 
 When the channel and endpoints are created, they provide URLs that are used for input and output, respectively. In the encoder, use WebDAV to push the stream to AWS Elemental MediaPackage. For the stream destination information, enter the input URL from the channel. You also must configure the username and password from the channel on the encoder's output stream, or AWS Elemental MediaPackage denies the content push. In the CDN or player, enter the endpoint URL from the AWS Elemental MediaPackage endpoint as the content request address.
 
-For general information on the service, see the [https://docs.aws.amazon.com/mediapackage/latest/ug/what-is.html](https://docs.aws.amazon.com/mediapackage/latest/ug/what-is.html).
+For general information on the service, see the [*AWS Elemental MediaPackage User Guide*](https://docs.aws.amazon.com/mediapackage/latest/ug/what-is.html).

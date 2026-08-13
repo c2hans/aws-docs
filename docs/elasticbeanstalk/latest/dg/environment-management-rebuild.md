@@ -27,7 +27,7 @@ If your environment has a coupled database, **it will be deleted as part of the 
 
 1. Choose **Rebuild**.
 
-To rebuild a running environment with the Elastic Beanstalk API, use the [https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_RebuildEnvironment.html](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_RebuildEnvironment.html) action with the AWS CLI or the AWS SDK.
+To rebuild a running environment with the Elastic Beanstalk API, use the [`RebuildEnvironment`](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_RebuildEnvironment.html) action with the AWS CLI or the AWS SDK.
 
 ```
 $ aws elasticbeanstalk rebuild-environment --environment-id e-{{vdnftxubwq}}
@@ -70,7 +70,7 @@ $ eb restore e-{{vdnftxubwq}}
 
 See [**eb restore**](eb3-restore.md) for more information.
 
-To rebuild a terminated environment with the Elastic Beanstalk API, use the [https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_RebuildEnvironment.html](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_RebuildEnvironment.html) action with the AWS CLI or the AWS SDK.
+To rebuild a terminated environment with the Elastic Beanstalk API, use the [`RebuildEnvironment`](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_RebuildEnvironment.html) action with the AWS CLI or the AWS SDK.
 
 ```
 $ aws elasticbeanstalk rebuild-environment --environment-id e-{{vdnftxubwq}}

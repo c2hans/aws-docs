@@ -102,7 +102,7 @@ When you create an Amazon Q Business application environment, it's assigned the 
 + Q Apps creation is activated.
 + Hallucination mitigation is deactivated. To turn hallucination mitigation on, you must first deactivate chat orchestration.
 
-To update global topic controls for your web experience chat, you can use the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateChatControlsConfiguration.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateChatControlsConfiguration.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
+To update global topic controls for your web experience chat, you can use the AWS Management Console or the [UpdateChatControlsConfiguration](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateChatControlsConfiguration.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
 **Note**
 You can't create or delete guardrail global controls. You can only update existing global controls in your application environment.

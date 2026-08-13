@@ -37,14 +37,14 @@ The following sections provide a detailed overview of the technical requirements
    +  **Communication over TCP Port 1500**: All data replication traffic is transmitted between the Source servers and the staging area subnet using TCP Port 1500; this communication is also encrypted.
    +  **Bandwidth Requirements**: The average network bandwidth must exceed the peak write rate of the source servers to ensure successful replication in the AWS Elastic Disaster Recovery service. Adequate network capacity is critical to maintain continuous data protection and meet your recovery point objectives.
 
-1.  **Amazon S3 Buckets** [https://docs.aws.amazon.com/drs/latest/userguide/Network-Requirements.html](https://docs.aws.amazon.com/drs/latest/userguide/Network-Requirements.html)
+1.  **Amazon S3 Buckets** [**Reference**](https://docs.aws.amazon.com/drs/latest/userguide/Network-Requirements.html)
    +  **Access Requirements**: Agent installation and replication server components require Amazon S3 bucket access.
    +  **VPC Endpoint Policy**: Ensure that the relevant VPC endpoint policy includes access to all required Amazon S3 buckets. Refer to the example policy for [replicating to us-east-1](https://docs.aws.amazon.com/drs/latest/userguide/Network-Requirements.html) and [Amazon S3 documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html) for policy requirements.
 
 1.  **Operational Subnets** ** [https://docs.aws.amazon.com/drs/latest/userguide/Network-Settings-Preparations.html](https://docs.aws.amazon.com/drs/latest/userguide/Network-Settings-Preparations.html) **Reference** **
    +  **Drill and Recovery Subnets**: Create Recovery subnets (and optionally Drill subnets), before attempting to launch Recovery Instances. Instances are launched in a subnet specified in the Amazon EC2 launch template associated with each source server.
 
-1.  **Supported Elastic Disaster Recovery AWS Regions** [https://docs.aws.amazon.com/drs/latest/userguide/supported-regions.html](https://docs.aws.amazon.com/drs/latest/userguide/supported-regions.html)
+1.  **Supported Elastic Disaster Recovery AWS Regions** [**Reference**](https://docs.aws.amazon.com/drs/latest/userguide/supported-regions.html)
    + Refer to AWS Elastic Disaster Recovery [supported Regions reference](https://docs.aws.amazon.com/drs/latest/userguide/supported-regions.html) for an up to date list of all supported Regions.
 
 1.  **Supported Operating Systems** ** [https://docs.aws.amazon.com/drs/latest/userguide/Supported-Operating-Systems.html](https://docs.aws.amazon.com/drs/latest/userguide/Supported-Operating-Systems.html) **Reference** **

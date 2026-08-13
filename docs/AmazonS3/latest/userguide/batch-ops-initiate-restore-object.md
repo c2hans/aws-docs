@@ -9,7 +9,7 @@ You can use Amazon S3 Batch Operations to perform large-scale batch operations o
 + Objects archived in the S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive storage classes
 + Objects archived through the S3 Intelligent-Tiering storage class in the Archive Access or Deep Archive Access tiers
 
-Using a **Restore** ([https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3InitiateRestoreObjectOperation.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3InitiateRestoreObjectOperation.html)) operation in your S3 Batch Operations job results in a `RestoreObject` request for every object that's specified in the manifest.
+Using a **Restore** ([S3InitiateRestoreObjectOperation](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3InitiateRestoreObjectOperation.html)) operation in your S3 Batch Operations job results in a `RestoreObject` request for every object that's specified in the manifest.
 
 **Important**
 The **Restore** job only *initiates* the request to restore objects. S3 Batch Operations reports the job as complete for each object after the request is initiated for that object. Amazon S3 doesn't update the job or otherwise notify you when the objects have been restored. However, you can use S3 Event Notifications to receive notifications when the objects are available in Amazon S3. For more information, see [Amazon S3 Event Notifications](EventNotifications.md).
@@ -35,7 +35,7 @@ Restoring archived files from the S3 Glacier Flexible Retrieval or S3 Glacier De
 ## Overlapping restores
 <a name="batch-ops-initiate-restore-object-in-progress"></a>
 
-If your [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3InitiateRestoreObjectOperation.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3InitiateRestoreObjectOperation.html) job tries to restore an object that's already in the process of being restored, S3 Batch Operations proceeds as follows.
+If your [S3InitiateRestoreObjectOperation](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3InitiateRestoreObjectOperation.html) job tries to restore an object that's already in the process of being restored, S3 Batch Operations proceeds as follows.
 
 The restore operation succeeds for the object if either of the following conditions is true:
 + Compared to the restoration request already in progress, this job's `ExpirationInDays` value is the same and its `GlacierJobTier` value is faster.

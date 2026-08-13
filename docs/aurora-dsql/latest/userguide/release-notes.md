@@ -22,6 +22,9 @@ August 3, 2026
 ### July 2026
 <a name="release-notes-2026-07"></a>
 
+July 31, 2026
+🌍 *Region Expansion* — **Aurora DSQL available in four additional Regions** — Multi-Region clusters are now available in Europe (Stockholm), Europe (Spain), Asia Pacific (Mumbai), and Asia Pacific (Singapore). For a complete list of supported Regions, see [Region availability for Aurora DSQL](what-is-aurora-dsql.html#region-availability).
+
 July 15, 2026
 ✨ *AI Integration* — **Aurora DSQL Assist in the Aurora DSQL Playground** — Aurora DSQL Assist is a new artificial intelligence (AI) assistant in the Aurora DSQL Playground that helps you go from idea to working query. You can generate and fix SQL from natural language and design schemas and indexes for the distributed architecture of Aurora DSQL. You can also explore errors and documentation conversationally. For more information about Aurora DSQL Assist, see the [Aurora DSQL Playground website](https://playground.dsql.demo.aws/).
 

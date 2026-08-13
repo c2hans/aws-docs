@@ -47,7 +47,7 @@ When you delete a user's account from a directory, all information about the use
 aws ds-data delete-user --directory-id {{d-1234567890}} --sam-account-name "{{jane.doe}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-data/delete-user.html](https://docs.aws.amazon.com//cli/latest/reference/ds-data/delete-user.html).
+For more information, see [`delete-user`](https://docs.aws.amazon.com//cli/latest/reference/ds-data/delete-user.html).
 
 ------
 #### [ PowerShell ]
@@ -61,6 +61,6 @@ For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-
 Remove-DSDUser -DirectoryId {{d-1234567890}} -SAMAccountName "{{jane.doe}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Remove-DSDUser.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Remove-DSDUser.html).
+For more information, see [`Remove-DSDUser`](https://docs.aws.amazon.com//powershell/latest/reference/items/Remove-DSDUser.html).
 
 ------

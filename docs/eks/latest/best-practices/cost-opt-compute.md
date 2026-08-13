@@ -31,7 +31,7 @@ The Vertical Pod Autoscaler can adjust the requests and limits assigned to conta
 ## Reduce consumption
 <a name="_reduce_consumption"></a>
 
-The best way to save money is to provision fewer resources. One way to do that is to adjust workloads based on their current requirements. You should start any cost optimization efforts with making sure your workloads define their requirements and scale dynamically. This will require getting metrics from your applications and setting configurations such as [https://kubernetes.io/docs/tasks/run-application/configure-pdb/](https://kubernetes.io/docs/tasks/run-application/configure-pdb/) and [Pod Readiness Gates](https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.5/deploy/pod_readiness_gate/) to make sure your application can safely scale up and down dynamically. Its important to consider that restrictive PodDisruptionBudgets can prevent Cluster Autoscaler and Karpenter from scaling down Nodes, since both Cluster Autoscaler and Karpenter respect PodDisruptionBudgets. The 'minAvailable' value in the PodDisruptionBudget should always be lower than the number of pods in the deployment and you should keep a good buffer between the two e.g. In a deployment of 6 pods where you want a minimum of 4 pods running at all times, set the 'minAvailable' in your PodDisruptionBidget to 4. This will allow Cluster Autoscaler and Karpenter to safely drain and evict pods from the under-utilized nodes during a Node scale-down event. Please refer to [Cluster Autoscaler FAQ](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md#what-types-of-pods-can-prevent-ca-from-removing-a-node) doc.
+The best way to save money is to provision fewer resources. One way to do that is to adjust workloads based on their current requirements. You should start any cost optimization efforts with making sure your workloads define their requirements and scale dynamically. This will require getting metrics from your applications and setting configurations such as [`PodDisruptionBudgets`](https://kubernetes.io/docs/tasks/run-application/configure-pdb/) and [Pod Readiness Gates](https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.5/deploy/pod_readiness_gate/) to make sure your application can safely scale up and down dynamically. Its important to consider that restrictive PodDisruptionBudgets can prevent Cluster Autoscaler and Karpenter from scaling down Nodes, since both Cluster Autoscaler and Karpenter respect PodDisruptionBudgets. The 'minAvailable' value in the PodDisruptionBudget should always be lower than the number of pods in the deployment and you should keep a good buffer between the two e.g. In a deployment of 6 pods where you want a minimum of 4 pods running at all times, set the 'minAvailable' in your PodDisruptionBidget to 4. This will allow Cluster Autoscaler and Karpenter to safely drain and evict pods from the under-utilized nodes during a Node scale-down event. Please refer to [Cluster Autoscaler FAQ](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md#what-types-of-pods-can-prevent-ca-from-removing-a-node) doc.
 
 The Horizontal Pod Autoscaler is a flexible workload autoscaler that can adjust how many replicas are needed to meet the performance and reliability requirements of your application. It has a flexible model for defining when to scale up and down based on various metrics such as CPU, memory, or custom metrics e.g. queue depth, number of connections to a pod, etc.
 
@@ -131,15 +131,14 @@ metadata:
   name: label-demo
   labels:
     environment: production
-  annotations: +
+  annotations:
     "karpenter.sh/do-not-evict": "true"
 spec:
   containers:
-
-* name: nginx
-image: nginx
-ports:
- ** containerPort: 80
+  - name: nginx
+    image: nginx
+    ports:
+    - containerPort: 80
 ```
 
 ### Remove under-utilized nodes by adjusting Cluster Autoscaler parameters
@@ -156,15 +155,14 @@ metadata:
   name: label-demo
   labels:
     environment: production
-  annotations: +
+  annotations:
     "cluster-autoscaler.kubernetes.io/safe-to-evict": "false"
 spec:
   containers:
-
-* name: nginx
-image: nginx
-ports:
- ** containerPort: 80
+  - name: nginx
+    image: nginx
+    ports:
+    - containerPort: 80
 ```
 
 ### Tag nodes with Cluster Autoscaler and Karpenter

@@ -158,7 +158,7 @@ Confirm the Amazon Bedrock policy type shows as enabled in the AWS Organizations
 
      1. Specify your guardrail ARN and version
 **Important**
-Ensure you are specifying the accurate guardrail ARN in the policy. Specifying an incorrect or invalid ARN will result in policy violations, non-enforcement of safeguards, and the inability to use the models in Amazon Bedrock for inference.
+Make sure you are specifying the accurate guardrail ARN in the policy. Specifying an incorrect or invalid ARN will result in policy violations, non-enforcement of safeguards, and the inability to use the models in Amazon Bedrock for inference.
 
      1. Configure selective content guarding controls (optional).
         + Amazon Bedrock APIs allow callers to [tag specific content within their input prompts](guardrails-tagging.md) for guardrail evaluation.

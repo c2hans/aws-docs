@@ -10,7 +10,7 @@ Media pipelines send the following events to Event Bridge when the pools' states
 ## Amazon Chime Media Pipeline Kinesis Video Pool Active
 <a name="kvs-pool-active"></a>
 
-The media pipeline sends this event is sent after the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaPipelineKinesisVideoStreamPool.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaPipelineKinesisVideoStreamPool.html) API creates a pool.
+The media pipeline sends this event is sent after the [CreateMediaPipelineKinesisVideoStreamPool](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaPipelineKinesisVideoStreamPool.html) API creates a pool.
 
 ```
 {
@@ -34,7 +34,7 @@ The media pipeline sends this event is sent after the [https://docs.aws.amazon.c
 ## Amazon Chime Chime Media Pipeline Kinesis Video Pool Updated
 <a name="kvs-pool-updated"></a>
 
-The media pipeline sends this event after the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_UpdateMediaPipelineKinesisVideoStreamPool.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_UpdateMediaPipelineKinesisVideoStreamPool.html) API updates a pool.
+The media pipeline sends this event after the [UpdateMediaPipelineKinesisVideoStreamPool](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_UpdateMediaPipelineKinesisVideoStreamPool.html) API updates a pool.
 
 ```
 {
@@ -58,7 +58,7 @@ The media pipeline sends this event after the [https://docs.aws.amazon.com/chime
 ## Amazon Chime Media Pipeline Kinesis Video Pool Deleted
 <a name="kvs-pool-deleted"></a>
 
-The media pipeline sends this event to Event Bridge when the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaPipelineKinesisVideoStreamPool.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaPipelineKinesisVideoStreamPool.html) deletes a pool.
+The media pipeline sends this event to Event Bridge when the [DeleteMediaPipelineKinesisVideoStreamPool](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaPipelineKinesisVideoStreamPool.html) deletes a pool.
 
 For more information about deleting pools, refer to [Creating a Kinesis Video Streams pool for Amazon Chime SDK media stream pipelines](create-kvs-pool.md), in this section.
 

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/offline-volumes.ht
 # Viewing offline volumes
 <a name="offline-volumes"></a>
 
-You can't create or delete volume backups when the source volume is offline. You can use the [https://docs.netapp.com/us-en/ontap-cli-9131/volume-show.html](https://docs.netapp.com/us-en/ontap-cli-9131/volume-show.html) ONTAP CLI command to determine a volume's current status.
+You can't create or delete volume backups when the source volume is offline. You can use the [`volume show`](https://docs.netapp.com/us-en/ontap-cli-9131/volume-show.html) ONTAP CLI command to determine a volume's current status.
 
 ```
 volume show -vserver {{svm-name}}
@@ -27,7 +27,7 @@ vs1       vol4         aggr1        online     RW        200GB    159.8GB   20%
 7 entries were displayed.
 ```
 
-To bring an offline volume back online, use the [https://docs.netapp.com/us-en/ontap-cli-9131/volume-online.html](https://docs.netapp.com/us-en/ontap-cli-9131/volume-online.html) ONTAP CLI command, as shown in the following example. If only one SVM (Vserver) exists, you do not need to specify the `-vserver` parameter.
+To bring an offline volume back online, use the [`volume online`](https://docs.netapp.com/us-en/ontap-cli-9131/volume-online.html) ONTAP CLI command, as shown in the following example. If only one SVM (Vserver) exists, you do not need to specify the `-vserver` parameter.
 
 ```
 FsxID-abcdef123456::> volume online -volume {{volume_name}} -vserver {{svm_name}}

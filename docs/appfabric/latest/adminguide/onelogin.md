@@ -28,7 +28,7 @@ To use AppFabric to transfer audit logs from OneLogin by One Identity to support
 ### Rate limit considerations
 <a name="onelogin-rate-limit"></a>
 
-OneLogin by One Identity imposes rate limits on the OneLogin API. For more information about the OneLogin API rate limits, see [Get Rate Limit](https://developers.onelogin.com/api-docs/1/oauth20-tokens/get-rate-limit) in the *OneLogin API Reference*. If the combination of AppFabric and your existing OneLogin API applications exceed OneLogin's limits, audit logs appearing in AppFabric might be delayed. However, the OneLogin rate limit can be increased. For assistance, contact your OneLogin by One Identity Account Manager or contact [https://partners.amazonaws.com/contactpartner?partnerId=001E000000UfZycIAF&partnerName=One%20Identity](https://partners.amazonaws.com/contactpartner?partnerId=001E000000UfZycIAF&partnerName=One%20Identity).
+OneLogin by One Identity imposes rate limits on the OneLogin API. For more information about the OneLogin API rate limits, see [Get Rate Limit](https://developers.onelogin.com/api-docs/1/oauth20-tokens/get-rate-limit) in the *OneLogin API Reference*. If the combination of AppFabric and your existing OneLogin API applications exceed OneLogin's limits, audit logs appearing in AppFabric might be delayed. However, the OneLogin rate limit can be increased. For assistance, contact your OneLogin by One Identity Account Manager or contact [One Identity](https://partners.amazonaws.com/contactpartner?partnerId=001E000000UfZycIAF&partnerName=One%20Identity).
 
 ### Data delay considerations
 <a name="onelogin-data-delay"></a>

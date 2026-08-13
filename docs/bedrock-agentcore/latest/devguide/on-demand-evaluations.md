@@ -12,7 +12,6 @@ With on-demand evaluation, you specify the exact spans or traces you want to eva
 This evaluation type complements online evaluation by offering precise control over which interactions to evaluate, making it an effective tool for focused quality assessment and issue investigation.
 
 **Topics**
-+ [IAM permissions for on-demand evaluation](iam-permissions-on-demand.md)
++ [Prerequisites](ondemand-evaluations-prereqs.md)
 + [Getting started with on-demand evaluation](getting-started-on-demand.md)
 + [Ground truth evaluations](ground-truth-evaluations.md)
-+ [Understanding input spans](understanding-input-spans.md)

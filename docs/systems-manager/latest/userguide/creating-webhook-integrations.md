@@ -31,7 +31,7 @@ As shown in the following procedures, you can create an integration by using eit
 ## Creating integrations (command line)
 <a name="creating-integrations-commandline"></a>
 
-To create an integration using command line tools, you must create the required `SecureString` parameter for an integration. Automation uses a reserved namespace in Parameter Store, a tool in Systems Manager, to store information about your integration. If you create an integration using the AWS Management Console, Automation handles this process for you. Following the namespace, you must specify the type of integration you want to create and then the name of your integration. Currently, Automation supports `webhook` type integrations.
+To create an integration using command line tools, you must create the required `SecureString` parameter for an integration. Automation uses a reserved namespace in Parameter Store to store information about your integration. If you create an integration using the AWS Management Console, Automation handles this process for you. Following the namespace, you must specify the type of integration you want to create and then the name of your integration. Currently, Automation supports `webhook` type integrations.
 
 The supported fields for `webhook` type integrations are as follows:
 + Description

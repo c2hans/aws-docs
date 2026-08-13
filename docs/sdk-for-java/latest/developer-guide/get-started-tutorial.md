@@ -216,7 +216,7 @@ public class App {
 }
 ```
 
-The `DependencyFactory` class created by Maven contains the `s3Client` factory method that builds and returns an [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Client.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Client.html) instance. The `S3Client` instance uses an instance of the Apache-based HTTP client. This is because you specified `apache-client` when Maven prompted you for which HTTP client to use.
+The `DependencyFactory` class created by Maven contains the `s3Client` factory method that builds and returns an [`S3Client`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Client.html) instance. The `S3Client` instance uses an instance of the Apache-based HTTP client. This is because you specified `apache-client` when Maven prompted you for which HTTP client to use.
 
 The `DependencyFactory` is shown in the following code.
 
@@ -279,7 +279,7 @@ To fill in the logic, replace the entire contents of the `Handler` class with th
 
 The code first creates a new S3 bucket with the last part of the name generated using `System.currentTimeMillis()` in order to make the bucket name unique.
 
-After creating the bucket in the `createBucket()` method, the program uploads an object using the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Client.html#putObject(software.amazon.awssdk.services.s3.model.PutObjectRequest,software.amazon.awssdk.core.sync.RequestBody)](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Client.html#putObject(software.amazon.awssdk.services.s3.model.PutObjectRequest,software.amazon.awssdk.core.sync.RequestBody)) method of `S3Client`. The contents of the object is a simple string created with the `RequestBody.fromString` method.
+After creating the bucket in the `createBucket()` method, the program uploads an object using the [`putObject`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Client.html#putObject(software.amazon.awssdk.services.s3.model.PutObjectRequest,software.amazon.awssdk.core.sync.RequestBody)) method of `S3Client`. The contents of the object is a simple string created with the `RequestBody.fromString` method.
 
 Finally, the program deletes the object followed by the bucket in the `cleanUp` method.
 

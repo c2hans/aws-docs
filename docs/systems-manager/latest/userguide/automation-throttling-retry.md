@@ -11,7 +11,7 @@ There is a limit on the number of concurrent automation executions that can run 
 
 Automatic throttling retry for automation actions provides a more resilient execution environment for high-scale operations. The throttling retry capability supports all [automation actions](automation-actions.md) except for `aws:executeScript`.
 
-The throttling retry setting works in addition to the existing `maxAttempts` step property. When both are configured, the system first attempts throttling retries within the specified time limit, then applies the `maxAttempts` setting if the step continues to fail.
+The throttling retry setting works alongside the existing `maxAttempts` step property. When both are configured, the system first attempts throttling retries within the specified time limit, then applies the `maxAttempts` setting if the step continues to fail.
 
 **To configure throttling retry using the AWS Management Console**
 

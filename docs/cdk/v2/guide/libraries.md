@@ -12,7 +12,7 @@ Learn about the core libraries that you will use with the AWS Cloud Development 
 ## The AWS CDK Library
 <a name="libraries-cdk"></a>
 
-The AWS CDK Library, also referred to as `aws-cdk-lib`, is the main library that you will use to develop applications with the AWS CDK. It is developed and maintained by AWS. This library contains base classes, such as [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.App.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.App.html) and [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html). It also contains the libraries you will use to define your infrastructure through constructs.
+The AWS CDK Library, also referred to as `aws-cdk-lib`, is the main library that you will use to develop applications with the AWS CDK. It is developed and maintained by AWS. This library contains base classes, such as [`App`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.App.html) and [`Stack`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html). It also contains the libraries you will use to define your infrastructure through constructs.
 
 ## The AWS Construct Library
 <a name="libraries-construct"></a>
@@ -22,7 +22,7 @@ The AWS Construct Library is a part of the AWS CDK Library. It contains a collec
 ## The Constructs library
 <a name="libraries-constructs"></a>
 
-The Constructs library, commonly referred to as `constructs`, is a library for defining and composing cloud infrastructure components. It contains the core [https://docs.aws.amazon.com/cdk/api/v2/docs/constructs.Construct.html](https://docs.aws.amazon.com/cdk/api/v2/docs/constructs.Construct.html) class, which represents the construct building block. This class is the foundational base class of all constructs from the AWS Construct Library. The Constructs library is a separate general-purpose library that is used by other construct-based tools such as *CDK for Terraform* and *CDK for Kubernetes*.
+The Constructs library, commonly referred to as `constructs`, is a library for defining and composing cloud infrastructure components. It contains the core [`Construct`](https://docs.aws.amazon.com/cdk/api/v2/docs/constructs.Construct.html) class, which represents the construct building block. This class is the foundational base class of all constructs from the AWS Construct Library. The Constructs library is a separate general-purpose library that is used by other construct-based tools such as *CDK for Terraform* and *CDK for Kubernetes*.
 
 ## The AWS CDK API reference
 <a name="libraries-reference"></a>

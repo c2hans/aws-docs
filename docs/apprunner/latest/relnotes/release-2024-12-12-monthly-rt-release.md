@@ -21,14 +21,25 @@ App Runner provides convenient platform-specific managed runtimes. When you use 
 
 The following table lists the changes included in this release.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/apprunner/latest/relnotes/release-2024-12-12-monthly-rt-release.html) |
-| **Python**<br />[Supported runtimes](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-python-releases.html) | Updated Python 3.11 to version 3.11.11. <br />Package updates:+  Updated SQLite to 3.47.2.   |
-| **Node.js**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-nodejs-releases.html) | Updated Node.js 18 to version 18.20.5. <br />Tools Updates:+  Updated npm to version 10.8.2.   |
-| **Corretto**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-java-releases.html) | Language runtime updates:+  Updated Corretto 11 to version 11.0.25.9.1. <br />+  Updated Corretto 8 to version 8.432.06.1. <br />No tools updates. |
-| **.NET Core**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-net6-releases.html) | Updated .NET Core 6.0 to version 6.0.36.<br />Package updates:+  Updated .NET SDK to version 6.0.428.   |
-| **PHP**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-php-releases.html) | Updated PHP 8.1 to version 8.1.31.<br />No package updates. |
-| **Ruby**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-ruby-releases.html) | No updates to language versions.<br />Package updates:+  Updated SQLite to version 3.47.2.   |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Python</b><br /><a href="https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-python-releases.html">Supported runtimes</a></td><td>Updated Python 3.11 to version 3.11.11. <br />Package updates:<ul><li> Updated SQLite to 3.47.2.  </li></ul></td></tr>
+  <tr><td><b>Node.js</b><br /><a href="https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-nodejs-releases.html">Supported runtimes </a></td><td>Updated Node.js 18 to version 18.20.5. <br />Tools Updates:<ul><li> Updated npm to version 10.8.2.  </li></ul></td></tr>
+  <tr><td><b>Corretto</b><br /><a href="https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-java-releases.html">Supported runtimes </a></td><td>Language runtime updates:<ul><li> Updated Corretto 11 to version 11.0.25.9.1. </li><li> Updated Corretto 8 to version 8.432.06.1. </li></ul><br />No tools updates.</td></tr>
+  <tr><td><b>.NET Core</b><br /><a href="https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-net6-releases.html">Supported runtimes </a></td><td>Updated .NET Core 6.0 to version 6.0.36.<br />Package updates:<ul><li> Updated .NET SDK to version 6.0.428.  </li></ul></td></tr>
+  <tr><td><b>PHP</b><br /><a href="https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-php-releases.html">Supported runtimes </a></td><td>Updated PHP 8.1 to version 8.1.31.<br />No package updates.</td></tr>
+  <tr><td><b>Ruby</b><br /><a href="https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-ruby-releases.html">Supported runtimes </a></td><td>No updates to language versions.<br />Package updates:<ul><li> Updated SQLite to version 3.47.2.  </li></ul></td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>

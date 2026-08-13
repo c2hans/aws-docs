@@ -9,6 +9,8 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 
 To set up the Systems Manager unified console experience for a single AWS account and AWS Region you don't need to use Organizations or register a delegated administrator account. The setup process for the Systems Manager console experience completes many prerequisite tasks for you. Depending on the features you choose to configure, this includes enabling Default Host Management Configuration to provide the required IAM permissions to your nodes and more. The following is a detailed list of the resources created by Systems Manager for the unified console.
 
+For related information, see [Setting up Systems Manager console access](systems-manager-setting-up-console-access.md).
+
 ## Unified console resources
 <a name="unified-console-resources-single"></a>
 
@@ -50,8 +52,8 @@ Additionally, after the setup process completes you can select the **Diagnose an
 1. In the **Feature configurations** section, choose the options that you want to enable for your configuration:
 
 **Enable Default Host Management Configuration (DHMC)**
-Allows Systems Manager to configure DHMC. This feature allows Systems Manager to use an IAM role to ensure that all Amazon EC2 instances in the account and Region have the permissions necessary to be managed by Systems Manager. You can also specify the frequency of drift remediation. Configuration drift occurs whenever a user makes any change to a service or feature that conflicts with the selections made through your configuration. Systems Manager checks for configuration drift and attempts to remediate it based on the frequency you specify. You must specify a value between 1 and 31 days. If you've already configured DHMC in a Region, Systems Manager doesn't change the IAM role you previously selected. For more information about DHMC, see [Managing EC2 instances automatically with Default Host Management Configuration](fleet-manager-default-host-management-configuration.md).
-DHMC makes it possible to manage Amazon EC2 instances without your having to manually create an AWS Identity and Access Management (IAM) instance profile. We encourage you to choose this option to ensure that your EC2 instances have the permissions necessary to be managed by Systems Manager.
+Allows Systems Manager to configure DHMC. This feature allows Systems Manager to use an IAM role to make sure that all Amazon EC2 instances in the account and Region have the permissions necessary to be managed by Systems Manager. You can also specify the frequency of drift remediation. Configuration drift occurs whenever a user makes any change to a service or feature that conflicts with the selections made through your configuration. Systems Manager checks for configuration drift and attempts to remediate it based on the frequency you specify. You must specify a value between 1 and 31 days. If you've already configured DHMC in a Region, Systems Manager doesn't change the IAM role you previously selected. For more information about DHMC, see [Managing EC2 instances automatically with Default Host Management Configuration](fleet-manager-default-host-management-configuration.md).
+DHMC makes it possible to manage Amazon EC2 instances without your having to manually create an AWS Identity and Access Management (IAM) instance profile. We encourage you to choose this option to make sure that your EC2 instances have the permissions necessary to be managed by Systems Manager.
 **Enable inventory metadata collection**
 Enables Systems Manager to configure collection of the following types of metadata from your nodes:
    + **AWS components** – EC2 driver, agents, versions, and more.
@@ -64,6 +66,6 @@ Enables Systems Manager to configure collection of the following types of metada
 Specify the frequency at which inventory is collected. You must specify a value between 1 and 744 hours. For more information about Inventory, a tool in AWS Systems Manager, see [AWS Systems Manager Inventory](systems-manager-inventory.md).
 **Enable automatic Systems Manager (SSM) Agent updates**
 Enables Systems Manager to check for a new version of the agent at the frequency you specify. The value for the frequency must be between 1 and 31 days. If there is a new version, then Systems Manager automatically updates the agent on your managed node to the latest released version. Systems Manager doesn't install the agent on instances where it's not already present. For information about which AMIs have SSM Agent preinstalled, see [Find AMIs with the SSM Agent preinstalled](ami-preinstalled-agent.md).
-We encourage you to choose this option to ensure that your nodes are always running the most up-to-date version of SSM Agent. For more information about SSM Agent, including information about how to manually install the agent, see [Working with SSM Agent](ssm-agent.md).
+We encourage you to choose this option to make sure that your nodes are always running the most up-to-date version of SSM Agent. For more information about SSM Agent, including information about how to manually install the agent, see [Working with SSM Agent](ssm-agent.md).
 
 1. Choose **Submit**.

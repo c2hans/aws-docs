@@ -10,7 +10,7 @@ Prerequisites:
 
  The following sections explain how to edit the name, description, and configuration details of tables for Amazon S3, Amazon Athena, and Snowflake data sources.
 
-For information about how to edit a configured table using the AWS SDKs, see the [https://docs.aws.amazon.com/clean-rooms/latest/apireference/Welcome.html](https://docs.aws.amazon.com/clean-rooms/latest/apireference/Welcome.html).
+For information about how to edit a configured table using the AWS SDKs, see the [*AWS Clean Rooms API Reference*](https://docs.aws.amazon.com/clean-rooms/latest/apireference/Welcome.html).
 
 **To edit a configured table**
 

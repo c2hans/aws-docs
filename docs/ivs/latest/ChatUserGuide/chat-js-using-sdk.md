@@ -28,7 +28,7 @@ Create an asynchronous token-provider function that fetches a chat token from yo
 type ChatTokenProvider = () => Promise<ChatToken>;
 ```
 
-The function should accept no parameters and return a [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) containing a chat token object:
+The function should accept no parameters and return a [*Promise*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) containing a chat token object:
 
 ```
 type ChatToken = {

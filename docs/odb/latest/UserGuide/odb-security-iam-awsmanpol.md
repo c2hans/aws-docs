@@ -12,9 +12,29 @@ AWS services maintain and update AWS managed policies. You can't change the perm
 Additionally, AWS supports managed policies for job functions that span multiple services. For example, the `ReadOnlyAccess` AWS managed policy provides read-only access to all AWS services and resources. When a service launches a new feature, AWS adds read-only permissions for new operations and resources. For a list and descriptions of job function policies, see [AWS managed policies for job functions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html) in the *IAM User Guide*.
 
 **Topics**
++ [AWS managed policy: AmazonODBReadOnlyAccess](#odb-security-iam-awsmanpol-AmazonODBReadOnlyAccess)
 + [AWS managed policy: AmazonODBFullAccess](#odb-security-iam-awsmanpol-AmazonODBFullAccess)
++ [AWS managed policy: AmazonODBExadataInfrastructureAdmin](#odb-security-iam-awsmanpol-AmazonODBExadataInfrastructureAdmin)
++ [AWS managed policy: AmazonODBNetworkAdmin](#odb-security-iam-awsmanpol-AmazonODBNetworkAdmin)
++ [AWS managed policy: AmazonODBAutonomousVmClusterAdmin](#odb-security-iam-awsmanpol-AmazonODBAutonomousVmClusterAdmin)
 + [AWS managed policy: AmazonODBServiceRolePolicy](#odb-security-iam-awsmanpol-AmazonODBServiceRolePolicy)
 + [Additional permissions to add manually](#odb-security-iam-awsmanpol-additional-permissions)
+
+## AWS managed policy: AmazonODBReadOnlyAccess
+<a name="odb-security-iam-awsmanpol-AmazonODBReadOnlyAccess"></a>
+
+You can attach the `AmazonODBReadOnlyAccess` policy to your IAM identities. With this policy attached, you can view all Oracle Database@AWS resources and related service resources.
+
+The policy includes permissions to:
++ View all Oracle Database@AWS resources, including Exadata infrastructure, Cloud VM clusters, Autonomous VM clusters, Autonomous Databases and their backups, DB nodes, DB servers, ODB networks, and ODB peering connections
++ View unallocated resources for Exadata infrastructure
++ List DB system shapes, Grid Infrastructure versions, system versions, Autonomous Database versions, and Autonomous Database character sets
++ View resource policies and list tags for Oracle Database@AWS resources
++ View Amazon VPCs and Availability Zones
+
+This policy includes only read-only actions. It does not create, update, or delete resources.
+
+To view the permissions for this policy, see [AmazonODBReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBReadOnlyAccess.html) in the *AWS Managed Policy Reference Guide*.
 
 ## AWS managed policy: AmazonODBFullAccess
 <a name="odb-security-iam-awsmanpol-AmazonODBFullAccess"></a>
@@ -38,6 +58,69 @@ This policy lacks the following permissions. Add each through your own customer 
 + Permissions for Amazon EC2 networking setup for ODB peering and DNS resolution. For the specific actions and an example policy, see [Amazon EC2 networking setup for ODB peering and DNS resolution](#odb-security-iam-awsmanpol-additional-ec2networking).
 
 To view the permissions for this policy, see [AmazonODBFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBFullAccess.html) in the *AWS Managed Policy Reference Guide*.
+
+## AWS managed policy: AmazonODBExadataInfrastructureAdmin
+<a name="odb-security-iam-awsmanpol-AmazonODBExadataInfrastructureAdmin"></a>
+
+You can attach the `AmazonODBExadataInfrastructureAdmin` policy to your IAM identities. With this policy attached, you can create and manage Oracle Exadata infrastructure resources. You can also list Cloud VM clusters and Autonomous VM clusters, which are visible in the Oracle Database@AWS console.
+
+The policy includes permissions to:
++ Initialize the Oracle Database@AWS service
++ Create, view, update, delete, and list Exadata infrastructure resources
++ View unallocated resources for Exadata infrastructure
++ List Cloud VM clusters and Autonomous VM clusters
++ View and list DB servers
++ Put, get, and delete resource policies
++ View Availability Zones
++ Tag, untag, and list tags for Exadata infrastructure resources
++ Create the service-linked role for Oracle Database@AWS
+
+To view the permissions for this policy, see [AmazonODBExadataInfrastructureAdmin](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBExadataInfrastructureAdmin.html) in the *AWS Managed Policy Reference Guide*.
+
+## AWS managed policy: AmazonODBNetworkAdmin
+<a name="odb-security-iam-awsmanpol-AmazonODBNetworkAdmin"></a>
+
+You can attach the `AmazonODBNetworkAdmin` policy to your IAM identities. With this policy attached, you can set up and manage networking resources for Oracle Database@AWS.
+
+The policy includes permissions to:
++ Initialize the Oracle Database@AWS service
++ Create, view, update, delete, and list ODB network resources
++ Create, view, update, delete, and list ODB peering connections
++ Put, get, and delete resource policies
++ Tag, untag, and list tags for ODB network and ODB peering connection resources
++ View Amazon VPCs and Availability Zones
++ Create, modify, and delete ODB network peering in Amazon EC2 (requires `aws:CalledVia` equal to `odb.amazonaws.com`)
++ Create the service-linked role for Oracle Database@AWS and for VPC Lattice
+
+This policy lacks the following permissions. Add each through your own customer managed policy:
++ Permissions for Amazon VPC Lattice and Amazon EC2 VPC endpoints that Oracle Database@AWS needs to provision or delete an ODB network. This set also includes the `ec2:DescribeVpcEndpoints` and `ec2:DescribeVpcEndpointAssociations` read permissions. For the specific actions and an example policy, see [VPC Lattice and VPC endpoints for service integrations](#odb-security-iam-awsmanpol-additional-vpclattice).
++ Permissions for managing the Oracle Database@AWS managed placement group in Amazon EC2 (create, attach, delete, and detach), which Oracle Database@AWS requires in Availability Zones that support managed cluster placement groups. For the specific actions and an example policy, see [Placement group management](#odb-security-iam-awsmanpol-additional-placementgroup).
++ Permissions for Amazon EC2 networking setup for ODB peering and DNS resolution. For the specific actions and an example policy, see [Amazon EC2 networking setup for ODB peering and DNS resolution](#odb-security-iam-awsmanpol-additional-ec2networking).
+
+To view the permissions for this policy, see [AmazonODBNetworkAdmin](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBNetworkAdmin.html) in the *AWS Managed Policy Reference Guide*.
+
+## AWS managed policy: AmazonODBAutonomousVmClusterAdmin
+<a name="odb-security-iam-awsmanpol-AmazonODBAutonomousVmClusterAdmin"></a>
+
+You can attach the `AmazonODBAutonomousVmClusterAdmin` policy to your IAM identities. With this policy attached, you can manage Autonomous VM cluster resources. You can also view Exadata infrastructure and ODB network resources, which are required dependencies for Autonomous VM clusters.
+
+The policy includes permissions to:
++ Initialize the Oracle Database@AWS service
++ Create, view, delete, and list Autonomous VM clusters
++ View Exadata infrastructure resources and their unallocated resources
++ List Autonomous virtual machines
++ View and list DB servers
++ View and list ODB network resources
++ List DB system shapes, Grid Infrastructure versions, and system versions
++ List tags for Oracle Database@AWS resources
++ View Availability Zones
++ Tag and untag Autonomous VM cluster resources
++ Create outbound integrations for Autonomous VM cluster resources
+
+This policy lacks the following permissions. Add each through your own customer managed policy:
++ Permissions for the `iam:PassRole` action, which passes the encryption role to Oracle Database@AWS. You need this action when you use a customer managed AWS Key Management Service key to encrypt an Autonomous VM cluster. Scope it to the specific role and constrain it with the `iam:PassedToService` condition set to `odb.amazonaws.com`.
+
+To view the permissions for this policy, see [AmazonODBAutonomousVmClusterAdmin](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonODBAutonomousVmClusterAdmin.html) in the *AWS Managed Policy Reference Guide*.
 
 ## AWS managed policy: AmazonODBServiceRolePolicy
 <a name="odb-security-iam-awsmanpol-AmazonODBServiceRolePolicy"></a>

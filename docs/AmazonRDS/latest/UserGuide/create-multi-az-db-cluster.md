@@ -317,7 +317,7 @@ For details about settings that you choose when you create a Multi-AZ DB cluster
 ## Settings that don't apply when creating Multi-AZ DB clusters
 <a name="create-multi-az-db-cluster-settings-not-applicable"></a>
 
-The following settings in the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-cluster.html](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-cluster.html) and the RDS API operation [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBCluster.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBCluster.html) don't apply to Multi-AZ DB clusters.
+The following settings in the AWS CLI command [`create-db-cluster`](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-cluster.html) and the RDS API operation [`CreateDBCluster`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBCluster.html) don't apply to Multi-AZ DB clusters.
 
 You also can't specify these settings for Multi-AZ DB clusters in the console.
 

@@ -93,7 +93,7 @@ The following are optional parameters:
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-meta.html)
 + **top\_p** – Use a lower value to ignore less probable options. Set to 1.0 to disable.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-meta.html)
-+ **max\_gen\_len** – Specify the maximum number of tokens to use in the generated response. The model truncates the response once the generated text exceeds `max_gen_len`.
++ **max\_gen\_len** – Specify the maximum number of tokens to use in the generated response. The model truncates the response after the generated text exceeds `max_gen_len`.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-meta.html)
 
 ------

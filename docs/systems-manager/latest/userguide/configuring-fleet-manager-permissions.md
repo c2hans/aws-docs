@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/configu
 # Controlling access to Fleet Manager
 <a name="configuring-fleet-manager-permissions"></a>
 
-To use Fleet Manager, a tool in AWS Systems Manager, your AWS Identity and Access Management (IAM) user or role must have the required permissions. You can create an IAM policy that provides access to all Fleet Manager features, or modify your policy to grant access to the features you choose. You then grant these permissions to users, or identities, in your account.
+To use Fleet Manager, your AWS Identity and Access Management (IAM) user or role must have the required permissions. You can create an IAM policy that provides access to all Fleet Manager features, or modify your policy to grant access to the features you choose. You then grant these permissions to users, or identities, in your account.
 
 **Task 1: Create IAM policies to define access permissions**
 Follow one of the methods provided in the followig topic in the *IAM User Guide* to create an IAM to provide identities (users, roles, or user groupss) with access to Fleet Manager:
@@ -19,10 +19,6 @@ After you have created the IAM policy or policies that define access permissions
 + [Adding IAM identity permissions (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console)
 + [Adding IAM identity permissions (AWS CLI)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policy-cli)
 + [Adding IAM identity permissions (AWS API)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policy-api)
-
-**Topics**
-+ [Sample policy for Fleet Manager administrator access](#admin-policy-sample)
-+ [Sample policy for Fleet Manager read-only access](#read-only-policy-sample)
 
 ## Sample policy for Fleet Manager administrator access
 <a name="admin-policy-sample"></a>

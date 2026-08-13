@@ -59,7 +59,7 @@ aws rds describe-integrations ^
 ### RDS API
 <a name="zero-etl.describing-api"></a>
 
-To view zero-ETL integration using the Amazon RDS API, use the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeIntegrations.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeIntegrations.html) operation with the `IntegrationIdentifier` parameter.
+To view zero-ETL integration using the Amazon RDS API, use the [`DescribeIntegrations`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeIntegrations.html) operation with the `IntegrationIdentifier` parameter.
 
 ## Monitoring integrations using system tables for Amazon Redshift
 <a name="zero-etl.monitoring"></a>

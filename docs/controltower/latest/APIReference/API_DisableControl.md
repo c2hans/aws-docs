@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Dis
 # DisableControl
 <a name="API_DisableControl"></a>
 
-This API call turns off a control. It starts an asynchronous operation that deletes AWS resources on the specified organizational unit and the accounts it contains. The resources will vary according to the control that you specify. For usage examples, see the [https://docs.aws.amazon.com/controltower/latest/controlreference/control-api-examples-short.html](https://docs.aws.amazon.com/controltower/latest/controlreference/control-api-examples-short.html).
+This API call turns off a control. It starts an asynchronous operation that deletes AWS resources on the specified organizational unit and the accounts it contains. The resources will vary according to the control that you specify. For usage examples, see the [*Controls Reference Guide*](https://docs.aws.amazon.com/controltower/latest/controlreference/control-api-examples-short.html).
 
 ## Request Syntax
 <a name="API_DisableControl_RequestSyntax"></a>

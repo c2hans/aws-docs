@@ -86,7 +86,7 @@ The following data examples are for model container outputs in **JSON Lines** fo
 ------
 #### [ Probability only ]
 
-In this example, the model container outputs the probability that can be extracted by [https://jmespath.org/](https://jmespath.org/) expression `score` in **JSON Lines** format.
+In this example, the model container outputs the probability that can be extracted by [`JMESPath`](https://jmespath.org/) expression `score` in **JSON Lines** format.
 
 | Model container input | Model container output |
 | --- | --- |

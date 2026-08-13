@@ -50,13 +50,13 @@ Metrics are grouped first by the service namespace, and then by the various dime
 ## AWS CLI
 <a name="metrics_dimensions.CLI"></a>
 
-To obtain metric information by using the AWS CLI, use the CloudWatch command [https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/list-metrics.html](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/list-metrics.html). In the following example, you list all metrics in the `AWS/RDS` namespace.
+To obtain metric information by using the AWS CLI, use the CloudWatch command [`list-metrics`](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/list-metrics.html). In the following example, you list all metrics in the `AWS/RDS` namespace.
 
 ```
 aws cloudwatch list-metrics --namespace AWS/RDS
 ```
 
-To obtain metric data, use the command [https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/get-metric-data.html](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/get-metric-data.html).
+To obtain metric data, use the command [`get-metric-data`](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/get-metric-data.html).
 
 The following example gets `CPUUtilization` statistics for instance `my-instance` over the specific 24-hour period, with a 5-minute granularity.
 

@@ -4,14 +4,14 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/cloud-c
 
 • The AWS Systems Manager CloudWatch Dashboard will no longer be available after April 30, 2026. Customers can continue to use Amazon CloudWatch console to view, create, and manage their Amazon CloudWatch dashboards, just as they do today. For more information, see [Amazon CloudWatch Dashboard documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html).
 
-# Step 2: Create an Systems Manager Cloud Connector
+# Step 2: Create a Systems Manager Cloud Connector
 <a name="cloud-connector-create-ssm-connector"></a>
 
-After the Cloud Connector is set up, create the Systems Manager Cloud Connector. The Systems Manager Cloud Connector stores the Azure tenant and subscription configuration and links it to the connector.
+After the AWS Config connector is set up, create the Systems Manager Cloud Connector. The Systems Manager Cloud Connector stores the Azure tenant and subscription configuration and links it to the AWS Config connector.
 
-**To create an Systems Manager Cloud Connector**
+**To create a Systems Manager Cloud Connector**
 
-1. Run the following command. Replace the placeholder values with your Azure tenant ID, the Systems Manager application (client) ID, subscription IDs, the Systems Manager Azure federation role ARN, and the connector ARN from Step 1.
+1. Run the following command. Replace the placeholder values with your Azure tenant ID, the Systems Manager application (client) ID, subscription IDs, the Systems Manager Azure federation role ARN, and the AWS Config connector ARN from Step 1.
 
    ```
    aws ssm create-cloud-connector \
@@ -33,7 +33,7 @@ After the Cloud Connector is set up, create the Systems Manager Cloud Connector.
 
    To target all subscriptions in the tenant (tenant-level setup), omit the `Targets` field from the configuration.
 
-   The response returns the `CloudConnectorId` and `CloudConnectorArn`. Note these values for future operations.
+   The response returns the `CloudConnectorId`. Note this value for future operations.
 
 1. Verify the Cloud Connector was created successfully:
 

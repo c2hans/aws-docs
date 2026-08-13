@@ -81,9 +81,29 @@ Kinesis Data Analytics continuously sends the output records from the applicatio
   <tr><th>Field</th><th>Description</th></tr>
 </thead>
 <tbody>
-  <tr><td>invocationId</td><td>The Lambda invocation ID (random GUID).</td></tr>
-  <tr><td>applicationArn</td><td>The Kinesis Data Analytics application Amazon Resource Name (ARN).</td></tr>
-  <tr><td colspan="2">records [See the AWS documentation website for more details](http://docs.aws.amazon.com/kinesisanalytics/latest/dev/how-it-works-output-lambda.html) </td></tr>
+  <tr><td><code>invocationId</code></td><td>The Lambda invocation ID (random GUID).</td></tr>
+  <tr><td><code>applicationArn</code></td><td>The Kinesis Data Analytics application Amazon Resource Name (ARN).</td></tr>
+  <tr><td colspan="2">records
+<table>
+<thead>
+  <tr><th>Field</th><th>Description</th><th></th></tr>
+</thead>
+<tbody>
+  <tr><td><code>recordId</code></td><td>record ID (random GUID)</td><td></td></tr>
+  <tr><td><code>lambdaDeliveryRecordMetadata</code></td><td>
+<table>
+<thead>
+  <tr><th>Field</th><th>Description</th><th></th></tr>
+</thead>
+<tbody>
+  <tr><td><code>retryHint</code></td><td>Number of delivery retries</td><td></td></tr>
+</tbody>
+</table>
+ </td><td></td></tr>
+  <tr><td>data</td><td>Base64-encoded output record payload</td><td></td></tr>
+</tbody>
+</table>
+ </td></tr>
 </tbody>
 </table>
 
@@ -95,11 +115,21 @@ The `retryHint` is a value that increases for every delivery failure. This value
 
 Each record sent to your Lambda as an output function (with record IDs) must be acknowledged with either `Ok` or `DeliveryFailed`, and it must contain the following parameters. Otherwise, Kinesis Data Analytics treats them as a delivery failure.
 
-| Field | Description |
-| --- | --- |
-| records [See the AWS documentation website for more details](http://docs.aws.amazon.com/kinesisanalytics/latest/dev/how-it-works-output-lambda.html)  |
-| recordId | The record ID is passed from Kinesis Data Analytics to Lambda during the invocation. Any mismatch between the ID of the original record and the ID of the acknowledged record is treated as a delivery failure. |
-| result | The status of the delivery of the record. The following are possible values: +  `Ok`: The record was transformed successfully and sent to the final destination. Kinesis Data Analytics ingests the record for SQL processing.  <br />+  `DeliveryFailed`: The record was not delivered successfully to the final destination by the Lambda as output function. Kinesis Data Analytics continuously retries sending the delivery failed records to the Lambda as output function.   |
+<table>
+<tbody>
+  <tr><td>records
+<table>
+<thead>
+  <tr><th>Field</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td><code>recordId</code></td><td>The record ID is passed from Kinesis Data Analytics to Lambda during the invocation. Any mismatch between the ID of the original record and the ID of the acknowledged record is treated as a delivery failure.</td></tr>
+  <tr><td><code>result</code></td><td>The status of the delivery of the record. The following are possible values: <ul><li> <code>Ok</code>: The record was transformed successfully and sent to the final destination. Kinesis Data Analytics ingests the record for SQL processing.  </li><li> <code>DeliveryFailed</code>: The record was not delivered successfully to the final destination by the Lambda as output function. Kinesis Data Analytics continuously retries sending the delivery failed records to the Lambda as output function. </li></ul> </td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ## Lambda Output Invocation Frequency
 <a name="how-it-works-output-lambda-frequency"></a>

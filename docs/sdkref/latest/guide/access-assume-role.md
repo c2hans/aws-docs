@@ -33,7 +33,7 @@ Use `credential_source` to source credentials from an Amazon ECS container, an A
 
 Use `source_profile` to source credentials from another profile. `source_profile` also supports role chaining, which is hierarchies of profiles where an assumed role is then used to assume another role.
 
-When you specify this in a profile, the SDK or tool automatically makes the corresponding AWS STS [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) API call for you. To retrieve and use temporary credentials by assuming a role, specify the following configuration values in the shared AWS `config` file. For more details on each of these settings, see the [Assume role credential provider settings](feature-assume-role-credentials.md#feature-assume-role-credentials-settings) section.
+When you specify this in a profile, the SDK or tool automatically makes the corresponding AWS STS [`AssumeRole`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) API call for you. To retrieve and use temporary credentials by assuming a role, specify the following configuration values in the shared AWS `config` file. For more details on each of these settings, see the [Assume role credential provider settings](feature-assume-role-credentials.md#feature-assume-role-credentials-settings) section.
 + `role_arn` - From the IAM role you created in Step 1
 + Configure either `credential_source` or `source_profile`
 + (Optional) `duration_seconds`

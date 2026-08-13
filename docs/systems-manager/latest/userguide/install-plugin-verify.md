@@ -19,7 +19,7 @@ If the installation was successful, the following message is returned.
 The Session Manager plugin is installed successfully. Use the AWS CLI to start a session.
 ```
 
-You can also test the installation by running the [https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html) command in the the [AWS Command Line Interface](https://aws.amazon.com/cli/) (AWS CLI). In the following command, replace {{instance-id}} with your own information.
+You can also test the installation by running the [start-session](https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html) command in the the [AWS Command Line Interface](https://aws.amazon.com/cli/) (AWS CLI). In the following command, replace {{instance-id}} with your own information.
 
 ```
 aws ssm start-session --target {{instance-id}}

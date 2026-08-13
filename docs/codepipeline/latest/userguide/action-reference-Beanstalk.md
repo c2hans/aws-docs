@@ -32,7 +32,7 @@ The name of the application that you created in Elastic Beanstalk.
 
 **EnvironmentName**
 Required: Yes
-The name of the environment that you created in Elastic Beanstalk. An environment is a collection of AWS resources running an application version. Each environment runs only one application version at a time, however, you can run the same application version or different application versions in many environments simultaneously.
+The name of the environment that you created in Elastic Beanstalk. An environment is a collection of AWS resources running an application version. Each environment runs only one application version at a time; however, you can run the same application version or different application versions in many environments simultaneously.
 
 ## Input artifacts
 <a name="action-reference-Beanstalk-input"></a>

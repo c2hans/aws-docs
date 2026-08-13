@@ -19,7 +19,7 @@ To retry an action in case of an error, specify a value for the **Max attempts**
 ## Timeouts
 <a name="timeout-seconds"></a>
 
-You can configure a timeout for actions to set the maximum number of seconds your action can run before it fails. To configure a timeout, enter the number of seconds that your action should wait before the action fails in the **Timeout seconds** property. If the timeout is reached and the action has a value of `Max attempts` that is greater than 1, the step isn't considered to have timed out until the retries complete.
+You can configure a timeout for actions to set the maximum number of seconds your action can run before it fails. Enter the value in the **Timeout seconds** property. If the timeout is reached and `Max attempts` is greater than 1, the step isn't considered timed out until all retries complete.
 
 ## Failed actions
 <a name="failure-actions"></a>

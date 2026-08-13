@@ -13,7 +13,7 @@ Language configuration for an evaluation form.
  ** FormLanguage **   <a name="connect-Type-EvaluationFormLanguageConfiguration-FormLanguage"></a>
 The language for the evaluation form.
 Type: String
-Valid Values: `de-DE | en-US | es-ES | fr-FR | it-IT | pt-BR | ja-JP | ko-KR | zh-CN`
+Valid Values: `de-DE | en-US | es-ES | fr-FR | it-IT | pt-BR | ja-JP | ko-KR | zh-CN | ms-MY`
 Required: No
 
 ## See Also

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/specifyin
 # Specifying Lambda hook functions
 <a name="specifying-lambda-hook-functions"></a>
 
-The solution’s content designer allows you to dynamically generate answers by specifying your own Lambda hook function for any item. When you specify the name, or ARN, of a Lambda function in the **Lambda hook** field for an item, QnABot on AWS will call your function any time that item is matched to an end user’s question. Your Lambda function can run code to integrate with other services, perform actions, and generate dynamic answers.
+The guidance’s content designer allows you to dynamically generate answers by specifying your own Lambda hook function for any item. When you specify the name, or ARN, of a Lambda function in the **Lambda hook** field for an item, QnABot on AWS will call your function any time that item is matched to an end user’s question. Your Lambda function can run code to integrate with other services, perform actions, and generate dynamic answers.
 
 QnABot on AWS comes with a simple Lambda hook function example that you can customize:
 

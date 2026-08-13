@@ -88,14 +88,12 @@ For example:
 ### Anonymous caller ID
 <a name="anonymous-caller-id"></a>
 
-Anonymous calls (calls without caller ID) will be blocked by most carriers and may fail to connect.
+Connect Customer does not allow anonymous calls (calls without caller ID). You must configure a valid phone number in the **Outbound caller ID number** field for every queue: the outbound queue for direct outbound calling, and the inbound queue for agent-initiated external transfer calls. If you do not, the call will fail. You can use only numbers you've claimed or ported to Connect Customer.
 
- **Why anonymous calls fail:**
+A valid caller ID is required because:
 + Most phone carriers now block anonymous calls as anti-spam measures.
 + Many countries prohibit anonymous calls through regulation.
 + Call success rates are unpredictable and unreliable.
-
-**Prevention:** Always configure a valid phone number in the **Outbound caller ID** number field for every queue used for outbound calling. Use only numbers you've claimed or ported to Amazon Connect.
 
 ### Toll-free numbers for caller ID
 <a name="tfn-callerid"></a>
@@ -115,7 +113,7 @@ If the call is placed with an external quick connect or quick connect number pad
 + If the agent isn't on an active call, the outbound queue of the agent's [routing profile](routing-profiles.md) provides the outbound caller ID and caller name.
 
 **Note**
-You can override the outbound caller IDs in your agents' routing profiles by using the [Call phone number](call-phone-number.md) block in a [custom outbound whisper flow](https://repost.aws/knowledge-center/connect-custom-outbound-whisper-flows).
+You can override the outbound caller ID for direct outbound calls (when the agent is not on an active call) by using the [Call phone number](call-phone-number.md) block in a [custom outbound whisper flow](https://repost.aws/knowledge-center/connect-custom-outbound-whisper-flows). This override does not apply to transfers initiated while the agent is on an active call. In that case, the caller ID comes from the inbound queue that serviced the original call and cannot be overridden by the outbound whisper flow. To control caller ID for transfers, use a [Transfer to phone number](transfer-to-phone-number.md) block with a caller ID explicitly configured.
 
 ## How to set the caller ID number dynamically
 <a name="using-dynamic-caller-id"></a>

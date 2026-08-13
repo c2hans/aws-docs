@@ -250,7 +250,7 @@ Message payload:
 ```
 {
 "jobs" : {
-    "JobExecutionState": [ [https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecutionSummary.html](https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecutionSummary.html) ... ]
+    "JobExecutionState": [ [`JobExecutionSummary`](https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecutionSummary.html) ... ]
          },
     "timestamp": timestamp
 }
@@ -259,7 +259,7 @@ Message payload:
 ## NextJobExecutionChanged
 <a name="mqtt-nextjobexecutionchanged"></a>
 
-Sent whenever there is a change to which job execution is next on the list of pending job executions for a thing, as defined for [https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJobExecution.html](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJobExecution.html) with `jobId` `$next`. This message is not sent when the next job's execution details change, only when the next job that would be returned by `DescribeJobExecution` with `jobId` `$next` has changed. Consider job executions J1 and J2 with a status of `QUEUED`. J1 is next on the list of pending job executions. If the status of J2 is changed to `IN_PROGRESS` while the state of J1 remains unchanged, then this notification is sent and contains details of J2.
+Sent whenever there is a change to which job execution is next on the list of pending job executions for a thing, as defined for [`DescribeJobExecution`](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJobExecution.html) with `jobId` `$next`. This message is not sent when the next job's execution details change, only when the next job that would be returned by `DescribeJobExecution` with `jobId` `$next` has changed. Consider job executions J1 and J2 with a status of `QUEUED`. J1 is next on the list of pending job executions. If the status of J2 is changed to `IN_PROGRESS` while the state of J1 remains unchanged, then this notification is sent and contains details of J2.
 
 Use the topic:
 
@@ -269,7 +269,7 @@ Message payload:
 
 ```
 {
-"execution" : [https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecution.html](https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecution.html),
+"execution" : [`JobExecution`](https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecution.html),
 "timestamp": timestamp,
 }
 ```

@@ -141,7 +141,7 @@ For more information about product visibility and lifecycle, see [Product lifecy
 
 1. Open the AWS Marketplace Management Portal at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home), and then sign in to your seller account.
 
-1. Go to the [https://aws.amazon.com/marketplace/management/products/server](https://aws.amazon.com/marketplace/management/products/server) page, on the **Current server product** tab, select the container-based product that you want to modify.
+1. Go to the [**Server products**](https://aws.amazon.com/marketplace/management/products/server) page, on the **Current server product** tab, select the container-based product that you want to modify.
 
 1. From the **Request changes** dropdown, choose **Update visibility**.
 **Note**
@@ -158,7 +158,7 @@ You can change the list of AWS account IDs that can view your product in a limit
 
 1. Open the AWS Marketplace Management Portal at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home) and sign in to your seller account.
 
-1. From the [https://aws.amazon.com/marketplace/management/products/server](https://aws.amazon.com/marketplace/management/products/server) page, select the container product that you want to modify.
+1. From the [**Server Products**](https://aws.amazon.com/marketplace/management/products/server) page, select the container product that you want to modify.
 
 1. From the **Request changes** dropdown list, select **Update allowlist**. The current list of accounts that are allowlisted is shown.
 

@@ -179,7 +179,7 @@ GET https://https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}
 The results of the Amazon Comprehend Medical API operations are amended to the following elements: `code`, `meta`, and `modifierExtension`.
 
 **`code`**
-An element of type `CodeableConcept`. To learn more, see [https://hl7.org/fhir/R4/datatypes.html#CodeableConcept](https://hl7.org/fhir/R4/datatypes.html#CodeableConcept) in the **FHIR R4 documentation**.
+An element of type `CodeableConcept`. To learn more, see [`CodeableConcept`](https://hl7.org/fhir/R4/datatypes.html#CodeableConcept) in the **FHIR R4 documentation**.
 
 HealthLake appends the following three key-value pairs.
 + `"system": "http://healthlake.amazonaws.com/aws-cm/infer-icd10/"`: Where the URL refers to a specific Amazon Comprehend Medical API operation. In this case, InferICD10CM.
@@ -309,7 +309,7 @@ GET https://https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}
 The results of the Amazon Comprehend Medical API operations are amended to the following elements: `code`, `meta`, and `modifierExtension`.
 
 **`code`**
-An element of type `CodeableConcept`. To learn more, see [https://hl7.org/fhir/R4/datatypes.html#CodeableConcept](https://hl7.org/fhir/R4/datatypes.html#CodeableConcept) in the **FHIR R4 documentation**.
+An element of type `CodeableConcept`. To learn more, see [`CodeableConcept`](https://hl7.org/fhir/R4/datatypes.html#CodeableConcept) in the **FHIR R4 documentation**.
 
 HealthLake appends the following three key-value pairs.
 + `"system": "http://healthlake.amazonaws.com/aws-cm/infer-icd10/"`: Where the URL refers to a specific Amazon Comprehend Medical API operation. In this case, InferICD10CM.
@@ -581,7 +581,7 @@ GET https://https://healthlake.{{region}}.amazonaws.com/datastore/{{datastoreId}
 The `MedicationStatement` resource type is where the results of the Amazon Comprehend Medical InferRxNorm API operation are found. The results are amended to the following elements: `medicationCodeableConcept`, `meta`, and `modifierExtension`.
 
 **medicationCodeableConcept**
-An element of type `CodeableConcept`. To learn more, see [https://hl7.org/fhir/R4/datatypes.html#CodeableConcept](https://hl7.org/fhir/R4/datatypes.html#CodeableConcept) in the **FHIR R4 documentation**.
+An element of type `CodeableConcept`. To learn more, see [`CodeableConcept`](https://hl7.org/fhir/R4/datatypes.html#CodeableConcept) in the **FHIR R4 documentation**.
 
 HealthLake appends the following three key-value pairs.
 + `"system": ""http://healthlake.amazonaws.com/aws-cm/infer-rxnorm/`: Where the URL refers to a specific Amazon Comprehend Medical API operation. In this case, InferRxNorm.

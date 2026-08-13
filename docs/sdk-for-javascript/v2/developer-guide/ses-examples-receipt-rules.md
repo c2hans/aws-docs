@@ -21,10 +21,10 @@ To use Amazon SES as your email receiver, you must have at least one active *rec
 <a name="ses-examples-receipt-rules-scenario"></a>
 
 In this example, a series of Node.js modules are used to send email in a variety of ways. The Node.js modules use the SDK for JavaScript to create and use email templates using these methods of the `AWS.SES` client class:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SES.html#createReceiptRule-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SES.html#createReceiptRule-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SES.html#deleteReceiptRule-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SES.html#deleteReceiptRule-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SES.html#createReceiptRuleSet-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SES.html#createReceiptRuleSet-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SES.html#deleteReceiptRuleSet-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SES.html#deleteReceiptRuleSet-property)
++ [`createReceiptRule`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SES.html#createReceiptRule-property)
++ [`deleteReceiptRule`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SES.html#deleteReceiptRule-property)
++ [`createReceiptRuleSet`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SES.html#createReceiptRuleSet-property)
++ [`deleteReceiptRuleSet`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SES.html#deleteReceiptRuleSet-property)
 
 ## Prerequisite Tasks
 <a name="ses-examples-receipt-rules-prerequisites"></a>

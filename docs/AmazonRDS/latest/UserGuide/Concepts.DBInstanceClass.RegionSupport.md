@@ -51,7 +51,7 @@ You can use the AWS CLI to determine which DB instance classes are supported for
 | MariaDB | `mariadb` | [MariaDB on Amazon RDS versions](MariaDB.Concepts.VersionMgmt.md) |
 | Microsoft SQL Server | `sqlserver-ee`<br />`sqlserver-se`<br />`sqlserver-ex`<br />`sqlserver-web` | [Microsoft SQL Server versions on Amazon RDS](SQLServer.Concepts.General.VersionSupport.md) |
 | MySQL | `mysql` | [MySQL on Amazon RDS versions](MySQL.Concepts.VersionMgmt.md) |
-| Oracle | `oracle-ee`<br />`oracle-se2` | [https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/Welcome.html](https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/Welcome.html) |
+| Oracle | `oracle-ee`<br />`oracle-se2` | [*Amazon RDS for Oracle Release Notes*](https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/Welcome.html) |
 | PostgreSQL | `postgres` | [Available PostgreSQL database versions](PostgreSQL.Concepts.General.DBVersions.md) |
 
 For information about AWS Region names, see [AWS RegionsAvailability Zones](Concepts.RegionsAndAvailabilityZones.md#Concepts.RegionsAndAvailabilityZones.Regions).

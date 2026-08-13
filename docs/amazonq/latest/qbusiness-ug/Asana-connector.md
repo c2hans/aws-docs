@@ -10,7 +10,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 **Note**
 The Asana connector is in preview release and is subject to change.
 
- Asana is a tool for organizing and assigning tasks among users. You can connect a Asana instance to Amazon Q Business—using either the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q web experience.
+ Asana is a tool for organizing and assigning tasks among users. You can connect a Asana instance to Amazon Q Business—using either the AWS Management Console or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q web experience.
 
 **Topics**
 + [Known limitations for the Amazon Q Business Asana connector (Preview)](Asana-limitations.md)

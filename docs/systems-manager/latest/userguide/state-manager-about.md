@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/state-m
 # Understanding how State Manager works
 <a name="state-manager-about"></a>
 
-State Manager, a tool in AWS Systems Manager, is a secure and scalable service that automates the process of keeping managed nodes in a [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) infrastructure in a state that you define.
+State Manager is a secure and scalable service that automates the process of keeping managed nodes in a [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) infrastructure in a state that you define.
 
 Here's how State Manager works:
 
@@ -18,7 +18,7 @@ An association specifies a schedule for when to apply the configuration and the 
 
 **2. Determine if a preconfigured SSM document can help you create the desired state on your AWS resources.**
 Systems Manager includes dozens of preconfigured SSM documents that you can use to create an association. Preconfigured documents are ready to perform common tasks like installing applications, configuring Amazon CloudWatch, running AWS Systems Manager automations, running PowerShell and Shell scripts, and joining managed nodes to a directory service domain for Active Directory.
-You can view all SSM documents in the [Systems Manager console](https://console.aws.amazon.com/systems-manager/documents). Choose the name of a document to learn more about each one. Here are two examples: [https://console.aws.amazon.com/systems-manager/documents/AWS-ConfigureAWSPackage/description](https://console.aws.amazon.com/systems-manager/documents/AWS-ConfigureAWSPackage/description) and [https://console.aws.amazon.com/systems-manager/documents/AWS-InstallApplication/description](https://console.aws.amazon.com/systems-manager/documents/AWS-InstallApplication/description).
+You can view all SSM documents in the [Systems Manager console](https://console.aws.amazon.com/systems-manager/documents). Choose the name of a document to learn more about each one. Here are two examples: [`AWS-ConfigureAWSPackage`](https://console.aws.amazon.com/systems-manager/documents/AWS-ConfigureAWSPackage/description) and [`AWS-InstallApplication`](https://console.aws.amazon.com/systems-manager/documents/AWS-InstallApplication/description).
 
 **3. Create an association.**
 You can create an association by using the Systems Manager console, the AWS Command Line Interface (AWS CLI), AWS Tools for Windows PowerShell (Tools for Windows PowerShell), or the Systems Manager API. When you create an association, you specify the following information:
@@ -72,7 +72,7 @@ Running an Automation runbook incurs a cost. If an association with an Automatio
 ## About target updates with Automation runbooks
 <a name="runbook-target-updates"></a>
 
-In order for associations that are created with Automation runbooks to be applied when new target nodes are detected, the following conditions must be true:
+For associations that are created with Automation runbooks to be applied when new target nodes are detected, the following conditions must be true:
 + The association must have been created by a [Quick Setup](systems-manager-quick-setup.md) configuration. Quick Setup is a tool in AWS Systems Manager. Associations created by other processes are not currently supported.
 + The Automation runbook must explicitly target the resource type `AWS::EC2::Instance` or `AWS::SSM::ManagedInstance`.
 + The association must specify both parameters and targets.
@@ -80,7 +80,7 @@ In order for associations that are created with Automation runbooks to be applie
   In the console, the **Parameter** and **Targets** fields are displayed when you choose a rate control execution.
 ![Parameter and target options are presented in the console for rate control executions](http://docs.aws.amazon.com/systems-manager/latest/userguide/images/sm_Rate_control_execution_options.png)
 
-  When you use the [https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_CreateAssociation.html](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_CreateAssociation.html), [https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_CreateAssociationBatch.html](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_CreateAssociationBatch.html), or [https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_UpdateAssociation.html](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_UpdateAssociation.html) API actions, you can specify these values using the `AutomationTargetParameterName` and `Targets` inputs. In each of these API actions, you can also prevent the association from running each time a target changes by setting the `ApplyOnlyAtCronInterval` parameter to `true`.
+  When you use the [CreateAssociation](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_CreateAssociation.html), [CreateAssociationBatch](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_CreateAssociationBatch.html), or [UpdateAssociation](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_UpdateAssociation.html) API actions, you can specify these values using the `AutomationTargetParameterName` and `Targets` inputs. In each of these API actions, you can also prevent the association from running each time a target changes by setting the `ApplyOnlyAtCronInterval` parameter to `true`.
 
   For information about using the console to control when associations run, including details for avoiding unexpectedly high costs for Automation executions, see [Understanding when associations are applied to resources](#state-manager-about-scheduling).
 

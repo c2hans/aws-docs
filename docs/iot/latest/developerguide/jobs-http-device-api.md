@@ -30,7 +30,7 @@ Response:
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_GetPendingJobExecutions.html](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_GetPendingJobExecutions.html).
+For more information, see [`GetPendingJobExecutions`](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_GetPendingJobExecutions.html).
 
 ------
 #### [ CLI syntax ]
@@ -50,7 +50,7 @@ aws iot-jobs-data get-pending-job-executions \
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/iot-jobs-data/get-pending-job-executions.html](https://docs.aws.amazon.com/cli/latest/reference/iot-jobs-data/get-pending-job-executions.html).
+For more information, see [`get-pending-job-executions`](https://docs.aws.amazon.com/cli/latest/reference/iot-jobs-data/get-pending-job-executions.html).
 
 ------
 
@@ -81,7 +81,7 @@ PUT /things/{{thingName}}/jobs/$next
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_StartNextPendingJobExecution.html](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_StartNextPendingJobExecution.html).
+For more information, see [`StartNextPendingJobExecution`](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_StartNextPendingJobExecution.html).
 
 ------
 #### [ CLI syntax ]
@@ -109,7 +109,7 @@ aws iot-jobs-data  start-next-pending-job-execution \
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/iot-jobs-data/start-next-pending-job-execution.html](https://docs.aws.amazon.com/cli/latest/reference/iot-jobs-data/start-next-pending-job-execution.html).
+For more information, see [`start-next-pending-job-execution`](https://docs.aws.amazon.com/cli/latest/reference/iot-jobs-data/start-next-pending-job-execution.html).
 
 ------
 
@@ -137,7 +137,7 @@ Response:
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_DescribeJobExecution.html](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_DescribeJobExecution.html).
+For more information, see [`DescribeJobExecution`](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_DescribeJobExecution.html).
 
 ------
 #### [ CLI syntax ]
@@ -165,7 +165,7 @@ aws iot-jobs-data  describe-job-execution \
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/iot-data/describe-job-execution.html](https://docs.aws.amazon.com/cli/latest/reference/iot-data/describe-job-execution.html).
+For more information, see [`describe-job-execution`](https://docs.aws.amazon.com/cli/latest/reference/iot-data/describe-job-execution.html).
 
 ------
 
@@ -195,7 +195,7 @@ POST /things/{{thingName}}/jobs/{{jobId}}
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_UpdateJobExecution.html](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_UpdateJobExecution.html).
+For more information, see [`UpdateJobExecution`](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_UpdateJobExecution.html).
 
 ------
 #### [ CLI syntax ]
@@ -235,6 +235,6 @@ aws iot-jobs-data  update-job-execution \
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/iot-data/update-job-execution.html](https://docs.aws.amazon.com/cli/latest/reference/iot-data/update-job-execution.html).
+For more information, see [`update-job-execution`](https://docs.aws.amazon.com/cli/latest/reference/iot-data/update-job-execution.html).
 
 ------

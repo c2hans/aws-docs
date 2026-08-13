@@ -14,7 +14,7 @@ Email delivery throughput is throttled. For more information, see [Amazon SNS qu
 
 **Important**
 To prevent mailing list recipients from unsubscribing all recipients from Amazon SNS topic emails, see [Set up an email subscription that requires authentication to unsubscribe](https://aws.amazon.com/premiumsupport/knowledge-center/prevent-unsubscribe-all-sns-topic/) from AWS Support.
-Exceeding the limit of 10 messages per second (TPS) for an email or email-json endpoint will trigger an automatic suspension of the subscription, placing it in a pending confirmation status. The subscription remains in PendingConfirmation state for 30 days, after which it will be automatically deleted unless action is taken.
+Exceeding the limit of 10 messages per second (TPS) for an email or email-json endpoint triggers an automatic suspension of the subscription, placing it in a pending confirmation status. The subscription remains in PendingConfirmation state for 30 days, after which Amazon SNS automatically deletes it unless you reconfirm the subscription. Amazon SNS deletes all other unconfirmed subscriptions after 48 hours.
 If a subscribed email address results in a bounce, the address is suppressed from further deliveries for 7 days. Bounces can occur for various reasons, including invalid addresses or issues with the receiving email server. To remove the address from the suppression list before the 7-day period expires, resolve the underlying issue with the email address and then contact AWS using the Support Center.
 
 ## Subscribing an email address to an Amazon SNS topic using the AWS Management Console

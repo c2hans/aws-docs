@@ -166,7 +166,7 @@ These fields help you associate invoices with the AWS Organizations that generat
 You can download CSV files for any future billing *after* you turn on monthly reports. This feature delivers your reports to an Amazon S3 bucket.
 
 **Note**
-Starting November 1, 2025, the **Download all to CSV** button will no longer be available on the **Bills** page. If you previously configured delivery of the eCSV report, you can get this report from the Amazon S3 bucket that you specified during configuration. To configure additional reports, visit the [https://console.aws.amazon.com/costmanagement/home#/bcm-data-exports](https://console.aws.amazon.com/costmanagement/home#/bcm-data-exports) console page.
+Starting November 1, 2025, the **Download all to CSV** button will no longer be available on the **Bills** page. If you previously configured delivery of the eCSV report, you can get this report from the Amazon S3 bucket that you specified during configuration. To configure additional reports, visit the [**Data Exports**](https://console.aws.amazon.com/costmanagement/home#/bcm-data-exports) console page.
 
 **To download CSV files for a monthly report**
 

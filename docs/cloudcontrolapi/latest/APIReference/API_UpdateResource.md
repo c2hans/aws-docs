@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_
 
 Updates the specified property values in the resource.
 
-You specify your resource property updates as a list of patch operations contained in a JSON patch document that adheres to the [https://datatracker.ietf.org/doc/html/rfc6902](https://datatracker.ietf.org/doc/html/rfc6902) standard.
+You specify your resource property updates as a list of patch operations contained in a JSON patch document that adheres to the [*RFC 6902 - JavaScript Object Notation (JSON) Patch*](https://datatracker.ietf.org/doc/html/rfc6902) standard.
 
 For details on how Cloud Control API performs resource update operations, see [Updating a resource](https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/resource-operations-update.html) in the * AWS Cloud Control API User Guide*.
 

@@ -29,7 +29,7 @@ To see which models support reasoning, please visit [models at a glance](model-c
 **Note**
 Model reasoning is always enabled for the DeepSeek-R1 model. The model does not support toggling the reasoning capability on and off.
 
-When using the Claude 3.7 Sonnet model, model reasoning can be enabled or disabled using the `additionalModelRequestFields` parameter of the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) API. This parameter accepts any key-value pairs. For example, you can add a `reasoningConfig` field and use a `type` key to enable or disable reasoning, as shown below.
+When using the Claude 3.7 Sonnet model, model reasoning can be enabled or disabled using the `additionalModelRequestFields` parameter of the [`RetrieveAndGenerate`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) API. This parameter accepts any key-value pairs. For example, you can add a `reasoningConfig` field and use a `type` key to enable or disable reasoning, as shown below.
 
 ```
 {
@@ -64,7 +64,7 @@ The following are some general considerations for using the reasoning models for
 ## Retrieve and generate API considerations
 <a name="kb-test-reasoning-api-considerations"></a>
 
-The following are some considerations when using the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) API for the reasoning models.
+The following are some considerations when using the [`RetrieveAndGenerate`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) API for the reasoning models.
 + By default, when reasoning is disabled for all models including the Claude 3.7 Sonnet, the temperature is set to zero. When reasoning is enabled, the temperature must be set to one.
 
   ```
@@ -76,4 +76,4 @@ The following are some considerations when using the [https://docs.aws.amazon.co
   }
   ```
 + The parameter, Top P, must be disabled when reasoning is enabled for the Claude 3.7 Sonnet model. Top P is an additional model request field that determines the percentile of possible tokens to select from during generation. By default, the Top P value for other Anthropic Claude models is one. For the Claude 3.7 Sonnet model, this value will be disabled by default.
-+ When model reasoning is in use, it can result in an increase in latency. When using this API operation and the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerateStream.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerateStream.html) API operation, you might notice a delay in receiving the response from the API.
++ When model reasoning is in use, it can result in an increase in latency. When using this API operation and the [`RetrieveAndGenerateStream`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerateStream.html) API operation, you might notice a delay in receiving the response from the API.

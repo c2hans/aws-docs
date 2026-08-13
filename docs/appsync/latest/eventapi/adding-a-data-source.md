@@ -42,7 +42,7 @@ Alternatively, if you're creating a DynamoDB data source, you can go to the **Sc
 
 ------
 #### [ CLI ]
-+ Create your data source by running the [https://docs.aws.amazon.com/cli/latest/reference/appsync/create-data-source.html](https://docs.aws.amazon.com/cli/latest/reference/appsync/create-data-source.html) command.
++ Create your data source by running the [`create-data-source`](https://docs.aws.amazon.com/cli/latest/reference/appsync/create-data-source.html) command.
 
   You'll need to enter the following parameters for this command:
 

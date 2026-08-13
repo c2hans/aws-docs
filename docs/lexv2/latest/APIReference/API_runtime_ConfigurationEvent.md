@@ -57,7 +57,7 @@ Required: No
 
  ** welcomeMessages **   <a name="lexv2-Type-runtime_ConfigurationEvent-welcomeMessages"></a>
 A list of messages to send to the user.
-If you set the `welcomeMessage` field, you must also set the [https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_DialogAction.html](https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_DialogAction.html) structure's [https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_DialogAction.html#lexv2-Type-runtime_DialogAction-type](https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_DialogAction.html#lexv2-Type-runtime_DialogAction-type) field.
+If you set the `welcomeMessage` field, you must also set the [`DialogAction`](https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_DialogAction.html) structure's [`type`](https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_DialogAction.html#lexv2-Type-runtime_DialogAction-type) field.
 Type: Array of [Message](API_runtime_Message.md) objects
 Array Members: Maximum number of 10 items.
 Required: No

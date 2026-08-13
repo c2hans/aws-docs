@@ -9,6 +9,8 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::DevOpsAgent::AgentSpace](aws-resource-devopsagent-agentspace.md)
++ [AWS::DevOpsAgent::Asset](aws-resource-devopsagent-asset.md)
 + [AWS::DevOpsAgent::Association](aws-resource-devopsagent-association.md)
 + [AWS::DevOpsAgent::PrivateConnection](aws-resource-devopsagent-privateconnection.md)
 + [AWS::DevOpsAgent::Service](aws-resource-devopsagent-service.md)
++ [AWS::DevOpsAgent::Trigger](aws-resource-devopsagent-trigger.md)

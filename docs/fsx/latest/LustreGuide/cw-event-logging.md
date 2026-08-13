@@ -97,7 +97,7 @@ When the file system becomes **Available**, logging will be enabled.
 
 ### To change the logging configuration (CLI)
 <a name="change-event-logs-cli"></a>
-+ Use the [https://docs.aws.amazon.com/cli/latest/reference/fsx/update-file-system.html](https://docs.aws.amazon.com/cli/latest/reference/fsx/update-file-system.html) CLI command or the equivalent [https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileSystem.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileSystem.html) API operation.
++ Use the [`update-file-system`](https://docs.aws.amazon.com/cli/latest/reference/fsx/update-file-system.html) CLI command or the equivalent [`UpdateFileSystem`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileSystem.html) API operation.
 
   ```
   update-file-system --file-system-id fs-0123456789abcdef0 \

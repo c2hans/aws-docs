@@ -70,7 +70,7 @@ Required: Yes
  ** [RotationPeriodInDays](#API_EnableKeyRotation_RequestSyntax) **   <a name="KMS-EnableKeyRotation-request-RotationPeriodInDays"></a>
 Use this parameter to specify a custom period of time between each rotation date. If no value is specified, the default value is 365 days.
 The rotation period defines the number of days after you enable automatic key rotation that AWS KMS will rotate your key material, and the number of days between each automatic rotation thereafter.
-You can use the [https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.html#conditions-kms-rotation-period-in-days](https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.html#conditions-kms-rotation-period-in-days) condition key to further constrain the values that principals can specify in the `RotationPeriodInDays` parameter.
+You can use the [`kms:RotationPeriodInDays`](https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.html#conditions-kms-rotation-period-in-days) condition key to further constrain the values that principals can specify in the `RotationPeriodInDays` parameter.
 
 Type: Integer
 Valid Range: Minimum value of 90. Maximum value of 2560.

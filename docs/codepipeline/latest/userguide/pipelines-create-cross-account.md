@@ -342,7 +342,7 @@ You cannot use the CodePipeline console to create or edit a pipeline that uses r
 
    ```
    {
-     "artifactStore”: {
+     "artifactStore": {
        "location": "{{codepipeline-us-east-2-1234567890}}",
        "type": "S3",
        "encryptionKey": {

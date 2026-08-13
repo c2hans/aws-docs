@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-rules-ends-tasks.html
 ---
 
-# Create a rule in Contact Lens that ends associated tasks from a case
+# Create a rule in conversational analytics that ends associated tasks from a case
 <a name="contact-lens-rules-ends-tasks"></a>
 
 **To create a rule that ends associated tasks**
@@ -16,6 +16,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-r
 
 1. Choose **Next**. Review and then choose **Save**.
 
-1. After you add rules, they are applied to new contacts that occur after the rule was added. Rules are applied when Amazon Connect conversational analytics analyzes conversations.
+1. After you add rules, they are applied to new contacts that occur after the rule was added. Rules are applied when Connect Customer conversational analytics analyzes conversations.
 
    You cannot apply rules to past, stored conversations.

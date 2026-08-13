@@ -41,7 +41,7 @@ This procedure explains how to install the latest version of Git and Python on y
 
    If the command displays the Git version, Git is installed and you can continue to the next step.
 
-   If the command displays an error, open [https://git-scm.com/download](https://git-scm.com/download) and install Git for your computer.
+   If the command displays an error, open [`https://git-scm.com/download`](https://git-scm.com/download) and install Git for your computer.
 
 1. Check to see if you have already installed Python. Enter the command in the command line.
 

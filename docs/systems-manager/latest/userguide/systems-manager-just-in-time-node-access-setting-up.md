@@ -12,7 +12,7 @@ Setting up just-in-time node access with Systems Manager involved multiple steps
 Next you'll create *approval policies* to determine when node connections require manual approval and are automatically approved. Approval policies are managed by each account in your organization. You can also share a policy from the delegated administrator account to explicitly deny the automatic approval of connections to specific nodes.
 
 **Note**
-Setting up just-in-time node access doesn't affect existing IAM policies or preferences you've configured for Session Manager. You must remove permission to the `StartSession` API action from your IAM policies to ensure that only just-in-time node access is used when users attempt to connect to your nodes. After you set up just-in-time node access, we recommend testing your approval policies with a subset of users and nodes to verify your policies are working as desired before removing permissions to Session Manager.
+Setting up just-in-time node access doesn't affect existing IAM policies or preferences you've configured for Session Manager. You must remove permission to the `StartSession` API action from your IAM policies to make sure that only just-in-time node access is used when users attempt to connect to your nodes. After you set up just-in-time node access, we recommend testing your approval policies with a subset of users and nodes to verify your policies are working as desired before removing permissions to Session Manager.
 
 **Authentication support**
 Note the following details about authentication support used for just-in-time node access:

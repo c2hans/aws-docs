@@ -240,9 +240,9 @@ To filter the list of DB instances in the **Databases** pane, enter a text strin
 <a name="USER_Tagging.CLI"></a>
 
 You can add, list, or remove tags for a DB instance using the AWS CLI.
-+ To add one or more tags to an Amazon RDS resource, use the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/add-tags-to-resource.html](https://docs.aws.amazon.com/cli/latest/reference/rds/add-tags-to-resource.html).
-+ To list the tags on an Amazon RDS resource, use the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/list-tags-for-resource.html](https://docs.aws.amazon.com/cli/latest/reference/rds/list-tags-for-resource.html).
-+ To remove one or more tags from an Amazon RDS resource, use the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/remove-tags-from-resource.html](https://docs.aws.amazon.com/cli/latest/reference/rds/remove-tags-from-resource.html).
++ To add one or more tags to an Amazon RDS resource, use the AWS CLI command [`add-tags-to-resource`](https://docs.aws.amazon.com/cli/latest/reference/rds/add-tags-to-resource.html).
++ To list the tags on an Amazon RDS resource, use the AWS CLI command [`list-tags-for-resource`](https://docs.aws.amazon.com/cli/latest/reference/rds/list-tags-for-resource.html).
++ To remove one or more tags from an Amazon RDS resource, use the AWS CLI command [`remove-tags-from-resource`](https://docs.aws.amazon.com/cli/latest/reference/rds/remove-tags-from-resource.html).
 
 To learn more about how to construct the required ARN, see [Constructing an ARN for Amazon RDS](USER_Tagging.ARN.Constructing.md).
 
@@ -250,9 +250,9 @@ To learn more about how to construct the required ARN, see [Constructing an ARN 
 <a name="USER_Tagging.API"></a>
 
 You can add, list, or remove tags for a DB instance using the Amazon RDS API.
-+ To add a tag to an Amazon RDS resource, use the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_AddTagsToResource.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_AddTagsToResource.html) operation.
-+ To list tags that are assigned to an Amazon RDS resource, use the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ListTagsForResource.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ListTagsForResource.html).
-+ To remove tags from an Amazon RDS resource, use the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RemoveTagsFromResource.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RemoveTagsFromResource.html) operation.
++ To add a tag to an Amazon RDS resource, use the [`AddTagsToResource`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_AddTagsToResource.html) operation.
++ To list tags that are assigned to an Amazon RDS resource, use the [`ListTagsForResource`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ListTagsForResource.html).
++ To remove tags from an Amazon RDS resource, use the [`RemoveTagsFromResource`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RemoveTagsFromResource.html) operation.
 
 To learn more about how to construct the required ARN, see [Constructing an ARN for Amazon RDS](USER_Tagging.ARN.Constructing.md).
 

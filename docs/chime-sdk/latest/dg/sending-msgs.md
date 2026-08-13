@@ -31,7 +31,7 @@ Websocket events are sent to a channel after they successfully establish a conne
 | `DENIED_UPDATE_CHANNEL_MESSAGE` | `DENIED` | Message sender only | `UpdateChannelMessage` API with processor denying the message |
 
 **GetChannelMessageStatus API**
-This API provides an alternative way to retrieve message status if the event was not received due to a bad websocket connection. For more information, refer to the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetChannelMessageStatus.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetChannelMessageStatus.html) API documentation.
+This API provides an alternative way to retrieve message status if the event was not received due to a bad websocket connection. For more information, refer to the [GetChannelMessageStatus](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetChannelMessageStatus.html) API documentation.
 
 **Note**
 This API does not return statuses for denied messages, because we don't store them.

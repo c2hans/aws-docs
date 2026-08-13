@@ -20,7 +20,7 @@ These AWS Security Hub CSPM controls evaluate the AWS Systems Manager (SSM) serv
 
 **Required AWS Config recording resources:** `AWS::EC2::Instance`, `AWS::SSM::ManagedInstanceInventory`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-instance-managed-by-systems-manager.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-instance-managed-by-systems-manager.html)
+**AWS Config rule:** [ec2-instance-managed-by-systems-manager](https://docs.aws.amazon.com/config/latest/developerguide/ec2-instance-managed-by-systems-manager.html)
 
 **Schedule type:** Change triggered
 
@@ -49,7 +49,7 @@ For information about managing EC2 instances with AWS Systems Manager, see [Amaz
 
 **Resource type:** `AWS::SSM::PatchCompliance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-managedinstance-patch-compliance-status-check.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-managedinstance-patch-compliance-status-check.html)
+**AWS Config rule:** [ec2-managedinstance-patch-compliance-status-check](https://docs.aws.amazon.com/config/latest/developerguide/ec2-managedinstance-patch-compliance-status-check.html)
 
 **Schedule type:** Change triggered
 
@@ -91,7 +91,7 @@ Systems Manager recommends using [patch policies](https://docs.aws.amazon.com/sy
 
 **Resource type:** `AWS::SSM::AssociationCompliance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ec2-managedinstance-association-compliance-status-check.html](https://docs.aws.amazon.com/config/latest/developerguide/ec2-managedinstance-association-compliance-status-check.html)
+**AWS Config rule:** [ec2-managedinstance-association-compliance-status-check](https://docs.aws.amazon.com/config/latest/developerguide/ec2-managedinstance-association-compliance-status-check.html)
 
 **Schedule type:** Change triggered
 
@@ -123,7 +123,7 @@ After investigating, you can edit the association to correct the identified issu
 
 **Resource type:** `AWS::SSM::Document`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ssm-document-not-public.html](https://docs.aws.amazon.com/config/latest/developerguide/ssm-document-not-public.html)
+**AWS Config rule:** [ssm-document-not-public](https://docs.aws.amazon.com/config/latest/developerguide/ssm-document-not-public.html)
 
 **Schedule type:** Periodic
 
@@ -149,7 +149,7 @@ For information about configuring sharing for Systems Manager documents, see [Sh
 
 **Resource type:** `AWS::SSM::Document`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ssm-document-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/ssm-document-tagged.html)
+**AWS Config rule:** [ssm-document-tagged](https://docs.aws.amazon.com/config/latest/developerguide/ssm-document-tagged.html)
 
 **Schedule type:** Change triggered
 
@@ -180,7 +180,7 @@ To add tags to an AWS Systems Manager document, you can use the [AddTagsToResour
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ssm-automation-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/ssm-automation-logging-enabled.html)
+**AWS Config rule:** [ssm-automation-logging-enabled](https://docs.aws.amazon.com/config/latest/developerguide/ssm-automation-logging-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -204,7 +204,7 @@ For information about enabling CloudWatch logging for SSM Automation, see [Loggi
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ssm-automation-block-public-sharing.html](https://docs.aws.amazon.com/config/latest/developerguide/ssm-automation-block-public-sharing.html)
+**AWS Config rule:** [ssm-automation-block-public-sharing](https://docs.aws.amazon.com/config/latest/developerguide/ssm-automation-block-public-sharing.html)
 
 **Schedule type:** Periodic
 

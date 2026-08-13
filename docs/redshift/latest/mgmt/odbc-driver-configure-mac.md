@@ -32,7 +32,7 @@ By default, ODBC driver managers are configured to use hidden versions of the `o
 
  When connecting to your data store using a data source name (DSN), configure the `odbc.ini` file to define DSNs. Set the properties in the `odbc.ini` file to create a DSN that specifies the connection information for your data store.
 
-For information about how to configure the `odbc.ini` file, see "Creating a Data Source Name on a Non-Windows Machine" in the [Amazon Redshift ODBC connector installation and configuration guide](https://s3.amazonaws.com/redshift-downloads/drivers/odbc/1.6.3.1008/Amazon+Redshift+ODBC+Connector+Install+Guide.pdf)
+For information about how to configure the `odbc.ini` file, see "Creating a Data Source Name on a Non-Windows Machine" in the [Amazon Redshift ODBC connector installation and configuration guide](https://s3.amazonaws.com/redshift-downloads/drivers/odbc/1.6.3.1008/Amazon+Redshift+ODBC+Connector+Install+Guide.pdf).
 
 Use the following format on macOS operating systems.
 
@@ -68,7 +68,7 @@ locale=en-US
 
 To connect to your data store through a connection that doesn't have a DSN, define the driver in the `odbcinst.ini` file. Then provide a DSN-less connection string in your application.
 
-For information about how to configure the `odbcinst.ini` file in this case, see "Configuring a DSN-less Connection on a Non-Windows Machine" in the [Amazon Redshift ODBC connector installation and configuration guide](https://s3.amazonaws.com/redshift-downloads/drivers/odbc/1.6.3.1008/Amazon+Redshift+ODBC+Connector+Install+Guide.pdf). .
+For information about how to configure the `odbcinst.ini` file in this case, see "Configuring a DSN-less Connection on a Non-Windows Machine" in the [Amazon Redshift ODBC connector installation and configuration guide](https://s3.amazonaws.com/redshift-downloads/drivers/odbc/1.6.3.1008/Amazon+Redshift+ODBC+Connector+Install+Guide.pdf).
 
 Use the following format on macOS operating systems.
 

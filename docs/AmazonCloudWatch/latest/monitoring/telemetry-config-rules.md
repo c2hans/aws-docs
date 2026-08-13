@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/telem
 # Telemetry enablement rules
 <a name="telemetry-config-rules"></a>
 
-You can create telemetry enablement rules to automatically configure telemetry collection for your AWS resources. Rules help you standardize telemetry collection across your organization or accounts and ensure consistent monitoring coverage.
+You can create telemetry enablement rules to automatically configure telemetry collection for your AWS resources. Rules help you standardize telemetry collection across your organization or accounts and make sure consistent monitoring coverage.
 
 **Topics**
 + [How rules work](#telemetry-config-rules-behavior)
@@ -37,7 +37,7 @@ When multiple rules apply to the same resource, telemetry configuration resolves
 ### Rule behavior on updates
 <a name="telemetry-config-rules-updates"></a>
 
-If you update an enablement rule, only new resources that match the rule adopt the updated configuration. The existing telemetry settings remain unchanged for existing resources. If a resource becomes non-compliant with an existing rule due to manual deletion of telemetry data, the new enablement rule is adopted once the resource is brought back into compliance.
+If you update an enablement rule, only new resources that match the rule adopt the updated configuration. The existing telemetry settings remain unchanged for existing resources. If a resource becomes non-compliant with an existing rule due to manual deletion of telemetry data, the new enablement rule is adopted after the resource is brought back into compliance.
 
 For Amazon VPC Flow logs, telemetry config only creates new flow logs for resources that match the rule scope. It does not delete or impact previously established Amazon VPC Flow logs, even if they differ from current rule parameters. For CloudWatch Logs, existing log groups are maintained provided they match the resource pattern.
 
@@ -229,7 +229,7 @@ The service-linked role does not perform encryption or decryption of log data di
 
 Multi-Region AWS KMS keys share the same key ID across Regions. When a telemetry rule with a AWS KMS key is applied in multiple Regions, the service automatically resolves the key ARN to the target Region. For example, if you provide the key ARN `arn:aws:kms:us-east-1:123456789012:key/mrk-1234abcd` and the rule creates a log group in `eu-west-1`, the service uses `arn:aws:kms:eu-west-1:123456789012:key/mrk-1234abcd` for encryption in that Region.
 
-You must ensure that the multi-Region key is replicated to all Regions where the rule applies. If the key has not been replicated to a target Region, remediation for resources in that Region fails, and the service retries the operation.
+You must make sure that the multi-Region key is replicated to all Regions where the rule applies. If the key has not been replicated to a target Region, remediation for resources in that Region fails, and the service retries the operation.
 
 ### Updating encryption settings
 <a name="telemetry-config-rules-encryption-update"></a>
@@ -297,7 +297,7 @@ When enabling Security Hub logging:
 + CloudWatch does not enable log deliveries for Security Hub that already are ingesting logs to managed CloudWatch Logs
 
 **Amazon Bedrock AgentCore**
-+ Enable both logs and traces emitted from all available Bedrock AgentCore primitives such as Runtime, Browser Tools, Code Interpreter Tools, etc. Follow the Telemetry Configure console experience for creating a logs delivery rule then followed by creating a traces delivery rule.
++ Enable both logs and traces emitted from all available Bedrock AgentCore primitives such as Runtime, Browser Tools, Code Interpreter Tools, and so on. Follow the Telemetry Configure console experience for creating a logs delivery rule then followed by creating a traces delivery rule.
 + When creating a trace delivery rule, Transaction Search will be enabled and additional permission policy will be created to allow for CloudWatch X-Ray to send correlated trace to managed log group in your account. In addition, X-Ray resource policy will be created to allow for current and new Bedrock AgentCore primitives to deliver traces to your account.
 
 **Amazon Bedrock Agentcore Gateway**
@@ -323,7 +323,7 @@ S3 server access logging has the following constraints:
 **Amazon MSK Cluster Metrics**
 When enabling MSK Cluster metrics:
 + Only supports METRICS telemetry type
-+ You can configure enhanced monitoring levels (PER\_BROKER, PER\_TOPIC\_PER\_BROKER, etc.) to control the granularity of metrics collected
++ You can configure enhanced monitoring levels (PER\_BROKER, PER\_TOPIC\_PER\_BROKER, and so on) to control the granularity of metrics collected
 + Rules with different enhanced monitoring levels can coexist for the same MSK cluster
 
 **OpenTelemetry Enrichment Metrics**

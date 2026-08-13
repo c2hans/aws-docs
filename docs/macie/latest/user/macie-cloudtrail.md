@@ -50,7 +50,7 @@ The following examples show CloudTrail events that demonstrate Amazon Macie oper
 ### Example: Listing findings
 <a name="logging-ct-events-example-listfindings"></a>
 
-The following example shows a CloudTrail event for the Amazon Macie [https://docs.aws.amazon.com/macie/latest/APIReference/findings.html](https://docs.aws.amazon.com/macie/latest/APIReference/findings.html) operation. In this example, an AWS Identity and Access Management (IAM) user (`Mary_Major`) used the Amazon Macie console to retrieve a subset of information about current policy findings for their account.
+The following example shows a CloudTrail event for the Amazon Macie [ListFindings](https://docs.aws.amazon.com/macie/latest/APIReference/findings.html) operation. In this example, an AWS Identity and Access Management (IAM) user (`Mary_Major`) used the Amazon Macie console to retrieve a subset of information about current policy findings for their account.
 
 ```
 {
@@ -113,7 +113,7 @@ The following example shows a CloudTrail event for the Amazon Macie [https://doc
 
 This example shows CloudTrail events for retrieving and revealing samples of sensitive data that Amazon Macie reported in a finding. In this example, an IAM user (`JohnDoe`) used the Amazon Macie console to retrieve and reveal sensitive data samples. The user's account is configured to assume an IAM role (`MacieReveal`) to retrieve and reveal sensitive data samples from affected Amazon Simple Storage Service (Amazon S3) objects.
 
-The following event shows details about the user's request to retrieve and reveal sensitive data samples by using the Amazon Macie [https://docs.aws.amazon.com/macie/latest/APIReference/findings-findingid-reveal.html](https://docs.aws.amazon.com/macie/latest/APIReference/findings-findingid-reveal.html) operation.
+The following event shows details about the user's request to retrieve and reveal sensitive data samples by using the Amazon Macie [GetSensitiveDataOccurrences](https://docs.aws.amazon.com/macie/latest/APIReference/findings-findingid-reveal.html) operation.
 
 ```
 {
@@ -159,7 +159,7 @@ The following event shows details about the user's request to retrieve and revea
 }
 ```
 
-The next event shows details about Macie then assuming the specified IAM role (`MacieReveal`) by using the AWS Security Token Service (AWS STS) [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) operation.
+The next event shows details about Macie then assuming the specified IAM role (`MacieReveal`) by using the AWS Security Token Service (AWS STS) [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) operation.
 
 ```
 {
@@ -254,7 +254,7 @@ The following example shows a CloudTrail event for the Amazon Macie [DeleteInvit
 
 This example shows CloudTrail events for disabling Amazon Macie for an AWS account. In this example, an IAM user (`JohnDoe`) disabled Macie for their account. Macie then cancelled and deleted all sensitive data discovery jobs for the account, in addition to deleting other Macie resources and data for the account.
 
-The following event shows details about the user's request to disable Macie for their account by using the Amazon Macie [https://docs.aws.amazon.com/macie/latest/APIReference/macie.html](https://docs.aws.amazon.com/macie/latest/APIReference/macie.html) operation.
+The following event shows details about the user's request to disable Macie for their account by using the Amazon Macie [DisableMacie](https://docs.aws.amazon.com/macie/latest/APIReference/macie.html) operation.
 
 ```
 {

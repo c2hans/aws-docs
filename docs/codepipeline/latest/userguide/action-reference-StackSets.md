@@ -609,7 +609,7 @@ You can provide parameters as a literal list or a file path:
     ParameterKey=Asset1,ParameterValue=true
     ParameterKey=Asset2,ParameterValue=true
   ```
-+ You can enter the location of the file containing a list of template parameter overrides entered in the format `InputArtifactName::ParameterOverridessFileName`, as shown in the following example.
++ You can enter the location of the file containing a list of template parameter overrides entered in the format `InputArtifactName::ParameterOverridesFileName`, as shown in the following example.
 
   ```
   SourceArtifact::parameter-overrides.txt
@@ -640,7 +640,7 @@ The maximum percentage of accounts on which to perform this operation at one tim
 
 **RegionConcurrencyType**
 Required: No
-You can specify if the stack set should deploy across AWS Regions sequentially or in parallel by configuring the region concurrency deployment parameter. When the Region concurrency is specified to deploy stacks across multiple AWS Regions in parallel, this can result in faster overall deployment times.
+You can specify if the stack set should deploy across AWS Regions sequentially or in parallel by configuring the Region concurrency deployment parameter. When the Region concurrency is specified to deploy stacks across multiple AWS Regions in parallel, this can result in faster overall deployment times.
 + *Parallel*: Stack set deployments will be conducted at the same time, as long as a Region's deployment failures don't exceed a specified failure tolerance.
 + *Sequential*: Stack set deployments will be conducted one at a time, as long as a Region's deployment failures don't exceed a specified failure tolerance. Sequential deployment is the default selection.
 

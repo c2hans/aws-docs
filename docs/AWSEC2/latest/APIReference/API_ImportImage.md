@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportIma
 <a name="API_ImportImage"></a>
 
 **Note**
-To import your virtual machines (VMs) with a console-based experience, you can use the *Import virtual machine images to AWS * template in the [Migration Hub Orchestrator console](https://console.aws.amazon.com/migrationhub/orchestrator). For more information, see the [https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/import-vm-images.html](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/import-vm-images.html).
+To import your virtual machines (VMs) with a console-based experience, you can use the *Import virtual machine images to AWS * template in the [Migration Hub Orchestrator console](https://console.aws.amazon.com/migrationhub/orchestrator). For more information, see the [* AWS Migration Hub Orchestrator User Guide*](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/import-vm-images.html).
 
 Import single or multi-volume disk images or EBS snapshots into an Amazon Machine Image (AMI).
 

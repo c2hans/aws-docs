@@ -290,6 +290,7 @@ The instance fleets configuration is available only in Amazon EMR releases 4.8.0
    "ScaleDownBehavior": "{{string}}",
    "SecurityConfiguration": "{{string}}",
    "ServiceRole": "{{string}}",
+   "SessionEnabled": {{boolean}},
    "StepConcurrencyLevel": {{number}},
    "StepExecutionRoleArn": "{{string}}",
    "Steps": [
@@ -507,6 +508,11 @@ The IAM role that Amazon EMR assumes in order to access AWS resources on your be
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 10280.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: No
+
+ ** [SessionEnabled](#API_RunJobFlow_RequestSyntax) **   <a name="EMR-RunJobFlow-request-SessionEnabled"></a>
+Indicates whether Spark Connect sessions are enabled on the cluster. When set to `true`, you can start Spark Connect sessions using the `StartSession` operation.
+Type: Boolean
 Required: No
 
  ** [StepConcurrencyLevel](#API_RunJobFlow_RequestSyntax) **   <a name="EMR-RunJobFlow-request-StepConcurrencyLevel"></a>

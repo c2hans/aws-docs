@@ -389,7 +389,7 @@ Run the **DescribeJobExecution** command to get the status of a job execution. Y
 aws iot describe-job-execution --job-id 017 --thing-name thingOne
 ```
 
-The command returns the [https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecution.html](https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecution.html). For example:
+The command returns the [`JobExecution`](https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecution.html). For example:
 
 ```
 {

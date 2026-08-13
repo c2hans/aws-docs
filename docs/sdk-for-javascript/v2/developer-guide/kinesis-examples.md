@@ -11,7 +11,7 @@ Amazon Kinesis is a platform for streaming data on AWS, offering powerful servic
 
 ![Relationship between JavaScript environments, the AWS SDK, and Kinesis](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/code-samples-kinesis.png)
 
-The JavaScript API for Kinesis is exposed through the `AWS.Kinesis` client class. For more information about using the Kinesis client class, see [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Kinesis.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Kinesis.html) in the API reference.
+The JavaScript API for Kinesis is exposed through the `AWS.Kinesis` client class. For more information about using the Kinesis client class, see [`Class: AWS.Kinesis`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Kinesis.html) in the API reference.
 
 **Topics**
 + [Capturing Web Page Scroll Progress with Amazon Kinesis](kinesis-examples-capturing-page-scrolling.md)

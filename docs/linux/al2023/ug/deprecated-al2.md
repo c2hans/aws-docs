@@ -52,12 +52,12 @@ Upstream support for the `aws-apitools-*` packages ended in March of 2017. Despi
 ## `awslogs` deprecated in favor of unified Amazon CloudWatch Logs agent
 <a name="deprecated-awslogs"></a>
 
- The [https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AgentReference.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AgentReference.html) package is deprecated in AL2 and is no longer present in AL2023. It is replaced by the [unified CloudWatch Logs agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html), available in the `amazon-cloudwatch-agent` package. For more information, see the [Amazon CloudWatch Logs User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/UseCloudWatchUnifiedAgent.html).
+ The [`awslogs`](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AgentReference.html) package is deprecated in AL2 and is no longer present in AL2023. It is replaced by the [unified CloudWatch Logs agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html), available in the `amazon-cloudwatch-agent` package. For more information, see the [Amazon CloudWatch Logs User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/UseCloudWatchUnifiedAgent.html).
 
 ## `bzr` revision control system
 <a name="deprecated-bzr"></a>
 
-The [https://en.wikipedia.org/wiki/GNU_Bazaar](https://en.wikipedia.org/wiki/GNU_Bazaar) (`bzr`) revision control system is discontinued in AL2 and no longer present in AL2023.
+The [GNU Bazaar](https://en.wikipedia.org/wiki/GNU_Bazaar) (`bzr`) revision control system is discontinued in AL2 and no longer present in AL2023.
 
 Users of `bzr` are advised to migrate their repositories to `git`.
 
@@ -127,7 +127,7 @@ For more information about Python on Amazon Linux, see [Python in AL2023](python
 ## Multiple domain names in Amazon VPC `create-dhcp-options`
 <a name="dhcp-set-domain-name-space"></a>
 
- In Amazon Linux 2, it was possible to pass multiple domain names in the `domain-name` parameter to [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-dhcp-options.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-dhcp-options.html), which would result in `/etc/resolv.conf` containing something like `search foo.example.com bar.example.com`. The Amazon VPC DHCP server sends the list of provided domain names using DHCP option 15, which only supports a single domain name (see [RFC 2132 section 3.17](https://www.rfc-editor.org/rfc/rfc2132#section-3.17)). Since AL2023 uses `systemd-networkd` for network configuration, which follows the RFC, this accidental feature in AL2 is not present on AL2023
+ In Amazon Linux 2, it was possible to pass multiple domain names in the `domain-name` parameter to [`create-dhcp-options`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-dhcp-options.html), which would result in `/etc/resolv.conf` containing something like `search foo.example.com bar.example.com`. The Amazon VPC DHCP server sends the list of provided domain names using DHCP option 15, which only supports a single domain name (see [RFC 2132 section 3.17](https://www.rfc-editor.org/rfc/rfc2132#section-3.17)). Since AL2023 uses `systemd-networkd` for network configuration, which follows the RFC, this accidental feature in AL2 is not present on AL2023
 
  The [AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-dhcp-options.html) and [Amazon VPC documentation](https://docs.aws.amazon.com/vpc/latest/userguide/DHCPOptionSet.html) has this to say: "Some Linux operating systems accept multiple domain names separated by spaces. However, Windows and other Linux operating systems treat the value as a single domain, which results in unexpected behavior. If your DHCP option set is associated with a Amazon VPC that has instances running operating systems that treat the value as a single domain, specify only one domain name. "
 

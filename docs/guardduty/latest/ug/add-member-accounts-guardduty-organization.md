@@ -38,16 +38,16 @@ Choose a preferred method to add a member account to your GuardDuty organization
 
 ------
 #### [ API/CLI ]
-+ Run [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateMembers.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateMembers.html) by using the credentials of the delegated GuardDuty administrator account.
++ Run [CreateMembers](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateMembers.html) by using the credentials of the delegated GuardDuty administrator account.
 
   You must specify the regional detector ID of the delegated GuardDuty administrator account and the account details (AWS account IDs and corresponding email addresses) of the accounts that you want to add as GuardDuty members. You can create one or more members with this API operation.
 
   When you run CreateMembers in your organization, the auto-enable preferences for new members will apply as new member accounts join your organization. When you run CreateMembers with an existing member account, the organization configuration will also apply to the existing members. This might change the current configuration of the existing member accounts.
 
-  Run [https://docs.aws.amazon.com/organizations/latest/APIReference/API_ListAccounts.html](https://docs.aws.amazon.com/organizations/latest/APIReference/API_ListAccounts.html) in the *AWS Organizations API Reference*, to view all the accounts in the AWS organization.
+  Run [ListAccounts](https://docs.aws.amazon.com/organizations/latest/APIReference/API_ListAccounts.html) in the *AWS Organizations API Reference*, to view all the accounts in the AWS organization.
   + Alternatively, you can use AWS Command Line Interface. Run the following AWS CLI command and make sure to use your own valid detector ID, AWS account ID, and the email address associated with the account ID.
 
-    To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+    To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
     ```
     aws guardduty create-members --detector-id {{12abc34d567e8fa901bc2d34e56789f0}} --account-details AccountId={{111122223333}},Email={{guardduty-member-name@amazon.com}}

@@ -20,9 +20,9 @@ AWS accepts connectivity to the AMS environment via native AWS virtual private n
   <tr><th colspan="2">User Network-to-Amazon VPC Connectivity Options</th></tr>
 </thead>
 <tbody>
-  <tr><td>**Hardware VPN**</td><td>Establishes a hardware VPN connection from your network equipment on a remote network to AMS-managed network equipment attached to your VPC.</td></tr>
-  <tr><td>**AWS Direct Connect (DX)**</td><td>Establishes a private, logical (or encrypted if used with a VPN) connection from your remote network to the Amazon VPC, leveraging AWS Direct Connect.</td></tr>
-  <tr><td>Software VPN</td><td>Establishes a VPN connection from your equipment on a remote network to a user-managed software VPN appliance running inside an Amazon VPC.</td></tr>
+  <tr><td><b>Hardware VPN</b></td><td>Establishes a hardware VPN connection from your network equipment on a remote network to AMS-managed network equipment attached to your VPC.</td></tr>
+  <tr><td><b>AWS Direct Connect (DX)</b></td><td>Establishes a private, logical (or encrypted if used with a VPN) connection from your remote network to the Amazon VPC, leveraging AWS Direct Connect.</td></tr>
+  <tr><td><b>Software VPN</b></td><td>Establishes a VPN connection from your equipment on a remote network to a user-managed software VPN appliance running inside an Amazon VPC.</td></tr>
 </tbody>
 </table>
 

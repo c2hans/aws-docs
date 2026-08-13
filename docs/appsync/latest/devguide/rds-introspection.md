@@ -77,7 +77,7 @@ The AWS AppSync console allows you to create an AWS AppSync GraphQL API from you
 ## Using the introspection feature (API)
 <a name="using-introspection-api"></a>
 
-You can use the `StartDataSourceIntrospection` introspection API to discover models in your database programmatically. For more details on the command, see using the [https://docs.aws.amazon.com//appsync/latest/APIReference/API_StartDataSourceIntrospection.html](https://docs.aws.amazon.com//appsync/latest/APIReference/API_StartDataSourceIntrospection.html) API.
+You can use the `StartDataSourceIntrospection` introspection API to discover models in your database programmatically. For more details on the command, see using the [`StartDataSourceIntrospection`](https://docs.aws.amazon.com//appsync/latest/APIReference/API_StartDataSourceIntrospection.html) API.
 
 To use `StartDataSourceIntrospection`, provide your Aurora cluster Amazon Resource Name (ARN), database name, and AWS Secrets Manager secret ARN. The command starts the introspection process. You can retrieve the results with the `GetDataSourceIntrospection` command. You can specify whether the command should return the Storage Definition Language (SDL) string for the discovered models. This is useful for generating an SDL schema definition directly from the discovered models.
 

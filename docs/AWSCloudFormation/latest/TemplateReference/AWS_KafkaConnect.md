@@ -9,5 +9,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::KafkaConnect::Connector](aws-resource-kafkaconnect-connector.md)
++ [AWS::KafkaConnect::ConnectorOperation](aws-resource-kafkaconnect-connectoroperation.md)
 + [AWS::KafkaConnect::CustomPlugin](aws-resource-kafkaconnect-customplugin.md)
 + [AWS::KafkaConnect::WorkerConfiguration](aws-resource-kafkaconnect-workerconfiguration.md)

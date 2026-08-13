@@ -14,7 +14,7 @@ For an introduction, see [Parameters and the AWS CDK](parameters.md).
 ## Define parameters in your CDK app
 <a name="parameters-define"></a>
 
-Use the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CfnParameter.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CfnParameter.html) class to define a parameter. You’ll want to specify at least a type and a description for most parameters, though both are technically optional. The description appears when the user is prompted to enter the parameter’s value in the AWS CloudFormation console. For more information on the available types, see [Types](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html#parameters-section-structure-properties-type).
+Use the [`CfnParameter`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CfnParameter.html) class to define a parameter. You’ll want to specify at least a type and a description for most parameters, though both are technically optional. The description appears when the user is prompted to enter the parameter’s value in the AWS CloudFormation console. For more information on the available types, see [Types](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html#parameters-section-structure-properties-type).
 
 **Note**
 You can define parameters in any scope. However, we recommend defining parameters at the stack level so that their logical ID doesn’t change when you refactor your code.

@@ -68,11 +68,11 @@ However, if you use custom paths for collecting logs from lifecycle provisioning
 ## What particular configurations does HyperPod manage in Slurm configuration files such as `slurm.conf` and `gres.conf`?
 <a name="hyperpod-faqs-q2"></a>
 
-When you create a Slurm cluster on HyperPod, the HyperPod agent sets up the [https://slurm.schedmd.com/slurm.conf.html](https://slurm.schedmd.com/slurm.conf.html) and [https://slurm.schedmd.com/gres.conf.html](https://slurm.schedmd.com/gres.conf.html) files at `/opt/slurm/etc/` to manage the Slurm cluster based on your HyperPod cluster creation request and lifecycle scripts. The following list shows what specific parameters the HyperPod agent handles and overwrites.
+When you create a Slurm cluster on HyperPod, the HyperPod agent sets up the [`slurm.conf`](https://slurm.schedmd.com/slurm.conf.html) and [`gres.conf`](https://slurm.schedmd.com/gres.conf.html) files at `/opt/slurm/etc/` to manage the Slurm cluster based on your HyperPod cluster creation request and lifecycle scripts. The following list shows what specific parameters the HyperPod agent handles and overwrites.
 
 **Important**
 We strongly recommend that you DON’T change these parameters managed by HyperPod.
-+ In [https://slurm.schedmd.com/slurm.conf.html](https://slurm.schedmd.com/slurm.conf.html), HyperPod sets up the following basic parameters: `ClusterName`, `SlurmctldHost`, `PartitionName`, and `NodeName`.
++ In [`slurm.conf`](https://slurm.schedmd.com/slurm.conf.html), HyperPod sets up the following basic parameters: `ClusterName`, `SlurmctldHost`, `PartitionName`, and `NodeName`.
 
   Also, to enable the [Automatic node recovery and auto-resume](sagemaker-hyperpod-resiliency-slurm-auto-resume.md) functionality, HyperPod requires the `TaskPlugin` and `SchedulerParameters` parameters set as follows. The HyperPod agent sets up these two parameters with the required values by default.
 
@@ -80,7 +80,7 @@ We strongly recommend that you DON’T change these parameters managed by HyperP
   TaskPlugin=task/none
   SchedulerParameters=permit_job_expansion
   ```
-+ In [https://slurm.schedmd.com/gres.conf.html](https://slurm.schedmd.com/gres.conf.html), HyperPod manages `NodeName` for GPU nodes.
++ In [`gres.conf`](https://slurm.schedmd.com/gres.conf.html), HyperPod manages `NodeName` for GPU nodes.
 
 ## How do I run Docker on Slurm nodes on HyperPod?
 <a name="hyperpod-faqs-q3"></a>

@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-static-websites
 +  [Amazon Elastic Block Store](https://aws.amazon.com/ebs) (Amazon EBS) or [Amazon Elastic File System](https://aws.amazon.com/efs) (Amazon EFS) to store static content.
 +  [Amazon Virtual Private Cloud](https://aws.amazon.com/vpc) (Amazon VPC) to deploy Amazon EC2 instances. Amazon VPC is your isolated and private virtual network in the AWS Cloud and gives you full control over the network topology, firewall configuration, and routing rules.
 +  Web servers can be spread across multiple [Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/) for high availability, even if an entire data center were to be down.
-+  [https://aws.amazon.com/autoscaling](https://aws.amazon.com/autoscaling) automatically adds servers during high traffic periods and scales back when traffic decreases.
++  [*AWS Auto Scaling*](https://aws.amazon.com/autoscaling) automatically adds servers during high traffic periods and scales back when traffic decreases.
 
  The following diagram shows the basic architecture of a “lift and shift” approach.
 

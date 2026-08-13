@@ -65,7 +65,7 @@ compile 'org.springframework.boot:spring-boot-starter-aop:2.5.2'
 ## Adding a tracing filter to your application
 <a name="xray-sdk-java-aop-filters-spring"></a>
 
-Add a `Filter` to your `WebConfig` class. Pass the segment name to the [https://docs.aws.amazon.com/xray-sdk-for-java/latest/javadoc/com/amazonaws/xray/javax/servlet/AWSXRayServletFilter.html](https://docs.aws.amazon.com/xray-sdk-for-java/latest/javadoc/com/amazonaws/xray/javax/servlet/AWSXRayServletFilter.html) constructor as a string. For more information about tracing filters and instrumenting incoming requests, see [Tracing incoming requests with the X-Ray SDK for Java](xray-sdk-java-filters.md).
+Add a `Filter` to your `WebConfig` class. Pass the segment name to the [`AWSXRayServletFilter`](https://docs.aws.amazon.com/xray-sdk-for-java/latest/javadoc/com/amazonaws/xray/javax/servlet/AWSXRayServletFilter.html) constructor as a string. For more information about tracing filters and instrumenting incoming requests, see [Tracing incoming requests with the X-Ray SDK for Java](xray-sdk-java-filters.md).
 
 **Example src/main/java/myapp/WebConfig.java - spring**
 

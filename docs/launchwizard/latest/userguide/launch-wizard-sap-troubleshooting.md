@@ -97,16 +97,16 @@ By default, your provisioned Amazon EC2 instances are retained when a deployment
   <tr><th>Directory</th><th>Purpose</th></tr>
 </thead>
 <tbody>
-  <tr><td>/root/install</td><td>The working directory of Launch Wizard SAP deployment.</td></tr>
-  <tr><td>/root/install/scripts</td><td>The home directory of Launch Wizard SAP deployment. It contains all the scripts called by Launch Wizard.</td></tr>
-  <tr><td>/root/install/scripts/log</td><td>All the logs related to the deployment (install.log file).</td></tr>
-  <tr><td>/tmp/</td><td>Based on the SAP components that are deployed on an Amazon EC2 instance, Launch Wizard creates a folder in this directory for SAP software application deployment logs.</td></tr>
-  <tr><td>/var/log/messages</td><td>The unhandled exceptions of an Amazon EC2 instance.</td></tr>
-  <tr><td>/var/log/zypper.log</td><td>All the logs for SLES operating system package installation failures.</td></tr>
-  <tr><td>/var/log/yum.log</td><td>All the logs for RHEL operating system package installation failures.</td></tr>
-  <tr><td>/var/log/pacemaker</td><td rowspan="3">All the logs for pacemaker cluster.</td></tr>
-  <tr><td>/var/log/pacemaker/pacemaker.log</td></tr>
-  <tr><td>/var/log/cluster/corosync.log</td></tr>
+  <tr><td><code>/root/install</code></td><td>The working directory of Launch Wizard SAP deployment.</td></tr>
+  <tr><td><code>/root/install/scripts</code></td><td>The home directory of Launch Wizard SAP deployment. It contains all the scripts called by Launch Wizard.</td></tr>
+  <tr><td><code>/root/install/scripts/log</code></td><td>All the logs related to the deployment (<code>install.log</code> file).</td></tr>
+  <tr><td><code>/tmp/</code></td><td>Based on the SAP components that are deployed on an Amazon EC2 instance, Launch Wizard creates a folder in this directory for SAP software application deployment logs.</td></tr>
+  <tr><td><code>/var/log/messages</code></td><td>The unhandled exceptions of an Amazon EC2 instance.</td></tr>
+  <tr><td><code>/var/log/zypper.log</code></td><td>All the logs for SLES operating system package installation failures.</td></tr>
+  <tr><td><code>/var/log/yum.log</code></td><td>All the logs for RHEL operating system package installation failures.</td></tr>
+  <tr><td><code>/var/log/pacemaker</code></td><td rowspan="3">All the logs for pacemaker cluster.</td></tr>
+  <tr><td><code>/var/log/pacemaker/pacemaker.log</code></td></tr>
+  <tr><td><code>/var/log/cluster/corosync.log</code></td></tr>
 </tbody>
 </table>
 

@@ -19,10 +19,10 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 <a name="emc-examples-templates-scenario"></a>
 
 The JSON required to create a transcoding job in MediaConvert is detailed, containing a large number of settings. You can greatly simplify job creation by saving known-good settings in a job template that you can use to create subsequent jobs. In this example, you use a Node.js module to call MediaConvert to create, use, and manage job templates. The code uses the SDK for JavaScript to do this by using these methods of the MediaConvert client class:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#createJobTemplate-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#createJobTemplate-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#createJob-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#createJob-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#deleteJobTemplate-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#deleteJobTemplate-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#listJobTemplates-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#listJobTemplates-property)
++ [`createJobTemplate`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#createJobTemplate-property)
++ [`createJob`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#createJob-property)
++ [`deleteJobTemplate`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#deleteJobTemplate-property)
++ [`listJobTemplates`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#listJobTemplates-property)
 
 ## Prerequisite Tasks
 <a name="emc-example-templates-prerequisites"></a>

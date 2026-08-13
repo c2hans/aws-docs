@@ -15,7 +15,7 @@ There are two ways to move data into S3 Intelligent-Tiering. You can upload obje
 ### Uploading data to S3 Intelligent-Tiering using Direct PUT
 <a name="moving-data-to-int-tiering-directPUT"></a>
 
-When you upload an object to the S3 Intelligent-Tiering storage class using the [PUT](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html) API operation, you specify S3 Intelligent-Tiering in the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html#API_PutObject_RequestSyntax](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html#API_PutObject_RequestSyntax) request header.
+When you upload an object to the S3 Intelligent-Tiering storage class using the [PUT](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html) API operation, you specify S3 Intelligent-Tiering in the [`x-amz-storage-class`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html#API_PutObject_RequestSyntax) request header.
 
 The following request stores the image, `my-image.jpg`, in the `myBucket` bucket. The request uses the `x-amz-storage-class` header to request that the object is stored using the S3 Intelligent-Tiering storage class.
 
@@ -99,10 +99,10 @@ To get the lowest storage cost on data that can be accessed in minutes to hours,
 <a name="enable-auto-archiving-int-tiering-cli"></a>
 
 You can use the following AWS CLI commands to manage S3 Intelligent-Tiering configurations:
-+ [https://docs.aws.amazon.com/cli/latest/reference/s3api/delete-bucket-intelligent-tiering-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/s3api/delete-bucket-intelligent-tiering-configuration.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/s3api/get-bucket-intelligent-tiering-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/s3api/get-bucket-intelligent-tiering-configuration.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/s3api/list-bucket-intelligent-tiering-configurations.html](https://docs.aws.amazon.com/cli/latest/reference/s3api/list-bucket-intelligent-tiering-configurations.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/s3api/put-bucket-intelligent-tiering-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-bucket-intelligent-tiering-configuration.html)
++ [`delete-bucket-intelligent-tiering-configuration`](https://docs.aws.amazon.com/cli/latest/reference/s3api/delete-bucket-intelligent-tiering-configuration.html)
++ [`get-bucket-intelligent-tiering-configuration`](https://docs.aws.amazon.com/cli/latest/reference/s3api/get-bucket-intelligent-tiering-configuration.html)
++ [`list-bucket-intelligent-tiering-configurations`](https://docs.aws.amazon.com/cli/latest/reference/s3api/list-bucket-intelligent-tiering-configurations.html)
++ [`put-bucket-intelligent-tiering-configuration`](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-bucket-intelligent-tiering-configuration.html)
 
 For instructions on setting up the AWS CLI, see [Developing with Amazon S3 using the AWS CLI](https://docs.aws.amazon.com/AmazonS3/latest/API/setup-aws-cli.html) in the *Amazon S3 API Reference*.
 
@@ -110,7 +110,7 @@ When using the AWS CLI, you cannot specify the configuration as an XML file. You
 
 The following example puts an S3 Intelligent-Tiering configuration to the specified bucket.
 
-**Example [https://docs.aws.amazon.com/cli/latest/reference/s3api/put-bucket-intelligent-tiering-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-bucket-intelligent-tiering-configuration.html)**
+**Example [`put-bucket-intelligent-tiering-configuration`](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-bucket-intelligent-tiering-configuration.html)**
 
 ```
 {
@@ -176,4 +176,4 @@ Host: Bucket.s3.amazonaws.com
 ### Using the PUT API operation
 <a name="enable-auto-archiving-int-tiering-api"></a>
 
-You can use the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketIntelligentTieringConfiguration.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketIntelligentTieringConfiguration.html) operation for a specified bucket and up to 1,000 S3 Intelligent-Tiering configurations per bucket. You can define which objects within a bucket are eligible for the archive access tiers using a shared prefix or object tag. Using a shared prefix or object tag allows you to align to specific business applications, workflows, or internal organizations. You also have the flexibility to activate the Archive Access tier, the Deep Archive Access tier, or both.
+You can use the [`PutBucketIntelligentTieringConfiguration`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketIntelligentTieringConfiguration.html) operation for a specified bucket and up to 1,000 S3 Intelligent-Tiering configurations per bucket. You can define which objects within a bucket are eligible for the archive access tiers using a shared prefix or object tag. Using a shared prefix or object tag allows you to align to specific business applications, workflows, or internal organizations. You also have the flexibility to activate the Archive Access tier, the Deep Archive Access tier, or both.

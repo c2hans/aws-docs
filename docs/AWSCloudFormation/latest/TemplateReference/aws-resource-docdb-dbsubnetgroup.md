@@ -50,6 +50,8 @@ Properties:
 The description for the subnet group.
 *Required*: Yes
 *Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DBSubnetGroupName`  <a name="cfn-docdb-dbsubnetgroup-dbsubnetgroupname"></a>
@@ -58,12 +60,17 @@ Constraints: Must contain no more than 255 letters, numbers, periods, underscore
 Example: `mySubnetgroup`
 *Required*: No
 *Type*: String
+*Pattern*: `[a-zA-Z][0-9a-zA-Z-:._ ]*`
+*Minimum*: `1`
+*Maximum*: `255`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `SubnetIds`  <a name="cfn-docdb-dbsubnetgroup-subnetids"></a>
 The Amazon EC2 subnet IDs for the subnet group.
 *Required*: Yes
 *Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `20`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-docdb-dbsubnetgroup-tags"></a>
@@ -80,10 +87,7 @@ The tags to be assigned to the subnet group.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the DBSubnetGroup's name, such as `default`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
-
-### Fn::GetAtt
-<a name="aws-resource-docdb-dbsubnetgroup-return-values-fn--getatt"></a>
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-docdb-dbsubnetgroup--examples"></a>

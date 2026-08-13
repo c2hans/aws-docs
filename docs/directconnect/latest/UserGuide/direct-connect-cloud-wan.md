@@ -27,7 +27,7 @@ The following example shows a Cloud WAN global network with three Regions within
 
 A Direct Connect gateway association with a Cloud WAN core network requires the following:
 + An existing Direct Connect gateway. For the steps to create a Direct Connect gateway, see [Create a Direct Connect gateway](create-direct-connect-gateway.md).
-+ An AWS Cloud WAN core network. For information about Cloud WAN, see the [https://docs.aws.amazon.com/network-manager/latest/cloudwan/what-is-cloudwan.html](https://docs.aws.amazon.com/network-manager/latest/cloudwan/what-is-cloudwan.html).
++ An AWS Cloud WAN core network. For information about Cloud WAN, see the [*AWS Cloud WAN User Guide*](https://docs.aws.amazon.com/network-manager/latest/cloudwan/what-is-cloudwan.html).
 
 ## Considerations
 <a name="direct-connect-cloud-wan-limits"></a>

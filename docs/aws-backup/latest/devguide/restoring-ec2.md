@@ -53,7 +53,7 @@ You can restore an entire Amazon EC2 instance from a single recovery point, incl
 ## Restore Amazon EC2 with AWS CLI
 <a name="restoring-ec2-cli"></a>
 
-In the command line interface, [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/start-restore-job.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/start-restore-job.html) allows you to restore with up to 32 parameters (including some parameters that are not customizable through the AWS Backup console).
+In the command line interface, [`start-restore-job`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/start-restore-job.html) allows you to restore with up to 32 parameters (including some parameters that are not customizable through the AWS Backup console).
 
 The following list is the accepted metadata you can pass to restore an Amazon EC2 recovery point.
 
@@ -95,7 +95,7 @@ AWS Backup accepts the following information-only attributes. However, including
 vpcId
 ```
 
-[https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-block-device-mapping.html#create-ami-bdm](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-block-device-mapping.html#create-ami-bdm) is an optional parameter you can include. AWS Backup supports the following `BlockDeviceMappings` attributes.
+[`BlockDeviceMappings`](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-block-device-mapping.html#create-ami-bdm) is an optional parameter you can include. AWS Backup supports the following `BlockDeviceMappings` attributes.
 
 **Note**
 `SnapshotId` and `OutpostArn` are not supported.

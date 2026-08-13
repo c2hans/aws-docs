@@ -66,7 +66,7 @@ Each downlink message is cleared from the queue automatically after it's sent to
 You can use the AWS IoT Wireless API to queue downlink messages and clear individual messages, or the entire queue, as needed.
 
 **Queue downlink messages**
-To create a downlink message queue, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_SendDataToWirelessDevice.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_SendDataToWirelessDevice.html) API operation or the [cli/latest/reference/iotwireless/send-data-to-wireless-device.html](cli/latest/reference/iotwireless/send-data-to-wireless-device.html) CLI command.
+To create a downlink message queue, use the [`SendDataToWirelessDevice`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_SendDataToWirelessDevice.html) API operation or the [`send-data-to-wireless-device`](cli/latest/reference/iotwireless/send-data-to-wireless-device.html) CLI command.
 
 ```
 aws iotwireless send-data-to-wireless-device \
@@ -85,7 +85,7 @@ The output of running this command generates a `MessageId` for the downlink mess
 ```
 
 **List downlink messages in the queue**
-To list all downlink messages in the queue, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListQueuedMessages.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListQueuedMessages.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-queued-messages.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-queued-messages.html) CLI command.
+To list all downlink messages in the queue, use the [`ListQueuedMessages`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListQueuedMessages.html) API operation or the [`list-queued-messages`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-queued-messages.html) CLI command.
 
 ```
 aws iotwireless list-queued-messages
@@ -94,7 +94,7 @@ aws iotwireless list-queued-messages
 By default, a maximum of 10 downlink messages are displayed when running this command.
 
 **Remove individual downlink messages or clear entire queue**
-To remove individual messages from the queue or to clear the entire queue, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteQueuedMessages.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteQueuedMessages.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/delete-queued-messages.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/delete-queued-messages.html) CLI command.
+To remove individual messages from the queue or to clear the entire queue, use the [`DeleteQueuedMessages`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteQueuedMessages.html) API operation or the [`delete-queued-messages`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/delete-queued-messages.html) CLI command.
 + To remove individual messages, provide the `messageID` for messages you want to remove for your wireless device, specified by the `wirelessDeviceId`.
 + To clear the entire downlink queue, specify `messageID` as `*` for your wireless device, specified by the `wirelessDeviceId`.
 

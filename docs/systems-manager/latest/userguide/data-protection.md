@@ -28,7 +28,7 @@ We strongly recommend that you never put confidential or sensitive information, 
 <a name="encryption-at-rest"></a>
 
 **Parameter Store parameters**
-The types of parameters you can create in Parameter Store, a tool in AWS Systems Manager, include `String`, `StringList`, and `SecureString`.
+The types of parameters you can create in Parameter Store, include `String`, `StringList`, and `SecureString`.
 
 All parameters, regardless of their type, are encrypted both in transit and at rest. In transit, parameters are encrypted using transport layer security (TLS) to create a secure HTTPS connection for API requests. At rest, they are encrypted with an AWS owned key in AWS Key Management Service (AWS KMS). For more information about AWS owned key encryption, see [AWS owned keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-owned-cmk) in the *AWS Key Management Service Developer Guide* .
 

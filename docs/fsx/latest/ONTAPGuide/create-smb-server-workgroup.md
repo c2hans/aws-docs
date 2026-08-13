@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/create-smb-server-
 # Creating an SMB server in a workgroup
 <a name="create-smb-server-workgroup"></a>
 
-You can use the [https://docs.netapp.com/us-en/ontap-cli/vserver-cifs-create.html](https://docs.netapp.com/us-en/ontap-cli/vserver-cifs-create.html) ONTAP CLI command to create an SMB server on the SVM and specify the workgroup to which it belongs.
+You can use the [**vserver cifs create**](https://docs.netapp.com/us-en/ontap-cli/vserver-cifs-create.html) ONTAP CLI command to create an SMB server on the SVM and specify the workgroup to which it belongs.
 
 ## Before you begin
 <a name="before-you-begin-smb-create"></a>

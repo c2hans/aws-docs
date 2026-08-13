@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agentic-self-service-prompt-best-practices.html
 ---
 
-# Prompt engineering best practices for Connect AI agents
+# Prompt engineering best practices for AI agents
 <a name="agentic-self-service-prompt-best-practices"></a>
 
-The following best practices can help you write more effective orchestration prompts for your Connect AI agents. Many of these practices apply broadly to both self-service and agent assistance use cases, while some are specific to managing response latency or self-service interactions.
+The following best practices can help you write more effective orchestration prompts for your AI agents. Many of these practices apply broadly to both self-service and agent assistance use cases, while some are specific to managing response latency or self-service interactions.
 
 ## General best practices
 <a name="prompt-bp-general"></a>
@@ -234,7 +234,7 @@ Instruct the AI agent to start with a brief acknowledgment of the customer's req
 ## Manage response latency
 <a name="prompt-bp-latency-optimization"></a>
 
-The following best practices help you optimize response latency for your Connect AI agents.
+The following best practices help you optimize response latency for your AI agents.
 
 ### Calibrate prompt specificity to model capability
 <a name="prompt-bp-model-specificity"></a>

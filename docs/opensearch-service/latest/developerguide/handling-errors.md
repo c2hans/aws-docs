@@ -271,7 +271,7 @@ If the error persists after repeating the process several times, contact [AWS Su
 ## Can't close index
 <a name="troubleshooting-close-api"></a>
 
-OpenSearch Service supports the [https://opensearch.org/docs/latest/api-reference/index-apis/close-index/](https://opensearch.org/docs/latest/api-reference/index-apis/close-index/) API only for OpenSearch and Elasticsearch versions 7.4 and later. If you're using an older version and are restoring an index from a snapshot, you can delete the existing index (before or after reindexing it).
+OpenSearch Service supports the [`_close`](https://opensearch.org/docs/latest/api-reference/index-apis/close-index/) API only for OpenSearch and Elasticsearch versions 7.4 and later. If you're using an older version and are restoring an index from a snapshot, you can delete the existing index (before or after reindexing it).
 
 ## Client license checks
 <a name="troubleshooting-license"></a>

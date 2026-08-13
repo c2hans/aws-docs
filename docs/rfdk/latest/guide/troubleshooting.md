@@ -16,7 +16,7 @@ This section covers common problems that users of the RFDK may come across, and 
 **Note**
 This section assumes you are not setting a custom prefix, so the default `/renderfarm/` prefix is used.
 
-The logs are always a good place to start when trying to debug issues with the RFDK. Logs in the RFDK are written into Amazon CloudWatch. After tearing down a render farm, the logs will be persisted so additional debugging can be performed. The same log groups will be continue to be used if another render farm is deployed. When creating RFDK constructs, a log prefix can be passed in using the [https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.LogGroupFactoryProps.html](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.LogGroupFactoryProps.html) field to allow you to use a different log group. This is useful if you would like to run more than one render farm in a single AWS account.
+The logs are always a good place to start when trying to debug issues with the RFDK. Logs in the RFDK are written into Amazon CloudWatch. After tearing down a render farm, the logs will be persisted so additional debugging can be performed. The same log groups will be continue to be used if another render farm is deployed. When creating RFDK constructs, a log prefix can be passed in using the [`LogGroupFactoryProps.logGroupPrefix`](https://docs.aws.amazon.com/rfdk/api/latest/docs/aws-rfdk.LogGroupFactoryProps.html) field to allow you to use a different log group. This is useful if you would like to run more than one render farm in a single AWS account.
 
 ### General
 <a name="general"></a>
@@ -178,7 +178,7 @@ If you would like to access this host, it can be done from the Amazon EC2 Consol
 1. Select either **Session Manager** or **EC2 Instance Connect** to get an SSH session to open in the browser.
 
 **To access via SSH using the AWS CLI**
-If you would prefer to connect via the command line with an SSH key then one can be added manually with the AWS CLI’s [https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/send-ssh-public-key.html](https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/send-ssh-public-key.html) command. Note that this will only install the key temporarily, so you’ll have 60 seconds to create any ssh sessions you require, and then you’ll need to re-upload the key.
+If you would prefer to connect via the command line with an SSH key then one can be added manually with the AWS CLI’s [`ec2-instance-connect send-ssh-public-key`](https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/send-ssh-public-key.html) command. Note that this will only install the key temporarily, so you’ll have 60 seconds to create any ssh sessions you require, and then you’ll need to re-upload the key.
 
 ## Dependencies between tiered stacks
 <a name="dependencies-between-tiered-stacks"></a>

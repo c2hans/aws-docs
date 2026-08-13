@@ -1153,7 +1153,7 @@ pkg:generic/mysql/mysql-server@8.0.43
     ```
   + Registry Value
     + VersionToReport – Microsoft Office Version
-    + ProductReleaseIds – List of product IDs. This is used to identify installed Office products. For more information about product IDs, see [https://learn.microsoft.com/en-us/troubleshoot/microsoft-365-apps/office-suite-issues/product-ids-supported-office-deployment-click-to-run](https://learn.microsoft.com/en-us/troubleshoot/microsoft-365-apps/office-suite-issues/product-ids-supported-office-deployment-click-to-run) on the Microsoft website.
+    + ProductReleaseIds – List of product IDs. This is used to identify installed Office products. For more information about product IDs, see [product IDs](https://learn.microsoft.com/en-us/troubleshoot/microsoft-365-apps/office-suite-issues/product-ids-supported-office-deployment-click-to-run) on the Microsoft website.
 + Microsoft Office Suite – Collects installed each Office applications by examining the following executable files:
   + `EXCEL.EXE` – Microsoft Excel
   + `WINWORD.EXE` – Microsoft Word

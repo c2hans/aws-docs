@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/nova-fine-tune.htm
 
 The SFT training process consists of two main stages:
 + **Data Preparation**: Follow established guidelines to create, clean, or reformat datasets into the required structure. Ensure that inputs, outputs, and auxiliary information (such as reasoning traces or metadata) are properly aligned and formatted.
-+ **Training Configuration**: Define how the model will be trained. When using , this configuration is written in a YAML recipe file that includes:
++ **Training Configuration**: Define how the model will be trained. When using SageMaker HyperPod, this configuration is written in a YAML recipe file that includes:
   + Data source paths (training and validation datasets)
   + Key hyperparameters (epochs, learning rate, batch size)
   + Optional components (distributed training parameters, etc)

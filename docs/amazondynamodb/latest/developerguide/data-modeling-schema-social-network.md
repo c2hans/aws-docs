@@ -45,11 +45,11 @@ Now, let's step through how we'll evolve our schema design to address all the ac
 
 **Step 1: Address access pattern 1 (`getUserInfoByUserID`)**
 
-To get a given user's information, we'll need to [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html) the base table with a key condition of `PK=<userID>`. The query operation lets you paginate the results, which can be useful when a user has many followers. For more information on Query, see [Querying tables in DynamoDB](Query.md).
+To get a given user's information, we'll need to [`Query`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html) the base table with a key condition of `PK=<userID>`. The query operation lets you paginate the results, which can be useful when a user has many followers. For more information on Query, see [Querying tables in DynamoDB](Query.md).
 
 In our example, we track two types of data for our user: their "count" and their "info." A user's "count" reflects how many followers they have, how many users they are following, and how many posts they've created. A user's "info" reflects their personal information such as their name.
 
-We see these two kinds of data represented by the two items below. The item that has "count" in its sort key (SK) is more likely to change than the item with "info." DynamoDB considers the size of the item as it appears before and after the update and the provisioned throughput consumed will reflect the larger of these item sizes. So even if you update just a subset of the item's attributes, [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateItem.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateItem.html) will still consume the full amount of provisioned throughput (the larger of the before and after item sizes). You can get the items via a single `Query` operation and use `UpdateItem` to add or subtract from existing numeric attributes.
+We see these two kinds of data represented by the two items below. The item that has "count" in its sort key (SK) is more likely to change than the item with "info." DynamoDB considers the size of the item as it appears before and after the update and the provisioned throughput consumed will reflect the larger of these item sizes. So even if you update just a subset of the item's attributes, [`UpdateItem`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateItem.html) will still consume the full amount of provisioned throughput (the larger of the before and after item sizes). You can get the items via a single `Query` operation and use `UpdateItem` to add or subtract from existing numeric attributes.
 
 ![Result of the Query operation for a user with ID u#12345 and their count and info data.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/SocialNetwork1.png)
 
@@ -61,7 +61,7 @@ To get a list of users who are following a given user, we'll need to `Query` the
 
 **Step 3: Address access pattern 3 (`getFollowingListByUserID`)**
 
-To get a list of users a given user is following, we'll need to `Query` the base table with a key condition of `PK=<userID>#following`. You can then use a [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TransactWriteItems.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TransactWriteItems.html) operation to group up several requests together and do the following:
+To get a list of users a given user is following, we'll need to `Query` the base table with a key condition of `PK=<userID>#following`. You can then use a [`TransactWriteItems`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TransactWriteItems.html) operation to group up several requests together and do the following:
 + Add User A to User B's follower list, and then increment User B's follower count by one.
 + Add User B to User A's follower list, and then increment User A's follower count by one.
 
@@ -81,7 +81,7 @@ To get a list of users who liked a given user's post, we'll need to `Query` the 
 
 **Step 6: Address access pattern 6 (`getLikeCountByPostID`)**
 
-To get a count of likes for a given post, we'll need to perform a [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GetItem.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GetItem.html) operation on the base table with a key condition of `PK=<postID>#likecount`. This access pattern can cause throttling issues whenever a user with many followers (such as a celebrity) creates a post since throttling occurs when a partition's throughput exceeds 1000 WCU per second. This problem is not a result of DynamoDB, it just appears in DynamoDB since it's at the end of the software stack.
+To get a count of likes for a given post, we'll need to perform a [`GetItem`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GetItem.html) operation on the base table with a key condition of `PK=<postID>#likecount`. This access pattern can cause throttling issues whenever a user with many followers (such as a celebrity) creates a post since throttling occurs when a partition's throughput exceeds 1000 WCU per second. This problem is not a result of DynamoDB, it just appears in DynamoDB since it's at the end of the software stack.
 
 You should evaluate whether it's really essential for all users to view the like count simultaneously or if it can happen gradually over time. In general, a post's like count doesn't need to be immediately 100% accurate. You can implement this strategy by putting a queue between your application and DynamoDB to have the updates happen periodically.
 
@@ -89,7 +89,7 @@ You should evaluate whether it's really essential for all users to view the like
 
 **Step 7: Address access pattern 7 (`getTimelineByUserID`)**
 
-To get the timeline for a given user, we'll need to perform a `Query` operation on the base table with a key condition of `PK=<userID>#timeline`. Let's consider a scenario where a user's followers need to view their post synchronously. Every time a user writes a post, their follower list is read and their userID and postID are slowly entered into the timeline key of all its followers. Then, when your application starts, you can read the timeline key with the `Query` operation and fill the timeline screen with a combination of userID and postID using the [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_BatchGetItem.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_BatchGetItem.html) operation for any new items. You cannot read the timeline with an API call, but this is a more cost effective solution if the posts could be edited frequently.
+To get the timeline for a given user, we'll need to perform a `Query` operation on the base table with a key condition of `PK=<userID>#timeline`. Let's consider a scenario where a user's followers need to view their post synchronously. Every time a user writes a post, their follower list is read and their userID and postID are slowly entered into the timeline key of all its followers. Then, when your application starts, you can read the timeline key with the `Query` operation and fill the timeline screen with a combination of userID and postID using the [`BatchGetItem`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_BatchGetItem.html) operation for any new items. You cannot read the timeline with an API call, but this is a more cost effective solution if the posts could be edited frequently.
 
 The timeline is a place that shows recent posts, so we'll need a way to clean up the old ones. Instead of using WCU to delete them, you can use DynamoDB's [TTL](TTL.md) feature to do it for free.
 

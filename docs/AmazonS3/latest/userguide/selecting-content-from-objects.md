@@ -46,7 +46,7 @@ Additional limitations apply when using Amazon S3 Select with a Parquet object:
 
 When you construct a request, you provide details of the object that is being queried by using an `InputSerialization` object. You provide details of how the results are to be returned by using an `OutputSerialization` object. You also include the SQL expression that Amazon S3 uses to filter the request.
 
-For more information about constructing an Amazon S3 Select request, see [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html) in the *Amazon Simple Storage Service API Reference*. You can also see one of the SDK code examples in the following sections.
+For more information about constructing an Amazon S3 Select request, see [SelectObjectContent](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html) in the *Amazon Simple Storage Service API Reference*. You can also see one of the SDK code examples in the following sections.
 
 ### Requests using scan ranges
 <a name="selecting-content-from-objects-using-byte-range"></a>
@@ -68,7 +68,7 @@ Suppose that you're using the Amazon S3 Select `ScanRange` parameter and *Start*
 
  Amazon S3 Select scan range requests support Parquet, CSV (without quoted delimiters), or JSON objects (in `LINES` mode only). CSV and JSON objects must be uncompressed. For line-based CSV and JSON objects, when a scan range is specified as part of the Amazon S3 Select request, all records that start within the scan range are processed. For Parquet objects, all of the row groups that start within the scan range requested are processed.
 
-Amazon S3 Select scan range requests are available to use with the AWS CLI, Amazon S3 API, and AWS SDKs. You can use the `ScanRange` parameter in the Amazon S3 Select request for this feature. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html) in the *Amazon Simple Storage Service API Reference*.
+Amazon S3 Select scan range requests are available to use with the AWS CLI, Amazon S3 API, and AWS SDKs. You can use the `ScanRange` parameter in the Amazon S3 Select request for this feature. For more information, see [SelectObjectContent](https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html) in the *Amazon Simple Storage Service API Reference*.
 
 ## Errors
 <a name="selecting-content-from-objects-errors"></a>

@@ -53,7 +53,7 @@ If you can't solve the data issues in a reasonable amount of time by using the d
 
 **To practice troubleshooting skipped rows**
 
-1. Download [samples/csv-files-for-troubleshooting-skipped-rows.zip](samples/csv-files-for-troubleshooting-skipped-rows.zip).
+1. Download [`CSV files for troubleshooting skipped rows.zip`](samples/csv-files-for-troubleshooting-skipped-rows.zip).
 
 1. Extract the files into a folder that you can use to upload the sample .csv file into Quick Sight.
 

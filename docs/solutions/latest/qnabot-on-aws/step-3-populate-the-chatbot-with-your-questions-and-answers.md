@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/step-3-po
 
 Create or upload question and answer data through the content designer before sharing the QnABot on AWS with your end users. Your data is stored in Amazon OpenSearch Service, which allows the data to be crawled when end users ask questions using either an Amazon Lex client UI or an Amazon Alexa hands-free device.
 
-Use the following procedure to get started with customizing your chatbot using the solution’s sample questions. You can edit the sample questions to customize the data to meet your needs.
+Use the following procedure to get started with customizing your chatbot using the guidance’s sample questions. You can edit the sample questions to customize the data to meet your needs.
 
 1. From the AWS CloudFormation console, launch the content designer user interface by selecting the **ContentDesignerURL** link from the **Outputs** tab of the primary CloudFormation stack.
 

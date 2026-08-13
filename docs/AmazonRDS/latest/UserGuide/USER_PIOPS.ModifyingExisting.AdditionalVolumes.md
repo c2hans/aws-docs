@@ -52,7 +52,7 @@ When you are adding an additional storage volume using the `modify-db-instance` 
 ## AWS CLI
 <a name="USER_PIOPS.ModifyingExisting.AdditionalVolumes.cli"></a>
 
-To add an additional storage volume to a DB instance, use the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html). Set the `--additional-storage-volumes` as a JSON array specifying the additional storage volumes to add or modify.
+To add an additional storage volume to a DB instance, use the AWS CLI command [`modify-db-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html). Set the `--additional-storage-volumes` as a JSON array specifying the additional storage volumes to add or modify.
 
 The following example adds an additional storage volume named `rdsdbdata2` with 5000 GiB of gp3 storage to `mydbinstance`.
 
@@ -74,6 +74,6 @@ aws rds modify-db-instance \
 ## RDS API
 <a name="USER_PIOPS.ModifyingExisting.AdditionalVolumes.api"></a>
 
-To add an additional storage volume to a DB instance, use the Amazon RDS API operation [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html). Set the `AdditionalStorageVolumes` parameter as an array of additional storage volume specifications.
+To add an additional storage volume to a DB instance, use the Amazon RDS API operation [`ModifyDBInstance`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html). Set the `AdditionalStorageVolumes` parameter as an array of additional storage volume specifications.
 
 When you are adding an additional storage volume using the ModifyDBInstance API operation, RDS adds the storage volume immediately regardless of the `ApplyImmediately` option being True or False.

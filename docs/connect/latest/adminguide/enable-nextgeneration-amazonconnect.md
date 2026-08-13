@@ -75,6 +75,7 @@ Connect Customer Basic does not include all the AI capabilities available in Con
   + Case summarization
   + Information extraction
     + Rules-based information extraction for voice and chat contacts
+  + Recording ingestion and conversational analytics
 + [Performance evaluations](evaluations.md)
   + Self-service interaction evaluations
   + AI agent performance evaluations

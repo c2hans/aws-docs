@@ -35,17 +35,17 @@ When you have a lot of instrumented clients in your code, a single request segme
 <a name="xray-sdk-java-submodules"></a>
 
 You can download the X-Ray SDK for Java from Maven. The X-Ray SDK for Java is split into submodules by use case, with a bill of materials for version management:
-+ [https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-core/](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-core/) (required) – Basic functionality for creating segments and transmitting segments. Includes `AWSXRayServletFilter` for instrumenting incoming requests.
-+ [https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-aws-sdk/](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-aws-sdk/) – Instruments calls to AWS services made with AWS SDK for Java clients by adding a tracing client as a request handler.
-+ [https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-v2/](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-v2/) – Instruments calls to AWS services made with AWS SDK for Java 2.2 and later clients by adding a tracing client as a request intereceptor.
-+ [https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-instrumentor/](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-instrumentor/) – With `aws-xray-recorder-sdk-aws-sdk`, instruments all AWS SDK for Java clients automatically.
-+ [https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-v2-instrumentor/](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-v2-instrumentor/) – With `aws-xray-recorder-sdk-aws-sdk-v2`, instruments all AWS SDK for Java 2.2 and later clients automatically.
-+ [https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-apache-http/](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-apache-http/) – Instruments outbound HTTP calls made with Apache HTTP clients.
-+  [https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-spring/](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-spring/) – Provides interceptors for Spring AOP Framework applications.
-+ [https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-sql-postgres/](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-sql-postgres/) – Instruments outbound calls to a PostgreSQL database made with JDBC.
-+ [https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-sql-mysql/](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-sql-mysql/) – Instruments outbound calls to a MySQL database made with JDBC.
-+ [https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-bom/](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-bom/) – Provides a bill of materials that you can use to specify the version to use for all submodules.
-+  [https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-metrics/](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-metrics/) – Publish unsampled Amazon CloudWatch metrics from your collected X-Ray segments.
++ [`aws-xray-recorder-sdk-core`](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-core/) (required) – Basic functionality for creating segments and transmitting segments. Includes `AWSXRayServletFilter` for instrumenting incoming requests.
++ [`aws-xray-recorder-sdk-aws-sdk`](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-aws-sdk/) – Instruments calls to AWS services made with AWS SDK for Java clients by adding a tracing client as a request handler.
++ [`aws-xray-recorder-sdk-aws-sdk-v2`](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-v2/) – Instruments calls to AWS services made with AWS SDK for Java 2.2 and later clients by adding a tracing client as a request intereceptor.
++ [`aws-xray-recorder-sdk-aws-sdk-instrumentor`](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-instrumentor/) – With `aws-xray-recorder-sdk-aws-sdk`, instruments all AWS SDK for Java clients automatically.
++ [`aws-xray-recorder-sdk-aws-sdk-v2-instrumentor`](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-v2-instrumentor/) – With `aws-xray-recorder-sdk-aws-sdk-v2`, instruments all AWS SDK for Java 2.2 and later clients automatically.
++ [`aws-xray-recorder-sdk-apache-http`](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-apache-http/) – Instruments outbound HTTP calls made with Apache HTTP clients.
++  [`aws-xray-recorder-sdk-spring`](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-spring/) – Provides interceptors for Spring AOP Framework applications.
++ [`aws-xray-recorder-sdk-sql-postgres`](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-sql-postgres/) – Instruments outbound calls to a PostgreSQL database made with JDBC.
++ [`aws-xray-recorder-sdk-sql-mysql`](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-sql-mysql/) – Instruments outbound calls to a MySQL database made with JDBC.
++ [`aws-xray-recorder-sdk-bom`](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-bom/) – Provides a bill of materials that you can use to specify the version to use for all submodules.
++  [`aws-xray-recorder-sdk-metrics`](https://mvnrepository.com/artifact/com.amazonaws/aws-xray-recorder-sdk-metrics/) – Publish unsampled Amazon CloudWatch metrics from your collected X-Ray segments.
 
 If you use Maven or Gradle to build your application, [add the X-Ray SDK for Java to your build configuration](#xray-sdk-java-dependencies).
 
@@ -155,7 +155,7 @@ CloudWatch is a metrics repository. A metric is the fundamental concept in Cloud
 
 Metrics are uniquely defined by a name, a namespace, and one or more dimensions. Each data point has a timestamp and, optionally, a unit of measure. When you request statistics, the returned data stream is identified by namespace, metric name, and dimension.
 
-For more information about CloudWatch, see the [https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/).
+For more information about CloudWatch, see the [*Amazon CloudWatch User Guide*](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/).
 
 ### X-Ray CloudWatch metrics
 <a name="xray-sdk-java-monitoring-metrics"></a>

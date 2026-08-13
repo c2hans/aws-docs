@@ -41,12 +41,12 @@ In the table, note that the first two **Record Name**-**Record Value** pairs are
   <tr><th>Domain name</th><th>Record Name</th><th>Record Value</th><th>Comment</th></tr>
 </thead>
 <tbody>
-  <tr><td>\*.example.com</td><td>\_{{x1}}.example.com.</td><td>\_{{x2}}.acm-validations.aws.</td><td rowspan="2">Identical</td></tr>
-  <tr><td>example.com</td><td>\_{{x1}}.example.com.</td><td>\_{{x2}}.acm-validations.aws.</td></tr>
-  <tr><td>www.example.com </td><td>\_{{x3}}.www.example.com.</td><td>\_{{x4}}.acm-validations.aws.</td><td>Unique</td></tr>
-  <tr><td>host.example.com </td><td>\_{{x5}}.host.example.com.</td><td>\_{{x6}}.acm-validations.aws.</td><td>Unique</td></tr>
-  <tr><td>subdomain.example.com</td><td>\_{{x7}}.subdomain.example.com.</td><td>\_{{x8}}.acm-validations.aws.</td><td>Unique</td></tr>
-  <tr><td>host.subdomain.example.com</td><td>\_{{x9}}.host.subdomain.example.com.</td><td>\_{{x10}}.acm-validations.aws.</td><td>Unique</td></tr>
+  <tr><td>*.example.com</td><td>_{{x1}}.example.com.</td><td>_{{x2}}.acm-validations.aws.</td><td rowspan="2">Identical</td></tr>
+  <tr><td>example.com</td><td>_{{x1}}.example.com.</td><td>_{{x2}}.acm-validations.aws.</td></tr>
+  <tr><td>www.example.com </td><td>_{{x3}}.www.example.com.</td><td>_{{x4}}.acm-validations.aws.</td><td>Unique</td></tr>
+  <tr><td>host.example.com </td><td>_{{x5}}.host.example.com.</td><td>_{{x6}}.acm-validations.aws.</td><td>Unique</td></tr>
+  <tr><td>subdomain.example.com</td><td>_{{x7}}.subdomain.example.com.</td><td>_{{x8}}.acm-validations.aws.</td><td>Unique</td></tr>
+  <tr><td>host.subdomain.example.com</td><td>_{{x9}}.host.subdomain.example.com.</td><td>_{{x10}}.acm-validations.aws.</td><td>Unique</td></tr>
 </tbody>
 </table>
 

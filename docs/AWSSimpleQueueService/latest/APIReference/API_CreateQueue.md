@@ -17,10 +17,10 @@ To successfully create a new queue, you must provide a queue name that adheres t
 **Note**
 After you create a queue, you must wait at least one second after the queue is created to be able to use the queue.
 
-To retrieve the URL of a queue, use the [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueUrl.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueUrl.html) action. This action only requires the [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue.html#API_CreateQueue_RequestSyntax](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue.html#API_CreateQueue_RequestSyntax) parameter.
+To retrieve the URL of a queue, use the [`GetQueueUrl`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueUrl.html) action. This action only requires the [`QueueName`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue.html#API_CreateQueue_RequestSyntax) parameter.
 
 When creating queues, keep the following points in mind:
-+ If you specify the name of an existing queue and provide the exact same names and values for all its attributes, the [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue.html) action will return the URL of the existing queue instead of creating a new one.
++ If you specify the name of an existing queue and provide the exact same names and values for all its attributes, the [`CreateQueue`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue.html) action will return the URL of the existing queue instead of creating a new one.
 + If you attempt to create a queue with a name that already exists but with different attribute names or values, the `CreateQueue` action will return an error. This ensures that existing queues are not inadvertently altered.
 
 **Note**

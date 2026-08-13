@@ -20,7 +20,7 @@ These controls may not be available in all AWS Regions. For more information, se
 
 **Resource type:** `AWS::Backup::RecoveryPoint`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/backup-recovery-point-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/backup-recovery-point-encrypted.html)
+**AWS Config rule:** [`backup-recovery-point-encrypted`](https://docs.aws.amazon.com/config/latest/developerguide/backup-recovery-point-encrypted.html)
 
 **Schedule type:** Change triggered
 

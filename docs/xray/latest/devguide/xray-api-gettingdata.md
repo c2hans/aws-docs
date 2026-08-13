@@ -16,7 +16,7 @@ AWS X-Ray processes the trace data that you send to it to generate full traces, 
 ## Retrieving the service graph
 <a name="xray-api-servicegraph"></a>
 
-You can use the [https://docs.aws.amazon.com/xray/latest/api/API_GetServiceGraph.html](https://docs.aws.amazon.com/xray/latest/api/API_GetServiceGraph.html) API to retrieve the JSON service graph. The API requires a start time and end time, which you can calculate from a Linux terminal with the `date` command.
+You can use the [`GetServiceGraph`](https://docs.aws.amazon.com/xray/latest/api/API_GetServiceGraph.html) API to retrieve the JSON service graph. The API requires a start time and end time, which you can calculate from a Linux terminal with the `date` command.
 
 ```
 $ date +%s
@@ -324,7 +324,7 @@ aws xray get-service-graph --group-name "Example1"
 ## Retrieving traces
 <a name="xray-api-traces"></a>
 
-You can use the [https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSummaries.html](https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSummaries.html) API to get a list of trace summaries. Trace summaries include information that you can use to identify traces that you want to download in full, including annotations, request and response information, and IDs.
+You can use the [`GetTraceSummaries`](https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSummaries.html) API to get a list of trace summaries. Trace summaries include information that you can use to identify traces that you want to download in full, including annotations, request and response information, and IDs.
 
 There are two `TimeRangeType` flags available when calling `aws xray get-trace-summaries`:
 + **TraceId** – The default `GetTraceSummaries` search uses TraceID time and returns traces started within the computed `[start_time, end_time)` range. This range of timestamps is calculated based on the encoding of the timestamp within the TraceId, or can be defined manually.
@@ -403,7 +403,7 @@ aws xray get-trace-summaries --start-time $(($EPOCH-120)) --end-time $(($EPOCH-6
 }
 ```
 
-Use the trace ID from the output to retrieve a full trace with the [https://docs.aws.amazon.com/xray/latest/api/API_BatchGetTraces.html](https://docs.aws.amazon.com/xray/latest/api/API_BatchGetTraces.html) API.
+Use the trace ID from the output to retrieve a full trace with the [`BatchGetTraces`](https://docs.aws.amazon.com/xray/latest/api/API_BatchGetTraces.html) API.
 
 **Example BatchGetTraces command**
 

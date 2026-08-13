@@ -113,14 +113,14 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 
 For the Fargate profile`myFargateProfile`, Ref returns the physical resource ID of the Fargate profile. For example, `<cluster-name>/<Fargate_profile_name>`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-eks-fargateprofile-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-eks-fargateprofile-return-values-fn--getatt-fn--getatt"></a>
@@ -141,7 +141,7 @@ If CloudFormation attempts to create both resources at the same time, resource c
 ### Create a Fargate profile
 <a name="aws-resource-eks-fargateprofile--examples--Create_a_profile"></a>
 
-The following example creates a Fargate profile for pods deployed to a namespace with the name `my-namespace` that have a label with a key value pair assigned to them. If you're not creating an `EKSIdpConfig` in the same template, remove the `"DependsOn"` line in the following example. For more information, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-identityproviderconfig.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-identityproviderconfig.html).
+The following example creates a Fargate profile for pods deployed to a namespace with the name `my-namespace` that have a label with a key value pair assigned to them. If you're not creating an `EKSIdpConfig` in the same template, remove the `"DependsOn"` line in the following example. For more information, see [`AWS::EKS::IdentityProviderConfig`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-identityproviderconfig.html).
 
 #### JSON
 <a name="aws-resource-eks-fargateprofile--examples--Create_a_profile--json"></a>
@@ -199,4 +199,4 @@ Resources:
 ## See also
 <a name="aws-resource-eks-fargateprofile--seealso"></a>
 + [Fargate profile](https://docs.aws.amazon.com/eks/latest/userguide/fargate-profile.html) in the *Amazon EKS User Guide *.
-+ [https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateFargateProfile.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateFargateProfile.html) in the *Amazon EKS API Reference *.
++ [`CreateFargateProfile`](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateFargateProfile.html) in the *Amazon EKS API Reference *.

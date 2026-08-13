@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-prer
 
 Before you can use Amazon Bedrock Guardrails, you must fulfill the following prerequisites:
 
-1. Ensure that your IAM role has the [necessary permissions to perform actions related to Amazon Bedrock Guardrails](guardrails-permissions.md).
+1. Make sure that your IAM role has the [necessary permissions to perform actions related to Amazon Bedrock Guardrails](guardrails-permissions.md).
 
 Before creating your guardrail, consider preparing the following in advance:
 + Look at the available [content filters](guardrails-content-filters.md) and determine the strength that you want to apply to each filter for prompts and model responses.

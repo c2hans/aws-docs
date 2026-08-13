@@ -19,17 +19,28 @@ Be aware that at the time these release notes are published, the new platform ve
 
 *2021-05-03 update:* We missed announcing the deprecation of Node.js 10. It's now added to the **Platform deprecation** entry in the table.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **April 7, 2021** to all released Amazon Linux AMI platforms.<br />The **Node.js** and **Ruby** releases are security releases. For more information, see **Platform-specific updates** in this table. |
-| **Platform deprecation** | Today we're announcing that several platform branches will *retire on April 30, 2022* due to end of support by the owners of their language runtime components. *These platform branches are now deprecated.* If you currently use any of these retiring platforms, we strongly recommend that you start planning your migration from each one of them to a current, fully supported version. For PHP specifically, this also includes migrating to Amazon Linux 2, because there are no remaining supported PHP branches based on Amazon Linux AMI.<br />The following platform branches are now deprecated:+  Tomcat 7 <br />+  Node.js 10  In this case, we're not retiring an entire platform branch. The Node.js platform combines multiple Node.js 10 and 12 versions into a single platform branch. On retirement date, we will release a new platform version that will remove the ability to choose these Node.js 10 versions.  <br />+  PHP 7.2 and 7.3 <br />+  Ruby 2.4 and 2.5 (both Puma and Passenger variants) <br />Deprecated platform branches aren't listed on the [Supported platforms](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-supported.html) page of the *AWS Elastic Beanstalk Platforms* guide. They are listed on a separate page, [Retiring platform versions](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html).<br />For more information about platform deprecation, see [Elastic Beanstalk platform support policy](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-support-policy.html) in the *AWS Elastic Beanstalk Developer Guide*. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2021-04-21-linux.html) |
-| **Multicontainer Docker** | Updated the ECS agent to version **1.51.0**. |
-| **Go** | Updated Go to release **1.16.3**. For details, see [go1.16](https://golang.org/doc/devel/release.html#go1.16) in *The Go Programming Language Release History*. |
-| **Node.js** | Updated the Node.js platform to add support for Node versions [12.22.1](https://nodejs.org/en/blog/release/v12.22.1/), [12.22.0](https://nodejs.org/en/blog/release/v12.22.0/), and [10.24.1](https://nodejs.org/en/blog/release/v10.24.1/).<br />Node.js versions 10.24.1 and 12.22.1 are security releases. |
-| **Ruby** | Updated Ruby 2.6 to release [2.6.7](https://www.ruby-lang.org/en/news/2021/04/05/ruby-2-6-7-released/).<br />Updated RubyGems to release [3.2.15](https://blog.rubygems.org/2021/03/19/3.2.15-released.html).<br />The Ruby 2.6 and 2.5 updates are security releases. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>April 7, 2021</b> to all released Amazon Linux AMI platforms.<br />The <b>Node.js</b> and <b>Ruby</b> releases are security releases. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Platform deprecation</b></td><td>Today we're announcing that several platform branches will <i>retire on April 30, 2022</i> due to end of support by the owners of their language runtime components. <i>These platform branches are now deprecated.</i> If you currently use any of these retiring platforms, we strongly recommend that you start planning your migration from each one of them to a current, fully supported version. For PHP specifically, this also includes migrating to Amazon Linux 2, because there are no remaining supported PHP branches based on Amazon Linux AMI.<br />The following platform branches are now deprecated:<ul><li> Tomcat 7 </li><li> Node.js 10  In this case, we're not retiring an entire platform branch. The Node.js platform combines multiple Node.js 10 and 12 versions into a single platform branch. On retirement date, we will release a new platform version that will remove the ability to choose these Node.js 10 versions.  </li><li> PHP 7.2 and 7.3 </li><li> Ruby 2.4 and 2.5 (both Puma and Passenger variants) </li></ul><br />Deprecated platform branches aren't listed on the <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-supported.html">Supported platforms</a> page of the <i>AWS Elastic Beanstalk Platforms</i> guide. They are listed on a separate page, <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html">Retiring platform versions</a>.<br />For more information about platform deprecation, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-support-policy.html">Elastic Beanstalk platform support policy</a> in the <i>AWS Elastic Beanstalk Developer Guide</i>.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Multicontainer Docker</b></td><td>Updated the ECS agent to version <b>1.51.0</b>.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated Go to release <b>1.16.3</b>. For details, see <a href="https://golang.org/doc/devel/release.html#go1.16">go1.16</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform to add support for Node versions <a href="https://nodejs.org/en/blog/release/v12.22.1/">12.22.1</a>, <a href="https://nodejs.org/en/blog/release/v12.22.0/">12.22.0</a>, and <a href="https://nodejs.org/en/blog/release/v10.24.1/">10.24.1</a>.<br />Node.js versions 10.24.1 and 12.22.1 are security releases.</td></tr>
+  <tr><td><b>Ruby</b></td><td>Updated Ruby 2.6 to release <a href="https://www.ruby-lang.org/en/news/2021/04/05/ruby-2-6-7-released/">2.6.7</a>.<br />Updated RubyGems to release <a href="https://blog.rubygems.org/2021/03/19/3.2.15-released.html">3.2.15</a>.<br />The Ruby 2.6 and 2.5 updates are security releases.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2021-04-21-linux.platforms"></a>

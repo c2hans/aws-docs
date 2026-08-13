@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-self-ma
 <a name="kb-test-self-managed"></a>
 
 After you set up your customer-managed knowledge base, you can test its behavior in the following ways:
-+ Send queries and generate responses to the queries based on the retrieved information from your data sources, by using the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) operation.
++ Send queries and generate responses to the queries based on the retrieved information from your data sources, by using the [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) operation.
 + Generate a query for structured data sources.
 + Query a knowledge base connected to an Amazon Kendra GenAI index.
 + Query a knowledge base connected to an Amazon Neptune Analytics graph.

@@ -44,4 +44,4 @@ In the following example, Amazon S3 returns the permissions for the key, `my-ima
 4. Authorization: AWS AKIAIOSFODNN7EXAMPLE:0RQf4/cRonhpaBX5sCYVf1bNRuU
 ```
 
-For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectGETacl.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectGETacl.html) in the *Amazon Simple Storage Service API Reference*.
+For more information, see [GetObjectAcl](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectGETacl.html) in the *Amazon Simple Storage Service API Reference*.

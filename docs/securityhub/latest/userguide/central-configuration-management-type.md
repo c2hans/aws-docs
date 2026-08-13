@@ -39,7 +39,7 @@ Owners of self-managed accounts can invoke the following operations of the Secur
 
 Self-managed accounts can also use `*Invitations` and `*Members` operations. However, we recommend that self-managed accounts don't use these operations. Policy associations can fail if a member account has its own members that are part of a different organization than the delegated administrator's.
 
-For descriptions of Security Hub CSPM API actions, see the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/Welcome.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/Welcome.html).
+For descriptions of Security Hub CSPM API actions, see the [*AWS Security Hub CSPM API Reference*](https://docs.aws.amazon.com/securityhub/1.0/APIReference/Welcome.html).
 
 Self-managed accounts can also use the Security Hub CSPM console or AWS CLI to configure their settings in each Region.
 
@@ -72,7 +72,7 @@ Choose your preferred method, and follow the steps to designate an account or OU
 
 **To choose the management type of an account or OU**
 
-1. Invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StartConfigurationPolicyAssociation.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StartConfigurationPolicyAssociation.html) API from the Security Hub CSPM delegated administrator account in the home Region.
+1. Invoke the [StartConfigurationPolicyAssociation](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StartConfigurationPolicyAssociation.html) API from the Security Hub CSPM delegated administrator account in the home Region.
 
 1. For the `ConfigurationPolicyIdentifier` field, provide `SELF_MANAGED_SECURITY_HUB` if you want the account or OU to control its own settings. Provide the Amazon Resource Name (ARN) or ID of the relevant configuration policy if you want the delegated administrator to control settings for the account or OU.
 
@@ -92,7 +92,7 @@ Choose your preferred method, and follow the steps to designate an account or OU
 
 **To choose the management type of an account or OU**
 
-1. Run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/start-configuration-policy-association.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/start-configuration-policy-association.html) command from the Security Hub CSPM delegated administrator account in the home Region.
+1. Run the [start-configuration-policy-association](https://docs.aws.amazon.com/cli/latest/reference/securityhub/start-configuration-policy-association.html) command from the Security Hub CSPM delegated administrator account in the home Region.
 
 1. For `configuration-policy-identifier` field, provide `SELF_MANAGED_SECURITY_HUB` if you want the account or OU to control its own settings. Provide the Amazon Resource Name (ARN) or ID of the relevant configuration policy if you want the delegated administrator to control settings for the account or OU..
 

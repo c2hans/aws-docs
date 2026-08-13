@@ -11,10 +11,10 @@ Security incident response – Detect Phase
 
 <table>
 <thead>
-  <tr><th>Activity</th><th>**Customer**</th><th>**AWS**</th></tr>
+  <tr><th><b>Activity</b></th><th><b>Customer</b></th><th><b>AWS</b></th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="3">**Logging, indicators, and monitors**</td></tr>
+  <tr><td colspan="3"><b>Logging, indicators, and monitors</b></td></tr>
   <tr><td>Configuring logs and monitors to enable event management for instances and accounts</td><td>C, I</td><td>R</td></tr>
   <tr><td>Monitoring supported AWS services for security alerts</td><td>I</td><td>R</td></tr>
   <tr><td>Deploying and managing endpoint security tools</td><td>R</td><td>I</td></tr>
@@ -31,10 +31,10 @@ Security incident response – Analyze Phase
 
 <table>
 <thead>
-  <tr><th>Activity</th><th>**Customer**</th><th>**AWS**</th></tr>
+  <tr><th><b>Activity</b></th><th><b>Customer</b></th><th><b>AWS</b></th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="3">**Investigation and analysis**</td></tr>
+  <tr><td colspan="3"><b>Investigation and analysis</b></td></tr>
   <tr><td>Performing an initial response for supported security alerts that a supported detection source generated</td><td>I</td><td>R, C</td></tr>
   <tr><td>Using available data to assess false and true positives</td><td>C, I</td><td>R</td></tr>
   <tr><td>Reviewing ECO assessments for false and true positives that ECO shares</td><td>R</td><td>C</td></tr>
@@ -46,7 +46,7 @@ Security incident response – Analyze Phase
   <tr><td>Engaging SMEs within ECO services on security investigations</td><td>C, I</td><td>R</td></tr>
   <tr><td>Engaging third-party vendors during investigation such as for EPS anti-malware </td><td>R, C, I</td><td>I</td></tr>
   <tr><td>Sharing investigation logs from supported AWS services to customers during an investigation</td><td>I</td><td>R</td></tr>
-  <tr><td colspan="3">**Communication**</td></tr>
+  <tr><td colspan="3"><b>Communication</b></td></tr>
   <tr><td>Sending alerts and notifications from ECO detection sources for managed resources</td><td>I</td><td>R</td></tr>
   <tr><td>Managing alerts and notifications for application security events</td><td>C</td><td>R</td></tr>
   <tr><td>Engaging the customer security point of contact during a security incident investigation</td><td>R</td><td>I</td></tr>
@@ -57,10 +57,10 @@ Security incident response – Contain Phase
 
 <table>
 <thead>
-  <tr><th>Activity</th><th>**Customer**</th><th>**AWS**</th></tr>
+  <tr><th><b>Activity</b></th><th><b>Customer</b></th><th><b>AWS</b></th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="3">**Containment strategy and execution**</td></tr>
+  <tr><td colspan="3"><b>Containment strategy and execution</b></td></tr>
   <tr><td>Deciding on the execution of the agreed containment strategy and agreeing with the consequences that might affect the availability of services during the containment window</td><td>R</td><td>C, I</td></tr>
   <tr><td>Backing up affected systems for further analysis</td><td>C, I</td><td>R</td></tr>
   <tr><td>Containing applications and workloads through application-specific configuration or response activity</td><td>C, I</td><td>R</td></tr>
@@ -74,10 +74,10 @@ Security incident response – Eradicate Phase
 
 <table>
 <thead>
-  <tr><th>Activity</th><th>**Customer**</th><th>**AWS**</th></tr>
+  <tr><th><b>Activity</b></th><th><b>Customer</b></th><th><b>AWS</b></th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="3">**Eradication strategy and execution**</td></tr>
+  <tr><td colspan="3"><b>Eradication strategy and execution</b></td></tr>
   <tr><td>Defining eradication options based on the security incident and the affected resource on customer application workloads</td><td>R</td><td>C, I</td></tr>
   <tr><td>Deciding on the agreed eradication strategy, timing of eradication execution and the consequences</td><td>R</td><td>C, I</td></tr>
   <tr><td>Defining eradication steps based on the security incident and the affected resource on ECO managed workloads</td><td>C, I</td><td>R</td></tr>
@@ -90,10 +90,10 @@ Security incident response – Recover Phase
 
 <table>
 <thead>
-  <tr><th>Activity</th><th>**Customer**</th><th>**AWS**</th></tr>
+  <tr><th><b>Activity</b></th><th><b>Customer</b></th><th><b>AWS</b></th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="3">**Recovery preparation and execution**</td></tr>
+  <tr><td colspan="3"><b>Recovery preparation and execution</b></td></tr>
   <tr><td>Configuring backup plans and targets as requested by the customer</td><td>C</td><td>R</td></tr>
   <tr><td>Reviewing backup plans to restore ECO managed workloads</td><td>C</td><td>R</td></tr>
   <tr><td>Performing backup restoration activities for resources of supported AWS services</td><td>I</td><td>R</td></tr>
@@ -107,10 +107,10 @@ Security incident response – PIR Phase
 
 <table>
 <thead>
-  <tr><th>Activity</th><th>**Customer**</th><th>**AWS**</th></tr>
+  <tr><th><b>Activity</b></th><th><b>Customer</b></th><th><b>AWS</b></th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="3">**Post incident reporting**</td></tr>
+  <tr><td colspan="3"><b>Post incident reporting</b></td></tr>
   <tr><td>Sharing appropriate lessons learned and action items with customer as required</td><td>I</td><td>R, A</td></tr>
 </tbody>
 </table>

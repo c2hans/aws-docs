@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/public-sector-cloud-t
 
 AWS consists of many cloud services that you can use in combinations tailored to your organizational needs. To access the services, you can use the AWS Management Console (a simple intuitive user interface), the Command Line Interface (CLI), or Software Development Kits (SDKs).
 
-For more information, see the [https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html) whitepaper.
+For more information, see the [*Overview of Amazon Web Services*](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html) whitepaper.
 
 ## Core services
 <a name="core-services"></a>

@@ -11,7 +11,7 @@ Note that if you're using provisioned capacity mode for multi-Region tables, you
 
 For more information on how to estimate write capacity throughput of provisioned multi-Region tables, see [Estimate and provision capacity for a multi-Region table in Amazon Keyspaces](tables-multi-region-capacity.md).
 
-For more information about the Amazon Keyspaces API, see [https://docs.aws.amazon.com/keyspaces/latest/APIReference/Welcome.html](https://docs.aws.amazon.com/keyspaces/latest/APIReference/Welcome.html).
+For more information about the Amazon Keyspaces API, see [*Amazon Keyspaces API Reference*](https://docs.aws.amazon.com/keyspaces/latest/APIReference/Welcome.html).
 
 When you update the provisioned mode or auto scaling settings of a multi-Region table, you can update read capacity settings and the read auto scaling configuration for each replica of the table.
 

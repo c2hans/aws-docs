@@ -100,9 +100,9 @@ When you use the **create-pipeline** command to create a pipeline or the **updat
 
 1. Save the file with a name like **MyPipeline.json**.
 
-1. At a terminal (Linux, macOS, or Unix) or command prompt (Windows), run the [https://docs.aws.amazon.com/cli/latest/reference/codepipeline/get-pipeline-state.html](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/get-pipeline-state.html) command and create the pipeline.
+1. At a terminal (Linux, macOS, or Unix) or command prompt (Windows), run the [**create-pipeline**](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/get-pipeline-state.html) command and create the pipeline.
 
-   Call the file you created when you run the [https://docs.aws.amazon.com/cli/latest/reference/codepipeline/retry-stage-execution.html](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/retry-stage-execution.html) command. For example:
+   Call the file you created when you run the [**create-pipeline**](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/retry-stage-execution.html) command. For example:
 
    ```
    aws codepipeline create-pipeline --cli-input-json file://MyPipeline.json
@@ -147,9 +147,9 @@ When you use the **create-pipeline** command to create a pipeline or the **updat
 
 1. Save the file with a name like **MyPipeline.json**.
 
-1. At a terminal (Linux, macOS, or Unix) or command prompt (Windows), run the [https://docs.aws.amazon.com/cli/latest/reference/codepipeline/get-pipeline-state.html](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/get-pipeline-state.html) command and create the pipeline.
+1. At a terminal (Linux, macOS, or Unix) or command prompt (Windows), run the [**create-pipeline**](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/get-pipeline-state.html) command and create the pipeline.
 
-   Call the file you created when you run the [https://docs.aws.amazon.com/cli/latest/reference/codepipeline/retry-stage-execution.html](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/retry-stage-execution.html) command. For example:
+   Call the file you created when you run the [**create-pipeline**](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/retry-stage-execution.html) command. For example:
 
    ```
    aws codepipeline create-pipeline --cli-input-json file://MyPipeline.json

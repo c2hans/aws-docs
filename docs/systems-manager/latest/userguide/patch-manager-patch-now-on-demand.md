@@ -7,16 +7,12 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 # Patching managed nodes on demand
 <a name="patch-manager-patch-now-on-demand"></a>
 
-Using the **Patch now** option in Patch Manager, a tool in AWS Systems Manager, you can run on-demand patching operations from the Systems Manager console. This means you don’t have to create a schedule in order to update the compliance status of your managed nodes or to install patches on noncompliant nodes. You also don’t need to switch the Systems Manager console between Patch Manager and Maintenance Windows, a tool in AWS Systems Manager, in order to set up or modify a scheduled patching window.
+Using the **Patch now** option in Patch Manager, you can run on-demand patching operations from the Systems Manager console. This means you don’t have to create a schedule to update the compliance status of your managed nodes or to install patches on noncompliant nodes. You also don’t need to switch the Systems Manager console between Patch Manager and Maintenance Windows, in order to set up or modify a scheduled patching window.
 
 **Patch now** is especially useful when you must apply zero-day updates or install other critical patches on your managed nodes as soon as possible.
 
 **Note**
 Patching on demand is supported for a single AWS account-AWS Region pair at a time. It can't be used with patching operations that are based on *patch policies*. We recommend using patch policies for keeping all your managed nodes in compliance. For more information about working with patch policies, see [Patch policy configurations in Quick Setup](patch-manager-policies.md).
-
-**Topics**
-+ [How 'Patch now' works](#patch-on-demand-how-it-works)
-+ [Running 'Patch now'](#run-patch-now)
 
 ## How 'Patch now' works
 <a name="patch-on-demand-how-it-works"></a>
@@ -58,19 +54,19 @@ The following thresholds apply to `Scan and install` operations only. For `Scan`
 ### Using 'Patch now' lifecycle hooks
 <a name="patch-on-demand-hooks"></a>
 
-**Patch now** provides you with the ability to run SSM Command documents as lifecycle hooks during an `Install` patching operation. You can use these hooks for tasks such as shutting down applications before patching or running health checks on your applications after patching or after a reboot.
+**Patch now** gives you the ability to run SSM Command documents as lifecycle hooks during an `Install` patching operation. You can use these hooks for tasks such as shutting down applications before patching or running health checks on your applications after patching or after a reboot.
 
 For more information about using lifecycle hooks, see [SSM Command document for patching: `AWS-RunPatchBaselineWithHooks`](patch-manager-aws-runpatchbaselinewithhooks.md).
 
-The following table lists the lifecycle hooks available for each of the three **Patch now** reboot options, in addition to sample uses for each hook.
+The following table lists the lifecycle hooks available for each of the three **Patch now** reboot options, besides sample uses for each hook.
 
 **Lifecycle hooks and sample uses**
 
 | Reboot option | Hook: Before installation | Hook: After installation | Hook: On exit | Hook: After scheduled reboot |
 | --- | --- | --- | --- | --- |
-| Reboot if needed | Run an SSM document before patching begins.<br />Example use: Safely shut down applications before the patching process begins.  | Run an SSM document at the end of the patching operation and before managed node reboot.<br />Example use: Run operations such as installing third-party applications before a potential reboot. | Run an SSM document after the patching operation is complete and instances are rebooted.<br />Example use: Ensure that applications are running as expected after patching. | Not available |
-| Do not reboot my instances | Same as above. | Run an SSM document at the end of the patching operation.<br />Example use: Ensure that applications are running as expected after patching. | *Not available*  | *Not available*  |
-| Schedule a reboot time | Same as above. | Same as for Do not reboot my instances. | Not available | Run an SSM document immediately after a scheduled reboot is complete.<br />Example use: Ensure that applications are running as expected after the reboot. |
+| Reboot if needed | Run an SSM document before patching begins.<br />Example use: Safely shut down applications before the patching process begins.  | Run an SSM document at the end of the patching operation and before managed node reboot.<br />Example use: Run operations such as installing third-party applications before a potential reboot. | Run an SSM document after the patching operation is complete and instances are rebooted.<br />Example use: Make sure that applications are running as expected after patching. | Not available |
+| Do not reboot my instances | Same as above. | Run an SSM document at the end of the patching operation.<br />Example use: Make sure that applications are running as expected after patching. | *Not available*  | *Not available*  |
+| Schedule a reboot time | Same as above. | Same as for Do not reboot my instances. | Not available | Run an SSM document immediately after a scheduled reboot is complete.<br />Example use: Make sure that applications are running as expected after the reboot. |
 
 ## Running 'Patch now'
 <a name="run-patch-now"></a>
@@ -107,7 +103,7 @@ If you choose to target a resource group, note that resource groups that are bas
 
 1. (Optional) For **Patching log storage**, if you want to create and save logs from this patching operation, select the S3 bucket for storing the logs.
 **Note**
-The S3 permissions that grant the ability to write the data to an S3 bucket are those of the instance profile (for EC2 instances) or IAM service role (hybrid-activated machines) assigned to the instance, not those of the IAM user performing this task. For more information, see [Configure instance permissions required for Systems Manager](setup-instance-permissions.md) or [Create the IAM service role required for Systems Manager in hybrid and multicloud environments](hybrid-multicloud-service-role.md). In addition, if the specified S3 bucket is in a different AWS account, make sure that the instance profile or IAM service role associated with the managed node has the necessary permissions to write to that bucket.
+The S3 permissions that grant the ability to write the data to an S3 bucket are those of the instance profile (for EC2 instances) or IAM service role (hybrid-activated machines) assigned to the instance, not those of the IAM user performing this task. For more information, see [Configure instance permissions required for Systems Manager](setup-instance-permissions.md) or [Create the IAM service role required for Systems Manager in hybrid and multicloud environments](hybrid-multicloud-service-role.md). In addition, if the specified S3 bucket is in a different AWS account, make sure the instance profile or IAM service role associated with the managed node has the necessary permissions to write to that bucket.
 
 1. (Optional) If you want to run SSM documents as lifecycle hooks during specific points of the patching operation, do the following:
    + Choose **Use lifecycle hooks**.
@@ -121,4 +117,4 @@ The default document, `AWS-Noop`, runs no operations.
 
 1. Choose **Patch now**.
 
-   The **Association execution summary** page opens. (Patch now uses associations in State Manager, a tool in AWS Systems Manager, for its operations.) In the **Operation summary** area, you can monitor the status of scanning or patching on the managed nodes you specified.
+   The **Association execution summary** page opens. (Patch now uses associations in State Manager, for its operations.) In the **Operation summary** area, you can monitor the status of scanning or patching on the managed nodes you specified.

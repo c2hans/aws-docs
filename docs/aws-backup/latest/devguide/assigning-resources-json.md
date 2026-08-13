@@ -28,7 +28,7 @@ FSx and FSx for OpenZFS share the ARN format `arn:aws:fsx:::file-system/*`. Enab
 
 You can define a resource assignment in a JSON document.
 
-You can specify conditions, tags, or resources to define what will be included in your backup plan. For more information to help you determine which parameters to include, see [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BackupSelection.html#Backup-Type-BackupSelection-ListOfTags](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BackupSelection.html#Backup-Type-BackupSelection-ListOfTags).
+You can specify conditions, tags, or resources to define what will be included in your backup plan. For more information to help you determine which parameters to include, see [`BackupSelection`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BackupSelection.html#Backup-Type-BackupSelection-ListOfTags).
 
 This sample resource assignment assigns all Amazon EC2 instances to the backup plan {{BACKUP-PLAN-ID}}:
 
@@ -52,6 +52,9 @@ aws backup create-backup-selection --cli-input-json file://{{PATH-TO-FILE}}/{{ba
 ```
 
 The following are example resource assignments, along with the corresponding JSON document. To make this table easier for you to read, the examples omit the fields `"BackupPlanId"`, `"SelectionName"`, and `"IamRoleArn"`. The wildcard `*` represents zero or more non-whitespace characters.
+
+**Important**
+The `*` wildcard does not match whitespace characters such as spaces. If your tag values contain spaces, a single `*` will not match the entire value. For example, `prod*` will match `prod_server` but will not match `prod server`. To match a value with spaces, each space must be explicitly included in the pattern (for example, `prod *` matches `prod server`). We recommend avoiding spaces in tag values used with wildcard conditions.
 
 **Example: Select all resources in my account**
 

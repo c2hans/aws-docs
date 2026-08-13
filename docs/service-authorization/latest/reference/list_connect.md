@@ -336,6 +336,11 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [connect:CreateIntegrationAssociation](#list_connect-action-CreateIntegrationAssociation)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [connect:TagResource](#list_connect-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   CreateMetric  **
+  - **SDK client:** connect
+  - **IAM action:**  [connect:CreateMetric](#list_connect-action-CreateMetric)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [connect:TagResource](#list_connect-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
 - **   CreateNotification  **
   - **SDK client:** connect
   - **IAM action:**  [connect:CreateNotification](#list_connect-action-CreateNotification)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -572,6 +577,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   DeleteIntegrationAssociation  **
   - **SDK client:** connect
   - **IAM action:**  [connect:DeleteIntegrationAssociation](#list_connect-action-DeleteIntegrationAssociation)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteMetric  **
+  - **SDK client:** connect
+  - **IAM action:**  [connect:DeleteMetric](#list_connect-action-DeleteMetric)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -831,6 +843,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   DescribeInstanceStorageConfig  **
   - **SDK client:** connect
   - **IAM action:**  [connect:DescribeInstanceStorageConfig](#list_connect-action-DescribeInstanceStorageConfig)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   DescribeMetric  **
+  - **SDK client:** connect
+  - **IAM action:**  [connect:DescribeMetric](#list_connect-action-DescribeMetric)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -1414,6 +1433,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   ListMetrics  **
+  - **SDK client:** connect
+  - **IAM action:**  [connect:ListMetrics](#list_connect-action-ListMetrics)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   ListNotifications  **
   - **SDK client:** connect
   - **IAM action:**  [connect:ListNotifications](#list_connect-action-ListNotifications)
@@ -1751,6 +1777,11 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **SDK client:** connect
   - **IAM action:**  [connect:DescribeHoursOfOperation](#list_connect-action-DescribeHoursOfOperation)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [connect:SearchHoursOfOperations](#list_connect-action-SearchHoursOfOperations)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+
+- **   SearchMetrics  **
+  - **SDK client:** connect
+  - **IAM action:**  [connect:DescribeMetric](#list_connect-action-DescribeMetric)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [connect:SearchMetrics](#list_connect-action-SearchMetrics)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
 
 - **   SearchNotifications  **
   - **SDK client:** connect
@@ -2190,6 +2221,20 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   UpdateInstanceStorageConfig  **
   - **SDK client:** connect
   - **IAM action:**  [connect:UpdateInstanceStorageConfig](#list_connect-action-UpdateInstanceStorageConfig)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateMetricContent  **
+  - **SDK client:** connect
+  - **IAM action:**  [connect:UpdateMetricContent](#list_connect-action-UpdateMetricContent)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateMetricMetadata  **
+  - **SDK client:** connect
+  - **IAM action:**  [connect:UpdateMetricMetadata](#list_connect-action-UpdateMetricMetadata)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -2795,6 +2840,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [integration-association\*](#list_connect-resource-integration-association) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_connect-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
   - **Access level:** Write
 
+- **   [CreateMetric](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateMetric.html)  **
+  - **Description:** Grants permission to create a metric in an Amazon Connect instance
+  - **Resource types (\*required):** [metric\*](#list_connect-resource-metric)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_connect-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
+  - **Access level:** Write
+
 - **   [CreateNotification](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateNotification.html)  **
   - **Description:** Grants permission to create a notification in an Amazon Connect instance
   - **Resource types (\*required):** [instance\*](#list_connect-resource-instance) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_connect-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
@@ -3026,6 +3077,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [integration-association\*](#list_connect-resource-integration-association) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
   - **Access level:** Write
 
+- **   [DeleteMetric](https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteMetric.html)  **
+  - **Description:** Grants permission to delete a metric in an Amazon Connect instance
+  - **Resource types (\*required):** [metric\*](#list_connect-resource-metric)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
+  - **Access level:** Write
+
 - **   [DeleteNotification](https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteNotification.html)  **
   - **Description:** Grants permission to delete a notification in an Amazon Connect instance
   - **Resource types (\*required):** [notification\*](#list_connect-resource-notification)
@@ -3246,6 +3303,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to view the instance storage configuration for an existing Amazon Connect instance
   - **Resource types (\*required):** [instance\*](#list_connect-resource-instance)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)<br />[connect:StorageResourceType](#list_connect-connect_StorageResourceType)
+  - **Access level:** Read
+
+- **   [DescribeMetric](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeMetric.html)  **
+  - **Description:** Grants permission to describe a metric in an Amazon Connect instance
+  - **Resource types (\*required):** [metric\*](#list_connect-resource-metric) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
+  - **Resource types (\*required):** [qualified-metric\*](#list_connect-resource-qualified-metric) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
   - **Access level:** Read
 
 - **   [DescribeNotification](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeNotification.html)  **
@@ -3754,6 +3817,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
   - **Access level:** List
 
+- **   [ListMetrics](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListMetrics.html)  **
+  - **Description:** Grants permission to list metrics in an Amazon Connect instance
+  - **Resource types (\*required):** [instance\*](#list_connect-resource-instance)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
+  - **Access level:** List
+
 - **   [ListNotifications](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListNotifications.html)  **
   - **Description:** Grants permission to list notifications in an Amazon Connect instance
   - **Resource types (\*required):** [instance\*](#list_connect-resource-instance)
@@ -3884,6 +3953,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [hierarchy-group](#list_connect-resource-hierarchy-group) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [hours-of-operation](#list_connect-resource-hours-of-operation) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [integration-association](#list_connect-resource-integration-association) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [metric](#list_connect-resource-metric) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [phone-number](#list_connect-resource-phone-number) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [prompt](#list_connect-resource-prompt) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [queue](#list_connect-resource-queue) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)
@@ -4083,6 +4153,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [SearchHoursOfOperations](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchHoursOfOperations.html)  **
   - **Description:** Grants permission to search hours of operation resources in an Amazon Connect instance
+  - **Resource types (\*required):** [instance\*](#list_connect-resource-instance)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)<br />[connect:SearchTag/${TagKey}](#list_connect-connect_SearchTag___TagKey_)
+  - **Access level:** Read
+
+- **   [SearchMetrics](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchMetrics.html)  **
+  - **Description:** Grants permission to search metrics in an Amazon Connect instance
   - **Resource types (\*required):** [instance\*](#list_connect-resource-instance)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)<br />[connect:SearchTag/${TagKey}](#list_connect-connect_SearchTag___TagKey_)
   - **Access level:** Read
@@ -4340,6 +4416,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [hours-of-operation](#list_connect-resource-hours-of-operation) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_connect-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [instance](#list_connect-resource-instance) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_connect-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [integration-association](#list_connect-resource-integration-association) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_connect-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
+  - **Resource types (\*required):** [metric](#list_connect-resource-metric) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_connect-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [phone-number](#list_connect-resource-phone-number) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_connect-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [prompt](#list_connect-resource-prompt) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_connect-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [queue](#list_connect-resource-queue) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_connect-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
@@ -4381,6 +4458,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [hours-of-operation](#list_connect-resource-hours-of-operation) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [instance](#list_connect-resource-instance) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [integration-association](#list_connect-resource-integration-association) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
+  - **Resource types (\*required):** [metric](#list_connect-resource-metric) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [phone-number](#list_connect-resource-phone-number) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [prompt](#list_connect-resource-prompt) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [queue](#list_connect-resource-queue) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
@@ -4532,6 +4610,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to update the storage configuration for an existing Amazon Connect instance
   - **Resource types (\*required):** [instance\*](#list_connect-resource-instance)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)<br />[connect:StorageResourceType](#list_connect-connect_StorageResourceType)
+  - **Access level:** Write
+
+- **   [UpdateMetricContent](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateMetricContent.html)  **
+  - **Description:** Grants permission to update the content of a metric in an Amazon Connect instance
+  - **Resource types (\*required):** [metric\*](#list_connect-resource-metric) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
+  - **Resource types (\*required):** [qualified-metric\*](#list_connect-resource-qualified-metric) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
+  - **Access level:** Write
+
+- **   [UpdateMetricMetadata](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateMetricMetadata.html)  **
+  - **Description:** Grants permission to update the metadata of a metric in an Amazon Connect instance
+  - **Resource types (\*required):** [metric\*](#list_connect-resource-metric) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
+  - **Resource types (\*required):** [qualified-metric\*](#list_connect-resource-qualified-metric) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
   - **Access level:** Write
 
 - **   [UpdateNotificationContent](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateNotificationContent.html)  **
@@ -4856,11 +4946,13 @@ The following resource types are defined by this service and can be used in the 
 |  [instance](https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-instances.html)  | arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId} | [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_) |
 |  [integration-association](https://docs.aws.amazon.com/connect/latest/adminguide/connect-rules.html)  | arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/integration-association/${IntegrationAssociationId} | [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_) |
 |  [legacy-phone-number](https://docs.aws.amazon.com/connect/latest/adminguide/ag-overview-numbers.html)  | arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/phone-number/${PhoneNumberId} |   |
+|  [metric](https://docs.aws.amazon.com/connect/latest/adminguide/custom-metrics-topic.html)  | arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/metric/${MetricId} | [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_) |
 |  [notification](https://docs.aws.amazon.com/connect/latest/adminguide/notifications.html)  | arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/notification/${NotificationId} | [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_) |
 |  [phone-number](https://docs.aws.amazon.com/connect/latest/adminguide/ag-overview-numbers.html)  | arn:${Partition}:connect:${Region}:${Account}:phone-number/${PhoneNumberId} | [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_) |
 |  [prompt](https://docs.aws.amazon.com/connect/latest/adminguide/prompts.html)  | arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/prompt/${PromptId} | [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_) |
 |  [qualified-aws-managed-view](https://docs.aws.amazon.com/connect/latest/adminguide/view-resources-sg.html)  | arn:${Partition}:connect:${Region}:aws:view/${ViewId}:${ViewQualifier} |   |
 |  [qualified-customer-managed-view](https://docs.aws.amazon.com/connect/latest/adminguide/view-resources-sg.html)  | arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/view/${ViewId}:${ViewQualifier} | [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_) |
+|  [qualified-metric](https://docs.aws.amazon.com/connect/latest/adminguide/custom-metrics-topic.html)  | arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/metric/${MetricId}:${MetricQualifier} | [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_) |
 |  [queue](https://docs.aws.amazon.com/connect/latest/adminguide/create-queue.html)  | arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/queue/${QueueId} | [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_) |
 |  [quick-connect](https://docs.aws.amazon.com/connect/latest/adminguide/quick-connects.html)  | arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/transfer-destination/${QuickConnectId} | [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_) |
 |  [routing-profile](https://docs.aws.amazon.com/connect/latest/adminguide/routing-profiles.html)  | arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/routing-profile/${RoutingProfileId} | [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_) |

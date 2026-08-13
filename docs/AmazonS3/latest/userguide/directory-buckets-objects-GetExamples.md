@@ -89,4 +89,4 @@ The following `get-object` example command shows how you can use the AWS CLI to 
 aws s3api get-object --bucket {{bucket-base-name}}--{{zone-id}}--x-s3 --key {{KEY_NAME}} {{LOCAL_FILE_NAME}}
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object.html) in the *AWS CLI Command Reference*.
+For more information, see [get-object](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object.html) in the *AWS CLI Command Reference*.

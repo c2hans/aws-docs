@@ -55,7 +55,7 @@ You can monitor query execution plans in your Aurora PostgreSQL DB instance to d
 
 You can monitor [CloudWatch Database Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Database-Insights-Database-Instance-Dashboard.html) for Parallel Query related wait events. To learn more about Parallel Query related wait events, go through [IPC:parallel wait events](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/apg-ipc-parallel.html)
 
-From PostgreSQL version 18, you can monitor parallel worker activity using new columns in [https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-DATABASE-VIEW](https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-DATABASE-VIEW) and [https://www.postgresql.org/docs/current/pgstatstatements.html](https://www.postgresql.org/docs/current/pgstatstatements.html):
+From PostgreSQL version 18, you can monitor parallel worker activity using new columns in [`pg_stat_database`](https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-DATABASE-VIEW) and [`pg_stat_statements`](https://www.postgresql.org/docs/current/pgstatstatements.html):
 + `parallel_workers_to_launch`: Number of parallel workers planned to be launched
 + `parallel_workers_launched`: Number of parallel workers actually launched
 

@@ -5,30 +5,30 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/managing-targ
 # Using templated targets in EventBridge Scheduler
 <a name="managing-targets-templated"></a>
 
- *Templated targets* are a set of common API operations across a group of core AWS services, such as Amazon SQS, Lambda, and Step Functions. For example, you can target Lambda's [https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke) operation by providing the function ARN, or Amazon SQS's [https://docs.aws.amazon.com/](https://docs.aws.amazon.com/) operation using the queue ARN. To configure a templated target, you must also grant permissions to the schedule's execution role to perform the targeted API operation.
+ *Templated targets* are a set of common API operations across a group of core AWS services, such as Amazon SQS, Lambda, and Step Functions. For example, you can target Lambda's [`Invoke`](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke) operation by providing the function ARN, or Amazon SQS's [`SendMessage`](https://docs.aws.amazon.com/) operation using the queue ARN. To configure a templated target, you must also grant permissions to the schedule's execution role to perform the targeted API operation.
 
  To configure a templated target programatically using the AWS CLI or one of the EventBridge Scheduler SDKs, you need to specify the ARN of the execution role, the ARN for target resource, an optional input that you want EventBridge Scheduler to deliver to the target, and for some templated targets, a unique set of parameters with additional configuration options for that target. When you specify the ARN for a templated target resource, EventBridge Scheduler automatically assumes that you want to call the supported API operation for that service. If you want EventBridge Scheduler to target a different API operation for the service, you must configure the target as a [universal target](managing-targets-universal.md).
 
  The following is a complete list of all templated targets that EventBridge Scheduler supports, and if applicable, each target's unique set of associated parameters. Choose the link for each parameter set to see the required, and optional, fields in the *EventBridge Scheduler API Reference*.
-+ **CodeBuild** – [https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StartBuild.html](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StartBuild.html)
-+ **CodePipeline** – [https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_StartPipelineExecution.html](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_StartPipelineExecution.html)
-+ **Amazon ECS** – [https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTask.html](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTask.html)
-  + Parameters: [https://docs.aws.amazon.com/scheduler/latest/APIReference/API_EcsParameters.html](https://docs.aws.amazon.com/scheduler/latest/APIReference/API_EcsParameters.html)
-+ **EventBridge** – [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html)
-  + Parameters: [https://docs.aws.amazon.com/scheduler/latest/APIReference/API_EventBridgeParameters.html](https://docs.aws.amazon.com/scheduler/latest/APIReference/API_EventBridgeParameters.html)
++ **CodeBuild** – [`StartBuild`](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StartBuild.html)
++ **CodePipeline** – [`StartPipelineExecution`](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_StartPipelineExecution.html)
++ **Amazon ECS** – [`RunTask`](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTask.html)
+  + Parameters: [`EcsParameters`](https://docs.aws.amazon.com/scheduler/latest/APIReference/API_EcsParameters.html)
++ **EventBridge** – [`PutEvents`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html)
+  + Parameters: [`EventBridgeParameters`](https://docs.aws.amazon.com/scheduler/latest/APIReference/API_EventBridgeParameters.html)
 **Important**
 EventBridge Scheduler does not support cross-Region delivery when using EventBridge `PutEvents` as a templated target. You can use this target to send events to an event bus in a different AWS account only if the event bus is in the same AWS Region as the schedule. To send events to an event bus in a different Region, create a schedule in the Region where the target event bus is located.
-+ **Amazon Inspector** – [https://docs.aws.amazon.com/inspector/v1/APIReference/API_StartAssessmentRun.html](https://docs.aws.amazon.com/inspector/v1/APIReference/API_StartAssessmentRun.html)
-+ **Kinesis** – [https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecord.html](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecord.html)
-  + Parameters: [https://docs.aws.amazon.com/scheduler/latest/APIReference/API_KinesisParameters.html](https://docs.aws.amazon.com/scheduler/latest/APIReference/API_KinesisParameters.html)
-+ **Firehose** – [https://docs.aws.amazon.com/firehose/latest/APIReference/API_PutRecord.html](https://docs.aws.amazon.com/firehose/latest/APIReference/API_PutRecord.html)
-+ **Lambda** – [https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html)
-+ **SageMaker AI** – [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartPipelineExecution.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartPipelineExecution.html)
-  + Parameters: [https://docs.aws.amazon.com/scheduler/latest/APIReference/API_SageMakerPipelineParameters.html](https://docs.aws.amazon.com/scheduler/latest/APIReference/API_SageMakerPipelineParameters.html)
-+ **Amazon SNS** – [https://docs.aws.amazon.com/sns/latest/api/API_Publish.html](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html)
-+ **Amazon SQS** – [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html)
-  + Parameters: [https://docs.aws.amazon.com/scheduler/latest/APIReference/API_SqsParameters.html](https://docs.aws.amazon.com/scheduler/latest/APIReference/API_SqsParameters.html)
-+ **Step Functions** – [https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartExecution.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartExecution.html)
++ **Amazon Inspector** – [`StartAssessmentRun`](https://docs.aws.amazon.com/inspector/v1/APIReference/API_StartAssessmentRun.html)
++ **Kinesis** – [`PutRecord`](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecord.html)
+  + Parameters: [`KinesisParameters`](https://docs.aws.amazon.com/scheduler/latest/APIReference/API_KinesisParameters.html)
++ **Firehose** – [`PutRecord`](https://docs.aws.amazon.com/firehose/latest/APIReference/API_PutRecord.html)
++ **Lambda** – [`Invoke`](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html)
++ **SageMaker AI** – [`StartPipelineExecution`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartPipelineExecution.html)
+  + Parameters: [`SageMakerPipelineParameters`](https://docs.aws.amazon.com/scheduler/latest/APIReference/API_SageMakerPipelineParameters.html)
++ **Amazon SNS** – [`Publish`](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html)
++ **Amazon SQS** – [`SendMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html)
+  + Parameters: [`SqsParameters`](https://docs.aws.amazon.com/scheduler/latest/APIReference/API_SqsParameters.html)
++ **Step Functions** – [`StartExecution`](https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartExecution.html)
 
  Use the following examples to learn how to configure different templated targets, and the required IAM permissions for each described target.
 

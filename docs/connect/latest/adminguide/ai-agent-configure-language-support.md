@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ai-agent-confi
 # Set languages
 <a name="ai-agent-configure-language-support"></a>
 
-Agents can ask for assistance in the [language](supported-languages.md#supported-languages-contact-lens) of your choice when you set the locale on Connect AI agents. Connect AI agents then provide answers and recommended step-by-step guides in that language.
+Agents can ask for assistance in the [language](supported-languages.md#supported-languages-contact-lens) of your choice when you set the locale on AI agents. AI agents then provide answers and recommended step-by-step guides in that language.
 
 **To set the locale**
 
@@ -34,7 +34,7 @@ Use the following sample AWS CLI command to set the locale of a **Manual search*
 ## Supported locale codes
 <a name="supported-locale-codes-q"></a>
 
-Connect AI agents support the following locales for agent assistance:
+AI agents support the following locales for agent assistance:
 +  Afrikaans (South Africa) / af\_ZA
 +  Arabic (General) / ar
 +  Arabic (United Arab Emirates, Gulf) / ar\_AE

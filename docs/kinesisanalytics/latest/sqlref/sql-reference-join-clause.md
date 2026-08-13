@@ -138,7 +138,7 @@ INSERT INTO "OUTPUT_STREAM"
 
 <table>
 <thead>
-  <tr><th colspan="2">ORDERS\_STREAM</th><th colspan="2">SHIPMENTS\_STREAM</th><th colspan="4">OUTPUT\_STREAM</th></tr>
+  <tr><th colspan="2">ORDERS_STREAM</th><th colspan="2">SHIPMENTS_STREAM</th><th colspan="4">OUTPUT_STREAM</th></tr>
 </thead>
 <tbody>
   <tr><td>ROWTIME</td><td>orderid</td><td>ROWTIME</td><td>orderid</td><td>resultrowtime</td><td>orderid</td><td>shipmenttime</td><td>OrderTime</td></tr>
@@ -147,7 +147,7 @@ INSERT INTO "OUTPUT_STREAM"
   <tr><td>10:00:30</td><td>103</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
   <tr><td>10:00:40</td><td>104</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
   <tr><td></td><td></td><td>10:00:45</td><td>104</td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>10:00:45</td><td>100\*</td><td></td><td></td><td>10:00:45</td><td>104</td><td>10:00:45</td><td>10:00:40</td></tr>
+  <tr><td>10:00:45</td><td>100*</td><td></td><td></td><td>10:00:45</td><td>104</td><td>10:00:45</td><td>10:00:40</td></tr>
   <tr><td></td><td></td><td>10:00:50</td><td>105</td><td></td><td></td><td></td><td></td></tr>
 </tbody>
 </table>
@@ -197,7 +197,7 @@ CREATE OR REPLACE PUMP "OUTPUT_STREAM_PUMP" AS INSERT INTO "OUTPUT_STREAM"
 
 <table>
 <thead>
-  <tr><th colspan="2">ORDERS\_STREAM</th><th colspan="2">SHIPMENTS\_STREAM</th><th colspan="4">OUTPUT\_STREAM</th></tr>
+  <tr><th colspan="2">ORDERS_STREAM</th><th colspan="2">SHIPMENTS_STREAM</th><th colspan="4">OUTPUT_STREAM</th></tr>
 </thead>
 <tbody>
   <tr><td>ROWTIME</td><td>orderid</td><td>ROWTIME</td><td>orderid</td><td>resultrowtime</td><td>orderid</td><td>shipmenttime</td><td>OrderTime</td></tr>
@@ -206,7 +206,7 @@ CREATE OR REPLACE PUMP "OUTPUT_STREAM_PUMP" AS INSERT INTO "OUTPUT_STREAM"
   <tr><td>10:00:30</td><td>103</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
   <tr><td>10:00:40</td><td>104</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
   <tr><td></td><td></td><td>10:00:45</td><td>104</td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>10:00:45</td><td>100\*</td><td></td><td></td><td>10:00:45</td><td>104</td><td>10:00:45</td><td>10:00:40</td></tr>
+  <tr><td>10:00:45</td><td>100*</td><td></td><td></td><td>10:00:45</td><td>104</td><td>10:00:45</td><td>10:00:40</td></tr>
   <tr><td></td><td></td><td></td><td></td><td>10:00:45</td><td>100</td><td>10:00:00</td><td>10:00:45</td></tr>
   <tr><td></td><td></td><td>10:00:50</td><td>105</td><td></td><td></td><td></td><td></td></tr>
 </tbody>
@@ -256,7 +256,7 @@ CREATE OR REPLACE PUMP "OUTPUT_STREAM_PUMP" AS INSERT INTO "OUTPUT_STREAM"
 
 <table>
 <thead>
-  <tr><th colspan="2">ORDERS\_STREAM</th><th colspan="2">SHIPMENTS\_STREAM</th><th colspan="3">OUTPUT\_STREAM</th></tr>
+  <tr><th colspan="2">ORDERS_STREAM</th><th colspan="2">SHIPMENTS_STREAM</th><th colspan="3">OUTPUT_STREAM</th></tr>
 </thead>
 <tbody>
   <tr><td>ROWTIME</td><td>orderid</td><td>ROWTIME</td><td>orderid</td><td>resultrowtime</td><td>orderid</td><td>OrderTime</td></tr>
@@ -266,7 +266,7 @@ CREATE OR REPLACE PUMP "OUTPUT_STREAM_PUMP" AS INSERT INTO "OUTPUT_STREAM"
   <tr><td>10:00:30</td><td>103</td><td></td><td></td><td></td><td></td><td></td></tr>
   <tr><td>10:00:40</td><td>104</td><td></td><td></td><td></td><td></td><td></td></tr>
   <tr><td></td><td></td><td>10:00:45</td><td>104</td><td></td><td></td><td></td></tr>
-  <tr><td>10:00:45</td><td>100\*</td><td></td><td></td><td>10:00:45</td><td>104</td><td>10:00:40</td></tr>
+  <tr><td>10:00:45</td><td>100*</td><td></td><td></td><td>10:00:45</td><td>104</td><td>10:00:40</td></tr>
   <tr><td></td><td></td><td>10:00:50</td><td>105</td><td></td><td></td><td></td></tr>
   <tr><td></td><td></td><td></td><td></td><td>10:00:50</td><td>105</td><td>null</td></tr>
 </tbody>
@@ -315,7 +315,7 @@ CREATE OR REPLACE PUMP "OUTPUT_STREAM_PUMP" AS INSERT INTO "OUTPUT_STREAM"
 
 <table>
 <thead>
-  <tr><th colspan="2">ORDERS\_STREAM</th><th colspan="2">SHIPMENTS\_STREAM</th><th colspan="4">OUTPUT\_STREAM</th></tr>
+  <tr><th colspan="2">ORDERS_STREAM</th><th colspan="2">SHIPMENTS_STREAM</th><th colspan="4">OUTPUT_STREAM</th></tr>
 </thead>
 <tbody>
   <tr><td>ROWTIME</td><td>orderid</td><td>ROWTIME</td><td>orderid</td><td>resultrowtime</td><td>orderid</td><td>shipmenttime</td><td>OrderTime</td></tr>
@@ -324,7 +324,7 @@ CREATE OR REPLACE PUMP "OUTPUT_STREAM_PUMP" AS INSERT INTO "OUTPUT_STREAM"
   <tr><td>10:00:30</td><td>103</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
   <tr><td>10:00:40</td><td>104</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
   <tr><td></td><td></td><td>10:00:45</td><td>104</td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>10:00:45</td><td>100\*</td><td></td><td></td><td>10:00:45</td><td>104</td><td>10:00:40</td><td>10:00:45</td></tr>
+  <tr><td>10:00:45</td><td>100*</td><td></td><td></td><td>10:00:45</td><td>104</td><td>10:00:40</td><td>10:00:45</td></tr>
   <tr><td></td><td></td><td></td><td></td><td>10:00:45</td><td>100</td><td>10:00:45</td><td>10:00:00</td></tr>
   <tr><td></td><td></td><td>10:00:50</td><td>105</td><td></td><td></td><td></td><td></td></tr>
   <tr><td> </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
@@ -376,7 +376,7 @@ CREATE OR REPLACE PUMP "OUTPUT_STREAM_PUMP" AS INSERT INTO "OUTPUT_STREAM"
 
 <table>
 <thead>
-  <tr><th colspan="2">ORDERS\_STREAM</th><th colspan="2">SHIPMENTS\_STREAM</th><th colspan="3">OUTPUT\_STREAM</th></tr>
+  <tr><th colspan="2">ORDERS_STREAM</th><th colspan="2">SHIPMENTS_STREAM</th><th colspan="3">OUTPUT_STREAM</th></tr>
 </thead>
 <tbody>
   <tr><td>ROWTIME</td><td>orderid</td><td>ROWTIME</td><td>orderid</td><td>resultrowtime</td><td>orderid</td><td>OrderTime</td></tr>
@@ -385,7 +385,7 @@ CREATE OR REPLACE PUMP "OUTPUT_STREAM_PUMP" AS INSERT INTO "OUTPUT_STREAM"
   <tr><td>10:00:30</td><td>103</td><td></td><td></td><td></td><td></td><td></td></tr>
   <tr><td>10:00:40</td><td>104</td><td></td><td></td><td></td><td></td><td></td></tr>
   <tr><td></td><td></td><td>10:00:45</td><td>104</td><td></td><td></td><td></td></tr>
-  <tr><td>10:00:45</td><td>100\*</td><td></td><td></td><td>10:00:45</td><td>104</td><td>10:00:40</td></tr>
+  <tr><td>10:00:45</td><td>100*</td><td></td><td></td><td>10:00:45</td><td>104</td><td>10:00:40</td></tr>
   <tr><td></td><td></td><td>10:00:50</td><td>105</td><td></td><td></td><td></td></tr>
   <tr><td> </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
   <tr><td></td><td></td><td></td><td></td><td>10:01:00</td><td>101</td><td>10:00:00</td></tr>
@@ -439,7 +439,7 @@ CREATE OR REPLACE PUMP "OUTPUT_STREAM_PUMP" AS INSERT INTO "OUTPUT_STREAM"
 
 <table>
 <thead>
-  <tr><th colspan="2">ORDERS\_STREAM</th><th colspan="2">SHIPMENTS\_STREAM</th><th colspan="4">OUTPUT\_STREAM</th></tr>
+  <tr><th colspan="2">ORDERS_STREAM</th><th colspan="2">SHIPMENTS_STREAM</th><th colspan="4">OUTPUT_STREAM</th></tr>
 </thead>
 <tbody>
   <tr><td>ROWTIME</td><td>orderid</td><td>ROWTIME</td><td>orderid</td><td>resultrowtime</td><td>orderid</td><td>shipmenttime</td><td>OrderTime</td></tr>
@@ -448,7 +448,7 @@ CREATE OR REPLACE PUMP "OUTPUT_STREAM_PUMP" AS INSERT INTO "OUTPUT_STREAM"
   <tr><td>10:00:30</td><td>103</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
   <tr><td>10:00:40</td><td>104</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
   <tr><td></td><td></td><td>10:00:45</td><td>104</td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>10:00:45</td><td>100\*</td><td></td><td></td><td>10:00:45</td><td>104</td><td>10:00:40</td><td>10:00:45</td></tr>
+  <tr><td>10:00:45</td><td>100*</td><td></td><td></td><td>10:00:45</td><td>104</td><td>10:00:40</td><td>10:00:45</td></tr>
   <tr><td></td><td></td><td>10:00:50</td><td>105</td><td>10:00:45</td><td>100</td><td>10:00:00</td><td>10:00:45</td></tr>
   <tr><td> </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
   <tr><td></td><td></td><td></td><td></td><td>10:01:00</td><td>101</td><td>null</td><td>10:00:00</td></tr>

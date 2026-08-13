@@ -110,7 +110,7 @@ You can also define your backup plan in a JSON document and provide it using the
 }
 ```
 
-You can store your JSON document with a name you choose. The following CLI command shows [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-backup-plan.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-backup-plan.html) with a JSON named `test-backup-plan.json`:
+You can store your JSON document with a name you choose. The following CLI command shows [`create-backup-plan`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-backup-plan.html) with a JSON named `test-backup-plan.json`:
 
 ```
 aws backup create-backup-plan --cli-input-json file://{{PATH-TO-FILE}}/{{test-backup-plan}}.json

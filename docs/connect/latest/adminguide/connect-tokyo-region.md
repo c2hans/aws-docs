@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/connect-tokyo-
 # Claim phone numbers for Connect Customer in the Asia Pacific (Tokyo) Region
 <a name="connect-tokyo-region"></a>
 
-To claim a phone number for an Connect Customer instance you create in the Asia Pacific (Tokyo) Region, open an AWS support case and provide documentation that your business is located in Japan.
+To claim a phone number for a Connect Customer instance you create in the Asia Pacific (Tokyo) Region, open an AWS support case and provide documentation that your business is located in Japan.
 
 **Important**
 You must provide three pieces of required documentation. For a list of acceptable identification, see [Japan (JP)](phone-number-requirements.md#japan-requirements), in the [Region requirements for ordering and porting phone numbers in Connect Customer](phone-number-requirements.md) topic.

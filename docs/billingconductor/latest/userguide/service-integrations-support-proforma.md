@@ -12,14 +12,14 @@ The following Cloud Financial Management services and their features support pro
   <tr><th>Service and features</th><th colspan="3">Support level by AWS account type</th></tr>
 </thead>
 <tbody>
-  <tr><td></td><td>Payer (management account)</td><td>Primary account</td><td>Linked (member account)</td></tr>
-  <tr><td>AWS Cost and Usage Report</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td></td><td><i>Payer (management account)</i></td><td><i>Primary account</i></td><td><i>Linked (member account)</i></td></tr>
+  <tr><td><b>AWS Cost and Usage Report</b></td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Split cost allocation</td><td>No</td><td>No</td><td>No</td></tr>
-  <tr><td>AWS Billing</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><b>AWS Billing</b></td><td>No</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Dashboard</td><td>No</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Billing details</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Download CSV</td><td>No</td><td>No</td><td>No</td></tr>
-  <tr><td>AWS Cost Explorer</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><b>AWS Cost Explorer</b></td><td>No</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Forecasting</td><td>No</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Save reports</td><td>No</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Rightsizing recommendations</td><td>No</td><td>No</td><td>No</td></tr>
@@ -30,7 +30,7 @@ The following Cloud Financial Management services and their features support pro
   <tr><td>Reservation recommendations</td><td>No</td><td>No</td><td>No</td></tr>
   <tr><td>Reservation utilization reports</td><td>No</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Reservation coverage reports</td><td>No</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>AWS Budgets </td><td>No</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><b>AWS Budgets</b> </td><td>No</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Budget reports</td><td>No</td><td>Yes</td><td>Yes</td></tr>
 </tbody>
 </table>

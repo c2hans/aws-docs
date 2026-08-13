@@ -9,8 +9,6 @@ Metrics pipeline processors transform OTel metric datapoints during ingestion. A
 
 Processors use OTTL path expressions to target attributes at different scopes:
 
-**OTTL path scopes**
-
 | Path | Scope | Example |
 | --- | --- | --- |
 | `resource.attributes["key"]` | Resource-level | `resource.attributes["service.name"]` |
@@ -136,7 +134,7 @@ New metric name.
 ## substitute\_attribute\_values processor
 <a name="substitute-attribute-values-processor"></a>
 
-Maps attribute values via a lookup table. **Does not apply to cumulative metrics or vended metrics.**
+Maps attribute values by using a lookup table. **Does not apply to cumulative metrics or vended metrics.**
 
 **OTTL equivalent:** `replace_match()`
 

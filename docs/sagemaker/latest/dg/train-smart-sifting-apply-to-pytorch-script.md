@@ -158,7 +158,7 @@ This is also shown in the following code example.
 
 1. Wrap the PyTroch data loader by the SageMaker AI `SiftingDataloader` class.
 
-   Finally, use all the SageMaker smart sifting implemented classes you configured in the previous steps to the SageMaker AI `SiftingDataloder` configuration class. This class is a wrapper for PyTorch [https://pytorch.org/docs/stable/data.html#torch.utils.data.DataLoader](https://pytorch.org/docs/stable/data.html#torch.utils.data.DataLoader). By wrapping PyTorch `DataLoader`, SageMaker smart sifting is registered to run as part of data loading in each iteration of a PyTorch training job. The following code example demonstrates implementing SageMaker AI data sifting to a PyTorch `DataLoader`.
+   Finally, use all the SageMaker smart sifting implemented classes you configured in the previous steps to the SageMaker AI `SiftingDataloder` configuration class. This class is a wrapper for PyTorch [`DataLoader`](https://pytorch.org/docs/stable/data.html#torch.utils.data.DataLoader). By wrapping PyTorch `DataLoader`, SageMaker smart sifting is registered to run as part of data loading in each iteration of a PyTorch training job. The following code example demonstrates implementing SageMaker AI data sifting to a PyTorch `DataLoader`.
 
    ```
    from smart_sifting.dataloader.sift_dataloader import SiftingDataloader

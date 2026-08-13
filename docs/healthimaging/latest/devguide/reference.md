@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/reference.
 <a name="reference"></a>
 
 **Note**
-All native HealthImaging API actions and data types are described in the [https://docs.aws.amazon.com/healthimaging/latest/APIReference/](https://docs.aws.amazon.com/healthimaging/latest/APIReference/).
+All native HealthImaging API actions and data types are described in the [*AWS HealthImaging API Reference*](https://docs.aws.amazon.com/healthimaging/latest/APIReference/).
 
 **Topics**
 + [DICOM support for AWS HealthImaging](reference-dicom.md)

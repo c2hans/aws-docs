@@ -14,16 +14,27 @@ This release provides new Windows Server platform versions for AWS Elastic Beans
 
 The following table lists the changes included in this release. Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Details** |
-| --- | --- |
-| **Windows security updates** | Applied December 2019 security updates for Windows.<br />See Microsoft's [Security TechCenter](https://portal.msrc.microsoft.com/en-us/) and [Security Advisories and Bulletins](https://technet.microsoft.com/en-us/library/security/). |
-| **AWS component updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-12-23-windows.html)  |
-| **Instance types** | Starting with today's Windows Server platform update, *we will no longer announce added Amazon EC2 instance types*. Any new platform version will support all instance types available at the time of the platform version's release.<br />For a list of available instance types per AWS Region, see [Amazon EC2 Pricing](https://aws.amazon.com/ec2/pricing/on-demand/) and [Amazon EC2 Spot Instances Pricing](https://aws.amazon.com/ec2/spot/pricing/). |
-| **AWS SDK for .NET** | Updated the SDK to version 3.15.903. |
-| **AMI** | Updated the base AMI to version 2019.12.16. |
-| **CloudWatch agent** | Updated the CloudWatch agent to version 1.232905.0. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows security updates</b></td><td>Applied December 2019 security updates for Windows.<br />See Microsoft's <a href="https://portal.msrc.microsoft.com/en-us/">Security TechCenter</a> and <a href="https://technet.microsoft.com/en-us/library/security/">Security Advisories and Bulletins</a>.</td></tr>
+  <tr><td><b>AWS component updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AWS SDK for .NET</b></td><td>Updated the SDK to version 3.15.903.</td></tr>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version 2019.12.16.</td></tr>
+  <tr><td><b>CloudWatch agent</b></td><td>Updated the CloudWatch agent to version 1.232905.0.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+  <tr><td><b>Instance types</b></td><td>Starting with today's Windows Server platform update, <i>we will no longer announce added Amazon EC2 instance types</i>. Any new platform version will support all instance types available at the time of the platform version's release.<br />For a list of available instance types per AWS Region, see <a href="https://aws.amazon.com/ec2/pricing/on-demand/">Amazon EC2 Pricing</a> and <a href="https://aws.amazon.com/ec2/spot/pricing/">Amazon EC2 Spot Instances Pricing</a>.</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2019-12-23-windows.platforms"></a>

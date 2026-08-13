@@ -56,4 +56,4 @@ DynamoDB has a [DynamoDB zero-ETL integration with ](OpenSearchIngestionForDynam
 + Follow best practices on scaling your destination OpenSearch Service indexes. If your indexes are under-scaled, it will slow down ingestion from DynamoDB, and might cause delays.
 
 **Note**
-[https://docs.aws.amazon.com/redshift/latest/dg/r_GREATEST_LEAST.html](https://docs.aws.amazon.com/redshift/latest/dg/r_GREATEST_LEAST.html) is a SQL function that, given a set of arguments, returns the argument with the greatest value.
+[`GREATEST`](https://docs.aws.amazon.com/redshift/latest/dg/r_GREATEST_LEAST.html) is a SQL function that, given a set of arguments, returns the argument with the greatest value.

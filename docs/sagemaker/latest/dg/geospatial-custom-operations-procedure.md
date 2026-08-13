@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/geospatial-custom-op
 **Note**
 Amazon SageMaker geospatial capabilities is no longer open to new customers. Offboard any previously saved jobs to Amazon S3 by using the [ExportEarthObservationJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_ExportEarthObservationJob.html) and [ExportVectorEnrichmentJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_ExportVectorEnrichmentJob.html) API operations.
 
-The following code samples show you how to calculate the normalized difference vegetation index of a specific geographical area using the purpose-built geospatial image within a Studio Classic notebook and run a large-scale workload with Amazon SageMaker Processing using [https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) from the SageMaker AI Python SDK.
+The following code samples show you how to calculate the normalized difference vegetation index of a specific geographical area using the purpose-built geospatial image within a Studio Classic notebook and run a large-scale workload with Amazon SageMaker Processing using [`ProcessingJob`](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) from the SageMaker AI Python SDK.
 
 This demo also uses an Amazon SageMaker Studio Classic notebook instance that uses the geospatial kernel and instance type. To learn how to create a Studio Classic geospatial notebook instance, see [Create an Amazon SageMaker Studio Classic notebook using the geospatial image](geospatial-launch-notebook.md).
 
@@ -202,7 +202,7 @@ for item in items_list:
     dict_month_items[yyyymm].append(item)
 ```
 
-This code example uploads the `dict_month_items` to Amazon S3 as a JSON object using the [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/upload_file.html](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/upload_file.html) API operation:
+This code example uploads the `dict_month_items` to Amazon S3 as a JSON object using the [`.upload_file()`](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/upload_file.html) API operation:
 
 ```
 ## key_ is the yyyymm timestamp formatted above
@@ -312,7 +312,7 @@ processor = Processor(
 print('Starting processing job.')
 ```
 
-When you start your Processing job, you need to specify a [https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) object. In that object, you specify the following:
+When you start your Processing job, you need to specify a [`ProcessingInput`](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) object. In that object, you specify the following:
 + The path to the manifest file that you created in step 2, **s3\_manifest\_uri**. This is the source of the input data to the container.
 + The path to where you want the input data to be saved in the container. This must match the path that you specified in your script.
 + Use the `s3_data_type` parameter to specify the input as `"ManifestFile"`.

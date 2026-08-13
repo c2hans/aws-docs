@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/importing-fhi
 # Starting a FHIR import job
 <a name="importing-fhir-data-start"></a>
 
-Use `StartFHIRImportJob` to start a FHIR import job into a HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_StartFHIRImportJob.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_StartFHIRImportJob.html) in the *AWS HealthLake API Reference*.
+Use `StartFHIRImportJob` to start a FHIR import job into a HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`StartFHIRImportJob`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_StartFHIRImportJob.html) in the *AWS HealthLake API Reference*.
 
 **Important**
 HealthLake supports the [FHIR R4 specification](https://hl7.org/fhir/R4/index.html) for health care data exchange. If needed, you can work with an [AWS HealthLake Partner](https://aws.amazon.com/healthlake/partners/) to convert your health data to FHIR R4 format prior to import.
@@ -171,4 +171,4 @@ Can't find what you need? Request a code example using the **Provide feedback** 
 
 1. Choose **Import data**.
 **Note**
-During import, choose **Copy job ID** on the banner at the top of the page. You can use the [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DescribeFHIRImportJob.html#HealthLake-DescribeFHIRImportJob-request-JobId](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DescribeFHIRImportJob.html#HealthLake-DescribeFHIRImportJob-request-JobId) to request import job properties using the AWS CLI. For more information, see [Getting FHIR import job properties](importing-fhir-data-describe.md).
+During import, choose **Copy job ID** on the banner at the top of the page. You can use the [`JobID`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DescribeFHIRImportJob.html#HealthLake-DescribeFHIRImportJob-request-JobId) to request import job properties using the AWS CLI. For more information, see [Getting FHIR import job properties](importing-fhir-data-describe.md).

@@ -7,12 +7,12 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/codecov-integ
 
 Codecov is a tool that measures the test coverage of your code. Codecov identifies which methods and statements in your code are not tested. Use the results to determine where to write tests to improve the quality of your code. Codecov is available for three of the source repositories supported by CodeBuild: GitHub, GitHub Enterprise Server, and Bitbucket. If your build project uses GitHub Enterprise Server, you must use Codecov Enterprise.
 
- When you run a build of a CodeBuild project that is integrated with Codecov, Codecov reports that analyzes code in your repository are uploaded to Codecov. The build logs include a link to the reports. This sample shows you how to integrate a Python and a Java build project with Codecov. For a list of languages supported by Codecov, see [Codecov supported languages](https://docs.codecov.io/docs/supported-languages) on the Codecov website.
+ When you run a build of a CodeBuild project that is integrated with Codecov, Codecov reports that analyze code in your repository are uploaded to Codecov. The build logs include a link to the reports. This sample shows you how to integrate a Python and a Java build project with Codecov. For a list of languages supported by Codecov, see [Codecov supported languages](https://docs.codecov.io/docs/supported-languages) on the Codecov website.
 
 ## Integrate Codecov into a build project
 <a name="integrate-codecov"></a>
 
-Use the following procedure to integration Codecov into a build project.
+Use the following procedure to integrate Codecov into a build project.
 
 **To integrate Codecov with your build project**
 

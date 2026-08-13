@@ -32,7 +32,7 @@ Not all IDE extensions are compatible with remote development. Extensions that r
 ## Key concepts
 <a name="remote-access-key-concepts"></a>
 + **Remote connection** — A secure tunnel between your Remote IDE and a SageMaker space. This connection enables interactive development and code execution using SageMaker AI compute resources.
-+ [https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-spaces.html](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-spaces.html) — A dedicated environment within Amazon SageMaker Studio where you can manage your storage and resources for your Studio applications.
++ [**Amazon SageMaker Studio space**](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-spaces.html) — A dedicated environment within Amazon SageMaker Studio where you can manage your storage and resources for your Studio applications.
 + **Deep link** — A button (direct URL) from the SageMaker UI that initiates a remote connection to your local IDE.
 
 ## Connection methods
@@ -40,7 +40,7 @@ Not all IDE extensions are compatible with remote development. Extensions that r
 
 There are three main ways to connect your Remote IDE to SageMaker spaces:
 + **Deep link access** — You can connect directly to a specific space by using the **Open space with** button available in SageMaker AI. This uses URL patterns to establish a remote connection and open your SageMaker space in your Remote IDE.
-+ [https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/welcome.html](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/welcome.html) — You can authenticate with AWS Toolkit for Visual Studio Code. This allows you to connect to spaces and open a remotely connected window from your Remote IDE.
++ [**AWS Toolkit for Visual Studio Code**](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/welcome.html) — You can authenticate with AWS Toolkit for Visual Studio Code. This allows you to connect to spaces and open a remotely connected window from your Remote IDE.
 + **SSH terminal connection** — You can connect via command line using SSH configuration.
 
 ## Supported IDEs

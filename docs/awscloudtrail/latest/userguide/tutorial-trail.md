@@ -39,7 +39,7 @@ The name of your Amazon S3 bucket must be globally unique. For more information,
 
 1. (Optional) In **Tags**, you can add up to 50 tag key pairs to help you identify, sort, and control access to your trail. Tags can help you identify your CloudTrail trails and other resources, such as the Amazon S3 buckets that contain CloudTrail log files. For example, you could attach a tag with the name **Compliance** and the value **Auditing**.
 **Note**
-Though you can add tags to trails when you create them in the CloudTrail console, and you can create an Amazon S3 bucket to store your log files in the CloudTrail console, you cannot add tags to the Amazon S3 bucket from the CloudTrail console. For more information about viewing and changing the properties of an Amazon S3 bucket, including adding tags to a bucket, see the [https://docs.aws.amazon.com/AmazonS3/latest/userguide/view-bucket-properties.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/view-bucket-properties.html).
+Though you can add tags to trails when you create them in the CloudTrail console, and you can create an Amazon S3 bucket to store your log files in the CloudTrail console, you cannot add tags to the Amazon S3 bucket from the CloudTrail console. For more information about viewing and changing the properties of an Amazon S3 bucket, including adding tags to a bucket, see the [*Amazon S3 User Guide*](https://docs.aws.amazon.com/AmazonS3/latest/userguide/view-bucket-properties.html).
 
    When you are finished creating tags, choose **Next**.
 

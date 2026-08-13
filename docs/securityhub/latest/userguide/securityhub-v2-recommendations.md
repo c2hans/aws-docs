@@ -5,10 +5,10 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 # Security Hub recommendations
 <a name="securityhub-v2-recommendations"></a>
 
- The following security services in AWS send findings to Security Hub in the OCSF format. After you enable Security Hub, we recommend enabling these AWS services for additional security.
+ The following security services in AWS send findings to Security Hub in the OCSF format. After you enable Security Hub, enable these AWS services for additional security.
 
 **Security Hub CSPM**
- When you [enable Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-settingup.html), you get a comprehensive view of your security state in AWS. This helps you assess your environment against security industry standards and best practices. Although you can get started with Security Hub without enabling Security Hub CSPM, we recommend enabling Security Hub CSPM because Security Hub correlates security signals from Security Hub CSPM to improve your posture management.
+ When you [enable Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-settingup.html), you get a comprehensive view of your security state in AWS. This helps you assess your environment against security industry standards and best practices. Although you can get started with Security Hub without enabling Security Hub CSPM, enabling Security Hub CSPM allows Security Hub to correlate security signals from Security Hub CSPM to improve your posture management.
 
  If you [enable Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-settingup.html), we also recommend [enabling the AWS Foundational Security Best Practices standard](https://docs.aws.amazon.com/securityhub/latest/userguide/enable-standards.html) for your account. This standard consists of a set of controls that detect when your AWS accounts and resources deviate from security best practices. When you enable the AWS Foundational Security Best Practices standard for your account, AWS Security Hub CSPM automatically enables all of its controls, including controls for the following resource types:
 +  Account controls

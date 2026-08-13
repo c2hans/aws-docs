@@ -43,9 +43,9 @@ You can only enable IAM authentication if all DB instances in the DB cluster are
 ## AWS CLI
 <a name="UsingWithRDS.IAMDBAuth.Enabling.CLI"></a>
 
-To create a new DB cluster with IAM authentication by using the AWS CLI, use the [https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-cluster.html](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-cluster.html) command. Specify the `--enable-iam-database-authentication` option.
+To create a new DB cluster with IAM authentication by using the AWS CLI, use the [`create-db-cluster`](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-cluster.html) command. Specify the `--enable-iam-database-authentication` option.
 
-To update an existing DB cluster to have or not have IAM authentication, use the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-cluster.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-cluster.html). Specify either the `--enable-iam-database-authentication` or `--no-enable-iam-database-authentication` option, as appropriate.
+To update an existing DB cluster to have or not have IAM authentication, use the AWS CLI command [`modify-db-cluster`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-cluster.html). Specify either the `--enable-iam-database-authentication` or `--no-enable-iam-database-authentication` option, as appropriate.
 
 **Note**
 You can only enable IAM authentication if all DB instances in the DB cluster are compatible with IAM. Check the compatibility requirements in [Region and version availability](UsingWithRDS.IAMDBAuth.md#UsingWithRDS.IAMDBAuth.Availability).
@@ -61,15 +61,15 @@ The IAM database authentication setting defaults to that of the source snapshot.
 ## RDS API
 <a name="UsingWithRDS.IAMDBAuth.Enabling.API"></a>
 
-To create a new DB instance with IAM authentication by using the API, use the API operation [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBCluster.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBCluster.html). Set the `EnableIAMDatabaseAuthentication` parameter to `true`.
+To create a new DB instance with IAM authentication by using the API, use the API operation [`CreateDBCluster`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBCluster.html). Set the `EnableIAMDatabaseAuthentication` parameter to `true`.
 
-To update an existing DB cluster to have IAM authentication, use the API operation [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBCluster.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBCluster.html). Set the `EnableIAMDatabaseAuthentication` parameter to `true` to enable IAM authentication, or `false` to disable it.
+To update an existing DB cluster to have IAM authentication, use the API operation [`ModifyDBCluster`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBCluster.html). Set the `EnableIAMDatabaseAuthentication` parameter to `true` to enable IAM authentication, or `false` to disable it.
 
 **Note**
 You can only enable IAM authentication if all DB instances in the DB cluster are compatible with IAM. Check the compatibility requirements in [Region and version availability](UsingWithRDS.IAMDBAuth.md#UsingWithRDS.IAMDBAuth.Availability).
 
 If you are restoring a DB cluster, use one of the following API operations:
-+ [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterFromSnapshot.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterFromSnapshot.html)
-+ [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterToPointInTime.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterToPointInTime.html)
++ [`RestoreDBClusterFromSnapshot`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterFromSnapshot.html)
++ [`RestoreDBClusterToPointInTime`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterToPointInTime.html)
 
 The IAM database authentication setting defaults to that of the source snapshot. To change this setting, set the `EnableIAMDatabaseAuthentication` parameter to `true` to enable IAM authentication, or `false` to disable it.

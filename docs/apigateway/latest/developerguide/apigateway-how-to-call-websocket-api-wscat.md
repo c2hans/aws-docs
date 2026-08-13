@@ -21,7 +21,7 @@ The `[wscat](https://www.npmjs.com/package/wscat)` utility is a convenient tool 
    wscat -c wss://{{aabbccddee}}.execute-api.{{us-east-1}}.amazonaws.com/test/
    ```
 
-   You need to replace `{{aabbccddee}}` with the actual API ID, which is displayed in the API Gateway console or returned by the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/apigatewayv2/create-api.html](https://docs.aws.amazon.com/cli/latest/reference/apigatewayv2/create-api.html) command.
+   You need to replace `{{aabbccddee}}` with the actual API ID, which is displayed in the API Gateway console or returned by the AWS CLI [`create-api`](https://docs.aws.amazon.com/cli/latest/reference/apigatewayv2/create-api.html) command.
 
    In addition, if your API is in a Region other than `us-east-1`, you need to substitute the correct Region.
 

@@ -9,7 +9,7 @@ Applications that use the AWS SDK for C\+\+ must initialize it. Similarly, befor
 
 All applications that use the AWS SDK for C\+\+ must include the file `aws/core/Aws.h`.
 
-The AWS SDK for C\+\+ must be initialized by calling `Aws::InitAPI`. Before the application terminates, the SDK must be shut down by calling `Aws::ShutdownAPI`. Each method accepts an argument of [https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aws-cpp-sdk-core/html/struct_aws_1_1_s_d_k_options.html](https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aws-cpp-sdk-core/html/struct_aws_1_1_s_d_k_options.html). All other calls to the SDK can be performed between these two method calls.
+The AWS SDK for C\+\+ must be initialized by calling `Aws::InitAPI`. Before the application terminates, the SDK must be shut down by calling `Aws::ShutdownAPI`. Each method accepts an argument of [`Aws::SDKOptions`](https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aws-cpp-sdk-core/html/struct_aws_1_1_s_d_k_options.html). All other calls to the SDK can be performed between these two method calls.
 
 **All AWS SDK for C\+\+ calls performed between `Aws::InitAPI` and `Aws::ShutdownAPI` should either to be contained within a pair of curly braces or should be invoked by functions called between the two methods.**
 

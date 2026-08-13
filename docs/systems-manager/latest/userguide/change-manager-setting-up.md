@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/change-
 **Change Manager availability change**
 AWS Systems Manager Change Manager will no longer be open to new customers starting November 7, 2025. If you would like to use Change Manager, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [AWS Systems Manager Change Manager availability change](https://docs.aws.amazon.com/systems-manager/latest/userguide/change-manager-availability-change.html).
 
-You can use Change Manager, a tool in AWS Systems Manager, to manage changes for an entire organization, as configured in AWS Organizations, or for a single AWS account.
+You can use Change Manager to manage changes for an entire organization, as configured in AWS Organizations, or for a single AWS account.
 
 If you're using Change Manager with an organization, begin with the topic [Setting up Change Manager for an organization (management account)](change-manager-organization-setup.md), and then proceed to [Configuring Change Manager options and best practices](change-manager-account-setup.md).
 

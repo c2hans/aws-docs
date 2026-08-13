@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 Provides a detailed description of the definition of a dashboard.
 
 **Note**
-If you do not need to know details about the content of a dashboard, for instance if you are trying to check the status of a recently created or updated dashboard, use the [https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeDashboard.html](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeDashboard.html) instead.
+If you do not need to know details about the content of a dashboard, for instance if you are trying to check the status of a recently created or updated dashboard, use the [`DescribeDashboard`](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeDashboard.html) instead.
 
 ## Request Syntax
 <a name="API_DescribeDashboardDefinition_RequestSyntax"></a>

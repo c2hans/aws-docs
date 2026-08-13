@@ -99,7 +99,7 @@ aws ssm start-session \
     --target {{instance-id}}
 ```
 
-For information about other options you can use with the **start-session** command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html) in the AWS Systems Manager section of the AWS CLI Command Reference.
+For information about other options you can use with the **start-session** command, see [start-session](https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html) in the AWS Systems Manager section of the AWS CLI Command Reference.
 
 ## Starting a session (SSH)
 <a name="sessions-start-ssh"></a>
@@ -128,7 +128,7 @@ When you start a session using SSH, you can copy local files to the target manag
 scp -i {{/path/my-key-pair.pem /path/ExampleFile.txt username@instance-id:~}}
 ```
 
-For information about other options you can use with the **start-session** command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html) in the AWS Systems Manager section of the AWS CLI Command Reference.
+For information about other options you can use with the **start-session** command, see [start-session](https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html) in the AWS Systems Manager section of the AWS CLI Command Reference.
 
 ## Starting a session (port forwarding)
 <a name="sessions-start-port-forwarding"></a>
@@ -168,7 +168,7 @@ aws ssm start-session ^
 
 `localPortNumber` is the port on your local computer where traffic starts, such as `56789`. This value is what you enter when connecting to a managed node using a client. For example, **localhost:56789**.
 
-For information about other options you can use with the **start-session** command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html) in the AWS Systems Manager section of the AWS CLI Command Reference.
+For information about other options you can use with the **start-session** command, see [start-session](https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html) in the AWS Systems Manager section of the AWS CLI Command Reference.
 
 For more information about port forwarding sessions, see [Port Forwarding Using AWS Systems Manager Session Manager](https://aws.amazon.com/blogs/aws/new-port-forwarding-using-aws-system-manager-sessions-manager/) in the *AWS News Blog*.
 
@@ -212,7 +212,7 @@ The `host` value represents the hostname or IP address of the remote host that y
 
 `localPortNumber` is the port on your local computer where traffic starts, such as `56789`. This value is what you enter when connecting to a managed node using a client. For example, **localhost:56789**.
 
-For information about other options you can use with the **start-session** command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html) in the AWS Systems Manager section of the AWS CLI Command Reference.
+For information about other options you can use with the **start-session** command, see [start-session](https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html) in the AWS Systems Manager section of the AWS CLI Command Reference.
 
 ### Starting a session with an Amazon ECS task
 <a name="sessions-remote-port-forwarding-ecs-task"></a>
@@ -304,7 +304,7 @@ aws ssm start-session ^
 
 ------
 
-For information about other options you can use with the **start-session** command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html) in the AWS Systems Manager section of the AWS CLI Command Reference.
+For information about other options you can use with the **start-session** command, see [start-session](https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html) in the AWS Systems Manager section of the AWS CLI Command Reference.
 
  **More info**
 +  [Use port forwarding in AWS Systems Manager Session Manager to connect to remote hosts](https://aws.amazon.com/blogs/mt/use-port-forwarding-in-aws-systems-manager-session-manager-to-connect-to-remote-hosts/)

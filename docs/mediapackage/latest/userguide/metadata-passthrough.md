@@ -53,4 +53,4 @@ DASH manifests include a `<InbandEventStream schemeIdUri="urn:misb:KLV:bin:1910.
 
 **MediaLive** **configuration**
 
-You can pass through KLV metadata from your MediaLive channel. For more information, see [https://docs.aws.amazon.com/medialive/latest/apireference/channels.html#channels-prop-m2tssettings-klv](https://docs.aws.amazon.com/medialive/latest/apireference/channels.html#channels-prop-m2tssettings-klv) in the *AWS Elemental MediaLive User Guide*.
+You can pass through KLV metadata from your MediaLive channel. For more information, see [`klv`](https://docs.aws.amazon.com/medialive/latest/apireference/channels.html#channels-prop-m2tssettings-klv) in the *AWS Elemental MediaLive User Guide*.

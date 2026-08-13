@@ -15,7 +15,7 @@ At the top of the page, Jane sees that the `visits-service` is the top service b
 
 ![Service operation volume and availability.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/example-scenario-unhealthy-operation.png)
 
-In order to look closer at the dips in service availability, Jane selects one of the availability data points in the graph. A drawer opens showing X-Ray traces that are correlated to the selected data point. She sees that there are multiple traces containing faults.
+To look closer at the dips in service availability, Jane selects one of the availability data points in the graph. A drawer opens showing X-Ray traces that are correlated to the selected data point. She sees that there are multiple traces containing faults.
 
 ![Service availability and correlated traces.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/example-scenario-correlated-traces.jpg)
 
@@ -23,4 +23,4 @@ Jane selects one of the correlated traces with a fault status, which opens the X
 
 ![Trace segment with DynamoDB errors.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/example-scenario-DDB-segment.jpg)
 
-Jane sees that a DynamoDB resource is misconfigured, resulting in errors during spikes in customer requests. The DynamoDB table's level of provisioned throughput is periodically exceeded, resulting in service availability issues and unhealthy SLIs. Based on this information, her team is able to configure a higher level of provisioned throughput and ensure high availability of the application.
+Jane sees that a DynamoDB resource is misconfigured, resulting in errors during spikes in customer requests. The DynamoDB table's level of provisioned throughput is periodically exceeded, resulting in service availability issues and unhealthy SLIs. Based on this information, her team is able to configure a higher level of provisioned throughput and make sure high availability of the application.

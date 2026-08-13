@@ -15,7 +15,7 @@ Review the HTML transformation report to understand what has been done. Review t
 ## Use an AI code companion to validate, debug, and finalize your application
 <a name="dotnet-bp-use-companion"></a>
 
-Review your transformed application for correctness. Use an AI code companion such as [https://kiro.dev/](https://kiro.dev/) to resolve issues.
+Review your transformed application for correctness. Use an AI code companion such as [Kiro](https://kiro.dev/) to resolve issues.
 
 ## Validate unit tests
 <a name="dotnet-bp-validate-tests"></a>

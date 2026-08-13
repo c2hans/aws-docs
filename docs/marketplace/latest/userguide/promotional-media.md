@@ -52,7 +52,7 @@ Specifications:
 <a name="promotional-media-tips"></a>
 
 **Add media**
-+ Promotional media can be added by logging into the [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home) and either creating a new product or updating an existing product. The **Images and videos** section is used for adding promotional media and is located within the **Product information** area.
++ Promotional media can be added by logging into the [AWS Partner Central](https://us-east-1.console.aws.amazon.com/partnercentral/home) and either creating a new product or updating an existing product. The **Images and videos** section is used for adding promotional media and is located within the **Product information** area.
 + While API can also be used to add promotional media, direct upload is only supported through AMMP. Public S3 links are supported in both API and AMMP.
 + Add promotional media in the order you wish the media to display. The first item will be the featured media on the product page.
 + When image asset type is used, the optional cover image is not available. Images will have thumbnails auto-generated once added.

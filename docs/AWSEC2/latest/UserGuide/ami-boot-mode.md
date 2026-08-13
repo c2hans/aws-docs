@@ -30,7 +30,7 @@ When launching an instance using the launch instance wizard, at the step to sele
 #### [ AWS CLI ]
 
 **To determine the boot mode parameter of an AMI**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command to determine the boot mode of an AMI.
+Use the [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command to determine the boot mode of an AMI.
 
 ```
 aws ec2 describe-images \
@@ -52,7 +52,7 @@ In the output, a value of `uefi` indicates that the AMI supports UEFI. A value o
 #### [ PowerShell ]
 
 **To determine the boot mode parameter of an AMI**
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet to determine the boot mode of an AMI.
+Use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet to determine the boot mode of an AMI.
 
 ```
 Get-EC2Image -Region {{us-east-1}} `

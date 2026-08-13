@@ -475,7 +475,7 @@ aws quicksight generate-embed-url-for-registered-user \
     --experience-configuration QuickSightConsole={InitialPath="{{/start}}"}
 ```
 
-For more information about using this operation, see [https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUser.html](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUser.html). You can use this and other API operations in your own code.
+For more information about using this operation, see [GenerateEmbedUrlForRegisteredUser](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUser.html). You can use this and other API operations in your own code.
 
 ## Step 3: Embed the console session URL
 <a name="embedded-analytics-full-console-for-authenticated-users-step-3"></a>

@@ -30,7 +30,7 @@ The following table shows the availability of Amazon EventBridge features by AWS
 | Asia Pacific (Malaysia) | ✓ | ✓ |  |  |  |  |  |  |
 | Asia Pacific (Thailand) | ✓ | ✓ |  |  |  |  |  | Public ✓ |
 | Canada (Central) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓ |
-| Canada West (Calgary) | ✓ | ✓ | ✓ |  | ✓ |  |  |  |
+| Canada West (Calgary) | ✓ | ✓ |  |  | ✓ |  |  |  |
 | China (Beijing) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | Public ✓ |
 | China (Ningxia) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | Public ✓ |
 | Europe (Frankfurt) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓<br />Private ✓ |
@@ -41,7 +41,7 @@ The following table shows the availability of Amazon EventBridge features by AWS
 | Europe (Ireland) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓<br />Private ✓ |
 | Europe (London) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓<br />Private ✓ |
 | Europe (Paris) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓<br />Private ✓ |
-| Israel (Tel Aviv) | ✓ | ✓ | ✓ |  | ✓ |  |  |  |
+| Israel (Tel Aviv) | ✓ | ✓ |  |  | ✓ |  |  |  |
 | Middle East (UAE) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | Public ✓ |
 | Middle East (Bahrain) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | Public ✓ |
 | Mexico (Central) | ✓ | ✓ |  |  |  |  |  |  |

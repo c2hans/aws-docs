@@ -71,7 +71,7 @@ You can specify conditions in an IAM policy statement that controls access to Ne
 
 For example, you might want a policy statement to take effect only after a specific date, or allows access only when a specific value is present in the request.
 
-To express conditions, you use predefined condition keys in the [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html) element of a policy statement, together with [IAM condition policy operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html) such as equals or less than.
+To express conditions, you use predefined condition keys in the [`Condition`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html) element of a policy statement, together with [IAM condition policy operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html) such as equals or less than.
 
 If you specify multiple `Condition` elements in a statement, or multiple keys in a single `Condition` element, AWS evaluates them using a logical `AND` operation. If you specify multiple values for a single condition key, AWS evaluates the condition using a logical `OR` operation. All of the conditions must be met before the statement's permissions are granted.
 

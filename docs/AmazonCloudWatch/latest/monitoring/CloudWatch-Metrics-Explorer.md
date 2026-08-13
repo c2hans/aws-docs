@@ -16,7 +16,7 @@ Metrics explorer provides a point-in-time experience. Resources that have been t
 
 With metrics explorer, you can choose how to aggregate metrics from the resources that match the criteria, and whether to show them all in a single graph or on different graphs within one metrics explorer widget.
 
-Metrics explorer includes templates that you can use to see useful visualization graphs with one click, and you can also extend these templates to create completely customized metrics explorer widgets.
+Metrics explorer includes templates that you can use to see useful visualization graphs with a single selection, and you can also extend these templates to create completely customized metrics explorer widgets.
 
 You can use metrics explorer across accounts if you are using the [Cross-account cross-Region CloudWatch console](Cross-Account-Cross-Region.md). However, metrics explorer is not supported for cross-account use from a monitoring account in [CloudWatch cross-account observability](CloudWatch-Unified-Cross-Account.md).
 

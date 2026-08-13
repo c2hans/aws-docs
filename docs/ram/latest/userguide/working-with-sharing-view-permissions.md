@@ -61,7 +61,7 @@ You can view details about managed permissions that are available to assign to r
 #### [ AWS CLI ]
 
 **To view details about managed permissions available in AWS RAM**
-You can use the [https://docs.aws.amazon.com/cli/latest/reference/ram/list-permissions.html](https://docs.aws.amazon.com/cli/latest/reference/ram/list-permissions.html) command to get a list of the managed permissions available to use on resource shares in the current AWS Region for the calling account.
+You can use the [list-permissions](https://docs.aws.amazon.com/cli/latest/reference/ram/list-permissions.html) command to get a list of the managed permissions available to use on resource shares in the current AWS Region for the calling account.
 
 ```
 $ aws ram list-permissions
@@ -130,7 +130,7 @@ $ aws ram list-permissions \
 arn:aws:ram:us-east-1:123456789012:permission/My-Test-CMP
 ```
 
-After you find the ARN of the specific managed permission you're interested in, you can retrieve its details, including its JSON policy text, by running the command [https://docs.aws.amazon.com/cli/latest/reference/ram/get-permission.html](https://docs.aws.amazon.com/cli/latest/reference/ram/get-permission.html).
+After you find the ARN of the specific managed permission you're interested in, you can retrieve its details, including its JSON policy text, by running the command [get-permission](https://docs.aws.amazon.com/cli/latest/reference/ram/get-permission.html).
 
 ```
 $ aws ram get-permission \

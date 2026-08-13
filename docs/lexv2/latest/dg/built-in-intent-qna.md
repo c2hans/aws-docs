@@ -115,7 +115,7 @@ You can pass the Amazon Bedrock Knowledge Base metadata filters as part of sessi
 ```
 
 **Note**
-You need to use the Amazon Bedrock Knowledge Base as the Data store for the QnAIntent to use this filter. For more information, see [https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-config.html#:~:text=Metadata%20and%20filtering](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-config.html#:~:text=Metadata%20and%20filtering)
+You need to use the Amazon Bedrock Knowledge Base as the Data store for the QnAIntent to use this filter. For more information, see [Metadata filtering](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-config.html#:~:text=Metadata%20and%20filtering)
 
 **Inference configurations**
 

@@ -17,7 +17,7 @@ The following procedures explain how to use the ONTAP CLI to enable Autonomous R
   security anti-ransomware volume enable -volume {{vol_name}} -vserver {{svm_name}}
   ```
 
-  For more information about this command, see [https://docs.netapp.com/us-en/ontap-cli/security-anti-ransomware-volume-enable.html#description](https://docs.netapp.com/us-en/ontap-cli/security-anti-ransomware-volume-enable.html#description) in the NetApp documentation center.
+  For more information about this command, see [`security anti-ransomware volume enable`](https://docs.netapp.com/us-en/ontap-cli/security-anti-ransomware-volume-enable.html#description) in the NetApp documentation center.
 
 ## Enabling ARP by default at the SVM level
 <a name="enable-ARP-default"></a>
@@ -29,7 +29,7 @@ The following procedures explain how to use the ONTAP CLI to enable Autonomous R
   vserver modify -vserver {{svm_name}} -anti-ransomware-default-volume-state dry-run
   ```
 
-  For more information about this command, see [https://docs.netapp.com/us-en/ontap-cli/vserver-modify.html#description](https://docs.netapp.com/us-en/ontap-cli/vserver-modify.html#description) in the NetApp documentation center.
+  For more information about this command, see [`vserver modify`](https://docs.netapp.com/us-en/ontap-cli/vserver-modify.html#description) in the NetApp documentation center.
 
 ## Verifying ARP's status
 <a name="verify-ARP-status"></a>
@@ -41,6 +41,6 @@ The following procedures explain how to use the ONTAP CLI to enable Autonomous R
   security anti-ransomware volume show
   ```
 
-  For more information about this command, see [https://docs.netapp.com/us-en/ontap-cli/security-anti-ransomware-volume-show.html#description](https://docs.netapp.com/us-en/ontap-cli/security-anti-ransomware-volume-show.html#description) in the NetApp documentation center.
+  For more information about this command, see [`security anti-ransomware volume show`](https://docs.netapp.com/us-en/ontap-cli/security-anti-ransomware-volume-show.html#description) in the NetApp documentation center.
 
 You can temporarily suspend (and then resume) ARP if you're anticipating heavy workload events. For more information, see [Pause ONTAP Autonomous Ransomware Protection to exclude workload events from analysis](https://docs.netapp.com/us-en/ontap/anti-ransomware/pause-task.html) in the NetApp Documentation Center.

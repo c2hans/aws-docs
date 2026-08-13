@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/state-m
 # Creating associations
 <a name="state-manager-associations-creating"></a>
 
-State Manager, a tool in AWS Systems Manager, helps you keep your AWS resources in a state that you define and reduce configuration drift. To do this, State Manager uses associations. An *association* is a configuration that you assign to your AWS resources. The configuration defines the state that you want to maintain on your resources. For example, an association can specify that antivirus software must be installed and running on a managed node, or that certain ports must be closed.
+State Manager helps you keep your AWS resources in a state that you define and reduce configuration drift. To do this, State Manager uses associations. An *association* is a configuration that you assign to your AWS resources. The configuration defines the state that you want to maintain on your resources. For example, an association can specify that antivirus software must be installed and running on a managed node, or that certain ports must be closed.
 
 An association specifies a schedule for when to apply the configuration and the targets for the association. For example, an association for antivirus software might run once a day on all managed nodes in an AWS account. If the software isn't installed on a node, then the association could instruct State Manager to install it. If the software is installed, but the service isn't running, then the association could instruct State Manager to start the service.
 
@@ -25,7 +25,7 @@ By default, State Manager runs an association immediately after you create it, a
 
 The system also runs associations according to the following rules:
 + State Manager attempts to run the association on all specified or targeted nodes during an interval.
-+ If an association doesn't run during an interval (because, for example, a concurrency value limited the number of nodes that could process the association at one time), then State Manager attempts to run the association during the next interval.
++ If an association doesn't run during an interval (for example, because a concurrency value limited the number of nodes that could process it), State Manager attempts to run the association during the next interval.
 + State Manager runs the association after changes to the association's configuration, target nodes, documents, or parameters. For more information, see [Understanding when associations are applied to resources](state-manager-about.md#state-manager-about-scheduling)
 + State Manager records history for all skipped intervals. You can view the history on the **Execution History** tab.
 
@@ -89,7 +89,7 @@ If your alarm activates, any pending command invocations or automations do not r
 
 1. For **Targets**, choose an option. For information about using targets, see [Understanding targets and rate controls in State Manager associations](systems-manager-state-manager-targets-and-rate-controls.md).
 **Note**
-In order for associations that are created with Automation runbooks to be applied when new target nodes are detected, certain conditions must be met. For information, see [About target updates with Automation runbooks](state-manager-about.md#runbook-target-updates).
+For associations that are created with Automation runbooks to be applied when new target nodes are detected, certain conditions must be met. For information, see [About target updates with Automation runbooks](state-manager-about.md#runbook-target-updates).
 
 1. In the **Specify schedule** section, choose either **On Schedule** or **No schedule**. If you choose **On Schedule**, use the buttons provided to create a cron or rate schedule for the association.
 
@@ -205,7 +205,7 @@ State Manager doesn't support running associations that use a new version of a d
 State Manager doesn't support the `TargetLocationAlarmConfiguration` parameter for [TargetLocation](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_TargetLocation.html).
 You can specify a maximum of five tag keys by using the AWS CLI. If you use the AWS CLI, *all* tag keys specified in the `create-association` command must be currently assigned to the node. If they aren't, State Manager fails to target the node for an association.
 When you create an association, you specify when the schedule runs. Specify the schedule by using a cron or rate expression. For more information about cron and rate expressions, see [Cron and rate expressions for associations](reference-cron-and-rate-expressions.md#reference-cron-and-rate-expressions-association).
-In order for associations that are created with Automation runbooks to be applied when new target nodes are detected, certain conditions must be met. For information, see [About target updates with Automation runbooks](state-manager-about.md#runbook-target-updates).
+For associations that are created with Automation runbooks to be applied when new target nodes are detected, certain conditions must be met. For information, see [About target updates with Automation runbooks](state-manager-about.md#runbook-target-updates).
 
 **To create an association**
 

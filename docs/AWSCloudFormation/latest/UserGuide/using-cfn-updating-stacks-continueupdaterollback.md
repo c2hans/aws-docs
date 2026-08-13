@@ -31,7 +31,7 @@ CloudFormation sets the status of the specified resources to `UPDATE_COMPLETE` a
    To skip resources that are part of nested stacks, use the following format: `{{NestedStackName}}.{{ResourceLogicalID}}`. If you want to specify the logical ID of a stack resource (`Type: AWS::CloudFormation::Stack`) in the `ResourcesToSkip` list, then its corresponding embedded stack must be in one of the following states: `DELETE_IN_PROGRESS`, `DELETE_COMPLETE`, or `DELETE_FAILED`.
 
 **To continue rolling back an update (AWS CLI)**
-+ Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/continue-update-rollback.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/continue-update-rollback.html) command with the `--stack-name` option to specify the ID of the stack that you want to continue to roll back.
++ Use the [continue-update-rollback](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/continue-update-rollback.html) command with the `--stack-name` option to specify the ID of the stack that you want to continue to roll back.
 
 ## Continue rolling back from failed nested stack updates
 <a name="nested-stacks"></a>

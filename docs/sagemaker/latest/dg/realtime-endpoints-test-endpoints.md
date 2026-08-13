@@ -231,7 +231,7 @@ For the `--endpoint-name` parameter, provide the endpoint name that you specifie
 
 For more information on when to use `file://` over `fileb://` when passing the contents of a file to a parameter of the AWS CLI, see [Best Practices for Local File Parameters](https://aws.amazon.com/blogs/developer/best-practices-for-local-file-parameters/).
 
-For more information, and to see additional parameters that you can pass, see [https://docs.aws.amazon.com/cli/latest/reference/sagemaker-runtime/invoke-endpoint.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker-runtime/invoke-endpoint.html) in the *AWS CLI Command Reference*.
+For more information, and to see additional parameters that you can pass, see [`invoke-endpoint`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker-runtime/invoke-endpoint.html) in the *AWS CLI Command Reference*.
 
 If the `invoke-endpoint` command succeeds it returns a response such as the following:
 

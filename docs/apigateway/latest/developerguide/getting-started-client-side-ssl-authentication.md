@@ -68,7 +68,7 @@ After a certificate is selected for the API and saved, API Gateway uses the cert
 ## Configure a backend HTTPS server to verify the client certificate
 <a name="certificate-validation"></a>
 
-These instructions assume that you already completed [Generate a client certificate using the API Gateway console](#generate-client-certificate) and downloaded a copy of the client certificate. You can download a client certificate by calling [https://docs.aws.amazon.com/apigateway/latest/api/API_GetClientCertificate.html](https://docs.aws.amazon.com/apigateway/latest/api/API_GetClientCertificate.html) of the API Gateway REST API or [https://docs.aws.amazon.com/cli/latest/reference/apigateway/get-client-certificate.html](https://docs.aws.amazon.com/cli/latest/reference/apigateway/get-client-certificate.html) of AWS CLI.
+These instructions assume that you already completed [Generate a client certificate using the API Gateway console](#generate-client-certificate) and downloaded a copy of the client certificate. You can download a client certificate by calling [`clientcertificate:by-id`](https://docs.aws.amazon.com/apigateway/latest/api/API_GetClientCertificate.html) of the API Gateway REST API or [`get-client-certificate`](https://docs.aws.amazon.com/cli/latest/reference/apigateway/get-client-certificate.html) of AWS CLI.
 
  Before configuring a backend HTTPS server to verify the client SSL certificate of API Gateway, you must have obtained the PEM-encoded private key and a server-side certificate that is provided by a trusted certificate authority.
 

@@ -11,8 +11,8 @@ The Amazon RDS Data API provides the following operations to perform SQL stateme
 
 |  Data API operation  |  AWS CLI command  |  Description  |
 | --- | --- | --- |
-| [https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_ExecuteStatement.html](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_ExecuteStatement.html) | [https://docs.aws.amazon.com/cli/latest/reference/rds-data/execute-statement.html](https://docs.aws.amazon.com/cli/latest/reference/rds-data/execute-statement.html) | Runs a SQL statement on a database. |
-| [https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_BatchExecuteStatement.html](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_BatchExecuteStatement.html) | [https://docs.aws.amazon.com/cli/latest/reference/rds-data/batch-execute-statement.html](https://docs.aws.amazon.com/cli/latest/reference/rds-data/batch-execute-statement.html) | Runs a batch SQL statement over an array of data for bulk update and insert operations. You can run a data manipulation language (DML) statement with an array of parameter sets. A batch SQL statement can provide a significant performance improvement over individual insert and update statements. |
+| [`ExecuteStatement`](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_ExecuteStatement.html) | [`aws rds-data execute-statement`](https://docs.aws.amazon.com/cli/latest/reference/rds-data/execute-statement.html) | Runs a SQL statement on a database. |
+| [`BatchExecuteStatement`](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_BatchExecuteStatement.html) | [`aws rds-data batch-execute-statement`](https://docs.aws.amazon.com/cli/latest/reference/rds-data/batch-execute-statement.html) | Runs a batch SQL statement over an array of data for bulk update and insert operations. You can run a data manipulation language (DML) statement with an array of parameter sets. A batch SQL statement can provide a significant performance improvement over individual insert and update statements. |
 
 You can use either operation to run individual SQL statements or to run transactions. For transactions, Data API provides the following operations.
 
@@ -20,9 +20,9 @@ You can use either operation to run individual SQL statements or to run transact
 
 |  Data API operation  |  AWS CLI command  |  Description  |
 | --- | --- | --- |
-| [https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_BeginTransaction.html](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_BeginTransaction.html) | [https://docs.aws.amazon.com/cli/latest/reference/rds-data/begin-transaction.html](https://docs.aws.amazon.com/cli/latest/reference/rds-data/begin-transaction.html) | Starts a SQL transaction. |
-| [https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_CommitTransaction.html](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_CommitTransaction.html) | [https://docs.aws.amazon.com/cli/latest/reference/rds-data/commit-transaction.html](https://docs.aws.amazon.com/cli/latest/reference/rds-data/commit-transaction.html) | Ends a SQL transaction and commits the changes. |
-| [https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_RollbackTransaction.html](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_RollbackTransaction.html) | [https://docs.aws.amazon.com/cli/latest/reference/rds-data/rollback-transaction.html](https://docs.aws.amazon.com/cli/latest/reference/rds-data/rollback-transaction.html) | Performs a rollback of a transaction. |
+| [`BeginTransaction`](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_BeginTransaction.html) | [`aws rds-data begin-transaction`](https://docs.aws.amazon.com/cli/latest/reference/rds-data/begin-transaction.html) | Starts a SQL transaction. |
+| [`CommitTransaction`](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_CommitTransaction.html) | [`aws rds-data commit-transaction`](https://docs.aws.amazon.com/cli/latest/reference/rds-data/commit-transaction.html) | Ends a SQL transaction and commits the changes. |
+| [`RollbackTransaction`](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_RollbackTransaction.html) | [`aws rds-data rollback-transaction`](https://docs.aws.amazon.com/cli/latest/reference/rds-data/rollback-transaction.html) | Performs a rollback of a transaction. |
 
 The operations for performing SQL statements and supporting transactions have the following common Data API parameters and AWS CLI options. Some operations support other parameters or options.
 

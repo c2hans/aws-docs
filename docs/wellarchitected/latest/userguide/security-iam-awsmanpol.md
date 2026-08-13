@@ -50,7 +50,7 @@ This policy includes the following permissions.
 + `organizations:ListParents` – Allows principals to retrieve the list of immediate parents specified by the OU or account within an organization.
 + `organizations:ListRoots` – Allows principals to retrieve the list of all root nodes within an organization.
 
-For more details about this policy, including the full JSON policy document, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedOrganizationsServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedOrganizationsServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
+For more details about this policy, including the full JSON policy document, see [AWSWellArchitectedOrganizationsServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedOrganizationsServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: AWSWellArchitectedDiscoveryServiceRolePolicy
 <a name="security-iam-awsmanpol-AWSWellArchitectedDiscoveryServiceRolePolicy"></a>
@@ -76,7 +76,7 @@ This policy includes the following permissions.
 + `servicecatalog:DisassociateAttributeGroup` –Disassociates a service-managed attribute group from an AppRegistry application.
 + `servicecatalog:DeleteAttributeGroup` – Deletes a service-managed attribute group when required.
 
-For more details about this policy, including the full JSON policy document, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedDiscoveryServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedDiscoveryServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
+For more details about this policy, including the full JSON policy document, see [AWSWellArchitectedDiscoveryServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWellArchitectedDiscoveryServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
 
 ## AWS WA Tool updates to AWS managed policies
 <a name="security-iam-awsmanpol-updates"></a>

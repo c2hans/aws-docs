@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/manage-word-collections.html
 ---
 
-# Manage word collections when you create conversational analytics rules in Contact Lens
+# Manage word collections when you create conversational analytics rules in conversational analytics
 <a name="manage-word-collections"></a>
 
 A *word collection* is a set of pre-built words and phrases that you can use to define the exact match condition when you create conversational analytics rules. When you add exact match conditions to a rule, you can choose a list of words and phrases from a dropdown menu.
@@ -10,7 +10,7 @@ A *word collection* is a set of pre-built words and phrases that you can use to 
 ## Required permissions
 <a name="word-collections-permissions"></a>
 
-Contact Lens Rules - Word Collections uses the same set of security profile permissions as Contact Lens Rules. For more information, see [Security profile permissions for Contact Lens rules](permissions-for-rules.md).
+Conversational analytics Rules - Word Collections uses the same set of security profile permissions as conversational analytics Rules. For more information, see [Security profile permissions for conversational analytics rules](permissions-for-rules.md).
 
 ## How to access the word collection management page
 <a name="word-collections-how-to-access"></a>

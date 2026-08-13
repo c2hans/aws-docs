@@ -35,7 +35,7 @@ You can't disable automated backups on Aurora. The backup retention period for A
 
 You can use AWS Backup to manage backups of Amazon Aurora DB clusters.
 
-Snapshots managed by AWS Backup are considered manual DB cluster snapshots, but don't count toward the DB cluster snapshot quota for Aurora. Snapshots that were created with AWS Backup have names with `awsbackup:job-{{AWS-Backup-job-number}}`. For more information about AWS Backup, see the [https://docs.aws.amazon.com/aws-backup/latest/devguide](https://docs.aws.amazon.com/aws-backup/latest/devguide).
+Snapshots managed by AWS Backup are considered manual DB cluster snapshots, but don't count toward the DB cluster snapshot quota for Aurora. Snapshots that were created with AWS Backup have names with `awsbackup:job-{{AWS-Backup-job-number}}`. For more information about AWS Backup, see the [*AWS Backup Developer Guide*](https://docs.aws.amazon.com/aws-backup/latest/devguide).
 
 You can also use AWS Backup to manage automated backups of Amazon Aurora DB clusters. If your DB cluster is associated with a backup plan in AWS Backup, you can use that backup plan for point-in-time recovery. Automated (continuous) backups that are managed by AWS Backup have names with `continuous:cluster-{{AWS-Backup-job-number}}`. For more information, see [Restoring a DB cluster to a specified time using AWS Backup](aurora-pitr-bkp.md).
 

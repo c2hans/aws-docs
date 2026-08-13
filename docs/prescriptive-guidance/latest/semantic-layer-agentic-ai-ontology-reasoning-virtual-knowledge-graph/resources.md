@@ -14,22 +14,22 @@ This AWS Prescriptive Guidance leverages **W3C Semantic Web standards** — incl
 + **AWS Workshop**
   + [Ontology as a Semantic Layer for Agentic AI Applications ](https://catalog.us-east-1.prod.workshops.aws/workshops/f434fc88-9794-473d-a66a-5f34f571b5cf/en-US)[(Access to artifacts to self-host)](https://github.com/aws-samples/amazon-neptune-generative-ai-samples/tree/main/workshops/Ontology_Semantic_Layer_KGC)
 + **W3C Semantic Web Standards:**
-  + [https://www.w3.org/RDF/](https://www.w3.org/RDF/)
-  + [https://www.w3.org/TR/rdf-schema/](https://www.w3.org/TR/rdf-schema/)
-  + [https://www.w3.org/OWL/](https://www.w3.org/OWL/)
+  + [**RDF (Resource Description Framework)**](https://www.w3.org/RDF/)
+  + [**RDFS (RDF Schema)**](https://www.w3.org/TR/rdf-schema/)
+  + [**OWL (Web Ontology Language)**](https://www.w3.org/OWL/)
     + [OWL 2 Document Overview](https://www.w3.org/TR/owl2-overview/)
     + [OWL 2 Profiles](https://www.w3.org/TR/owl2-profiles/)
-  + [https://www.w3.org/TR/sparql12-query/](https://www.w3.org/TR/sparql12-query/)
-  + [https://www.w3.org/TR/shacl/](https://www.w3.org/TR/shacl/)
+  + [**SPARQL**](https://www.w3.org/TR/sparql12-query/)
+  + [**SHACL (Shapes Constraint Language)**](https://www.w3.org/TR/shacl/)
     + [SHACL 1.2 Core](https://www.w3.org/TR/shacl-core/)
     + [SHACL JavaScript Extensions](https://www.w3.org/TR/shacl-js/)
     + [SHACL 1.2 Rules](https://www.w3.org/TR/shacl12-rules/)
-  + [https://www.w3.org/TR/r2rml/](https://www.w3.org/TR/r2rml/)
+  + [**R2RML (RDB to RDF Mapping Language)**](https://www.w3.org/TR/r2rml/)
     + [R2RML Schema](https://www.w3.org/ns/r2rml)
 + **Research Papers:**
   + Allemang, D. & Sequeda, J. (2024). *Increasing the LLM Accuracy for Question Answering: Ontologies to the Rescue\!* arXiv:2405.11706. [https://arxiv.org/abs/2405.11706](https://arxiv.org/abs/2405.11706)
 
 ## AWS Marketplace links
 <a name="aws-marketplace-links.9cbf904f-038c-532d-83e0-756e3994e1ec"></a>
-+ [https://aws.amazon.com/marketplace/pp/prodview-ulfm6fel7xgjq](https://aws.amazon.com/marketplace/pp/prodview-ulfm6fel7xgjq)
-+ [https://aws.amazon.com/marketplace/pp/prodview-dgmn5jnwnfacu?sr=0-1&ref_=beagle&applicationId=AWSMPContessa](https://aws.amazon.com/marketplace/pp/prodview-dgmn5jnwnfacu?sr=0-1&ref_=beagle&applicationId=AWSMPContessa)
++ [**Stardog Enterprise Knowledge Graph Platform**](https://aws.amazon.com/marketplace/pp/prodview-ulfm6fel7xgjq)
++ [**PuppyGraph Professional**](https://aws.amazon.com/marketplace/pp/prodview-dgmn5jnwnfacu?sr=0-1&ref_=beagle&applicationId=AWSMPContessa)

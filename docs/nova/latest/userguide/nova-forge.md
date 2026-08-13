@@ -41,7 +41,7 @@ Also ensure the following prerequisites are complete:
 
 1. [General prerequisites](nova-model-general-prerequisites.md)
 
-1. Additional steps for users: Add Restricted Instance Group (RIG) to your SageMaker HyperPod cluster (to complete follow steps [here](https://docs.aws.amazon.com//sagemaker/latest/dg/nova-hp-cluster.html))
+1. Additional steps for SageMaker HyperPod users: Add Restricted Instance Group (RIG) to your SageMaker HyperPod cluster (to complete follow steps [here](https://docs.aws.amazon.com//sagemaker/latest/dg/nova-hp-cluster.html))
 
 ## Initial SageMaker HyperPod setup
 <a name="nova-forge-setup-hp"></a>

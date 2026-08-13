@@ -28,7 +28,7 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/schedule-type
 
  A rate-based schedule starts after the start date you specify for your schedule, and runs at a regular rate that you define until the schedule's end date. You can set up most common recurrent scheduling use cases using a rate-based schedule. For example, if you want a schedule that invokes its target every 15 minutes, once every two hours, or once every five days, you can use a rate-based schedule to achieve this. You configure a rate-based schedule using a *rate expression*.
 
- With rate-based schedules, you use the [https://docs.aws.amazon.com/scheduler/latest/APIReference/API_CreateSchedule.html#scheduler-CreateSchedule-request-StartDate](https://docs.aws.amazon.com/scheduler/latest/APIReference/API_CreateSchedule.html#scheduler-CreateSchedule-request-StartDate) property to set the first occurrence of the schedule. If you do not provide a `StartDate` for a rate-based schedule, your schedule starts invoking the target immediately.
+ With rate-based schedules, you use the [`StartDate`](https://docs.aws.amazon.com/scheduler/latest/APIReference/API_CreateSchedule.html#scheduler-CreateSchedule-request-StartDate) property to set the first occurrence of the schedule. If you do not provide a `StartDate` for a rate-based schedule, your schedule starts invoking the target immediately.
 
  Rate expressions have two required fields separated by a white space, as shown in the following.
 

@@ -26,7 +26,7 @@ The value you assign for **Action name** is visible in the EventBridge payload. 
 
 1. Choose **Next**. Review and then **Save**.
 
-1. After you add rules, they are applied to new contacts that occur after the rule was added. Rules are applied when Amazon Connect conversational analytics analyzes conversations.
+1. After you add rules, they are applied to new contacts that occur after the rule was added. Rules are applied when Connect Customer conversational analytics analyzes conversations.
 
    You cannot apply rules to past, stored conversations.
 
@@ -37,11 +37,11 @@ The value you assign for **Action name** is visible in the EventBridge payload. 
 
 To subscribe to EventBridge event types, create a custom EventBridge rule that matches the following:
 + "source" = "aws.connect"
-+ "detail-type" = "Contact Lens Post Call Rules Matched" or one of the following:
-  + **Contact Lens Realtime Rules Matched**
-  + **Contact Lens Realtime Chat Rules Matched**
-  + **Contact Lens Post Chat Rules Matched**
-  +  **Contact Lens Evaluation Rules Matched**
++ "detail-type" = "conversational analytics Post Call Rules Matched" or one of the following:
+  + **conversational analytics Realtime Rules Matched**
+  + **conversational analytics Realtime Chat Rules Matched**
+  + **conversational analytics Post Chat Rules Matched**
+  +  **conversational analytics Evaluation Rules Matched**
   + **Metrics Rules Matched**
 
 The following image shows these settings in the Event pattern section of the new rule page.
@@ -51,14 +51,14 @@ The following image shows these settings in the Event pattern section of the new
 ### Example EventBridge payloads
 <a name="eb-payload"></a>
 
-Following is an example of what the EventBridge payload looks like when **Contact Lens Post Call Rules Matched**.
+Following is an example of what the EventBridge payload looks like when **conversational analytics Post Call Rules Matched**.
 
 ```
 {
  "version": "0", // set by EventBridge
  "id": "aaaaaaaa-bbbb-cccc-dddd-bf3703467718", // set by EventBridge
  "source": "aws.connect",
- "detail-type": "Contact Lens Post Call Rules Matched",
+ "detail-type": "conversational analytics Post Call Rules Matched",
  "account": "{{your AWS account ID}}",
  "time": "2020-04-27T18:43:48Z",
  "region": "us-east-1", // set by EventBridge
@@ -75,14 +75,14 @@ Following is an example of what the EventBridge payload looks like when **Contac
 }
 ```
 
-Following is an example of what the payload looks like when **Contact Lens Realtime Rules Matched**.
+Following is an example of what the payload looks like when **conversational analytics Realtime Rules Matched**.
 
 ```
 {
  "version": "0", // set by EventBridge
  "id": "aaaaaaaa-bbbb-cccc-dddd-bf3703467718", // set by EventBridge
  "source": "aws.connect",
- "detail-type": "Contact Lens Realtime Rules Matched",
+ "detail-type": "conversational analytics Realtime Rules Matched",
  "account": "{{your AWS account ID}}",
  "time": "2020-04-27T18:43:48Z",
  "region": "us-east-1", // set by EventBridge

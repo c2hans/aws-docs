@@ -50,15 +50,15 @@ If you want to configure your own Docker container, use SageMaker Profiler in ot
 
 ### PyTorch
 <a name="profiler-python-package-for-pytorch"></a>
-+ Python3.8, CUDA 11.3: [https://smppy.s3.amazonaws.com/pytorch/cu113/smprof-0.3.334-cp38-cp38-linux_x86_64.whl](https://smppy.s3.amazonaws.com/pytorch/cu113/smprof-0.3.334-cp38-cp38-linux_x86_64.whl)
-+ Python3.9, CUDA 11.7: [https://smppy.s3.amazonaws.com/pytorch/cu117/smprof-0.3.334-cp39-cp39-linux_x86_64.whl](https://smppy.s3.amazonaws.com/pytorch/cu117/smprof-0.3.334-cp39-cp39-linux_x86_64.whl)
-+ Python3.10, CUDA 11.8: [https://smppy.s3.amazonaws.com/pytorch/cu118/smprof-0.3.334-cp310-cp310-linux_x86_64.whl](https://smppy.s3.amazonaws.com/pytorch/cu118/smprof-0.3.334-cp310-cp310-linux_x86_64.whl)
-+ Python3.10, CUDA 12.1: [https://smppy.s3.amazonaws.com/pytorch/cu121/smprof-0.3.334-cp310-cp310-linux_x86_64.whl](https://smppy.s3.amazonaws.com/pytorch/cu121/smprof-0.3.334-cp310-cp310-linux_x86_64.whl)
++ Python3.8, CUDA 11.3: [`https://smppy.s3.amazonaws.com/pytorch/cu113/smprof-0.3.334-cp38-cp38-linux_x86_64.whl`](https://smppy.s3.amazonaws.com/pytorch/cu113/smprof-0.3.334-cp38-cp38-linux_x86_64.whl)
++ Python3.9, CUDA 11.7: [`https://smppy.s3.amazonaws.com/pytorch/cu117/smprof-0.3.334-cp39-cp39-linux_x86_64.whl`](https://smppy.s3.amazonaws.com/pytorch/cu117/smprof-0.3.334-cp39-cp39-linux_x86_64.whl)
++ Python3.10, CUDA 11.8: [`https://smppy.s3.amazonaws.com/pytorch/cu118/smprof-0.3.334-cp310-cp310-linux_x86_64.whl`](https://smppy.s3.amazonaws.com/pytorch/cu118/smprof-0.3.334-cp310-cp310-linux_x86_64.whl)
++ Python3.10, CUDA 12.1: [`https://smppy.s3.amazonaws.com/pytorch/cu121/smprof-0.3.334-cp310-cp310-linux_x86_64.whl`](https://smppy.s3.amazonaws.com/pytorch/cu121/smprof-0.3.334-cp310-cp310-linux_x86_64.whl)
 
 ### TensorFlow
 <a name="profiler-python-package-for-tensorflow"></a>
-+ Python3.9, CUDA 11.2: [https://smppy.s3.amazonaws.com/tensorflow/cu112/smprof-0.3.334-cp39-cp39-linux_x86_64.whl](https://smppy.s3.amazonaws.com/tensorflow/cu112/smprof-0.3.334-cp39-cp39-linux_x86_64.whl)
-+ Python3.10, CUDA 11.8: [https://smppy.s3.amazonaws.com/tensorflow/cu118/smprof-0.3.334-cp310-cp310-linux_x86_64.whl](https://smppy.s3.amazonaws.com/tensorflow/cu118/smprof-0.3.334-cp310-cp310-linux_x86_64.whl)
++ Python3.9, CUDA 11.2: [`https://smppy.s3.amazonaws.com/tensorflow/cu112/smprof-0.3.334-cp39-cp39-linux_x86_64.whl`](https://smppy.s3.amazonaws.com/tensorflow/cu112/smprof-0.3.334-cp39-cp39-linux_x86_64.whl)
++ Python3.10, CUDA 11.8: [`https://smppy.s3.amazonaws.com/tensorflow/cu118/smprof-0.3.334-cp310-cp310-linux_x86_64.whl`](https://smppy.s3.amazonaws.com/tensorflow/cu118/smprof-0.3.334-cp310-cp310-linux_x86_64.whl)
 
 For more information about how to install SageMaker Profiler using the binary files, see [(Optional) Install the SageMaker Profiler Python package](profiler-prepare.md#profiler-install-python-package).
 

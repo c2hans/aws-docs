@@ -16,21 +16,21 @@ For more information, see [AWS managed policies](https://docs.aws.amazon.com/IAM
 ## AWS managed policy: AWSStepFunctionsConsoleFullAccess
 <a name="security-iam-awsmanpol-AWSStepFunctionsConsoleFullAccess"></a>
 
-You can attach the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSStepFunctionsConsoleFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSStepFunctionsConsoleFullAccess.html) policy to your IAM identities.
+You can attach the [`AWSStepFunctionsConsoleFullAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSStepFunctionsConsoleFullAccess.html) policy to your IAM identities.
 
 This policy grants {{administrator}}permissions that allow a user access to use the Step Functions console. For a full console experience, a user may also need iam:PassRole permission on other IAM roles that can be assumed by the service.
 
 ## AWS managed policy: AWSStepFunctionsReadOnlyAccess
 <a name="security-iam-awsmanpol-AWSStepFunctionsReadOnlyAccess"></a>
 
-You can attach the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSStepFunctionsReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSStepFunctionsReadOnlyAccess.html) policy to your IAM identities.
+You can attach the [`AWSStepFunctionsReadOnlyAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSStepFunctionsReadOnlyAccess.html) policy to your IAM identities.
 
 This policy grants {{read-only}} permissions that allow a user or role to list and describe state machines, activities, executions, activities, tags, MapRuns, and state machine alias and versions. This policy also grants permission to check the syntax of state machine definitions that you provide.
 
 ## AWS managed policy: AWSStepFunctionsFullAccess
 <a name="security-iam-awsmanpol-AWSStepFunctionsFullAccess"></a>
 
-You can attach the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSStepFunctionsFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSStepFunctionsFullAccess.html) policy to your IAM identities.
+You can attach the [`AWSStepFunctionsFullAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSStepFunctionsFullAccess.html) policy to your IAM identities.
 
 This policy grants {{full}} permissions to a user or role to use the Step Functions API. For full access, a user must have {{iam:PassRole}} permission on at least one IAM role that can be assumed by the service.
 

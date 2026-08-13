@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Description](#cfn-glue-dataqualityruleset-description)" : {{String}},
       "[Name](#cfn-glue-dataqualityruleset-name)" : {{String}},
       "[Ruleset](#cfn-glue-dataqualityruleset-ruleset)" : {{String}},
-      "[Tags](#cfn-glue-dataqualityruleset-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
+      "[Tags](#cfn-glue-dataqualityruleset-tags)" : {{{{{Key}}: {{Value}}, ...}}},
       "[TargetTable](#cfn-glue-dataqualityruleset-targettable)" : {{DataQualityTargetTable}}
     }
 }
@@ -42,7 +42,7 @@ Properties:
   [Name](#cfn-glue-dataqualityruleset-name): {{String}}
   [Ruleset](#cfn-glue-dataqualityruleset-ruleset): {{String}}
   [Tags](#cfn-glue-dataqualityruleset-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    {{Key}}: {{Value}}}}
   [TargetTable](#cfn-glue-dataqualityruleset-targettable): {{
     DataQualityTargetTable}}
 ```
@@ -64,9 +64,9 @@ A description of the data quality ruleset.
 
 `Name`  <a name="cfn-glue-dataqualityruleset-name"></a>
 The name of the data quality ruleset.
-*Required*: No
+*Required*: Yes
 *Type*: String
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Ruleset`  <a name="cfn-glue-dataqualityruleset-ruleset"></a>
 A Data Quality Definition Language (DQDL) ruleset. For more information see the AWS Glue Developer Guide.
@@ -77,7 +77,8 @@ A Data Quality Definition Language (DQDL) ruleset. For more information see the 
 `Tags`  <a name="cfn-glue-dataqualityruleset-tags"></a>
 A list of tags applied to the data quality ruleset.
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Object of String
+*Pattern*: `.*`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TargetTable`  <a name="cfn-glue-dataqualityruleset-targettable"></a>
@@ -91,6 +92,3 @@ An object representing an AWS Glue table.
 
 ### Ref
 <a name="aws-resource-glue-dataqualityruleset-return-values-ref"></a>
-
-### Fn::GetAtt
-<a name="aws-resource-glue-dataqualityruleset-return-values-fn--getatt"></a>

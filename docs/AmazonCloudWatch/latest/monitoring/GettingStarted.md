@@ -11,7 +11,7 @@ Open the CloudWatch console at [https://console.aws.amazon.com/cloudwatch/](http
 
 The CloudWatch overview home page appears.
 
-![An example of a CloudWatch overview home page, showing alarms and their current state, and examples of other metrics graph widgets that might appear on the overview home page.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/CW-default-dashboard-update.png)
+![CloudWatch overview home page showing alarm states and metrics graph widgets.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/CW-default-dashboard-update.png)
 
 The overview displays the following items, refreshed automatically.
 + **Alarms by AWS service** displays a list of AWS services you use in your account, along with the state of alarms in those services. Next to that, two or four alarms in your account are displayed. The number depends on how many AWS services you use. The alarms shown are those in the ALARM state or those that most recently changed state.

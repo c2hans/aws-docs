@@ -130,7 +130,7 @@ GROUP BY AvailabilityZone
 ORDER BY MAX() DESC
 ```
 
-You can also use tags to further filter the results. For example, if you want to see results only for load balancers tagged with a specific environment, we can add tag filtering to the WHERE clause:
+You can also use tags to further filter the results. For example, if you want to see results only for load balancers tagged with a specific environment, you can add tag filtering to the WHERE clause:
 
 ```
 SELECT SUM(RequestCount) FROM SCHEMA("AWS/ApplicationELB", LoadBalancer, AvailabilityZone) WHERE LoadBalancer = 'app/load-balancer-1' AND tag.Environment = 'prod' GROUP BY AvailabilityZone ORDER BY MAX() DESC

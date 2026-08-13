@@ -17,11 +17,11 @@ To declare this entity in your AWS SAM template, use the following syntax.
 
 ```
 BatchSize: {{Integer}}
-Cluster: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-filtercriteria.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-filtercriteria.html)
+Cluster: [{{String}}](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-filtercriteria.html)
 CollectionName: {{String}}
 DatabaseName: {{String}}
 Enabled: {{Boolean}}
-FilterCriteria: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-filtercriteria.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-filtercriteria.html)
+FilterCriteria: [{{FilterCriteria}}](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-filtercriteria.html)
 FullDocument: {{String}}
 KmsKeyArn: {{String}}
 MaximumBatchingWindowInSeconds: {{Integer}}

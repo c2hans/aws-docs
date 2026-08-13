@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/aft-requir
 # Required roles
 <a name="aft-required-roles"></a>
 
-In general, roles and policies are part of identity and access management (IAM) in AWS. Refer to the [https://docs.aws.amazon.com//IAM/latest/UserGuide/introduction.html](https://docs.aws.amazon.com//IAM/latest/UserGuide/introduction.html) for more information.
+In general, roles and policies are part of identity and access management (IAM) in AWS. Refer to the [*AWS IAM User Guide*](https://docs.aws.amazon.com//IAM/latest/UserGuide/introduction.html) for more information.
 
 AFT creates multiple IAM roles and policies in the AFT management and AWS Control Tower management accounts to support the operations of the AFT pipeline. These roles are created based on the least privilege access model, which restricts permission to the minimally required sets of actions and resources for each role and policy. These roles and policies are assigned an AWS tag `key:value` pair, as ` managed_by:AFT` for identification.
 

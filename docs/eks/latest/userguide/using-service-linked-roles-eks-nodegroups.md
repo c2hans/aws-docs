@@ -33,7 +33,7 @@ You must configure permissions to allow an IAM entity (such as a user, group, or
 ## Creating a service-linked role for Amazon EKS
 <a name="create-service-linked-role-eks-nodegroups"></a>
 
-You don’t need to manually create a service-linked role. When you CreateNodegroup in the AWS Management Console, the AWS CLI, or the AWS API, Amazon EKS creates the service-linked role for you.
+You don’t need to manually create a service-linked role. When you create a managed node group in the AWS Management Console, the AWS CLI, or the AWS API, Amazon EKS creates the service-linked role for you.
 
 **Important**
 This service-linked role can appear in your account if you completed an action in another service that uses the features supported by this role. If you were using the Amazon EKS service before January 1, 2017, when it began supporting service-linked roles, then Amazon EKS created the AWSServiceRoleForAmazonEKSNodegroup role in your account. To learn more, see [A new role appeared in my IAM account](https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_roles.html#troubleshoot_roles_new-role-appeared).

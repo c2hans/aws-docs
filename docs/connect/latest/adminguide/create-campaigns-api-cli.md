@@ -15,7 +15,7 @@ Before you create a campaign using the API or CLI, make sure you have the follow
 + An AWS KMS key configured for outbound campaigns. See [Create an AWS KMS key](enable-outbound-campaigns.md#create-kms-key-campaigns).
 + Outbound campaigns enabled on your instance. See [Configure outbound campaigns](enable-outbound-campaigns.md#configure-outbound-campaigns).
 + A [Customer Profiles segment](segmentation-admin-website.md) ARN for your campaign recipients.
-+ Message templates created in your Amazon Q in Connect knowledge base. For more information, see [Create message templates](https://docs.aws.amazon.com/connect/latest/adminguide/create-message-templates.html).
++ Message templates created in your agent assist knowledge base. For more information, see [Create message templates](https://docs.aws.amazon.com/connect/latest/adminguide/create-message-templates.html).
 + The AWS CLI version 2 installed and configured. For more information, see [Installing the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
 
 ## Create a campaign flow

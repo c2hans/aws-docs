@@ -182,18 +182,18 @@ Other tools
 <a name="automate-vmware-ec2-migration-aws-transform-resources"></a>
 
 **References**
-+ [https://docs.aws.amazon.com/transform/latest/userguide/what-is-service.html](https://docs.aws.amazon.com/transform/latest/userguide/what-is-service.html)
-+ [https://docs.aws.amazon.com/transform/latest/userguide/transform-app-vmware.html](https://docs.aws.amazon.com/transform/latest/userguide/transform-app-vmware.html)
-+ [https://docs.aws.amazon.com/transform/latest/userguide/vmware-jobs.html](https://docs.aws.amazon.com/transform/latest/userguide/vmware-jobs.html)** **
-+ [https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-migrate-servers.html](https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-migrate-servers.html)
-+ [https://docs.aws.amazon.com/mgn/latest/ug/what-is-mgn.html](https://docs.aws.amazon.com/mgn/latest/ug/what-is-mgn.html)
-+ [https://docs.aws.amazon.com/mgn/latest/ug/Supported-Operating-Systems.html](https://docs.aws.amazon.com/mgn/latest/ug/Supported-Operating-Systems.html)
-+ [https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html](https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html)
-+ [https://aws.amazon.com/transform/faq/](https://aws.amazon.com/transform/faq/) **Blog posts and announcements**
-+ [https://aws.amazon.com/about-aws/whats-new/2026/06/aws-transform-mgn-rebrand/](https://aws.amazon.com/about-aws/whats-new/2026/06/aws-transform-mgn-rebrand/)
-+ [https://aws.amazon.com/about-aws/whats-new/2025/05/aws-transform-vmware-generally-available/](https://aws.amazon.com/about-aws/whats-new/2025/05/aws-transform-vmware-generally-available/)
-+ [https://aws.amazon.com/blogs/migration-and-modernization/simplify-server-migration-to-aws-with-aws-transform-for-vmware/](https://aws.amazon.com/blogs/migration-and-modernization/simplify-server-migration-to-aws-with-aws-transform-for-vmware/)
-+ [https://aws.amazon.com/blogs/migration-and-modernization/exporting-network-configuration-data-with-import-export-for-nsx/](https://aws.amazon.com/blogs/migration-and-modernization/exporting-network-configuration-data-with-import-export-for-nsx/)
++ [**What is AWS Transform?**](https://docs.aws.amazon.com/transform/latest/userguide/what-is-service.html)
++ [**AWS Transform VMware migration**](https://docs.aws.amazon.com/transform/latest/userguide/transform-app-vmware.html)
++ [**VMware migration jobs**](https://docs.aws.amazon.com/transform/latest/userguide/vmware-jobs.html)** **
++ [**Migrate servers with AWS Transform **](https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-migrate-servers.html)
++ [**What is AWS Transform MGN?**](https://docs.aws.amazon.com/mgn/latest/ug/what-is-mgn.html)
++ [**Supported operating systems**](https://docs.aws.amazon.com/mgn/latest/ug/Supported-Operating-Systems.html)
++ [**AWS Application Discovery Service User Guide **](https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html)
++ [**AWS Transform FAQ **](https://aws.amazon.com/transform/faq/) **Blog posts and announcements**
++ [**AWS Application Migration Service is now AWS Transform MGN**](https://aws.amazon.com/about-aws/whats-new/2026/06/aws-transform-mgn-rebrand/)
++ [**AWS Transform for VMware is now generally available**](https://aws.amazon.com/about-aws/whats-new/2025/05/aws-transform-vmware-generally-available/)
++ [**Simplify server migration to AWS with AWS Transform for VMware**](https://aws.amazon.com/blogs/migration-and-modernization/simplify-server-migration-to-aws-with-aws-transform-for-vmware/)
++ [**Exporting network configuration data with Import/Export for NSX**](https://aws.amazon.com/blogs/migration-and-modernization/exporting-network-configuration-data-with-import-export-for-nsx/)
 
 ## Additional information
 <a name="automate-vmware-ec2-migration-aws-transform-additional"></a>

@@ -62,7 +62,7 @@ Required: Yes
  ** [PendingWindowInDays](#API_ScheduleKeyDeletion_RequestSyntax) **   <a name="KMS-ScheduleKeyDeletion-request-PendingWindowInDays"></a>
 The waiting period, specified in number of days. After the waiting period ends, AWS KMS deletes the KMS key.
 If the KMS key is a multi-Region primary key with replica keys, the waiting period begins when the last of its replica keys is deleted. Otherwise, the waiting period begins immediately.
-This value is optional. If you include a value, it must be between 7 and 30, inclusive. If you do not include a value, it defaults to 30. You can use the [https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.html#conditions-kms-schedule-key-deletion-pending-window-in-days](https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.html#conditions-kms-schedule-key-deletion-pending-window-in-days) condition key to further constrain the values that principals can specify in the `PendingWindowInDays` parameter.
+This value is optional. If you include a value, it must be between 7 and 30, inclusive. If you do not include a value, it defaults to 30. You can use the [`kms:ScheduleKeyDeletionPendingWindowInDays`](https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.html#conditions-kms-schedule-key-deletion-pending-window-in-days) condition key to further constrain the values that principals can specify in the `PendingWindowInDays` parameter.
 Type: Integer
 Valid Range: Minimum value of 7. Maximum value of 30.
 Required: No

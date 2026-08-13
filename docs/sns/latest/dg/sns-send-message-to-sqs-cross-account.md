@@ -142,7 +142,7 @@ The following is an example policy statement that allows the Amazon SNS topic to
 
    1. Choose **More Details**.
 
-   1. In the **Message Details** dialog box, find and note the **SubscribeURL** value. This is your subscription link (example below). For additional details on API token validation, see [https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html](https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html) in the Amazon SNS API Reference.
+   1. In the **Message Details** dialog box, find and note the **SubscribeURL** value. This is your subscription link (example below). For additional details on API token validation, see [`ConfirmSubscription`](https://docs.aws.amazon.com/sns/latest/api/API_ConfirmSubscription.html) in the Amazon SNS API Reference.
 
       ```
       https://sns.us-west-2.amazonaws.com/?Action=ConfirmSubscription&TopicArn=arn:aws:sns:us-east-2:123456789012:MyTopic&Token=2336412f37fb...

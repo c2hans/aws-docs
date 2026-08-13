@@ -27,7 +27,7 @@ The following image shows an example of a **Detail view**. It has a page heading
 **AttributeBar (Optional)**
 + Optional, if provided it displays the Attribute bar at the top of the view.
 + A list of objects with required properties, **Label**, **Value**, and optional properties **LinkType**, **ResourceId**, **Copyable** and **Url**. For more information see, [Attribute](https://d3irlmavjxd3d8.cloudfront.net/?path=/docs/aws-managed-views-common-configuration--page#attribute).
-  + **LinkType** can be external or an Connect Customer application such as Connect Customer Cases.
+  + **LinkType** can be external or a Connect Customer application such as Connect Customer Cases.
     + When it is *external*, an agent can navigate to a new browser page, which is configured with **Url**.
     + When it is *case*, an agent can navigate to a new case detail on the agent workspace, which configured with ResourceId.
   + **Copyable** allows agents to copy the ResourceId by choosing it with your input device.

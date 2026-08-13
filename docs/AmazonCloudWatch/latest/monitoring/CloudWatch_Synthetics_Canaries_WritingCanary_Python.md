@@ -38,7 +38,7 @@ Be sure to set your canary's script entry point as ` my_canary_filename.function
 
 You can quickly modify an existing script for Python and Selenium to be used as a canary. For more information about Selenium, see [ www.selenium.dev/](https://www.selenium.dev/).
 
-For this example, we'll start with the following Selenium script:
+For this example, start with the following Selenium script:
 
 ```
 from selenium import webdriver

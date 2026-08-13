@@ -65,7 +65,7 @@ The policy contains the following permissions:
 ## IAM principal access for Security Hub operations
 <a name="iam-principal-access-policy"></a>
 
- Any principal that will be assigning customer-managed KMS keys to a Security Hub connector needs to have permissions to perform key operations (describe, generate, decrypt, re-encrypt, and list aliases) for the key being added to the connector. This applies to the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateConnectorV2.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateConnectorV2.html) and [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateTicketV2.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateTicketV2.html) APIs. The following policy statement should be included as part of the policy for any principal that will be interacting with these APIs.
+ Any principal that assigns customer-managed KMS keys to a Security Hub connector needs to have permissions to perform key operations (describe, generate, decrypt, re-encrypt, and list aliases) for the key being added to the connector. This applies to the [CreateConnectorV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateConnectorV2.html) and [CreateTicketV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateTicketV2.html) APIs. The following policy statement should be included as part of the policy for any principal that interacts with these APIs.
 
 ```
 {
@@ -112,7 +112,7 @@ The policy contains the following permissions:
 ```
 
  Edit the policy by replacing the following values in the policy example:
-+  Replace {{RoleName}} with the name of the IAM role that's making calls to Security Hub.
++  Replace {{RoleName}} with the name of the IAM role that is making calls to Security Hub.
 +  Replace {{CloudProviderName}} with `JIRA_CLOUD` or `SERVICENOW`.
 +  Replace {{AccountId}} with the account ID where you are creating the Security Hub connector.
 +  Replace {{Region}} with your AWS region (for example, `us-east-1`).

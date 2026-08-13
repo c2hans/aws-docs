@@ -49,7 +49,7 @@ Rule-based redaction uses one of two modes.
 
 ### What rule-based redaction does not do
 <a name="redaction-behavior-limits"></a>
-+ It does not redact voice or chat content. For call recording redaction, see [Use sensitive data redaction with Contact Lens](https://docs.aws.amazon.com/connect/latest/adminguide/sensitive-data-redaction.html). When rule-based redaction is enabled for a contact, Connect Customer stitches the redacted video with the redacted call recording if Contact Lens call recording redaction is also enabled, and with no audio otherwise.
++ It does not redact voice or chat content. For call recording redaction, see [Use sensitive data redaction with conversational analytics](https://docs.aws.amazon.com/connect/latest/adminguide/sensitive-data-redaction.html). When rule-based redaction is enabled for a contact, Connect Customer stitches the redacted video with the redacted call recording if conversational analytics call recording redaction is also enabled, and with no audio otherwise.
 + It does not hide content at the field level. Entire matching windows are masked; individual fields, DOM elements, or regions within a window cannot be selectively hidden.
 + It does not apply redaction in real time. Redaction is applied only when the recording is assembled after the contact ends.
 + It does not push configuration changes to contacts that are already in progress. Updates to a configuration take effect for the next new contact.

@@ -144,7 +144,7 @@ The retention parameters that you specify at the topic level take precedence ove
 ### Speeding up log recovery after unclean shutdown
 <a name="bestpractices-log-recovery-thread"></a>
 
-After an unclean shutdown, a broker can take a while to restart as it does log recovery. By default, Kafka only uses a single thread per log directory to perform this recovery. For example, if you have thousands of partitions, log recovery can take hours to complete. To speed up log recovery, it's recommended to increase the number of threads using configuration property [https://docs.aws.amazon.com/msk/latest/developerguide/msk-configuration-properties.html](https://docs.aws.amazon.com/msk/latest/developerguide/msk-configuration-properties.html). You can set it to the number of CPU cores.
+After an unclean shutdown, a broker can take a while to restart as it does log recovery. By default, Kafka only uses a single thread per log directory to perform this recovery. For example, if you have thousands of partitions, log recovery can take hours to complete. To speed up log recovery, it's recommended to increase the number of threads using configuration property [`num.recovery.threads.per.data.dir`](https://docs.aws.amazon.com/msk/latest/developerguide/msk-configuration-properties.html). You can set it to the number of CPU cores.
 
 ### Monitor Apache Kafka memory
 <a name="bestpractices-monitor-memory"></a>

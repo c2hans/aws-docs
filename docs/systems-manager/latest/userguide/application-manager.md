@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/applica
 **Note**
 AWS Systems Manager Application Manager is no longer open to new customers. For capabilities similar to AWS Systems Manager Application Manager, explore alternatives [AWS Systems Manager Application Manager availability change](application-manager-availability-change.md).
 
-Application Manager, a tool in AWS Systems Manager, helps DevOps engineers investigate and remediate issues with their AWS resources in the context of their applications and clusters. Application Manager aggregates operations information from multiple AWS services and Systems Manager tools to a single AWS Management Console.
+Application Manager helps DevOps engineers investigate and remediate issues with their AWS resources in the context of their applications and clusters. Application Manager aggregates operations information from multiple AWS services and Systems Manager tools to a single AWS Management Console.
 
 In Application Manager, an *application* is a logical group of AWS resources that you want to operate as a unit. This logical group can represent different versions of an application, ownership boundaries for operators, or developer environments, to name a few. Application Manager support for container clusters includes both Amazon Elastic Kubernetes Service (Amazon EKS) and Amazon Elastic Container Service (Amazon ECS) clusters.
 

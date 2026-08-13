@@ -16,12 +16,12 @@ Type: String
 Required: No
 
  ** associationType **
-The type of association.
+The type of association. Valid values: `EC2TAG` and `INSTANCE_ID`.
 Type: String
 Required: No
 
  ** associationValue **
-The value of the association.
+The association value. For `EC2TAG`, the value is formatted as `key=value`. For `INSTANCE_ID`, the value is the instance ID.
 Type: String
 Required: No
 

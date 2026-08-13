@@ -25,6 +25,7 @@ You can alternatively use the AWS Backup notification API to track AWS Backup ev
 + [Restore Job events](#aws-backup-events-restore-job)
 + [Recovery point indexing events](#aws-backup-recovery-point-indexing)
 + [Malware scan Job events](#aws-backup-events-malware-scan-job)
++ [Backup access point events](#aws-backup-events-access-point)
 
 ## Backup Job events
 <a name="aws-backup-events-backup-job"></a>
@@ -1159,5 +1160,77 @@ The following are example events.
         "state": "CANCELED",
         "statusMessage": "Scan job was stopped by user."
     }
+}
+```
+
+## Backup access point events
+<a name="aws-backup-events-access-point"></a>
+
+The following are example events.
+
+**States:**
++ AVAILABLE
++ FAILED
++ DELETED
++ EXPIRED
++ DISASSOCIATED
+
+### State: AVAILABLE
+<a name="access-point-state-change-available"></a>
+
+```
+{
+  "version": "0",
+  "id": "12345678-1234-1234-1234-123456789012",
+  "detail-type": "Backup Access Point State Change",
+  "source": "aws.backup",
+  "account": "123456789012",
+  "time": "2026-07-28T12:00:00Z",
+  "region": "us-east-1",
+  "resources": [
+    "arn:aws:backup:us-east-1:123456789012:accesspoint/my-access-point"
+  ],
+  "detail": {
+    "accessPointArn": "arn:aws:backup:us-east-1:123456789012:accesspoint/my-access-point",
+    "s3AccessPointArn": "arn:aws:s3:us-east-1:123456789012:accesspoint/my-access-point",
+    "backupAccessPointName": "my-access-point",
+    "backupVaultArn": "arn:aws:backup:us-east-1:123456789012:backup-vault:MyVault",
+    "backupVaultName": "MyVault",
+    "recoveryPointArn": "arn:aws:backup:us-east-1:123456789012:recovery-point:rp-1234567890abcdef0",
+    "resourceArn": "arn:aws:s3:::my-bucket",
+    "resourceType": "S3",
+    "creationDate": "2026-07-28T11:59:00Z",
+    "status": "AVAILABLE"
+  }
+}
+```
+
+### State: FAILED
+<a name="access-point-state-change-failed"></a>
+
+```
+{
+  "version": "0",
+  "id": "12345678-1234-1234-1234-123456789012",
+  "detail-type": "Backup Access Point State Change",
+  "source": "aws.backup",
+  "account": "123456789012",
+  "time": "2026-07-28T12:05:00Z",
+  "region": "us-east-1",
+  "resources": [
+    "arn:aws:backup:us-east-1:123456789012:accesspoint/my-access-point"
+  ],
+  "detail": {
+    "accessPointArn": "arn:aws:backup:us-east-1:123456789012:accesspoint/my-access-point",
+    "backupAccessPointName": "my-access-point",
+    "backupVaultArn": "arn:aws:backup:us-east-1:123456789012:backup-vault:MyVault",
+    "backupVaultName": "MyVault",
+    "recoveryPointArn": "arn:aws:backup:us-east-1:123456789012:recovery-point:rp-1234567890abcdef0",
+    "resourceArn": "arn:aws:s3:::my-bucket",
+    "resourceType": "S3",
+    "creationDate": "2026-07-28T12:04:00Z",
+    "statusMessage": "An S3 access point with the same name already exists in this Region and account.",
+    "status": "FAILED"
+  }
 }
 ```

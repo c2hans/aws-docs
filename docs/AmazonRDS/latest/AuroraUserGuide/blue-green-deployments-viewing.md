@@ -64,4 +64,4 @@ aws rds describe-blue-green-deployments \
 ## RDS API
 <a name="blue-green-deployments-viewing-api"></a>
 
-To view the details about a blue/green deployment by using the Amazon RDS API, use the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeBlueGreenDeployments.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeBlueGreenDeployments.html) operation and specify the `BlueGreenDeploymentIdentifier`.
+To view the details about a blue/green deployment by using the Amazon RDS API, use the [`DescribeBlueGreenDeployments`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeBlueGreenDeployments.html) operation and specify the `BlueGreenDeploymentIdentifier`.

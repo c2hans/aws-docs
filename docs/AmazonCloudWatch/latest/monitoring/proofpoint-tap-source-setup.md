@@ -29,7 +29,7 @@ To integrate CloudWatch Pipelines with Proofpoint TAP, complete the following st
 ## Prerequisites
 <a name="proofpoint-tap-prerequisites"></a>
 
-Before you begin, ensure you have the following:
+Before you begin, make sure you have the following:
 + An active Proofpoint TAP account with Threat Insight Dashboard access
 + A TAP service credential with SIEM, Campaign, and Forensics API access
 + An AWS account with permissions to create and manage CloudWatch Pipelines
@@ -58,7 +58,7 @@ To configure authentication credentials for the pipeline:
 ## Configuring the CloudWatch Pipeline
 <a name="proofpoint-tap-pipeline-config"></a>
 
-To configure the pipeline, choose Proofpoint TAP as the data source. Provide the required `service_principal` and `secret` credentials. Once you create and activate the pipeline, security event data from Proofpoint TAP will begin flowing into the selected CloudWatch Logs log group.
+To configure the pipeline, choose Proofpoint TAP as the data source. Provide the required `service_principal` and `secret` credentials. After you create and activate the pipeline, security event data from Proofpoint TAP will begin flowing into the selected CloudWatch Logs log group.
 
 The following optional parameters are available:
 + **Polling intervals** – `siem_polling_interval` (default `PT10M`), `clicks_permitted_polling_interval` (default `PT5M`), `campaign_polling_interval` (default `P1D`)

@@ -1003,9 +1003,9 @@ Before upgrading your cluster, make sure to do the following:
 
 You can upgrade your Slurm cluster to use the new AMI in two ways:
 
-1. Create a new cluster using the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html) API.
+1. Create a new cluster using the [`CreateCluster`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html) API.
 
-1. Update an existing cluster's software using the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateClusterSoftware.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateClusterSoftware.html) API.
+1. Update an existing cluster's software using the [`UpdateClusterSoftware`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateClusterSoftware.html) API.
 
 #### Validated configurations
 <a name="sagemaker-hyperpod-ami-slurm-ubuntu22-validation"></a>

@@ -51,7 +51,7 @@ The stack for this tutorial includes the following resources:
 + An Amazon EC2 instance launched into the VPC subnet
 + An Amazon SQS queue
 
-1. Download the CloudFormation template named [https://github.com/aws-samples/amazon-sqs-samples/blob/master/templates/SQS-VPCE-Tutorial-CloudFormation.yaml](https://github.com/aws-samples/amazon-sqs-samples/blob/master/templates/SQS-VPCE-Tutorial-CloudFormation.yaml) from GitHub.
+1. Download the CloudFormation template named [`SQS-VPCE-Tutorial-CloudFormation.yaml`](https://github.com/aws-samples/amazon-sqs-samples/blob/master/templates/SQS-VPCE-Tutorial-CloudFormation.yaml) from GitHub.
 
 1. Sign in to the [CloudFormation console](https://console.aws.amazon.com/cloudformation/).
 

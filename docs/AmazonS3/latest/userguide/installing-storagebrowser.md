@@ -12,7 +12,7 @@ For more information, see [Quick start](https://ui.docs.amplify.aws/react/connec
 ## Installing Storage Browser for S3 from GitHub
 <a name="install-storagebrowser-dependencies"></a>
 
-Alternatively, you can install Storage Browser for S3 from the latest version of `aws-amplify/ui-react-storage` and `aws-amplify` packages in the [https://github.com/aws-amplify](https://github.com/aws-amplify) GitHub repository to start integrating Storage Browser into your existing application. When installing Storage Browser for S3, make sure to add the following dependencies to your `package.json` file:
+Alternatively, you can install Storage Browser for S3 from the latest version of `aws-amplify/ui-react-storage` and `aws-amplify` packages in the [`aws-amplify`](https://github.com/aws-amplify) GitHub repository to start integrating Storage Browser into your existing application. When installing Storage Browser for S3, make sure to add the following dependencies to your `package.json` file:
 
 ```
 "dependencies": {

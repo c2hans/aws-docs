@@ -12,11 +12,11 @@ Amazon Kendra provides search and Retrieval Augmented Generation (RAG) functiona
 Amazon Kendra integrates with other services. You can connect an Amazon Kendra GenAI Enterprise Edition index to [Amazon Q Business](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/what-is.html) and [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) for creating your RAG chat solution. Or, you can power [Amazon Lex chat bots](https://docs.aws.amazon.com/lexv2/latest/dg/faq-bot-kendra-search.html) with Amazon Kendra search to provide useful answers to users' questions. You can also use an [Amazon Simple Storage Service bucket](https://docs.aws.amazon.com/kendra/latest/dg/data-source-s3.html) as a data source for Amazon Kendra to connect to and index your documents.
 
 Amazon Kendra has the following components:
-+ An [https://docs.aws.amazon.com//kendra/latest/dg/create-index.html](https://docs.aws.amazon.com//kendra/latest/dg/create-index.html) that holds your documents and makes them searchable.
-+ A [https://docs.aws.amazon.com/kendra/latest/dg/data-source.html](https://docs.aws.amazon.com/kendra/latest/dg/data-source.html) that stores your documents and Amazon Kendra connects to. You can automatically synchronize a data source with an Amazon Kendra index so that your index stays updated with your source repository.
-+ A [https://docs.aws.amazon.com/kendra/latest/dg/in-adding-documents.html](https://docs.aws.amazon.com/kendra/latest/dg/in-adding-documents.html) that adds documents directly to an index.
-+ A [https://docs.aws.amazon.com/kendra/latest/APIReference/API_Retrieve.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_Retrieve.html) that retrieves relevant passages or text excerpts given an input query.
-+ A [https://docs.aws.amazon.com/kendra/latest/APIReference/API_Query.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_Query.html) that searches an index given an input query.
++ An [*index*](https://docs.aws.amazon.com//kendra/latest/dg/create-index.html) that holds your documents and makes them searchable.
++ A [*data source*](https://docs.aws.amazon.com/kendra/latest/dg/data-source.html) that stores your documents and Amazon Kendra connects to. You can automatically synchronize a data source with an Amazon Kendra index so that your index stays updated with your source repository.
++ A [*document addition API*](https://docs.aws.amazon.com/kendra/latest/dg/in-adding-documents.html) that adds documents directly to an index.
++ A [*retrieve API*](https://docs.aws.amazon.com/kendra/latest/APIReference/API_Retrieve.html) that retrieves relevant passages or text excerpts given an input query.
++ A [*query API*](https://docs.aws.amazon.com/kendra/latest/APIReference/API_Query.html) that searches an index given an input query.
 
 You can use Amazon Kendra through the console or the API. You can create, update, and delete indexes. Deleting an index deletes all of its data source connectors and permanently deletes all of your document information from Amazon Kendra.
 

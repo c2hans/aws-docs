@@ -32,9 +32,9 @@ Auto-partitioning is enabled by default. Unless otherwise specified, the example
 
 The following training script changes are required to run a TensorFlow model with SageMaker's model parallelism library:
 
-1. Import and initialize the library with [https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#smp.init](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#smp.init).
+1. Import and initialize the library with [`smp.init()`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#smp.init).
 
-1. Define a Keras model by inheriting from [https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_tensorflow.html](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_tensorflow.html) instead of the Keras Model class. Return the model outputs from the call method of the `smp.DistributedModel` object. Be mindful that any tensors returned from the call method will be broadcast across model-parallel devices, incurring communication overhead, so any tensors that are not needed outside the call method (such as intermediate activations) should not be returned.
+1. Define a Keras model by inheriting from [`smp.DistributedModel`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_tensorflow.html) instead of the Keras Model class. Return the model outputs from the call method of the `smp.DistributedModel` object. Be mindful that any tensors returned from the call method will be broadcast across model-parallel devices, incurring communication overhead, so any tensors that are not needed outside the call method (such as intermediate activations) should not be returned.
 
 1. Set `drop_remainder=True` in `tf.Dataset.batch()` method. This is to ensure that the batch size is always divisible by the number of microbatches.
 
@@ -42,7 +42,7 @@ The following training script changes are required to run a TensorFlow model wit
 
 1. Put the forward and backward logic in a step function and decorate it with `smp.step`.
 
-1. Perform post-processing on the outputs across microbatches using [https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#StepOutput](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#StepOutput) methods such as `reduce_mean`. The [https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#smp.init](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#smp.init) function must have a return value that depends on the output of `smp.DistributedModel`.
+1. Perform post-processing on the outputs across microbatches using [`StepOutput`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#StepOutput) methods such as `reduce_mean`. The [`smp.step`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#smp.init) function must have a return value that depends on the output of `smp.DistributedModel`.
 
 1. If there is an evaluation step, similarly place the forward logic inside an `smp.step`-decorated function and post-process the outputs using [`StepOutput` API](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#StepOutput).
 

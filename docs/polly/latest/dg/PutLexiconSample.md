@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/PutLexiconSample.html
 
 The following Java code sample show how to use Java-based applications to store a pronunciation lexicon in an AWS Region.
 
-For more information on this operation, see the reference for the [https://docs.aws.amazon.com/polly/latest/APIReference/API_PutLexicon.html](https://docs.aws.amazon.com/polly/latest/APIReference/API_PutLexicon.html) API.
+For more information on this operation, see the reference for the [`PutLexicon`](https://docs.aws.amazon.com/polly/latest/APIReference/API_PutLexicon.html) API.
 
 ## SDK v2
 <a name="put-sdk-v2"></a>

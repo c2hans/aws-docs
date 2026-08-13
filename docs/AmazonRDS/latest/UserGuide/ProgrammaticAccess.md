@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/ProgrammaticA
 Amazon RDS provides you with the following tools to manage your Amazon RDS resources programmatically.
 
 **AWS Command Line Interface (AWS CLI)**
-You can create and manage your RDS resources by using the AWS CLI in a command-line shell. The AWS CLI provides direct access to the APIs for AWS services, such as Amazon RDS. For syntax and examples for the commands for Amazon RDS, see [https://docs.aws.amazon.com/cli/latest/reference/rds/](https://docs.aws.amazon.com/cli/latest/reference/rds/) in the *AWS CLI Command Reference*.
+You can create and manage your RDS resources by using the AWS CLI in a command-line shell. The AWS CLI provides direct access to the APIs for AWS services, such as Amazon RDS. For syntax and examples for the commands for Amazon RDS, see [rds](https://docs.aws.amazon.com/cli/latest/reference/rds/) in the *AWS CLI Command Reference*.
 
 **AWS CloudFormation**
 With this AWS Infrastructure as Code (IaC) tool, you can create templates that describe all of the Amazon RDS resources that you want, and AWS CloudFormation provisions and configures those resources for you. For more information, see [Creating Amazon RDS resources with AWS CloudFormation](creating-resources-with-cloudformation.md).

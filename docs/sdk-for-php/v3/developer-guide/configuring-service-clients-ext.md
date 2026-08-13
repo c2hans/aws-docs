@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/configuri
 # Configuring service clients for the AWS SDK for PHP Version 3 externally
 <a name="configuring-service-clients-ext"></a>
 
-Many configuration settings can be handled outside of your code. Most configuration settings can be set as either environment variables or in a separate shared AWS `config` file. The AWS shared `config` file can maintain separate sets of settings, called profiles, to provide different configurations for different environments or tests. For a complete discussion of the AWS shared `config` and `credentials` files, see the [https://docs.aws.amazon.com/sdkref/latest/guide/file-format.html](https://docs.aws.amazon.com/sdkref/latest/guide/file-format.html).
+Many configuration settings can be handled outside of your code. Most configuration settings can be set as either environment variables or in a separate shared AWS `config` file. The AWS shared `config` file can maintain separate sets of settings, called profiles, to provide different configurations for different environments or tests. For a complete discussion of the AWS shared `config` and `credentials` files, see the [*AWS SDKs and Tools Reference Guide*](https://docs.aws.amazon.com/sdkref/latest/guide/file-format.html).
 
 Most environment variables and shared `config` file settings are standardized and shared across AWS SDKs and tools to support consistent functionality across different programming languages and applications.
 

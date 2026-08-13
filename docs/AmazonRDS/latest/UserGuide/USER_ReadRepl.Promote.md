@@ -53,7 +53,7 @@ Before you promote a read replica, do the following:
   + Make sure that your read replica doesn't have the `backing-up` status. You can't promote a read replica when it is in this state.
 + Stop any transactions from being written to the primary DB instance, and then wait for RDS to apply all updates to the read replica.
 
-  Database updates occur on the read replica after they have occurred on the primary DB instance. Replication lag can vary significantly. Use the [http://aws.amazon.com/rds/faqs/#105](http://aws.amazon.com/rds/faqs/#105) metric to determine when all updates have been made to the read replica.
+  Database updates occur on the read replica after they have occurred on the primary DB instance. Replication lag can vary significantly. Use the [`Replica Lag`](http://aws.amazon.com/rds/faqs/#105) metric to determine when all updates have been made to the read replica.
 + (MySQL and MariaDB only) To make changes to a MySQL or MariaDB read replica before you promote it, set the `read_only` parameter to `0` in the DB parameter group for the read replica. You can then perform all needed DDL operations, such as creating indexes, on the read replica. Actions taken on the read replica don't affect the performance of the primary DB instance.
 
 ## Promoting a read replica: basic steps
@@ -61,7 +61,7 @@ Before you promote a read replica, do the following:
 
 The following steps show the general process for promoting a read replica to a DB instance:
 
-1. Promote the read replica by using the **Promote** option on the Amazon RDS console, the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/promote-read-replica.html](https://docs.aws.amazon.com/cli/latest/reference/rds/promote-read-replica.html), or the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_PromoteReadReplica.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_PromoteReadReplica.html) Amazon RDS API operation.
+1. Promote the read replica by using the **Promote** option on the Amazon RDS console, the AWS CLI command [`promote-read-replica`](https://docs.aws.amazon.com/cli/latest/reference/rds/promote-read-replica.html), or the [`PromoteReadReplica`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_PromoteReadReplica.html) Amazon RDS API operation.
 **Note**
 The promotion process takes a few minutes to complete. When you promote a read replica, RDS stops replication and reboots the read replica. When the reboot is complete, the read replica is available as a new DB instance.
 
@@ -91,7 +91,7 @@ The promotion process takes a few minutes to complete. When you promote a read r
 ### AWS CLI
 <a name="USER_ReadRepl.Promote.CLI"></a>
 
-To promote a read replica to a standalone DB instance, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/promote-read-replica.html](https://docs.aws.amazon.com/cli/latest/reference/rds/promote-read-replica.html) command.
+To promote a read replica to a standalone DB instance, use the AWS CLI [`promote-read-replica`](https://docs.aws.amazon.com/cli/latest/reference/rds/promote-read-replica.html) command.
 
 **Example**
 For Linux, macOS, or Unix:
@@ -110,4 +110,4 @@ aws rds promote-read-replica ^
 ### RDS API
 <a name="USER_ReadRepl.Promote.API"></a>
 
-To promote a read replica to a standalone DB instance, call the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_PromoteReadReplica.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_PromoteReadReplica.html) operation with the required parameter `DBInstanceIdentifier`.
+To promote a read replica to a standalone DB instance, call the Amazon RDS API [`PromoteReadReplica`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_PromoteReadReplica.html) operation with the required parameter `DBInstanceIdentifier`.

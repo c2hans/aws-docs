@@ -112,7 +112,7 @@ The following `put-object` example command shows how you can use the AWS CLI to 
 aws s3api put-object --bucket {{bucket-base-name}}--{{zone-id}}--x-s3 --key {{sampleinut/file001.bin}} --body {{bucket-seed/file001.bin}}
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object.html) in the *AWS CLI Command Reference*.
+For more information, see [put-object](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object.html) in the *AWS CLI Command Reference*.
 
 **Topics**
 + [Using multipart uploads with directory buckets](s3-express-using-multipart-upload.md)

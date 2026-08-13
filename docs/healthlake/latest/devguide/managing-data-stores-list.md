@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-data
 # Listing HealthLake data stores
 <a name="managing-data-stores-list"></a>
 
-Use `ListFHIRDatastores` to list all HealthLake data stores in a user's account, regardless of data store status. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ListFHIRDatastores.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ListFHIRDatastores.html) in the *AWS HealthLake API Reference*.
+Use `ListFHIRDatastores` to list all HealthLake data stores in a user's account, regardless of data store status. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`ListFHIRDatastores`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ListFHIRDatastores.html) in the *AWS HealthLake API Reference*.
 
 **To list all HealthLake data stores**
 Choose a menu based on your access preference to AWS HealthLake.

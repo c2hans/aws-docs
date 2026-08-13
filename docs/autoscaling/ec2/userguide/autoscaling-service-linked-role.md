@@ -50,7 +50,7 @@ Amazon EC2 Auto Scaling uses the service-linked role named AWSServiceRoleForAuto
 The service-linked role trusts the following service to assume the role:
 + `autoscaling.amazonaws.com`
 
-The role permissions policy, [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AutoScalingServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AutoScalingServiceRolePolicy.html), allows Amazon EC2 Auto Scaling to complete the following actions:
+The role permissions policy, [AutoScalingServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AutoScalingServiceRolePolicy.html), allows Amazon EC2 Auto Scaling to complete the following actions:
 + `ec2` – Create, describe, modify, start/stop, and terminate EC2 instances.
 + `iam` – [Pass IAM roles](us-iam-role.md) to EC2 instances so that applications running on the instances can access temporary credentials for the role.
 + `iam` – Create the **AWSServiceRoleForEC2Spot** service-linked role to allow Amazon EC2 Auto Scaling to launch Spot Instances on your behalf.

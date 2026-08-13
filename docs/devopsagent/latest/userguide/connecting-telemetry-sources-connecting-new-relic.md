@@ -77,6 +77,19 @@ Send webhooks with New Relic [https://newrelic.com/instant-observability/webhook
 
 Learn more: [https://docs.newrelic.com/docs/agentic-ai/mcp/overview/](https://docs.newrelic.com/docs/agentic-ai/mcp/overview/)
 
+## Updating credentials
+<a name="updating-credentials"></a>
+
+If your New Relic credentials expire or need to be rotated, you can update them without deregistering. Your Agent Space associations are preserved. To update your credentials, follow these steps:
+
+1. Go to the **Capability Providers** page (accessible from the side navigation).
+
+1. Scroll to the **Currently registered** section.
+
+1. Select New Relic, then choose **Update** from the **Actions** menu.
+
+1. Enter the new credentials, review, and choose **Update**.
+
 ## Removal
 <a name="removal"></a>
 

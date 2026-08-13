@@ -27,7 +27,7 @@ We make sure that **PutMedia** requests always stay within the 5 TPS quota. You 
 ## How long do you need to store audio?
 <a name="storing-audio-streams"></a>
 
-Customer audio is stored in Kinesis for the time defined by your retention settings in an Connect Customer instance. For instructions for setting this value, see [Enable live media streaming in your Connect Customer instance](enable-live-media-streams.md).
+Customer audio is stored in Kinesis for the time defined by your retention settings in a Connect Customer instance. For instructions for setting this value, see [Enable live media streaming in your Connect Customer instance](enable-live-media-streams.md).
 
 ## Do you need to change the audio streams?
 <a name="changing-audio-streams"></a>

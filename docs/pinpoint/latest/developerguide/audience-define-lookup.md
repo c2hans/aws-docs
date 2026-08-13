@@ -22,7 +22,7 @@ The following examples show you how to look up an individual endpoint by specify
 You can use Amazon Pinpoint by running commands with the AWS CLI.
 
 **Example Get endpoint command**
-To look up an endpoint, use the [https://docs.aws.amazon.com/cli/latest/reference/pinpoint/get-endpoint.html](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/get-endpoint.html) command:
+To look up an endpoint, use the [`get-endpoint`](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/get-endpoint.html) command:
 
 ```
 $ aws pinpoint get-endpoint \

@@ -144,7 +144,7 @@ You must choose exactly two models within the same family.
 
 To use intelligent prompt routing using the AWS CLI:
 
-1. After you've experimented with default prompt routers, you can create a router that can handle intelligent prompt routing using the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreatePromptRouter.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreatePromptRouter.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/bedrock/create-prompt-router.html](https://docs.aws.amazon.com/cli/latest/reference/bedrock/create-prompt-router.html) CLI command.
+1. After you've experimented with default prompt routers, you can create a router that can handle intelligent prompt routing using the [`CreatePromptRouter`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreatePromptRouter.html) API or the [`create-prompt-router`](https://docs.aws.amazon.com/cli/latest/reference/bedrock/create-prompt-router.html) CLI command.
 
    The following command shows an example of creating the prompt router, where:
    + {{<router-name>}} is a unique name for your router.
@@ -164,8 +164,8 @@ To use intelligent prompt routing using the AWS CLI:
 1. Review the response to your request. It will contain information about the model that was used and the routing criteria.
 
 1. As you work with prompt routers, you can also use these additional API operations:
-   + [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetPromptRouter.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetPromptRouter.html)
-   + [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListPromptRouters.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListPromptRouters.html)
-   + [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeletePromptRouter.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeletePromptRouter.html)
+   + [`GetPromptRouter`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetPromptRouter.html)
+   + [`ListPromptRouters`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListPromptRouters.html)
+   + [`DeletePromptRouter`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeletePromptRouter.html)
 
 ------

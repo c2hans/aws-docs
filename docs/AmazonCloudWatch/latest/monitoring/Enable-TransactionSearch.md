@@ -119,7 +119,7 @@ You can enable [Transaction Search](CloudWatch-Transaction-Search.md) through th
 ### Step 1. Create a policy that grants access to ingest spans in CloudWatch Logs
 <a name="w2aac25c21c15c11b5"></a>
 
- When using the AWS CLI or SDK to enable Transaction Search, you must configure permissions using a resource-based policy with [https://docs.aws.amazon.com/xray/latest/api/API_PutResourcePolicy.html](https://docs.aws.amazon.com/xray/latest/api/API_PutResourcePolicy.html).
+ When using the AWS CLI or SDK to enable Transaction Search, you must configure permissions using a resource-based policy with [`PutResourcePolicy`](https://docs.aws.amazon.com/xray/latest/api/API_PutResourcePolicy.html).
 
 **Example policy**
  The following example policy allows X-Ray to send traces to CloudWatch Logs
@@ -169,7 +169,7 @@ aws logs put-resource-policy --policy-name MyResourcePolicy --policy-document '{
 ### Step 2. Configure the destination of trace segments
 <a name="w2aac25c21c15c11b7"></a>
 
- Configure the ingestion of spans with [https://docs.aws.amazon.com/xray/latest/api/API_UpdateTraceSegmentDestination.html](https://docs.aws.amazon.com/xray/latest/api/API_UpdateTraceSegmentDestination.html).
+ Configure the ingestion of spans with [`UpdateTraceSegmentDestination`](https://docs.aws.amazon.com/xray/latest/api/API_UpdateTraceSegmentDestination.html).
 
 **Example command**
  The following example shows how to format your AWS CLI command with `UpdateTraceSegmentDestination`.
@@ -181,7 +181,7 @@ aws xray update-trace-segment-destination --destination CloudWatchLogs
 ### Step 3. Configure the amount of spans to index
 <a name="w2aac25c21c15c11b9"></a>
 
- Configure your desired sampling percentage with [https://docs.aws.amazon.com/xray/latest/api/API_UpdateIndexingRule.html](https://docs.aws.amazon.com/xray/latest/api/API_UpdateIndexingRule.html)
+ Configure your desired sampling percentage with [`UpdateIndexingRule`](https://docs.aws.amazon.com/xray/latest/api/API_UpdateIndexingRule.html)
 
 **Example command**
  The following example shows how to format your AWS CLI command with `UpdateIndexingRule`.
@@ -191,12 +191,12 @@ aws xray update-indexing-rule --name "Default" --rule '{"Probabilistic": {"Desir
 ```
 
 **Note**
- After you enable Transaction Search, it can take ten minutes for spans to become available for search and analysis.
+ After you enable Transaction Search, it can take 10 minutes for spans to become available for search and analysis.
 
 ### Step 4. Verify spans are available for search and analysis
 <a name="w2aac25c21c15c11c11"></a>
 
- To verify spans are available for search and analysis, use [https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSegmentDestination.html](https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSegmentDestination.html).
+ To verify spans are available for search and analysis, use [`GetTraceSegmentDestination`](https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSegmentDestination.html).
 
 **Example commands**
  The following example shows how to format your AWS CLI command with `GetTraceSegmentDestination`.

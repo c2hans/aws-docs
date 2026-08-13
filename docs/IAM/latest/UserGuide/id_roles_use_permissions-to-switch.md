@@ -20,7 +20,7 @@ When an administrator [creates a role for cross-account access](id_roles_create_
 Note that you can switch roles only when you sign in as an IAM user, a SAML-federated role, or a web-identity federated role. You cannot switch roles when you sign in as the AWS account root user.
 
 **Important**
-You cannot switch roles in the AWS Management Console to a role that requires an [ExternalId](id_roles_common-scenarios_third-party.md#id_roles_third-party_external-id) value. You can switch to such a role only by calling the [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) API that supports the `ExternalId` parameter.
+You cannot switch roles in the AWS Management Console to a role that requires an [ExternalId](id_roles_common-scenarios_third-party.md#id_roles_third-party_external-id) value. You can switch to such a role only by calling the [`AssumeRole`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) API that supports the `ExternalId` parameter.
 
 **Notes**
 This topic discusses policies for a *user*, because you are ultimately granting permissions to a user to accomplish a task. However, we don't recommend that you grant permissions directly to an individual user. When a user assumes a role, they are assigned the permissions associated with that role.

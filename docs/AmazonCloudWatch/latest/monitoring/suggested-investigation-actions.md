@@ -14,7 +14,7 @@ Before working with Automation runbooks in an investigation, be aware of the fol
 + Choosing to execute a runbook incurs charges. For information, see [AWS Systems Manager pricing](https://aws.amazon.com/systems-manager/pricing/#Automation).
 + Root causes and runbook suggestions are powered by automated reasoning and generative artificial intelligence services.
 **Important**
-You are responsible for actions that result from executing runbook steps and the choice of parameter values entered during runbook execution. You might need to edit the suggested runbook to make sure the runbook performs as expected. For more information, see [https://aws.amazon.com/ai/responsible-ai/policy/](https://aws.amazon.com/ai/responsible-ai/policy/).
+You are responsible for actions that result from executing runbook steps and the choice of parameter values entered during runbook execution. You might need to edit the suggested runbook to make sure the runbook performs as expected. For more information, see [**AWS responsible AI policy**](https://aws.amazon.com/ai/responsible-ai/policy/).
 + Depending on the runbook, you might need to enter values for the runbook's **Input parameters** before the execution can run.
 + The runbook executes using the IAM permissions assigned to the operator. If necessary, sign in with different IAM permissions to execute the runbook. In addition to permissions for the actions being taken, you'll need additional Systems Manager permissions to execute runbook steps. For more information, see [Setting up Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html) in the *AWS Systems Manager User Guide*.
 

@@ -15,13 +15,19 @@ Controls on the analysis specifications that can be run on a configured table.
 Type: Array of strings
 Array Members: Minimum number of 0 items.
 Length Constraints: Minimum length of 0. Maximum length of 200.
-Pattern: `(ANY_QUERY|ANY_JOB|arn:aws:cleanrooms:[\w]{2}-[\w]{4,9}-[\d]:[\d]{12}:membership/[\d\w-]+/(analysistemplate|view)/[\d\w-]+)`
+Pattern: `(ANY_QUERY|ANY_JOB|arn:aws:cleanrooms:[\w]{2}-[\w]{4,9}-[\d]:[\d]{12}:membership/[\d\w-]+/analysistemplate/[\d\w-]+)`
 Required: Yes
 
  ** additionalAnalyses **   <a name="API-Type-ConsolidatedPolicyCustom-additionalAnalyses"></a>
  Additional analyses for the consolidated policy.
 Type: String
 Valid Values: `ALLOWED | REQUIRED | NOT_ALLOWED`
+Required: No
+
+ ** aggregationThresholds **   <a name="API-Type-ConsolidatedPolicyCustom-aggregationThresholds"></a>
+ The aggregation thresholds for the consolidated policy.
+Type: Array of [AggregationThreshold](API_AggregationThreshold.md) objects
+Array Members: Fixed number of 1 item.
 Required: No
 
  ** allowedAdditionalAnalyses **   <a name="API-Type-ConsolidatedPolicyCustom-allowedAdditionalAnalyses"></a>
@@ -45,6 +51,11 @@ Required: No
 Type: Array of strings
 Length Constraints: Fixed length of 12.
 Pattern: `\d+`
+Required: No
+
+ ** comparisonControls **   <a name="API-Type-ConsolidatedPolicyCustom-comparisonControls"></a>
+ The comparison controls for the consolidated policy.
+Type: [ComparisonControls](API_ComparisonControls.md) object
 Required: No
 
  ** differentialPrivacy **   <a name="API-Type-ConsolidatedPolicyCustom-differentialPrivacy"></a>

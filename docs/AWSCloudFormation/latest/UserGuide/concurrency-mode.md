@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/concu
 # Choose the Concurrency Mode for CloudFormation StackSets
 <a name="concurrency-mode"></a>
 
-**Concurrency Mode** is a parameter for [https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_StackSetOperationPreferences.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_StackSetOperationPreferences.html) that allows you to choose how the concurrency level behaves during StackSet operations. You can choose between the following modes:
+**Concurrency Mode** is a parameter for [StackSetOperationPreferences](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_StackSetOperationPreferences.html) that allows you to choose how the concurrency level behaves during StackSet operations. You can choose between the following modes:
 + **Strict Failure Tolerance**: This option dynamically lowers the concurrency level to ensure the number of failed accounts never exceeds the value of **Failure tolerance** \+1. The initial actual concurrency is set to the lower of either the value of the **Maximum concurrent accounts**, or the value of **Failure tolerance** \+1. The actual concurrency is then reduced proportionally by the number of failures. This is the default behavior.
 + **Soft Failure Tolerance**: This option decouples **Failure tolerance** from the actual concurrency. This allows StackSet operations to run at the concurrency level set by the **Maximum concurrent accounts** value, regardless of the number of failures.
 
@@ -113,12 +113,12 @@ When creating or updating a StackSet, on the **Set deployment options** page, fo
 <a name="concurrency-mode-cli"></a>
 
 You can use the `ConcurrencyMode` parameter with the following StackSets commands:
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-instances.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-instances.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/delete-stack-instances.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/delete-stack-instances.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/detect-stack-set-drift.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/detect-stack-set-drift.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/import-stacks-to-stack-set.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/import-stacks-to-stack-set.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack-instances.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack-instances.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack-set.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack-set.html)
++ [create-stack-instances](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-instances.html)
++ [delete-stack-instances](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/delete-stack-instances.html)
++ [detect-stack-set-drift](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/detect-stack-set-drift.html)
++ [import-stacks-to-stack-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/import-stacks-to-stack-set.html)
++ [update-stack-instances](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack-instances.html)
++ [update-stack-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack-set.html)
 
 These commands have an existing parameter called `--operation-preferences` that can use the `ConcurrencyMode` setting. `ConcurrencyMode` can be set to one of the following values:
 + `STRICT_FAILURE_TOLERANCE`

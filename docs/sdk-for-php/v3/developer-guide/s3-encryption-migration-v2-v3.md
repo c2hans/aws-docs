@@ -83,7 +83,7 @@ composer update aws/aws-sdk-php
 
 Use one of the following methods. Be sure to place the updated SDK file in the location required by your code, which is determined by the require statement.
 
-For projects that were installed using the Phar file, download the updated file: [https://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.phar](https://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.phar).
+For projects that were installed using the Phar file, download the updated file: [`aws.phar`](https://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.phar).
 
 ```
 <?php
@@ -91,7 +91,7 @@ For projects that were installed using the Phar file, download the updated file:
 ?>
 ```
 
-For projects that were installed using the Zip file, download the updated file: [https://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.zip](https://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.zip).
+For projects that were installed using the Zip file, download the updated file: [``](https://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.zip).
 
 ```
 <?php

@@ -18,10 +18,11 @@ This documentation helps you understand how to apply the shared responsibility m
 Amazon Quick enables you to manage your users and content using a comprehensive set of security features. These include role-based access control, Microsoft Active Directory integration, AWS CloudTrail auditing, single sign-on using AWS Identity and Access Management (IAM) and third-party solutions, private VPC subnets, and data backup. Amazon Quick can also support FedRAMP, HIPAA, PCI DSS, ISO, and SOC compliance to help you meet industry-specific or regulatory requirements.
 
 **Topics**
++ [AI and agent security in Amazon Quick](sec-agentic-security.md)
 + [Data protection in Amazon Quick](sec-data-protection.md)
 + [Incident response, logging, and monitoring in Amazon Quick](incident-response-logging-and-monitoring.md)
 + [Compliance validation for Amazon Quick](sec-compliance.md)
 + [Resilience in Amazon Quick](disaster-recovery-resiliency.md)
 + [Infrastructure security in Amazon Quick](infrastructure-and-network-access.md)
-+ [Best practices for security in Amazon Quick](best-practices-security.md)
++ [Security in Quick](best-practices-security.md)
 + [AWS managed policies for Amazon Quick](security-iam-quicksight.md)

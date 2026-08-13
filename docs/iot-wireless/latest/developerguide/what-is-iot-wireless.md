@@ -72,7 +72,7 @@ After you onboard your LoRaWAN or Sidewalk devices to AWS IoT Wireless, you can 
 +
 
 **[AWS IoT Core](https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html)**
-You can also use the AWS IoT Core integration to connect to AWS services that can be accessed from the rules engine. For more information, see [https://docs.aws.amazon.com/iot/latest/developerguide/aws-iot-learn-more.html#aws-iot-learn-more-server](https://docs.aws.amazon.com/iot/latest/developerguide/aws-iot-learn-more.html#aws-iot-learn-more-server).
+You can also use the AWS IoT Core integration to connect to AWS services that can be accessed from the rules engine. For more information, see [*AWS services used by the rules engine*](https://docs.aws.amazon.com/iot/latest/developerguide/aws-iot-learn-more.html#aws-iot-learn-more-server).
 
 ## Accessing AWS IoT Wireless
 <a name="acessing-servicename"></a>

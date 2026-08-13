@@ -25,7 +25,7 @@ The following examples show how to create a model evaluation job that uses human
 
    1. Choose **Next**.
 
-1. On the **Set up evaluation** page, under **Inference source**, select the source for your model evaluation. You can evaluate the performance of Amazon Bedrock models, or of other models by providing your own inference response data in your prompt dataset. You can select up to two inference sources. For jobs with two sources, you don't have to choose the same type for both sources; you can select one Amazon Bedrock model, and provide your own inference response data for the second source. To evaluate Amazon Bedrock models, do the following:
+1. On the **Set up evaluation** page, under **Inference source**, select the source for your model evaluation. You can evaluate the performance of Amazon Bedrock models, or of other models by providing your own inference response data in your prompt dataset. You can select up to two inference sources. For jobs with two sources, you don't have to choose the same type for both sources. You can select one Amazon Bedrock model and provide your own inference response data for the second source. To evaluate Amazon Bedrock models, do the following:
 
    1. Under **Select source**, select **Bedrock models**.
 
@@ -47,7 +47,7 @@ The following examples show how to create a model evaluation job that uses human
 
    1. Under **Choose a prompt dataset**, specify the S3 URI of your prompt dataset file or choose **Browse S3** to see available S3 buckets. You can have a maximum of 1000 prompts in a custom prompt dataset.
 
-   1. Under **Evaluation results destination**, specify the S3 URI of the directory where you want the results of your model evaluation job saved, or choose **Browse S3** to see available S3 buckets.
+   1. Under **Evaluation results destination**, specify the S3 URI of the directory where you want the results of your model evaluation job saved. Alternatively, choose **Browse S3** to see available S3 buckets.
 
 1. (Optional) Under **KMS key - Optional**, provide the ARN of a customer managed key you want to use to encrypt your model evaluation job.
 
@@ -61,7 +61,7 @@ The following examples show how to create a model evaluation job that uses human
 
 1. Choose **Next**.
 
-1. Under **Work team**, use the **Select team** dropdown to select an existing team, or create a new team by doing the following:
+1. Under **Work team**, use the **Select team** dropdown to select an existing team. To create a new team, do the following:
 
    1. Under **Team name**, enter a name for your team.
 
@@ -81,7 +81,7 @@ Large language models are known to occasionally hallucinate and produce toxic or
 
 1. Review your configuration and choose **Create** to create the job.
 **Note**
-Once the job has successfully started, the status changes to **In progress**. When the job has finished, the status changes to **Completed**. While a model evaluation job is still **In progress**, you can choose to the stop the job before all the models' responses have been evaluated by your work team. To do so, choose **Stop evaluation** on the model evaluation landing page. This will change the **Status** of the model evaluation job to **Stopping**. Once the model evaluation job has successfully stopped, you can delete the model evaluation job.
+After the job starts, the status changes to **In progress**. When the job has finished, the status changes to **Completed**. While a model evaluation job is still **In progress**, you can stop the job before your work team evaluates all responses. To do so, choose **Stop evaluation** on the model evaluation landing page. This changes the **Status** of the model evaluation job to **Stopping**. After the model evaluation job has successfully stopped, you can delete the model evaluation job.
 
 **API and AWS CLI**
 
@@ -91,7 +91,7 @@ The flow definition ARN is where a model evaluation job's workflow is defined. T
 
 For model evaluation jobs started using Amazon Bedrock API operations you *must* create a flow definition ARN using the AWS CLI or a supported AWS SDK. To learn more about how flow definitions work, and creating them programmatically, see [Create a Human Review Workflow (API)](https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-create-flow-definition.html#a2i-create-human-review-api) in the *SageMaker AI Developer Guide*.
 
-In the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateFlowDefinition.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateFlowDefinition.html) you must specify `AWS/Bedrock/Evaluation` as input to the `AwsManagedHumanLoopRequestSource`. The Amazon Bedrock service role must also have permissions to access the output bucket of the flow definition.
+In the [`CreateFlowDefinition`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateFlowDefinition.html) you must specify `AWS/Bedrock/Evaluation` as input to the `AwsManagedHumanLoopRequestSource`. The Amazon Bedrock service role must also have permissions to access the output bucket of the flow definition.
 
 The following is an example request using the AWS CLI. In the request, the `HumanTaskUiArn` is a SageMaker AI owned ARN. In the ARN, you can only modify the AWS Region.
 
@@ -127,7 +127,7 @@ After creating your flow definition ARN, use the following examples to create hu
 ------
 #### [ AWS CLI ]
 
-The following example command and JSON file shows you how to create a model evaluation job using human workers where you provide your own inference response data. To learn how to specify a prompt dataset for a model evaluation job with human workers, see [Create a custom prompt dataset for a model evaluation job that uses human workers](model-evaluation-prompt-datasets-custom-human.md).
+The following example command and JSON file shows you how to create a model evaluation job using human workers. In this example, you provide your own inference response data. To learn how to specify a prompt dataset for a model evaluation job with human workers, see [Create a custom prompt dataset for a model evaluation job that uses human workers](model-evaluation-prompt-datasets-custom-human.md).
 
 **Example AWS CLI command and JSON file to create an evaluation job using your own inference response data**
 
@@ -197,7 +197,7 @@ aws bedrock create-evaluation-job --cli-input-json file://my_eval_job.json
 ------
 #### [ SDK for Python ]
 
-The following code example shows you how to create a model evaluation job that uses human workers via the SDK for SDK for Python.
+The following code example shows you how to create a model evaluation job that uses human workers through the SDK for SDK for Python.
 
 ```
 import boto3

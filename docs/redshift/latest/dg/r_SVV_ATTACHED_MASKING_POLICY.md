@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_SVV_ATTACHED_MASKIN
 
 Use SVV\_ATTACHED\_MASKING\_POLICY to view all the relations and roles/users with policies attached on the currently connected database.
 
-Only superusers and users with the [https://docs.aws.amazon.com/redshift/latest/dg/r_roles-default.html](https://docs.aws.amazon.com/redshift/latest/dg/r_roles-default.html) role can view SVV\_ATTACHED\_MASKING\_POLICY. Regular users will see 0 rows.
+Only superusers and users with the [`sys:secadmin`](https://docs.aws.amazon.com/redshift/latest/dg/r_roles-default.html) role can view SVV\_ATTACHED\_MASKING\_POLICY. Regular users will see 0 rows.
 
 ## Table columns
 <a name="r_SVV_ATTACHED_MASKING_POLICY-table-columns"></a>

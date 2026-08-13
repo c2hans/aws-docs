@@ -20,30 +20,30 @@ GET _cat/plugins?v
   <tr><th>Plugin</th><th>Minimum required OpenSearch version</th><th>Minimum required Elasticsearch version</th></tr>
 </thead>
 <tbody>
-  <tr><td>[HanLP](https://github.com/KennFalcon/elasticsearch-analysis-hanlp)</td><td>2.11</td><td>Not supported</td></tr>
-  <tr><td>[Hebrew Analysis](https://github.com/hotstar/hebrew-analyzer/tree/feature/main-initial)</td><td>2.11</td><td>Not supported</td></tr>
-  <tr><td>[Amazon Personalize Search Ranking](https://docs.aws.amazon.com/personalize/latest/dg/personalize-opensearch.html)</td><td>2.9</td><td>Not supported</td></tr>
-  <tr><td>[Neural Search](https://opensearch.org/docs/latest/search-plugins/neural-search/)</td><td>2.9</td><td>Not supported</td></tr>
-  <tr><td>[Security Analytics](https://opensearch.org/docs/latest/security-analytics/index/)</td><td>2.5</td><td>Not supported</td></tr>
-  <tr><td>[OpenSearch notifications](https://opensearch.org/docs/latest/notifications-plugin/index/)</td><td>2.3</td><td>Not supported</td></tr>
-  <tr><td>[ML Commons](https://opensearch.org/docs/latest/ml-commons-plugin/index/)</td><td>1.3</td><td>Not supported</td></tr>
-  <tr><td>[Sudachi Analysis](https://github.com/WorksApplications/elasticsearch-sudachi) (recommended for Japanese)</td><td>1.3</td><td>Not supported</td></tr>
-  <tr><td>[STConvert](https://github.com/aparo/opensearch-analysis-stconvert)</td><td>1.3</td><td>Not supported</td></tr>
-  <tr><td>[Pinyin Analysis](https://github.com/aparo/opensearch-analysis-pinyin)</td><td>1.3</td><td>Not supported</td></tr>
-  <tr><td>[Nori Analysis](https://github.com/opensearch-project/OpenSearch/tree/main/plugins/analysis-nori)</td><td>1.3</td><td>Not supported</td></tr>
-  <tr><td>[OpenSearch observability](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/observability.html)</td><td>1.2</td><td>Not supported</td></tr>
-  <tr><td>[OpenSearch cross-cluster replication](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/replication.html)</td><td>1.1</td><td>7.10</td></tr>
-  <tr><td>[OpenSearch asynchronous search](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/asynchronous-search.html)</td><td>1.0</td><td>7.10</td></tr>
-  <tr><td>[IK (Chinese) Analysis](https://github.com/medcl/elasticsearch-analysis-ik)</td><td rowspan="4">1.0</td><td rowspan="4">7.7</td></tr>
-  <tr><td>[Vietnamese Analysis](https://github.com/duydo/elasticsearch-analysis-vietnamese)</td></tr>
-  <tr><td>[Thai analysis](https://github.com/tlefsad/elasticsearch-analysis-thaichub2)</td></tr>
-  <tr><td>[Learning to Rank](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/learning-to-rank.html)</td></tr>
-  <tr><td>[OpenSearch anomaly detection](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ad.html)</td><td>1.0</td><td>7.4</td></tr>
-  <tr><td>[OpenSearch k-NN](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/knn.html)</td><td>1.0</td><td>7.1</td></tr>
-  <tr><td>[OpenSearch Index State Management](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ism.html)</td><td>1.0</td><td>6.8</td></tr>
-  <tr><td>[OpenSearch security](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/fgac.html)</td><td>1.0</td><td>6.7</td></tr>
-  <tr><td>[OpenSearch SQL](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sql-support.html)</td><td>1.0</td><td>6.5</td></tr>
-  <tr><td>[OpenSearch alerting](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/alerting.html)</td><td>1.0</td><td>6.2</td></tr>
+  <tr><td><a href="https://github.com/KennFalcon/elasticsearch-analysis-hanlp">HanLP</a></td><td>2.11</td><td>Not supported</td></tr>
+  <tr><td><a href="https://github.com/hotstar/hebrew-analyzer/tree/feature/main-initial">Hebrew Analysis</a></td><td>2.11</td><td>Not supported</td></tr>
+  <tr><td><a href="https://docs.aws.amazon.com/personalize/latest/dg/personalize-opensearch.html">Amazon Personalize Search Ranking</a></td><td>2.9</td><td>Not supported</td></tr>
+  <tr><td><a href="https://opensearch.org/docs/latest/search-plugins/neural-search/">Neural Search</a></td><td>2.9</td><td>Not supported</td></tr>
+  <tr><td><a href="https://opensearch.org/docs/latest/security-analytics/index/">Security Analytics</a></td><td>2.5</td><td>Not supported</td></tr>
+  <tr><td><a href="https://opensearch.org/docs/latest/notifications-plugin/index/">OpenSearch notifications</a></td><td>2.3</td><td>Not supported</td></tr>
+  <tr><td><a href="https://opensearch.org/docs/latest/ml-commons-plugin/index/">ML Commons</a></td><td>1.3</td><td>Not supported</td></tr>
+  <tr><td><a href="https://github.com/WorksApplications/elasticsearch-sudachi">Sudachi Analysis</a> (recommended for Japanese)</td><td>1.3</td><td>Not supported</td></tr>
+  <tr><td><a href="https://github.com/aparo/opensearch-analysis-stconvert">STConvert</a></td><td>1.3</td><td>Not supported</td></tr>
+  <tr><td><a href="https://github.com/aparo/opensearch-analysis-pinyin">Pinyin Analysis</a></td><td>1.3</td><td>Not supported</td></tr>
+  <tr><td><a href="https://github.com/opensearch-project/OpenSearch/tree/main/plugins/analysis-nori">Nori Analysis</a></td><td>1.3</td><td>Not supported</td></tr>
+  <tr><td><a href="https://docs.aws.amazon.com/opensearch-service/latest/developerguide/observability.html">OpenSearch observability</a></td><td>1.2</td><td>Not supported</td></tr>
+  <tr><td><a href="https://docs.aws.amazon.com/opensearch-service/latest/developerguide/replication.html">OpenSearch cross-cluster replication</a></td><td>1.1</td><td>7.10</td></tr>
+  <tr><td><a href="https://docs.aws.amazon.com/opensearch-service/latest/developerguide/asynchronous-search.html">OpenSearch asynchronous search</a></td><td>1.0</td><td>7.10</td></tr>
+  <tr><td><a href="https://github.com/medcl/elasticsearch-analysis-ik">IK (Chinese) Analysis</a></td><td rowspan="4">1.0</td><td rowspan="4">7.7</td></tr>
+  <tr><td><a href="https://github.com/duydo/elasticsearch-analysis-vietnamese">Vietnamese Analysis</a></td></tr>
+  <tr><td><a href="https://github.com/tlefsad/elasticsearch-analysis-thaichub2">Thai analysis</a></td></tr>
+  <tr><td><a href="https://docs.aws.amazon.com/opensearch-service/latest/developerguide/learning-to-rank.html">Learning to Rank</a></td></tr>
+  <tr><td><a href="https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ad.html">OpenSearch anomaly detection</a></td><td>1.0</td><td>7.4</td></tr>
+  <tr><td><a href="https://docs.aws.amazon.com/opensearch-service/latest/developerguide/knn.html">OpenSearch k-NN</a></td><td>1.0</td><td>7.1</td></tr>
+  <tr><td><a href="https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ism.html">OpenSearch Index State Management</a></td><td>1.0</td><td>6.8</td></tr>
+  <tr><td><a href="https://docs.aws.amazon.com/opensearch-service/latest/developerguide/fgac.html">OpenSearch security</a></td><td>1.0</td><td>6.7</td></tr>
+  <tr><td><a href="https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sql-support.html">OpenSearch SQL</a></td><td>1.0</td><td>6.5</td></tr>
+  <tr><td><a href="https://docs.aws.amazon.com/opensearch-service/latest/developerguide/alerting.html">OpenSearch alerting</a></td><td>1.0</td><td>6.2</td></tr>
   <tr><td>Ukrainian Analysis</td><td>1.0</td><td>5.3</td></tr>
   <tr><td>Mapper Size</td><td>1.0</td><td>5.3</td></tr>
   <tr><td>Mapper Murmur3</td><td>1.0</td><td>5.1</td></tr>
@@ -51,9 +51,9 @@ GET _cat/plugins?v
   <tr><td>Ingest Attachment Processor</td><td>1.0</td><td>5.1</td></tr>
   <tr><td>Stempel Polish Analysis</td><td>1.0</td><td>5.1</td></tr>
   <tr><td>Smart Chinese Analysis</td><td>1.0</td><td>5.1</td></tr>
-  <tr><td>[Seunjeon Korean Analysis](https://bitbucket.org/eunjeon/seunjeon/src/master/elasticsearch/)</td><td>1.0</td><td>5.1</td></tr>
+  <tr><td><a href="https://bitbucket.org/eunjeon/seunjeon/src/master/elasticsearch/">Seunjeon Korean Analysis</a></td><td>1.0</td><td>5.1</td></tr>
   <tr><td>Phonetic Analysis</td><td>1.0</td><td>2.3</td></tr>
-  <tr><td>[Japanese (kuromoji) Analysis](https://opensearch.org/docs/latest/analyzers/supported-analyzers/language-analyzers/)</td><td>1.0</td><td>Included on all domains</td></tr>
+  <tr><td><a href="https://opensearch.org/docs/latest/analyzers/supported-analyzers/language-analyzers/">Japanese (kuromoji) Analysis</a></td><td>1.0</td><td>Included on all domains</td></tr>
   <tr><td>ICU Analysis</td><td>1.0</td><td>Included on all domains</td></tr>
 </tbody>
 </table>

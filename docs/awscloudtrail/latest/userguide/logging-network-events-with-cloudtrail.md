@@ -305,9 +305,9 @@ You can configure your trails or event data stores to log network activity event
 ### Examples: Logging network activity events for trails
 <a name="logging-network-events-CLI-trail-examples"></a>
 
-You can configure your trails to log network activity events using the AWS CLI. Run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/put-event-selectors.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/put-event-selectors.html) command to configure the advanced event selectors for your trail.
+You can configure your trails to log network activity events using the AWS CLI. Run the [**put-event-selectors**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/put-event-selectors.html) command to configure the advanced event selectors for your trail.
 
- To see whether your trail is logging network activity events, run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/get-event-selectors.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/get-event-selectors.html) command.
+ To see whether your trail is logging network activity events, run the [`get-event-selectors`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/get-event-selectors.html) command.
 
 **Topics**
 + [Example: Log network activity events for CloudTrail operations](#logging-network-events-CLI-trail-all-ct)
@@ -764,9 +764,9 @@ The command returns the following example output.
 ### Examples: Logging network activity events for event data stores
 <a name="logging-network-events-CLI-eds-examples"></a>
 
-You can configure your event data stores to include network activity events using the AWS CLI. Use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/create-event-data-store.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/create-event-data-store.html) command to create a new event data store to log network activity events. Use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/update-event-data-store.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/update-event-data-store.html) command to update the advanced event selectors for an existing event data store.
+You can configure your event data stores to include network activity events using the AWS CLI. Use the [`create-event-data-store`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/create-event-data-store.html) command to create a new event data store to log network activity events. Use the [`update-event-data-store`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/update-event-data-store.html) command to update the advanced event selectors for an existing event data store.
 
-To see whether your event data store includes network activity events, run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/get-event-data-store.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/get-event-data-store.html) command.
+To see whether your event data store includes network activity events, run the [`get-event-data-store`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/get-event-data-store.html) command.
 
 ```
 aws cloudtrail get-event-data-store --event-data-store {{EventDataStoreARN}}

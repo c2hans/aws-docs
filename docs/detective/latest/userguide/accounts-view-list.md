@@ -83,13 +83,13 @@ You also can add other filters to the member account list.
 
 You can use an API call or the AWS Command Line Interface to view a list of member accounts in your behavior graph.
 
-To get the ARN of your behavior graph to use in the request, use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html) operation.
+To get the ARN of your behavior graph to use in the request, use the [`ListGraphs`](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html) operation.
 
 **To retrieve a list of member accounts (Detective API, AWS CLI)**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_ListMembers.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListMembers.html) operation. To identify the intended behavior graph, specify the behavior graph ARN.
++ **Detective API:** Use the [`ListMembers`](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListMembers.html) operation. To identify the intended behavior graph, specify the behavior graph ARN.
 
-  Note that for the organization behavior graph, [https://docs.aws.amazon.com/detective/latest/APIReference/API_ListMembers.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListMembers.html) does not return organization accounts that you did not enable as member accounts or that you disassociated from the behavior graph.
-+ **AWS CLI:** At the command line, run the [https://docs.aws.amazon.com/cli/latest/reference/detective/list-members.html](https://docs.aws.amazon.com/cli/latest/reference/detective/list-members.html) command.
+  Note that for the organization behavior graph, [`ListMembers`](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListMembers.html) does not return organization accounts that you did not enable as member accounts or that you disassociated from the behavior graph.
++ **AWS CLI:** At the command line, run the [`list-members`](https://docs.aws.amazon.com/cli/latest/reference/detective/list-members.html) command.
 
   ```
   aws detective list-members --graph-arn {{<behavior graph ARN>}}
@@ -102,8 +102,8 @@ To get the ARN of your behavior graph to use in the request, use the [https://do
   ```
 
 **To retrieve details about specific member accounts in your behavior graph (Detective API, AWS CLI)**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_GetMembers.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_GetMembers.html) operation. Specify the behavior graph ARN and the list of account identifiers for the member accounts.
-+ **AWS CLI:** At the command line, run the [https://docs.aws.amazon.com/cli/latest/reference/detective/get-members.html](https://docs.aws.amazon.com/cli/latest/reference/detective/get-members.html) command.
++ **Detective API:** Use the [`GetMembers`](https://docs.aws.amazon.com/detective/latest/APIReference/API_GetMembers.html) operation. Specify the behavior graph ARN and the list of account identifiers for the member accounts.
++ **AWS CLI:** At the command line, run the [`get-members`](https://docs.aws.amazon.com/cli/latest/reference/detective/get-members.html) command.
 
   ```
   aws detective get-members --account-ids {{<member account IDs>}} --graph-arn {{<behavior graph ARN>}}

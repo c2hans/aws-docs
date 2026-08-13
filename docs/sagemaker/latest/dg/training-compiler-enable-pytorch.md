@@ -17,7 +17,7 @@ You can use any of the SageMaker AI interfaces to run a training job with SageMa
 ## Using the SageMaker Python SDK
 <a name="training-compiler-enable-pytorch-pysdk"></a>
 
-SageMaker Training Compiler for PyTorch is available through the SageMaker AI [https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) and [https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) framework estimator classes. To turn on SageMaker Training Compiler, add the `compiler_config` parameter to the SageMaker AI estimators. Import the `TrainingCompilerConfig` class and pass an instance of it to the `compiler_config` parameter. The following code examples show the structure of SageMaker AI estimator classes with SageMaker Training Compiler turned on.
+SageMaker Training Compiler for PyTorch is available through the SageMaker AI [`PyTorch`](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) and [`HuggingFace`](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) framework estimator classes. To turn on SageMaker Training Compiler, add the `compiler_config` parameter to the SageMaker AI estimators. Import the `TrainingCompilerConfig` class and pass an instance of it to the `compiler_config` parameter. The following code examples show the structure of SageMaker AI estimator classes with SageMaker Training Compiler turned on.
 
 **Tip**
 To get started with prebuilt models provided by PyTorch or Transformers, try using the batch sizes provided in the reference table at [Tested Models](training-compiler-support.md#training-compiler-tested-models).

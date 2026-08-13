@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/extended-client-library-py
 <a name="prereqs-sns-extended-client-library-python"></a>
 
 The following are the prerequisites for using the [Amazon SNS Extended Client Library for Python](https://github.com/awslabs/amazon-sns-python-extended-client-lib):
-+ An AWS SDK. The example on this page uses AWS Python SDK Boto3. To install and set up the SDK, see the [https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html) documentation.
++ An AWS SDK. The example on this page uses AWS Python SDK Boto3. To install and set up the SDK, see the [*AWS SDK for Python*](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html) documentation.
 + An AWS account with the proper credentials. To create an AWS account, navigate to the [AWS home page](https://aws.amazon.com/), and then choose **Create an AWS Account**. Follow the instructions.
 
   For information about credentials, see [Credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html) in the *AWS SDK for Python Developer Guide*.

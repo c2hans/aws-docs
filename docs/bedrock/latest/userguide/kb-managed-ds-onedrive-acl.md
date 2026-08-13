@@ -44,7 +44,7 @@ For the full setup procedure, including the certificate, see [Set up Microsoft E
 To enable ACL awareness for a OneDrive data source, set `aclEnabled` to `true` in the `connectorParameters` and use the `ENTRA_APP_ID` auth type. This auth type uses application permissions that allow Bedrock Managed Knowledge Base to crawl identity information and verify document access at query time.
 
 **Important**
-ACL configuration is permanent. You cannot enable ACLs on a data source created without ACL support, and you cannot disable ACLs once enabled.
+ACL configuration is permanent. You cannot enable ACLs on a data source created without ACL support, and you cannot disable ACLs after they are enabled.
 
 When ACLs are enabled for OneDrive, you must include a `certificateS3Path` in the `connectionConfiguration` pointing to a PKCS\#12 (`.p12`) certificate file in Amazon S3. This certificate is used for real-time ACL verification against the SharePoint REST API. The `certificateS3Path` is not required when ACLs are disabled.
 

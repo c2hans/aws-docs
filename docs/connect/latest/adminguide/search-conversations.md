@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/search-conversations.html
 ---
 
-# Search conversations analyzed by Contact Lens
+# Search conversations analyzed by conversational analytics
 <a name="search-conversations"></a>
 
 You can search the analyzed and transcribed recordings based on:
@@ -17,8 +17,8 @@ In addition, you can search conversations that are in specific contact categorie
 These criteria are described in the following sections.
 
 **Important**
-When a Contact Lens is enabled on a contact, after a call or chat ends **and** the agent completes After Contact Work (ACW), Contact Lens analyzes (and for calls, transcribes) the recording of the customer-agent conversation. The agent must choose **Close contact** first.
-Chat transcripts are indexed for search when Contact Lens is enabled; they are not indexed for search if Contact Lens is not enabled.
+When a conversational analytics is enabled on a contact, after a call or chat ends **and** the agent completes After Contact Work (ACW), conversational analytics analyzes (and for calls, transcribes) the recording of the customer-agent conversation. The agent must choose **Close contact** first.
+Chat transcripts are indexed for search when conversational analytics is enabled; they are not indexed for search if conversational analytics is not enabled.
 
 ## Required permissions for searching conversations
 <a name="security-profile-permissions-for-search"></a>
@@ -35,7 +35,7 @@ For more information, see [Assign permissions](permissions-for-contact-lens.md).
 ## Search for words or phrases
 <a name="keyword-search"></a>
 
-For keyword search, Contact Lens uses the `standard` analyzer in Amazon OpenSearch Service. This analyzer is not case sensitive. For example, if you enter *thank you for your business 2 CANCELLED Flights*, the search looks for:
+For keyword search, conversational analytics uses the `standard` analyzer in Amazon OpenSearch Service. This analyzer is not case sensitive. For example, if you enter *thank you for your business 2 CANCELLED Flights*, the search looks for:
 
  [thank, you, for, your, business, 2, cancelled, flights]
 
@@ -78,7 +78,7 @@ When searching by date, you can search up to 8 weeks at a time.
 ## Search for sentiment score or evaluate sentiment shift
 <a name="sentiment-search"></a>
 
-With Contact Lens, you can search conversations for sentiment scores or sentiment shifts on a scale of -5 (most negative) to \+5 (most positive). This enables you to identify patterns and factors for why calls go well or poorly.
+With conversational analytics, you can search conversations for sentiment scores or sentiment shifts on a scale of -5 (most negative) to \+5 (most positive). This enables you to identify patterns and factors for why calls go well or poorly.
 
 ![The contact search page, the sentiment score filter.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-sentiment-score-shift.png)
 
@@ -124,7 +124,7 @@ You can search by the:
 + Average response time of the agent or customer during the chat
 + Maximum response time of the agent or customer during the chat
 
-You specify whether the duration is less or greater than or equal to a specific time. For information about how to use this metric, see [Investigate response time during chats in Contact Lens](response-time.md).
+You specify whether the duration is less or greater than or equal to a specific time. For information about how to use this metric, see [Investigate response time during chats in conversational analytics](response-time.md).
 
 For the supported minimum and maximum response times, see [Connect Customer Rules feature specifications](feature-limits.md#rules-feature-specs).
 
@@ -140,7 +140,7 @@ The following image shows a search for contacts where the agent's average respon
 1. In the **Contact categories** box, use the dropdown box to list all the current categories that are available for you to search. Or, if you start typing, the input is used to match existing categories and to filter those that don't match.
    + **Match any**: Searches for contacts that match any of the selected categories.
    + **Match all**: Searches for contacts that match all of the selected categories.
-   + **Match none**: Searches for contacts that did not match any of the selected categories. Note that this would only return contacts that were analyzed by Contact Lens conversational analytics.
+   + **Match none**: Searches for contacts that did not match any of the selected categories. Note that this would only return contacts that were analyzed by conversational analytics.
 
    The following image shows a dropdown menu with all the current categories listed.
 ![The contact category filter, the match all option, the contact categories.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-search-contact-category2.png)

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/retry-build.h
 # Retry builds manually in AWS CodeBuild
 <a name="retry-build"></a>
 
-You can use the AWS CodeBuild console, AWS CLI,or AWS SDKs to manually retry either a single build or a batch build in AWS CodeBuild.
+You can use the AWS CodeBuild console, AWS CLI, or AWS SDKs to manually retry either a single build or a batch build in AWS CodeBuild.
 
 **Topics**
 + [Retry a build manually (console)](#retry-build-console)

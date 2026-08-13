@@ -70,7 +70,7 @@ The following examples use [OpenSSH](https://www.openssh.com/). You can use any 
 
 **To allow only a single connection to an instance using SSH and the `open-tunnel` command**
 
-Use `ssh` and the [https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/open-tunnel.html](https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/open-tunnel.html) AWS CLI command as follows. The `-o` proxy command encloses the `open-tunnel` command that creates the private tunnel to the instance.
+Use `ssh` and the [open-tunnel](https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/open-tunnel.html) AWS CLI command as follows. The `-o` proxy command encloses the `open-tunnel` command that creates the private tunnel to the instance.
 
 ```
 ssh -i {{my-key-pair}}.pem {{ec2-user}}@{{i-1234567890abcdef0}} \
@@ -85,7 +85,7 @@ For:
 ### Multi-connection
 <a name="ssh-multi-connection"></a>
 
-To allow multiple connections to an instance, first run the [https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/open-tunnel.html](https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/open-tunnel.html) AWS CLI command to start listening for new TCP connections, and then use `ssh` to create a new TCP connection and a private tunnel to your instance.
+To allow multiple connections to an instance, first run the [open-tunnel](https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/open-tunnel.html) AWS CLI command to start listening for new TCP connections, and then use `ssh` to create a new TCP connection and a private tunnel to your instance.
 
 **To allow multiple connections to your instance using SSH and the `open-tunnel` command**
 
@@ -203,4 +203,4 @@ For more troubleshooting tips for Linux instances, see [Troubleshoot issues conn
 ### ErrorCode: AccessDeniedException
 <a name="troubleshoot-eice-2"></a>
 
-If you receive an `AccessDeniedException` error, and the `maxTunnelDuration` condition is specified in the IAM policy, be sure to specify the `--max-tunnel-duration` parameter when connecting to an instance. For more information about this parameter, see [https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/open-tunnel.html](https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/open-tunnel.html) in the *AWS CLI Command Reference*.
+If you receive an `AccessDeniedException` error, and the `maxTunnelDuration` condition is specified in the IAM policy, be sure to specify the `--max-tunnel-duration` parameter when connecting to an instance. For more information about this parameter, see [open-tunnel](https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/open-tunnel.html) in the *AWS CLI Command Reference*.

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/using-key
 # Using keyword filters for more accurate answers and customizing `"don’t know"` answers
 <a name="using-keyword-filters-for"></a>
 
-The keyword filter feature helps the solution to be more accurate when answering questions with OpenSearch Service, and to admit more readily when it doesn’t know the answer.
+The keyword filter feature helps the guidance to be more accurate when answering questions with OpenSearch Service, and to admit more readily when it doesn’t know the answer.
 
 ## Keyword filters
 <a name="keyword-filters"></a>
@@ -14,7 +14,7 @@ The keyword filter feature works by using [Amazon Comprehend](https://docs.aws.a
 + If there are one or two keywords, then all keywords must match.
 + If there are three or more keywords, then 75% of the keywords must match.
 
-If you have selected a non-English language for you deployment, then it will use [Amazon Translate](https://docs.aws.amazon.com/translate/latest/APIReference/API_TranslateText.html) to translate these keywords back to the language your user is using for interaction. If QnABot on AWS can’t find any answers that match these keyword filter rules, then it will admit that it doesn’t know the answer rather than guessing an answer that doesn’t match the keywords. The solution logs every question that it can’t answer so you can see them in OpenSearch Dashboards.
+If you have selected a non-English language for your deployment, then it uses [Amazon Translate](https://docs.aws.amazon.com/translate/latest/APIReference/API_TranslateText.html) to translate these keywords back to the language your user is using for interaction. If QnABot on AWS can’t find any answers that match these keyword filter rules, then it admits that it doesn’t know the answer rather than guessing an answer that doesn’t match the keywords. The guidance logs every question that it can’t answer so you can see them in OpenSearch Dashboards.
 
 ## Custom `"Don’t Know"` answers
 <a name="custom-dont-know-answers"></a>

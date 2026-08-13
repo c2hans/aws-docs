@@ -16,12 +16,12 @@ By making Your Content available to improve Connect Customer, you help us innova
 
 All this helps Connect Customer partner with you to continuously improve your business performance.
 
-When the following Connect Customer features are enabled, we can use Your Content to develop and improve your experience. These feature-level opt-outs will be discontinued on March 31, 2026:
-+ **Connect Customer Contact Lens**
+When the following Connect Customer features are enabled, we can use Your Content to develop and improve your experience:
++ **Connect Customer conversational analytics**
 + **Connect Customer Customer Profiles**
-+ **Connect Customer forecasting, capacity planning, and scheduling**
++ **Connect Customer forecasting & agent scheduling**
 + **Outbound campaigns**
-+ **Connect AI agents**
++ **Connect Customer agent assist**
 
 Only Amazon employees will have access to the data. Your trust, privacy, and the security of Your Content are our highest priority and ensure that our use complies with our commitments to you. For more information, see [Data Privacy FAQ](https://aws.amazon.com/compliance/data-privacy-faq/).
 

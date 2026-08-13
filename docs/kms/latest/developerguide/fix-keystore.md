@@ -73,7 +73,7 @@ To avoid [resetting the `kmsuser` password](#fix-keystore-password), use the mos
 To avoid [resetting the `kmsuser` password](#fix-keystore-password), use the most recent backup of the AWS CloudHSM cluster.
 + `USER_LOCKED_OUT` indicates that the [`kmsuser` crypto user (CU) account](keystore-cloudhsm.md#concept-kmsuser) is locked out of the associated AWS CloudHSM cluster due to too many failed password attempts. For help with this error, see [How to fix invalid `kmsuser` credentials](#fix-keystore-password).
 
-  To fix this error, [disconnect the AWS CloudHSM key store](disconnect-keystore.md) and use the [https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-user-change-password.html](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-user-change-password.html) command in CloudHSM CLI to change the `kmsuser` account password. Then, [edit the `kmsuser` password setting](update-keystore.md) for the custom key store, and try to connect again. For help, use the procedure described in the [How to fix invalid `kmsuser` credentials](#fix-keystore-password) topic.
+  To fix this error, [disconnect the AWS CloudHSM key store](disconnect-keystore.md) and use the [**user change-password**](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-user-change-password.html) command in CloudHSM CLI to change the `kmsuser` account password. Then, [edit the `kmsuser` password setting](update-keystore.md) for the custom key store, and try to connect again. For help, use the procedure described in the [How to fix invalid `kmsuser` credentials](#fix-keystore-password) topic.
 + `USER_LOGGED_IN` indicates that the `kmsuser` CU account is logged into the associated AWS CloudHSM cluster. This prevents AWS KMS from rotating the `kmsuser` account password and logging into the cluster. To fix this error, log the `kmsuser` CU out of the cluster. If you changed the `kmsuser` password to log into the cluster, you must also and update the key store password value for the AWS CloudHSM key store. For help, see [How to log out and reconnect](#login-kmsuser-2).
 + `USER_NOT_FOUND` indicates that AWS KMS cannot find a `kmsuser` CU account in the associated AWS CloudHSM cluster. To fix this error, [create a `kmsuser` CU account](create-keystore.md#kmsuser-concept) in the cluster, and then [update the key store password value](update-keystore.md) for the AWS CloudHSM key store. For help, see [How to fix invalid `kmsuser` credentials](#fix-keystore-password).
 
@@ -138,8 +138,8 @@ To repair any of these conditions, use the following procedure.
 1. [Disconnect the AWS CloudHSM key store](disconnect-keystore.md).
 
 1. Run the [DescribeCustomKeyStores](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeCustomKeyStores.html) operation and view the value of the `ConnectionErrorCode` element in the response.
-   + If the `ConnectionErrorCode` value is `INVALID_CREDENTIALS`, determine the current password for the `kmsuser` account. If necessary, use the [https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-user-change-password.html](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-user-change-password.html) command in CloudHSM CLI to set the password to a known value.
-   + If the `ConnectionErrorCode` value is `USER_LOCKED_OUT`, you must use the [https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-user-change-password.html](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-user-change-password.html) command in CloudHSM CLI to change the `kmsuser` password.
+   + If the `ConnectionErrorCode` value is `INVALID_CREDENTIALS`, determine the current password for the `kmsuser` account. If necessary, use the [**user change-password**](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-user-change-password.html) command in CloudHSM CLI to set the password to a known value.
+   + If the `ConnectionErrorCode` value is `USER_LOCKED_OUT`, you must use the [**user change-password**](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-user-change-password.html) command in CloudHSM CLI to change the `kmsuser` password.
 
 1. [Edit the `kmsuser` password setting](update-keystore.md) so it matches the current `kmsuser` password in the cluster. This action tells AWS KMS which password to use to log into the cluster. It does not change the `kmsuser` password in the cluster.
 
@@ -199,7 +199,7 @@ On January 1, 2025, AWS CloudHSM will end support for the Client SDK 3 command l
 
 The following procedures demonstrate how to delete the orphaned key material from the associated AWS CloudHSM cluster.
 
-1. Disconnect the AWS CloudHSM key store, if it is not already disconnected, then [https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-login.html](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-login.html), as explained in [How to disconnect and log in](#login-kmsuser-1).
+1. Disconnect the AWS CloudHSM key store, if it is not already disconnected, then [**login**](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-login.html), as explained in [How to disconnect and log in](#login-kmsuser-1).
 **Note**
 While a custom key store is disconnected, all attempts to create KMS keys in the custom key store or to use existing KMS keys in cryptographic operations will fail. This action can prevent users from storing and accessing sensitive data.
 
@@ -312,7 +312,7 @@ On January 1, 2025, AWS CloudHSM will end support for the Client SDK 3 command l
    }
    ```
 
-1. Use the [https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-user-change-password.html](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-user-change-password.html) command in CloudHSM CLI to change the password of the `kmsuser` account to one that you know. (AWS KMS rotates the password when you connect your AWS CloudHSM key store.) The password must consist of 7-32 alphanumeric characters. It is case-sensitive and cannot contain any special characters.
+1. Use the [**user change-password**](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-user-change-password.html) command in CloudHSM CLI to change the password of the `kmsuser` account to one that you know. (AWS KMS rotates the password when you connect your AWS CloudHSM key store.) The password must consist of 7-32 alphanumeric characters. It is case-sensitive and cannot contain any special characters.
 
 1. Login as `kmsuser` using the password that you set. For detailed instructions, see the [Using CloudHSM CLI](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-getting-started.html#w17aac19c11c13b7) section of the *AWS CloudHSM User Guide*.
 
@@ -337,7 +337,7 @@ Use the following procedure each time you need to log out as the `kmsuser` crypt
 The following procedures use the AWS CloudHSM Client SDK 5 command line tool, [CloudHSM CLI](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli.html). The CloudHSM CLI replaces `key-handle` with `key-reference`.
 On January 1, 2025, AWS CloudHSM will end support for the Client SDK 3 command line tools, the CloudHSM Management Utility (CMU) and the Key Management Utility (KMU). For more information on the differences between the Client SDK 3 command line tools and the Client SDK 5 command line tool, see [Migrate from Client SDK 3 CMU and KMU to Client SDK 5 CloudHSM CLI](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-migrate-from-kmu-cmu.html) in the *AWS CloudHSM User Guide*.
 
-1. Perform the task, then use the [https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-logout.html](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-logout.html) command in CloudHSM CLI to log out. If you do not log out, attempts to reconnect your AWS CloudHSM key store will fail.
+1. Perform the task, then use the [**logout**](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-logout.html) command in CloudHSM CLI to log out. If you do not log out, attempts to reconnect your AWS CloudHSM key store will fail.
 
    ```
    aws-cloudhsm  logout

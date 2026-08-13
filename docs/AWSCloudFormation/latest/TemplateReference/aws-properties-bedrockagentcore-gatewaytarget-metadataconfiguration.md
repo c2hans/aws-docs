@@ -44,16 +44,22 @@ To declare this entity in your CloudFormation template, use the following syntax
 A list of URL query parameters that are allowed to be propagated from incoming gateway URL to the target.
 *Required*: No
 *Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `40 | 10`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AllowedRequestHeaders`  <a name="cfn-bedrockagentcore-gatewaytarget-metadataconfiguration-allowedrequestheaders"></a>
 A list of HTTP headers that are allowed to be propagated from incoming client requests to the target.
 *Required*: No
 *Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `100 | 10`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AllowedResponseHeaders`  <a name="cfn-bedrockagentcore-gatewaytarget-metadataconfiguration-allowedresponseheaders"></a>
 A list of HTTP headers that are allowed to be propagated from the target response back to the client.
 *Required*: No
 *Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `100 | 10`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -86,7 +86,7 @@ Configuration for AWS monitor account integration. Specifies the account ID, ass
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Azure`  <a name="cfn-devopsagent-association-serviceconfiguration-azure"></a>
-Property description not available.
+Configuration for Azure subscription integration. Specifies the subscription ID to enable the Agent Space to discover and investigate resources in your Azure environment.
 *Required*: No
 *Type*: [AzureConfiguration](aws-properties-devopsagent-association-azureconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -128,7 +128,7 @@ Configuration for Datadog MCP server integration. Specifies the server name, end
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MCPServerGrafana`  <a name="cfn-devopsagent-association-serviceconfiguration-mcpservergrafana"></a>
-Property description not available.
+Configuration for Grafana MCP server integration. Specifies the endpoint URL, tool categories, and webhook settings. Use this configuration to query metrics, dashboards, and alerting data from Grafana.
 *Required*: No
 *Type*: [MCPServerGrafanaConfiguration](aws-properties-devopsagent-association-mcpservergrafanaconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -140,7 +140,7 @@ Configuration for New Relic MCP server integration. Specifies the New Relic acco
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MCPServerSigV4`  <a name="cfn-devopsagent-association-serviceconfiguration-mcpserversigv4"></a>
-Property description not available.
+Configuration for SigV4-authenticated MCP server integration. Specifies the available tools to enable the Agent Space to interact with an MCP server that authenticates requests using AWS Signature Version 4.
 *Required*: No
 *Type*: [MCPServerSigV4Configuration](aws-properties-devopsagent-association-mcpserversigv4configuration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -152,7 +152,7 @@ Configuration for Splunk MCP server integration. Specifies the server name, endp
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PagerDuty`  <a name="cfn-devopsagent-association-serviceconfiguration-pagerduty"></a>
-Property description not available.
+Configuration for PagerDuty integration. Specifies the customer email, service IDs, and webhook settings to enable the Agent Space to access incident data, on-call schedules, and service information.
 *Required*: No
 *Type*: [PagerDutyConfiguration](aws-properties-devopsagent-association-pagerdutyconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

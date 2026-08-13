@@ -53,7 +53,7 @@ If **NESTED** is displayed next to the stack name, the stack is a nested stack. 
 1. Choose **Enable** or **Disable**, and then select **Save**.
 
 **To enable or disable termination protection using the command line**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-termination-protection.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-termination-protection.html) command.
+Use the [update-termination-protection](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-termination-protection.html) command.
 
 ## Controlling who can change termination protection on stacks
 <a name="protect-stacks-perms"></a>

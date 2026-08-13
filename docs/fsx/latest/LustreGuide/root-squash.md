@@ -71,7 +71,7 @@ When the file system is **Available**, root squash is enabled.
 
 ### To enable root squash when creating a file system (CLI)
 <a name="create-root-squash-cli"></a>
-+ To create an FSx for Lustre file system with root squash enabled, use the Amazon FSx CLI command [https://docs.aws.amazon.com/cli/latest/reference/fsx/create-file-system.html](https://docs.aws.amazon.com/cli/latest/reference/fsx/create-file-system.html) with the `RootSquashConfiguration` parameter. The corresponding API operation is [CreateFileSystem](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSystem.html).
++ To create an FSx for Lustre file system with root squash enabled, use the Amazon FSx CLI command [`create-file-system`](https://docs.aws.amazon.com/cli/latest/reference/fsx/create-file-system.html) with the `RootSquashConfiguration` parameter. The corresponding API operation is [CreateFileSystem](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSystem.html).
 
   For the `RootSquashConfiguration` parameter, set the following options:
   + `RootSquash` – The colon-separated UID:GID values that specify the user ID and group ID for the root user to use. You can specify any whole number in the range of `0`–`4294967294` (0 is root) for each ID (for example, `65534:65534`).
@@ -188,4 +188,4 @@ $ aws fsx update-file-system \
 
 If the command is successful, Amazon FSx for Lustre returns the response in JSON format.
 
-You can view the root squash settings of your file system in the **Summary** panel of the file system details page on the Amazon FSx console or in the response of a [https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-file-systems.html](https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-file-systems.html) CLI command (the equivalent API action is [https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeFileSystems.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeFileSystems.html)).
+You can view the root squash settings of your file system in the **Summary** panel of the file system details page on the Amazon FSx console or in the response of a [`describe-file-systems`](https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-file-systems.html) CLI command (the equivalent API action is [`DescribeFileSystems`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeFileSystems.html)).

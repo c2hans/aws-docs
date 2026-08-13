@@ -51,7 +51,7 @@ Secrets Manager generates a CloudTrail log entry when you delete a secret. For m
 <a name="manage_delete-secret_cli"></a>
 
 **Example Delete a secret**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-secret.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-secret.html) example deletes a secret. You can recover the secret with [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/restore-secret.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/restore-secret.html) until the date and time in the DeletionDate response field. To delete a secret that is replicated to other regions, first remove its replicas with [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/remove-regions-from-replication.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/remove-regions-from-replication.html), and then call [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-secret.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-secret.html).
+The following [`delete-secret`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-secret.html) example deletes a secret. You can recover the secret with [`restore-secret`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/restore-secret.html) until the date and time in the DeletionDate response field. To delete a secret that is replicated to other regions, first remove its replicas with [`remove-regions-from-replication`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/remove-regions-from-replication.html), and then call [`delete-secret`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-secret.html).
 
 ```
 aws secretsmanager delete-secret \
@@ -60,7 +60,7 @@ aws secretsmanager delete-secret \
 ```
 
 **Example Delete a secret immediately**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-secret.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-secret.html) example deletes a secret immediately without a recovery window. You can't recover this secret.
+The following [`delete-secret`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-secret.html) example deletes a secret immediately without a recovery window. You can't recover this secret.
 
 ```
 aws secretsmanager delete-secret \
@@ -69,7 +69,7 @@ aws secretsmanager delete-secret \
 ```
 
 **Example Delete a replica secret**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/remove-regions-from-replication.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/remove-regions-from-replication.html) example deletes a replica secret in eu-west-3. To delete a primary secret that is replicated to other regions, first delete the replicas and then call [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-secret.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-secret.html).
+The following [`remove-regions-from-replication`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/remove-regions-from-replication.html) example deletes a replica secret in eu-west-3. To delete a primary secret that is replicated to other regions, first delete the replicas and then call [`delete-secret`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-secret.html).
 
 ```
 aws secretsmanager remove-regions-from-replication \
@@ -80,4 +80,4 @@ aws secretsmanager remove-regions-from-replication \
 ## AWS SDK
 <a name="manage_delete-secret_sdk"></a>
 
-To delete a secret, use the [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DeleteSecret.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DeleteSecret.html) command. To delete a version of a secret, use the [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_UpdateSecretVersionStage.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_UpdateSecretVersionStage.html) command. To delete a replica, use the [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_StopReplicationToReplica.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_StopReplicationToReplica.html) command. For more information, see [AWS SDKs](asm_access.md#asm-sdks).
+To delete a secret, use the [`DeleteSecret`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DeleteSecret.html) command. To delete a version of a secret, use the [`UpdateSecretVersionStage`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_UpdateSecretVersionStage.html) command. To delete a replica, use the [`StopReplicationToReplica`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_StopReplicationToReplica.html) command. For more information, see [AWS SDKs](asm_access.md#asm-sdks).

@@ -95,7 +95,7 @@ After turning on the Default Host Management Configuration, it might take up 30 
 You can grant access at the individual instance level by using an AWS Identity and Access Management (IAM) instance profile. An instance profile is a container that passes IAM role information to an Amazon Elastic Compute Cloud (Amazon EC2) instance at launch. You can create an instance profile for Systems Manager by attaching one or more IAM policies that define the necessary permissions to a new role or to a role you already created.
 
 **Note**
-You can use Quick Setup, a tool in AWS Systems Manager, to quickly configure an instance profile on all instances in your AWS account. Quick Setup also creates an IAM service role (or *assume* role), which allows Systems Manager to securely run commands on your instances on your behalf. By using Quick Setup, you can skip this step (Step 3) and Step 4. For more information, see [AWS Systems Manager Quick Setup](systems-manager-quick-setup.md).
+You can use Quick Setup to quickly configure an instance profile on all instances in your AWS account. Quick Setup also creates an IAM service role (or *assume* role), which allows Systems Manager to securely run commands on your instances on your behalf. By using Quick Setup, you can skip this step (Step 3) and Step 4. For more information, see [AWS Systems Manager Quick Setup](systems-manager-quick-setup.md).
 
 Note the following details about creating an IAM instance profile:
 + If you're configuring non-EC2 machines in a [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) environment for Systems Manager, you don't need to create an instance profile for them. Instead, configure your servers and VMs to use an IAM service role. For more information, see [Create the IAM service role required for Systems Manager in hybrid and multicloud environments](hybrid-multicloud-service-role.md).
@@ -126,7 +126,7 @@ Depending on whether you're creating a new role for your instance profile or add
 
 1. For **Role name**, enter a name for your new instance profile, such as **SSMInstanceProfile**.
 **Note**
-Make a note of the role name. You will choose this role when you create new instances that you want to manage by using Systems Manager.
+Make a note of the role name. Choose this role when you create new instances that you want to manage by using Systems Manager.
 
 1. (Optional) For **Description**, update the description for this instance profile.
 
@@ -223,7 +223,7 @@ We recommend that you avoid using wildcard characters (\*) in place of specific 
 
 1. If you're using an S3 bucket of your own in your Systems Manager operations, do the following:
 
-   In the second `Statement` element, replace {{amzn-s3-demo-bucket}} with the name of an S3 bucket in your account. You will use this bucket for your Systems Manager operations. It provides permission for objects in the bucket, using `"arn:aws:s3:::my-bucket-name/*"` as the resource. For more information about providing permissions for buckets or objects in buckets, see the topic [Amazon S3 actions](https://docs.aws.amazon.com/AmazonS3/latest/dev/using-with-s3-actions.html) in the *Amazon Simple Storage Service User Guide* and the AWS blog post [IAM Policies and Bucket Policies and ACLs\! Oh, My\! (Controlling Access to S3 Resources)](https://aws.amazon.com/blogs/security/iam-policies-and-bucket-policies-and-acls-oh-my-controlling-access-to-s3-resources/).
+   In the second `Statement` element, replace {{amzn-s3-demo-bucket}} with the name of an S3 bucket in your account. Use this bucket for your Systems Manager operations. It provides permission for objects in the bucket, using `"arn:aws:s3:::my-bucket-name/*"` as the resource. For more information about providing permissions for buckets or objects in buckets, see the topic [Amazon S3 actions](https://docs.aws.amazon.com/AmazonS3/latest/dev/using-with-s3-actions.html) in the *Amazon Simple Storage Service User Guide* and the AWS blog post [IAM Policies and Bucket Policies and ACLs\! Oh, My\! (Controlling Access to S3 Resources)](https://aws.amazon.com/blogs/security/iam-policies-and-bucket-policies-and-acls-oh-my-controlling-access-to-s3-resources/).
 **Note**
 If you use more than one bucket, provide the ARN for each one. See the following example for permissions on buckets.
 
@@ -259,7 +259,7 @@ This AWS managed policy allows SSM Agent to access AWS Directory Service on your
 
 **Policy: `CloudWatchAgentServerPolicy`**
 Required only if you plan to install and run the CloudWatch agent on your instances to read metric and log data on an instance and write it to Amazon CloudWatch. These help you monitor, analyze, and quickly respond to issues or changes to your AWS resources.
-Your default IAM role created by the Default Host Management Configuration or instance profile needs this policy only if you will use features such as Amazon EventBridge or Amazon CloudWatch Logs. (You can also create a more restrictive policy that, for example, limits writing access to a specific CloudWatch Logs log stream.)
+Your default IAM role created by the Default Host Management Configuration or instance profile needs this policy only if you use features such as Amazon EventBridge or Amazon CloudWatch Logs. (You can also create a more restrictive policy that, for example, limits writing access to a specific CloudWatch Logs log stream.)
 Using EventBridge and CloudWatch Logs features is optional. However, we recommend setting them up at the beginning of your Systems Manager configuration process if you have decided to use them. For more information, see the *[Amazon EventBridge User Guide](https://docs.aws.amazon.com/eventbridge/latest/userguide/)* and the *[Amazon CloudWatch Logs User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/)*.
 To create IAM policies with permissions for additional Systems Manager tools, see the following resources:
 + [Managing access to Parameter Store parameters using IAM policies](parameter-store-setting-up.md#sysman-paramstore-access)

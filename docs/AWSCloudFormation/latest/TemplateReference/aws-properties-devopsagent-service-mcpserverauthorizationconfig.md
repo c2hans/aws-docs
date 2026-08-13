@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DevOpsAgent::Service MCPServerAuthorizationConfig
 <a name="aws-properties-devopsagent-service-mcpserverauthorizationconfig"></a>
 
-The authorization configuration for a custom MCP server. Specify either OAuth client credentials or an API key.
+The authorization configuration for a custom MCP server. Specify OAuth client credentials, an API key, or a bearer token.
 
 ## Syntax
 <a name="aws-properties-devopsagent-service-mcpserverauthorizationconfig-syntax"></a>
@@ -47,7 +47,7 @@ The API key details for authenticating with the MCP server.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `BearerToken`  <a name="cfn-devopsagent-service-mcpserverauthorizationconfig-bearertoken"></a>
-Property description not available.
+The bearer token details for authenticating with the MCP server.
 *Required*: No
 *Type*: [BearerTokenDetails](aws-properties-devopsagent-service-bearertokendetails.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

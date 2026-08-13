@@ -171,7 +171,7 @@ $ aws-encryption-cli --encrypt \
 
 To encrypt with a multi-Region key, instantiate an `AwsKmsMrkAwareMasterKeyProvider` and specify a multi-Region key.
 
-For a complete example, see [https://github.com/aws/aws-encryption-sdk-java/blob/master/src/examples/java/com/amazonaws/crypto/examples/v2/BasicMultiRegionKeyEncryptionExample.java](https://github.com/aws/aws-encryption-sdk-java/blob/master/src/examples/java/com/amazonaws/crypto/examples/v2/BasicMultiRegionKeyEncryptionExample.java) in the AWS Encryption SDK for Java repository on GitHub.
+For a complete example, see [BasicMultiRegionKeyEncryptionExample.java](https://github.com/aws/aws-encryption-sdk-java/blob/master/src/examples/java/com/amazonaws/crypto/examples/v2/BasicMultiRegionKeyEncryptionExample.java) in the AWS Encryption SDK for Java repository on GitHub.
 
 ```
 //Encrypt with a multi-Region KMS key in us-east-1 Region

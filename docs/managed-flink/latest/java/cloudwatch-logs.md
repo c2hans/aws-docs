@@ -53,7 +53,7 @@ Use the following API actions to add a CloudWatch log option to a new or existin
 #### Add a CloudWatch log option when creating an application
 <a name="add_cloudwatch_create"></a>
 
-The following example demonstrates how to use the `CreateApplication` action to add a CloudWatch log option when you create an application. In the example, replace {{Amazon Resource Name (ARN) of the CloudWatch Log stream to add to the new application}} with your own information. For more information about the action, see [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html).
+The following example demonstrates how to use the `CreateApplication` action to add a CloudWatch log option when you create an application. In the example, replace {{Amazon Resource Name (ARN) of the CloudWatch Log stream to add to the new application}} with your own information. For more information about the action, see [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html).
 
 ```
 {
@@ -81,7 +81,7 @@ The following example demonstrates how to use the `CreateApplication` action to 
 #### Add a CloudWatch log option to an existing application
 <a name="add_to_existing_app"></a>
 
-The following example demonstrates how to use the `AddApplicationCloudWatchLoggingOption` action to add a CloudWatch log option to an existing application. In the example, replace each {{user input placeholder}} with your own information. For more information about the action, see [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_AddApplicationCloudWatchLoggingOption.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_AddApplicationCloudWatchLoggingOption.html).
+The following example demonstrates how to use the `AddApplicationCloudWatchLoggingOption` action to add a CloudWatch log option to an existing application. In the example, replace each {{user input placeholder}} with your own information. For more information about the action, see [`AddApplicationCloudWatchLoggingOption`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_AddApplicationCloudWatchLoggingOption.html).
 
 ```
 {
@@ -96,7 +96,7 @@ The following example demonstrates how to use the `AddApplicationCloudWatchLoggi
 #### Update an existing CloudWatch log option
 <a name="update_existing"></a>
 
-The following example demonstrates how to use the `UpdateApplication` action to modify an existing CloudWatch log option. In the example, replace each {{user input placeholder}} with your own information. For more information about the action, see [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html).
+The following example demonstrates how to use the `UpdateApplication` action to modify an existing CloudWatch log option. In the example, replace each {{user input placeholder}} with your own information. For more information about the action, see [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html).
 
 ```
 {
@@ -114,7 +114,7 @@ The following example demonstrates how to use the `UpdateApplication` action to 
 #### Delete a CloudWatch log option from an application
 <a name="delete-log"></a>
 
-The following example demonstrates how to use the `DeleteApplicationCloudWatchLoggingOption` action to delete an existing CloudWatch log option. In the example, replace each {{user input placeholder}} with your own information. For more information about the action, see [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DeleteApplicationCloudWatchLoggingOption.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DeleteApplicationCloudWatchLoggingOption.html).
+The following example demonstrates how to use the `DeleteApplicationCloudWatchLoggingOption` action to delete an existing CloudWatch log option. In the example, replace each {{user input placeholder}} with your own information. For more information about the action, see [`DeleteApplicationCloudWatchLoggingOption`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_DeleteApplicationCloudWatchLoggingOption.html).
 
 ```
 {
@@ -127,14 +127,14 @@ The following example demonstrates how to use the `DeleteApplicationCloudWatchLo
 #### Set the application logging level
 <a name="cloudwatch-level"></a>
 
-To set the level of application logging, use the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_MonitoringConfiguration.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_MonitoringConfiguration.html) parameter of the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action or the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_MonitoringConfigurationUpdate.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_MonitoringConfigurationUpdate.html) parameter of the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action.
+To set the level of application logging, use the [`MonitoringConfiguration`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_MonitoringConfiguration.html) parameter of the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action or the [`MonitoringConfigurationUpdate`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_MonitoringConfigurationUpdate.html) parameter of the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action.
 
 For information about application log levels, see [Control application monitoring levels](#cloudwatch_levels).
 
 ##### Set the application logging level when creating an application
 <a name="cloudwatch-level-create"></a>
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action sets the application log level to `INFO`.
+The following example request for the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action sets the application log level to `INFO`.
 
 ```
 {
@@ -165,7 +165,7 @@ The following example request for the [https://docs.aws.amazon.com/managed-servi
 ##### Update the application logging level
 <a name="cloudwatch-level-update"></a>
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action sets the application log level to `INFO`.
+The following example request for the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action sets the application log level to `INFO`.
 
 ```
 {

@@ -23,7 +23,7 @@ The algorithm uses the Envoy zone-aware routing feature in the Service Connect p
 ## Verify zone-aware routing on Amazon EC2
 <a name="service-connect-zone-aware-routing-verify"></a>
 
-On Amazon EC2 container instances that use the Docker runtime, you can inspect Envoy proxy statistics inside the Service Connect agent container to confirm that zone-aware routing is active. This procedure requires AWS Systems Manager Session Manager host access and `docker exec`. For AWS Fargate or container instances that use `containerd`, use Amazon Virtual Private Cloud Flow Logs to verify routing behavior as described in [Monitoring zone-aware routing](#service-connect-zone-aware-routing-monitoring).
+On Amazon EC2 container instances that use the Docker runtime, you can inspect Envoy proxy statistics inside the Service Connect agent container to confirm that zone-aware routing is active. Your container instances must use an ECS-optimized AMI version `20260323` or later. This procedure requires AWS Systems Manager Session Manager host access and `docker exec`. For AWS Fargate or container instances that use `containerd`, use Amazon Virtual Private Cloud Flow Logs to verify routing behavior as described in [Monitoring zone-aware routing](#service-connect-zone-aware-routing-monitoring).
 
 **To verify zone-aware routing on Amazon EC2 with Docker**
 
@@ -73,3 +73,4 @@ Keep the following in mind when you use zone-aware routing:
 + Zone-aware routing works with all launch types.
 + Zone-aware routing is compatible with cross-account Service Connect namespaces shared through AWS Resource Access Manager.
 + Existing services (both client and server) require a one-time redeployment to activate zone-aware routing. After the initial redeployment, routing adjusts dynamically as endpoints change without further redeployments.
++ For the Amazon EC2 launch type, your container instances must use an Amazon ECS-optimized AMI version `20260323` or later.

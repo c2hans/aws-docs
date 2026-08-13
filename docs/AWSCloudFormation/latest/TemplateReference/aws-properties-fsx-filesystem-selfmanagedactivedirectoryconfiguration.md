@@ -74,7 +74,7 @@ The fully qualified domain name of the self-managed AD directory, such as `corp.
 *Pattern*: `^[^\u0000\u0085\u2028\u2029\r\n]{1,255}$`
 *Minimum*: `1`
 *Maximum*: `255`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `FileSystemAdministratorsGroup`  <a name="cfn-fsx-filesystem-selfmanagedactivedirectoryconfiguration-filesystemadministratorsgroup"></a>
 (Optional) The name of the domain group whose members are granted administrative privileges for the file system. Administrative privileges include taking ownership of files and folders, setting audit controls (audit ACLs) on files and folders, and administering the file system remotely by using the FSx Remote PowerShell. The group that you specify must already exist in your domain. If you don't provide one, your AD domain's Domain Admins group is used.
@@ -93,7 +93,7 @@ Only Organizational Unit (OU) objects can be the direct parent of the file syste
 *Pattern*: `^[^\u0000\u0085\u2028\u2029\r\n]{1,2000}$`
 *Minimum*: `1`
 *Maximum*: `2000`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Password`  <a name="cfn-fsx-filesystem-selfmanagedactivedirectoryconfiguration-password"></a>
 The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.

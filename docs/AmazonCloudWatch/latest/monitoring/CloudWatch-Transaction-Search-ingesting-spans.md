@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
  Navigate to your sampling rules in the console, and set the fixed sampling rate to 100%. This guarantees all trace spans are captured and ingested into CloudWatch logs. For more information, see [Configuring sampling rules](https://docs.aws.amazon.com/xray/latest/devguide/xray-console-sampling.html#xray-console-config)
 
 **If you're using the OpenTelemetry SDK**
- To record 100% of spans and get complete visibility, set your sampling configuration to [https://opentelemetry.io/docs/languages/java/sdk/#sampler](https://opentelemetry.io/docs/languages/java/sdk/#sampler). For more information, see [Language APIs & SDKs]() on the OpenTelemetry website.
+ To record 100% of spans and get complete visibility, set your sampling configuration to [always\_on](https://opentelemetry.io/docs/languages/java/sdk/#sampler). For more information, see [Language APIs & SDKs]() on the OpenTelemetry website.
 
 ### Features unlocked with head sampling
 <a name="w2aac25c21c17c17b5c13"></a>

@@ -39,7 +39,7 @@ The description field displays Markdown in the console and accepts all HTML char
 
 1. (Optional) Expand **Additional configuration** to specify whether to use the default AWS managed key or your own customer managed key for encrypting and decrypting data in this repository. If you choose to use your own customer managed key, you must ensure that it is available in the AWS Region where you are creating the repository, and that the key is active. For more information, see [AWS Key Management Service and encryption for AWS CodeCommit repositories](encryption.md).
 
-1. (Optional) Select **Enable Amazon CodeGuru Reviewer for Java and Python** if this repository contains Java or Python code, and you want CodeGuru Reviewer to analyze it. CodeGuru Reviewer uses multiple machine learning models to find code defects and to suggest improvements and fixes in pull requests. For more information, see the [https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/Welcome.html](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/Welcome.html).
+1. (Optional) Select **Enable Amazon CodeGuru Reviewer for Java and Python** if this repository contains Java or Python code, and you want CodeGuru Reviewer to analyze it. CodeGuru Reviewer uses multiple machine learning models to find code defects and to suggest improvements and fixes in pull requests. For more information, see the [*Amazon CodeGuru Reviewer User Guide*](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/Welcome.html).
 
 1. Choose **Create**.
 

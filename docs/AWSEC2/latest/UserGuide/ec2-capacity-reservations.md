@@ -64,10 +64,10 @@ The following table highlights key differences between Capacity Reservations, Re
   <tr><th></th><th>Capacity Reservations</th><th>Zonal Reserved Instances</th><th>Regional Reserved Instances</th><th>Savings Plans</th></tr>
 </thead>
 <tbody>
-  <tr><td>Term</td><td>No commitment required for immediate-use Capacity Reservations. They can be created, modified, and canceled as needed.<br />With future-dated Capacity Reservations, you specify a commitment duration for which you commit to keeping the capacity in your account. You can cancel at any time; a cancellation charge might apply during the commitment duration.</td><td colspan="3">Requires a fixed one-year or three-year commitment</td></tr>
-  <tr><td>Capacity benefit</td><td colspan="2">Capacity reserved in a specific Availability Zone.</td><td colspan="2">No capacity reserved.</td></tr>
-  <tr><td>Billing discount</td><td>No billing discount. †</td><td colspan="3">Provides a billing discount.</td></tr>
-  <tr><td>Instance Limits</td><td>Your On-Demand Instance limits per Region apply.</td><td>Default is 20 per Availability Zone. You can request a limit increase.</td><td>Default is 20 per Region. You can request a limit increase.</td><td>No limit.</td></tr>
+  <tr><td><b>Term</b></td><td>No commitment required for immediate-use Capacity Reservations. They can be created, modified, and canceled as needed.<br />With future-dated Capacity Reservations, you specify a commitment duration for which you commit to keeping the capacity in your account. You can cancel at any time; a cancellation charge might apply during the commitment duration.</td><td colspan="3">Requires a fixed one-year or three-year commitment</td></tr>
+  <tr><td><b>Capacity benefit</b></td><td colspan="2">Capacity reserved in a specific Availability Zone.</td><td colspan="2">No capacity reserved.</td></tr>
+  <tr><td><b>Billing discount</b></td><td>No billing discount. †</td><td colspan="3">Provides a billing discount.</td></tr>
+  <tr><td><b>Instance Limits</b></td><td>Your On-Demand Instance limits per Region apply.</td><td>Default is 20 per Availability Zone. You can request a limit increase.</td><td>Default is 20 per Region. You can request a limit increase.</td><td>No limit.</td></tr>
 </tbody>
 </table>
 

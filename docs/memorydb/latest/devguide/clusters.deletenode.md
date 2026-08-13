@@ -57,7 +57,7 @@ If you set the number of nodes to 1, you will no longer be Multi-AZ enabled. You
        --region {{us-east-1}}
    ```
 
-For more information, see the AWS CLI topics [https://docs.aws.amazon.com/cli/latest/reference/memorydb/update-cluster.html](https://docs.aws.amazon.com/cli/latest/reference/memorydb/update-cluster.html).
+For more information, see the AWS CLI topics [`update-cluster`](https://docs.aws.amazon.com/cli/latest/reference/memorydb/update-cluster.html).
 
 ## Using the MemoryDB API
 <a name="clusters.deletenode.api"></a>

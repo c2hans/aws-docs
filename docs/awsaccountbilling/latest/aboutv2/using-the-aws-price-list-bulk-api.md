@@ -62,7 +62,7 @@ The AWS Region is the API endpoint for the Price List Bulk API. The endpoints ar
 }
 ```
 
-For more information about this API operation, see [https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_DescribeServices.html](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_DescribeServices.html) and [language-specific AWS SDKs](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_DescribeServices.html#API_pricing_DescribeServices_SeeAlso) in the *AWS Billing and Cost Management API Reference*
+For more information about this API operation, see [DescribeServices](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_DescribeServices.html) and [language-specific AWS SDKs](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_DescribeServices.html#API_pricing_DescribeServices_SeeAlso) in the *AWS Billing and Cost Management API Reference*
 
 **Note**
 While the `DescribeServices` API currently doesn't return `serviceCodes` for Savings Plans, you will need the following `serviceCodes` to use Savings Plans in subsequent API calls:
@@ -115,7 +115,7 @@ aws pricing list-price-lists --service-code AmazonRDS --currency-code USD --effe
 
 **Example: Find price list files for a specific Region**
 If you specify the `RegionCode` parameter, the API operation returns price list file references that are specific to that Region. To find historical price list files, use the `EffectiveDate` parameter. For example, you can specify a date in the past to find a specific price list file.
-From the response, you can then use the `PriceListArn` value with the [https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetPriceListFileUrl.html](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetPriceListFileUrl.html) API operation to get your preferred price list files.
+From the response, you can then use the `PriceListArn` value with the [GetPriceListFileUrl](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetPriceListFileUrl.html) API operation to get your preferred price list files.
 
 ```
 aws pricing list-price-lists --service-code AmazonRDS --currency-code USD --region-code us-west-2 --effective-date "2023-04-03 00:00"
@@ -135,7 +135,7 @@ aws pricing list-price-lists --service-code AmazonRDS --currency-code USD --regi
 }
 ```
 
-For more information about this API operation, see [https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_ListPriceLists.html](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_ListPriceLists.html) and [language-specific AWS SDKs](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_ListPriceLists.html#API_pricing_ListPriceLists_SeeAlso) in the *AWS Billing and Cost Management API Reference*.
+For more information about this API operation, see [ListPriceLists](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_ListPriceLists.html) and [language-specific AWS SDKs](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_ListPriceLists.html#API_pricing_ListPriceLists_SeeAlso) in the *AWS Billing and Cost Management API Reference*.
 
 ### Step 3: Getting a specific price list file
 <a name="price-list-bulk-api-step-3-getting-specific-price-list"></a>
@@ -158,5 +158,5 @@ aws pricing get-price-list-file-url --price-list-arn arn:aws:pricing:::price-lis
 From the response, you can use the URL to download the price list file.
 
 For more information about this API operation, see the following topics:
-+  [https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetPriceListFileUrl.html](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetPriceListFileUrl.html) and [language-specific AWS SDKs](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetPriceListFileUrl.html#API_pricing_GetPriceListFileUrl_SeeAlso) in the *AWS Billing and Cost Management API Reference*
++  [GetPriceListFileUrl](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetPriceListFileUrl.html) and [language-specific AWS SDKs](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetPriceListFileUrl.html#API_pricing_GetPriceListFileUrl_SeeAlso) in the *AWS Billing and Cost Management API Reference*
 + [Reading the price list files](bulk-api-reading-price-list-files.md)

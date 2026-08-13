@@ -14,7 +14,7 @@ Use the built-in Neptune export API to export RDF data directly to Amazon S3 in 
 Export the results of a Gremlin traversal directly to Amazon S3 using the `call()` step. Use this when you need to export query results that are too large to return as a response, or when you want to store Gremlin query output for downstream processing.
 
 **[External `neptune-export` tool](neptune-export.md)**
-Use the open-source [https://github.com/aws/neptune-export](https://github.com/aws/neptune-export) tool – a separate application from Neptune that you deploy and operate yourself – to export property graph or RDF data in CSV and other formats. Can be run as a managed service (Neptune-Export service) or as a command-line tool. Use this when you need CSV output or formats not yet supported by native export.
+Use the open-source [`neptune-export`](https://github.com/aws/neptune-export) tool – a separate application from Neptune that you deploy and operate yourself – to export property graph or RDF data in CSV and other formats. Can be run as a managed service (Neptune-Export service) or as a command-line tool. Use this when you need CSV output or formats not yet supported by native export.
 
 For small amounts of data, you can also simply use the results of a query. For RDF data, the [Graph Store Protocol (GSP)](sparql-graph-store-protocol.md) provides a simple way to export individual named graphs.
 

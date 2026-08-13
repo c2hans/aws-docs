@@ -55,7 +55,7 @@ After you enable consolidated control findings, it can take up to 24 hours for S
 ------
 #### [ Security Hub CSPM API ]
 
-To enable or disable consolidated control findings programmatically, use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateSecurityHubConfiguration.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateSecurityHubConfiguration.html) operation of the Security Hub CSPM API. Or, if you're using the AWS CLI, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-security-hub-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-security-hub-configuration.html) command.
+To enable or disable consolidated control findings programmatically, use the [UpdateSecurityHubConfiguration](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateSecurityHubConfiguration.html) operation of the Security Hub CSPM API. Or, if you're using the AWS CLI, run the [update-security-hub-configuration](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-security-hub-configuration.html) command.
 
 For the `control-finding-generator` parameter, specify `SECURITY_CONTROL` to enable consolidated control findings. To disable consolidated control findings, specify `STANDARD_CONTROL`.
 

@@ -20,7 +20,7 @@ Amazon Bedrock provides OpenAI compatible API endpoints for fine-tuning foundati
 ## Reinforcement fine-tuning workflow for open-weight models
 <a name="fine-tuning-openai-workflow"></a>
 
-Before fine-tuning, ensure you have the pre-requisites as Amazon Bedrock needs specific permissions to create and manage the fine-tuning process. For comprehensive security and permissions information, see [Access and security for open-weight models](rft-open-weight-access-security.md).
+Before fine-tuning, make sure you have the pre-requisites as Amazon Bedrock needs specific permissions to create and manage the fine-tuning process. For comprehensive security and permissions information, see [Access and security for open-weight models](rft-open-weight-access-security.md).
 
 Run reinforcement fine-tuning for open-weight models in 5 steps:
 

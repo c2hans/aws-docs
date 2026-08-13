@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[Ack](#cfn-eks-capability-capabilityconfiguration-ack)" : {{}},
   "[ArgoCd](#cfn-eks-capability-capabilityconfiguration-argocd)" : {{ArgoCd}}
 }
 ```
@@ -27,12 +28,20 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-eks-capability-capabilityconfiguration-syntax.yaml"></a>
 
 ```
+  [Ack](#cfn-eks-capability-capabilityconfiguration-ack): {{
+    }}
   [ArgoCd](#cfn-eks-capability-capabilityconfiguration-argocd): {{
     ArgoCd}}
 ```
 
 ## Properties
 <a name="aws-properties-eks-capability-capabilityconfiguration-properties"></a>
+
+`Ack`  <a name="cfn-eks-capability-capabilityconfiguration-ack"></a>
+Property description not available.
+*Required*: No
+*Type*:
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ArgoCd`  <a name="cfn-eks-capability-capabilityconfiguration-argocd"></a>
 Property description not available.

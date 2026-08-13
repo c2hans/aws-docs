@@ -57,14 +57,14 @@ For more information regarding setting up user mapping for specific connectors, 
 When you configure your Amazon Q Business application, you use the following API operations to create your principal mapping solution:
 
 **User management**
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateUser.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateUser.html) – Creates a universally unique identifier (UUID) that's mapped to a list of local user IDs within a data source.
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteUser.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteUser.html) — Deletes a UUID that's mapped to a user.
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateUser.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateUser.html) – Updates local user IDs within a data source that are mapped to a UUID.
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetUser.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetUser.html) – Lists information associated with a user ID.
++ [CreateUser](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateUser.html) – Creates a universally unique identifier (UUID) that's mapped to a list of local user IDs within a data source.
++ [DeleteUser](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteUser.html) — Deletes a UUID that's mapped to a user.
++ [UpdateUser](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateUser.html) – Updates local user IDs within a data source that are mapped to a UUID.
++ [GetUser](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetUser.html) – Lists information associated with a user ID.
 
 **Group management**
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_PutGroup.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_PutGroup.html) – Creates, or updates, a mapping of users to groups, or groups to subgroups. You can use this API operation to:
++ [PutGroup](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_PutGroup.html) – Creates, or updates, a mapping of users to groups, or groups to subgroups. You can use this API operation to:
   + Map a group from groups in the data source to groups in your IdP.
   + Map a list of users and sub groups (for example, `Interns`) to a group (for example, `Interns 2023`).
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteGroup.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteGroup.html) – Deletes a group or a subgroup.
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetGroup.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetGroup.html) – Lists information about a group.
++ [DeleteGroup](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteGroup.html) – Deletes a group or a subgroup.
++ [GetGroup](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetGroup.html) – Lists information about a group.

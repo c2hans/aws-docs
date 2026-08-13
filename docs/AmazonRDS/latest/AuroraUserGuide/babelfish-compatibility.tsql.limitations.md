@@ -9,7 +9,7 @@ Following, you can find a table of T-SQL functionality as supported in the curre
 
 For more information about support in various versions, see [Supported functionalities in Babelfish by version](babelfish-compatibility.supported-functionality-table.md). For information about features that currently aren't supported, see [Unsupported functionalities in Babelfish](babelfish-compatibility.tsql.limitations-unsupported.md).
 
-Babelfish is available with Aurora PostgreSQL-Compatible Edition. For more information about Babelfish releases, see the [https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/Welcome.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/Welcome.html).
+Babelfish is available with Aurora PostgreSQL-Compatible Edition. For more information about Babelfish releases, see the [*Release Notes for Aurora PostgreSQL*](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/Welcome.html).
 
 | Functionality or syntax | Description of behavior or difference |
 | --- | --- |

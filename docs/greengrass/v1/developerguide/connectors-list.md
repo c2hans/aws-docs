@@ -16,7 +16,7 @@ AWS provides the following connectors that support common AWS IoT Greengrass sce
 | [CloudWatch Metrics](cloudwatch-metrics-connector.md) | Publishes custom metrics to Amazon CloudWatch. | <a name="python-connectors-runtime"></a>+  Python 3.8 \* <br />+  Python 3.7 <br />+  Python 2.7  | Yes |
 | [Device Defender](device-defender-connector.md) | Sends system metrics to AWS IoT Device Defender. | <a name="python-connectors-runtime"></a>+  Python 3.8 \* <br />+  Python 3.7 <br />+  Python 2.7  | No |
 | [Docker Application Deployment](docker-app-connector.md) | Runs a Docker Compose file to start a Docker application on the core device. | +  Python 3.8 <br />+  Python 3.7  | Yes |
-| [IoT Analytics](iot-analytics-connector.md) | Sends data from devices and sensors to AWS IoT Analytics. | <a name="python-connectors-runtime"></a>+  Python 3.8 \* <br />+  Python 3.7 <br />+  Python 2.7  | Yes |
+| [IoT Analytics](iot-analytics-connector.md) (discontinued) | Sends data from devices and sensors to AWS IoT Analytics. | <a name="python-connectors-runtime"></a>+  Python 3.8 \* <br />+  Python 3.7 <br />+  Python 2.7  | Yes |
 | [IoT Ethernet IP Protocol Adapter](ethernet-ip-connector.md) | Collects data from Ethernet/IP devices. | +  Java 8  | Yes |
 | [IoT SiteWise](iot-sitewise-connector.md) | Sends data from devices and sensors to asset properties in AWS IoT SiteWise. | +  Java 8  | Yes |
 | [Kinesis Firehose](kinesis-firehose-connector.md) | Sends data to Amazon Data Firehose delivery streams. | <a name="python-connectors-runtime"></a>+  Python 3.8 \* <br />+  Python 3.7 <br />+  Python 2.7  | Yes |

@@ -26,7 +26,7 @@ You can import any number of valid `.ics` files. However, the total size of all 
 To minimize the size of the `.ics` file, ensure that you are exporting only basic details about your calendar entries. If necessary, reduce the length of the time period that you are exporting.
 
 Time zone
-In addition to a calendar name, a calendar provider, and at least one event, your exported `.ics` file should also indicate the time zone for the calendar. If it does not, or there is a problem identifying the time zone, you will be prompted to specify one after you import the file.
+In addition to a calendar name, a calendar provider, and at least one event, your exported `.ics` file should also indicate the time zone for the calendar. If it does not, or there is a problem identifying the time zone, you are prompted to specify one after you import the file.
 
 Recurring event limitation
 Your exported `.ics` file can include recurring events. However, if one or more occurrences of a recurring event had been deleted in the source calendar, the import fails.

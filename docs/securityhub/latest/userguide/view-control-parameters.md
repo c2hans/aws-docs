@@ -27,7 +27,7 @@ Choose your preferred method, and follow the steps to review current control par
 
 **To review current control parameter values (API)**
 
-Invoke the [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchGetSecurityControls.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchGetSecurityControls.html) API, and provide one or more security control IDs or ARNs. The `Parameters` object in the response shows the current parameter values for the specified controls.
+Invoke the [BatchGetSecurityControls](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchGetSecurityControls.html) API, and provide one or more security control IDs or ARNs. The `Parameters` object in the response shows the current parameter values for the specified controls.
 
 For example, the following AWS CLI command shows the current parameter values for `APIGatway.1`, `CloudWatch.15`, and `IAM.7`. This example is formatted for Linux, macOS, or Unix, and it uses the backslash (\\) line-continuation character to improve readability.
 
@@ -59,7 +59,7 @@ Choose your preferred method to view the current parameter values in a central c
 
 **To review current control parameter values in a configuration policy (API)**
 
-1. Invoke the [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_GetConfigurationPolicy.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_GetConfigurationPolicy.html) API from the delegated administrator account in the home Region.
+1. Invoke the [GetConfigurationPolicy](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_GetConfigurationPolicy.html) API from the delegated administrator account in the home Region.
 
 1. Provide the ARN or ID of the configuration policy whose details you want to see. The response includes current parameter values.
 
@@ -73,4 +73,4 @@ $ aws securityhub get-configuration-policy \
 
 ------
 
-Control findings also include the current values of control parameters. In the [AWS Security Finding Format (ASFF)](securityhub-findings-format.md), these values appear in the `Parameters` field of the `Compliance` object. To review findings on the Security Hub CSPM console, choose **Findings** in the navigation pane. To review findings programmatically, use the [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_GetFindings.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_GetFindings.html) operation of the Security Hub CSPM API.
+Control findings also include the current values of control parameters. In the [AWS Security Finding Format (ASFF)](securityhub-findings-format.md), these values appear in the `Parameters` field of the `Compliance` object. To review findings on the Security Hub CSPM console, choose **Findings** in the navigation pane. To review findings programmatically, use the [GetFindings](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_GetFindings.html) operation of the Security Hub CSPM API.

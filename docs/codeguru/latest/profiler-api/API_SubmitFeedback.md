@@ -26,7 +26,7 @@ Content-type: application/json
 The request uses the following URI parameters.
 
  ** [anomalyInstanceId](#API_SubmitFeedback_RequestSyntax) **   <a name="profiler-SubmitFeedback-request-uri-anomalyInstanceId"></a>
-The universally unique identifier (UUID) of the [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AnomalyInstance.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AnomalyInstance.html) object that is included in the analysis data.
+The universally unique identifier (UUID) of the [`AnomalyInstance`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AnomalyInstance.html) object that is included in the analysis data.
 Pattern: `.*[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}.*`
 Required: Yes
 

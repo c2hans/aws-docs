@@ -16,7 +16,7 @@ IAM Identity Center emits two CloudTrail fields that enable you to identify the 
 + `userId` – The unique and immutable user identifier from the Identity Store of an IAM Identity Center instance.
 + `identityStoreArn` – The Amazon Resource Name (ARN) of the Identity Store that contains the user.
 
-The `userID` and `identityStoreArn` fields display in the `onBehalfOf` element nested inside the [https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html) element as shown in the following example CloudTrail event log. This event log shows these two fields on an event where the `userIdentity` type is "`IdentityCenterUser`". You can also find these fields on events for authenticated IAM Identity Center users where the `userIdentity` type is "`Unknown`". Your workflows should accept both type values.
+The `userID` and `identityStoreArn` fields display in the `onBehalfOf` element nested inside the [`userIdentity`](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html) element as shown in the following example CloudTrail event log. This event log shows these two fields on an event where the `userIdentity` type is "`IdentityCenterUser`". You can also find these fields on events for authenticated IAM Identity Center users where the `userIdentity` type is "`Unknown`". Your workflows should accept both type values.
 
 ```
 "userIdentity":{
@@ -35,7 +35,7 @@ We recommend you use `userId` and `identityStoreArn` for identifying the user be
 Retrieve the username from the IAM Identity Center directory as explained in [Username in sign-in CloudTrail events](username-sign-in-cloudtrail-events.md).
 Get the `UserName` that IAM Identity Center emits under the `additionalEventData` element in Sign-in. This option doesn't require access to the IAM Identity Center directory. For more information, see [Username in sign-in CloudTrail events](username-sign-in-cloudtrail-events.md).
 
-To retrieve the details of a user, including the `username` field, you query the Identity Store with user ID and Identity Store ID as parameters. You can perform this action through the [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeUser.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeUser.html) API request or through the CLI. The following is an example CLI command. You can omit the `region` parameter if your IAM Identity Center instance is in the CLI default Region.
+To retrieve the details of a user, including the `username` field, you query the Identity Store with user ID and Identity Store ID as parameters. You can perform this action through the [`DescribeUser`](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeUser.html) API request or through the CLI. The following is an example CLI command. You can omit the `region` parameter if your IAM Identity Center instance is in the CLI default Region.
 
 ```
 aws identitystore describe-user \
@@ -95,7 +95,7 @@ The following section explains how you can look up an IAM Identity Center user g
 ## Viewing an IAM Identity Center user by username and externalId
 <a name="view-username-extid"></a>
 
-You can retrieve user attributes from the IAM Identity Center directory for a known username by first requesting a corresponding `userId` using the [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_GetUserId.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_GetUserId.html) API request, then issue a [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeUser.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeUser.html) API request, as shown in the previous example. The following example demonstrates how you can retrieve a `userId` from the Identity Store for a specific username. You can omit the `region` parameter if your IAM Identity Center instance is in the default Region with the CLI.
+You can retrieve user attributes from the IAM Identity Center directory for a known username by first requesting a corresponding `userId` using the [`GetUserId`](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_GetUserId.html) API request, then issue a [`DescribeUser`](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeUser.html) API request, as shown in the previous example. The following example demonstrates how you can retrieve a `userId` from the Identity Store for a specific username. You can omit the `region` parameter if your IAM Identity Center instance is in the default Region with the CLI.
 
 ```
 aws identitystore get-user-id \

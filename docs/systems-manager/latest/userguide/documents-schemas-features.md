@@ -26,7 +26,7 @@ By using the latest schema version for `Command` and `Policy` documents, you can
 | Automatic versioning | Any update to a document creates a new version. This isn't a schema version, but a version of the document. |
 | Default version | If you have multiple versions of a document, you can specify which version is the default document. |
 | Sequencing | Plugins or *steps* in a document run in the order that you specified. |
-| Cross-platform support | Cross-platform support allows you to specify different operating systems for different plugins within the same SSM document. Cross-platform support uses the `precondition` parameter within a step.  |
+| Cross-platform support | Cross-platform support lets you specify different operating systems for different plugins within the same SSM document. Cross-platform support uses the `precondition` parameter within a step.  |
 | Parameter interpolation | Interpolation means to insert or substitute a variable value into a string. Think of it as filling in a blank space with actual values before the string is used. In the context of SSM documents, parameter interpolation allows string parameters to be interpolated into environment variables before command execution, providing better security against command injections. When set to `ENV_VAR`, the agent creates an environment variable named `SSM_{{parameter-name}}` that contains the parameter's value. |
 
 **Note**
@@ -49,7 +49,7 @@ With schema version 2.2 or later, you can use the `precondition` parameter to sp
 
 For documents that use schema version 2.2 or later, if `precondition` isn't specified, each plugin is either run or skipped based on the plugin’s compatibility with the operating system. Plugin compatibility with the operating system is evaluated before the `precondition`. For documents that use schema 2.0 or earlier, incompatible plugins throw an error.
 
-For example, in a schema version 2.2 document, if `precondition` isn't specified and the `aws:runShellScript` plugin is listed, then the step runs on Linux instances, but the system skips it on Windows Server instances because the `aws:runShellScript` isn't compatible with Windows Server instances. However, for a schema version 2.0 document, if you specify the `aws:runShellScript` plugin, and then run the document on a Windows Server instances, the execution fails. You can see an example of the precondition parameter in an SSM document later in this section.
+For example, in a schema version 2.2 document, if `precondition` isn't specified and the `aws:runShellScript` plugin is listed, the step runs on Linux instances but is skipped on Windows Server instances. This is because `aws:runShellScript` isn't compatible with Windows Server. In a schema version 2.0 document, specifying `aws:runShellScript` and running the document on a Windows Server instance causes the execution to fail.
 
 ## Schema version 2.2
 <a name="documents-schema-twox"></a>
@@ -380,7 +380,7 @@ On SSM Agent versions prior to 3.3.2746.0, the agent ignores the `interpolationT
 `allowedPattern` isn’t technically required if an SSM document doesn’t use double braces: `{{ }}`
 
 **Schema version 2.2 State Manager example**
-You can use the following SSM document with State Manager, a tool in Systems Manager, to download and install the ClamAV antivirus software. State Manager enforces a specific configuration, which means that each time the State Manager association is run, the system checks to see if the ClamAV software is installed. If not, State Manager reruns this document.
+You can use the following SSM document with State Manager to download and install the ClamAV antivirus software. State Manager enforces a specific configuration, which means that each time the State Manager association is run, the system checks to see if the ClamAV software is installed. If not, State Manager reruns this document.
 
 ------
 #### [ YAML ]
@@ -589,7 +589,7 @@ description: 'Install or uninstall the latest version or specified version of an
   AwsVssComponents, and AmazonCloudWatchAgent, and AWSSupport-EC2Rescue.'
 parameters:
   action:
-    description: "(Required) Specify whether or not to install or uninstall the package."
+    description: "(Required) Specify whether to install or uninstall the package."
     type: String
     allowedValues:
     - Install
@@ -619,7 +619,7 @@ mainSteps:
    "description": "Install or uninstall the latest version or specified version of an AWS package. Available packages include the following: AWSPVDriver, AwsEnaNetworkDriver, AwsVssComponents, and AmazonCloudWatchAgent, and AWSSupport-EC2Rescue.",
    "parameters": {
       "action": {
-         "description":"(Required) Specify whether or not to install or uninstall the package.",
+         "description":"(Required) Specify whether to install or uninstall the package.",
          "type":"String",
          "allowedValues":[
             "Install",

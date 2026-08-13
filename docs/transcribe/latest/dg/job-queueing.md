@@ -42,7 +42,7 @@ You can enable job queueing using the **AWS Management Console**, **AWS CLI**, o
 
 This example uses the [start-transcription-job](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/start-transcription-job.html) command and `job-execution-settings` parameter with the `AllowDeferredExecution` sub-parameter. Note that when you include `AllowDeferredExecution` in your request, you must also include `DataAccessRoleArn`.
 
-For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_JobExecutionSettings.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_JobExecutionSettings.html).
+For more information, see [`StartTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [`JobExecutionSettings`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_JobExecutionSettings.html).
 
 ```
 aws transcribe start-transcription-job \
@@ -84,7 +84,7 @@ The file *my-first-queueing-request.json* contains the following request body.
 ### AWS SDK for Python (Boto3)
 <a name="queueing-python-batch"></a>
 
-This example uses the AWS SDK for Python (Boto3) to enable job queueing using the `AllowDeferredExecution` argument for the [start\_transcription\_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_transcription_job) method. Note that when you include `AllowDeferredExecution` in your request, you must also include `DataAccessRoleArn`. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_JobExecutionSettings.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_JobExecutionSettings.html).
+This example uses the AWS SDK for Python (Boto3) to enable job queueing using the `AllowDeferredExecution` argument for the [start\_transcription\_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_transcription_job) method. Note that when you include `AllowDeferredExecution` in your request, you must also include `DataAccessRoleArn`. For more information, see [`StartTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [`JobExecutionSettings`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_JobExecutionSettings.html).
 
 For additional examples using the AWS SDKs, including feature-specific, scenario, and cross-service examples, refer to the [Code examples for Amazon Transcribe using AWS SDKs](service_code_examples.md) chapter.
 
@@ -118,4 +118,4 @@ while True:
 print(status)
 ```
 
-You can view the progress of a queued job via the AWS Management Console or by submitting a [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_GetTranscriptionJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_GetTranscriptionJob.html) request. When a job is queued, the `Status` is `QUEUED`. The status changes to `IN_PROGRESS` once your job starts processing, then changes to `COMPLETED` or `FAILED` when processing is finished.
+You can view the progress of a queued job via the AWS Management Console or by submitting a [`GetTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_GetTranscriptionJob.html) request. When a job is queued, the `Status` is `QUEUED`. The status changes to `IN_PROGRESS` once your job starts processing, then changes to `COMPLETED` or `FAILED` when processing is finished.

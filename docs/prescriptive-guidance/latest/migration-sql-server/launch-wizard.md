@@ -22,7 +22,7 @@ The following table shows information about deployment on Windows.
 
 |
 |
-| **Use case or feature** | **Launch Wizard support** | [https://aws.amazon.com/quickstart/](https://aws.amazon.com/quickstart/)** support** | **Amazon EC2 Console support** |
+| **Use case or feature** | **Launch Wizard support** | [**Quick Start**](https://aws.amazon.com/quickstart/)** support** | **Amazon EC2 Console support** |
 | --- |--- |--- |--- |
 | Single SQL node deployment | Yes | No | Yes |
 | HA deployment: Always On availability groups | Yes | Yes | No |
@@ -34,7 +34,7 @@ The following table shows information about deployment on Linux.
 
 |
 |
-| **Use case or feature** | **Launch Wizard support** | [https://aws.amazon.com/quickstart/](https://aws.amazon.com/quickstart/)** support** | **Amazon EC2 Console support** |
+| **Use case or feature** | **Launch Wizard support** | [**Quick Start**](https://aws.amazon.com/quickstart/)** support** | **Amazon EC2 Console support** |
 | --- |--- |--- |--- |
 | Single SQL node deployment | Yes | No | Yes |
 | HA deployment on Ubuntu | Yes | No | No |
@@ -44,7 +44,7 @@ The following table shows information about sizing.
 
 |
 |
-| **Use case or feature** | **Launch Wizard support** | [https://aws.amazon.com/quickstart/](https://aws.amazon.com/quickstart/)** support** | **Amazon EC2 Console support** |
+| **Use case or feature** | **Launch Wizard support** | [**Quick Start**](https://aws.amazon.com/quickstart/)** support** | **Amazon EC2 Console support** |
 | --- |--- |--- |--- |
 | Instance type recommendation | Yes | No | No |
 | Cost estimation | Yes | No | No |
@@ -53,7 +53,7 @@ The following table shows information about configuration.
 
 |
 |
-| **Use case or feature** | **Launch Wizard support** | [https://aws.amazon.com/quickstart/](https://aws.amazon.com/quickstart/)** support** | **Amazon EC2 Console support** |
+| **Use case or feature** | **Launch Wizard support** | [**Quick Start**](https://aws.amazon.com/quickstart/)** support** | **Amazon EC2 Console support** |
 | --- |--- |--- |--- |
 | Automatically created AWS Systems Manager resource group | Yes | No | No |
 | One-click Amazon SNSnotification | Yes | No | No |

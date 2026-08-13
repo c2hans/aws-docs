@@ -85,4 +85,4 @@ Finally, use the console test window to test responses from your bot.
 
 1.  Enter **What is Amazon Kendra?** in the console test window. Verify that the bot responds with a link.
 
-1.  For more information about configuring `AMAZON.KendraSearchIntent`, see [https://docs.aws.amazon.com/lexv2/latest/dg/built-in-intent-kendra-search.html](https://docs.aws.amazon.com/lexv2/latest/dg/built-in-intent-kendra-search.html) and [KendraConfiguration](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_KendraConfiguration.html).
+1.  For more information about configuring `AMAZON.KendraSearchIntent`, see [AMAZON.KendraSearchIntent](https://docs.aws.amazon.com/lexv2/latest/dg/built-in-intent-kendra-search.html) and [KendraConfiguration](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_KendraConfiguration.html).

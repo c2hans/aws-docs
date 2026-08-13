@@ -40,7 +40,7 @@ You can't modify default parameter groups for RDS for Db2 DB instances. Therefor
 
 **To update parameters in a custom parameter group**
 
-1. Create a custom parameter group by running the [https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-parameter-group.html) command.
+1. Create a custom parameter group by running the [create-db-parameter-group](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-parameter-group.html) command.
 
    Include the following required options:
    + `--db-parameter-group-name` – A name for the parameter group that you are creating.
@@ -49,7 +49,7 @@ You can't modify default parameter groups for RDS for Db2 DB instances. Therefor
 
    For more information about creating a DB parameter group, see [Creating a DB parameter group in Amazon RDS](USER_WorkingWithParamGroups.Creating.md).
 
-1. Modify the parameters in the custom parameter group that you created by running the [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-parameter-group.html) command.
+1. Modify the parameters in the custom parameter group that you created by running the [modify-db-parameter-group](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-parameter-group.html) command.
 
    Include the following required options:
    + `--db-parameter-group-name` – The name of the parameter group that you created.

@@ -395,7 +395,7 @@ For more examples, see [How Amazon ECS manages CPU and memory resources](https:/
 `gpu`
 Type: [ResourceRequirement](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ResourceRequirement.html) object
 Required: No
-The number of physical `GPUs` that the Amazon ECS container agent reserves for the container. You can specify a numeric value or `ALL`. When you specify `ALL`, all GPUs on the container instance are allocated to the container. The number of GPUs reserved for all containers in a task must not exceed the number of available GPUs on the container instance the task is launched on. For more information, see [Amazon ECS task definitions for GPU workloads](ecs-gpu.md).
+The number of physical `GPUs` that the Amazon ECS container agent reserves for the container. You can specify an integer value, a decimal value for fractional GPUs, or `ALL`. When you specify `ALL`, all GPUs on the container instance are allocated to the container. When you specify a decimal value (such as `0.125`, `0.25`, or `0.5`), Amazon ECS places the task on a fractional GPU instance (G6f) that provides the requested GPU capacity. The number of GPUs reserved for all containers in a task must not exceed the number of available GPUs on the container instance the task is launched on. For more information, see [Amazon ECS task definitions for GPU workloads](ecs-gpu.md).
 This parameter isn't supported for Windows containers.
 
 `Elastic Inference accelerator`
@@ -436,7 +436,7 @@ The command that's passed to the container. This parameter maps to `Cmd` in the 
 `workingDirectory`
 Type: String
 Required: No
-The working directory to run commands inside the container in. This parameter maps to `WorkingDir` in the [Create a container](https://docs.docker.com/reference/api/engine/version/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/reference/api/engine/version/v1.38/) and the `--workdir` option to [https://docs.docker.com/reference/cli/docker/container/run/](https://docs.docker.com/reference/cli/docker/container/run/).
+The working directory to run commands inside the container in. This parameter maps to `WorkingDir` in the [Create a container](https://docs.docker.com/reference/api/engine/version/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/reference/api/engine/version/v1.38/) and the `--workdir` option to [**docker run**](https://docs.docker.com/reference/cli/docker/container/run/).
 
 ```
 "workingDirectory": "string"

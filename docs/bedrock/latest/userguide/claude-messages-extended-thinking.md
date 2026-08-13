@@ -119,7 +119,7 @@ Claude 3.7 Sonnet still returns the full thinking output.
 ### Streaming thinking
 <a name="claude-messages-use-extended-thinking-streaming"></a>
 
-You can stream extended thinking responses using server-sent events (SSE). When streaming is enabled for extended thinking, you receive thinking content via `thinking_delta` events. Streamed events are not guaranteed to return at a constant rate. There can be delays between streaming events. For more documentation on streaming via the Messages API, see [Streaming messages](https://docs.anthropic.com/en/docs/build-with-claude/streaming).
+You can stream extended thinking responses using server-sent events (SSE). When streaming is enabled for extended thinking, you receive thinking content through `thinking_delta` events. Streamed events are not guaranteed to return at a constant rate. There can be delays between streaming events. For more documentation on streaming through the Messages API, see [Streaming messages](https://docs.anthropic.com/en/docs/build-with-claude/streaming).
 
 Here's how to handle streaming with thinking using **InvokeModelWithResponseStream**:
 

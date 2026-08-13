@@ -57,23 +57,23 @@ The following table shows the mapping of protection types, `dataSources`, and `f
 
 <table>
 <thead>
-  <tr><th>GuardDuty protection type</th><th>Data source name\*</th><th>Feature name</th></tr>
+  <tr><th>GuardDuty protection type</th><th>Data source name*</th><th>Feature name</th></tr>
 </thead>
 <tbody>
-  <tr><td>[VPC Flow Logs](guardduty_data-sources.md#guardduty_vpc)</td><td>`flowLogs` (read only; can't be modified)</td><td>`FLOW_LOGS` (read only; can't be modified)</td></tr>
-  <tr><td>[Route53 Resolver DNS query logs](guardduty_data-sources.md#guardduty_dns)</td><td>`dnsLogs` (read only; can't be modified)</td><td>`DNS_LOGS` (read only; can't be modified)</td></tr>
-  <tr><td>[CloudTrail events](guardduty_data-sources.md#guardduty_controlplane)</td><td>`cloudTrail` (read only; can't be modified)</td><td>`CLOUD_TRAIL` (read only; can't be modified)</td></tr>
-  <tr><td>[S3](s3-protection.md)</td><td>`s3Logs`</td><td>`S3_DATA_EVENTS`</td></tr>
-  <tr><td>[EKS Protection](kubernetes-protection.md)</td><td>`kubernetes.auditlogs`</td><td>`EKS_AUDIT_LOGS`</td></tr>
-  <tr><td>[Malware Protection for EC2](malware-protection.md)</td><td>`malwareProtection.scanEc2InstanceWithFindings.ebsVolumes`</td><td>`EBS_MALWARE_PROTECTION`</td></tr>
-  <tr><td>[RDS Login events](rds-protection.md)</td><td rowspan="7">GuardDuty provides only feature activation support for these protection types.</td><td>`RDS_LOGIN_EVENTS`</td></tr>
-  <tr><td>EKS Runtime Monitoring</td><td>`EKS_RUNTIME_MONITORING`</td></tr>
-  <tr><td>[Runtime Monitoring](runtime-monitoring.md)</td><td>`RUNTIME_MONITORING`</td></tr>
-  <tr><td>GuardDuty security agent for Amazon EKS clusters</td><td>`EKS_RUNTIME_MONITORING.additionalConfiguration.EKS_ADDON_MANAGEMENT`<br />`RUNTIME_MONITORING.additionalConfiguration.EKS_ADDON_MANAGEMENT`</td></tr>
-  <tr><td>GuardDuty security agent for Amazon ECS-Fargate clusters</td><td>`RUNTIME_MONITORING.additionalConfiguration.ECS_FARGATE_AGENT_MANAGEMENT`</td></tr>
-  <tr><td>GuardDuty security agent for Amazon EC2 instances</td><td>`RUNTIME_MONITORING.additionalConfiguration.EC2_AGENT_MANAGEMENT`</td></tr>
-  <tr><td>[Lambda Protection](lambda-protection.md)</td><td>`LAMBDA_NETWORK_LOGS`</td></tr>
+  <tr><td><a href="guardduty_data-sources.md#guardduty_vpc">VPC Flow Logs</a></td><td><code>flowLogs</code> (read only; can't be modified)</td><td><code>FLOW_LOGS</code> (read only; can't be modified)</td></tr>
+  <tr><td><a href="guardduty_data-sources.md#guardduty_dns">Route53 Resolver DNS query logs</a></td><td><code>dnsLogs</code> (read only; can't be modified)</td><td><code>DNS_LOGS</code> (read only; can't be modified)</td></tr>
+  <tr><td><a href="guardduty_data-sources.md#guardduty_controlplane">CloudTrail events</a></td><td><code>cloudTrail</code> (read only; can't be modified)</td><td><code>CLOUD_TRAIL</code> (read only; can't be modified)</td></tr>
+  <tr><td><a href="s3-protection.md">S3</a></td><td><code>s3Logs</code></td><td><code>S3_DATA_EVENTS</code></td></tr>
+  <tr><td><a href="kubernetes-protection.md">EKS Protection</a></td><td><code>kubernetes.auditlogs</code></td><td><code>EKS_AUDIT_LOGS</code></td></tr>
+  <tr><td><a href="malware-protection.md">Malware Protection for EC2</a></td><td><code>malwareProtection.scanEc2InstanceWithFindings.ebsVolumes</code></td><td><code>EBS_MALWARE_PROTECTION</code></td></tr>
+  <tr><td><a href="rds-protection.md">RDS Login events</a></td><td rowspan="7">GuardDuty provides only feature activation support for these protection types.</td><td><code>RDS_LOGIN_EVENTS</code></td></tr>
+  <tr><td>EKS Runtime Monitoring</td><td><code>EKS_RUNTIME_MONITORING</code></td></tr>
+  <tr><td><a href="runtime-monitoring.md">Runtime Monitoring</a></td><td><code>RUNTIME_MONITORING</code></td></tr>
+  <tr><td>GuardDuty security agent for Amazon EKS clusters</td><td><code>EKS_RUNTIME_MONITORING.additionalConfiguration.EKS_ADDON_MANAGEMENT</code><br /><code>RUNTIME_MONITORING.additionalConfiguration.EKS_ADDON_MANAGEMENT</code></td></tr>
+  <tr><td>GuardDuty security agent for Amazon ECS-Fargate clusters</td><td><code>RUNTIME_MONITORING.additionalConfiguration.ECS_FARGATE_AGENT_MANAGEMENT</code></td></tr>
+  <tr><td>GuardDuty security agent for Amazon EC2 instances</td><td><code>RUNTIME_MONITORING.additionalConfiguration.EC2_AGENT_MANAGEMENT</code></td></tr>
+  <tr><td><a href="lambda-protection.md">Lambda Protection</a></td><td><code>LAMBDA_NETWORK_LOGS</code></td></tr>
 </tbody>
 </table>
 
-\*GetUsageStatistics uses its own `dataSource` names. For more information, see [Monitoring GuardDuty Usage and Estimating Costs](monitoring_costs.md) or [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetUsageStatistics.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetUsageStatistics.html).
+\*GetUsageStatistics uses its own `dataSource` names. For more information, see [Monitoring GuardDuty Usage and Estimating Costs](monitoring_costs.md) or [GetUsageStatistics](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetUsageStatistics.html).

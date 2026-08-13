@@ -38,9 +38,9 @@ This MQTT library doesn't have platform dependencies, such as threading or synch
   <tr><th>File</th><th>With -O1 Optimization</th><th>With -Os Optimization</th></tr>
 </thead>
 <tbody>
-  <tr><td>core\_mqtt.c</td><td>4.0K</td><td>3.4K</td></tr>
-  <tr><td>core\_mqtt\_state.c</td><td>1.7K</td><td>1.3K</td></tr>
-  <tr><td>core\_mqtt\_serializer.c</td><td>2.8K</td><td>2.2K</td></tr>
-  <tr><td>Total estimates</td><td>8.5K</td><td>6.9K</td></tr>
+  <tr><td>core_mqtt.c</td><td>4.0K</td><td>3.4K</td></tr>
+  <tr><td>core_mqtt_state.c</td><td>1.7K</td><td>1.3K</td></tr>
+  <tr><td>core_mqtt_serializer.c</td><td>2.8K</td><td>2.2K</td></tr>
+  <tr><td><b>Total estimates</b></td><td><b>8.5K</b></td><td><b>6.9K</b></td></tr>
 </tbody>
 </table>

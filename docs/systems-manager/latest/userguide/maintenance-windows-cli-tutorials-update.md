@@ -113,7 +113,7 @@ As you follow the steps in this tutorial, replace the values in italicized {{red
    }
    ```
 
-1. The `start-date` option allows you to delay activation of a maintenance window until a specified future date. The `end-date` option allows you to set a date and time in the future after which the maintenance window no longer runs. Specify the options in ISO-8601 Extended format.
+1. The `start-date` option lets you delay activation of a maintenance window until a specified future date. The `end-date` option lets you set a date and time in the future after which the maintenance window no longer runs. Specify the options in ISO-8601 Extended format.
 
    Run the following command to specify a date and time range for regularly scheduled maintenance window executions.
 

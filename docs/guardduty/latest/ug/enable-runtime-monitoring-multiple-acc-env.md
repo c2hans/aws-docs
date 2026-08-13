@@ -32,14 +32,7 @@ In a multiple-account environments, only the delegated GuardDuty administrator a
 
    1. Choose **Enable** under the **Delegated Administrator (this account)** section.
 
-1. For GuardDuty to receive the runtime events from one or more resource types – an Amazon EC2 instance, Amazon ECS cluster, or an Amazon EKS cluster, use the following options to manage the security agent for these resources:
-
-**To enable GuardDuty security agent**
-   + [Enabling automated security agent for Amazon EC2 instance](managing-gdu-agent-ec2-automated.md)
-   + [Managing security agent manually for Amazon EC2 resource](managing-gdu-agent-ec2-manually.md)
-   + [Managing automated security agent for Fargate (Amazon ECS only)](managing-gdu-agent-ecs-automated.md)
-   + [Managing security agent automatically for Amazon EKS resources](managing-gdu-agent-eks-automatically.md)
-   + [Managing security agent manually for Amazon EKS cluster](managing-gdu-agent-eks-manually.md)
+1. Manage the security agent for your resource type. For more information, see [Managing GuardDuty security agents](runtime-monitoring-managing-agents.md).
 
 ## For all member accounts
 <a name="runtime-monitoring-config-all-member-accounts"></a>
@@ -56,14 +49,7 @@ In a multiple-account environments, only the delegated GuardDuty administrator a
 
 1. Choose **Enable for all accounts**.
 
-1. For GuardDuty to receive the runtime events from one or more resource types – an Amazon EC2 instance, Amazon ECS cluster, or an Amazon EKS cluster, use the following options to manage the security agent for these resources:
-
-**To enable GuardDuty security agent**
-   + [Enabling automated security agent for Amazon EC2 instance](managing-gdu-agent-ec2-automated.md)
-   + [Managing security agent manually for Amazon EC2 resource](managing-gdu-agent-ec2-manually.md)
-   + [Managing automated security agent for Fargate (Amazon ECS only)](managing-gdu-agent-ecs-automated.md)
-   + [Managing security agent automatically for Amazon EKS resources](managing-gdu-agent-eks-automatically.md)
-   + [Managing security agent manually for Amazon EKS cluster](managing-gdu-agent-eks-manually.md)
+1. Manage the security agent for your resource type. For more information, see [Managing GuardDuty security agents](runtime-monitoring-managing-agents.md).
 
 ## For all existing active member accounts
 <a name="runtime-monitoring-all-existing-active-member-accounts"></a>
@@ -84,14 +70,7 @@ In a multiple-account environments, only the delegated GuardDuty administrator a
 
 1. Choose **Confirm**.
 
-1. For GuardDuty to receive the runtime events from one or more resource types – an Amazon EC2 instance, Amazon ECS cluster, or an Amazon EKS cluster, use the following options to manage the security agent for these resources:
-
-**To enable GuardDuty security agent**
-   + [Enabling automated security agent for Amazon EC2 instance](managing-gdu-agent-ec2-automated.md)
-   + [Managing security agent manually for Amazon EC2 resource](managing-gdu-agent-ec2-manually.md)
-   + [Managing automated security agent for Fargate (Amazon ECS only)](managing-gdu-agent-ecs-automated.md)
-   + [Managing security agent automatically for Amazon EKS resources](managing-gdu-agent-eks-automatically.md)
-   + [Managing security agent manually for Amazon EKS cluster](managing-gdu-agent-eks-manually.md)
+1. Manage the security agent for your resource type. For more information, see [Managing GuardDuty security agents](runtime-monitoring-managing-agents.md).
 
 **Note**
 It may take up to 24 hours to update the configuration for the member accounts.
@@ -113,14 +92,7 @@ It may take up to 24 hours to update the configuration for the member accounts.
 
 1. Select **Automatically enable for new member accounts**.
 
-1. For GuardDuty to receive the runtime events from one or more resource types – an Amazon EC2 instance, Amazon ECS cluster, or an Amazon EKS cluster, use the following options to manage the security agent for these resources:
-
-**To enable GuardDuty security agent**
-   + [Enabling automated security agent for Amazon EC2 instance](managing-gdu-agent-ec2-automated.md)
-   + [Managing security agent manually for Amazon EC2 resource](managing-gdu-agent-ec2-manually.md)
-   + [Managing automated security agent for Fargate (Amazon ECS only)](managing-gdu-agent-ecs-automated.md)
-   + [Managing security agent automatically for Amazon EKS resources](managing-gdu-agent-eks-automatically.md)
-   + [Managing security agent manually for Amazon EKS cluster](managing-gdu-agent-eks-manually.md)
+1. Manage the security agent for your resource type. For more information, see [Managing GuardDuty security agents](runtime-monitoring-managing-agents.md).
 
 ## For selective active member accounts only
 <a name="runtime-monitoring-enable-selective-member-accounts"></a>
@@ -143,11 +115,4 @@ It may take up to 24 hours to update the configuration for the member accounts.
 
 1. Choose **Confirm**.
 
-1. For GuardDuty to receive the runtime events from one or more resource types – an Amazon EC2 instance, Amazon ECS cluster, or an Amazon EKS cluster, use the following options to manage the security agent for these resources:
-
-**To enable GuardDuty security agent**
-   + [Enabling automated security agent for Amazon EC2 instance](managing-gdu-agent-ec2-automated.md)
-   + [Managing security agent manually for Amazon EC2 resource](managing-gdu-agent-ec2-manually.md)
-   + [Managing automated security agent for Fargate (Amazon ECS only)](managing-gdu-agent-ecs-automated.md)
-   + [Managing security agent automatically for Amazon EKS resources](managing-gdu-agent-eks-automatically.md)
-   + [Managing security agent manually for Amazon EKS cluster](managing-gdu-agent-eks-manually.md)
+1. Manage the security agent for your resource type. For more information, see [Managing GuardDuty security agents](runtime-monitoring-managing-agents.md).

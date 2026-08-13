@@ -55,13 +55,13 @@ Amazon SQS FIFO queues handle message retrieval, including batch processing, FIF
 Producers and consumers can safely retry failed actions in Amazon SQS FIFO queues without disrupting message order or introducing duplicates. This topic highlights how deduplication IDs and visibility timeouts ensure message integrity during retries.
 
 1. **Producer retries**
-   + If a [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html) action fails, the producer can retry sending the message multiple times with the same message deduplication ID.
+   + If a [`SendMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html) action fails, the producer can retry sending the message multiple times with the same message deduplication ID.
    + As long as the producer receives at least one acknowledgment before the deduplication interval expires, retries:
      + Do not introduce duplicate messages.
      + Do not disrupt message order.
 
 1. **Consumer retries**
-   + If a [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html) action fails, the consumer can retry as many times as necessary using the same receive request attempt ID.
+   + If a [`ReceiveMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html) action fails, the consumer can retry as many times as necessary using the same receive request attempt ID.
    + As long as the consumer receives at least one acknowledgment before the visibility timeout expires, retries:
      + Do not disrupt message order.
 

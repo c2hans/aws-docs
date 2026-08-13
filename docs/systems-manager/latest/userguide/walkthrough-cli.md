@@ -12,13 +12,6 @@ The following sample walkthrough shows you how to use the AWS Command Line Inter
 **Important**
 Only trusted administrators should be allowed to use AWS Systems Manager pre-configured documents shown in this topic. The commands or scripts specified in Systems Manager documents run with administrative permissions on your managed nodes. If a user has permission to run any of the pre-defined Systems Manager documents (any document that begins with `AWS-`), then that user also has administrator access to the node. For all other users, you should create restrictive documents and share them with specific users.
 
-**Topics**
-+ [Step 1: Getting started](#walkthrough-cli-settings)
-+ [Step 2: Run shell scripts to view resource details](#walkthrough-cli-run-scripts)
-+ [Step 3: Send simple commands using the `AWS-RunShellScript` document](#walkthrough-cli-example-1)
-+ [Step 4: Run a simple Python script using Run Command](#walkthrough-cli-example-2)
-+ [Step 5: Run a Bash script using Run Command](#walkthrough-cli-example-3)
-
 ## Step 1: Getting started
 <a name="walkthrough-cli-settings"></a>
 
@@ -62,7 +55,7 @@ You must either have administrator permissions on the managed node you want to c
 
 1. Run the following command to view details about a particular managed node.
 **Note**
-To run the commands in this walkthrough, replace the instance and command IDs. For managed AWS IoT Greengrass core devices, use the mi-{{ID\_number}} for instance ID. The command ID is returned as a response to **send-command**. Instance IDs are available from Fleet Manager, a tool in AWS Systems Manager..
+To run the commands in this walkthrough, replace the instance and command IDs. For managed AWS IoT Greengrass core devices, use the mi-{{ID\_number}} for instance ID. The command ID is returned as a response to **send-command**. Instance IDs are available from Fleet Manager.
 
 ------
 #### [ Linux & macOS ]

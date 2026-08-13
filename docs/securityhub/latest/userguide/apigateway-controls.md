@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon API Gateway service and
 
 **Resource type:** `AWS::ApiGateway::Stage`, `AWS::ApiGatewayV2::Stage`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/api-gw-execution-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/api-gw-execution-logging-enabled.html)
+**AWS Config rule:** [api-gw-execution-logging-enabled](https://docs.aws.amazon.com/config/latest/developerguide/api-gw-execution-logging-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -48,7 +48,7 @@ To enable logging for REST and WebSocket API operations, see [Set up CloudWatch 
 
 **Resource type:** `AWS::ApiGateway::Stage`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/api-gw-ssl-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/api-gw-ssl-enabled.html)
+**AWS Config rule:** [api-gw-ssl-enabled](https://docs.aws.amazon.com/config/latest/developerguide/api-gw-ssl-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -74,7 +74,7 @@ For detailed instructions on how to generate and configure API Gateway REST API 
 
 **Resource type:** `AWS::ApiGateway::Stage`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/api-gw-xray-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/api-gw-xray-enabled.html)
+**AWS Config rule:** [api-gw-xray-enabled](https://docs.aws.amazon.com/config/latest/developerguide/api-gw-xray-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -100,7 +100,7 @@ For detailed instructions on how to enable X-Ray active tracing for API Gateway 
 
 **Resource type:** `AWS::ApiGateway::Stage`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/api-gw-associated-with-waf.html](https://docs.aws.amazon.com/config/latest/developerguide/api-gw-associated-with-waf.html)
+**AWS Config rule:** [api-gw-associated-with-waf](https://docs.aws.amazon.com/config/latest/developerguide/api-gw-associated-with-waf.html)
 
 **Schedule type:** Change triggered
 
@@ -154,7 +154,7 @@ To configure API caching for a stage, see [Enable Amazon API Gateway caching](ht
 
 **Resource type:** `AWS::ApiGatewayV2::Route`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/api-gwv2-authorization-type-configured.html](https://docs.aws.amazon.com/config/latest/developerguide/api-gwv2-authorization-type-configured.html)
+**AWS Config rule:** [api-gwv2-authorization-type-configured](https://docs.aws.amazon.com/config/latest/developerguide/api-gwv2-authorization-type-configured.html)
 
 **Schedule type:** Periodic
 
@@ -184,7 +184,7 @@ To set an authorization type for HTTP APIs, see [Controlling and managing access
 
 **Resource type:** `AWS::ApiGatewayV2::Stage`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/api-gwv2-access-logs-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/api-gwv2-access-logs-enabled.html)
+**AWS Config rule:** [api-gwv2-access-logs-enabled](https://docs.aws.amazon.com/config/latest/developerguide/api-gwv2-access-logs-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -210,7 +210,7 @@ To set up access logging, see [Set up CloudWatch API logging using the API Gatew
 
 **Resource type:** `AWS::ApiGatewayV2::Integration`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/apigatewayv2-integration-private-https-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/apigatewayv2-integration-private-https-enabled.html)
+**AWS Config rule:** [apigatewayv2-integration-private-https-enabled](https://docs.aws.amazon.com/config/latest/developerguide/apigatewayv2-integration-private-https-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -234,7 +234,7 @@ To enable encryption in transit for private connections in an API Gateway v2 Int
 
 **Resource type:** `AWS::ApiGateway::DomainName`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/apigateway-domain-name-tls-check.html](https://docs.aws.amazon.com/config/latest/developerguide/apigateway-domain-name-tls-check.html)
+**AWS Config rule:** [apigateway-domain-name-tls-check](https://docs.aws.amazon.com/config/latest/developerguide/apigateway-domain-name-tls-check.html)
 
 **Schedule type:** Change triggered
 

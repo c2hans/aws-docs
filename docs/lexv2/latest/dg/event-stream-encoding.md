@@ -9,7 +9,7 @@ Event stream encoding provides bidirectional communication using messages betwee
 
 Each message consists of two sections: the prelude and the data. The prelude section contains the total byte length of the message and the combined byte length of all of the headers. The data section contains the headers and a payload.
 
-Each section ends with a 4-byte big-endian integer CRC checksum. The message CRC checksum includes the prelude section and the data section. Amazon Lex V2 uses CRC32 (often referred to as GZIP CRC32) to calculate both CRCs. For more information about CRC32, see [https://www.ietf.org/rfc/rfc1952.txt](https://www.ietf.org/rfc/rfc1952.txt).
+Each section ends with a 4-byte big-endian integer CRC checksum. The message CRC checksum includes the prelude section and the data section. Amazon Lex V2 uses CRC32 (often referred to as GZIP CRC32) to calculate both CRCs. For more information about CRC32, see [*GZIP file format specification version 4.3*](https://www.ietf.org/rfc/rfc1952.txt).
 
 Total message overhead, including the prelude and both checksums, is 16 bytes.
 

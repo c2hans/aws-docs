@@ -23,9 +23,9 @@ Install Amazon Q for command line where you want to develop your approval polici
 
 We also recommend installing the MCP server for AWS documentation. This MCP server connects Amazon Q for command line to the most current documentation resources. For information about using MCP with Amazon Q for the command line, see [Using MCP with Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line-mcp.html) in the *Amazon Q Developer User Guide*.
 
-For more information about the AWS Documentation MCP server see [AWS Documentation MCP Server](https://awslabs.github.io/mcp/servers/aws-documentation-mcp-server/).
+For more information about the AWS Documentation MCP server, see [AWS Documentation MCP Server](https://awslabs.github.io/mcp/servers/aws-documentation-mcp-server) on the GitHub website.
 
-Install and configure the AWS CLI, if you have not already. For information, see [Installing or updating the latest version of the AWS CLI.](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+Install and configure the AWS CLI if you have not already. For information, see [Installing or updating the latest version of the AWS CLI.](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
 ## Develop approval policy content
 <a name="develop-content"></a>
@@ -50,8 +50,8 @@ Amazon Q Developer uses generative AI. You may need to verify responses. See the
 1. Enter a prompt and describe what kind of policy statement you want to create. For example, using the earlier scenario for an approval policy, you could enter the following prompt:
 
    ```
-   Create a Cedar policy statement that allows a principal to use the “getTokenForInstanceAccess" action for a resource
-   that has a tag key “Environment” and tag value of “Testing”. Use the following example statement for reference to verify the syntax.
+   Create a Cedar policy statement that allows a principal to use the "getTokenForInstanceAccess" action for a resource
+   that has a tag key "Environment" and tag value of "Testing". Use the following example statement for reference to verify the syntax.
 
    permit (
        principal in AWS::IdentityStore::Group::"e8c17310-e011-7089-d989-10da1EXAMPLE",
@@ -93,7 +93,7 @@ Amazon Q Developer uses generative AI. You may need to verify responses. See the
    The statement follows the Cedar policy language structure as documented in the AWS Systems Manager documentation for just-in-time node access policies.
    ```
 
-1. Paste the policy statement into a new Cedar file to validate the syntax. You can also validate the statement using the [Cedar playground](https://www.cedarpolicy.com/en/playground).
+1. Paste the policy statement into a new Cedar file to validate the syntax. You can also validate the statement using the [Cedar policy validation](https://docs.cedarpolicy.com/policies/validation.html) tool on the Cedar policy website.
 
 1. After validating the statement, save the Cedar file.
 

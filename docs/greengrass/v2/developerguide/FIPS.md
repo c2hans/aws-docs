@@ -2481,7 +2481,7 @@ If you don't yet have an S3 bucket for component artifacts, you can add these pe
 |  | data.credentials.iot-fips.{{us-east-1}}.amazonaws.com |
 | aws.greengrass.TokenExchangeService | data.credentials.iot-fips.{{us-east-1}}.amazonaws.com |
 | aws.greengrass.Cli |  |
-| aws.greengrass.StreamManager | +  `kinesis-fips.{{us-east-1}}.amazonaws.com` <br />+  `data.iotsitewise-fips.{{us-east-1}}.amazonaws.com ` <br />+  `s3-fips.{{us-east-1}}.amazonaws.com`  Stream manager does not support AWS IoT Analytics FIPS endpoint  |
+| aws.greengrass.StreamManager | +  `kinesis-fips.{{us-east-1}}.amazonaws.com` <br />+  `data.iotsitewise-fips.{{us-east-1}}.amazonaws.com ` <br />+  `s3-fips.{{us-east-1}}.amazonaws.com`  |
 | aws.greengrass.LogManager | logs-fips.{{us-east-1}}.amazonaws.com |
 | aws.greengrass.crypto.Pkcs11Provider |  |
 | aws.greengrass.ShadowManager |  |

@@ -40,6 +40,7 @@ Content-type: application/json
 {
    "account": {
       "arn": "string",
+      "datasetId": "string",
       "eventDestinations": [
          {
             "eventDestinationArn": "string",

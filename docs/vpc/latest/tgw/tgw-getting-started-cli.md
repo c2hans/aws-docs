@@ -407,4 +407,4 @@ You'll stop incurring charges once you delete all of the transit gateway attachm
 ## Conclusion
 <a name="conclusion"></a>
 
-You've successfully created a transit gateway, attached two VPCs to it, configured routing between them, and verified connectivity. This simple example demonstrates the basic functionality of AWS Transit Gateways. For more complex scenarios, such as connecting to on-premises networks or implementing more advanced routing configurations, see the [https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html).
+You've successfully created a transit gateway, attached two VPCs to it, configured routing between them, and verified connectivity. This simple example demonstrates the basic functionality of AWS Transit Gateways. For more complex scenarios, such as connecting to on-premises networks or implementing more advanced routing configurations, see the [*AWS Transit Gateways Guide*](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html).

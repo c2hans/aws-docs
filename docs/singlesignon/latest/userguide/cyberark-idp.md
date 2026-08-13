@@ -21,7 +21,7 @@ Before you begin deploying SCIM, we recommend that you first review the [Conside
 <a name="cyberark-prereqs"></a>
 
 You will need the following before you can get started:
-+ CyberArk subscription or free trial. To sign up for a free trial visit [https://www.cyberark.com/try-buy/](https://www.cyberark.com/try-buy/).
++ CyberArk subscription or free trial. To sign up for a free trial visit [CyberArk](https://www.cyberark.com/try-buy/).
 + An IAM Identity Center enabled account ([free](https://aws.amazon.com/single-sign-on/)). For more information, see [ Enable IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/setup-enable-idc.html).
 + A SAML connection from your CyberArk account to IAM Identity Center, as described in [CyberArk documentation for IAM Identity Center](https://docs.cyberark.com/identity/Latest/en/Content/Applications/AppsWeb/AWS_SAML_SSO.htm#).
 + Associate the IAM Identity Center connector with the roles, users and organizations you want to allow access to AWS accounts.

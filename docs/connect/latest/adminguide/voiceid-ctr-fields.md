@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/voiceid-ctr-fi
 <a name="voiceid-ctr-fields"></a>
 
 **Note**
-End of support notice: On May 20, 2026, AWS will end support for Amazon Connect Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Amazon Connect console, access Voice ID features on the Connect Customer admin website or Contact Control Panel, or access Voice ID resources. For more information, visit [Amazon Connect Voice ID end of support](https://docs.aws.amazon.com/connect/latest/adminguide/amazonconnect-voiceid-end-of-support.html).
+End of support notice: On May 20, 2026, AWS will end support for Amazon Connect Customer Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Amazon Connect Customer console, access Voice ID features on the Connect Customer admin website or Contact Control Panel, or access Voice ID resources. For more information, visit [Amazon Connect Customer Voice ID end of support](https://docs.aws.amazon.com/connect/latest/adminguide/amazonconnect-voiceid-end-of-support.html).
 
 Use the [Contact search](contact-search.md) page to search for and review the results of enrollment status, voice authentication, and detection of fraudsters in a watchlist. With the required [ security profile permissions](contact-search.md#required-permissions-search-contacts) (**Analytics and Optimization** - **Voice ID - attributes and search - View**), you can search for Voice ID results using the following filters:
 + **Speaker actions**: Use this filter to search for contacts where the caller was enrolled into Voice ID or chose to opt-out of Voice ID altogether.

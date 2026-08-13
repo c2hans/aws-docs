@@ -14,7 +14,7 @@ Systems Manager provides a visual overview into your managed nodes and EC2 insta
 This overview is provided through individual report boxes, called *widgets*, which feature interactive pie charts and other graphics.
 
 **Before you begin**
-In order to review node insights, you must first onboard your organization or account to the unified Systems Manager console. For more information, see [Setting up AWS Systems Manager](systems-manager-setting-up-console.md).
+To review node insights, you must first onboard your organization or account to the unified Systems Manager console. For more information, see [Setting up AWS Systems Manager](systems-manager-setting-up-console.md).
 
 After onboarding, open the [Systems Manager console](https://console.aws.amazon.com/systems-manager/explorer) and choose **Review node insights**.
 
@@ -28,16 +28,16 @@ The display supports widgets that provide you with the following information.
 Indicates how many EC2 instances in your organization or account aren't currently managed nodes, and how many managed nodes are in your organization's or account's fleet.
 **What is an unmanaged instance?**
 When you stop a managed EC2 instance, it is reported as "Unmanaged" in the Systems Manager console. This is expected behavior because SSM Agent doesn't have an active connection to the service.
-This is different from how AWS Config defines an instance as unmanaged. If an instance is currently stopped, AWS Config reports what the status of the instance was the last time a "heartbeat" connection was made between SSM Agent on the instance and the Systems Manager service.
+This is different from how AWS Config defines an instance as unmanaged. If an instance is currently stopped, AWS Config reports the status from the last "heartbeat" connection between SSM Agent on the instance and the Systems Manager service.
 When the instance restarts, it automatically reconnects to the Systems Manager service, and its status in the unified console is restored to "Managed" within five minutes. No manual intervention is required, and all Systems Manager configurations for the instance are preserved during the Stop/Start cycle.
 However, if the instance is still not reported as "Managed" several minutes after starting, the instance is likely not properly configured for Systems Manager management. In this case, we recommend running a diagnosis to identify why the instance remains in an unmanaged state. For more information, see [Diagnosing and remediating unmanaged Amazon EC2 instances in Systems Manager](remediating-unmanaged-instances.md).
-If the diagnostic scan is not able to determine the issue, refer to the following topics to verify that the requirements for SSM Agent, AWS Identity and Access Management (IAM) roles, and Systems Manager prerequisites have all been met:
+If the diagnostic scan can't determine the issue, refer to the following topics to verify that requirements for SSM Agent, AWS Identity and Access Management (IAM) roles, and Systems Manager prerequisites have been met:
 + [Troubleshooting SSM Agent](troubleshooting-ssm-agent.md)
 + [Configure instance permissions required for Systems Manager](setup-instance-permissions.md)
 + [Troubleshooting managed node availability](fleet-manager-troubleshooting-managed-nodes.md)
 
 **Managed node types**
-Indicates how many managed nodes in your fleet are EC2 instances and how many are other server types, including servers on your own premises (on-premises servers), AWS IoT Greengrass core devices, AWS IoT and non-AWS edge devices, and virtual machines (VMs), including VMs in other cloud environments. You can hover over the **Node types** graphic to access links to more details in the **Explore nodes** page.
+Shows how many managed nodes in your fleet are EC2 instances and how many are other server types. Other types include on-premises servers, AWS IoT Greengrass core devices, AWS IoT and non-AWS edge devices, and virtual machines (VMs) in other cloud environments. Hover over the **Node types** graphic to access links to more details in the **Explore nodes** page.
 For more information about AWS support for hybrid and multicloud environments, see [AWS Solutions for Hybrid and Multicloud](https://aws.amazon.com/hybrid-multicloud/).
 
 **SSM Agent versions**

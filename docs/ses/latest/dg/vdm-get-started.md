@@ -46,7 +46,7 @@ You can also enable global deliverability from the Virtual Deliverability Manage
 The following examples show you how to get started with Virtual Deliverability Manager using the AWS CLI.
 
 **To get started with Virtual Deliverability Manager using the AWS CLI**
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccountVdmAttributes.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccountVdmAttributes.html) operation in the Amazon SES API v2 to get started with Virtual Deliverability Manager. You can call this operation from the AWS CLI, as shown in the following examples.
+You can use the [`PutAccountVdmAttributes`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccountVdmAttributes.html) operation in the Amazon SES API v2 to get started with Virtual Deliverability Manager. You can call this operation from the AWS CLI, as shown in the following examples.
 + Enable Virtual Deliverability Manager in your account:
 
   ```
@@ -74,7 +74,7 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutA
   }
   ```
 
-  Parameter values and related data types can be found by linking from the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_VdmAttributes.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_VdmAttributes.html) data type in the Amazon SES API v2 reference.
+  Parameter values and related data types can be found by linking from the [`VdmAttributes`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_VdmAttributes.html) data type in the Amazon SES API v2 reference.
 **Note**
 Turning on engagement tracking alters your URLs and links to include Amazon SES engagement tracking wrappers.
 **Important**

@@ -90,7 +90,7 @@ The following data is returned in JSON format by the service.
 
  ** [ConfigurationRecorder](#API_AssociateResourceTypes_ResponseSyntax) **   <a name="config-AssociateResourceTypes-response-ConfigurationRecorder"></a>
 Records configuration changes to the resource types in scope.
-For more information about the configuration recorder, see [https://docs.aws.amazon.com/config/latest/developerguide/stop-start-recorder.html](https://docs.aws.amazon.com/config/latest/developerguide/stop-start-recorder.html) in the * AWS Config Developer Guide*.
+For more information about the configuration recorder, see [**Working with the Configuration Recorder**](https://docs.aws.amazon.com/config/latest/developerguide/stop-start-recorder.html) in the * AWS Config Developer Guide*.
 Type: [ConfigurationRecorder](API_ConfigurationRecorder.md) object
 
 ## Errors

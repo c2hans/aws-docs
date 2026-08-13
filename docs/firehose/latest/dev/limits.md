@@ -38,16 +38,16 @@ Smaller data records can lead to higher costs. [Firehose ingestion pricing](http
 + The maximum size of a record sent to Amazon Data Firehose, before base64-encoding, is 1,000 KiB.
 + The [PutRecordBatch](https://docs.aws.amazon.com/firehose/latest/APIReference/API_PutRecordBatch.html) operation can take up to 500 records per call or 4 MiB per call, whichever is smaller. This quota cannot be changed.
 + Each of the following operations can provide up to five invocations per second, which is a hard limit.
-  + [https://docs.aws.amazon.com/firehose/latest/APIReference/API_CreateDeliveryStream.html](https://docs.aws.amazon.com/firehose/latest/APIReference/API_CreateDeliveryStream.html)
-  + [https://docs.aws.amazon.com/firehose/latest/APIReference/API_DeleteDeliveryStream.html](https://docs.aws.amazon.com/firehose/latest/APIReference/API_DeleteDeliveryStream.html)
-  + [https://docs.aws.amazon.com/firehose/latest/APIReference/API_DescribeDeliveryStream.html](https://docs.aws.amazon.com/firehose/latest/APIReference/API_DescribeDeliveryStream.html)
-  + [https://docs.aws.amazon.com/firehose/latest/APIReference/API_ListDeliveryStreams.html](https://docs.aws.amazon.com/firehose/latest/APIReference/API_ListDeliveryStreams.html)
-  + [https://docs.aws.amazon.com/firehose/latest/APIReference/API_UpdateDestination.html](https://docs.aws.amazon.com/firehose/latest/APIReference/API_UpdateDestination.html)
-  + [https://docs.aws.amazon.com/firehose/latest/APIReference/API_TagDeliveryStream.html](https://docs.aws.amazon.com/firehose/latest/APIReference/API_TagDeliveryStream.html)
-  + [https://docs.aws.amazon.com/firehose/latest/APIReference/API_UntagDeliveryStream.html](https://docs.aws.amazon.com/firehose/latest/APIReference/API_UntagDeliveryStream.html)
-  + [https://docs.aws.amazon.com/firehose/latest/APIReference/API_ListTagsForDeliveryStream.html](https://docs.aws.amazon.com/firehose/latest/APIReference/API_ListTagsForDeliveryStream.html)
-  + [https://docs.aws.amazon.com/firehose/latest/APIReference/API_StartDeliveryStreamEncryption.html](https://docs.aws.amazon.com/firehose/latest/APIReference/API_StartDeliveryStreamEncryption.html)
-  + [https://docs.aws.amazon.com/firehose/latest/APIReference/API_StopDeliveryStreamEncryption.html](https://docs.aws.amazon.com/firehose/latest/APIReference/API_StopDeliveryStreamEncryption.html)
+  + [`CreateDeliveryStream`](https://docs.aws.amazon.com/firehose/latest/APIReference/API_CreateDeliveryStream.html)
+  + [`DeleteDeliveryStream`](https://docs.aws.amazon.com/firehose/latest/APIReference/API_DeleteDeliveryStream.html)
+  + [`DescribeDeliveryStream`](https://docs.aws.amazon.com/firehose/latest/APIReference/API_DescribeDeliveryStream.html)
+  + [`ListDeliveryStreams`](https://docs.aws.amazon.com/firehose/latest/APIReference/API_ListDeliveryStreams.html)
+  + [`UpdateDestination`](https://docs.aws.amazon.com/firehose/latest/APIReference/API_UpdateDestination.html)
+  + [`TagDeliveryStream`](https://docs.aws.amazon.com/firehose/latest/APIReference/API_TagDeliveryStream.html)
+  + [`UntagDeliveryStream`](https://docs.aws.amazon.com/firehose/latest/APIReference/API_UntagDeliveryStream.html)
+  + [`ListTagsForDeliveryStream`](https://docs.aws.amazon.com/firehose/latest/APIReference/API_ListTagsForDeliveryStream.html)
+  + [`StartDeliveryStreamEncryption`](https://docs.aws.amazon.com/firehose/latest/APIReference/API_StartDeliveryStreamEncryption.html)
+  + [`StopDeliveryStreamEncryption`](https://docs.aws.amazon.com/firehose/latest/APIReference/API_StopDeliveryStreamEncryption.html)
 + The buffer interval hints range from 60 seconds to 900 seconds.
 + For delivery from Amazon Data Firehose to Amazon Redshift, only publicly accessible Amazon Redshift clusters are supported.
 + The retry duration range is from 0 seconds to 7,200 seconds for Amazon Redshift and OpenSearch Service delivery.

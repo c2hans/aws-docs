@@ -12,7 +12,7 @@ You can associate member accounts with an administrator in two ways, by integrat
 ## Managing accounts with AWS Organizations
 <a name="securityhub-orgs-account-management-overview"></a>
 
-AWS Organizations is a global account management service that lets AWS administrators to consolidate and manage multiple AWS accounts. It provides account management and consolidated billing features that are designed to support budgetary, security, and compliance needs. It's offered at no additional charge, and it integrates with multiple AWS services, including AWS Security Hub CSPM, Amazon Macie, and Amazon GuardDuty. For more information, see the [https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html).
+AWS Organizations is a global account management service that lets AWS administrators to consolidate and manage multiple AWS accounts. It provides account management and consolidated billing features that are designed to support budgetary, security, and compliance needs. It's offered at no additional charge, and it integrates with multiple AWS services, including AWS Security Hub CSPM, Amazon Macie, and Amazon GuardDuty. For more information, see the [*AWS Organizations User Guide*](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html).
 
 When you integrate Security Hub CSPM and AWS Organizations, the Organizations management account designates a Security Hub CSPM delegated administrator. Security Hub CSPM is automatically enabled in the delegated administrator account in the AWS Region in which it was designated.
 

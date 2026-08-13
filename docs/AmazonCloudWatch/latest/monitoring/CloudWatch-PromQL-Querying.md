@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 # PromQL querying
 <a name="CloudWatch-PromQL-Querying"></a>
 
-When you ingest OpenTelemetry metrics into CloudWatch via the [Metrics endpoint](CloudWatch-OTLPEndpoint.md#CloudWatch-MetricsEndpoint), the hierarchical OTLP data model is flattened into PromQL-compatible labels. This section describes the label structure, the PromQL syntax for querying these labels, and the UTF-8 support in PromQL.
+When you ingest OpenTelemetry metrics into CloudWatch through the [Metrics endpoint](CloudWatch-OTLPEndpoint.md#CloudWatch-MetricsEndpoint), the hierarchical OTLP data model is flattened into PromQL-compatible labels. This section describes the label structure, the PromQL syntax for querying these labels, and the UTF-8 support in PromQL.
 
 **Note**
 PromQL in Prometheus 3 supports full UTF-8 characters in metric names and label names. This is particularly important for OTLP metrics, because OpenTelemetry semantic conventions use dots in attribute names such as `service.name`. Previously, these dots were replaced with underscores during translation, causing discrepancies between what was defined in OTel conventions and what was queryable in Prometheus.
@@ -55,7 +55,7 @@ The following table summarizes the prefix conventions for each OTLP scope:
 
 To be able to query vended AWS metrics in PromQL, you first need to enable OTel enrichment of vended metrics. See: [AWS vended metrics in OpenTelemetry format](CloudWatch-OTelEnrichment.md).
 
-After you enable OTel enrichment, vended AWS metrics become queryable via PromQL with additional labels. The metric name is the same as the original CloudWatch metric name, and the original CloudWatch dimensions are available as datapoint attributes. The following labels are available (the example below is for an EC2 instance):
+After you enable OTel enrichment, vended AWS metrics become queryable through PromQL with additional labels. The metric name is the same as the original CloudWatch metric name, and the original CloudWatch dimensions are available as datapoint attributes. The following labels are available (the example below is for an EC2 instance):
 
 | PromQL Label | Description | Example |
 | --- | --- | --- |

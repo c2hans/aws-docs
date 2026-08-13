@@ -20,7 +20,7 @@ If you want these services we recommend you contract with specialist providers. 
 
 To request international phone numbers that require documentation, or numbers not available within a specific region, create an AWS Support case. In the support case, you must specify exactly how many numbers you want for each country.
 
-Submit an Connect Customer support ticket to verify if your phone number can be ported to Connect Customer.
+Submit a Connect Customer support ticket to verify if your phone number can be ported to Connect Customer.
 
 1. Choose [Account and billing](https://console.aws.amazon.com/support/home#/case/create?issueType=customer-service&serviceCode=service-connect-number-management) to access a pre-populated form in the AWS Support console. You must be signed in to your AWS account to access the form.
 

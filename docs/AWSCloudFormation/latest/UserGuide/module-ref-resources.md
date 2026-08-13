@@ -13,7 +13,7 @@ To reference a resource contained within a module in your CloudFormation templat
 
 You can combine these two logical names with or without using a period (.) between them. For example, if the module's logical name is `MyModule` and the resource's logical name is `MyBucket`, you can refer to that resource as either `MyModule.MyBucket` or `MyModuleMyBucket`.
 
-To find the logical names of resources inside a module, you can consult the module's schema, which is available in the CloudFormation registry or by using the [https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeType.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeType.html) operation. The schema lists all the resources and their logical names that are part of the module.
+To find the logical names of resources inside a module, you can consult the module's schema, which is available in the CloudFormation registry or by using the [DescribeType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeType.html) operation. The schema lists all the resources and their logical names that are part of the module.
 
 Once you have the full logical name, you can use CloudFormation functions like `GetAtt` and `Ref` to access property values on module resources.
 

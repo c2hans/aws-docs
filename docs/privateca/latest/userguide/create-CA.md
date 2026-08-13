@@ -465,7 +465,7 @@ $ aws acm-pca create-certificate-authority \
 	     --tags Key=usageMode,Value=SHORT_LIVED_CERTIFICATE
 ```
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/acm-pca/describe-certificate-authority.html](https://docs.aws.amazon.com/cli/latest/reference/acm-pca/describe-certificate-authority.html) command in the AWS CLI to display details about the resulting CA, as shown in the following command:
+Use the [**describe-certificate-authority**](https://docs.aws.amazon.com/cli/latest/reference/acm-pca/describe-certificate-authority.html) command in the AWS CLI to display details about the resulting CA, as shown in the following command:
 
 ```
 $ aws acm-pca describe-certificate-authority \

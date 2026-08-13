@@ -27,7 +27,7 @@ You need to specify subnets and security groups when configuring your private Am
 
 Subnets and security groups in your private Amazon VPC can be assigned to a SageMaker Clarify job in various ways, depending on how you create the job.
 + **SageMaker AI console**: Provide this information when you create the job in the **SageMaker AI Dashboard**. From the **Processing** menu, choose **Processing jobs**, then choose **Create processing job**. Select the **VPC** option in the **Network** panel and provide the subnets and security groups using the drop-down lists. Make sure network isolation option provided in this panel is turned off.
-+ **SageMaker API**: Use the `NetworkConfig.VpcConfig` request parameter of the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateProcessingJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateProcessingJob) API, as shown in the following example:
++ **SageMaker API**: Use the `NetworkConfig.VpcConfig` request parameter of the [`CreateProcessingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateProcessingJob) API, as shown in the following example:
 
   ```
   "NetworkConfig": {
@@ -43,7 +43,7 @@ Subnets and security groups in your private Amazon VPC can be assigned to a Sage
       }
   }
   ```
-+ **SageMaker Python SDK**: Use the `NetworkConfig` parameter of the [https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) API or [https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) API, as shown in the following example:
++ **SageMaker Python SDK**: Use the `NetworkConfig` parameter of the [`SageMakerClarifyProcessor`](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) API or [`Processor`](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) API, as shown in the following example:
 
   ```
   from sagemaker.network import NetworkConfig
@@ -69,7 +69,7 @@ The network isolation option of the SageMaker Clarify job must be turned off (by
 
 In order to compute post-training bias metrics and explainability, the SageMaker Clarify job needs to get inferences from the SageMaker AI model that is specified by the `model_name` parameter of the [analysis configuration](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-configure-processing-jobs.html#clarify-processing-job-configure-analysis) for the SageMaker Clarify processing job. Alternatively, if you use the `SageMakerClarifyProcessor` API in the SageMaker AI Python SDK, the job needs to get the `model_name` specified by the [ModelConfig](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) class. To accomplish this, the SageMaker Clarify job creates an ephemeral endpoint with the model, known as a *shadow endpoint*, and then applies the Amazon VPC configuration of the model to the shadow endpoint.
 
-To specify subnets and security groups in your private Amazon VPC to the SageMaker AI model, use the `VpcConfig` request parameter of the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel) API or provide this information when you create the model using the SageMaker AI dashboard in the console. The following is an example of the `VpcConfig` parameter that you include in your call to `CreateModel`:
+To specify subnets and security groups in your private Amazon VPC to the SageMaker AI model, use the `VpcConfig` request parameter of the [`CreateModel`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel) API or provide this information when you create the model using the SageMaker AI dashboard in the console. The following is an example of the `VpcConfig` parameter that you include in your call to `CreateModel`:
 
 ```
 "VpcConfig": {
@@ -113,7 +113,7 @@ If you configure your Amazon VPC so that it does not have public internet access
 
 SageMaker Clarify jobs support distributed processing when two or more processing instances are specified in one of the following ways:
 + **SageMaker AI console**: The **Instance count** is specified in the **Resource configuration** part of the **Job settings** panel on the **Create processing job** page.
-+ **SageMaker API**: The `InstanceCount` is specified when you create the job with the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateProcessingJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateProcessingJob) API.
++ **SageMaker API**: The `InstanceCount` is specified when you create the job with the [`CreateProcessingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateProcessingJob) API.
 + **SageMaker Python SDK**: The `instance_count` is specified when using the [SageMakerClarifyProcessor](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) API or the [Processor](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) API.
 
 In distributed processing, you must allow communication between the different instances in the same processing job. To do that, configure a rule for your security group that allows inbound connections between members of the same security group. For information, see [Security group rules](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_SecurityGroups.html#SecurityGroupRules).

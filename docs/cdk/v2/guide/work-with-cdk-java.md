@@ -134,9 +134,9 @@ When deriving your own construct from an existing construct, you may want to acc
 ### Generic structures
 <a name="java-generic-structures"></a>
 
-In some APIs, the AWS CDK uses JavaScript arrays or untyped objects as input to a method. (See, for example, AWS CodeBuild’s [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_codebuild.BuildSpec.html#static-fromwbrobjectvalue](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_codebuild.BuildSpec.html#static-fromwbrobjectvalue) method.) In Java, these objects are represented as `java.util.Map<String, Object>`. In cases where the values are all strings, you can use `Map<String, String>`.
+In some APIs, the AWS CDK uses JavaScript arrays or untyped objects as input to a method. (See, for example, AWS CodeBuild’s [`BuildSpec.fromObject()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_codebuild.BuildSpec.html#static-fromwbrobjectvalue) method.) In Java, these objects are represented as `java.util.Map<String, Object>`. In cases where the values are all strings, you can use `Map<String, String>`.
 
-Java does not provide a way to write literals for such containers like some other languages do. In Java 9 and later, you can use [https://docs.oracle.com/javase/9/docs/api/java/util/Map.html#ofEntries-java.util.Map.Entry…​-](https://docs.oracle.com/javase/9/docs/api/java/util/Map.html#ofEntries-java.util.Map.Entry…​-) to conveniently define maps of up to ten entries inline with one of these calls.
+Java does not provide a way to write literals for such containers like some other languages do. In Java 9 and later, you can use [`java.util.Map.of()`](https://docs.oracle.com/javase/9/docs/api/java/util/Map.html#ofEntries-java.util.Map.Entry…​-) to conveniently define maps of up to ten entries inline with one of these calls.
 
 ```
 java.util.Map.of(
@@ -145,7 +145,7 @@ java.util.Map.of(
  )
 ```
 
-To create maps with more than ten entries, use [https://docs.oracle.com/javase/9/docs/api/java/util/Map.html#ofEntries-java.util.Map.Entry…​-](https://docs.oracle.com/javase/9/docs/api/java/util/Map.html#ofEntries-java.util.Map.Entry…​-).
+To create maps with more than ten entries, use [`java.util.Map.ofEntries()`](https://docs.oracle.com/javase/9/docs/api/java/util/Map.html#ofEntries-java.util.Map.Entry…​-).
 
 If you are using Java 8, you could provide your own methods similar to to these.
 
@@ -158,7 +158,7 @@ List<String> cmds = Arrays.asList("cd lambda", "npm install", "npm install types
 ### Missing values
 <a name="java-missing-values"></a>
 
-In Java, missing values in AWS CDK objects such as props are represented by `null`. You must explicitly test any value that could be `null` to make sure it contains a value before doing anything with it. Java does not have "syntactic sugar" to help handle null values as some other languages do. You may find Apache ObjectUtil’s [https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/ObjectUtils.html#defaultIfNull-T-T-](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/ObjectUtils.html#defaultIfNull-T-T-) and [https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/ObjectUtils.html#firstNonNull-T…​-](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/ObjectUtils.html#firstNonNull-T…​-) useful in some situations. Alternatively, write your own static helper methods to make it easier to handle potentially null values and make your code more readable.
+In Java, missing values in AWS CDK objects such as props are represented by `null`. You must explicitly test any value that could be `null` to make sure it contains a value before doing anything with it. Java does not have "syntactic sugar" to help handle null values as some other languages do. You may find Apache ObjectUtil’s [`defaultIfNull`](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/ObjectUtils.html#defaultIfNull-T-T-) and [`firstNonNull`](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/ObjectUtils.html#firstNonNull-T…​-) useful in some situations. Alternatively, write your own static helper methods to make it easier to handle potentially null values and make your code more readable.
 
 ## Build and run CDK applications
 <a name="java-running"></a>

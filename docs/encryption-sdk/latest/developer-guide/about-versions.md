@@ -35,7 +35,7 @@ For a detailed description of all changes, see the [CHANGELOG.md](https://github
 ## C\# / .NET
 <a name="esdk-dot-net-versions"></a>
 
-For a detailed description of all changes, see the [CHANGELOG.md](https://github.com/aws/aws-encryption-sdk/tree/mainline/AwsEncryptionSDK/runtimes/net/CHANGELOG.md) in the [https://github.com/aws/aws-encryption-sdk/tree/mainline/AwsEncryptionSDK/runtimes/net/](https://github.com/aws/aws-encryption-sdk/tree/mainline/AwsEncryptionSDK/runtimes/net/) repository on GitHub.
+For a detailed description of all changes, see the [CHANGELOG.md](https://github.com/aws/aws-encryption-sdk/tree/mainline/AwsEncryptionSDK/runtimes/net/CHANGELOG.md) in the [`aws-encryption-sdk-net`](https://github.com/aws/aws-encryption-sdk/tree/mainline/AwsEncryptionSDK/runtimes/net/) repository on GitHub.
 
 |
 |

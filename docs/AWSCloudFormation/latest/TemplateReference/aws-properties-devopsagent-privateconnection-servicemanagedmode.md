@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DevOpsAgent::PrivateConnection ServiceManagedMode
 <a name="aws-properties-devopsagent-privateconnection-servicemanagedmode"></a>
 
-<a name="aws-properties-devopsagent-privateconnection-servicemanagedmode-description"></a>The `ServiceManagedMode` property type specifies Property description not available. for an [AWS::DevOpsAgent::PrivateConnection](aws-resource-devopsagent-privateconnection.md).
+Configuration for a private connection in which AWS DevOps Agent creates and manages the resource gateway in your VPC.
 
 ## Syntax
 <a name="aws-properties-devopsagent-privateconnection-servicemanagedmode-syntax"></a>
@@ -51,14 +51,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-privateconnection-servicemanagedmode-properties"></a>
 
 `DnsResolution`  <a name="cfn-devopsagent-privateconnection-servicemanagedmode-dnsresolution"></a>
-Property description not available.
+The DNS resolution mode used to resolve the host address. Defaults to `PUBLIC` if you don't specify a value.
 *Required*: No
 *Type*: String
 *Allowed values*: `PUBLIC | IN_VPC`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `HostAddress`  <a name="cfn-devopsagent-privateconnection-servicemanagedmode-hostaddress"></a>
-Property description not available.
+The IP address or DNS name of the target service.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9.:\-]+$`
@@ -67,14 +67,14 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `IpAddressType`  <a name="cfn-devopsagent-privateconnection-servicemanagedmode-ipaddresstype"></a>
-Property description not available.
+The IP address type of the service-managed resource gateway.
 *Required*: No
 *Type*: String
 *Allowed values*: `IPV4 | IPV6 | DUAL_STACK`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Ipv4AddressesPerEni`  <a name="cfn-devopsagent-privateconnection-servicemanagedmode-ipv4addressespereni"></a>
-Property description not available.
+The number of IPv4 addresses in each elastic network interface of the service-managed resource gateway.
 *Required*: No
 *Type*: Integer
 *Minimum*: `1`
@@ -82,7 +82,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `PortRanges`  <a name="cfn-devopsagent-privateconnection-servicemanagedmode-portranges"></a>
-Property description not available.
+The TCP port ranges that a consumer can use to access the target service.
 *Required*: No
 *Type*: Array of String
 *Minimum*: `1`
@@ -90,7 +90,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `SecurityGroupIds`  <a name="cfn-devopsagent-privateconnection-servicemanagedmode-securitygroupids"></a>
-Property description not available.
+The security groups to attach to the service-managed resource gateway.
 *Required*: No
 *Type*: Array of String
 *Minimum*: `11 | 1`
@@ -98,7 +98,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `SubnetIds`  <a name="cfn-devopsagent-privateconnection-servicemanagedmode-subnetids"></a>
-Property description not available.
+The subnets that the service-managed resource gateway spans.
 *Required*: No
 *Type*: Array of String
 *Minimum*: `15 | 1`
@@ -106,7 +106,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `VpcId`  <a name="cfn-devopsagent-privateconnection-servicemanagedmode-vpcid"></a>
-Property description not available.
+The ID of the VPC in which to create the service-managed resource gateway.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^vpc-(([0-9a-z]{8})|([0-9a-z]{17}))$`

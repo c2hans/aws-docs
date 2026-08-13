@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/revoke-user-permissions.html
 ---
 
-# Revoke active IAM role sessions created by permission sets
+# Revoke user access
 <a name="revoke-user-permissions"></a>
 
  The following is a general procedure for revoking an active permission set session for an IAM Identity Center user. The procedure assumes that you want to remove all access for a user who has compromised credentials or for a bad actor who is in the system. The prerequisite is to have followed the guidance in [Prepare to revoke an active IAM role session created by a permission set](prereqs-revoking-user-permissions.md#prepare-to-revoke-session). We assume that the deny all policy is present in a service control policy (SCP).
@@ -16,7 +16,9 @@ AWS recommends you build automation to handle all steps except console-only oper
 
 1. **Remove all permission set assignments for the user.** If access is assigned through group memberships, remove the user from all groups and all direct permission set assignments. This step prevents the user from assuming any additional IAM roles. If a user has an active AWS access portal session and you disable the user, they can continue to assume new roles until you remove their access.
 
-1. **If you use an identity provider (IdP) or Microsoft Active Directory as an identity source, disable the user in the identity source. ** Disabling the user prevents the creation of additional AWS access portal sessions. Use your IdP or Microsoft Active Directory API documentation to learn how to automate this step. If you are using the IAM Identity Center directory as an identity source, do not disable user access yet. You'll disable user access in step 6.
+1. Remove all IAM role assignments for the user in account access manager. If access is assigned through group memberships, remove the user from all groups and all direct IAM role assignments. This step prevents the user from assuming any additional IAM roles managed in account access manager. If a user has an active AWS account access portal session and you disable the user, they can continue to assume new roles until you remove their access.
+
+1. **If you use an identity provider (IdP) or Microsoft Active Directory as an identity source, disable the user in the identity source. ** Disabling the user prevents the creation of additional AWS access portal sessions. Use your IdP or Microsoft Active Directory API documentation to learn how to automate this step. If you are using the IAM Identity Center directory as an identity source, do not disable user access yet. You'll disable user access in step 7.
 
 1.  **In the IAM Identity Center console, find the user and delete their active session.**
 
@@ -41,6 +43,6 @@ AWS recommends you build automation to handle all steps except console-only oper
 1. **Leave the Deny policy in place for at least 12 hours.** Otherwise, the user with an active IAM role session will have restored actions with the IAM role. If you wait 12 hours, active sessions expire and the user will not be able to access the IAM role again.
 
 **Important**
-If you disable a user’s access before stopping the user session (you completed step 6 without completing step 5), you can no longer stop the user session through the IAM Identity Center console. If you inadvertently disable user access before stopping the user session, you can re-enable the user, stop their session, and then disable their access again.
+If you disable a user’s access before stopping the user session (you completed step 7 without completing step 6), you can no longer stop the user session through the IAM Identity Center console. If you inadvertently disable user access before stopping the user session, you can re-enable the user, stop their session, and then disable their access again.
 
  You can now change the user's credentials if their password was compromised and [restore their assignments](useraccess.md).

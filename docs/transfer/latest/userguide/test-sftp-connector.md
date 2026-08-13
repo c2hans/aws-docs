@@ -23,4 +23,4 @@ The system returns a message, indicating whether the test passes or fails. If th
 ![The SFTP connector test connection panel, showing a failed test: the error message indicates that the access role for the connector is incorrect.](http://docs.aws.amazon.com/transfer/latest/userguide/images/connector-test-fail-role.png)
 
 **Note**
-To use the API to test your connector, see the [https://docs.aws.amazon.com/transfer/latest/APIReference/API_TestConnection](https://docs.aws.amazon.com/transfer/latest/APIReference/API_TestConnection) API documentation.
+To use the API to test your connector, see the [TestConnection](https://docs.aws.amazon.com/transfer/latest/APIReference/API_TestConnection) API documentation.

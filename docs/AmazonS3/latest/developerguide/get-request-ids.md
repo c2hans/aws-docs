@@ -219,7 +219,7 @@ import boto3
 boto3.set_stream_logger('', logging.DEBUG)
 ```
 
-For more information, see [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/boto3.html#boto3.set_stream_logger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/boto3.html#boto3.set_stream_logger) in the *AWS SDK for Python (Boto) API Reference*.
+For more information, see [set\_stream\_logger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/boto3.html#boto3.set_stream_logger) in the *AWS SDK for Python (Boto) API Reference*.
 
 ------
 #### [ Ruby ]

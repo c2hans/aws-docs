@@ -203,7 +203,7 @@ sm.update_endpoint_weights_and_capacities(
 
 ![Example CloudWatch metrics for total invocations for each variant.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/model-invocations-75-25.png)
 
- We can continue to monitor our metrics, and when we're satisfied with a variant's performance, we can route 100% of the traffic to that variant. We use [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateEndpointWeightsAndCapacities.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateEndpointWeightsAndCapacities.html) to update the traffic assignments for the variants. The weight for `Variant1` is set to 0 and the weight for `Variant2` is set to 1. SageMaker AI now sends 100% of all inference requests to `Variant2`.
+ We can continue to monitor our metrics, and when we're satisfied with a variant's performance, we can route 100% of the traffic to that variant. We use [`UpdateEndpointWeightsAndCapacities`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateEndpointWeightsAndCapacities.html) to update the traffic assignments for the variants. The weight for `Variant1` is set to 0 and the weight for `Variant2` is set to 1. SageMaker AI now sends 100% of all inference requests to `Variant2`.
 
 ```
 sm.update_endpoint_weights_and_capacities(

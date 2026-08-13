@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/change-
 **Change Manager availability change**
 AWS Systems Manager Change Manager will no longer be open to new customers starting November 7, 2025. If you would like to use Change Manager, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [AWS Systems Manager Change Manager availability change](https://docs.aws.amazon.com/systems-manager/latest/userguide/change-manager-availability-change.html).
 
-The following procedures describe how to use the AWS Command Line Interface (AWS CLI) (on Linux, macOS, or Windows Server) or AWS Tools for Windows PowerShell to create a change request in Change Manager, a tool in AWS Systems Manager.
+The following procedures describe how to use the AWS Command Line Interface (AWS CLI) (on Linux, macOS, or Windows Server) or AWS Tools for Windows PowerShell to create a change request in Change Manager.
 
 **To create a change template**
 
@@ -146,7 +146,7 @@ For more information about approvals for change templates, see [About approvals 
 
 ------
 
-   For information about other options you can specify, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/create-document.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/create-document.html).
+   For information about other options you can specify, see [create-document](https://docs.aws.amazon.com/cli/latest/reference/ssm/create-document.html).
 
    The system returns information like the following.
 

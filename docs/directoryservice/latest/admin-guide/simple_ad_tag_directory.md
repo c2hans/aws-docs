@@ -33,7 +33,7 @@ You can add tags to your directory using the AWS CLI or PowerShell:
            Key={{MyTagName2}},Value={{MyTagValue2}}
   ```
 
-  For more information, see [https://docs.aws.amazon.com/cli/latest/reference/ds/add-tags-to-resource.html](https://docs.aws.amazon.com/cli/latest/reference/ds/add-tags-to-resource.html).
+  For more information, see [`add-tags-to-resource`](https://docs.aws.amazon.com/cli/latest/reference/ds/add-tags-to-resource.html).
 
 ------
 #### [ PowerShell ]
@@ -48,7 +48,7 @@ You can add tags to your directory using the AWS CLI or PowerShell:
          @{Key="{{MyTagName2}}"; Value="{{MyTagValue2}}"}
   ```
 
-  For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Add-DSResourceTag.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Add-DSResourceTag.html).
+  For more information, see [`Add-DSResourceTag`](https://docs.aws.amazon.com//powershell/latest/reference/items/Add-DSResourceTag.html).
 
 ------
 
@@ -68,7 +68,7 @@ You can list existing tags on your directory using the AWS CLI or PowerShell:
     --resource-id {{d-1234567890}}
   ```
 
-  For more information, see [https://docs.aws.amazon.com/cli/latest/reference/ds/list-tags-for-resource.html](https://docs.aws.amazon.com/cli/latest/reference/ds/list-tags-for-resource.html).
+  For more information, see [`list-tags-for-resource`](https://docs.aws.amazon.com/cli/latest/reference/ds/list-tags-for-resource.html).
 
 ------
 #### [ PowerShell ]
@@ -81,7 +81,7 @@ You can list existing tags on your directory using the AWS CLI or PowerShell:
     -ResourceId {{d-1234567890}}
   ```
 
-  For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Get-DSResourceTag.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Get-DSResourceTag.html).
+  For more information, see [`Get-DSResourceTag`](https://docs.aws.amazon.com//powershell/latest/reference/items/Get-DSResourceTag.html).
 
 ------
 
@@ -102,7 +102,7 @@ To update the value of an existing tag, use the same add command with the existi
     --tags Key={{MyTagName1}},Value={{MyNewTagValue1}}
   ```
 
-  For more information, see [https://docs.aws.amazon.com/cli/latest/reference/ds/add-tags-to-resource.html](https://docs.aws.amazon.com/cli/latest/reference/ds/add-tags-to-resource.html).
+  For more information, see [`add-tags-to-resource`](https://docs.aws.amazon.com/cli/latest/reference/ds/add-tags-to-resource.html).
 
 ------
 #### [ PowerShell ]
@@ -116,7 +116,7 @@ To update the value of an existing tag, use the same add command with the existi
     -Tag @{Key="{{MyTagName1}}"; Value="{{MyNewTagValue1}}"}
   ```
 
-  For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Add-DSResourceTag.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Add-DSResourceTag.html).
+  For more information, see [`Add-DSResourceTag`](https://docs.aws.amazon.com//powershell/latest/reference/items/Add-DSResourceTag.html).
 
 ------
 
@@ -137,7 +137,7 @@ You can remove tags from your directory using the AWS CLI or PowerShell:
     --tag-keys {{MyTagName1}} {{MyTagName2}}
   ```
 
-  For more information, see [https://docs.aws.amazon.com/cli/latest/reference/ds/remove-tags-from-resource.html](https://docs.aws.amazon.com/cli/latest/reference/ds/remove-tags-from-resource.html).
+  For more information, see [`remove-tags-from-resource`](https://docs.aws.amazon.com/cli/latest/reference/ds/remove-tags-from-resource.html).
 
 ------
 #### [ PowerShell ]
@@ -153,6 +153,6 @@ You can remove tags from your directory using the AWS CLI or PowerShell:
     -Force
   ```
 
-  For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Remove-DSResourceTag.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Remove-DSResourceTag.html).
+  For more information, see [`Remove-DSResourceTag`](https://docs.aws.amazon.com//powershell/latest/reference/items/Remove-DSResourceTag.html).
 
 ------

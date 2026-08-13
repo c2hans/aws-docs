@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/throttling
 # AWS HealthImaging throttling limits
 <a name="throttling-limits"></a>
 
-Your AWS account has throttling limits that apply to AWS HealthImaging API actions. For all actions, a `ThrottlingException` error is thrown if throttling limits are exceeded. For more information, see the [https://docs.aws.amazon.com/healthimaging/latest/APIReference](https://docs.aws.amazon.com/healthimaging/latest/APIReference).
+Your AWS account has throttling limits that apply to AWS HealthImaging API actions. For all actions, a `ThrottlingException` error is thrown if throttling limits are exceeded. For more information, see the [*AWS HealthImaging API Reference*](https://docs.aws.amazon.com/healthimaging/latest/APIReference).
 
 **Note**
 Throttling limits are adjustable for all HealthImaging API actions. To request a throttling limit adjustment, contact the [AWS Support Center](https://console.aws.amazon.com/support/home#/). To create a case, log in to your AWS account and choose **Create case**.

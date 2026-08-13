@@ -34,6 +34,7 @@ View details about updates to AWS managed policies for CloudWatch since this ser
 
 | Change | Description | Date |
 | --- | --- | --- |
+|  [CloudWatchAutomaticDashboardsAccess](#managed-policies-cloudwatch-CloudWatch-CloudWatchAutomaticDashboardsAccess) – Updated policy | CloudWatch added the `lambda:GetFunctionConfiguration` and `lambda:ListTags` permissions to the `CloudWatchAutomaticDashboardsAccess` managed policy to enable automatic dashboards to retrieve Lambda function configuration details and resource tags. | August 6, 2026 |
 |  [CloudWatchFullAccessV2](#managed-policies-cloudwatch-CloudWatchFullAccessV2) – Updated policy | CloudWatch added permissions to **CloudWatchFullAccessV2**.<br />Two `iam:PassRole` permissions were added to support the `PutLogAlarm` API: passing a Scheduled Query Execution Role to `logs.amazonaws.com` (scoped to scheduled-query resources), and passing a Log Lines Role to `cloudwatch.amazonaws.com` (scoped to alarm resources). | June 15, 2026 |
 |  [CloudWatchSyntheticsFullAccess](#managed-policies-cloudwatch-CloudWatchSyntheticsFullAccess) – Updated policy | CloudWatch updated the **CloudWatchSyntheticsFullAccess** policy.<br />The `cloudwatch:ListMetrics` permission was added so that CloudWatch Synthetics can list available metrics. Additionally, the `apigateway:GET` permission has been changed from allowing all resources to specific API Gateway resources: REST APIs, REST API stages, REST API stage Swagger exports, and HTTP APIs. | March 31, 2026 |
 |  [AIOpsAssistantPolicy](#managed-policies-QInvestigations-AIOpsAssistant) – Updated policy | CloudWatch updated the **AIOpsAssistantPolicy** IAM policy. It added permissions to enable CloudWatch investigations to assist in queries, troubleshooting, and topology mapping. <br />The following permissions were added: `appsync:GetGraphqlApiEnvironmentVariables`, `cloudtrail:GetEventConfiguration`, `kms:GetKeyPolicy`, and `s3:GetBucketAbac`  | February 06, 2026 |
@@ -109,7 +110,7 @@ View details about updates to AWS managed policies for CloudWatch since this ser
 | [CloudWatchSyntheticsFullAccess](#managed-policies-cloudwatch-CloudWatchSyntheticsFullAccess) – Update to an existing policy | CloudWatch Synthetics added permissions to **CloudWatchSyntheticsFullAccess**, and also changed the scope of one permission.<br />The `kms:ListAliases` permission was added so that users can list available AWS KMS keys that can be used to encrypt canary artifacts. The `kms:DescribeKey` permission was added so that users can see the details of keys that will be used to encrypt for canary artifacts. And the `kms:Decrypt` permission was added to enable users to decrypt canary artifacts. This decryption ability is limited to use on resources within Amazon S3 buckets.<br />The `Resource` scope of the `s3:GetBucketLocation` permission was changed from `*` to `arn:aws:s3:::*`. | September 29, 2021 |
 | [CloudWatchSyntheticsFullAccess](#managed-policies-cloudwatch-CloudWatchSyntheticsFullAccess) – Update to an existing policy | CloudWatch Synthetics added a permission to **CloudWatchSyntheticsFullAccess**.<br />The `lambda:UpdateFunctionCode` permission was added so that users with this policy can change the runtime version of canaries. | July 20, 2021 |
 | [ AWSCloudWatchAlarms\_ActionSSMIncidentsServiceRolePolicy](#managed-policies-cloudwatch-incident-manager) – New managed policy | CloudWatch added a new managed IAM policy to allow CloudWatch to create incidents in AWS Systems Manager Incident Manager. | May 10, 2021 |
-|  [ CloudWatchAutomaticDashboardsAccess](#managed-policies-cloudwatch-CloudWatch-CloudWatchAutomaticDashboardsAccess) – Update to an existing policy | CloudWatch added a permission to the **CloudWatchAutomaticDashboardsAccess** managed policy. The `synthetics:DescribeCanariesLastRun` permission was added to this policy to enable cross-account dashboard users to see details about CloudWatch Synthetics canary runs. | April 20, 2021 |
+|  [ CloudWatchAutomaticDashboardsAccess](#managed-policies-cloudwatch-CloudWatch-CloudWatchAutomaticDashboardsAccess) – Update to an existing policy | CloudWatch added a permission to the `CloudWatchAutomaticDashboardsAccess` managed policy. The `synthetics:DescribeCanariesLastRun` permission was added to this policy to enable cross-account dashboard users to see details about CloudWatch Synthetics canary runs. | April 20, 2021 |
 | CloudWatch started tracking changes | CloudWatch started tracking changes for its AWS managed policies. | April 14, 2021 |
 
 ## CloudWatchFullAccessV2
@@ -158,7 +159,7 @@ To see the full contents of the policy, see [CloudWatch-CrossAccountAccess](http
 ## CloudWatchAutomaticDashboardsAccess
 <a name="managed-policies-cloudwatch-CloudWatch-CloudWatchAutomaticDashboardsAccess"></a>
 
-The **CloudWatchAutomaticDashboardsAccess** managed policy grants access to CloudWatch for non-CloudWatch APIs, so that resources such as Lambda functions can be displayed on CloudWatch automatic dashboards.
+The `CloudWatchAutomaticDashboardsAccess` managed policy grants access to CloudWatch for non-CloudWatch APIs, so that resources such as Lambda functions can be displayed on CloudWatch automatic dashboards.
 
 To see the full contents of the policy, see [CloudWatchAutomaticDashboardsAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchAutomaticDashboardsAccess.html) in the *AWS Managed Policy Reference Guide*.
 
@@ -228,7 +229,7 @@ The policies in this section grant permissions related to CloudWatch investigati
 ### AIOpsConsoleAdminPolicy
 <a name="managed-policies-QInvestigations-AIOpsConsoleAdminPolicy"></a>
 
-The **AIOpsConsoleAdminPolicy** policy grants full access to all CloudWatch investigations actions and their required permissions via the AWS console. This policy also grants limited access to other service's APIs required for CloudWatch investigations functionality.
+The **AIOpsConsoleAdminPolicy** policy grants full access to all CloudWatch investigations actions and their required permissions through the AWS console. This policy also grants limited access to other service's APIs required for CloudWatch investigations functionality.
 + The `aiops` permissions grant access to all CloudWatch investigations actions.
 + The `organizations`, `sso`, `identitystore`, and `sts` permissions allow actions needed for IAM Identity Center management which help identity-aware sessions.
 + The `ssm` permissions are required for SSM Ops Item integration with third-party issue management.
@@ -270,7 +271,7 @@ The **AIOpsAssistantPolicy** policy is the default policy recommended by AWS to 
 
 You can choose to have the policy assigned automatically when you create an investigation, or you can assign the policy manually to the role being used by the investigation. This policy is scoped based on the resources that CloudWatch investigations analyzes when performing investigations, and will be updated as more resources are supported. For a complete list of services that work with CloudWatch investigations see, [AWS services where investigations are supported](Investigations-Services.md).
 
-You can also choose to assign the general AWS [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html) to the assistant in addition to assigning it **AIOpsAssistantPolicy**. The reason to do this is that **ReadOnlyAccess** will be updated more frequently by AWS with permissions for new AWS services and actions that are released. The **AIOpsAssistantPolicy** will also be updated for new actions, but not as frequently.
+You can also choose to assign the general AWS [**ReadOnlyAccess**](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html) to the assistant in addition to assigning it **AIOpsAssistantPolicy**. The reason to do this is that **ReadOnlyAccess** will be updated more frequently by AWS with permissions for new AWS services and actions that are released. The **AIOpsAssistantPolicy** will also be updated for new actions, but not as frequently.
 
 To see the full contents of the policy, see [AIOpsAssistantPolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIOpsAssistantPolicy.html) in the *AWS Managed Policy Reference Guide*.
 

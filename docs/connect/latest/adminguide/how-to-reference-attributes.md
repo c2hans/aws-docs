@@ -15,7 +15,7 @@ The way you reference contact attributes depends on how they were created and ho
 ## Lambda examples
 <a name="lambda-examples"></a>
 + To reference a customer name from a Lambda function lookup, use $.External.AttributeKey, replacing AttributeKey with the key (or name) of the attribute returned from the Lambda function.
-+ To use an Connect Customer prompt in a Lambda function, set a user-defined attribute to the ARN for the prompt, and then access that attribute from the Lambda function.
++ To use a Connect Customer prompt in a Lambda function, set a user-defined attribute to the ARN for the prompt, and then access that attribute from the Lambda function.
 
 ## Amazon Lex examples
 <a name="lex-examples"></a>

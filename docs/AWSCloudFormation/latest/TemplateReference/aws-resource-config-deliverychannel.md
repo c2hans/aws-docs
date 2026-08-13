@@ -112,7 +112,7 @@ If you choose a topic from another account, the topic must have policies that gr
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the delivery channel name, such as default.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-config-deliverychannel-return-values-fn--getatt"></a>

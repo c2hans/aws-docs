@@ -51,10 +51,10 @@ When you add labels, note the following:
 <a name="qapps-adding-custom-labels"></a>
 
 To customize labels available in an application environment for Q Apps, you can use the Amazon Q Business console or the following API operations.
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_ListCategories.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_ListCategories.html)
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_BatchUpdateCategory.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_BatchUpdateCategory.html)
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_BatchCreateCategory.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_BatchCreateCategory.html)
-+ [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_BatchDeleteCategory.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_BatchDeleteCategory.html)
++ [ListCategories](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_ListCategories.html)
++ [BatchUpdateCategory](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_BatchUpdateCategory.html)
++ [BatchCreateCategory](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_BatchCreateCategory.html)
++ [BatchDeleteCategory](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_BatchDeleteCategory.html)
 
 After you save your changes, the label updates appear in the web experience immediately. If users don't see the changes, make sure you have configure permissions for the web experience IAM role for your application environment correctly. For more information, see [Prerequisites for customizing labels](#qapps-labels-prerequisites).
 

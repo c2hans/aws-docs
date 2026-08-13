@@ -65,7 +65,7 @@ Settings for JPEG files apply to both ".jpeg" and ".jpg" files. Settings for MP4
 ![Console drop-down menus for file type and modality destination, selected as PNG and Document.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/bda/manualrouting.png)
 
 **Routing with the BDA API**
-Similar to modality enablement, modality routing is handled via the `overrideConfiguration` request element. Below is an example of the `modalityRouting` portion of `overrideConfiguration`. This example assumes all modalities are enabled, and routes JPEG and PNG files to the document modality, and MP4 and MOV files to the audio modality.
+Similar to modality enablement, modality routing is handled through the `overrideConfiguration` request element. Below is an example of the `modalityRouting` portion of `overrideConfiguration`. This example assumes all modalities are enabled, and routes JPEG and PNG files to the document modality, and MP4 and MOV files to the audio modality.
 
 ```
 ...
@@ -98,7 +98,7 @@ PNGs and JPEGs list Semantic Classifer as a default behavior. This means that BD
 ## Standard routing for the InvokeDataAutomation API
 <a name="bda-standard-routing-sync"></a>
 
-The [InvokeDataAutomation](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-automation-runtime_InvokeDataAutomation.html) API will also look at indicators of whether or not a submitted PNG or JPEG file is an image or a document using internal models and perform routing automatically. The default procedures are listed in the table below.
+The [InvokeDataAutomation](bedrock/latest/APIReference/API_data-automation-runtime_InvokeDataAutomation.html) API will also look at indicators of whether or not a submitted PNG or JPEG file is an image or a document using internal models and perform routing automatically. The default procedures are listed in the table below.
 
 PNGs and JPEGs list Semantic Classifier as a default behavior. This means that BDA will look at indicators of whether or not a submitted file is an image or a document using internal models and perform routing automatically. PDF and TIFF files will be routed to Documents modality for processing. InvokeDataAutomation API does not currently support Audio and Video files.
 

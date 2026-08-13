@@ -15,7 +15,7 @@ Amazon EC2 uses the service-linked role named AWSServiceRoleForEC2FastLaunch to 
 The AWSServiceRoleForEC2FastLaunch service-linked role trusts the following service to assume the role:
 + `ec2fastlaunch.amazonaws.com`
 
-Amazon EC2 uses the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2FastLaunchServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2FastLaunchServiceRolePolicy.html) managed policy to complete the following actions:
+Amazon EC2 uses the [EC2FastLaunchServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2FastLaunchServiceRolePolicy.html) managed policy to complete the following actions:
 + **AWS CloudFormation** – Allow EC2 Fast Launch to get a description of associated CloudFormation stacks.
 + **Amazon CloudWatch** – Post metric data associated with EC2 Fast Launch to the Amazon EC2 namespace.
 + **Amazon EC2** – Access is granted for EC2 Fast Launch to perform the following actions:
@@ -31,7 +31,7 @@ Amazon EC2 uses the [https://docs.aws.amazon.com/aws-managed-policy/latest/refer
 + **IAM** – Allows EC2 Fast Launch to create the `EC2FastLaunchServiceRolePolicy` service-linked role, to get and use instance profiles whose name contains `ec2fastlaunch`, and to launch instances on your behalf using the instance profile from your launch template.
 + **AWS KMS** – Includes access to create grants and list grants that were created by EC2 Fast Launch that can be retired. Also to describe or use keys for the purpose of encrypting or decrypting volumes attached to instances that EC2 Fast Launch creates, and to generate data keys that are not plaintext.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2FastLaunchServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2FastLaunchServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [EC2FastLaunchServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2FastLaunchServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
 
 For more information about using managed policies for Amazon EC2, see [AWS managed policies for Amazon EC2](security-iam-awsmanpol.md).
 

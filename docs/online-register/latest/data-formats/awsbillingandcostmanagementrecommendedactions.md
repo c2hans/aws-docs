@@ -11,4 +11,4 @@ AWS Billing And Cost Management Recommended Actions provides the following APIs 
 
 | Actions | Description | Access level |
 | --- | --- | --- |
-| <a name="bcm-recommended-actions-ListRecommendedActions"></a>[https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_BillingAndCostManagementRecommendedActions_ListRecommendedActions.html](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_BillingAndCostManagementRecommendedActions_ListRecommendedActions.html) | List all recommended actions | List |
+| <a name="bcm-recommended-actions-ListRecommendedActions"></a>[ListRecommendedActions](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_BillingAndCostManagementRecommendedActions_ListRecommendedActions.html) | List all recommended actions | List |

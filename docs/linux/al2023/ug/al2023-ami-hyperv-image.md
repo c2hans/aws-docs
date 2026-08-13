@@ -13,12 +13,12 @@ A comparison of the RPMs present on the AL2023 standard AMI compared with the RP
 |  acpid  | 2.0.32 |  |
 |  alternatives  | 1.15 | 1.15 |
 |  amazon-chrony-config  | 4.3 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html](https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html)  | 2.4.1 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html)  |  | 1.2 |
+|  [`amazon-ec2-net-utils`](https://docs.aws.amazon.com/linux/al2023/ug/networking-service.html)  | 2.4.1 |  |
+|  [`amazon-linux-onprem`](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html)  |  | 1.2 |
 |  amazon-linux-repo-cdn  |  | 2023.4.20240319 |
 |  amazon-linux-repo-s3  | 2023.4.20240319 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html](https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html)  | 2023.1 | 2023.1 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html)  |  | 1.2 |
+|  [`amazon-linux-sb-keys`](https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html)  | 2023.1 | 2023.1 |
+|  [`amazon-onprem-network`](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html)  |  | 1.2 |
 |  amazon-rpm-config  | 228 | 228 |
 |  amazon-ssm-agent  | 3.2.2303.0 | 3.2.2303.0 |
 |  at  | 3.1.23 | 3.1.23 |
@@ -34,7 +34,7 @@ A comparison of the RPMs present on the AL2023 standard AMI compared with the RP
 |  bind-libs  | 9.16.48 | 9.16.48 |
 |  bind-license  | 9.16.48 | 9.16.48 |
 |  bind-utils  | 9.16.48 | 9.16.48 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  | 2.39 | 2.39 |
+|  [`binutils`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  | 2.39 | 2.39 |
 |  boost-filesystem  | 1.75.0 | 1.75.0 |
 |  boost-system  | 1.75.0 | 1.75.0 |
 |  boost-thread  | 1.75.0 | 1.75.0 |
@@ -59,7 +59,7 @@ A comparison of the RPMs present on the AL2023 standard AMI compared with the RP
 |  crypto-policies-scripts  | 20220428 | 20220428 |
 |  cryptsetup  | 2.6.1 | 2.6.1 |
 |  cryptsetup-libs  | 2.6.1 | 2.6.1 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 8.5.0 | 8.5.0 |
+|  [`curl-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 8.5.0 | 8.5.0 |
 |  cyrus-sasl-lib  | 2.1.27 | 2.1.27 |
 |  cyrus-sasl-plain  | 2.1.27 | 2.1.27 |
 |  dbus  | 1.12.28 | 1.12.28 |
@@ -84,7 +84,7 @@ A comparison of the RPMs present on the AL2023 standard AMI compared with the RP
 |  e2fsprogs  | 1.46.5 | 1.46.5 |
 |  e2fsprogs-libs  | 1.46.5 | 1.46.5 |
 |  ec2-hibinit-agent  | 1.0.8 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/connecting-to-instances.html](https://docs.aws.amazon.com/linux/al2023/ug/connecting-to-instances.html)  | 1.1 |  |
+|  [`ec2-instance-connect`](https://docs.aws.amazon.com/linux/al2023/ug/connecting-to-instances.html)  | 1.1 |  |
 |  ec2-instance-connect-selinux  | 1.1 |  |
 |  ec2-utils  | 2.2.0 |  |
 |  ed  | 1.14.2 | 1.14.2 |
@@ -112,13 +112,13 @@ A comparison of the RPMs present on the AL2023 standard AMI compared with the RP
 |  gettext-libs  | 0.21 | 0.21 |
 |  ghc-srpm-macros  | 1.5.0 | 1.5.0 |
 |  glib2  | 2.74.7 | 2.74.7 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  | 2.34 | 2.34 |
+|  [`glibc`](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  | 2.34 | 2.34 |
 |  glibc-all-langpacks  | 2.34 | 2.34 |
 |  glibc-common  | 2.34 | 2.34 |
 |  glibc-gconv-extra  | 2.34 | 2.34 |
 |  glibc-locale-source  | 2.34 | 2.34 |
 |  gmp  | 6.2.1 | 6.2.1 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  | 2.3.7 | 2.3.7 |
+|  [`gnupg2-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  | 2.3.7 | 2.3.7 |
 |  gnutls  | 3.8.0 | 3.8.0 |
 |  go-srpm-macros  | 3.2.0 | 3.2.0 |
 |  gpgme  | 1.15.1 | 1.15.1 |
@@ -141,11 +141,11 @@ A comparison of the RPMs present on the AL2023 standard AMI compared with the RP
 |  hunspell-en-US  | 0.20140811.1 | 0.20140811.1 |
 |  hunspell-filesystem  | 1.7.0 | 1.7.0 |
 |  hwdata  | 0.353 | 0.353 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  |  | 0 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  |  | 0 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  |  | 0 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  |  | 0 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  |  | 0 |
+|  [`hyperv-daemons`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  |  | 0 |
+|  [`hyperv-daemons-license`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  |  | 0 |
+|  [`hypervfcopyd`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  |  | 0 |
+|  [`hypervkvpd`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  |  | 0 |
+|  [`hyperv-tools`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  |  | 0 |
 |  hypervvssd  |  | 0 |
 |  info  | 6.7 | 6.7 |
 |  inih  | 49 | 49 |
@@ -188,8 +188,8 @@ A comparison of the RPMs present on the AL2023 standard AMI compared with the RP
 |  libcom\_err  | 1.46.5 | 1.46.5 |
 |  libcomps  | 0.1.20 | 0.1.20 |
 |  libconfig  | 1.7.2 | 1.7.2 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 8.5.0 | 8.5.0 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb)  | 5.3.28 | 5.3.28 |
+|  [`libcurl-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 8.5.0 | 8.5.0 |
+|  [`libdb`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb)  | 5.3.28 | 5.3.28 |
 |  libdhash  | 0.5.0 |  |
 |  libdnf  | 0.69.0 | 0.69.0 |
 |  libeconf  | 0.4.0 | 0.4.0 |

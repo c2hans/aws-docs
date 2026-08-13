@@ -17,20 +17,37 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/alas2.html) on or before **September 15, 2021** to all released Amazon Linux 2 platforms.<br />The **Go** release is a security release. For more information, see **Platform-specific updates** in this table. The operating system release addresses the expiration of the *Let's Encrypt* cross-signed DST Root CA X3 certificate. The certificate expired on September 30, 2021. For more information, see [Elastic Beanstalk Linux platforms](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-linux.html) in the *AWS Elastic Beanstalk Developer Guide*.  |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2021-10-03-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2021-10-03-linux.html) |
-| **AMI** | Updated the base AMI to version **2.0.20210813**. |
-| **Go** | Updated Go to release **1.17.1**. For details, see [go1.17](https://golang.org/doc/devel/release.html#go1.17) in *The Go Programming Language Release History*.<br />The Go 1.17.1 release is a security release. |
-| **.NET Core** | Updated .NET Core to releases [5.0.10](https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0.10/5.0.10.md) and [3.1.19](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1.19/3.1.19.md).  |
-| **Node.js** | Updated Node.js 14 to add support for Node version [14.18.0](https://nodejs.org/en/blog/release/v14.18.0/).<br />Updated Node.js 12 to add support for Node version [12.22.6](https://nodejs.org/en/blog/release/v12.22.6/). |
-| **Ruby** | Updated Puma to version [5.5.0](https://github.com/puma/puma/releases/tag/v5.5.0). |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/alas2.html">Amazon Linux Security Center</a> on or before <b>September 15, 2021</b> to all released Amazon Linux 2 platforms.<br />The <b>Go</b> release is a security release. For more information, see <b>Platform-specific updates</b> in this table. The operating system release addresses the expiration of the <i>Let's Encrypt</i> cross-signed DST Root CA X3 certificate. The certificate expired on September 30, 2021. For more information, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-linux.html">Elastic Beanstalk Linux platforms</a> in the <i>AWS Elastic Beanstalk Developer Guide</i>. </td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version <b>2.0.20210813</b>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Go</b></td><td>Updated Go to release <b>1.17.1</b>. For details, see <a href="https://golang.org/doc/devel/release.html#go1.17">go1.17</a> in <i>The Go Programming Language Release History</i>.<br />The Go 1.17.1 release is a security release.</td></tr>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET Core to releases <a href="https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0.10/5.0.10.md">5.0.10</a> and <a href="https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1.19/3.1.19.md">3.1.19</a>. </td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated Node.js 14 to add support for Node version <a href="https://nodejs.org/en/blog/release/v14.18.0/">14.18.0</a>.<br />Updated Node.js 12 to add support for Node version <a href="https://nodejs.org/en/blog/release/v12.22.6/">12.22.6</a>.</td></tr>
+  <tr><td><b>Ruby</b></td><td>Updated Puma to version <a href="https://github.com/puma/puma/releases/tag/v5.5.0">5.5.0</a>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2021-10-03-linux.platforms"></a>

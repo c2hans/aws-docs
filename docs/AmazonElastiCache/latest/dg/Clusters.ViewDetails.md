@@ -479,7 +479,7 @@ In a case where the cluster is created using the AWS Management Console (cluster
 aws elasticache describe-replication-groups --replication-group-id my-cluster
 ```
 
-For more information, see the AWS CLI for ElastiCache topic [https://docs.aws.amazon.com/cli/latest/reference/elasticache/describe-cache-clusters.html](https://docs.aws.amazon.com/cli/latest/reference/elasticache/describe-cache-clusters.html).
+For more information, see the AWS CLI for ElastiCache topic [`describe-cache-clusters`](https://docs.aws.amazon.com/cli/latest/reference/elasticache/describe-cache-clusters.html).
 
 ## Viewing an ElastiCache cluster's details (ElastiCache API)
 <a name="Clusters.ViewDetails.API"></a>
@@ -512,4 +512,4 @@ https://elasticache.us-west-2.amazonaws.com/
    &X-Amz-Credential=<credential>
 ```
 
-For more information, see the ElastiCache API reference topic [https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DescribeCacheClusters.html](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DescribeCacheClusters.html).
+For more information, see the ElastiCache API reference topic [`DescribeCacheClusters`](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DescribeCacheClusters.html).

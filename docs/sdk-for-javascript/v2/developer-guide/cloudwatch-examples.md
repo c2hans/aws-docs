@@ -11,7 +11,7 @@ Amazon CloudWatch (CloudWatch) is a web service that monitors your Amazon Web Se
 
 ![Relationship between JavaScript environments, the SDK, and CloudWatch](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/code-samples-cloudwatch.png)
 
-The JavaScript API for CloudWatch is exposed through the `AWS.CloudWatch`, `AWS.CloudWatchEvents`, and `AWS.CloudWatchLogs` client classes. For more information about using the CloudWatch client classes, see [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatch.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatch.html), [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatchEvents.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatchEvents.html), and [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatchLogs.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatchLogs.html) in the API reference.
+The JavaScript API for CloudWatch is exposed through the `AWS.CloudWatch`, `AWS.CloudWatchEvents`, and `AWS.CloudWatchLogs` client classes. For more information about using the CloudWatch client classes, see [`Class: AWS.CloudWatch`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatch.html), [`Class: AWS.CloudWatchEvents`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatchEvents.html), and [`Class: AWS.CloudWatchLogs`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatchLogs.html) in the API reference.
 
 **Topics**
 + [Creating Alarms in Amazon CloudWatch](cloudwatch-examples-creating-alarms.md)

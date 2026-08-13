@@ -196,7 +196,7 @@ If you want the Lambda function to be the default function that's used by all th
 ### Grant Amazon Pinpoint invocation permission
 <a name="segments-dynamic-lambda-trust-policy-assign"></a>
 
-You can use the AWS Command Line Interface (AWS CLI) to add permissions to the Lambda function policy assigned to your Lambda function. To allow Amazon Pinpoint to invoke a function for a specific campaign, use the Lambda [https://docs.aws.amazon.com/cli/latest/reference/lambda/add-permission.html](https://docs.aws.amazon.com/cli/latest/reference/lambda/add-permission.html) command, as shown in the following example:
+You can use the AWS Command Line Interface (AWS CLI) to add permissions to the Lambda function policy assigned to your Lambda function. To allow Amazon Pinpoint to invoke a function for a specific campaign, use the Lambda [`add-permission`](https://docs.aws.amazon.com/cli/latest/reference/lambda/add-permission.html) command, as shown in the following example:
 
 ```
 $ aws lambda add-permission \
@@ -236,7 +236,7 @@ The `Statement` value is a JSON string version of the statement that was added t
 
 You can assign a Lambda function to an individual Amazon Pinpoint campaign. Or, you can set the Lambda function as the default used by all campaigns for a project, except for those campaigns to which you assign a function individually.
 
-To assign a Lambda function to an individual campaign, use the Amazon Pinpoint API to create or update a [https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-campaigns.html](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-campaigns.html) object, and define its `CampaignHook` attribute. To set a Lambda function as the default for all campaigns in a project, create or update the [https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-settings.html](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-settings.html) resource for that project, and define its `CampaignHook` object.
+To assign a Lambda function to an individual campaign, use the Amazon Pinpoint API to create or update a [`Campaign`](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-campaigns.html) object, and define its `CampaignHook` attribute. To set a Lambda function as the default for all campaigns in a project, create or update the [`Settings`](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-settings.html) resource for that project, and define its `CampaignHook` object.
 
  In both cases, set the following `CampaignHook` attributes:
 + `LambdaFunctionName` – The name or ARN of the Lambda function that Amazon Pinpoint invokes before sending messages for the campaign.

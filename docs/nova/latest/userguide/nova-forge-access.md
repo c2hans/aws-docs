@@ -33,7 +33,7 @@ pip install -e .
 
 1. Wait for the Nova team to email a confirmation after your subscription request is approved.
 
-1. Tag your execution role with the `forge-subscription` tag. This tag is required to access Nova Forge features and checkpoints. Add the following tag to your execution role:
+1. Tag your SageMaker HyperPod execution role with the `forge-subscription` tag. This tag is required to access Nova Forge features and checkpoints. Add the following tag to your execution role:
    + Key: `forge-subscription`
    + Value: `true`
 
@@ -114,7 +114,7 @@ Flow: The account user must reach out to the account admin to request admin acce
 ## Step 2. Set up HyperPod infrastructure
 <a name="nova-forge-step2"></a>
 
-Set up the necessary infrastructure by following the [workshop instructions](https://catalog.us-east-1.prod.workshops.aws/workshops/dcac6f7a-3c61-4978-8344-7535526bf743/en-US) for configuring the environment with Forge-enabled features.
+Set up the necessary SageMaker HyperPod infrastructure by following the [workshop instructions](https://catalog.us-east-1.prod.workshops.aws/workshops/dcac6f7a-3c61-4978-8344-7535526bf743/en-US) for configuring the environment with Forge-enabled features.
 
 ## Content moderation settings
 <a name="nova-forge-content-moderation"></a>

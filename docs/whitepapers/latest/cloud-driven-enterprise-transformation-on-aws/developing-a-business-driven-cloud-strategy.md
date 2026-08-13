@@ -64,13 +64,13 @@ Evaluating options that are not realistic based on team skills, resources, or ot
   <tr><th> Pattern </th><th> Automated migration </th><th> Pattern-based migration </th><th> Bespoke / custom architecture </th><th colspan="2"> Incremental automation and resiliency </th><th> Average % of mix</th></tr>
 </thead>
 <tbody>
-  <tr><td> </td><td> Includes VMware Cloud on AWS or [CloudEndure](https://www.cloudendure.com/) </td><td> Containers or pattern build, review incremental changes if required, leverage pre-built quick-starts </td><td> Custom architecture </td><td> During move (pipeline deployment) </td><td> Move, then optimize </td><td> </td></tr>
-  <tr><td> Refactor (re-write, decouple, move to managed, or cloud-native) </td><td> </td><td> X </td><td> X </td><td> X </td><td> </td><td> \~5-10% </td></tr>
-  <tr><td> Repurchase / Replace (drop and shop) </td><td colspan="5"> Move to SaaS or purchase a replacement from AWS Marketplace and migrate users to new platform. </td><td> <5% </td></tr>
-  <tr><td> Replatform (shift and reshape) </td><td> </td><td> X </td><td> X </td><td> X </td><td> </td><td> \~40% </td></tr>
-  <tr><td> Rehost (lift and shift) </td><td> X </td><td> X </td><td> </td><td> X </td><td> X </td><td> \~40% </td></tr>
-  <tr><td> Relocate </td><td> X </td><td> </td><td> </td><td> </td><td> X </td><td> <5% </td></tr>
-  <tr><td colspan="2"> Plus: Retain on premises, forklift from colocation, or Retire </td><td> </td><td> </td><td> </td><td> </td><td> \~5-10% </td></tr>
+  <tr><td> </td><td> Includes VMware Cloud on AWS or <a href="https://www.cloudendure.com/">CloudEndure</a> </td><td> Containers or pattern build, review incremental changes if required, leverage pre-built quick-starts </td><td> Custom architecture </td><td> During move (pipeline deployment) </td><td> Move, then optimize </td><td> </td></tr>
+  <tr><td> Refactor (re-write, decouple, move to managed, or cloud-native) </td><td> </td><td> <b>X</b> </td><td> <b>X</b> </td><td> <b>X</b> </td><td> </td><td> ~5-10% </td></tr>
+  <tr><td> Repurchase / Replace (drop and shop) </td><td colspan="5"> Move to SaaS or purchase a replacement from AWS Marketplace and migrate users to new platform. </td><td> &lt;5% </td></tr>
+  <tr><td> Replatform (shift and reshape) </td><td> </td><td> <b>X</b> </td><td> <b>X</b> </td><td> <b>X</b> </td><td> </td><td> ~40% </td></tr>
+  <tr><td> Rehost (lift and shift) </td><td> <b>X</b> </td><td> <b>X</b> </td><td> </td><td> <b>X</b> </td><td> <b>X</b> </td><td> ~40% </td></tr>
+  <tr><td> Relocate </td><td> <b>X</b> </td><td> </td><td> </td><td> </td><td> <b>X</b> </td><td> &lt;5% </td></tr>
+  <tr><td colspan="2"> Plus: Retain on premises, forklift from colocation, or Retire </td><td> </td><td> </td><td> </td><td> </td><td> ~5-10% </td></tr>
 </tbody>
 </table>
 

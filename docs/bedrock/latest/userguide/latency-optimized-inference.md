@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/latency-optimiz
 **Note**
 The Latency Optimized Inference feature is in preview release for Amazon Bedrock and is subject to change.
 
-Latency-optimized inference for foundation models in Amazon Bedrock delivers faster response times and improved responsiveness for AI applications. The optimized versions of [https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html](https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html), [Anthropic's Claude 3.5 Haiku model](https://aws.amazon.com/bedrock/claude/) and [Meta's Llama 3.1 405B and 70B models](https://aws.amazon.com/bedrock/llama/) offer significantly reduced latency without compromising accuracy.
+Latency-optimized inference for foundation models in Amazon Bedrock delivers faster response times and improved responsiveness for AI applications. The optimized versions of [Amazon Nova Pro](https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html), [Anthropic's Claude 3.5 Haiku model](https://aws.amazon.com/bedrock/claude/) and [Meta's Llama 3.1 405B and 70B models](https://aws.amazon.com/bedrock/llama/) offer significantly reduced latency without compromising accuracy.
 
 Accessing the latency optimization capability requires no additional setup or model fine-tuning, allowing for immediate enhancement of existing applications with faster response times. You can set the “Latency” parameter to “optimized” while calling the Amazon Bedrock runtime API. If you select "standard" as your invocation option, your requests will be served by standard inference. By default all requests are routed to through "standard".
 
@@ -20,9 +20,9 @@ Accessing the latency optimization capability requires no additional setup or mo
 
 Once you reach the usage quota for latency optimization for a model, we will attempt to serve the request with Standard latency. In such cases, the request will be charged at Standard latency rates. The latency configuration for a served request is visible in API response and AWS CloudTrail logs. You can also view metrics for latency optimized requests in Amazon CloudWatch logs under "model-id\+latency-optimized".
 
-Latency optimized inference is available for Meta’s Llama 3.1 70B and 405B, as well as Anthropic’s Claude 3.5 Haiku in the US East (Ohio) and US West (Oregon) Regions via [cross-Region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html).
+Latency optimized inference is available for Meta’s Llama 3.1 70B and 405B, as well as Anthropic’s Claude 3.5 Haiku in the US East (Ohio) and US West (Oregon) Regions through [cross-Region inference](bedrock/latest/userguide/cross-region-inference.html).
 
-Latency optimized inference is available for Amazon Nova Pro in the US East (N. Virginia), US East (Ohio), and US West (Oregon) Regions via [cross-Region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html).
+Latency optimized inference is available for Amazon Nova Pro in the US East (N. Virginia), US East (Ohio), and US West (Oregon) Regions through [cross-Region inference](bedrock/latest/userguide/cross-region-inference.html).
 
 For more information about pricing, visit the [pricing page](https://aws.amazon.com/bedrock/pricing/).
 

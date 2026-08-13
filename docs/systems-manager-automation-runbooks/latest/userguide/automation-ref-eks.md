@@ -23,4 +23,5 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 + [`AWSSupport-TroubleshootEbsCsiDriversForEks`](automation-awssupport-troubleshoot-ebs-csi-drivers-for-eks.md)
 + [`AWSSupport-TroubleshootEKSNetwork`](automation-awssupport-troubleshooteksnetwork.md)
 + [`AWSSupport-TroubleshootEKSALBControllerIssues`](automation-awssupport-troubleshoot-eks-alb-controller-issues.md)
++ [`AWSSupport-TroubleshootEKSCNI`](automation-awssupport-troubleshootekscni.md)
 + [`AWSSupport-TroubleshootEKSDNSFailure`](automation-awssupport-troubleshooteksdnsfailure.md)

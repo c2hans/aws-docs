@@ -36,7 +36,7 @@ For more information on downloading and installing rustup, see the [installation
 ## Installation
 <a name="rust-installation"></a>
 
-The AWS Encryption SDK for Rust is available as the [https://crates.io/crates/aws-esdk](https://crates.io/crates/aws-esdk) crate on Crates.io. For details on installing and building the AWS Encryption SDK for Rust, see the [README.md](https://github.com/aws/aws-encryption-sdk/tree/mainline) in the aws-encryption-sdk repository on GitHub.
+The AWS Encryption SDK for Rust is available as the [`aws-esdk`](https://crates.io/crates/aws-esdk) crate on Crates.io. For details on installing and building the AWS Encryption SDK for Rust, see the [README.md](https://github.com/aws/aws-encryption-sdk/tree/mainline) in the aws-encryption-sdk repository on GitHub.
 
 You can install the AWS Encryption SDK for Rust in the following ways.
 

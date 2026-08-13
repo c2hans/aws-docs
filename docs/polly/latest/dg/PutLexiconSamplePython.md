@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/PutLexiconSamplePython.h
 
 The following code sample show how to use Python (boto3)-based applications to store a pronunciation lexicon in an AWS Region.
 
-For more information on this operation, see the reference for the [https://docs.aws.amazon.com/polly/latest/APIReference/API_PutLexicon.html](https://docs.aws.amazon.com/polly/latest/APIReference/API_PutLexicon.html) API.
+For more information on this operation, see the reference for the [`PutLexicon`](https://docs.aws.amazon.com/polly/latest/APIReference/API_PutLexicon.html) API.
 
 Note the following:
 + You need to update the code by providing a local lexicon file name and a stored lexicon name.
@@ -15,7 +15,7 @@ Note the following:
 
 The following code example uses default credentials stored in the AWS SDK configuration file. For information about creating the configuration file, see [Setting up the AWS CLI](setup-cli.md).
 
-For more information on this operation, see the reference for the [https://docs.aws.amazon.com/polly/latest/APIReference/API_PutLexicon.html](https://docs.aws.amazon.com/polly/latest/APIReference/API_PutLexicon.html) API.
+For more information on this operation, see the reference for the [`PutLexicon`](https://docs.aws.amazon.com/polly/latest/APIReference/API_PutLexicon.html) API.
 
 ```
 from argparse import ArgumentParser

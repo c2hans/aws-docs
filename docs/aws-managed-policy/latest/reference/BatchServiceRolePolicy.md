@@ -18,13 +18,13 @@ This policy is attached to a service-linked role that allows the service to perf
 <a name="BatchServiceRolePolicy-details"></a>
 + **Type**: Service-linked role policy
 + **Creation time**: March 10, 2021, 06:55 UTC
-+ **Edited time:** December 05, 2023, 22:52 UTC
++ **Edited time:** August 05, 2026, 17:12 UTC
 + **ARN**: `arn:aws:iam::aws:policy/aws-service-role/BatchServiceRolePolicy`
 
 ## Policy version
 <a name="BatchServiceRolePolicy-version"></a>
 
-**Policy version:** v7 (default)
+**Policy version:** v8 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -62,6 +62,7 @@ The policy's default version is the version that defines the permissions for the
         "autoscaling:DescribeAutoScalingInstances",
         "autoscaling:DescribeScalingActivities",
         "eks:DescribeCluster",
+        "ecs:DescribeCapacityProviders",
         "ecs:DescribeClusters",
         "ecs:DescribeContainerInstances",
         "ecs:DescribeTaskDefinition",
@@ -122,6 +123,7 @@ The policy's default version is the version that defines the permissions for the
           "iam:PassedToService" : [
             "ec2.amazonaws.com",
             "ec2.amazonaws.com.cn",
+            "ecs.amazonaws.com",
             "ecs-tasks.amazonaws.com"
           ]
         }
@@ -138,7 +140,8 @@ The policy's default version is the version that defines the permissions for the
             "spot.amazonaws.com",
             "spotfleet.amazonaws.com",
             "autoscaling.amazonaws.com",
-            "ecs.amazonaws.com"
+            "ecs.amazonaws.com",
+            "ecs-compute.amazonaws.com"
           ]
         }
       }
@@ -201,9 +204,11 @@ The policy's default version is the version that defines the permissions for the
       "Action" : [
         "ecs:DeleteCluster",
         "ecs:DeregisterContainerInstance",
+        "ecs:PutClusterCapacityProviders",
         "ecs:RunTask",
         "ecs:StartTask",
-        "ecs:StopTask"
+        "ecs:StopTask",
+        "ecs:UpdateCluster"
       ],
       "Resource" : "arn:aws:ecs:*:*:cluster/AWSBatch*"
     },
@@ -288,6 +293,27 @@ The policy's default version is the version that defines the permissions for the
           ]
         }
       }
+    },
+    {
+      "Sid" : "AWSBatchPolicyStatement18",
+      "Effect" : "Allow",
+      "Action" : [
+        "ecs:CreateCapacityProvider",
+        "ecs:UpdateCapacityProvider",
+        "ecs:DeleteCapacityProvider"
+      ],
+      "Resource" : "arn:aws:ecs:*:*:capacity-provider/AWSBatch*"
+    },
+    {
+      "Sid" : "AWSBatchPolicyStatement19",
+      "Effect" : "Allow",
+      "Action" : [
+        "ecs:TagResource",
+        "ecs:UntagResource"
+      ],
+      "Resource" : [
+        "arn:aws:ecs:*:*:capacity-provider/AWSBatch*"
+      ]
     }
   ]
 }

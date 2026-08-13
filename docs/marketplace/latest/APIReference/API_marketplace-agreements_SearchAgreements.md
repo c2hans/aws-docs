@@ -289,48 +289,24 @@ This example illustrates one usage of SearchAgreements.
             "proposer": {
                 "accountId": "123456789010"
             },
-            "startTime": 2019-10-08T21:40:43Z,
-            "endTime": 2023-10-08T21:40:43Z,
-            "acceptanceTime": 2019-10-08T00:00:00Z,
+            "startTime": "2019-10-08T21:40:43Z",
+            "endTime": "2026-10-08T21:40:43Z",
+            "acceptanceTime": "2019-10-08T00:00:00Z",
             "agreementType": "PurchaseAgreement",
             "proposalSummary": {
                 "resources": [
                     {
                         "id": "0EXAMPLE-8ce8-4814-bcf1-636EXAMPLEb5",
-                        "type": "AmiProduct"
+                        "type": "SaaSProduct"
                     }
                 ],
                 "offerId": "ABCDEFGHIJKLMNOP123",
                 "offerSetId": "KMZQABLKAXWYG3NW516"
             },
-            "status": "ACTIVE"
-       },
-       {
-            "agreementId": "gEXAMPLE-1bb7-5f53-9826-7b2EXAMPLE06",
-            "acceptor": {
-                "accountId": "123456789010"
-            },
-            "proposer": {
-                "accountId": "123456789010"
-            },
-            "startTime": 2021-03-15T10:00:00Z,
-            "endTime": 2024-03-15T10:00:00Z,
-            "acceptanceTime": 2021-03-15T00:00:00Z,
-            "agreementType": "PurchaseAgreement",
-            "proposalSummary": {
-                "resources": [
-                    {
-                        "id": "1EXAMPLE-9df9-4825-acd2-747EXAMPLEc6",
-                        "type": "SaaSProduct"
-                    }
-                ],
-                "offerId": "BCDEFGHIJKLMNOPQ234",
-                "offerSetId": "NMZQABLKAXWYG3NW627"
-            },
             "status": "ACTIVE",
             "entitlements": [
                 {
-                    "licenseArn": "arn:aws:license-manager::123456789012:license/lic-EXAMPLE56789efgh"
+                    "licenseArn": "arn:aws:license-manager::123456789012:license/lic-EXAMPLE01234abcd"
                 }
             ]
        }

@@ -20,7 +20,7 @@ Moving from Session Manager to just-in-time node access requires careful plannin
 ## Prerequisites
 <a name="migration-prerequisites"></a>
 
-Before you begin, ensure that you have completed the following tasks:
+Before you begin, make sure that you have completed the following tasks:
 + Set up the Systems Manager unified console.
 + Verified you have permissions to modify IAM policies in your account.
 + Identified all IAM policies and roles that currently grant Session Manager permissions.
@@ -37,7 +37,7 @@ Assess your current environment and outline desired approval behaviors by comple
 
 1. **Map approval workflows** - Determine who should approve access requests for different types of nodes.
 
-1. **Review tagging strategy** - Ensure your nodes are properly tagged to support your planned approval policies.
+1. **Review tagging strategy** - Make sure your nodes are properly tagged to support your planned approval policies.
 
 1. **Audit existing IAM policies** - Identify all policies that include Session Manager permissions.
 

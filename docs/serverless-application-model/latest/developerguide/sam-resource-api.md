@@ -204,7 +204,7 @@ Allow compression of response bodies based on client's Accept-Encoding header. C
 *CloudFormation compatibility*: This property is passed directly to the `[MinimumCompressionSize](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-minimumcompressionsize)` property of an `AWS::ApiGateway::RestApi` resource.
 
  `Mode`   <a name="sam-api-mode"></a>
-This property applies only when you use OpenAPI to define your REST API. The `Mode` determines how API Gateway handles resource updates. For more information, see [Mode](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-mode) property of the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html) resource type.
+This property applies only when you use OpenAPI to define your REST API. The `Mode` determines how API Gateway handles resource updates. For more information, see [Mode](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-mode) property of the [AWS::ApiGateway::RestApi](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html) resource type.
 *Valid values*: `overwrite` or `merge`
 *Type*: String
 *Required*: No
@@ -282,14 +282,14 @@ A map (string to string) that defines the stage variables, where the variable na
 
 When the logical ID of this resource is provided to the `Ref` intrinsic function, it returns the ID of the underlying API Gateway API.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html) in the *AWS CloudFormation User Guide*.
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html) in the *AWS CloudFormation User Guide*.
 
 ### Fn::GetAtt
 <a name="sam-resource-api-return-values-fn--getatt"></a>
 
 `Fn::GetAtt` returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using `Fn::GetAtt`, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html) in the *AWS CloudFormation User Guide*.
+For more information about using `Fn::GetAtt`, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html) in the *AWS CloudFormation User Guide*.
 
 `RootResourceId`  <a name="RootResourceId-fn::getatt"></a>
 The root resource ID for a `RestApi` resource, such as `a0bc123d4e`.

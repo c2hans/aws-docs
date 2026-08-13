@@ -23,7 +23,7 @@ Valid Range: Minimum value of 1. Maximum value of 100.
 Required: No
 
  ** updateStrategy **   <a name="AmazonEKS-Type-NodegroupUpdateConfig-updateStrategy"></a>
-The configuration for the behavior to follow during a node group version update of this managed node group. You choose between two possible strategies for replacing nodes during an [https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateNodegroupVersion.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateNodegroupVersion.html) action.
+The configuration for the behavior to follow during a node group version update of this managed node group. You choose between two possible strategies for replacing nodes during an [`UpdateNodegroupVersion`](https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateNodegroupVersion.html) action.
 An Amazon EKS managed node group updates by replacing nodes with new nodes of newer AMI versions in parallel. The *update strategy* changes the managed node update behavior of the managed node group for each quantity. The *default* strategy has guardrails to protect you from misconfiguration and launches the new instances first, before terminating the old instances. The *minimal* strategy removes the guardrails and terminates the old instances before launching the new instances. This minimal strategy is useful in scenarios where you are constrained to resources or costs (for example, with hardware accelerators such as GPUs).
 Type: String
 Valid Values: `DEFAULT | MINIMAL`

@@ -76,7 +76,7 @@ DataSync needs a container-level access token with the following permissions (de
 + List
 + Tag (if you want DataSync to copy [object tags](#azure-blob-considerations-object-tags))
 **Note**
-You can't add the tag permission when generating a SAS token in the Azure portal. To add the tag permission, instead generate the token by using the [https://learn.microsoft.com/en-us/azure/vs-azure-tools-storage-manage-with-storage-explorer](https://learn.microsoft.com/en-us/azure/vs-azure-tools-storage-manage-with-storage-explorer) app or generate a [SAS token that provides account-level access](#account-sas-tokens).
+You can't add the tag permission when generating a SAS token in the Azure portal. To add the tag permission, instead generate the token by using the [Azure Storage Explorer](https://learn.microsoft.com/en-us/azure/vs-azure-tools-storage-manage-with-storage-explorer) app or generate a [SAS token that provides account-level access](#account-sas-tokens).
 
 ------
 #### [ Transfers to blob storage ]
@@ -86,7 +86,7 @@ You can't add the tag permission when generating a SAS token in the Azure portal
 + Delete (if you want DataSync to remove files that aren't in your transfer source)
 + Tag (if you want DataSync to copy [object tags](#azure-blob-considerations-object-tags))
 **Note**
-You can't add the tag permission when generating a SAS token in the Azure portal. To add the tag permission, instead generate the token by using the [https://learn.microsoft.com/en-us/azure/vs-azure-tools-storage-manage-with-storage-explorer](https://learn.microsoft.com/en-us/azure/vs-azure-tools-storage-manage-with-storage-explorer) app or generate a [SAS token that provides account-level access](#account-sas-tokens).
+You can't add the tag permission when generating a SAS token in the Azure portal. To add the tag permission, instead generate the token by using the [Azure Storage Explorer](https://learn.microsoft.com/en-us/azure/vs-azure-tools-storage-manage-with-storage-explorer) app or generate a [SAS token that provides account-level access](#account-sas-tokens).
 
 ------
 
@@ -126,8 +126,8 @@ When planning to transfer data to or from Azure Blob Storage with DataSync, ther
 The fees associated with moving data in or out of Azure Blob Storage can include:
 + Running an [Azure virtual machine (VM)](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/) (if you deploy a DataSync agent in Azure)
 + Running an [Amazon EC2](https://aws.amazon.com/ec2/pricing/) instance (if you deploy a DataSync agent in a VPC within AWS)
-+ Transferring the data by using [DataSync](https://aws.amazon.com/datasync/pricing/), including request charges related to [https://azure.microsoft.com/en-us/pricing/details/storage/blobs/](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/) and [Amazon S3](create-s3-location.md#create-s3-location-s3-requests) (if S3 is one of your transfer locations)
-+ Transferring data in or out of [https://azure.microsoft.com/en-us/pricing/details/storage/blobs/](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/)
++ Transferring the data by using [DataSync](https://aws.amazon.com/datasync/pricing/), including request charges related to [Azure Blob Storage](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/) and [Amazon S3](create-s3-location.md#create-s3-location-s3-requests) (if S3 is one of your transfer locations)
++ Transferring data in or out of [Azure Blob Storage](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/)
 + Storing data in an [AWS storage service](working-with-locations.md) supported by DataSync
 
 ### Blob types
@@ -161,7 +161,7 @@ When transferring to Amazon S3, DataSync won't transfer Azure Blob Storage objec
 
 When transferring to Azure Blob Storage, DataSync can [remove objects in your blob storage that aren't present in your transfer source](configure-metadata.md). (You can configure this option by clearing the **Keep deleted files** setting in the DataSync console. Your [SAS token](#azure-blob-sas-tokens) must also have delete permissions.)
 
-When you configure your transfer this way, DataSync won't delete directories in your blob storage if your Azure storage account is using a hierarchical namespace. In this case, you must manually delete the directories (for example, by using [https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-explorer](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-explorer)).
+When you configure your transfer this way, DataSync won't delete directories in your blob storage if your Azure storage account is using a hierarchical namespace. In this case, you must manually delete the directories (for example, by using [Azure Storage Explorer](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-explorer)).
 
 ### Limitations
 <a name="azure-blob-limitations"></a>
@@ -200,9 +200,9 @@ If you use the script, you can skip ahead to the section about [Getting your age
 
 To prepare your DataSync agent and deploy it in Azure, you must do the following:
 + Enable Hyper-V on your local machine.
-+ Install [https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.3&viewFallbackFrom=powershell-7.1](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.3&viewFallbackFrom=powershell-7.1) (including the Hyper-V Module).
++ Install [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.3&viewFallbackFrom=powershell-7.1) (including the Hyper-V Module).
 + Install the [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
-+ Install [https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&bc=%2Fazure%2Fstorage%2Fblobs%2Fbreadcrumb%2Ftoc.json](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&bc=%2Fazure%2Fstorage%2Fblobs%2Fbreadcrumb%2Ftoc.json).
++ Install [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&bc=%2Fazure%2Fstorage%2Fblobs%2Fbreadcrumb%2Ftoc.json).
 
 #### Downloading and preparing your agent
 <a name="azure-blob-creating-agent-hyper-v-1"></a>

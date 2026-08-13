@@ -50,7 +50,7 @@ The machine learning model is specific to a metric and a statistic. For example,
 
 When CloudWatch creates a model for many common metrics from AWS services, it ensures that the band doesn’t extend outside of logical values. For example, the band for `MemoryUtilization` of an EC2 instance will stay between 0 and 100, and the bands tracking CloudFront `Requests`, which can't be negative, will never extend below zero.
 
-After you create a model, CloudWatch anomaly detection continually evaluates the model and makes adjustments to it to ensure that it is as accurate as possible. This includes re-training the model to adjust if the metric values evolve over time or have sudden changes, and also includes predictors to improve the models of metrics that are seasonal, spiky, or sparse.
+After you create a model, CloudWatch anomaly detection continually evaluates the model and makes adjustments to it to make sure that it is as accurate as possible. This includes re-training the model to adjust if the metric values evolve over time or have sudden changes, and also includes predictors to improve the models of metrics that are seasonal, spiky, or sparse.
 
 After you enable anomaly detection on a metric, you can choose to exclude specified time periods of the metric from being used to train the model. This way, you can exclude deployments or other unusual events from being used for model training, ensuring the most accurate model is created.
 

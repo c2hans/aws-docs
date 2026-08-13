@@ -31,7 +31,7 @@ Hyperparameter tuning automatically sends an additional hyperparameter `_tuning_
 
 This section shows how to define your own metrics to use your own custom algorithm for training. When doing so, make sure that your algorithm writes at least one metric to `stderr` or `stdout`. Hyperparameter tuning parses these streams to find algorithm metrics that show how well the model is performing on the dataset.
 
-You can define custom metrics by specifying a name and regular expression for each metric that your tuning job monitors. Then, pass these metric definitions to the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateHyperParameterTuningJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateHyperParameterTuningJob.html) API in the `TrainingJobDefinition` parameter in the `MetricDefinitions` field of `AlgorithmSpecification`.
+You can define custom metrics by specifying a name and regular expression for each metric that your tuning job monitors. Then, pass these metric definitions to the [`CreateHyperParameterTuningJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateHyperParameterTuningJob.html) API in the `TrainingJobDefinition` parameter in the `MetricDefinitions` field of `AlgorithmSpecification`.
 
 The following shows sample output from a log written to `stderr` or `stdout` by a training algorithm.
 
@@ -70,14 +70,14 @@ In regular expressions, parenthesis `()` are used to group parts of the regular 
 
 The loss metric defined in the code sample will capture `Loss = 16.020744` from the sample output.
 
-Choose one of the metrics that you define as the objective metric for the tuning job. If you are using the SageMaker API, specify the value of the `name` key in the `HyperParameterTuningJobObjective` field of the `HyperParameterTuningJobConfig` parameter that you send to the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateHyperParameterTuningJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateHyperParameterTuningJob.html) operation.
+Choose one of the metrics that you define as the objective metric for the tuning job. If you are using the SageMaker API, specify the value of the `name` key in the `HyperParameterTuningJobObjective` field of the `HyperParameterTuningJobConfig` parameter that you send to the [`CreateHyperParameterTuningJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateHyperParameterTuningJob.html) operation.
 
 ## Specify environment variables
 <a name="automatic-model-tuning-define-variables"></a>
 
 SageMaker AI AMT optimizes hyperparameters within a tuning job to find the best parameters for model performance. You can use environment variables to configure your tuning job to change its behavior. You can also use environment variables that you used during training inside your tuning job.
 
-If you want to use an environment variable from your tuning job or specify a new environment variable, input a string value for `Environment` within the SageMaker AI [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperParameterTrainingJobDefinition.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperParameterTrainingJobDefinition.html) API. Pass this training job definition to the [CreateHyperParameterTuningJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateHyperParameterTuningJob.html) API.
+If you want to use an environment variable from your tuning job or specify a new environment variable, input a string value for `Environment` within the SageMaker AI [HyperParameterTrainingJobDefinition](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperParameterTrainingJobDefinition.html) API. Pass this training job definition to the [CreateHyperParameterTuningJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateHyperParameterTuningJob.html) API.
 
 For example, the environment variable `SM_LOG_LEVEL` can be set to the following values to tailor the output from a Python container.
 

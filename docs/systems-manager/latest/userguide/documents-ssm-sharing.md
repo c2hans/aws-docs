@@ -50,7 +50,7 @@ Create a restrictive AWS Identity and Access Management (IAM) policy for users w
 Review the contents of every document that is shared with you, especially public documents, to understand the commands that will be run on your instances. A document could intentionally or unintentionally have negative repercussions after it's run. If the document references an external network, review the external source before you use the document.
 
 **Send commands using the document hash**
-When you share a document, the system creates a Sha-256 hash and assigns it to the document. The system also saves a snapshot of the document content. When you send a command using a shared document, you can specify the hash in your command to ensure that the following conditions are true:
+When you share a document, the system creates a Sha-256 hash and assigns it to the document. The system also saves a snapshot of the document content. When you send a command using a shared document, you can specify the hash in your command to make sure that the following conditions are true:
 + You're running a command from the correct Systems Manager document
 + The content of the document hasn't changed since it was shared with you.
 If the hash doesn't match the specified document or if the content of the shared document has changed, the command returns an `InvalidDocument` exception. The hash can't verify document content from external locations.
@@ -176,7 +176,7 @@ The following is an example of an IAM policy that prevents users from updating t
 ## Share an SSM document
 <a name="ssm-how-to-share"></a>
 
-You can share AWS Systems Manager (SSM) documents by using the Systems Manager console. When sharing documents from the console, only the default version of the document can be shared. You can also share SSM documents programmatically by calling the `ModifyDocumentPermission` API operation using the AWS Command Line Interface (AWS CLI), AWS Tools for Windows PowerShell, or the AWS SDK. Before you share a document, get the AWS account IDs of the people with whom you want to share. You will specify these account IDs when you share the document.
+You can share AWS Systems Manager (SSM) documents by using the Systems Manager console. When sharing documents from the console, only the default version of the document can be shared. You can also share SSM documents programmatically by calling the `ModifyDocumentPermission` API operation using the AWS Command Line Interface (AWS CLI), AWS Tools for Windows PowerShell, or the AWS SDK. Before you share a document, get the AWS account IDs of the people with whom you want to share. Specify these account IDs when you share the document.
 
 ### Share a document (console)
 <a name="share-using-console"></a>

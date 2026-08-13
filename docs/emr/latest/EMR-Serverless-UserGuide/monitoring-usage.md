@@ -20,7 +20,7 @@ EMR Serverless publishes the following service quota usage metrics in the `AWS/U
 
 | Metric | Description |
 | --- | --- |
-| `ResourceCount` | The total number of the specified resource that is running on your account. The resource is defined by the [dimensions](#usage-metrics-dimensions) that are associated with the metric. |
+| `ResourceCount` | The total number of the specified resource that is running on your account. The resource is defined by the [dimensions](#usage-metrics-dimensions) that are associated with the metric.<br />Valid Period: 1 minute<br />Valid Statistics: Sum |
 
 ## Dimensions for EMR Serverless service quota usage metrics
 <a name="usage-metrics-dimensions"></a>

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 <a name="CloudWatch_Synthetics_Canaries_Create"></a>
 
 **Important**
-Ensure that you use Synthetics canaries to monitor only endpoints and APIs where you have ownership or permissions. Depending on the canary frequency settings, these endpoints might experience increased traffic.
+Make sure that you use Synthetics canaries to monitor only endpoints and APIs where you have ownership or permissions. Depending on the canary frequency settings, these endpoints might experience increased traffic.
 
 When you use the CloudWatch console to create a canary, you can use a blueprint provided by CloudWatch to create your canary or you can write your own script. For more information, see [Using canary blueprints](CloudWatch_Synthetics_Canaries_Blueprints.md).
 
@@ -51,7 +51,7 @@ When you create a canary, one of the layers created is a Synthetics layer prepen
 1. If you are using environment variables in your script, choose **Environment variables** and then specify a value for each environment variable defined in your script. For more information, see [Environment variables](CloudWatch_Synthetics_Canaries_CommonFeatures.md#CloudWatch_Synthetics_Environment_Variables).
 
 1. Under **Schedule**, choose whether to run this canary just once, run it continuously using a rate expression, or schedule it using a cron expression.
-   + When you use the CloudWatch console to create a canary that runs continuously, you can choose a rate anywhere between once a minute and once an hour.
+   + When you use the CloudWatch console to create a canary that runs continuously, you can choose a rate anywhere between once a minute and after an hour.
    + For more information about writing a cron expression for canary scheduling, see [Scheduling canary runs using cron](CloudWatch_Synthetics_Canaries_cron.md).
 
 1. (Optional) To set a timeout value for the canary, choose **Additional configuration** and then specify the timeout value. Make it no shorter than 15 seconds to allow for Lambda cold starts and the time it takes to boot up the canary instrumentation.

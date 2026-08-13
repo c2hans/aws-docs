@@ -38,13 +38,15 @@ If you're trying to troubleshoot a permissions issue, start with the [Access den
 ## Access denied message examples and how to troubleshoot them
 <a name="access-denied-message-examples"></a>
 
-Amazon S3 now includes additional context in access denied (HTTP `403 Forbidden`) errors for requests made to resources within the same AWS account or same organization in AWS Organizations. This new context includes the type of policy that denied access, the reason for denial, and information about the IAM user or role that requested access to the resource.
+Amazon S3 now includes additional context in access denied (HTTP `403 Forbidden`) errors for requests made to resources within the same AWS account or same organization in AWS Organizations. This context includes the type of policy that denied access, the reason for denial, and information about the IAM user or role that requested access to the resource.
 
-This additional context helps you to troubleshoot access issues, identify the root cause of access denied errors, and fix incorrect access controls by updating the relevant policies. This additional context is also available in AWS CloudTrail logs. Enhanced access denied error messages for same-account or same-organization requests are now available in all AWS Regions, including the AWS GovCloud (US) Regions and the China Regions.
+With this additional context, you can troubleshoot access issues, identify the root cause of access denied errors, and fix incorrect access controls by updating the relevant policies. This additional context is also available in AWS CloudTrail logs. Enhanced access denied error messages for same-account or same-organization requests are available in all AWS Regions, including the AWS GovCloud (US) Regions and the China Regions.
+
+For explicit deny cases, the error message also includes the Amazon Resource Name (ARN) of the specific policy that denied the request. With this policy ARN, you can quickly identify the exact policy responsible for the denial and navigate directly to it to make the necessary changes. The error message includes the policy ARN for Service Control Policies (SCPs), resource control policies (RCPs), identity-based policies, session policies, and permissions boundaries.
 
 Most access denied error messages appear in the format `User {{user-arn}} is not authorized to perform {{action}} on "{{resource-arn}}" because {{context}}`. In this example, {{`user-arn`}} is the [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) of the user that doesn't receive access, {{`action`}} is the service action that the policy denies, and {{`resource-arn`}} is the ARN of the resource on which the policy acts. The {{`context`}} field represents additional context about the policy type that explains why the policy denied access.
 
-When a policy explicitly denies access because the policy contains a `Deny` statement, then the access denied error message includes the phrase `with an explicit deny in a {{type}} policy`. When the policy implicitly denies access, then the access denied error message includes the phrase `because no {{type}} policy allows the {{action}} action`.
+When a policy explicitly denies access because the policy contains a `Deny` statement, then the access denied error message includes the phrase `with an explicit deny in a {{type}} policy`, along with the ARN of the specific policy that denied the request. When the policy implicitly denies access, then the access denied error message includes the phrase `because no {{type}} policy allows the {{action}} action`.
 
 **Important**
 Enhanced access denied messages are returned only for same-account requests or for requests within the same organization in AWS Organizations. Cross-account requests outside of the same organization return a generic `Access Denied` message.
@@ -54,6 +56,7 @@ Enhanced access denied messages aren't returned if a denial occurs because of a 
 Enhanced access denied messages are provided whenever both the bucket owner and the caller account belong to the same organization in AWS Organizations. Although buckets configured with the S3 Object Ownership **Bucket owner preferred** or **Object writer** settings might contain objects owned by different accounts, object ownership doesn't affect enhanced access denied messages. Enhanced access denied messages are returned for all object requests as long as the bucket owner and caller are in the same organization, regardless of who owns the specific object. For information about Object Ownership settings and configurations, see [Controlling ownership of objects and disabling ACLs for your bucket](about-object-ownership.md).
 Enhanced access denied error messages aren't returned for requests made to directory buckets. Directory bucket requests return a generic `Access Denied` message.
 If multiple policies of the same policy type deny an authorization request, the access denied error message doesn't specify the number of policies.
+For explicit deny cases, the error message includes the ARN of the specific policy that denied the request. This applies to Service Control Policies (SCPs), resource control policies (RCPs), identity-based policies, session policies, and permissions boundaries.
 If multiple policy types deny an authorization request, the error message includes only one of those policy types.
 If an access request is denied due to multiple reasons, the error message includes only one of the reasons for denial.
 
@@ -83,7 +86,7 @@ For more information about this setting, see [Blocking or unblocking SSE-C for a
 ### Access denied due to a resource control policy – explicit denial
 <a name="access-denied-rcp-examples-explicit"></a>
 
-1. Check for a `Deny` statement for the action in your resource control policies (RCPs). For the following example, the action is `s3:GetObject`.
+1. Check for an explicit `Deny` statement for the action in your resource control policies (RCPs). The error message includes the policy ARN, which you can use to identify and navigate directly to the policy that denied the request. For the following example, the action is `s3:GetObject`.
 
 1. Update your RCP by removing the `Deny` statement. For more information, see [Update a resource control policy (RCP)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_policies_update.html#update_policy-rcp) in the *AWS Organizations User Guide*.
 
@@ -91,7 +94,8 @@ For more information about this setting, see [Blocking or unblocking SSE-C for a
 An error occurred (AccessDenied) when calling the GetObject operation:
 User: arn:aws:iam::{{777788889999}}:user/{{MaryMajor}} is not authorized to perform:
 s3:GetObject on resource: "arn:aws:s3:::{{amzn-s3-demo-bucket1}}/{{object-name}}"
-with an explicit deny in a resource control policy
+with an explicit deny in a resource control policy, with policy ARN:
+arn:aws:organizations::{{777788889999}}:policy/{{o-exampleorgid}}/resource_control_policy/{{p-examplepolicyid}}
 ```
 
 ### Access denied due to a Service Control Policy – implicit denial
@@ -109,13 +113,14 @@ s3:GetObject because no service control policy allows the s3:GetObject action
 ### Access denied due to a Service Control Policy – explicit denial
 <a name="access-denied-scp-examples-explicit"></a>
 
-1. Check for a `Deny` statement for the action in your Service Control Policies (SCPs). For the following example, the action is `s3:GetObject`.
+1. Check for an explicit `Deny` statement for the action in your Service Control Policies (SCPs). The error message includes the policy ARN, which you can use to identify and navigate directly to the policy that denied the request. For the following example, the action is `s3:GetObject`.
 
 1. Update your SCP by changing the `Deny` statement to allow the user the necessary access. For an example of how you can do this, see [Service control policy examples](https://github.com/aws-samples/service-control-policy-examples) on GitHub. For more information about updating your SCP, see [Updating an SCP](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_policies_update.html#update_policy) in the *AWS Organizations User Guide*.
 
 ```
 User: arn:aws:iam::{{777788889999}}:user/{{MaryMajor}} is not authorized to perform:
-s3:GetObject with an explicit deny in a service control policy
+s3:GetObject with an explicit deny in a service control policy, with policy ARN:
+arn:aws:organizations::{{777788889999}}:policy/{{o-exampleorgid}}/service_control_policy/{{p-examplepolicyid}}
 ```
 
 ### Access denied due to a VPC endpoint policy – implicit denial
@@ -159,13 +164,14 @@ because no permissions boundary allows the s3:GetObject action
 ### Access denied due to a permissions boundary – explicit denial
 <a name="access-denied-permissions-boundary-examples-explicit"></a>
 
-1. Check for an explicit `Deny` statement for the action in your permissions boundary. For the following example, the action is `s3:GetObject`.
+1. Check for an explicit `Deny` statement for the action in your permissions boundary. The error message includes the policy ARN, which you can use to identify and navigate directly to the policy that denied the request. For the following example, the action is `s3:GetObject`.
 
-1. Update your permissions boundary by changing the `Deny` statement in your IAM policy to allow the user the necessary access. For example, you can update your `Deny` statement to use the `aws:PrincipalAccount` condition key with the `StringNotEquals` condition operator to allow the specific principal access, as shown in [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalaccount](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalaccount) in the *IAM User Guide*. For more information, see [Permissions boundaries for IAM entities](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html) and [Editing IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html) in the *IAM User Guide*.
+1. Update your permissions boundary by changing the `Deny` statement in your IAM policy to allow the user the necessary access. For example, you can update your `Deny` statement to use the `aws:PrincipalAccount` condition key with the `StringNotEquals` condition operator to allow the specific principal access, as shown in [aws:PrincipalAccount](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalaccount) in the *IAM User Guide*. For more information, see [Permissions boundaries for IAM entities](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html) and [Editing IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html) in the *IAM User Guide*.
 
 ```
 User: arn:aws:iam::{{777788889999}}:user/{{MaryMajor}} is not authorized to perform:
-s3:GetObject with an explicit deny in a permissions boundary
+s3:GetObject with an explicit deny in a permissions boundary, with policy ARN:
+arn:aws:iam::{{777788889999}}:policy/{{ExamplePermissionsBoundaryPolicy}}
 ```
 
 ### Access denied due to session policies – implicit denial
@@ -183,14 +189,15 @@ s3:GetObject because no session policy allows the s3:GetObject action
 ### Access denied due to session policies – explicit denial
 <a name="access-denied-session-policy-examples-explicit"></a>
 
-1. Check for an explicit `Deny` statement for the action in your session policies. For the following example, the action is `s3:GetObject`.
+1. Check for an explicit `Deny` statement for the action in your session policies. The error message includes the policy ARN, which you can use to identify and navigate directly to the policy that denied the request. For the following example, the action is `s3:GetObject`.
 
 1. Update your session policy by changing the `Deny` statement to allow the user the necessary access. For example, you can update your `Deny` statement to use the `aws:PrincipalAccount` condition key with the `StringNotEquals` condition operator to allow the specific principal access, as shown in [Example 7: Excluding certain principals from a `Deny` statement](amazon-s3-policy-keys.md#example-exclude-principal-from-deny-statement). For more information about updating your session policy, see [Session policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session) and [Editing IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html) in the *IAM User Guide*.
 
 ```
 User: arn:aws:iam::{{123456789012}}:user/{{MaryMajor}} is not authorized to perform:
 s3:GetObject on resource: "arn:aws:s3:::{{amzn-s3-demo-bucket1}}/{{object-name}}" with
-an explicit deny in a session policy
+an explicit deny in a session policy, with policy ARN:
+arn:aws:iam::{{123456789012}}:policy/{{ExampleSessionPolicy}}
 ```
 
 ### Access denied due to resource-based policies – implicit denial
@@ -243,14 +250,15 @@ s3:GetObject because no identity-based policy allows the s3:GetObject action
 ### Access denied due to identity-based policies – explicit denial
 <a name="access-denied-identity-based-policy-examples-explicit"></a>
 
-1. Check for an explicit `Deny` statement for the action in identity-based policies attached to the identity. For the following example, the action is `s3:GetObject` and the identity is the IAM user `MaryMajor`.
+1. Check for an explicit `Deny` statement for the action in identity-based policies attached to the identity. The error message includes the policy ARN, which you can use to identify and navigate directly to the policy that denied the request. For the following example, the action is `s3:GetObject` and the identity is the IAM user `MaryMajor`.
 
-1. Update your policy by changing the `Deny` statement to allow the user the necessary access. For example, you can update your `Deny` statement to use the `aws:PrincipalAccount` condition key with the `StringNotEquals` condition operator to allow the specific principal access, as shown in [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalaccount](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalaccount) in the *IAM User Guide*. For more information, see [Identity-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_id-based) and [Editing IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html) in the *IAM User Guide*.
+1. Update your policy by changing the `Deny` statement to allow the user the necessary access. For example, you can update your `Deny` statement to use the `aws:PrincipalAccount` condition key with the `StringNotEquals` condition operator to allow the specific principal access, as shown in [aws:PrincipalAccount](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalaccount) in the *IAM User Guide*. For more information, see [Identity-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_id-based) and [Editing IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html) in the *IAM User Guide*.
 
 ```
 User: arn:aws:iam::{{123456789012}}:user/{{MaryMajor}} is not authorized to perform:
 s3:GetObject on resource: "arn:aws:s3:::{{amzn-s3-demo-bucket1}}/{{object-name}}" with
-an explicit deny in an identity-based policy
+an explicit deny in an identity-based policy, with policy ARN:
+arn:aws:iam::{{123456789012}}:policy/{{ExampleIdentityBasedPolicy}}
 ```
 
 ### Access denied due to Block Public Access settings
@@ -370,7 +378,7 @@ To view a bucket policy, you must have the `s3:GetBucketPolicy` permission. To e
 
 1. Under **Bucket policy**, choose **Edit**. The **Edit bucket policy** page appears.
 
-To review your bucket policy by using the AWS Command Line Interface (AWS CLI), use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-policy.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-policy.html) command. To edit your bucket policy, use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-policy.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-policy.html) command.
+To review your bucket policy by using the AWS Command Line Interface (AWS CLI), use the [get-bucket-policy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-policy.html) command. To edit your bucket policy, use the [put-bucket-policy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-policy.html) command.
 
 **Note**
 If you get locked out of a bucket because of an incorrect bucket policy, [sign in to the AWS Management Console by using your AWS account root user credentials.](https://docs.aws.amazon.com/signin/latest/userguide/introduction-to-root-user-sign-in-tutorial.html) To regain access to your bucket, make sure to delete the incorrect bucket policy by using your AWS account root user credentials.
@@ -380,7 +388,7 @@ If you get locked out of a bucket because of an incorrect bucket policy, [sign i
 
 To check whether the requester has proper permissions to perform an Amazon S3 operation, try the following:
 + Identify the requester. If it’s an unsigned request, then it's an anonymous request without an IAM user policy. If it’s a request that uses a presigned URL, then the user policy is the same as the one for the IAM user or role that signed the request.
-+ Verify that you're using the correct IAM user or role. You can verify your IAM user or role by checking the console navigation bar or by using the [https://docs.aws.amazon.com/cli/latest/reference/sts/get-caller-identity.html](https://docs.aws.amazon.com/cli/latest/reference/sts/get-caller-identity.html) command.
++ Verify that you're using the correct IAM user or role. You can verify your IAM user or role by checking the console navigation bar or by using the [aws sts get-caller-identity](https://docs.aws.amazon.com/cli/latest/reference/sts/get-caller-identity.html) command.
 + Check the IAM policies that are related to the IAM user or role. You can use one of the following methods:
   + [Test IAM policies with the IAM policy simulator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html).
   + Review the different [IAM policy types](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html).
@@ -410,7 +418,7 @@ Depending on the action of the rejected request, [check the ACL permissions for 
 + If Amazon S3 rejected a `LIST`, `PUT` object, `GetBucketAcl`, or `PutBucketAcl` request, then [review the ACL permissions for your bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/managing-acls.html).
 **Note**
 You can't grant `GET` object permissions with bucket ACL settings.
-+ If Amazon S3 rejected a `GET` request on an S3 object, or a [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html) request, then [review the ACL permissions for the object](https://docs.aws.amazon.com/AmazonS3/latest/userguide/managing-acls.html).
++ If Amazon S3 rejected a `GET` request on an S3 object, or a [PutObjectAcl](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html) request, then [review the ACL permissions for the object](https://docs.aws.amazon.com/AmazonS3/latest/userguide/managing-acls.html).
 **Important**
 If the account that owns the object is different from the account that owns the bucket, then access to the object isn't controlled by the bucket policy.
 
@@ -459,7 +467,7 @@ By default, Amazon S3 now applies server-side encryption with Amazon S3 managed 
 
 1. Scroll down to the **Default encryption** section and view the **Encryption type** settings.
 
-To check your encryption settings by using the AWS CLI, use the [https://docs.aws.amazon.com/cli/latest/reference/s3api/get-bucket-encryption.html](https://docs.aws.amazon.com/cli/latest/reference/s3api/get-bucket-encryption.html) command.
+To check your encryption settings by using the AWS CLI, use the [get-bucket-encryption](https://docs.aws.amazon.com/cli/latest/reference/s3api/get-bucket-encryption.html) command.
 
 **To check the encryption status of an object**
 
@@ -475,7 +483,7 @@ To check your encryption settings by using the AWS CLI, use the [https://docs.aw
 
 1. Scroll down to the **Server-side encryption settings** section to view the object's server-side encryption settings.
 
-To check your object encryption status by using the AWS CLI, use the [https://docs.aws.amazon.com/cli/latest/reference/s3api/head-object.html#examples](https://docs.aws.amazon.com/cli/latest/reference/s3api/head-object.html#examples) command.
+To check your object encryption status by using the AWS CLI, use the [head-object](https://docs.aws.amazon.com/cli/latest/reference/s3api/head-object.html#examples) command.
 
 ### Encryption and permissions requirements
 <a name="troubleshoot-403-encryption-requirements"></a>

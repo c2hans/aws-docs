@@ -27,7 +27,7 @@ Some questions that you will answer at this stage are:
 
 This stage is the opportunity to learn and grow through experience before taking the migration project to the next level. Nothing is more effective and builds momentum faster than the opportunity to learn by doing. AWS recommends providing that opportunity through a number of different avenues, which we will outline in detail in the next section. Begin by pulling together a group of cross-functional leaders, making decisions about what the future will look like for the people in the organization, mobilizing an initial implementation team and an initial body of work to gain the necessary insight and learnings, and demonstrating results that can be emulated and scaled. These are the first steps to [setting the foundation](https://aws.amazon.com/blogs/publicsector/tco-cost-optimization-best-practices-for-managing-usage/) for future state culture, change, and leadership.
 
-For more information, see the [https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-ocm/migration-ocm.pdf](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-ocm/migration-ocm.pdf) whitepaper.
+For more information, see the [*AWS Prescriptive Guidance*](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-ocm/migration-ocm.pdf) whitepaper.
 
  **Guidelines and steps to set the foundation**:
 +  Design the team(s) responsible for mobilizing critical cloud resources (cross-functional leaders who are able to make day-to-day decisions quickly and efficiently).

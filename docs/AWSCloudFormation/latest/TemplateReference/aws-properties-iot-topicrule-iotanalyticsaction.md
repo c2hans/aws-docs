@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `BatchMode`  <a name="cfn-iot-topicrule-iotanalyticsaction-batchmode"></a>
 Whether to process the action as a batch. The default value is `false`.
-When `batchMode` is `true` and the rule SQL statement evaluates to an Array, each Array element is delivered as a separate message when passed by [https://docs.aws.amazon.com/iotanalytics/latest/APIReference/API_BatchPutMessage.html](https://docs.aws.amazon.com/iotanalytics/latest/APIReference/API_BatchPutMessage.html) The resulting array can't have more than 100 messages.
+When `batchMode` is `true` and the rule SQL statement evaluates to an Array, each Array element is delivered as a separate message when passed by [`BatchPutMessage`](https://docs.aws.amazon.com/iotanalytics/latest/APIReference/API_BatchPutMessage.html) The resulting array can't have more than 100 messages.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

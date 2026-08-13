@@ -51,7 +51,7 @@ To use automatic node repair with Karpenter, enable the feature gate `NodeRepair
 
 You can enable automatic node repair when creating new EKS managed node groups or by updating existing EKS managed node groups.
 +  **Amazon EKS console** – Select the **Enable node auto repair** checkbox for the managed node group. For more information, see [Create a managed node group for your cluster](create-managed-node-group.md).
-+  ** AWS CLI** – Add `--node-repair-config enabled=true` to the [https://docs.aws.amazon.com/cli/latest/reference/eks/create-nodegroup.html](https://docs.aws.amazon.com/cli/latest/reference/eks/create-nodegroup.html) or [https://docs.aws.amazon.com/cli/latest/reference/eks/update-nodegroup-config.html](https://docs.aws.amazon.com/cli/latest/reference/eks/update-nodegroup-config.html) command.
++  ** AWS CLI** – Add `--node-repair-config enabled=true` to the [`eks create-nodegroup`](https://docs.aws.amazon.com/cli/latest/reference/eks/create-nodegroup.html) or [`eks update-nodegroup-config`](https://docs.aws.amazon.com/cli/latest/reference/eks/update-nodegroup-config.html) command.
 +  **eksctl** – Configure `managedNodeGroups.nodeRepairConfig.enabled: true`, see the example in the [eksctl GitHub](https://github.com/eksctl-io/eksctl/blob/main/examples/44-node-repair.yaml).
 
 When using EKS managed node groups, you can control node auto repair behavior with the following settings.

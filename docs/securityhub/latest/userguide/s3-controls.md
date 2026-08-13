@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon Simple Storage Service 
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/s3-account-level-public-access-blocks-periodic.html](https://docs.aws.amazon.com/config/latest/developerguide/s3-account-level-public-access-blocks-periodic.html)
+**AWS Config rule:** [s3-account-level-public-access-blocks-periodic](https://docs.aws.amazon.com/config/latest/developerguide/s3-account-level-public-access-blocks-periodic.html)
 
 **Schedule type:** Periodic
 
@@ -54,7 +54,7 @@ To enable Amazon S3 Block Public Access for your AWS account, see [Configuring b
 
 **Resource type:** `AWS::S3::Bucket`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-public-read-prohibited](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-public-read-prohibited)
+**AWS Config rule:** [s3-bucket-public-read-prohibited](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-public-read-prohibited)
 
 **Schedule type:** Periodic and change triggered
 
@@ -83,7 +83,7 @@ To block public read access on your Amazon S3 buckets, see [Configuring block pu
 
 **Resource type:** `AWS::S3::Bucket`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-public-write-prohibited.html](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-public-write-prohibited.html)
+**AWS Config rule:** [s3-bucket-public-write-prohibited](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-public-write-prohibited.html)
 
 **Schedule type:** Periodic and change triggered
 
@@ -112,7 +112,7 @@ To block public write access on your Amazon S3 buckets, see [Configuring block p
 
 **Resource type:** `AWS::S3::Bucket`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-ssl-requests-only.html](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-ssl-requests-only.html)
+**AWS Config rule:** [s3-bucket-ssl-requests-only](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-ssl-requests-only.html)
 
 **Schedule type:** Change triggered
 
@@ -173,7 +173,7 @@ For more information, see [What S3 bucket policy should I use to comply with the
 
 **Resource type:** `AWS::S3::Bucket`
 
-**AWS Config** rule: [https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-blacklisted-actions-prohibited.html](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-blacklisted-actions-prohibited.html)
+**AWS Config** rule: [s3-bucket-blacklisted-actions-prohibited](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-blacklisted-actions-prohibited.html)
 
 **Schedule type:** Change triggered
 
@@ -206,7 +206,7 @@ On the **Edit bucket policy** page, in the policy editing text box, take one of 
 
 **Resource type:** `AWS::S3::Bucket`
 
-**AWS Config rule: ** [https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-cross-region-replication-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-cross-region-replication-enabled.html)
+**AWS Config rule: ** [s3-bucket-cross-region-replication-enabled](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-cross-region-replication-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -234,7 +234,7 @@ To enable Cross-Region Replication on an S3 bucket, see [Configuring replication
 
 **Resource type:** `AWS::S3::Bucket`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-level-public-access-prohibited.html](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-level-public-access-prohibited.html)
+**AWS Config rule:** [s3-bucket-level-public-access-prohibited](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-level-public-access-prohibited.html)
 
 **Schedule type:** Change triggered
 
@@ -267,7 +267,7 @@ For information on how to remove public access at a bucket level, see [Blocking 
 
 **Resource type:** `AWS::S3::Bucket`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-logging-enabled.html)
+**AWS Config rule:** [s3-bucket-logging-enabled](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-logging-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -293,7 +293,7 @@ To enable Amazon S3 server access logging, see [Enabling Amazon S3 server access
 
 **Resource type:** `AWS::S3::Bucket`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/s3-version-lifecycle-policy-check.html](https://docs.aws.amazon.com/config/latest/developerguide/s3-version-lifecycle-policy-check.html)
+**AWS Config rule:** [s3-version-lifecycle-policy-check](https://docs.aws.amazon.com/config/latest/developerguide/s3-version-lifecycle-policy-check.html)
 
 **Schedule type:** Change triggered
 
@@ -322,7 +322,7 @@ For more information on configuring lifecycle on an Amazon S3 bucket, see [Using
 
 **Resource type:** `AWS::S3::Bucket`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/s3-event-notifications-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/s3-event-notifications-enabled.html)
+**AWS Config rule:** [s3-event-notifications-enabled](https://docs.aws.amazon.com/config/latest/developerguide/s3-event-notifications-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -352,7 +352,7 @@ For information about detecting changes to S3 buckets and objects, see [Amazon S
 
 **Resource type:** `AWS::S3::Bucket`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-acl-prohibited.html](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-acl-prohibited.html)
+**AWS Config rule:** [s3-bucket-acl-prohibited](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-acl-prohibited.html)
 
 **Schedule type:** Change triggered
 
@@ -380,7 +380,7 @@ To create an S3 bucket policy, see [Adding a bucket policy by using the Amazon S
 
 **Resource type:** `AWS::S3::Bucket`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/s3-lifecycle-policy-check.html](https://docs.aws.amazon.com/config/latest/developerguide/s3-lifecycle-policy-check.html)
+**AWS Config rule:** [s3-lifecycle-policy-check](https://docs.aws.amazon.com/config/latest/developerguide/s3-lifecycle-policy-check.html)
 
 **Schedule type:** Change triggered
 
@@ -412,7 +412,7 @@ For information about configuring lifecycle policies on an Amazon S3 bucket, see
 
 **Resource type:** `AWS::S3::Bucket`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-versioning-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-versioning-enabled.html)
+**AWS Config rule:** [s3-bucket-versioning-enabled](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-versioning-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -441,7 +441,7 @@ To use versioning on an S3 bucket, see [Enabling versioning on buckets](https://
 
 **Resource type:** `AWS::S3::Bucket`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-default-lock-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-default-lock-enabled.html)
+**AWS Config rule:** [s3-bucket-default-lock-enabled](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-default-lock-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -471,7 +471,7 @@ To configure Object Lock for new and existing S3 buckets, see [Configuring S3 Ob
 
 **Resource type:** `AWS::S3::Bucket`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/s3-default-encryption-kms.html](https://docs.aws.amazon.com/config/latest/developerguide/s3-default-encryption-kms.html)
+**AWS Config rule:** [s3-default-encryption-kms](https://docs.aws.amazon.com/config/latest/developerguide/s3-default-encryption-kms.html)
 
 **Schedule type:** Change triggered
 
@@ -497,7 +497,7 @@ To encrypt an S3 bucket using SSE-KMS, see [Specifying server-side encryption wi
 
 **Resource type:** `AWS::S3::AccessPoint`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/s3-access-point-public-access-blocks.html](https://docs.aws.amazon.com/config/latest/developerguide/s3-access-point-public-access-blocks.html)
+**AWS Config rule:** [s3-access-point-public-access-blocks](https://docs.aws.amazon.com/config/latest/developerguide/s3-access-point-public-access-blocks.html)
 
 **Schedule type:** Change triggered
 
@@ -523,7 +523,7 @@ Amazon S3 currently doesn't support changing an access point's block public acce
 
 **Resource type:** `AWS::S3::Bucket`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-mfa-delete-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-mfa-delete-enabled.html)
+**AWS Config rule:** [s3-bucket-mfa-delete-enabled](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-mfa-delete-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -552,7 +552,7 @@ For information about enabling versioning and configuring MFA delete for an S3 b
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudtrail-all-write-s3-data-event-check.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudtrail-all-write-s3-data-event-check.html)
+**AWS Config rule:** [cloudtrail-all-write-s3-data-event-check](https://docs.aws.amazon.com/config/latest/developerguide/cloudtrail-all-write-s3-data-event-check.html)
 
 **Schedule type:** Periodic
 
@@ -578,7 +578,7 @@ To enable object-level logging for S3 buckets, see [Enabling CloudTrail event lo
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudtrail-all-read-s3-data-event-check.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudtrail-all-read-s3-data-event-check.html)
+**AWS Config rule:** [cloudtrail-all-read-s3-data-event-check](https://docs.aws.amazon.com/config/latest/developerguide/cloudtrail-all-read-s3-data-event-check.html)
 
 **Schedule type:** Periodic
 
@@ -628,7 +628,7 @@ By default, all Block Public Access settings are enabled for an S3 Multi-Region 
 
 **Resource type:** `AWS::S3Express::DirectoryBucket`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/s3express-dir-bucket-lifecycle-rules-check.html](https://docs.aws.amazon.com/config/latest/developerguide/s3express-dir-bucket-lifecycle-rules-check.html)
+**AWS Config rule:** [s3express-dir-bucket-lifecycle-rules-check](https://docs.aws.amazon.com/config/latest/developerguide/s3express-dir-bucket-lifecycle-rules-check.html)
 
 **Schedule type:** Change triggered
 

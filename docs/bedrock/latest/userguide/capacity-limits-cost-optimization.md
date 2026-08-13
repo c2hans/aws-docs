@@ -31,7 +31,7 @@ Amazon Bedrock offers flexible capacity options to match your workload requireme
 | Standard | 100-500 | 50K-150K | Medium |
 | Priority | 500-1000\+ | 150K-300K\+ | Low |
 + Burst capacity: Available across all tiers for short spikes
-+ Soft limits: Increasable via service quota requests
++ Soft limits: Increasable through service quota requests
 + Model-specific: Actual limits vary by foundation model
 
 ### Reserved Tier Limits

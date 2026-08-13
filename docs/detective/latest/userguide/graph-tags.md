@@ -31,7 +31,7 @@ You manage the tags for your behavior graph from the **General** page.
 You can use the Detective API or the AWS Command Line Interface to get the list of tags for your behavior graph.
 
 **To get the list of tags for a behavior graph (Detective API, AWS CLI)**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_ListTagsForResource.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListTagsForResource.html) operation. You must provide the ARN of your behavior graph.
++ **Detective API:** Use the [`ListTagsForResource`](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListTagsForResource.html) operation. You must provide the ARN of your behavior graph.
 + **AWS CLI:** At the command line, run the `list-tags-for-resource` command.
 
   ```
@@ -68,7 +68,7 @@ From the tag list on the **General** page, you can add tag values to the behavio
 You can use the Detective API or the AWS CLI to add tag values to your behavior graph.
 
 **To add tags to a behavior graph (Detective API, AWS CLI)**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_TagResource.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_TagResource.html) operation. You provide the behavior graph ARN and the tag values to add.
++ **Detective API:** Use the [`TagResource`](https://docs.aws.amazon.com/detective/latest/APIReference/API_TagResource.html) operation. You provide the behavior graph ARN and the tag values to add.
 + **AWS CLI**: At the command line, run the `tag-resource` command.
 
   ```
@@ -97,7 +97,7 @@ To remove a tag from the list on the **General** page, choose the **Remove** opt
 You can use the Detective API or the AWS CLI to remove tag values from your behavior graph.
 
 **To remove tags from a behavior graph (Detective API, AWS CLI)**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_UntagResource.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_UntagResource.html) operation. You provide the behavior graph ARN, and the names of the tags to remove.
++ **Detective API:** Use the [`UntagResource`](https://docs.aws.amazon.com/detective/latest/APIReference/API_UntagResource.html) operation. You provide the behavior graph ARN, and the names of the tags to remove.
 + **AWS CLI**: At the command line, run the `untag-resource` command.
 
   ```

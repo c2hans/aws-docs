@@ -94,9 +94,9 @@ Tokens are objects that implement the [IResolvable](https://docs.aws.amazon.com/
 You'll hardly ever work directly with the `IResolvable` interface. You will most likely only see string-encoded versions of tokens.
 
 Other functions typically only accept arguments of basic types, such as `string` or `number`. To use tokens in these cases, you can encode them into one of three types using static methods on the [core.Token](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.Token.html) class.
-+ [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-aswbrstringvalue-options](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-aswbrstringvalue-options) to generate a string encoding (or call `.toString()` on the token object)
-+ [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-aswbrlistvalue-options](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-aswbrlistvalue-options) to generate a list encoding
-+ [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-aswbrnumbervalue](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-aswbrnumbervalue) to generate a numeric encoding
++ [`Token.asString`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-aswbrstringvalue-options) to generate a string encoding (or call `.toString()` on the token object)
++ [`Token.asList`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-aswbrlistvalue-options) to generate a list encoding
++ [`Token.asNumber`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-aswbrnumbervalue) to generate a numeric encoding
 
 These take an arbitrary value, which can be an `IResolvable`, and encode them into a primitive value of the indicated type.
 

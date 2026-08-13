@@ -192,7 +192,7 @@ DescribeJobRequest request = DescribeJobRequest.builder()
 ### Using the AWS CLI
 <a name="Compute-checksum-cli"></a>
 
-You can use the [https://docs.aws.amazon.com/cli/latest/reference/s3control/create-job.html](https://docs.aws.amazon.com/cli/latest/reference/s3control/create-job.html) command to create a new batch operations job, and to provide the list of objects. Then, specify the checksum algorithm and checksum type, and the destination bucket where you want to save the **Compute checksum** report. The following example creates an S3 Batch Operations **Compute checksum** job by using an S3 generated manifest for the AWS account {{111122223333}}.
+You can use the [create-job](https://docs.aws.amazon.com/cli/latest/reference/s3control/create-job.html) command to create a new batch operations job, and to provide the list of objects. Then, specify the checksum algorithm and checksum type, and the destination bucket where you want to save the **Compute checksum** report. The following example creates an S3 Batch Operations **Compute checksum** job by using an S3 generated manifest for the AWS account {{111122223333}}.
 
 To use this command, replace the {{user input placeholders}} with your own information:
 
@@ -242,7 +242,7 @@ aws s3control create-job \
 
 After you submit the **Compute checksum** job, you receive the job ID as a response and it appears on the S3 Batch Operations list page. Amazon S3 processes the list of objects and calculates checksums for each object. After the job finishes, S3 provides a consolidated **Compute checksum** report at the specified destination.
 
-To monitor the progress of your **Compute checksum** job, use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/describe-job.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/describe-job.html) command. This command checks the status of the specified batch operations job. To use this command, replace the {{user input placeholders}} with your own information.
+To monitor the progress of your **Compute checksum** job, use the [describe-job](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/describe-job.html) command. This command checks the status of the specified batch operations job. To use this command, replace the {{user input placeholders}} with your own information.
 
 For example:
 

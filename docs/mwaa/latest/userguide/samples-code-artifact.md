@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/samples-code-artif
 # Refreshing a CodeArtifact token
 <a name="samples-code-artifact"></a>
 
-If you're using CodeArtifact to install Python dependencies, Amazon MWAA requires an active token. To allow Amazon MWAA to access an CodeArtifact repository at runtime, you can use a [startup script](using-startup-script.md) and set the [https://pip.pypa.io/en/stable/cli/pip_install/#cmdoption-extra-index-url](https://pip.pypa.io/en/stable/cli/pip_install/#cmdoption-extra-index-url) with the token.
+If you're using CodeArtifact to install Python dependencies, Amazon MWAA requires an active token. To allow Amazon MWAA to access an CodeArtifact repository at runtime, you can use a [startup script](using-startup-script.md) and set the [`PIP_EXTRA_INDEX_URL`](https://pip.pypa.io/en/stable/cli/pip_install/#cmdoption-extra-index-url) with the token.
 
-The following topic describes how you can create a startup script that uses the [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_authorization_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_authorization_token) CodeArtifact API operation to retrieve a fresh token every time your environment starts up, or updates.
+The following topic describes how you can create a startup script that uses the [`get_authorization_token`](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_authorization_token) CodeArtifact API operation to retrieve a fresh token every time your environment starts up, or updates.
 
 **Topics**
 + [Version](#samples-code-artifact-version)
@@ -41,7 +41,7 @@ To refresh the CodeArtifact token and write the result to Amazon S3 Amazon MWAA 
     "Resource": "arn:aws:codeartifact:us-west-2:*:domain/*"
   }
   ```
-+ The `sts:GetServiceBearerToken` action is required to call the CodeArtifact [https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_GetAuthorizationToken.html](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_GetAuthorizationToken.html) API operation. This operation returns a token that must be used when using a package manager such as `pip` with CodeArtifact. To use a package manager with a CodeArtifact repository, your environment's execution role role must allow `sts:GetServiceBearerToken` as listed in the following policy statement.
++ The `sts:GetServiceBearerToken` action is required to call the CodeArtifact [`GetAuthorizationToken`](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_GetAuthorizationToken.html) API operation. This operation returns a token that must be used when using a package manager such as `pip` with CodeArtifact. To use a package manager with a CodeArtifact repository, your environment's execution role role must allow `sts:GetServiceBearerToken` as listed in the following policy statement.
 
   ```
   {

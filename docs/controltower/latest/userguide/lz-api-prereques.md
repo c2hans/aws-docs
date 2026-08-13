@@ -50,10 +50,10 @@ aws organizations create-organization --feature-set ALL
 <a name="w2aac15c17c15c13"></a>
 
  Create the following IAM service roles in the `/service-role/` IAM path that enable AWS Control Tower to perform the API calls required to set up your landing zone:
-+  [https://docs.aws.amazon.com//controltower/latest/userguide/access-control-managing-permissions.html#AWSControlTowerAdmin](https://docs.aws.amazon.com//controltower/latest/userguide/access-control-managing-permissions.html#AWSControlTowerAdmin)
-+  [https://docs.aws.amazon.com//controltower/latest/userguide/access-control-managing-permissions.html#AWSControlTowerCloudTrailRole](https://docs.aws.amazon.com//controltower/latest/userguide/access-control-managing-permissions.html#AWSControlTowerCloudTrailRole)
-+  [https://docs.aws.amazon.com//controltower/latest/userguide/access-control-managing-permissions.html#AWSControlTowerStackSetRole](https://docs.aws.amazon.com//controltower/latest/userguide/access-control-managing-permissions.html#AWSControlTowerStackSetRole)
-+  [https://docs.aws.amazon.com//controltower/latest/userguide/roles-how.html#config-role-for-organizations](https://docs.aws.amazon.com//controltower/latest/userguide/roles-how.html#config-role-for-organizations)
++  [`AWSControlTowerAdmin`](https://docs.aws.amazon.com//controltower/latest/userguide/access-control-managing-permissions.html#AWSControlTowerAdmin)
++  [`AWSControlTowerCloudTrailRole`](https://docs.aws.amazon.com//controltower/latest/userguide/access-control-managing-permissions.html#AWSControlTowerCloudTrailRole)
++  [`AWSControlTowerStackSetRole`](https://docs.aws.amazon.com//controltower/latest/userguide/access-control-managing-permissions.html#AWSControlTowerStackSetRole)
++  [`AWSControlTowerConfigAggregatorRoleForOrganizations`](https://docs.aws.amazon.com//controltower/latest/userguide/roles-how.html#config-role-for-organizations)
 
  For more information about these roles and their policies, see [Using identity-based policies (IAM policies) for AWS Control Tower](access-control-managing-permissions.md).
 

@@ -19,9 +19,9 @@ Amazon FSx periodically checks for these conditions and automatically returns th
 ## S3 access point creation failed due to file system user identity lookup failure
 <a name="name-mapping"></a>
 
-When creating and attaching an S3 Access Point, a [https://docs.aws.amazon.com/fsx/latest/APIReference/API_OntapFileSystemIdentity.html#FSx-Type-OntapFileSystemIdentity-Type](https://docs.aws.amazon.com/fsx/latest/APIReference/API_OntapFileSystemIdentity.html#FSx-Type-OntapFileSystemIdentity-Type) must be provided. You are responsible for configuring the provided UNIX or Windows user within ONTAP.
+When creating and attaching an S3 Access Point, a [`FileSystemIdentity`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_OntapFileSystemIdentity.html#FSx-Type-OntapFileSystemIdentity-Type) must be provided. You are responsible for configuring the provided UNIX or Windows user within ONTAP.
 
-If a [https://docs.aws.amazon.com/fsx/latest/APIReference/API_OntapUnixFileSystemUser.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_OntapUnixFileSystemUser.html) is provided, ONTAP must be able to map the UnixUser name to UNIX UID/GIDs. ONTAP determines how to perform this mapping using the [name service switch configuration](https://docs.netapp.com/us-en/ontap/nfs-admin/ontap-name-service-switch-config-concept.html).
+If a [`UnixUser`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_OntapUnixFileSystemUser.html) is provided, ONTAP must be able to map the UnixUser name to UNIX UID/GIDs. ONTAP determines how to perform this mapping using the [name service switch configuration](https://docs.netapp.com/us-en/ontap/nfs-admin/ontap-name-service-switch-config-concept.html).
 
 ```
 > vserver services name-service ns-switch show
@@ -42,7 +42,7 @@ svm_1           netgroup       nis,
 
  Please ensure your UnixUser has an entry in the `passwd` and `group` databases using a valid source (`files`,`ldap`, etc). The `files` source can be configured using the `vserver services name-service unix-user` and `vserver services name-service unix-group` commands. The `ldap` source can be configured using the `vserver services name-service ldap` command.
 
- If a [https://docs.aws.amazon.com/fsx/latest/APIReference/API_OntapWindowsFileSystemUser.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_OntapWindowsFileSystemUser.html) is provided, ONTAP must be able to find the WindowsUser name in the joined Active Directory domain.
+ If a [`WindowsUser`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_OntapWindowsFileSystemUser.html) is provided, ONTAP must be able to find the WindowsUser name in the joined Active Directory domain.
 
  To confirm if a provided UnixUser or WindowsUser is mapped correctly, using `fsxadmin` you can use the following command (replace `-unix-user-name` with `-win-name` for WindowsUsers):
 

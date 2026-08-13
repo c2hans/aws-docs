@@ -14,7 +14,7 @@ As part of creating a pipeline in the console, an S3 artifact bucket will be use
 This tutorial is for the Amazon ECS standard deployment action for CodePipeline. For a tutorial that uses the Amazon ECS to CodeDeploy blue/green deployment action in CodePipeline, see [Tutorial: Create a pipeline with an Amazon ECR source and ECS-to-CodeDeploy deployment](tutorials-ecs-ecr-codedeploy.md).
 
 **Note**
-This tutorial is for the Amazon ECS standard deployment action for CodePipeline with a source action. For a tutorial that uses the Amazon ECSstandard deployment action along with the ECRBuildAndPublish build action in CodePipeline to push your image, see [Tutorial: Build and push a Docker image to Amazon ECR with CodePipeline (V2 type)](tutorials-ecr-build-publish.md).
+This tutorial is for the Amazon ECS standard deployment action for CodePipeline with a source action. For a tutorial that uses the Amazon ECS standard deployment action along with the ECRBuildAndPublish build action in CodePipeline to push your image, see [Tutorial: Build and push a Docker image to Amazon ECR with CodePipeline (V2 type)](tutorials-ecr-build-publish.md).
 
 ## Prerequisites
 <a name="ecs-cd-prereqs"></a>
@@ -27,7 +27,7 @@ All of these resources should be created within the same AWS Region.
 + A Docker image repository (this tutorial uses Amazon ECR) that contains an image you have built from your Dockerfile and application source. For more information, see [Creating a Repository](https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-create.html) and [Pushing an Image](https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html) in the *Amazon Elastic Container Registry User Guide*.
 + An Amazon ECS task definition that references the Docker image hosted in your image repository. For more information, see [Creating a Task Definition](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-task-definition.html) in the *Amazon Elastic Container Service Developer Guide*.
 **Important**
-The Amazon ECS standard deployment action for CodePipeline creates its own revision of the task definition based on the the revision used by the Amazon ECS service. If you create new revisions for the task definition without updating the Amazon ECS service, the deployment action will ignore those revisions.
+The Amazon ECS standard deployment action for CodePipeline creates its own revision of the task definition based on the revision used by the Amazon ECS service. If you create new revisions for the task definition without updating the Amazon ECS service, the deployment action will ignore those revisions.
 
   Below is a sample task definition used for this tutorial. The value you use for `name` and `family` will be used in the next step for your build specification file.
 

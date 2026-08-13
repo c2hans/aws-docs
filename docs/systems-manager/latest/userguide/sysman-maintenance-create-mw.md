@@ -41,11 +41,11 @@ For more information about working with the `--schedule` option, see [Reference:
 
 1. For **Stop initiating tasks**, enter the number of hours before the end of the maintenance window that the system should stop scheduling new tasks to run.
 
-1. (Optional) For **Window start date**, specify a date and time, in ISO-8601 Extended format, for when you want the maintenance window to become active. This allows you to delay activation of the maintenance window until the specified future date.
+1. (Optional) For **Window start date**, specify a date and time, in ISO-8601 Extended format, for when you want the maintenance window to become active. This lets you delay activation of the maintenance window until the specified future date.
 **Note**
 You can't specify a start date and time that occurs in the past.
 
-1. (Optional) For **Window end date**, specify a date and time, in ISO-8601 Extended format, for when you want the maintenance window to become inactive. This allows you to set a date and time in the future after which the maintenance window no longer runs.
+1. (Optional) For **Window end date**, specify a date and time, in ISO-8601 Extended format, for when you want the maintenance window to become inactive. This lets you set a date and time in the future after which the maintenance window no longer runs.
 
 1. (Optional) For **Schedule timezone**, specify the time zone to use as the basis for when scheduled maintenance windows run, in Internet Assigned Numbers Authority (IANA) format. For example: "America/Los\_Angeles", "etc/UTC", or "Asia/Seoul".
 

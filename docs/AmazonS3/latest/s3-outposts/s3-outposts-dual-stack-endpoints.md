@@ -41,7 +41,7 @@ This section provides examples of AWS CLI commands used to make requests to a du
 
 You set the configuration value `use_dualstack_endpoint` to `true` in a profile in your AWS Config file to direct all Amazon S3 requests made by the `s3` and `s3api` AWS CLI commands to the dual-stack endpoint for the specified Region. You specify the Region in the configuration file or in a command using the `--region` option.
 
-When using dual-stack endpoints with the AWS CLI, only `path` addressing style is supported. The addressing style, set in the configuration file, determines whether the bucket name is in the hostname or in the URL. For more information, see [https://docs.aws.amazon.com/cli/latest/reference/s3outposts/](https://docs.aws.amazon.com/cli/latest/reference/s3outposts/) in the *AWS CLI User Guide*.
+When using dual-stack endpoints with the AWS CLI, only `path` addressing style is supported. The addressing style, set in the configuration file, determines whether the bucket name is in the hostname or in the URL. For more information, see [s3outposts](https://docs.aws.amazon.com/cli/latest/reference/s3outposts/) in the *AWS CLI User Guide*.
 
 To use a dual-stack endpoint via the AWS CLI, use the `--endpoint-url` parameter with the `http://s3.dualstack.{{region}}.amazonaws.com` or `https://s3-outposts-fips.{{region}}.api.aws` endpoint for any `s3control` or `s3outposts` commands.
 

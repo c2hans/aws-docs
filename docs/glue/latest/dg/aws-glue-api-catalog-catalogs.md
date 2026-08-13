@@ -29,7 +29,7 @@ The catalog object represents a logical grouping of databases in the AWS Glue Da
 + `CatalogId` – Catalog id string, not less than 1 or more than 255 bytes long, matching the [Single-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-oneLine).
 
   The ID of the catalog. To grant access to the default catalog, this field should not be provided.
-+ `Name` – *Required:* UTF-8 string, not less than 1 or more than 64 bytes long, matching the [Custom string pattern #25](aws-glue-api-common.md#regex_25).
++ `Name` – *Required:* UTF-8 string, not less than 1 or more than 64 bytes long, matching the [Custom string pattern #30](aws-glue-api-common.md#regex_30).
 
   The name of the catalog. Cannot be the same as the account ID.
 + `ResourceArn` – UTF-8 string.
@@ -104,6 +104,9 @@ A structure that describes catalog properties.
 + `AllowFullTableExternalDataAccess` – UTF-8 string (valid values: `True` \| `False`).
 
    Allows third-party engines to access data in Amazon S3 locations that are registered with Lake Formation.
++ `OverwriteChildResourcePermissionsWithDefault` – UTF-8 string (valid values: `Accept` \| `Deny`).
+
+   Overwrites existing AWS Lake Formation permissions with `CatalogInput$CreateTableDefaultPermissions` and `CatalogInput$CreateDatabaseDefaultPermissions` for all child resources.
 
 ## TargetRedshiftCatalog structure
 <a name="aws-glue-api-catalog-catalogs-TargetRedshiftCatalog"></a>
@@ -164,7 +167,7 @@ Input properties to configure data lake access for your catalog resource in the 
 + `DataLakeAccess` – Boolean.
 
   Turns on or off data lake access for Apache Spark applications that access Amazon Redshift databases in the Data Catalog from any non-Redshift engine, such as Amazon Athena, Amazon EMR, or AWS Glue ETL.
-+ `DataTransferRole` – UTF-8 string, matching the [Custom string pattern #53](aws-glue-api-common.md#regex_53).
++ `DataTransferRole` – UTF-8 string, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
 
   A role that will be assumed by AWS Glue for transferring data into/out of the staging bucket during a query.
 + `KmsKey` – UTF-8 string.
@@ -180,7 +183,7 @@ Input properties to configure data lake access for your catalog resource in the 
 A structure that specifies Iceberg table optimization properties for the catalog, including configurations for compaction, retention, and orphan file deletion operations.
 
 **Fields**
-+ `RoleArn` – UTF-8 string, matching the [Custom string pattern #53](aws-glue-api-common.md#regex_53).
++ `RoleArn` – UTF-8 string, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
 
   The Amazon Resource Name (ARN) of the IAM role that will be assumed to perform Iceberg table optimization operations.
 + `Compaction` – A map array of key-value pairs.
@@ -214,7 +217,7 @@ The output properties of the data lake access configuration for your catalog res
 + `DataLakeAccess` – Boolean.
 
   Turns on or off data lake access for Apache Spark applications that access Amazon Redshift databases in the Data Catalog.
-+ `DataTransferRole` – UTF-8 string, matching the [Custom string pattern #53](aws-glue-api-common.md#regex_53).
++ `DataTransferRole` – UTF-8 string, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
 
   A role that will be assumed by AWS Glue for transferring data into/out of the staging bucket during a query.
 + `KmsKey` – UTF-8 string.
@@ -242,7 +245,7 @@ The output properties of the data lake access configuration for your catalog res
 A structure that contains the output properties of Iceberg table optimization configuration for your catalog resource in the AWS Glue Data Catalog.
 
 **Fields**
-+ `RoleArn` – UTF-8 string, matching the [Custom string pattern #53](aws-glue-api-common.md#regex_53).
++ `RoleArn` – UTF-8 string, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
 
   The Amazon Resource Name (ARN) of the IAM role that is used to perform Iceberg table optimization operations.
 + `Compaction` – A map array of key-value pairs.
@@ -300,7 +303,7 @@ A catalog that points to an entity outside the AWS Glue Data Catalog.
 Creates a new catalog in the AWS Glue Data Catalog.
 
 **Request**
-+ `Name` – *Required:* UTF-8 string, not less than 1 or more than 64 bytes long, matching the [Custom string pattern #25](aws-glue-api-common.md#regex_25).
++ `Name` – *Required:* UTF-8 string, not less than 1 or more than 64 bytes long, matching the [Custom string pattern #30](aws-glue-api-common.md#regex_30).
 
   The name of the catalog to create.
 + `CatalogInput` – *Required:* A [CatalogInput](#aws-glue-api-catalog-catalogs-CatalogInput) object.
@@ -432,6 +435,9 @@ Retrieves all catalogs defined in a catalog in the AWS Glue Data Catalog. For a 
   Whether to list the default catalog in the account and region in the response. Defaults to `false`. When `true` and `ParentCatalogId = NULL | AWS Account ID`, all catalogs and the default catalog are enumerated in the response.
 
   When the `ParentCatalogId` is not equal to null, and this attribute is passed as `false` or `true`, an `InvalidInputException` is thrown.
++ `HasDatabases` – Boolean.
+
+  When `true`, the response only includes catalogs that can contain databases. Some catalogs are organizational containers that hold only other catalogs, not databases. When this parameter is set to `true`, those container-only catalogs are excluded, and only catalogs capable of containing databases are returned. Defaults to `false`.
 
 **Response**
 + `CatalogList` – *Required:* An array of [Catalog](#aws-glue-api-catalog-catalogs-Catalog) objects.

@@ -51,13 +51,13 @@ For a list of controls that involve global resources, see [Controls that use glo
 
 **To update configuration policies**
 
-1. To update the settings in a configuration policy, invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateConfigurationPolicy.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateConfigurationPolicy.html) API from the Security Hub CSPM delegated administrator account in the home Region.
+1. To update the settings in a configuration policy, invoke the [UpdateConfigurationPolicy](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateConfigurationPolicy.html) API from the Security Hub CSPM delegated administrator account in the home Region.
 
 1. Provide the Amazon Resource Name (ARN) or ID of the configuration policy that you want to update.
 
 1. Provide updated values for the fields under `ConfigurationPolicy`. Optionally, you can also provide a reason for the update.
 
-1. To add new associations for this configuration policy, invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StartConfigurationPolicyAssociation.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StartConfigurationPolicyAssociation.html) API from the Security Hub CSPM delegated administrator account in the home Region. To remove one or more current associations, invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StartConfigurationPolicyDisassociation.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StartConfigurationPolicyDisassociation.html) API from the Security Hub CSPM delegated administrator account in the home Region.
+1. To add new associations for this configuration policy, invoke the [StartConfigurationPolicyAssociation](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StartConfigurationPolicyAssociation.html) API from the Security Hub CSPM delegated administrator account in the home Region. To remove one or more current associations, invoke the [StartConfigurationPolicyDisassociation](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StartConfigurationPolicyDisassociation.html) API from the Security Hub CSPM delegated administrator account in the home Region.
 
 1. For the `ConfigurationPolicyIdentifier` field, provide the ARN or ID of the configuration policy whose associations you want to update.
 
@@ -109,13 +109,13 @@ When you invoke the `UpdateConfigurationPolicy` API, Security Hub CSPM performs 
 
 **To update configuration policies**
 
-1. To update the settings in a configuration policy, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-configuration-policy.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-configuration-policy.html) command from the Security Hub CSPM delegated administrator account in the home Region.
+1. To update the settings in a configuration policy, run the [update-configuration-policy](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-configuration-policy.html) command from the Security Hub CSPM delegated administrator account in the home Region.
 
 1.  Provide the Amazon Resource Name (ARN) or ID of the configuration policy that you want to update.
 
 1. Provide updated values for the fields under `configuration-policy`. Optionally, you can also provide a reason for the update.
 
-1. To add new associations for this configuration policy, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/start-configuration-policy-association.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/start-configuration-policy-association.html) command from the Security Hub CSPM delegated administrator account in the home Region. To remove one or more current associations, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/start-configuration-policy-association.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/start-configuration-policy-association.html) command from the Security Hub CSPM delegated administrator account in the home Region.
+1. To add new associations for this configuration policy, run the [start-configuration-policy-association](https://docs.aws.amazon.com/cli/latest/reference/securityhub/start-configuration-policy-association.html) command from the Security Hub CSPM delegated administrator account in the home Region. To remove one or more current associations, run the [start-configuration-policy-disassociation](https://docs.aws.amazon.com/cli/latest/reference/securityhub/start-configuration-policy-association.html) command from the Security Hub CSPM delegated administrator account in the home Region.
 
 1. For the `configuration-policy-identifier` field, provide the ARN or ID of the configuration policy whose associations you want to update.
 

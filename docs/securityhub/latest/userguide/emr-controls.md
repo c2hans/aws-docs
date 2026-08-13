@@ -77,7 +77,7 @@ To configure block public access for Amazon EMR, see [Using Amazon EMR block pub
 
 **Resource type:** `AWS::EMR::SecurityConfiguration`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/emr-security-configuration-encryption-rest.html](https://docs.aws.amazon.com/config/latest/developerguide/emr-security-configuration-encryption-rest.html)
+**AWS Config rule:** [emr-security-configuration-encryption-rest](https://docs.aws.amazon.com/config/latest/developerguide/emr-security-configuration-encryption-rest.html)
 
 **Schedule type:** Change triggered
 
@@ -103,7 +103,7 @@ To enable encryption at rest in an Amazon EMR security configuration, see [Confi
 
 **Resource type:** `AWS::EMR::SecurityConfiguration`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/emr-security-configuration-encryption-transit.html](https://docs.aws.amazon.com/config/latest/developerguide/emr-security-configuration-encryption-transit.html)
+**AWS Config rule:** [emr-security-configuration-encryption-transit](https://docs.aws.amazon.com/config/latest/developerguide/emr-security-configuration-encryption-transit.html)
 
 **Schedule type:** Change triggered
 

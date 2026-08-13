@@ -108,7 +108,7 @@ Specify the Debugger hook configuration as follows:
 }
 ```
 
-This will make the training job save the tensor collection, `gradients`, every `save_interval` of 500 steps. To find available `CollectionName` values, see [Debugger Built-in Collections](https://github.com/awslabs/sagemaker-debugger/blob/master/docs/api.md#built-in-collections) in the *SMDebug client library documentation*. To find available `CollectionParameters` parameter keys and values, see the [https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) class in the *SageMaker Python SDK documentation*.
+This will make the training job save the tensor collection, `gradients`, every `save_interval` of 500 steps. To find available `CollectionName` values, see [Debugger Built-in Collections](https://github.com/awslabs/sagemaker-debugger/blob/master/docs/api.md#built-in-collections) in the *SMDebug client library documentation*. To find available `CollectionParameters` parameter keys and values, see the [`sagemaker.debugger.CollectionConfig`](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) class in the *SageMaker Python SDK documentation*.
 
 **To enable Debugger rules for debugging the output tensors**
 

@@ -14,7 +14,8 @@ RDS for MariaDB parameters are set to the default values of the storage engine t
 
 You can view the parameters available for a specific RDS for MariaDB version using the RDS console or the AWS CLI. For information about viewing the parameters in a MariaDB parameter group in the RDS console, see [Viewing parameter values for a DB parameter group in Amazon RDS](USER_WorkingWithParamGroups.Viewing.md).
 
-Using the AWS CLI, you can view the parameters for an RDS for MariaDB version by running the [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-engine-default-parameters.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-engine-default-parameters.html) command. Specify one of the following values for the `--db-parameter-group-family` option:
+Using the AWS CLI, you can view the parameters for an RDS for MariaDB version by running the [`describe-engine-default-parameters`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-engine-default-parameters.html) command. Specify one of the following values for the `--db-parameter-group-family` option:
++ `mariadb12.3`
 + `mariadb11.8`
 + `mariadb11.4`
 + `mariadb10.11`

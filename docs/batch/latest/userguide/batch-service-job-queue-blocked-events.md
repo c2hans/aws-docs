@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch-service-job
 # Service job queue blocked events
 <a name="batch-service-job-queue-blocked-events"></a>
 
-Anytime that AWS Batch detects a blocked queue, an event is created in Amazon CloudWatch Events. The reason for the blocked queue is available in the `statusReason` field in the [https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeServiceJob.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeServiceJob.html) API action.
+Anytime that AWS Batch detects a blocked queue, an event is created in Amazon CloudWatch Events. The reason for the blocked queue is available in the `statusReason` field in the [`DescribeServiceJob`](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeServiceJob.html) API action.
 
 **Example Service Job Queue Blocked Event**
 Service job queue blocked events are delivered in the following format. The `detail` section resembles the response that's returned from the [DescribeServiceJob](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeServiceJob.html) API operation in the *AWS Batch API Reference*. For more information about EventBridge parameters, see [Events and Event Patterns](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events.html) in the *Amazon EventBridge User Guide*.

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/cloud-write-mode.h
 # Enabling cloud write mode
 <a name="cloud-write-mode"></a>
 
-Use the `volume modify` ONTAP CLI command to enable or disable cloud write mode for an existing volume. For more information, see [https://docs.netapp.com/us-en/ontap-cli-9131/volume-modify.html](https://docs.netapp.com/us-en/ontap-cli-9131/volume-modify.html) in the NetApp ONTAP Documentation Center.
+Use the `volume modify` ONTAP CLI command to enable or disable cloud write mode for an existing volume. For more information, see [`volume modify`](https://docs.netapp.com/us-en/ontap-cli-9131/volume-modify.html) in the NetApp ONTAP Documentation Center.
 
 Prerequisites for setting cloud write mode are:
 + The volume must be an existing volume. You can only enable the feature on an existing volume.

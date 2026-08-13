@@ -144,7 +144,7 @@ For more information about creating and managing IAM roles and policies, see the
 ## Create a User That Can Invoke Amazon A2I API Operations
 <a name="create-user-grants"></a>
 
-To use Amazon A2I to create and start human loops for Amazon Rekognition, Amazon Textract, or the Amazon A2I runtime API, you must use a user that has permissions to invoke Amazon A2I operations. To do this, use the IAM console to attach the [https://console.aws.amazon.com/iam/home?region=us-east-2#/policies/arn:aws:iam::aws:policy/AmazonAugmentedAIFullAccess$jsonEditor](https://console.aws.amazon.com/iam/home?region=us-east-2#/policies/arn:aws:iam::aws:policy/AmazonAugmentedAIFullAccess$jsonEditor) managed policy to a new or existing user.
+To use Amazon A2I to create and start human loops for Amazon Rekognition, Amazon Textract, or the Amazon A2I runtime API, you must use a user that has permissions to invoke Amazon A2I operations. To do this, use the IAM console to attach the [`AmazonAugmentedAIFullAccess`](https://console.aws.amazon.com/iam/home?region=us-east-2#/policies/arn:aws:iam::aws:policy/AmazonAugmentedAIFullAccess$jsonEditor) managed policy to a new or existing user.
 
 This policy grants permission to a user to invoke API operations from the SageMaker API for flow definition creation and management and the Amazon Augmented AI Runtime API for human loop creation and management. To learn more about these API operations, see [Use APIs in Amazon Augmented AI](https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-api-references.html).
 
@@ -190,7 +190,7 @@ For more information, see [Adding and Removing IAM Identity Permissions](https:/
 ## Enable Worker Task Template Previews
 <a name="permissions-for-worker-task-templates-augmented-ai"></a>
 
-To customize the interface and instructions that your workers see when working on your tasks, you create a worker task template. You can create the template using the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateHumanTaskUi.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateHumanTaskUi.html) operation or the SageMaker AI console.
+To customize the interface and instructions that your workers see when working on your tasks, you create a worker task template. You can create the template using the [`CreateHumanTaskUi`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateHumanTaskUi.html) operation or the SageMaker AI console.
 
 To preview your template, you need an IAM role with the following permissions to read Amazon S3 objects that get rendered on your user interface.
 
@@ -218,16 +218,16 @@ To preview your template, you need an IAM role with the following permissions to
 
 ------
 
-For Amazon Rekognition and Amazon Textract task types, you can preview your template using the Amazon Augmented AI section of the SageMaker AI console. For custom task types, you preview your template by invoking the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RenderUiTemplate.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RenderUiTemplate.html) operation. To preview your template, follow the instructions for your task type:
+For Amazon Rekognition and Amazon Textract task types, you can preview your template using the Amazon Augmented AI section of the SageMaker AI console. For custom task types, you preview your template by invoking the [`RenderUiTemplate`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RenderUiTemplate.html) operation. To preview your template, follow the instructions for your task type:
 +  Amazon Rekognition and Amazon Textract task types – In the SageMaker AI console, use the role's Amazon Resource Name (ARN) in the procedure documented in [Create a Worker Task Template](a2i-worker-template-console.md#a2i-create-worker-template-console).
 + Custom task types – In the `RenderUiTemplate` operation, use the role's ARN in the `RoleArn` parameter.
 
 ## Using Amazon A2I with AWS KMS Encrypted Buckets
 <a name="a2i-kms-encryption"></a>
 
-If you specify an AWS Key Management Service (AWS KMS) customer managed key to encrypt output data in `OutputConfig` of [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateFlowDefinition.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateFlowDefinition.html), you must add an IAM policy similar to the following to that key. This policy gives the IAM execution role that you use to create your human loops permission to use this key to perform all of the actions listed in `"Action"`. To learn more about these actions, see [AWS KMS permissions](https://docs.aws.amazon.com/kms/latest/developerguide/kms-api-permissions-reference.html) in the AWS Key Management Service Developer Guide.
+If you specify an AWS Key Management Service (AWS KMS) customer managed key to encrypt output data in `OutputConfig` of [`CreateFlowDefinition`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateFlowDefinition.html), you must add an IAM policy similar to the following to that key. This policy gives the IAM execution role that you use to create your human loops permission to use this key to perform all of the actions listed in `"Action"`. To learn more about these actions, see [AWS KMS permissions](https://docs.aws.amazon.com/kms/latest/developerguide/kms-api-permissions-reference.html) in the AWS Key Management Service Developer Guide.
 
-To use this policy, replace the IAM service-role ARN in `"Principal"` with the ARN of the execution role you use to create the human review workflow (flow definition). When you create a labeling job using `CreateFlowDefinition`, this is the ARN you specify for [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html#sagemaker-CreateLabelingJob-request-RoleArn](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html#sagemaker-CreateLabelingJob-request-RoleArn). Note that you cannot provide a `KmsKeyId` when you create a flow definition in the console.
+To use this policy, replace the IAM service-role ARN in `"Principal"` with the ARN of the execution role you use to create the human review workflow (flow definition). When you create a labeling job using `CreateFlowDefinition`, this is the ARN you specify for [`RoleArn`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html#sagemaker-CreateLabelingJob-request-RoleArn). Note that you cannot provide a `KmsKeyId` when you create a flow definition in the console.
 
 ```
 {

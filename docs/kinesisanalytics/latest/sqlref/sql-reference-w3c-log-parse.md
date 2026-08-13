@@ -94,29 +94,29 @@ The categories are bytes sent, connection status, content of environmental varia
   <tr><th>Function or Category</th><th>W3C Format Specifiers</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2">**Bytes sent, excluding HTTP headers**</td></tr>
+  <tr><td colspan="2"><b>Bytes sent, excluding HTTP headers</b></td></tr>
   <tr><td>with a "0" when no bytes are sent</td><td>%...B</td></tr>
   <tr><td>with a "-" (CLF format) when no bytes are sent</td><td>%...b</td></tr>
-  <tr><td>Bytes received, including request and headers, cannot be zero<br />Must enable [mod\_logio](http://httpd.apache.org/docs/2.0/mod/mod_logio.html) to use this.</td><td>:% ... I:</td></tr>
-  <tr><td>Bytes sent, including headers, cannot be zero<br />Must enable [mod\_logio](http://httpd.apache.org/docs/2.0/mod/mod_logio.html) to use this.</td><td>:%... O:</td></tr>
-  <tr><td colspan="2">**Connection status when response is completed**</td></tr>
+  <tr><td>Bytes received, including request and headers, cannot be zero<br />Must enable <a href="http://httpd.apache.org/docs/2.0/mod/mod_logio.html">mod_logio</a> to use this.</td><td>:% ... I:</td></tr>
+  <tr><td>Bytes sent, including headers, cannot be zero<br />Must enable <a href="http://httpd.apache.org/docs/2.0/mod/mod_logio.html">mod_logio</a> to use this.</td><td>:%... O:</td></tr>
+  <tr><td colspan="2"><b>Connection status when response is completed</b></td></tr>
   <tr><td>Connection aborted before the response completed</td><td>X</td></tr>
-  <tr><td>Connection may be kept alive after the response is sent</td><td>\+</td></tr>
+  <tr><td>Connection may be kept alive after the response is sent</td><td>+</td></tr>
   <tr><td>Connection will be closed after the response is sent</td><td>-</td></tr>
   <tr><td colspan="2">  The %..X directive was %...c in late versions of Apache 1.3, but this conflicted with the historical ssl %...[var]c syntax.  </td></tr>
-  <tr><td colspan="2">**Environment variable CUSTOMERDATA**</td></tr>
+  <tr><td colspan="2"><b>Environment variable CUSTOMERDATA</b></td></tr>
   <tr><td>contents</td><td>%...[CUSTOMERDATA]e</td></tr>
-  <tr><td>**Filename**</td><td>%...f</td></tr>
-  <tr><td>**Host (remote)**</td><td>%...h</td></tr>
-  <tr><td>**Protocol**</td><td>%...H</td></tr>
-  <tr><td colspan="2">**IP addresses**</td></tr>
+  <tr><td><b>Filename</b></td><td>%...f</td></tr>
+  <tr><td><b>Host (remote)</b></td><td>%...h</td></tr>
+  <tr><td><b>Protocol</b></td><td>%...H</td></tr>
+  <tr><td colspan="2"><b>IP addresses</b></td></tr>
   <tr><td>Remote</td><td>%...a</td></tr>
   <tr><td>Local</td><td>%...A</td></tr>
-  <tr><td>**Notes**</td><td></td></tr>
+  <tr><td><b>Notes</b></td><td></td></tr>
   <tr><td>Contents of note Customerdata from another module</td><td>%...[Customerdata]n</td></tr>
-  <tr><td>**Protocol (request)**</td><td>%...H</td></tr>
-  <tr><td>**Query string** If query exists, prepended with a ? <br />If not, the empty string. </td><td>%...q</td></tr>
-  <tr><td colspan="2">**Replies**</td></tr>
+  <tr><td><b>Protocol (request)</b></td><td>%...H</td></tr>
+  <tr><td><b>Query string</b> If query exists, prepended with a ? <br />If not, the empty string. </td><td>%...q</td></tr>
+  <tr><td colspan="2"><b>Replies</b></td></tr>
   <tr><td>Contents of Customerdata (header lines in the reply)</td><td>%...[Customerdata]o</td></tr>
 </tbody>
 </table>
@@ -128,7 +128,7 @@ The W3C format specifiers for the response and time categories are listed follow
   <tr><th>Function or Category</th><th>W3C Format Specifiers</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2">**Requests**</td></tr>
+  <tr><td colspan="2"><b>Requests</b></td></tr>
   <tr><td>Canonical port of the server serving the request</td><td>%...p</td></tr>
   <tr><td>Contents of cookie Customerdata in the request sent to server</td><td>%... [Customerdata]C</td></tr>
   <tr><td>Contents of BAR:header line(s)</td><td>%... [BAR]i</td></tr>
@@ -144,10 +144,10 @@ The W3C format specifiers for the response and time categories are listed follow
   <tr><td>Request method</td><td>%...m</td></tr>
   <tr><td>Return status</td><td>%s</td></tr>
   <tr><td>Seconds taken to serve the request</td><td>%...T</td></tr>
-  <tr><td>Status of the \*original\* request that was internally redirected</td><td>%...s</td></tr>
-  <tr><td>Status of the last request</td><td>%...>s</td></tr>
+  <tr><td>Status of the *original* request that was internally redirected</td><td>%...s</td></tr>
+  <tr><td>Status of the last request</td><td>%...&gt;s</td></tr>
   <tr><td>URL path requested, not including any query string</td><td>%...U</td></tr>
-  <tr><td colspan="2">**Time**</td></tr>
+  <tr><td colspan="2"><b>Time</b></td></tr>
   <tr><td>Common log format time format (standard English format)</td><td>%...t</td></tr>
   <tr><td>Time in strftime(3) format, potentially localized</td><td>%...[format]t</td></tr>
   <tr><td>Seconds taken to serve the request</td><td>%...T</td></tr>

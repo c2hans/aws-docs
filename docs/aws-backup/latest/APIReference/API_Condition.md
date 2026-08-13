@@ -16,7 +16,7 @@ Type: String
 Required: Yes
 
  ** ConditionType **   <a name="Backup-Type-Condition-ConditionType"></a>
-An operation applied to a key-value pair used to assign resources to your backup plan. Condition only supports `StringEquals`. For more flexible assignment options, including `StringLike` and the ability to exclude resources from your backup plan, use `Conditions` (with an "s" on the end) for your [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BackupSelection.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BackupSelection.html).
+An operation applied to a key-value pair used to assign resources to your backup plan. Condition only supports `StringEquals`. For more flexible assignment options, including `StringLike` and the ability to exclude resources from your backup plan, use `Conditions` (with an "s" on the end) for your [`BackupSelection`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BackupSelection.html).
 Type: String
 Valid Values: `STRINGEQUALS`
 Required: Yes

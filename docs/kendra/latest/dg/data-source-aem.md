@@ -14,7 +14,7 @@ Adobe Experience Manager is a content management system that's used for creating
 
 Amazon Kendra supports Adobe Experience Manager (AEM) as a Cloud Service author instance and Adobe Experience Manager On-Premise author and publish instance.
 
-You can connect Amazon Kendra to your Adobe Experience Manager data source using the [Amazon Kendra console](https://console.aws.amazon.com/kendra/) or the [https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) API.
+You can connect Amazon Kendra to your Adobe Experience Manager data source using the [Amazon Kendra console](https://console.aws.amazon.com/kendra/) or the [TemplateConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) API.
 
 For troubleshooting your Amazon Kendra Adobe Experience Manager data source connector, see [Troubleshooting data sources](troubleshooting-data-sources.md).
 
@@ -157,8 +157,8 @@ IAM roles used for indexes cannot be used for data sources. If you are unsure if
 
 **To connect Amazon Kendra to Adobe Experience Manager**
 
-You must specify a JSON of the [data source schema](https://docs.aws.amazon.com/kendra/latest/dg/ds-schemas.html#ds-aem-schema) using the [https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) API. You must provide the following information:
-+ **Data source**—Specify the data source type as `AEM` when you use the [https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) JSON schema. Also specify the data source as `TEMPLATE` when you call the [https://docs.aws.amazon.com/kendra/latest/dg/API_CreateDataSource.html](https://docs.aws.amazon.com/kendra/latest/dg/API_CreateDataSource.html) API.
+You must specify a JSON of the [data source schema](https://docs.aws.amazon.com/kendra/latest/dg/ds-schemas.html#ds-aem-schema) using the [TemplateConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) API. You must provide the following information:
++ **Data source**—Specify the data source type as `AEM` when you use the [TemplateConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) JSON schema. Also specify the data source as `TEMPLATE` when you call the [CreateDataSource](https://docs.aws.amazon.com/kendra/latest/dg/API_CreateDataSource.html) API.
 + **AEM host URL**—Specify the Adobe Experience Manager host URL. For example, if you use AEM On-Premise, you include the hostname and port: *https://hostname:port*. Or, if you use AEM as a Cloud Service, you can use the author URL: *https://author-xxxxxx-xxxxxxx.adobeaemcloud.com*.
 + **Sync mode**—Specify how Amazon Kendra should update your index when your data source content changes. When you sync your data source with Amazon Kendra for the first time, all content is crawled and indexed by default. You must run a full sync of your data if your initial sync failed, even if you don't choose full sync as your sync mode option. You can choose between:
   + `FORCED_FULL_CRAWL` to freshly index all content, replacing existing content each time your data source syncs with your index.

@@ -93,7 +93,7 @@ The following table compares the key differences between simplified automatic re
 | Metal instance size | Excluded | Included |
 | Instance store volumes attached at launch | Not supported for instances that attach instance store volumes at launch | Supported on selected instance types. Note that data on instance store volumes is lost during instance recovery. |
 | Recovery time | Standard recovery attempt | Faster recovery attempts than simplified automatic recovery |
-| Host problem resolves during migration | Migration might be canceled and the instance stays on the original host | Migration continues to a new host |
+| Host problem resolves during migration | Migration might be canceled and the instance stays on the original host | Migration might be canceled and the instance stays on the original host |
 | Cost | No additional cost | Might incur CloudWatch charges |
 
 ## Build a resilient system

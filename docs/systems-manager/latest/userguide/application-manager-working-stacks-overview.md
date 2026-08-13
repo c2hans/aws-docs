@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/applica
 # Using Application Manager to manage CloudFormation stacks
 <a name="application-manager-working-stacks-overview"></a>
 
-Application Manager, a tool in AWS Systems Manager, helps you provision and manage resources for your applications by integrating with AWS CloudFormation. You can create, edit, and delete CloudFormation templates and stacks in Application Manager. A *stack* is a collection of AWS resources that you can manage as a single unit. This means you can create, update, or delete a collection of AWS resources by using CloudFormation stacks. A *template* is a formatted text file in JSON or YAML that specifies the resources you want to provision in your stacks. This section includes the following information.
+Application Manager helps you provision and manage resources for your applications by integrating with AWS CloudFormation. You can create, edit, and delete CloudFormation templates and stacks in Application Manager. A *stack* is a collection of AWS resources that you can manage as a single unit. This means you can create, update, or delete a collection of AWS resources by using CloudFormation stacks. A *template* is a formatted text file in JSON or YAML that specifies the resources you want to provision in your stacks. This section includes the following information.
 
 **Topics**
 + [Creating a stack](#application-manager-working-stacks-creating-stack)
@@ -38,7 +38,7 @@ Use the following procedure to create a stack by using Application Manager in th
 
 1. Select the button beside a template name, and then choose **Next**.
 
-1. On the **Specify template details** page, verify the details of the template to ensure the process creates the resources you want.
+1. On the **Specify template details** page, verify the details of the template to make sure the process creates the resources you want.
    + (Optional) In the **Tags** section, apply one or more tag key name/value pairs to the template.
    + Tags are optional metadata that you assign to a resource. By using tags, you can categorize a resource in different ways, such as by purpose, owner, or environment.
    + Choose **Next**.
@@ -65,7 +65,7 @@ After your stack resources are provisioned and running, users can edit resources
 Use the following AWS Command Line Interface (AWS CLI) procedure to provision a stack by using a CloudFormation template that is stored as an SSM document in Systems Manager. Replace each {{example resource placeholder}} with your own information. For information about other AWS CLI procedures for creating stacks, see [Creating a stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-cli-creating-stack.html) in the *AWS CloudFormation User Guide*.
 
 **Before you begin**
-Install and configure the AWS CLI or the AWS Tools for PowerShell, if you have not already. For information, see [Installing or updating the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and [Installing the AWS Tools for PowerShell](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-getting-set-up.html).
+Install and configure the AWS CLI or the AWS Tools for PowerShell if you have not already. For information, see [Installing or updating the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and [Installing the AWS Tools for PowerShell](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-getting-set-up.html).
 
 ------
 #### [ Linux & macOS ]

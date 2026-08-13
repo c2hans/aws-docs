@@ -53,7 +53,7 @@ Both the CloudFront API and the CloudFront KeyValueStore API have a `DescribeKey
 
 **Notes**
 Each DescribeKeyValueStore operation returns a *different * `ETag`. The `ETags` aren't interchangeable.
-When you call an API operation to complete an action, you must specify the `ETag` from the appropriate API. For example, in the CloudFront KeyValueStore [ DeleteKey](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_DeleteKey.html) operation, you specify the `ETag` that you returned from the CloudFront KeyValueStore [https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_DescribeKeyValueStore.html](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_DescribeKeyValueStore.html) operation.
+When you call an API operation to complete an action, you must specify the `ETag` from the appropriate API. For example, in the CloudFront KeyValueStore [ DeleteKey](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_DeleteKey.html) operation, you specify the `ETag` that you returned from the CloudFront KeyValueStore [DescribeKeyValueStore](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_DescribeKeyValueStore.html) operation.
 When you invoke your CloudFront Functions by using CloudFront KeyValueStore, the values in the key value store aren't updated or changed during the invocation of the function. Updates are processed in between invocations of a function.
 
 ## Work with key-value pairs (AWS CLI)
@@ -223,7 +223,7 @@ When you use the CloudFront KeyValueStore API to call a write operation, you nee
 
 **To get a reference to a key value store**
 
-1. Use the [https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListKeyValueStores.html](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListKeyValueStores.html) API operation to get a list of key value stores. Find the key value store that you want to change.
+1. Use the [CloudFront ListKeyValueStores](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListKeyValueStores.html) API operation to get a list of key value stores. Find the key value store that you want to change.
 
 1. Use the [CloudFrontKeyValueStore DescribeKeyValueStore API operation](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_DescribeKeyValueStore.html) and specify the key value store from the previous step.
 

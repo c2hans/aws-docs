@@ -56,9 +56,9 @@ For more information, see [Create a domain configuration](https://docs.aws.amazo
 ## Configure TLS settings in domain configurations (CLI)
 <a name="custom-tls-cli"></a>
 
-You can use the [https://docs.aws.amazon.com//cli/latest/reference/iot/create-domain-configuration.html](https://docs.aws.amazon.com//cli/latest/reference/iot/create-domain-configuration.html) and [https://docs.aws.amazon.com//cli/latest/reference/iot/update-domain-configuration.html](https://docs.aws.amazon.com//cli/latest/reference/iot/update-domain-configuration.html) CLI commands to configure your TLS settings in domain configurations.
+You can use the [**create-domain-configuration**](https://docs.aws.amazon.com//cli/latest/reference/iot/create-domain-configuration.html) and [**update-domain-configuration**](https://docs.aws.amazon.com//cli/latest/reference/iot/update-domain-configuration.html) CLI commands to configure your TLS settings in domain configurations.
 
-1. To specify TLS settings using the [https://docs.aws.amazon.com//cli/latest/reference/iot/create-domain-configuration.html](https://docs.aws.amazon.com//cli/latest/reference/iot/create-domain-configuration.html) CLI command:
+1. To specify TLS settings using the [**create-domain-configuration**](https://docs.aws.amazon.com//cli/latest/reference/iot/create-domain-configuration.html) CLI command:
 
    ```
    aws iot create-domain-configuration \
@@ -77,7 +77,7 @@ You can use the [https://docs.aws.amazon.com//cli/latest/reference/iot/create-do
 
    If you create a new domain configuration without specifying the security policy, the value will default to: `IoTSecurityPolicy_TLS13_1_2_2022_10`.
 
-1. To describe TLS settings using the [https://docs.aws.amazon.com//cli/latest/reference/iot/describe-domain-configuration.html](https://docs.aws.amazon.com//cli/latest/reference/iot/describe-domain-configuration.html) CLI command:
+1. To describe TLS settings using the [**describe-domain-configuration**](https://docs.aws.amazon.com//cli/latest/reference/iot/describe-domain-configuration.html) CLI command:
 
    ```
    aws iot describe-domain-configuration \
@@ -102,7 +102,7 @@ You can use the [https://docs.aws.amazon.com//cli/latest/reference/iot/create-do
    }
    ```
 
-1. To update TLS settings using the [https://docs.aws.amazon.com//cli/latest/reference/iot/update-domain-configuration.html](https://docs.aws.amazon.com//cli/latest/reference/iot/update-domain-configuration.html) CLI command:
+1. To update TLS settings using the [**update-domain-configuration**](https://docs.aws.amazon.com//cli/latest/reference/iot/update-domain-configuration.html) CLI command:
 
    ```
    aws iot update-domain-configuration \
@@ -119,7 +119,7 @@ You can use the [https://docs.aws.amazon.com//cli/latest/reference/iot/create-do
    }
    ```
 
-1. To update the TLS settings for your ATS endpoint, run the [https://docs.aws.amazon.com//cli/latest/reference/iot/update-domain-configuration.html](https://docs.aws.amazon.com//cli/latest/reference/iot/update-domain-configuration.html) CLI command. The domain configuration name for your ATS endpoint is `iot:Data-ATS`.
+1. To update the TLS settings for your ATS endpoint, run the [**update-domain-configuration**](https://docs.aws.amazon.com//cli/latest/reference/iot/update-domain-configuration.html) CLI command. The domain configuration name for your ATS endpoint is `iot:Data-ATS`.
 
    ```
    aws iot update-domain-configuration \

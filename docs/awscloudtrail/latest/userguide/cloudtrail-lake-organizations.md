@@ -62,7 +62,7 @@ Only the organization's management account can copy trail events to an event dat
 ------
 #### [ AWS CLI ]
 
-To create an organization event data store run the [https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/create-event-data-store.html](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/create-event-data-store.html) command and include the `--organization-enabled` option.
+To create an organization event data store run the [create-event-data-store](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/create-event-data-store.html) command and include the `--organization-enabled` option.
 
 The following example AWS CLI `create-event-data-store` command creates an organization event data store that collects all management events. Because CloudTrail logs management events by default, you don't need to specify advanced event selectors if your event data store is logging all management events and is not collecting any data events.
 

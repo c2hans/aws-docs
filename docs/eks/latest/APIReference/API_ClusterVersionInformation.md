@@ -20,6 +20,17 @@ The Kubernetes version for the cluster.
 Type: String
 Required: No
 
+ ** controlPlaneComponentConfig **   <a name="AmazonEKS-Type-ClusterVersionInformation-controlPlaneComponentConfig"></a>
+The default control plane component configuration and constraints for this Kubernetes version.
+Type: [ControlPlaneConfigInfo](API_ControlPlaneConfigInfo.md) object
+Required: No
+
+ ** controlPlaneScalingTiers **   <a name="AmazonEKS-Type-ClusterVersionInformation-controlPlaneScalingTiers"></a>
+The available provisioned control plane scaling tiers and their capabilities for this Kubernetes version.
+Type: Array of [ControlPlaneScalingTierInfo](API_ControlPlaneScalingTierInfo.md) objects
+Array Members: Maximum number of 10 items.
+Required: No
+
  ** defaultPlatformVersion **   <a name="AmazonEKS-Type-ClusterVersionInformation-defaultPlatformVersion"></a>
 Default platform version for this Kubernetes version.
 Type: String

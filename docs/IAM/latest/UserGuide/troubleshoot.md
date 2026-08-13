@@ -80,14 +80,14 @@ To fix this issue, an administrator should **not** edit policy permissions. Inst
 **To delete an existing but unassigned virtual MFA device**
 
 1. View the virtual MFA devices in your account.
-   + AWS CLI: [https://docs.aws.amazon.com/cli/latest/reference/iam/list-virtual-mfa-devices.html](https://docs.aws.amazon.com/cli/latest/reference/iam/list-virtual-mfa-devices.html)
-   + AWS API: [https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListVirtualMFADevices.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListVirtualMFADevices.html)
+   + AWS CLI: [`aws iam list-virtual-mfa-devices`](https://docs.aws.amazon.com/cli/latest/reference/iam/list-virtual-mfa-devices.html)
+   + AWS API: [`ListVirtualMFADevices`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListVirtualMFADevices.html)
 
 1. In the response, locate the ARN of the virtual MFA device for the user you are trying to fix.
 
 1. Delete the virtual MFA device.
-   + AWS CLI: [https://docs.aws.amazon.com/cli/latest/reference/iam/delete-virtual-mfa-device.html](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-virtual-mfa-device.html)
-   + AWS API: [https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteVirtualMFADevice.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteVirtualMFADevice.html)
+   + AWS CLI: [`aws iam delete-virtual-mfa-device`](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-virtual-mfa-device.html)
+   + AWS API: [`DeleteVirtualMFADevice`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteVirtualMFADevice.html)
 
 ## How do I securely create IAM users?
 <a name="troubleshoot_general_securely-create-iam-users"></a>

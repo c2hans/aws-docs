@@ -6,10 +6,11 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/doc-history.html
 <a name="doc-history"></a>
 
 The following table describes important changes in each release of the *Amazon Polly Developer Guide*. For notification about updates to this documentation, you can subscribe to an RSS feed.
-+ **Latest documentation update: **May 28, 2026
++ **Latest documentation update: **August 12 2026
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Amazon Polly generative voices now available in Asia Pacific (Sydney)](#doc-history) | Amazon Polly generative voices and bidirectional streaming are now available in an additional AWS Region: Asia Pacific (Sydney). For more information, see [Generative voices](https://docs.aws.amazon.com/polly/latest/dg/generative-voices.html). | August 12, 2026 |
 | [New region added for neural voices](#doc-history) | Amazon Polly is now available in the Asia Pacific (Thailand) AWS Region. This Region supports neural TTS (NTTS) voices. For more information, see [Neural voices](https://docs.aws.amazon.com/polly/latest/dg/neural-voices.html). | May 28, 2026 |
 | [New region added for generative voices](#doc-history) | Amazon Polly generative voices and bidirectional streaming are now available in an additional AWS Region: Europe (Zurich). For more information, see [Generative voices](https://docs.aws.amazon.com/polly/latest/dg/generative-voices.html). | May 28, 2026 |
 | [Bidirectional streaming available in new regions](#doc-history) | Amazon Polly bidirectional streaming is now available in two additional AWS Regions: Europe (London) and Canada (Central). For more information, see [Generative voices](https://docs.aws.amazon.com/polly/latest/dg/generative-voices.html). | April 20, 2026 |

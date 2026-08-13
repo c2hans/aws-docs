@@ -49,6 +49,7 @@ AWS Backup supports the following events:
 | Restore job | RESTORE\_JOB\_STARTED \| RESTORE\_JOB\_COMPLETED \| RESTORE\_JOB\_SUCCESSFUL \| RESTORE\_JOB\_FAILED |
 | Recovery point | RECOVERY\_POINT\_MODIFIED |
 | Recovery point indexing | RECOVERY\_POINT\_INDEX\_COMPLETED \| RECOVERY\_POINT\_INDEX\_DELETED \| RECOVERY\_POINT\_INDEXING\_FAILED |
+| Access point | ACCESS\_POINT\_AVAILABLE \| ACCESS\_POINT\_CREATION\_FAILED \| ACCESS\_POINT\_DELETED \| ACCESS\_POINT\_DELETION\_FAILED \| ACCESS\_POINT\_EXPIRED \| ACCESS\_POINT\_DISASSOCIATED |
 
 AWS Backup for S3 supports two additional events:
 + `S3_BACKUP_OBJECT_FAILED` notifies you of any S3 object that AWS Backup failed to back up during a backup job.
@@ -259,6 +260,66 @@ AWS Backup for EKS supports three additional events:
             }
         }
     }]
+}
+```
+
+**Example: Access point available**
+
+```
+{
+    "Type": "Notification",
+    "MessageId": "dd7579e6-47bb-51af-866c-1b36e07d9aaa",
+    "TopicArn": "arn:aws:sns:us-east-1:123456789012:my-backup-topic",
+    "Subject": "Notification from AWS Backup",
+    "Message": "An AWS Backup access point was created successfully. Access point ARN: arn:aws:backup:us-east-1:123456789012:accesspoint/my-access-point. S3 access point ARN: arn:aws:s3:us-east-1:123456789012:accesspoint/my-access-point. Recovery point ARN: arn:aws:backup:us-east-1:123456789012:recovery-point:rp-1234567890abcdef0.",
+    "Timestamp": "2026-07-28T12:00:26.426Z",
+    "MessageAttributes": {
+        "EventType": {"Type":"String","Value":"ACCESS_POINT_AVAILABLE"},
+        "Status": {"Type":"String","Value":"AVAILABLE"},
+        "AccountId": {"Type":"String","Value":"123456789012"},
+        "AccessPointArn": {"Type":"String","Value":"arn:aws:backup:us-east-1:123456789012:accesspoint/my-access-point"},
+        "CreationTime": {"Type":"String","Value":"2026-07-28T12:00:25.938846787Z"}
+    }
+}
+```
+
+**Example: Access point creation failed**
+
+```
+{
+    "Type": "Notification",
+    "MessageId": "abcdef01-2345-6789-abcd-ef0123456789",
+    "TopicArn": "arn:aws:sns:us-east-1:123456789012:my-backup-topic",
+    "Subject": "Notification from AWS Backup",
+    "Message": "An AWS Backup access point failed to create. Access point ARN: arn:aws:backup:us-east-1:123456789012:accesspoint/my-access-point. Recovery point ARN: arn:aws:backup:us-east-1:123456789012:recovery-point:rp-1234567890abcdef0.",
+    "Timestamp": "2026-07-28T12:05:10.123Z",
+    "MessageAttributes": {
+        "EventType": {"Type":"String","Value":"ACCESS_POINT_CREATION_FAILED"},
+        "Status": {"Type":"String","Value":"FAILED"},
+        "AccountId": {"Type":"String","Value":"123456789012"},
+        "AccessPointArn": {"Type":"String","Value":"arn:aws:backup:us-east-1:123456789012:accesspoint/my-access-point"},
+        "CreationTime": {"Type":"String","Value":"2026-07-28T12:04:55.123456789Z"}
+    }
+}
+```
+
+**Example: Access point expired**
+
+```
+{
+    "Type": "Notification",
+    "MessageId": "fedcba98-7654-3210-fedc-ba9876543210",
+    "TopicArn": "arn:aws:sns:us-east-1:123456789012:my-backup-topic",
+    "Subject": "Notification from AWS Backup",
+    "Message": "An AWS Backup access point expired. Access point ARN: arn:aws:backup:us-east-1:123456789012:accesspoint/my-access-point. Recovery point ARN: arn:aws:backup:us-east-1:123456789012:recovery-point:rp-1234567890abcdef0.",
+    "Timestamp": "2026-07-28T18:30:05.789Z",
+    "MessageAttributes": {
+        "EventType": {"Type":"String","Value":"ACCESS_POINT_EXPIRED"},
+        "Status": {"Type":"String","Value":"EXPIRED"},
+        "AccountId": {"Type":"String","Value":"123456789012"},
+        "AccessPointArn": {"Type":"String","Value":"arn:aws:backup:us-east-1:123456789012:accesspoint/my-access-point"},
+        "CreationTime": {"Type":"String","Value":"2026-07-28T12:00:25.938846787Z"}
+    }
 }
 ```
 

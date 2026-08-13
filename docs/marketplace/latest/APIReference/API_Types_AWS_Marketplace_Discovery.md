@@ -39,6 +39,7 @@ The following data types are supported by AWS Marketplace Discovery:
 +  [ListingFacet](API_marketplace-discovery_ListingFacet.md)
 +  [ListingSummary](API_marketplace-discovery_ListingSummary.md)
 +  [ListingSummaryAssociatedEntity](API_marketplace-discovery_ListingSummaryAssociatedEntity.md)
++  [NetPaymentTerm](API_marketplace-discovery_NetPaymentTerm.md)
 +  [OfferAssociatedEntity](API_marketplace-discovery_OfferAssociatedEntity.md)
 +  [OfferInformation](API_marketplace-discovery_OfferInformation.md)
 +  [OfferSetAssociatedEntity](API_marketplace-discovery_OfferSetAssociatedEntity.md)

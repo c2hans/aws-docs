@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 # Viewing AWS predefined patch baselines
 <a name="patch-manager-view-predefined-patch-baselines"></a>
 
-Patch Manager, a tool in AWS Systems Manager, includes a predefined patch baseline for each operating system supported by Patch Manager. You can use these patch baselines (you can't customize them), or you can create your own. The following procedure describes how to view a predefined patch baseline to see if it meets your needs. To learn more about patch baselines, see [Predefined and custom patch baselines](patch-manager-predefined-and-custom-patch-baselines.md).
+Patch Manager includes a predefined patch baseline for each operating system supported by Patch Manager. You can use these patch baselines (you can't customize them), or you can create your own. The following procedure describes how to view a predefined patch baseline to see if it meets your needs. To learn more about patch baselines, see [Predefined and custom patch baselines](patch-manager-predefined-and-custom-patch-baselines.md).
 
 **To view AWS predefined patch baselines**
 

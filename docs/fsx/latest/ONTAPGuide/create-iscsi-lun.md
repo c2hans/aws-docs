@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/create-iscsi-lun.h
 # Creating an iSCSI LUN
 <a name="create-iscsi-lun"></a>
 
-This process describes how to create an iSCSI LUN on an Amazon FSx for NetApp ONTAP file system using the NetApp ONTAP CLI **lun create** command. For more information, see [https://docs.netapp.com/us-en/ontap-cli-9111/lun-create.html](https://docs.netapp.com/us-en/ontap-cli-9111/lun-create.html) in the NetApp ONTAP Documentation Center.
+This process describes how to create an iSCSI LUN on an Amazon FSx for NetApp ONTAP file system using the NetApp ONTAP CLI **lun create** command. For more information, see [**lun create**](https://docs.netapp.com/us-en/ontap-cli-9111/lun-create.html) in the NetApp ONTAP Documentation Center.
 
 **Note**
 The iSCSI protocol isn't supported for file systems with more than six HA pairs.
@@ -31,7 +31,7 @@ We recommend that you use a volume at least 5% larger than your LUN size. This m
 **Note**
 We recommend enabling space allocation on your LUN. With space allocation enabled, ONTAP can inform your host when the LUN is out of capacity and can reclaim space as you delete data from the LUN.
 
-   For more information, see [https://docs.netapp.com/us-en/ontap-cli-9121/lun-create.html](https://docs.netapp.com/us-en/ontap-cli-9121/lun-create.html) in the NetApp ONTAP CLI documentation.
+   For more information, see [`lun create`](https://docs.netapp.com/us-en/ontap-cli-9121/lun-create.html) in the NetApp ONTAP CLI documentation.
 
    ```
    > lun create -vserver {{svm_name}} -path /vol/{{vol_name}}/{{lun_name}} -size {{size}} -ostype {{ostype}} -space-allocation enabled

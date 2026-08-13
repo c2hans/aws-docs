@@ -30,7 +30,7 @@ You can find the endpoint for a DB instance by using the AWS Management Console 
 ## AWS CLI
 <a name="db2-finding-instance-endpoint-cli"></a>
 
-To find the endpoint of an RDS for Db2 DB instance, run the [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html) command. In the following example, replace {{database-1}} with the name of your DB instance.
+To find the endpoint of an RDS for Db2 DB instance, run the [describe-db-instances](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html) command. In the following example, replace {{database-1}} with the name of your DB instance.
 
 For Linux, macOS, or Unix:
 

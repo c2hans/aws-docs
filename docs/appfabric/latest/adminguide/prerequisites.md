@@ -72,8 +72,8 @@ You can create a new Amazon S3 bucket using the AppFabric console when you creat
 
 You can choose to use Amazon Data Firehose as your ingestion destination for AppFabric for security data. To use Firehose, you can create the Firehose delivery stream in your AWS account before creating an ingestion or while you're creating an ingestion destination in AppFabric. You can create a Firehose delivery stream using the AWS Management Console, AWS CLI, or the AWS APIs or SDKs. For stream configuration instructions, see the following topics:
 + AWS Management Console instructions – [Creating an Amazon Data Firehose Delivery Stream](https://docs.aws.amazon.com/firehose/latest/dev/basic-create.html) in the *Amazon Data Firehose Developer Guide*
-+ AWS CLI instructions – [https://docs.aws.amazon.com/](https://docs.aws.amazon.com/) in the *AWS CLI Command Reference*
-+ AWS APIs and SDKs instructions – [https://docs.aws.amazon.com/firehose/latest/APIReference/API_CreateDeliveryStream.html](https://docs.aws.amazon.com/firehose/latest/APIReference/API_CreateDeliveryStream.html) in the *Amazon Data Firehose API Reference*
++ AWS CLI instructions – [create-delivery-stream](https://docs.aws.amazon.com/) in the *AWS CLI Command Reference*
++ AWS APIs and SDKs instructions – [CreateDeliveryStream](https://docs.aws.amazon.com/firehose/latest/APIReference/API_CreateDeliveryStream.html) in the *Amazon Data Firehose API Reference*
 
 The requirements when using Amazon Data Firehose as the AppFabric for security output destination are as follows:
 + You must create the stream in the same AWS Region as your AppFabric for security resources.

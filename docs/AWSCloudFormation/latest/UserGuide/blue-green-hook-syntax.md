@@ -153,10 +153,10 @@ The logical id of the resource.
 The resources that represent the various requirements of your Amazon ECS application deployment.
 *Required*: Yes
 `TaskDefinitions`
-The logical ID of the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ecs-taskdefinition.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ecs-taskdefinition.html) resource to run the Docker container that contains your Amazon ECS application.
+The logical ID of the [AWS::ECS::TaskDefinition](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ecs-taskdefinition.html) resource to run the Docker container that contains your Amazon ECS application.
 *Required*: Yes
 `TaskSets`
-The logical IDs of the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ecs-taskset.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ecs-taskset.html) resources to use as task sets for the application.
+The logical IDs of the [AWS::ECS::TaskSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ecs-taskset.html) resources to use as task sets for the application.
 *Required*: Yes
 `TrafficRouting`
 Specifies resources used for traffic routing.

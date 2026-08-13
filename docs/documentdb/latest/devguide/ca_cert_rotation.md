@@ -128,7 +128,7 @@ When connecting to your Amazon DocumentDB cluster, trust the root CA bundle inst
 
 Amazon DocumentDB attempts to rotate your server certificate in your preferred maintenance window at the server certificate half life. The new server certificate is valid for 12 months.
 
-Use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-engine-versions.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-engine-versions.html) command and inspect the `SupportsCertificateRotationWithoutRestart` flag to identify whether the engine version supports rotating the certificate without restart.
+Use the [`describe-db-engine-versions`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-engine-versions.html) command and inspect the `SupportsCertificateRotationWithoutRestart` flag to identify whether the engine version supports rotating the certificate without restart.
 
 **Note**
 Amazon DocumentDB supports server certificate rotation without restarts if your cluster is running on the following engine patch versions:

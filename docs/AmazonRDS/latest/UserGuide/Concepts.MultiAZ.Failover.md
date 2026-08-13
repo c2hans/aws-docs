@@ -42,7 +42,7 @@ Because AWS resources use DNS name entries that occasionally change, we recommen
 
 On some Java configurations, the JVM default TTL is set so that it never refreshes DNS entries until the JVM is restarted. Thus, if the IP address for an AWS resource changes while your application is still running, it can't use that resource until you manually restart the JVM and the cached IP information is refreshed. In this case, it's crucial to set the JVM's TTL so that it periodically refreshes its cached IP information.
 
-You can get the JVM default TTL by retrieving the [https://docs.oracle.com/javase/7/docs/technotes/guides/net/properties.html](https://docs.oracle.com/javase/7/docs/technotes/guides/net/properties.html) property value:
+You can get the JVM default TTL by retrieving the [`networkaddress.cache.ttl`](https://docs.oracle.com/javase/7/docs/technotes/guides/net/properties.html) property value:
 
 ```
 String ttl = java.security.Security.getProperty("networkaddress.cache.ttl");

@@ -45,7 +45,7 @@ Automatic snapshots are enabled by the default snapshot policy for volumes in yo
 
 Set the volume's snapshot policy to use the `none` default policy to turn off automatic snapshots.
 
-1. Use the [https://docs.netapp.com/us-en/ontap-cli-9131/volume-snapshot-policy-show.html](https://docs.netapp.com/us-en/ontap-cli-9131/volume-snapshot-policy-show.html) ONTAP CLI command to show the `none` policy.
+1. Use the [`volume snapshot policy show`](https://docs.netapp.com/us-en/ontap-cli-9131/volume-snapshot-policy-show.html) ONTAP CLI command to show the `none` policy.
 
    ```
    ::> snapshot policy show -policy none
@@ -60,7 +60,7 @@ Set the volume's snapshot policy to use the `none` default policy to turn off au
        -                          -     -                      -
    ```
 
-1. Use the [https://docs.netapp.com/us-en/ontap-cli-9131/volume-modify.html](https://docs.netapp.com/us-en/ontap-cli-9131/volume-modify.html) ONTAP ClI command to set the volume's snapshot policy to `none` to disable automatic snapshots. Replace the following placeholder values with your data:
+1. Use the [`volume modify`](https://docs.netapp.com/us-en/ontap-cli-9131/volume-modify.html) ONTAP ClI command to set the volume's snapshot policy to `none` to disable automatic snapshots. Replace the following placeholder values with your data:
    + {{`svm_name`}} — use your SVM's name.
    + {{`vol_name`}} — use your volume's name.
 

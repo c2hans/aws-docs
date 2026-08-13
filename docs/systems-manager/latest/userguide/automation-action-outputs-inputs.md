@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 # Using action outputs as inputs
 <a name="automation-action-outputs-inputs"></a>
 
-Several automation actions return pre-defined outputs. You can pass these outputs as inputs to later steps in your runbook using the format `{{{{stepName}}.{{outputName}}}}`. You can also define custom outputs for automation actions in your runbooks. This allows you to run scripts, or invoke API operations for other AWS services once so you can reuse the values as inputs in later actions. Parameter types in runbooks are static. This means the parameter type can't be changed after it's defined. To define a step output provide the following fields:
+Several automation actions return pre-defined outputs. You can pass these outputs as inputs to later steps in your runbook using the format `{{{{stepName}}.{{outputName}}}}`. You can also define custom outputs for automation actions in your runbooks. This lets you run scripts, or invoke API operations for other AWS services once so you can reuse the values as inputs in later actions. Parameter types in runbooks are static. This means the parameter type can't be changed after it's defined. To define a step output provide the following fields:
 + Name: (Required) The output name which is used to reference the output value in later steps.
 + Selector: (Required) The JSONPath expression that is used to determine the output value.
 + Type: (Optional) The data type of the value returned by the selector field. Valid type values are `String`, `Integer`, `Boolean`, `StringList`, `StringMap`, `MapList`. The default value is `String`.
@@ -92,7 +92,7 @@ outputs:
 ...
 ```
 
-Each of the previously described automation actions allows you to call a specific API operation by specifying the service namespace, the API operation name, the input parameters, and the output parameters. Inputs are defined by the API operation that you choose. You can view the API operations (also called methods) by choosing a service in the left navigation on the following [Services Reference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/index.html) page. Choose a method in the **Client** section for the service that you want to invoke. For example, all API operations (methods) for Amazon Relational Database Service (Amazon RDS) are listed on the following page: [Amazon RDS methods](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html).
+Each of the previously described automation actions lets you call a specific API operation by specifying the service namespace, the API operation name, the input parameters, and the output parameters. Inputs are defined by the API operation that you choose. You can view the API operations (also called methods) by choosing a service in the left navigation on the following [Services Reference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/index.html) page. Choose a method in the **Client** section for the service that you want to invoke. For example, all API operations (methods) for Amazon Relational Database Service (Amazon RDS) are listed on the following page: [Amazon RDS methods](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html).
 
 You can view the schema for each automation action in the following locations:
 + [`aws:assertAwsResourceProperty` – Assert an AWS resource state or event state](automation-action-assertAwsResourceProperty.md)

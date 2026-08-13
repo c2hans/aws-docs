@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[SecurityGroupIds](#cfn-dax-cluster-securitygroupids)" : {{[ String, ... ]}},
       "[SSESpecification](#cfn-dax-cluster-ssespecification)" : {{SSESpecification}},
       "[SubnetGroupName](#cfn-dax-cluster-subnetgroupname)" : {{String}},
-      "[Tags](#cfn-dax-cluster-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}}
+      "[Tags](#cfn-dax-cluster-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}}
     }
 }
 ```
@@ -64,7 +64,7 @@ Properties:
     SSESpecification}}
   [SubnetGroupName](#cfn-dax-cluster-subnetgroupname): {{String}}
   [Tags](#cfn-dax-cluster-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
 ```
 
 ## Properties
@@ -169,7 +169,7 @@ DAX clusters can only run in an Amazon VPC environment. All of the subnets that 
 `Tags`  <a name="cfn-dax-cluster-tags"></a>
 A set of tags to associate with the DAX cluster.
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
@@ -190,7 +190,7 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 MyDAXCluster
 ```
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-dax-cluster-return-values-fn--getatt"></a>

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-test
 <a name="kb-managed-test"></a>
 
 After you set up your managed knowledge base, you can test its behavior in the following ways:
-+ Retrieve relevant information from your data sources, by using the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) operation.
++ Retrieve relevant information from your data sources, by using the [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) operation.
 + Use agentic retrieval to decompose complex queries into sub-queries and iteratively retrieve relevant information from your data sources, by using the `AgenticRetrieveStream` operation.
 + Connect to your knowledge base through AgentCore Gateway to expose it as an MCP tool.
 

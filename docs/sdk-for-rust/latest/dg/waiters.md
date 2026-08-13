@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/waiters.html
 
 AWS services that provide support for waiters include a `{{<service>}}::waiters` module.
 + The `{{<service>}}::client::Waiters` trait provides waiter methods for the client. The methods are implemented for the `Client` struct. All waiter methods follow a standard naming convention of `wait_until_{{<Condition>}}`
-  + For Amazon S3, this trait is [https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/client/trait.Waiters.html](https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/client/trait.Waiters.html).
+  + For Amazon S3, this trait is [`aws_sdk_s3::client::Waiters`](https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/client/trait.Waiters.html).
 
 The following example uses Amazon S3. However, the concepts are the same for any AWS service that has one or more waiters defined.
 

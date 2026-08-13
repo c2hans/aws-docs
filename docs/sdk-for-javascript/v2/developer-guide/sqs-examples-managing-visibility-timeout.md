@@ -16,7 +16,7 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 <a name="sqs-examples-managing-visibility-timeout-scenario"></a>
 
 In this example, a Node.js module is used to manage visibility timeout. The Node.js module uses the SDK for JavaScript to manage visibility timeout by using this method of the `AWS.SQS` client class:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SQS.html#changeMessageVisibility-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SQS.html#changeMessageVisibility-property)
++ [`changeMessageVisibility`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SQS.html#changeMessageVisibility-property)
 
 For more information about Amazon SQS visibility timeout, see [Visibility Timeout](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html) in the *Amazon Simple Queue Service Developer Guide*.
 

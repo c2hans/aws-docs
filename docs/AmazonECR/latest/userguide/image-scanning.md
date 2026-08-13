@@ -21,4 +21,4 @@ Archived images cannot be scanned. Archived images must be restored before they 
   + OS scans
   + Two scanning frequencies: Manual and scan on push
 **Important**
-The new version of Amazon ECR Basic Scanning doesn't use the ` imageScanFindingsSummary` and `imageScanStatus` attributes from the `DescribeImages` API response to return scan results. Use the ` DescribeImageScanFindings` API instead. For more information, see [https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DescribeImageScanFindings.html](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DescribeImageScanFindings.html).
+The new version of Amazon ECR Basic Scanning doesn't use the ` imageScanFindingsSummary` and `imageScanStatus` attributes from the `DescribeImages` API response to return scan results. Use the ` DescribeImageScanFindings` API instead. For more information, see [`DescribeImageScanFindings`](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DescribeImageScanFindings.html).

@@ -10,7 +10,7 @@ CloudWatch pipelines processors transform, parse, and enrich log data as it flow
 **Transformation metadata**
 When a pipeline processes log events, CloudWatch pipelines automatically adds transformation metadata to each processed log entry. This metadata indicates that the log has been transformed, making it easy to distinguish between original and processed data. If you enable the **Keep original log** option during pipeline creation, you can compare the original log with the transformed version at any time.
 
-**Processor categories**
+The following table describes the processor categories.
 
 | Category | Description |
 | --- | --- |

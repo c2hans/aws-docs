@@ -41,7 +41,7 @@ Get more familiar with the Dashboard using the live, interactive demo dashboard 
 
 1. Click the Launch Stack button below to open the **pre-populated stack template** in your CloudFormation.
 
-    [https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://aws-managed-cost-intelligence-dashboards.s3.amazonaws.com/cfn/cid-plugin.yml&stackName=Cost-Anomaly-Dashboard&param_DashboardId=aws-cost-anomalies&param_RequiresDataCollection=yes](https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://aws-managed-cost-intelligence-dashboards.s3.amazonaws.com/cfn/cid-plugin.yml&stackName=Cost-Anomaly-Dashboard&param_DashboardId=aws-cost-anomalies&param_RequiresDataCollection=yes)
+    [![Launch Stack button](http://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/LaunchStack.svg)](https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://aws-managed-cost-intelligence-dashboards.s3.amazonaws.com/cfn/cid-plugin.yml&stackName=Cost-Anomaly-Dashboard&param_DashboardId=aws-cost-anomalies&param_RequiresDataCollection=yes)
 
 1. You can change **Stack name** for your template if you wish.
 

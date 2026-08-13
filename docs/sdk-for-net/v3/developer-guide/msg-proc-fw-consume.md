@@ -71,7 +71,7 @@ You can return `MessageProcessStatus.Success()` to indicate that the message was
 ## Handling Messages in a Long-Running Process
 <a name="long-running-process"></a>
 
-You can call `AddSQSPoller` with an SQS queue URL to start a long-running [https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.hosting.backgroundservice](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.hosting.backgroundservice) that will continuously poll the queue and process messages.
+You can call `AddSQSPoller` with an SQS queue URL to start a long-running [`BackgroundService`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.hosting.backgroundservice) that will continuously poll the queue and process messages.
 
 ```
 await Host.CreateDefaultBuilder(args)

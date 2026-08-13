@@ -12,7 +12,7 @@ Important considerations:
 You cannot change the EKS cluster information that your HyperPod cluster is associated after the cluster is created.
 If deep health checks are running on the cluster, this API will not function as expected. You might encounter an error message stating that deep health checks are in progress. To update the cluster, you should wait until the deep health checks finish.
 
-1. Create an [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html) API request file in JSON format. Make sure that you specify the right cluster name and instance group name to update. For each instance group, you can change the instance type, the number of instances, the lifecycle configuration entrypoint script, and the path to the script.
+1. Create an [`UpdateCluster`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html) API request file in JSON format. Make sure that you specify the right cluster name and instance group name to update. For each instance group, you can change the instance type, the number of instances, the lifecycle configuration entrypoint script, and the path to the script.
 **Note**
 You can use the `UpdateCluster` to scale down or remove entire instance groups from your SageMaker HyperPod cluster. For additional instructions on how to scale down or delete instance groups, see [Scaling down a SageMaker HyperPod cluster](smcluster-scale-down.md).
 

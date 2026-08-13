@@ -20,8 +20,8 @@ A comparison of the RPMs present on the AL1 and AL2023 base container images.
 |  coreutils  | 8.22 |  |
 |  coreutils-single  |  | 8.32 |
 |  crypto-policies  |  | 20220428 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 7.61.1 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
+|  [`curl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 7.61.1 |  |
+|  [`curl-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
 |  cyrus-sasl-lib  | 2.1.23 |  |
 |  db4  | 4.7.25 |  |
 |  db4-utils  | 4.7.25 |  |
@@ -37,12 +37,12 @@ A comparison of the RPMs present on the AL1 and AL2023 base container images.
 |  gdbm  | 1.8.0 |  |
 |  gdbm-libs  |  | 1.19 |
 |  glib2  | 2.36.3 | 2.74.7 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  | 2.17 | 2.34 |
+|  [`glibc`](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  | 2.17 | 2.34 |
 |  glibc-common  | 2.17 | 2.34 |
 |  glibc-minimal-langpack  |  | 2.34 |
 |  gmp  | 6.0.0 | 6.2.1 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  | 2.0.28 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  |  | 2.3.7 |
+|  [`gnupg2`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  | 2.0.28 |  |
+|  [`gnupg2-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#gnupg-minimal)  |  | 2.3.7 |
 |  gpgme  | 1.4.3 | 1.15.1 |
 |  grep  | 2.20 | 3.8 |
 |  gzip  | 1.5 |  |
@@ -59,8 +59,8 @@ A comparison of the RPMs present on the AL1 and AL2023 base container images.
 |  libcap-ng  |  | 0.8.2 |
 |  libcom\_err  | 1.43.5 | 1.46.5 |
 |  libcomps  |  | 0.1.20 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 7.61.1 |  |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
+|  [`libcurl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  | 7.61.1 |  |
+|  [`libcurl-minimal`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  |  | 8.5.0 |
 |  libdnf  |  | 0.69.0 |
 |  libffi  | 3.0.13 | 3.4.4 |
 |  libgcc  |  | 11.4.1 |
@@ -115,7 +115,7 @@ A comparison of the RPMs present on the AL1 and AL2023 base container images.
 |  openssl-libs  |  | 3.0.8 |
 |  p11-kit  | 0.18.5 | 0.24.1 |
 |  p11-kit-trust  | 0.18.5 | 0.24.1 |
-|  [https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre)  | 8.21 |  |
+|  [`pcre`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-pcre)  | 8.21 |  |
 |  pcre2  |  | 10.40 |
 |  pcre2-syntax  |  | 10.40 |
 |  pinentry  | 0.7.6 |  |

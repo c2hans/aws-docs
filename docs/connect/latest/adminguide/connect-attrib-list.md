@@ -32,7 +32,7 @@ The JSONPath reference for each attribute is provided so you can [create dynamic
 + [Apple Messages for Business attributes](#apple-messages-for-business-attributes)
 + [Customer Profiles attributes](#customer-profiles-attributes)
 + [Outbound campaign attributes](#campaign-attributes)
-+ [Connect AI agents attribute](#qic-attributes)
++ [agent assist attribute](#qic-attributes)
 
 ## System attributes
 <a name="attribs-system-table"></a>
@@ -267,7 +267,7 @@ The following table lists the attributes that are used with Connect Customer Cas
 | Date/Time Closed | The date and time the case was last closed. It does not guarantee that a case is closed. If a case is reopened, this field contains the date/time stamp of the last time the status was changed to closed. | date-time | $.Case.last\_closed\_datetime  | Connect Customer |
 | Date/Time Opened | The date and time the case was opened. | date-time | $.Case.created\_datetime | Connect Customer |
 | Date/Time Updated | The date and time the case was last updated. | date-time  | $.Case.last\_updated\_datetime | Connect Customer |
-| Reference number | The reference number is an alphanumeric value used to identify a case. For cases created after September 2026, reference numbers are unique within an Connect Customer Cases domain. Reference numbers are not case-sensitive. | text | $.Case.reference\_number | Agent |
+| Reference number | The reference number is an alphanumeric value used to identify a case. For cases created after September 2026, reference numbers are unique within a Connect Customer Cases domain. Reference numbers are not case-sensitive. | text | $.Case.reference\_number | Agent |
 | Status | Current status of the case | text | $.Case.status | Agent |
 | Summary | Summary of the case | text | $.Case.summary | Agent |
 | Title | Title of the case | text | $.Case.title | Agent |
@@ -454,11 +454,11 @@ To access customer data from a segment in your contact flow, use the **Customer 
 
 For more information about creating segments, see [Build customer segments in Connect Customer](customer-segments-building-segments.md).
 
-## Connect AI agents attribute
+## agent assist attribute
 <a name="qic-attributes"></a>
 
-The following attribute stores the Connect AI agents session ARN. A use case for this attribute is when you want to perform any API action, such as [UpdateSession](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_UpdateSession.html) [UpdateSessionData](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_UpdateSessionData.html). You can pass the attribute as input to [AWS Lambda function](invoke-lambda-function-block.md) block. And Lambda can call those APIs against the input session ARN.
+The following attribute stores the agent assist session ARN. A use case for this attribute is when you want to perform any API action, such as [UpdateSession](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_UpdateSession.html) [UpdateSessionData](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_UpdateSessionData.html). You can pass the attribute as input to [AWS Lambda function](invoke-lambda-function-block.md) block. And Lambda can call those APIs against the input session ARN.
 
 | Attribute | Description | Type | JSONPath Reference |
 | --- | --- | --- | --- |
-| SessionArn | The Amazon Resource Name (ARN) of a Connect AI agents session. | Flow | $.Wisdom.SessionArn |
+| SessionArn | The Amazon Resource Name (ARN) of an agent assist session. | Flow | $.Wisdom.SessionArn |

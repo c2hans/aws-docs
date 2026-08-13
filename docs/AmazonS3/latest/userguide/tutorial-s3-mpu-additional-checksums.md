@@ -186,7 +186,7 @@ To complete the multipart upload, you will need a list of all the parts that hav
 
 **To create a file that lists all of the parts**
 
-1. To generate a JSON file with the details of all the uploaded parts, use the following `list-parts` command. Replace **{{amzn-s3-demo-bucket1}}** with your actual bucket name and **<your-upload-id>** with the upload ID that you received in [Step 3](#create-multipart-upload-step3). For more information on the `list-parts` command, see [https://docs.aws.amazon.com/cli/latest/reference/s3api/list-parts.html](https://docs.aws.amazon.com/cli/latest/reference/s3api/list-parts.html) in the *AWS Command Line Interface User Guide*.
+1. To generate a JSON file with the details of all the uploaded parts, use the following `list-parts` command. Replace **{{amzn-s3-demo-bucket1}}** with your actual bucket name and **<your-upload-id>** with the upload ID that you received in [Step 3](#create-multipart-upload-step3). For more information on the `list-parts` command, see [list-parts](https://docs.aws.amazon.com/cli/latest/reference/s3api/list-parts.html) in the *AWS Command Line Interface User Guide*.
 
    ```
    aws s3api list-parts --bucket {{amzn-s3-demo-bucket1}} --key '{{census_data_file}}' --upload-id {{<your-upload-id>}} --query '{Parts: Parts[*].{PartNumber: PartNumber, ETag: ETag, ChecksumSHA256: ChecksumSHA256}}' --output json > parts.json
@@ -224,7 +224,7 @@ To complete the multipart upload, you will need a list of all the parts that hav
 After uploading all parts of your multipart upload and listing them, the final step is to complete the multipart upload. This step merges all the uploaded parts into a single object in your S3 bucket.
 
 **Note**
-You can calculate the object checksum before calling `complete-multipart-upload` by including `--checksum-sha256` in your request. If the checksums don't match, Amazon S3 fails the request. For more information, see [https://docs.aws.amazon.com/cli/latest/reference/s3api/complete-multipart-upload.html](https://docs.aws.amazon.com/cli/latest/reference/s3api/complete-multipart-upload.html) in the *AWS Command Line Interface User Guide*.
+You can calculate the object checksum before calling `complete-multipart-upload` by including `--checksum-sha256` in your request. If the checksums don't match, Amazon S3 fails the request. For more information, see [complete-multipart-upload](https://docs.aws.amazon.com/cli/latest/reference/s3api/complete-multipart-upload.html) in the *AWS Command Line Interface User Guide*.
 
 **To complete the multipart upload**
 

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-
 # Disable or enable a maintenance window using the console
 <a name="sysman-maintenance-disable"></a>
 
-You can disable or enable a maintenance window in Maintenance Windows, a tool in AWS Systems Manager. You can choose one maintenance window at a time to either disable or enable the maintenance window from running. You can also select multiple or all maintenance windows to enable and disable.
+You can disable or enable a maintenance window in Maintenance Windows. You can choose one maintenance window at a time to either disable or enable the maintenance window from running. You can also select multiple or all maintenance windows to enable and disable.
 
 This section describes how to disable or enable a maintenance window by using the Systems Manager console. For examples of how to do this by using the AWS Command Line Interface (AWS CLI), see [Tutorial: Update a maintenance window using the AWS CLI](maintenance-windows-cli-tutorials-update.md).
 

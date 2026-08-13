@@ -48,7 +48,7 @@ To solve this issue, make sure that each row in a result set is 64 KB or less.
 
 In this case, the size of the result set returned by the database was too large. The Data API limit is 1 MiB in the result set returned by the database.
 
-To solve this issue, make sure that calls to Data API return 1 MiB of data or less. If you need to return more than 1 MiB, you can use multiple [https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_ExecuteStatement.html](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_ExecuteStatement.html) calls with the `LIMIT` clause in your query.
+To solve this issue, make sure that calls to Data API return 1 MiB of data or less. If you need to return more than 1 MiB, you can use multiple [`ExecuteStatement`](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_ExecuteStatement.html) calls with the `LIMIT` clause in your query.
 
 For more information about the `LIMIT` clause, see [SELECT syntax](https://dev.mysql.com/doc/refman/8.0/en/select.html) in the MySQL documentation.
 

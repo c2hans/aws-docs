@@ -336,7 +336,7 @@ If you need to replicate SSE-KMS data cross-account, then your replication rule 
 1. Choose **Save changes**.
 
 **To grant the source bucket owner permission to use the KMS key (AWS CLI)**
-+ For information about the `put-key-policy` AWS Command Line Interface (AWS CLI) command, see [https://docs.aws.amazon.com/cli/latest/reference/kms/put-key-policy.html](https://docs.aws.amazon.com/cli/latest/reference/kms/put-key-policy.html) in the* AWS CLI Command Reference*. For information about the underlying `PutKeyPolicy` API operation, see [https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy.html) in the [AWS Key Management Service API Reference](https://docs.aws.amazon.com/kms/latest/APIReference/).
++ For information about the `put-key-policy` AWS Command Line Interface (AWS CLI) command, see [put-key-policy](https://docs.aws.amazon.com/cli/latest/reference/kms/put-key-policy.html) in the* AWS CLI Command Reference*. For information about the underlying `PutKeyPolicy` API operation, see [PutKeyPolicy](https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy.html) in the [AWS Key Management Service API Reference](https://docs.aws.amazon.com/kms/latest/APIReference/).
 
 ### AWS KMS transaction quota considerations
 <a name="crr-kms-considerations"></a>

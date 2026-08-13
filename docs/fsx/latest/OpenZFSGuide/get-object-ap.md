@@ -23,4 +23,4 @@ $ aws s3api get-object --key {{my-image.jpg}} --bucket {{my-openzfs-ap-hrzrlukc5
 }
 ```
 
-You can also use the REST API to download an object through an access point. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) in the *Amazon Simple Storage Service API Reference*.
+You can also use the REST API to download an object through an access point. For more information, see [GetObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) in the *Amazon Simple Storage Service API Reference*.

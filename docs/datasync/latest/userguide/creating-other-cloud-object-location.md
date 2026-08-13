@@ -6,15 +6,15 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/creating-other
 <a name="creating-other-cloud-object-location"></a>
 
 With AWS DataSync, you can transfer data between [AWS storage services](transferring-aws-storage.md) and the following cloud object storage providers:
-+ [https://docs.wasabi.com/](https://docs.wasabi.com/)
-+ [https://docs.digitalocean.com/](https://docs.digitalocean.com/)
-+ [https://docs.oracle.com/iaas/Content/home.htm](https://docs.oracle.com/iaas/Content/home.htm)
-+ [https://developers.cloudflare.com/r2/](https://developers.cloudflare.com/r2/)
-+ [https://www.backblaze.com/docs/cloud-storage](https://www.backblaze.com/docs/cloud-storage)
-+ [https://guide.ncloud-docs.com/docs/](https://guide.ncloud-docs.com/docs/)
-+ [https://www.alibabacloud.com/help/en/oss/product-overview/what-is-oss](https://www.alibabacloud.com/help/en/oss/product-overview/what-is-oss)
-+ [https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage)
-+ [https://help.lyvecloud.seagate.com/en/product-features.html](https://help.lyvecloud.seagate.com/en/product-features.html)
++ [Wasabi Cloud Storage](https://docs.wasabi.com/)
++ [DigitalOcean Spaces](https://docs.digitalocean.com/)
++ [Oracle Cloud Infrastructure Object Storage](https://docs.oracle.com/iaas/Content/home.htm)
++ [Cloudflare R2 Storage](https://developers.cloudflare.com/r2/)
++ [Backblaze B2 Cloud Storage](https://www.backblaze.com/docs/cloud-storage)
++ [NAVER Cloud Object Storage](https://guide.ncloud-docs.com/docs/)
++ [Alibaba Cloud Object Storage Service](https://www.alibabacloud.com/help/en/oss/product-overview/what-is-oss)
++ [IBM Cloud Object Storage](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage)
++ [Seagate Lyve Cloud](https://help.lyvecloud.seagate.com/en/product-features.html)
 
 Most transfers require a DataSync agent. Transfers between object storage systems in other clouds and Amazon S3 using **Enhanced** mode do not require an agent. Use the agent that corresponds to your task mode.
 

@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[Description](#cfn-bedrockagentcore-gatewaytarget-connectorconfiguration-description)" : {{String}},
   "[Name](#cfn-bedrockagentcore-gatewaytarget-connectorconfiguration-name)" : {{String}},
   "[ParameterOverrides](#cfn-bedrockagentcore-gatewaytarget-connectorconfiguration-parameteroverrides)" : {{[ ConnectorParameterOverride, ... ]}},
-  "[ParameterValues](#cfn-bedrockagentcore-gatewaytarget-connectorconfiguration-parametervalues)" : {{Json}}
+  "[ParameterValues](#cfn-bedrockagentcore-gatewaytarget-connectorconfiguration-parametervalues)" : {{}}
 }
 ```
 
@@ -34,7 +34,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [Name](#cfn-bedrockagentcore-gatewaytarget-connectorconfiguration-name): {{String}}
   [ParameterOverrides](#cfn-bedrockagentcore-gatewaytarget-connectorconfiguration-parameteroverrides): {{
     - ConnectorParameterOverride}}
-  [ParameterValues](#cfn-bedrockagentcore-gatewaytarget-connectorconfiguration-parametervalues): {{Json}}
+  [ParameterValues](#cfn-bedrockagentcore-gatewaytarget-connectorconfiguration-parametervalues): {{
+    }}
 ```
 
 ## Properties
@@ -64,5 +65,5 @@ Parameters to expose to the agent at runtime, with optional description override
 `ParameterValues`  <a name="cfn-bedrockagentcore-gatewaytarget-connectorconfiguration-parametervalues"></a>
 Parameters to set as fixed or default values when provisioning this tool.
 *Required*: No
-*Type*: Json
+*Type*:
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

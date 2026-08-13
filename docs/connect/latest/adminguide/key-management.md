@@ -11,16 +11,16 @@ When you associate the AWS KMS key to the S3 storage location in Connect Custome
 + If you call the [DisassociateInstanceStorageConfig](https://docs.aws.amazon.com/connect/latest/APIReference/API_DisassociateInstanceStorageConfig.html) API to dissociate the AWS KMS key from the S3 storage location in Connect Customer, the grant is removed from the key.
 + If you call the [AssociateInstanceStorageConfig](https://docs.aws.amazon.com/connect/latest/APIReference/API_AssociateInstanceStorageConfig.html) API to associate the AWS KMS key to the S3 storage location in Connect Customer but you don't have the `kms:CreateGrant` permission, the association will fail.
 
-Use the [https://awscli.amazonaws.com/v2/documentation/api/2.0.34/reference/kms/list-grants.html](https://awscli.amazonaws.com/v2/documentation/api/2.0.34/reference/kms/list-grants.html) CLI command to list all grants for the specified customer managed key.
+Use the [`list-grants`](https://awscli.amazonaws.com/v2/documentation/api/2.0.34/reference/kms/list-grants.html) CLI command to list all grants for the specified customer managed key.
 
 For information about AWS KMS keys see [What is AWS Key Management Service?](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html) in the *AWS Key Management Service Developer Guide*.
 
-## Connect AI agents
+## agent assist
 <a name="key-management-qic"></a>
 
-Connect AI agents stores knowledge documents that are encrypted at rest in S3 using a BYOK or a service-owned key. The knowledge documents are encrypted at rest in Amazon OpenSearch Service using a service-owned key. Connect AI agents stores agent queries and call transcripts using a BYOK or a service-owned key.
+Connect Customer agent assist stores knowledge documents that are encrypted at rest in S3 using a BYOK or a service-owned key. The knowledge documents are encrypted at rest in Amazon OpenSearch Service using a service-owned key. agent assist stores agent queries and call transcripts using a BYOK or a service-owned key.
 
-The knowledge documents used by Connect AI agents are encrypted by an AWS KMS key.
+The knowledge documents used by Connect Customer agent assist are encrypted by an AWS KMS key.
 
 ## Amazon AppIntegrations
 <a name="key-management-appinteg"></a>

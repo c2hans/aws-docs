@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/running
 
 When you run an automation, by default, the automation runs in the context of the user who initiated the automation. This means, for example, if your user has administrator permissions, then the automation runs with administrator permissions and full access to the resources being configured by the automation. As a security best practice, we recommend that you run automation by using an IAM service role that is known in this case as an *assume* role that is configured with the AmazonSSMAutomationRole managed policy. You might need to add additional IAM policies to your assume role to use various runbooks. Using an IAM service role to run automation is called *delegated administration*.
 
-When you use a service role, the automation is allowed to run against the AWS resources, but the user who ran the automation has restricted access (or no access) to those resources. For example, you can configure a service role and use it with Automation to restart one or more Amazon Elastic Compute Cloud (Amazon EC2) instances. Automation is a tool in AWS Systems Manager. The automation restarts the instances, but the service role doesn't give the user permission to access those instances.
+When you use a service role, the automation is allowed to run against the AWS resources, but the user who ran the automation has restricted access (or no access) to those resources. For example, you can configure a service role and use it with Automation to restart one or more Amazon Elastic Compute Cloud (Amazon EC2) instances. Automation is a tool in AWS Systems Manager. The automation restarts the instances. However, the service role doesn't give the user permission to access those instances.
 
 You can specify a service role at runtime when you run an automation, or you can create custom runbooks and specify the service role directly in the runbook. If you specify a service role, either at runtime or in a runbook, then the service runs in the context of the specified service role. If you don't specify a service role, then the system creates a temporary session in the context of the user and runs the automation.
 
@@ -19,7 +19,7 @@ You must specify a service role for automation that you expect to run longer tha
 Delegated administration ensures elevated security and control of your AWS resources. It also allows an enhanced auditing experience because actions are being performed against your resources by a central service role instead of multiple IAM accounts.
 
 **Before you begin**
-Before you complete the following procedures, you must create the IAM service role and configure a trust relationship for Automation, a tool in AWS Systems Manager. For more information, see [Task 1: Create a service role for Automation](automation-setup-iam.md#create-service-role).
+Before you complete the following procedures, you must create the IAM service role and configure a trust relationship for Automation. For more information, see [Task 1: Create a service role for Automation](automation-setup-iam.md#create-service-role).
 
 The following procedures describe how to use the Systems Manager console or your preferred command line tool to run a simple automation.
 
@@ -49,7 +49,7 @@ You can view information about a runbook by choosing the runbook name.
 
 1. In the **Input parameters** section, specify the required inputs. Optionally, you can choose an IAM service role from the **AutomationAssumeRole** list.
 
-1. (Optional) Choose a CloudWatch alarm to apply to your automation for monitoring. If your alarm enters `ALARM` state, the automation is canceled and any defined `onCancel` steps run. If you use AWS CloudTrail, you will see the `StopAutomationExecution` API call in your trail. For more information, see [Configuring Automations to monitor CloudWatch Alarms](automation-cw-alarm-monitoring.md).
+1. (Optional) Choose a CloudWatch alarm to apply to your automation for monitoring. If your alarm enters `ALARM` state, the automation is canceled and any defined `onCancel` steps run. If you use AWS CloudTrail, you see the `StopAutomationExecution` API call in your trail. For more information, see [Configuring Automations to monitor CloudWatch Alarms](automation-cw-alarm-monitoring.md).
 
 1. Choose **Execute**.
 

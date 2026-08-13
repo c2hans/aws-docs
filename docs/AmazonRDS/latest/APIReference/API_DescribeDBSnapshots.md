@@ -77,7 +77,7 @@ The type of snapshots to be returned. You can specify one of the following value
 +  `public` - Return all DB snapshots that have been marked as public.
 +  `awsbackup` - Return the DB snapshots managed by the AWS Backup service.
 
-  For information about AWS Backup, see the [https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html)
+  For information about AWS Backup, see the [* AWS Backup Developer Guide.*](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html)
 
   The `awsbackup` type does not apply to Aurora.
 If you don't specify a `SnapshotType` value, then both automated and manual snapshots are returned. Shared and public DB snapshots are not included in the returned results by default. You can include shared snapshots with these results by enabling the `IncludeShared` parameter. You can include public snapshots with these results by enabling the `IncludePublic` parameter.

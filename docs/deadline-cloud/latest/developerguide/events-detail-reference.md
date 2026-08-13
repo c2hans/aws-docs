@@ -105,7 +105,7 @@ The `source` and `detail-type` fields are included below because they contain sp
         "farmId": "farm-12345678900000000000000000000000",
         "fleetId": "fleet-12345678900000000000000000000000",
         "oldFleetSize": 1,
-        "newFleetSize": 5,
+        "newFleetSize": 5
     }
 }
 ```
@@ -411,7 +411,7 @@ The `source` and `detail-type` fields are included below because they contain sp
     "version": "0",
     "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "detail-type": "Task Run Status Change",
-    "source": "aws.aws.deadline",
+    "source": "aws.deadline",
     "account": "111122223333",
     "time": "2017-12-22T18:43:48Z",
     "region": "aa-example-1",

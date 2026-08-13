@@ -56,7 +56,7 @@ Actions can run in series or in parallel. For information about serial and paral
 
 An *execution* is a set of changes released by a pipeline. Each pipeline execution is unique and has its own ID. An execution corresponds to a set of changes, such as a merged commit or a manual release of the latest commit. Two executions can release the same set of changes at different times.
 
-While a pipeline can process multiple executions at the same time, a pipeline stage processes only one execution at a time. To do this, a stage is locked while it processes an execution. Two pipeline executions can't occupy the same stage at the same time. The execution waiting to enter the occupied stage is referred to an *inbound execution*. An inbound execution can still fail, be superseded, or be manually stopped. For more information about how inbound executions work, see [How Inbound Executions Work](concepts-how-it-works.md#how-it-works-inbound-executions).
+While a pipeline can process multiple executions at the same time, a pipeline stage processes only one execution at a time. To do this, a stage is locked while it processes an execution. Two pipeline executions can't occupy the same stage at the same time. The execution waiting to enter the occupied stage is an *inbound execution*. An inbound execution can still fail, be superseded, or be manually stopped. For more information about how inbound executions work, see [How Inbound Executions Work](concepts-how-it-works.md#how-it-works-inbound-executions).
 
 Pipeline executions traverse pipeline stages in order. Valid statuses for pipelines are `InProgress`, `Stopping`, `Stopped`, `Succeeded`, `Superseded`, and `Failed`.
 
@@ -76,7 +76,7 @@ For information about use cases for stopping an execution and sequence details f
 ### Failed executions
 <a name="concepts-failed"></a>
 
-If an execution fails, it stops and does not completely traverse the pipeline. Its status is `FAILED` status and the stage is unlocked. A more recent execution can catch up and enter the unlocked stage and lock it. You can retry a failed execution unless the failed execution has been superseded or is not retryable. You can roll back a failed stage to a previous successful execution.
+If an execution fails, it stops and does not completely traverse the pipeline. Its status changes to `FAILED` and CodePipeline unlocks the stage. A more recent execution can catch up and enter the unlocked stage and lock it. You can retry a failed execution unless the failed execution has been superseded or is not retryable. You can roll back a failed stage to a previous successful execution.
 
 ### Execution modes
 <a name="concepts-superseded"></a>
@@ -136,7 +136,7 @@ You can start a pipeline execution with a source revision, such as a commit, tha
 ## Triggers
 <a name="concepts-triggers"></a>
 
-*Triggers* are events that start your pipeline. Some triggers, such as starting a pipeline manually, are available for all source action providers in a pipeline. Certain triggers depend on the source provider for a pipeline. For example, CloudWatch events must be configured with event resources from Amazon CloudWatch that have the pipeline ARN added as a target in the event rule. Amazon CloudWatch Events is the recommended trigger for automatic change detection for pipelines with a CodeCommit or S3 source action. Webhooks are a type of trigger configured for third-party repository events. For example, WebhookV2 is a trigger type that allows Git tags to be used to start pipelines with third-party source providers such as GitHub.com, GitHub Enterprise Server, GitLab.com, GitLab self-managed, or Bitbucket Cloud. In the pipeline configuration, you can specify a filter for triggers, such as push or pull request. You can filter code push events on Git tags, branches, or file paths. You can ﬁlter pull request events on event (opened, updated, closed), branches, or ﬁle paths.
+*Triggers* are events that start your pipeline. Some triggers, such as starting a pipeline manually, are available for all source action providers in a pipeline. Certain triggers depend on the source provider for a pipeline. For example, CloudWatch events must be configured with event resources from Amazon CloudWatch that have the pipeline ARN added as a target in the event rule. Amazon CloudWatch Events is the recommended trigger for automatic change detection for pipelines with a CodeCommit or S3 source action. Webhooks are a type of trigger configured for third-party repository events. For example, WebhookV2 is a trigger type that allows Git tags to be used to start pipelines with third-party source providers such as GitHub.com, GitHub Enterprise Server, GitLab.com, GitLab self-managed, or Bitbucket Cloud. In the pipeline configuration, you can specify a filter for triggers, such as push or pull request. You can filter code push events on Git tags, branches, or file paths. You can filter pull request events on event (opened, updated, closed), branches, or file paths.
 
 For more information about triggers, see [Start a pipeline in CodePipeline](pipelines-about-starting.md). For a tutorial that walks you through using Git tags as triggers for your pipeline, see [Tutorial: Use Git tags to start your pipeline](tutorials-github-tags.md).
 
@@ -146,7 +146,7 @@ Pipelines that are inactive for longer than 30 days will have polling disabled f
 ## Variables
 <a name="concepts-variables"></a>
 
-A *variable* is a value that can be used to dynamically configure actions in your pipeline. Variables can be either declared on the pipeline level, or emitted by actions in the pipeline. Variable values are resolved at the time of pipeline execution and can be viewed in the execution history. For variables declared at the pipeline level, you can either define default values in the pipeline configuration, or override them for a given execution. For variables emitted by an action, the value is available after an action succesfully completes. For more information, see [Variables reference](reference-variables.md).
+A *variable* is a value that can be used to dynamically configure actions in your pipeline. Variables can be either declared on the pipeline level, or emitted by actions in the pipeline. Variable values are resolved at the time of pipeline execution and can be viewed in the execution history. For variables declared at the pipeline level, you can either define default values in the pipeline configuration, or override them for a given execution. For variables emitted by an action, the value is available after an action successfully completes. For more information, see [Variables reference](reference-variables.md).
 
 ## Conditions
 <a name="concepts-conditions"></a>

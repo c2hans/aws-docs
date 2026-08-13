@@ -19,7 +19,7 @@ The following sections provide more details and an example for further context.
 You can specify application-level logging and runtime configuration properties for the jobs that you submit under the application.
 
 **`monitoringConfiguration`**
-To specify the log configurations for jobs that you submit with the application, use the [https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_MonitoringConfiguration.html](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_MonitoringConfiguration.html) field. For more information on logging for EMR Serverless, refer to [Storing logs](logging.md).
+To specify the log configurations for jobs that you submit with the application, use the [`monitoringConfiguration`](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_MonitoringConfiguration.html) field. For more information on logging for EMR Serverless, refer to [Storing logs](logging.md).
 
 **`runtimeConfiguration`**
 To specify runtime configuration properties such as `spark-defaults`, provide a configuration object in the `runtimeConfiguration` field. This affects the default configurations for all the jobs that you submit with the application. For more information, refer to [Hive configuration override parameter](jobs-hive.md#hive-defaults-configurationOverrides) and [Spark configuration override parameter](jobs-spark.md#spark-defaults-configurationOverrides).
@@ -59,7 +59,7 @@ To pass Secrets Manager secrets at the application level, attach the following p
 For more information on creating custom policies for secrets, refer to [Permissions policy examples for AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access_examples.html) in the *AWS Secrets Manager User Guide*.
 
 **Note**
-The `runtimeConfiguration` that you specify at application level maps to `applicationConfiguration` in the [https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_StartJobRun.html](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_StartJobRun.html) API.
+The `runtimeConfiguration` that you specify at application level maps to `applicationConfiguration` in the [`StartJobRun`](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_StartJobRun.html) API.
 
 ### Example declaration
 <a name="default-configs-declare-example"></a>
@@ -108,14 +108,14 @@ aws emr-serverless create-application \
 ## Overriding configurations during a job run
 <a name="default-configs-override"></a>
 
-You can specify configuration overrides for the application configuration and monitoring configuration with the [https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_StartJobRun.html](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_StartJobRun.html) API. EMR Serverless then merges the configurations that you specify at the application level and the job level to determine the configurations for the job execution.
+You can specify configuration overrides for the application configuration and monitoring configuration with the [`StartJobRun`](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_StartJobRun.html) API. EMR Serverless then merges the configurations that you specify at the application level and the job level to determine the configurations for the job execution.
 
 The granularity level when the merge occurs is as follows:
-+ **[https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_ConfigurationOverrides.html#emrserverless-Type-ConfigurationOverrides-applicationConfiguration](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_ConfigurationOverrides.html#emrserverless-Type-ConfigurationOverrides-applicationConfiguration)** - Classification type, for example `spark-defaults`.
-+ **[https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_ConfigurationOverrides.html#emrserverless-Type-ConfigurationOverrides-monitoringConfiguration](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_ConfigurationOverrides.html#emrserverless-Type-ConfigurationOverrides-monitoringConfiguration)** - Configuration type, for example `s3MonitoringConfiguration`.
++ **[`ApplicationConfiguration`](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_ConfigurationOverrides.html#emrserverless-Type-ConfigurationOverrides-applicationConfiguration)** - Classification type, for example `spark-defaults`.
++ **[`MonitoringConfiguration`](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_ConfigurationOverrides.html#emrserverless-Type-ConfigurationOverrides-monitoringConfiguration)** - Configuration type, for example `s3MonitoringConfiguration`.
 
 **Note**
-The priority of configurations that you provide at [https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_StartJobRun.html](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_StartJobRun.html) supersede the configurations that you provide at the application level.
+The priority of configurations that you provide at [`StartJobRun`](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_StartJobRun.html) supersede the configurations that you provide at the application level.
 
 For more information priority rankings, refer to [Hive configuration override parameter](jobs-hive.md#hive-defaults-configurationOverrides) and [Spark configuration override parameter](jobs-spark.md#spark-defaults-configurationOverrides).
 

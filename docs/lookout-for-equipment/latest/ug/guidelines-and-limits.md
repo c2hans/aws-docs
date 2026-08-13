@@ -22,7 +22,7 @@ Service quotas, also referred to as limits, are the maximum number of service re
   <tr><th>Description</th><th>Quota</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2"> Data ingestion </td></tr>
+  <tr><td colspan="2"> <b>Data ingestion</b> </td></tr>
   <tr><td>Maximum number of components per dataset </td><td>3,000 </td></tr>
   <tr><td>Maximum number of datasets per account</td><td>15</td></tr>
   <tr><td>Maximum number of pending data ingestion jobs per account</td><td>5</td></tr>
@@ -31,15 +31,15 @@ Service quotas, also referred to as limits, are the maximum number of service re
   <tr><td>Maximum length of component name</td><td>200 characters</td></tr>
   <tr><td>Maximum size per dataset</td><td>50 GB</td></tr>
   <tr><td>Maximum size per file</td><td>5 GB</td></tr>
-  <tr><td colspan="2"> Training and evaluation </td></tr>
+  <tr><td colspan="2"> <b>Training and evaluation</b> </td></tr>
   <tr><td>Maximum number of models per account</td><td>15</td></tr>
   <tr><td>Maximum number of pending models per account</td><td>5</td></tr>
   <tr><td>Maximum number of rows in training data (after resampling) </td><td>1.5 million</td></tr>
   <tr><td>Maximum number of rows in evaluation data (after resampling) </td><td>1.5 million</td></tr>
   <tr><td>Maximum number of components in training data</td><td>300</td></tr>
   <tr><td>Maximum number of columns across components in training data (excluding timestamp) </td><td>300</td></tr>
-  <tr><td>Minimum timespan of training data</td><td>[14 days](formatting-data.md#understanding-date-range)</td></tr>
-  <tr><td colspan="2"> Inference </td></tr>
+  <tr><td>Minimum timespan of training data</td><td><a href="formatting-data.md#understanding-date-range">14 days</a></td></tr>
+  <tr><td colspan="2"> <b>Inference</b> </td></tr>
   <tr><td>Maximum number of inference schedulers per model</td><td>1</td></tr>
   <tr><td>Maximum size of raw data in inference input data (5-min scheduling frequency) </td><td>5 MB</td></tr>
   <tr><td>Maximum size of raw data in inference input data (10-min scheduling frequency) </td><td>10 MB</td></tr>
@@ -52,7 +52,7 @@ Service quotas, also referred to as limits, are the maximum number of service re
   <tr><td>Maximum number of rows in inference input data, after resampling (30-min scheduling frequency) </td><td>1,800</td></tr>
   <tr><td>Maximum number of rows in inference input data, after resampling (1-hour scheduling frequency) </td><td>3,600</td></tr>
   <tr><td>Maximum number of files per component (per inference execution) </td><td>60</td></tr>
-  <tr><td colspan="2"> Labels </td></tr>
+  <tr><td colspan="2"> <b>Labels</b> </td></tr>
   <tr><td>Maximum number of label group per account</td><td>15</td></tr>
   <tr><td>Maximum number of labels per label group</td><td>3000</td></tr>
 </tbody>

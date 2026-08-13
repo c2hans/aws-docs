@@ -21,7 +21,7 @@ This action configures AI agents within your GitHub workflow by generating AWS-s
 ### Prerequisites
 <a name="Service-Application-Observability-for-AWS-GitHub-Action-prerequisites"></a>
 
-Before you begin, ensure you have the following:
+Before you begin, make sure you have the following:
 + **GitHub Repository Permissions**: Write access or higher to the repository (required to trigger the action)
 + **AWS IAM Role**: An IAM role configured with OpenID Connect (OIDC) for GitHub Actions with permissions for:
   + CloudWatch Application Signals and CloudWatch access
@@ -89,7 +89,7 @@ This action relies on the [aws-actions/configure-aws-credentials](https://github
    + `<AWS_ACCOUNT_ID>` - Your AWS account ID
    + `<GITHUB_ORG>` - Your GitHub organization name
    + `<GITHUB_REPOSITORY>` - Your repository name
-   + `<GITHUB_BRANCH>` - Your branch name (e.g., main)
+   + `<GITHUB_BRANCH>` - Your branch name (for example, main)
 
 1. **Attach the IAM Policy**
 
@@ -177,12 +177,12 @@ For more information about configuring OIDC with AWS, see the [configure-aws-cre
    + This workflow triggers automatically when `@awsapm` is mentioned in an issue or comment
    + The workflow uses the `AWS_IAM_ROLE_ARN` secret configured in the previous step
    + Update the model parameter in Step 2 to specify your preferred Amazon Bedrock model ID
-   + You can customize the bot name (e.g., `@awsapm-prod`, `@awsapm-staging`) in the bot\_name parameter to support different environments
+   + You can customize the bot name (for example, `@awsapm-prod`, `@awsapm-staging`) in the bot\_name parameter to support different environments
 
 #### Step 3: Start Using the Action
 <a name="Service-Application-Observability-for-AWS-GitHub-Action-step3"></a>
 
-Once the workflow is configured, mention `@awsapm` in any GitHub issue to trigger an AI-powered investigation. The action will analyze your request, access live telemetry data, and provide recommendations or implement fixes automatically.
+After the workflow is configured, mention `@awsapm` in any GitHub issue to trigger an AI-powered investigation. The action will analyze your request, access live telemetry data, and provide recommendations or implement fixes automatically.
 
 **Example Use Cases:**
 

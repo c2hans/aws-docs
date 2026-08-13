@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/monitor
 # Use Run Command to send a command that returns status notifications
 <a name="monitoring-sns-rc-send"></a>
 
-The following procedures show how to use the AWS Command Line Interface (AWS CLI) or AWS Systems Manager console to send a command through Run Command, a tool in AWS Systems Manager, that is configured to return status notifications.
+The following procedures show how to use the AWS Command Line Interface (AWS CLI) or AWS Systems Manager console to send a command through Run Command, that is configured to return status notifications.
 
 ## Sending a Run Command that returns notifications (console)
 <a name="monitoring-sns-rc-send-console"></a>
@@ -96,4 +96,4 @@ Specify parameters in the following command to target managed instances using ta
 
 1. Check your email for a message from Amazon SNS and open the email message. Amazon SNS can take several minutes to send the email message.
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html) in the *AWS CLI Command Reference*.
+For more information, see [send-command](https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html) in the *AWS CLI Command Reference*.

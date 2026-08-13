@@ -23,44 +23,44 @@ If you’re unsure of the exact well-scoped permissions required to access the s
 <a name="pipes-perms-ddb"></a>
 
 For DynamoDB Streams, EventBridge Pipes requires the following permissions to manage resources that are related to your DynamoDB data stream.
-+ [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_DescribeStream.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_DescribeStream.html)
-+ [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_GetRecords.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_GetRecords.html)
-+ [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_GetShardIterator.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_GetShardIterator.html)
-+ [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_ListStreams.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_ListStreams.html)
++ [`dynamodb:DescribeStream`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_DescribeStream.html)
++ [`dynamodb:GetRecords`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_GetRecords.html)
++ [`dynamodb:GetShardIterator`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_GetShardIterator.html)
++ [`dynamodb:ListStreams`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_ListStreams.html)
 
 To send records of failed batches to the pipe dead-letter queue, your pipe execution role needs the following permission:
-+ [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html)
++ [`sqs:SendMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html)
 
 ## Kinesis execution role permissions
 <a name="pipes-perms-ak"></a>
 
 For Kinesis, EventBridge Pipes requires the following permissions to manage resources that are related to your Kinesis data stream.
-+ [https://docs.aws.amazon.com/kinesis/latest/APIReference/API_DescribeStream.html](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_DescribeStream.html)
-+ [https://docs.aws.amazon.com/kinesis/latest/APIReference/API_DescribeStreamSummary.html](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_DescribeStreamSummary.html)
-+ [https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetRecords.html](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetRecords.html)
-+ [https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetShardIterator.html](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetShardIterator.html)
-+ [https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ListShards.html](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ListShards.html)
-+ [https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ListStreams.html](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ListStreams.html)
-+ [https://docs.aws.amazon.com/kinesis/latest/APIReference/API_SubscribeToShard.html](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_SubscribeToShard.html)
++ [`kinesis:DescribeStream`](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_DescribeStream.html)
++ [`kinesis:DescribeStreamSummary`](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_DescribeStreamSummary.html)
++ [`kinesis:GetRecords`](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetRecords.html)
++ [`kinesis:GetShardIterator`](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetShardIterator.html)
++ [`kinesis:ListShards`](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ListShards.html)
++ [`kinesis:ListStreams`](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ListStreams.html)
++ [`kinesis:SubscribeToShard`](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_SubscribeToShard.html)
 
 To send records of failed batches to the pipe dead-letter queue, your pipe execution role needs the following permission:
-+ [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html)
++ [`sqs:SendMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html)
 
 ## Amazon MQ execution role permissions
 <a name="pipes-perms-mq"></a>
 
 For Amazon MQ, EventBridge Pipes requires the following permissions to manage resources that are related to your Amazon MQ message broker.
-+ [https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id.html#brokers-broker-id-http-methods](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id.html#brokers-broker-id-http-methods)
-+ [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html)
-+ [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkInterface.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkInterface.html)
-+ [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNetworkInterface.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNetworkInterface.html)
-+ [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeNetworkInterfaces.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeNetworkInterfaces.html)
-+ [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSecurityGroups.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSecurityGroups.html)
-+ [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSubnets.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSubnets.html)
-+ [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcs.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcs.html)
-+ [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogGroup.html](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogGroup.html)
-+ [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogStream.html](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogStream.html)
-+ [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutLogEvents.html](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutLogEvents.html)
++ [`mq:DescribeBroker`](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id.html#brokers-broker-id-http-methods)
++ [`secretsmanager:GetSecretValue`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html)
++ [`ec2:CreateNetworkInterface`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkInterface.html)
++ [`ec2:DeleteNetworkInterface`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNetworkInterface.html)
++ [`ec2:DescribeNetworkInterfaces`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeNetworkInterfaces.html)
++ [`ec2:DescribeSecurityGroups`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSecurityGroups.html)
++ [`ec2:DescribeSubnets`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSubnets.html)
++ [`ec2:DescribeVpcs`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcs.html)
++ [`logs:CreateLogGroup`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogGroup.html)
++ [`logs:CreateLogStream`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogStream.html)
++ [`logs:PutLogEvents`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutLogEvents.html)
 
 ## Amazon MSK execution role permissions
 <a name="pipes-perms-msk"></a>
@@ -69,17 +69,17 @@ For Amazon MSK, EventBridge requires the following permissions to manage resourc
 
 **Note**
 If you're using IAM role-based authentication, your execution role will need the permissions listed in [IAM role-based authentication](eb-pipes-msk.md#pipes-msk-permissions-iam-policy) in addition the ones listed below.
-+ [https://docs.aws.amazon.com/MSK/2.0/APIReference/v2-clusters-clusterarn.html#v2-clusters-clusterarnget](https://docs.aws.amazon.com/MSK/2.0/APIReference/v2-clusters-clusterarn.html#v2-clusters-clusterarnget)
-+ [https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn-bootstrap-brokers.html#clusters-clusterarn-bootstrap-brokersget](https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn-bootstrap-brokers.html#clusters-clusterarn-bootstrap-brokersget)
-+ [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkInterface.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkInterface.html)
-+ [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeNetworkInterfaces.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeNetworkInterfaces.html)
-+ [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcs.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcs.html)
-+ [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNetworkInterface.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNetworkInterface.html)
-+ [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSubnets.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSubnets.html)
-+ [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSecurityGroups.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSecurityGroups.html)
-+ [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogGroup.html](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogGroup.html)
-+ [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogStream.html](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogStream.html)
-+ [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutLogEvents.html](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutLogEvents.html)
++ [`kafka:DescribeClusterV2`](https://docs.aws.amazon.com/MSK/2.0/APIReference/v2-clusters-clusterarn.html#v2-clusters-clusterarnget)
++ [`kafka:GetBootstrapBrokers`](https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn-bootstrap-brokers.html#clusters-clusterarn-bootstrap-brokersget)
++ [`ec2:CreateNetworkInterface`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkInterface.html)
++ [`ec2:DescribeNetworkInterfaces`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeNetworkInterfaces.html)
++ [`ec2:DescribeVpcs`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcs.html)
++ [`ec2:DeleteNetworkInterface`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNetworkInterface.html)
++ [`ec2:DescribeSubnets`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSubnets.html)
++ [`ec2:DescribeSecurityGroups`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSecurityGroups.html)
++ [`logs:CreateLogGroup`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogGroup.html)
++ [`logs:CreateLogStream`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogStream.html)
++ [`logs:PutLogEvents`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutLogEvents.html)
 
 ## Self managed Apache Kafka execution role permissions
 <a name="pipes-perms-kafka"></a>
@@ -90,9 +90,9 @@ For self managed Apache Kafka, EventBridge requires the following permissions to
 <a name="pipes-perms-kafka-req"></a>
 
 To create and store logs in a log group in Amazon CloudWatch Logs, your pipe must have the following permissions in its execution role:
-+ [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogGroup.html](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogGroup.html)
-+ [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogStream.html](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogStream.html)
-+ [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutLogEvents.html](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutLogEvents.html)
++ [`logs:CreateLogGroup`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogGroup.html)
++ [`logs:CreateLogStream`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogStream.html)
++ [`logs:PutLogEvents`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutLogEvents.html)
 
 ### Optional permissions
 <a name="pipes-perms-kafka-optional"></a>
@@ -106,27 +106,27 @@ Your pipe might also need permissions to:
 <a name="pipes-perms-kafka-sm-kms"></a>
 
 Depending on the type of access control that you're configuring for your Apache Kafka brokers, your pipe might need permission to access your Secrets Manager secret or to decrypt your AWS KMS customer managed key. To access these resources, your function's execution role must have the following permissions:
-+ [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html)
-+ [https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html)
++ [`secretsmanager:GetSecretValue`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html)
++ [`kms:Decrypt`](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html)
 
 ### VPC permissions
 <a name="pipes-perms-kafka-vpc"></a>
 
 If only users within a VPC can access your self managed Apache Kafka cluster, your pipe must have permission to access your Amazon VPC resources. These resources include your VPC, subnets, security groups, and network interfaces. To access these resources, your pipe's execution role must have the following permissions:
-+ [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkInterface.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkInterface.html)
-+ [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeNetworkInterfaces.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeNetworkInterfaces.html)
-+ [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcs.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcs.html)
-+ [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNetworkInterface.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNetworkInterface.html)
-+ [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSubnets.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSubnets.html)
-+ [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSecurityGroups.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSecurityGroups.html)
++ [`ec2:CreateNetworkInterface`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkInterface.html)
++ [`ec2:DescribeNetworkInterfaces`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeNetworkInterfaces.html)
++ [`ec2:DescribeVpcs`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcs.html)
++ [`ec2:DeleteNetworkInterface`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNetworkInterface.html)
++ [`ec2:DescribeSubnets`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSubnets.html)
++ [`ec2:DescribeSecurityGroups`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSecurityGroups.html)
 
 ## Amazon SQS execution role permissions
 <a name="pipes-perms-sqs"></a>
 
 For Amazon SQS, EventBridge requires the following permissions to manage resources that are related to your Amazon SQS queue.
-+ [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html)
-+ [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_DeleteMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_DeleteMessage.html)
-+ [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueAttributes.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueAttributes.html)
++ [`sqs:ReceiveMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html)
++ [`sqs:DeleteMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_DeleteMessage.html)
++ [`sqs:GetQueueAttributes`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueAttributes.html)
 
 ## Enrichment and target permissions
 <a name="pipes-perms-enhance-target"></a>

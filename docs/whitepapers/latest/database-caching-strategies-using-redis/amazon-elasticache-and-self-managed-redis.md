@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/database-caching-stra
 # Amazon ElastiCache and Self-Managed Redis
 <a name="amazon-elasticache-and-self-managed-redis"></a>
 
- Redis is an open source, in-memory data store that has become the most popular key/value engine in the market. Much of its popularity is due to its support for a variety of data structures as well as other features, including [https://www.lua.org/](https://www.lua.org/) scripting support and Pub/Sub messaging capability. Other added benefits include high availability topologies with support for read replicas and the ability to persist data.
+ Redis is an open source, in-memory data store that has become the most popular key/value engine in the market. Much of its popularity is due to its support for a variety of data structures as well as other features, including [*Lua*](https://www.lua.org/) scripting support and Pub/Sub messaging capability. Other added benefits include high availability topologies with support for read replicas and the ability to persist data.
 
  Amazon ElastiCache offers a fully-managed service for Redis. This means that all the administrative tasks associated with managing your Redis cluster (including monitoring, patching, backups, and automatic failover), are managed by Amazon. This lets you focus on your business and your data instead of your operations.
 
@@ -54,4 +54,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/database-caching-stra
 
 Additionally, dedicated Nitro Cards enable high speed networking, high speed EBS, and I/O acceleration. To benefit from the AWS Nitro System in Amazon ElastiCache (Redis OSS), choose a cache type from the list of supported instances: either M5 (`cache.m5.xlarge` or higher) or R5 (`cache.r5.xlarge` or higher), or later.
 
- Latest information on supported instances (including listings of previous generation instances), along with details around Burstable types can be found on the following page: [https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/CacheNodes.SupportedTypes.html](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/CacheNodes.SupportedTypes.html).
+ Latest information on supported instances (including listings of previous generation instances), along with details around Burstable types can be found on the following page: [*Supported Node Types*](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/CacheNodes.SupportedTypes.html).

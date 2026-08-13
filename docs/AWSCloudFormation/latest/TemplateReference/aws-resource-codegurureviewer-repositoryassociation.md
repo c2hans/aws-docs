@@ -120,7 +120,7 @@ The name of the repository.
 ### Ref
 <a name="aws-resource-codegurureviewer-repositoryassociation-return-values-ref"></a>
 
- When the logical ID of this resource is provided to the `Ref` intrinsic function, `Ref` returns the Amazon Resource Name (ARN) of the AWS CodeGuru Reviewer [https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociation.html](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociation.html), such as `arn:aws:codeguru-reviewer:region:123456789012:association/universally-unique-identifier`.
+ When the logical ID of this resource is provided to the `Ref` intrinsic function, `Ref` returns the Amazon Resource Name (ARN) of the AWS CodeGuru Reviewer [`RepositoryAssociation`](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociation.html), such as `arn:aws:codeguru-reviewer:region:123456789012:association/universally-unique-identifier`.
 
  For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
@@ -133,7 +133,7 @@ The name of the repository.
 <a name="aws-resource-codegurureviewer-repositoryassociation-return-values-fn--getatt-fn--getatt"></a>
 
 `AssociationArn`  <a name="AssociationArn-fn::getatt"></a>
-The Amazon Resource Name (ARN) of the [https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociation.html](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociation.html) object. You can retrieve this ARN by calling `ListRepositories`.
+The Amazon Resource Name (ARN) of the [`RepositoryAssociation`](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociation.html) object. You can retrieve this ARN by calling `ListRepositories`.
 
 ## Examples
 <a name="aws-resource-codegurureviewer-repositoryassociation--examples"></a>

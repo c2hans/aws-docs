@@ -149,8 +149,8 @@ AWS Sign-In provides APIs for validating and managing OAuth authorizations.
 
 | API | Purpose |
 | --- | --- |
-| [https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane-signin_IntrospectOAuth2TokenWithIAM.html](https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane-signin_IntrospectOAuth2TokenWithIAM.html) | Returns metadata describing an OAuth token. |
-| [https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane-signin_RevokeOAuth2TokenWithIAM.html](https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane-signin_RevokeOAuth2TokenWithIAM.html) | Revokes a refresh token. |
+| [`IntrospectOAuth2Token`](https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane-signin_IntrospectOAuth2TokenWithIAM.html) | Returns metadata describing an OAuth token. |
+| [`RevokeOAuth2Token`](https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane-signin_RevokeOAuth2TokenWithIAM.html) | Revokes a refresh token. |
 
 ## Monitoring OAuth activity
 <a name="aws-mcp-server-monitoring"></a>

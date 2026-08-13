@@ -26,10 +26,10 @@ The chatbot responds with the answer you programmed in Step 3: Create chatbot co
 ## Getting answers using Amazon Alexa
 <a name="getting-answers-using-amazon-alexa"></a>
 
-The QnABot on AWS solution also works with Amazon Alexa, allowing your end users to get answers from your programmed content via any Amazon Alexa device, including Amazon FireTV, and any of the Amazon Echo family of devices.
+The QnABot on AWS guidance also works with Amazon Alexa, allowing your end users to get answers from your programmed content via any Amazon Alexa device, including Amazon FireTV, and any of the Amazon Echo family of devices.
 
 **Note**
-To integrate with Amazon Alexa, you must first use the Amazon Developer Console to create an Alexa skill for QnABot on AWS. This solution doesn’t automatically create Alexa skills. You can use the content designer to launch a walkthrough for creating an Alexa skill.
+To integrate with Amazon Alexa, you must first use the Amazon Developer Console to create an Alexa skill for QnABot on AWS. This guidance doesn’t automatically create Alexa skills. You can use the content designer to launch a walkthrough for creating an Alexa skill.
 Starting in v7.4.0, Alexa integration requires you to register your Alexa Skill IDs using the `AlexaSkillIds` AWS CloudFormation stack parameter. New deployments have Alexa integration turned off by default. To turn it on, provide your Alexa Skill IDs when launching or updating the stack. **If you currently use Alexa, you must provide your Alexa Skill IDs during stack update to maintain Alexa functionality.**
 To find your Alexa Skill ID, sign in to the Amazon Developer Console, open your skill, and copy the Skill ID (format: `amzn1.ask.skill.xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`). You can register up to 30 skill IDs as a comma-separated list with no spaces (for example, `amzn1.ask.skill.xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx,amzn1.ask.skill.yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy`).
 

@@ -333,7 +333,7 @@ aws iottwinmaker get-metadata-transfer-job \
 --region us-east-1
 ```
 
-Once you see the state of the job turn to `COMPLETED`, you can verify the results of the job. GetMetadataTransferJob returns an object called [https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_MetadataTransferJobProgress.html](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_MetadataTransferJobProgress.html) which contains the following fields:
+Once you see the state of the job turn to `COMPLETED`, you can verify the results of the job. GetMetadataTransferJob returns an object called [`MetadataTransferJobProgress`](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_MetadataTransferJobProgress.html) which contains the following fields:
 + **failedCount:** Indicates the number of resources that failed during the transfer process.
 + **skippedCount:** Indicates the number of resources that were skipped during the transfer process.
 + **succeededCount:** Indicates the number of resources that succeeded during the transfer process.

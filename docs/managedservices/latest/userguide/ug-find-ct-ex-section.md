@@ -40,7 +40,7 @@ You can use a filter or query to search. The ListChangeTypeClassificationSummari
   <tr><th>Attribute</th><th>Valid values</th><th>Valid/Default condition</th><th>Notes</th></tr>
 </thead>
 <tbody>
-  <tr><td>ChangeTypeId</td><td>Any string representing a ChangeTypeId (For ex: ct-abc123xyz7890)</td><td>Equals</td><td>For change type IDs, see the [Change Type Reference](https://docs.aws.amazon.com/managedservices/latest/ctref/index.html).<br />For change type IDs, see Finding a Change Type or CSIO.</td></tr>
+  <tr><td>ChangeTypeId</td><td>Any string representing a ChangeTypeId (For ex: ct-abc123xyz7890)</td><td>Equals</td><td>For change type IDs, see the <a href="https://docs.aws.amazon.com/managedservices/latest/ctref/index.html">Change Type Reference</a>.<br />For change type IDs, see Finding a Change Type or CSIO.</td></tr>
   <tr><td>Category</td><td rowspan="4">Any free-form text</td><td rowspan="4">Contains</td><td rowspan="4">Regular expressions in each individual field are not supported. Case insensitive search</td></tr>
   <tr><td>Subcategory</td></tr>
   <tr><td>Item</td></tr>

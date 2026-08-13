@@ -73,7 +73,7 @@ Before you can activate direct Lambda resolvers, you must add a Lambda data sour
 ------
 #### [ CLI ]
 
-1. Create a data source object by running the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-data-source.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-data-source.html) command.
+1. Create a data source object by running the [`create-data-source`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-data-source.html) command.
 
    You'll need to type in 4 parameters for this particular command:
 
@@ -108,7 +108,7 @@ There are other parameters such as `Region` that must be configured but will usu
    }
    ```
 
-1. To modify a data source's attributes, run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/update-data-source.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/update-data-source.html) command.
+1. To modify a data source's attributes, run the [`update-data-source`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/update-data-source.html) command.
 
    With the exception of the `api-id` parameter, the parameters used in the `create-data-source` command will be overwritten by the new values from the `update-data-source` command.
 
@@ -138,7 +138,7 @@ After creating a Lambda data source and setting up the appropriate IAM role to a
 
 ------
 #### [ CLI ]
-+ Create a resolver by running the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-resolver.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-resolver.html) command.
++ Create a resolver by running the [`create-resolver`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/create-resolver.html) command.
 
   You'll need to type in 6 parameters for this particular command:
 

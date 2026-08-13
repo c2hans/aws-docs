@@ -67,7 +67,7 @@ Policy actions in Amazon Q Business use the following prefix before the action:
 qbusiness
 ```
 
-Policy actions in Amazon Q Business use the following prefix before the action: `qbusiness:`. For example, to grant someone permission to list an Amazon Q application with the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListApplications.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListApplications.html) API operation, you include the `qbusiness:ListIndices` action in their policy. Policy statements must include either an `Action` or `NotAction` element. Amazon Q defines its own set of actions that describe tasks that you can perform with this service.
+Policy actions in Amazon Q Business use the following prefix before the action: `qbusiness:`. For example, to grant someone permission to list an Amazon Q application with the [`ListApplications`](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListApplications.html) API operation, you include the `qbusiness:ListIndices` action in their policy. Policy statements must include either an `Action` or `NotAction` element. Amazon Q defines its own set of actions that describe tasks that you can perform with this service.
 
 To specify multiple actions in a single statement, separate them with commas.
 

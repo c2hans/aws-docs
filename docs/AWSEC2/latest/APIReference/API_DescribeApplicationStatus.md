@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeA
 # DescribeApplicationStatus
 <a name="API_DescribeApplicationStatus"></a>
 
-Describes the application status for the specified instances. Returns the aggregated application health status for each instance. The following rules apply:
+Describes the aggregated application health status for the specified instances. The following rules apply:
 + The instance-level status is derived from all application status checks with the aggregation setting set to `included`.
 + Use `DescribeApplicationStatusChecks` to view the configuration of individual checks.
 + Use `EnableApplicationStatusCheckSuppression` to temporarily suppress health check results from affecting the instance-level status.
@@ -22,11 +22,8 @@ Required: No
 
  **Filter.N**
 The filters.
-+  `tag`:<*key*> - The key/value combination of a tag assigned to the instance. Use the tag key in the filter name and the tag value as the filter value.
-+  `tag-key` - The key of a tag assigned to the instance. Use this filter to find all instances that have a tag with a specific key, regardless of the tag value.
-+  `tag-value` - The value of a tag assigned to the instance. Use this filter to find all instances that have a tag with a specific value, regardless of the tag key.
-+  `instance-id` - The ID of the instance.
-+  `availability-zone` - The Availability Zone of the instance.
++  `availability-zone-id` – The ID of the Availability Zone.
++  `status` – The instance-level application status. For valid values and their meanings, see `ApplicationStatus`.
 Type: Array of [Filter](API_Filter.md) objects
 Required: No
 

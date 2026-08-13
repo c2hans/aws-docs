@@ -119,7 +119,7 @@ Example IAM policy:
 
 Follow these steps to configure the automation:
 
-1. Navigate to [https://console.aws.amazon.com/systems-manager/documents/AWSSupport-CloneXenEC2InstanceAndMigrateToNitro/description](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-CloneXenEC2InstanceAndMigrateToNitro/description) in Systems Manager under Documents.
+1. Navigate to [`AWSSupport-CloneXenEC2InstanceAndMigrateToNitro`](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-CloneXenEC2InstanceAndMigrateToNitro/description) in Systems Manager under Documents.
 
 1. Select **`Execute automation`**.
 

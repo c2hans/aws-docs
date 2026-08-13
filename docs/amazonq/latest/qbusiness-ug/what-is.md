@@ -15,7 +15,7 @@ Amazon Q Business is a fully managed, generative-AI powered assistant that you c
 
 Amazon Q Business also helps streamline tasks and accelerate problem solving. You can use Amazon Q Business to create and share task automation applications, or perform routine actions like submitting time-off requests and sending meeting invites.
 
-Amazon Q Business integrates with services like [Amazon Kendra](https://docs.aws.amazon.com/kendra/latest/dg/what-is-kendra.html) and [other supported data sources](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/supported-connectors.html) such as [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html), [https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-connector.html](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-connector.html), and [https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/salesforce-connector.html](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/salesforce-connector.html).
+Amazon Q Business integrates with services like [Amazon Kendra](https://docs.aws.amazon.com/kendra/latest/dg/what-is-kendra.html) and [other supported data sources](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/supported-connectors.html) such as [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html), [Microsoft SharePoint](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-connector.html), and [Salesforce](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/salesforce-connector.html).
 
 To get started with Amazon Q Business, visit [Amazon Q Business](https://aws.amazon.com/q/business/).
 

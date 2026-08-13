@@ -197,7 +197,7 @@ In this example, the export runs only on the Amazon EC2 instance with the active
    {\"SELECT MAX(TIMESTAMP) TIMESTAMP, HOST, MEASURED_ELEMENT_NAME CORE, SUM(MAP(CAPTION, 'User Time', TO_NUMBER(VALUE), 0)) USER_PCT, SUM(MAP(CAPTION, 'System Time', TO_NUMBER(VALUE), 0)) SYSTEM_PCT, SUM(MAP(CAPTION, 'Wait Time', TO_NUMBER(VALUE), 0)) WAITIO_PCT, SUM(MAP(CAPTION, 'Idle Time', 0, TO_NUMBER(VALUE))) BUSY_PCT, SUM(MAP(CAPTION, 'Idle Time', TO_NUMBER(VALUE), 0)) IDLE_PCT FROM sys.M_HOST_AGENT_METRICS WHERE MEASURED_ELEMENT_TYPE = 'Processor' GROUP BY HOST, MEASURED_ELEMENT_NAME;\":{\"enabled\":true,\"metrics\":[{\"name\":\"hanadb_cpu_user\",\"description\":\"Percentage of CPU time spent by HANA DB in user space, over the last minute (in seconds)\",\"labels\":[\"HOST\",\"CORE\"],\"value\":\"USER_PCT\",\"unit\":\"percent\",\"type\":\"gauge\"},{\"name\":\"hanadb_cpu_system\",\"description\":\"Percentage of CPU time spent by HANA DB in Kernel space, over the last minute (in seconds)\",\"labels\":[\"HOST\",\"CORE\"],\"value\":\"SYSTEM_PCT\",\"unit\":\"percent\",\"type\":\"gauge\"},{\"name\":\"hanadb_cpu_waitio\",\"description\":\"Percentage of CPU time spent by HANA DB in IO mode, over the last minute (in seconds)\",\"labels\":[\"HOST\",\"CORE\"],\"value\":\"WAITIO_PCT\",\"unit\":\"percent\",\"type\":\"gauge\"},{\"name\":\"hanadb_cpu_busy\",\"description\":\"Percentage of CPU time spent by HANA DB, over the last minute (in seconds)\",\"labels\":[\"HOST\",\"CORE\"],\"value\":\"BUSY_PCT\",\"unit\":\"percent\",\"type\":\"gauge\"},{\"name\":\"hanadb_cpu_idle\",\"description\":\"Percentage of CPU time not spent by HANA DB, over the last minute (in seconds)\",\"labels\":[\"HOST\",\"CORE\"],\"value\":\"IDLE_PCT\",\"unit\":\"percent\",\"type\":\"gauge\"}]}}
    ```
 
-   For more information about metrics queries, see the [https://github.com/SUSE/hanadb_exporter/blob/master/metrics.json](https://github.com/SUSE/hanadb_exporter/blob/master/metrics.json) repo on GitHub.
+   For more information about metrics queries, see the [`SUSE / hanadb_exporter`](https://github.com/SUSE/hanadb_exporter/blob/master/metrics.json) repo on GitHub.
 
 1. Navigate to the [SSM Distributor](https://console.aws.amazon.com/systems-manager/distributor) console and open the **Owned by Amazon** tab. Select **AWSObservabilityExporter-SAP-HANADBExporterInstallAndConfigure\*** and choose **Install one time**.
 
@@ -235,7 +235,7 @@ The `AWSObservabilityExporter-HAClusterExporterInstallAndConfigure` package is a
    {\"port\":\"9664\",\"address\":\"0.0.0.0\",\"log-level\":\"info\",\"crm-mon-path\":\"/usr/sbin/crm_mon\",\"cibadmin-path\":\"/usr/sbin/cibadmin\",\"corosync-cfgtoolpath-path\":\"/usr/sbin/corosync-cfgtool\",\"corosync-quorumtool-path\":\"/usr/sbin/corosync-quorumtool\",\"sbd-path\":\"/usr/sbin/sbd\",\"sbd-config-path\":\"/etc/sysconfig/sbd\",\"drbdsetup-path\":\"/sbin/drbdsetup\",\"enable-timestamps\":false}
    ```
 
-   For more information about the exporter configurations, see the [https://github.com/ClusterLabs/ha_cluster_exporter/blob/master/ha_cluster_exporter.yaml](https://github.com/ClusterLabs/ha_cluster_exporter/blob/master/ha_cluster_exporter.yaml) repo on GitHub.
+   For more information about the exporter configurations, see the [`ClusterLabs / ha_cluster_exporter`](https://github.com/ClusterLabs/ha_cluster_exporter/blob/master/ha_cluster_exporter.yaml) repo on GitHub.
 
 1. Navigate to the [SSM Distributor](https://console.aws.amazon.com/systems-manager/distributor) console and open the **Owned by Amazon** tab. Select **AWSObservabilityExporter-HAClusterExporterInstallAndConfigure\*** and choose **Install one time**.
 
@@ -333,7 +333,7 @@ To use [AWS Systems Manager Distributor](https://docs.aws.amazon.com/systems-man
   }
   ```
 **Note**
-If the password or username contains special characters, you must percent encode the special characters to ensure a successful connection to the database.
+If the password or username contains special characters, you must percent encode the special characters to make sure that the connection to the database succeeds.
 
 **Install and configure the `AWSObservabilityExporter-SQLExporterInstallAndConfigure` package**
 The `AWSObservabilityExporter-SQLExporterInstallAndConfigure` package is an SSM Distributor package that you can use to install and configure SQL Prometheus metrics exporter. When metrics are sent by the Prometheus exporter, the CloudWatch agent can be configured to retrieve the metrics for the CloudWatch service.

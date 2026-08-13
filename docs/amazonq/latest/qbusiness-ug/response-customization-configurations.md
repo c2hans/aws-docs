@@ -18,7 +18,7 @@ When you create an Amazon Q Business application, Amazon Q Business applies defa
 ## Creating custom response settings
 <a name="create-response-configuration"></a>
 
-You can customize Amazon Q Business responses using the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateChatResponseConfiguration.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateChatResponseConfiguration.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
+You can customize Amazon Q Business responses using the AWS Management Console or the [CreateChatResponseConfiguration](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateChatResponseConfiguration.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
 **Note**
 To optimize performance and accuracy, Amazon Q Business may pre-process custom prompts before using them to generate responses.
@@ -87,7 +87,7 @@ aws qbusiness create-chat-response-configuration \
 ## Editing response customization settings
 <a name="edit-response-configuration"></a>
 
-You can edit an existing response configuration using the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateChatResponseConfiguration.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateChatResponseConfiguration.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
+You can edit an existing response configuration using the AWS Management Console or the [UpdateChatResponseConfiguration](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateChatResponseConfiguration.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
 ------
 #### [ Console ]
@@ -140,7 +140,7 @@ aws qbusiness update-chat-response-configuration \
 ## Deleting existing response customization settings
 <a name="delete-response-configuration"></a>
 
-You can delete configured response customizations using the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteChatResponseConfiguration.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteChatResponseConfiguration.html) API operation. If you're using the AWS Management Console, you can't reset the response customizations you have configured to default. The following tabs provide a procedure for the console and code examples for the AWS CLI.
+You can delete configured response customizations using the [DeleteChatResponseConfiguration](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteChatResponseConfiguration.html) API operation. If you're using the AWS Management Console, you can't reset the response customizations you have configured to default. The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
 ------
 #### [ Console ]
@@ -175,7 +175,7 @@ aws qbusiness delete-chat-response-configuration \
 ## Listing response customization settings
 <a name="list-response-configurations"></a>
 
-You can list all available response configurations for an application using the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetChatResponseConfiguration.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetChatResponseConfiguration.html) and [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListChatResponseConfigurations.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListChatResponseConfigurations.html) API operations. The following tabs provide a procedure for the console and code examples for the AWS CLI.
+You can list all available response configurations for an application using the AWS Management Console or the [GetChatResponseConfiguration](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetChatResponseConfiguration.html) and [ListChatResponseConfigurations](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListChatResponseConfigurations.html) API operations. The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
 ------
 #### [ Console ]

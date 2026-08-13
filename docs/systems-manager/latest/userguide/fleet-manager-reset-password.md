@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-m
 # Resetting passwords on managed nodes
 <a name="fleet-manager-reset-password"></a>
 
-You can reset the password for any user on a managed node. This includes Amazon Elastic Compute Cloud (Amazon EC2) instances; AWS IoT Greengrass core devices; and on-premises servers, edge devices, and virtual machines (VMs) that are managed by AWS Systems Manager. The password reset functionality is built on Session Manager, a tool in AWS Systems Manager. You can use this functionality to connect to managed nodes without opening inbound ports, maintaining bastion hosts, or managing SSH keys.
+You can reset the password for any user on a managed node. This includes Amazon Elastic Compute Cloud (Amazon EC2) instances; AWS IoT Greengrass core devices; and on-premises servers, edge devices, and virtual machines (VMs) that are managed by AWS Systems Manager. The password reset functionality is built on Session Manager. You can use this functionality to connect to managed nodes without opening inbound ports, maintaining bastion hosts, or managing SSH keys.
 
 Password reset is useful when a user has forgotten a password, or when you want to quickly update a password without making an RDP or SSH connection to a managed node.
 
@@ -44,7 +44,7 @@ You can reset a password on a Systems Manager managed node using the Systems Man
 
 1. Follow the prompts in the **Enter new password** command window to specify the new password.
 **Note**
-If the version of SSM Agent on the managed node doesn't support password resets, you're prompted to install a supported version using Run Command, a tool in AWS Systems Manager.
+If the version of SSM Agent on the managed node doesn't support password resets, you're prompted to install a supported version using Run Command.
 
 **To reset the password on a managed node (AWS CLI)**
 
@@ -81,13 +81,6 @@ To use the AWS CLI to reset a password, the Session Manager plugin must be insta
 
 Many password reset issues can be resolved by ensuring that you have completed the [password reset prerequisites](#pw-reset-prereqs). For other problems, use the following information to help you troubleshoot password reset issues.
 
-**Topics**
-+ [Managed node not available](#password-reset-troubleshooting-instances)
-+ [SSM Agent not up-to-date (console)](#password-reset-troubleshooting-ssmagent-console)
-+ [Password reset options aren't provided (AWS CLI)](#password-reset-troubleshooting-ssmagent-cli)
-+ [No authorization to run `ssm:SendCommand`](#password-reset-troubleshooting-sendcommand)
-+ [Session Manager error message](#password-reset-troubleshooting-session-manager)
-
 ### Managed node not available
 <a name="password-reset-troubleshooting-instances"></a>
 
@@ -100,14 +93,14 @@ Many password reset issues can be resolved by ensuring that you have completed t
 <a name="password-reset-troubleshooting-ssmagent-console"></a>
 
 **Problem**: A message reports that the version of SSM Agent doesn't support password reset functionality.
-+ **Solution**: Version 2.3.668.0 or later of SSM Agent is required to perform password resets. In the console, you can update the agent on the managed node by choosing **Update SSM Agent**.
++ **Solution**: Version 2.3.668.0 or later of SSM Agent must be installed to perform password resets. In the console, you can update the agent on the managed node by choosing **Update SSM Agent**.
 
   An updated version of SSM Agent is released whenever new tools are added to Systems Manager or updates are made to existing tools. Failing to use the latest version of the agent can prevent your managed node from using various Systems Manager tools and features. For that reason, we recommend that you automate the process of keeping SSM Agent up to date on your machines. For information, see [Automating updates to SSM Agent](ssm-agent-automatic-updates.md). Subscribe to the [SSM Agent Release Notes](https://github.com/aws/amazon-ssm-agent/blob/mainline/RELEASENOTES.md) page on GitHub to get notifications about SSM Agent updates.
 
 ### Password reset options aren't provided (AWS CLI)
 <a name="password-reset-troubleshooting-ssmagent-cli"></a>
 
-**Problem**: You connect successfully to a managed node using the AWS CLI `[https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html)` command. You specified the SSM Document `AWS-PasswordReset` and provided a valid user name, but prompts to change the password aren't displayed.
+**Problem**: You connect successfully to a managed node using the AWS CLI `[start-session](https://docs.aws.amazon.com/cli/latest/reference/ssm/start-session.html)` command. You specified the SSM Document `AWS-PasswordReset` and provided a valid user name, but prompts to change the password aren't displayed.
 + **Solution**: The version of SSM Agent on the managed node isn't up-to-date. Version 2.3.668.0 or later is required to perform password resets.
 
   An updated version of SSM Agent is released whenever new tools are added to Systems Manager or updates are made to existing tools. Failing to use the latest version of the agent can prevent your managed node from using various Systems Manager tools and features. For that reason, we recommend that you automate the process of keeping SSM Agent up to date on your machines. For information, see [Automating updates to SSM Agent](ssm-agent-automatic-updates.md). Subscribe to the [SSM Agent Release Notes](https://github.com/aws/amazon-ssm-agent/blob/mainline/RELEASENOTES.md) page on GitHub to get notifications about SSM Agent updates.

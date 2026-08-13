@@ -33,7 +33,7 @@ ASFF is the required wire protocol format to use to send findings to AWS Securit
 See [Guidelines for mapping findings into the AWS Security Finding Format (ASFF)](guidelines-asff-mapping.md).
 **Building and testing the integration**
 You can complete all of the testing for your integration using an AWS account that you own. Doing so gives you full visibility into how the findings appear in Security Hub CSPM. It also helps you understand the customer's experience with your security findings.
-You use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation to send new and updated findings to Security Hub CSPM.
+You use the [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation to send new and updated findings to Security Hub CSPM.
 Throughout the build of a Security Hub CSPM integration, AWS encourages you to keep your APN Partner contacts informed about the progress of your integration. You can also ask your APN Partner contacts for help with integration questions.
 See [Guidelines for using the `BatchImportFindings` API](guidelines-batchimportfindings.md).
 

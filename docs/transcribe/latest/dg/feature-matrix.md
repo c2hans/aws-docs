@@ -12,38 +12,38 @@ Note that 'batch' and 'post-call' refer to transcribing a file that is located i
 <a name="table-feature-matrix"></a>
 <table>
 <thead>
-  <tr><th>Feature</th><th>Amazon Transcribe</th><th>[Amazon Transcribe Medical](transcribe-medical.md)1</th><th>[Amazon Transcribe Call Analytics](call-analytics.md)</th></tr>
+  <tr><th>Feature</th><th>Amazon Transcribe</th><th><a href="transcribe-medical.md">Amazon Transcribe Medical</a>1</th><th><a href="call-analytics.md">Amazon Transcribe Call Analytics</a></th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="4">Configuration options</td></tr>
-  <tr><td>[Alternative transcriptions](alternatives.md)</td><td>batch, streaming</td><td>batch, streaming</td><td>no</td></tr>
-  <tr><td>[Channel identification](channel-id.md)</td><td>batch, streaming</td><td>batch, streaming</td><td>post-call, real-time</td></tr>
-  <tr><td>[Job queueing](job-queueing.md)</td><td>batch</td><td>no</td><td>post-call</td></tr>
-  <tr><td>[Language identification](lang-id.md)</td><td>batch, streaming</td><td>no</td><td>post-call</td></tr>
-  <tr><td>[Multi-language identification](lang-id-batch.md#lang-id-batch-multi-language)</td><td>batch, streaming</td><td>no</td><td>no</td></tr>
-  <tr><td>[Speaker diarization](diarization.md)</td><td>batch, streaming</td><td>batch, streaming</td><td>post-call</td></tr>
-  <tr><td>[Transcribing digits](how-numbers.md)2</td><td>batch, streaming</td><td>batch, streaming</td><td>post-call, real-time</td></tr>
-  <tr><td colspan="4">Conversation analytics</td></tr>
-  <tr><td>[Call characteristics](call-analytics-batch.md#tca-characteristics-batch)</td><td>no</td><td>no</td><td>post-call</td></tr>
-  <tr><td>[Call summarization](call-analytics-batch.md#tca-summarization-batch)2</td><td>no</td><td>no</td><td>post-call</td></tr>
-  <tr><td>[Custom categorization](call-analytics-batch.md#tca-categorization-batch)</td><td>no</td><td>no</td><td>post-call</td></tr>
-  <tr><td>[Real-time category events](call-analytics-streaming.md#tca-category-events-stream)</td><td>no</td><td>no</td><td>real-time</td></tr>
-  <tr><td>[Real-time issue detection](call-analytics-streaming.md#tca-issue-detection-stream)2</td><td>no</td><td>no</td><td>real-time</td></tr>
-  <tr><td>[Real-time speaker sentiment](call-analytics-streaming.md#tca-sentiment-stream)</td><td>no</td><td>no</td><td>real-time</td></tr>
-  <tr><td>[Speaker sentiment](call-analytics-batch.md#tca-sentiment-batch)</td><td>no</td><td>no</td><td>post-call</td></tr>
-  <tr><td colspan="4">Language customization</td></tr>
-  <tr><td>[Custom language models](custom-language-models.md)2</td><td>batch, streaming</td><td>no</td><td>post-call, real-time</td></tr>
-  <tr><td>[Custom vocabularies](custom-vocabulary.md)</td><td>batch, streaming</td><td>batch, streaming</td><td>post-call, real-time</td></tr>
-  <tr><td colspan="4">Resource organization</td></tr>
-  <tr><td>[Tagging](tagging.md)</td><td>batch</td><td>batch</td><td>post-call</td></tr>
-  <tr><td colspan="4">Sensitive data</td></tr>
-  <tr><td>[Identifying personal health information](phi-id.md)2</td><td>no</td><td>batch, streaming</td><td>no</td></tr>
-  <tr><td>[Identifying personally identifiable information](pii-redaction-stream.md)2</td><td>streaming</td><td>no</td><td>real-time</td></tr>
-  <tr><td>[Redacting audio](call-analytics-batch.md#tca-pii-redact-batch)2</td><td>no</td><td>no</td><td>post-call, real-time</td></tr>
-  <tr><td>[Redacting transcripts](pii-redaction.md)2</td><td>batch, streaming</td><td>no</td><td>post-call, real-time</td></tr>
-  <tr><td>[Vocabulary filtering](vocabulary-filtering.md)</td><td>batch, streaming</td><td>no</td><td>post-call, real-time</td></tr>
-  <tr><td colspan="4">Video</td></tr>
-  <tr><td>[Subtitles](subtitles.md)</td><td>batch</td><td>no</td><td>no</td></tr>
+  <tr><td colspan="4"><i>Configuration options</i></td></tr>
+  <tr><td><a href="alternatives.md">Alternative transcriptions</a></td><td>batch, streaming</td><td>batch, streaming</td><td>no</td></tr>
+  <tr><td><a href="channel-id.md">Channel identification</a></td><td>batch, streaming</td><td>batch, streaming</td><td>post-call, real-time</td></tr>
+  <tr><td><a href="job-queueing.md">Job queueing</a></td><td>batch</td><td>no</td><td>post-call</td></tr>
+  <tr><td><a href="lang-id.md">Language identification</a></td><td>batch, streaming</td><td>no</td><td>post-call</td></tr>
+  <tr><td><a href="lang-id-batch.md#lang-id-batch-multi-language">Multi-language identification</a></td><td>batch, streaming</td><td>no</td><td>no</td></tr>
+  <tr><td><a href="diarization.md">Speaker diarization</a></td><td>batch, streaming</td><td>batch, streaming</td><td>post-call</td></tr>
+  <tr><td><a href="how-numbers.md">Transcribing digits</a>2</td><td>batch, streaming</td><td>batch, streaming</td><td>post-call, real-time</td></tr>
+  <tr><td colspan="4"><i>Conversation analytics</i></td></tr>
+  <tr><td><a href="call-analytics-batch.md#tca-characteristics-batch">Call characteristics</a></td><td>no</td><td>no</td><td>post-call</td></tr>
+  <tr><td><a href="call-analytics-batch.md#tca-summarization-batch">Call summarization</a>2</td><td>no</td><td>no</td><td>post-call</td></tr>
+  <tr><td><a href="call-analytics-batch.md#tca-categorization-batch">Custom categorization</a></td><td>no</td><td>no</td><td>post-call</td></tr>
+  <tr><td><a href="call-analytics-streaming.md#tca-category-events-stream">Real-time category events</a></td><td>no</td><td>no</td><td>real-time</td></tr>
+  <tr><td><a href="call-analytics-streaming.md#tca-issue-detection-stream">Real-time issue detection</a>2</td><td>no</td><td>no</td><td>real-time</td></tr>
+  <tr><td><a href="call-analytics-streaming.md#tca-sentiment-stream">Real-time speaker sentiment</a></td><td>no</td><td>no</td><td>real-time</td></tr>
+  <tr><td><a href="call-analytics-batch.md#tca-sentiment-batch">Speaker sentiment</a></td><td>no</td><td>no</td><td>post-call</td></tr>
+  <tr><td colspan="4"><i>Language customization</i></td></tr>
+  <tr><td><a href="custom-language-models.md">Custom language models</a>2</td><td>batch, streaming</td><td>no</td><td>post-call, real-time</td></tr>
+  <tr><td><a href="custom-vocabulary.md">Custom vocabularies</a></td><td>batch, streaming</td><td>batch, streaming</td><td>post-call, real-time</td></tr>
+  <tr><td colspan="4"><i>Resource organization</i></td></tr>
+  <tr><td><a href="tagging.md">Tagging</a></td><td>batch</td><td>batch</td><td>post-call</td></tr>
+  <tr><td colspan="4"><i>Sensitive data</i></td></tr>
+  <tr><td><a href="phi-id.md">Identifying personal health information</a>2</td><td>no</td><td>batch, streaming</td><td>no</td></tr>
+  <tr><td><a href="pii-redaction-stream.md">Identifying personally identifiable information</a>2</td><td>streaming</td><td>no</td><td>real-time</td></tr>
+  <tr><td><a href="call-analytics-batch.md#tca-pii-redact-batch">Redacting audio</a>2</td><td>no</td><td>no</td><td>post-call, real-time</td></tr>
+  <tr><td><a href="pii-redaction.md">Redacting transcripts</a>2</td><td>batch, streaming</td><td>no</td><td>post-call, real-time</td></tr>
+  <tr><td><a href="vocabulary-filtering.md">Vocabulary filtering</a></td><td>batch, streaming</td><td>no</td><td>post-call, real-time</td></tr>
+  <tr><td colspan="4"><i>Video</i></td></tr>
+  <tr><td><a href="subtitles.md">Subtitles</a></td><td>batch</td><td>no</td><td>no</td></tr>
 </tbody>
 </table>
 

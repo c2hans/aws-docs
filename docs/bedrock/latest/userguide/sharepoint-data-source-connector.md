@@ -37,7 +37,7 @@ There are limits to how many files and MB per file that can be crawled. See [Quo
 <a name="prerequisites-sharepoint-connector-online"></a>
 
 **Important**
-SharePoint App-Only authentication via Azure ACS was retired by Microsoft on April 2, 2026 and is no longer functional. Use Microsoft Entra ID (OAuth2 client credentials) authentication instead. When configuring your data source, set the `authType` to `OAUTH2_CLIENT_CREDENTIALS`.
+SharePoint App-Only authentication through Azure ACS was retired by Microsoft on April 2, 2026 and is no longer functional. Use Microsoft Entra ID (OAuth2 client credentials) authentication instead. When configuring your data source, set the `authType` to `OAUTH2_CLIENT_CREDENTIALS`.
 
 **In your SharePoint (Online), complete the following steps to configure Microsoft Entra ID authentication:**
 + Take note of your SharePoint Online site URL/URLs. For example, {{https://yourdomain.sharepoint.com/sites/mysite}}. Your URL must start with {{https}} and contain {{sharepoint.com}}. Your site URL must be the actual SharePoint site, not {{sharepoint.com/}} or {{sites/mysite/home.aspx}}
@@ -205,7 +205,7 @@ aws bedrock-agent create-data-source \
 ------
 
 **Important**
-SharePoint App-Only authentication via Azure ACS was retired by Microsoft on April 2, 2026. Use Microsoft Entra ID authentication (`OAUTH2_CLIENT_CREDENTIALS`) as described in the prerequisites above.
+SharePoint App-Only authentication through Azure ACS was retired by Microsoft on April 2, 2026. Use Microsoft Entra ID authentication (`OAUTH2_CLIENT_CREDENTIALS`) as described in the prerequisites above.
 
 ## Using OAuth2.0
 <a name="sharepoint-connector-oauth"></a>

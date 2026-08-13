@@ -20,14 +20,14 @@ The .NET CLI and the .NET Lambda Global Tools extension (`Amazon.Lambda.Tools`) 
 If you haven't already done so, install the [.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) SDK and Runtime.
 
 **AWS Amazon.Lambda.Templates .NET project templates**
-To generate your Lambda function code, use the [https://www.nuget.org/packages/Amazon.Lambda.Templates](https://www.nuget.org/packages/Amazon.Lambda.Templates) NuGet package. To install this template package, run the following command:
+To generate your Lambda function code, use the [Amazon.Lambda.Templates](https://www.nuget.org/packages/Amazon.Lambda.Templates) NuGet package. To install this template package, run the following command:
 
 ```
 dotnet new install Amazon.Lambda.Templates
 ```
 
 **AWS Amazon.Lambda.Tools .NET Global CLI tools**
-To create your Lambda functions, you use the [https://www.nuget.org/packages/Amazon.Lambda.Tools](https://www.nuget.org/packages/Amazon.Lambda.Tools) [.NET Global Tools extension](https://aws.amazon.com/blogs/developer/net-core-global-tools-for-aws/). To install Amazon.Lambda.Tools, run the following command:
+To create your Lambda functions, you use the [Amazon.Lambda.Tools](https://www.nuget.org/packages/Amazon.Lambda.Tools) [.NET Global Tools extension](https://aws.amazon.com/blogs/developer/net-core-global-tools-for-aws/). To install Amazon.Lambda.Tools, run the following command:
 
 ```
 dotnet tool install -g Amazon.Lambda.Tools

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using
 # Upload local artifacts to an S3 bucket with the AWS CLI
 <a name="using-cfn-cli-package"></a>
 
-You can use the AWS CLI to upload local artifacts that are referenced by a CloudFormation template to an Amazon S3 bucket. Local artifacts are files that you reference in your template. Instead of manually uploading files to an S3 bucket and then adding their locations to your template, you can specify local artifacts in your template and use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/package.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/package.html) command to upload them quickly.
+You can use the AWS CLI to upload local artifacts that are referenced by a CloudFormation template to an Amazon S3 bucket. Local artifacts are files that you reference in your template. Instead of manually uploading files to an S3 bucket and then adding their locations to your template, you can specify local artifacts in your template and use the [package](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/package.html) command to upload them quickly.
 
 A local artifact is a path to a file or folder that the **package** command uploads to Amazon S3. For example, an artifact can be a local path to your AWS Lambda function's source code or an Amazon API Gateway REST API's OpenAPI file.
 
@@ -19,7 +19,7 @@ You can specify an absolute or relative path, where the relative path is relativ
 After uploading the artifacts, the command returns a copy of your template, replacing references to local artifacts with the S3 location where the command uploaded the artifacts. You can then use the returned template to create or update a stack.
 
 **Note**
-You can use local artifacts only for resource properties that the **package** command supports. For more information about this command and a list of the supported resource properties, see the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/package.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/package.html) documentation in the [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/index.html).
+You can use local artifacts only for resource properties that the **package** command supports. For more information about this command and a list of the supported resource properties, see the [package](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/package.html) documentation in the [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/index.html).
 
 ## Prerequisites
 <a name="using-cfn-cli-package-prerequisites"></a>
@@ -50,7 +50,7 @@ The following template specifies the local artifact for a Lambda function's sour
 }
 ```
 
-The following [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/package.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/package.html) command creates and uploads a `.zip` file of the function's source code folder to the root of the specified bucket.
+The following [package](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/package.html) command creates and uploads a `.zip` file of the function's source code folder to the root of the specified bucket.
 
 ```
 aws cloudformation package \
@@ -81,7 +81,7 @@ The command generates a new template at the path specified by `--output-template
 }
 ```
 
-After you package your template’s artifacts, deploy the processed template using the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deploy/](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deploy/) command.
+After you package your template’s artifacts, deploy the processed template using the [deploy](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deploy/) command.
 
 ```
 aws cloudformation deploy \

@@ -9,9 +9,9 @@ Anyone can contribute to the best practices guide. The EKS Best Practices Guide 
 
 ## Summary for existing contributors
 <a name="_summary_for_existing_contributors"></a>
-+ Open the [https://github.com/aws/aws-eks-best-practices/blob/master/bpg-docs.code-workspace](https://github.com/aws/aws-eks-best-practices/blob/master/bpg-docs.code-workspace) with VS Code to automatically install the AsciiDoc extension.
++ Open the [`bpg-docs.code-workspace`](https://github.com/aws/aws-eks-best-practices/blob/master/bpg-docs.code-workspace) with VS Code to automatically install the AsciiDoc extension.
   + Learn more about the [AsciiDoc Extension](https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode) on the Visual Studio Marketplace.
-+ The source files for the AWS Docs website are stored in [https://github.com/aws/aws-eks-best-practices/tree/master/latest/bpg](https://github.com/aws/aws-eks-best-practices/tree/master/latest/bpg)
++ The source files for the AWS Docs website are stored in [`latest/bpg`](https://github.com/aws/aws-eks-best-practices/tree/master/latest/bpg)
 + The syntax is highly similar to markdown.
   + Review the [Syntax Reference](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/) in the AsciiDoctor docs.
 + The docs platform only deploys `latest/bpg/images`. Each of the guide sections has a symbolic link back to this directory. For example, `latest/bpg/networking/images` points to `latest/bpg/images`.

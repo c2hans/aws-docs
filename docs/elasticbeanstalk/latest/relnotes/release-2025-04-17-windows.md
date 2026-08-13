@@ -18,23 +18,40 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Framework** | **Details** |
-| --- | --- |
-| **Component** | **Details** |
-| --- | --- |
-| **Windows security updates** | Applied April 2025 security updates for Windows.<br />This release includes updates from the monthly Microsoft *Patch Tuesday* Windows release. Windows security updates in this release are current up to the second Tuesday of the month.<br />For more details and a list of security updates, see the Microsoft [Security Update Guide](https://portal.msrc.microsoft.com/en-us/security-guidance). |
-| **Framework updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-04-17-windows.html)  |
-| **AWS component updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-04-17-windows.html)  |
-| **.NET Core** | Updated .NET 8 to version 8.0.15.<br />.NET 6 is being removed from all Windows Server platform versions because it's past Microsoft's end of support date. For more information, see [.NET and .NET Core Support Policy](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core) on the Microsoft website.+  Windows Server 2016, 2019, 2022 and 2025 platforms — .NET 6 removed  |
-| **AMI** | Updated the base AMI to version 2025.04.09. |
-| **AWS SDK for .NET** | Updated the SDK to version 3.7.1020.0. |
-| **CloudWatch Agent** | Updated the CloudWatch Agent to version 1.300054.0b1074. |
-| **EC2Launch** | Updated EC2Launch V2 to version 2.0.2107. |
-| **SSM Agent** | Updated the SSM Agent to version 3.3.1957.0. |
-| **Deployment logging** | Added timestamps and severity information to deployment logs. |
-| **Environment variables** | Fixed an issue where the platform would throw an error when environment variables have empty values. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows security updates</b></td><td>Applied April 2025 security updates for Windows.<br />This release includes updates from the monthly Microsoft <i>Patch Tuesday</i> Windows release. Windows security updates in this release are current up to the second Tuesday of the month.<br />For more details and a list of security updates, see the Microsoft <a href="https://portal.msrc.microsoft.com/en-us/security-guidance">Security Update Guide</a>.</td></tr>
+  <tr><td><b>Framework updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Framework</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET 8 to version 8.0.15.<br />.NET 6 is being removed from all Windows Server platform versions because it's past Microsoft's end of support date. For more information, see <a href="https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core">.NET and .NET Core Support Policy</a> on the Microsoft website.<ul><li> Windows Server 2016, 2019, 2022 and 2025 platforms — .NET 6 removed </li></ul></td></tr>
+</tbody>
+</table>
+ </td></tr>
+  <tr><td><b>AWS component updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version 2025.04.09.</td></tr>
+  <tr><td><b>AWS SDK for .NET</b></td><td>Updated the SDK to version 3.7.1020.0.</td></tr>
+  <tr><td><b>CloudWatch Agent</b></td><td>Updated the CloudWatch Agent to version 1.300054.0b1074.</td></tr>
+  <tr><td><b>EC2Launch</b></td><td>Updated EC2Launch V2 to version 2.0.2107.</td></tr>
+  <tr><td><b>SSM Agent</b></td><td>Updated the SSM Agent to version 3.3.1957.0.</td></tr>
+  <tr><td><b>Deployment logging</b></td><td>Added timestamps and severity information to deployment logs.</td></tr>
+  <tr><td><b>Environment variables</b></td><td>Fixed an issue where the platform would throw an error when environment variables have empty values.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2025-04-17-windows.platforms"></a>

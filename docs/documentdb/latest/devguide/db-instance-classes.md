@@ -194,51 +194,51 @@ The following table provides details of the Amazon DocumentDB instance classes, 
   <tr><th>Instance class</th><th>vCPU1</th><th>Memory (GiB)2</th><th>NVMe SSD tiered cache (GiB)3</th><th>Max. temp. storage (GiB)4</th><th>Baseline / burst bandwidth (Gbps)5</th><th>Supporting Engines6</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="7">R8G – Current Generation Memory-Optimized Instance Class based on Graviton4R8G is the newest instance family (Graviton4), available on engine versions 5.0 and 8.0 only.</td></tr>
-  <tr><td>db.r8g.large</td><td>2</td><td>16</td><td>-</td><td>30</td><td>0.937 / 12.5</td><td>5.0.0 and 8.0.0</td></tr>
-  <tr><td>db.r8g.xlarge</td><td>4</td><td>32</td><td>-</td><td>60</td><td>1.875 / 12.5</td><td>5.0.0 and 8.0.0</td></tr>
-  <tr><td>db.r8g.2xlarge</td><td>8</td><td>64</td><td>-</td><td>121</td><td>3.75 / 15.0</td><td>5.0.0 and 8.0.0</td></tr>
-  <tr><td>db.r8g.4xlarge</td><td>16</td><td>128</td><td>-</td><td>243</td><td>7.5 / 15.0</td><td>5.0.0 and 8.0.0</td></tr>
-  <tr><td>db.r8g.8xlarge</td><td>32</td><td>256</td><td>-</td><td>488</td><td>15</td><td>5.0.0 and 8.0.0</td></tr>
-  <tr><td>db.r8g.12xlarge</td><td>48</td><td>384</td><td>-</td><td>732</td><td>22</td><td>5.0.0 and 8.0.0</td></tr>
-  <tr><td>db.r8g.16xlarge</td><td>64</td><td>512</td><td>-</td><td>987</td><td>30</td><td>5.0.0 and 8.0.0</td></tr>
-  <tr><td>db.r8g.24xlarge</td><td>96</td><td>768</td><td>-</td><td>1484</td><td>40</td><td>5.0.0 and 8.0.0</td></tr>
-  <tr><td>db.r8g.48xlarge</td><td>192</td><td>1536</td><td>-</td><td>2967</td><td>50</td><td>5.0.0 and 8.0.0</td></tr>
-  <tr><td colspan="7">R6G – Current Generation Memory-Optimized Instance Class based on Graviton2</td></tr>
-  <tr><td>db.r6g.large</td><td>2</td><td>16</td><td>-</td><td>32</td><td>0.75 / 10</td><td>4.0.0, 5.0.0, and 8.0.0</td></tr>
-  <tr><td>db.r6g.xlarge</td><td>4</td><td>32</td><td>-</td><td>63</td><td>1.25 / 10</td><td>4.0.0, 5.0.0, and 8.0.0</td></tr>
-  <tr><td>db.r6g.2xlarge</td><td>8</td><td>64</td><td>-</td><td>126</td><td>2.5 / 10</td><td>4.0.0, 5.0.0, and 8.0.0</td></tr>
-  <tr><td>db.r6g.4xlarge</td><td>16</td><td>128</td><td>-</td><td>252</td><td>5.0 / 10</td><td>4.0.0, 5.0.0, and 8.0.0</td></tr>
-  <tr><td>db.r6g.8xlarge</td><td>32</td><td>256</td><td>-</td><td>504</td><td>12</td><td>4.0.0, 5.0.0, and 8.0.0</td></tr>
-  <tr><td>db.r6g.12xlarge</td><td>48</td><td>384</td><td>-</td><td>756</td><td>20</td><td>4.0.0, 5.0.0, and 8.0.0</td></tr>
-  <tr><td>db.r6g.16xlarge</td><td>64</td><td>512</td><td>-</td><td>1008</td><td>25</td><td>4.0.0, 5.0.0, and 8.0.0</td></tr>
-  <tr><td colspan="7">R6GD – Current Generation NVMe-backed Instance Class based on Graviton2</td></tr>
-  <tr><td>db.r6gd.xlarge</td><td>4</td><td>32</td><td>173</td><td>64</td><td>1.25 / 10</td><td>5.0.0 and 8.0.0</td></tr>
-  <tr><td>db.r6gd.2xlarge</td><td>8</td><td>64</td><td>346</td><td>128</td><td>2.5 / 10</td><td>5.0.0 and 8.0.0</td></tr>
-  <tr><td>db.r6gd.4xlarge</td><td>16</td><td>128</td><td>694</td><td>256</td><td>5.0 / 10</td><td>5.0.0 and 8.0.0</td></tr>
-  <tr><td>db.r6gd.8xlarge</td><td>32</td><td>256</td><td>1388</td><td>512</td><td>12</td><td>5.0.0 and 8.0.0</td></tr>
-  <tr><td>db.r6gd.12xlarge</td><td>48</td><td>384</td><td>2082</td><td>768</td><td>20</td><td>5.0.0 and 8.0.0</td></tr>
-  <tr><td>db.r6gd.16xlarge</td><td>64</td><td>512</td><td>2776</td><td>1024</td><td>25</td><td>5.0.0 and 8.0.0</td></tr>
-  <tr><td colspan="7">R5 – Previous Generation Memory-Optimized Instance Class</td></tr>
-  <tr><td>db.r5.large</td><td>2</td><td>16</td><td>-</td><td>31</td><td>0.75 / 10</td><td>3.6.0, 4.0.0, 5.0.0, and 8.0.0</td></tr>
-  <tr><td>db.r5.xlarge</td><td>4</td><td>32</td><td>-</td><td>62</td><td>1.25 / 10</td><td>3.6.0, 4.0.0, 5.0.0, and 8.0.0</td></tr>
-  <tr><td>db.r5.2xlarge</td><td>8</td><td>64</td><td>-</td><td>124</td><td>2.5 / 10</td><td>3.6.0, 4.0.0, 5.0.0, and 8.0.0</td></tr>
-  <tr><td>db.r5.4xlarge</td><td>16</td><td>128</td><td>-</td><td>249</td><td>5.0 / 10</td><td>3.6.0, 4.0.0, 5.0.0, and 8.0.0</td></tr>
-  <tr><td>db.r5.8xlarge</td><td>32</td><td>256</td><td>-</td><td>504</td><td>10</td><td>3.6.0, 4.0.0, 5.0.0, and 8.0.0</td></tr>
-  <tr><td>db.r5.12xlarge</td><td>48</td><td>384</td><td>-</td><td>748</td><td>12</td><td>3.6.0, 4.0.0, 5.0.0, and 8.0.0</td></tr>
-  <tr><td>db.r5.16xlarge</td><td>64</td><td>512</td><td>-</td><td>1008</td><td>20</td><td>3.6.0, 4.0.0, 5.0.0, and 8.0.0</td></tr>
-  <tr><td>db.r5.24xlarge</td><td>96</td><td>768</td><td>-</td><td>1500</td><td>25</td><td>3.6.0, 4.0.0, 5.0.0, and 8.0.0</td></tr>
-  <tr><td colspan="7">R4 – Previous Generation Memory-Optimized Instance ClassR4 instances are only supported on engine version 3.6. Note that Amazon DocumentDB 3.6 reaches end of standard support on March 30, 2026. Extended Support (paid) is available until March 2029.</td></tr>
-  <tr><td>db.r4.large</td><td>2</td><td>15.25</td><td>-</td><td>30</td><td>0.75 / 10</td><td>3.6.0 only</td></tr>
-  <tr><td>db.r4.xlarge</td><td>4</td><td>30.5</td><td>-</td><td>60</td><td>1.25 / 10</td><td>3.6.0 only</td></tr>
-  <tr><td>db.r4.2xlarge</td><td>8</td><td>61</td><td>-</td><td>120</td><td>2.5 / 10</td><td>3.6.0 only</td></tr>
-  <tr><td>db.r4.4xlarge</td><td>16</td><td>122</td><td>-</td><td>240</td><td>5.0 /10</td><td>3.6.0 only</td></tr>
-  <tr><td>db.r4.8xlarge</td><td>32</td><td>244</td><td>-</td><td>480</td><td>10</td><td>3.6.0 only</td></tr>
-  <tr><td>db.r4.16xlarge</td><td>64</td><td>488</td><td>-</td><td>960</td><td>25</td><td>3.6.0 only</td></tr>
-  <tr><td colspan="7">T4G – Latest Generation Burstable Performance Instance Classes based on Graviton2T-series instances run in Unlimited CPU burst mode. Burst usage beyond the baseline is billed extra. Not supported for Global Clusters.</td></tr>
-  <tr><td>db.t4g.medium</td><td>2</td><td>4</td><td>-</td><td>8.13</td><td>0.256 / 5</td><td>4.0.0, 5.0.0, and 8.0.0</td></tr>
-  <tr><td colspan="7">T3 – Previous Generation Burstable Performance Instance Classes</td></tr>
-  <tr><td>db.t3.medium</td><td>2</td><td>4</td><td>-</td><td>7.5</td><td>0.256 / 5</td><td>3.6.0, 4.0.0, 5.0.0, and 8.0.0</td></tr>
-  <tr><td colspan="7"> 1.  **vCPU** — The number of virtual central processing units (CPUs). A virtual CPU is a unit of capacity that you can use to compare instance classes. Instead of purchasing or leasing a particular processor to use for several months or years, you are renting capacity by the hour. Our goal is to provide a consistent amount of CPU capacity no matter what the actual underlying hardware.  <br />2.  **Memory (GiB)** — The RAM, in gigabytes, that is allocated to the instance. There is often a consistent ratio between memory and vCPU. <br />3.  **NVMe SSD tiered cache** — The space on the SSD volume, measured in gigabytes, allocated as extended cache for storing ephemeral data. This cache is only available in NVMe-backed instances. <br />4.  **Max. temp. storage (GiB)** — The space, measured in gigabytes, allocated to the instance for non-persistent temporary file storage. For NVMe-backed instances, this storage is hosted on an NVMe-based SSD volume. In all other instances, it is hosted on Amazon Elastic Block Store (EBS). <br />5.  **Baseline / burst bandwidth (Gbps)** — Burst bandwidth represents the maximum bandwidth in gigabits per second. Divide by 8 to get the expected throughput in gigabytes per second. Instances of size 4xlarge and smaller have a baseline bandwidth. To meet additional demand, they can use a network I/O credit mechanism to burst beyond their baseline bandwidth. Instances can use burst bandwidth for a limited time, typically from 5 to 60 minutes, depending on the instance size. <br />6.  **Supporting Engines** — The Amazon DocumentDB engines that support the instance class.  </td></tr>
+  <tr><td colspan="7"><b>R8G – Current Generation Memory-Optimized Instance Class based on Graviton4</b>R8G is the newest instance family (Graviton4), available on engine versions 5.0 and 8.0 only.</td></tr>
+  <tr><td><code>db.r8g.large</code></td><td>2</td><td>16</td><td>-</td><td>30</td><td>0.937 / 12.5</td><td>5.0.0 and 8.0.0</td></tr>
+  <tr><td><code>db.r8g.xlarge</code></td><td>4</td><td>32</td><td>-</td><td>60</td><td>1.875 / 12.5</td><td>5.0.0 and 8.0.0</td></tr>
+  <tr><td><code>db.r8g.2xlarge</code></td><td>8</td><td>64</td><td>-</td><td>121</td><td>3.75 / 15.0</td><td>5.0.0 and 8.0.0</td></tr>
+  <tr><td><code>db.r8g.4xlarge</code></td><td>16</td><td>128</td><td>-</td><td>243</td><td>7.5 / 15.0</td><td>5.0.0 and 8.0.0</td></tr>
+  <tr><td><code>db.r8g.8xlarge</code></td><td>32</td><td>256</td><td>-</td><td>488</td><td>15</td><td>5.0.0 and 8.0.0</td></tr>
+  <tr><td><code>db.r8g.12xlarge</code></td><td>48</td><td>384</td><td>-</td><td>732</td><td>22</td><td>5.0.0 and 8.0.0</td></tr>
+  <tr><td><code>db.r8g.16xlarge</code></td><td>64</td><td>512</td><td>-</td><td>987</td><td>30</td><td>5.0.0 and 8.0.0</td></tr>
+  <tr><td><code>db.r8g.24xlarge</code></td><td>96</td><td>768</td><td>-</td><td>1484</td><td>40</td><td>5.0.0 and 8.0.0</td></tr>
+  <tr><td><code>db.r8g.48xlarge</code></td><td>192</td><td>1536</td><td>-</td><td>2967</td><td>50</td><td>5.0.0 and 8.0.0</td></tr>
+  <tr><td colspan="7"><b>R6G – Current Generation Memory-Optimized Instance Class based on Graviton2</b></td></tr>
+  <tr><td><code>db.r6g.large</code></td><td>2</td><td>16</td><td>-</td><td>32</td><td>0.75 / 10</td><td>4.0.0, 5.0.0, and 8.0.0</td></tr>
+  <tr><td><code>db.r6g.xlarge</code></td><td>4</td><td>32</td><td>-</td><td>63</td><td>1.25 / 10</td><td>4.0.0, 5.0.0, and 8.0.0</td></tr>
+  <tr><td><code>db.r6g.2xlarge</code></td><td>8</td><td>64</td><td>-</td><td>126</td><td>2.5 / 10</td><td>4.0.0, 5.0.0, and 8.0.0</td></tr>
+  <tr><td><code>db.r6g.4xlarge</code></td><td>16</td><td>128</td><td>-</td><td>252</td><td>5.0 / 10</td><td>4.0.0, 5.0.0, and 8.0.0</td></tr>
+  <tr><td><code>db.r6g.8xlarge</code></td><td>32</td><td>256</td><td>-</td><td>504</td><td>12</td><td>4.0.0, 5.0.0, and 8.0.0</td></tr>
+  <tr><td><code>db.r6g.12xlarge</code></td><td>48</td><td>384</td><td>-</td><td>756</td><td>20</td><td>4.0.0, 5.0.0, and 8.0.0</td></tr>
+  <tr><td><code>db.r6g.16xlarge</code></td><td>64</td><td>512</td><td>-</td><td>1008</td><td>25</td><td>4.0.0, 5.0.0, and 8.0.0</td></tr>
+  <tr><td colspan="7"><b>R6GD – Current Generation NVMe-backed Instance Class based on Graviton2</b></td></tr>
+  <tr><td><code>db.r6gd.xlarge</code></td><td>4</td><td>32</td><td>173</td><td>64</td><td>1.25 / 10</td><td>5.0.0 and 8.0.0</td></tr>
+  <tr><td><code>db.r6gd.2xlarge</code></td><td>8</td><td>64</td><td>346</td><td>128</td><td>2.5 / 10</td><td>5.0.0 and 8.0.0</td></tr>
+  <tr><td><code>db.r6gd.4xlarge</code></td><td>16</td><td>128</td><td>694</td><td>256</td><td>5.0 / 10</td><td>5.0.0 and 8.0.0</td></tr>
+  <tr><td><code>db.r6gd.8xlarge</code></td><td>32</td><td>256</td><td>1388</td><td>512</td><td>12</td><td>5.0.0 and 8.0.0</td></tr>
+  <tr><td><code>db.r6gd.12xlarge</code></td><td>48</td><td>384</td><td>2082</td><td>768</td><td>20</td><td>5.0.0 and 8.0.0</td></tr>
+  <tr><td><code>db.r6gd.16xlarge</code></td><td>64</td><td>512</td><td>2776</td><td>1024</td><td>25</td><td>5.0.0 and 8.0.0</td></tr>
+  <tr><td colspan="7"><b>R5 – Previous Generation Memory-Optimized Instance Class</b></td></tr>
+  <tr><td><code>db.r5.large</code></td><td>2</td><td>16</td><td>-</td><td>31</td><td>0.75 / 10</td><td>3.6.0, 4.0.0, 5.0.0, and 8.0.0</td></tr>
+  <tr><td><code>db.r5.xlarge</code></td><td>4</td><td>32</td><td>-</td><td>62</td><td>1.25 / 10</td><td>3.6.0, 4.0.0, 5.0.0, and 8.0.0</td></tr>
+  <tr><td><code>db.r5.2xlarge</code></td><td>8</td><td>64</td><td>-</td><td>124</td><td>2.5 / 10</td><td>3.6.0, 4.0.0, 5.0.0, and 8.0.0</td></tr>
+  <tr><td><code>db.r5.4xlarge</code></td><td>16</td><td>128</td><td>-</td><td>249</td><td>5.0 / 10</td><td>3.6.0, 4.0.0, 5.0.0, and 8.0.0</td></tr>
+  <tr><td><code>db.r5.8xlarge</code></td><td>32</td><td>256</td><td>-</td><td>504</td><td>10</td><td>3.6.0, 4.0.0, 5.0.0, and 8.0.0</td></tr>
+  <tr><td><code>db.r5.12xlarge</code></td><td>48</td><td>384</td><td>-</td><td>748</td><td>12</td><td>3.6.0, 4.0.0, 5.0.0, and 8.0.0</td></tr>
+  <tr><td><code>db.r5.16xlarge</code></td><td>64</td><td>512</td><td>-</td><td>1008</td><td>20</td><td>3.6.0, 4.0.0, 5.0.0, and 8.0.0</td></tr>
+  <tr><td><code>db.r5.24xlarge</code></td><td>96</td><td>768</td><td>-</td><td>1500</td><td>25</td><td>3.6.0, 4.0.0, 5.0.0, and 8.0.0</td></tr>
+  <tr><td colspan="7"><b>R4 – Previous Generation Memory-Optimized Instance Class</b>R4 instances are only supported on engine version 3.6. Note that Amazon DocumentDB 3.6 reaches end of standard support on March 30, 2026. Extended Support (paid) is available until March 2029.</td></tr>
+  <tr><td><code>db.r4.large</code></td><td>2</td><td>15.25</td><td>-</td><td>30</td><td>0.75 / 10</td><td>3.6.0 only</td></tr>
+  <tr><td><code>db.r4.xlarge</code></td><td>4</td><td>30.5</td><td>-</td><td>60</td><td>1.25 / 10</td><td>3.6.0 only</td></tr>
+  <tr><td><code>db.r4.2xlarge</code></td><td>8</td><td>61</td><td>-</td><td>120</td><td>2.5 / 10</td><td>3.6.0 only</td></tr>
+  <tr><td><code>db.r4.4xlarge</code></td><td>16</td><td>122</td><td>-</td><td>240</td><td>5.0 /10</td><td>3.6.0 only</td></tr>
+  <tr><td><code>db.r4.8xlarge</code></td><td>32</td><td>244</td><td>-</td><td>480</td><td>10</td><td>3.6.0 only</td></tr>
+  <tr><td><code>db.r4.16xlarge</code></td><td>64</td><td>488</td><td>-</td><td>960</td><td>25</td><td>3.6.0 only</td></tr>
+  <tr><td colspan="7"><b>T4G – Latest Generation Burstable Performance Instance Classes based on Graviton2</b>T-series instances run in Unlimited CPU burst mode. Burst usage beyond the baseline is billed extra. Not supported for Global Clusters.</td></tr>
+  <tr><td><code>db.t4g.medium</code></td><td>2</td><td>4</td><td>-</td><td>8.13</td><td>0.256 / 5</td><td>4.0.0, 5.0.0, and 8.0.0</td></tr>
+  <tr><td colspan="7"><b>T3 – Previous Generation Burstable Performance Instance Classes</b></td></tr>
+  <tr><td><code>db.t3.medium</code></td><td>2</td><td>4</td><td>-</td><td>7.5</td><td>0.256 / 5</td><td>3.6.0, 4.0.0, 5.0.0, and 8.0.0</td></tr>
+  <tr><td colspan="7"> <ol><li> <b>vCPU</b> — The number of virtual central processing units (CPUs). A virtual CPU is a unit of capacity that you can use to compare instance classes. Instead of purchasing or leasing a particular processor to use for several months or years, you are renting capacity by the hour. Our goal is to provide a consistent amount of CPU capacity no matter what the actual underlying hardware.  </li><li> <b>Memory (GiB)</b> — The RAM, in gigabytes, that is allocated to the instance. There is often a consistent ratio between memory and vCPU. </li><li> <b>NVMe SSD tiered cache</b> — The space on the SSD volume, measured in gigabytes, allocated as extended cache for storing ephemeral data. This cache is only available in NVMe-backed instances. </li><li> <b>Max. temp. storage (GiB)</b> — The space, measured in gigabytes, allocated to the instance for non-persistent temporary file storage. For NVMe-backed instances, this storage is hosted on an NVMe-based SSD volume. In all other instances, it is hosted on Amazon Elastic Block Store (EBS). </li><li> <b>Baseline / burst bandwidth (Gbps)</b> — Burst bandwidth represents the maximum bandwidth in gigabits per second. Divide by 8 to get the expected throughput in gigabytes per second. Instances of size 4xlarge and smaller have a baseline bandwidth. To meet additional demand, they can use a network I/O credit mechanism to burst beyond their baseline bandwidth. Instances can use burst bandwidth for a limited time, typically from 5 to 60 minutes, depending on the instance size. </li><li> <b>Supporting Engines</b> — The Amazon DocumentDB engines that support the instance class. </li></ol> </td></tr>
 </tbody>
 </table>

@@ -10,7 +10,7 @@ As described in the authentication overview (see [Authentication Methods](sig-v4
 A use case scenario for presigned URLs is that you can grant temporary access to your Amazon S3 resources. For example, you can embed a presigned URL on your website or alternatively use it in command line client (such as Curl) to download objects.
 
 **Note**
-You can also use the AWS CLI to create presigned URLs. For more information, see [https://docs.aws.amazon.com/cli/latest/reference/s3/presign.html](https://docs.aws.amazon.com/cli/latest/reference/s3/presign.html) in the *AWS CLI Command Reference*.
+You can also use the AWS CLI to create presigned URLs. For more information, see [`presign`](https://docs.aws.amazon.com/cli/latest/reference/s3/presign.html) in the *AWS CLI Command Reference*.
 
 The following is an example presigned URL.
 

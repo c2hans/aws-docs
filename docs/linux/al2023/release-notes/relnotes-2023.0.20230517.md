@@ -75,8 +75,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.0.20230503 version:** 2.0.1-1.amzn2023.0.2
   - **AL2023.0.20230517 version:** 2.1.0-1.amzn2023.0.1
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
+- ** [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
+  - **RPM:**  [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.0.20230503 version:** 1.70.2-1.amzn2023
   - **AL2023.0.20230517 version:** 1.71.0-1.amzn2023
@@ -125,8 +125,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.0.20230503 version:** 3.0.8-1.amzn2023.0.1
   - **AL2023.0.20230517 version:** 3.0.8-1.amzn2023.0.2
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/perl.html](https://docs.aws.amazon.com/linux/al2023/ug/perl.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/perl.html](https://docs.aws.amazon.com/linux/al2023/ug/perl.html)  / **Architectures:** aarch64, x86\_64
+- ** [`perl`](https://docs.aws.amazon.com/linux/al2023/ug/perl.html) **
+  - **RPM:**  [`perl`](https://docs.aws.amazon.com/linux/al2023/ug/perl.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  perl-Attribute-Handlers  / **Architectures:** noarch
   - **RPM:**  perl-AutoLoader  / **Architectures:** noarch
   - **RPM:**  perl-AutoSplit  / **Architectures:** noarch

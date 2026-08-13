@@ -41,7 +41,7 @@ aws s3tables put-table-bucket-maintenance-configuration \
    --value '{"status":"enabled","settings":{"icebergUnreferencedFileRemoval":{"unreferencedDays":4,"nonCurrentDays":10}}}'
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3tables/put-table-bucket-maintenance-configuration.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3tables/put-table-bucket-maintenance-configuration.html) in the *AWS CLI Command Reference*.
+For more information, see [put-table-bucket-maintenance-configuration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3tables/put-table-bucket-maintenance-configuration.html) in the *AWS CLI Command Reference*.
 
 ## Consideration and limitations
 <a name="s3-tables-buckets-considerations-see-more"></a>

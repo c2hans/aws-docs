@@ -51,13 +51,13 @@ We recommend that you provide a timeout value that is a power-of-two (such as 64
 ## Schedule a downlink message by using the API
 <a name="lorawan-multicast-downlink-api"></a>
 
-To schedule a downlink message by using the API, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartMulticastGroupSession.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartMulticastGroupSession.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/start-multicast-group-session](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/start-multicast-group-session) CLI command.
+To schedule a downlink message by using the API, use the [`StartMulticastGroupSession`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartMulticastGroupSession.html) API operation or the [`start-multicast-group-session`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/start-multicast-group-session) CLI command.
 
 You can use the following API operations or CLI commands to get information about a multicast group and to delete a multicast group.
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetMulticastGroupSession.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetMulticastGroupSession.html) or [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-multicast-group-session](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-multicast-group-session)
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteMulticastGroupSession.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteMulticastGroupSession.html) or [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/delete-multicast-group-session](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/delete-multicast-group-session)
++ [`GetMulticastGroupSession`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetMulticastGroupSession.html) or [`get-multicast-group-session`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-multicast-group-session)
++ [`DeleteMulticastGroupSession`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteMulticastGroupSession.html) or [`delete-multicast-group-session`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/delete-multicast-group-session)
 
-To send data to a multicast group after the session has been started, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_SendDataToMulticastGroup.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_SendDataToMulticastGroup.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/send-data-to-multicast-group](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/send-data-to-multicast-group) CLI command.
+To send data to a multicast group after the session has been started, use the [`SendDataToMulticastGroup`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_SendDataToMulticastGroup.html) API operation or the [`send-data-to-multicast-group`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/send-data-to-multicast-group) CLI command.
 
 ## Next steps
 <a name="lorawan-multicast-downlink-next"></a>
@@ -75,7 +75,7 @@ You can also configure additional downlink messages to be sent to the devices in
   1. In the multicast group details page, choose **Schedule downlink message** and then choose **Configure additional downlink message**.
 
   1. Specify the parameters **Data rate**, **Frequency**, **FPort**, and **Payload**, similar to how you configured these parameters for your first downlink message.
-+ To configure additional downlink messages using the API or CLI, call the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_SendDataToMulticastGroup.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_SendDataToMulticastGroup.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/send-data-to-multicast-group](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/send-data-to-multicast-group) CLI command for each additional downlink message.
++ To configure additional downlink messages using the API or CLI, call the [`SendDataToMulticastGroup`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_SendDataToMulticastGroup.html) API operation or the [`send-data-to-multicast-group`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/send-data-to-multicast-group) CLI command for each additional downlink message.
 
 ### Update session schedule
 <a name="lorawan-multicast-downlink-update"></a>
@@ -91,4 +91,4 @@ Update your multicast session only when required. These updates can cause a grou
   1. In the multicast group details page, choose **Schedule downlink message** and then choose **Update session schedule**.
 
   1. Specify the parameters **State date**, **Start time**, and **Session timeout**, similar to how you specified these parameters for your first downlink message.
-+ To update the session schedule from the API or CLI, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartMulticastGroupSession.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartMulticastGroupSession.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/start-multicast-group-session](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/start-multicast-group-session) CLI command.
++ To update the session schedule from the API or CLI, use the [`StartMulticastGroupSession`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartMulticastGroupSession.html) API operation or the [`start-multicast-group-session`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/start-multicast-group-session) CLI command.

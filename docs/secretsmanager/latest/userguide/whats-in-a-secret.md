@@ -57,7 +57,7 @@ Secrets Manager doesn't store a linear history of secrets with versions. Instead
 
 A secret always has a version labeled `AWSCURRENT`, and Secrets Manager returns that version by default when you retrieve the secret value.
 
-You can also label versions with your own labels by calling [https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/update-secret-version-stage.html](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/update-secret-version-stage.html) in the AWS CLI. You can attach up to 20 labels to versions in a secret. Two versions of a secret can't have the same staging label. Versions can have multiple labels.
+You can also label versions with your own labels by calling [`update-secret-version-stage`](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/update-secret-version-stage.html) in the AWS CLI. You can attach up to 20 labels to versions in a secret. Two versions of a secret can't have the same staging label. Versions can have multiple labels.
 
 Secrets Manager never removes labeled versions, but unlabeled versions are considered deprecated. Secrets Manager removes deprecated versions when there are more than 100. Secrets Manager doesn't remove versions created less than 24 hours ago.
 

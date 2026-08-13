@@ -13,7 +13,7 @@ A CloudTrail log file includes information about the requested API operation, th
 ## CloudTrail data event log file examples for directory buckets
 <a name="example-ct-log-s3express"></a>
 
-The following example shows a CloudTrail log file example that demonstrates [https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateSession.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateSession.html).
+The following example shows a CloudTrail log file example that demonstrates [CreateSession](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateSession.html).
 
 ```
     {
@@ -94,7 +94,7 @@ The following example shows a CloudTrail log file example that demonstrates [htt
 
 To use Zonal endpoint API operations (object-level, or data plane, operations), you can use the `CreateSession` API operation to create and manage sessions that are optimized for low-latency authorization of data requests. You can also use `CreateSession` to reduce the amount of logging. To identify which Zonal API operations were performed during a session, you can match the `accessKeyId` under the `responseElements` in your `CreateSession` log file to the `accessKeyId` in the log file of other Zonal API operations. For more information, see [`CreateSession` authorization](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-create-session.html).
 
-The following example shows a CloudTrail log file example that demonstrates the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) API operation that was authenticated by `CreateSession`.
+The following example shows a CloudTrail log file example that demonstrates the [`GetObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) API operation that was authenticated by `CreateSession`.
 
 ```
     {
@@ -162,7 +162,7 @@ The following example shows a CloudTrail log file example that demonstrates the 
 
  In the `GetObject` log file example above, the `accessKeyId`(AKIAI44QH8DHBEXAMPLE) matches the `accessKeyId` under the `responseElements` in the CreateSession log file example. The matching `accessKeyId` indicates the session in which `GetObject` operation was performed.
 
-The following example shows a CloudTrail log entry that demonstrates a `DeleteObjects` action on a directory bucket, invoked by S3 Lifecycle. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-objects-lifecycle.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-objects-lifecycle.html).
+The following example shows a CloudTrail log entry that demonstrates a `DeleteObjects` action on a directory bucket, invoked by S3 Lifecycle. For more information, see [Working with S3 Lifecycle for directory buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-objects-lifecycle.html).
 
 ```
 eventVersion:"1.09",
@@ -222,7 +222,7 @@ eventVersion:"1.09",
 }
 ```
 
-The following example shows a CloudTrail log entry that demonstrates an `Access Denied` request on a `CreateSession` action invoked by S3 Lifecycle. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateSession.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateSession.html).
+The following example shows a CloudTrail log entry that demonstrates an `Access Denied` request on a `CreateSession` action invoked by S3 Lifecycle. For more information, see [CreateSession](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateSession.html).
 
 ```
 {

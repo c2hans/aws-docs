@@ -25,14 +25,14 @@ When configuring filter policies in Amazon SNS, follow these important rules to 
 + The maximum size of a filter policy is **256 KB**.
 + By default, you can have up to **200** filter policies per topic, and **10,000** filter policies per AWS account.
 
-  This policy limit won't stop Amazon SQS queue subscriptions from being created with the [https://docs.aws.amazon.com/sns/latest/api/API_Subscribe.html](https://docs.aws.amazon.com/sns/latest/api/API_Subscribe.html) API. However, it will fail when you attach the filter policy in the `Subscribe` API call (or the [https://docs.aws.amazon.com/sns/latest/api/API_SetSubscriptionAttributes.html](https://docs.aws.amazon.com/sns/latest/api/API_SetSubscriptionAttributes.html) API call).
+  This policy limit won't stop Amazon SQS queue subscriptions from being created with the [`Subscribe`](https://docs.aws.amazon.com/sns/latest/api/API_Subscribe.html) API. However, it will fail when you attach the filter policy in the `Subscribe` API call (or the [`SetSubscriptionAttributes`](https://docs.aws.amazon.com/sns/latest/api/API_SetSubscriptionAttributes.html) API call).
 
   To increase this quota, you can use [AWS Service Quotas](https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html).
 
 ## Policy constraints for attribute-based filtering
 <a name="subscription-filter-policy-attribute-constraints"></a>
 
-Attribute-based filtering is the default option. [https://docs.aws.amazon.com/sns/latest/api/API_SetSubscriptionAttributes.html#API_SetSubscriptionAttributes_RequestParameters](https://docs.aws.amazon.com/sns/latest/api/API_SetSubscriptionAttributes.html#API_SetSubscriptionAttributes_RequestParameters) is set to `MessageAttributes` in the subscription.
+Attribute-based filtering is the default option. [`FilterPolicyScope`](https://docs.aws.amazon.com/sns/latest/api/API_SetSubscriptionAttributes.html#API_SetSubscriptionAttributes_RequestParameters) is set to `MessageAttributes` in the subscription.
 + Amazon SNS doesn't accept a nested filter policy for attribute-based filtering.
 + Amazon SNS compares policy properties only to message attributes that have the following data types:
   + `String`
@@ -72,7 +72,7 @@ x 2(match operators of key_c)
 ## Policy constraints for payload-based filtering
 <a name="subscription-filter-policy-payload-constraints"></a>
 
-To switch from attribute-based (default) to payload-based filtering, you must set the [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeprovisionIpamPoolCidr.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeprovisionIpamPoolCidr.html) to `MessageBody` in the subscription.
+To switch from attribute-based (default) to payload-based filtering, you must set the [`FilterPolicyScope`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeprovisionIpamPoolCidr.html) to `MessageBody` in the subscription.
 + Amazon SNS accepts a nested filter policy for payload-based filtering.
 + For a nested policy, only **leaf keys** are counted towards the **five** key limit.
 

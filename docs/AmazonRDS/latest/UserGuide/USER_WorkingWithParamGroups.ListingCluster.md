@@ -24,7 +24,7 @@ Default parameter groups are automatically created from a default parameter temp
 ## AWS CLI
 <a name="USER_WorkingWithParamGroups.ListingCluster.CLI"></a>
 
-To list all DB cluster parameter groups for an AWS account, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-clusterparameter-groups.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-clusterparameter-groups.html) command.
+To list all DB cluster parameter groups for an AWS account, use the AWS CLI [`describe-db-cluster-parameter-groups`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-clusterparameter-groups.html) command.
 
 **Example**
 The following example lists all available DB cluster parameter groups for an AWS account.
@@ -63,4 +63,4 @@ The command returns a response like the following:
 ## RDS API
 <a name="USER_WorkingWithParamGroups.ListingCluster.API"></a>
 
-To list all DB cluster parameter groups for an AWS account, use the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBClusterParameterGroups.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBClusterParameterGroups.html) action.
+To list all DB cluster parameter groups for an AWS account, use the RDS API [`DescribeDBClusterParameterGroups`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBClusterParameterGroups.html) action.

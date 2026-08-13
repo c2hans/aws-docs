@@ -51,4 +51,4 @@ For more information about creating customer managed keys and using key policies
 +  [Create a KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html)
 +  [Key policies in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html)
 
-You can also use the AWS KMS `PUT` key policy API operation ([https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy.html)) to copy the key policy to the customer managed keys that you want to use to encrypt the metrics exports by using the REST API, AWS CLI, and SDKs.
+You can also use the AWS KMS `PUT` key policy API operation ([PutKeyPolicy](https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy.html)) to copy the key policy to the customer managed keys that you want to use to encrypt the metrics exports by using the REST API, AWS CLI, and SDKs.

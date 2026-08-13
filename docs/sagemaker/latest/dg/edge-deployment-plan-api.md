@@ -17,7 +17,7 @@ To use the Edge Manager deployment API first compile and package your model. For
 ## Create an edge deployment plan
 <a name="create-edge-deployment-plan"></a>
 
-You can create an edge deployment plan with the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEdgeDeploymentPlan.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEdgeDeploymentPlan.html) API. The deployment plan can have multiple stages. You can configure each stage to rollout the deployment to a subset of edge devices (by percentage, or by device name). You can also configure how rollout failures are handled at each stage.
+You can create an edge deployment plan with the [`CreateEdgeDeploymentPlan`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEdgeDeploymentPlan.html) API. The deployment plan can have multiple stages. You can configure each stage to rollout the deployment to a subset of edge devices (by percentage, or by device name). You can also configure how rollout failures are handled at each stage.
 
 The following code snippet shows how you can create an edge deployment plan with 1 stage to deploy a compiled and package model to 2 specific edge devices:
 
@@ -57,7 +57,7 @@ Stages can be added after the deployment plan has been created with the [CreateE
 ## Start the edge deployment
 <a name="start-edge-deployment-stage"></a>
 
-After creating the deployment plan and the deployment stages, you can start the deployment with the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartEdgeDeploymentStage.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartEdgeDeploymentStage.html) API.
+After creating the deployment plan and the deployment stages, you can start the deployment with the [`StartEdgeDeploymentStage`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartEdgeDeploymentStage.html) API.
 
 ```
 client.start_edge_deployment_stage(

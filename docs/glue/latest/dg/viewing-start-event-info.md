@@ -34,5 +34,5 @@ For workflows with a batch size greater than one, you can also see which batch c
   `batched_events` will be a list of strings, where each string is an event ID.
 
 **See also**
-[https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html](https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html)
+[*Amazon EventBridge User Guide*](https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html)
 [Overview of workflows in AWS Glue](workflows_overview.md)

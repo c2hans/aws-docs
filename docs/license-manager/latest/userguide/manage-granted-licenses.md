@@ -80,14 +80,14 @@ If you don't want to continue using a license that was activated, you can return
 You can use the AWS CLI to work with your granted licenses.
 
 **To manage your granted licenses using the AWS CLI:**
-+ [https://docs.aws.amazon.com/cli/latest/reference/license-manager/accept-grant.html](https://docs.aws.amazon.com/cli/latest/reference/license-manager/accept-grant.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/license-manager/create-grant-version.html](https://docs.aws.amazon.com/cli/latest/reference/license-manager/create-grant-version.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/license-manager/get-grant.html](https://docs.aws.amazon.com/cli/latest/reference/license-manager/get-grant.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-licenses.html](https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-licenses.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-received-grants.html](https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-received-grants.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-received-grants-for-organization.html](https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-received-grants-for-organization.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-received-licenses.html](https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-received-licenses.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-received-licenses-for-organization.html](https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-received-licenses-for-organization.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/license-manager/reject-grant.html](https://docs.aws.amazon.com/cli/latest/reference/license-manager/reject-grant.html)
++ [accept-grant](https://docs.aws.amazon.com/cli/latest/reference/license-manager/accept-grant.html)
++ [create-grant-version](https://docs.aws.amazon.com/cli/latest/reference/license-manager/create-grant-version.html)
++ [get-grant](https://docs.aws.amazon.com/cli/latest/reference/license-manager/get-grant.html)
++ [list-licenses](https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-licenses.html)
++ [list-received-grants](https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-received-grants.html)
++ [list-received-grants-for-organization](https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-received-grants-for-organization.html)
++ [list-received-licenses](https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-received-licenses.html)
++ [list-received-licenses-for-organization](https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-received-licenses-for-organization.html)
++ [reject-grant](https://docs.aws.amazon.com/cli/latest/reference/license-manager/reject-grant.html)
 
 ------

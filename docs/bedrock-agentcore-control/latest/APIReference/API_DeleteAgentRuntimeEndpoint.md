@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 # DeleteAgentRuntimeEndpoint
 <a name="API_DeleteAgentRuntimeEndpoint"></a>
 
-Deletes an AAgentCore Runtime endpoint.
+Deletes an AgentCore Runtime endpoint.
 
 ## Request Syntax
 <a name="API_DeleteAgentRuntimeEndpoint_RequestSyntax"></a>

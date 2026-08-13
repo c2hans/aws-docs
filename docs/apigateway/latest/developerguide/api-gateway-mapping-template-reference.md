@@ -50,7 +50,7 @@ You can use the following case-sensitive `$context` variables for data transform
 |  $context.identity.vpcId | The VPC ID of the VPC making the request to the API Gateway endpoint. |
 |  $context.identity.vpceId | The VPC endpoint ID of the VPC endpoint making the request to the API Gateway endpoint. Present only when you have a private API. |
 | $context.identity.user | The principal identifier of the user that will be authorized against resource access. Supported for resources that use IAM authorization. |
-| $context.identity.userAgent | The [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) header of the API caller. |
+| $context.identity.userAgent | The [`User-Agent`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) header of the API caller. |
 | $context.identity.userArn | The Amazon Resource Name (ARN) of the effective user identified after authentication. For more information, see [https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html). |
 | $context.isCanaryRequest | Returns `true` if the request was directed to the canary and `false` if the request was not directed to the canary. Present only when you have a canary enabled. |
 | $context.path | The request path. For example, for a non-proxy request URL of https://{rest-api-id}.execute-api.{region}.amazonaws.com/{stage}/root/child, the $context.path value is /{stage}/root/child.  |

@@ -234,7 +234,7 @@ Migrating users from MongoDB to Amazon DocumentDB is essential for maintaining a
 ### Using Amazon DocumentDB export users tool
 <a name="w2aac15b9c19b5"></a>
 
-The [https://github.com/awslabs/amazon-documentdb-tools/tree/master/migration/export-users](https://github.com/awslabs/amazon-documentdb-tools/tree/master/migration/export-users) exports users and roles from MongoDB or Amazon DocumentDB to JavaScript files, which can then be used to recreate them in another cluster.
+The [`Export Users tool`](https://github.com/awslabs/amazon-documentdb-tools/tree/master/migration/export-users) exports users and roles from MongoDB or Amazon DocumentDB to JavaScript files, which can then be used to recreate them in another cluster.
 
 **Prerequisites**
 

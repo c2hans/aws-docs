@@ -15,7 +15,7 @@ We recommend that you add the Slack workspaces and channels that you need to man
 
 **To authorize the Slack workspace for your AWS account**
 
-1. Sign in to the [https://console.aws.amazon.com/support/app](https://console.aws.amazon.com/support/app) and choose **Slack configuration**.
+1. Sign in to the [**AWS Support Center Console**](https://console.aws.amazon.com/support/app) and choose **Slack configuration**.
 
 1. On the **Getting started** page, choose **Authorize workspace**.
 
@@ -58,13 +58,13 @@ If you prefer not to use AWS CloudFormation templates, you can manually authoriz
 
 1. In the management account (the account where you created the Slack workspace), authorize the Slack workspace. For more information, see the procedure in [Authorize a Slack workspace](#authorize-slack-workspace).
 
-1. In each member account, call the [https://docs.aws.amazon.com/supportapp/latest/APIReference/API_RegisterSlackWorkspaceForOrganization.html](https://docs.aws.amazon.com/supportapp/latest/APIReference/API_RegisterSlackWorkspaceForOrganization.html) API operation to register the Slack workspace for that account.
+1. In each member account, call the [`RegisterSlackWorkspaceForOrganization`](https://docs.aws.amazon.com/supportapp/latest/APIReference/API_RegisterSlackWorkspaceForOrganization.html) API operation to register the Slack workspace for that account.
 
    This operation adds the member account to the Slack workspace that was authorized by the management account.
 
 1. In each member account, create an IAM role with the required permissions for the AWS Support App. For more information, see [Managing access to the AWS Support App](support-app-permissions.md).
 
-1. In each member account, call the [https://docs.aws.amazon.com/supportapp/latest/APIReference/API_CreateSlackChannelConfiguration.html](https://docs.aws.amazon.com/supportapp/latest/APIReference/API_CreateSlackChannelConfiguration.html) API operation to configure a Slack channel for that account.
+1. In each member account, call the [`CreateSlackChannelConfiguration`](https://docs.aws.amazon.com/supportapp/latest/APIReference/API_CreateSlackChannelConfiguration.html) API operation to configure a Slack channel for that account.
 
    This operation associates the Slack channel with the member account and specifies the IAM role that the AWS Support App uses to call AWS Support and Service Quotas operations.
 

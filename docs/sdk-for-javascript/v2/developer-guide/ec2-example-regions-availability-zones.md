@@ -18,8 +18,8 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 Amazon EC2 is hosted in multiple locations worldwide. These locations are composed of Regions and Availability Zones. Each Region is a separate geographic area. Each Region has multiple, isolated locations known as *Availability Zones*. Amazon EC2 provides the ability to place instances and data in multiple locations.
 
 In this example, you use a series of Node.js modules to retrieve details about Regions and Availability Zones. The Node.js modules use the SDK for JavaScript to manage instances by using the following methods of the Amazon EC2 client class:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#describeAvailabilityZones-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#describeAvailabilityZones-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#describeRegions-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#describeRegions-property)
++ [`describeAvailabilityZones`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#describeAvailabilityZones-property)
++ [`describeRegions`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#describeRegions-property)
 
 For more information about Regions and Availability Zones, see [Regions and Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) in the *Amazon EC2 User Guide* or [Regions and Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/using-regions-availability-zones.html) in the *Amazon EC2 User Guide*.
 

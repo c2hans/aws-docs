@@ -44,10 +44,10 @@ The following includes a Task state that starts an Athena query.
 
 ## Optimized Amazon Athena APIs:
 <a name="connect-athena-api"></a>
-+ [https://docs.aws.amazon.com/athena/latest/APIReference/API_StartQueryExecution.html](https://docs.aws.amazon.com/athena/latest/APIReference/API_StartQueryExecution.html)
-+ [https://docs.aws.amazon.com/athena/latest/APIReference/API_StopQueryExecution.html](https://docs.aws.amazon.com/athena/latest/APIReference/API_StopQueryExecution.html)
-+ [https://docs.aws.amazon.com/athena/latest/APIReference/API_GetQueryExecution.html](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetQueryExecution.html)
-+ [https://docs.aws.amazon.com/athena/latest/APIReference/API_GetQueryResults.html](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetQueryResults.html)
++ [`StartQueryExecution`](https://docs.aws.amazon.com/athena/latest/APIReference/API_StartQueryExecution.html)
++ [`StopQueryExecution`](https://docs.aws.amazon.com/athena/latest/APIReference/API_StopQueryExecution.html)
++ [`GetQueryExecution`](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetQueryExecution.html)
++ [`GetQueryResults`](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetQueryResults.html)
 
 **Quota for input or result data**
 When sending or receiving data between services, the maximum input or result for a task is 256 KiB of data as a UTF-8 encoded string. See [Quotas related to state machine executions](service-quotas.md#service-limits-state-machine-executions).

@@ -52,7 +52,7 @@ For all AWS Regions launched after March 20, 2019 you need to specify the `endpo
 aws s3 presign s3://{{amzn-s3-demo-bucket}}/{{mydoc.txt}} --expires-in {{604800}} --region {{af-south-1}} --endpoint-url {{https://s3.af-south-1.amazonaws.com}}
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/presign.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/presign.html) in the *AWS CLI Command Reference*.
+For more information, see [presign](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/presign.html) in the *AWS CLI Command Reference*.
 
 ## Using the AWS SDKs
 <a name="ShareObjectPreSignedURLSDK"></a>

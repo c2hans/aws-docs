@@ -16,10 +16,10 @@ For more information, including examples, see [Get a Secrets Manager secret valu
 Default constructor for a `SecretCache` object.
 
 `public SecretCache(AWSSecretsManagerClientBuilder builder)`
-Constructs a new cache using a Secrets Manager client created using the provided [https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClientBuilder.html](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClientBuilder.html). Use this constructor to customize the Secrets Manager client, for example to use a specific Region or endpoint.
+Constructs a new cache using a Secrets Manager client created using the provided [`AWSSecretsManagerClientBuilder`](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClientBuilder.html). Use this constructor to customize the Secrets Manager client, for example to use a specific Region or endpoint.
 
 `public SecretCache(AWSSecretsManager client)`
-Constructs a new secret cache using the provided [https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html). Use this constructor to customize the Secrets Manager client, for example to use a specific Region or endpoint.
+Constructs a new secret cache using the provided [`AWSSecretsManagerClient`](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/secretsmanager/AWSSecretsManagerClient.html). Use this constructor to customize the Secrets Manager client, for example to use a specific Region or endpoint.
 
 `public SecretCache(SecretCacheConfiguration config)`
 Constructs a new secret cache using the provided `SecretCacheConfiguration`.
@@ -32,14 +32,14 @@ Constructs a new secret cache using the provided `SecretCacheConfiguration`.
 
 `public String getSecretString(final String secretId)`
 
-Retrieves a string secret from Secrets Manager. Returns a [https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true).
+Retrieves a string secret from Secrets Manager. Returns a [`String`](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true).
 
 ### getSecretBinary
 <a name="retrieving-secrets_cache-java-ref_SecretCache-methods-getSecretBinary"></a>
 
 `public ByteBuffer getSecretBinary(final String secretId)`
 
-Retrieves a binary secret from Secrets Manager. Returns a [https://docs.oracle.com/javase/7/docs/api/java/nio/ByteBuffer.html](https://docs.oracle.com/javase/7/docs/api/java/nio/ByteBuffer.html).
+Retrieves a binary secret from Secrets Manager. Returns a [`ByteBuffer`](https://docs.oracle.com/javase/7/docs/api/java/nio/ByteBuffer.html).
 
 ### refreshNow
 <a name="retrieving-secrets_cache-java-ref_SecretCache-methods-refreshNow"></a>

@@ -17,7 +17,7 @@ For data protection purposes, we recommend that you protect AWS account credenti
 
 We strongly recommend that you never put confidential or sensitive information, such as your customers' email addresses, into tags or free-form text fields such as a **Name** field. This includes when you work with or other AWS services using the console, API, AWS CLI, or AWS SDKs. Any data that you enter into tags or free-form text fields used for names may be used for billing or diagnostic logs. If you provide a URL to an external server, we strongly recommend that you do not include credentials information in the URL to validate your request to that server.
 
-As an additional security step, you can use the [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-calledvia](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-calledvia) global condition context key to limit requests to only those made from Athena. For more information, see [Use CalledVia context keys for Athena](security-iam-athena-calledvia.md).
+As an additional security step, you can use the [aws:CalledVia](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-calledvia) global condition context key to limit requests to only those made from Athena. For more information, see [Use CalledVia context keys for Athena](security-iam-athena-calledvia.md).
 
 ## Protect multiple types of data
 <a name="security-data-protection-types-of-data"></a>

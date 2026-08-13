@@ -37,7 +37,7 @@ Interface endpoints are compatible with gateway endpoints. If you have an existi
 <tbody>
   <tr><td colspan="2">In both cases, your network traffic remains on the AWS network.</td></tr>
   <tr><td>Use Amazon S3 public IP addresses</td><td>Use private IP addresses from your VPC to access Amazon S3</td></tr>
-  <tr><td>Use the same Amazon S3 DNS names</td><td>[Require endpoint-specific Amazon S3 DNS names](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html#accessing-s3-interface-endpoints)</td></tr>
+  <tr><td>Use the same Amazon S3 DNS names</td><td><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html#accessing-s3-interface-endpoints">Require endpoint-specific Amazon S3 DNS names</a></td></tr>
   <tr><td>Do not allow access from on premises</td><td>Allow access from on premises</td></tr>
   <tr><td>Do not allow access from another AWS Region</td><td>Allow access from a VPC in another AWS Region by using VPC peering or AWS Transit Gateway</td></tr>
   <tr><td>Not billed</td><td>Billed</td></tr>
@@ -56,7 +56,7 @@ Interface endpoints for Amazon S3 does not support the following:
 + [Website endpoints](WebsiteEndpoints.md)
 + [Legacy global endpoints](VirtualHosting.md#deprecated-global-endpoint)
 + [S3 dash Region endpoints ](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html)
-+ Using [https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html) or [https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPartCopy.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPartCopy.html) between buckets in different AWS Regions
++ Using [CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html) or [UploadPartCopy](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPartCopy.html) between buckets in different AWS Regions
 + Transport Layer Security (TLS) 1.0
 + Transport Layer Security (TLS) 1.1
 + Transport Layer Security (TLS) 1.3

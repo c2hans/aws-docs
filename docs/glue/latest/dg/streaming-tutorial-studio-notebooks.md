@@ -31,7 +31,7 @@ If you have already completed our previous [Tutorial: Build your first streaming
 
 You can synthetically generate sample data in JSON format using the Kinesis Data Generator (KDG). You can find full instructions and details in the [tool documentation](https://awslabs.github.io/amazon-kinesis-data-generator/web/help.html).
 
-1. To get started, click [https://aws-data-analytics-workshops.s3.amazonaws.com/aws_glue/aws_glue_streaming/docs/glue-stream.yaml](https://aws-data-analytics-workshops.s3.amazonaws.com/aws_glue/aws_glue_streaming/docs/glue-stream.yaml) to run an AWS CloudFormation template on your AWS environment.
+1. To get started, click [![Orange button labeled "Launch Stack" with an arrow icon.](http://docs.aws.amazon.com/glue/latest/dg/images/cloudformation-launch-stack-button.png)](https://aws-data-analytics-workshops.s3.amazonaws.com/aws_glue/aws_glue_streaming/docs/glue-stream.yaml) to run an AWS CloudFormation template on your AWS environment.
 **Note**
 You may encounter a CloudFormation template failure because some resources, such as the Amazon Cognito user for Kinesis Data Generator already exist in your AWS account. This could be because you already set that up from another tutorial or blog. To address this, you can either try the template in a new AWS account for a fresh start, or explore a different AWS Region. These options let you run the tutorial without conflicting with existing resources.
 

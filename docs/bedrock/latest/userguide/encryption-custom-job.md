@@ -9,7 +9,7 @@ Amazon Bedrock uses your training data with the [CreateModelCustomizationJob](ht
 
 Amazon Bedrock uses the fine tuning data you provide only for fine tuning an Amazon Bedrock foundation model. Amazon Bedrock doesn't use fine tuning data for any other purpose. Your training data isn't used to train the base Titan models or distributed to third parties. Other usage data, such as usage timestamps, logged account IDs, and other information logged by the service, is also not used to train the models.
 
-None of the training or validation data you provide for fine tuning is stored by Amazon Bedrock, once the fine tuning job completes.
+None of the training or validation data you provide for fine tuning is stored by Amazon Bedrock, after the fine-tuning job completes.
 
 Note that fine-tuned models can replay some of the fine tuning data while generating completions. If your app should not expose fine tuning data in any form, then you should first filter out confidential data from your training data. If you already created a customized model using confidential data by mistake, you can delete that custom model, filter out confidential information from the training data, and then create a new model.
 
@@ -47,7 +47,7 @@ You have full access to your customer managed AWS KMS key. You can revoke access
 ### Life cycle of primary and secondary grants for custom models
 <a name="encryption-primary-secondary-grants"></a>
 + **Primary grants** have a long lifespan and remain active as long as the associated custom models are still in use. When a custom model is deleted, the corresponding primary grant is automatically retired.
-+ **Secondary grants** are short-lived. They are automatically retired as soon as the operation that Amazon Bedrock performs on behalf of the customers is completed. For example, once a model copy job is finished, the secondary grant that allowed Amazon Bedrock to encrypt the copied custom model will be retired immediately.
++ **Secondary grants** are short-lived. They are automatically retired as soon as the operation that Amazon Bedrock performs on behalf of the customers is completed. For example, after a model copy job is finished, the secondary grant that allowed Amazon Bedrock to encrypt the copied custom model will be retired immediately.
 
 ## Understand how to create a customer managed key and how to attach a key policy to it
 <a name="encryption-key-policy"></a>

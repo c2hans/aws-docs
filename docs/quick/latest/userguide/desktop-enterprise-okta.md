@@ -29,7 +29,7 @@ Before you begin, review the prerequisites in [Setting up Amazon Quick on deskto
 ## Step 1: Create an OIDC application in Okta
 <a name="desktop-enterprise-okta-step1"></a>
 
-Register an OIDC native application in Okta. The Amazon Quick desktop application uses this client to authenticate users through the authorization code flow with PKCE. This client requires no client secret. Enable the Refresh Token grant type and grant the `offline_access` scope so that the application can maintain long-lived sessions.
+Register an OIDC native application in Okta. The Amazon Quick desktop application uses this client to authenticate users through the authorization code flow with PKCE, and requests the `openid`, `profile`, `email`, and `offline_access` scopes at sign-in.
 
 For more information, see [Create OpenID Connect app integrations](https://help.okta.com/en-us/content/topics/apps/apps_app_integration_wizard_oidc.htm) in the Okta documentation.
 
@@ -50,14 +50,6 @@ For more information, see [Create OpenID Connect app integrations](https://help.
 
 Okta enforces PKCE (S256) automatically for native applications.
 
-**To configure scopes**
-
-1. In the Okta Admin Console, navigate to **Security → API → Authorization Servers** and select your authorization server (for example, **default**).
-
-1. On the **Scopes** tab, verify that the following scopes are enabled: `openid`, `email`, `profile`, `offline_access`.
-
-1. On the **Access Policies** tab, verify that the policy assigned to this application allows the `Authorization Code` and `Refresh Token` grant types.
-
 **To verify authentication settings**
 
 1. In the app integration, go to the **General** tab.
@@ -68,15 +60,18 @@ Okta enforces PKCE (S256) automatically for native applications.
 
 1. Choose **Save** if you made any changes.
 
-Record the following OIDC endpoints. You enter these values, together with the **Client ID** you noted earlier, in Step 2. Replace `<OKTA_DOMAIN>` with your Okta domain (for example, `your-org.okta.com`).
+Record the following OIDC endpoints. You enter these values, together with the **Client ID** you noted earlier, in Step 2. Replace `<OKTA_DOMAIN>` with your Okta domain (for example, `your-org.okta.com`). For the endpoint reference, see [Authorization Code with PKCE](https://developer.okta.com/docs/guides/implement-grant-type/authcodepkce/main/) in the Okta documentation.
 
 | Field | Value |
 | --- | --- |
 | Client ID | The Client ID from the General tab |
-| Issuer URL | https://<OKTA\_DOMAIN>/oauth2/default |
-| Authorization endpoint | https://<OKTA\_DOMAIN>/oauth2/default/v1/authorize |
-| Token endpoint | https://<OKTA\_DOMAIN>/oauth2/default/v1/token |
-| JWKS URI | https://<OKTA\_DOMAIN>/oauth2/default/v1/keys |
+| Issuer URL | https://<OKTA\_DOMAIN> |
+| Authorization endpoint | https://<OKTA\_DOMAIN>/oauth2/v1/authorize |
+| Token endpoint | https://<OKTA\_DOMAIN>/oauth2/v1/token |
+| JWKS URI | https://<OKTA\_DOMAIN>/oauth2/v1/keys |
+
+**Use the standard Okta domain, not the admin subdomain**
+Use your standard Okta domain (for example, `your-org.okta.com`) in these endpoints, not the `-admin` subdomain (`your-org-admin.okta.com`) shown in the address bar of the admin console. The `-admin` subdomain does not host the OAuth endpoints, so using it causes sign-in to fail with an HTTP 404 error.
 
 ## Step 2: Add the extension access in the Amazon Quick administration console
 <a name="w2aac51c11c23c15"></a>

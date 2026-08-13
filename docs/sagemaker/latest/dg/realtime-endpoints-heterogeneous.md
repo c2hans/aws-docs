@@ -135,9 +135,9 @@ These dimensions are available for both standard CloudWatch metrics and enhanced
 ### Check fleet distribution
 <a name="heterogeneous-observability-distribution"></a>
 
-To see the current instance count for each pool, call the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeEndpoint.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeEndpoint.html) API. The `ProductionVariants` in the response include an `InstancePools` list with the current count for each instance type. This shows your fleet composition after provisioning, including any fallback instances from lower-priority pools.
+To see the current instance count for each pool, call the [`DescribeEndpoint`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeEndpoint.html) API. The `ProductionVariants` in the response include an `InstancePools` list with the current count for each instance type. This shows your fleet composition after provisioning, including any fallback instances from lower-priority pools.
 
-If you use inference components, the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeInferenceComponent.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeInferenceComponent.html) response includes a `PlacementStatus` field in the runtime configuration summary that shows the copy count per instance type. Use this to understand how inference component copies are distributed across the instance types in your fleet.
+If you use inference components, the [`DescribeInferenceComponent`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeInferenceComponent.html) response includes a `PlacementStatus` field in the runtime configuration summary that shows the copy count per instance type. Use this to understand how inference component copies are distributed across the instance types in your fleet.
 
 ## Auto-scaling with instance pools
 <a name="heterogeneous-endpoint-autoscaling"></a>

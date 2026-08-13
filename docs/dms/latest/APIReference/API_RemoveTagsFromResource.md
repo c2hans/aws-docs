@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_RemoveTagsFr
 # RemoveTagsFromResource
 <a name="API_RemoveTagsFromResource"></a>
 
-Removes metadata tags from an AWS DMS resource, including replication instance, endpoint, subnet group, and migration task. For more information, see [https://docs.aws.amazon.com/dms/latest/APIReference/API_Tag.html](https://docs.aws.amazon.com/dms/latest/APIReference/API_Tag.html) data type description.
+Removes metadata tags from an AWS DMS resource, including replication instance, endpoint, subnet group, and migration task. For more information, see [`Tag`](https://docs.aws.amazon.com/dms/latest/APIReference/API_Tag.html) data type description.
 
 ## Request Syntax
 <a name="API_RemoveTagsFromResource_RequestSyntax"></a>

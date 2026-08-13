@@ -13,7 +13,7 @@ For information about connecting your hardware platform and setting it up, see [
 ## Send downlink messages to your end device
 <a name="iot-sidewalk-downlink-message"></a>
 
-Use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_SendDataToWirelessDevice.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_SendDataToWirelessDevice.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/send-data-to-wireless-device.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/send-data-to-wireless-device.html) CLI command to send downlink messages from AWS IoT Core for Amazon Sidewalk to your Sidewalk end device. Following shows an example of how to run this command. The payload data is the binary to be sent, encoded in base64.
+Use the [`SendDataToWirelessDevice`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_SendDataToWirelessDevice.html) API operation or the [`send-data-to-wireless-device`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/send-data-to-wireless-device.html) CLI command to send downlink messages from AWS IoT Core for Amazon Sidewalk to your Sidewalk end device. Following shows an example of how to run this command. The payload data is the binary to be sent, encoded in base64.
 
 ```
 aws iotwireless send-data-to-wireless-device \

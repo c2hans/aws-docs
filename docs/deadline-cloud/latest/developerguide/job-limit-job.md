@@ -39,7 +39,7 @@ If your submitter doesn't support adding host requirements, you can also apply a
                "name": "{{amount.name}}",
                "min": "1"
            }
-       }
+       ]
    }
    ```
 
@@ -73,7 +73,7 @@ If your submitter doesn't support adding host requirements, you can also apply a
                "name": "amount.{{name_2}}",
                "min": "1"
            }
-       }
+       ]
    }
    ```
 
@@ -121,6 +121,11 @@ This example shows how to set up a limit for 5 V-Ray floating licenses and verif
    ```
    specificationVersion: jobtemplate-2023-09
    name: My VRay Render
+   parameterDefinitions:
+     - name: SceneFile
+       type: PATH
+       objectType: FILE
+       dataFlow: IN
    steps:
      - name: Render
        hostRequirements:

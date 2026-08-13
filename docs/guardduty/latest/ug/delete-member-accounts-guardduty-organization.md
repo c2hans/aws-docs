@@ -33,7 +33,7 @@ Choose a preferred method to delete a member account from your GuardDuty organiz
 ------
 #### [ API/CLI ]
 
-1. To retrieve the account ID for the member account that you want to delete, use the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListMembers.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListMembers.html) API. Include the `OnlyAssociated` parameter in your request. If you set this parameter's value to `false`, GuardDuty returns a `members` array that provides details about only those accounts that are currently disassociated GuardDuty members.
+1. To retrieve the account ID for the member account that you want to delete, use the [ListMembers](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListMembers.html) API. Include the `OnlyAssociated` parameter in your request. If you set this parameter's value to `false`, GuardDuty returns a `members` array that provides details about only those accounts that are currently disassociated GuardDuty members.
 
    Alternatively, you can use AWS Command Line Interface (AWS CLI) to run the following command:
 
@@ -43,7 +43,7 @@ Choose a preferred method to delete a member account from your GuardDuty organiz
 
    Replace {{12abc34d567e8fa901bc2d34EXAMPLE}} with the delegated GuardDuty administrator account detector ID and {{us-east-1}} with the Region where you want to remove this account.
 
-1. To delete one or more GuardDuty member accounts, run [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteMembers.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteMembers.html) to delete the member account from the GuardDuty organization.
+1. To delete one or more GuardDuty member accounts, run [DeleteMembers](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteMembers.html) to delete the member account from the GuardDuty organization.
 
    Alternatively, you can use AWS CLI to run the following command:
 

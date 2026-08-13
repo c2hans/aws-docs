@@ -28,7 +28,7 @@ The coreJSON library uses an internal stack to track nested structures in a JSON
   <tr><th>File</th><th>With -O1 Optimization</th><th>With -Os Optimization</th></tr>
 </thead>
 <tbody>
-  <tr><td>core\_json.c</td><td>2.9K</td><td>2.4K</td></tr>
-  <tr><td>Total estimates</td><td>2.9K</td><td>2.4K</td></tr>
+  <tr><td>core_json.c</td><td>2.9K</td><td>2.4K</td></tr>
+  <tr><td><b>Total estimates</b></td><td><b>2.9K</b></td><td><b>2.4K</b></td></tr>
 </tbody>
 </table>

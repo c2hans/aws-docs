@@ -17,15 +17,15 @@ Connect Customer supports resource-level permissions for users, so you can speci
 + [View specific Amazon AppIntegrations resources](#view-specific-appintegrations-resources)
 + [Grant access to Connect Customer Customer Profiles](#grant-access-to-customer-profiles)
 + [Grant read-only access to Customer Profiles data](#grant-read-only-access-to-customer-profiles)
-+ [Query Connect AI agents only for a specific Assistant](#query-wisdom-assistant)
++ [Query Connect Customer agent assist only for a specific Assistant](#query-wisdom-assistant)
 + [Grant full access to Connect Customer Voice ID](#grant-read-only-access-to-voiceid)
 + [Grant access to Connect Customer outbound campaigns resources](#grant-read-only-access-to-outboundcommunications)
-+ [Restrict the ability to search on transcripts analyzed by Connect Customer Contact Lens](#restrict-ability-to-search-transcripts-contact-lens)
++ [Restrict the ability to search on transcripts analyzed by Connect Customer conversational analytics](#restrict-ability-to-search-transcripts-contact-lens)
 
 ## Deny all actions on an Connect Customer instance
 <a name="connect-access-control-resources-example-all"></a>
 
-An Connect Customer instance is the top-level resource within Connect Customer. All other sub-resources are created within its scope. To deny all actions on all resources within an Connect Customer instance, you can use one of the following methods:
+An Connect Customer instance is the top-level resource within Connect Customer. All other sub-resources are created within its scope. To deny all actions on all resources within a Connect Customer instance, you can use one of the following methods:
 + Use `connect:instanceId` context keys.
 + Use Instance ARN followed by a wildcard (\*).
 
@@ -407,7 +407,7 @@ Following is an example for granting read access to the data in Connect Customer
 
 ------
 
-## Query Connect AI agents only for a specific Assistant
+## Query Connect Customer agent assist only for a specific Assistant
 <a name="query-wisdom-assistant"></a>
 
 The following sample policy allows querying only a specific Assistant.
@@ -487,10 +487,10 @@ Outbound campaigns uses `connect-campaign` as the prefix for actions instead of 
     }
 ```
 
-## Restrict the ability to search on transcripts analyzed by Connect Customer Contact Lens
+## Restrict the ability to search on transcripts analyzed by Connect Customer conversational analytics
 <a name="restrict-ability-to-search-transcripts-contact-lens"></a>
 
-The following policy allows search and describe contacts, but denies searching a contact using transcripts analyzed by Connect Customer Contact Lens.
+The following policy allows search and describe contacts, but denies searching a contact using transcripts analyzed by Connect Customer conversational analytics.
 
 ------
 #### [ JSON ]

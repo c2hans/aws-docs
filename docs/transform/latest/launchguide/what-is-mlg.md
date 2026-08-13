@@ -13,6 +13,10 @@ The section on [AWS Transform](aws-transform.md) introduces the agentic AI servi
 
 The section on [Delivering a migration program](delivering-mig-program.md) describes the phases of a migration journey. It gives guidance on how to plan your migration, considerations for staffing and allows you to get acquainted with some of the tools you can use to simplify, automate and guide you through your migration.
 
+The section on [Modernization pathways](https://docs.aws.amazon.com/transform/latest/launchguide/modernization-pathways.html) outlines structured approaches to modernizing application portfolios after migration. Most organizations choose a combination of pathways to meet specific business outcomes.
+
+After implementing a modernization pathway, the [Generative AI insights for modernization pathways](https://docs.aws.amazon.com/transform/latest/launchguide/genai-insights-modernization.html) section maps the insights and use cases that become available as a natural next step in the journey.
+
 As you progress your [Organizational readiness](organizational-readiness.md) by using AWS, you can find guidance on how to determine where you are on your cloud journey. The tools that help identify potential gaps in your organizations’ plan, skills and governance, and allow you to focus on what is important to you.
 
 To get a head start on cloud operations, see [Operational readiness](operational-readiness.md).

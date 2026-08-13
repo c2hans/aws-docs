@@ -93,4 +93,4 @@ gremlin> g.V().count()
 ==>4249
 ```
 
-You can even use the [https://tinkerpop.apache.org/docs/current/reference/#io-step](https://tinkerpop.apache.org/docs/current/reference/#io-step) step to load a file with this kind of connection.
+You can even use the [`g.io().read()`](https://tinkerpop.apache.org/docs/current/reference/#io-step) step to load a file with this kind of connection.

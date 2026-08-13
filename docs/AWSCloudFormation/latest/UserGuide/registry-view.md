@@ -32,4 +32,4 @@ To view the available and activated extensions in the CloudFormation registry, y
 1. Search or choose the extension name to view extension details.
 
 **To view the available and activated extensions (AWS CLI)**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-types.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-types.html) command.
+Use the [list-types](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-types.html) command.

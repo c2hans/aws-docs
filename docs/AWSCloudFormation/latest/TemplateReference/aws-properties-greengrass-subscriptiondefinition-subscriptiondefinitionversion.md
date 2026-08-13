@@ -10,9 +10,9 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="aws-properties-greengrass-subscriptiondefinition-subscriptiondefinitionversion-description"></a> A subscription definition version contains a list of [subscriptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscription.html).
 
 **Note**
-After you create a subscription definition version that contains the subscriptions you want to deploy, you must add it to your group version. For more information, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html).
+After you create a subscription definition version that contains the subscriptions you want to deploy, you must add it to your group version. For more information, see [`AWS::Greengrass::Group`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html).
 
-<a name="aws-properties-greengrass-subscriptiondefinition-subscriptiondefinitionversion-inheritance"></a> In an CloudFormation template, `SubscriptionDefinitionVersion` is the property type of the `InitialVersion` property in the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinition.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinition.html) resource.
+<a name="aws-properties-greengrass-subscriptiondefinition-subscriptiondefinitionversion-inheritance"></a> In an CloudFormation template, `SubscriptionDefinitionVersion` is the property type of the `InitialVersion` property in the [`AWS::Greengrass::SubscriptionDefinition`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinition.html) resource.
 
 ## Syntax
 <a name="aws-properties-greengrass-subscriptiondefinition-subscriptiondefinitionversion-syntax"></a>

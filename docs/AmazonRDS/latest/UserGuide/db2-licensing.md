@@ -42,7 +42,7 @@ You must create a custom parameter group with your IBM Customer ID and your IBM 
 **Important**
 If we can't verify your license by your IBM Customer ID and your IBM Site ID, we might terminate any DB instances running with these unverified licenses.
 
-If you're a new IBM Db2 customer, you must first purchase a Db2 software license from [https://www.ibm.com/products/db2/pricing](https://www.ibm.com/products/db2/pricing). After you purchase a Db2 software license, you will receive a Proof of Entitlement from IBM, which lists your IBM Customer ID and your IBM Site ID.
+If you're a new IBM Db2 customer, you must first purchase a Db2 software license from [IBM](https://www.ibm.com/products/db2/pricing). After you purchase a Db2 software license, you will receive a Proof of Entitlement from IBM, which lists your IBM Customer ID and your IBM Site ID.
 
 If you're an existing IBM Db2 customer, you can find your IBM Customer ID and your IBM Site ID on your Proof of Entitlement certificate from IBM.
 
@@ -82,7 +82,7 @@ You can create and modify a custom parameter group by using the AWS Management C
 
 **To add your IBM Customer ID and your IBM Site ID to a parameter group**
 
-1. Create a custom parameter group by running the [https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-parameter-group.html) command.
+1. Create a custom parameter group by running the [create-db-parameter-group](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-parameter-group.html) command.
 
    Include the following required options:
    + `--db-parameter-group-name` – A name for the parameter group that you are creating.
@@ -91,7 +91,7 @@ You can create and modify a custom parameter group by using the AWS Management C
 
    For more information about creating a DB parameter group, see [Creating a DB parameter group in Amazon RDS](USER_WorkingWithParamGroups.Creating.md).
 
-1. Modify the parameters in the custom parameter group that you created by running the [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-parameter-group.html) command.
+1. Modify the parameters in the custom parameter group that you created by running the [modify-db-parameter-group](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-parameter-group.html) command.
 
    Include the following required options:
    + `--db-parameter-group-name` – The name of the parameter group that you created.
@@ -104,7 +104,7 @@ You can create and modify a custom parameter group by using the AWS Management C
 
 **To add your IBM Customer ID and your IBM Site ID to a parameter group**
 
-1. Create a custom DB parameter group by using the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBParameterGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBParameterGroup.html) operation.
+1. Create a custom DB parameter group by using the Amazon RDS API [CreateDBParameterGroup](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBParameterGroup.html) operation.
 
    Include the following required parameters:
    + `DBParameterGroupName`
@@ -113,7 +113,7 @@ You can create and modify a custom parameter group by using the AWS Management C
 
    For more information about creating a DB parameter group, see [Creating a DB parameter group in Amazon RDS](USER_WorkingWithParamGroups.Creating.md).
 
-1. Modify the parameters in the custom parameter group that you created by using the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBParameterGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBParameterGroup.html) operation.
+1. Modify the parameters in the custom parameter group that you created by using the RDS API [ModifyDBParameterGroup](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBParameterGroup.html) operation.
 
    Include the following required parameters:
    + `DBParameterGroupName`
@@ -226,7 +226,7 @@ For more information about the `--cli-input` parameter, see [Generating AWS CLI 
 **Note**
 This procedure uses an AWS License Manager API command.
 
-To create a self-managed license, use the [https://docs.aws.amazon.com/license-manager/latest/APIReference/API_CreateLicenseConfiguration.html](https://docs.aws.amazon.com/license-manager/latest/APIReference/API_CreateLicenseConfiguration.html) AWS License Manager API operation with the following required parameters:
+To create a self-managed license, use the [`CreateLicenseConfiguration`](https://docs.aws.amazon.com/license-manager/latest/APIReference/API_CreateLicenseConfiguration.html) AWS License Manager API operation with the following required parameters:
 + `Name`
 + `LicenseCountingType`
 + `ProductInformationList`
@@ -489,7 +489,7 @@ For more information, see [Restoring a DB instance to a specified time for Amazo
 ### RDS API
 <a name="db2-restore-pitr-api"></a>
 
-To switch between Db2 licenses, call the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceToPointInTime.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceToPointInTime.html) operation with the following parameters:
+To switch between Db2 licenses, call the Amazon RDS API [`RestoreDBInstanceToPointInTime`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceToPointInTime.html) operation with the following parameters:
 + `SourceDBInstanceIdentifier`
 + `TargetDBInstanceIdentifier`
 + `RestoreTime`

@@ -20,7 +20,7 @@ You can access your Amazon FSx file systems using a variety of supported clients
 ## Supported clients
 <a name="supported-clients-fsx"></a>
 
-FSx for Windows File Server supports the Server Message Block (SMB) protocol versions 2.0 through 3.1.1, giving you the flexibility to connect to your file systems using a wide variety of compute instances and operating systems.
+FSx for Windows File Server is compatible with the Server Message Block (SMB) protocol versions 2.0 through 3.1.1, giving you the flexibility to connect to your file systems using a wide variety of compute instances and operating systems.
 
 The following AWS compute instances are supported for use with Amazon FSx:
 + Amazon Elastic Compute Cloud (Amazon EC2) instances, including Microsoft Windows, Mac, Amazon Linux and Amazon Linux 2 instances. For more information, see [Mapping file shares](using-file-shares.md#mapping-file-shares).
@@ -29,11 +29,13 @@ The following AWS compute instances are supported for use with Amazon FSx:
 + Amazon AppStream 2.0 instances – To learn more, see the AWS blog post [ Using Amazon FSx with Amazon AppStream 2.0](https://aws.amazon.com/blogs/desktop-and-application-streaming/using-amazon-fsx-with-amazon-appstream-2-0/).
 + VMs running in VMware Cloud on AWS environments – To learn more, see the AWS blog post [Storing and Sharing Files with FSx for Windows File Server in a VMware Cloud on AWS Environment](https://aws.amazon.com/blogs/apn/storing-and-sharing-files-with-amazon-fsx-in-a-vmware-cloud-on-aws-environment/).
 
-The following operating systems are supported for use with Amazon FSx:
+The following operating systems are supported for use with Amazon FSx when using their built-in SMB client:
 + Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022.
 + Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10 (including the Windows 7 and Windows 10 desktop experiences of WorkSpaces), and Windows 11.
 + Linux, using the `cifs-utils` tool.
 + macOS
+
+Other SMB-compatible clients may function but are not supported by AWS.
 
 ## Accessing data from within the AWS Cloud
 <a name="access-environments"></a>
@@ -51,7 +53,7 @@ The following table illustrates the environments from which Amazon FSx supports 
 <tbody>
   <tr><td>Subnets in which the file system is created</td><td>✓</td><td>✓</td><td>✓</td></tr>
   <tr><td>Primary CIDR blocks of the VPC in which the file system was created</td><td>✓</td><td>✓</td><td>✓</td></tr>
-  <tr><td>Secondary CIDRs of the VPC in which the file system was created</td><td rowspan="2"></td><td rowspan="2">Clients with IP addresses in an [RFC 1918](http://www.faqs.org/rfcs/rfc1918.html) private IP address range:+ 10.0.0.0/8<br />+ 172.16.0.0/12<br />+ 192.168.0.0/16</td><td rowspan="2">Clients with IP addresses outside the following CIDR block range: 198.19.0.0/16</td></tr>
+  <tr><td>Secondary CIDRs of the VPC in which the file system was created</td><td rowspan="2"></td><td rowspan="2">Clients with IP addresses in an <a href="http://www.faqs.org/rfcs/rfc1918.html">RFC 1918</a> private IP address range:<ul><li>10.0.0.0/8</li><li>172.16.0.0/12</li><li>192.168.0.0/16</li></ul></td><td rowspan="2">Clients with IP addresses outside the following CIDR block range: 198.19.0.0/16</td></tr>
   <tr><td>Other CIDRs or peered networks</td></tr>
 </tbody>
 </table>

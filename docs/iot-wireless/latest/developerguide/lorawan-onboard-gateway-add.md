@@ -127,7 +127,7 @@ The following steps show you how to generate a certificate and associate it with
 #### Step 1: Generating a gateway certificate
 <a name="lorawan-gateway-cert-generate"></a>
 
-To generate a certificate for your gateway, use the AWS IoT API Reference API action, [https://docs.aws.amazon.com/iot/latest/apireference/API_CreateKeysAndCertificate.html](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateKeysAndCertificate.html), or the AWS CLI command, [create-keys-and-certificate](https://docs.aws.amazon.com/cli/latest/reference/iot/create-keys-and-certificate.html) CLI command.
+To generate a certificate for your gateway, use the AWS IoT API Reference API action, [`CreateKeysAndCertificate`](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateKeysAndCertificate.html), or the AWS CLI command, [create-keys-and-certificate](https://docs.aws.amazon.com/cli/latest/reference/iot/create-keys-and-certificate.html) CLI command.
 
 The following command shows an example of generating the certificate, `cups.crt`, and the private key, `cups.key`.
 
@@ -159,7 +159,7 @@ You must securely store the private key, `cups.key`. If you misplace the private
 #### Step 2: Obtaining server trust certificate and CUPS endpoint
 <a name="lorawan-gateway-cert-obtain"></a>
 
-Now that you've generated the certificate and private key, use the [GetServiceEndpoint](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetServiceEndpoint.html) API action or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-service-endpoint](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-service-endpoint) CLI command to obtain the server trust certificate, `cups.trust` and the endpoint URI, `cups.uri`.
+Now that you've generated the certificate and private key, use the [GetServiceEndpoint](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetServiceEndpoint.html) API action or the [`get-service-endpoint`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-service-endpoint) CLI command to obtain the server trust certificate, `cups.trust` and the endpoint URI, `cups.uri`.
 
 The following command shows an example of obtaining the server trust certificate and the endpoint URI. When running the command, set the `service-type` parameter to `CUPS`.
 
@@ -187,7 +187,7 @@ Store the `ServerTrust` certificate in a `.pem` file with the `\n` replaced by n
 
 You must associate the gateway's certificate that you generated with the gateway that you added. AWS IoT Core for LoRaWAN will use this information to identify the certificate that the gateway will use to connect to the CUPS endpoint.
 
-To associate the certificate with your gateway, use the [AssociateWirelessGatewaywithCertificate](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_AssociateWirelessGatewaywithCertificate.html) API action or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/associate-wireless-gateway-with-certificate.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/associate-wireless-gateway-with-certificate.html) CLI command.
+To associate the certificate with your gateway, use the [AssociateWirelessGatewaywithCertificate](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_AssociateWirelessGatewaywithCertificate.html) API action or the [`associate-wireless-gateway-with-certificate`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/associate-wireless-gateway-with-certificate.html) CLI command.
 
 The following command shows an example of associating a certificate with your gateway.
 

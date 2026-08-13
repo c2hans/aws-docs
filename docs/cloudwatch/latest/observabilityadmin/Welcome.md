@@ -9,4 +9,4 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/Wel
 
 For information on the permissions you need to use this API, see [Identity and access management for Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/auth-and-access-control-cw.html) in the CloudWatch User Guide.
 
-This document was last published on August 6, 2026.
+This document was last published on August 13, 2026.

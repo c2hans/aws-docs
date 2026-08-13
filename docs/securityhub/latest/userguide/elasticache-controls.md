@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon ElastiCache service and
 
 **Resource type:** `AWS::ElastiCache::CacheCluster`, `AWS:ElastiCache:ReplicationGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elasticache-redis-cluster-automatic-backup-check.html](https://docs.aws.amazon.com/config/latest/developerguide/elasticache-redis-cluster-automatic-backup-check.html)
+**AWS Config rule:** [elasticache-redis-cluster-automatic-backup-check](https://docs.aws.amazon.com/config/latest/developerguide/elasticache-redis-cluster-automatic-backup-check.html)
 
 **Schedule type:** Periodic
 
@@ -51,7 +51,7 @@ For information about scheduling automatic backups for an ElastiCache cluster, s
 
 **Resource type:** `AWS::ElastiCache::CacheCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elasticache-auto-minor-version-upgrade-check.html](https://docs.aws.amazon.com/config/latest/developerguide/elasticache-auto-minor-version-upgrade-check.html)
+**AWS Config rule:** [elasticache-auto-minor-version-upgrade-check](https://docs.aws.amazon.com/config/latest/developerguide/elasticache-auto-minor-version-upgrade-check.html)
 
 **Schedule type:** Periodic
 
@@ -80,7 +80,7 @@ To automatically apply minor version upgrades to an existing ElastiCache cache c
 
 **Resource type:** `AWS::ElastiCache::ReplicationGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elasticache-repl-grp-auto-failover-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/elasticache-repl-grp-auto-failover-enabled.html)
+**AWS Config rule:** [elasticache-repl-grp-auto-failover-enabled](https://docs.aws.amazon.com/config/latest/developerguide/elasticache-repl-grp-auto-failover-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -106,7 +106,7 @@ To enable automatic failover for an existing ElastiCache replication group,, see
 
 **Resource type:** `AWS::ElastiCache::ReplicationGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elasticache-repl-grp-encrypted-at-rest.html](https://docs.aws.amazon.com/config/latest/developerguide/elasticache-repl-grp-encrypted-at-rest.html)
+**AWS Config rule:** [elasticache-repl-grp-encrypted-at-rest](https://docs.aws.amazon.com/config/latest/developerguide/elasticache-repl-grp-encrypted-at-rest.html)
 
 **Schedule type:** Periodic
 
@@ -132,7 +132,7 @@ To configure at-rest encryption on an ElastiCache replication group, see [Enabli
 
 **Resource type:** `AWS::ElastiCache::ReplicationGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elasticache-repl-grp-encrypted-in-transit.html](https://docs.aws.amazon.com/config/latest/developerguide/elasticache-repl-grp-encrypted-in-transit.html)
+**AWS Config rule:** [elasticache-repl-grp-encrypted-in-transit](https://docs.aws.amazon.com/config/latest/developerguide/elasticache-repl-grp-encrypted-in-transit.html)
 
 **Schedule type:** Periodic
 
@@ -158,7 +158,7 @@ To configure in-transit encryption on an ElastiCache replication group, see [Ena
 
 **Resource type:** `AWS::ElastiCache::ReplicationGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elasticache-repl-grp-redis-auth-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/elasticache-repl-grp-redis-auth-enabled.html)
+**AWS Config rule:** [elasticache-repl-grp-redis-auth-enabled](https://docs.aws.amazon.com/config/latest/developerguide/elasticache-repl-grp-redis-auth-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -184,7 +184,7 @@ To use Redis AUTH on an ElastiCache (Redis OSS) replication group, see [Modifyin
 
 **Resource type:** `AWS::ElastiCache::CacheCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elasticache-subnet-group-check.html](https://docs.aws.amazon.com/config/latest/developerguide/elasticache-subnet-group-check.html)
+**AWS Config rule:** [elasticache-subnet-group-check](https://docs.aws.amazon.com/config/latest/developerguide/elasticache-subnet-group-check.html)
 
 **Schedule type:** Periodic
 

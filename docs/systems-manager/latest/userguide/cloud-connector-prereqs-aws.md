@@ -33,4 +33,4 @@ Complete the following steps in your AWS account.
    https://{{UNIQUE_ID}}.tokens.sts.global.api.aws
    ```
 
-   You will need this URL when configuring the federated identity credential in Azure.
+   You need this URL when configuring the federated identity credential in Azure.

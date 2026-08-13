@@ -8,6 +8,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-static-websites
 <a name="further-reading"></a>
 
  For additional information, see:
-+  [https://aws.amazon.com/whitepapers/](https://aws.amazon.com/whitepapers/)
-+  [https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/reports.html](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/reports.html)
-+  [https://docs.aws.amazon.com/s3/index.html](https://docs.aws.amazon.com/s3/index.html)
++  [*AWS Whitepapers page*](https://aws.amazon.com/whitepapers/)
++  [*Amazon CloudFront Developer Guide*](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/reports.html)
++  [*Amazon S3 Documentation*](https://docs.aws.amazon.com/s3/index.html)

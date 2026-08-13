@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 # AWS Systems Manager Compliance
 <a name="systems-manager-compliance"></a>
 
-You can use Compliance, a tool in AWS Systems Manager, to scan your fleet of managed nodes for patch compliance and configuration inconsistencies. You can collect and aggregate data from multiple AWS accounts and Regions, and then drill down into specific resources that aren’t compliant. By default, Compliance displays current compliance data about patching in Patch Manager and associations in State Manager. (Patch Manager and State Manager are also both tools in AWS Systems Manager.) To get started with Compliance, open the [Systems Manager console](https://console.aws.amazon.com//systems-manager/compliance). In the navigation pane, choose **Compliance**.
+You can use Compliance to scan your fleet of managed nodes for patch compliance and configuration inconsistencies. You can collect and aggregate data from multiple AWS accounts and Regions, and then drill down into specific resources that aren’t compliant. By default, Compliance displays current compliance data about patching in Patch Manager and associations in State Manager. (Patch Manager and State Manager are also both tools in AWS Systems Manager.) To get started with Compliance, open the [Systems Manager console](https://console.aws.amazon.com//systems-manager/compliance). In the navigation pane, choose **Compliance**.
 
 Patch compliance data from Patch Manager can be sent to AWS Security Hub CSPM. Security Hub CSPM gives you a comprehensive view of your high-priority security alerts and compliance status. It also monitors the patching status of your fleet. For more information, see [Integrating Patch Manager with AWS Security Hub CSPM](patch-manager-security-hub-integration.md).
 
@@ -21,7 +21,7 @@ Compliance offers the following additional benefits and features:
 This Systems Manager tool is supported as an *event* type in Amazon EventBridge rules. For information, see [Monitoring Systems Manager events with Amazon EventBridge](monitoring-eventbridge-events.md) and [Reference: Amazon EventBridge event patterns and types for Systems Manager](reference-eventbridge-events.md).
 
 **Chef InSpec integration**
-Systems Manager integrates with [https://www.chef.io/inspec/](https://www.chef.io/inspec/). InSpec is an open-source, runtime framework that allows you to create human-readable profiles on GitHub or Amazon Simple Storage Service (Amazon S3). You can then use Systems Manager to run compliance scans and view compliant and noncompliant managed nodes. For more information, see [Using Chef InSpec profiles with Systems Manager Compliance](integration-chef-inspec.md).
+Systems Manager integrates with [Chef InSpec](https://www.chef.io/inspec/). InSpec is an open-source, runtime framework that allows you to create human-readable profiles on GitHub or Amazon Simple Storage Service (Amazon S3). You can then use Systems Manager to run compliance scans and view compliant and noncompliant managed nodes. For more information, see [Using Chef InSpec profiles with Systems Manager Compliance](integration-chef-inspec.md).
 
 **Pricing**
 Compliance is offered at no additional charge. You only pay for the AWS resources that you use.

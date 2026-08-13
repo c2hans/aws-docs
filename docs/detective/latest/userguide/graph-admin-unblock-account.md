@@ -35,11 +35,11 @@ Detective determines whether the member account can be enabled. If the member ac
 ------
 #### [ Detective API/CLI ]
 
-You can use an API call or the AWS Command Line Interface to enable a single member account that is **Not enabled**. To get the ARN of your behavior graph to use in the request, use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html) operation.
+You can use an API call or the AWS Command Line Interface to enable a single member account that is **Not enabled**. To get the ARN of your behavior graph to use in the request, use the [`ListGraphs`](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html) operation.
 
 **To enable a member account that is Not enabled**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_StartMonitoringMember.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_StartMonitoringMember.html) API operation. You must provide the behavior graph ARN. To identify the member account, use the AWS account identifier.
-+ **AWS CLI:** Run the [https://docs.aws.amazon.com/cli/latest/reference/detective/start-monitoring-member.html](https://docs.aws.amazon.com/cli/latest/reference/detective/start-monitoring-member.html) command.
++ **Detective API:** Use the [`StartMonitoringMember`](https://docs.aws.amazon.com/detective/latest/APIReference/API_StartMonitoringMember.html) API operation. You must provide the behavior graph ARN. To identify the member account, use the AWS account identifier.
++ **AWS CLI:** Run the [`start-monitoring-member`](https://docs.aws.amazon.com/cli/latest/reference/detective/start-monitoring-member.html) command.
 
   ```
   start-monitoring-member --graph-arn {{<behavior graph ARN>}} --account-id {{<AWS account ID>}}

@@ -18,24 +18,41 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/alas2.html) on or before **December 12, 2022** to all Amazon Linux 2 platforms.<br />Some of the platform updates are security releases. For more information, see **Platform-specific updates** in this table. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-12-29-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-12-29-linux.html) |
-| **\*\*New\!\*\* — automatic conversion of Windows line breaks to Unix line breaks in platform hooks text files** | Starting with this release Elastic Beanstalk automatically detects Windows *Carriage Return / Line Feed* (CRLF) line breaks characters in platform hooks text files and converts them to Linux *Line Feed* (LF) line break characters. Linux script files that contain Windows CRLF line breaks may generate errors.<br />To learn more, see *More about platform hooks* in the *AWS Elastic Beanstalk Developer Guide*. To locate this section in the guide, expand the *Platform Hooks* topic inside [Extending Linux platforms](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-linux-extend.html). |
-| **AMI** | Updated the base AMI to version 2.0.20221210. |
-| **Docker** | Updated Amazon ECS Agent to version **1.66.2** on the *ECS Amazon Linux 2* platform branch. |
-| **Go** | Updated Go to release 1.19.4. For details, see [go1.19.4](https://go.dev/doc/devel/release#go1.19.4) in *The Go Programming Language Release History*.<br />This is a security release. |
-| **.NET Core** | Updated .NET Core to releases [6.0.12](https://github.com//dotnet/core/blob/main/release-notes/6.0/6.0.12/6.0.12.md#notable-changes) and [3.1.32](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1.32/3.1.32.md#notable-changes).<br />Both the .NET Core 6.0 and .NET Core 3.1 updates are security releases. |
-| **Node.js** | Updated Node.js 16 to add support for Node version [16.9.0](https://nodejs.org/en/blog/release/v16.19.0/).<br />Updated Node.js 14 to add support for Node versions [14.21.2](https://nodejs.org/en/blog/release/v14.21.2/). |
-| **PHP** | Updated PHP 7.4 release to [7.4.33](https://www.php.net/releases/7_4_33.php).<br />This update is a security release. PHP 7.4 is a retiring (deprecated) platform branch. For full version information of Elastic Beanstalk retiring platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.  |
-| **Python** | Updated Python 3.7 to [Python 3.7.15](https://docs.python.org/3.7/whatsnew/changelog.html#python-3-7-15-final).<br />This is a security release. |
-| **Ruby** | Updated RubyGems to release 3.4.1. For details, see [3.4.1 Released](https://blog.rubygems.org/2022/12/24/3.4.1-released.html) on the *RubyGems blog*.<br />Updated Puma to version [6.0.1](https://github.com/puma/puma/releases/tag/v6.0.1). |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/alas2.html">Amazon Linux Security Center</a> on or before <b>December 12, 2022</b> to all Amazon Linux 2 platforms.<br />Some of the platform updates are security releases. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>**New!** — automatic conversion of Windows line breaks to Unix line breaks in platform hooks text files</b></td><td>Starting with this release Elastic Beanstalk automatically detects Windows <i>Carriage Return / Line Feed</i> (CRLF) line breaks characters in platform hooks text files and converts them to Linux <i>Line Feed</i> (LF) line break characters. Linux script files that contain Windows CRLF line breaks may generate errors.<br />To learn more, see <i>More about platform hooks</i> in the <i>AWS Elastic Beanstalk Developer Guide</i>. To locate this section in the guide, expand the <i>Platform Hooks</i> topic inside <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-linux-extend.html">Extending Linux platforms</a>.</td></tr>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version 2.0.20221210.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Docker</b></td><td>Updated Amazon ECS Agent to version <b>1.66.2</b> on the <i>ECS Amazon Linux 2</i> platform branch.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated Go to release 1.19.4. For details, see <a href="https://go.dev/doc/devel/release#go1.19.4">go1.19.4</a> in <i>The Go Programming Language Release History</i>.<br />This is a security release.</td></tr>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET Core to releases <a href="https://github.com//dotnet/core/blob/main/release-notes/6.0/6.0.12/6.0.12.md#notable-changes">6.0.12</a> and <a href="https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1.32/3.1.32.md#notable-changes">3.1.32</a>.<br />Both the .NET Core 6.0 and .NET Core 3.1 updates are security releases.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated Node.js 16 to add support for Node version <a href="https://nodejs.org/en/blog/release/v16.19.0/">16.9.0</a>.<br />Updated Node.js 14 to add support for Node versions <a href="https://nodejs.org/en/blog/release/v14.21.2/">14.21.2</a>.</td></tr>
+  <tr><td><b>PHP</b></td><td>Updated PHP 7.4 release to <a href="https://www.php.net/releases/7_4_33.php">7.4.33</a>.<br />This update is a security release. PHP 7.4 is a retiring (deprecated) platform branch. For full version information of Elastic Beanstalk retiring platform branches, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html">Elastic Beanstalk platform versions scheduled for retirement</a> in the <i>AWS Elastic Beanstalk Platforms</i> guide. </td></tr>
+  <tr><td><b>Python</b></td><td>Updated Python 3.7 to <a href="https://docs.python.org/3.7/whatsnew/changelog.html#python-3-7-15-final">Python 3.7.15</a>.<br />This is a security release.</td></tr>
+  <tr><td><b>Ruby</b></td><td>Updated RubyGems to release 3.4.1. For details, see <a href="https://blog.rubygems.org/2022/12/24/3.4.1-released.html">3.4.1 Released</a> on the <i>RubyGems blog</i>.<br />Updated Puma to version <a href="https://github.com/puma/puma/releases/tag/v6.0.1">6.0.1</a>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2022-12-29-linux.platforms"></a>

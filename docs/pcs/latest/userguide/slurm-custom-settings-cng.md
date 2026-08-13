@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-custom-settin
 <a name="slurm-custom-settings-cng"></a>
 
 The following custom Slurm settings are supported at the compute node group level:
-+ [https://slurm.schedmd.com/slurm.conf.html#OPT_CpuSpecList](https://slurm.schedmd.com/slurm.conf.html#OPT_CpuSpecList)
-+ [https://slurm.schedmd.com/slurm.conf.html#OPT_Features](https://slurm.schedmd.com/slurm.conf.html#OPT_Features)
-+ [https://slurm.schedmd.com/slurm.conf.html#OPT_MemSpecLimit](https://slurm.schedmd.com/slurm.conf.html#OPT_MemSpecLimit)
-+ [https://slurm.schedmd.com/slurm.conf.html#OPT_Parameters](https://slurm.schedmd.com/slurm.conf.html#OPT_Parameters)
++ [CpuSpecList](https://slurm.schedmd.com/slurm.conf.html#OPT_CpuSpecList)
++ [Features](https://slurm.schedmd.com/slurm.conf.html#OPT_Features)
++ [MemSpecLimit](https://slurm.schedmd.com/slurm.conf.html#OPT_MemSpecLimit)
++ [Parameters](https://slurm.schedmd.com/slurm.conf.html#OPT_Parameters)
 **Note**
 AWS PCS supports `Parameters` on Slurm version 25.11 and later.
-+ [https://slurm.schedmd.com/slurm.conf.html#OPT_RealMemory](https://slurm.schedmd.com/slurm.conf.html#OPT_RealMemory)
-+ [https://slurm.schedmd.com/slurm.conf.html#OPT_Sockets](https://slurm.schedmd.com/slurm.conf.html#OPT_Sockets)
++ [RealMemory](https://slurm.schedmd.com/slurm.conf.html#OPT_RealMemory)
++ [Sockets](https://slurm.schedmd.com/slurm.conf.html#OPT_Sockets)
 **Note**
 AWS PCS supports `Sockets` on Slurm version 25.11 and later.
-+ [https://slurm.schedmd.com/slurm.conf.html#OPT_Weight](https://slurm.schedmd.com/slurm.conf.html#OPT_Weight)
++ [Weight](https://slurm.schedmd.com/slurm.conf.html#OPT_Weight)

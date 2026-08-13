@@ -194,7 +194,7 @@ $ aws kms list-grants --key-id 0987dcba-09fe-87dc-65ba-ab0987654321
 <a name="grant-constraints-source-arn"></a>
 
 **SourceArn**  <a name="terms-source-arn-constraint"></a>
-The `SourceArn` constraint restricts grant permissions to requests made on behalf of a specific AWS resource, identified by its Amazon Resource Name (ARN). The `SourceArn` grant constraint is effectively putting an [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) global condition key into the grant and is only evaluated when the request is made by an AWS service.
+The `SourceArn` constraint restricts grant permissions to requests made on behalf of a specific AWS resource, identified by its Amazon Resource Name (ARN). The `SourceArn` grant constraint is effectively putting an [aws:SourceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) global condition key into the grant and is only evaluated when the request is made by an AWS service.
 The `SourceArn` constraint is always required when the grant specifies a `GranteeServicePrincipal`. It can optionally be used with `GranteePrincipal`.
 Unlike encryption context constraints, the `SourceArn` constraint is supported on grants for *all types* of KMS keys.
 

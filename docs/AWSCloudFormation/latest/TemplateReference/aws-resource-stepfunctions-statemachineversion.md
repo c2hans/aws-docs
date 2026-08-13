@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::StepFunctions::StateMachineVersion
 <a name="aws-resource-stepfunctions-statemachineversion"></a>
 
-Represents a state machine [version](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-state-machine-version.html). A published version uses the latest state machine [https://docs.aws.amazon.com/step-functions/latest/dg/concepts-state-machine-version.html](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-state-machine-version.html). A revision is an immutable, read-only snapshot of a state machine’s definition and configuration.
+Represents a state machine [version](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-state-machine-version.html). A published version uses the latest state machine [*revision*](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-state-machine-version.html). A revision is an immutable, read-only snapshot of a state machine’s definition and configuration.
 
 You can publish up to 1000 versions for each state machine.
 
@@ -128,7 +128,7 @@ MyStateMachineVersionB:
 ### Publish a version for the latest revision of a state machine
 <a name="aws-resource-stepfunctions-statemachineversion--examples--Publish_a_version_for_the_latest_revision_of_a_state_machine"></a>
 
-The following example uses the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachineversion.html#cfn-stepfunctions-statemachineversion-statemachinerevisionid](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachineversion.html#cfn-stepfunctions-statemachineversion-statemachinerevisionid) property, which returns a unique value for revision ID of the state machine resource whenever an update is made to the state machine. CloudFormation automatically detects a different value for the `StateMachineRevisionId` property compared to the property's value in previous stack and makes a replacement update to the `AWS::StepFunctions::StateMachineVersion` resource. This publishes a new version that points to the most recent revision of your state machine.
+The following example uses the [`StateMachineRevisionId`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachineversion.html#cfn-stepfunctions-statemachineversion-statemachinerevisionid) property, which returns a unique value for revision ID of the state machine resource whenever an update is made to the state machine. CloudFormation automatically detects a different value for the `StateMachineRevisionId` property compared to the property's value in previous stack and makes a replacement update to the `AWS::StepFunctions::StateMachineVersion` resource. This publishes a new version that points to the most recent revision of your state machine.
 
 #### YAML
 <a name="aws-resource-stepfunctions-statemachineversion--examples--Publish_a_version_for_the_latest_revision_of_a_state_machine--yaml"></a>

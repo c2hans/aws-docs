@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Searc
 <a name="API_SearchPlaceIndexForText"></a>
 
 **Important**
-This operation is no longer current and may be deprecated in the future. We recommend you upgrade to [/location/latest/APIReference/API_geoplaces_Geocode.html](/location/latest/APIReference/API_geoplaces_Geocode.html) or [/location/latest/APIReference/API_geoplaces_SearchText.html](/location/latest/APIReference/API_geoplaces_SearchText.html) unless you require Grab data.
+This operation is no longer current and may be deprecated in the future. We recommend you upgrade to [`Geocode`](/location/latest/APIReference/API_geoplaces_Geocode.html) or [`SearchText`](/location/latest/APIReference/API_geoplaces_SearchText.html) unless you require Grab data.
  `SearchPlaceIndexForText` is part of a previous Amazon Location Service Places API (version 1) which has been superseded by a more intuitive, powerful, and complete API (version 2).
 The version 2 `Geocode` operation gives better results in the address geocoding use case, while the version 2 `SearchText` operation gives better results when searching for businesses and points of interest.
 If you are using an AWS SDK or the AWS CLI, note that the Places API version 2 is found under `geo-places` or `geo_places`, not under `location`.

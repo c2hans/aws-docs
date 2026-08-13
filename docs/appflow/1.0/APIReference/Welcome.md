@@ -17,6 +17,6 @@ Use the following links to get started on the Amazon AppFlow API:
 
 If you're new to Amazon AppFlow, we recommend that you review the [Amazon AppFlow User Guide](https://docs.aws.amazon.com/appflow/latest/userguide/what-is-appflow.html).
 
-Amazon AppFlow API users can use vendor-specific mechanisms for OAuth, and include applicable OAuth attributes (such as `auth-code` and `redirecturi`) with the connector-specific `ConnectorProfileProperties` when creating a new connector profile using Amazon AppFlow API operations. For example, Salesforce users can refer to the [https://help.salesforce.com/articleView?id=remoteaccess_authenticate.htm](https://help.salesforce.com/articleView?id=remoteaccess_authenticate.htm) documentation.
+Amazon AppFlow API users can use vendor-specific mechanisms for OAuth, and include applicable OAuth attributes (such as `auth-code` and `redirecturi`) with the connector-specific `ConnectorProfileProperties` when creating a new connector profile using Amazon AppFlow API operations. For example, Salesforce users can refer to the [*Authorize Apps with OAuth*](https://help.salesforce.com/articleView?id=remoteaccess_authenticate.htm) documentation.
 
-This document was last published on August 6, 2026.
+This document was last published on August 13, 2026.

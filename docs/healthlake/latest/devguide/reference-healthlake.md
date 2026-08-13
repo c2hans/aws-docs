@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-hea
 The following supporting reference material is available for AWS HealthLake.
 
 **Note**
-All native HealthLake actions and data types are described in a separate reference. For more information, see the [https://docs.aws.amazon.com/healthlake/latest/APIReference/](https://docs.aws.amazon.com/healthlake/latest/APIReference/).
+All native HealthLake actions and data types are described in a separate reference. For more information, see the [*AWS HealthLake API Reference*](https://docs.aws.amazon.com/healthlake/latest/APIReference/).
 
 **Topics**
 + [Endpoints and quotas](reference-healthlake-endpoints-quotas.md)

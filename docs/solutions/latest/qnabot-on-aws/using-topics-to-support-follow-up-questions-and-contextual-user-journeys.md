@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/using-top
 # Using topics to support follow-up questions and contextual user journeys
 <a name="using-topics-to-support-follow-up-questions-and-contextual-user-journeys"></a>
 
-The solution remembers the topic from the last question you asked, which allows you to ask follow-up questions, for example: ` "How much does it cost?" ` The correct answer depends on the context set by the previous question. To use this feature, you must assign a value to the **Topic** field in the content designer.
+The guidance remembers the topic from the last question you asked, which allows you to ask follow-up questions, for example: ` "How much does it cost?" ` The correct answer depends on the context set by the previous question. To use this feature, you must assign a value to the **Topic** field in the content designer.
 
 1. From the content designer, edit item `Alexa.001` (*"What is an Amazon Echo Show?"*), and enter `EchoShow` as the topic in the **Advanced section**.
 

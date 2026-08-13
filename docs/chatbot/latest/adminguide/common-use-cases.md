@@ -70,6 +70,6 @@ def lambda_handler(event, context):
     )
 ```
 
-The following Amazon Q Developer in chat applications command invokes the Lambda function. For more information about CodePipeline and pipeline actions, see the [https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html).
+The following Amazon Q Developer in chat applications command invokes the Lambda function. For more information about CodePipeline and pipeline actions, see the [*AWS CodePipeline User Guide*](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html).
 
 `@Amazon Q invoke mypipeline1-beta-Approval --payload {"summary": "the design looks good, ready to release",“status”: "Approved"}`

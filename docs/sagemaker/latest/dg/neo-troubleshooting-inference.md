@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-troubleshooting-
 <a name="neo-troubleshooting-inference"></a>
 
 This section contains information about how to prevent and resolve some of the common errors you might encounter upon deploying and/or invoking the endpoint. This section applies to **PyTorch 1.4.0 or later** and **MXNet v1.7.0 or later**.
-+ Make sure the first inference (warm-up inference) on a valid input data is done in `model_fn()`, if you defined a `model_fn` in your inference script, otherwise the following error message may be seen on the terminal when [https://sagemaker.readthedocs.io/en/stable/api/sagemaker_serve.html](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_serve.html) is called:
++ Make sure the first inference (warm-up inference) on a valid input data is done in `model_fn()`, if you defined a `model_fn` in your inference script, otherwise the following error message may be seen on the terminal when [`predict API`](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_serve.html) is called:
 
   ```
   An error occurred (ModelError) when calling the InvokeEndpoint operation: Received server error (0) from <users-sagemaker-endpoint> with message "Your invocation timed out while waiting for a response from container model. Review the latency metrics for each container in Amazon CloudWatch, resolve the issue, and try again."

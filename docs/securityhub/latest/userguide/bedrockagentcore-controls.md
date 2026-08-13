@@ -16,7 +16,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon Bedrock AgentCore servi
 
 **Resource type:** `AWS::BedrockAgentCore::Runtime`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/bedrockagentcore-runtime-private-network-required.html](https://docs.aws.amazon.com/config/latest/developerguide/bedrockagentcore-runtime-private-network-required.html)
+**AWS Config rule:** [bedrockagentcore-runtime-private-network-required](https://docs.aws.amazon.com/config/latest/developerguide/bedrockagentcore-runtime-private-network-required.html)
 
 **Schedule type:** Change triggered
 
@@ -40,7 +40,7 @@ To remediate this finding, update the non-compliant Bedrock AgentCore runtime an
 
 **Resource type:** `AWS::BedrockAgentCore::Gateway`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/bedrockagentcore-gateway-authorizer-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/bedrockagentcore-gateway-authorizer-enabled.html)
+**AWS Config rule:** [bedrockagentcore-gateway-authorizer-enabled](https://docs.aws.amazon.com/config/latest/developerguide/bedrockagentcore-gateway-authorizer-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -66,7 +66,7 @@ To set up inbound authorization for an Amazon Bedrock AgentCore Gateway, see [Se
 
 **Resource type:** `AWS::BedrockAgentCore::Memory`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/bedrock-agentcore-memory-encryption-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/bedrock-agentcore-memory-encryption-enabled.html)
+**AWS Config rule:** [bedrock-agentcore-memory-encryption-enabled](https://docs.aws.amazon.com/config/latest/developerguide/bedrock-agentcore-memory-encryption-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -92,7 +92,7 @@ To encrypt your Amazon Bedrock AgentCore Memory with a customer managed KMS key,
 
 **Resource type:** `AWS::BedrockAgentCore::Gateway`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/bedrockagentcore-gateway-encryption-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/bedrockagentcore-gateway-encryption-enabled.html)
+**AWS Config rule:** [bedrockagentcore-gateway-encryption-enabled](https://docs.aws.amazon.com/config/latest/developerguide/bedrockagentcore-gateway-encryption-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -116,7 +116,7 @@ To encrypt your Bedrock AgentCore Gateway with a customer managed KMS key, see [
 
 **Resource type:** `AWS::BedrockAgentCore::BrowserCustom`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/bedrockagentcore-browsercustom-network-mode-not-public.html](https://docs.aws.amazon.com/config/latest/developerguide/bedrockagentcore-browsercustom-network-mode-not-public.html)
+**AWS Config rule:** [bedrockagentcore-browsercustom-network-mode-not-public](https://docs.aws.amazon.com/config/latest/developerguide/bedrockagentcore-browsercustom-network-mode-not-public.html)
 
 **Schedule type:** Change triggered
 
@@ -140,7 +140,7 @@ To remediate this finding, delete the non-compliant Bedrock AgentCore custom bro
 
 **Resource type:** `AWS::BedrockAgentCore::BrowserCustom`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/bedrockagentcore-browsercustom-recording-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/bedrockagentcore-browsercustom-recording-enabled.html)
+**AWS Config rule:** [bedrockagentcore-browsercustom-recording-enabled](https://docs.aws.amazon.com/config/latest/developerguide/bedrockagentcore-browsercustom-recording-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -164,7 +164,7 @@ For instructions on how to enable browser session recording, see [Session Record
 
 **Resource type:** `AWS::BedrockAgentCore::CodeInterpreterCustom`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/bedrockagentcore-codeinterpreter-networkmode-check.html](https://docs.aws.amazon.com/config/latest/developerguide/bedrockagentcore-codeinterpreter-networkmode-check.html)
+**AWS Config rule:** [bedrockagentcore-codeinterpreter-networkmode-check](https://docs.aws.amazon.com/config/latest/developerguide/bedrockagentcore-codeinterpreter-networkmode-check.html)
 
 **Schedule type:** Change triggered
 

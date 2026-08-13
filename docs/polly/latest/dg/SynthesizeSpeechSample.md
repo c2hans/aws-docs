@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/SynthesizeSpeechSample.h
 
 The following Java code sample show how to use Java-based applications to synthesize speech with shorter texts for near-real time processing.
 
-For more information, see the reference for [https://docs.aws.amazon.com/polly/latest/APIReference/API_SynthesizeSpeech.html](https://docs.aws.amazon.com/polly/latest/APIReference/API_SynthesizeSpeech.html) API.
+For more information, see the reference for [`SynthesizeSpeech`](https://docs.aws.amazon.com/polly/latest/APIReference/API_SynthesizeSpeech.html) API.
 
 ```
 package com.amazonaws.polly.samples;

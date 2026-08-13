@@ -63,10 +63,10 @@ The following are common questions about setting up and maintaining an integrati
 1. **What are the different approaches for me to send findings to Security Hub CSPM?**
 
    These are the primary approaches:
-   + You send findings from their own designated AWS account using the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) operation.
-   + You send findings from within the customer account using the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) operation. You could use assume-role approaches, but these approaches are not required.
+   + You send findings from their own designated AWS account using the [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) operation.
+   + You send findings from within the customer account using the [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) operation. You could use assume-role approaches, but these approaches are not required.
 
-   For overall guidelines on using [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html), see [Guidelines for using the `BatchImportFindings` API](guidelines-batchimportfindings.md).
+   For overall guidelines on using [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html), see [Guidelines for using the `BatchImportFindings` API](guidelines-batchimportfindings.md).
 
 1. **How do I gather my findings and push them to a Security Hub CSPM Regional endpoint? **
 
@@ -78,7 +78,7 @@ The following are common questions about setting up and maintaining an integrati
 
 1. **How do I know when to start sending findings to Security Hub CSPM?**
 
-   Security Hub CSPM supports partial batch authorization for the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation, so that you can send all of your findings to Security Hub CSPM for all of your customers.
+   Security Hub CSPM supports partial batch authorization for the [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) API operation, so that you can send all of your findings to Security Hub CSPM for all of your customers.
 
    If some of your customers have not yet subscribed to Security Hub CSPM, Security Hub CSPM does not ingest those findings. It only ingests authorized findings that are in the batch.
 
@@ -86,7 +86,7 @@ The following are common questions about setting up and maintaining an integrati
 
    1. Ensure the correct IAM policies are in place.
 
-   1. Enable a product subscription (resource policies) for the accounts. Use either the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableImportFindingsForProduct.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableImportFindingsForProduct.html) API operation or the **Integrations** page. The customer can do this, or you can use cross-account roles to act on behalf of the customer.
+   1. Enable a product subscription (resource policies) for the accounts. Use either the [`EnableImportFindingsForProduct`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableImportFindingsForProduct.html) API operation or the **Integrations** page. The customer can do this, or you can use cross-account roles to act on behalf of the customer.
 
    1. Ensure that the `ProductArn` of the finding is your product's public ARN.
 
@@ -98,13 +98,13 @@ The following are common questions about setting up and maintaining an integrati
 
 1. **What IAM permissions must be in place for me to send findings? **
 
-   IAM policies must be configured for the IAM user or role that calls [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) or other API calls.
+   IAM policies must be configured for the IAM user or role that calls [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) or other API calls.
 
    The easiest test is to do this from an admin account. You can constrain these to `action: ‘securityhub:BatchImportFindings’` and `resource: {{<productArn and/or productSubscriptionArn>}}`.
 
    Resources in the same account can be configured with IAM policies without requiring resource policies.
 
-   To rule out IAM policy issues from the caller of [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html), set the IAM policy for the caller as follows:
+   To rule out IAM policy issues from the caller of [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html), set the IAM policy for the caller as follows:
 
    ```
    {
@@ -131,7 +131,7 @@ The following are common questions about setting up and maintaining an integrati
 
 1. **What is a product subscription?**
 
-   To receive findings from a specific partner product, the customer (or the partner with cross-account roles working on behalf of the customer) must establish a product subscription. To do this from the console, they use the **Integrations** page. To do this from the API, they use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableImportFindingsForProduct.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableImportFindingsForProduct.html) API operation.
+   To receive findings from a specific partner product, the customer (or the partner with cross-account roles working on behalf of the customer) must establish a product subscription. To do this from the console, they use the **Integrations** page. To do this from the API, they use the [`EnableImportFindingsForProduct`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableImportFindingsForProduct.html) API operation.
 
    The product subscription creates a resource policy that authorizes the findings from the partner to be received or sent by the customer. For details, see [Integration use cases and required permissions](integration-use-cases.md).
 
@@ -191,7 +191,7 @@ The following are common questions about setting up and maintaining an integrati
 
 1. **What are the rules and guidelines for sending batches of findings?**
 
-   You can batch up to 100 findings or 240 KB in a single call of [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html). Queue up and batch as many findings as possible up to this limit.
+   You can batch up to 100 findings or 240 KB in a single call of [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html). Queue up and batch as many findings as possible up to this limit.
 
    You can batch a set of findings from different accounts. However, if any of the accounts in the batch are not subscribed to Security Hub CSPM, the entire batch fails. This is a limitation of the API Gateway baseline authorization model.
 
@@ -205,7 +205,7 @@ The following are common questions about setting up and maintaining an integrati
 
 1. **Can I send updates to findings that someone else created?**
 
-   Yes, if the customer grants you access to the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) API operation, you can update certain fields using that operation. This operation is designed to be used by customers, SIEMs, ticketing systems, and Security Orchestration, Automation, and Response (SOAR) platforms.
+   Yes, if the customer grants you access to the [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) API operation, you can update certain fields using that operation. This operation is designed to be used by customers, SIEMs, ticketing systems, and Security Orchestration, Automation, and Response (SOAR) platforms.
 
 1. **How are findings aged off?**
 
@@ -302,7 +302,7 @@ The following are common questions about setting up and maintaining an integrati
 
 1. **What error or success messages does `BatchImportFindings` provide?**
 
-   Security Hub CSPM provides a response for authorization and a response for [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html). More crisp success, failure, and error messages are in development.
+   Security Hub CSPM provides a response for authorization and a response for [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html). More crisp success, failure, and error messages are in development.
 
 1. **What error handling is the source service responsible for?**
 
@@ -318,9 +318,9 @@ The following are common questions about setting up and maintaining an integrati
 
      The account ID does not change from the one that the Security Hub CSPM team included in the product ARNs that they provided to you.
 
-   `AccessDeniedException` is caused when a finding is sent to or from the wrong account, or when the account does not have a `ProductSubscription`. The error message will contain an ARN with a resource type of `product` or `product-subscription`. This error only occurs during cross-account calls. If you call [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) with your own account for the same account in `AwsAccountId` and `ProductArn`, the operation uses IAM policies and has nothing to do with `ProductSubscriptions`.
+   `AccessDeniedException` is caused when a finding is sent to or from the wrong account, or when the account does not have a `ProductSubscription`. The error message will contain an ARN with a resource type of `product` or `product-subscription`. This error only occurs during cross-account calls. If you call [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) with your own account for the same account in `AwsAccountId` and `ProductArn`, the operation uses IAM policies and has nothing to do with `ProductSubscriptions`.
 
-   Be sure the customer account and product account that you use are the actual registered accounts. Some partners have used an account number for the product from the product ARN, but try to use an entirely different account to call [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html). In other cases, they created `ProductSubscriptions` for other customer accounts, or even for their own product account. They did not create `ProductSubscriptions` for the customer account that they attempted to import findings into.
+   Be sure the customer account and product account that you use are the actual registered accounts. Some partners have used an account number for the product from the product ARN, but try to use an entirely different account to call [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html). In other cases, they created `ProductSubscriptions` for other customer accounts, or even for their own product account. They did not create `ProductSubscriptions` for the customer account that they attempted to import findings into.
 
 1. **Where do I send questions, comments, and bugs?**
 

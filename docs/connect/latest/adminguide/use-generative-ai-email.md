@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/use-generative
 
 To help agents to handle emails more efficiently, they can use generative AI-powered email responses. The email AI agents help agents provide faster email responses and more consistent support to customers.
 
-When an agent accepts an email contact that is [enabled](ai-agent-initial-setup.md#enable-ai-agents-step4) with Connect AI agents, they automatically receive three types of proactive responses in their Connect assistant panel on the agent workspace:
+When an agent accepts an email contact that is [enabled](ai-agent-initial-setup.md#enable-ai-agents-step4) with AI agents, they automatically receive three types of proactive responses in their Connect assistant panel on the agent workspace:
 
 1. [Email conversation overview](#email-conversation-overview). For example, it provides key information about the customer's purchase history.
 
@@ -104,11 +104,11 @@ Following is an overview of the steps to configure generative email responses fo
 ## Best practices to ensure quality responses
 <a name="best-practices"></a>
 
-To ensure the best quality response from Connect AI agents, implement the following best practices:
+To ensure the best quality response from AI agents, implement the following best practices:
 + Train your agents to review all AI-generated content before sending to customers or using in comments or notes.
 + Use email templates to ensure consistent formatting. For more information, see [Create message templates](create-message-templates1.md).
 + Maintain up-to-date knowledge base content to improve response quality. For more information, see [Step 3: Create an integration (knowledge base)](ai-agent-initial-setup.md#enable-ai-agents-step-3).
-+ Use AI guardrails to ensure appropriate content generation. For more information, see [Create AI guardrails for Connect AI agents](create-ai-guardrails.md).
-+ Monitor Connect AI agent performance through Amazon CloudWatch logs for:
++ Use AI guardrails to ensure appropriate content generation. For more information, see [Create AI guardrails for AI agents](create-ai-guardrails.md).
++ Monitor AI agent performance through Amazon CloudWatch logs for:
   + Response feedback from your agents. For more information, see [TRANSCRIPT\_RESULT\_FEEDBACK](monitor-ai-agents.md#documenting-cw-events-ih).
   + Generated email responses shown to agents. For more information, see [TRANSCRIPT\_RECOMMENDATION](monitor-ai-agents.md#documenting-cw-events-ih).

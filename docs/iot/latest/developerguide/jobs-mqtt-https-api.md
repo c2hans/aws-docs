@@ -37,7 +37,7 @@ When you use the MQTT and HTTP data plane API operations, the `JobExecution` dat
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_JobExecution.html](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_JobExecution.html) or [https://docs.aws.amazon.com/cli/latest/reference/iot-data/job-execution.html](https://docs.aws.amazon.com/cli/latest/reference/iot-data/job-execution.html).
+For more information, see [`JobExecution`](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_JobExecution.html) or [`job-execution`](https://docs.aws.amazon.com/cli/latest/reference/iot-data/job-execution.html).
 
 ### JobExecutionState
 <a name="jobs-mqtt-job-execution-state"></a>
@@ -55,7 +55,7 @@ The `JobExecutionState` contains information about the state of a job execution.
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_JobExecutionState.html](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_JobExecutionState.html) or [https://docs.aws.amazon.com/cli/latest/reference/iot-data/job-execution-state.html](https://docs.aws.amazon.com/cli/latest/reference/iot-data/job-execution-state.html).
+For more information, see [`JobExecutionState`](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_JobExecutionState.html) or [`job-execution-state`](https://docs.aws.amazon.com/cli/latest/reference/iot-data/job-execution-state.html).
 
 ### JobExecutionSummary
 <a name="jobs-mqtt-job-execution-summary"></a>
@@ -73,7 +73,7 @@ Contains a subset of information about a job execution. The following example sh
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_JobExecutionSummary.html](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_JobExecutionSummary.html) or [https://docs.aws.amazon.com/cli/latest/reference/iot-data/job-execution-summary.html](https://docs.aws.amazon.com/cli/latest/reference/iot-data/job-execution-summary.html).
+For more information, see [`JobExecutionSummary`](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_JobExecutionSummary.html) or [`job-execution-summary`](https://docs.aws.amazon.com/cli/latest/reference/iot-data/job-execution-summary.html).
 
 **Topics**
 + [Jobs device MQTT and HTTPS data types](#jobs-data-plane-data-types)

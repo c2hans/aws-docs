@@ -11,7 +11,7 @@ Use the `GetDICOMInstanceMetadata` action to retrieve the metadata from a DICOM 
 
 1. Collect HealthImaging `datastoreId` and `imageSetId` parameter values.
 
-1. Use the [https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetImageSetMetadata.html](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetImageSetMetadata.html) action with the `datastoreId` and `imageSetId` parameter values to retrieve associated metadata values for `studyInstanceUID`, `seriesInstanceUID`, and `sopInstanceUID`. For more information, see [Getting image set metadata](get-image-set-metadata.md).
+1. Use the [`GetImageSetMetadata`](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetImageSetMetadata.html) action with the `datastoreId` and `imageSetId` parameter values to retrieve associated metadata values for `studyInstanceUID`, `seriesInstanceUID`, and `sopInstanceUID`. For more information, see [Getting image set metadata](get-image-set-metadata.md).
 
 1. Construct a URL for the request using the values for `datastoreId`, `studyInstanceUID`, `seriesInstanceUID`, `sopInstanceUID`, and `imageSetId`. To view the entire URL path in the following example, scroll over the **Copy** button. The URL is of the form:
 

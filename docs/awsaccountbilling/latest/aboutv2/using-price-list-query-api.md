@@ -90,7 +90,7 @@ aws pricing describe-services --region us-east-1 --service-code AmazonEC2
 
 The AWS Region is the API endpoint for the Price List Query API. The endpoints aren't related to product or service attributes.
 
-For more information, see [https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_DescribeServices.html](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_DescribeServices.html) in the *AWS Billing and Cost Management API Reference*.
+For more information, see [DescribeServices](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_DescribeServices.html) in the *AWS Billing and Cost Management API Reference*.
 
 ## Step 2: Finding available values for attributes
 <a name="price-list-query-api-find-attributes"></a>
@@ -133,7 +133,7 @@ aws pricing get-attribute-values --service-code AmazonRDS --attribute-name opera
 
 The AWS Region is the API endpoint for the Price List Query API. The endpoints aren't related to product or service attributes.
 
-For more information, see [https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetAttributeValues.html](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetAttributeValues.html) and [language-specific AWS SDKs](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetAttributeValues.html#API_pricing_GetAttributeValues_SeeAlso) in the *AWS Billing and Cost Management API Reference*.
+For more information, see [GetAttributeValues](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetAttributeValues.html) and [language-specific AWS SDKs](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetAttributeValues.html#API_pricing_GetAttributeValues_SeeAlso) in the *AWS Billing and Cost Management API Reference*.
 
 ## Step 3: Finding products from attributes
 <a name="using-the-aws-price-list-query-api-finding-products-from-attributes"></a>
@@ -247,6 +247,6 @@ The following example shows how you can specify more than one filter.
 ```
 
 For more information, see the following topics:
-+ [https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetProducts.html](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetProducts.html) and [language-specific AWS SDKs](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetProducts.html#API_pricing_GetProducts_SeeAlso) in the *AWS Billing and Cost Management API Reference*
++ [GetProducts](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetProducts.html) and [language-specific AWS SDKs](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetProducts.html#API_pricing_GetProducts_SeeAlso) in the *AWS Billing and Cost Management API Reference*
 + [Reading the service price list files](reading-service-price-list-files.md)
 + [Finding prices in the service price list file](finding-prices-in-service-price-list-files.md)

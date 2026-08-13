@@ -13,7 +13,7 @@ Check the value of the `enaSupport` instance attribute.
 ------
 #### [ AWS CLI ]
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command.
+Use the [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command.
 
 ```
 aws ec2 describe-instances \
@@ -32,7 +32,7 @@ If enhanced networking is enabled, the output is as follows.
 ------
 #### [ PowerShell ]
 
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
+Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
 
 ```
 (Get-EC2Instance -InstanceId {{i-1234567890abcdef0}}).Instances.EnaSupport
@@ -52,7 +52,7 @@ Check the value of the `enaSupport` image attribute.
 ------
 #### [ AWS CLI ]
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command.
+Use the [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command.
 
 ```
 aws ec2 describe-images \
@@ -71,7 +71,7 @@ If enhanced networking is enabled, the output is as follows.
 ------
 #### [ PowerShell ]
 
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet.
+Use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet.
 
 ```
 (Get-EC2Image -ImageId {{ami-0abcdef1234567890}}).EnaSupport

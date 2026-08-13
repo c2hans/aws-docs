@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Calcu
 <a name="API_CalculateRoute"></a>
 
 **Important**
-This operation is no longer current and may be deprecated in the future. We recommend you upgrade to [/location/latest/APIReference/API_CalculateRoutes.html](/location/latest/APIReference/API_CalculateRoutes.html) or [/location/latest/APIReference/API_CalculateIsolines.html](/location/latest/APIReference/API_CalculateIsolines.html) unless you require Grab data.
+This operation is no longer current and may be deprecated in the future. We recommend you upgrade to [`CalculateRoutes`](/location/latest/APIReference/API_CalculateRoutes.html) or [`CalculateIsolines`](/location/latest/APIReference/API_CalculateIsolines.html) unless you require Grab data.
  `CalculateRoute` is part of a previous Amazon Location Service Routes API (version 1) which has been superseded by a more intuitive, powerful, and complete API (version 2).
 The version 2 `CalculateRoutes` operation gives better results for point-to-point routing, while the version 2 `CalculateIsolines` operation adds support for calculating service areas and travel time envelopes.
 If you are using an AWS SDK or the AWS CLI, note that the Routes API version 2 is found under `geo-routes` or `geo_routes`, not under `location`.

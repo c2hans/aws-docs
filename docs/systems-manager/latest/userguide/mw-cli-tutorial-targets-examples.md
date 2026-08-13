@@ -18,7 +18,7 @@ If a single maintenance window task is registered with multiple targets, its tas
 
 For more information about creating and managing resource groups, see [What are resource groups?](https://docs.aws.amazon.com/ARG/latest/userguide/resource-groups.html) in the *AWS Resource Groups User Guide* and [Resource Groups and Tagging for AWS](https://aws.amazon.com/blogs/aws/resource-groups-and-tagging/) in the *AWS News Blog*.
 
-For information about quotas for Maintenance Windows, a tool in AWS Systems Manager, in addition to those specified in the following examples, see [Systems Manager service quotas](https://docs.aws.amazon.com/general/latest/gr/ssm.html#limits_ssm) in the *Amazon Web Services General Reference*.
+For information about quotas for Maintenance Windows, in addition to those specified in the following examples, see [Systems Manager service quotas](https://docs.aws.amazon.com/general/latest/gr/ssm.html#limits_ssm) in the *Amazon Web Services General Reference*.
 
 ## Example 1: Register multiple targets using node IDs
 <a name="mw-target-example-1"></a>
@@ -83,7 +83,7 @@ aws ssm register-target-with-maintenance-window ^
 **Quotas:** You can specify up to five key-value pairs total for each target. If you specify more than one key-value pair, a node must be tagged with *all* the tag keys and values you specify to be included in the target group.
 
 **Note**
-You can tag a group of nodes with the tag-key `Patch Group` or `PatchGroup` and assign the nodes a common key value, such as `my-patch-group`. (You must use `PatchGroup`, without a space, if you have [allowed tags in EC2 instance metadata](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#allow-access-to-tags-in-IMDS).) Patch Manager, a tool in Systems Manager, evaluates the `Patch Group` or `PatchGroup` key on nodes to help determine which patch baseline applies to them. If your task will run the `AWS-RunPatchBaseline` SSM document (or the legacy `AWS-ApplyPatchBaseline` SSM document), you can specify the same `Patch Group` or `PatchGroup` key-value pair when you register targets with a maintenance window. For example: `--target "Key=tag:PatchGroup,Values={{my-patch-group}}`. Doing so allows you to use a maintenance window to update patches on a group of nodes that are already associated with the same patch baseline. For more information, see [Patch groups](patch-manager-patch-groups.md).
+You can tag a group of nodes with the tag-key `Patch Group` or `PatchGroup` and assign the nodes a common key value, such as `my-patch-group`. (You must use `PatchGroup`, without a space, if you have [allowed tags in EC2 instance metadata](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#allow-access-to-tags-in-IMDS).) Patch Manager, a tool in Systems Manager, evaluates the `Patch Group` or `PatchGroup` key on nodes to help determine which patch baseline applies to them. If your task will run the `AWS-RunPatchBaseline` SSM document (or the legacy `AWS-ApplyPatchBaseline` SSM document), you can specify the same `Patch Group` or `PatchGroup` key-value pair when you register targets with a maintenance window. For example: `--target "Key=tag:PatchGroup,Values={{my-patch-group}}`. Doing so lets you use a maintenance window to update patches on a group of nodes that are already associated with the same patch baseline. For more information, see [Patch groups](patch-manager-patch-groups.md).
 
 ## Example 3: Register targets using a group of tag keys (without tag values)
 <a name="mw-target-example-3"></a>

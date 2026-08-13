@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect
 # Set up your contact center in Connect Customer
 <a name="amazon-connect-contact-centers"></a>
 
-To get started, you [create an Connect Customer instance](amazon-connect-instances.md), which is a virtual contact center.
+To get started, you [create a Connect Customer instance](amazon-connect-instances.md), which is a virtual contact center.
 
-After you create an Connect Customer instance, you can:
+After you create a Connect Customer instance, you can:
 + [Test](chat-testing.md) the voice and chat experiences to learn how they work.
 + [Set up your channels](set-channels.md). How do you want customers to reach your contact center?
   + [Claim a phone number](ag-overview-numbers.md) for your contact center or [port](about-porting.md) your own phone number from another carrier.

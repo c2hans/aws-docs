@@ -12,7 +12,7 @@ Virtual machines [ managed by a hypervisor](https://docs.aws.amazon.com//aws-bac
 
 AWS Backup provides encryption for hypervisor credentials to protect sensitive customer login information using **AWS owned encryption** keys. You have the option of using **customer managed keys **instead.
 
-By default, the keys used to encrypt credentials in your hypervisor are **AWS owned keys**. AWS Backup uses these keys to automatically encrypt hypervisor credentials. You can neither view, manage, or use AWS owned keys, nor can you audit their use. However, you don't have to take any action or change any programs to protect the keys that encrypt your data. For more information, see AWS owned keys in the [https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-mgmt](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-mgmt).
+By default, the keys used to encrypt credentials in your hypervisor are **AWS owned keys**. AWS Backup uses these keys to automatically encrypt hypervisor credentials. You can neither view, manage, or use AWS owned keys, nor can you audit their use. However, you don't have to take any action or change any programs to protect the keys that encrypt your data. For more information, see AWS owned keys in the [* AWS KMS Developer Guide*](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-mgmt).
 
 Alternatively, credentials can be encrypted using *Customer managed keys*. AWS Backup supports the use of symmetric customer-managed keys that you create, own, and manage to perform your encryption. Because you have full control of this encryption, you can perform tasks such as:
 + Establishing and maintaining key policies
@@ -32,7 +32,7 @@ For more information, see [customer managed keys](https://docs.aws.amazon.com/km
 ## Grant required when using customer managed keys
 <a name="encryption-grant"></a>
 
-AWS KMS requires a [ grant](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html) to use your customer managed key. When you import a [ hypervisor configuration](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_ImportHypervisorConfiguration.html) encrypted with a customer managed key, AWS Backup creates a grant on your behalf by sending a [https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) request to AWS KMS. AWS Backup uses grants to access a KMS key in a customer account.
+AWS KMS requires a [ grant](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html) to use your customer managed key. When you import a [ hypervisor configuration](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_ImportHypervisorConfiguration.html) encrypted with a customer managed key, AWS Backup creates a grant on your behalf by sending a [`CreateGrant`](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) request to AWS KMS. AWS Backup uses grants to access a KMS key in a customer account.
 
 You can revoke access to the grant, or remove AWS Backup's access to the customer managed key at any time. If you do, all your gateways associated with your hypervisor can no longer access the hypervisor's username and password encrypted by the customer managed key, which will affect your backup and restore jobs. Specifically, backup and restore jobs you perform on the virtual machines in this hypervisor will fail.
 

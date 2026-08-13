@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/configu
 # Control access to maintenance windows using the AWS CLI
 <a name="configuring-maintenance-window-permissions-cli"></a>
 
-The following procedures describe how to use the AWS Command Line Interface (AWS CLI) to create the required permissions and roles for Maintenance Windows, a tool in AWS Systems Manager.
+The following procedures describe how to use the AWS Command Line Interface (AWS CLI) to create the required permissions and roles for Maintenance Windows.
 
 **Topics**
 + [Task 1: Create trust policy and customer managed policy files in JSON format](#create-custom-policy-json-files-cli)

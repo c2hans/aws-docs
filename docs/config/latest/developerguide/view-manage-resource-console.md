@@ -37,7 +37,7 @@ The configuration items that AWS Config records are delivered to the specified d
 #### Viewing Configuration History
 <a name="get-config-history-cli"></a>
 
-Enter the [http://docs.aws.amazon.com/cli/latest/reference/configservice/get-resource-config-history.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/get-resource-config-history.html) command and specify the resource type and the resource ID, for example:
+Enter the [`get-resource-config-history`](http://docs.aws.amazon.com/cli/latest/reference/configservice/get-resource-config-history.html) command and specify the resource type and the resource ID, for example:
 
 ```
 $ aws configservice get-resource-config-history --resource-type AWS::EC2::SecurityGroup --resource-id sg-6fbb3807

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/gs-cli-subs
 # Starting AWS Config with a customer managed configuration recorder using the AWS CLI
 <a name="gs-cli-subscribe"></a>
 
-You can start AWS Config by creating a customer managed configuration recorder. To create a customer managed configuration recorder with the AWS CLI, use the following commands: [https://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html](https://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html), [https://docs.aws.amazon.com/cli/latest/reference/configservice/put-delivery-channel.html](https://docs.aws.amazon.com/cli/latest/reference/configservice/put-delivery-channel.html), and [https://docs.aws.amazon.com/cli/latest/reference/configservice/start-configuration-recorder.html](https://docs.aws.amazon.com/cli/latest/reference/configservice/start-configuration-recorder.html).
+You can start AWS Config by creating a customer managed configuration recorder. To create a customer managed configuration recorder with the AWS CLI, use the following commands: [`put-configuration-recorder`](https://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html), [`put-delivery-channel`](https://docs.aws.amazon.com/cli/latest/reference/configservice/put-delivery-channel.html), and [`start-configuration-recorder`](https://docs.aws.amazon.com/cli/latest/reference/configservice/start-configuration-recorder.html).
 + The `put-configuration-recorder` command creates a customer managed configuration recorder.
 + The `put-delivery-channel` command creates a delivery channel where AWS Config delivers configuration information to an S3 bucket and SNS topic.
 + The `start-configuration-recorder` starts the customer managed configuration recorder. The customer managed configuration recorder will begin recording configuration changes for the resource types you specify.
@@ -38,7 +38,7 @@ You can have only one delivery channel region for each AWS account for each AWS 
 ## Step 1: Run the put-configuration-recorder
 <a name="gs-cli-subscribe-put-configuration-recorder"></a>
 
-Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) command to create a customer managed configuration recorder:
+Use the [`put-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) command to create a customer managed configuration recorder:
 
 This command uses the `--configuration-recorder` and `---recording-group` fields.
 
@@ -87,12 +87,12 @@ The `recordingGroup.json` file specifies which resource types are recorded.
 }
 ```
 
-For more information about these fields, see [http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) in the *AWS CLI Command Reference*.
+For more information about these fields, see [`put-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) in the *AWS CLI Command Reference*.
 
 ## Step 2: Run the put-delivery-channel command
 <a name="gs-cli-subscribe-put-delivery-channel"></a>
 
-Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/put-delivery-channel.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-delivery-channel.html) command to create a delivery channel:
+Use the [`put-delivery-channel`](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-delivery-channel.html) command to create a delivery channel:
 
 This command uses the `--delivery-channel` field.
 
@@ -119,15 +119,15 @@ The `deliveryChannel.json` file specifies the following:
 }
 ```
 
-For more information about these fields, see [http://docs.aws.amazon.com/cli/latest/reference/configservice/put-delivery-channel.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-delivery-channel.html) in the *AWS CLI Command Reference*.
+For more information about these fields, see [`put-delivery-channel`](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-delivery-channel.html) in the *AWS CLI Command Reference*.
 
 ## Step 3: Run the start-configuration-recorder command
 <a name="gs-cli-subscribe-start-configuration-recorder"></a>
 
-Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/start-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/start-configuration-recorder.html) command to start AWS Config:
+Use the [`start-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/start-configuration-recorder.html) command to start AWS Config:
 
 ```
 $ aws configservice start-configuration-recorder --configuration-recorder-name {{configRecorderName}}
 ```
 
-For more information about these fields, see [http://docs.aws.amazon.com/cli/latest/reference/configservice/start-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/start-configuration-recorder.html) in the *AWS CLI Command Reference*.
+For more information about these fields, see [`start-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/start-configuration-recorder.html) in the *AWS CLI Command Reference*.

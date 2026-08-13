@@ -12,7 +12,7 @@ AWS X-Ray supports tracing event-driven applications using Amazon SQS and AWS La
 ![Trace map from Lambda through the Amazon SQS queue.](http://docs.aws.amazon.com/xray/latest/devguide/images/console-batch-servicemap-linkededge.png)
 
 Amazon SQS supports the following tracing header instrumentation:
-+ **Default HTTP Header** – The X-Ray SDK automatically populates the trace header as an HTTP header when you call Amazon SQS through the AWS SDK. The default trace header is carried by `X-Amzn-Trace-Id` and corresponds to all messages included in a [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html) or [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html) request. To learn more about the default HTTP header, see [Tracing header](xray-concepts.md#xray-concepts-tracingheader).
++ **Default HTTP Header** – The X-Ray SDK automatically populates the trace header as an HTTP header when you call Amazon SQS through the AWS SDK. The default trace header is carried by `X-Amzn-Trace-Id` and corresponds to all messages included in a [`SendMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html) or [`SendMessageBatch`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html) request. To learn more about the default HTTP header, see [Tracing header](xray-concepts.md#xray-concepts-tracingheader).
 + **`AWSTraceHeader` System Attribute** – The `AWSTraceHeader` is a [message system attribute](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_MessageSystemAttributeValue.html) reserved by Amazon SQS to carry the X-Ray trace header with messages in the queue. `AWSTraceHeader` is available for use even when auto-instrumentation through the X-Ray SDK is not, for example when building a tracing SDK for a new language. When both header instrumentations are set, the message system attribute overrides the HTTP trace header.
 
 When running on Amazon EC2, Amazon SQS supports processing one message at a time. This applies when running on an on-premises host, and when using container services, such as AWS Fargate, Amazon ECS, or AWS App Mesh.
@@ -22,7 +22,7 @@ The trace header is excluded from both Amazon SQS message size and message attri
 ## Send the HTTP trace header
 <a name="xray-services-sqs-sending"></a>
 
-Sender components in Amazon SQS can send the trace header automatically through the [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html) or [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html) call. When AWS SDK clients are instrumented, they can be automatically tracked through all languages supported through the X-Ray SDK. Traced AWS services and resources that you access within those services (for example, an Amazon S3 bucket or Amazon SQS queue), appear as downstream nodes on the trace map in the X-Ray console.
+Sender components in Amazon SQS can send the trace header automatically through the [`SendMessageBatch`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html) or [`SendMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html) call. When AWS SDK clients are instrumented, they can be automatically tracked through all languages supported through the X-Ray SDK. Traced AWS services and resources that you access within those services (for example, an Amazon S3 bucket or Amazon SQS queue), appear as downstream nodes on the trace map in the X-Ray console.
 
 To learn how to trace AWS SDK calls with your preferred language, see the following topics in the supported SDKs:
 + Go – [Tracing AWS SDK calls with the X-Ray SDK for Go](xray-sdk-go-awssdkclients.md)
@@ -38,7 +38,7 @@ To learn how to trace AWS SDK calls with your preferred language, see the follow
 If you are using a Lambda downstream consumer, trace context propagation is automatic. To continue context propagation with other Amazon SQS consumers, you must manually instrument the handoff to the receiver component.
 
 There are three main steps to recovering the trace context:
-+ Receive the message from the queue for the `AWSTraceHeader` attribute by calling the [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html) API.
++ Receive the message from the queue for the `AWSTraceHeader` attribute by calling the [`ReceiveMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html) API.
 + Retrieve the trace header from the attribute.
 + Recover the trace ID from the header. Optionally, add more metrics to the segment.
 

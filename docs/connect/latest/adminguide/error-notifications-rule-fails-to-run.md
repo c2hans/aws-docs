@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/error-notifications-rule-fails-to-run.html
 ---
 
-# Error notifications when an Connect Customer rule fails to run
+# Error notifications when a Connect Customer rule fails to run
 <a name="error-notifications-rule-fails-to-run"></a>
 
 It's important to know when a specific rule action has failed in a production environment, and what caused the failure. Then you can proactively mitigate such failures in future.
@@ -16,7 +16,7 @@ Events are emitted on a [best effort](https://docs.aws.amazon.com/eventbridge/la
 
 To subscribe to these notifications, create a custom EventBridge rule that matches the following:
 + "source" = "aws.connect"
-+ "detail-type" = "Contact Lens Rules Action Execution Failed"
++ "detail-type" = "conversational analytics Rules Action Execution Failed"
 
 You can also add to the pattern to be notified when a specific event code occurs. For more information, see [Event Patterns](https://docs.aws.amazon.com/eventbridge/latest/userguide/filtering-examples-structure.html) in the *Amazon EventBridge User Guide*.
 
@@ -50,7 +50,7 @@ The format of a notification looks like the following sample:
 + `GENERATE_EVENTBRIDGE_EVENT`
 + `SEND_NOTIFICATION`
 
-For information about `ASSIGN_CONTACT_CATEGORY`, see [Error notifications: When Contact Lens can't analyze a contact Troubleshoot](contact-lens-error-notifications.md).
+For information about `ASSIGN_CONTACT_CATEGORY`, see [Error notifications: When conversational analytics can't analyze a contact Troubleshoot](contact-lens-error-notifications.md).
 
 ## Supported trigger events
 <a name="supported-trigger-events"></a>

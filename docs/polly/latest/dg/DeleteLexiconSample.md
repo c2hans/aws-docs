@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/DeleteLexiconSample.html
 
 The following Java code sample show how to use Java-based applications to delete a specific lexicon stored in an AWS Region. A lexicon which has been deleted is not available for speech synthesis, nor can it be retrieved using either the `GetLexicon` or `ListLexicon` APIs.
 
-For more information on this operation, see the reference for the [https://docs.aws.amazon.com/polly/latest/APIReference/API_DeleteLexicon.html](https://docs.aws.amazon.com/polly/latest/APIReference/API_DeleteLexicon.html) API.
+For more information on this operation, see the reference for the [`DeleteLexicon`](https://docs.aws.amazon.com/polly/latest/APIReference/API_DeleteLexicon.html) API.
 
 ## SDK v2
 <a name="delete-sdk-v2"></a>

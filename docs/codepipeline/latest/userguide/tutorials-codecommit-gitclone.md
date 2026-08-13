@@ -10,7 +10,7 @@ You can choose the full clone option for your CodeCommit source action in CodePi
 In this tutorial, you create a pipeline that accesses your CodeCommit repository, uses the full clone option for source data, and runs a CodeBuild build that clones your repository and performs Git commands for the repository.
 
 **Note**
-CodeBuild actions are the only downstream actions support use of Git metadata available with the Git clone option. Also, while your pipeline can contain cross-account actions, the CodeCommit action and the CodeBuild action must be in the same account for the full clone option to succeed.
+CodeBuild actions are the only downstream actions that support the use of Git metadata available with the Git clone option. Also, while your pipeline can contain cross-account actions, the CodeCommit action and the CodeBuild action must be in the same account for the full clone option to succeed.
 
 **Important**
 As part of creating a pipeline, an S3 artifact bucket provided by the customer will be used by CodePipeline for artifacts. (This is different from the bucket used for an S3 source action.) If the S3 artifact bucket is in a different account from the account for your pipeline, make sure that the S3 artifact bucket is owned by AWS accounts that are safe and will be dependable.
@@ -36,7 +36,7 @@ Use these steps to add a README file to your source repository. The README file 
 
 1. Log in to your repository and choose your repository.
 
-1. To create a new file, choose **Add file > Create file**. Name the file `README.md`. file and add the following text.
+1. To create a new file, choose **Add file > Create file**. Name the file `README.md` and add the following text.
 
    ```
    This is a CodeCommit repository!
@@ -67,7 +67,7 @@ In this section, you create a pipeline with the following actions:
 
 1. In **Service role**, do one of the following:
    + Choose **Existing service role**.
-   + Choose your existing CodePipeline service role. This role must have the `codecommit:GetRepository` IAM permission to your service role policy. See [Add permissions to the the CodePipeline service role](https://docs.aws.amazon.com/codepipeline/latest/userguide/security-iam.html#how-to-update-role-new-services).
+   + Choose your existing CodePipeline service role. This role must have the `codecommit:GetRepository` IAM permission to your service role policy. See [Add permissions to the CodePipeline service role](https://docs.aws.amazon.com/codepipeline/latest/userguide/security-iam.html#how-to-update-role-new-services).
 
 1. Under **Advanced settings**, leave the defaults. Choose **Next**.
 

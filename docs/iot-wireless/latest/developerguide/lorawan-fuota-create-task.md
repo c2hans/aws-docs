@@ -105,7 +105,7 @@ You can either create a new service role or choose an existing role to allow AWS
 ## Create FUOTA task and upload firmware image by using the API
 <a name="lorawan-fuota-task-api"></a>
 
-To create a FUOTA task and specify your firmware image file by using the API, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateFuotaTask.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateFuotaTask.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-fuota-task.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-fuota-task.html) CLI command. You can provide an `input.json` file as input to the `create-fuota-task` command.
+To create a FUOTA task and specify your firmware image file by using the API, use the [`CreateFuotaTask`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateFuotaTask.html) API operation or the [`create-fuota-task`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-fuota-task.html) CLI command. You can provide an `input.json` file as input to the `create-fuota-task` command.
 
 When you use the API or CLI:
 + You must have already uploaded the firmware image file to an S3 bucket, which you'll then provide as input to the API.
@@ -134,10 +134,10 @@ where:
 ```
 
 After you create your FUOTA task, you can use the following API operations or CLI commands to update, delete, or get information about your FUOTA task.
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateFuotaTask](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateFuotaTask) or [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/update-fuota-task.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/update-fuota-task.html)
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetFuotaTask](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetFuotaTask) or [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-fuota-task.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-fuota-task.html)
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListFuotaTasks](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListFuotaTasks) or [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-fuota-tasks.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-fuota-tasks.html)
-+ [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteFuotaTask](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteFuotaTask) or [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/delete-fuota-task.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/delete-fuota-task.html)
++ [`UpdateFuotaTask`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateFuotaTask) or [`update-fuota-task`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/update-fuota-task.html)
++ [`GetFuotaTask`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetFuotaTask) or [`get-fuota-task`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-fuota-task.html)
++ [`ListFuotaTasks`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListFuotaTasks) or [`list-fuota-tasks`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-fuota-tasks.html)
++ [`DeleteFuotaTask`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteFuotaTask) or [`delete-fuota-task`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/delete-fuota-task.html)
 
 ## Next steps
 <a name="lorawan-fuota-next-steps"></a>

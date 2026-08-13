@@ -23,6 +23,9 @@ Content-type: application/json
    "clientToken": "{{string}}",
    "description": "{{string}}",
    "executionRoleArn": "{{string}}",
+   "filesystemConfigurations": [
+      { ... }
+   ],
    "name": "{{string}}",
    "networkConfiguration": {
       "networkMode": "{{string}}",
@@ -72,6 +75,12 @@ The Amazon Resource Name (ARN) of the IAM role that provides permissions for the
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `arn:aws(-[^:]+)?:iam::([0-9]{12})?:role/.+`
+Required: No
+
+ ** [filesystemConfigurations](#API_CreateCodeInterpreter_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateCodeInterpreter-request-filesystemConfigurations"></a>
+The file system configurations to mount into the code interpreter. Use these configurations to mount your own Amazon Simple Storage Service (Amazon S3) Files or Amazon Elastic File System (Amazon EFS) access points. Your sessions can then access your data. If you don't specify this field, no file systems are mounted.
+Type: Array of [ToolsFileSystemConfiguration](API_ToolsFileSystemConfiguration.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Required: No
 
  ** [name](#API_CreateCodeInterpreter_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateCodeInterpreter-request-name"></a>

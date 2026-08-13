@@ -150,7 +150,7 @@ Outputs:
       Name: !Sub "${AWS::StackName}-VPCID"
 ```
 
-For more information about the `Fn::Sub` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-sub.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-sub.html).
+For more information about the `Fn::Sub` function, see [Fn::Sub](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-sub.html).
 
 ### Customize export name using `Fn::Join`
 <a name="outputs-section-structure-examples-join-export-name"></a>
@@ -186,7 +186,7 @@ Outputs:
       Name: !Join [ ":", [ !Ref "AWS::StackName", VPCID ] ]
 ```
 
-For more information about the `Fn::Join` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-join.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-join.html).
+For more information about the `Fn::Join` function, see [Fn::Join](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-join.html).
 
 ### Return a URL constructed using `Fn::Join`
 <a name="outputs-section-structure-examples-join-export-url"></a>
@@ -241,4 +241,4 @@ Outputs:
     Description: Installation URL of the WordPress website
 ```
 
-For more information about the `Fn::Join` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-join.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-join.html).
+For more information about the `Fn::Join` function, see [Fn::Join](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-join.html).

@@ -57,9 +57,6 @@ Properties:
 Property description not available.
 *Required*: No
 *Type*: String
-*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,119}$`
-*Minimum*: `1`
-*Maximum*: `120`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EndTime`  <a name="cfn-sagemaker-experimenttrialcomponent-endtime"></a>
@@ -90,16 +87,12 @@ Property description not available.
 Property description not available.
 *Required*: No
 *Type*: Array of [TagsItems](aws-properties-sagemaker-experimenttrialcomponent-tagsitems.md)
-*Maximum*: `50`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TrialComponentName`  <a name="cfn-sagemaker-experimenttrialcomponent-trialcomponentname"></a>
 Property description not available.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,119}$`
-*Minimum*: `1`
-*Maximum*: `120`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values

@@ -150,7 +150,7 @@ The Apache Airflow scheduler, workers, and webserver (for Apache Airflow v2.2.2 
 
 The following section describes how to install a wheel that's in the `plugins.zip` file on your Amazon S3 bucket.
 
-1. **Download the necessary WHL files** You can use [https://pip.pypa.io/en/stable/cli/pip_download/](https://pip.pypa.io/en/stable/cli/pip_download/) with your existing `requirements.txt` on the Amazon MWAA [aws-mwaa-docker-images](https://github.com/aws/amazon-mwaa-docker-images) or another [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2) container to resolve and download the necessary Python wheel files.
+1. **Download the necessary WHL files** You can use [`pip download`](https://pip.pypa.io/en/stable/cli/pip_download/) with your existing `requirements.txt` on the Amazon MWAA [aws-mwaa-docker-images](https://github.com/aws/amazon-mwaa-docker-images) or another [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2) container to resolve and download the necessary Python wheel files.
 
    ```
    pip3 download -r "$AIRFLOW_HOME/dags/requirements.txt" -d "$AIRFLOW_HOME/plugins"
@@ -158,7 +158,7 @@ The following section describes how to install a wheel that's in the `plugins.zi
    zip "{{$AIRFLOW_HOME}}/plugins.zip" *
    ```
 
-1. **Specify the path in your `requirements.txt`**. Specify the plugins directory at the top of your requirements.txt using [https://pip.pypa.io/en/stable/cli/pip_install/#install-find-links](https://pip.pypa.io/en/stable/cli/pip_install/#install-find-links) and instruct `pip` not to install from other sources using [https://pip.pypa.io/en/stable/cli/pip_install/#install-no-index](https://pip.pypa.io/en/stable/cli/pip_install/#install-no-index), as listed in the following code:
+1. **Specify the path in your `requirements.txt`**. Specify the plugins directory at the top of your requirements.txt using [`--find-links`](https://pip.pypa.io/en/stable/cli/pip_install/#install-find-links) and instruct `pip` not to install from other sources using [`--no-index`](https://pip.pypa.io/en/stable/cli/pip_install/#install-no-index), as listed in the following code:
 
    ```
    --find-links /usr/local/airflow/plugins

@@ -39,7 +39,7 @@ After you create an CloudFormation stack that contains your group version, you c
 To deploy a group, you must have a Greengrass service role associated with your AWS account. The service role allows AWS IoT Greengrass to access your resources in AWS Lambda and other AWS services. This role should exist if you already deployed a Greengrass group in the current AWS Region. For more information, see [Greengrass service role](service-role.md).
 
 **To deploy the group (AWS CLI)**
-+ Run the [https://docs.aws.amazon.com/greengrass/v1/apireference/createdeployment-post.html](https://docs.aws.amazon.com/greengrass/v1/apireference/createdeployment-post.html) command.
++ Run the [**create-deployment**](https://docs.aws.amazon.com/greengrass/v1/apireference/createdeployment-post.html) command.
 
   ```
   aws greengrass create-deployment --group-id {{GroupId}} --group-version-id {{GroupVersionId}} --deployment-type NewDeployment

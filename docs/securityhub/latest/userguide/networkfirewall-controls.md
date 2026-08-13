@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the AWS Network Firewall service a
 
 **Resource type:** `AWS::NetworkFirewall::Firewall`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/netfw-multi-az-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/netfw-multi-az-enabled.html)
+**AWS Config rule:** [netfw-multi-az-enabled](https://docs.aws.amazon.com/config/latest/developerguide/netfw-multi-az-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -58,7 +58,7 @@ AWS global infrastructure includes multiple AWS Regions. AZs are physically sepa
 
 **Resource type:** `AWS::NetworkFirewall::LoggingConfiguration`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/netfw-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/netfw-logging-enabled.html)
+**AWS Config rule:** [netfw-logging-enabled](https://docs.aws.amazon.com/config/latest/developerguide/netfw-logging-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -84,7 +84,7 @@ To enable logging for a firewall, see [Updating a firewall's logging configurati
 
 **Resource type:** `AWS::NetworkFirewall::FirewallPolicy`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/netfw-policy-rule-group-associated.html](https://docs.aws.amazon.com/config/latest/developerguide/netfw-policy-rule-group-associated.html)
+**AWS Config rule:** [netfw-policy-rule-group-associated](https://docs.aws.amazon.com/config/latest/developerguide/netfw-policy-rule-group-associated.html)
 
 **Schedule type:** Change triggered
 
@@ -110,7 +110,7 @@ To add a rule group to a Network Firewall policy, see [Updating a firewall polic
 
 **Resource type:** `AWS::NetworkFirewall::FirewallPolicy`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/netfw-policy-default-action-full-packets.html](https://docs.aws.amazon.com/config/latest/developerguide/netfw-policy-default-action-full-packets.html)
+**AWS Config rule:** [netfw-policy-default-action-full-packets](https://docs.aws.amazon.com/config/latest/developerguide/netfw-policy-default-action-full-packets.html)
 
 **Schedule type:** Change triggered
 
@@ -137,7 +137,7 @@ To change your firewall policy, see [Updating a firewall policy](https://docs.aw
 
 **Resource type:** `AWS::NetworkFirewall::FirewallPolicy`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/netfw-policy-default-action-fragment-packets.html](https://docs.aws.amazon.com/config/latest/developerguide/netfw-policy-default-action-fragment-packets.html)
+**AWS Config rule:** [netfw-policy-default-action-fragment-packets](https://docs.aws.amazon.com/config/latest/developerguide/netfw-policy-default-action-fragment-packets.html)
 
 **Schedule type:** Change triggered
 
@@ -164,7 +164,7 @@ To change your firewall policy, see [Updating a firewall policy](https://docs.aw
 
 **Resource type:** `AWS::NetworkFirewall::RuleGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/netfw-stateless-rule-group-not-empty.html](https://docs.aws.amazon.com/config/latest/developerguide/netfw-stateless-rule-group-not-empty.html)
+**AWS Config rule:** [netfw-stateless-rule-group-not-empty](https://docs.aws.amazon.com/config/latest/developerguide/netfw-stateless-rule-group-not-empty.html)
 
 **Schedule type:** Change triggered
 
@@ -252,7 +252,7 @@ To add tags to an Network Firewall policy, see [Tagging AWS Network Firewall res
 
 **Resource type:** `AWS::NetworkFirewall::Firewall`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/netfw-deletion-protection-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/netfw-deletion-protection-enabled.html)
+**AWS Config rule:** [netfw-deletion-protection-enabled](https://docs.aws.amazon.com/config/latest/developerguide/netfw-deletion-protection-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -278,7 +278,7 @@ To enable delete protection on an existing Network Firewall firewall, see [ Upda
 
 **Resource type:** `AWS::NetworkFirewall::Firewall`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/netfw-subnet-change-protection-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/netfw-subnet-change-protection-enabled.html)
+**AWS Config rule:** [netfw-subnet-change-protection-enabled](https://docs.aws.amazon.com/config/latest/developerguide/netfw-subnet-change-protection-enabled.html)
 
 **Schedule type:** Change triggered
 

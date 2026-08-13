@@ -245,11 +245,11 @@ The following table describes general quotas related to training custom classifi
   <tr><td>Maximum length of class name</td><td>5,000 characters</td></tr>
   <tr><td>Number of classes (multi-class mode)</td><td>2–1,000</td></tr>
   <tr><td>Number of classes (multi-label mode)</td><td>2–100</td></tr>
-  <tr><td colspan="2">Annotations format</td></tr>
+  <tr><td colspan="2"><b>Annotations format</b></td></tr>
   <tr><td>Minimum number of annotations per class (multi-class mode)</td><td>10</td></tr>
   <tr><td>Minimum number of annotations per class (multi-label mode)</td><td>10</td></tr>
   <tr><td>Minimum number of annotations (multi-label mode)</td><td>50</td></tr>
-  <tr><td colspan="2">CSV file format</td></tr>
+  <tr><td colspan="2"><b>CSV file format</b></td></tr>
   <tr><td>Minimum number of training documents per class (multi-class mode)</td><td>50</td></tr>
   <tr><td>Minimum number of training documents per class (multi-label mode)</td><td>10</td></tr>
   <tr><td>Minimum number of training documents (multi-label mode)</td><td>50</td></tr>
@@ -313,7 +313,7 @@ The following table describes quotas related to training a custom classifier wit
   <tr><td>Maximum number of pages across all documents</td><td>10,000</td></tr>
   <tr><td>Maximum annotations file size (all CSV file sizes combined)</td><td>5 MB</td></tr>
   <tr><td>Document corpus size (training and test documents)</td><td>10 GB</td></tr>
-  <tr><td colspan="2">File sizes for training and testing files</td></tr>
+  <tr><td colspan="2"><b>File sizes for training and testing files</b></td></tr>
   <tr><td>Image file size (JPG, PNG, TIFF). </td><td>1 byte–10 MB.TIFF files: one page maximum.</td></tr>
   <tr><td>Page size for PDF documents</td><td>1 byte–10 MB</td></tr>
   <tr><td>Page size for Word documents</td><td>1 byte–10 MB</td></tr>

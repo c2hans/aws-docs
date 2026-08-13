@@ -89,7 +89,7 @@ The following section describes how to set authentication configuration for a cu
 ### Set client certificate configuration for a domain (CLI)
 <a name="customize-client-auth-cli"></a>
 
-If you don't have a domain configuration, use the [https://docs.aws.amazon.com//cli/latest/reference/iot/create-domain-configuration.html](https://docs.aws.amazon.com//cli/latest/reference/iot/create-domain-configuration.html) CLI command to create one. If you already have a domain configuration, use the [https://docs.aws.amazon.com//cli/latest/reference/iot/update-domain-configuration.html](https://docs.aws.amazon.com//cli/latest/reference/iot/update-domain-configuration.html) CLI command to update the client certificate configuration for a domain. You must add the ARN of the Lambda function that you've created in the previous step.
+If you don't have a domain configuration, use the [**create-domain-configuration**](https://docs.aws.amazon.com//cli/latest/reference/iot/create-domain-configuration.html) CLI command to create one. If you already have a domain configuration, use the [**update-domain-configuration**](https://docs.aws.amazon.com//cli/latest/reference/iot/update-domain-configuration.html) CLI command to update the client certificate configuration for a domain. You must add the ARN of the Lambda function that you've created in the previous step.
 
 ```
 aws iot create-domain-configuration \

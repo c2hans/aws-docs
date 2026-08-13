@@ -44,7 +44,7 @@ If you don't register a delegated administrator, and your AWS Organizations mana
 
 At any time, only a single account onboarded to AMS has read access to the aggregated reports, either the AWS Organizations management account or the registered delegated administrator. All other member accounts within your organization (and onboarded to AMS) still have access only to single-account reports for each individual account.
 
-After you enable Aggregated SSR, navigate to your [https://console.aws.amazon.com/managedservices/](https://console.aws.amazon.com/managedservices/). All your existing self-service reports are listed in this section, and a blue tag indicates that they have been aggregated. Note that you must access the AMS console from the account that you chose to have read access to the aggregated reports. This is either the AWS Organizations management account or the delegated administrator account.
+After you enable Aggregated SSR, navigate to your [**Reports**](https://console.aws.amazon.com/managedservices/). All your existing self-service reports are listed in this section, and a blue tag indicates that they have been aggregated. Note that you must access the AMS console from the account that you chose to have read access to the aggregated reports. This is either the AWS Organizations management account or the delegated administrator account.
 
 After you enable Aggregated SSR, aggregated reports are available from the next reporting cycle onward.
 

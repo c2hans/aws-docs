@@ -11,7 +11,7 @@ After updating the SDK for C\+\+ to a new version, you must recompile any librar
 
 To set up the AWS SDK for C\+\+, you can either build the SDK yourself directly from the source or download the libraries using a package manager.
 
-The SDK source is separated into individual packages by service. Installing the entire SDK can take up to an hour. Installing only the specific subset of services that your program uses decreases installation time and also reduces size on disk. To choose which services to install, you need to know the package name of each service your program uses. You can see the list of package directories at [https://github.com/aws/aws-sdk-cpp](https://github.com/aws/aws-sdk-cpp) on GitHub. The package name is the suffix of the directory name for the service.
+The SDK source is separated into individual packages by service. Installing the entire SDK can take up to an hour. Installing only the specific subset of services that your program uses decreases installation time and also reduces size on disk. To choose which services to install, you need to know the package name of each service your program uses. You can see the list of package directories at [`aws/aws-sdk-cpp`](https://github.com/aws/aws-sdk-cpp) on GitHub. The package name is the suffix of the directory name for the service.
 
 ```
 aws-sdk-cpp\aws-cpp-sdk-{{<packageName>}}   # Repo directory name and packageName

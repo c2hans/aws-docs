@@ -125,7 +125,7 @@ After you build and publish the package, create a temporary pixi project. Use th
    pixi run blender --version
    ```
 
-   The [https://pixi.sh/latest/reference/cli/pixi/run/](https://pixi.sh/latest/reference/cli/pixi/run/) command activates the conda environment for the project directory and runs the specified command within it. The environment persists in the project directory, so you can use the same `pixi run` command from other terminals.
+   The [`pixi run`](https://pixi.sh/latest/reference/cli/pixi/run/) command activates the conda environment for the project directory and runs the specified command within it. The environment persists in the project directory, so you can use the same `pixi run` command from other terminals.
 
 When you are satisfied with the package, you can publish the package to an Amazon S3 conda channel so that Deadline Cloud workers can install the package. See [Publish packages to an S3 conda channel](publish-packages-s3-channel.md).
 

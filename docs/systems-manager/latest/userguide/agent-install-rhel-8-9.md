@@ -11,7 +11,7 @@ The Amazon Machine Images (AMIs) for RHEL 8 and 9 that are provided by AWS do no
 
 **Before you begin**
 Before you install SSM Agent on a RHEL 8, 9, or 10 instance, note the following:
-+ Ensure that either Python 2 or Python 3 is installed on your RHEL 8, 9, or 10 instance. This is required in order for SSM Agent to work properly.
++ Make sure that either Python 2 or Python 3 is installed on your RHEL 8, 9, or 10 instance. This is required for SSM Agent to work properly.
 
 **Topics**
 + [Quick installation commands for SSM Agent on RHEL 8, 9, and 10](#quick-install-rhel-8-9)

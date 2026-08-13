@@ -73,7 +73,7 @@ To onboard your Sidewalk devices to your account for AWS IoT Core for Amazon Sid
 +
 
 **Upload devices in bulk using an S3 CSV file**
-To upload devices in bulk by providing the CSV file in an S3 bucket, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartWirelessDeviceImportTask.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartWirelessDeviceImportTask.html) API operation, or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/start-wireless-device-import-task.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/start-wireless-device-import-task.html) AWS CLI command. When creating the task, specify the path to the CSV file in the Amazon S3 bucket and the IAM role that grants AWS IoT Core for Amazon Sidewalk permissions to access the CSV file.
+To upload devices in bulk by providing the CSV file in an S3 bucket, use the [`StartWirelessDeviceImportTask`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartWirelessDeviceImportTask.html) API operation, or the [`start-wireless-device-import-task`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/start-wireless-device-import-task.html) AWS CLI command. When creating the task, specify the path to the CSV file in the Amazon S3 bucket and the IAM role that grants AWS IoT Core for Amazon Sidewalk permissions to access the CSV file.
 
   Once the task starts to run, AWS IoT Core for Amazon Sidewalk will start reading the CSV file and compare the serial numbers (SMSN) in the file with the corresponding information in the control log received from Amazon Sidewalk. When the serial numbers match, it will start creating wireless device records corresponding to these serial numbers.
 
@@ -113,7 +113,7 @@ To upload devices in bulk by providing the CSV file in an S3 bucket, use the [ht
 +
 
 **Provision devices individually using their SMSN**
-To provision devices individually using their SMSN, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartSingleWirelessDeviceImportTask.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartSingleWirelessDeviceImportTask.html) API operation, or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/start-single-wireless-device-import-task.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/start-single-wireless-device-import-task.html) AWS CLI command. When creating the task, specify the Sidewalk destination and the serial number of the device that you want to onboard.
+To provision devices individually using their SMSN, use the [`StartSingleWirelessDeviceImportTask`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartSingleWirelessDeviceImportTask.html) API operation, or the [`start-single-wireless-device-import-task`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/start-single-wireless-device-import-task.html) AWS CLI command. When creating the task, specify the Sidewalk destination and the serial number of the device that you want to onboard.
 
   When the serial number matches the corresponding information in the control log received from Amazon Sidewalk, the task will run and create the wireless device record.
 
@@ -174,9 +174,9 @@ The following steps explain how to update or delete your import tasks using the 
 Use the following AWS IoT Wireless API operations or CLI commands to update or delete your import task.
   +
 
-**[https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateWirelessDeviceImportTask.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateWirelessDeviceImportTask.html) API or [https://docs.aws.amazon.com/cli/latest/reference/update-wireless-device-import-task.html](https://docs.aws.amazon.com/cli/latest/reference/update-wireless-device-import-task.html) CLI**
+**[`UpdateWirelessDeviceImportTask`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateWirelessDeviceImportTask.html) API or [`update-wireless-device-import-task`](https://docs.aws.amazon.com/cli/latest/reference/update-wireless-device-import-task.html) CLI**
 This API operation appends the contents of an Amazon S3 CSV file to an existing import task. You can only add serial numbers of devices that were not previously included in the task.
   +
 
-**[https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteWirelessDeviceImportTask.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteWirelessDeviceImportTask.html) API or [https://docs.aws.amazon.com/cli/latest/reference/delete-wireless-device-import-task.html](https://docs.aws.amazon.com/cli/latest/reference/delete-wireless-device-import-task.html) CLI**
+**[`DeleteWirelessDeviceImportTask`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_DeleteWirelessDeviceImportTask.html) API or [`delete-wireless-device-import-task`](https://docs.aws.amazon.com/cli/latest/reference/delete-wireless-device-import-task.html) CLI**
 This API operation deletes the import task that was marked for deletion using the import task ID.

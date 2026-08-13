@@ -846,7 +846,7 @@ The following schema validations are specific to `UpdateVisibility` actions in t
 | Limited | Public and Restricted | Not allowed | Valid current state |
 | Restricted | Public and Limited | String (Optional) | ReplacementProductId must belong to an existing Limited or Public product. |
 
-After triggering this change type, it can take up to 37 days to complete. This includes the time the AWS Marketplace Seller Operations Team needs to review, audit, and approve. When restricting a product, you have 24 hours to change your mind, by calling `CancelChangeSet`, before the AWS Marketplace Seller Operations Team begins auditing. For more information, see [https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_CancelChangeSet.html](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_CancelChangeSet.html).
+After triggering this change type, it can take up to 37 days to complete. This includes the time the AWS Marketplace Seller Operations Team needs to review, audit, and approve. When restricting a product, you have 24 hours to change your mind, by calling `CancelChangeSet`, before the AWS Marketplace Seller Operations Team begins auditing. For more information, see [`CancelChangeSet`](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_CancelChangeSet.html).
 
 **Response Syntax**
 
@@ -951,7 +951,7 @@ The following errors are specific to `ReleaseProduct` actions in the AWS Marketp
 
 You must get the product ID for your product before you can modify it with AWS Marketplace Catalog API. There are two ways to find the product ID for server products:
 + Open the AWS Marketplace Management Portal and sign in with your seller account. From the **Products** menu, select **Server products**, then choose the product you are interested in. The product ID is listed in the **Product Summary** section.
-+ Use the [https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_ListEntities.html](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_ListEntities.html) action with the `EntityType` **AmiProduct** or **ContainerProduct**, **SaaSProduct**, **MachineLearningProduct**,or **DataProduct** to get a list of products, including their product IDs, via the Catalog API. `ListEntities` requires that you do not include the version of the entity type (for example, `AmiProduct@1.0`).
++ Use the [`ListEntities`](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_ListEntities.html) action with the `EntityType` **AmiProduct** or **ContainerProduct**, **SaaSProduct**, **MachineLearningProduct**,or **DataProduct** to get a list of products, including their product IDs, via the Catalog API. `ListEntities` requires that you do not include the version of the entity type (for example, `AmiProduct@1.0`).
 
 **Note**
 The product ID is only available after your product has been published and is visible to at least yourself in AWS Marketplace. When you first create your product, it can take several days to be reviewed and fully created. During this time, it will not have a product ID available.

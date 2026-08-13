@@ -26,6 +26,9 @@ By default, Lambda creates an execution role with minimal permissions when you [
 
 You can choose an existing role by selecting **Use another role** in the **Permissions** section. If your Lambda function needs additional permissions to perform tasks such as updating entries in an Amazon DynamoDB database in response to events, you can create a custom execution role with the necessary permissions. To do this, select **Use another role** in the **Permissions** section, which opens a drawer where you can customize your permissions.
 
+**Note**
+If role manager is enabled in your account, the Lambda console attaches an execution role for you. To customize permissions, create your function, and then edit the function's permissions to select a different role or customize the attached role. For more information, see [Create roles automatically with role manager](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_role-manager.html) in the IAM User Guide.
+
 **To configure an execution role from Console**
 
 1. Enter a **role name** in the Role details section.
@@ -86,8 +89,8 @@ After you create your execution role, attach it to your function. When you [crea
 ## Grant least privilege access to your Lambda execution role
 <a name="permissions-executionrole-least-privilege"></a>
 
-When you first create an IAM role for your Lambda function during the development phase, you might sometimes grant permissions beyond what is required. Before publishing your function in the production environment, as a best practice, adjust the policy to include only the required permissions. For more information, see [Apply least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege) in the *IAM User Guide*.
+When you first create an IAM role for your Lambda function during the development phase, you might sometimes grant permissions beyond what is required. Before publishing your function in the production environment, as a best practice, adjust the policy to include only the required permissions. For more information, see [Apply least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege) in the IAM User Guide.
 
 Use IAM Access Analyzer to help identify the required permissions for the IAM execution role policy. IAM Access Analyzer reviews your AWS CloudTrail logs over the date range that you specify and generates a policy template with only the permissions that the function used during that time. You can use the template to create a managed policy with fine-grained permissions, and then attach it to the IAM role. That way, you grant only the permissions that the role needs to interact with AWS resources for your specific use case.
 
-For more information, see [Generate policies based on access activity](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_generate-policy.html) in the *IAM User Guide*.
+For more information, see [Generate policies based on access activity](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_generate-policy.html) in the IAM User Guide.

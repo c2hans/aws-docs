@@ -54,7 +54,7 @@ For more information on user attributes, see [AWS Directory Service Data attribu
 aws ds-data describe-user --directory-id {{d-1234567890}} --sam-account-name "{{jane.doe}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-data/describe-user.html](https://docs.aws.amazon.com//cli/latest/reference/ds-data/describe-user.html).
+For more information, see [`describe-user`](https://docs.aws.amazon.com//cli/latest/reference/ds-data/describe-user.html).
 
 **To view a user's group memberships**
  The following describes how to view an AWS Managed Microsoft AD user's group membership with the AWS Directory Service Data CLI.
@@ -64,7 +64,7 @@ For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-
 aws ds-data list-groups-for-member --directory-id {{d-1234567890}} --sam-account-name "{{jane.doe}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-data/list-groups-for-member.html](https://docs.aws.amazon.com//cli/latest/reference/ds-data/list-groups-for-member.html).
+For more information, see [`list-groups-for-member`](https://docs.aws.amazon.com//cli/latest/reference/ds-data/list-groups-for-member.html).
 
 For more information on user attributes, see [AWS Directory Service Data attributes](ad_data_attributes.md) and [Microsoft documentation](https://learn.microsoft.com/en-us/windows/win32/ad/user-object-attributes).
 
@@ -81,7 +81,7 @@ For more information on user attributes, see [AWS Directory Service Data attribu
 Get-DSDUser -DirectoryId {{d-1234567890}} -SAMAccountName "{{jane.doe}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Get-DSDUser.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Get-DSDUser.html).
+For more information, see [`Get-DSDUser`](https://docs.aws.amazon.com//powershell/latest/reference/items/Get-DSDUser.html).
 
 **To view a user's group memberships**
  The following describes how to view an AWS Managed Microsoft AD user's group membership with the Tools for PowerShell.
@@ -91,7 +91,7 @@ For more information, see [https://docs.aws.amazon.com//powershell/latest/refere
 (Get-DSDGroupsForMemberList -DirectoryId {{d-1234567890}} -SAMAccountName "{{jane.doe}}").Groups
 ```
 
-For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Get-DSDGroupsForMemberList.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Get-DSDGroupsForMemberList.html).
+For more information, see [`Get-DSDGroupsForMemberList`](https://docs.aws.amazon.com//powershell/latest/reference/items/Get-DSDGroupsForMemberList.html).
 
 For more information on user attributes, see [AWS Directory Service Data attributes](ad_data_attributes.md) and [Microsoft documentation](https://learn.microsoft.com/en-us/windows/win32/ad/user-object-attributes).
 
@@ -148,7 +148,7 @@ aws ds-data update-user \
   --surname "{{Doe}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-data/update-user.html](https://docs.aws.amazon.com//cli/latest/reference/ds-data/update-user.html).
+For more information, see [`update-user`](https://docs.aws.amazon.com//cli/latest/reference/ds-data/update-user.html).
 
 **Note**
 When removing user attributes with [update-user](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ds-data/update-user.html) CLI command, you must specify the attribute and the exact value to be removed. To determine user attributes, use [describe-user](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ds-data/describe-user.html) command.
@@ -171,7 +171,7 @@ Update-DSDUser `
     -Surname "{{Doe}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Update-DSDUser.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Update-DSDUser.html).
+For more information, see [`Update-DSDUser`](https://docs.aws.amazon.com//powershell/latest/reference/items/Update-DSDUser.html).
 
 For more information on user attributes, see [AWS Directory Service Data attributes](ad_data_attributes.md) and [Microsoft documentation](https://learn.microsoft.com/en-us/windows/win32/ad/user-object-attributes).
 

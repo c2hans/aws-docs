@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-fhir
 # Deleting a FHIR resource
 <a name="managing-fhir-resources-delete"></a>
 
-The FHIR `delete` interaction removes an existing FHIR resource from a HealthLake data store. For additional information, see [https://hl7.org/fhir/R4/http.html#delete](https://hl7.org/fhir/R4/http.html#delete) in the **FHIR R4 RESTful API documentation**.
+The FHIR `delete` interaction removes an existing FHIR resource from a HealthLake data store. For additional information, see [`delete`](https://hl7.org/fhir/R4/http.html#delete) in the **FHIR R4 RESTful API documentation**.
 
 **To delete a FHIR resource**
 
@@ -40,7 +40,7 @@ The FHIR `delete` interaction removes an existing FHIR resource from a HealthLak
 ------
 #### [ SMART on FHIR ]
 
-   SMART on FHIR authorization example for the [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
+   SMART on FHIR authorization example for the [`IdentityProviderConfiguration`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
 
    ```
    {
@@ -96,13 +96,13 @@ AWS HealthLake handles conditional delete operations with the following response
 + When your search criteria successfully identify a single active resource, the system returns **204 No Content** after completing the deletion, just like standard delete operations.
 
 **ID-Based Conditional Delete**
-When performing conditional delete based on `id` with additional parameters (`createdAt`, `tag`, or `_lastUpdated`):
+When performing conditional delete based on `id` with additional parameters (`createdAt`, `_tag`, or `_lastUpdated`):
 + **204 No Content**: Resource was already deleted
 + **404 Not Found**: Resource doesn't exist
 + **409 Conflict**: ID matches but other parameters don't match
 
 **Non-ID-Based Conditional Delete**
-When `id` is not provided or when using parameters other than `createdAt`, `tag`, or `_lastUpdated`:
+When `id` is not provided or when using parameters other than `createdAt`, `_tag`, or `_lastUpdated`:
 + **404 Not Found**: No matches found
 
 **Conflict Situations**

@@ -20,14 +20,14 @@ Mechanical Turk also provides the option to create qualification tests that allo
 ## Create a qualification type
 <a name="CreateCustomQualType"></a>
 
-The [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateQualificationTypeOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateQualificationTypeOperation.html) operation can be used to register a new qualification type in your account. Simply specify the name, provide a brief description, and specify `Active` as the status. Note that the qualification type name and description are visible to workers. You can update these values using the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_UpdateQualificationTypeOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_UpdateQualificationTypeOperation.html) operation.
+The [`CreateQualificationType`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateQualificationTypeOperation.html) operation can be used to register a new qualification type in your account. Simply specify the name, provide a brief description, and specify `Active` as the status. Note that the qualification type name and description are visible to workers. You can update these values using the [`UpdateQualificationType`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_UpdateQualificationTypeOperation.html) operation.
 
 ## Assign or remove a worker qualification
 <a name="AssignRemoveQualWorker"></a>
 
-To assign a qualification type to a worker, use the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_AssociateQualificationWithWorkerOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_AssociateQualificationWithWorkerOperation.html) operation, specifying the ID of the qualification type and the worker it should be applied to. You can also assign an integer value such as a score. To modify the integer value, call the `AssociateQualificationWithWorker` operation again with the new value.
+To assign a qualification type to a worker, use the [`AssociateQualificationWithWorker`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_AssociateQualificationWithWorkerOperation.html) operation, specifying the ID of the qualification type and the worker it should be applied to. You can also assign an integer value such as a score. To modify the integer value, call the `AssociateQualificationWithWorker` operation again with the new value.
 
-You can remove a qualification using the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_DisassociateQualificationFromWorkerOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_DisassociateQualificationFromWorkerOperation.html) operation.
+You can remove a qualification using the [`DisassociateQualificationFromWorker`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_DisassociateQualificationFromWorkerOperation.html) operation.
 
 ## Qualification requests
 <a name="QualRequest"></a>
@@ -42,8 +42,8 @@ These requests can be queried using the `[ListQualificationRequests](https://doc
 The following operations can be used when working with qualifications.
 
 **Additional Operations**
-+  [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ListQualificationTypesOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ListQualificationTypesOperation.html): Retrieves a list of your existing qualification types.
-+  [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_GetQualificationTypeOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_GetQualificationTypeOperation.html): Retrieves the details of a qualification type.
-+  [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ListWorkersWithQualificationTypeOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ListWorkersWithQualificationTypeOperation.html): Retrieves a list of workers that have been assigned a qualification type.
-+  [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ListHITsForQualificationTypeOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ListHITsForQualificationTypeOperation.html): Retrieves a list of HITs that include a qualification type in their requirements.
-+  [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_GetQualificationScoreOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_GetQualificationScoreOperation.html): Retrieves the qualification assigned to a worker for a qualification type.
++  [`ListQualificationTypes`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ListQualificationTypesOperation.html): Retrieves a list of your existing qualification types.
++  [`GetQualificationType`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_GetQualificationTypeOperation.html): Retrieves the details of a qualification type.
++  [`ListWorkersWithQualificationType`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ListWorkersWithQualificationTypeOperation.html): Retrieves a list of workers that have been assigned a qualification type.
++  [`ListHITsForQualificationType`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ListHITsForQualificationTypeOperation.html): Retrieves a list of HITs that include a qualification type in their requirements.
++  [`GetQualificationScore`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_GetQualificationScoreOperation.html): Retrieves the qualification assigned to a worker for a qualification type.

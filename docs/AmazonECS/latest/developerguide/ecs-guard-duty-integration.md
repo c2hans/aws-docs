@@ -28,13 +28,13 @@ For EC2 container instances, the GuardDuty security agent runs as a process on t
 
 The GuardDuty security agent collects data from the following resources, and then sends the data to GuardDuty to process. You can view the findings in the GuardDuty console. You can also send them to other AWS services such as AWS Security Hub CSPM, or a third-party security vendor for aggregation and remediation. For information about how to view and manage findings, see [Managing Amazon GuardDuty findings](https://docs.aws.amazon.com/guardduty/latest/ug/findings_management.html) in the *Amazon GuardDuty User Guide*.
 + Responses from the following Amazon ECS API calls:
-  + [https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeClusters.html](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeClusters.html)
+  + [DescribeClusters](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeClusters.html)
 
     The response parameters include the Runtime Monitoring tag (when the tag is set) when you use the `--include TAGS` option.
-  + [https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeTasks.html](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeTasks.html)
+  + [DescribeTasks](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeTasks.html)
 
     For Fargate, the response parameters include the GuardDuty sidecar container.
-  + [https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListAccountSettings.html](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListAccountSettings.html)
+  + [ListAccountSettings](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListAccountSettings.html)
 
     The response parameters include the Runtime Monitoring account setting, which is set by your security administrator.
 + The container agent introspection data. For more information, see [Amazon ECS container introspection](ecs-agent-introspection.md).

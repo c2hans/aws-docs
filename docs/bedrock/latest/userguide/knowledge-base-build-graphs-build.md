@@ -66,7 +66,7 @@ Once your knowledge base is ready and available, sync your data source for the f
 
 **To create a knowledge base for Neptune Analytics using the AWS CLI**
 
-1. First create a data source using the context enrichment configuration. To perform this operation, send a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateDataSource.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateDataSource.html) request with an Agents for [Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt). The following shows an example CLI command.
+1. First create a data source using the context enrichment configuration. To perform this operation, send a [`CreateDataSource`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateDataSource.html) request with an Agents for [Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt). The following shows an example CLI command.
 
    ```
    aws bedrock-agent create-data-source \
@@ -107,7 +107,7 @@ Some models are supported only through cross-Region inference profiles. When you
 
    To see the policy requirements for your role to use inference profiles, see [Prerequisites for cross-Region inference profiles](https://docs.aws.amazon.com/bedrock/latest/userguide/inference-profiles-prereq.html). For guidance on how to use inference profiles to select source and destination Regions, see [Supported Regions and models for inference profiles](https://docs.aws.amazon.com/bedrock/latest/userguide/inference-profiles-support.html). Your data is stored only in your source Region corresponding to the Amazon Bedrock knowledge base and Amazon Neptune Analytics instance. The destination Region is used for inference only.
 
-1. To create a knowledge base, send a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateKnowledgeBase.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateKnowledgeBase.html) request with an Agents for [Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt). The following shows an example CLI command.
+1. To create a knowledge base, send a [`CreateKnowledgeBase`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateKnowledgeBase.html) request with an Agents for [Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt). The following shows an example CLI command.
 
    ```
    aws bi create-knowledge-base \
@@ -168,7 +168,7 @@ Navigate to the Knowledge Base detail page. In the **Data source** section, sele
 
 **Choose a model during knowledge base creation (API)**
 
-When creating a data source via the `CreateDataSource` API, specify the `modelArn` in the `bedrockFoundationModelConfiguration` within `contextEnrichmentConfiguration`. See the API tab in the creation section above for a full example.
+When creating a data source through the `CreateDataSource` API, specify the `modelArn` in the `bedrockFoundationModelConfiguration` within `contextEnrichmentConfiguration`. See the API tab in the creation section above for a full example.
 
 **Update the model on an existing data source (API)**
 

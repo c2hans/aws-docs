@@ -96,11 +96,11 @@ Use the following commands to specify Amazon Pinpoint analytics settings for you
 
 **To specify the analytics settings for your user pool's existing client app at app creation time**
 + AWS CLI: `aws cognito-idp create-user-pool-client`
-+ AWS API: [https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserPoolClient.html](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserPoolClient.html)
++ AWS API: [CreateUserPoolClient](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserPoolClient.html)
 
 **To update the analytics settings for your user pool's existing client app**
 + AWS CLI: `aws cognito-idp update-user-pool-client`
-+ AWS API: [https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateUserPoolClient.html](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateUserPoolClient.html)
++ AWS API: [UpdateUserPoolClient](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateUserPoolClient.html)
 
 **Note**
 Amazon Cognito supports in-Region integrations when you use `ApplicationArn`

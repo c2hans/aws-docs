@@ -53,7 +53,7 @@ For more information, see [Encryption at rest in Amazon SQS](sqs-server-side-enc
 ## Enforce encryption of data in transit
 <a name="enforce-encryption-data-in-transit"></a>
 
-Without HTTPS (TLS), a network-based attacker can eavesdrop on network traffic or manipulate it, using an attack such as man-in-the-middle. Allow only encrypted connections over HTTPS (TLS) using the [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_Boolean](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_Boolean) condition in the queue policy to force requests to use SSL.
+Without HTTPS (TLS), a network-based attacker can eavesdrop on network traffic or manipulate it, using an attack such as man-in-the-middle. Allow only encrypted connections over HTTPS (TLS) using the [`aws:SecureTransport`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_Boolean) condition in the queue policy to force requests to use SSL.
 
 ## Consider using VPC endpoints to access Amazon SQS
 <a name="consider-using-vpc-endpoints-access-sqs"></a>

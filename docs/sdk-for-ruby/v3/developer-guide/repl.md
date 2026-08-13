@@ -10,7 +10,7 @@ The `aws-sdk` gem includes a Read-Eval-Print-Loop (REPL) interactive command-lin
 ## Prerequisites
 <a name="repl-prerequisites"></a>
 + [Installing the AWS SDK for Ruby](setup-install.md).
-+ The [https://github.com/aws/aws-sdk-ruby/blob/version-3/gems/aws-sdk-resources/bin/aws-v3.rb](https://github.com/aws/aws-sdk-ruby/blob/version-3/gems/aws-sdk-resources/bin/aws-v3.rb) is located in the [https://github.com/aws/aws-sdk-ruby/tree/version-3/gems/aws-sdk-resources](https://github.com/aws/aws-sdk-ruby/tree/version-3/gems/aws-sdk-resources) gem. The `aws-sdk-resources` gem is also included by the main [https://github.com/aws/aws-sdk-ruby/blob/version-3/gems/aws-sdk/aws-sdk.gemspec](https://github.com/aws/aws-sdk-ruby/blob/version-3/gems/aws-sdk/aws-sdk.gemspec) gem.
++ The [`aws-v3.rb`](https://github.com/aws/aws-sdk-ruby/blob/version-3/gems/aws-sdk-resources/bin/aws-v3.rb) is located in the [`aws-sdk-resources`](https://github.com/aws/aws-sdk-ruby/tree/version-3/gems/aws-sdk-resources) gem. The `aws-sdk-resources` gem is also included by the main [`aws-sdk`](https://github.com/aws/aws-sdk-ruby/blob/version-3/gems/aws-sdk/aws-sdk.gemspec) gem.
 + You will need an xml library, such as the `rexml` gem.
 + Although the program does work with the Interactive Ruby Shell (`irb`), we recommend that you install the `pry` gem, which provides a more powerful REPL environment.
 

@@ -54,7 +54,7 @@ aws s3api put-object --bucket {{amzn-s3-demo-bucket}} --key {{HappyFace.jpg}} --
 ### Example 2: Granting `s3:PutObject` permission to copy objects with a restriction on the copy source
 <a name="putobject-limit-copy-source-3"></a>
 
-In a `PUT` object request, when you specify a source object, the request is a copy operation (see [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectCOPY.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectCOPY.html)). Accordingly, the bucket owner can grant a user permission to copy objects with restrictions on the source, for example:
+In a `PUT` object request, when you specify a source object, the request is a copy operation (see [CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectCOPY.html)). Accordingly, the bucket owner can grant a user permission to copy objects with restrictions on the source, for example:
 + Allow copying objects only from the specified source bucket (for example, `{{amzn-s3-demo-source-bucket}}`).
 + Allow copying objects from the specified source bucket and only the objects whose key name prefix starts with as specific prefix, such as {{`public/`}} (for example, `{{amzn-s3-demo-source-bucket}}{{/public/*}}`).
 + Allow copying only a specific object from the source bucket (for example, `{{amzn-s3-demo-source-bucket}}{{/example.jpg}}`).
@@ -123,7 +123,7 @@ The preceding policy uses the `StringNotLike` condition. To grant permission to 
 
 Suppose that Account A owns a versioning-enabled bucket. The bucket has several versions of the `{{HappyFace.jpg}}` object. The Account A administrator now wants to grant the user `{{Dave}}` permission to get only a specific version of the object. The account administrator can accomplish this by granting the user `{{Dave}}` the `s3:GetObjectVersion` permission conditionally, as shown in the following example. The key-value pair in the `Condition` block specifies the `s3:VersionId` condition key. In this case, to retrieve the object from the specified versioning-enabled bucket, `{{Dave}}` needs to know the exact object version ID. To use this example policy, replace the `{{user input placeholders}}` with your own information.
 
-For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) in the *Amazon Simple Storage Service API Reference*.
+For more information, see [GetObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) in the *Amazon Simple Storage Service API Reference*.
 
 ------
 #### [ JSON ]
@@ -448,17 +448,17 @@ For more information about the permissions to S3 API operations by S3 resource t
 ### Example 2: Getting a list of objects in a bucket with a specific prefix
 <a name="condition-key-bucket-ops-2"></a>
 
-You can use the `s3:prefix` condition key to limit the response of the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html) API operation to key names with a specific prefix. If you are the bucket owner, you can use this condition key to restrict a user to list the contents of a specific prefix in the bucket. The `s3:prefix` condition key is useful if the objects in the bucket are organized by key name prefixes.
+You can use the `s3:prefix` condition key to limit the response of the [ListObjectsV2](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html) API operation to key names with a specific prefix. If you are the bucket owner, you can use this condition key to restrict a user to list the contents of a specific prefix in the bucket. The `s3:prefix` condition key is useful if the objects in the bucket are organized by key name prefixes.
 
 The Amazon S3 console uses key name prefixes to show a folder concept. Only the console supports the concept of folders; the Amazon S3 API supports only buckets and objects. For example, if you have two objects with the key names {{`public/object1.jpg`}} and {{`public/object2.jpg`}}, the console shows the objects under the {{`public`}} folder. In the Amazon S3 API, these are objects with prefixes, not objects in folders. For more information about using prefixes and delimiters to filter access permissions, see [Controlling access to a bucket with user policies](walkthrough1.md).
 
-In the following scenario, the bucket owner and the parent account to which the user belongs are the same. So the bucket owner can use either a bucket policy or a user policy to grant access. For more information about other condition keys that you can use with the `ListObjectsV2` API operation, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html).
+In the following scenario, the bucket owner and the parent account to which the user belongs are the same. So the bucket owner can use either a bucket policy or a user policy to grant access. For more information about other condition keys that you can use with the `ListObjectsV2` API operation, see [ListObjectsV2](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html).
 
 **Note**
 If the bucket is versioning-enabled, to list the objects in the bucket, you must grant the `s3:ListBucketVersions` permission in the following policies, instead of the `s3:ListBucket` permission. The `s3:ListBucketVersions` permission also supports the `s3:prefix` condition key.
 
 **User policy**
-The following user policy grants the `s3:ListBucket` permission (see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html)) with a `Condition` statement that requires the user to specify a prefix in the request with a value of `{{projects}}`. To use this example policy, replace the `{{user input placeholders}}` with your own information.
+The following user policy grants the `s3:ListBucket` permission (see [ListObjectsV2](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html)) with a `Condition` statement that requires the user to specify a prefix in the request with a value of `{{projects}}`. To use this example policy, replace the `{{user input placeholders}}` with your own information.
 
 ------
 #### [ JSON ]
@@ -555,4 +555,4 @@ aws s3api list-objects --bucket {{{{amzn-s3-demo-bucket}}}} --prefix {{projects}
 ### Example 3: Setting the maximum number of keys
 <a name="example-numeric-condition-operators"></a>
 
-You can use the `s3:max-keys` condition key to set the maximum number of keys that a requester can return in a [https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html) or [https://docs.aws.amazon.com//AmazonS3/latest/API/API_ListObjectVersions.html](https://docs.aws.amazon.com//AmazonS3/latest/API/API_ListObjectVersions.html) request. By default, these API operations return up to 1,000 keys. For a list of numeric condition operators that you can use with `s3:max-keys` and accompanying examples, see [Numeric Condition Operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_Numeric) in the *IAM User Guide*.
+You can use the `s3:max-keys` condition key to set the maximum number of keys that a requester can return in a [ListObjectsV2](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html) or [ListObjectVersions](https://docs.aws.amazon.com//AmazonS3/latest/API/API_ListObjectVersions.html) request. By default, these API operations return up to 1,000 keys. For a list of numeric condition operators that you can use with `s3:max-keys` and accompanying examples, see [Numeric Condition Operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_Numeric) in the *IAM User Guide*.

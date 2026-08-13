@@ -10,7 +10,7 @@ You can use the AWS CodePipeline console or the AWS CLI to create a pipeline. Pi
 **Important**
 As part of creating a pipeline, an S3 artifact bucket provided by the customer will be used by CodePipeline for artifacts. (This is different from the bucket used for an S3 source action.) If the S3 artifact bucket is in a different account from the account for your pipeline, make sure that the S3 artifact bucket is owned by AWS accounts that are safe and will be dependable.
 
-You can add actions to your pipeline that are in an AWS Region different from your pipeline. A cross-Region action is one in which an AWS service is the provider for an action and the action type or provider type are in an AWS Region different from your pipeline. For more information, see [Add a cross-Region action in CodePipeline](actions-create-cross-region.md).
+You can add actions to your pipeline that are in an AWS Region different from your pipeline. A cross-Region action is one in which an AWS service is the provider for an action and the action type or provider type are in an AWS Region different from your pipeline. For more information, see [Add a cross-region action in CodePipeline](actions-create-cross-region.md).
 
 You can also create pipelines that build and deploy container-based applications by using Amazon ECS as the deployment provider. Before you create a pipeline that deploys container-based applications with Amazon ECS, you must create an image definitions file as described in [Image definitions file reference](file-reference.md).
 
@@ -222,7 +222,7 @@ This option does not appear if you have already skipped the build or test stage.
 
        In **Cluster name**, enter or choose the name of an existing Amazon ECS cluster. In **Service name**, enter or choose the name of the service running on the cluster. You can also create a cluster and service. In **Image filename**, enter the name of the image definitions file that describes your service's container and image.
 **Note**
-The Amazon ECS deployment action requires an `imagedefinitions.json` file as an input to the deployment action. The default ﬁle name for the ﬁle is imagedefinitions.json. If you choose to use a diﬀerent ﬁle name, you must provide it when you create the pipeline deployment stage. For more information, see [imagedefinitions.json file for Amazon ECS standard deployment actions](file-reference.md#pipelines-create-image-definitions).
+The Amazon ECS deployment action requires an `imagedefinitions.json` file as an input to the deployment action. The default file name for the file is imagedefinitions.json. If you choose to use a different file name, you must provide it when you create the pipeline deployment stage. For more information, see [imagedefinitions.json file for Amazon ECS standard deployment actions](file-reference.md#pipelines-create-image-definitions).
 
        Choose **Next**.
 **Note**
@@ -248,7 +248,7 @@ The **Amazon ECS (Blue/Green)** action requires an imageDetail.json file as an i
        For a tutorial about deploying Alexa skills with your pipeline and generating the LWA credentials, see [Tutorial: Create a pipeline that deploys an Amazon Alexa skill](tutorials-alexa-skills-kit.md).
      + **Amazon S3**
 
-       In **Bucket**, enter the name of the S3 bucket you want to use. Choose **Extract file before deploy** if the input artifact to your deploy stage is a ZIP file. If **Extract file before deploy** is selected, you may optionally enter a value for **Deployment path** to which your ZIP file will be unzipped. If it is not selected, you are required to to enter a value in **S3 object key**.
+       In **Bucket**, enter the name of the S3 bucket you want to use. Choose **Extract file before deploy** if the input artifact to your deploy stage is a ZIP file. If **Extract file before deploy** is selected, you may optionally enter a value for **Deployment path** to which your ZIP file will be unzipped. If it is not selected, you are required to enter a value in **S3 object key**.
 **Note**
 Most source and build stage output artifacts are zipped. All pipeline source providers except Amazon S3 zip your source files before providing them as the input artifact to the next action.
 
@@ -256,7 +256,7 @@ Most source and build stage output artifacts are zipped. All pipeline source pro
 **Note**
 Applying a canned ACL overwrites any existing ACL applied to the object.
 
-       (Optional) In **Cache control**, specify the cache control parameters for requests to download objects from the bucket. For a list of valid values, see the [http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9) header field for HTTP operations. To enter multiple values in **Cache control**, use a comma between each value. You can add a space after each comma (optional), as shown in this example.
+       (Optional) In **Cache control**, specify the cache control parameters for requests to download objects from the bucket. For a list of valid values, see the [`Cache-Control`](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9) header field for HTTP operations. To enter multiple values in **Cache control**, use a comma between each value. You can add a space after each comma (optional), as shown in this example.
 ![Image showing the Cache control field in the console with the following entry: public, max-age=0, no-transform](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/cache_control_values.png)
 
        The preceding example entry is displayed in the CLI as follows:
@@ -449,7 +449,7 @@ While it is optional to add variables at the pipeline level, for a pipeline spec
 
    CodePipeline uses Amazon CloudWatch Events to detect changes in your CodeCommit source repository and branch or your S3 source bucket. The next step includes instructions to manually create these resources for your pipeline. Setting the flag to `false` disables periodic checks, which are not necessary when you are using the recommended change detection methods.
 
-1. To create a build, test, or deploy action in a Region different from your pipeline, you must add the following to your pipeline structure. For instructions, see [Add a cross-Region action in CodePipeline](actions-create-cross-region.md).
+1. To create a build, test, or deploy action in a Region different from your pipeline, you must add the following to your pipeline structure. For instructions, see [Add a cross-region action in CodePipeline](actions-create-cross-region.md).
    + Add the `Region` parameter to your action's pipeline structure.
    + Use the `artifactStores` parameter to specify an artifact bucket for each AWS Region where you have an action.
 
@@ -478,7 +478,7 @@ Be sure to include `file://` before the file name. It is required in this comman
 ## Create a pipeline from static templates
 <a name="pipelines-create-templates"></a>
 
-You can create a pipeline in the console that uses a template to configure a pipeline with source code and properties that you specify. You must provide the source file location and information about the source providers you will use for your actions. You can specify a source action for Amazon ECR or any third-party repository supoorted by CodeConnections, such as GitHub.
+You can create a pipeline in the console that uses a template to configure a pipeline with source code and properties that you specify. You must provide the source file location and information about the source providers you will use for your actions. You can specify a source action for Amazon ECR or any third-party repository supported by CodeConnections, such as GitHub.
 
 The template will create a stack in CloudFormation for your pipeline that includes the following resources:
 + A pipeline is created with the V2 pipeline type. In **Pipeline type**, choose one of the following options. Pipeline types differ in characteristics and price. For more information, see [Pipeline types](pipeline-types.md).
@@ -511,7 +511,7 @@ Choose a template to create a pipeline with a deployment stage, automation, or a
    + Choose **Automation** if you plan to create an automated pipeline. View the options for automation, such as scheduling a python build.
 
 1.
-![Image showing the choose template option with CloudFormation deployment selecrtedin the wizard](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/create-static-choose-template-depl.png)
+![Image showing the choose template option with CloudFormation deployment selectedin the wizard](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/create-static-choose-template-depl.png)
 ![Image showing the choose source page in the wizard](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/create-static-choose-template-CI.png)
 ![Image showing the choose template option with automation selected in the wizard](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/create-static-choose-template-auto.png)
 

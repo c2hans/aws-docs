@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/analyze-conversations.html
 ---
 
-# Analyze conversations using conversational analytics in Connect Customer Contact Lens
+# Analyze conversations using conversational analytics in Connect Customer conversational analytics
 <a name="analyze-conversations"></a>
 
-With Contact Lens conversational analytics, you can analyze conversations between customers and agents or customers and conversational AI, across voice, chat, and email, using natural language processing. Conversational analytics performs sentiment analysis, detects issues, and enables you to automatically categorize contacts.
+With conversational analytics, you can analyze conversations between customers and agents or customers and conversational AI, across voice, chat, and email, using natural language processing. Conversational analytics performs sentiment analysis, detects issues, and enables you to automatically categorize contacts.
 
 **Speech analytics support**
 + **Real-time call analytics**: Use to detect and resolve customer issues more proactively while the call is in progress. For example, it can [analyze and alert](add-rules-for-alerts.md) you when a customer is getting frustrated because the agent is unable to resolve a complicated problem. This allows you to provide more immediate assistance.
@@ -14,10 +14,10 @@ With Contact Lens conversational analytics, you can analyze conversations betwee
 **Chat analytics support**
 + **Real-time chat analytics**: As with real-time call analytics, you can detect and resolve customer issues more proactively while the chat is progress and [receive an alert](add-rules-for-alerts-chat.md). For example, managers can get a real-time email alert when customer sentiment for a chat contact turns negative, allowing them to join the in-progress contact and help resolve the customer issue.
 + **Post-chat analytics**: Use to understand trends of customer conversations with both bots and agents. It provides information specific to a chat interaction, such as the agent greeting time, and agent and customer response times. The response times and sentiments help you investigate the customer's experience with the bot versus the agent, and identify areas for improvement.
-+ Each processed chat message is charged the same way. While not all messages may have all features applied (for example, summarization is applied to `text/plain` messages only), if Contact Lens conversational analytics is enabled on the contact, the message is counted for billing. For more information about pricing, see [Connect Customer Pricing](https://aws.amazon.com/connect/pricing/).
++ Each processed chat message is charged the same way. While not all messages may have all features applied (for example, summarization is applied to `text/plain` messages only), if conversational analytics is enabled on the contact, the message is counted for billing. For more information about pricing, see [Connect Customer Pricing](https://aws.amazon.com/connect/pricing/).
 
 **Email analytics support**
-+ **Email analytics**: Use to analyze email conversations between customers and agents. Contact Lens automatically categorizes email contacts, redacts sensitive data from email transcripts, and generates contact summaries. This helps you understand email conversation trends and ensure compliance across your email channel.
++ **Email analytics**: Use to analyze email conversations between customers and agents. conversational analytics automatically categorizes email contacts, redacts sensitive data from email transcripts, and generates contact summaries. This helps you understand email conversation trends and ensure compliance across your email channel.
 + Because email contacts are asynchronous, with one participant acting at a time, the real-time and post-contact distinction that applies to voice and chat does not apply to email. An email analysis is initiated as soon as the [Flow block in Connect Customer: Set recording, analytics and processing behavior](set-recording-analytics-processing-behavior.md) is used when an email contact is received or sent.
 
 You can protect your customer's privacy by redacting sensitive data, such as name, address, and credit card information from transcripts and audio recordings.

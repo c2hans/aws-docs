@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/miro.html
 # Configure Miro for AppFabric
 <a name="miro"></a>
 
-Miro is an online workspace for innovation that enables distributed teams of any size to build the next big thing. The platform’s infinite canvas enables teams to lead engaging workshops and meetings, design products, brainstorm ideas, and more. Miro, co-headquartered in San Francisco and Amsterdam, serves more than 50M users worldwide, including 99% of the Fortune 100. Miro was founded in 2011 and currently has more than 1,500 employees in 12 hubs around the world. To learn more, visit [https://miro.com](https://miro.com).
+Miro is an online workspace for innovation that enables distributed teams of any size to build the next big thing. The platform’s infinite canvas enables teams to lead engaging workshops and meetings, design products, brainstorm ideas, and more. Miro, co-headquartered in San Francisco and Amsterdam, serves more than 50M users worldwide, including 99% of the Fortune 100. Miro was founded in 2011 and currently has more than 1,500 employees in 12 hubs around the world. To learn more, visit [Miro](https://miro.com).
 
 Miro includes a full suite of collaborative capabilities designed for innovation including diagramming, wireframing, real-time data visualization, workshop facilitation, and built-in support for agile practices, workshops, and interactive presentations. Miro recently announced Miro AI which extends Miro’s capabilities, with AI-driven mapping and diagramming, clustering and summarization, and content generation. Miro enables organizations to reduce the number of standalone tools, reducing information fragmentation and cost.
 

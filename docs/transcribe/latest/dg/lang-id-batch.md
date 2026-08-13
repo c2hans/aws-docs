@@ -79,11 +79,11 @@ If you're using automatic language identification with content redaction enabled
 
 **Custom language models, custom vocabularies, and custom vocabulary filters**
 
-If you want to add one or more custom language models, custom vocabularies, or custom vocabulary filters to your language identification request, you must include the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_LanguageIdSettings.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_LanguageIdSettings.html) parameter. You can then specify a language code with a corresponding custom language model, custom vocabulary, and custom vocabulary filter. Note that multi-language identification doesn't support custom language models.
+If you want to add one or more custom language models, custom vocabularies, or custom vocabulary filters to your language identification request, you must include the [`LanguageIdSettings`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_LanguageIdSettings.html) parameter. You can then specify a language code with a corresponding custom language model, custom vocabulary, and custom vocabulary filter. Note that multi-language identification doesn't support custom language models.
 
-It's recommended that you include `LanguageOptions` when using [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_LanguageIdSettings.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_LanguageIdSettings.html) to ensure that the correct language dialect is identified. For example, if you specify an `en-US` custom vocabulary, but Amazon Transcribe determines that the language spoken in your media is `en-AU`, your custom vocabulary *is not* applied to your transcription. If you include `LanguageOptions` and specify `en-US` as the only English language dialect, your custom vocabulary *is* applied to your transcription.
+It's recommended that you include `LanguageOptions` when using [`LanguageIdSettings`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_LanguageIdSettings.html) to ensure that the correct language dialect is identified. For example, if you specify an `en-US` custom vocabulary, but Amazon Transcribe determines that the language spoken in your media is `en-AU`, your custom vocabulary *is not* applied to your transcription. If you include `LanguageOptions` and specify `en-US` as the only English language dialect, your custom vocabulary *is* applied to your transcription.
 
-For examples of [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_LanguageIdSettings.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_LanguageIdSettings.html) in a request, refer to Option 2 in the **AWS CLI** and **AWS SDKs** dropdown panels in the [Using language identification with batch transcriptions](#lang-id-batch-examples) section.
+For examples of [`LanguageIdSettings`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_LanguageIdSettings.html) in a request, refer to Option 2 in the **AWS CLI** and **AWS SDKs** dropdown panels in the [Using language identification with batch transcriptions](#lang-id-batch-examples) section.
 
 ## Using language identification with batch transcriptions
 <a name="lang-id-batch-examples"></a>
@@ -110,7 +110,7 @@ You can use automatic language identification in a batch transcription job using
 ### AWS CLI
 <a name="lang-id-cli"></a>
 
-This example uses the [start-transcription-job](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/start-transcription-job.html) command and `IdentifyLanguage` parameter. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_LanguageIdSettings.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_LanguageIdSettings.html).
+This example uses the [start-transcription-job](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/start-transcription-job.html) command and `IdentifyLanguage` parameter. For more information, see [`StartTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [`LanguageIdSettings`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_LanguageIdSettings.html).
 
 **Option 1**: Without the `language-id-settings` parameter. Use this option if you are **not** including a custom language model, custom vocabulary, or custom vocabulary filter in your request. `language-options` is optional, but recommended.
 
@@ -197,7 +197,7 @@ The file *my-first-language-id-job.json* contains the following request body.
 ### AWS SDK for Python (Boto3)
 <a name="lang-id-python-batch"></a>
 
-This example uses the AWS SDK for Python (Boto3) to identify your file's language using the `IdentifyLanguage` argument for the [start\_transcription\_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_transcription_job) method. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_LanguageIdSettings.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_LanguageIdSettings.html).
+This example uses the AWS SDK for Python (Boto3) to identify your file's language using the `IdentifyLanguage` argument for the [start\_transcription\_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_transcription_job) method. For more information, see [`StartTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartTranscriptionJob.html) and [`LanguageIdSettings`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_LanguageIdSettings.html).
 
 For additional examples using the AWS SDKs, including feature-specific, scenario, and cross-service examples, refer to the [Code examples for Amazon Transcribe using AWS SDKs](service_code_examples.md) chapter.
 

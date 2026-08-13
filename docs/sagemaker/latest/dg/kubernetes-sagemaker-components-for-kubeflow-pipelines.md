@@ -129,7 +129,7 @@ Deploying Kubeflow Pipelines with SageMaker AI components requires the following
 
   The role requires the following permissions:
   + CloudWatchLogsFullAccess
-  + [https://console.aws.amazon.com/iam/home?region=us-east-1#/policies/arn%3Aaws%3Aiam%3A%3Aaws%3Apolicy%2FAWSCloudFormationFullAccess](https://console.aws.amazon.com/iam/home?region=us-east-1#/policies/arn%3Aaws%3Aiam%3A%3Aaws%3Apolicy%2FAWSCloudFormationFullAccess)
+  + [AWSCloudFormationFullAccess](https://console.aws.amazon.com/iam/home?region=us-east-1#/policies/arn%3Aaws%3Aiam%3A%3Aaws%3Apolicy%2FAWSCloudFormationFullAccess)
   + IAMFullAccess
   + AmazonS3FullAccess
   + AmazonEC2FullAccess

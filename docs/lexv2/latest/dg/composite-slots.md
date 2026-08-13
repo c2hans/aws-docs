@@ -9,7 +9,7 @@ A composite slot is a combination of two or more slots that capture multiple pie
 
 You can use a combination of available Amazon Lex slot types (built-ins) and your own slots (custom slots). You can design logical expressions to capture information within the required subslots. For example: city and state or zipcode.
 
-The composite slot type is only available in en-US.
+The composite slot type is only available in en-US and [locales with limited feature support](https://docs.aws.amazon.com/lexv2/latest/dg/how-languages.html#limited-feature-locales) via Generative AI.
 
 **Creating a composite slot type**
 

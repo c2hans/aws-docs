@@ -66,7 +66,7 @@ docker inspect {{deep-learning-container-uri}}
 ## Create a SageMaker AI Model
 <a name="realtime-endpoints-graviton-model"></a>
 
- Create a SageMaker AI Model by calling the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) API.
+ Create a SageMaker AI Model by calling the [`CreateModel`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) API.
 
 ```
 import boto3
@@ -96,7 +96,7 @@ sagemaker_client.create_model(
 ## Create an endpoint configuration
 <a name="realtime-endpoints-graviton-epc"></a>
 
- Create an endpoint configuration by calling the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpointConfig.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpointConfig.html) API. For a list of Graviton-based instances, check [Compute optimized instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/compute-optimized-instances.html).
+ Create an endpoint configuration by calling the [`CreateEndpointConfig`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpointConfig.html) API. For a list of Graviton-based instances, check [Compute optimized instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/compute-optimized-instances.html).
 
 ```
 sagemaker_client.create_endpoint_config(
@@ -115,7 +115,7 @@ sagemaker_client.create_endpoint_config(
 ## Create an endpoint
 <a name="realtime-endpoints-graviton-ep"></a>
 
- Create an endpoint by calling the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html) API.
+ Create an endpoint by calling the [`CreateEndpoint`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html) API.
 
 ```
 sagemaker_client.create_endpoint(

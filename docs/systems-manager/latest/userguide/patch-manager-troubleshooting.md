@@ -9,16 +9,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 
 Use the following information to help you troubleshoot problems with Patch Manager, a tool in AWS Systems Manager.
 
-**Topics**
-+ [Issue: "Invoke-PatchBaselineOperation : Access Denied" error or "Unable to download file from S3" error for `baseline_overrides.json`](#patch-manager-troubleshooting-patch-policy-baseline-overrides)
-+ [Issue: Patching fails without an apparent cause or error message](#race-condition-conflict)
-+ [Issue: Unexpected patch compliance results](#patch-manager-troubleshooting-compliance)
-+ [Errors when running `AWS-RunPatchBaseline` on Linux](#patch-manager-troubleshooting-linux)
-+ [Errors when running `AWS-RunPatchBaseline` on Windows Server](#patch-manager-troubleshooting-windows)
-+ [Errors when running `AWS-RunPatchBaseline` on macOS](#patch-manager-troubleshooting-macos)
-+ [Using AWS Support Automation runbooks](#patch-manager-troubleshooting-using-support-runbooks)
-+ [Contacting AWS Support](#patch-manager-troubleshooting-contact-support)
-
 ## Issue: "Invoke-PatchBaselineOperation : Access Denied" error or "Unable to download file from S3" error for `baseline_overrides.json`
 <a name="patch-manager-troubleshooting-patch-policy-baseline-overrides"></a>
 
@@ -94,29 +84,6 @@ When a `Scan` operation runs, it overwrites the compliance details from the most
 ## Errors when running `AWS-RunPatchBaseline` on Linux
 <a name="patch-manager-troubleshooting-linux"></a>
 
-**Topics**
-+ [Issue: 'No such file or directory' error](#patch-manager-troubleshooting-linux-1)
-+ [Issue: 'another process has acquired yum lock' error](#patch-manager-troubleshooting-linux-2)
-+ [Issue: 'Permission denied / failed to run commands' error](#patch-manager-troubleshooting-linux-3)
-+ [Issue: 'Unable to download payload' error](#patch-manager-troubleshooting-linux-4)
-+ [Issue: 'unsupported package manager and python version combination' error](#patch-manager-troubleshooting-linux-5)
-+ [Issue: Patch Manager isn't applying rules specified to exclude certain packages](#patch-manager-troubleshooting-linux-6)
-+ [Issue: Patching fails and Patch Manager reports that the Server Name Indication extension to TLS is not available](#patch-manager-troubleshooting-linux-7)
-+ [Issue: Patch Manager reports 'No more mirrors to try'](#patch-manager-troubleshooting-linux-8)
-+ [Issue: Patching fails with 'Error code returned from curl is 23'](#patch-manager-troubleshooting-linux-9)
-+ [Issue: Patching fails with ‘Error unpacking rpm package…’ message](#error-unpacking-rpm)
-+ [Issue: Patching fails with 'Encounter service side error when uploading the inventory'](#inventory-upload-error)
-+ [Issue: Patching fails with ‘Errors were encountered while downloading packages’ message](#errors-while-downloading)
-+ [Issue: Patching fails with an out of memory (OOM) error](#patch-manager-troubleshooting-linux-oom)
-+ [Issue: Patching fails with a message that 'The following signatures couldn't be verified because the public key is not available'](#public-key-unavailable)
-+ [Issue: Patching fails with a 'NoMoreMirrorsRepoError' message](#no-more-mirrors-repo-error)
-+ [Issue: Patching fails with an 'Unable to download payload' message](#payload-download-error)
-+ [Issue: Patching fails with a message 'install errors: dpkg: error: dpkg frontend is locked by another process'](#dpkg-frontend-locked)
-+ [Issue: Patching on Ubuntu Server fails with a 'dpkg was interrupted' error](#dpkg-interrupted)
-+ [Issue: The package manager utility can't resolve a package dependency](#unresolved-dependency)
-+ [Issue: Zypper package lock dependency failures on SLES managed nodes](#patch-manager-troubleshooting-linux-zypper-locks)
-+ [Issue: Cannot acquire lock. Another patching operation is in progress.](#patch-manager-troubleshooting-linux-concurrent-lock)
-
 ### Issue: 'No such file or directory' error
 <a name="patch-manager-troubleshooting-linux-1"></a>
 
@@ -138,11 +105,11 @@ Unable to load and extract the content of payload, abort.failed to run commands:
 
 **Cause 2**: Insufficient storage space remains under the `/var` directory.
 
-**Solution 1**: Ensure that no maintenance window has two or more Run Command tasks that run `AWS-RunPatchBaseline` with the same Priority level and that run on the same target IDs. If this is the case, reorder the priority. Run Command is a tool in AWS Systems Manager.
+**Solution 1**: Make sure that no maintenance window has two or more Run Command tasks that run `AWS-RunPatchBaseline` with the same Priority level and that run on the same target IDs. If this is the case, reorder the priority. Run Command is a tool in AWS Systems Manager.
 
-**Solution 2**: Ensure that only one maintenance window at a time is running Run Command tasks that use `AWS-RunPatchBaseline` on the same targets and on the same schedule. If this is the case, change the schedule.
+**Solution 2**: Make sure that only one maintenance window at a time is running Run Command tasks that use `AWS-RunPatchBaseline` on the same targets and on the same schedule. If this is the case, change the schedule.
 
-**Solution 3**: Ensure that only one State Manager association is running `AWS-RunPatchBaseline` on the same schedule and targeting the same managed nodes. State Manager is a tool in AWS Systems Manager.
+**Solution 3**: Make sure that only one State Manager association is running `AWS-RunPatchBaseline` on the same schedule and targeting the same managed nodes. State Manager is a tool in AWS Systems Manager.
 
 **Solution 4**: Free up sufficient storage space under the `/var` directory for the update packages.
 
@@ -157,7 +124,7 @@ Unable to load and extract the content of payload, abort.failed to run commands:
 
 **Cause**: The `AWS-RunPatchBaseline` document has started running on a managed node where it's already running in another operation and has acquired the package manager `yum` process.
 
-**Solution**: Ensure that no State Manager association, maintenance window tasks, or other configurations that run `AWS-RunPatchBaseline` on a schedule are targeting the same managed node around the same time.
+**Solution**: Make sure that no State Manager association, maintenance window tasks, or other configurations that run `AWS-RunPatchBaseline` on a schedule are targeting the same managed node around the same time.
 
 ### Issue: 'Permission denied / failed to run commands' error
 <a name="patch-manager-troubleshooting-linux-3"></a>
@@ -172,7 +139,7 @@ failed to run commands: exit status 126
 
 **Cause**: `/var/lib/amazon/` might be mounted with `noexec` permissions. This is an issue because SSM Agent downloads payload scripts to `/var/lib/amazon/ssm` and runs them from that location.
 
-**Solution**: Ensure that you have configured exclusive partitions to `/var/log/amazon` and `/var/lib/amazon`, and that they're mounted with `exec` permissions.
+**Solution**: Make sure that you have configured exclusive partitions to `/var/log/amazon` and `/var/lib/amazon`, and that they're mounted with `exec` permissions.
 
 ### Issue: 'Unable to download payload' error
 <a name="patch-manager-troubleshooting-linux-4"></a>
@@ -258,7 +225,7 @@ For more information, see https://urllib3.readthedocs.io/en/latest/advanced-usag
 
 **Solution**: If the curl version provided by the package manager was uninstalled when a different version was installed, reinstall it.
 
-If you need to keep multiple curl versions installed, ensure that the version associated with the package manager is in the first directory listed in the `PATH` variable. You can check this by running the command `echo $PATH` to see the current order of directories that are checked for executable files on your system.
+If you need to keep multiple curl versions installed, make sure that the version associated with the package manager is in the first directory listed in the `PATH` variable. You can check this by running the command `echo $PATH` to see the current order of directories that are checked for executable files on your system.
 
 ### Issue: Patching fails with ‘Error unpacking rpm package…’ message
 <a name="error-unpacking-rpm"></a>
@@ -290,7 +257,7 @@ Encounter service side error when uploading the inventory
 
 **Cause**: Two commands to run `AWS-RunPatchBaseline` were running at the same time on the same managed node. This creates a race condition when initializing boto3 client during patching operations.
 
-**Solution**: Ensure that no State Manager association, maintenance window tasks, or other configurations that run `AWS-RunPatchBaseline` on a schedule are targeting the same managed node around the same time.
+**Solution**: Make sure that no State Manager association, maintenance window tasks, or other configurations that run `AWS-RunPatchBaseline` on a schedule are targeting the same managed node around the same time.
 
 ### Issue: Patching fails with ‘Errors were encountered while downloading packages’ message
 <a name="errors-while-downloading"></a>
@@ -565,10 +532,10 @@ After removing the problematic locks and updating your patch baseline if necessa
 When Patch Manager applies locks for rejected patches during `Install` operations, it's designed to clean up these locks automatically after the patch operation completes. If you see these locks when running `sudo zypper locks`, it indicates a previous patch operation was interrupted before cleanup could occur. However, if a patch operation is interrupted, manual cleanup might be required as described in this procedure.
 
 **Prevention**: To avoid future zypper lock conflicts:
-+ Carefully review your patch baseline's rejected patches list to ensure it only includes packages you truly want to exclude.
++ Carefully review your patch baseline's rejected patches list to make sure it only includes packages you truly want to exclude.
 + Avoid manually locking packages that might be required as dependencies for security updates.
 + If you must lock packages manually, document the reasons and review the locks periodically.
-+ Ensure patch operations complete successfully and aren't interrupted by system reboots or other factors.
++ Make sure patch operations complete successfully and aren't interrupted by system reboots or other factors.
 + Monitor patch operations to completion and avoid interrupting them with system reboots or other actions that could prevent proper cleanup of temporary locks.
 
 ### Issue: Cannot acquire lock. Another patching operation is in progress.
@@ -582,21 +549,13 @@ When Patch Manager applies locks for rejected patches during `Install` operation
 
 **Cause**: This error occurs when multiple patching operations are attempting to run on the same managed node at the same time. The lock file prevents concurrent patching operations to avoid conflicts and ensure system stability.
 
-**Solution**: Ensure that patching operations are not scheduled to run at the same time on the same managed node. Review the following configurations to identify and resolve scheduling conflicts:
-+ **Patch policies**: Check your Quick Setup patch policy configurations to ensure they don't overlap with other patching schedules.
+**Solution**: Make sure that patching operations are not scheduled to run at the same time on the same managed node. Review the following configurations to identify and resolve scheduling conflicts:
++ **Patch policies**: Check your Quick Setup patch policy configurations to make sure they don't overlap with other patching schedules.
 + **Maintenance windows**: Review your maintenance window associations to verify that multiple windows aren't targeting the same managed nodes with patching tasks at overlapping times.
 + **Manual Patch now operations**: Avoid initiating manual **Patch now** operations while scheduled patching is in progress.
 
 ## Errors when running `AWS-RunPatchBaseline` on Windows Server
 <a name="patch-manager-troubleshooting-windows"></a>
-
-**Topics**
-+ [Issue: mismatched product family/product pairs](#patch-manager-troubleshooting-product-family-mismatch)
-+ [Issue: `AWS-RunPatchBaseline` output returns an `HRESULT` (Windows Server)](#patch-manager-troubleshooting-hresult)
-+ [Issue: managed node doesn't have access to Windows Update Catalog or WSUS](#patch-manager-troubleshooting-instance-access)
-+ [Issue: PatchBaselineOperations PowerShell module is not downloadable](#patch-manager-troubleshooting-module-not-downloadable)
-+ [Issue: missing patches](#patch-manager-troubleshooting-missing-patches)
-+ [Issue: Cannot acquire lock. Another patching operation is in progress.](#patch-manager-troubleshooting-windows-concurrent-lock)
 
 ### Issue: mismatched product family/product pairs
 <a name="patch-manager-troubleshooting-product-family-mismatch"></a>
@@ -614,7 +573,7 @@ When Patch Manager applies locks for rejected patches during `Install` operation
 
 **Solution**: To avoid this issue in the console, always choose options from the **Currently available options** sublists.
 
-You can also view the products that have available patches by using the `[https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-patch-properties.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-patch-properties.html)` command in the AWS CLI or the `[https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribePatchProperties.html](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribePatchProperties.html)` API command.
+You can also view the products that have available patches by using the `[describe-patch-properties](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-patch-properties.html)` command in the AWS CLI or the `[DescribePatchProperties](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribePatchProperties.html)` API command.
 
 ### Issue: `AWS-RunPatchBaseline` output returns an `HRESULT` (Windows Server)
 <a name="patch-manager-troubleshooting-hresult"></a>
@@ -820,16 +779,13 @@ Cannot acquire lock on C:\ProgramData\Amazon\SSM\patch-baseline-concurrent.lock.
 
 **Cause**: This error occurs when multiple patching operations are attempting to run on the same managed node at the same time. The lock file prevents concurrent patching operations to avoid conflicts and ensure system stability.
 
-**Solution**: Ensure that patching operations are not scheduled to run at the same time on the same managed node. Review the following configurations to identify and resolve scheduling conflicts:
-+ **Patch policies**: Check your Quick Setup patch policy configurations to ensure they don't overlap with other patching schedules.
+**Solution**: Make sure that patching operations are not scheduled to run at the same time on the same managed node. Review the following configurations to identify and resolve scheduling conflicts:
++ **Patch policies**: Check your Quick Setup patch policy configurations to make sure they don't overlap with other patching schedules.
 + **Maintenance windows**: Review your maintenance window associations to verify that multiple windows aren't targeting the same managed nodes with patching tasks at overlapping times.
 + **Manual Patch now operations**: Avoid initiating manual **Patch now** operations while scheduled patching is in progress.
 
 ## Errors when running `AWS-RunPatchBaseline` on macOS
 <a name="patch-manager-troubleshooting-macos"></a>
-
-**Topics**
-+ [Issue: Cannot acquire lock. Another patching operation is in progress.](#patch-manager-troubleshooting-macos-concurrent-lock)
 
 ### Issue: Cannot acquire lock. Another patching operation is in progress.
 <a name="patch-manager-troubleshooting-macos-concurrent-lock"></a>
@@ -842,8 +798,8 @@ Cannot acquire lock on C:\ProgramData\Amazon\SSM\patch-baseline-concurrent.lock.
 
 **Cause**: This error occurs when multiple patching operations are attempting to run on the same managed node at the same time. The lock file prevents concurrent patching operations to avoid conflicts and ensure system stability.
 
-**Solution**: Ensure that patching operations are not scheduled to run at the same time on the same managed node. Review the following configurations to identify and resolve scheduling conflicts:
-+ **Patch policies**: Check your Quick Setup patch policy configurations to ensure they don't overlap with other patching schedules.
+**Solution**: Make sure that patching operations are not scheduled to run at the same time on the same managed node. Review the following configurations to identify and resolve scheduling conflicts:
++ **Patch policies**: Check your Quick Setup patch policy configurations to make sure they don't overlap with other patching schedules.
 + **Maintenance windows**: Review your maintenance window associations to verify that multiple windows aren't targeting the same managed nodes with patching tasks at overlapping times.
 + **Manual Patch now operations**: Avoid initiating manual **Patch now** operations while scheduled patching is in progress.
 
@@ -851,8 +807,8 @@ Cannot acquire lock on C:\ProgramData\Amazon\SSM\patch-baseline-concurrent.lock.
 <a name="patch-manager-troubleshooting-using-support-runbooks"></a>
 
 AWS Support provides two Automation runbooks you can use to troubleshoot certain issues related to patching.
-+ `AWSSupport-TroubleshootWindowsUpdate` – The [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/awssupport-troubleshoot-windows-update.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/awssupport-troubleshoot-windows-update.html) runbook is used to identify issues that could fail the Windows Server updates for Amazon Elastic Compute Cloud (Amazon EC2) Windows Server instances.
-+ `AWSSupport-TroubleshootPatchManagerLinux` – The [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-troubleshoot-patch-manager-linux.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-troubleshoot-patch-manager-linux.html) runbook troubleshoots common issues that can cause a patch failure on Linux-based managed nodes using Patch Manager. The main goal of this runbook is to identify the patch command failure root cause and suggest a remediation plan.
++ `AWSSupport-TroubleshootWindowsUpdate` – The [`AWSSupport-TroubleshootWindowsUpdate`](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/awssupport-troubleshoot-windows-update.html) runbook is used to identify issues that could fail the Windows Server updates for Amazon Elastic Compute Cloud (Amazon EC2) Windows Server instances.
++ `AWSSupport-TroubleshootPatchManagerLinux` – The [`AWSSupport-TroubleshootPatchManagerLinux`](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-troubleshoot-patch-manager-linux.html) runbook troubleshoots common issues that can cause a patch failure on Linux-based managed nodes using Patch Manager. The main goal of this runbook is to identify the patch command failure root cause and suggest a remediation plan.
 
 **Note**
 There is a charge to run Automation runbooks. For information, see [AWS Systems Manager Pricing for Automation](https://aws.amazon.com/systems-manager/pricing/#Automation).
@@ -867,6 +823,6 @@ Before you contact Support, collect the following items:
 + Run Command command ID, maintenance window ID, or Automation execution ID
 + For Windows Server managed nodes, also collect the following:
   + `%PROGRAMDATA%\Amazon\PatchBaselineOperations\Logs` as described on the **Windows** tab of [How patches are installed](patch-manager-installing-patches.md)
-  + Windows update logs: For Windows Server 2012 R2 and older, use `%windir%/WindowsUpdate.log`. For Windows Server 2016 and newer, first run the PowerShell command [https://docs.microsoft.com/en-us/powershell/module/windowsupdate/get-windowsupdatelog?view=win10-ps](https://docs.microsoft.com/en-us/powershell/module/windowsupdate/get-windowsupdatelog?view=win10-ps) before using `%windir%/WindowsUpdate.log`
+  + Windows update logs: For Windows Server 2012 R2 and older, use `%windir%/WindowsUpdate.log`. For Windows Server 2016 and newer, first run the PowerShell command [`Get-WindowsUpdateLog`](https://docs.microsoft.com/en-us/powershell/module/windowsupdate/get-windowsupdatelog?view=win10-ps) before using `%windir%/WindowsUpdate.log`
 + For Linux managed nodes, also collect the following:
   + The contents of the directory `/var/lib/amazon/ssm/{{instance-id}}/document/orchestration/{{Run-Command-execution-id}}/awsrunShellScript/PatchLinux`

@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/database-caching-stra
 
  The basic paradigm when you query data from a relational database includes executing SQL statements and iterating over the returned **ResultSet** object cursor to retrieve the database rows. There are several techniques you can apply when you want to cache the returned data. However, it’s best to choose a method that simplifies your data access pattern and/or optimizes the architectural goals that you have for your application.
 
- To visualize this, this whitepaper will examine snippets of Python code to explain the logic. You can find additional information on the [AWS caching site](https://aws.amazon.com/caching/). The examples use the [https://github.com/andymccurdy/redis-py](https://github.com/andymccurdy/redis-py) Redis client library for connecting to Redis, although you can use any other Python Redis library.
+ To visualize this, this whitepaper will examine snippets of Python code to explain the logic. You can find additional information on the [AWS caching site](https://aws.amazon.com/caching/). The examples use the [*redis-py*](https://github.com/andymccurdy/redis-py) Redis client library for connecting to Redis, although you can use any other Python Redis library.
 
  Assume that you issued the following SQL statement against a customer database for `CUSTOMER_ID 1001`. This whitepaper will examine the various caching strategies that you can use.
 
@@ -59,7 +59,7 @@ and so on …
 <a name="cache-the-database-sql-resultset"></a>
 
  Cache a serialized **ResultSet** object that contains the fetched database row.
-+  **Advantage:** When data retrieval logic is abstracted (for example, as in a [http://www.oracle.com/technetwork/java/dataaccessobject-138824.html](http://www.oracle.com/technetwork/java/dataaccessobject-138824.html) or DAO layer), the consuming code expects only a **ResultSet** object and does not need to be made aware of its origination. A **ResultSet** object can be iterated over, regardless of whether it originated from the database or was deserialized from the cache, which greatly reduces integration logic. This pattern can be applied to any relational database.
++  **Advantage:** When data retrieval logic is abstracted (for example, as in a [*Data Access Object*](http://www.oracle.com/technetwork/java/dataaccessobject-138824.html) or DAO layer), the consuming code expects only a **ResultSet** object and does not need to be made aware of its origination. A **ResultSet** object can be iterated over, regardless of whether it originated from the database or was deserialized from the cache, which greatly reduces integration logic. This pattern can be applied to any relational database.
 +  **Disadvantage:** Data retrieval still requires extracting values from the **ResultSet** object cursor and does not further simplify data access; it only reduces data retrieval latency.
 
  **Note:** When you cache the row, it’s important that it’s serializable. The following example uses a **CachedRowSet** implementation for this purpose. When you are using Redis, this is stored as a byte array value.

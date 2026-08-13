@@ -168,6 +168,6 @@ When all files are directly in the partition location, most of the time only one
 ## Use SymlinkTextInputFormat only when necessary
 <a name="performance-tuning-use-symlinktextinputformat-only-when-necessary"></a>
 
-Using the [https://athena.guide/articles/stitching-tables-with-symlinktextinputformat](https://athena.guide/articles/stitching-tables-with-symlinktextinputformat) technique can be a way to work around situations when the files for a table are not neatly organized into partitions. For example, symlinks can be useful when all files are in the same prefix or files with different schemas are in the same location.
+Using the [SymlinkTextInputFormat](https://athena.guide/articles/stitching-tables-with-symlinktextinputformat) technique can be a way to work around situations when the files for a table are not neatly organized into partitions. For example, symlinks can be useful when all files are in the same prefix or files with different schemas are in the same location.
 
 However, using symlinks adds levels of indirection to the query execution. These levels of indirection impact overall performance. The symlink files have to be read, and the locations they define have to be listed. This adds multiple round trips to Amazon S3 that usual Hive tables do not require. In conclusion, you should use `SymlinkTextInputFormat` only when better options like reorganizing files are not available.

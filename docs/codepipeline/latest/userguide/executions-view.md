@@ -113,7 +113,7 @@ You can view details about source artifacts (output artifact that originated in 
 
 1. Sign in to the AWS Management Console and open the CodePipeline console at [http://console.aws.amazon.com/codesuite/codepipeline/home](http://console.aws.amazon.com/codesuite/codepipeline/home).
 
-   The names of all pipelines associated with your AWS accountwill be displayed.
+   The names of all pipelines associated with your AWS account will be displayed.
 
 1. Choose the name of the pipeline for which you want to view source revision details. Do one of the following:
    + Choose **View history**. In **Source revisions**, the source change for each execution is listed.

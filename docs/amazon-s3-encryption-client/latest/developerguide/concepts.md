@@ -43,7 +43,7 @@ A *data key* is an encryption key that the Amazon S3 Encryption Client uses to e
 
 You don't need to specify, generate, implement, extend, protect or use data keys. The Amazon S3 Encryption Client does that work for you.
 
-To protect your data keys, the Amazon S3 Encryption Client encrypts them under a *key-encryption key* known as a [wrapping key](#wrapping-key). When you call [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html), the Amazon S3 Encryption Client uses your plaintext data key to encrypt your object, then removes it from memory as soon as possible. The Amazon S3 Encryption Client encrypts the data key with the wrapping key you provide. Then the Amazon S3 Encryption Client stores the encrypted data key with the encrypted object that the `PutObject` request uploads to Amazon S3. For more information, see [ How the Amazon S3 Encryption Client works](how-it-works.md).
+To protect your data keys, the Amazon S3 Encryption Client encrypts them under a *key-encryption key* known as a [wrapping key](#wrapping-key). When you call [`PutObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html), the Amazon S3 Encryption Client uses your plaintext data key to encrypt your object, then removes it from memory as soon as possible. The Amazon S3 Encryption Client encrypts the data key with the wrapping key you provide. Then the Amazon S3 Encryption Client stores the encrypted data key with the encrypted object that the `PutObject` request uploads to Amazon S3. For more information, see [ How the Amazon S3 Encryption Client works](how-it-works.md).
 
 ## Wrapping key
 <a name="wrapping-key"></a>

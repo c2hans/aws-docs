@@ -248,7 +248,7 @@ The following includes a `Task` state that uses `eks:call` to delete the job `ex
 <a name="connect-eks-apis"></a>
 
 Supported Amazon EKS APIs and syntax include:
-+ [https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateCluster.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateCluster.html)
++ [`CreateCluster`](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateCluster.html)
   +  [Request syntax](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateCluster.html#API_CreateCluster_RequestSyntax)
   +  [Response syntax](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateCluster.html#API_CreateCluster_ResponseSyntax)
 
@@ -259,12 +259,12 @@ Supported Amazon EKS APIs and syntax include:
     Amazon EKS uses service-linked roles which contain the permissions Amazon EKS requires to call other services on your behalf. If these service-linked roles do not exist in your account already, you must add the `iam:CreateServiceLinkedRole` permission to the IAM role used by Step Functions. For more information, see [Using Service-Linked Roles](https://docs.aws.amazon.com/eks/latest/userguide/using-service-linked-roles.html) in the *Amazon EKS User Guide*.
 
     The IAM role used by Step Functions must have `iam:PassRole` permissions to pass the cluster IAM role to Amazon EKS. For more information, see [Amazon EKS cluster IAM role](https://docs.aws.amazon.com/eks/latest/userguide/service_IAM_role.html) in the *Amazon EKS User Guide*.
-+ [https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteCluster.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteCluster.html)
++ [`DeleteCluster`](https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteCluster.html)
   +  [Request syntax](https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteCluster.html#API_DeleteCluster_RequestSyntax)
   +  [Response syntax](https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteCluster.html#API_DeleteCluster_ResponseSyntax)
 
     You must delete any Fargate profiles or node groups before deleting a cluster.
-+ [https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateFargateProfile.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateFargateProfile.html)
++ [`CreateFargateProfile`](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateFargateProfile.html)
   +  [Request syntax](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateFargateProfile.html#API_CreateFargateProfile_RequestSyntax)
   +  [Response syntax](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateFargateProfile.html#API_CreateFargateProfile_ResponseSyntax)
 
@@ -273,17 +273,17 @@ Supported Amazon EKS APIs and syntax include:
     Amazon EKS on Fargate may not be available in all regions. For information on region availability, see the section on [Fargate](https://docs.aws.amazon.com/eks/latest/userguide/fargate.html) in the *Amazon EKS User Guide*.
 
     The IAM role used by Step Functions must have `iam:PassRole` permissions to pass the pod execution IAM role to Amazon EKS. For more information, see [Pod execution role](https://docs.aws.amazon.com/eks/latest/userguide/pod-execution-role.html) in the *Amazon EKS User Guide*.
-+ [https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteFargateProfile.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteFargateProfile.html)
++ [`DeleteFargateProfile`](https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteFargateProfile.html)
   +  [Request syntax](https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteFargateProfile.html#API_DeleteFargateProfile_RequestSyntax)
   +  [Response syntax](https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteFargateProfile.html#API_DeleteFargateProfile_ResponseSyntax)
-+ [https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateNodegroup.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateNodegroup.html)
++ [`CreateNodegroup`](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateNodegroup.html)
   +  [Request syntax](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateNodegroup.html#API_CreateNodegroup_RequestSyntax)
   +  [Response syntax](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateNodegroup.html#API_CreateNodegroup_ResponseSyntax)
 
     Amazon EKS uses service-linked roles which contain the permissions Amazon EKS requires to call other services on your behalf. If these service-linked roles do not exist in your account already, you must add the `iam:CreateServiceLinkedRole` permission to the IAM role used by Step Functions. For more information, see [Using Service-Linked Roles](https://docs.aws.amazon.com/eks/latest/userguide/using-service-linked-roles.html) in the *Amazon EKS User Guide*.
 
     The IAM role used by Step Functions must have `iam:PassRole` permissions to pass the node IAM role to Amazon EKS. For more information, see [Using Service-Linked Roles](https://docs.aws.amazon.com/eks/latest/userguide/create-node-role.html) in the *Amazon EKS User Guide*.
-+ [https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteNodegroup.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteNodegroup.html)
++ [`DeleteNodegroup`](https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteNodegroup.html)
   +  [Request syntax](https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteNodegroup.html#API_DeleteNodegroup_RequestSyntax)
   +  [Response syntax](https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteNodegroup.html#API_DeleteNodegroup_ResponseSyntax)
 

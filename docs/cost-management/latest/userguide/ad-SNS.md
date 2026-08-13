@@ -60,7 +60,7 @@ To create an anomaly detection monitor that sends notifications to an Amazon Sim
 **Note**
 In this topic policy, you enter the subscription’s account ID as the value for the `aws:SourceAccount` condition. This condition has AWS Cost Anomaly Detection interact with the Amazon SNS topic only when performing operations for the account that owns the subscription.
 You can restrict AWS Cost Anomaly Detection to interact with the topic only when performing operations on behalf of a specific subscription. To do this, use the `aws:SourceArn` condition in the topic policy.
-For more information about these conditions, see [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount) and [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) in the *IAM User Guide*.
+For more information about these conditions, see [`aws:SourceAccount`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount) and [`aws:SourceArn`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) in the *IAM User Guide*.
 
 1. In the topic policy statement that you select, replace the following values:
    + Replace (for example, {{AWSAnomalyDetectionSNSPublishingPermissions}}) with a string. The `Sid` must be unique within the policy.
@@ -183,7 +183,7 @@ Ensure that the key policies of the KMS key allow the necessary permissions. To 
 **Note**
 In this KMS key policy, you enter the subscription’s account ID as the value for the `aws:SourceAccount` condition. This condition has AWS Cost Anomaly Detection interact with the KMS key only when performing operations for the account that owns the subscription.
 To have AWS Cost Anomaly Detection interact with the KMS key only when performing operations on behalf of a specific subscription, use the `aws:SourceArn` condition in the KMS key policy.
-For more information about these conditions, see [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount) and [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) in the *IAM User Guide*.
+For more information about these conditions, see [`aws:SourceAccount`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount) and [`aws:SourceArn`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) in the *IAM User Guide*.
 
 1. If you're using the KMS key policy with the `aws:SourceAccount` condition, replace {{account-ID}} with the account ID that owns the subscription. If the Amazon SNS topic has multiple subscriptions from different accounts, add multiple account IDs to the `aws:SourceAccount` condition.
 

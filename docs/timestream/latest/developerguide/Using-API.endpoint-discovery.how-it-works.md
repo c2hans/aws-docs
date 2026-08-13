@@ -9,9 +9,9 @@ For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon
 
  Timestream is built using a [cellular architecture ](architecture.md#cells) to ensure better scaling and traffic isolation properties. Because each customer account is mapped to a specific cell in a region, your application must use the correct cell-specific endpoints that your account has been mapped to. When using the SDKs, this mapping is transparently handled for you and you do not need to manage the cell-specific endpoints. However, when directly accessing the REST API, you will need to manage and map the correct endpoints yourself. This process, the *endpoint discovery pattern*, is described below:
 
-1.  The endpoint discovery pattern starts with a call to the `DescribeEndpoints` action (described in the [https://docs.aws.amazon.com/timestream/latest/developerguide/API_Reference.html](https://docs.aws.amazon.com/timestream/latest/developerguide/API_Reference.html) section).
+1.  The endpoint discovery pattern starts with a call to the `DescribeEndpoints` action (described in the [`DescribeEndpoints`](https://docs.aws.amazon.com/timestream/latest/developerguide/API_Reference.html) section).
 
-1.  The endpoint should be cached and reused for the amount of time specified by the returned time-to-live (TTL) value (the [https://docs.aws.amazon.com/timestream/latest/developerguide/API_Endpoint.html#timestream-Type-Endpoint-CachePeriodInMinutes.html](https://docs.aws.amazon.com/timestream/latest/developerguide/API_Endpoint.html#timestream-Type-Endpoint-CachePeriodInMinutes.html)). Calls to the Timestream Live Analytics API can then be made for the duration of the TTL.
+1.  The endpoint should be cached and reused for the amount of time specified by the returned time-to-live (TTL) value (the [`CachePeriodInMinutes`](https://docs.aws.amazon.com/timestream/latest/developerguide/API_Endpoint.html#timestream-Type-Endpoint-CachePeriodInMinutes.html)). Calls to the Timestream Live Analytics API can then be made for the duration of the TTL.
 
 1.  After the TTL expires, a new call to DescribeEndpoints should be made to refresh the endpoint (in other words, start over at Step 1).
 

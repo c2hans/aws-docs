@@ -35,7 +35,7 @@ You can view the following information about your public keys that are stored in
 #### [ AWS CLI ]
 
 **To view information about a key pair**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-key-pairs.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-key-pairs.html) command.
+Use the [describe-key-pairs](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-key-pairs.html) command.
 
 ```
 aws ec2 describe-key-pairs --key-names {{key-pair-name}}
@@ -45,7 +45,7 @@ aws ec2 describe-key-pairs --key-names {{key-pair-name}}
 #### [ PowerShell ]
 
 **To view information about a key pair**
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2KeyPair.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2KeyPair.html) cmdlet.
+Use the [Get-EC2KeyPair](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2KeyPair.html) cmdlet.
 
 ```
 Get-EC2KeyPair -KeyName {{key-pair-name}}

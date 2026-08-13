@@ -60,7 +60,7 @@ Use the following procedure to reset an AWS Managed Microsoft AD user's password
  You can reset an AWS Managed Microsoft AD user's password to enable their account with the AWS Directory Service Data CLI.
 
 **Note**
-This command uses the [https://docs.aws.amazon.com//cli/latest/reference/ds/](https://docs.aws.amazon.com//cli/latest/reference/ds/) namespace.
+This command uses the [`aws ds`](https://docs.aws.amazon.com//cli/latest/reference/ds/) namespace.
 
 **To reset an AWS Managed Microsoft AD user's password with the AWS CLI**
 +  To reset a user's password, open the AWS CLI, and run the following command with your Directory ID, username, and password:
@@ -72,7 +72,7 @@ aws ds reset-user-password \
   --new-password "{{your-password}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds/reset-user-password.html](https://docs.aws.amazon.com//cli/latest/reference/ds/reset-user-password.html).
+For more information, see [`reset-user-password`](https://docs.aws.amazon.com//cli/latest/reference/ds/reset-user-password.html).
 
 ------
 #### [ PowerShell ]
@@ -80,7 +80,7 @@ For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds/
  You can reset an AWS Managed Microsoft AD user's password to enable their account with AWS Tools for PowerShell.
 
 **Note**
-This command uses the [https://docs.aws.amazon.com//powershell/latest/reference/items/DirectoryService_cmdlets.html](https://docs.aws.amazon.com//powershell/latest/reference/items/DirectoryService_cmdlets.html) module.
+This command uses the [`AWS.Tools.DirectoryService`](https://docs.aws.amazon.com//powershell/latest/reference/items/DirectoryService_cmdlets.html) module.
 
 **To reset an AWS Managed Microsoft AD user's password with AWS Tools for PowerShell**
 +  To reset a user's password, open PowerShell, and run the following command with your Directory ID, username, and password:
@@ -92,6 +92,6 @@ Reset-DSUserPassword `
     -NewPassword "{{your-password}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Reset-DSUserPassword.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Reset-DSUserPassword.html).
+For more information, see [`Reset-DSUserPassword`](https://docs.aws.amazon.com//powershell/latest/reference/items/Reset-DSUserPassword.html).
 
 ------

@@ -50,7 +50,7 @@ This section describes the procedures and options for creating and managing sign
 After you create the signing profile, you can delegate control of it using [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html). For more information about managing user permissions in AWS Signer, see [Identity and Access Management for AWS Signer](authen-overview.md).
 
 Signing profiles can be created, inspected, listed, and canceled as shown in the following examples.
-+ [https://docs.aws.amazon.com/cli/latest/reference/signer/put-signing-profile.html](https://docs.aws.amazon.com/cli/latest/reference/signer/put-signing-profile.html)
++ [**put-signing-profile**](https://docs.aws.amazon.com/cli/latest/reference/signer/put-signing-profile.html)
 
   This command creates and saves an AWS Signer signing profile.
 
@@ -64,21 +64,21 @@ Signing profiles can be created, inspected, listed, and canceled as shown in the
        --platform-id AWSLambda-SHA384-ECDSA \
        --signature-validity-period value={{10}}, type='{{MONTHS}}'
   ```
-+ [https://docs.aws.amazon.com/cli/latest/reference/signer/get-signing-profile.html](https://docs.aws.amazon.com/cli/latest/reference/signer/get-signing-profile.html)
++ [**get-signing-profile**](https://docs.aws.amazon.com/cli/latest/reference/signer/get-signing-profile.html)
 
   This command retrieves a signing profile for inspection.
 
   ```
   $ aws signer get-signing-profile --profile-name {{my_lambda_signing_profile}}
   ```
-+ [https://docs.aws.amazon.com/cli/latest/reference/signer/list-signing-profiles.html](https://docs.aws.amazon.com/cli/latest/reference/signer/list-signing-profiles.html)
++ [**list-signing-profiles**](https://docs.aws.amazon.com/cli/latest/reference/signer/list-signing-profiles.html)
 
   This command lists the signing profiles that you own or control.
 
   ```
   $ aws signer list-signing-profiles
   ```
-+ [https://docs.aws.amazon.com/cli/latest/reference/signer/cancel-signing-profile.html](https://docs.aws.amazon.com/cli/latest/reference/signer/cancel-signing-profile.html)
++ [**cancel-signing-profile**](https://docs.aws.amazon.com/cli/latest/reference/signer/cancel-signing-profile.html)
 
   This command deletes a signing profile.
 
@@ -94,9 +94,9 @@ Signing profiles can be created, inspected, listed, and canceled as shown in the
 #### [ API ]
 
 Signing profiles can be created, inspected, listed, and deleted using the following Signer API actions.
-+ [https://docs.aws.amazon.com/signer/latest/api/API_PutSigningProfile.html](https://docs.aws.amazon.com/signer/latest/api/API_PutSigningProfile.html)
-+ [https://docs.aws.amazon.com/signer/latest/api/API_CancelSigningProfile.html](https://docs.aws.amazon.com/signer/latest/api/API_CancelSigningProfile.html)
-+ [https://docs.aws.amazon.com/signer/latest/api/API_GetSigningProfile.html](https://docs.aws.amazon.com/signer/latest/api/API_GetSigningProfile.html)
-+ [https://docs.aws.amazon.com/signer/latest/api/API_ListSigningProfiles.html](https://docs.aws.amazon.com/signer/latest/api/API_ListSigningProfiles.html)
++ [`PutSigningProfile`](https://docs.aws.amazon.com/signer/latest/api/API_PutSigningProfile.html)
++ [`CancelSigningProfile`](https://docs.aws.amazon.com/signer/latest/api/API_CancelSigningProfile.html)
++ [`GetSigningProfile`](https://docs.aws.amazon.com/signer/latest/api/API_GetSigningProfile.html)
++ [`ListSigningProfiles`](https://docs.aws.amazon.com/signer/latest/api/API_ListSigningProfiles.html)
 
 ------

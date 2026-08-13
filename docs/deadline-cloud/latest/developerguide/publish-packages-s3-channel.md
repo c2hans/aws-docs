@@ -89,7 +89,7 @@ To initialize an empty channel, create a `repodata.json` file and upload it to t
 
 ```
 echo '{"info":{"subdir":"noarch"},"packages":{},"packages.conda":{},"removed":[],"repodata_version":1}' > empty_channel_repodata.json
-aws s3api put-object --body empty_channel_repodata.json --key conda/Default/noarch/repodata.json --bucket {{amzn-s3-demo-bucket}}
+aws s3api put-object --body empty_channel_repodata.json --key Conda/Default/noarch/repodata.json --bucket {{amzn-s3-demo-bucket}}
 ```
 
 The `/Conda/Default` prefix must match the channel prefix that your queue environment uses. After you initialize the channel, you can publish packages to the channel by using `rattler-build publish`.
@@ -136,7 +136,7 @@ After you publish the package, create a temporary pixi project to verify that th
    pixi run blender --version
    ```
 
-   The [https://pixi.sh/latest/reference/cli/pixi/run/](https://pixi.sh/latest/reference/cli/pixi/run/) command activates the conda environment for the project directory and runs the specified command within it. The environment persists in the project directory, so you can use the same `pixi run` command from other terminals.
+   The [`pixi run`](https://pixi.sh/latest/reference/cli/pixi/run/) command activates the conda environment for the project directory and runs the specified command within it. The environment persists in the project directory, so you can use the same `pixi run` command from other terminals.
 
 ## Removing packages from the channel
 <a name="publish-s3-remove-packages"></a>

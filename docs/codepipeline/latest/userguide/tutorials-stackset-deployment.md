@@ -12,7 +12,7 @@ As part of creating a pipeline, an S3 artifact bucket provided by the customer w
 
 There are two ways to manage permissions for a stack set: self-managed and AWS-managed IAM roles. This tutorial provides examples with self-managed permissions.
 
-To most effectively use Stacksets in CodePipeline, you should have a clear understanding of the concepts behind CloudFormation StackSets and how they work. See [StackSets concepts](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-concepts.html) in the *AWS CloudFormation User Guide*.
+To most effectively use StackSets in CodePipeline, you should have a clear understanding of the concepts behind CloudFormation StackSets and how they work. See [StackSets concepts](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-concepts.html) in the *AWS CloudFormation User Guide*.
 
 **Topics**
 + [Prerequisites](#tutorials-stackset-deployment-prereq)
@@ -217,7 +217,7 @@ View the resources and status for your initial deployment. After verifying the d
 ## Step 4: Add a CloudFormationStackInstances action
 <a name="tutorials-stacksets-instances"></a>
 
-Create a next action in your pipeline that will allow CloudFormation StackSets to create the remainingstack instances.
+Create a next action in your pipeline that will allow CloudFormation StackSets to create the remaining stack instances.
 
 **To create a next action in your pipeline**
 
@@ -259,7 +259,7 @@ Create a next action in your pipeline that will allow CloudFormation StackSets t
 
    1. Choose **Save**.
 
-   1. .Manually release a change. Your updated pipeline displays with two actions in the Deploy stage.
+   1. Manually release a change. Your updated pipeline displays with two actions in the Deploy stage.
 
 ## Step 5: View stack set resources for your deployment
 <a name="tutorials-stacksets-view"></a>

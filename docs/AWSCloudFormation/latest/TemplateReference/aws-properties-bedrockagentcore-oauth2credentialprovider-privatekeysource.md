@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::BedrockAgentCore::OAuth2CredentialProvider PrivateKeySource
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-privatekeysource"></a>
 
-<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-privatekeysource-description"></a>The `PrivateKeySource` property type specifies Property description not available. for an [AWS::BedrockAgentCore::OAuth2CredentialProvider](aws-resource-bedrockagentcore-oauth2credentialprovider.md).
+Contains the private key source configuration for a JWT client assertion.
 
 ## Syntax
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-privatekeysource-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-privatekeysource-properties"></a>
 
 `KmsKeySource`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-privatekeysource-kmskeysource"></a>
-Property description not available.
+The AWS KMS key source for the JWT client assertion.
 *Required*: No
 *Type*: [KmsKeySourceType](aws-properties-bedrockagentcore-oauth2credentialprovider-kmskeysourcetype.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

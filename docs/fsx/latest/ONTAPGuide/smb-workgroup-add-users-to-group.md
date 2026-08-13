@@ -19,7 +19,7 @@ When removing members from a local group, keep the following in mind:
 You need to have the `fsxadmin` role to run the commands used in this procedure. For more information, see [ONTAP roles and users](roles-and-users.md).
 
 **To manage the local group membership**
-+ Add a member to or remove a member from a group using the [https://docs.netapp.com/us-en/ontap-cli/vserver-cifs-users-and-groups-local-group-add-members.html](https://docs.netapp.com/us-en/ontap-cli/vserver-cifs-users-and-groups-local-group-add-members.html) and [vserver cifs users-and-groups local-group remove-members](https://docs.netapp.com/us-en/ontap-cli/vserver-cifs-users-and-groups-local-group-remove-members.html) ONTAP CLI commands.
++ Add a member to or remove a member from a group using the [**vserver cifs users-and-groups local-group add-members**](https://docs.netapp.com/us-en/ontap-cli/vserver-cifs-users-and-groups-local-group-add-members.html) and [vserver cifs users-and-groups local-group remove-members](https://docs.netapp.com/us-en/ontap-cli/vserver-cifs-users-and-groups-local-group-remove-members.html) ONTAP CLI commands.
   + To add members to a workgroup:
 
     ```

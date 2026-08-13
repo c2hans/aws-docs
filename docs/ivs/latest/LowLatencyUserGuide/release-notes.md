@@ -7,6 +7,74 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-n
 
 This document contains all Amazon IVS Low-Latency Streaming release notes, latest first, organized by date of release.
 
+## August 12, 2026
+<a name="aug12-26-broadcast-web-ll"></a>
+
+### IVS Broadcast SDK: Web 1.38.1 (Low-Latency Streaming)
+<a name="aug12-26-broadcast-web-ll-1381"></a>
+
+| Platform | Downloads and Changes |
+| --- | --- |
+| [Web Broadcast SDK 1.38.1](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  There were no changes to the low-latency SDK in this release. Changes only apply to the [real-time SDK](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html#aug12-26-broadcast-web-rt).  |
+
+## August 11, 2026
+<a name="aug11-26-broadcast-android-ll"></a>
+
+### Amazon IVS Broadcast SDK: Android 1.43.1 (Low-Latency Streaming)
+<a name="aug11-26-broadcast-android-ll-1431"></a>
+
+| Platform | Downloads and Changes |
+| --- | --- |
+| [Android Broadcast SDK 1.43.1](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.43.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.43.1/android/)+  There were no changes to the low-latency SDK in this release.  |
+
+#### Broadcast SDK Size: Android
+<a name="broadcast-1431-ll-sdk-size-android"></a>
+
+| Architecture | Compressed Size | Uncompressed Size |
+| --- | --- | --- |
+| arm64-v8a | 2.015 MB | 5.455 MB |
+| armeabi-v7a | 1.765 MB | 3.778 MB |
+| x86\_64 | 2.097 MB | 5.790 MB |
+| x86 | 2.122 MB | 5.575 MB |
+
+## August 6, 2026
+<a name="aug06-26-player-web-ll"></a>
+
+### IVS Player SDK: Web 1.55.0
+<a name="aug06-26-player-web-ll-1550"></a>
+
+| Platform | Downloads and Changes |
+| --- | --- |
+| [Web player 1.55.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.55.0/amazon-ivs-player.min.js](https://player.live-video.net/1.55.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.55.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.55.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.55.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.55.0/web/)+  Bug fixes and stability improvements.  |
+
+## August 6, 2026
+<a name="aug06-26-player-mobile-ll"></a>
+
+### IVS Player SDK: Android 1.55.0, iOS 1.55.0
+<a name="aug06-26-player-mobile-ll-1550"></a>
+
+| Platform | Downloads and Changes |
+| --- | --- |
+| [Android player 1.55.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.55.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.55.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Player 1.55.0](player-ios.md) | **Download:** [https://player.live-video.net/1.55.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.55.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.55.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.55.0/ios/)+  Bug fixes and stability improvements. <br />+  Support for iOS 14 will be deprecated as of IVS Player 1.58.0.  |
+
+#### Mobile SDK Size: Android
+<a name="player-mobile-1550-sdk-size-android"></a>
+
+| Architecture | Compressed Size | Uncompressed Size |
+| --- | --- | --- |
+| arm64-v8a | 1.550 MB | 3.987 MB |
+| armeabi-v7a | 1.377 MB | 2.834 MB |
+| x86\_64 | 1.550 MB | 4.060 MB |
+| x86  | 1.614 MB | 4.071 MB |
+
+#### Mobile SDK Size: iOS
+<a name="player-mobile-1550-sdk-size-ios"></a>
+
+| Architecture | Compressed Size | Uncompressed Size |
+| --- | --- | --- |
+| arm64 | 0.814 MB | 1.739 MB |
+
 ## July 30, 2026
 <a name="jul30-26-broadcast-mobile-ll"></a>
 

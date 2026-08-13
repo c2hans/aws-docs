@@ -13,7 +13,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 
 ![Diagram showing Cell-based architecture](http://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/cell-based-architecture.png)
 
- In his AWS blog post, Colm MacCarthaigh explains how Amazon Route 53 uses the concept of [https://aws.amazon.com/blogs/architecture/shuffle-sharding-massive-and-magical-fault-isolation/](https://aws.amazon.com/blogs/architecture/shuffle-sharding-massive-and-magical-fault-isolation/) to isolate customer requests into shards. A shard in this case consists of two or more cells. Based on partition key, traffic from a customer (or resources, or whatever you want to isolate) is routed to its assigned shard. In the case of eight cells with two cells per shard, and customers divided among the four shards, 25% of customers would experience impact in the event of a problem.
+ In his AWS blog post, Colm MacCarthaigh explains how Amazon Route 53 uses the concept of [*shuffle sharding*](https://aws.amazon.com/blogs/architecture/shuffle-sharding-massive-and-magical-fault-isolation/) to isolate customer requests into shards. A shard in this case consists of two or more cells. Based on partition key, traffic from a customer (or resources, or whatever you want to isolate) is routed to its assigned shard. In the case of eight cells with two cells per shard, and customers divided among the four shards, 25% of customers would experience impact in the event of a problem.
 
 ![Diagram showing a service divided into traditional shards](http://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/service-divided-into-traditional-shards.png)
 

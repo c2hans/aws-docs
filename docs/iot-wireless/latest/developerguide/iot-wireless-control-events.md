@@ -70,7 +70,7 @@ Depending on whether you enabled events for all resources or for individual reso
 You can configure events and add resources to your configuration by using the AWS IoT Wireless API or the AWS CLI.
 
 **Enable notifications for all resources**
-You can enable notifications for all resources in your AWS account that belong to a particular resource type and monitor them by using the [UpdateEventConfigurationByResourceTypes](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateResourceEventConfiguration.html) API or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/update-event-configuration-by-resource-types.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/update-event-configuration-by-resource-types.html) CLI command. For example:
+You can enable notifications for all resources in your AWS account that belong to a particular resource type and monitor them by using the [UpdateEventConfigurationByResourceTypes](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateResourceEventConfiguration.html) API or the [`update-event-configuration-by-resource-types`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/update-event-configuration-by-resource-types.html) CLI command. For example:
 
 ```
 aws iotwireless update-event-configuration-by-resource-types \
@@ -97,14 +97,14 @@ aws iotwireless update-event-configuration-by-resource-types \
 **Note**
 All quotation marks (") are escaped with a backslash (\\).
 
-You can get the current event configuration by calling the [GetEventConfigurationByResourceTypes](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetResourceEventConfiguration.html) API or by using the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-event-configuration-by-resource-types.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-event-configuration-by-resource-types.html) CLI command. For example:
+You can get the current event configuration by calling the [GetEventConfigurationByResourceTypes](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetResourceEventConfiguration.html) API or by using the [`get-event-configuration-by-resource-types`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-event-configuration-by-resource-types.html) CLI command. For example:
 
 ```
 aws iotwireless get-event-configuration-by-resource-types
 ```
 
 **Enable notifications for individual resources**
-To add individual resources to your event configuration and control which events are published by using the API or CLI, call the [UpdateResourceEventConfiguration](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateResourceEventConfiguration.html) API or use the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/update-resource-event-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/update-resource-event-configuration.html) CLI command. For example:
+To add individual resources to your event configuration and control which events are published by using the API or CLI, call the [UpdateResourceEventConfiguration](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateResourceEventConfiguration.html) API or use the [`update-resource-event-configuration`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/update-resource-event-configuration.html) CLI command. For example:
 
 ```
 aws iotwireless update-resource-event-configuration \
@@ -129,7 +129,7 @@ aws iotwireless update-resource-event-configuration \
 **Note**
 All quotation marks (") are escaped with a backslash (\\).
 
-You can get the current event configuration by calling the [GetResourceEventConfiguration](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetResourceEventConfiguration.html) API or by using the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-resource-event-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-resource-event-configuration.html) CLI command. For example:
+You can get the current event configuration by calling the [GetResourceEventConfiguration](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetResourceEventConfiguration.html) API or by using the [`get-resource-event-configuration`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-resource-event-configuration.html) CLI command. For example:
 
 ```
 aws iotwireless get-resource-event-configuration \
@@ -138,7 +138,7 @@ aws iotwireless get-resource-event-configuration \
 ```
 
 **List event configurations**
-You can also use the AWS IoT Wireless API or the AWS CLI to list event configurations where at least one event topic has been enabled. To list configurations, use the [ListEventConfigurations](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListEventConfigurations.html) API operation or by using the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-event-configurations.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-event-configurations.html) CLI command. For example:
+You can also use the AWS IoT Wireless API or the AWS CLI to list event configurations where at least one event topic has been enabled. To list configurations, use the [ListEventConfigurations](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListEventConfigurations.html) API operation or by using the [`list-event-configurations`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-event-configurations.html) CLI command. For example:
 
 ```
 aws iotwireless list-event-configurations --resource-type WirelessDevice

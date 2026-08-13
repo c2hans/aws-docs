@@ -353,7 +353,7 @@ CloudFormation installs the Redshift Spectrum Getting Started DataLake template 
 
 **To launch your Redshift Spectrum Getting Started DataLake CloudFormation stack**
 
-1. Choose [https://console.aws.amazon.com/cloudformation/home?#/stacks/new?stackName=DataLake&templateURL=https://s3.amazonaws.com/redshift-downloads/docs-downloads/DataLake.yml](https://console.aws.amazon.com/cloudformation/home?#/stacks/new?stackName=DataLake&templateURL=https://s3.amazonaws.com/redshift-downloads/docs-downloads/DataLake.yml). The CloudFormation console opens with the DataLake.yml template selected.
+1. Choose [**Launch CFN stack**](https://console.aws.amazon.com/cloudformation/home?#/stacks/new?stackName=DataLake&templateURL=https://s3.amazonaws.com/redshift-downloads/docs-downloads/DataLake.yml). The CloudFormation console opens with the DataLake.yml template selected.
 
    You can also download and customize the Redshift Spectrum Getting Started DataLake CloudFormation [CFN template](https://s3.amazonaws.com/redshift-downloads/docs-downloads/DataLake.yml), then open CloudFormation console ([https://console.aws.amazon.com/cloudformation](https://console.aws.amazon.com/cloudformation/)) and create a stack with the customized template.
 

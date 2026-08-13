@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ListPro
 # ListProfilingGroups
 <a name="API_ListProfilingGroups"></a>
 
- Returns a list of profiling groups. The profiling groups are returned as [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html) objects.
+ Returns a list of profiling groups. The profiling groups are returned as [`ProfilingGroupDescription`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html) objects.
 
 ## Request Syntax
 <a name="API_ListProfilingGroups_RequestSyntax"></a>
@@ -20,7 +20,7 @@ GET /profilingGroups?includeDescription={{includeDescription}}&maxResults={{maxR
 The request uses the following URI parameters.
 
  ** [includeDescription](#API_ListProfilingGroups_RequestSyntax) **   <a name="profiler-ListProfilingGroups-request-uri-includeDescription"></a>
-A `Boolean` value indicating whether to include a description. If `true`, then a list of [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html) objects that contain detailed information about profiling groups is returned. If `false`, then a list of profiling group names is returned.
+A `Boolean` value indicating whether to include a description. If `true`, then a list of [`ProfilingGroupDescription`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html) objects that contain detailed information about profiling groups is returned. If `false`, then a list of profiling group names is returned.
 
  ** [maxResults](#API_ListProfilingGroups_RequestSyntax) **   <a name="profiler-ListProfilingGroups-request-uri-maxResults"></a>
 The maximum number of profiling groups results returned by `ListProfilingGroups` in paginated output. When this parameter is used, `ListProfilingGroups` only returns `maxResults` results in a single page along with a `nextToken` response element. The remaining results of the initial request can be seen by sending another `ListProfilingGroups` request with the returned `nextToken` value.
@@ -87,13 +87,13 @@ Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[\w-]+`
 
  ** [profilingGroupNames](#API_ListProfilingGroups_ResponseSyntax) **   <a name="profiler-ListProfilingGroups-response-profilingGroupNames"></a>
- A returned list of profiling group names. A list of the names is returned only if `includeDescription` is `false`, otherwise a list of [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html) objects is returned.
+ A returned list of profiling group names. A list of the names is returned only if `includeDescription` is `false`, otherwise a list of [`ProfilingGroupDescription`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html) objects is returned.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\w-]+`
 
  ** [profilingGroups](#API_ListProfilingGroups_ResponseSyntax) **   <a name="profiler-ListProfilingGroups-response-profilingGroups"></a>
- A returned list [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html) objects. A list of [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html) objects is returned only if `includeDescription` is `true`, otherwise a list of profiling group names is returned.
+ A returned list [`ProfilingGroupDescription`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html) objects. A list of [`ProfilingGroupDescription`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html) objects is returned only if `includeDescription` is `true`, otherwise a list of profiling group names is returned.
 Type: Array of [ProfilingGroupDescription](API_ProfilingGroupDescription.md) objects
 
 ## Errors

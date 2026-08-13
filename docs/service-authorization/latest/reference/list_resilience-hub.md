@@ -9,7 +9,7 @@ AWS Resilience Hub (service prefix: `resiliencehub`) provides the following serv
 
 References:
 + Learn how to [configure this service](https://docs.aws.amazon.com/resilience-hub/latest/userguide/).
-+ View a list of the [API operations available for this service](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/).
++ View a list of the [API operations available for this service](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/).
 + Learn how to secure this service and its resources by [using IAM](https://docs.aws.amazon.com/resilience-hub/latest/userguide/security-iam.html) permission policies.
 + View the [programmatic service authorization reference](https://servicereference.us-east-1.amazonaws.com/v1/resiliencehub/resiliencehub.json) for this service.
 
@@ -579,6 +579,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   DeleteTestSources  **
+  - **SDK client:** resiliencehubv2
+  - **IAM action:**  [resiliencehub:DeleteTestSources](#list_resilience-hub-action-DeleteTestSources)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   DeleteUserJourney  **
   - **SDK client:** resiliencehubv2
   - **IAM action:**  [resiliencehub:DeleteUserJourney](#list_resilience-hub-action-DeleteUserJourney)
@@ -963,19 +970,19 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [CreateAssertion](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_CreateAssertion.html)  **
+- **   [CreateAssertion](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_CreateAssertion.html)  **
   - **Description:** Grants permission to create an assertion for a service
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [CreateInputSource](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_CreateInputSource.html)  **
+- **   [CreateInputSource](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_CreateInputSource.html)  **
   - **Description:** Grants permission to create an input source for a service
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [CreatePolicy](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_CreatePolicy.html)  **
+- **   [CreatePolicy](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_CreatePolicy.html)  **
   - **Description:** Grants permission to create a resilience policy that defines availability and disaster recovery requirements
   - **Resource types (\*required):** [policy\*](#list_resilience-hub-resource-policy)
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_resilience-hub-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_resilience-hub-aws_TagKeys)
@@ -987,7 +994,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_resilience-hub-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_resilience-hub-aws_TagKeys)
   - **Access level:** Write
 
-- **   [CreateReport](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_CreateReport.html)  **
+- **   [CreateReport](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_CreateReport.html)  **
   - **Description:** Grants permission to create a report for a service
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
@@ -999,38 +1006,38 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_resilience-hub-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_resilience-hub-aws_TagKeys)
   - **Access level:** Write
 
-- **   [CreateService](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_CreateService.html)  **
+- **   [CreateService](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_CreateService.html)  **
   - **Description:** Grants permission to create a service
   - **Resource types (\*required):** [policy](#list_resilience-hub-resource-policy) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_resilience-hub-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_resilience-hub-aws_TagKeys)
   - **Resource types (\*required):** [system](#list_resilience-hub-resource-system) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [CreateServiceFunction](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_CreateServiceFunction.html)  **
+- **   [CreateServiceFunction](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_CreateServiceFunction.html)  **
   - **Description:** Grants permission to create a service function
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [CreateServiceFunctionResources](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_CreateServiceFunctionResources.html)  **
+- **   [CreateServiceFunctionResources](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_CreateServiceFunctionResources.html)  **
   - **Description:** Grants permission to create service function resources
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [CreateSystem](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_CreateSystem.html)  **
+- **   [CreateSystem](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_CreateSystem.html)  **
   - **Description:** Grants permission to create a system that represents a logical grouping of services
   - **Resource types (\*required):** [system\*](#list_resilience-hub-resource-system)
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_resilience-hub-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_resilience-hub-aws_TagKeys)
   - **Access level:** Write
 
-- **   [CreateTest](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_CreateTest.html)  **
+- **   [CreateTest](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_CreateTest.html)  **
   - **Description:** Grants permission to create a test instance
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [CreateUserJourney](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_CreateUserJourney.html)  **
+- **   [CreateUserJourney](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_CreateUserJourney.html)  **
   - **Description:** Grants permission to create a user journey within a system
   - **Resource types (\*required):** [policy](#list_resilience-hub-resource-policy) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [system\*](#list_resilience-hub-resource-system) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
@@ -1066,19 +1073,19 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [DeleteAssertion](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DeleteAssertion.html)  **
+- **   [DeleteAssertion](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_DeleteAssertion.html)  **
   - **Description:** Grants permission to delete an assertion
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [DeleteInputSource](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DeleteInputSource.html)  **
+- **   [DeleteInputSource](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_DeleteInputSource.html)  **
   - **Description:** Grants permission to delete an input source
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [DeletePolicy](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DeletePolicy.html)  **
+- **   [DeletePolicy](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_DeletePolicy.html)  **
   - **Description:** Grants permission to delete a resilience policy
   - **Resource types (\*required):** [policy\*](#list_resilience-hub-resource-policy)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
@@ -1096,43 +1103,43 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [DeleteService](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DeleteService.html)  **
+- **   [DeleteService](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_DeleteService.html)  **
   - **Description:** Grants permission to delete a service
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [DeleteServiceFunction](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DeleteServiceFunction.html)  **
+- **   [DeleteServiceFunction](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_DeleteServiceFunction.html)  **
   - **Description:** Grants permission to delete a service function
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [DeleteServiceFunctionResources](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DeleteServiceFunctionResources.html)  **
+- **   [DeleteServiceFunctionResources](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_DeleteServiceFunctionResources.html)  **
   - **Description:** Grants permission to delete service function resources
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [DeleteSystem](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DeleteSystem.html)  **
+- **   [DeleteSystem](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_DeleteSystem.html)  **
   - **Description:** Grants permission to delete a system
   - **Resource types (\*required):** [system\*](#list_resilience-hub-resource-system)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [DeleteTest](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DeleteTest.html)  **
+- **   [DeleteTest](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_DeleteTest.html)  **
   - **Description:** Grants permission to delete a test
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [DeleteTestSources](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DeleteTestSources.html)  **
+- **   [DeleteTestSources](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_DeleteTestSources.html)  **
   - **Description:** Grants permission to delete test sources from a test
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [DeleteUserJourney](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DeleteUserJourney.html)  **
+- **   [DeleteUserJourney](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_DeleteUserJourney.html)  **
   - **Description:** Grants permission to delete a user journey
   - **Resource types (\*required):** [system\*](#list_resilience-hub-resource-system)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
@@ -1204,61 +1211,61 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [GetFailureModeFinding](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_GetFailureModeFinding.html)  **
+- **   [GetFailureModeFinding](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_GetFailureModeFinding.html)  **
   - **Description:** Grants permission to retrieve a failure mode finding
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [GetPolicy](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_GetPolicy.html)  **
+- **   [GetPolicy](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_GetPolicy.html)  **
   - **Description:** Grants permission to retrieve a resilience policy
   - **Resource types (\*required):** [policy\*](#list_resilience-hub-resource-policy)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [GetService](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_GetService.html)  **
+- **   [GetService](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_GetService.html)  **
   - **Description:** Grants permission to retrieve a service
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [GetSystem](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_GetSystem.html)  **
+- **   [GetSystem](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_GetSystem.html)  **
   - **Description:** Grants permission to retrieve a system
   - **Resource types (\*required):** [system\*](#list_resilience-hub-resource-system)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [GetTest](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_GetTest.html)  **
+- **   [GetTest](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_GetTest.html)  **
   - **Description:** Grants permission to retrieve a test
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [GetTestRun](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_GetTestRun.html)  **
+- **   [GetTestRun](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_GetTestRun.html)  **
   - **Description:** Grants permission to retrieve a test run
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [GetTestTemplate](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_GetTestTemplate.html)  **
+- **   [GetTestTemplate](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_GetTestTemplate.html)  **
   - **Description:** Grants permission to retrieve a test template
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** Read
 
-- **   [GetUserJourney](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_GetUserJourney.html)  **
+- **   [GetUserJourney](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_GetUserJourney.html)  **
   - **Description:** Grants permission to retrieve a user journey
   - **Resource types (\*required):** [system\*](#list_resilience-hub-resource-system)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [ImportApp](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ImportApp.html)  **
+- **   [ImportApp](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ImportApp.html)  **
   - **Description:** Grants permission to import a V1 app into the V2 resource model
   - **Resource types (\*required):** [application\*](#list_resilience-hub-resource-application) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_resilience-hub-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_resilience-hub-aws_TagKeys)
   - **Access level:** Write
 
-- **   [ImportPolicy](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ImportPolicy.html)  **
+- **   [ImportPolicy](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ImportPolicy.html)  **
   - **Description:** Grants permission to import a V1 policy into V2
   - **Resource types (\*required):** [policy\*](#list_resilience-hub-resource-policy) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_resilience-hub-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_resilience-hub-aws_TagKeys)
   - **Resource types (\*required):** [resiliency-policy\*](#list_resilience-hub-resource-resiliency-policy) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
@@ -1342,31 +1349,31 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** List
 
-- **   [ListAssertions](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListAssertions.html)  **
+- **   [ListAssertions](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListAssertions.html)  **
   - **Description:** Grants permission to list assertions for a service
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [ListDependencies](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListDependencies.html)  **
+- **   [ListDependencies](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListDependencies.html)  **
   - **Description:** Grants permission to list dependencies discovered for services
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** Read
 
-- **   [ListFailureModeAssessments](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListFailureModeAssessments.html)  **
+- **   [ListFailureModeAssessments](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListFailureModeAssessments.html)  **
   - **Description:** Grants permission to list failure mode assessments
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [ListFailureModeFindings](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListFailureModeFindings.html)  **
+- **   [ListFailureModeFindings](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListFailureModeFindings.html)  **
   - **Description:** Grants permission to list failure mode findings
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [ListInputSources](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListInputSources.html)  **
+- **   [ListInputSources](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListInputSources.html)  **
   - **Description:** Grants permission to list input sources for a service
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
@@ -1378,7 +1385,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** List
 
-- **   [ListPolicies](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListPolicies.html)  **
+- **   [ListPolicies](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListPolicies.html)  **
   - **Description:** Grants permission to list resilience policies
   - **Resource types (\*required):**
   - **Condition keys:**
@@ -1390,7 +1397,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
-- **   [ListReports](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListReports.html)  **
+- **   [ListReports](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListReports.html)  **
   - **Description:** Grants permission to list reports
   - **Resource types (\*required):** [service](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
@@ -1402,7 +1409,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** List
 
-- **   [ListResolvedTestRunTargetResources](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListResolvedTestRunTargetResources.html)  **
+- **   [ListResolvedTestRunTargetResources](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListResolvedTestRunTargetResources.html)  **
   - **Description:** Grants permission to list resolved target resources for a test run
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
@@ -1414,31 +1421,31 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
-- **   [ListResources](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListResources.html)  **
+- **   [ListResources](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListResources.html)  **
   - **Description:** Grants permission to list resources for a service
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [ListServiceEvents](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListServiceEvents.html)  **
+- **   [ListServiceEvents](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListServiceEvents.html)  **
   - **Description:** Grants permission to list events for a service
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [ListServiceFunctions](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListServiceFunctions.html)  **
+- **   [ListServiceFunctions](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListServiceFunctions.html)  **
   - **Description:** Grants permission to list service functions
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [ListServiceTopologyEdges](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListServiceTopologyEdges.html)  **
+- **   [ListServiceTopologyEdges](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListServiceTopologyEdges.html)  **
   - **Description:** Grants permission to list service topology edges
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [ListServices](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListServices.html)  **
+- **   [ListServices](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListServices.html)  **
   - **Description:** Grants permission to list services
   - **Resource types (\*required):**
   - **Condition keys:**
@@ -1456,19 +1463,19 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** List
 
-- **   [ListSystemEvents](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListSystemEvents.html)  **
+- **   [ListSystemEvents](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListSystemEvents.html)  **
   - **Description:** Grants permission to list events for a system
   - **Resource types (\*required):** [system\*](#list_resilience-hub-resource-system)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [ListSystems](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListSystems.html)  **
+- **   [ListSystems](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListSystems.html)  **
   - **Description:** Grants permission to list systems
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** Read
 
-- **   [ListTagsForResource](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListTagsForResource.html)  **
+- **   [ListTagsForResource](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListTagsForResource.html)  **
   - **Description:** Grants permission to list tags for a resource
   - **Resource types (\*required):** [app-assessment](#list_resilience-hub-resource-app-assessment) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [application](#list_resilience-hub-resource-application) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
@@ -1485,37 +1492,37 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
-- **   [ListTestRunEvents](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListTestRunEvents.html)  **
+- **   [ListTestRunEvents](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListTestRunEvents.html)  **
   - **Description:** Grants permission to list events for a test run
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [ListTestRunSources](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListTestRunSources.html)  **
+- **   [ListTestRunSources](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListTestRunSources.html)  **
   - **Description:** Grants permission to list test run source snapshots
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [ListTestRuns](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListTestRuns.html)  **
+- **   [ListTestRuns](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListTestRuns.html)  **
   - **Description:** Grants permission to list test runs for a target
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [ListTestSources](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListTestSources.html)  **
+- **   [ListTestSources](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListTestSources.html)  **
   - **Description:** Grants permission to list test sources on a test
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [ListTestTemplates](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListTestTemplates.html)  **
+- **   [ListTestTemplates](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListTestTemplates.html)  **
   - **Description:** Grants permission to list available test templates
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** Read
 
-- **   [ListTests](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListTests.html)  **
+- **   [ListTests](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListTests.html)  **
   - **Description:** Grants permission to list tests for a target
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
@@ -1527,7 +1534,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
-- **   [ListUserJourneys](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListUserJourneys.html)  **
+- **   [ListUserJourneys](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListUserJourneys.html)  **
   - **Description:** Grants permission to list user journeys for a system
   - **Resource types (\*required):** [system\*](#list_resilience-hub-resource-system)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
@@ -1545,7 +1552,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [PutTestSources](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_PutTestSources.html)  **
+- **   [PutTestSources](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_PutTestSources.html)  **
   - **Description:** Grants permission to put test sources on a test
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
@@ -1575,7 +1582,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_resilience-hub-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_resilience-hub-aws_TagKeys)
   - **Access level:** Write
 
-- **   [StartFailureModeAssessment](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_StartFailureModeAssessment.html)  **
+- **   [StartFailureModeAssessment](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_StartFailureModeAssessment.html)  **
   - **Description:** Grants permission to start a failure mode assessment
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
@@ -1593,19 +1600,19 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [StartTestRun](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_StartTestRun.html)  **
+- **   [StartTestRun](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_StartTestRun.html)  **
   - **Description:** Grants permission to start a test run
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [StopTestRun](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_StopTestRun.html)  **
+- **   [StopTestRun](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_StopTestRun.html)  **
   - **Description:** Grants permission to stop a test run
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [TagResource](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_TagResource.html)  **
+- **   [TagResource](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_TagResource.html)  **
   - **Description:** Grants permission to assign a resource tag
   - **Resource types (\*required):** [app-assessment](#list_resilience-hub-resource-app-assessment) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_resilience-hub-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_resilience-hub-aws_TagKeys)
   - **Resource types (\*required):** [application](#list_resilience-hub-resource-application) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_resilience-hub-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_resilience-hub-aws_TagKeys)
@@ -1616,7 +1623,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [system](#list_resilience-hub-resource-system) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_resilience-hub-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_resilience-hub-aws_TagKeys)
   - **Access level:** Tagging, Write
 
-- **   [UntagResource](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_UntagResource.html)  **
+- **   [UntagResource](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_UntagResource.html)  **
   - **Description:** Grants permission to untag a resource
   - **Resource types (\*required):** [app-assessment](#list_resilience-hub-resource-app-assessment) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_resilience-hub-aws_TagKeys)
   - **Resource types (\*required):** [application](#list_resilience-hub-resource-application) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_resilience-hub-aws_TagKeys)
@@ -1651,25 +1658,25 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [UpdateAssertion](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_UpdateAssertion.html)  **
+- **   [UpdateAssertion](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_UpdateAssertion.html)  **
   - **Description:** Grants permission to update an assertion
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [UpdateDependency](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_UpdateDependency.html)  **
+- **   [UpdateDependency](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_UpdateDependency.html)  **
   - **Description:** Grants permission to update a dependency classification
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [UpdateFailureModeFinding](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_UpdateFailureModeFinding.html)  **
+- **   [UpdateFailureModeFinding](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_UpdateFailureModeFinding.html)  **
   - **Description:** Grants permission to update a failure mode finding
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [UpdatePolicy](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_UpdatePolicy.html)  **
+- **   [UpdatePolicy](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_UpdatePolicy.html)  **
   - **Description:** Grants permission to update a resilience policy
   - **Resource types (\*required):** [policy\*](#list_resilience-hub-resource-policy)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
@@ -1681,32 +1688,32 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [UpdateService](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_UpdateService.html)  **
+- **   [UpdateService](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_UpdateService.html)  **
   - **Description:** Grants permission to update a service
   - **Resource types (\*required):** [policy](#list_resilience-hub-resource-policy) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [system](#list_resilience-hub-resource-system) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [UpdateServiceFunction](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_UpdateServiceFunction.html)  **
+- **   [UpdateServiceFunction](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_UpdateServiceFunction.html)  **
   - **Description:** Grants permission to update a service function
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [UpdateSystem](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_UpdateSystem.html)  **
+- **   [UpdateSystem](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_UpdateSystem.html)  **
   - **Description:** Grants permission to update a system
   - **Resource types (\*required):** [system\*](#list_resilience-hub-resource-system)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [UpdateTest](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_UpdateTest.html)  **
+- **   [UpdateTest](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_UpdateTest.html)  **
   - **Description:** Grants permission to update a test
   - **Resource types (\*required):** [service\*](#list_resilience-hub-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [UpdateUserJourney](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_UpdateUserJourney.html)  **
+- **   [UpdateUserJourney](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_UpdateUserJourney.html)  **
   - **Description:** Grants permission to update a user journey
   - **Resource types (\*required):** [policy](#list_resilience-hub-resource-policy) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [system\*](#list_resilience-hub-resource-system) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_)
@@ -1723,12 +1730,12 @@ The following resource types are defined by this service and can be used in the 
 | --- | --- | --- |
 |  [app-assessment](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_AppAssessment.html)  | arn:${Partition}:resiliencehub:${Region}:${Account}:app-assessment/${AppAssessmentId} | [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_) |
 |  [application](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_App.html)  | arn:${Partition}:resiliencehub:${Region}:${Account}:app/${AppId} | [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_) |
-|  [policy](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_Policy.html)  | arn:${Partition}:resiliencehub:${Region}:${Account}:policy/${PolicyId} | [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_) |
+|  [policy](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Policy.html)  | arn:${Partition}:resiliencehub:${Region}:${Account}:policy/${PolicyId} | [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_) |
 |  [recommendation-template](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_RecommendationTemplate.html)  | arn:${Partition}:resiliencehub:${Region}:${Account}:recommendation-template/${RecommendationTemplateId} | [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_) |
 |  [resiliency-policy](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ResiliencyPolicy.html)  | arn:${Partition}:resiliencehub:${Region}:${Account}:resiliency-policy/${ResiliencyPolicyId} | [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_) |
-|  [service](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_Service.html)  | arn:${Partition}:resiliencehub:${Region}:${Account}:service/${ServiceId} | [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_) |
-|  [system](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_System.html)  | arn:${Partition}:resiliencehub:${Region}:${Account}:system/${SystemId} | [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_) |
-|  [test-template](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_GetTestTemplate.html)  | arn:${Partition}:resiliencehub:${Region}:${Account}:test-template/${TestTemplateId} |   |
+|  [service](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Service.html)  | arn:${Partition}:resiliencehub:${Region}:${Account}:service/${ServiceId} | [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_) |
+|  [system](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_System.html)  | arn:${Partition}:resiliencehub:${Region}:${Account}:system/${SystemId} | [aws:ResourceTag/${TagKey}](#list_resilience-hub-aws_ResourceTag___TagKey_) |
+|  [test-template](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_GetTestTemplate.html)  | arn:${Partition}:resiliencehub:${Region}:${Account}:test-template/${TestTemplateId} |   |
 
 ## Condition keys for AWS Resilience Hub
 <a name="list_resilience-hub-policy-keys"></a>

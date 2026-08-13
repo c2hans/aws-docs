@@ -42,7 +42,7 @@ The location of an CloudFormation template file, which follows the format `{{Art
 The location of a template configuration file, which follows the format `{{ArtifactName}}::{{TemplateConfigurationFileName}}`. The template configuration file can contain template parameter values, a stack policy, and tags. If you include sensitive information, such as passwords, restrict access to this file. For more information, see [CloudFormation artifacts](continuous-delivery-codepipeline-cfn-artifacts.md).
 
 **Capabilities**
-For stacks that contain certain resources, explicit acknowledgment that CloudFormation might create or update those resources. For example, you must specify `CAPABILITY_IAM` if your stack template contains AWS Identity and Access Management (IAM) resources. For more information, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStack.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStack.html) API operation request parameters.
+For stacks that contain certain resources, explicit acknowledgment that CloudFormation might create or update those resources. For example, you must specify `CAPABILITY_IAM` if your stack template contains AWS Identity and Access Management (IAM) resources. For more information, see [CreateStack](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStack.html) API operation request parameters.
 If you have IAM resources in your stack template, you must specify this property.
 You can specify more than one capability.
 
@@ -80,7 +80,7 @@ The CloudFormation action that CodePipeline invokes when it processes the associ
 This property is required.
 
 `Capabilities`
-For stacks that contain certain resources, explicit acknowledgment that CloudFormation might create or update those resources. For example, you must specify `CAPABILITY_IAM` if your stack template contains AWS Identity and Access Management (IAM) resources. For more information, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStack.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStack.html) API operation request parameters.
+For stacks that contain certain resources, explicit acknowledgment that CloudFormation might create or update those resources. For example, you must specify `CAPABILITY_IAM` if your stack template contains AWS Identity and Access Management (IAM) resources. For more information, see [CreateStack](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStack.html) API operation request parameters.
 This property is conditional. If you have IAM resources in your stack template, you must specify this property.
 You can specify multiple capabilities. The following example adds the `CAPABILITY_IAM` and `CAPABILITY_AUTO_EXPAND` properties to the template:
 

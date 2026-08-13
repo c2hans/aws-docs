@@ -34,7 +34,7 @@ Because you cannot use the AWS CLI to create a GitHub repository, you cannot use
    --tags value-1=key-1,owner=admin,status=beta
    ```
 
-1. If successful, this command outputs a [https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociation.html](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociation.html) object that includes an array with the 3 tags.
+1. If successful, this command outputs a [`RepositoryAssociation`](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociation.html) object that includes an array with the 3 tags.
 
    ```
    {

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/removeuser
 # Remove users from groups
 <a name="removeusersfromgroups"></a>
 
-Use the following procedure to remove members from a group. Alternatively, you can call the AWS API operation [https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DeleteGroupMembership.html](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DeleteGroupMembership.html) to remove a user from a group.
+Use the following procedure to remove members from a group. Alternatively, you can call the AWS API operation [DeleteGroupMembership](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DeleteGroupMembership.html) to remove a user from a group.
 
 ------
 #### [ Console ]

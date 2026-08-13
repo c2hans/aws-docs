@@ -48,7 +48,7 @@ aws s3control delete-access-grant \
 ## Using the REST API
 <a name="access-grants-grant-delete-rest-api"></a>
 
-For information about the Amazon S3 REST API support for managing access grants, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAccessGrant.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAccessGrant.html) in the *Amazon Simple Storage Service API Reference*.
+For information about the Amazon S3 REST API support for managing access grants, see [DeleteAccessGrant](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAccessGrant.html) in the *Amazon Simple Storage Service API Reference*.
 
 ## Using the AWS SDKs
 <a name="access-grants-grant-delete-using-sdk"></a>

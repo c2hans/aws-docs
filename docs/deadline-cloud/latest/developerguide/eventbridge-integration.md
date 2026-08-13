@@ -56,7 +56,7 @@ For example, the following event pattern matches against all Fleet Size Recommen
   "source": ["aws.deadline"],
   "detail-type": ["Fleet Size Recommendation Change"],
   "detail": {
-     "farmId": "farm-12345678900000000000000000000000"
+     "farmId": ["farm-12345678900000000000000000000000"]
   }
 }
 ```

@@ -7,10 +7,10 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 # Viewing available patches
 <a name="patch-manager-view-available-patches"></a>
 
-With Patch Manager, a tool in AWS Systems Manager, you can view all available patches for a specified operating system and, optionally, a specific operating system version.
+With Patch Manager, you can view all available patches for a specified operating system and, optionally, a specific operating system version.
 
 **Tip**
-To generate a list of available patches and save them to a file, you can use the [https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-available-patches.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-available-patches.html) command and specify your preferred [output](https://docs.aws.amazon.com/cli/latest/reference/ssm/cli-usage-output.html).
+To generate a list of available patches and save them to a file, you can use the [describe-available-patches](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-available-patches.html) command and specify your preferred [output](https://docs.aws.amazon.com/cli/latest/reference/ssm/cli-usage-output.html).
 
 **To view available patches**
 

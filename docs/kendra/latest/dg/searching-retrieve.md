@@ -7,13 +7,13 @@ Amazon Kendra is no longer open to new customers. For capabilities similar to Am
 # Retrieving passages
 <a name="searching-retrieve"></a>
 
-You can use the [https://docs.aws.amazon.com/kendra/latest/APIReference/API_Retrieve.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_Retrieve.html) API as a retriever for retrieval augmented generation (RAG) systems.
+You can use the [Retrieve](https://docs.aws.amazon.com/kendra/latest/APIReference/API_Retrieve.html) API as a retriever for retrieval augmented generation (RAG) systems.
 
 RAG systems use generative artificial intelligence to build question-answering applications. RAG systems consist of a retriever and large language models (LLM). Given a query, the retriever identifies the most relevant chunks of text from a corpus of documents and feeds it to the LLM to provide the most useful answer. Then, the LLM analyzes the relevant text chunks or passages and generates a comprehensive response for the query.
 
 The `Retrieve` API looks at chunks of text or excerpts that are referred to as *passages* and returns the top passages that are most relevant to the query.
 
-Like the [https://docs.aws.amazon.com/kendra/latest/APIReference/API_Query.html](https://docs.aws.amazon.com/kendra/latest/APIReference/API_Query.html) API, the `Retrieve` API also searches for relevant information. Retrieve API's information retrieval takes into account the query's context, and all the available information from the indexed documents. However, by default, the `Query` API only returns excerpt passages of up to 100 token words. With the `Retrieve` API, you can retrieve longer passages of up to 200 token words and up to 100 semantically relevant passages. This doesn't include question-answer or FAQ type responses from your index. The passages, also called chunks, are text excerpts that can be semantically extracted from multiple documents and multiple parts of the same document. Kendra's GenAI Enterprise Edition index offers high accuracy results for retrieve, using a hybrid search over vector and keyword indices along with ranking by deep learning models.
+Like the [Query](https://docs.aws.amazon.com/kendra/latest/APIReference/API_Query.html) API, the `Retrieve` API also searches for relevant information. Retrieve API's information retrieval takes into account the query's context, and all the available information from the indexed documents. However, by default, the `Query` API only returns excerpt passages of up to 100 token words. With the `Retrieve` API, you can retrieve longer passages of up to 200 token words and up to 100 semantically relevant passages. This doesn't include question-answer or FAQ type responses from your index. The passages, also called chunks, are text excerpts that can be semantically extracted from multiple documents and multiple parts of the same document. Kendra's GenAI Enterprise Edition index offers high accuracy results for retrieve, using a hybrid search over vector and keyword indices along with ranking by deep learning models.
 
 You can also do the following with the `Retrieve` API:
 + Override boosting at the index level

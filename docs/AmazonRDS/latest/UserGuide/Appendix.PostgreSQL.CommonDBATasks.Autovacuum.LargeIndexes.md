@@ -29,7 +29,7 @@ In this example, the size of indexes is larger than the table. This difference c
 
 **To check for unused indexes**
 
-Using the [https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-ALL-INDEXES-VIEW](https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-ALL-INDEXES-VIEW) view, you can check how frequently an index is used with the `idx_scan` column. In the following example, the unused indexes have the `idx_scan` value of `0`.
+Using the [`pg_stat_user_indexes`](https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-ALL-INDEXES-VIEW) view, you can check how frequently an index is used with the `idx_scan` column. In the following example, the unused indexes have the `idx_scan` value of `0`.
 
 ```
 postgres=> select * from pg_stat_user_indexes where relname = 'pgbench_accounts' order by idx_scan desc;
@@ -64,7 +64,7 @@ public      | pgbench_accounts | index_a               | 0
 **Note**
 These statistics are incremental from the time that the statistics are reset. Suppose you have an index that is only used at the end of a business quarter or just for a specific report. It's possible that this index hasn't been used since the statistics were reset. For more information, see [Statistics Functions](https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-STATS-FUNCTIONS). Indexes that are used to enforce uniqueness won't have scans performed and shouldn't be identified as unused indexes. To identify the unused indexes, you should have in-depth knowledge of the application and its queries.
 
-To check when the stats were last reset for a database, use [ https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-DATABASE-VIEW]( https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-DATABASE-VIEW)
+To check when the stats were last reset for a database, use [`pg_stat_database`]( https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-DATABASE-VIEW)
 
 ```
 postgres=> select datname, stats_reset from pg_stat_database where datname = 'postgres';
@@ -80,7 +80,7 @@ postgres  | 2022-11-17 08:58:11.427224+00
 
 **RDS for PostgreSQL 12 and higher**
 
-If you have too many indexes in a large table, your DB instance could be nearing transaction ID wraparound (XID), which is when the XID counter wraps around to zero. Left unchecked, this situation could result in data loss. However, you can quickly vacuum the table without cleaning up the indexes. In RDS for PostgreSQL 12 and higher, you can use VACUUM with the [https://www.postgresql.org/docs/current/sql-vacuum.html](https://www.postgresql.org/docs/current/sql-vacuum.html) clause.
+If you have too many indexes in a large table, your DB instance could be nearing transaction ID wraparound (XID), which is when the XID counter wraps around to zero. Left unchecked, this situation could result in data loss. However, you can quickly vacuum the table without cleaning up the indexes. In RDS for PostgreSQL 12 and higher, you can use VACUUM with the [`INDEX_CLEANUP`](https://www.postgresql.org/docs/current/sql-vacuum.html) clause.
 
 ```
 postgres=> VACUUM (INDEX_CLEANUP FALSE, VERBOSE TRUE) pgbench_accounts;

@@ -93,7 +93,7 @@ You can restore an archived EBS snapshot in cold storage by using the [AWS Backu
 ------
 #### [ AWS CLI ]
 
-1. Use [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/start-restore-job.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/start-restore-job.html)
+1. Use [`start-restore-job`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/start-restore-job.html)
 
 1. Include the required parameters for archived EBS snapshot restore:
 
@@ -108,7 +108,7 @@ You can restore an archived EBS snapshot in cold storage by using the [AWS Backu
 
 1. Configure the new EBS volume settings including `volumeType` (gp2, gp3, io1, io2, st1, sc1), `volumeSize` in GiB, and target `availabilityZone`.
 
-1. Monitor the restore job status using [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/describe-restore-job.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/describe-restore-job.html) with the returned restore job ID. Archive restores can take up to 72 hours to complete.
+1. Monitor the restore job status using [`describe-restore-job`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/describe-restore-job.html) with the returned restore job ID. Archive restores can take up to 72 hours to complete.
 
 ------
 

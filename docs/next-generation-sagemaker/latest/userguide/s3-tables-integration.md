@@ -146,7 +146,7 @@ To learn more about the query editor and see more SQL examples, see: [Get starte
 1. Enter SQL queries into the notebook cell to create a table in the database.
 
 **Important**
-When using the Spark engine through a Spark connection, the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3TablesFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3TablesFullAccess.html) permission is required for table creation. For more information, refer to [Considerations for enabling Lake Formation permissions](https://docs.aws.amazon.com/glue/latest/dg/security-lf-enable-considerations.html) in the *AWS Glue Developer Guide*.
+When using the Spark engine through a Spark connection, the [`S3TableFullAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3TablesFullAccess.html) permission is required for table creation. For more information, refer to [Considerations for enabling Lake Formation permissions](https://docs.aws.amazon.com/glue/latest/dg/security-lf-enable-considerations.html) in the *AWS Glue Developer Guide*.
 
 The following are examples of basic SQL queries you can use to start working with tables.
 

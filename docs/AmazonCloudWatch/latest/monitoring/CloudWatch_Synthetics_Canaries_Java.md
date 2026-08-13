@@ -34,4 +34,4 @@ The `executeStep` function is used to modularize the canary code and execute it 
 The value returned is *CompletableFuture<T>*.
 
 **Note**
-Synthetics only supports sequential steps. Make sure to call the `.get()` method as shown in the example to ensure that the step completes before proceeding to the subsequent step.
+Synthetics only supports sequential steps. Make sure to call the `.get()` method as shown in the example to make sure that the step completes before proceeding to the subsequent step.

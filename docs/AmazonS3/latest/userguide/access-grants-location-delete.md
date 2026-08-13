@@ -53,7 +53,7 @@ aws s3control delete-access-grants-location \
 ## Using the REST API
 <a name="access-grants-location-delete-rest-api"></a>
 
-For information about the Amazon S3 REST API support for deleting a location from an S3 Access Grants instance, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAccessGrantsLocation.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAccessGrantsLocation.html) in the *Amazon Simple Storage Service API Reference*.
+For information about the Amazon S3 REST API support for deleting a location from an S3 Access Grants instance, see [DeleteAccessGrantsLocation](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAccessGrantsLocation.html) in the *Amazon Simple Storage Service API Reference*.
 
 ## Using the AWS SDKs
 <a name="access-grants-location-delete-using-sdk"></a>

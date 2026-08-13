@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-
 Tags in Amazon S3 Access Grants have similar characteristics to [object tags](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html) in Amazon S3. Each tag is a key-value pair. The resources in S3 Access Grants that you can tag are S3 Access Grants [instances](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-instance.html), [locations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-location.html), and [grants](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-grant.html).
 
 **Note**
-Tagging in S3 Access Grants uses different API operations than object tagging. S3 Access Grants uses the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_TagResource.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_TagResource.html), [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_UntagResource.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_UntagResource.html), and [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListTagsForResource.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListTagsForResource.html) API operations, where a resource can be either an S3 Access Grants instance, a registered location, or an access grant.
+Tagging in S3 Access Grants uses different API operations than object tagging. S3 Access Grants uses the [TagResource](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_TagResource.html), [UntagResource](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_UntagResource.html), and [ListTagsForResource](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListTagsForResource.html) API operations, where a resource can be either an S3 Access Grants instance, a registered location, or an access grant.
 
 Similar to [object tags](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html), the following limitations apply:
 + You can add tags to new S3 Access Grants resources when you create them, or you can add tags to existing resources.
@@ -100,6 +100,6 @@ aws s3control untag-resource \
 <a name="access-grants-tagging-rest-api"></a>
 
 You can use the Amazon S3 API to tag, untag, or list tags for an S3 Access Grants instance, registered location, or access grant. For information about the REST API support for managing S3 Access Grants tags, see the following sections in the *Amazon Simple Storage Service API Reference*:
-+  [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_TagResource.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_TagResource.html)
-+  [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_UntagResource.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_UntagResource.html)
-+  [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListTagsForResource.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListTagsForResource.html)
++  [TagResource](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_TagResource.html)
++  [UntagResource](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_UntagResource.html)
++  [ListTagsForResource](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListTagsForResource.html)

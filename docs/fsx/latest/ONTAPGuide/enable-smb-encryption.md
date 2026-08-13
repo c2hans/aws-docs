@@ -45,7 +45,7 @@ Use the following procedure to require SMB encryption on a SVM using the NetApp 
    FsxIdabcdef01234567892::>
    ```
 
-1. Use the [https://docs.netapp.com/us-en/ontap-cli-9131/vserver-cifs-security-modify.html](https://docs.netapp.com/us-en/ontap-cli-9131/vserver-cifs-security-modify.html) NetApp ONTAP CLI command to require SMB encryption for incoming SMB traffic to the SVM.
+1. Use the [`vserver cifs security modify`](https://docs.netapp.com/us-en/ontap-cli-9131/vserver-cifs-security-modify.html) NetApp ONTAP CLI command to require SMB encryption for incoming SMB traffic to the SVM.
 
    ```
    vserver cifs security modify -vserver {{vserver_name}} -is-smb-encryption-required true
@@ -57,7 +57,7 @@ Use the following procedure to require SMB encryption on a SVM using the NetApp 
    vserver cifs security modify -vserver {{vserver_name}} -is-smb-encryption-required false
    ```
 
-1. To see the current `is-smb-encryption-required` setting on an SVM, use the [https://docs.netapp.com/us-en/ontap-cli-9131/vserver-cifs-security-show.html](https://docs.netapp.com/us-en/ontap-cli-9131/vserver-cifs-security-show.html) NetApp ONTAP CLI command:
+1. To see the current `is-smb-encryption-required` setting on an SVM, use the [`vserver cifs security show`](https://docs.netapp.com/us-en/ontap-cli-9131/vserver-cifs-security-show.html) NetApp ONTAP CLI command:
 
    ```
    vserver cifs security show -vserver {{vs1}} -fields is-smb-encryption-required
@@ -81,7 +81,7 @@ Use the following procedure to enable SMB encryption on a share using the NetApp
    vserver cifs share create -vserver {{vserver_name}} -share-name {{share_name}} -path {{share_path}} -share-properties encrypt-data
    ```
 
-   For more information, see [https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/vserver__cifs__share__create.html](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/vserver__cifs__share__create.html) in the NetApp ONTAP CLI Command man pages.
+   For more information, see [`vserver cifs share create`](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/vserver__cifs__share__create.html) in the NetApp ONTAP CLI Command man pages.
 
 1. To require SMB encryption on an existing SMB share, use the following command.
 
@@ -89,7 +89,7 @@ Use the following procedure to enable SMB encryption on a share using the NetApp
    vserver cifs share properties add -vserver {{vserver_name}} -share-name {{share_name}} -share-properties encrypt-data
    ```
 
-   For more information, see [https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/vserver__cifs__share__properties__add.html](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/vserver__cifs__share__properties__add.html) in the NetApp ONTAP CLI Command man pages.
+   For more information, see [`vserver cifs share create`](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/vserver__cifs__share__properties__add.html) in the NetApp ONTAP CLI Command man pages.
 
 1. To turn off SMB encryption on an existing SMB share, use the following command.
 
@@ -97,7 +97,7 @@ Use the following procedure to enable SMB encryption on a share using the NetApp
    vserver cifs share properties remove -vserver {{vserver_name}} -share-name {{share_name}} -share-properties encrypt-data
    ```
 
-   For more information, see [https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/vserver__cifs__share__properties__remove.html](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/vserver__cifs__share__properties__remove.html) in the NetApp ONTAP CLI Command man pages.
+   For more information, see [`vserver cifs share properties remove`](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/vserver__cifs__share__properties__remove.html) in the NetApp ONTAP CLI Command man pages.
 
 1. To see the current `is-smb-encryption-required` setting on an SMB share, use the following NetApp ONTAP CLI command:
 
@@ -107,4 +107,4 @@ Use the following procedure to enable SMB encryption on a share using the NetApp
 
    If one of the properties returned by the command is the `encrypt-data` property, then that property specifies that SMB encryption must be used when accessing this share.
 
-   For more information, see [https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/vserver__cifs__share__properties__show.html](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/vserver__cifs__share__properties__show.html) in the NetApp ONTAP CLI Command man pages.
+   For more information, see [`vserver cifs share properties show`](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/vserver__cifs__share__properties__show.html) in the NetApp ONTAP CLI Command man pages.

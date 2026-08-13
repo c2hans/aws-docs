@@ -16,7 +16,7 @@ These Security Hub CSPM controls evaluate the AWS Batch service and resources. T
 
 **Resource type:** `AWS::Batch::JobQueue`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/batch-job-queue-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/batch-job-queue-tagged.html)
+**AWS Config rule:** [batch-job-queue-tagged](https://docs.aws.amazon.com/config/latest/developerguide/batch-job-queue-tagged.html)
 
 **Schedule type:** Change triggered
 
@@ -47,7 +47,7 @@ To add tags to a Batch job queue, see [Tag your resources](https://docs.aws.amaz
 
 **Resource type:** `AWS::Batch::SchedulingPolicy`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/batch-scheduling-policy-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/batch-scheduling-policy-tagged.html)
+**AWS Config rule:** [batch-scheduling-policy-tagged](https://docs.aws.amazon.com/config/latest/developerguide/batch-scheduling-policy-tagged.html)
 
 **Schedule type:** Change triggered
 
@@ -78,7 +78,7 @@ To add tags to a Batch scheduling policy, see [Tag your resources](https://docs.
 
 **Resource type:** `AWS::Batch::ComputeEnvironment`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/batch-compute-environment-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/batch-compute-environment-tagged.html)
+**AWS Config rule:** [batch-compute-environment-tagged](https://docs.aws.amazon.com/config/latest/developerguide/batch-compute-environment-tagged.html)
 
 **Schedule type:** Change triggered
 
@@ -109,7 +109,7 @@ To add tags to a Batch compute environment, see [Tag your resources](https://doc
 
 **Resource type:** `AWS::Batch::ComputeEnvironment`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/batch-managed-compute-env-compute-resources-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/batch-managed-compute-env-compute-resources-tagged.html)
+**AWS Config rule:** [batch-managed-compute-env-compute-resources-tagged](https://docs.aws.amazon.com/config/latest/developerguide/batch-managed-compute-env-compute-resources-tagged.html)
 
 **Schedule type:** Change triggered
 

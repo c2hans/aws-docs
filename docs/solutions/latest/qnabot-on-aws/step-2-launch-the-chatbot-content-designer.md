@@ -9,7 +9,7 @@ After successfully deploying the stack, you will receive an email at the email a
 
 Use the following procedure to launch the content designer, reset your password, and sign in to the content designer UI.
 
-1. Open the verification email and select the link. Alternatively, sign in to the [CloudFormation console](https://console.aws.amazon.com/cloudformation/), choose this solution’s stack, select the **Outputs** tab, then select the **ContentDesignerURL** link. The content designer opens in a separate browser tab.
+1. Open the verification email and select the link. Alternatively, sign in to the [CloudFormation console](https://console.aws.amazon.com/cloudformation/), choose this guidance’s stack, select the **Outputs** tab, then select the **ContentDesignerURL** link. The content designer opens in a separate browser tab.
 
 1. Sign in with your username and temporary password.
 

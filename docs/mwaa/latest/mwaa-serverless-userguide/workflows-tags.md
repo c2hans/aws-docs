@@ -53,9 +53,9 @@ Use the following AWS CLI commands or Amazon MWAA Serverless API operations to a
 
 | Resource | Supports tags | Supports tag propagation |
 | --- | --- | --- |
-| Add or overwrite one or more tags | tag-resource |  [https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_TagResource.html](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_TagResource.html)  |
-| List tags for a resource | list-tags-for-resource |  [https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_ListTagsForResource.html](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_ListTagsForResource.html) |
-| Delete one or more tags | untag-resource |  [https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_UntagResource.html](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_UntagResource.html)  |
+| Add or overwrite one or more tags | tag-resource |  [`TagResource`](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_TagResource.html)  |
+| List tags for a resource | list-tags-for-resource |  [`ListTagsForResource`](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_ListTagsForResource.html) |
+| Delete one or more tags | untag-resource |  [`UntagResource`](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_UntagResource.html)  |
 
 The following examples show how to tag or untag resources using the AWS CLI.
 

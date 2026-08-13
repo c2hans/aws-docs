@@ -38,6 +38,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ## Web browser access
 <a name="web-browser-access"></a>
 
- WorkSpaces Applications [https://docs.aws.amazon.com/appstream2/latest/developerguide/access-through-web-browser-admin.html](https://docs.aws.amazon.com/appstream2/latest/developerguide/access-through-web-browser-admin.html) allows access to applications without the need to install a dedicated client. Users can connect using a supported HTML5-capable browser. There is no requirement for any browser plugin or extension.
+ WorkSpaces Applications [*web browser access*](https://docs.aws.amazon.com/appstream2/latest/developerguide/access-through-web-browser-admin.html) allows access to applications without the need to install a dedicated client. Users can connect using a supported HTML5-capable browser. There is no requirement for any browser plugin or extension.
 
  Web browser access provides for a wide choice of end device operating systems and types.

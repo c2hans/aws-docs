@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/using-
 # Using Amazon EventBridge with AWS Billing Conductor
 <a name="using-eventbridge"></a>
 
-AWS Billing Conductor is integrated with Amazon EventBridge, an event bus service that you can use to connect your applications with data from a variety of sources. For more information, see the [https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html).
+AWS Billing Conductor is integrated with Amazon EventBridge, an event bus service that you can use to connect your applications with data from a variety of sources. For more information, see the [*Amazon EventBridge User Guide*](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html).
 
 You can use Amazon EventBridge to receive AWS Billing Conductor events. Then, based on rules that you create, Amazon EventBridge invokes one or more target actions when an event matches the values that you specify in a rule. Depending on the type of event, you can capture event information, send notifications, or perform other actions. To set up an Amazon EventBridge rule for AWS Billing Conductor events, see [Create a rule in Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-get-started.html#eb-gs-create-rule) in the *Amazon EventBridge User Guide*.
 

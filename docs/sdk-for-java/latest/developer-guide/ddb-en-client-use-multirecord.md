@@ -14,7 +14,7 @@ This section looks at processing paginated results and provides examples that us
 ## Scan a table
 <a name="ddb-en-client-use-multirecord-scan"></a>
 
-The SDK's [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/DynamoDbAsyncTable.html#scan(java.util.function.Consumer)](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/DynamoDbAsyncTable.html#scan(java.util.function.Consumer)) method corresponds to the [DynamoDB operation](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Scan.html) of the same name. The DynamoDB Enhanced Client API offers the same options but it uses a familiar object model and handles the pagination for you.
+The SDK's [`scan`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/DynamoDbAsyncTable.html#scan(java.util.function.Consumer)) method corresponds to the [DynamoDB operation](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Scan.html) of the same name. The DynamoDB Enhanced Client API offers the same options but it uses a familiar object model and handles the pagination for you.
 
 First, we explore the `PageIterable` interface by looking at the `scan` method of the synchronous mapping class, [DynamoDbTable](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/DynamoDbTable.html).
 
@@ -27,11 +27,11 @@ The filtering expression shown after comment line 2 limits the `ProductCatalog` 
 
 This example also excludes the `isbn` values by using the `attributesToProject` method shown after comment line 1.
 
-After comment line 3, the `PageIterable` object, `pagedResults`, is returned by the `scan` method. The `stream` method of `PageIterable` returns a [https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html) object, which you can use to process the pages. In this example, the number of pages is counted and logged.
+After comment line 3, the `PageIterable` object, `pagedResults`, is returned by the `scan` method. The `stream` method of `PageIterable` returns a [`java.util.Stream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html) object, which you can use to process the pages. In this example, the number of pages is counted and logged.
 
 Starting with comment line 4, the example shows two variations of accessing the `ProductCatalog` items. The version after comment line 4a streams through each page and sorts and logs the items on each page. The version after comment line 4b skips the page iteration and accesses the items directly.
 
-The `PageIterable` interface offers multiple ways to process results because of its two parent interfaces—[https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html) and [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/pagination/sync/SdkIterable.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/pagination/sync/SdkIterable.html). `Iterable` brings the `forEach`, `iterator` and `spliterator` methods, and `SdkIterable` brings the `stream` method.
+The `PageIterable` interface offers multiple ways to process results because of its two parent interfaces—[`java.lang.Iterable`](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html) and [`SdkIterable`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/pagination/sync/SdkIterable.html). `Iterable` brings the `forEach`, `iterator` and `spliterator` methods, and `SdkIterable` brings the `stream` method.
 
 ```
     public static void scanSync(DynamoDbTable<ProductCatalog> productCatalog) {
@@ -76,7 +76,7 @@ The `PageIterable` interface offers multiple ways to process results because of 
 
 The asynchronous `scan` method returns results as a `PagePublisher` object. The `PagePublisher` interface has two `subscribe` methods that you can use to process response pages. One `subscribe` method comes from the `org.reactivestreams.Publisher` parent interface. To process pages using this first option, pass a `[Subscriber](https://www.reactive-streams.org/reactive-streams-1.0.0-javadoc/org/reactivestreams/Subscriber.html)` instance to the `subscribe` method. The first example that follows shows the use of `subscribe` method.
 
-The second `subscribe` method comes from the [SdkPublisher](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/async/SdkPublisher.html) interface. This version of `subscribe` accepts a [https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html](https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html) rather than a `Subscriber`. This `subscribe` method variation is shown in the second example that follows.
+The second `subscribe` method comes from the [SdkPublisher](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/async/SdkPublisher.html) interface. This version of `subscribe` accepts a [`Consumer`](https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html) rather than a `Subscriber`. This `subscribe` method variation is shown in the second example that follows.
 
 The following example shows the asynchronous version of the `scan` method that uses the same filter expression shown in the previous example.
 
@@ -198,7 +198,7 @@ The `items` method of `PagePublisher` unwraps the model instances so that your c
 ## Query a table
 <a name="ddb-en-client-use-multirecord-query"></a>
 
-You can use the DynamoDB Enhanced Client to query your table and retrieve multiple items that match specific criteria. The [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/DynamoDbTable.html#query(software.amazon.awssdk.enhanced.dynamodb.model.QueryEnhancedRequest)](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/DynamoDbTable.html#query(software.amazon.awssdk.enhanced.dynamodb.model.QueryEnhancedRequest)) method finds items based on primary key values using the `@DynamoDbPartitionKey` and optional `@DynamoDbSortKey` annotations defined on your data class.
+You can use the DynamoDB Enhanced Client to query your table and retrieve multiple items that match specific criteria. The [`query()`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/DynamoDbTable.html#query(software.amazon.awssdk.enhanced.dynamodb.model.QueryEnhancedRequest)) method finds items based on primary key values using the `@DynamoDbPartitionKey` and optional `@DynamoDbSortKey` annotations defined on your data class.
 
 The `query()` method requires a partition key value and optionally accepts sort key conditions to further refine results. Like the `scan` API, queries return a `PageIterable` for synchronous calls and a `PagePublisher` for asynchronous calls.
 

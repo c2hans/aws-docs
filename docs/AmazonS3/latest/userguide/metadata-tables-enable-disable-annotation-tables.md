@@ -186,7 +186,7 @@ Before enabling an annotation configuration, make sure that you've reviewed and 
 ### Using the REST API
 <a name="metadata-tables-enable-disable-annotation-tables-rest-api"></a>
 
-You can send REST requests to enable or disable annotation tables. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_UpdateBucketMetadataAnnotationTableConfiguration.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UpdateBucketMetadataAnnotationTableConfiguration.html).
+You can send REST requests to enable or disable annotation tables. For more information, see [UpdateBucketMetadataAnnotationTableConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UpdateBucketMetadataAnnotationTableConfiguration.html).
 
 ### Using the AWS SDKs
 <a name="metadata-tables-enable-disable-annotation-tables-sdk"></a>

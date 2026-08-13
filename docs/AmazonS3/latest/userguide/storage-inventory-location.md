@@ -105,6 +105,6 @@ The following is an example of a manifest in a `manifest.json` file for a Parque
     ]
 }
 ```
-The `symlink.txt` file is an Apache Hive-compatible manifest file that allows Hive to automatically discover inventory files and their associated data files. The Hive-compatible manifest works with the Hive-compatible services Athena and Amazon Redshift Spectrum. It also works with Hive-compatible applications, including [https://prestodb.io/](https://prestodb.io/), [https://hive.apache.org/](https://hive.apache.org/), [https://databricks.com/spark/about/](https://databricks.com/spark/about/), and many others.
+The `symlink.txt` file is an Apache Hive-compatible manifest file that allows Hive to automatically discover inventory files and their associated data files. The Hive-compatible manifest works with the Hive-compatible services Athena and Amazon Redshift Spectrum. It also works with Hive-compatible applications, including [Presto](https://prestodb.io/), [Apache Hive](https://hive.apache.org/), [Apache Spark](https://databricks.com/spark/about/), and many others.
 The `symlink.txt` Apache Hive-compatible manifest file does not currently work with AWS Glue.
-Reading the `symlink.txt` file with [https://hive.apache.org/](https://hive.apache.org/) and [https://databricks.com/spark/about/](https://databricks.com/spark/about/) is not supported for ORC and Parquet-formatted inventory files.
+Reading the `symlink.txt` file with [Apache Hive](https://hive.apache.org/) and [Apache Spark](https://databricks.com/spark/about/) is not supported for ORC and Parquet-formatted inventory files.

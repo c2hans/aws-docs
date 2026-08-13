@@ -15,7 +15,7 @@ The following table specifies the fields on the input side and on the output sid
 <a name="codecs-containers-file-inputs-table"></a>
 <table>
 <thead>
-  <tr><th colspan="2">Input</th><th colspan="2">Output > Stream </th><th> Result</th></tr>
+  <tr><th colspan="2">Input</th><th colspan="2">Output &gt; Stream </th><th> Result</th></tr>
 </thead>
 <tbody>
   <tr><td>Codec Detected in Input</td><td>Value in Unwrap SMPTE 337 Field</td><td>Value in Output Codec Field</td><td>Value in Automatic Passthrough Field</td><td></td></tr>

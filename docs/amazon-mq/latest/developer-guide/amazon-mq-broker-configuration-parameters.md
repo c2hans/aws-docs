@@ -33,11 +33,11 @@ For a full list of configuration revision attributes, see the following:
 ActiveMQ brokers are configured using [Spring XML](https://docs.spring.io/spring/docs/current/spring-framework-reference/) files. You can configure many aspects of your ActiveMQ broker, such as predefined destinations, destination policies, authorization policies, and plugins. Amazon MQ controls some of these configuration elements, such as network transports and storage. Other configuration options, such as creating networks of brokers, aren't currently supported.
 
 The full set of supported configuration options is specified in the Amazon MQ XML schemas. Download zip files of the supported schemas using the following links.
-+ [samples/amazon-mq-active-mq-5.19.1.xsd.zip](samples/amazon-mq-active-mq-5.19.1.xsd.zip)
-+ [samples/amazon-mq-active-mq-5.18.4.xsd.zip](samples/amazon-mq-active-mq-5.18.4.xsd.zip)
-+ [samples/amazon-mq-active-mq-5.17.6.xsd.zip](samples/amazon-mq-active-mq-5.17.6.xsd.zip)
-+ [samples/amazon-mq-active-mq-5.16.7.xsd.zip](samples/amazon-mq-active-mq-5.16.7.xsd.zip)
-+  [samples/amazon-mq-active-mq-5.15.16.xsd.zip](samples/amazon-mq-active-mq-5.15.16.xsd.zip)
++ [`amazon-mq-active-mq-5.19.1.xsd.zip`](samples/amazon-mq-active-mq-5.19.1.xsd.zip)
++ [`amazon-mq-active-mq-5.18.4.xsd.zip`](samples/amazon-mq-active-mq-5.18.4.xsd.zip)
++ [`amazon-mq-active-mq-5.17.6.xsd.zip`](samples/amazon-mq-active-mq-5.17.6.xsd.zip)
++ [`amazon-mq-active-mq-5.16.7.xsd.zip`](samples/amazon-mq-active-mq-5.16.7.xsd.zip)
++  [`amazon-mq-active-mq-5.15.16.xsd.zip`](samples/amazon-mq-active-mq-5.15.16.xsd.zip)
 
 You can use these schemas to validate and sanitize your configuration files. Amazon MQ also lets you provide configurations by uploading XML files. When you upload an XML file, Amazon MQ automatically sanitizes and removes invalid and prohibited configuration parameters according to the schema.
 

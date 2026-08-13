@@ -14,7 +14,7 @@ Alfresco is a content management service that helps customers store and manage t
 
 Amazon Kendra supports Alfresco On-Premises and Alfresco Cloud (Platform as a Service).
 
-You can connect Amazon Kendra to your Alfresco data source using the [Amazon Kendra console](https://console.aws.amazon.com/kendra/) or the [https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) API.
+You can connect Amazon Kendra to your Alfresco data source using the [Amazon Kendra console](https://console.aws.amazon.com/kendra/) or the [TemplateConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) API.
 
 For troubleshooting your Amazon Kendra Alfresco data source connector, see [Troubleshooting data sources](troubleshooting-data-sources.md).
 
@@ -154,8 +154,8 @@ IAM roles used for indexes cannot be used for data sources. If you are unsure if
 
 **To connect Amazon Kendra to Alfresco**
 
-You must specify a JSON of the [data source schema](https://docs.aws.amazon.com/kendra/latest/dg/ds-schemas.html#ds-alfresco-schema) using the [https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) API. You must provide the following information:
-+ **Data source**—Specify the data source type as `ALFRESCO` when you use the [https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) JSON schema. Also specify the data source as `TEMPLATE` when you call the [https://docs.aws.amazon.com/kendra/latest/dg/API_CreateDataSource.html](https://docs.aws.amazon.com/kendra/latest/dg/API_CreateDataSource.html) API.
+You must specify a JSON of the [data source schema](https://docs.aws.amazon.com/kendra/latest/dg/ds-schemas.html#ds-alfresco-schema) using the [TemplateConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) API. You must provide the following information:
++ **Data source**—Specify the data source type as `ALFRESCO` when you use the [TemplateConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) JSON schema. Also specify the data source as `TEMPLATE` when you call the [CreateDataSource](https://docs.aws.amazon.com/kendra/latest/dg/API_CreateDataSource.html) API.
 + **Alfresco site ID**—Specify the Alfresco site ID.
 + **Alfresco repository URL**—Specify the Alfresco repository URL. You can get the repository URL from your Alfresco administrator. For example, if you use Alfresco Cloud (PaaS), the repository URL could be *https://company.alfrescocloud.com*. Or, if you use Alfresco On-Premises, the repository URL could be *https://company-alfresco-instance.company-domain.suffix:port*.
 + **Alfresco web application URL**—Specify the Alfresco user interface URL. You can get the repository URL from your Alfresco administrator. For example, the user interface URL could be *https://example.com*.

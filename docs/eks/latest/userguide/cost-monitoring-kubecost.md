@@ -14,8 +14,8 @@ Amazon EKS supports Kubecost, which you can use to monitor your costs broken dow
 Amazon EKS provides an AWS optimized bundle of Kubecost for cluster cost visibility. You can use your existing AWS support agreements to obtain support. For more information about the available versions of Kubecost, see [Learn more about Kubecost](cost-monitoring-kubecost-bundles.md).
 
 **Note**
-Kubecost v3 introduces major architectural improvements including dramatically faster performance and enhanced automation capabilities. [Learn more about Kubecost v3. ](cost-monitoring-kubecost-bundles.md#kubecost-v3)
-Kubecost v2 introduces several major new features. [Learn more about Kubecost v2. ](cost-monitoring-kubecost-bundles.md#kubecost-v2)
+Kubecost v3 introduces major architectural improvements including dramatically faster performance and enhanced automation capabilities. [Learn more about Kubecost v3.](cost-monitoring-kubecost-bundles.md#kubecost-v3)
+Kubecost v2 introduces several major new features. [Learn more about Kubecost v2.](cost-monitoring-kubecost-bundles.md#kubecost-v2)
 
 For more information about Kubecost, see the [Kubecost](https://www.ibm.com/docs/en/kubecost/self-hosted/3.x) documentation and [Frequently asked questions](cost-monitoring-kubecost-bundles.md#cost-monitoring-faq).
 
@@ -36,4 +36,4 @@ For multi-cluster deployments with Kubecost v3, you need S3-compatible object st
 ## Access Kubecost dashboard
 <a name="kubecost-access-dashboard"></a>
 
-Once the *Amazon EKS optimized Kubecost bundle* setup is done, you should have access to Kubecost dashboard. For more information, see [Access Kubecost Dashboard](cost-monitoring-kubecost-dashboard.md).
+After the *Amazon EKS optimized Kubecost bundle* setup is complete, you can access the Kubecost dashboard. For more information, see [Access Kubecost Dashboard](cost-monitoring-kubecost-dashboard.md).

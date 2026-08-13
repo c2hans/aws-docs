@@ -35,7 +35,7 @@ Replicated backups are listed on the **Retained** tab of the **Automated backups
 ## AWS CLI
 <a name="AutomatedBackups.StopReplicating.CLI"></a>
 
-Stop backup replication by using the [https://docs.aws.amazon.com/cli/latest/reference/rds/stop-db-instance-automated-backups-replication.html](https://docs.aws.amazon.com/cli/latest/reference/rds/stop-db-instance-automated-backups-replication.html) AWS CLI command.
+Stop backup replication by using the [`stop-db-instance-automated-backups-replication`](https://docs.aws.amazon.com/cli/latest/reference/rds/stop-db-instance-automated-backups-replication.html) AWS CLI command.
 
 The following CLI example stops automated backups of a DB instance from replicating in the US West (Oregon) Region.
 
@@ -61,6 +61,6 @@ The following CLI example stops automated backups of a DB instance from replicat
 ## RDS API
 <a name="AutomatedBackups.StopReplicating.API"></a>
 
-Stop backup replication by using the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_StopDBInstanceAutomatedBackupsReplication.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_StopDBInstanceAutomatedBackupsReplication.html) RDS API operation with the following parameters:
+Stop backup replication by using the [`StopDBInstanceAutomatedBackupsReplication`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_StopDBInstanceAutomatedBackupsReplication.html) RDS API operation with the following parameters:
 + `Region`
 + `SourceDBInstanceArn`

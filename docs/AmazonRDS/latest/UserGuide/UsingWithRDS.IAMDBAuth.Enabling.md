@@ -43,7 +43,7 @@ Each creation or modification workflow has a **Database authentication** section
 ## AWS CLI
 <a name="UsingWithRDS.IAMDBAuth.Enabling.CLI"></a>
 
-To create a new DB instance with IAM authentication by using the AWS CLI, use the [https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html) command. Specify the `--enable-iam-database-authentication` option, as shown in the following example.
+To create a new DB instance with IAM authentication by using the AWS CLI, use the [`create-db-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html) command. Specify the `--enable-iam-database-authentication` option, as shown in the following example.
 
 ```
 aws rds create-db-instance \
@@ -56,7 +56,7 @@ aws rds create-db-instance \
     --enable-iam-database-authentication
 ```
 
-To update an existing DB instance to have or not have IAM authentication, use the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html). Specify either the `--enable-iam-database-authentication` or `--no-enable-iam-database-authentication` option, as appropriate.
+To update an existing DB instance to have or not have IAM authentication, use the AWS CLI command [`modify-db-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html). Specify either the `--enable-iam-database-authentication` or `--no-enable-iam-database-authentication` option, as appropriate.
 
 **Note**
  Make sure that the DB instance is compatible with IAM authentication. Check the compatibility requirements in [Region and version availability](UsingWithRDS.IAMDBAuth.md#UsingWithRDS.IAMDBAuth.Availability).
@@ -81,15 +81,15 @@ The IAM database authentication setting defaults to that of the source snapshot.
 ## RDS API
 <a name="UsingWithRDS.IAMDBAuth.Enabling.API"></a>
 
-To create a new DB instance with IAM authentication by using the API, use the API operation [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html). Set the `EnableIAMDatabaseAuthentication` parameter to `true`.
+To create a new DB instance with IAM authentication by using the API, use the API operation [`CreateDBInstance`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html). Set the `EnableIAMDatabaseAuthentication` parameter to `true`.
 
-To update an existing DB instance to have IAM authentication, use the API operation [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html). Set the `EnableIAMDatabaseAuthentication` parameter to `true` to enable IAM authentication, or `false` to disable it.
+To update an existing DB instance to have IAM authentication, use the API operation [`ModifyDBInstance`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html). Set the `EnableIAMDatabaseAuthentication` parameter to `true` to enable IAM authentication, or `false` to disable it.
 
 **Note**
  Make sure that the DB instance is compatible with IAM authentication. Check the compatibility requirements in [Region and version availability](UsingWithRDS.IAMDBAuth.md#UsingWithRDS.IAMDBAuth.Availability).
 
 If you are restoring a DB instance, use one of the following API operations:
-+ [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceFromDBSnapshot.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceFromDBSnapshot.html)
-+  [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceToPointInTime.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceToPointInTime.html)
++ [`RestoreDBInstanceFromDBSnapshot`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceFromDBSnapshot.html)
++  [`RestoreDBInstanceToPointInTime`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceToPointInTime.html)
 
 The IAM database authentication setting defaults to that of the source snapshot. To change this setting, set the `EnableIAMDatabaseAuthentication` parameter to `true` to enable IAM authentication, or `false` to disable it.

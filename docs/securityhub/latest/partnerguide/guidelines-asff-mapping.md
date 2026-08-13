@@ -45,7 +45,7 @@ If needed, you can specify a custom classifier (the third namespace).
 The ASFF format includes a few different timestamps.
 
 **`CreatedAt` and `UpdatedAt`**
-You must submit `CreatedAt` and `UpdatedAt` every time you call [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) for each finding.
+You must submit `CreatedAt` and `UpdatedAt` every time you call [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) for each finding.
 The values must match the ISO8601 format in Python 3.8.
 
 ```

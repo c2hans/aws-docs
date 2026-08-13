@@ -14,7 +14,7 @@ You can find the ID for the DLAMI of your choice by using an AWS CLI command for
 
 **To find a DLAMI ID using **ssm get-parameter****
 
-In the following [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/get-parameter.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/get-parameter.html) command, for the `--name` option, the parameter name format is {{/aws/service/deeplearning/ami/$architecture/$ami\_type/latest/ami-id}}. In this name format, {{architecture}} can be either **x86\_64** or **arm64**. Specify the {{ami\_type}} by taking the DLAMI name and removing the keywords "deep", "learning", and "ami". AMI Name can be found in [Deep Learning AMIs Release Notes](appendix-ami-release-notes.md).
+In the following [**ssm get-parameter**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/get-parameter.html) command, for the `--name` option, the parameter name format is {{/aws/service/deeplearning/ami/$architecture/$ami\_type/latest/ami-id}}. In this name format, {{architecture}} can be either **x86\_64** or **arm64**. Specify the {{ami\_type}} by taking the DLAMI name and removing the keywords "deep", "learning", and "ami". AMI Name can be found in [Deep Learning AMIs Release Notes](appendix-ami-release-notes.md).
 **Important**
 To use this command, the AWS Identity and Access Management (IAM) principal that you use must have the `ssm:GetParameter` permission. For more information about IAM principals, see the [Additional resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html#id_roles_additional-resources) section of **IAM roles** in the *IAM User Guide*.
 +
@@ -37,7 +37,7 @@ For some currently supported DLAMI frameworks, you can find more specific exampl
 
 **To find a DLAMI ID using **ec2 describe-images****
 
-In the following [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-images.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-images.html) command, for the value of the filter `Name=name`, enter the DLAMI name. You can specify a release version for a given framework, or you can get the latest release by replacing the version number with a question mark (?).
+In the following [**ec2 describe-images**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-images.html) command, for the value of the filter `Name=name`, enter the DLAMI name. You can specify a release version for a given framework, or you can get the latest release by replacing the version number with a question mark (?).
 +
 
   ```

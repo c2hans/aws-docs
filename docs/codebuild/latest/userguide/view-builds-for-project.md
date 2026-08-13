@@ -39,7 +39,7 @@ In the preceding command, replace the following placeholders:
 + {{sort-order}}: Optional string used to indicate how to list the build IDs. Valid values include `ASCENDING` and `DESCENDING`.
 + {{next-token}}: Optional string. During a previous run, if there were more than 100 items in the list, only the first 100 items are returned, along with a unique string called *next token*. To get the next batch of items in the list, run this command again, adding the next token to the call. To get all of the items in the list, keep running this command with each subsequent next token that is returned, until no more next tokens are returned.
 
-For example, if you run this command similar to this:
+For example, if you run a command similar to this:
 
 ```
 aws codebuild list-builds-for-project --project-name codebuild-demo-project --sort-order ASCENDING
@@ -94,7 +94,7 @@ In the preceding command, replace the following placeholders:
 + {{sort-order}}: Optional string used to indicate how to list the build IDs. Valid values include `ASCENDING` and `DESCENDING`.
 + {{next-token}}: Optional string. During a previous run, if there were more than 100 items in the list, only the first 100 items are returned, along with a unique string called *next token*. To get the next batch of items in the list, run this command again, adding the next token to the call. To get all of the items in the list, keep running this command with each subsequent next token that is returned, until no more next tokens are returned.
 
-For example, if you run this command similar to this:
+For example, if you run a command similar to this:
 
 ```
 aws codebuild list-build-batches-for-project --project-name codebuild-demo-project --sort-order ASCENDING

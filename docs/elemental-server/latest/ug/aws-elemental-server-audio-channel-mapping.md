@@ -292,12 +292,12 @@ The XML element for audio mapping, `<remix_settings>`, is structurally the same 
   <tr><th colspan="2">Element</th><th>Notes</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2">audio\_selector</td><td>Corresponds to the Audio Selector section of the UI, under <br />**Input** > **Advanced**</td></tr>
-  <tr><td></td><td>order</td><td>This is the number of the audio selector within the input. It is not unique and does not function as an ID.<br />The value of *<order>* increments from one within each *<audio\_selector>* element.</td></tr>
-  <tr><td></td><td>name</td><td>The name used for assigning an Audio Selector to an <audio\_description> element. </td></tr>
-  <tr><td></td><td>selector\_type</td><td>The selector type used for the value “track”.</td></tr>
-  <tr><td></td><td>track</td><td>The track numbers of the input tracks being selected.<br />Provide these as a string of comma-separated integers.</td></tr>
-  <tr><td></td><td>remix\_settings</td><td>The settings used to create an input mapping matrix. Place <remix\_settings> here, as a child of <audio\_selector>.</td></tr>
+  <tr><td colspan="2"><code>audio_selector</code></td><td>Corresponds to the Audio Selector section of the UI, under <br /><b>Input</b> &gt; <b>Advanced</b></td></tr>
+  <tr><td></td><td><code>order</code></td><td>This is the number of the audio selector within the input. It is not unique and does not function as an ID.<br />The value of <i>&lt;order&gt;</i> increments from one within each <i>&lt;audio_selector&gt;</i> element.</td></tr>
+  <tr><td></td><td><code>name</code></td><td>The name used for assigning an Audio Selector to an <i>&lt;audio_description&gt;</i> element. </td></tr>
+  <tr><td></td><td><code>selector_type</code></td><td>The selector type used for the value “<i>track</i>”.</td></tr>
+  <tr><td></td><td><code>track</code></td><td>The track numbers of the input tracks being selected.<br />Provide these as a string of comma-separated integers.</td></tr>
+  <tr><td></td><td><code>remix_settings</code></td><td>The settings used to create an input mapping matrix. Place <i>&lt;remix_settings&gt;</i> here, as a child of<i> &lt;audio_selector&gt;</i>.</td></tr>
 </tbody>
 </table>
 
@@ -308,12 +308,12 @@ The XML element for audio mapping, `<remix_settings>`, is structurally the same 
   <tr><th colspan="3">Element</th><th>Notes</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="3">name</td><td>The element that is used to map a stream assembly to an output. The value of this element must match the value of the child element <stream\_assembly\_name> of the associated output.</td></tr>
-  <tr><td colspan="3">audio\_description</td><td>The description of the one <audio\_description> element per output track.</td></tr>
-  <tr><td></td><td colspan="2"><codec\_settings></td><td>Use the codec name in place of “codec”. Supported options are: aac, mp2, wma2, wav, aiff, ac3, ec3, pass through, and dtse.</td></tr>
-  <tr><td></td><td></td><td>coding\_mode</td><td>Metadata on how the audio is encoded on this track. AWS Elemental Server supports one type of audio coding per output track.<br />Valid range: 1\_0, 1\_1, 2\_0, 5\_1, ad\_receiver\_mix<br />1\_0: Mono<br />1\_1: Dual Mono<br />2\_0: Stereo<br />5\_1: 5.1 Dolby Digital</td></tr>
-  <tr><td></td><td colspan="2">remix\_settings</td><td>Placement of <remix\_settings> here, as a child of <audio\_description>, creates an output mapping matrix.</td></tr>
-  <tr><td></td><td colspan="2">audio\_source\_name</td><td>The audio source name to use to associate the output audio track with an Audio Selector.</td></tr>
+  <tr><td colspan="3"><code>name</code></td><td>The element that is used to map a stream assembly to an output. The value of this element must match the value of the child element <i>&lt;stream_assembly_name&gt;</i> of the associated output.</td></tr>
+  <tr><td colspan="3"><code>audio_description</code></td><td>The description of the one <i>&lt;audio_description&gt;</i> element per output track.</td></tr>
+  <tr><td></td><td colspan="2"><code>&lt;codec_settings&gt;</code></td><td>Use the codec name in place of “<code>codec</code>”. Supported options are: <code>aac</code>, <code>mp2</code>, <i>wma2</i>, <i>wav</i>, <i>aiff</i>, <i>ac3</i>, <i>ec3</i>, <i>pass through</i>, and <i>dtse</i>.</td></tr>
+  <tr><td></td><td></td><td><code>coding_mode</code></td><td>Metadata on how the audio is encoded on this track. AWS Elemental Server supports one type of audio coding per output track.<br />Valid range: 1_0, 1_1, 2_0, 5_1, ad_receiver_mix<br />1_0: Mono<br />1_1: Dual Mono<br />2_0: Stereo<br />5_1: 5.1 Dolby Digital</td></tr>
+  <tr><td></td><td colspan="2"><code>remix_settings</code></td><td>Placement of <code>&lt;remix_settings&gt;</code> here, as a child of <code>&lt;audio_description&gt;</code>, creates an output mapping matrix.</td></tr>
+  <tr><td></td><td colspan="2"><code>audio_source_name</code></td><td>The audio source name to use to associate the output audio track with an Audio Selector.</td></tr>
 </tbody>
 </table>
 
@@ -324,8 +324,8 @@ The XML element for audio mapping, `<remix_settings>`, is structurally the same 
   <tr><th colspan="2">Element</th><th>Notes</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2">output</td><td>The setting which represents the actual set of streams delivered to a destination address.</td></tr>
-  <tr><td> </td><td>stream\_assembly\_name</td><td>The name to use to associate a stream with an output.</td></tr>
+  <tr><td colspan="2"><code>output</code></td><td>The setting which represents the actual set of streams delivered to a destination address.</td></tr>
+  <tr><td> </td><td><code>stream_assembly_name</code></td><td>The name to use to associate a stream with an output.</td></tr>
 </tbody>
 </table>
 
@@ -341,8 +341,8 @@ For output mapping, include the `<remix_settings>` element as a child of `<audio
   <tr><th colspan="2">Element</th><th>Notes</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2">audio\_description</td><td>There is one <audio\_description> element per output track.</td></tr>
-  <tr><td> </td><td>remix\_settings</td><td>Placement <remix\_settings> here creates an output mapping matrix</td></tr>
+  <tr><td colspan="2"><code>audio_description</code></td><td>There is one <code>&lt;audio_description&gt;</code> element per output track.</td></tr>
+  <tr><td> </td><td><code>remix_settings</code></td><td>Placement <code>&lt;remix_settings&gt;</code> here creates an output mapping matrix</td></tr>
 </tbody>
 </table>
 
@@ -353,11 +353,11 @@ For output mapping, include the `<remix_settings>` element as a child of `<audio
   <tr><th colspan="3">Element</th><th>Type</th><th>Description</th><th>Notes</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="3">channels\_in</td><td>integer</td><td>Number of channels in input track.</td><td>Valid range: 1 – 16<br />This number is the same for all inputs.</td></tr>
-  <tr><td colspan="3">channels\_out</td><td>integer</td><td>Number of channels in output track.</td><td>Valid range: 1 – 8<br />AWS Elemental Server supports up to eight channels per output track.<br />You must specify the correct number of output channels for the <coding\_mode> value you provide. For example, 5.1 audio accepts six channels.</td></tr>
-  <tr><td colspan="3">channel\_mapping</td><td>XML</td><td>Element containing all the mapping matrix data.</td><td>Corresponds to the table matrix in the UI.</td></tr>
-  <tr><td> </td><td colspan="2">out\_ch\_n</td><td>Audio data for one output channel.</td><td>Each <out\_ch\_n> element represents an output channel.</td><td>Each `<out_ch_n>` element corresponds to a column in the UI table. The number of `<out_ch_n>` elements in `<channel_mapping>` should equal the value of `<channels_out>`.<br />*n *is an integer that represents the matrix column number.<br />**NOTE:***n *counts from zero, so the channel number is (*n* \+ 1).</td></tr>
-  <tr><td> </td><td> </td><td>in\_ch\_m</td><td>integer</td><td>The amount of audio from the input channel that is passed into the output channel in dB gain.<br /> </td><td>Valid range: -60 to 60<br />0: Pass through audio at same level as input<br />-60: Mute channel<br />Each `<in_ch_m>` element corresponds to the cell in the *nth* column and *mth* row of the UI table.<br />*m* is an integer that represents the matrix row number. <br />The number of `<in_ch_m>` elements in `<out_ch_n>` should equal the value of `<channels_in>`.<br />**NOTE:***m *counts from zero, so the channel number is (*m* \+ 1).</td></tr>
+  <tr><td colspan="3"><code>channels_in</code></td><td>integer</td><td>Number of channels in input track.</td><td>Valid range: 1 – 16<br />This number is the same for all inputs.</td></tr>
+  <tr><td colspan="3"><code>channels_out</code></td><td>integer</td><td>Number of channels in output track.</td><td>Valid range: 1 – 8<br />AWS Elemental Server supports up to eight channels per output track.<br />You must specify the correct number of output channels for the &lt;coding_mode&gt; value you provide. For example, 5.1 audio accepts six channels.</td></tr>
+  <tr><td colspan="3"><code>channel_mapping</code></td><td>XML</td><td>Element containing all the mapping matrix data.</td><td>Corresponds to the table matrix in the UI.</td></tr>
+  <tr><td> </td><td colspan="2"><code>out_ch_n</code></td><td>Audio data for one output channel.</td><td>Each &lt;out_ch_<i>n</i>&gt; element represents an output channel.</td><td>Each <code>&lt;out_ch_n&gt;</code> element corresponds to a column in the UI table. The number of <code>&lt;out_ch_n&gt;</code> elements in <code>&lt;channel_mapping&gt;</code> should equal the value of <code>&lt;channels_out&gt;</code>.<br /><i>n </i>is an integer that represents the matrix column number.<br /><b>NOTE:</b><i>n </i>counts from zero, so the channel number is (<i>n</i> + 1).</td></tr>
+  <tr><td> </td><td> </td><td><code>in_ch_m</code></td><td>integer</td><td>The amount of audio from the input channel that is passed into the output channel in dB gain.<br /> </td><td>Valid range: -60 to 60<br />0: Pass through audio at same level as input<br />-60: Mute channel<br />Each <code>&lt;in_ch_m&gt;</code> element corresponds to the cell in the <i>nth</i> column and <i>mth</i> row of the UI table.<br /><i>m</i> is an integer that represents the matrix row number. <br />The number of <code>&lt;in_ch_m&gt;</code> elements in <code>&lt;out_ch_n&gt;</code> should equal the value of <code>&lt;channels_in&gt;</code>.<br /><b>NOTE:</b><i>m </i>counts from zero, so the channel number is (<i>m</i> + 1).</td></tr>
 </tbody>
 </table>
 
@@ -379,11 +379,11 @@ For input mapping, include the `<remix_settings>` element as a child of `<audio_
   <tr><th colspan="3">Element</th><th>Type</th><th>Description</th><th>Notes</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="3">channels\_in</td><td>integer</td><td>Integer which shows the number of pre-mapping input channels.</td><td>Valid range: 1 - 16</td></tr>
-  <tr><td colspan="3">channels\_out</td><td>integer</td><td>Integer which shows the number of post-mapping input channels.</td><td>Valid range: 1 – 16<br />Each output may use a different subset of these channels.</td></tr>
-  <tr><td colspan="3">channel\_mapping</td><td>Mapping data</td><td>Element which contains all the mapping matrix data.</td><td>Corresponds to the table matrix in the UI.</td></tr>
-  <tr><td> </td><td colspan="2">out\_ch\_n</td><td>Audio data for one post-mapped channel.</td><td>Each <out\_ch\_n> element represents an input channel after it has been mapped.</td><td>Each <out\_ch\_*n*> element corresponds to a column in the UI table.**<br />*n *is an integer that represents the column number. Increment from zero to one less than the value of <channels\_out>.</td></tr>
-  <tr><td> </td><td> </td><td>in\_ch\_m</td><td>integer</td><td>The amount of audio from a pre-mapping input channel that is passed into the new post-mapping input channel.</td><td>Valid range: -60 to 60<br />Each `<in_ch_m>` element corresponds to the cell in the *nth* column and *mth* row of the UI table.<br />*m* is an integer that represents the row number. Increment from zero to one less than the value of` <channels_in>`<br />In each out\_ch\_*n *element, should be one of these for each channel in the incoming audio track.</td></tr>
+  <tr><td colspan="3"><code>channels_in</code></td><td>integer</td><td>Integer which shows the number of pre-mapping input channels.</td><td>Valid range: 1 - 16</td></tr>
+  <tr><td colspan="3"><code>channels_out</code></td><td>integer</td><td>Integer which shows the number of post-mapping input channels.</td><td>Valid range: 1 – 16<br />Each output may use a different subset of these channels.</td></tr>
+  <tr><td colspan="3"><code>channel_mapping</code></td><td>Mapping data</td><td>Element which contains all the mapping matrix data.</td><td>Corresponds to the table matrix in the UI.</td></tr>
+  <tr><td> </td><td colspan="2"><code>out_ch_n</code></td><td>Audio data for one post-mapped channel.</td><td>Each <code>&lt;out_ch_n&gt;</code> element represents an input channel after it has been mapped.</td><td>Each &lt;out_ch_<i>n</i>&gt; element corresponds to a column in the UI table.<i></i><br /><i>n </i>is an integer that represents the column number. Increment from zero to one less than the value of &lt;channels_out&gt;.</td></tr>
+  <tr><td> </td><td> </td><td><code>in_ch_m</code></td><td>integer</td><td>The amount of audio from a pre-mapping input channel that is passed into the new post-mapping input channel.</td><td>Valid range: -60 to 60<br />Each <code>&lt;in_ch_m&gt;</code> element corresponds to the cell in the <i>nth</i> column and <i>mth</i> row of the UI table.<br /><i>m</i> is an integer that represents the row number. Increment from zero to one less than the value of<code> &lt;channels_in&gt;</code><br />In each out_ch_<i>n </i>element, should be one of these for each channel in the incoming audio track.</td></tr>
 </tbody>
 </table>
 

@@ -20,7 +20,7 @@ GET /attached-files/{{InstanceId}}/{{FileId}}?associatedResourceArn={{Associated
 The request uses the following URI parameters.
 
  ** [AssociatedResourceArn](#API_GetAttachedFile_RequestSyntax) **   <a name="connect-GetAttachedFile-request-uri-AssociatedResourceArn"></a>
-The resource to which the attached file is (being) uploaded to. The supported resources are [Cases](https://docs.aws.amazon.com/connect/latest/adminguide/cases.html) and [Email](https://docs.aws.amazon.com/connect/latest/adminguide/setup-email-channel.html).
+The resource to which the attached file is (being) uploaded to. The supported resources are [Cases](https://docs.aws.amazon.com/connect/latest/adminguide/cases.html), [Email](https://docs.aws.amazon.com/connect/latest/adminguide/setup-email-channel.html), and [Task](https://docs.aws.amazon.com/connect/latest/adminguide/concepts-getting-started-tasks.html).
 This value must be a valid ARN.
 Required: Yes
 
@@ -78,7 +78,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [AssociatedResourceArn](#API_GetAttachedFile_ResponseSyntax) **   <a name="connect-GetAttachedFile-response-AssociatedResourceArn"></a>
-The resource to which the attached file is (being) uploaded to. [Cases](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_CreateCase.html) are the only current supported resource.
+The resource to which the attached file is (being) uploaded to. The supported resources are [Cases](https://docs.aws.amazon.com/connect/latest/adminguide/cases.html), [Email](https://docs.aws.amazon.com/connect/latest/adminguide/setup-email-channel.html), and [Task](https://docs.aws.amazon.com/connect/latest/adminguide/concepts-getting-started-tasks.html).
 Type: String
 
  ** [CreatedBy](#API_GetAttachedFile_ResponseSyntax) **   <a name="connect-GetAttachedFile-response-CreatedBy"></a>

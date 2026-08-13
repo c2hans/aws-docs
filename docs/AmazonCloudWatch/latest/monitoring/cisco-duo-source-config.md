@@ -20,7 +20,7 @@ To integrate CloudWatch Pipelines with Cisco Duo, complete the following high-le
 ## Prerequisites
 <a name="cisco-duo-prerequisites"></a>
 
-Before you begin, ensure you have the following:
+Before you begin, make sure you have the following:
 + An active Cisco Duo account with Admin API access
 + A Cisco Duo auth credential with Admin API access
 + An AWS account with permissions to create and manage CloudWatch Pipelines
@@ -49,7 +49,7 @@ To configure authentication credentials for the pipeline:
 ## Configuring the CloudWatch Pipeline
 <a name="cisco-duo-pipeline-config"></a>
 
-To configure the pipeline, choose Cisco Duo as the data source. Provide the `api_host`, `integration_key`, and `secret_key`. Once you create and activate the pipeline, log data from Cisco Duo will begin flowing into the selected CloudWatch Logs log group.
+To configure the pipeline, choose Cisco Duo as the data source. Provide the `api_host`, `integration_key`, and `secret_key`. After you create and activate the pipeline, log data from Cisco Duo will begin flowing into the selected CloudWatch Logs log group.
 
 The following optional parameters are available:
 + **Page sizes** – Default is 100 for all streams. Valid ranges vary by stream.

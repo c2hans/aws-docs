@@ -64,21 +64,23 @@ For low-cardinality keyword fields that you primarily use in aggregations and ra
 ### Bloom filters
 <a name="optimized-log-analytics-bp-bloom"></a>
 
-Enable bloom filters on fields that you frequently filter with equality predicates. When a field is used only for equality filtering (not range queries or full-text search), you can also disable the Lucene keyword index on that field to avoid maintaining additional structures.
+Enable bloom filters on fields that you frequently filter with equality predicates. When a field is used only for equality filtering (not range queries or full-text search), you can also disable the keyword index on that field. This avoids maintaining additional index structures.
 
-**Low-cardinality fields** (`log.level`, `status_code`, `service.name`, `region`) — Bloom filters are small and lookups are fast. Query performance remains consistent while you save storage by disabling the Lucene keyword index on these fields.
+**Low-cardinality fields** (`log.level`, `status_code`, `service.name`, `region`) — Bloom filters are small and lookups are fast. Query performance remains consistent while you save storage by disabling the keyword index on these fields.
 
-**High-cardinality fields** (`trace_id`, `request_id`, `user_id`) — Bloom filters can still eliminate row groups and reduce storage compared to a full inverted index, but the filter itself becomes larger and each probe does more work. Use bloom filters on high-cardinality fields when storage savings are the priority and you can tolerate slightly higher per-query overhead.
+**High-cardinality fields** (`trace_id`, `request_id`, `user_id`) — Bloom filters can still eliminate row groups and reduce storage compared to a full inverted index. However, the filter itself becomes larger and each probe does more work. Use bloom filters on high-cardinality fields when storage savings are the priority and you can tolerate slightly higher per-query overhead.
 
 ### Index sort
 <a name="optimized-log-analytics-bp-sort"></a>
 
-Index sort controls the physical order of documents within each segment. When documents are sorted, adjacent rows in the same Parquet column tend to share values, which improves compression. This is especially effective with RLE and dictionary encoding.
+Index sort controls the physical order of documents within each segment. When you sort documents, adjacent rows in the same Parquet column tend to share values, which improves compression. This is especially effective with RLE and dictionary encoding.
 
 For log analytics, sort by a low-cardinality field first (to create long value runs), then by timestamp (to keep events within each group in order):
 + Sorting by `service.name` groups all logs from the same service together. RLE\_DICTIONARY compresses these runs to near-zero overhead.
 + Within each service group, `@timestamp` descending ensures tight delta values between adjacent rows. DELTA\_BINARY\_PACKED encodes these efficiently.
 + Other correlated fields (`host.name`, `log.level`, `region`) also benefit because they cluster naturally when the primary sort groups by service.
+
+The following table shows recommended sort field positions for log analytics workloads.
 
 | Sort position | Recommended field | Reason |
 | --- | --- | --- |

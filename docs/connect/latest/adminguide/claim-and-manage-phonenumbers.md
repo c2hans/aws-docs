@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/claim-and-mana
 # Claim and manage your phone numbers in Connect Customer
 <a name="claim-and-manage-phonenumbers"></a>
 
-The topics in this section explain how to claim an Connect Customer phone number, list phone numbers claimed to your instance, move a phone number across Connect Customer instances, and release a phone number.
+The topics in this section explain how to claim a Connect Customer phone number, list phone numbers claimed to your instance, move a phone number across Connect Customer instances, and release a phone number.
 
 **Topics**
 + [Claim a phone number in your country](get-connect-number.md)

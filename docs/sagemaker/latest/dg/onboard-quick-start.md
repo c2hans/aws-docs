@@ -38,7 +38,7 @@ When you onboard to Amazon SageMaker AI domain using the **Set up for single use
   ```
   default-YYYYMMDDTHHMMSS
   ```
-+ **Domain execution role**: SageMaker AI creates a new IAM role and attaches the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerFullAccess.html) policy. When using the quick setup and the updated Amazon SageMaker Studio is your default experience, your IAM role also includes the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerCanvasFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerCanvasFullAccess.html), [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerCanvasAIServicesAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerCanvasAIServicesAccess.html), [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FullAccess.html) policies.
++ **Domain execution role**: SageMaker AI creates a new IAM role and attaches the [`AmazonSageMakerFullAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerFullAccess.html) policy. When using the quick setup and the updated Amazon SageMaker Studio is your default experience, your IAM role also includes the [`AmazonSageMakerCanvasFullAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerCanvasFullAccess.html), [`AmazonSageMakerCanvasAIServicesAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerCanvasAIServicesAccess.html), [`AmazonS3FullAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FullAccess.html) policies.
 + **User profile execution role**: SageMaker AI sets the user profile execution role to the same IAM role used for the domain execution role.
 + **Shared space execution role**: SageMaker AI sets the shared space execution role to the same IAM role used for the domain execution role.
 + **SageMaker Canvas time series forecasting role**: SageMaker AI creates a new IAM role with the permissions required to use the SageMaker Canvas time series forecasting feature.
@@ -56,9 +56,9 @@ When you onboard to Amazon SageMaker AI domain using the **Set up for single use
   + `HomeEfsCreation`: Disabled. An Amazon EFS volume is not created by default during quick setup. You can enable EFS creation later through Domain Settings. To enable EFS after domain creation, see [Amazon EFS creation and auto-mounting in Studio](studio-updated-automount.md).
   + `AutoMountHomeEFS`: Disabled. This setting becomes active only after EFS creation is enabled at the domain level.
   + Space EBS storage: Default space size is 5 GB, maximum space size is 100 GB (applies to both private and shared spaces).
-+ **Studio experience**: Amazon SageMaker Studio is set as the UI default experience and Studio Classic is made hidden. That is, in [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UserSettings.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UserSettings.html):
++ **Studio experience**: Amazon SageMaker Studio is set as the UI default experience and Studio Classic is made hidden. That is, in [`UserSettings`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UserSettings.html):
   + `DefaultLandingUri` is set to `studio::`.
-  + [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StudioWebPortalSettings.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StudioWebPortalSettings.html) `HiddenAppTypes` is set to `["JupyterServer"]`
+  + [`StudioWebPortalSettings`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StudioWebPortalSettings.html) `HiddenAppTypes` is set to `["JupyterServer"]`
 
     For information about hidden applications, see [Hide machine learning tools and applications in the Amazon SageMaker Studio UI](studio-updated-ui-customize-tools-apps.md).
 

@@ -9,7 +9,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 <a name="aws-properties-greengrass-functiondefinition-environment-description"></a>The environment configuration for a Lambda function on the AWS IoT Greengrass core.
 
-<a name="aws-properties-greengrass-functiondefinition-environment-inheritance"></a> In an CloudFormation template, `Environment` is a property of the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functionconfiguration.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functionconfiguration.html) property type.
+<a name="aws-properties-greengrass-functiondefinition-environment-inheritance"></a> In an CloudFormation template, `Environment` is a property of the [`FunctionConfiguration`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functionconfiguration.html) property type.
 
 ## Syntax
 <a name="aws-properties-greengrass-functiondefinition-environment-syntax"></a>

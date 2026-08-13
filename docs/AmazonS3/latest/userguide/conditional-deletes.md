@@ -30,8 +30,8 @@ The `If-Match` header with the `ETag` value evaluates against existing objects i
  You can also receive a `409 Conflict` error response in the case of concurrent requests if a `DELETE` or `PUT` request to an object succeeds before a conditional delete operation on that object completes. You will receive a `404 Not Found` response if a concurrent delete request to an object succeeds before a conditional write operation on that object completes, as the object key no longer exists.
 
 You can use the `If-Match` header with the `ETag` value for the following APIs:
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html)
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjects.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjects.html)
++ [DeleteObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html)
++ [DeleteObjects](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjects.html)
 
 ### Using the AWS CLI
 <a name="conditional-deletes-deleteobject-CLI-etags"></a>
@@ -42,7 +42,7 @@ The following `delete-object` example command attempts to perform a conditional 
 aws s3api delete-object --bucket {{amzn-s3-demo-bucket}} --key dir-1/{{my_images.tar.bz2}} --if-match "{{6805f2cfc46c0f04559748bb039d69al}}"
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-object.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-object.html) in the *AWS CLI Command Reference*.
+For more information, see [delete-object](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-object.html) in the *AWS CLI Command Reference*.
 
 The following `delete-objects` example command attempts to perform a conditional delete with the provided ETag value `6805f2cfc46c0f04559748bb039d69al`.
 
@@ -50,7 +50,7 @@ The following `delete-objects` example command attempts to perform a conditional
 aws s3api delete-objects --bucket {{amzn-s3-demo-bucket}} --delete '{"Objects":[{"Key":"my_images.tar.bz2", "ETag": "6805f2cfc46c0f04559748bb039d69al"}]}'
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-objects.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-objects.html) in the *AWS CLI Command Reference*.
+For more information, see [delete-objects](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-objects.html) in the *AWS CLI Command Reference*.
 
 For information about the AWS CLI, see [What is the AWS Command Line Interface?](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in the *AWS Command Line Interface User Guide*.
 
@@ -67,8 +67,8 @@ To conditionally delete multiple objects using the `DeleteObjects` operation, yo
  To perform conditional deletes with `If-Match:*`, you must have `s3:DeleteObject` permissions.
 
 You can use the `If-Match` header with the `*` value for the following APIs:
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html)
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjects.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjects.html)
++ [DeleteObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html)
++ [DeleteObjects](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjects.html)
 
 ### Using the AWS CLI
 <a name="conditional-deleteobject-CLI-etags"></a>
@@ -79,7 +79,7 @@ The following `delete-object` example command attempts to perform a conditional 
 aws s3api delete-object --bucket {{amzn-s3-demo-bucket}} --key dir-1/{{my_images.tar.bz2}} --if-match "{{*}}"
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-object.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-object.html) in the *AWS CLI Command Reference*.
+For more information, see [delete-object](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-object.html) in the *AWS CLI Command Reference*.
 
 The following `delete-objects` example command attempts to perform a conditional delete for an object with the key name `{{my_images.tar.bz2}}` that has a value of `*` which represents any ETag.
 
@@ -87,6 +87,6 @@ The following `delete-objects` example command attempts to perform a conditional
 aws s3api delete-objects --bucket {{amzn-s3-demo-bucket}} --delete '{"Objects":[{"Key":"{{my_images.tar.bz2}}", "ETag": "{{*}}"}]}'
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-objects.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-objects.html) in the *AWS CLI Command Reference*.
+For more information, see [delete-objects](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-objects.html) in the *AWS CLI Command Reference*.
 
 For information about the AWS CLI, see [What is the AWS Command Line Interface?](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in the *AWS Command Line Interface User Guide*.

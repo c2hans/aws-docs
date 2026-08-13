@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DevOpsAgent::PrivateConnection SelfManagedMode
 <a name="aws-properties-devopsagent-privateconnection-selfmanagedmode"></a>
 
-<a name="aws-properties-devopsagent-privateconnection-selfmanagedmode-description"></a>The `SelfManagedMode` property type specifies Property description not available. for an [AWS::DevOpsAgent::PrivateConnection](aws-resource-devopsagent-privateconnection.md).
+Configuration for a private connection that uses an existing Amazon VPC Lattice resource configuration that you manage.
 
 ## Syntax
 <a name="aws-properties-devopsagent-privateconnection-selfmanagedmode-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-privateconnection-selfmanagedmode-properties"></a>
 
 `ResourceConfigurationId`  <a name="cfn-devopsagent-privateconnection-selfmanagedmode-resourceconfigurationid"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the Amazon VPC Lattice resource configuration that points to the target service.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^arn:[a-z0-9\-]+:vpc-lattice:[a-zA-Z0-9\-]+:\d{12}:resourceconfiguration/rcfg-[0-9a-z]{17}$`

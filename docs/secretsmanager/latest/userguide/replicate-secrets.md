@@ -51,7 +51,7 @@ Secrets Manager generates a CloudTrail log entry when you replicate a secret. Fo
 <a name="replicate-secrets_CLI"></a>
 
 **Example Replicate a secret to another region**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/replicate-secret-to-regions.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/replicate-secret-to-regions.html) example replicates a secret to eu-west-3. The replica is encrypted with the AWS managed key **aws/secretsmanager**.
+The following [`replicate-secret-to-regions`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/replicate-secret-to-regions.html) example replicates a secret to eu-west-3. The replica is encrypted with the AWS managed key **aws/secretsmanager**.
 
 ```
 aws secretsmanager replicate-secret-to-regions \
@@ -73,4 +73,4 @@ aws secretsmanager create-secret \
 ## AWS SDK
 <a name="replicate-secrets_SDK"></a>
 
-To replicate a secret, use the [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_ReplicateSecretToRegions.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_ReplicateSecretToRegions.html) command. For more information, see [AWS SDKs](asm_access.md#asm-sdks).
+To replicate a secret, use the [`ReplicateSecretToRegions`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_ReplicateSecretToRegions.html) command. For more information, see [AWS SDKs](asm_access.md#asm-sdks).

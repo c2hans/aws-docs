@@ -16,7 +16,7 @@ When you create a State Manager association, you choose which nodes to configure
 
 ![Different options for targeting nodes when creating a State Manager association](http://docs.aws.amazon.com/systems-manager/latest/userguide/images/state-manager-targets.png)
 
-If you create an association by using a command line tool such as the AWS Command Line Interface (AWS CLI), then you specify the `targets` parameter. Targeting nodes allows you to configure tens, hundreds, or thousands of nodes with an association without having to specify or choose individual node IDs.
+If you create an association by using a command line tool such as the AWS Command Line Interface (AWS CLI), then you specify the `targets` parameter. Targeting nodes lets you configure tens, hundreds, or thousands of nodes with an association without having to specify or choose individual node IDs.
 
 Each managed node can be targeted by a maximum of 20 associations.
 
@@ -35,7 +35,7 @@ As a best practice, we recommend using tags when creating associations that use 
 **Note**
 Note the following information.
 When creating an association in the AWS Management Console that targets nodes by using tags, you can specify only one tag key for an automation association and five tag keys for a command association. *All* tag keys specified in the association must be currently assigned to the node. If they aren't, State Manager fails to target the node for an association.
-If you want to use the console *and* you want to target your nodes by using more than one tag key for an automation association and five tag keys for a command association, assign the tag keys to an AWS Resource Groups group and add the nodes to it. You can then choose the **Resource Group** option in the **Targets** list when you create the State Manager association.
+If you want to use the console *and* target nodes by using more than one tag key (automation) or five tag keys (command), assign the tag keys to an AWS Resource Groups group. Add the nodes to the group. You can then choose the **Resource Group** option in the **Targets** list when you create the State Manager association.
 You can specify a maximum of five tag keys by using the AWS CLI. If you use the AWS CLI, *all* tag keys specified in the `create-association` command must be currently assigned to the node. If they aren't, State Manager fails to target the node for an association.
 
 **Choose nodes manually**
@@ -86,7 +86,7 @@ An error threshold specifies how many association executions are allowed to fail
 
 If you specify an absolute number of three errors, for example, State Manager sends the stop command when the fourth error is returned. If you specify 0, then State Manager sends the stop command after the first error result is returned.
 
-If you specify an error threshold of 10% for 50 associations, then State Manager sends the stop command when the sixth error is returned. Associations that are already running when an error threshold is reached are allowed to complete, but some of these associations might fail. To ensure that there aren't more errors than the number specified for the error threshold, set the **Concurrency** value to 1 so that associations proceed one at a time.
+If you specify an error threshold of 10% for 50 associations, then State Manager sends the stop command when the sixth error is returned. Associations that are already running when an error threshold is reached are allowed to complete, but some of these associations might fail. To make sure that there aren't more errors than the number specified for the error threshold, set the **Concurrency** value to 1 so that associations proceed one at a time.
 
 State Manager error thresholds have the following restrictions and limitations:
 + Error thresholds are enforced for the current interval.

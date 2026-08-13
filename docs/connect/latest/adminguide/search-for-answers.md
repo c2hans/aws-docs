@@ -2,16 +2,16 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/search-for-answers.html
 ---
 
-# Search for content using Connect AI agents
+# Search for content using Connect Customer agent assist
 <a name="search-for-answers"></a>
 
 |  |
 | --- |
-| **Powered by Amazon Bedrock**: Connect AI agents is built on Amazon Bedrock and includes [automated abuse detection](https://docs.aws.amazon.com//bedrock/latest/userguide/abuse-detection.html) implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI). |
+| **Powered by Amazon Bedrock**: AI agents is built on Amazon Bedrock and includes [automated abuse detection](https://docs.aws.amazon.com//bedrock/latest/userguide/abuse-detection.html) implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI). |
 
-With Connect AI agents agents can use natural language to search across connected knowledge sources to receive generated recommendations, like actions to take and links to more information.
+With Connect Customer agent assist agents can use natural language to search across connected knowledge sources to receive generated recommendations, like actions to take and links to more information.
 
-For example, you can type questions or phrases in the search box (such as, "how long after purchase can handbags be exchanged?") without having to guess which keywords will work. Connect AI agents searches the connected sources, and returns a specific solution generated from your knowledge content along with links to relevant information.
+For example, you can type questions or phrases in the search box (such as, "how long after purchase can handbags be exchanged?") without having to guess which keywords will work. agent assist searches the connected sources, and returns a specific solution generated from your knowledge content along with links to relevant information.
 
 You can search for content at any time: while on a contact, on After Contact Work, or between contacts.
 

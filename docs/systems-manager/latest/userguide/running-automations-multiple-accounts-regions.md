@@ -53,11 +53,11 @@ Use the following procedure to create the required IAM roles for Systems Manager
 
 **To create the required IAM administration role for multi-Region and multi-account automations by using CloudFormation**
 
-1. Download and unzip the [https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWS-SystemsManager-AutomationAdministrationRole.zip](https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWS-SystemsManager-AutomationAdministrationRole.zip).
+1. Download and unzip the [`AWS-SystemsManager-AutomationAdministrationRole.zip`](https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWS-SystemsManager-AutomationAdministrationRole.zip).
 
    -or-
 
-   If your accounts are managed by AWS Organizations [https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWS-SystemsManager-AutomationAdministrationRole (org).zip](https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWS-SystemsManager-AutomationAdministrationRole (org).zip).
+   If your accounts are managed by AWS Organizations [`AWS-SystemsManager-AutomationAdministrationRole (org).zip`](https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWS-SystemsManager-AutomationAdministrationRole (org).zip).
 
    These files contain the `AWS-SystemsManager-AutomationAdministrationRole.yaml` and `AWS-SystemsManager-AutomationAdministrationRole (org).yaml` CloudFormation template files, respectively.
 
@@ -87,11 +87,11 @@ You must repeat the following procedure in *every* account that you want to targ
 
 **To create the required IAM automation role for multi-Region and multi-account automations by using CloudFormation**
 
-1. Download the [https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWS-SystemsManager-AutomationExecutionRole.zip](https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWS-SystemsManager-AutomationExecutionRole.zip).
+1. Download the [`AWS-SystemsManager-AutomationExecutionRole.zip`](https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWS-SystemsManager-AutomationExecutionRole.zip).
 
    -or
 
-   If your accounts are managed by AWS Organizations [https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWS-SystemsManager-AutomationExecutionRole (org).zip](https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWS-SystemsManager-AutomationExecutionRole (org).zip).
+   If your accounts are managed by AWS Organizations [`AWS-SystemsManager-AutomationExecutionRole (org).zip`](https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWS-SystemsManager-AutomationExecutionRole (org).zip).
 
    These files contains the `AWS-SystemsManager-AutomationExecutionRole.yaml` and `AWS-SystemsManager-AutomationExecutionRole (org).yaml`CloudFormation template files, respectively.
 
@@ -188,7 +188,7 @@ You can view information about a runbook by choosing the runbook name.
 **Note**
 You might not need to choose some of the options in the **Input parameters** section. This is because you targeted resources in multiple Regions and accounts by using tags or a resource group. For example, if you chose the `AWS-RestartEC2Instance` runbook, then you don't need to specify or choose instance IDs in the **Input parameters** section. The automation locates the instances to restart by using the tags you specified.
 
-1. (Optional) Choose a CloudWatch alarm to apply to your automation for monitoring. If your alarm enters `ALARM` state, the automation is canceled and any defined `onCancel` steps run. If you use AWS CloudTrail, you will see the `StopAutomationExecution` API call in your trail. For more information, see [Configuring Automations to monitor CloudWatch Alarms](automation-cw-alarm-monitoring.md).
+1. (Optional) Choose a CloudWatch alarm to apply to your automation for monitoring. If your alarm enters `ALARM` state, the automation is canceled and any defined `onCancel` steps run. If you use AWS CloudTrail, you see the `StopAutomationExecution` API call in your trail. For more information, see [Configuring Automations to monitor CloudWatch Alarms](automation-cw-alarm-monitoring.md).
 
 1. Use the options in the **Rate control** section to restrict the number of AWS resources that can run the Automation within each account-Region pair.
 

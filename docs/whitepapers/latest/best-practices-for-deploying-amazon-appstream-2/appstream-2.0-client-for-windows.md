@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 # WorkSpaces Applications client for Windows
 <a name="appstream-2.0-client-for-windows"></a>
 
- The WorkSpaces Applications [https://clients.amazonappstream.com/](https://clients.amazonappstream.com/) is an application that you install on your Windows PC. This application provides additional capabilities that are not available when you access WorkSpaces Applications using a web browser. For example, the WorkSpaces Applications client enables you do the following:
+ The WorkSpaces Applications [*client for Windows*](https://clients.amazonappstream.com/) is an application that you install on your Windows PC. This application provides additional capabilities that are not available when you access WorkSpaces Applications using a web browser. For example, the WorkSpaces Applications client enables you do the following:
 +  Use more than two monitors or 4K resolution
 +  Use your USB devices with applications streamed through WorkSpaces Applications
 +  Access your local drives and folders during your streaming sessions
@@ -28,4 +28,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 
  You must qualify the USB devices that you want to enable your users to use with their streaming session. If their USB device is not qualified, it won't be detected by WorkSpaces Applications and can't be shared with the session. After their devices are qualified, your users must share the devices with WorkSpaces Applications every time they start a new streaming session.
 
- When deploying the WorkSpaces Applications client at scale, AWS recommends using the [https://docs.aws.amazon.com/appstream2/latest/developerguide/install-client-configure-settings.html#install-client-use-remote-deployment-tool](https://docs.aws.amazon.com/appstream2/latest/developerguide/install-client-configure-settings.html#install-client-use-remote-deployment-tool). The Enterprise Deployment Tool includes the WorkSpaces Applications client installation files and a Group Policy administrative template.
+ When deploying the WorkSpaces Applications client at scale, AWS recommends using the [*Enterprise Deployment Tool*](https://docs.aws.amazon.com/appstream2/latest/developerguide/install-client-configure-settings.html#install-client-use-remote-deployment-tool). The Enterprise Deployment Tool includes the WorkSpaces Applications client installation files and a Group Policy administrative template.

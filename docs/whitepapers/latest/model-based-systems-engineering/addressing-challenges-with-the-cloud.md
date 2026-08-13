@@ -29,7 +29,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
 
  The final advantage of the cloud is **sustainability**. According to the [Amsterdam-based GRI (Global Reporting Initiative)](https://www.globalreporting.org/about-gri/), the disclosures of Environmental, Social and Governance (ESG) have now become [the mainstream regarding assessment of organizational performance](https://www.sustainability-reports.com/%E2%80%8Bsubstantial-increase-in-sustainability-reporting-regulations-around-the-world/).
 
-As a part of [https://sustainability.aboutamazon.com/environment/the-cloud/asdi](https://sustainability.aboutamazon.com/environment/the-cloud/asdi), at AWS, we are committed to running our business in the most environmentally friendly way possible.
+As a part of [**Amazon Sustainability Data Initiative (ASDI)**](https://sustainability.aboutamazon.com/environment/the-cloud/asdi), at AWS, we are committed to running our business in the most environmentally friendly way possible.
 
  As of 2018, AWS had already received 50% of its energy from renewable resources and AWS is [committed to get 100% of energy from renewable energy by 2025](https://sustainability.aboutamazon.com/environment/the-cloud/asdi). So you can reduce your carbon footprint by moving to cloud and AWS.
 

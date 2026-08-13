@@ -17,8 +17,8 @@ An *activation expiration* is a window of time when you can register on-premises
 
 Every on-premises server and VM you previously registered remains registered as a Systems Manager managed node until you explicitly deregister it. You can deregister a non-EC2 managed node in the following ways:
 + Use the **Managed nodes** tab in Fleet Manager in the Systems Manager console
-+ Use the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/ssm/deregister-managed-instance.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/deregister-managed-instance.html)
-+ Use the API action [https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DeregisterManagedInstance.html](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DeregisterManagedInstance.html).
++ Use the AWS CLI command [deregister-managed-instance](https://docs.aws.amazon.com/cli/latest/reference/ssm/deregister-managed-instance.html)
++ Use the API action [DeregisterManagedInstance](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DeregisterManagedInstance.html).
 
 For more information, see the following topics
 + [Deregister and reregister a managed node (Linux)](hybrid-multicloud-ssm-agent-install-linux.md#systems-manager-install-managed-linux-deregister-reregister)

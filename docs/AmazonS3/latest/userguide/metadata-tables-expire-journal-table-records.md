@@ -97,7 +97,7 @@ To use the following example commands, replace the `{{user input placeholders}}`
 ### Using the REST API
 <a name="metadata-tables-expire-journal-table-records-rest-api"></a>
 
-You can send REST requests to expire journal table records. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_UpdateBucketMetadataJournalTableConfiguration.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UpdateBucketMetadataJournalTableConfiguration.html).
+You can send REST requests to expire journal table records. For more information, see [UpdateBucketMetadataJournalTableConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UpdateBucketMetadataJournalTableConfiguration.html).
 
 ### Using the AWS SDKs
 <a name="metadata-tables-expire-journal-table-records-sdk"></a>

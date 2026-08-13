@@ -64,7 +64,7 @@ The following state machine includes a `Task` state that publishes to an Amazon 
 
 ## Optimized Amazon SQS APIs
 <a name="connect-sqs-api"></a>
-+ [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html)
++ [`SendMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html)
 
 **Parameters in Step Functions are expressed in PascalCase**
 Even if the native service API is in camelCase, for example the API action `startSyncExecution`, you specify parameters in PascalCase, such as: `StateMachineArn`.

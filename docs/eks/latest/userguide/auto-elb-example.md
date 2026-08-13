@@ -236,4 +236,4 @@ This will delete all resources in the namespace, including the deployment, servi
 If the game doesn’t load:
 + Ensure all pods are running: `kubectl get pods -n game-2048`
 + Check ingress status: `kubectl describe ingress -n game-2048`
-+ Verify ALB health checks: Check the target group health in AWS Console
++ Verify ALB health checks: Check the target group health in the AWS Console

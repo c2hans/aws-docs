@@ -30,7 +30,7 @@ If you plan to manage and configure AWS IoT and non-AWS edge devices, those devi
 
 **Important**
 We strongly recommend that you avoid using OS versions that have reached End-of-Life (EOL). OS vendors including AWS typically don't provide security patches or other updates for versions that have reached EOL. Continuing to use an EOL system greatly increases the risk of not being able to apply upgrades, including security fixes, and other operational problems. AWS does not test Systems Manager functionality on OS versions that have reached EOL.
-Patch Manager, a tool in Systems Manager, might not support all the OS versions listed in this topic. For a list of OS versions supported by Patch Manager, see [Patch Manager prerequisites](patch-manager-prerequisites.md).
+Patch Manager might not support all the OS versions listed in this topic. For a list of OS versions supported by Patch Manager, see [Patch Manager prerequisites](patch-manager-prerequisites.md).
 
 **Topics**
 + [Linux](#prereqs-os-linux)
@@ -137,7 +137,7 @@ macOS is not supported in all AWS Regions. For more information about Amazon EC2
 ### Windows Server
 <a name="prereqs-os-windows-server"></a>
 
-SSM Agent requires Windows PowerShell 3.0 or later to run certain AWS Systems Manager documents (SSM documents) on Windows Server instances (for example, the legacy `AWS-ApplyPatchBaseline` document). Verify that your Windows Server instances are running Windows Management Framework 3.0 or later. This framework includes Windows PowerShell. For more information, see [https://www.microsoft.com/en-us/download/details.aspx?id=34595&751be11f-ede8-5a0c-058c-2ee190a24fa6=True](https://www.microsoft.com/en-us/download/details.aspx?id=34595&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
+SSM Agent requires Windows PowerShell 3.0 or later to run certain AWS Systems Manager documents (SSM documents) on Windows Server instances (for example, the legacy `AWS-ApplyPatchBaseline` document). Verify that your Windows Server instances are running Windows Management Framework 3.0 or later. This framework includes Windows PowerShell. For more information, see [Windows Management Framework 3.0](https://www.microsoft.com/en-us/download/details.aspx?id=34595&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
 
 ****
 
@@ -154,7 +154,7 @@ SSM Agent requires Windows PowerShell 3.0 or later to run certain AWS Systems Ma
 ## Supported machine types in hybrid and multicloud environments
 <a name="supported-machine-types"></a>
 
-Systems Manager supports a number of machine types as *managed nodes*. A managed node is any machine configured to work with Systems Manager.
+Systems Manager supports several machine types as *managed nodes*. A managed node is any machine configured to work with Systems Manager.
 
 This user guide uses the term *hybrid and multicloud* to refer to an environment that contains any combination of the following machine types:
 + Amazon Elastic Compute Cloud (Amazon EC2) instances

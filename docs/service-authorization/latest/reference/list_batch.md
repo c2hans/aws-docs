@@ -35,7 +35,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   CreateComputeEnvironment  **
   - **IAM action:**  [batch:CreateComputeEnvironment](#list_batch-action-CreateComputeEnvironment)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [batch:TagResource](#list_batch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
-  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** batch.amazonaws.com, ec2.amazonaws.com, spotfleet.amazonaws.com / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** batch.amazonaws.com, ec2.amazonaws.com, ecs.amazonaws.com, spotfleet.amazonaws.com / **Access level:** Write
 
 - **   CreateConsumableResource  **
   - **IAM action:**  [batch:CreateConsumableResource](#list_batch-action-CreateConsumableResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write

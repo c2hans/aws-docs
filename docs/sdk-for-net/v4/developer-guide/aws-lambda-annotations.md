@@ -6,7 +6,7 @@ Version 4 (V4) of the AWS SDK for .NET has been released\!
 
 For information about breaking changes and migrating your applications, see the [migration topic](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html).
 
- [https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
+ [![Orange button with text "Click here for details".](http://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Using annotations to write AWS Lambda functions
 <a name="aws-lambda-annotations"></a>
@@ -69,7 +69,7 @@ As is shown in the example, Lambda Annotations can remove the need for certain b
 For details about how to use the framework as well as additional information, see the following resources:
 + The [GitHub README](https://github.com/aws/aws-lambda-dotnet/blob/master/Libraries/src/Amazon.Lambda.Annotations/README.md) for documentation on the APIs and attributes of Lambda Annotations.
 + The [blog post](https://aws.amazon.com/blogs/developer/net-lambda-annotations-framework/) for Lambda Annotations.
-+ The [https://www.nuget.org/packages/Amazon.Lambda.Annotations](https://www.nuget.org/packages/Amazon.Lambda.Annotations) NuGet package.
++ The [`Amazon.Lambda.Annotations`](https://www.nuget.org/packages/Amazon.Lambda.Annotations) NuGet package.
 + The [Photo Asset Management project](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/PhotoAssetManager) on GitHub. Specifically, see the [PamApiAnnotations](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/PhotoAssetManager/PamApiAnnotations) folder and references to Lambda Annotations in the project [README](https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/dotnetv3/cross-service/PhotoAssetManager/README.md).
 **Note**
 The preceding example is specific to V3 of the AWS SDK for .NET. If you use the example with V4 of the SDK (the latest version), you might need to make adjustments according to the information in [Migrating to version 4](net-dg-v4.md).

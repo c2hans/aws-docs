@@ -30,8 +30,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 
  **Related documents:**
 
- [https://aws.amazon.com/compliance/shared-responsibility-model/](https://aws.amazon.com/compliance/shared-responsibility-model/)
+ [**Shared Responsibility Model**](https://aws.amazon.com/compliance/shared-responsibility-model/)
 
- [https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/security-foundations.html](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/security-foundations.html)
+ [**AWS Security Foundations**](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/security-foundations.html)
 
- [https://aws.amazon.com/iot/](https://aws.amazon.com/iot/)
+ [**Amazon IoT**](https://aws.amazon.com/iot/)

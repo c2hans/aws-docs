@@ -13,9 +13,9 @@ As you complete the onboarding steps, be sure to follow the guidelines in [Tenet
 
 1. Build your integration architecture to push findings to the correct Regional Security Hub CSPM endpoint. To do this, you define whether you will send findings from your own AWS account or from within your customer's accounts.
 
-1. Have your customers subscribe the product to their account. To do this, they can use the console or the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableImportFindingsForProduct.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableImportFindingsForProduct.html) API operation. See [Managing product integrations](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-integrations-managing.html) in the *AWS Security Hub User Guide*.
+1. Have your customers subscribe the product to their account. To do this, they can use the console or the [`EnableImportFindingsForProduct`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableImportFindingsForProduct.html) API operation. See [Managing product integrations](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-integrations-managing.html) in the *AWS Security Hub User Guide*.
 
-   You can also subscribe the product for them. To do this, you use a cross-account role to access the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableImportFindingsForProduct.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableImportFindingsForProduct.html) API operation on behalf of the customer.
+   You can also subscribe the product for them. To do this, you use a cross-account role to access the [`EnableImportFindingsForProduct`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableImportFindingsForProduct.html) API operation on behalf of the customer.
 
    This step establishes the resource policies that are needed to accept findings from that product for that account.
 

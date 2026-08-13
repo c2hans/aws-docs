@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetFind
 # GetFindingsReportAccountSummary
 <a name="API_GetFindingsReportAccountSummary"></a>
 
- Returns a list of [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_FindingsReportSummary.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_FindingsReportSummary.html) objects that contain analysis results for all profiling groups in your AWS account.
+ Returns a list of [`FindingsReportSummary`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_FindingsReportSummary.html) objects that contain analysis results for all profiling groups in your AWS account.
 
 ## Request Syntax
 <a name="API_GetFindingsReportAccountSummary_RequestSyntax"></a>
@@ -72,7 +72,7 @@ Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[\w-]+`
 
  ** [reportSummaries](#API_GetFindingsReportAccountSummary_ResponseSyntax) **   <a name="profiler-GetFindingsReportAccountSummary-response-reportSummaries"></a>
-The return list of [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_FindingsReportSummary.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_FindingsReportSummary.html) objects taht contain summaries of analysis results for all profiling groups in your AWS account.
+The return list of [`FindingsReportSummary`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_FindingsReportSummary.html) objects taht contain summaries of analysis results for all profiling groups in your AWS account.
 Type: Array of [FindingsReportSummary](API_FindingsReportSummary.md) objects
 
 ## Errors

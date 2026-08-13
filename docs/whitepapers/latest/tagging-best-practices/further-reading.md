@@ -35,5 +35,5 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 +  [Mutable vs immutable update models](https://docs.aws.amazon.com/managedservices/latest/appguide/compute-instance-mutability-aog.html)
 
  **Other**
-+  Bryar, C. and Carr, B. (2021). [https://www.amazon.com/dp/1250267595](https://www.amazon.com/dp/1250267595). London Macmillan.
++  Bryar, C. and Carr, B. (2021). [*Working Backwards: Insights, Stories, and Secrets from Inside Amazon*](https://www.amazon.com/dp/1250267595). London Macmillan.
 +  [AWS CloudFormation Guard](https://github.com/aws-cloudformation/cloudformation-guard) (GitHub)

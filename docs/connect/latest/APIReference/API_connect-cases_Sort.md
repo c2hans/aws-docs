@@ -17,7 +17,7 @@ Length Constraints: Minimum length of 1. Maximum length of 500.
 Required: Yes
 
  ** sortOrder **   <a name="connect-Type-connect-cases_Sort-sortOrder"></a>
-A structured set of sort terms
+Whether results should be sorted in ascending or descending order.
 Type: String
 Valid Values: `Asc | Desc`
 Required: Yes

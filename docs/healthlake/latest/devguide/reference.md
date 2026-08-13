@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference.htm
 The following supporting reference material is available for SMART on FHIR, FHIR, and AWS HealthLake.
 
 **Note**
-All native HealthLake actions and data types are described in a separate reference. For more information, see the [https://docs.aws.amazon.com/healthlake/latest/APIReference/](https://docs.aws.amazon.com/healthlake/latest/APIReference/).
+All native HealthLake actions and data types are described in a separate reference. For more information, see the [*AWS HealthLake API Reference*](https://docs.aws.amazon.com/healthlake/latest/APIReference/).
 
 **Topics**
 + [SMART on FHIR](reference-smart-on-fhir.md)

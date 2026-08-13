@@ -35,7 +35,7 @@ The following list contains AWS services and features that are in scope for the 
 + AWS Glue
 + Amazon Kinesis
 + Amazon OpenSearch Service
-+ Amazon QuickSight
++ Amazon Quick Sight
 + Amazon Redshift
 
 ## Application Integration
@@ -100,7 +100,6 @@ The following list contains AWS services and features that are in scope for the 
 ## Frontend Web and Mobile
 <a name="clf-02-in-scope-frontend-web-mobile"></a>
 + AWS Amplify
-+ AWS AppSync
 
 ## Internet of Things (IoT)
 <a name="clf-02-in-scope-iot"></a>
@@ -109,7 +108,6 @@ The following list contains AWS services and features that are in scope for the 
 ## Machine Learning
 <a name="clf-02-in-scope-machine-learning"></a>
 + Amazon Comprehend
-+ Amazon Kendra
 + Amazon Lex
 + Amazon Polly
 + Amazon Q
@@ -146,7 +144,6 @@ The following list contains AWS services and features that are in scope for the 
 + Migration Evaluator
 + AWS Migration Hub
 + AWS Schema Conversion Tool (AWS SCT)
-+ AWS Snow Family
 
 ## Networking and Content Delivery
 <a name="clf-02-in-scope-networking"></a>
@@ -165,7 +162,6 @@ The following list contains AWS services and features that are in scope for the 
 ## Security, Identity, and Compliance
 <a name="clf-02-in-scope-security"></a>
 + AWS Artifact
-+ AWS Audit Manager
 + AWS Certificate Manager (ACM)
 + AWS CloudHSM
 + Amazon Cognito

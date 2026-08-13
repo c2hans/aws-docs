@@ -81,7 +81,7 @@ Verify that the `sriovNetSupport` attribute is set on the instance or the image.
 #### [ AWS CLI ]
 
 **To check the instance attribute (sriovNetSupport)**
-Use the following [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-attribute.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-attribute.html) command. If the attribute is set, the value is `simple`.
+Use the following [describe-instance-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-attribute.html) command. If the attribute is set, the value is `simple`.
 
 ```
 aws ec2 describe-instance-attribute \
@@ -90,7 +90,7 @@ aws ec2 describe-instance-attribute \
 ```
 
 **To check the image attribute (sriovNetSupport)**
-Use the following [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command. If the attribute is set, the value is `simple`.
+Use the following [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command. If the attribute is set, the value is `simple`.
 
 ```
 aws ec2 describe-images \
@@ -102,7 +102,7 @@ aws ec2 describe-images \
 #### [ PowerShell ]
 
 **To check the instance attribute (sriovNetSupport)**
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceAttribute.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceAttribute.html) cmdlet. If the attribute is set, the value is `simple`.
+Use the [Get-EC2InstanceAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceAttribute.html) cmdlet. If the attribute is set, the value is `simple`.
 
 ```
 Get-EC2InstanceAttribute `
@@ -111,7 +111,7 @@ Get-EC2InstanceAttribute `
 ```
 
 **To check the image attribute (sriovNetSupport)**
-Use the following [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command. If the attribute is set, the value is `simple`.
+Use the following [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command. If the attribute is set, the value is `simple`.
 
 ```
 (Get-EC2Image -ImageId {{ami-0abcdef1234567890}}).SriovNetSupport
@@ -144,11 +144,11 @@ If you launched your instance using an older Amazon Linux AMI and it does not ha
    [ec2-user ~]$ sudo yum update
    ```
 
-1. From your local computer, reboot your instance using the Amazon EC2 console or one of the following commands: [https://docs.aws.amazon.com/cli/latest/reference/ec2/reboot-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/reboot-instances.html) (AWS CLI) or [https://docs.aws.amazon.com/powershell/latest/reference/items/Restart-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Restart-EC2Instance.html) (AWS Tools for Windows PowerShell).
+1. From your local computer, reboot your instance using the Amazon EC2 console or one of the following commands: [reboot-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/reboot-instances.html) (AWS CLI) or [Restart-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Restart-EC2Instance.html) (AWS Tools for Windows PowerShell).
 
 1. <a name="amazon-linux-enhanced-networking-stop-step"></a>Connect to your instance again and verify that the `ixgbevf` module is installed and at the minimum recommended version using the **modinfo ixgbevf** command from [Test whether enhanced networking is enabled](#test-enhanced-networking).
 
-1. [EBS-backed instance] From your local computer, stop the instance using the Amazon EC2 console or one of the following commands: [https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html) (AWS CLI) or [https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2Instance.html) (AWS Tools for Windows PowerShell).
+1. [EBS-backed instance] From your local computer, stop the instance using the Amazon EC2 console or one of the following commands: [stop-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html) (AWS CLI) or [Stop-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2Instance.html) (AWS Tools for Windows PowerShell).
 
    [Instance store-backed instance] You can't stop the instance to modify the attribute. Instead, skip to the next procedure.
 
@@ -157,7 +157,7 @@ If you launched your instance using an older Amazon Linux AMI and it does not ha
 ------
 #### [ AWS CLI ]
 
-   Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) command as follows.
+   Use the [modify-instance-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) command as follows.
 
    ```
    aws ec2 modify-instance-attribute \
@@ -168,7 +168,7 @@ If you launched your instance using an older Amazon Linux AMI and it does not ha
 ------
 #### [ PowerShell ]
 
-   Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html) cmdlet as follows.
+   Use the [Edit-EC2InstanceAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html) cmdlet as follows.
 
    ```
    Edit-EC2InstanceAttribute `
@@ -180,7 +180,7 @@ If you launched your instance using an older Amazon Linux AMI and it does not ha
 
 1. (Optional) Create an AMI from the instance, as described in [Create an Amazon EBS-backed AMI](creating-an-ami-ebs.md). The AMI inherits the enhanced networking attribute from the instance. Therefore, you can use this AMI to launch another instance with enhanced networking enabled by default.
 
-1. From your local computer, start the instance using the Amazon EC2 console or one of the following commands: [https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html) (AWS CLI) or [https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html) (AWS Tools for Windows PowerShell).
+1. From your local computer, start the instance using the Amazon EC2 console or one of the following commands: [start-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html) (AWS CLI) or [Start-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html) (AWS Tools for Windows PowerShell).
 
 1. Connect to your instance and verify that the `ixgbevf` module is installed and loaded on your network interface using the **ethtool -i eth{{n}}** command from [Test whether enhanced networking is enabled](#test-enhanced-networking).
 
@@ -190,7 +190,7 @@ Follow the previous procedure until the step where you stop the instance. Create
 ------
 #### [ AWS CLI ]
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) command as follows.
+Use the [register-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) command as follows.
 
 ```
 aws ec2 register-image --sriov-net-support simple ...
@@ -199,7 +199,7 @@ aws ec2 register-image --sriov-net-support simple ...
 ------
 #### [ PowerShell ]
 
-Use [https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html) as follows.
+Use [Register-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html) as follows.
 
 ```
 Register-EC2Image -SriovNetSupport "simple" ...
@@ -274,7 +274,7 @@ If you compile the `ixgbevf` module for your current kernel and then upgrade you
       [ec2-user ~]$ sudo grub2-mkconfig -o /boot/grub2/grub.cfg
       ```
 
-1. [EBS-backed instance] From your local computer, stop the instance using the Amazon EC2 console or one of the following commands: [stop-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html) (AWS CLI) or [https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2Instance.html) (AWS Tools for Windows PowerShell).
+1. [EBS-backed instance] From your local computer, stop the instance using the Amazon EC2 console or one of the following commands: [stop-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html) (AWS CLI) or [Stop-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2Instance.html) (AWS Tools for Windows PowerShell).
 
    [Instance store-backed instance] You can't stop the instance to modify the attribute. Instead, skip to the next procedure.
 
@@ -283,7 +283,7 @@ If you compile the `ixgbevf` module for your current kernel and then upgrade you
 ------
 #### [ AWS CLI ]
 
-   Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) command as follows.
+   Use the [modify-instance-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) command as follows.
 
    ```
    aws ec2 modify-instance-attribute \
@@ -294,7 +294,7 @@ If you compile the `ixgbevf` module for your current kernel and then upgrade you
 ------
 #### [ PowerShell ]
 
-   Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html) cmdlet as follows.
+   Use the [Edit-EC2InstanceAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html) cmdlet as follows.
 
    ```
    Edit-EC2InstanceAttribute `
@@ -308,7 +308,7 @@ If you compile the `ixgbevf` module for your current kernel and then upgrade you
 
    If your instance operating system contains an `/etc/udev/rules.d/70-persistent-net.rules` file, you must delete it before creating the AMI. This file contains the MAC address for the Ethernet adapter of the original instance. If another instance boots with this file, the operating system will be unable to find the device and `eth0` might fail, causing boot issues. This file is regenerated at the next boot cycle, and any instances launched from the AMI create their own version of the file.
 
-1. From your local computer, start the instance using the Amazon EC2 console or one of the following commands: [https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html) (AWS CLI) or [https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html) (AWS Tools for Windows PowerShell).
+1. From your local computer, start the instance using the Amazon EC2 console or one of the following commands: [start-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html) (AWS CLI) or [Start-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html) (AWS Tools for Windows PowerShell).
 
 1. (Optional) Connect to your instance and verify that the module is installed.
 
@@ -318,7 +318,7 @@ Follow the previous procedure until the step where you stop the instance. Create
 ------
 #### [ AWS CLI ]
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) command as follows.
+Use the [register-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) command as follows.
 
 ```
 aws ec2 register-image --sriov-net-support simple ...
@@ -327,7 +327,7 @@ aws ec2 register-image --sriov-net-support simple ...
 ------
 #### [ PowerShell ]
 
-Use [https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html) as follows.
+Use [Register-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html) as follows.
 
 ```
 Register-EC2Image -SriovNetSupport "simple" ...
@@ -425,7 +425,7 @@ The administrator password will reset when you enable the initialize instance EC
 ------
 #### [ AWS CLI ]
 
-   Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) command as follows.
+   Use the [modify-instance-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) command as follows.
 
    ```
    aws ec2 modify-instance-attribute \
@@ -436,7 +436,7 @@ The administrator password will reset when you enable the initialize instance EC
 ------
 #### [ PowerShell ]
 
-   Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html) cmdlet as follows.
+   Use the [Edit-EC2InstanceAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html) cmdlet as follows.
 
    ```
    Edit-EC2InstanceAttribute `
@@ -448,7 +448,7 @@ The administrator password will reset when you enable the initialize instance EC
 
 1. (Optional) Create an AMI from the instance, as described in [Create an Amazon EBS-backed AMI](creating-an-ami-ebs.md). The AMI inherits the enhanced networking attribute from the instance. Therefore, you can use this AMI to launch another instance with enhanced networking enabled by default.
 
-1. From your local computer, start the instance using the Amazon EC2 console or one of the following commands: [https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html) (AWS CLI) or [https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html) (AWS Tools for Windows PowerShell).
+1. From your local computer, start the instance using the Amazon EC2 console or one of the following commands: [start-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html) (AWS CLI) or [Start-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html) (AWS Tools for Windows PowerShell).
 
 ## Troubleshoot connectivity issues
 <a name="enhanced-networking-troubleshooting"></a>

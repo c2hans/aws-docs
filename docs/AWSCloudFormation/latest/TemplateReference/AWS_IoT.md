@@ -20,6 +20,8 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::IoT::DomainConfiguration](aws-resource-iot-domainconfiguration.md)
 + [AWS::IoT::EncryptionConfiguration](aws-resource-iot-encryptionconfiguration.md)
 + [AWS::IoT::FleetMetric](aws-resource-iot-fleetmetric.md)
++ [AWS::IoT::Index](aws-resource-iot-index.md)
++ [AWS::IoT::Job](aws-resource-iot-job.md)
 + [AWS::IoT::JobTemplate](aws-resource-iot-jobtemplate.md)
 + [AWS::IoT::Logging](aws-resource-iot-logging.md)
 + [AWS::IoT::MitigationAction](aws-resource-iot-mitigationaction.md)

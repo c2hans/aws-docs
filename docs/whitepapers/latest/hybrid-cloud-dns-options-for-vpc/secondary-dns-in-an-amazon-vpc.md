@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-opti
 
  This approach uses Route 53 private hosted zones with AWS Lambda and [Amazon CloudWatch Events](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html) to mirror on-premises DNS zones. This can then be natively resolved from within a VPC without conditional forwarding, and without a real-time dependency on on-premises DNS servers.
 
- For the full solution, refer to [https://aws.amazon.com/blogs/compute/powering-secondary-dns-in-a-vpc-using-aws-lambda-and-amazon-route-53-private-hosted-zones/](https://aws.amazon.com/blogs/compute/powering-secondary-dns-in-a-vpc-using-aws-lambda-and-amazon-route-53-private-hosted-zones/) on the AWS Compute blog.
+ For the full solution, refer to [*Powering Secondary DNS in a VPC using AWS Lambda and Amazon Route 53 Private Hosted Zones*](https://aws.amazon.com/blogs/compute/powering-secondary-dns-in-a-vpc-using-aws-lambda-and-amazon-route-53-private-hosted-zones/) on the AWS Compute blog.
 
  The following table outlines this solution:
 

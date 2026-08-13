@@ -171,4 +171,4 @@ If a node is assigned multiple inventory associations and each uses a tag key-va
 ## S3 bucket object contains old data
 <a name="systems-manager-inventory-troubleshooting-s3"></a>
 
-Data inside the Amazon S3 bucket object is updated when the inventory association is successful and new data is discovered. The Amazon S3 bucket object is updated for each node when the association runs and fails, but the data inside the object is not updated in this case. Data inside the Amazon S3 bucket object will update only when the association runs successfully. When the inventory association fails, you will see old data in the Amazon S3 bucket object.
+Data inside the Amazon S3 bucket object is updated when the inventory association is successful and new data is discovered. The Amazon S3 bucket object is updated for each node when the association runs and fails, but the data inside the object is not updated in this case. Data inside the Amazon S3 bucket object will update only when the association runs successfully. When the inventory association fails, you see old data in the Amazon S3 bucket object.

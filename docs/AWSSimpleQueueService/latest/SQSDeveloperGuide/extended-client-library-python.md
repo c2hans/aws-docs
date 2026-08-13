@@ -18,7 +18,7 @@ With the Amazon SQS Extended Client Library for Python, you can:
 
  The following are the prerequisites for using the Amazon SQS Extended Client Library for Python:
 + An AWS account with the necessary credentials. To create an AWS account, navigate to the [AWS home page](https://aws.amazon.com/) , and then choose **Create an AWS Account** . Follow the instructions. For information about credentials, see [Credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html).
-+ An AWS SDK: The example on this page uses AWS Python SDK Boto3. To install and set up the SDK, see the [https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html) documentation in the *AWS SDK for Python Developer Guide*
++ An AWS SDK: The example on this page uses AWS Python SDK Boto3. To install and set up the SDK, see the [*AWS SDK for Python*](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html) documentation in the *AWS SDK for Python Developer Guide*
 + Python 3.x (or later) and `pip`.
 +  The Amazon SQS Extended Client Library for Python, available from [PyPI](https://pypi.org/project/amazon-sqs-extended-client/)
 

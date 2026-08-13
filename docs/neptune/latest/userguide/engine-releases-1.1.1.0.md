@@ -46,7 +46,7 @@ Starting with this engine release, the protocol must be omitted:
   "Host":"{{(host URL)}}:{{(port)}}"
   ```
 See [Using the Bolt protocol](access-graph-opencypher-bolt.md) for examples.
-+ Added support for TinkerPop `3.5.2`. Among the [changes in this release](https://github.com/apache/tinkerpop/blob/3.5.2/CHANGELOG.asciidoc#release-3-5-2) are support for remote transactions and bytecode support for sessions (using [https://tinkerpop.apache.org/docs/current/reference/#transactions](https://tinkerpop.apache.org/docs/current/reference/#transactions)), and the addition of the `datetime()` function to the Gremlin language.
++ Added support for TinkerPop `3.5.2`. Among the [changes in this release](https://github.com/apache/tinkerpop/blob/3.5.2/CHANGELOG.asciidoc#release-3-5-2) are support for remote transactions and bytecode support for sessions (using [`g.tx`](https://tinkerpop.apache.org/docs/current/reference/#transactions)), and the addition of the `datetime()` function to the Gremlin language.
 **Warning**
 There are several breaking changes introduced in TinkerPop 3.5.0, 3.5.1, and 3.5.2 which may affect your Gremlin code. For example, [using traversals spawned by a GraphTraversalSource as children](https://issues.apache.org/jira/browse/TINKERPOP-2361) like this will no longer work: `g.V().union(identity(), g.V())`.
 Now instead, use an anonymous traversal like this: `g.V().union(identity(), __.V())`.

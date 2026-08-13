@@ -23,7 +23,7 @@ You need two IAM roles for the CloudWatch agent task definition. If you specify 
   + `ecs:DescribeServices`
   + `ecs:DescribeTasks`
   + `ecs:DescribeTaskDefinition`
-+ **CloudWatch agent ECS task execution role**— This is the role that Amazon ECS requires to launch and execute your containers. Ensure that your task execution role has the **AmazonSSMReadOnlyAccess**, **AmazonECSTaskExecutionRolePolicy**, and **CloudWatchAgentServerPolicy** policies attached. If you want to store more sensitive data for Amazon ECS to use, see [ Specifying sensitive data](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data.html).
++ **CloudWatch agent ECS task execution role**— This is the role that Amazon ECS requires to launch and execute your containers. Make sure that your task execution role has the **AmazonSSMReadOnlyAccess**, **AmazonECSTaskExecutionRolePolicy**, and **CloudWatchAgentServerPolicy** policies attached. If you want to store more sensitive data for Amazon ECS to use, see [ Specifying sensitive data](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data.html).
 
 ## Install the CloudWatch agent with Prometheus monitoring by using CloudFormation
 <a name="ContainerInsights-Prometheus-Setup-ECS-CFN"></a>

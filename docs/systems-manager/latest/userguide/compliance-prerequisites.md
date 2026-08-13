@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/complia
 # Getting started with Compliance
 <a name="compliance-prerequisites"></a>
 
-To get started with Compliance, a tool in AWS Systems Manager, complete the following tasks.
+To get started with Compliance, complete the following tasks.
 
 ****
 

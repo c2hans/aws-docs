@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 <a name="mes-partner-DatadogApplicationKey"></a>
 
 ## Secret Value Fields
-<a name="w2aac25c11c21b3"></a>
+<a name="w2aac27c11c21b3"></a>
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
@@ -28,7 +28,7 @@ serviceAccountId
 The Datadog Service Account ID (UUID) that owns this Application key. Only service account-owned Application keys can be rotated.
 
 ## Secret Metadata Fields
-<a name="w2aac25c11c21b5"></a>
+<a name="w2aac27c11c21b5"></a>
 
 The following are the metadata fields for Datadog Application Key:
 
@@ -42,7 +42,7 @@ adminSecretArn
 The Amazon Resource Name (ARN) for a secret of type DatadogAdminKey that contains the administrative Datadog credentials (API key and Application key) used to rotate this secret. The admin secret must belong to the same service account as this Application key.
 
 ## Usage Flow
-<a name="w2aac25c11c21b7"></a>
+<a name="w2aac27c11c21b7"></a>
 
 This rotation uses a two-secret architecture. An admin secret of type DatadogAdminKey provides authentication credentials. The admin secret's `serviceAccountId` must match the user secret's `serviceAccountId` to prevent privilege escalation.
 

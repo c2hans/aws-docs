@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/change-
 **Change Manager availability change**
 AWS Systems Manager Change Manager will no longer be open to new customers starting November 7, 2025. If you would like to use Change Manager, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [AWS Systems Manager Change Manager availability change](https://docs.aws.amazon.com/systems-manager/latest/userguide/change-manager-availability-change.html).
 
-This topic describes how to delete templates that you have created in Change Manager, a tool in Systems Manager. If you are using Change Manager for an organization, this procedure is performed in your delegated administrator account.
+This topic describes how to delete templates that you have created in Change Manager. If you are using Change Manager for an organization, this procedure is performed in your delegated administrator account.
 
 1. Open the AWS Systems Manager console at [https://console.aws.amazon.com/systems-manager/](https://console.aws.amazon.com/systems-manager/).
 

@@ -66,7 +66,7 @@ Use the following steps to install the Kubernetes operator for Apache Spark.
    updated: 2023-03-14 18:20:02.721638196 +0000 UTC
    ```
 
-1. Complete installation with any additional options that you require. For more informtation, see the [https://github.com/GoogleCloudPlatform/spark-on-k8s-operator/blob/master/charts/spark-operator-chart/README.md](https://github.com/GoogleCloudPlatform/spark-on-k8s-operator/blob/master/charts/spark-operator-chart/README.md) documentation on GitHub.
+1. Complete installation with any additional options that you require. For more informtation, see the [`spark-on-k8s-operator`](https://github.com/GoogleCloudPlatform/spark-on-k8s-operator/blob/master/charts/spark-operator-chart/README.md) documentation on GitHub.
 
 ## Run a Spark application
 <a name="spark-operator-run"></a>

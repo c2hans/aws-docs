@@ -29,7 +29,7 @@ The procedures in this topic configures an additional public and private subnet 
 
 To create a cluster that uses dual-stack mode, specify **Dual-stack mod**e for the **Network type** setting. You can also modify a cluster with the same setting. For more information about creating a cluster, see [Creating an Amazon DocumentDB cluster](db-cluster-create.md). For more information about modifying a DB cluster, see [Modifying an Amazon DocumentDB cluster](db-cluster-modify.md).
 
-This topic describes configuring a VPC for Amazon DocumentDB clusters. For more information about Amazon VPC, see the [https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html).
+This topic describes configuring a VPC for Amazon DocumentDB clusters. For more information about Amazon VPC, see the [*Amazon VPC User Guide*](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html).
 
 ## Step 1: Create a VPC with private and public subnets
 <a name="ds-vpc-private-public-subnets"></a>

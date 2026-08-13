@@ -49,7 +49,7 @@ To complete this getting started tutorial, you first need the following:
 <a name="getting-started-tutorial-edge-setup"></a>
 
 **Note**
-The CloudFormation stack in this step uses telemetry data. You can also create a CloudFormation stack using vision system data. For more information, see the [https://github.com/aws/aws-iot-fleetwise-edge/blob/main/docs/dev-guide/vision-system-data/vision-system-data-demo.ipynb](https://github.com/aws/aws-iot-fleetwise-edge/blob/main/docs/dev-guide/vision-system-data/vision-system-data-demo.ipynb).
+The CloudFormation stack in this step uses telemetry data. You can also create a CloudFormation stack using vision system data. For more information, see the [*Vision System Data Developer Guide*](https://github.com/aws/aws-iot-fleetwise-edge/blob/main/docs/dev-guide/vision-system-data/vision-system-data-demo.ipynb).
 Vision system data is in preview release and is subject to change.
 
 Your Edge Agent software for AWS IoT FleetWise facilitates communication between vehicles and the cloud. It receives instructions from data collection schemes on how to collect data from cloud-connected vehicles.

@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the AWS WAF service and resources.
 
 **Resource type:** `AWS::WAF::WebACL`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/waf-classic-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/waf-classic-logging-enabled.html)
+**AWS Config rule:** [`waf-classic-logging-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/waf-classic-logging-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -44,7 +44,7 @@ To enable logging for an AWS WAF web ACL, see [ Logging web ACL traffic informat
 
 **Resource type:** `AWS::WAFRegional::Rule`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/waf-regional-rule-not-empty.html](https://docs.aws.amazon.com/config/latest/developerguide/waf-regional-rule-not-empty.html)
+**AWS Config rule:** [`waf-regional-rule-not-empty`](https://docs.aws.amazon.com/config/latest/developerguide/waf-regional-rule-not-empty.html)
 
 **Schedule type:** Change triggered
 
@@ -70,7 +70,7 @@ To add a condition to an empty rule, see [Adding and removing conditions in a ru
 
 **Resource type:** `AWS::WAFRegional::RuleGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/waf-regional-rulegroup-not-empty.html](https://docs.aws.amazon.com/config/latest/developerguide/waf-regional-rulegroup-not-empty.html)
+**AWS Config rule:** [`waf-regional-rulegroup-not-empty`](https://docs.aws.amazon.com/config/latest/developerguide/waf-regional-rulegroup-not-empty.html)
 
 **Schedule type:** Change triggered
 
@@ -96,7 +96,7 @@ To add rules and rule conditions to an empty rule group, see [Adding and deletin
 
 **Resource type:** `AWS::WAFRegional::WebACL`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/waf-regional-webacl-not-empty](https://docs.aws.amazon.com/config/latest/developerguide/waf-regional-webacl-not-empty)
+**AWS Config rule:** [`waf-regional-webacl-not-empty`](https://docs.aws.amazon.com/config/latest/developerguide/waf-regional-webacl-not-empty)
 
 **Schedule type:** Change triggered
 
@@ -122,7 +122,7 @@ To add rules or rule groups to an empty AWS WAF Classic Regional web ACL, see [E
 
 **Resource type:** `AWS::WAF::Rule`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/waf-global-rule-not-empty.html](https://docs.aws.amazon.com/config/latest/developerguide/waf-global-rule-not-empty.html)
+**AWS Config rule:** [`waf-global-rule-not-empty`](https://docs.aws.amazon.com/config/latest/developerguide/waf-global-rule-not-empty.html)
 
 **Schedule type:** Change triggered
 
@@ -148,7 +148,7 @@ For instructions on creating a rule and adding conditions, see [Creating a rule 
 
 **Resource type:** `AWS::WAF::RuleGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/waf-global-rulegroup-not-empty.html](https://docs.aws.amazon.com/config/latest/developerguide/waf-global-rulegroup-not-empty.html)
+**AWS Config rule:** [`waf-global-rulegroup-not-empty`](https://docs.aws.amazon.com/config/latest/developerguide/waf-global-rulegroup-not-empty.html)
 
 **Schedule type:** Change triggered
 
@@ -174,7 +174,7 @@ For instructions on adding a rule to a rule group, see [Creating an AWS WAF Clas
 
 **Resource type:** `AWS::WAF::WebACL`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/waf-global-webacl-not-empty](https://docs.aws.amazon.com/config/latest/developerguide/waf-global-webacl-not-empty)
+**AWS Config rule:** [`waf-global-webacl-not-empty`](https://docs.aws.amazon.com/config/latest/developerguide/waf-global-webacl-not-empty)
 
 **Schedule type:** Change triggered
 
@@ -200,7 +200,7 @@ To add rules or rule groups to an empty AWS WAF global web ACL, see [Editing a w
 
 **Resource type:** `AWS::WAFv2::WebACL`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/wafv2-webacl-not-empty.html](https://docs.aws.amazon.com/config/latest/developerguide/wafv2-webacl-not-empty.html)
+**AWS Config rule:** [`wafv2-webacl-not-empty`](https://docs.aws.amazon.com/config/latest/developerguide/wafv2-webacl-not-empty.html)
 
 **Schedule type:** Change triggered
 
@@ -226,7 +226,7 @@ To add rules or rule groups to an empty WAFV2 web ACL, see [Editing a Web ACL](h
 
 **Resource type:** `AWS::WAFv2::WebACL`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/wafv2-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/wafv2-logging-enabled.html) ``
+**AWS Config rule:** [`wafv2-logging-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/wafv2-logging-enabled.html) ``
 
 **Schedule type:** Periodic
 
@@ -255,7 +255,7 @@ To activate logging for an AWS WAF web ACL, see [Managing logging for a web ACL]
 
 **Resource type:** `AWS::WAFv2::RuleGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/wafv2-rulegroup-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/wafv2-rulegroup-logging-enabled.html) ``
+**AWS Config rule:** [`wafv2-rulegroup-logging-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/wafv2-rulegroup-logging-enabled.html) ``
 
 **Schedule type:** Change triggered
 

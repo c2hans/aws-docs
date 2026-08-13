@@ -16,7 +16,7 @@ The following table describes the important changes to the documentation since t
 | [Secrets Manager change to AWS managed policy](#document-history) | The `SecretsManagerReadWrite` managed policy now includes `redshift-serverless` permission. For more information, see [AWS managed policy for AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/reference_available-policies.html)  | March 12, 2024 |
 
 ## Earlier updates
-<a name="w2aac53b7"></a>
+<a name="w2aac55b7"></a>
 
 The following table describes important changes in each release of the AWS Secrets Manager User Guide before February 2024.
 

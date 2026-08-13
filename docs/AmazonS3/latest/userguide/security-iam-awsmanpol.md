@@ -18,21 +18,21 @@ For more information, see [AWS managed policies](https://docs.aws.amazon.com/IAM
 
 You can attach the `AmazonS3FullAccess` policy to your IAM identities. This policy grants permissions that allow full access to Amazon S3.
 
-To view the permissions for this policy, see [https://console.aws.amazon.com/iam/home?#/policies/arn:aws:iam::aws:policy/AmazonS3FullAccess$jsonEditor](https://console.aws.amazon.com/iam/home?#/policies/arn:aws:iam::aws:policy/AmazonS3FullAccess$jsonEditor) in the AWS Management Console.
+To view the permissions for this policy, see [AmazonS3FullAccess](https://console.aws.amazon.com/iam/home?#/policies/arn:aws:iam::aws:policy/AmazonS3FullAccess$jsonEditor) in the AWS Management Console.
 
 ## AWS managed policy: AmazonS3ReadOnlyAccess
 <a name="security-iam-awsmanpol-amazons3readonlyaccess"></a>
 
 You can attach the `AmazonS3ReadOnlyAccess` policy to your IAM identities. This policy grants permissions that allow read-only access to Amazon S3.
 
-To view the permissions for this policy, see [https://console.aws.amazon.com/iam/home?#/policies/arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess$jsonEditor](https://console.aws.amazon.com/iam/home?#/policies/arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess$jsonEditor) in the AWS Management Console.
+To view the permissions for this policy, see [AmazonS3ReadOnlyAccess](https://console.aws.amazon.com/iam/home?#/policies/arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess$jsonEditor) in the AWS Management Console.
 
 ## AWS managed policy: AmazonS3ObjectLambdaExecutionRolePolicy
 <a name="security-iam-awsmanpol-amazons3objectlambdaexecutionrolepolicy"></a>
 
 Provides AWS Lambda functions the required permissions to send data to S3 Object Lambda when requests are made to an S3 Object Lambda access point. Also grants Lambda permissions to write to Amazon CloudWatch logs.
 
-To view the permissions for this policy, see [https://console.aws.amazon.com/iam/home?#/policies/arn:aws:iam::aws:policy/service-role/AmazonS3ObjectLambdaExecutionRolePolicy$jsonEditor](https://console.aws.amazon.com/iam/home?#/policies/arn:aws:iam::aws:policy/service-role/AmazonS3ObjectLambdaExecutionRolePolicy$jsonEditor) in the AWS Management Console.
+To view the permissions for this policy, see [AmazonS3ObjectLambdaExecutionRolePolicy](https://console.aws.amazon.com/iam/home?#/policies/arn:aws:iam::aws:policy/service-role/AmazonS3ObjectLambdaExecutionRolePolicy$jsonEditor) in the AWS Management Console.
 
 ## AWS managed policy: S3UnlockBucketPolicy
 <a name="security-iam-awsmanpol-S3UnlockBucketPolicy"></a>

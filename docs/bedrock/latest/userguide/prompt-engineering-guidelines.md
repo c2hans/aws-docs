@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-engineer
  *Prompt engineering* refers to the practice of optimizing textual input to a Large Language Model (LLM) to obtain desired responses. Prompting helps a LLM perform a wide variety of tasks, including classification, question answering, code generation, creative writing, and more. The quality of prompts that you provide to a LLM can impact the quality of the model's responses. This section provides you the necessary information to get started with prompt engineering. It also covers tools to help you find the best possible prompt format for your use case when using a LLM on Amazon Bedrock.
 
 **Note**
-All examples in this doc are obtained via API calls. The response may vary due to the stochastic nature of the LLM generation process. If not otherwise specified, the prompts are written by employees of AWS.
+All examples in this doc are obtained through API calls. The response may vary due to the stochastic nature of the LLM generation process. If not otherwise specified, the prompts are written by employees of AWS.
 
 **Note**
 To reduce hallucinations, you can refine your prompt using prompt optimization techniques; use techniques like Retrieval Augmented Generation (RAG) to provide the model access to more relevant data; or use a different model that might produce improved results.
@@ -244,6 +244,6 @@ and estuaries where they have access to shallow, nearshore waters.
 
 (Source of prompt: AWS, model used: Anthropic Claude)
 
-Notice how the main content of the prompt is wrapped like this: `\n\nHuman: {{Main Content}}\n\nAssistant:`. For Anthropic Claude models, prompts sent via the API must contain \\n\\nHuman: and ` \n\nAssistant:`.
+Notice how the main content of the prompt is wrapped like this: `\n\nHuman: {{Main Content}}\n\nAssistant:`. For Anthropic Claude models, prompts sent through the API must contain \\n\\nHuman: and ` \n\nAssistant:`.
 
 To use conversational mode on Titan, you can use the format of `User: {{}} \n Bot: ` when prompting the model.

@@ -25,7 +25,7 @@ Also, if you are creating a human-based model evaluation job, the Amazon S3 outp
 
 **To create a automatic model evaluation job**
 
-1. Open the Amazon Bedrock console: [https://console.aws.amazon.com/bedrock/home](https://console.aws.amazon.com/bedrock/home)
+1. Open the Amazon Bedrock console: [[https://console.aws.amazon.com/bedrock/](https://console.aws.amazon.com/bedrock/)](https://console.aws.amazon.com/bedrock/home)
 
 1. In the navigation pane, choose **Model evaluation**.
 

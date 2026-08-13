@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Notifications::EventRule
 <a name="aws-resource-notifications-eventrule"></a>
 
-Creates an [https://docs.aws.amazon.com/notifications/latest/userguide/glossary.html](https://docs.aws.amazon.com/notifications/latest/userguide/glossary.html) that is associated with a specified `NotificationConfiguration`.
+Creates an [`EventRule`](https://docs.aws.amazon.com/notifications/latest/userguide/glossary.html) that is associated with a specified `NotificationConfiguration`.
 
 ## Syntax
 <a name="aws-resource-notifications-eventrule-syntax"></a>

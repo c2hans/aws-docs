@@ -97,7 +97,7 @@ POST /guardrail/{{{guardrailIdentifier}}}/version/{{{guardrailVersion}}}/apply H
             },
             "sensitiveInformationPolicy": {
                 "piiEntities": [{
-                    // for all types see: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GuardrailPiiEntityConfig.html#bedrock-Type-GuardrailPiiEntityConfig-type
+                    // for all types see: bedrock/latest/APIReference/API_GuardrailPiiEntityConfig.html#bedrock-Type-GuardrailPiiEntityConfig-type
                     "type": "ADDRESS" | "AGE" | ...,
                     "match": "string",
                     "action": "BLOCKED" | "ANONYMIZED"

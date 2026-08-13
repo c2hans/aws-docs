@@ -37,7 +37,7 @@ Be aware that access to CloudWatch requires credentials. Those credentials must 
 1. When you're ready, choose **Submit** to create or update the stack.
 
 **To add rollback triggers during stack creation or update (AWS CLI)**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) or [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack.html) command with the `--rollback-configuration` option.
+Use the [create-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) or [update-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack.html) command with the `--rollback-configuration` option.
 
 For example, the following **update-stack** command sets {{MyCompositeAlarm}} as a rollback trigger with a 5-minute monitoring period:
 
@@ -66,7 +66,7 @@ To add rollback triggers to a change set (console)
 1. When you're ready, choose **Create change set** to create the change set.
 
 **To add rollback triggers to a change set (AWS CLI)**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-change-set.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-change-set.html) command with the `--rollback-configuration` option.
+Use the [create-change-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-change-set.html) command with the `--rollback-configuration` option.
 
 ## View rollback triggers for a stack
 <a name="using-cfn-rollback-triggers-view"></a>

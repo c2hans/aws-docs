@@ -14,7 +14,7 @@ You can include dependencies either as vendored `node_modules/` in your ZIP or a
 
 Before you begin, ensure you have:
 +  ** AWS Account** with credentials configured. To configure your AWS credentials, see [Configuration and credential file settings in the AWS CLI.](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)
-+  [https://nodejs.org/](https://nodejs.org/) and **npm** installed. We recommend installing the same major version you plan to deploy on AgentCore Runtime (for example, Node.js 22 for the `NODE_22` runtime). For supported versions, see [Supported language runtimes](runtime-code-deploy-supported-runtimes.md).
++  [**Node.js**](https://nodejs.org/) and **npm** installed. We recommend installing the same major version you plan to deploy on AgentCore Runtime (for example, Node.js 22 for the `NODE_22` runtime). For supported versions, see [Supported language runtimes](runtime-code-deploy-supported-runtimes.md).
 +  ** AWS Permissions** : To create and deploy an agent, you must have appropriate permissions. For more information, see [AgentCore Runtime permissions](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-permissions.html).
 +  **Model access** : Anthropic Claude Sonnet 4.0 [enabled](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access-modify.html) in the Amazon Bedrock console. For information about using a different model with the Strands Agents see the *Model Providers* section in the [Strands Agents SDK](https://strandsagents.com/latest/documentation/docs/) documentation.
 

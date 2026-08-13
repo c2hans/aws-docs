@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 
 A Java SDK client for the Amazon EC2 Instance Metadata Service (metadata client) allows your applications to access metadata on their local EC2 instance. The metadata client works with the local instance of [IMDSv2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service.html) (Instance Metadata Service v2) and uses session-oriented requests.
 
-Two client classes are available in the SDK. The synchronous `[Ec2MetadataClient](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/imds/Ec2MetadataClient.html)` is for blocking operations, and the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/imds/Ec2MetadataAsyncClient.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/imds/Ec2MetadataAsyncClient.html) is for asynchronous, non-blocking use cases.
+Two client classes are available in the SDK. The synchronous `[Ec2MetadataClient](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/imds/Ec2MetadataClient.html)` is for blocking operations, and the [`Ec2MetadataAsyncClient`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/imds/Ec2MetadataAsyncClient.html) is for asynchronous, non-blocking use cases.
 
 ## Get started
 <a name="examples-ec2-IMDS-getstarted"></a>

@@ -8,8 +8,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
  With WorkSpaces Applications, authentication can either take place outside of Amazon WorkSpaces Applications, or as part of the WorkSpaces Applications service. Selecting how authentication will take place for your WorkSpaces Applications deployment is a fundamental consideration of your design. It’s not uncommon for an organization to have multiple deployments of WorkSpaces Applications for different use-cases. Each use-case can have a different authentication method.
 
  There are three types of authentication methods for WorkSpaces Applications:
-+  [https://en.wikipedia.org/wiki/SAML_2.0](https://en.wikipedia.org/wiki/SAML_2.0)
-+  [https://docs.aws.amazon.com/cognito/latest/developerguide/authentication.html](https://docs.aws.amazon.com/cognito/latest/developerguide/authentication.html)
++  [*SAML 2.0*](https://en.wikipedia.org/wiki/SAML_2.0)
++  [*User Pool*](https://docs.aws.amazon.com/cognito/latest/developerguide/authentication.html)
 +  Programmatic
 
 ## Determining optimized method
@@ -33,9 +33,9 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 |  Technology showcase  |  Completely ephemeral environment that showcases a proprietary technology as part of a guided tour of your solution with no requirement to store user information.  |  Programmatic  |
 |  Interactive website experience  |  Make your website interactive with streaming Windows applications.\*\*  |  Programmatic  |
 
- \*Refer to [https://aws.amazon.com/appstream2/getting-started/isv-workshops/](https://aws.amazon.com/appstream2/getting-started/isv-workshops/) for more information.
+ \*Refer to [*Software vendors: Deliver your applications to any user device*](https://aws.amazon.com/appstream2/getting-started/isv-workshops/) for more information.
 
- \*\*Refer to [https://docs.aws.amazon.com/appstream2/latest/developerguide/embed-streaming-sessions.html](https://docs.aws.amazon.com/appstream2/latest/developerguide/embed-streaming-sessions.html) for more information.
+ \*\*Refer to [*Embed WorkSpaces Applications Streaming Sessions*](https://docs.aws.amazon.com/appstream2/latest/developerguide/embed-streaming-sessions.html) for more information.
 
  If your organization has a use-case or policy that is not listed in the examples previously given, it is a best practice to forecast the desired end state of WorkSpaces Applications workflow consumption to ensure the authentication solution does not conflict with it.
 
@@ -45,7 +45,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ### SAML 2.0
 <a name="saml-2.0"></a>
 
- Security Assertion Markup Language (SAML) 2.0 is a common deployment option for [https://aws.amazon.com/identity/saml/](https://aws.amazon.com/identity/saml/). Various [https://docs.aws.amazon.com/appstream2/latest/developerguide/external-identity-providers-further-info.html](https://docs.aws.amazon.com/appstream2/latest/developerguide/external-identity-providers-further-info.html) support WorkSpaces Applications . Whether your WorkSpaces Applications resources are domain joined or not, SAML 2.0 IdP requires you to use [ IAM](https://aws.amazon.com/iam/).
+ Security Assertion Markup Language (SAML) 2.0 is a common deployment option for [*enabling users to use AWS resources*](https://aws.amazon.com/identity/saml/). Various [*third-party SAML 2.0 identity providers*](https://docs.aws.amazon.com/appstream2/latest/developerguide/external-identity-providers-further-info.html) support WorkSpaces Applications . Whether your WorkSpaces Applications resources are domain joined or not, SAML 2.0 IdP requires you to use [ IAM](https://aws.amazon.com/iam/).
 
 As most IdPs generate a unique metadata.xml with specific SAML attributes for each SAML application, every WorkSpaces Applications stack requires a Role that has a trusted relationship with the SAML IdP and a Policy that has a single permission to appstream:Stream with conditions that match the requirements of the SAML IdP and the ARN of the WorkSpaces Applications Stack.
 
@@ -61,7 +61,7 @@ The WorkSpaces Applications administration guide provides an example configurati
 ### Streaming url
 <a name="streaming-url"></a>
 
- For deployments that call WorkSpaces Applications resources from a centralized service (typically ISVs), programmatic authentication relies on an application to make programmatic calls to AWS to dynamically pass information and create a WorkSpaces Applications session for its users. Use the API authentication method (commonly referred to as ‘programmatic’) when creating streaming URLs using the [https://docs.aws.amazon.com/appstream2/latest/APIReference/API_CreateStreamingURL.html](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_CreateStreamingURL.html) operation. The user who makes the `CreateStreamingURL` call must be using a valid user or role with permission for `appstream:CreateStreamingURL`.
+ For deployments that call WorkSpaces Applications resources from a centralized service (typically ISVs), programmatic authentication relies on an application to make programmatic calls to AWS to dynamically pass information and create a WorkSpaces Applications session for its users. Use the API authentication method (commonly referred to as ‘programmatic’) when creating streaming URLs using the [*CreateStreamingURL*](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_CreateStreamingURL.html) operation. The user who makes the `CreateStreamingURL` call must be using a valid user or role with permission for `appstream:CreateStreamingURL`.
 
  When creating the policy for programmatic access, it is a best practice to secure access by specifying the exact WorkSpaces Applications Stack ARN in the **Resources** section in place of the default ‘\*’. For example:
 
@@ -86,7 +86,7 @@ The WorkSpaces Applications administration guide provides an example configurati
 **Note**
 You can quickly retrieve the ARNs of your WorkSpaces Applications Stacks by using the describe stacks [API](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_DescribeStacks.html) or [AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appstream/describe-stacks.html).
 
- WorkSpaces Applications instances should start as generic instances. Through information passed to it from the application, the WorkSpaces Applications instance establishes the environment using [https://docs.aws.amazon.com/appstream2/latest/developerguide/managing-stacks-fleets.html#managing-stacks-fleets-parameters](https://docs.aws.amazon.com/appstream2/latest/developerguide/managing-stacks-fleets.html#managing-stacks-fleets-parameters) to make things dynamic for the user.
+ WorkSpaces Applications instances should start as generic instances. Through information passed to it from the application, the WorkSpaces Applications instance establishes the environment using [*session context*](https://docs.aws.amazon.com/appstream2/latest/developerguide/managing-stacks-fleets.html#managing-stacks-fleets-parameters) to make things dynamic for the user.
 
  While local GPOs can be used to specify settings at user logon, session context is a best practice when using `CreateStreamingURL`, and passing key attributes such as Customer ID or database connection settings, to be used in the WorkSpaces Applications session.
 

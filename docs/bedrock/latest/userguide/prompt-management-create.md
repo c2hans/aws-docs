@@ -32,7 +32,7 @@ If the model that you choose for the prompt supports the [Converse](https://docs
 + A system prompt to provide instructions or context to the model.
 + Previous prompts (user messages) and model responses (assistant messages) as conversational history for the model to consider when generating a response for the final user message.
 + (If supported by the model) [Tools](tool-use.md) for the model to use when generating the response.
-+ (If supported by the model) Use [Prompt caching](prompt-caching.md) to reduce costs by caching large or frequently used prompts. Depending on the model, you can cache system instructions, tools, and messages (user and assistant). Prompt caching creates a cache checkpoint for the prompt if your total prompt prefix meets the minimum number of tokens that the model requires. When a changed variable is encountered in a prompt, prompt caching creates a new cache checkpoint (if the number of input tokens reaches the minimum that the model requires).
++ (If supported by the model) Use [Prompt caching](prompt-caching.md) to reduce costs by caching large or frequently used prompts. Depending on the model, you can cache system instructions, tools, and messages (user and assistant). Prompt caching creates a cache checkpoint for the prompt if your total prompt prefix meets the minimum number of tokens that the model requires. When a variable changes in a prompt, prompt caching creates a new cache checkpoint if the input token count reaches the minimum that the model requires.
 
 To learn how to create a prompt using Prompt management, choose the tab for your preferred method, and then follow the steps:
 
@@ -159,7 +159,7 @@ Fill in the fields as follows:
     }
     ```
 **Note**
-If you include the `genAiResource` field, you can only test the prompt in the console. To test a prompt with an agent in the API, you must enter the text of the prompt directly into the `inputText` field of the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request.
+If you include the `genAiResource` field, you can only test the prompt in the console. To test a prompt with an agent in the API, you must enter the text of the prompt directly into the `inputText` field of the [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request.
 + templateType – Enter `TEXT` or `CHAT`. `CHAT` is only compatible with models that support the [Converse](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html) API. If you want to use prompt caching, you must use the `CHAT` template type.
 + templateConfiguration – The value depends on the template type that you specified:
   + If you specified `TEXT` as the template type, the value should be a [TextPromptTemplateConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_TextPromptTemplateConfiguration.html.html) JSON object.
@@ -178,6 +178,6 @@ The following fields are optional:
 | clientToken | To ensure the API request completes only once. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html). |
 | tags | To associate tags with the flow. For more information, see [Tagging Amazon Bedrock resources](tagging.md). |
 
-The response creates a `DRAFT` version and returns an ID and ARN that you can use as a prompt identifier for other prompt-related API requests.
+The response creates a `DRAFT` version and returns an ID and ARN. Use these as a prompt identifier for other prompt-related API requests.
 
 ------

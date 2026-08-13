@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/how
  For this example, start the Deadline Cloud worker agent in an AWS CloudShell tab. Let any previously submitted jobs finish running, and then delete the job logs from the logs directory:
 
 ```
-rm -rf ~/devdemo-logs/queue-*
+rm -rf ~/demoenv-logs/queue-*
 ```
 
  The following script modifies the job bundle to show all files in the session's temporary working directory and the contents of the path mapping rules file, and then submits a job with the modified bundle:
@@ -95,8 +95,8 @@ Total processing time of 0.09752 seconds at 1.91 KB/s.
 2024-07-17 01:26:38,267 INFO Contents:
 2024-07-17 01:26:38,269 INFO ./tmp_xdhbsdo.sh
 2024-07-17 01:26:38,269 INFO ./tmpdi00052b.json
-2024-07-17 01:26:38,269 INFO ./assetroot-{{assetroot-3751a}}/shared/projects/project2/file.txt
-2024-07-17 01:26:38,269 INFO ./assetroot-{{assetroot-3751a}}/home/cloudshell-user/job_attachments_devguide/script.sh
+2024-07-17 01:26:38,269 INFO ./assetroot-{{3751a}}/shared/projects/project2/file.txt
+2024-07-17 01:26:38,269 INFO ./assetroot-{{3751a}}/home/cloudshell-user/job_attachments_devguide/script.sh
 2024-07-17 01:26:38,269 INFO
 2024-07-17 01:26:38,270 INFO Path mapping rules file: /sessions/session-{{5b33f}}/tmpdi00052b.json
 2024-07-17 01:26:38,282 INFO {
@@ -115,7 +115,7 @@ Total processing time of 0.09752 seconds at 1.91 KB/s.
 2024-07-17 01:26:38,283 INFO     {
 2024-07-17 01:26:38,283 INFO       "source_path_format": "POSIX",
 2024-07-17 01:26:38,283 INFO       "source_path": "/",
-2024-07-17 01:26:38,283 INFO       "destination_path": "/sessions/session-{{5b33f}}/assetroot-{{assetroot-3751a}}"
+2024-07-17 01:26:38,283 INFO       "destination_path": "/sessions/session-{{5b33f}}/assetroot-{{3751a}}"
 2024-07-17 01:26:38,283 INFO     }
 2024-07-17 01:26:38,283 INFO   ]
 2024-07-17 01:26:38,283 INFO }
@@ -151,5 +151,5 @@ deadline bundle submit --farm-id $FARM_ID --queue-id $QUEUE1_ID job_attachments_
 
 ```
 2024-07-17 01:40:35,283 INFO Output:
-2024-07-17 01:40:35,284 INFO The location of /shared/projects/project2 in the session is /sessions/session-{{5b33f}}/assetroot-{{assetroot-3751a}}
+2024-07-17 01:40:35,284 INFO The location of /shared/projects/project2 in the session is /sessions/session-{{5b33f}}/assetroot-{{3751a}}
 ```

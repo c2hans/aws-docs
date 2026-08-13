@@ -97,22 +97,22 @@ The Rust standard library provides many tools to help us accomplish this. For mo
 
 The following are lists of "synchronization objects". Altogether, they are the tools necessary to convince the compiler that our concurrent program won't break ownership rules.
 
- [https://doc.rust-lang.org/std/sync/index.html](https://doc.rust-lang.org/std/sync/index.html):
-+ [https://doc.rust-lang.org/std/sync/struct.Arc.html](https://doc.rust-lang.org/std/sync/struct.Arc.html): An ***A**tomically **R**eference-**C**ounted* pointer. When data is wrapped in an `Arc`, it can be shared freely, without worrying about any specific owner dropping the value early. In this sense, the ownership of the value becomes "shared". Values within an `Arc` cannot be mutable, but might have [interior mutability](https://doc.rust-lang.org/reference/interior-mutability.html).
-+ [https://doc.rust-lang.org/std/sync/struct.Barrier.html](https://doc.rust-lang.org/std/sync/struct.Barrier.html): Ensures multiple threads will wait for each other to reach a point in the program, before continuing execution all together.
-+ [https://doc.rust-lang.org/std/sync/struct.Condvar.html](https://doc.rust-lang.org/std/sync/struct.Condvar.html): a ***Cond**ition **Var**iable* providing the ability to block a thread while waiting for an event to occur.
-+ [https://doc.rust-lang.org/std/sync/struct.Mutex.html](https://doc.rust-lang.org/std/sync/struct.Mutex.html): a ***Mut**ual **Ex**clusion* mechanism that ensures that at most one thread at a time is able to access some data. Generally speaking, a `Mutex` lock should never be held across an `.await` point in the code.
+ [**Standard library synchronization objects**](https://doc.rust-lang.org/std/sync/index.html):
++ [**Arc**](https://doc.rust-lang.org/std/sync/struct.Arc.html): An ***A**tomically **R**eference-**C**ounted* pointer. When data is wrapped in an `Arc`, it can be shared freely, without worrying about any specific owner dropping the value early. In this sense, the ownership of the value becomes "shared". Values within an `Arc` cannot be mutable, but might have [interior mutability](https://doc.rust-lang.org/reference/interior-mutability.html).
++ [**Barrier**](https://doc.rust-lang.org/std/sync/struct.Barrier.html): Ensures multiple threads will wait for each other to reach a point in the program, before continuing execution all together.
++ [**Condvar**](https://doc.rust-lang.org/std/sync/struct.Condvar.html): a ***Cond**ition **Var**iable* providing the ability to block a thread while waiting for an event to occur.
++ [**Mutex**](https://doc.rust-lang.org/std/sync/struct.Mutex.html): a ***Mut**ual **Ex**clusion* mechanism that ensures that at most one thread at a time is able to access some data. Generally speaking, a `Mutex` lock should never be held across an `.await` point in the code.
 
- [https://docs.rs/tokio/latest/tokio/sync/index.html](https://docs.rs/tokio/latest/tokio/sync/index.html):
+ [**Tokio synchronization objects**](https://docs.rs/tokio/latest/tokio/sync/index.html):
 
 While the AWS SDKs are intended to be `async`-runtime-agnostic, we recommend the use of `tokio` synchronization objects for specific cases.
-+ [https://docs.rs/tokio/latest/tokio/sync/struct.Mutex.html](https://docs.rs/tokio/latest/tokio/sync/struct.Mutex.html): Similar to the standard library's `Mutex`, but with a slightly higher cost. Unlike the standard `Mutex`, this one can be held across an `.await` point in the code.
-+ [https://docs.rs/tokio/latest/tokio/sync/struct.Semaphore.html](https://docs.rs/tokio/latest/tokio/sync/struct.Semaphore.html): A variable used to control access to a common resource by multiple tasks.
++ [**Mutex**](https://docs.rs/tokio/latest/tokio/sync/struct.Mutex.html): Similar to the standard library's `Mutex`, but with a slightly higher cost. Unlike the standard `Mutex`, this one can be held across an `.await` point in the code.
++ [**Sempahore**](https://docs.rs/tokio/latest/tokio/sync/struct.Semaphore.html): A variable used to control access to a common resource by multiple tasks.
 
 ## Rewriting our example to be more efficient (single-threaded concurrency)
 <a name="conc_singleThread"></a>
 
-In the following modified example, we use [https://docs.rs/futures-util/latest/futures_util/future/fn.join_all.html](https://docs.rs/futures-util/latest/futures_util/future/fn.join_all.html) to run **ALL** `get_object` requests concurrently. Run the following command to add a new dependency to your project:
+In the following modified example, we use [`futures_util::future::join_all`](https://docs.rs/futures-util/latest/futures_util/future/fn.join_all.html) to run **ALL** `get_object` requests concurrently. Run the following command to add a new dependency to your project:
 + `cargo add futures-util`
 
 ```
@@ -260,4 +260,4 @@ Dividing work into tasks can be complex. Doing I/O (*input/output*) is typically
 
 Tasks running concurrently can be run in any order. As such, the logs of concurrent programs can very difficult to read. In the SDK for Rust, we recommend using the `tracing` logging system. It can group logs with their specific tasks, no matter when they're running. For guidance, see [Configuring and using logging in the AWS SDK for Rust](logging.md).
 
-A very useful tool for identifying tasks that have locked up is [https://github.com/tokio-rs/console](https://github.com/tokio-rs/console), which is a diagnostic and debugging tool for asynchronous Rust programs. By instrumenting and running your program, and then running the `tokio-console` app, you can see a live view of the tasks your program is running. This view includes helpful information like the amount of time a task has spent waiting to acquire shared resources or the amount of times it has been polled.
+A very useful tool for identifying tasks that have locked up is [`tokio-console`](https://github.com/tokio-rs/console), which is a diagnostic and debugging tool for asynchronous Rust programs. By instrumenting and running your program, and then running the `tokio-console` app, you can see a live view of the tasks your program is running. This view includes helpful information like the amount of time a task has spent waiting to acquire shared resources or the amount of times it has been polled.

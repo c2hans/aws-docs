@@ -53,7 +53,7 @@ When Amazon DocumentDB creates a cluster in a VPC, it assigns a network interfac
 For each cluster that you run in a VPC, make sure to reserve at least one address in each subnet in the subnet group for use by Amazon DocumentDB for recovery actions.
 
 ### Shared subnets
-<a name="w2aac39c57c13c13c15"></a>
+<a name="w2aac39c59c13c13c15"></a>
 
 You can create a cluster in a shared VPC.
 
@@ -121,7 +121,7 @@ To use dual-stack mode, make sure that each subnet in the subnet group that you 
 
 If a subnet group stops supporting dual-stack mode because of subnet deletion or CIDR disassociation, there's a risk of an incompatible network state for clusters that are associated with the subnet group. Also, you can't use the subnet group when you create a new dual-stack mode cluster.
 
-To determine whether a subnet group supports dual-stack mode by using the AWS Management Console, view the **Network type** on the details page of the subnet group. To determine whether a subnet group supports dual-stack mode by using the AWS CLI, run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-subnet-groups.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-subnet-groups.html) command and view `SupportedNetworkTypes` in the output.
+To determine whether a subnet group supports dual-stack mode by using the AWS Management Console, view the **Network type** on the details page of the subnet group. To determine whether a subnet group supports dual-stack mode by using the AWS CLI, run the [`describe-db-subnet-groups`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-subnet-groups.html) command and view `SupportedNetworkTypes` in the output.
 
 Read replicas are treated as independent clusters and can have a network type that's different from the primary cluster. If you change the network type of a read replica's primary cluster, the read replica isn't affected. When you are restoring a cluster, you can restore it to any network type that's supported.
 
@@ -145,7 +145,7 @@ To determine whether a cluster is in dual-stack mode by using the console, view 
 
 You can modify an IPv4-only cluster to use dual-stack mode. To do so, change the network type of the cluster.
 
-It is recommended that you change the network type of your Amazon DocumentDB cluster during a maintenance window. You can set network type manually by using the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/modify-db-cluster.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/modify-db-cluster.html) command.
+It is recommended that you change the network type of your Amazon DocumentDB cluster during a maintenance window. You can set network type manually by using the [`modify-db-cluster`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/modify-db-cluster.html) command.
 
 Before modifying a cluster to use dual-stack mode, make sure that its subnet group supports dual-stack mode. If the subnet group associated with the cluster doesn't support dual-stack mode, specify a different subnet group that supports it when you modify the cluster. Modifying the subnet group of a cluster can cause downtime.
 
@@ -171,7 +171,7 @@ If you can't connect to the cluster after the change, make sure that the client 
 
       If you are using the AWS Management Console, select the subnet group, and make sure that the **Supported network types** value is **Dual**.
 
-      If you are using the AWS CLI, run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-subnet-groups.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-subnet-groups.html) command, and make sure that the `SupportedNetworkType` value for the cluster is `Dual`.
+      If you are using the AWS CLI, run the [`describe-db-subnet-groups`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-subnet-groups.html) command, and make sure that the `SupportedNetworkType` value for the cluster is `Dual`.
 
 1. Modify the security group associated with the cluster to allow IPv6 connections to the database, or create a new security group that allows IPv6 connections.
 

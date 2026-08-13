@@ -19,13 +19,24 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **April 7, 2021** to the released platform. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2021-04-19-linux.html) |
-| **Python** | Updated setuptools to [setuptools 56.0.0](https://pypi.org/project/setuptools/56.0.0/). The previous version included in the platform didn't support SNI, and this started to impact customers due to the [deprecation of non-SNI compatible clients](https://github.com/pypa/pypi-support/issues/978). |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>April 7, 2021</b> to the released platform.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Python</b></td><td>Updated setuptools to <a href="https://pypi.org/project/setuptools/56.0.0/">setuptools 56.0.0</a>. The previous version included in the platform didn't support SNI, and this started to impact customers due to the <a href="https://github.com/pypa/pypi-support/issues/978">deprecation of non-SNI compatible clients</a>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2021-04-19-linux.platforms"></a>

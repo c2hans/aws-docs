@@ -9,7 +9,7 @@ Creates a service-linked configuration recorder that is linked to a specific AWS
 
 The configuration recorder's `name`, `recordingGroup`, `recordingMode`, and `recordingScope` is set by the service that is linked to the configuration recorder.
 
-For more information and a list of supported services/service principals, see [https://docs.aws.amazon.com/config/latest/developerguide/stop-start-recorder.html](https://docs.aws.amazon.com/config/latest/developerguide/stop-start-recorder.html) in the * AWS Config Developer Guide*.
+For more information and a list of supported services/service principals, see [**Working with the Configuration Recorder**](https://docs.aws.amazon.com/config/latest/developerguide/stop-start-recorder.html) in the * AWS Config Developer Guide*.
 
 This API creates a service-linked role `AWSServiceRoleForConfig` in your account. The service-linked role is created only when the role does not exist in your account.
 

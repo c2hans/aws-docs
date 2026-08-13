@@ -18,7 +18,7 @@ To manage an Amazon Q Business application environment, you can take the followi
 ## Deleting an anonymous application environment
 <a name="delete-anonymous-app"></a>
 
-To delete an Amazon Q Business anonymous application environment, you can use the console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteApplication.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteApplication.html) API operation.
+To delete an Amazon Q Business anonymous application environment, you can use the console or the [DeleteApplication](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteApplication.html) API operation.
 
 The following tabs provide a procedure for the console and code example for the AWS CLI.
 
@@ -52,7 +52,7 @@ aws qbusiness delete-application \
 ## Getting anonymous application environment properties
 <a name="describe-anonymous-app"></a>
 
-To get the properties of an Amazon Q Business application environment, you can use the console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetApplication.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetApplication.html) API operation.
+To get the properties of an Amazon Q Business application environment, you can use the console or the [GetApplication](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetApplication.html) API operation.
 
 The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
@@ -90,7 +90,7 @@ aws qbusiness get-application \
 ## Listing anonymous application environments
 <a name="list-anonymous-app"></a>
 
-To list Amazon Q Business application environments, you can use the console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListApplications.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListApplications.html) API operation.
+To list Amazon Q Business application environments, you can use the console or the [ListApplications](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListApplications.html) API operation.
 
 The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
@@ -118,7 +118,7 @@ aws qbusiness list-applications \
 ## Updating an application environment
 <a name="update-anonymous-app"></a>
 
-To update an Amazon Q Business application environment, you can use the console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateApplication.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateApplication.html) API operation.
+To update an Amazon Q Business application environment, you can use the console or the [UpdateApplication](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateApplication.html) API operation.
 
 The following tabs provide a procedure for the console and code examples for the AWS CLI.
 

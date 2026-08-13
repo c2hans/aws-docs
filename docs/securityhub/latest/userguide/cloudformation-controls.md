@@ -23,7 +23,7 @@ Security Hub CSPM retired this control in April 2024. For more information, see 
 
 **Resource type:** `AWS::CloudFormation::Stack`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudformation-stack-notification-check.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudformation-stack-notification-check.html)
+**AWS Config rule:** [`cloudformation-stack-notification-check`](https://docs.aws.amazon.com/config/latest/developerguide/cloudformation-stack-notification-check.html)
 
 **Schedule type:** Change triggered
 
@@ -78,7 +78,7 @@ To add tags to a CloudFormation stack, see [CreateStack](https://docs.aws.amazon
 
 **Resource type:** `AWS::CloudFormation::Stack`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudformation-termination-protection-check.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudformation-termination-protection-check.html)
+**AWS Config rule:** [cloudformation-termination-protection-check](https://docs.aws.amazon.com/config/latest/developerguide/cloudformation-termination-protection-check.html)
 
 **Schedule type:** Change triggered
 
@@ -105,7 +105,7 @@ To enable termination protection on a CloudFormation stack, see [Protect CloudFo
 
 **Resource type:** `AWS::CloudFormation::Stack`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudformation-stack-service-role-check.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudformation-stack-service-role-check.html)
+**AWS Config rule:** [cloudformation-stack-service-role-check](https://docs.aws.amazon.com/config/latest/developerguide/cloudformation-stack-service-role-check.html)
 
 **Schedule type:** Change triggered
 

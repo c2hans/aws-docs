@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 # AWS Systems Manager State Manager
 <a name="systems-manager-state"></a>
 
-State Manager, a tool in AWS Systems Manager, is a secure and scalable configuration management service that automates the process of keeping your managed nodes and other AWS resources in a state that you define. To get started with State Manager, open the [Systems Manager console](https://console.aws.amazon.com//systems-manager/state-manager). In the navigation pane, choose **State Manager**.
+State Manager is a secure and scalable configuration management service that automates the process of keeping your managed nodes and other AWS resources in a state that you define. To get started with State Manager, open the [Systems Manager console](https://console.aws.amazon.com//systems-manager/state-manager). In the navigation pane, choose **State Manager**.
 
 **Note**
 State Manager and Maintenance Windows can perform some similar types of updates on your managed nodes. Which one you choose depends on whether you need to automate system compliance or perform high-priority, time-sensitive tasks during periods you specify.
@@ -60,7 +60,7 @@ State Manager offers the following options for scheduling when an association ru
     You can instruct State Manager not to run an association immediately by using the **Apply association only at the next specified Cron interval** option in the console or the `ApplyOnlyAtCronInterval` parameter from the command line.
   + **Cron and rate expressions**
 
-    When you create an association, you specify a schedule for when State Manager applies the configuration. State Manager supports most standard cron and rate expressions for scheduling when an association runs. State Manager also supports cron expressions that include a day of the week and the number sign (\#) to designate the *n*th day of a month to run an association and the (L) sign to indicate the last *X* day of the month.
+    When you create an association, you specify a schedule for when State Manager applies the configuration. State Manager supports most standard cron and rate expressions for scheduling. It also supports cron expressions that include a day of the week and the number sign (\#) to designate the *n*th day of a month. Use the (L) sign to indicate the last *X* day of the month.
 **Note**
 State Manager doesn't currently support specifying months in cron expressions for associations.
 

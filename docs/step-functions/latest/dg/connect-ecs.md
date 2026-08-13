@@ -17,7 +17,7 @@ The [Run a Job (.sync)](connect-to-resource.md#connect-sync) integration pattern
 
 ## Optimized Amazon ECS/Fargate APIs
 <a name="connect-ecs-api"></a>
-+ [https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTask.html](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTask.html) starts a new task using the specified task definition.
++ [`RunTask`](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTask.html) starts a new task using the specified task definition.
 
 **Parameters in Step Functions are expressed in PascalCase**
 Even if the native service API is in camelCase, for example the API action `startSyncExecution`, you specify parameters in PascalCase, such as: `StateMachineArn`.
@@ -27,7 +27,7 @@ Even if the native service API is in camelCase, for example the API action `star
 
 To learn about integrating with AWS services in Step Functions, see [Integrating services](integrate-services.md) and [Passing parameters to a service API in Step Functions](connect-parameters.md).
 
-You can use `overrides` to override the default command for a container, and pass input to your Amazon ECS tasks. See [https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerOverride.html](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerOverride.html). In the example, we have used JsonPath to pass values to the `Task` from the input to the `Task` state.
+You can use `overrides` to override the default command for a container, and pass input to your Amazon ECS tasks. See [`ContainerOverride`](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerOverride.html). In the example, we have used JsonPath to pass values to the `Task` from the input to the `Task` state.
 
 The following includes a `Task` state that runs an Amazon ECS task and waits for it to complete.
 

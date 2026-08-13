@@ -30,7 +30,7 @@ CloudTrail Lake event data stores and queries incur costs. When you create an ev
 
 [Management events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-management-events-with-cloudtrail.html#logging-management-events) provide information about management operations that are performed on resources in your AWS account. These are also known as control plane operations. By default, CloudTrail logs management events.
 
-All Amazon EventBridge API operations except [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html) and [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutPartnerEvents.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutPartnerEvents.html) are control plane operations. For a complete list, see [Actions](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Operations.html) in the *Amazon EventBridge API Reference*. For example management events, see [EventBridge management event examples](#cloudtrail-event-examples).
+All Amazon EventBridge API operations except [PutEvents](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html) and [PutPartnerEvents](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutPartnerEvents.html) are control plane operations. For a complete list, see [Actions](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Operations.html) in the *Amazon EventBridge API Reference*. For example management events, see [EventBridge management event examples](#cloudtrail-event-examples).
 
 ## EventBridge data events in CloudTrail
 <a name="cloudtrail-data-events"></a>
@@ -45,11 +45,11 @@ The following table lists the EventBridge resource types for which you can log d
 
 | Resource type (console) | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
-| EventBridge event bus |  AWS::Events::EventBus  |  +  [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html)   |
-| EventBridge partner event source |  AWS::Events::EventSource  |  +  [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutPartnerEvents.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutPartnerEvents.html)   |
-| EventBridge endpoint |  AWS::Events::Endpoint  |  +  [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html) (when using a [global endpoint](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-global-endpoints.html); successful calls only, not populated on `AccessDenied`)   |
+| EventBridge event bus |  AWS::Events::EventBus  |  +  [PutEvents](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html)   |
+| EventBridge partner event source |  AWS::Events::EventSource  |  +  [PutPartnerEvents](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutPartnerEvents.html)   |
+| EventBridge endpoint |  AWS::Events::Endpoint  |  +  [PutEvents](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html) (when using a [global endpoint](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-global-endpoints.html); successful calls only, not populated on `AccessDenied`)   |
 
-You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
+You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [AdvancedFieldSelector](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
 
 **Note**
 The `detail` field in event entries is redacted in CloudTrail data event logs to protect sensitive data.

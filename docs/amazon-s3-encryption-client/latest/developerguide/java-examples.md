@@ -171,7 +171,7 @@ This example uses a Raw RSA wrapping key and instantiates the Amazon S3 Encrypti
    }
    ```
 
-1. Encrypt your plaintext object by calling [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html).
+1. Encrypt your plaintext object by calling [`PutObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html).
 
    1. The Amazon S3 Encryption Client provides the encryption materials: one plaintext data key and one copy of that data key encrypted by your wrapping key.
 
@@ -192,7 +192,7 @@ This example uses a Raw RSA wrapping key and instantiates the Amazon S3 Encrypti
    }
    ```
 
-1. Decrypt your encrypted object by calling [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html).
+1. Decrypt your encrypted object by calling [`GetObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html).
 
    1. The Amazon S3 Encryption Client uses your wrapping key to decrypt the encrypted data key.
 
@@ -361,9 +361,9 @@ class v4EnableMultipartUploadExample {
 
 The Amazon S3 Encryption Client does not require any additional configuration to use the low-level API. Use the following API calls to generate a multipart upload request with version 4.*x* of the Amazon S3 Encryption Client.
 
-1. Start the multipart upload process by calling [https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateMultipartUpload.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateMultipartUpload.html).
+1. Start the multipart upload process by calling [`CreateMultipartUpload`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateMultipartUpload.html).
 
-1. Call [https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPart.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPart.html) to upload each part of your object. When you upload the final part, you must specify `isLastPart` for the Amazon S3 Encryption Client to be able to call `cipher.doFinal()`
+1. Call [`UploadPart`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPart.html) to upload each part of your object. When you upload the final part, you must specify `isLastPart` for the Amazon S3 Encryption Client to be able to call `cipher.doFinal()`
 
    ```
    // v4
@@ -381,4 +381,4 @@ The Amazon S3 Encryption Client does not require any additional configuration to
    }
    ```
 
-1. Call [https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html) to finish the process.
+1. Call [`CompleteMultipartUpload`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html) to finish the process.

@@ -57,4 +57,4 @@ To change a parameter group's parameter values using the MemoryDB API, use the `
 
 To find the name and permitted values of the parameter you want to change, see [Engine specific parameters](parametergroups.redis.md)
 
-For more information, see [https://docs.aws.amazon.com/memorydb/latest/APIReference/API_UpdateParameterGroup.html](https://docs.aws.amazon.com/memorydb/latest/APIReference/API_UpdateParameterGroup.html).
+For more information, see [`UpdateParameterGroup`](https://docs.aws.amazon.com/memorydb/latest/APIReference/API_UpdateParameterGroup.html).

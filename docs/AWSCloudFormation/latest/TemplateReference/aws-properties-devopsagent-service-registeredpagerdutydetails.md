@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DevOpsAgent::Service RegisteredPagerDutyDetails
 <a name="aws-properties-devopsagent-service-registeredpagerdutydetails"></a>
 
-<a name="aws-properties-devopsagent-service-registeredpagerdutydetails-description"></a>The `RegisteredPagerDutyDetails` property type specifies Property description not available. for an [AWS::DevOpsAgent::Service](aws-resource-devopsagent-service.md).
+PagerDuty service details returned after registration.
 
 ## Syntax
 <a name="aws-properties-devopsagent-service-registeredpagerdutydetails-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-service-registeredpagerdutydetails-properties"></a>
 
 `Scopes`  <a name="cfn-devopsagent-service-registeredpagerdutydetails-scopes"></a>
-Property description not available.
+The scopes that apply to the service.
 *Required*: Yes
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

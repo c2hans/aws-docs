@@ -51,9 +51,9 @@ To start, define an IAM policy that gives you permission to establish a WebSocke
 
 The following steps explain how to retrieve the endpoint used in a WebSocket connection.
 
-1. Use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetMessagingSessionEndpoint.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetMessagingSessionEndpoint.html) API to retrieve the WebSocket endpoint.
+1. Use the [GetMessagingSessionEndpoint](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetMessagingSessionEndpoint.html) API to retrieve the WebSocket endpoint.
 
-1. Use the URL returned by the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetMessagingSessionEndpoint.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetMessagingSessionEndpoint.html) API to construct a Signature Version 4 Signed WebSocket URL. If you need help doing that, you can follow directions in the [Establishing the connection](#connect-api).
+1. Use the URL returned by the [GetMessagingSessionEndpoint](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetMessagingSessionEndpoint.html) API to construct a Signature Version 4 Signed WebSocket URL. If you need help doing that, you can follow directions in the [Establishing the connection](#connect-api).
 **Note**
 WebSocket URLs have the following form: `{{id}}.{{region}}.ws-messaging.chime.aws`
 
@@ -63,7 +63,7 @@ WebSocket URLs have the following form: `{{id}}.{{region}}.ws-messaging.chime.aw
  After you retrieve an endpoint, you use the connect API to establish a WebSocket connection to the Amazon Chime SDK back-end server and receive messages for an `AppInstanceUser`. You must use AWS Signature Version 4 to sign requests. For more information about signing a request, see [Signing AWS Requests with Signature Version 4](https://docs.aws.amazon.com/general/latest/gr/Signature Version 4_signing.html).
 
 **Note**
-To retrieve the endpoint, you can invoke the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetMessagingSessionEndpoint.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetMessagingSessionEndpoint.html) API. You can use the WebSocket client library of your choice to connect to the endpoint.
+To retrieve the endpoint, you can invoke the [GetMessagingSessionEndpoint](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetMessagingSessionEndpoint.html) API. You can use the WebSocket client library of your choice to connect to the endpoint.
 
 **Request Syntax**
 
@@ -137,8 +137,8 @@ When you establish a WebSocket connection, you can specify `prefetch-on=connect`
 After a user connects with the prefetch parameter specified, the user receives the session established event, which indicates the connection has been established. The user then receives up to 50 `CHANNEL_DETAILS` events. If the user has less than 50 channels, the connect API prefetches all channels via `CHANNEL_DETAILS` events. If user has more than 50 channels, the API prefetches the top 50 channels that contain unread messages and the latest `LastMessageTimestamp` values. The `CHANNEL_DETAILS` events arrive in random order, and you receive events for all 50 channels.
 
 Also, prefetch returns the following for `ChannelMessages` and `ChannelMemberships`:
-+ **ChannelMessages** – List of [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessageSummary.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessageSummary.html) objects, ordered by `CreatedTimestamp` in descending order. Only includes the latest 20 messages visible to the user. If there are targeted messages in the channel that are not visible to the current user, then less than 20 messages might be returned. The `ChannelMessagesHasMore` boolean will be set to true to indicate there are more messages. Soft limit, adjustable at the AWS account level.
-+ **ChannelMemberships** – List of [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMembershipSummary.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMembershipSummary.html) objects. Includes a maximum of 30 channel members. Soft limit, adjustable at AWS account level.
++ **ChannelMessages** – List of [ChannelMessageSummary](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessageSummary.html) objects, ordered by `CreatedTimestamp` in descending order. Only includes the latest 20 messages visible to the user. If there are targeted messages in the channel that are not visible to the current user, then less than 20 messages might be returned. The `ChannelMessagesHasMore` boolean will be set to true to indicate there are more messages. Soft limit, adjustable at the AWS account level.
++ **ChannelMemberships** – List of [ChannelMembershipSummary](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMembershipSummary.html) objects. Includes a maximum of 30 channel members. Soft limit, adjustable at AWS account level.
 
 This example shows how to use `prefetch-on=connect`.
 
@@ -164,9 +164,9 @@ This example shows the response for one channel. You will receive responses for 
         "x-amz-chime-message-type": "SYSTEM"
         },
    "Payload": JSON.stringify"({
-        Channel: [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelSummary.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelSummary.html)
-        ChannelMessages: List of [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessageSummary.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessageSummary.html)
-        ChannelMemberships: List of [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMembershipSummary.html ](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMembershipSummary.html )
+        Channel: [ChannelSummary](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelSummary.html)
+        ChannelMessages: List of [ChannelMessageSummary](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessageSummary.html)
+        ChannelMemberships: List of [ChannelMembershipSummary](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMembershipSummary.html )
         ReadMarkerTimestamp: Timestamp
         ChannelMessagesHasMore: Boolean
     })
@@ -176,12 +176,12 @@ This example shows the response for one channel. You will receive responses for 
 ## Processing the events
 <a name="process-events"></a>
 
-For an `AppInstanceUser` to receive messages after they establish a connection, you must add them to a channel. To do that, use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannelMembership.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannelMembership.html) API.
+For an `AppInstanceUser` to receive messages after they establish a connection, you must add them to a channel. To do that, use the [CreateChannelMembership](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannelMembership.html) API.
 
 **Note**
 An `AppInstanceUser` always receives messages for all channels that they belong to. Messaging stops when the `AppInstance` user disconnects.
 
-An `AppInstanceAdmin` and a `ChannelModerator` do not receive messages on a channel unless you use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannelMembership.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannelMembership.html) API to explicitly add them.
+An `AppInstanceAdmin` and a `ChannelModerator` do not receive messages on a channel unless you use the [CreateChannelMembership](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannelMembership.html) API to explicitly add them.
 
 The following topics explain how to process events.
 
@@ -217,24 +217,24 @@ Websocket messages return JSON strings. The structure of the JSON strings depend
   <tr><th>EventType</th><th>Payload format</th><th></th></tr>
 </thead>
 <tbody>
-  <tr><td>`SESSION_ESTABLISHED`</td><td>N/A. This message is sent once after the user connects to the WebSocket. It indicates that any message or event on a channel that arrives after the user receives the `SESSION_ESTABLISHED` message is guaranteed to be delivered to the user as long as the WebSocket stays open.</td><td></td></tr>
-  <tr><td>`CREATE_CHANNEL_MESSAGE`</td><td rowspan="10"> [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessage.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessage.html) </td><td></td></tr>
-  <tr><td>`REDACT_CHANNEL_MESSAGE`</td><td></td></tr>
-  <tr><td>`UPDATE_CHANNEL_MESSAGE`</td><td></td></tr>
-  <tr><td>`DELETE_CHANNEL_MESSAGE`</td><td></td></tr>
-  <tr><td>`PENDING_CREATE_CHANNEL_MESSAGE`</td><td></td></tr>
-  <tr><td>`PENDING_UPDATE_CHANNEL_MESSAGE`</td><td></td></tr>
-  <tr><td>`FAILED_CREATE_CHANNEL_MESSAGE`</td><td></td></tr>
-  <tr><td>`FAILED_UPDATE_CHANNEL_MESSAGE`</td><td></td></tr>
-  <tr><td>`DENIED_CREATE_CHANNEL_MESSAGE`</td><td></td></tr>
-  <tr><td>`DENIED_UPDATE_CHANNEL_MESSAGE`</td><td></td></tr>
-  <tr><td>`CHANNEL_DETAILS`</td><td>**Channel**<br /> The [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelSummary.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelSummary.html) object. <br />**ChannelMessages**<br /> List of [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessageSummary.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessageSummary.html) objects, ordered by `CreatedTimestamp` in descending order. Includes the latest 20 messages, but you can adjust that limit at the AWS account level. <br />**ChannelMemberships**<br /> List of [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMembershipSummary.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMembershipSummary.html) objects. Returns a maximum of 30 channel members, but you can adjust that limit at the AWS account level. <br />**ReadMarkerTimestamp**<br /> The time at which the `AppInstanceUser` last marked the channel as read.  </td><td></td></tr>
-  <tr><td>`UPDATE_CHANNEL`</td><td rowspan="2"> [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_Channel.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_Channel.html) </td><td></td></tr>
-  <tr><td>`DELETE_CHANNEL`</td><td></td></tr>
-  <tr><td>`BATCH_CREATE_CHANNEL_MEMBERSHIP`</td><td> [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_BatchChannelMemberships.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_BatchChannelMemberships.html) </td><td></td></tr>
-  <tr><td>`CREATE_CHANNEL_MEMBERSHIP`</td><td rowspan="3">[https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMembership.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMembership.html)</td><td></td></tr>
-  <tr><td>`DELETE_CHANNEL_MEMBERSHIP`</td><td></td></tr>
-  <tr><td>`UPDATE_CHANNEL_MEMBERSHIP`</td><td></td></tr>
+  <tr><td><code>SESSION_ESTABLISHED</code></td><td>N/A. This message is sent once after the user connects to the WebSocket. It indicates that any message or event on a channel that arrives after the user receives the <code>SESSION_ESTABLISHED</code> message is guaranteed to be delivered to the user as long as the WebSocket stays open.</td><td></td></tr>
+  <tr><td><code>CREATE_CHANNEL_MESSAGE</code></td><td rowspan="10"> <a href="https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessage.html">https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessage.html</a> </td><td></td></tr>
+  <tr><td><code>REDACT_CHANNEL_MESSAGE</code></td><td></td></tr>
+  <tr><td><code>UPDATE_CHANNEL_MESSAGE</code></td><td></td></tr>
+  <tr><td><code>DELETE_CHANNEL_MESSAGE</code></td><td></td></tr>
+  <tr><td><code>PENDING_CREATE_CHANNEL_MESSAGE</code></td><td></td></tr>
+  <tr><td><code>PENDING_UPDATE_CHANNEL_MESSAGE</code></td><td></td></tr>
+  <tr><td><code>FAILED_CREATE_CHANNEL_MESSAGE</code></td><td></td></tr>
+  <tr><td><code>FAILED_UPDATE_CHANNEL_MESSAGE</code></td><td></td></tr>
+  <tr><td><code>DENIED_CREATE_CHANNEL_MESSAGE</code></td><td></td></tr>
+  <tr><td><code>DENIED_UPDATE_CHANNEL_MESSAGE</code></td><td></td></tr>
+  <tr><td><code>CHANNEL_DETAILS</code></td><td><b>Channel</b><br /> The <a href="https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelSummary.html">https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelSummary.html</a> object. <br /><b>ChannelMessages</b><br /> List of <a href="https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessageSummary.html">https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessageSummary.html</a> objects, ordered by <code>CreatedTimestamp</code> in descending order. Includes the latest 20 messages, but you can adjust that limit at the AWS account level. <br /><b>ChannelMemberships</b><br /> List of <a href="https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMembershipSummary.html">https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMembershipSummary.html</a> objects. Returns a maximum of 30 channel members, but you can adjust that limit at the AWS account level. <br /><b>ReadMarkerTimestamp</b><br /> The time at which the <code>AppInstanceUser</code> last marked the channel as read.  </td><td></td></tr>
+  <tr><td><code>UPDATE_CHANNEL</code></td><td rowspan="2"> <a href="https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_Channel.html">https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_Channel.html</a> </td><td></td></tr>
+  <tr><td><code>DELETE_CHANNEL</code></td><td></td></tr>
+  <tr><td><code>BATCH_CREATE_CHANNEL_MEMBERSHIP</code></td><td> <a href="https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_BatchChannelMemberships.html">https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_BatchChannelMemberships.html</a> </td><td></td></tr>
+  <tr><td><code>CREATE_CHANNEL_MEMBERSHIP</code></td><td rowspan="3"><a href="https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMembership.html">https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMembership.html</a></td><td></td></tr>
+  <tr><td><code>DELETE_CHANNEL_MEMBERSHIP</code></td><td></td></tr>
+  <tr><td><code>UPDATE_CHANNEL_MEMBERSHIP</code></td><td></td></tr>
 </tbody>
 </table>
 
@@ -280,7 +280,7 @@ For 4XXX codes, always reconnect *except* for the following messages:
 
 When the application uses a close code to reconnect, the application should:
 
-1. Call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetMessagingSessionEndpoint.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetMessagingSessionEndpoint.html) API again to obtain a new base URL.
+1. Call the [GetMessagingSessionEndpoint](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_GetMessagingSessionEndpoint.html) API again to obtain a new base URL.
 
 1. Refresh the IAM credentials if they've expired.
 

@@ -52,9 +52,9 @@ Step Functions accepts names for state machines, executions, activities, and lab
   <tr><td>Maximum number of registered activities</td><td>100,000</td><td>150,000</td></tr>
   <tr><td>Maximum size of state machine definition</td><td>1 MB</td><td>Hard quota</td></tr>
   <tr><td>Maximum request size</td><td>1 MB per request. This is the total data size per Step Functions API request, including the request header and all other associated request data. </td><td>Hard quota</td></tr>
-  <tr><td>Maximum open executions per account</td><td>1,000,000 executions for each AWS account in each AWS Region. Exceeding this limit will cause an ExecutionLimitExceeded error. This doesn't apply to Express Workflows.</td><td>Millions</td></tr>
-  <tr><td>Maximum number of open Map Runs</td><td>1000<br />This quota applies to [*Distributed Map state*](state-map-distributed.md).<br />An open [Map Run](concepts-examine-map-run.md) has started, but hasn't yet completed. Backlogged Map Runs wait at the [MapRunStarted](https://docs.aws.amazon.com/step-functions/latest/apireference/API_MapRunStartedEventDetails.html) event until the total number of open Map Runs is less than the quota.</td><td>Hard quota</td></tr>
-  <tr><td>Maximum [redrives](redrive-map-run.md) of a Map Run.</td><td>1000<br />This quota applies to *Distributed Map state*.</td><td>Hard quota</td></tr>
+  <tr><td>Maximum open executions per account</td><td>1,000,000 executions for each AWS account in each AWS Region. Exceeding this limit will cause an <code>ExecutionLimitExceeded</code> error. This doesn't apply to Express Workflows.</td><td><i>Millions</i></td></tr>
+  <tr><td>Maximum number of open Map Runs</td><td>1000<br />This quota applies to <a href="state-map-distributed.md">*Distributed Map state*</a>.<br />An open <a href="concepts-examine-map-run.md">Map Run</a> has started, but hasn't yet completed. Backlogged Map Runs wait at the <a href="https://docs.aws.amazon.com/step-functions/latest/apireference/API_MapRunStartedEventDetails.html">MapRunStarted</a> event until the total number of open Map Runs is less than the quota.</td><td>Hard quota</td></tr>
+  <tr><td>Maximum <a href="redrive-map-run.md">redrives</a> of a Map Run.</td><td>1000<br />This quota applies to <i>Distributed Map state</i>.</td><td>Hard quota</td></tr>
   <tr><td>Maximum number of parallel child executions within a single Map Run</td><td>10,000<br />Step Functions dispatches express executions at up to 1,000 TPS and standard executions at up to 100 TPS.</td><td>Hard quota</td></tr>
 </tbody>
 </table>

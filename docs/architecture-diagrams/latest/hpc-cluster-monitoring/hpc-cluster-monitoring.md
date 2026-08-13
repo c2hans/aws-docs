@@ -22,11 +22,11 @@ This reference architecture demonstrates how to build a mechanism to monitor [Am
    +  **HPC cluster account(s)** - These accounts are where the **Amazon EC2** instance-based HPC compute clusters are deployed.
    +  **Centralized monitoring account** - This is a centralized account where one or more HPC cluster accounts sends cluster notification statuses.
 
-    These are **Amazon EC2** instances to be monitored. When the [instance state changes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check.html) (start, stop, terminate), it sends the status of related events to [https://aws.amazon.com/eventbridge/](https://aws.amazon.com/eventbridge/).
+    These are **Amazon EC2** instances to be monitored. When the [instance state changes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check.html) (start, stop, terminate), it sends the status of related events to [**Amazon EventBridge**](https://aws.amazon.com/eventbridge/).
 
 1.  **EventBridge** events are filtered by an [**Amazon EC2** tag](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html), and only those matching the tag string are passed to the monitoring account in the form of a **Amazon CloudWatch** log. You need to have an **Amazon EC2** tag attached (by default, the *HPC* tag) in order to be monitored. This limits the volume and type account activity being shared with the centralized monitoring account.
 
-1.  Once events are logged in [https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) in the HPC cluster account, it shares these logs with the centralized monitoring account by enabling the [cross-account observability](https://aws.amazon.com/blogs/aws/new-amazon-cloudwatch-cross-account-observability/) feature in **Amazon CloudWatch**.
+1.  Once events are logged in [**Amazon CloudWatch Logs**](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) in the HPC cluster account, it shares these logs with the centralized monitoring account by enabling the [cross-account observability](https://aws.amazon.com/blogs/aws/new-amazon-cloudwatch-cross-account-observability/) feature in **Amazon CloudWatch**.
 
 1. Monitor the latest cluster status in the **CloudWatch** dashboard. A dashboard is preconfigured and deployed into the centralized monitoring account as a part of the deployment.
 
@@ -38,7 +38,7 @@ To customize this reference architecture diagram based on your business needs, [
 ## Create a free AWS account
 <a name="create-a-free-aws-account"></a>
 
-[https://portal.aws.amazon.com/gp/aws/developer/registration/index.html](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html)
+[![Sign up for a free AWS account](http://docs.aws.amazon.com/architecture-diagrams/latest/hpc-cluster-monitoring/images/signup.png)](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html)
 
 Sign up for an AWS account. New accounts include 12 months of [AWS Free Tier](https://aws.amazon.com/free/) access, including the use of Amazon EC2, Amazon S3, and Amazon DynamoDB.
 

@@ -10,8 +10,8 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mlops-check
 + David Nigenda, Zohar Karnin, Muhammad Bilal Zafar, Raghu Ramesha, Alan Tan, Michele Donini, and Krishnaram Kenthapadi. 2022. "Amazon SageMaker Model Monitor: A System for Real-Time Insights into Deployed Machine Learning Models": [arXiv:2111.13657](https://arxiv.org/abs/2111.13657).
 + Richard Meyes, Melanie Lu, Constantin Waubert de Puiseau, and Tobias Meisen. 2019. "Ablation Studies in Artificial Neural Networks": [arXiv:1901.08644](https://arxiv.org/abs/1901.08644).
 + Brian Babcock, Mayur Datar, and Rajeev Motwani. "Sampling From a Moving Window Over Streaming Data": [Princeton University](https://www.cs.princeton.edu/courses/archive/spr04/cos598B/bib/BabcockDM.pdf).
-+ Chip Huyen. [https://www.amazon.com/Designing-Machine-Learning-Systems-Production-Ready/dp/1098107969](https://www.amazon.com/Designing-Machine-Learning-Systems-Production-Ready/dp/1098107969). Sebastopol, California: O'Reilly Media, 2022.
-+ Cathy Chen, Niall Murphy, Kranti Parisa, D. Sculley, and Todd Underwood. [https://www.amazon.com/Reliable-Machine-Learning-Principles-Production/dp/1098106229](https://www.amazon.com/Reliable-Machine-Learning-Principles-Production/dp/1098106229). Sebastopol, California: O'Reilly Media, 2022.
++ Chip Huyen. [*Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications*](https://www.amazon.com/Designing-Machine-Learning-Systems-Production-Ready/dp/1098107969). Sebastopol, California: O'Reilly Media, 2022.
++ Cathy Chen, Niall Murphy, Kranti Parisa, D. Sculley, and Todd Underwood. [*Reliable Machine Learning: Applying SRE Principles to ML in Production*](https://www.amazon.com/Reliable-Machine-Learning-Principles-Production/dp/1098106229). Sebastopol, California: O'Reilly Media, 2022.
 
 ## Additional reading
 <a name="additional-reading.8ba63c6e-127b-5058-9040-2309c4d0655a"></a>

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 
 The [copy\_s3\_prefix\_to\_job\_attachments](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/copy_s3_prefix_to_job_attachments) job bundle pre-populates a queue's job attachments S3 bucket by copying files from where they are already stored in Amazon S3. If you are adding a Deadline Cloud farm to a project that already has a large volume of data, or are submitting a job that depends on a lot of new data such as a fluid simulation output, the initial job attachments upload can be slow.
 
-Because job attachments uses content-addressed storage and never re-uploads files that are already in job attachments, you can use alternative upload tools like [AWS Snowball](https://aws.amazon.com/snowball/), [AWS DataSync](https://aws.amazon.com/datasync/), or [Nimble Studio File Transfer](https://docs.aws.amazon.com/nimble-studio/latest/filetransfer-guide/what-is-file-transfer.html) to copy data into Amazon S3 first, then use this job to copy it into the job attachments bucket for your queue.
+Because job attachments uses content-addressed storage and never re-uploads files that are already in job attachments, you can use alternative upload tools like [AWS Snowball](https://aws.amazon.com/snowball/) or [AWS DataSync](https://aws.amazon.com/datasync/) to copy data into Amazon S3 first, then use this job to copy it into the job attachments bucket for your queue.
 
 Submit the bundle and choose how many workers to parallelize across:
 

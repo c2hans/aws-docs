@@ -165,7 +165,7 @@ DataSync agents use [service endpoints](choose-service-endpoint.md) to communica
 ### Planning for enough network infrastructure
 <a name="datasync-migration-network-interfaces"></a>
 
-For every transfer task that you create, DataSync automatically generates and manages the network infrastructure for your data transfers. This infrastructure is known as *network interfaces* or *elastic network interfaces*, which are logical networking components in an Amazon virtual private cloud (VPC) that represent virtual network cards. For more information, see the [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html).
+For every transfer task that you create, DataSync automatically generates and manages the network infrastructure for your data transfers. This infrastructure is known as *network interfaces* or *elastic network interfaces*, which are logical networking components in an Amazon virtual private cloud (VPC) that represent virtual network cards. For more information, see the [*Amazon EC2 User Guide*](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html).
 
 Each network interface uses a single IP address in your destination VPC subnet. To make sure that you have enough network infrastructure for your migration, do the following:
 + Note the number of [network interfaces](required-network-interfaces.md) that DataSync will create for your DataSync destination location.

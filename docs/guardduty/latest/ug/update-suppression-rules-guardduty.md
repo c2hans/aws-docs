@@ -60,9 +60,9 @@ If you're a member account, your administrator account can take this action on y
 
     For a list of JSON field names and their console equivalent see [Property filters in GuardDuty](guardduty_filter-findings.md#filter_criteria).
 
-    To test your filter criteria, use the same JSON criterion in the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFindings.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFindings.html) API, and confirm that the correct findings have been selected. To test your filter criteria using AWS CLI follow the example using your own detectorId and .json file.
+    To test your filter criteria, use the same JSON criterion in the [ListFindings](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFindings.html) API, and confirm that the correct findings have been selected. To test your filter criteria using AWS CLI follow the example using your own detectorId and .json file.
 
-   To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
+   To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
    ```
    aws guardduty list-detectors --region {{us-east-1}}

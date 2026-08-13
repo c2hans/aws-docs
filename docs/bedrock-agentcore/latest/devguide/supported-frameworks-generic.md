@@ -26,8 +26,8 @@ The service selects how to read each span from the span’s `scope.name`. Set yo
 
 | Convention | Scope name prefix |
 | --- | --- |
-| OpenTelemetry |  `0`  |
-| OpenInference |  `0`  |
+| OpenTelemetry |  `opentelemetry.instrumentation.*`  |
+| OpenInference |  `openinference.instrumentation.*`  |
 
 If a scope has a page of its own in this section, the service uses the handling described on that page instead. Generic framework support applies to every other scope that matches one of these prefixes.
 
@@ -79,7 +79,7 @@ For frameworks using the OpenTelemetry convention, the service reads each field 
 For frameworks using the OpenInference convention, the service reads each field from the following locations, in order:
 +  **User prompt** (invoke agent span): from the `input.value` span attribute; then from the event record body input.
 +  **Agent response** (invoke agent span): from the `output.value` span attribute; then from the event record body output.
-+  **Inference messages** (inference span): from the span’s OpenInference message attributes (for example, `0` and `1`); then from `input.value` and `output.value`; then from the event record body.
++  **Inference messages** (inference span): from the span’s OpenInference message attributes (for example, `llm.input_messages.*` and `llm.output_messages.*`); then from `input.value` and `output.value`; then from the event record body.
 +  **Tool arguments** (execute tool span): from the `input.value` span attribute; then from the event record body input.
 +  **Tool result** (execute tool span): from the `output.value` span attribute; then from the event record body output.
 +  **System prompt** (inference span): from the inference span attributes; then from the event record body.
@@ -89,7 +89,7 @@ For frameworks using the OpenInference convention, the service reads each field 
 <a name="generic-limitations"></a>
 
 To get evaluated with generic framework support, configure your instrumentation as follows:
-+  **Use a recognized scope name.** Emit spans under a scope name that starts with `0` or `1`. The service reads only these prefixes with generic framework support.
++  **Use a recognized scope name.** Emit spans under a scope name that starts with `opentelemetry.instrumentation.*` or `openinference.instrumentation.*`. The service reads only these prefixes with generic framework support.
 +  **Set an identifying attribute on every span.** Set `gen_ai.operation.name` or `traceloop.span.kind` for the OpenTelemetry convention, or `openinference.span.kind` for the OpenInference convention. The service skips a span that carries no recognized identifying attribute.
 +  **Put content in the documented attributes.** Set the prompt, response, and tool attributes listed in [How evaluation fields are extracted](#generic-extraction). If you wrap these values in your own structure, the extracted value includes that surrounding structure, because the service stringifies content rather than parsing your framework’s data model.
 

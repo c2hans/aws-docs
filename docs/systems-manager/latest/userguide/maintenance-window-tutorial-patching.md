@@ -12,7 +12,7 @@ You can continue to use this legacy topic to create a maintenance window for pat
 
 To minimize the impact on your server availability, we recommend that you configure a maintenance window to run patching during times that won't interrupt your business operations.
 
-You must configure roles and permissions for Maintenance Windows, a tool in AWS Systems Manager, before beginning this procedure. For more information, see [Setting up Maintenance Windows](setting-up-maintenance-windows.md).
+You must configure roles and permissions for Maintenance Windows before beginning this procedure. For more information, see [Setting up Maintenance Windows](setting-up-maintenance-windows.md).
 
 **To create a maintenance window for patching**
 
@@ -42,9 +42,9 @@ You must configure roles and permissions for Maintenance Windows, a tool in AWS 
 
 1. For **Stop initiating tasks**, enter the number of hours before the end of the maintenance window that the system should stop scheduling new tasks to run.
 
-1. (Optional) For **Window start date**, specify a date and time, in ISO-8601 Extended format, for when you want the maintenance window to become active. This allows you to delay activation of the maintenance window until the specified future date.
+1. (Optional) For **Window start date**, specify a date and time, in ISO-8601 Extended format, for when you want the maintenance window to become active. This lets you delay activation of the maintenance window until the specified future date.
 
-1. (Optional) For **Window end date**, specify a date and time, in ISO-8601 Extended format, for when you want the maintenance window to become inactive. This allows you to set a date and time in the future after which the maintenance window no longer runs.
+1. (Optional) For **Window end date**, specify a date and time, in ISO-8601 Extended format, for when you want the maintenance window to become inactive. This lets you set a date and time in the future after which the maintenance window no longer runs.
 
 1. (Optional) For **Schedule timezone**, specify the time zone to base scheduled maintenance window executions on, in Internet Assigned Numbers Authority (IANA) format. For example: "America/Los\_Angeles", "etc/UTC", or "Asia/Seoul".
 

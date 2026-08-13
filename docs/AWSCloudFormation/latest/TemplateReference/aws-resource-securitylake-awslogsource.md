@@ -83,7 +83,7 @@ The version for a AWS source. For more details about source versions supported b
 
 When you pass the logical ID of this resource to the intrinsic `ref` function, `ref` returns the `AwsLogSource` name. For example, `VPC_FLOW`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-securitylake-awslogsource--examples"></a>

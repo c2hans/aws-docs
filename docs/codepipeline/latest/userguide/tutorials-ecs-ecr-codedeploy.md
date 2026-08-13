@@ -473,7 +473,7 @@ When you create a CodeDeploy application and deployment group for the Amazon ECS
 
 1. In **Service role**, choose a service role that grants CodeDeploy access to Amazon ECS. To create a new service role, follow these steps:
 
-   1. Open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/)).
+   1. Open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
    1. From the console dashboard, choose **Roles**.
 
@@ -489,7 +489,7 @@ When you create a CodeDeploy application and deployment group for the Amazon ECS
 
 1. From **Load balancers**, choose the name of the load balancer that serves traffic to your Amazon ECS service.
 
-1. From **Production listener port**, choose the port and protocol for the listener that serves production traﬃc to your Amazon ECS service. From **Test listener port**, choose the port and protocol for the test listener.
+1. From **Production listener port**, choose the port and protocol for the listener that serves production traffic to your Amazon ECS service. From **Test listener port**, choose the port and protocol for the test listener.
 
 1. From **Target group 1 name** and **Target group 2 name**, choose the target groups used to route traffic during your deployment. Make sure that these are the target groups you created for your load balancer.
 

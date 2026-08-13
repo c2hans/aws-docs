@@ -17,7 +17,7 @@ When the member who can query runs a SQL query on the tables in the collaboratio
 
 The analysis rules and output constraints are enforced automatically. AWS Clean Rooms only returns the results that comply with the defined analysis rules.
 
-AWS Clean Rooms supports SQL queries that can be different than other query engines. For specifications, see the [AWS Clean Rooms SQL Reference](https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-reference.html). If you want to run queries on data tables protected with differential privacy, you should ensure that your queries are compatible with the [general-purpose query structure](analysis-rules-custom.md#dp-query-structure-syntax) of AWS Clean Rooms Differential Privacy.
+AWS Clean Rooms supports SQL queries that can be different than other query engines. For specifications, see the [AWS Clean Rooms SQL Reference](https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-reference.html). If you want to run queries on data tables protected with differential privacy, you should ensure that your queries are compatible with the [general-purpose query structure](custom-diff-privacy.md#dp-query-structure-syntax) of AWS Clean Rooms Differential Privacy.
 
 **Note**
 When using [Cryptographic Computing for Clean Rooms](crypto-computing.md), not all SQL operations generate valid results. For example, you can conduct a COUNT on an encrypted column but conducting a SUM on encrypted numbers leads to errors. In addition, queries might also yield incorrect results. For example, queries that SUM sealed columns produce errors. However, a GROUP BY query over sealed columns seems to succeed but produces different groups than those produced by a GROUP BY query over the cleartext.
@@ -64,3 +64,4 @@ The following topics explain how to query data in a collaboration using the AWS 
 + [Viewing the impact of differential privacy](query-data-with-diff-privacy.md)
 + [Viewing recent queries](view-queries-console.md)
 + [Viewing query details](view-query-details.md)
++ [Exporting query analysis logs](export-analysis-logs.md)

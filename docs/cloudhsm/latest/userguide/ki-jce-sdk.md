@@ -22,7 +22,7 @@ The following issues impact the JCE SDK for AWS CloudHSM.
 + **Impact:** This issue can cause your HSMs to unexpectedly run out of key space and occurs when your application uses a standard JCE key object for crypto operations instead of a `CaviumKey` object. When you use a standard JCE key object, `CaviumProvider` implicitly imports that key into the HSM as a session key and does not delete this key until the application exits. As a result, keys build up while the application is running and can cause your HSMs to run out of free key space, thus freezing your application.
 + **Workaround: **When using the `CaviumSignature` class, `CaviumCipher` class, `CaviumMac` class, or the `CaviumKeyAgreement` class, you should supply the key as a `CaviumKey` instead of a standard JCE key object.
 
-  You can manually convert a normal key to a `CaviumKey` using the [https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/master/src/main/java/com/amazonaws/cloudhsm/examples/KeyUtilitiesRunner.java](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/master/src/main/java/com/amazonaws/cloudhsm/examples/KeyUtilitiesRunner.java) class, and can then manually delete the key after the operation is complete.
+  You can manually convert a normal key to a `CaviumKey` using the [`ImportKey`](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/master/src/main/java/com/amazonaws/cloudhsm/examples/KeyUtilitiesRunner.java) class, and can then manually delete the key after the operation is complete.
 + **Resolution status: **We are updating the `CaviumProvider` to properly manage implicit imports. The fix will be announced on the version history page once available.
 
 ## Issue: The JCE KeyStore is read only

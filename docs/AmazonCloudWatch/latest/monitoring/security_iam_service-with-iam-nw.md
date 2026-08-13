@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/secur
 
 Before you use IAM to manage access to Network Synthetic Monitor, learn what IAM features are available to use with Network Synthetic Monitor.
 
-**IAM features you can use with Network Synthetic Monitor**
+The following table shows the IAM features you can use with this service.
 
 | IAM feature | Network Synthetic Monitor support |
 | --- | --- |

@@ -7,7 +7,9 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-supp
 
 RDS Extended Support allows you to continue running a database on a major engine version past the RDS end of standard support date for an additional cost.
 
-You can only enroll a database in RDS Extended Support by enabling RDS Extended Support when you first [create](extended-support-creating-db-instance.md) or [restore](extended-support-restoring-db-instance.md) a DB instance. You can't update your RDS Extended Support enrollment status on existing DB instances unless you are restoring them.
+You can enroll a database in RDS Extended Support when you first [create](extended-support-creating-db-instance.md) or [restore](extended-support-restoring-db-instance.md) a DB instance. You can also change the enrollment status of an existing DB instance or DB cluster at any time by modifying the `EngineLifecycleSupport` parameter using the AWS CLI or RDS API. This change takes effect immediately with no downtime. For Aurora and Multi-AZ DB clusters, modify the setting at the cluster level.
+
+If you disable the enrollment status of a DB instance or DB cluster that is already past its standard support end date, the instance or cluster automatically upgrades to the next supported major version. See [ModifyDBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html) and [ModifyDBCluster](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBCluster.html) for more information.
 
 If you enabled RDS Extended Support during the creation or restoration of a DB instance, then after the RDS end of standard support date, Amazon RDS will automatically enroll the DB instance in RDS Extended Support. Automatic enrollment into RDS Extended Support doesn't change the database engine and doesn't impact the uptime or performance of your DB instance.
 

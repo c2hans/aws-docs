@@ -13,7 +13,7 @@ Contains information about an agent runtime. An agent runtime is the execution e
  ** agentRuntimeArn **   <a name="bedrockagentcorecontrol-Type-AgentRuntime-agentRuntimeArn"></a>
 The Amazon Resource Name (ARN) of the agent runtime.
 Type: String
-Pattern: `arn:(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:agent/[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}:([0-9]{0,4}[1-9][0-9]{0,4})`
+Pattern: `arn:aws(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:runtime/[a-zA-Z][a-zA-Z0-9_]{0,47}-[a-zA-Z0-9]{10}`
 Required: Yes
 
  ** agentRuntimeId **   <a name="bedrockagentcorecontrol-Type-AgentRuntime-agentRuntimeId"></a>

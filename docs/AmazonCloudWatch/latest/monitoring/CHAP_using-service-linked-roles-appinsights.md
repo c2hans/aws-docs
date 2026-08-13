@@ -500,7 +500,7 @@ CloudWatch Application Insights does not allow you to edit the AWSServiceRoleFor
 ## Deleting a service-linked role for CloudWatch Application Insights
 <a name="delete-service-linked-role"></a>
 
-If you no longer need to use a feature or service that requires a service-linked role, we recommend that you delete that role. That way you avoid having an unused entity that is not actively monitored or maintained. However, you must delete all applications in Application Insights before you can manually delete the role.
+If you no longer need to use a feature or service that requires a service-linked role, the service recommend that you delete that role. That way you avoid having an unused entity that is not actively monitored or maintained. However, you must delete all applications in Application Insights before you can manually delete the role.
 
 **Note**
 If the CloudWatch Application Insights service is using the role when you try to delete the resources, the deletion might fail. If that happens, wait for a few minutes and try the operation again.

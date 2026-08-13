@@ -649,7 +649,7 @@ A business can send a form interactive message to their end customers through a 
 For example, businesses can use Apple forms for various purposes, including triaging flows, customer surveys, and account creation / sign-ups.
 
 **Warning**
-Interactive message content and end customer responses are stored in contact record transcript and are viewable by other chat participants and contact analysts with access to transcripts. To prevent PII from appearing in your contact record transcript **after the contact has ended**, you will want to use the [Set recording and analytics behavior block](set-recording-behavior.md) in your step-by-step guide flow, [enable Contact Lens](sensitive-data-redaction.md), and enable the redaction of sensitive date. For full details on how to enable PII redaction, see [Enable redaction of sensitive data](enable-analytics.md#enable-redaction).
+Interactive message content and end customer responses are stored in contact record transcript and are viewable by other chat participants and contact analysts with access to transcripts. To prevent PII from appearing in your contact record transcript **after the contact has ended**, you will want to use the [Set recording and analytics behavior block](set-recording-behavior.md) in your step-by-step guide flow, [enable conversational analytics](sensitive-data-redaction.md), and enable the redaction of sensitive date. For full details on how to enable PII redaction, see [Enable redaction of sensitive data](enable-analytics.md#enable-redaction).
 
  The types of pages supported are:
 + **ListPicker**: a list of options that the user must select from with image support.

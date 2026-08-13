@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-web-
 
 Web Search on Amazon Bedrock is integrated with AWS CloudTrail. CloudTrail captures API activity for Web Search so you can audit who invoked the tool, when, and from where.
 
-Web Search activity is recorded as CloudTrail data events. Data events are not logged by default. To capture them, create a trail (or event data store) and enable data event logging for Web Search. For the steps, see [Logging data events with AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html). Additional charges apply for data events.
+Web Search activity is recorded as CloudTrail data events. Data events are not logged by default. To capture them, create a trail (or event data store) and enable data event logging for Web Search. For the steps, see [Logging data events with AWS CloudTrail](awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html). Additional charges apply for data events.
 
 Once data event logging is enabled, CloudTrail captures the following for each recorded call:
 + The identity that invoked the action

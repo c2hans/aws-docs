@@ -58,6 +58,13 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 200.
 Required: Yes
 
+ ** datasetId **   <a name="Social-Type-LinkedWhatsAppBusinessAccount-datasetId"></a>
+The Meta Conversions API dataset ID associated with this WhatsApp Business Account. This value is a numeric string of 10 to 20 digits. This field is not present when no dataset has been created for this account.
+Type: String
+Length Constraints: Minimum length of 10. Maximum length of 20.
+Pattern: `[0-9]+`
+Required: No
+
  ** marketingMessagesOnboardingStatus **   <a name="Social-Type-LinkedWhatsAppBusinessAccount-marketingMessagesOnboardingStatus"></a>
 The onboarding status for the Marketing Messages API. This value is fetched from Meta and indicates whether the WhatsApp Business Account is onboarded for Meta's Marketing Messages API.
 Type: String

@@ -75,7 +75,7 @@ AWS tags that contain a key value pair and may be searched by console, command l
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a combination of "VersionId\|Key\|Value" as a string.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-glue-registry-return-values-fn--getatt"></a>

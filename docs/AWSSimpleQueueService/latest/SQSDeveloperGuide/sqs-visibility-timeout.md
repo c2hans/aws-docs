@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 <a name="sqs-visibility-timeout"></a>
 
 When you receive a message from an Amazon SQS queue, it remains in the queue but becomes temporarily invisible to other consumers. This invisibility is controlled by the visibility timeout, which ensures that other consumers cannot process the same message while you are working on it. Amazon SQS offers two options for deleting messages after processing:
-+ **Manual deletion** – You explicitly delete messages using the [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_DeleteMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_DeleteMessage.html) action.
++ **Manual deletion** – You explicitly delete messages using the [`DeleteMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_DeleteMessage.html) action.
 + **Automatic deletion** – Supported in certain AWS SDKs, messages are automatically deleted upon successful processing, simplifying workflows.
 
 ![Time line graph displaying how requests are processed during visibility timeout](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/images/sqs-visibility-timeout-diagram.png)
@@ -25,7 +25,7 @@ When you receive a message from an Amazon SQS queue, it remains in the queue but
 ## Setting and adjusting the visibility timeout
 <a name="configuring-visibility-timeout"></a>
 
-The visibility timeout starts as soon as a message is delivered to you. During this period, you're expected to process and delete the message. If you don't delete it before the timeout expires, the message becomes visible again in the queue and can be retrieved by another consumer. The default visibility timeout for a queue is 30 seconds, but you can adjust this to match the time your application needs to process and delete a message. You can also set a specific visibility timeout for individual messages without changing the queue's overall setting. Use the [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ChangeMessageVisibility.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ChangeMessageVisibility.html) action to programmatically extend or shorten the timeout as needed.
+The visibility timeout starts as soon as a message is delivered to you. During this period, you're expected to process and delete the message. If you don't delete it before the timeout expires, the message becomes visible again in the queue and can be retrieved by another consumer. The default visibility timeout for a queue is 30 seconds, but you can adjust this to match the time your application needs to process and delete a message. You can also set a specific visibility timeout for individual messages without changing the queue's overall setting. Use the [`ChangeMessageVisibility`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ChangeMessageVisibility.html) action to programmatically extend or shorten the timeout as needed.
 
 ## In flight messages and quotas
 <a name="inflight-messages"></a>
@@ -60,7 +60,7 @@ If you don't process and delete a message before the visibility timeout expires�
 <a name="changing-terminating-visibility-timeout"></a>
 
 You can change or terminate the visibility timeout using the `ChangeMessageVisibility` action:
-+ **Changing the timeout** – Adjust the visibility timeout dynamically using [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ChangeMessageVisibility.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ChangeMessageVisibility.html). This allows you to extend or reduce timeout durations to match processing needs.
++ **Changing the timeout** – Adjust the visibility timeout dynamically using [`ChangeMessageVisibility`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ChangeMessageVisibility.html). This allows you to extend or reduce timeout durations to match processing needs.
 + **Terminating the timeout** – If you decide not to process a received message, terminate its visibility timeout by setting the `VisibilityTimeout` to 0 seconds through the `ChangeMessageVisibility` action. This immediately makes the message available for other consumers to process.
 
 ## Best practices

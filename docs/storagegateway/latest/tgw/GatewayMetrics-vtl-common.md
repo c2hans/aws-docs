@@ -9,7 +9,7 @@ This topics in this section describe procedures and conceptual information about
 
 You can use Amazon CloudWatch Logs to get information about the health of your Tape Gateway and related resources. You can use the logs to monitor your gateway for errors that it encounters. In addition, you can use Amazon CloudWatch subscription filters to automate processing of the log information in real time.
 
-Storage Gateway provides CloudWatch metrics at no additional charge. Storage Gateway metrics are recorded for a period of two weeks. By using these metrics, you can access historical information and get a better perspective of how your Tape Gateway and virtual tapes are performing. For detailed information about CloudWatch, see the [https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html).
+Storage Gateway provides CloudWatch metrics at no additional charge. Storage Gateway metrics are recorded for a period of two weeks. By using these metrics, you can access historical information and get a better perspective of how your Tape Gateway and virtual tapes are performing. For detailed information about CloudWatch, see the [*Amazon CloudWatch User Guide*](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html).
 
 Data throughput, data latency, and operations per second are measures that you can use to understand how your storage applications are performing with Tape Gateway. When you use the correct aggregation statistic, these values can be measured by using the Storage Gateway metrics that are provided for you.
 

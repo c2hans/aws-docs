@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/Explore
 # Understanding default EventBridge rules created by Integrated Setup
 <a name="Explorer-setup-default-rules"></a>
 
-During the integrated setup process for Explorer and OpsCenter, you can choose to enable a number of default rules that are based on events detected by Amazon EventBridge. When these events are detected, the system automatically creates OpsItems in AWS Systems Manager OpsCenter.
+During the integrated setup process for Explorer and OpsCenter, you can choose to enable several default rules that are based on events detected by Amazon EventBridge. When these events are detected, the system automatically creates OpsItems in AWS Systems Manager OpsCenter.
 
 For example, the rule `SSMOpsItems-Autoscaling-instance-termination-failure` results in an OpsItem being created when the termination of an EC2 auto scaling instance fails.
 

@@ -93,7 +93,7 @@ Type: String to string map
 Valid Keys: `SamplingIntervalInMilliseconds | ReportingIntervalInMilliseconds | MinimumTimeForReportingInMilliseconds | MemoryUsageLimitPercent | MaxStackDepth`
 
  ** [periodInSeconds](#API_ConfigureAgent_ResponseSyntax) **   <a name="profiler-ConfigureAgent-response-periodInSeconds"></a>
- How long a profiling agent should send profiling data using [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html). For example, if this is set to 300, the profiling agent calls [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html) every 5 minutes to submit the profiled data collected during that period.
+ How long a profiling agent should send profiling data using [`ConfigureAgent`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html). For example, if this is set to 300, the profiling agent calls [`ConfigureAgent`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html) every 5 minutes to submit the profiled data collected during that period.
 Type: Integer
 
  ** [shouldProfile](#API_ConfigureAgent_ResponseSyntax) **   <a name="profiler-ConfigureAgent-response-shouldProfile"></a>

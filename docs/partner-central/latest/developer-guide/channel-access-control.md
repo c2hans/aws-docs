@@ -44,7 +44,7 @@ Within the AWS Partner Central linked AWS account, create an IAM role to manage 
     ]
   }
   ```
-+ Associate the [https://docs.aws.amazon.com/partner-central/latest/getting-started/managed-policies.html#security-iam-awsmanpol-AWSPartnerCentralChannelManagement](https://docs.aws.amazon.com/partner-central/latest/getting-started/managed-policies.html#security-iam-awsmanpol-AWSPartnerCentralChannelManagement) managed policy to the `PartnerCentralRoleForChannel` role.
++ Associate the [`AWSPartnerCentralChannelManagement`](https://docs.aws.amazon.com/partner-central/latest/getting-started/managed-policies.html#security-iam-awsmanpol-AWSPartnerCentralChannelManagement) managed policy to the `PartnerCentralRoleForChannel` role.
 
 ### Access for the program management account AWS account(s)
 <a name="program-management-account-access"></a>

@@ -12,7 +12,7 @@ The following examples show you how to find your model evaluation jobs using the
 ------
 #### [ Amazon Bedrock console ]
 
-1. Open the Amazon Bedrock console: [https://console.aws.amazon.com/bedrock/home](https://console.aws.amazon.com/bedrock/home)
+1. Open the Amazon Bedrock console: [[https://console.aws.amazon.com/bedrock/](https://console.aws.amazon.com/bedrock/)](https://console.aws.amazon.com/bedrock/home)
 
 1. In the navigation pane, choose **Model evaluation**.
 

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 # Amazon S3 deploy action reference
 <a name="action-reference-S3Deploy"></a>
 
-You use an Amazon S3 deploy action to deploy files to an Amazon S3 bucket for static web site hosting or archive. You can specify whether to extract deployment files before upload to your bucket.
+You use an Amazon S3 deploy action to deploy files to an Amazon S3 bucket for static website hosting or archive. You can specify whether to extract deployment files before upload to your bucket.
 
 **Note**
 This reference topic describes the Amazon S3 deployment action for CodePipeline where the deployment platform is an Amazon S3 bucket configured for hosting. For reference information about the Amazon S3 source action in CodePipeline, see [Amazon S3 source action reference](action-reference-S3.md).
@@ -35,7 +35,7 @@ The name of the Amazon S3 bucket where files are to be deployed.
 
 **Extract**
 Required: Yes
-If true, specifies that files are to be extracted before upload. Otherwise, application files remain zipped for upload, such as in the case of a hosted static web site. If false, then the `ObjectKey` is required.
+If true, specifies that files are to be extracted before upload. Otherwise, application files remain zipped for upload, such as in the case of a hosted static website. If false, then the `ObjectKey` is required.
 
 **ObjectKey**
 Conditional. Required if `Extract` = false
@@ -53,7 +53,7 @@ The `CannedACL` parameter applies the specified [canned ACL](https://docs.aws.am
 
 **CacheControl**
 Required: No
-The `CacheControl` parameter controls caching behavior for requests/responses for objects in the bucket. For a list of valid values, see the [http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9) header field for HTTP operations. To enter multiple values in `CacheControl`, use a comma between each value. You can add a space after each comma (optional), as shown in this example for the CLI:
+The `CacheControl` parameter controls caching behavior for requests/responses for objects in the bucket. For a list of valid values, see the [`Cache-Control`](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9) header field for HTTP operations. To enter multiple values in `CacheControl`, use a comma between each value. You can add a space after each comma (optional), as shown in this example for the CLI:
 
 ```
 "CacheControl": "public, max-age=0, no-transform"

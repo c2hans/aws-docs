@@ -64,7 +64,7 @@ create_model_response = sagemaker_client.create_model(
     })
 ```
 
-See [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) description in the SageMaker API Reference Guide for a full list of API parameters.
+See [`CreateModel`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) description in the SageMaker API Reference Guide for a full list of API parameters.
 
 If you're using a SageMaker AI provided container, you can increase the model server timeout and payload sizes from the default values to the framework‐supported maximums by setting environment variables in this step. You might not be able to leverage the maximum timeout and payload sizes that Asynchronous Inference supports if you don't explicitly set these variables. The following example shows how you can set the environment variables for a PyTorch Inference container based on TorchServe.
 

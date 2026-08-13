@@ -86,7 +86,7 @@ private static final StaticTableSchema<Customer> CUSTOMER_TABLE_SCHEMA =
 ## Example
 <a name="ddb-en-client-adv-features-conversion-example"></a>
 
-This example shows an `AttributeConverterProvider` implementation that provides an attribute converter for [https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html) objects.
+This example shows an `AttributeConverterProvider` implementation that provides an attribute converter for [`java.net.HttpCookie`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html) objects.
 
 The following `SimpleUser` class contains an attribute named `lastUsedCookie` that is an instance of `HttpCookie`.
 

@@ -87,7 +87,7 @@ The following SQL commands create a user with monitoring roles.
 **Note**
 Manual installation of Python 3.8 or higher is required for SuSE Linux 15 SP4, RedHat Linux 8.6, and later operating systems.
 + **Pip3** – Install the installer program, pip3, on your operating system. If pip3 is not detected on your operating system, it will be installed.
-+ **hdbclient** – CloudWatch Application Insights uses the python driver to connect to the SAP HANA database. If the client is not installed under python3, ensure that you have hdbclient tar file version `2.10 or later` under `/hana/shared/SID/hdbclient/`.
++ **hdbclient** – CloudWatch Application Insights uses the python driver to connect to the SAP HANA database. If the client is not installed under python3, make sure that you have hdbclient tar file version `2.10 or later` under `/hana/shared/SID/hdbclient/`.
 + **Amazon CloudWatch agent** – Make sure that you are not running a preexisting CloudWatch agent on your Amazon EC2 instance. If you have CloudWatch agent installed, make sure to remove the configuration of the resources you are using in CloudWatch Application Insights from the existing CloudWatch agent configuration file to avoid a merge conflict. For more information, see [Manually create or edit the CloudWatch agent configuration file](CloudWatch-Agent-Configuration-File-Details.md).
 + **AWS Systems Manager enablement** – Install SSM Agent on your instances, and the instances must be enabled for SSM. For information about how to install the SSM Agent, see [Working with SSM Agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html) in the *AWS Systems Manager User Guide*.
 + **Amazon EC2 instance roles** – You must attach the following Amazon EC2 instance roles to configure your database.
@@ -156,7 +156,7 @@ Use the following steps to set up monitoring for your SAP HANA database
 
 1. The **Application Insights** page displays the list of applications that are monitored with Application Insights, and the monitoring status for each application. In the upper right-hand corner, choose **Add an application**.
 
-1. On the **Specify application details** page, from the dropdown list under **Resource group**, select the AWS resource group that contains your SAP HANA database resources. If you haven't created a resource group for your application, you can create one by choosing **Create new resource group** under the **Resource group** dropdown. For more information about creating resource groups, see the [https://docs.aws.amazon.com/ARG/latest/userguide/resource-groups.html](https://docs.aws.amazon.com/ARG/latest/userguide/resource-groups.html)
+1. On the **Specify application details** page, from the dropdown list under **Resource group**, select the AWS resource group that contains your SAP HANA database resources. If you haven't created a resource group for your application, you can create one by choosing **Create new resource group** under the **Resource group** dropdown. For more information about creating resource groups, see the [*AWS Resource Groups User Guide.*](https://docs.aws.amazon.com/ARG/latest/userguide/resource-groups.html)
 
 1. Under **Monitor CloudWatch Events**, select the check box to integrate Application Insights monitoring with CloudWatch Events to get insights from Amazon EBS, Amazon EC2, AWS CodeDeploy, Amazon ECS, AWS Health APIs and notifications, Amazon RDS, Amazon S3, and AWS Step Functions.
 
@@ -275,7 +275,7 @@ Anomaly detection algorithms account for the seasonality and trend changes of me
 
 ![Log group showing out of memory.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/appinsights-anomaly-detection.png)
 
-After you create a model, CloudWatch anomaly detection continuously evaluates the model and makes adjustments to it to ensure that is it as accurate as possible. This includes retraining the model to adjust if the metric values evolve over time or experience sudden changes. It also includes predictors to improve the models for metrics that are seasonal, spiky, or sparse.
+After you create a model, CloudWatch anomaly detection continuously evaluates the model and makes adjustments to it to make sure that is it as accurate as possible. This includes retraining the model to adjust if the metric values evolve over time or experience sudden changes. It also includes predictors to improve the models for metrics that are seasonal, spiky, or sparse.
 
 ## Troubleshooting Application Insights for SAP HANA
 <a name="appinsights-tutorial-sap-hana-troubleshooting-health-dashboard"></a>

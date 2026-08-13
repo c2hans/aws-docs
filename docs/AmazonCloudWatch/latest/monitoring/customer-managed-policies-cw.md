@@ -60,7 +60,7 @@ The following policy allows a user read-only access to CloudWatch and view Amazo
 ## Example 3: Stop or terminate an Amazon EC2 instance
 <a name="stop-terminate-example-cw"></a>
 
-The following policy allows an CloudWatch alarm action to stop or terminate an EC2 instance. In the sample below, the GetMetricData, ListMetrics, and DescribeAlarms actions are optional. It is recommended that you include these actions to ensure that you have correctly stopped or terminated the instance.
+The following policy allows an CloudWatch alarm action to stop or terminate an EC2 instance. In the sample below, the GetMetricData, ListMetrics, and DescribeAlarms actions are optional. It is recommended that you include these actions to make sure that you have correctly stopped or terminated the instance.
 
 ------
 #### [ JSON ]

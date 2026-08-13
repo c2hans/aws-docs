@@ -61,7 +61,7 @@ The Amazon RDS console indicates that the subscription is being created.
 ## AWS CLI
 <a name="USER_Events.Subscribing.CLI"></a>
 
-To subscribe to RDS event notification, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/create-event-subscription.html](https://docs.aws.amazon.com/cli/latest/reference/rds/create-event-subscription.html) command. Include the following required parameters:
+To subscribe to RDS event notification, use the AWS CLI [`create-event-subscription`](https://docs.aws.amazon.com/cli/latest/reference/rds/create-event-subscription.html) command. Include the following required parameters:
 + `--subscription-name`
 + `--sns-topic-arn`
 
@@ -86,6 +86,6 @@ aws rds create-event-subscription ^
 ## API
 <a name="USER_Events.Subscribing.API"></a>
 
-To subscribe to Amazon RDS event notification, call the Amazon RDS API function [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateEventSubscription.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateEventSubscription.html). Include the following required parameters:
+To subscribe to Amazon RDS event notification, call the Amazon RDS API function [`CreateEventSubscription`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateEventSubscription.html). Include the following required parameters:
 + `SubscriptionName`
 + `SnsTopicArn`

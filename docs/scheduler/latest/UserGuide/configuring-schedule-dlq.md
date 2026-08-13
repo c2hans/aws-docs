@@ -39,7 +39,7 @@ If successful, you'll see the `QueueURL` in the output.
 }
 ```
 
- After you've created the queue, note the queue ARN. You'll need the ARN when you specify a DLQ for your EventBridge Scheduler schedule. You can find your queue ARN in the Amazon SQS console, or by using the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/get-queue-attributes.html#get-queue-attributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/get-queue-attributes.html#get-queue-attributes) AWS CLI command.
+ After you've created the queue, note the queue ARN. You'll need the ARN when you specify a DLQ for your EventBridge Scheduler schedule. You can find your queue ARN in the Amazon SQS console, or by using the [`get-queue-attributes`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/get-queue-attributes.html#get-queue-attributes) AWS CLI command.
 
 ```
 $ aws sqs get-queue-attributes --queue-url {{your-dlq-url}} --attribute-names QueueArn
@@ -115,7 +115,7 @@ $ aws sqs get-queue-attributes --queue-url {{your-dlq-url}} --attribute-names Qu
 #### [ AWS CLI ]
 
 **To update an existing schedule using the AWS CLI**
-+  Use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/update-schedule.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/update-schedule.html) command to update your schedule. Specify the Amazon SQS queue you created previously as the DLQ. Specify the IAM role ARN to which you attached the required Amazon SQS permissions as the execution role. Replace all other placeholder values with your information.
++  Use the [`update-schedule`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/update-schedule.html) command to update your schedule. Specify the Amazon SQS queue you created previously as the DLQ. Specify the IAM role ARN to which you attached the required Amazon SQS permissions as the execution role. Replace all other placeholder values with your information.
 
   ```
   $ aws scheduler update-schedule --name {{existing-schedule}} \
@@ -125,7 +125,7 @@ $ aws sqs get-queue-attributes --queue-url {{your-dlq-url}} --attribute-names Qu
   ```
 
 **To create a new schedule with a DLQ using the AWS CLI**
-+  Use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/create-schedule.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/create-schedule.html) command to create a schedule. Replace all placeholder values with your information.
++  Use the [`create-schedule`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/create-schedule.html) command to create a schedule. Replace all placeholder values with your information.
 
   ```
   $ aws scheduler create-schedule --name {{new-schedule}} \
@@ -141,7 +141,7 @@ $ aws sqs get-queue-attributes --queue-url {{your-dlq-url}} --attribute-names Qu
 ## Retrieve the dead-letter event
 <a name="configuring-schedule-dlq-dead-letter-event"></a>
 
- Use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/receive-message.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/receive-message.html) command, as shown in the following, to retrieve a dead-letter event from the DLQ. You can set the number of messages to retrieve using the `--max-number-of-messages` attribute.
+ Use the [`receive-message`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/receive-message.html) command, as shown in the following, to retrieve a dead-letter event from the DLQ. You can set the number of messages to retrieve using the `--max-number-of-messages` attribute.
 
 ```
 $ aws sqs receive-message --queue-url {{your-dlq-url}} --attribute-names All --message-attribute-names All --max-number-of-messages 1

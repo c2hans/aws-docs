@@ -67,7 +67,7 @@ Global tables configured for multi-Region strong consistency (MRSC) do not use D
 ## Transactions
 <a name="global-tables-transactions"></a>
 
-On a global table configured for MREC, DynamoDB transaction operations ( [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TransactWriteItems.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TransactWriteItems.html) and [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TransactGetItems.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TransactGetItems.html)) are only atomic within the Region where the operation was invoked. Transactional writes are not replicated as a unit across Regions, meaning only some of the writes in a transaction may be returned by read operations in other replicas at a given point in time.
+On a global table configured for MREC, DynamoDB transaction operations ( [`TransactWriteItems`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TransactWriteItems.html) and [`TransactGetItems`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TransactGetItems.html)) are only atomic within the Region where the operation was invoked. Transactional writes are not replicated as a unit across Regions, meaning only some of the writes in a transaction may be returned by read operations in other replicas at a given point in time.
 
 For example, if you have a global table with replicas in the US East (Ohio) and US West (Oregon) Regions and perform a `TransactWriteItems` operation in the US East (Ohio) Region, you may observe partially completed transactions in the US West (Oregon) Region as changes are replicated. Changes will only be replicated to other Regions once they've been committed in the source Region.
 
@@ -81,7 +81,7 @@ Global tables configured for multi-Region strong consistency (MRSC) do not suppo
 
 Replication consumes write capacity. Replicas configured for provisioned capacity may throttle requests if the combination of application write throughput and replication write throughput exceeds the provisioned write capacity. For global tables using provisioned mode, auto scaling settings for both read and write capacities are synchronized between replicas.
 
-You can independently configure read capacity settings for each replica in a global table by using the [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ProvisionedThroughputOverride.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ProvisionedThroughputOverride.html) parameter at the replica level. By default, changes to provisioned read capacity are applied to all replicas in the global table. When adding a new replica to a global table, the read capacity of the source table or replica is used as the initial value unless a replica-level override is explicitly specified.
+You can independently configure read capacity settings for each replica in a global table by using the [`ProvisionedThroughputOverride`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ProvisionedThroughputOverride.html) parameter at the replica level. By default, changes to provisioned read capacity are applied to all replicas in the global table. When adding a new replica to a global table, the read capacity of the source table or replica is used as the initial value unless a replica-level override is explicitly specified.
 
 ### On-demand mode
 <a name="gt_throughput.on-demand"></a>

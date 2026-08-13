@@ -815,7 +815,7 @@ At cluster creation time, the head node waits for all the static nodes to be rea
 Cluster size may change during an update. For more information, see [Cluster capacity size and update](slurm-workload-manager-v3.md)
 
 **`DynamicNodePriority` (**Optional**, `Integer`)**
-The priority of dynamic nodes in a queue compute resource. The priority maps to the Slurm node [https://slurm.schedmd.com/slurm.conf.html#OPT_Weight](https://slurm.schedmd.com/slurm.conf.html#OPT_Weight) configuration parameter for the compute resource dynamic nodes. The default value is `1000`.
+The priority of dynamic nodes in a queue compute resource. The priority maps to the Slurm node [`Weight`](https://slurm.schedmd.com/slurm.conf.html#OPT_Weight) configuration parameter for the compute resource dynamic nodes. The default value is `1000`.
 Slurm prioritizes nodes with the lowest `Weight` values first.
 The use of many different `Weight` values in a Slurm partition (queue) might slow down the rate of job scheduling in the queue.
 In AWS ParallelCluster versions earlier than version 3.7.0, both static and dynamic nodes were assigned the same default weight of `1`. In this case, Slurm might prioritize idle dynamic nodes over idle static nodes due to the naming schema for static and dynamic nodes. When all else is equal, Slurm schedules nodes alphabetically by name.
@@ -823,7 +823,7 @@ In AWS ParallelCluster versions earlier than version 3.7.0, both static and dyna
 [Update policy: This setting can be changed during an update.](using-pcluster-update-cluster-v3.md#update-policy-setting-supported-v3)
 
 **`StaticNodePriority` (**Optional**, `Integer`)**
-The priority of static nodes in a queue compute resource. The priority maps to the Slurm node [https://slurm.schedmd.com/slurm.conf.html#OPT_Weight](https://slurm.schedmd.com/slurm.conf.html#OPT_Weight) configuration parameter for the compute resource static nodes. The default value is `1`.
+The priority of static nodes in a queue compute resource. The priority maps to the Slurm node [`Weight`](https://slurm.schedmd.com/slurm.conf.html#OPT_Weight) configuration parameter for the compute resource static nodes. The default value is `1`.
 Slurm prioritizes nodes with the lowest `Weight` values first.
 The use of many different `Weight` values in a Slurm partition (queue) might slow down the rate of job scheduling in the queue.
 `StaticNodePriority` is added in AWS ParallelCluster version 3.7.0.

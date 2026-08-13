@@ -126,6 +126,8 @@ Add the following statement to the Gateway Execution Role permission policy:
 
 Without this permission, tool invocations fail at the token-mint step (`AccessDenied` on `GetWorkloadAccessToken`) once temporal policy is enabled. For production, replace `<gatewayId>` with the specific Gateway ID to follow least-privilege principles.
 
+For an overview of this requirement in the context of temporal policy considerations, see [Required IAM permissions](policy-temporal.md#policy-temporal-iam-permissions).
+
 ## Resource Management Role
 <a name="policy-permissions-management-role"></a>
 

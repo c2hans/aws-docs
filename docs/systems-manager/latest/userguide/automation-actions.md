@@ -81,7 +81,7 @@ Valid values: Abort \| Continue \| step:{{step\_name}}
 Required: No
 
 [onCancel](#canProp)
-Indicates which step the automation should go to in the event that a user cancels the automation. Automation runs the cancellation workflow for a maximum of two minutes.
+Indicates which step the automation should go to if a user cancels the automation. Automation runs the cancellation workflow for a maximum of two minutes.
 Type: String
 Valid values: Abort \| step:{{step\_name}}
 Required: No

@@ -307,7 +307,7 @@ The diagnostic information is collected and stored at:
 /var/log/eks_i-EXAMPLE_2025-03-25_0000-UTC_0.7.8.tar.gz
 ```
 
-To retrieve log bundle for Bottlerocket nodes, please refer to [Bottlerocket Log](https://github.com/bottlerocket-os/bottlerocket?tab=readme-ov-file#logs) for more details.
+To retrieve the log bundle for Bottlerocket nodes, please refer to [Bottlerocket Logs](https://github.com/bottlerocket-os/bottlerocket?tab=readme-ov-file#logs) for more details.
 
 ## Container runtime network not ready
 <a name="troubleshoot-container-runtime-network"></a>
@@ -382,7 +382,7 @@ spec:
 ```
 
 ## Node groups must match Kubernetes version before upgrading control plane
-<a name="troubleshoot-node-grups-must-match-kubernetes-version"></a>
+<a name="troubleshoot-node-groups-must-match-kubernetes-version"></a>
 
 Before you upgrade a control plane to a new Kubernetes version, the minor version of the managed and Fargate nodes in your cluster must be the same as your control plane’s current version. The Amazon EKS `update-cluster-version` API rejects requests until you upgrade all Amazon EKS managed nodes to the current cluster version. Amazon EKS provides APIs to upgrade managed nodes. For information on upgrading a managed node group’s Kubernetes version, see [Update a managed node group for your cluster](update-managed-node-group.md). To upgrade the version of a Fargate node, delete the pod that’s represented by the node and redeploy the pod after you upgrade your control plane. For more information, see [Update existing cluster to new Kubernetes version](update-cluster.md).
 
@@ -516,7 +516,7 @@ The health of an Amazon EKS cluster is a shared responsibility between Amazon EK
 To access the health of your cluster in the Amazon EKS console, look for a table called **Health Issues** in the **Cluster health issues** tab of the observability dashboard accessed from the Amazon EKS cluster detail page. This data will also be available by calling the `DescribeCluster` action in the EKS API, for example from within the AWS Command Line Interface.
 
  **Why should I use this feature?**
-You will get increased visibility into the health of your Amazon EKS cluster, quickly diagnose and fix any issues, without needing to spend time debugging or opening AWS support cases. For example: you accidentally deleted a subnet for the Amazon EKS cluster, Amazon EKS won’t be able to create cross account network interfaces and Kubernetes AWS CLI commands such as `kubectl` exec or `kubectl` logs. These will fail with the error: `Error from server: error dialing backend: remote error: tls: internal error.` Now you will see an Amazon EKS health issue that says: `subnet-da60e280 was deleted: could not create network interface`.
+You will get increased visibility into the health of your Amazon EKS cluster, quickly diagnose and fix any issues, without needing to spend time debugging or opening AWS support cases. For example: you accidentally deleted a subnet for the Amazon EKS cluster, Amazon EKS won’t be able to create cross-account network interfaces and Kubernetes AWS CLI commands such as `kubectl` exec or `kubectl` logs. These will fail with the error: `Error from server: error dialing backend: remote error: tls: internal error.` Now you will see an Amazon EKS health issue that says: `subnet-da60e280 was deleted: could not create network interface`.
 
  **How does this feature relate or work with other AWS services?**
 IAM roles and Amazon VPC subnets are two examples of prerequisite infrastructure that cluster health detects issues with. This feature will return detailed information if those resources are not configured properly.
@@ -537,17 +537,17 @@ The first two columns are what are needed for API response values. The third fie
 
 | Code | Message | ResourceIds | Cluster Recoverable? |
 | --- | --- | --- | --- |
-| SUBNET\_NOT\_FOUND | We couldn’t find one or more subnets currently associated with your cluster. Call Amazon EKS update-cluster-config API to update subnets. | Subnet Ids | Yes |
-| SECURITY\_GROUP\_NOT\_FOUND | We couldn’t find one or more security groups currently associated with your cluster. Call Amazon EKS update-cluster-config API to update security groups | Security group Ids | Yes |
-| IP\_NOT\_AVAILABLE | One or more of the subnets associated with your cluster does not have enough available IP addresses for Amazon EKS to perform cluster management operations. Free up addresses in the subnet(s), or associate different subnets to your cluster using the Amazon EKS update-cluster-config API. | Subnet Ids | Yes |
-| VPC\_NOT\_FOUND | We couldn’t find the VPC associated with your cluster. You must delete and recreate your cluster. | VPC id | No |
+| SUBNET\_NOT\_FOUND | We couldn’t find one or more subnets currently associated with your cluster. Call Amazon EKS update-cluster-config API to update subnets. | Subnet IDs | Yes |
+| SECURITY\_GROUP\_NOT\_FOUND | We couldn’t find one or more security groups currently associated with your cluster. Call Amazon EKS update-cluster-config API to update security groups. | Security group IDs | Yes |
+| IP\_NOT\_AVAILABLE | One or more of the subnets associated with your cluster does not have enough available IP addresses for Amazon EKS to perform cluster management operations. Free up addresses in the subnet(s), or associate different subnets to your cluster using the Amazon EKS update-cluster-config API. | Subnet IDs | Yes |
+| VPC\_NOT\_FOUND | We couldn’t find the VPC associated with your cluster. You must delete and recreate your cluster. | VPC ID | No |
 | ASSUME\_ROLE\_ACCESS\_DENIED | Your cluster is not using the Amazon EKS service-linked-role. We couldn’t assume the role associated with your cluster to perform required Amazon EKS management operations. Check the role exists and has the required trust policy. | The cluster IAM role | Yes |
 | PERMISSION\_ACCESS\_DENIED | Your cluster is not using the Amazon EKS service-linked-role. The role associated with your cluster does not grant sufficient permissions for Amazon EKS to perform required management operations. Check the policies attached to the cluster role and if any separate deny policies are applied. | The cluster IAM role | Yes |
 | ASSUME\_ROLE\_ACCESS\_DENIED\_USING\_SLR | We couldn’t assume the Amazon EKS cluster management service-linked-role. Check the role exists and has the required trust policy. | The Amazon EKS service-linked-role | Yes |
 | PERMISSION\_ACCESS\_DENIED\_USING\_SLR | The Amazon EKS cluster management service-linked-role does not grant sufficient permissions for Amazon EKS to perform required management operations. Check the policies attached to the cluster role and if any separate deny policies are applied. | The Amazon EKS service-linked-role | Yes |
 | OPT\_IN\_REQUIRED | Your account doesn’t have an Amazon EC2 service subscription. Update your account subscriptions in your account settings page. | N/A | Yes |
 | STS\_REGIONAL\_ENDPOINT\_DISABLED | The STS regional endpoint is disabled. Enable the endpoint for Amazon EKS to perform required cluster management operations. | N/A | Yes |
-| KMS\_KEY\_DISABLED | The AWS KMS Key associated with your cluster is disabled. Re-enable the key to recover your cluster. | The KMS Key Arn | Yes |
+| KMS\_KEY\_DISABLED | The AWS KMS Key associated with your cluster is disabled. Re-enable the key to recover your cluster. | The KMS Key ARN | Yes |
 | KMS\_KEY\_NOT\_FOUND | We couldn’t find the AWS KMS key associated with your cluster. You must delete and recreate the cluster. | The KMS Key ARN | No |
-| KMS\_GRANT\_REVOKED | Grants for the AWS KMS Key associated with your cluster are revoked. You must delete and recreate the cluster. | The KMS Key Arn | No |
+| KMS\_GRANT\_REVOKED | Grants for the AWS KMS Key associated with your cluster are revoked. You must delete and recreate the cluster. | The KMS Key ARN | No |
 | ETCD\_DB\_SIZE\_EXCEEDED | Your Amazon EKS cluster has exceeded the etcd database size limit. etcd is a key-value data store that runs in the Kubernetes control plane and maintains your cluster’s configuration and state. To prevent your cluster from entering a degraded state, please reduce the etcd database size by removing unnecessary Kubernetes objects. For guidance on identifying and cleaning up objects contributing to database size, see [Managing etcd database size on Amazon EKS clusters](https://aws.amazon.com/blogs/containers/managing-etcd-database-size-on-amazon-eks-clusters/). If you continue to experience issues after cleanup, please contact AWS Support. | The Cluster ARN | Yes |

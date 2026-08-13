@@ -75,34 +75,34 @@ This list describes how you can specify settings and valid values in a response 
 
 **Content-Security-Policy**
 Specifies the content security policy directives that CloudFront uses as values for the `Content-Security-Policy` response header.
-For more information about this header and valid policy directives, see [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) in the MDN Web Docs.
+For more information about this header and valid policy directives, see [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) in the MDN Web Docs.
 The `Content-Security-Policy` header value is limited to 1783 characters.
 
 **Referrer-Policy**
 Specifies the referrer policy directive that CloudFront uses as the value for the `Referrer-Policy` response header. Valid values for this setting are `no-referrer`, `no-referrer-when-downgrade`, `origin`, `origin-when-cross-origin`, `same-origin`, `strict-origin`, `strict-origin-when-cross-origin`, and `unsafe-url`.
-For more information about this header and these directives, see [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy) in the MDN Web Docs.
+For more information about this header and these directives, see [Referrer-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy) in the MDN Web Docs.
 
 **Strict-Transport-Security**
 Specifies the directives and settings that CloudFront uses as the value for the `Strict-Transport-Security` response header. For this setting, you separately specify:
 + A number of seconds, which CloudFront uses as the value for the `max-age` directive of this header
 + A Boolean setting (`true` or `false`) for `preload`, which determines whether CloudFront includes the `preload` directive in the value of this header
 + A Boolean setting (`true` or `false`) for `includeSubDomains`, which determines whether CloudFront includes the `includeSubDomains` directive in the value of this header
-For more information about this header and these directives, see [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security) in the MDN Web Docs.
+For more information about this header and these directives, see [Strict-Transport-Security](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security) in the MDN Web Docs.
 
 **X-Content-Type-Options**
 This is a Boolean setting (`true` or `false`) that determines if CloudFront adds the `X-Content-Type-Options` header to responses. When this setting is `true`, CloudFront adds the `X-Content-Type-Options: nosniff` header to responses. Otherwise CloudFront doesn't add this header.
-For more information about this header, see [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options) in the MDN Web Docs.
+For more information about this header, see [X-Content-Type-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options) in the MDN Web Docs.
 
 **X-Frame-Options**
 Specifies the directive that CloudFront uses as the value for the `X-Frame-Options` response header. Valid values for this setting are `DENY` or `SAMEORIGIN`.
-For more information about this header and these directives, see [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options) in the MDN Web Docs.
+For more information about this header and these directives, see [X-Frame-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options) in the MDN Web Docs.
 
 **X-XSS-Protection**
 Specifies the directives and settings that CloudFront uses as the value for the `X-XSS-Protection` response header. For this setting, you separately specify:
 + An `X-XSS-Protection` setting of `0` (disables XSS filtering) or `1` (enables XSS filtering)
 + A Boolean setting (`true` or `false`) for `block`, which determines whether CloudFront includes the `mode=block` directive in the value for this header
 + A reporting URI, which determines whether CloudFront includes the `report={{reporting URI}}` directive in the value for this header
-You can specify `true` for `block`, or you can specify a reporting URI, but you can't specify both together. For more information about this header and these directives, see [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection) in the MDN Web Docs.
+You can specify `true` for `block`, or you can specify a reporting URI, but you can't specify both together. For more information about this header and these directives, see [X-XSS-Protection](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection) in the MDN Web Docs.
 
 **Origin override**
 Each of these security headers settings contains a Boolean setting (`true` or `false`) that determines how CloudFront behaves when the response from the origin contains that header.

@@ -21,14 +21,14 @@ You can use the following managed policies to grant permissions to users in your
 
 Provides all of the permissions required to create and fully administer an organization.
 
-View the policy: [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSOrganizationsFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSOrganizationsFullAccess.html).
+View the policy: [`AWSOrganizationsFullAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSOrganizationsFullAccess.html).
 
 ### AWS managed policy: AWSOrganizationsReadOnlyAccess
 <a name="security-iam-awsmanpol-AWSOrganizationsReadOnlyAccess"></a>
 
 Provides read only access to information about the organization. It doesn't permit the user to make any changes.
 
-View the policy: [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSOrganizationsReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSOrganizationsReadOnlyAccess.html).
+View the policy: [`AWSOrganizationsReadOnlyAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSOrganizationsReadOnlyAccess.html).
 
 ### AWS managed policy: DeclarativePoliciesEC2Report
 <a name="security-iam-awsmanpol-DeclarativePoliciesEC2Report"></a>

@@ -22,7 +22,7 @@ Before launching your CloudFormation stack, make sure you have two Amazon Redshi
 
 **To launch your CloudFormation stack for Amazon Redshift data sharing:**
 
-1. Click [https://console.aws.amazon.com/cloudformation/home?#/stacks/new?stackName=DataShare&templateURL=https://s3.amazonaws.com/redshift-downloads/docs-downloads/DataShare.yml](https://console.aws.amazon.com/cloudformation/home?#/stacks/new?stackName=DataShare&templateURL=https://s3.amazonaws.com/redshift-downloads/docs-downloads/DataShare.yml), which takes you to the CloudFormation service in the AWS Management Console.
+1. Click [**Launch CFN stack**](https://console.aws.amazon.com/cloudformation/home?#/stacks/new?stackName=DataShare&templateURL=https://s3.amazonaws.com/redshift-downloads/docs-downloads/DataShare.yml), which takes you to the CloudFormation service in the AWS Management Console.
 
    If you are prompted, sign in.
 

@@ -219,7 +219,7 @@ Resources:
 
 The following example shows how to use `Fn::FindInMap` for a template with a `Mappings` section that contains a single map, `SecurityGroups`. It also contains an `EnvironmentType` parameter that allows you to specify whether the environment is `Dev` or `Prod`. It defaults to `Dev` but can be overridden during stack creation.
 
-`Fn::FindInMap` returns the appropriate `SecurityGroupIds` based on the `EnvironmentType` parameter. `Fn::Split` then splits the comma-separated string of security group IDs into a list, which is the expected format for [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ec2-instance.html#cfn-ec2-instance-securitygroupids](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ec2-instance.html#cfn-ec2-instance-securitygroupids).
+`Fn::FindInMap` returns the appropriate `SecurityGroupIds` based on the `EnvironmentType` parameter. `Fn::Split` then splits the comma-separated string of security group IDs into a list, which is the expected format for [SecurityGroupIds](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ec2-instance.html#cfn-ec2-instance-securitygroupids).
 
 If you deploy this stack with `EnvironmentType` set to `Dev`, the `SecurityGroupIds` for `EC2Instance` will be `sg-12345678`. If you set `EnvironmentType` to `Prod`, it will use `sg-abcdef01` and `sg-ghijkl23`.
 

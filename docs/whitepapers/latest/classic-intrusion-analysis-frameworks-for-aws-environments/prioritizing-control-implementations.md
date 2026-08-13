@@ -67,28 +67,28 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/classic-intrusion-ana
   <tr><th> Control ID </th><th> Control Name </th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2"> Security Perspective – Identity and Access Management (IAM) Epic </td></tr>
+  <tr><td colspan="2"> <b>Security Perspective – Identity and Access Management (IAM) Epic</b> </td></tr>
   <tr><td> Sec.IAM.1 </td><td> AWS Identity and Access Management (IAM) Roles  </td></tr>
-  <tr><td> Sec.IAM.2 </td><td> AWS Identity and Access Management (IAM) \+ IAM Policies and Policy Boundaries </td></tr>
-  <tr><td> Sec.IAM.3 </td><td> AWS Identity and Access Management (IAM) \+ AWS Organizations </td></tr>
-  <tr><td> Sec.IAM.4 </td><td> AWS Organizations \+ Service Control Policies (SCPs) \+ AWS Accounts </td></tr>
+  <tr><td> Sec.IAM.2 </td><td> AWS Identity and Access Management (IAM) + IAM Policies and Policy Boundaries </td></tr>
+  <tr><td> Sec.IAM.3 </td><td> AWS Identity and Access Management (IAM) + AWS Organizations </td></tr>
+  <tr><td> Sec.IAM.4 </td><td> AWS Organizations + Service Control Policies (SCPs) + AWS Accounts </td></tr>
   <tr><td> Sec.IAM.5 </td><td> Amazon Cognito </td></tr>
   <tr><td> </td><td> </td></tr>
-  <tr><td colspan="2"> Security Perspective – Detective Controls Epic </td></tr>
+  <tr><td colspan="2"> <b>Security Perspective – Detective Controls Epic</b> </td></tr>
   <tr><td> Sec.Det.1 </td><td> Amazon GuardDuty </td></tr>
   <tr><td> Sec.Det.2 </td><td> Amazon GuardDuty Partners </td></tr>
   <tr><td> Sec.Det.3 </td><td> AWS Security Hub CSPM </td></tr>
   <tr><td> Sec.Det.4 </td><td> AWS Security Hub CSPM Partners </td></tr>
   <tr><td> Sec.Det.5 </td><td> AWS Config </td></tr>
-  <tr><td> Sec.Det.6 </td><td> Amazon CloudWatch, CloudWatch Logs, CloudTrail \+ Insights, Reporting & Third Parties </td></tr>
-  <tr><td> Sec.Det.7 </td><td> Amazon CloudWatch Events & Alarms \+ Amazon SNS \+ SIEM Solutions </td></tr>
-  <tr><td> Sec.Det.8 </td><td> Amazon VPC Flow Logs \+ CloudWatch Alarms or other analytics tools  </td></tr>
-  <tr><td> Sec.Det.9 </td><td> AWS IoT Device Defender \+ AWS IoT SiteWise </td></tr>
-  <tr><td> Sec.Det.10 </td><td> Amazon CloudWatch Logs \+ Amazon Lookout for Metrics </td></tr>
+  <tr><td> Sec.Det.6 </td><td> Amazon CloudWatch, CloudWatch Logs, CloudTrail + Insights, Reporting &amp; Third Parties </td></tr>
+  <tr><td> Sec.Det.7 </td><td> Amazon CloudWatch Events &amp; Alarms + Amazon SNS + SIEM Solutions </td></tr>
+  <tr><td> Sec.Det.8 </td><td> Amazon VPC Flow Logs + CloudWatch Alarms or other analytics tools  </td></tr>
+  <tr><td> Sec.Det.9 </td><td> AWS IoT Device Defender + AWS IoT SiteWise </td></tr>
+  <tr><td> Sec.Det.10 </td><td> Amazon CloudWatch Logs + Amazon Lookout for Metrics </td></tr>
   <tr><td> Sec.Det.11 </td><td> Amazon Detective </td></tr>
-  <tr><td colspan="2"> Security Perspective – Infrastructure Security Epic </td></tr>
+  <tr><td colspan="2"> <b>Security Perspective – Infrastructure Security Epic</b> </td></tr>
   <tr><td> Sec.Inf.1 </td><td> AWS WAF </td></tr>
-  <tr><td> Sec.Inf.2 </td><td> AWS WAF, WAF Managed Rules \+ Automation </td></tr>
+  <tr><td> Sec.Inf.2 </td><td> AWS WAF, WAF Managed Rules + Automation </td></tr>
   <tr><td> Sec.Inf.3 </td><td> Amazon Virtual Private Cloud (Amazon VPC) </td></tr>
   <tr><td> Sec.Inf.4 </td><td> AWS Direct Connect </td></tr>
   <tr><td> Sec.Inf.5 </td><td> Amazon EC2 Security Groups </td></tr>
@@ -119,38 +119,38 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/classic-intrusion-ana
   <tr><td> Sec.Inf.30 </td><td> AWS Network Firewall </td></tr>
   <tr><td> Sec.Inf.31 </td><td> Amazon Simple Email Service (Amazon SES) </td></tr>
   <tr><td> Sec.Inf.32 </td><td> Bottlerocket </td></tr>
-  <tr><td colspan="2"> Security Perspective - Data Protection Epic </td></tr>
-  <tr><td> Sec.DP.1 </td><td> AWS Key Management Service (KMS) \+ AWS CloudHSM </td></tr>
+  <tr><td colspan="2"> <b>Security Perspective - Data Protection Epic</b> </td></tr>
+  <tr><td> Sec.DP.1 </td><td> AWS Key Management Service (KMS) + AWS CloudHSM </td></tr>
   <tr><td> Sec.DP.2 </td><td> AWS KMS Key Policies </td></tr>
-  <tr><td> Sec.DP.3 </td><td> AWS Certificate Manager \+ Transport Layer Security (TLS) </td></tr>
+  <tr><td> Sec.DP.3 </td><td> AWS Certificate Manager + Transport Layer Security (TLS) </td></tr>
   <tr><td> Sec.DP.4 </td><td> AWS Partner Offerings – SQL Behavioral Analytics Proxies </td></tr>
   <tr><td> Sec.DP.5 </td><td> AWS Nitro Enclaves </td></tr>
   <tr><td> Sec.DP.6 </td><td> Amazon Simple Storage Service (Amazon S3) Bucket Policies, Object Policies </td></tr>
   <tr><td> Sec.DP.7 </td><td> AWS Secrets Manager </td></tr>
-  <tr><td colspan="2"> Security Perspective - Incident Response Epic </td></tr>
-  <tr><td> Sec.IR.1 </td><td> Amazon GuardDuty \+ AWS Lambda </td></tr>
-  <tr><td> Sec.IR.2 </td><td> AWS WAF \+ AWS Lambda </td></tr>
+  <tr><td colspan="2"> <b>Security Perspective - Incident Response Epic</b> </td></tr>
+  <tr><td> Sec.IR.1 </td><td> Amazon GuardDuty + AWS Lambda </td></tr>
+  <tr><td> Sec.IR.2 </td><td> AWS WAF + AWS Lambda </td></tr>
   <tr><td> Sec.IR.3 </td><td> Third-Party WAF Integrations  </td></tr>
-  <tr><td> Sec.IR.4 </td><td> Amazon GuardDuty \+ AWS Lambda \+ AWS WAF, Security Groups, NACLs </td></tr>
+  <tr><td> Sec.IR.4 </td><td> Amazon GuardDuty + AWS Lambda + AWS WAF, Security Groups, NACLs </td></tr>
   <tr><td> Sec.IR.5 </td><td> AWS Config Rules  </td></tr>
-  <tr><td> Sec.IR.6 </td><td> Amazon CloudWatch Events \+ Lambda  </td></tr>
+  <tr><td> Sec.IR.6 </td><td> Amazon CloudWatch Events + Lambda  </td></tr>
   <tr><td> Sec.IR.7 </td><td> AWS Security Hub CSPM Automated Response and Remediation </td></tr>
-  <tr><td> Sec.IR.8 </td><td> Amazon CloudWatch Logs \+ Amazon Lookout for Metrics \+ Lambda </td></tr>
-  <tr><td> Sec.IR.9 </td><td> Amazon Virtual Private Cloud (Amazon VPC) \+ automation </td></tr>
+  <tr><td> Sec.IR.8 </td><td> Amazon CloudWatch Logs + Amazon Lookout for Metrics + Lambda </td></tr>
+  <tr><td> Sec.IR.9 </td><td> Amazon Virtual Private Cloud (Amazon VPC) + automation </td></tr>
   <tr><td> Sec.IR.10 </td><td> Honeypot and Honeynet Environments </td></tr>
   <tr><td> Sec.IR.11 </td><td> Honeywords and Honeykeys </td></tr>
   <tr><td> Sec.IR.12 </td><td> AWS Partner Offerings – Anti-Malware Protection </td></tr>
   <tr><td> Sec.IR.13 </td><td> AWS Partner Offerings – File Integrity Monitoring  </td></tr>
   <tr><td> Sec.IR.14 </td><td> Third-Party Security Tools for Containers </td></tr>
   <tr><td> Sec.IR.15 </td><td> Third-Party Security Tools for AWS Lambda Functions </td></tr>
-  <tr><td colspan="2"> Platform Perspective </td></tr>
+  <tr><td colspan="2"> <b>Platform Perspective</b> </td></tr>
   <tr><td> Platform.1 </td><td> AWS Container and Abstract Services  </td></tr>
   <tr><td> Platform.2 </td><td> AWS Lambda, Amazon Simple Queue Service (Amazon SQS), AWS Step Functions  </td></tr>
   <tr><td> Platform.3 </td><td> Amazon Simple Email Service </td></tr>
   <tr><td> Platform.4 </td><td> Hypervisor-Level Guest-to-Guest and Guest-to-Host Separation  </td></tr>
   <tr><td> Platform.5 </td><td> AWS physical and operational security policies and processes </td></tr>
-  <tr><td colspan="2"> Operations Perspective </td></tr>
-  <tr><td> Ops.1 </td><td> CloudFormation \+ Service Catalog </td></tr>
+  <tr><td colspan="2"> <b>Operations Perspective</b> </td></tr>
+  <tr><td> Ops.1 </td><td> CloudFormation + Service Catalog </td></tr>
   <tr><td> Ops.2 </td><td> Immutable Infrastructure – Short-Lived Environments </td></tr>
   <tr><td> Ops.3 </td><td> AWS Managed Services  </td></tr>
   <tr><td> Ops.4 </td><td> AWS DR Solutions </td></tr>

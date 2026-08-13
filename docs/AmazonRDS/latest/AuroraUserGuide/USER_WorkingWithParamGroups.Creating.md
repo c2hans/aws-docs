@@ -40,7 +40,7 @@ The following limitations apply to the DB parameter group name:
 ## AWS CLI
 <a name="USER_WorkingWithParamGroups.Creating.CLI"></a>
 
-To create a DB parameter group, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-parameter-group.html) command. The following example creates a DB parameter group named *mydbparametergroup* for MySQL version 8.0 with a description of "*My new parameter group*."
+To create a DB parameter group, use the AWS CLI [`create-db-parameter-group`](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-parameter-group.html) command. The following example creates a DB parameter group named *mydbparametergroup* for MySQL version 8.0 with a description of "*My new parameter group*."
 
 Include the following required parameters:
 + `--db-parameter-group-name`
@@ -82,7 +82,7 @@ DBPARAMETERGROUP  mydbparametergroup  aurora-mysql5.7  My new parameter group
 ## RDS API
 <a name="USER_WorkingWithParamGroups.Creating.API"></a>
 
-To create a DB parameter group, use the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBParameterGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBParameterGroup.html) operation.
+To create a DB parameter group, use the RDS API [`CreateDBParameterGroup`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBParameterGroup.html) operation.
 
 Include the following required parameters:
 + `DBParameterGroupName`

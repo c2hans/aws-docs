@@ -134,7 +134,7 @@ If the assistant can’t query your log groups, check that:
 
 ## Related documentation
 <a name="diagnose-related-docs"></a>
-+  [Understanding input spans](understanding-input-spans.md)
++  [Supported agent frameworks](supported-frameworks.md)
 +  [Create online evaluation](create-online-evaluations.md)
 +  [Getting started with on-demand evaluation](getting-started-on-demand.md)
 

@@ -110,7 +110,7 @@ Pattern: `[0-9]+`
 Required: No
 
  ** runTags **   <a name="omics-Type-DefaultRunSetting-runTags"></a>
-AWS tags to associate with each workflow run. Merged with per-run `runTags`; run-specific values take precedence when keys overlap.
+ AWS tags to associate with each workflow run. Merged with per-run `runTags`; run-specific values take precedence when keys overlap.
 Type: String to string map
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
 Value Length Constraints: Minimum length of 0. Maximum length of 256.

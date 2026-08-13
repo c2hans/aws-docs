@@ -24,6 +24,7 @@ You also learn how to use other AWS services that help you monitor and secure yo
 + [Identity and Access Management for Amazon DocumentDB](security-iam.md)
 + [Cross-service confused deputy prevention](cross-service-confused-deputy-prevention.md)
 + [Authentication using IAM identity](iam-identity-auth.md)
++ [Authentication using SCRAM-SHA-256](scram-sha-256-auth.md)
 + [Managing Amazon DocumentDB users](security.managing-users.md)
 + [Database access using Role-Based Access Control](role_based_access_control.md)
 + [Updating your Amazon DocumentDB TLS certificates](ca_cert_rotation.md)

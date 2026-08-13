@@ -177,7 +177,7 @@ To create a job using the following instructions, you also need a prompt dataset
 ------
 #### [ SDK for Python ]
 
-The following python example demonstrates how to create a retrieve-only job for an Amazon Bedrock Knowledge Base using the AWS SDK for Python (Boto3) To learn more about creating an evaluation job using Boto3, refer to [https://boto3.amazonaws.com/v1/documentation/api/1.35.6/reference/services/bedrock/client/create_evaluation_job.html](https://boto3.amazonaws.com/v1/documentation/api/1.35.6/reference/services/bedrock/client/create_evaluation_job.html) in the Boto3 documentation.
+The following python example demonstrates how to create a retrieve-only job for an Amazon Bedrock Knowledge Base using the AWS SDK for Python (Boto3) To learn more about creating an evaluation job using Boto3, refer to [`create_evaluation_job`](https://boto3.amazonaws.com/v1/documentation/api/1.35.6/reference/services/bedrock/client/create_evaluation_job.html) in the Boto3 documentation.
 
 ```
 import boto3

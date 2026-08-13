@@ -147,7 +147,7 @@ As a final step, you'll delete the stack and the resources it contains.
 
 The CloudFormation template for this tutorial will create the following resource in your account:
 
-[https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-samlprovider.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-samlprovider.html): A SAML IdP that establishes trust between AWS and your external IdP.
+[`AWS::IAM::SAMLProvider`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-samlprovider.html): A SAML IdP that establishes trust between AWS and your external IdP.
 
 ### Configuration
 <a name="tutorial_saml-idp-template-config"></a>

@@ -28,7 +28,7 @@ For information about uninstalling SSM Agent from an edge device, see [Uninstall
 ## Create an IAM service role for your edge devices
 <a name="systems-manager-setting-up-edge-devices-service-role"></a>
 
-AWS IoT Greengrass core devices require an AWS Identity and Access Management (IAM) service role to communicate with AWS Systems Manager. The role grants AWS Security Token Service (AWS STS) [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) trust to the Systems Manager service. You only need to create the service role once for each AWS account. You will specify this role for the `RegistrationRole` parameter when you configure and deploy the SSM Agent component to your AWS IoT Greengrass devices. If you already created this role while setting up non-EC2 nodes for a [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) environment, you can skip this step.
+AWS IoT Greengrass core devices require an AWS Identity and Access Management (IAM) service role to communicate with AWS Systems Manager. The role grants AWS Security Token Service (AWS STS) [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) trust to the Systems Manager service. You only need to create the service role once for each AWS account. Specify this role for the `RegistrationRole` parameter when you configure and deploy the SSM Agent component to your AWS IoT Greengrass devices. If you already created this role while setting up non-EC2 nodes for a [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) environment, you can skip this step.
 
 **Note**
 Users in your company or organization who will use Systems Manager on your edge devices must be granted permission in IAM to call the Systems Manager API.
@@ -36,7 +36,7 @@ Users in your company or organization who will use Systems Manager on your edge 
 **S3 bucket policy requirement**
 If either of the following cases are true, you must create a custom IAM permission policy for Amazon Simple Storage Service (Amazon S3) buckets before completing this procedure:
 + **Case 1**: You're using a VPC endpoint to privately connect your VPC to supported AWS services and VPC endpoint services powered by AWS PrivateLink.
-+ **Case 2**: You plan to use an S3 bucket that you create as part of your Systems Manager operations, such as for storing output for Run Command commands or Session Manager sessions to an S3 bucket. Before proceeding, follow the steps in [Create a custom S3 bucket policy for an instance profile](setup-instance-permissions.md#instance-profile-custom-s3-policy). The information about S3 bucket policies in that topic also applies to your service role.
++ **Case 2**: You plan to use an S3 bucket for storing Run Command command output or Session Manager session logs. Before proceeding, follow the steps in [Create a custom S3 bucket policy for an instance profile](setup-instance-permissions.md#instance-profile-custom-s3-policy). The S3 bucket policy information in that topic also applies to your service role.
 **Note**
 If your devices are protected by a firewall and you plan to use Patch Manager, the firewall must allow access to the patch baseline endpoint `arn:aws:s3:::patch-baseline-snapshot-{{region}}/*`.
 {{region}} represents the identifier for an AWS Region supported by AWS Systems Manager, such as `us-east-2` for the US East (Ohio) Region. For a list of supported {{region}} values, see the **Region** column in [Systems Manager service endpoints](https://docs.aws.amazon.com/general/latest/gr/ssm.html#ssm_region) in the *Amazon Web Services General Reference*.
@@ -52,7 +52,7 @@ If your devices are protected by a firewall and you plan to use Patch Manager, t
 
 1. On your local machine, create a text file with a name such as `SSMService-Trust.json` with the following trust policy. Make sure to save the file with the `.json` file extension.
 **Note**
-Make a note of the name. You will specify it when you deploy SSM Agent to your AWS IoT Greengrass core devices.
+Make a note of the name. Specify it when you deploy SSM Agent to your AWS IoT Greengrass core devices.
 
 ------
 #### [ JSON ]
@@ -150,7 +150,7 @@ The policies you add for a service profile for edge devices are the same policie
        --policy-arn arn:aws:iam::aws:policy/AmazonSSMDirectoryServiceAccess
    ```
 
-   (Optional) Run the following command to allow the CloudWatch agent to run on your edge devices. This command makes it possible to read information on a device and write it to CloudWatch. Your service role needs this policy only if you will use services such as Amazon EventBridge or Amazon CloudWatch Logs.
+   (Optional) Run the following command to allow the CloudWatch agent to run on your edge devices. This command makes it possible to read information on a device and write it to CloudWatch. Your service role needs this policy only if you use services such as Amazon EventBridge or Amazon CloudWatch Logs.
 
    ```
    aws iam attach-role-policy \
@@ -169,7 +169,7 @@ The policies you add for a service profile for edge devices are the same policie
 
 1. On your local machine, create a text file with a name such as `SSMService-Trust.json` with the following trust policy. Make sure to save the file with the `.json` file extension.
 **Note**
-Make a note of the name. You will specify it when you deploy SSM Agent to your AWS IoT Greengrass core devices.
+Make a note of the name. Specify it when you deploy SSM Agent to your AWS IoT Greengrass core devices.
 
 ------
 #### [ JSON ]
@@ -191,7 +191,7 @@ Make a note of the name. You will specify it when you deploy SSM Agent to your A
 
 ------
 
-1. Open PowerShell in administrative mode, and in the directory where you created the JSON file, run [New-IAMRole](https://docs.aws.amazon.com//powershell/latest/reference/items/Register-IAMRolePolicy.html) as follows to create a service role.
+1. Open PowerShell in administrative mode, and in the directory where you created the JSON file, run [New-IAMRole](https://docs.aws.amazon.com/powershell/latest/reference/items/New-IAMRole.html) as follows to create a service role.
 
    ```
    New-IAMRole `
@@ -227,7 +227,7 @@ The policies you add for a service role for edge devices in an AWS IoT Greengras
        -PolicyArn arn:aws:iam::aws:policy/AmazonSSMDirectoryServiceAccess
    ```
 
-   (Optional) Run the following command to allow the CloudWatch agent to run on your edge devices. This command makes it possible to read information on a device and write it to CloudWatch. Your service role needs this policy only if you will use services such as Amazon EventBridge or Amazon CloudWatch Logs.
+   (Optional) Run the following command to allow the CloudWatch agent to run on your edge devices. This command makes it possible to read information on a device and write it to CloudWatch. Your service role needs this policy only if you use services such as Amazon EventBridge or Amazon CloudWatch Logs.
 
    ```
    Register-IAMRolePolicy `
@@ -240,12 +240,12 @@ The policies you add for a service role for edge devices in an AWS IoT Greengras
 ## Configure your edge devices for AWS IoT Greengrass
 <a name="systems-manager-edge-devices-set-up-greengrass"></a>
 
-Set up your edge devices as AWS IoT Greengrass core devices. The setup process involves verifying supported operating systems and system requirements, as well as installing and configuring the AWS IoT Greengrass Core software on your devices. For more information, see [Setting up AWS IoT Greengrass core devices](https://docs.aws.amazon.com/greengrass/v2/developerguide/setting-up.html) in the *AWS IoT Greengrass Version 2 Developer Guide*.
+Set up your edge devices as AWS IoT Greengrass core devices. The setup process involves verifying supported operating systems and system requirements, and installing and configuring the AWS IoT Greengrass Core software on your devices. For more information, see [Setting up AWS IoT Greengrass core devices](https://docs.aws.amazon.com/greengrass/v2/developerguide/setting-up.html) in the *AWS IoT Greengrass Version 2 Developer Guide*.
 
 ## Update the AWS IoT Greengrass token exchange role and install SSM Agent on your edge devices
 <a name="systems-manager-edge-devices-install-SSM-agent"></a>
 
-The final step for setting up and configuring your AWS IoT Greengrass core devices for Systems Manager requires you to update the AWS IoT Greengrass AWS Identity and Access Management (IAM) device service role, also called the *token exchange role*, and deploy AWS Systems Manager Agent (SSM Agent) to your AWS IoT Greengrass devices. For information about these processes, see [Install the AWS Systems Manager Agent](https://docs.aws.amazon.com/greengrass/v2/developerguide/install-systems-manager-agent.html) in the *AWS IoT Greengrass Version 2 Developer Guide*.
+The final step requires you to update the AWS IoT Greengrass AWS Identity and Access Management (IAM) device service role (the *token exchange role*) and deploy SSM Agent to your AWS IoT Greengrass devices. For information, see [Install the AWS Systems Manager Agent](https://docs.aws.amazon.com/greengrass/v2/developerguide/install-systems-manager-agent.html) in the *AWS IoT Greengrass Version 2 Developer Guide*.
 
 After you deploy SSM Agent to your devices, AWS IoT Greengrass automatically registers your devices with Systems Manager. No additional registration is necessary. You can begin using Systems Manager tools to access, manage, and configure your AWS IoT Greengrass devices.
 

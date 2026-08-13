@@ -15,7 +15,7 @@ If your application behaves unexpectedly with Mountpoint, you can inspect your l
 
 **Logging**
 
-By default, Mountpoint emits high-severity log information to [https://datatracker.ietf.org/doc/html/rfc5424](https://datatracker.ietf.org/doc/html/rfc5424).
+By default, Mountpoint emits high-severity log information to [syslog](https://datatracker.ietf.org/doc/html/rfc5424).
 
 To view logs on most modern Linux distributions, including Amazon Linux, run the following `journald` command:
 

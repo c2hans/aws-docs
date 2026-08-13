@@ -10,6 +10,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 **Resource types**
 + [AWS::Location::APIKey](aws-resource-location-apikey.md)
 + [AWS::Location::GeofenceCollection](aws-resource-location-geofencecollection.md)
++ [AWS::Location::Job](aws-resource-location-job.md)
 + [AWS::Location::Map](aws-resource-location-map.md)
 + [AWS::Location::PlaceIndex](aws-resource-location-placeindex.md)
 + [AWS::Location::RouteCalculator](aws-resource-location-routecalculator.md)

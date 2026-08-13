@@ -396,7 +396,7 @@ When an IAM role or user calls the Step Functions API, the Step Functions servic
 
  CloudFormation resource types for Step Functions can provision state machine and activity resources with encryption configurations.
 
- By default, Step Functions provides transparent server-side encryption. Both [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-activity.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-activity.html) and [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html) accept an optional `EncryptionConfiguration` property which can configure a customer managed AWS KMS key for server-side encryption.
+ By default, Step Functions provides transparent server-side encryption. Both [`AWS::StepFunctions::Activity`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-activity.html) and [`AWS::StepFunctions::StateMachine`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html) accept an optional `EncryptionConfiguration` property which can configure a customer managed AWS KMS key for server-side encryption.
 
 **Prerequisite:** Before you can create a state machine with customer managed AWS KMS keys, your user or role must have AWS KMS permissions to `DescribeKey` and `GenerateDataKey`.
 

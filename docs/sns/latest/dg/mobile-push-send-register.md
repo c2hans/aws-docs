@@ -30,4 +30,4 @@ To send notifications from Amazon SNS to mobile endpoints—whether directly or 
 
 1. After entering the necessary details, choose **Create platform application**. This action registers the app with Amazon SNS and creates the corresponding platform application object.
 
-1. Upon creation, Amazon SNS generates and returns a [https://docs.aws.amazon.com/sns/latest/api/API_PlatformApplication.html](https://docs.aws.amazon.com/sns/latest/api/API_PlatformApplication.html) (Amazon Resource Name). This ARN uniquely identifies your platform application and is used when creating endpoints for mobile devices.
+1. Upon creation, Amazon SNS generates and returns a [`PlatformApplicationArn`](https://docs.aws.amazon.com/sns/latest/api/API_PlatformApplication.html) (Amazon Resource Name). This ARN uniquely identifies your platform application and is used when creating endpoints for mobile devices.

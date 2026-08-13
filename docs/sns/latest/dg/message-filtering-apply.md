@@ -50,7 +50,7 @@ AWS services such as IAM and Amazon SNS use a distributed computing model called
 ## AWS CLI
 <a name="message-filtering-apply-cli"></a>
 
-To apply a filter policy with the AWS Command Line Interface (AWS CLI), use the [https://docs.aws.amazon.com/cli/latest/reference/sns/set-subscription-attributes.html](https://docs.aws.amazon.com/cli/latest/reference/sns/set-subscription-attributes.html) command, as shown in the following example. For the `--attribute-name` option, specify `FilterPolicy`. For `--attribute-value`, specify your **JSON policy**.
+To apply a filter policy with the AWS Command Line Interface (AWS CLI), use the [`set-subscription-attributes`](https://docs.aws.amazon.com/cli/latest/reference/sns/set-subscription-attributes.html) command, as shown in the following example. For the `--attribute-name` option, specify `FilterPolicy`. For `--attribute-value`, specify your **JSON policy**.
 
 ```
 $ aws sns set-subscription-attributes --subscription-arn {{arn:aws:sns: ...}} --attribute-name FilterPolicy --attribute-value {{'{"store":["example_corp"],"event":["order_placed"]}'}}
@@ -273,9 +273,9 @@ class SnsWrapper:
 ## Amazon SNS API
 <a name="message-filtering-apply-api"></a>
 
-To apply a filter policy with the Amazon SNS API, make a request to the [https://docs.aws.amazon.com/sns/latest/api/API_SetSubscriptionAttributes.html](https://docs.aws.amazon.com/sns/latest/api/API_SetSubscriptionAttributes.html) action. Set the `AttributeName` parameter to `FilterPolicy`, and set the `AttributeValue` parameter to your filter policy JSON.
+To apply a filter policy with the Amazon SNS API, make a request to the [`SetSubscriptionAttributes`](https://docs.aws.amazon.com/sns/latest/api/API_SetSubscriptionAttributes.html) action. Set the `AttributeName` parameter to `FilterPolicy`, and set the `AttributeValue` parameter to your filter policy JSON.
 
-If you want to switch from attribute-based (default) to payload-based message filtering, you can use the [https://docs.aws.amazon.com/sns/latest/api/API_SetSubscriptionAttributes.html](https://docs.aws.amazon.com/sns/latest/api/API_SetSubscriptionAttributes.html) action as well. Set the `AttributeName` parameter to `FilterPolicyScope`, and set the `AttributeValue` parameter to `MessageBody`.
+If you want to switch from attribute-based (default) to payload-based message filtering, you can use the [`SetSubscriptionAttributes`](https://docs.aws.amazon.com/sns/latest/api/API_SetSubscriptionAttributes.html) action as well. Set the `AttributeName` parameter to `FilterPolicyScope`, and set the `AttributeValue` parameter to `MessageBody`.
 
 ## AWS CloudFormation
 <a name="message-filtering-apply-cloudformation"></a>

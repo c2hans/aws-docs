@@ -20,9 +20,9 @@ The following table lists the information that Network Flow Monitor returns for 
 
 <table>
 <thead>
-  <tr><th colspan="4">Connection information</th><th colspan="6">Metadata information</th></tr>
-  <tr><th colspan="4"></th><th colspan="3">Local</th><th colspan="3">Remote</th></tr>
-  <tr><th>Scenario</th><th>Initiated by</th><th>Local</th><th>Remote</th><th>Pod name</th><th>Service</th><th>Namespace</th><th>Pod name</th><th>Service</th><th>Namespace</th></tr>
+  <tr><th colspan="4"><b>Connection information</b></th><th colspan="6"><b>Metadata information</b></th></tr>
+  <tr><th colspan="4"></th><th colspan="3"><b>Local</b></th><th colspan="3"><b>Remote</b></th></tr>
+  <tr><th><b>Scenario</b></th><th><b>Initiated by</b></th><th><b>Local</b></th><th><b>Remote</b></th><th><b>Pod name</b></th><th><b>Service</b></th><th><b>Namespace</b></th><th><b>Pod name</b></th><th><b>Service</b></th><th><b>Namespace</b></th></tr>
 </thead>
 <tbody>
   <tr><td>Local pod connecting to cluster IP of another internal cluster service</td><td>Local</td><td>Local pod IP address</td><td>Remote pod IP address<br />(through cluster IP address)</td><td>✓</td><td>✓</td><td>✓</td><td>✓ ¹</td><td>✓</td><td>✓</td></tr>

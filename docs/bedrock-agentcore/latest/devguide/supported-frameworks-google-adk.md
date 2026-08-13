@@ -199,7 +199,7 @@ The `openinference.span.kind` attribute (`TOOL`) identifies this as an execute t
   }
 }
 ```
-The `openinference.span.kind` attribute (`LLM`) on the `call_llm` span identifies this as an inference span. It carries the model metadata and, in the indexed `0` and `1` attributes, the messages for the model call.
+The `openinference.span.kind` attribute (`LLM`) on the `call_llm` span identifies this as an inference span. It carries the model metadata and, in the indexed `llm.input_messages.*` and `llm.output_messages.*` attributes, the messages for the model call.
 
 ```
 {
@@ -291,7 +291,7 @@ The `input.value` attribute holds the tool arguments, and the `output.value` att
   }
 }
 ```
-The `openinference.span.kind` attribute (`LLM`) on the `call_llm` span identifies this as an inference span. The messages for the model call are inline on the indexed `0` and `1` attributes.
+The `openinference.span.kind` attribute (`LLM`) on the `call_llm` span identifies this as an inference span. The messages for the model call are inline on the indexed `llm.input_messages.*` and `llm.output_messages.*` attributes.
 
 ```
 {

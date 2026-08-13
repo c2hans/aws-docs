@@ -24,13 +24,14 @@ IAM Identity Center streamlines and simplifies workforce user access to applicat
 **Trusted identity propagation across applications **
 With trusted identity propagation, AWS managed applications such as Amazon Quick can securely share a user’s identity with other AWS managed applications such as Amazon Redshift and authorize access to AWS resources based on the user’s identity. You can more easily audit user activity because CloudTrail events are logged based on the user and the actions the user initiated. This makes it easier to understand who accessed what. For information about supported use cases, including end-to-end configuration guidance, see [Trusted identity propagation use cases](trustedidentitypropagation-integrations.md).
 
-**One place to assign permissions to multiple AWS accounts**
-With multi-account permissions, IAM Identity Center provides a single place for you to assign permissions to groups of users in multiple AWS accounts. You can create permissions based on common job functions or define custom permissions that meet your security needs. You can then assign those permissions to workforce users to control their access to specific AWS accounts.
-This optional feature is available only for [organization instances](organization-instances-identity-center.md) of IAM Identity Center.
-
 **One point of federation to simplify user access to AWS**
-By providing one point of federation, IAM Identity Center reduces the administrative effort required to use multiple AWS managed applications and AWS accounts. With IAM Identity Center, you only federate once, and you have only one certificate to manage when using a [https://wiki.oasis-open.org/security](https://wiki.oasis-open.org/security) identity provider. IAM Identity Center provides AWS managed applications with a common view of users and groups for trusted identity propagation use cases, or when users share access to AWS resources with other people.
+By providing one point of federation, IAM Identity Center reduces the administrative effort required to use multiple AWS managed applications and AWS accounts. With IAM Identity Center, you only federate once, and you have only one certificate to manage when using a [`SAML 2.0`](https://wiki.oasis-open.org/security) identity provider. IAM Identity Center provides AWS managed applications with a common view of users and groups for trusted identity propagation use cases, or when users share access to AWS resources with other people.
 For information about how to configure commonly used identity providers to work with IAM Identity Center, see [IAM Identity Center identity source tutorials](tutorials.md). If you don’t have an existing identity provider, you can [create and manage users directly in IAM Identity Center](quick-start-default-idc.md).
+
+**Ability to manage workforce access to multiple AWS accounts**
+IAM Identity Center gives you options to manage centrally your workforce access to AWS accounts:
++ Your teams can create their IAM roles in AWS accounts and centrally manage role assignments to IAM Identity Center users and groups using the IAM [account access manager](https://docs.aws.amazon.com/IAM/latest/UserGuide/account-access-manager.html) feature. See [Why use account access manager](https://docs.aws.amazon.com/IAM/latest/UserGuide/account-access-manager.html#why-use-account-access-manager) in the *IAM User Guide* for more information.
++ You can also use IAM Identity Center permission sets to centrally create permissions for common job functions such as admin, provision them across AWS accounts, and assign them to users and groups. This optional feature is available only for organization instances of IAM Identity Center.
 
 **Two instance types**
 IAM Identity Center supports two types of instances: *organization instances* and *account instances*. An organization instance is the best practice. It's the only instance that enables you to manage access to AWS accounts and it is recommended for all production use of applications. An organization instance is deployed in the AWS Organizations management account and gives you a single point from which to manage user access across AWS.
@@ -53,11 +54,11 @@ On July 26, 2022, AWS Single Sign-On was renamed to AWS IAM Identity Center.
 The `sso` and `identitystore` API namespaces along with the following related namespaces **remain unchanged** for backward compatibility purposes.
 
 + CLI commands
-  + [https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html)
-  + [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/identitystore/index.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/identitystore/index.html)
-  + [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sso/index.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sso/index.html)
-  + [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sso-admin/index.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sso-admin/index.html)
-  + [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sso-oidc/index.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sso-oidc/index.html)
+  + [`aws configure sso`](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html)
+  + [`identitystore`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/identitystore/index.html)
+  + [`sso`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sso/index.html)
+  + [`sso-admin`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sso-admin/index.html)
+  + [`sso-oidc`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sso-oidc/index.html)
 + [Managed policies](https://docs.aws.amazon.com//singlesignon/latest/userguide/security-iam-awsmanpol.html) containing `AWSSSO` and `AWSIdentitySync` prefixes
 + [Service endpoints](https://docs.aws.amazon.com//general/latest/gr/sso.html#sso_region) containing `sso` and `identitystore`
 + [CloudFormation](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/AWS_SSO.html) resources containing `AWS::SSO` prefixes

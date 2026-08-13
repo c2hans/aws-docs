@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 # Connecting your AWS Managed Microsoft AD to Microsoft Entra Connect Sync
 <a name="ms_ad_connect_ms_entra_sync"></a>
 
-This tutorial walks you through the necessary steps to install [https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-sync-whatis](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-sync-whatis) to sync your [https://learn.microsoft.com/en-us/entra/fundamentals/whatis](https://learn.microsoft.com/en-us/entra/fundamentals/whatis) to your AWS Managed Microsoft AD.
+This tutorial walks you through the necessary steps to install [Microsoft Entra Connect Sync](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-sync-whatis) to sync your [Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/fundamentals/whatis) to your AWS Managed Microsoft AD.
 
 In this tutorial, you do the following:
 

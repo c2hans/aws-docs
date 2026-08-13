@@ -11,6 +11,8 @@ You can federate existing identities from an external identity provider. These i
 
 You can also use AWS IAM Identity Center to create and manage identities and access to AWS resources. IAM Identity Center permission sets automatically create the IAM roles needed to provide access to resources. For more information, see [What is IAM Identity Center?](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html)
 
+You can use [account access manager](account-access-manager.md) — an IAM feature that lets you assign existing IAM roles with the full IAM role feature set to IAM Identity Center users and groups. You can use it alongside permission sets or on its own.
+
 The AWS account root user is an AWS account principal that is created when your AWS account is established. The root user has access to all AWS services and resources in the account. For more information, see [IAM root user](#id_root).
 
 **Note**

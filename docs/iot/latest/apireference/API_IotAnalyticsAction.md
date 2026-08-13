@@ -12,7 +12,7 @@ Sends message data to an AWS IoT Analytics channel.
 
  ** batchMode **   <a name="iot-Type-IotAnalyticsAction-batchMode"></a>
 Whether to process the action as a batch. The default value is `false`.
-When `batchMode` is `true` and the rule SQL statement evaluates to an Array, each Array element is delivered as a separate message when passed by [https://docs.aws.amazon.com/iotanalytics/latest/APIReference/API_BatchPutMessage.html](https://docs.aws.amazon.com/iotanalytics/latest/APIReference/API_BatchPutMessage.html) to the AWS IoT Analytics channel. The resulting array can't have more than 100 messages.
+When `batchMode` is `true` and the rule SQL statement evaluates to an Array, each Array element is delivered as a separate message when passed by [`BatchPutMessage`](https://docs.aws.amazon.com/iotanalytics/latest/APIReference/API_BatchPutMessage.html) to the AWS IoT Analytics channel. The resulting array can't have more than 100 messages.
 Type: Boolean
 Required: No
 

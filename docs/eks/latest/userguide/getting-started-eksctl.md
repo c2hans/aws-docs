@@ -11,7 +11,7 @@ To contribute to this user guide, choose the **Edit this page on GitHub** link t
 
 **Note**
 This topic covers getting started **without** EKS Auto Mode.
-EKS Auto Mode automates routine tasks for cluster compute, storage, and networking. [Learn how to get started with Amazon EKS Auto Mode. ](getting-started-automode.md)
+EKS Auto Mode automates routine tasks for cluster compute, storage, and networking. [Learn how to get started with Amazon EKS Auto Mode.](getting-started-automode.md)
 
 This guide helps you to create all of the required resources to get started with Amazon Elastic Kubernetes Service (Amazon EKS) using `eksctl`, a simple command line utility for creating and managing Kubernetes clusters on Amazon EKS. At the end of this tutorial, you will have a running Amazon EKS cluster that you can deploy applications to.
 

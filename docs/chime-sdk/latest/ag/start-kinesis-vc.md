@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/start-kinesis-vc.htm
 # Streaming Amazon Chime SDK Voice Connector media to Kinesis
 <a name="start-kinesis-vc"></a>
 
-You can stream phone call audio from Amazon Chime SDK Voice Connectors to Amazon Kinesis Video Streams for analytics, machine learning and other processing. Developers can store and encrypt audio data in Kinesis Video Streams, and access the data using the Kinesis Video Streams API operation. For more information, see the [https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/what-is-kinesis-video.html](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/what-is-kinesis-video.html).
+You can stream phone call audio from Amazon Chime SDK Voice Connectors to Amazon Kinesis Video Streams for analytics, machine learning and other processing. Developers can store and encrypt audio data in Kinesis Video Streams, and access the data using the Kinesis Video Streams API operation. For more information, see the [*Kinesis Video Streams Developer Guide*](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/what-is-kinesis-video.html).
 
 **Note**
 Voice Connector streaming does not restrict phone number formats. You can stream calls from numbers in E.164 and non-E.164 formats. For example, Voice Connector streaming can support 4, 5, or 6-digit extension numbers, or 11-digit private wire numbers. For more information, refer to [SIP-based media recording and network-based recording compatibility](#siprec), later in this guide.

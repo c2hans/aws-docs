@@ -47,7 +47,7 @@ After that you've connected your gateway to AWS IoT Core for LoRaWAN, you can ch
 ## Check gateway connection status using the console
 <a name="lorawan-connection-status-console"></a>
 
-To check the connection status using the console, navigate to the [https://console.aws.amazon.com/iot/home#/wireless/gateways](https://console.aws.amazon.com/iot/home#/wireless/gateways) page of the AWS IoT console and choose the gateway you've added. In the **LoRaWAN specific details** section of the Gateway details page, you'll see the connection status and the date and time the last uplink was received.
+To check the connection status using the console, navigate to the [**Gateways**](https://console.aws.amazon.com/iot/home#/wireless/gateways) page of the AWS IoT console and choose the gateway you've added. In the **LoRaWAN specific details** section of the Gateway details page, you'll see the connection status and the date and time the last uplink was received.
 
 ## Check gateway connection status using the API
 <a name="lorawan-connection-status-api"></a>

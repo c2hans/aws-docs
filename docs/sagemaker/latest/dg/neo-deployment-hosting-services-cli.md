@@ -79,7 +79,7 @@ The `AmazonSageMakerFullAccess` and `AmazonS3ReadOnlyAccess` policies must be at
    aws sagemaker create-model --cli-input-json file://create_model.json
    ```
 
-   For the full syntax of the `create-model` API, see [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-model.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-model.html).
+   For the full syntax of the `create-model` API, see [`create-model`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-model.html).
 
 ### Create an Endpoint Configuration
 <a name="neo-deployment-hosting-services-cli-create-endpoint-config"></a>
@@ -107,7 +107,7 @@ Now run the following AWS CLI command to create your endpoint configuration:
 aws sagemaker create-endpoint-config --cli-input-json file://create_config.json
 ```
 
-For the full syntax of the `create-endpoint-config` API, see [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-endpoint-config.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-endpoint-config.html).
+For the full syntax of the `create-endpoint-config` API, see [`create-endpoint-config`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-endpoint-config.html).
 
 ### Create an Endpoint
 <a name="neo-deployment-hosting-services-cli-create-endpoint"></a>
@@ -118,4 +118,4 @@ After you have created your endpoint configuration, create an endpoint using the
 aws sagemaker create-endpoint --endpoint-name {{'<provide your endpoint name>'}} --endpoint-config-name {{'<insert your endpoint config name>'}}
 ```
 
-For the full syntax of the `create-endpoint` API, see [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-endpoint.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-endpoint.html).
+For the full syntax of the `create-endpoint` API, see [`create-endpoint`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-endpoint.html).

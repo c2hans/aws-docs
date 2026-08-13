@@ -21,7 +21,14 @@ Type: Timestamp
 Required: No
 
  ** status **
-The current instance-level application status. This status is derived from the aggregated results of all application status checks with the aggregation setting set to `included`. Checks with aggregation set to `excluded` do not affect this value. When suppression is active on the instance, this status is not updated.
+The current instance-level application status. This status is derived from application status checks with `Aggregation` set to `included`. Possible values:
++  `ok` – All included checks passed.
++  `impaired` – At least one included check failed.
++  `initializing` – At least one included check is initializing, and no included check is impaired.
++  `insufficient-data` – At least one included check has insufficient data, and no included check is impaired or initializing.
++  `not-applicable` – No checks with `Aggregation` set to `included` apply to the instance.
++  `suppressed` – Application status reporting is suppressed for the instance.
+Checks with `Aggregation` set to `excluded` do not affect this value.
 Type: String
 Valid Values: `ok | impaired | initializing | insufficient-data | not-applicable | suppressed`
 Required: No

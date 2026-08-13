@@ -65,7 +65,7 @@ If Amazon S3 determines the checksum value is incorrect for the specified algori
 
 You can also use checksums with multipart uploads.
 
-You must specify the checksum algorithm in the `CreateMultipartUpload` request and in each `UploadPart` request. As a final step, you must specify the checksum of each part in the `CompleteMultipartUpload`. The following example shows how to create a multipart upload with the checksum algorithm specified.
+You must specify the checksum algorithm in the [`CreateMultipartUpload`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/create-multipart-upload.html) request and in each [`UploadPart`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/upload-part.html) request. As a final step, you must specify the checksum of each part in the [`CompleteMultipartUpload`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/complete-multipart-upload.html). The following example shows how to create a multipart upload with the checksum algorithm specified.
 
 ```
 val multipartUpload = s3.createMultipartUpload {
@@ -107,7 +107,7 @@ s3.completeMultipartUpload {
 ## Download an object
 <a name="use-service-S3-checksum-download"></a>
 
-When you use the [getObject](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/get-object.html) method to download an object, the SDK automatically validates the checksum when the `checksumMode` property of the builder for the `GetObjectRequest` is set to `ChecksumMode.Enabled`.
+When you use the [getObject](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/get-object.html) method to download an object, the SDK automatically validates the checksum when the `checksumMode` property of the builder for the [`GetObjectRequest`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3.model/-get-object-request/index.html) is set to `ChecksumMode.Enabled`.
 
 The request in the following snippet directs the SDK to validate the checksum in the response by calculating the checksum and comparing the values.
 
@@ -122,7 +122,7 @@ val request = GetObjectRequest {
 **Note**
 If the object wasn’t uploaded with a checksum, no validation takes place.
 
-If you use an SDK version of 1.4.0 or later, the SDK automatically checks the integrity of `getObject` requests without adding `checksumMode = ChecksumMode.Enabled` to the request.
+If you use an SDK version of 1.4.0 or later, the SDK automatically checks the integrity of [`getObject`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/get-object.html) requests without adding `checksumMode = ChecksumMode.Enabled` to the request.
 
 ### Asynchronous validation
 <a name="service-s3-checksum-getObject-kotlin-asyncValidation"></a>
@@ -152,4 +152,4 @@ s3Client.getObject(request) {
 }
 ```
 
-If the checksum calculated by the SDK does not match the expected checksum sent with the response, the SDK throws a `ChecksumMismatchException`.
+If the checksum calculated by the SDK does not match the expected checksum sent with the response, the SDK throws a [`ChecksumMismatchException`](/smithy-kotlin/api/latest/http-client/aws.smithy.kotlin.runtime.http.interceptors/-checksum-mismatch-exception/index.html).

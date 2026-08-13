@@ -115,4 +115,4 @@ For more information about the full configuration reference, including KMS key s
 ## Notice
 <a name="_notice"></a>
 
-The [https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_Oauth2AuthorizationServerMetadata.html](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_Oauth2AuthorizationServerMetadata.html) field is not recommended in favor of client authentication method but maintained for backward compatibility in CLI and SDK. Providing both in the same request will result in a validation error.
+The [`tokenEndpointAuthMethods`](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_Oauth2AuthorizationServerMetadata.html) field is not recommended in favor of client authentication method but maintained for backward compatibility in CLI and SDK. Providing both in the same request will result in a validation error.

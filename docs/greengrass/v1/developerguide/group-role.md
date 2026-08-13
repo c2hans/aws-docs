@@ -329,7 +329,7 @@ Follow these steps to disassociate the group role from your Greengrass group.
    }
    ```
 **Note**
-You can delete the group role if you're not using it. First use [https://docs.aws.amazon.com/cli/latest/reference/iam/delete-role-policy.html](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-role-policy.html) to detach each managed policy from the role, and then use [https://docs.aws.amazon.com/cli/latest/reference/iam/delete-role.html](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-role.html) to delete the role. For more information, see [Deleting roles or instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_delete.html) in the *IAM User Guide*.
+You can delete the group role if you're not using it. First use [**delete-role-policy**](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-role-policy.html) to detach each managed policy from the role, and then use [**delete-role**](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-role.html) to delete the role. For more information, see [Deleting roles or instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_delete.html) in the *IAM User Guide*.
 
 ## See also
 <a name="group-role-see-also"></a>

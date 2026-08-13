@@ -56,12 +56,12 @@ You can monitor metrics for Security Lake using the CloudWatch console, CloudWat
 ------
 #### [ CloudWatch API ]
 
-To access Security Lake metrics using the CloudWatch API, use the [https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricStatistics.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricStatistics.html) action.
+To access Security Lake metrics using the CloudWatch API, use the [`GetMetricStatistics`](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricStatistics.html) action.
 
 ------
 #### [ AWS CLI ]
 
-To access Security Lake metrics using the AWS CLI, run the [https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/get-metric-statistics.html](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/get-metric-statistics.html) command.
+To access Security Lake metrics using the AWS CLI, run the [`get-metric-statistics`](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/get-metric-statistics.html) command.
 
 ------
 

@@ -25,7 +25,7 @@ The total size of the response body can't exceed 4096 bytes.
 ## Template setup
 <a name="crpg-ref-template-setup"></a>
 
-When defining a custom resource in a template, the template developer uses [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-customresource.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-customresource.html) with the following properties:
+When defining a custom resource in a template, the template developer uses [AWS::CloudFormation::CustomResource](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-customresource.html) with the following properties:
 
 `ServiceToken`
 An Amazon SNS topic ARN or Lambda function ARN from the same Region as the stack.
@@ -279,7 +279,7 @@ The template developer-chosen name (logical ID) of the custom resource in the Cl
 
 `PhysicalResourceId`
 This value should be an identifier unique to the custom resource vendor, and can be up to 1 KB in size. The value must be a non-empty string and must be identical for all responses for the same resource.
-When updating custom resources, the value returned for `PhysicalResourceId` determines the update behavior. If the value remains the same, CloudFormation considers it a normal update. If the value changes, CloudFormation interprets the update as a replacement and sends a delete request to the old resource. For more information, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-customresource.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-customresource.html).
+When updating custom resources, the value returned for `PhysicalResourceId` determines the update behavior. If the value remains the same, CloudFormation considers it a normal update. If the value changes, CloudFormation interprets the update as a replacement and sends a delete request to the old resource. For more information, see [AWS::CloudFormation::CustomResource](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-customresource.html).
 *Required*: Yes
 *Type*: String
 

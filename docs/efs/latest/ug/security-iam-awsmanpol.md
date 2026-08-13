@@ -35,7 +35,7 @@ This policy includes the following permissions.
 + `iam` – Grants permission to create a service linked role that allows Amazon EFS to manage AWS resources on the user's behalf.
 + `iam:PassRole` – Grants permission to pass an IAM role to Amazon EFS.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticFileSystemFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticFileSystemFullAccess.html) in the *AWS Managed Policy Reference Guide*.
+To view the permissions for this policy, see [AmazonElasticFileSystemFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticFileSystemFullAccess.html) in the *AWS Managed Policy Reference Guide*.
 
 ## AWS managed policy: AmazonElasticFileSystemReadOnlyAccess
 <a name="security-iam-awsmanpol-AmazonElasticFileSystemReadOnlyAccess"></a>
@@ -53,7 +53,7 @@ This policy includes the following permissions.
 + `ec2` – Allows principals to view Availability Zones, network interfaces and their attributes, security groups, subnets, VPCs and their attributes in the Amazon EFS console.
 + `kms` – Allows principals to list aliases for AWS KMS keys in the Amazon EFS console.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticFileSystemReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticFileSystemReadOnlyAccess.html) in the *AWS Managed Policy Reference Guide*.
+To view the permissions for this policy, see [AmazonElasticFileSystemReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticFileSystemReadOnlyAccess.html) in the *AWS Managed Policy Reference Guide*.
 
 ## AWS managed policy: AmazonElasticFileSystemClientFullAccess
 <a name="security-iam-awsmanpol-AmazonElasticFileSystemClientFullAccess"></a>
@@ -62,7 +62,7 @@ You can attach the `AmazonElasticFileSystemClientFullAccess` policy to an IAM en
 
 This policy grants read and write client access to EFS file systems. This policy allows NFS clients to mount, read and write to EFS file systems.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticFileSystemClientFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticFileSystemClientFullAccess.html) in the *AWS Managed Policy Reference Guide*.
+To view the permissions for this policy, see [AmazonElasticFileSystemClientFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticFileSystemClientFullAccess.html) in the *AWS Managed Policy Reference Guide*.
 
 ## AWS managed policy: AmazonElasticFileSystemClientReadWriteAccess
 <a name="security-iam-awsmanpol-AmazonElasticFileSystemClientReadWriteAccess"></a>
@@ -71,7 +71,7 @@ You can attach the `AmazonElasticFileSystemClientReadWriteAccess` policy to an I
 
 This policy grants read and write client access to EFS file systems. This policy allows NFS clients to mount, read and write to EFS file systems.
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticFileSystemClientReadWriteAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticFileSystemClientReadWriteAccess.html) in the *AWS Managed Policy Reference Guide*.
+To view the permissions for this policy, see [AmazonElasticFileSystemClientReadWriteAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticFileSystemClientReadWriteAccess.html) in the *AWS Managed Policy Reference Guide*.
 
 ## Amazon EFS updates to AWS managed policies
 <a name="security-iam-awsmanpol-updates"></a>

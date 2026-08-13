@@ -41,39 +41,39 @@ The following table shows the connector types that each data source supports. Ce
   <tr><th></th><th>Without Lambda</th><th>With Lambda</th><th></th></tr>
 </thead>
 <tbody>
-  <tr><td>[Amazon CloudWatch Logs](connectors-cloudwatch.md)</td><td></td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Amazon CloudWatch Metrics](connectors-cwmetrics.md)</td><td></td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Amazon DocumentDB](connectors-docdb.md)</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Amazon DynamoDB](connectors-dynamodb.md)</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Amazon MSK](connectors-msk.md)</td><td></td><td></td><td>Yes</td></tr>
-  <tr><td>[Amazon Neptune](connectors-neptune.md)</td><td></td><td></td><td>Yes</td></tr>
-  <tr><td>[Amazon OpenSearch](connectors-opensearch.md)</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Amazon Redshift](connectors-redshift.md)</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Amazon Timestream](connectors-timestream.md)</td><td></td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Azure Data Lake Storage](connectors-adls-gen2.md)</td><td></td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Azure Synapse](connectors-azure-synapse.md)</td><td></td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Cloudera Hive](connectors-cloudera-hive.md)</td><td></td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Cloudera Impala](connectors-cloudera-impala.md)</td><td></td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[CMDB](connectors-cmdb.md)</td><td></td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Confluent](connectors-kafka.md)</td><td></td><td></td><td>Yes</td></tr>
-  <tr><td>[Custom](connect-data-source-federation-sdk.md)</td><td></td><td></td><td>Yes</td></tr>
-  <tr><td>[Db2](connectors-ibm-db2.md)</td><td></td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Db2 iSeries](connectors-ibm-db2-as400.md)</td><td></td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Google BigQuery](connectors-bigquery.md)</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Google Cloud Storage](connectors-gcs.md)</td><td></td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[HBase](connectors-hbase.md)</td><td></td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Hortonworks (Hive)](connectors-hortonworks.md)</td><td></td><td></td><td>Yes</td></tr>
-  <tr><td>[Kafka](connectors-kafka.md)</td><td></td><td></td><td>Yes</td></tr>
-  <tr><td>[MySQL](connectors-mysql.md)</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Oracle](connectors-oracle.md)</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[PostgreSQL](connectors-postgresql.md)</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Redis OSS](connectors-redis.md)</td><td></td><td></td><td>Yes</td></tr>
-  <tr><td>[SAP HANA](connectors-sap-hana.md)</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Snowflake](connectors-snowflake.md)</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[SQL Server](connectors-microsoft-sql-server.md)</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Teradata](connectors-teradata.md)</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[TPC-DS](connectors-tpcds.md)</td><td></td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>[Vertica](connectors-vertica.md)</td><td></td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-cloudwatch.md">Amazon CloudWatch Logs</a></td><td></td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-cwmetrics.md">Amazon CloudWatch Metrics</a></td><td></td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-docdb.md">Amazon DocumentDB</a></td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-dynamodb.md">Amazon DynamoDB</a></td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-msk.md">Amazon MSK</a></td><td></td><td></td><td>Yes</td></tr>
+  <tr><td><a href="connectors-neptune.md">Amazon Neptune</a></td><td></td><td></td><td>Yes</td></tr>
+  <tr><td><a href="connectors-opensearch.md">Amazon OpenSearch</a></td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-redshift.md">Amazon Redshift</a></td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-timestream.md">Amazon Timestream</a></td><td></td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-adls-gen2.md">Azure Data Lake Storage</a></td><td></td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-azure-synapse.md">Azure Synapse</a></td><td></td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-cloudera-hive.md">Cloudera Hive</a></td><td></td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-cloudera-impala.md">Cloudera Impala</a></td><td></td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-cmdb.md">CMDB</a></td><td></td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-kafka.md">Confluent</a></td><td></td><td></td><td>Yes</td></tr>
+  <tr><td><a href="connect-data-source-federation-sdk.md">Custom</a></td><td></td><td></td><td>Yes</td></tr>
+  <tr><td><a href="connectors-ibm-db2.md">Db2</a></td><td></td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-ibm-db2-as400.md">Db2 iSeries</a></td><td></td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-bigquery.md">Google BigQuery</a></td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-gcs.md">Google Cloud Storage</a></td><td></td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-hbase.md">HBase</a></td><td></td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-hortonworks.md">Hortonworks (Hive)</a></td><td></td><td></td><td>Yes</td></tr>
+  <tr><td><a href="connectors-kafka.md">Kafka</a></td><td></td><td></td><td>Yes</td></tr>
+  <tr><td><a href="connectors-mysql.md">MySQL</a></td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-oracle.md">Oracle</a></td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-postgresql.md">PostgreSQL</a></td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-redis.md">Redis OSS</a></td><td></td><td></td><td>Yes</td></tr>
+  <tr><td><a href="connectors-sap-hana.md">SAP HANA</a></td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-snowflake.md">Snowflake</a></td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-microsoft-sql-server.md">SQL Server</a></td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-teradata.md">Teradata</a></td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-tpcds.md">TPC-DS</a></td><td></td><td>Yes</td><td>Yes</td></tr>
+  <tr><td><a href="connectors-vertica.md">Vertica</a></td><td></td><td>Yes</td><td>Yes</td></tr>
 </tbody>
 </table>
 

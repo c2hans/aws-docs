@@ -120,14 +120,14 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 
 For the access entry `arn:aws:iam::012345678910:role/my-role`, `Ref` returns the ARN of the access entry.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-eks-accessentry-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-eks-accessentry-return-values-fn--getatt-fn--getatt"></a>
@@ -213,4 +213,4 @@ MyAccessEntry:
 ## See also
 <a name="aws-resource-eks-accessentry--seealso"></a>
 + [Access entries](https://docs.aws.amazon.com/eks/latest/userguide/access-entries.html) in the *Amazon EKS User Guide *.
-+ [https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateAccessEntry.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateAccessEntry.html) in the *Amazon EKS API Reference*.
++ [`CreateAccessEntry`](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateAccessEntry.html) in the *Amazon EKS API Reference*.

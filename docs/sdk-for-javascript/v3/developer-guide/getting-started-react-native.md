@@ -21,8 +21,8 @@ This tutorial shows you how you can create a React Native app using [React Nativ
 Amazon S3 is a cloud service that enables you to store and retrieve any amount of data at any time, from anywhere on the web. React Native is a development framework that enables you to create mobile applications. This tutorial shows you how you can create a React Native app that connects to Amazon S3 to create and delete an Amazon S3 bucket.
 
 The app uses the following AWS SDK for JavaScript APIs:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/cognito-identity/](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/cognito-identity/) constructor
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/) constructor
++ [`CognitoIdentityClient`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/cognito-identity/) constructor
++ [`S3`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/) constructor
 
 ## Prerequisite tasks
 <a name="getting-started-react-setup"></a>

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/IDR/latest/userguide/aws-support-app-sla
 
 With the [AWS Support App in Slack](https://docs.aws.amazon.com/awssupport/latest/user/aws-support-app-for-slack.html), you can manage your Support cases in Slack, receive notifications about new [alarm initiated incidents](https://docs.aws.amazon.com/IDR/latest/userguide/incidents-idr.html) on your AWS Incident Detection and Response workload, and create [Incident Response Requests](https://docs.aws.amazon.com/IDR/latest/userguide/inbound-incident-idr.html).
 
-To configure the AWS Support App in Slack, follow the instructions provided in the [https://docs.aws.amazon.com/awssupport/latest/user/aws-support-app-for-slack.html](https://docs.aws.amazon.com/awssupport/latest/user/aws-support-app-for-slack.html).
+To configure the AWS Support App in Slack, follow the instructions provided in the [*Support User Guide*](https://docs.aws.amazon.com/awssupport/latest/user/aws-support-app-for-slack.html).
 
 **Important**
 To receive notifications in Slack for all alarm initiated incidents on your workload, you must configure the AWS Support App in Slack for all your workload’s accounts that are onboarded to AWS Incident Detection and Response. Support cases are created in the account that the workload alarm originated in.

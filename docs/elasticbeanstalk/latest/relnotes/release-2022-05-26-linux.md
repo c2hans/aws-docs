@@ -18,21 +18,38 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/alas2.html) on or before **May 5, 2022** to all released Amazon Linux 2 platforms.<br />The **Apache httpd**, **Go**, **Corretto**, and **.NET Core** releases are security releases. For more information, see **Cross-platform updates** and **Platform-specific updates** in this table. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-05-26-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-05-26-linux.html) |
-| **Base AMI** | Updated the base AMI to version **2.0.20220426**. |
-| **Apache httpd** | Updated platforms supporting the Apache HTTP Server 2.4 to version **2.4.53**. For details, see [Changes with Apache 2.4.x](https://downloads.apache.org/httpd/CHANGES_2.4) on the *Apache Software Foundation* website.<br />The Apache 2.4.53 release is a security release. |
-| **Go** | Updated Go to release **1.18.2**. For details, see [go1.18](https://golang.org/doc/devel/release.html#go1.18) in *The Go Programming Language Release History*.<br />The Go 1.18.2 release is a security release. |
-| **Corretto** | Updated Corretto 11 to version **11.0.15.9.1**. For more information, see [Change Log for Amazon Corretto 11](https://github.com/corretto/corretto-11/blob/develop/CHANGELOG.md) in the Corretto 11 repository on GitHub.<br />Updated Corretto 8 to version **8.332.08.1**. For more information, see [Change Log for Amazon Corretto 8](https://github.com/corretto/corretto-8/blob/develop/CHANGELOG.md) in the Corretto 8 repository on GitHub.<br />Both Corretto updates are security releases. |
-| **.NET Core** | Updated .NET Core to releases [6.0.5](https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0.5/6.0.5.md) , [5.0.17](https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0.17/5.0.17.md) , and [3.1.25](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1.25/3.1.25.md) <br />All three .NET Core updates are security releases. |
-| **Node.js** | Updated Node.js 16 to add support for Node version [16.15.0](https://nodejs.org/en/blog/release/v16.15.0/).<br />Updated Node.js 14 to add support for Node version [14.19.2](https://nodejs.org/en/blog/release/v14.19.2/) and [14.19.3](https://nodejs.org/en/blog/release/v14.19.3/).<br /> |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/alas2.html">Amazon Linux Security Center</a> on or before <b>May 5, 2022</b> to all released Amazon Linux 2 platforms.<br />The <b>Apache httpd</b>, <b>Go</b>, <b>Corretto</b>, and <b>.NET Core</b> releases are security releases. For more information, see <b>Cross-platform updates</b> and <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Base AMI</b></td><td>Updated the base AMI to version <b>2.0.20220426</b>.</td></tr>
+  <tr><td><b>Apache httpd</b></td><td>Updated platforms supporting the Apache HTTP Server 2.4 to version <b>2.4.53</b>. For details, see <a href="https://downloads.apache.org/httpd/CHANGES_2.4">Changes with Apache 2.4.x</a> on the <i>Apache Software Foundation</i> website.<br />The Apache 2.4.53 release is a security release.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Go</b></td><td>Updated Go to release <b>1.18.2</b>. For details, see <a href="https://golang.org/doc/devel/release.html#go1.18">go1.18</a> in <i>The Go Programming Language Release History</i>.<br />The Go 1.18.2 release is a security release.</td></tr>
+  <tr><td><b>Corretto</b></td><td>Updated Corretto 11 to version <b>11.0.15.9.1</b>. For more information, see <a href="https://github.com/corretto/corretto-11/blob/develop/CHANGELOG.md">Change Log for Amazon Corretto 11</a> in the Corretto 11 repository on GitHub.<br />Updated Corretto 8 to version <b>8.332.08.1</b>. For more information, see <a href="https://github.com/corretto/corretto-8/blob/develop/CHANGELOG.md">Change Log for Amazon Corretto 8</a> in the Corretto 8 repository on GitHub.<br />Both Corretto updates are security releases.</td></tr>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET Core to releases <a href="https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0.5/6.0.5.md">6.0.5</a> , <a href="https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0.17/5.0.17.md">5.0.17</a> , and <a href="https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1.25/3.1.25.md">3.1.25</a> <br />All three .NET Core updates are security releases.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated Node.js 16 to add support for Node version <a href="https://nodejs.org/en/blog/release/v16.15.0/">16.15.0</a>.<br />Updated Node.js 14 to add support for Node version <a href="https://nodejs.org/en/blog/release/v14.19.2/">14.19.2</a> and <a href="https://nodejs.org/en/blog/release/v14.19.3/">14.19.3</a>.<br /></td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2022-05-26-linux.platforms"></a>

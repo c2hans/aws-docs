@@ -42,7 +42,7 @@ In the source Region, replicated backups are listed on the **Current Region** ta
 ## AWS CLI
 <a name="AutomatedBackups.Replicating.Enable.CLI"></a>
 
-Enable backup replication by using the [https://docs.aws.amazon.com/cli/latest/reference/rds/start-db-instance-automated-backups-replication.html](https://docs.aws.amazon.com/cli/latest/reference/rds/start-db-instance-automated-backups-replication.html) AWS CLI command.
+Enable backup replication by using the [`start-db-instance-automated-backups-replication`](https://docs.aws.amazon.com/cli/latest/reference/rds/start-db-instance-automated-backups-replication.html) AWS CLI command.
 
 The following CLI example replicates automated backups from a DB instance in the US West (Oregon) Region to the US East (N. Virginia) Region. It also encrypts the replicated backups, using an AWS KMS key in the destination Region.
 
@@ -76,7 +76,7 @@ The following CLI example replicates automated backups from a DB instance in the
 ## RDS API
 <a name="AutomatedBackups.Replicating.Enable.API"></a>
 
-Enable backup replication by using the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_StartDBInstanceAutomatedBackupsReplication.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_StartDBInstanceAutomatedBackupsReplication.html) RDS API operation with the following parameters:
+Enable backup replication by using the [`StartDBInstanceAutomatedBackupsReplication`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_StartDBInstanceAutomatedBackupsReplication.html) RDS API operation with the following parameters:
 + `Region` (if you aren't calling the API operation from the destination Region)
 + `SourceDBInstanceArn`
 + `BackupRetentionPeriod`

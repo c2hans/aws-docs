@@ -165,7 +165,7 @@ attributeActionsOnEncrypt.put(":attribute4", CryptoAction.DO_NOTHING);
 
 When you use the AWS Database Encryption SDK, you must explicitly define an encryption configuration for your DynamoDB table. The values required in your encryption configuration depend on whether you defined your attribute actions manually or with an annotated data class.
 
-The following snippet defines a DynamoDB table encryption configuration using the DynamoDB Enhanced Client, [https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-en-client-gs-tableschema.html](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-en-client-gs-tableschema.html), and allowed unsigned attributes defined by a distinct prefix.
+The following snippet defines a DynamoDB table encryption configuration using the DynamoDB Enhanced Client, [`TableSchema`](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-en-client-gs-tableschema.html), and allowed unsigned attributes defined by a distinct prefix.
 
 ```
 final Map<String, DynamoDbEnhancedTableEncryptionConfig> tableConfigs = new HashMap<>();

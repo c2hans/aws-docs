@@ -12,16 +12,27 @@ This release applies Windows September 2018 security updates to the Windows Serv
 ## Changes
 <a name="release-2018-09-24-windows.changes"></a>
 
-| **Category** | **Description** |
-| --- | --- |
-| **Instance type** | **Regions** |
-| --- | --- |
-| **Windows security updates** | Applied September 2018 security updates for Windows.<br />See Microsoft's [Security TechCenter](https://portal.msrc.microsoft.com/en-us/) and [Security Advisories and Bulletins](https://technet.microsoft.com/en-us/library/security/). |
-| **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-09-24-windows.html) |
-| **p3** |  + Asia Pacific (Singapore)—ap-southeast-1<br />+ Asia Pacific (Sydney)—ap-southeast-2<br />+ Canada (Central)—ca-central-1<br />+ China (Ningxia)—cn-northwest-1<br />+ EU (Frankfurt)—eu-central-1<br />+ EU (London)—eu-west-2  |
-| **c5d** |  + US West (N. California)—us-west-1<br />+ Asia Pacific (Seoul)—ap-northeast-2<br />+ Asia Pacific (Singapore)—ap-southeast-1<br />+ Asia Pacific (Sydney)—ap-southeast-2<br />+ Asia Pacific (Tokyo)—ap-northeast-1<br />+ EU (Frankfurt)—eu-central-1<br />+ EU (London)—eu-west-2  |
-| **m5d** |  + US West (N. California)—us-west-1<br />+ Asia Pacific (Seoul)—ap-northeast-2<br />+ Asia Pacific (Singapore)—ap-southeast-1<br />+ Asia Pacific (Sydney)—ap-southeast-2<br />+ Asia Pacific (Tokyo)—ap-northeast-1<br />+ EU (Frankfurt)—eu-central-1<br />+ EU (London)—eu-west-2  |
-| **t3** |  + US East (N. Virginia)—us-east-1<br />+ US East (Ohio)—us-east-2<br />+ US West (N. California)—us-west-1<br />+ US West (Oregon)—us-west-2<br />+ Asia Pacific (Singapore)—ap-southeast-1<br />+ Asia Pacific (Sydney)—ap-southeast-2<br />+ Asia Pacific (Tokyo)—ap-northeast-1<br />+ Canada (Central)—ca-central-1<br />+ EU (Frankfurt)—eu-central-1<br />+ EU (Ireland)—eu-west-1<br />+ EU (London)—eu-west-2<br />+ South America (São Paulo)—sa-east-1  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows security updates</b></td><td>Applied September 2018 security updates for Windows.<br />See Microsoft's <a href="https://portal.msrc.microsoft.com/en-us/">Security TechCenter</a> and <a href="https://technet.microsoft.com/en-us/library/security/">Security Advisories and Bulletins</a>.</td></tr>
+  <tr><td><b>Instance types</b></td><td>Added support for more Amazon EC2 instance types in some AWS Regions, as follows:
+<table>
+<thead>
+  <tr><th><b>Instance type</b></th><th><b>Regions</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>p3</b></td><td> <ul><li>Asia Pacific (Singapore)—ap-southeast-1</li><li>Asia Pacific (Sydney)—ap-southeast-2</li><li>Canada (Central)—ca-central-1</li><li>China (Ningxia)—cn-northwest-1</li><li>EU (Frankfurt)—eu-central-1</li><li>EU (London)—eu-west-2</li></ul> </td></tr>
+  <tr><td><b>c5d</b></td><td> <ul><li>US West (N. California)—us-west-1</li><li>Asia Pacific (Seoul)—ap-northeast-2</li><li>Asia Pacific (Singapore)—ap-southeast-1</li><li>Asia Pacific (Sydney)—ap-southeast-2</li><li>Asia Pacific (Tokyo)—ap-northeast-1</li><li>EU (Frankfurt)—eu-central-1</li><li>EU (London)—eu-west-2</li></ul> </td></tr>
+  <tr><td><b>m5d</b></td><td> <ul><li>US West (N. California)—us-west-1</li><li>Asia Pacific (Seoul)—ap-northeast-2</li><li>Asia Pacific (Singapore)—ap-southeast-1</li><li>Asia Pacific (Sydney)—ap-southeast-2</li><li>Asia Pacific (Tokyo)—ap-northeast-1</li><li>EU (Frankfurt)—eu-central-1</li><li>EU (London)—eu-west-2</li></ul> </td></tr>
+  <tr><td><b>t3</b></td><td> <ul><li>US East (N. Virginia)—us-east-1</li><li>US East (Ohio)—us-east-2</li><li>US West (N. California)—us-west-1</li><li>US West (Oregon)—us-west-2</li><li>Asia Pacific (Singapore)—ap-southeast-1</li><li>Asia Pacific (Sydney)—ap-southeast-2</li><li>Asia Pacific (Tokyo)—ap-northeast-1</li><li>Canada (Central)—ca-central-1</li><li>EU (Frankfurt)—eu-central-1</li><li>EU (Ireland)—eu-west-1</li><li>EU (London)—eu-west-2</li><li>South America (São Paulo)—sa-east-1</li></ul> </td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## Updated platform configurations
 <a name="release-2018-09-24-windows.platforms"></a>

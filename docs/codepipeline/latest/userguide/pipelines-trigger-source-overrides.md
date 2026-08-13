@@ -45,7 +45,7 @@ For the `S3_OBJECT_VERSION_ID` and `S3_OBJECT_KEY` types of source revisions, ei
 
 1. Open a terminal (Linux, macOS, or Unix) or command prompt (Windows) and use the AWS CLI to run the **start-pipeline-execution** command, specifying the name of the pipeline you want to start. You also use the **--source-revisions** argument to provide the source revision ID. The source revision is made up of the actionName, revisionType, and revisionValue. Valid revisionType values are `COMMIT_ID | IMAGE_DIGEST | S3_OBJECT_VERSION_ID | S3_OBJECT_KEY`.
 
-   In the following example, to start running the specified change through a pipeline named **codecommit-pipeline**, the following command species a source action name of Source, a revision type of `COMMIT_ID`, and a commit ID of `78a25c18755ccac3f2a9eec099dEXAMPLE`.
+   In the following example, to start running the specified change through a pipeline named **codecommit-pipeline**, the following command specifies a source action name of Source, a revision type of `COMMIT_ID`, and a commit ID of `78a25c18755ccac3f2a9eec099dEXAMPLE`.
 
    ```
    aws codepipeline start-pipeline-execution --name codecommit-pipeline --source-revisions actionName=Source,revisionType=COMMIT_ID,revisionValue=78a25c18755ccac3f2a9eec099dEXAMPLE --region us-west-1

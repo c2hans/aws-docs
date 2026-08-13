@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 # Create a build from a file directory
 <a name="gamelift-build-cli-uploading-upload-build"></a>
 
-To create a game build stored in any location, including a local directory, use the [https://docs.aws.amazon.com/cli/latest/reference/gamelift/upload-build.html](https://docs.aws.amazon.com/cli/latest/reference/gamelift/upload-build.html) AWS CLI command. This command creates a new build record in Amazon GameLift Servers and uploads files from a location that you specify.
+To create a game build stored in any location, including a local directory, use the [`upload-build`](https://docs.aws.amazon.com/cli/latest/reference/gamelift/upload-build.html) AWS CLI command. This command creates a new build record in Amazon GameLift Servers and uploads files from a location that you specify.
 
 **Send an upload request.** In a command line window, enter the following **upload-build** command and parameters.
 
@@ -25,7 +25,7 @@ aws gamelift upload-build \
 + **build-version** – The version details for the build files.
 + **region** – The AWS Region where you want to create your build. Create the build in the Region where you plan to deploy fleets. If you're deploying your game in multiple Regions, create a build in each Region.
 **Note**
-View your current default Region using the [https://docs.aws.amazon.com/cli/latest/reference/configure/get.html](https://docs.aws.amazon.com/cli/latest/reference/configure/get.html). To change your default Region, use the [https://docs.aws.amazon.com/cli/latest/reference/configure/set.html](https://docs.aws.amazon.com/cli/latest/reference/configure/set.html) command.
+View your current default Region using the [**aws configure get region**](https://docs.aws.amazon.com/cli/latest/reference/configure/get.html). To change your default Region, use the [**aws configure set region {{region name}}**](https://docs.aws.amazon.com/cli/latest/reference/configure/set.html) command.
 
 *Examples*
 

@@ -39,7 +39,7 @@ You can click the **Group by** dropdown to use different grouping options. By de
 If you want to define your own custom grouping, click **Manage groups** to define custom groups and then tag your services or add OTEL Resource Attributes with the group key.
 
 **Note**
-To enable grouping via OTEL resource attributes, the CloudWatch agent version must be v1.300056.0 or later.
+To enable grouping through OTEL resource attributes, the CloudWatch agent version must be v1.300056.0 or later.
 
 ![Create custom grouping panel.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/explore-application-map-create-custom-grouping.png)
 

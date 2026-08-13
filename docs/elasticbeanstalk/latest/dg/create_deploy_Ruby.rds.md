@@ -56,10 +56,10 @@ gem 'mysql2'
 ```
 
 **Common adapter gems for Ruby**
-+ **MySQL** – [https://rubygems.org/gems/mysql2](https://rubygems.org/gems/mysql2)
-+ **PostgreSQL** – [https://rubygems.org/gems/pg](https://rubygems.org/gems/pg)
-+ **Oracle** – [https://rubygems.org/gems/activerecord-oracle_enhanced-adapter](https://rubygems.org/gems/activerecord-oracle_enhanced-adapter)
-+ **SQL Server** – [https://rubygems.org/gems/activerecord-sqlserver-adapter](https://rubygems.org/gems/activerecord-sqlserver-adapter)
++ **MySQL** – [`mysql2`](https://rubygems.org/gems/mysql2)
++ **PostgreSQL** – [`pg`](https://rubygems.org/gems/pg)
++ **Oracle** – [`activerecord-oracle_enhanced-adapter`](https://rubygems.org/gems/activerecord-oracle_enhanced-adapter)
++ **SQL Server** – [`activerecord-sqlserver-adapter`](https://rubygems.org/gems/activerecord-sqlserver-adapter)
 
 ## Connecting to a database
 <a name="ruby-rds-connect"></a>

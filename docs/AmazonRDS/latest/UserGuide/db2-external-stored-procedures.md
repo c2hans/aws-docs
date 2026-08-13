@@ -102,7 +102,7 @@ You can create and modify a custom parameter group by using the AWS Management C
 
 **To configure the db2\_alternate\_authz\_behaviour parameter in a custom parameter group**
 
-1. If you want to use a different custom DB parameter group than the one your DB instance is using, create a custom parameter group by running the [https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-parameter-group.html) command. If you're using the bring your own license (BYOL) model, make sure that the new custom parameter group includes the IBM IDs. For information about these IDs, see [IBM IDs for bring your own license (BYOL) for Db2](db2-licensing.md#db2-prereqs-ibm-info).
+1. If you want to use a different custom DB parameter group than the one your DB instance is using, create a custom parameter group by running the [create-db-parameter-group](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-parameter-group.html) command. If you're using the bring your own license (BYOL) model, make sure that the new custom parameter group includes the IBM IDs. For information about these IDs, see [IBM IDs for bring your own license (BYOL) for Db2](db2-licensing.md#db2-prereqs-ibm-info).
 
    Include the following required options:
    + `--db-parameter-group-name` – A name for the parameter group that you are creating.
@@ -133,7 +133,7 @@ You can create and modify a custom parameter group by using the AWS Management C
    --description "test db2 external routines"
    ```
 
-1. Modify the `db2_alternate_authz_behaviour` parameter in your custom parameter group by running the [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-parameter-group.html) command.
+1. Modify the `db2_alternate_authz_behaviour` parameter in your custom parameter group by running the [modify-db-parameter-group](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-parameter-group.html) command.
 
    Include the following required options:
    + `--db-parameter-group-name` – The name of the parameter group that you created.
@@ -164,7 +164,7 @@ You can create and modify a custom parameter group by using the AWS Management C
 
 **To configure the db2\_alternate\_authz\_behaviour parameter in a custom parameter group**
 
-1. If you want to use a different custom DB parameter group than the one your DB instance is using, create a new DB parameter group by using the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBParameterGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBParameterGroup.html) operation. If you're using the bring your own license (BYOL) model, make sure that the new custom parameter group includes the IBM Db2 IDs. For information about these IDs, see [IBM IDs for bring your own license (BYOL) for Db2](db2-licensing.md#db2-prereqs-ibm-info).
+1. If you want to use a different custom DB parameter group than the one your DB instance is using, create a new DB parameter group by using the Amazon RDS API [CreateDBParameterGroup](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBParameterGroup.html) operation. If you're using the bring your own license (BYOL) model, make sure that the new custom parameter group includes the IBM Db2 IDs. For information about these IDs, see [IBM IDs for bring your own license (BYOL) for Db2](db2-licensing.md#db2-prereqs-ibm-info).
 
    Include the following required parameters:
    + `DBParameterGroupName`
@@ -173,7 +173,7 @@ You can create and modify a custom parameter group by using the AWS Management C
 
    For more information about creating a DB parameter group, see [Creating a DB parameter group in Amazon RDS](USER_WorkingWithParamGroups.Creating.md).
 
-1. Modify the `db2_alternate_authz_behaviour` parameter in your custom parameter group that you created by using the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBParameterGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBParameterGroup.html) operation.
+1. Modify the `db2_alternate_authz_behaviour` parameter in your custom parameter group that you created by using the RDS API [ModifyDBParameterGroup](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBParameterGroup.html) operation.
 
    Include the following required parameters:
    + `DBParameterGroupName`

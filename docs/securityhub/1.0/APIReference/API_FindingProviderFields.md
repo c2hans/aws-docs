@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Finding
 # FindingProviderFields
 <a name="API_FindingProviderFields"></a>
 
-In a [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) request, finding providers use `FindingProviderFields` to provide and update values for the following fields:
+In a [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) request, finding providers use `FindingProviderFields` to provide and update values for the following fields:
 +  `Confidence`
 +  `Criticality`
 +  `RelatedFindings`
@@ -14,7 +14,7 @@ In a [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFi
 
 The preceding fields are nested under the `FindingProviderFields` object, but also have analogues of the same name as top-level ASFF fields. When a new finding is sent to AWS Security Hub CSPM by a finding provider, Security Hub CSPM populates the `FindingProviderFields` object automatically, if it is empty, based on the corresponding top-level fields.
 
-Finding providers can update `FindingProviderFields` only by using the `BatchImportFindings` operation. Finding providers can't update this object with the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation. Customers can update the top-level fields by using the `BatchUpdateFindings` operation. Customers can't update `FindingProviderFields`.
+Finding providers can update `FindingProviderFields` only by using the `BatchImportFindings` operation. Finding providers can't update this object with the [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation. Customers can update the top-level fields by using the `BatchUpdateFindings` operation. Customers can't update `FindingProviderFields`.
 
 For information about how Security Hub CSPM handles updates from `BatchImportFindings` to `FindingProviderFields` and to the corresponding top-level attributes, see [Using `FindingProviderFields`](https://docs.aws.amazon.com/securityhub/latest/userguide/finding-update-batchimportfindings.html#batchimportfindings-findingproviderfields) in the * AWS Security Hub CSPM User Guide*.
 

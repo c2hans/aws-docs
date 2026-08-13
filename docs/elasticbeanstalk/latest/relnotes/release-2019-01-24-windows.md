@@ -12,14 +12,25 @@ This release applies Windows January 2019 security updates to the Windows Server
 ## Changes
 <a name="release-2019-01-24-windows.changes"></a>
 
-| **Category** | **Description** |
-| --- | --- |
-| **Instance type** | **Region** |
-| --- | --- |
-| **Windows security updates** | Applied January 2019 security updates for Windows.<br />See Microsoft's [Security TechCenter](https://portal.msrc.microsoft.com/en-us/) and [Security Advisories and Bulletins](https://technet.microsoft.com/en-us/library/security/). |
-| **.NET Core updates** | Added support for .NET Core 2.2 for configurations with Windows Server 2012 or later. For details, see [Announcing .NET Core 2.2](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-2/) in the *.NET Blog*. |
-| **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-01-24-windows.html) |
-| **X1e** |  + Asia Pacific (Seoul) – ap-northeast-2  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows security updates</b></td><td>Applied January 2019 security updates for Windows.<br />See Microsoft's <a href="https://portal.msrc.microsoft.com/en-us/">Security TechCenter</a> and <a href="https://technet.microsoft.com/en-us/library/security/">Security Advisories and Bulletins</a>.</td></tr>
+  <tr><td><b>.NET Core updates</b></td><td>Added support for .NET Core 2.2 for configurations with Windows Server 2012 or later. For details, see <a href="https://devblogs.microsoft.com/dotnet/announcing-net-core-2-2/">Announcing .NET Core 2.2</a> in the <i>.NET Blog</i>.</td></tr>
+  <tr><td><b>Instance types</b></td><td>Added support for more Amazon EC2 instance types in some AWS Regions, as follows:
+<table>
+<thead>
+  <tr><th><b>Instance type</b></th><th><b>Region</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>X1e</b></td><td> <ul><li>Asia Pacific (Seoul) – ap-northeast-2</li></ul> </td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## Updated platform configurations
 <a name="release-2019-01-24-windows.platforms"></a>

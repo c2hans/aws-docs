@@ -28,6 +28,6 @@ By default, the page displays all available widgets.
 
    1. Choose **Add widgets**.
 
-   1. In the **Add widgets** pane, click and hold the drag handle (![The drag handle](http://docs.aws.amazon.com/systems-manager/latest/userguide/images/drag-handle-dashboard.png)) of the widget to add to the display.
+   1. In the **Add widgets** pane, press and hold the drag handle (![The drag handle](http://docs.aws.amazon.com/systems-manager/latest/userguide/images/drag-handle-dashboard.png)) of the widget to add to the display.
 
    1. Drag the widget and drop it into the main pane.

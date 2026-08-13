@@ -14,7 +14,7 @@ In the [Create your first Amazon Location Maps and Places application](first-app
 
 Follow the procedures below to create your first API key.
 
-1. In the [https://console.aws.amazon.com/location](https://console.aws.amazon.com/location) and choose **API keys** from the left menu.
+1. In the [**Amazon Location console**](https://console.aws.amazon.com/location) and choose **API keys** from the left menu.
 
 1. On the **API keys** page, choose **Create API key**.
 

@@ -52,10 +52,10 @@ When you remove the Detective administrator account, Detective is disabled for t
 Removing a Detective administrator account does not affect the delegated administrator account in Organizations.
 
 **To remove the Detective administrator account (Detective API, AWS CLI)**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_DisableOrganizationAdminAccount.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_DisableOrganizationAdminAccount.html) operation.
++ **Detective API:** Use the [`DisableOrganizationAdminAccount`](https://docs.aws.amazon.com/detective/latest/APIReference/API_DisableOrganizationAdminAccount.html) operation.
 
   When you use the Detective API to remove the Detective administrator account, it is only removed in the Region where the API call or command was issued.
-+ **AWS CLI:** At the command line, run the [https://docs.aws.amazon.com/cli/latest/reference/detective/disable-organization-admin-account.html](https://docs.aws.amazon.com/cli/latest/reference/detective/disable-organization-admin-account.html) command.
++ **AWS CLI:** At the command line, run the [`disable-organization-admin-account`](https://docs.aws.amazon.com/cli/latest/reference/detective/disable-organization-admin-account.html) command.
 
   ```
   aws detective disable-organization-admin-account
@@ -71,8 +71,8 @@ Removing the Detective administrator account does not automatically remove the d
 When you remove the delegated administrator account, this deletes all organization behavior graphs where the delegated administrator account is the Detective administrator account. It also disables Detective for the account in those Regions.
 
 **To remove the delegated administrator account (Organizations API, AWS CLI)**
-+ **Organizations API:** Use the [https://docs.aws.amazon.com/organizations/latest/APIReference/API_DeregisterDelegatedAdministrator.html](https://docs.aws.amazon.com/organizations/latest/APIReference/API_DeregisterDelegatedAdministrator.html) operation. You must provide the account identifier of the Detective administrator account, and the service principal for Detective, which is `detective.amazonaws.com`.
-+ **AWS CLI:** At the command line, run the [https://docs.aws.amazon.com/cli/latest/reference/organizations/deregister-delegated-administrator.html](https://docs.aws.amazon.com/cli/latest/reference/organizations/deregister-delegated-administrator.html) command.
++ **Organizations API:** Use the [`DeregisterDelegatedAdministrator`](https://docs.aws.amazon.com/organizations/latest/APIReference/API_DeregisterDelegatedAdministrator.html) operation. You must provide the account identifier of the Detective administrator account, and the service principal for Detective, which is `detective.amazonaws.com`.
++ **AWS CLI:** At the command line, run the [`deregister-delegated-administrator`](https://docs.aws.amazon.com/cli/latest/reference/organizations/deregister-delegated-administrator.html) command.
 
   ```
   aws organizations deregister-delegated-administrator --account-id {{<Detective administrator account ID>}} --service-principal {{<Detective service principal>}}

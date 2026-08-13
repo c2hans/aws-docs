@@ -33,7 +33,7 @@ If you use AWS PrivateLink, resources in the VPC that respond to wait conditions
 <a name="creating-wait-condition"></a>
 
 **1. Wait condition handle**
-You start by defining a [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-waitconditionhandle.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-waitconditionhandle.html) resource in the stack's template. This resource generates the presigned URL needed for sending signals. This allows you to send a signal without having to supply your AWS credentials. For example:
+You start by defining a [AWS::CloudFormation::WaitConditionHandle](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-waitconditionhandle.html) resource in the stack's template. This resource generates the presigned URL needed for sending signals. This allows you to send a signal without having to supply your AWS credentials. For example:
 
 ```
 Resources:
@@ -42,7 +42,7 @@ Resources:
 ```
 
 **2. Wait condition**
-Next, you define an [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-waitcondition.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-waitcondition.html) resource in the stack's template. The basic structure of a `AWS::CloudFormation::WaitCondition` looks like this:
+Next, you define an [AWS::CloudFormation::WaitCondition](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-waitcondition.html) resource in the stack's template. The basic structure of a `AWS::CloudFormation::WaitCondition` looks like this:
 
 ```
   {{MyWaitCondition}}:
@@ -181,7 +181,7 @@ Outputs:
     Value: !GetAtt {{MyWaitCondition}}.Data
 ```
 
-You can then view this data using the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stacks.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stacks.html) command, or the **Outputs** tab of the CloudFormation console.
+You can then view this data using the [describe-stacks](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stacks.html) command, or the **Outputs** tab of the CloudFormation console.
 
 The `Fn::GetAtt` function returns the `UniqueId` and `Data` as a name/value pair within a JSON structure. For example:
 

@@ -8,8 +8,8 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/open-data
 The [Open Data on AWS](https://aws.amazon.com/opendata/) program is a collection of over 300 free, publicly available data sets. You can use AWS Marketplace to find Open Data on AWS data sets, along with other no-cost and paid products, all in one place.
 
 The Open Data on AWS data sets available in the catalog are part of the following affiliated programs:
-+ [https://aws.amazon.com/opendata/open-data-sponsorship-program/](https://aws.amazon.com/opendata/open-data-sponsorship-program/) – This AWS program covers the cost of storage for publicly available high-value cloud-optimized datasets.
-+ [https://sustainability.aboutamazon.com/environment/the-cloud/asdi](https://sustainability.aboutamazon.com/environment/the-cloud/asdi) – This AWS program minimizes the cost and time required to acquire and analyze large sustainability datasets.
++ [**Open Data Sponsorship Program**](https://aws.amazon.com/opendata/open-data-sponsorship-program/) – This AWS program covers the cost of storage for publicly available high-value cloud-optimized datasets.
++ [**Amazon Sustainability Data Initiative (ASDI)**](https://sustainability.aboutamazon.com/environment/the-cloud/asdi) – This AWS program minimizes the cost and time required to acquire and analyze large sustainability datasets.
 
 Anyone can search and find these free Open Data on AWS data sets, with or without an AWS account, no subscription required.
 

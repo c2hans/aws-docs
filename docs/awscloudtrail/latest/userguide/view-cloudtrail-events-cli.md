@@ -19,7 +19,7 @@ Lookup supports the following attributes for management events:
 
 All attributes are optional.
 
-The [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/lookup-events.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/lookup-events.html) command includes the following options:
+The [`lookup-events`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/lookup-events.html) command includes the following options:
 + `--max-items` {{<integer>}} – The total number of items to return in the command's output. If the total number of items available is more than the value specified, a `NextToken` is provided in the command's output. To resume pagination, provide the `NextToken` value in the starting-token argument of a sub- sequent command. Do not use the `NextToken` response element directly outside of the AWS CLI.
 + `--start-time` {{<timestamp>}} – Specifies that only events that occur after or at the specified time are returned. If the specified start time is after the specified end time, an error is returned.
 + `--lookup-attributes` {{<integer>}} – Contains a list of lookup attributes. Currently the list can contain only one item.

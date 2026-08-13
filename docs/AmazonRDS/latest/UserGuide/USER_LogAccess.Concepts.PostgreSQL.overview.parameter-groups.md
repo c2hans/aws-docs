@@ -44,7 +44,7 @@ The log file names are based on the file name pattern specified in the `log_file
 + `postgresql.log.%Y-%m-%d` – Default format for the log file name. Includes the year, month, and date in the name of the log file.
 + `postgresql.log.%Y-%m-%d-%H` – Includes the hour in the log file name format.
 
-For more information, see [https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-ROTATION-AGE](https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-ROTATION-AGE) and [https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-ROTATION-SIZE](https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-ROTATION-SIZE) in the PostgreSQL documentation.
+For more information, see [`log_rotation_age`](https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-ROTATION-AGE) and [`log_rotation_size`](https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-ROTATION-SIZE) in the PostgreSQL documentation.
 
 ## Setting the log destination (`stderr`, `csvlog`)
 <a name="USER_LogAccess.Concepts.PostgreSQL.Log_Format"></a>

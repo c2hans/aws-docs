@@ -43,7 +43,7 @@ You can change the maintenance window time frame using the AWS Management Consol
 ### Changing the maintenance window setting using the CLI
 <a name="CHAP_ReplicationInstanceAdjustingTheMaintenanceWindow.CLI"></a>
 
-To adjust the preferred maintenance window, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) command with the following parameters.
+To adjust the preferred maintenance window, use the AWS CLI [`modify-replication-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) command with the following parameters.
 + `--replication-instance-identifier`
 + `--preferred-maintenance-window`
 
@@ -59,7 +59,7 @@ aws dms modify-replication-instance \
 ### Changing the maintenance window setting using the API
 <a name="CHAP_ReplicationInstanceAdjustingTheMaintenanceWindow.API"></a>
 
-To adjust the preferred maintenance window, use the AWS DMS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html) action with the following parameters.
+To adjust the preferred maintenance window, use the AWS DMS API [`ModifyReplicationInstance`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html) action with the following parameters.
 + `ReplicationInstanceIdentifier = {{myrepinstance}}`
 + `PreferredMaintenanceWindow = {{Tue:04:00-Tue:04:30}}`
 

@@ -11,7 +11,7 @@ For the required permissions, see [Configure permissions to work with CDC stream
 
 **Access records in a stream using the AWS CLI**
 
-1. You can use the Amazon Keyspaces Streams API to access the change records of the stream. For more information, see [https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/Welcome.html](https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/Welcome.html). To retrieve the shards within the stream, you can use the `get-stream` API as shown in the following example.
+1. You can use the Amazon Keyspaces Streams API to access the change records of the stream. For more information, see [*Amazon Keyspaces Streams API Reference*](https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/Welcome.html). To retrieve the shards within the stream, you can use the `get-stream` API as shown in the following example.
 
    ```
    aws keyspacesstreams get-stream \

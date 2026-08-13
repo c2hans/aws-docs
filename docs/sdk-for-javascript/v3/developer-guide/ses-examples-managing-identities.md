@@ -23,10 +23,10 @@ For details on how to verify email addresses and domains in Amazon SES, see [Ver
 <a name="ses-examples-verifying-identities-scenario"></a>
 
 In this example, you use a series of Node.js modules to verify and manage Amazon SES identities. The Node.js modules use the SDK for JavaScript to verify email addresses and domains, using these methods of the `SES` client class:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-ses/Class/ListIdentitiesCommand/](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-ses/Class/ListIdentitiesCommand/)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-ses/Class/DeleteIdentityCommand/](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-ses/Class/DeleteIdentityCommand/)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-ses/Class/VerifyEmailIdentityCommand/](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-ses/Class/VerifyEmailIdentityCommand/)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-ses/Class/VerifyDomainIdentityCommand/](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-ses/Class/VerifyDomainIdentityCommand/)
++ [`ListIdentitiesCommand`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-ses/Class/ListIdentitiesCommand/)
++ [`DeleteIdentityCommand`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-ses/Class/DeleteIdentityCommand/)
++ [`VerifyEmailIdentityCommand`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-ses/Class/VerifyEmailIdentityCommand/)
++ [`VerifyDomainIdentityCommand`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-ses/Class/VerifyDomainIdentityCommand/)
 
 ## Prerequisite tasks
 <a name="ses-examples-verifying-identities-prerequisites"></a>

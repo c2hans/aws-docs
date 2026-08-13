@@ -20,7 +20,7 @@ These controls may not be available in all AWS Regions. For more information, se
 
 **Resource type:** `AWS::ECR::Repository`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ecr-private-image-scanning-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/ecr-private-image-scanning-enabled.html)
+**AWS Config rule:** [ecr-private-image-scanning-enabled](https://docs.aws.amazon.com/config/latest/developerguide/ecr-private-image-scanning-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -46,7 +46,7 @@ To configure image scanning for an ECR repository, see [Image scanning](https://
 
 **Resource type:** `AWS::ECR::Repository`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ecr-private-tag-immutability-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/ecr-private-tag-immutability-enabled.html)
+**AWS Config rule:** [ecr-private-tag-immutability-enabled](https://docs.aws.amazon.com/config/latest/developerguide/ecr-private-tag-immutability-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -72,7 +72,7 @@ To create a repository with immutable tags configured or to update the image tag
 
 **Resource type:** `AWS::ECR::Repository`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ecr-private-lifecycle-policy-configured.html](https://docs.aws.amazon.com/config/latest/developerguide/ecr-private-lifecycle-policy-configured.html)
+**AWS Config rule:** [ecr-private-lifecycle-policy-configured](https://docs.aws.amazon.com/config/latest/developerguide/ecr-private-lifecycle-policy-configured.html)
 
 **Schedule type:** Change triggered
 
@@ -129,7 +129,7 @@ To add tags to an ECR public repository, see [Tagging an Amazon ECR public repos
 
 **Resource type:** `AWS::ECR::Repository`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ecr-repository-cmk-encryption-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/ecr-repository-cmk-encryption-enabled.html)
+**AWS Config rule:** [ecr-repository-cmk-encryption-enabled](https://docs.aws.amazon.com/config/latest/developerguide/ecr-repository-cmk-encryption-enabled.html)
 
 **Schedule type:** Change triggered
 

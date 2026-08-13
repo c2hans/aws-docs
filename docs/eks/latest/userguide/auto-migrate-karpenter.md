@@ -23,7 +23,7 @@ Before beginning the migration, ensure you have:
 This topic assumes you are familiar with Karpenter and NodePools. For more information, see the [Karpenter Documentation.](https://karpenter.sh/)
 
 **Note**
-Some CRDs (e.g. `nodepools.karpenter.sh` and `nodeclaims.karpenter.sh`) are shared between EKS Auto Mode and Karpenter. Don’t update or modify these CRDs during the migration.
+Some CRDs (e.g., `nodepools.karpenter.sh` and `nodeclaims.karpenter.sh`) are shared between EKS Auto Mode and Karpenter. Don’t update or modify these CRDs during the migration.
 
 ## Step 1: Enable EKS Auto Mode on the cluster
 <a name="_step_1_enable_eks_auto_mode_on_the_cluster"></a>

@@ -60,7 +60,7 @@ The following table summarizes the archive retrieval options. For information ab
 | --- | --- | --- | --- |
 | Amazon Glacier | 1–5 minutes | 3–5 hours | 5–12 hours |
 
-To make an `Expedited`, `Standard`, or `Bulk` retrieval, set the `Tier` request element in the [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPOSTrestore.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPOSTrestore.html) REST API operation request to the option that you want, or the equivalent in the AWS Command Line Interface (AWS CLI) or AWS SDKs. If you purchased provisioned capacity, all Expedited retrievals are automatically served through your provisioned capacity.
+To make an `Expedited`, `Standard`, or `Bulk` retrieval, set the `Tier` request element in the [RestoreObject](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPOSTrestore.html) REST API operation request to the option that you want, or the equivalent in the AWS Command Line Interface (AWS CLI) or AWS SDKs. If you purchased provisioned capacity, all Expedited retrievals are automatically served through your provisioned capacity.
 
 ### Provisioned Capacity
 <a name="api-downloading-an-archive-two-steps-retrieval-expedited-capacity"></a>

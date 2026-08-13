@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 # Deploy A2A servers in AgentCore Runtime
 <a name="runtime-a2a"></a>
 
-Amazon Bedrock AgentCore AgentCore Runtime lets you deploy and run Agent-to-Agent (A2A) servers in the AgentCore Runtime. This guide walks you through creating, testing, and deploying your first A2A server.
+Amazon Bedrock AgentCore Runtime lets you deploy and run Agent-to-Agent (A2A) servers in the AgentCore Runtime. This guide walks you through creating, testing, and deploying your first A2A server.
 
 In this section, you learn:
 + How Amazon Bedrock AgentCore supports A2A

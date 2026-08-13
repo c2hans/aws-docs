@@ -25,7 +25,6 @@ This solution is relevant for the following conditions:
 + Amazon ECS services that you register with AWS Cloud Map for DNS-based service discovery.
 + Amazon VPC with DNS enabled, and at least two subnets in different Availability Zones for the collector.
 + A security group that allows the collector to reach the metrics port on your tasks. If your tasks and the collector share a security group, add a self-referencing ingress rule for the metrics port.
-+ If you deploy the collector in private subnets that have no internet access, an interface VPC endpoint for CloudWatch. For more information, see [Configure VPC endpoints for private subnets](managed-prometheus-collectors-vpc-setup.md#managed-prometheus-collectors-vpc-endpoints).
 
 ## Enable Prometheus exporters
 <a name="Solution-Prometheus-On-ECS-Exporters"></a>
@@ -84,7 +83,7 @@ scrape_configs:
 
 Create a VPC-connected managed collector that scrapes your Amazon ECS tasks and delivers metrics to your CloudWatch dataset:
 
-You can use [https://docs.aws.amazon.com/prometheus/latest/APIReference/API_GetDefaultScraperConfiguration.html](https://docs.aws.amazon.com/prometheus/latest/APIReference/API_GetDefaultScraperConfiguration.html) to retrieve a general-purpose scraper configuration, or provide your own.
+You can use [GetDefaultScraperConfiguration](https://docs.aws.amazon.com/prometheus/latest/APIReference/API_GetDefaultScraperConfiguration.html) to retrieve a general-purpose scraper configuration, or provide your own.
 
 ------
 #### [ AWS API ]

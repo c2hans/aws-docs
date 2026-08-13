@@ -56,7 +56,7 @@ Alarms also publish events to Amazon EventBridge when it goes into the partial d
 }
 ```
 
-If the query for the alarm includes a GROUP BY statement that initially returns more than 500 time series, the alarm is evaluated based on the first 500 time series that the query finds. However, if you use an ORDER BY clause, then all the time series that the query finds are sorted, and the 500 that have the highest or lowest values according to your ORDER BY clause are used to evaluate the alarm.
+If the query for the alarm includes a GROUP BY statement that initially returns more than 500 time series, the alarm is evaluated based on the first 500 time series that the query finds. However, if you use an ORDER BY clause, then all the time series that the query finds are sorted. The 500 that have the highest or lowest values according to your ORDER BY clause are used to evaluate the alarm.
 
 ## How partial data from a multi data source alarm is evaluated
 <a name="multi-data-source-partial-data"></a>

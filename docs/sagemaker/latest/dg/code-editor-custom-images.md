@@ -34,7 +34,7 @@ If you are bringing your own image to SageMaker Unified Studio, you will need to
 ------
 #### [ Example micromamba Dockerfile ]
 
-The following is an example Dockerfile to create an image from scratch using a [https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html) base environment:
+The following is an example Dockerfile to create an image from scratch using a [`micromamba`](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html) base environment:
 
 ```
 FROM mambaorg/micromamba:latest

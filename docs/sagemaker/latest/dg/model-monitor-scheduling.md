@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-schedu
 **Note**
 Amazon SageMaker Model Monitor is no longer open to new customers. Existing customers can continue to use the service as normal. AWS continues to invest in security and availability improvements for Model Monitor, but we do not plan to introduce new features. For more information, see [Amazon SageMaker Model Monitor availability change](model-monitor-availability-change.md).
 
-Amazon SageMaker Model Monitor provides you the ability to monitor the data collected from your real-time endpoints. You can monitor your data on a recurring schedule, or you can monitor it one time, immediately. You can create a monitoring schedule with the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateMonitoringSchedule.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateMonitoringSchedule.html) API.
+Amazon SageMaker Model Monitor provides you the ability to monitor the data collected from your real-time endpoints. You can monitor your data on a recurring schedule, or you can monitor it one time, immediately. You can create a monitoring schedule with the [`CreateMonitoringSchedule`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateMonitoringSchedule.html) API.
 
 With a monitoring schedule, SageMaker AI can start processing jobs to analyze the data collected during a given period. In the processing job, SageMaker AI compares the dataset for the current analysis with the baseline statistics and constraints that you provide. Then, SageMaker AI generate a violations report. In addition, CloudWatch metrics are emitted for each feature under analysis.
 

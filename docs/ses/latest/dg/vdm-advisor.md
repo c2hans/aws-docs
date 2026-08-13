@@ -68,7 +68,7 @@ After you implement a solution, the resolved issue can take up to six hours to b
 The following examples show you how to access your Virtual Deliverability Manager recommendations using the AWS CLI.
 
 **To access your Virtual Deliverability Manager recommendations using the AWS CLI**
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListRecommendations.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListRecommendations.html) operation in the Amazon SES API v2 to list your deliverability recommendations. You can call this operation from the AWS CLI, as shown in the following examples.
+You can use the [`ListRecommendations`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListRecommendations.html) operation in the Amazon SES API v2 to list your deliverability recommendations. You can call this operation from the AWS CLI, as shown in the following examples.
 + List the recommendations to see deliverability issues:
 
   ```

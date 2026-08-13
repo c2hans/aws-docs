@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/documen
 # Data elements and parameters
 <a name="documents-syntax-data-elements-parameters"></a>
 
-This topic describes the data elements used in SSM documents. The schema version used to create a document defines the syntax and data elements that the document accepts. We recommend that you use schema version 2.2 or later for Command documents. Automation runbooks use schema version 0.3. Additionally, Automation runbooks support the use of Markdown, a markup language, which allows you to add wiki-style descriptions to documents and individual steps within the document. For more information about using Markdown, see [Using Markdown in the Console](https://docs.aws.amazon.com/general/latest/gr/aws-markdown.html) in the *AWS Management Console Getting Started Guide*.
+This topic describes the data elements used in SSM documents. The schema version used to create a document defines the syntax and data elements that the document accepts. We recommend that you use schema version 2.2 or later for Command documents. Automation runbooks use schema version 0.3. Additionally, Automation runbooks support the use of Markdown, a markup language, which lets you add wiki-style descriptions to documents and individual steps within the document. For more information about using Markdown, see [Using Markdown in the Console](https://docs.aws.amazon.com/general/latest/gr/aws-markdown.html) in the *AWS Management Console Getting Started Guide*.
 
 The following section describes the data elements that you can include in a SSM document.
 
@@ -58,7 +58,7 @@ The following includes an example of a parameter using environment variable `int
 }
 ```
 `allowedPattern` isn’t technically required in SSM documents that don’t use double braces: `{{ }}`
-For parameters that you use often, we recommend that you store those parameters in Parameter Store, a tool in AWS Systems Manager. Then, you can define parameters in your document that reference Parameter Store parameters as their default value. To reference a Parameter Store parameter, use the following syntax.
+For parameters that you use often, we recommend that you store those parameters in Parameter Store. Then, you can define parameters in your document that reference Parameter Store parameters as their default value. To reference a Parameter Store parameter, use the following syntax.
 
 ```
 {{ssm:{{parameter-name}}}}

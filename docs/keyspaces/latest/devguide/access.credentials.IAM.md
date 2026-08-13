@@ -56,16 +56,16 @@ This is your only opportunity to view or download the secret access keys, and yo
 **Create an IAM user with programmatic access (AWS CLI)**
 
 1. Create a user with the following AWS CLI code.
-   + [https://docs.aws.amazon.com/cli/latest/reference/iam/create-user.html](https://docs.aws.amazon.com/cli/latest/reference/iam/create-user.html)
+   + [aws iam create-user](https://docs.aws.amazon.com/cli/latest/reference/iam/create-user.html)
 
 1. Give the user programmatic access. This requires access keys, that can be generated in the following ways.
-   + AWS CLI: [https://docs.aws.amazon.com/cli/latest/reference/iam/create-access-key.html](https://docs.aws.amazon.com/cli/latest/reference/iam/create-access-key.html)
-   + Tools for Windows PowerShell: [https://docs.aws.amazon.com/powershell/latest/reference/items/New-IAMAccessKey.html](https://docs.aws.amazon.com/powershell/latest/reference/items/New-IAMAccessKey.html)
-   + IAM API: [https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateAccessKey.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateAccessKey.html)
+   + AWS CLI: [aws iam create-access-key](https://docs.aws.amazon.com/cli/latest/reference/iam/create-access-key.html)
+   + Tools for Windows PowerShell: [New-IAMAccessKey](https://docs.aws.amazon.com/powershell/latest/reference/items/New-IAMAccessKey.html)
+   + IAM API: [CreateAccessKey](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateAccessKey.html)
 **Important**
 This is your only opportunity to view or download the secret access keys, and you need this information before they can use the SigV4 plugin. Save the user's new access key ID and secret access key in a safe and secure place. You will not have access to the secret keys again after this step.
 
 1. Attach the `AmazonKeyspacesReadOnlyAccess` policy to the user that defines the user's permissions. **Note:** As a best practice, we recommend that you manage user permissions by adding the user to a group and attaching a policy to the group instead of attaching directly to a user.
-   + AWS CLI: [https://docs.aws.amazon.com/cli/latest/reference/iam/attach-user-policy.html](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-user-policy.html)
+   + AWS CLI: [aws iam attach-user-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-user-policy.html)
 
 ------

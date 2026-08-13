@@ -103,7 +103,7 @@ Required: No
  ** [Attachments](#API_StartEmailContact_RequestSyntax) **   <a name="connect-StartEmailContact-request-Attachments"></a>
 List of S3 presigned URLs of email attachments and their file name.
 Type: Array of [EmailAttachment](API_EmailAttachment.md) objects
-Array Members: Minimum number of 1 item. Maximum number of 10 items.
+Array Members: Minimum number of 1 item. Maximum number of 50 items.
 Required: No
 
  ** [Attributes](#API_StartEmailContact_RequestSyntax) **   <a name="connect-StartEmailContact-request-Attributes"></a>

@@ -53,6 +53,6 @@ An error occurred (AccessDeniedException) when calling the AssociateResource ope
 ```
 
  For more information, see the following:
-+  [https://docs.aws.amazon.com/servicecatalog/latest/dg/API_app-registry_AssociateResource.html](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_app-registry_AssociateResource.html) in the *AWS Service Catalog Developer Guide*
-+  [https://docs.aws.amazon.com/servicecatalog/latest/dg/API_app-registry_DisassociateResource.html](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_app-registry_DisassociateResource.html) in the *AWS Service Catalog Developer Guide*
++  [AssociateResource](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_app-registry_AssociateResource.html) in the *AWS Service Catalog Developer Guide*
++  [DisassociateResource](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_app-registry_DisassociateResource.html) in the *AWS Service Catalog Developer Guide*
 +  [Controlling the resource tag values associated to applications](https://docs.aws.amazon.com/servicecatalog/latest/arguide/control-tags.html) in the *AppRegistry Administrator Guide*

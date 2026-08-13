@@ -24,7 +24,7 @@ For the EKS add-on installation to succeed, you will need to have a Kubernets ve
 
 For the EKS add-on installation to succeed, all of the nodes need to be in **Ready** status and all of the pods need to be in **Running** status.
 
-To check the status of your nodes, use the [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/list-cluster-nodes.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/list-cluster-nodes.html) AWS CLI command or navigate to your EKS cluster in the [EKS console](https://console.aws.amazon.com/eks/home#/clusters) and view the status of your nodes. Resolve the issue for each node or reach out to your administrator. If the node status is **Unknown**, delete the node. Once all nodes statuses are **Ready**, retry installing the EKS add-on in HyperPod from the [Amazon SageMaker AI console](https://console.aws.amazon.com/sagemaker/).
+To check the status of your nodes, use the [`list-cluster-nodes`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/list-cluster-nodes.html) AWS CLI command or navigate to your EKS cluster in the [EKS console](https://console.aws.amazon.com/eks/home#/clusters) and view the status of your nodes. Resolve the issue for each node or reach out to your administrator. If the node status is **Unknown**, delete the node. Once all nodes statuses are **Ready**, retry installing the EKS add-on in HyperPod from the [Amazon SageMaker AI console](https://console.aws.amazon.com/sagemaker/).
 
 To check the status of your pods, use the [Kubernetes CLI](https://kubernetes.io/docs/reference/kubectl/) command `kubectl get pods -n cloudwatch-agent` or navigate to your EKS cluster in the [EKS console](https://console.aws.amazon.com/eks/home#/clusters) and view the status of your pods with the namespace `cloudwatch-agent`. Resolve the issue for the pods or reach out to your administrator to resolve the issues. Once all pod statuses are **Running**, retry installing the EKS add-on in HyperPod from the [Amazon SageMaker AI console](https://console.aws.amazon.com/sagemaker/).
 
@@ -120,14 +120,4 @@ a storage migration ensures no data remains persisted in v1alpha1 and removes
 v1alpha1 from status.storedVersions
 ```
 
-**Resolution:** Use the upgrade option in the SageMaker AI HyperPod console. The console automatically handles the CRD migration by backing up existing resources, migrating storedVersions, upgrading the add-on, and restoring resources.
-
-**Note**
-If you already attempted a direct v1.3.x to v1.5.0 upgrade and it failed, the add-on will be in `UPDATE_FAILED` status with stale CRD definitions. To recover:
-Delete the task governance add-on.
-Delete all Kueue CRDs manually:
-
-   ```
-   kubectl get crds -o name | grep kueue | xargs kubectl delete
-   ```
-Reinstall the add-on at your target version using the SageMaker AI console or Amazon EKS console.
+**Resolution:** Use the upgrade option in the SageMaker AI HyperPod console. The console automatically handles the CRD migration by backing up existing resources, migrating storedVersions, upgrading the add-on, and restoring resources. To perform the migration manually through the Amazon EKS add-on interface, see [Upgrade from v1.3.x to v1.5](sagemaker-hyperpod-eks-operate-console-ui-governance-upgrade.md#hp-eks-task-governance-upgrade-v13-to-v15).

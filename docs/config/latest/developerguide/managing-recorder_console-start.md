@@ -19,7 +19,7 @@ You can use the AWS Config console or the AWS CLI start the customer managed con
 ------
 #### [ To start the customer managed configuration recorder (CLI) ]
 
-Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/start-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/start-configuration-recorder.html) command:
+Use the [`start-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/start-configuration-recorder.html) command:
 
 ```
 $ aws configservice start-configuration-recorder --configuration-recorder-name {{configRecorderName}}

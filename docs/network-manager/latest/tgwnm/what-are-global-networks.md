@@ -53,7 +53,7 @@ While there is no price charge for using Network Manager, there is a price charg
 PrivateLink only supports IPv6 dual-stack endpoints.
 Support for PrivateLink through Network Manager is currently available only in the us-west-2 and us-gov-west-1 Regions.
 
-For more information on PrivateLink, see the [https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html](https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html).
+For more information on PrivateLink, see the [*AWS PrivateLink Guide*](https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html).
 
 ## IPv6 support
 <a name="nm-ipv6"></a>

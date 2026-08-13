@@ -124,3 +124,8 @@ For official validation, contact your AWS partner management team or [APN Suppor
 | User Agent String | String not in CloudTrail | SDK not configured correctly | Verify SDK client configuration includes User Agent string for all service clients |
 | User Agent String | Missing delimiter | $ stripped by shell | Use single quotes or escape the $ character appropriately |
 | Marketplace Metering | No attribution | Product not purchased via Marketplace | Ensure customers purchase and use the product through AWS Marketplace. Open a support ticket via [APN Support](https://partnercentral.awspartner.com/partnercentral2/s/support) |
+
+## Contact Information
+<a name="contact-information"></a>
+
+For any further questions about Partner Revenue Measurement (PRM) compliance requirements, please contact your AWS Partner Development team or [AWS Partner Network support](https://partnercentral.awspartner.com/partnercentral2/s/support).

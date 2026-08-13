@@ -98,19 +98,19 @@ After you configure your domain to handle open and click tracking redirects, you
 
 When you send an email using a configuration set, if that configuration set is configured to use a custom redirect domain, the open and click links in that email automatically use the custom domain and HTTPS policy options specified in the configuration set.
 
-You can complete this using the SES console or the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateConfigurationSet.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateConfigurationSet.html) v2 API operation.
+You can complete this using the SES console or the [`CreateConfigurationSet`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateConfigurationSet.html) v2 API operation.
 
 **To specify a custom redirect domain and HTTPS policy using the console**
 + While creating or editing a configuration set, use the [Tracking options](creating-configuration-sets.md#create-config-set-step-4) in Step 4 of [Create configuration sets](creating-configuration-sets.md) to specify your custom redirect domain and HTTPS policy options.
 
 **To specify a custom redirect domain and HTTPS policy using the AWS CLI**
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateConfigurationSet.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateConfigurationSet.html) operation in the SES API v2 and use the `TrackingOptions` property to specify your custom redirect domain and the HTTPS policy. You can call this operation from the AWS CLI as shown in the following example.
+You can use the [`CreateConfigurationSet`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateConfigurationSet.html) operation in the SES API v2 and use the `TrackingOptions` property to specify your custom redirect domain and the HTTPS policy. You can call this operation from the AWS CLI as shown in the following example.
 + Create the configuration set in the AWS Region where you want to send and track email:
 
   ```
   aws sesv2 create-configuration-set --cli-input-json file://create.json
   ```
-+ In this example, the input file is using parameters of the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_TrackingOptions.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_TrackingOptions.html) property—`CustomRedirectDomain` specifies the custom domain to use for tracking open and click links, and `HttpsPolicy` specifies an HTTPS policy option:
++ In this example, the input file is using parameters of the [`TrackingOptions`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_TrackingOptions.html) property—`CustomRedirectDomain` specifies the custom domain to use for tracking open and click links, and `HttpsPolicy` specifies an HTTPS policy option:
 
   ```
   {
@@ -135,7 +135,7 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Crea
 
 After specifying your custom domain and HTTPS policy in the configuration set in the previous step, you must specify open and/or click event types to track in an event destination through a configuration set.
 
-You can complete this using the SES console or the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateConfigurationSetEventDestination.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateConfigurationSetEventDestination.html) v2 API operation.
+You can complete this using the SES console or the [`CreateConfigurationSetEventDestination`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateConfigurationSetEventDestination.html) v2 API operation.
 
 **To select open and/or click event types using the console**
 + While creating or modifying an event destination, use [Open and click tracking](event-destinations-manage.md#select-event-types-step) in Step 6 of [Creating an event destination](event-destinations-manage.md#event-destination-add) to specify the event types.

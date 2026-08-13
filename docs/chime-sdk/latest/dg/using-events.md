@@ -46,7 +46,7 @@ The following example shows the data for this event.
 The Amazon Chime SDK sends this event when an active meeting ends.
 
 **Note**
-For efficiency, the service also sends this event when you call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteMeeting.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteMeeting.html) API.
+For efficiency, the service also sends this event when you call the [DeleteMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteMeeting.html) API.
 
 **Example Event data**
 The following example shows the data for this event.
@@ -104,7 +104,7 @@ The following example shows the data for this event.
 ## Amazon Chime SDK attendee is deleted
 <a name="sdk-remove-attendee"></a>
 
-The Amazon Chime SDK sends this event when you use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteAttendee.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteAttendee.html) API to remove an attendee from an active meeting.
+The Amazon Chime SDK sends this event when you use the [DeleteAttendee](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_DeleteAttendee.html) API to remove an attendee from an active meeting.
 
 **Example Event data**
 The following example shows the data for this event.

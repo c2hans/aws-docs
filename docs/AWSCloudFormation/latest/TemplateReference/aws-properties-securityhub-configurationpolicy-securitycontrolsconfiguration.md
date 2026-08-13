@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 `DisabledSecurityControlIdentifiers`  <a name="cfn-securityhub-configurationpolicy-securitycontrolsconfiguration-disabledsecuritycontrolidentifiers"></a>
  A list of security controls that are disabled in the configuration policy.
 Provide only one of `EnabledSecurityControlIdentifiers` or `DisabledSecurityControlIdentifiers`.
-If you provide `DisabledSecurityControlIdentifiers`, Security Hub CSPM enables all other controls not in the list, and enables [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateSecurityHubConfiguration.html#securityhub-UpdateSecurityHubConfiguration-request-AutoEnableControls](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateSecurityHubConfiguration.html#securityhub-UpdateSecurityHubConfiguration-request-AutoEnableControls).
+If you provide `DisabledSecurityControlIdentifiers`, Security Hub CSPM enables all other controls not in the list, and enables [AutoEnableControls](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateSecurityHubConfiguration.html#securityhub-UpdateSecurityHubConfiguration-request-AutoEnableControls).
 *Required*: No
 *Type*: Array of String
 *Maximum*: `2048 | 1000`
@@ -54,7 +54,7 @@ If you provide `DisabledSecurityControlIdentifiers`, Security Hub CSPM enables a
 `EnabledSecurityControlIdentifiers`  <a name="cfn-securityhub-configurationpolicy-securitycontrolsconfiguration-enabledsecuritycontrolidentifiers"></a>
  A list of security controls that are enabled in the configuration policy.
 Provide only one of `EnabledSecurityControlIdentifiers` or `DisabledSecurityControlIdentifiers`.
-If you provide `EnabledSecurityControlIdentifiers`, Security Hub CSPM disables all other controls not in the list, and disables [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateSecurityHubConfiguration.html#securityhub-UpdateSecurityHubConfiguration-request-AutoEnableControls](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateSecurityHubConfiguration.html#securityhub-UpdateSecurityHubConfiguration-request-AutoEnableControls).
+If you provide `EnabledSecurityControlIdentifiers`, Security Hub CSPM disables all other controls not in the list, and disables [AutoEnableControls](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateSecurityHubConfiguration.html#securityhub-UpdateSecurityHubConfiguration-request-AutoEnableControls).
 *Required*: No
 *Type*: Array of String
 *Maximum*: `2048 | 1000`

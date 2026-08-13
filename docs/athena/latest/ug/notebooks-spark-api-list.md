@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-api-lis
 **Note**
 Athena notebooks and Calculations APIs are available in the release version Pyspark engine version 3. Notebooks and Calculations APIs are not supported in the release version Apache Spark version 3.5.
 
-The following list contains reference links to the Athena notebook API actions. For data structures and other Athena API actions, see the [https://docs.aws.amazon.com/athena/latest/APIReference/](https://docs.aws.amazon.com/athena/latest/APIReference/).
+The following list contains reference links to the Athena notebook API actions. For data structures and other Athena API actions, see the [*Amazon Athena API Reference*](https://docs.aws.amazon.com/athena/latest/APIReference/).
 +  [CreateNotebook](https://docs.aws.amazon.com/athena/latest/APIReference/API_CreateNotebook.html)
 +  [CreatePresignedNotebookUrl](https://docs.aws.amazon.com/athena/latest/APIReference/API_CreatePresignedNotebookUrl.html)
 +  [DeleteNotebook](https://docs.aws.amazon.com/athena/latest/APIReference/API_DeleteNotebook.html)

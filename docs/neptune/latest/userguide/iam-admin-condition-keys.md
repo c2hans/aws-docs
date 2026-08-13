@@ -55,9 +55,9 @@ The following tag-based condition keys only work with administrative resources i
 
 | Condition keys | Description | Type |
 | --- | --- | --- |
-|   [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag)  | Filters access based on the presence of tag key-value pairs in the request. | String |
-|   [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag)  | Filters access based on tag key-value pairs attached to the resource. | String |
-|   [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keyss](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keyss)  | Filters access based on the presence of tag keys in the request. | String |
+|   [`aws:RequestTag/${TagKey}`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag)  | Filters access based on the presence of tag key-value pairs in the request. | String |
+|   [`aws:ResourceTag/${TagKey}`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag)  | Filters access based on tag key-value pairs attached to the resource. | String |
+|   [`aws:TagKeys`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keyss)  | Filters access based on the presence of tag keys in the request. | String |
 | rds:cluster-pg-tag/${TagKey} | Filters access by the tag attached to a DB cluster parameter group. | String |
 | rds:cluster-snapshot-tag/${TagKey} | Filters access by the tag attached to a DB cluster snapshot. | String |
 | rds:cluster-tag/${TagKey} | Filters access by the tag attached to a DB cluster. | String |

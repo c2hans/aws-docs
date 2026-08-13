@@ -137,7 +137,7 @@ Type: Array of [TagPropagationConfiguration](API_connect-cases_TagPropagationCon
 Array Members: Minimum number of 0 items. Maximum number of 1 item.
 
  ** [tags](#API_connect-cases_GetTemplate_ResponseSyntax) **   <a name="connect-connect-cases_GetTemplate-response-tags"></a>
-A map of of key-value pairs that represent tags on a resource. Tags are used to organize, track, or control access for this resource.
+A map of key-value pairs that represent tags on a resource. Tags are used to organize, track, or control access for this resource.
 Type: String to string map
 
  ** [templateArn](#API_connect-cases_GetTemplate_ResponseSyntax) **   <a name="connect-connect-cases_GetTemplate-response-templateArn"></a>

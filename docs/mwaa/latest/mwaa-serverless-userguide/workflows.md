@@ -16,7 +16,7 @@ Each workflow needs an IAM role. This role defines what AWS resources the workfl
 +  **Manual only**: Your workflow ignores any defined schedules and can be only run on-demand. This option is best for testing or temporarily disabling automatic runs.
 
 **Note**
- Unlike Apache Airflow, Amazon MWAA Serverless doesn't automatically stop executing workflow runs when a workflow is set to **Manual only** or **Disabled**. Amazon MWAA Serverless uses a separate API [https://docs.aws.amazon.com/MWAA-serverless/APIReference/API_StopWorkflowRun.html](https://docs.aws.amazon.com/MWAA-serverless/APIReference/API_StopWorkflowRun.html) call to stop all workflow runs.
+ Unlike Apache Airflow, Amazon MWAA Serverless doesn't automatically stop executing workflow runs when a workflow is set to **Manual only** or **Disabled**. Amazon MWAA Serverless uses a separate API [`StopWorkflowRun`](https://docs.aws.amazon.com/MWAA-serverless/APIReference/API_StopWorkflowRun.html) call to stop all workflow runs.
 
 **Topics**
 + [Manage your Amazon MWAA Serverless workflows](#workflows-manage)
@@ -42,7 +42,7 @@ aws mwaa-serverless create-workflow --name {{my-workflow-name}} --definition-s3-
 
 ------
 
- To run your workflow, use [https://docs.aws.amazon.com/MWAA-serverless/APIReference/API_StartWorkflowRun.html](https://docs.aws.amazon.com/MWAA-serverless/APIReference/API_StartWorkflowRun.html) and provide the `workflow-arn`. This command starts a new workflow execution.
+ To run your workflow, use [`start-workflow-run`](https://docs.aws.amazon.com/MWAA-serverless/APIReference/API_StartWorkflowRun.html) and provide the `workflow-arn`. This command starts a new workflow execution.
 
 ------
 #### [ CLI ]
@@ -57,17 +57,17 @@ The following table contains all the actions you can perform on an Amazon MWAA S
 
 | Action | API |
 | --- | --- |
-| Create workflow (the YAML file must already be in your Amazon S3 bucket). | [https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_CreateWorkflow.html](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_CreateWorkflow.html) |
-| Delete a workflow and all its versions. You must stop a workflow before you can delete it. | [https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_DeleteWorkflow.html](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_DeleteWorkflow.html). |
-| Retrieve detailed information about a workflow. | [https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_GetWorkflow.html](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_GetWorkflow.html) |
-| List all workflows. | [https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_ListWorkflows.html](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_ListWorkflows.html) |
-| List all the verisions of a specified workflow. | [https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_ListWorkflowVersions.html](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_ListWorkflowVersions.html) |
-| Start a workflow run. | [https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_StartWorkflowRun.html](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_StartWorkflowRun.html) |
-| Stop a workflow run. | [https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_StopWorkflowRun.html](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_StopWorkflowRun.html) |
-| Edit the configuration settings of a workflow. | [https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_UpdateWorkflow.html](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_UpdateWorkflow.html) |
-| List tags for a workflow. | [https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_ListTagsForResource.html](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_ListTagsForResource.html) |
-| Tag a workflow. | [https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_TagResource.html](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_TagResource.html) |
-| Untag a workflow. | [https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_UntagResource.html](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_UntagResource.html) |
+| Create workflow (the YAML file must already be in your Amazon S3 bucket). | [`CreateWorkflow`](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_CreateWorkflow.html) |
+| Delete a workflow and all its versions. You must stop a workflow before you can delete it. | [`DeleteWorkflow`](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_DeleteWorkflow.html). |
+| Retrieve detailed information about a workflow. | [`GetWorkflow`](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_GetWorkflow.html) |
+| List all workflows. | [`ListWorkflows`](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_ListWorkflows.html) |
+| List all the verisions of a specified workflow. | [`ListWorkflowVersions`](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_ListWorkflowVersions.html) |
+| Start a workflow run. | [`StartWorkflowRun`](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_StartWorkflowRun.html) |
+| Stop a workflow run. | [`StopWorkflowRun`](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_StopWorkflowRun.html) |
+| Edit the configuration settings of a workflow. | [`UpdateWorkflow`](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_UpdateWorkflow.html) |
+| List tags for a workflow. | [`ListTagsForResource`](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_ListTagsForResource.html) |
+| Tag a workflow. | [`TagResource`](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_TagResource.html) |
+| Untag a workflow. | [`UntagResource`](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_UntagResource.html) |
 
 ## Workflow states
 <a name="workflows-states"></a>

@@ -22,7 +22,7 @@ aurora_stat_statements({{showtext boolean}})
 ## Return type
 <a name="aurora_stat_statements-return-type"></a>
 
-SETOF record with all `pg_stat_statements` columns and the following additional columns. For more information on `pg_stat_statements` columns, see [https://www.postgresql.org/docs/current/pgstatstatements.html](https://www.postgresql.org/docs/current/pgstatstatements.html).
+SETOF record with all `pg_stat_statements` columns and the following additional columns. For more information on `pg_stat_statements` columns, see [`pg_stat_statements`](https://www.postgresql.org/docs/current/pgstatstatements.html).
 
 You can reset stats for this function using `pg_stat_statements_reset()`.
 + `storage_blks_read` – Total number of shared blocks read from aurora storage by this statement.

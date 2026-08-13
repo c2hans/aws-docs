@@ -34,7 +34,7 @@ You don't need to manually create a service-linked role. When you create a servi
 
 If you delete this service-linked role, and then need to create it again, you can use the same process to recreate the role in your account. When you create a service environment using `CreateServiceEnvironment`, AWS Batch creates the service-linked role for you again.
 
-To view the JSON for the policy, see [AWSBatchServiceRolePolicyForSageMaker](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBatchServiceRolePolicyForSageMaker.html) in the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html).
+To view the JSON for the policy, see [AWSBatchServiceRolePolicyForSageMaker](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBatchServiceRolePolicyForSageMaker.html) in the [*AWS managed policies Reference Guide*](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html).
 
 ## Editing a service-linked role for AWS Batch
 <a name="edit-service-linked-role-batch-sagemaker"></a>

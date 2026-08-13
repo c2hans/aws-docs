@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 # Creating a custom patch baseline for macOS
 <a name="patch-manager-create-a-patch-baseline-for-macos"></a>
 
-Use the following procedure to create a custom patch baseline for macOS managed nodes in Patch Manager, a tool in AWS Systems Manager.
+Use the following procedure to create a custom patch baseline for macOS managed nodes in Patch Manager.
 
 For information about creating a patch baseline for Windows Server managed nodes, see [Creating a custom patch baseline for Windows Server](patch-manager-create-a-patch-baseline-for-windows.md). For information about creating a patch baseline for Linux managed nodes, see [Creating a custom patch baseline for Linux](patch-manager-create-a-patch-baseline-for-linux.md).
 
@@ -52,7 +52,7 @@ If you specify a compliance reporting level and the patch state of any approved 
 
    For more information about working with approval rules in a custom patch baseline, see [Custom baselines](patch-manager-predefined-and-custom-patch-baselines.md#patch-manager-baselines-custom).
 
-1. If you want to explicitly approve any patches in addition to those meeting your approval rules, do the following in the **Patch exceptions** section:
+1. If you want to explicitly approve any patches besides those meeting your approval rules, do the following in the **Patch exceptions** section:
    + For **Approved patches**, enter a comma-separated list of the patches you want to approve.
 
      For information about accepted formats for lists of approved patches and rejected patches, see [Package name formats for approved and rejected patch lists](patch-manager-approved-rejected-package-name-formats.md).

@@ -100,10 +100,10 @@ Suppose that you have the following four instances across two Availability Zones
   <tr><th>Instance </th><th>Availability Zone</th><th>Terminate protection</th></tr>
 </thead>
 <tbody>
-  <tr><td>Instance 1</td><td rowspan="2">AZ A</td><td>Disabled</td></tr>
-  <tr><td>Instance 2</td><td>Disabled</td></tr>
-  <tr><td>Instance 3</td><td rowspan="2">AZ B</td><td>Enabled</td></tr>
-  <tr><td>Instance 4</td><td>Disabled</td></tr>
+  <tr><td><b>Instance 1</b></td><td rowspan="2">AZ A</td><td><code>Disabled</code></td></tr>
+  <tr><td><b>Instance 2</b></td><td><code>Disabled</code></td></tr>
+  <tr><td><b>Instance 3</b></td><td rowspan="2">AZ B</td><td><code>Enabled</code></td></tr>
+  <tr><td><b>Instance 4</b></td><td><code>Disabled</code></td></tr>
 </tbody>
 </table>
 

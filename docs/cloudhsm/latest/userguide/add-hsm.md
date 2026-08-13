@@ -51,4 +51,4 @@ The following figure illustrates the events that occur when you add an HSM to a 
   ```
 
 **To add an HSM (AWS CloudHSM API)**
-+ Send a [https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CreateHsm.html](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CreateHsm.html) request, specifying the cluster ID and an Availability Zone for the HSM that you are creating.
++ Send a [CreateHsm](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CreateHsm.html) request, specifying the cluster ID and an Availability Zone for the HSM that you are creating.

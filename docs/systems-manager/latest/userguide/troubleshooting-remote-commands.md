@@ -7,12 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/trouble
 # Troubleshooting Systems Manager Run Command
 <a name="troubleshooting-remote-commands"></a>
 
-Run Command, a tool in AWS Systems Manager, provides status details with each command execution. For more information about the details of command statuses, see [Understanding command statuses](monitor-commands.md). You can also use the information in this topic to help troubleshoot problems with Run Command.
-
-**Topics**
-+ [Some of my managed nodes are missing](#where-are-instances)
-+ [A step in my script failed, but the overall status is 'succeeded'](#ts-exit-codes)
-+ [SSM Agent isn't running properly](#ts-ssmagent-linux)
+Run Command provides status details with each command execution. For more information about the details of command statuses, see [Understanding command statuses](monitor-commands.md). You can also use the information in this topic to help troubleshoot problems with Run Command.
 
 ## Some of my managed nodes are missing
 <a name="where-are-instances"></a>

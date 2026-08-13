@@ -23,7 +23,7 @@ You can get a list of all parameters in a DB cluster parameter group and their v
 ## AWS CLI
 <a name="USER_WorkingWithParamGroups.ViewingCluster.CLI"></a>
 
-To view the parameter values for a DB cluster parameter group, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-cluster-parameters.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-cluster-parameters.html) command with the following required parameter.
+To view the parameter values for a DB cluster parameter group, use the AWS CLI [`describe-db-cluster-parameters`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-cluster-parameters.html) command with the following required parameter.
 + `--db-cluster-parameter-group-name`
 
 **Example**
@@ -71,7 +71,7 @@ aws rds describe-db-cluster-parameters --db-cluster-parameter-group-name {{mydbc
 ## RDS API
 <a name="USER_WorkingWithParamGroups.ViewingCluster.API"></a>
 
-To view the parameter values for a DB cluster parameter group, use the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBParameters.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBParameters.html) command with the following required parameter.
+To view the parameter values for a DB cluster parameter group, use the RDS API [`DescribeDBClusterParameters`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBParameters.html) command with the following required parameter.
 + `DBClusterParameterGroupName`
 
 In some cases, the allowed values for a parameter aren't shown. These are always parameters where the source is the database engine default.

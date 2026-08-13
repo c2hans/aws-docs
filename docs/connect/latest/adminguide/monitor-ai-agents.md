@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/monitor-ai-age
 # Monitor AI agents using CloudWatch
 <a name="monitor-ai-agents"></a>
 
-To gain visibility into the real-time recommendations that Connect AI agents provide to your agents, and the customer intents they detect through natural language understanding, you can query CloudWatch Logs. CloudWatch Logs give you visibility into the entire contact journey: the conversation, triggers, intents, recommendations. You can also use this information for debugging, or provide it to Support when you contact them for help.
+To gain visibility into the real-time recommendations that AI agents provide to your agents, and the customer intents they detect through natural language understanding, you can query CloudWatch Logs. CloudWatch Logs give you visibility into the entire contact journey: the conversation, triggers, intents, recommendations. You can also use this information for debugging, or provide it to Support when you contact them for help.
 
-This topic explains how to enable logging for Connect AI agents.
+This topic explains how to enable logging for AI agents.
 
 **Topics**
 + [Required IAM permissions](#permissions-cw-q)
@@ -25,10 +25,10 @@ Before you enable logging for a Connect assistant, check that you have the follo
 
 To view an example IAM role with all the required permissions for your specific logging destination, see [Logging that requires additional permissions [V2]](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html#AWS-vended-logs-permissions-V2). That topic contains examples for different logging destinations, such as logs sent to CloudWatch Logs and logs sent to Amazon S3 The examples show how to allow updates to your specific logging destination resource.
 
-## Enable logging for Connect AI agents
+## Enable logging for AI agents
 <a name="enable-assistant-logging"></a>
 
-To enable logging for Connect AI agents, you use the CloudWatch API. Complete the following steps.
+To enable logging for AI agents, you use the CloudWatch API. Complete the following steps.
 
 1. Get the ARN of your *assistant* (also known as its [*domain*](ai-agent-initial-setup.md#ai-agent-requirements)). After you [create an assistant](ai-agent-initial-setup.md#enable-ai-agents-step1), you can obtain it's ARN from the Connect Customer console or by calling the [GetAssistant](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_GetAssistant.html) API. The ARN follows this format:
 
@@ -106,7 +106,7 @@ After you create the delivery, you can view logged events in your log group. To 
 ## Supported log types
 <a name="supported-log-types-q"></a>
 
-Connect AI agents support the following log type:
+AI agents support the following log type:
 + `EVENT_LOGS`: Logs that track event of an Connect assistant during calls, chats, tasks, and emails.
 
 ## Check for CloudWatch Logs quotas
@@ -124,17 +124,17 @@ The following table describes each event type. Note that different event types c
 
 | EventType | Definition |
 | --- | --- |
-| TRANSCRIPT\_CREATE\_SESSION | Logged when a new Connect AI agents session is created. This marks the beginning of a conversation. |
+| TRANSCRIPT\_CREATE\_SESSION | Logged when a new AI agents session is created. This marks the beginning of a conversation. |
 | TRANSCRIPT\_INTENT\_TRIGGERING\_REFERENCE | Logged when a specific customer intent is detected in the conversation, which may trigger automated responses or workflows. |
 | TRANSCRIPT\_LARGE\_LANGUAGE\_MODEL\_INVOCATION | Logged when a large language model (LLM) is invoked to generate responses or process conversation content. Records the inputs to and outputs from the LLM. |
-| TRANSCRIPT\_QUERY\_ASSISTANT | Logged when one of the following Connect AI agents is invoked: AnswerRecommendation, CaseSummarization, EmailGenerativeAnswer, EmailOverview, EmailResponse, ManualSearch, NoteTaking. |
+| TRANSCRIPT\_QUERY\_ASSISTANT | Logged when one of the following AI agents is invoked: AnswerRecommendation, CaseSummarization, EmailGenerativeAnswer, EmailOverview, EmailResponse, ManualSearch, NoteTaking. |
 | TRANSCRIPT\_RECOMMENDATION | Logged when the system provides a recommendation to an agent or customer, which may include knowledge articles, generated responses, or suggested actions. |
 | TRANSCRIPT\_RESULT\_FEEDBACK | Logged when feedback is provided about a search or query result's usefulness or relevance. |
-| TRANSCRIPT\_SELF\_SERVICE\_MESSAGE | Logged when a customer interacts with a SelfService Connect AI agent |
+| TRANSCRIPT\_SELF\_SERVICE\_MESSAGE | Logged when a customer interacts with a SelfService AI agent |
 | TRANSCRIPT\_SESSION\_POLLED | Logged when the system detects an agent is connected to a session (A session is polled when a GetRecommendations API call has been made) |
 | TRANSCRIPT\_TRIGGER\_DETECTION\_MODEL\_INVOCATION | Logged when the trigger detection model is invoked to determine if a conversation has intents |
 | TRANSCRIPT\_UTTERANCE | Logged when a message is sent by any participant in the conversation, recording the actual conversation content. |
-| TRANSCRIPT\_ORCHESTRATION\_MESSAGE | Logged for each step within an orchestration loop, including the initial customer message, bot text responses, reasoning, tool use requests, and tool results. Captures the full detail of multi-turn agentic reasoning performed by an Orchestration Connect AI agent. |
+| TRANSCRIPT\_ORCHESTRATION\_MESSAGE | Logged for each step within an orchestration loop, including the initial customer message, bot text responses, reasoning, tool use requests, and tool results. Captures the full detail of multi-turn agentic reasoning performed by an Orchestration AI agent. |
 | TRANSCRIPT\_ORCHESTRATION\_ERROR | Logged when an error occurs during orchestration, such as exceeding the maximum number of orchestration iterations, system capacity constraints, or a general orchestration failure. |
 | TRANSCRIPT\_AI\_AGENT\_TRACE | Logged for each execution span during AI agent orchestration, capturing detailed traces including LLM configuration, token usage, messages, and guardrail assessment results. |
 
@@ -145,7 +145,7 @@ The following table describes each field.
 
 | Field | Definition |
 | --- | --- |
-| ai\_agent\_id | Unique identifier for the Connect AI agent resource. |
+| ai\_agent\_id | Unique identifier for the AI agent resource. |
 | assistant\_id | Unique identifier for the Connect assistant resource. |
 | completion | The raw completion text returned by the LLM or generated for the message. |
 | connect\_user\_arn | Amazon Resource Name (ARN) of the Connect user accessing the session. |
@@ -167,7 +167,7 @@ The following table describes each field.
 | response | The final response text generated for the user after processing. |
 | session\_event\_id | Unique identifier for a specific event within the session. |
 | session\_event\_ids | List of session event identifiers. |
-| session\_id | Unique identifier for the Connect AI agents session. |
+| session\_id | Unique identifier for the AI agents session. |
 | session\_message\_id | Unique identifier for a self-service message within a session. |
 | session\_name | Name of the session. |
 | utterance | The actual message text exchanged in the conversation. |

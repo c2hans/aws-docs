@@ -110,7 +110,7 @@ The Virtual Private Cloud (VPC) configuration for this access point, if one exis
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the access point name.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-s3-accesspoint-return-values-fn--getatt"></a>

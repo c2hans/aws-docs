@@ -5,158 +5,181 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started
 # Quickstart
 <a name="getting-started"></a>
 
-In this section, we will show you how to get started with Amazon Bedrock within a few minutes. We will use the OpenAI-compatible APIs: [Responses API](bedrock-mantle.md) and [Chat Completions API](inference-chat-completions.md), the Anthropic-native [Messages API](model-parameters-anthropic-claude-messages.md), and the [Invoke](inference-invoke.md) and [Converse API](conversation-inference.md) to show you how run an inference request. See [Build](build.md) for list of complete APIs.
+Get started with Amazon Bedrock in minutes. The following steps walk you through running your first inference request using the Anthropic-native [Messages API](model-parameters-anthropic-claude-messages.md), the OpenAI-compatible APIs: [Responses API](bedrock-mantle.md) and [Chat Completions API](inference-chat-completions.md), and the [Invoke](inference-invoke.md) and [Converse API](conversation-inference.md). For a complete list of APIs, see [Build](build.md). After you complete these steps, you can send inference requests to any supported foundation model.
 
-**Step 1 - AWS Account:** If you have an AWS account already, skip this step and go to step 2. If you are new to AWS, sign up for an [AWS account](https://portal.aws.amazon.com/billing/signup) and follow instructions.
+**To run your first inference request**
 
-**Step 2 - API key:** Once you have an AWS account, you can create a short-term API key to authenticate your requests to Amazon Bedrock. To do that, go to the [Amazon Bedrock service in AWS Console](https://console.aws.amazon.com/bedrock/home#/api-keys/short-term/create) and generate a short-term key. For production applications, use [IAM roles or temporary credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds-programmatic-access.html#security-creds-alternatives-to-long-term-access-keys). For more information, see the [API keys](api-keys.md) section in the [Build](build.md) chapter.
+1. Sign up for an [AWS account](https://portal.aws.amazon.com/billing/signup).
 
-**Step 3 - Get the SDK:** To use this getting started guide, you must have Python already installed. Then install the relevant software depending on the APIs you are using.
+   If you already have an AWS account, skip this step.
+
+1. Generate a short-term API key to authenticate your requests to Amazon Bedrock by opening the [**Amazon Bedrock** service in the AWS Management Console](https://console.aws.amazon.com/bedrock/home#/api-keys/short-term/create).
+
+   For the complete procedure, see the [API keys](api-keys.md) section.
+
+   For production applications, use [IAM roles or temporary credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds-programmatic-access.html#security-creds-alternatives-to-long-term-access-keys).
+
+1. Install the relevant SDK for the APIs you plan to use. Python must already be installed.
 
 ------
 #### [ Messages API ]
 
-```
-pip install boto3 anthropic
-```
+   ```
+   pip install boto3 anthropic
+   ```
 
 ------
 #### [ Responses/Chat Completions API ]
 
-```
-pip install boto3 openai
-```
+   ```
+   pip install boto3 openai
+   ```
 
 ------
 #### [ Invoke/Converse API ]
 
-```
-pip install boto3
-```
+   ```
+   pip install boto3
+   ```
 
 ------
 
-**Step 4 - Set environment variables:** Configure your environment to use the API key for authentication.
+1. Set the following environment variables to use the API key for authentication.
 
 ------
 #### [ Messages API ]
 
-```
-ANTHROPIC_API_KEY="<provide your Bedrock API key>"
-ANTHROPIC_BASE_URL="https://bedrock-mantle.<your-region>.api.aws/anthropic"
-```
+   ```
+   ANTHROPIC_API_KEY="<provide your Bedrock API key>"
+   ANTHROPIC_BASE_URL="https://bedrock-mantle.<your-region>.api.aws/anthropic"
+   ```
 
 ------
 #### [ Responses/Chat Completions API ]
 
-```
-OPENAI_API_KEY="<provide your Bedrock API key>"
-OPENAI_BASE_URL="https://bedrock-mantle.<your-region>.api.aws/v1"
-```
+   ```
+   OPENAI_API_KEY="<provide your Bedrock API key>"
+   OPENAI_BASE_URL="https://bedrock-mantle.<your-region>.api.aws/v1"
+   ```
 
 ------
 #### [ Invoke/Converse API ]
 
-```
-AWS_BEARER_TOKEN_BEDROCK="<provide your Bedrock API key>"
-```
+   ```
+   AWS_BEARER_TOKEN_BEDROCK="<provide your Bedrock API key>"
+   ```
 
 ------
 
-**Step 5 - Run your first inference request:** Amazon Bedrock supports [100\+ foundation models](models.md). Choose a model, and then use the following Python code to run your first inference request. Save the file as `bedrock-first-request.py`
+1. Choose a model and run your first inference request.
+
+   1. Choose a model. Amazon Bedrock supports [100\+ foundation models](models.md).
+
+   1. Use the following Python code to run your first inference request.
 
 ------
 #### [ Messages API ]
 
-```
-import anthropic
+      ```
+      import anthropic
 
-client = anthropic.Anthropic()
+      client = anthropic.Anthropic()
 
-response = client.messages.create(
-    model="anthropic.claude-opus-4-7",
-    max_tokens=1024,
-    messages=[{"role": "user", "content": "Can you explain the features of Amazon Bedrock?"}]
-)
-print(response)
-```
+      response = client.messages.create(
+          model="anthropic.claude-opus-4-7",
+          max_tokens=1024,
+          messages=[{"role": "user", "content": "Can you explain the features of Amazon Bedrock?"}]
+      )
+      print(response)
+      ```
 
 ------
 #### [ Responses API ]
 
-```
-from openai import OpenAI
+      ```
+      from openai import OpenAI
 
-client = OpenAI()
+      client = OpenAI()
 
-response = client.responses.create(
-    model="openai.gpt-oss-120b",
-    input="Can you explain the features of Amazon Bedrock?"
-    )
-print(response)
-```
+      response = client.responses.create(
+          model="openai.gpt-oss-120b",
+          input="Can you explain the features of Amazon Bedrock?"
+          )
+      print(response)
+      ```
 
 ------
 #### [ Chat Completions API ]
 
-```
-from openai import OpenAI
+      ```
+      from openai import OpenAI
 
-client = OpenAI()
+      client = OpenAI()
 
-response = client.chat.completions.create(
-    model="openai.gpt-oss-120b",
-    messages=[{"role": "user", "content": "Can you explain the features of Amazon Bedrock?"}]
-    )
-print(response)
-```
+      response = client.chat.completions.create(
+          model="openai.gpt-oss-120b",
+          messages=[{"role": "user", "content": "Can you explain the features of Amazon Bedrock?"}]
+          )
+      print(response)
+      ```
 
 ------
 #### [ Converse API ]
 
-```
-import boto3
+      ```
+      import boto3
 
-client = boto3.client('bedrock-runtime', region_name='us-east-1')
-response = client.converse(
-    modelId='anthropic.claude-opus-4-7',
-    messages=[
-        {
-            'role': 'user',
-            'content': [{'text': 'Can you explain the features of Amazon Bedrock?'}]
-        }
-    ]
-)
-print(response)
-```
+      client = boto3.client('bedrock-runtime', region_name='us-east-1')
+      response = client.converse(
+          modelId='anthropic.claude-opus-4-7',
+          messages=[
+              {
+                  'role': 'user',
+                  'content': [{'text': 'Can you explain the features of Amazon Bedrock?'}]
+              }
+          ]
+      )
+      print(response)
+      ```
 
 ------
 #### [ Invoke API ]
 
-```
-import json
-import boto3
+      ```
+      import json
+      import boto3
 
-client = boto3.client('bedrock-runtime', region_name='us-east-1')
-response = client.invoke_model(
-    modelId='anthropic.claude-opus-4-7',
-    body=json.dumps({
-            'anthropic_version': 'bedrock-2023-05-31',
-            'messages': [{ 'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}],
-            'max_tokens': 1024
-    })
- )
- print(json.loads(response['body'].read()))
-```
+      client = boto3.client('bedrock-runtime', region_name='us-east-1')
+      response = client.invoke_model(
+          modelId='anthropic.claude-opus-4-7',
+          body=json.dumps({
+                  'anthropic_version': 'bedrock-2023-05-31',
+                  'messages': [{ 'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}],
+                  'max_tokens': 1024
+          })
+       )
+       print(json.loads(response['body'].read()))
+      ```
 
 ------
 
-Execute the code with Python by using the command:
+   1. Save the file as `bedrock-first-request.py`.
 
-```
-python3 bedrock-first-request.py
-```
+   1. Run the code with the following command:
 
-You should see the output of your inference request.
+      ```
+      python3 bedrock-first-request.py
+      ```
 
-To learn more about using other APIs and endpoints, please refer to [Build](build.md).
+      You should see the output of your inference request.
+
+To learn more about using other APIs and endpoints, see [Build](build.md).
+
+## Next steps
+<a name="getting-started-next-steps"></a>
+
+Now that you have run your first request, explore the following resources to build more with Amazon Bedrock:
++ [Automate tasks in your application using AI agents](agents.md) – Create agents that can orchestrate multi-step tasks.
++ [Retrieve data and generate AI responses with Amazon Bedrock Knowledge Bases](knowledge-base.md) – Connect foundation models to your data sources.
++ [Customize your model to improve its performance for your use case](custom-models.md) – Fine-tune models for your use case.
++ [Evaluate the performance of Amazon Bedrock resources](evaluation.md) – Evaluate model performance for your workloads.

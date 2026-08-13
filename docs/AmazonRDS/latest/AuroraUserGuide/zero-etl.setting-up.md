@@ -78,7 +78,7 @@ For instructions to create a data warehouse, see [Creating a cluster](https://do
 ### Enable case sensitivity on the data warehouse
 <a name="zero-etl-setting-up.case-sensitivity"></a>
 
-For the integration to be successful, the case sensitivity parameter ([https://docs.aws.amazon.com/redshift/latest/dg/r_enable_case_sensitive_identifier.html](https://docs.aws.amazon.com/redshift/latest/dg/r_enable_case_sensitive_identifier.html)) must be enabled for the data warehouse. By default, case sensitivity is disabled on all provisioned clusters and Redshift Serverless workgroups.
+For the integration to be successful, the case sensitivity parameter ([`enable_case_sensitive_identifier`](https://docs.aws.amazon.com/redshift/latest/dg/r_enable_case_sensitive_identifier.html)) must be enabled for the data warehouse. By default, case sensitivity is disabled on all provisioned clusters and Redshift Serverless workgroups.
 
 To enable case sensitivity, perform the following steps depending on your data warehouse type:
 + **Provisioned cluster** – To enable case sensitivity on a provisioned cluster, create a custom parameter group with the `enable_case_sensitive_identifier` parameter enabled. Then, associate the parameter group with the cluster. For instructions, see [Managing parameter groups using the console](https://docs.aws.amazon.com/redshift/latest/mgmt/managing-parameter-groups-console.html) or [Configuring parameter values using the AWS CLI](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-parameter-groups.html#configure-parameters-using-the-clil).

@@ -31,7 +31,7 @@ To start using the Verified Apps feature in Amazon Q Apps, consider the followin
 ## Verifying Amazon Q Apps
 <a name="verified-apps-update"></a>
 
-To update an app state to verified you can use the console; or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_UpdateLibraryItem.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_UpdateLibraryItem.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
+To update an app state to verified you can use the console; or the [UpdateLibraryItem](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_UpdateLibraryItem.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
 ------
 #### [ Console ]
@@ -66,7 +66,7 @@ To update an app state to verified you can use the console; or the [https://docs
 ## Restoring Amazon Q Apps to the default state
 <a name="default-apps-update"></a>
 
-All Amazon Q Apps are always in a *Default* state when they are first published or updated. To remove an Amazon Q App verified state and change it back to default you can use the console; or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_UpdateLibraryItem.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_UpdateLibraryItem.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
+All Amazon Q Apps are always in a *Default* state when they are first published or updated. To remove an Amazon Q App verified state and change it back to default you can use the console; or the [UpdateLibraryItem](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_UpdateLibraryItem.html) API operation. The following tabs provide a procedure for the console and code examples for the AWS CLI.
 
 ------
 #### [ Console ]

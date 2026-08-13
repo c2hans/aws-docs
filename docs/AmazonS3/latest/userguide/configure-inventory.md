@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/configure-inve
 # Configuring Amazon S3 Inventory
 <a name="configure-inventory"></a>
 
-Amazon S3 Inventory provides a flat file list of your objects and metadata, on a schedule that you define. You can use S3 Inventory as a scheduled alternative to the Amazon S3 synchronous `List` API operation. S3 Inventory provides comma-separated values (CSV), [Apache optimized row columnar (ORC)](https://orc.apache.org/), or [https://parquet.apache.org/](https://parquet.apache.org/) output files that list your objects and their corresponding metadata.
+Amazon S3 Inventory provides a flat file list of your objects and metadata, on a schedule that you define. You can use S3 Inventory as a scheduled alternative to the Amazon S3 synchronous `List` API operation. S3 Inventory provides comma-separated values (CSV), [Apache optimized row columnar (ORC)](https://orc.apache.org/), or [Apache Parquet (Parquet)](https://parquet.apache.org/) output files that list your objects and their corresponding metadata.
 
 You can configure S3 Inventory to create inventory lists on a daily or weekly basis for an S3 bucket or for objects that share a prefix (objects that have names that begin with the same string). For more information, see [Cataloging and analyzing your data with S3 Inventory](storage-inventory.md).
 
@@ -37,7 +37,7 @@ The easiest way to set up an inventory is by using the Amazon S3 console, but yo
 
    Some object metadata fields in S3 Inventory report configurations are optional, meaning that they're available by default but they can be restricted when you grant a user the `s3:PutInventoryConfiguration` permission. You can control whether users can include these optional metadata fields in their reports by using the `s3:InventoryAccessibleOptionalFields` condition key.
 
-   For more information about the optional metadata fields available in S3 Inventory, see [https://docs.aws.amazon.com//AmazonS3/latest/API/API_PutBucketInventoryConfiguration.html#API_PutBucketInventoryConfiguration_RequestBody](https://docs.aws.amazon.com//AmazonS3/latest/API/API_PutBucketInventoryConfiguration.html#API_PutBucketInventoryConfiguration_RequestBody) in the *Amazon Simple Storage Service API Reference*. For more information about restricting access to certain optional metadata fields in an inventory configuration, see [Control S3 Inventory report configuration creation](example-bucket-policies.md#example-bucket-policies-s3-inventory-2).
+   For more information about the optional metadata fields available in S3 Inventory, see [OptionalFields](https://docs.aws.amazon.com//AmazonS3/latest/API/API_PutBucketInventoryConfiguration.html#API_PutBucketInventoryConfiguration_RequestBody) in the *Amazon Simple Storage Service API Reference*. For more information about restricting access to certain optional metadata fields in an inventory configuration, see [Control S3 Inventory report configuration creation](example-bucket-policies.md#example-bucket-policies-s3-inventory-2).
 
    You can specify that the inventory list file be encrypted by using server-side encryption with an Amazon S3 managed key (SSE-S3) or an AWS Key Management Service (AWS KMS) customer managed key (SSE-KMS).
 **Note**
@@ -45,15 +45,15 @@ The AWS managed key (`aws/s3`) is not supported for SSE-KMS encryption with S3 I
 
    For more information about SSE-S3 and SSE-KMS, see [Protecting data with server-side encryption](serv-side-encryption.md). If you plan to use SSE-KMS encryption, see Step 3.
    + For information about how to use the console to configure an inventory list, see [Configuring inventory by using the S3 console](#configure-inventory-console).
-   + To use the Amazon S3 API to configure an inventory list, use the [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTInventoryConfig.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTInventoryConfig.html) REST API operation or the equivalent from the AWS CLI or AWS SDKs.
+   + To use the Amazon S3 API to configure an inventory list, use the [PutBucketInventoryConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTInventoryConfig.html) REST API operation or the equivalent from the AWS CLI or AWS SDKs.
 
 1. **To encrypt the inventory list file with SSE-KMS, grant Amazon S3 permission to use the AWS KMS key.**
 
    You can configure encryption for the inventory list file by using the Amazon S3 console, Amazon S3 REST API, AWS CLI, or AWS SDKs. Whichever way you choose, you must grant Amazon S3 permission to use the customer managed key to encrypt the inventory file. You [grant Amazon S3 permission by modifying the key policy for the customer managed key](https://docs.aws.amazon.com/AmazonS3/latest/userguide/configure-inventory.html#configure-inventory-kms-key-policy) that you want to use to encrypt the inventory file. Make sure that you've provided a KMS key ARN in the S3 Inventory configuration or the destination bucket’s encryption settings. If no KMS key ARN has been specified and the default encryption settings are being used, you won’t be able to access your S3 Inventory report.
 
-   The destination bucket that stores the inventory list file can be owned by a different AWS account than the account that owns the source bucket. If you use SSE-KMS encryption for the cross-account operations of Amazon S3 Inventory, we recommend that you use a fully qualified KMS key ARN when you configure S3 inventory. For more information, see [Using SSE-KMS encryption for cross-account operations](bucket-encryption.md#bucket-encryption-update-bucket-policy) and [https://docs.aws.amazon.com/AmazonS3/latest/API/API_ServerSideEncryptionByDefault.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ServerSideEncryptionByDefault.html) in the *Amazon Simple Storage Service API Reference*.
+   The destination bucket that stores the inventory list file can be owned by a different AWS account than the account that owns the source bucket. If you use SSE-KMS encryption for the cross-account operations of Amazon S3 Inventory, we recommend that you use a fully qualified KMS key ARN when you configure S3 inventory. For more information, see [Using SSE-KMS encryption for cross-account operations](bucket-encryption.md#bucket-encryption-update-bucket-policy) and [ServerSideEncryptionByDefault](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ServerSideEncryptionByDefault.html) in the *Amazon Simple Storage Service API Reference*.
 **Note**
-If you can’t access your S3 Inventory report, use the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketEncryption.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketEncryption.html) API, and check whether the destination bucket has the default SSE-KMS encryption enabled. If no KMS key ARN has been specified and the default encryption settings are being used, you won’t be able to access your S3 Inventory report. To access S3 Inventory reports again, either provide a KMS key ARN in the S3 Inventory configuration or in the destination bucket’s encryption settings.
+If you can’t access your S3 Inventory report, use the [GetBucketEncryption](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketEncryption.html) API, and check whether the destination bucket has the default SSE-KMS encryption enabled. If no KMS key ARN has been specified and the default encryption settings are being used, you won’t be able to access your S3 Inventory report. To access S3 Inventory reports again, either provide a KMS key ARN in the S3 Inventory configuration or in the destination bucket’s encryption settings.
 
 **Directory buckets**
 S3 Inventory is supported for directory buckets. When configuring S3 Inventory for a directory bucket, note the following differences:
@@ -298,7 +298,7 @@ Both the AWS managed key (`aws/s3`) and your customer managed keys appear in the
    + **Object owner** – The owner of the object.
    + **Storage class** – The storage class that's used for storing the object.
    + **Intelligent-Tiering: Access tier** – Indicates the access tier (frequent or infrequent) of the object if it was stored in the S3 Intelligent-Tiering storage class. For more information, see [Storage class for automatically optimizing data with changing or unknown access patterns](storage-class-intro.md#sc-dynamic-data-access).
-   + **ETag** – The entity tag (ETag) is a hash of the object. The ETag reflects changes only to the contents of an object, not to its metadata. The ETag might or might not be an MD5 digest of the object data. Whether it is depends on how the object was created and how it is encrypted. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_Object.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Object.html) in the *Amazon Simple Storage Service API Reference*.
+   + **ETag** – The entity tag (ETag) is a hash of the object. The ETag reflects changes only to the contents of an object, not to its metadata. The ETag might or might not be an MD5 digest of the object data. Whether it is depends on how the object was created and how it is encrypted. For more information, see [Object](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Object.html) in the *Amazon Simple Storage Service API Reference*.
    + **Checksum algorithm** – Indicates the algorithm that is used to create the checksum for the object. Supported values include `CRC64NVME`, `CRC32`, `CRC32C`, `SHA1`, `SHA256`, `MD5`, `XXHASH64`, `XXHASH3`, `XXHASH128`, and `SHA512`. For more information, see [Using supported checksum algorithms](checking-object-integrity-upload.md#using-additional-checksums).
    + **All Object Lock configurations** – The Object Lock status of the object, including the following settings:
      + **Object Lock: Retention mode** – The level of protection applied to the object, either *Governance* or *Compliance*.
@@ -318,7 +318,7 @@ Both the AWS managed key (`aws/s3`) and your customer managed keys appear in the
 <a name="rest-api-inventory"></a>
 
 The following are the REST operations that you can use to work with Amazon S3 Inventory.
-+  [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketDELETEInventoryConfiguration.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketDELETEInventoryConfiguration.html)
-+  [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETInventoryConfig.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETInventoryConfig.html)
-+  [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketListInventoryConfigs.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketListInventoryConfigs.html)
-+  [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTInventoryConfig.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTInventoryConfig.html)
++  [DeleteBucketInventoryConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketDELETEInventoryConfiguration.html)
++  [GetBucketInventoryConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETInventoryConfig.html)
++  [ListBucketInventoryConfigurations](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketListInventoryConfigs.html)
++  [PutBucketInventoryConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTInventoryConfig.html)

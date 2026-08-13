@@ -41,7 +41,7 @@ You can create an API key using the Amazon Location Service console, the AWS CLI
 
 **To create an API key using the Amazon Location Service console**
 
-1. In the [https://console.aws.amazon.com/location](https://console.aws.amazon.com/location), choose **API keys** from the left menu.
+1. In the [**Amazon Location console**](https://console.aws.amazon.com/location), choose **API keys** from the left menu.
 
 1. On the **API keys** page, choose **Create API key**.
 

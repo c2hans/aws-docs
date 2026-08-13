@@ -34,11 +34,11 @@ You can disable Amazon Detective from the AWS Management Console.
 ## Disabling Detective (Detective API, AWS CLI)
 <a name="disable-from-api"></a>
 
-You can disable Amazon Detective from the Detective API or the AWS Command Line Interface. To get the ARN of your behavior graph to use in the request, use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html) operation.
+You can disable Amazon Detective from the Detective API or the AWS Command Line Interface. To get the ARN of your behavior graph to use in the request, use the [`ListGraphs`](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html) operation.
 
 **To disable Detective (Detective API, AWS CLI)**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_DeleteGraph.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_DeleteGraph.html) operation. You must provide the graph ARN.
-+ **AWS CLI:** At the command line, run the [https://docs.aws.amazon.com/cli/latest/reference/detective/delete-graph.html](https://docs.aws.amazon.com/cli/latest/reference/detective/delete-graph.html) command.
++ **Detective API:** Use the [`DeleteGraph`](https://docs.aws.amazon.com/detective/latest/APIReference/API_DeleteGraph.html) operation. You must provide the graph ARN.
++ **AWS CLI:** At the command line, run the [`delete-graph`](https://docs.aws.amazon.com/cli/latest/reference/detective/delete-graph.html) command.
 
   ```
   aws detective delete-graph --graph-arn {{<graph ARN>}}

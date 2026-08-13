@@ -6,9 +6,9 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkRequ
 <a name="mturk-hits-defining-questions-definitions"></a>
 
 Mechanical Turk provides three XML schemas that you can use to define your questions:
-+ [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_HTMLQuestionArticle.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_HTMLQuestionArticle.html)
-+ [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ExternalQuestionArticle.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ExternalQuestionArticle.html)
-+ [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QuestionFormDataStructureArticle.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QuestionFormDataStructureArticle.html)
++ [`HTMLQuestion`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_HTMLQuestionArticle.html)
++ [`ExternalQuestion`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ExternalQuestionArticle.html)
++ [`QuestionForm`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QuestionFormDataStructureArticle.html)
 
 Use the following topics to learn more about these schemas.
 
@@ -20,7 +20,7 @@ Use the following topics to learn more about these schemas.
 ## `HTMLQuestion`
 <a name="mturk-hits-defining-questions-definitions-htmlquestion"></a>
 
-Most developers use the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_HTMLQuestionArticle.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_HTMLQuestionArticle.html) schema to create HITs. `HTMLQuestion` wraps an HTML form that is displayed to workers. This typically takes the following form:
+Most developers use the [`HTMLQuestion`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_HTMLQuestionArticle.html) schema to create HITs. `HTMLQuestion` wraps an HTML form that is displayed to workers. This typically takes the following form:
 
 ```
 <HTMLQuestion xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2011-11-11/HTMLQuestion.xsd">
@@ -41,7 +41,7 @@ Most developers use the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturk
 ## `ExternalQuestion`
 <a name="mturk-hits-defining-questions-definitions-externalquestions"></a>
 
-When you create a task using the `HTMLQuestion` format, your HTML is hosted by Mechanical Turk. Using Mechanical Turk to host your task helps ensure that it is in a highly available location. If, however, you want to host the task interface on your own servers or cloud resources, you can use the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ExternalQuestionArticle.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ExternalQuestionArticle.html) format.
+When you create a task using the `HTMLQuestion` format, your HTML is hosted by Mechanical Turk. Using Mechanical Turk to host your task helps ensure that it is in a highly available location. If, however, you want to host the task interface on your own servers or cloud resources, you can use the [`ExternalQuestion`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ExternalQuestionArticle.html) format.
 
 To use `ExternalQuestion`, your URL must meet the following criteria:
 + The location specified by the URL must support HTTPS.

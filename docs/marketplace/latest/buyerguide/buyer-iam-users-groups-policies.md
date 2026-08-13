@@ -46,11 +46,11 @@ You're not limited to the permissions in the AWS managed policies that are descr
 You can use AWS managed policies to provide basic AWS Marketplace permissions. Then, for any unique scenarios, you can create your own policies and apply them to the roles with the specific requirements for your scenario. The following basic AWS Marketplace managed policies are available to you to control who has which permissions.
 
 The following links take you to the [AWS Managed Policy Reference](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html).
-+ [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceRead-only.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceRead-only.html)``
-+ [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html)
-+ [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPrivateMarketplaceRequests.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPrivateMarketplaceRequests.html)
-+ [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPrivateMarketplaceAdminFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPrivateMarketplaceAdminFullAccess.html)
-+ [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceFullAccess.html)
++ [AWSMarketplaceRead-only](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceRead-only.html)``
++ [AWSMarketplaceManageSubscriptions](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceManageSubscriptions.html)
++ [AWSPrivateMarketplaceRequests](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPrivateMarketplaceRequests.html)
++ [AWSPrivateMarketplaceAdminFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPrivateMarketplaceAdminFullAccess.html)
++ [AWSMarketplaceFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceFullAccess.html)
 
 AWS Marketplace also provides specialized managed policies for specific scenarios. For a full list of AWS managed policies for AWS Marketplace buyers, as well as descriptions of what permissions they provide, see [AWS managed policies for AWS Marketplace buyers](buyer-security-iam-awsmanpol.md) in this section.
 

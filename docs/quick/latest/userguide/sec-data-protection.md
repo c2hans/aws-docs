@@ -24,4 +24,5 @@ For information about safety controls for AI-powered chat interactions, see [AI 
 **Topics**
 + [Data encryption in Amazon Quick](data-encryption.md)
 + [Inter-network traffic privacy in Amazon Quick](internetwork-traffic-privacy.md)
++ [Outbound connections and data egress in Amazon Quick](outbound-connections.md)
 + [User lifecycle and data handling in Amazon Quick](user-lifecycle-data-handling.md)

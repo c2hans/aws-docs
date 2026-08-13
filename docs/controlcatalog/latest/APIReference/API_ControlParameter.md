@@ -28,7 +28,7 @@ Five types of control parameters are supported.
 <a name="API_ControlParameter_Contents"></a>
 
  ** Name **   <a name="controlcatalog-Type-ControlParameter-Name"></a>
-The parameter name. This name is the parameter `key` when you call [https://docs.aws.amazon.com/controltower/latest/APIReference/API_EnableControl.html](https://docs.aws.amazon.com/controltower/latest/APIReference/API_EnableControl.html) or [https://docs.aws.amazon.com/controltower/latest/APIReference/API_UpdateEnabledControl.html](https://docs.aws.amazon.com/controltower/latest/APIReference/API_UpdateEnabledControl.html).
+The parameter name. This name is the parameter `key` when you call [`EnableControl`](https://docs.aws.amazon.com/controltower/latest/APIReference/API_EnableControl.html) or [`UpdateEnabledControl`](https://docs.aws.amazon.com/controltower/latest/APIReference/API_UpdateEnabledControl.html).
 Type: String
 Required: Yes
 

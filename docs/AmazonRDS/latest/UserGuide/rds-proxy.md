@@ -64,6 +64,8 @@ Feature availability and support varies across specific versions of each databas
 + To reflect any database parameter group modification to your proxy, an instance reboot is required even if your chose to apply your changes immediately. For cluster-level parameters, a cluster-wide reboot is required.
 + Your proxy automatically creates the `rdsproxyadmin` DB user when you register a proxy target. This is a protected user that is essential for proxy functionality. You should avoid tampering with the `rdsproxyadmin` user in any capacity. Deleting or modifying the `rdsproxyadmin` user or its permissions can result in complete unavailability of the proxy to your application.
 
+  Starting in RDS for MariaDB version 12.3, the database engine enforces this protection. Attempts to `CREATE`, `DROP`, `RENAME`, `GRANT`, `REVOKE`, or `SET PASSWORD` for `rdsproxyadmin` return an error. For details, see [MariaDB security on Amazon RDS](MariaDB.Concepts.UsersAndPrivileges.md).
+
 For additional limitations for each DB engine, see the following sections:
 + [Additional limitations for RDS for MariaDB](#rds-proxy.limitations-mdb)
 + [Additional limitations for RDS for Microsoft SQL Server](#rds-proxy.limitations-ms)

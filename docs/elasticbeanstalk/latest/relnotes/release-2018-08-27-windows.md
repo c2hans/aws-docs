@@ -12,15 +12,26 @@ This release applies Windows August 2018 security updates to the Windows Server 
 ## Changes
 <a name="release-2018-08-27-windows.changes"></a>
 
-| **Category** | **Description** |
-| --- | --- |
-| **Instance type** | **Regions** |
-| --- | --- |
-| **Windows security updates** | Applied August 2018 security updates for Windows.<br />See Microsoft's [Security TechCenter](https://portal.msrc.microsoft.com/en-us/) and [Security Advisories and Bulletins](https://technet.microsoft.com/en-us/library/security/). |
-| **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-08-27-windows.html) |
-| **z1d** |  + US East (N. Virginia)—us-east-1<br />+ US West (N. California)—us-west-1<br />+ US West (Oregon)—us-west-2<br />+ Asia Pacific (Singapore)—ap-southeast-1<br />+ Asia Pacific (Tokyo)—ap-northeast-1<br />+ EU (Ireland)—eu-west-1  |
-| **r5** |  + US East (N. Virginia)—us-east-1<br />+ US East (Ohio)—us-east-2<br />+ US West (Oregon)—us-west-2<br />+ EU (Ireland)—eu-west-1  |
-| **r5d** |  + US East (N. Virginia)—us-east-1<br />+ US East (Ohio)—us-east-2<br />+ US West (Oregon)—us-west-2  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows security updates</b></td><td>Applied August 2018 security updates for Windows.<br />See Microsoft's <a href="https://portal.msrc.microsoft.com/en-us/">Security TechCenter</a> and <a href="https://technet.microsoft.com/en-us/library/security/">Security Advisories and Bulletins</a>.</td></tr>
+  <tr><td><b>Instance types</b></td><td>Added support for more Amazon EC2 instance types in some AWS Regions, as follows:
+<table>
+<thead>
+  <tr><th><b>Instance type</b></th><th><b>Regions</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>z1d</b></td><td> <ul><li>US East (N. Virginia)—us-east-1</li><li>US West (N. California)—us-west-1</li><li>US West (Oregon)—us-west-2</li><li>Asia Pacific (Singapore)—ap-southeast-1</li><li>Asia Pacific (Tokyo)—ap-northeast-1</li><li>EU (Ireland)—eu-west-1</li></ul> </td></tr>
+  <tr><td><b>r5</b></td><td> <ul><li>US East (N. Virginia)—us-east-1</li><li>US East (Ohio)—us-east-2</li><li>US West (Oregon)—us-west-2</li><li>EU (Ireland)—eu-west-1</li></ul> </td></tr>
+  <tr><td><b>r5d</b></td><td> <ul><li>US East (N. Virginia)—us-east-1</li><li>US East (Ohio)—us-east-2</li><li>US West (Oregon)—us-west-2</li></ul> </td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## Updated platform configurations
 <a name="release-2018-08-27-windows.platforms"></a>

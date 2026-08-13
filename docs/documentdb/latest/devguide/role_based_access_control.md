@@ -15,7 +15,7 @@ All new users created before **March 26, 2020** have been granted the `dbAdminAn
 **Topics**
 + [RBAC concepts](#role_based_access_control-concepts)
 + [Getting started with RBAC built-in roles](#role_based_access_control-getting_started)
-+ [Getting started with RBAC user-defined roles](#w2aac39c38c15)
++ [Getting started with RBAC user-defined roles](#w2aac39c40c15)
 + [Connecting to Amazon DocumentDB as a User](#role_based_access_control-connecting_as_user)
 + [Common commands](#role_based_access_control-common_commands)
 + [Functional differences](#role_based_access_control-functional_differences)
@@ -214,7 +214,7 @@ Output from this operation looks something like the following.
 ```
 
 ## Getting started with RBAC user-defined roles
-<a name="w2aac39c38c15"></a>
+<a name="w2aac39c40c15"></a>
 
 To help you get started with user-defined roles, this section walks you through an example scenario of enforcing least privilege by creating roles for three users with different job functions.
 

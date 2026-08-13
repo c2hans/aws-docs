@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/reward-function
 
 Reward functions evaluate response quality and provide feedback signals for model training. You can set up reward functions using custom Lambda functions or Amazon Bedrock-hosted foundation models as judges. Guided templates are available to simplify reward function creation for common tasks like instruction following and format validation. Choose the approach that matches your task requirements.
 
-## Reinforcement Learning via Verifiable Rewards (RLVR)
+## Reinforcement Learning through Verifiable Rewards (RLVR)
 <a name="rft-rlvr"></a>
 
 RLVR optimizes models for objective tasks such as code generation or math reasoning using verifiable rule-based graders or ready-to-use templates.
@@ -34,7 +34,7 @@ If you bring your own Lambda function, keep the following in mind:
 Increase the Lambda timeout from default 3 seconds to maximum 15 minutes for complex evaluations.
 The Lambda execution role needs permissions to invoke models as described in [Access and security for Amazon Nova models](rft-access-security.md).
 
-## Reinforcement Learning via AI Feedback (RLAIF)
+## Reinforcement Learning through AI Feedback (RLAIF)
 <a name="rft-rlaif"></a>
 
 RLAIF optimizes models for subjective tasks such as instruction following or chatbot interactions using AI-based judges with ready-to-use templates.

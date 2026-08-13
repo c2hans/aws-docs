@@ -19,20 +19,20 @@ There is no standard mechanism to differentiate JWT access tokens from other typ
 
 API Gateway uses the following general workflow to authorize requests to routes that are configured to use a JWT authorizer.
 
-1. Check the [https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-authorizers-authorizerid.html#apis-apiid-authorizers-authorizerid-prop-authorizer-identitysource](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-authorizers-authorizerid.html#apis-apiid-authorizers-authorizerid-prop-authorizer-identitysource) for a token. The `identitySource` can include only the token, or the token prefixed with `Bearer`.
+1. Check the [`identitySource`](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-authorizers-authorizerid.html#apis-apiid-authorizers-authorizerid-prop-authorizer-identitysource) for a token. The `identitySource` can include only the token, or the token prefixed with `Bearer`.
 
 1. Decode the token.
 
 1. Check the token's algorithm and signature by using the public key that is fetched from the issuer's `jwks_uri`. Currently, only RSA-based algorithms are supported. API Gateway can cache the public key for two hours. As a best practice, when you rotate keys, allow a grace period during which both the old and new keys are valid.
 
 1. Validate claims. API Gateway evaluates the following token claims:
-   +  [https://datatracker.ietf.org/doc/html/rfc7517#section-4.5](https://datatracker.ietf.org/doc/html/rfc7517#section-4.5) – The token must have a header claim that matches the key in the `jwks_uri` that signed the token.
-   + [https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.1](https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.1) – Must match the [https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-authorizers-authorizerid.html#apis-apiid-authorizers-authorizerid-model-jwtconfiguration](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-authorizers-authorizerid.html#apis-apiid-authorizers-authorizerid-model-jwtconfiguration) that is configured for the authorizer.
-   + [https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.3](https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.3) or `client_id` – Must match one of the [https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-authorizers-authorizerid.html#apis-apiid-authorizers-authorizerid-model-jwtconfiguration](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-authorizers-authorizerid.html#apis-apiid-authorizers-authorizerid-model-jwtconfiguration) entries that is configured for the authorizer. API Gateway validates `client_id` only if `aud` is not present. When both `aud` and `client_id` are present, API Gateway evaluates `aud`.
-   + [https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.4](https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.4) – Must be after the current time in UTC.
-   + [https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.5](https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.5) – Must be before the current time in UTC.
-   + [https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.6](https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.6) – Must be before the current time in UTC.
-   + [https://datatracker.ietf.org/doc/html/rfc6749#section-3.3](https://datatracker.ietf.org/doc/html/rfc6749#section-3.3) or `scp` – The token must include at least one of the scopes in the route's [https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-routes-routeid.html#apis-apiid-routes-routeid-prop-updaterouteinput-authorizationscopes](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-routes-routeid.html#apis-apiid-routes-routeid-prop-updaterouteinput-authorizationscopes).
+   +  [`kid`](https://datatracker.ietf.org/doc/html/rfc7517#section-4.5) – The token must have a header claim that matches the key in the `jwks_uri` that signed the token.
+   + [`iss`](https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.1) – Must match the [`issuer`](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-authorizers-authorizerid.html#apis-apiid-authorizers-authorizerid-model-jwtconfiguration) that is configured for the authorizer.
+   + [`aud`](https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.3) or `client_id` – Must match one of the [`audience`](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-authorizers-authorizerid.html#apis-apiid-authorizers-authorizerid-model-jwtconfiguration) entries that is configured for the authorizer. API Gateway validates `client_id` only if `aud` is not present. When both `aud` and `client_id` are present, API Gateway evaluates `aud`.
+   + [`exp`](https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.4) – Must be after the current time in UTC.
+   + [`nbf`](https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.5) – Must be before the current time in UTC.
+   + [`iat`](https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.6) – Must be before the current time in UTC.
+   + [`scope`](https://datatracker.ietf.org/doc/html/rfc6749#section-3.3) or `scp` – The token must include at least one of the scopes in the route's [`authorizationScopes`](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-routes-routeid.html#apis-apiid-routes-routeid-prop-updaterouteinput-authorizationscopes).
 
 If any of these steps fail, API Gateway denies the API request.
 

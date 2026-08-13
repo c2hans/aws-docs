@@ -46,7 +46,7 @@ Use the following steps to create a Lambda function and a Lambda execution role.
 
 1. Choose **Create function**.
 
-1. To use a variable from another action, it will have to be passed to the `UserParameters` in the Lambda invoke action configuration. You will be configuring the action in our pipeline later in the tutorial, but you will add the code assuming the variable will be passed.
+1. To use a variable from another action, it will have to be passed to the `UserParameters` in the Lambda invoke action configuration. You will be configuring the action in your pipeline later in the tutorial, but you will add the code assuming the variable will be passed.
 
    To produce new variables, set a property called `outputVariables` on the input to `putJobSuccessResult`. Note that you cannot produce variables as part of a `putJobFailureResult`.
 

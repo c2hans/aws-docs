@@ -24,7 +24,7 @@ You must be logged into the AWS Management Console with sufficient permissions t
 
 1. Navigate to the EKS Console
 
-1. Click **Create cluster**
+1. Choose **Create cluster**
 
 1. Confirm the **Quick configuration** option is selected
 

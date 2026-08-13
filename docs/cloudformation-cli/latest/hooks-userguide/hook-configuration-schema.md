@@ -17,7 +17,7 @@ To enable your Hook to proactively inspect the configuration of your stack, set 
 + [Using wildcards with Hook target names](wildcard-hook-targets.md)
 
 **Note**
-The maximum amount of data that a Hook’s configuration can store is 300 KB. This is in addition to all the constraints imposed on `Configuration` request parameter of [https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetTypeConfiguration.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetTypeConfiguration.html) operation.
+The maximum amount of data that a Hook’s configuration can store is 300 KB. This is in addition to all the constraints imposed on `Configuration` request parameter of [SetTypeConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetTypeConfiguration.html) operation.
 
 ## Hook configuration schema properties
 <a name="hook-configuration-schema-properties"></a>

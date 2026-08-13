@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/list-image
 # Listing image set versions
 <a name="list-image-set-versions"></a>
 
-Use the `ListImageSetVersions` action to list version history for an [image set](getting-started-concepts.md#concept-image-set) in HealthImaging. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListImageSetVersions.html](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListImageSetVersions.html) in the *AWS HealthImaging API Reference*.
+Use the `ListImageSetVersions` action to list version history for an [image set](getting-started-concepts.md#concept-image-set) in HealthImaging. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`ListImageSetVersions`](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListImageSetVersions.html) in the *AWS HealthImaging API Reference*.
 
 **Note**
 AWS HealthImaging records every change made to an image set. Updating image set [metadata](getting-started-concepts.md#concept-metadata) creates a new version in the image set history. For more information, see [Updating image set metadata](update-image-set-metadata.md).

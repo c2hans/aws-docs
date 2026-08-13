@@ -222,7 +222,7 @@ The default filter is automatically applied every time you open the console page
 Each resource type has a corresponding API actions that you use to describe, list, or get resources of that type. The resulting lists of resources can be long, so it can be faster and more useful to filter the results to include only the resources that match specific criteria.
 
 **Filtering considerations**
-+ You can specify up to 50 filters and up to 200 values per filter in a single request.
++ You can specify up to 50 filters and up to 200 total filter values in a single request.
 + Filter strings can be up to 255 characters in length.
 + You can use wildcards with the filter values. An asterisk (\*) matches zero or more characters, and a question mark (?) matches zero or one character.
 + Filter values are case sensitive.
@@ -239,7 +239,7 @@ Each resource type has a corresponding API actions that you use to describe, lis
 #### [ AWS CLI ]
 
 **Example: Specify a single filter**
-You can list your Amazon EC2 instances using [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html). Without filters, the response contains information for all of your resources. You can use the following option to include only the running instances in the output.
+You can list your Amazon EC2 instances using [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html). Without filters, the response contains information for all of your resources. You can use the following option to include only the running instances in the output.
 
 ```
 --filters Name=instance-state-name,Values=running
@@ -286,7 +286,7 @@ You can use the following option to return only the snapshots whose description 
 ```
 
 **Example: Filter based on date**
-With the AWS CLI, you can use JMESPath to filter results using expressions. For example, the following [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-snapshots.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-snapshots.html) command displays the IDs of all snapshots created by the specified AWS account before the specified date. If you do not specify the owner, the results include all public snapshots.
+With the AWS CLI, you can use JMESPath to filter results using expressions. For example, the following [describe-snapshots](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-snapshots.html) command displays the IDs of all snapshots created by the specified AWS account before the specified date. If you do not specify the owner, the results include all public snapshots.
 
 ```
 aws ec2 describe-snapshots \
@@ -310,7 +310,7 @@ For examples of how to filter a list of resources according to their tags, see [
 #### [ PowerShell ]
 
 **Example: Specify a single filter**
-You can list your Amazon EC2 instances using [https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html). Without filters, the response contains information for all of your resources. You can use the following parameter to include only the running instances in the output.
+You can list your Amazon EC2 instances using [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html). Without filters, the response contains information for all of your resources. You can use the following parameter to include only the running instances in the output.
 
 ```
 -Filter @{Name="instance-state-name"; Values="running"}

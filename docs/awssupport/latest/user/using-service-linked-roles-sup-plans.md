@@ -28,7 +28,7 @@ The role's permissions policy allows Support Plans to perform the following acti
 + `supportplans:StartSupportPlanUpdate`
 + `supportplans:UpdateSupportAgreement`
 
-For more information about the allowed actions, see the [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSSupportPlansServiceRolePolicy$jsonEditor](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSSupportPlansServiceRolePolicy$jsonEditor) policy in the IAM console.
+For more information about the allowed actions, see the [AWSSupportPlansServiceRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSSupportPlansServiceRolePolicy$jsonEditor) policy in the IAM console.
 
 ## Creating a service-linked role for AWS Support Plans
 <a name="create-service-linked-role-sup-plans"></a>

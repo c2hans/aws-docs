@@ -57,7 +57,7 @@ This section shows two ways to delete a feature group in the console, depending 
 ## Delete feature group example Python code
 <a name="feature-store-delete-feature-group-example"></a>
 
-The following code uses the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteFeatureGroup.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteFeatureGroup.html) API operation to delete your feature group using the AWS SDK for Python (Boto3). It assumes that you've set up Feature Store and created a feature group. For more information about getting started, see [Introduction to Feature Store example notebook](feature-store-introduction-notebook.md).
+The following code uses the [`DeleteFeatureGroup`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteFeatureGroup.html) API operation to delete your feature group using the AWS SDK for Python (Boto3). It assumes that you've set up Feature Store and created a feature group. For more information about getting started, see [Introduction to Feature Store example notebook](feature-store-introduction-notebook.md).
 
 ```
 from sagemaker.core.helper.session_helper import Session

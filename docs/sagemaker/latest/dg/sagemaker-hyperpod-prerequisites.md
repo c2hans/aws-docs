@@ -93,7 +93,7 @@ VPC configuration is mandatory for Amazon EKS orchestration. For Slurm orchestra
   If your current ENI limit is insufficient for your SageMaker HyperPod cluster needs, request a quota increase. Ensuring adequate ENI capacity beforehand helps prevent cluster deployment failures.
 + When using a custom VPC to connect a SageMaker HyperPod cluster with AWS resources, provide the VPC name, ID, AWS Region, subnet IDs, and security group IDs during cluster creation.
 **Note**
-When your Amazon VPC and subnets support IPv6 in the [https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_CreateCluster.html#sagemaker-CreateCluster-request-VpcConfig](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_CreateCluster.html#sagemaker-CreateCluster-request-VpcConfig) of the cluster or at the Instance group level using the `OverrideVPCConfig` attribute of [https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_ClusterInstanceGroupSpecification.html](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_ClusterInstanceGroupSpecification.html), network communications differ based on the cluster orchestration platform:
+When your Amazon VPC and subnets support IPv6 in the [`VPCConfig`](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_CreateCluster.html#sagemaker-CreateCluster-request-VpcConfig) of the cluster or at the Instance group level using the `OverrideVPCConfig` attribute of [`ClusterInstanceGroupSpecification`](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_ClusterInstanceGroupSpecification.html), network communications differ based on the cluster orchestration platform:
 Slurm-orchestrated clusters automatically configure nodes with dual IPv6 and IPv4 addresses, allowing immediate IPv6 network communications. No additional configuration is required beyond the `VPCConfig` IPv6 settings.
 In EKS-orchestrated clusters, nodes receive dual-stack addressing, but pods can only use IPv6 when the Amazon EKS cluster is explicitly IPv6-enabled. You must create a new IPv6 Amazon EKS cluster - existing IPv4 Amazon EKS clusters cannot be converted to IPv6. For information about deploying an IPv6 Amazon EKS cluster, see [Amazon EKS IPv6 Cluster Deployment](https://docs.aws.amazon.com/eks/latest/userguide/deploy-ipv6-cluster.html#_deploy_an_ipv6_cluster_with_eksctl).
 Additional resources for IPv6 configuration:
@@ -123,7 +123,7 @@ Elastic Fabric Adapter (EFA) traffic cannot cross AZs or VPCs. This does not app
   HyperPod deploys all cluster instances in a single Availability Zone. The VPC configuration determines the deployment AZ:
   + For Slurm-orchestrated clusters, VPC configuration is optional. When no VPC configuration is provided, HyperPod defaults to one subnet from the platform VPC.
   + For EKS-orchestrated clusters, VPC configuration is required.
-  + For both Slurm and EKS orchestrators, when [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_VpcConfig.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_VpcConfig.html) is provided, HyperPod selects a subnet from the provided `VpcConfig`'s subnet list. All instance groups inherit the subnet's AZ.
+  + For both Slurm and EKS orchestrators, when [`VpcConfig`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_VpcConfig.html) is provided, HyperPod selects a subnet from the provided `VpcConfig`'s subnet list. All instance groups inherit the subnet's AZ.
 **Note**
 Once you create a cluster, you cannot modify its `VpcConfig` settings.
 
@@ -132,11 +132,11 @@ Once you create a cluster, you cannot modify its `VpcConfig` settings.
 
   You can set up your HyperPod cluster across multiple AZs when creating a cluster or when adding a new instance group to an existing cluster. To configure multi-AZ deployments, you can override the default VPC settings of the cluster by specifying different subnets and security groups, potentially across different Availability Zones, for individual instance groups within your cluster.
 
-  SageMaker HyperPod API users can use the `OverrideVpcConfig` property within the [ClusterInstanceGroupSpecification](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ClusterInstanceGroupSpecification.html) when working with the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html) or [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html) APIs.
+  SageMaker HyperPod API users can use the `OverrideVpcConfig` property within the [ClusterInstanceGroupSpecification](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ClusterInstanceGroupSpecification.html) when working with the [`CreateCluster`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html) or [`UpdateCluster`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html) APIs.
 
   The `OverrideVpcConfig` field:
   + Cannot be modified after the instance group is created.
-  + Is optional. If not specified, the cluster level [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_VpcConfig.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_VpcConfig.html) is used as default.
+  + Is optional. If not specified, the cluster level [`VpcConfig`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_VpcConfig.html) is used as default.
   + For Slurm-orchestrated clusters, can only be specified when cluster level `VpcConfig` is provided. If no `VpcConfig` is specified at cluster level, `OverrideVpcConfig` cannot be used for any instance group.
   + Contains two required fields:
     + `Subnets` - accepts between 1 and 16 subnet IDs

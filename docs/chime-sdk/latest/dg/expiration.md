@@ -25,7 +25,7 @@ The following sections explain how to configure the `ExpirationSettings` of an `
 ### Configuring ExpirationSettings when you create a resource
 <a name="configure-on-create"></a>
 
-You can configure `ExpirationSettings` when you run the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateAppInstanceUser.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateAppInstanceUser.html) or [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannel.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannel.html) APIs. If you set the `ExpirationSettings` parameter, you must grant the following IAM permissions:
+You can configure `ExpirationSettings` when you run the [CreateAppInstanceUser](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateAppInstanceUser.html) or [CreateChannel](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannel.html) APIs. If you set the `ExpirationSettings` parameter, you must grant the following IAM permissions:
 + `chime:PutAppInstanceUserExpirationSettings` when creating an `AppInstanceUser`
 + `chime:PutChannelExpirationSettings` when creating a `Channel`.
 
@@ -58,7 +58,7 @@ aws chime-sdk-messaging create-channel \
 ### Using Put APIs to configure ExpirationSettings
 <a name="configure-on-put"></a>
 
-You can also use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_PutAppInstanceUserExpirationSettings.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_PutAppInstanceUserExpirationSettings.html) and [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_PutChannelExpirationSettings.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_PutChannelExpirationSettings.html) APIs to create, update, and delete `ExpirationSettings`.
+You can also use the [PutAppInstanceUserExpirationSettings](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_PutAppInstanceUserExpirationSettings.html) and [PutChannelExpirationSettings](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_PutChannelExpirationSettings.html) APIs to create, update, and delete `ExpirationSettings`.
 
 The following example shows you to use the AWS CLI to update an `AppInstanceUser`'s `ExpirationSettings`.
 

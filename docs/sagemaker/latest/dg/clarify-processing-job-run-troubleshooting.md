@@ -66,7 +66,7 @@ If the processing job finishes but no results are found, the CloudWatch logs pro
 If your receive one of the following error messages No Label values are present in the predicted Label Column, Positive Predicted Index Series contains all False values. or Predicted Label Column series data type is not the same as Label Column series., try the following:
 + Check that the correct dataset is being used.
 + Check whether the dataset size is too small; whether, for example, it contains only a few rows. This may cause the model outputs to have the same value or the data type is inferred incorrectly.
-+ Check if the label or facet is treated as continuous or categorical. SageMaker Clarify uses heuristics to determine the [https://github.com/aws/amazon-sagemaker-clarify/blob/master/src/smclarify/bias/metrics/common.py#L114)](https://github.com/aws/amazon-sagemaker-clarify/blob/master/src/smclarify/bias/metrics/common.py#L114)). For post-training bias metrics, the data type returned by the model may not match what is in the dataset or SageMaker Clarify may not be able to transform it correctly.
++ Check if the label or facet is treated as continuous or categorical. SageMaker Clarify uses heuristics to determine the [`DataType`](https://github.com/aws/amazon-sagemaker-clarify/blob/master/src/smclarify/bias/metrics/common.py#L114)). For post-training bias metrics, the data type returned by the model may not match what is in the dataset or SageMaker Clarify may not be able to transform it correctly.
   + In the bias report, you should see a single value for categorical columns or an interval for continuous columns.
   + For example, if a column has values 0.0 and 1.0 as floats, it will be treated as continuous even if there are too few unique values.
 

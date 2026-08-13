@@ -27,7 +27,7 @@ The following optional tools can be installed in your IDE to assist with code co
 The following are some basics of the Rust programming language that would be helpful to know. All references for more information come from [The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html#the-rust-programming-language).
 + `Cargo.toml` is the standard Rust project configuration file, it contains the dependencies and some metadata about the project. Rust source files have a `.rs` file extension. See [Hello, Cargo\!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html).
   + The `Cargo.toml` can be customized with profiles, see [Customizing Builds with Release Profiles](https://doc.rust-lang.org/book/ch14-01-release-profiles.html). These profiles are completely unrelated and independent from AWS's use of profiles within the shared AWS `config` file.
-  + A common way to add library dependencies to your project and this file is to use `cargo add`. See [https://doc.rust-lang.org/cargo/commands/cargo-add.html](https://doc.rust-lang.org/cargo/commands/cargo-add.html).
+  + A common way to add library dependencies to your project and this file is to use `cargo add`. See [`cargo-add`](https://doc.rust-lang.org/cargo/commands/cargo-add.html).
 + Rust has a basic function structure like the following. The `let` keyword declares a variable and might be paired with assignment (=). If you don't specify a type after `let`, then the compiler will infer one. See [Variables and Mutability](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html).
 
   ```
@@ -43,8 +43,8 @@ The following are some basics of the Rust programming language that would be hel
 + Rust doesn't support inheritance of functionality from base classes like other programming languages do; `traits` are how Rust provides the overloading of methods. Traits might be thought of as being conceptually similar to an interface. However, traits and true interfaces have differences and are often used differently in the design process. See [Traits: Defining Shared Behavior](https://doc.rust-lang.org/book/ch10-02-traits.html).
   + Polymorphism refers to code that supports functionality for multiple data types without having to individually write each one. Rust supports polymorphism through enums, traits, and generics. See [Inheritance as a Type System and as Code Sharing](https://doc.rust-lang.org/book/ch17-01-what-is-oo.html?#inheritance-as-a-type-system-and-as-code-sharing).
 + Rust is very explicit about memory. Smart pointers "are data structures that act like a pointer but also have additional metadata and capabilities". See [Smart Pointers](https://doc.rust-lang.org/book/ch15-00-smart-pointers.html).
-  + The type `Cow` is a clone-on-write smart pointer that helps transfer memory ownership to the caller when necessary. See [https://doc.rust-lang.org/std/borrow/enum.Cow.html](https://doc.rust-lang.org/std/borrow/enum.Cow.html).
-  + The type `Arc` is a Atomically Reference Counted smart pointer that counts allocated instances. See [https://doc.rust-lang.org/std/sync/struct.Arc.html](https://doc.rust-lang.org/std/sync/struct.Arc.html).
+  + The type `Cow` is a clone-on-write smart pointer that helps transfer memory ownership to the caller when necessary. See [`Enum std::borrow::Cow`](https://doc.rust-lang.org/std/borrow/enum.Cow.html).
+  + The type `Arc` is a Atomically Reference Counted smart pointer that counts allocated instances. See [`Struct std::sync::Arc`](https://doc.rust-lang.org/std/sync/struct.Arc.html).
 + The SDK for Rust frequently uses the builder pattern for constructing complex types.
 
 ## AWS SDK for Rust crate fundamentals

@@ -13,7 +13,7 @@ If you create a dashboard with graphs that contain 100 or more high-resolution m
 **Note**
 If the time range of a dashboard is shorter than the period used for a widget on the dashboard, the following happens:
  The widget is modified to display the amount of data corresponding one complete period for that widget, even though this is longer than the dashboard time range. This ensures that there is at least one data point on the graph.
- The start time of the period for this data point is adjusted backwards to ensure that at least one data point can be displayed.
+ The start time of the period for this data point is adjusted backwards to make sure that at least one data point can be displayed.
 
 ------
 #### [ New console ]

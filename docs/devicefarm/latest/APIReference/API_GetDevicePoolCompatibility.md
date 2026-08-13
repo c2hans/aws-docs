@@ -33,6 +33,7 @@ Gets information about compatibility with a device pool.
       ],
       "executionRoleArn": "{{string}}",
       "extraDataPackageArn": "{{string}}",
+      "insightsTypes": [ "{{string}}" ],
       "locale": "{{string}}",
       "location": {
          "latitude": {{number}},

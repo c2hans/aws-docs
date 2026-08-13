@@ -11,7 +11,7 @@ This automated AWS CloudFormation template deploys Workload Discovery on AWS in 
 
 1. Sign in to the [AWS Management Console](https://console.aws.amazon.com/) and select the button to launch the `workload-discovery-on-aws.template` AWS CloudFormation template.
 
-    [https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=workload-discovery&templateURL=https://s3.amazonaws.com/solutions-reference/workload-discovery-on-aws/latest/workload-discovery-on-aws.template&redirectId=ImplementationGuide](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=workload-discovery&templateURL=https://s3.amazonaws.com/solutions-reference/workload-discovery-on-aws/latest/workload-discovery-on-aws.template&redirectId=ImplementationGuide)
+    [![Launch Stack](http://docs.aws.amazon.com/solutions/latest/workload-discovery-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=workload-discovery&templateURL=https://s3.amazonaws.com/solutions-reference/workload-discovery-on-aws/latest/workload-discovery-on-aws.template&redirectId=ImplementationGuide)
 
 1. The template launches in the US East (N. Virginia) Region by default. To launch the solution in a different AWS Region, use the Region selector in the console navigation bar.
 **Note**

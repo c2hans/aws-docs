@@ -48,5 +48,5 @@ CloudWatch displays the metric information on the dashboards if you click the `i
 You can customize the agent configuration and the dashboard. Be aware that if you customize the agent configuration, you must update the dashboard accordingly or it will display empty metric widgets. Also be aware that if CloudWatch releases a new version of a solution, you might have to repeat your customizations if you apply the newer version of the solution.
 
 **How are solutions versioned?**
-Each solution provides the most up-to-date instructions and resources. We always recommend using the latest version available. While the solutions themselves are not versioned, the associated artifacts (such as CloudFormation templates for dashboards and agent installations) are versioned.
+Each solution provides the most up-to-date instructions and resources. Always use the latest version available. While the solutions themselves are not versioned, the associated artifacts (such as CloudFormation templates for dashboards and agent installations) are versioned.
 You can identify the version of a previously deployed artifact by checking the CloudFormation template's description field or the filename of the template you downloaded. To determine if you're using the latest version, compare your deployed version with the one currently referenced in the solution documentation.

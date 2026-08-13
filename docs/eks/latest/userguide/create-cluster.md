@@ -59,16 +59,16 @@ This topic provides an overview of the available options and describes what to c
    aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/AmazonEKSClusterPolicy --role-name myAmazonEKSClusterRole
    ```
 
-### Service Linked Role
+### Service-Linked Role
 <a name="_service_linked_role"></a>
 
-Amazon EKS automatically creates a service linked role called `AWSServiceRoleForAmazonEKS`.
+Amazon EKS automatically creates a service-linked role called `AWSServiceRoleForAmazonEKS`.
 
 This is in addition to the cluster IAM role. A service-linked role is a unique type of IAM role that is linked directly to Amazon EKS. The role allows Amazon EKS to manage clusters in your account. For more information, see [Using roles for Amazon EKS clusters](using-service-linked-roles-eks.md).
 
-The IAM Identity you use to create the EKS cluster must have permission to create the service-linked role. This includes the `iam:CreateServiceLinkedRole` permission.
+The IAM principal you use to create the EKS cluster must have permission to create the service-linked role. This includes the `iam:CreateServiceLinkedRole` permission.
 
-If the service linked role doesn’t already exist, and your current IAM role doesn’t have sufficient permissions to create it, the cluster create operation will fail.
+If the service-linked role doesn’t already exist, and your current IAM role doesn’t have sufficient permissions to create it, the cluster create operation will fail.
 
 ## Step 2: Create cluster
 <a name="_step_2_create_cluster"></a>
@@ -152,7 +152,7 @@ The following are optional settings that, if required, must be added to the prev
    +  **Support type** — The Kubernetes version policy you would like to set for your cluster. If you want your cluster to only run on a standard support version, you can choose **Standard support**. If you want your cluster to enter extended support at the end of standard support for a version, you can choose **Extended support**. If you select a Kubernetes version that is currently in extended support, you can not select standard support as an option.
    +  **Secrets encryption** – (Optional) Choose to enable secrets encryption of Kubernetes secrets using a KMS key. You can also enable this after you create your cluster. Before you enable this capability, make sure that you’re familiar with the information in [Encrypt Kubernetes secrets with KMS on existing clusters](enable-kms.md).
    +  **Tags** – (Optional) Add any tags to your cluster. For more information, see [Organize Amazon EKS resources with tags](eks-using-tags.md).
-   +  **ARC Zonal shift** - (Optional) You can use Route53 Application Recovery controller to mitigate impaired availability zones. For more information, see [Learn about Amazon Application Recovery Controller (ARC) zonal shift in Amazon EKS](zone-shift.md).
+   +  **ARC Zonal shift** — (Optional) You can use Amazon Application Recovery Controller to mitigate impaired Availability Zones. For more information, see [Learn about Amazon Application Recovery Controller (ARC) zonal shift in Amazon EKS](zone-shift.md).
 
 1. In the **Cluster access** section of the configure cluster page, enter the following fields:
    +  **Bootstrap cluster administrator access** — The cluster creator is automatically a Kubernetes administrator. If you want to disable this, select **Disallow cluster administrator access**.

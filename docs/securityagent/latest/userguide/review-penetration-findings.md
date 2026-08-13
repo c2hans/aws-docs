@@ -66,6 +66,8 @@ Access detailed logs of all actions AWS Security Agent executed during the penet
    +  **Testing Summary** – High-level summary of the agent actions and results
    +  **Penetration test logs** – Detailed logs of all testing activities
 
+Each task reports its own duration and task hours. For more information, see [Pricing and billing](pricing.md).
+
 **Note**
 Validator actions provide logs that validate findings in each category
 

@@ -10,7 +10,7 @@ A rule is an action that Connect Customer automatically performs, based on condi
 ## More information
 <a name="rules-more-information"></a>
 + To create and manage rules programmatically, see [Rules actions](https://docs.aws.amazon.com/connect/latest/APIReference/rules-api.html) and the [Connect Customer Rules Function language](https://docs.aws.amazon.com/connect/latest/APIReference/connect-rules-language.html) in the *Connect Customer API Reference Guide*.
-+ [Add real-time alerts to Contact Lens for supervisors based on keywords and phrases in a call](add-rules-for-alerts.md)
++ [Add real-time alerts to conversational analytics for supervisors based on keywords and phrases in a call](add-rules-for-alerts.md)
 + [Automatically categorize contacts by matching conversations with natural language statements, or specific words and phrases](rules.md)
 + [Create a rule that generates a task](contact-lens-rules-create-task.md)
 + [Create a rule that generates an EventBridge event](contact-lens-rules-eventbridge-event.md)

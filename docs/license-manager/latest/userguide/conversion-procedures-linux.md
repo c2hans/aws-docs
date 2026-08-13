@@ -60,7 +60,7 @@ To determine the license type currently associated with your instance, run the f
 aws ec2 describe-instances --instance-ids {{<instance-id>}} --query "Reservations[*].Instances[*].{InstanceId: InstanceId, PlatformDetails: PlatformDetails, UsageOperation: UsageOperation, UsageOperationUpdateTime: UsageOperationUpdateTime}"
 ```
 
-The following is an example response to the `describe-instances` command. The **UsageOperation** value is the billing information code associated with the license. A usage operation value of `RunInstances` indicates that the instance is using AWS provided licensing. The `UsageOperationUpdateTime` is the time when the billing code was updated. For more information, see [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstances.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstances.html) in the *Amazon EC2 API Reference*.
+The following is an example response to the `describe-instances` command. The **UsageOperation** value is the billing information code associated with the license. A usage operation value of `RunInstances` indicates that the instance is using AWS provided licensing. The `UsageOperationUpdateTime` is the time when the billing code was updated. For more information, see [DescribeInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstances.html) in the *Amazon EC2 API Reference*.
 
 ```
 "InstanceId": "i-0123456789abcdef",

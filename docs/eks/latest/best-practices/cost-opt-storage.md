@@ -175,6 +175,6 @@ Multiple layers of packages, tools, application dependencies, libraries can easi
 
 Another thing to consider is how long to persist cached images. You may want to clean up the stale images from the image cache when a certain amount of disk is utilized. Doing so will help make sure you have enough space for the host’s operation. By default, the [kubelet](https://kubernetes.io/docs/reference/generated/kubelet) performs garbage collection on unused images every five minutes and on unused containers every minute.
 
- *To configure options for unused container and image garbage collection, tune the kubelet using a [configuration file](https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/) and change the parameters related to garbage collection using the [https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/](https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/) resource type.*
+ *To configure options for unused container and image garbage collection, tune the kubelet using a [configuration file](https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/) and change the parameters related to garbage collection using the [`KubeletConfiguration`](https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/) resource type.*
 
 You can learn more about it in the Kubernetes [documentation](https://kubernetes.io/docs/concepts/architecture/garbage-collection/#containers-images).

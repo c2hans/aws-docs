@@ -83,8 +83,8 @@ Response:
 <a name="access-grants-location-edit-rest-api"></a>
 
 For information about the Amazon S3 REST API support for getting the details of a registered location or listing all of the locations that are registered with an S3 Access Grants instance, see the following sections in the *Amazon Simple Storage Service API Reference*:
-+  [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAccessGrantsLocation.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAccessGrantsLocation.html)
-+  [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAccessGrantsLocations.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAccessGrantsLocations.html)
++  [GetAccessGrantsLocation](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAccessGrantsLocation.html)
++  [ListAccessGrantsLocations](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAccessGrantsLocations.html)
 
 ## Using the AWS SDKs
 <a name="access-grants-location-edit-using-sdk"></a>

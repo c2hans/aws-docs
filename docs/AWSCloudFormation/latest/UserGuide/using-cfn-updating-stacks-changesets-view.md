@@ -79,7 +79,7 @@ CloudFormation property-level change sets does not resolve cross-stack reference
 
 **To view a change set (AWS CLI)**
 
-1. To get the ID of the change set, run the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-change-sets.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-change-sets.html) command.
+1. To get the ID of the change set, run the [change-sets](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-change-sets.html) command.
 
    Specify the name of the stack that has the change set that you want to view, as shown in the following example:
 
@@ -120,7 +120,7 @@ CloudFormation property-level change sets does not resolve cross-stack reference
    }
    ```
 
-1. Run the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-change-set.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-change-set.html) command, specifying the ID of the change set that you want to view. For example:
+1. Run the [describe-change-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-change-set.html) command, specifying the ID of the change set that you want to view. For example:
 
    ```
    aws cloudformation describe-change-set \
@@ -183,7 +183,7 @@ CloudFormation property-level change sets does not resolve cross-stack reference
 
    Use `--include-property-values` with **describe-change-set** to list the property-level changes.
 
-   The `Changes` key lists changes to resources. If you were to execute this change set, CloudFormation would update the tags of the `i-1abc23d4` EC2 instance. For a description of each field, see the [https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Change.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Change.html) data type in the *AWS CloudFormation API Reference*.
+   The `Changes` key lists changes to resources. If you were to execute this change set, CloudFormation would update the tags of the `i-1abc23d4` EC2 instance. For a description of each field, see the [`Change`](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Change.html) data type in the *AWS CloudFormation API Reference*.
 
    For additional examples of change sets, see [Example change sets for CloudFormation stacks](using-cfn-updating-stacks-changesets-samples.md).
 

@@ -21,14 +21,14 @@ For more information about the differences between Studio spaces and application
 <a name="studio-updated-running-stop-app"></a>
 
 To avoid additional charges from unused running applications, you must stop them. The following includes information on what stopping an application does and how to do it.
-+ The following instructions uses the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteApp.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteApp.html) API to stop the application. This also stops the instance that the application is running on.
++ The following instructions uses the [`DeleteApp`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteApp.html) API to stop the application. This also stops the instance that the application is running on.
 + After you stop an application, you can start up the application again later.
   + When you stop an application, the files in the space will persist. You can run the application again and expect to have access to the same files that are stored in the space, as you did before deleting the application.
 
   + When you stop an application, the *metadata* for the application will be deleted within 24 hours. For more information, see the note in the `CreationTime` response element for the [DescribeApp](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeApp.html#sagemaker-DescribeApp-response-CreationTime) API.
 
 **Note**
-If the service detects that an application is unhealthy, it assumes the [AmazonSageMakerNotebooksServiceRolePolicy](security-iam-awsmanpol-notebooks.md#security-iam-awsmanpol-AmazonSageMakerNotebooksServiceRolePolicy) service linked role and deletes the application using the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteApp.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteApp.html) API.
+If the service detects that an application is unhealthy, it assumes the [AmazonSageMakerNotebooksServiceRolePolicy](security-iam-awsmanpol-notebooks.md#security-iam-awsmanpol-AmazonSageMakerNotebooksServiceRolePolicy) service linked role and deletes the application using the [`DeleteApp`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteApp.html) API.
 
 The following tabs provide instructions to stop an application from your domain using the Studio UI, the SageMaker AI console, or the AWS CLI.
 
@@ -92,7 +92,7 @@ In the **Space management** tab, you have the option to delete the space. There 
 
 To view or stop any of your Studio running instances from a centralized location, see [Stop applications using the Studio UI](#studio-updated-running-stop-app-using-studio-updated-ui). Otherwise, use the following instructions.
 
-The following code examples use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteApp.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteApp.html) API to stop an application in an example domain.
+The following code examples use the [`DeleteApp`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteApp.html) API to stop an application in an example domain.
 
 To stop your running **JupyterLab** or **Code Editor** instances, use the following code example:
 

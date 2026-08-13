@@ -12,14 +12,25 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 ## Changes
 <a name="release-2019-06-17-linux.changes"></a>
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **June 17, 2019** to all Linux-based platforms. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-06-17-linux.html) |
-| **Multicontainer Docker** | Updated the ECS agent to version 1.29.0. |
-| **PHP** | Updated PHP 7.2 to [7.2.18](https://www.php.net/releases/7_2_18.php). This is a security release which also contains several minor bug fixes. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>June 17, 2019</b> to all Linux-based platforms.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Multicontainer Docker</b></td><td>Updated the ECS agent to version 1.29.0.</td></tr>
+  <tr><td><b>PHP</b></td><td>Updated PHP 7.2 to <a href="https://www.php.net/releases/7_2_18.php">7.2.18</a>. This is a security release which also contains several minor bug fixes.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2019-06-17-linux.platforms"></a>

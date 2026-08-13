@@ -33,7 +33,7 @@ To review permissions to your secrets, see [Determine who has permissions to you
 <a name="auth-and-access_resource_cli"></a>
 
 **Example Retrieve a resource policy**
-The following [https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/get-resource-policy.html](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/get-resource-policy.html) example retrieves the resource-based policy attached to a secret.
+The following [`get-resource-policy`](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/get-resource-policy.html) example retrieves the resource-based policy attached to a secret.
 
 ```
 aws secretsmanager get-resource-policy \
@@ -41,7 +41,7 @@ aws secretsmanager get-resource-policy \
 ```
 
 **Example Delete a resource policy**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-resource-policy.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-resource-policy.html) example deletes the resource-based policy attached to a secret.
+The following [`delete-resource-policy`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-resource-policy.html) example deletes the resource-based policy attached to a secret.
 
 ```
 aws secretsmanager delete-resource-policy \
@@ -49,7 +49,7 @@ aws secretsmanager delete-resource-policy \
 ```
 
 **Example Add a resource policy**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/put-resource-policy.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/put-resource-policy.html) example adds a permissions policy to a secret, checking first that the policy does not provide broad access to the secret. The policy is read from a file. For more information, see [Loading AWS CLI parameters from a file](https://docs.aws.amazon.com//cli/latest/userguide/cli-usage-parameters-file.html) in the AWS CLI User Guide.
+The following [`put-resource-policy`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/put-resource-policy.html) example adds a permissions policy to a secret, checking first that the policy does not provide broad access to the secret. The policy is read from a file. For more information, see [Loading AWS CLI parameters from a file](https://docs.aws.amazon.com//cli/latest/userguide/cli-usage-parameters-file.html) in the AWS CLI User Guide.
 
 ```
 aws secretsmanager put-resource-policy \
@@ -79,11 +79,11 @@ Contents of `mypolicy.json`:
 ## AWS SDK
 <a name="auth-and-access_resource_sdk"></a>
 
-To retrieve the policy attached to a secret, use [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetResourcePolicy.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetResourcePolicy.html).
+To retrieve the policy attached to a secret, use [`GetResourcePolicy`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetResourcePolicy.html).
 
-To delete a policy attached to a secret, use [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DeleteResourcePolicy.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DeleteResourcePolicy.html).
+To delete a policy attached to a secret, use [`DeleteResourcePolicy`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DeleteResourcePolicy.html).
 
-To attach a policy to a secret, use [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_PutResourcePolicy.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_PutResourcePolicy.html). If there is already a policy attached, the command replaces it with the new policy. The policy must be formatted as JSON structured text. See [JSON policy document structure](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies-introduction).
+To attach a policy to a secret, use [`PutResourcePolicy`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_PutResourcePolicy.html). If there is already a policy attached, the command replaces it with the new policy. The policy must be formatted as JSON structured text. See [JSON policy document structure](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies-introduction).
 
 For more information, see [AWS SDKs](asm_access.md#asm-sdks).
 

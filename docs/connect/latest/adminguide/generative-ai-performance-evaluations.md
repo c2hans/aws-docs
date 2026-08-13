@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/generative-ai-
 <a name="generative-ai-performance-evaluations"></a>
 
 **Note**
-**Powered by Amazon Bedrock**: AWS implements automated abuse detections. Because generative AI features in Contact Lens are built on Amazon Bedrock, users can take full advantage of the controls implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI).
+**Powered by Amazon Bedrock**: AWS implements automated abuse detections. Because generative AI features in conversational analytics are built on Amazon Bedrock, users can take full advantage of the controls implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI).
 
  Managers can specify their evaluation criteria in natural language, and use generative AI for automating evaluations of up to 100% of customer interactions. Generative AI can enable you to automate evaluations of additional agent behaviors (for example, was the agent able to resolve the customer's issue?), enabling managers to comprehensively monitor and improve regulatory compliance, agent adherence to quality standards and sensitive data collection, while reducing the time spent on evaluating agent performance. Along with answers, you are also provided with context and justification, and references to specific points in the transcript that you can use to provide agent coaching.
 
@@ -34,6 +34,10 @@ The following is the overview of the automation process:
 **Note**
 AI-generated evaluations are not 100% accurate. Before acting on AI outputs (such as providing rewards, agent coaching, and so on), we recommend that you review a sample of evaluations. This helps confirm the performance trends that AI provides. You can override AI-filled evaluations and make any corrections before sharing them with the agent or using them for performance reviews. We also recommend keeping a manual evaluation process in place. This helps you catch any drift between AI-filled evaluations and manager-filled evaluations over time.
 
+**Limitations of generative AI-powered performance evaluations**
+Transcription accuracy affects the accuracy of generative AI-powered evaluations. Conversational analytics cannot accurately transcribe conversations that include more than one language. It also cannot accurately transcribe conversations in which multiple parties speak at the same time. Examples include conference calls, warm transfers, and calls where an agent adds a third party. Both scenarios lower the accuracy of generative AI-powered performance evaluations.
+You can use rules to filter out conversations where you expect these scenarios to occur, such as conversations in specific queues. For more information, see [Create a rule in conversational analytics that submits an automated evaluation](contact-lens-rules-submit-automated-evaluation.md).
+
 ## Use Ask AI to get generative AI answer recommendations
 <a name="get-generative-ai-powered-recommendations"></a>
 
@@ -43,7 +47,7 @@ AI-generated evaluations are not 100% accurate. Before acting on AI outputs (suc
 
    1. The answer is automatically selected based on the generative AI recommendation, but you can change it.
 
-   1.  You can get generative AI-powered recommendations by choosing **Ask AI** for up to 10 questions per contact. For more information, see [Contact Lens service quotas](amazon-connect-service-limits.md#contactlens-quotas).
+   1.  You can get generative AI-powered recommendations by choosing **Ask AI** for up to 10 questions per contact. For more information, see [Conversational analytics service quotas](amazon-connect-service-limits.md#contactlens-quotas).
 
 1.  You can choose the time associated with a transcript reference to be directed to the point in the conversation
 ![Generative AI-powered recommendations while evaluating agent performance.](http://docs.aws.amazon.com/connect/latest/adminguide/images/get-generative-ai-powered-recommendations-performance.png)
@@ -61,7 +65,7 @@ If AI is not able to identify which of the provided answer options is appropriat
 ## Set up automated evaluations using generative AI on the evaluation form
 <a name="set-up-automated-evals-on-eval-form-with-generative-ai"></a>
 
-You can pre-configure on an evaluation form whether a question will be automatically answered using generative AI. Then, if you start an evaluation using the evaluation form on the Connect Customer UI, answers to these questions will get automatically filled using generative AI (without requiring you to choose Ask AI). You can also use generative AI to automatically fill and submit evaluations. For automatically submitted evaluations, you can use generative AI to answer up to 10 questions per contact (see [Contact Lens service quotas](amazon-connect-service-limits.md#contactlens-quotas)). Note that this limit does not apply to automation using contact categories or metrics (for example, longest hold duration, etc.).
+You can pre-configure on an evaluation form whether a question will be automatically answered using generative AI. Then, if you start an evaluation using the evaluation form on the Connect Customer UI, answers to these questions will get automatically filled using generative AI (without requiring you to choose Ask AI). You can also use generative AI to automatically fill and submit evaluations. For automatically submitted evaluations, you can use generative AI to answer up to 10 questions per contact (see [Conversational analytics service quotas](amazon-connect-service-limits.md#contactlens-quotas)). Note that this limit does not apply to automation using contact categories or metrics (for example, longest hold duration, etc.).
 
 To learn more about setting up automated evaluations using generative AI, see [Guidelines to improve generative AI accuracy](#guidelines-to-improve-generative-ai-accuracy).
 
@@ -96,7 +100,7 @@ To set the language of the evaluation form:
 **Don'ts**
 + Don't use generative AI to answer questions that need information outside the conversation transcript. Generative AI cannot analyze screen recordings, access your internal or third-party systems such as CRM applications, or evaluate conversations across multiple contacts.
 + Don't use generative AI to evaluate quantifiable activities such as "Was the customer put on excessive hold?" or "Was the customer frequently interrupted?". Instead, set the question type to **Number** and use metrics such as the longest hold duration or the number of interruptions. For more details, see [Step 6: Enable automated evaluations](create-evaluation-forms.md#step-automate).
-+ Don't automate questions that assess interactions between multiple parties (another agent, a partner institution, or a second customer). Contact Lens is aware of only two participants at a given time. For example, avoid a question like "If another person other than the primary account holder joined the conversation, did the agent first confirm with the primary account holder before proceeding?".
++ Don't automate questions that assess interactions between multiple parties (another agent, a partner institution, or a second customer). conversational analytics is aware of only two participants at a given time. For example, avoid a question like "If another person other than the primary account holder joined the conversation, did the agent first confirm with the primary account holder before proceeding?".
 + Don't ask questions that depend on tone of voice. Generative AI cannot determine the agent's or customer's tone.
 + Don't use generative AI for highly subjective questions, such as "Was the agent attentive during the call?".
 

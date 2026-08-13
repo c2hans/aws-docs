@@ -16,7 +16,7 @@ These AWS Security Hub CSPM controls evaluate the AWS App Runner service and res
 
 **Resource type:** `AWS::AppRunner::Service`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/apprunner-service-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/apprunner-service-tagged.html)
+**AWS Config rule:** [apprunner-service-tagged](https://docs.aws.amazon.com/config/latest/developerguide/apprunner-service-tagged.html)
 
 **Schedule type:** Change triggered
 
@@ -36,7 +36,7 @@ Don’t add personally identifiable information (PII) or other confidential or s
 ### Remediation
 <a name="apprunner-1-remediation"></a>
 
-For information about adding tags to an AWS App Runner service, see [https://docs.aws.amazon.com/apprunner/latest/api/API_TagResource.html](https://docs.aws.amazon.com/apprunner/latest/api/API_TagResource.html) in the *AWS App Runner API Reference*.
+For information about adding tags to an AWS App Runner service, see [TagResource](https://docs.aws.amazon.com/apprunner/latest/api/API_TagResource.html) in the *AWS App Runner API Reference*.
 
 ## [AppRunner.2] App Runner VPC connectors should be tagged
 <a name="apprunner-2"></a>
@@ -47,7 +47,7 @@ For information about adding tags to an AWS App Runner service, see [https://doc
 
 **Resource type:** `AWS::AppRunner::VpcConnector`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/apprunner-vpc-connector-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/apprunner-vpc-connector-tagged.html)
+**AWS Config rule:** [apprunner-vpc-connector-tagged](https://docs.aws.amazon.com/config/latest/developerguide/apprunner-vpc-connector-tagged.html)
 
 **Schedule type:** Change triggered
 
@@ -67,4 +67,4 @@ Don’t add personally identifiable information (PII) or other confidential or s
 ### Remediation
 <a name="apprunner-2-remediation"></a>
 
-For information about adding tags to an AWS App Runner VPC connector, see [https://docs.aws.amazon.com/apprunner/latest/api/API_TagResource.html](https://docs.aws.amazon.com/apprunner/latest/api/API_TagResource.html) in the *AWS App Runner API Reference*.
+For information about adding tags to an AWS App Runner VPC connector, see [TagResource](https://docs.aws.amazon.com/apprunner/latest/api/API_TagResource.html) in the *AWS App Runner API Reference*.

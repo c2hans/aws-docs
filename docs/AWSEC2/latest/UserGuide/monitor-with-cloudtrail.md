@@ -30,7 +30,7 @@ CloudTrail Lake event data stores and queries incur costs. When you create an ev
 
 [Management events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-management-events-with-cloudtrail.html#logging-management-events) provide information about management operations that are performed on resources in your AWS account. These are also known as control plane operations. By default, CloudTrail logs management events.
 
-All Amazon EC2 API actions are logged as management events. For a list of the API actions that are logged to CloudTrail, see the [Amazon EC2 API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/). For example, calls to the [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RunInstances.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RunInstances.html), [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstances.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstances.html), and [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StopInstances.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StopInstances.html) actions are logged as management events.
+All Amazon EC2 API actions are logged as management events. For a list of the API actions that are logged to CloudTrail, see the [Amazon EC2 API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/). For example, calls to the [RunInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RunInstances.html), [DescribeInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstances.html), and [StopInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StopInstances.html) actions are logged as management events.
 
 ## Amazon EC2 API event examples
 <a name="cloudtrail-event-examples"></a>
@@ -110,7 +110,7 @@ You can use AWS CloudTrail to audit the users that connect to your instances usi
 
 1. Choose the **Refresh events** icon.
 
-1. The page displays the events that correspond to the [https://docs.aws.amazon.com/ec2-instance-connect/latest/APIReference/API_SendSSHPublicKey.html](https://docs.aws.amazon.com/ec2-instance-connect/latest/APIReference/API_SendSSHPublicKey.html) API calls. Expand an event using the arrow to view additional details, such as the user name and AWS access key that was used to make the SSH connection, and the source IP address.
+1. The page displays the events that correspond to the [SendSSHPublicKey](https://docs.aws.amazon.com/ec2-instance-connect/latest/APIReference/API_SendSSHPublicKey.html) API calls. Expand an event using the arrow to view additional details, such as the user name and AWS access key that was used to make the SSH connection, and the source IP address.
 
 1. To display the full event information in JSON format, choose **View event**. The **requestParameters** field contains the destination instance ID, OS username, and public key that were used to make the SSH connection.
 

@@ -55,7 +55,7 @@ Don’t add personally identifiable information (PII) or other confidential or s
 
 **Resource type:** `AWS::Transfer::Server`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/transfer-family-server-no-ftp.html](https://docs.aws.amazon.com/config/latest/developerguide/transfer-family-server-no-ftp.html)
+**AWS Config rule:** [transfer-family-server-no-ftp](https://docs.aws.amazon.com/config/latest/developerguide/transfer-family-server-no-ftp.html)
 
 **Schedule type:** Periodic
 
@@ -81,7 +81,7 @@ To modify the protocol for a Transfer Family server, see [Edit the file transfer
 
 **Resource type:** `AWS::Transfer::Connector`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/transfer-connector-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/transfer-connector-logging-enabled.html)
+**AWS Config rule:** [transfer-connector-logging-enabled](https://docs.aws.amazon.com/config/latest/developerguide/transfer-connector-logging-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -105,7 +105,7 @@ For information about enabling CloudWatch logging for a Transfer Family connecto
 
 **Resource type:** `AWS::Transfer::Agreement`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/transfer-agreement-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/transfer-agreement-tagged.html)
+**AWS Config rule:** [transfer-agreement-tagged](https://docs.aws.amazon.com/config/latest/developerguide/transfer-agreement-tagged.html)
 
 **Schedule type:** Change triggered
 
@@ -136,7 +136,7 @@ For information about adding tags to an AWS Transfer Family agreement, see [Reso
 
 **Resource type:** `AWS::Transfer::Certificate`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/transfer-certificate-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/transfer-certificate-tagged.html)
+**AWS Config rule:** [transfer-certificate-tagged](https://docs.aws.amazon.com/config/latest/developerguide/transfer-certificate-tagged.html)
 
 **Schedule type:** Change triggered
 
@@ -167,7 +167,7 @@ For information about adding tags to an AWS Transfer Family certificate, see [Re
 
 **Resource type:** `AWS::Transfer::Connector`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/transfer-connector-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/transfer-connector-tagged.html)
+**AWS Config rule:** [transfer-connector-tagged](https://docs.aws.amazon.com/config/latest/developerguide/transfer-connector-tagged.html)
 
 **Schedule type:** Change triggered
 
@@ -198,7 +198,7 @@ For information about adding tags to an AWS Transfer Family connector, see [Reso
 
 **Resource type:** `AWS::Transfer::Profile`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/transfer-profile-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/transfer-profile-tagged.html)
+**AWS Config rule:** [transfer-profile-tagged](https://docs.aws.amazon.com/config/latest/developerguide/transfer-profile-tagged.html)
 
 **Schedule type:** Change triggered
 

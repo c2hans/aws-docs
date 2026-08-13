@@ -80,7 +80,7 @@ To detect drift on an entire stack using the AWS CLI, use the following procedur
 
 **To detect drift on a StackSet**
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/detect-stack-set-drift.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/detect-stack-set-drift.html) command to detect drift on an entire StackSet and its associated stack instances.
+1. Use the [detect-stack-set-drift](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/detect-stack-set-drift.html) command to detect drift on an entire StackSet and its associated stack instances.
 
    The following example initiates drift detection on the StackSet `stack-set-drift-example`.
 
@@ -97,7 +97,7 @@ To detect drift on an entire stack using the AWS CLI, use the following procedur
    }
    ```
 
-1. Because StackSet drift detection operations can be a long-running operation, use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-set-operation.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-set-operation.html) command to monitor the status of drift operation. This command takes the StackSet operation ID returned by the **detect-stack-set-drift** command.
+1. Because StackSet drift detection operations can be a long-running operation, use the [describe-stack-set-operation](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-set-operation.html) command to monitor the status of drift operation. This command takes the StackSet operation ID returned by the **detect-stack-set-drift** command.
 
    The following examples uses the operation ID from the previous example to return information on the StackSet drift detection operation. In this example, the operation is still running. Of the seven stack instances associated with this StackSet, one stack instance has already been found to have drifted, two instances are in sync , and drift detection for the remaining four stack instances is still in progress. Because one instance has drifted, the drift status of the StackSet itself is now `DRIFTED`.
 
@@ -174,7 +174,7 @@ To detect drift on an entire stack using the AWS CLI, use the following procedur
 
 1. When the StackSet drift detection operation is complete, use the **describe-stack-set**, **list-stack-instances**, **describe-stack-instance**, and **list-stack-instance-resource-drifts** commands to review the results.
 
-   The [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-set.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-set.html) command includes the same detailed drift information returned by the **describe-stack-set-operation** command.
+   The [describe-stack-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-set.html) command includes the same detailed drift information returned by the **describe-stack-set-operation** command.
 
    ```
    aws cloudformation describe-stack-set \
@@ -216,7 +216,7 @@ To detect drift on an entire stack using the AWS CLI, use the following procedur
    }
    ```
 
-   You can use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-stack-instances.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-stack-instances.html) command to return summary information about the stack instances associated with a StackSet, including the drift status of each stack instance.
+   You can use the [list-stack-instances](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-stack-instances.html) command to return summary information about the stack instances associated with a StackSet, including the drift status of each stack instance.
 
    In this example, executing **list-stack-instances** on the example StackSet with the drift status filter set to `DRIFTED` enables you to identify which two stack instances have a drift status of `DRIFTED`.
 
@@ -258,7 +258,7 @@ To detect drift on an entire stack using the AWS CLI, use the following procedur
    }
    ```
 
-   The [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-instance.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-instance.html) command also returns this information, but for a single stack instance, as in the example below.
+   The [describe-stack-instance](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-instance.html) command also returns this information, but for a single stack instance, as in the example below.
 
    ```
    aws cloudformation describe-stack-instance \
@@ -284,7 +284,7 @@ To detect drift on an entire stack using the AWS CLI, use the following procedur
    }
    ```
 
-1. Once you've identified which stack instances have drifted, you can use the information about the stack instances that is returned by the **list-stack-instances** or **describe-stack-instance** commands to run the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-stack-instance-resource-drifts.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-stack-instance-resource-drifts.html) command. This command returns detailed information about which resources in the stack have drifted for a particular drift operation.
+1. Once you've identified which stack instances have drifted, you can use the information about the stack instances that is returned by the **list-stack-instances** or **describe-stack-instance** commands to run the [list-stack-instance-resource-drifts](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-stack-instance-resource-drifts.html) command. This command returns detailed information about which resources in the stack have drifted for a particular drift operation.
 
    The following example uses the `--stack-instance-resource-drift-statuses` parameter to request stack drift information for the resources that have been modified or deleted in the previous drift operation example. The request returns information on the one resource that has been modified, including details about two of its properties and their changed values. No resources have been deleted.
 
@@ -346,7 +346,7 @@ Because drift detection on a StackSet can be a long-running operation, there may
 1. Select **Stop operation**.
 
 **To stop drift detection on a StackSet (AWS CLI)**
-+ Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/stop-stack-set-operation.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/stop-stack-set-operation.html) command. You must supply both the StackSet name and the operation ID of the drift detection StackSet operation.
++ Use the [stop-stack-set-operation](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/stop-stack-set-operation.html) command. You must supply both the StackSet name and the operation ID of the drift detection StackSet operation.
 
   ```
   aws cloudformation stop-stack-set-operation \

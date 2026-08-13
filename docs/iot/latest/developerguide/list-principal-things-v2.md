@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/list-principal
 # List things associated with a principal V2
 <a name="list-principal-things-v2"></a>
 
-To list the things associated with the specified certificate, along with the attachment type, run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-principal-thingsv2.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-principal-thingsv2.html) command. The attachment type refers to how the certificate is attached to the thing.
+To list the things associated with the specified certificate, along with the attachment type, run the [`list-principal-things-v2`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-principal-thingsv2.html) command. The attachment type refers to how the certificate is attached to the thing.
 
 ```
 $ aws iot list-principal-things-v2 \

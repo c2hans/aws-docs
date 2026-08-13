@@ -23,7 +23,7 @@ The token endpoint becomes publicly available when you add a domain to your user
 
 You can learn more about the user pool app clients and their grant types, client secrets, allowed scopes, and client IDs at [Application-specific settings with app clients](user-pool-settings-client-apps.md). You can learn more about M2M authorization, client credentials grants, and authorization with access token scopes at [Scopes, M2M, and resource servers](cognito-user-pools-define-resource-servers.md).
 
-To retrieve information about a user from their access token, pass it to your [userInfo endpoint](userinfo-endpoint.md) or to a [https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_GetUser.html](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_GetUser.html) API request. The access token must contain the appropriate scopes for these requests,
+To retrieve information about a user from their access token, pass it to your [userInfo endpoint](userinfo-endpoint.md) or to a [GetUser](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_GetUser.html) API request. The access token must contain the appropriate scopes for these requests,
 
 ## Format a POST request to the token endpoint
 <a name="post-token"></a>
@@ -370,6 +370,7 @@ App client doesn't have read access to all [attributes](https://docs.aws.amazon.
 
 **`unauthorized_client`**
 Client is not allowed for code grant flow or for refreshing tokens.
+A token request with a `redirect_uri` that does not match the value from the authorization request, returns `unauthorized_client` with an `error_description` of `invalid_redirect`.
 
 **`unsupported_grant_type`**
 Returned if `grant_type` is anything other than `authorization_code` or `refresh_token` or `client_credentials`.

@@ -18,9 +18,9 @@ In AWS GovCloud (US), cross-Region aggregation is supported only for findings, f
 If a control is enabled in a linked Region but disabled in the home Region, you can see the compliance status of the control from the home Region, but you can't enable or disable that control from the home Region. The exception is if you use [central configuration](central-configuration-intro.md). If you use central configuration, the delegated Security Hub CSPM administrator can configure controls in the home Region and linked Regions from the home Region.
 
 If you have set an home Region, [security scores](standards-security-score.md) account for control statuses in all  linked Regions. To view cross-Region security scores and compliance statuses, add the following permissions to your IAM role that uses Security Hub CSPM:
-+ `[https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListSecurityControlDefinitions.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListSecurityControlDefinitions.html)`
-+ `[https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchGetStandardsControlAssociations.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchGetStandardsControlAssociations.html)`
-+ `[https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateStandardsControlAssociations.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateStandardsControlAssociations.html)`
++ `[`ListSecurityControlDefinitions`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListSecurityControlDefinitions.html)`
++ `[`BatchGetStandardsControlAssociations`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchGetStandardsControlAssociations.html)`
++ `[`BatchUpdateStandardsControlAssociations`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateStandardsControlAssociations.html)`
 
 ## Types of data that are aggregated
 <a name="finding-aggregation-overview"></a>

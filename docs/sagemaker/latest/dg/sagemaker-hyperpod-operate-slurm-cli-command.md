@@ -23,7 +23,7 @@ The following topics provide guidance on writing SageMaker HyperPod API request 
 
 1. Prepare lifecycle configuration scripts and upload them to an S3 bucket, such as `s3://sagemaker-{{amzn-s3-demo-bucket}}/{{lifecycle-script-directory/src/}}`. The following step 2 assumes that there’s an entry point script named `on_create.sh` in the specified S3 bucket.
 **Important**
-Make sure that you set the S3 path to start with `s3://sagemaker-`. The [IAM role for SageMaker HyperPod](sagemaker-hyperpod-prerequisites-iam.md#sagemaker-hyperpod-prerequisites-iam-role-for-hyperpod) has the managed [https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanpol-cluster.html](https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanpol-cluster.html) attached, which allows access to S3 buckets with the specific prefix `sagemaker-`.
+Make sure that you set the S3 path to start with `s3://sagemaker-`. The [IAM role for SageMaker HyperPod](sagemaker-hyperpod-prerequisites-iam.md#sagemaker-hyperpod-prerequisites-iam-role-for-hyperpod) has the managed [`AmazonSageMakerClusterInstanceRolePolicy`](https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanpol-cluster.html) attached, which allows access to S3 buckets with the specific prefix `sagemaker-`.
 
 1. Prepare a [CreateCluster](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html) API request file in JSON format. You should configure instance groups to match with the Slurm cluster you design in the `provisioning_parameters.json` file that'll be used during cluster creating as part of running a set of lifecycle scripts. To learn more, see [Customizing SageMaker HyperPod clusters using lifecycle scripts](sagemaker-hyperpod-lifecycle-best-practices-slurm.md). The following template has two instance groups to meet the minimum requirement for a Slurm cluster: one controller (head) node and one compute (worker) node. For `ExecutionRole`, provide the ARN of the IAM role you created with the managed `AmazonSageMakerClusterInstanceRolePolicy` from the section [IAM role for SageMaker HyperPod](sagemaker-hyperpod-prerequisites-iam.md#sagemaker-hyperpod-prerequisites-iam-role-for-hyperpod).
 
@@ -240,7 +240,7 @@ aws sagemaker update-cluster-software --cluster-name {{your-hyperpod-cluster}}
 This command calls the [UpdateClusterSoftware](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateClusterSoftware.html) API. After the API call, SageMaker HyperPod checks if there's a newer DLAMI available for the cluster instances. If a DLAMI update is required, SageMaker HyperPod will update the cluster instances to use the latest [SageMaker HyperPod DLAMI](sagemaker-hyperpod-ref.md#sagemaker-hyperpod-ref-hyperpod-ami) and run your lifecycle scripts in the Amazon S3 bucket that you specified during cluster creation or update. If the cluster is already using the latest DLAMI, SageMaker HyperPod will not make any changes to the cluster or run the lifecycle scripts again. The SageMaker HyperPod service team regularly rolls out new [SageMaker HyperPod DLAMI](sagemaker-hyperpod-ref.md#sagemaker-hyperpod-ref-hyperpod-ami)s for enhancing security and improving user experiences. We recommend that you always keep updating to the latest SageMaker HyperPod DLAMI. For future SageMaker HyperPod DLAMI updates for security patching, follow up with [Amazon SageMaker HyperPod release notes](sagemaker-hyperpod-release-notes.md).
 
 **Tip**
-If the security patch fails, you can retrieve failure messages by running the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeCluster.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeCluster.html) API as instructed at [Describe a cluster](#sagemaker-hyperpod-operate-slurm-cli-command-describe-cluster).
+If the security patch fails, you can retrieve failure messages by running the [`DescribeCluster`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeCluster.html) API as instructed at [Describe a cluster](#sagemaker-hyperpod-operate-slurm-cli-command-describe-cluster).
 
 **Note**
 You can only run this API programatically. The patching functionality is not implemented in the SageMaker HyperPod console UI.
@@ -248,7 +248,7 @@ You can only run this API programatically. The patching functionality is not imp
 ### Use the backup script provided by SageMaker HyperPod
 <a name="sagemaker-hyperpod-operate-slurm-cli-command-update-cluster-software-backup"></a>
 
-SageMaker HyperPod provides a script to back up and restore your data at [https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/5.sagemaker-hyperpod/patching-backup.sh](https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/5.sagemaker-hyperpod/patching-backup.sh) in the *Awsome Distributed Training GitHub repository*. The script provides the following two functions.
+SageMaker HyperPod provides a script to back up and restore your data at [`1.architectures/5.sagemaker-hyperpod/patching-backup.sh`](https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/5.sagemaker-hyperpod/patching-backup.sh) in the *Awsome Distributed Training GitHub repository*. The script provides the following two functions.
 
 **To back up data to an S3 bucket before patching**
 

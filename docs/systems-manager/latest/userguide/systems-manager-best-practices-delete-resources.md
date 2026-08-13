@@ -7,13 +7,13 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 # Deleting Systems Manager resources and artifacts
 <a name="systems-manager-best-practices-delete-resources"></a>
 
-As a best practice, we recommend that you delete Systems Manager resources and artifacts if you no longer need to view data about those resources or use the artifacts in any way. The following table lists each Systems Manager tool or artifact and a link to more information about deleting the resources or artifacts created by Systems Manager.
+We recommend that you delete Systems Manager resources and artifacts that you no longer need. The following table lists each Systems Manager tool or artifact with a link to more information about deleting those resources.
 
 ****
 
 | Capability or artifact | Details |
 | --- | --- |
-| Application Manager | You can't delete an application in Application Manager, but you can remove an application from the service by deleting the underlying [tags](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_RemoveTagsFromResource.html), [Resource Groups](https://docs.aws.amazon.com/ARG/latest/userguide/deleting-resource-groups.html), or [AWS CloudFormation stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html). |
+| Application Manager | You can't delete an application in Application Manager. However, you can remove an application from the service by deleting the underlying [tags](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_RemoveTagsFromResource.html), [Resource Groups](https://docs.aws.amazon.com/ARG/latest/userguide/deleting-resource-groups.html), or [AWS CloudFormation stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html). |
 | Automation | If you create AWS resources by using Systems Manager Automation, you must manually delete those resources by using the corresponding AWS Management Console. If you created a custom runbook, you can delete the underlying SSM document. For more information, see [Deleting custom SSM documents](deleting-documents.md). |
 | Change Calendar | You can delete a change calendar and a change calendar event. For more information, see [Deleting a change calendar](change-calendar-delete.md) and [Deleting a Change Calendar event](change-calendar-delete-event.md). |
 | Change Manager | You can delete a change template. For more information, see [Deleting change templates](change-templates-delete.md). |

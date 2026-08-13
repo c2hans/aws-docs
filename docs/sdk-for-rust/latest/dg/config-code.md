@@ -65,7 +65,7 @@ let s3_config = aws_sdk_s3::config::Builder::from(&config)
 let s3 = aws_sdk_s3::Client::from_conf(s3_config);
 ```
 
-One way to discover additional methods that are available for a specific type of service client is to use the API documentation, such as for [https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/config/struct.Builder.html](https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/config/struct.Builder.html).
+One way to discover additional methods that are available for a specific type of service client is to use the API documentation, such as for [`aws_sdk_s3::config::Builder`](https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/config/struct.Builder.html).
 
 ## Advanced explicit client configuration
 <a name="configure-a-client-explicitly"></a>

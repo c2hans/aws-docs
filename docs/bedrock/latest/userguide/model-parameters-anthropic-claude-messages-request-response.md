@@ -108,7 +108,7 @@ The 1 million token context length variant of Claude Sonnet 4 is available to yo
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-anthropic-claude-messages-request-response.html)
 +  **top\_p** – (Optional) Use nucleus sampling.
 
-  In nucleus sampling, Anthropic Claude computes the cumulative distribution over all the options for each subsequent token in decreasing probability order and cuts it off once it reaches a particular probability specified by `top_p`. When adjusting sampling parameters, modify either `temperature` or `top_p`. Do not modify both at the same time.
+  In nucleus sampling, Anthropic Claude computes the cumulative distribution over all the options for each subsequent token in decreasing probability order. It cuts off the distribution after it reaches the probability specified by `top_p`. When adjusting sampling parameters, modify either `temperature` or `top_p`. Do not modify both at the same time.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-anthropic-claude-messages-request-response.html)
 +  **top\_k** – (Optional) Only sample from the top K options for each subsequent token.
 

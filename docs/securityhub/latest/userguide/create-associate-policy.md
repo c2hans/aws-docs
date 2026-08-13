@@ -49,7 +49,7 @@ For a list of controls that involve global resources, see [Controls that use glo
 
 **To create and associate configuration policies**
 
-1. Invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateConfigurationPolicy.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateConfigurationPolicy.html) API from the Security Hub CSPM delegated administrator account in the home Region.
+1. Invoke the [CreateConfigurationPolicy](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateConfigurationPolicy.html) API from the Security Hub CSPM delegated administrator account in the home Region.
 
 1. For `Name`, provide a unique name for the configuration policy. Optionally, for `Description`, provide a description for the configuration policy.
 
@@ -61,7 +61,7 @@ For a list of controls that involve global resources, see [Controls that use glo
 
 1. Optionally, for the `SecurityControlCustomParameters` field, specify enabled controls for which you want to customize parameters. Provide `CUSTOM` for the `ValueType` field and the custom parameter value for the `Value` field. The value must be the correct data type and within valid ranges specified by Security Hub CSPM. Only select controls support custom parameter values. For more information, see [Understanding control parameters in Security Hub CSPM](custom-control-parameters.md).
 
-1. To apply your configuration policy to accounts or OUs, invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StartConfigurationPolicyAssociation.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StartConfigurationPolicyAssociation.html) API from the Security Hub CSPM delegated administrator account in the home Region.
+1. To apply your configuration policy to accounts or OUs, invoke the [StartConfigurationPolicyAssociation](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StartConfigurationPolicyAssociation.html) API from the Security Hub CSPM delegated administrator account in the home Region.
 
 1. For the `ConfigurationPolicyIdentifier` field, provide the Amazon Resource Name (ARN) or universally unique identifier (UUID) of the policy. The ARN and UUID are returned by the `CreateConfigurationPolicy` API. For a self-managed configuration, the `ConfigurationPolicyIdentifier` field is equal to `SELF_MANAGED_SECURITY_HUB`.
 
@@ -117,7 +117,7 @@ For a list of controls that involve global resources, see [Controls that use glo
 
 **To create and associate configuration policies**
 
-1. Run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/create-configuration-policy.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/create-configuration-policy.html) command from the Security Hub CSPM delegated administrator account in the home Region.
+1. Run the [create-configuration-policy](https://docs.aws.amazon.com/cli/latest/reference/securityhub/create-configuration-policy.html) command from the Security Hub CSPM delegated administrator account in the home Region.
 
 1. For `name`, provide a unique name for the configuration policy. Optionally, for `description`, provide a description for the configuration policy.
 
@@ -129,7 +129,7 @@ For a list of controls that involve global resources, see [Controls that use glo
 
 1. Optionally, for the `SecurityControlCustomParameters` field, specify enabled controls for which you want to customize parameters. Provide `CUSTOM` for the `ValueType` field and the custom parameter value for the `Value` field. The value must be the correct data type and within valid ranges specified by Security Hub CSPM. Only select controls support custom parameter values. For more information, see [Understanding control parameters in Security Hub CSPM](custom-control-parameters.md).
 
-1. To apply your configuration policy to accounts or OUs, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/start-configuration-policy-association.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/start-configuration-policy-association.html) command from the Security Hub CSPM delegated administrator account in the home Region.
+1. To apply your configuration policy to accounts or OUs, run the [start-configuration-policy-association](https://docs.aws.amazon.com/cli/latest/reference/securityhub/start-configuration-policy-association.html) command from the Security Hub CSPM delegated administrator account in the home Region.
 
 1. For the `configuration-policy-identifier` field, provide the Amazon Resource Name (ARN) or ID of the configuration policy. This ARN and ID are returned by the `create-configuration-policy` command.
 

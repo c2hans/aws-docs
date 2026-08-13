@@ -40,18 +40,18 @@ You can access generative AI-powered post-contact summaries multiple ways:
 
    1. Choose **Real-time and post-call analytics**.
 
-   1. Under **Contact Lens Generative AI capabilities**, choose **Post-contact summary**.
+   1. Under **Generative AI capabilities**, choose **Post-contact summary**.
 
    The following image shows the **Analytics** section of a **Properties** page that is configured to enable post-contact summaries on the agent's CCP:
 ![The properties page of the Set recording and analytics behavior block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/set-block-post-contact-summaries-ccp.png)
 
 1. Assign the following permissions to the agent's security profile:
-   + **Contact Control Panel (CCP) - Contact Lens data - Access**
-   + **Analysis and Optimization - Contact Lens–post-contact summary - View**
+   + **Contact Control Panel (CCP) - conversational analytics data - Access**
+   + **Analysis and Optimization - conversational analytics–post-contact summary - View**
    + **Analysis and Optimization - Recorded conversations (redacted)**, **View Recorded conversations (unredacted)**, **All** or **Access** (least privilege is **Access**, which we recommend)
    + **Analysis and Optimization - Contact transcripts (unredacted)** – **Access**
    + **Analysis and Optimization - View my contacts ** or **Contact Search **
-   + **Analysis and Optimization - Contact Lens - conversational analytics**
+   + **Analysis and Optimization - conversational analytics**
 
 **To enable post-contact summaries on Connect Customer admin website**
 
@@ -67,13 +67,13 @@ You can access generative AI-powered post-contact summaries multiple ways:
 
    1. Granular redaction is not supported for post-contact summary. When granular redaction is selected, post-contact summary redacts all PII identified in text and replaces it with a [PII] tag.
 
-   1. Under **Contact Lens Generative AI capabilities**, choose **Post-contact summary**.
+   1. Under **Generative AI capabilities**, choose **Post-contact summary**.
 
 1. Assign the following permissions to the user's security profile:
    + **Analysis and Optimization - Contact Search** OR **View my contacts**
-   + **Analysis and Optimization - Contact Lens–post-contact summary - View**
+   + **Analysis and Optimization - conversational analytics–post-contact summary - View**
    + **Analysis and Optimization - Recorded conversations (redacted)**, **View Recorded conversations (unredacted)**, **All** or **Access** (least privilege is **Access**, which we recommend)
-   + **Analysis and Optimization - Contact Lens - conversational analytics**
+   + **Analysis and Optimization - conversational analytics**
 
 ## Enable contact summaries for email
 <a name="enable-email-summaries"></a>
@@ -90,7 +90,7 @@ You can access generative AI-powered post-contact summaries multiple ways:
 
    1. Choose **Enable email analytics**.
 
-   1. Under **Contact Lens Generative AI capabilities**, choose **Contact summary**.
+   1. Under **Generative AI capabilities**, choose **Contact summary**.
 
 1. Choose **Save**.
 
@@ -126,7 +126,7 @@ Each contact has no more than one summary generated. Not all contacts will have 
 ## Why a summary is not generated
 <a name="summary-not-generated"></a>
 
-If a summary is not generated, an error message is displayed on the **Contact details** and **Contact search** pages. In addition, the ReasonCode for the error appears in the `ContactSummary` object in the Contact Lens output file, similar to the following example:
+If a summary is not generated, an error message is displayed on the **Contact details** and **Contact search** pages. In addition, the ReasonCode for the error appears in the `ContactSummary` object in the conversational analytics output file, similar to the following example:
 
 ```
 "JobDetails": {
@@ -139,16 +139,16 @@ If a summary is not generated, an error message is displayed on the **Contact de
   },
 ```
 
-Following is a list of error messages that may be displayed on the Contact details or search pages if a summary is not generated. Also listed is the associated reason code that appears in the Contact Lens output file.
+Following is a list of error messages that may be displayed on the Contact details or search pages if a summary is not generated. Also listed is the associated reason code that appears in the conversational analytics output file.
 + **Summary could not be generated due to exceeding quota of concurrent summaries**. ReasonCode: `QUOTA_EXCEEDED`.
 
   If you receive this message, we recommend that you [submit a ticket](https://console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase&limitType=service-code-connect) to increase the [Concurrent post-contact summary jobs](amazon-connect-service-limits.md#contactlens-quotas) quota.
 + **Summary could not be generated due to not enough eligible conversation**. ReasonCode: `INSUFFICIENT_CONVERSATION_CONTENT`.
 
   For voice, there must be 1 utterance from each participant. For chat, there must be 1 message of supported types from each participant. Supported message types are `text/plain` and `text/markdown`. Messages of other types, such as `application/json`, are not used for the summary.
-+ **Contact Flow had invalid Contact Lens configuration for PostContact Summary, such as unsupported or invalid language code**. ReasonCode: `INVALID_ANALYSIS_CONFIGURATION`.
++ **Contact Flow had invalid conversational analytics configuration for PostContact Summary, such as unsupported or invalid language code**. ReasonCode: `INVALID_ANALYSIS_CONFIGURATION`.
 
-  This error is returned if the enabled summary is incompatible with other Contact Lens settings, particularly if it's enabled for an unsupported locale.
+  This error is returned if the enabled summary is incompatible with other conversational analytics settings, particularly if it's enabled for an unsupported locale.
 + **Summary cannot be provided because it failed to satisfy security and quality guardrails**. ReasonCode: `FAILED_SAFETY_GUIDELINES`.
 
   This error can occur in Connect Customer for Concurrent post-contact summary jobs. Connect Customer passes contact data to Amazon Bedrock for summary generation. If the contact data contains unredacted Personally Identifiable Information (PII), Amazon Bedrock's safety guidelines are triggered. As a result, Amazon Bedrock refuses to generate the summary to protect sensitive information, leading to the error in Connect Customer.

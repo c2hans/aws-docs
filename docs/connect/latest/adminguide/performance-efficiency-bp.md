@@ -111,10 +111,10 @@ For situations where you need to gain additional insight from your contact metri
 
 Using Amazon OpenSearch Service and Kibana to process real-time Connect Customer data gives you a flexible way to query and visualize real-time and historical Connect Customer data beyond native reporting capabilities.
 
-### Connect Customer Contact Lens
+### Connect Customer conversational analytics
 <a name="contactlens-bp"></a>
 
-Contact Lens is a set of machine learning (ML) capabilities integrated into Connect Customer that allow contact center supervisors to better understand the sentiment, trends, and compliance risks of customer conversations to effectively train agents, replicate successful interactions, and identify crucial company and product feedback. Contact Lens transcribes contact center calls to create a fully searchable archive and surface valuable customer insights.
+Conversational analytics is a set of machine learning (ML) capabilities integrated into Connect Customer that allow contact center supervisors to better understand the sentiment, trends, and compliance risks of customer conversations to effectively train agents, replicate successful interactions, and identify crucial company and product feedback. Conversational analytics transcribes contact center calls to create a fully searchable archive and surface valuable customer insights.
 
 ## Resources
 <a name="performance-resources-bp"></a>

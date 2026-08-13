@@ -21,7 +21,7 @@ The AWS IoT Core for LoRaWAN ADR algorithm uses the SINR information in the upli
 ## Configure data rate limits (CLI)
 <a name="iot-lorawan-adr-use"></a>
 
-By default, AWS IoT Core for LoRaWAN will perform ADR when you set the ADR bit in the frame header of your LoRaWAN device. You can control the minimum and maximum limits for the data rate when creating a service profile for your LoRaWAN devices using the AWS IoT Wireless API operation [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateServiceProfile.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateServiceProfile.html), or the AWS CLI command, [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-service-profile.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-service-profile.html).
+By default, AWS IoT Core for LoRaWAN will perform ADR when you set the ADR bit in the frame header of your LoRaWAN device. You can control the minimum and maximum limits for the data rate when creating a service profile for your LoRaWAN devices using the AWS IoT Wireless API operation [`CreateServiceProfile`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateServiceProfile.html), or the AWS CLI command, [`create-service-profile`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/create-service-profile.html).
 
 To specify the minimum and maximum limits for the data rate, use the `DrMin` and `DrMax` parameters with the `CreateServiceProfile` API operation. The default minimum and maximum data rate limits are 0 and 15. For example, the following CLI command sets a minimum data rate limit of 3 and a maximum limit of 12.
 
@@ -46,7 +46,7 @@ Running this command generates an ID and an Amazon Resource Name (ARN) for the s
 }
 ```
 
-You can get the values of the parameters specified using the AWS IoT Wireless API operation [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetServiceProfile.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetServiceProfile.html), or the AWS CLI command, [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-service-profile.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-service-profile.html).
+You can get the values of the parameters specified using the AWS IoT Wireless API operation [`GetServiceProfile`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetServiceProfile.html), or the AWS CLI command, [`get-service-profile`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-service-profile.html).
 
 ```
 aws iotwireless get-service-profile --id {{"12345678-a1b2-3c45-67d8-e90fa1b2c34d"}}
@@ -72,4 +72,4 @@ Running this command generates the values for the service profile parameters.
 }
 ```
 
-If you've created multiple profiles, you can use the API operation, [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListServiceProfiles.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListServiceProfiles.html), or the AWS CLI command, [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-service-profiles.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-service-profiles.html) to list the service profiles in your AWS account, and then use the `GetServiceProfile` API or the `get-service-profile` CLI command to retrieve the service profile for which you customized the data rate limits.
+If you've created multiple profiles, you can use the API operation, [`ListServiceProfiles`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListServiceProfiles.html), or the AWS CLI command, [`list-service-profiles`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/list-service-profiles.html) to list the service profiles in your AWS account, and then use the `GetServiceProfile` API or the `get-service-profile` CLI command to retrieve the service profile for which you customized the data rate limits.

@@ -36,7 +36,7 @@ At query time you pass the user's email address (not a group). Bedrock Managed K
 To enable ACL awareness for a SharePoint data source, set `aclEnabled` to `true` in the `connectorParameters` and use the `ENTRA_ID_APP_ONLY` auth type. This auth type uses certificate-based application permissions that allow Bedrock Managed Knowledge Base to crawl identity information and verify document access at query time.
 
 **Important**
-ACL configuration is permanent. You cannot enable ACLs on a data source created without ACL support, and you cannot disable ACLs once enabled.
+ACL configuration is permanent. You cannot enable ACLs on a data source created without ACL support, and you cannot disable ACLs after they are enabled.
 
 Your Entra ID app registration must have the following application permissions:
 + `User.Read.All` and `GroupMember.Read.All` on Microsoft Graph (for identity crawling)

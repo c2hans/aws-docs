@@ -20,7 +20,7 @@ We discuss checksums in two request phases: uploading an object and downloading 
 ## Upload an object
 <a name="use-service-S3-checksum-upload"></a>
 
-You upload objects to Amazon S3 with the SDK for Swift by using the [https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client/putobject(input:)](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client/putobject(input:)) function, setting the `checksumAlgorithm` property in the `PutObjectInput` struct to the desired checksum algorithm.
+You upload objects to Amazon S3 with the SDK for Swift by using the [`putObject(input:)`](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client/putobject(input:)) function, setting the `checksumAlgorithm` property in the `PutObjectInput` struct to the desired checksum algorithm.
 
 The following code snippet shows a request to upload an object with a `SHA256` checksum. When the SDK sends the request, it calculates the `SHA256` checksum and uploads the object. Amazon S3 stores the checksum with the object.
 
@@ -207,7 +207,7 @@ You can also use checksums with multipart uploads.
 ## Download an object
 <a name="use-service-S3-checksum-download"></a>
 
-When you use the [https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client/getobject(input:)](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client/getobject(input:)) method to download an object, the SDK automatically validates the checksum when the `checksumMode` property of the `GetObjectInput` struct is set to `ChecksumMode.enabled`.
+When you use the [`getObject(input:)`](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client/getobject(input:)) method to download an object, the SDK automatically validates the checksum when the `checksumMode` property of the `GetObjectInput` struct is set to `ChecksumMode.enabled`.
 
 The request in the following snippet directs the SDK to validate the checksum in the response by calculating the checksum and comparing the values.
 

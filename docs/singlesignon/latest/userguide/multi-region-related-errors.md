@@ -10,7 +10,7 @@ This topic describes common multi-Region setup related errors you might encounte
 ## The Region I want to replicate my IAM Identity Center instance to is not available in the IAM Identity Center console
 <a name="multi-region-issue-1"></a>
 
-You must first create a replica key for your customer managed KMS key in the Region you want to replicate your IAM Identity Center instance to. Once the replica key is created, you will see the Region in the list of Regions available for replications. For more information, see [Step 1: Create a replica key in the additional Region](replicate-to-additional-region.md#replicate-kms-key).
+You must first create a replica key for your customer managed key in the Region you want to replicate your IAM Identity Center instance to. Once the replica key is created, you will see the Region in the list of Regions available for replications. For more information, see [Step 1: Create a replica key in the additional Region](replicate-to-additional-region.md#replicate-kms-key).
 
 ## AWS managed application sign-in failures in an additional Region
 <a name="multi-region-issue-2"></a>

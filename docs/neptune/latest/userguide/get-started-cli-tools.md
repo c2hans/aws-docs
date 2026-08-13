@@ -10,7 +10,7 @@ You can use the AWS CLI, AWS SDKs, and HTTP tools such as `curl` and `awscurl` t
 ## Using the AWS CLI
 <a name="get-started-cli-tools-cli"></a>
 
-The `aws neptunedata` commands let you run Gremlin and openCypher queries, check engine status, manage bulk loads, and more. For the full command reference, see [https://docs.aws.amazon.com/cli/latest/reference/neptunedata/](https://docs.aws.amazon.com/cli/latest/reference/neptunedata/) in the AWS CLI Command Reference.
+The `aws neptunedata` commands let you run Gremlin and openCypher queries, check engine status, manage bulk loads, and more. For the full command reference, see [neptunedata](https://docs.aws.amazon.com/cli/latest/reference/neptunedata/) in the AWS CLI Command Reference.
 
 The following examples show how to run a basic query:
 

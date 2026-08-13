@@ -48,7 +48,7 @@ The [CCOE](https://aws.amazon.com/blogs/enterprise-strategy/centres-of-excellenc
 
 Look at embedding some or all of the CCOE close to customers, your lines of business. While coordination becomes more challenging, it offers several advantages, including faster internal customer feedback, and the ability to tap into a wider range of resources. It also acts as a forcing function, removing impediments to educate your end customers and reducing stagnation that can afflict teams working in isolation.
 
-See the following guidelines from [https://d1.awsstatic.com/executive-insights/en_US/ebook-leaders-guide-to-cloud-transformation.pdf](https://d1.awsstatic.com/executive-insights/en_US/ebook-leaders-guide-to-cloud-transformation.pdf):
+See the following guidelines from [*A leader’s guide to cloud transformation*](https://d1.awsstatic.com/executive-insights/en_US/ebook-leaders-guide-to-cloud-transformation.pdf):
 +  Identify key business and technology outcomes and make the people who are accountable for those outcomes also be accountable for the delivery of the technology.
 +  Don’t build new technology to fit a legacy process that was designed to manage risk in a very different technological landscape — modernize, optimize, and create new processes that maximize value from the technology.
 +  Engage the broader organization and turn potential blockers into advocates.
@@ -61,7 +61,7 @@ Be honest about where decision-making power resides in your organization. A well
 ## Envision and align - AWS Cloud Adoption Framework (AWS CAF)
 <a name="envision-and-align---the-cloud-adoption-framework-caf"></a>
 
-AWS Professional Services created the [AWS Cloud Adoption Framework](https://aws.amazon.com/professional-services/CAF/) (AWS CAF) to help organizations develop and complete efficient and effective plans for their cloud adoption journey. The guidance and best practices provided by the framework help you build a comprehensive approach to cloud computing across your organization, and throughout your IT lifecycle. For more information, see the [https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html](https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html) whitepaper.
+AWS Professional Services created the [AWS Cloud Adoption Framework](https://aws.amazon.com/professional-services/CAF/) (AWS CAF) to help organizations develop and complete efficient and effective plans for their cloud adoption journey. The guidance and best practices provided by the framework help you build a comprehensive approach to cloud computing across your organization, and throughout your IT lifecycle. For more information, see the [*Overview of the AWS Cloud Adoption Framework*](https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html) whitepaper.
 
 ## Immersion Day Workshops
 <a name="immersion-day-workshops"></a>

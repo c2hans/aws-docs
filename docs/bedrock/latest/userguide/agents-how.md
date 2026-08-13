@@ -38,7 +38,7 @@ An action group consists of an OpenAPI schema and a Lambda function to define wh
 ## Runtime process
 <a name="agents-rt"></a>
 
-Runtime is managed by the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) API operation. This operation starts the agent sequence, which consists of the following three main steps.
+Runtime is managed by the [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) API operation. This operation starts the agent sequence, which consists of the following three main steps.
 
 1. **Pre-processing** – Manages how the agent contextualizes and categorizes user input and can be used to validate input.
 
@@ -48,7 +48,7 @@ Runtime is managed by the [https://docs.aws.amazon.com/bedrock/latest/APIReferen
 
    1. The agent predicts which action in an action group it should invoke or which knowledge base it should query.
 
-   1. If the agent predicts that it needs to invoke an action, the agent sends the parameters, determined from the user prompt, to the [Lambda function configured for the action group](agents-lambda.md) or [returns control](agents-returncontrol.md) by sending the parameters in the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response. If the agent doesn't have enough information to invoke the action, it might do one of the following actions:
+   1. If the agent predicts that it needs to invoke an action, the agent sends the parameters, determined from the user prompt, to the [Lambda function configured for the action group](agents-lambda.md) or [returns control](agents-returncontrol.md) by sending the parameters in the [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response. If the agent doesn't have enough information to invoke the action, it might do one of the following actions:
       + Query an associated knowledge base (**Knowledge base response generation**) to retrieve additional context and summarize the data to augment its generation.
       + Reprompt the user to gather all the required parameters for the action.
 

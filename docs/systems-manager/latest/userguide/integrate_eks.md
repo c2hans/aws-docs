@@ -16,7 +16,7 @@ The ASCP offers two methods of authentication with Amazon EKS The first approach
 ## ASCP with IAM Roles for Service Accounts (IRSA)
 <a name="csi_driver_overview"></a>
 
-The ASCP with IAM Roles for Service Accounts (IRSA) allows you to mount parameters from Parameter Store as files in your Amazon EKS Pods. This approach is suitable when:
+The ASCP with IAM Roles for Service Accounts (IRSA) lets you mount parameters from Parameter Store as files in your Amazon EKS Pods. This approach is suitable when:
 + You need to mount parameters as files in your Pods.
 + You're using Amazon EKS version 1.17 or later with Amazon EC2 node groups.
 + You want to retrieve specific key-value pairs from JSON-formatted parameters.

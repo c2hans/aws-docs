@@ -14,14 +14,14 @@ With the agent workspace you can access all Connect Customer features in a singl
 + Use the Contact Control Panel (CCP) to interact with customer contacts.
 + [Use Customer Profiles](ag-cp-select.md) to view customer information.
 + [Use Cases](search-cases.md) to create, edit, and resolve customer cases.
-+ [Use Connect AI agents](search-for-answers.md) to obtain the information you need from your company knowledge base.
++ [Use Connect Customer agent assist](search-for-answers.md) to obtain the information you need from your company knowledge base.
 
 To access the agent workspace use the following URL:
 + https://{{instance name}}.my.connect.aws/agent-app-v2/
 
 Where {{instance name}} is provided by your IT department or the individuals that set up Connect Customer for your business.
 
-The following image shows the agent workspace with the CCP, Customer Profiles, Cases, and Connect AI agents.
+The following image shows the agent workspace with the CCP, Customer Profiles, Cases, and agent assist.
 
 ![The agent workspace.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ccp-intro-agent-app.png)
 

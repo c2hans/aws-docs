@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/perl.html
 # Perl in AL2023
 <a name="perl"></a>
 
-AL2023 provides version 5.32 of the [https://www.perl.org/](https://www.perl.org/) programming language.
+AL2023 provides version 5.32 of the [Perl](https://www.perl.org/) programming language.
 
-Although Perl has provided a high degree of language compatibility as part of Perl 5 releases over the past decades, Amazon Linux is not expected to move from Perl 5.32 during the AL2023 release. Amazon Linux will continue to security patch Perl for the lifetime of AL2023 in accordance with our [package support statements](https://docs.aws.amazon.com/linux/al2023/release-notes/support-info-by-support-statement.html).
+Although Perl has provided a high degree of language compatibility as part of Perl 5 releases over the past decades, Amazon Linux is not expected to move from Perl 5.32 during the AL2023 release. Amazon Linux will continue to security patch Perl for the lifetime of AL2023 in accordance with our [package support statements](https://docs.aws.amazon.com/linux/al2023/release-notes/all-packages-AL2023.12.html).
 
 ## Perl modules in AL2023
 <a name="perl-modules"></a>

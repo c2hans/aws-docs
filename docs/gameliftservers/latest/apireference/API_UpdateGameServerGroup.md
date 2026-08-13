@@ -12,7 +12,7 @@ Updates Amazon GameLift Servers FleetIQ-specific properties for a game server gr
 To update the game server group, specify the game server group ID and provide the updated values. Before applying the updates, the new values are validated to ensure that Amazon GameLift Servers FleetIQ can continue to perform instance balancing activity. If successful, a `GameServerGroup` object is returned.
 
 **Note**
-Target tracking Auto Scaling policies on the Auto Scaling group cannot be updated through the AWS Management Console. Instead, use the Amazon Elastic Compute Cloud Auto Scaling [https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_PutScalingPolicy.html](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_PutScalingPolicy.html) API action to update these policies.
+Target tracking Auto Scaling policies on the Auto Scaling group cannot be updated through the AWS Management Console. Instead, use the Amazon Elastic Compute Cloud Auto Scaling [`PutScalingPolicy`](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_PutScalingPolicy.html) API action to update these policies.
 
  **Learn more**
 

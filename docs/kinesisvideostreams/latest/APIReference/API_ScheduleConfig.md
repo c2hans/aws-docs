@@ -22,7 +22,7 @@ Required: Yes
 
  ** ScheduleExpression **   <a name="KinesisVideo-Type-ScheduleConfig-ScheduleExpression"></a>
 The Quartz cron expression that takes care of scheduling jobs to record from the camera, or local media file, onto the Edge Agent. If the `ScheduleExpression` is not provided for the `RecorderConfig`, then the Edge Agent will always be set to recording mode.
-For more information about Quartz, refer to the [https://www.quartz-scheduler.org/documentation/quartz-2.3.0/tutorials/crontrigger.html](https://www.quartz-scheduler.org/documentation/quartz-2.3.0/tutorials/crontrigger.html) page to understand the valid expressions and its use.
+For more information about Quartz, refer to the [*Cron Trigger Tutorial*](https://www.quartz-scheduler.org/documentation/quartz-2.3.0/tutorials/crontrigger.html) page to understand the valid expressions and its use.
 Type: String
 Length Constraints: Minimum length of 11. Maximum length of 100.
 Pattern: `[^\n]{11,100}`

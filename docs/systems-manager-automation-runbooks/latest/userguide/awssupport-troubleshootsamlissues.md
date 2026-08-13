@@ -91,7 +91,7 @@ Follow these steps to configure the automation:
 
 1. Before using this runbook, you need to capture and store a Base64-encoded SAML response (txt file) in an S3 bucket. Instructions for capturing SAML responses can be found in [this document](https://docs.aws.amazon.com//IAM/latest/UserGuide/troubleshoot_saml_view-saml-response.html)
 
-1. Navigate to [https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootSAMLIssues/description](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootSAMLIssues/description) in Systems Manager under Documents.
+1. Navigate to [`AWSSupport-TroubleshootSAMLIssues`](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootSAMLIssues/description) in Systems Manager under Documents.
 
 1. Select **Execute automation.**
 

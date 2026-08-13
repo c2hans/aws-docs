@@ -27,7 +27,7 @@ After you create a writeable dataview, you create a scaling group general purpos
 
 This is section shows how you can perform database maintenance on a partitioned database by using a `dbmaint.q` script. The following example explains how you can load the `dbmaint.q` script on a general purpose cluster that runs on a scaling group, add a new column to a table, and finally commit the database to create a changeset.
 
-1. Load the [https://github.com/KxSystems/kdb/blob/master/utils/dbmaint.q](https://github.com/KxSystems/kdb/blob/master/utils/dbmaint.q) script by running the following command. This script contains utility functions for maintenance of partitioned database tables in kdb\+.
+1. Load the [`dbmaint.q`](https://github.com/KxSystems/kdb/blob/master/utils/dbmaint.q) script by running the following command. This script contains utility functions for maintenance of partitioned database tables in kdb\+.
 
    ```
    q) \l /opt/kx/app/code/dbmaint/dbmaint.q

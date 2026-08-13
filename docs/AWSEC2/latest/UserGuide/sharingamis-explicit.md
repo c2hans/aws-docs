@@ -51,7 +51,7 @@ Consider the following when sharing AMIs with specific AWS accounts.
 ------
 #### [ AWS CLI ]
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-image-attribute.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-image-attribute.html) command to share an AMI as shown in the following examples.
+Use the [modify-image-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-image-attribute.html) command to share an AMI as shown in the following examples.
 
 **To grant explicit launch permissions**
 The following example grants launch permissions for the specified AMI to the specified AWS account.
@@ -83,7 +83,7 @@ aws ec2 reset-image-attribute \
 ------
 #### [ PowerShell ]
 
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2ImageAttribute.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2ImageAttribute.html) command (Tools for Windows PowerShell) to share an AMI as shown in the following examples.
+Use the [Edit-EC2ImageAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2ImageAttribute.html) command (Tools for Windows PowerShell) to share an AMI as shown in the following examples.
 
 **To grant explicit launch permissions**
 The following example grants launch permissions for the specified AMI to the specified AWS account.

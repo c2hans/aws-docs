@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/connect-slr-ou
 # Use service-linked roles for outbound campaigns in Connect Customer
 <a name="connect-slr-outbound"></a>
 
-Connect Customer outbound campaigns uses AWS Identity and Access Management service-linked roles. When an Connect Customer instance is enabled to use outbound campaigns, it creates a unique service linked role that allows it to perform actions on the Connect Customer instance.
+Connect Customer outbound campaigns uses AWS Identity and Access Management service-linked roles. When a Connect Customer instance is enabled to use outbound campaigns, it creates a unique service linked role that allows it to perform actions on the Connect Customer instance.
 
 A service-linked role makes setting up outbound campaigns easier because you don't have to manually add the necessary permissions. Outbound campaigns defines the permissions of its service-linked roles, and unless defined otherwise, only outbound campaigns can assume its roles. The defined permissions include the trust policy and the permissions policy, and that permissions policy cannot be attached to any other IAM entity.
 
@@ -41,7 +41,7 @@ The [AmazonConnectCampaignsServiceLinkedRolePolicy](security_iam_awsmanpol.md#am
   + `events:RemoveTargets`
 
   for rules named `ConnectCampaignsRule*` managed by **connect-campaigns.amazonaws.com**, in the same AWS account as the calling principal. The `events:ListTargetsByRule` action is also permitted on `ConnectCampaignsRule*` resources in the same account.
-+ Action: Connect AI agents Message Templates:
++ Action: agent assist Message Templates:
   + `wisdom:GetMessageTemplate`
   + `wisdom:RenderMessageTemplate`
 
@@ -54,7 +54,7 @@ You must configure permissions to allow an IAM entity (such as a user, group, or
 ## Create a service-linked role for outbound campaigns
 <a name="create-slr-outbound"></a>
 
-You don't need to manually create a service-linked role. When you associate an Connect Customer instance with outbound campaigns by invoking the `StartInstanceOnboardingJob` API, outbound campaigns creates the service-linked role for you.
+You don't need to manually create a service-linked role. When you associate a Connect Customer instance with outbound campaigns by invoking the `StartInstanceOnboardingJob` API, outbound campaigns creates the service-linked role for you.
 
 If you delete this service-linked role, and then need to create it again, you can use the same process to recreate the role in your account. When you associate a new Connect Customer instance with outbound campaigns, Connect Customer creates the service-linked role for you again.
 

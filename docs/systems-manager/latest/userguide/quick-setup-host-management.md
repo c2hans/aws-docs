@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/quick-s
 # Set up Amazon EC2 host management using Quick Setup
 <a name="quick-setup-host-management"></a>
 
-Use Quick Setup, a tool in AWS Systems Manager, to quickly configure required security roles and commonly used Systems Manager tools on your Amazon Elastic Compute Cloud (Amazon EC2) instances. You can use Quick Setup in an individual account or across multiple accounts and AWS Regions by integrating with AWS Organizations. These tools help you manage and monitor the health of your instances while providing the minimum required permissions to get started.
+Use Quick Setup to quickly configure required security roles and commonly used Systems Manager tools on your Amazon Elastic Compute Cloud (Amazon EC2) instances. You can use Quick Setup in an individual account or across multiple accounts and AWS Regions by integrating with AWS Organizations. These tools help you manage and monitor the health of your instances while providing the minimum required permissions to get started.
 
 If you're unfamiliar with Systems Manager services and features, we recommend that you review the *AWS Systems Manager User Guide* before creating a configuration with Quick Setup. For more information about Systems Manager, see [What is AWS Systems Manager?](what-is-systems-manager.md).
 
@@ -44,7 +44,7 @@ If you already have one or more configurations in your account, first choose the
 
 **Update Systems Manager (SSM) Agent every two weeks**
 Enables Systems Manager to check every two weeks for a new version of the agent. If there is a new version, then Systems Manager automatically updates the agent on your managed node to the latest released version. Quick Setup doesn't install the agent on instances where it's not already present. For information about which AMIs have SSM Agent preinstalled, see [Find AMIs with the SSM Agent preinstalled](ami-preinstalled-agent.md).
-We encourage you to choose this option to ensure that your nodes are always running the most up-to-date version of SSM Agent. For more information about SSM Agent, including information about how to manually install the agent, see [Working with SSM Agent](ssm-agent.md).
+We encourage you to choose this option to make sure that your nodes are always running the most up-to-date version of SSM Agent. For more information about SSM Agent, including information about how to manually install the agent, see [Working with SSM Agent](ssm-agent.md).
 **Collect inventory from your instances every 30 minutes**
 Enables Quick Setup to configure collection of the following types of metadata:
   + **AWS components** – EC2 driver, agents, versions, and more.
@@ -54,10 +54,10 @@ Enables Quick Setup to configure collection of the following types of metadata:
   + **Services** – Name, display name, status, dependent services, service type, start type, and more (Windows Server nodes only).
   + **Windows roles** – Name, display name, path, feature type, installed state, and more (Windows Server nodes only).
   + **Windows updates** – Hotfix ID, installed by, installed date, and more (Windows Server nodes only).
-For more information about Inventory, a tool in AWS Systems Manager, see [AWS Systems Manager Inventory](systems-manager-inventory.md).
+For more information about Inventory, see [AWS Systems Manager Inventory](systems-manager-inventory.md).
 The **Inventory collection** option can take up to 10 minutes to complete, even if you only selected a few nodes.
 **Scan instances for missing patches daily**
-Enables Patch Manager, a tool in Systems Manager, to scan your nodes daily and generate a report in the **Compliance** page. The report shows how many nodes are patch-compliant according to the *default patch baseline*. The report includes a list of each node and its compliance status.
+Enables Patch Manager to scan your nodes daily and generate a report in the **Compliance** page. The report shows how many nodes are patch-compliant according to the *default patch baseline*. The report includes a list of each node and its compliance status.
 For information about patching operations and patch baselines, see [AWS Systems Manager Patch Manager](patch-manager.md).
 For information about patch compliance, see the Systems Manager [Compliance](https://console.aws.amazon.com/systems-manager/compliance) page.
 For information about patching managed nodes in multiple accounts and Regions in one configuration, see [Patch policy configurations in Quick Setup](patch-manager-policies.md) and [Configure patching for instances in an organization using a Quick Setup patch policy](quick-setup-patch-manager.md).
@@ -69,13 +69,13 @@ Systems Manager supports several methods for scanning managed nodes for patch co
 **Install and configure the CloudWatch agent**
 Installs the basic configuration of the unified CloudWatch agent on your Amazon EC2 instances. The agent collects metrics and log files from your instances for Amazon CloudWatch. This information is consolidated so you can quickly determine the health of your instances. For more information about the CloudWatch agent basic configuration, see [CloudWatch agent predefined metric sets](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-cloudwatch-agent-configuration-file-wizard.html#cloudwatch-agent-preset-metrics). There might be added cost. For more information, see [Amazon CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/).
 **Update the CloudWatch agent once every 30 days**
-Enables Systems Manager to check every 30 days for a new version of the CloudWatch agent. If there is a new version, Systems Manager updates the agent on your instance. We encourage you to choose this option to ensure that your instances are always running the most up-to-date version of the CloudWatch agent.
+Enables Systems Manager to check every 30 days for a new version of the CloudWatch agent. If there is a new version, Systems Manager updates the agent on your instance. We encourage you to choose this option to make sure that your instances are always running the most up-to-date version of the CloudWatch agent.
 
 **To configure Amazon EC2 Launch Agent host management options**
 + To configure Amazon EC2 Launch Agent functionality, in the **Configuration options** section, choose the options in the ** Amazon EC2 Launch Agent** group that you want to enable for your configuration:
 
 **Update the EC2 launch agent once every 30 days**
-Enables Systems Manager to check every 30 days for a new version of the launch agent installed on your instance. If a new version is available, Systems Manager updates the agent on your instance. We encourage you to choose this option to ensure that your instances are always running the most up-to-date version of the applicable launch agent. For Amazon EC2 Windows instances, this option supports EC2Launch, EC2Launch v2, and EC2Config. For Amazon EC2 Linux instances, this option supports `cloud-init`. For Amazon EC2 Mac instances, this option supports `ec2-macos-init`. Quick Setup doesn't support updating launch agents that are installed on operating systems not supported by the launch agent, or on AL2023.
+Enables Systems Manager to check every 30 days for a new version of the launch agent installed on your instance. If a new version is available, Systems Manager updates the agent on your instance. We encourage you to choose this option to make sure that your instances are always running the most up-to-date version of the applicable launch agent. For Amazon EC2 Windows instances, this option supports EC2Launch, EC2Launch v2, and EC2Config. For Amazon EC2 Linux instances, this option supports `cloud-init`. For Amazon EC2 Mac instances, this option supports `ec2-macos-init`. Quick Setup doesn't support updating launch agents that are installed on operating systems not supported by the launch agent, or on AL2023.
 For more information about these initialization agents see the following topics:
   +  [Configure a Windows instance using EC2Launch v2](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2launch-v2.html)
   +  [Configure a Windows instance using EC2Launch](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2launch.html)

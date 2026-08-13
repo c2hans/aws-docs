@@ -25,7 +25,7 @@ To learn how to view information about an agent, choose the tab for your preferr
 ------
 #### [ API ]
 
-To get information about an agent, send a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetAgent.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt) and specify the `agentId`.
+To get information about an agent, send a [GetAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetAgent.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt) and specify the `agentId`.
 
 ```
     def get_agent(self, agent_id, log_error=True):

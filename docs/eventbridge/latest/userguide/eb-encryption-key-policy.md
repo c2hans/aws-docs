@@ -10,13 +10,13 @@ If you use a customer managed key in your account to protect your EventBridge re
 EventBridge does not need additional authorization to use the default AWS owned key to protect the EventBridge resources in your AWS account.
 
 EventBridge requires the following permissions to use customer managed keys:
-+ [https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html)
++ [`kms:DescribeKey`](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html)
 
   EventBridge requires this permission to retrieve the KMS key ARN for the Key Id provided, and to verify that the key is symmetric.
-+ [https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html)
++ [`kms:GenerateDataKey`](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html)
 
   EventBridge requires this permission to generate a data key as the encryption key for the data.
-+ [https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html)
++ [`kms:Decrypt`](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html)
 
   EventBridge requires this permission to decrypt the data key that is encrypted and stored with the encrypted data.
 

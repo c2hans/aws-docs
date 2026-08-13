@@ -11,13 +11,13 @@ This reference provides descriptions of the AWS Marketplace Metering Service API
 
  **Submitting metering records**
 
-[https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-metering_MeterUsage.html](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-metering_MeterUsage.html)
+[*MeterUsage*](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-metering_MeterUsage.html)
 + Submits the metering record for an AWS Marketplace product
 + Called from: Amazon Elastic Compute Cloud (Amazon EC2) instance or a container running on either Amazon Elastic Kubernetes Service (Amazon EKS) or Amazon Elastic Container Service (Amazon ECS)
 + Supported product types: Amazon Machine Images (AMIs) and containers
 + Vendor-metered tagging: supported allocation tagging
 
-[https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-metering_BatchMeterUsage.html](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-metering_BatchMeterUsage.html)
+[*BatchMeterUsage*](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-metering_BatchMeterUsage.html)
 + Submits the metering record for a set of customers. AWS CloudTrail captures `BatchMeterUsage` API calls. Use CloudTrail to verify that the software as a subscription (SaaS) metering records that you sent are accurate by searching for records using the `eventName` of `BatchMeterUsage`. You can also use CloudTrail to audit records over time. For more information, see [CloudTrail concepts](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.html).
 + Called from: SaaS applications
 + Supported product type: SaaS
@@ -25,7 +25,7 @@ This reference provides descriptions of the AWS Marketplace Metering Service API
 
  **Accepting new customers**
 
-[https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-metering_ResolveCustomer.html](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-metering_ResolveCustomer.html)
+[*ResolveCustomer*](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-metering_ResolveCustomer.html)
 + Resolves the registration token that the buyer submits through the browser during the registration process. Obtains a `CustomerIdentifier` along with the `CustomerAWSAccountId` and `ProductCode`.
 + Called from: SaaS application during the registration process
 + Supported product type: SaaS
@@ -33,7 +33,7 @@ This reference provides descriptions of the AWS Marketplace Metering Service API
 
  **Entitlement and metering for paid container products**
 
-[https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-metering_RegisterUsage.html](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-metering_RegisterUsage.html)
+[*RegisteredUsage*](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-metering_RegisterUsage.html)
 + Provides software entitlement and metering. Paid container software products sold through AWS Marketplace must integrate with the AWS Marketplace Metering Service and call the `RegisterUsage` operation. Free and Bring Your Own License model (BYOL) products for Amazon ECS or Amazon EKS aren't required to call `RegisterUsage`. However, you can do so if you want to receive usage data in your seller reports. For more information about using the `RegisterUsage` operation, see [Container-based products on AWS Marketplace](https://docs.aws.amazon.com/marketplace/latest/userguide/container-based-products.html).
 + Called from: paid container software products
 + Supported product type: containers

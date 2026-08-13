@@ -24,7 +24,7 @@ Common examples include e-commerce inventory updates, collaborative editing plat
 In high-concurrency environments, the likelihood of conflicts increases, potentially causing higher retries and write costs.
 
 **Implementation complexity**
-Adding version control to items and handling conditional checks adds complexity to the application logic. The AWS SDK for Java v2 Enhanced Client provides built-in support through the [https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-en-client-extensions.html#ddb-en-client-extensions-VRE](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-en-client-extensions.html#ddb-en-client-extensions-VRE) annotation, which automatically manages version numbers for you.
+Adding version control to items and handling conditional checks adds complexity to the application logic. The AWS SDK for Java v2 Enhanced Client provides built-in support through the [`@DynamoDbVersionAttribute`](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-en-client-extensions.html#ddb-en-client-extensions-VRE) annotation, which automatically manages version numbers for you.
 
 ## Pattern design
 <a name="BestPractices_OptimisticLocking_PatternDesign"></a>
@@ -100,6 +100,6 @@ To implement optimistic locking, follow these steps:
        raise Exception("Update failed after maximum retries.")
    ```
 
-For Java applications, the AWS SDK for Java v2 Enhanced Client provides built-in optimistic locking support through the [https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-en-client-extensions.html#ddb-en-client-extensions-VRE](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-en-client-extensions.html#ddb-en-client-extensions-VRE) annotation, which automatically manages version numbers for you.
+For Java applications, the AWS SDK for Java v2 Enhanced Client provides built-in optimistic locking support through the [`@DynamoDbVersionAttribute`](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-en-client-extensions.html#ddb-en-client-extensions-VRE) annotation, which automatically manages version numbers for you.
 
 For more information about condition expressions, see [DynamoDB condition expression CLI example](Expressions.ConditionExpressions.md).

@@ -19,11 +19,11 @@ The following list of Amazon Lightsail platforms and blueprints links to each ve
 **Linux and Unix** – Operating system only
 + [Amazon Linux 2023](https://aws.amazon.com/linux/amazon-linux-2023/)
 + [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2)
-+ [https://ubuntu.com/support/community-support](https://ubuntu.com/support/community-support)
-+ [https://www.debian.org/support](https://www.debian.org/support)
-+ [https://www.freebsd.org/community](https://www.freebsd.org/community)
-+ [https://en.opensuse.org/](https://en.opensuse.org/)
-+ [https://docs.centos.org/](https://docs.centos.org/)
++ [Ubuntu](https://ubuntu.com/support/community-support)
++ [Debian](https://www.debian.org/support)
++ [FreeBSD](https://www.freebsd.org/community)
++ [openSUSE](https://en.opensuse.org/)
++ [CentOS](https://docs.centos.org/)
 
 **Linux and Unix** – Operating system plus application
 + [Plesk Hosting Stack on Ubuntu](https://support.plesk.com/)

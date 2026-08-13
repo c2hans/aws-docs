@@ -280,7 +280,7 @@ Read more about this [example](https://docs.aws.amazon.com/AmazonS3/latest/userg
 ## Use an `IamPolicy` with IAM
 <a name="iam-policy-builder-work-with-service"></a>
 
-After you have created a `IamPolicy` instance, you use an [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/iam/IamClient.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/iam/IamClient.html) to work with the IAM service.
+After you have created a `IamPolicy` instance, you use an [`IamClient`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/iam/IamClient.html) to work with the IAM service.
 
 The following example builds a policy that allows an [IAM identity](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html) to write items to a DynamoDB table in the account that is specified with the `accountID` parameter. The policy is then uploaded to IAM as a JSON string.
 

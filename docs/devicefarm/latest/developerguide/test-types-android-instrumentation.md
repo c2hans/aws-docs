@@ -48,7 +48,7 @@ When given an Android instrumentation .apk file as input, the parser returns the
 
 To test this in a local environment:
 
-1. Download the [https://github.com/linkedin/dex-test-parser](https://github.com/linkedin/dex-test-parser) binary.
+1. Download the [`dex-test-parser`](https://github.com/linkedin/dex-test-parser) binary.
 
 1. Run the following command to get the list of test methods that will run on Device Farm:
 

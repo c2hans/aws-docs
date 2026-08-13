@@ -266,6 +266,6 @@ It is best to leave the rule disabled until you finish building out the workflow
    The workflow is now ready to be started by an EventBridge event or event batch.
 
 **See also**
-[https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html](https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html)
+[*Amazon EventBridge User Guide*](https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html)
 [Overview of workflows in AWS Glue](workflows_overview.md)
 [Creating and building out a workflow manually in AWS Glue](creating_running_workflows.md)

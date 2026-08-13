@@ -11,7 +11,7 @@ Amazon SNS uses message signatures to confirm the authenticity of messages sent 
 
 You should verify Amazon SNS message signatures in the following scenarios:
 + When Amazon SNS sends a notification message to your HTTP(S) endpoint.
-+ When Amazon SNS sends a confirmation message to your endpoint after a [https://docs.aws.amazon.com/sns/latest/api/API_Subscribe.html](https://docs.aws.amazon.com/sns/latest/api/API_Subscribe.html) or [https://docs.aws.amazon.com/sns/latest/api/API_Unsubscribe.html](https://docs.aws.amazon.com/sns/latest/api/API_Unsubscribe.html) API call.
++ When Amazon SNS sends a confirmation message to your endpoint after a [`Subscribe`](https://docs.aws.amazon.com/sns/latest/api/API_Subscribe.html) or [`Unsubscribe`](https://docs.aws.amazon.com/sns/latest/api/API_Unsubscribe.html) API call.
 
 **Amazon SNS supports two signature versions:**
 + SignatureVersion1 – Uses an SHA1 hash of the message.

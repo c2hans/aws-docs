@@ -21,6 +21,8 @@ AWS checks each policy that applies to the context of the request. If a single p
 
 After your request has been authenticated and authorized, AWS approves the request. If you need to make a request in a different account, a policy in the other account must allow you to access the resource. In addition, the IAM entity that you use to make the request must have an identity-based policy that allows the request.
 
+You can also use [IAM temporary delegation](access_policies-temporary-delegation.md) to grant Amazon and AWS Partners limited, time-bounded access to configure AWS services in your account.
+
 ## Access management resources
 <a name="access_resources"></a>
 

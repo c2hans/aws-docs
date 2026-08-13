@@ -106,7 +106,7 @@ For more information, see [Example spans in split telemetry](#llamaindex-example
 
 With unified telemetry, the same content stays on the span as attributes. The attributes depend on the instrumentation library:
 +  **OpenTelemetry**: the content is on the `traceloop.entity.input` and `traceloop.entity.output` attributes of each span. AgentCore Evaluations applies the same chat-history, result, and tool unwrapping to these values.
-+  **OpenInference**: the inference content is on the indexed message attributes (`0` and `1`). Tool arguments come from `input.value` (unwrapped from `{"kwargs": {…​}}`) and the tool result from `output.value` (unwrapped from `{"blocks": […​]}`).
++  **OpenInference**: the inference content is on the indexed message attributes (`llm.input_messages.*` and `llm.output_messages.*`). Tool arguments come from `input.value` (unwrapped from `{"kwargs": {…​}}`) and the tool result from `output.value` (unwrapped from `{"blocks": […​]}`).
 
 For more information, see [Example spans in unified telemetry](#llamaindex-examples-unified).
 
@@ -464,7 +464,7 @@ The `input.value` attribute holds the tool arguments (wrapped in `kwargs`), and 
   }
 }
 ```
-The message content is inline on the indexed attributes. The `0` attributes hold the system prompt and user prompt, and the `1` attributes hold the model output, from which AgentCore Evaluations extracts the text after `Answer:` as the agent response.
+The message content is inline on the indexed attributes. The `llm.input_messages.*` attributes hold the system prompt and user prompt, and the `llm.output_messages.*` attributes hold the model output, from which AgentCore Evaluations extracts the text after `Answer:` as the agent response.
 
 ```
 {

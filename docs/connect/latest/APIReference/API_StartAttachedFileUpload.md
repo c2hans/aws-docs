@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StartAtt
 Provides a pre-signed Amazon S3 URL in response for uploading your content.
 
 **Important**
-You may only use this API to upload attachments to an [Connect Customer Case](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_CreateCase.html) or [Connect Customer Email](https://docs.aws.amazon.com/connect/latest/adminguide/setup-email-channel.html).
+You may only use this API to upload attachments to a [Connect Customer Case](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_CreateCase.html), [Connect Customer Email](https://docs.aws.amazon.com/connect/latest/adminguide/setup-email-channel.html), or [Connect Customer Task](https://docs.aws.amazon.com/connect/latest/adminguide/concepts-getting-started-tasks.html).
 
 ## Request Syntax
 <a name="API_StartAttachedFileUpload_RequestSyntax"></a>
@@ -36,7 +36,7 @@ Content-type: application/json
 The request uses the following URI parameters.
 
  ** [AssociatedResourceArn](#API_StartAttachedFileUpload_RequestSyntax) **   <a name="connect-StartAttachedFileUpload-request-uri-AssociatedResourceArn"></a>
-The resource to which the attached file is (being) uploaded to. The supported resources are [Cases](https://docs.aws.amazon.com/connect/latest/adminguide/cases.html) and [Email](https://docs.aws.amazon.com/connect/latest/adminguide/setup-email-channel.html).
+The resource to which the attached file is (being) uploaded to. The supported resources are [Cases](https://docs.aws.amazon.com/connect/latest/adminguide/cases.html), [Email](https://docs.aws.amazon.com/connect/latest/adminguide/setup-email-channel.html), and [Task](https://docs.aws.amazon.com/connect/latest/adminguide/concepts-getting-started-tasks.html).
 This value must be a valid ARN.
 Required: Yes
 

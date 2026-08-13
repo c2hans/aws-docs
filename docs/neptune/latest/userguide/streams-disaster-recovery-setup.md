@@ -15,7 +15,7 @@ You can use Neptune management APIs such as the following to gather that informa
 + [`DescribeDBInstances`](api-instances.md#DescribeDBInstances)
 + [`DescribeDBClusterParameters`](api-parameters.md#DescribeDBClusterParameters)
 + [`DescribeDBParameters`](api-parameters.md#DescribeDBParameters)
-+ [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcs.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcs.html)
++ [`DescribeVpcs`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcs.html)
 
 With the information you gather, you can use the following procedure to set up a backup cluster in a different region, to which your production cluster can fail over in the event of a failure.
 
@@ -35,7 +35,7 @@ You can use an existing VPC in the target region as long as it meets the followi
 + It does not have a CIDR block that overlaps with the CIDR block of the VPC where your primary cluster is located.
 + It is not already peered with another VPC that has the same CIDR block as the VPC where your primary cluster is located.
 
-If there is no suitable VPC available in the target region, create one using the Amazon EC2 [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpc.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpc.html) API.
+If there is no suitable VPC available in the target region, create one using the Amazon EC2 [`CreateVpc`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpc.html) API.
 
 ## Create a snapshot of your primary cluster and restore it to the target backup region
 <a name="streams-disaster-recovery-setup-snapshot-restore"></a>
@@ -61,13 +61,13 @@ Now you create a new Neptune cluster in an appropriate VPC in the target backup 
 
 By setting up VPC peering, you enable your primary cluster's VPC to communicate with your backup cluster's VPC as if they are a single private network. To do this, take the following steps:
 
-1. From your production cluster's VPC, call the [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/CreateVpcPeeringConnection.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/CreateVpcPeeringConnection.html) API to establish the peering connection.
+1. From your production cluster's VPC, call the [`CreateVpcPeeringConnection`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/CreateVpcPeeringConnection.html) API to establish the peering connection.
 
-1. From your target backup cluster's VPC, call the [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/AcceptVpcPeeringConnection.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/AcceptVpcPeeringConnection.html) API to accept the peering connection.
+1. From your target backup cluster's VPC, call the [`AcceptVpcPeeringConnection`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/AcceptVpcPeeringConnection.html) API to accept the peering connection.
 
-1. From your production cluster's VPC, use the [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/CreateRoute.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/CreateRoute.html) API to add a route to the VPC's route table that redirects all traffic to the target VPC's CIDR block so that it uses the VPC peering prefix list.
+1. From your production cluster's VPC, use the [`CreateRoute`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/CreateRoute.html) API to add a route to the VPC's route table that redirects all traffic to the target VPC's CIDR block so that it uses the VPC peering prefix list.
 
-1. Similarly, from your target backup cluster's VPC, use the [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/CreateRoute.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/CreateRoute.html) API to add a route to the VPC's route table that routes traffic to the primary cluster's VPC.
+1. Similarly, from your target backup cluster's VPC, use the [`CreateRoute`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/CreateRoute.html) API to add a route to the VPC's route table that routes traffic to the primary cluster's VPC.
 
 ## Set up the Neptune streams replication infrastructure
 <a name="streams-disaster-recovery-setup-streams-replication"></a>

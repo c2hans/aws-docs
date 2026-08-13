@@ -20,7 +20,7 @@ You can list your current Amazon RDS event notification subscriptions.
 ## AWS CLI
 <a name="USER_Events.ListSubscription.CLI"></a>
 
-To list your current Amazon RDS event notification subscriptions, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-event-subscriptions.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-event-subscriptions.html) command.
+To list your current Amazon RDS event notification subscriptions, use the AWS CLI [`describe-event-subscriptions`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-event-subscriptions.html) command.
 
 **Example**
 The following example describes all event subscriptions.
@@ -37,4 +37,4 @@ aws rds describe-event-subscriptions --subscription-name {{myfirsteventsubscript
 ## API
 <a name="USER_Events.ListSubscription.API"></a>
 
-To list your current Amazon RDS event notification subscriptions, call the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeEventSubscriptions.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeEventSubscriptions.html) action.
+To list your current Amazon RDS event notification subscriptions, call the Amazon RDS API [`DescribeEventSubscriptions`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeEventSubscriptions.html) action.

@@ -82,7 +82,7 @@ The ID of the user pool that contains the group that you want to add the user to
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a generated ID, such as `UserToGroupAttachment-YejJvzrEXAMPLE`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-cognito-userpoolusertogroupattachment--examples"></a>

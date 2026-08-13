@@ -136,7 +136,7 @@ LIMIT 10;
 ## Encryption for AWS managed table buckets
 <a name="aws-managed-buckets-encryption"></a>
 
-By default, AWS managed table buckets are encrypted with server-side encryption using Amazon S3 managed keys (SSE-S3). After your AWS managed table bucket is created, you can use [https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_PutTableBucketEncryption.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_PutTableBucketEncryption.html) to set the bucket's default encryption setting to use server-side encryption with AWS Key Management Service (AWS KMS) keys (SSE-KMS).
+By default, AWS managed table buckets are encrypted with server-side encryption using Amazon S3 managed keys (SSE-S3). After your AWS managed table bucket is created, you can use [PutTableBucketEncryption](https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_PutTableBucketEncryption.html) to set the bucket's default encryption setting to use server-side encryption with AWS Key Management Service (AWS KMS) keys (SSE-KMS).
 
 During creation of your AWS managed tables, you can choose to encrypt them with SSE-KMS. If you choose to use SSE-KMS, you must provide a customer managed KMS key in the same Region as your AWS managed table bucket. You can set the encryption type for your AWS managed tables only during table creation. After an AWS managed table is created, you can't change its encryption setting.
 

@@ -10,7 +10,7 @@ If you share an AMI that is backed by encrypted snapshots, you must also allow t
 **Note**
 The encrypted snapshots must be encrypted with a *customer managed* key. You can’t share AMIs that are backed by snapshots that are encrypted with the default AWS managed key.
 
-To control access to the KMS key, in the [key policy](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html) you can use the [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalorgid](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalorgid) and [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalorgpaths](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalorgpaths) condition keys to allow only specific principals permission to the specified actions. A principal can be a user, IAM role, federated user, or AWS account root user.
+To control access to the KMS key, in the [key policy](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html) you can use the [`aws:PrincipalOrgID`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalorgid) and [`aws:PrincipalOrgPaths`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalorgpaths) condition keys to allow only specific principals permission to the specified actions. A principal can be a user, IAM role, federated user, or AWS account root user.
 
 The condition keys are used as follows:
 + `aws:PrincipalOrgID` – Allows any principal belonging to the organization represented by the specified ID.
@@ -74,6 +74,6 @@ To give specific OUs (and the accounts that belong to it) permission to use a KM
 }
 ```
 
-For more example condition statements, see [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalorgid](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalorgid) and [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalorgpaths](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalorgpaths) in the *IAM User Guide*.
+For more example condition statements, see [aws:PrincipalOrgID](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalorgid) and [aws:PrincipalOrgPaths](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalorgpaths) in the *IAM User Guide*.
 
 For information about cross-account access, see [Allowing users in other accounts to use a KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html) in the *AWS Key Management Service Developer Guide*.

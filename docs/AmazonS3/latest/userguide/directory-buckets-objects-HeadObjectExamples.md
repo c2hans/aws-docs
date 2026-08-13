@@ -41,7 +41,7 @@ The following `head-object` example command shows how you can use the AWS CLI to
 aws s3api head-object --bucket {{bucket-base-name}}--{{zone-id}}--x-s3 --key {{KEY_NAME}}
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/head-object.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/head-object.html) in the *AWS CLI Command Reference*.
+For more information, see [head-object](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/head-object.html) in the *AWS CLI Command Reference*.
 
 The following `get-object-attributes` example command shows how you can use the AWS CLI to retrieve metadata from an object. To run this command, replace the `{{user input placeholders}}` with your own information.
 
@@ -49,4 +49,4 @@ The following `get-object-attributes` example command shows how you can use the 
 aws s3api get-object-attributes --bucket {{bucket-base-name}}--{{zone-id}}--x-s3 --key {{KEY_NAME}} --object-attributes "StorageClass" "ETag" "ObjectSize"
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object-attributes.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object-attributes.html) in the *AWS CLI Command Reference*.
+For more information, see [get-object-attributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object-attributes.html) in the *AWS CLI Command Reference*.

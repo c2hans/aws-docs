@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Description](#cfn-glue-workflow-description)" : {{String}},
       "[MaxConcurrentRuns](#cfn-glue-workflow-maxconcurrentruns)" : {{Integer}},
       "[Name](#cfn-glue-workflow-name)" : {{String}},
-      "[Tags](#cfn-glue-workflow-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}}
+      "[Tags](#cfn-glue-workflow-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}}
     }
 }
 ```
@@ -41,7 +41,7 @@ Properties:
   [MaxConcurrentRuns](#cfn-glue-workflow-maxconcurrentruns): {{Integer}}
   [Name](#cfn-glue-workflow-name): {{String}}
   [Tags](#cfn-glue-workflow-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
 ```
 
 ## Properties
@@ -74,7 +74,7 @@ The name of the workflow representing the flow
 `Tags`  <a name="cfn-glue-workflow-tags"></a>
 The tags to use with this workflow.
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
@@ -85,4 +85,4 @@ The tags to use with this workflow.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the workflow name.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).

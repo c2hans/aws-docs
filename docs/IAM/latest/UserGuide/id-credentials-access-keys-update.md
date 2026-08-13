@@ -82,24 +82,24 @@ You can update access keys from the AWS Command Line Interface.
 **To update access keys without interrupting your applications (AWS CLI)**
 
 1. While the first access key is still active, create a second access key, which is active by default. Run the following command:
-   + [https://docs.aws.amazon.com/cli/latest/reference/iam/create-access-key.html](https://docs.aws.amazon.com/cli/latest/reference/iam/create-access-key.html)
+   + [`aws iam create-access-key`](https://docs.aws.amazon.com/cli/latest/reference/iam/create-access-key.html)
 
      At this point, the user has two active access keys.
 
 1. <a name="step-update-apps"></a>Update all applications and tools to use the new access key.
 
 1. <a name="step-determine-use"></a>Determine whether the first access key is still in use by using this command:
-   +  [https://docs.aws.amazon.com/cli/latest/reference/iam/get-access-key-last-used.html](https://docs.aws.amazon.com/cli/latest/reference/iam/get-access-key-last-used.html)
+   +  [`aws iam get-access-key-last-used`](https://docs.aws.amazon.com/cli/latest/reference/iam/get-access-key-last-used.html)
 
    One approach is to wait several days and then check the old access key for any use before proceeding.
 
 1. Even if step [Step 3](#step-determine-use) indicates no use of the old key, we recommend that you do not immediately delete the first access key. Instead, change the state of the first access key to `Inactive` using this command:
-   +  [https://docs.aws.amazon.com/cli/latest/reference/iam/update-access-key.html](https://docs.aws.amazon.com/cli/latest/reference/iam/update-access-key.html)
+   +  [`aws iam update-access-key`](https://docs.aws.amazon.com/cli/latest/reference/iam/update-access-key.html)
 
 1. Use only the new access key to confirm that your applications are working. Any applications and tools that still use the original access key will stop working at this point because they no longer have access to AWS resources. If you find such an application or tool, you can switch its state back to `Active` to reactivate the first access key. Then return to step [Step 2](#step-update-apps) and update this application to use the new key.
 
 1. After you wait some period of time to ensure that all applications and tools have been updated, you can delete the first access key with this command:
-   + [https://docs.aws.amazon.com/cli/latest/reference/iam/delete-access-key.html](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-access-key.html)
+   + [`aws iam delete-access-key`](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-access-key.html)
 
 ## Updating access keys (AWS API)
 <a name="rotating_access_keys_api"></a>
@@ -109,21 +109,21 @@ You can update access keys using the AWS API.
 **To update access keys without interrupting your applications (AWS API)**
 
 1. While the first access key is still active, create a second access key, which is active by default. Call the following operation:
-   + [https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateAccessKey.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateAccessKey.html)
+   + [`CreateAccessKey`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateAccessKey.html)
 
      At this point, the user has two active access keys.
 
 1. <a name="step-update-apps-2"></a>Update all applications and tools to use the new access key.
 
 1. <a name="step-determine-use-2"></a>Determine whether the first access key is still in use by calling this operation:
-   + [https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccessKeyLastUsed.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccessKeyLastUsed.html)
+   + [`GetAccessKeyLastUsed`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccessKeyLastUsed.html)
 
    One approach is to wait several days and then check the old access key for any use before proceeding.
 
 1. Even if step [Step 3](#step-determine-use-2) indicates no use of the old key, we recommend that you do not immediately delete the first access key. Instead, change the state of the first access key to `Inactive` by calling this operation:
-   + [https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccessKey.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccessKey.html)
+   + [`UpdateAccessKey`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccessKey.html)
 
 1. Use only the new access key to confirm that your applications are working. Any applications and tools that still use the original access key will stop working at this point because they no longer have access to AWS resources. If you find such an application or tool, you can switch its state back to `Active` to reactivate the first access key. Then return to step [Step 2](#step-update-apps-2) and update this application to use the new key.
 
 1. After you wait some period of time to ensure that all applications and tools have been updated, you can delete the first access key by calling this operation:
-   + [https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteAccessKey.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteAccessKey.html)
+   + [`DeleteAccessKey`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteAccessKey.html)

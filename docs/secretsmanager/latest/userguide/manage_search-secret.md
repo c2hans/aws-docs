@@ -51,14 +51,14 @@ Matches the beginning of tag values; case-sensitive. For example, **Tag value:**
 <a name="manage_search-secret_cli"></a>
 
 **Example List the secrets in your account**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/list-secrets.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/list-secrets.html) example gets a list of the secrets in your account.
+The following [`list-secrets`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/list-secrets.html) example gets a list of the secrets in your account.
 
 ```
 aws secretsmanager list-secrets
 ```
 
 **Example Filter the list of secrets in your account**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/list-secrets.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/list-secrets.html) example gets a list of the secrets in your account that have **Test** in the name. Filtering by name is case sensitive.
+The following [`list-secrets`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/list-secrets.html) example gets a list of the secrets in your account that have **Test** in the name. Filtering by name is case sensitive.
 
 ```
 aws secretsmanager list-secrets \
@@ -66,7 +66,7 @@ aws secretsmanager list-secrets \
 ```
 
 **Example Find secrets that are managed by other AWS services**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/list-secrets.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/list-secrets.html) example gets a list of secrets managed by a service. You specify the service by ID. For more information, see [Secrets managed by other services](service-linked-secrets.md).
+The following [`list-secrets`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/list-secrets.html) example gets a list of secrets managed by a service. You specify the service by ID. For more information, see [Secrets managed by other services](service-linked-secrets.md).
 
 ```
 aws secretsmanager list-secrets \
@@ -76,4 +76,4 @@ aws secretsmanager list-secrets \
 ## AWS SDK
 <a name="manage_search-secret_sdk"></a>
 
-To find secrets by using one of the AWS SDKs, use [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_ListSecrets.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_ListSecrets.html). For more information, see [AWS SDKs](asm_access.md#asm-sdks).
+To find secrets by using one of the AWS SDKs, use [`ListSecrets`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_ListSecrets.html). For more information, see [AWS SDKs](asm_access.md#asm-sdks).

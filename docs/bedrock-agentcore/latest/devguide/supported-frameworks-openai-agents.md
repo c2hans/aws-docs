@@ -111,7 +111,7 @@ With unified telemetry, the same content stays on the span as attributes. The at
   +  **User prompt** and **agent response**: from `gen_ai.input.messages` and `gen_ai.output.messages` on the invoke agent span.
   +  **Tool call**: the tool name from `gen_ai.tool.name`, and the arguments and result from `gen_ai.tool.call.arguments` and `gen_ai.tool.call.result`, on the execute tool span.
 +  **OpenInference**:
-  +  **User prompt** and **agent response**: from the indexed message attributes on the inference span (`0` and `1`), then backfilled onto the empty invoke agent span.
+  +  **User prompt** and **agent response**: from the indexed message attributes on the inference span (`llm.input_messages.*` and `llm.output_messages.*`), then backfilled onto the empty invoke agent span.
   +  **Tool call**: the tool name from `tool.name`, and the arguments and result from `input.value` and `output.value`, on the execute tool span.
 
 For more information, see [Example spans in unified telemetry](#openai-agents-examples-unified).
@@ -509,7 +509,7 @@ The `input.value` attribute holds the tool arguments, and the `output.value` att
   }
 }
 ```
-The message content is inline on the indexed attributes. The `0` attributes hold the system prompt and user prompt, and the `1` attributes hold the agent response. AgentCore Evaluations reconstructs the user prompt and agent response from this span and backfills the empty invoke agent (`AGENT`) span.
+The message content is inline on the indexed attributes. The `llm.input_messages.*` attributes hold the system prompt and user prompt, and the `llm.output_messages.*` attributes hold the agent response. AgentCore Evaluations reconstructs the user prompt and agent response from this span and backfills the empty invoke agent (`AGENT`) span.
 
 ```
 {

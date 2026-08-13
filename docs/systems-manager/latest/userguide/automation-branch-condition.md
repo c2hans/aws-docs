@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 <a name="automation-branch-condition"></a>
 
 By default, the steps that you define in the `mainSteps` section of a runbook run in sequential order. After one action is completed, the next action specified in the `mainSteps` section begins. Furthermore, if an action fails to run, the entire automation fails (by default). You can use the `aws:branch` automation action and the runbook options described in this section to create automations that perform *conditional branching*. This means that you can create automations that jump to a different step after evaluating different choices or that dynamically respond to changes when a step is complete. Here is a list of options that you can use to create dynamic automations:
-+ **`aws:branch`**: This automation action allows you to create a dynamic automation that evaluates multiple choices in a single step and then jumps to a different step in the runbook based on the results of that evaluation.
++ **`aws:branch`**: This automation action lets you create a dynamic automation that evaluates multiple choices in a single step and then jumps to a different step in the runbook based on the results of that evaluation.
 + **`nextStep`**: This option specifies which step in an automation to process next after successfully completing a step.
 + **`isEnd`**: This option stops an automation at the end of a specific step. The default value for this option is false.
 + **`isCritical`**: This option designates a step as critical for the successful completion of the automation. If a step with this designation fails, then Automation reports the final status of the automation as `Failed`. The default value for this option is `true`.

@@ -47,6 +47,6 @@ sagemaker_client.create_endpoint_config(
 sagemaker_client.create_endpoint(EndpointName=endpoint_name, EndpointConfigName=endpoint_config_name)
 ```
 
- For more information about the keys for `ProductionVariants`, see [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ProductionVariant.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ProductionVariant.html).
+ For more information about the keys for `ProductionVariants`, see [`ProductionVariant`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ProductionVariant.html).
 
 For examples that demonstrate how to achieve low latency inference with large models, see [ Generative AI Inference Examples on Amazon SageMaker AI](https://github.com/aws-samples/sagemaker-genai-hosting-examples/tree/main) in the aws-samples GitHub repository.

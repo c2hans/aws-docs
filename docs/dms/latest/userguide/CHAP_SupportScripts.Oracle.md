@@ -98,7 +98,7 @@ Following, you can find descriptions how to download, review, and run each SQL\*
 ## awsdms\_support\_collector\_oracle.sql script
 <a name="CHAP_SupportScripts.Oracle.Awsdms_Support_Collector_Oracle_Script"></a>
 
-Download the [https://d2pwp9zz55emqw.cloudfront.net/scripts/awsdms_support_collector_oracle.sql](https://d2pwp9zz55emqw.cloudfront.net/scripts/awsdms_support_collector_oracle.sql) script.
+Download the [`awsdms_support_collector_oracle.sql`](https://d2pwp9zz55emqw.cloudfront.net/scripts/awsdms_support_collector_oracle.sql) script.
 
 This script collects information about your Oracle database configuration. Remember to verify the checksum on the script, and if the checksum verifies, review the SQL code in the script to comment out any of the code that you are uncomfortable running. After you are satisfied with the integrity and content of the script, you can run it.
 

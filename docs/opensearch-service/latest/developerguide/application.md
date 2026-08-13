@@ -31,6 +31,7 @@ For information about the latest features released for OpenSearch UI, see [Amazo
 + [Enabling SAML federation with AWS Identity and Access Management](application-enable-SAML-identity-federation.md)
 + [Managing data source associations and Virtual Private Cloud access permissions](application-data-sources-and-vpc.md)
 + [Using Amazon OpenSearch Service workspaces](application-workspaces.md)
++ [Configuring settings and preferences in OpenSearch UI](application-settings.md)
 + [Cross-Region and cross-account data access](application-cross-region-cross-account.md)
 + [Managing access to the OpenSearch UI from a VPC endpoint](application-access-ui-from-vpc-endpoint.md)
 + [Restricting network access to OpenSearch UI applications](application-network-access.md)

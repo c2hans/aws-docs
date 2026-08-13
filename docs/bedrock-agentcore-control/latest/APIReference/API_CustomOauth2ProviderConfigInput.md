@@ -19,7 +19,7 @@ Required: Yes
  ** clientAuthenticationMethod **   <a name="bedrockagentcorecontrol-Type-CustomOauth2ProviderConfigInput-clientAuthenticationMethod"></a>
 The client authentication method to use when authenticating with the token endpoint.
 Type: String
-Valid Values: `CLIENT_SECRET_BASIC | CLIENT_SECRET_POST | AWS_IAM_ID_TOKEN_JWT`
+Valid Values: `CLIENT_SECRET_BASIC | CLIENT_SECRET_POST | AWS_IAM_ID_TOKEN_JWT | PRIVATE_KEY_JWT`
 Required: No
 
  ** clientId **   <a name="bedrockagentcorecontrol-Type-CustomOauth2ProviderConfigInput-clientId"></a>
@@ -60,6 +60,11 @@ Required: No
 The private endpoint overrides for the custom OAuth2 provider configuration.
 Type: Array of [PrivateEndpointOverride](API_PrivateEndpointOverride.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 5 items.
+Required: No
+
+ ** privateKeyJwtConfig **   <a name="bedrockagentcorecontrol-Type-CustomOauth2ProviderConfigInput-privateKeyJwtConfig"></a>
+The private\_key\_jwt client authentication configuration for this credential provider. When specified, the credential provider uses JWT client assertions to authenticate with the token endpoint.
+Type: [PrivateKeyJwtConfig](API_PrivateKeyJwtConfig.md) object
 Required: No
 
 ## See Also

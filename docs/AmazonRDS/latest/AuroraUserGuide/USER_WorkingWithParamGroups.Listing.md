@@ -24,7 +24,7 @@ Default parameter groups are automatically created from a default parameter temp
 ## AWS CLI
 <a name="USER_WorkingWithParamGroups.Listing.CLI"></a>
 
-To list all DB parameter groups for an AWS account, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-parameter-groups.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-parameter-groups.html) command.
+To list all DB parameter groups for an AWS account, use the AWS CLI [`describe-db-parameter-groups`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-parameter-groups.html) command.
 
 **Example**
 The following example lists all available DB parameter groups for an AWS account.
@@ -60,4 +60,4 @@ DBPARAMETERGROUP  mydbparametergroup1  mysql8.0  My new parameter group
 ## RDS API
 <a name="USER_WorkingWithParamGroups.Listing.API"></a>
 
-To list all DB parameter groups for an AWS account, use the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBParameterGroups.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBParameterGroups.html) operation.
+To list all DB parameter groups for an AWS account, use the RDS API [`DescribeDBParameterGroups`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBParameterGroups.html) operation.

@@ -25,7 +25,7 @@ EKS Auto Mode is designed to fully manage the resources that it creates. Manual 
 
 1. Toggle **EKS Auto Mode** to `off`.
 
-If any managed Security Group is not deleted at the end of this process, you can delete it manually using descriptions from [Delete a security group](https://docs.aws.amazon.com/vpc/latest/userguide/deleting-security-groups.html).
+If any managed Security Group is not deleted at the end of this process, you can delete it manually using the instructions in [Delete a security group](https://docs.aws.amazon.com/vpc/latest/userguide/deleting-security-groups.html).
 
 ## Disable EKS Auto Mode (AWS CLI)
 <a name="disable_eks_auto_mode_shared_aws_cli"></a>

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sms-semantic-segment
 # Identify image contents using semantic segmentation
 <a name="sms-semantic-segmentation"></a>
 
-To identify the contents of an image at the pixel level, use an Amazon SageMaker Ground Truth semantic segmentation labeling task. When assigned a semantic segmentation labeling job, workers classify pixels in the image into a set of predefined labels or classes. Ground Truth supports single and multi-class semantic segmentation labeling jobs. You create a semantic segmentation labeling job using the Ground Truth section of the Amazon SageMaker AI console or the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html) operation.
+To identify the contents of an image at the pixel level, use an Amazon SageMaker Ground Truth semantic segmentation labeling task. When assigned a semantic segmentation labeling job, workers classify pixels in the image into a set of predefined labels or classes. Ground Truth supports single and multi-class semantic segmentation labeling jobs. You create a semantic segmentation labeling job using the Ground Truth section of the Amazon SageMaker AI console or the [`CreateLabelingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html) operation.
 
 Images that contain large numbers of objects that need to be segmented require more time. To help workers (from a private or vendor workforce) label these objects in less time and with greater accuracy, Ground Truth provides an AI-assisted auto-segmentation tool. For information, see [Auto-Segmentation Tool](sms-auto-segmentation.md).
 
@@ -24,7 +24,7 @@ Ground Truth provides a worker UI similar to the following for labeling tasks. W
 ## Create a Semantic Segmentation Labeling Job (API)
 <a name="sms-creating-ss-labeling-job-api"></a>
 
-To create a semantic segmentation labeling job, use the SageMaker API operation `CreateLabelingJob`. This API defines this operation for all AWS SDKs. To see a list of language-specific SDKs supported for this operation, review the **See Also** section of [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html).
+To create a semantic segmentation labeling job, use the SageMaker API operation `CreateLabelingJob`. This API defines this operation for all AWS SDKs. To see a list of language-specific SDKs supported for this operation, review the **See Also** section of [`CreateLabelingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html).
 
 Follow the instructions on [Create a Labeling Job (API)](sms-create-labeling-job-api.md) and do the following while you configure your request:
 + Pre-annotation Lambda functions for this task type end with `PRE-SemanticSegmentation`. To find the pre-annotation Lambda ARN for your Region, see [PreHumanTaskLambdaArn](https://docs.aws.amazon.com/sagemaker/latest/dg/API_HumanTaskConfig.html#SageMaker-Type-HumanTaskConfig-PreHumanTaskLambdaArn) .
@@ -88,7 +88,7 @@ response = client.create_labeling_job(
 ### Provide a Template for Semantic Segmentation Labeling Jobs
 <a name="sms-create-labeling-job-ss-api-template"></a>
 
-If you create a labeling job using the API, you must supply a worker task template in `UiTemplateS3Uri`. Copy and modify the following template. Only modify the [https://docs.aws.amazon.com/sagemaker/latest/dg/sms-creating-instruction-pages.html#sms-creating-quick-instructions](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-creating-instruction-pages.html#sms-creating-quick-instructions), [https://docs.aws.amazon.com/sagemaker/latest/dg/sms-creating-instruction-pages.html#sms-creating-full-instructions](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-creating-instruction-pages.html#sms-creating-full-instructions), and `header`.
+If you create a labeling job using the API, you must supply a worker task template in `UiTemplateS3Uri`. Copy and modify the following template. Only modify the [`short-instructions`](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-creating-instruction-pages.html#sms-creating-quick-instructions), [`full-instructions`](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-creating-instruction-pages.html#sms-creating-full-instructions), and `header`.
 
 Upload this template to S3, and provide the S3 URI for this file in `UiTemplateS3Uri`.
 

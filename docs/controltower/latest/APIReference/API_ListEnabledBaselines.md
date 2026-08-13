@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Lis
 # ListEnabledBaselines
 <a name="API_ListEnabledBaselines"></a>
 
-Returns a list of summaries describing `EnabledBaseline` resources. You can filter the list by the corresponding `Baseline` or `Target` of the `EnabledBaseline` resources. For usage examples, see [https://docs.aws.amazon.com/controltower/latest/userguide/baseline-api-examples.html](https://docs.aws.amazon.com/controltower/latest/userguide/baseline-api-examples.html).
+Returns a list of summaries describing `EnabledBaseline` resources. You can filter the list by the corresponding `Baseline` or `Target` of the `EnabledBaseline` resources. For usage examples, see [*the AWS Control Tower User Guide*](https://docs.aws.amazon.com/controltower/latest/userguide/baseline-api-examples.html).
 
 ## Request Syntax
 <a name="API_ListEnabledBaselines_RequestSyntax"></a>

@@ -16,7 +16,7 @@ Your third-party (3P) application can seamlessly complete the Sign-On flow withi
 
 1. Set up users within the Identity Provider.
 
-1. Set up an Connect Customer instance and [Configure SAML with IAM for Connect Customer](configure-saml.md).
+1. Set up a Connect Customer instance and [Configure SAML with IAM for Connect Customer](configure-saml.md).
 
 1. Set up other applications within your Identity Provider which you will be integrating with your Connect Customer instance.
 

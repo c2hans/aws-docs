@@ -32,9 +32,9 @@ Use this table to compare flow sizes and select the one that meets your needs.
   <tr><th>Flow Size</th><th>Use Case</th><th>Output limits</th><th>Throughput</th><th>Output limits</th><th>Throughput</th><th>Output limits</th><th>Throughput</th></tr>
 </thead>
 <tbody>
-  <tr><td>Medium</td><td>Standard transport stream distribution</td><td> +  Up to 50 transport stream outputs, or up to four TR-07 outputs  </td><td> +  400 Mbps combined for transport streams <br />+  1 Gbps combined for TR-07  </td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
-  <tr><td>Large</td><td>Transport stream distribution and NDI</td><td> +  Up to 50 transport stream outputs (may include 1 NDI output), or up to four TR-07 outputs   </td><td> +  400 Mbps combined for transport streams <br />+  1 Gbps combined for TR-07  </td><td> +  Up to 1 NDI output <br />+  The NDI output can support multiple NDI receivers in the same VPC subnet  </td><td> +  2 Gbps total aggregate throughput  </td><td>N/A</td><td>N/A</td></tr>
-  <tr><td>Large 4x</td><td>Production environments requiring CDI or SMPTE 2110 with JPEG XS</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td> +  Up to 10 outputs  <br />+  For 4Kp60 content, up to 10 SMPTE 2110 JPEG XS outputs, or 4 CDI outputs   </td><td> +  50 Gbps total aggregate throughput  </td></tr>
+  <tr><td>Medium</td><td>Standard transport stream distribution</td><td> <ul><li> Up to 50 transport stream outputs, or up to four TR-07 outputs </li></ul> </td><td> <ul><li> 400 Mbps combined for transport streams </li><li> 1 Gbps combined for TR-07 </li></ul> </td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+  <tr><td>Large</td><td>Transport stream distribution and NDI</td><td> <ul><li> Up to 50 transport stream outputs (may include 1 NDI output), or up to four TR-07 outputs  </li></ul> </td><td> <ul><li> 400 Mbps combined for transport streams </li><li> 1 Gbps combined for TR-07 </li></ul> </td><td> <ul><li> Up to 1 NDI output </li><li> The NDI output can support multiple NDI receivers in the same VPC subnet </li></ul> </td><td> <ul><li> 2 Gbps total aggregate throughput </li></ul> </td><td>N/A</td><td>N/A</td></tr>
+  <tr><td>Large 4x</td><td>Production environments requiring CDI or SMPTE 2110 with JPEG XS</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td> <ul><li> Up to 10 outputs  </li><li> For 4Kp60 content, up to 10 SMPTE 2110 JPEG XS outputs, or 4 CDI outputs  </li></ul> </td><td> <ul><li> 50 Gbps total aggregate throughput </li></ul> </td></tr>
 </tbody>
 </table>
 

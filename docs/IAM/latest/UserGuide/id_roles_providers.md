@@ -9,6 +9,7 @@ As a best practice, we recommend that you require human users to use federation 
 
 **Note**
 You can also manage human users in [IAM Identity Center](https://docs.aws.amazon.com//singlesignon/latest/userguide/what-is.html) with an external SAML identity provider instead of using SAML federation in IAM. IAM Identity Center federation with an identity provider provides the capability for you to give people access to multiple AWS accounts in your organization and to multiple AWS applications. For information about specific situations where an IAM user is required, see [When to create an IAM user (instead of a role)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html#id_which-to-choose).
+You can also use [account access manager](account-access-manager.md) — an IAM feature that lets you assign existing IAM roles across your organization's accounts to IAM Identity Center users and groups. You can use it alongside permission sets or on its own.
 
 If you prefer to use a single AWS account without enabling IAM Identity Center, you can use IAM with an external IdP that provides identity information to AWS using either [OpenID Connect (OIDC)](https://docs.aws.amazon.com/http://openid.net/connect/) or [SAML 2.0 (Security Assertion Markup Language 2.0)](https://wiki.oasis-open.org/security). OIDC connects applications, like GitHub Actions, that do not run on AWS to AWS resources. Examples of well-known SAML identity providers are Shibboleth and Active Directory Federation Services.
 
@@ -45,10 +46,11 @@ To link an IdP directly to IAM, you create an identity provider entity to establ
 ## Federation with Amazon Cognito identity pools
 <a name="id_roles_providers_cognito"></a>
 
-Amazon Cognito is designed for developers who want to authenticate and authorize users in their mobile and web apps. Amazon Cognito user pools add sign-in and sign-up features to your app, and identity pools deliver IAM credentials that grant your users access to protected resources that you manage in AWS. Identity pools acquire credentials for temporary sessions through the [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html) API operation.
+Amazon Cognito is designed for developers who want to authenticate and authorize users in their mobile and web apps. Amazon Cognito user pools add sign-in and sign-up features to your app, and identity pools deliver IAM credentials that grant your users access to protected resources that you manage in AWS. Identity pools acquire credentials for temporary sessions through the [`AssumeRoleWithWebIdentity`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html) API operation.
 
 Amazon Cognito works with external identity providers that support SAML and OpenID Connect, and with social identity providers like Facebook, Google, and Amazon. Your app can sign in a user with a user pool or an external IdP, then retrieve resources on their behalf with customized temporary sessions in an IAM role.
 
 ## Additional resources
 <a name="id_roles_providers_additional_resources"></a>
 + For a demonstration on how to create a custom federation proxy that enables single sign-on (SSO) into the AWS Management Console using your organization's authentication system, see [Enable custom identity broker access to the AWS console](id_roles_providers_enable-console-custom-url.md).
++ For instructions on enabling your AWS workloads to access external services without storing credentials, see [Federating AWS Identities to external services](id_roles_providers_outbound.md).

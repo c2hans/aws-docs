@@ -22,7 +22,7 @@ You can add a custom file system by using the Amazon SageMaker API, the AWS SDKs
 <a name="domain-custom-file-system-prereqs"></a>
 
 Before you can add a custom file system to a domain, you must meet the following requirements:
-+ You have a domain in SageMaker AI. Before you can add a file system, you need the domain ID. You can look up the ID by using the SageMaker AI console. You can also run the [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/list-domains.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/list-domains.html) command with the AWS CLI.
++ You have a domain in SageMaker AI. Before you can add a file system, you need the domain ID. You can look up the ID by using the SageMaker AI console. You can also run the [`list-domains`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/list-domains.html) command with the AWS CLI.
 + You have an Amazon EFS or FSx for Lustre file system in your AWS account.
 
 ------
@@ -71,10 +71,10 @@ Before you can add a custom file system to a domain, you must meet the following
 <a name="domain-custom-file-system-cli"></a>
 
 To add a custom file system to a domain or user profile with the AWS CLI, you pass a `CustomFileSystemConfigs` definition when you use any of the following commands:
-+ [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-domain.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-domain.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/update-domain.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/update-domain.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-user-profile.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-user-profile.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/update-user-profile.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/update-user-profile.html)
++ [`create-domain`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-domain.html)
++ [`update-domain`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/update-domain.html)
++ [`create-user-profile`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-user-profile.html)
++ [`update-user-profile`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/update-user-profile.html)
 
 The following examples show how to add a file system to an existing domain or user profile.
 

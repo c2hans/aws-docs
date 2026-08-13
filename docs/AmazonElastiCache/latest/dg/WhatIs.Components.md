@@ -134,7 +134,7 @@ In the following table, you can find a comparison of the features of Valkey or R
   <tr><td>Promote replica to primary</td><td>Yes</td><td>Automatic</td></tr>
   <tr><td>Multi-AZ</td><td>Optional</td><td>Required</td></tr>
   <tr><td>Backup/Restore</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td colspan="3">Notes:</td></tr>
+  <tr><td colspan="3"><b>Notes:</b></td></tr>
   <tr><td colspan="3">If any primary has no replicas and the primary fails, you lose all that primary's data.</td></tr>
   <tr><td colspan="3">You can use backup and restore to migrate to Valkey or Redis OSS (cluster mode enabled).</td></tr>
   <tr><td colspan="3">You can use backup and restore to resize your Valkey or Redis OSS (cluster mode enabled) cluster.</td></tr>

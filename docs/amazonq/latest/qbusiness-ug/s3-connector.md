@@ -7,7 +7,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 # Connecting Amazon S3 to Amazon Q Business
 <a name="s3-connector"></a>
 
-[Amazon Simple Storage Service](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) (Amazon S3) is an object storage service that stores data as objects within storage buckets. You can connect an Amazon S3 instance to Amazon Q Business—using either the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q web experience.
+[Amazon Simple Storage Service](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) (Amazon S3) is an object storage service that stores data as objects within storage buckets. You can connect an Amazon S3 instance to Amazon Q Business—using either the AWS Management Console or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q web experience.
 
 After you integrate Amazon Q with Amazon S3, users can ask questions about the content stored in Amazon S3. For example, a user might ask about the main points discussed in a blog post on cloud security, the installation steps outlined in a user guide, findings from a case study on hybrid cloud usage, market trends noted in an analyst report, or key takeaways from a whitepaper on data encryption. This integration helps users to quickly find the specific information they need, improving their understanding and ability to make informed business decisions.
 

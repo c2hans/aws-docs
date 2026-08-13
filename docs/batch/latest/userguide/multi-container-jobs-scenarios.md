@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/multi-container-j
 # Reference: AWS Batch job scenarios using EcsProperties
 <a name="multi-container-jobs-scenarios"></a>
 
-To illustrate how AWS Batch job definitions that use `EcsProperties` can be structured based on your needs, this topic presents the following [https://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html) payloads. You can copy these examples into a file, customize them to your needs, and then use the AWS Command Line Interface (AWS CLI) to call `RegisterJobDefinition`.
+To illustrate how AWS Batch job definitions that use `EcsProperties` can be structured based on your needs, this topic presents the following [`RegisterJobDefinition`](https://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html) payloads. You can copy these examples into a file, customize them to your needs, and then use the AWS Command Line Interface (AWS CLI) to call `RegisterJobDefinition`.
 
 ## AWS Batch job for Amazon ECS on Amazon EC2
 <a name="multi-container-scenario-on-ec2"></a>

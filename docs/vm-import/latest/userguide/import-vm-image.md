@@ -48,7 +48,7 @@ AWS VM Import/Export only supports images that were natively installed inside th
 ------
 #### [ AWS CLI ]
 
-Use the following [https://docs.aws.amazon.com/cli/latest/reference/ec2/import-image.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/import-image.html) command.
+Use the following [import-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/import-image.html) command.
 
 ```
 aws ec2 import-image \
@@ -91,7 +91,7 @@ Import-EC2Image `
 ------
 #### [ AWS CLI ]
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/import-image.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/import-image.html) command.
+Use the [import-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/import-image.html) command.
 
 ```
 aws ec2 import-image \
@@ -156,7 +156,7 @@ The CMK provided for encryption must not be disabled during the entire import pr
 ------
 #### [ AWS CLI ]
 
-Use the following [https://docs.aws.amazon.com/cli/latest/reference/ec2/import-image.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/import-image.html) command.
+Use the following [import-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/import-image.html) command.
 
 ```
 aws ec2 import-image \
@@ -210,6 +210,6 @@ Import-EC2Image `
 
 1. On the **Choose a workflow template** page, choose the **Import virtual images to AWS** template.
 
-1. Configure and submit your workflow to begin the VM import. For more information, see the [https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/import-vm-images.html](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/import-vm-images.html).
+1. Configure and submit your workflow to begin the VM import. For more information, see the [*AWS Migration Hub Orchestrator User Guide*](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/import-vm-images.html).
 
 ------

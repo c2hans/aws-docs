@@ -28,7 +28,7 @@ The following are the service endpoints and service quotas for this service.
 If you are using data plane endpoints for the first time, use the `iot:Data-ATS` endpoints.
 We recommend using the AWS IoT Core data plane ATS endpoint for accessing Jobs functionality, as it enables advanced features like IPv6 and AWS PrivateLink that are not available through the `iot:Jobs` endpoint.
 
-The commands and jobs features in AWS IoT Device Management share the same data plane endpoints. These data endpoints are specific to each AWS account and AWS Region. To find the data plane endpoint for your AWS account and AWS Region, use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-endpoint.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-endpoint.html) CLI command shown here, or the [https://docs.aws.amazon.com//iot/latest/apireference/API_DescribeEndpoint.html](https://docs.aws.amazon.com//iot/latest/apireference/API_DescribeEndpoint.html) REST API.
+The commands and jobs features in AWS IoT Device Management share the same data plane endpoints. These data endpoints are specific to each AWS account and AWS Region. To find the data plane endpoint for your AWS account and AWS Region, use the [**describe-endpoint**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-endpoint.html) CLI command shown here, or the [`DescribeEndpoint`](https://docs.aws.amazon.com//iot/latest/apireference/API_DescribeEndpoint.html) REST API.
 
 To retrieve the AWS IoT Core `iot:Data-ATS` dual-stack endpoint, use the following command:
 

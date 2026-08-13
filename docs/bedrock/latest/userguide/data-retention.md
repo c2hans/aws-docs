@@ -13,7 +13,7 @@ Amazon Bedrock gives you explicit control over whether your prompts and outputs 
 Your data retention configuration is yours to manage. If your account or project is configured for zero data retention (`data_retention_mode: none`) and you invoke a model that requires retention, Amazon Bedrock will block the request and return an error — you always control your retention policy.
 
 **Important**
-There is no data retention change to Claude models released before Claude Fable 5. AWS is committed to making sure that you are in full control over when and with whom your data is retained and shared. For a full list of models requiring data retention, see [here](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html).
+There is no data retention change to Claude models released before Claude Fable 5. We are committed to ensuring you are in full control over when and with whom your data is retained and shared. For a full list of models requiring data retention, see [Amazon Bedrock abuse detection](bedrock/latest/userguide/abuse-detection.html).
 
 ## Data retention modes
 <a name="data-retention-modes"></a>
@@ -22,13 +22,13 @@ Data retention is controlled by a **mode** rather than a simple on/off toggle:
 
 | **Mode** | **Behavior** |
 | --- | --- |
-| default | Default means the data retention policy of the model applies. There is no change to previous model retention behavior; if ZDR applied previously, then ZDR still applies. Actual retention depends on the model — consult the model's terms for specifics. AWS may retain the data for safety and abuse-prevention purposes. The model provider does not receive it. On the Responses API, `store` defaults to `true` and may be set to either value.Setting `store=false` does not guarantee zero data retention. Some models may still retain data for safety review even when `store=false` — in this case, data is retained but is not retrievable by the customer via `GET /v1/responses/{id}`. If you require guaranteed zero retention, set `data_retention_mode` to `none`. |
-| provider\_data\_share | This mode allows Amazon Bedrock to retain and share your inference data with model providers per their requirements. It is required for access to certain models. See [Amazon Bedrock abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html) and [AWS Service Terms](https://aws.amazon.com/service-terms/). |
+| default | Default means the data retention policy of the model applies. There is no change to previous model retention behavior; if ZDR applied previously, then ZDR still applies. Actual retention depends on the model — consult the model's terms for specifics. AWS may retain the data for safety and abuse-prevention purposes. The model provider does not receive it. On the Responses API, `store` defaults to `true` and may be set to either value.Setting `store=false` does not guarantee zero data retention. Some models may still retain data for safety review even when `store=false` — in this case, data is retained but is not retrievable by the customer through `GET /v1/responses/{id}`. If you require guaranteed zero retention, set `data_retention_mode` to `none`. |
+| provider\_data\_share | This mode allows Amazon Bedrock to retain and share your inference data with model providers per their requirements. It is required for access to certain models. See [Amazon Bedrock abuse detection](bedrock/latest/userguide/abuse-detection.html) and [AWS Service Terms](https://aws.amazon.com/service-terms/). |
 | none | Zero data retention. No request or response data is written to durable storage by AWS or shared with the model provider. On the Responses API, store defaults to false and store=true is rejected. Background mode is not available. Chat Completions and Messages requests are never retained. |
 | inherit | No opinion at this scope — defer to a broader scope. This is the default for new accounts and projects. |
 
 **Important**
-Configuring your account or project to `provider_data_share` does *not* mean all models will start sharing data with their providers. Your configured mode sets what you allow — each model independently declares which modes it supports via `allowed_modes`. Most models currently do not require or request `provider_data_share`. The interaction works as follows:
+Configuring your account or project to `provider_data_share` does *not* mean all models will start sharing data with their providers. Your configured mode sets what you allow — each model independently declares which modes it supports through `allowed_modes`. Most models currently do not require or request `provider_data_share`. The interaction works as follows:
 If a model's `allowed_modes` includes `none`, we won't persist anything.
 If a model's `allowed_modes` includes `default` but not `none`, AWS retains the data — the model provider does not receive it.
 If a model's only allowed mode is `provider_data_share`, data will be shared with the provider — but only if your effective mode permits it. If your effective mode is `none` or `default`, the model will appear as unavailable.
@@ -37,8 +37,8 @@ If a model's only allowed mode is `provider_data_share`, data will be shared wit
 <a name="data-retention-resolution"></a>
 
 Data retention is configured at two scopes, with the model's own default as the fallback:
-+ **Project** (most specific) — set via `POST /v1/organization/projects/{project_id}`
-+ **Account** — set via `PUT /v1/data_retention`
++ **Project** (most specific) — set through `POST /v1/organization/projects/{project_id}`
++ **Account** — set through `PUT /v1/data_retention`
 + **Model default** (least specific, read-only) — the model's built-in default
 
 The effective mode for any request is determined by taking the first scope whose value is not `inherit`:
@@ -147,11 +147,11 @@ curl https://bedrock-mantle.us-east-1.api.aws/v1/models/anthropic.claude-fable-5
 ## Model availability and data retention
 <a name="data-retention-model-availability"></a>
 
-Each model specifies which retention modes it permits via `allowed_modes`. If your effective mode is not in a model's `allowed_modes`, the model will appear as `status: "unavailable"` in the models list and requests to it will be blocked.
+Each model specifies which retention modes it permits through `allowed_modes`. If your effective mode is not in a model's `allowed_modes`, the model will appear as `status: "unavailable"` in the models list and requests to it will be blocked.
 
 **Example:** Claude Fable 5 and Claude Mythos 5 require provider data sharing (`allowed_modes: ["provider_data_share"]`). Customers must explicitly set their data retention mode to `provider_data_share` before they can invoke these models. If your effective mode is `none` or `default`, these models will be unavailable.
 
-By setting `provider_data_share`, you are explicitly acknowledging instructing us to retain and share data with model providers per their requirements. It is required for access to certain models. See the [Abuse Detection page](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html) and [AWS Service Terms](https://aws.amazon.com/service-terms/).
+By setting `provider_data_share`, you are explicitly acknowledging instructing us to retain and share data with model providers per their requirements. It is required for access to certain models. See the [Abuse Detection page](bedrock/latest/userguide/abuse-detection.html) and [AWS Service Terms](https://aws.amazon.com/service-terms/).
 
 **Note**
 At launch, there is no console UI for configuring data retention. Customers must use the API (see "Configuring data retention" above) or the Bedrock SDK.
@@ -196,9 +196,9 @@ curl https://bedrock-mantle.us-east-1.api.aws/v1/organization/projects/proj_abc1
 
 **Mixed-model projects**
 Setting a project to `provider_data_share` does not mean all model traffic in that project is shared with the model provider. Each model's `allowed_modes` determines what actually happens to your data:
-A model whose `allowed_modes` is `["provider_data_share"]` (e.g., Claude Fable 5) — data is retained and shared with the provider.
-A model whose `allowed_modes` is `["default", "provider_data_share"]` (e.g., Claude Opus 4.8) — data is retained by AWS only. The model accepts `provider_data_share` as a valid mode but does not require data to leave AWS's boundary.
-When a Claude Fable 5 request is declined by a safety classifier and the fallback credit is redeemed on Claude Opus 4.8, the fallback invocation follows Opus 4.8's data-handling rules, not Fable 5's. The Opus 4.8 response is not retained or shared with Anthropic.
+A model whose `allowed_modes` is `["provider_data_share"]` (for example, Claude Fable 5)—provider sharing is the only permitted behavior. Data is retained and shared with the provider on every request.
+A model whose `allowed_modes` is `["none", "default", "provider_data_share"]` (for example, Claude Opus 4.8)—`provider_data_share` is accepted as a valid mode but data is not required to leave the AWS boundary.
+When a Claude Fable 5 request is declined by a safety classifier and the fallback credit is redeemed on Claude Opus 4.8, the fallback invocation follows Opus 4.8 data-handling rules, not the rules for Fable 5. The Opus 4.8 response is not retained or shared with Anthropic, even though the originating Fable 5 request would have been.
 
 ## Zero data retention (ZDR) access
 <a name="data-retention-zdr"></a>
@@ -253,7 +253,7 @@ This prevents anyone in the organization from setting data retention to anything
 
 For models requiring `provider_data_share` (currently Claude Mythos 5 and Claude Fable 5): user prompts and completions are shared with Anthropic and retained for up to 30 days for trust and safety purposes.
 
-For models under `default` mode: data may be retained for abuse detection purposes — see [Amazon Bedrock abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html) for required retention details. For retention beyond abuse detection (e.g., Responses API with `store=true`), consult the model's documentation and terms.
+For models under `default` mode: data may be retained for abuse detection purposes — see [Amazon Bedrock abuse detection](bedrock/latest/userguide/abuse-detection.html) for required retention details. For retention beyond abuse detection (e.g., Responses API with `store=true`), consult the model's documentation and terms.
 
 If cross-region inference is enabled for these models, retained inputs and outputs are stored in destination regions (i.e., the region where your inference request is processed).
 

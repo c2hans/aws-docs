@@ -21,7 +21,7 @@ You can use the following types of folders with Quick Sight:
 
     Assets that are located in a restricted folder can be moved within the restricted folder tree into one or more subfolders. Subfolders of restricted folders behave like restricted folders, but dependent assets can exist in different subfolders under the same root restricted folder. The root restricted folder acts as a boundary that all assets in all subfolders can exist in as long as they remain within the root folder tree. For example, a dataset that is located in one subfolder can use a data source that is located either another subfolder in the same folder tree or in the root folder. Any supported asset type can be created in a root folder or in any of its subfolders. Users can have different roles in different subfolders. Subfolder permissions are inherited from the parent folders of that subfolder.
 
-    Restricted folders can only be created with the Quick Sight [https://aws.amazon.com/quicksight/latest/APIReference/API_CreateFolder.html](https://aws.amazon.com/quicksight/latest/APIReference/API_CreateFolder.html) API operation.
+    Restricted folders can only be created with the Quick Sight [`CreateFolder`](https://aws.amazon.com/quicksight/latest/APIReference/API_CreateFolder.html) API operation.
   + Users that are viewers on a folder and have the Author or Admin role in Quick can view all asset types that are in the folder. Users that are viewers on a folder and have the Reader role in Quick can only see dashboards and stories that are in the folder.
 
   All shared folders are visible to people who have access to them.

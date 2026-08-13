@@ -12,7 +12,7 @@ Complete the tasks in this section to set up and configure roles, user accounts,
 **Note**
 If you plan to use Amazon EC2 instances *and* your own computing resources in a [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) environment, follow the steps in [Managing EC2 instances with Systems Manager](systems-manager-setting-up-ec2.md). That topic presents steps in the best order for completing Systems Manager setup for EC2 instances and non-EC2 machines.
 
-If you already use other AWS services, you have completed some of these steps. However, other steps are specific to Systems Manager. Therefore, we recommend reviewing this entire section to ensure that you're ready to use all Systems Manager tools.
+If you already use other AWS services, you have completed some of these steps. However, other steps are specific to Systems Manager. Therefore, we recommend reviewing this entire section to make sure that you're ready to use all Systems Manager tools.
 
 **Topics**
 + [Managing EC2 instances with Systems Manager](systems-manager-setting-up-ec2.md)

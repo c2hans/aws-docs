@@ -28,15 +28,15 @@ Supported Amazon EMR on EKS APIs:
 **Quota for input or result data**
 When sending or receiving data between services, the maximum input or result for a task is 256 KiB of data as a UTF-8 encoded string. See [Quotas related to state machine executions](service-quotas.md#service-limits-state-machine-executions).
 
-+ [https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_CreateVirtualCluster.html](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_CreateVirtualCluster.html)
++ [`CreateVirtualCluster`](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_CreateVirtualCluster.html)
   + [Request syntax](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_CreateVirtualCluster.html#API_CreateVirtualCluster_RequestSyntax)
   + [Supported parameters](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_CreateVirtualCluster.html#API_CreateVirtualCluster_RequestBody)
   + [Response syntax](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_CreateVirtualCluster.html#API_CreateVirtualCluster_ResponseSyntax)
-+ [https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_DeleteVirtualCluster.html](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_DeleteVirtualCluster.html)
++ [`DeleteVirtualCluster`](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_DeleteVirtualCluster.html)
   + [Request syntax](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_DeleteVirtualCluster.html#API_DeleteVirtualCluster_RequestSyntax)
   + [Supported parameters](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_DeleteVirtualCluster.html#API_DeleteVirtualCluster_RequestParameters)
   + [Response syntax](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_CreateVirtualCluster.html#API_CreateVirtualCluster_ResponseSyntax)
-+ [https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_StartJobRun.html](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_StartJobRun.html)
++ [`StartJobRun`](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_StartJobRun.html)
   + [Request syntax](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_StartJobRun.html#API_StartJobRun_RequestSyntax)
   + [Supported parameters](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_StartJobRun.html#API_StartJobRun_RequestParameters)
   + [Response syntax](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_StartJobRun.html#API_StartJobRun_ResponseSyntax)

@@ -64,7 +64,7 @@ The following is an example of a message that Amazon S3 sends to publish an `s3:
 40. }
 ```
 
-You can also use a [`HEAD` object request](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html) to view an object's archive status. If an object is stored in the S3 Intelligent-Tiering storage class and is in one of the archive tiers, the `HEAD` object response shows the current archive tier. To show the archive tier, the request uses the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html#API_HeadObject_ResponseElements](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html#API_HeadObject_ResponseElements) header.
+You can also use a [`HEAD` object request](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html) to view an object's archive status. If an object is stored in the S3 Intelligent-Tiering storage class and is in one of the archive tiers, the `HEAD` object response shows the current archive tier. To show the archive tier, the request uses the [x-amz-archive-status](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html#API_HeadObject_ResponseElements) header.
 
 The following `HEAD` object request returns the metadata of an object (in this case, `{{my-image.jpg}}`).
 
@@ -77,7 +77,7 @@ Date: Wed, 28 Oct 2009 22:32:00 GMT
 Authorization: AWS AKIAIOSFODNN7EXAMPLE:02236Q3V0RonhpaBX5sCYVf1bNRuU=
 ```
 
-You can also use `HEAD` object requests to monitor the status of a `restore-object` request. If the archive restoration is in progress, the `HEAD` object response includes the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html#API_HeadObject_ResponseElements](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html#API_HeadObject_ResponseElements) header.
+You can also use `HEAD` object requests to monitor the status of a `restore-object` request. If the archive restoration is in progress, the `HEAD` object response includes the [x-amz-restore](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html#API_HeadObject_ResponseElements) header.
 
 The following sample `HEAD` object response shows an object archived by using S3 Intelligent-Tiering with a restore request in progress.
 

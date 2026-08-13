@@ -24,7 +24,7 @@ You can create an interface endpoint to connect to Studio or Studio Classic with
 When you create an interface endpoint, ensure that the security groups on your endpoint allow inbound access for HTTPS traffic from the security groups associated with Studio and Studio Classic. For more information, see [Control access to services with VPC endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-access.html#vpc-endpoints-security-groups).
 
 **Note**
-In addition to creating an interface endpoint to connect to Studio and Studio Classic, create an interface endpoint to connect to the Amazon SageMaker API. When users call [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreatePresignedDomainUrl.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreatePresignedDomainUrl.html) to get the URL to connect to Studio and Studio Classic, that call goes through the interface endpoint used to connect to the SageMaker API.
+In addition to creating an interface endpoint to connect to Studio and Studio Classic, create an interface endpoint to connect to the Amazon SageMaker API. When users call [`CreatePresignedDomainUrl`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreatePresignedDomainUrl.html) to get the URL to connect to Studio and Studio Classic, that call goes through the interface endpoint used to connect to the SageMaker API.
 
 When you create the interface endpoint, specify **aws.sagemaker.{{Region}}.studio** as the service name for either Studio or Studio Classic. After you create the interface endpoint, enable private DNS for your endpoint. When you connect to Studio or Studio Classic from within the VPC using the SageMaker API, the AWS CLI, or the console, you connect through the interface endpoint instead of the public internet. You also need to set up a custom DNS with private hosted zones for the Amazon VPC endpoint so Studio or Studio Classic can access the SageMaker API using the `api.sagemaker.$region.amazonaws.com` endpoint rather than using the VPC endpoint URL. For instructions on setting up a private hosted zone, see [Working with private hosted zones](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-private.html).
 
@@ -149,7 +149,7 @@ The following policy allows connections only to those made through the interface
 
 ------
 
-This policy includes the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeUserProfile.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeUserProfile.html) action. Typically you call `DescribeUserProfile` to make sure that the status of the user profile is `InService` before you try to connect to the domain. For example:
+This policy includes the [`DescribeUserProfile`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeUserProfile.html) action. Typically you call `DescribeUserProfile` to make sure that the status of the user profile is `InService` before you try to connect to the domain. For example:
 
 ```
 aws sagemaker describe-user-profile \

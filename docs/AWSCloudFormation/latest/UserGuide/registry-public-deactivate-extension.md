@@ -32,7 +32,7 @@ When you no longer need an activated third-party public extension, use the follo
 ## Deactivate a public extension in your account (AWS CLI)
 <a name="registry-public-deactivate-extension-cli"></a>
 
-Use the following [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deactivate-type.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deactivate-type.html) command.
+Use the following [deactivate-type](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deactivate-type.html) command.
 
 ```
 aws cloudformation deactivate-type --type {{MODULE}} \
@@ -45,7 +45,7 @@ aws cloudformation deactivate-type --type {{MODULE}} \
 
 Disabling a Hook prevents the Hook from running in your AWS account without removing it.
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html) command and specify `HookInvocationStatus` as `DISABLED` to disable a Hook.
+Use the [set-type-configuration](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html) command and specify `HookInvocationStatus` as `DISABLED` to disable a Hook.
 
 The following example specifies the AWS Region and the Amazon Resource Name (ARN) of the Hook that's being disabled.
 

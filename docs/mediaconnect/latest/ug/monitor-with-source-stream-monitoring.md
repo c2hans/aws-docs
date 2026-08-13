@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-sour
 # Monitoring using source metadata
 <a name="monitor-with-source-stream-monitoring"></a>
 
-MediaConnect source metadata monitoring displays information about the transport stream and its program media. You can view status messages about the flow's source as well as details about the program's video, audio, and other data. Source metadata monitoring can be used with the MediaConnect console, API, AWS CLI, or SDK. For more information about the API, see: [https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn-source-metadata.html](https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn-source-metadata.html) in the *MediaConnect API Reference.*
+MediaConnect source metadata monitoring displays information about the transport stream and its program media. You can view status messages about the flow's source as well as details about the program's video, audio, and other data. Source metadata monitoring can be used with the MediaConnect console, API, AWS CLI, or SDK. For more information about the API, see: [`DescribeFlowSourceMetadata`](https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn-source-metadata.html) in the *MediaConnect API Reference.*
 
 **Note**
 If you are using more than one source for your flow, source metadata is only displayed for the source currently used by the flow.

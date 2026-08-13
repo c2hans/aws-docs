@@ -44,7 +44,7 @@ The general purpose Amazon S3 bucket must be in the same region as the AWS Glue 
 
 For information on creating a new database in AWS Glue, see [Getting started with the Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/start-data-catalog.html).
 
-You can also use the [https://docs.aws.amazon.com/cli/latest/reference/glue/create-database.html](https://docs.aws.amazon.com/cli/latest/reference/glue/create-database.html) CLI to create the database in AWS Glue. Note that the `LocationUri` in `--database-input` is required.
+You can also use the [`create-database`](https://docs.aws.amazon.com/cli/latest/reference/glue/create-database.html) CLI to create the database in AWS Glue. Note that the `LocationUri` in `--database-input` is required.
 
 #### Optimizing Iceberg tables
 <a name="zero-etl-config-target-s3-iceberg-optimization"></a>

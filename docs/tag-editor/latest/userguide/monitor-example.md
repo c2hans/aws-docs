@@ -165,7 +165,7 @@ Keep the Lambda console window open in your browser.
 ## Step 2. Set up the required IAM permissions
 <a name="monitor-example-step-2"></a>
 
-Before the function can successfully run, you must grant the function the permission to stop an EC2 instance. The AWS provided role [https://console.aws.amazon.com/iamv2/home#/roles/details/lambda_basic_execution](https://console.aws.amazon.com/iamv2/home#/roles/details/lambda_basic_execution) doesn't have that permission. In this tutorial, you modify the default IAM permission policy that is attached to the function's execution role named `AutoEC2Termination-role-{{uniqueid}}`. The minimum additional permission required for this tutorial is `ec2:StopInstances`.
+Before the function can successfully run, you must grant the function the permission to stop an EC2 instance. The AWS provided role [lambda\_basic\_execution](https://console.aws.amazon.com/iamv2/home#/roles/details/lambda_basic_execution) doesn't have that permission. In this tutorial, you modify the default IAM permission policy that is attached to the function's execution role named `AutoEC2Termination-role-{{uniqueid}}`. The minimum additional permission required for this tutorial is `ec2:StopInstances`.
 
 For more information about creating Amazon EC2 specific IAM policies, see [Amazon EC2: Allows starting or stopping an EC2 Instance and modifying a security group, programmatically and in the console](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_ec2_instance-securitygroup.html) in the *IAM User Guide*.
 
@@ -284,7 +284,7 @@ In this step, you submit a test event to your function. The Lambda test function
 
    The error occurs because the instance specified in the test event doesn't exist.
 
-   The information on the **Execution results** tab, in the **Function Logs** section , demonstrates that your Lambda function successfully attempted to stop an EC2 instance. However, it failed because the code initially attempts a [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartInstances.html#API_StartInstances_RequestParameters](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartInstances.html#API_StartInstances_RequestParameters) operation to stop the instance, which indicated that the instance ID was not valid.
+   The information on the **Execution results** tab, in the **Function Logs** section , demonstrates that your Lambda function successfully attempted to stop an EC2 instance. However, it failed because the code initially attempts a [`DryRun`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartInstances.html#API_StartInstances_RequestParameters) operation to stop the instance, which indicated that the instance ID was not valid.
 
    ```
    START RequestId: 390c1f8d-0d9b-4b44-b087-8de64479ab44 Version: $LATEST

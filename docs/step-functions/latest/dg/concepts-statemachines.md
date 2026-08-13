@@ -170,7 +170,7 @@ For more information, see [Processing input and output in Step Functions](concep
 You can configure several other services to invoke state machines. Based on the state machine's [workflow type](choosing-workflow-type.md), you can invoke state machines asynchronously or synchronously. To invoke state machines synchronously, use the `[StartSyncExecution](https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartSyncExecution.html)` API call or Amazon API Gateway integration with Express Workflows. With asynchronous invocation, Step Functions pauses the workflow execution until a task token is returned. However, waiting for a task token does make the workflow synchronous.
 
 Services that you can configure to invoke Step Functions include:
-+  AWS Lambda, using the [https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartExecution.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartExecution.html) call.
++  AWS Lambda, using the [`StartExecution`](https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartExecution.html) call.
 +  [Amazon API Gateway](https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-api-gateway.html)
 +  [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/create-eventbridge-rule.html)
 + [AWS CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/action-reference-StepFunctions.html)
@@ -225,4 +225,4 @@ You can optimize cost by using the `Map` state in Distributed mode and include a
 State machine updates in AWS Step Functions are eventually consistent. All `StartExecution` calls within a few seconds will use the updated definition and `roleArn` (the Amazon Resource Name for the IAM role). Executions started immediately after calling `UpdateStateMachine` might use the previous state machine definition and `roleArn`.
 
 For more information, see the following:
-+ [https://docs.aws.amazon.com/step-functions/latest/apireference/API_UpdateStateMachine.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_UpdateStateMachine.html) in the *AWS Step Functions API Reference*
++ [`UpdateStateMachine`](https://docs.aws.amazon.com/step-functions/latest/apireference/API_UpdateStateMachine.html) in the *AWS Step Functions API Reference*

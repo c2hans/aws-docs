@@ -10,6 +10,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 **Resource types**
 + [AWS::MediaTailor::Channel](aws-resource-mediatailor-channel.md)
 + [AWS::MediaTailor::ChannelPolicy](aws-resource-mediatailor-channelpolicy.md)
++ [AWS::MediaTailor::Function](aws-resource-mediatailor-function.md)
 + [AWS::MediaTailor::LiveSource](aws-resource-mediatailor-livesource.md)
 + [AWS::MediaTailor::PlaybackConfiguration](aws-resource-mediatailor-playbackconfiguration.md)
 + [AWS::MediaTailor::SourceLocation](aws-resource-mediatailor-sourcelocation.md)

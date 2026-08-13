@@ -23,7 +23,7 @@ The following information might help you troubleshoot common issues in AWS CodeP
 + [Amazon S3 error: CodePipeline service role <ARN> is getting S3 access denied for the S3 bucket <BucketName>](#troubleshooting-S3-access-denied-list)
 + [Pipelines with an Amazon S3, Amazon ECR, or CodeCommit source no longer start automatically](#troubleshooting-events-identifiers)
 + [Connections error when connecting to GitHub: "A problem occurred, make sure cookies are enabled in your browser" or "An organization owner must install the GitHub app"](#troubleshooting-connections-GitHub-organization-owner)
-+ [Pipelines with execution mode changed to QUEUED or PARALLEL mode fails when run limit reached](#troubleshooting-queued-mode)
++ [Pipelines with execution mode changed to QUEUED or PARALLEL mode fail when run limit reached](#troubleshooting-queued-mode)
 + [Pipelines in PARALLEL mode have an outdated pipeline definition if edited when changing to QUEUED or SUPERSEDED mode](#troubleshooting-execution-mode-editing)
 + [Pipelines changed from PARALLEL mode will display a previous execution mode](#troubleshooting-execution-mode-displayedstate)
 + [Pipelines with connections that use trigger filtering by file paths might not start at branch creation](#troubleshooting-file-paths-filtering)
@@ -223,7 +223,7 @@ The task definition file is a required artifact for the CodePipeline deploy acti
 
 Exception while trying to read the task definition artifact file from: <source artifact name>
 
-**Possible fixes:** Make sure the task definition file is included as an artifact. If the file already exists, makes sure the compressed size is less than 3 MB.
+**Possible fixes:** Make sure the task definition file is included as an artifact. If the file already exists, make sure the compressed size is less than 3 MB.
 
 ## GitHub (via OAuth app) source action: Repository list shows different repositories
 <a name="troubleshooting-connections-GitHub-org"></a>
@@ -255,7 +255,7 @@ CodePipeline service role "arn:aws:iam::{{AccountID}}:role/service-role/{{RoleID
 The CloudTrail logs for the action also log the `AccessDenied` error.
 
 **Possible fixes:** Do the following:
-+ For the policy attached to your CodePipeline service role, add `s3:ListBucket` to the list of actions in your policy. For instructions on to view your service role policy, see [View the pipeline ARN and service role ARN (console)](pipelines-settings-console.md). Edit the policy statement for your service role as detailed in [Add permissions to the CodePipeline service role](how-to-custom-role.md#how-to-update-role-new-services).
++ For the policy attached to your CodePipeline service role, add `s3:ListBucket` to the list of actions in your policy. For instructions on how to view your service role policy, see [View the pipeline ARN and service role ARN (console)](pipelines-settings-console.md). Edit the policy statement for your service role as detailed in [Add permissions to the CodePipeline service role](how-to-custom-role.md#how-to-update-role-new-services).
 + For the resource-based policy attached to the Amazon S3 artifact bucket for your pipeline, also called the *artifact bucket policy*, add a statement to allow the `s3:ListBucket` permission to be used by your CodePipeline service role.
 
 **To add your policy to the artifact bucket**
@@ -390,7 +390,7 @@ An organization owner must install the GitHub app
 
 **Possible fixes:** For repositories in a GitHub organization, the organization owner must create the connection to the GitHub repository. For repositories that are not under an organization, you must be the repository owner.
 
-## Pipelines with execution mode changed to QUEUED or PARALLEL mode fails when run limit reached
+## Pipelines with execution mode changed to QUEUED or PARALLEL mode fail when run limit reached
 <a name="troubleshooting-queued-mode"></a>
 
 **Problem:** The maximum number of concurrent executions for a pipeline in QUEUED mode is 50 executions. When this limit is reached, the pipeline fails without a status message.
@@ -402,7 +402,7 @@ For more information about QUEUED or PARALLEL execution mode, see [CodePipeline 
 ## Pipelines in PARALLEL mode have an outdated pipeline definition if edited when changing to QUEUED or SUPERSEDED mode
 <a name="troubleshooting-execution-mode-editing"></a>
 
-**Problem:** For pipelines in parallel mode, when editing the pipeline execution mode to QUEUED or SUPERSEDED, the pipeline definition for PARALLEL mode will not be updated. The updated pipeline definition when updating PARALLEL mode is not used in the SUPERSEDED or QUEUED mode
+**Problem:** For pipelines in parallel mode, when editing the pipeline execution mode to QUEUED or SUPERSEDED, the pipeline definition for PARALLEL mode will not be updated. The updated pipeline definition when updating PARALLEL mode is not used in the SUPERSEDED or QUEUED mode.
 
 **Possible fixes:** For pipelines in parallel mode, when editing the pipeline execution mode to QUEUED or SUPERSEDED, avoid updating the pipeline definition at the same time.
 
@@ -420,14 +420,14 @@ For more information about QUEUED or PARALLEL execution mode, see [CodePipeline 
 ## Pipelines with connections that use trigger filtering by file paths might not start at branch creation
 <a name="troubleshooting-file-paths-filtering"></a>
 
-**Description:** For pipelines with source actions that use connections, such as a BitBucket source action, you can set up a trigger with a Git configuration that allows you to filter by file paths to start your pipeline. In certain cases, for pipelines with triggers that are filtered on file paths, the pipeline might not start when a branch with a file path filter is first created, since this does not allow the CodeConnections connection to resolve the files that changed. When the Git configuration for the trigger is set up to filter on file paths the pipeline will not start when the branch with the filter has just been created in the source repository, For more information about filtering on file paths, see [Add trigger with code push or pull request event types](pipelines-filter.md).
+**Description:** For pipelines with source actions that use connections, such as a BitBucket source action, you can set up a trigger with a Git configuration that allows you to filter by file paths to start your pipeline. In certain cases, for pipelines with triggers that are filtered on file paths, the pipeline might not start when a branch with a file path filter is first created, since this does not allow the CodeConnections connection to resolve the files that changed. When the Git configuration for the trigger is set up to filter on file paths the pipeline will not start when the branch with the filter has just been created in the source repository. For more information about filtering on file paths, see [Add trigger with code push or pull request event types](pipelines-filter.md).
 
 **Result:** For example, pipelines in CodePipeline that have a file path filter on a branch "B" will not be triggered when branch "B" is created. If there are no file path filters, the pipeline will still start.
 
 ## Pipelines with connections that use trigger filtering by file paths might not start when file limit is reached
 <a name="troubleshooting-file-paths-files"></a>
 
-**Description:** For pipelines with source actions that use connections, such as a BitBucket source action, you can set up a trigger with a Git configuration that allows you to filter by file paths to start your pipeline. CodePipeline retrieves up to the first 100 files; therefore, when the Git configuration for the trigger is set up to filter on file paths, the pipeline might not start if there are over 100 files, For more information about filtering on file paths, see [Add trigger with code push or pull request event types](pipelines-filter.md).
+**Description:** For pipelines with source actions that use connections, such as a BitBucket source action, you can set up a trigger with a Git configuration that allows you to filter by file paths to start your pipeline. CodePipeline retrieves up to the first 100 files; therefore, when the Git configuration for the trigger is set up to filter on file paths, the pipeline might not start if there are over 100 files. For more information about filtering on file paths, see [Add trigger with code push or pull request event types](pipelines-filter.md).
 
 **Result:** For example, if a diff contains 150 files, CodePipeline looks at the first 100 files (in no particular order) to check against the file path filter specified. If the file that matches the file path filter is not among the 100 files retrieved by CodePipeline, the pipeline will not be invoked.
 

@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Postgre
 # Managing temporary files with PostgreSQL
 <a name="PostgreSQL.ManagingTempFiles"></a>
 
-In PostgreSQL, a complex query might perform several sort or hash operations at the same time, with each operation using instance memory to store results up to the value specified in the [https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-WORK-MEM](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-WORK-MEM) parameter. When the instance memory is not sufficient, temporary files are created to store the results. These are written to disk to complete the query execution. Later, these files are automatically removed after the query completes. In Aurora PostgreSQL, these files share local storage with other log files. You can monitor your Aurora PostgreSQL DB cluster's local storage space by watching the Amazon CloudWatch metric for `FreeLocalStorage`. For more information, see [ Troubleshoot local storage issues](https://aws.amazon.com/premiumsupport/knowledge-center/postgresql-aurora-storage-issue/).
+In PostgreSQL, a complex query might perform several sort or hash operations at the same time, with each operation using instance memory to store results up to the value specified in the [`work_mem`](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-WORK-MEM) parameter. When the instance memory is not sufficient, temporary files are created to store the results. These are written to disk to complete the query execution. Later, these files are automatically removed after the query completes. In Aurora PostgreSQL, these files share local storage with other log files. You can monitor your Aurora PostgreSQL DB cluster's local storage space by watching the Amazon CloudWatch metric for `FreeLocalStorage`. For more information, see [ Troubleshoot local storage issues](https://aws.amazon.com/premiumsupport/knowledge-center/postgresql-aurora-storage-issue/).
 
 We recommend using Aurora Optimized Read clusters for workloads involving multiple concurrent queries that increase the usage of temporary files. These clusters use local Non-Volatile Memory Express (NVMe) based solid state drive (SSD) block-level storage to place the temporary files. For more information, see [Improving query performance for Aurora PostgreSQL with Aurora Optimized Reads](AuroraPostgreSQL.optimized.reads.md).
 
 You can use the following parameters and functions to manage the temporary files in your instance.
-+ **[https://www.postgresql.org/docs/current/runtime-config-resource.html#RUNTIME-CONFIG-RESOURCE-DISK](https://www.postgresql.org/docs/current/runtime-config-resource.html#RUNTIME-CONFIG-RESOURCE-DISK)** – This parameter cancels any query exceeding the size of temp\_files in KB. This limit prevents any query from running endlessly and consuming disk space with temporary files. You can estimate the value using the results from the `log_temp_files` parameter. As a best practice, examine the workload behavior and set the limit according to the estimation. The following example shows how a query is canceled when it exceeds the limit.
++ **[`temp_file_limit`](https://www.postgresql.org/docs/current/runtime-config-resource.html#RUNTIME-CONFIG-RESOURCE-DISK)** – This parameter cancels any query exceeding the size of temp\_files in KB. This limit prevents any query from running endlessly and consuming disk space with temporary files. You can estimate the value using the results from the `log_temp_files` parameter. As a best practice, examine the workload behavior and set the limit according to the estimation. The following example shows how a query is canceled when it exceeds the limit.
 
   ```
   postgres=>select * from pgbench_accounts, pg_class, big_table;
@@ -19,7 +19,7 @@ You can use the following parameters and functions to manage the temporary files
   ```
   ERROR: temporary file size exceeds temp_file_limit (64kB)
   ```
-+ **[https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-TEMP-FILES](https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-TEMP-FILES)** – This parameter sends messages to the postgresql.log when the temporary files of a session are removed. This parameter produces logs after a query successfully completes. Therefore, it might not help in troubleshooting active, long-running queries.
++ **[`log_temp_files`](https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-TEMP-FILES)** – This parameter sends messages to the postgresql.log when the temporary files of a session are removed. This parameter produces logs after a query successfully completes. Therefore, it might not help in troubleshooting active, long-running queries.
 
   The following example shows that when the query successfully completes, the entries are logged in the postgresql.log file while the temporary files are cleaned up.
 
@@ -30,7 +30,7 @@ You can use the following parameters and functions to manage the temporary files
   2023-02-06 23:48:35 UTC:205.251.233.182(12456):adminuser@postgres:[31236]:LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp31236.4", size 180428800
   2023-02-06 23:48:35 UTC:205.251.233.182(12456):adminuser@postgres:[31236]:STATEMENT:  select a.aid from pgbench_accounts a, pgbench_accounts b where a.bid=b.bid order by a.bid limit 10;
   ```
-+ **[https://www.postgresql.org/docs/current/functions-admin.html#FUNCTIONS-ADMIN-GENFILE](https://www.postgresql.org/docs/current/functions-admin.html#FUNCTIONS-ADMIN-GENFILE)** – This function that is available from RDS for PostgreSQL 13 and above provides visibility into the current temporary file usage. The completed query doesn't appear in the results of the function. In the following example, you can view the results of this function.
++ **[`pg_ls_tmpdir`](https://www.postgresql.org/docs/current/functions-admin.html#FUNCTIONS-ADMIN-GENFILE)** – This function that is available from RDS for PostgreSQL 13 and above provides visibility into the current temporary file usage. The completed query doesn't appear in the results of the function. In the following example, you can view the results of this function.
 
   ```
   postgres=>select * from pg_ls_tmpdir();

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/api-tagreso
 # TagResource
 <a name="api-tagresource"></a>
 
-The following Java example shows how to use the [https://docs.aws.amazon.com/signer/latest/api/API_TagResource.html](https://docs.aws.amazon.com/signer/latest/api/API_TagResource.html) operation.
+The following Java example shows how to use the [`TagResource`](https://docs.aws.amazon.com/signer/latest/api/API_TagResource.html) operation.
 
 ```
 package com.examples;

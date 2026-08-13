@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/exact-match-pattern-match-semantic-match.html
 ---
 
-# Use a Word or phrase condition in a Contact Lens rule
+# Use a Word or phrase condition in a conversational analytics rule
 <a name="exact-match-pattern-match-semantic-match"></a>
 
-Within Contact Lens **conversational analytics** rule, you have the option to specify a Words or phrases condition. You can choose Exact Match, Semantic Match, or Pattern Match for the words or phrases. This topic explains each type of match.
+Within conversational analytics **conversational analytics** rule, you have the option to specify a Words or phrases condition. You can choose Exact Match, Semantic Match, or Pattern Match for the words or phrases. This topic explains each type of match.
 
 **Note**
 All three match types are not case sensitive, for example, if you have specified the word as "billing", it will also match with the transcript containing the word "Billing".
@@ -21,7 +21,7 @@ You can add the keywords or phrases by using either of the following methods:
 + Selecting **Import from word collection** to import pre-defined words and phrases from word collections.
 ![Import from word collection option in the UI.](http://docs.aws.amazon.com/connect/latest/adminguide/images/exact-match-2.png)
 
-Word collections can be categorized into two types: user word collections and system word collections. System word collections are pre-defined by Connect Customer, which are non-editable to users. A user word collection can be created, read, updated, and deleted (CRUD) by users. For more information, see [Manage word collections when you create conversational analytics rules in Contact Lens](manage-word-collections.md).
+Word collections can be categorized into two types: user word collections and system word collections. System word collections are pre-defined by Connect Customer, which are non-editable to users. A user word collection can be created, read, updated, and deleted (CRUD) by users. For more information, see [Manage word collections when you create conversational analytics rules in conversational analytics](manage-word-collections.md).
 
 ## How to use pattern match
 <a name="pattern-match"></a>

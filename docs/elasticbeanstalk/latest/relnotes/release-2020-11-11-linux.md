@@ -19,24 +19,41 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **October 26, 2020** to all Amazon Linux AMI platforms.<br />The **PHP** release includes security fixes. For more information, see **Platform-specific updates** in this table. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-11-11-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-11-11-linux.html) |
-| **Apache HTTP Server** | *Removed support for Apache HTTP Server 2.2.* Prior to this release, Apache 2.2 was part of two current Tomcat branches. It was also part of retiring Tomcat branches, which are now retired. |
-| **Multicontainer Docker** | Updated the ECS agent to version 1.46.0. |
-| **Preconfigured Docker** | *Discontinued the following platform branches:*+  Go 1.4 (Docker) <br />+  Go 1.3 (Docker) <br />+  Python 3.4 with uWSGI 2 (Docker)  |
-| **Go** | Updated Go to release 1.15.4. For details, see [go1.15](https://golang.org/doc/devel/release.html#go1.15) in *The Go Programming Language Release History*. |
-| **Tomcat** | *Discontinued the following platform branches:*+  Java 8 with Tomcat 8 <br />+  Java 6 with Tomcat 7  |
-| **Node.js** | Updated the Node.js platform to add support for Node versions [12.19.0](https://nodejs.org/en/blog/release/v12.19.0/) and [10.23.0](https://nodejs.org/en/blog/release/v10.23.0/).<br />*Removed all Node.js versions 4.x – 8.x.* |
-| **PHP** | Updated PHP 7.3 and 7.2 to releases [7.3.23](https://www.php.net/releases/7_3_23.php) and [7.2.34](https://www.php.net/releases/7_2_34.php), respectively.<br />The **PHP 7.3** and **PHP 7.2** releases include security fixes.<br />*Discontinued the following platform branches:*+  PHP 7.1 <br />+  PHP 7.0 <br />+  PHP 5.6 <br />+  PHP 5.5 <br />+  PHP 5.4  |
-| **Python** | *Discontinued the following platform branches:*+  Python 3.4 <br />+  Python 2.7 <br />+  Python 2.6  |
-| **Ruby** | *Discontinued the following platform branches:*+  Ruby 2.3 with Puma <br />+  Ruby 2.3 with Passenger <br />+  Ruby 2.2 with Puma <br />+  Ruby 2.2 with Passenger <br />+  Ruby 2.1 with Puma <br />+  Ruby 2.1 with Passenger <br />+  Ruby 2.0 with Puma <br />+  Ruby 2.0 with Passenger <br />+  Ruby 1.9 with Passenger  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>October 26, 2020</b> to all Amazon Linux AMI platforms.<br />The <b>PHP</b> release includes security fixes. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Apache HTTP Server</b></td><td><i>Removed support for Apache HTTP Server 2.2.</i> Prior to this release, Apache 2.2 was part of two current Tomcat branches. It was also part of retiring Tomcat branches, which are now retired.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Multicontainer Docker</b></td><td>Updated the ECS agent to version 1.46.0.</td></tr>
+  <tr><td><b>Preconfigured Docker</b></td><td><i>Discontinued the following platform branches:</i><ul><li> Go 1.4 (Docker) </li><li> Go 1.3 (Docker) </li><li> Python 3.4 with uWSGI 2 (Docker) </li></ul></td></tr>
+  <tr><td><b>Go</b></td><td>Updated Go to release 1.15.4. For details, see <a href="https://golang.org/doc/devel/release.html#go1.15">go1.15</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Tomcat</b></td><td><i>Discontinued the following platform branches:</i><ul><li> Java 8 with Tomcat 8 </li><li> Java 6 with Tomcat 7 </li></ul></td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform to add support for Node versions <a href="https://nodejs.org/en/blog/release/v12.19.0/">12.19.0</a> and <a href="https://nodejs.org/en/blog/release/v10.23.0/">10.23.0</a>.<br /><i>Removed all Node.js versions 4.x – 8.x.</i></td></tr>
+  <tr><td><b>PHP</b></td><td>Updated PHP 7.3 and 7.2 to releases <a href="https://www.php.net/releases/7_3_23.php">7.3.23</a> and <a href="https://www.php.net/releases/7_2_34.php">7.2.34</a>, respectively.<br />The <b>PHP 7.3</b> and <b>PHP 7.2</b> releases include security fixes.<br /><i>Discontinued the following platform branches:</i><ul><li> PHP 7.1 </li><li> PHP 7.0 </li><li> PHP 5.6 </li><li> PHP 5.5 </li><li> PHP 5.4 </li></ul></td></tr>
+  <tr><td><b>Python</b></td><td><i>Discontinued the following platform branches:</i><ul><li> Python 3.4 </li><li> Python 2.7 </li><li> Python 2.6 </li></ul></td></tr>
+  <tr><td><b>Ruby</b></td><td><i>Discontinued the following platform branches:</i><ul><li> Ruby 2.3 with Puma </li><li> Ruby 2.3 with Passenger </li><li> Ruby 2.2 with Puma </li><li> Ruby 2.2 with Passenger </li><li> Ruby 2.1 with Puma </li><li> Ruby 2.1 with Passenger </li><li> Ruby 2.0 with Puma </li><li> Ruby 2.0 with Passenger </li><li> Ruby 1.9 with Passenger </li></ul></td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2020-11-11-linux.platforms"></a>

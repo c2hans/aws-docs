@@ -2,17 +2,17 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-example-output-files.html
 ---
 
-# Example Contact Lens conversational analytics output files for a call
+# Example conversational analytics output files for a call
 <a name="contact-lens-example-output-files"></a>
 
-The following sections provide examples of the output that results when Contact Lens conversational analytics detects issues, matches categories, indicates loudness, redacts sensitive data, and skipped analysis.
+The following sections provide examples of the output that results when conversational analytics detects issues, matches categories, indicates loudness, redacts sensitive data, and skipped analysis.
 
 Expand each section to learn more.
 
-## Example original file for a call analyzed by Contact Lens conversational analytics
+## Example original file for a call analyzed by conversational analytics
 <a name="example-original-output-file"></a>
 
-The following example shows the schema for a call that Contact Lens conversational analytics has analyzed. The example shows loudness, issue detection, call drivers, and the information that will be redacted.
+The following example shows the schema for a call that conversational analytics has analyzed. The example shows loudness, issue detection, call drivers, and the information that will be redacted.
 
 Note the following about the analyzed file:
 + It doesn't indicate which sensitive data were redacted. All data are referred to as PII (personally identifiable information).
@@ -384,12 +384,12 @@ Note the following about the analyzed file:
 }
 ```
 
-## Example redacted file for a call analyzed by Contact Lens conversational analytics
+## Example redacted file for a call analyzed by conversational analytics
 <a name="example-redacted-file"></a>
 
-This section shows an example redacted file for a call after it's been analyzed by Contact Lens conversational analytics. It's a twin of the original analyzed file. The only difference is that sensitive data are redacted. In this example, three entities were selected for redaction: "`CREDIT_DEBIT_NUMBER`", "`NAME`", "`USERNAME`".
+This section shows an example redacted file for a call after it's been analyzed by conversational analytics. It's a twin of the original analyzed file. The only difference is that sensitive data are redacted. In this example, three entities were selected for redaction: "`CREDIT_DEBIT_NUMBER`", "`NAME`", "`USERNAME`".
 
-In this example, `RedactionMaskMode` is set to PII. When an entity is redacted, Contact Lens replaces it with `[PII]`. If it were set to `ENTITY_TYPE`, Contact Lens would replace the data with the name of the entity, for example, `[CREDIT_DEBIT_NUMBER]`.
+In this example, `RedactionMaskMode` is set to PII. When an entity is redacted, conversational analytics replaces it with `[PII]`. If it were set to `ENTITY_TYPE`, conversational analytics would replace the data with the name of the entity, for example, `[CREDIT_DEBIT_NUMBER]`.
 
 ```
 {

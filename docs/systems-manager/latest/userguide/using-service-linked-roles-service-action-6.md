@@ -45,7 +45,7 @@ Systems Manager doesn't allow you to edit the `AmazonSSMExplorerExportRole` serv
 ## Deleting the `AmazonSSMExplorerExportRole` service-linked role for Systems Manager
 <a name="delete-service-linked-role-service-action-6"></a>
 
-If you no longer need to use any feature or service that requires a service-linked role, then we recommend that you delete that role. That way you don’t have an unused entity that isn't actively monitored or maintained. You can use the IAM console, the AWS CLI, or the IAM API to manually delete the service-linked role. To do this, you must first manually clean up the resources for your service-linked role, and then you can manually delete it.
+If you no longer need to use any feature or service that requires a service-linked role, then we recommend that you delete that role. That way you don’t have an unused entity that isn't actively monitored or maintained. You can use the IAM console, the AWS CLI, or the IAM API to manually delete the service-linked role. To do this, you must first manually clean up the resources for your service-linked role. Then, you can manually delete it.
 
 **Note**
 If the Systems Manager service is using the role when you try to delete tags or resource groups, then the deletion might fail. If that happens, wait for a few minutes and try the operation again.

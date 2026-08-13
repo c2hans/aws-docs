@@ -18,24 +18,41 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/alas2.html) on or before **January 21, 2022** to all released Amazon Linux 2 platforms.<br />The **Apache httpd**, **Node.js**, and **PHP** releases are security releases. For more information, see **Cross-platform updates** and **Platform-specific updates** in this table. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-02-03-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-02-03-linux.html) |
-| ***\*\*New\!\*\** Consistent *webapp* user for persistent storage permissions** | Elastic Beanstalk assigns the *webapp* user a uid (user id) and gid (group id) value of 900 for new environments. It does the same for existing environments following a platform version update. This approach allows the *webapp* user to remain consistent across platform updates. Access permission for the *webapp* user to permanent file system storage also remains consistent as a result. For more information, see [Persistent storage](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.concepts.design.html#concepts.concepts.design.storage) in the *AWS Elastic Beanstalk Developer Guide*. Customers with existing Amazon EFS file systems that rely on a specific *webapp* user uid or gid other than 900 should be aware that the uid and gid value will change to 900 with this platform update. Please refer to this [GitHub issue](https://github.com/aws/elastic-beanstalk-roadmap/issues/137) for more information regarding this platform update.   |
-| **Base AMI** | Updated the base AMI to version **2.0.20220121**. |
-| **Apache httpd** | Updated platforms supporting the Apache HTTP Server 2.4 to version **2.4.52**. For details, see [Changes with Apache 2.4.x](https://downloads.apache.org/httpd/CHANGES_2.4) on the *Apache Software Foundation* website.<br />The Apache 2.4.52 release is a security release. |
-| **Docker** | Updated Docker to version **20.10.7-5**.<br />Fixed support for Docker [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/) in Amazon Linux 2 platform branches. For more information, see [The Docker platform](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker.html#docker-platform-single) in the *AWS Elastic Beanstalk Developer Guide*. |
-| **Go** | Updated Go to release **1.17.6**. For details, see [go1.17](https://golang.org/doc/devel/release.html#go1.17) in *The Go Programming Language Release History*. |
-| **Corretto** | Updated Corretto 8 to version **8.322.06.3**. For more information, see [Change Log for Amazon Corretto 8](https://github.com/corretto/corretto-8/blob/develop/CHANGELOG.md) in the Corretto 8 repository on GitHub. |
-| **Node.js** | Updated Node.js 14 to add support for Node version [14.18.3](https://nodejs.org/en/blog/release/v14.18.3/).<br />Updated Node.js 12 to add support for Node version [12.22.9](https://nodejs.org/en/blog/release/v12.22.9/).<br />The new Node.js versions are security releases. |
-| **PHP** | Updated PHP 8.0 and 7.4 to releases [8.0.13](https://www.php.net/releases/8_0_13.php) and [7.4.26](https://www.php.net/releases/7_4_26.php), respectively.<br />These updates are security releases. |
-| **Ruby** | Updated RubyGems to release [3.3.6](https://blog.rubygems.org/2022/01/26/3.3.6-released.html).<br />Updated Puma to version [5.6.1](https://github.com/puma/puma/releases/tag/v5.6.1).Notes:   If you use the bootsnap gem, we recommend you update to [bootsnap 1.9.3](https://rubygems.org/gems/bootsnap/versions/1.9.3) or later. Older versions of bootsnap may encounter an issue with Ruby 3.0.3. For more information, see [Shopify bootsnap issue 378](https://github.com/Shopify/bootsnap/issues/378) on the GitHub website.   This version of Ruby enforces the version locking feature, described in [Rubygems Pull Request 4076](https://github.com/rubygems/rubygems/pull/4076) on the GitHub website. This feature may cause some issues with applications running on this platform version. To prevent these issues we're including a workaround that will continue to use the bundler version already installed on the instance, instead of enforcing the bundler update feature. No action is required on your part.     |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/alas2.html">Amazon Linux Security Center</a> on or before <b>January 21, 2022</b> to all released Amazon Linux 2 platforms.<br />The <b>Apache httpd</b>, <b>Node.js</b>, and <b>PHP</b> releases are security releases. For more information, see <b>Cross-platform updates</b> and <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b><i>**New!**</i> Consistent <i>webapp</i> user for persistent storage permissions</b></td><td>Elastic Beanstalk assigns the <i>webapp</i> user a uid (user id) and gid (group id) value of 900 for new environments. It does the same for existing environments following a platform version update. This approach allows the <i>webapp</i> user to remain consistent across platform updates. Access permission for the <i>webapp</i> user to permanent file system storage also remains consistent as a result. For more information, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.concepts.design.html#concepts.concepts.design.storage">Persistent storage</a> in the <i>AWS Elastic Beanstalk Developer Guide</i>. Customers with existing Amazon EFS file systems that rely on a specific <i>webapp</i> user uid or gid other than 900 should be aware that the uid and gid value will change to 900 with this platform update. Please refer to this <a href="https://github.com/aws/elastic-beanstalk-roadmap/issues/137">GitHub issue</a> for more information regarding this platform update.  </td></tr>
+  <tr><td><b>Base AMI</b></td><td>Updated the base AMI to version <b>2.0.20220121</b>.</td></tr>
+  <tr><td><b>Apache httpd</b></td><td>Updated platforms supporting the Apache HTTP Server 2.4 to version <b>2.4.52</b>. For details, see <a href="https://downloads.apache.org/httpd/CHANGES_2.4">Changes with Apache 2.4.x</a> on the <i>Apache Software Foundation</i> website.<br />The Apache 2.4.52 release is a security release.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Docker</b></td><td>Updated Docker to version <b>20.10.7-5</b>.<br />Fixed support for Docker <a href="https://docs.docker.com/develop/develop-images/multistage-build/">multi-stage builds</a> in Amazon Linux 2 platform branches. For more information, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker.html#docker-platform-single">The Docker platform</a> in the <i>AWS Elastic Beanstalk Developer Guide</i>.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated Go to release <b>1.17.6</b>. For details, see <a href="https://golang.org/doc/devel/release.html#go1.17">go1.17</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Corretto</b></td><td>Updated Corretto 8 to version <b>8.322.06.3</b>. For more information, see <a href="https://github.com/corretto/corretto-8/blob/develop/CHANGELOG.md">Change Log for Amazon Corretto 8</a> in the Corretto 8 repository on GitHub.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated Node.js 14 to add support for Node version <a href="https://nodejs.org/en/blog/release/v14.18.3/">14.18.3</a>.<br />Updated Node.js 12 to add support for Node version <a href="https://nodejs.org/en/blog/release/v12.22.9/">12.22.9</a>.<br />The new Node.js versions are security releases.</td></tr>
+  <tr><td><b>PHP</b></td><td>Updated PHP 8.0 and 7.4 to releases <a href="https://www.php.net/releases/8_0_13.php">8.0.13</a> and <a href="https://www.php.net/releases/7_4_26.php">7.4.26</a>, respectively.<br />These updates are security releases.</td></tr>
+  <tr><td><b>Ruby</b></td><td>Updated RubyGems to release <a href="https://blog.rubygems.org/2022/01/26/3.3.6-released.html">3.3.6</a>.<br />Updated Puma to version <a href="https://github.com/puma/puma/releases/tag/v5.6.1">5.6.1</a>.Notes: <ul><li> If you use the bootsnap gem, we recommend you update to <a href="https://rubygems.org/gems/bootsnap/versions/1.9.3">bootsnap 1.9.3</a> or later. Older versions of bootsnap may encounter an issue with Ruby 3.0.3. For more information, see <a href="https://github.com/Shopify/bootsnap/issues/378">Shopify bootsnap issue 378</a> on the GitHub website. </li><li> This version of Ruby enforces the version locking feature, described in <a href="https://github.com/rubygems/rubygems/pull/4076">Rubygems Pull Request 4076</a> on the GitHub website. This feature may cause some issues with applications running on this platform version. To prevent these issues we're including a workaround that will continue to use the bundler version already installed on the instance, instead of enforcing the bundler update feature. No action is required on your part.  </li></ul> </td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2022-02-03-linux.platforms"></a>

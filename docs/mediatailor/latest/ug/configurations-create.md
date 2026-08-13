@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/configurations-cre
 
 This topic shows how to create a configuration to start receiving content streams with AWS Elemental MediaTailor. It also shows how to provide an access point for downstream playback devices to request content.
 
-You can use the AWS Elemental MediaTailor console, the AWS Command Line Interface (AWS CLI)>, or the MediaTailor API to create a configuration. For information about creating a configuration through the AWS CLI or MediaTailor API, see the [https://docs.aws.amazon.com/mediatailor/latest/apireference/what-is.html](https://docs.aws.amazon.com/mediatailor/latest/apireference/what-is.html)..
+You can use the AWS Elemental MediaTailor console, the AWS Command Line Interface (AWS CLI)>, or the MediaTailor API to create a configuration. For information about creating a configuration through the AWS CLI or MediaTailor API, see the [*AWS Elemental MediaTailor API Reference*](https://docs.aws.amazon.com/mediatailor/latest/apireference/what-is.html)..
 
 When you create a configuration, don't put sensitive identifying information into free-form fields such as the **Configuration name** field. Identifying information can include things like customer account numbers. In addition, don't use identifying information when you work in the MediaTailor console, REST API, the AWS CLI, or AWS SDKs. Any data that you enter into MediaTailor might get picked up for inclusion in diagnostic logs or Amazon CloudWatch Events.
 
@@ -163,37 +163,37 @@ For HLS, enables or disables ad marker passthrough. When ad marker passthrough i
 **Individual ADS request timeout**
 The maximum time, in milliseconds, that MediaTailor waits for a single HTTP response when resolving an ad decision during live or VOD playback. Default: `3000`. Valid range: `250`–`6000`.
 For more information about how MediaTailor handles ad stitching in live and VOD workflows, see [Live ad stitching behavior](ad-behavior.md#ad-behavior-live) and [Ad stitching behavior for VOD](ad-behavior.md#ad-behavior-vod).
-This setting corresponds to the `AdsRequestTimeoutMilliseconds` member of the [https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html](https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html) `AdsPersonalizationTimeouts` parameter.
+This setting corresponds to the `AdsRequestTimeoutMilliseconds` member of the [PutPlaybackConfiguration](https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html) `AdsPersonalizationTimeouts` parameter.
 
 **Maximum concurrent ADS requests**
 The number of simultaneous requests that MediaTailor can make to the ADS. Default: `1`. Valid range: `1`–`100`.
-This setting corresponds to the `MaxConcurrentAdsRequests` member of the [https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html](https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html) `AdsPersonalizationConcurrency` parameter.
+This setting corresponds to the `MaxConcurrentAdsRequests` member of the [PutPlaybackConfiguration](https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html) `AdsPersonalizationConcurrency` parameter.
 
 **Live maximum ADS personalization time**
 The total time budget, in milliseconds, for all ADS activity during live manifest personalization. This budget is shared across all ad breaks in a single manifest request. Default: `10000`. Valid range: `250`–`10000`.
 For more information about live ad stitching behavior, see [Live ad stitching behavior](ad-behavior.md#ad-behavior-live).
-This setting corresponds to the `LiveMaximumAdsPersonalizationTimeMilliseconds` member of the [https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html](https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html) `AdsPersonalizationTimeouts` parameter.
+This setting corresponds to the `LiveMaximumAdsPersonalizationTimeMilliseconds` member of the [PutPlaybackConfiguration](https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html) `AdsPersonalizationTimeouts` parameter.
 
 **VOD maximum ADS personalization time**
 The total time budget, in milliseconds, for all ADS activity during VOD manifest personalization. This budget is shared across all ad breaks in a single manifest request. Default: `10000`. Valid range: `250`–`10000`.
 For more information about VOD ad stitching behavior, see [Ad stitching behavior for VOD](ad-behavior.md#ad-behavior-vod).
-This setting corresponds to the `VodMaximumAdsPersonalizationTimeMilliseconds` member of the [https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html](https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html) `AdsPersonalizationTimeouts` parameter.
+This setting corresponds to the `VodMaximumAdsPersonalizationTimeMilliseconds` member of the [PutPlaybackConfiguration](https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html) `AdsPersonalizationTimeouts` parameter.
 
 **Enable VOD VAST parallelization**
 When you turn on this setting, MediaTailor processes ADS requests in parallel for VOD workflows that return VAST responses. This setting applies to VOD workflows only. MediaTailor turns off this setting by default. To take effect, set **Maximum concurrent ADS requests** to a value greater than `1`.
 **Frequency capping with concurrent requests**
 When you enable VAST parallelization, some ad servers might not enforce frequency cap limits for concurrent ad requests. Check with your ad server provider to confirm whether frequency capping is supported under parallel request conditions. If your ad server doesn't support frequency caps with concurrent requests, consider switching to VMAP, which handles frequency capping correctly for parallel ad requests.
-This setting corresponds to the `EnableVodVastParallelization` member of the [https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html](https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html) `AdsPersonalizationConcurrency` parameter.
+This setting corresponds to the `EnableVodVastParallelization` member of the [PutPlaybackConfiguration](https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html) `AdsPersonalizationConcurrency` parameter.
 
 **Prefetch ADS request timeout**
 The maximum time, in milliseconds, that MediaTailor waits for a single HTTP response when resolving an ad decision during prefetch retrieval. Default: the **Individual ADS request timeout** value. Valid range: `250`–`10000`.
 For more information about prefetch, see [Prefetching ads](prefetching-ads.md).
-This setting corresponds to the `PrefetchAdsRequestTimeoutMilliseconds` member of the [https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html](https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html) `AdsPersonalizationTimeouts` parameter.
+This setting corresponds to the `PrefetchAdsRequestTimeoutMilliseconds` member of the [PutPlaybackConfiguration](https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html) `AdsPersonalizationTimeouts` parameter.
 
 **Prefetch maximum ADS personalization time**
 The total time budget, in milliseconds, for all ADS activity during prefetch retrieval. By default, this timeout has no upper limit. Valid range: `250`–`10000`.
 For more information about prefetch, see [Prefetching ads](prefetching-ads.md).
-This setting corresponds to the `PrefetchMaximumAdsPersonalizationTimeMilliseconds` member of the [https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html](https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html) `AdsPersonalizationTimeouts` parameter.
+This setting corresponds to the `PrefetchMaximumAdsPersonalizationTimeMilliseconds` member of the [PutPlaybackConfiguration](https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutPlaybackConfiguration.html) `AdsPersonalizationTimeouts` parameter.
 
 **Setting timeouts together**
 For each workflow, you must set the individual timeout and the total time budget together. The individual timeout can't exceed the total budget. Live and VOD workflows share a single **Individual ADS request timeout**. Set that timeout together with both the live and VOD total time budgets. Similarly, set **Prefetch ADS request timeout** and **Prefetch maximum ADS personalization time** together — you can't set one without the other.

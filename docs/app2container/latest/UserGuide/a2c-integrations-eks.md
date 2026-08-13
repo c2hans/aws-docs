@@ -7,7 +7,7 @@ AWS .NET Modernization Tools Porting Assistant (PA) for .NET, AWS App2Container 
 # Deploy application containers to Amazon EKS with AWS App2Container
 <a name="a2c-integrations-eks"></a>
 
-Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can use to run Kubernetes on AWS. Amazon EKS streamlines the provisioning of highly available and secure clusters, and automates key maintenance tasks such as patching, node provisioning, and updates. Kubernetes is an open-source system for automating the deployment, scaling, and management of containerized applications. For more information about Amazon EKS, see [What is Amazon EKS?](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html) in the *[https://docs.aws.amazon.com/eks/latest/userguide/](https://docs.aws.amazon.com/eks/latest/userguide/)*.
+Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can use to run Kubernetes on AWS. Amazon EKS streamlines the provisioning of highly available and secure clusters, and automates key maintenance tasks such as patching, node provisioning, and updates. Kubernetes is an open-source system for automating the deployment, scaling, and management of containerized applications. For more information about Amazon EKS, see [What is Amazon EKS?](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html) in the *[*Amazon EKS User Guide*](https://docs.aws.amazon.com/eks/latest/userguide/)*.
 
 ## Prerequisites
 <a name="integrations-eks-prereq"></a>

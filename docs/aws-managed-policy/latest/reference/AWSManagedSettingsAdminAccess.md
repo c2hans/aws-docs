@@ -18,13 +18,13 @@ You can attach `AWSManagedSettingsAdminAccess` to your users, groups, and roles.
 <a name="AWSManagedSettingsAdminAccess-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: July 22, 2026, 01:27 UTC
-+ **Edited time:** July 23, 2026, 00:42 UTC
++ **Edited time:** August 07, 2026, 23:47 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AWSManagedSettingsAdminAccess`
 
 ## Policy version
 <a name="AWSManagedSettingsAdminAccess-version"></a>
 
-**Policy version:** v2 (default)
+**Policy version:** v4 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -286,7 +286,10 @@ The policy's default version is the version that defines the permissions for the
         "support:DescribeSeverityLevels",
         "support:DescribeCases",
         "support:AddCommunicationToCase",
-        "support:ResolveCase"
+        "support:ResolveCase",
+        "supportplans:GetSupportPlan",
+        "supportplans:StartSupportPlanUpdate",
+        "supportplans:GetSupportPlanUpdateStatus"
       ],
       "Resource" : "*"
     },
@@ -323,7 +326,10 @@ The policy's default version is the version that defines the permissions for the
       "Condition" : {
         "StringEquals" : {
           "aws:CalledViaLast" : "account.amazonaws.com",
-          "organizations:ServicePrincipal" : "sso.amazonaws.com"
+          "organizations:ServicePrincipal" : [
+            "sso.amazonaws.com",
+            "account-access.amazonaws.com"
+          ]
         }
       }
     },

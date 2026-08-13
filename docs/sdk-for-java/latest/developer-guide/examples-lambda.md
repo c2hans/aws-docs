@@ -15,9 +15,9 @@ This section provides examples of programming with the Lambda service client by 
 ## Invoke a Lambda function
 <a name="invoke-function"></a>
 
-You can invoke a Lambda function by creating a [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/LambdaClient.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/LambdaClient.html) object and invoking its `invoke` method. Create an [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/model/InvokeRequest.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/model/InvokeRequest.html) object to specify additional information such as the function name and the payload to pass to the Lambda function. Function names appear as *arn:aws:lambda:us-east-1:123456789012:function:HelloFunction*. You can retrieve the value by looking at the function in the AWS Management Console.
+You can invoke a Lambda function by creating a [`LambdaClient`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/LambdaClient.html) object and invoking its `invoke` method. Create an [`InvokeRequest`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/model/InvokeRequest.html) object to specify additional information such as the function name and the payload to pass to the Lambda function. Function names appear as *arn:aws:lambda:us-east-1:123456789012:function:HelloFunction*. You can retrieve the value by looking at the function in the AWS Management Console.
 
-To pass payload data to a function, create a [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/SdkBytes.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/SdkBytes.html) object that contains information. For example, in the following code example, notice the JSON data passed to the Lambda function.
+To pass payload data to a function, create a [`SdkBytes`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/SdkBytes.html) object that contains information. For example, in the following code example, notice the JSON data passed to the Lambda function.
 
  **Imports**
 
@@ -65,7 +65,7 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 ## List Lambda functions
 <a name="list-function"></a>
 
-Build a `[LambdaClient](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/LambdaClient.html)` object and invoke its `listFunctions` method. This method returns a [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/model/ListFunctionsResponse.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/model/ListFunctionsResponse.html) object. You can invoke this object’s `functions` method to return a list of [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/model/FunctionConfiguration.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/model/FunctionConfiguration.html) objects. You can iterate through the list to retrieve information about the functions. For example, the following Java code example shows how to get each function name.
+Build a `[LambdaClient](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/LambdaClient.html)` object and invoke its `listFunctions` method. This method returns a [`ListFunctionsResponse`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/model/ListFunctionsResponse.html) object. You can invoke this object’s `functions` method to return a list of [`FunctionConfiguration`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/model/FunctionConfiguration.html) objects. You can iterate through the list to retrieve information about the functions. For example, the following Java code example shows how to get each function name.
 
  **Imports**
 
@@ -105,7 +105,7 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 ## Delete a Lambda function
 <a name="delete-function"></a>
 
-Build a [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/LambdaClient.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/LambdaClient.html) object and invoke its `deleteFunction` method. Create a [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/model/DeleteFunctionRequest.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/model/DeleteFunctionRequest.html) object and pass it to the `deleteFunction` method. This object contains information such as the name of the function to delete. Function names appear as *arn:aws:lambda:us-east-1:123456789012:function:HelloFunction*. You can retrieve the value by looking at the function in the AWS Management Console.
+Build a [`LambdaClient`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/LambdaClient.html) object and invoke its `deleteFunction` method. Create a [`DeleteFunctionRequest`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/lambda/model/DeleteFunctionRequest.html) object and pass it to the `deleteFunction` method. This object contains information such as the name of the function to delete. Function names appear as *arn:aws:lambda:us-east-1:123456789012:function:HelloFunction*. You can retrieve the value by looking at the function in the AWS Management Console.
 
  **Imports**
 

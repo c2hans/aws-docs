@@ -9,7 +9,7 @@ This section describes the metrics used when calculating Historical Schedule Adh
 
 The following Scheduling metrics are available on the Real-time and Historical metrics reports. Use these metrics to track when agents are following the schedule that you have created. For instructions about how add these metrics to your report, see [How to create a historical metrics report](create-historical-metrics-report.md#historical-reports-howto-create).
 
-These metrics are available in AWS Regions only where [Forecasting, capacity planning, and scheduling](regions.md#optimization_region) is available.
+These metrics are available in AWS Regions only where [Forecasting & agent scheduling](regions.md#optimization_region) is available.
 
 ## Adherence
 <a name="adherence-hmetric"></a>

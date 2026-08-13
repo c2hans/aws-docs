@@ -25,7 +25,7 @@ For all of the expressions, the language follows the same set of rules:
 
 A [route response](apigateway-websocket-api-route-response.md) is used for modeling a response from the backend to the client. For WebSocket APIs, a route response is optional. When defined, it signals to API Gateway that it should return a response to a client upon receiving a WebSocket message.
 
-Evaluation of the *route response selection expression* produces a route response key. Eventually, this key will be used to choose from one of the [https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-routes-routeid-routeresponses.html](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-routes-routeid-routeresponses.html) associated with the API. However, currently only the `$default` key is supported.
+Evaluation of the *route response selection expression* produces a route response key. Eventually, this key will be used to choose from one of the [`RouteResponses`](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-routes-routeid-routeresponses.html) associated with the API. However, currently only the `$default` key is supported.
 
 ## API key selection expressions
 <a name="apigateway-websocket-api-apikey-selection-expressions"></a>

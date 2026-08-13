@@ -26,7 +26,7 @@ More than one cloud operating model can existing in a single AMS Managed Landing
 
 <table>
 <thead>
-  <tr><th>Decision issues</th><th>Standard CM mode / OOD\*</th><th>AWS Service Catalog</th><th>Direct Change mode</th><th>Self-service provisioning</th><th>Developer mode</th><th>Customer Managed</th></tr>
+  <tr><th>Decision issues</th><th>Standard CM mode / OOD<b>*</b></th><th>AWS Service Catalog</th><th>Direct Change mode</th><th>Self-service provisioning</th><th>Developer mode</th><th>Customer Managed</th></tr>
 </thead>
 <tbody>
   <tr><td colspan="7">Operational readiness</td></tr>
@@ -43,7 +43,7 @@ More than one cloud operating model can existing in a single AMS Managed Landing
   <tr><td>Application refactoring</td><td colspan="4">Light refactoring is needed</td><td>Light refactoring is needed (if provisioned using AMS Standard CM)</td><td>No need for refactoring</td></tr>
   <tr><td>Support for AWS services</td><td colspan="5">Limited to what is supported by AMS</td><td>Not limited</td></tr>
   <tr><td colspan="7">Business considerations</td></tr>
-  <tr><td>Time to operational readiness</td><td colspan="3">Three to six months</td><td colspan="2">6 months \+ dependent on customer application operations competencies</td><td>6-18 months dependent on customer infrastructure and application operations competencies</td></tr>
+  <tr><td>Time to operational readiness</td><td colspan="3">Three to six months</td><td colspan="2">6 months + dependent on customer application operations competencies</td><td>6-18 months dependent on customer infrastructure and application operations competencies</td></tr>
   <tr><td>Costs</td><td colspan="3">$$$$</td><td>$$$</td><td>$$</td><td>$</td></tr>
   <tr><td>Application examples</td><td colspan="3">Webserver with 3 tier stack, apps with compliance and regulatory requirements</td><td>Webserver using API Gateway, containerized application leveraging ECS/EKS</td><td>Iterating/optimizing on Data Lake application that uses Lambda, Glue, Athena, etc</td><td>De-centralized accounts/applications like sandbox, third party managed applications</td></tr>
 </tbody>

@@ -45,7 +45,7 @@ Open the console’s left navigation bar and choose **Queues**. On the Queues pa
 ------
 #### [ AWS CLI ]
 
-Use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/gamelift/update-game-session-queue.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/gamelift/update-game-session-queue.html) command with the `--priority-configuration` option to customize a queue's priority order. Amazon GameLift Servers updates a queue in your current default AWS Region, or you can add a `--region` tag to specify a different AWS Region.
+Use the [**update-game-session-queue**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/gamelift/update-game-session-queue.html) command with the `--priority-configuration` option to customize a queue's priority order. Amazon GameLift Servers updates a queue in your current default AWS Region, or you can add a `--region` tag to specify a different AWS Region.
 
 The following example request adds or updates the priority configuration for a specified queue
 

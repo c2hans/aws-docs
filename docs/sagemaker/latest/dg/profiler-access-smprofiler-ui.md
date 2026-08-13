@@ -58,7 +58,7 @@ The following procedure describes how to launch the SageMaker Profiler UI applic
 ## Option 3: Use the application launcher function in the SageMaker AI Python SDK
 <a name="profiler-access-smprofiler-ui-app-launcher-function"></a>
 
-If you are a SageMaker AI domain user and have access only to SageMaker Studio, you can access the SageMaker Profiler UI application through SageMaker Studio Classic by running the [https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) function.
+If you are a SageMaker AI domain user and have access only to SageMaker Studio, you can access the SageMaker Profiler UI application through SageMaker Studio Classic by running the [`sagemaker.interactive_apps.detail_profiler_app.DetailProfilerApp`](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) function.
 
 Note that SageMaker Studio Classic is the previous Studio UI experience before re:Invent 2023, and is migrated as an application into a newly designed Studio UI at re:Invent 2023. The SageMaker Profiler UI application is available at SageMaker AI domain level, and thus requires your domain ID and user profile name. Currently, the `DetailedProfilerApp` function only works within the SageMaker Studio Classic application; the function properly takes in the domain and user profile information from SageMaker Studio Classic.
 

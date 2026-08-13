@@ -19,7 +19,7 @@ The following table describes the supported lifecycle dates for Amazon EMR Spark
 ## emr-spark-8.0.0 application versions
 <a name="emr-spark800-app-versions"></a>
 
-This release includes the following applications: [https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html), [https://delta.io/](https://delta.io/), [https://hudi.apache.org](https://hudi.apache.org), [https://iceberg.apache.org/](https://iceberg.apache.org/), [https://jupyter-enterprise-gateway.readthedocs.io/en/latest/](https://jupyter-enterprise-gateway.readthedocs.io/en/latest/), [https://livy.incubator.apache.org/](https://livy.incubator.apache.org/), and [https://spark.apache.org/docs/latest/](https://spark.apache.org/docs/latest/).
+This release includes the following applications: [AmazonCloudWatchAgent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html), [Delta](https://delta.io/), [Hudi](https://hudi.apache.org), [Iceberg](https://iceberg.apache.org/), [JupyterEnterpriseGateway](https://jupyter-enterprise-gateway.readthedocs.io/en/latest/), [Livy](https://livy.incubator.apache.org/), and [Spark](https://spark.apache.org/docs/latest/).
 
 The table below lists the application versions available in this release of Amazon EMR and the application versions in the preceding three Amazon EMR releases (when applicable).
 

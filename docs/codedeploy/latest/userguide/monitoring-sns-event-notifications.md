@@ -21,8 +21,8 @@ You can create up to 10 triggers for each CodeDeploy deployment group, for any o
   <tr><th>Deployment events</th><th>Instance events</th></tr>
 </thead>
 <tbody>
-  <tr><td> +  Success <br />+  Failure <br />+  Started <br />+  Stopped <br />+  Rollback <br />+  Ready¹ <br />+  All deployment events  </td><td> +  Success <br />+  Failure <br />+  Started <br />+  Ready¹ <br />+  All instance events  </td></tr>
-  <tr><td colspan="2">¹Applies to blue/green deployments only. Indicates that the latest application revision has been installed on instances in a replacement environment and traffic from the original environment can now be rerouted behind a load balancer. For more information see [Working with deployments in CodeDeploy](deployments.md).</td></tr>
+  <tr><td> <ul><li> Success </li><li> Failure </li><li> Started </li><li> Stopped </li><li> Rollback </li><li> Ready¹ </li><li> All deployment events </li></ul> </td><td> <ul><li> Success </li><li> Failure </li><li> Started </li><li> Ready¹ </li><li> All instance events </li></ul> </td></tr>
+  <tr><td colspan="2">¹Applies to blue/green deployments only. Indicates that the latest application revision has been installed on instances in a replacement environment and traffic from the original environment can now be rerouted behind a load balancer. For more information see <a href="deployments.md">Working with deployments in CodeDeploy</a>.</td></tr>
 </tbody>
 </table>
 

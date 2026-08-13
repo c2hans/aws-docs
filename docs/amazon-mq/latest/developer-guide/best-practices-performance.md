@@ -117,7 +117,7 @@ In the RabbitMQ Java client library, the default value for the `global` flag is 
 
 **For all Celery versions**
 
-1. Turn off [https://docs.celeryq.dev/en/stable/userguide/configuration.html#std-setting-task_create_missing_queues](https://docs.celeryq.dev/en/stable/userguide/configuration.html#std-setting-task_create_missing_queues) to mitigate queue churn.
+1. Turn off [`task_create_missing_queues`](https://docs.celeryq.dev/en/stable/userguide/configuration.html#std-setting-task_create_missing_queues) to mitigate queue churn.
 
 1.  Then, turn off `worker_enable_remote_control` to stop dynamic creation of `celery@...pidbox` queues. This will reduce queue churn on the broker.
 

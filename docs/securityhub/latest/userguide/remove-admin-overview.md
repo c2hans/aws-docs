@@ -32,7 +32,7 @@ Choose your preferred method, and follow the instructions to remove the delegate
 
 **To remove the delegated Security Hub CSPM administrator**
 
-From the organization management account, use the [https://docs.aws.amazon.com/organizations/latest/APIReference/API_DeregisterDelegatedAdministrator.html](https://docs.aws.amazon.com/organizations/latest/APIReference/API_DeregisterDelegatedAdministrator.html) operation of the Organizations API. If you're using the AWS CLI, run the [deregister-delegated-administrator](https://docs.aws.amazon.com/cli/latest/reference/organizations/deregister-delegated-administrator.html) command. Provide the account ID of the delegated administrator, and the service principal for Security Hub CSPM, which is `securityhub.amazonaws.com`.
+From the organization management account, use the [DeregisterDelegatedAdministrator](https://docs.aws.amazon.com/organizations/latest/APIReference/API_DeregisterDelegatedAdministrator.html) operation of the Organizations API. If you're using the AWS CLI, run the [deregister-delegated-administrator](https://docs.aws.amazon.com/cli/latest/reference/organizations/deregister-delegated-administrator.html) command. Provide the account ID of the delegated administrator, and the service principal for Security Hub CSPM, which is `securityhub.amazonaws.com`.
 
 The following example removes the delegated Security Hub CSPM administrator. This example is formatted for Linux, macOS, or Unix, and it uses the backslash (\\) line-continuation character to improve readability.
 
@@ -83,7 +83,7 @@ Choose your preferred method, and follow these steps to remove the delegated Sec
 
 **To remove the delegated Security Hub CSPM administrator**
 
-From the organization management account, use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DisableOrganizationAdminAccount.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DisableOrganizationAdminAccount.html) operation of the Security Hub CSPM API. If you're using the AWS CLI, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/disable-organization-admin-account.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/disable-organization-admin-account.html) command. Provide the account ID of the delegated Security Hub CSPM administrator.
+From the organization management account, use the [DisableOrganizationAdminAccount](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DisableOrganizationAdminAccount.html) operation of the Security Hub CSPM API. If you're using the AWS CLI, run the [disable-organization-admin-account](https://docs.aws.amazon.com/cli/latest/reference/securityhub/disable-organization-admin-account.html) command. Provide the account ID of the delegated Security Hub CSPM administrator.
 
 The following example removes the delegated Security Hub CSPM administrator. This example is formatted for Linux, macOS, or Unix, and it uses the backslash (\\) line-continuation character to improve readability.
 

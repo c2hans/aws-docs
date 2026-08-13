@@ -12,7 +12,7 @@ The purpose of training is to customize the base Amazon Nova model using your pr
 For best practices, see [Best Practices](nova-forge-sft.md#best-practices).
 
 **Topics**
-+ [Nova Forge SDK](nova-forge-sdk.md)
++ [Customizing with SageMaker Python SDK](nova-forge-sdk.md)
 + [Restricted Model Packages](nova-rmp.md)
 + [Fine-tune Nova 1.0](nova-fine-tune-1.md)
 + [Amazon Nova distillation](nova-distillation.md)

@@ -16,7 +16,7 @@ When you configure CloudWatch metrics, you can create a filter for all the objec
 **Note**
 When you create a metrics configuration that filters by access point, you must use the access point Amazon Resource Name (ARN), not the access point alias. Make sure that you use the ARN for the access point itself, not the ARN for a specific object. For more information about access point ARNs, see [Using Amazon S3 access points for general purpose buckets](using-access-points.md).
 
-If you specify a filter, only requests that operate on single objects can match the filter and be included in the reported metrics. Requests like [https://docs.aws.amazon.com/AmazonS3/latest/API/multiobjectdeleteapi.html](https://docs.aws.amazon.com/AmazonS3/latest/API/multiobjectdeleteapi.html) and `ListObjects` requests don't return any metrics for configurations with filters.
+If you specify a filter, only requests that operate on single objects can match the filter and be included in the reported metrics. Requests like [DeleteObjects](https://docs.aws.amazon.com/AmazonS3/latest/API/multiobjectdeleteapi.html) and `ListObjects` requests don't return any metrics for configurations with filters.
 
 To request more complex filtering, choose two or more elements. Only objects that have all of those elements are included in the metrics configuration. If you don't set filters, all of the objects in the bucket are included in the metrics configuration.
 

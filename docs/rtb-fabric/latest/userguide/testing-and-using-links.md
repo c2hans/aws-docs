@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/testing-and-
 
 **To test your newly created link**
 
-1.  The URL components in the following example come from your API responses. If you don't have them at hand, you can find your gateway ID and link ID in the AWS Management Console, or by calling the [https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ListRequesterGateways.html](https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ListRequesterGateways.html), [https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ListResponderGateways.html](https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ListResponderGateways.html), or [https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ListLinks.html](https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ListLinks.html) operation.
+1.  The URL components in the following example come from your API responses. If you don't have them at hand, you can find your gateway ID and link ID in the AWS Management Console, or by calling the [ListRequesterGateways](https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ListRequesterGateways.html), [ListResponderGateways](https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ListResponderGateways.html), or [ListLinks](https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ListLinks.html) operation.
 
 1.  From the command line, use `curl` to send a POST request to the link. Supply an OpenRTB payload to validate end-to-end requests to your partner, or an empty body to test connectivity. The following example shows a request in the us-east-1 Region.
 

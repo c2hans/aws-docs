@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/dotnet.html
 # .NET in AL2023
 <a name="dotnet"></a>
 
- AL2023 currently provides the [https://dotnet.microsoft.com/](https://dotnet.microsoft.com/) runtime and SDK, versions 8.0, 9.0, and 10.0. .NET 6.0 reached end-of-life in November 2024 and is no longer supported. Each version is supported for the same period of time as upstream .NET. For more information, see [Package support statements](https://docs.aws.amazon.com/linux/al2023/release-notes/support-info-by-support-statement.html).
+ AL2023 currently provides the [.NET](https://dotnet.microsoft.com/) runtime and SDK, versions 8.0, 9.0, and 10.0. .NET 6.0 reached end-of-life in November 2024 and is no longer supported. Each version is supported for the same period of time as upstream .NET. For more information, see [Package support statements](https://docs.aws.amazon.com/linux/al2023/release-notes/all-packages-AL2023.12.html).
 
 ## Migrating to newer .NET versions
 <a name="dotnet-migration"></a>

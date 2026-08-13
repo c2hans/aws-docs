@@ -43,7 +43,7 @@ The following procedure shows you how to validate an email address using the Ama
 The following examples show you how to validate email addresses using the AWS CLI.
 
 **To validate an email address using the AWS CLI**
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetEmailAddressInsights.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetEmailAddressInsights.html) operation in the Amazon SES API v2 to validate email addresses. You can call this operation from the AWS CLI, as shown in the following examples.
+You can use the [`GetEmailAddressInsights`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetEmailAddressInsights.html) operation in the Amazon SES API v2 to validate email addresses. You can call this operation from the AWS CLI, as shown in the following examples.
 + Validate a single email address:
 
   ```
@@ -80,7 +80,7 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetE
       }
   }
   ```
-+ For more information about response values and data types, see the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MailboxValidation.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MailboxValidation.html) data type in the Amazon SES API v2 reference.
++ For more information about response values and data types, see the [`MailboxValidation`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MailboxValidation.html) data type in the Amazon SES API v2 reference.
 + Ensure your IAM identity has the required permissions for Email Validation API calls and CloudWatch metrics publishing:
 
   ```

@@ -87,7 +87,7 @@ Application Signals correlates service operation metrics with AWS X-Ray traces, 
 
 1. Select a point to open a diagnostic pane that shows correlated traces, metrics, and application logs for the selected point in the graph.
 
-The following image shows the tooltip that appears after hovering over a point in the graph, and the diagnostic pane which appears after clicking on a point. The tooltip contains information about the associated data point in the **Faults and Errors** graph. The pane contains **Correlated traces**, **Top contributors**, and **Application logs** associated with the selected point.
+The following image shows the tooltip that appears after hovering over a point in the graph, and the diagnostic pane which appears after choosing on a point. The tooltip contains information about the associated data point in the **Faults and Errors** graph. The pane contains **Correlated traces**, **Top contributors**, and **Application logs** associated with the selected point.
 
 ![Correlated traces for faults and errors.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/service-detail-correlated-traces.png)
 

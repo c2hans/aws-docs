@@ -19,7 +19,7 @@ After you’ve created a VPC link V2, you can set up private integrations that c
 
 The following considerations might impact your use of private integrations:
 + All resources must be owned by the same AWS account. This includes the load balancer or AWS Cloud Map service, VPC link and HTTP API.
-+ By default, private integration traffic uses the HTTP protocol. To use HTTPS, specify a [https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-integrations-integrationid.html](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-integrations-integrationid.html). To do this using the AWS Management Console, when you create your private integration, choose **Advanced settings** and then enter a secure server name.
++ By default, private integration traffic uses the HTTP protocol. To use HTTPS, specify a [`tlsConfig`](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-integrations-integrationid.html). To do this using the AWS Management Console, when you create your private integration, choose **Advanced settings** and then enter a secure server name.
 + For private integrations, API Gateway includes the [stage](http-api-stages.md) portion of the API endpoint in the request to your backend resources. For example, a request to the `test` stage of an API includes `test/{{route-path}}` in the request to your private integration. To remove the stage name from the request to your backend resources, use [parameter mapping](http-api-parameter-mapping.md) to overwrite the request path to `$request.path`.
 
 ## Create a private integration using an Application Load Balancer or Network Load Balancer

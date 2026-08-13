@@ -18,13 +18,13 @@ This policy is attached to a service-linked role that allows the service to perf
 <a name="AWSBudgetsSpendLimitMemberRolePolicy-details"></a>
 + **Type**: Service-linked role policy
 + **Creation time**: July 18, 2026, 00:57 UTC
-+ **Edited time:** July 18, 2026, 00:57 UTC
++ **Edited time:** August 11, 2026, 18:57 UTC
 + **ARN**: `arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy`
 
 ## Policy version
 <a name="AWSBudgetsSpendLimitMemberRolePolicy-version"></a>
 
-**Policy version:** v1 (default)
+**Policy version:** v3 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -45,7 +45,8 @@ The policy's default version is the version that defines the permissions for the
         "ec2:DescribeVpnGateways",
         "ec2:DescribeAddresses",
         "ec2:DescribeSnapshots",
-        "ec2:DescribeInstanceStatus"
+        "ec2:DescribeInstanceStatus",
+        "ec2:DescribeVolumes"
       ],
       "Resource" : "*"
     },
@@ -171,12 +172,19 @@ The policy's default version is the version that defines the permissions for the
       ]
     },
     {
+      "Sid" : "CostOptimizationHubActions",
+      "Effect" : "Allow",
+      "Action" : "cost-optimization-hub:UpdateEnrollmentStatus",
+      "Resource" : "*"
+    },
+    {
       "Sid" : "ComputeOptimizerActions",
       "Effect" : "Allow",
       "Action" : [
         "compute-optimizer:GetIdleRecommendations",
         "compute-optimizer:GetRecommendationSummaries",
-        "compute-optimizer:GetEnrollmentStatus"
+        "compute-optimizer:GetEnrollmentStatus",
+        "compute-optimizer:UpdateEnrollmentStatus"
       ],
       "Resource" : "*"
     },
@@ -186,7 +194,8 @@ The policy's default version is the version that defines the permissions for the
       "Action" : [
         "aco-automation:StartAutomationEvent",
         "aco-automation:ListRecommendedActions",
-        "aco-automation:GetAutomationEvent"
+        "aco-automation:GetAutomationEvent",
+        "aco-automation:UpdateEnrollmentConfiguration"
       ],
       "Resource" : "*"
     },
@@ -206,6 +215,16 @@ The policy's default version is the version that defines the permissions for the
         "account:GetPrimaryEmail"
       ],
       "Resource" : "*"
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : "iam:CreateServiceLinkedRole",
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/aco-automation.amazonaws.com/AWSServiceRoleForComputeOptimizerAutomation",
+      "Condition" : {
+        "StringLike" : {
+          "iam:AWSServiceName" : "aco-automation.amazonaws.com"
+        }
+      }
     }
   ]
 }

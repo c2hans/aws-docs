@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/change-
 # Getting the state of a change calendar
 <a name="change-calendar-getstate"></a>
 
-You can get the overall state of a calendar or the state of a calendar at a specific time in Change Calendar, a tool in AWS Systems Manager. You can also show the next time that the calendar state changes from `OPEN` to `CLOSED`, or the reverse.
+You can get the overall state of a calendar or the state of a calendar at a specific time in Change Calendar. You can also show the next time that the calendar state changes from `OPEN` to `CLOSED`, or the reverse.
 
 **Note**
 For information about integrating Change Calendar with Amazon EventBridge for automated monitoring of calendar state changes, see [Change Calendar integration with Amazon EventBridge](monitoring-systems-manager-event-examples.md#change-calendar-eventbridge-integration). EventBridge integration provides event-driven notifications when calendar states transition, complementing the polling-based approach of the `GetCalendarState` API action.

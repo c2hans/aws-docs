@@ -35,7 +35,6 @@ The following list contains AWS services and features that are out of scope for 
 + AWS Data Exchange
 + Amazon DataZone
 + Amazon Managed Streaming for Apache Kafka (Amazon MSK)
-+ Amazon Timestream for LiveAnalytics
 
 ## Application Integration
 <a name="clf-02-out-of-scope-application-integration"></a>
@@ -45,11 +44,9 @@ The following list contains AWS services and features that are out of scope for 
 ## Business Applications
 <a name="clf-02-out-of-scope-business-applications"></a>
 + Amazon WorkDocs
-+ Amazon WorkMail
 
 ## Compute
 <a name="clf-02-out-of-scope-compute"></a>
-+ AWS App Runner
 + AWS Copilot
 + AWS Wavelength
 
@@ -98,7 +95,6 @@ The following list contains AWS services and features that are out of scope for 
 <a name="clf-02-out-of-scope-machine-learning"></a>
 + Amazon Fraud Detector
 + Amazon Lookout for Metrics
-+ Amazon Mechanical Turk
 + AWS Panorama
 + Amazon Personalize
 

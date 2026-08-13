@@ -18,19 +18,36 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Framework** | **Details** |
-| --- | --- |
-| **Component** | **Details** |
-| --- | --- |
-| **Windows security updates** | Applied November 2021 security updates for Windows.<br />See the Microsoft [Security Update Guide](https://portal.msrc.microsoft.com/en-us/security-guidance). |
-| **Framework updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2021-11-23-windows.html)  |
-| **AWS component updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2021-11-23-windows.html)  |
-| **.NET Core** | Updated .NET Core 3 to version 3.1.21 on Windows Server 2019 and 2016 platform versions.<br />Updated .NET 5 to version 5.0.12 on Windows Server 2019 and 2016 platform versions. |
-| **AWS SDK for .NET** | Updated the SDK to version 3.15.1451. |
-| **AMI** | Updated the base AMI to version 2021.11.10. |
-| **EC2Launch** | Updated EC2Config to EC2Launch v2 agent (version 2.0.651) on Windows 2012 R2 platform versions. (EC2Config remains on Windows 2012 R2 Server Core platform versions.)<br />Updated EC2Launch v1 agent to EC2Launch v2 agent (version 2.0.651) on Windows Server 2019 and 2016 platform versions.<br />For more information, see [EC2Launch v2](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2launch-v2.html) in the *Amazon EC2 User Guide*. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows security updates</b></td><td>Applied November 2021 security updates for Windows.<br />See the Microsoft <a href="https://portal.msrc.microsoft.com/en-us/security-guidance">Security Update Guide</a>.</td></tr>
+  <tr><td><b>Framework updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Framework</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET Core 3 to version 3.1.21 on Windows Server 2019 and 2016 platform versions.<br />Updated .NET 5 to version 5.0.12 on Windows Server 2019 and 2016 platform versions.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+  <tr><td><b>AWS component updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AWS SDK for .NET</b></td><td>Updated the SDK to version 3.15.1451.</td></tr>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version 2021.11.10.</td></tr>
+  <tr><td><b>EC2Launch</b></td><td>Updated EC2Config to EC2Launch v2 agent (version 2.0.651) on Windows 2012 R2 platform versions. (EC2Config remains on Windows 2012 R2 Server Core platform versions.)<br />Updated EC2Launch v1 agent to EC2Launch v2 agent (version 2.0.651) on Windows Server 2019 and 2016 platform versions.<br />For more information, see <a href="https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2launch-v2.html">EC2Launch v2</a> in the <i>Amazon EC2 User Guide</i>.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2021-11-23-windows.platforms"></a>

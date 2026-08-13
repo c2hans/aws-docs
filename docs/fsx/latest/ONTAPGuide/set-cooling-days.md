@@ -52,7 +52,7 @@ Minimum cooling days for a volume set the threshold that's used to determine whi
 ## To set a volume's minimum cooling days (ONTAP CLI)
 <a name="set-cooling-ontap-cli"></a>
 
-Use the `volume modify` ONTAP CLI command to set the minimum number of cooling days for an existing volume. For more information, see [https://docs.netapp.com/us-en/ontap-cli-9111/volume-modify.html](https://docs.netapp.com/us-en/ontap-cli-9111/volume-modify.html) in the NetApp ONTAP Documentation Center.
+Use the `volume modify` ONTAP CLI command to set the minimum number of cooling days for an existing volume. For more information, see [`volume modify`](https://docs.netapp.com/us-en/ontap-cli-9111/volume-modify.html) in the NetApp ONTAP Documentation Center.
 
 1. To access the ONTAP CLI, establish an SSH session on the management port of the Amazon FSx for NetApp ONTAP file system or SVM by running the following command. Replace `{{management_endpoint_ip}}` with the IP address of the file system's management port.
 

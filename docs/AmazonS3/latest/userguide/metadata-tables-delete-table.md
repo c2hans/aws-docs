@@ -11,7 +11,7 @@ If you want to delete the metadata tables that you created for an Amazon S3 gene
 Deleting a table is permanent and can't be undone. Before deleting a table, make sure that you have backed up any important data.
 Before you delete a metadata table, we recommend that you first delete the associated metadata table configuration on your general purpose bucket. For more information, see [Deleting metadata table configurations](metadata-tables-delete-configuration.md).
 
-To delete your AWS managed table bucket, see [Deleting table buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-buckets-delete.html) and [https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3TableBuckets_DeleteTableBucket.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3TableBuckets_DeleteTableBucket.html) in the *Amazon S3 API Reference*. Before you delete your AWS managed table bucket, we recommend that you first delete all metadata table configurations that are associated with this bucket. You must also first delete all metadata tables in the bucket.
+To delete your AWS managed table bucket, see [Deleting table buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-buckets-delete.html) and [DeleteTableBucket](https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3TableBuckets_DeleteTableBucket.html) in the *Amazon S3 API Reference*. Before you delete your AWS managed table bucket, we recommend that you first delete all metadata table configurations that are associated with this bucket. You must also first delete all metadata tables in the bucket.
 
 You can delete a metadata table by using the AWS Command Line Interface (AWS CLI), the AWS SDKs, or the Amazon S3 REST API.
 
@@ -52,7 +52,7 @@ To use the following example commands, replace the `{{user input placeholders}}`
 ### Using the REST API
 <a name="delete-metadata-table-rest-api"></a>
 
-You can send REST requests to delete a metadata table configuration. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3TableBuckets_DeleteTable.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3TableBuckets_DeleteTable.html) in the *Amazon S3 API Reference*.
+You can send REST requests to delete a metadata table configuration. For more information, see [DeleteTable](https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3TableBuckets_DeleteTable.html) in the *Amazon S3 API Reference*.
 
 ### Using the AWS SDKs
 <a name="delete-metadata-table-sdk"></a>

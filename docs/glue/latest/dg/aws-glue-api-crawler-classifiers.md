@@ -137,10 +137,10 @@ A classifier for custom `CSV` content.
 + `Version` – Number (long).
 
   The version of this classifier.
-+ `Delimiter` – UTF-8 string, not less than 1 or more than 1 bytes long, matching the [Custom string pattern #26](aws-glue-api-common.md#regex_26).
++ `Delimiter` – UTF-8 string, not less than 1 or more than 1 bytes long, matching the [Custom string pattern #31](aws-glue-api-common.md#regex_31).
 
   A custom symbol to denote what separates each column entry in the row.
-+ `QuoteSymbol` – UTF-8 string, not less than 1 or more than 1 bytes long, matching the [Custom string pattern #26](aws-glue-api-common.md#regex_26).
++ `QuoteSymbol` – UTF-8 string, not less than 1 or more than 1 bytes long, matching the [Custom string pattern #31](aws-glue-api-common.md#regex_31).
 
   A custom symbol to denote what combines content into a single column value. It must be different from the column delimiter.
 + `ContainsHeader` – UTF-8 string (valid values: `UNKNOWN` \| `PRESENT` \| `ABSENT`).
@@ -270,10 +270,10 @@ Specifies a custom CSV classifier for `CreateClassifier` to create.
 + `Name` – *Required:* UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Single-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-oneLine).
 
   The name of the classifier.
-+ `Delimiter` – UTF-8 string, not less than 1 or more than 1 bytes long, matching the [Custom string pattern #26](aws-glue-api-common.md#regex_26).
++ `Delimiter` – UTF-8 string, not less than 1 or more than 1 bytes long, matching the [Custom string pattern #31](aws-glue-api-common.md#regex_31).
 
   A custom symbol to denote what separates each column entry in the row.
-+ `QuoteSymbol` – UTF-8 string, not less than 1 or more than 1 bytes long, matching the [Custom string pattern #26](aws-glue-api-common.md#regex_26).
++ `QuoteSymbol` – UTF-8 string, not less than 1 or more than 1 bytes long, matching the [Custom string pattern #31](aws-glue-api-common.md#regex_31).
 
   A custom symbol to denote what combines content into a single column value. Must be different from the column delimiter.
 + `ContainsHeader` – UTF-8 string (valid values: `UNKNOWN` \| `PRESENT` \| `ABSENT`).
@@ -307,10 +307,10 @@ Specifies a custom CSV classifier to be updated.
 + `Name` – *Required:* UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Single-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-oneLine).
 
   The name of the classifier.
-+ `Delimiter` – UTF-8 string, not less than 1 or more than 1 bytes long, matching the [Custom string pattern #26](aws-glue-api-common.md#regex_26).
++ `Delimiter` – UTF-8 string, not less than 1 or more than 1 bytes long, matching the [Custom string pattern #31](aws-glue-api-common.md#regex_31).
 
   A custom symbol to denote what separates each column entry in the row.
-+ `QuoteSymbol` – UTF-8 string, not less than 1 or more than 1 bytes long, matching the [Custom string pattern #26](aws-glue-api-common.md#regex_26).
++ `QuoteSymbol` – UTF-8 string, not less than 1 or more than 1 bytes long, matching the [Custom string pattern #31](aws-glue-api-common.md#regex_31).
 
   A custom symbol to denote what combines content into a single column value. It must be different from the column delimiter.
 + `ContainsHeader` – UTF-8 string (valid values: `UNKNOWN` \| `PRESENT` \| `ABSENT`).

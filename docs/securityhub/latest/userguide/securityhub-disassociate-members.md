@@ -36,14 +36,14 @@ Choose your preferred method, and follow the steps to disassociate a manually-in
 
 **To disassociate a manually-invited member account**
 
-Invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DisassociateMembers.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DisassociateMembers.html) API from the administrator account. You must provide the AWS account IDs of the member accounts that you want to disassociate. To view a list of member accounts, use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListMembers.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListMembers.html) operation.
+Invoke the [`DisassociateMembers`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DisassociateMembers.html) API from the administrator account. You must provide the AWS account IDs of the member accounts that you want to disassociate. To view a list of member accounts, use the [`ListMembers`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListMembers.html) operation.
 
 ------
 #### [ AWS CLI ]
 
 **To disassociate a manually-invited member account**
 
-Run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/disassociate-members.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/disassociate-members.html) command from the administrator account. You must provide the AWS account IDs of the member accounts that you want to disassociate. To view a list of member accounts, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-members.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-members.html) command.
+Run the [`disassociate-members`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/disassociate-members.html) command from the administrator account. You must provide the AWS account IDs of the member accounts that you want to disassociate. To view a list of member accounts, run the [`list-members`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-members.html) command.
 
 ```
 aws securityhub disassociate-members --account-ids {{<accountIds>}}

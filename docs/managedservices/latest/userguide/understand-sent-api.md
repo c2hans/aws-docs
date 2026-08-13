@@ -39,7 +39,7 @@ The AWS CLI is a prerequisite for using the AWS Managed Services (AMS) CLIs (Cha
 
    After the installation, run `aws help` to verify the installation.
 
-1. Once the AWS CLI is installed, to install or upgrade the AMS CLI, download either the AMS **AMS CLI** or **AMS SDK** distributables zip file and unzip. You can access the AMS CLI distributables through the [https://console.aws.amazon.com/managedservices/developerResources](https://console.aws.amazon.com/managedservices/developerResources) link in the left nav of the AMS console.
+1. Once the AWS CLI is installed, to install or upgrade the AMS CLI, download either the AMS **AMS CLI** or **AMS SDK** distributables zip file and unzip. You can access the AMS CLI distributables through the [**Developer's Resources**](https://console.aws.amazon.com/managedservices/developerResources) link in the left nav of the AMS console.
 
 1. The README file provides instructions for any install.
 

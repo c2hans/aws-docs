@@ -117,7 +117,7 @@ The CloudWatch agent configuration file has a `prometheus` section under `metric
 + **metric\_declaration**— are sections that specify the array of logs with embedded metric format to be generated. There are `metric_declaration` sections for each Prometheus source that the CloudWatch agent imports from by default. These sections each include the following fields:
   + `label_matcher` is a regular expression that checks the value of the labels listed in `source_labels`. The metrics that match are enabled for inclusion in the embedded metric format sent to CloudWatch.
 
-    If you have multiple labels specified in `source_labels`, we recommend that you do not use `^` or `$` characters in the regular expression for `label_matcher`.
+    If you have multiple labels specified in `source_labels`, the agent recommend that you do not use `^` or `$` characters in the regular expression for `label_matcher`.
   + `source_labels` specifies the value of the labels that are checked by the `label_matcher` line.
   + `label_separator` specifies the separator to be used in the ` label_matcher` line if multiple `source_labels` are specified. The default is `;`. You can see this default used in the `label_matcher` line in the following example.
   + `metric_selectors` is a regular expression that specifies the metrics to be collected and sent to CloudWatch.
@@ -305,7 +305,7 @@ The Kubernetes API Server exposes gauge, counter, histogram, and summary metrics
    | kubectl apply -f -
    ```
 
-Once you have done this, you should see a new log stream named ** kubernetes-apiservers ** in the **/aws/containerinsights/{{cluster\_name}}/prometheus** log group. This log stream should include log events with an embedded metric format definition like the following:
+After you have done this, you should see a new log stream named ** kubernetes-apiservers ** in the **/aws/containerinsights/{{cluster\_name}}/prometheus** log group. This log stream should include log events with an embedded metric format definition like the following:
 
 ```
 {

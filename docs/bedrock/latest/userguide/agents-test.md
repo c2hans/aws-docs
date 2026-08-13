@@ -12,7 +12,7 @@ After you create an agent, you will have a *working draft*. The working draft is
 
 The following list describes how you test your agent:
 + In the Amazon Bedrock console, you open up the test window on the side and send input for your agent to respond to. You can select the working draft or a version that you've created.
-+ In the API, the working draft is the `DRAFT` version. You send input to your agent by using [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) with the test alias, `TSTALIASID`, or a different alias pointing to a static version. Before you can test your agent, you must prepare your agent by calling [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_PrepareAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_PrepareAgent.html).
++ In the API, the working draft is the `DRAFT` version. You send input to your agent by using [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) with the test alias, `TSTALIASID`, or a different alias pointing to a static version. Before you can test your agent, you must prepare your agent by calling [PrepareAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_PrepareAgent.html).
 
 ## Tracing agent behavior
 <a name="agent-behavior-trace"></a>
@@ -87,9 +87,9 @@ You can enable or disable action groups and knowledge bases. Use this feature to
 
 For agents that are created `after` March 31, 2025:
 + If you've created your agent in the console, streaming is enabled by default. You can disable streaming anytime.
-+ Ensure the Agent execution role includes the `bedrock:InvokeModelWithResponseStream` permission for the configured agent model.
++ Make sure the Agent execution role includes the `bedrock:InvokeModelWithResponseStream` permission for the configured agent model.
 
-Before you test your agent for the first time, you must package it with the working draft changes by sending a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_PrepareAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_PrepareAgent.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt). Include the `agentId` in the request. The changes apply to the `DRAFT` version, which the `TSTALIASID` alias points to.
+Before you test your agent for the first time, you must package it with the working draft changes by sending a [PrepareAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_PrepareAgent.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt). Include the `agentId` in the request. The changes apply to the `DRAFT` version, which the `TSTALIASID` alias points to.
 
 ```
     def prepare_agent(self, agent_id):
@@ -111,12 +111,12 @@ Before you test your agent for the first time, you must package it with the work
 For more information, see [Hello Amazon Bedrock Agents](bedrock-agent_example_bedrock-agent_Hello_section.md).
 
 **Note**
-Every time you update the working draft, you must prepare the agent to package the agent with your latest changes. As a best practice, we recommend that you send a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetAgent.html) request (see link for request and response formats and field details) with a [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt) and check the `preparedAt` time for your agent to verify that you're testing your agent with the latest configurations.
+Every time you update the working draft, you must prepare the agent to package the agent with your latest changes. As a best practice, we recommend that you send a [GetAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetAgent.html) request (see link for request and response formats and field details) with a [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt) and check the `preparedAt` time for your agent to verify that you're testing your agent with the latest configurations.
 
-To test your agent, send an [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request to the agent. For example code, see [Invoke an agent from your application](agents-invoke-agent.md).
+To test your agent, send an [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request to the agent. For example code, see [Invoke an agent from your application](agents-invoke-agent.md).
 
 **Note**
-The AWS CLI doesn't support [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html).
+The AWS CLI doesn't support [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html).
 
 The following fields exist in the request:
 + Minimally, provide the following required fields:

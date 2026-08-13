@@ -158,19 +158,19 @@ The operations that are described in this section use the HTTP protocol.
 
 **Register your vehicle**
 
-   Now that you've prepared your vehicle to use the commands feature, you can prepare your application by registering your vehicle and then creating a command that will be sent to the vehicle. To register the vehicle, create an instance of a vehicle model (model manifest) using the [https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_CreateVehicle.html](https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_CreateVehicle.html) control plane API operation. For more information and examples, see [Create a vehicle](https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/create-vehicle.html).
+   Now that you've prepared your vehicle to use the commands feature, you can prepare your application by registering your vehicle and then creating a command that will be sent to the vehicle. To register the vehicle, create an instance of a vehicle model (model manifest) using the [`CreateVehicle`](https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_CreateVehicle.html) control plane API operation. For more information and examples, see [Create a vehicle](https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/create-vehicle.html).
 
 1.
 
 **Create a command**
 
-   Use the [https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCommand.html](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCommand.html) HTTP control plane API operation to model commands that are applicable to the vehicle that you're targeting. Specify any parameters and default values to be used when executing the command, and make sure that it uses the `AWS-IoT-FleetWise` namespace. For more information and examples for using this API, see [Create a command resource](create-manage-remote-command-cli.md#create-remote-command-cli).
+   Use the [`CreateCommand`](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCommand.html) HTTP control plane API operation to model commands that are applicable to the vehicle that you're targeting. Specify any parameters and default values to be used when executing the command, and make sure that it uses the `AWS-IoT-FleetWise` namespace. For more information and examples for using this API, see [Create a command resource](create-manage-remote-command-cli.md#create-remote-command-cli).
 
 1.
 
 **Start the command execution**
 
-   You can now execute the command that you created on the vehicle using the [https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_StartCommandExecution.html](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_StartCommandExecution.html) data plane API operation. AWS IoT Device Management fetches the command and command parameters, and validates the incoming request. It then invokes AWS IoT FleetWise API with the required parameters to generate the vehicle-specific payload. The payload is then sent to the device by AWS IoT Device Management over MQTT to the command request topic that your device subscribed to. For more information and examples for using this API, see [Send a command (AWS CLI)](send-monitor-remote-command-cli.md#send-remote-command-cli).
+   You can now execute the command that you created on the vehicle using the [`StartCommandExecution`](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_StartCommandExecution.html) data plane API operation. AWS IoT Device Management fetches the command and command parameters, and validates the incoming request. It then invokes AWS IoT FleetWise API with the required parameters to generate the vehicle-specific payload. The payload is then sent to the device by AWS IoT Device Management over MQTT to the command request topic that your device subscribed to. For more information and examples for using this API, see [Send a command (AWS CLI)](send-monitor-remote-command-cli.md#send-remote-command-cli).
 
    ```
    $aws/commands/things/{{<DeviceID>}}/executions/+/request/protobuf
@@ -182,7 +182,7 @@ If the device was offline when the command was sent from the cloud and MQTT pers
 
 **Retrieve the command execution**
 
-   After you've executed the command on the device, use the [https://docs.aws.amazon.com/iot/latest/apireference/API_GetCommandExecution.html](https://docs.aws.amazon.com/iot/latest/apireference/API_GetCommandExecution.html) control plane API operation to retrieve and monitor the result of the command execution. You can also use the API to obtain additional information about the execution data, such as when it was last updated, when the execution was completed, and the parameters specified.
+   After you've executed the command on the device, use the [`GetCommandExecution`](https://docs.aws.amazon.com/iot/latest/apireference/API_GetCommandExecution.html) control plane API operation to retrieve and monitor the result of the command execution. You can also use the API to obtain additional information about the execution data, such as when it was last updated, when the execution was completed, and the parameters specified.
 **Note**
 To retrieve the latest status information, your device must have published the command execution result to the response topic.
 
@@ -197,7 +197,7 @@ You can subscribe to commands events to receive notifications when the status of
 
 **Create a topic rule**
 
-   You can subscribe to the commands events topic and receive notifications when the status of a command execution changes. You can also create a topic rule to route the data processed by the vehicle to other applications such as AWS Lambda functions. You can create a topic rule either using the AWS IoT console, or the [https://docs.aws.amazon.com/iot/latest/apireference/API_CreateTopicRule.html](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateTopicRule.html) AWS IoT Core control plane API operation. For more information, see [Creating and AWS IoT rule](https://docs.aws.amazon.com/iot/latest/developerguide/iot-create-rule.html).
+   You can subscribe to the commands events topic and receive notifications when the status of a command execution changes. You can also create a topic rule to route the data processed by the vehicle to other applications such as AWS Lambda functions. You can create a topic rule either using the AWS IoT console, or the [`CreateTopicRule`](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateTopicRule.html) AWS IoT Core control plane API operation. For more information, see [Creating and AWS IoT rule](https://docs.aws.amazon.com/iot/latest/developerguide/iot-create-rule.html).
 
    In this example, replace `{{<CommandID>}}` with the identifier of the command for which you want to receive notifications and `{{<CommandExecutionStatus>}}` with the status of the command execution.
 

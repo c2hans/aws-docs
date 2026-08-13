@@ -34,7 +34,7 @@ aws sagemaker-runtime invoke-endpoint --endpoint-url https://{{VPC_Endpoint_ID}}
 
 If you enable private DNS hostnames for your VPC endpoint, you don't need to specify the endpoint URL because the default hostname (https://api.sagemaker.{{Region}}.amazon.com) resolves to your VPC endpoint. Similarly, the default SageMaker AI Runtime DNS hostname (https://runtime.sagemaker.{{Region}}.amazonaws.com) also resolves to your VPC endpoint.
 
-The SageMaker API and SageMaker AI Runtime support VPC endpoints in all AWS Regions where both [Amazon VPC](https://docs.aws.amazon.com/general/latest/gr/rande.html#vpc_region) and [SageMaker AI](https://docs.aws.amazon.com/general/latest/gr/rande.html#sagemaker_region) ares available. SageMaker AI supports making calls to all of its [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Operations.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Operations.html) inside your VPC. If you use the `AuthorizedUrl` from the [  CreatePresignedNotebookInstanceUrl](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreatePresignedNotebookInstanceUrl.html) command, your traffic will go over the public internet. You can't only use a VPC endpoint to access the presigned URL, the request must go through the internet gateway.
+The SageMaker API and SageMaker AI Runtime support VPC endpoints in all AWS Regions where both [Amazon VPC](https://docs.aws.amazon.com/general/latest/gr/rande.html#vpc_region) and [SageMaker AI](https://docs.aws.amazon.com/general/latest/gr/rande.html#sagemaker_region) ares available. SageMaker AI supports making calls to all of its [`Operations`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Operations.html) inside your VPC. If you use the `AuthorizedUrl` from the [  CreatePresignedNotebookInstanceUrl](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreatePresignedNotebookInstanceUrl.html) command, your traffic will go over the public internet. You can't only use a VPC endpoint to access the presigned URL, the request must go through the internet gateway.
 
  By default, your users can share the presigned URL to people outside of your corporate network. For additional security, you must add IAM permissions to restrict the URL only be usable within your network. For information about IAM permissions, see [How AWS PrivateLink works with IAM](https://docs.aws.amazon.com/vpc/latest/privatelink/security_iam_service-with-iam.html).
 
@@ -75,7 +75,7 @@ You can create a policy for Amazon VPC endpoints for SageMaker AI to specify the
 For more information, see [Controlling Access to Services with VPC Endpoints](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints-access.html) in the *Amazon VPC User Guide*.
 
 **Note**
-VPC endpoint policies aren't supported for Federal Information Processing Standard (FIPS) SageMaker AI runtime endpoints for [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpoint.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpoint.html).
+VPC endpoint policies aren't supported for Federal Information Processing Standard (FIPS) SageMaker AI runtime endpoints for [runtime\_InvokeEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpoint.html).
 
 The following example VPC endpoint policy specifies that all users who have access to the VPC interface endpoint are allowed to invoke the SageMaker AI hosted endpoint named `myEndpoint`.
 

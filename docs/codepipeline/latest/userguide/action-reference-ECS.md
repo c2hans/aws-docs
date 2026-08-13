@@ -8,9 +8,9 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 You can use an Amazon ECS action to deploy an Amazon ECS service and task set. An Amazon ECS service is a container application that is deployed to an Amazon ECS cluster. An Amazon ECS cluster is a collection of instances that host your container application in the cloud. The deployment requires a task definition that you create in Amazon ECS and an image definitions file that CodePipeline uses to deploy the image.
 
 **Important**
-The Amazon ECS standard deployment action for CodePipeline creates its own revision of the task definition based on the the revision used by the Amazon ECS service. If you create new revisions for the task definition without updating the Amazon ECS service, the deployment action will ignore those revisions.
+The Amazon ECS standard deployment action for CodePipeline creates its own revision of the task definition based on the revision used by the Amazon ECS service. If you create new revisions for the task definition without updating the Amazon ECS service, the deployment action will ignore those revisions.
 
-Before you create your pipeline, you must have already created the Amazon ECS resources, tagged and stored the image in your image repository, and uploaded the BuildSpec file to your file repository.
+Before you create your pipeline, you must have already created the Amazon ECS resources, tagged and stored the image in your image repository, and uploaded the buildspec file to your file repository.
 
 **Note**
 This reference topic describes the Amazon ECS standard deployment action for CodePipeline. For reference information about Amazon ECS to CodeDeploy blue/green deployment actions in CodePipeline, see [Amazon Elastic Container Service and CodeDeploy blue-green deploy action reference](action-reference-ECSbluegreen.md).
@@ -204,7 +204,7 @@ InputArtifacts:
 
 The following related resources can help you as you work with this action.
 + See [Tutorial: Build and push a Docker image to Amazon ECR with CodePipeline (V2 type)](tutorials-ecr-build-publish.md) for a tutorial that shows you how to use the ECRBuildandPublish action to push an image and then use the ECS standard action to deploy to Amazon ECS.
-+ [Tutorial: Continuous Deployment with CodePipeline](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-cd-pipeline.html) – This tutorial shows you how to create a Dockerfile that you store in a source file repository such as CodeCommit. Next, the tutorial shows you how to incorporate a CodeBuild BuildSpec file that builds and pushes your Docker image to Amazon ECR and creates your imagedefinitions.json file. Finally, you create an Amazon ECS service and task definition, and then you create your pipeline with an Amazon ECS deployment action.
++ [Tutorial: Continuous Deployment with CodePipeline](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-cd-pipeline.html) – This tutorial shows you how to create a Dockerfile that you store in a source file repository such as CodeCommit. Next, the tutorial shows you how to incorporate a CodeBuild buildspec file that builds and pushes your Docker image to Amazon ECR and creates your imagedefinitions.json file. Finally, you create an Amazon ECS service and task definition, and then you create your pipeline with an Amazon ECS deployment action.
 **Note**
 This topic and tutorial describe the Amazon ECS standard deployment action for CodePipeline. For information about Amazon ECS to CodeDeploy blue/green deployment actions in CodePipeline, see [Tutorial: Create a pipeline with an Amazon ECR source and ECS-to-CodeDeploy deployment](tutorials-ecs-ecr-codedeploy.md).
 + *Amazon Elastic Container Service Developer Guide* – For information about working with Docker images and containers, Amazon ECS services and clusters, and Amazon ECS task sets, see [What Is Amazon ECS?](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/)

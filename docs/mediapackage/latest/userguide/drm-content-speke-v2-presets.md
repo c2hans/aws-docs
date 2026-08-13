@@ -40,34 +40,34 @@ In the following table, the **Key name** value is the value of the `ContentKeyUs
   <tr><th>Preset name</th><th>Number of keys</th><th>Key name</th><th>Minimum resolution</th><th>Maximum resolution</th></tr>
 </thead>
 <tbody>
-  <tr><td>PRESET-VIDEO-1</td><td>1</td><td>VIDEO</td><td colspan="2">No minimum or maximum resolution. MediaPackage encrypts all tracks with the same key.</td></tr>
-  <tr><td rowspan="2">PRESET-VIDEO-2</td><td rowspan="2">2</td><td>SD</td><td>No minimum</td><td><= 1024x576</td></tr>
-  <tr><td>HD</td><td>> 1024x576</td><td>No maximum</td></tr>
-  <tr><td rowspan="3">PRESET-VIDEO-3</td><td rowspan="3">3</td><td>SD</td><td>No minimum</td><td><= 1024x576</td></tr>
-  <tr><td>HD</td><td>> 1024x576</td><td><= 1920x1080</td></tr>
-  <tr><td>UHD</td><td>> 1920x1080</td><td>No maximum</td></tr>
-  <tr><td rowspan="4">PRESET-VIDEO-4</td><td rowspan="4">4</td><td>SD</td><td>No minimum</td><td><= 1024x576</td></tr>
-  <tr><td>HD</td><td>> 1024x576</td><td><= 1920x1080</td></tr>
-  <tr><td>UHD1</td><td>> 1920x1080</td><td><= 4096x2160</td></tr>
-  <tr><td>UHD2</td><td>> 4096x2160</td><td>No maximum</td></tr>
-  <tr><td rowspan="5">PRESET-VIDEO-5</td><td rowspan="5">5</td><td>SD</td><td>No minimum</td><td><= 1024x576</td></tr>
-  <tr><td>HD1</td><td>> 1024x576</td><td><= 1280x720</td></tr>
-  <tr><td>HD2</td><td>> 1280x720</td><td><= 1920x1080</td></tr>
-  <tr><td>UHD1</td><td>> 1920x1080</td><td><= 4096x2160</td></tr>
-  <tr><td>UHD2</td><td>> 4096x2160</td><td>No maximum</td></tr>
-  <tr><td rowspan="4">PRESET-VIDEO-6</td><td rowspan="4">4</td><td>SD</td><td>No minimum</td><td><= 1024x576</td></tr>
-  <tr><td>HD1</td><td>> 1024x576</td><td><= 1280x720</td></tr>
-  <tr><td>HD2</td><td>> 1280x720</td><td><= 1920x1080</td></tr>
-  <tr><td>UHD</td><td>> 1920x1080</td><td>No maximum</td></tr>
-  <tr><td rowspan="3">PRESET-VIDEO-7</td><td rowspan="3">3</td><td>SD\+HD1</td><td>No minimum</td><td><= 1280x720</td></tr>
-  <tr><td>HD2</td><td>> 1280x720</td><td><= 1920x1080</td></tr>
-  <tr><td>UHD</td><td>> 1920x1080</td><td>No maximum</td></tr>
-  <tr><td rowspan="4">PRESET-VIDEO-8</td><td rowspan="4">4</td><td>SD\+HD1</td><td>No minimum</td><td><= 1280x720</td></tr>
-  <tr><td>HD2</td><td>> 1280x720</td><td><= 1920x1080</td></tr>
-  <tr><td>UHD1</td><td>> 1920x1080</td><td><= 4096x2160</td></tr>
-  <tr><td>UHD2</td><td>> 4096x2160</td><td>No maximum</td></tr>
-  <tr><td>SHARED</td><td>1</td><td>ALL</td><td colspan="2">No minimum or maximum resolution. MediaPackage encrypts all video and audio tracks with the same key.</td></tr>
-  <tr><td>UNENCRYPTED</td><td>0</td><td>N/A</td><td colspan="2">MediaPackage does not encrypt any video track.</td></tr>
+  <tr><td><b>PRESET-VIDEO-1</b></td><td>1</td><td>VIDEO</td><td colspan="2">No minimum or maximum resolution. MediaPackage encrypts all tracks with the same key.</td></tr>
+  <tr><td rowspan="2"><b>PRESET-VIDEO-2</b></td><td rowspan="2">2</td><td>SD</td><td>No minimum</td><td>&lt;= 1024x576</td></tr>
+  <tr><td>HD</td><td>&gt; 1024x576</td><td>No maximum</td></tr>
+  <tr><td rowspan="3"><b>PRESET-VIDEO-3</b></td><td rowspan="3">3</td><td>SD</td><td>No minimum</td><td>&lt;= 1024x576</td></tr>
+  <tr><td>HD</td><td>&gt; 1024x576</td><td>&lt;= 1920x1080</td></tr>
+  <tr><td>UHD</td><td>&gt; 1920x1080</td><td>No maximum</td></tr>
+  <tr><td rowspan="4"><b>PRESET-VIDEO-4</b></td><td rowspan="4">4</td><td>SD</td><td>No minimum</td><td>&lt;= 1024x576</td></tr>
+  <tr><td>HD</td><td>&gt; 1024x576</td><td>&lt;= 1920x1080</td></tr>
+  <tr><td>UHD1</td><td>&gt; 1920x1080</td><td>&lt;= 4096x2160</td></tr>
+  <tr><td>UHD2</td><td>&gt; 4096x2160</td><td>No maximum</td></tr>
+  <tr><td rowspan="5"><b>PRESET-VIDEO-5</b></td><td rowspan="5">5</td><td>SD</td><td>No minimum</td><td>&lt;= 1024x576</td></tr>
+  <tr><td>HD1</td><td>&gt; 1024x576</td><td>&lt;= 1280x720</td></tr>
+  <tr><td>HD2</td><td>&gt; 1280x720</td><td>&lt;= 1920x1080</td></tr>
+  <tr><td>UHD1</td><td>&gt; 1920x1080</td><td>&lt;= 4096x2160</td></tr>
+  <tr><td>UHD2</td><td>&gt; 4096x2160</td><td>No maximum</td></tr>
+  <tr><td rowspan="4"><b>PRESET-VIDEO-6</b></td><td rowspan="4">4</td><td>SD</td><td>No minimum</td><td>&lt;= 1024x576</td></tr>
+  <tr><td>HD1</td><td>&gt; 1024x576</td><td>&lt;= 1280x720</td></tr>
+  <tr><td>HD2</td><td>&gt; 1280x720</td><td>&lt;= 1920x1080</td></tr>
+  <tr><td>UHD</td><td>&gt; 1920x1080</td><td>No maximum</td></tr>
+  <tr><td rowspan="3"><b>PRESET-VIDEO-7</b></td><td rowspan="3">3</td><td>SD+HD1</td><td>No minimum</td><td>&lt;= 1280x720</td></tr>
+  <tr><td>HD2</td><td>&gt; 1280x720</td><td>&lt;= 1920x1080</td></tr>
+  <tr><td>UHD</td><td>&gt; 1920x1080</td><td>No maximum</td></tr>
+  <tr><td rowspan="4"><b>PRESET-VIDEO-8</b></td><td rowspan="4">4</td><td>SD+HD1</td><td>No minimum</td><td>&lt;= 1280x720</td></tr>
+  <tr><td>HD2</td><td>&gt; 1280x720</td><td>&lt;= 1920x1080</td></tr>
+  <tr><td>UHD1</td><td>&gt; 1920x1080</td><td>&lt;= 4096x2160</td></tr>
+  <tr><td>UHD2</td><td>&gt; 4096x2160</td><td>No maximum</td></tr>
+  <tr><td><b>SHARED</b></td><td>1</td><td>ALL</td><td colspan="2">No minimum or maximum resolution. MediaPackage encrypts all video and audio tracks with the same key.</td></tr>
+  <tr><td><b>UNENCRYPTED</b></td><td>0</td><td><i>N/A</i></td><td colspan="2">MediaPackage does not encrypt any video track.</td></tr>
 </tbody>
 </table>
 
@@ -80,14 +80,14 @@ In the following table, the **Key name** value is the value of the `ContentKeyUs
   <tr><th>Preset name</th><th>Number of keys</th><th>Key name</th><th>Minimum number of channels</th><th>Maximum number of channels</th></tr>
 </thead>
 <tbody>
-  <tr><td>PRESET-AUDIO-1</td><td>1</td><td>AUDIO</td><td colspan="2">No minimum or maximum number of channels. MediaPackage encrypts all audio and video tracks with the same key.</td></tr>
-  <tr><td rowspan="2">PRESET-AUDIO-2</td><td rowspan="2">2</td><td>STEREO\_AUDIO</td><td>No minimum</td><td>2</td></tr>
-  <tr><td>MULTICHANNEL\_AUDIO</td><td>> 2</td><td>No maximum</td></tr>
-  <tr><td rowspan="3">PRESET-AUDIO-3</td><td rowspan="3">3</td><td>STEREO\_AUDIO</td><td>No minimum</td><td>2</td></tr>
-  <tr><td>MULTICHANNEL\_AUDIO\_3\_6</td><td>> 2</td><td><= 6</td></tr>
-  <tr><td>MULTICHANNEL\_AUDIO\_7</td><td>> 6</td><td>No maximum</td></tr>
-  <tr><td>SHARED</td><td>1</td><td>ALL</td><td colspan="2">No minimum or maximum number of channels. MediaPackage encrypts all audio and video tracks with the same key.</td></tr>
-  <tr><td>UNENCRYPTED</td><td>0</td><td>N/A</td><td colspan="2">MediaPackage does not encrypt any audio track.</td></tr>
+  <tr><td><b>PRESET-AUDIO-1</b></td><td>1</td><td>AUDIO</td><td colspan="2">No minimum or maximum number of channels. MediaPackage encrypts all audio and video tracks with the same key.</td></tr>
+  <tr><td rowspan="2"><b>PRESET-AUDIO-2</b></td><td rowspan="2">2</td><td>STEREO_AUDIO</td><td>No minimum</td><td>2</td></tr>
+  <tr><td>MULTICHANNEL_AUDIO</td><td>&gt; 2</td><td>No maximum</td></tr>
+  <tr><td rowspan="3"><b>PRESET-AUDIO-3</b></td><td rowspan="3">3</td><td>STEREO_AUDIO</td><td>No minimum</td><td>2</td></tr>
+  <tr><td>MULTICHANNEL_AUDIO_3_6</td><td>&gt; 2</td><td>&lt;= 6</td></tr>
+  <tr><td>MULTICHANNEL_AUDIO_7</td><td>&gt; 6</td><td>No maximum</td></tr>
+  <tr><td><b>SHARED</b></td><td>1</td><td>ALL</td><td colspan="2">No minimum or maximum number of channels. MediaPackage encrypts all audio and video tracks with the same key.</td></tr>
+  <tr><td><b>UNENCRYPTED</b></td><td>0</td><td><i>N/A</i></td><td colspan="2">MediaPackage does not encrypt any audio track.</td></tr>
 </tbody>
 </table>
 

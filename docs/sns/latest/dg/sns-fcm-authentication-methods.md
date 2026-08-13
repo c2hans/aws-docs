@@ -32,7 +32,7 @@ You can create FCM push notifications using the AWS API. The number and size of 
 
 **To create an FCM push notification together with an Amazon SNS topic (AWS API)**
 When using **key** credentials, the `PlatformCredential` is `API key`. When using **token** credentials, the `PlatformCredential` is a JSON formatted private key file:
-+ [https://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformApplication.html](https://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformApplication.html)
++ [`CreatePlatformApplication`](https://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformApplication.html)
 
 **To retrieve an FCM credential type for an existing Amazon SNS topic (AWS API)**
 Retrieves the credential type `"AuthenticationMethod": "Token"`, or ` "AuthenticationMethod": "Key"`:

@@ -27,7 +27,7 @@ For customer managed permissions, after you update the permissions to the defaul
 
  **To update the version of an AWS managed permission**
 
-1. Run the command [https://docs.aws.amazon.com/cli/latest/reference/ram/get-resource-shares.html](https://docs.aws.amazon.com/cli/latest/reference/ram/get-resource-shares.html) with the `--permission-arn` parameter to specify the [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of the managed permission that you want to update. This results in the command returning only those resource shares that use that managed permission.
+1. Run the command [get-resource-shares](https://docs.aws.amazon.com/cli/latest/reference/ram/get-resource-shares.html) with the `--permission-arn` parameter to specify the [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of the managed permission that you want to update. This results in the command returning only those resource shares that use that managed permission.
 
    For example, the following sample command returns details for every resource share that uses the default AWS managed permission for Amazon EC2 capacity reservations.
 
@@ -39,7 +39,7 @@ For customer managed permissions, after you update the permissions to the defaul
 
    The output includes the ARN of every resource share with at least one resource whose access is controlled by that managed permission.
 
-1. For each resource share specified in the previous command, run the command [https://docs.aws.amazon.com/cli/latest/reference/ram/associate-resource-share-permission.html](https://docs.aws.amazon.com/cli/latest/reference/ram/associate-resource-share-permission.html). Include the `--resource-share-arn` to specify the resource share to update, the `--permission-arn` to specify which AWS managed permission you're updating, and the `--replace` parameter to specify that you want to update the share to use the latest version of that managed permission. You don't need to specify the version number; the default version is automatically used.
+1. For each resource share specified in the previous command, run the command [associate-resource-share-permission](https://docs.aws.amazon.com/cli/latest/reference/ram/associate-resource-share-permission.html). Include the `--resource-share-arn` to specify the resource share to update, the `--permission-arn` to specify which AWS managed permission you're updating, and the `--replace` parameter to specify that you want to update the share to use the latest version of that managed permission. You don't need to specify the version number; the default version is automatically used.
 
    ```
    $ aws ram associate-resource-share-permission \

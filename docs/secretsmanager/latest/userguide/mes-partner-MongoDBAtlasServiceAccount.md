@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 <a name="mes-partner-MongoDBAtlasServiceAccount"></a>
 
 ## Secret Value Fields
-<a name="w2aac25c11c27b3"></a>
+<a name="w2aac27c11c29b3"></a>
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
@@ -28,7 +28,7 @@ orgId
 The 24-character hexadecimal Atlas Organization ID. You can find this in your Atlas Organization Settings.
 
 ## Secret Metadata Fields
-<a name="w2aac25c11c27b5"></a>
+<a name="w2aac27c11c29b5"></a>
 
 The following are the metadata fields for MongoDB Atlas Service Account:
 
@@ -46,7 +46,7 @@ apiVersion
 (Optional) The Atlas Admin API version date in `yyyy-mm-dd` format. This value is used in the `Accept` header as `application/vnd.atlas.{apiVersion}+json`. Defaults to `2025-03-12` if not specified.
 
 ## Usage Flow
-<a name="w2aac25c11c27b7"></a>
+<a name="w2aac27c11c29b7"></a>
 
 The rotation supports two authentication modes. In self-rotation mode (default), the service account uses its own credentials to create and delete its secrets. This requires the service account to have permissions to manage its own secrets. In admin-assisted rotation mode, a separate admin service account credential stored in another secret is used. This is required when the service account lacks self-management permissions.
 

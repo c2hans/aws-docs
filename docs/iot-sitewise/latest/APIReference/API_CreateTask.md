@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Cre
 
 Creates a new task in the specified workspace. A task defines a reusable containerized compute workload that can be referenced by one or more pipeline compute nodes.
 
-Specify a [https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ContainerTaskConfiguration.html](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ContainerTaskConfiguration.html) for custom container workloads with configurable ECR image, processing type, processing unit, and environment variables.
+Specify a [`containerTaskConfiguration`](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ContainerTaskConfiguration.html) for custom container workloads with configurable ECR image, processing type, processing unit, and environment variables.
 
 ## Request Syntax
 <a name="API_CreateTask_RequestSyntax"></a>

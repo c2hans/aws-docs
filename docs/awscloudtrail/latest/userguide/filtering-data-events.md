@@ -195,7 +195,7 @@ aws cloudtrail put-event-selectors \
 ]'
 ```
 
-The next example creates a new event data store that logs data events for EBS Direct APIs but excludes `ListChangedBlocks` API calls. You can use the [https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/update-event-data-store.html](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/update-event-data-store.html) command to update an existing event data store.
+The next example creates a new event data store that logs data events for EBS Direct APIs but excludes `ListChangedBlocks` API calls. You can use the [update-event-data-store](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/update-event-data-store.html) command to update an existing event data store.
 
 ```
 aws cloudtrail create-event-data-store \

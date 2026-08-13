@@ -46,7 +46,7 @@ The name, description, and the input schema must be explicit with the exact func
 **Note**
 Amazon Nova understanding models currently support only a subset of JsonSchema functionality when used to define the [ToolInputSchema](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_ToolInputSchema.html) in Converse API.
 The top level schema must be of type [Object](https://json-schema.org/understanding-json-schema/reference/object).
-Only three fields are supported in the top-level Object - type (must be set to ‘object’), [https://json-schema.org/understanding-json-schema/reference/object#properties](https://json-schema.org/understanding-json-schema/reference/object#properties), and [https://json-schema.org/understanding-json-schema/reference/object#required](https://json-schema.org/understanding-json-schema/reference/object#required).
+Only three fields are supported in the top-level Object - type (must be set to ‘object’), [`properties`](https://json-schema.org/understanding-json-schema/reference/object#properties), and [`required`](https://json-schema.org/understanding-json-schema/reference/object#required).
 
 For tool calling, we recommend setting the temperature to 0 to enable greedy decoding.
 

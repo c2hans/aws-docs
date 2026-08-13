@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::SecurityHub::Standard
 <a name="aws-resource-securityhub-standard"></a>
 
-The `AWS::SecurityHub::Standard` resource specifies the enablement of a security standard. The standard is identified by the `StandardsArn` property. To view a list of Security Hub CSPM standards and their Amazon Resource Names (ARNs), use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DescribeStandards.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DescribeStandards.html) API operation.
+The `AWS::SecurityHub::Standard` resource specifies the enablement of a security standard. The standard is identified by the `StandardsArn` property. To view a list of Security Hub CSPM standards and their Amazon Resource Names (ARNs), use the [`DescribeStandards`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DescribeStandards.html) API operation.
 
 You must create a separate `AWS::SecurityHub::Standard` resource for each standard that you want to enable.
 
@@ -55,7 +55,7 @@ Properties:
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StandardsArn`  <a name="cfn-securityhub-standard-standardsarn"></a>
-The ARN of the standard that you want to enable. To view a list of available Security Hub CSPM standards and their ARNs, use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DescribeStandards.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DescribeStandards.html) API operation.
+The ARN of the standard that you want to enable. To view a list of available Security Hub CSPM standards and their ARNs, use the [`DescribeStandards`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DescribeStandards.html) API operation.
 *Required*: Yes
 *Type*: String
 *Pattern*: `arn:aws\S*:securityhub:\S`
@@ -69,14 +69,14 @@ The ARN of the standard that you want to enable. To view a list of available Sec
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns`StandardsSubscriptionArn` for the standard that you enable, such as `arn:aws:securityhub:us-east-1:123456789012:subscription/aws-foundational-security-best-practices/v/1.0.0`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-securityhub-standard-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-securityhub-standard-return-values-fn--getatt-fn--getatt"></a>

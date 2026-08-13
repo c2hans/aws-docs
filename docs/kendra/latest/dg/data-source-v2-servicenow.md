@@ -183,7 +183,7 @@ If you choose to crawl **Only public articles**, Amazon Kendra crawls only knowl
 **To connect Amazon Kendra to ServiceNow**
 
 You must specify a JSON of the [data source schema](https://docs.aws.amazon.com/kendra/latest/dg/ds-schemas.html) using the [TemplateConfiguration](https://docs.aws.amazon.com/kendra/latest/APIReference/API_TemplateConfiguration.html) API. You must provide the following information:
-+ **Data source**—Specify the data source type as `SERVICENOWV2` when you use the [https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) JSON schema. Also specify the data source as `TEMPLATE` when you call the [https://docs.aws.amazon.com/kendra/latest/dg/API_CreateDataSource.html](https://docs.aws.amazon.com/kendra/latest/dg/API_CreateDataSource.html) API.
++ **Data source**—Specify the data source type as `SERVICENOWV2` when you use the [TemplateConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) JSON schema. Also specify the data source as `TEMPLATE` when you call the [CreateDataSource](https://docs.aws.amazon.com/kendra/latest/dg/API_CreateDataSource.html) API.
 + **Host URL**—Specify the ServiceNow host instance version. For example, {{your-domain.service-now.com}}.
 + **Authentication type**—Specify the type of authentication you use, whether `basicAuth` or `OAuth2` for your ServiceNow instance.
 + **ServiceNow instance version**—Specify the ServiceNow instance you use, whether `Tokyo`, `Sandiego`, `Rome`, or `Others`.

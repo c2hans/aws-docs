@@ -176,7 +176,7 @@ The EMQX-related instructions provided are for reference only. As EMQX documenta
 
 1. Ensure that you are within the gateway host.
 
-1. Open a browser window and visit [http://localhost:18083/](http://localhost:18083/).
+1. Open a browser window and visit [`http://localhost:18083/`](http://localhost:18083/).
 
 1. Enter the default username of **admin** and the default password of **public**. For more information, see [EMQX Dashboard](https://docs.emqx.com/en/emqx/latest/dashboard/introduction.html#first-login) in the *EMQX Docs*.
 

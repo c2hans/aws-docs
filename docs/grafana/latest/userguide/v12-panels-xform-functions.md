@@ -509,49 +509,95 @@ The following table shows sample data.
 
 This transformation has two steps. First, specify one or more fields by which to group the data. This groups all the same values of those fields together, as if you sorted them For instance, if you group by the `Server ID` field, Grafana groups the data this way:
 
-| Server ID | Data |
-| --- | --- |
-| Time | CPU Temperature | Server Status |
-| --- | --- | --- |
-| Time | CPU Temperature | Server Status |
-| --- | --- | --- |
-| Time | CPU Temperature | Server Status |
-| --- | --- | --- |
-| server 1 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/grafana/latest/userguide/v12-panels-xform-functions.html) |
-| server 2 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/grafana/latest/userguide/v12-panels-xform-functions.html) |
-| server 3 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/grafana/latest/userguide/v12-panels-xform-functions.html) |
-| 7/7/2020 11:34:20 AM | 80 | Shutdown |
-| 7/7/2020 9:28:06 AM | 80 | OK |
-| 7/7/2020 9:23:07 AM | 86 | OK |
-| 7/7/2020 10:32:20 AM | 90 | Overload |
-| 7/7/2020 9:30:05 AM | 88 | OK |
-| 7/7/2020 9:25:05 AM | 88 | OK |
-| 7/7/2020 11:34:20 AM | 62 | OK |
-| 7/7/2020 10:31:22 AM | 55 | OK |
-| 7/7/2020 9:30:57 AM | 62 | Rebooting |
+<table>
+<thead>
+  <tr><th>Server ID</th><th>Data</th></tr>
+</thead>
+<tbody>
+  <tr><td>server 1</td><td>
+<table>
+<thead>
+  <tr><th>Time</th><th>CPU Temperature</th><th>Server Status</th></tr>
+</thead>
+<tbody>
+  <tr><td>7/7/2020 11:34:20 AM</td><td>80</td><td>Shutdown</td></tr>
+  <tr><td>7/7/2020 9:28:06 AM</td><td>80</td><td>OK</td></tr>
+  <tr><td>7/7/2020 9:23:07 AM</td><td>86</td><td>OK</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td>server 2</td><td>
+<table>
+<thead>
+  <tr><th>Time</th><th>CPU Temperature</th><th>Server Status</th></tr>
+</thead>
+<tbody>
+  <tr><td>7/7/2020 10:32:20 AM</td><td>90</td><td>Overload</td></tr>
+  <tr><td>7/7/2020 9:30:05 AM</td><td>88</td><td>OK</td></tr>
+  <tr><td>7/7/2020 9:25:05 AM</td><td>88</td><td>OK</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td>server 3</td><td>
+<table>
+<thead>
+  <tr><th>Time</th><th>CPU Temperature</th><th>Server Status</th></tr>
+</thead>
+<tbody>
+  <tr><td>7/7/2020 11:34:20 AM</td><td>62</td><td>OK</td></tr>
+  <tr><td>7/7/2020 10:31:22 AM</td><td>55</td><td>OK</td></tr>
+  <tr><td>7/7/2020 9:30:57 AM</td><td>62</td><td>Rebooting</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 After choosing the field by which you want to group your data, you can add various calculations on the other fields and apply the calculation to each group of rows. For instance, you might want to calculate the average CPU temperature for each of those servers. To do so, add the mean calculation applied on the CPU Temperature field to get the following result:
 
-| Server ID | CPU Temperatute (mean) |  |
-| --- | --- | --- |
-| Time | Server Status |
-| --- | --- |
-| Time | Server Status |
-| --- | --- |
-| Time | Server Status |
-| --- | --- |
-| server 1 | 82 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/grafana/latest/userguide/v12-panels-xform-functions.html) |
-| server 2 | 88.6 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/grafana/latest/userguide/v12-panels-xform-functions.html) |
-| server 3 | 59.6 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/grafana/latest/userguide/v12-panels-xform-functions.html) |
-| 7/7/2020 11:34:20 AM | Shutdown |
-| 7/7/2020 9:28:06 AM | OK |
-| 7/7/2020 9:23:07 AM | OK |
-| 7/7/2020 10:32:20 AM | Overload |
-| 7/7/2020 9:30:05 AM | OK |
-| 7/7/2020 9:25:05 AM | OK |
-| 7/7/2020 11:34:20 AM | OK |
-| 7/7/2020 10:31:22 AM | OK |
-| 7/7/2020 9:30:57 AM | Rebooting |
+<table>
+<thead>
+  <tr><th>Server ID</th><th>CPU Temperatute (mean)</th><th></th></tr>
+</thead>
+<tbody>
+  <tr><td>server 1</td><td>82</td><td>
+<table>
+<thead>
+  <tr><th>Time</th><th>Server Status</th></tr>
+</thead>
+<tbody>
+  <tr><td>7/7/2020 11:34:20 AM</td><td>Shutdown</td></tr>
+  <tr><td>7/7/2020 9:28:06 AM</td><td>OK</td></tr>
+  <tr><td>7/7/2020 9:23:07 AM</td><td>OK</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td>server 2</td><td>88.6</td><td>
+<table>
+<thead>
+  <tr><th>Time</th><th>Server Status</th></tr>
+</thead>
+<tbody>
+  <tr><td>7/7/2020 10:32:20 AM</td><td>Overload</td></tr>
+  <tr><td>7/7/2020 9:30:05 AM</td><td>OK</td></tr>
+  <tr><td>7/7/2020 9:25:05 AM</td><td>OK</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td>server 3</td><td>59.6</td><td>
+<table>
+<thead>
+  <tr><th>Time</th><th>Server Status</th></tr>
+</thead>
+<tbody>
+  <tr><td>7/7/2020 11:34:20 AM</td><td>OK</td></tr>
+  <tr><td>7/7/2020 10:31:22 AM</td><td>OK</td></tr>
+  <tr><td>7/7/2020 9:30:57 AM</td><td>Rebooting</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## Create heatmap
 <a name="v12-panels-xform-funcs-heatmap"></a>

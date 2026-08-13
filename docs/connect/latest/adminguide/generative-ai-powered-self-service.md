@@ -2,21 +2,21 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/generative-ai-powered-self-service.html
 ---
 
-# (legacy) Use generative AI-powered self-service with Connect AI agents
+# (legacy) Use generative AI-powered self-service with AI agents
 <a name="generative-ai-powered-self-service"></a>
 
 **Important**
 Legacy self-service is not receiving new feature updates. For new implementations, we recommend using [agentic self-service](agentic-self-service.md), which provides autonomous multi-step reasoning, MCP tool integration, and continuous conversations.
 
 **Tip**
-Check out this course from AWS Workshop: [Customizing Connect AI agents Self-Service](https://catalog.workshops.aws/amazon-q-in-connect/en-US/customizing-amazon-q-in-connect-self-service).
+Check out this course from AWS Workshop: [Customizing AI agents Self-Service](https://catalog.workshops.aws/amazon-q-in-connect/en-US/customizing-amazon-q-in-connect-self-service).
 
-Connect AI agents supports customer self-service use cases in chat and voice (IVR) channels. It can:
+AI agents supports customer self-service use cases in chat and voice (IVR) channels. It can:
 + Answer customer questions.
 + Provide step-by-step guidance.
 + Complete actions like rescheduling appointments and booking trips.
 
-When customers need additional help, Connect AI agents seamlessly transfers them to agents while preserving the context of the full conversation.
+When customers need additional help, AI agents seamlessly transfers them to agents while preserving the context of the full conversation.
 
 **Topics**
 + [Default system tools](#default-system-actions-for-ai-agents-self-service)
@@ -27,7 +27,7 @@ When customers need additional help, Connect AI agents seamlessly transfers them
 ## Default system tools
 <a name="default-system-actions-for-ai-agents-self-service"></a>
 
-Connect AI agents comes with the following built-in tools that work out-of-the-box:
+AI agents comes with the following built-in tools that work out-of-the-box:
 
 1. **QUESTION**: Provides answers and gathers relevant information when no other tool can directly address the query.
 
@@ -46,42 +46,42 @@ You can customize these default tools to meet your specific requirements.
 ## Set up self-service
 <a name="enable-self-service-ai-agents"></a>
 
-Follow these steps to enable Connect AI agents for self-service:
+Follow these steps to enable AI agents for self-service:
 
-1. Enable Connect AI agents in your Amazon Lex bot by activating the [AMAZON.QinConnectIntent](https://docs.aws.amazon.com/lexv2/latest/dg/built-in-intent-qinconnect.html). For instructions, see [Create an Connect AI agents intent](create-qic-intent-connect.md).
+1. Enable agent assist in your Amazon Lex bot by activating the [AMAZON.QinConnectIntent](https://docs.aws.amazon.com/lexv2/latest/dg/built-in-intent-qinconnect.html). For instructions, see [Create an agent assist intent](create-qic-intent-connect.md).
 
 1. Add an [Connect assistant](connect-assistant-block.md) block to your flow.
 
 1. Add a [Get customer input](get-customer-input.md) block to your flow to specify:
-   + When Connect AI agents should begin handling customer interactions.
+   + When AI agents should begin handling customer interactions.
    + Which types of interactions it should handle.
 
    For instructions, see [Create a flow and add your conversational AI bot](create-bot-flow.md).
 
-1. (Optional) Add a [Check contact attributes](check-contact-attributes.md) block to your flow and configure it to determine what should happen after Connect AI agents has completed its turn of the conversation: In the **Attribute to check** section, set the properties as follows:
+1. (Optional) Add a [Check contact attributes](check-contact-attributes.md) block to your flow and configure it to determine what should happen after AI agents has completed its turn of the conversation: In the **Attribute to check** section, set the properties as follows:
    + Set **Namespace** = **Lex**
    + Set **Key** = **Session attributes**
    + Set **Session Attribute Key** = Tool
 
-   Connect AI agents saves the selected tool name as a Lex session attribute. This session attribute can then be accessed by using the **Check contact attributes** block.
+   AI agents saves the selected tool name as a Lex session attribute. This session attribute can then be accessed by using the **Check contact attributes** block.
 
-1. (Optional) Define routing logic based on the tool selected by Connect AI agents:
+1. (Optional) Define routing logic based on the tool selected by AI agents:
    + Route COMPLETE responses to end the interaction.
    + Route custom tool responses (like TRIP\_BOOKING) to specific workflows.
 
-   The following image shows an example of how you can make a routing decision based on what Connect AI agents decides.
+   The following image shows an example of how you can make a routing decision based on what AI agents decides.
 ![Contact routing based on ai agent tool selections for COMPLETE and TRIP_BOOKING paths.](http://docs.aws.amazon.com/connect/latest/adminguide/images/generative-ai-powered-self-service-q-3.png)
 
 ## Custom actions for self-service
 <a name="custom-actions-for-connect-ai-agents-self-service"></a>
 
-You can extend Connect AI agents's capabilities by adding custom tools. These tools can:
+You can extend AI agents's capabilities by adding custom tools. These tools can:
 + Surface next best actions for customers.
 + Delegate tasks to existing Amazon Lex bots.
 + Handle specialized use cases.
 
  When adding a custom tool to your AI prompt:
-+ Include relevant examples to help Connect AI agents select appropriate actions.
++ Include relevant examples to help AI agents select appropriate actions.
 + Use the [Check contact attributes](check-contact-attributes.md) block to create branching logic.
   + When you configure **Check contact attributes**, in the **Attribute to check** section, enter the name of your custom tool.
 
@@ -129,7 +129,7 @@ tools:
 ### Example: Recommend an action for a customer
 <a name="recommend-action-for-an-end-customer-to-take"></a>
 
- You can configure next best actions in Connect Customer by using flows. You can also configure automated actions and create step-by-step guides to provide UI-based actions to customers. For more information, see [Step-by-step Guides to set up your Connect Customer agent workspace](step-by-step-guided-experiences.md).  Connect AI agents saves the selected tool name as a Lex session attribute. The attribute can then be accessed by using the **Check contact attributes** flow block.
+ You can configure next best actions in Connect Customer by using flows. You can also configure automated actions and create step-by-step guides to provide UI-based actions to customers. For more information, see [Step-by-step Guides to set up your Connect Customer agent workspace](step-by-step-guided-experiences.md).  agent assist saves the selected tool name as a Lex session attribute. The attribute can then be accessed by using the **Check contact attributes** flow block.
 
 Here's an example tool definition for booking a trip:
 
@@ -146,7 +146,7 @@ Here's an example tool definition for booking a trip:
     - message
 ```
 
-When using the **Check contact attributes** flow block to determine which tool Connect AI agents has selected, you can make branching decisions to select the relevant step-by-step guide for that user. For example, if a customer wants to book a trip during a self-service chat interaction, you can:
+When using the **Check contact attributes** flow block to determine which tool AI agents has selected, you can make branching decisions to select the relevant step-by-step guide for that user. For example, if a customer wants to book a trip during a self-service chat interaction, you can:
 + Match the TRIP\_BOOKING tool response in your flow.
 + Route to the appropriate step-by-step guide.
 + Display the step-by-step interface directly in the customer's chat window.
@@ -156,7 +156,7 @@ When using the **Check contact attributes** flow block to determine which tool C
 ## FOLLOW\_UP\_QUESTION tool
 <a name="follow-up-question-tool"></a>
 
-The FOLLOW\_UP\_QUESTION tool enhances Connect AI agents self-service capabilities by enabling more interactive and information-gathering conversations with customers. This tool works alongside the default and custom tools. It helps collect necessary information before determining which action to take.
+The FOLLOW\_UP\_QUESTION tool enhances AI agents self-service capabilities by enabling more interactive and information-gathering conversations with customers. This tool works alongside the default and custom tools. It helps collect necessary information before determining which action to take.
 
 The following code shows the configuration of the FOLLOW\_UP\_QUESTION tool.
 
@@ -177,7 +177,7 @@ required:
   - message
 ```
 
-The FOLLOW\_UP\_QUESTION tool complements your defined tools by enabling Connect AI agents to gather necessary information before deciding which action to take. It's particularly useful for:
+The FOLLOW\_UP\_QUESTION tool complements your defined tools by enabling AI agents to gather necessary information before deciding which action to take. It's particularly useful for:
 +  **Intent disambiguation**
 
   When the customer's intent is unclear, use this tool to ask clarifying questions before selecting the appropriate action.

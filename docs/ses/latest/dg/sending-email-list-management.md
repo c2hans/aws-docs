@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sending-email-list-managem
 
 Amazon SES offers list management capabilities, which means customers can manage their own mailing lists, known as contact lists. A *contact list* is a list that allows you to store all of your contacts that have subscribed to a particular topic or topics. A *contact* is an end-user who is receiving your emails. A *topic* is an interest group, theme, or label within a list. Lists can have multiple topics.
 
-By using the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListContacts.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListContacts.html) operation in the Amazon SES API v2, you can retrieve a list of all your contacts who have subscribed to a particular topic, to whom you can send emails using the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) operation.
+By using the [`ListContacts`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListContacts.html) operation in the Amazon SES API v2, you can retrieve a list of all your contacts who have subscribed to a particular topic, to whom you can send emails using the [`SendEmail`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) operation.
 
 For information about subscription management, see [Using subscription management](sending-email-subscription-management.md).
 
@@ -21,7 +21,7 @@ You should consider the following factors when you use list management:
 + You can update an existing contact list, including adding new topics to the list, adding or deleting contacts from a list, and updating contact preferences for a list or topic.
 + You can update topic metadata, such as the topic display name or description.
 + You can get a list of contacts in a contact list, contacts subscribed to a topic, contacts unsubscribed from a topic, and contacts unsubscribed from all topics in the list.
-+ You can import your existing contact lists to SES using the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateImportJob.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateImportJob.html) API.
++ You can import your existing contact lists to SES using the [`CreateImportJob`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateImportJob.html) API.
 + SES will issue a bounce event for a message that is sent to an unsubscribed contact on your contact list. For more information, see [Using subscription management](sending-email-subscription-management.md).
 + Each contact can have associated attributes which you can use to store information about that contact.
 
@@ -33,7 +33,7 @@ You can use the following operations to configure list management capabilities. 
 ### Create a contact list
 <a name="configuring-list-management-create-contact-list"></a>
 
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateContactList.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateContactList.html) operation in the SES API v2 to create a contact list. You can quickly and easily configure this setting by using the AWS CLI. For more information about installing and configuring the AWS CLI, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/).
+You can use the [`CreateContactList`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateContactList.html) operation in the SES API v2 to create a contact list. You can quickly and easily configure this setting by using the AWS CLI. For more information about installing and configuring the AWS CLI, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/).
 
 **To create a contact list by using the AWS CLI**
 + At the command line, enter the following command:
@@ -42,7 +42,7 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Crea
   aws sesv2 create-contact-list --cli-input-json file://{{CONTACT-LIST-JSON}}
   ```
 
-  In the preceding command, replace {{CONTACT-LIST-JSON}} with the path to your JSON file for your [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateContactList.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateContactList.html) request.
+  In the preceding command, replace {{CONTACT-LIST-JSON}} with the path to your JSON file for your [`CreateContactList`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateContactList.html) request.
 
   An example `CreateContactList` input JSON file for the request is as follows:
 
@@ -82,7 +82,7 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Crea
 ### Create a contact
 <a name="configuring-list-management-create-contact"></a>
 
-You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateContact.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateContact.html) operation in the SES API v2 to create a contact. You can quickly and easily configure this setting by using the AWS CLI. For more information about installing and configuring the AWS CLI, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/).
+You can use the [`CreateContact`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateContact.html) operation in the SES API v2 to create a contact. You can quickly and easily configure this setting by using the AWS CLI. For more information about installing and configuring the AWS CLI, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/).
 
 **To create a contact by using the AWS CLI**
 + At the command line, enter the following command:
@@ -91,7 +91,7 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Crea
   aws sesv2 create-contact --cli-input-json file://{{CONTACT-JSON}}
   ```
 
-  In the preceding command, replace {{CONTACT-JSON}} with the path to your JSON file for your [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateContact.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateContact.html) request.
+  In the preceding command, replace {{CONTACT-JSON}} with the path to your JSON file for your [`CreateContact`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateContact.html) request.
 
   An example `CreateContact` input JSON file for the request is as follows:
 
@@ -119,7 +119,7 @@ You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Crea
 ### Bulk importing contacts to your contact list
 <a name="configuring-list-management-bulk-import"></a>
 
-You can manually add addresses in bulk by first uploading your contacts into an Amazon S3 object followed by using the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateImportJob.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateImportJob.html) operation in the SES API v2 or by using the SES console. For more information see [Adding email addresses in bulk to your account-level suppression list](sending-email-suppression-list.md#sending-email-suppression-list-manual-add-bulk).
+You can manually add addresses in bulk by first uploading your contacts into an Amazon S3 object followed by using the [`CreateImportJob`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateImportJob.html) operation in the SES API v2 or by using the SES console. For more information see [Adding email addresses in bulk to your account-level suppression list](sending-email-suppression-list.md#sending-email-suppression-list-manual-add-bulk).
 
 You should create a contact list before importing your contacts.
 
@@ -207,7 +207,7 @@ To add contacts in bulk to your contact list, complete the following steps.
      "Resource": "*"
   }
   ```
-+ Use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateImportJob.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateImportJob.html) operation in the SES API v2.
++ Use the [`CreateImportJob`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateImportJob.html) operation in the SES API v2.
 
 **Note**
 The following example assumes that you've already installed the AWS CLI. For more information about installing and configuring the AWS CLI, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/).
@@ -223,7 +223,7 @@ aws sesv2 create-import-job --import-destination ContactListDestination={Contact
 
 The following walkthrough provides examples of how you can use list management to list your contacts, utilize `ListManagementOptions` to specify a contact list and topic name in your email, and how to insert unsubscribe links.
 
-1. **List contacts by using the AWS CLI** – You can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListContacts.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListContacts.html) operation to retrieve a list of all your contacts who have subscribed to a particular topic, in conjunction with the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) operation, which allows you to send them emails.
+1. **List contacts by using the AWS CLI** – You can use the [`ListContacts`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListContacts.html) operation to retrieve a list of all your contacts who have subscribed to a particular topic, in conjunction with the [`SendEmail`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) operation, which allows you to send them emails.
 
    At the command line, enter the following command:
 
@@ -231,7 +231,7 @@ The following walkthrough provides examples of how you can use list management t
    aws sesv2 list-contacts --cli-input-json file://{{LIST-CONTACTS-JSON}}
    ```
 
-   In the preceding command, replace {{LIST-CONTACTS-JSON}} with the path to your JSON file for your [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListContacts.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListContacts.html) request.
+   In the preceding command, replace {{LIST-CONTACTS-JSON}} with the path to your JSON file for your [`ListContacts`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListContacts.html) request.
 
    An example `ListContacts` input JSON file for the request is as follows:
 
@@ -255,9 +255,9 @@ The following walkthrough provides examples of how you can use list management t
 
    `UseDefaultIfPreferenceUnavailable` can have a value of `true` or `false`. If `true`, the topic default preference will be used if the contact doesn’t have any explicit preference for a topic. If `false`, only contacts with an explicitly set preference are considered for filtering.
 
-1. **Send mail with `ListManagementOptions` enabled** – After listing the contacts in your list using the above [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListContacts.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListContacts.html) operation, you can use the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) operation to send emails to each of your contacts by utilizing the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html) header to specify your contact list and topic name.
+1. **Send mail with `ListManagementOptions` enabled** – After listing the contacts in your list using the above [`ListContacts`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListContacts.html) operation, you can use the [`SendEmail`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) operation to send emails to each of your contacts by utilizing the [`ListManagementOptions`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html) header to specify your contact list and topic name.
 
-   To use `ListManagementOptions` with the `SendEmail` operation, include the [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html) and [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html) to which the email belongs (the `topicName` is optional):
+   To use `ListManagementOptions` with the `SendEmail` operation, include the [`contactListName`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html) and [`topicName`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html) to which the email belongs (the `topicName` is optional):
 
    ```
    ListManagementOptions:
@@ -269,7 +269,7 @@ The following walkthrough provides examples of how you can use list management t
 
    SES will issue a bounce event for a message that is sent to an unsubscribed contact on your contact list, which means you won’t need to update your `SendEmail` requests to avoid sending to contacts who have unsubscribed.
 
-1. **Indicate the location for your unsubscribe links** – When utilizing [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html) you have the option to enable SES to add unsubscribe footer links in your email using the `{{amazonSESUnsubscribeUrl}}` placeholder to specify where SES needs to insert the unsubscribe URL. Placeholder replacement is supported only for HTML and TEXT content types. You can include the placeholder two times maximum. If used more than two times, only the first two occurrences are replaced. For more information, see [Using subscription management](sending-email-subscription-management.md).
+1. **Indicate the location for your unsubscribe links** – When utilizing [`ListManagementOptions`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html) you have the option to enable SES to add unsubscribe footer links in your email using the `{{amazonSESUnsubscribeUrl}}` placeholder to specify where SES needs to insert the unsubscribe URL. Placeholder replacement is supported only for HTML and TEXT content types. You can include the placeholder two times maximum. If used more than two times, only the first two occurrences are replaced. For more information, see [Using subscription management](sending-email-subscription-management.md).
 
    Alternatively, if you're using the SMTP interface to send email, you can use the `X-SES-LIST-MANAGEMENT-OPTIONS` header to specify a list and topic name.
 

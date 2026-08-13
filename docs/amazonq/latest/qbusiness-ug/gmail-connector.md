@@ -9,7 +9,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 With Amazon Q Business, you can connect your Gmail enterprise email system to unlock valuable organizational knowledge stored in email communications. When you connect Gmail to Amazon Q Business, your users can search and get answers from email content and conversations directly through the Amazon Q web experience.
 
-You can connect your Gmail instance to Amazon Q Business using either the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API. This connection enables your organization to leverage email-based knowledge for improved decision-making and faster information discovery.
+You can connect your Gmail instance to Amazon Q Business using either the AWS Management Console or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API. This connection enables your organization to leverage email-based knowledge for improved decision-making and faster information discovery.
 
 **Topics**
 + [Gmail connector versions](gmail-versions.md)

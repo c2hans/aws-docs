@@ -34,7 +34,7 @@ In AWS Regions that support FIPS, OpenSearch Serverless also offers FIPS-complia
 ## Per-collection endpoints
 <a name="serverless-per-collection-endpoint"></a>
 
-A per-collection endpoint targets a single collection through a hostname that includes the collection ID. The endpoint is shown on the collection details page in the OpenSearch Serverless console, and returned by the [https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIReference/API_BatchGetCollection.html](https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIReference/API_BatchGetCollection.html) API in the `collectionEndpoint` field.
+A per-collection endpoint targets a single collection through a hostname that includes the collection ID. The endpoint is shown on the collection details page in the OpenSearch Serverless console, and returned by the [`BatchGetCollection`](https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIReference/API_BatchGetCollection.html) API in the `collectionEndpoint` field.
 
 Format
 + NextGen: `{{collection-id}}.aoss.{{region}}.on.aws`

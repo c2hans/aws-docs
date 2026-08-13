@@ -58,3 +58,21 @@ We recommend creating CloudWatch alarms on the following conditions to detect is
 | No messages received | SyslogMessagesReceived = 0 for 15 minutes (when normally > 0) | Verify that devices are still sending and that network connectivity to the VPC endpoint is intact. |
 
 For information about creating CloudWatch alarms, see [Creating CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) in the *CloudWatch User Guide*.
+
+## Viewing syslog metrics on the automatic dashboard
+<a name="CWL_Syslog_Monitoring_Dashboard"></a>
+
+CloudWatch provides an automatic dashboard for CloudWatch Logs that includes a **Syslog Ingestion** section. This dashboard appears automatically when your account publishes syslog metrics – no manual setup is required. The dashboard includes one chart for each metric described in [Syslog metrics](#CWL_Syslog_Monitoring_Metrics). Each chart displays the metric rate broken down by the relevant dimensions, such as log group or reason.
+
+### Accessing the dashboard
+<a name="CWL_Syslog_Monitoring_Dashboard_Access"></a>
+
+To view the syslog automatic dashboard:
+
+1. Open the CloudWatch console at [https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch/).
+
+1. In the navigation pane, choose **Dashboards**, then choose **Automatic dashboards**.
+
+1. Choose the **CloudWatch Logs** dashboard.
+
+1. Scroll to the **Syslog Ingestion** section.

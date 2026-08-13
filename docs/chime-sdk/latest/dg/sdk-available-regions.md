@@ -52,7 +52,7 @@ The following table lists the AWS Regions available for analytics, transcription
 
 Amazon Chime SDK meetings have *control Regions* and *media Regions*. A control Region provides the API endpoint used to create, update and delete meetings. Control Regions also receive and process [Understanding Amazon Chime SDK meeting lifecycle events](using-events.md).
 
-Media Regions host the actual meetings, and clients connect to your media Regions. You specify the media Region when you call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html) API.
+Media Regions host the actual meetings, and clients connect to your media Regions. You specify the media Region when you call the [CreateMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html) API.
 
 A control Region can create a meeting in any media Region in the same AWS partition. However, you can only update a meeting in the control Region used to create the meeting.
 

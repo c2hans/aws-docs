@@ -16,7 +16,7 @@ Type: [ClarifyShapConfig](API_ClarifyShapConfig.md) object
 Required: Yes
 
  ** EnableExplanations **   <a name="sagemaker-Type-ClarifyExplainerConfig-EnableExplanations"></a>
-A JMESPath boolean expression used to filter which records to explain. Explanations are activated by default. See [https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-online-explainability-create-endpoint.html#clarify-online-explainability-create-endpoint-enable](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-online-explainability-create-endpoint.html#clarify-online-explainability-create-endpoint-enable)for additional information.
+A JMESPath boolean expression used to filter which records to explain. Explanations are activated by default. See [`EnableExplanations`](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-online-explainability-create-endpoint.html#clarify-online-explainability-create-endpoint-enable)for additional information.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `.*`

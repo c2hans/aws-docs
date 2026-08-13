@@ -30,7 +30,7 @@ For this example, we have set up our infrastructure this way:
 + The application already has a specified health check endpoint.
 + The application’s health check endpoint requires no end user authentication. The endpoint allows for a health check that meets the organization’s requirements in establishing availability. (In your environments, it might be enough to simply ascertain that the `nodeJS` application is running and able to listen for requests. In other cases, you might want to also verify that a connection to the caching layer or database layer has already been established.)
 
-The examples in this tutorial are for demonstration purposes only and not meant to be implemented as-is into production environments. Also, keep in mind that the lifecycle hooks feature of Patch Manager, a tool in Systems Manager, with the `AWS-RunPatchBaselineWithHooks` document can support numerous other scenarios. Here are several examples.
+The examples in this tutorial are for demonstration purposes only and not meant to be implemented as-is into production environments. Also, keep in mind that the lifecycle hooks feature of Patch Manager, with the `AWS-RunPatchBaselineWithHooks` document can support numerous other scenarios. Here are several examples.
 + Stop a metrics reporting agent before patching and restarting it after the managed node reboots.
 + Detach the managed node from a CRM or PCS cluster before patching and reattach after the node reboots.
 + Update third-party software (for example, Java, Tomcat, Adobe applications, and so on) on Windows Server machines after operating system (OS) updates are applied, but before the managed node reboots.
@@ -39,7 +39,7 @@ The examples in this tutorial are for demonstration purposes only and not meant 
 
 1. Create an SSM document for your preinstallation script with the following contents and name it `NodeJSAppPrePatch`. Replace {{your\_application}} with the name of your application.
 
-   This script immediately blocks new incoming requests and provides five seconds for already active ones to complete before beginning the patching operation. For the `sleep` option, specify a number of seconds greater than it usually takes for incoming requests to complete.
+   This script immediately blocks new incoming requests and provides five seconds for already active ones to complete before beginning the patching operation. For the `sleep` option, specify several seconds greater than it usually takes for incoming requests to complete.
 
    ```
    # exit on error
@@ -79,7 +79,7 @@ The examples in this tutorial are for demonstration purposes only and not meant 
    /usr/bin/curl -m 10 -vk -A "" http://localhost:443/health-check || exit 1
    ```
 
-1. Create an association in State Manager, a tool in AWS Systems Manager, to issue the operation by performing the following steps:
+1. Create an association in State Manager to issue the operation by performing the following steps:
 
    1. Open the AWS Systems Manager console at [https://console.aws.amazon.com/systems-manager/](https://console.aws.amazon.com/systems-manager/).
 
@@ -91,7 +91,7 @@ The examples in this tutorial are for demonstration purposes only and not meant 
 
    1. For **Operation**, choose **Install**.
 
-   1. (Optional) For **Snapshot Id**, provide a GUID that you generate to help speed up the operation and ensure consistency. The GUID value can be as simple as `00000000-0000-0000-0000-111122223333`.
+   1. (Optional) For **Snapshot Id**, provide a GUID that you generate to help speed up the operation and make sure consistency. The GUID value can be as simple as `00000000-0000-0000-0000-111122223333`.
 
    1. For **Pre Install Hook Doc Name**, enter `NodeJSAppPrePatch`.
 
@@ -103,7 +103,7 @@ The examples in this tutorial are for demonstration purposes only and not meant 
 
 1. For **Specify schedule**, specify how often to run the association. For managed node patching, once per week is a common cadence.
 
-1. In the **Rate control** section, choose options to control how the association runs on multiple managed nodes. Ensure that only a portion of managed nodes are updated at a time. Otherwise, all or most of your fleet could be taken offline at once. For more information about using rate controls, see [Understanding targets and rate controls in State Manager associations](systems-manager-state-manager-targets-and-rate-controls.md).
+1. In the **Rate control** section, choose options to control how the association runs on multiple managed nodes. Make sure that only a portion of managed nodes are updated at a time. Otherwise, all or most of your fleet could be taken offline at once. For more information about using rate controls, see [Understanding targets and rate controls in State Manager associations](systems-manager-state-manager-targets-and-rate-controls.md).
 
 1. (Optional) For **Output options**, to save the command output to a file, select the **Enable writing output to S3** box. Enter the bucket and prefix (folder) names in the boxes.
 **Note**

@@ -17,18 +17,29 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **July 29, 2020** to all Amazon Linux AMI platforms.<br />The **PHP 7.2.31** and **Python 3.6.11** releases include security fixes. For more information, see **Platform-specific updates** in this table. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-08-07-linux.html) |
-| **Multicontainer Docker** | Updated the ECS agent to version 1.42.0. |
-| **Go** | Updated Go to release 1.14.5. For details, see [go1.14](https://golang.org/doc/devel/release.html#go1.14) in *The Go Programming Language Release History*. |
-| **Tomcat** | Updated Tomcat 8.5 to [Tomcat 8.5.57](https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.57_(markt)). |
-| **Node.js** | Updated the Node.js platform to add support for Node versions [12.18.3](https://nodejs.org/en/blog/release/v12.18.3/), [12.18.2](https://nodejs.org/en/blog/release/v12.18.2/), and [10.22.0](https://nodejs.org/en/blog/release/v10.22.0/). |
-| **PHP** | Updated PHP 7.3 and 7.2 to releases [7.3.19](https://www.php.net/releases/7_3_19.php) and [7.2.31](https://www.php.net/releases/7_2_31.php), respectively.<br />The **PHP 7.2.31** release includes security fixes. |
-| **Python** | Updated Python 3.6 to [Python 3.6.11](https://docs.python.org/3.6/whatsnew/changelog.html#python-3-6-11-final).<br />The **Python 3.6.11** release includes security fixes. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>July 29, 2020</b> to all Amazon Linux AMI platforms.<br />The <b>PHP 7.2.31</b> and <b>Python 3.6.11</b> releases include security fixes. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Multicontainer Docker</b></td><td>Updated the ECS agent to version 1.42.0.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated Go to release 1.14.5. For details, see <a href="https://golang.org/doc/devel/release.html#go1.14">go1.14</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Tomcat</b></td><td>Updated Tomcat 8.5 to <a href="https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.57_(markt)">Tomcat 8.5.57</a>.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform to add support for Node versions <a href="https://nodejs.org/en/blog/release/v12.18.3/">12.18.3</a>, <a href="https://nodejs.org/en/blog/release/v12.18.2/">12.18.2</a>, and <a href="https://nodejs.org/en/blog/release/v10.22.0/">10.22.0</a>.</td></tr>
+  <tr><td><b>PHP</b></td><td>Updated PHP 7.3 and 7.2 to releases <a href="https://www.php.net/releases/7_3_19.php">7.3.19</a> and <a href="https://www.php.net/releases/7_2_31.php">7.2.31</a>, respectively.<br />The <b>PHP 7.2.31</b> release includes security fixes.</td></tr>
+  <tr><td><b>Python</b></td><td>Updated Python 3.6 to <a href="https://docs.python.org/3.6/whatsnew/changelog.html#python-3-6-11-final">Python 3.6.11</a>.<br />The <b>Python 3.6.11</b> release includes security fixes.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2020-08-07-linux.platforms"></a>

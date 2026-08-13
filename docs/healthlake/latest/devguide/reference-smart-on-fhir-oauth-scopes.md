@@ -10,7 +10,7 @@ HealthLake uses OAuth 2.0 as an authorization protocol. Using this protocol on y
 The SMART on FHIR framework defines a set of scopes that can be requested from the authorization server. For example, a client application that is only designed to allow patients to view their lab results or view their contact details should only be *authorized* to request `read` scopes.
 
 **Note**
-HealthLake provides support for both SMART on FHIR V1 and V2 as described below. The SMART on FHIR [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html#HealthLake-Type-IdentityProviderConfiguration-AuthorizationStrategy](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html#HealthLake-Type-IdentityProviderConfiguration-AuthorizationStrategy) is set to one of the following three values when your data store is created:
+HealthLake provides support for both SMART on FHIR V1 and V2 as described below. The SMART on FHIR [`AuthorizationStrategy`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html#HealthLake-Type-IdentityProviderConfiguration-AuthorizationStrategy) is set to one of the following three values when your data store is created:
 `SMART_ON_FHIR_V1` – Support for only SMART on FHIR V1, which includes `read` (read/search) and `write` (create/update/delete) permissions.
 `SMART_ON_FHIR` – Support for both SMART on FHIR V1 and V2, which includes `create`, `read`, `update`, `delete`, and `search` permissions.
 `AWS_AUTH` – The default AWS HealthLake authorization strategy; not affiliated with SMART on FHIR.
@@ -39,7 +39,7 @@ HealthLake defines three levels of SMART on FHIR resource scopes.
 The following sections list the syntax for constructing FHIR resource scopes using either SMART on FHIR V1 or SMART on FHIR V2.
 
 **Note**
-The SMART on FHIR authorization strategy is set when your data store is created. For more information, see [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html#HealthLake-Type-IdentityProviderConfiguration-AuthorizationStrategy](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html#HealthLake-Type-IdentityProviderConfiguration-AuthorizationStrategy) in the *AWS HealthLake API Reference*.
+The SMART on FHIR authorization strategy is set when your data store is created. For more information, see [`AuthorizationStrategy`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html#HealthLake-Type-IdentityProviderConfiguration-AuthorizationStrategy) in the *AWS HealthLake API Reference*.
 
 ### SMART on FHIR V1 scopes supported by HealthLake
 <a name="reference-smart-on-fhir-v1"></a>
@@ -68,7 +68,7 @@ When using SMART on FHIR V2, the general syntax for constructing FHIR resource s
 ```
 
 **Note**
-To use SMART on FHIR V2, you must pass in the value [https://hl7.org/fhir/smart-app-launch/STU2/conformance.html#permissions](https://hl7.org/fhir/smart-app-launch/STU2/conformance.html#permissions) into the metadata `capabilities` string, which is a member of the [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
+To use SMART on FHIR V2, you must pass in the value [`permission-v2`](https://hl7.org/fhir/smart-app-launch/STU2/conformance.html#permissions) into the metadata `capabilities` string, which is a member of the [`IdentityProviderConfiguration`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
 HealthLake supports granular scopes. For more information, see [supported granular scopes](https://hl7.org/fhir/us/core/scopes.html#the-following-granular-scopes-shall-be-supported) in the *FHIR US Core Implementation Guide*.
 
 **SMART on FHIR V2 supported authorization scopes**
@@ -104,7 +104,7 @@ The enablement path depends on whether you are creating a new data store or upda
 ##### New data stores
 <a name="smart-on-fhir-v2-2-new-data-stores"></a>
 
-When creating a new data store, add `permission-v2.2` to the `capabilities` array in the `Metadata` field of your [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html):
+When creating a new data store, add `permission-v2.2` to the `capabilities` array in the `Metadata` field of your [`IdentityProviderConfiguration`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html):
 
 ```
 "capabilities": [
@@ -119,7 +119,7 @@ When creating a new data store, add `permission-v2.2` to the `capabilities` arra
 ##### Existing data stores
 <a name="smart-on-fhir-v2-2-existing-data-stores"></a>
 
-To enable SMART on FHIR V2.2 on an existing data store, add `permission-v2.2` to the `capabilities` array in the `Metadata` field of your [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) and submit the change with `UpdateFHIRDatastore`. For more information, see [Updating a HealthLake data store](managing-data-stores-update.md).
+To enable SMART on FHIR V2.2 on an existing data store, add `permission-v2.2` to the `capabilities` array in the `Metadata` field of your [`IdentityProviderConfiguration`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) and submit the change with `UpdateFHIRDatastore`. For more information, see [Updating a HealthLake data store](managing-data-stores-update.md).
 
 Requirements:
 + `permission-v2` must remain in the array. V2.2 extends V2 and can't be used on its own.

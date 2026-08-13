@@ -14,7 +14,7 @@ By using the Connect Customer admin website, you can deliver dynamic, conversati
 + [Create a bot](work-bot-building-experience.md)
 + [Create a flow and add your conversational AI bot](create-bot-flow.md)
 + [Configure third-party speech providers](configure-third-party-speech-providers.md)
-+ [Create an Connect AI agents intent](create-qic-intent-connect.md)
++ [Create an agent assist intent](create-qic-intent-connect.md)
 + [Create bot versions and aliases](create-bot-version.md)
 + [Evaluate the performance of your conversational AI bot](lex-bot-analytics.md)
 + [Bot metrics and analytics](bot-metrics.md)

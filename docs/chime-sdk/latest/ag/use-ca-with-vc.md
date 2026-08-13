@@ -17,7 +17,7 @@ The process follows these broad steps:
 
 1. The Voice Connector invokes call analytics in accordance with the configuration.
 
-Call analytics uses the [Amazon Chime Voice Connector service-linked role](using-service-linked-roles-stream.md) to invoke the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaInsightsPipeline.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaInsightsPipeline.html) API on your behalf.
+Call analytics uses the [Amazon Chime Voice Connector service-linked role](using-service-linked-roles-stream.md) to invoke the [CreateMediaInsightsPipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaInsightsPipeline.html) API on your behalf.
 
 **Note**
 The following steps explain how to associate a call analytics session with a Voice Connector. To complete them, you first need to create a call analytics configuration. To do that, see [Creating call analytics configurations](create-ca-config.md) in this guide. The creation process assigns an ARN to the configuration. Copy the ARN for use in these steps.

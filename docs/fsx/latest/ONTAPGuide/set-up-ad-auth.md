@@ -21,13 +21,13 @@ The commands in this procedure are available to file system users with the `fsxa
 
    For more information, see [Managing file systems with the ONTAP CLI](managing-resources-ontap-apps.md#fsxadmin-ontap-cli).
 
-1. Use the [https://docs.netapp.com/us-en/ontap-cli-9141/security-login-domain-tunnel-create.html](https://docs.netapp.com/us-en/ontap-cli-9141/security-login-domain-tunnel-create.html) command as shown to establish a domain tunnel for authenticating Windows Active Directory users. Replace {{svm\_name}} with the name of the SVM you are using for the domain tunnel.
+1. Use the [`security login domain-tunnel create`](https://docs.netapp.com/us-en/ontap-cli-9141/security-login-domain-tunnel-create.html) command as shown to establish a domain tunnel for authenticating Windows Active Directory users. Replace {{svm\_name}} with the name of the SVM you are using for the domain tunnel.
 
    ```
    FsxId0123456::> security login domain-tunnel create -vserver {{svm_name}}
    ```
 
-1. Use the [https://docs.netapp.com/us-en/ontap-cli-9141/security-login-create.html](https://docs.netapp.com/us-en/ontap-cli-9141/security-login-create.html) command to create Active Directory domain user accounts that will access the file system.
+1. Use the [`security login create`](https://docs.netapp.com/us-en/ontap-cli-9141/security-login-create.html) command to create Active Directory domain user accounts that will access the file system.
 
    Specify the following required parameters in the command:
    + `-vserver` – The name of the SVM configured with CIFS and is joined to your Active Directory. It will be used as the tunnel for authenticating Active Directory domain users' to the file system. which the new role or user will be created.

@@ -145,15 +145,15 @@ Wait a few minutes for EC2 to refresh the **Session Manager** tab. If you still 
 <a name="session-manager-troubleshooting-EC2-console-no-agent"></a>
 
 If you weren't able to create a host management configuration by using Quick Setup, or if you received an error about SSM Agent not being installed, you may need to manually install SSM Agent on your instance. SSM Agent is Amazon software that enables Systems Manager to connect to your instance by using Session Manager. SSM Agent is installed by default on most Amazon Machine Images (AMIs). If your instance was created from a non-standard AMI or an older AMI, you might have to manually install the agent. For the procedure to install SSM Agent, see the following topic that corresponds to your instance operating system.
-+  [https://docs.aws.amazon.com/systems-manager/latest/userguide/manually-install-ssm-agent-windows.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/manually-install-ssm-agent-windows.html)
-+  [https://docs.aws.amazon.com/systems-manager/latest/userguide/manually-install-ssm-agent-macos.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/manually-install-ssm-agent-macos.html)
++  [Windows Server](https://docs.aws.amazon.com/systems-manager/latest/userguide/manually-install-ssm-agent-windows.html)
++  [macOS](https://docs.aws.amazon.com/systems-manager/latest/userguide/manually-install-ssm-agent-macos.html)
 +  [AlmaLinux](https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-install-alma.html)
 +  [Amazon Linux 2 and AL2023](https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-install-al2.html)
-+  [https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-install-deb.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-install-deb.html)
-+  [https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-install-oracle.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-install-oracle.html)
-+  [https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-install-rhel.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-install-rhel.html)
-+  [https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-install-rocky.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-install-rocky.html)
-+  [https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-install-ubuntu.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-install-ubuntu.html)
++  [Debian Server](https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-install-deb.html)
++  [Oracle Linux](https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-install-oracle.html)
++  [Red Hat Enterprise Linux](https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-install-rhel.html)
++  [Rocky Linux](https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-install-rocky.html)
++  [Ubuntu Server](https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-install-ubuntu.html)
 
 For issues with SSM Agent, see [Troubleshooting SSM Agent](troubleshooting-ssm-agent.md).
 

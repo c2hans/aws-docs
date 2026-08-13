@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-example-output-files-email.html
 ---
 
-# Example Contact Lens output files for an email analyzed by Contact Lens conversational analytics
+# Example conversational analytics output files for an email analyzed by conversational analytics
 <a name="contact-lens-example-output-files-email"></a>
 
-This section shows an example schema for an email contact that has been analyzed by Contact Lens conversational analytics. The example shows matched categories and a contact chain summary.
+This section shows an example schema for an email contact that has been analyzed by conversational analytics. The example shows matched categories and a contact chain summary.
 
 Note the following about email analytics output files:
 + The `Channel` field is set to `EMAIL`.

@@ -107,7 +107,7 @@ GET my-index/_search
 }
 ```
 
-If you need to handle a large volume of queries while maintaining optimal performance, you can use the [https://opensearch.org/docs/latest/api-reference/multi-search/](https://opensearch.org/docs/latest/api-reference/multi-search/) API to construct a bulk search with JSON and send a single request to perform multiple searches:
+If you need to handle a large volume of queries while maintaining optimal performance, you can use the [`_msearch`](https://opensearch.org/docs/latest/api-reference/multi-search/) API to construct a bulk search with JSON and send a single request to perform multiple searches:
 
 ```
 GET _msearch

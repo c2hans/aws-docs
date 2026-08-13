@@ -16,7 +16,7 @@ When deploying the CloudFormation template using the AWS CDK Toolkit, you provid
 In general, we recommend against using CloudFormation parameters with the AWS CDK. The usual ways to pass values into AWS CDK apps are [context values](context.md) and environment variables. Because they are not available at synthesis time, parameter values cannot be easily used for flow control and other purposes in your CDK app.
 
 **Note**
-To do control flow with parameters, you can use [https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.CfnCondition.html](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.CfnCondition.html) constructs, although this is awkward compared to native `if` statements.
+To do control flow with parameters, you can use [`CfnCondition`](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.CfnCondition.html) constructs, although this is awkward compared to native `if` statements.
 
 Using parameters requires you to be mindful of how the code you're writing behaves at deployment time, as well as at synthesis time. This makes it harder to understand and reason about your AWS CDK application, in many cases for little benefit.
 
@@ -27,7 +27,7 @@ There are, however, use cases to which CloudFormation parameters are uniquely su
 ## Defining parameters
 <a name="parameters-define"></a>
 
-Use the [https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.CfnParameter.html](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.CfnParameter.html) class to define a parameter. You'll want to specify at least a type and a description for most parameters, though both are technically optional. The description appears when the user is prompted to enter the parameter's value in the CloudFormation console. For more information on the available types, see [Types](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html#parameters-section-structure-properties-type).
+Use the [`CfnParameter`](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.CfnParameter.html) class to define a parameter. You'll want to specify at least a type and a description for most parameters, though both are technically optional. The description appears when the user is prompted to enter the parameter's value in the CloudFormation console. For more information on the available types, see [Types](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html#parameters-section-structure-properties-type).
 
 **Note**
 You can define parameters in any scope, but we recommend defining parameters at the stack level so that their logical ID does not change when you refactor your code.

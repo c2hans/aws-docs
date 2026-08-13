@@ -9,7 +9,7 @@ You can create a local user account that can be used to authorize access to data
 
 **To create local user accounts on the SMB server**
 
-1. Create the local user using the [https://docs.netapp.com/us-en/ontap-cli/vserver-cifs-users-and-groups-local-user-create.html](https://docs.netapp.com/us-en/ontap-cli/vserver-cifs-users-and-groups-local-user-create.html) ONTAP CLI command:
+1. Create the local user using the [**vserver cifs users-and-groups local-user create**](https://docs.netapp.com/us-en/ontap-cli/vserver-cifs-users-and-groups-local-user-create.html) ONTAP CLI command:
 
    ```
    vserver cifs users-and-groups local-user create -vserver {{svm_name}} -user-name {{user_name}} optional_parameters

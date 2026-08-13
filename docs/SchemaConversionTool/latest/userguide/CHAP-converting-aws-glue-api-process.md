@@ -55,7 +55,7 @@ rsdbb03_dev_ora_glue
 
 Create a new connection in a Data Catalog by using the [AWS SDK API](https://docs.aws.amazon.com/glue/latest/webapi/API_CreateConnection.html).
 
-The following example demonstrates using the [https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-connections.html](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-connections.html) method of the Python API for AWS Glue.
+The following example demonstrates using the [`create_connection`](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-connections.html) method of the Python API for AWS Glue.
 
 ```
 response = client.create_connection(

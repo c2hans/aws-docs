@@ -17,7 +17,7 @@ In CodeBuild, you can specify the compute and runtime environment image that Cod
 
 CodeBuild offers EC2 and AWS Lambda compute modes. EC2 offers optimized flexibility during your build and AWS Lambda offers optimized start-up speeds. AWS Lambda supports faster builds due to a lower start-up latency. AWS Lambda also automatically scales, so builds aren't waiting in queue to run. For more information, see [Run builds on AWS Lambda compute](lambda.md).
 
-With the EC2 compute mode, you can run your builds with on-demand or reserved capacity fleets. For on-demand fleets, you can select pre-defined compute types such as`BUILD_GENERAL1_SMALL` or `BUILD_GENERAL1_LARGE`. For more information, see [About on-demand environment types](#environment.types). For reserved capacity fleets, you can select your compute configurations including vCPU, memory and disk space. After specifying the configurations, CodeBuild will choose a supported compute type that matches your requirements. For more information, see [About reserved capacity environment types](#environment-reserved-capacity.types).
+With the EC2 compute mode, you can run your builds with on-demand or reserved capacity fleets. For on-demand fleets, you can select pre-defined compute types such as `BUILD_GENERAL1_SMALL` or `BUILD_GENERAL1_LARGE`. For more information, see [About on-demand environment types](#environment.types). For reserved capacity fleets, you can select your compute configurations including vCPU, memory and disk space. After specifying the configurations, CodeBuild will choose a supported compute type that matches your requirements. For more information, see [About reserved capacity environment types](#environment-reserved-capacity.types).
 
 ## About reserved capacity environment types
 <a name="environment-reserved-capacity.types"></a>
@@ -65,8 +65,10 @@ AWS CodeBuild provides Linux x86, Arm, GPU, Windows and macOS environment types 
 | Windows | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
 | Windows | 8 | 16 GiB | 128 GB | GENERAL | reserved.x86-64.8cpu.16gib |
 | Windows | 16 | 32 GiB | 256 GB | GENERAL | reserved.x86-64.16cpu.32gib |
+| Windows | 32 | 64 GiB | 256 GB | GENERAL | reserved.x86-64.32cpu.64gib |
 | Windows | 36 | 72 GiB | 256 GB | GENERAL | reserved.x86-64.36cpu.72gib |
 | Windows | 48 | 96 GiB | 512 GB | GENERAL | reserved.x86-64.48cpu.96gib |
+| Windows | 64 | 128 GiB | 512 GB | GENERAL | reserved.x86-64.64cpu.128gib |
 | Windows | 72 | 144 GiB | 824 GB | GENERAL | reserved.x86-64.72cpu.144gib |
 | Windows | 96 | 192 GiB | 824 GB | GENERAL | reserved.x86-64.96cpu.192gib |
 | Windows EC2 | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
@@ -95,6 +97,7 @@ For more information on the pricing identifier, see [https://aws.amazon.com/code
 | Linux | 16 | 32 GiB | 256 GB | GENERAL | reserved.x86-64.16cpu.32gib |
 | Linux | 36 | 72 GiB | 256 GB | GENERAL | reserved.x86-64.36cpu.72gib |
 | Linux | 48 | 96 GiB | 512 GB | GENERAL | reserved.x86-64.48cpu.96gib |
+| Linux | 96 | 192 GiB | 824 GB | GENERAL | reserved.x86-64.96cpu.192gib |
 | Linux | 48 | 96 GiB | 824 GB (SSD) | NVME | reserved.x86-64.48cpu.96gib.nvme |
 | Linux | 72 | 144 GiB | 824 GB (SSD) | NVME | reserved.x86-64.72cpu.144gib.nvme |
 | Linux EC2 | 2 | 4 GiB | 64 GB | GENERAL | reserved.x86-64.2cpu.4gib |
@@ -111,8 +114,11 @@ For more information on the pricing identifier, see [https://aws.amazon.com/code
 | Windows | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
 | Windows | 8 | 16 GiB | 128 GB | GENERAL | reserved.x86-64.8cpu.16gib |
 | Windows | 16 | 32 GiB | 256 GB | GENERAL | reserved.x86-64.16cpu.32gib |
+| Windows | 32 | 64 GiB | 256 GB | GENERAL | reserved.x86-64.32cpu.64gib |
 | Windows | 36 | 72 GiB | 256 GB | GENERAL | reserved.x86-64.36cpu.72gib |
 | Windows | 48 | 96 GiB | 512 GB | GENERAL | reserved.x86-64.48cpu.96gib |
+| Windows | 64 | 128 GiB | 512 GB | GENERAL | reserved.x86-64.64cpu.128gib |
+| Windows | 96 | 192 GiB | 824 GB | GENERAL | reserved.x86-64.96cpu.192gib |
 | Windows EC2 | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
 | Windows EC2 | 8 | 16 GiB | 128 GB | GENERAL | reserved.x86-64.8cpu.16gib |
 
@@ -202,8 +208,10 @@ For more information on the pricing identifier, see [https://aws.amazon.com/code
 | Windows | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
 | Windows | 8 | 16 GiB | 128 GB | GENERAL | reserved.x86-64.8cpu.16gib |
 | Windows | 16 | 32 GiB | 256 GB | GENERAL | reserved.x86-64.16cpu.32gib |
+| Windows | 32 | 64 GiB | 256 GB | GENERAL | reserved.x86-64.32cpu.64gib |
 | Windows | 36 | 72 GiB | 256 GB | GENERAL | reserved.x86-64.36cpu.72gib |
 | Windows | 48 | 96 GiB | 512 GB | GENERAL | reserved.x86-64.48cpu.96gib |
+| Windows | 64 | 128 GiB | 512 GB | GENERAL | reserved.x86-64.64cpu.128gib |
 | Windows | 72 | 144 GiB | 824 GB | GENERAL | reserved.x86-64.72cpu.144gib |
 | Windows | 96 | 192 GiB | 824 GB | GENERAL | reserved.x86-64.96cpu.192gib |
 | Windows EC2 | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
@@ -234,6 +242,7 @@ For more information on the pricing identifier, see [https://aws.amazon.com/code
 | Linux | 48 | 96 GiB | 512 GB | GENERAL | reserved.x86-64.48cpu.96gib |
 | Linux | 72 | 144 GiB | 824 GB | GENERAL | reserved.x86-64.72cpu.144gib |
 | Linux | 96 | 192 GiB | 824 GB | GENERAL | reserved.x86-64.96cpu.192gib |
+| Linux | 48 | 96 GiB | 824 GB (SSD) | NVME | reserved.x86-64.48cpu.96gib.nvme |
 | Linux | 72 | 144 GiB | 824 GB (SSD) | NVME | reserved.x86-64.72cpu.144gib.nvme |
 | Linux EC2 | 2 | 4 GiB | 64 GB | GENERAL | reserved.x86-64.2cpu.4gib |
 | Linux EC2 | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
@@ -245,8 +254,10 @@ For more information on the pricing identifier, see [https://aws.amazon.com/code
 | Windows | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
 | Windows | 8 | 16 GiB | 128 GB | GENERAL | reserved.x86-64.8cpu.16gib |
 | Windows | 16 | 32 GiB | 256 GB | GENERAL | reserved.x86-64.16cpu.32gib |
+| Windows | 32 | 64 GiB | 256 GB | GENERAL | reserved.x86-64.32cpu.64gib |
 | Windows | 36 | 72 GiB | 256 GB | GENERAL | reserved.x86-64.36cpu.72gib |
 | Windows | 48 | 96 GiB | 512 GB | GENERAL | reserved.x86-64.48cpu.96gib |
+| Windows | 64 | 128 GiB | 512 GB | GENERAL | reserved.x86-64.64cpu.128gib |
 | Windows | 72 | 144 GiB | 824 GB | GENERAL | reserved.x86-64.72cpu.144gib |
 | Windows | 96 | 192 GiB | 824 GB | GENERAL | reserved.x86-64.96cpu.192gib |
 | Windows EC2 | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
@@ -336,8 +347,10 @@ For more information on the pricing identifier, see [https://aws.amazon.com/code
 | Windows | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
 | Windows | 8 | 16 GiB | 128 GB | GENERAL | reserved.x86-64.8cpu.16gib |
 | Windows | 16 | 32 GiB | 256 GB | GENERAL | reserved.x86-64.16cpu.32gib |
+| Windows | 32 | 64 GiB | 256 GB | GENERAL | reserved.x86-64.32cpu.64gib |
 | Windows | 36 | 72 GiB | 256 GB | GENERAL | reserved.x86-64.36cpu.72gib |
 | Windows | 48 | 96 GiB | 512 GB | GENERAL | reserved.x86-64.48cpu.96gib |
+| Windows | 64 | 128 GiB | 512 GB | GENERAL | reserved.x86-64.64cpu.128gib |
 | Windows | 72 | 144 GiB | 824 GB | GENERAL | reserved.x86-64.72cpu.144gib |
 | Windows | 96 | 192 GiB | 824 GB | GENERAL | reserved.x86-64.96cpu.192gib |
 | Windows EC2 | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
@@ -377,8 +390,10 @@ For more information on the pricing identifier, see [https://aws.amazon.com/code
 | Windows | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
 | Windows | 8 | 16 GiB | 128 GB | GENERAL | reserved.x86-64.8cpu.16gib |
 | Windows | 16 | 32 GiB | 256 GB | GENERAL | reserved.x86-64.16cpu.32gib |
+| Windows | 32 | 64 GiB | 256 GB | GENERAL | reserved.x86-64.32cpu.64gib |
 | Windows | 36 | 72 GiB | 256 GB | GENERAL | reserved.x86-64.36cpu.72gib |
 | Windows | 48 | 96 GiB | 512 GB | GENERAL | reserved.x86-64.48cpu.96gib |
+| Windows | 64 | 128 GiB | 512 GB | GENERAL | reserved.x86-64.64cpu.128gib |
 | Windows | 72 | 144 GiB | 824 GB | GENERAL | reserved.x86-64.72cpu.144gib |
 | Windows | 96 | 192 GiB | 824 GB | GENERAL | reserved.x86-64.96cpu.192gib |
 | Windows EC2 | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
@@ -409,6 +424,7 @@ For more information on the pricing identifier, see [https://aws.amazon.com/code
 | Linux | 48 | 96 GiB | 512 GB | GENERAL | reserved.x86-64.48cpu.96gib |
 | Linux | 72 | 144 GiB | 824 GB | GENERAL | reserved.x86-64.72cpu.144gib |
 | Linux | 96 | 192 GiB | 824 GB | GENERAL | reserved.x86-64.96cpu.192gib |
+| Linux | 48 | 96 GiB | 824 GB (SSD) | NVME | reserved.x86-64.48cpu.96gib.nvme |
 | Linux | 72 | 144 GiB | 824 GB (SSD) | NVME | reserved.x86-64.72cpu.144gib.nvme |
 | Linux EC2 | 2 | 4 GiB | 64 GB | GENERAL | reserved.x86-64.2cpu.4gib |
 | Linux EC2 | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
@@ -423,8 +439,10 @@ For more information on the pricing identifier, see [https://aws.amazon.com/code
 | Windows | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
 | Windows | 8 | 16 GiB | 128 GB | GENERAL | reserved.x86-64.8cpu.16gib |
 | Windows | 16 | 32 GiB | 256 GB | GENERAL | reserved.x86-64.16cpu.32gib |
+| Windows | 32 | 64 GiB | 256 GB | GENERAL | reserved.x86-64.32cpu.64gib |
 | Windows | 36 | 72 GiB | 256 GB | GENERAL | reserved.x86-64.36cpu.72gib |
 | Windows | 48 | 96 GiB | 512 GB | GENERAL | reserved.x86-64.48cpu.96gib |
+| Windows | 64 | 128 GiB | 512 GB | GENERAL | reserved.x86-64.64cpu.128gib |
 | Windows | 72 | 144 GiB | 824 GB | GENERAL | reserved.x86-64.72cpu.144gib |
 | Windows | 96 | 192 GiB | 824 GB | GENERAL | reserved.x86-64.96cpu.192gib |
 | Windows EC2 | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
@@ -455,6 +473,7 @@ For more information on the pricing identifier, see [https://aws.amazon.com/code
 | Linux | 48 | 96 GiB | 512 GB | GENERAL | reserved.x86-64.48cpu.96gib |
 | Linux | 72 | 144 GiB | 824 GB | GENERAL | reserved.x86-64.72cpu.144gib |
 | Linux | 96 | 192 GiB | 824 GB | GENERAL | reserved.x86-64.96cpu.192gib |
+| Linux | 48 | 96 GiB | 824 GB (SSD) | NVME | reserved.x86-64.48cpu.96gib.nvme |
 | Linux | 72 | 144 GiB | 824 GB (SSD) | NVME | reserved.x86-64.72cpu.144gib.nvme |
 | Linux EC2 | 2 | 4 GiB | 64 GB | GENERAL | reserved.x86-64.2cpu.4gib |
 | Linux EC2 | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
@@ -469,8 +488,10 @@ For more information on the pricing identifier, see [https://aws.amazon.com/code
 | Windows | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
 | Windows | 8 | 16 GiB | 128 GB | GENERAL | reserved.x86-64.8cpu.16gib |
 | Windows | 16 | 32 GiB | 256 GB | GENERAL | reserved.x86-64.16cpu.32gib |
+| Windows | 32 | 64 GiB | 256 GB | GENERAL | reserved.x86-64.32cpu.64gib |
 | Windows | 36 | 72 GiB | 256 GB | GENERAL | reserved.x86-64.36cpu.72gib |
 | Windows | 48 | 96 GiB | 512 GB | GENERAL | reserved.x86-64.48cpu.96gib |
+| Windows | 64 | 128 GiB | 512 GB | GENERAL | reserved.x86-64.64cpu.128gib |
 | Windows | 72 | 144 GiB | 824 GB | GENERAL | reserved.x86-64.72cpu.144gib |
 | Windows | 96 | 192 GiB | 824 GB | GENERAL | reserved.x86-64.96cpu.192gib |
 | Windows EC2 | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
@@ -515,8 +536,10 @@ For more information on the pricing identifier, see [https://aws.amazon.com/code
 | Windows | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
 | Windows | 8 | 16 GiB | 128 GB | GENERAL | reserved.x86-64.8cpu.16gib |
 | Windows | 16 | 32 GiB | 256 GB | GENERAL | reserved.x86-64.16cpu.32gib |
+| Windows | 32 | 64 GiB | 256 GB | GENERAL | reserved.x86-64.32cpu.64gib |
 | Windows | 36 | 72 GiB | 256 GB | GENERAL | reserved.x86-64.36cpu.72gib |
 | Windows | 48 | 96 GiB | 512 GB | GENERAL | reserved.x86-64.48cpu.96gib |
+| Windows | 64 | 128 GiB | 512 GB | GENERAL | reserved.x86-64.64cpu.128gib |
 | Windows | 72 | 144 GiB | 824 GB | GENERAL | reserved.x86-64.72cpu.144gib |
 | Windows | 96 | 192 GiB | 824 GB | GENERAL | reserved.x86-64.96cpu.192gib |
 | Windows EC2 | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
@@ -545,6 +568,8 @@ For more information on the pricing identifier, see [https://aws.amazon.com/code
 | Linux | 36 | 72 GiB | 256 GB | GENERAL | reserved.x86-64.36cpu.72gib |
 | Linux | 48 | 96 GiB | 512 GB | GENERAL | reserved.x86-64.48cpu.96gib |
 | Linux | 72 | 144 GiB | 824 GB | GENERAL | reserved.x86-64.72cpu.144gib |
+| Linux | 96 | 192 GiB | 824 GB | GENERAL | reserved.x86-64.96cpu.192gib |
+| Linux | 48 | 96 GiB | 824 GB (SSD) | NVME | reserved.x86-64.48cpu.96gib.nvme |
 | Linux | 72 | 144 GiB | 824 GB (SSD) | NVME | reserved.x86-64.72cpu.144gib.nvme |
 | Linux EC2 | 2 | 4 GiB | 64 GB | GENERAL | reserved.x86-64.2cpu.4gib |
 | Linux EC2 | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
@@ -553,9 +578,12 @@ For more information on the pricing identifier, see [https://aws.amazon.com/code
 | Windows | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
 | Windows | 8 | 16 GiB | 128 GB | GENERAL | reserved.x86-64.8cpu.16gib |
 | Windows | 16 | 32 GiB | 256 GB | GENERAL | reserved.x86-64.16cpu.32gib |
+| Windows | 32 | 64 GiB | 256 GB | GENERAL | reserved.x86-64.32cpu.64gib |
 | Windows | 36 | 72 GiB | 256 GB | GENERAL | reserved.x86-64.36cpu.72gib |
 | Windows | 48 | 96 GiB | 512 GB | GENERAL | reserved.x86-64.48cpu.96gib |
+| Windows | 64 | 128 GiB | 512 GB | GENERAL | reserved.x86-64.64cpu.128gib |
 | Windows | 72 | 144 GiB | 824 GB | GENERAL | reserved.x86-64.72cpu.144gib |
+| Windows | 96 | 192 GiB | 824 GB | GENERAL | reserved.x86-64.96cpu.192gib |
 | Windows EC2 | 4 | 8 GiB | 128 GB | GENERAL | reserved.x86-64.4cpu.8gib |
 | Windows EC2 | 8 | 16 GiB | 128 GB | GENERAL | reserved.x86-64.8cpu.16gib |
 
@@ -574,7 +602,7 @@ For the AWS CLI and AWS SDKs, you can still use `computeType` inputs such as `BU
 ### Supported instance families
 <a name="environment-reserved-capacity.instance-types"></a>
 
-AWS CodeBuild supports the following instances for reserved capacity fleets.:
+AWS CodeBuild supports the following instances for reserved capacity fleets:
 + **General purpose:** M5 \| M5a \| M5ad \| M5d \| M5dn \| M5n \| M5zn \| M6a \| M6g \| M6gd \| M6i \| M6id \| M6idn \| M6in \| M7a \| M7g \| M7gd \| M7i \| M7i-flex \| M8g \| T3 \| T3a \| T4g
 + **Compute optimized:** C5 \| C5a \| C5ad \| C5d \| C5n \| C6a \| C6g \| C6gd \| C6gn \| C6i \| C6id \| C6in \| C7a \| C7g \| C7gd \| C7gn \| C7i \| C7i-flex \| C8g
 + **Memory optimized:** R5 \| R5a \| R5ad \| R5b \| R5d \| R5dn \| R5n \| R6a \| R6g \| R6gd \| R6i \| R6idn \| R6in \| R6id \| R7a \| R7g \| R7gd \| R7i \| R7iz \| R8g \| U-3tb1 \| U-6tb1 \| U-9tb1 \| U-12tb1 \| U-18tb1 \| U-24tb1 \| U7i-6tb \| U7i-8tb \| U7i-12tb \| U7in-16tb \| U7in-24tb \| U7in-32tb \| X1 \| X1e \| X2gd \| X2idn \| X2iedn \| X2iezn \| X8g \| z1d

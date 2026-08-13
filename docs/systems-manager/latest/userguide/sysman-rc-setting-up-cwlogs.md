@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-
 # Configuring Amazon CloudWatch Logs for Run Command
 <a name="sysman-rc-setting-up-cwlogs"></a>
 
-When you send a command by using Run Command, a tool in AWS Systems Manager, you can specify where you want to send the command output. By default, Systems Manager returns only the first 24,000 characters of the command output. If you want to view the full details of the command output, you can specify an Amazon Simple Storage Service (Amazon S3) bucket. Or you can specify Amazon CloudWatch Logs. If you specify CloudWatch Logs, Run Command periodically sends all command output and error logs to CloudWatch Logs. You can monitor output logs in near real-time, search for specific phrases, values, or patterns, and create alarms based on the search.
+When you send a command by using Run Command, you can specify where you want to send the command output. By default, Systems Manager returns only the first 24,000 characters of the command output. If you want to view the full details of the command output, you can specify an Amazon Simple Storage Service (Amazon S3) bucket. Or you can specify Amazon CloudWatch Logs. If you specify CloudWatch Logs, Run Command periodically sends all command output and error logs to CloudWatch Logs. You can monitor output logs in near real-time, search for specific phrases, values, or patterns, and create alarms based on the search.
 
 If you configured your managed node to use the AWS Identity and Access Management (IAM) managed policies `AmazonSSMManagedInstanceCore` and `CloudWatchAgentServerPolicy`, then your node requires no additional configuration to send output to CloudWatch Logs. Choose this option if sending commands from the console, or add the `cloud-watch-output-config` section and `CloudWatchOutputEnabled` parameter if using the AWS Command Line Interface (AWS CLI), AWS Tools for Windows PowerShell, or an API operation. The `cloud-watch-output-config` section and `CloudWatchOutputEnabled` parameter are described in more detail later in this topic.
 
@@ -38,7 +38,7 @@ If you're using a custom policy on your nodes, update the policy on each node to
 
 To specify CloudWatch Logs as the output when you send a command from the AWS Management Console, choose **CloudWatch Output** in the **Output options** section. Optionally, you can specify the name of CloudWatch Logs group where you want to send command output. If you don't specify a group name, Systems Manager automatically creates a log group for you. The log group uses the following naming format: `/aws/ssm/{{SystemsManagerDocumentName}}`
 
-If you run commands by using the AWS CLI, specify the `cloud-watch-output-config` section in your command. This section allows you to specify the `CloudWatchOutputEnabled` parameter, and optionally, the `CloudWatchLogGroupName` parameter. Here is an example.
+If you run commands by using the AWS CLI, specify the `cloud-watch-output-config` section in your command. This section lets you specify the `CloudWatchOutputEnabled` parameter, and optionally, the `CloudWatchLogGroupName` parameter. Here is an example.
 
 ------
 #### [ Linux & macOS ]
@@ -58,7 +58,7 @@ aws ssm send-command \
 aws ssm send-command ^
     --document-name "AWS-RunPowerShellScript" ^
     --parameters commands=["echo helloWorld"] ^
-    --targets "Key=instanceids,Values={{an instance ID}}” ^
+    --targets "Key=instanceids,Values={{an instance ID}}" ^
     --cloud-watch-output-config '{"CloudWatchLogGroupName":"{{log group name}}","CloudWatchOutputEnabled":true}'
 ```
 

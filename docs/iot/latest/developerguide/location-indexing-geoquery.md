@@ -98,7 +98,7 @@ To index location data, you must update indexing configuration and include your 
 ### Location data stored in classic shadows
 <a name="location-indexing-shadow-configuration"></a>
 
-If your location data is stored in a classic shadow, you must set `thingIndexingMode` to be `REGISTRY_AND_SHADOW` and specify your location data in the `geoLocations` fields (`name` and `order`) in [https://docs.aws.amazon.com//iot/latest/apireference/API_IndexingFilter.html](https://docs.aws.amazon.com//iot/latest/apireference/API_IndexingFilter.html).
+If your location data is stored in a classic shadow, you must set `thingIndexingMode` to be `REGISTRY_AND_SHADOW` and specify your location data in the `geoLocations` fields (`name` and `order`) in [`filter`](https://docs.aws.amazon.com//iot/latest/apireference/API_IndexingFilter.html).
 
 In the following thing indexing configuration example, you specify the location data path `shadow.reported.coordinates` as `name` and `LonLat` as `order`.
 
@@ -136,7 +136,7 @@ In the following thing indexing configuration example, you specify the location 
 ### Location data stored in named shadows
 <a name="location-indexing-named-shadow-configuration"></a>
 
-If your location data is stored in a named shadow, set `namedShadowIndexingMode` to be `ON`, add your named shadow name(s) to the `namedShadowNames` field in [https://docs.aws.amazon.com//iot/latest/apireference/API_IndexingFilter.html](https://docs.aws.amazon.com//iot/latest/apireference/API_IndexingFilter.html), and specify your location data path in the `geoLocations` field in [https://docs.aws.amazon.com//iot/latest/apireference/API_IndexingFilter.html](https://docs.aws.amazon.com//iot/latest/apireference/API_IndexingFilter.html).
+If your location data is stored in a named shadow, set `namedShadowIndexingMode` to be `ON`, add your named shadow name(s) to the `namedShadowNames` field in [`filter`](https://docs.aws.amazon.com//iot/latest/apireference/API_IndexingFilter.html), and specify your location data path in the `geoLocations` field in [`filter`](https://docs.aws.amazon.com//iot/latest/apireference/API_IndexingFilter.html).
 
 In the following thing indexing configuration example, you specify the location data path `shadow.name.namedShadow1.reported.coordinates` as `name` and `LonLat` as `order`.
 

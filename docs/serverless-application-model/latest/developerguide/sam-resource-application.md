@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 # AWS::Serverless::Application
 <a name="sam-resource-application"></a>
 
-Embeds a serverless application from the [AWS Serverless Application Repository](https://serverlessrepo.aws.amazon.com/applications) or from an Amazon S3 bucket as a nested application. Nested applications are deployed as nested [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-stack.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-stack.html) resources, which can contain multiple other resources including other [AWS::Serverless::Application](#sam-resource-application) resources.
+Embeds a serverless application from the [AWS Serverless Application Repository](https://serverlessrepo.aws.amazon.com/applications) or from an Amazon S3 bucket as a nested application. Nested applications are deployed as nested [AWS::CloudFormation::Stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-stack.html) resources, which can contain multiple other resources including other [AWS::Serverless::Application](#sam-resource-application) resources.
 
 **Note**
 When you deploy to AWS CloudFormation, AWS SAM transforms your AWS SAM resources into CloudFormation resources. For more information, see [Generated CloudFormation resources for AWS SAM](sam-specification-generated-resources.md).
@@ -71,14 +71,14 @@ The length of time, in minutes, that CloudFormation waits for the nested stack t
 
 When the logical ID of this resource is provided to the `Ref` intrinsic function, it returns the resource name of the underlying `AWS::CloudFormation::Stack` resource.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html) in the *AWS CloudFormation User Guide*.
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html) in the *AWS CloudFormation User Guide*.
 
 ### Fn::GetAtt
 <a name="sam-resource-application-return-values-fn--getatt"></a>
 
 `Fn::GetAtt` returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using `Fn::GetAtt`, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html) in the *AWS CloudFormation User Guide*.
+For more information about using `Fn::GetAtt`, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html) in the *AWS CloudFormation User Guide*.
 
 `Outputs.ApplicationOutputName`  <a name="Outputs.ApplicationOutputName-fn::getatt"></a>
 The value of the stack output with name `{{ApplicationOutputName}}`.

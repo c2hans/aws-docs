@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/visual-
 # Using the visual design experience
 <a name="visual-designer-use"></a>
 
-Learn to create, edit and run runbook workflows using the visual design experience. After your workflow is ready, you can save it or export it. You can also use the visual design experience for rapid prototyping.
+Learn to create, edit, and run runbook workflows using the visual design experience. When your workflow is ready, save or export it. You can also use it for rapid prototyping.
 
 ## Create a runbook workflow
 <a name="visual-designer-create-runbook-workflow"></a>
@@ -25,17 +25,17 @@ You can now design a workflow for your new runbook.
 ## Design a runbook
 <a name="visual-designer-build"></a>
 
- To design a runbook workflow using the visual design experience, you drag an automation action from the **Actions** browser into the canvas, placing it where you want it in your runbook's workflow. You can also re-order actions in your workflow by dragging them to a different location. As you drag an action onto the canvas, a line appears wherever you can drop the action in your workflow. After an action is dropped onto the canvas, its code is auto-generated and added inside your runbook's content.
+To design a runbook workflow, move an automation action from the **Actions** browser into the canvas. Place it where you want it in your workflow. You can re-order actions by moving them to a different location. As you move an action onto the canvas, a line shows where you can drop it. After you drop an action, its code is auto-generated and added to your runbook's content.
 
-If you know the name of the action you want to add, use the search box at the top of the **Actions** browser to find the action.
+Use the search box at the top of the **Actions** browser to find an action by name.
 
-After you drop an action onto the canvas, configure it using the **Form** panel on the right. This panel contains the **General**, **Inputs**, **Outputs**, and **Configuration** tabs for each automation action or API action that you place on the canvas. For example, the **General** tab consists of the following sections:
+After you drop an action onto the canvas, configure it using the **Form** panel on the right. This panel has **General**, **Inputs**, **Outputs**, and **Configuration** tabs for each action on the canvas. The **General** tab has the following sections:
 + The **Step name** identifies the step. Specify a unique value for the step name.
 + The **Description** helps you describe what the action is doing in your runbook's workflow.
 
 The **Inputs** tab contains fields that vary based on the action. For example, the `aws:executeScript` automation action consists of the following sections:
 + The **Runtime** is the language to use for running the provided script.
-+ The **Handler** is the name of your function. You must ensure that the function defined in the handler has two parameters: `events` and `context`. The PowerShell runtime doesn't support this parameter.
++ The **Handler** is the name of your function. You must make sure that the function defined in the handler has two parameters: `events` and `context`. The PowerShell runtime doesn't support this parameter.
 + The **Script** is an embedded script that you want to run during the workflow.
 + (Optional) The **Attachment** is for standalone scripts or .zip files that can be invoked by the action. This parameter is required for JSON runbooks.
 
@@ -52,7 +52,7 @@ The **Configuration** tab contains properties and options that all automation ac
 + The **On failure** property determines which action the automation goes to next in the runbook if the action fails.
 + The **On cancel** property determines which action the automation goes to next in the runbook if the action is canceled by a user.
 
-To delete an action, you can use backspace, the toolbar above the canvas, or right-click and choose **Delete action**.
+To delete an action, you can use backspace, the toolbar above the canvas, or open the context menu and choose **Delete action**.
 
 As your workflow grows, it might not fit in the canvas. To help make the workflow fit in the canvas, try one of the following options:
 + Use the controls on the side panels to resize or close the panels.

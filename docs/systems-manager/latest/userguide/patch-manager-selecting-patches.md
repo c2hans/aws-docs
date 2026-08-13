@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 # How security patches are selected
 <a name="patch-manager-selecting-patches"></a>
 
-The primary focus of Patch Manager, a tool in AWS Systems Manager, is on installing operating systems security-related updates on managed nodes. By default, Patch Manager doesn't install all available patches, but rather a smaller set of patches focused on security.
+The primary focus of Patch Manager is on installing operating systems security-related updates on managed nodes. By default, Patch Manager doesn't install all available patches, but rather a smaller set of patches focused on security.
 
 By default, Patch Manager doesn't replace a package that has been marked as obsolete in a package repository with any differently named replacement packages unless this replacement is required by the installation of another package update. Instead, for commands that update a package, Patch Manager only reports and installs missing updates for the package that is installed but obsolete. This is because replacing an obsolete package typically requires uninstalling an existing package and installing its replacement. Replacing the obsolete package could introduce breaking changes or additional functionality that you didn't intend.
 
@@ -58,7 +58,7 @@ Amazon Linux 2 managed nodes use Yum as the package manager. Amazon Linux 2023 u
 Both package managers use the concept of an *update notice* as a file named `updateinfo.xml`. An update notice is simply a collection of packages that fix specific problems. All packages that are in an update notice are considered Security by Patch Manager. Individual packages aren't assigned classifications or severity levels. For this reason, Patch Manager assigns the attributes of an update notice to the related packages.
 
 **Note**
-If you select the **Include non-security updates** check box in the **Create patch baseline** page, then packages that aren't classified in an `updateinfo.xml` file (or a package that contains a file without properly formatted Classification, Severity, and Date values) can be included in the prefiltered list of patches. However, in order for a patch to be applied, the patch must still meet the user-specified patch baseline rules.
+If you select the **Include non-security updates** check box in the **Create patch baseline** page, then packages that aren't classified in an `updateinfo.xml` file (or a package that contains a file without properly formatted Classification, Severity, and Date values) can be included in the prefiltered list of patches. However, for a patch to be applied, the patch must still meet the user-specified patch baseline rules.
 For more information about the **Include non-security updates** option, see [How patches are installed](patch-manager-installing-patches.md) and [How patch baseline rules work on Linux-based systems](patch-manager-linux-rules.md).
 
 ------
@@ -79,7 +79,7 @@ On CentOS Stream, the Systems Manager patch baseline service uses preconfigured 
   **Repo name**: `Example CentOS-9.x – Example Repo Packages`
 
 **Note**
-All updates are downloaded from the remote repos configured on the managed node. Therefore, the node must have outbound access to the internet in order to connect to the repos so the patching can be performed.
+All updates are downloaded from the remote repos configured on the managed node. Therefore, the node must have outbound access to the internet to connect to the repos so the patching can be performed.
 
 CentOS Stream nodes use DNF as the package manager. The package manager uses the concept of an update notice. An update notice is simply a collection of packages that fix specific problems.
 
@@ -133,22 +133,22 @@ On Oracle Linux, the Systems Manager patch baseline service uses preconfigured r
   **Repo name**: `Oracle Linux UEK Release 7 (x86_64)`
 
 **Note**
-All updates are downloaded from the remote repos configured on the managed node. Therefore, the node must have outbound access to the internet in order to connect to the repos so the patching can be performed.
+All updates are downloaded from the remote repos configured on the managed node. Therefore, the node must have outbound access to the internet to connect to the repos so the patching can be performed.
 
 Oracle Linux managed nodes use Yum as the package manager, and Yum uses the concept of an update notice as a file named `updateinfo.xml`. An update notice is simply a collection of packages that fix specific problems. Individual packages aren't assigned classifications or severity levels. For this reason, Patch Manager assigns the attributes of an update notice to the related packages and installs packages based on the Classification filters specified in the patch baseline.
 
 **Note**
-If you select the **Include non-security updates** check box in the **Create patch baseline** page, then packages that aren't classified in an `updateinfo.xml` file (or a package that contains a file without properly formatted Classification, Severity, and Date values) can be included in the prefiltered list of patches. However, in order for a patch to be applied, the patch must still meet the user-specified patch baseline rules.
+If you select the **Include non-security updates** check box in the **Create patch baseline** page, then packages that aren't classified in an `updateinfo.xml` file (or a package that contains a file without properly formatted Classification, Severity, and Date values) can be included in the prefiltered list of patches. However, for a patch to be applied, the patch must still meet the user-specified patch baseline rules.
 
 ------
 #### [ AlmaLinux, RHEL, and Rocky Linux  ]
 
 On AlmaLinux, Red Hat Enterprise Linux, and Rocky Linux the Systems Manager patch baseline service uses preconfigured repositories (repos) on the managed node. There are usually three preconfigured repos on a node.
 
-All updates are downloaded from the remote repos configured on the managed node. Therefore, the node must have outbound access to the internet in order to connect to the repos so the patching can be performed.
+All updates are downloaded from the remote repos configured on the managed node. Therefore, the node must have outbound access to the internet to connect to the repos so the patching can be performed.
 
 **Note**
-If you select the **Include non-security updates** check box in the **Create patch baseline** page, then packages that aren't classified in an `updateinfo.xml` file (or a package that contains a file without properly formatted Classification, Severity, and Date values) can be included in the prefiltered list of patches. However, in order for a patch to be applied, the patch must still meet the user-specified patch baseline rules.
+If you select the **Include non-security updates** check box in the **Create patch baseline** page, then packages that aren't classified in an `updateinfo.xml` file (or a package that contains a file without properly formatted Classification, Severity, and Date values) can be included in the prefiltered list of patches. However, for a patch to be applied, the patch must still meet the user-specified patch baseline rules.
 
 Red Hat Enterprise Linux 7 managed nodes use Yum as the package manager. AlmaLinux, Red Hat Enterprise Linux 8, and Rocky Linux managed nodes use DNF as the package manager. Both package managers use the concept of an update notice as a file named `updateinfo.xml`. An update notice is simply a collection of packages that fix specific problems. Individual packages aren't assigned classifications or severity levels. For this reason, Patch Manager assigns the attributes of an update notice to the related packages and installs packages based on the Classification filters specified in the patch baseline.
 

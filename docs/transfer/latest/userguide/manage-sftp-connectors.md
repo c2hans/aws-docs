@@ -78,4 +78,4 @@ You can get much of this information, albeit in a different format, by running t
 ```
 aws transfer describe-connector --connector-id {{your-connector-id}}
 ```
-For more information, see [https://docs.aws.amazon.com/transfer/latest/APIReference/API_DescribeConnector.html](https://docs.aws.amazon.com/transfer/latest/APIReference/API_DescribeConnector.html) in the API reference.
+For more information, see [DescribeConnector](https://docs.aws.amazon.com/transfer/latest/APIReference/API_DescribeConnector.html) in the API reference.

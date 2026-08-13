@@ -62,7 +62,7 @@ aws ds-data add-group-member \
   --member-name "{{jane.doe}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-data/add-group-member.html](https://docs.aws.amazon.com//cli/latest/reference/ds-data/add-group-member.html).
+For more information, see [`add-group-member`](https://docs.aws.amazon.com//cli/latest/reference/ds-data/add-group-member.html).
 
 ------
 #### [ PowerShell ]
@@ -79,7 +79,7 @@ Add-DSDGroupMember `
     -MemberName "{{jane.doe}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Add-DSDGroupMember.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Add-DSDGroupMember.html).
+For more information, see [`Add-DSDGroupMember`](https://docs.aws.amazon.com//powershell/latest/reference/items/Add-DSDGroupMember.html).
 
 ------
 
@@ -131,7 +131,7 @@ aws ds-data remove-group-member \
   --member-name "{{jane.doe}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-data/remove-group-member.html](https://docs.aws.amazon.com//cli/latest/reference/ds-data/remove-group-member.html).
+For more information, see [`remove-group-member`](https://docs.aws.amazon.com//cli/latest/reference/ds-data/remove-group-member.html).
 
 ------
 #### [ PowerShell ]
@@ -148,7 +148,7 @@ Remove-DSDGroupMember `
     -MemberName "{{jane.doe}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Remove-DSDGroupMember.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Remove-DSDGroupMember.html).
+For more information, see [`Remove-DSDGroupMember`](https://docs.aws.amazon.com//powershell/latest/reference/items/Remove-DSDGroupMember.html).
 
 ------
 
@@ -213,7 +213,7 @@ aws ds-data add-group-member \
   --member-name "{{child-group-name}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-data/add-group-member.html](https://docs.aws.amazon.com//cli/latest/reference/ds-data/add-group-member.html).
+For more information, see [`add-group-member`](https://docs.aws.amazon.com//cli/latest/reference/ds-data/add-group-member.html).
 
 ------
 #### [ PowerShell ]
@@ -230,7 +230,7 @@ Add-DSDGroupMember `
     -MemberName "{{child-group-name}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Add-DSDGroupMember.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Add-DSDGroupMember.html).
+For more information, see [`Add-DSDGroupMember`](https://docs.aws.amazon.com//powershell/latest/reference/items/Add-DSDGroupMember.html).
 
 ------
 
@@ -297,7 +297,7 @@ aws ds-data remove-group-member \
   --member-name "{{child-group-name}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//cli/latest/reference/ds-data/remove-group-member.html](https://docs.aws.amazon.com//cli/latest/reference/ds-data/remove-group-member.html).
+For more information, see [`remove-group-member`](https://docs.aws.amazon.com//cli/latest/reference/ds-data/remove-group-member.html).
 
 ------
 #### [ PowerShell ]
@@ -316,6 +316,6 @@ Remove-DSDGroupMember `
     -MemberName "{{child-group-name}}"
 ```
 
-For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Remove-DSDGroupMember.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Remove-DSDGroupMember.html).
+For more information, see [`Remove-DSDGroupMember`](https://docs.aws.amazon.com//powershell/latest/reference/items/Remove-DSDGroupMember.html).
 
 ------

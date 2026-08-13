@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/jiracloud.h
 # Integrations for AWS Security Hub Jira Cloud
 <a name="jiracloud"></a>
 
- This topic describes how to integrate with Jira Cloud. Before completing any of the procedures in this topic, you must purchase a Jira Cloud subscription plan. For information about subscription plans, see [Pricing](https://www.atlassian.com/software/jira/pricing) on the Atlassian website.
+ This topic describes how to integrate Security Hub with Jira Cloud. Before completing any of the procedures in this topic, you must purchase a Jira Cloud subscription plan. For information about subscription plans, see [Pricing](https://www.atlassian.com/software/jira/pricing) on the Atlassian website.
 
  This integration allows you to send Security Hub findings to Jira Cloud, manually or automatically, so you can manage them as part of your operational workflows. For example, you can assign ownership to issues that need investigation and remediation.
 
@@ -24,9 +24,9 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/jiracloud.h
  Steps for each of these prerequisites are listed below.
 
 ### 1. Install the AWS Security Hub for Jira Cloud app
-<a name="w2aab7c53b9c11b9"></a>
+<a name="w2aab7c51b7c11b9"></a>
 
- Security Hub has an app to support its integration with Jira. This app installs custom fields and a custom issue type which allows Security Hub b to populate specific attributes about Security Hub findings.
+ Security Hub has an app to support its integration with Jira. This app installs custom fields and a custom issue type. Security Hub uses these to populate specific attributes about findings.
 
 1.  Sign in to your Atlassian site as the administrator.
 
@@ -45,12 +45,12 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/jiracloud.h
 +  Choose **Company-managed** for the project type.
 
 **Requirements for existing projects**
- Any existing projects in your Jira environment, which will be integrated with Security Hub, must be a project type of **Company-managed**.
+ Any existing projects in your Jira environment that are integrated with Security Hub must be a project type of **Company-managed**.
 
 ### 3. Add your projects to the AWS Security Hub for Jira Cloud app
 <a name="risks-integrations-jira-cloud-add-project"></a>
 
- In order for Security Hub to be able to successfully send findings to your Jira environment each project that you want to use with Security Hub must be associated with the AWS Security Hub for Jira Cloud app. Associating a Jira project with the app ensures that the necessary custom fields for are associated with the project and can be populated when Security Hub sends findings to the project.
+ In order for Security Hub to be able to successfully send findings to your Jira environment each project that you want to use with Security Hub must be associated with the AWS Security Hub for Jira Cloud app. Associating a Jira project with the app ensures that the necessary custom fields for Security Hub are associated with the project and can be populated when Security Hub sends findings to the project.
 
 1.  Sign in to your Atlassian site as the administrator.
 
@@ -71,15 +71,15 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/jiracloud.h
  For additional information regarding Jira Cloud, see [Jira Cloud resources](https://support.atlassian.com/jira-software-cloud/resources/) on the Atlassian website.
 
 ## Recommendations
-<a name="w2aab7c53b9c13"></a>
+<a name="w2aab7c51b7c13"></a>
 
 **Creating a dedicated system account for your Jira environment**
- Security Hub’s integration with Jira Cloud uses an OAuth connection that is associated with a specific user within your Jira instance. Creating a dedicated system account to use for your Security Hub OAuth connection is recommended for your connection for the following reasons:
+ The Security Hub integration with Jira Cloud uses an OAuth connection that is associated with a specific user within your Jira instance. Creating a dedicated system account to use for your Security Hub OAuth connection is recommended for your connection for the following reasons:
 +  A dedicated system user ensures that the connection is not associated with an employee who’s permissions to the Jira environment could change over time, impacting the ability for Security Hub to integrate with your Jira environment.
-+  Each issue that Security Hub creates in Jira will show a created by that is the username that was used to create the OAuth connection. Using a system account for the OAuth connection will result in this system account showing as the ticket creator, helping to provide visibility that the finding was created through the Security Hub integration and not manually by another Jira user.
++  Each issue that Security Hub creates in Jira shows a Created By field containing the username that was used to create the OAuth connection. Using a system account for the OAuth connection results in this system account appearing as the ticket creator, helping to provide visibility that the finding was created through the Security Hub integration and not manually by another Jira user.
 
 ## Configure an integration between Security Hub and Jira Cloud
-<a name="w2aab7c53b9c15"></a>
+<a name="w2aab7c51b7c15"></a>
 
  The following procedure needs to be completed for each of your Jira Cloud projects that you want to send Security Hub findings to.
 
@@ -97,7 +97,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/jiracloud.h
 1.  For **Details**, enter a unique and descriptive name for your integration, and determine whether to enter an optional description for your integration.
 
 1.  For **Encryptions** choose how you want to encrypt your integration credentials within Security Hub.
-   +  **Use AWS owned key** - With this option a Security Hub owned service key will be used to encrypt your integration credential data within Security Hub.
+   +  **Use AWS owned key** - With this option, a Security Hub owned service key is used to encrypt your integration credential data within Security Hub.
    +  **Choose a different KMS key (advanced)** - With this option you choose an AWS KMS key that you have created which you want to be used for encrypting your integration credential data within Security Hub. For information about how to create an AWS KMS key, see [Create a AWS KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html) in the * AWS Key Management Service Developer Guide*. If you choose to use your own key you must add policy statements to the KMS key that allow Security Hub access to the key. See [AWS KMS key policies for Security Hub ticketing integrations](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-integrations-key-policy.html) for details on the necessary policies.
 **Note**
  You cannot change these settings once you complete this configuration. However, If you choose **Customized key**, you can edit your customized key policy at any time.
@@ -110,10 +110,10 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/jiracloud.h
 
 1.  Choose **Complete configuration**. After you complete the configuration, you can view your configured integrations in the **Configured integrations** tab.
 
- Once you have configured your integration with Jira you can test the connection to confirm that everything is configured properly in your Jira environment and in Security Hub. See the [ Testing configured ticketing integrations](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-test-ticket-integration.html) for more details.
+ After you configure your integration with Jira, you can test the connection to confirm that everything is configured properly in your Jira environment and in Security Hub. For more information, see [Testing configured ticketing integrations](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-test-ticket-integration.html).
 
 ## Additional Jira integration details
-<a name="w2aab7c53b9c17"></a>
+<a name="w2aab7c51b7c17"></a>
 
 **Rate limit considerations**
  Jira enforces API rate limits to maintain service stability and ensure fair usage across their platform. When using the AWS Security Hub integration with Jira, these rate limits may impact the processing of Security Hub findings, particularly in environments generating high volumes of findings. This can result in delayed ticket creation, and in scenarios with extremely high finding volumes, some findings may not be processed into Jira tickets at all. To optimize your integration, consider implementing filters on Automation rules in Security Hub to prioritize ticketing on most important findings, monitoring your Jira API usage through their admin console, and planning your workflow based on your Jira license tier's specific rate limits. For business-critical implementations, contact your Jira administrator to review your rate limit allocations.
@@ -124,7 +124,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/jiracloud.h
  Jira API authentication requires proper OAuth 2.0 configuration for secure access. Ensure your application follows Atlassian's security best practices for API integration.
 
  Resources:
-+  Jira Rest APi v3: [https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/](https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/)
-+  Implementing OAuth 2.0 (3LO): [https://developer.atlassian.com/cloud/oauth/getting-started/implementing-oauth-3lo/](https://developer.atlassian.com/cloud/oauth/getting-started/implementing-oauth-3lo/)
-+  Administer Jira Cloud apps: [https://support.atlassian.com/jira-cloud-administration/resources/](https://support.atlassian.com/jira-cloud-administration/resources/)
-+  Manage Jira permissions: [https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/](https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/)
++  Jira REST API v3: [Jira REST API v3 documentation](https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/) on the Atlassian website
++  Implementing OAuth 2.0 (3LO): [OAuth 2.0 (3LO) implementation guide](https://developer.atlassian.com/cloud/oauth/getting-started/implementing-oauth-3lo/) on the Atlassian website
++  Administer Jira Cloud apps: [Jira Cloud administration resources](https://support.atlassian.com/jira-cloud-administration/resources/) on the Atlassian website
++  Manage Jira permissions: [Manage project permissions](https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/) on the Atlassian website

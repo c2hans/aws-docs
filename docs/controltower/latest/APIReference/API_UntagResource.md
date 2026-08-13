@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Unt
 # UntagResource
 <a name="API_UntagResource"></a>
 
-Removes tags from a resource. For usage examples, see the [https://docs.aws.amazon.com/controltower/latest/controlreference/control-api-examples-short.html](https://docs.aws.amazon.com/controltower/latest/controlreference/control-api-examples-short.html).
+Removes tags from a resource. For usage examples, see the [*Controls Reference Guide*](https://docs.aws.amazon.com/controltower/latest/controlreference/control-api-examples-short.html).
 
 ## Request Syntax
 <a name="API_UntagResource_RequestSyntax"></a>

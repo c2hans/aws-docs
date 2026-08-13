@@ -16,7 +16,7 @@ Amazon Simple Storage Service (Amazon S3) is storage for the Internet. You can u
 To enable Amazon ML to perform these tasks, you must grant permissions to Amazon ML to access your Amazon S3 data.
 
 **Note**
-You cannot output batch prediction files to an S3 bucket that accepts only server-side encrypted files. Make sure that your bucket policy allows uploading unencrypted files by confirming that the policy does not include a `Deny` effect for the `s3:PutObject` action when there is no `s3:x-amz-server-side-encryption` header in the request. For more information about S3 server-side encryption bucket policies, see [Protecting Data Using Server-Side Encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html) in the [https://docs.aws.amazon.com/AmazonS3/latest/userguide/](https://docs.aws.amazon.com/AmazonS3/latest/userguide/).
+You cannot output batch prediction files to an S3 bucket that accepts only server-side encrypted files. Make sure that your bucket policy allows uploading unencrypted files by confirming that the policy does not include a `Deny` effect for the `s3:PutObject` action when there is no `s3:x-amz-server-side-encryption` header in the request. For more information about S3 server-side encryption bucket policies, see [Protecting Data Using Server-Side Encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html) in the [*Amazon Simple Storage Service User Guide*](https://docs.aws.amazon.com/AmazonS3/latest/userguide/).
 
 ## Uploading Your Data to Amazon S3
 <a name="uploading-your-data-to-amazon-s3"></a>

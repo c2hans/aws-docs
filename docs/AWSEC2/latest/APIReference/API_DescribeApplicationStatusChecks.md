@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeA
 # DescribeApplicationStatusChecks
 <a name="API_DescribeApplicationStatusChecks"></a>
 
-Describes one or more application status checks. Returns configuration details for your application status checks, including protocol, port, path, thresholds, and associations. The following rules apply:
+Describes application status checks, including configuration details such as protocol, port, path, thresholds, and associations. Results are paginated. Use the `NextToken` parameter to retrieve additional results. The following rules apply:
 + If you do not specify any application status check IDs, all checks in your account are returned.
 + Use `DescribeApplicationStatus` to see the actual health status of instances.
 
@@ -26,14 +26,12 @@ Required: No
 
  **Filter.N**
 The filters.
-+  `tag`:<*key*> - The key/value combination of a tag assigned to the application status check. Use the tag key in the filter name and the tag value as the filter value.
-+  `tag-key` - The key of a tag assigned to the application status check. Use this filter to find all application status checks that have a tag with a specific key, regardless of the tag value.
-+  `tag-value` - The value of a tag assigned to the application status check. Use this filter to find all application status checks that have a tag with a specific value, regardless of the tag key.
++  `aggregation` – The aggregation setting. Valid values: `included` and `excluded`.
 Type: Array of [Filter](API_Filter.md) objects
 Required: No
 
  **IncludeAll**
-Specifies whether to return all application status checks, including those that are not currently associated with any instances.
+Specifies whether to include recently deleted application status checks that remain available during the deletion grace period. If you omit this parameter or set it to `false`, the response includes only active checks.
 Type: Boolean
 Required: No
 

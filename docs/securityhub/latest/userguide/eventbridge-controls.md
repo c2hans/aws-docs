@@ -51,7 +51,7 @@ To add tags to an EventBridge event bus, see [Amazon EventBridge tags](https://d
 
 **Resource type:** `AWS::Events::EventBus`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/custom-eventbus-policy-attached.html](https://docs.aws.amazon.com/config/latest/developerguide/custom-eventbus-policy-attached.html)
+**AWS Config rule:** [custom-eventbus-policy-attached](https://docs.aws.amazon.com/config/latest/developerguide/custom-eventbus-policy-attached.html)
 
 **Schedule type:** Change triggered
 
@@ -77,7 +77,7 @@ To attach a resource-based policy to an EventBridge custom event bus, see [Using
 
 **Resource type:** `AWS::Events::Endpoint`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/global-endpoint-event-replication-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/global-endpoint-event-replication-enabled.html)
+**AWS Config rule:** [`global-endpoint-event-replication-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/global-endpoint-event-replication-enabled.html)
 
 **Schedule type:** Change triggered
 

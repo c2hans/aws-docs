@@ -15,7 +15,7 @@ Before you create a domain with the Optimized engine, review the following requi
 | OpenSearch version | 3.5 or above |
 | Hot-tier instances | OpenSearch Optimized Instances only (OR1, OR2, or OM2) |
 | Warm-tier instances | OI2 only |
-| Authentication | IAM authentication and IAM Identity Center. IAM Identity Center supports SAML and username/password sign-in. Amazon Cognito is not supported. |
+| Authentication | IAM authentication and IAM Identity Center. IAM Identity Center supports SAML and username/password sign-in. The Optimized engine does not support Amazon Cognito. |
 | Visualization | OpenSearch UI only. OpenSearch Dashboards is not available for Optimized domains. |
 | Query language (UI and plugins) | Piped Processing Language (PPL) and SQL |
 | Query language (programmatic) | PPL and SQL (via API, JDBC/ODBC drivers, and Query Workbench) |
@@ -122,7 +122,7 @@ You configure the Optimized engine during domain creation in the Amazon OpenSear
 
 **To create an Optimized domain (console)**
 
-1. Open the Amazon OpenSearch Service console and choose **Create domain**.
+1. Open the [Amazon OpenSearch Service console](https://console.aws.amazon.com/aos/home) and choose **Create domain**.
 
 1. For **Domain creation method**, choose **Standard create**.
 

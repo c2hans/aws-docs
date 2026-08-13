@@ -61,7 +61,7 @@ To transfer files with a partner, take note of the following:
 + Your trading partner sends you their public keys, and you send them yours.
 + Your trading partner encrypts messages with your public key and signs them with their private key. Conversely, you encrypt messages with your partner's public key and sign them with your private key.
 **Note**
-If you prefer to manage keys with a GUI, [http://portecle.sourceforge.net/](http://portecle.sourceforge.net/) is one option that you can use.
+If you prefer to manage keys with a GUI, [Portecle](http://portecle.sourceforge.net/) is one option that you can use.
 
 **To generate example certificates**
 **Important**

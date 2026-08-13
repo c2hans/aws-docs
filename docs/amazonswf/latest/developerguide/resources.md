@@ -53,26 +53,26 @@ Only SDKs that have support for Amazon SWF at the time of writing are listed her
 **Java**
 The AWS SDK for Java provides a Java API for AWS infrastructure services.
 To view the available documentation, see the [AWS SDK for Java Documentation](https://aws.amazon.com/documentation/sdkforjava/) page. You can also go directly to the Amazon SWF sections in the SDK reference by following these links:
-+ [https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/simpleworkflow/AmazonSimpleWorkflowClient.html](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/simpleworkflow/AmazonSimpleWorkflowClient.html)
-+ [https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/simpleworkflow/AmazonSimpleWorkflowAsyncClient.html](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/simpleworkflow/AmazonSimpleWorkflowAsyncClient.html)
-+ [https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/simpleworkflow/AmazonSimpleWorkflow.html](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/simpleworkflow/AmazonSimpleWorkflow.html)
-+ [https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/simpleworkflow/AmazonSimpleWorkflowAsync.html](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/simpleworkflow/AmazonSimpleWorkflowAsync.html)
++ [`Class: AmazonSimpleWorkflowClient`](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/simpleworkflow/AmazonSimpleWorkflowClient.html)
++ [`Class: AmazonSimpleWorkflowAsyncClient`](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/simpleworkflow/AmazonSimpleWorkflowAsyncClient.html)
++ [`Interface: AmazonSimpleWorkflow`](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/simpleworkflow/AmazonSimpleWorkflow.html)
++ [`Interface: AmazonSimpleWorkflowAsync`](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/simpleworkflow/AmazonSimpleWorkflowAsync.html)
 
 **JavaScript**
 The AWS SDK for JavaScript allows developers to build libraries or applications that make use of AWS services using a simple and easy-to-use API available both in the browser or inside of Node.js applications on the server.
 To view the available documentation, see the [AWS SDK for JavaScript Documentation](https://aws.amazon.com/documentation/sdkforjavascript/) page. You can also go directly to the Amazon SWF section in the SDK reference by following this link:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SWF.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SWF.html)
++ [`Class: AWS.SimpleWorkflow`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SWF.html)
 
 **.NET**
 The AWS SDK for .NET is a single, downloadable package that includes Visual Studio project templates, the AWS .NET library, C\# code samples, and documentation. The AWS SDK for .NET makes it easier for Windows developers to build .NET applications for Amazon SWF and other services.
 To view the available documentation, see the [AWS SDK for .NET Documentation](https://aws.amazon.com/documentation/sdkfornet/) page. You can also go directly to the Amazon SWF sections in the SDK reference by following these links:
-+ [https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/SimpleWorkflow/NSimpleWorkflow.html](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/SimpleWorkflow/NSimpleWorkflow.html)
-+ [https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/SimpleWorkflow/NSimpleWorkflowModel.html](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/SimpleWorkflow/NSimpleWorkflowModel.html)
++ [`Namespace: Amazon.SimpleWorkflow`](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/SimpleWorkflow/NSimpleWorkflow.html)
++ [`Namespace: Amazon.SimpleWorkflow.Model`](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/SimpleWorkflow/NSimpleWorkflowModel.html)
 
 **PHP**
 The AWS SDK for PHP provides a PHP programming interface to Amazon SWF.
 To view the available documentation, see the [AWS SDK for PHP Documentation](https://aws.amazon.com/documentation/sdkforphp/) page. You can also go directly to the Amazon SWF section in the SDK reference by following this link:
-+ [https://docs.aws.amazon.com/sdk-for-php/latest/reference/class-Aws.Swf.SwfClient.html](https://docs.aws.amazon.com/sdk-for-php/latest/reference/class-Aws.Swf.SwfClient.html)
++ [`Class: SwfClient`](https://docs.aws.amazon.com/sdk-for-php/latest/reference/class-Aws.Swf.SwfClient.html)
 
 **Python**
 The AWS SDK for Python (Boto) provides a Python programming interface to Amazon SWF.
@@ -153,7 +153,7 @@ AWS Step Functions provides a service that is similar to Amazon SWF, but where y
 
 In Step Functions, you manage the coordination of your tasks using a state machine, written in declarative JSON, that is defined using the [Amazon States Language](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-amazon-states-language.html). By using a state machine, you don't have to write and maintain a decider program to control your application logic. Step Functions provides an intuitive, productive, and agile approach to coordinating application components using visual workflows. You should consider using AWS Step Functions for all your new applications, and Step Functions provides an excellent platform to migrate to for the workflows you currently have implemented in the AWS Flow Framework for Ruby.
 
-To help migrate your tasks to Step Functions, while continuing to leverage your Ruby language skills, Step Functions provides an example Ruby activity worker. This example uses best practices for implementing an activity worker, and can be used as a template to migrate your task logic to Step Functions. For more information, see the [https://docs.aws.amazon.com/step-functions/latest/dg/example-ruby-activity-worker.html](https://docs.aws.amazon.com/step-functions/latest/dg/example-ruby-activity-worker.html) topic in the [AWS Step Functions Developer Guide](https://docs.aws.amazon.com/step-functions/latest/dg/).
+To help migrate your tasks to Step Functions, while continuing to leverage your Ruby language skills, Step Functions provides an example Ruby activity worker. This example uses best practices for implementing an activity worker, and can be used as a template to migrate your task logic to Step Functions. For more information, see the [*Example Activity Worker in Ruby*](https://docs.aws.amazon.com/step-functions/latest/dg/example-ruby-activity-worker.html) topic in the [AWS Step Functions Developer Guide](https://docs.aws.amazon.com/step-functions/latest/dg/).
 
 **Note**
 For many customers, migrating to Step Functions from the AWS Flow Framework for Ruby is the best option. But, if you require that signals intervene in your processes, or if you need to launch child processes that return a result to a parent, consider using the Amazon SWF API directly, or migrating to the AWS Flow Framework for Java.

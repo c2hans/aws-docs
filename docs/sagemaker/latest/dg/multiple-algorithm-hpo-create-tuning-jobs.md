@@ -34,7 +34,7 @@ To reduce compute time and avoid overfitting your model, you can stop training j
 **Tuning strategy**
 Tuning strategy can be either random, Bayesian, or Hyperband. These selections specify how automatic tuning algorithms search specified hyperparameter ranges that are selected in a later step. Random search chooses random combinations of values from the specified ranges and can be run sequentially or in parallel. Bayesian optimization chooses values based on what is likely to get the best result according to the known history of previous selections. Hyperband uses a multi-fidelity strategy that dynamically allocates resources toward well-utilized jobs and automatically stops those that underperform. The new configuration that starts after stopping other configurations is chosen randomly.
 
- Hyperband can only be used with iterative algorithms, or algorithms that run steps in iterations, such as [https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost.html](https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost.html) or [Random Cut Forest](https://docs.aws.amazon.com/sagemaker/latest/dg/randomcutforest.html). Hyperband can't be used with non-iterative algorithms, such as decision trees or [k-Nearest Neighbors](https://docs.aws.amazon.com/sagemaker/latest/dg/k-nearest-neighbors.html). For more information about search strategies, see [How Hyperparameter Tuning Works](automatic-model-tuning-how-it-works.html).
+ Hyperband can only be used with iterative algorithms, or algorithms that run steps in iterations, such as [XGBoost](https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost.html) or [Random Cut Forest](https://docs.aws.amazon.com/sagemaker/latest/dg/randomcutforest.html). Hyperband can't be used with non-iterative algorithms, such as decision trees or [k-Nearest Neighbors](https://docs.aws.amazon.com/sagemaker/latest/dg/k-nearest-neighbors.html). For more information about search strategies, see [How Hyperparameter Tuning Works](automatic-model-tuning-how-it-works.html).
 
 **Note**
 Hyperband uses an advanced internal mechanism to apply early stopping. Therefore, when you use the Hyperband internal early stopping feature, the parameter `TrainingJobEarlyStoppingType` in the `HyperParameterTuningJobConfig` API must be set to `OFF`.
@@ -45,7 +45,7 @@ To help you manage tuning jobs, you can enter tags as key-value pairs to assign 
 ### Training job definitions
 <a name="multiple-algorithm-hpo-create-tuning-jobs-training-definitions"></a>
 
-To create a training job definition, you must configure the algorithm and parameters, define the data input and output, and configure resources. Provide at least one [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TrainingJobDefinition.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TrainingJobDefinition.html) for each HPO tuning job. Each training definition specifies the configuration for an algorithm.
+To create a training job definition, you must configure the algorithm and parameters, define the data input and output, and configure resources. Provide at least one [`TrainingJobDefinition`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TrainingJobDefinition.html) for each HPO tuning job. Each training definition specifies the configuration for an algorithm.
 
 To create several definitions for your training job, you can clone a job definition. Cloning a job can save time because it copies all of the job settings, including data channels and Amazon S3 storage locations for output artifacts. You can edit a cloned job to change what you need for your use case.
 
@@ -151,7 +151,7 @@ In the following section, code examples show how to tune a job containing either
 
 When you create a tuning job that includes multiple training algorithms, your tuning job configuration will include the ModelTrainers and metrics and other parameters for your training jobs. Therefore, you need to create the training job definition first, and then configure your tuning job.
 
-The following code example shows how to retrieve two SageMaker AI containers containing the built-in algorithms [https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost.html](https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost.html) and [https://docs.aws.amazon.com/sagemaker/latest/dg/linear-learner.html](https://docs.aws.amazon.com/sagemaker/latest/dg/linear-learner.html). If your tuning job contains only one training algorithm, omit one of the containers and one of the ModelTrainers.
+The following code example shows how to retrieve two SageMaker AI containers containing the built-in algorithms [XGBoost](https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost.html) and [Linear Learner](https://docs.aws.amazon.com/sagemaker/latest/dg/linear-learner.html). If your tuning job contains only one training algorithm, omit one of the containers and one of the ModelTrainers.
 
 ```
 import sagemaker

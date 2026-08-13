@@ -84,7 +84,7 @@ AWS supports POST requests here.
 
    `https://signin.aws.amazon.com/federation`
 
-   The request must include the `Action` and `Session` parameters, and (optionally) if you used an [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) API operation, a `SessionDuration` HTTP parameter as shown in the following example.
+   The request must include the `Action` and `Session` parameters, and (optionally) if you used an [`AssumeRole*`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) API operation, a `SessionDuration` HTTP parameter as shown in the following example.
 
    ```
    Action = getSigninToken

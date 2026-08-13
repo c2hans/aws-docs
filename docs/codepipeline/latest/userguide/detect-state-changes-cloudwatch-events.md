@@ -11,7 +11,7 @@ You can monitor CodePipeline events in EventBridge, which delivers a stream of r
 Amazon EventBridge is the preferred way to manage your events. Amazon CloudWatch Events and EventBridge are the same underlying service and API, but EventBridge provides more features. Changes you make in either CloudWatch Events or EventBridge will appear in each console.
 
 Events are composed of rules. A rule is configured by choosing the following:
-+ **Event Pattern.** Each rule is expressed as an event pattern with the source and type of events to monitor, and event targets. To monitor events, you create a rule with the service you are monitoring as the event source, such as CodePipeline. For example, you can create a rule with an event pattern that that uses CodePipeline as an event source to trigger the rule when there are changes in the state of a pipeline, stage, or action.
++ **Event Pattern.** Each rule is expressed as an event pattern with the source and type of events to monitor, and event targets. To monitor events, you create a rule with the service you are monitoring as the event source, such as CodePipeline. For example, you can create a rule with an event pattern that uses CodePipeline as an event source to trigger the rule when there are changes in the state of a pipeline, stage, or action.
 + **Targets.** The new rule receives a selected service as the event target. You might want to set up a target service to send notifications, capture state information, take corrective action, initiate events, or take other actions. When you add your target, you must also grant permissions to EventBridge to allow it to invoke the selected target service.
 
 Each type of execution state change event emits notifications with specific message content, where:
@@ -1087,8 +1087,8 @@ Sample pipeline ARN:
 arn:aws:codepipeline:us-east-2:80398EXAMPLE:MyFirstPipeline
 
 1. To create or specify an IAM service role that grants EventBridge permissions to invoke the target associated with your EventBridge rule (in this case, the target is CodePipeline):
-   + Choose **Create a new role for this specific resource** to create a service role that gives EventBridge permissions to your start your pipeline executions.
-   + Choose **Use existing role** to enter a service role that gives EventBridge permissions to your start your pipeline executions.
+   + Choose **Create a new role for this specific resource** to create a service role that gives EventBridge permissions to start your pipeline executions.
+   + Choose **Use existing role** to enter a service role that gives EventBridge permissions to start your pipeline executions.
 
 1. Choose **Next**.
 
@@ -1109,7 +1109,7 @@ To use the AWS CLI to create a rule, call the **put-rule** command, specifying:
 
 1. Call the **put-rule** command to create a rule specifying the event pattern. (See the preceding tables for valid states.)
 
-   The following sample command uses **--event-pattern** to create a rule called `“MyPipelineStateChanges”` that emits the CloudWatch event when a pipeline execution fails for the pipeline named "myPipeline."
+   The following sample command uses **--event-pattern** to create a rule called `"MyPipelineStateChanges"` that emits the CloudWatch event when a pipeline execution fails for the pipeline named "myPipeline."
 
    ```
    aws events put-rule --name "MyPipelineStateChanges" --event-pattern "{\"source\":[\"aws.codepipeline\"],\"detail-type\":[\"CodePipeline Pipeline Execution State Change\"],\"detail\":{\"pipeline\":[\"myPipeline\"],\"state\":[\"FAILED\"]}}"

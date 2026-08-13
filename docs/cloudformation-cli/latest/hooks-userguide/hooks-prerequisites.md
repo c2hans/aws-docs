@@ -24,10 +24,10 @@ To implement Hook handlers for your Python Hooks project, you can download the [
 <a name="hooks-development-permissions"></a>
 
 In addition to the CloudFormation `Create`, `Update`, and `Delete` stack permissions, you'll need access to the following AWS CloudFormation operations. Access to these operations is managed through your IAM role's CloudFormation policy.
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/register-type.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/register-type.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-types.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-types.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deregister-type.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deregister-type.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html)
++ [register-type](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/register-type.html)
++ [list-types](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-types.html)
++ [deregister-type](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deregister-type.html)
++ [set-type-configuration](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html)
 
 For more information, see [Grant IAM permissions for CloudFormation Hooks](grant-iam-permissions-for-hooks.md).
 

@@ -20,7 +20,7 @@ The following topics describe how to use HealthLake tagging operations using the
 ## Tagging a HealthLake data store
 <a name="tagresource"></a>
 
-Use `TagResource` to tag a HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_TagResource.html.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_TagResource.html.html) in the *AWS HealthLake API Reference*.
+Use `TagResource` to tag a HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`TagResource`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_TagResource.html.html) in the *AWS HealthLake API Reference*.
 
 **To tag a HealthLake data store**
 Choose a menu based on your access preference to AWS HealthLake.
@@ -132,7 +132,7 @@ Can't find what you need? Request a code example using the **Provide feedback** 
 ## Listing tags for a HealthLake data store
 <a name="listtagsforresource"></a>
 
-Use `ListTagsForResource` to list tags for a HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ListTagsForResource.html.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ListTagsForResource.html.html) in the *AWS HealthLake API Reference*.
+Use `ListTagsForResource` to list tags for a HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`ListTagsForResource`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ListTagsForResource.html.html) in the *AWS HealthLake API Reference*.
 
 **To list tags for a HealthLake data store**
 Choose a menu based on your access preference to AWS HealthLake.
@@ -246,7 +246,7 @@ Can't find what you need? Request a code example using the **Provide feedback** 
 ## Untagging a HealthLake data store
 <a name="untagresource"></a>
 
-Use `UntagResource` to remove a tag from a HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_UntagResource.html.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_UntagResource.html.html) in the *AWS HealthLake API Reference*.
+Use `UntagResource` to remove a tag from a HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`UntagResource`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_UntagResource.html.html) in the *AWS HealthLake API Reference*.
 
 **To untag a HealthLake data store**
 Choose a menu based on your access preference to AWS HealthLake.

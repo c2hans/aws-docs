@@ -21,5 +21,5 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 
 ## Resources
 <a name="resources-50"></a>
-+  [https://aws.amazon.com/blogs/aws/new-http-3-support-for-amazon-cloudfront/](https://aws.amazon.com/blogs/aws/new-http-3-support-for-amazon-cloudfront/)
-+  [https://aws.amazon.com/about-aws/whats-new/2020/10/application-load-balancers-enable-grpc-workloads-end-to-end-http-2-support/](https://aws.amazon.com/about-aws/whats-new/2020/10/application-load-balancers-enable-grpc-workloads-end-to-end-http-2-support/)
++  [*New – HTTP/3 Support for Amazon CloudFront*](https://aws.amazon.com/blogs/aws/new-http-3-support-for-amazon-cloudfront/)
++  [*Application Load Balancers enables gRPC workloads with end to end HTTP/2 support*](https://aws.amazon.com/about-aws/whats-new/2020/10/application-load-balancers-enable-grpc-workloads-end-to-end-http-2-support/)

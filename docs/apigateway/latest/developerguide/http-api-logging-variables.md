@@ -40,7 +40,7 @@ You can use the following variables to customize HTTP API access logs. To learn 
 | $context.identity.clientCert.validity.notAfter | The date after which the certificate is invalid. Present when a client accesses an API by using a custom domain name that has mutual TLS enabled. |
 | $context.identity.sourceIp | The source IP address of the immediate TCP connection making the request to API Gateway endpoint. |
 | $context.identity.user | The principal identifier of the user that will be authorized against resource access. Supported for routes that use IAM authorization. |
-| $context.identity.userAgent | The [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) header of the API caller. |
+| $context.identity.userAgent | The [`User-Agent`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) header of the API caller. |
 | $context.identity.userArn | The Amazon Resource Name (ARN) of the effective user identified after authentication. Supported for routes that use IAM authorization. For more information, see [https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html). |
 | $context.integration.error | The error message returned from an integration. Equivalent to $context.integrationErrorMessage. |
 | $context.integration.integrationStatus | For Lambda proxy integration, the status code returned from AWS Lambda, not from the backend Lambda function code. |

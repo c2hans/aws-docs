@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/manually-delete-sn
 # Deleting snapshots
 <a name="manually-delete-snapshots"></a>
 
-Use the [https://docs.netapp.com/us-en/ontap-cli-9131/volume-snapshot-delete.html](https://docs.netapp.com/us-en/ontap-cli-9131/volume-snapshot-delete.html) ONTAP CLI command to manually delete snapshots, replacing the following placeholder values with your data:
+Use the [**volume snapshot delete**](https://docs.netapp.com/us-en/ontap-cli-9131/volume-snapshot-delete.html) ONTAP CLI command to manually delete snapshots, replacing the following placeholder values with your data:
 + Replace {{`svm_name`}} with the name of the SVM that the volume is created on.
 + Replace {{`vol_name`}} with name of the volume.
 + Replace {{`snapshot_name`}} with the name of the snapshot. This command supports wildcard characters (`*`) for {{`snapshot_name`}}. Therefore, you can delete all hourly snapshots, for example, by using `hourly*`.

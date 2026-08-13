@@ -48,9 +48,9 @@ Exporting cluster data to S3 is available in the following AWS Regions:
 ## Exporting cluster data to S3 with Aurora MySQL
 <a name="Concepts.Aurora_Fea_Regions_DB-eng.Feature.ExportClusterToS3.ams"></a>
 
-All currently available Aurora MySQL engine versions support exporting DB cluster data to Amazon S3. For more information about versions, see [https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/Welcome.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/Welcome.html).
+All currently available Aurora MySQL engine versions support exporting DB cluster data to Amazon S3. For more information about versions, see [*Release Notes for Aurora MySQL*](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/Welcome.html).
 
 ## Exporting cluster data to S3 with Aurora PostgreSQL
 <a name="Concepts.Aurora_Fea_Regions_DB-eng.Feature.ExportClusterToS3.apg"></a>
 
-All currently available Aurora PostgreSQL engine versions support exporting DB cluster data to Amazon S3. For more information about versions, see the [https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/Welcome.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/Welcome.html).
+All currently available Aurora PostgreSQL engine versions support exporting DB cluster data to Amazon S3. For more information about versions, see the [*Release Notes for Aurora PostgreSQL*](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/Welcome.html).

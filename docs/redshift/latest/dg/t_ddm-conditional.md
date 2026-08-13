@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/t_ddm-conditional.htm
 
 You can mask data at the cell level by creating masking policies with conditional expressions in the masking expression. For example, you can create a masking policy that applies different masks to a value, depending on another column's value in that row.
 
-The following is an example of using conditional data masking to create and attach a masking policy that partially redacts credit card numbers involved in fraud, while completely hiding all other credit card numbers. You must be a superuser or have the [https://docs.aws.amazon.com/redshift/latest/dg/r_roles-default.html](https://docs.aws.amazon.com/redshift/latest/dg/r_roles-default.html) role to run this example.
+The following is an example of using conditional data masking to create and attach a masking policy that partially redacts credit card numbers involved in fraud, while completely hiding all other credit card numbers. You must be a superuser or have the [`sys:secadmin`](https://docs.aws.amazon.com/redshift/latest/dg/r_roles-default.html) role to run this example.
 
 ```
 --Create an analyst role.

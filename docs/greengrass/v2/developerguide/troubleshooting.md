@@ -545,6 +545,7 @@ Troubleshoot deployment issues on Greengrass core devices. Each entry correspond
 + [Error: com.aws.greengrass.deployment.exceptions.DeploymentException: Unable to process deployment. Greengrass launch directory is not set up or Greengrass is not set up as a system service](#deployment-error-unable-to-process-deployment)
 + [Info: com.aws.greengrass.deployment.exceptions.RetryableDeploymentDocumentDownloadException: Greengrass Cloud Service returned an error when getting full deployment configuration](#core-error-getting-full-deployment-configuration)
 + [Warn: com.aws.greengrass.deployment.DeploymentService: Failed to get thing group hierarchy](#core-warning-failed-to-get-thing-group-hierarchy)
++ [Deployment unexpectedly removes components from a core device](#deployment-removes-components-unexpectedly)
 + [Info: com.aws.greengrass.deployment.DeploymentDocumentDownloader: Calling Greengrass cloud to get full deployment configuration](#core-info-repetitive-get-full-deployment-configuration)
 + [Caused by: software.amazon.awssdk.services.greengrassv2data.model.GreengrassV2DataException: null (Service: GreengrassV2Data, Status Code: 403, Request ID: <some\_request\_id>, Extended Request ID: null)](#greengrassv2dataexception)
 
@@ -674,6 +675,77 @@ To resolve this issue, add the `greengrass:GetDeploymentConfiguration` permissio
 You might see this warning when the core device receives a deployment and the core device's AWS IoT policy doesn't allow the `greengrass:ListThingGroupsForCoreDevice` permission. When you create a deployment, the core device uses this permission to identify its thing groups and remove components for any thing groups from which you removed the core device. If the core device runs [Greengrass nucleus](greengrass-nucleus-component.md) v2.5.0, the deployment fails. If the core device runs Greengrass nucleus v2.5.1 or later, the deployment proceeds but doesn't remove components. For more information about thing group removal behavior, see [Deploy AWS IoT Greengrass components to devices](manage-deployments.md).
 
 To update the core device's behavior to remove components for thing groups from which you remove the core device, add the `greengrass:ListThingGroupsForCoreDevice` permission to the core device's AWS IoT policy. For more information, see [Update a core device's AWS IoT policy](device-auth.md#update-core-device-iot-policy).
+
+### Deployment unexpectedly removes components from a core device
+<a name="deployment-removes-components-unexpectedly"></a>
+
+A deployment removes components from the core device that you didn't target for removal, and the device stops running them.
+
+On Greengrass nucleus v2.18.2 and earlier, a specific sequence of events causes a device to lose its record of which components each thing group deployed. After this loss, a deployment treats those components as orphaned and removes them. Greengrass nucleus v2.18.3 fixes this issue.
+
+The sequence begins when the first deployment to a device fails and rolls back. For the full sequence, see [How a device loses this record](#deployment-removes-components-conditions).
+
+#### How to check whether a device has lost this record
+<a name="deployment-removes-components-check"></a>
+
+These steps check the device's configuration to determine the cause of the removal. They don't identify which components a deployment removed. Inspect `{{/greengrass/v2}}/config/effectiveConfig.yaml` on the core device.
+
+1. To check whether the device's internal state is damaged, examine the `dependencies` list under the `main` service in `services`. Damaged internal state is the condition that leads to losing the record. On a device that has completed at least one successful deployment, this list includes DeploymentService, FleetStatusService, TelemetryAgent, and UpdateSystemPolicyService. If these names are absent on a device that has previously completed a successful deployment, the internal state is damaged. On a device that has never completed a successful deployment, a list containing only the nucleus is normal and doesn't indicate a problem.
+
+1. To check whether the device has already lost the record, find DeploymentService under `services` and look for the GroupToRootComponents configuration. On a healthy device that has received at least one deployment, this configuration lists each thing group and the components that group deploys. If this configuration is missing or empty while components are installed and running on the device, the device has lost the record.
+
+#### Whether deployments remove components after the device loses this record
+<a name="deployment-removes-components-impact"></a>
+
+After a device has lost this record, whether it loses components depends on which deployment runs next.
+
+A deployment removes components when it runs while the record is missing and doesn't carry the missing group's component list:
++ A local deployment runs. A local deployment carries only its own changes and relies on the device's local records to preserve everything else. Some fleets run a component that submits a local deployment every time the device starts. This is why the removal often appears immediately after a restart.
++ On a device that belongs to more than one thing group, a deployment targets only some of those groups. That deployment recovers the groups it targets. It removes the components of the groups it doesn't target.
+
+A deployment doesn't remove components when:
++ No deployment runs on the device. The installed components continue to run normally. The device might remain in this state indefinitely with no impact.
++ The next deployment targets the thing group whose component record the device is missing. That deployment carries the group's full component list and restores the record, which recovers the device automatically.
+
+**Important**
+Until you recover the device, avoid running local deployments on it. If a component on the device submits a local deployment when the device starts, recover the device before it restarts again. That deployment removes the components.
+
+#### Recovery
+<a name="deployment-removes-components-recovery"></a>
+
+Restarting the device doesn't restore the missing record. You must create deployments to recover the device.
+
+To recover a device that lost this record, create a deployment that targets each thing group the core device belongs to. A deployment that targets a thing group carries the complete list of components for that group. This rebuilds the missing local record. A local deployment can't recover the device because it doesn't carry other groups' component information.
+
+**Important**
+On a device that belongs to multiple thing groups, each deployment recovers only the targeted group. A deployment to one group might remove components belonging to groups you have not yet redeployed to. Create a deployment for every thing group the device belongs to.
+
+After you create the recovery deployments, verify that each deployment completes successfully. If a recovery deployment fails and rolls back on a nucleus version earlier than 2.18.3, the device loses the record again. You must repeat the recovery.
+
+After a recovery deployment completes successfully, the device doesn't lose this record again. This is true even if the device still runs Greengrass nucleus v2.18.2 or earlier. The deployment restores the internal state that protects the record, so later deployment failures and rollbacks don't cause this loss. If you reinstall the AWS IoT Greengrass Core software, the device might lose this record again.
+
+#### Prevention
+<a name="deployment-removes-components-prevention"></a>
+
+Upgrade the core device to Greengrass nucleus v2.18.3 or later to prevent this issue.
+
+**Note**
+Monitor nucleus upgrade deployments on devices that might have lost this record. If a nucleus upgrade deployment fails and rolls back on an unfixed device, the device might immediately lose this record. If this happens, create a deployment that targets each of the device's thing groups immediately after the failed upgrade to prevent component loss.
+
+#### How a device loses this record
+<a name="deployment-removes-components-conditions"></a>
+
+A device loses this record when all of the following conditions are true:
+
+1. The device has not yet received a successful deployment.
+
+1. The first deployment to the device fails after activation and rolls back.
+
+1. A subsequent deployment runs on the device, which damages the internal state.
+
+1. The device restarts at a later time.
+
+A device whose first deployment completed successfully doesn't lose this record.
 
 ### Info: com.aws.greengrass.deployment.DeploymentDocumentDownloader: Calling Greengrass cloud to get full deployment configuration
 <a name="core-info-repetitive-get-full-deployment-configuration"></a>

@@ -33,7 +33,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/unused-acce
 
 ## Recommendation lifecycle
 <a name="recommendations-lifecycle"></a>
-+  Recommendations are cached for 90 days and remain available as long as the finding is active (not Closed). However, calling `GenerateRecommendedPolicyV2` multiple times will invalidate the cache and kick off a new job which will replace the cached policy. It's recommended you only call `GenerateRecommendedPolicyV2` once per finding.
++  Recommendations are cached for 90 days and remain available as long as the finding is active (not Closed). However, calling `GenerateRecommendedPolicyV2` multiple times invalidates the cache and starts a new job that replaces the cached policy. Call `GenerateRecommendedPolicyV2` only once per finding.
 +  The recommendation follows a detach-and-attach pattern. It does not modify your existing IAM policies. You review the recommended policy and manually apply it in the IAM console or through the IAM API.
 +  If the finding is resolved (for example, because the previously unused permissions are now being used), the recommendation is no longer available.
 
@@ -54,7 +54,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/unused-acce
 
 ## API reference
 <a name="recommendations-api-reference"></a>
-+  **GenerateRecommendedPolicyV2** — Initiates asynchronous generation of a least-privilege policy recommendation for an unused permissions finding. Takes the finding's `metadata.uid` as input. Returns HTTP 200 with an empty body on success.
-+  **GetRecommendedPolicyV2** — Retrieves the generated policy recommendation. Takes the finding's `metadata.uid` as input. Supports pagination with `maxResults` (1–100) and `nextToken` parameters. Returns the recommendation status (`IN_PROGRESS`, `SUCCEEDED`, or `FAILED`), recommendation steps, the resource ARN, and any errors.
++  [GenerateRecommendedPolicyV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GenerateRecommendedPolicyV2.html) — Initiates asynchronous generation of a least-privilege policy recommendation for an unused permissions finding. Takes the finding's `metadata.uid` as input. Returns HTTP 200 with an empty body on success.
++  [GetRecommendedPolicyV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetRecommendedPolicyV2.html) — Retrieves the generated policy recommendation. Takes the finding's `metadata.uid` as input. Supports pagination with `maxResults` (1–100) and `nextToken` parameters. Returns the recommendation status (`IN_PROGRESS`, `SUCCEEDED`, or `FAILED`), recommendation steps, the resource ARN, and any errors.
 
  For detailed API documentation, see the *Security Hub API Reference*.

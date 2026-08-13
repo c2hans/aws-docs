@@ -38,7 +38,7 @@ For information about tracking capacity utilization for ECS, EKS, and Fargate co
 ## Check queue utilization
 <a name="capacity-utilization-snapshots-service"></a>
 
-The `queueUtilization` field in the [https://docs.aws.amazon.com/batch/latest/APIReference/API_GetJobQueueSnapshot.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_GetJobQueueSnapshot.html) response provides a point-in-time view of how much compute capacity is consumed by jobs dispatched from a queue. Capacity is measured in instance count for service jobs.
+The `queueUtilization` field in the [`GetJobQueueSnapshot`](https://docs.aws.amazon.com/batch/latest/APIReference/API_GetJobQueueSnapshot.html) response provides a point-in-time view of how much compute capacity is consumed by jobs dispatched from a queue. Capacity is measured in instance count for service jobs.
 
 For job queues that use a fair-share or quota-management scheduling policy, the response also includes a per-share breakdown so you can see how capacity is distributed across shares. For more information, see [View per-share utilization](#share-utilization-monitoring-service).
 
@@ -201,7 +201,7 @@ For more information about quota shares, see [Quota shares](quota-shares.md).
 ## List service jobs by status and share
 <a name="list-service-jobs-by-share"></a>
 
-After you identify the overall queue and per-share utilization, use the [https://docs.aws.amazon.com/batch/latest/APIReference/API_ListServiceJobs.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_ListServiceJobs.html) API operation to find the service jobs that are actively contributing to utilization. You can filter by job status to see jobs that are `RUNNING`, `SCHEDULED`, or in another state. For queues with a fair-share or quota-management scheduling policy, you can also filter by share identifier to narrow results to a specific share.
+After you identify the overall queue and per-share utilization, use the [`ListServiceJobs`](https://docs.aws.amazon.com/batch/latest/APIReference/API_ListServiceJobs.html) API operation to find the service jobs that are actively contributing to utilization. You can filter by job status to see jobs that are `RUNNING`, `SCHEDULED`, or in another state. For queues with a fair-share or quota-management scheduling policy, you can also filter by share identifier to narrow results to a specific share.
 
 **Note**
 The `SHARE_IDENTIFIER` and `QUOTA_SHARE_NAME` filters are the only filters that can be combined with the `jobStatus` parameter. When you use other filters, the `jobStatus` parameter is ignored.
@@ -276,7 +276,7 @@ In this example, the response includes the `shareIdentifier` field showing the j
 ## Examine a specific service job
 <a name="examine-service-job"></a>
 
-After you identify a service job of interest, use the [https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeServiceJob.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeServiceJob.html) operation to get comprehensive information about the job, including its current status, service resource identifiers, and detailed attempt information.
+After you identify a service job of interest, use the [`DescribeServiceJob`](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeServiceJob.html) operation to get comprehensive information about the job, including its current status, service resource identifiers, and detailed attempt information.
 
 View detailed information about a specific service job:
 

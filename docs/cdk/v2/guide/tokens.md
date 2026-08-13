@@ -478,7 +478,7 @@ Resources:
 ## How token encodings work
 <a name="tokens-work"></a>
 
-Tokens are objects that implement the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.IResolvable.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.IResolvable.html) interface, which contains a single `resolve` method. During synthesis, the AWS CDK calls this method to produce the final value for tokens in your CloudFormation template.
+Tokens are objects that implement the [`IResolvable`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.IResolvable.html) interface, which contains a single `resolve` method. During synthesis, the AWS CDK calls this method to produce the final value for tokens in your CloudFormation template.
 
 **Note**
 You’ll rarely work directly with the `IResolvable` interface. You will most likely only see string-encoded versions of tokens.
@@ -486,10 +486,10 @@ You’ll rarely work directly with the `IResolvable` interface. You will most li
 ### Token encoding types
 <a name="tokens-work-types"></a>
 
-Tokens participate in the synthesis process to produce arbitrary values of any type. Other functions typically only accept arguments of basic types, such as `string` or `number`. To use tokens in these cases, you can encode them into one of three types by using static methods on the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html) class.
-+  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-aswbrstringvalue-options](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-aswbrstringvalue-options) to generate a string encoding (or call `.toString()` on the token object).
-+  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-aswbrlistvalue-options](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-aswbrlistvalue-options) to generate a list encoding.
-+  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-aswbrnumbervalue](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-aswbrnumbervalue) to generate a numeric encoding.
+Tokens participate in the synthesis process to produce arbitrary values of any type. Other functions typically only accept arguments of basic types, such as `string` or `number`. To use tokens in these cases, you can encode them into one of three types by using static methods on the [`cdk.Token`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html) class.
++  [`Token.asString`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-aswbrstringvalue-options) to generate a string encoding (or call `.toString()` on the token object).
++  [`Token.asList`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-aswbrlistvalue-options) to generate a list encoding.
++  [`Token.asNumber`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-aswbrnumbervalue) to generate a numeric encoding.
 
 These take an arbitrary value, which can be an `IResolvable`, and encode them into a primitive value of the indicated type.
 
@@ -499,7 +499,7 @@ Because any one of the previous types can potentially be an encoded token, be ca
 ## How to check for tokens in your app
 <a name="tokens-check"></a>
 
-To check whether a value has an unresolved token in it, call the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-iswbrunresolvedobj](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-iswbrunresolvedobj) (Python: `is_unresolved`) method. The following is an example that checks if the value for our Amazon S3 bucket name is a token. If its not a token, we then validate the length of the bucket name:
+To check whether a value has an unresolved token in it, call the [`Token.isUnresolved`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Token.html#static-iswbrunresolvedobj) (Python: `is_unresolved`) method. The following is an example that checks if the value for our Amazon S3 bucket name is a token. If its not a token, we then validate the length of the bucket name:
 
 **Example**
 
@@ -764,7 +764,7 @@ List-encoded tokens look like the following:
 ["#{TOKEN[Stack.NotificationArns.1234]}"]
 ```
 
-The only safe thing to do with these lists is pass them directly to other constructs. Tokens in string list form cannot be concatenated, nor can an element be taken from the token. The only safe way to manipulate them is by using AWS CloudFormation intrinsic functions like [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-select.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-select.html).
+The only safe thing to do with these lists is pass them directly to other constructs. Tokens in string list form cannot be concatenated, nor can an element be taken from the token. The only safe way to manipulate them is by using AWS CloudFormation intrinsic functions like [`Fn.select`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-select.html).
 
 ## Working with number-encoded tokens
 <a name="tokens-number"></a>
@@ -1375,7 +1375,7 @@ $ cdk synth --quiet
 connectionString: jdbc:mysql://mydb.cluster.amazonaws.com:-1.888154589708796e+289/mydatabase
 ```
 
-To convert a number-encoded token to a string, use [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Tokenization.html#static-stringifywbrnumberx](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Tokenization.html#static-stringifywbrnumberx). In the following example, we convert the number-encoded token to a string before defining our connection string:
+To convert a number-encoded token to a string, use [`cdk.Tokenization.stringifyNumber(<token>)`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Tokenization.html#static-stringifywbrnumberx). In the following example, we convert the number-encoded token to a string before defining our connection string:
 
 **Example**
 
@@ -1675,7 +1675,7 @@ connectionString: jdbc:mysql://mydb.cluster.amazonaws.com:${Token[TOKEN.242]}/my
 
 In addition to representing deploy-time values, such as AWS CloudFormation [parameters](parameters.md), tokens are also commonly used to represent synthesis-time lazy values. These are values for which the final value will be determined before synthesis has completed, but not at the point where the value is constructed. Use tokens to pass a literal string or number value to another construct, while the actual value at synthesis time might depend on some calculation that has yet to occur.
 
-You can construct tokens representing synth-time lazy values using static methods on the `Lazy` class, such as [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Lazy.html#static-stringproducer-options](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Lazy.html#static-stringproducer-options) and [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Lazy.html#static-numberproducer](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Lazy.html#static-numberproducer). These methods accept an object whose `produce` property is a function that accepts a context argument and returns the final value when called.
+You can construct tokens representing synth-time lazy values using static methods on the `Lazy` class, such as [`Lazy.string`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Lazy.html#static-stringproducer-options) and [`Lazy.number`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Lazy.html#static-numberproducer). These methods accept an object whose `produce` property is a function that accepts a context argument and returns the final value when called.
 
 The following example creates an Auto Scaling group whose capacity is determined after its creation.
 
@@ -1774,7 +1774,7 @@ actualValue = 10;
 ## Converting to JSON
 <a name="tokens-json"></a>
 
-Sometimes you want to produce a JSON string of arbitrary data, and you may not know whether the data contains tokens. To properly JSON-encode any data structure, regardless of whether it contains tokens, use the method [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html#towbrjsonwbrstringobj-space](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html#towbrjsonwbrstringobj-space), as shown in the following example.
+Sometimes you want to produce a JSON string of arbitrary data, and you may not know whether the data contains tokens. To properly JSON-encode any data structure, regardless of whether it contains tokens, use the method [`stack.toJsonString`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html#towbrjsonwbrstringobj-space), as shown in the following example.
 
 **Example**
 

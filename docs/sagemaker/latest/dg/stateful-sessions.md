@@ -31,7 +31,7 @@ During a stateful session, your application interacts with your model container 
 
 **To start a stateful session**
 
-1. To start a session with a stateful model that's hosted by Amazon SageMaker AI, your client sends an [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpoint.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpoint.html) request with the SageMaker API. For the `SessionID` request parameter, the client tells SageMaker AI to start a new session by specifying the value `NEW_SESSION`. In the request payload, the client also tells the container to start a new session. The syntax of this statement varies based on your container implementation. It depends on how your container code handles the request payload.
+1. To start a session with a stateful model that's hosted by Amazon SageMaker AI, your client sends an [`InvokeEndpoint`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpoint.html) request with the SageMaker API. For the `SessionID` request parameter, the client tells SageMaker AI to start a new session by specifying the value `NEW_SESSION`. In the request payload, the client also tells the container to start a new session. The syntax of this statement varies based on your container implementation. It depends on how your container code handles the request payload.
 
    The following example starts a new session by using the SDK for Python (Boto3):
 

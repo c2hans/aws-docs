@@ -24,7 +24,7 @@ AWS Health has the following managed policies.
 ## AWS managed policy: AWSHealth\_EventProcessorServiceRolePolicy
 <a name="security-iam-awsmanpol-Health_EventProcessorServiceRolePolicy"></a>
 
-AWS Health uses the [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/Health_EventProcessorServiceRolePolicy$jsonEditor](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/Health_EventProcessorServiceRolePolicy$jsonEditor) AWS managed policy. This managed policy is attached to the `AWSServiceRoleForHealth_EventProcessor` service-linked role. The policy allows the service-linked role to complete actions for you. You can't attach this policy to your IAM entities. For more information, see [Using service-linked roles for AWS Health](using-service-linked-roles.md).
+AWS Health uses the [AWSHealth\_EventProcessorServiceRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/Health_EventProcessorServiceRolePolicy$jsonEditor) AWS managed policy. This managed policy is attached to the `AWSServiceRoleForHealth_EventProcessor` service-linked role. The policy allows the service-linked role to complete actions for you. You can't attach this policy to your IAM entities. For more information, see [Using service-linked roles for AWS Health](using-service-linked-roles.md).
 
 The managed policy has the following permissions to allow AWS Health to access the Amazon EventBridge rule for AWS Incident Detection and Response.
 
@@ -75,7 +75,7 @@ For a list of changes to the policy, see [AWS Health updates to AWS managed poli
 ## AWS managed policy: Health\_OrganizationsServiceRolePolicy
 <a name="security-iam-awsmanpol-Health_OrganizationsServiceRolePolicy"></a>
 
-AWS Health uses the [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/Health_OrganizationsServiceRolePolicy$jsonEditor](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/Health_OrganizationsServiceRolePolicy$jsonEditor) AWS managed policy. This managed policy is attached to the `AWSServiceRoleForHealth_Organizations` service-linked role. The policy allows the service-linked role to complete actions for you. You can't attach this policy to your IAM entities. For more information, see [Using service-linked roles for AWS Health](using-service-linked-roles.md).
+AWS Health uses the [Health\_OrganizationsServiceRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/Health_OrganizationsServiceRolePolicy$jsonEditor) AWS managed policy. This managed policy is attached to the `AWSServiceRoleForHealth_Organizations` service-linked role. The policy allows the service-linked role to complete actions for you. You can't attach this policy to your IAM entities. For more information, see [Using service-linked roles for AWS Health](using-service-linked-roles.md).
 
 This policy grants permissions that allow AWS Health to access required AWS Organizations details for the Health Organizational view.
 
@@ -116,7 +116,7 @@ For a list of changes to the policy, see [AWS Health updates to AWS managed poli
 ## AWS managed policy: AWSHealthFullAccess
 <a name="security-iam-awsmanpol-AWSHealthFullAccess"></a>
 
-AWS Health uses the [https://console.aws.amazon.com//iam/home?#/policies/arn:aws:iam::aws:policy/AWSHealthFullAccess$jsonEditor](https://console.aws.amazon.com//iam/home?#/policies/arn:aws:iam::aws:policy/AWSHealthFullAccess$jsonEditor) AWS managed policy. The policy grants entities (IAM users or roles) access to the AWS Health console. For more information, see [Using the AWS Health console](security_iam_id-based-policy-examples.md#security_iam_id-based-policy-examples-console).
+AWS Health uses the [AWSHealthFullAccess](https://console.aws.amazon.com//iam/home?#/policies/arn:aws:iam::aws:policy/AWSHealthFullAccess$jsonEditor) AWS managed policy. The policy grants entities (IAM users or roles) access to the AWS Health console. For more information, see [Using the AWS Health console](security_iam_id-based-policy-examples.md#security_iam_id-based-policy-examples-console).
 
  **Permissions details**
 

@@ -380,7 +380,7 @@ You can also store prediction results and use them to report and analyze trends 
   }
 }
 ```
-You can configure the [IoT Analytics connector](iot-analytics-connector.md) to subscribe to this topic and send the information to AWS IoT Analytics for further or historical analysis.
+AWS IoT Analytics was discontinued on December 15, 2025. The IoT Analytics connector no longer functions. Consider using alternative AWS services such as Amazon Kinesis Data Streams or Amazon S3 to store and analyze prediction results.
 
 **Topic filter**: `cloudwatch/metric/put`
 This is the output topic used to publish metrics to CloudWatch. This feature requires that you install and configure the [CloudWatch Metrics connector](cloudwatch-metrics-connector.md).

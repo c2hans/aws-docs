@@ -43,7 +43,7 @@ Amazon GameLift Servers assigns an ID to the new build and uploads the designate
 ------
 #### [ AWS CLI ]
 
-To define the new build and upload your server build files, use the [https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-build.html](https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-build.html) command.
+To define the new build and upload your server build files, use the [`create-build`](https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-build.html) command.
 
 1. Open a command line window and switch to a directory where you can use the AWS CLI.
 
@@ -68,7 +68,7 @@ To define the new build and upload your server build files, use the [https://doc
      + **RoleARN** – The ARN assigned to the IAM role that you created. For example, "arn:aws:iam::111122223333:role/GameLiftAccess". For an example policy, see [Access a game build file in Amazon S3](security_iam_id-based-policy-examples.md#security_iam_id-based-policy-examples-access-storage-loc).
    + **region** – Create the build in the AWS Region where you plan to deploy fleets. If you're deploying your game in multiple Regions, create a build in each Region.
 **Note**
-We recommend checking your current default Region using the [https://docs.aws.amazon.com/cli/latest/reference/configure/get.html](https://docs.aws.amazon.com/cli/latest/reference/configure/get.html) command[https://docs.aws.amazon.com/cli/latest/reference/configure/get.html](https://docs.aws.amazon.com/cli/latest/reference/configure/get.html). To change your default Region, use the [https://docs.aws.amazon.com/cli/latest/reference/configure/set.html](https://docs.aws.amazon.com/cli/latest/reference/configure/set.html) command.
+We recommend checking your current default Region using the [`configure get`](https://docs.aws.amazon.com/cli/latest/reference/configure/get.html) command[****](https://docs.aws.amazon.com/cli/latest/reference/configure/get.html). To change your default Region, use the [`configure set`****](https://docs.aws.amazon.com/cli/latest/reference/configure/set.html) command.
 
    *Example*
 
@@ -81,6 +81,6 @@ We recommend checking your current default Region using the [https://docs.aws.am
        --region us-west-2
    ```
 
-1. To view the new build, use the [https://docs.aws.amazon.com/cli/latest/reference/gamelift/describe-build.html](https://docs.aws.amazon.com/cli/latest/reference/gamelift/describe-build.html) command.
+1. To view the new build, use the [`describe-build`](https://docs.aws.amazon.com/cli/latest/reference/gamelift/describe-build.html) command.
 
 ------

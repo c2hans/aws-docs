@@ -323,6 +323,10 @@ Required: No
                      "Status": "string"
                   },
                   "RoutingConfig": {
+                     "PrefixAwareRoutingConfig": {
+                        "ConcurrencyThreshold": number,
+                        "PrefixLength": number
+                     },
                      "RoutingStrategy": "string"
                   },
                   "VariantName": "string",
@@ -390,6 +394,10 @@ Required: No
                      "Status": "string"
                   },
                   "RoutingConfig": {
+                     "PrefixAwareRoutingConfig": {
+                        "ConcurrencyThreshold": number,
+                        "PrefixLength": number
+                     },
                      "RoutingStrategy": "string"
                   },
                   "VariantName": "string",

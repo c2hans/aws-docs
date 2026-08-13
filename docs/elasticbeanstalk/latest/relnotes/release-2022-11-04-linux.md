@@ -18,24 +18,41 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/alas2.html) on or before **October 27, 2022** to all Amazon Linux 2 platforms.<br />Some of the platform updates are security releases. For more information, see **Platform-specific updates** in this table. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-11-04-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2022-11-04-linux.html) |
-| **AMI** | Updated the base AMI to version 2.0.20221004. |
-| **nginx** | Updated platforms supporting the nginx server to [version 1.22.0](https://nginx.org/en/CHANGES-1.22).<br />This version includes security fixes. |
-| **Docker** | Updated Amazon ECS to version **1.64.0** on the *ECS Amazon Linux 2* platform branch. |
-| **Go** | Updated Go to release 1.19.2. For details, see [go1.19.2](https://go.dev/doc/devel/release#go1.19.1) in *The Go Programming Language Release History*.<br />This is a security release. |
-| **Corretto**, **Tomcat** | Updated Corretto 17 to version 17.0.5.8.1. For change log, see [Change Log for Amazon Corretto 17](https://github.com/corretto/corretto-17/blob/develop/CHANGELOG.md).<br />Updated Corretto 11 to version 11.0.17.8.1. For change log, see [Change Log for Amazon Corretto 11](https://github.com/corretto/corretto-11/blob/develop/CHANGELOG.md).<br />Updated Corretto 8 to version 8.352.08.1. For change log, see [Change Log for Amazon Corretto 8](https://github.com/corretto/corretto-8/blob/develop/CHANGELOG.md).<br />All three updates are security releases. |
-| **.NET Core** | Updated .NET Core to releases [6.0.10](https://github.com//dotnet/core/blob/main/release-notes/6.0/6.0.10/6.0.10.md#notable-changes) and [3.1.30](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1.30/3.1.30.md#notable-changes).<br />Both the .NET Core 6.0 and .NET Core 3.1 updates are security releases. |
-| **Node.js** | Updated Node.js 16 to add support for Node version [16.18.0](https://nodejs.org/en/blog/release/v16.18.0/). Node.js 12 is a retiring (deprecated) platform branch. For full version information of Elastic Beanstalk retiring platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.  |
-| **PHP** | Updated PHP 8.1 release to [8.1.12](https://www.php.net/releases/8_1_12.php).<br />This is a security release. PHP 7.4 is a retiring (deprecated) platform branch. For full version information of Elastic Beanstalk retiring platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.  |
-| **Ruby** | Updated RubyGems to release 3.3.23. For details, see [3.3.23 Released](https://blog.rubygems.org/2022/10/05/3.3.23-released.html) on the *RubyGems blog*.<br />Updated Puma to version [6.0.0](https://github.com/puma/puma/releases/tag/v6.0.0). Ruby 2.6 is a retiring (deprecated) platform branch. For full version information of Elastic Beanstalk retiring platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/alas2.html">Amazon Linux Security Center</a> on or before <b>October 27, 2022</b> to all Amazon Linux 2 platforms.<br />Some of the platform updates are security releases. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version 2.0.20221004.</td></tr>
+  <tr><td><b>nginx</b></td><td>Updated platforms supporting the nginx server to <a href="https://nginx.org/en/CHANGES-1.22">version 1.22.0</a>.<br />This version includes security fixes.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Docker</b></td><td>Updated Amazon ECS to version <b>1.64.0</b> on the <i>ECS Amazon Linux 2</i> platform branch.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated Go to release 1.19.2. For details, see <a href="https://go.dev/doc/devel/release#go1.19.1">go1.19.2</a> in <i>The Go Programming Language Release History</i>.<br />This is a security release.</td></tr>
+  <tr><td><b>Corretto</b>, <b>Tomcat</b></td><td>Updated Corretto 17 to version 17.0.5.8.1. For change log, see <a href="https://github.com/corretto/corretto-17/blob/develop/CHANGELOG.md">Change Log for Amazon Corretto 17</a>.<br />Updated Corretto 11 to version 11.0.17.8.1. For change log, see <a href="https://github.com/corretto/corretto-11/blob/develop/CHANGELOG.md">Change Log for Amazon Corretto 11</a>.<br />Updated Corretto 8 to version 8.352.08.1. For change log, see <a href="https://github.com/corretto/corretto-8/blob/develop/CHANGELOG.md">Change Log for Amazon Corretto 8</a>.<br />All three updates are security releases.</td></tr>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET Core to releases <a href="https://github.com//dotnet/core/blob/main/release-notes/6.0/6.0.10/6.0.10.md#notable-changes">6.0.10</a> and <a href="https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1.30/3.1.30.md#notable-changes">3.1.30</a>.<br />Both the .NET Core 6.0 and .NET Core 3.1 updates are security releases.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated Node.js 16 to add support for Node version <a href="https://nodejs.org/en/blog/release/v16.18.0/">16.18.0</a>. Node.js 12 is a retiring (deprecated) platform branch. For full version information of Elastic Beanstalk retiring platform branches, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html">Elastic Beanstalk platform versions scheduled for retirement</a> in the <i>AWS Elastic Beanstalk Platforms</i> guide. </td></tr>
+  <tr><td><b>PHP</b></td><td>Updated PHP 8.1 release to <a href="https://www.php.net/releases/8_1_12.php">8.1.12</a>.<br />This is a security release. PHP 7.4 is a retiring (deprecated) platform branch. For full version information of Elastic Beanstalk retiring platform branches, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html">Elastic Beanstalk platform versions scheduled for retirement</a> in the <i>AWS Elastic Beanstalk Platforms</i> guide. </td></tr>
+  <tr><td><b>Ruby</b></td><td>Updated RubyGems to release 3.3.23. For details, see <a href="https://blog.rubygems.org/2022/10/05/3.3.23-released.html">3.3.23 Released</a> on the <i>RubyGems blog</i>.<br />Updated Puma to version <a href="https://github.com/puma/puma/releases/tag/v6.0.0">6.0.0</a>. Ruby 2.6 is a retiring (deprecated) platform branch. For full version information of Elastic Beanstalk retiring platform branches, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html">Elastic Beanstalk platform versions scheduled for retirement</a> in the <i>AWS Elastic Beanstalk Platforms</i> guide. </td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2022-11-04-linux.platforms"></a>

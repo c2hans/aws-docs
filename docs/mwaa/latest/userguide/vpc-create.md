@@ -312,7 +312,7 @@ The following CloudFormation template creates an Amazon VPC network with interne
    cd mwaaproject
    ```
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command to create the stack using the AWS CLI.
+1. Use the [`aws cloudformation create-stack`](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command to create the stack using the AWS CLI.
 
    ```
    aws cloudformation create-stack --stack-name mwaa-environment --template-body file://cfn-vpc-public-private.yaml
@@ -504,7 +504,7 @@ This option uses [Private routing without internet access](networking-about.md#n
    cd mwaaproject
    ```
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command to create the stack using the AWS CLI.
+1. Use the [`aws cloudformation create-stack`](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command to create the stack using the AWS CLI.
 
    ```
    aws cloudformation create-stack --stack-name mwaa-private-environment --template-body file://cfn-vpc-private.yml

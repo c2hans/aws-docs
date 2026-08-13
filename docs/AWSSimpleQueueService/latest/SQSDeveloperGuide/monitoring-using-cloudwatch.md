@@ -13,7 +13,7 @@ When an Amazon SQS queue is inactive for more than six hours, the Amazon SQS ser
 
 **Note**
 An Amazon SQS queue can be activated when the user calling an API against the queue is not authorized, and the request fails.
-The Amazon SQS console performs a [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueAttributes.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueAttributes.html) API call when the queue’s page is opened. The `GetQueueAttributes` API request activates the queue.
+The Amazon SQS console performs a [`GetQueueAttributes`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueAttributes.html) API call when the queue’s page is opened. The `GetQueueAttributes` API request activates the queue.
 A delay of up to 15 minutes occurs in CloudWatch metrics when a queue is activated from an inactive state.
 There is no charge for the Amazon SQS metrics reported in CloudWatch. They're provided as part of the Amazon SQS service.
 CloudWatch metrics are supported for both standard and FIFO queues.

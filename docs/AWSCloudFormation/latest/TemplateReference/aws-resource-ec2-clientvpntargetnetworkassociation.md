@@ -76,7 +76,7 @@ The ID of the subnet to associate with the Client VPN endpoint. Required for VPC
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the association ID. For example: `cvpn-assoc-1234567890abcdef0`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-ec2-clientvpntargetnetworkassociation--examples"></a>

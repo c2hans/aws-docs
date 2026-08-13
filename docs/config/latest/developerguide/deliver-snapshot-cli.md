@@ -12,7 +12,7 @@ A *configuration snapshot* is a collection of the configuration items for the su
 
 AWS Config generates configuration snapshots when you invoke the [DeliverConfigSnapshot](https://docs.aws.amazon.com/config/latest/APIReference/API_DeliverConfigSnapshot.html) action or you run the AWS CLI `deliver-config-snapshot` command. AWS Config stores configuration snapshots in the Amazon S3 bucket that you specified when you enabled AWS Config.
 
-Enter the [http://docs.aws.amazon.com/cli/latest/reference/configservice/deliver-config-snapshot.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/deliver-config-snapshot.html) command by specifying the name assigned by AWS Config when you configured your delivery channel, for example:
+Enter the [`deliver-config-snapshot`](http://docs.aws.amazon.com/cli/latest/reference/configservice/deliver-config-snapshot.html) command by specifying the name assigned by AWS Config when you configured your delivery channel, for example:
 
 ```
 $ aws configservice deliver-config-snapshot --delivery-channel-name {{default}}

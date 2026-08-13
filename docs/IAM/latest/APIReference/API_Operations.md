@@ -7,6 +7,7 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_Operations.h
 
 The following actions are supported:
 +  [AcceptDelegationRequest](API_AcceptDelegationRequest.md)
++  [AcquireRole](API_AcquireRole.md)
 +  [AddClientIDToOpenIDConnectProvider](API_AddClientIDToOpenIDConnectProvider.md)
 +  [AddRoleToInstanceProfile](API_AddRoleToInstanceProfile.md)
 +  [AddUserToGroup](API_AddUserToGroup.md)
@@ -70,6 +71,7 @@ The following actions are supported:
 +  [GetAccessKeyLastUsed](API_GetAccessKeyLastUsed.md)
 +  [GetAccountAuthorizationDetails](API_GetAccountAuthorizationDetails.md)
 +  [GetAccountPasswordPolicy](API_GetAccountPasswordPolicy.md)
++  [GetAccountProperties](API_GetAccountProperties.md)
 +  [GetAccountSummary](API_GetAccountSummary.md)
 +  [GetContextKeysForCustomPolicy](API_GetContextKeysForCustomPolicy.md)
 +  [GetContextKeysForPrincipalPolicy](API_GetContextKeysForPrincipalPolicy.md)
@@ -88,6 +90,7 @@ The following actions are supported:
 +  [GetPolicyVersion](API_GetPolicyVersion.md)
 +  [GetRole](API_GetRole.md)
 +  [GetRolePolicy](API_GetRolePolicy.md)
++  [GetRoleTemplateVersion](API_GetRoleTemplateVersion.md)
 +  [GetSAMLProvider](API_GetSAMLProvider.md)
 +  [GetServerCertificate](API_GetServerCertificate.md)
 +  [GetServiceLastAccessedDetails](API_GetServiceLastAccessedDetails.md)
@@ -132,6 +135,7 @@ The following actions are supported:
 +  [ListUsers](API_ListUsers.md)
 +  [ListUserTags](API_ListUserTags.md)
 +  [ListVirtualMFADevices](API_ListVirtualMFADevices.md)
++  [PutAccountProperties](API_PutAccountProperties.md)
 +  [PutGroupPolicy](API_PutGroupPolicy.md)
 +  [PutRolePermissionsBoundary](API_PutRolePermissionsBoundary.md)
 +  [PutRolePolicy](API_PutRolePolicy.md)

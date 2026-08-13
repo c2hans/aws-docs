@@ -41,12 +41,12 @@ Choose your preferred method, and follow the steps to designate the delegated ad
 ------
 #### [ Security Hub CSPM API ]
 
-Invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableOrganizationAdminAccount.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableOrganizationAdminAccount.html) API from the Organizations management account. Provide the AWS account ID of the Security Hub CSPM delegated administrator account.
+Invoke the [`EnableOrganizationAdminAccount`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableOrganizationAdminAccount.html) API from the Organizations management account. Provide the AWS account ID of the Security Hub CSPM delegated administrator account.
 
 ------
 #### [ AWS CLI ]
 
-Run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/enable-organization-admin-account.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/enable-organization-admin-account.html) command from the Organizations management account. Provide the AWS account ID of the Security Hub CSPM delegated administrator account.
+Run the [`enable-organization-admin-account`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/enable-organization-admin-account.html) command from the Organizations management account. Provide the AWS account ID of the Security Hub CSPM delegated administrator account.
 
 **Example command:**
 
@@ -102,7 +102,7 @@ Choose your preferred method, and follow the steps to enable Security Hub CSPM. 
 ------
 #### [ Security Hub CSPM API ]
 
-Invoke the [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_EnableSecurityHub.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_EnableSecurityHub.html) API. When you enable Security Hub CSPM from the API, it automatically enables the following default security standards:
+Invoke the [`EnableSecurityHub`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_EnableSecurityHub.html) API. When you enable Security Hub CSPM from the API, it automatically enables the following default security standards:
 + AWS Foundational Security Best Practices
 + Center for Internet Security (CIS) AWS Foundations Benchmark v1.2.0
 
@@ -113,7 +113,7 @@ You can also use the `Tags` parameter to assign tag values to the hub resource.
 ------
 #### [ AWS CLI ]
 
-Run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/enable-security-hub.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/enable-security-hub.html) command. To enable the default standards, include `--enable-default-standards`. To not enable the default standards, include `--no-enable-default-standards`. The default security standards are as follows:
+Run the [`enable-security-hub`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/enable-security-hub.html) command. To enable the default standards, include `--enable-default-standards`. To not enable the default standards, include `--no-enable-default-standards`. The default security standards are as follows:
 + AWS Foundational Security Best Practices
 + Center for Internet Security (CIS) AWS Foundations Benchmark v1.2.0
 

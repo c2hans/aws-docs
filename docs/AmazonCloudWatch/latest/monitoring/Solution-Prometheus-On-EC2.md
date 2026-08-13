@@ -23,7 +23,6 @@ This solution is relevant for the following conditions:
 + Compute: Amazon EC2 instances that run one or more Prometheus exporters.
 + Amazon VPC with DNS enabled, and at least two subnets in different Availability Zones for the collector.
 + A security group that allows the collector to reach the exporter ports on your instances.
-+ If you deploy the collector in private subnets that have no internet access, an interface VPC endpoint for CloudWatch. For more information, see [Configure VPC endpoints for private subnets](managed-prometheus-collectors-vpc-setup.md#managed-prometheus-collectors-vpc-endpoints).
 
 ## Enable Prometheus exporters
 <a name="Solution-Prometheus-On-EC2-Exporters"></a>
@@ -84,7 +83,7 @@ scrape_configs:
 
 Create a VPC-connected managed collector that scrapes your instances and delivers metrics to your CloudWatch dataset. Provide the subnets and security group that allow the collector to reach your exporter ports:
 
-You can use [https://docs.aws.amazon.com/prometheus/latest/APIReference/API_GetDefaultScraperConfiguration.html](https://docs.aws.amazon.com/prometheus/latest/APIReference/API_GetDefaultScraperConfiguration.html) to retrieve a general-purpose scraper configuration, or provide your own.
+You can use [GetDefaultScraperConfiguration](https://docs.aws.amazon.com/prometheus/latest/APIReference/API_GetDefaultScraperConfiguration.html) to retrieve a general-purpose scraper configuration, or provide your own.
 
 ------
 #### [ AWS API ]

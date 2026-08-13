@@ -7,9 +7,9 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 # `aws:branch` – Run conditional automation steps
 <a name="automation-action-branch"></a>
 
-The `aws:branch` action allows you to create a dynamic automation that evaluates different choices in a single step and then jumps to a different step in the runbook based on the results of that evaluation.
+The `aws:branch` action lets you create a dynamic automation that evaluates different choices in a single step and then jumps to a different step in the runbook based on the results of that evaluation.
 
-When you specify the `aws:branch` action for a step, you specify `Choices` that the automation must evaluate. The `Choices` can be based on either a value that you specified in the `Parameters` section of the runbook, or a dynamic value generated as the output from the previous step. The automation evaluates each choice by using a Boolean expression. If the first choice is true, then the automation jumps to the step designated for that choice. If the first choice is false, the automation evaluates the next choice. The automation continues evaluating each choice until it process a true choice. The automation then jumps to the designated step for the true choice.
+When you specify the `aws:branch` action for a step, you specify `Choices` that the automation must evaluate. The `Choices` can be based on a value from the `Parameters` section of the runbook, or a dynamic value generated as output from the previous step. The automation evaluates each choice by using a Boolean expression. If the first choice is true, then the automation jumps to the step designated for that choice. If the first choice is false, the automation evaluates the next choice. The automation continues evaluating each choice until it process a true choice. The automation then jumps to the designated step for the true choice.
 
 If none of the choices are true, the automation checks to see if the step contains a `default` value. A default value defines a step that the automation should jump to if none of the choices are true. If no `default` value is specified for the step, then the automation processes the next step in the runbook.
 

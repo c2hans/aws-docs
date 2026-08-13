@@ -141,7 +141,7 @@ Currently, the migration tool supports basic `copy`, `download`, `upload`, `uplo
 | getConfiguration() | Save a reference separately | Not Supported; no getter in v2 |
 | uploadFileList(...) | Make multiple uploadFile() calls | Not Supported |
 | copy methods with a TransferStateChangeListener parameter | Use TransferListener | [See manual migration example](#tm-unsupported-client-methods-copy) |
-| download methods with an S3ProgressListener parameter | Use [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/progress/TransferListener.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/progress/TransferListener.html) | [See manual migration example](#tm-unsupported-client-methods-download) |
+| download methods with an S3ProgressListener parameter | Use [`TransferListener`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/progress/TransferListener.html) | [See manual migration example](#tm-unsupported-client-methods-download) |
 | `downloadDirectory` methods with 4 or more parameters |  | [See manual migration example](#tm-unsupported-client-methods-download-dir) |
 | upload method with an ObjectMetadataProvider parameter | Set metadata in request | [See manual migration example](#tm-unsupported-client-methods-upload) |
 | uploadDirectory methods with \*Provider parameter | Set tags in request | [See manual migration example](#tm-unsupported-client-methods-uploadDirectory) |

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/hmac-create-ke
 # Create an HMAC KMS key
 <a name="hmac-create-key"></a>
 
-You can create HMAC KMS keys in the AWS KMS console, by using the [https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html) API, or by using the [AWS::KMS::Key CloudFormation template](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html).
+You can create HMAC KMS keys in the AWS KMS console, by using the [CreateKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html) API, or by using the [AWS::KMS::Key CloudFormation template](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html).
 
 When you create an HMAC KMS key, you must select a key spec. AWS KMS supports multiple [key specs for HMAC KMS keys](symm-asymm-choose-key-spec.md#hmac-key-specs). The key spec that you select might be determined by regulatory, security, or business requirements. In general, longer keys are more resistant to brute-force attacks.
 

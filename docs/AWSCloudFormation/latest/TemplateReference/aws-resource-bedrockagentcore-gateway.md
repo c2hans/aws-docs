@@ -110,7 +110,7 @@ A list of configuration settings for a gateway interceptor. Gateway interceptors
 The KMS key ARN for the gateway.
 *Required*: No
 *Type*: String
-*Pattern*: `^arn:[a-z0-9-]{1,20}:kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}$`
+*Pattern*: `^arn:aws(|-cn|-us-gov):kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}$`
 *Minimum*: `1`
 *Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -119,7 +119,7 @@ The KMS key ARN for the gateway.
 The name of the gateway.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^([0-9a-zA-Z][-]?){1,100}$`
+*Pattern*: `^([0-9a-zA-Z][-]?){1,48}$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PolicyEngineConfiguration`  <a name="cfn-bedrockagentcore-gateway-policyengineconfiguration"></a>
@@ -144,7 +144,7 @@ The protocol type used by the gateway.
 The ARN of the IAM role that provides permissions for the gateway to access AWS services.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^arn:[a-z0-9-]{1,20}:iam::([0-9]{12})?:role/.+$`
+*Pattern*: `^arn:aws(-[^:]+)?:iam::([0-9]{12})?:role/.+$`
 *Minimum*: `1`
 *Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -168,14 +168,14 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 
  `my-gateway-a1b2c3d4e5`
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-bedrockagentcore-gateway-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-bedrockagentcore-gateway-return-values-fn--getatt-fn--getatt"></a>

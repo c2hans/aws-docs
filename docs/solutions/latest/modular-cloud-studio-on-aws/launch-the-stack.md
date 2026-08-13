@@ -11,7 +11,7 @@ If you previously deployed MCS in the same account, confirm that your previous s
 
  **Time to deploy:** Approximately 7-10 minutes
 
-1. Sign into [AWS Management Console](https://aws.amazon.com/console) and select the button to launch `ModularCloudStudioOnAwsStack.template` CloudFormation template. [https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=modular-cloud-studio&templateURL=https://solutions-reference.s3.amazonaws.com/modular-cloud-studio-on-aws/latest/ModularCloudStudioOnAwsStack.template?redirectId=ImplementationGuide](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=modular-cloud-studio&templateURL=https://solutions-reference.s3.amazonaws.com/modular-cloud-studio-on-aws/latest/ModularCloudStudioOnAwsStack.template?redirectId=ImplementationGuide)
+1. Sign into [AWS Management Console](https://aws.amazon.com/console) and select the button to launch `ModularCloudStudioOnAwsStack.template` CloudFormation template. [![Launch solution](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=modular-cloud-studio&templateURL=https://solutions-reference.s3.amazonaws.com/modular-cloud-studio-on-aws/latest/ModularCloudStudioOnAwsStack.template?redirectId=ImplementationGuide)
 
 1. The template launches in the US East (N. Virginia) Region by default. To launch the solution in a different Region, use the Region selector in the console navigation bar.
 **Note**

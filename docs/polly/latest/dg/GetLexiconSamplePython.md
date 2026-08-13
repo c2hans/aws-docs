@@ -9,7 +9,7 @@ The following Python code uses the AWS SDK for Python (Boto) to retrieve all lex
 
 The following code example uses default credentials stored in the AWS SDK configuration file. For information about creating the configuration file, see [Setting up the AWS CLI](setup-cli.md).
 
-For more information on this operation, see the reference for the [https://docs.aws.amazon.com/polly/latest/APIReference/API_GetLexicon.html](https://docs.aws.amazon.com/polly/latest/APIReference/API_GetLexicon.html) API.
+For more information on this operation, see the reference for the [`GetLexicon`](https://docs.aws.amazon.com/polly/latest/APIReference/API_GetLexicon.html) API.
 
 ```
 from argparse import ArgumentParser

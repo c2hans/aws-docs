@@ -9,7 +9,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 Provides the configuration information for applying basic logic to alter document metadata and content when ingesting documents into Amazon Q Business.
 
-To apply advanced logic, to go beyond what you can do with basic logic, see [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_HookConfiguration.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_HookConfiguration.html).
+To apply advanced logic, to go beyond what you can do with basic logic, see [`HookConfiguration`](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_HookConfiguration.html).
 
 For more information, see [Custom document enrichment](https://docs.aws.amazon.com/amazonq/latest/business-use-dg/custom-document-enrichment.html).
 

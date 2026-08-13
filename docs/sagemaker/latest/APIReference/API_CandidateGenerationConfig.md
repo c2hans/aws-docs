@@ -13,7 +13,7 @@ Stores the configuration information for how model candidates are generated usin
  ** AlgorithmsConfig **   <a name="sagemaker-Type-CandidateGenerationConfig-AlgorithmsConfig"></a>
 Your Autopilot job trains a default set of algorithms on your dataset. For tabular and time-series data, you can customize the algorithm list by selecting a subset of algorithms for your problem type.
  `AlgorithmsConfig` stores the customized selection of algorithms to train on your data.
-+  **For the tabular problem type `TabularJobConfig`,** the list of available algorithms to choose from depends on the training mode set in [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLJobConfig.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLJobConfig.html).
++  **For the tabular problem type `TabularJobConfig`,** the list of available algorithms to choose from depends on the training mode set in [`AutoMLJobConfig.Mode`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLJobConfig.html).
   +  `AlgorithmsConfig` should not be set when the training mode `AutoMLJobConfig.Mode` is set to `AUTO`.
   + When `AlgorithmsConfig` is provided, one `AutoMLAlgorithms` attribute must be set and one only.
 

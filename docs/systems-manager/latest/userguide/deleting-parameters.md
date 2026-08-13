@@ -33,4 +33,4 @@ Deleting a parameter removes all versions of it. Once deleted, the parameter and
 
   Replace {{my-parameter}} with the name of your parameter to be deleted.
 
-  For information about all options available for use with the `delete-parameter` command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/delete-parameter.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/delete-parameter.html) in the *AWS Systems Manager section of the AWS CLI Command Reference*.
+  For information about all options available for use with the `delete-parameter` command, see [delete-parameter](https://docs.aws.amazon.com/cli/latest/reference/ssm/delete-parameter.html) in the *AWS Systems Manager section of the AWS CLI Command Reference*.

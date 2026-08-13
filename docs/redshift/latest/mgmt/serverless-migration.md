@@ -83,7 +83,7 @@ Driver={Amazon Redshift ODBC Driver (x64)}; Server=<{{workgroup-name}}>.<{{accou
 ### Connecting using IAM
 <a name="serverless-migration-drivers-iam"></a>
 
- If you prefer logging in with IAM, use the Amazon Redshift Serverless [https://docs.aws.amazon.com//redshift-serverless/latest/APIReference/API_GetCredentials.html](https://docs.aws.amazon.com//redshift-serverless/latest/APIReference/API_GetCredentials.html) API operation.
+ If you prefer logging in with IAM, use the Amazon Redshift Serverless [`GetCredentials`](https://docs.aws.amazon.com//redshift-serverless/latest/APIReference/API_GetCredentials.html) API operation.
 
 To use IAM authentication, add `iam:` to the Amazon Redshift JDBC URL following `jdbc:redshift:`, as shown in the following example.
 
@@ -144,9 +144,9 @@ Driver={Amazon Redshift ODBC Driver (x64)}; IAM=true; Server=<{{workgroup-name}}
 <a name="serverless-migration-drivers-iam-dbuser-group"></a>
 
 **Note**
-When connecting to Amazon Redshift Serverless, we recommend that you use the [https://docs.aws.amazon.com//redshift-serverless/latest/APIReference/API_GetCredentials.html](https://docs.aws.amazon.com//redshift-serverless/latest/APIReference/API_GetCredentials.html) API. This API offers comprehensive role-based access control (RBAC) functionality as well as other new features that aren't available in `GetClusterCredentials`. We support the `GetClusterCredentials` API to simplify the transition from provisioned clusters to serverless workgroups, but we strongly recommend migrating to using `GetCredentials` as soon as possible for optimal compatibility.
+When connecting to Amazon Redshift Serverless, we recommend that you use the [`GetCredentials`](https://docs.aws.amazon.com//redshift-serverless/latest/APIReference/API_GetCredentials.html) API. This API offers comprehensive role-based access control (RBAC) functionality as well as other new features that aren't available in `GetClusterCredentials`. We support the `GetClusterCredentials` API to simplify the transition from provisioned clusters to serverless workgroups, but we strongly recommend migrating to using `GetCredentials` as soon as possible for optimal compatibility.
 
-You can establish a connection to Amazon Redshift Serverless using the [https://docs.aws.amazon.com//redshift/latest/APIReference/API_GetClusterCredentials.html](https://docs.aws.amazon.com//redshift/latest/APIReference/API_GetClusterCredentials.html) API. To implement this authentication method, modify your client or application by incorporating the following parameters:
+You can establish a connection to Amazon Redshift Serverless using the [`GetClusterCredentials`](https://docs.aws.amazon.com//redshift/latest/APIReference/API_GetClusterCredentials.html) API. To implement this authentication method, modify your client or application by incorporating the following parameters:
 +  `iam=true`
 +  `clusterid/cluster_identifier=redshift-serverless-<{{workgroup-name}}>`
 +  `region=<{{aws-region}}>`

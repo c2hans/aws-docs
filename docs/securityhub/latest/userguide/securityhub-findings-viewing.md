@@ -24,7 +24,7 @@ The **Compliance** row expands to show more details. For example, if a control i
 
 **Resources tab**
 This tab provides details about the resources involved in a finding. If you're signed in to the account that owns a resource, you can review the resource in the applicable AWS service console. If you're not the owner of a resource, this tab displays the AWS account ID for the owner.
-The **Details** row shows resource-specific details in a finding. It shows the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ResourceDetails.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ResourceDetails.html) section of the finding in JSON format.
+The **Details** row shows resource-specific details in a finding. It shows the [ResourceDetails](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ResourceDetails.html) section of the finding in JSON format.
 The **Tags** row shows tag keys and values that are assigned to the resources involved in a finding. Resources that are [supported by the GetResources operation](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/supported-services.html) of the AWS Resource Groups Tagging API can be tagged. Security Hub CSPM calls this operation by using a [service-linked role](using-service-linked-roles.md) when processing new or updated findings, and retrieves the resource tags if the AWS Security Finding Format (ASFF) `Resource.Id` field is populated with the ARN of a resource. Security Hub CSPM ignores invalid resource IDs. For more information about the inclusion of resource tags in findings, see [Tags](asff-resources-attributes.md#asff-resources-tags).
 
 **History tab**
@@ -33,10 +33,10 @@ For active findings, finding history is available for up to 90 days. For archive
 If you're signed in to a Security Hub CSPM administrator account, finding history is for the administrator account and all member accounts.
 
 **Threat tab**
-This tab includes data from the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Action.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Action.html), [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Malware.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Malware.html), and [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Process.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Process.html) objects of the ASFF, including the type of threat and whether a resource is the target or actor. These details typically apply to findings that originate in Amazon GuardDuty.
+This tab includes data from the [Action](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Action.html), [Malware](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Malware.html), and [ProcessDetails](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Process.html) objects of the ASFF, including the type of threat and whether a resource is the target or actor. These details typically apply to findings that originate in Amazon GuardDuty.
 
 **Vulnerabilities tab**
-This tab displays data from the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Vulnerability.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Vulnerability.html) object of the ASFF, including whether there are exploits or available fixes associated with a finding. These details typically apply to findings that originate in Amazon Inspector.
+This tab displays data from the [Vulnerability](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Vulnerability.html) object of the ASFF, including whether there are exploits or available fixes associated with a finding. These details typically apply to findings that originate in Amazon Inspector.
 
 The rows on each tab include a copy or filter option. For example, if you open the panel for a finding that has a workflow status of **Notified**, you can choose the filter option next to the **Workflow status** row. If you choose **Show all findings with this value**, Security Hub CSPM filters the findings table and displays only findings with the same workflow status.
 
@@ -73,7 +73,7 @@ If you integrate with AWS Organizations and you're signed in to a member account
 ------
 #### [ Security Hub CSPM API ]
 
-Use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindings.html) operation of the Security Hub CSPM API, or if you're using the AWS CLI, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-findings.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-findings.html) command. You can provide one or more values for the `Filters` parameter to narrow the findings to retrieve.
+Use the [GetFindings](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindings.html) operation of the Security Hub CSPM API, or if you're using the AWS CLI, run the [get-findings](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-findings.html) command. You can provide one or more values for the `Filters` parameter to narrow the findings to retrieve.
 
 If the volume of results is too large, you can use the `MaxResults` parameter to limit the findings to a specified number and the `NextToken` parameter to paginate findings. Use the `SortCriteria` parameter to sort the findings by a specific field.
 
@@ -84,7 +84,7 @@ $ aws securityhub get-findings \
 --filters '{"GeneratorId":[{"Value": "{{aws-foundational}}","Comparison":"{{PREFIX}}"}],"WorkflowStatus": [{"Value": "{{NEW}}","Comparison":"{{EQUALS}}"}],"Confidence": [{"Gte": {{85}}}]}' --sort-criteria '{"Field": "{{LastObservedAt}}","SortOrder": "{{desc}}"}' --page-size {{5}} --max-items {{100}}
 ```
 
-To review finding history, use the [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_GetFindingHistory.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_GetFindingHistory.html) operation. If you're using the AWS CLI, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-finding-history.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-finding-history.html) command. Identify the finding that you want to get history for with the `ProductArn` and `Id` fields. For information about these fields, see [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecurityFindingIdentifier.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecurityFindingIdentifier.html). Each request can retrieve the history for only one finding.
+To review finding history, use the [GetFindingHistory](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_GetFindingHistory.html) operation. If you're using the AWS CLI, run the [get-finding-history](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-finding-history.html) command. Identify the finding that you want to get history for with the `ProductArn` and `Id` fields. For information about these fields, see [AwsSecurityFindingIdentifier](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecurityFindingIdentifier.html). Each request can retrieve the history for only one finding.
 
 For example, the following AWS CLI command retrieves the history for the specified finding. This example is formatted for Linux, macOS, or Unix, and it uses the backslash (\\) line-continuation character to improve readability.
 

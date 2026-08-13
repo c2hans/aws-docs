@@ -34,7 +34,7 @@ You can also subscribe to notifications by watching the [SSM Agent Release Notes
 
    1. Choose **Create subscription**.
 
-1. If you chose `Email`, you will receive an email message asking you to confirm your subscription. Open the message, and follow the directions to complete your subscription.
+1. If you chose `Email`, you receive an email message asking you to confirm your subscription. Open the message, and follow the directions to complete your subscription.
 
 Whenever a new version of SSM Agent is released, we send notifications to subscribers. If you no longer want to receive these notifications, use the following procedure to unsubscribe.
 

@@ -87,7 +87,7 @@ After you have purchased reserved DB instances, you can get information about yo
 You can use the AWS CLI to work with reserved DB instances as shown in the following examples.
 
 **Example of getting available reserved DB instance offerings**
-To get information about available reserved DB instance offerings, call the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-reserved-db-instances-offerings.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-reserved-db-instances-offerings.html).
+To get information about available reserved DB instance offerings, call the AWS CLI command [`describe-reserved-db-instances-offerings`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-reserved-db-instances-offerings.html).
 
 ```
 aws rds describe-reserved-db-instances-offerings
@@ -109,7 +109,7 @@ This call returns output similar to the following:
 
 After you have information about the available reserved DB instance offerings, you can use the information to purchase an offering.
 
-To purchase a reserved DB instance, use the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/purchase-reserved-db-instances-offering.html](https://docs.aws.amazon.com/cli/latest/reference/rds/purchase-reserved-db-instances-offering.html) with the following parameters:
+To purchase a reserved DB instance, use the AWS CLI command [`purchase-reserved-db-instances-offering`](https://docs.aws.amazon.com/cli/latest/reference/rds/purchase-reserved-db-instances-offering.html) with the following parameters:
 + `--reserved-db-instances-offering-id` – The ID of the offering that you want to purchase. See the preceding example to get the offering ID.
 + `--reserved-db-instance-id` – You can assign your own identifier to the reserved DB instances that you purchase to help track them.
 
@@ -138,7 +138,7 @@ The command returns output similar to the following:
 
 After you have purchased reserved DB instances, you can get information about your reserved DB instances.
 
-To get information about reserved DB instances for your AWS account, call the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-reserved-db-instances.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-reserved-db-instances.html), as shown in the following example.
+To get information about reserved DB instances for your AWS account, call the AWS CLI command [`describe-reserved-db-instances`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-reserved-db-instances.html), as shown in the following example.
 
 **Example of getting your reserved DB instances**
 
@@ -156,8 +156,8 @@ The command returns output similar to the following:
 <a name="USER_WorkingWithReservedDBInstances.API"></a>
 
 You can use the RDS API to work with reserved DB instances:
-+ To get information about available reserved DB instance offerings, call the Amazon RDS API operation [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeReservedDBInstancesOfferings.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeReservedDBInstancesOfferings.html).
-+ After you have information about the available reserved DB instance offerings, you can use the information to purchase an offering. Call the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_PurchaseReservedDBInstancesOffering.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_PurchaseReservedDBInstancesOffering.html) RDS API operation with the following parameters:
++ To get information about available reserved DB instance offerings, call the Amazon RDS API operation [`DescribeReservedDBInstancesOfferings`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeReservedDBInstancesOfferings.html).
++ After you have information about the available reserved DB instance offerings, you can use the information to purchase an offering. Call the [`PurchaseReservedDBInstancesOffering`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_PurchaseReservedDBInstancesOffering.html) RDS API operation with the following parameters:
   + `--reserved-db-instances-offering-id` – The ID of the offering that you want to purchase.
   + `--reserved-db-instance-id` – You can assign your own identifier to the reserved DB instances that you purchase to help track them.
-+ After you have purchased reserved DB instances, you can get information about your reserved DB instances. Call the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeReservedDBInstances.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeReservedDBInstances.html) RDS API operation.
++ After you have purchased reserved DB instances, you can get information about your reserved DB instances. Call the [`DescribeReservedDBInstances`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeReservedDBInstances.html) RDS API operation.

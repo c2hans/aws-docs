@@ -55,7 +55,7 @@ To see the current bandwidth settings for your instance, select one of the tabs 
 #### [ AWS CLI ]
 
 **To get the bandwidth setting for an instance**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command.
+Use the [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command.
 
 ```
 aws ec2 describe-instances \

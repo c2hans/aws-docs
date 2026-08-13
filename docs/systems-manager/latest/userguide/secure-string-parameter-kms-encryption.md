@@ -7,9 +7,9 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/secure-
 # AWS KMS encryption for AWS Systems Manager Parameter Store SecureString parameters
 <a name="secure-string-parameter-kms-encryption"></a>
 
-With AWS Systems Manager Parameter Store, you can create [SecureString parameters](https://docs.aws.amazon.com//systems-manager/latest/userguide/systems-manager-parameter-store.html#what-is-a-parameter), which are parameters that have a plaintext parameter name and an encrypted parameter value. Parameter Store uses AWS KMS to encrypt and decrypt the parameter values of `SecureString` parameters.
+With AWS Systems Manager Parameter Store, you can create [SecureString parameters](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html#what-is-a-parameter), which are parameters that have a plaintext parameter name and an encrypted parameter value. Parameter Store uses AWS KMS to encrypt and decrypt the parameter values of `SecureString` parameters.
 
-With Parameter Store, you can create, store, and manage data as parameters with values. You can create a parameter in Parameter Store and use it in multiple applications and services subject to policies and permissions that you design. When you need to change a parameter value, you change one instance, rather than managing error-prone changes to numerous sources. Parameter Store supports a hierarchical structure for parameter names, so you can qualify a parameter for specific uses.
+With Parameter Store, you can create, store, and manage data as parameters with values. You can create a parameter in Parameter Store and use it in multiple applications and services subject to policies and permissions that you design. When you need to change a parameter value, you change one instance, rather than managing error-prone changes to numerous sources. Parameter Store supports a hierarchical structure for parameter names. You can then qualify a parameter for specific uses.
 
 To manage sensitive data, you can create `SecureString` parameters. Parameter Store uses AWS KMS keys to encrypt the parameter values of `SecureString` parameters when you create or change them. It also uses KMS keys to decrypt the parameter values when you access them. You can use the [AWS managed key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-managed-cmk) that Parameter Store creates for your account or specify your own [customer managed key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-cmk).
 
@@ -17,13 +17,6 @@ To manage sensitive data, you can create `SecureString` parameters. Parameter St
 Parameter Store supports only [symmetric KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/symm-asymm-choose-key-spec.html#symmetric-cmks). You cannot use an [asymmetric KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/symmetric-asymmetric.html) to encrypt your parameters. For help determining whether a KMS key is symmetric or asymmetric, see [Identify different key types](https://docs.aws.amazon.com/kms/latest/developerguide/identify-key-types.html) in the *AWS Key Management Service Developer Guide*.
 
 Parameter Store supports two tiers of `SecureString` parameters: *standard* and *advanced*. Standard parameters, which cannot exceed 4096 bytes, are encrypted and decrypted directly under the KMS key that you specify. To encrypt and decrypt advanced `SecureString` parameters, Parameter Store uses envelope encryption with the [AWS Encryption SDK](https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/). You can convert a standard `SecureString` parameter to an advanced parameter, but you cannot convert an advanced parameter to a standard one. For more information about the difference between standard and advanced `SecureString` parameters, see [Choosing parameter tiers in Parameter Store](parameter-store-advanced-parameters.md).
-
-**Topics**
-+ [Protecting standard SecureString parameters](#kms-encryption-securestring-standard)
-+ [Protecting advanced SecureString parameters](#kms-encryption-securestring-advanced)
-+ [Setting permissions to encrypt and decrypt parameter values](#parameter-policy-kms-encryption)
-+ [Parameter Store encryption context](#parameter-store-kms-encryption-context)
-+ [Troubleshooting KMS key issues in Parameter Store](#parameter-store-kms-cmk-troubleshooting)
 
 ## Protecting standard SecureString parameters
 <a name="kms-encryption-securestring-standard"></a>
@@ -52,7 +45,7 @@ aws ssm put-parameter \
     --type SecureString
 ```
 
-The following similar example uses the `--key-id` parameter to specify a [customer managed key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-cmk). The example uses a KMS key ID to identify the KMS key, but you can use any valid KMS key identifier. Because the command omits the `Tier` parameter (`--tier`), Parameter Store creates a standard `SecureString` parameter, not an advanced one.
+The following similar example uses the `--key-id` parameter to specify a [customer managed key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-cmk). The example uses a KMS key ID to identify the KMS key. However, you can use any valid KMS key identifier. Because the command omits the `Tier` parameter (`--tier`), Parameter Store creates a standard `SecureString` parameter, not an advanced one.
 
 ```
 aws ssm put-parameter \
@@ -136,7 +129,7 @@ aws ssm put-parameter \
     --tier Advanced
 ```
 
-The following similar example uses the `--key-id` parameter to specify a [customer managed key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-cmk). The example uses the Amazon Resource Name (ARN) of the KMS key, but you can use any valid KMS key identifier.
+The following similar example uses the `--key-id` parameter to specify a [customer managed key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-cmk). The example uses the Amazon Resource Name (ARN) of the KMS key. However, you can use any valid KMS key identifier.
 
 ```
 aws ssm put-parameter \
@@ -183,7 +176,7 @@ aws ssm get-parameter \
 }
 ```
 
-You cannot convert an advanced `SecureString` parameter to a standard one, but you can convert a standard `SecureString` to an advanced one. To convert a standard `SecureString` parameter to an advanced `SecureString`, use the `PutParameter` operation with the `Overwrite` parameter. The `Type` must be `SecureString` and the `Tier` value must be `Advanced`. The `KeyId` parameter, which identifies a customer managed key, is optional. If you omit it, Parameter Store uses the AWS managed key for the account. You can specify any KMS key that the principal has permission to use, even if you used a different KMS key to encrypt the standard parameter.
+You cannot convert an advanced `SecureString` parameter to a standard one. However, you can convert a standard `SecureString` to an advanced one. To convert a standard `SecureString` parameter to an advanced `SecureString`, use the `PutParameter` operation with the `Overwrite` parameter. The `Type` must be `SecureString` and the `Tier` value must be `Advanced`. The `KeyId` parameter, which identifies a customer managed key is optional. If you omit it, Parameter Store uses the AWS managed key for the account. You can specify any KMS key that the principal has permission to use, even if you used a different KMS key to encrypt the standard parameter.
 
 When you use the `Overwrite` parameter, Parameter Store uses the AWS Encryption SDK to encrypt the parameter value. Then it stores the newly encrypted message in Parameter Store.
 

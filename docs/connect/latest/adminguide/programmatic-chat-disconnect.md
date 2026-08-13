@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/programmatic-chat-disconnect.html
 ---
 
-# Programmatically disconnect the chat session of an Connect Customer communication widget
+# Programmatically disconnect the chat session of a Connect Customer communication widget
 <a name="programmatic-chat-disconnect"></a>
 
 You can disconnect the chat session of a communication widget programmatically using 'JavaScript by calling the `disconnect` method stored to the widget's `iframe`. From the widget's host document, you can reference the `disconnect` function using the following code snippet:

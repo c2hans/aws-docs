@@ -248,7 +248,7 @@ When a member account with an AWS Organizations organization trail is not sendin
 
 To check whether a trail's SNS topic policy has an authorization failure:
 + From the CloudTrail console, check the trail's details page. If there's an authorization failure, the details page includes a warning `SNS authorization failed` and indicates to fix the SNS topic policy.
-+ From the AWS CLI, run the [https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-trail-status.html](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-trail-status.html) command. If there's an authorization failure, the command output includes the `LastNotificationError` field with a value of `AuthorizationError`.
++ From the AWS CLI, run the [get-trail-status](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-trail-status.html) command. If there's an authorization failure, the command output includes the `LastNotificationError` field with a value of `AuthorizationError`.
 
 ## Additional resources
 <a name="cloudtrail-notifications-more-info-5"></a>

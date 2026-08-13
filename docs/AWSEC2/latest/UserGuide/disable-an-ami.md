@@ -29,7 +29,7 @@ Disabling an AMI removes all its launch permissions.
 **When an AMI is disabled:**
 + The AMI's state changes to `disabled`.
 + A disabled AMI can't be shared. If an AMI was public or previously shared, it is made private. If an AMI was shared with an AWS account, organization, or Organizational Unit, they lose access to the disabled AMI.
-+ A disabled AMI does not appear in [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeImages.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeImages.html) API calls by default.
++ A disabled AMI does not appear in [DescribeImages](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeImages.html) API calls by default.
 + A disabled AMI does not appear under the **Owned by me** console filter. To find disabled AMIs, use the **Disabled images** console filter.
 + A disabled AMI is not available to select for instance launches in the EC2 console. For example, a disabled AMI does not appear in the AMI catalog in the launch instance wizard or when creating a launch template.
 + Launch services, such as launch templates and Auto Scaling groups, can continue to reference disabled AMIs. Subsequent instance launches from a disabled AMI will fail, so we recommend updating launch templates and Auto Scaling groups to reference available AMIs only.
@@ -82,7 +82,7 @@ You can disable an AMI by using the EC2 console or the AWS Command Line Interfac
 #### [ AWS CLI ]
 
 **To disable an AMI**
-Use the following [https://docs.aws.amazon.com/cli/latest/reference/ec2/disable-image.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/disable-image.html) command.
+Use the following [disable-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/disable-image.html) command.
 
 ```
 aws ec2 disable-image --image-id {{ami-0abcdef1234567890}}
@@ -125,7 +125,7 @@ You must be the AMI owner to view disabled AMIs. Because disabled AMIs are made 
 By default, when you describe all AMIs, the disabled AMIs are not included in the results. To include disabled AMIs in the results, specify the `--include-disabled` option. The `State` field for an AMI is `disabled` if the AMI is disabled.
 
 **To include disabled AMIs when describing all AMIs for an account**
-Use the following [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command.
+Use the following [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command.
 
 ```
 aws ec2 describe-images \
@@ -134,7 +134,7 @@ aws ec2 describe-images \
 ```
 
 **To list the disabled AMIs for your account**
-Use the following [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command.
+Use the following [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command.
 
 ```
 aws ec2 describe-images \
@@ -152,7 +152,7 @@ ami-0abcdef1234567890
 ```
 
 **To describe the status of an AMI**
-Use the following [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command. If `DeprecationTime` is not present in the output, the AMI is not deprecated or set to deprecate at a future date.
+Use the following [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command. If `DeprecationTime` is not present in the output, the AMI is not deprecated or set to deprecate at a future date.
 
 ```
 aws ec2 describe-images \
@@ -226,7 +226,7 @@ You can re-enable a disabled AMI. You must be the AMI owner to perform this proc
 #### [ AWS CLI ]
 
 **To re-enable a disabled AMI**
-Use the following [https://docs.aws.amazon.com/cli/latest/reference/ec2/enable-image.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/enable-image.html) command.
+Use the following [enable-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/enable-image.html) command.
 
 ```
 aws ec2 enable-image --image-id {{ami-0abcdef1234567890}}

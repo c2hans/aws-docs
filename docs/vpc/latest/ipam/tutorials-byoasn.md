@@ -189,3 +189,8 @@ The tutorial is complete.
 Cleanup is complete.
 
 ------
+
+## Next steps
+<a name="tutorials-byoasn-next-steps"></a>
+
+To automate ROA management for your ASN and IP prefixes, see [Monitor BGP route protection](monitor-bgp-route-security.md).

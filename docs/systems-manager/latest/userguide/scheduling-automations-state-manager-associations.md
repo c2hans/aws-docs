@@ -20,7 +20,7 @@ Use the following procedures to create a State Manager association that runs an 
 
 **Before you begin**
 Be aware of the following important details before you run an automation by using State Manager:
-+ Before you can create an association that uses a runbook, verify that you configured permissions for Automation, a tool in AWS Systems Manager. For more information, see [Setting up Automation](automation-setup.md).
++ Before you can create an association that uses a runbook, verify that you configured permissions for Automation. For more information, see [Setting up Automation](automation-setup.md).
 + State Manager associations that use runbooks contribute to the maximum number of concurrently running automations in your AWS account. You can have a maximum of 100 concurrent automations running. For information, see [Systems Manager service quotas](https://docs.aws.amazon.com/general/latest/gr/ssm.html#limits_ssm) in the *Amazon Web Services General Reference*.
 + When running an automation, State Manager does not log the API operations initiated by the automation in AWS CloudTrail.
 + Systems Manager automatically creates a service-linked role so that State Manager has permission to call Systems Manager Automation API operations. If you want, you can create the service-linked role yourself by running the following command from the AWS CLI or AWS Tools for PowerShell.
@@ -93,7 +93,7 @@ You must specify a role ARN in the **AutomationAssumeRole** field. State Manager
 
 1. In the **Specify schedule** section, choose **On Schedule** if you want to run the association at regular intervals. If you choose this option, then use the options provided to create the schedule using Cron or Rate expressions. For more information about Cron and Rate expressions for State Manager, see [Cron and rate expressions for associations](reference-cron-and-rate-expressions.md#reference-cron-and-rate-expressions-association).
 **Note**
-Rate expressions are the preferred scheduling mechanism for State Manager associations that use runbooks. Rate expressions allow more flexibility for running associations in the event that you reach the maximum number of concurrently running automations. With a rate schedule, Systems Manager can retry the automation shortly after receiving notification that concurrent automations have reached their maximum and have been throttled.
+Rate expressions are the preferred scheduling mechanism for State Manager associations that use runbooks. Rate expressions allow more flexibility for running associations if you reach the maximum number of concurrently running automations. With a rate schedule, Systems Manager can retry the automation shortly after receiving notification that concurrent automations have reached their maximum and have been throttled.
 
    Choose **No schedule** if you want to run the association one time.
 
@@ -119,7 +119,7 @@ When you create an association, the association immediately runs against the spe
 The following procedure describes how to use the AWS CLI (on Linux or Windows Server) or AWS Tools for PowerShell to create a State Manager association that runs an automation.
 
 **Before you begin**
-Before you complete the following procedure, make sure you have created an IAM service role that contains the permissions necessary to run the runbook, and configured a trust relationship for Automation, a tool in AWS Systems Manager. For more information, see [Task 1: Create a service role for Automation](automation-setup-iam.md#create-service-role).
+Before you complete the following procedure, make sure you have created an IAM service role that contains the permissions necessary to run the runbook, and configured a trust relationship for Automation. For more information, see [Task 1: Create a service role for Automation](automation-setup-iam.md#create-service-role).
 
 **To create an association that runs an automation**
 

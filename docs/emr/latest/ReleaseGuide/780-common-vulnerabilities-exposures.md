@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/780-common-vulne
 
 The following table lists all CVEs that don't impact EMR clusters that run on recommended configurations of Amazon EMR 7.8.0. Amazon EMR is dependent on upstream open-source for availability of fixes and will provide the latest stable version as part of the Core Engine components within 90 days of Amazon EMR verifying the fixes.
 
-This table was updated on July 20, 2026.
+This table was updated on August 6, 2026.
 
 | CVE ID | Severity | CVE details URL |
 | --- | --- | --- |
@@ -140,6 +140,7 @@ This table was updated on July 20, 2026.
 | CVE-2025-24970 | HIGH | [https://nvd.nist.gov/vuln/detail/CVE-2025-24970](https://nvd.nist.gov/vuln/detail/CVE-2025-24970) |
 | CVE-2025-27817 | HIGH | [https://nvd.nist.gov/vuln/detail/CVE-2025-27817](https://nvd.nist.gov/vuln/detail/CVE-2025-27817) |
 | CVE-2025-48734 | HIGH | [https://nvd.nist.gov/vuln/detail/CVE-2025-48734](https://nvd.nist.gov/vuln/detail/CVE-2025-48734) |
+| CVE-2026-34478 | HIGH | [https://nvd.nist.gov/vuln/detail/CVE-2026-34478](https://nvd.nist.gov/vuln/detail/CVE-2026-34478) |
 | CVE-2026-34480 | HIGH | [https://nvd.nist.gov/vuln/detail/CVE-2026-34480](https://nvd.nist.gov/vuln/detail/CVE-2026-34480) |
 | CVE-2012-5783 | MEDIUM | [https://nvd.nist.gov/vuln/detail/CVE-2012-5783](https://nvd.nist.gov/vuln/detail/CVE-2012-5783) |
 | CVE-2012-6153 | MEDIUM | [https://nvd.nist.gov/vuln/detail/CVE-2012-6153](https://nvd.nist.gov/vuln/detail/CVE-2012-6153) |

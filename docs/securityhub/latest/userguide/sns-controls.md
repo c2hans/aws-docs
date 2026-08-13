@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon Simple Notification Ser
 
 **Resource type:** `AWS::SNS::Topic`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sns-encrypted-kms.html](https://docs.aws.amazon.com/config/latest/developerguide/sns-encrypted-kms.html)
+**AWS Config rule:** [`sns-encrypted-kms`](https://docs.aws.amazon.com/config/latest/developerguide/sns-encrypted-kms.html)
 
 **Schedule type:** Change triggered
 
@@ -47,7 +47,7 @@ Security Hub CSPM retired this control in April 2024. For more information, see 
 
 **Resource type:** `AWS::SNS::Topic`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sns-topic-message-delivery-notification-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/sns-topic-message-delivery-notification-enabled.html)
+**AWS Config rule:** [`sns-topic-message-delivery-notification-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/sns-topic-message-delivery-notification-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -105,7 +105,7 @@ To add tags to an SNS topic, see [Configuring Amazon SNS topic tags](https://doc
 
 **Resource type:** `AWS::SNS::Topic`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/sns-topic-no-public-access.html](https://docs.aws.amazon.com/config/latest/developerguide/sns-topic-no-public-access.html)
+**AWS Config rule:** [sns-topic-no-public-access](https://docs.aws.amazon.com/config/latest/developerguide/sns-topic-no-public-access.html)
 
 **Schedule type:** Change triggered
 

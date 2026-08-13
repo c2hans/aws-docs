@@ -36,7 +36,7 @@ For more information about the permissions to S3 API operations by S3 resource t
 ## Using the AWS CLI
 <a name="object-ownership-retrieving-cli"></a>
 
-To retrieve the S3 Object Ownership setting for an S3 bucket, use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-ownership-controls.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-ownership-controls.html) AWS CLI command.
+To retrieve the S3 Object Ownership setting for an S3 bucket, use the [get-bucket-ownership-controls](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-ownership-controls.html) AWS CLI command.
 
 ```
 aws s3api get-bucket-ownership-controls --bucket {{amzn-s3-demo-bucket}}
@@ -45,4 +45,4 @@ aws s3api get-bucket-ownership-controls --bucket {{amzn-s3-demo-bucket}}
 ## Using the REST API
 <a name="object-ownership-retrieving-rest-api"></a>
 
-To retrieve the Object Ownership setting for an S3 bucket, use the `GetBucketOwnershipControls` API operation. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketOwnershipControls.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketOwnershipControls.html).
+To retrieve the Object Ownership setting for an S3 bucket, use the `GetBucketOwnershipControls` API operation. For more information, see [GetBucketOwnershipControls](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketOwnershipControls.html).

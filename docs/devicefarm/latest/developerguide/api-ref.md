@@ -19,7 +19,7 @@ The following examples show how to create an upload on Device Farm using the AWS
 + Your test
 + Your [test spec file](custom-test-environment-test-spec.md)
 
-Uploads are created using the [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateUpload.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateUpload.html) API. This API returns an S3 presigned URL that you can push your upload to using an HTTP PUT request. The URL expires after 24 hours.
+Uploads are created using the [`CreateUpload`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateUpload.html) API. This API returns an S3 presigned URL that you can push your upload to using an HTTP PUT request. The URL expires after 24 hours.
 
 ------
 #### [ AWS CLI ]
@@ -44,7 +44,7 @@ This will show output such as the following:
 }
 ```
 
-Then, do the following to create your upload and push it to Device Farm. In this example, we'll be creating an Android app upload using a local APK file. For more upload type information, including details about iOS app upload types, please see our API documentation for creating an [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Upload.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Upload.html).
+Then, do the following to create your upload and push it to Device Farm. In this example, we'll be creating an Android app upload using a local APK file. For more upload type information, including details about iOS app upload types, please see our API documentation for creating an [`Upload`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Upload.html).
 
 ```
 $ export APP_PATH="/local/path/to/my_sample_app.apk"
@@ -129,7 +129,7 @@ print(resp)
 # }
 ```
 
-Then, do the following to create your upload and push it to Device Farm. In this example, we'll be creating an Android app upload using a local APK file. For more upload type information, including details about iOS app upload types, please see our API documentation for creating an [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Upload.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Upload.html).
+Then, do the following to create your upload and push it to Device Farm. In this example, we'll be creating an Android app upload using a local APK file. For more upload type information, including details about iOS app upload types, please see our API documentation for creating an [`Upload`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Upload.html).
 
 ```
 import os
@@ -216,7 +216,7 @@ try (DeviceFarmClient client = DeviceFarmClient.builder()
 }
 ```
 
-Then, do the following to create your upload and push it to Device Farm. In this example, we'll be creating an Android app upload using a local APK file. For more upload type information, including details about iOS app upload types, please see our API documentation for creating an [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Upload.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Upload.html).
+Then, do the following to create your upload and push it to Device Farm. In this example, we'll be creating an Android app upload using a local APK file. For more upload type information, including details about iOS app upload types, please see our API documentation for creating an [`Upload`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Upload.html).
 
 ```
 import java.io.IOException;
@@ -336,7 +336,7 @@ console.log(resp);
 // { project: { name: 'MyProjectName', arn: 'arn:aws:devicefarm:us-west-2:123456789101:project:5e01a8c7-...', created: 1535675814.414 } }
 ```
 
-Then, do the following to create your upload and push it to Device Farm. In this example, we'll be creating an Android app upload using a local APK file. For more upload type information, including details about iOS app upload types, please see our API documentation for creating an [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Upload.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Upload.html).
+Then, do the following to create your upload and push it to Device Farm. In this example, we'll be creating an Android app upload using a local APK file. For more upload type information, including details about iOS app upload types, please see our API documentation for creating an [`Upload`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Upload.html).
 
 ```
 import { DeviceFarmClient, CreateUploadCommand, GetUploadCommand } from "@aws-sdk/client-device-farm";
@@ -411,7 +411,7 @@ Console.WriteLine(resp.Project);
 // { Name = MyProjectName, Arn = arn:aws:devicefarm:us-west-2:123456789101:project:5e01a8c7-..., Created = ... }
 ```
 
-Then, do the following to create your upload and push it to Device Farm. In this example, we'll be creating an Android app upload using a local APK file. For more upload type information, including details about iOS app upload types, please see our API documentation for creating an [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Upload.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Upload.html).
+Then, do the following to create your upload and push it to Device Farm. In this example, we'll be creating an Android app upload using a local APK file. For more upload type information, including details about iOS app upload types, please see our API documentation for creating an [`Upload`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Upload.html).
 
 ```
 using System;
@@ -500,7 +500,7 @@ puts resp.project.inspect
 # #<struct Aws::DeviceFarm::Types::Project name="MyProjectName", arn="arn:aws:devicefarm:us-west-2:123456789101:project:5e01a8c7-...", created=1535675814.414>
 ```
 
-Then, do the following to create your upload and push it to Device Farm. In this example, we'll be creating an Android app upload using a local APK file. For more upload type information, including details about iOS app upload types, please see our API documentation for creating an [https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Upload.html](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Upload.html).
+Then, do the following to create your upload and push it to Device Farm. In this example, we'll be creating an Android app upload using a local APK file. For more upload type information, including details about iOS app upload types, please see our API documentation for creating an [`Upload`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Upload.html).
 
 ```
 require "aws-sdk-devicefarm"

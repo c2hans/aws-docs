@@ -18,7 +18,7 @@ For more information, see [Monitoring Amazon SNS topics using CloudWatch](sns-mo
 Amazon SQS is a fully managed message queuing service that enables secure, durable, and scalable communication between distributed software components. It helps decouple application architecture by buffering messages, ensuring reliable delivery, and preventing system failures due to message loss. Amazon SQS integrates with Amazon SNS in the following ways:
 + [**Dead-letter queues**](sns-dead-letter-queues.md) – Amazon SNS can route undeliverable messages to an Amazon SQS dead-letter queue for troubleshooting and reprocessing.
 + [**Topic subscriptions**](sns-sqs-as-subscriber.md) – You can subscribe an Amazon SQS queue to an Amazon SNS topic, allowing Amazon SNS to fan out messages to multiple consumers using Amazon SQS.
-+ [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-fifo-queues.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-fifo-queues.html) – Amazon SQS FIFO queues can be subscribed to Amazon SNS FIFO topics, ensuring strict message ordering and exactly-once processing. [Standard Amazon SQS queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues.html) can also subscribe to Amazon SNS topics but do not guarantee ordered message delivery or deduplication.
++ [**FIFO queue support**](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-fifo-queues.html) – Amazon SQS FIFO queues can be subscribed to Amazon SNS FIFO topics, ensuring strict message ordering and exactly-once processing. [Standard Amazon SQS queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues.html) can also subscribe to Amazon SNS topics but do not guarantee ordered message delivery or deduplication.
 
 **CloudFormation**
 CloudFormation automates the provisioning and management of AWS resources, including Amazon SNS topics and subscriptions, using infrastructure as code (IaC). With CloudFormation, you can:
@@ -37,8 +37,8 @@ For more information, see the [Logging AWS SNS API calls using AWS CloudTrail](l
 **AWS Lambda**
 AWS Lambda is a serverless compute service that automatically runs your code in response to events, eliminating the need to provision or manage servers. It allows you to build event-driven applications that scale automatically and execute in a highly available compute environment.
 Amazon SNS integrates with Lambda by allowing you to subscribe a Lambda function to an Amazon SNS topic. When an Amazon SNS topic receives a message, it can trigger the Lambda function, enabling real-time processing, automation, and application logic execution. This integration is commonly used for:
-+ [https://docs.aws.amazon.com/lambda/latest/dg/concepts-event-driven-architectures.html](https://docs.aws.amazon.com/lambda/latest/dg/concepts-event-driven-architectures.html) – Automatically trigger functions in response to Amazon SNS messages.
-+ [https://docs.aws.amazon.com/lambda/latest/dg/concepts-event-driven-architectures.html](https://docs.aws.amazon.com/lambda/latest/dg/concepts-event-driven-architectures.html) – Modify or filter Amazon SNS messages before forwarding them to other services.
++ [**Event-driven processing**](https://docs.aws.amazon.com/lambda/latest/dg/concepts-event-driven-architectures.html) – Automatically trigger functions in response to Amazon SNS messages.
++ [**Data transformation**](https://docs.aws.amazon.com/lambda/latest/dg/concepts-event-driven-architectures.html) – Modify or filter Amazon SNS messages before forwarding them to other services.
 + **Automated workflows** – Process notifications for application alerts, system monitoring, or event orchestration.
 
 **AWS Identity and Access Management (IAM)**

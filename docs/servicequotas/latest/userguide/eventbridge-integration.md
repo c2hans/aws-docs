@@ -29,7 +29,7 @@ EventBridge routes events according to *rules* you create on the event bus. For 
 ## Service Quotas events
 <a name="eventbridge-service-events"></a>
 
-For a list of Service Quotas events sent to EventBridge, refer to the Service Quotas topic in the [https://docs.aws.amazon.com/eventbridge/latest/ref/welcome.html](https://docs.aws.amazon.com/eventbridge/latest/ref/welcome.html).
+For a list of Service Quotas events sent to EventBridge, refer to the Service Quotas topic in the [*EventBridge Events Reference*](https://docs.aws.amazon.com/eventbridge/latest/ref/welcome.html).
 
 ### Event structure
 <a name="eventbridge-event-structure"></a>

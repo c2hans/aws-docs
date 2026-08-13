@@ -262,7 +262,7 @@ This topic recommends best practices for your application to use environment sec
 ### Refreshing your environment variables
 <a name="AWSHowTo.secrets.rotating-secrets.refresh-env-vars"></a>
 
-To trigger your Elastic Beanstalk environment to refetch the latest values of the secrets from their secret stores, we recommend that you run either the `UpdateEnvironment` or `RestartAppServer` operation. You can run these operations using the Elastic Beanstalk console, the AWS CLI, or the Elastic Beanstalk API. For more information, see [https://docs.aws.amazon.com//cli/latest/userguide/cli_elastic-beanstalk_code_examples.html](https://docs.aws.amazon.com//cli/latest/userguide/cli_elastic-beanstalk_code_examples.html), or the [AWS Elastic Beanstalk API Reference](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/).
+To trigger your Elastic Beanstalk environment to refetch the latest values of the secrets from their secret stores, we recommend that you run either the `UpdateEnvironment` or `RestartAppServer` operation. You can run these operations using the Elastic Beanstalk console, the AWS CLI, or the Elastic Beanstalk API. For more information, see [*AWS CLI examples for Elastic Beanstalk*](https://docs.aws.amazon.com//cli/latest/userguide/cli_elastic-beanstalk_code_examples.html), or the [AWS Elastic Beanstalk API Reference](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/).
 
 ### Managing auto scaling effects on secret synchronization
 <a name="AWSHowTo.secrets.rotating-secrets.as-effects"></a>

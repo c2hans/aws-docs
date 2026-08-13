@@ -491,7 +491,7 @@ Default
 ### USE\_OPENSSL
 <a name="cmake-use-openssl"></a>
 
-If `ON`, the SDK builds using OpenSSL; otherwise, it uses [https://github.com/awslabs/aws-lc](https://github.com/awslabs/aws-lc). `AWS-LC` is a general-purpose cryptographic library maintained by the AWS Cryptography team for AWS and their customers. Turning `OFF` the parameter installs `AWS-LC` as replacement of OpenSSL in the system default directory. Don't use if you already have an OpenSSL installation in your system.
+If `ON`, the SDK builds using OpenSSL; otherwise, it uses [`awslabs/aws-lc`](https://github.com/awslabs/aws-lc). `AWS-LC` is a general-purpose cryptographic library maintained by the AWS Cryptography team for AWS and their customers. Turning `OFF` the parameter installs `AWS-LC` as replacement of OpenSSL in the system default directory. Don't use if you already have an OpenSSL installation in your system.
 
 Values
  *ON* \| *OFF*

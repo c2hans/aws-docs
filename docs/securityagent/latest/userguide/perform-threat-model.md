@@ -96,6 +96,9 @@ Select from repositories connected to your Agent Space (GitHub, GitHub Enterpris
 **Note**
 Only repositories connected to your Agent Space appear here. To add more repositories, ask your administrator to update the Agent Space configuration.
 
+**Tip**
+When you select a repository, you can specify a branch. By default, the service uses the primary branch. To use a different branch, enter the branch name in the field next to the repository.
+
 #### S3 sources
 <a name="_s3_sources"></a>
 

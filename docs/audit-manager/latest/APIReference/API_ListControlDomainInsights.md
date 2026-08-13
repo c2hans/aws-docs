@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Li
 
 Lists the latest analytics data for control domains across all of your active assessments.
 
-Audit Manager supports the control domains that are provided by AWS Control Catalog. For information about how to find a list of available control domains, see [https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListDomains.html](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListDomains.html) in the AWS Control Catalog API Reference.
+Audit Manager supports the control domains that are provided by AWS Control Catalog. For information about how to find a list of available control domains, see [`ListDomains`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListDomains.html) in the AWS Control Catalog API Reference.
 
 **Note**
 A control domain is listed only if at least one of the controls within that domain collected evidence on the `lastUpdated` date of `controlDomainInsights`. If this condition isn’t met, no data is listed for that control domain.

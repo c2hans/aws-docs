@@ -13,7 +13,7 @@ For more information about the EULA, see [Using standardized contracts in AWS Ma
 
 1. Open the AWS Marketplace Management Portal at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home), and then sign in to your seller account.
 
-1. Choose the [https://aws.amazon.com/marketplace/management/products/server](https://aws.amazon.com/marketplace/management/products/server) tab, on the **Current server product** tab, select the product that you want to modify.
+1. Choose the [**Server products**](https://aws.amazon.com/marketplace/management/products/server) tab, on the **Current server product** tab, select the product that you want to modify.
 
 1. From the **Request changes** dropdown, choose **Update end-user license agreement**.
 

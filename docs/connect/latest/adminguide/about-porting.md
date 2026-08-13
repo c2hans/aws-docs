@@ -9,7 +9,7 @@ The following steps are for a typical porting request. This process requires tim
 
 **Documentation requirements**: For a list of country-specific requirements for porting numbers, see [Region requirements for ordering and porting phone numbers in Connect Customer](phone-number-requirements.md).
 
-## Step 1: Create an Connect Customer support case
+## Step 1: Create a Connect Customer support case
 <a name="step1-porting"></a>
 
 **Important**
@@ -33,7 +33,7 @@ If you are porting multiple numbers from different carriers and countries, submi
    1. Under **Description**, include the following:
       + Connect Customer instance ARN. For instructions about how to find it, see [Find your Connect Customer instance ID or ARN](find-instance-arn.md).
 
-        If you provide the ARN for a development instance instead of a production instance, you can self-move the phone numbers across instances only if the instances are in the same Region and same AWS account. For limitations and instructions, see [Move an Connect Customer phone number across instances](move-phone-number-across-instances.md).
+        If you provide the ARN for a development instance instead of a production instance, you can self-move the phone numbers across instances only if the instances are in the same Region and same AWS account. For limitations and instructions, see [Move a Connect Customer phone number across instances](move-phone-number-across-instances.md).
       + Phone number. Use E.164 format for example: [\+][country code][phone number including area code].
 
         If you are porting more than one phone number, provide at least one of the phone numbers you are porting.

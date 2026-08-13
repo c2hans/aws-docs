@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 # How to specify an alternative patch source repository (Linux)
 <a name="patch-manager-alternative-source-repository"></a>
 
-When you use the default repositories configured on a managed node for patching operations, Patch Manager, a tool in AWS Systems Manager, scans for or installs security-related patches. This is the default behavior for Patch Manager. For complete information about how Patch Manager selects and installs security patches, see [How security patches are selected](patch-manager-selecting-patches.md).
+When you use the default repositories configured on a managed node for patching operations, Patch Manager scans for or installs security-related patches. This is the default behavior for Patch Manager. For complete information about how Patch Manager selects and installs security patches, see [How security patches are selected](patch-manager-selecting-patches.md).
 
 On Linux systems, however, you can also use Patch Manager to install patches that aren't related to security, or that are in a different source repository than the default one configured on the managed node. You can specify alternative patch source repositories when you create a custom patch baseline. In each custom patch baseline, you can specify patch source configurations for up to 20 versions of a supported Linux operating system.
 
@@ -25,10 +25,6 @@ To specify alternative patch source repositories when you're working in the Syst
 
 **Example: Using the AWS CLI**
 For an example of using the `--sources` option with the AWS Command Line Interface (AWS CLI), see [Create a patch baseline with custom repositories for different OS versions](patch-manager-cli-commands.md#patch-manager-cli-commands-create-patch-baseline-mult-sources).
-
-**Topics**
-+ [Important considerations for alternative repositories](#alt-source-repository-important)
-+ [Sample uses for alternative patch source repositories](#patch-manager-alternative-source-repository-examples)
 
 ## Important considerations for alternative repositories
 <a name="alt-source-repository-important"></a>
@@ -52,7 +48,7 @@ Running a custom patch baseline that specifies alternative patch repositories fo
 When you specify alternative patch repositories for YUM-based distributions, such as Amazon Linux 2, or Red Hat Enterprise Linux, patching behavior depends on whether the repository includes an update manifest in the form of a complete and correctly formatted `updateinfo.xml` file. This file specifies the release date, classifications, and severities of the various packages. Any of the following will affect the patching behavior:
 + If you filter on **Classification** and **Severity**, but they aren't specified in `updateinfo.xml`, the package won't be included by the filter. This also means that packages without an `updateinfo.xml` file won't be included in patching.
 + If you filter on **ApprovalAfterDays**, but the package release date isn't in Unix Epoch format (or has no release date specified), the package won't be included by the filter.
-+ There is an exception if you select the **Include non-security updates** check box in the **Create patch baseline** page. In this case, packages without an `updateinfo.xml` file (or that contains this file without properly formatted **Classification**, **Severity**, and **Date** values) *will* be included in the prefiltered list of patches. (They must still meet the other patch baseline rule requirements in order to be installed.)
++ There is an exception if you select the **Include non-security updates** check box in the **Create patch baseline** page. In this case, packages without an `updateinfo.xml` file (or that contains this file without properly formatted **Classification**, **Severity**, and **Date** values) *will* be included in the prefiltered list of patches. (They must still meet the other patch baseline rule requirements to be installed.)
 
 ## Sample uses for alternative patch source repositories
 <a name="patch-manager-alternative-source-repository-examples"></a>

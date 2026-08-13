@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/rerank-prereq.h
 
 A user requires the following permissions to use reranking:
 + Access to the reranking models that they plan to use. For more information, see [Request access to models](model-access.md). For third-party models (such as Cohere Rerank), your IAM role also needs `aws-marketplace:ViewSubscriptions` and `aws-marketplace:Subscribe` permissions. For more information, see [Use product ID condition keys to control access](model-access-product-ids.md).
-+ Permissions for their role and, if they plan to use reranking in a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) workflow, permissions for the Amazon Bedrock Knowledge Bases service role that has a [trust relationship](kb-permissions.md#kb-permissions-trust) with their role.
++ Permissions for their role and, if they plan to use reranking in a [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) workflow, permissions for the Amazon Bedrock Knowledge Bases service role that has a [trust relationship](kb-permissions.md#kb-permissions-trust) with their role.
 **Tip**
 To configure the required permissions quickly, you can do the following:
 Attach the [AmazonBedrockFullAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AmazonBedrockFullAccess) AWS managed policy to the user role. For more information about attaching a policy to an IAM role, see [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html).

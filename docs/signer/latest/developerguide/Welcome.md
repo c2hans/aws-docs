@@ -37,7 +37,7 @@ With AWS Signer and the Notation CLI from the [Notary  Project](https://notary
 For more information, see the [Amazon Elastic Container Registry User Guide](https://docs.aws.amazon.com/AmazonECR/latest/userguide/).
 
 **Amazon Elastic Kubernetes Service (Amazon EKS)**
-Amazon EKS and self-managed Kubernetes customers on Amazon EC2 can verify the ownership and integrity of signed images at the time of deployment. For more information, see the [https://docs.aws.amazon.com/eks/latest/userguide/](https://docs.aws.amazon.com/eks/latest/userguide/).
+Amazon EKS and self-managed Kubernetes customers on Amazon EC2 can verify the ownership and integrity of signed images at the time of deployment. For more information, see the [*Amazon EKS User Guide*](https://docs.aws.amazon.com/eks/latest/userguide/).
 
 **AWS Certificate Manager (ACM)**
 ACM handles the complexity of creating and managing or importing SSL/TLS certificates. You use ACM to create an ACM certificate or import a third-party certificate that you use for signing. You must have a certificate to sign code. For more information about certificates, see [AWS Certificate Manager User Guide](https://docs.aws.amazon.com/acm/latest/userguide/).

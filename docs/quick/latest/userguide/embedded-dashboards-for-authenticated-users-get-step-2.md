@@ -386,6 +386,6 @@ aws quicksight get-dashboard-embed-url \
      --user-arn arn:aws:quicksight:us-east-1:111122223333:user/default/embedding_quicksight_dashboard_role/embeddingsession
 ```
 
-For more information on using this operation, see [https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GetDashboardEmbedUrl.html](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GetDashboardEmbedUrl.html). You can use this and other API operations in your own code.
+For more information on using this operation, see [GetDashboardEmbedUrl](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GetDashboardEmbedUrl.html). You can use this and other API operations in your own code.
 
 ------

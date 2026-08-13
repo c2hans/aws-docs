@@ -41,7 +41,7 @@ kube-prometheus-stack:
             capacity: 2500
 ```
 
-Use the [https://helm.sh/docs/helm/helm_install/](https://helm.sh/docs/helm/helm_install/) command to pass overrides to the `flink-kubernetes-operator` chart.
+Use the [`Helm Install --set`](https://helm.sh/docs/helm/helm_install/) command to pass overrides to the `flink-kubernetes-operator` chart.
 
 ```
 helm upgrade -n {{<namespace>}} flink-kubernetes-operator \

@@ -37,7 +37,7 @@ To create a Windows-based instance, see [Get started with Windows-based instance
 
    You can try the $5 USD Lightsail plan free for one month (up to 750 hours). We will credit one free month to your account. Learn more on our [Lightsail pricing page](http://www.amazonlightsail.com/pricing/).
 **Note**
-As part of the AWS Free Tier, you can get started with Amazon Lightsail for free on select instance bundles. For more information, see **AWS Free Tier** on the [Amazon Lightsail Pricing page](https://aws.amazon.com/lightsail/pricing).
+As part of the AWS Free Tier, you can get started with Amazon Lightsail for free. For more information, see the [AWS Free Tier FAQs](https://aws.amazon.com/free/free-tier-faqs/).
 
 1. Enter a name for your instance.
 

@@ -15,7 +15,7 @@ See [Updating a resource share](https://docs.aws.amazon.com/ram/latest/userguide
 **To unshare a shared report group that you own (AWS RAM command)**
 Use the [disassociate-resource-share](https://docs.aws.amazon.com/cli/latest/reference/ram/disassociate-resource-share.html) command.
 
- ** To unshare report group that you own CodeBuild command)**
+ ** To unshare a report group that you own (CodeBuild command)**
 
 Run the [delete-resource-policy](https://docs.aws.amazon.com/cli/latest/reference/codebuild/delete-resource-policy.html) command and specify the ARN of the report group you want to unshare:
 

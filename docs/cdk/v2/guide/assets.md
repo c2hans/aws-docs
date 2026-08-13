@@ -13,7 +13,7 @@ The following tutorial video provides a comprehensive overview of CDK assets, an
 
 [![AWS Videos](http://img.youtube.com/vi/jHNtXQmkKfw?rel=0/0.jpg)](http://www.youtube.com/watch?v=jHNtXQmkKfw?rel=0)
 
-You add assets through APIs that are exposed by specific AWS constructs. For example, when you define a [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html) construct, the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html#code](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html#code) property lets you pass an [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Code.html#static-fromwbrassetpath-options](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Code.html#static-fromwbrassetpath-options) (directory). `Function` uses assets to bundle the contents of the directory and use it for the function’s code. Similarly, [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs.ContainerImage.html#static-fromwbrassetdirectory-props](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs.ContainerImage.html#static-fromwbrassetdirectory-props) uses a Docker image built from a local directory when defining an Amazon ECS task definition.
+You add assets through APIs that are exposed by specific AWS constructs. For example, when you define a [`lambda.Function`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html) construct, the [`code`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html#code) property lets you pass an [`asset`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Code.html#static-fromwbrassetpath-options) (directory). `Function` uses assets to bundle the contents of the directory and use it for the function’s code. Similarly, [`ecs.ContainerImage.fromAsset`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs.ContainerImage.html#static-fromwbrassetdirectory-props) uses a Docker image built from a local directory when defining an Amazon ECS task definition.
 
 ## Assets in detail
 <a name="assets-details"></a>
@@ -44,7 +44,7 @@ These asset types are explained in the following sections.
 ## Amazon S3 assets
 <a name="assets-types-s3"></a>
 
-You can define local files and directories as assets, and the AWS CDK packages and uploads them to Amazon S3 through the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3_assets-readme.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3_assets-readme.html) module.
+You can define local files and directories as assets, and the AWS CDK packages and uploads them to Amazon S3 through the [`aws-s3-assets`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3_assets-readme.html) module.
 
 The following example defines a local directory asset and a file asset.
 
@@ -144,7 +144,7 @@ awss3assets.NewAsset(stack, jsii.String("SampleSingleFileAsset"), awss3assets.As
 })
 ```
 
-In most cases, you don’t need to directly use the APIs in the `aws-s3-assets` module. Modules that support assets, such as `aws-lambda`, have convenience methods so that you can use assets. For Lambda functions, the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Code.html#static-fromwbrassetpath-options](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Code.html#static-fromwbrassetpath-options) static method enables you to specify a directory or a .zip file in the local file system.
+In most cases, you don’t need to directly use the APIs in the `aws-s3-assets` module. Modules that support assets, such as `aws-lambda`, have convenience methods so that you can use assets. For Lambda functions, the [`fromAsset()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Code.html#static-fromwbrassetpath-options) static method enables you to specify a directory or a .zip file in the local file system.
 
 ### Lambda function example
 <a name="assets-types-s3-lambda"></a>
@@ -468,7 +468,7 @@ awslambda.NewFunction(stack, jsii.String("myLambdaFunction"), awslambda.Function
 ### Permissions
 <a name="assets-types-s3-permissions"></a>
 
-If you use Amazon S3 assets directly through the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3_assets-readme.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3_assets-readme.html) module, IAM roles, users, or groups, and you need to read assets in runtime, then grant those assets IAM permissions through the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3_assets.Asset.html#grantwbrreadgrantee](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3_assets.Asset.html#grantwbrreadgrantee) method.
+If you use Amazon S3 assets directly through the [`aws-s3-assets`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3_assets-readme.html) module, IAM roles, users, or groups, and you need to read assets in runtime, then grant those assets IAM permissions through the [`asset.grantRead`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3_assets.Asset.html#grantwbrreadgrantee) method.
 
 The following example grants an IAM group read permissions on a file asset.
 
@@ -575,7 +575,7 @@ asset.GrantRead(group)
 ## Docker image assets
 <a name="assets-types-docker"></a>
 
-The AWS CDK supports bundling local Docker images as assets through the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecr_assets-readme.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecr_assets-readme.html) module.
+The AWS CDK supports bundling local Docker images as assets through the [`aws-ecr-assets`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecr_assets-readme.html) module.
 
 The following example defines a Docker image that is built locally and pushed to Amazon ECR. Images are built from a local Docker context directory (with a Dockerfile) and uploaded to Amazon ECR by the AWS CDK CLI or your app’s CI/CD pipeline. The images can be naturally referenced in your AWS CDK app.
 
@@ -650,7 +650,7 @@ The `my-image` directory must include a Dockerfile. The AWS CDK CLI builds a Doc
 ### Amazon ECS task definition example
 <a name="assets-types-docker-ecs"></a>
 
-A common use case is to create an Amazon ECS [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs.TaskDefinition.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs.TaskDefinition.html) to run Docker containers. The following example specifies the location of a Docker image asset that the AWS CDK builds locally and pushes to Amazon ECR.
+A common use case is to create an Amazon ECS [`TaskDefinition`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs.TaskDefinition.html) to run Docker containers. The following example specifies the location of a Docker image asset that the AWS CDK builds locally and pushes to Amazon ECR.
 
 **Example**
 
@@ -990,9 +990,9 @@ asset := awsecrassets.NewDockerImageAsset(stack, jsii.String("MyBuildImage"), aw
 ### Permissions
 <a name="assets-types-docker-permissions"></a>
 
-If you use a module that supports Docker image assets, such as [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs-readme.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs-readme.html), the AWS CDK manages permissions for you when you use assets directly or through [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs.ContainerImage.html#static-fromwbrecrwbrrepositoryrepository-tag](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs.ContainerImage.html#static-fromwbrecrwbrrepositoryrepository-tag) (Python: `from_ecr_repository`). If you use Docker image assets directly, make sure that the consuming principal has permissions to pull the image.
+If you use a module that supports Docker image assets, such as [`aws-ecs`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs-readme.html), the AWS CDK manages permissions for you when you use assets directly or through [`ContainerImage.fromEcrRepository`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs.ContainerImage.html#static-fromwbrecrwbrrepositoryrepository-tag) (Python: `from_ecr_repository`). If you use Docker image assets directly, make sure that the consuming principal has permissions to pull the image.
 
-In most cases, you should use [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecr.Repository.html#grantwbrpullgrantee](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecr.Repository.html#grantwbrpullgrantee) method (Python: `grant_pull`). This modifies the IAM policy of the principal to enable it to pull images from this repository. If the principal that is pulling the image is not in the same account, or if it’s an AWS service that doesn’t assume a role in your account (such as AWS CodeBuild), you must grant pull permissions on the resource policy and not on the principal’s policy. Use the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecr.Repository.html#addwbrtowbrresourcewbrpolicystatement](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecr.Repository.html#addwbrtowbrresourcewbrpolicystatement) method (Python: `add_to_resource_policy`) to grant the appropriate principal permissions.
+In most cases, you should use [`asset.repository.grantPull`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecr.Repository.html#grantwbrpullgrantee) method (Python: `grant_pull`). This modifies the IAM policy of the principal to enable it to pull images from this repository. If the principal that is pulling the image is not in the same account, or if it’s an AWS service that doesn’t assume a role in your account (such as AWS CodeBuild), you must grant pull permissions on the resource policy and not on the principal’s policy. Use the [`asset.repository.addToResourcePolicy`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecr.Repository.html#addwbrtowbrresourcewbrpolicystatement) method (Python: `add_to_resource_policy`) to grant the appropriate principal permissions.
 
 ## AWS CloudFormation resource metadata
 <a name="assets-cfn"></a>

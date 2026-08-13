@@ -10,14 +10,14 @@ Understanding how and when the AWS SDK for Kotlin throws exceptions is important
 ## Service exceptions
 <a name="service-exceptions"></a>
 
-The most common exception is `AwsServiceException`, from which all service-specific exceptions (such as `S3Exception`) inherit. This exception represents an error response from an AWS service. For example, if you try to terminate an Amazon EC2 instance that doesn’t exist, Amazon EC2 returns an error response. The error response details are included in the `AwsServiceException` that’s thrown.
+The most common exception is [`AwsServiceException`](/sdk-for-kotlin/api/latest/aws-core/aws.sdk.kotlin.runtime/-aws-service-exception/index.html), from which all service-specific exceptions (such as [`S3Exception`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3.model/-s3-exception/index.html)) inherit. This exception represents an error response from an AWS service. For example, if you try to terminate an Amazon EC2 instance that doesn’t exist, Amazon EC2 returns an error response. The error response details are included in the [`AwsServiceException`](/sdk-for-kotlin/api/latest/aws-core/aws.sdk.kotlin.runtime/-aws-service-exception/index.html) that’s thrown.
 
-When you encounter an `AwsServiceException`, this means that your request was successfully sent to the AWS service but could not be processed. This can be because of errors in the request’s parameters or because of issues on the service side.
+When you encounter an [`AwsServiceException`](/sdk-for-kotlin/api/latest/aws-core/aws.sdk.kotlin.runtime/-aws-service-exception/index.html), this means that your request was successfully sent to the AWS service but could not be processed. This can be because of errors in the request’s parameters or because of issues on the service side.
 
 ## Client exceptions
 <a name="client-exceptions"></a>
 
- `ClientException` indicates that a problem occurred inside the AWS SDK for Kotlin client code, either while trying to send a request to AWS or while trying to parse a response from AWS. A `ClientException` is generally more severe than an `AwsServiceException` and indicates that a major problem is preventing the client from processing service calls to AWS services. For example, the AWS SDK for Kotlin throws a `ClientException` if it fails to parse a response from a service.
+ [`ClientException`](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime/-client-exception/index.html) indicates that a problem occurred inside the AWS SDK for Kotlin client code, either while trying to send a request to AWS or while trying to parse a response from AWS. A [`ClientException`](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime/-client-exception/index.html) is generally more severe than an [`AwsServiceException`](/sdk-for-kotlin/api/latest/aws-core/aws.sdk.kotlin.runtime/-aws-service-exception/index.html) and indicates that a major problem is preventing the client from processing service calls to AWS services. For example, the AWS SDK for Kotlin throws a [`ClientException`](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime/-client-exception/index.html) if it fails to parse a response from a service.
 
 ## Error metadata
 <a name="error-metadata"></a>

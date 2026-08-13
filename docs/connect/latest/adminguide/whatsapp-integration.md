@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/whatsapp-integ
 # Set up WhatsApp Business messaging
 <a name="whatsapp-integration"></a>
 
-The topics in this section explain how to set up and test WhatsApp Business messaging for Connect Customer. You use [AWS End User Messaging Social](https://docs.aws.amazon.com/social-messaging/latest/userguide/what-is-service.html) to link a WhatsApp Business Account and phone number to an Connect Customer instance, then import the linked phone number into Connect Customer. Customers can then use WhatsApp to send messages to your call center.
+The topics in this section explain how to set up and test WhatsApp Business messaging for Connect Customer. You use [AWS End User Messaging Social](https://docs.aws.amazon.com/social-messaging/latest/userguide/what-is-service.html) to link a WhatsApp Business Account and phone number to a Connect Customer instance, then import the linked phone number into Connect Customer. Customers can then use WhatsApp to send messages to your call center.
 
 You can also use Amazon Lex to automate responses to customer questions, which saves agents time and effort. For more information, see [Getting started with Amazon Lex](https://docs.aws.amazon.com/lexv2/latest/dg/getting-started.html) in the *Amazon Lex Developer Guide*.
 
@@ -23,9 +23,9 @@ You can also use Amazon Lex to automate responses to customer questions, which s
 
 Before you can integrate WhatsApp with Connect Customer, you must have the following items:
 + A WhatsApp Business Account.
-+ A WhatsApp phone number. The number must be able to receive a voice call or an SMS text message to complete Meta's phone number verification process for WhatsApp Business messaging. You can use an Connect Customer voice number or an AWS End User Messaging SMS number for the WhatsApp phone number. You can also use a phone number that you own outside of AWS.
++ A WhatsApp phone number. The number must be able to receive a voice call or an SMS text message to complete Meta's phone number verification process for WhatsApp Business messaging. You can use a Connect Customer voice number or an AWS End User Messaging SMS number for the WhatsApp phone number. You can also use a phone number that you own outside of AWS.
 
-  When using an Connect Customer voice number or AWS End User Messaging SMS number, we recommend claiming a new number that isn’t used with live voice or SMS traffic to avoid potential disruption of service.
+  When using a Connect Customer voice number or AWS End User Messaging SMS number, we recommend claiming a new number that isn’t used with live voice or SMS traffic to avoid potential disruption of service.
 
   You can use the AWS End User Messaging Social console at [https://console.aws.amazon.com/social-messaging/](https://console.aws.amazon.com/social-messaging/) to create the WhatsApp Business Account and phone number. For more information, see [Signing up for WhatsApp](https://docs.aws.amazon.com/social-messaging/latest/userguide/getting-started.html#getting-started-embedded) in the *AWS End User Messaging Social User Guide*.
 
@@ -40,7 +40,7 @@ After you create the account and phone number, complete the steps in the followi
 
 The following steps explain how to use AWS End User Messaging Social to enable Connect Customer as the event destination for your linked WhatsApp Business Account. This enables the system to import your WhatsApp phone number.
 
- You can use the [AWS End User Messaging Social console](https://console.aws.amazon.com/social-messaging/) or the AWS CLI to complete this task. To use the AWS CLI, see [https://docs.aws.amazon.com/connect/latest/APIReference/API_ImportPhoneNumber.html](https://docs.aws.amazon.com/connect/latest/APIReference/API_ImportPhoneNumber.html) in the *Connect Customer API Reference*, and [https://docs.aws.amazon.com/social-messaging/latest/APIReference/API_PutWhatsAppBusinessAccountEventDestinations.html](https://docs.aws.amazon.com/social-messaging/latest/APIReference/API_PutWhatsAppBusinessAccountEventDestinations.html) in the *AWS End User Messaging Social API Reference*.
+ You can use the [AWS End User Messaging Social console](https://console.aws.amazon.com/social-messaging/) or the AWS CLI to complete this task. To use the AWS CLI, see [ImportPhoneNumber](https://docs.aws.amazon.com/connect/latest/APIReference/API_ImportPhoneNumber.html) in the *Connect Customer API Reference*, and [PutWhatsAppBusinessAccountEventDestinations](https://docs.aws.amazon.com/social-messaging/latest/APIReference/API_PutWhatsAppBusinessAccountEventDestinations.html) in the *AWS End User Messaging Social API Reference*.
 
 The following steps explain how to use the console.
 
@@ -195,7 +195,7 @@ If you made a fix, you must import the phone numbers again. To do this, repeat [
 If WhatsApp inbound message delivery stops, search your AWS CloudTrail logs for `SendIntegrationEvent` and `SendChatIntegrationEvent` for error details.
 
 You can also check these common scenarios:
-+ Ensure that your linked WhatsApp Business Account in AWS End User Messaging Social has an Connect Customer event destination enabled.
++ Ensure that your linked WhatsApp Business Account in AWS End User Messaging Social has a Connect Customer event destination enabled.
 + Ensure your event destination IAM role has the necessary permissions. For more information, see [Step 1: Enable Connect Customer as the event destination](#enable-connect-destination) earlier in this section. You have a misconfigured role if CloudTrail throws `AccessDeniedException` errors from the `SendIntegrationEvent` API.
 + Ensure that your WhatsApp phone number imported successfully to your Connect Customer instance, and that the number has an associated inbound contact flow. For more information, see [Step 2: Configure an inbound contact flow on your phone number](#inbound-contact-flow).
 + Inbound messages were dropped because they are not yet supported. For more information, see [WhatsApp Business messaging capabilities and limitations with Connect Customer](whatsapp-messaging-capabilities.md).

@@ -45,7 +45,7 @@ Amazon GameLift Servers doesn't support uploading from S3 buckets with names tha
 ------
 #### [ AWS CLI ]
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-script.html](https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-script.html) AWS CLI command to define the new script and upload your server script files.
+Use the [`create-script`](https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-script.html) AWS CLI command to define the new script and upload your server script files.
 
 1. Open a command line window and switch to a directory where you can use the AWS CLI.
 
@@ -73,6 +73,6 @@ Use the [https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-script
 
    In response to your request, Amazon GameLift Servers returns the new script object.
 
-1. To view the new script, call [https://docs.aws.amazon.com/cli/latest/reference/gamelift/describe-script.html](https://docs.aws.amazon.com/cli/latest/reference/gamelift/describe-script.html).
+1. To view the new script, call [`describe-script`](https://docs.aws.amazon.com/cli/latest/reference/gamelift/describe-script.html).
 
 ------

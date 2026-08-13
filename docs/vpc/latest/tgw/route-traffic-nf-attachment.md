@@ -40,7 +40,7 @@ Traffic matching the CIDR block in your route table will now be sent to the fire
 Use the command line or API to route a transit gateway network function attachment.
 
 **To route traffic through a network function attachment using the command line or API**
-+ Use [https://docs.aws.amazon.com/cli/latest/reference/create-transit-gateway-route/create-transit-gateway-route.html](https://docs.aws.amazon.com/cli/latest/reference/create-transit-gateway-route/create-transit-gateway-route.html).
++ Use [`create-transit-gateway-route`](https://docs.aws.amazon.com/cli/latest/reference/create-transit-gateway-route/create-transit-gateway-route.html).
 
   For example, the request might be to route a network firewall attachment:
 

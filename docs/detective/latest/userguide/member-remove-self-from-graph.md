@@ -28,8 +28,8 @@ You can use the AWS Management Console to remove your account from a behavior gr
 You can use the Detective API or the AWS Command Line Interface to remove your account from a behavior graph.
 
 **To remove your account from a behavior graph (Detective API, AWS CLI)**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_DisassociateMembership.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_DisassociateMembership.html) operation. You must specify the graph ARN.
-+ **AWS CLI:** At the command line, run the [https://docs.aws.amazon.com/cli/latest/reference/detective/disassociate-membership.html](https://docs.aws.amazon.com/cli/latest/reference/detective/disassociate-membership.html) command.
++ **Detective API:** Use the [`DisassociateMembership`](https://docs.aws.amazon.com/detective/latest/APIReference/API_DisassociateMembership.html) operation. You must specify the graph ARN.
++ **AWS CLI:** At the command line, run the [`disassociate-membership`](https://docs.aws.amazon.com/cli/latest/reference/detective/disassociate-membership.html) command.
 
   ```
   aws detective disassociate-membership --graph-arn {{<behavior graph ARN>}}

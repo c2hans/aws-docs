@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstar
 ## Configuration file download
 <a name="template-download"></a>
 
-AWS Service Catalog provides a sample [https://github.com/aws-samples/service-catalog-engine-for-terraform-os/blob/main/sample-provisioning-artifacts/s3bucket.tar.gz?raw=true](https://github.com/aws-samples/service-catalog-engine-for-terraform-os/blob/main/sample-provisioning-artifacts/s3bucket.tar.gz?raw=true) configuration file for you to use in this tutorial.
+AWS Service Catalog provides a sample [`simple-s3-bucket.tar.gz`](https://github.com/aws-samples/service-catalog-engine-for-terraform-os/blob/main/sample-provisioning-artifacts/s3bucket.tar.gz?raw=true) configuration file for you to use in this tutorial.
 
 ## Configuration file overview
 <a name="template-overview"></a>

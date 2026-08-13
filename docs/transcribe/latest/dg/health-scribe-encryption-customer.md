@@ -13,9 +13,9 @@ Key policies control access to your customer managed key. Every customer managed
 <a name="health-scribe-key-policies"></a>
 
  If you are using a key in the same account as the IAM role you specify as the `DataAccessRole` in your [StartMedicalScribeJob](https://docs.aws.amazon.com//transcribe/latest/APIReference/API_StartMedicalScribeJob.html) or `ResourceAccessRole` in your [StartMedicalScribeStream](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartMedicalScribeStream.html) request, you don't need to update the Key Policy. To use your customer managed key in a different account as your DataAccessRole (for transcription jobs) or ResourceAccessRole (for streaming), you must trust the respective role in the Key Policy for the following actions:
-+ [https://docs.aws.amazon.com//kms/latest/APIReference/API_Encrypt.html](https://docs.aws.amazon.com//kms/latest/APIReference/API_Encrypt.html) — Allows encryption using the customer managed key
-+ [https://docs.aws.amazon.com//kms/latest/APIReference/API_Decrypt.html](https://docs.aws.amazon.com//kms/latest/APIReference/API_Decrypt.html) — Allows decryption using the customer managed key
-+ [https://docs.aws.amazon.com//kms/latest/APIReference/API_DescribeKey.html](https://docs.aws.amazon.com//kms/latest/APIReference/API_DescribeKey.html) — Provides the customer managed key details to allow AWS HealthScribe to validate the key
++ [`kms:Encrypt`](https://docs.aws.amazon.com//kms/latest/APIReference/API_Encrypt.html) — Allows encryption using the customer managed key
++ [`kms:Decrypt`](https://docs.aws.amazon.com//kms/latest/APIReference/API_Decrypt.html) — Allows decryption using the customer managed key
++ [`kms:DescribeKey`](https://docs.aws.amazon.com//kms/latest/APIReference/API_DescribeKey.html) — Provides the customer managed key details to allow AWS HealthScribe to validate the key
 
 The following is an example key policy you can use to grant your ResourceAccessRole cross account permissions to use your customer managed key for AWS HealthScribe streaming. To use this policy for transcription jobs, update the `Principal` to use the DataAccessRole ARN, and remove or modify the encryption context.
 

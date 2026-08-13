@@ -12,12 +12,23 @@ This release applies security updates to Linux-based platforms for AWS Elastic B
 ## Changes
 <a name="release-2018-08-20-linux.changes"></a>
 
-| **Category** | **Description** |
-| --- | --- |
-| **Affected packages** | **Information** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before August 10, 2018 to all Linux-based platforms.<br />The following are specific critical security updates that this release applied:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-08-20-linux.html) |
-| kernel | [ALAS-2018-1058](https://alas.aws.amazon.com/ALAS-2018-1058.html) |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before August 10, 2018 to all Linux-based platforms.<br />The following are specific critical security updates that this release applied:
+<table>
+<thead>
+  <tr><th><b>Affected packages</b></th><th><b>Information</b></th></tr>
+</thead>
+<tbody>
+  <tr><td>kernel</td><td><a href="https://alas.aws.amazon.com/ALAS-2018-1058.html">ALAS-2018-1058</a></td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## Updated platform configurations
 <a name="release-2018-08-20-linux.platforms"></a>

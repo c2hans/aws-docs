@@ -10,7 +10,7 @@ X-Ray SDK/Daemon Maintenance Notice – On February 25th, 2026, the AWS X-Ray SD
 
 You can record additional information about requests, the environment, or your application with annotations and metadata. You can add annotations and metadata to the segments that the X-Ray SDK creates, or to custom subsegments that you create.
 
-**Annotations** are key-value pairs with string, number, or Boolean values. Annotations are indexed for use with [filter expressions](xray-console-filters.md). Use annotations to record data that you want to use to group traces in the console, or when calling the [https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSummaries.html](https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSummaries.html) API.
+**Annotations** are key-value pairs with string, number, or Boolean values. Annotations are indexed for use with [filter expressions](xray-console-filters.md). Use annotations to record data that you want to use to group traces in the console, or when calling the [`GetTraceSummaries`](https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSummaries.html) API.
 
 **Metadata** are key-value pairs that can have values of any type, including objects and lists, but are not indexed for use with filter expressions. Use metadata to record additional data that you want stored in the trace but don't need to use with search.
 
@@ -67,7 +67,7 @@ The SDK records annotations as key-value pairs in an `annotations` object in the
 
 To find traces that have annotations with specific values, use the `annotation[{{key}}]` keyword in a [filter expression](xray-console-filters.md).
 
-**Example [https://github.com/awslabs/eb-java-scorekeep/tree/xray/src/main/java/scorekeep/GameModel.java](https://github.com/awslabs/eb-java-scorekeep/tree/xray/src/main/java/scorekeep/GameModel.java) – Annotations and metadata**
+**Example [`src/main/java/scorekeep/GameModel.java`](https://github.com/awslabs/eb-java-scorekeep/tree/xray/src/main/java/scorekeep/GameModel.java) – Annotations and metadata**
 
 ```
 import [com.amazonaws.xray.AWSXRay](https://docs.aws.amazon.com/xray-sdk-for-java/latest/javadoc/com/amazonaws/xray/AWSXRay.html);
@@ -137,7 +137,7 @@ Use metadata to record information on segments or subsegments that you don't nee
 
 If you don't specify a namespace, the SDK uses `default`. Calling `putMetadata` twice with the same key overwrites previously recorded values on the same segment or subsegment.
 
-**Example [https://github.com/awslabs/eb-java-scorekeep/tree/xray/src/main/java/scorekeep/GameModel.java](https://github.com/awslabs/eb-java-scorekeep/tree/xray/src/main/java/scorekeep/GameModel.java) – Annotations and metadata**
+**Example [`src/main/java/scorekeep/GameModel.java`](https://github.com/awslabs/eb-java-scorekeep/tree/xray/src/main/java/scorekeep/GameModel.java) – Annotations and metadata**
 
 ```
 import [com.amazonaws.xray.AWSXRay](https://docs.aws.amazon.com/xray-sdk-for-java/latest/javadoc/com/amazonaws/xray/AWSXRay.html);

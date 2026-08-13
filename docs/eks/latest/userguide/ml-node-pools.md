@@ -184,7 +184,7 @@ spec:
         - key: "karpenter.sh/capacity-type"
           operator: In
           values: ["on-demand"]
-        - key: "karpenter.k8s.aws/instance-family"
+        - key: "eks.amazonaws.com/instance-family"
           operator: In
           values: ["g6e"]
         - key: "topology.kubernetes.io/zone"
@@ -291,7 +291,7 @@ spec:
         - key: "karpenter.sh/capacity-type"
           operator: In
           values: ["reserved"]
-        - key: "karpenter.k8s.aws/instance-family"
+        - key: "eks.amazonaws.com/instance-family"
           operator: In
           values: ["p5", "p5e", "p5en", "p4d"]
       taints:
@@ -404,7 +404,7 @@ spec:
         - key: "karpenter.sh/capacity-type"
           operator: In
           values: ["reserved", "on-demand"]
-        - key: "karpenter.k8s.aws/instance-family"
+        - key: "eks.amazonaws.com/instance-family"
           operator: In
           values: ["p5", "g6e"]
         - key: "topology.kubernetes.io/zone"
@@ -494,10 +494,10 @@ spec:
         - key: "karpenter.sh/capacity-type"
           operator: In
           values: ["on-demand"]
-        - key: "karpenter.k8s.aws/instance-family"
+        - key: "eks.amazonaws.com/instance-family"
           operator: In
           values: ["g6", "g6e", "g7e"]
-        - key: "karpenter.k8s.aws/instance-gpu-manufacturer"
+        - key: "eks.amazonaws.com/instance-gpu-manufacturer"
           operator: In
           values: ["nvidia"]
       taints:
@@ -584,10 +584,10 @@ spec:
         - key: "karpenter.sh/capacity-type"
           operator: In
           values: ["spot"]
-        - key: "karpenter.k8s.aws/instance-family"
+        - key: "eks.amazonaws.com/instance-family"
           operator: In
           values: ["g6", "g6e", "g7e"]
-        - key: "karpenter.k8s.aws/instance-gpu-manufacturer"
+        - key: "eks.amazonaws.com/instance-gpu-manufacturer"
           operator: In
           values: ["nvidia"]
       taints:

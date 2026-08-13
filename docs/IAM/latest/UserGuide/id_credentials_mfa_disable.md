@@ -56,10 +56,10 @@ Unassigned virtual MFA devices in your AWS account are deleted when you’re add
 <a name="deactivate-mfa-cli"></a>
 
 **To deactivate an MFA device for an IAM user (AWS CLI)**
-+ Run this command: [https://docs.aws.amazon.com/cli/latest/reference/iam/deactivate-mfa-device.html](https://docs.aws.amazon.com/cli/latest/reference/iam/deactivate-mfa-device.html)
++ Run this command: [`aws iam deactivate-mfa-device`](https://docs.aws.amazon.com/cli/latest/reference/iam/deactivate-mfa-device.html)
 
 ## Deactivating MFA devices (AWS API)
 <a name="deactivate-mfa-api"></a>
 
 **To deactivate an MFA device for an IAM user (AWS API)**
-+ Call this operation: [https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeactivateMFADevice.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeactivateMFADevice.html)
++ Call this operation: [`DeactivateMFADevice`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeactivateMFADevice.html)

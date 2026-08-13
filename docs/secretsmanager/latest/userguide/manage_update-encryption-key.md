@@ -33,7 +33,7 @@ If you change the encryption key for a secret and then deactivate the previous e
 
 **To change the encryption key for a secret (AWS CLI)**
 
-1. The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/update-secret.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/update-secret.html) example updates the KMS key used to encrypt the secret value. The KMS key must be in the same region as the secret.
+1. The following [`update-secret`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/update-secret.html) example updates the KMS key used to encrypt the secret value. The KMS key must be in the same region as the secret.
 
    ```
    aws secretsmanager update-secret \

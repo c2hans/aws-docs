@@ -48,7 +48,7 @@ If you don't use central configuration or are a self-managed account, you can't 
 
 **To disable a control across standards in one account and Region**
 
-1. Invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListStandardsControlAssociations.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListStandardsControlAssociations.html) API. Provide a security control ID.
+1. Invoke the [ListStandardsControlAssociations](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListStandardsControlAssociations.html) API. Provide a security control ID.
 
    **Example request:**
 
@@ -58,7 +58,7 @@ If you don't use central configuration or are a self-managed account, you can't 
    }
    ```
 
-1. Invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateStandardsControlAssociations.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateStandardsControlAssociations.html) API. Provide the ARN of any standards that the control is enabled in. To obtain standard ARNs, run [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_DescribeStandards.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_DescribeStandards.html).
+1. Invoke the [BatchUpdateStandardsControlAssociations](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateStandardsControlAssociations.html) API. Provide the ARN of any standards that the control is enabled in. To obtain standard ARNs, run [`DescribeStandards`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_DescribeStandards.html).
 
 1. Set the `AssociationStatus` parameter equal to `DISABLED`. If you follow these steps for a control that's already disabled, the API returns an HTTP status code 200 response.
 
@@ -77,13 +77,13 @@ If you don't use central configuration or are a self-managed account, you can't 
 
 **To disable a control across standards in one account and Region**
 
-1. Run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-standards-control-associations.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-standards-control-associations.html) command. Provide a security control ID.
+1. Run the [list-standards-control-associations](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-standards-control-associations.html) command. Provide a security control ID.
 
    ```
    aws securityhub  --region {{us-east-1}} list-standards-control-associations --security-control-id {{CloudTrail.1}}
    ```
 
-1. Run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/batch-update-standards-control-associations.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/batch-update-standards-control-associations.html) command. Provide the ARN of any standards that the control is enabled in. To obtain standard ARNs, run the `describe-standards` command.
+1. Run the [batch-update-standards-control-associations](https://docs.aws.amazon.com/cli/latest/reference/securityhub/batch-update-standards-control-associations.html) command. Provide the ARN of any standards that the control is enabled in. To obtain standard ARNs, run the `describe-standards` command.
 
 1. Set the `AssociationStatus` parameter equal to `DISABLED`. If you follow these steps for a control that's already disabled, the command returns an HTTP status code 200 response.
 

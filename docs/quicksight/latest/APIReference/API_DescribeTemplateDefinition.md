@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 Provides a detailed description of the definition of a template.
 
 **Note**
-If you do not need to know details about the content of a template, for instance if you are trying to check the status of a recently created or updated template, use the [https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeTemplate.html](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeTemplate.html) instead.
+If you do not need to know details about the content of a template, for instance if you are trying to check the status of a recently created or updated template, use the [`DescribeTemplate`](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeTemplate.html) instead.
 
 ## Request Syntax
 <a name="API_DescribeTemplateDefinition_RequestSyntax"></a>

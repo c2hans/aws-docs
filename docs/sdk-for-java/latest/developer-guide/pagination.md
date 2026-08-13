@@ -18,7 +18,7 @@ The following examples demonstrate synchronous pagination methods to list object
 ### Iterate over pages
 <a name="iterate-pages"></a>
 
-The first example demonstrates the use of a `listRes` paginator object, a [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/paginators/ListObjectsV2Iterable.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/paginators/ListObjectsV2Iterable.html) instance, to iterate through all the response pages with the `stream` method. The code streams over the response pages, converts the response stream to a stream of `[S3Object](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/model/S3Object.html)` content, and then processes the content of the Amazon S3 object.
+The first example demonstrates the use of a `listRes` paginator object, a [`ListObjectsV2Iterable`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/paginators/ListObjectsV2Iterable.html) instance, to iterate through all the response pages with the `stream` method. The code streams over the response pages, converts the response stream to a stream of `[S3Object](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/model/S3Object.html)` content, and then processes the content of the Amazon S3 object.
 
 The following imports apply to all examples in this synchronous pagination section.
 
@@ -75,7 +75,7 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 ### Iterate over objects
 <a name="iterate-objects"></a>
 
-The following examples show ways to iterate over the objects returned in the response instead of the pages of the response. The `contents` method of `ListObjectsV2Iterable` class returns an [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/pagination/sync/SdkIterable.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/pagination/sync/SdkIterable.html) that provides several methods to process the underlying content elements.
+The following examples show ways to iterate over the objects returned in the response instead of the pages of the response. The `contents` method of `ListObjectsV2Iterable` class returns an [`SdkIterable`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/pagination/sync/SdkIterable.html) that provides several methods to process the underlying content elements.
 
 #### Use a stream
 <a name="use-a-stream"></a>
@@ -142,7 +142,7 @@ The following examples demonstrate asynchronous pagination methods to list Dynam
 ### Iterate over pages of table names
 <a name="iterate-pages-async"></a>
 
-The following two examples use an asynchronous DynamoDB client that call the `listTablesPaginator` method with a request to get a [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/paginators/ListTablesPublisher.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/paginators/ListTablesPublisher.html). `ListTablesPublisher` implements two interfaces, which provides many options to process responses. We'll look at methods of each interface.
+The following two examples use an asynchronous DynamoDB client that call the `listTablesPaginator` method with a request to get a [`ListTablesPublisher`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/paginators/ListTablesPublisher.html). `ListTablesPublisher` implements two interfaces, which provides many options to process responses. We'll look at methods of each interface.
 
 #### Use a `Subscriber`
 <a name="use-a-subscriber"></a>
@@ -247,7 +247,7 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 ### Iterate over table names
 <a name="iterate-objects-async"></a>
 
-The following examples show ways to iterate over the objects returned in the response instead of the pages of the response. Similar to the synchronous Amazon S3 example previously shown with its `contents` method, the DynamoDB asynchronous result class, `ListTablesPublisher` has the `tableNames` convenience method to interact with the underlying item collection. The return type of the `tableNames` method is an [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/async/SdkPublisher.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/async/SdkPublisher.html) that can be used to request items across all pages.
+The following examples show ways to iterate over the objects returned in the response instead of the pages of the response. Similar to the synchronous Amazon S3 example previously shown with its `contents` method, the DynamoDB asynchronous result class, `ListTablesPublisher` has the `tableNames` convenience method to interact with the underlying item collection. The return type of the `tableNames` method is an [`SdkPublisher`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/async/SdkPublisher.html) that can be used to request items across all pages.
 
 #### Use a `Subscriber`
 <a name="id2"></a>

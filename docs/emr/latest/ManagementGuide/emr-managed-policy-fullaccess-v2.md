@@ -11,7 +11,7 @@ To grant required actions scoped for Amazon EMR, attach the `AmazonEMRFullAccess
 
 `AmazonEMRFullAccessPolicy_v2` depends on scoped-down access to resources that Amazon EMR provisions or uses. When you use this policy, you need to pass the user tag `for-use-with-amazon-emr-managed-policies = true` when provisioning the cluster. Amazon EMR will automatically propagate the tag. Additionally, you may need to manually add a user tag to specific types of resources, such as EC2 security groups that were not created by Amazon EMR. For more information, see [Tagging resources to use managed policies](emr-managed-iam-policies.md#manually-tagged-resources).
 
-The [https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/AmazonEMRFullAccessPolicy_v2](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/AmazonEMRFullAccessPolicy_v2) policy secures resources by doing the following:
+The [`AmazonEMRFullAccessPolicy_v2`](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/AmazonEMRFullAccessPolicy_v2) policy secures resources by doing the following:
 + Requires resources to be tagged with the pre-defined Amazon EMR managed policies tag `for-use-with-amazon-emr-managed-policies` for cluster creation and Amazon EMR access.
 + Restricts the `iam:PassRole` action to specific default roles and `iam:PassedToService` access to specific services.
 + No longer provides access to Amazon EC2, Amazon S3, and other services by default.
@@ -19,7 +19,7 @@ The [https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/Am
 Following are the contents of this policy.
 
 **Note**
-You can also use the console link [https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/AmazonEMRFullAccessPolicy_v2](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/AmazonEMRFullAccessPolicy_v2) to view the policy.
+You can also use the console link [`AmazonEMRFullAccessPolicy_v2`](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/AmazonEMRFullAccessPolicy_v2) to view the policy.
 
 ------
 #### [ JSON ]

@@ -11,7 +11,7 @@ Amazon EC2 Auto Scaling supports creating Auto Scaling groups and related resour
 
 You can find additional useful examples that create Auto Scaling groups and related resources in the following sections of the *AWS CloudFormation User Guide*.
 + For additional examples of Auto Scaling groups, see [Auto scaling template snippets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-autoscaling.html).
-+ For examples of Amazon EC2 launch templates, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ec2-launchtemplate.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ec2-launchtemplate.html).
++ For examples of Amazon EC2 launch templates, see [`AWS::EC2::LaunchTemplate`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ec2-launchtemplate.html).
 
 **Resource types**
 + [AWS::AutoScaling::AutoScalingGroup](aws-resource-autoscaling-autoscalinggroup.md)

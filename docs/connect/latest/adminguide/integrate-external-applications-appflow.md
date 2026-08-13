@@ -42,7 +42,7 @@ In the form, you will be required to complete all the mandatory fields to create
 ### Set up an external application using Amazon AppFlow
 <a name="integrate-ea-appflow-data-source"></a>
 
-You can add an external application integration to an Connect Customer Customer Profiles domain by using Amazon AppFlow by following steps below. You must create a flow for your data source in the Amazon AppFlow console and set Connect Customer Customer Profiles as the destination before continuing in the Customer Profiles console. If you created a flow more than 14 days ago, it has expired and you will need to create a new flow for your integration.
+You can add an external application integration to a Connect Customer Customer Profiles domain by using Amazon AppFlow by following steps below. You must create a flow for your data source in the Amazon AppFlow console and set Connect Customer Customer Profiles as the destination before continuing in the Customer Profiles console. If you created a flow more than 14 days ago, it has expired and you will need to create a new flow for your integration.
 
 You can optionally perform data transformations such as `Arithmetic`, `Filter`, `Map`, `Map_all`, `Mask`, `Merge`, `Truncate`, and `Validate` when using the CloudFormation `AWS::AppFlow::Flow Task` resource before ingestion.
 

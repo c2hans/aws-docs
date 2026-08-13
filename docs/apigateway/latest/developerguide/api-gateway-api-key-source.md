@@ -51,7 +51,7 @@ To have the client submit an API key, set the `value` to `HEADER` in the previou
 ------
 #### [ REST API ]
 
-To choose an API key source for an API by using the API Gateway REST API, call [https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateRestApi.html](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateRestApi.html) as follows:
+To choose an API key source for an API by using the API Gateway REST API, call [`restapi:update`](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateRestApi.html) as follows:
 
 ```
 PATCH /restapis/fugvjdxtri/ HTTP/1.1

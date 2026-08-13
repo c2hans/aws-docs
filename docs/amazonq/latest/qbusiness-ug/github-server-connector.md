@@ -7,7 +7,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 # Connecting GitHub (Server) to Amazon Q Business
 <a name="github-server-connector"></a>
 
-GitHub (Server) is a web-based hosting service for software development providing code storage and management services with version control. You can connect your GitHub (Server) instance to Amazon Q Business—using either the AWS Management Console, CLI, or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q web experience.
+GitHub (Server) is a web-based hosting service for software development providing code storage and management services with version control. You can connect your GitHub (Server) instance to Amazon Q Business—using either the AWS Management Console, CLI, or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API—and create an Amazon Q web experience.
 
 **Topics**
 + [GitHub (Server) connector overview](github-server-overview.md)

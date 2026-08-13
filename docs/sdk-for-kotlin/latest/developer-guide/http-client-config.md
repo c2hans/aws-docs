@@ -83,9 +83,9 @@ DynamoDbClient {
 }
 ```
 
-The possible values for the engine type are `OkHttpEngine`, [OkHttp4Engine](/smithy-kotlin/api/latest/http-client-engine-okhttp4/aws.smithy.kotlin.runtime.http.engine.okhttp4/-ok-http4-engine/index.html), and [CrtHttpEngine](/smithy-kotlin/api/latest/http-client-engine-crt/aws.smithy.kotlin.runtime.http.engine.crt/-crt-http-engine/index.html).
+The possible values for the engine type are [`OkHttpEngine`](/smithy-kotlin/api/latest/http-client-engine-okhttp/aws.smithy.kotlin.runtime.http.engine.okhttp/-ok-http-engine/index.html), [OkHttp4Engine](/smithy-kotlin/api/latest/http-client-engine-okhttp4/aws.smithy.kotlin.runtime.http.engine.okhttp4/-ok-http4-engine/index.html), and [CrtHttpEngine](/smithy-kotlin/api/latest/http-client-engine-crt/aws.smithy.kotlin.runtime.http.engine.crt/-crt-http-engine/index.html).
 
-To use configuration parameters specific to an HTTP engine, you must add the engine as a compile-time dependency. For the `OkHttpEngine`, you add the following dependency using Gradle.
+To use configuration parameters specific to an HTTP engine, you must add the engine as a compile-time dependency. For the [`OkHttpEngine`](/smithy-kotlin/api/latest/http-client-engine-okhttp/aws.smithy.kotlin.runtime.http.engine.okhttp/-ok-http-engine/index.html), you add the following dependency using Gradle.
 
 Replace {{X.Y.Z}} with the version you’re using in your app or with the [latest version available](https://github.com/smithy-lang/smithy-kotlin/releases/latest).
 
@@ -94,7 +94,7 @@ implementation(platform("aws.smithy.kotlin:bom:{{X.Y.Z}}"))
 implementation("aws.smithy.kotlin:http-client-engine-okhttp")
 ```
 
-For the `CrtHttpEngine`, add the following dependency.
+For the [`CrtHttpEngine`](/smithy-kotlin/api/latest/http-client-engine-crt/aws.smithy.kotlin.runtime.http.engine.crt/-crt-http-engine/index.html), add the following dependency.
 
 ```
 implementation(platform("aws.smithy.kotlin:bom:{{X.Y.Z}}"))
@@ -104,14 +104,14 @@ implementation("aws.smithy.kotlin:http-client-engine-crt")
 #### Use the `OkHttp4Engine`
 <a name="http-config-okhttp4engine"></a>
 
-Use the `OkHttp4Engine` if you can’t use the default `OkHttpEngine`. The [smithy-kotlin GitHub repository](https://github.com/smithy-lang/smithy-kotlin/tree/main/runtime/protocol/http-client-engines/http-client-engine-okhttp4) has information about how you configure and use the `OkHttp4Engine`.
+Use the [`OkHttp4Engine`](/smithy-kotlin/api/latest/http-client-engine-okhttp4/aws.smithy.kotlin.runtime.http.engine.okhttp4/-ok-http4-engine/index.html) if you can’t use the default [`OkHttpEngine`](/smithy-kotlin/api/latest/http-client-engine-okhttp/aws.smithy.kotlin.runtime.http.engine.okhttp/-ok-http-engine/index.html). The [smithy-kotlin GitHub repository](https://github.com/smithy-lang/smithy-kotlin/tree/main/runtime/protocol/http-client-engines/http-client-engine-okhttp4) has information about how you configure and use the [`OkHttp4Engine`](/smithy-kotlin/api/latest/http-client-engine-okhttp4/aws.smithy.kotlin.runtime.http.engine.okhttp4/-ok-http4-engine/index.html).
 
 #### Use an explicit HTTP client
 <a name="http-client-explicit-usage"></a>
 
 When you use an explicit HTTP client, you’re responsible for its lifetime, including closing when you no longer need it. An HTTP client must live at least as long as any service client that uses it.
 
-The following code example shows code that keeps the HTTP client stays alive while the `DynamoDbClient` is active. The [use](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime.io/use.html) function makes sure the HTTP client closes properly.
+The following code example shows code that keeps the HTTP client stays alive while the [`DynamoDbClient`](/sdk-for-kotlin/api/latest/dynamodb/aws.sdk.kotlin.services.dynamodb/-dynamo-db-client/index.html) is active. The [use](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime.io/use.html) function makes sure the HTTP client closes properly.
 
 ##### Imports
 <a name="http-client-explicit-usage-ex-imports"></a>

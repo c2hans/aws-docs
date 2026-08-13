@@ -59,7 +59,7 @@ The `data_type` value can be any of the following:
 Non-string data types cannot be cast to `string` in Athena; cast them to `varchar` instead.
 + `binary` – (for data in Parquet)
 + `date` – A date in ISO format, such as `{{YYYY}}-{{MM}}-{{DD}}`. For example, `date '2008-09-15'`. An exception is the OpenCSVSerDe, which uses the number of days elapsed since January 1, 1970. For more information, see [Open CSV SerDe for processing CSV](csv-serde.md).
-+ `timestamp` – Date and time instant in a [https://docs.oracle.com/javase/8/docs/api/java/sql/Timestamp.html](https://docs.oracle.com/javase/8/docs/api/java/sql/Timestamp.html) compatible format up to a maximum resolution of milliseconds, such as `{{yyyy}}-{{MM}}-{{dd}} {{HH}}:{{mm}}:{{ss}}[.f{{...}}]`. For example, `timestamp '2008-09-15 03:04:05.324'`. An exception is the OpenCSVSerDe, which uses `TIMESTAMP` data in the UNIX numeric format (for example, `1579059880000`). For more information, see [Open CSV SerDe for processing CSV](csv-serde.md).
++ `timestamp` – Date and time instant in a [`java.sql.Timestamp`](https://docs.oracle.com/javase/8/docs/api/java/sql/Timestamp.html) compatible format up to a maximum resolution of milliseconds, such as `{{yyyy}}-{{MM}}-{{dd}} {{HH}}:{{mm}}:{{ss}}[.f{{...}}]`. For example, `timestamp '2008-09-15 03:04:05.324'`. An exception is the OpenCSVSerDe, which uses `TIMESTAMP` data in the UNIX numeric format (for example, `1579059880000`). For more information, see [Open CSV SerDe for processing CSV](csv-serde.md).
 + `array` < data\_type >
 + `map` < primitive\_type, data\_type >
 + `struct` < col\_name : data\_type [comment col\_comment] [, ...] >

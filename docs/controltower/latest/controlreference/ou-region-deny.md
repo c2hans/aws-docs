@@ -24,7 +24,7 @@ If you enforce this control, the configurations for the OU can conflict with the
 + **Groups: **Digital sovereignty
 
 **Limitations**
-The OU Region deny control is subject to limitations of the [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requestedregion](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requestedregion) global condition key and [Service Control Policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) in general.
+The OU Region deny control is subject to limitations of the [`aws:RequestedRegion`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requestedregion) global condition key and [Service Control Policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) in general.
 
 **Enable this control from the console**
 

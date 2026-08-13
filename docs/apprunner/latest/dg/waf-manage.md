@@ -93,7 +93,7 @@ The invalid states for your App Runner service include:
 **Note**
 `OPERATION_IN_PROGRESS` state is invalid only if your App Runner service is being deleted.
 
-For more information about AWS WAF public APIs, see [https://docs.aws.amazon.com/waf/latest/APIReference/Welcome.html](https://docs.aws.amazon.com/waf/latest/APIReference/Welcome.html).
+For more information about AWS WAF public APIs, see [*AWS WAF API Reference Guide*](https://docs.aws.amazon.com/waf/latest/APIReference/Welcome.html).
 
 **Note**
 Update your IAM permissions for AWS WAF. For more information, see [Permissions](waf.md#waf.permissions).

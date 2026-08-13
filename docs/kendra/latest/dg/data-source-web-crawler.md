@@ -18,11 +18,11 @@ Abusing Amazon Kendra Web Crawler to aggressively crawl websites or web pages yo
 
 Amazon Kendra has two versions of the web crawler connector. Supported features of each version include:
 
-**Amazon Kendra Web Crawler connector v1.0 / [https://docs.aws.amazon.com/kendra/latest/dg/API_WebCrawlerConfiguration.html](https://docs.aws.amazon.com/kendra/latest/dg/API_WebCrawlerConfiguration.html) API**
+**Amazon Kendra Web Crawler connector v1.0 / [WebCrawlerConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_WebCrawlerConfiguration.html) API**
 + Web proxy
 + Inclusion/exclusion filters
 
-**Amazon Kendra Web Crawler connector v2.0 / [https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) API**
+**Amazon Kendra Web Crawler connector v2.0 / [TemplateConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_TemplateConfiguration.html) API**
 + Field mappings
 + Inclusion/exclusion filters
 + Full and incremental content syncs

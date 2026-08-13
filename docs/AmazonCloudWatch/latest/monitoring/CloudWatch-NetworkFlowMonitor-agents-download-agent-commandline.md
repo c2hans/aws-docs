@@ -108,7 +108,7 @@ Follow the steps here to verify the signature of the Network Flow Monitor agent.
 
    Make a note of the key value because you need it in the next step. In this example, the key value is `3B789C72`.
 
-1. Verify the fingerprint by running the following command. Be sure to replace {{key-value}} with the value from the preceding step. We recommend that you use GPG to verify the fingerprint even if you use RPM to verify the installer package.
+1. Verify the fingerprint by running the following command. Be sure to replace {{key-value}} with the value from the preceding step. You recommend that you use GPG to verify the fingerprint even if you use RPM to verify the installer package.
 
    ```
    PS>  gpg --fingerprint {{key-value}}

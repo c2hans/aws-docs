@@ -8,10 +8,8 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/agent-install-linux
 This topic covers errors that you might encounter during or after installing the AWS Elastic Disaster Recovery agent on Linux source servers. Each section describes an error message, its cause, and the resolution.
 
 **Topics**
-+ [Error: Root privileges required](#error-root-privileges)
 + [Error: Invalid disk path format](#error-disk-path-format)
 + [Error: Kernel headers version mismatch](#error-kernel-headers-mismatch)
-+ [Error: Connection timed out during installation](#error-connection-timeout)
 + [Error: GLIBC version not found](#error-glibc-version)
 + [Error: Unsupported Linux kernel version](#error-unsupported-kernel)
 + [Error: gcc not found](#error-gcc-not-found)
@@ -24,21 +22,8 @@ This topic covers errors that you might encounter during or after installing the
 + [Error: Agent driver build configuration failed](#error-driver-build-config-failed)
 + [Error: Agent driver compilation failed](#error-driver-compile-failed)
 + [Error: SUSE kernel headers package not found](#error-suse-kernel-headers)
-+ [Error: Oracle ASM Filter Driver conflict](#error-oracle-asmfd)
++ [Error: Oracle ASM Filter Driver requires a restart](#error-oracle-asmfd)
 + [Error: Invalid driver state location](#error-driver-state-location)
-
-## Error: Root privileges required
-<a name="error-root-privileges"></a>
-
-**Error message:** You do not have enough privileges to run this application installer. Run the installer again, using root privileges.
-
-**Cause:** You ran the installer without root or sudo privileges. The installer exits immediately without making any changes.
-
-**Resolution:** Run the installer with `sudo`:
-
-```
-$ sudo ./aws-replication-installer-init
-```
 
 ## Error: Invalid disk path format
 <a name="error-disk-path-format"></a>
@@ -119,23 +104,6 @@ $ sudo ./aws-replication-installer-init
 **Note**
 Multiple kernel-headers versions can coexist safely. Installing new headers does not affect the running kernel.
 
-## Error: Connection timed out during installation
-<a name="error-connection-timeout"></a>
-
-**Error message:** urlopen error [Errno 110] Connection timed out
-
-**Cause:** Outbound TCP port 443 is blocked between the source server and AWS Elastic Disaster Recovery endpoints.
-
-**Resolution:** Verify that your firewall or security group allows outbound traffic on port 443 to the following endpoints:
-+ `drs.{{region}}.amazonaws.com`
-+ `s3.{{region}}.amazonaws.com`
-
-Test connectivity with the following command:
-
-```
-$ curl -v https://drs.{{region}}.amazonaws.com
-```
-
 ## Error: GLIBC version not found
 <a name="error-glibc-version"></a>
 
@@ -157,25 +125,79 @@ $ curl -v https://drs.{{region}}.amazonaws.com
 ## Error: gcc not found
 <a name="error-gcc-not-found"></a>
 
-**Error message:** gcc was not found and could not be automatically fetched
+**Error message:** gcc was not found and could not be automatically fetched from the configured repositories
 
-**Cause:** The `gcc` compiler is required to compile the replication driver but is not installed, and the installer could not fetch it from the configured repositories.
+**Cause:** The `gcc` compiler is required to compile the replication driver, and the installer could not install it.
 
-**Resolution:** Install `gcc` manually:
+**Resolution:** Identify which condition prevented the installation and apply the corresponding fix. The following conditions are the most common.
+
+**Unreachable package repositories**
+Check whether the repositories respond:
+
+```
+$ sudo apt-get update
+```
+On RHEL, CentOS, and Amazon Linux, use the following command instead:
+
+```
+$ sudo yum makecache
+```
+On SUSE, use the following command instead:
+
+```
+$ sudo zypper refresh
+```
+If the command fails, restore repository access and run the installer again. If the server reaches the internet through a web proxy, configure that proxy for the package manager as well.
+
+**gcc missing from the repositories**
+Check whether the configured repositories offer `gcc`:
+
+```
+$ apt-cache policy gcc
+```
+On RHEL, CentOS, and Amazon Linux, use the following command instead:
+
+```
+$ yum info gcc
+```
+On SUSE, use the following command instead:
+
+```
+$ zypper info gcc
+```
+If no candidate version is listed, and this server is not permitted to reach an external repository, install `gcc` and `make` from local media or from an internal repository, and then run the installer again.
+
+**Package manager lock contention**
+Check whether another package operation is running:
+
+```
+$ pgrep -af 'apt|dpkg|yum|dnf|zypper|unattended'
+```
+The pattern covers the package managers and the unattended upgrade service, which is a common holder of the lock. Because the command matches full command lines, it can also list itself; disregard that entry. If it lists a package operation, wait for that operation to finish and then run the installer again.
+
+**Insufficient free space**
+Check the file systems that hold the package cache and the installation target:
+
+```
+$ df -h /var /usr
+```
+If either is full, delete unneeded files and run the installer again.
+
+If none of the preceding conditions applies, install `gcc` and `make` manually and then run the installer again:
 + **RHEL/CentOS/Amazon Linux:**
 
   ```
-  $ sudo yum install gcc
+  $ sudo yum install gcc make
   ```
 + **Debian/Ubuntu:**
 
   ```
-  $ sudo apt-get install gcc
+  $ sudo apt-get install gcc make
   ```
 + **SUSE:**
 
   ```
-  $ sudo zypper install gcc
+  $ sudo zypper install gcc make
   ```
 
 ## Error: Permission denied when loading kernel driver
@@ -412,17 +434,14 @@ The `--force-volumes` option disables automatic disk detection. Manually verify 
 
 1. If the error persists, collect the installation log (`aws_replication_agent_installer.log`) and contact AWS Support.
 
-## Error: Oracle ASM Filter Driver conflict
+## Error: Oracle ASM Filter Driver requires a restart
 <a name="error-oracle-asmfd"></a>
 
-**Error message:** The agent cannot be installed on this server because Oracle ASM Filter Driver is active
+**Error message:** Oracle ASM Filter Driver detected. Please reboot to start replication.
 
-**Cause:** Oracle ASM Filter Driver (ASMFD) conflicts with the AWS Elastic Disaster Recovery replication driver at the block device level.
+**Cause:** The Oracle ASM Filter Driver (ASMFD) is loaded, but the AWS Elastic Disaster Recovery replication driver has not loaded yet. Installation completes successfully, but replication cannot start until the replication driver loads.
 
-**Resolution:** Deactivate ASM Filter Driver, reboot the server, then run the installer. You can reactivate ASMFD after replication is active.
-
-**Important**
-Consult your DBA before disabling ASMFD.
+**Resolution:** Restart the source server. The replication driver loads during startup and replication begins automatically. You do not have to deactivate ASMFD.
 
 ## Error: Invalid driver state location
 <a name="error-driver-state-location"></a>

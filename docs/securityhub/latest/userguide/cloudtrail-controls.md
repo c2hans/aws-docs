@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the AWS CloudTrail service and res
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/multi-region-cloudtrail-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/multi-region-cloudtrail-enabled.html)
+**AWS Config rule:** [multi-region-cloudtrail-enabled](https://docs.aws.amazon.com/config/latest/developerguide/multi-region-cloudtrail-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -68,7 +68,7 @@ To update an existing trail, see [Updating a trail](https://docs.aws.amazon.com/
 
 **Resource type:** `AWS::CloudTrail::Trail`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloud-trail-encryption-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/cloud-trail-encryption-enabled.html)
+**AWS Config rule:** [cloud-trail-encryption-enabled](https://docs.aws.amazon.com/config/latest/developerguide/cloud-trail-encryption-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -94,7 +94,7 @@ To enable SSE-KMS encryption for CloudTrail log files, see [Update a trail to us
 
 **Resource type:** `AWS::::Account`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudtrail-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudtrail-enabled.html)
+**AWS Config rule:** [cloudtrail-enabled](https://docs.aws.amazon.com/config/latest/developerguide/cloudtrail-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -120,7 +120,7 @@ To get started with CloudTrail and create a trail, see the [Getting started with
 
 **Resource type:** `AWS::CloudTrail::Trail`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloud-trail-log-file-validation-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/cloud-trail-log-file-validation-enabled.html)
+**AWS Config rule:** [cloud-trail-log-file-validation-enabled](https://docs.aws.amazon.com/config/latest/developerguide/cloud-trail-log-file-validation-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -148,7 +148,7 @@ To enable CloudTrail log file validation, see [Enabling log file integrity valid
 
 **Resource type:** `AWS::CloudTrail::Trail`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloud-trail-cloud-watch-logs-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/cloud-trail-cloud-watch-logs-enabled.html)
+**AWS Config rule:** [cloud-trail-cloud-watch-logs-enabled](https://docs.aws.amazon.com/config/latest/developerguide/cloud-trail-cloud-watch-logs-enabled.html)
 
 **Schedule type:** Periodic
 
@@ -280,7 +280,7 @@ To add tags to a CloudTrail trail, see [AddTags](https://docs.aws.amazon.com/aws
 
 **Resource type:** `AWS::CloudTrail::EventDataStore`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/event-data-store-cmk-encryption-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/event-data-store-cmk-encryption-enabled.html)
+**AWS Config rule:** [event-data-store-cmk-encryption-enabled](https://docs.aws.amazon.com/config/latest/developerguide/event-data-store-cmk-encryption-enabled.html)
 
 **Schedule type:** Periodic
 

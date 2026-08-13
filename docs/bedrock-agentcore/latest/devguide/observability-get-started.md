@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observ
 # Get started with AgentCore Observability
 <a name="observability-get-started"></a>
 
-Amazon Bedrock Amazon Bedrock AgentCore Observability helps you trace, debug, and monitor agent performance in production environments. This guide helps you implement observability features in your agent applications.
+Amazon Bedrock AgentCore Observability helps you trace, debug, and monitor agent performance in production environments. This guide helps you implement observability features in your agent applications.
 
 **Topics**
 + [Prerequisites](#prerequisites)

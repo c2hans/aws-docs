@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/send-personalized-email-ad
 # Advanced email personalization
 <a name="send-personalized-email-advanced"></a>
 
- If you're using a *stored template*, that is, you've created a [https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Template.html](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Template.html) resource in Amazon SES by using the `CreateEmailTemplate` operation with the SES v2 API, you can take advantage of the Handlebars system to create templates that include advanced features, such as nested attributes, array iteration, basic conditional statements, and the creation of inline partials. This section provides examples of these features.
+ If you're using a *stored template*, that is, you've created a [`Template`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Template.html) resource in Amazon SES by using the `CreateEmailTemplate` operation with the SES v2 API, you can take advantage of the Handlebars system to create templates that include advanced features, such as nested attributes, array iteration, basic conditional statements, and the creation of inline partials. This section provides examples of these features.
 
 Handlebars includes additional features beyond those documented in this section. For more information, see [Built-In Helpers](https://handlebarsjs.com/guide/builtin-helpers.html) at [handlebarsjs.com](http://handlebarsjs.com).
 

@@ -104,13 +104,13 @@ TRACE_ID="1-$HEX_TIME-$GUID"
 ```
 
 See the Scorekeep sample application for scripts that create trace IDs and send segments to the X-Ray daemon.
-+ Python – [https://github.com/awslabs/eb-java-scorekeep/blob/xray/bin/xray_start.py](https://github.com/awslabs/eb-java-scorekeep/blob/xray/bin/xray_start.py)
-+ Bash – [https://github.com/awslabs/eb-java-scorekeep/blob/xray/bin/xray_start.sh](https://github.com/awslabs/eb-java-scorekeep/blob/xray/bin/xray_start.sh)
++ Python – [`xray_start.py`](https://github.com/awslabs/eb-java-scorekeep/blob/xray/bin/xray_start.py)
++ Bash – [`xray_start.sh`](https://github.com/awslabs/eb-java-scorekeep/blob/xray/bin/xray_start.sh)
 
 ## Using PutTraceSegments
 <a name="xray-api-segments"></a>
 
-You can upload segment documents with the [https://docs.aws.amazon.com/xray/latest/api/API_PutTraceSegments.html](https://docs.aws.amazon.com/xray/latest/api/API_PutTraceSegments.html) API. The API has a single parameter, `TraceSegmentDocuments`, that takes a list of JSON segment documents.
+You can upload segment documents with the [`PutTraceSegments`](https://docs.aws.amazon.com/xray/latest/api/API_PutTraceSegments.html) API. The API has a single parameter, `TraceSegmentDocuments`, that takes a list of JSON segment documents.
 
 With the AWS CLI, use the `aws xray put-trace-segments` command to send segment documents directly to X-Ray.
 

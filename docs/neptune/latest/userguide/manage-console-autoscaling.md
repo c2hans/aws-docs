@@ -81,7 +81,7 @@ Enabling auto-scaling for a Neptune DB cluster involves three steps:
 
 The first step in enabling auto-scaling for a Neptune DB cluster is to register the cluster with Application Auto Scaling, using the AWS CLI or one of the Application Auto Scaling SDKs. The cluster must already have one primary instance and at least one read-replica instance:
 
-For example, to register a cluster to be auto-scaled with from one to eight additional replicas, you could use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/register-scalable-target.html](https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/register-scalable-target.html) command as follows:
+For example, to register a cluster to be auto-scaled with from one to eight additional replicas, you could use the AWS CLI [`register-scalable-target`](https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/register-scalable-target.html) command as follows:
 
 ```
 aws application-autoscaling register-scalable-target \
@@ -92,7 +92,7 @@ aws application-autoscaling register-scalable-target \
   --max-capacity 8
 ```
 
-This is equivalent to using the the [https://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_RegisterScalableTarget.html](https://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_RegisterScalableTarget.html) Application Auto Scaling API operation.
+This is equivalent to using the the [`RegisterScalableTarget`](https://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_RegisterScalableTarget.html) Application Auto Scaling API operation.
 
 The AWS CLI `register-scalable-target` command takes the following parameters:
 + **`service-namespace`**   –   Set to `neptune`.
@@ -140,7 +140,7 @@ The **`DisableScaleIn`** element is a Boolean that if present and set to `true` 
 ###
 <a name="manage-console-autoscaling-apply-policy"></a>
 
-After registering your Neptune DB cluster with Application Auto Scaling and defining a JSON scaling policy in a text file, next apply the scaling policy to the registered DB cluster. You can use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/put-scaling-policy.html](https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/put-scaling-policy.html) command to do this, with parameters like the following:
+After registering your Neptune DB cluster with Application Auto Scaling and defining a JSON scaling policy in a text file, next apply the scaling policy to the registered DB cluster. You can use the AWS CLI [`put-scaling-policy`](https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/put-scaling-policy.html) command to do this, with parameters like the following:
 
 ```
 aws application-autoscaling put-scaling-policy \
@@ -154,7 +154,7 @@ aws application-autoscaling put-scaling-policy \
 
 When you have applied the auto-scaling policy, auto-scaling is enabled on your DB cluster.
 
-You can also use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/put-scaling-policy.html](https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/put-scaling-policy.html) command to update an existing auto-scaling policy.
+You can also use the AWS CLI [`put-scaling-policy`](https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/put-scaling-policy.html) command to update an existing auto-scaling policy.
 
 See also [PutScalingPolicy](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_PutScalingPolicy.html) in the *Application Auto Scaling API Reference*.
 

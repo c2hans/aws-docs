@@ -19,11 +19,11 @@ To avoid unexpected results with auto-approval delays on Amazon Linux 2 and Amaz
 **Note**
 If an Amazon Linux 2 or Amazon Linux 2023 repository does not provide release date information for packages, Patch Manager uses the build time of the package as the date for auto-approval date specifications. If the build time of the package can't be determined, Patch Manager uses a default date of January 1st, 1970. This results in Patch Manager bypassing any auto-approval date specifications in patch baselines that are configured to approve patches for any date after January 1st, 1970.
 
-In most cases, the auto-approval wait time before patches are installed is calculated from an `Updated Date` value in `updateinfo.xml`, not a `Release Date` value. The following are important details about these date calculations:
+Usually, the auto-approval wait time before patches are installed is calculated from an `Updated Date` value in `updateinfo.xml`, not a `Release Date` value. The following are important details about these date calculations:
 + The `Release Date` is the date a *notice* is released. It does not mean the package is necessarily available in the associated repositories yet.
 + The `Update Date` is the last date the notice was updated. An update to a notice can represent something as small as a text or description update. It does not mean the package was released from that date or is necessarily available in the associated repositories yet.
 
-  This means that a package could have an `Update Date` value of July 7 but not be available for installation until (for example) July 13. Suppose for this case that a patch baseline that specifies a 7-day auto-approval delay runs in an `Install` operation on July 14. Because the `Update Date` value is 7 days prior to the run date, the patches and updates in the package are installed on July 14. The installation happens even though only 1 day has passed since the package became available for actual installation.
+  This means that a package could have an `Update Date` value of July 7 but not be available for installation until (for example) July 13. Suppose for this case that a patch baseline that specifies a 7-day auto-approval delay runs in an `Install` operation on July 14. Because the `Update Date` value is 7 days before the run date, the patches and updates in the package are installed on July 14. The installation happens even though only 1 day has passed since the package became available for actual installation.
 + A package containing operating system or application patches can be updated more than once after initial release.
 + A package can be released into the AWS managed repositories but then rolled back if issues are later discovered with it.
 

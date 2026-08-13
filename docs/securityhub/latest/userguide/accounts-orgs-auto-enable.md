@@ -52,14 +52,14 @@ Choose your preferred method, and follow the steps to automatically enable Secur
 
 **To automatically enable new organization accounts as Security Hub CSPM members**
 
-Invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateOrganizationConfiguration.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateOrganizationConfiguration.html) API from the delegated administrator account. Set the `AutoEnable` field to `true` to automatically enable Security Hub CSPM in new organization accounts.
+Invoke the [`UpdateOrganizationConfiguration`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateOrganizationConfiguration.html) API from the delegated administrator account. Set the `AutoEnable` field to `true` to automatically enable Security Hub CSPM in new organization accounts.
 
 ------
 #### [ AWS CLI ]
 
 **To automatically enable new organization accounts as Security Hub CSPM members**
 
-Run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-organization-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-organization-configuration.html) command from the delegated administrator account. Include the `auto-enable` parameter to automatically enable Security Hub CSPM in new organization accounts.
+Run the [`update-organization-configuration`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-organization-configuration.html) command from the delegated administrator account. Include the `auto-enable` parameter to automatically enable Security Hub CSPM in new organization accounts.
 
 ```
 aws securityhub update-organization-configuration --auto-enable

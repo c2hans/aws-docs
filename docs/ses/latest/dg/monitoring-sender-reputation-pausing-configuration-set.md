@@ -45,7 +45,7 @@ The first step in configuring automatic pausing of email sending is to create an
 
 1. On the **Attach permissions policies** page, choose the following policies:
    + **AWS LambdaBasicExecutionRole**
-   + **AmazonSESFullAccess** (We recommend you use a custom role tailored to your needs that includes permissions to call [https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateConfigurationSetSendingEnabled.html](https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateConfigurationSetSendingEnabled.html).)
+   + **AmazonSESFullAccess** (We recommend you use a custom role tailored to your needs that includes permissions to call [`UpdateConfigurationSetSendingEnabled`](https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateConfigurationSetSendingEnabled.html).)
 **Tip**
 Use the search box at the top of the list of policies to quickly locate these policies.
 

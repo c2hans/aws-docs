@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/list-data-
 # Listing data stores
 <a name="list-data-stores"></a>
 
-Use the `ListDatastores` action to list available [data stores](getting-started-concepts.md#concept-data-store) in AWS HealthImaging. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListDatastores.html](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListDatastores.html) in the *AWS HealthImaging API Reference*.
+Use the `ListDatastores` action to list available [data stores](getting-started-concepts.md#concept-data-store) in AWS HealthImaging. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`ListDatastores`](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListDatastores.html) in the *AWS HealthImaging API Reference*.
 
 **To list data stores**
 Choose a menu based on your access preference to AWS HealthImaging.

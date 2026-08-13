@@ -30,6 +30,9 @@ Represents the equivalent of a Hive user-defined function (`UDF`) definition.
 + `OwnerName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Single-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-oneLine).
 
   The owner of the function.
++ `FunctionType` – UTF-8 string (valid values: `REGULAR_FUNCTION` \| `AGGREGATE_FUNCTION` \| `STORED_PROCEDURE`).
+
+  The type of the function.
 + `OwnerType` – UTF-8 string (valid values: `USER` \| `ROLE` \| `GROUP`).
 
   The owner type.
@@ -58,6 +61,9 @@ A structure used to create or update a user-defined function.
 + `OwnerName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Single-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-oneLine).
 
   The owner of the function.
++ `FunctionType` – UTF-8 string (valid values: `REGULAR_FUNCTION` \| `AGGREGATE_FUNCTION` \| `STORED_PROCEDURE`).
+
+  The type of the function.
 + `OwnerType` – UTF-8 string (valid values: `USER` \| `ROLE` \| `GROUP`).
 
   The owner type.
@@ -198,6 +204,11 @@ Retrieves multiple function definitions from the Data Catalog.
 + `Pattern` – *Required:* UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Single-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-oneLine).
 
   An optional function-name pattern string that filters the function definitions returned.
++ `FunctionType` – UTF-8 string (valid values: `REGULAR_FUNCTION` \| `AGGREGATE_FUNCTION` \| `STORED_PROCEDURE`).
+
+  An optional function-type pattern string that filters the function definitions returned from Amazon Redshift Federated Permissions Catalog.
+
+  Specify a value of `REGULAR_FUNCTION` or `STORED_PROCEDURE`. The `STORED_PROCEDURE` function type is only compatible with Amazon Redshift Federated Permissions Catalog.
 + `NextToken` – UTF-8 string.
 
   A continuation token, if this is a continuation call.

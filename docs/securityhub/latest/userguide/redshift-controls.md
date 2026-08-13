@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon Redshift service and re
 
 **Resource type:** `AWS::Redshift::Cluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-public-access-check.html](https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-public-access-check.html)
+**AWS Config rule:** [redshift-cluster-public-access-check](https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-public-access-check.html)
 
 **Schedule type:** Change triggered
 
@@ -46,7 +46,7 @@ To update an Amazon Redshift cluster to disable public access, see [Modifying a 
 
 **Resource type:** `AWS::Redshift::Cluster` `AWS::Redshift::ClusterParameterGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/redshift-require-tls-ssl.html](https://docs.aws.amazon.com/config/latest/developerguide/redshift-require-tls-ssl.html)
+**AWS Config rule:** [redshift-require-tls-ssl](https://docs.aws.amazon.com/config/latest/developerguide/redshift-require-tls-ssl.html)
 
 **Schedule type:** Change triggered
 
@@ -72,7 +72,7 @@ To update an Amazon Redshift parameter group to require encryption, see [Modifyi
 
 **Resource type:** `AWS::Redshift::Cluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/redshift-backup-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/redshift-backup-enabled.html)
+**AWS Config rule:** [redshift-backup-enabled](https://docs.aws.amazon.com/config/latest/developerguide/redshift-backup-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -128,7 +128,7 @@ To configure audit logging for an Amazon Redshift cluster, see [Configuring audi
 
 **Resource type:** `AWS::Redshift::Cluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-maintenancesettings-check.html](https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-maintenancesettings-check.html)
+**AWS Config rule:** [redshift-cluster-maintenancesettings-check](https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-maintenancesettings-check.html)
 
 **Schedule type:** Change triggered
 
@@ -159,7 +159,7 @@ aws redshift modify-cluster --cluster-identifier {{clustername}} --allow-version
 
 **Resource type:** `AWS::Redshift::Cluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/redshift-enhanced-vpc-routing-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/redshift-enhanced-vpc-routing-enabled.html)
+**AWS Config rule:** [redshift-enhanced-vpc-routing-enabled](https://docs.aws.amazon.com/config/latest/developerguide/redshift-enhanced-vpc-routing-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -185,7 +185,7 @@ For detailed remediation instructions, see [Enabling enhanced VPC routing](https
 
 **Resource type:** `AWS::Redshift::Cluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/redshift-default-admin-check.html](https://docs.aws.amazon.com/config/latest/developerguide/redshift-default-admin-check.html)
+**AWS Config rule:** [redshift-default-admin-check](https://docs.aws.amazon.com/config/latest/developerguide/redshift-default-admin-check.html)
 
 **Schedule type:** Change triggered
 
@@ -211,7 +211,7 @@ You can't change the admin username for your Amazon Redshift cluster after creat
 
 **Resource type:** `AWS::Redshift::Cluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-kms-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-kms-enabled.html)
+**AWS Config rule:** [redshift-cluster-kms-enabled](https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-kms-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -361,7 +361,7 @@ To add tags to a Redshift cluster subnet group, see [Tagging resources in Amazon
 
 **Resource type:** `AWS::Redshift::Cluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/redshift-unrestricted-port-access.html](https://docs.aws.amazon.com/config/latest/developerguide/redshift-unrestricted-port-access.html)
+**AWS Config rule:** [redshift-unrestricted-port-access](https://docs.aws.amazon.com/config/latest/developerguide/redshift-unrestricted-port-access.html)
 
 **Schedule type:** Periodic
 
@@ -385,7 +385,7 @@ To restrict ingress on the Redshift cluster port to restricted origins, see [Wor
 
 **Resource type:** `AWS::Redshift::ClusterSubnetGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-subnet-group-multi-az.html](https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-subnet-group-multi-az.html)
+**AWS Config rule:** [redshift-cluster-subnet-group-multi-az](https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-subnet-group-multi-az.html)
 
 **Schedule type:** Change triggered
 
@@ -409,7 +409,7 @@ To modify a Redshift cluster subnet group to span multiple AZs, see [Modifying a
 
 **Resource type:** `AWS::Redshift::ClusterParameterGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-parameter-group-tagged.html](https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-parameter-group-tagged.html)
+**AWS Config rule:** [redshift-cluster-parameter-group-tagged](https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-parameter-group-tagged.html)
 
 **Schedule type:** Change triggered
 
@@ -440,7 +440,7 @@ For information about adding tags to an Amazon Redshift cluster parameter group,
 
 **Resource type:** `AWS::Redshift::Cluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-multi-az-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-multi-az-enabled.html)
+**AWS Config rule:** [redshift-cluster-multi-az-enabled](https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-multi-az-enabled.html)
 
 **Schedule type:** Change triggered
 

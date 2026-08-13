@@ -17,7 +17,7 @@ Security Hub CSPM automatically sends all new findings and all updates to existi
 
 You then configure EventBridge rules to respond to each type of event.
 
-For more information about using EventBridge, see the [https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html](https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html).
+For more information about using EventBridge, see the [*Amazon EventBridge User Guide*](https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html).
 
 **Note**
 As a best practice, make sure that the permissions granted to your users to access EventBridge use least-privilege AWS Identity and Access Management (IAM) policies that grant only the required permissions.

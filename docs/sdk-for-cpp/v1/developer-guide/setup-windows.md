@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/setup-win
 
 To set up the AWS SDK for C\+\+, you can either build the SDK yourself directly from the source or download the libraries using a package manager.
 
-The SDK source is separated into individual packages by service. Installing the entire SDK can take up to an hour. Installing only the specific subset of services that your program uses decreases installation time and also reduces size on disk. To choose which services to install, you need to know the package name of each service your program uses. You can see the list of package directories at [https://github.com/aws/aws-sdk-cpp](https://github.com/aws/aws-sdk-cpp) on GitHub. The package name is the suffix of the directory name for the service.
+The SDK source is separated into individual packages by service. Installing the entire SDK can take up to an hour. Installing only the specific subset of services that your program uses decreases installation time and also reduces size on disk. To choose which services to install, you need to know the package name of each service your program uses. You can see the list of package directories at [`aws/aws-sdk-cpp`](https://github.com/aws/aws-sdk-cpp) on GitHub. The package name is the suffix of the directory name for the service.
 
 ```
 aws-sdk-cpp\aws-cpp-sdk-{{<packageName>}}   # Repo directory name and packageName
@@ -43,7 +43,7 @@ Also, the Microsoft Build Engine (MSBuild) must be able to locate the curl `dll`
 
 When *Building the SDK from source* in the procedure that follows, see Step 5 (Generate build files) for required command syntax to build curl into your SDK.
 
-When writing your code, you must set `caFile` in the [Configuring AWS SDK for C\+\+ service clients in code](client-config.md) to the location of your certificate file. For an example using Amazon Transcribe, see [https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/transcribe-streaming](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/transcribe-streaming) in the *AWS Code Examples Repository* on GitHub.
+When writing your code, you must set `caFile` in the [Configuring AWS SDK for C\+\+ service clients in code](client-config.md) to the location of your certificate file. For an example using Amazon Transcribe, see [`transcribe-streaming`](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/transcribe-streaming) in the *AWS Code Examples Repository* on GitHub.
 
 ## Building the SDK from source
 <a name="setup-windows-from-source"></a>
@@ -60,7 +60,7 @@ You can build the SDK from source using command-line tools. Using this method, y
 
    Version 1.11 uses git submodules to wrap external dependencies. This includes the [CRT libraries](https://docs.aws.amazon.com/sdkref/latest/guide/common-runtime.html) described in the *AWS SDKs and Tools Reference Guide*.
 
-   Download or clone the SDK source from [https://github.com/aws/aws-sdk-cpp](https://github.com/aws/aws-sdk-cpp) on GitHub:
+   Download or clone the SDK source from [`aws/aws-sdk-cpp`](https://github.com/aws/aws-sdk-cpp) on GitHub:
    + Clone with Git: HTTPS
 
      ```

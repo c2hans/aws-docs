@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Ma
 <a name="API_ManualEvidence_Contents"></a>
 
  ** evidenceFileName **   <a name="auditmanager-Type-ManualEvidence-evidenceFileName"></a>
-The name of the file that's uploaded as manual evidence. This name is populated using the `evidenceFileName` value from the [https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_GetEvidenceFileUploadUrl.html](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_GetEvidenceFileUploadUrl.html) API response.
+The name of the file that's uploaded as manual evidence. This name is populated using the `evidenceFileName` value from the [`GetEvidenceFileUploadUrl`](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_GetEvidenceFileUploadUrl.html) API response.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 300.
 Pattern: `[^\/]*`

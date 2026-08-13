@@ -31,7 +31,7 @@ After you specify the case type and classification, you can specify the descript
 
 1. **Description** – Describe your support case. This is the most important information that you provide to Support. For some service and category combinations, a prompt appears with related information. Use these links to help resolve your issue. For more information, see [Describing your problem](case-management.md#describing-your-problem).
 
-1. **Attachments** – Attach screenshots and other files that can help support agents resolve your case faster. You can attach up to three files. Each file can be up to 5 MB.
+1. **Attachments** – Attach screenshots and other files that can help support agents resolve your case faster. You can attach up to 10 files. Each file can be up to 150 MB.
 
 After you add your case details, you can choose how you want to be contacted.
 

@@ -12,6 +12,7 @@ This documentation is for Amazon Nova Version 1. For documentation releases for 
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [SageMaker Python SDK documentation update](#doc-history) | The Nova Forge SDK documentation pages have been replaced with SageMaker Python SDK v3 documentation covering model customization, evaluation, and deployment. | August 6, 2026 |
 | [Amazon Nova 2.0 release](#doc-history) | Amazon Nova 2.0 is now available with new models: Amazon Nova Lite, , Amazon Nova Sonic, and . See the [Amazon Nova 2.0 Developer Guide](https://docs.aws.amazon.com/nova/latest/nova2-userguide/what-is.html) for more information. | December 2, 2025 |
 | [Web grounding](#doc-history) | You can now use web grounding to connect Amazon Nova models to real-time information, to result in more accurate and reliable responses. See [Grounding responses with real-time search results](https://docs.aws.amazon.com/nova/latest/userguide/grounding.html) for more information. | October 28, 2025 |
 | [Multimodal embeddings](#doc-history) | You can now use the Amazon Nova Embeddings model. See [Using Amazon Nova Embeddings](https://docs.aws.amazon.com/nova/latest/userguide/nova-embeddings.html) for more information. | October 28, 2025 |

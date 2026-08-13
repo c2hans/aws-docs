@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-library-get
 # Getting Library Entity Details
 <a name="bda-library-getting-entity-details"></a>
 
-Use the [GetDataAutomationLibraryEntity](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-automation_GetDataAutomationLibraryEntity.html) api to retrieve the list of vocabulary for an entity.
+Use the [GetDataAutomationLibraryEntity](bedrock/latest/APIReference/API_data-automation_GetDataAutomationLibraryEntity.html) API to retrieve the list of vocabulary for an entity.
 
 ## AWS CLI Example:
 <a name="bda-library-getting-entity-details-cli"></a>

@@ -12,7 +12,7 @@ A finding from a `BatchUpdateFindings` request that Security Hub CSPM was unable
 
  ** ErrorCode **   <a name="securityhub-Type-BatchUpdateFindingsUnprocessedFinding-ErrorCode"></a>
 The code associated with the error. Possible values are:
-+  `ConcurrentUpdateError` - Another request attempted to update the finding while this request was being processed. This error may also occur if you call [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) and [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) at the same time.
++  `ConcurrentUpdateError` - Another request attempted to update the finding while this request was being processed. This error may also occur if you call [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) and [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) at the same time.
 +  `DuplicatedFindingIdentifier` - The request included two or more findings with the same `FindingIdentifier`.
 +  `FindingNotFound` - The `FindingIdentifier` included in the request did not match an existing finding.
 +  `FindingSizeExceeded` - The finding size was greater than the permissible value of 240 KB.

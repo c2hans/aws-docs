@@ -29,7 +29,7 @@ The activity feed shows calls, chats, tasks, and comments from the most recent t
 
 Contacts will have an indicator of Ongoing or Completed. If the contact was completed, there will a Completed/Terminated date/time and a link to **Contact details** that takes user directly to the **Contact details** page.
 
-Only users who have access to this page will be able to see contact details for a given contact. Even within this page, there are more granular permissions so different users may see different information. Information might include: basic contact details/contact attachments, transcripts and recordings with Contact Lens categories, sentiment, and summaries, recordings, etc.
+Only users who have access to this page will be able to see contact details for a given contact. Even within this page, there are more granular permissions so different users may see different information. Information might include: basic contact details/contact attachments, transcripts and recordings with conversational analytics categories, sentiment, and summaries, recordings, etc.
 
 ![The activity feed.](http://docs.aws.amazon.com/connect/latest/adminguide/images/cases-agent-application-activity-feed.png)
 

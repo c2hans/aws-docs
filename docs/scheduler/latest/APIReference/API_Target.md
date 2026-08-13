@@ -29,12 +29,12 @@ Type: [DeadLetterConfig](API_DeadLetterConfig.md) object
 Required: No
 
  ** EcsParameters **   <a name="scheduler-Type-Target-EcsParameters"></a>
-The templated target type for the Amazon ECS [https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTask.html](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTask.html) API operation.
+The templated target type for the Amazon ECS [`RunTask`](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTask.html) API operation.
 Type: [EcsParameters](API_EcsParameters.md) object
 Required: No
 
  ** EventBridgeParameters **   <a name="scheduler-Type-Target-EventBridgeParameters"></a>
-The templated target type for the EventBridge [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html) API operation.
+The templated target type for the EventBridge [`PutEvents`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html) API operation.
 Type: [EventBridgeParameters](API_EventBridgeParameters.md) object
 Required: No
 
@@ -45,7 +45,7 @@ Length Constraints: Minimum length of 1.
 Required: No
 
  ** KinesisParameters **   <a name="scheduler-Type-Target-KinesisParameters"></a>
-The templated target type for the Amazon Kinesis [https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecord.html](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecord.html) API operation.
+The templated target type for the Amazon Kinesis [`PutRecord`](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecord.html) API operation.
 Type: [KinesisParameters](API_KinesisParameters.md) object
 Required: No
 
@@ -55,12 +55,12 @@ Type: [RetryPolicy](API_RetryPolicy.md) object
 Required: No
 
  ** SageMakerPipelineParameters **   <a name="scheduler-Type-Target-SageMakerPipelineParameters"></a>
-The templated target type for the Amazon SageMaker [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartPipelineExecution.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartPipelineExecution.html) API operation.
+The templated target type for the Amazon SageMaker [`StartPipelineExecution`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartPipelineExecution.html) API operation.
 Type: [SageMakerPipelineParameters](API_SageMakerPipelineParameters.md) object
 Required: No
 
  ** SqsParameters **   <a name="scheduler-Type-Target-SqsParameters"></a>
-The templated target type for the Amazon SQS [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html) API operation. Contains the message group ID to use when the target is a FIFO queue. If you specify an Amazon SQS FIFO queue as a target, the queue must have content-based deduplication enabled. For more information, see [Using the Amazon SQS message deduplication ID](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/using-messagededuplicationid-property.html) in the *Amazon SQS Developer Guide*.
+The templated target type for the Amazon SQS [`SendMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html) API operation. Contains the message group ID to use when the target is a FIFO queue. If you specify an Amazon SQS FIFO queue as a target, the queue must have content-based deduplication enabled. For more information, see [Using the Amazon SQS message deduplication ID](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/using-messagededuplicationid-property.html) in the *Amazon SQS Developer Guide*.
 Type: [SqsParameters](API_SqsParameters.md) object
 Required: No
 

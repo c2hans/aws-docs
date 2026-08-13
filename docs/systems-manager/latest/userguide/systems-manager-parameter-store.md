@@ -72,8 +72,8 @@ Parameter Store supports the following features:
   + Lambda functions can retrieve parameters and secrets using the [Parameters and Secrets Lambda Extension](https://docs.aws.amazon.com/systems-manager/latest/userguide/ps-integration-lambda-extensions.html).
   + Amazon Elastic Container Service and AWS Fargate allow you to [inject environmental variables](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/secrets-envvar-ssm-paramstore.html) whose values are managed centrally in Parameter Store.
   + AWS CloudFormation templates can reference [parameter values](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/dynamic-references-ssm.html).
-  + AWS AppConfig enables you to create [configuration profiles that reference parameters](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-free-form-configuration-and-profile-create-console.html), allowing you to safely deploy configuration changes using features such as gradual rollouts, alarm-based rollbacks, and built-in data validation.
-  + AWS CodeBuild enables you to [define environmental variables](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html#build-spec.env.parameter-store) whose values are dynamically retrieved from Parameter Store at build time.
+  + AWS AppConfig lets you create [configuration profiles that reference parameters](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-free-form-configuration-and-profile-create-console.html). You can safely deploy configuration changes using features such as gradual rollouts, alarm-based rollbacks, and built-in data validation.
+  + AWS CodeBuild lets you [define environmental variables](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html#build-spec.env.parameter-store) whose values are dynamically retrieved from Parameter Store at build time.
 + **Shared account access**
 
   Centralize configuration data in a single AWS account and share parameters with other accounts that need access. For more information, see [Working with shared parameters in Parameter Store](parameter-store-shared-parameters.md).

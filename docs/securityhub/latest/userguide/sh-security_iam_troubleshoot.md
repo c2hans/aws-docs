@@ -17,7 +17,7 @@ Use the following information to help you diagnose and fix common issues that yo
 ## I am not authorized to perform an action in Security Hub
 <a name="sh-security_iam_troubleshoot-no-permissions"></a>
 
-If the AWS Management Console tells you that you're not authorized to perform an action, then you must contact your administrator for assistance. Your administrator is the person that provided you with your sign-in credentials.
+If the AWS Management Console tells you that you are not authorized to perform an action, then you must contact your administrator for assistance. Your administrator is the person that provided you with your sign-in credentials.
 
 The following example error occurs when the user `mateojackson` tries to use the console to view details about a {{widget}} but does not have `securityhub:{{GetWidget}}` permissions.
 

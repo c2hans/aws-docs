@@ -45,15 +45,6 @@ For a more detailed list of retiring platform branches that includes their speci
 
 |  Runtime version / platform branch  |  Target retirement date  |
 | --- | --- |
-| Docker AL2 | June 30, 2026 |
-| ECS AL2 | June 30, 2026 |
-| Go 1 AL2 | June 30, 2026 |
-| Corretto 8 AL2 | June 30, 2026 |
-| Corretto 11 AL2 | June 30, 2026 |
-| Corretto 17 AL2 | June 30, 2026 |
-| Corretto 8 with Tomcat 9 AL2 | June 30, 2026 |
-| Corretto 11 with Tomcat 9 AL2 | June 30, 2026 |
-| .NET Core AL2 | June 30, 2026 |
 | Python 3.9 AL2023 | July 31, 2026 |
 | Ruby 3.2 AL2023 | July 31, 2026 |
 | Node.js 20 AL2023 | July 31, 2026 |
@@ -61,6 +52,8 @@ For a more detailed list of retiring platform branches that includes their speci
 | PHP 8.2 AL2023 | March 31, 2027 |
 | .NET 9 AL2023 | March 31, 2027 |
 | .NET 8 AL2023 | March 31, 2027 |
+| Ruby 3.3 AL2023 | July 31, 2027 |
+| Node.js 22 AL2023 | July 31, 2027 |
 
 ## Retired platform branch history
 <a name="platforms-support-policy.retired"></a>
@@ -79,6 +72,15 @@ The following tables list Elastic Beanstalk platform branches that are already i
 
 |  Runtime version / platform branch  |  Retirement date  |
 | --- | --- |
+|  .NET Core AL2 | June 30, 2026 |
+|  Corretto 8 AL2 | June 30, 2026 |
+|  Corretto 8 with Tomcat 9 AL2 | June 30, 2026 |
+|  Corretto 11 AL2 | June 30, 2026 |
+|  Corretto 11 with Tomcat 9 AL2 | June 30, 2026 |
+|  Corretto 17 AL2 | June 30, 2026 |
+|  Docker AL2 | June 30, 2026 |
+|  ECS AL2 | June 30, 2026 |
+|  Go 1 AL2 | June 30, 2026 |
 |  Corretto 11 with Tomcat 8.5 AL2 | October 10, 2024 |
 |  Corretto 8 with Tomcat 8.5 AL2  | October 10, 2024 |
 |  Corretto 11 with Tomcat 7 AL2 | June 29, 2022 |

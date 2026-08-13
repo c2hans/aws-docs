@@ -134,7 +134,7 @@ Your function needs the `s3-object-lambda:WriteGetObjectResponse` permission onl
 
 1. Choose **Next**.
 
-1. On the **Add permissions** page, search for the AWS managed policy [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/service-role/AmazonS3ObjectLambdaExecutionRolePolicy$serviceLevelSummary](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/service-role/AmazonS3ObjectLambdaExecutionRolePolicy$serviceLevelSummary), and then select the check box beside the policy name.
+1. On the **Add permissions** page, search for the AWS managed policy [`AmazonS3ObjectLambdaExecutionRolePolicy`](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/service-role/AmazonS3ObjectLambdaExecutionRolePolicy$serviceLevelSummary), and then select the check box beside the policy name.
 
    This policy should contain the `s3-object-lambda:WriteGetObjectResponse` Action.
 

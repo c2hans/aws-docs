@@ -29,7 +29,7 @@ Choose your preferred method, and follow the steps to edit the contents of an au
 
 **To edit automation rules (API)**
 
-1. Run [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateAutomationRules.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateAutomationRules.html) from the Security Hub CSPM administrator account.
+1. Run [`BatchUpdateAutomationRules`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateAutomationRules.html) from the Security Hub CSPM administrator account.
 
 1. For the `RuleArn` parameter, provide the ARN of the rule(s) that you want to edit.
 

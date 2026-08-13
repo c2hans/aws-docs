@@ -19,7 +19,7 @@ Follow these steps to learn how to enable evidence finder. Pay close attention t
 
 To enable evidence finder, you need permissions to create and manage an event data store in CloudTrail Lake. To use the feature, you need permissions to perform CloudTrail Lake queries. For an example permission policy that you can use, see [Example 3 (Permissions to enable evidence finder)](security_iam_id-based-policy-examples.md#full-administrator-access-enable-evidence-finder).
 
-If you need help with permissions, contact your AWS administrator. If you’re an AWS administrator, you can copy the required permission statement and [attach it to an IAM policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console).
+If you need help with permissions, contact your AWS administrator. If you're an AWS administrator, you can copy the required permission statement and [attach it to an IAM policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console).
 
 ## Procedure
 <a name="evidence-finder-settings-enable-procedure"></a>

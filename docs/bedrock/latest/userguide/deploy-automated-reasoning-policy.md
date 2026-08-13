@@ -161,7 +161,7 @@ Use CloudFormation to deploy your Automated Reasoning policy and guardrail as in
 **Note**
 CloudFormation creates the policy resource with the policy definition you provide. It does not run a build workflow or extract rules from source documents. You must first create and test your policy interactively (using the console, API, or Kiro CLI), then export the tested policy definition for use in your template. For more information, see [Export a policy version for deployment](#export-policy-version).
 
-For the complete property reference of the policy resource, see [AWS::Bedrock::AutomatedReasoningPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-bedrock-automatedreasoningpolicy.html) in the *CloudFormation Template Reference*.
+For the complete property reference of the policy resource, see [AWS::Bedrock::AutomatedReasoningPolicy](AWSCloudFormation/latest/TemplateReference/aws-resource-bedrock-automatedreasoningpolicy.html) in the *CloudFormation Template Reference*.
 
 ### Example: Deploy a policy and guardrail
 <a name="deploy-cfn-template-example"></a>

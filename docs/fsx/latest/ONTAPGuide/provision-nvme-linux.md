@@ -93,14 +93,14 @@ Connect to the NetApp ONTAP CLI on the FSx for ONTAP file system on which you pl
         [Job 597] Job succeeded: Successful
    ```
 
-1. Create the NVMe namespace `ns_1` using the [https://docs.netapp.com/us-en/ontap-cli-9141/vserver-nvme-namespace-create.html](https://docs.netapp.com/us-en/ontap-cli-9141/vserver-nvme-namespace-create.html) NetApp ONTAP CLI command. A namespace maps to initiators (clients) and controls which initiators (clients) have access to NVMe devices.
+1. Create the NVMe namespace `ns_1` using the [`vserver nvme namespace create`](https://docs.netapp.com/us-en/ontap-cli-9141/vserver-nvme-namespace-create.html) NetApp ONTAP CLI command. A namespace maps to initiators (clients) and controls which initiators (clients) have access to NVMe devices.
 
    ```
    ::> vserver nvme namespace create -vserver fsx -path /vol/nvme_vol1/ns_1 -size 100g -ostype linux
    Created a namespace of size 100GB (107374182400).
    ```
 
-1. Create the NVMe subsystem using the [https://docs.netapp.com/us-en/ontap-cli-9141/vserver-nvme-subsystem-create.html](https://docs.netapp.com/us-en/ontap-cli-9141/vserver-nvme-subsystem-create.html) NetApp ONTAP CLI command.
+1. Create the NVMe subsystem using the [`vserver nvme subsystem create`](https://docs.netapp.com/us-en/ontap-cli-9141/vserver-nvme-subsystem-create.html) NetApp ONTAP CLI command.
 
    ```
    ~$ vserver nvme subsystem create -vserver fsx -subsystem sub_1 -ostype linux
@@ -120,7 +120,7 @@ Connect to the NetApp ONTAP CLI on the FSx for ONTAP file system on which you pl
 
    If you want to make the devices mapped to this subsystem available to multiple hosts, you can specify multiple initiator names in a comma separated list. For more information, see [vserver nvme subsystem host add](https://docs.netapp.com/us-en/ontap-cli-9141/vserver-nvme-subsystem-host-add.html) in the NetApp ONTAP Docs.
 
-1. Confirm that the namespace exists using the [https://docs.netapp.com/us-en/ontap-cli-9141/vserver-nvme-namespace-show.html](https://docs.netapp.com/us-en/ontap-cli-9141/vserver-nvme-namespace-show.html) command:
+1. Confirm that the namespace exists using the [**vserver nvme namespace show**](https://docs.netapp.com/us-en/ontap-cli-9141/vserver-nvme-namespace-show.html) command:
 
    ```
    ::> vserver nvme namespace show -vserver fsx -instance
@@ -164,7 +164,7 @@ Connect to the NetApp ONTAP CLI on the FSx for ONTAP file system on which you pl
    1 entries were displayed.
    ```
 
-1. Use the [https://docs.netapp.com/us-en/ontap-cli-9141/network-interface-show.html](https://docs.netapp.com/us-en/ontap-cli-9141/network-interface-show.html) command to retrieve the addresses of the block storage interfaces for the SVM in which you've created your NVMe devices.
+1. Use the [** network interface show -vserver**](https://docs.netapp.com/us-en/ontap-cli-9141/network-interface-show.html) command to retrieve the addresses of the block storage interfaces for the SVM in which you've created your NVMe devices.
 
    ```
    ::> network interface show -vserver {{svm_name}} -data-protocol nvme-tcp

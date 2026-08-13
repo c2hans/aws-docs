@@ -66,7 +66,7 @@ After the vector index is created, you can proceed to [create your knowledge bas
 | Metadata management (first mapping field) | Text field | textField | The name of the field in which to store the raw text from your data sources. |
 | Metadata management (second mapping field) | Bedrock-managed metadata field | metadataField | The name of the field in which to store metadata that Amazon Bedrock manages.  |
 
-For more detailed documentation on setting up a vector store in Amazon OpenSearch Serverless, see [Working with vector search collections](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-vector-search.html) in the Amazon OpenSearch Service Developer Guide.
+For more detailed documentation on setting up a vector store in Amazon OpenSearch Serverless, see [Working with vector search collections](opensearch-service/latest/developerguide/serverless-vector-search.html) in the Amazon OpenSearch Service Developer Guide.
 
 ------
 #### [ Amazon OpenSearch Service Managed Clusters ]
@@ -208,7 +208,7 @@ Note the following considerations when creating your vector bucket and index in 
    + Provide a unique **Vector bucket name**.
    + (Optional) Amazon S3 will automatically encrypt the data using the default **Server-side encryption with Amazon S3 managed keys (SSE-S3)**. You can choose whether to use this default encryption, or the **Server-side encryption with AWS Key Management Service keys (SSE-KMS)** instead.
 **Note**
-The encryption type can't be changed once the vector bucket has been created.
+The encryption type can't be changed after the vector bucket has been created.
 
      For step-by-step instructions, see [Encryption with AWS KMS keys](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-bucket-encryption.html).
 
@@ -248,7 +248,7 @@ After you've gathered this information, you can proceed to [create your knowledg
 
 1. Create an Amazon Aurora database (DB) cluster, schema, and table by following the steps at [Using Aurora PostgreSQL as a knowledge base](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.VectorDB.html). When you create the table, configure it with the following columns and data types. You can use column names of your liking instead of the ones listed in the following table. Take note of the column names you choose so that you can provide them during knowledge base setup.
 
-   You must provide these fields before creating the knowledge base. They connot be updated once the knowledge base has been created.
+   You must provide these fields before creating the knowledge base. They cannot be updated after the knowledge base is created.
 **Important**
 The Aurora cluster must reside in the same AWS account as the one where the knowledge base is created for Amazon Bedrock.
 ****
@@ -345,7 +345,7 @@ To access your Pinecone index, you must provide your Pinecone API key to Amazon 
 
 **To set up a secret for your Pinecone configuration**
 
-1. Follow the steps at [Create an AWS Secrets Manager secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/create_secret.html), setting the key as `apiKey` and the value as the API key to access your Pinecone index.
+1. Follow the steps at [Create an AWS Secrets Manager secret](secretsmanager/latest/userguide/create_secret.html), setting the key as `apiKey` and the value as the API key to access your Pinecone index.
 
 1. To find your API key, open your [Pinecone console](https://app.pinecone.io/) and select **API Keys**.
 
@@ -378,7 +378,7 @@ To access your Redis Enterprise Cloud cluster, you must provide your Redis Enter
 
 1. Enable TLS to use your database with Amazon Bedrock by following the steps at [Transport Layer Security (TLS)](https://docs.redis.com/latest/rc/security/database-security/tls-ssl/).
 
-1. Follow the steps at [Create an AWS Secrets Manager secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/create_secret.html). Set up the following keys with the appropriate values from your Redis Enterprise Cloud configuration in the secret:
+1. Follow the steps at [Create an AWS Secrets Manager secret](secretsmanager/latest/userguide/create_secret.html). Set up the following keys with the appropriate values from your Redis Enterprise Cloud configuration in the secret:
    + `username` – The username to access your Redis Enterprise Cloud database. To find your username, look under the **Security** section of your database in the [Redis Console](http://app.redislabs.com/).
    + `password` – The password to access your Redis Enterprise Cloud database. To find your password, look under the **Security** section of your database in the [Redis Console](http://app.redislabs.com/).
    + `serverCertificate` – The content of the certificate from the Redis Cloud Certificate authority. Download the server certificate from the Redis Admin Console by following the steps at [Download certificates](https://docs.redis.com/latest/rc/security/database-security/tls-ssl/#download-certificates).

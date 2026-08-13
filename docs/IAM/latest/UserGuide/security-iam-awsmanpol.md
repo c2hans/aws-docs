@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/security-iam-awsmanpol.html
 ---
 
-# AWS managed policies for AWS Identity and Access Management and Access Analyzer
+# AWS managed policies for AWS Identity and Access Management, IAM Access Analyzer, and account access manager
 <a name="security-iam-awsmanpol"></a>
 
 An AWS managed policy is a standalone policy that is created and administered by AWS. AWS managed policies are designed to provide permissions for many common use cases so that you can start assigning permissions to users, groups, and roles.
@@ -397,13 +397,27 @@ This policy is grouped into statements based on the set of permissions provided.
 + **DenyGettingQueueAttributesOnNonOwnQueue** – Denies access to Amazon SQS queue attributes for queues owned by another account.
 + **DenyActionsForNonRootUser** – Denies access to Amazon SQS actions for all non-root user resources.
 
-## IAM and IAM Access Analyzer updates to AWS managed policies
+## AccountAccessManagerServiceRolePolicy
+<a name="security-iam-awsmanpol-AccountAccessManagerServiceRolePolicy"></a>
+
+You can't attach `AccountAccessManagerServiceRolePolicy` to your IAM entities. This policy is attached to a service-linked role that allows [account access manager](account-access-manager.md) to perform actions on your behalf. For more information, see [Security in account access manager](aam-security.md).
+
+### Service-level permissions
+<a name="AccountAccessManagerServiceRolePolicy-service-level-permissions"></a>
+
+This policy allows account access manager to retrieve information about your Organizations accounts to maintain accurate account membership for access management. Account access manager uses these permissions to detect when accounts leave your organization, verify whether trusted service access is enabled, and confirm account status before managing entitlements.
++ **AWS Organizations** – Allows permissions to list accounts in the organization, verify whether trusted service access is enabled, and describe account status.
+
+To view the JSON policy, see [AccountAccessManagerServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AccountAccessManagerServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
+
+## IAM, IAM Access Analyzer and account access manager updates to AWS managed policies
 <a name="security-iam-awsmanpol-updates"></a>
 
 View details about updates to IAM and AWS managed policies since the service began tracking these changes. For automatic alerts about changes to this page, subscribe to the RSS feed on the IAM and IAM Access Analyzer Document history pages.
 
 | Change | Description | Date |
 | --- | --- | --- |
+| AccountAccessManagerServiceRolePolicy – Added managed policy | Account access manager added a service-linked role policy that allows the service to retrieve information about your Organizations accounts. | July 31, 2026 |
 | [IAMUserChangePassword](https://console.aws.amazon.com/iam/home#policies/IAMUserChangePassword) – Added permissions | IAM added permissions to IAMUserChangePassword to allow users specified within a path. | May 28, 2025 |
 | [AccessAnalyzerServiceRolePolicy](https://console.aws.amazon.com/iam/home#policies/AccessAnalyzerServiceRolePolicy) – Added permissions | IAM Access Analyzer added iam:GetAccountAuthorizationDetails to the service-level permissions of AccessAnalyzerServiceRolePolicy. | May 12, 2025 |
 | [AccessAnalyzerServiceRolePolicy](https://console.aws.amazon.com/iam/home#policies/AccessAnalyzerServiceRolePolicy) – Added permissions | IAM Access Analyzer added support for Amazon S3 directory bucket access points to the service-level permissions of AccessAnalyzerServiceRolePolicy. | March 31, 2025 |

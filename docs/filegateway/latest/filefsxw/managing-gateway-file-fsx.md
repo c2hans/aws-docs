@@ -110,8 +110,8 @@ To use your corporate Microsoft Active Directory or AWS Managed Microsoft AD for
 **Note**
 Using Directory Service, you can create a hosted Active Directory domain service in the AWS Cloud.
 To use AWS Managed Microsoft AD with an Amazon EC2 gateway, you must create the Amazon EC2 instance in the same VPC as the AWS Managed Microsoft AD, add the \_workspaceMembers security group to the Amazon EC2 instance, and join the AD domain using the Admin credentials from the AWS Managed Microsoft AD.
-For more information about AWS Managed Microsoft AD, see the [https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html).
-For more information about Amazon EC2, see the [https://docs.aws.amazon.com/ec2/](https://docs.aws.amazon.com/ec2/).
+For more information about AWS Managed Microsoft AD, see the [*AWS Directory Service Administration Guide*](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html).
+For more information about Amazon EC2, see the [*Amazon Elastic Compute Cloud Documentation*](https://docs.aws.amazon.com/ec2/).
 
 **To turn on Active Directory authentication**
 

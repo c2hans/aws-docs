@@ -36,7 +36,7 @@ You can log data events for the Step Functions resource types by using the Cloud
 
 The following table lists the Step Functions resource types for which you can log data events. The **Data event type** column shows the value to choose from the **Data event type** list on the CloudTrail console. The **resources.type value** column shows the `resources.type` value, which you would specify when configuring advanced event selectors using the AWS CLI or CloudTrail APIs. The **Data APIs logged to CloudTrail** column shows the API calls logged to CloudTrail for the resource type.
 
-You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
+You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [AdvancedFieldSelector](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
 
 | Data event type | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
@@ -49,57 +49,57 @@ You can configure advanced event selectors to filter on the `eventName`, `readOn
 [Management events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-management-events-with-cloudtrail.html#logging-management-events) provide information about management operations that are performed on resources in your AWS account. These are also known as control plane operations. By default, CloudTrail logs management events.
 
  **State Machine**
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_CreateStateMachine.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_CreateStateMachine.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListStateMachines.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListStateMachines.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeStateMachine.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeStateMachine.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_UpdateStateMachine.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_UpdateStateMachine.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_DeleteStateMachine.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DeleteStateMachine.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_ValidateStateMachineDefinition.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ValidateStateMachineDefinition.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_TestState.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_TestState.html)
++  [CreateStateMachine](https://docs.aws.amazon.com/step-functions/latest/apireference/API_CreateStateMachine.html)
++  [ListStateMachines](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListStateMachines.html)
++  [DescribeStateMachine](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeStateMachine.html)
++  [UpdateStateMachine](https://docs.aws.amazon.com/step-functions/latest/apireference/API_UpdateStateMachine.html)
++  [DeleteStateMachine](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DeleteStateMachine.html)
++  [ValidateStateMachineDefinition](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ValidateStateMachineDefinition.html)
++  [TestState](https://docs.aws.amazon.com/step-functions/latest/apireference/API_TestState.html)
 
  **State Machine Alias**
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_CreateStateMachineAlias.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_CreateStateMachineAlias.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListStateMachineAliases.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListStateMachineAliases.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeStateMachineAlias.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeStateMachineAlias.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_UpdateStateMachineAlias.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_UpdateStateMachineAlias.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_DeleteStateMachineAlias.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DeleteStateMachineAlias.html)
++  [CreateStateMachineAlias](https://docs.aws.amazon.com/step-functions/latest/apireference/API_CreateStateMachineAlias.html)
++  [ListStateMachineAliases](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListStateMachineAliases.html)
++  [DescribeStateMachineAlias](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeStateMachineAlias.html)
++  [UpdateStateMachineAlias](https://docs.aws.amazon.com/step-functions/latest/apireference/API_UpdateStateMachineAlias.html)
++  [DeleteStateMachineAlias](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DeleteStateMachineAlias.html)
 
  **State Machine Version**
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListStateMachineVersions.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListStateMachineVersions.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_PublishStateMachineVersion.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_PublishStateMachineVersion.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_DeleteStateMachineVersion.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DeleteStateMachineVersion.html)
++  [ListStateMachineVersions](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListStateMachineVersions.html)
++  [PublishStateMachineVersion](https://docs.aws.amazon.com/step-functions/latest/apireference/API_PublishStateMachineVersion.html)
++  [DeleteStateMachineVersion](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DeleteStateMachineVersion.html)
 
  **Executions**
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartExecution.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartExecution.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartSyncExecution.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartSyncExecution.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_RedriveExecution.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_RedriveExecution.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListExecutions.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListExecutions.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeExecution.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeExecution.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_GetExecutionHistory.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_GetExecutionHistory.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeStateMachineForExecution.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeStateMachineForExecution.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_StopExecution.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_StopExecution.html)
++  [StartExecution](https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartExecution.html)
++  [StartSyncExecution](https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartSyncExecution.html)
++  [RedriveExecution](https://docs.aws.amazon.com/step-functions/latest/apireference/API_RedriveExecution.html)
++  [ListExecutions](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListExecutions.html)
++  [DescribeExecution](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeExecution.html)
++  [GetExecutionHistory](https://docs.aws.amazon.com/step-functions/latest/apireference/API_GetExecutionHistory.html)
++  [DescribeStateMachineForExecution](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeStateMachineForExecution.html)
++  [StopExecution](https://docs.aws.amazon.com/step-functions/latest/apireference/API_StopExecution.html)
 
  **Activity**
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_CreateActivity.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_CreateActivity.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListActivities.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListActivities.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeActivity.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeActivity.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_DeleteActivity.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DeleteActivity.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_GetActivityTask.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_GetActivityTask.html)
++  [CreateActivity](https://docs.aws.amazon.com/step-functions/latest/apireference/API_CreateActivity.html)
++  [ListActivities](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListActivities.html)
++  [DescribeActivity](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeActivity.html)
++  [DeleteActivity](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DeleteActivity.html)
++  [GetActivityTask](https://docs.aws.amazon.com/step-functions/latest/apireference/API_GetActivityTask.html)
 
  **Task Token**
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskSuccess.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskSuccess.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskHeartbeat.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskHeartbeat.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskFailure.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskFailure.html)
++  [SendTaskSuccess](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskSuccess.html)
++  [SendTaskHeartbeat](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskHeartbeat.html)
++  [SendTaskFailure](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskFailure.html)
 
  **MapRun**
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListMapRuns.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListMapRuns.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeMapRun.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeMapRun.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_UpdateMapRun.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_UpdateMapRun.html)
++  [ListMapRuns](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListMapRuns.html)
++  [DescribeMapRun](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeMapRun.html)
++  [UpdateMapRun](https://docs.aws.amazon.com/step-functions/latest/apireference/API_UpdateMapRun.html)
 
  **Tags**
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListTagsForResource.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListTagsForResource.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_TagResource.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_TagResource.html)
-+  [https://docs.aws.amazon.com/step-functions/latest/apireference/API_UntagResource.html](https://docs.aws.amazon.com/step-functions/latest/apireference/API_UntagResource.html)
++  [ListTagsForResource](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListTagsForResource.html)
++  [TagResource](https://docs.aws.amazon.com/step-functions/latest/apireference/API_TagResource.html)
++  [UntagResource](https://docs.aws.amazon.com/step-functions/latest/apireference/API_UntagResource.html)
 
 ## Event examples
 <a name="cloudtrail-event-examples"></a>

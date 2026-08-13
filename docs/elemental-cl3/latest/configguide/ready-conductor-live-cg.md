@@ -9,9 +9,9 @@ You should make some decisions about features you want to configure on the clust
 
 **Nodes in the cluster**
 
-For information about deciding about the number of AWS Elemental Conductor Live and worker nodes in the cluster, see [https://docs.aws.amazon.com/elemental-cl3/latest/ug](https://docs.aws.amazon.com/elemental-cl3/latest/ug).
+For information about deciding about the number of AWS Elemental Conductor Live and worker nodes in the cluster, see [*AWS Elemental Conductor Live User Guide*](https://docs.aws.amazon.com/elemental-cl3/latest/ug).
 
-For information about designing for redundancy in the cluster, see [https://docs.aws.amazon.com/elemental-cl3/latest/ug](https://docs.aws.amazon.com/elemental-cl3/latest/ug).
+For information about designing for redundancy in the cluster, see [*Conductor Live User Guide*](https://docs.aws.amazon.com/elemental-cl3/latest/ug).
 
 **Gather network information**
 

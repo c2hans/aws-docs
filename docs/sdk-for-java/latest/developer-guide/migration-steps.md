@@ -477,10 +477,10 @@ The following table shows the common naming convention that the SDKs use for a g
   <tr><th>v1 package name (import statement)</th><th>v1 artifactId</th><th>v2 artifactId</th><th>v2 package name (import statement)</th></tr>
 </thead>
 <tbody>
-  <tr><td>com.amazonaws.services.SERVICE\_ID</td><td>aws-java-sdk-SERVICE\_ID</td><td>SERVICE\_ID</td><td>software.amazon.awssdk.services.SERVICE\_ID</td></tr>
+  <tr><td>com.amazonaws.services.SERVICE_ID</td><td>aws-java-sdk-SERVICE_ID</td><td>SERVICE_ID</td><td>software.amazon.awssdk.services.SERVICE_ID</td></tr>
   <tr><td colspan="4"> </td></tr>
-  <tr><td colspan="4">Example for Amazon Cognito Identity (SERVICE\_ID: cognitoidentity)</td></tr>
-  <tr><td>com.amazonaws.services.cognitoidentity</td><td>aws-java-sdk-cognitoidentity</td><td>cognitoidentity</td><td>software.amazon.awssdk.services.cognitoidentity</td></tr>
+  <tr><td colspan="4"><b><i>Example for Amazon Cognito Identity (SERVICE_ID: <code>cognitoidentity</code>)</i></b></td></tr>
+  <tr><td>com.amazonaws.services.<b><i>cognitoidentity</i></b></td><td>aws-java-sdk-<b><i>cognitoidentity</i></b></td><td><b><i>cognitoidentity</i></b></td><td>software.amazon.awssdk.services.<b><i>cognitoidentity</i></b></td></tr>
 </tbody>
 </table>
 
@@ -509,56 +509,56 @@ A **boldface SERVICE\_ID** in either of the v1 columns indicates that it's diffe
   <tr><th>Service name</th><th>v1 package name</th><th>v1 artifactId</th><th>v2 artifactId</th><th>v2 package name</th></tr>
 </thead>
 <tbody>
-  <tr><td></td><td>All package names begin with `com.amazonaws.services` as shown in the first row.</td><td>All artifactIds are enclosed in tags as shown in the first row.</td><td>All artifactIds are enclosed in tags as shown in the first row.</td><td>All package names begin with `software.amazon.awssdk` as shown in the first row.</td></tr>
+  <tr><td></td><td>All package names begin with <code>com.amazonaws.services</code> as shown in the first row.</td><td>All artifactIds are enclosed in tags as shown in the first row.</td><td>All artifactIds are enclosed in tags as shown in the first row.</td><td>All package names begin with <code>software.amazon.awssdk</code> as shown in the first row.</td></tr>
   <tr><td colspan="5"></td></tr>
-  <tr><td>API Gateway</td><td>com.amazonaws.services.apigateway</td><td><artifactId>aws-java-sdk-api-gateway</artifactId></td><td><artifactId>apigateway</artifactId></td><td>software.amazon.awssdk.services.apigateway</td></tr>
-  <tr><td>App Registry</td><td>appregistry</td><td>appregistry</td><td>servicecatalogappregistry</td><td>servicecatalogappregistry</td></tr>
-  <tr><td>Application Discovery</td><td>applicationdiscovery</td><td>discovery</td><td>applicationdiscovery</td><td>applicationdiscovery</td></tr>
-  <tr><td>Augmented AI Runtime</td><td>augmentedairuntime</td><td>augmentedairuntime</td><td>sagemakera2iruntime</td><td>sagemakera2iruntime</td></tr>
-  <tr><td>Certificate Manager</td><td>certificatemanager</td><td>acm</td><td>acm</td><td>acm</td></tr>
-  <tr><td>CloudControl API</td><td>cloudcontrolapi</td><td>cloudcontrolapi</td><td>cloudcontrol</td><td>cloudcontrol</td></tr>
-  <tr><td>CloudSearch</td><td>cloudsearchv2</td><td>cloudsearch</td><td>cloudsearch</td><td>cloudsearch</td></tr>
-  <tr><td>CloudSearch Domain</td><td>cloudsearchdomain</td><td>cloudsearch</td><td>cloudsearchdomain</td><td>cloudsearchdomain</td></tr>
-  <tr><td>CloudWatch Events</td><td>cloudwatchevents</td><td>events</td><td>cloudwatchevents</td><td>cloudwatchevents</td></tr>
-  <tr><td>CloudWatch Evidently</td><td>cloudwatchevidently</td><td>cloudwatchevidently</td><td>evidently</td><td>evidently</td></tr>
-  <tr><td>CloudWatch Logs</td><td>logs</td><td>logs</td><td>cloudwatchlogs</td><td>cloudwatchlogs</td></tr>
-  <tr><td>CloudWatch Metrics</td><td>metrics</td><td>cloudwatchmetrics</td><td>cloudwatch</td><td>cloudwatch</td></tr>
-  <tr><td>CloudWatch Rum</td><td>cloudwatchrum</td><td>cloudwatchrum</td><td>rum</td><td>rum</td></tr>
-  <tr><td>Cognito Identity Provider</td><td>cognitoidp</td><td>cognitoidp</td><td>cognitoidentityprovider</td><td>cognitoidentityprovider</td></tr>
-  <tr><td>Connect Campaign</td><td>connectcampaign</td><td>connectcampaign</td><td>connectcampaigns</td><td>connectcampaigns</td></tr>
-  <tr><td>Connect Wisdom</td><td>connectwisdom</td><td>connectwisdom</td><td>wisdom</td><td>wisdom</td></tr>
-  <tr><td>Database Migration Service</td><td>databasemigrationservice</td><td>dms</td><td>databasemigration</td><td>databasemigration</td></tr>
-  <tr><td>DataZone</td><td>datazone</td><td>datazoneexternal</td><td>datazone</td><td>datazone</td></tr>
-  <tr><td>DynamoDB</td><td>dynamodbv2</td><td>dynamodb</td><td>dynamodb</td><td>dynamodb</td></tr>
-  <tr><td>Elastic File System</td><td>elasticfilesystem</td><td>efs</td><td>efs</td><td>efs</td></tr>
-  <tr><td>Elastic Map Reduce</td><td>elasticmapreduce</td><td>emr</td><td>emr</td><td>emr</td></tr>
-  <tr><td>Glue DataBrew</td><td>gluedatabrew</td><td>gluedatabrew</td><td>databrew</td><td>databrew</td></tr>
-  <tr><td>IAM Roles Anywhere</td><td>iamrolesanywhere</td><td>iamrolesanywhere</td><td>rolesanywhere</td><td>rolesanywhere</td></tr>
-  <tr><td>Identity Management</td><td>identitymanagement</td><td>iam</td><td>iam</td><td>iam</td></tr>
-  <tr><td>IoT Data</td><td>iotdata</td><td>iot</td><td>iotdataplane</td><td>iotdataplane</td></tr>
-  <tr><td>Kinesis Analytics</td><td>kinesisanalytics</td><td>kinesis</td><td>kinesisanalytics</td><td>kinesisanalytics</td></tr>
-  <tr><td>Kinesis Firehose</td><td>kinesisfirehose</td><td>kinesis</td><td>firehose</td><td>firehose</td></tr>
-  <tr><td>Kinesis Video Signaling Channels</td><td>kinesisvideosignalingchannels</td><td>kinesisvideosignalingchannels</td><td>kinesisvideosignaling</td><td>kinesisvideosignaling</td></tr>
-  <tr><td>Lex</td><td>lexruntime</td><td>lex</td><td>lexruntime</td><td>lexruntime</td></tr>
-  <tr><td>Lookout For Vision</td><td>lookoutforvision</td><td>lookoutforvision</td><td>lookoutvision</td><td>lookoutvision</td></tr>
-  <tr><td>Mainframe Modernization</td><td>mainframemodernization</td><td>mainframemodernization</td><td>m2</td><td>m2</td></tr>
-  <tr><td>Marketplace Metering</td><td>marketplacemetering</td><td>marketplacemeteringservice</td><td>marketplacemetering</td><td>marketplacemetering</td></tr>
-  <tr><td>Managed Grafana</td><td>managedgrafana</td><td>managedgrafana</td><td>grafana</td><td>grafana</td></tr>
-  <tr><td>Mechanical Turk</td><td>mturk</td><td>mechanicalturkrequester</td><td>mturk</td><td>mturk</td></tr>
-  <tr><td>Migration Hub Strategy Recommendations</td><td>migrationhubstrategyrecommendations</td><td>migrationhubstrategyrecommendations</td><td>migrationhubstrategy</td><td>migrationhubstrategy</td></tr>
-  <tr><td>Nimble Studio</td><td>nimblestudio</td><td>nimblestudio</td><td>nimble</td><td>nimble</td></tr>
-  <tr><td>Private 5G</td><td>private5g</td><td>private5g</td><td>privatenetworks</td><td>privatenetworks</td></tr>
-  <tr><td>Prometheus</td><td>prometheus</td><td>prometheus</td><td>amp</td><td>amp</td></tr>
-  <tr><td>Recycle Bin</td><td>recyclebin</td><td>recyclebin</td><td>rbin</td><td>rbin</td></tr>
-  <tr><td>Redshift Data API</td><td>redshiftdataapi</td><td>redshiftdataapi</td><td>redshiftdata</td><td>redshiftdata</td></tr>
-  <tr><td>Route 53</td><td>route53domains</td><td>route53</td><td>route53domains</td><td>route53domains</td></tr>
-  <tr><td>Sage Maker Edge Manager</td><td>sagemakeredgemanager</td><td>sagemakeredgemanager</td><td>sagemakeredge</td><td>sagemakeredge</td></tr>
-  <tr><td>Security Token</td><td>securitytoken</td><td>sts</td><td>sts</td><td>sts</td></tr>
-  <tr><td>Server Migration</td><td>servermigration</td><td>servermigration</td><td>sms</td><td>sms</td></tr>
-  <tr><td>Simple Email</td><td>simpleemail</td><td>ses</td><td>ses</td><td>ses</td></tr>
-  <tr><td>Simple Email V2</td><td>simpleemailv2</td><td>sesv2</td><td>sesv2</td><td>sesv2</td></tr>
-  <tr><td>Simple Systems Management</td><td>simplesystemsmanagement</td><td>ssm</td><td>ssm</td><td>ssm</td></tr>
-  <tr><td>Simple Workflow</td><td>simpleworkflow</td><td>simpleworkflow</td><td>swf</td><td>swf</td></tr>
-  <tr><td>Step Functions</td><td>stepfunctions</td><td>stepfunctions</td><td>sfn</td><td>sfn</td></tr>
+  <tr><td>API Gateway</td><td>com.amazonaws.services.apigateway</td><td>&lt;artifactId&gt;aws-java-sdk-<b>api-gateway</b>&lt;/artifactId&gt;</td><td>&lt;artifactId&gt;apigateway&lt;/artifactId&gt;</td><td>software.amazon.awssdk.services.apigateway</td></tr>
+  <tr><td>App Registry</td><td><b>appregistry</b></td><td><b>appregistry</b></td><td>servicecatalogappregistry</td><td>servicecatalogappregistry</td></tr>
+  <tr><td>Application Discovery</td><td>applicationdiscovery</td><td><b>discovery</b></td><td>applicationdiscovery</td><td>applicationdiscovery</td></tr>
+  <tr><td>Augmented AI Runtime</td><td><b>augmentedairuntime</b></td><td><b>augmentedairuntime</b></td><td>sagemakera2iruntime</td><td>sagemakera2iruntime</td></tr>
+  <tr><td>Certificate Manager</td><td><b>certificatemanager</b></td><td>acm</td><td>acm</td><td>acm</td></tr>
+  <tr><td>CloudControl API</td><td><b>cloudcontrolapi</b></td><td>cloudcontrolapi</td><td>cloudcontrol</td><td>cloudcontrol</td></tr>
+  <tr><td>CloudSearch</td><td><b>cloudsearchv2</b></td><td>cloudsearch</td><td>cloudsearch</td><td>cloudsearch</td></tr>
+  <tr><td>CloudSearch Domain</td><td>cloudsearchdomain</td><td><b>cloudsearch</b></td><td>cloudsearchdomain</td><td>cloudsearchdomain</td></tr>
+  <tr><td>CloudWatch Events</td><td>cloudwatchevents</td><td><b>events</b></td><td>cloudwatchevents</td><td>cloudwatchevents</td></tr>
+  <tr><td>CloudWatch Evidently</td><td><b>cloudwatchevidently</b></td><td><b>cloudwatchevidently</b></td><td>evidently</td><td>evidently</td></tr>
+  <tr><td>CloudWatch Logs</td><td><b>logs</b></td><td><b>logs</b></td><td>cloudwatchlogs</td><td>cloudwatchlogs</td></tr>
+  <tr><td>CloudWatch Metrics</td><td><b>metrics</b></td><td><b>cloudwatchmetrics</b></td><td>cloudwatch</td><td>cloudwatch</td></tr>
+  <tr><td>CloudWatch Rum</td><td><b>cloudwatchrum</b></td><td><b>cloudwatchrum</b></td><td>rum</td><td>rum</td></tr>
+  <tr><td>Cognito Identity Provider</td><td><b>cognitoidp</b></td><td><b>cognitoidp</b></td><td>cognitoidentityprovider</td><td>cognitoidentityprovider</td></tr>
+  <tr><td>Connect Campaign</td><td><b>connectcampaign</b></td><td><b>connectcampaign</b></td><td>connectcampaigns</td><td>connectcampaigns</td></tr>
+  <tr><td>Connect Wisdom</td><td><b>connectwisdom</b></td><td><b>connectwisdom</b></td><td>wisdom</td><td>wisdom</td></tr>
+  <tr><td>Database Migration Service</td><td><b>databasemigrationservice</b></td><td><b>dms</b></td><td>databasemigration</td><td>databasemigration</td></tr>
+  <tr><td>DataZone</td><td>datazone</td><td><b>datazoneexternal</b></td><td>datazone</td><td>datazone</td></tr>
+  <tr><td>DynamoDB</td><td><b>dynamodbv2</b></td><td>dynamodb</td><td>dynamodb</td><td>dynamodb</td></tr>
+  <tr><td>Elastic File System</td><td><b>elasticfilesystem</b></td><td>efs</td><td>efs</td><td>efs</td></tr>
+  <tr><td>Elastic Map Reduce</td><td><b>elasticmapreduce</b></td><td>emr</td><td>emr</td><td>emr</td></tr>
+  <tr><td>Glue DataBrew</td><td><b>gluedatabrew</b></td><td><b>gluedatabrew</b></td><td>databrew</td><td>databrew</td></tr>
+  <tr><td>IAM Roles Anywhere</td><td><b>iamrolesanywhere</b></td><td><b>iamrolesanywhere</b></td><td>rolesanywhere</td><td>rolesanywhere</td></tr>
+  <tr><td>Identity Management</td><td><b>identitymanagement</b></td><td>iam</td><td>iam</td><td>iam</td></tr>
+  <tr><td>IoT Data</td><td><b>iotdata</b></td><td><b>iot</b></td><td>iotdataplane</td><td>iotdataplane</td></tr>
+  <tr><td>Kinesis Analytics</td><td>kinesisanalytics</td><td><b>kinesis</b></td><td>kinesisanalytics</td><td>kinesisanalytics</td></tr>
+  <tr><td>Kinesis Firehose</td><td><b>kinesisfirehose</b></td><td><b>kinesis</b></td><td>firehose</td><td>firehose</td></tr>
+  <tr><td>Kinesis Video Signaling Channels</td><td><b>kinesisvideosignalingchannels</b></td><td><b>kinesisvideosignalingchannels</b></td><td>kinesisvideosignaling</td><td>kinesisvideosignaling</td></tr>
+  <tr><td>Lex</td><td>lexruntime</td><td><b>lex</b></td><td>lexruntime</td><td>lexruntime</td></tr>
+  <tr><td>Lookout For Vision</td><td><b>lookoutforvision</b></td><td><b>lookoutforvision</b></td><td>lookoutvision</td><td>lookoutvision</td></tr>
+  <tr><td>Mainframe Modernization</td><td><b>mainframemodernization</b></td><td><b>mainframemodernization</b></td><td>m2</td><td>m2</td></tr>
+  <tr><td>Marketplace Metering</td><td>marketplacemetering</td><td><b>marketplacemeteringservice</b></td><td>marketplacemetering</td><td>marketplacemetering</td></tr>
+  <tr><td>Managed Grafana</td><td><b>managedgrafana</b></td><td><b>managedgrafana</b></td><td>grafana</td><td>grafana</td></tr>
+  <tr><td>Mechanical Turk</td><td>mturk</td><td><b>mechanicalturkrequester</b></td><td>mturk</td><td>mturk</td></tr>
+  <tr><td>Migration Hub Strategy Recommendations</td><td><b>migrationhubstrategyrecommendations</b></td><td><b>migrationhubstrategyrecommendations</b></td><td>migrationhubstrategy</td><td>migrationhubstrategy</td></tr>
+  <tr><td>Nimble Studio</td><td><b>nimblestudio</b></td><td><b>nimblestudio</b></td><td>nimble</td><td>nimble</td></tr>
+  <tr><td>Private 5G</td><td><b>private5g</b></td><td><b>private5g</b></td><td>privatenetworks</td><td>privatenetworks</td></tr>
+  <tr><td>Prometheus</td><td><b>prometheus</b></td><td><b>prometheus</b></td><td>amp</td><td>amp</td></tr>
+  <tr><td>Recycle Bin</td><td><b>recyclebin</b></td><td><b>recyclebin</b></td><td>rbin</td><td>rbin</td></tr>
+  <tr><td>Redshift Data API</td><td><b>redshiftdataapi</b></td><td><b>redshiftdataapi</b></td><td>redshiftdata</td><td>redshiftdata</td></tr>
+  <tr><td>Route 53</td><td>route53domains</td><td><b>route53</b></td><td>route53domains</td><td>route53domains</td></tr>
+  <tr><td>Sage Maker Edge Manager</td><td><b>sagemakeredgemanager</b></td><td><b>sagemakeredgemanager</b></td><td>sagemakeredge</td><td>sagemakeredge</td></tr>
+  <tr><td>Security Token</td><td><b>securitytoken</b></td><td>sts</td><td>sts</td><td>sts</td></tr>
+  <tr><td>Server Migration</td><td><b>servermigration</b></td><td><b>servermigration</b></td><td>sms</td><td>sms</td></tr>
+  <tr><td>Simple Email</td><td><b>simpleemail</b></td><td>ses</td><td>ses</td><td>ses</td></tr>
+  <tr><td>Simple Email V2</td><td><b>simpleemailv2</b></td><td>sesv2</td><td>sesv2</td><td>sesv2</td></tr>
+  <tr><td>Simple Systems Management</td><td><b>simplesystemsmanagement</b></td><td>ssm</td><td>ssm</td><td>ssm</td></tr>
+  <tr><td>Simple Workflow</td><td><b>simpleworkflow</b></td><td><b>simpleworkflow</b></td><td>swf</td><td>swf</td></tr>
+  <tr><td>Step Functions</td><td><b>stepfunctions</b></td><td><b>stepfunctions</b></td><td>sfn</td><td>sfn</td></tr>
 </tbody>
 </table>

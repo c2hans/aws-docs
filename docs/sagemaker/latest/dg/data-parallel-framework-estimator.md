@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel-framew
 # Use the PyTorch framework estimators in the SageMaker Python SDK
 <a name="data-parallel-framework-estimator"></a>
 
-You can launch distributed training by adding the `distribution` argument to the SageMaker AI [https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) framework estimator. The SageMaker AI distributed data parallelism (SMDDP) library supports PyTorch distributed training.
+You can launch distributed training by adding the `distribution` argument to the SageMaker AI [`PyTorch`](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) framework estimator. The SageMaker AI distributed data parallelism (SMDDP) library supports PyTorch distributed training.
 
 **Note**
 SMDDP discontinued TensorFlow support after v2.11.0. For distributed training with TensorFlow, use alternative distribution strategies.

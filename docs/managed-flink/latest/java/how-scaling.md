@@ -17,7 +17,7 @@ You can configure the parallel execution of tasks and the allocation of resource
 ## Configure application parallelism and ParallelismPerKPU
 <a name="how-parallelism"></a>
 
-You configure the parallel execution for your Managed Service for Apache Flink application tasks (such as reading from a source or executing an operator) using the following [https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ApplicationConfiguration.html](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ApplicationConfiguration.html) properties:
+You configure the parallel execution for your Managed Service for Apache Flink application tasks (such as reading from a source or executing an operator) using the following [`ParallelismConfiguration`](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ApplicationConfiguration.html) properties:
 + `Parallelism` — Use this property to set the default Apache Flink application parallelism. All operators, sources, and sinks execute with this parallelism unless they are overridden in the application code. The default is `1`, and the default maximum is `256`.
 + `ParallelismPerKPU` — Use this property to set the number of parallel tasks that can be scheduled per Kinesis Processing Unit (KPU) of your application. The default is `1`, and the maximum is `8`. For applications that have blocking operations (for example, I/O), a higher value of `ParallelismPerKPU` leads to full utilization of KPU resources.
 
@@ -49,7 +49,7 @@ An additional KPU is charged for orchestrations purposes. For more information, 
 
 This section contains sample requests for API actions that set an application's parallelism. For more examples and instructions for how to use request blocks with API actions, see [Managed Service for Apache Flink API example code](api-examples.md).
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action sets parallelism when you are creating an application:
+The following example request for the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action sets parallelism when you are creating an application:
 
 ```
 {
@@ -79,7 +79,7 @@ The following example request for the [https://docs.aws.amazon.com/managed-servi
 }
 ```
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action sets parallelism for an existing application:
+The following example request for the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action sets parallelism for an existing application:
 
 ```
 {
@@ -98,7 +98,7 @@ The following example request for the [https://docs.aws.amazon.com/managed-servi
 }
 ```
 
-The following example request for the [https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action disables parallelism for an existing application:
+The following example request for the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action disables parallelism for an existing application:
 
 ```
 {

@@ -11,7 +11,7 @@ Amazon Q Apps is integrated with AWS CloudTrail, a service that provides a recor
 
 A trail enables CloudTrail to deliver log files to an Amazon S3 bucket. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for Amazon Q Apps. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**. Using the information collected by CloudTrail, you can determine the request that was made to Amazon Q Apps, the IP address from which the request was made, who made the request, when it was made, and additional details.
 
-For more information about CloudTrail, including how to configure and activate it, see the [https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html).
+For more information about CloudTrail, including how to configure and activate it, see the [*AWS CloudTrail User Guide*](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html).
 
 ## Amazon Q Apps information in CloudTrail
 <a name="qapps-info-in-cloudtrail"></a>

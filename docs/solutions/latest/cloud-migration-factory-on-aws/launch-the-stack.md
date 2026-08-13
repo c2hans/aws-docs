@@ -14,7 +14,7 @@ This automated AWS CloudFormation template deploys the Cloud Migration Factory o
 **Note**
 You are responsible for the cost of the AWS services used while running this solution. Refer to the [Cost](cost.md) section for more details. For full details, refer to the pricing webpage for each AWS service you will be using in this solution.
 
-1. Sign into [AWS Management Console](https://aws.amazon.com/console) and select the button to launch `cloud-migration-factory-solution` CloudFormation template. [https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https:%2F%2Fsolutions-reference.s3.amazonaws.com%2Fcloud-migration-factory-on-aws%2Flatest%2Faws-cloud-migration-factory-solution.template](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https:%2F%2Fsolutions-reference.s3.amazonaws.com%2Fcloud-migration-factory-on-aws%2Flatest%2Faws-cloud-migration-factory-solution.template)
+1. Sign into [AWS Management Console](https://aws.amazon.com/console) and select the button to launch `cloud-migration-factory-solution` CloudFormation template. [![Launch solution](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https:%2F%2Fsolutions-reference.s3.amazonaws.com%2Fcloud-migration-factory-on-aws%2Flatest%2Faws-cloud-migration-factory-solution.template)
 
    You can also [download the template](https://solutions-reference.s3.amazonaws.com/cloud-migration-factory-on-aws/latest/aws-cloud-migration-factory-solution.template&redirectId=ImplementationGuide) as a starting point for your own implementation.
 

@@ -109,7 +109,7 @@ To verify the identity and authenticity of your HSM, start by getting a CSR and 
 #### [ AWS CloudHSM API ]
 
 **To get the CSR and HSM certificates (AWS CloudHSM API)**
-+ Send a [https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DescribeClusters.html](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DescribeClusters.html) request, then extract and save the CSR and certificates from the response.
++ Send a [DescribeClusters](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DescribeClusters.html) request, then extract and save the CSR and certificates from the response.
 
 ------
 

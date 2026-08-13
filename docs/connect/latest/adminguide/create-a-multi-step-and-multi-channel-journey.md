@@ -5,6 +5,12 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-a-multi
 # Visual Journey Builder
 <a name="create-a-multi-step-and-multi-channel-journey"></a>
 
+**Using Spark SQL segments in Journeys**
+By default, Spark SQL segments aren't available for use in Journeys. To enable them, contact AWS Support to request access.
+Before using Spark SQL segments in a journey, consider the following limitations:
+Spark SQL segment processing can take up to 2 hours to complete. However, Outbound Campaigns waits only 30 minutes for segment processing to complete. If Spark SQL segment processing exceeds this 30-minute timeout, the journey fails.
+If you use a Spark SQL segment for the dial criteria parameter in the Send Communication voice block, the criteria won't reflect the latest state of the segment.
+
 A journey is an automated, multi-step outbound campaign. It reaches your customers across more than one channel, such as SMS, email, and voice. Each step can branch based on how a customer responds, so you can guide different customers down different paths.
 
 Use the Visual Journey Builder to create a journey when your outreach needs more than a single message on one channel. For example, you can send a promotional SMS, and then email the customers who do not respond. To create a single-channel campaign instead, use the [Guided Campaign Builder](guided-campaign-builder.md).

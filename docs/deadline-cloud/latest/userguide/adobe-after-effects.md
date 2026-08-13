@@ -455,9 +455,9 @@ Conda recipe: [aftereffects-saber conda recipe](https://github.com/aws-deadline/
 ### Red Giant
 <a name="after-effects-red-giant"></a>
 
-You can install Maxon Red Giant on your workers with a host configuration script that fetches and silently installs the Red Giant installer when each worker launches. The script has been tested and verified on Windows GPU service-managed fleets. A persistent-volume variant is also available that installs the software once and restores it on later boots to reduce worker startup time.
+You can install Maxon Red Giant on your workers with a host configuration script that fetches and silently installs the Red Giant installer when each worker launches. The script has been tested and verified on Windows GPU service-managed fleets. If a persistent volume is attached to the fleet, the script installs the software once and restores it on later boots to reduce worker startup time.
 
-Host configuration scripts: [aftereffects\_redgiant](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/aftereffects/aftereffects_redgiant) and [aftereffects\_redgiant\_persistent](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/aftereffects/aftereffects_redgiant_persistent).
+Host configuration script: [aftereffects\_redgiant](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/aftereffects/aftereffects_redgiant).
 
 ## Advanced configurations
 <a name="after-effects-advanced-configurations"></a>

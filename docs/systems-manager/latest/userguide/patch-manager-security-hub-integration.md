@@ -7,25 +7,15 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 # Integrating Patch Manager with AWS Security Hub CSPM
 <a name="patch-manager-security-hub-integration"></a>
 
-[AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html) provides you with a comprehensive view of your security state in AWS. Security Hub CSPM collects security data from across AWS accounts, AWS services, and supported third-party partner products. With Security Hub CSPM, you can check your environment against security industry standards and best practices. Security Hub CSPM helps you to analyze your security trends and identify the highest priority security issues.
+[AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html) gives you a comprehensive view of your security state in AWS. Security Hub CSPM collects security data from across AWS accounts, AWS services, and supported third-party partner products. With Security Hub CSPM, you can check your environment against security industry standards and best practices. Security Hub CSPM helps you to analyze your security trends and identify the highest priority security issues.
 
-By using the integration between Patch Manager, a tool in AWS Systems Manager, and Security Hub CSPM, you can send findings about noncompliant nodes from Patch Manager to Security Hub CSPM. A finding is the observable record of a security check or security-related detection. Security Hub CSPM can then include those patch-related findings in its analysis of your security posture.
+By using the integration between Patch Manager, and Security Hub CSPM, you can send findings about noncompliant nodes from Patch Manager to Security Hub CSPM. A finding is the observable record of a security check or security-related detection. Security Hub CSPM can then include those patch-related findings in its analysis of your security posture.
 
 The information in the following topics applies no matter which method or type of configuration you are using for your patching operations:
 + A patch policy configured in Quick Setup
 + A Host Management option configured in Quick Setup
 + A maintenance window to run a patch `Scan` or `Install` task
 + An on-demand **Patch now** operation
-
-**Contents**
-+ [How Patch Manager sends findings to Security Hub CSPM](#securityhub-integration-sending-findings)
-  + [Types of findings that Patch Manager sends](#securityhub-integration-finding-types)
-  + [Latency for sending findings](#securityhub-integration-finding-latency)
-  + [Retrying when Security Hub CSPM isn't available](#securityhub-integration-retry-send)
-  + [Viewing findings in Security Hub CSPM](#securityhub-integration-view-findings)
-+ [Typical finding from Patch Manager](#securityhub-integration-finding-example)
-+ [Turning on and configuring the integration](#securityhub-integration-enable)
-+ [How to stop sending findings](#securityhub-integration-disable)
 
 ## How Patch Manager sends findings to Security Hub CSPM
 <a name="securityhub-integration-sending-findings"></a>
@@ -44,12 +34,12 @@ All findings in Security Hub CSPM use a standard JSON format called the AWS Secu
 Patch Manager sends the findings to Security Hub CSPM using the [AWS Security Finding Format (ASFF)](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-findings-format.html). In ASFF, the `Types` field provides the finding type. Findings from Patch Manager have the following value for `Types`:
 + Software and Configuration Checks/Patch Management
 
- Patch Manager sends one finding per noncompliant managed node. The finding is reported with the resource type [https://docs.aws.amazon.com//securityhub/latest/userguide/securityhub-findings-format-attributes.html#asff-resourcedetails-awsec2instance](https://docs.aws.amazon.com//securityhub/latest/userguide/securityhub-findings-format-attributes.html#asff-resourcedetails-awsec2instance) so that findings can be correlated with other Security Hub CSPM integrations that report `AwsEc2Instance` resource types. Patch Manager only forwards a finding to Security Hub CSPM if the operation discovered the managed node to be noncompliant. The finding includes the Patch Summary results.
+ Patch Manager sends one finding per noncompliant managed node. The finding is reported with the resource type [`AwsEc2Instance`](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-findings-format-attributes.html#asff-resourcedetails-awsec2instance) so that findings can be correlated with other Security Hub CSPM integrations that report `AwsEc2Instance` resource types. Patch Manager only forwards a finding to Security Hub CSPM if the operation discovered the managed node to be noncompliant. The finding includes the Patch Summary results.
 
 **Note**
 After reporting a noncompliant node to Security Hub CSPM. Patch Manager doesn't send an update to Security Hub CSPM after the node is made compliant. You can manually resolve findings in Security Hub CSPM after the required patches have been applied to the managed node.
 
-For more information about compliance definitions, see [Patch compliance state values](patch-manager-compliance-states.md). For more information about `PatchSummary`, see [PatchSummary](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_PatchSummary.html) in the *AWS Security Hub API Reference*.
+For more information about compliance definitions, see [Patch compliance state values](patch-manager-compliance-states.md). For more information about `PatchSummary`, see [PatchSummary](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_PatchSummary.html) in the *AWS Security Hub API Reference*.
 
 ### Latency for sending findings
 <a name="securityhub-integration-finding-latency"></a>
@@ -88,7 +78,7 @@ This procedure describes how to view findings in Security Hub CSPM about managed
 
    A pane opens on the right side of the screen with more details about the resource, the issue discovered, and a recommended remediation.
 **Important**
-At this time, Security Hub CSPM reports the resource type of all managed nodes as `EC2 Instance`. This includes on-premises servers and virtual machines (VMs) that you have registered for use with Systems Manager.
+Currently, Security Hub CSPM reports the resource type of all managed nodes as `EC2 Instance`. This includes on-premises servers and virtual machines (VMs) that you have registered for use with Systems Manager.
 
 **Severity classifications**
 The list of findings for **Systems Manager Patch Manager** includes a report of the severity of the finding. **Severity** levels include the following, from lowest to highest:

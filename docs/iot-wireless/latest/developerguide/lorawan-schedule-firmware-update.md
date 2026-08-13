@@ -57,7 +57,7 @@ When you use the AWS IoT Wireless API or the AWS CLI, you can obtain this inform
 
 **Obtain wireless gateway ID**
 
-   First, obtain the unique identifier of the gateway for which you want to retrieve the current firmware version. If you've already provisioned a gateway, you can get information about the gateway using the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessGateway.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessGateway.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-wireless-gateway.html](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-wireless-gateway.html) CLI command.
+   First, obtain the unique identifier of the gateway for which you want to retrieve the current firmware version. If you've already provisioned a gateway, you can get information about the gateway using the [`GetWirelessGateway`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessGateway.html) API operation or the [`get-wireless-gateway`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-wireless-gateway.html) CLI command.
 
    ```
    aws iotwireless get-wireless-gateway \

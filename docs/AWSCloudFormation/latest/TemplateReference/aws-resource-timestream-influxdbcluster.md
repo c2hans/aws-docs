@@ -29,6 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[DeploymentType](#cfn-timestream-influxdbcluster-deploymenttype)" : {{String}},
       "[FailoverMode](#cfn-timestream-influxdbcluster-failovermode)" : {{String}},
       "[LogDeliveryConfiguration](#cfn-timestream-influxdbcluster-logdeliveryconfiguration)" : {{LogDeliveryConfiguration}},
+      "[MaintenanceSchedule](#cfn-timestream-influxdbcluster-maintenanceschedule)" : {{MaintenanceSchedule}},
       "[Name](#cfn-timestream-influxdbcluster-name)" : {{String}},
       "[NetworkType](#cfn-timestream-influxdbcluster-networktype)" : {{String}},
       "[Organization](#cfn-timestream-influxdbcluster-organization)" : {{String}},
@@ -58,6 +59,8 @@ Properties:
   [FailoverMode](#cfn-timestream-influxdbcluster-failovermode): {{String}}
   [LogDeliveryConfiguration](#cfn-timestream-influxdbcluster-logdeliveryconfiguration): {{
     LogDeliveryConfiguration}}
+  [MaintenanceSchedule](#cfn-timestream-influxdbcluster-maintenanceschedule): {{
+    MaintenanceSchedule}}
   [Name](#cfn-timestream-influxdbcluster-name): {{String}}
   [NetworkType](#cfn-timestream-influxdbcluster-networktype): {{String}}
   [Organization](#cfn-timestream-influxdbcluster-organization): {{String}}
@@ -138,6 +141,12 @@ Specifies the behavior of failure recovery when the primary node of the cluster 
 Configuration for sending InfluxDB engine logs to a specified S3 bucket.
 *Required*: No
 *Type*: [LogDeliveryConfiguration](aws-properties-timestream-influxdbcluster-logdeliveryconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`MaintenanceSchedule`  <a name="cfn-timestream-influxdbcluster-maintenanceschedule"></a>
+Property description not available.
+*Required*: No
+*Type*: [MaintenanceSchedule](aws-properties-timestream-influxdbcluster-maintenanceschedule.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-timestream-influxdbcluster-name"></a>
@@ -245,6 +254,9 @@ A service-generated unique identifier for the InfluxDB cluster.
 
 `InfluxAuthParametersSecretArn`  <a name="InfluxAuthParametersSecretArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the Amazon Secrets Manager secret containing the initial InfluxDB authorization parameters. The secret value is a JSON formatted key-value pair holding InfluxDB authorization values: organization, bucket, username, and password.
+
+`NextMaintenanceTime`  <a name="NextMaintenanceTime-fn::getatt"></a>
+Property description not available.
 
 `ReaderEndpoint`  <a name="ReaderEndpoint-fn::getatt"></a>
 The endpoint used to connect to the Timestream for InfluxDB cluster for read-only operations.

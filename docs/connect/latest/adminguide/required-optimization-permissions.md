@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/required-optimization-permissions.html
 ---
 
-# Security profile permissions for forecasting, capacity planning, and scheduling in Connect Customer
+# Security profile permissions for forecasting & agent scheduling in Connect Customer
 <a name="required-optimization-permissions"></a>
 
-Assign the following security profile permissions as needed to use forecasting, capacity planning, and scheduling.
+Assign the following security profile permissions as needed to use forecasting & agent scheduling.
 
 **Analytics and Optimization permissions**
 + **Forecasting**: Grants permission to view and edit in forecasting pages. For example, you can:

@@ -9,13 +9,13 @@ To change the delivery channel name, you must delete it and create a new deliver
 
 **Renaming the delivery channel using the AWS CLI**
 
-1. Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/stop-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/stop-configuration-recorder.html) command to stop the configuration recorder:
+1. Use the [`stop-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/stop-configuration-recorder.html) command to stop the configuration recorder:
 
    ```
    $ aws configservice stop-configuration-recorder --configuration-recorder-name {{configRecorderName}}
    ```
 
-1. Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-delivery-channels.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-delivery-channels.html) command, and take note of your delivery channel's attributes:
+1. Use the [`describe-delivery-channels`](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-delivery-channels.html) command, and take note of your delivery channel's attributes:
 
    ```
    $ aws configservice describe-delivery-channels
@@ -33,13 +33,13 @@ To change the delivery channel name, you must delete it and create a new deliver
    }
    ```
 
-1. Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/delete-delivery-channel.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/delete-delivery-channel.html) command to delete the delivery channel:
+1. Use the [`delete-delivery-channel`](http://docs.aws.amazon.com/cli/latest/reference/configservice/delete-delivery-channel.html) command to delete the delivery channel:
 
    ```
    $ aws configservice delete-delivery-channel --delivery-channel-name {{default}}
    ```
 
-1. Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/put-delivery-channel.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-delivery-channel.html) command to create a delivery channel with the desired name:
+1. Use the [`put-delivery-channel`](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-delivery-channel.html) command to create a delivery channel with the desired name:
 
    ```
    $ aws configservice put-delivery-channel --delivery-channel file://deliveryChannel.json

@@ -13,7 +13,7 @@ Relevance tuning has replaced metadata boosting. For more information, see [Tuni
 Amazon Q Business offers two types of boosting: document attribute boosting and document attribute value boosting. This section outlines how these types of boosting work.
 
 **Note**
-To use the `STRING` and `STRING_LIST` type document attributes for boosting on the console and the API, they must be enabled for search using the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeConfiguration.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeConfiguration.html) object of the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndex.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndex.html) API operation. If you don't enable search on these attributes, you can't boost attributes of these data types on either the Amazon Q Business console or the API.
+To use the `STRING` and `STRING_LIST` type document attributes for boosting on the console and the API, they must be enabled for search using the [DocumentAttributeConfiguration](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeConfiguration.html) object of the [UpdateIndex](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndex.html) API operation. If you don't enable search on these attributes, you can't boost attributes of these data types on either the Amazon Q Business console or the API.
 
 **Topics**
 + [Boosting document attribute importance](#boosting-document-attribute)

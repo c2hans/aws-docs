@@ -45,13 +45,15 @@ To declare this entity in your CloudFormation template, use the following syntax
 The string value to match for.
 *Required*: No
 *Type*: String
-*Pattern*: `[A-Za-z0-9_.-]+`
+*Pattern*: `^[A-Za-z0-9_.:/-]+$`
+*Minimum*: `1`
+*Maximum*: `255`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MatchValueStringList`  <a name="cfn-bedrockagentcore-gateway-claimmatchvaluetype-matchvaluestringlist"></a>
 An array of strings to check for a match.
 *Required*: No
 *Type*: Array of String
-*Minimum*: `1`
 *Maximum*: `255`
+*Minimum*: `1 | 1`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -55,8 +55,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.5.20240701 version:** 1.300041.0-1.amzn2023
   - **AL2023.5.20240708 version:** 1.300041.1-1.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
+- ** [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
+  - **RPM:**  [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.5.20240701 version:** 2.0.2-1.amzn2023
   - **AL2023.5.20240708 version:** 2.0.3-1.amzn2023

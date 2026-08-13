@@ -10,7 +10,7 @@ You can monitor the status of your connector operations using any of the followi
 ## Use the connector API to query the status of file transfer requests
 <a name="sftp-connector-api-query"></a>
 
-To track the progress of a file transfer operation, you use the [https://docs.aws.amazon.com//transfer/latest/APIReference/API_ListFileTransferResults.html](https://docs.aws.amazon.com//transfer/latest/APIReference/API_ListFileTransferResults.html) API operation, which returns real-time updates and detailed information on the status of each individual file being transferred in a specific file transfer operation. You specify the file transfer by providing its Connector ID and its Transfer ID. The following example returns a list of files for connector ID `a-11112222333344444` and transfer-ID `aa1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
+To track the progress of a file transfer operation, you use the [ListFileTransferResults](https://docs.aws.amazon.com//transfer/latest/APIReference/API_ListFileTransferResults.html) API operation, which returns real-time updates and detailed information on the status of each individual file being transferred in a specific file transfer operation. You specify the file transfer by providing its Connector ID and its Transfer ID. The following example returns a list of files for connector ID `a-11112222333344444` and transfer-ID `aa1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
 
 ```
 aws transfer list-file-transfer-results --connector-id a-11112222333344444 --transfer-id a1b2c3d4-5678-90ab-cdef-EXAMPLE11111

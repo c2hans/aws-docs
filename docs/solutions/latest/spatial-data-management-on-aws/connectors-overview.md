@@ -144,6 +144,17 @@ An S3 connector can write structured JSON metadata to a bucket on asset events (
 
 For configuration details, see [Amazon S3 connector](connector-s3.md). For the lookup role, see [Metadata lookup and enrichment](connector-derivation.md).
 
+### Amazon S3 Import
+<a name="_amazon-s3-import"></a>
+
+Step types: `casPutObject`, `deadlineJob`
+
+ **Roles:** Import files from external S3 buckets into SDMA as managed assets.
+
+The Amazon S3 Import connector browses a source S3 bucket (same-account or cross-account), and you can select files in the Spatial Data Portal to import them into SDMA via an AWS Deadline Cloud job. Files are integrity-verified during transfer. This connector is purpose-built for bringing existing S3-hosted data into SDMA without re-uploading through the browser.
+
+For configuration details, see [Importing files from Amazon S3](connector-s3-import.md).
+
 ### Amazon DynamoDB
 <a name="_amazon-dynamodb"></a>
 

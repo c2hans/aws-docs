@@ -20,7 +20,7 @@ These controls may not be available in all AWS Regions. For more information, se
 
 **Resource type:** `AWS::Kinesis::Stream`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/kinesis-stream-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/kinesis-stream-encrypted.html)
+**AWS Config rule:** [kinesis-stream-encrypted](https://docs.aws.amazon.com/config/latest/developerguide/kinesis-stream-encrypted.html)
 
 **Schedule type:** Change triggered
 
@@ -73,7 +73,7 @@ To add tags to a Kinesis data stream, see [Tagging your streams in Amazon Kinesi
 
 **Resource type:** `AWS::Kinesis::Stream`
 
-**AWS Configrule:** [https://docs.aws.amazon.com/config/latest/developerguide/kinesis-stream-backup-retention-check.html](https://docs.aws.amazon.com/config/latest/developerguide/kinesis-stream-backup-retention-check.html)
+**AWS Configrule:** [kinesis-stream-backup-retention-check](https://docs.aws.amazon.com/config/latest/developerguide/kinesis-stream-backup-retention-check.html)
 
 **Schedule type:** Change triggered
 

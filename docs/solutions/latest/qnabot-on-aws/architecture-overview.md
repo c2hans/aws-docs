@@ -5,20 +5,20 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/architect
 # Architecture overview
 <a name="architecture-overview"></a>
 
-This section provides a reference implementation architecture diagram for the components deployed with this solution.
+This section provides a reference implementation architecture diagram for the components deployed with this guidance.
 
 ## Architecture diagram
 <a name="architecture-diagram"></a>
 
-Deploying this solution with the default parameters deploys the following components in your AWS account (components with dotted line border are optional).
+Deploying this guidance with the default parameters deploys the following components in your AWS account (components with dotted line border are optional).
 
  **QnABot on AWS architecture on AWS**
 
 ![arch diagram](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/arch-diagram.png)
 
-The high-level process flow for the solution components deployed with the AWS CloudFormation template is as follows:
+The high-level process flow for the guidance components deployed with the AWS CloudFormation template is as follows:
 
-1. The admin deploys the solution into their AWS account, opens the Content Designer UI or [Amazon Lex](https://aws.amazon.com/lex/) web client, and uses [Amazon Cognito](https://aws.amazon.com/cognito/) to authenticate.
+1. The admin deploys the guidance into their AWS account, opens the Content Designer UI or [Amazon Lex](https://aws.amazon.com/lex/) web client, and uses [Amazon Cognito](https://aws.amazon.com/cognito/) to authenticate.
 
 1. After authentication, [Amazon API Gateway](http://aws.amazon.com/api-gateway/) and [Amazon S3](http://aws.amazon.com/s3/) deliver the contents of the Content Designer UI.
 

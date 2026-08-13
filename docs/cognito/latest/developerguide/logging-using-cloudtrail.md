@@ -111,11 +111,11 @@ Amazon Cognito records `UserSub` but not `UserName` in CloudTrail logs for reque
 **Data events**
 
 Amazon Cognito logs the following Amazon Cognito Identity events to CloudTrail as *data events*. [Data events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html#logging-data-events) are high-volume data-plane API operations that CloudTrail doesn’t log by default. Additional charges apply for data events.
-+ [https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_GetCredentialsForIdentity.html](https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_GetCredentialsForIdentity.html)
-+ [https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_GetId.html](https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_GetId.html)
-+ [https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_GetOpenIdToken.html](https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_GetOpenIdToken.html)
-+ [https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_GetOpenIdTokenForDeveloperIdentity.html](https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_GetOpenIdTokenForDeveloperIdentity.html)
-+ [https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_UnlinkIdentity.html](https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_UnlinkIdentity.html)
++ [GetCredentialsForIdentity](https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_GetCredentialsForIdentity.html)
++ [GetId](https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_GetId.html)
++ [GetOpenIdToken](https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_GetOpenIdToken.html)
++ [GetOpenIdTokenForDeveloperIdentity](https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_GetOpenIdTokenForDeveloperIdentity.html)
++ [UnlinkIdentity](https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_UnlinkIdentity.html)
 
 To generate CloudTrail logs for these API operations, you must activate data events in your trail and choose event selectors for **Cognito identity pools**. For more information, see [Logging data events for trails](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html) in the *AWS CloudTrail User Guide*.
 

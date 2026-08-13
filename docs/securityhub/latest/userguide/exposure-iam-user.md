@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-ia
 
 AWS Security Hub can generate exposure findings for AWS Identity and Access Management (IAM) users.
 
-On the Security Hub console, the IAM user involved in an exposure finding and its identifying information are listed in the **Resources** section of the finding details. Programmatically, you can retrieve resource details with the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingsV2.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingsV2.html) operation of the Security Hub CSPM API.
+On the Security Hub console, the IAM user involved in an exposure finding and its identifying information are listed in the **Resources** section of the finding details. Programmatically, you can retrieve resource details with the [GetFindingsV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingsV2.html) operation of the Security Hub CSPM API.
 
 After identifying the resource involved in an exposure finding, you can delete the resource if you don't need it. Deleting a nonessential resource can reduce your exposure profile and AWS costs. If the resource is essential, follow these recommended remediation steps to help mitigate the risk. The remediation topics are divided based on the type of trait.
 
@@ -16,7 +16,7 @@ A single exposure finding contains issues identified in multiple remediation top
 **Note**
  The remediation guidance provided in this topic might require additional consultation in other AWS resources.
 
-IAM best practices recommend that you create IAM roles or use federation with an identity provider to access AWS using temporary credentials instead of creating individual IAM users. If that's an option for your organization and use case, we recommend switching to roles or federation instead of using IAM users. For more information, see [IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) in the *IAM User Guide*.
+IAM best practices recommend that you create IAM roles or use federation with an identity provider to access AWS using temporary credentials instead of creating individual IAM users. If that is an option for your organization and use case, switch to roles or federation instead of using IAM users. For more information, see [IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) in the *IAM User Guide*.
 
 **Contents**
 + [Misconfiguration traits for IAM users](#iam-user-misconfiguration)
@@ -51,7 +51,10 @@ Here are misconfiguration traits for IAM users and suggested remediation steps.
 ### The IAM user does not have MFA enabled
 <a name="user-mfa-disabled"></a>
 
- Multi-factor authentication (MFA) adds an extra layer of protection on top of a user name and password. When MFA is enabled and an IAM user signs in to an AWS website, they are prompted for their user name, password, and an authentication code from their AWS MFA device. The authenticating principal must possess a device that emits a time-sensitive key and must have knowledge of a credential. Without MFA, if a user’s password is compromised, an attacker gains full access to the user’s AWS permissions. Following standard security principles, AWS recommends enabling MFA for all accounts and users that have AWS Management Console access.
+ Multi-factor authentication (MFA) adds an extra layer of protection on top of a user name and password. When MFA is enabled and an IAM user signs in to an AWS website, they are prompted for their user name, password, and an authentication code from their AWS MFA device. The authenticating principal must possess a device that emits a time-sensitive key and must have knowledge of a credential. Without MFA, if a user’s password is compromised, an attacker gains full access to the user’s AWS permissions. Following standard security principles, enable MFA for all accounts and users that have AWS Management Console access.
+
+**Remediation**
+Take one or more of the following actions to address this exposure:
 
 **Review MFA types**
  AWS supports the following [MFA types](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html#id_credentials_mfa-types):
@@ -67,12 +70,15 @@ Here are misconfiguration traits for IAM users and suggested remediation steps.
 ### The AWS account for the IAM user has weak password policies
 <a name="weak-password-policies"></a>
 
- Password policies help protect against unauthorized access by enforcing minimum complexity requirements for IAM user passwords. Without strong password policies, there’s an increased risk that user accounts could be compromised through password guessing or brute force attacks. Following standard security principles, AWS recommends implementing a strong password policy to ensure users create complex passwords that are difficult to guess.
+ Password policies help protect against unauthorized access by enforcing minimum complexity requirements for IAM user passwords. Without strong password policies, there’s an increased risk that user accounts could be compromised through password guessing or brute force attacks. Following standard security principles, implement a strong password policy to ensure users create complex passwords that are difficult to guess.
+
+**Remediation**
+Take one or more of the following actions to address this exposure:
 
 **Configure a strong password policy**
  Go to the IAM dashboard and navigate to Account settings. Review the current password policy settings for your account, including minimum length, character types required, and password expiration settings.
 
- At a minimum, AWS recommends following these best practices when setting your password policy:
+ At a minimum, follow these best practices when setting your password policy:
 + Require at least one uppercase character.
 + Require at least one lowercase character.
 + Require at least one symbol.
@@ -87,18 +93,23 @@ Here are misconfiguration traits for IAM users and suggested remediation steps.
 ### The IAM user has unrotated access keys
 <a name="unrotated-access-keys"></a>
 
- Access keys consist of an access key ID and a secret access key that enable programmatic access to AWS resources. When access keys remain unchanged for extended periods of time, they increase the risk of unauthorized access if they are compromised. Following security best practices, AWS recommends rotating access keys every 90 days to minimize the window of opportunity for attackers to use compromised credentials.
+ Access keys consist of an access key ID and a secret access key that enable programmatic access to AWS resources. When access keys remain unchanged for extended periods of time, they increase the risk of unauthorized access if they are compromised. Following security best practices, rotate access keys every 90 days to minimize the window of opportunity for attackers to use compromised credentials.
 
-**Rotate access keys**
- In the exposure finding, open the resource. This will open the user details window. To rotate access keys, see [Manage access keys for IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey) in the *IAM User Guide*.
+**Remediation: Rotate access keys**
+ In the exposure finding, open the resource. This opens the user details window. To rotate access keys, see [Manage access keys for IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey) in the *IAM User Guide*.
 
 ### The IAM user has a policy that allows unrestricted access to KMS key decryption
 <a name="unrestricted-kms-decryption-allowed"></a>
 
- AWS KMS enables you to create and manage cryptographic keys that are used to protect your data. IAM policies that allow unrestricted AWS KMS decryption permissions (e.g., `kms:Decrypt` or `kms:ReEncryptFrom`) on all KMS keys can lead to unauthorized data access if an IAM user’s credentials are compromised. If an attacker gains access to these credentials, they could potentially decrypt any encrypted data in your environment, which could include sensitive data. Following security best practices, AWS recommends implementing least privilege by limiting AWS KMS decryption permissions to only specific keys that users need for their job functions.
+ AWS KMS enables you to create and manage cryptographic keys that are used to protect your data. IAM policies that allow unrestricted AWS KMS decryption permissions (for example, `kms:Decrypt` or `kms:ReEncryptFrom`) on all KMS keys can lead to unauthorized data access if an IAM user’s credentials are compromised. If an attacker gains access to these credentials, they could potentially decrypt any encrypted data in your environment, which could include sensitive data. Following security best practices, implement least privilege by limiting AWS KMS decryption permissions to only specific keys that users need for their job functions.
+
+**Remediation**
+Take one or more of the following actions to address this exposure:
 
 **Implement least-privilege access**
- In the exposure finding, open the resource. This will open the IAM Policy window. Look for permissions in KMS that allow kms:Decrypt or `kms:ReEncryptFrom` or `KMS:*` with a resource specification of `"*"`. Update the policy to restrict AWS KMS decryption permissions to only the specific keys needed. Modify the policy to replace the `"*"` resource with the specific ARNs of required AWS KMS keys.
+ In the exposure finding, open the resource. This opens the IAM Policy window. Look for permissions in KMS that allow kms:Decrypt or `kms:ReEncryptFrom` or `KMS:*` with a resource specification of `"*"`.
+
+ Update the policy to restrict AWS KMS decryption permissions to only the specific keys needed. Modify the policy to replace the `"*"` resource with the specific ARNs of required AWS KMS keys.
 
 **Secure configuration considerations**
  Consider adding conditions to further restrict when these permissions can be used. For example, you can limit decryption operations to specific VPC endpoints or source IP ranges. You can also configure key policies to further restrict who can use specific KMS keys.
@@ -115,7 +126,7 @@ Here are misconfiguration traits for IAM users and suggested remediation steps.
 
 Impact traits describe the potential blast radius of an exposure. Security Hub analyzes the effective permissions of the AWS Identity and Access Management principal associated with the IAM user to determine the downstream resources an attacker could reach if the IAM user is compromised. Each impact trait identifies a specific privilege escalation pattern. To reduce your blast radius, review the permission paths described in each trait and remove any unnecessary privileges.
 
-Following standard security principles, AWS recommends that you grant least privilege — only the permissions required to perform a task. Replace broad policies with scoped-down policies that grant only the specific actions and resources needed. To identify unused permissions to remove, use IAM Access Analyzer to generate recommendations based on access history. For more information, see [Findings for external and unused access](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-findings.html) and [Apply least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege) in the *IAM User Guide*.
+Following standard security principles, grant least privilege by providing only the permissions required to perform a task. Replace broad policies with scoped-down policies that grant only the specific actions and resources needed. To identify unused permissions to remove, use IAM Access Analyzer to generate recommendations based on access history. For more information, see [Findings for external and unused access](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-findings.html) and [Apply least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege) in the *IAM User Guide*.
 
 ### Full control privileged executor
 <a name="full-control-privileged-executor"></a>

@@ -146,7 +146,7 @@ In the following image of the agent workspace, the agent is on a chat with Nikki
 ### Generative AI-powered agent assist
 <a name="connect-intro-ka"></a>
 
-You can use [Connect AI agents](connect-ai-agent.md) to automatically detect customer intent during calls and chats. Connect AI agents uses the real-time conversation with the customer, along with relevant company content, to automatically recommend what to say or what actions an agent should take to better assist the customer. This improves both agent productivity and customer satisfaction. Agents can also use natural language to search across connected knowledge sources to receive generated responses, recommended actions, and links to more information.
+You can use [Connect Customer agent assist](connect-ai-agent.md) to automatically detect customer intent during calls and chats. agent assist uses the real-time conversation with the customer, along with relevant company content, to automatically recommend what to say or what actions an agent should take to better assist the customer. This improves both agent productivity and customer satisfaction. Agents can also use natural language to search across connected knowledge sources to receive generated responses, recommended actions, and links to more information.
 
 The following image shows how an article may appear in the agent application when the agent is on a call.
 
@@ -195,7 +195,7 @@ Give your managers the actionable insights and capabilities they need to optimiz
 + [Real-time and historical reports and dashboards](#connect-intro-reporting)
 + [Real-time conversational analytics](#connect-intro-rtc)
 + [Quality and performance management](#connect-intro-qa)
-+ [Forecasting, capacity planning, and scheduling](#connect-intro-wfm)
++ [Forecasting & agent scheduling](#connect-intro-wfm)
 
 ### Real-time and historical reports and dashboards
 <a name="connect-intro-reporting"></a>
@@ -204,11 +204,11 @@ Understanding your contact center at the most granular level is key to improving
 
 ![A couple of the ready-made dashboards for you to start using.](http://docs.aws.amazon.com/connect/latest/adminguide/images/whatisconnect-dashboard-intro.png)
 
-The following image shows an example of the [Contact Lens Conversational analytics dashboard](contact-lens-conversational-analytics-dashboard.md). This dashboard helps you understand why customers are contacting you, the trends of contact drivers over time, and the performance of each of those call drivers.
+The following image shows an example of the [Conversational analytics dashboard](contact-lens-conversational-analytics-dashboard.md). This dashboard helps you understand why customers are contacting you, the trends of contact drivers over time, and the performance of each of those call drivers.
 
 ![A conversational analytics dashboard.](http://docs.aws.amazon.com/connect/latest/adminguide/images/whatisconnect-dashboard.png)
 
-You can use Connect Customer data lake as a central location to query various types of data from Connect Customer. This data includes contact records, Contact Lens conversational analytics, Contact Lens performance evaluations, and more. You can use data lake to create custom reports, run SQL queries, or use the BI tools of your choice to analyze the information that matters most to improving customer experience and operational efficiency.
+You can use Connect Customer data lake as a central location to query various types of data from Connect Customer. This data includes contact records, conversational analytics data, performance evaluations, and more. You can use data lake to create custom reports, run SQL queries, or use the BI tools of your choice to analyze the information that matters most to improving customer experience and operational efficiency.
 
 For example, managers can use QuickSight to visualize which agents have the highest customer satisfaction for calls about lost orders and then adjust routing profiles to staff their queues with the ideal agents to achieve their desired business outcomes.
 
@@ -268,10 +268,10 @@ Selecting the eye icon takes the manager to CCP section of the agent workspace, 
 
 ![The CCP, the Monitor and Barge toggles.](http://docs.aws.amazon.com/connect/latest/adminguide/images/monitor-barge-voice-channel-ccp.png)
 
-### Forecasting, capacity planning, and scheduling
+### Forecasting & agent scheduling
 <a name="connect-intro-wfm"></a>
 
-Forecasting, capacity planning, and scheduling are machine learning (ML)–powered features that help your workforce management team predict, allocate, and verify that the right number of agents are scheduled at the right time. Highly accurate forecasting helps you meet your operational goals with minimal overstaffing. You can anticipate contact volume and arrival rates, convert forecasts into projected staffing needs, and assign daily shifts to the right number of agents.
+Forecasting & agent scheduling are machine learning (ML)–powered features that help your workforce management team predict, allocate, and verify that the right number of agents are scheduled at the right time. Highly accurate forecasting helps you meet your operational goals with minimal overstaffing. You can anticipate contact volume and arrival rates, convert forecasts into projected staffing needs, and assign daily shifts to the right number of agents.
 +  [Forecasting](forecasting.md): A forecast is the starting point for any scheduling and capacity planning activities. Before you can generate a schedule or capacity plan, you must create a corresponding forecast. A forecast attempts to predict future contact volume and average handle time by using historical metrics.
 
   Forecast data is displayed in graphs, as shown in the following image.

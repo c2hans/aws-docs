@@ -56,7 +56,7 @@ You can use the JSON format option in the secret as:
 }
 ```
 
-You can also use the AWS CLI to create the secret. For more information, see [https://awscli.amazonaws.com/v2/documentation/api/2.0.33/reference/secretsmanager/create-secret.html](https://awscli.amazonaws.com/v2/documentation/api/2.0.33/reference/secretsmanager/create-secret.html) in the *AWS CLI Command Reference*.
+You can also use the AWS CLI to create the secret. For more information, see [create-secret](https://awscli.amazonaws.com/v2/documentation/api/2.0.33/reference/secretsmanager/create-secret.html) in the *AWS CLI Command Reference*.
 
 If you use AWS CLI, use the `--secret-string` parameter as follows:
 

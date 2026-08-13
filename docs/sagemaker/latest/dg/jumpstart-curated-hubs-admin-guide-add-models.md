@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-curated-hu
 
 After creating a private hub, you can then add allow-listed models. For the full list of available JumpStart models, see the [Built-in Algorithms with pre-trained Model Table](https://sagemaker.readthedocs.io/en/stable/doc_utils/pretrainedmodels.html) in the SageMaker Python SDK reference.
 
-1. You can filter through the available models programmatically using the `hub.list_sagemaker_public_hub_models()` method. You can optionally filter by categories such as framework (`"framework == pytorch"`), tasks such as image classification (`"task == ic"`), and more. For more information about filters, see [https://github.com/aws/sagemaker-python-sdk/blob/master/src/sagemaker/jumpstart/notebook_utils.py](https://github.com/aws/sagemaker-python-sdk/blob/master/src/sagemaker/jumpstart/notebook_utils.py). The filter parameter in the `hub.list_sagemaker_public_hub_models()` method is optional.
+1. You can filter through the available models programmatically using the `hub.list_sagemaker_public_hub_models()` method. You can optionally filter by categories such as framework (`"framework == pytorch"`), tasks such as image classification (`"task == ic"`), and more. For more information about filters, see [`notebook_utils.py`](https://github.com/aws/sagemaker-python-sdk/blob/master/src/sagemaker/jumpstart/notebook_utils.py). The filter parameter in the `hub.list_sagemaker_public_hub_models()` method is optional.
 
    ```
    filter_value = {{"framework == meta"}}

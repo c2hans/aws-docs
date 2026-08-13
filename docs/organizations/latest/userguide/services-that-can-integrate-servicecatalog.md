@@ -9,7 +9,7 @@ Service Catalog enables you to create and manage catalogs of IT services that ar
 
 The integration of Service Catalog with AWS Organizations simplifies the sharing of portfolios and copying of products across an organization. Service Catalog administrators can reference an existing organization in AWS Organizations when sharing a portfolio, and they can share the portfolio with any trusted organizational unit (OU) in the organization's tree structure. This eliminates the need to share portfolio IDs, and for the receiving account to manually reference the portfolio ID when importing the portfolio. Portfolios shared via this mechanism are listed in the shared-to account in the administrator’s **Imported Portfolio** view in Service Catalog.
 
-For more information about Service Catalog, see the [https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html).
+For more information about Service Catalog, see the [*Service Catalog Administrator Guide*](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html).
 
 Use the following information to help you integrate AWS Service Catalog with AWS Organizations.
 

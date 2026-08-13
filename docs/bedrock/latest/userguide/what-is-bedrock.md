@@ -101,11 +101,11 @@ response = client.invoke_model(
 ## Supported models
 <a name="featured-models"></a>
 
-Bedrock supports [100\+ foundation models](models.md) from industry-leading providers, including Amazon, Anthropic, DeepSeek, Moonshot AI, MiniMax, and OpenAI.
+Amazon Bedrock supports [100\+ foundation models](models.md) from industry-leading providers, including Amazon, Anthropic, DeepSeek, Moonshot AI, MiniMax, and OpenAI.
 
 |  |  |  |  |  |  |
 | --- |--- |--- |--- |--- |--- |
-| ![Amazon logo with curved arrow from A to Z forming a smile.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/nova2pro.png)**Amazon Nova** | ![Orange rounded square icon with white radial loading spinner design.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/models/claude.png)**Claude** | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/deepseek.png)**DeepSeek** | ![Spherical icon with horizontal stripes or segments across its surface.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/kimik2.5.png)**Kimi** | ![Red waveform icon representing audio or voice activity.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/minimax2.1.png)**MiniMax** | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/models/openai.png)**OpenAI** |
+| ![Amazon logo with curved arrow from A to Z forming a smile.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/nova2pro.png)**Amazon Nova** | ![Orange rounded square icon with white radial loading spinner design.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/models/claude.png)**Claude** | ![DeepSeek logo.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/deepseek.png)**DeepSeek** | ![Spherical icon with horizontal stripes or segments across its surface.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/kimik2.5.png)**Kimi** | ![Red waveform icon representing audio or voice activity.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/minimax2.1.png)**MiniMax** | ![OpenAI logo.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/models/openai.png)**OpenAI** |
 
 ## What's new?
 <a name="whats-new"></a>
@@ -114,11 +114,11 @@ Bedrock supports [100\+ foundation models](models.md) from industry-leading prov
 + [Claude Opus 4.8 now available in Amazon Bedrock](https://aws.amazon.com/about-aws/whats-new/2026/05/claude-opus-4.8-aws/): The latest Opus model from Anthropic, delivering improvements across agentic coding, deep knowledge work, and multi-stage autonomous tasks. See the [Claude Opus 4.8](model-card-anthropic-claude-opus-4-8.md) model card for details.
 + [Claude Mythos Preview (Gated Research Preview)](https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-bedrock-claude-mythos/): Anthropic's most advanced AI model with state-of-the-art capabilities across cybersecurity, software coding, and complex reasoning tasks. Available in gated preview in US East (N. Virginia).
 
-## Start Building
+## Start building
 <a name="start-building"></a>
 
 |  |  |
 | --- |--- |
 |  ![Cloud icon with bidirectional arrows indicating sync or data transfer.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/apis.jpg)  | Explore the [APIs supported by Amazon Bedrock](apis.md) and [Endpoints supported by Amazon Bedrock](endpoints.md) supported by Amazon Bedrock. |
 |  ![Wrench and screwdriver icon on purple background.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/build.jpg)  | Build using the [Making inference requests](inference.md) operations provided by Amazon Bedrock. |
-|  ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/customize.png)  | Customize your models to improve performance and quality. [Customize your model to improve its performance for your use case](custom-models.md) |
+|  ![Amazon Bedrock model customization options including fine-tuning, continued pre-training, and distillation.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/customize.png)  | Customize your models to improve performance and quality. [Customize your model to improve its performance for your use case](custom-models.md) |

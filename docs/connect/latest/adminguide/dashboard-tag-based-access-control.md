@@ -38,7 +38,7 @@ To apply tags to control access to users, queues, routing profiles, flows, flow 
   OR
   + **Analytics and Optimization - Login/Logout report - View**
 
-Additionally, you will need one or more relevant permissions to view specific resource data on dashboards and reports: **Routing profiles - View**, **Queues - View**, **Users - View**, **Test Cases - View**, **Evaluation forms - manage form definitions - View**, **Flows - View**, **Flow modules - View**, and **Bot - View**. The following image shows an example of security profile permissions that grant users the ability to view routing profiles, queues, and Connect Customer user accounts.
+Additionally, you will need one or more relevant permissions to view specific resource data on dashboards and reports: **Routing profiles - View**, **Queues - View**, **Users - View**, **Test Cases - View**, **Evaluation forms - manage form definitions - View**, **Flows - View**, **Flow modules - View**, and **Bot - View** are selected. The following image shows an example of security profile permissions that grant users the ability to view routing profiles, queues, and Connect Customer user accounts.
 
 ![Security profile permissions showing View permissions for routing profiles, queues, users, test cases, evaluation forms.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-tbac-permissions.png)
 
@@ -47,15 +47,14 @@ Additionally, you will need one or more relevant permissions to view specific re
 + The Dashboards support access controls on users, queues, routing profiles, flows, flow modules, evaluation forms, and test cases.
 + Real-time metrics and Historical metrics support access controls on users, queues, and routing profiles.
 + The Agent Activity Audit report supports access controls on users only.
-+ The Login/Logout report supports access controls on users and routing profiles.
-+ The tag-based access control experience on the **Real-time metrics**, **Historical metrics** and **Agent Activity Audit** page remains unchanged after this launch for users that had tag based access controls enabled in their security profile before January 15, 2026. It will continue to work the same way. However, if you would like the enhanced tag based access controls experience on your historical metrics, real-time metrics, and Agent Activity Audit report, please contact the Connect Customer service team to assist with the migration. When you migrate to the new tag based access controls experience, please note that starting January 15, 2026, the historical metrics, and Agent Activity Audit report will display 2 months of historical data. The retention period will increase by 1 day each day.
-+ Access to view **Agent Queues** is disabled.
++ The tag-based access control experience on the **Historical metrics**, **Agent Activity Audit**, and **Login/Logout** pages remain unchanged after this launch for users that had tag based access controls enabled in their security profile before January 15, 2026. It will continue to work the same way. However, if you would like the enhanced tag based access controls experience on your historical metrics, Agent Activity Audit report or Login/Logout, please contact the Connect Customer service team to assist with the migration. When you migrate to the new tag based access controls experience, please note that, the historical metrics report shows data from November, 2025 to the current date. The Login/Logout report shows data from April 9, 2026 to the current date. The retention period will increase by 1 day each day.
++ Agent queues do not support tag-based access controls.
++ The cases performance dashboard does not support tag-based access controls.
 + Scheduled reports are not supported.
 + Changes to resource tags are eventually consistent. After a data update, a brief delay may occur before the system reflects the latest value.
 + When you apply resource filters with tag-based access controls, you can view data only for resources in your security profile. For example, if you filter a widget by Queues Q1, Q2, and Q3, but your security profile grants access only to Q1 and Q2, the widget displays data for Q1 and Q2 only.
 + Dashboards and reports automatically apply tag-based access controls, displaying only data for resources that match the tags in your security profile.
 + When you filter metrics by resource tags you don't have access to, the dashboards and reports will display access restriction error.
-+ Starting January 15, 2026, Dashboards with tag-based access controls will display 2 months of historical data. The retention period will increase by 1 day each day until reaching 3 months on February 15, 2026.
 + When you filter metrics by tags and select **All accessible tags**, the system restricts data to permitted tags for the selected resource types.
 + If you have tag-based access controls enabled in your security profile, and you want to share a report with another user with a different security profile, use the Tag filter to select the resource(s) and select **All accessible tags** before saving the report, see example on the image below. This ensures that the user opening the saved report with a different security profile will only view metrics on the same report based on the resource tags configured in their security profile.
 ![The Tag filter with All accessible tags option selected.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-tbac-all-accessible-tags.png)
@@ -69,5 +68,9 @@ If you open a saved report that you don't have permission to access anymore due 
 
 To view the data, perform one of the following steps:
 + If your widget or report does not have any groupings configured, add relevant authorized groupings such as users, queues, routing profiles, flows, flow modules, evaluation forms, and test cases.
+
+OR
 + To view metrics on Summary widgets on the Dashboard, use the Tag filter to select the resource and tags you have access to by selecting the first filter value **All accessible tags**. This gives you access to metrics based on all the resource tags configured in your security profile.
+
+OR
 + Create a new report that includes the resources you have access to.

@@ -21,10 +21,21 @@ App Runner provides convenient platform-specific managed runtimes. When you use 
 
 The following table lists the changes included in this release.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/apprunner/latest/relnotes/release-2025-03-05-monthly-rt-release.html) |
-| **Python**<br />[Supported runtimes](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-python-releases.html) | No updates to language versions.<br />Package updates:+  Updated SQLite to 3.49.1.  |
-| **Node.js**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-nodejs-releases.html) | Updated Node.js 18 to version 18.20.7.<br />No tools updates. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Python</b><br /><a href="https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-python-releases.html">Supported runtimes</a></td><td>No updates to language versions.<br />Package updates:<ul><li> Updated SQLite to 3.49.1. </li></ul></td></tr>
+  <tr><td><b>Node.js</b><br /><a href="https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-nodejs-releases.html">Supported runtimes </a></td><td>Updated Node.js 18 to version 18.20.7.<br />No tools updates.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>

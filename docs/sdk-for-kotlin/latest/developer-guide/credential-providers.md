@@ -81,7 +81,7 @@ The ordering of credentials resolution described above is current for the `1.4.x
 
 You can specify a credentials provider instead of using the default provider chain. This approach gives you direct control over which credentials the SDK uses.
 
-For example, to use the credentials for an assumed IAM role, specify an `StsAssumeRoleCredentialsProvider` when you create the client:
+For example, to use the credentials for an assumed IAM role, specify an [`StsAssumeRoleCredentialsProvider`](/sdk-for-kotlin/api/latest/aws-config/aws.sdk.kotlin.runtime.auth.credentials/-sts-assume-role-credentials-provider/index.html) when you create the client:
 
 ```
 val ddb = DynamoDbClient {

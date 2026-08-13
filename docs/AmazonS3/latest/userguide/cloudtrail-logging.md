@@ -51,13 +51,13 @@ Newer Amazon S3 features are not supported for SOAP. We recommend that you use e
 
 | SOAP API name | API event name used in CloudTrail log |
 | --- | --- |
-| [https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPListAllMyBuckets.html](https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPListAllMyBuckets.html) | ListBuckets |
-| [https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPCreateBucket.html](https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPCreateBucket.html) | CreateBucket |
-| [https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPDeleteBucket.html](https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPDeleteBucket.html) | DeleteBucket |
-| [https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPGetBucketAccessControlPolicy.html](https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPGetBucketAccessControlPolicy.html) | GetBucketAcl |
-| [https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPSetBucketAccessControlPolicy.html](https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPSetBucketAccessControlPolicy.html) | PutBucketAcl |
-| [https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPGetBucketLoggingStatus.html](https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPGetBucketLoggingStatus.html) | GetBucketLogging |
-| [https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPSetBucketLoggingStatus.html](https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPSetBucketLoggingStatus.html) | PutBucketLogging |
+| [ListAllMyBuckets](https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPListAllMyBuckets.html) | ListBuckets |
+| [CreateBucket](https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPCreateBucket.html) | CreateBucket |
+| [DeleteBucket](https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPDeleteBucket.html) | DeleteBucket |
+| [GetBucketAccessControlPolicy](https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPGetBucketAccessControlPolicy.html) | GetBucketAcl |
+| [SetBucketAccessControlPolicy](https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPSetBucketAccessControlPolicy.html) | PutBucketAcl |
+| [GetBucketLoggingStatus](https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPGetBucketLoggingStatus.html) | GetBucketLogging |
+| [SetBucketLoggingStatus](https://docs.aws.amazon.com/AmazonS3/latest/API/SOAPSetBucketLoggingStatus.html) | PutBucketLogging |
 
  For more information about CloudTrail and Amazon S3, see the following topics:
 

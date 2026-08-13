@@ -24,7 +24,7 @@ The EMQX dashboard is only accessible from within the gateway host. If you try t
 
 1. Ensure that you are within the gateway host.
 
-1. Open a browser window and visit [http://localhost:18083/](http://localhost:18083/).
+1. Open a browser window and visit [`http://localhost:18083/`](http://localhost:18083/).
 
 1. Login to the the EMQX dashboard. This procedure assumes that you've changed your default login credentials to something of your choosing. For more information on intial setup, see [Enable username and password authentication](configure-emqx-broker.md#emqx-broker-username-password-auth).
 

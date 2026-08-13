@@ -11,12 +11,12 @@ Amazon SageMaker geospatial capabilities is no longer open to new customers. Off
 Amazon SageMaker geospatial supports the following raster data collections. Of the following data collections, you can use the  USGS Landsat and the Sentinel-2 Cloud-Optimized GeoTIFF data collections when starting an Earth Observation Job (EOJ). To learn more about the EOJs, see [Earth Observation Jobs](geospatial-eoj.md).
 + [Copernicus Digital Elevation Model (DEM) – GLO-30](https://registry.opendata.aws/copernicus-dem/)
 + [Copernicus Digital Elevation Model (DEM) – GLO-90](https://registry.opendata.aws/copernicus-dem/)
-+ [https://registry.opendata.aws/sentinel-2-l2a-cogs/](https://registry.opendata.aws/sentinel-2-l2a-cogs/)
-+ [https://registry.opendata.aws/sentinel-1/](https://registry.opendata.aws/sentinel-1/)
++ [Sentinel-2 Cloud-Optimized GeoTIFFs](https://registry.opendata.aws/sentinel-2-l2a-cogs/)
++ [Sentinel-1](https://registry.opendata.aws/sentinel-1/)
 + [National Agriculture Imagery Program (NAIP) on AWS](https://registry.opendata.aws/naip/)
-+ [https://registry.opendata.aws/usgs-landsat/](https://registry.opendata.aws/usgs-landsat/)
++ [USGS Landsat 8](https://registry.opendata.aws/usgs-landsat/)
 
-To find the list of available raster data collections in your AWS Regions, use `ListRasterDataCollections`. In the [`ListRasterDataCollections` response](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_ListRasterDataCollections.html#API_geospatial_ListRasterDataCollections_ResponseSyntax), you get a [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_ListRasterDataCollections.html#API_geospatial_ListRasterDataCollections_ResponseSyntax](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_ListRasterDataCollections.html#API_geospatial_ListRasterDataCollections_ResponseSyntax) object that contains details about the available raster data collections.
+To find the list of available raster data collections in your AWS Regions, use `ListRasterDataCollections`. In the [`ListRasterDataCollections` response](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_ListRasterDataCollections.html#API_geospatial_ListRasterDataCollections_ResponseSyntax), you get a [`RasterDataCollectionMetadata`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_ListRasterDataCollections.html#API_geospatial_ListRasterDataCollections_ResponseSyntax) object that contains details about the available raster data collections.
 
 **Example – Calling the `ListRasterDataCollections` API using the AWS SDK for Python (Boto3)**  <a name="list-raster-data-collections"></a>
 When you use the SDK for Python (Boto3) and SageMaker geospatial, you must create a geospatial client, `geospatial_client`. Use the following Python snippet to make a call to the `list_raster_data_collections` API:

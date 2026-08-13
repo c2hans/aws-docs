@@ -20,7 +20,7 @@ Each job you submit will progress through a number of different possible statuse
 **Successful jobs**
 A successful job results in all of its outputs being written to your Amazon S3 bucket. The following list contains details about the different statuses successful jobs go through:
 
-1. `SUBMITTED`: Jobs that you created in the MediaConvert console or through a [https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-http-methods](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-http-methods) operation that MediaConvert hasn't started processing.
+1. `SUBMITTED`: Jobs that you created in the MediaConvert console or through a [`CreateJob`](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-http-methods) operation that MediaConvert hasn't started processing.
 
 1. `INPUT_INFORMATION`: MediaConvert read details about your input or inputs.
 

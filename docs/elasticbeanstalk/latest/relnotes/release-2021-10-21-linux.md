@@ -17,22 +17,39 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/alas2.html) on or before **October 15, 2021** to all released Amazon Linux 2 platforms.<br />The **Apache httpd**, **Go**, **.NET Core**, and **Node.js** releases are security releases. For more information, see **Cross-platform updates** and **Platform-specific updates** in this table. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2021-10-21-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2021-10-21-linux.html) |
-| **Base AMI** | Updated the base AMI to version **2.0.20211001**. |
-| **Graviton AMIs** | Updated Graviton images for platforms that support Graviton instances. <br />For a list of Graviton image IDs for each supported platform branch and region, see [Graviton image IDs for supporting platforms](#release-2021-10-21-linux.graviton) on this page.<br />For more information about how to create and configure environments using Graviton instances, see [Amazon EC2 instance types](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.managing.ec2.html#using-features.managing.ec2.instance-types) in the *AWS Elastic Beanstalk Developer Guide*. |
-| **Apache httpd** | Updated platforms supporting the Apache HTTP Server 2.4 to version **2.4.51**. For details, see [Changes with Apache 2.4.x](https://downloads.apache.org/httpd/CHANGES_2.4) on the *Apache Software Foundation* website.<br />The Apache 2.4.51 release is a security release. |
-| **Go** | Updated Go to release **1.17.2**. For details, see [go1.17](https://golang.org/doc/devel/release.html#go1.17) in *The Go Programming Language Release History*.<br />The Go 1.17.2 release is a security release. |
-| **.NET Core** | Updated .NET Core to releases [5.0.11](https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0.11/5.0.11.md) and [3.1.20](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1.20/3.1.20.md). <br />The .NET Core 5.0.11 is a security release. |
-| **Node.js** | Updated Node.js 14 to add support for Node version [14.18.1](https://nodejs.org/en/blog/release/v14.18.1/).<br />Updated Node.js 12 to add support for Node version [12.22.7](https://nodejs.org/en/blog/release/v12.22.7/).<br />The new Node.js versions are security releases. |
-| **Ruby** | Updated RubyGems to release [3.2.29](https://blog.rubygems.org/2021/10/08/3.2.29-released.html).<br />Updated Puma to version [5.5.2](https://github.com/puma/puma/releases/tag/v5.5.2). |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/alas2.html">Amazon Linux Security Center</a> on or before <b>October 15, 2021</b> to all released Amazon Linux 2 platforms.<br />The <b>Apache httpd</b>, <b>Go</b>, <b>.NET Core</b>, and <b>Node.js</b> releases are security releases. For more information, see <b>Cross-platform updates</b> and <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Base AMI</b></td><td>Updated the base AMI to version <b>2.0.20211001</b>.</td></tr>
+  <tr><td><b>Graviton AMIs</b></td><td>Updated Graviton images for platforms that support Graviton instances. <br />For a list of Graviton image IDs for each supported platform branch and region, see <a href="#release-2021-10-21-linux.graviton">Graviton image IDs for supporting platforms</a> on this page.<br />For more information about how to create and configure environments using Graviton instances, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.managing.ec2.html#using-features.managing.ec2.instance-types">Amazon EC2 instance types</a> in the <i>AWS Elastic Beanstalk Developer Guide</i>.</td></tr>
+  <tr><td><b>Apache httpd</b></td><td>Updated platforms supporting the Apache HTTP Server 2.4 to version <b>2.4.51</b>. For details, see <a href="https://downloads.apache.org/httpd/CHANGES_2.4">Changes with Apache 2.4.x</a> on the <i>Apache Software Foundation</i> website.<br />The Apache 2.4.51 release is a security release.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Go</b></td><td>Updated Go to release <b>1.17.2</b>. For details, see <a href="https://golang.org/doc/devel/release.html#go1.17">go1.17</a> in <i>The Go Programming Language Release History</i>.<br />The Go 1.17.2 release is a security release.</td></tr>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET Core to releases <a href="https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0.11/5.0.11.md">5.0.11</a> and <a href="https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1.20/3.1.20.md">3.1.20</a>. <br />The .NET Core 5.0.11 is a security release.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated Node.js 14 to add support for Node version <a href="https://nodejs.org/en/blog/release/v14.18.1/">14.18.1</a>.<br />Updated Node.js 12 to add support for Node version <a href="https://nodejs.org/en/blog/release/v12.22.7/">12.22.7</a>.<br />The new Node.js versions are security releases.</td></tr>
+  <tr><td><b>Ruby</b></td><td>Updated RubyGems to release <a href="https://blog.rubygems.org/2021/10/08/3.2.29-released.html">3.2.29</a>.<br />Updated Puma to version <a href="https://github.com/puma/puma/releases/tag/v5.5.2">5.5.2</a>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2021-10-21-linux.platforms"></a>

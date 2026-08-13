@@ -18,7 +18,7 @@ For more information, see [AWS managed policies](https://docs.aws.amazon.com/IAM
 
 View details about updates to AWS managed policies for Elastic Beanstalk since March 1, 2021.
 
-To see the JSON source for a specific managed policy, see the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html).
+To see the JSON source for a specific managed policy, see the [*AWS Managed Policy Reference Guide*](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html).
 
 | Change | Description | Date |
 | --- | --- | --- |

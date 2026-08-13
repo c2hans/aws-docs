@@ -140,7 +140,7 @@ The following JSON output shows the response:
         }
 ```
 
-For more information, see the AWS CLI for MemoryDB topic [https://docs.aws.amazon.com/cli/latest/reference/memorydb/describe-clusters.html](https://docs.aws.amazon.com/cli/latest/reference/memorydb/describe-clusters.html).
+For more information, see the AWS CLI for MemoryDB topic [`describe-clusters`](https://docs.aws.amazon.com/cli/latest/reference/memorydb/describe-clusters.html).
 
 ## Viewing a cluster's details (MemoryDB API)
 <a name="clusters.viewdetails.api"></a>
@@ -173,4 +173,4 @@ https://memory-db.us-east-1.amazonaws.com/
    &X-Amz-Credential=<credential>
 ```
 
-For more information, see the MemoryDB API reference topic [https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DescribeClusters.html](https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DescribeClusters.html).
+For more information, see the MemoryDB API reference topic [`DescribeClusters`](https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DescribeClusters.html).

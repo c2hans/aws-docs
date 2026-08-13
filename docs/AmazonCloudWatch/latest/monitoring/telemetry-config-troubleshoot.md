@@ -20,7 +20,7 @@ If resources are not appearing in discovery, verify the following:
 <a name="telemetry-config-troubleshoot-rules"></a>
 
 If enablement rules are not applying to your resources, check the following:
-+ Verify the rule scope configuration. Ensure the rule targets the correct organization, OU, or account.
++ Verify the rule scope configuration. Make sure the rule targets the correct organization, OU, or account.
 + Check tag filters. If the rule uses tag-based filtering, verify that the target resources have the expected tags.
 + Check for rule conflicts. If multiple conflicting rules exist, none of the conflicting rules are applied. For more information, see [Rule evaluation hierarchy](telemetry-config-rules.md#telemetry-config-rules-hierarchy).
 

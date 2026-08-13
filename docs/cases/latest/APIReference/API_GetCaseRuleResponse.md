@@ -57,7 +57,7 @@ Type: Timestamp
 Required: No
 
  ** tags **   <a name="connect-Type-connect-cases_GetCaseRuleResponse-tags"></a>
-A map of of key-value pairs that represent tags on a resource. Tags are used to organize, track, or control access for this resource.
+A map of key-value pairs that represent tags on a resource. Tags are used to organize, track, or control access for this resource.
 Type: String to string map
 Required: No
 

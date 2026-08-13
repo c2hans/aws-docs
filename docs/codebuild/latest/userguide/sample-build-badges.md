@@ -16,7 +16,7 @@ AWS CodeBuild now supports the use of build badges, which provide an embeddable,
 ## Create a build project with build badges
 <a name="sample-build-badges-request-running"></a>
 
-Use the following one of the following procedures to create a build project with build badges enabled. You can use AWS CLI or the AWS Management Console.
+Use one of the following procedures to create a build project with build badges enabled. You can use AWS CLI or the AWS Management Console.
 
 **To create a build project with build badges enabled (AWS CLI)**
 + For information about creating a build project, see [Create a build project (AWS CLI)](create-project.md#create-project-cli). To include build badges with your AWS CodeBuild project, you must specify {{badgeEnabled}} with a value of `true`.

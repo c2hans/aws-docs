@@ -39,7 +39,7 @@ You can migrate an RDS for MySQL DB snapshot to a new MariaDB DB instance using 
 ### AWS CLI
 <a name="USER_Migrate_MariaDB.CLI"></a>
 
-To migrate data from a MySQL DB snapshot to a MariaDB DB instance, run the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-instance-from-db-snapshot.html](https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-instance-from-db-snapshot.html) command with the following options:
+To migrate data from a MySQL DB snapshot to a MariaDB DB instance, run the AWS CLI [`restore-db-instance-from-db-snapshot`](https://docs.aws.amazon.com/cli/latest/reference/rds/restore-db-instance-from-db-snapshot.html) command with the following options:
 + --db-instance-identifier – Name of the DB instance to create from the DB snapshot.
 + --db-snapshot-identifier – The identifier for the DB snapshot to restore from.
 + --engine – The database engine to use for the new instance.
@@ -65,7 +65,7 @@ For Windows:
 ### API
 <a name="USER_Migrate_MariaDB.API"></a>
 
-To migrate data from a MySQL DB snapshot to a MariaDB DB instance, call the Amazon RDS API operation [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceFromDBSnapshot.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceFromDBSnapshot.html).
+To migrate data from a MySQL DB snapshot to a MariaDB DB instance, call the Amazon RDS API operation [`RestoreDBInstanceFromDBSnapshot`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBInstanceFromDBSnapshot.html).
 
 ## Incompatibilities between MariaDB and MySQL
 <a name="USER_Migrate_MariaDB.Incompatibilities"></a>
@@ -81,5 +81,5 @@ Incompatibilities between MySQL and MariaDB include the following:
   WHERE (User, Host) = ('master_user_name', %);
   FLUSH PRIVILEGES;
   ```
-+ If your RDS master user account uses the SHA-256 password hash, make sure to reset the password using the AWS Management Console, the [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) AWS CLI command, or the [ModifyDBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html) RDS API operation. For information about modifying a DB instance, see [Modifying an Amazon RDS DB instance](Overview.DBInstance.Modifying.md).
++ If your RDS master user account uses the SHA-256 password hash, make sure to reset the password using the AWS Management Console, the [`modify-db-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) AWS CLI command, or the [ModifyDBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html) RDS API operation. For information about modifying a DB instance, see [Modifying an Amazon RDS DB instance](Overview.DBInstance.Modifying.md).
 + MariaDB doesn't support the Memcached plugin. However, the data used by the Memcached plugin is stored as InnoDB tables. After you migrate a MySQL DB snapshot, you can access the data used by the Memcached plugin using SQL. For more information about the innodb\_memcache database, see [InnoDB memcached Plugin Internals](https://dev.mysql.com/doc/refman/8.0/en/innodb-memcached-internals.html).

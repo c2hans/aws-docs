@@ -20,6 +20,30 @@ Subscribe to the RSS feed to get notified about new releases automatically: [clo
 
 The highlights below cover notable releases from the past year, most recent first.
 
+## Kiro User Activity Dashboard v1.0.0: new dashboard and data collection module (August 12, 2026)
+<a name="whats-new-kiro-user-activity-100"></a>
+
+A new dashboard that gives you visibility into Kiro adoption, usage, and credit consumption across your organization, helping you track engagement and manage subscription costs.
++  **Executive summary** — active users, messages, and credits (including overage), daily active users by client type, and a daily credit consumption trend.
++  **User engagement and overage tracking** — top users by message count, per-user daily activity, and a per-user overage table with plan credits, caps, and utilization percentages.
++  **Client type breakdown** — daily messages and metrics across IDE, CLI, and Plugin clients, with built-in credit allocations for the Free, Pro, Pro\+, and Power tiers.
++  **New data collection module** — the `kiro-user-activity` module in the CID Data Collection framework (v3.14.7) collects Kiro user activity data with support for cross-account collection.
+
+See the [Kiro User Activity Dashboard](kiro-user-activity-dashboard.md).
+
+View the [changelog entry](https://github.com/aws-solutions-library-samples/cloud-intelligence-dashboards-framework/blob/main/changes/CHANGELOG-kiro-user-activity.md).
+
+## CUDOS Dashboard v5.9.0: Amazon Bedrock token usage and prompt caching insights (August 12, 2026)
+<a name="whats-new-cudos-590"></a>
++  **Amazon Bedrock token consumption** — new "Tokens Usage per Usage Type Group" visual to monitor how tokens are consumed.
++  **Prompt caching efficiency** — new "Tokens Cache Read and Cache Write Ratio" visual to track how effectively prompt caching is used.
++  **Cost per million tokens fix** — corrected the "Cost per Million Tokens" calculation to account for the change in pricing unit in the CUR.
++  **Total EBS fix** — the period-over-period visual now correctly compares the previous month against the current month.
+
+See the [CUDOS Dashboard](cudos-cid-kpi.md#foundational-cudos-dashboard).
+
+View the [changelog entry](https://github.com/aws-solutions-library-samples/cloud-intelligence-dashboards-framework/blob/main/changes/CHANGELOG-cudos.md#cudos---590).
+
 ## CID Data Collection v3.14.6: Identity Center module, new regions (July 23, 2026)
 <a name="whats-new-data-collection-3146"></a>
 +  **New IAM Identity Center module** — collects Identity Center users and groups, enabling user-attribute enrichment in dashboards.

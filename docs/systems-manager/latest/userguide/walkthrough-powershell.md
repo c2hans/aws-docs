@@ -12,17 +12,6 @@ The following examples show how to use the AWS Tools for Windows PowerShell to v
 **Important**
 Only trusted administrators should be allowed to use Systems Manager pre-configured documents shown in this topic. The commands or scripts specified in Systems Manager documents run with administrative permission on your managed nodes. If a user has permission to run any of the predefined Systems Manager documents (any document that begins with AWS), then that user also has administrator access to the node. For all other users, you should create restrictive documents and share them with specific users.
 
-**Topics**
-+ [Configure AWS Tools for Windows PowerShell session settings](#walkthrough-powershell-settings)
-+ [List all available documents](#walkthrough-powershell-all-documents)
-+ [Run PowerShell commands or scripts](#walkthrough-powershell-run-script)
-+ [Install an application using the `AWS-InstallApplication` document](#walkthrough-powershell-install-application)
-+ [Install a PowerShell module using the `AWS-InstallPowerShellModule` JSON document](#walkthrough-powershell-install-module)
-+ [Join a managed node to a Domain using the `AWS-JoinDirectoryServiceDomain` JSON document](#walkthrough-powershell-domain-join)
-+ [Send Windows metrics to Amazon CloudWatch Logs using the `AWS-ConfigureCloudWatch` document](#walkthrough-powershell-windows-metrics)
-+ [Turn on or turn off Windows automatic update using the `AWS-ConfigureWindowsUpdate` document](#walkthrough-powershell-enable-windows-update)
-+ [Manage Windows updates using Run Command](#walkthough-powershell-windows-updates)
-
 ## Configure AWS Tools for Windows PowerShell session settings
 <a name="walkthrough-powershell-settings"></a>
 

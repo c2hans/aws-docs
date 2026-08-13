@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Profili
 <a name="API_ProfilingGroupDescription_Contents"></a>
 
  ** agentOrchestrationConfig **   <a name="profiler-Type-ProfilingGroupDescription-agentOrchestrationConfig"></a>
- An [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AgentOrchestrationConfig.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AgentOrchestrationConfig.html) object that indicates if the profiling group is enabled for profiled or not.
+ An [`AgentOrchestrationConfig`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AgentOrchestrationConfig.html) object that indicates if the profiling group is enabled for profiled or not.
 Type: [AgentOrchestrationConfig](API_AgentOrchestrationConfig.md) object
 Required: No
 
@@ -39,7 +39,7 @@ Pattern: `[\w-]+`
 Required: No
 
  ** profilingStatus **   <a name="profiler-Type-ProfilingGroupDescription-profilingStatus"></a>
- A [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingStatus.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingStatus.html) object that includes information about the last time a profile agent pinged back, the last time a profile was received, and the aggregation period and start time for the most recent aggregated profile.
+ A [`ProfilingStatus`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingStatus.html) object that includes information about the last time a profile agent pinged back, the last time a profile was received, and the aggregation period and start time for the most recent aggregated profile.
 Type: [ProfilingStatus](API_ProfilingStatus.md) object
 Required: No
 

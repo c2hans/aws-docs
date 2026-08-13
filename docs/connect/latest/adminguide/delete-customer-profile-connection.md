@@ -10,7 +10,7 @@ Deleting mappings will only delete objects and data associated with that specifi
 
 **Console method**
 + If at any time you want to stop the ingestion of customer profile data, choose the integration/mapping and then choose **Delete**.
-+ To delete the integrations, customer profiles, and all the customer profile data, you can delete your customer profiles domain in the Connect Customer console. For more information, see [Delete an Connect Customer Customer Profiles domain](delete-customer-profiles-domain.md).
++ To delete the integrations, customer profiles, and all the customer profile data, you can delete your customer profiles domain in the Connect Customer console. For more information, see [Delete a Connect Customer Customer Profiles domain](delete-customer-profiles-domain.md).
 
 **API method**
 + To delete customer profiles data for a specific integration, use the `DeleteProfileObjectType` API.

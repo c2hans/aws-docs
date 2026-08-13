@@ -10,7 +10,7 @@ This topic describes the different types of certificates you can use to configur
 **AWS Certificate Manager (ACM)**
 ACM is the preferred tool to provision, manage, and deploy your server certificates. You can do so programmatically or using the AWS CLI. With ACM you can create a trusted certificate for your domain names for free.
 
- ACM certificates can only be used with AWS load balancers and Amazon CloudFront distributions, and ACM is available only in certain AWS Regions. To use an ACM certificate with Elastic Beanstalk, see [Configuring HTTPS Termination at the load balancer](configuring-https-elb.md). For more information about ACM see the [https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html).
+ ACM certificates can only be used with AWS load balancers and Amazon CloudFront distributions, and ACM is available only in certain AWS Regions. To use an ACM certificate with Elastic Beanstalk, see [Configuring HTTPS Termination at the load balancer](configuring-https-elb.md). For more information about ACM see the [*AWS Certificate Manager User Guide*](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html).
 
 **Note**
  For a list of regions where ACM is available, see [ACM endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/acm.html) in the *Amazon Web Services General Reference*.

@@ -38,7 +38,7 @@ The following are examples of the ARN format for queues:
   arn:aws:sqs:*:123456789012:my_prefix_*
   ```
 
-You can get the ARN value for an existing queue by calling the [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueAttributes.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueAttributes.html) action. The value of the `QueueArn` attribute is the ARN of the queue. For more information about ARNs, see [IAM ARNs](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) in the *IAM User Guide*.
+You can get the ARN value for an existing queue by calling the [`GetQueueAttributes`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueAttributes.html) action. The value of the `QueueArn` attribute is the ARN of the queue. For more information about ARNs, see [IAM ARNs](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) in the *IAM User Guide*.
 
 Amazon SQS provides a set of actions that work with the queue resource. For more information, see [Amazon SQS API permissions: Actions and resource reference](sqs-api-permissions-reference.md).
 
@@ -85,7 +85,7 @@ There are two ways to give your users permissions to your Amazon SQS queues: usi
 + **Attach a permission policy to a role (grant cross-account permissions)** – To grant cross-account permissions to an SQS queue, you must combine both IAM and resource-based policies:
 
   1. In **Account A** (which owns the queue):
-     + Attach a **resource-based policy** to the SQS queue. This policy must explicitly grant the necessary permissions (for example, [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html), [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html)) to the principal in **Account B** (such as an IAM role).
+     + Attach a **resource-based policy** to the SQS queue. This policy must explicitly grant the necessary permissions (for example, [`SendMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html), [`ReceiveMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html)) to the principal in **Account B** (such as an IAM role).
 
   1. In **Account A**, create an IAM role:
      + A **trust policy** that allows **Account B** or an AWS service to assume the role.

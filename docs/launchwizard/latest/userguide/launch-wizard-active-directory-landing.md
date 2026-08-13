@@ -117,7 +117,7 @@ If you have an existing environment that uses these resources and you think that
 ### Amazon Simple Notification Service (SNS)
 <a name="launch-wizard-ad-related-services-sns"></a>
 
-[Amazon Simple Notification Service](https://docs.aws.amazon.com/sns/latest/dg/welcome.html) (Amazon SNS) is a highly available, durable, secure, fully managed publish/subscribe messaging service that provides topics for high-throughput, push-based, many-to-many messaging. Using Amazon SNS topics, your publisher systems can fan out messages to a large number of subscriber endpoints and send notifications to end users using mobile push, SMS, and email. You can use Amazon SNS topics for your Launch Wizard deployments to stay up to date on deployment progress. For more information, see the [https://docs.aws.amazon.com/sns/latest/dg/welcome.html](https://docs.aws.amazon.com/sns/latest/dg/welcome.html).
+[Amazon Simple Notification Service](https://docs.aws.amazon.com/sns/latest/dg/welcome.html) (Amazon SNS) is a highly available, durable, secure, fully managed publish/subscribe messaging service that provides topics for high-throughput, push-based, many-to-many messaging. Using Amazon SNS topics, your publisher systems can fan out messages to a large number of subscriber endpoints and send notifications to end users using mobile push, SMS, and email. You can use Amazon SNS topics for your Launch Wizard deployments to stay up to date on deployment progress. For more information, see the [*Amazon Simple Notification Service Developer Guide*](https://docs.aws.amazon.com/sns/latest/dg/welcome.html).
 
 ### Amazon CloudWatch Logs
 <a name="launch-wizard-ad-related-services-cloudwatch-logs"></a>

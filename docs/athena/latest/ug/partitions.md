@@ -50,7 +50,7 @@ The following sections show how to prepare Hive style and non-Hive style data fo
 ### Scenario 1: Data stored on Amazon S3 in Hive format
 <a name="scenario-1-data-already-partitioned-and-stored-on-s3-in-hive-format"></a>
 
-In this scenario, partitions are stored in separate folders in Amazon S3. For example, here is the partial listing for sample ad impressions output by the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/ls.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/ls.html) command, which lists the S3 objects under a specified prefix:
+In this scenario, partitions are stored in separate folders in Amazon S3. For example, here is the partial listing for sample ad impressions output by the [`aws s3 ls`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/ls.html) command, which lists the S3 objects under a specified prefix:
 
 ```
 aws s3 ls s3://elasticmapreduce/samples/hive-ads/tables/impressions/

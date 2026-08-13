@@ -22,8 +22,8 @@ In the diagram:
 In addition, voice analytics provides these tools for managing the data that it generates.
 
 **Voice profiles**
-The combination of a voice embedding, the embedding's unique ID, and its expiration date. Voice profiles expire after three years for security reasons, and because voices change over time. To avoid re-creating voice profiles, call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateVoiceProfile.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateVoiceProfile.html) API. For more information about expiration dates, see [Understanding data retention for Amazon Chime SDK voice analytics](va-data-retention.md).
-To enroll a voice embedding, or to update an enrolled voice embedding, you must call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceProfile.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceProfile.html) or [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateVoiceProfile.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateVoiceProfile.html) APIs within 24 hours after the call ends.
+The combination of a voice embedding, the embedding's unique ID, and its expiration date. Voice profiles expire after three years for security reasons, and because voices change over time. To avoid re-creating voice profiles, call the [UpdateVoiceProfile](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateVoiceProfile.html) API. For more information about expiration dates, see [Understanding data retention for Amazon Chime SDK voice analytics](va-data-retention.md).
+To enroll a voice embedding, or to update an enrolled voice embedding, you must call the [CreateVoiceProfile](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceProfile.html) or [UpdateVoiceProfile](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateVoiceProfile.html) APIs within 24 hours after the call ends.
 
 **Voice profile domains**
 A collection of voice profiles.

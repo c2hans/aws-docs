@@ -10,7 +10,7 @@ You can manage volume storage capacity by manually increasing or decreasing volu
 **To change a volume's storage capacity (console)**
 + You can increase or decrease a volume's storage capacity using the Amazon FSx console, AWS CLI, and API. For more information, see [Updating volumes](updating-volumes.md).
 
-You can also use the ONTAP CLI to modify a volume's storage capacity using the [https://docs.netapp.com/us-en/ontap-cli-9111/volume-modify.html](https://docs.netapp.com/us-en/ontap-cli-9111/volume-modify.html) command.
+You can also use the ONTAP CLI to modify a volume's storage capacity using the [`volume modify`](https://docs.netapp.com/us-en/ontap-cli-9111/volume-modify.html) command.
 
 **To modify a volume's size (ONTAP CLI)**
 

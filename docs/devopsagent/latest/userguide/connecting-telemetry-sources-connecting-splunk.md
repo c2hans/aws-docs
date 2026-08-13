@@ -100,6 +100,19 @@ Send webhooks with Splunk [https://help.splunk.com/en/splunk-enterprise/alert-an
 + Manage authentication tokens in Splunk Cloud Platform: [https://help.splunk.com/en/splunk-cloud-platform/administer/manage-users-and-security/9.3.2411/authenticate-into-the-splunk-platform-with-tokens/manage-or-delete-authentication-tokens ](https://help.splunk.com/en/splunk-cloud-platform/administer/manage-users-and-security/9.3.2411/authenticate-into-the-splunk-platform-with-tokens/manage-or-delete-authentication-tokens)
 + Create and manage roles with Splunk Web: [https://docs.splunk.com/Documentation/SplunkCloud/latest/Security/Addandeditroles ](https://docs.splunk.com/Documentation/SplunkCloud/latest/Security/Addandeditroles)
 
+## Updating the authentication token
+<a name="updating-the-authentication-token"></a>
+
+If your Splunk authentication token expires or needs to be rotated, you can update it without deregistering. Your Agent Space associations are preserved. To update the token, follow these steps:
+
+1. Go to the **Capability Providers** page (accessible from the side navigation).
+
+1. Scroll to the **Currently registered** section.
+
+1. Select Splunk, then choose **Update** from the **Actions** menu.
+
+1. Enter the new token value, review, and choose **Update**.
+
 ## Removal
 <a name="removal"></a>
 

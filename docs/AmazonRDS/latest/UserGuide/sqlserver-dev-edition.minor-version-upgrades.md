@@ -11,7 +11,7 @@ RDS for SQL Server Developer Edition requires creating a new custom engine versi
 
 1. Obtain and upload installation media (ISO and CU), then [create a new custom engine version](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/sqlserver-dev-edition.creating-cev.html).
 
-1. Apply database minor version upgrade by using Amazon RDS [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) with the new CEV.
+1. Apply database minor version upgrade by using Amazon RDS [`modify-db-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) with the new CEV.
 
    ```
    aws rds modify-db-instance \

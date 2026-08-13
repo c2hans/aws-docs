@@ -5,13 +5,13 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu.
 # Amazon ECS task definitions for GPU workloads
 <a name="ecs-gpu"></a>
 
-Amazon ECS supports workloads that use GPUs, when you create clusters with container instances that support GPUs. Amazon EC2 GPU-based container instances that use the p2, p3, p5, g3, g4, and g5 instance types provide access to NVIDIA GPUs. For more information, see [Linux Accelerated Computing Instances](https://docs.aws.amazon.com/ec2/latest/instancetypes/ac.html) in the *Amazon EC2 Instance Types guide*.
+Amazon ECS supports workloads that use GPUs, when you create clusters with container instances that support GPUs. Amazon EC2 GPU-based container instances that use the p2, p3, p4d, p5, g3, g4, g5, g6, g6e, and g6f instance types provide access to NVIDIA GPUs. For more information, see [Linux Accelerated Computing Instances](https://docs.aws.amazon.com/ec2/latest/instancetypes/ac.html) in the *Amazon EC2 Instance Types guide*.
 
 Amazon ECS provides a GPU-optimized AMI that comes with pre-configured NVIDIA kernel drivers and a Docker GPU runtime. For more information, see [Amazon ECS-optimized Linux AMIs](ecs-optimized_AMI.md).
 
 You can designate a number of GPUs in your task definition for task placement consideration at a container level. Amazon ECS schedules to available container instances that support GPUs and pin physical GPUs to proper containers for optimal performance.
 
-The following Amazon EC2 GPU-based instance types are supported. For more information, see [Amazon EC2 P2 Instances](https://aws.amazon.com/ec2/instance-types/p2/), [Amazon EC2 P3 Instances](https://aws.amazon.com/ec2/instance-types/p3/), [Amazon EC2 P4d Instances](https://aws.amazon.com/ec2/instance-types/p4/), [Amazon EC2 P5 Instances](https://aws.amazon.com/ec2/instance-types/p5/), [Amazon EC2 G3 Instances](https://aws.amazon.com/ec2/instance-types/g3/), [Amazon EC2 G4 Instances](https://aws.amazon.com/ec2/instance-types/g4/), [Amazon EC2 G5 Instances](https://aws.amazon.com/ec2/instance-types/g5/), [Amazon EC2 G6 Instances](https://aws.amazon.com/ec2/instance-types/g6/), and [Amazon EC2 G6e Instances](https://aws.amazon.com/ec2/instance-types/g6e/).
+The following Amazon EC2 GPU-based instance types are supported. For more information, see [Amazon EC2 P2 Instances](https://aws.amazon.com/ec2/instance-types/p2/), [Amazon EC2 P3 Instances](https://aws.amazon.com/ec2/instance-types/p3/), [Amazon EC2 P4d Instances](https://aws.amazon.com/ec2/instance-types/p4/), [Amazon EC2 P5 Instances](https://aws.amazon.com/ec2/instance-types/p5/), [Amazon EC2 G3 Instances](https://aws.amazon.com/ec2/instance-types/g3/), [Amazon EC2 G4 Instances](https://aws.amazon.com/ec2/instance-types/g4/), [Amazon EC2 G5 Instances](https://aws.amazon.com/ec2/instance-types/g5/), [Amazon EC2 G6 Instances](https://aws.amazon.com/ec2/instance-types/g6/), [Amazon EC2 G6e Instances](https://aws.amazon.com/ec2/instance-types/g6e/), and [Amazon EC2 G6f Instances](https://aws.amazon.com/ec2/instance-types/g6f/).
 
 |  Instance type  |  GPUs  |  GPU memory (GiB)  |  vCPUs  |  Memory (GiB)  |
 | --- | --- | --- | --- | --- |
@@ -58,6 +58,11 @@ The following Amazon EC2 GPU-based instance types are supported. For more inform
 | g6e24.xlarge | 4 | 192 | 96 | 768 |
 | g6e48.xlarge | 8 | 384 | 192 | 1536 |
 | gr6.8xlarge | 1 | 24 | 32 | 256 |
+| g6f.large | 1/8 (0.125) | 3 | 2 | 8 |
+| g6f.xlarge | 1/8 (0.125) | 3 | 4 | 16 |
+| g6f.2xlarge | 1/4 (0.25) | 6 | 8 | 32 |
+| g6f.4xlarge | 1/2 (0.5) | 12 | 16 | 64 |
+| gr6f.4xlarge | 1/2 (0.5) | 12 | 16 | 128 |
 
 You can retrieve the Amazon Machine Image (AMI) ID for Amazon ECS-optimized AMIs by querying the AWS Systems Manager Parameter Store API. Using this parameter, you don't need to manually look up Amazon ECS-optimized AMI IDs. For more information about the Systems Manager Parameter Store API, see [GetParameter](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameter.html). The user that you use must have the `ssm:GetParameter` IAM permission to retrieve the Amazon ECS-optimized AMI metadata.
 

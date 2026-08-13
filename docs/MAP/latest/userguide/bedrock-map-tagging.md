@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/MAP/latest/userguide/bedrock-map-tagging
 
  This guide explains how to tag Amazon Bedrock and Amazon Bedrock AgentCore workloads to report MAP spend and generate any appropriate incentives using the AWS CLI.
 
-![MAP tagging flowchart: Projects for bedrock-mantle; IAM principal or resource tagging for bedrock-runtime/AgentCore.](http://docs.aws.amazon.com/MAP/latest/userguide/images/MAP-tagging-flowchart.png)
+![MAP tagging flowchart: Projects for bedrock-mantle; IAM principal or resource tagging for bedrock-runtime/AgentCore.](http://docs.aws.amazon.com/MAP/latest/userguide/images/bedrock-tagging-flowchart.png)
 
  The flowchart shows how to choose a tagging method. If you use the bedrock-mantle endpoint (Responses API, Chat Completions API, or Messages API), use Projects tagging. If you use bedrock-runtime or AgentCore (InvokeModel, Converse, AgentCore APIs), choose either IAM principal tagging (recommended) or resource tagging with application inference profiles.
 

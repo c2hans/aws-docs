@@ -85,7 +85,7 @@ Output the results of your invocation in a specific output format.
 `text` – The request metadata is returned in text structure. The resource response is returned in the output format of the invoked resource.
 
 `--parameter`  <a name="sam-cli-command-reference-remote-invoke-options-parameter"></a>
-Additional [https://boto3.amazonaws.com/v1/documentation/api/latest/index.html](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) parameters that you can pass to the resource being invoked.
+Additional [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) parameters that you can pass to the resource being invoked.
 **Amazon Kinesis Data Streams**  <a name="sam-cli-command-reference-remote-invoke-options-parameter-kinesis"></a>
 The following additional parameters can be used to put a record in the Kinesis data stream:
 + `ExplicitHashKey='{{string}}'`

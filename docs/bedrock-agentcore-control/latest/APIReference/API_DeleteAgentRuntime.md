@@ -5,13 +5,13 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 # DeleteAgentRuntime
 <a name="API_DeleteAgentRuntime"></a>
 
-Deletes an Amazon Bedrock AgentCore Runtime.
+Deletes an Amazon Bedrock AgentCore Runtime, or a single version of an AgentCore Runtime when you provide the version qualifier.
 
 ## Request Syntax
 <a name="API_DeleteAgentRuntime_RequestSyntax"></a>
 
 ```
-DELETE /runtimes/{{agentRuntimeId}}/?clientToken={{clientToken}} HTTP/1.1
+DELETE /runtimes/{{agentRuntimeId}}/?clientToken={{clientToken}}&version={{agentRuntimeVersion}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -23,6 +23,11 @@ The request uses the following URI parameters.
 The unique identifier of the AgentCore Runtime to delete.
 Pattern: `[a-zA-Z][a-zA-Z0-9_]{0,99}-[a-zA-Z0-9]{10}`
 Required: Yes
+
+ ** [agentRuntimeVersion](#API_DeleteAgentRuntime_RequestSyntax) **   <a name="bedrockagentcorecontrol-DeleteAgentRuntime-request-uri-agentRuntimeVersion"></a>
+The version of the AgentCore Runtime to delete. When you provide this value, only that version is deleted. When you omit it, the entire AgentCore Runtime and all of its versions are deleted.
+Length Constraints: Minimum length of 1. Maximum length of 5.
+Pattern: `([1-9][0-9]{0,4})`
 
  ** [clientToken](#API_DeleteAgentRuntime_RequestSyntax) **   <a name="bedrockagentcorecontrol-DeleteAgentRuntime-request-uri-clientToken"></a>
 A unique, case-sensitive identifier to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request but does not return an error.
@@ -43,6 +48,7 @@ Content-type: application/json
 
 {
    "agentRuntimeId": "string",
+   "agentRuntimeVersion": "string",
    "status": "string"
 }
 ```
@@ -58,6 +64,12 @@ The following data is returned in JSON format by the service.
 The unique identifier of the AgentCore Runtime.
 Type: String
 Pattern: `[a-zA-Z][a-zA-Z0-9_]{0,99}-[a-zA-Z0-9]{10}`
+
+ ** [agentRuntimeVersion](#API_DeleteAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-DeleteAgentRuntime-response-agentRuntimeVersion"></a>
+The version of the AgentCore Runtime that was deleted. This value is present only when you delete a single version.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 5.
+Pattern: `([1-9][0-9]{0,4})`
 
  ** [status](#API_DeleteAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-DeleteAgentRuntime-response-status"></a>
 The current status of the AgentCore Runtime deletion.

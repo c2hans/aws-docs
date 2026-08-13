@@ -33,13 +33,13 @@ On the **Account management** page, the **Automatically enable new organization 
 
 To determine whether to automatically enable new organization accounts as Detective member accounts, the administrator account can use the Detective API or the AWS Command Line Interface.
 
-To view and manage the configuration, you must provide the behavior graph ARN. To obtain the ARN, use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html) operation.
+To view and manage the configuration, you must provide the behavior graph ARN. To obtain the ARN, use the [`ListGraphs`](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html) operation.
 
 **To view the current configuration for automatically enabling organization accounts**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_DescribeOrganizationConfiguration.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_DescribeOrganizationConfiguration.html) operation.
++ **Detective API:** Use the [`DescribeOrganizationConfiguration`](https://docs.aws.amazon.com/detective/latest/APIReference/API_DescribeOrganizationConfiguration.html) operation.
 
   In the response, if new organization accounts are enabled automatically, then `AutoEnable` is `true`.
-+ **AWS CLI:** At the command line, run the [https://docs.aws.amazon.com/cli/latest/reference/detective/describe-organization-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/detective/describe-organization-configuration.html) command.
++ **AWS CLI:** At the command line, run the [`describe-organization-configuration`](https://docs.aws.amazon.com/cli/latest/reference/detective/describe-organization-configuration.html) command.
 
   ```
   aws detective describe-organization-configuration --graph-arn {{<behavior graph ARN>}}
@@ -52,8 +52,8 @@ To view and manage the configuration, you must provide the behavior graph ARN. T
   ```
 
 **To automatically enable new organization accounts**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_UpdateOrganizationConfiguration.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_UpdateOrganizationConfiguration.html) operation. To automatically enable new organization accounts, set `AutoEnable` to `true`.
-+ **AWS CLI:** At the command line, run the [https://docs.aws.amazon.com/cli/latest/reference/detective/update-organization-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/detective/update-organization-configuration.html) command.
++ **Detective API:** Use the [`UpdateOrganizationConfiguration`](https://docs.aws.amazon.com/detective/latest/APIReference/API_UpdateOrganizationConfiguration.html) operation. To automatically enable new organization accounts, set `AutoEnable` to `true`.
++ **AWS CLI:** At the command line, run the [`update-organization-configuration`](https://docs.aws.amazon.com/cli/latest/reference/detective/update-organization-configuration.html) command.
 
   ```
   aws detective update-organization-configuration --graph-arn {{<behavior graph ARN>}} --auto-enable | --no-auto-enable

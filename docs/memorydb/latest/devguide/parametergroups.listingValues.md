@@ -42,11 +42,11 @@ aws memorydb describe-parameters ^
     --parameter-group-name {{myRedis6x}}
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/memorydb/describe-parameters.html](https://docs.aws.amazon.com/cli/latest/reference/memorydb/describe-parameters.html).
+For more information, see [`describe-parameters`](https://docs.aws.amazon.com/cli/latest/reference/memorydb/describe-parameters.html).
 
 ## Listing a parameter group's values (MemoryDB API)
 <a name="parametergroups.listingValues.api"></a>
 
 To list a parameter group's parameters and their values using the MemoryDB API, use the `DescribeParameters` action.
 
-For more information, see [https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DescribeParameters.html](https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DescribeParameters.html).
+For more information, see [`DescribeParameters`](https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DescribeParameters.html).

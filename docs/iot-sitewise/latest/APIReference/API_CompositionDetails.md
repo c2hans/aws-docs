@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Com
 # CompositionDetails
 <a name="API_CompositionDetails"></a>
 
-Metadata for the composition relationship established by using `composedAssetModelId` in [https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateAssetModelCompositeModel.html](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateAssetModelCompositeModel.html).
+Metadata for the composition relationship established by using `composedAssetModelId` in [`CreateAssetModelCompositeModel`](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateAssetModelCompositeModel.html).
 
 ## Contents
 <a name="API_CompositionDetails_Contents"></a>

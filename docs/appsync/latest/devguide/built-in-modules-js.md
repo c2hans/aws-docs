@@ -775,7 +775,7 @@ export function request(ctx) {
 
 **Postgres use case**
 
-With Postgres, you can use [https://www.postgresql.org/docs/current/dml-returning.html](https://www.postgresql.org/docs/current/dml-returning.html) to obtain data from the row that you inserted. It accepts `*` or an array of column names:
+With Postgres, you can use [`returning`](https://www.postgresql.org/docs/current/dml-returning.html) to obtain data from the row that you inserted. It accepts `*` or an array of column names:
 
 ```
 import { insert, createPgStatement } from '@aws-appsync/utils/rds';

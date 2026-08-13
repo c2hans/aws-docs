@@ -9,6 +9,7 @@ The following table describes important additions to the Amazon EC2 User Guide s
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Map view for Regions and Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/global-view.html) | The Regions and Zones page in AWS Global View now includes a Map view that displays all your Regions and Zones on an interactive world map. You can toggle between List view and Map view. Your view preference persists across sessions. | August 12, 2026 |
 | [Replace current root volume with an existing EBS volume](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/replace-root.html#replace-volume) | You can replace the current root volume of an Amazon EC2 instance with an existing Amazon EBS volume that you have already configured. | July 9, 2026 |
 | [Additional launch template overrides for 'instant' EC2 Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-ec2-fleet.html) | EC2 Fleets of type `instant` now support the following additional launch template override parameters: `IamInstanceProfile`, `KeyName`, and `MetadataOptions`. | July 9, 2026 |
 | [Find the SSM parameter for a public AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-systems-manager-parameter-to-find-AMI.html) | You can find the AWS Systems Manager parameter associated with a public AMI and use it to automatically reference the latest version of that AMI. | July 7, 2026 |

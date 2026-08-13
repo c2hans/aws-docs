@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/dg/updating-instances.h
 You can update service instances in two ways, depending on which values you want to update:
 + **Update any values**: If you want to update any of the values that you specified for a service instance when you registered it, including custom attributes, you need to reregister the service instance and respecify all values. Follow the steps in [Registering a resource as an AWS Cloud Map service instance](registering-instances.md), specifying the instance ID of the existing service instance for **Service instance ID**.
 
-  Alternatively, you can use the [https://docs.aws.amazon.com/cloud-map/latest/api/API_RegisterInstance.html](https://docs.aws.amazon.com/cloud-map/latest/api/API_RegisterInstance.html) API. You can specify the ID of the existing instance and service using the `InstanceId` and `ServiceId` parameters and respecify other values.
+  Alternatively, you can use the [`RegisterInstance`](https://docs.aws.amazon.com/cloud-map/latest/api/API_RegisterInstance.html) API. You can specify the ID of the existing instance and service using the `InstanceId` and `ServiceId` parameters and respecify other values.
 + **Update only custom attributes**: If you want to update only the custom attributes for a service instance, you don't need to reregister the instance. You can update only those values. See [Updating the custom attributes for a service instance](#updating-instance-attributes-procedure).
 
 ## Updating the custom attributes for a service instance

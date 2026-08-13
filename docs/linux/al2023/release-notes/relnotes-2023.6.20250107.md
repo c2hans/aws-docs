@@ -132,8 +132,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.6.20241212 version:** 8.0.4-2.amzn2023
   - **AL2023.6.20250107 version:** 8.0.5-5.amzn2023
 
-- ** [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
-  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
+- ** [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
+  - **RPM:**  [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
   - **Architectures:** aarch64, x86\_64
   - **AL2023.6.20241212 version:** 1.89.1-1.amzn2023
   - **AL2023.6.20250107 version:** 1.89.2-1.amzn2023

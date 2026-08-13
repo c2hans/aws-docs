@@ -34,7 +34,7 @@ You can verify the ENA Express settings by instance or by network interface. To 
 #### [ AWS CLI ]
 
 **To get the ENA Express settings for an instance**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/describe-instances.html](https://docs.aws.amazon.com/cli/latest/reference/describe-instances.html) command. This command example returns a list of ENA Express configurations for the network interfaces attached to each of the running instances that are specified by the `--instance-ids` parameter.
+Use the [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/describe-instances.html) command. This command example returns a list of ENA Express configurations for the network interfaces attached to each of the running instances that are specified by the `--instance-ids` parameter.
 
 ```
 aws ec2 describe-instances \
@@ -76,7 +76,7 @@ The following is example output.
 ```
 
 **To get the ENA Express settings for a network interface**
-Use the [https://docs.aws.amazon.com/cli/latest/reference/describe-network-interfaces.html](https://docs.aws.amazon.com/cli/latest/reference/describe-network-interfaces.html) command.
+Use the [describe-network-interfaces](https://docs.aws.amazon.com/cli/latest/reference/describe-network-interfaces.html) command.
 
 ```
 aws ec2 describe-network-interfaces \
@@ -104,7 +104,7 @@ The following is example output.
 #### [ PowerShell ]
 
 **To get the ENA Express settings for a network interface**
-Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2NetworkInterface.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2NetworkInterface.html) cmdlet.
+Use the [Get-EC2NetworkInterface](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2NetworkInterface.html) cmdlet.
 
 ```
 Get-EC2NetworkInterface `

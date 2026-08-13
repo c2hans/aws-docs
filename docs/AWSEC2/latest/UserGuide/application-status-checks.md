@@ -38,7 +38,7 @@ During a reboot, application status checks report a failure until the instance b
 ### Network architecture
 <a name="asc-network-architecture"></a>
 
-Application status checks originate from the Amazon EC2 application status checks service. To reach your instances, AWS creates a managed elastic network interface (ENI) in your VPC. AWS creates one ENI per combination of source subnet and security group that has associated instances. AWS creates the managed ENI when an application status check first requires that combination, and removes it when no remaining application status check requires it. The managed ENI does not count against your instance ENI limit, but does count against your global limit for ENIs per VPC.
+Application status checks originate from the Amazon EC2 application status checks service. To reach your instances, AWS creates a managed elastic network interface (ENI) in your VPC. AWS creates one ENI per combination of source subnet and security group that has associated instances. AWS creates the managed ENI when an application status check first requires that combination, and removes it when no remaining application status check requires it. The managed ENI does not count against your instance ENI limit, but does count against the *Network interfaces per Region* quota for your account, which is enforced per Availability Zone. For more information, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).
 
 Application status checks reach your instances from a private vantage point within your VPC. The scope describes where the check originates, not a property of your instance's IP address. AWS creates the managed ENI in a subnet within your VPC and reaches the instance over the private network path.
 
@@ -413,7 +413,7 @@ When an application status check reports impaired but you expect your applicatio
 
 1. *Network path.* If you configured customer-managed network paths, confirm the source subnet and security group have connectivity to the destination subnet. Use [VPC Reachability Analyzer](https://docs.aws.amazon.com/vpc/latest/reachability/what-is-reachability-analyzer.html) to trace the network path.
 
-1. *Available ENI quota.* AWS creates a managed elastic network interface (ENI) in your account for each source subnet and security group combination. Confirm your account has an available ENI in its quota for the VPC. If your account has reached its ENIs per VPC quota, AWS cannot create the managed ENI and the check cannot run. For more information, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).
+1. *Available ENI quota.* AWS creates a managed elastic network interface (ENI) in your account for each source subnet and security group combination. Confirm your account has not reached its *Network interfaces per Region* quota, which is enforced per Availability Zone. If your account has reached this quota, AWS cannot create the managed ENI and the check cannot run. For more information, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).
 
 ### Reason codes
 <a name="asc-troubleshoot-reason-codes"></a>
@@ -463,7 +463,7 @@ For the complete `ApplicationStatusReason` structure, see [ApplicationStatusReas
 <a name="asc-monitoring"></a>
 
 You can monitor application status checks in three ways:
-+ **Amazon CloudWatch**. The `StatusCheckFailed_Application` metric reflects the overall application status for the instance and can drive alarms. The metric is aggregated per instance across associated checks whose aggregation setting is `included`. CloudWatch also publishes a per-check metric for each associated check, named `StatusCheckFailed_Application_{application-status-check-id}_{application-status-check-name}`.
++ **Amazon CloudWatch**. The `StatusCheckFailed_Application` metric reflects the overall application status for the instance and can drive alarms. The metric is aggregated per instance across associated checks whose aggregation setting is `included`. CloudWatch also publishes a per-check metric for each associated check, named `StatusCheckFailed_Application_{{application-status-check-id}}`.
 + **[describe-instance-status](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-status.html)**. Returns the overall application status alongside your instance's other status information.
 + **[describe-application-status](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-application-status.html)**. Returns detailed per-instance results, including each associated check's individual status and the HTTP status code returned by your application.
 
@@ -472,7 +472,7 @@ Use the CloudWatch metric for alarm-driven automation. Use `describe-instance-st
 ## Security and permissions
 <a name="asc-security-and-permissions"></a>
 
-AWS creates and manages the network interfaces used for application status checks through a service-linked role. No IAM setup is required for the service to create these ENIs. The service-linked role uses the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ApplicationStatusChecksServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ApplicationStatusChecksServiceRolePolicy.html) AWS managed policy.
+AWS creates and manages the network interfaces used for application status checks through a service-linked role. No IAM setup is required for the service to create these ENIs. The service-linked role uses the [`EC2ApplicationStatusChecksServiceRolePolicy`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ApplicationStatusChecksServiceRolePolicy.html) AWS managed policy.
 
 To create, associate, describe, delete, and suppress application status checks yourself, your IAM user or role needs the corresponding Amazon EC2 permissions. See the *Amazon EC2 API Reference* for the full list of actions.
 
@@ -491,6 +491,8 @@ Application status checks are billed on the following components:
 Application status checks are subject to AWS service quotas. For the quota names, default values, and descriptions, see [Amazon EC2 endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/ec2-service.html) in the *AWS General Reference*.
 
 In addition to the AWS service quotas that affect the managed network interfaces, application status checks have the following service quotas. You can view your usage and request increases from the Service Quotas console.
+
+In these quotas, a *target* is a single instance that one health check monitors. If more than one health check monitors an instance, each instance and health check pairing counts as a separate target. An *association* is a single tag rule or a single instance ID that you associate with a health check. Each rule or instance ID counts as one association, regardless of how many instances it resolves to.
 
 | Quota | Default | Adjustable |
 | --- | --- | --- |

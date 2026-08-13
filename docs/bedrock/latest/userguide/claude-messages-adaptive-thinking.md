@@ -150,7 +150,7 @@ You can combine adaptive thinking with the effort parameter to guide how much th
 The `effort` parameter must be placed inside a separate `output_config` object in your request body — not inside the `thinking` object. Placing `effort` inside `thinking` will result in a `ValidationException`.
 
 **Important**
-**Effort cap when thinking is disabled (Claude Opus 5):** Claude Opus 5 supports `"thinking": {"type": "disabled"}`, but when thinking is disabled, `output_config.effort` is capped at `high`. Requests with `xhigh` or `max` effort combined with disabled thinking will return an `invalid_request_error`. This cap also applies to per-turn effort set via a mid-conversation system message. To use `xhigh` or `max` effort, enable adaptive thinking (the default) or omit the `thinking` parameter entirely.
+**Effort cap when thinking is disabled (Claude Opus 5):** Claude Opus 5 supports `"thinking": {"type": "disabled"}`, but when thinking is disabled, `output_config.effort` is capped at `high`. Requests with `xhigh` or `max` effort combined with disabled thinking will return an `invalid_request_error`. This cap also applies to per-turn effort set through a mid-conversation system message. To use `xhigh` or `max` effort, enable adaptive thinking (the default) or omit the `thinking` parameter entirely.
 
 The following example shows how to set the effort level when using the InvokeModel API:
 

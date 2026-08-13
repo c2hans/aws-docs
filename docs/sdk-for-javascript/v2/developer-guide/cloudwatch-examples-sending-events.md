@@ -20,9 +20,9 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 CloudWatch Events delivers a near real-time stream of system events that describe changes in Amazon Web Services resources to any of various targets. Using simple rules, you can match events and route them to one or more target functions or streams.
 
 In this example, a series of Node.js modules are used to send events to CloudWatch Events. The Node.js modules use the SDK for JavaScript to manage instances using these methods of the `CloudWatchEvents` client class:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatchEvents.html#putRule-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatchEvents.html#putRule-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatchEvents.html#putTargets-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatchEvents.html#putTargets-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatchEvents.html#putEvents-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatchEvents.html#putEvents-property)
++ [`putRule`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatchEvents.html#putRule-property)
++ [`putTargets`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatchEvents.html#putTargets-property)
++ [`putEvents`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatchEvents.html#putEvents-property)
 
 For more information about CloudWatch Events, see [Adding Events with PutEvents](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/AddEventsPutEvents.html) in the *Amazon CloudWatch Events User Guide*.
 

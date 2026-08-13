@@ -62,7 +62,7 @@ This bucket must be in the same AWS region as your builds. For example, if you i
 1. In **Project name**, enter a name for this build project. Build project names must be unique across each AWS account. You can also include an optional description of the build project to help other users understand what this project is used for.
 
 1. In **Source**, in **Source provider**, choose **GitHub Enterprise Server**.
-   + Choose **Manage account credentials**, and then choose **Personal access token**. For **Service**, choose **Secrets Manager (recommended)**, and configure your secret. Then in **,GitHub Enterprise personal access token**, enter your personal access token and choose **Save**.
+   + Choose **Manage account credentials**, and then choose **Personal access token**. For **Service**, choose **Secrets Manager (recommended)**, and configure your secret. Then in **GitHub Enterprise personal access token**, enter your personal access token and choose **Save**.
    + In **Repository URL**, enter the path to your repository, including the name of the repository.
    + Expand **Additional configuration**.
    + Select **Rebuild every time a code change is pushed to this repository** to rebuild every time a code change is pushed to this repository.

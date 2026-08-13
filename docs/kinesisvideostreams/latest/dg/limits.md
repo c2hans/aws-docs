@@ -91,11 +91,11 @@ Kinesis Video Streams [APIs for accessing archived media](https://docs.aws.amazo
   <tr><th>API</th><th>Number of quota points consumed per request</th><th>Shared quota (N)</th></tr>
 </thead>
 <tbody>
-  <tr><td>ListFragments</td><td>Value of the MaxResults parameter</td><td rowspan="5">10,000 quota points per second, per stream [h]</td></tr>
-  <tr><td>GetClip</td><td>Number of fragments in the resulting clip</td></tr>
-  <tr><td>GetHLSMediaPlaylist</td><td>Value of the MaxMediaPlaylistFragmentResults parameter</td></tr>
-  <tr><td>GetDASHManifest</td><td>Value of the MaxManifestFragmentResults parameter</td></tr>
-  <tr><td>GetImages</td><td>Value of 400 \+ max number of images requested</td></tr>
+  <tr><td><code>ListFragments</code></td><td>Value of the <code>MaxResults</code> parameter</td><td rowspan="5">10,000 quota points per second, per stream [h]</td></tr>
+  <tr><td><code>GetClip</code></td><td>Number of fragments in the resulting clip</td></tr>
+  <tr><td><code>GetHLSMediaPlaylist</code></td><td>Value of the <code>MaxMediaPlaylistFragmentResults</code> parameter</td></tr>
+  <tr><td><code>GetDASHManifest</code></td><td>Value of the <code>MaxManifestFragmentResults</code> parameter</td></tr>
+  <tr><td><code>GetImages</code></td><td>Value of 400 + max number of images requested</td></tr>
 </tbody>
 </table>
 
@@ -106,11 +106,11 @@ Kinesis Video Streams [APIs for accessing archived media](https://docs.aws.amazo
   <tr><th>API</th><th>Number of quota points consumed per request</th><th>Shared quota (N)</th></tr>
 </thead>
 <tbody>
-  <tr><td>GetMediaForFragmentList</td><td>Number of fragments in the Fragments parameter</td><td rowspan="5">500 quota points per second, per stream [h]</td></tr>
-  <tr><td>GetClip</td><td>Number of fragments in the resulting clip</td></tr>
-  <tr><td>GetMP4MediaFragment</td><td>1</td></tr>
-  <tr><td>GetTSFragment </td><td>1</td></tr>
-  <tr><td>GetImages </td><td>Max number of images requested</td></tr>
+  <tr><td><code>GetMediaForFragmentList</code></td><td>Number of fragments in the Fragments parameter</td><td rowspan="5">500 quota points per second, per stream [h]</td></tr>
+  <tr><td><code>GetClip</code></td><td>Number of fragments in the resulting clip</td></tr>
+  <tr><td><code>GetMP4MediaFragment</code></td><td>1</td></tr>
+  <tr><td><code>GetTSFragment</code> </td><td>1</td></tr>
+  <tr><td><code>GetImages</code> </td><td>Max number of images requested</td></tr>
 </tbody>
 </table>
 

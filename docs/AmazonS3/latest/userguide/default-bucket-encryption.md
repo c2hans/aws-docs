@@ -131,4 +131,4 @@ aws s3api put-bucket-encryption --bucket {{amzn-s3-demo-bucket}} --server-side-e
 
 Use the REST API `PutBucketEncryption` operation to enable default encryption and to set the type of server-side encryption to use—SSE-S3, SSE-KMS, or DSSE-KMS.
 
-For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTencryption.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTencryption.html) in the *Amazon Simple Storage Service API Reference*.
+For more information, see [PutBucketEncryption](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTencryption.html) in the *Amazon Simple Storage Service API Reference*.

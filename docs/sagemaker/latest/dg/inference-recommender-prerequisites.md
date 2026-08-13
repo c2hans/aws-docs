@@ -240,7 +240,7 @@ You do not need to approve the model package to create an Inference Recommender 
       model_package_group_response = sagemaker_client.create_model_package_group(**model_package_group_input_dict)
       ```
 
-      See the [Amazon SageMaker API Reference Guide](https://docs.aws.amazon.com/sagemaker/latest/APIReference/Welcome.html) for a full list of optional and required arguments you can pass to [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModelPackageGroup.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModelPackageGroup.html).
+      See the [Amazon SageMaker API Reference Guide](https://docs.aws.amazon.com/sagemaker/latest/APIReference/Welcome.html) for a full list of optional and required arguments you can pass to [`CreateModelPackageGroup`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModelPackageGroup.html).
 
       Create a model package by specifying a Docker image that runs your inference code and the Amazon S3 location of your model artifacts and provide values for `InferenceSpecification`. `InferenceSpecification` should contain information about inference jobs that can be run with models based on this model package, including the following:
       + The Amazon ECR paths of images that run your inference code.
@@ -256,7 +256,7 @@ You do not need to approve the model package to create an Inference Recommender 
 
       If you provide an allow list of instance types to use to generate inferences in real-time for the [SupportedRealtimeInferenceInstanceTypes](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_InferenceSpecification.html#sagemaker-Type-InferenceSpecification-SupportedRealtimeInferenceInstanceTypes), Inference Recommender limits the search space for instance types during a `Default` job. Use this parameter if you have budget constraints or know there's a specific set of instance types that can support your model and container image.
 
-      In a previous step, we downloaded a pre-trained ResNet18 model and stored it in an Amazon S3 bucket in a directory called `models`. We retrieved a PyTorch (v1.7.1) Deep Learning Container inference image and stored the URI in a variable called `image_uri`. Use those variables in the following code sample to define a dictionary used as input to the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModelPackage.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModelPackage.html) API.
+      In a previous step, we downloaded a pre-trained ResNet18 model and stored it in an Amazon S3 bucket in a directory called `models`. We retrieved a PyTorch (v1.7.1) Deep Learning Container inference image and stored the URI in a variable called `image_uri`. Use those variables in the following code sample to define a dictionary used as input to the [`CreateModelPackage`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModelPackage.html) API.
 
       ```
       # Provide the Amazon S3 URI of your compressed tarfile

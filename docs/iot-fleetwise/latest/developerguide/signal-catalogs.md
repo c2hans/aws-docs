@@ -8,7 +8,7 @@ AWS IoT FleetWise is no longer open to new customers. Existing AWS IoT FleetWise
 <a name="signal-catalogs"></a>
 
 **Note**
-You can download a [demo script](https://raw.githubusercontent.com/aws/aws-iot-fleetwise-edge/main/tools/cloud/ros2-to-nodes.py) to convert ROS 2 messages to VSS .json files that are compatible with the signal catalog. For more information, see the [https://github.com/aws/aws-iot-fleetwise-edge/blob/main/docs/dev-guide/vision-system-data/vision-system-data-demo.ipynb](https://github.com/aws/aws-iot-fleetwise-edge/blob/main/docs/dev-guide/vision-system-data/vision-system-data-demo.ipynb).
+You can download a [demo script](https://raw.githubusercontent.com/aws/aws-iot-fleetwise-edge/main/tools/cloud/ros2-to-nodes.py) to convert ROS 2 messages to VSS .json files that are compatible with the signal catalog. For more information, see the [*Vision System Data Developer Guide*](https://github.com/aws/aws-iot-fleetwise-edge/blob/main/docs/dev-guide/vision-system-data/vision-system-data-demo.ipynb).
 
 A signal catalog is a collection of standardized signals that can be reused to create vehicle models. AWS IoT FleetWise supports [Vehicle Signal Specification (VSS)](https://covesa.github.io/vehicle_signal_specification/introduction/overview/) that you can follow to define signals. A signal can be any of the following type.
 

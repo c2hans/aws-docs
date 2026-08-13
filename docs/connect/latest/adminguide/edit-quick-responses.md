@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/edit-quick-res
 # Edit quick responses in Connect Customer
 <a name="edit-quick-responses"></a>
 
-This topic explains how to use the Connect Customer admin website to edit a quick response. To edit a quick response programmatically, see [UpdateQuickResponse](https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_UpdateQuickResponse.html) in the *Connect AI agents API Reference*.
+This topic explains how to use the Connect Customer admin website to edit a quick response. To edit a quick response programmatically, see [UpdateQuickResponse](https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_UpdateQuickResponse.html) in the *agent assist API Reference*.
 
 **To edit a response**
 

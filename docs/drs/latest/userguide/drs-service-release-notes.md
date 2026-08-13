@@ -5,6 +5,12 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/drs-service-release
 # AWS Elastic Disaster Recovery Service Release Notes
 <a name="drs-service-release-notes"></a>
 
+## August 2026
+<a name="release-notes-august-2026"></a>
++ AWS Elastic Disaster Recovery automatically preserves Unified Extensible Firmware Interface (UEFI) boot mode for Linux source servers that boot using UEFI firmware. Previously, AWS Elastic Disaster Recovery converted Linux UEFI source servers to legacy Basic Input/Output System (BIOS) during recovery and drill launches. With this change, your recovered instances launch with the same UEFI boot mode as your source servers. This eliminates the need for post-launch boot configuration adjustments.
++ With AWS Elastic Disaster Recovery, you can now protect source servers that have volumes of up to 64 TiB, increased from 16 TiB. To replicate a volume larger than 16 TiB, choose the gp3 staging disk type.
++ For gp3 staging disks that you configure manually, you can now provision up to 80,000 IOPS and 2,000 MiB/s of throughput, increased from 16,000 IOPS and 1,000 MiB/s.
+
 ## July 2026
 <a name="release-notes-july-2026"></a>
 + With AWS Elastic Disaster Recovery, you can now choose a **Recovery mode** in your launch configurations. Choose **Fast** to skip the conversion process and reduce recovery time. This mode launches instances directly from replicated snapshots. Choose **Optimal** (default) to run the full conversion process before launch. To use Fast recovery mode, you must have version 6.42.20 or later of the agent. For more information, see [Editing the default AWS DRS launch settings](editing-launch-settings.md).

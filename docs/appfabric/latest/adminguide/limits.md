@@ -13,11 +13,21 @@ To request a quota increase, see [Requesting a quota increase](https://docs.aws.
 
 The quotas related to AppFabric that are in your AWS account are shown in the following table.
 
-| Name | Default | Adjustable | Description |
-| --- | --- | --- | --- |
-| Application bundles | Each supported Region: 1 | No | The maximum number of application bundles that you can create in an account in the current AWS Region. |
-| Application authorizations | Each supported Region: 50 | No | The maximum number of application authorizations that you can create in an account in the current AWS Region. |
-| Ingestions | Each supported Region: 50 | No | The maximum number of ingestions that you can create in an account in the current AWS Region. |
-| Ingestion destinations | Each supported Region: 5 | No | The maximum number of ingestion destinations that you can create per ingestion in an account in the current AWS Region. |
-| AppClient | Each supported Region: 1 | No | The maximum number of AppClients that you can create in an account in the current AWS Region.[See the AWS documentation website for more details](http://docs.aws.amazon.com/appfabric/latest/adminguide/limits.html) |
-| The AWS AppFabric for productivity feature is in preview and is subject to change. |
+<table>
+<thead>
+  <tr><th>Name</th><th>Default</th><th>Adjustable</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td>Application bundles</td><td>Each supported Region: 1</td><td>No</td><td>The maximum number of application bundles that you can create in an account in the current AWS Region.</td></tr>
+  <tr><td>Application authorizations</td><td>Each supported Region: 50</td><td>No</td><td>The maximum number of application authorizations that you can create in an account in the current AWS Region.</td></tr>
+  <tr><td>Ingestions</td><td>Each supported Region: 50</td><td>No</td><td>The maximum number of ingestions that you can create in an account in the current AWS Region.</td></tr>
+  <tr><td>Ingestion destinations</td><td>Each supported Region: 5</td><td>No</td><td>The maximum number of ingestion destinations that you can create per ingestion in an account in the current AWS Region.</td></tr>
+  <tr><td>AppClient</td><td>Each supported Region: 1</td><td>No</td><td>The maximum number of AppClients that you can create in an account in the current AWS Region.
+<table>
+<tbody>
+  <tr><td>The AWS AppFabric for productivity feature is in preview and is subject to change.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>

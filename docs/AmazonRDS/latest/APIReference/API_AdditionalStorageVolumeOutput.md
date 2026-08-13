@@ -28,6 +28,18 @@ The upper limit in gibibytes (GiB) to which RDS can automatically scale the stor
 Type: Integer
 Required: No
 
+ ** StorageOperationPercentProgress **
+The percentage of the in-progress storage operation on the additional storage volume that has completed, from `0` to `100`. This field appears only while a storage operation is in progress. It isn't present when no storage operation is active.
+Type: Integer
+Required: No
+
+ ** StorageOperationStatus **
+The status of an in-progress storage operation on the additional storage volume. This field appears only while a storage operation is in progress. It isn't present when no storage operation is active. Possible values:
++  `Initializing` - The volume is initializing from a snapshot, such as during a snapshot restore, point-in-time restore, read replica creation, or blue/green deployment. Performance can be lower than provisioned until initialization completes.
++  `Optimizing` - The volume is optimizing following a storage scaling or modification operation.
+Type: String
+Required: No
+
  ** StorageThroughput **
 The storage throughput value for the additional storage volume, in mebibytes per second (MiBps).
 Type: Integer

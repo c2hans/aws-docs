@@ -16,7 +16,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon Redshift Serverless ser
 
 **Resource type:** `AWS::RedshiftServerless::Workgroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/redshift-serverless-workgroup-routes-within-vpc.html](https://docs.aws.amazon.com/config/latest/developerguide/redshift-serverless-workgroup-routes-within-vpc.html)
+**AWS Config rule:** [redshift-serverless-workgroup-routes-within-vpc](https://docs.aws.amazon.com/config/latest/developerguide/redshift-serverless-workgroup-routes-within-vpc.html)
 
 **Schedule type:** Periodic
 
@@ -40,7 +40,7 @@ For more information about enhanced VPC routing and how to enable it for a workg
 
 **Resource type:** `AWS::RedshiftServerless::Workgroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/redshift-serverless-workgroup-encrypted-in-transit.html](https://docs.aws.amazon.com/config/latest/developerguide/redshift-serverless-workgroup-encrypted-in-transit.html)
+**AWS Config rule:** [redshift-serverless-workgroup-encrypted-in-transit](https://docs.aws.amazon.com/config/latest/developerguide/redshift-serverless-workgroup-encrypted-in-transit.html)
 
 **Schedule type:** Periodic
 
@@ -64,7 +64,7 @@ For information about updating the settings for an Amazon Redshift Serverless wo
 
 **Resource type:** `AWS::RedshiftServerless::Workgroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/redshift-serverless-workgroup-no-public-access.html](https://docs.aws.amazon.com/config/latest/developerguide/redshift-serverless-workgroup-no-public-access.html)
+**AWS Config rule:** [redshift-serverless-workgroup-no-public-access](https://docs.aws.amazon.com/config/latest/developerguide/redshift-serverless-workgroup-no-public-access.html)
 
 **Schedule type:** Periodic
 
@@ -90,7 +90,7 @@ For information about changing the public access setting for an Amazon Redshift 
 
 **Resource type:** `AWS::RedshiftServerless::Namespace`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/redshift-serverless-namespace-cmk-encryption.html](https://docs.aws.amazon.com/config/latest/developerguide/redshift-serverless-namespace-cmk-encryption.html)
+**AWS Config rule:** [redshift-serverless-namespace-cmk-encryption](https://docs.aws.amazon.com/config/latest/developerguide/redshift-serverless-namespace-cmk-encryption.html)
 
 **Schedule type:** Periodic
 
@@ -118,7 +118,7 @@ For information about updating the encryption settings for an Amazon Redshift Se
 
 **Resource type:** `AWS::RedshiftServerless::Namespace`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/redshift-serverless-default-admin-check.html](https://docs.aws.amazon.com/config/latest/developerguide/redshift-serverless-default-admin-check.html)
+**AWS Config rule:** [redshift-serverless-default-admin-check](https://docs.aws.amazon.com/config/latest/developerguide/redshift-serverless-default-admin-check.html)
 
 **Schedule type:** Periodic
 
@@ -142,7 +142,7 @@ You can change the admin username for an Amazon Redshift Serverless namespace by
 
 **Resource type:** `AWS::RedshiftServerless::Namespace`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/redshift-serverless-publish-logs-to-cloudwatch.html](https://docs.aws.amazon.com/config/latest/developerguide/redshift-serverless-publish-logs-to-cloudwatch.html)
+**AWS Config rule:** [redshift-serverless-publish-logs-to-cloudwatch](https://docs.aws.amazon.com/config/latest/developerguide/redshift-serverless-publish-logs-to-cloudwatch.html)
 
 **Schedule type:** Periodic
 

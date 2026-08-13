@@ -278,7 +278,7 @@ This section covers guidance on recipe configurations for both full-rank supervi
 ### Fine-tuning configurations (Full-rank SFT and LoRA PEFT)
 <a name="nova-model-training-jobs-recipe-config-1"></a>
 
-The only difference between full-rank SFT and LoRA PEFT in terms of recipe is the LoRA PEFT configuration, which is set to 'null' for full rank and set to appropriate values if using LoRA PEFT-based fine-tuning. Example recipes are available in the [ recipes](https://github.com/aws/sagemaker-hyperpod-recipes/tree/main/recipes_collection/recipes) GitHub repository. The following tables show detailed configurations that you might find helpful.
+The only difference between full-rank SFT and LoRA PEFT in terms of recipe is the LoRA PEFT configuration, which is set to 'null' for full rank and set to appropriate values if using LoRA PEFT-based fine-tuning. Example recipes are available in the [SageMaker HyperPod recipes](https://github.com/aws/sagemaker-hyperpod-recipes/tree/main/recipes_collection/recipes) GitHub repository. The following tables show detailed configurations that you might find helpful.
 
 About **"run" configuration**.
 
@@ -336,7 +336,7 @@ About **“training\_config” configuration**.
 ### Fine-tuning specific configurations (DPO)
 <a name="nova-model-training-jobs-recipe-config-2"></a>
 
-The only difference between Direct Preference Optimization (DPO) as compared to LoRA PEFT and FullRank SFT is in terms of dpo\_cfg configuration and allowed values. Refer to the table below the example for allowed specifically for DPO. Example recipes are available in the [ recipes](https://github.com/aws/sagemaker-hyperpod-recipes/tree/main/recipes_collection/recipes) GitHub repository. The following table shows detailed configurations that you might find helpful.
+The only difference between Direct Preference Optimization (DPO) as compared to LoRA PEFT and FullRank SFT is in terms of dpo\_cfg configuration and allowed values. Refer to the table below the example for allowed specifically for DPO. Example recipes are available in the [SageMaker HyperPod recipes](https://github.com/aws/sagemaker-hyperpod-recipes/tree/main/recipes_collection/recipes) GitHub repository. The following table shows detailed configurations that you might find helpful.
 
 - ****
   - **Root key:**

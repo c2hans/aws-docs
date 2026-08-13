@@ -64,7 +64,7 @@ For information about generating patch compliance reports that are downloaded to
    + Below, in the **Resource** list, choose the ID of the managed node for which you want to review patch compliance results.
    + In the **Details** area, in the **Properties** list, choose **Patches**.
 
-   **Option 3** – Navigate from Fleet Manager, a tool in AWS Systems Manager.
+   **Option 3** – Navigate from Fleet Manager.
    + In the navigation pane, choose **Fleet Manager**.
    + In the **Managed instances** area, choose the ID of the managed node for which you want to review patch compliance results.
    + In the **Details** area, in the **Properties** list, choose **Patches**.

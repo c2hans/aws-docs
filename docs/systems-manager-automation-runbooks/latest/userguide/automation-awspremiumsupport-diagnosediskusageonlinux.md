@@ -23,6 +23,20 @@ Access to `AWSPremiumSupport-*` runbooks requires a Business \+ Support, Enterpr
 
  [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/automation/execute/AWSPremiumSupport-DiagnoseDiskUsageOnLinux)
 
+**Document type**
+
+Automation
+
+**Owner**
+
+Amazon
+
+**Platforms**
+
+Linux
+
+**Parameters**
+
 **Required IAM permissions**
 
 The `AutomationAssumeRole` parameter requires the following actions to use the runbook successfully.
@@ -57,7 +71,7 @@ Example Policy:
 
 Follow these steps to configure the automation:
 
-1. Navigate to [https://console.aws.amazon.com/systems-manager/documents/AWSPremiumSupport-DiagnoseDiskUsageOnLinux/description](https://console.aws.amazon.com/systems-manager/documents/AWSPremiumSupport-DiagnoseDiskUsageOnLinux/description) in Systems Manager under Documents.
+1. Navigate to [`AWSPremiumSupport-DiagnoseDiskUsageOnLinux`](https://console.aws.amazon.com/systems-manager/documents/AWSPremiumSupport-DiagnoseDiskUsageOnLinux/description) in Systems Manager under Documents.
 
 1. Select **Execute automation.**
 

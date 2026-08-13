@@ -91,7 +91,7 @@ For more information, see [Editing customer managed policies](https://docs.aws.a
 
    For more information, see [Subscribe to a topic](https://docs.aws.amazon.com/sns/latest/dg/SubscribeTopic.html) in the *Amazon SNS Developer Guide*.
 
-1. If you are using an user instead of an AWS root account or an administrator user to work with CloudWatch Events, add the following statement (between {{\#\#\# BEGIN ADDING STATEMENT HERE \#\#\#}} and {{\#\#\# END ADDING STATEMENT HERE \#\#\#}}) to the user (or IAM group the user is associated with). Using an AWS root account is not recommended. This statement is used to allow the user to work with CloudWatch Events. Ellipses (`...`) are used for brevity and to help you locate where to add the statement. Do not remove any statements, and do not type these ellipses into the existing policy.
+1. If you are using a user instead of an AWS root account or an administrator user to work with CloudWatch Events, add the following statement (between {{\#\#\# BEGIN ADDING STATEMENT HERE \#\#\#}} and {{\#\#\# END ADDING STATEMENT HERE \#\#\#}}) to the user (or IAM group the user is associated with). Using an AWS root account is not recommended. This statement is used to allow the user to work with CloudWatch Events. Ellipses (`...`) are used for brevity and to help you locate where to add the statement. Do not remove any statements, and do not type these ellipses into the existing policy.
 
 ------
 #### [ JSON ]

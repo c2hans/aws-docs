@@ -16,37 +16,37 @@ For more information, see [AWS managed policies](https://docs.aws.amazon.com/IAM
 ## AWS managed policy: AmazonS3FilesFullAccess
 <a name="s3-files-security-iam-awsmanpol-amazons3filesfullaccess"></a>
 
-You can attach the `AmazonS3FilesFullAccess` policy to your IAM identities. This policy grants full access to Amazon S3 Files, including permissions to create and manage file systems, mount targets, and access points. For more information about this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FilesFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FilesFullAccess.html) in the AWS Managed Policy Reference.
+You can attach the `AmazonS3FilesFullAccess` policy to your IAM identities. This policy grants full access to Amazon S3 Files, including permissions to create and manage file systems, mount targets, and access points. For more information about this policy, see [AmazonS3FilesFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FilesFullAccess.html) in the AWS Managed Policy Reference.
 
 ## AWS managed policy: AmazonS3FilesReadOnlyAccess
 <a name="s3-files-security-iam-awsmanpol-amazons3filesreadonlyaccess"></a>
 
-You can attach the `AmazonS3FilesReadOnlyAccess` policy to your IAM identities. This policy grants read-only access to Amazon S3 Files, including permissions to view file systems, mount targets, access points, and related configurations. For more information about this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FilesReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FilesReadOnlyAccess.html) in the AWS Managed Policy Reference.
+You can attach the `AmazonS3FilesReadOnlyAccess` policy to your IAM identities. This policy grants read-only access to Amazon S3 Files, including permissions to view file systems, mount targets, access points, and related configurations. For more information about this policy, see [AmazonS3FilesReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FilesReadOnlyAccess.html) in the AWS Managed Policy Reference.
 
 ## AWS managed policy: AmazonS3FilesClientFullAccess
 <a name="s3-files-security-iam-awsmanpol-amazons3filesclientfullaccess"></a>
 
-You can attach the `AmazonS3FilesClientFullAccess` policy to your IAM identities. This policy grants full client access to S3 Files file systems, including the ability to mount, read, write, and access files as the root user. For more information about this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FilesClientFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FilesClientFullAccess.html) in the AWS Managed Policy Reference.
+You can attach the `AmazonS3FilesClientFullAccess` policy to your IAM identities. This policy grants full client access to S3 Files file systems, including the ability to mount, read, write, and access files as the root user. For more information about this policy, see [AmazonS3FilesClientFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FilesClientFullAccess.html) in the AWS Managed Policy Reference.
 
 ## AWS managed policy: AmazonS3FilesClientReadWriteAccess
 <a name="s3-files-security-iam-awsmanpol-amazons3filesclientreadwriteaccess"></a>
 
-You can attach the `AmazonS3FilesClientReadWriteAccess` policy to your IAM identities. This policy grants read and write client access to S3 Files file systems, including the ability to mount, read, and write. This policy does not grant root access. For more information about this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FilesClientReadWriteAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FilesClientReadWriteAccess.html) in the AWS Managed Policy Reference.
+You can attach the `AmazonS3FilesClientReadWriteAccess` policy to your IAM identities. This policy grants read and write client access to S3 Files file systems, including the ability to mount, read, and write. This policy does not grant root access. For more information about this policy, see [AmazonS3FilesClientReadWriteAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FilesClientReadWriteAccess.html) in the AWS Managed Policy Reference.
 
 ## AWS managed policy: AmazonS3FilesClientReadOnlyAccess
 <a name="s3-files-security-iam-awsmanpol-amazons3filesclientreadonlyaccess"></a>
 
-You can attach the `AmazonS3FilesClientReadOnlyAccess` policy to your IAM identities. This policy grants read-only client access to S3 Files file systems, including the ability to mount and read from the file system. For more information about this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FilesClientReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FilesClientReadOnlyAccess.html) in the AWS Managed Policy Reference.
+You can attach the `AmazonS3FilesClientReadOnlyAccess` policy to your IAM identities. This policy grants read-only client access to S3 Files file systems, including the ability to mount and read from the file system. For more information about this policy, see [AmazonS3FilesClientReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FilesClientReadOnlyAccess.html) in the AWS Managed Policy Reference.
 
 ## AWS managed policy: AmazonS3FilesCSIDriverPolicy
 <a name="s3-files-security-iam-awsmanpol-amazons3filescsidriverpolicy"></a>
 
-You can attach the `AmazonS3FilesCSIDriverPolicy` policy to your IAM identities. This policy grants permissions for the Amazon EFS Container Storage Interface (CSI) driver to manage S3 Files access points on behalf of Amazon EKS clusters. For more information about this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FilesCSIDriverPolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FilesCSIDriverPolicy.html) in the AWS Managed Policy Reference.
+You can attach the `AmazonS3FilesCSIDriverPolicy` policy to your IAM identities. This policy grants permissions for the Amazon EFS Container Storage Interface (CSI) driver to manage S3 Files access points on behalf of Amazon EKS clusters. For more information about this policy, see [AmazonS3FilesCSIDriverPolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FilesCSIDriverPolicy.html) in the AWS Managed Policy Reference.
 
 ## AWS managed policy: AmazonElasticFileSystemsUtils
 <a name="s3-files-security-iam-awsmanpol-amazonelasticfilesystemsutils"></a>
 
-You can attach the `AmazonElasticFileSystemsUtils` policy to your IAM identities. This policy grants permissions for the S3 Files client utilities (amazon-efs-utils) to perform operations such as describing mount targets, publishing CloudWatch metrics and logs, and communicating with AWS Systems Manager. For more information about this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticFileSystemsUtils.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticFileSystemsUtils.html) in the AWS Managed Policy Reference.
+You can attach the `AmazonElasticFileSystemsUtils` policy to your IAM identities. This policy grants permissions for the S3 Files client utilities (amazon-efs-utils) to perform operations such as describing mount targets, publishing CloudWatch metrics and logs, and communicating with AWS Systems Manager. For more information about this policy, see [AmazonElasticFileSystemsUtils](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonElasticFileSystemsUtils.html) in the AWS Managed Policy Reference.
 
 ## Amazon S3 Files updates to AWS managed policies
 <a name="s3-files-security-iam-awsmanpol-updates"></a>

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/managing-targ
 # Using universal targets in EventBridge Scheduler
 <a name="managing-targets-universal"></a>
 
- A *universal target* is a customizable set of parameters that allow you to invoke a wider set of API operation for many AWS services. For example, you can use a universal target parameter (UTP) to create a new Amazon SQS queue using the [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue) operation.
+ A *universal target* is a customizable set of parameters that allow you to invoke a wider set of API operation for many AWS services. For example, you can use a universal target parameter (UTP) to create a new Amazon SQS queue using the [`CreateQueue`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue) operation.
 
  To configure a universal target for your schedule using the AWS CLI, or one of the EventBridge Scheduler SDKs, you need to specify the following information:
 +  **RoleArn** – The ARN for the execution role you want to use for the target. The execution role you specify must have the permissions to call the API operation you want your schedule to target.
@@ -49,12 +49,12 @@ isAuthorized
 invokeModel
 ```
 
- For example, the service ARN for the [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueUrl.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueUrl.html) API action would be the following: `arn:aws:scheduler:::aws-sdk:sqs:getQueueURL`. Since the API action starts with the `get` prefix, EventBridge Scheduler does not support this target. Similairly, the Amazon MQ action [https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers.html#ListBrokers](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers.html#ListBrokers) is not supported as a target because the operation begins with the prefix `list`.
+ For example, the service ARN for the [`GetQueueUrl`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueUrl.html) API action would be the following: `arn:aws:scheduler:::aws-sdk:sqs:getQueueURL`. Since the API action starts with the `get` prefix, EventBridge Scheduler does not support this target. Similairly, the Amazon MQ action [`ListBrokers`](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers.html#ListBrokers) is not supported as a target because the operation begins with the prefix `list`.
 
 ## Examples using the universal target
 <a name="managing-targets-universal-examples"></a>
 
- The parameters you pass in the schedule `Input` field depend on the request parameterts that the service API you want to invoke accepts. For example, to target Lambda [https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html), you can set the the parameters listed in [AWS Lambda API Reference](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html#API_Invoke_RequestParameters). This includes the optional JSON [payload](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html#API_Invoke_RequestBody) that you can pass to a Lambda function.
+ The parameters you pass in the schedule `Input` field depend on the request parameterts that the service API you want to invoke accepts. For example, to target Lambda [`Invoke`](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html), you can set the the parameters listed in [AWS Lambda API Reference](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html#API_Invoke_RequestParameters). This includes the optional JSON [payload](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html#API_Invoke_RequestBody) that you can pass to a Lambda function.
 
  To determine the parameters you can set for different APIs, see the API reference for that service. Similar to Lambda `Invoke`, some APIs accept URI parameters, as well as a request body payload. In such cases, you specify the URI path parameters as well as the JSON payload in your schedule `Input`.
 

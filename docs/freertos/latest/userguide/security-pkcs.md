@@ -168,9 +168,9 @@ For information about porting the corePKCS11 library to your platform, see [Port
   <tr><th>File</th><th>With -O1 Optimization</th><th>With -Os Optimization</th></tr>
 </thead>
 <tbody>
-  <tr><td>core\_pkcs11.c</td><td>0.8K</td><td>0.8K</td></tr>
-  <tr><td>core\_pki\_utils.c</td><td>0.5K</td><td>0.3K</td></tr>
-  <tr><td>core\_pkcs11\_mbedtls.c</td><td>8.9K</td><td>7.5K</td></tr>
-  <tr><td>Total estimates</td><td>10.2K</td><td>8.6K</td></tr>
+  <tr><td>core_pkcs11.c</td><td>0.8K</td><td>0.8K</td></tr>
+  <tr><td>core_pki_utils.c</td><td>0.5K</td><td>0.3K</td></tr>
+  <tr><td>core_pkcs11_mbedtls.c</td><td>8.9K</td><td>7.5K</td></tr>
+  <tr><td><b>Total estimates</b></td><td><b>10.2K</b></td><td><b>8.6K</b></td></tr>
 </tbody>
 </table>

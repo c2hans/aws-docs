@@ -13,19 +13,19 @@ The following diagram shows an example data flow through a speaker search analys
 
 ![A diagram showing the data flow through a speaker search analysis.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/speaker-search-workflow-2.png)
 
-1. You or a system administrator create a voice profile domain for storing voice embeddings and voice profiles. For more information about creating voice profile domains, see [Creating voice profile domains](https://docs.aws.amazon.com/chime-sdk/latest/ag/create-vp-domain.html), in the *Amazon Chime SDK Administrator Guide*. You can also use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceProfileDomain.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceProfileDomain.html) API.
+1. You or a system administrator create a voice profile domain for storing voice embeddings and voice profiles. For more information about creating voice profile domains, see [Creating voice profile domains](https://docs.aws.amazon.com/chime-sdk/latest/ag/create-vp-domain.html), in the *Amazon Chime SDK Administrator Guide*. You can also use the [CreateVoiceProfileDomain](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceProfileDomain.html) API.
 
 1. A caller dials in using a phone number assigned to an Amazon Chime SDK Voice Connector. Or, an agent uses a Voice Connector number to make an outbound call.
 
 1. The Amazon Chime SDK Voice Connector service creates a transaction ID and associates it with the call.
 
-1. Assuming your application subscribes to EventBridge events, your application calls the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaInsightsPipeline.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaInsightsPipeline.html) API with the with the media insights pipeline configuration and Kinesis Video Stream ARNs for the Voice Connector call.
+1. Assuming your application subscribes to EventBridge events, your application calls the [CreateMediaInsightsPipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaInsightsPipeline.html) API with the with the media insights pipeline configuration and Kinesis Video Stream ARNs for the Voice Connector call.
 
    For more information about using EventBridge, refer to [Understanding workflows for machine-learning based analytics for the Amazon Chime SDK](ml-based-analytics.md).
 
 1. Your application—such as an Interactive Voice Response system—or agent provides notice to the caller regarding call recording and the use of voice embeddings for voice analytics and seeks their consent to participate.
 
-1. Once the caller provides consent, your application or agent can call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StartSpeakerSearchTask.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StartSpeakerSearchTask.html) API through the [ Voice SDK](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Voice.html) if you have a Voice Connector and a transaction ID. Or, if you have a media insights pipeline ID instead of a transaction ID, you call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_StartSpeakerSearchTask.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_StartSpeakerSearchTask.html) API in the [ Media pipelines SDK](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Media_Pipelines.html).
+1. Once the caller provides consent, your application or agent can call the [StartSpeakerSearchTask](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_StartSpeakerSearchTask.html) API through the [ Voice SDK](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Voice.html) if you have a Voice Connector and a transaction ID. Or, if you have a media insights pipeline ID instead of a transaction ID, you call the [StartSpeakerSearchTask](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_StartSpeakerSearchTask.html) API in the [ Media pipelines SDK](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Media_Pipelines.html).
 
    Once the caller provides consent, your application or agent calls the `StartSpeakerSearchTask` API. You must pass the Voice Connector ID, transaction ID, and voice profile domain ID to the API. A speaker search task ID is returned to identify the asynchronous task.
 **Note**
@@ -43,6 +43,6 @@ Before invoking the `StartSpeakerSearchTask` API in either of the SDKs, you must
 
 1. The media insights pipeline sends a `VoiceprintGenerationSuccessful` notification to the configured notification targets.
 
-1. Your application calls the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceProfile.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceProfile.html) or [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateVoiceProfile.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateVoiceProfile.html) APIs to create or update the profile.
+1. Your application calls the [CreateVoiceProfile](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceProfile.html) or [UpdateVoiceProfile](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateVoiceProfile.html) APIs to create or update the profile.
 
-1. Your application calls the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetSpeakerSearchTask.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetSpeakerSearchTask.html) API as needed to get the latest status of the speaker search task.
+1. Your application calls the [GetSpeakerSearchTask](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetSpeakerSearchTask.html) API as needed to get the latest status of the speaker search task.

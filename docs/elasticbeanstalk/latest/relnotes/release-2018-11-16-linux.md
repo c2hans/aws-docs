@@ -12,19 +12,36 @@ This release applies security updates to Linux-based platforms for AWS Elastic B
 ## Changes
 <a name="release-2018-11-16-linux.changes"></a>
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Instance type** | **Regions** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before November 8, 2018 to all Linux-based platforms. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-11-16-linux.html) |
-| **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-11-16-linux.html)<br />For more information about these new Amazon EC2 instance types, see [New Lower-Cost, AMD-Powered M5a and R5a EC2 Instances](https://aws.amazon.com/blogs/aws/new-lower-cost-amd-powered-ec2-instances/). |
-| **Java SE** | Updated the Java 8 configuration to OpenJDK Version 1.8.0\_191-b12. |
-| **Java with Tomcat** | Updated the Java 8 configurations to OpenJDK Version 1.8.0\_191-b12.<br />Updated the Tomcat 7 configurations to [Apache Tomcat Version 7.0.91](https://tomcat.apache.org/tomcat-7.0-doc/RELEASE-NOTES.txt). |
-| **Node.js** | Updated the Node.js platform to support [Node v10.13.0](https://nodejs.org/en/blog/release/v10.13.0/).<br />Node 10 is now the default Node.js version. |
-| **M5a, R5a** |  + US East (Ohio) – us-east-2<br />+ US East (N. Virginia) – us-east-1<br />+ US West (Oregon) – us-west-2<br />+ Asia Pacific (Singapore) – ap-southeast-1<br />+ Europe (Ireland) – eu-west-1  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before November 8, 2018 to all Linux-based platforms.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Java SE</b></td><td>Updated the Java 8 configuration to OpenJDK Version 1.8.0_191-b12.</td></tr>
+  <tr><td><b>Java with Tomcat</b></td><td>Updated the Java 8 configurations to OpenJDK Version 1.8.0_191-b12.<br />Updated the Tomcat 7 configurations to <a href="https://tomcat.apache.org/tomcat-7.0-doc/RELEASE-NOTES.txt">Apache Tomcat Version 7.0.91</a>.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform to support <a href="https://nodejs.org/en/blog/release/v10.13.0/">Node v10.13.0</a>.<br />Node 10 is now the default Node.js version.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Instance types</b></td><td>Added support for more Amazon EC2 instance types in some AWS Regions, as follows:
+<table>
+<thead>
+  <tr><th><b>Instance type</b></th><th><b>Regions</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>M5a, R5a</b></td><td> <ul><li>US East (Ohio) – us-east-2</li><li>US East (N. Virginia) – us-east-1</li><li>US West (Oregon) – us-west-2</li><li>Asia Pacific (Singapore) – ap-southeast-1</li><li>Europe (Ireland) – eu-west-1</li></ul> </td></tr>
+</tbody>
+</table>
+<br />For more information about these new Amazon EC2 instance types, see <a href="https://aws.amazon.com/blogs/aws/new-lower-cost-amd-powered-ec2-instances/">New Lower-Cost, AMD-Powered M5a and R5a EC2 Instances</a>.</td></tr>
+</tbody>
+</table>
 
 ## Updated platform configurations
 <a name="release-2018-11-16-linux.platforms"></a>

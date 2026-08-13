@@ -96,7 +96,7 @@ cf.logCustomData(resp_obj);
 Each field supports up to 800 bytes of data. CloudFront automatically URL-encodes the data before writing it to the log field. CloudFront truncates any data above 800 bytes after URL-encoding. If your function calls `logCustomData()` multiple times within a single execution, CloudFront uses only the last value.
 
 **Add fields to your log configuration**
-To receive this data in your CloudFront access logs, you must add the `viewer-request-log-data` or `viewer-response-log-data` fields to your [real-time log](real-time-logs.md) configuration or [standard logging (v2)](standard-logging.md) setup. CloudFront Functions doesn't support custom data logging for embedded points of presence (POPs).
+To receive this data in your CloudFront access logs, you must add the `viewer-request-log-data` or `viewer-response-log-data` fields to your [real-time log](real-time-logs.md) configuration or [standard logging (v2)](standard-logging.md) setup.
 
 **Difference from console.log()**
 The `logCustomData()` method does not replace `console.log()` for CloudFront Functions. Use `console.log()` to send log lines to Amazon CloudWatch Logs. Use `cf.logCustomData()` to write custom data to CloudFront access logs ([real-time logs](real-time-logs.md) and [standard logging (v2)](standard-logging.md)). You can use both methods in the same function. For more information, see [CloudFront Functions logs](edge-functions-logs.md).

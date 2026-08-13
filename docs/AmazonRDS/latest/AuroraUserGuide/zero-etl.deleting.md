@@ -46,4 +46,4 @@ aws rds delete-integration ^
 ## RDS API
 <a name="zero-etl.deleting-api"></a>
 
-To delete a zero-ETL integration using the Amazon RDS API, use the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteIntegration.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteIntegration.html) operation with the `IntegrationIdentifier` parameter.
+To delete a zero-ETL integration using the Amazon RDS API, use the [`DeleteIntegration`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteIntegration.html) operation with the `IntegrationIdentifier` parameter.

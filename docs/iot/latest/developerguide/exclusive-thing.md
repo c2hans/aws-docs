@@ -62,7 +62,7 @@ If your client ID matches your thing's name in the registry, after you attach an
 ### AWS CLI
 <a name="attach-thing-principal-cli"></a>
 
-1. To attach a certificate to an thing using AWS CLI, run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/attach-thing-principal.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/attach-thing-principal.html) command. To specify the exclusive certificate-to-thing attachment, you must specify `EXCLUSIVE_THING` in the `--thing-principal-type` field. An example command can be the following.
+1. To attach a certificate to an thing using AWS CLI, run the [**attach-thing-principal**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/attach-thing-principal.html) command. To specify the exclusive certificate-to-thing attachment, you must specify `EXCLUSIVE_THING` in the `--thing-principal-type` field. An example command can be the following.
 
    ```
    aws iot attach-thing-principal \

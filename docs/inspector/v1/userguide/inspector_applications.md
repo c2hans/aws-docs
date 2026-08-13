@@ -81,4 +81,4 @@ To delete an assessment target, perform the following procedure.
 **Important**
 When you delete an assessment target, all assessment templates, assessment runs, findings, and versions of the reports that are associated with the target are also deleted.
 
-You can also delete an assessment target by using the [https://docs.aws.amazon.com/inspector/latest/APIReference/API_DeleteAssessmentTarget.html](https://docs.aws.amazon.com/inspector/latest/APIReference/API_DeleteAssessmentTarget.html) API.
+You can also delete an assessment target by using the [`DeleteAssessmentTarget`](https://docs.aws.amazon.com/inspector/latest/APIReference/API_DeleteAssessmentTarget.html) API.

@@ -110,7 +110,7 @@ Output from this command will look something like this.
 }
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/elasticache/modify-cache-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/elasticache/modify-cache-parameter-group.html).
+For more information, see [`modify-cache-parameter-group`](https://docs.aws.amazon.com/cli/latest/reference/elasticache/modify-cache-parameter-group.html).
 
 To find the name of the parameter you changed, see [Valkey and Redis OSS parameters](ParameterGroups.Engine.md#ParameterGroups.Redis).
 
@@ -172,7 +172,7 @@ https://elasticache.us-west-2.amazonaws.com/
    &X-Amz-Credential=<credential>
 ```
 
-For more information, see [https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_ModifyCacheParameterGroup.html](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_ModifyCacheParameterGroup.html).
+For more information, see [`ModifyCacheParameterGroup`](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_ModifyCacheParameterGroup.html).
 
 If you have a Valkey or Redis OSS (cluster mode disabled) cluster and make changes to the following parameters, you must reboot the nodes in the cluster:
 + activerehashing

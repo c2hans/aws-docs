@@ -44,8 +44,8 @@ You can share some types of AWS resources with other AWS accounts by attaching a
 + If you share resources with an account that isn't part of your organization, then AWS RAM initiates an invitation process. The recipient must accept the invitation before that principal can access the shared resources. [After you turn on the ability to share within your organization,](getting-started-sharing.md#getting-started-sharing-orgs) sharing with accounts in the organization doesn't require invitations.
 
 If you have resources that you have shared by using a resource-based permission policy, you can promote those resources to fully AWS RAM managed resources by doing either of the following:
-+ Use the [https://docs.aws.amazon.com/ram/latest/APIReference/API_PromoteResourceShareCreatedFromPolicy.html](https://docs.aws.amazon.com/ram/latest/APIReference/API_PromoteResourceShareCreatedFromPolicy.html) API operation.
-+ Use the API operation's equivalent, which is the AWS Command Line Interface (AWS CLI) [https://docs.aws.amazon.com/cli/latest/reference/ram/promote-resource-share-created-from-policy.html](https://docs.aws.amazon.com/cli/latest/reference/ram/promote-resource-share-created-from-policy.html) command.
++ Use the [PromoteResourceShareCreatedFromPolicy](https://docs.aws.amazon.com/ram/latest/APIReference/API_PromoteResourceShareCreatedFromPolicy.html) API operation.
++ Use the API operation's equivalent, which is the AWS Command Line Interface (AWS CLI) [promote-resource-share-created-from-policy](https://docs.aws.amazon.com/cli/latest/reference/ram/promote-resource-share-created-from-policy.html) command.
 
 ## How resource sharing works
 <a name="what-is-how"></a>

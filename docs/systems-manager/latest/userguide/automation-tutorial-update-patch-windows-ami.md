@@ -7,16 +7,16 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 # Update a Windows Server AMI
 <a name="automation-tutorial-update-patch-windows-ami"></a>
 
-The `AWS-UpdateWindowsAmi` runbook enables you to automate image maintenance tasks on your Amazon Windows Amazon Machine Image (AMI) without having to author the runbook in JSON or YAML. This runbook is supported for Windows Server 2008 R2 or later. You can use the `AWS-UpdateWindowsAmi` runbook to perform the following types of tasks.
+The `AWS-UpdateWindowsAmi` runbook lets you automate image maintenance tasks on your Amazon Windows Amazon Machine Image (AMI) without having to author the runbook in JSON or YAML. This runbook is supported for Windows Server 2008 R2 or later. You can use the `AWS-UpdateWindowsAmi` runbook to perform the following types of tasks.
 + Install all Windows updates and upgrade Amazon software (default behavior).
 + Install specific Windows updates and upgrade Amazon software.
 + Customize an AMI using your scripts.
 
 **Before you begin**
-Before you begin working with runbooks, [configure roles for Automation](automation-setup-iam.md) to add an `iam:PassRole` policy that references the ARN of the instance profile you want to grant access to. Optionally, configure Amazon EventBridge for Automation, a tool in AWS Systems Manager. For more information, see [Setting up Automation](automation-setup.md). This walkthrough also requires that you specify the name of an AWS Identity and Access Management (IAM) instance profile. For more information about creating an IAM instance profile, see [Configure instance permissions required for Systems Manager](setup-instance-permissions.md).
+Before you begin working with runbooks, [configure roles for Automation](automation-setup-iam.md) to add an `iam:PassRole` policy that references the ARN of the instance profile you want to grant access to. Optionally, configure Amazon EventBridge for Automation. For more information, see [Setting up Automation](automation-setup.md). This walkthrough also requires that you specify the name of an AWS Identity and Access Management (IAM) instance profile. For more information about creating an IAM instance profile, see [Configure instance permissions required for Systems Manager](setup-instance-permissions.md).
 
 **Note**
-Updates to AWS Systems Manager SSM Agent are typically rolled out to different regions at different times. When you customize or update an AMI, use only source AMIs published for the region that you are working in. This will ensure that you are working with the latest SSM Agent released for that region and avoid compatibility issues.
+Updates to AWS Systems Manager SSM Agent are typically rolled out to different regions at different times. When you customize or update an AMI, use only source AMIs published for the region that you are working in. This will make sure that you are working with the latest SSM Agent released for that region and avoid compatibility issues.
 
 The `AWS-UpdateWindowsAmi` runbook accepts the following input parameters.
 
@@ -44,7 +44,7 @@ The `AWS-UpdateWindowsAmi` runbook includes the following steps, by default.
 This step launches an instance with an IAM instance profile role from the specified `SourceAmiID`.
 
 **Step 2: runPreUpdateScript (`aws:runCommand` action)**
-This step enables you to specify a script as a string that runs before updates are installed.
+This step lets you specify a script as a string that runs before updates are installed.
 
 **Step 3: updateEC2Config (`aws:runCommand` action)**
 This step uses the `AWS-InstallPowerShellModule` runbook to download an AWS public PowerShell module. Systems Manager verifies the integrity of the module by using an SHA-256 hash. Systems Manager then checks the operating system to determine whether to update EC2Config or EC2Launch. EC2Config runs on Windows Server 2008 R2 through Windows Server 2012 R2. EC2Launch runs on Windows Server 2016.
@@ -62,7 +62,7 @@ This step updates AWS ENA Network drivers by using the `AWS-ConfigureAWSPackage`
 This step installs Windows updates by using the `AWS-InstallWindowsUpdates` runbook. By default, Systems Manager searches for and installs all missing updates. You can change the default behavior by specifying one of the following parameters: `IncludeKbs`, `ExcludeKbs`, `Categories`, or `SeverityLevels`.
 
 **Step 8: runPostUpdateScript (`aws:runCommand` action)**
-This step enables you to specify a script as a string that runs after the updates have been installed.
+This step lets you specify a script as a string that runs after the updates have been installed.
 
 **Step 9: runSysprepGeneralize (`aws:runCommand` action) **
 This step uses the `AWS-InstallPowerShellModule` runbook to download an AWS public PowerShell module. Systems Manager verifies the integrity of the module by using an SHA-256 hash. Systems Manager then runs sysprep using AWS-supported methods for either EC2Launch (Windows Server 2016) or EC2Config (Windows Server 2008 R2 through 2012 R2).
@@ -71,16 +71,16 @@ This step uses the `AWS-InstallPowerShellModule` runbook to download an AWS publ
 This step stops the updated instance.
 
 **Step 11: createImage (`aws:createImage` action) **
-This step creates a new AMI with a descriptive name that links it to the source ID and creation time. For example: “AMI Generated by EC2 Automation on {{global:DATE\_TIME}} from {{SourceAmiId}}” where DATE\_TIME and SourceID represent Automation variables.
+This step creates a new AMI with a descriptive name that links it to the source ID and creation time. For example: "AMI Generated by EC2 Automation on {{global:DATE\_TIME}} from {{SourceAmiId}}" where DATE\_TIME and SourceID represent Automation variables.
 
 **Step 12: TerminateInstance (`aws:changeInstanceState` action) **
 This step cleans up the automation by terminating the running instance.
 
 **Output**
-This section enables you to designate the outputs of various steps or values of any parameter as the Automation output. By default, the output is the ID of the updated Windows AMI created by the automation.
+This section lets you designate the outputs of various steps or values of any parameter as the Automation output. By default, the output is the ID of the updated Windows AMI created by the automation.
 
 **Note**
-By default, when Automation runs the `AWS-UpdateWindowsAmi` runbook and creates a temporary instance, the system uses the default VPC (172.30.0.0/16). If you deleted the default VPC, you will receive the following error:
+By default, when Automation runs the `AWS-UpdateWindowsAmi` runbook and creates a temporary instance, the system uses the default VPC (172.30.0.0/16). If you deleted the default VPC, you receive the following error:
 VPC not defined 400
 To solve this problem, you must make a copy of the `AWS-UpdateWindowsAmi` runbook and specify a subnet ID. For more information, see [VPC not defined 400](automation-troubleshooting.md#automation-trbl-common-vpc).
 
@@ -98,7 +98,7 @@ To solve this problem, you must make a copy of the `AWS-UpdateWindowsAmi` runboo
        --parameters SourceAmiId='{{AMI ID}}',IamInstanceProfileName='{{IAM instance profile}}',AutomationAssumeRole='arn:aws:iam::{{global:ACCOUNT_ID}}:role/{{AutomationServiceRole}}'
    ```
 
-   The command returns an execution ID. Copy this ID to the clipboard. You will use this ID to view the status of the automation.
+   The command returns an execution ID. Copy this ID to the clipboard. Use this ID to view the status of the automation.
 
    ```
    {

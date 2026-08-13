@@ -21,7 +21,7 @@ Type: [AwsSecurityFindingIdentifier](API_AwsSecurityFindingIdentifier.md) object
 Required: No
 
  ** NextToken **   <a name="securityhub-Type-FindingHistoryRecord-NextToken"></a>
- A token for pagination purposes. Provide this token in the subsequent request to [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingsHistory.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingsHistory.html) to get up to an additional 100 results of history for the same finding that you specified in your initial request.
+ A token for pagination purposes. Provide this token in the subsequent request to [`GetFindingsHistory`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingsHistory.html) to get up to an additional 100 results of history for the same finding that you specified in your initial request.
 Type: String
 Required: No
 
@@ -31,7 +31,7 @@ Type: Array of [FindingHistoryUpdate](API_FindingHistoryUpdate.md) objects
 Required: No
 
  ** UpdateSource **   <a name="securityhub-Type-FindingHistoryRecord-UpdateSource"></a>
- Identifies the source of the event that changed the finding. For example, an integrated AWS service or third-party partner integration may call [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html), or an AWS Security Hub CSPM customer may call [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html).
+ Identifies the source of the event that changed the finding. For example, an integrated AWS service or third-party partner integration may call [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html), or an AWS Security Hub CSPM customer may call [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html).
 Type: [FindingHistoryUpdateSource](API_FindingHistoryUpdateSource.md) object
 Required: No
 

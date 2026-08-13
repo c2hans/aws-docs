@@ -21,12 +21,23 @@ App Runner provides convenient platform-specific managed runtimes. When you use 
 
 The following table lists the changes included in this release.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/apprunner/latest/relnotes/release-2025-06-13-monthly-rt-release.html) |
-| **Python**<br />[Supported runtimes](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-python-releases.html) | No updates to language versions.<br />Package updates:+  Updated SQLite to 3.50.0.  |
-| **Node.js**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-nodejs-releases.html) | Updated Node.js 22 to version 22.16.0.<br />No tools updates. |
-| **Corretto**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-java-releases.html) | Updated Corretto 8 to version 8.452.09.2.<br />No tools updates. |
-| **Ruby**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-ruby-releases.html) | No updates to language versions.<br />Package updates:+  Updated SQLite to version 3.50.0.  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Python</b><br /><a href="https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-python-releases.html">Supported runtimes</a></td><td>No updates to language versions.<br />Package updates:<ul><li> Updated SQLite to 3.50.0. </li></ul></td></tr>
+  <tr><td><b>Node.js</b><br /><a href="https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-nodejs-releases.html">Supported runtimes </a></td><td>Updated Node.js 22 to version 22.16.0.<br />No tools updates.</td></tr>
+  <tr><td><b>Corretto</b><br /><a href="https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-java-releases.html">Supported runtimes </a></td><td>Updated Corretto 8 to version 8.452.09.2.<br />No tools updates.</td></tr>
+  <tr><td><b>Ruby</b><br /><a href="https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-ruby-releases.html">Supported runtimes </a></td><td>No updates to language versions.<br />Package updates:<ul><li> Updated SQLite to version 3.50.0. </li></ul></td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>

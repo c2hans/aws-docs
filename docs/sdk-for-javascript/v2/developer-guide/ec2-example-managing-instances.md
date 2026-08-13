@@ -19,12 +19,12 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 <a name="ec2-example-managing-instances-scenario"></a>
 
 In this example, you use a series of Node.js modules to perform several basic instance management operations. The Node.js modules use the SDK for JavaScript to manage instances by using these Amazon EC2 client class methods:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#describeInstances-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#describeInstances-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#monitorInstances-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#monitorInstances-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#unmonitorInstances-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#unmonitorInstances-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#startInstances-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#startInstances-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#stopInstances-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#stopInstances-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#rebootInstances-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#rebootInstances-property)
++ [`describeInstances`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#describeInstances-property)
++ [`monitorInstances`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#monitorInstances-property)
++ [`unmonitorInstances`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#unmonitorInstances-property)
++ [`startInstances`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#startInstances-property)
++ [`stopInstances`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#stopInstances-property)
++ [`rebootInstances`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#rebootInstances-property)
 
 For more information about the lifecycle of Amazon EC2 instances, see [Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html) in the *Amazon EC2 User Guide*.
 

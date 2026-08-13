@@ -12,7 +12,7 @@ First, this topic focuses on changes that you can make to reduce cold start time
 ## Use an AWS CRT-based HTTP client
 <a name="lambda-quick-url"></a>
 
-For working with AWS Lambda, we recommend the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/crt/AwsCrtHttpClient.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/crt/AwsCrtHttpClient.html) for synchronous scenarios and the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/crt/AwsCrtAsyncHttpClient.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/crt/AwsCrtAsyncHttpClient.html) for asynchronous scenarios.
+For working with AWS Lambda, we recommend the [`AwsCrtHttpClient`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/crt/AwsCrtHttpClient.html) for synchronous scenarios and the [`AwsCrtAsyncHttpClient`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/crt/AwsCrtAsyncHttpClient.html) for asynchronous scenarios.
 
 The [Configure AWS CRT-based HTTP clients](http-configuration-crt.md) topic in this guide describes the benefits of using the HTTP clients, how to add the dependency, and how configure their use by service clients.
 
@@ -77,7 +77,7 @@ Region.of(System.getenv(SdkSystemSetting.AWS_REGION.environmentVariable()))
 ```
 
 **Use the `EnvironmentVariableCredentialProvider`**
-Much like the default lookup behavior for the Region information, the SDK looks in several places for credentials. By specifying the [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/auth/credentials/EnvironmentVariableCredentialsProvider.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/auth/credentials/EnvironmentVariableCredentialsProvider.html) when you build a service client, you save time in the SDK's lookup process for credentials.
+Much like the default lookup behavior for the Region information, the SDK looks in several places for credentials. By specifying the [`EnvironmentVariableCredentialProvider`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/auth/credentials/EnvironmentVariableCredentialsProvider.html) when you build a service client, you save time in the SDK's lookup process for credentials.
 Using this credentials provider enables the code to be used in Lambda functions, but might not work on Amazon EC2 or other systems.
 If you intend to use [Lambda SnapStart for Java](#lambda-quick-snapstart) at some point, you should rely on the default credentials provider chain to lookup credentials. If you specify the `EnvironmentVariableCredentialsProvider`, the initial credentials lookup works, but when SnapStart is activated, [the Java runtime sets container credentials environment variables](https://docs.aws.amazon.com/lambda/latest/dg/snapstart-activate.html#snapstart-credentials). On activation, the environment variables used by the `EnvironmentVariableCredentialsProvider`—access key environment variables—are not available to the Java SDK.
 

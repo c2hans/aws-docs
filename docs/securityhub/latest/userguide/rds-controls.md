@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon Relational Database Ser
 
 **Resource type:** `AWS::RDS::DBClusterSnapshot`, `AWS::RDS::DBSnapshot`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-snapshots-public-prohibited.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-snapshots-public-prohibited.html)
+**AWS Config rule:** [`rds-snapshots-public-prohibited`](https://docs.aws.amazon.com/config/latest/developerguide/rds-snapshots-public-prohibited.html)
 
 **Schedule type:** Change triggered
 
@@ -50,7 +50,7 @@ To remove public access from RDS snapshots, see [Sharing a snapshot](https://doc
 
 **Resource type:** `AWS::RDS::DBInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-instance-public-access-check.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-instance-public-access-check.html)
+**AWS Config rule:** [`rds-instance-public-access-check`](https://docs.aws.amazon.com/config/latest/developerguide/rds-instance-public-access-check.html)
 
 **Schedule type:** Change triggered
 
@@ -80,7 +80,7 @@ To remove public access from RDS DB instances, see [Modifying an Amazon RDS DB i
 
 **Resource type:** `AWS::RDS::DBInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-storage-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-storage-encrypted.html)
+**AWS Config rule:** [`rds-storage-encrypted`](https://docs.aws.amazon.com/config/latest/developerguide/rds-storage-encrypted.html)
 
 **Schedule type:** Change triggered
 
@@ -112,7 +112,7 @@ For information about encrypting DB instances in Amazon RDS, see [Encrypting Ama
 
 **Resource type:** `AWS::RDS::DBClusterSnapshot`,` AWS::RDS::DBSnapshot`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-snapshot-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-snapshot-encrypted.html)
+**AWS Config rule:** [`rds-snapshot-encrypted`](https://docs.aws.amazon.com/config/latest/developerguide/rds-snapshot-encrypted.html)
 
 **Schedule type:** Change triggered
 
@@ -142,7 +142,7 @@ You can only encrypt an RDS DB instance when you create it, not after the DB ins
 
 **Resource type:** `AWS::RDS::DBInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-multi-az-support.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-multi-az-support.html)
+**AWS Config rule:** [`rds-multi-az-support`](https://docs.aws.amazon.com/config/latest/developerguide/rds-multi-az-support.html)
 
 **Schedule type:** Change triggered
 
@@ -168,7 +168,7 @@ To deploy your DB instances in multiple AZs, [Modifying a DB instance to be a Mu
 
 **Resource type:** `AWS::RDS::DBInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-enhanced-monitoring-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-enhanced-monitoring-enabled.html)
+**AWS Config rule:** [`rds-enhanced-monitoring-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/rds-enhanced-monitoring-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -200,7 +200,7 @@ For detailed instructions on enabling Enhanced Monitoring for your DB instance, 
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster-deletion-protection-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster-deletion-protection-enabled.html)
+**AWS Config rule:** [`rds-cluster-deletion-protection-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster-deletion-protection-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -230,7 +230,7 @@ To enable deletion protection for an RDS DB cluster, see [Modifying the DB clust
 
 **Resource type:** `AWS::RDS::DBInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-instance-deletion-protection-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-instance-deletion-protection-enabled.html)
+**AWS Config rule:** [`rds-instance-deletion-protection-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/rds-instance-deletion-protection-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -259,7 +259,7 @@ To enable deletion protection for an RDS DB instance, see [Modifying an Amazon R
 
 **Resource type:** `AWS::RDS::DBInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-logging-enabled.html)
+**AWS Config rule:** [`rds-logging-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/rds-logging-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -292,7 +292,7 @@ For information about publishing RDS database logs to CloudWatch Logs, see [Spec
 
 **Resource type:** `AWS::RDS::DBInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-instance-iam-authentication-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-instance-iam-authentication-enabled.html)
+**AWS Config rule:** [`rds-instance-iam-authentication-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/rds-instance-iam-authentication-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -318,7 +318,7 @@ To activate IAM database authentication on an RDS DB instance, see [Enabling and
 
 **Resource type:** `AWS::RDS::DBInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/db-instance-backup-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/db-instance-backup-enabled.html)
+**AWS Config rule:** [`db-instance-backup-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/db-instance-backup-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -349,7 +349,7 @@ To enable automated backups on an RDS DB instance, see [Enabling automated backu
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster-iam-authentication-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster-iam-authentication-enabled.html)
+**AWS Config rule:** [`rds-cluster-iam-authentication-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster-iam-authentication-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -375,13 +375,17 @@ To enable IAM authentication for a DB cluster, see [Enabling and disabling IAM d
 
 **Resource type:** `AWS::RDS::DBInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-automatic-minor-version-upgrade-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-automatic-minor-version-upgrade-enabled.html)
+**AWS Config rule:** [`rds-automatic-minor-version-upgrade-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/rds-automatic-minor-version-upgrade-enabled.html)
 
 **Schedule type:** Change triggered
 
 **Parameters:** None
 
-This control checks whether automatic minor version upgrades are enabled for the RDS database instance.
+This control checks whether an Amazon RDS DB instance has automatic minor version upgrades enabled. The control fails if automatic minor version upgrades are not enabled for the RDS DB instance.
+
+**Note**
+This control evaluates each Amazon RDS DB instance independently. For Amazon Aurora clusters, automatic minor version upgrades require that you enable this setting on the cluster. You must also enable this setting on all instances in the cluster. A `PASSED` finding for an individual instance doesn't guarantee that upgrades occur if you haven't also enabled the setting at the cluster level.
+This control also doesn't account for configurations that don't support automatic minor version upgrades. These include Aurora clusters in an Aurora global database and Aurora MySQL clusters with cross-Region read replicas. For these configurations, the control might produce evaluation results that don't accurately reflect the actual upgrade behavior.
 
 Automatic minor version upgrades periodically update a database to recent database engine versions. However, the upgrade might not always include the latest database engine version. If you need to keep your databases on specific versions at particular times, we recommend that you manually upgrade to the database versions that you need according to your required schedule. In cases of critical security issues or when a version reaches its end-of-support date, Amazon RDS might apply a minor version upgrade even if you haven't enabled the **Auto minor version upgrade** option. For more information, see the Amazon RDS upgrade documentation for your specific database engine:
 + [Automatic minor version upgrades for RDS for MariaDB](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.MariaDB.Minor.html)
@@ -407,7 +411,7 @@ To enable automatic minor version upgrades for an existing DB instance, see [Mod
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/aurora-mysql-backtracking-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/aurora-mysql-backtracking-enabled.html)
+**AWS Config rule:** [`aurora-mysql-backtracking-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/aurora-mysql-backtracking-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -439,7 +443,7 @@ Note that you cannot enable backtracking on an existing cluster. Instead, you ca
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster-multi-az-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster-multi-az-enabled.html)
+**AWS Config rule:** [`rds-cluster-multi-az-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster-multi-az-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -747,7 +751,7 @@ To change the administrative username associated with an RDS database instance, 
 
 **Resource type:** `AWS::RDS::DBInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-resources-protected-by-backup-plan.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-resources-protected-by-backup-plan.html) ``
+**AWS Config rule:** [`rds-resources-protected-by-backup-plan`](https://docs.aws.amazon.com/config/latest/developerguide/rds-resources-protected-by-backup-plan.html) ``
 
 **Schedule type:** Periodic
 
@@ -780,7 +784,7 @@ To add an RDS DB instance to an AWS Backup backup plan, see [Assigning resources
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster-encrypted-at-rest.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster-encrypted-at-rest.html) ``
+**AWS Config rule:** [`rds-cluster-encrypted-at-rest`](https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster-encrypted-at-rest.html) ``
 
 **Schedule type:** Change triggered
 
@@ -992,7 +996,7 @@ To add tags to an RDS DB subnet group, see [Tagging Amazon RDS resources](https:
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-aurora-mysql-audit-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-aurora-mysql-audit-logging-enabled.html) ``
+**AWS Config rule:** [`rds-aurora-mysql-audit-logging-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/rds-aurora-mysql-audit-logging-enabled.html) ``
 
 **Schedule type:** Change triggered
 
@@ -1021,7 +1025,7 @@ To publish Aurora MySQL DB cluster audit logs to CloudWatch Logs, see [Publishin
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster-auto-minor-version-upgrade-enable.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster-auto-minor-version-upgrade-enable.html) ``
+**AWS Config rule:** [`rds-cluster-auto-minor-version-upgrade-enable`](https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster-auto-minor-version-upgrade-enable.html) ``
 
 **Schedule type:** Change triggered
 
@@ -1047,7 +1051,7 @@ To enable automatic minor version upgrade on Multi-AZ DB clusters, see [Modifyin
 
 **Resource type:** `AWS::RDS::DBInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-postgresql-logs-to-cloudwatch.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-postgresql-logs-to-cloudwatch.html)
+**AWS Config rule:** [rds-postgresql-logs-to-cloudwatch](https://docs.aws.amazon.com/config/latest/developerguide/rds-postgresql-logs-to-cloudwatch.html)
 
 **Schedule type:** Change triggered
 
@@ -1077,7 +1081,7 @@ To publish PostgreSQL DB instance logs to CloudWatch Logs, see [Publishing Postg
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-aurora-postgresql-logs-to-cloudwatch.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-aurora-postgresql-logs-to-cloudwatch.html)
+**AWS Config rule:** [rds-aurora-postgresql-logs-to-cloudwatch](https://docs.aws.amazon.com/config/latest/developerguide/rds-aurora-postgresql-logs-to-cloudwatch.html)
 
 **Schedule type:** Change triggered
 
@@ -1101,7 +1105,7 @@ To publish Aurora PostgreSQL DB cluster logs to CloudWatch Logs, see [Publishing
 
 **Resource type:** `AWS::RDS::DBInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-postgres-instance-encrypted-in-transit.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-postgres-instance-encrypted-in-transit.html)
+**AWS Config rule:** [rds-postgres-instance-encrypted-in-transit](https://docs.aws.amazon.com/config/latest/developerguide/rds-postgres-instance-encrypted-in-transit.html)
 
 **Schedule type:** Periodic
 
@@ -1125,7 +1129,7 @@ To require all connections to your RDS for PostgreSQL DB instance to use SSL, se
 
 **Resource type:** `AWS::RDS::DBInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-mysql-instance-encrypted-in-transit.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-mysql-instance-encrypted-in-transit.html)
+**AWS Config rule:** [rds-mysql-instance-encrypted-in-transit](https://docs.aws.amazon.com/config/latest/developerguide/rds-mysql-instance-encrypted-in-transit.html)
 
 **Schedule type:** Periodic
 
@@ -1151,7 +1155,7 @@ To require all connections to your RDS for MySQL DB instance to use SSL, see [SS
 
 **Resource type:** `AWS::RDS::DBInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-sql-server-logs-to-cloudwatch.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-sql-server-logs-to-cloudwatch.html)
+**AWS Config rule:** [rds-sql-server-logs-to-cloudwatch](https://docs.aws.amazon.com/config/latest/developerguide/rds-sql-server-logs-to-cloudwatch.html)
 
 **Schedule type:** Change triggered
 
@@ -1179,7 +1183,7 @@ For information about publishing logs to CloudWatch Logs for an RDS for SQL Serv
 
 **Resource type:** `AWS::RDS::DBInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-sqlserver-encrypted-in-transit.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-sqlserver-encrypted-in-transit.html)
+**AWS Config rule:** [rds-sqlserver-encrypted-in-transit](https://docs.aws.amazon.com/config/latest/developerguide/rds-sqlserver-encrypted-in-transit.html)
 
 **Schedule type:** Periodic
 
@@ -1205,7 +1209,7 @@ For information about enabling SSL/TLS for connections to Amazon RDS DB instance
 
 **Resource type:** `AWS::RDS::DBInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/mariadb-publish-logs-to-cloudwatch-logs.html](https://docs.aws.amazon.com/config/latest/developerguide/mariadb-publish-logs-to-cloudwatch-logs.html)
+**AWS Config rule:** [mariadb-publish-logs-to-cloudwatch-logs](https://docs.aws.amazon.com/config/latest/developerguide/mariadb-publish-logs-to-cloudwatch-logs.html)
 
 **Schedule type:** Periodic
 
@@ -1233,7 +1237,7 @@ For information about configuring an Amazon RDS for MariaDB DB instance to publi
 
 **Resource type:** `AWS::RDS::DBProxy`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-proxy-tls-encryption.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-proxy-tls-encryption.html)
+**AWS Config rule:** [rds-proxy-tls-encryption](https://docs.aws.amazon.com/config/latest/developerguide/rds-proxy-tls-encryption.html)
 
 **Schedule type:** Periodic
 
@@ -1257,7 +1261,7 @@ For information about changing the settings for an Amazon RDS proxy to require T
 
 **Resource type:** `AWS::RDS::DBInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-mariadb-instance-encrypted-in-transit.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-mariadb-instance-encrypted-in-transit.html)
+**AWS Config rule:** [rds-mariadb-instance-encrypted-in-transit](https://docs.aws.amazon.com/config/latest/developerguide/rds-mariadb-instance-encrypted-in-transit.html)
 
 **Schedule type:** Periodic
 
@@ -1286,7 +1290,7 @@ For information about enabling SSL/TLS for connections to an Amazon RDS for Mari
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/aurora-mysql-cluster-audit-logging.html](https://docs.aws.amazon.com/config/latest/developerguide/aurora-mysql-cluster-audit-logging.html)
+**AWS Config rule:** [aurora-mysql-cluster-audit-logging](https://docs.aws.amazon.com/config/latest/developerguide/aurora-mysql-cluster-audit-logging.html)
 
 **Schedule type:** Periodic
 
@@ -1310,7 +1314,7 @@ For information about enabling logging for an Amazon Aurora MySQL DB cluster, se
 
 **Resource type:** `AWS::RDS::DBInstance`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-instance-subnet-igw-check.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-instance-subnet-igw-check.html)
+**AWS Config rule:** [rds-instance-subnet-igw-check](https://docs.aws.amazon.com/config/latest/developerguide/rds-instance-subnet-igw-check.html)
 
 **Schedule type:** Periodic
 
@@ -1334,7 +1338,7 @@ For information about provisioning a private subnet for an Amazon RDS DB instanc
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-pgsql-cluster-copy-tags-to-snapshot-check.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-pgsql-cluster-copy-tags-to-snapshot-check.html)
+**AWS Config rule:** [rds-pgsql-cluster-copy-tags-to-snapshot-check](https://docs.aws.amazon.com/config/latest/developerguide/rds-pgsql-cluster-copy-tags-to-snapshot-check.html)
 
 **Schedule type:** Change triggered
 
@@ -1358,7 +1362,7 @@ For information about configuring an Amazon RDS for PostgreSQL DB cluster to aut
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-mysql-cluster-copy-tags-to-snapshot-check.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-mysql-cluster-copy-tags-to-snapshot-check.html)
+**AWS Config rule:** [rds-mysql-cluster-copy-tags-to-snapshot-check](https://docs.aws.amazon.com/config/latest/developerguide/rds-mysql-cluster-copy-tags-to-snapshot-check.html)
 
 **Schedule type:** Change triggered
 
@@ -1382,7 +1386,7 @@ For information about configuring an Amazon RDS for MySQL DB cluster to automati
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster-backup-retention-check.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster-backup-retention-check.html)
+**AWS Config rule:** [rds-cluster-backup-retention-check](https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster-backup-retention-check.html)
 
 **Schedule type:** Change triggered
 
@@ -1410,7 +1414,7 @@ To configure the backup retention period for an RDS DB cluster, modify the clust
 
 **Resource type:** `AWS::RDS::GlobalCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/rds-global-cluster-aurora-mysql-supported-version.html](https://docs.aws.amazon.com/config/latest/developerguide/rds-global-cluster-aurora-mysql-supported-version.html)
+**AWS Config rule:** [rds-global-cluster-aurora-mysql-supported-version](https://docs.aws.amazon.com/config/latest/developerguide/rds-global-cluster-aurora-mysql-supported-version.html)
 
 **Schedule type:** Change triggered
 

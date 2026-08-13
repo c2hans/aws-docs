@@ -230,7 +230,7 @@ The following is an example of a `DescribeGetMetricData` response payload.
 #### (Optional) Use AWS Secrets Manager to store credentials
 <a name="MultiDataSources-Connect-Custom-Lambda-Secrets"></a>
 
-If your Lambda function needs to use credentials to access the data source, we recommend using AWS Secrets Manager to store these credentials instead of hardcoding them into your Lambda function. For more information about using AWS Secrets Manager with Lambda, see [Use AWS Secrets Manager secrets in AWS Lambda functions](https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrieving-secrets_lambda.html).
+If your Lambda function needs to use credentials to access the data source, use AWS Secrets Manager to store these credentials instead of hardcoding them into your Lambda function. For more information about using AWS Secrets Manager with Lambda, see [Use AWS Secrets Manager secrets in AWS Lambda functions](https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrieving-secrets_lambda.html).
 
 #### (Optional) Connect to a data source in a VPC
 <a name="MultiDataSources-Connect-Custom-Lambda-VPC"></a>

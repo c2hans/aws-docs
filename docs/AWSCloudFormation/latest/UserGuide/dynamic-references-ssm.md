@@ -21,7 +21,7 @@ When using `ssm` dynamic references, there are a few important things to keep in
 ## Permissions
 <a name="dynamic-references-ssm-permissions"></a>
 
-To specify a parameter stored in the Systems Manager Parameter Store, you must have permission to call [https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameter.html](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameter.html) for the specified parameter. To learn how to create IAM policies that provide access to specific Systems Manager parameters, see [Restricting access to Systems Manager parameters using IAM policies](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-paramstore-access.html) in the *AWS Systems Manager User Guide*.
+To specify a parameter stored in the Systems Manager Parameter Store, you must have permission to call [GetParameters](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameter.html) for the specified parameter. To learn how to create IAM policies that provide access to specific Systems Manager parameters, see [Restricting access to Systems Manager parameters using IAM policies](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-paramstore-access.html) in the *AWS Systems Manager User Guide*.
 
 ## Reference pattern
 <a name="dynamic-references-ssm-pattern"></a>

@@ -28,7 +28,7 @@ At a high level, the steps involved in backup and restore are the following:
 + Copy the backup file to an Amazon S3 bucket.
 + Restore the backup from the Amazon S3 bucket onto the target Amazon RDS for SQL Server database.
 
-We use the [https://github.com/aws-samples/aws-database-migration-samples/blob/master/sqlserver/sampledb/v1/README.md](https://github.com/aws-samples/aws-database-migration-samples/blob/master/sqlserver/sampledb/v1/README.md) database in the following example.
+We use the [`dms_sample`](https://github.com/aws-samples/aws-database-migration-samples/blob/master/sqlserver/sampledb/v1/README.md) database in the following example.
 
 ## Perform full backup
 <a name="chap-manageddatabases.sql-server-rds-sql-server-full-load-backup-restore-full-backup"></a>

@@ -13,7 +13,7 @@ When you remove a core node from a core [instance group](https://docs.aws.amazon
 See the following for the possible causes of HDFS replication factor error:
 + If you [ manually resize](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-manage-resize.html) a core instance group or instance fleet below the configured `dfs.replication` factor.
 + Your policies for [ managed scaling](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-scaling.html) or [ autoscaling](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-automatic-scaling.html) might allow for scaling to reduce the number of core nodes below the threshold of `dfs.replication`.
-+ This error can also occur if Amazon EMR tries to [ replace](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-node-replacement.html) an unhealthy core node when a cluster has the minimal number of core nodes defined by []().
++ This error can also occur if Amazon EMR tries to [ replace](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-node-replacement.html) an unhealthy core node when a cluster has the minimal number of core nodes defined by [`dfs.replication`]().
 
 ## Solutions and best practices
 <a name="emr-hdfs-insufficient-replication-best-practices"></a>

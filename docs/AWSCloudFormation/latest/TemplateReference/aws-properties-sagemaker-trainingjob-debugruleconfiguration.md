@@ -1,0 +1,100 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-sagemaker-trainingjob-debugruleconfiguration.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::SageMaker::TrainingJob DebugRuleConfiguration
+<a name="aws-properties-sagemaker-trainingjob-debugruleconfiguration"></a>
+
+Configuration information for SageMaker Debugger rules for debugging. To learn more about how to configure the `DebugRuleConfiguration` parameter, see [Use the SageMaker and Debugger Configuration API Operations to Create, Update, and Debug Your Training Job](https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-createtrainingjob-api.html).
+
+## Syntax
+<a name="aws-properties-sagemaker-trainingjob-debugruleconfiguration-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-sagemaker-trainingjob-debugruleconfiguration-syntax.json"></a>
+
+```
+{
+  "[InstanceType](#cfn-sagemaker-trainingjob-debugruleconfiguration-instancetype)" : {{String}},
+  "[LocalPath](#cfn-sagemaker-trainingjob-debugruleconfiguration-localpath)" : {{String}},
+  "[RuleConfigurationName](#cfn-sagemaker-trainingjob-debugruleconfiguration-ruleconfigurationname)" : {{String}},
+  "[RuleEvaluatorImage](#cfn-sagemaker-trainingjob-debugruleconfiguration-ruleevaluatorimage)" : {{String}},
+  "[RuleParameters](#cfn-sagemaker-trainingjob-debugruleconfiguration-ruleparameters)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[S3OutputPath](#cfn-sagemaker-trainingjob-debugruleconfiguration-s3outputpath)" : {{String}},
+  "[VolumeSizeInGB](#cfn-sagemaker-trainingjob-debugruleconfiguration-volumesizeingb)" : {{Integer}}
+}
+```
+
+### YAML
+<a name="aws-properties-sagemaker-trainingjob-debugruleconfiguration-syntax.yaml"></a>
+
+```
+  [InstanceType](#cfn-sagemaker-trainingjob-debugruleconfiguration-instancetype): {{String}}
+  [LocalPath](#cfn-sagemaker-trainingjob-debugruleconfiguration-localpath): {{String}}
+  [RuleConfigurationName](#cfn-sagemaker-trainingjob-debugruleconfiguration-ruleconfigurationname): {{String}}
+  [RuleEvaluatorImage](#cfn-sagemaker-trainingjob-debugruleconfiguration-ruleevaluatorimage): {{String}}
+  [RuleParameters](#cfn-sagemaker-trainingjob-debugruleconfiguration-ruleparameters): {{
+    {{Key}}: {{Value}}}}
+  [S3OutputPath](#cfn-sagemaker-trainingjob-debugruleconfiguration-s3outputpath): {{String}}
+  [VolumeSizeInGB](#cfn-sagemaker-trainingjob-debugruleconfiguration-volumesizeingb): {{Integer}}
+```
+
+## Properties
+<a name="aws-properties-sagemaker-trainingjob-debugruleconfiguration-properties"></a>
+
+`InstanceType`  <a name="cfn-sagemaker-trainingjob-debugruleconfiguration-instancetype"></a>
+The instance type to deploy a custom rule for debugging a training job.
+*Required*: No
+*Type*: String
+*Allowed values*: `ml.t3.medium | ml.t3.large | ml.t3.xlarge | ml.t3.2xlarge | ml.m4.xlarge | ml.m4.2xlarge | ml.m4.4xlarge | ml.m4.10xlarge | ml.m4.16xlarge | ml.c4.xlarge | ml.c4.2xlarge | ml.c4.4xlarge | ml.c4.8xlarge | ml.p2.xlarge | ml.p2.8xlarge | ml.p2.16xlarge | ml.p3.2xlarge | ml.p3.8xlarge | ml.p3.16xlarge | ml.c5.xlarge | ml.c5.2xlarge | ml.c5.4xlarge | ml.c5.9xlarge | ml.c5.18xlarge | ml.m5.large | ml.m5.xlarge | ml.m5.2xlarge | ml.m5.4xlarge | ml.m5.12xlarge | ml.m5.24xlarge | ml.r5.large | ml.r5.xlarge | ml.r5.2xlarge | ml.r5.4xlarge | ml.r5.8xlarge | ml.r5.12xlarge | ml.r5.16xlarge | ml.r5.24xlarge | ml.g4dn.xlarge | ml.g4dn.2xlarge | ml.g4dn.4xlarge | ml.g4dn.8xlarge | ml.g4dn.12xlarge | ml.g4dn.16xlarge | ml.g5.xlarge | ml.g5.2xlarge | ml.g5.4xlarge | ml.g5.8xlarge | ml.g5.16xlarge | ml.g5.12xlarge | ml.g5.24xlarge | ml.g5.48xlarge | ml.r5d.large | ml.r5d.xlarge | ml.r5d.2xlarge | ml.r5d.4xlarge | ml.r5d.8xlarge | ml.r5d.12xlarge | ml.r5d.16xlarge | ml.r5d.24xlarge | ml.g6.xlarge | ml.g6.2xlarge | ml.g6.4xlarge | ml.g6.8xlarge | ml.g6.12xlarge | ml.g6.16xlarge | ml.g6.24xlarge | ml.g6.48xlarge | ml.g6e.xlarge | ml.g6e.2xlarge | ml.g6e.4xlarge | ml.g6e.8xlarge | ml.g6e.12xlarge | ml.g6e.16xlarge | ml.g6e.24xlarge | ml.g6e.48xlarge | ml.m6i.large | ml.m6i.xlarge | ml.m6i.2xlarge | ml.m6i.4xlarge | ml.m6i.8xlarge | ml.m6i.12xlarge | ml.m6i.16xlarge | ml.m6i.24xlarge | ml.m6i.32xlarge | ml.c6i.xlarge | ml.c6i.2xlarge | ml.c6i.4xlarge | ml.c6i.8xlarge | ml.c6i.12xlarge | ml.c6i.16xlarge | ml.c6i.24xlarge | ml.c6i.32xlarge | ml.m7i.large | ml.m7i.xlarge | ml.m7i.2xlarge | ml.m7i.4xlarge | ml.m7i.8xlarge | ml.m7i.12xlarge | ml.m7i.16xlarge | ml.m7i.24xlarge | ml.m7i.48xlarge | ml.c7i.large | ml.c7i.xlarge | ml.c7i.2xlarge | ml.c7i.4xlarge | ml.c7i.8xlarge | ml.c7i.12xlarge | ml.c7i.16xlarge | ml.c7i.24xlarge | ml.c7i.48xlarge | ml.r7i.large | ml.r7i.xlarge | ml.r7i.2xlarge | ml.r7i.4xlarge | ml.r7i.8xlarge | ml.r7i.12xlarge | ml.r7i.16xlarge | ml.r7i.24xlarge | ml.r7i.48xlarge | ml.p5.4xlarge | ml.g7e.2xlarge | ml.g7e.4xlarge | ml.g7e.8xlarge | ml.g7e.12xlarge | ml.g7e.24xlarge | ml.g7e.48xlarge`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`LocalPath`  <a name="cfn-sagemaker-trainingjob-debugruleconfiguration-localpath"></a>
+Path to local storage location for output of rules. Defaults to `/opt/ml/processing/output/rule/`.
+*Required*: No
+*Type*: String
+*Maximum*: `4096`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`RuleConfigurationName`  <a name="cfn-sagemaker-trainingjob-debugruleconfiguration-ruleconfigurationname"></a>
+The name of the rule configuration. It must be unique relative to other rule configuration names.
+*Required*: Yes
+*Type*: String
+*Pattern*: `.*`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`RuleEvaluatorImage`  <a name="cfn-sagemaker-trainingjob-debugruleconfiguration-ruleevaluatorimage"></a>
+The Amazon Elastic Container (ECR) Image for the managed rule evaluation.
+*Required*: Yes
+*Type*: String
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`RuleParameters`  <a name="cfn-sagemaker-trainingjob-debugruleconfiguration-ruleparameters"></a>
+Runtime configuration for rule container.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.*`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`S3OutputPath`  <a name="cfn-sagemaker-trainingjob-debugruleconfiguration-s3outputpath"></a>
+Path to Amazon S3 storage location for rules.
+*Required*: No
+*Type*: String
+*Pattern*: `^(https|s3)://([^/]+)/?(.*)$`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`VolumeSizeInGB`  <a name="cfn-sagemaker-trainingjob-debugruleconfiguration-volumesizeingb"></a>
+The size, in GB, of the ML storage volume attached to the processing instance.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

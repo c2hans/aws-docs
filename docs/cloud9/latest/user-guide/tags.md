@@ -16,7 +16,7 @@ After the environment is created, you can view the tags that are attached to the
 View or update tags using one or more of the following methods.
 + In the [AWS Cloud9 console](https://console.aws.amazon.com/cloud9/), select the environment you're interested in, and then choose **View Details**.
 ![View the details of an environment.](http://docs.aws.amazon.com/cloud9/latest/user-guide/images/view-details.png)
-+ Use the following AWS Cloud9 CLI commands: [https://docs.aws.amazon.com/cli/latest/reference/cloud9/list-tags-for-resource.html](https://docs.aws.amazon.com/cli/latest/reference/cloud9/list-tags-for-resource.html), [https://docs.aws.amazon.com/cli/latest/reference/cloud9/tag-resource.html](https://docs.aws.amazon.com/cli/latest/reference/cloud9/tag-resource.html), and [https://docs.aws.amazon.com/cli/latest/reference/cloud9/untag-resource.html](https://docs.aws.amazon.com/cli/latest/reference/cloud9/untag-resource.html).
++ Use the following AWS Cloud9 CLI commands: [`list-tags-for-resource`](https://docs.aws.amazon.com/cli/latest/reference/cloud9/list-tags-for-resource.html), [`tag-resource`](https://docs.aws.amazon.com/cli/latest/reference/cloud9/tag-resource.html), and [`untag-resource`](https://docs.aws.amazon.com/cli/latest/reference/cloud9/untag-resource.html).
 + Use the following AWS Cloud9 API actions: [ListTagsForResource](https://docs.aws.amazon.com/cloud9/latest/APIReference/API_ListTagsForResource.html), [TagResource](https://docs.aws.amazon.com/cloud9/latest/APIReference/API_TagResource.html), and [UntagResource](https://docs.aws.amazon.com/cloud9/latest/APIReference/API_UntagResource.html).
 
 **Warning**
@@ -49,7 +49,7 @@ When you update tags to the AWS CloudFormation stack, those updates are automati
 
 1. If you need to update the tags, choose **Update** near the top of the page, and follow the instructions. For more information, see [Updating Stacks Directly](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-direct.html) in the *[AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/)*.
 
-You can also update tags using the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stacks.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stacks.html) and [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack.html) CLI commands.
+You can also update tags using the [`describe-stacks`](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stacks.html) and [`update-stack`](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack.html) CLI commands.
 
 ### Propagating tag updates to the Amazon EC2 instance
 <a name="w2aac33c30c15c13"></a>

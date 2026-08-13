@@ -239,7 +239,7 @@ In the [IAM Console](https://console.aws.amazon.com/iam/), create an IAM role (*
 
 1. Choose **Show policy document** and verify the trust policy shown matches the following policy.
 
-   The following trust policy establishes trust with Account C, by allowing it the `sts:AssumeRole` action. For more information, see [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
+   The following trust policy establishes trust with Account C, by allowing it the `sts:AssumeRole` action. For more information, see [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
 
 ------
 #### [ JSON ]

@@ -104,7 +104,7 @@ You are responsible for the cost of the AWS services used while running this Gui
 
 1. Sign in to the AWS Management Console and select the button to launch the `DataTransferHub-openid.template` AWS CloudFormation template. Alternatively, you can [download the template](https://s3.amazonaws.com/solutions-reference/data-transfer-hub/latest/DataTransferHub-openid.template) as a starting point for your own implementation.
 
-   [https://console.amazonaws.cn/cloudformation/home#/stacks/create/template?stackName=DataTransferHub&templateURL=https://s3.amazonaws.com/solutions-reference/data-transfer-hub/latest/DataTransferHub-openid.template](https://console.amazonaws.cn/cloudformation/home#/stacks/create/template?stackName=DataTransferHub&templateURL=https://s3.amazonaws.com/solutions-reference/data-transfer-hub/latest/DataTransferHub-openid.template)
+   [![Blue oval button with white text reading "Launch solution".](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/launch-solution.png)](https://console.amazonaws.cn/cloudformation/home#/stacks/create/template?stackName=DataTransferHub&templateURL=https://s3.amazonaws.com/solutions-reference/data-transfer-hub/latest/DataTransferHub-openid.template)
 
 1.  The template launches in your console’s default Region. To launch the Guidance in a different AWS Region, use the Region selector in the console navigation bar.
 

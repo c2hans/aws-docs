@@ -13,7 +13,7 @@ The following instructions show how to create an Amazon SageMaker Autopilot job 
 Tasks such as text and image classification, time-series forecasting, and fine-tuning of large language models are exclusively available through the version 2 of the [AutoML REST API](autopilot-reference.md). If your language of choice is Python, you can refer to [AWS SDK for Python (Boto3)](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker/client/create_auto_ml_job_v2.html) or the [AutoMLV2 object](https://sagemaker.readthedocs.io/en/stable/api/training/automlv2.html#sagemaker.automl.automlv2.AutoMLV2) of the Amazon SageMaker Python SDK directly.
 Users who prefer the convenience of a user interface can use [Amazon SageMaker Canvas](https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-getting-started.html) to access pre-trained models and generative AI foundation models, or create custom models tailored for specific text, image classification, forecasting needs, or generative AI.
 
-You can create an Autopilot time-series forecasting experiment programmatically by calling the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateAutoMLJobV2.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateAutoMLJobV2.html) API in any language supported by Amazon SageMaker Autopilot or the AWS CLI.
+You can create an Autopilot time-series forecasting experiment programmatically by calling the [`CreateAutoMLJobV2`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateAutoMLJobV2.html) API in any language supported by Amazon SageMaker Autopilot or the AWS CLI.
 
 For information on how this API action translates into a function in the language of your choice, see the [ See Also](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateAutoMLJobV2.html#API_CreateAutoMLJobV2_SeeAlso) section of `CreateAutoMLJobV2` and choose an SDK. As an example, for Python users, see the full request syntax of `[create\_auto\_ml\_job\_v2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_auto_ml_job_v2)` in AWS SDK for Python (Boto3).
 
@@ -107,7 +107,7 @@ The following is an example of an `AlgorithmsConfig` attribute listing exactly t
   }
 ```
 
-For the list of available algorithms for time-series forecasting, see [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLAlgorithmConfig.html#sagemaker-Type-AutoMLAlgorithmConfig-AutoMLAlgorithms](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLAlgorithmConfig.html#sagemaker-Type-AutoMLAlgorithmConfig-AutoMLAlgorithms). For details on each algorithm, see [Algorithms support for time-series forecasting](timeseries-forecasting-algorithms.md).
+For the list of available algorithms for time-series forecasting, see [`AutoMLAlgorithms`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLAlgorithmConfig.html#sagemaker-Type-AutoMLAlgorithmConfig-AutoMLAlgorithms). For details on each algorithm, see [Algorithms support for time-series forecasting](timeseries-forecasting-algorithms.md).
 
 ### How to specify custom quantiles
 <a name="timeseries-forecasting-custom-quantiles"></a>

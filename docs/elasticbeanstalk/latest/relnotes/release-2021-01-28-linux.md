@@ -17,16 +17,27 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **January 26, 2021** to all Amazon Linux AMI platforms. The release fixes a recently discovered vulnerability in the `sudo` application. For more information, see [ALAS-2021-1478](https://alas.aws.amazon.com/ALAS-2021-1478.html). Red Hat has categorized this issue as *Important impact*. Update your environments as soon as possible. <br />The **Go**, **Tomcat**, and **Node.js** releases are security releases. For more information, see **Platform-specific updates** in this table. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2021-01-28-linux.html) |
-| **Multicontainer Docker** | Updated the ECS agent to version 1.50.0. |
-| **Go** | Updated Go to release 1.15.7. For details, see [go1.15](https://golang.org/doc/devel/release.html#go1.15) in *The Go Programming Language Release History*.<br />The **Go 1.15.7** release is a security release. |
-| **Java SE**, **Tomcat** | Updated Java 8 to OpenJDK Version 1.8.0.272.<br />Updated Tomcat 8.5 to [Tomcat 8.5.60](https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.60_(markt)).<br />Updated Tomcat 7 to [Tomcat 7.0.107](https://tomcat.apache.org/tomcat-7.0-doc/changelog.html#Tomcat_7.0.107_(violetagg)).<br />The **Tomcat 8.5.60** release is a security release. For more information, see [CVE-2020-13943](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13943), [CVE-2020-17527](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-17527). |
-| **Node.js** | Updated the Node.js platform to add support for Node versions [12.20.1](https://nodejs.org/en/blog/release/v12.20.1/) and [10.23.1](https://nodejs.org/en/blog/release/v10.23.1/).<br />The new Node.js versions are security releases. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>January 26, 2021</b> to all Amazon Linux AMI platforms. The release fixes a recently discovered vulnerability in the <code>sudo</code> application. For more information, see <a href="https://alas.aws.amazon.com/ALAS-2021-1478.html">ALAS-2021-1478</a>. Red Hat has categorized this issue as <i>Important impact</i>. Update your environments as soon as possible. <br />The <b>Go</b>, <b>Tomcat</b>, and <b>Node.js</b> releases are security releases. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Multicontainer Docker</b></td><td>Updated the ECS agent to version 1.50.0.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated Go to release 1.15.7. For details, see <a href="https://golang.org/doc/devel/release.html#go1.15">go1.15</a> in <i>The Go Programming Language Release History</i>.<br />The <b>Go 1.15.7</b> release is a security release.</td></tr>
+  <tr><td><b>Java SE</b>, <b>Tomcat</b></td><td>Updated Java 8 to OpenJDK Version 1.8.0.272.<br />Updated Tomcat 8.5 to <a href="https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.60_(markt)">Tomcat 8.5.60</a>.<br />Updated Tomcat 7 to <a href="https://tomcat.apache.org/tomcat-7.0-doc/changelog.html#Tomcat_7.0.107_(violetagg)">Tomcat 7.0.107</a>.<br />The <b>Tomcat 8.5.60</b> release is a security release. For more information, see <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13943">CVE-2020-13943</a>, <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-17527">CVE-2020-17527</a>.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform to add support for Node versions <a href="https://nodejs.org/en/blog/release/v12.20.1/">12.20.1</a> and <a href="https://nodejs.org/en/blog/release/v10.23.1/">10.23.1</a>.<br />The new Node.js versions are security releases.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2021-01-28-linux.platforms"></a>

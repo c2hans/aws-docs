@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[Endpoint](#cfn-bedrockagentcore-gatewaytarget-mcpservertargetconfiguration-endpoint)" : {{String}},
   "[ListingMode](#cfn-bedrockagentcore-gatewaytarget-mcpservertargetconfiguration-listingmode)" : {{String}},
   "[McpToolSchema](#cfn-bedrockagentcore-gatewaytarget-mcpservertargetconfiguration-mcptoolschema)" : {{McpToolSchemaConfiguration}},
-  "[ResourcePriority](#cfn-bedrockagentcore-gatewaytarget-mcpservertargetconfiguration-resourcepriority)" : {{Integer}}
+  "[ResourcePriority](#cfn-bedrockagentcore-gatewaytarget-mcpservertargetconfiguration-resourcepriority)" : {{Number}}
 }
 ```
 
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [ListingMode](#cfn-bedrockagentcore-gatewaytarget-mcpservertargetconfiguration-listingmode): {{String}}
   [McpToolSchema](#cfn-bedrockagentcore-gatewaytarget-mcpservertargetconfiguration-mcptoolschema): {{
     McpToolSchemaConfiguration}}
-  [ResourcePriority](#cfn-bedrockagentcore-gatewaytarget-mcpservertargetconfiguration-resourcepriority): {{Integer}}
+  [ResourcePriority](#cfn-bedrockagentcore-gatewaytarget-mcpservertargetconfiguration-resourcepriority): {{Number}}
 ```
 
 ## Properties
@@ -63,7 +63,7 @@ The tool schema configuration for the MCP server target. Supported only when the
 `ResourcePriority`  <a name="cfn-bedrockagentcore-gatewaytarget-mcpservertargetconfiguration-resourcepriority"></a>
 Priority for resolving MCP server targets with shared resource URIs. Lower values take precedence. Defaults to 1000 when not set.
 *Required*: No
-*Type*: Integer
+*Type*: Number
 *Minimum*: `0`
 *Maximum*: `1000`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

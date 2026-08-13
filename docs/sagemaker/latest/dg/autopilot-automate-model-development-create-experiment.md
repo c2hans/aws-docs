@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-m
 # Create Regression or Classification Jobs for Tabular Data Using the AutoML API
 <a name="autopilot-automate-model-development-create-experiment"></a>
 
-You can create an Autopilot regression or classification job for tabular data programmatically by calling the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateAutoMLJobV2.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateAutoMLJobV2.html) API action in any language supported by Autopilot or the AWS CLI. The following is a collection of mandatory and optional input request parameters for the `CreateAutoMLJobV2` API action. You can find the alternative information for the previous version of this action, `CreateAutoMLJob`. However, we recommend using `CreateAutoMLJobV2`.
+You can create an Autopilot regression or classification job for tabular data programmatically by calling the [`CreateAutoMLJobV2`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateAutoMLJobV2.html) API action in any language supported by Autopilot or the AWS CLI. The following is a collection of mandatory and optional input request parameters for the `CreateAutoMLJobV2` API action. You can find the alternative information for the previous version of this action, `CreateAutoMLJob`. However, we recommend using `CreateAutoMLJobV2`.
 
 For information on how this API action translates into a function in the language of your choice, see the [ See Also](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateAutoMLJobV2.html#API_CreateAutoMLJobV2_SeeAlso) section of `CreateAutoMLJobV2` and choose an SDK. As an example, for Python users, see the full request syntax of `[create\_auto\_ml\_job\_v2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_auto_ml_job_v2)` in AWS SDK for Python (Boto3).
 
@@ -168,7 +168,7 @@ The following is an example of an `AlgorithmsConfig` attribute listing exactly t
 
 ------
 
-For the list of available algorithms per training `Mode`, see [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLAlgorithmConfig.html#sagemaker-Type-AutoMLAlgorithmConfig-AutoMLAlgorithms](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLAlgorithmConfig.html#sagemaker-Type-AutoMLAlgorithmConfig-AutoMLAlgorithms). For details on each algorithm, see [Training modes and algorithm support](autopilot-model-support-validation.md).
+For the list of available algorithms per training `Mode`, see [`AutoMLAlgorithms`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLAlgorithmConfig.html#sagemaker-Type-AutoMLAlgorithmConfig-AutoMLAlgorithms). For details on each algorithm, see [Training modes and algorithm support](autopilot-model-support-validation.md).
 
 ### How to specify the training and validation datasets of an AutoML job
 <a name="autopilot-data-sources-training-or-validation"></a>
@@ -178,22 +178,22 @@ You can provide your own validation dataset and custom data split ratio, or let 
 ------
 #### [ CreateAutoMLJobV2 ]
 
-Each [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLJobChannel.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLJobChannel.html) object (see the required parameter [AutoMLJobInputDataConfig](https://docs.aws.amazon.com/sagemaker-api/src/AWSSageMakerAPIDoc/build/server-root/sagemaker/latest/APIReference/API_CreateAutoMLJobV2.html#sagemaker-CreateAutoMLJobV2-request-AutoMLJobInputDataConfig)) has a `ChannelType`, which can be set to either `training` or `validation` values that specify how the data is to be used when building a machine learning model. At least one data source must be provided and a maximum of two data sources is allowed: one for training data and one for validation data.
+Each [`AutoMLJobChannel`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLJobChannel.html) object (see the required parameter [AutoMLJobInputDataConfig](https://docs.aws.amazon.com/sagemaker-api/src/AWSSageMakerAPIDoc/build/server-root/sagemaker/latest/APIReference/API_CreateAutoMLJobV2.html#sagemaker-CreateAutoMLJobV2-request-AutoMLJobInputDataConfig)) has a `ChannelType`, which can be set to either `training` or `validation` values that specify how the data is to be used when building a machine learning model. At least one data source must be provided and a maximum of two data sources is allowed: one for training data and one for validation data.
 
 How you split the data into training and validation datasets depends on whether you have one or two data sources.
 + If you only have **one data source**, the `ChannelType` is set to `training` by default and must have this value.
-  + If the `ValidationFraction` value in [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLDataSplitConfig.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLDataSplitConfig.html) is not set, 0.2 (20%) of the data from this source is used for validation by default.
+  + If the `ValidationFraction` value in [`AutoMLDataSplitConfig`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLDataSplitConfig.html) is not set, 0.2 (20%) of the data from this source is used for validation by default.
   + If the `ValidationFraction` is set to a value between 0 and 1, the dataset is split based on the value specified, where the value specifies the fraction of the dataset used for validation.
 + If you have **two data sources**, the `ChannelType` of one of the `AutoMLJobChannel` objects must be set to `training`, the default value. The `ChannelType` of the other data source must be set to `validation`. The two data sources must have the same format, either CSV or Parquet, and the same schema. You must not set the value for the `ValidationFraction` in this case because all of the data from each source is used for either training or validation. Setting this value causes an error.
 
 ------
 #### [ CreateAutoMLJob ]
 
-Each [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLChannel.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLChannel.html) object (see the required parameter [InputDataConfig](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateAutoMLJob.html#sagemaker-CreateAutoMLJob-request-InputDataConfig)) has a `ChannelType`, which can be set to either `training` or `validation` values that specify how the data is to be used when building a machine learning model. At least one data source must be provided and a maximum of two data sources is allowed: one for training data and one for validation data.
+Each [`AutoMLChannel`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLChannel.html) object (see the required parameter [InputDataConfig](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateAutoMLJob.html#sagemaker-CreateAutoMLJob-request-InputDataConfig)) has a `ChannelType`, which can be set to either `training` or `validation` values that specify how the data is to be used when building a machine learning model. At least one data source must be provided and a maximum of two data sources is allowed: one for training data and one for validation data.
 
 How you split the data into training and validation datasets depends on whether you have one or two data sources.
 + If you only have **one data source**, the `ChannelType` is set to `training` by default and must have this value.
-  + If the `ValidationFraction` value in [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLDataSplitConfig.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLDataSplitConfig.html) is not set, 0.2 (20%) of the data from this source is used for validation by default.
+  + If the `ValidationFraction` value in [`AutoMLDataSplitConfig`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLDataSplitConfig.html) is not set, 0.2 (20%) of the data from this source is used for validation by default.
   + If the `ValidationFraction` is set to a value between 0 and 1, the dataset is split based on the value specified, where the value specifies the fraction of the dataset used for validation.
 + If you have **two data sources**, the `ChannelType` of one of the `AutoMLChannel` objects must be set to `training`, the default value. The `ChannelType` of the other data source must be set to `validation`. The two data sources must have the same format, either CSV or Parquet, and the same schema. You must not set the value for the `ValidationFraction` in this case because all of the data from each source is used for either training or validation. Setting this value causes an error.
 

@@ -81,7 +81,7 @@ If you use the console and choose to create a new IAM role, Amazon Q creates the
 ## Creating a plugin
 <a name="jira-plugin-create"></a>
 
-To create a Jira plugin for your web experience chat, you can use the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreatePlugin.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreatePlugin.html) API operation. The following tabs provide a procedure to create a Jira plugin using the console and code examples for the AWS CLI.
+To create a Jira plugin for your web experience chat, you can use the AWS Management Console or the [CreatePlugin](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreatePlugin.html) API operation. The following tabs provide a procedure to create a Jira plugin using the console and code examples for the AWS CLI.
 
 ------
 #### [ Console ]

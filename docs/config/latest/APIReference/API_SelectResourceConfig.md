@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_SelectRes
 
 Accepts a structured query language (SQL) `SELECT` command, performs the corresponding search, and returns resource configurations matching the properties.
 
-For more information about query components, see the [https://docs.aws.amazon.com/config/latest/developerguide/query-components.html](https://docs.aws.amazon.com/config/latest/developerguide/query-components.html) section in the * AWS Config Developer Guide*.
+For more information about query components, see the [**Query Components**](https://docs.aws.amazon.com/config/latest/developerguide/query-components.html) section in the * AWS Config Developer Guide*.
 
 ## Request Syntax
 <a name="API_SelectResourceConfig_RequestSyntax"></a>

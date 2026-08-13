@@ -48,7 +48,7 @@ For information on the ranges of allocated storage and Provisioned IOPS availabl
 ## AWS CLI
 <a name="User_PIOPS.Increase.cli"></a>
 
-To change the Provisioned IOPS setting for a DB instance, use the AWS CLI command [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html). Set the following parameters:
+To change the Provisioned IOPS setting for a DB instance, use the AWS CLI command [`modify-db-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html). Set the following parameters:
 + `--storage-type` – Set to `io1` or `io2` for Provisioned IOPS.
 + `--allocated-storage` – Amount of storage to be allocated for the DB instance, in gibibytes.
 + `--iops` – The new amount of Provisioned IOPS for the DB instance, expressed in I/O operations per second.
@@ -57,7 +57,7 @@ To change the Provisioned IOPS setting for a DB instance, use the AWS CLI comman
 ## RDS API
 <a name="User_PIOPS.Increase.api"></a>
 
-To change the Provisioned IOPS settings for a DB instance, use the Amazon RDS API operation [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html). Set the following parameters:
+To change the Provisioned IOPS settings for a DB instance, use the Amazon RDS API operation [`ModifyDBInstance`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html). Set the following parameters:
 + `StorageType` – Set to `io1` or `io2` for Provisioned IOPS.
 + `AllocatedStorage` – Amount of storage to be allocated for the DB instance, in gibibytes.
 + `Iops` – The new IOPS rate for the DB instance, expressed in I/O operations per second.

@@ -71,7 +71,7 @@ Before you can initialize the cluster, you must download and sign a certificate 
 
 **To get the CSR (AWS CloudHSM API)**
 
-1. Send a [https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DescribeClusters.html](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DescribeClusters.html) request.
+1. Send a [DescribeClusters](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DescribeClusters.html) request.
 
 1. Extract and save the CSR from the response.
 
@@ -529,7 +529,7 @@ Use your signed HSM certificate and your signing certificate to initialize your 
 #### [ AWS CloudHSM API ]
 
 **To initialize a cluster (AWS CloudHSM API)**
-+ Send an [https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_InitializeCluster.html](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_InitializeCluster.html) request with the following:
++ Send an [InitializeCluster](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_InitializeCluster.html) request with the following:
   + The ID of the cluster that you created previously.
   + The HSM certificate that you signed previously. If you completed the steps in the previous section, it's saved in a file named `{{<cluster ID>}}_CustomerHsmCertificate.crt`.
   + Your signing certificate based on the approach you chose:

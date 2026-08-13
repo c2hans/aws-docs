@@ -20,7 +20,7 @@ When you send a request to the `AgenticRetrieveStream` API, the following proces
 
 1. **Full document expansion** – When the foundation model determines that the full content of a document is needed (e.g., for summarization, to verify completeness, or to access specific sections), it calls the GetDocumentContent API to retrieve the complete document content.
 
-1. **Response generation** – When `generateResponse` is set to `true` (the default), the foundation model synthesizes a natural-language answer from the retrieved results. The answer is streamed back to you via `responseEvent` events.
+1. **Response generation** – When `generateResponse` is set to `true` (the default), the foundation model synthesizes a natural-language answer from the retrieved results. The answer is streamed back to you through `responseEvent` events.
 
 1. **Result event** – The deduplicated retrieval results from all iterations, the full synthesized natural-language answer and citations are returned to you. Trace events are streamed throughout the process for observability.
 
@@ -35,7 +35,7 @@ Before you can use agentic retrieval, you must have the following:
 ## Query a knowledge base with agentic retrieval
 <a name="kb-agentic-retrieve-api"></a>
 
-To use agentic retrieval, send an [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_AgenticRetrieveStream.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_AgenticRetrieveStream.html) request. The response is a stream that includes retrieval results and trace events.
+To use agentic retrieval, send an [`AgenticRetrieveStream`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_AgenticRetrieveStream.html) request. The response is a stream that includes retrieval results and trace events.
 
 The following table describes the key request fields:
 
@@ -55,7 +55,7 @@ The following table describes the key request fields:
 | userContext | Provides a user context for access control filtering. |
 | generateResponse | A boolean field that, when set to true (the default), instructs the foundation model to generate a natural-language answer from the retrieved results. The answer is streamed back as text chunks and included in the result event. |
 
-For the full request and response syntax, see [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_AgenticRetrieveStream.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_AgenticRetrieveStream.html) in the API reference.
+For the full request and response syntax, see [`AgenticRetrieveStream`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_AgenticRetrieveStream.html) in the API reference.
 
 ## Agentic retrieval response
 <a name="kb-agentic-retrieve-response"></a>

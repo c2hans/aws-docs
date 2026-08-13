@@ -16,7 +16,7 @@ aws s3tables get-table-maintenance-job-status \
    --namespace="{{mynamespace}}" \
    --name="{{testtable}}"
 ```
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3tables/get-table-maintenance-job-status.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3tables/get-table-maintenance-job-status.html) in the *AWS CLI Command Reference*.
+For more information, see [get-table-maintenance-job-status](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3tables/get-table-maintenance-job-status.html) in the *AWS CLI Command Reference*.
 
 S3 Tables maintenance jobs can transition between four possible statuses:
 + `Successful`

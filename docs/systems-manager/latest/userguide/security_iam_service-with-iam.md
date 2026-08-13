@@ -113,7 +113,7 @@ The following tools in AWS Systems Manager use different prefixes before actions
 AWS AppConfig uses the prefix `appconfig:` before actions.
 Incident Manager uses the prefix `ssm-incidents:` or `ssm-contacts:` before actions.
 Systems Manager GUI Connect uses the prefix `ssm-guiconnect` before actions.
-Documents and automation definition resources that are owned by Amazon, as well as public parameters that are provided by both Amazon and third-party sources, do not include account IDs in their ARN formats. For example:
+Documents and automation definition resources that are owned by Amazon, and public parameters that are provided by both Amazon and third-party sources, do not include account IDs in their ARN formats. For example:
 The SSM document `AWS-RunPatchBaseline`:
 `arn:aws:ssm:us-east-2::document/AWS-RunPatchBaseline`
 The automation runbook `AWS-ConfigureMaintenanceWindows`:
@@ -150,11 +150,11 @@ Quick Setup uses the prefix `ssm-quicksetup:` before actions.
 | All Systems Manager resources owned by the specified AWS account in the specified AWS Region | arn:aws:ssm:{{region}}:{{account-id}}:\* |
 
 **Note**
-Automation definition resources are being deprecated. Please update your IAM policies to include an allow for `ssm:StartAutomationExecution` or `ssm:StartChangeRequestExecution` on `document` and `automation-execution` resources. To view best practices and examples for setting up IAM permissions, refer to our [Setting up identity based policies example](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup-identity-based-policies.html) user guide.
+Automation definition resources are being deprecated. Update your IAM policies to include an allow for `ssm:StartAutomationExecution` or `ssm:StartChangeRequestExecution` on `document` and `automation-execution` resources. To view best practices and examples for setting up IAM permissions, refer to our [Setting up identity based policies example](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup-identity-based-policies.html) user guide.
 
-**1** For automation definitions, Systems Manager supports a second-level resource, *version ID*. In AWS, these second-level resources are known as *subresources*. Specifying a version subresource for an automation definition resource allows you to provide access to certain versions of an automation definition. For example, you might want to ensure that only the latest version of an automation definition is used in your node management.
+**1** For automation definitions, Systems Manager supports a second-level resource, *version ID*. In AWS, these second-level resources are known as *subresources*. Specifying a version subresource for an automation definition resource lets you provide access to certain versions of an automation definition. For example, you might want to make sure that only the latest version of an automation definition is used in your node management.
 
-**2** To organize and manage parameters, you can create names for parameters with a hierarchical construction. With hierarchical construction, a parameter name can include a path that you define by using forward slashes. You can name a parameter resource with a maximum of fifteen levels. We suggest that you create hierarchies that reflect an existing hierarchical structure in your environment. For more information, see [Creating Parameter Store parameters in Systems Manager](sysman-paramstore-su-create.md).
+**2** To organize and manage parameters, you can create names for parameters with a hierarchical construction. With hierarchical construction, a parameter name can include a path that you define by using forward slashes. You can name a parameter resource with a maximum of fifteen levels. We recommend that you create hierarchies that reflect an existing hierarchical structure in your environment. For more information, see [Creating Parameter Store parameters in Systems Manager](sysman-paramstore-su-create.md).
 
 **3** In most cases, the session ID is constructed using the ID of the account user who started the session, plus an alphanumeric suffix. For example:
 
@@ -242,7 +242,7 @@ Systems Manager supports service roles.
 ### Choosing an IAM role in Systems Manager
 <a name="security_iam_service-with-iam-roles-choose"></a>
 
-For Systems Manager to interact with your managed nodes, you must choose a role to allow Systems Manager to access nodes on your behalf. If you have previously created a service role or service-linked role, then Systems Manager provides you with a list of roles to choose from. It's important to choose a role that allows access to start and stop managed nodes.
+For Systems Manager to interact with your managed nodes, you must choose a role to allow Systems Manager to access nodes on your behalf. If you have previously created a service role or service-linked role, then Systems Manager gives you a list of roles to choose from. It's important to choose a role that allows access to start and stop managed nodes.
 
 To access EC2 instances, you must configure instance permissions. For information, see [Configure instance permissions required for Systems Manager](setup-instance-permissions.md).
 

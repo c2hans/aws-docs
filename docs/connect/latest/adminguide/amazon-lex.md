@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/amazon-lex.htm
 
 In this article we guide you through the steps to add an Amazon Lex bot to Connect Customer.
 
-With Amazon Lex, you can build conversational interactions (bots) that feel natural to your customers. Connect Customer with Amazon Lex bots can also capture customer input as digits that customers enter on their numeric keypad when used in an Connect Customer flow. This way customers can choose how they want to enter sensitive information such as account numbers.
+With Amazon Lex, you can build conversational interactions (bots) that feel natural to your customers. Connect Customer with Amazon Lex bots can also capture customer input as digits that customers enter on their numeric keypad when used in a Connect Customer flow. This way customers can choose how they want to enter sensitive information such as account numbers.
 
 To follow along with this walkthrough, you need the following:
 + An active AWS account.

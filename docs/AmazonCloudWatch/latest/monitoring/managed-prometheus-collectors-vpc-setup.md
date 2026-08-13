@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/manag
 # VPC-connected managed collector
 <a name="managed-prometheus-collectors-vpc-setup"></a>
 
-The VPC-connected Amazon CloudWatch managed Prometheus collector scrapes Prometheus-compatible metrics from any resource reachable within your VPC — Amazon EC2 instances and Amazon ECS tasks. You provide subnets and a security group; the collector creates ENIs and scrapes Prometheus `/metrics` endpoints according to your configuration.
+The VPC-connected Amazon CloudWatch managed Prometheus collector scrapes Prometheus-compatible metrics from any resource reachable within your VPC — Amazon EC2 instances and Amazon ECS tasks. You provide subnets and a security group; the collector creates elastic network interfaces (ENIs) and scrapes Prometheus `/metrics` endpoints according to your configuration.
 
 For detailed, workload-specific walkthroughs, see the CloudWatch observability solutions for Prometheus metric collection: [Amazon CloudWatch solution: Prometheus metric collection on Amazon Amazon EC2](Solution-Prometheus-On-EC2.md) and [Amazon CloudWatch solution: Prometheus metric collection on Amazon ECS](Solution-Prometheus-On-ECS.md).
 
@@ -17,22 +17,13 @@ This procedure assumes familiarity with Amazon VPC subnets, security groups, and
 + At least two subnets in different Availability Zones
 + Security group allowing the collector to reach your target exporter ports
 + Targets that expose a Prometheus-compatible `/metrics` endpoint
-+ An interface VPC endpoint for CloudWatch if you deploy the collector in private subnets that have no internet access. The collector delivers metrics to CloudWatch through this endpoint. For more information, see [Configure VPC endpoints for private subnets](#managed-prometheus-collectors-vpc-endpoints).
 
-## Configure VPC endpoints for private subnets
-<a name="managed-prometheus-collectors-vpc-endpoints"></a>
-
-A managed collector delivers the metrics it scrapes to your CloudWatch dataset over the AWS network, without traversing the public internet. When you deploy the collector in private subnets that have no route to the internet, you must create an interface VPC endpoint so that the collector can reach the CloudWatch API. Without this endpoint, the collector can scrape your targets but cannot deliver the metrics to CloudWatch.
-
-Create an interface VPC endpoint for the CloudWatch service (`com.amazonaws.{{region}}.monitoring`) in the same VPC and subnets that you assign to the collector. Associate a security group that allows inbound HTTPS (port 443) from the collector's security group. For step-by-step instructions, see [Using CloudWatch and interface VPC endpoints](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-and-interface-VPC.html).
-
-**Note**
-If your subnets reach the internet through a NAT gateway, the collector can deliver metrics to CloudWatch without a VPC endpoint. However, we recommend an interface VPC endpoint so that traffic to CloudWatch stays within the AWS network.
+The collector delivers scraped metrics to CloudWatch over the AWS network, without traversing the public internet. The subnets and security groups that you specify provide connectivity to your scrape targets; they do not provide the CloudWatch delivery path. You do not need to configure internet access, a NAT gateway, or a CloudWatch interface VPC endpoint in your VPC for metric delivery.
 
 ## Create a scraper
 <a name="managed-prometheus-collectors-vpc-create-scraper"></a>
 
-You can use [https://docs.aws.amazon.com/prometheus/latest/APIReference/API_GetDefaultScraperConfiguration.html](https://docs.aws.amazon.com/prometheus/latest/APIReference/API_GetDefaultScraperConfiguration.html) to retrieve a general-purpose scraper configuration, or provide your own.
+You can use [GetDefaultScraperConfiguration](https://docs.aws.amazon.com/prometheus/latest/APIReference/API_GetDefaultScraperConfiguration.html) to retrieve a general-purpose scraper configuration, or provide your own.
 
 ------
 #### [ AWS API ]
@@ -152,7 +143,6 @@ For alternative cross-account scraper configurations, see [Cross-account scraper
 
 ## Security best practices
 <a name="managed-prometheus-collectors-vpc-security"></a>
-+ Deploy scrapers in private subnets without direct internet access.
-+ Use an interface VPC endpoint for CloudWatch connectivity so that metric delivery stays within the AWS network. For private subnets without internet access, this endpoint is required. For more information, see [Configure VPC endpoints for private subnets](#managed-prometheus-collectors-vpc-endpoints).
++ Specify private subnets without direct internet access for the collector ENIs.
 + Restrict security group ingress to the scraper security group on specific exporter ports only.
 + Enable TLS encryption in transit for all exporter endpoints where possible.

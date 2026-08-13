@@ -177,7 +177,7 @@ To view the Buy with AWS metrics dashboard:
 
 1. Choose **Buy with AWS**
 
-Alternatively, sellers that have linked their accounts can access metrics through AWS Partner Central. To view these metrics, log in to [https://partnercentral.awspartner.com/partnercentral2/s/login?startURL=%2Fhome](https://partnercentral.awspartner.com/partnercentral2/s/login?startURL=%2Fhome) and navigate to the **Analytics** section.
+Alternatively, sellers that have linked their accounts can access metrics through AWS Partner Central. To view these metrics, log in to [**AWS Partner Central**](https://partnercentral.awspartner.com/partnercentral2/s/login?startURL=%2Fhome) and navigate to the **Analytics** section.
 
 ## Linking directly to your product on AWS Marketplace
 <a name="linking-directly-to-your-product-on-aws-marketplace"></a>

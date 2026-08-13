@@ -8,8 +8,8 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/userguide/channels-voice
 <a name="channels-voice"></a>
 
 **Note**
-Amazon Pinpoint has updated their user guide documentation. To get the latest information regarding how to create, configure, and manage your AWS End User Messaging SMS and voice resources, see the new [https://docs.aws.amazon.com//sms-voice/latest/userguide/what-is-service.html](https://docs.aws.amazon.com//sms-voice/latest/userguide/what-is-service.html).
-The following topics have been moved to the new [https://docs.aws.amazon.com//sms-voice/latest/userguide/what-is-service.html](https://docs.aws.amazon.com//sms-voice/latest/userguide/what-is-service.html).
+Amazon Pinpoint has updated their user guide documentation. To get the latest information regarding how to create, configure, and manage your AWS End User Messaging SMS and voice resources, see the new [*AWS End User Messaging SMS User Guide*](https://docs.aws.amazon.com//sms-voice/latest/userguide/what-is-service.html).
+The following topics have been moved to the new [*AWS End User Messaging SMS User Guide*](https://docs.aws.amazon.com//sms-voice/latest/userguide/what-is-service.html).
 [Amazon Pinpoint voice sandbox](https://docs.aws.amazon.com//sms-voice/latest/userguide/sandbox.html#sandbox-voice)
 [Supported countries and regions (voice channel)](https://docs.aws.amazon.com//sms-voice/latest/userguide/phone-numbers-voice-support-by-country.html)
 [Managing Pools in Amazon Pinpoint](https://docs.aws.amazon.com//sms-voice/latest/userguide/phone-pool.html)

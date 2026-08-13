@@ -583,7 +583,7 @@ Consider a situation where you want to all users who can assume a role to use th
 }
 ```
 
-Then, to enforce this requirement, you can use a policy statement like the one in the following example. This policy statement gives the `TestTeam` role permission to encrypt and decrypt data with the KMS key. However, the permission is valid only when the encryption context in the request includes a `"user": "{{<username>}}"` pair. To represent the user name, the condition uses the [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_variables.html#policy-vars-infotouse](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_variables.html#policy-vars-infotouse) policy variable.
+Then, to enforce this requirement, you can use a policy statement like the one in the following example. This policy statement gives the `TestTeam` role permission to encrypt and decrypt data with the KMS key. However, the permission is valid only when the encryption context in the request includes a `"user": "{{<username>}}"` pair. To represent the user name, the condition uses the [`aws:username`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_variables.html#policy-vars-infotouse) policy variable.
 
 When the request is evaluated, the caller's user name replaces the variable in the condition. As such, the condition requires an encryption context of `"user": "bob"` for "bob" and `"user": "alice"` for "alice."
 
@@ -1556,7 +1556,7 @@ The following example key policy statement allows a user to create grants for th
 | --- | --- | --- | --- | --- |
 | `kms:GrantConstraintSourceArn` | ARN | Single-valued | `CreateGrant` | Key policies and IAM policies |
 
-You can use this condition key to control access to the [CreateGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) operation based on the `SourceArn` value in the [Constraints](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html#KMS-CreateGrant-request-Constraints) parameter of the request. The `SourceArn` grant constraint is effectively putting an [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) global condition key into the grant.
+You can use this condition key to control access to the [CreateGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) operation based on the `SourceArn` value in the [Constraints](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html#KMS-CreateGrant-request-Constraints) parameter of the request. The `SourceArn` grant constraint is effectively putting an [aws:SourceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) global condition key into the grant.
 
 The following example key policy statement uses the `kms:GrantConstraintSourceArn` condition key to allow creating grants for a KMS key only when the `SourceArn` constraint in the grant matches a specific DynamoDB table ARN pattern.
 

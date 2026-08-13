@@ -460,7 +460,7 @@ When Amazon Connect AI Agents generate text that will be spoken, add these speec
 These prompts are templates to get you started. Modify them for your specific use case, tone, and business requirements.
 
 **Tip**
-For guidance on optimizing your AI agent prompt for voice performance and latency, see [Prompt engineering best practices for Connect AI agents](agentic-self-service-prompt-best-practices.md).
+For guidance on optimizing your AI agent prompt for voice performance and latency, see [Prompt engineering best practices for AI agents](agentic-self-service-prompt-best-practices.md).
 
 **Speech output formatting prompt**
 

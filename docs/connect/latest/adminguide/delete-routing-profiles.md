@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/delete-routing-profiles.html
 ---
 
-# Delete a routing profile from an Connect Customer instance
+# Delete a routing profile from a Connect Customer instance
 <a name="delete-routing-profiles"></a>
 
 There are three ways to delete a routing profile from your Connect Customer instance:

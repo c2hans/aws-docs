@@ -62,13 +62,13 @@ We recommend that you allow only administrative users to create any service role
    :wq
    ```
 
-1. Enter the following command to create the role and attach the trust role policy. The policy name format is normally the same as the role name format. This examples uses the role name `MyRole` and the policy `TrustPolicy` that was created as a separate file.
+1. Enter the following command to create the role and attach the trust role policy. The policy name format is normally the same as the role name format. This example uses the role name `MyRole` and the policy `TrustPolicy` that was created as a separate file.
 
    ```
    aws iam create-role --role-name MyRole --assume-role-policy-document file://TrustPolicy.json
    ```
 
-1. Enter the following command to create the role policy and attach it to the role. The policy name format is normally the same as the role name format. This examples uses the role name `MyRole` and the policy `MyRole` that was created as a separate file.
+1. Enter the following command to create the role policy and attach it to the role. The policy name format is normally the same as the role name format. This example uses the role name `MyRole` and the policy `MyRole` that was created as a separate file.
 
    ```
    aws iam put-role-policy --role-name MyRole --policy-name RolePolicy --policy-document file://RolePolicy.json

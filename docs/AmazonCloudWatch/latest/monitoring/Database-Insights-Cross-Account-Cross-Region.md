@@ -41,7 +41,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Datab
 
  After you set up Database Insights for cross-account cross-region support, you can enable "Cross-account cross-region mode" in the **Filters** section of the left panel, right under **Database Views**. You will see a toggle button located on the top left corner, like in the screenshot below.
 
-![Filters panel with Enable cross-account cross-region mode toggle, region selector showing us-east-1, and account filter options.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/database-insights-enable-cross-account-toggle.png)
+![Filters panel with cross-account cross-region mode toggle, region selector, and account filters.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/database-insights-enable-cross-account-toggle.png)
 
  Once cross-account cross-region mode is enabled, new Filters are available, which allow you to select multiple regions and to filter by AWS Account IDs and labels, database resource types, and database resource identifiers.
 

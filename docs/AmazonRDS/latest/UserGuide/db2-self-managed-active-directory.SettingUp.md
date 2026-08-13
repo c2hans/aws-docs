@@ -266,8 +266,8 @@ We recommend that you use the `aws:sourceAccount` and `aws:sourceArn` conditions
 <a name="db2-self-managed-active-directory.SettingUp.CreateModify"></a>
 
 You can use the AWS CLI to associate an RDS for Db2 DB instance with a self-managed AD domain. You can do this in one of the following ways:
-+ Create a new Db2 DB instance using the [https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html) CLI command. For instructions, see [Creating an Amazon RDS DB instance](USER_CreateDBInstance.md).
-+ Modify an existing Db2 DB instance using the [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) CLI command. For instructions, see [Modifying an Amazon RDS DB instance](Overview.DBInstance.Modifying.md).
++ Create a new Db2 DB instance using the [create-db-instance](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html) CLI command. For instructions, see [Creating an Amazon RDS DB instance](USER_CreateDBInstance.md).
++ Modify an existing Db2 DB instance using the [modify-db-instance](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) CLI command. For instructions, see [Modifying an Amazon RDS DB instance](Overview.DBInstance.Modifying.md).
 
 When you use the AWS CLI, the following parameters are required for the DB instance to be able to use the self-managed AD domain that you created:
 + For the `--domain-fqdn` parameter, use the fully qualified domain name (FQDN) of your self-managed AD.

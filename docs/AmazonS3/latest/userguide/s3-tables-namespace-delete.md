@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-name
 
 Before you delete a table namespace from an Amazon S3 table bucket, you must delete all tables within the namespace, or move them under another namespace. You can delete a namespace by using the Amazon S3 REST API, AWS SDKs, AWS Command Line Interface (AWS CLI), or integrated query engines.
 
-For information about the permissions required to delete a namespace, see [https://docs.aws.amazon.com//AmazonS3/latest/API/API_s3TableBuckets_DeleteNamespace.html](https://docs.aws.amazon.com//AmazonS3/latest/API/API_s3TableBuckets_DeleteNamespace.html) in the *Amazon Simple Storage Service API Reference*.
+For information about the permissions required to delete a namespace, see [DeleteNamespace](https://docs.aws.amazon.com//AmazonS3/latest/API/API_s3TableBuckets_DeleteNamespace.html) in the *Amazon Simple Storage Service API Reference*.
 
 ## Using the AWS CLI
 <a name="delete-table-namespace-CLI"></a>

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 # Tutorial: Set up monitoring for SAP ASE
 <a name="appinsights-tutorial-sap-ase"></a>
 
-This tutorial demonstrates how to configure CloudWatch Application Insights to set up monitoring for your SAP ASE databases. You can use CloudWatch Application Insights automatic dashboards to visualize problem details, accelerate troubleshooting, and facilitate mean time to resolution (MTTR) for your SAP ASE databases.
+This tutorial demonstrates how to configure CloudWatch Application Insights to set up monitoring for your SAP ASE databases. You can use CloudWatch Application Insights automatic dashboards to visualize problem details, accelerate troubleshooting, and help mean time to resolution (MTTR) for your SAP ASE databases.
 
 **Topics**
 + [Supported environments](#appinsights-tutorial-sap-ase-supported-environments)
@@ -140,7 +140,7 @@ Use the following steps to set up monitoring for your SAP ASE database
 
 1. The **Application Insights** page displays the list of applications that are monitored with Application Insights, and the monitoring status for each application. In the upper right-hand corner, choose **Add an application**.
 
-1. On the **Specify application details** page, from the dropdown list under **Resource group**, select the AWS resource group that contains your SAP ASE database resources. If you haven't created a resource group for your application, you can create one by choosing **Create new resource group** under the **Resource group** dropdown. For more information about creating resource groups, see the [https://docs.aws.amazon.com/ARG/latest/userguide/resource-groups.html](https://docs.aws.amazon.com/ARG/latest/userguide/resource-groups.html)
+1. On the **Specify application details** page, from the dropdown list under **Resource group**, select the AWS resource group that contains your SAP ASE database resources. If you haven't created a resource group for your application, you can create one by choosing **Create new resource group** under the **Resource group** dropdown. For more information about creating resource groups, see the [*AWS Resource Groups User Guide.*](https://docs.aws.amazon.com/ARG/latest/userguide/resource-groups.html)
 
 1. Under **Monitor CloudWatch Events**, select the check box to integrate Application Insights monitoring with CloudWatch Events to get insights from Amazon EBS, Amazon EC2, AWS CodeDeploy, Amazon ECS, AWS Health APIs and notifications, Amazon RDS, Amazon S3, and AWS Step Functions.
 

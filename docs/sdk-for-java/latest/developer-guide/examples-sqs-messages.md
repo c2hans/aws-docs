@@ -104,7 +104,7 @@ See the [complete sample](https://github.com/awsdocs/aws-doc-sdk-examples/blob/c
 ## Delete a message after receipt
 <a name="sqs-messages-delete"></a>
 
-After receiving a message and processing its contents, delete the message from the queue by sending the message's receipt handle and queue URL to the `SqsClient's` [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/SqsClient.html#deleteMessage(software.amazon.awssdk.services.sqs.model.DeleteMessageRequest)](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/SqsClient.html#deleteMessage(software.amazon.awssdk.services.sqs.model.DeleteMessageRequest)) method.
+After receiving a message and processing its contents, delete the message from the queue by sending the message's receipt handle and queue URL to the `SqsClient's` [`deleteMessage`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/SqsClient.html#deleteMessage(software.amazon.awssdk.services.sqs.model.DeleteMessageRequest)) method.
 
  **Imports**
 

@@ -129,13 +129,13 @@ HTTP Status Code: 400
 <a name="API_ListRegistries_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/vestry-control-plane-2025-12-01/ListRegistries)
-+  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/vestry-control-plane-2025-12-01/ListRegistries)
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/vestry-control-plane-2025-12-01/ListRegistries)
-+  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/vestry-control-plane-2025-12-01/ListRegistries)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/vestry-control-plane-2025-12-01/ListRegistries)
-+  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/vestry-control-plane-2025-12-01/ListRegistries)
-+  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/vestry-control-plane-2025-12-01/ListRegistries)
-+  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/vestry-control-plane-2025-12-01/ListRegistries)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/vestry-control-plane-2025-12-01/ListRegistries)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/vestry-control-plane-2025-12-01/ListRegistries)
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/agent-registry-control-2025-12-01/ListRegistries)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/agent-registry-control-2025-12-01/ListRegistries)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/agent-registry-control-2025-12-01/ListRegistries)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/agent-registry-control-2025-12-01/ListRegistries)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/agent-registry-control-2025-12-01/ListRegistries)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/agent-registry-control-2025-12-01/ListRegistries)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/agent-registry-control-2025-12-01/ListRegistries)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/agent-registry-control-2025-12-01/ListRegistries)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/agent-registry-control-2025-12-01/ListRegistries)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/agent-registry-control-2025-12-01/ListRegistries)

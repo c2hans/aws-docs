@@ -13,7 +13,7 @@ Your S3 Batch Operations job with retention dates runs until completion, until c
 
 Batch Operations verifies that Object Lock is enabled on your bucket before processing any keys in the manifest. To perform the operations and validation, Batch Operations needs the `s3:GetBucketObjectLockConfiguration` and `s3:PutObjectRetention` permissions in an AWS Identity and Access Management (IAM) role to allow Batch Operations to call Object Lock on your behalf. For more information, see [Object Lock considerations](object-lock-managing.md).
 
-For information about using this operation with the REST API, see `S3PutObjectRetention` in the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateJob.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateJob.html) operation in the *Amazon Simple Storage Service API Reference*.
+For information about using this operation with the REST API, see `S3PutObjectRetention` in the [CreateJob](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateJob.html) operation in the *Amazon Simple Storage Service API Reference*.
 
 For an AWS Command Line Interface (AWS CLI) example of using this operation, see [Using the AWS CLI](batch-ops-object-lock-retention.md#batch-ops-cli-object-lock-retention-example). For an AWS SDK for Java example, see [Using the AWS SDK for Java](batch-ops-object-lock-retention.md#batch-ops-examples-java-object-lock-retention).
 

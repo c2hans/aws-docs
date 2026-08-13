@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/raci-matrix
   <tr><th>Activity</th><th>Customer</th><th>AWS Account Team</th><th>SIR Team</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="4">**Pre-Onboarding**</td></tr>
+  <tr><td colspan="4"><b>Pre-Onboarding</b></td></tr>
   <tr><td>Identify Key Stakeholders</td><td>R</td><td></td><td>I</td></tr>
   <tr><td>Validate Finding Sources</td><td>R</td><td>C</td><td>I</td></tr>
   <tr><td>[3rd Party EDR integration] Security Hub CSPM</td><td>R</td><td>C</td><td>I</td></tr>
@@ -22,10 +22,10 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/raci-matrix
   <tr><td>Enable AWS Organizations</td><td>R</td><td>C</td><td></td></tr>
   <tr><td>Associate accounts with AWS Organizations</td><td>R</td><td>I</td><td></td></tr>
   <tr><td>Select Delegated Administrator / Security Tooling Account</td><td>R</td><td>I</td><td></td></tr>
-  <tr><td colspan="4">**Onboarding**</td></tr>
+  <tr><td colspan="4"><b>Onboarding</b></td></tr>
   <tr><td>Setup membership details</td><td>R</td><td>I</td><td></td></tr>
   <tr><td>Walkthrough (Setup proactive response and alert triaging workflows; Deploy service-linked role to management account; Authorize containment actions)</td><td>R</td><td>C</td><td>I</td></tr>
-  <tr><td colspan="4">**Post-Deployment Configuration**</td></tr>
+  <tr><td colspan="4"><b>Post-Deployment Configuration</b></td></tr>
   <tr><td>Review operational integration capabilities</td><td>R</td><td>C</td><td>I</td></tr>
   <tr><td>Submit Security Incident Response Reactive Cases</td><td>R</td><td></td><td></td></tr>
   <tr><td>Configure Amazon EventBridge integrations</td><td>R</td><td>C</td><td>C</td></tr>

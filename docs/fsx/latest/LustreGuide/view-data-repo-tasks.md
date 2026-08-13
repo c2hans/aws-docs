@@ -28,7 +28,7 @@ You can access all existing data repository tasks in your account by using the A
 ## To retrieve data repository tasks and task details (CLI)
 <a name="task-details-cli"></a>
 
-Using the Amazon FSx [https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-data-repository-tasks.html](https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-data-repository-tasks.html) CLI command, you can view all the data repository tasks, and their details, in your account. [https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeDataRepositoryTasks.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeDataRepositoryTasks.html) is the equivalent API command.
+Using the Amazon FSx [`describe-data-repository-tasks`](https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-data-repository-tasks.html) CLI command, you can view all the data repository tasks, and their details, in your account. [`DescribeDataRepositoryTasks`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeDataRepositoryTasks.html) is the equivalent API command.
 + Use the following command to view all data repository task objects in your account.
 
   ```

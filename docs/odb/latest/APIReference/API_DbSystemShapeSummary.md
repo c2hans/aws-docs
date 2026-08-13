@@ -121,6 +121,12 @@ The runtime minimum number of CPU cores that can be enabled for the shape.
 Type: Integer
 Required: No
 
+ ** shapeAttributes **   <a name="odb-Type-DbSystemShapeSummary-shapeAttributes"></a>
+If provided and applicable, return DB System shape parameters based on the shape attribute provided.
+Type: Array of strings
+Valid Values: `SMART_STORAGE | BLOCK_STORAGE`
+Required: No
+
  ** shapeFamily **   <a name="odb-Type-DbSystemShapeSummary-shapeFamily"></a>
 The family of the shape.
 Type: String

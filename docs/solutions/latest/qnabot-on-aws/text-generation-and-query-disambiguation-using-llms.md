@@ -8,18 +8,18 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/text-gene
 **Note**
 These are optional features available as of v5.4.0. We encourage you to try it out on non-production instances initially to validate expected accuracy improvements and to test for any regression issues. See the [Cost](cost.md) section to see estimates of how these features affect pricing.
 
-QnABot on AWS can leverage LLMs to provide a richer, more conversational chat experience. The goal of these features is to minimize the amount of individually curated answers administrators are required to maintain, to improve question matching accuracy by providing query disambiguation, and to enable the solution to provide more concise answers to users, especially when using the Amazon Bedrock knowledge base or [Amazon Kendra fallback features](integrating-amazon-kendra.md).
+QnABot on AWS can leverage LLMs to provide a richer, more conversational chat experience. The goal of these features is to minimize the amount of individually curated answers administrators are required to maintain, to improve question matching accuracy by providing query disambiguation, and to enable the guidance to provide more concise answers to users, especially when using the Amazon Bedrock knowledge base or [Amazon Kendra fallback features](integrating-amazon-kendra.md).
 
 These benefits are provided through these primary features:
 +  **Text Generation**
-  +  **Generate answers to questions from text passages** - In the content designer web interface, administrators can store full text passages for QnABot on AWS to use. When a question gets asked that matches against this passage, the solution can leverage LLMs to answer the user’s question based on information found within the passage.
+  +  **Generate answers to questions from text passages** - In the content designer web interface, administrators can store full text passages for QnABot on AWS to use. When a question gets asked that matches against this passage, the guidance can leverage LLMs to answer the user’s question based on information found within the passage.
   +  **Retrieval augmentation generation (RAG) from your data sources** - By integrating with the Amazon Bedrock knowledge base or Amazon Kendra index, QnABot on AWS can use an LLMs to generate concise answers to user’s questions from your data source. This prevents the need for users to sift through larger text passages to find the answer.
 +  **Query Disambiguation** - By leveraging an LLM, QnABot can take the user’s chat history and generate a standalone question for the current utterance. This enables users to ask follow up questions which on their own may not be answerable without context of the conversation.
 
 **Note**
 The ability to answer follow up questions is similar to what [QnABot Topics](using-topics-to-support-follow-up-questions-and-contextual-user-journeys.md) aims to solve. Consider that as an option if you’re unable to use the LLM features.
 
-These features (together with [embeddings](semantic-question-matching-using-text-embeddings-llm.md)) enable QnABot on AWS to serve end users with a more conversational chat experience using various AI and NLP techniques. To enable the use of these features, you must deploy the solution with the LLM selection of your choice. You can choose to use any of the following LLM providers:
+These features (together with [embeddings](semantic-question-matching-using-text-embeddings-llm.md)) enable QnABot on AWS to serve end users with a more conversational chat experience using various AI and NLP techniques. To enable the use of these features, you must deploy the guidance with the LLM selection of your choice. You can choose to use any of the following LLM providers:
 + Select LLM models or inference profiles provided by Amazon Bedrock and specify your Amazon Bedrock Knowledge Base ID (preferred)
 + Any other LLM model through a user provided custom Lambda function
 
@@ -59,7 +59,7 @@ From the CloudFormation console, set the following parameters:
 ### Using a custom Lambda Function
 <a name="using-a-custom-lambda-function-1"></a>
 
-If the pre-built options don’t work for your use case, or you want to experiment with other LLMs, you can build a custom Lambda function to integrate with the LLM of your choice. The provided Lambda function takes as input the prompt, model parameters, and the QnABot settings object. Your Lambda function can invoke any LLM you choose, and return the prediction in a JSON object containing the key **generated\_text**. You provide the ARN for your Lambda function when you deploy or update the solution.
+If the pre-built options don’t work for your use case, or you want to experiment with other LLMs, you can build a custom Lambda function to integrate with the LLM of your choice. The provided Lambda function takes as input the prompt, model parameters, and the QnABot settings object. Your Lambda function can invoke any LLM you choose, and return the prediction in a JSON object containing the key **generated\_text**. You provide the ARN for your Lambda function when you deploy or update the guidance.
 
 **Note**
 If integrating your Lambda with external resources, evaluate the security implications of sharing data outside of AWS.
@@ -134,7 +134,7 @@ A follow up question:
 Did she find them again?
 ```
 
-The solution can rewrite (" *disambiguate* ") that question to provide all the context required to search for the relevant FAQ or passage:
+The guidance can rewrite (" *disambiguate* ") that question to provide all the context required to search for the relevant FAQ or passage:
 
 ```
 Did Little Bo Peep find her sheep again?
@@ -146,7 +146,7 @@ Did Little Bo Peep find her sheep again?
 Generate answers to questions from context provided by Amazon Kendra search results, or from text passages created or imported directly into QnAbot. Some of the benefits include:
 + Generated answers allow you to reduce the number of FAQs you must maintain since you can now synthesize concise answers from your existing documents in an Amazon Kendra index, or from document passages stored in QnABot as **text** items.
 + Generated answers can be short, concise, and suitable for voice channel contact center bots and website and text bots.
-+ Generated answers are compatible with the solution’s multi-language support - users can interact in their chosen languages and receive generated answers in the same language.
++ Generated answers are compatible with the guidance’s multi-language support - users can interact in their chosen languages and receive generated answers in the same language.
 + With QnABot you can use three different data sources to generate responses from:
   +  **Text passages within the content designer UI** - Create your own text passages to generate answers from using the content designer. We highly recommend you use this option with [Semantic question matching using text embeddings LLM](semantic-question-matching-using-text-embeddings-llm.md). It also requires an LLM. In the content designer, choose **Add**, select the text, enter an Item ID and a passage, and choose **Create**. You can also import your passages from a JSON file using the content designer **Import** feature. From the tools menu (☰), choose **Import**, open **Examples/Extensions**, and choose the **LOAD** button next to **TextPassage-NurseryRhymeExamples** to import two nursery rhyme text items.
   +  **Amazon Bedrock knowledge bases** - You can also create your own knowledge base from files stored in an S3 bucket. Amazon Bedrock knowledge bases do not require an LLM or embeddings model to function, since the embeddings and generative response are already provided by the knowledge base. Choose this option if you prefer not to manage and configure an Amazon Kendra index or LLM models. To enable this option, create an [Amazon Bedrock knowledge base](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-create.html) and copy your knowledge base ID into the **BedrockKnowledgeBaseId** CloudFormation parameter. For more information, please refer to [Retrieval Augmentation Generation (RAG) using Amazon Bedrock Knowledge Base](https://github.com/aws-solutions/qnabot-on-aws/blob/main/source/docs/bedrock_knowledgebase_rag/README.md). For more information, refer to [Retrieval Augmentation Generation (RAG) using Amazon Bedrock Knowledge Base.](https://github.com/aws-solutions/qnabot-on-aws/blob/main/source/docs/bedrock_knowledgebase_rag/README.md)
@@ -209,16 +209,16 @@ CloudFormation stack parameters:
 It is only possible to use Amazon Kendra or Amazon Bedrock knowledge bases as a fallback data source, and not both. When **AltSearchKendraIndexes** is not empty (an index is provided) Amazon Kendra will be the default data source even if a Amazon Bedrock knowledge base is configured.
 
 When the QnABot stack is installed, open the content designer **Settings** page and configure the following settings:
-+  **ENABLE\_DEBUG\_RESPONSES** - Set to `TRUE` to add additional debug information to the solution’s response, including any language translations (if using multi language mode), question disambiguation (before and after), and inference times for your LLM model(s).
++  **ENABLE\_DEBUG\_RESPONSES** - Set to `TRUE` to add additional debug information to the guidance’s response, including any language translations (if using multi language mode), question disambiguation (before and after), and inference times for your LLM model(s).
 +  **ES\_SCORE\_TEXT\_ITEM\_PASSAGES** - Should be `TRUE` to enable the new text passage items to be retrieved and used as input context for generative QA Summary answers.
 
 **Note**
- `qna` items are queried first, and if none meet the score threshold, then the solution queries the text field of text items.
+ `qna` items are queried first, and if none meet the score threshold, then the guidance queries the text field of text items.
 +  **EMBEDDINGS\_TEXT\_PASSAGE\_SCORE\_THRESHOLD** - Applies only when embeddings are enabled (recommended) and if **ES\_SCORE\_TEXT\_ITEM\_PASSAGES** is `TRUE`. If embedding similarity score on text item field is under threshold the match is rejected. Default threshold is 0.80.
 +  **ALT\_SEARCH\_KENDRA\_MAX\_DOCUMENT\_COUNT** - The number of passages from Amazon Kendra to provide in the input context for the LLM.
 
 Scroll to the bottom of the settings page and observe the new LLM settings:
-+  **LLM\_API** - Set to `LAMBDA` - Based on the value chosen when you last deployed or updated the solution stack.
++  **LLM\_API** - Set to `LAMBDA` - Based on the value chosen when you last deployed or updated the guidance stack.
 +  **LLM\_GENERATE\_QUERY\_ENABLE** - Set to `TRUE` or `FALSE` to enable or disable question disambiguation.
 +  **LLM\_GENERATE\_QUERY\_PROMPT\_TEMPLATE** - The prompt template used to construct a prompt for the LLM to disambiguate a follow-up question. The template can use the following placeholders:
   +  `{history}` - Placeholder for the last **LLM\_CHAT\_HISTORY\_MAX\_MESSAGES** messages in the conversational history, to provide conversational context.
@@ -238,7 +238,7 @@ LLM based generative answers are not applied when an FAQ or QID matches the ques
 +  **LLM\_QA\_PREFIX\_MESSAGE** - Message use to prefix LLM generated answer. Can be empty.
 +  **LLM\_QA\_SHOW\_CONTEXT\_TEXT** - Set to `TRUE` or `FALSE` to enable or disable inclusion of the passages (from Amazon Kendra or Embeddings) used as context for LLM generated answers.
 +  **LLM\_QA\_SHOW\_SOURCE\_LINKS** - Set to `TRUE` or `FALSE` to enable or disable Amazon Kendra source links or passage refMarkdown links (doc references) in markdown answers.
-+  **LLM\_CHAT\_HISTORY\_MAX\_MESSAGES** - The number of previous questions and answers (chat history) to maintain (in the DynamoDB `UserTable`). Chat history is necessary for the solution to disambiguate follow-up questions from previous question and answer context.
++  **LLM\_CHAT\_HISTORY\_MAX\_MESSAGES** - The number of previous questions and answers (chat history) to maintain (in the DynamoDB `UserTable`). Chat history is necessary for the guidance to disambiguate follow-up questions from previous question and answer context.
 +  **KNOWLEDGE\_BASE\_PROMPT\_TEMPLATE** - The prompt template used to construct a prompt for the LLM specified in the BedrockKnowledgeModel which is sent to the model to generate an answer from the context of a retrieved results from Knowledge Bases for Amazon Bedrock. To opt out of sending a prompt to the Knowledge Base model, leave this field empty. The template can use the following placeholders:
   + $query$ - The user query sent to the knowledge base.
   + $search\_results$ - The retrieved results for the user query.

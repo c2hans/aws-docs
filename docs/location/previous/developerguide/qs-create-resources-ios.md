@@ -25,7 +25,7 @@ Choosing a map style also chooses which map data provider that you will use. If 
 
 1. Choose the place index that you want to use.
 
-   1. In the Amazon Location console on the [https://console.aws.amazon.com/location/places/home](https://console.aws.amazon.com/location/places/home) page, choose **Create place index**.
+   1. In the Amazon Location console on the [**Place indexes**](https://console.aws.amazon.com/location/places/home) page, choose **Create place index**.
 
    1. Add a **Name** and **Description** for the new place index resource. Make a note of the name that you use for the place index resource. You will need it when creating your script file later in the tutorial.
 

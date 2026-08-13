@@ -280,9 +280,9 @@ CUR2 introduces additional tag types in the `tags` MAP column that enable attrib
 
 | Tag Type | CUR2 Column | Supported Services | Use Case |
 | --- | --- | --- | --- |
-|  [https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/iam-principal-cost-allocation.html](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/iam-principal-cost-allocation.html)  |  `tags` (prefix: `iamPrincipal/`) | Amazon Bedrock | Tags attached to the IAM role or user that made the API call. Useful for attributing costs to teams when multiple teams share an account but use different IAM roles. |
+|  [**IAM Principal Tags**](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/iam-principal-cost-allocation.html)  |  `tags` (prefix: `iamPrincipal/`) | Amazon Bedrock | Tags attached to the IAM role or user that made the API call. Useful for attributing costs to teams when multiple teams share an account but use different IAM roles. |
 |  **IAM Principal ARN**  |  `line_item_iam_principal`  | Amazon Bedrock | The full ARN of the principal that made the API call. Useful for seeing which role or user is driving model invocations. |
-|  [https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/user-attributes-cost-allocation.html](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/user-attributes-cost-allocation.html)  |  `tags` (prefix: `userAttribute/`) | Amazon Q Business, Amazon Q Developer, Amazon Quick | Workforce user attributes (cost center, division, department) from IAM Identity Center. Enables automatic cost allocation based on organizational structure for per-user services. |
+|  [**User Attributes**](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/user-attributes-cost-allocation.html)  |  `tags` (prefix: `userAttribute/`) | Amazon Q Business, Amazon Q Developer, Amazon Quick | Workforce user attributes (cost center, division, department) from IAM Identity Center. Enables automatic cost allocation based on organizational structure for per-user services. |
 
  **Prerequisites:**
 +  [Data export stack](data-exports.md) version `v0.11.0` or above. This will ensure:

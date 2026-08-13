@@ -63,7 +63,7 @@ The table provides the following information for each hyperparameter:
   <tr><th>Name</th><th>Description</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2">Algorithm hyperparameters</td></tr>
-  <tr><td>apply\_recency\_bias</td><td>Determines whether the model should give more weight to the most recent item interactions data in your Item interactions dataset. The most recent interactions data might include sudden changes in the underlying patterns of interaction events. <br /> To train a model that places more weight on recent events, set `apply_recency_bias` to `true`. To train a model that equally weighs all past interactions, set `apply_recency_bias` to `false`.<br />Default value: `true`<br />Range: `true` or `false`<br />Value type: Boolean<br />HPO tunable: No</td></tr>
+  <tr><td colspan="2"><b>Algorithm hyperparameters</b></td></tr>
+  <tr><td><code>apply_recency_bias</code></td><td>Determines whether the model should give more weight to the most recent item interactions data in your Item interactions dataset. The most recent interactions data might include sudden changes in the underlying patterns of interaction events. <br /> To train a model that places more weight on recent events, set <code>apply_recency_bias</code> to <code>true</code>. To train a model that equally weighs all past interactions, set <code>apply_recency_bias</code> to <code>false</code>.<br />Default value: <code>true</code><br />Range: <code>true</code> or <code>false</code><br />Value type: Boolean<br />HPO tunable: No</td></tr>
 </tbody>
 </table>

@@ -596,6 +596,7 @@ The following data types are supported by Amazon SageMaker Service:
 +  [PipelineVersionSummary](API_PipelineVersionSummary.md)
 +  [PlacementSpecification](API_PlacementSpecification.md)
 +  [PredefinedMetricSpecification](API_PredefinedMetricSpecification.md)
++  [PrefixAwareRoutingConfig](API_PrefixAwareRoutingConfig.md)
 +  [PresignedUrlAccessConfig](API_PresignedUrlAccessConfig.md)
 +  [PriorityClass](API_PriorityClass.md)
 +  [ProcessingClusterConfig](API_ProcessingClusterConfig.md)

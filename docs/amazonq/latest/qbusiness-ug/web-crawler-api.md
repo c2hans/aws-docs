@@ -13,7 +13,7 @@ To connect Amazon Q Business to Web Crawler using the Amazon Q API, call `Create
 + a sync schedule for Amazon Q to check the documents in your data source
 + a Amazon VPC configuration
 
-For more information on available parameters, see [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) in the [Amazon Q API reference](https://docs.aws.amazon.com/amazonq/latest/api-reference/Welcome.html).
+For more information on available parameters, see [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) in the [Amazon Q API reference](https://docs.aws.amazon.com/amazonq/latest/api-reference/Welcome.html).
 
 Provide the seed or starting point URLs, or the sitemap URLs, as part of the connection configuration or repository endpoint details. Also specify the website authentication credentials and authentication type if your websites require authentication, and other necessary configurations.
 

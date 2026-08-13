@@ -18,6 +18,9 @@ Content-type: application/json
    "agentRuntimeArtifact": { ... },
    "agentRuntimeName": "{{string}}",
    "authorizerConfiguration": { ... },
+   "capacityProviderConfiguration": {
+      "capacityProviderArn": "{{string}}"
+   },
    "clientToken": "{{string}}",
    "description": "{{string}}",
    "environmentVariables": {
@@ -77,6 +80,11 @@ Type: [AuthorizerConfiguration](API_AuthorizerConfiguration.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
+ ** [capacityProviderConfiguration](#API_CreateAgentRuntime_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateAgentRuntime-request-capacityProviderConfiguration"></a>
+The capacity provider configuration for the AgentCore Runtime. Use a capacity provider to run the AgentCore Runtime on the Instances compute type, which provisions AWS managed compute in your account.
+Type: [CapacityProviderConfiguration](API_CapacityProviderConfiguration.md) object
+Required: No
+
  ** [clientToken](#API_CreateAgentRuntime_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateAgentRuntime-request-clientToken"></a>
 A unique, case-sensitive identifier to ensure idempotency of the request.
 Type: String
@@ -112,7 +120,7 @@ Required: No
  ** [networkConfiguration](#API_CreateAgentRuntime_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateAgentRuntime-request-networkConfiguration"></a>
 The network configuration for the AgentCore Runtime.
 Type: [NetworkConfiguration](API_NetworkConfiguration.md) object
-Required: Yes
+Required: No
 
  ** [protocolConfiguration](#API_CreateAgentRuntime_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateAgentRuntime-request-protocolConfiguration"></a>
 The protocol configuration for an agent runtime. This structure defines how the agent runtime communicates with clients.
@@ -171,7 +179,7 @@ The following data is returned in JSON format by the service.
  ** [agentRuntimeArn](#API_CreateAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreateAgentRuntime-response-agentRuntimeArn"></a>
 The Amazon Resource Name (ARN) of the AgentCore Runtime.
 Type: String
-Pattern: `arn:(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:agent/[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}:([0-9]{0,4}[1-9][0-9]{0,4})`
+Pattern: `arn:aws(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:runtime/[a-zA-Z][a-zA-Z0-9_]{0,47}-[a-zA-Z0-9]{10}`
 
  ** [agentRuntimeId](#API_CreateAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreateAgentRuntime-response-agentRuntimeId"></a>
 The unique identifier of the AgentCore Runtime.

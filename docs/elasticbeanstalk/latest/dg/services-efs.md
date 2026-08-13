@@ -36,7 +36,7 @@ Deploy your updated source code to your Elastic Beanstalk environment. This is t
 ## Encrypted file systems
 <a name="services-efs-encrypted"></a>
 
-Amazon EFS supports encrypted file systems. The [https://github.com/awslabs/elastic-beanstalk-samples/blob/master/configuration-files/aws-provided/instance-configuration/storage-efs-createfilesystem.config](https://github.com/awslabs/elastic-beanstalk-samples/blob/master/configuration-files/aws-provided/instance-configuration/storage-efs-createfilesystem.config) configuration file that's discussed in this topic defines two custom options. You can use these options to create an Amazon EFS encrypted file system. For more information, refer to the instructions in the configuration file.
+Amazon EFS supports encrypted file systems. The [`storage-efs-createfilesystem.config`](https://github.com/awslabs/elastic-beanstalk-samples/blob/master/configuration-files/aws-provided/instance-configuration/storage-efs-createfilesystem.config) configuration file that's discussed in this topic defines two custom options. You can use these options to create an Amazon EFS encrypted file system. For more information, refer to the instructions in the configuration file.
 
 ## Sample applications
 <a name="services-efs-samples"></a>

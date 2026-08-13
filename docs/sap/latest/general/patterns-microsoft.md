@@ -31,12 +31,12 @@ The following table provides a comparison of all the architecture patterns discu
 
 <table>
 <tbody>
-  <tr><td rowspan="2"> **Patterns** </td><td colspan="3"> **Business requirements** </td><td colspan="2"> **Solution characteristics** </td><td colspan="2"> **Implementation details** </td></tr>
-  <tr><td> **Resilience type** </td><td> **Recovery point objective** </td><td> **Recovery time objective** </td><td> **Cost** </td><td> **Complexity** </td><td> **SQL AlwaysOn** </td><td> **Amazon S3 replication** </td></tr>
-  <tr><td>Pattern 1</td><td rowspan="2">Single Region disaster recovery</td><td>Near zero\*</td><td>Low</td><td>Medium</td><td>Medium</td><td>2-tier</td><td>N/A</td></tr>
+  <tr><td rowspan="2"> <b>Patterns</b> </td><td colspan="3"> <b>Business requirements</b> </td><td colspan="2"> <b>Solution characteristics</b> </td><td colspan="2"> <b>Implementation details</b> </td></tr>
+  <tr><td> <b>Resilience type</b> </td><td> <b>Recovery point objective</b> </td><td> <b>Recovery time objective</b> </td><td> <b>Cost</b> </td><td> <b>Complexity</b> </td><td> <b>SQL AlwaysOn</b> </td><td> <b>Amazon S3 replication</b> </td></tr>
+  <tr><td>Pattern 1</td><td rowspan="2">Single Region disaster recovery</td><td>Near zero*</td><td>Low</td><td>Medium</td><td>Medium</td><td>2-tier</td><td>N/A</td></tr>
   <tr><td>Pattern 2</td><td>Medium</td><td>High</td><td>Very low</td><td>Very low</td><td>N/A</td><td>N/A</td></tr>
   <tr><td>Pattern 3</td><td rowspan="4">Multi-Region disaster recovery</td><td>Medium</td><td>High</td><td>Medium</td><td>Medium</td><td>2-tier</td><td>Cross Region</td></tr>
-  <tr><td>Pattern 4</td><td>Near zero\*</td><td>Low</td><td>High</td><td>High</td><td>3-tier</td><td>Cross Region</td></tr>
+  <tr><td>Pattern 4</td><td>Near zero*</td><td>Low</td><td>High</td><td>High</td><td>3-tier</td><td>Cross Region</td></tr>
   <tr><td>Pattern 5</td><td>Medium</td><td>High</td><td>Low</td><td>Low</td><td>N/A</td><td>Cross Region</td></tr>
   <tr><td>Pattern 6</td><td>Low</td><td>Low</td><td>Medium</td><td>Medium</td><td>N/A</td><td>N/A</td></tr>
 </tbody>

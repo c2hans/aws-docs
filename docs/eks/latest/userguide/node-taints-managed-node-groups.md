@@ -59,9 +59,9 @@ For more information and examples, see [taint](https://kubernetes.io/docs/refere
 Use the [aws eks update-nodegroup-config](https://docs.aws.amazon.com/cli/latest/reference/eks/update-nodegroup-config.html) AWS CLI command to add, remove, or replace taints for managed node groups.
 
 ```
-aws eks update-nodegroup-config
-  --cluster-name my-cluster
-  --nodegroup-name node-taints-example
+aws eks update-nodegroup-config \
+  --cluster-name my-cluster \
+  --nodegroup-name node-taints-example \
   --taints 'removeTaints=[{key=dedicated,value=gpuGroup,effect=NO_SCHEDULE}]'
 ```
 

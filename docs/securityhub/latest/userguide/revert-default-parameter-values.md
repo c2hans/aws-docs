@@ -49,7 +49,7 @@ Choose your preferred method, and follow the steps to revert to default paramete
 
 **To revert to default control parameter values in multiple accounts and Regions (API)**
 
-1. Invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateConfigurationPolicy.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateConfigurationPolicy.html) API from the delegated administrator account in the home Region.
+1. Invoke the [UpdateConfigurationPolicy](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateConfigurationPolicy.html) API from the delegated administrator account in the home Region.
 
 1. For the `Identifier` field, provide the Amazon Resource Name (ARN) or ID of the policy that you want to update.
 
@@ -102,7 +102,7 @@ If you disable Security Hub CSPM, your custom control parameters are reset. If y
 
 **To revert to default control parameter values in one account and Region (API)**
 
-1. Invoke the [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_UpdateSecurityControl.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_UpdateSecurityControl.html) API.
+1. Invoke the [UpdateSecurityControl](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_UpdateSecurityControl.html) API.
 
 1. For `SecurityControlId`, provide the ARN or ID of the control whose parameters you want to revert.
 

@@ -266,7 +266,7 @@ The batch condition that started the workflow run. Either the number of events i
 The details of a blueprint.
 
 **Fields**
-+ `Name` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #31](aws-glue-api-common.md#regex_31).
++ `Name` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #52](aws-glue-api-common.md#regex_52).
 
   The name of the blueprint.
 + `Description` – UTF-8 string, not less than 1 or more than 512 bytes long.
@@ -307,7 +307,7 @@ The details of a blueprint.
 The details of a blueprint.
 
 **Fields**
-+ `BlueprintName` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #31](aws-glue-api-common.md#regex_31).
++ `BlueprintName` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #52](aws-glue-api-common.md#regex_52).
 
   The name of the blueprint.
 + `RunId` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Single-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-oneLine).
@@ -342,7 +342,7 @@ When there are multiple versions of a blueprint and the latest version has some 
 The details of a blueprint run.
 
 **Fields**
-+ `BlueprintName` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #31](aws-glue-api-common.md#regex_31).
++ `BlueprintName` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #52](aws-glue-api-common.md#regex_52).
 
   The name of the blueprint.
 + `RunId` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Single-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-oneLine).
@@ -373,7 +373,7 @@ The details of a blueprint run.
 + `Parameters` – UTF-8 string, not less than 1 or more than 131072 bytes long.
 
   The blueprint parameters as a string. You will have to provide a value for each key that is required from the parameter spec that is defined in the `Blueprint$ParameterSpec`.
-+ `RoleArn` – UTF-8 string, not less than 1 or more than 1024 bytes long, matching the [Custom string pattern #30](aws-glue-api-common.md#regex_30).
++ `RoleArn` – UTF-8 string, not less than 1 or more than 1024 bytes long, matching the [Custom string pattern #51](aws-glue-api-common.md#regex_51).
 
   The role ARN. This role will be assumed by the AWS Glue service and will be used to create the workflow and other entities of a workflow.
 
@@ -708,13 +708,13 @@ Puts the specified workflow run properties for the given workflow run. If a prop
 Registers a blueprint with AWS Glue.
 
 **Request**
-+ `Name` – *Required:* UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #31](aws-glue-api-common.md#regex_31).
++ `Name` – *Required:* UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #52](aws-glue-api-common.md#regex_52).
 
   The name of the blueprint.
 + `Description` – UTF-8 string, not less than 1 or more than 512 bytes long.
 
   A description of the blueprint.
-+ `BlueprintLocation` – *Required:* UTF-8 string, not less than 1 or more than 8192 bytes long, matching the [Custom string pattern #32](aws-glue-api-common.md#regex_32).
++ `BlueprintLocation` – *Required:* UTF-8 string, not less than 1 or more than 8192 bytes long, matching the [Custom string pattern #53](aws-glue-api-common.md#regex_53).
 
   Specifies a path in Amazon S3 where the blueprint is published.
 + `Tags` – A map array of key-value pairs, not more than 50 pairs.
@@ -743,13 +743,13 @@ Registers a blueprint with AWS Glue.
 Updates a registered blueprint.
 
 **Request**
-+ `Name` – *Required:* UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #31](aws-glue-api-common.md#regex_31).
++ `Name` – *Required:* UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #52](aws-glue-api-common.md#regex_52).
 
   The name of the blueprint.
 + `Description` – UTF-8 string, not less than 1 or more than 512 bytes long.
 
   A description of the blueprint.
-+ `BlueprintLocation` – *Required:* UTF-8 string, not less than 1 or more than 8192 bytes long, matching the [Custom string pattern #32](aws-glue-api-common.md#regex_32).
++ `BlueprintLocation` – *Required:* UTF-8 string, not less than 1 or more than 8192 bytes long, matching the [Custom string pattern #53](aws-glue-api-common.md#regex_53).
 
   Specifies a path in Amazon S3 where the blueprint is published.
 
@@ -854,13 +854,13 @@ Retrieves information about a list of blueprints.
 Starts a new run of the specified blueprint.
 
 **Request**
-+ `BlueprintName` – *Required:* UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #31](aws-glue-api-common.md#regex_31).
++ `BlueprintName` – *Required:* UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #52](aws-glue-api-common.md#regex_52).
 
   The name of the blueprint.
 + `Parameters` – UTF-8 string, not less than 1 or more than 131072 bytes long.
 
   Specifies the parameters as a `BlueprintParameters` object.
-+ `RoleArn` – *Required:* UTF-8 string, not less than 1 or more than 1024 bytes long, matching the [Custom string pattern #30](aws-glue-api-common.md#regex_30).
++ `RoleArn` – *Required:* UTF-8 string, not less than 1 or more than 1024 bytes long, matching the [Custom string pattern #51](aws-glue-api-common.md#regex_51).
 
   Specifies the IAM role used to create the workflow.
 
@@ -883,7 +883,7 @@ Starts a new run of the specified blueprint.
 Retrieves the details of a blueprint run.
 
 **Request**
-+ `BlueprintName` – *Required:* UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #31](aws-glue-api-common.md#regex_31).
++ `BlueprintName` – *Required:* UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #52](aws-glue-api-common.md#regex_52).
 
   The name of the blueprint.
 + `RunId` – *Required:* UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Single-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-oneLine).

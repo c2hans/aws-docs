@@ -9,7 +9,7 @@ To contribute to this user guide, choose the **Edit this page on GitHub** link t
 # Amazon EKS MCP Server Configuration Reference
 <a name="eks-mcp-tool-configurations"></a>
 
-This guide shows all the configurations available for the [https://github.com/aws/mcp-proxy-for-aws](https://github.com/aws/mcp-proxy-for-aws) client-side tool that allows you to connect to the fully managed Amazon EKS MCP Server from your IDE.
+This guide shows all the configurations available for the [*mcp-proxy-for-aws*](https://github.com/aws/mcp-proxy-for-aws) client-side tool that allows you to connect to the fully managed Amazon EKS MCP Server from your IDE.
 
 **Note**
 The Amazon EKS MCP Server is in preview release for Amazon EKS and is subject to change.

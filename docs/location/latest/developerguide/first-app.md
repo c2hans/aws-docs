@@ -256,7 +256,7 @@ Your final HTML should look like this:
 ### Add Places to your application
 <a name="qs-add-places"></a>
 
-In this section, we will set up add places capabilities to the application. Download the JavaScript file from GitHub, [https://github.com/aws-geospatial/amazon-location-samples-js/blob/quick_start_sample_js/quick-start/utils.js](https://github.com/aws-geospatial/amazon-location-samples-js/blob/quick_start_sample_js/quick-start/utils.js).
+In this section, we will set up add places capabilities to the application. Download the JavaScript file from GitHub, [`utils.js`](https://github.com/aws-geospatial/amazon-location-samples-js/blob/quick_start_sample_js/quick-start/utils.js).
 
 Before you start, your files should be in this folder structure:
 

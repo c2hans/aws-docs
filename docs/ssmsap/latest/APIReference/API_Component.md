@@ -122,7 +122,7 @@ The status of the component.
 + STOPPED - the component is not running.
 + STOPPING - the component is in the process of being stopped.
 + RUNNING - the component is running.
-+ RUNNING\_WITH\_ERROR - one or more child component(s) of the parent component is not running. Call [https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_GetComponent.html](https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_GetComponent.html) to review the status of each child component.
++ RUNNING\_WITH\_ERROR - one or more child component(s) of the parent component is not running. Call [`GetComponent`](https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_GetComponent.html) to review the status of each child component.
 + UNDEFINED - AWS Systems Manager for SAP cannot provide the component status based on the discovered information. Verify your SAP application.
 Type: String
 Valid Values: `ACTIVATED | STARTING | STOPPED | STOPPING | RUNNING | RUNNING_WITH_ERROR | UNDEFINED`

@@ -12,7 +12,7 @@ The AWS Marketplace Metering Service is a pricing and metering feature that you 
 
 The AWS Marketplace Metering Service enables several new scenarios. For example, if your software monitors hosts, you can charge for each host monitored. You can have different prices based on the host size, and charge for the number of concurrent hosts monitored each hour. Similarly, if your software allows many users across an organization to sign in, you can charge by the number of users. Each hour, the customer is charged for the total number of provisioned users.
 
-For more information, see the [https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/Welcome.html](https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/Welcome.html).
+For more information, see the [*AWS Marketplace Metering Service API Reference*](https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/Welcome.html).
 
 For more information about integrating AWS Marketplace Metering Service API for AMI-based products with custom metering pricing, see the [List AMI products priced by custom units](https://catalog.workshops.aws/mpseller/en-US/ami/list-ami-custom-units) lab of the *AWS Marketplace seller workshop*.
 

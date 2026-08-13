@@ -9,7 +9,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 When you add a new data source in Amazon Q Business, you can use the Amazon VPC feature if the selected data source connector supports this feature.
 
-You can set up a new Amazon Q Business data source with Amazon VPC enabled by using the AWS Management Console or the Amazon Q Business API. Specifically, use the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API operation, and then use the `VpcConfiguration` parameter to provide the following information:
+You can set up a new Amazon Q Business data source with Amazon VPC enabled by using the AWS Management Console or the Amazon Q Business API. Specifically, use the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API operation, and then use the `VpcConfiguration` parameter to provide the following information:
 + `SubnetIds` – A list of identifiers of Amazon VPC subnets
 + `SecurityGroupIds` – A list of identifiers of Amazon VPC security groups
 

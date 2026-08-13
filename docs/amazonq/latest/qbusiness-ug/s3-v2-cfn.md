@@ -7,9 +7,9 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 # Connecting Amazon Q Business to Amazon S3 using AWS CloudFormation
 <a name="s3-v2-cfn"></a>
 
-You use the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html) resource to connect a data source to your Amazon Q application.
+You use the [`AWS::QBusiness::DataSource`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html) resource to connect a data source to your Amazon Q application.
 
-Use the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html#cfn-qbusiness-datasource-applicationid](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html#cfn-qbusiness-datasource-applicationid) property to provide a JSON or YAML schema with the necessary configuration details specific to your data source connector.
+Use the [`configuration`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html#cfn-qbusiness-datasource-applicationid) property to provide a JSON or YAML schema with the necessary configuration details specific to your data source connector.
 
 To learn more about AWS CloudFormation, see [What is AWS CloudFormation?](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) in the *CloudFormation User Guide*.
 

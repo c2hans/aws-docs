@@ -262,6 +262,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   DescribeWhatIfForecast  **
+  - **SDK client:** forecast
+  - **IAM action:**  [forecast:DescribeWhatIfForecast](#list_forecast-action-DescribeWhatIfForecast)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetAccuracyMetrics  **
   - **SDK client:** forecast
   - **IAM action:**  [forecast:GetAccuracyMetrics](#list_forecast-action-GetAccuracyMetrics)

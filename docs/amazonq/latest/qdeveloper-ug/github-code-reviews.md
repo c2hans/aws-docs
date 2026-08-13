@@ -38,7 +38,7 @@ When you open a new pull request or reopen a previously closed one, Amazon Q Dev
 
 Before you start a review, you can customize a code quality review by defining custom coding standards in simple Markdown files in the `project-root/.amazonq/rules` directory. Amazon Q automatically follows your guidelines, ensuring consistent code quality across your entire project. For more information, see [Creating project rules for Amazon Q Developer in third-party platforms](third-party-context-project-rules.md).
 
-1. If necessary, sign in to your [https://github.com/](https://github.com/) account using your GitHub credentials.
+1. If necessary, sign in to your [GitHub](https://github.com/) account using your GitHub credentials.
 
 1. Navigate to your GitHub organization, and then navigate to the repository you want to perform a code review with Amazon Q Developer.
 
@@ -64,7 +64,7 @@ You can only initiate a code review within a pull request with a new comment. Th
 
 **To use initiate code reviews in a pull request**
 
-1. If necessary, sign in to your [https://github.com/](https://github.com/) account using your GitHub credentials.
+1. If necessary, sign in to your [GitHub](https://github.com/) account using your GitHub credentials.
 
 1. Navigate to your GitHub organization, and then navigate to the pull request you want to perform a code review with Amazon Q Developer. For more information, see [About pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 

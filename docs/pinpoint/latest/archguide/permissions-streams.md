@@ -116,7 +116,7 @@ If you haven't installed the AWS CLI, see [Installing the AWS CLI](https://docs.
 
 1. Create a JSON file that contains the trust policy for your role, and save the file locally. You can copy the trust policy provided in this topic.
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/iam/create-role.html](https://docs.aws.amazon.com/cli/latest/reference/iam/create-role.html) command to create the role and attach the trust policy:
+1. Use the [`create-role`](https://docs.aws.amazon.com/cli/latest/reference/iam/create-role.html) command to create the role and attach the trust policy:
 
    ```
    aws iam create-role --role-name {{PinpointEventStreamRole}} --assume-role-policy-document file://{{PinpointEventStreamTrustPolicy}}.json
@@ -128,7 +128,7 @@ If you haven't installed the AWS CLI, see [Installing the AWS CLI](https://docs.
 
 1. Create a JSON file that contains the permissions policy for your role, and save the file locally. You can copy one of the policies provided in the [Permissions policies](#permissions-streams-permissionspolicies) section of this topic.
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/iam/put-role-policy.html](https://docs.aws.amazon.com/cli/latest/reference/iam/put-role-policy.html) command to attach the permissions policy to the role:
+1. Use the [`put-role-policy`](https://docs.aws.amazon.com/cli/latest/reference/iam/put-role-policy.html) command to attach the permissions policy to the role:
 
    ```
    aws iam put-role-policy --role-name {{PinpointEventStreamRole}} --policy-name {{PinpointEventStreamPermissionsPolicy}} --policy-document file://{{PinpointEventStreamPermissionsPolicy}}.json

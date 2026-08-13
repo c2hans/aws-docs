@@ -82,7 +82,7 @@ Follow the steps in this section to use the AWS CLI to:
 
 **To create a StackSet**
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-set.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-set.html) command to create a new StackSet named `{{my-stackset}}`. The following example uses a template stored in an S3 bucket and includes a parameter that sets a `{{KeyPairName}}` with the value `{{TestKey}}`.
+1. Use the [create-stack-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-set.html) command to create a new StackSet named `{{my-stackset}}`. The following example uses a template stored in an S3 bucket and includes a parameter that sets a `{{KeyPairName}}` with the value `{{TestKey}}`.
 
    ```
    aws cloudformation create-stack-set \
@@ -91,13 +91,13 @@ Follow the steps in this section to use the AWS CLI to:
      --parameters {{ParameterKey=KeyPairName,ParameterValue=TestKey}}
    ```
 
-1. After your **create-stack-set** command is finished, run the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-stack-sets.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-stack-sets.html) command to see that your StackSet has been created. You should see your new StackSet in the results.
+1. After your **create-stack-set** command is finished, run the [list-stack-sets](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-stack-sets.html) command to see that your StackSet has been created. You should see your new StackSet in the results.
 
    ```
    aws cloudformation list-stack-sets
    ```
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-instances.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-instances.html) command to deploy stacks within your StackSet. The following example deploys stacks in two AWS accounts (`{{account_ID_1}}` and `{{account_ID_2}}`) across two Regions (`{{us-west-2}}` and `{{us-east-1}}`).
+1. Use the [create-stack-instances](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-instances.html) command to deploy stacks within your StackSet. The following example deploys stacks in two AWS accounts (`{{account_ID_1}}` and `{{account_ID_2}}`) across two Regions (`{{us-west-2}}` and `{{us-east-1}}`).
 
    Set concurrent account processing and other deployment preferences using the `--operation-preferences` option. This example uses count-based settings. Note that `MaxConcurrentCount` must not exceed `FailureToleranceCount` \+ 1. For percentage-based settings, use `FailureTolerancePercentage` or `MaxConcurrentPercentage` instead.
 
@@ -111,7 +111,7 @@ Follow the steps in this section to use the AWS CLI to:
 
    For more information, see [CreateStackInstances](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStackInstances.html) in the *AWS CloudFormation API Reference*.
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-set-operation.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-set-operation.html) command to verify that your stacks were created successfully. For the `--operation-id` option, specify the operation ID that was returned as part of the **create-stack-instances** output.
+1. Use the [describe-stack-set-operation](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-set-operation.html) command to verify that your stacks were created successfully. For the `--operation-id` option, specify the operation ID that was returned as part of the **create-stack-instances** output.
 
    ```
    aws cloudformation describe-stack-set-operation \

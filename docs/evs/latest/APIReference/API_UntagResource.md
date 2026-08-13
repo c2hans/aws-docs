@@ -63,7 +63,7 @@ The type of the resource that is associated with the error.
 HTTP Status Code: 400
 
  [TagPolicyException](API_TagPolicyException.md)
- `TagPolicyException` is deprecated. See [https://docs.aws.amazon.com/evs/latest/APIReference/API_ValidationException.html](https://docs.aws.amazon.com/evs/latest/APIReference/API_ValidationException.html) instead.
+ `TagPolicyException` is deprecated. See [`ValidationException`](https://docs.aws.amazon.com/evs/latest/APIReference/API_ValidationException.html) instead.
 The request doesn't comply with IAM tag policy. Correct your request and then retry it.
  ** message **
 Describes the error encountered

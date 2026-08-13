@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/setting
 # Adjusting Systems Manager settings
 <a name="settings-overview"></a>
 
-The options on the **Settings** pages enable and configure features in the Systems Manager unified console. The options displayed depend on the account you are logged into and whether or not you have already set up Systems Manager.
+The options on the **Settings** pages enable and configure features in the Systems Manager unified console. The options displayed depend on the account you are logged into and whether you have already set up Systems Manager.
 
 **Note**
 The options on the **Settings** page don't affect Systems Manager tools (formerly called capabilities).
@@ -15,12 +15,12 @@ The options on the **Settings** page don't affect Systems Manager tools (formerl
 ## Account setup settings
 <a name="settings-acccount-setup"></a>
 
-If Systems Manager is enabled, and if you are logged into an account that is not a member of Organizations or if the delegated administrator has not added your Organizations account to Systems Manager, the **Account setup** page shows the option to **Disable Systems Manager**. Disabling Systems Manager means Systems Manager doesn't display the unified console. All Systems Manager tools still function.
+If Systems Manager is enabled, the **Account setup** page shows the option to **Disable Systems Manager** if either of the following is true: your account is not a member of Organizations, or the delegated administrator has not added your Organizations account to Systems Manager. Disabling Systems Manager means Systems Manager doesn't display the unified console. All Systems Manager tools still function.
 
 ## Organizational setup settings
 <a name="settings-organizational-setup"></a>
 
-On the **Organizational setup** tab, the **Home Region** section displays the AWS Region chosen as the home Region during setup. In multi-account and multi-Region environments that use AWS Organizations, Systems Manager automatically aggregates node data from all accounts and Regions to the home Region. Aggregating data in this way enables you to view node data across accounts and Regions in a single location.
+On the **Organizational setup** tab, the **Home Region** section displays the AWS Region chosen as the home Region during setup. In multi-account and multi-Region environments that use AWS Organizations, Systems Manager automatically aggregates node data from all accounts and Regions to the home Region. Aggregating data in this way lets you view node data across accounts and Regions in a single location.
 
 **Note**
 If you want to change the home Region, you must disable Systems Manager and enable it again. To disable Systems Manager, choose **Disable**.
@@ -30,7 +30,7 @@ The **Organizational setup** section displays the AWS organizational units and A
 ## Feature configurations
 <a name="settings-feature-configurations"></a>
 
-The **Feature configurations** section allows you to enable and configure key Systems Manager capabilities that enhance node management across your organization. These features work together to provide automated management, compliance monitoring, and maintenance of your managed nodes.
+The **Feature configurations** section lets you enable and configure key Systems Manager capabilities that enhance node management across your organization. These features work together to provide automated management, compliance monitoring, and maintenance of your managed nodes.
 
 You can configure these features during initial Systems Manager setup or modify them later through the Settings page. Each feature can be enabled or disabled independently based on your organization's requirements.
 
@@ -40,10 +40,10 @@ You can configure these features during initial Systems Manager setup or modify 
 Default Host Management Configuration (DHMC) automatically configures Amazon Elastic Compute Cloud (Amazon EC2) instances in your organization to be managed by Systems Manager. When enabled, DHMC ensures that new and existing EC2 instances have the necessary AWS Identity and Access Management (IAM) permissions and configurations to communicate with Systems Manager services.
 
 DHMC provides the following benefits:
-+ **Automatic IAM role assignment** - Ensures EC2 instances have the required IAM roles and policies to function as managed nodes
-+ **Drift remediation** - Automatically corrects configuration drift when instances lose their managed node status
-+ **Simplified onboarding** - Reduces manual configuration steps for new instances
-+ **Consistent configuration** - Maintains uniform settings across your EC2 fleet
++ **Automatic IAM role assignment** – Ensures EC2 instances have the required IAM roles and policies to function as managed nodes.
++ **Drift remediation** – Automatically corrects configuration drift when instances lose their managed node status.
++ **Simplified onboarding** – Reduces manual configuration steps for new instances.
++ **Consistent configuration** – Maintains uniform settings across your EC2 fleet.
 
 #### Configuring drift remediation frequency
 <a name="dhmc-drift-remediation"></a>
@@ -76,10 +76,10 @@ When you enable DHMC, Systems Manager creates the necessary IAM roles and polici
 Inventory metadata collection automatically gathers detailed information about your managed nodes, including installed applications, network configurations, system updates, and other system metadata. This information helps you maintain compliance, perform security analysis, and understand your infrastructure composition.
 
 Inventory collection provides the following benefits:
-+ **Compliance monitoring** - Track installed software and configurations for compliance reporting
-+ **Security analysis** - Identify outdated software and potential security vulnerabilities
-+ **Asset management** - Maintain an up-to-date inventory of your infrastructure
-+ **Query capabilities** - Use collected data with Amazon Q Developer for natural language queries
++ **Compliance monitoring** – Track installed software and configurations for compliance reporting.
++ **Security analysis** – Identify outdated software and potential security vulnerabilities.
++ **Asset management** – Maintain an up-to-date inventory of your infrastructure.
++ **Query capabilities** – Use collected data with Amazon Q Developer for natural language queries.
 
 #### Types of inventory data collected
 <a name="inventory-collection-types"></a>
@@ -114,12 +114,12 @@ You can configure how frequently Systems Manager collects inventory metadata fro
 1. Choose **Save**.
 
 **Important**
-Inventory collection requires managed nodes to have the necessary permissions to gather system information. Ensure your managed nodes have the appropriate IAM roles and policies. For more information about required permissions, see [AWS Systems Manager Inventory](systems-manager-inventory.md).
+Inventory collection requires managed nodes to have the necessary permissions to gather system information. Make sure your managed nodes have the appropriate IAM roles and policies. For more information about required permissions, see [AWS Systems Manager Inventory](systems-manager-inventory.md).
 
 ### SSM Agent updates
 <a name="settings-ssm-agent-updates"></a>
 
-Automatic SSM Agent updates ensure that your managed nodes are running the latest version of the SSM Agent. Keeping the agent up-to-date provides access to the latest features, security improvements, and bug fixes.
+Automatic SSM Agent updates make sure that your managed nodes are running the latest version of the SSM Agent. Keeping the agent up-to-date provides access to the latest features, security improvements, and bug fixes.
 
 SSM Agent automatic updates provide the following benefits:
 + **Latest features** - Access to new Systems Manager capabilities and improvements
@@ -152,14 +152,14 @@ You can configure how frequently Systems Manager checks for and installs SSM Age
 ## Diagnose and remediate settings
 <a name="settings-diagnose-and-remediate"></a>
 
-The **Diagnose and remediate** settings determine whether or not Systems Manager automatically scans your nodes to ensure they can communicate with Systems Manager. If enabled, the feature runs automatically according to a schedule you define. The feature identifies which nodes can't connect to Systems Manager and why. This feature also provides recommended runbooks for remediating networking issues and other problems preventing nodes from being configured as managed nodes.
+The **Diagnose and remediate** settings determine whether Systems Manager automatically scans your nodes to make sure they can communicate with Systems Manager. If enabled, the feature runs automatically according to a schedule you define. The feature identifies which nodes can't connect to Systems Manager and why. This feature also provides recommended runbooks for remediating networking issues and other problems preventing nodes from being configured as managed nodes.
 
 ### Scheduling a recurring diagnostic scan
 <a name="settings-diagnose-and-remediate-schedule-diagnostic-run"></a>
 
-Systems Manager can diagnose and help you remediate several types of deployment failures, as well as drifted configurations. Systems Manager can also identify Amazon Elastic Compute Cloud (Amazon EC2) instances in your account or organization that Systems Manager isn't able to treat as a *managed node*. The EC2 instance diagnosis process can identify issues related to misconfigurations for a virtual private cloud (VPC), in a Domain Name Service (DNS) setting, or in an Amazon Elastic Compute Cloud (Amazon EC2) security group.
+Systems Manager can diagnose and help you remediate several types of deployment failures, as well as drifted configurations. Systems Manager can also identify Amazon Elastic Compute Cloud (Amazon EC2) instances in your account or organization that Systems Manager can't treat as a *managed node*. The EC2 instance diagnosis process can identify issues related to misconfigurations for a virtual private cloud (VPC), in a Domain Name Service (DNS) setting, or in an Amazon Elastic Compute Cloud (Amazon EC2) security group.
 
-To simply the task of identifying nodes that can't connect to Systems Manager, the **Schedule recurring diagnosis** feature enables you to automate a recurring diagnostic scan. The scans help identify which nodes can't connect to Systems Manager and why. Use the following procedure to enable and configure a recurring diagnostic scan of your nodes.
+To simply the task of identifying nodes that can't connect to Systems Manager, the **Schedule recurring diagnosis** feature lets you automate a recurring diagnostic scan. The scans help identify which nodes can't connect to Systems Manager and why. Use the following procedure to enable and configure a recurring diagnostic scan of your nodes.
 
 **To schedule a recurring diagnostic scan**
 

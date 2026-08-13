@@ -10,7 +10,7 @@ If you want to stop updating the metadata table configuration for an Amazon S3 g
 **Note**
 If you delete your metadata table configuration and want to re-create a configuration for the same general purpose bucket, you must first manually delete the old journal, inventory, and annotation tables from your AWS managed table bucket. Otherwise, creating the new metadata table configuration fails because those tables already exist. To delete your metadata tables, see [Deleting metadata tables](metadata-tables-delete-table.md).
 
-To delete your metadata tables, see [Delete a metadata table](metadata-tables-delete-table.md#delete-metadata-table-procedure). To delete your table bucket, see [Deleting table buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-buckets-delete.html) and [https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3TableBuckets_DeleteTableBucket.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3TableBuckets_DeleteTableBucket.html) in the *Amazon S3 API Reference*.
+To delete your metadata tables, see [Delete a metadata table](metadata-tables-delete-table.md#delete-metadata-table-procedure). To delete your table bucket, see [Deleting table buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-buckets-delete.html) and [DeleteTableBucket](https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3TableBuckets_DeleteTableBucket.html) in the *Amazon S3 API Reference*.
 
 You can delete a metadata table configuration by using the Amazon S3 console, the AWS Command Line Interface (AWS CLI), the AWS SDKs, or the Amazon S3 REST API.
 
@@ -64,7 +64,7 @@ To use the following example commands, replace the `{{user input placeholders}}`
 ### Using the REST API
 <a name="delete-metadata-config-rest-api"></a>
 
-You can send REST requests to delete a metadata table configuration. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketMetadataConfiguration.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketMetadataConfiguration.html).
+You can send REST requests to delete a metadata table configuration. For more information, see [DeleteBucketMetadataConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketMetadataConfiguration.html).
 
 **Note**
 You can use the V2 `DeleteBucketMetadataConfiguration` API operation with V1 or V2 metadata table configurations. However, if you try to use the V1 `DeleteBucketMetadataTableConfiguration` API operation with V2 configurations, you will receive an HTTP `405 Method Not Allowed` error.

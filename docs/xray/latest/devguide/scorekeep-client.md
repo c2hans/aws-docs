@@ -8,13 +8,13 @@ source_url: https://docs.aws.amazon.com/xray/latest/devguide/scorekeep-client.ht
 **Note**
 X-Ray SDK/Daemon Maintenance Notice – On February 25th, 2026, the AWS X-Ray SDKs/Daemon will enter maintenance mode, where AWS will limit X-Ray SDK and Daemon releases to address security issues only. For more information on the support timeline, see [X-Ray SDK and Daemon Support timeline](xray-sdk-daemon-timeline.md). We recommend to migrate to OpenTelemetry. For more information on migrating to OpenTelemetry, see [Migrating from X-Ray instrumentation to OpenTelemetry instrumentation ](https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html).
 
-In the [https://github.com/awslabs/eb-java-scorekeep/tree/xray-cognito](https://github.com/awslabs/eb-java-scorekeep/tree/xray-cognito) branch, Scorekeep uses Amazon Cognito to enable users to create an account and sign in with it to retrieve their user information from an Amazon Cognito user pool. When a user signs in, Scorekeep uses an Amazon Cognito identity pool to get temporary AWS credentials for use with the AWS SDK for JavaScript.
+In the [`xray-cognito`](https://github.com/awslabs/eb-java-scorekeep/tree/xray-cognito) branch, Scorekeep uses Amazon Cognito to enable users to create an account and sign in with it to retrieve their user information from an Amazon Cognito user pool. When a user signs in, Scorekeep uses an Amazon Cognito identity pool to get temporary AWS credentials for use with the AWS SDK for JavaScript.
 
 The identity pool is configured to let signed-in users write trace data to AWS X-Ray. The web app uses these credentials to record the signed-in user's ID, the browser path, and the client's view of calls to the Scorekeep API.
 
 Most of the work is done in a service class named `xray`. This service class provides methods for generating the required identifiers, creating in-progress segments, finalizing segments, and sending segment documents to the X-Ray API.
 
-**Example [https://github.com/awslabs/eb-java-scorekeep/tree/xray-cognito/public/app/xray.js](https://github.com/awslabs/eb-java-scorekeep/tree/xray-cognito/public/app/xray.js) – Record and upload segments**
+**Example [`public/xray.js`](https://github.com/awslabs/eb-java-scorekeep/tree/xray-cognito/public/app/xray.js) – Record and upload segments**
 
 ```
 ...
@@ -69,7 +69,7 @@ Most of the work is done in a service class named `xray`. This service class pro
 
 These methods are called in header and `transformResponse` functions in the resource services that the web app uses to call the Scorekeep API. To include the client segment in the same trace as the segment that the API generates, the web app must include the trace ID and segment ID in a [tracing header](xray-concepts.md#xray-concepts-tracingheader) (`X-Amzn-Trace-Id`) that the X-Ray SDK can read. When the instrumented Java application receives a request with this header, the X-Ray SDK for Java uses the same trace ID and makes the segment from the web app client the parent of its segment.
 
-**Example [https://github.com/awslabs/eb-java-scorekeep/tree/xray-cognito/public/app/services.js](https://github.com/awslabs/eb-java-scorekeep/tree/xray-cognito/public/app/services.js) – Recording segments for angular resource calls and writing tracing headers**
+**Example [`public/app/services.js`](https://github.com/awslabs/eb-java-scorekeep/tree/xray-cognito/public/app/services.js) – Recording segments for angular resource calls and writing tracing headers**
 
 ```
 var module = angular.module('scorekeep');

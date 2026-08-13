@@ -94,13 +94,13 @@ Adds an AssumeRolePolicyDocument for the default created `Role` for this functio
 
  `AutoPublishAlias`   <a name="sam-function-autopublishalias"></a>
 The name of the Lambda alias. For more information about Lambda aliases, see [Lambda function aliases](https://docs.aws.amazon.com/lambda/latest/dg/configuration-aliases.html) in the *AWS Lambda Developer Guide*. For examples that use this property, see [Deploying serverless applications gradually with AWS SAM](automating-updates-to-serverless-apps.md).
-AWS SAM generates [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html) and [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html) resources when this property is set. For information about this scenario, see [AutoPublishAlias property is specified](sam-specification-generated-resources-function.md#sam-specification-generated-resources-function-autopublishalias). For general information about generated CloudFormation resources, see [Generated CloudFormation resources for AWS SAM](sam-specification-generated-resources.md).
+AWS SAM generates [AWS::Lambda::Version](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html) and [AWS::Lambda::Alias](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html) resources when this property is set. For information about this scenario, see [AutoPublishAlias property is specified](sam-specification-generated-resources-function.md#sam-specification-generated-resources-function-autopublishalias). For general information about generated CloudFormation resources, see [Generated CloudFormation resources for AWS SAM](sam-specification-generated-resources.md).
 *Type*: String
 *Required*: No
 *CloudFormation compatibility*: This property is unique to AWS SAM and doesn't have an CloudFormation equivalent.
 
  `AutoPublishAliasAllProperties`   <a name="sam-function-autopublishaliasallproperties"></a>
-Specifies when a new [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html) is created. When `true`, a new Lambda version is created when any property in the Lambda function is modified. When `false`, a new Lambda version is created only when any of the following properties are modified:
+Specifies when a new [`AWS::Lambda::Version`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html) is created. When `true`, a new Lambda version is created when any property in the Lambda function is modified. When `false`, a new Lambda version is created only when any of the following properties are modified:
 + `Environment`, `MemorySize`, or `SnapStart`.
 + Any change that results in an update to the `Code` property, such as `CodeDict`, `ImageUri`, or `InlineCode`.
 This property requires `AutoPublishAlias` to be defined.
@@ -129,7 +129,7 @@ Configures the capacity provider to which published versions of the function wil
 *CloudFormation compatibility*: SAM flattens the property passed to the `[CapacityProviderConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-capacityproviderconfig)` property of an `AWS::Lambda::Function` resource and reconstructs the nested structure.
 
  `CodeSigningConfigArn`   <a name="sam-function-codesigningconfigarn"></a>
-The ARN of the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-codesigningconfig.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-codesigningconfig.html) resource, used to enable code signing for this function. For more information about code signing, see [Set up code signing for your AWS SAM application](authoring-codesigning.md).
+The ARN of the [AWS::Lambda::CodeSigningConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-codesigningconfig.html) resource, used to enable code signing for this function. For more information about code signing, see [Set up code signing for your AWS SAM application](authoring-codesigning.md).
 *Type*: String
 *Required*: No
 *CloudFormation compatibility*: This property is passed directly to the `[CodeSigningConfigArn](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-codesigningconfigarn)` property of an `AWS::Lambda::Function` resource.
@@ -155,7 +155,7 @@ If your Lambda function's event source is an Amazon SQS queue, configure a dead-
 
  `DeploymentPreference`   <a name="sam-function-deploymentpreference"></a>
 The settings to enable gradual Lambda deployments.
-If a `DeploymentPreference` object is specified, AWS SAM creates an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-application.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-application.html) called `ServerlessDeploymentApplication` (one per stack), an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html) called `{{<function-logical-id>}}DeploymentGroup`, and an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html) called `CodeDeployServiceRole`.
+If a `DeploymentPreference` object is specified, AWS SAM creates an [AWS::CodeDeploy::Application](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-application.html) called `ServerlessDeploymentApplication` (one per stack), an [AWS::CodeDeploy::DeploymentGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html) called `{{<function-logical-id>}}DeploymentGroup`, and an [AWS::IAM::Role](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html) called `CodeDeployServiceRole`.
 *Type*: [DeploymentPreference](sam-property-function-deploymentpreference.md)
 *Required*: No
 *CloudFormation compatibility*: This property is unique to AWS SAM and doesn't have an CloudFormation equivalent.
@@ -201,7 +201,7 @@ Specifies the events that trigger this function. Events consist of a type and a 
  `FileSystemConfigs`   <a name="sam-function-filesystemconfigs"></a>
 List of [FileSystemConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-filesystemconfig.html) objects that specify the connection settings for an Amazon Elastic File System (Amazon EFS) file system or an Amazon S3 Files file system. You can attach either an Amazon EFS access point or an S3 Files access point, but not both.
 Each `FileSystemConfig` object contains an `Arn` (the access point ARN) and a `LocalMountPath` (the path where the file system is mounted in the function). For Amazon EFS, the ARN is an Amazon EFS access point ARN. For S3 Files, the ARN is an `AWS::S3Files::AccessPoint` ARN.
-If your template contains an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html) resource, you must also specify a `DependsOn` resource attribute to ensure that the mount target is created or updated before the function. Similarly, if your template contains an `AWS::S3Files::MountTarget` resource, you must specify a `DependsOn` attribute for the S3 Files mount target.
+If your template contains an [AWS::EFS::MountTarget](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html) resource, you must also specify a `DependsOn` resource attribute to ensure that the mount target is created or updated before the function. Similarly, if your template contains an `AWS::S3Files::MountTarget` resource, you must specify a `DependsOn` attribute for the S3 Files mount target.
 *Type*: List
 *Required*: No
 *CloudFormation compatibility*: This property is passed directly to the `[FileSystemConfigs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-filesystemconfigs)` property of an `AWS::Lambda::Function` resource.
@@ -268,7 +268,7 @@ The list of `LayerVersion` ARNs that this function should use. The order specifi
 The function's Amazon CloudWatch Logs configuration settings.
 *Type*: [LoggingConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-loggingconfig.html)
 *Required*: No
-*CloudFormation compatibility*: This property is passed directly to the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-loggingconfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-loggingconfig) property of an `AWS::Lambda::Function` resource.
+*CloudFormation compatibility*: This property is passed directly to the [`LoggingConfig`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-loggingconfig) property of an `AWS::Lambda::Function` resource.
 
  `MemorySize`   <a name="sam-function-memorysize"></a>
 The size of the memory in MB allocated per invocation of the function.
@@ -437,14 +437,14 @@ The configuration that enables this function to access private resources within 
 
 When the logical ID of this resource is provided to the `Ref` intrinsic function, it returns the resource name of the underlying Lambda function.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html) in the *AWS CloudFormation User Guide*.
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html) in the *AWS CloudFormation User Guide*.
 
 ### Fn::GetAtt
 <a name="sam-resource-function-return-values-fn--getatt"></a>
 
 `Fn::GetAtt` returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using `Fn::GetAtt`, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html) in the *AWS CloudFormation User Guide*.
+For more information about using `Fn::GetAtt`, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html) in the *AWS CloudFormation User Guide*.
 
 `Arn`  <a name="Arn-fn::getatt"></a>
 The ARN of the underlying Lambda function.

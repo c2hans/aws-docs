@@ -31,7 +31,7 @@ To delete a replication instance, use the AWS console.
 ## Deleting a replication instance using the CLI
 <a name="CHAP_ReplicationInstance.Deleting.CLI"></a>
 
-To delete a replication instance, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/dms/delete-replication-instance.html](https://docs.aws.amazon.com/cli/latest/reference/dms/delete-replication-instance.html) command with the following parameter:
+To delete a replication instance, use the AWS CLI [`delete-replication-instance`](https://docs.aws.amazon.com/cli/latest/reference/dms/delete-replication-instance.html) command with the following parameter:
 + `--replication-instance-arn`
 
 **Example delete**
@@ -45,7 +45,7 @@ aws dms delete-replication-instance \
 ## Deleting a replication instance using the API
 <a name="CHAP_ReplicationInstance.Deleting.API"></a>
 
-To delete a replication instance, use the AWS DMS API [https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteReplicationInstance.html](https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteReplicationInstance.html) action with the following parameters:
+To delete a replication instance, use the AWS DMS API [`DeleteReplicationInstance`](https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteReplicationInstance.html) action with the following parameters:
 + `ReplicationInstanceArn = {{arn of my rep instance}}`
 
 **Example delete**

@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon CloudFront service and 
 
 **Resource type:** `AWS::CloudFront::Distribution`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-default-root-object-configured.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-default-root-object-configured.html)
+**AWS Config rule:** [cloudfront-default-root-object-configured](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-default-root-object-configured.html)
 
 **Schedule type:** Change triggered
 
@@ -44,7 +44,7 @@ To configure a default root object for a CloudFront distribution, see [How to sp
 
 **Resource type:** `AWS::CloudFront::Distribution`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-viewer-policy-https.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-viewer-policy-https.html)
+**AWS Config rule:** [cloudfront-viewer-policy-https](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-viewer-policy-https.html)
 
 **Schedule type:** Change triggered
 
@@ -70,7 +70,7 @@ To encrypt a CloudFront distribution in transit, see [Requiring HTTPS for commun
 
 **Resource type:** `AWS::CloudFront::Distribution`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-origin-failover-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-origin-failover-enabled.html)
+**AWS Config rule:** [cloudfront-origin-failover-enabled](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-origin-failover-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -96,7 +96,7 @@ To configure origin failover for a CloudFront distribution, see [Creating an ori
 
 **Resource type:** `AWS::CloudFront::Distribution`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-accesslogs-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-accesslogs-enabled.html)
+**AWS Config rule:** [cloudfront-accesslogs-enabled](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-accesslogs-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -122,7 +122,7 @@ To configure standard logging (legacy) for a CloudFront distribution, see [Confi
 
 **Resource type:** `AWS::CloudFront::Distribution`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-associated-with-waf.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-associated-with-waf.html)
+**AWS Config rule:** [cloudfront-associated-with-waf](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-associated-with-waf.html)
 
 **Schedule type:** Change triggered
 
@@ -148,7 +148,7 @@ To associate an AWS WAF web ACL with a CloudFront distribution, see [Using AWS W
 
 **Resource type:** `AWS::CloudFront::Distribution`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-custom-ssl-certificate.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-custom-ssl-certificate.html)
+**AWS Config rule:** [cloudfront-custom-ssl-certificate](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-custom-ssl-certificate.html)
 
 **Schedule type:** Change triggered
 
@@ -174,7 +174,7 @@ To add an alternate domain name for a CloudFront distribution using a custom SSL
 
 **Resource type:** `AWS::CloudFront::Distribution`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-sni-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-sni-enabled.html)
+**AWS Config rule:** [cloudfront-sni-enabled](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-sni-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -200,7 +200,7 @@ To configure a CloudFront distribution to use SNI to serve HTTPS requests, see [
 
 **Resource type:** `AWS::CloudFront::Distribution`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-traffic-to-origin-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-traffic-to-origin-encrypted.html)
+**AWS Config rule:** [cloudfront-traffic-to-origin-encrypted](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-traffic-to-origin-encrypted.html)
 
 **Schedule type:** Change triggered
 
@@ -226,7 +226,7 @@ To update the Origin Protocol Policy to require encryption for a CloudFront conn
 
 **Resource type:** `AWS::CloudFront::Distribution`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-no-deprecated-ssl-protocols.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-no-deprecated-ssl-protocols.html)
+**AWS Config rule:** [cloudfront-no-deprecated-ssl-protocols](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-no-deprecated-ssl-protocols.html)
 
 **Schedule type:** Change triggered
 
@@ -252,7 +252,7 @@ To update the Origin SSL Protocols for a CloudFront distribution, see [Requiring
 
 **Resource type:** `AWS::CloudFront::Distribution`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-s3-origin-non-existent-bucket.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-s3-origin-non-existent-bucket.html)
+**AWS Config rule:** [cloudfront-s3-origin-non-existent-bucket](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-s3-origin-non-existent-bucket.html)
 
 **Schedule type:** Periodic
 
@@ -276,7 +276,7 @@ To modify a CloudFront distribution to point to a new origin, see [Updating a di
 
 **Resource type:** `AWS::CloudFront::Distribution`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-s3-origin-access-control-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-s3-origin-access-control-enabled.html)
+**AWS Config rule:** [cloudfront-s3-origin-access-control-enabled](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-s3-origin-access-control-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -331,7 +331,7 @@ To add tags to a CloudFront distribution, see [Tagging Amazon CloudFront distrib
 
 **Resource type:** `AWS::CloudFront::Distribution`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-ssl-policy-check.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-ssl-policy-check.html)
+**AWS Config rule:** [cloudfront-ssl-policy-check](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-ssl-policy-check.html)
 
 **Schedule type:** Change triggered
 
@@ -358,7 +358,7 @@ For information about configuring the security policy for a CloudFront distribut
 
 **Resource type:** `AWS::CloudFront::Distribution`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-origin-lambda-url-oac-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-origin-lambda-url-oac-enabled.html)
+**AWS Config rule:** [cloudfront-origin-lambda-url-oac-enabled](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-origin-lambda-url-oac-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -382,7 +382,7 @@ For information about configuring OAC for an Amazon CloudFront distribution that
 
 **Resource type:** `AWS::CloudFront::Distribution`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-distribution-key-group-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-distribution-key-group-enabled.html)
+**AWS Config rule:** [cloudfront-distribution-key-group-enabled](https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-distribution-key-group-enabled.html)
 
 **Schedule type:** Change triggered
 

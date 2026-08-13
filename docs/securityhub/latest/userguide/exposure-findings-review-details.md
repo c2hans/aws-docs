@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-fi
 ## Reviewing details for an exposure finding with the API
 <a name="exposure-findings-review-details-api"></a>
 
-You can review exposure findings with the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingsV2.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingsV2.html) API or with the AWS CLI. You can filter all exposure findings with the `metadata.product.feature.uid` field with the `security-hub/Exposure` value. For more information, see [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingsV2.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingsV2.html).
+You can review exposure findings with the [GetFindingsV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingsV2.html) API or with the AWS CLI. You can filter all exposure findings with the `metadata.product.feature.uid` field with the `security-hub/Exposure` value. For more information, see [GetFindingsV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingsV2.html).
 
 **Example command**
 The following is an AWS CLI example that retrieves the 10 most recently generated exposure findings in your account. This example is formatted for Linux, macOS, or Unix, and it uses the backslash (\\) line-continuation character to improve readability.

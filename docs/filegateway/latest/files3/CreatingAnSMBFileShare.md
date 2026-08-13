@@ -108,8 +108,8 @@ This setting is not meant to specify an exact time at which the notification wil
    + To use your corporate Microsoft Active Directory or AWS Managed Microsoft AD to authenticate user access to your SMB file share, choose **Active Directory**. Your gateway must be joined to a domain to use this method. For more information, see [Using Active Directory to authenticate users](https://docs.aws.amazon.com/filegateway/latest/files3/enable-ad-settings.html).
 **Note**
 To use AWS Managed Microsoft AD with an Amazon EC2 gateway, you must create the Amazon EC2 instance in the same VPC as the AWS Managed Microsoft AD, add the `_workspaceMembers` security group to the Amazon EC2 instance, and join the AD domain using the Admin credentials from the AWS Managed Microsoft AD.
-For more information about AWS Managed Microsoft AD, see the [https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html).
-For more information about Amazon EC2, see the [https://docs.aws.amazon.com/ec2/](https://docs.aws.amazon.com/ec2/).
+For more information about AWS Managed Microsoft AD, see the [*AWS Directory Service Administration Guide*](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html).
+For more information about Amazon EC2, see the [*Amazon Elastic Compute Cloud Documentation*](https://docs.aws.amazon.com/ec2/).
 
      If **Join status** indicates that your gateway is already joined to an Active Directory domain, proceed to the next step. Otherwise, do the following:
 

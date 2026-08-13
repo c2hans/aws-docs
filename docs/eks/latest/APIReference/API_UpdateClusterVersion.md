@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateCluste
 # UpdateClusterVersion
 <a name="API_UpdateClusterVersion"></a>
 
-Updates an Amazon EKS cluster to the specified Kubernetes version. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the [https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeUpdate.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeUpdate.html) API operation.
+Updates an Amazon EKS cluster to the specified Kubernetes version. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the [`DescribeUpdate`](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeUpdate.html) API operation.
 
 Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to `UPDATING` (this status transition is eventually consistent). When the update is complete (either `Failed` or `Successful`), the cluster status moves to `Active`.
 
@@ -157,7 +157,7 @@ The Amazon EKS subscription ID with the exception.
 HTTP Status Code: 400
 
  ** InvalidStateException **
-Amazon EKS detected upgrade readiness issues. Call the [https://docs.aws.amazon.com/eks/latest/APIReference/API_ListInsights.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListInsights.html) API to view detected upgrade blocking issues. Pass the [https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateClusterVersion.html#API_UpdateClusterVersion_RequestBody](https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateClusterVersion.html#API_UpdateClusterVersion_RequestBody) flag when updating to override upgrade readiness errors.
+Amazon EKS detected upgrade readiness issues. Call the [`ListInsights`](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListInsights.html) API to view detected upgrade blocking issues. Pass the [`force`](https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateClusterVersion.html#API_UpdateClusterVersion_RequestBody) flag when updating to override upgrade readiness errors.
  ** clusterName **
 The Amazon EKS cluster associated with the exception.
 HTTP Status Code: 400

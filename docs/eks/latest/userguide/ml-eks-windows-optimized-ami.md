@@ -175,6 +175,6 @@ Depending on your AWS account configuration, you may have service limits on the 
 There is no EKS Windows GPU Optimized AMI or EC2 Image Builder managed component provided by Amazon EKS. You will need to follow the steps in this guide to build a custom EKS Windows Optimized AMI with the required GPU drivers pre-installed, or install the necessary GPU drivers on your EKS worker nodes after launching your instances.
 
 ### Inferentia and Trainium not supported
-<a name="ml-eks-windows-ami-inferentia-tranium-support"></a>
+<a name="ml-eks-windows-ami-inferentia-trainium-support"></a>
 
  AWS [Inferentia](https://aws.amazon.com/ai/machine-learning/inferentia/) and AWS [Trainium](https://aws.amazon.com/ai/machine-learning/trainium/) based workloads are not supported on Windows.

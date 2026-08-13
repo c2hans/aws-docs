@@ -20,7 +20,7 @@ These controls may not be available in all AWS Regions. For more information, se
 
 **Resource type:** `AWS::AutoScaling::AutoScalingGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-group-elb-healthcheck-required.html](https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-group-elb-healthcheck-required.html)
+**AWS Config rule:** [`autoscaling-group-elb-healthcheck-required`](https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-group-elb-healthcheck-required.html)
 
 **Schedule type:** Change triggered
 
@@ -46,7 +46,7 @@ To add Elastic Load Balancing health checks, see [Add Elastic Load Balancing hea
 
 **Resource type:** `AWS::AutoScaling::AutoScalingGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-multiple-az.html](https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-multiple-az.html)
+**AWS Config rule:** [`autoscaling-multiple-az`](https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-multiple-az.html)
 
 **Schedule type:** Change triggered
 
@@ -76,7 +76,7 @@ To add AZs to an existing Auto Scaling group, see [Add and remove Availability Z
 
 **Resource type:** `AWS::AutoScaling::LaunchConfiguration`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-launchconfig-requires-imdsv2.html](https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-launchconfig-requires-imdsv2.html)
+**AWS Config rule:** [`autoscaling-launchconfig-requires-imdsv2`](https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-launchconfig-requires-imdsv2.html)
 
 **Schedule type:** Change triggered
 
@@ -107,7 +107,7 @@ Security Hub CSPM retired this control in April 2024. For more information, see 
 
 **Resource type:** `AWS::AutoScaling::LaunchConfiguration`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-launch-config-hop-limit.html](https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-launch-config-hop-limit.html)
+**AWS Config rule:** [`autoscaling-launch-config-hop-limit`](https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-launch-config-hop-limit.html)
 
 **Schedule type:** Change triggered
 
@@ -135,7 +135,7 @@ To modify the metadata response hop limit for an existing launch configuration, 
 
 **Resource type:** `AWS::AutoScaling::LaunchConfiguration`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-launch-config-public-ip-disabled.html](https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-launch-config-public-ip-disabled.html)
+**AWS Config rule:** [`autoscaling-launch-config-public-ip-disabled`](https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-launch-config-public-ip-disabled.html)
 
 **Schedule type:** Change triggered
 
@@ -163,7 +163,7 @@ After you change the launch configuration, Auto Scaling launches new instances w
 
 **Resource type:** `AWS::AutoScaling::AutoScalingGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-multiple-instance-types.html](https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-multiple-instance-types.html)
+**AWS Config rule:** [`autoscaling-multiple-instance-types`](https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-multiple-instance-types.html)
 
 **Schedule type:** Change triggered
 
@@ -189,7 +189,7 @@ To create an Auto Scaling group with multiple instance types, see [Auto Scaling 
 
 **Resource type:** `AWS::AutoScaling::AutoScalingGroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-launch-template.html](https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-launch-template.html)
+**AWS Config rule:** [`autoscaling-launch-template`](https://docs.aws.amazon.com/config/latest/developerguide/autoscaling-launch-template.html)
 
 **Schedule type:** Change triggered
 

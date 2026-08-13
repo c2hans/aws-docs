@@ -42,7 +42,7 @@ To learn how to create a managed knowledge base, choose the tab for your preferr
      + **No chunking**: For pre-processed or pre-split documents.
 
 1. (Optional) Expand **Advanced configurations** to configure advanced indexing. Under **Content indexing**, the default indexes text-based content from common documents. Enable advanced indexing for additional modalities:
-   + **Visual content in documents**: Processes embedded visuals in .pdf, .docx, .ppt, .pptx files.
+   + **Visual content in documents**: Processes standalone image files (.png, .jpg, .jpeg, .jpe, .tif, .tiff, .gif, .bmp, .webp, .svg, .jp2, .heic) and embedded visuals in .pdf, .docx, .ppt, .pptx files.
    + **Audio files**: Processes .mp3, .wav, .m4a, .flac, .ogg files.
    + **Video files**: Processes .mp4, .mov, .m4v files.
 

@@ -14,7 +14,7 @@ The following examples show you how to stop a model evaluation job using the AWS
 
 The following example shows you how to stop a model evaluation job using the AWS Management Console
 
-1. Open the Amazon Bedrock console: [https://console.aws.amazon.com/bedrock/home](https://console.aws.amazon.com/bedrock/home)
+1. Open the Amazon Bedrock console: [[https://console.aws.amazon.com/bedrock/](https://console.aws.amazon.com/bedrock/)](https://console.aws.amazon.com/bedrock/home)
 
 1. In the navigation pane, choose **Model evaluation**.
 

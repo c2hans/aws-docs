@@ -142,7 +142,7 @@ If you make backward incompatible changes to the SSM document, you must call Put
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the remediation action with the associated SSM document.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-config-remediationconfiguration-return-values-fn--getatt"></a>

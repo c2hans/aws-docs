@@ -109,10 +109,10 @@ This tutorial provides instructions for the backend-only version. For more detai
 1.  Choose the following to launch the CloudFormation Stack in that Region.
    +  For AWS China Regions
 
-      [https://console.amazonaws.cn/cloudformation/home#/stacks/create/template?stackName=DTHECRStack&templateURL=https://solutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferECRStack.template](https://console.amazonaws.cn/cloudformation/home#/stacks/create/template?stackName=DTHECRStack&templateURL=https://solutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferECRStack.template)
+      [![Blue rectangular button labeled "Launch Stack" with a play icon.](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/launch-stack.png)](https://console.amazonaws.cn/cloudformation/home#/stacks/create/template?stackName=DTHECRStack&templateURL=https://solutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferECRStack.template)
    +  For AWS Global Regions
 
-      [https://console.aws.amazon.com/cloudformation/home#/stacks/create/template?stackName=DTHECRStack&templateURL=https://solutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferECRStack.template](https://console.aws.amazon.com/cloudformation/home#/stacks/create/template?stackName=DTHECRStack&templateURL=https://solutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferECRStack.template)
+      [![Blue rectangular button labeled "Launch Stack" with a play icon.](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/create/template?stackName=DTHECRStack&templateURL=https://solutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferECRStack.template)
 
 1.  Choose **Next**. Specify values to parameters accordingly. Change the stack name if required.
 
@@ -125,7 +125,7 @@ This tutorial provides instructions for the backend-only version. For more detai
 ## Using AWS CLI
 <a name="using-aws-cli-1"></a>
 
- You can use the [https://aws.amazon.com/cli/](https://aws.amazon.com/cli/) to create an Amazon ECR transfer task. Note that if you have deployed the Datat Transfer Hub Portal at the same time, the tasks started through the CLI will not appear in the Task List on your Portal.
+ You can use the [*AWS CLI*](https://aws.amazon.com/cli/) to create an Amazon ECR transfer task. Note that if you have deployed the Datat Transfer Hub Portal at the same time, the tasks started through the CLI will not appear in the Task List on your Portal.
 
 1.  Create an Amazon VPC with two public subnets or two private subnets with [NAT gateway](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html).
 

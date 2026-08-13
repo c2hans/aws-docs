@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 
 The [cloudformation](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation) directory in the deadline-cloud-samples repository contains CloudFormation templates that deploy Deadline Cloud farms and supporting infrastructure. Use these templates as a starting point and adapt them to your environment.
 
+To compare CloudFormation with the AWS CDK and Terraform for managing Deadline Cloud infrastructure, see [Manage Deadline Cloud infrastructure as code](infrastructure-as-code.md).
+
 **Topics**
 + [Deploy a starter Deadline Cloud farm with CloudFormation](examples-cfn-starter-farm.md)
 + [Deploy a Deadline Cloud CUDA farm with CloudFormation](examples-cfn-cuda-farm.md)

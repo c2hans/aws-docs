@@ -11,7 +11,7 @@ Amazon Simple Storage Service (Amazon S3) is a web service that provides highly 
 
 ![Relationship between JavaScript environments, the SDK, and Amazon S3](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/code-samples-s3.png)
 
-The JavaScript API for Amazon S3 is exposed through the `AWS.S3` client class. For more information about using the Amazon S3 client class, see [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html) in the API reference.
+The JavaScript API for Amazon S3 is exposed through the `AWS.S3` client class. For more information about using the Amazon S3 client class, see [`Class: AWS.S3`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html) in the API reference.
 
 **Topics**
 + [Amazon S3 Browser Examples](s3-browser-examples.md)

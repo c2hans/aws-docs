@@ -18,10 +18,19 @@ The business context API describes the data types and operations for managing as
 + [SearchSort structure](#aws-glue-api-catalog-aws-glue-api-semantics-SearchSort)
 + [SearchFilterClause structure](#aws-glue-api-catalog-aws-glue-api-semantics-SearchFilterClause)
 + [SearchAttributeFilter structure](#aws-glue-api-catalog-aws-glue-api-semantics-SearchAttributeFilter)
++ [SearchMapFilter structure](#aws-glue-api-catalog-aws-glue-api-semantics-SearchMapFilter)
++ [SearchMapFilterValue structure](#aws-glue-api-catalog-aws-glue-api-semantics-SearchMapFilterValue)
 + [SearchFilterValue structure](#aws-glue-api-catalog-aws-glue-api-semantics-SearchFilterValue)
 + [ItemError structure](#aws-glue-api-catalog-aws-glue-api-semantics-ItemError)
++ [AssetTypeItem structure](#aws-glue-api-catalog-aws-glue-api-semantics-AssetTypeItem)
++ [FormTypeItem structure](#aws-glue-api-catalog-aws-glue-api-semantics-FormTypeItem)
++ [GlossaryItem structure](#aws-glue-api-catalog-aws-glue-api-semantics-GlossaryItem)
++ [GlossaryTermItem structure](#aws-glue-api-catalog-aws-glue-api-semantics-GlossaryTermItem)
 + [GetAssetOutput structure](#aws-glue-api-catalog-aws-glue-api-semantics-GetAssetOutput)
-+ [SearchOutput structure](#aws-glue-api-catalog-aws-glue-api-semantics-SearchOutput)
++ [SearchAssetsOutput structure](#aws-glue-api-catalog-aws-glue-api-semantics-SearchAssetsOutput)
++ [ExportEncryptionConfiguration structure](#aws-glue-api-catalog-aws-glue-api-semantics-ExportEncryptionConfiguration)
++ [GetDataCatalogExportConfigurationOutput structure](#aws-glue-api-catalog-aws-glue-api-semantics-GetDataCatalogExportConfigurationOutput)
++ [PutDataCatalogExportConfigurationOutput structure](#aws-glue-api-catalog-aws-glue-api-semantics-PutDataCatalogExportConfigurationOutput)
 
 ## AssetFormEntry structure
 <a name="aws-glue-api-catalog-aws-glue-api-semantics-AssetFormEntry"></a>
@@ -111,7 +120,7 @@ A summary of an item in an iterable form.
 A single search result item representing a matched asset.
 
 **Fields**
-+ `Id` – UTF-8 string, not less than 1 or more than 1087 bytes long, matching the `String`.
++ `Id` – UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the matched asset.
 + `AssetName` – UTF-8 string.
@@ -155,7 +164,7 @@ A filter clause that supports nested boolean logic. Exactly one of `andAllFilter
 + `AttributeFilter` – A [SearchAttributeFilter](#aws-glue-api-catalog-aws-glue-api-semantics-SearchAttributeFilter) object.
 
   A filter on a single attribute value.
-+ `MapFilter` – .
++ `MapFilter` – A [SearchMapFilter](#aws-glue-api-catalog-aws-glue-api-semantics-SearchMapFilter) object.
 
   A filter on a map attribute's key-value pair.
 
@@ -174,6 +183,32 @@ A filter that compares an attribute value using an operator.
 + `Value` – A [SearchFilterValue](#aws-glue-api-catalog-aws-glue-api-semantics-SearchFilterValue) object.
 
   The value to compare against.
+
+## SearchMapFilter structure
+<a name="aws-glue-api-catalog-aws-glue-api-semantics-SearchMapFilter"></a>
+
+A filter on a map attribute's key-value pair.
+
+**Fields**
++ `Attribute` – *Required:* UTF-8 string, not less than 1 or more than 128 bytes long.
+
+  The map attribute name to filter on.
++ `Key` – *Required:* UTF-8 string, not less than 1 or more than 128 bytes long.
+
+  The key within the map attribute to filter on.
++ `Value` – *Required:* A [SearchMapFilterValue](#aws-glue-api-catalog-aws-glue-api-semantics-SearchMapFilterValue) object.
+
+  The value to compare against.
+
+## SearchMapFilterValue structure
+<a name="aws-glue-api-catalog-aws-glue-api-semantics-SearchMapFilterValue"></a>
+
+A map filter value. Currently supports string comparison only.
+
+**Fields**
++ `StringValue` – UTF-8 string, not more than 256 bytes long.
+
+  A string filter value.
 
 ## SearchFilterValue structure
 <a name="aws-glue-api-catalog-aws-glue-api-semantics-SearchFilterValue"></a>
@@ -204,13 +239,71 @@ An error that occurred when retrieving an iterable form item.
 
   The error message.
 
+## AssetTypeItem structure
+<a name="aws-glue-api-catalog-aws-glue-api-semantics-AssetTypeItem"></a>
+
+A summary of an asset type.
+
+**Fields**
++ `Id` – UTF-8 string, not less than 1 or more than 256 bytes long.
+
+  The identifier of the asset type.
++ `Name` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #75](aws-glue-api-common.md#regex_75).
+
+  The name of the asset type.
+
+## FormTypeItem structure
+<a name="aws-glue-api-catalog-aws-glue-api-semantics-FormTypeItem"></a>
+
+A summary of a form type.
+
+**Fields**
++ `Id` – UTF-8 string, not less than 1 or more than 256 bytes long.
+
+  The identifier of the form type.
++ `Name` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #77](aws-glue-api-common.md#regex_77).
+
+  The name of the form type.
+
+## GlossaryItem structure
+<a name="aws-glue-api-catalog-aws-glue-api-semantics-GlossaryItem"></a>
+
+A summary of a business glossary.
+
+**Fields**
++ `Id` – UTF-8 string.
+
+  The unique identifier of the glossary.
++ `Name` – UTF-8 string, not less than 1 or more than 256 bytes long.
+
+  The name of the glossary.
++ `Description` – UTF-8 string, not less than 1 or more than 2048 bytes long.
+
+  The description of the glossary.
+
+## GlossaryTermItem structure
+<a name="aws-glue-api-catalog-aws-glue-api-semantics-GlossaryTermItem"></a>
+
+A summary of a glossary term.
+
+**Fields**
++ `Id` – UTF-8 string.
+
+  The unique identifier of the glossary term.
++ `Name` – UTF-8 string, not less than 1 or more than 256 bytes long.
+
+  The name of the glossary term.
++ `ShortDescription` – UTF-8 string, not less than 1 or more than 1024 bytes long.
+
+  The short description of the glossary term.
+
 ## GetAssetOutput structure
 <a name="aws-glue-api-catalog-aws-glue-api-semantics-GetAssetOutput"></a>
 
-The response structure for the `GetAsset` operation.
+The asset metadata returned by the `GetAsset` operation.
 
 **Fields**
-+ `Id` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the `String`.
++ `Id` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset.
 + `Name` – UTF-8 string.
@@ -225,12 +318,6 @@ The response structure for the `GetAsset` operation.
 + `UpdatedAt` – Timestamp.
 
   The timestamp at which the asset was last updated.
-+ `CreatedBy` – .
-
-  The identity of the principal that created the asset.
-+ `UpdatedBy` – .
-
-  The identity of the principal that last updated the asset.
 + `AssetTypeId` – *Required:* UTF-8 string, not less than 1 or more than 256 bytes long.
 
   The identifier of the asset type for this asset.
@@ -259,24 +346,69 @@ The response structure for the `GetAsset` operation.
 
   The iterable forms available on the asset, keyed by form name (for example, `columns`). Use the form name with `ListIterableForms` or `BatchGetIterableForms` to retrieve the form's items.
 
-## SearchOutput structure
-<a name="aws-glue-api-catalog-aws-glue-api-semantics-SearchOutput"></a>
+## SearchAssetsOutput structure
+<a name="aws-glue-api-catalog-aws-glue-api-semantics-SearchAssetsOutput"></a>
 
-The response structure for the `Search` operation.
+The search results returned by the `SearchAssets` operation.
 
 **Fields**
 + `Items` – An array of [SearchResultItem](#aws-glue-api-catalog-aws-glue-api-semantics-SearchResultItem) objects.
 
   The list of assets matching the search criteria.
-+ `TotalCount` – Number (integer).
-
-  The total number of assets matching the search criteria.
 + `NextToken` – UTF-8 string.
 
   A continuation token, present if the current segment is not the last.
-+ `Aggregations` – An array of objects.
 
-  The aggregation results for the requested attributes.
+## ExportEncryptionConfiguration structure
+<a name="aws-glue-api-catalog-aws-glue-api-semantics-ExportEncryptionConfiguration"></a>
+
+The encryption configuration for exported data catalog metadata.
+
+**Fields**
++ `SseAlgorithm` – UTF-8 string.
+
+  The server-side encryption algorithm used for the exported data. Valid values are `AES256` and `aws:kms`.
++ `KmsKeyArn` – UTF-8 string, matching the [Custom string pattern #72](aws-glue-api-common.md#regex_72).
+
+  The ARN of the KMS key used to encrypt the exported data.
+
+## GetDataCatalogExportConfigurationOutput structure
+<a name="aws-glue-api-catalog-aws-glue-api-semantics-GetDataCatalogExportConfigurationOutput"></a>
+
+The export configuration returned by the `GetDataCatalogExportConfiguration` operation.
+
+**Fields**
++ `ExportSetting` – UTF-8 string (valid values: `ENABLED` \| `DISABLED`).
+
+  The export setting for the data catalog. Valid values are `ENABLED` and `DISABLED`.
++ `Status` – UTF-8 string (valid values: `ENABLING` \| `ENABLED` \| `DISABLING` \| `DISABLED` \| `FAILED`).
+
+  The current status of the export. Valid values are `ENABLING`, `ENABLED`, `DISABLING`, `DISABLED`, and `FAILED`.
++ `EncryptionConfiguration` – An [ExportEncryptionConfiguration](#aws-glue-api-catalog-aws-glue-api-semantics-ExportEncryptionConfiguration) object.
+
+  The encryption configuration for the exported data.
++ `S3TableBucketArn` – UTF-8 string.
+
+  The ARN of the S3 Tables bucket where catalog metadata is exported.
++ `CreatedAt` – Timestamp.
+
+  The timestamp at which the export configuration was created.
++ `UpdatedAt` – Timestamp.
+
+  The timestamp at which the export configuration was last updated.
+
+## PutDataCatalogExportConfigurationOutput structure
+<a name="aws-glue-api-catalog-aws-glue-api-semantics-PutDataCatalogExportConfigurationOutput"></a>
+
+The export configuration returned by the `PutDataCatalogExportConfiguration` operation.
+
+**Fields**
++ `ExportSetting` – UTF-8 string (valid values: `ENABLED` \| `DISABLED`).
+
+  The export setting for the data catalog.
++ `EncryptionConfiguration` – An [ExportEncryptionConfiguration](#aws-glue-api-catalog-aws-glue-api-semantics-ExportEncryptionConfiguration) object.
+
+  The encryption configuration for the exported data.
 
 ## Operations
 <a name="aws-glue-api-catalog-aws-glue-api-semantics-actions"></a>
@@ -307,7 +439,9 @@ The response structure for the `Search` operation.
 + [ListGlossaryTerms action (Python: list\_glossary\_terms)](#aws-glue-api-catalog-aws-glue-api-semantics-ListGlossaryTerms)
 + [AssociateGlossaryTerms action (Python: associate\_glossary\_terms)](#aws-glue-api-catalog-aws-glue-api-semantics-AssociateGlossaryTerms)
 + [DisassociateGlossaryTerms action (Python: disassociate\_glossary\_terms)](#aws-glue-api-catalog-aws-glue-api-semantics-DisassociateGlossaryTerms)
-+ [Search action (Python: search)](#aws-glue-api-catalog-aws-glue-api-semantics-Search)
++ [SearchAssets action (Python: search\_assets)](#aws-glue-api-catalog-aws-glue-api-semantics-SearchAssets)
++ [GetDataCatalogExportConfiguration action (Python: get\_data\_catalog\_export\_configuration)](#aws-glue-api-catalog-aws-glue-api-semantics-GetDataCatalogExportConfiguration)
++ [PutDataCatalogExportConfiguration action (Python: put\_data\_catalog\_export\_configuration)](#aws-glue-api-catalog-aws-glue-api-semantics-PutDataCatalogExportConfiguration)
 
 ## GetAsset action (Python: get\_asset)
 <a name="aws-glue-api-catalog-aws-glue-api-semantics-GetAsset"></a>
@@ -339,13 +473,13 @@ aws glue get-asset --identifier quarterly-sales-2026q1
 ```
 
 **Request**
-+ `Identifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the `String`.
++ `Identifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset to retrieve.
 
 **Response**
 
-The response structure for the `GetAsset` operation.
+The asset metadata returned by the `GetAsset` operation.
 + `GetAssetOutput` – A [GetAssetOutput](#aws-glue-api-catalog-aws-glue-api-semantics-GetAssetOutput) object.
 
 **Errors**
@@ -389,7 +523,7 @@ aws glue put-asset \
 + `AssetTypeId` – *Required:* UTF-8 string, not less than 1 or more than 256 bytes long.
 
   The identifier of the asset type for the asset.
-+ `Identifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the `String`.
++ `Identifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset. If an asset with this identifier already exists, it is updated.
 + `Name` – *Required:* UTF-8 string.
@@ -410,7 +544,7 @@ aws glue put-asset \
   A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
 
 **Response**
-+ `Id` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the `String`.
++ `Id` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset.
 + `Name` – *Required:* UTF-8 string.
@@ -451,7 +585,7 @@ aws glue delete-asset --identifier quarterly-sales-2026q1
 ```
 
 **Request**
-+ `Identifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the `String`.
++ `Identifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset to delete.
 
@@ -490,12 +624,12 @@ aws glue put-asset-type \
 ```
 
 **Request**
-+ `Name` – *Required:* UTF-8 string, not less than 1 or more than 128 bytes long, matching the `String`.
++ `Name` – *Required:* UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #75](aws-glue-api-common.md#regex_75).
 
   The name of the asset type.
 + `Forms` – *Required:* A map array of key-value pairs, not less than 1 or more than 100 pairs.
 
-  Each key is a UTF-8 string, not less than 1 or more than 128 bytes long, matching the `String`.
+  Each key is a UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #75](aws-glue-api-common.md#regex_75).
 
   Each value is a An [AssetTypeFormReference](#aws-glue-api-catalog-aws-glue-api-semantics-AssetTypeFormReference) object.
 
@@ -508,12 +642,12 @@ aws glue put-asset-type \
 + `Id` – UTF-8 string, not less than 1 or more than 256 bytes long.
 
   The identifier of the asset type.
-+ `Name` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the `String`.
++ `Name` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #75](aws-glue-api-common.md#regex_75).
 
   The name of the asset type.
 + `Forms` – A map array of key-value pairs, not less than 1 or more than 100 pairs.
 
-  Each key is a UTF-8 string, not less than 1 or more than 128 bytes long, matching the `String`.
+  Each key is a UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #75](aws-glue-api-common.md#regex_75).
 
   Each value is a An [AssetTypeFormReference](#aws-glue-api-catalog-aws-glue-api-semantics-AssetTypeFormReference) object.
 
@@ -557,12 +691,12 @@ aws glue get-asset-type --identifier DataSet
 + `Id` – UTF-8 string, not less than 1 or more than 256 bytes long.
 
   The identifier of the asset type.
-+ `Name` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the `String`.
++ `Name` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #75](aws-glue-api-common.md#regex_75).
 
   The name of the asset type.
 + `Forms` – A map array of key-value pairs, not less than 1 or more than 100 pairs.
 
-  Each key is a UTF-8 string, not less than 1 or more than 128 bytes long, matching the `String`.
+  Each key is a UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #75](aws-glue-api-common.md#regex_75).
 
   Each value is a An [AssetTypeFormReference](#aws-glue-api-catalog-aws-glue-api-semantics-AssetTypeFormReference) object.
 
@@ -632,7 +766,7 @@ aws glue list-asset-types --max-results 20
   A continuation token, if this is a continuation call.
 
 **Response**
-+ `Items` – An array of objects.
++ `Items` – An array of [AssetTypeItem](#aws-glue-api-catalog-aws-glue-api-semantics-AssetTypeItem) objects.
 
   The list of asset type items.
 + `NextToken` – UTF-8 string.
@@ -669,7 +803,7 @@ aws glue put-form-type \
 ```
 
 **Request**
-+ `Name` – *Required:* UTF-8 string, not less than 1 or more than 128 bytes long, matching the `String`.
++ `Name` – *Required:* UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #77](aws-glue-api-common.md#regex_77).
 
   The name of the form type. Must start with an uppercase letter.
 + `Schema` – *Required:* UTF-8 string, not less than 1 or more than 100000 bytes long.
@@ -683,7 +817,7 @@ aws glue put-form-type \
 + `Id` – UTF-8 string, not less than 1 or more than 256 bytes long.
 
   The identifier of the form type.
-+ `Name` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the `String`.
++ `Name` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #77](aws-glue-api-common.md#regex_77).
 
   The name of the form type.
 + `Schema` – UTF-8 string, not less than 1 or more than 100000 bytes long.
@@ -724,7 +858,7 @@ aws glue get-form-type --identifier DataClassification
 + `Id` – UTF-8 string, not less than 1 or more than 256 bytes long.
 
   The identifier of the form type.
-+ `Name` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the `String`.
++ `Name` – UTF-8 string, not less than 1 or more than 128 bytes long, matching the [Custom string pattern #77](aws-glue-api-common.md#regex_77).
 
   The name of the form type.
 + `Schema` – UTF-8 string, not less than 1 or more than 100000 bytes long.
@@ -796,7 +930,7 @@ aws glue list-form-types --max-results 20
   A continuation token, if this is a continuation call.
 
 **Response**
-+ `Items` – *Required:* An array of objects.
++ `Items` – *Required:* An array of [FormTypeItem](#aws-glue-api-catalog-aws-glue-api-semantics-FormTypeItem) objects.
 
   The list of form type items.
 + `NextToken` – UTF-8 string.
@@ -825,23 +959,23 @@ aws glue put-attachment \
         --content '{"classification":"internal","owner":"analytics-team"}'
 
     {
-        "AssetId": "quarterly-sales-2026q1",
+        "AssetIdentifier": "quarterly-sales-2026q1",
         "AttachmentName": "reviewNote",
         "FormTypeId": "DataClassification"
     }
 ```
 
 **Request**
-+ `AssetIdentifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the `String`.
++ `AssetIdentifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset to attach the form to.
-+ `IterableFormName` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the `String`.
++ `IterableFormName` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #73](aws-glue-api-common.md#regex_73).
 
   The name of the iterable form. When specified along with `itemIdentifier`, the attachment targets an item within the iterable form rather than the asset itself.
 + `ItemIdentifier` – UTF-8 string, not less than 1 or more than 1087 bytes long.
 
   The identifier of the item within the iterable form. Required when `iterableFormName` is specified.
-+ `AttachmentName` – *Required:* UTF-8 string, not less than 1 or more than 256 bytes long, matching the `String`.
++ `AttachmentName` – *Required:* UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #76](aws-glue-api-common.md#regex_76).
 
   The name of the attachment.
 + `Content` – *Required:* UTF-8 string.
@@ -855,16 +989,16 @@ aws glue put-attachment \
   A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
 
 **Response**
-+ `AssetId` – UTF-8 string, not less than 1 or more than 1087 bytes long, matching the `String`.
++ `AssetIdentifier` – UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset.
-+ `IterableFormName` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the `String`.
++ `IterableFormName` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #73](aws-glue-api-common.md#regex_73).
 
   The name of the iterable form, if the attachment targets an item.
 + `ItemIdentifier` – UTF-8 string, not less than 1 or more than 1087 bytes long.
 
   The identifier of the item within the iterable form, if applicable.
-+ `AttachmentName` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the `String`.
++ `AttachmentName` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #76](aws-glue-api-common.md#regex_76).
 
   The name of the attachment.
 + `FormTypeId` – UTF-8 string, not less than 1 or more than 256 bytes long.
@@ -889,24 +1023,30 @@ The following example deletes an attachment from an asset.
 
 ```
 aws glue delete-attachment \
-        --identifier quarterly-sales-2026q1 \
+        --asset-identifier quarterly-sales-2026q1 \
         --attachment-name reviewNote
 
     {
-        "Identifier": "quarterly-sales-2026q1"
+        "AssetIdentifier": "quarterly-sales-2026q1"
     }
 ```
 
 **Request**
-+ `AssetIdentifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the `String`.
++ `AssetIdentifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset from which to delete the attachment.
-+ `AttachmentName` – *Required:* UTF-8 string, not less than 1 or more than 256 bytes long, matching the `String`.
++ `IterableFormName` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #73](aws-glue-api-common.md#regex_73).
+
+  The name of the iterable form. When specified along with `itemIdentifier`, the attachment is deleted from an item within the iterable form rather than from the asset itself.
++ `ItemIdentifier` – UTF-8 string, not less than 1 or more than 1087 bytes long.
+
+  The identifier of the item within the iterable form. Required when `iterableFormName` is specified.
++ `AttachmentName` – *Required:* UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #76](aws-glue-api-common.md#regex_76).
 
   The name of the attachment to delete.
 
 **Response**
-+ `Identifier` – UTF-8 string, not less than 1 or more than 1087 bytes long, matching the `String`.
++ `AssetIdentifier` – UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset.
 
@@ -953,10 +1093,10 @@ aws glue list-iterable-forms \
 ```
 
 **Request**
-+ `AssetIdentifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the `String`.
++ `AssetIdentifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset.
-+ `IterableFormName` – *Required:* UTF-8 string, not less than 1 or more than 256 bytes long, matching the `String`.
++ `IterableFormName` – *Required:* UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #73](aws-glue-api-common.md#regex_73).
 
   The name of the iterable form to list items from.
 + `MaxResults` – Number (integer), not less than 1 or more than 1000.
@@ -967,10 +1107,10 @@ aws glue list-iterable-forms \
   A continuation token, if this is a continuation call.
 
 **Response**
-+ `AssetId` – UTF-8 string, not less than 1 or more than 1087 bytes long, matching the `String`.
++ `AssetId` – UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset.
-+ `IterableFormName` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the `String`.
++ `IterableFormName` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #73](aws-glue-api-common.md#regex_73).
 
   The name of the iterable form.
 + `Items` – An array of [IterableFormListItem](#aws-glue-api-catalog-aws-glue-api-semantics-IterableFormListItem) objects.
@@ -1033,10 +1173,10 @@ aws glue batch-get-iterable-forms \
 ```
 
 **Request**
-+ `AssetIdentifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the `String`.
++ `AssetIdentifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset.
-+ `IterableFormName` – *Required:* UTF-8 string, not less than 1 or more than 256 bytes long, matching the `String`.
++ `IterableFormName` – *Required:* UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #73](aws-glue-api-common.md#regex_73).
 
   The name of the iterable form to retrieve items from.
 + `ItemIdentifiers` – *Required:* An array of UTF-8 strings, not less than 1 or more than 100 strings.
@@ -1262,7 +1402,7 @@ aws glue list-glossaries --max-results 20
   A continuation token, if this is a continuation call.
 
 **Response**
-+ `Items` – An array of objects.
++ `Items` – An array of [GlossaryItem](#aws-glue-api-catalog-aws-glue-api-semantics-GlossaryItem) objects.
 
   The list of glossary items.
 + `NextToken` – UTF-8 string.
@@ -1523,7 +1663,7 @@ aws glue list-glossary-terms \
 + `GlossaryId` – UTF-8 string.
 
   The unique identifier of the glossary.
-+ `Items` – An array of objects.
++ `Items` – An array of [GlossaryTermItem](#aws-glue-api-catalog-aws-glue-api-semantics-GlossaryTermItem) objects.
 
   The list of glossary term items.
 + `NextToken` – UTF-8 string.
@@ -1546,11 +1686,11 @@ The following example associates a glossary term with an asset.
 
 ```
 aws glue associate-glossary-terms \
-        --identifier quarterly-sales-2026q1 \
+        --asset-identifier quarterly-sales-2026q1 \
         --glossary-term-identifiers avugvxvsul6izr
 
     {
-        "Identifier": "quarterly-sales-2026q1",
+        "AssetIdentifier": "quarterly-sales-2026q1",
         "GlossaryTerms": [
             "avugvxvsul6izr"
         ]
@@ -1558,7 +1698,7 @@ aws glue associate-glossary-terms \
 ```
 
 **Request**
-+ `AssetIdentifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the `String`.
++ `AssetIdentifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset to associate glossary terms with.
 + `GlossaryTermIdentifiers` – *Required:* An array of UTF-8 strings, not less than 1 or more than 10 strings.
@@ -1569,7 +1709,7 @@ aws glue associate-glossary-terms \
   A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
 
 **Response**
-+ `Identifier` – UTF-8 string, not less than 1 or more than 1087 bytes long, matching the `String`.
++ `AssetIdentifier` – UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset.
 + `GlossaryTerms` – An array of UTF-8 strings, not less than 1 or more than 10 strings.
@@ -1594,17 +1734,17 @@ The following example removes a glossary term from an asset.
 
 ```
 aws glue disassociate-glossary-terms \
-        --identifier quarterly-sales-2026q1 \
+        --asset-identifier quarterly-sales-2026q1 \
         --glossary-term-identifiers avugvxvsul6izr
 
     {
-        "Identifier": "quarterly-sales-2026q1",
+        "AssetIdentifier": "quarterly-sales-2026q1",
         "GlossaryTerms": []
     }
 ```
 
 **Request**
-+ `AssetIdentifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the `String`.
++ `AssetIdentifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset to disassociate glossary terms from.
 + `GlossaryTermIdentifiers` – *Required:* An array of UTF-8 strings, not less than 1 or more than 10 strings.
@@ -1615,7 +1755,7 @@ aws glue disassociate-glossary-terms \
   A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
 
 **Response**
-+ `Identifier` – UTF-8 string, not less than 1 or more than 1087 bytes long, matching the `String`.
++ `AssetIdentifier` – UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset.
 + `GlossaryTerms` – An array of UTF-8 strings, not less than 1 or more than 10 strings.
@@ -1630,8 +1770,8 @@ aws glue disassociate-glossary-terms \
 + `ConcurrentModificationException`
 + `ThrottlingException`
 
-## Search action (Python: search)
-<a name="aws-glue-api-catalog-aws-glue-api-semantics-Search"></a>
+## SearchAssets action (Python: search\_assets)
+<a name="aws-glue-api-catalog-aws-glue-api-semantics-SearchAssets"></a>
 
 Searches for assets in AWS Glue Data Catalog using full-text search, filters, sorting, and aggregations. Returns matching assets with relevance-ranked results.
 
@@ -1639,7 +1779,7 @@ Searches for assets in AWS Glue Data Catalog using full-text search, filters, so
 The following example runs a full-text search for assets.
 
 ```
-aws glue search --search-text "sales" --max-results 10
+aws glue search-assets --search-text "sales" --max-results 10
 
     {
         "Items": [
@@ -1658,7 +1798,7 @@ aws glue search --search-text "sales" --max-results 10
 The following example searches with a filter clause and sort order.
 
 ```
-aws glue search \
+aws glue search-assets \
         --search-text "sales" \
         --max-results 10 \
         --filter-clause '{"AttributeFilter":{"Attribute":"AssetTypeId","Operator":"equals","Value":{"StringValue":"DataSet"}}}' \
@@ -1672,48 +1812,6 @@ aws glue search \
                 "AssetDescription": "Aggregated quarterly sales metrics",
                 "UpdatedAt": "2026-06-16T06:42:00.442Z",
                 "AssetTypeId": "DataSet"
-            }
-        ]
-    }
-```
-
-**Example**
-The following example filters on a field defined by a form. A form field is referenced by the form's asset type identifier and the field name, joined with a dot — here, the `databaseName` field of the `amazon.glue::GlueTable` form. Asset type identifiers for built-in types carry the `::` prefix shown in each result's `AssetTypeId`.
-
-```
-aws glue search \
-        --filter-clause '{"AttributeFilter":{"Attribute":"amazon.glue::GlueTable.databaseName","Operator":"equals","Value":{"StringValue":"sales"}}}' \
-        --max-results 10
-
-    {
-        "Items": [
-            {
-                "Id": "arn:aws:glue:us-east-1:123456789012:table/sales/transactions",
-                "AssetName": "transactions",
-                "AssetDescription": "Raw sales transactions",
-                "UpdatedAt": "2026-06-16T06:42:00.442Z",
-                "AssetTypeId": "amazon.glue::GlueTable"
-            }
-        ]
-    }
-```
-
-**Example**
-The following example combines a common asset field and a form field with a logical AND. Common asset fields such as `name`, `type`, `region`, and `catalogId` are referenced directly; fields defined by a form use the `assetTypeId.fieldName` notation.
-
-```
-aws glue search \
-        --filter-clause '{"AndAllFilters":[{"AttributeFilter":{"Attribute":"type","Operator":"equals","Value":{"StringValue":"Table"}}},{"AttributeFilter":{"Attribute":"amazon.glue::GlueTable.databaseName","Operator":"equals","Value":{"StringValue":"sales"}}}]}' \
-        --max-results 10
-
-    {
-        "Items": [
-            {
-                "Id": "arn:aws:glue:us-east-1:123456789012:table/sales/transactions",
-                "AssetName": "transactions",
-                "AssetDescription": "Raw sales transactions",
-                "UpdatedAt": "2026-06-16T06:42:00.442Z",
-                "AssetTypeId": "amazon.glue::GlueTable"
             }
         ]
     }
@@ -1738,11 +1836,58 @@ aws glue search \
 
 **Response**
 
-The response structure for the `Search` operation.
-+ `SearchOutput` – A [SearchOutput](#aws-glue-api-catalog-aws-glue-api-semantics-SearchOutput) object.
+The search results returned by the `SearchAssets` operation.
++ `SearchAssetsOutput` – A [SearchAssetsOutput](#aws-glue-api-catalog-aws-glue-api-semantics-SearchAssetsOutput) object.
 
 **Errors**
 + `AccessDeniedException`
 + `InvalidInputException`
 + `InternalServiceException`
 + `ThrottlingException`
+
+## GetDataCatalogExportConfiguration action (Python: get\_data\_catalog\_export\_configuration)
+<a name="aws-glue-api-catalog-aws-glue-api-semantics-GetDataCatalogExportConfiguration"></a>
+
+Retrieves the current export configuration for the AWS Glue Data Catalog. The export configuration controls whether catalog metadata is exported to S3 Tables.
+
+**Request**
++ *No Request parameters.*
+
+**Response**
+
+The export configuration returned by the `GetDataCatalogExportConfiguration` operation.
++ `GetDataCatalogExportConfigurationOutput` – A [GetDataCatalogExportConfigurationOutput](#aws-glue-api-catalog-aws-glue-api-semantics-GetDataCatalogExportConfigurationOutput) object.
+
+**Errors**
++ `InvalidInputException`
++ `EntityNotFoundException`
++ `InternalServiceException`
++ `ThrottlingException`
+
+## PutDataCatalogExportConfiguration action (Python: put\_data\_catalog\_export\_configuration)
+<a name="aws-glue-api-catalog-aws-glue-api-semantics-PutDataCatalogExportConfiguration"></a>
+
+Creates or updates the export configuration for the AWS Glue Data Catalog. Use this operation to enable or disable the export of catalog metadata to S3 Tables.
+
+**Request**
++ `ExportSetting` – *Required:* UTF-8 string (valid values: `ENABLED` \| `DISABLED`).
+
+  The export setting for the data catalog. Specify `ENABLED` to start exporting catalog metadata to S3 Tables, or `DISABLED` to stop exporting. This field is required.
++ `EncryptionConfiguration` – An [ExportEncryptionConfiguration](#aws-glue-api-catalog-aws-glue-api-semantics-ExportEncryptionConfiguration) object.
+
+  The encryption configuration for the exported data. If not specified, the default encryption settings are used.
++ `ClientToken` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Single-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-oneLine).
+
+  A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+
+**Response**
+
+The export configuration returned by the `PutDataCatalogExportConfiguration` operation.
++ `PutDataCatalogExportConfigurationOutput` – A [PutDataCatalogExportConfigurationOutput](#aws-glue-api-catalog-aws-glue-api-semantics-PutDataCatalogExportConfigurationOutput) object.
+
+**Errors**
++ `InvalidInputException`
++ `AccessDeniedException`
++ `InternalServiceException`
++ `ThrottlingException`
++ `ConflictException`

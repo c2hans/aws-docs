@@ -59,7 +59,7 @@ CloudFormation executes the changes described in your root change set and nested
 ------
 
 **To execute a change set (AWS CLI)**
-+ Run the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/execute-change-set.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/execute-change-set.html) command.
++ Run the [execute-change-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/execute-change-set.html) command.
 
   Specify the change set ID of the change set that you want to execute, as shown in the following example:
 

@@ -39,13 +39,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 Property description not available.
 *Required*: No
 *Type*: String
-*Pattern*: `.*`
-*Maximum*: `1024`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PrimaryStatus`  <a name="cfn-sagemaker-experimenttrialcomponent-status-primarystatus"></a>
 Property description not available.
 *Required*: No
 *Type*: String
-*Allowed values*: `InProgress | Completed | Failed | Stopping | Stopped`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

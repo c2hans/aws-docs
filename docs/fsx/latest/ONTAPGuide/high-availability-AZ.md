@@ -56,7 +56,7 @@ The following table illustrates the differences between first and second-generat
   <tr><th>Dimension</th><th>First-generation</th><th>Second-generation (single HA pair)</th><th>Second-generation (multi-pair)</th></tr>
 </thead>
 <tbody>
-  <tr><td>Deployment type</td><td>SINGLE\_AZ\_1<br />MULTI\_AZ\_1</td><td>SINGLE\_AZ\_2<br />MULTI\_AZ\_2</td><td>SINGLE\_AZ\_2</td></tr>
+  <tr><td>Deployment type</td><td>SINGLE_AZ_1<br />MULTI_AZ_1</td><td>SINGLE_AZ_2<br />MULTI_AZ_2</td><td>SINGLE_AZ_2</td></tr>
   <tr><td>HA pairs</td><td colspan="2">1 HA pair</td><td>1–12 HA pairs</td></tr>
   <tr><td>SSD storage</td><td>Minimum: 1 TiB<br />Maximum: 192 TiB</td><td>Minimum: 1 TiB<br />Maximum: 512 TiB</td><td>Minimum: 1 TiB (per HA pair)<br />Maximum: 1 PiB (total)</td></tr>
   <tr><td>SSD IOPS</td><td>Minimum: 3 IOPS/GIB of SSD<br />Maximum: 160,000</td><td>Minimum: 3 IOPS/GIB of SSD<br />Maximum: 200,000</td><td>Minimum: 3 IOPS/GIB of SSD<br />Maximum: 2,400,000 (200,000 per HA pair)</td></tr>

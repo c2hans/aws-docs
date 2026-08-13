@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/quotas.ht
 
 AWS Security Agent has quotas that limit the number of resources you can create and the rate at which you can perform operations. Quotas marked as adjustable can be increased by submitting a request through AWS Support. For more information, see [Creating support cases and case management.](https://docs.aws.amazon.com/awssupport/latest/user/case-management.html)
 
+Quotas limit capacity but don’t limit spending. The monthly quotas on this page cap how many reviews you can run, and reaching one blocks additional reviews until the next month. They don’t cap what you spend, and a quota increase doesn’t change your rate. For more information, see [Pricing and billing](pricing.md).
+
 ## Operations Quotas
 <a name="_operations_quotas"></a>
 

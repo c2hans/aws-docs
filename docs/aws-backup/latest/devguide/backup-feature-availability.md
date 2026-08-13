@@ -35,32 +35,32 @@ For information on opt-in Regions and what resources and features are supported 
 **Note**
 If a resource type does not have a checkmark in the Cross-Region backup or Cross-account backup columns, then copy operations for that resource type are not supported in any scenario, including same-Region and same-account copies to a different vault. If the underlying AWS service provides its own native copy or replication feature, refer to that service's documentation.
 
-| AWS Backup supports | [Cross-Region backup](cross-region-backup.md) | [Cross-account backup](create-cross-account-backup.md) | [AWS Backup Audit Manager](aws-backup-audit-manager.md) | [Incremental backup](about-backup-plans.md) | [Continuous backup and point-in-time restore](point-in-time-recovery.md) | [Full management](whatisbackup.md#full-management) | [Lifecycle to cold storage](plan-options-and-configuration.md) | Item-level restore 1 | [Restore testing](restore-testing.md) | [Logically air-gapped vault](logicallyairgappedvault.md) | [Backup search](backup-search.md) | [Backup tiering](backup-tiering.md) | [Malware Protection](malware-protection.md) |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Amazon EC2 | ✓ | ✓ | ✓ | ✓ |  |  |  |  | ✓ | ✓ |  |  | ✓ |
-| Amazon S3 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Amazon EBS | ✓ | ✓ | ✓ | ✓ |  |  | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
-| Amazon RDS DB instance (single-AZ and Multi-AZ) 12 | ✓ 3 | ✓ 3 | ✓ 4 | ✓ | ✓ |  |  |  | ✓ |  |  |  |  |
-| Amazon RDS cluster 13 | ✓ 3 | ✓ 3 | ✓ 4 | ✓ |  |  |  |  | ✓ |  |  |  |  |
-| Amazon Aurora | ✓ 3 | ✓ 3 | ✓ | ✓ 6 | ✓ |  |  |  | ✓ | ✓ |  |  |  |
-| Amazon Aurora DSQL | ✓ | ✓ |  |  |  | ✓ | ✓ |  |  | ✓ |  |  |  |
-| Amazon EFS | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |  |  |  |
-| FSx for Lustre | ✓ | ✓ | ✓ | ✓ |  |  |  |  | ✓ | ✓ |  |  |  |
-| FSx for Windows File Server | ✓ | ✓ | ✓ | ✓ |  |  |  |  | ✓8 | ✓ |  |  |  |
-| FSx for ONTAP |  |  | ✓ 2 | ✓ |  |  |  |  | ✓ |  |  |  |  |
-| FSx for OpenZFS | ✓ | ✓ |  |  |  |  | ✓ | ✓ |  |  |  |  |  |
-| AWS Storage Gateway | ✓ | ✓ | ✓ | ✓ |  |  |  |  |  | ✓ |  |  |  |
-| Amazon DocumentDB | ✓ 3 | ✓ 3 |  |  |  |  |  |  | ✓ | ✓ |  |  |  |
-| Amazon Neptune | ✓ 3 | ✓ 3 |  |  |  |  |  |  | ✓ | ✓ 9 |  |  |  |
-| Amazon Redshift Serverless |  |  |  |  |  |  |  | ✓ |  |  |  |  |  |
-| Amazon Timestream | ✓ | ✓ |  | ✓ |  | ✓ | ✓ |  |  | ✓ |  |  |  |
-| Windows VSS | ✓ | ✓ | ✓ | ✓ |  |  |  |  |  | ✓ |  |  |  |
-| Virtual machines | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ |  | ✓ |  |  |  |
-| AWS CloudFormation | ✓ 5 |  | ✓ | ✓ 5 |  |  | ✓ |  |  |  |  |  |  |
-| Amazon DynamoDB |  |  | ✓ |  |  |  |  |  | ✓ |  |  |  |  |
-| DynamoDB with [AWS Backup advanced features](advanced-ddb-backup.md) | ✓ | ✓ | ✓ |  |  | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
-| SAP HANA databases on Amazon EC2 instances | ✓ | ✓ |  | ✓ 6 | ✓ | ✓ | ✓ |  |  |  |  |  |  |
-| Amazon EKS10 | ✓ | ✓ |  |  |  | ✓ |  | ✓ |  | ✓11 |  |  |  |
+| AWS Backup supports | [Cross-Region backup](cross-region-backup.md) | [Cross-account backup](create-cross-account-backup.md) | [AWS Backup Audit Manager](aws-backup-audit-manager.md) | [Incremental backup](about-backup-plans.md) | [Continuous backup and point-in-time restore](point-in-time-recovery.md) | [Full management](whatisbackup.md#full-management) | [Lifecycle to cold storage](plan-options-and-configuration.md) | Item-level restore 1 | [Restore testing](restore-testing.md) | [Logically air-gapped vault](logicallyairgappedvault.md) | [Backup search](backup-search.md) | [Backup tiering](backup-tiering.md) | [Malware Protection](malware-protection.md) | [Access points](backup-access-points.md) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Amazon EC2 | ✓ | ✓ | ✓ | ✓ |  |  |  |  | ✓ | ✓ |  |  | ✓ |  |
+| Amazon S3 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Amazon EBS | ✓ | ✓ | ✓ | ✓ |  |  | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
+| Amazon RDS DB instance (single-AZ and Multi-AZ) 12 | ✓ 3 | ✓ 3 | ✓ 4 | ✓ | ✓ |  |  |  | ✓ |  |  |  |  |  |
+| Amazon RDS cluster 13 | ✓ 3 | ✓ 3 | ✓ 4 | ✓ |  |  |  |  | ✓ |  |  |  |  |  |
+| Amazon Aurora | ✓ 3 | ✓ 3 | ✓ | ✓ 6 | ✓ |  |  |  | ✓ | ✓ |  |  |  |  |
+| Amazon Aurora DSQL | ✓ | ✓ |  |  |  | ✓ | ✓ |  |  | ✓ |  |  |  |  |
+| Amazon EFS | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |  |  |  |  |
+| FSx for Lustre | ✓ | ✓ | ✓ | ✓ |  |  |  |  | ✓ | ✓ |  |  |  |  |
+| FSx for Windows File Server | ✓ | ✓ | ✓ | ✓ |  |  |  |  | ✓8 | ✓ |  |  |  |  |
+| FSx for ONTAP |  |  | ✓ 2 | ✓ |  |  |  |  | ✓ |  |  |  |  |  |
+| FSx for OpenZFS | ✓ | ✓ |  |  |  |  | ✓ | ✓ |  |  |  |  |  |  |
+| AWS Storage Gateway | ✓ | ✓ | ✓ | ✓ |  |  |  |  |  | ✓ |  |  |  |  |
+| Amazon DocumentDB | ✓ 3 | ✓ 3 |  |  |  |  |  |  | ✓ | ✓ |  |  |  |  |
+| Amazon Neptune | ✓ 3 | ✓ 3 |  |  |  |  |  |  | ✓ | ✓ 9 |  |  |  |  |
+| Amazon Redshift Serverless |  |  |  |  |  |  |  | ✓ |  |  |  |  |  |  |
+| Amazon Timestream | ✓ | ✓ |  | ✓ |  | ✓ | ✓ |  |  | ✓ |  |  |  |  |
+| Windows VSS | ✓ | ✓ | ✓ | ✓ |  |  |  |  |  | ✓ |  |  |  |  |
+| Virtual machines | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ |  | ✓ |  |  |  |  |
+| AWS CloudFormation | ✓ 5 |  | ✓ | ✓ 5 |  |  | ✓ |  |  |  |  |  |  |  |
+| Amazon DynamoDB |  |  | ✓ |  |  |  |  |  | ✓ |  |  |  |  |  |
+| DynamoDB with [AWS Backup advanced features](advanced-ddb-backup.md) | ✓ | ✓ | ✓ |  |  | ✓ | ✓ |  | ✓ | ✓ |  |  |  |  |
+| SAP HANA databases on Amazon EC2 instances | ✓ | ✓ |  | ✓ 6 | ✓ | ✓ | ✓ |  |  |  |  |  |  |  |
+| Amazon EKS10 | ✓ | ✓ |  |  |  | ✓ |  | ✓ |  | ✓11 |  |  |  |  |
 
 Some resource types have both continuous backup capability and cross-Region and cross-account copy available. When a cross-Region or cross-account copy of a continuous backup is made, the copied recovery point (backup) becomes a snapshot (periodic) backup. PITR (Point-in-Time Restore) is not available for these copies.
 + Amazon RDS and Amazon S3 support cross-account and cross-Region copy from incremental backups. Amazon RDS also supports simultaneous cross-Region and cross-account snapshot copying in a single action.
@@ -78,7 +78,7 @@ Some resource types have both continuous backup capability and cross-Region and 
 
 6 Snapshots are full and incremental backup is offered through PITR.
 
-7 Amazon FSx for OpenZFS Multi-AZ (multi-availability zone) file systems can only be restored from the Amazon FSx console or the API request [https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSystemFromBackup.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSystemFromBackup.html).
+7 Amazon FSx for OpenZFS Multi-AZ (multi-availability zone) file systems can only be restored from the Amazon FSx console or the API request [`createFileSystemFromBackup`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSystemFromBackup.html).
 
 8 Is supported in a restore test if FSx for Windows File Server uses AWS managed active directory
 
@@ -113,47 +113,47 @@ Some Regions require account opt-in, as noted in the following table. Some featu
 + Cross-account management in AWS Regions where opt-in is required includes cross-account monitoring and access to backup policies; delegated administrator accounts can launch policies but do not have access to the monitoring functions.
 + Both management accounts and their child accounts can be opted into AWS Organizations. If a child account is opted into cross-account management prior to its management account being opted into cross-account management, there will be a delay (up to 24 hours) before cross-account monitoring will show job statuses across the organization.
 
-| AWS Backup supports | Opt-in | [Cross-Region backup copy](cross-region-backup.md) | [Cross-account management](manage-cross-account.md) | [Cross-account backup copy](create-cross-account-backup.md) | [AWS Backup Audit Manager](aws-backup-audit-manager.md) and [Jobs dashboard](backup-dashboards.md) | [Restore testing](restore-testing.md) | [Logically air-gapped vault](logicallyairgappedvault.md) | [Backup search](backup-search.md) | [Backup tiering](backup-tiering.md) | [Malware Protection](malware-protection.md) |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| US East (N. Virginia) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| US East (Ohio) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| US West (N. California) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| US West (Oregon) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Africa (Cape Town) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Asia Pacific (Hong Kong) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Asia Pacific (Hyderabad) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Asia Pacific (Jakarta) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Asia Pacific (Malaysia) | Required | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Asia Pacific (Melbourne) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Asia Pacific (Mumbai) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Asia Pacific (New Zealand) | Required | ✓ |  | ✓ |  | ✓ | ✓ |  | ✓ |  |
-| Asia Pacific (Osaka) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Asia Pacific (Seoul) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Asia Pacific (Singapore) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Asia Pacific (Sydney) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Asia Pacific (Taipei) | Required | ✓ |  | ✓ |  | ✓ | ✓ |  | ✓ | ✓ |
-| Asia Pacific (Thailand) | Required | ✓ |  | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Asia Pacific (Tokyo) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Canada (Central) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Canada West (Calgary) | Required | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |
-| China (Beijing) | [AWS in China](https://www.amazonaws.cn/en/about-aws/china/) | ✓2 |  |  |  |  |  |  | ✓ |  |
-| China (Ningxia) | [AWS in China](https://www.amazonaws.cn/en/about-aws/china/) | ✓2 |  |  |  |  |  |  | ✓ |  |
-| Europe (Frankfurt) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Europe (Ireland) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Europe (London) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Europe (Milan) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Europe (Paris) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Europe (Spain) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Europe (Stockholm) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Europe (Zurich) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Israel (Tel Aviv) | Required | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Mexico (Central) | Required | ✓ |  | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Middle East (Bahrain) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Middle East (UAE) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| South America (São Paulo) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| AWS GovCloud (US-East) | [AWS GovCloud (US)](https://aws.amazon.com/govcloud-us/) | ✓ | ✓ | ✓4 | ✓ |  |  | ✓ | ✓ | ✓ |
-| AWS GovCloud (US-West) | [AWS GovCloud (US)](https://aws.amazon.com/govcloud-us/) | ✓ | ✓ | ✓4 | ✓ |  |  | ✓ | ✓ | ✓ |
-| AWS European Sovereign Cloud (Germany) | [AWS European Sovereign Cloud (Germany)](https://aws.amazon.com/aws.eu/) |  |  |  |  |  |  |  | ✓ |  |
+| AWS Backup supports | Opt-in | [Cross-Region backup copy](cross-region-backup.md) | [Cross-account management](manage-cross-account.md) | [Cross-account backup copy](create-cross-account-backup.md) | [AWS Backup Audit Manager](aws-backup-audit-manager.md) and [Jobs dashboard](backup-dashboards.md) | [Restore testing](restore-testing.md) | [Logically air-gapped vault](logicallyairgappedvault.md) | [Backup search](backup-search.md) | [Backup tiering](backup-tiering.md) | [Malware Protection](malware-protection.md) | [Access points](backup-access-points.md) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| US East (N. Virginia) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| US East (Ohio) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| US West (N. California) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| US West (Oregon) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Africa (Cape Town) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Asia Pacific (Hong Kong) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Asia Pacific (Hyderabad) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Asia Pacific (Jakarta) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Asia Pacific (Malaysia) | Required | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| Asia Pacific (Melbourne) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Asia Pacific (Mumbai) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Asia Pacific (New Zealand) | Required | ✓ |  | ✓ |  | ✓ | ✓ |  | ✓ |  |  |
+| Asia Pacific (Osaka) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Asia Pacific (Seoul) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Asia Pacific (Singapore) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Asia Pacific (Sydney) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Asia Pacific (Taipei) | Required | ✓ |  | ✓ |  | ✓ | ✓ |  | ✓ | ✓ |  |
+| Asia Pacific (Thailand) | Required | ✓ |  | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| Asia Pacific (Tokyo) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Canada (Central) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Canada West (Calgary) | Required | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| China (Beijing) | [AWS in China](https://www.amazonaws.cn/en/about-aws/china/) | ✓2 |  |  |  |  |  |  | ✓ |  |  |
+| China (Ningxia) | [AWS in China](https://www.amazonaws.cn/en/about-aws/china/) | ✓2 |  |  |  |  |  |  | ✓ |  |  |
+| Europe (Frankfurt) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Europe (Ireland) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Europe (London) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Europe (Milan) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Europe (Paris) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Europe (Spain) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Europe (Stockholm) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Europe (Zurich) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| Israel (Tel Aviv) | Required | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Mexico (Central) | Required | ✓ |  | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| Middle East (Bahrain) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| Middle East (UAE) | Required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| South America (São Paulo) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| AWS GovCloud (US-East) | [AWS GovCloud (US)](https://aws.amazon.com/govcloud-us/) | ✓ | ✓ | ✓4 | ✓ |  |  | ✓ | ✓ | ✓ |  |
+| AWS GovCloud (US-West) | [AWS GovCloud (US)](https://aws.amazon.com/govcloud-us/) | ✓ | ✓ | ✓4 | ✓ |  |  | ✓ | ✓ | ✓ |  |
+| AWS European Sovereign Cloud (Germany) | [AWS European Sovereign Cloud (Germany)](https://aws.amazon.com/aws.eu/) |  |  |  |  |  |  |  | ✓ |  |  |
 
 1Cross-Region and cross-account copy to a logically air-gapped vault is not currently available in Asia Pacific (Malaysia), Canada West (Calgary), Mexico (Central), Asia Pacific (Thailand), Asia Pacific (Taipei), Asia Pacific (New Zealand), China (Beijing), China (Ningxia), AWS GovCloud (US-East), or AWS GovCloud (US-West) Regions.
 
@@ -193,7 +193,7 @@ AWS Backup cannot be deployed or operated locally on AWS Outposts infrastructure
 | Asia Pacific (Hyderabad) |  | ✓ | ✓ |  | ✓ | ✓ |  |  | ✓ |  | ✓ | ✓ |
 | Asia Pacific (Jakarta) |  | ✓ | ✓ |  | ✓ | ✓ |  |  | ✓ | ✓ | ✓ | ✓ |
 | Asia Pacific (Malaysia) |  | ✓ | ✓ |  | ✓ | ✓ |  |  | ✓ |  | ✓ | ✓ |
-| Asia Pacific (Melbourne) | ✓ | Windows; Lustre; ONTAP | ✓ |  | ✓ | ✓ |  |  | ✓ |  | ✓ | ✓ |
+| Asia Pacific (Melbourne) | ✓ | Windows; Lustre; ONTAP | ✓ |  | ✓ | ✓ |  |  | ✓ | ✓ | ✓ | ✓ |
 | Asia Pacific (Mumbai) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Asia Pacific (New Zealand) |  |  |  |  | ✓ | ✓ |  |  | ✓ | ✓ | ✓ | ✓ |
 | Asia Pacific (Osaka) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -212,9 +212,9 @@ AWS Backup cannot be deployed or operated locally on AWS Outposts infrastructure
 | Europe (London) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Europe (Milan) |  | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |  | ✓ | ✓ |
 | Europe (Paris) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Europe (Spain) | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  | ✓ |  | ✓ | ✓ |
+| Europe (Spain) | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  | ✓ | ✓ | ✓ | ✓ |
 | Europe (Stockholm) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Europe (Zurich) |  | ✓ | ✓ |  | ✓ | ✓ |  |  | ✓ |  | ✓ | ✓ |
+| Europe (Zurich) |  | ✓ | ✓ |  | ✓ | ✓ |  |  | ✓ | ✓ | ✓ | ✓ |
 | Israel (Tel Aviv) |  | ✓ | ✓ |  | ✓ | ✓ |  |  | ✓ | ✓ | ✓ | ✓ |
 | Mexico (Central) |  | ✓ |  |  | ✓ | ✓ |  |  | ✓ |  | ✓ | ✓ |
 | Middle East (Bahrain) |  | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ |  |  |

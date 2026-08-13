@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/update-
 # Update a canary release
 <a name="update-canary-deployment"></a>
 
- After a canary release is deployed, you may want to adjust the percentage of the canary traffic or enable or disable the use of a stage cache to optimize the test performance. You can also modify stage variables used in the canary release when the execution context is updated. To make such updates, call the [https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateStage.html](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateStage.html) operation with new values on [canarySettings](https://docs.aws.amazon.com/apigateway/latest/api/API_Stage.html#canarySettings).
+ After a canary release is deployed, you may want to adjust the percentage of the canary traffic or enable or disable the use of a stage cache to optimize the test performance. You can also modify stage variables used in the canary release when the execution context is updated. To make such updates, call the [**stage:update**](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateStage.html) operation with new values on [canarySettings](https://docs.aws.amazon.com/apigateway/latest/api/API_Stage.html#canarySettings).
 
 You can update a canary release using the API Gateway console, the AWS CLI [update-stage](https://docs.aws.amazon.com/cli/latest/reference/apigateway/update-stage.html) command or an AWS SDK.
 
@@ -37,7 +37,7 @@ To use the API Gateway console to update existing canary settings on a stage, do
 ## Update a canary release using the AWS CLI
 <a name="update-canary-deployment-using-cli"></a>
 
-To use the AWS CLI to update a canary, use the [https://docs.aws.amazon.com/cli/latest/reference/apigateway/update-stage.html](https://docs.aws.amazon.com/cli/latest/reference/apigateway/update-stage.html) command and modify the patch operation for each parameter of the canary.
+To use the AWS CLI to update a canary, use the [`update-stage`](https://docs.aws.amazon.com/cli/latest/reference/apigateway/update-stage.html) command and modify the patch operation for each parameter of the canary.
 
 The following [update-stage](https://docs.aws.amazon.com/cli/latest/reference/apigateway/update-stage.html) command updates if the canary uses the stage cache:
 

@@ -12,39 +12,62 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 ## Changes
 <a name="release-2019-08-08-linux.changes"></a>
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Instance type** | **Regions** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **July 25, 2019** to all Linux-based platforms. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-08-08-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-08-08-linux.html) |
-| **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-08-08-linux.html) |
-| **AWS X-Ray** | Updated platforms that support X-Ray to [X-Ray Daemon version 3.1.0](https://aws.amazon.com/releasenotes/aws-x-ray-daemon-version-3-1-0/?tag=releasenotes%23keywords%23aws-x-ray). |
-| **Multicontainer Docker** | Updated the ECS agent to version 1.29.1. |
-| **Go** | Updated to minor revision 1.12.7. For details, see [go1.12](https://golang.org/doc/devel/release.html#go1.12) in *The Go Programming Language Release History*. |
-| **Java with Tomcat** | Updated Tomcat 8.5 to [Tomcat 8.5.42](https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.42_(markt)).<br />Updated Tomcat 7 to [Tomcat 7.0.94](https://tomcat.apache.org/tomcat-7.0-doc/changelog.html#Tomcat_7.0.94_(markt)). |
-| **PHP** | Updated PHP 7.2 to [7.2.19](https://www.php.net/releases/7_2_19.php). This is a security release which also contains several minor bug fixes. |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge, r5d.8xlarge, r5d.16xlarge, m5a.8xlarge, m5a.16xlarge,**<br />**r5a.8xlarge, r5a.16xlarge, T3a** |  + US East (Ohio) – us-east-2  |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge, r5d.8xlarge, r5d.16xlarge, M5a, R5a, T3a** |  + US West (N. California) – us-west-1  |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, r5.8xlarge, r5.16xlarge,**<br />**r5d.8xlarge, r5d.16xlarge, m5a.8xlarge, m5a.16xlarge, r5a.8xlarge** |  + US West (Oregon) – us-west-2  |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge** |  + Asia Pacific (Hong Kong) – ap-east-1  |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge, r5d.8xlarge, r5d.16xlarge** |  + Asia Pacific (Mumbai) – ap-south-1<br />+ Asia Pacific (Seoul) – ap-northeast-2<br />+ Canada (Central) – ca-central-1<br />+ Europe (London) – eu-west-2<br />+ Europe (Paris) – eu-west-3<br />+ Europe (Stockholm) – eu-north-1  |
-| **M5, M5d, R5, R5d** |  + Asia Pacific (Osaka) – ap-northeast-3  |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge, r5d.8xlarge, r5d.16xlarge, m5a.8xlarge, m5a.16xlarge,**<br />**r5a.8xlarge, r5a.16xlarge** |  + Asia Pacific (Singapore) – ap-southeast-1  |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.metal, r5d.8xlarge, r5d.16xlarge, r5d.metal** |  + Asia Pacific (Tokyo) – ap-northeast-1  |
-| **r5.8xlarge, r5.16xlarge, r5d.8xlarge, M5, M5d, T3a** |  + China (Beijing) – cn-north-1  |
-| **r5d.8xlarge, r5d.16xlarge, M5, M5d, T3a** |  + China (Ningxia) – cn-northwest-1  |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, r5.8xlarge, r5.16xlarge,**<br />**r5d.8xlarge, r5d.16xlarge, m5a.large, m5a.xlarge, m5a.2xlarge,**<br />**m5a.4xlarge, m5a.8xlarge, m5a.12xlarge, m5a.24xlarge, r5a.large,**<br />**r5a.xlarge, r5a.2xlarge, r5a.4xlarge, r5a.8xlarge, r5a.12xlarge,**<br />**r5a.24xlarge** |  + Europe (Frankfurt) – eu-central-1  |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge, r5d.8xlarge, r5d.16xlarge, m5a.8xlarge, r5a.8xlarge,**<br />**T3a** |  + Europe (Ireland) – eu-west-1  |
-| **m5.8xlarge, m5.16xlarge** |  + South America (São Paulo) – sa-east-1  |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge, r5d.8xlarge, r5d.16xlarge, T3a** |  + AWS GovCloud (US-East) – us-gov-east-1<br />+ AWS GovCloud (US-West) – us-gov-west-1  |
-| **g3.4xlarge, g3.8xlarge, g3.16xlarge** |  + China (Beijing) – cn-north-1<br />+ Europe (London) – eu-west-2  |
-| **g3s.xlarge** |  + Europe (London) – eu-west-2  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>July 25, 2019</b> to all Linux-based platforms.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AWS X-Ray</b></td><td>Updated platforms that support X-Ray to <a href="https://aws.amazon.com/releasenotes/aws-x-ray-daemon-version-3-1-0/?tag=releasenotes%23keywords%23aws-x-ray">X-Ray Daemon version 3.1.0</a>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Multicontainer Docker</b></td><td>Updated the ECS agent to version 1.29.1.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated to minor revision 1.12.7. For details, see <a href="https://golang.org/doc/devel/release.html#go1.12">go1.12</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Java with Tomcat</b></td><td>Updated Tomcat 8.5 to <a href="https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.42_(markt)">Tomcat 8.5.42</a>.<br />Updated Tomcat 7 to <a href="https://tomcat.apache.org/tomcat-7.0-doc/changelog.html#Tomcat_7.0.94_(markt)">Tomcat 7.0.94</a>.</td></tr>
+  <tr><td><b>PHP</b></td><td>Updated PHP 7.2 to <a href="https://www.php.net/releases/7_2_19.php">7.2.19</a>. This is a security release which also contains several minor bug fixes.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Instance types</b></td><td>Added support for more Amazon EC2 instance types in some AWS Regions, as follows:
+<table>
+<thead>
+  <tr><th><b>Instance type</b></th><th><b>Regions</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,</b><br /><b>r5.16xlarge, r5d.8xlarge, r5d.16xlarge, m5a.8xlarge, m5a.16xlarge,</b><br /><b>r5a.8xlarge, r5a.16xlarge, T3a</b></td><td> <ul><li>US East (Ohio) – us-east-2</li></ul> </td></tr>
+  <tr><td><b>m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,</b><br /><b>r5.16xlarge, r5d.8xlarge, r5d.16xlarge, M5a, R5a, T3a</b></td><td> <ul><li>US West (N. California) – us-west-1</li></ul> </td></tr>
+  <tr><td><b>m5.8xlarge, m5.16xlarge, m5d.8xlarge, r5.8xlarge, r5.16xlarge,</b><br /><b>r5d.8xlarge, r5d.16xlarge, m5a.8xlarge, m5a.16xlarge, r5a.8xlarge</b></td><td> <ul><li>US West (Oregon) – us-west-2</li></ul> </td></tr>
+  <tr><td><b>m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,</b><br /><b>r5.16xlarge</b></td><td> <ul><li>Asia Pacific (Hong Kong) – ap-east-1</li></ul> </td></tr>
+  <tr><td><b>m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,</b><br /><b>r5.16xlarge, r5d.8xlarge, r5d.16xlarge</b></td><td> <ul><li>Asia Pacific (Mumbai) – ap-south-1</li><li>Asia Pacific (Seoul) – ap-northeast-2</li><li>Canada (Central) – ca-central-1</li><li>Europe (London) – eu-west-2</li><li>Europe (Paris) – eu-west-3</li><li>Europe (Stockholm) – eu-north-1</li></ul> </td></tr>
+  <tr><td><b>M5, M5d, R5, R5d</b></td><td> <ul><li>Asia Pacific (Osaka) – ap-northeast-3</li></ul> </td></tr>
+  <tr><td><b>m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,</b><br /><b>r5.16xlarge, r5d.8xlarge, r5d.16xlarge, m5a.8xlarge, m5a.16xlarge,</b><br /><b>r5a.8xlarge, r5a.16xlarge</b></td><td> <ul><li>Asia Pacific (Singapore) – ap-southeast-1</li></ul> </td></tr>
+  <tr><td><b>m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,</b><br /><b>r5.metal, r5d.8xlarge, r5d.16xlarge, r5d.metal</b></td><td> <ul><li>Asia Pacific (Tokyo) – ap-northeast-1</li></ul> </td></tr>
+  <tr><td><b>r5.8xlarge, r5.16xlarge, r5d.8xlarge, M5, M5d, T3a</b></td><td> <ul><li>China (Beijing) – cn-north-1</li></ul> </td></tr>
+  <tr><td><b>r5d.8xlarge, r5d.16xlarge, M5, M5d, T3a</b></td><td> <ul><li>China (Ningxia) – cn-northwest-1</li></ul> </td></tr>
+  <tr><td><b>m5.8xlarge, m5.16xlarge, m5d.8xlarge, r5.8xlarge, r5.16xlarge,</b><br /><b>r5d.8xlarge, r5d.16xlarge, m5a.large, m5a.xlarge, m5a.2xlarge,</b><br /><b>m5a.4xlarge, m5a.8xlarge, m5a.12xlarge, m5a.24xlarge, r5a.large,</b><br /><b>r5a.xlarge, r5a.2xlarge, r5a.4xlarge, r5a.8xlarge, r5a.12xlarge,</b><br /><b>r5a.24xlarge</b></td><td> <ul><li>Europe (Frankfurt) – eu-central-1</li></ul> </td></tr>
+  <tr><td><b>m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,</b><br /><b>r5.16xlarge, r5d.8xlarge, r5d.16xlarge, m5a.8xlarge, r5a.8xlarge,</b><br /><b>T3a</b></td><td> <ul><li>Europe (Ireland) – eu-west-1</li></ul> </td></tr>
+  <tr><td><b>m5.8xlarge, m5.16xlarge</b></td><td> <ul><li>South America (São Paulo) – sa-east-1</li></ul> </td></tr>
+  <tr><td><b>m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,</b><br /><b>r5.16xlarge, r5d.8xlarge, r5d.16xlarge, T3a</b></td><td> <ul><li>AWS GovCloud (US-East) – us-gov-east-1</li><li>AWS GovCloud (US-West) – us-gov-west-1</li></ul> </td></tr>
+  <tr><td><b>g3.4xlarge, g3.8xlarge, g3.16xlarge</b></td><td> <ul><li>China (Beijing) – cn-north-1</li><li>Europe (London) – eu-west-2</li></ul> </td></tr>
+  <tr><td><b>g3s.xlarge</b></td><td> <ul><li>Europe (London) – eu-west-2</li></ul> </td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2019-08-08-linux.platforms"></a>

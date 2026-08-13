@@ -9,7 +9,7 @@ If you use [AWS Organizations](https://docs.aws.amazon.com/) to manage multiple 
 
 When you create an environment in a shared Amazon VPC, the account that owns the main Amazon VPC (*owner*) shares the two private subnets required by Amazon MWAA with other accounts (*participants*) that belong to the same organization. Participant accounts that share those subnets can then view, create, modify, and delete environments in the shared VPC.
 
-When you create an environment in a shared, or otherwise policy-restricted, Amazon VPC, Amazon MWAA will first create the service VPC resources, then enter a [https://docs.aws.amazon.com/mwaa/latest/API/API_Environment.html#mwaa-Type-Environment-Status](https://docs.aws.amazon.com/mwaa/latest/API/API_Environment.html#mwaa-Type-Environment-Status) state for up to 72 hours.
+When you create an environment in a shared, or otherwise policy-restricted, Amazon VPC, Amazon MWAA will first create the service VPC resources, then enter a [`PENDING`](https://docs.aws.amazon.com/mwaa/latest/API/API_Environment.html#mwaa-Type-Environment-Status) state for up to 72 hours.
 
 When the environment status changes from `CREATING` to `PENDING`, Amazon MWAA sends an Amazon EventBridge notification of the change in state. This lets the owner account create the required endpoints on behalf of participants based on endpoint service information from the Amazon MWAA console or API, or programmatically In the following, we create new Amazon VPC endpoints using an Lambda function and an EventBridge rule that listens to Amazon MWAA state change notifications.
 
@@ -35,7 +35,7 @@ Use the following CloudFormation template and AWS CLI command to create a new Am
 
 1. Download the CloudFormation [template](samples/cfn-vpc-private-network.zip), then unzip the `.yml` file.
 
-1. In a new command prompt window, navigate to the folder where you saved the template, then use [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) to create the stack. The `--template-body` flag specifies the path to the template.
+1. In a new command prompt window, navigate to the folder where you saved the template, then use [`create-stack`](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) to create the stack. The `--template-body` flag specifies the path to the template.
 
    ```
    aws cloudformation create-stack --stack-name {{stack-name}} --template-body file://cfn-vpc-private-network.yml
@@ -52,7 +52,7 @@ Use the following Python code and IAM JSON policy to create a new Lambda functio
 
 1. Download the IAM [permission policy](./samples/lambda-mwaa-shared-vpce-policy.zip), then unzip the file.
 
-1. Open a command prompt, then navigate to the folder where you saved the JSON permission policy. Use the IAM [https://docs.aws.amazon.com/](https://docs.aws.amazon.com/) command to create the new role.
+1. Open a command prompt, then navigate to the folder where you saved the JSON permission policy. Use the IAM [`create-role`](https://docs.aws.amazon.com/) command to create the new role.
 
    ```
    aws iam create-role --role-name {{function-role}} \
@@ -61,7 +61,7 @@ Use the following Python code and IAM JSON policy to create a new Lambda functio
 
    Note the role ARN from the AWS CLI response. In the next step, we specify this new role as the function's execution role using its ARN.
 
-1. Navigate to the folder where you saved the function code, then use the[https://docs.aws.amazon.com/](https://docs.aws.amazon.com/) command to create a new function.
+1. Navigate to the folder where you saved the function code, then use the[`create-function`](https://docs.aws.amazon.com/) command to create a new function.
 
    ```
    aws lambda create-function --function-name {{mwaa-vpce-lambda}} \

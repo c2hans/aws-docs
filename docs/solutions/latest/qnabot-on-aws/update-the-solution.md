@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/update-the-solution.html
 ---
 
-# Update the solution
+# Update the guidance
 <a name="update-the-solution"></a>
 
-If you have previously deployed the solution, follow this procedure to update the QnABot on AWS CloudFormation stack to get the latest version of the solution’s framework.
+If you have previously deployed the guidance, follow this procedure to update the QnABot on AWS CloudFormation stack to get the latest version of the guidance’s framework.
 
 **For those upgrading to v7.4.0 and above**
 QnABot on AWS v7.4.0 introduces a new `AlexaSkillIds` AWS CloudFormation parameter for Alexa Skill authorization. If you are using Alexa integration with an existing QnABot deployment, you must provide your Alexa Skill IDs in the `AlexaSkillIds` parameter during stack update to maintain Alexa functionality. New deployments have Alexa turned off by default. For details, see [Getting answers using Amazon Alexa](step-4-interact-with-the-chatbot.md#getting-answers-using-amazon-alexa).
@@ -36,7 +36,7 @@ QnABot on AWS v7.3.12 applies server-side HTML sanitization on `alt.html` and `a
 You can view the status of the stack in the AWS CloudFormation console in the **Status** column. You should receive a status in approximately 30 minutes.
 
 **Note**
-If you have previously deployed the solution but do not want to perform in-place upgrade or encountered issues during in-place upgrade or in case of a breaking change which does not allow you to upgrade in-place, please refer to migration section in this [README.md](https://github.com/aws-solutions/qnabot-on-aws/tree/main/source/docs/update_or_migrate_deployment/README.md).
+If you have previously deployed the guidance but do not want to perform in-place upgrade or encountered issues during in-place upgrade or in case of a breaking change which does not allow you to upgrade in-place, please refer to migration section in this [README.md](https://github.com/aws-solutions/qnabot-on-aws/tree/main/source/docs/update_or_migrate_deployment/README.md).
 
 **Note**
  **For those upgrading to v6.1.X and above**

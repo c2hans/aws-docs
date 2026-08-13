@@ -141,7 +141,7 @@ AWSTemplateFormatVersion: 2010-09-09
 ## Macro evaluation order
 <a name="template-macros-order"></a>
 
-You can reference multiple macros in a given template, including transforms hosted by CloudFormation, such as [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/transform-aws-include.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/transform-aws-include.html) and [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/transform-aws-serverless.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/transform-aws-serverless.html).
+You can reference multiple macros in a given template, including transforms hosted by CloudFormation, such as [AWS::Include](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/transform-aws-include.html) and [AWS::Serverless](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/transform-aws-serverless.html).
 
 Macros are evaluated in order, based on their location in the template, from the most deeply nested outward to the most general. Macros at the same location in the template are evaluated serially based on the order in which they're listed.
 

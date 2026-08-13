@@ -71,7 +71,7 @@ The auto snapshot created by the upgrade process will not be automatically delet
 
 1. Perform the MVU on the clone and fully test for functional differences.
 
-1. Check if an upgrade is already scheduled by running [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-clusters.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-clusters.html) and looking for `PendingModifiedValues.EngineVersion`. If you have modified the cluster and selected to apply it in the next maintenance window, the schedule will not be visible in the console but you can view it in the AWS CLI:
+1. Check if an upgrade is already scheduled by running [`describe-db-clusters`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-clusters.html) and looking for `PendingModifiedValues.EngineVersion`. If you have modified the cluster and selected to apply it in the next maintenance window, the schedule will not be visible in the console but you can view it in the AWS CLI:
 
    ```
    aws docdb describe-db-clusters \
@@ -120,7 +120,7 @@ Events are visible in the console under the **Events** page:
 
 ![Image: the Events navigation box showing a table of upgrade events.](http://docs.aws.amazon.com/documentdb/latest/devguide/images/mvu-events-2.png)
 
-From the AWS CLI, you can run [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-events.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-events.html) to monitor upgrade progress. To receive notifications automatically, use [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/create-event-subscription.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/create-event-subscription.html) to subscribe to events and route them to Amazon SNS for email, push messages, or other delivery methods. For more information, see [Subscribing to Amazon DocumentDB events](event-subscriptions.subscribe.md).
+From the AWS CLI, you can run [`aws docdb describe-events`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-events.html) to monitor upgrade progress. To receive notifications automatically, use [`aws docdb create-event-subscription`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/create-event-subscription.html) to subscribe to events and route them to Amazon SNS for email, push messages, or other delivery methods. For more information, see [Subscribing to Amazon DocumentDB events](event-subscriptions.subscribe.md).
 
 ```
 aws docdb describe-events
@@ -213,7 +213,7 @@ For a full list of functional differences, see [Amazon DocumentDB compatibility 
 ------
 #### [ Using the AWS CLI ]
 
-Use [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/modify-db-cluster.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/modify-db-cluster.html) with the `--allow-major-version-upgrade` flag:
+Use [`modify-db-cluster`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/modify-db-cluster.html) with the `--allow-major-version-upgrade` flag:
 
 ```
 aws docdb modify-db-cluster \

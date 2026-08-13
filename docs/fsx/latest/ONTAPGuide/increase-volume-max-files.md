@@ -9,7 +9,7 @@ FSx for ONTAP volumes can run out of file capacity when the number of available 
 
 **To increase the maximum number of files on a volume (ONTAP CLI)**
 
-You use the `volume modify` ONTAP CLI command to increase the maximum number of files on a volume. For more information, see [https://docs.netapp.com/us-en/ontap-cli-9111/volume-modify.html](https://docs.netapp.com/us-en/ontap-cli-9111/volume-modify.html) in the NetApp ONTAP Documentation Center.
+You use the `volume modify` ONTAP CLI command to increase the maximum number of files on a volume. For more information, see [`volume modify`](https://docs.netapp.com/us-en/ontap-cli-9111/volume-modify.html) in the NetApp ONTAP Documentation Center.
 
 1. To access the ONTAP CLI, establish an SSH session on the management port of the Amazon FSx for NetApp ONTAP file system or SVM by running the following command. Replace `{{management_endpoint_ip}}` with the IP address of the file system's management port.
 

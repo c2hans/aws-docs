@@ -21,7 +21,7 @@ The supported traits for each API operation are `SIGN`, `SYMPTOM`, and `DIAGNOSI
     + These are resource types that have been created or added to by HealthLake.
   + `http://healthlake.amazonaws.com/aws-cm/`
     + Where the raw output of the Amazon Comprehend Medical API operations is added to your HealthLake data store.
-+ `Linkage`: This resource type is either added or created as a result of the integrated NLP. A `GET` request on a specific `Linkage` returns a list of linked resources. To identify if a `Linkage` was added by HealthLake, look for the added `"tag": [{"display": "SYSTEM_GENERATED"}]` key-value pair. To learn more about the FHIR specifications for Linkage, see [https://hl7.org/fhir/R4/linkage.html](https://hl7.org/fhir/R4/linkage.html) in the **FHIR R4 documentation**.
++ `Linkage`: This resource type is either added or created as a result of the integrated NLP. A `GET` request on a specific `Linkage` returns a list of linked resources. To identify if a `Linkage` was added by HealthLake, look for the added `"tag": [{"display": "SYSTEM_GENERATED"}]` key-value pair. To learn more about the FHIR specifications for Linkage, see [`Linkage`](https://hl7.org/fhir/R4/linkage.html) in the **FHIR R4 documentation**.
 + FHIR resource types generated as a result of the Amazon Comprehend Medical operations.
   + `Observation`: includes results from the Amazon Comprehend Medical API actions `DetectEntities-V2` and `InferICD10-CM` when the traits are `SIGN` or `SYMPTOM`.
   + `Condition`: includes results from the Amazon Comprehend Medical API actions `DetectEntities-V2` and `InferICD10-CM` when the trait is `DIAGNOSIS`.

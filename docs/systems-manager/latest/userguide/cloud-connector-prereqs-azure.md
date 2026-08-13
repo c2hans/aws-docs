@@ -127,9 +127,9 @@ Complete the following steps in your Azure environment. You need the following v
 
 1.
 
-**Create an Azure Entra ID application for**
+**Create an Azure Entra ID application for AWS Config**
 
-   Create a separate application registration for to use when recording Azure resource state. Note the *Application (client) ID* from the output.
+   Create a separate application registration for AWS Config to use when recording Azure resource state. Note the *Application (client) ID* from the output.
 
    ```
    az ad app create \
@@ -137,7 +137,7 @@ Complete the following steps in your Azure environment. You need the following v
        --query appId
    ```
 
-   Create a service principal for the application:
+   Create a service principal for the AWS Config application:
 
    ```
    az ad sp create --id {{CONFIG_APPLICATION_ID}}
@@ -145,9 +145,9 @@ Complete the following steps in your Azure environment. You need the following v
 
 1.
 
-**Add a federated identity credential for**
+**Add a federated identity credential for AWS Config**
 
-   Add a federated identity credential to the application. The subject is the service-linked role ARN (created automatically when you create the Config connector in a later step).
+   Add a federated identity credential to the AWS Config application. The subject is the AWS Config service-linked role ARN (created automatically when you create the Config connector in a later step).
 
    ```
    az ad app federated-credential create \
@@ -162,9 +162,9 @@ Complete the following steps in your Azure environment. You need the following v
 
 1.
 
-**Assign Reader role to the service principal**
+**Assign Reader role to the AWS Config service principal**
 
-   Assign the Azure built-in Reader role to the service principal at the tenant (management group) level. This allows to discover Azure resources.
+   Assign the Azure built-in Reader role to the AWS Config service principal at the tenant (management group) level. This allows AWS Config to discover Azure resources.
 
    ```
    az role assignment create \
@@ -177,7 +177,7 @@ Complete the following steps in your Azure environment. You need the following v
 
 **Create an Event Hub for Azure Activity Log streaming**
 
-    uses an Azure Event Hub to receive Activity Log events that indicate resource changes. Create an Event Hub namespace, hub, and consumer group in one of your Azure subscriptions.
+   AWS Config uses an Azure Event Hub to receive Activity Log events that indicate resource changes. Create an Event Hub namespace, hub, and consumer group in one of your Azure subscriptions.
 
    ```
    # Create a resource group for the Event Hub
@@ -216,9 +216,9 @@ Complete the following steps in your Azure environment. You need the following v
 
 1.
 
-**Assign Event Hubs Data Receiver role to the service principal**
+**Assign Event Hubs Data Receiver role to the AWS Config service principal**
 
-   Allow the service principal to read from the Event Hub:
+   Allow the AWS Config service principal to read from the Event Hub:
 
    ```
    EVENT_HUB_ID=$(az eventhubs eventhub show \
@@ -239,7 +239,7 @@ Complete the following steps in your Azure environment. You need the following v
 
 **Configure Activity Log export to the Event Hub**
 
-   For each Azure subscription you want to monitor, create a diagnostic setting that exports Activity Log events to the Event Hub:
+   For each Azure subscription you want AWS Config to monitor, create a diagnostic setting that exports Activity Log events to the Event Hub:
 
    ```
    az provider register \
@@ -262,6 +262,6 @@ Complete the following steps in your Azure environment. You need the following v
 After completing the Azure setup, note the following values. You need them when creating the Cloud Connector:
 + **Tenant ID** — Your Azure AD directory (tenant) ID.
 + **SSM Application (Client) ID** — The application ID of the Systems Manager Azure AD app (Step 1).
-+ **Config Application (Client) ID** — The application ID of the Azure AD app (Step 6).
++ **Config Application (Client) ID** — The application ID of the AWS Config Azure AD app (Step 6).
 + **Subscription IDs** — The Azure subscriptions you want to manage.
 + **Event Hub namespace hostname** — The fully qualified hostname of the Event Hub namespace (for example, `{{EVENT_HUB_NAMESPACE}}.servicebus.windows.net`).

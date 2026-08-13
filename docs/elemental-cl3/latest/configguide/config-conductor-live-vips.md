@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/config-
 # Configuring virtual input switching
 <a name="config-conductor-live-vips"></a>
 
-On ECL3; node, you can configure the maximum number of virtual inputs allowed with the virtual input switching feature. The default is 8 inputs on the node. For information about this feature, see [https://docs.aws.amazon.com/elemental-live/latest/ug](https://docs.aws.amazon.com/elemental-live/latest/ug).
+On ECL3; node, you can configure the maximum number of virtual inputs allowed with the virtual input switching feature. The default is 8 inputs on the node. For information about this feature, see [*AWS Elemental Live User Guide*](https://docs.aws.amazon.com/elemental-live/latest/ug).
 
 **To set the number of virtual inputs**
 

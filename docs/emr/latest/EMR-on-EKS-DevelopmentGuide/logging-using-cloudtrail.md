@@ -34,7 +34,7 @@ For more information, see the [CloudTrail user Identity element](https://docs.aw
 
 A trail is a configuration that enables delivery of events as log files to an Amazon S3 bucket that you specify. CloudTrail log files contain one or more log entries. An event represents a single request from any source and includes information about the requested action, the date and time of the action, request parameters, and so on. CloudTrail log files aren't an ordered stack trace of the public API calls, so they don't appear in any specific order.
 
-The following example shows a CloudTrail log entry that demonstrates the [https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_ListJobRuns.html](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_ListJobRuns.html) action.
+The following example shows a CloudTrail log entry that demonstrates the [`ListJobRuns`](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_ListJobRuns.html) action.
 
 ```
 {

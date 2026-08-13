@@ -184,7 +184,7 @@ In this step, you create a dual-stack VPC endpoint for Amazon Keyspaces using th
 
    In the example output, there are two available subnet IDs: `subnet-70b24b16` and `subnet-c63ffbe7`.
 
-1. Create the VPC endpoint. For the `--vpc-id` parameter, specify the VPC ID from the previous step. For the `--subnet-ids` parameter, specify the subnet IDs from the previous step. Use the `--vpc-endpoint-type` parameter to define the endpoint as an interface. To create a dual-stack endpoint, use `--ip-address-type dualstack`. For more information about the command, see [https://docs.aws.amazon.com/cli/latest/reference/ec2/create-vpc-endpoint.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-vpc-endpoint.html) in the *AWS CLI Command Reference*.
+1. Create the VPC endpoint. For the `--vpc-id` parameter, specify the VPC ID from the previous step. For the `--subnet-ids` parameter, specify the subnet IDs from the previous step. Use the `--vpc-endpoint-type` parameter to define the endpoint as an interface. To create a dual-stack endpoint, use `--ip-address-type dualstack`. For more information about the command, see [`create-vpc-endpoint`](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-vpc-endpoint.html) in the *AWS CLI Command Reference*.
 
    ```
    aws ec2 create-vpc-endpoint \

@@ -66,21 +66,21 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html
  The legacy `pcre` package is deprecated and will be removed in the next major release of Amazon Linux. The `pcre2` package is the successor. Although the first versions of AL2023 shipped with a limited number of packages building against `pcre`, these packages will be migrated to `pcre2` within AL2023. The deprecated `pcre` library will remain available in AL2023.
 
 **Note**
- The deprecated version of `pcre` will not receive security updates for the full lifetime of AL2023. For more information about the `pcre` support lifecycle and the amount of time that the package will receive security updates, see the [package support statements on the `pcre` package](https://docs.aws.amazon.com/linux/al2023/release-notes/support-info-by-support-statement.html#support-info-by-support-statement-eol_pcre).
+ The deprecated version of `pcre` will not receive security updates for the full lifetime of AL2023. For more information about the `pcre` support lifecycle and the amount of time that the package will receive security updates, see the [package support statements on the `pcre` package](https://docs.aws.amazon.com/linux/al2023/release-notes/all-packages-AL2023.12.html).
 
  The deprecation of `pcre` in favor of `pcre2` follows the broader community shift in this direction, for example [`pcre` deprecation in Fedora](https://fedoraproject.org/wiki/Changes/PcreDeprecation).
 
 ## System V init (`sysvinit`)
 <a name="deprecated-sysv-init"></a>
 
- Although AL2023 retains backwards compatibility with System V service (init) scripts, the upstream `systemd` project, as part of its [v254 release](https://github.com/systemd/systemd/releases/tag/v254), announced the [deprecation of support for System V service scripts](https://github.com/systemd/systemd/blob/08423f6d30f5db045b8a25307857f111f45ff292/NEWS), and indicated that support will be removed in a future version of `systemd`. For more information, see [https://systemd.io/](https://systemd.io/).
+ Although AL2023 retains backwards compatibility with System V service (init) scripts, the upstream `systemd` project, as part of its [v254 release](https://github.com/systemd/systemd/releases/tag/v254), announced the [deprecation of support for System V service scripts](https://github.com/systemd/systemd/blob/08423f6d30f5db045b8a25307857f111f45ff292/NEWS), and indicated that support will be removed in a future version of `systemd`. For more information, see [systemd](https://systemd.io/).
 
  AL2023 will retain backwards compatibility with System V service (init) scripts, but users are encouraged to migrate to using native `systemd` unit files in order to be prepared for when support for System V service (init) scripts is removed from Amazon Linux, likely in the next major release.
 
 ## EOL Packages are deprecated
 <a name="deprecated-eol-packages"></a>
 
- Each package available in AL2023 has an associated [support statement](https://docs.aws.amazon.com/linux/al2023/release-notes/support-info-by-support-statement.html) which covers Amazon Linux specific information. These statements cover the core of the OS and its lifetime, as well as packages such as [PHP in AL2023](php.md) and [Python in AL2023](python.md), where AL2023 ships multiple versions and each are supported for the duration that the upstream Open Source project does.
+ Each package available in AL2023 has an associated [support statement](https://docs.aws.amazon.com/linux/al2023/release-notes/all-packages-AL2023.12.html) which covers Amazon Linux specific information. These statements cover the core of the OS and its lifetime, as well as packages such as [PHP in AL2023](php.md) and [Python in AL2023](python.md), where AL2023 ships multiple versions and each are supported for the duration that the upstream Open Source project does.
 
  In AL2023 you can get package support information using the `dnf` package manager. For more information, see [Getting package support information](managing-repos-os-updates.md#dnf-support-info-plugin).
 

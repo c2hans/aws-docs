@@ -44,7 +44,7 @@ First, you must create a task definition for your cluster that uses the `awsvpc`
 
 **Resource type:** `AWS::ECS::TaskDefinition`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ecs-task-definition-pid-mode-check.html](https://docs.aws.amazon.com/config/latest/developerguide/ecs-task-definition-pid-mode-check.html)
+**AWS Config rule:** [ecs-task-definition-pid-mode-check](https://docs.aws.amazon.com/config/latest/developerguide/ecs-task-definition-pid-mode-check.html)
 
 **Schedule type:** Change triggered
 
@@ -70,7 +70,7 @@ To configure the `pidMode` on a task definition, see [Task definition parameters
 
 **Resource type:** `AWS::ECS::TaskDefinition`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ecs-containers-nonprivileged.html](https://docs.aws.amazon.com/config/latest/developerguide/ecs-containers-nonprivileged.html)
+**AWS Config rule:** [ecs-containers-nonprivileged](https://docs.aws.amazon.com/config/latest/developerguide/ecs-containers-nonprivileged.html)
 
 **Schedule type:** Change triggered
 
@@ -96,7 +96,7 @@ To configure the `privileged` parameter on a task definition, see [Advanced cont
 
 **Resource type:** `AWS::ECS::TaskDefinition`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ecs-containers-readonly-access.html](https://docs.aws.amazon.com/config/latest/developerguide/ecs-containers-readonly-access.html)
+**AWS Config rule:** [ecs-containers-readonly-access](https://docs.aws.amazon.com/config/latest/developerguide/ecs-containers-readonly-access.html)
 
 **Schedule type:** Change triggered
 
@@ -125,7 +125,7 @@ To give an Amazon ECS container read-only access to its root file system, add th
 
 **Resource type:** `AWS::ECS::TaskDefinition`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ecs-no-environment-secrets.html](https://docs.aws.amazon.com/config/latest/developerguide/ecs-no-environment-secrets.html)
+**AWS Config rule:** [ecs-no-environment-secrets](https://docs.aws.amazon.com/config/latest/developerguide/ecs-no-environment-secrets.html)
 
 **Schedule type:** Change triggered
 
@@ -177,7 +177,7 @@ To define a log configuration for your Amazon ECS task definitions, see [Specify
 
 **Resource type:** `AWS::ECS::Service`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ecs-fargate-latest-platform-version.html](https://docs.aws.amazon.com/config/latest/developerguide/ecs-fargate-latest-platform-version.html)
+**AWS Config rule:** [ecs-fargate-latest-platform-version](https://docs.aws.amazon.com/config/latest/developerguide/ecs-fargate-latest-platform-version.html)
 
 **Schedule type:** Change triggered
 
@@ -205,7 +205,7 @@ To update an existing service, including its platform version, see [Updating a s
 
 **Resource type:** `AWS::ECS::Cluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ecs-container-insights-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/ecs-container-insights-enabled.html)
+**AWS Config rule:** [ecs-container-insights-enabled](https://docs.aws.amazon.com/config/latest/developerguide/ecs-container-insights-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -350,7 +350,7 @@ To update an ECS task set so that it doesn't use a public IP address, see [Updat
 
 **Resource type:** `AWS::ECS::TaskDefinition`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ecs-task-definition-network-mode-not-host.html](https://docs.aws.amazon.com/config/latest/developerguide/ecs-task-definition-network-mode-not-host.html)
+**AWS Config rule:** [ecs-task-definition-network-mode-not-host](https://docs.aws.amazon.com/config/latest/developerguide/ecs-task-definition-network-mode-not-host.html)
 
 **Schedule type:** Change triggered
 
@@ -376,7 +376,7 @@ If the Amazon ECS task definition was created by AWS Batch, see [Networking mode
 
 **Resource type:** `AWS::ECS::TaskDefinition`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ecs-task-definition-efs-encryption-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/ecs-task-definition-efs-encryption-enabled.html)
+**AWS Config rule:** [ecs-task-definition-efs-encryption-enabled](https://docs.aws.amazon.com/config/latest/developerguide/ecs-task-definition-efs-encryption-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -400,7 +400,7 @@ For information about enabling in-transit encryption for Amazon ECS Task Definit
 
 **Resource type:** `AWS::ECS::CapacityProvider`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ecs-capacity-provider-termination-check.html](https://docs.aws.amazon.com/config/latest/developerguide/ecs-capacity-provider-termination-check.html)
+**AWS Config rule:** [ecs-capacity-provider-termination-check](https://docs.aws.amazon.com/config/latest/developerguide/ecs-capacity-provider-termination-check.html)
 
 **Schedule type:** Change triggered
 
@@ -427,7 +427,7 @@ To enable managed termination protection for an Amazon ECS capacity provider, se
 
 **Resource type:** `AWS::ECS::TaskDefinition`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ecs-task-definition-linux-user-non-root.html](https://docs.aws.amazon.com/config/latest/developerguide/ecs-task-definition-linux-user-non-root.html)
+**AWS Config rule:** [ecs-task-definition-linux-user-non-root](https://docs.aws.amazon.com/config/latest/developerguide/ecs-task-definition-linux-user-non-root.html)
 
 **Schedule type:** Change triggered
 
@@ -454,7 +454,7 @@ For information about creating a new revision of an Amazon ECS Task Definition a
 
 **Resource type:** `AWS::ECS::TaskDefinition`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/ecs-task-definition-windows-user-non-admin.html](https://docs.aws.amazon.com/config/latest/developerguide/ecs-task-definition-windows-user-non-admin.html)
+**AWS Config rule:** [ecs-task-definition-windows-user-non-admin](https://docs.aws.amazon.com/config/latest/developerguide/ecs-task-definition-windows-user-non-admin.html)
 
 **Schedule type:** Change triggered
 

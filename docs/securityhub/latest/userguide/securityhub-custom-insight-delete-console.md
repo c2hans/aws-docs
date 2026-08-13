@@ -29,9 +29,9 @@ To delete a custom insight, choose your preferred method, and follow the instruc
 
 **To delete a custom insight (API)**
 
-1. Use the [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_DeleteInsight.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_DeleteInsight.html) operation of the Security Hub CSPM API. If you use the AWS CLI run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/delete-insight.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/delete-insight.html) command.
+1. Use the [`DeleteInsight`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_DeleteInsight.html) operation of the Security Hub CSPM API. If you use the AWS CLI run the [delete-insight](https://docs.aws.amazon.com/cli/latest/reference/securityhub/delete-insight.html) command.
 
-1. To identify the custom insight to delete, provide the insight's ARN. To get the ARN of a custom insight, use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetInsights.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetInsights.html) operation or [https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-insights.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-insights.html) command.
+1. To identify the custom insight to delete, provide the insight's ARN. To get the ARN of a custom insight, use the [`GetInsights`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetInsights.html) operation or [get-insights](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-insights.html) command.
 
 The following example deletes the specified insight. This example is formatted for Linux, macOS, or Unix, and it uses the backslash (\\) line-continuation character to improve readability.
 

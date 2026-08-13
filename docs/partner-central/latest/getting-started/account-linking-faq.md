@@ -52,9 +52,9 @@ You use AWS managed policies for the account linking prerequisites. By default, 
 The links in the following list take you to the *AWS Managed Policy Reference*.
 
 **AWS managed policies**
-+  [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralFullAccess) – Provides full access to AWS Partner Central; features and related AWS services.
-+  [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement) – Provides necessary access for opportunity management activities.
-+  [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerOfferManagement](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerOfferManagement) – Enables seller access to offer and agreement management activities.
++  [AWSPartnerCentralFullAccess:](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralFullAccess) – Provides full access to AWS Partner Central; features and related AWS services.
++  [AWSPartnerCentralOpportunityManagement:](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement) – Provides necessary access for opportunity management activities.
++  [AWSMarketplaceSellerOfferManagement:](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerOfferManagement) – Enables seller access to offer and agreement management activities.
 
 For more information about the AWS Partner Central managed policies, refer to [AWS managed policies for AWS Partner Central users](managed-policies.md) later in this guide.
 

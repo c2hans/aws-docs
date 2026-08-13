@@ -35,7 +35,7 @@ Content-type: application/json
 The request uses the following URI parameters.
 
  ** [addonName](#API_UpdateAddon_RequestSyntax) **   <a name="AmazonEKS-UpdateAddon-request-uri-addonName"></a>
-The name of the add-on. The name must match one of the names returned by [https://docs.aws.amazon.com/eks/latest/APIReference/API_ListAddons.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListAddons.html).
+The name of the add-on. The name must match one of the names returned by [`ListAddons`](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListAddons.html).
 Required: Yes
 
  ** [name](#API_UpdateAddon_RequestSyntax) **   <a name="AmazonEKS-UpdateAddon-request-uri-clusterName"></a>
@@ -50,7 +50,7 @@ Required: Yes
 The request accepts the following data in JSON format.
 
  ** [addonVersion](#API_UpdateAddon_RequestSyntax) **   <a name="AmazonEKS-UpdateAddon-request-addonVersion"></a>
-The version of the add-on. The version must match one of the versions returned by [https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeAddonVersions.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeAddonVersions.html).
+The version of the add-on. The version must match one of the versions returned by [`DescribeAddonVersions`](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeAddonVersions.html).
 Type: String
 Required: No
 

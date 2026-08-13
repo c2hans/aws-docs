@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 **Important**
 Any default patch baseline selections you make here do not apply to patching operations that are based on a patch policy. Patch policies use their own patch baseline specifications. For more information about patch policies, see [Patch policy configurations in Quick Setup](patch-manager-policies.md).
 
-When you create a custom patch baseline in Patch Manager, a tool in AWS Systems Manager, you can set the baseline as the default for the associated operating system type as soon as you create it. For information, see [Working with custom patch baselines](patch-manager-manage-patch-baselines.md).
+When you create a custom patch baseline in Patch Manager, you can set the baseline as the default for the associated operating system type as soon as you create it. For information, see [Working with custom patch baselines](patch-manager-manage-patch-baselines.md).
 
 You can also set an existing patch baseline as the default for an operating system type.
 
@@ -37,13 +37,13 @@ The **Actions** menu is not available if you didn't work with Patch Manager in t
 
 **To set a patch baseline as the default (AWS CLI)**
 
-1. Run the [https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-patch-baselines.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-patch-baselines.html) command to view a list of available patch baselines and their IDs and Amazon Resource Names (ARNs).
+1. Run the [describe-patch-baselines](https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-patch-baselines.html) command to view a list of available patch baselines and their IDs and Amazon Resource Names (ARNs).
 
    ```
    aws ssm describe-patch-baselines
    ```
 
-1. Run the [https://docs.aws.amazon.com/cli/latest/reference/ssm/register-default-patch-baseline.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/register-default-patch-baseline.html) command to set a baseline as the default for the operating system it's associated with. Replace {{baseline-id-or-ARN}} with the ID of the custom patch baseline or predefined baseline to use.
+1. Run the [register-default-patch-baseline](https://docs.aws.amazon.com/cli/latest/reference/ssm/register-default-patch-baseline.html) command to set a baseline as the default for the operating system it's associated with. Replace {{baseline-id-or-ARN}} with the ID of the custom patch baseline or predefined baseline to use.
 
 ------
 #### [ Linux & macOS ]

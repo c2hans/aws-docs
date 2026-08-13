@@ -59,6 +59,12 @@ To update existing collaboration member abilities, you must be the collaboration
 
 The member abilities that can be updated are:
 + Can receive results
++ Export query analysis log
+
+For more information about exporting query analysis logs, see [Exporting query analysis logs](export-analysis-logs.md).
+
+**Note**
+When you update member abilities through the API, the abilities that you specify replace all existing abilities. To keep an existing ability, include it along with the ability that you're adding.
 
 **Note**
 To update ML member abilities, see [Update ML member abilities](#update-ml-member-abilities-change-request).
@@ -175,6 +181,8 @@ You can edit the auto-approval settings for a collaboration by following these s
    1. Specify which member abilities can be automatically granted.
 **Note**
 By default, all collaboration members can "Contribute data".
+
+      You can grant the export query analysis logs ability automatically, without a separate approval cycle.
 
    1. (Optional) To allow new members to instantly join a collaboration with the specified abilities without manually approving change requests, select **Auto-approve new members with these abilities**.
 

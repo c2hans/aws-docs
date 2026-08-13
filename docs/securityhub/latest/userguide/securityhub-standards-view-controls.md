@@ -63,11 +63,11 @@ The table at the bottom of the page lists all the controls that apply to the sta
 
 **To review the controls for an enabled standard**
 
-1. Use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListSecurityControlDefinitions.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListSecurityControlDefinitions.html) operation of the Security Hub CSPM API. If you're using the AWS CLI, run the [list-security-control-definitions](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-security-control-definitions.html) command.
+1. Use the [ListSecurityControlDefinitions](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListSecurityControlDefinitions.html) operation of the Security Hub CSPM API. If you're using the AWS CLI, run the [list-security-control-definitions](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-security-control-definitions.html) command.
 
    Specify the Amazon Resource Name (ARN) of the standard that you want to review controls for. To obtain ARNs for standards, use the [DescribeStandards](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_DescribeStandards.html) operation or run the [describe-standards](https://docs.aws.amazon.com/cli/latest/reference/securityhub/describe-standards.html) command. If you don't specify the ARN for a standard, Security Hub CSPM returns all security control IDs.
 
-1. Use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListStandardsControlAssociations.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListStandardsControlAssociations.html) operation of the Security Hub CSPM API, or run the [list-standards-control-associations](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-standards-control-associations.html) command. This operation tells you which standards a control is enabled in.
+1. Use the [ListStandardsControlAssociations](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListStandardsControlAssociations.html) operation of the Security Hub CSPM API, or run the [list-standards-control-associations](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-standards-control-associations.html) command. This operation tells you which standards a control is enabled in.
 
    Identify the control by providing the security control ID or ARN. Pagination parameters are optional.
 

@@ -44,6 +44,6 @@ The following table lists some of the platform details and usage operation value
 
 1 If two software licenses are associated with an AMI, the **Platform details** field shows both.
 
-2 If you are running Spot Instances, the [https://docs.aws.amazon.com/cur/latest/userguide/Lineitem-columns.html#Lineitem-details-O-Operation](https://docs.aws.amazon.com/cur/latest/userguide/Lineitem-columns.html#Lineitem-details-O-Operation) on your AWS Cost and Usage Report might be different from the **Usage operation** value that is listed here. For example, if `[lineitem/Operation](https://docs.aws.amazon.com/cur/latest/userguide/Lineitem-columns.html#Lineitem-details-O-Operation)` displays `RunInstances:0010:SV006`, it means that Amazon EC2 is running Red Hat Enterprise Linux Spot Instance-hour in US East (N. Virginia) in Zone 6.
+2 If you are running Spot Instances, the [lineitem/Operation](https://docs.aws.amazon.com/cur/latest/userguide/Lineitem-columns.html#Lineitem-details-O-Operation) on your AWS Cost and Usage Report might be different from the **Usage operation** value that is listed here. For example, if `[lineitem/Operation](https://docs.aws.amazon.com/cur/latest/userguide/Lineitem-columns.html#Lineitem-details-O-Operation)` displays `RunInstances:0010:SV006`, it means that Amazon EC2 is running Red Hat Enterprise Linux Spot Instance-hour in US East (N. Virginia) in Zone 6.
 
 3 This appears as RunInstances (Linux/UNIX) in your usage reports.

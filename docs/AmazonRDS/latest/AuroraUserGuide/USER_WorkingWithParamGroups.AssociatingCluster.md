@@ -39,7 +39,7 @@ Check the `DBClusterParameterGroupStatus` value for the primary DB instance in t
 ## AWS CLI
 <a name="USER_WorkingWithParamGroups.AssociatingCluster.CLI"></a>
 
-To associate a DB cluster parameter group with a DB cluster, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-cluster.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-cluster.html) command with the following options:
+To associate a DB cluster parameter group with a DB cluster, use the AWS CLI [`modify-db-cluster`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-cluster.html) command with the following options:
 + `--db-cluster-name`
 + `--db-cluster-parameter-group-name`
 
@@ -64,6 +64,6 @@ aws rds modify-db-cluster ^
 ## RDS API
 <a name="USER_WorkingWithParamGroups.AssociatingCluster.API"></a>
 
-To associate a DB cluster parameter group with a DB cluster, use the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBCluster.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBCluster.html) operation with the following parameters:
+To associate a DB cluster parameter group with a DB cluster, use the RDS API [`ModifyDBCluster`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBCluster.html) operation with the following parameters:
 + `DBClusterIdentifier`
 + `DBClusterParameterGroupName`

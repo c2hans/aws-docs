@@ -14,7 +14,7 @@ CrowdStrike Falcon Data Replicator (FDR) delivers and enriches endpoint, cloud w
 <a name="crowdstrike-s3-sqs-setup"></a>
 
 Configuring CrowdStrike FDR to send logs to an Amazon S3 bucket involves several steps, primarily focused on setting up the Amazon S3 bucket, Amazon SQS queue, IAM roles, and then configuring the Amazon Telemetry Pipeline.
-+ Ensure CrowdStrike FDR is enabled within your CrowdStrike Falcon environment. This typically requires a specific license and may involve working with CrowdStrike support.
++ Make sure CrowdStrike FDR is enabled within your CrowdStrike Falcon environment. This typically requires a specific license and may involve working with CrowdStrike support.
 + Amazon S3 bucket that stores the CrowdStrike logs should reside in the same AWS region where the FDR is enabled.
 + Configure the Amazon S3 bucket to create event notifications, specifically for "Object Create" events. These notifications should be sent to an Amazon SQS queue.
 + Create an Amazon SQS queue in the same AWS region as your Amazon S3 bucket. This queue will receive notifications when new log files are added to the Amazon S3 bucket.

@@ -131,7 +131,7 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 
 For the Amazon Cognito identity provider `testProvider`, Ref returns the name of the identity provider.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-cognito-userpoolidentityprovider--examples"></a>

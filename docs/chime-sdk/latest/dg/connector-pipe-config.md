@@ -30,4 +30,4 @@ Media live connector pipelines support the following audio settings:
 Media live connector pipelines use the H264 encoder. You can use HD at 1280x720 or FHD at 1920x1080. Both resolutions use 30 frames per second, with a keyframe every two seconds.
 
 **Stopping media live connector pipelines**
-As a best practice for stopping media live connector pipelines, call the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaPipeline.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaPipeline.html) API. Ending a stream on a streaming platform such as IVS does not stop a media live connector pipeline.
+As a best practice for stopping media live connector pipelines, call the [DeleteMediaPipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaPipeline.html) API. Ending a stream on a streaming platform such as IVS does not stop a media live connector pipeline.

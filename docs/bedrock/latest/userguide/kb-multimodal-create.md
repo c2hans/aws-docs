@@ -58,7 +58,7 @@ When using Nova Multimodal Embeddings, Amazon Bedrock stores transient data in y
 #### [ CLI ]
 
 **To create a multimodal knowledge base using the AWS CLI**
-+ Create a knowledge base with Nova Multimodal Embeddings. Send a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateKnowledgeBase.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateKnowledgeBase.html) request:
++ Create a knowledge base with Nova Multimodal Embeddings. Send a [`CreateKnowledgeBase`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateKnowledgeBase.html) request:
 
   ```
   aws bedrock-agent create-knowledge-base \

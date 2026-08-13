@@ -13,6 +13,6 @@ If your users save files and directories associated with compute-intensive appli
 + Scratch space folders created by graphics simulation applications
 
 For more information, see:
-+  [https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html)
++  [*Amazon FSx for Windows File Server Windows User Guide*](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html)
 + [Using Amazon FSx with Amazon WorkSpaces Applications ](https://aws.amazon.com/blogs/desktop-and-application-streaming/using-amazon-fsx-with-amazon-appstream-2-0/)
 + [File gateways](https://docs.aws.amazon.com/storagegateway/latest/userguide/StorageGatewayConcepts.html#file-gateway-concepts) in the *AWS Storage Gateway User Guide*

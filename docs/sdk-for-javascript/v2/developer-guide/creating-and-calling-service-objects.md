@@ -114,7 +114,7 @@ When calling a method of a service object, pass parameters in JSON as required b
 s3.getObject({Bucket: 'bucketName', Key: 'keyName'});
 ```
 
-For more information about Amazon S3 parameters, see [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html) in the API reference.
+For more information about Amazon S3 parameters, see [`Class: AWS.S3`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html) in the API reference.
 
 In addition, you can bind values to individual parameters when creating a service object using the `params` parameter. The value of the `params` parameter of service objects is a map that specifies one or more of the parameter values defined by the service object. The following example shows the `Bucket` parameter of an Amazon S3 service object being bound to a bucket named `amzn-s3-demo-bucket`.
 

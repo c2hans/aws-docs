@@ -88,7 +88,7 @@ For more information, see [Prerequisite permissions to customize encryption](asy
 ## AWS CLI
 <a name="async-start-cli"></a>
 
-To run a translation job by using the AWS CLI, use the [https://docs.aws.amazon.com/cli/latest/reference/translate/start-text-translation-job.html](https://docs.aws.amazon.com/cli/latest/reference/translate/start-text-translation-job.html) command, and specify the name of your parallel data resource for the `parallel-data-names` parameter.
+To run a translation job by using the AWS CLI, use the [`start-text-translation-job`](https://docs.aws.amazon.com/cli/latest/reference/translate/start-text-translation-job.html) command, and specify the name of your parallel data resource for the `parallel-data-names` parameter.
 
 **Example Start-text-translation-job command**
 The following example runs a translation job by submitting an Excel file that is stored in an input bucket in Amazon S3. This job is customized by the parallel data that is included in the request.
@@ -119,17 +119,17 @@ Set the level of formality in the translation output. Set the `Formality` parame
 `--terminology-names`
 The name of a custom terminology resource to add to the translation job. This resource lists example source terms and the desired translation for each term. If you specify multiple target languages for the job, translate uses the designated terminology for each requested target language that has an entry for the source term in the terminology file.
 This parameter accepts only one custom terminology resource.
-For a list of available custom terminology resources, use the [https://docs.aws.amazon.com/cli/latest/reference/translate/list-terminologies.html](https://docs.aws.amazon.com/cli/latest/reference/translate/list-terminologies.html) command.
+For a list of available custom terminology resources, use the [`list-terminologies`](https://docs.aws.amazon.com/cli/latest/reference/translate/list-terminologies.html) command.
 For more information, see [Customizing your translations with custom terminology](how-custom-terminology.md).
 `--parallel-data-names`
 The name of a parallel data resource to add to the translation job. This resource consists of examples that show how you want segments of text to be translated. If you specify multiple target languages for the job, the parallel data file must include translations for all the target languages.
 When you add parallel data to a translation job, you create an *Active Custom Translation* job.
 This parameter accepts only one parallel data resource.
 Active Custom Translation jobs are priced at a higher rate than other jobs that don't use parallel data. For more information, see [Amazon Translate pricing](https://aws.amazon.com/translate/pricing/).
-For a list of available parallel data resources, use the [https://docs.aws.amazon.com/cli/latest/reference/translate/list-parallel-data.html](https://docs.aws.amazon.com/cli/latest/reference/translate/list-parallel-data.html) command.
+For a list of available parallel data resources, use the [`list-parallel-data`](https://docs.aws.amazon.com/cli/latest/reference/translate/list-parallel-data.html) command.
 For more information, see [Customizing your translations with parallel data (Active Custom Translation)](customizing-translations-parallel-data.md).
 
-To check the status of your translation job, use the [https://docs.aws.amazon.com/cli/latest/reference/translate/describe-text-translation-job.html](https://docs.aws.amazon.com/cli/latest/reference/translate/describe-text-translation-job.html) command.
+To check the status of your translation job, use the [`describe-text-translation-job`](https://docs.aws.amazon.com/cli/latest/reference/translate/describe-text-translation-job.html) command.
 
 **Example Describe-text-translation-job command**
 
@@ -171,7 +171,7 @@ Amazon Translate responds with the job properties, which include its status:
 }
 ```
 
-If the `JobStatus` value is `IN_PROGRESS`, allow a few minutes to pass, and run [https://docs.aws.amazon.com/cli/latest/reference/translate/describe-text-translation-job.html](https://docs.aws.amazon.com/cli/latest/reference/translate/describe-text-translation-job.html) again until the status is `COMPLETED`. When the job completes, you can download the translation results at the location provided by the `S3Uri` field under `OutputDataConfig`.
+If the `JobStatus` value is `IN_PROGRESS`, allow a few minutes to pass, and run [`describe-text-translation-job`](https://docs.aws.amazon.com/cli/latest/reference/translate/describe-text-translation-job.html) again until the status is `COMPLETED`. When the job completes, you can download the translation results at the location provided by the `S3Uri` field under `OutputDataConfig`.
 
 ## Amazon Translate API
 <a name="async-start-api"></a>

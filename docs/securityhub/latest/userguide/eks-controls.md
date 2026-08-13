@@ -18,7 +18,7 @@ These Security Hub CSPM controls evaluate the Amazon Elastic Kubernetes Service 
 
 **Resource type:** `AWS::EKS::Cluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/eks-endpoint-no-public-access.html](https://docs.aws.amazon.com/config/latest/developerguide/eks-endpoint-no-public-access.html)
+**AWS Config rule:** [eks-endpoint-no-public-access](https://docs.aws.amazon.com/config/latest/developerguide/eks-endpoint-no-public-access.html)
 
 **Schedule type:** Periodic
 
@@ -44,7 +44,7 @@ To modify endpoint access for an existing EKS cluster, see [Modifying cluster en
 
 **Resource type:** `AWS::EKS::Cluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/eks-cluster-supported-version.html](https://docs.aws.amazon.com/config/latest/developerguide/eks-cluster-supported-version.html)
+**AWS Config rule:** [eks-cluster-supported-version](https://docs.aws.amazon.com/config/latest/developerguide/eks-cluster-supported-version.html)
 
 **Schedule type:** Change triggered
 
@@ -71,7 +71,7 @@ To update an EKS cluster, see [Update an existing cluster to a new Kubernetes ve
 
 **Resource type:** `AWS::EKS::Cluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/eks-cluster-secrets-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/eks-cluster-secrets-encrypted.html)
+**AWS Config rule:** [eks-cluster-secrets-encrypted](https://docs.aws.amazon.com/config/latest/developerguide/eks-cluster-secrets-encrypted.html)
 
 **Schedule type:** Periodic
 
@@ -162,7 +162,7 @@ To add tags to an EKS identity provider configurations, see [Tagging your Amazon
 
 **Resource type:** `AWS::EKS::Cluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/eks-cluster-log-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/eks-cluster-log-enabled.html)
+**AWS Config rule:** [eks-cluster-log-enabled](https://docs.aws.amazon.com/config/latest/developerguide/eks-cluster-log-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -190,7 +190,7 @@ To enable audit logs for your EKS cluster, see [Enabling and disabling control p
 
 **Resource type:** `AWS::EKS::Nodegroup`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/eks-nodegroup-supported-version-check.html](https://docs.aws.amazon.com/config/latest/developerguide/eks-nodegroup-supported-version-check.html)
+**AWS Config rule:** [eks-nodegroup-supported-version-check](https://docs.aws.amazon.com/config/latest/developerguide/eks-nodegroup-supported-version-check.html)
 
 **Schedule type:** Change triggered
 

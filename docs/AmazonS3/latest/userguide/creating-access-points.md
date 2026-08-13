@@ -12,6 +12,7 @@ By default, you can create up to 10,000 access points per Region for each of you
 **Topics**
 + [Creating access points with S3 buckets](#create-access-points)
 + [Creating access points with Amazon FSx](#create-access-points-with-fsx)
++ [Creating access points with AWS Backup](#create-access-points-with-backup)
 + [Creating access points restricted to a virtual private cloud](access-points-vpc.md)
 + [Managing public access to access points for general purpose buckets](access-points-bpa-settings.md)
 
@@ -80,7 +81,7 @@ aws s3control create-access-point --name {{example-ap}} --account-id {{111122223
 ### Using the REST API
 <a name="creating-access-point-rest-api"></a>
 
-You can use the REST API to create an access point. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateAccessPoint.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateAccessPoint.html) in the *Amazon Simple Storage Service API Reference*.
+You can use the REST API to create an access point. For more information, see [CreateAccessPoint](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateAccessPoint.html) in the *Amazon Simple Storage Service API Reference*.
 
 ## Creating access points with Amazon FSx
 <a name="create-access-points-with-fsx"></a>
@@ -88,3 +89,10 @@ You can use the REST API to create an access point. For more information, see [h
 You can create and attach an access point to an FSx for OpenZFS volume using the Amazon FSx console, AWS CLI, or API. Once attached, you can use the S3 object APIs to access your file data. Your data continues to reside on the Amazon FSx file system and continues to be directly accessible for your existing workloads. You continue to manage your storage using all the FSx for OpenZFS storage management capabilities, including backups, snapshots, user and group quotas, and compression.
 
 For instructions on creating an access point and attaching it to an FSx for OpenZFS volume see, [Creating an access point](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/create-access-points.html) in the *FSx for OpenZFS User Guide*.
+
+## Creating access points with AWS Backup
+<a name="create-access-points-with-backup"></a>
+
+AWS Backup creates and attaches access points to S3 recovery points, providing read-only access to S3 backup data using S3 APIs. These access points are created through the AWS Backup console or the `CreateBackupAccessPoint` API, not through S3 access point APIs.
+
+For instructions on creating a backup access point, see [Backup access points](https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-access-points.html) in the *AWS Backup Developer Guide*.

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect
 <a name="amazon-connect-service-limits"></a>
 
 **Note**
-End of support notice: On May 20, 2026, AWS will end support for Amazon Connect Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Amazon Connect console, access Voice ID features on the Connect Customer admin website or Contact Control Panel, or access Voice ID resources. For more information, visit [Amazon Connect Voice ID end of support](https://docs.aws.amazon.com/connect/latest/adminguide/amazonconnect-voiceid-end-of-support.html).
+End of support notice: On May 20, 2026, AWS will end support for Amazon Connect Customer Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Amazon Connect Customer console, access Voice ID features on the Connect Customer admin website or Contact Control Panel, or access Voice ID resources. For more information, visit [Amazon Connect Customer Voice ID end of support](https://docs.aws.amazon.com/connect/latest/adminguide/amazonconnect-voiceid-end-of-support.html).
 
 **All service quotas can be adjusted unless otherwise noted.**
 
@@ -18,9 +18,9 @@ To request a quota increase, see [Requesting a quota increase](https://docs.aws.
 + [Important things to know](#important-quota-info)
 + [Connect Customer quotas](#connect-quotas)
 + [AppIntegrations quotas](#app-integration-quotas)
-+ [Connect AI agents quotas](#connect-ai-agents-quotas)
++ [agent assist quotas](#connect-ai-agents-quotas)
 + [Cases quotas](#cases-quotas)
-+ [Contact Lens quotas](#contactlens-quotas)
++ [Conversational analytics quotas](#contactlens-quotas)
 + [Customer Profiles quotas](#customer-profiles-quotas)
 + [Outbound campaigns quotas](#outbound-communications-quotas)
 + [Voice ID quotas](#voiceid-quotas)
@@ -58,7 +58,7 @@ To request a quota increase, see [Requesting a quota increase](https://docs.aws.
 | Amazon Lex V2 bot aliases per instance | 100 | Yes  | Resource Level |
 | Concurrent active calls per instance | 10<br />This includes PSTN and WebRTC calls.<br />For more information, see [How contacts are counted](#contact-counting-criteria). | Yes | Resource Level |
 | Concurrent active chats per instance | 500<br />This includes SMS, WhatsApp, and Apple Messages for Business. It also includes chats that are waiting.<br />If the customer has initiated a chat and has gone silent for hours, this idle chat is counted against the quota. To avoid having idle chats count against your quota, we recommend using [persistent chats](chat-persistence.md). <br />If this quota is exceeded, the API call fails with a quota exceeded error. | Yes | Resource Level |
-| Concurrent active emails per instance | 1000 (Default)<br />This is the total of all email contacts in an Connect Customer instance in an active state. An email contact in an active state includes:+  emails that are currently executing through a flow <br />+  emails waiting in queue waiting to be assigned <br />+  emails assigned to agents (either actively being worked on or in ACW state) <br />+  email replies or agent-initiated emails being composed by agents or automated services <br />Example: 200 emails in queue \+ 10 emails assigned to 10 agents \+ 5 outbound emails being sent by an agent (either a reply or agent-initiated) = 215 Concurrent active emails in the instance<br />This service limit should be monitored by the [Connect Customer metrics sent to CloudWatch](monitoring-cloudwatch.md#connect-metrics-cloudwatch) using ConcurrentEmails and ConcurrentEmailsPercentage to ensure adequate scaling of your Connect Customer instance. If this quota is exceeded by your Connect Customer instance, Email API calls will fail with a quota exceeded error. We recommend following the Connect Customer [ongoing operations management](plan-ahead-quotas.md#production-environment-go-live-quotas) approach of configuring alerts at 80% of quota limits to notify you when to [request a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html). | Yes | Resource Level |
+| Concurrent active emails per instance | 1000 (Default)<br />This is the total of all email contacts in a Connect Customer instance in an active state. An email contact in an active state includes:+  emails that are currently executing through a flow <br />+  emails waiting in queue waiting to be assigned <br />+  emails assigned to agents (either actively being worked on or in ACW state) <br />+  email replies or agent-initiated emails being composed by agents or automated services <br />Example: 200 emails in queue \+ 10 emails assigned to 10 agents \+ 5 outbound emails being sent by an agent (either a reply or agent-initiated) = 215 Concurrent active emails in the instance<br />This service limit should be monitored by the [Connect Customer metrics sent to CloudWatch](monitoring-cloudwatch.md#connect-metrics-cloudwatch) using ConcurrentEmails and ConcurrentEmailsPercentage to ensure adequate scaling of your Connect Customer instance. If this quota is exceeded by your Connect Customer instance, Email API calls will fail with a quota exceeded error. We recommend following the Connect Customer [ongoing operations management](plan-ahead-quotas.md#production-environment-go-live-quotas) approach of configuring alerts at 80% of quota limits to notify you when to [request a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html). | Yes | Resource Level |
 | Concurrent active tasks per instance | 2500 concurrent active tasks<br />All tasks that have not yet ended are considered active and are counted as concurrent tasks: tasks that are being routed in flows, waiting in a queue for an agent, being handled by agents, or being run in After Contact Work (ACW). | Yes | Resource Level |
 | Custom Metrics per instance  | 1000 | No | Resource Level |
 | Data tables per instance | 100 | Yes | Resource Level |
@@ -108,7 +108,7 @@ All AppIntegrations quotas are at the Account level.
 | Event integrations per Region | 10 | Yes |
 | Application per region (third-party application) | 25 | No |
 
-## Connect AI agents service quotas
+## Connect Customer agent assist service quotas
 <a name="connect-ai-agents-quotas"></a>
 
 All Amazon Q quotas are at the Account level.
@@ -151,10 +151,10 @@ All the Cases quotas are at the Account level.
 |  SLAs that can be attached to a case | 10 | Yes |
 | Fields in a Custom type related item | 5 | Yes |
 
-## Contact Lens service quotas
+## Conversational analytics service quotas
 <a name="contactlens-quotas"></a>
 
-All Contact Lens quotas are at the Account level.
+All conversational analytics quotas are at the Account level.
 
 | Name | Default | Adjustable |
 | --- | --- | --- |
@@ -167,15 +167,16 @@ All Contact Lens quotas are at the Account level.
 | Concurrent after-call agent conversation summary jobs (shared between all supported channels - voice, chat) | 2 | Yes |
 | External voice analytics connectors | 0 | Yes |
 | Maximum active recording sessions from external voice systems per instance | 10 | Yes |
-| Number of evaluation questions that can be answered with Ask AI on a single contact (for manually submitted evaluations) | 10 | Yes\* |
-| Number of evaluation questions that can be answered automatically on a contact using generative AI (for automated submissions of evaluations) | 10 | Yes\* |
+| Number of evaluation questions answered with AI assistance on a single contact (manually initiated) | 30 | Yes\* |
+| Number of evaluation questions on a single contact completed automatically by generative AI (automated evaluations) | 15 | Yes\* |
+| Maximum number of evaluations (manual and automated) per contact | 10 | No |
 
 \*Through a support ticket.
 
 ### Derive Concurrent post-call analytics jobs based on your Connect Customer call volume
 <a name="contactlens-concurrent-analytics-jobs"></a>
 
-A post-call analytics job is kicked off after the completion of each contact that has Contact Lens conversational analytics [enabled](enable-analytics.md) on it. The time to complete a post-call analytics job can vary, but for planning purposes, you can estimate that it usually takes about 40% of the call length. If you choose 40% for your estimate, to calculate concurrent post-call analytics jobs, you would use the following formula:
+A post-call analytics job is kicked off after the completion of each contact that has conversational analytics [enabled](enable-analytics.md) on it. The time to complete a post-call analytics job can vary, but for planning purposes, you can estimate that it usually takes about 40% of the call length. If you choose 40% for your estimate, to calculate concurrent post-call analytics jobs, you would use the following formula:
 
 `(average call duration in minutes) * (0.4) * (calls per hour) / (60)`
 
@@ -202,7 +203,7 @@ All Customer Profiles quotas are at the Account level.
 | Maximum expiration in days | Each supported Region: 1,098 |  Yes  | The maximum expiration, in days, that can be defined for an object or profile in the current AWS Region. |
 | Maximum number of calculated attributes per domain | Each supported Region: 50 | No | The maximum number of calculated attributes per domain in the current AWS Region. |
 | Maximum number of event stream per domain | Each supported Region: 1 | No | The maximum number of event streams per domain in the current AWS Region. |
-| Maximum number of event triggers per domain | Each supported Region: 20 | Yes | The maximum number of event triggers per domain in the current AWS Region. |
+| Maximum number of event triggers per domain | Each supported Region: 50 | Yes | The maximum number of event triggers per domain in the current AWS Region. |
 | Maximum number of integrations | Each supported Region: 50 |  Yes  | The maximum number of integrations per domain in the current AWS Region. |
 | Maximum number of segment snapshots per day | Each supported Region: 200 |  Yes  | The maximum number of segment snapshots per domain in the current AWS Region. |
 | Maximum size of all objects for a profile | Each supported Region: 51,200 Kilobytes |  Yes  | The total size of a profile, including all of its related objects, in the current AWS Region. |
@@ -343,14 +344,14 @@ Connect Customer throttling quotas are by account, and per Region, not by user a
 | ListFieldOptions | 6 | 16 | yes |
 | GetTemplate, GetLayout | 6 | 20 | yes |
 
-### Connect Customer Contact Lens Service API throttling quotas
+### Connect Customer conversational analytics Service API throttling quotas
 <a name="connect-contactlens-api-quotas"></a>
 
-Connect Customer Contact Lens throttling quotas are by account, not by user and not by instance. For example:
+Connect Customer conversational analytics throttling quotas are by account, not by user and not by instance. For example:
 + If different users from the same account make requests, they are sharing a throttle bucket.
 + If multiple requests are sent from different instances from the same account, they are also sharing a throttle bucket.
 
-When you use the [Connect Customer Contact Lens API](https://docs.aws.amazon.com/contact-lens/latest/APIReference/Welcome.html), the number of requests per second is limited to the following:
+When you use the [Connect Customer conversational analytics API](https://docs.aws.amazon.com/contact-lens/latest/APIReference/Welcome.html), the number of requests per second is limited to the following:
 + [ListRealtimeContactAnalysisSegments](https://docs.aws.amazon.com/contact-lens/latest/APIReference/ListRealtimeContactAnalysisSegments.html): a `RateLimit` of 1 request per second, and a `BurstLimit` of 2 requests per second.
 + [ListRealtimeContactAnalysisSegmentsV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRealtimeContactAnalysisSegmentsV2.html): a `RateLimit` of 2 request per second, and a `BurstLimit` of 5 requests per second.
 
@@ -468,7 +469,7 @@ For the Connect Customer Participant Service, the quotas are by instance.
 | DescribeSpeaker, OptOutSpeaker, DeleteSpeaker, DescribeFraudster, DeleteFraudster | 10 |
 | TagResource, UnTagResource, ListTagsForResource | 2 |
 
-### Connect AI agents Service API throttling quotas
+### agent assist Service API throttling quotas
 <a name="q-in-connect-api-quotas"></a>
 
 | API | Default TPS throttling limits |

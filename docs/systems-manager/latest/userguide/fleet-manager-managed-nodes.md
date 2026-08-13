@@ -8,6 +8,10 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-m
 <a name="fleet-manager-managed-nodes"></a>
 
 A *managed node* is any machine configured for AWS Systems Manager. You can configure the following machine types as managed nodes:
+
+This section includes the following topics.
++ [Resetting passwords on managed nodes](fleet-manager-reset-password.md)
++ [Managing the Windows registry on managed nodes](fleet-manager-manage-windows-registry.md)
 + Amazon Elastic Compute Cloud (Amazon EC2) instances
 + Servers on your own premises (on-premises servers)
 + AWS IoT Greengrass core devices
@@ -34,7 +38,7 @@ If you don't see your managed nodes listed in the console, then do the following
 
 Note the following additional information:
 + The Fleet Manager console does not display Amazon EC2 nodes that have been terminated.
-+ Systems Manager requires accurate time references in order to perform operations on your machines. If the date and time aren't set correctly on your managed nodes, the machines might not match the signature date of your API requests. For more information, see [Use cases and best practices](systems-manager-best-practices.md).
++ Systems Manager requires accurate time references to perform operations on your machines. If the date and time aren't set correctly on your managed nodes, the machines might not match the signature date of your API requests. For more information, see [Use cases and best practices](systems-manager-best-practices.md).
 + When you create or edit tags, the system can take up to one hour to display changes in the table filter.
 + After the status of a managed node has been `Connection Lost` for at least 30 days, the node might no longer be listed in the Fleet Manager console. To restore it to the list, the issue that caused the lost connection must be resolved. For troubleshooting tips, see [Troubleshooting managed node availability](fleet-manager-troubleshooting-managed-nodes.md).
 
@@ -46,13 +50,3 @@ For information about increasing your security posture against unauthorized root
 
 **Deregister managed nodes**
 You can deregister managed nodes at any time. For example, if you're managing multiple nodes with the same AWS Identity and Access Management (IAM) role and you notice any kind of malicious behavior, you can deregister any number of machines at any point. (In order to re-register the same machine, you must use a different hybrid Activation Code and Activation ID than previously used to register it.) For information about deregistering managed nodes, see [Deregistering managed nodes in a hybrid and multicloud environment](fleet-manager-deregister-hybrid-nodes.md).
-
-**Topics**
-+ [Resetting passwords on managed nodes](fleet-manager-reset-password.md)
-+ [Deregistering managed nodes in a hybrid and multicloud environment](fleet-manager-deregister-hybrid-nodes.md)
-+ [Working with OS file systems using Fleet Manager](fleet-manager-file-system-management.md)
-+ [Monitoring managed node performance](fleet-manager-monitoring-node-performance.md)
-+ [Working with processes](fleet-manager-manage-processes.md)
-+ [Viewing logs on managed nodes](fleet-manager-view-node-logs.md)
-+ [Managing OS user accounts and groups on managed nodes using Fleet Manager](fleet-manager-manage-os-user-accounts.md)
-+ [Managing the Windows registry on managed nodes](fleet-manager-manage-windows-registry.md)

@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/setting-u
 # Setting up a custom domain name for QnABot content designer and client
 <a name="setting-up-a-custom-domain-name-for-qnabot-content-designer-and-client"></a>
 
-This section provides information on how to set up a custom domain name and configure the QnABot on AWS solution to use the custom domain name for the content designer and client user interfaces. The setup and configuration involve the following steps.
+This section provides information on how to set up a custom domain name and configure the QnABot on AWS guidance to use the custom domain name for the content designer and client user interfaces. The setup and configuration involve the following steps.
 
 ## Step 1: Set up custom domain name for API Gateway
 <a name="step-1-set-up-custom-domain-name-for-api-gateway"></a>
 
-Use the AWS account and Region where you have deployed the QnABot on AWS solution for the following steps. See [Setting up custom domain names for REST APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html) in the *Amazon API Gateway Developer Guide*.
+Use the AWS account and Region where you have deployed the QnABot on AWS guidance for the following steps. See [Setting up custom domain names for REST APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html) in the *Amazon API Gateway Developer Guide*.
 + Registering a domain name.
 + Creating DNS records.
 + Creating an SSL certificate for the custom domain name.
@@ -27,12 +27,12 @@ When mapping the API to the custom domain in API Gateway for the QnABot deployme
 
 ## Mapping 1
 <a name="mapping-1"></a>
-+  **API** - Select the QnABot deployment you would like to use. The QnABot API takes on the same name as the CloudFormation Stack name you used when you deployed the QnABot on AWS solution.
++  **API** - Select the QnABot deployment you would like to use. The QnABot API takes on the same name as the CloudFormation Stack name you used when you deployed the QnABot on AWS guidance.
 +  **Stage** - Use **prod**. This is the default stage created for the QnABot deployment.
 
 ## Mapping 2
 <a name="mapping-2"></a>
-+  **API** - Select the QnABot deployment you would like to use. The QnABot API takes on the same name as the CloudFormation Stack name you used when you deployed the QnABot on AWS solution.
++  **API** - Select the QnABot deployment you would like to use. The QnABot API takes on the same name as the CloudFormation Stack name you used when you deployed the QnABot on AWS guidance.
 +  **Stage** - Use **prod**. This is the default stage created for the QnABot deployment.
 +  **Path** - Use **prod**. This is used for routing requests.
 
@@ -41,7 +41,7 @@ When mapping the API to the custom domain in API Gateway for the QnABot deployme
 
 1. Navigate to the [API Gateway console](https://aws.amazon.com/api-gateway/) and select the QnABot API.
 
-1. The QnABot API takes on the same name as the CloudFormation Stack name you used when you deployed the QnABot on AWS solution.
+1. The QnABot API takes on the same name as the CloudFormation Stack name you used when you deployed the QnABot on AWS guidance.
 
 1. Navigate to the Resources section from the menu.
 
@@ -90,7 +90,7 @@ To access the **QnABot** content designer user interface, the deployment sets up
 
 1. Choose the **QnABot** user pool.
 
-1. The QnABot user pool takes on the same name as the CloudFormation stack name you used when you deployed the QnABot on AWS solution. For example, `UserPool-[.red]` *<stack-name>*``
+1. The QnABot user pool takes on the same name as the CloudFormation stack name you used when you deployed the QnABot on AWS guidance. For example, `UserPool-[.red]` *<stack-name>*``
 
 1. Navigate to **App Integration** \| **App client settings**.
 

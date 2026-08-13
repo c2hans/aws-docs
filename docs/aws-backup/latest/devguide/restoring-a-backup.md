@@ -46,7 +46,7 @@ For more information, see [Restore testing](https://docs.aws.amazon.com/aws-back
 Restores of Amazon DynamoDB, Amazon S3, SAP HANA on Amazon EC2 instances, virtual machines, and Amazon Timestream resources currently do not have this feature available.
 
 ### Introduction
-<a name="w2aac17c33b9b5"></a>
+<a name="w2aac17c35b9b5"></a>
 
 You can copy tags as you restore a resource if the tags belonged to the protected resource at the time of backup. Tags, which are labels containing a key and value pair, can help you identify and search for resources. When you start a restore job, tags that belonged to the original backed-up resources can be added to the resource being restored.
 
@@ -57,7 +57,7 @@ When you restore a backup in the console flow, your source tags will be copied b
 In the API operation `StartRestoreJob`, the parameter `CopySourceTagsToRestoredResource` is set to `false` by default, which will exclude the original source tags from the resource you are restoring. If you wish to *include* tags from the original source, set this to `True`.
 
 ### Considerations
-<a name="w2aac17c33b9b7"></a>
+<a name="w2aac17c35b9b7"></a>
 + A resource can have up to 50 tags, including restored resources. Please see [Tagging your AWS resources ](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html) for more information about tag limits.
 + Ensure the correct permissions are present in the role used for restores to copy tags. The default role for restores contains the necessary permissions. A custom role must include additional permissions to tag resources.
 + The following resources are not currently supported for restore tag inclusion: VMware Cloud™ on AWS, VMware Cloud™ on AWS Outposts, on-premises systems, SAP HANA on Amazon EC2 instances, Timestream, DynamoDB, Advanced DynamoDB, and Amazon S3.
@@ -78,7 +78,7 @@ In the API operation `StartRestoreJob`, the parameter `CopySourceTagsToRestoredR
 + **Amazon Redshift** clusters, by default, always include tags during a restore job.
 
 ### Copy tags via the console
-<a name="w2aac17c33b9c15"></a>
+<a name="w2aac17c35b9c15"></a>
 
 1. Open the [AWS Backup console](https://console.aws.amazon.com/backup/)
 
@@ -95,7 +95,7 @@ In the API operation `StartRestoreJob`, the parameter `CopySourceTagsToRestoredR
 1. Click **Restore backup** after you have selected all your preferred settings and roles.
 
 ### To include tags programmatically
-<a name="w2aac17c33b9c17"></a>
+<a name="w2aac17c35b9c17"></a>
 
 Use the API operation `StartRestoreJob` . Ensure the following Boolean parameter is set to `True`:
 
@@ -131,7 +131,7 @@ The restore job will fail if this parameter is included for an unsupported resou
 ```
 
 ### Troubleshoot tag restore issues
-<a name="w2aac17c33b9c19"></a>
+<a name="w2aac17c35b9c19"></a>
 
 **ERROR:** Insufficient Permissions
 

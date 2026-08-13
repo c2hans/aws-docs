@@ -11,7 +11,7 @@ The following table lists all available flow blocks that you can use. Choose any
 
 | Block | Description |
 | --- | --- |
-|  [Connect assistant](connect-assistant-block.md) | Associates an Connect AI agents domain to a contact to enable real-time recommendations. |
+|  [Connect assistant](connect-assistant-block.md) | Associates an AI agents domain to a contact to enable real-time recommendations. |
 | [Authenticate Customer](authenticate-customer.md)  | Enables the customer to authenticate by using Amazon Cognito and Connect Customer Customer Profiles. |
 | [Call phone number](call-phone-number.md)  | Initiates an outbound call from an outbound whisper flow. |
 | [Cases](cases-block.md)  | Gets, updates, and creates cases.  |

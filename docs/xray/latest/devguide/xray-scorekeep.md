@@ -19,8 +19,8 @@ The sample includes a front-end web app, the API that it calls, and the DynamoDB
 ![Service map showing Client connecting to Scorekeep container, which connects to DynamoDB tables and SNS.](http://docs.aws.amazon.com/xray/latest/devguide/images/scorekeep-gettingstarted-servicemap-before-ECS.png)
 
 The sample application shows basic instrumentation in these files:
-+ **HTTP request filter** – [https://github.com/awslabs/eb-java-scorekeep/tree/xray/src/main/java/scorekeep/WebConfig.java](https://github.com/awslabs/eb-java-scorekeep/tree/xray/src/main/java/scorekeep/WebConfig.java)
-+ **AWS SDK client instrumentation** – [https://github.com/awslabs/eb-java-scorekeep/tree/xray/build.gradle](https://github.com/awslabs/eb-java-scorekeep/tree/xray/build.gradle)
++ **HTTP request filter** – [`WebConfig.java`](https://github.com/awslabs/eb-java-scorekeep/tree/xray/src/main/java/scorekeep/WebConfig.java)
++ **AWS SDK client instrumentation** – [`build.gradle`](https://github.com/awslabs/eb-java-scorekeep/tree/xray/build.gradle)
 
 The `xray` branch of the application includes the use of [HTTPClient](xray-sdk-java-httpclients.md), [Annotations](xray-sdk-java-segment.md), [SQL queries](xray-sdk-java-sqlclients.md), [custom subsegments](xray-sdk-java-subsegments.md), an instrumented [AWS Lambda](xray-services-lambda.md) function, and [instrumented initialization code and scripts](scorekeep-startup.md).
 

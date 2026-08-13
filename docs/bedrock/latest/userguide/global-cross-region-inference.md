@@ -19,7 +19,7 @@ With global cross-Region inference for the Anthropic Claude Sonnet 4.5 model, yo
 <a name="global-cris-considerations"></a>
 
 Note the following information about Global cross-Region inference:
-+ To see the default quotas for cross-Region throughput when using Global inference profiles, refer to the **Global Cross-region model inference requests per minute for ${Model}** and **Global Cross-region model inference tokens per minute for ${Model}** values in [Amazon Bedrock service quotas](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#limits_bedrock) in the *AWS General Reference*.
++ For default cross-Region throughput quotas when using Global inference profiles, see the **Global Cross-region model inference requests per minute for ${Model}** and **Global Cross-region model inference tokens per minute for ${Model}** values in [Amazon Bedrock service quotas](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#limits_bedrock) in the *AWS General Reference*.
 
   You can request, view, and manage quotas for the Global Cross-Region Inference Profile from the [Service Quotas console](https://console.aws.amazon.com/servicequotas/home/services/bedrock/quotas) or by using AWS CLI commands in your **source region**.
 
@@ -79,10 +79,10 @@ To enable global cross-Region inference for your users, you must apply a three-p
 
 The first part of the policy grants access to the Regional inference profile in your requesting AWS Region. The second part provides access to the Regional FM resource. The third part grants access to the global FM resource, which enables the cross-Region routing capability.
 
-When implementing these policies, make sure all three resource Amazon Resource Names (ARNs) are included in your IAM statements:
-+ The Regional inference profile ARN follows the pattern `arn:aws:bedrock:REGION:ACCOUNT:inference-profile/global.MODEL-NAME`. This is used to give access to the global inference profile in the source AWS Region.
-+ The Regional FM uses `arn:aws:bedrock:REGION::foundation-model/MODEL-NAME`. This is used to give access to the FM in the source AWS Region.
-+ The global FM requires `arn:aws:bedrock:::foundation-model/MODEL-NAME`. This is used to give access to the FM in different global AWS Regions.
+When implementing these policies, include all three resource Amazon Resource Names (ARNs) in your IAM statements:
++ The Regional inference profile ARN follows the pattern `arn:aws:bedrock:REGION:ACCOUNT:inference-profile/global.MODEL-NAME`. Use this ARN to grant access to the global inference profile in the source AWS Region.
++ The Regional FM uses `arn:aws:bedrock:REGION::foundation-model/MODEL-NAME`. Use this ARN to grant access to the FM in the source AWS Region.
++ The global FM requires `arn:aws:bedrock:::foundation-model/MODEL-NAME`. Use this ARN to grant access to the FM in different global AWS Regions.
 
 The global FM ARN has no AWS Region or account specified, which is intentional and required for the cross-Region functionality.
 
@@ -93,7 +93,7 @@ You can choose from two primary approaches to implement deny policies to global 
 + **Remove an IAM policy** – The first method involves removing one or more of the three required IAM policies from user permissions. Because global CRIS requires all three policies to function, removing a policy will result in denied access.
 + **Implement a deny policy** – The second approach is to implement an explicit deny policy that specifically targets global CRIS inference profiles. This method provides clear documentation of your security intent and makes sure that even if someone accidentally adds the required allow policies later, the explicit deny will take precedence. The deny policy should use a `StringEquals` condition matching the pattern `"aws:RequestedRegion": "unspecified"`. This pattern specifically targets inference profiles with the `global` prefix.
 
-When implementing deny policies, it's crucial to understand that global CRIS changes how the `aws:RequestedRegion` field behaves. Traditional AWS Region-based deny policies that use `StringEquals` conditions with specific AWS Region names such as `"aws:RequestedRegion": "us-west-2"` will not work as expected with global CRIS because the service sets this field to `global` rather than the actual destination AWS Region. However, as mentioned earlier, `"aws:RequestedRegion": "unspecified"` will result in the deny effect.
+When implementing deny policies, it's crucial to understand that global CRIS changes how the `aws:RequestedRegion` field behaves. Traditional AWS Region-based deny policies that use `StringEquals` conditions with specific AWS Region names such as `"aws:RequestedRegion": "us-west-2"` will not work as expected with global CRIS. The service sets this field to `global` rather than the actual destination AWS Region. However, as mentioned earlier, `"aws:RequestedRegion": "unspecified"` will result in the deny effect.
 
 ## Service Control Policy requirements for Global cross-Region inference
 <a name="global-cris-scp-setup"></a>
@@ -159,7 +159,7 @@ For detailed, step-by-step guidance on implementing cross-Region inference with 
 ## Request limit increases for global cross-Region inference
 <a name="global-cris-quotas"></a>
 
-When using global CRIS inference profiles, you can use global CRIS from over 20 supported source AWS Regions. Because this will be a global limit, requests to view, manage, or increase quotas for global cross-Region inference profiles must be made through the Service Quotas console or AWS Command Line Interface (AWS CLI) in the requested source AWS Region.
+When using global CRIS inference profiles, you can use global CRIS from over 20 supported source AWS Regions. This is a global limit. To view, manage, or increase quotas for global cross-Region inference profiles, use the Service Quotas console or AWS CLI in the requested source AWS Region.
 
 Complete the following steps to request a limit increase:
 
@@ -180,7 +180,7 @@ Complete the following steps to request a limit increase:
 
 1. Choose **Request** to submit your request.
 
-When calculating your required quota increase, remember to take into account for the burndown rate, defined as the rate at which input and output tokens are converted into token quota usage for the throttling system. The following models have a **5x burn down rate for output tokens (1 output token consumes 5 tokens from your quotas)**:
+When calculating your required quota increase, account for the burndown rate. The burndown rate is the rate at which input and output tokens are converted into token quota usage for the throttling system. The following models have a **5x burn down rate for output tokens (1 output token consumes 5 tokens from your quotas)**:
 + Anthropic Claude Opus 4
 + Anthropic Claude Sonnet 4.5
 + Anthropic Claude Sonnet 4

@@ -83,7 +83,7 @@ You must configure permissions to allow your users, groups, or roles to create, 
 ## Creating a service-linked role for Managed Synchronization
 <a name="create-slr-managed-synchronization"></a>
 
-You don't need to manually create a service-linked role. When you replicate an Connect Customer instance by invoking the `ReplicateInstance` API, Managed Synchronization creates the service-linked role for you.
+You don't need to manually create a service-linked role. When you replicate a Connect Customer instance by invoking the `ReplicateInstance` API, Managed Synchronization creates the service-linked role for you.
 
 If you delete this service-linked role, and then need to create it again, you can use the same process to recreate the role in your account. When you replicate the Connect Customer instance again, Managed Synchronization creates the service-linked role for you again.
 

@@ -135,11 +135,11 @@ For information about porting OTA functionality to your platform, see [Porting t
 </thead>
 <tbody>
   <tr><td>ota.c</td><td>8.3K</td><td>7.5K</td></tr>
-  <tr><td>ota\_interface.c</td><td>0.1K</td><td>0.1K</td></tr>
-  <tr><td>ota\_base64.c</td><td>0.6K</td><td>0.6K</td></tr>
-  <tr><td>ota\_mqtt.c</td><td>2.4K</td><td>2.2K</td></tr>
-  <tr><td>ota\_cbor.c</td><td>0.8K</td><td>0.6K</td></tr>
-  <tr><td>ota\_http.c</td><td>0.3K</td><td>0.3K</td></tr>
-  <tr><td>Total estimates</td><td>12.5K</td><td>11.3K</td></tr>
+  <tr><td>ota_interface.c</td><td>0.1K</td><td>0.1K</td></tr>
+  <tr><td>ota_base64.c</td><td>0.6K</td><td>0.6K</td></tr>
+  <tr><td>ota_mqtt.c</td><td>2.4K</td><td>2.2K</td></tr>
+  <tr><td>ota_cbor.c</td><td>0.8K</td><td>0.6K</td></tr>
+  <tr><td>ota_http.c</td><td>0.3K</td><td>0.3K</td></tr>
+  <tr><td><b>Total estimates</b></td><td><b>12.5K</b></td><td><b>11.3K</b></td></tr>
 </tbody>
 </table>

@@ -40,7 +40,7 @@ To configure a container to run as an executable, use an `ENTRYPOINT` instructio
   ENTRYPOINT ["python", "k_means_inference.py"]
   ```
 
-+ SageMaker AI sets environment variables specified in [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) and [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTransformJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTransformJob.html) on your container. Additionally, the following environment variables are populated:
++ SageMaker AI sets environment variables specified in [`CreateModel`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) and [`CreateTransformJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTransformJob.html) on your container. Additionally, the following environment variables are populated:
   + `SAGEMAKER_BATCH` is set to `true` when the container runs batch transforms.
   + `SAGEMAKER_MAX_PAYLOAD_IN_MB` is set to the largest size payload that is sent to the container via HTTP.
   + `SAGEMAKER_BATCH_STRATEGY` is set to `SINGLE_RECORD` when the container is sent a single record per call to invocations and `MULTI_RECORD` when the container gets as many records as will fit in the payload.
@@ -54,7 +54,7 @@ The last three environment variables come from the API call made by the user. If
 ## How SageMaker AI Loads Your Model Artifacts
 <a name="your-algorithms-batch-code-load-artifacts"></a>
 
-In a [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) request, container definitions include the `ModelDataUrl` parameter, which identifies the location in Amazon S3 where model artifacts are stored. When you use SageMaker AI to run inferences, it uses this information to determine from where to copy the model artifacts. It copies the artifacts to the `/opt/ml/model` directory in the Docker container for use by your inference code.
+In a [`CreateModel`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) request, container definitions include the `ModelDataUrl` parameter, which identifies the location in Amazon S3 where model artifacts are stored. When you use SageMaker AI to run inferences, it uses this information to determine from where to copy the model artifacts. It copies the artifacts to the `/opt/ml/model` directory in the Docker container for use by your inference code.
 
 The `ModelDataUrl` parameter must point to a tar.gz file. Otherwise, SageMaker AI can't download the file. If you train a model in SageMaker AI, it saves the artifacts as a single compressed tar file in Amazon S3. If you train a model in another framework, you need to store the model artifacts in Amazon S3 as a compressed tar file. SageMaker AI decompresses this tar file and saves it in the `/opt/ml/model` directory in the container before the batch transform job starts.
 

@@ -65,7 +65,7 @@ Use the following AWS CLI commands or API operations to enable trusted service a
 ------
 
 **Note**
-If you are using the `EnableAWSServiceAccess` API, you need to also call [https://docs.aws.amazon.com/inspector/v2/APIReference/API_EnableDelegatedAdminAccount.html](https://docs.aws.amazon.com/inspector/v2/APIReference/API_EnableDelegatedAdminAccount.html) to delegate the Inspector administrator account.
+If you are using the `EnableAWSServiceAccess` API, you need to also call [`EnableDelegatedAdminAccount`](https://docs.aws.amazon.com/inspector/v2/APIReference/API_EnableDelegatedAdminAccount.html) to delegate the Inspector administrator account.
 
 ## To disable trusted access with Amazon Inspector
 <a name="integrate-disable-ta-inspector2"></a>

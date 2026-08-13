@@ -34,4 +34,4 @@ Content-type: application/json
 
 Set `aclEnabled` to `true` in `connectorParameters` to enable document-level access control. For details, see [Document-level access controls](kb-managed-ds-custom-acl.md).
 
-After setting up your custom data source, you can add documents into it and directly ingest them into the knowledge base. Unlike other data sources, you don't need to sync a custom data source. To learn how to ingest documents directly, see [Ingest changes directly into a knowledge base](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-direct-ingestion.html).
+After setting up your custom data source, you can add documents into it and directly ingest them into the knowledge base. Unlike other data sources, you don't need to sync a custom data source. To learn how to ingest documents directly, see [Ingest changes directly into a knowledge base](bedrock/latest/userguide/kb-direct-ingestion.html).

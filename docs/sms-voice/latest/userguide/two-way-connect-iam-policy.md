@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/two-way-conne
 # IAM policies for Connect Customer
 <a name="two-way-connect-iam-policy"></a>
 
-If you want AWS End User Messaging SMS to use an existing IAM role or if you create a new role, attach the following policies to that role so that AWS End User Messaging SMS can assume it. For information about how to modify an existing trust relationship of a role, see [Modifying a Role](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_manage.html) in the [https://docs.aws.amazon.com//IAM/latest/UserGuide/introduction.html](https://docs.aws.amazon.com//IAM/latest/UserGuide/introduction.html).
+If you want AWS End User Messaging SMS to use an existing IAM role or if you create a new role, attach the following policies to that role so that AWS End User Messaging SMS can assume it. For information about how to modify an existing trust relationship of a role, see [Modifying a Role](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_manage.html) in the [*IAM user guide*](https://docs.aws.amazon.com//IAM/latest/UserGuide/introduction.html).
 
 To create new IAM polices, do the following:
 

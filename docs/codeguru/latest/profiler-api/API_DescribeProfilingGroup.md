@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Describ
 # DescribeProfilingGroup
 <a name="API_DescribeProfilingGroup"></a>
 
- Returns a [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html) object that contains information about the requested profiling group.
+ Returns a [`ProfilingGroupDescription`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html) object that contains information about the requested profiling group.
 
 ## Request Syntax
 <a name="API_DescribeProfilingGroup_RequestSyntax"></a>
@@ -68,7 +68,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [agentOrchestrationConfig](#API_DescribeProfilingGroup_ResponseSyntax) **   <a name="profiler-DescribeProfilingGroup-response-agentOrchestrationConfig"></a>
- An [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AgentOrchestrationConfig.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AgentOrchestrationConfig.html) object that indicates if the profiling group is enabled for profiled or not.
+ An [`AgentOrchestrationConfig`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AgentOrchestrationConfig.html) object that indicates if the profiling group is enabled for profiled or not.
 Type: [AgentOrchestrationConfig](API_AgentOrchestrationConfig.md) object
 
  ** [arn](#API_DescribeProfilingGroup_ResponseSyntax) **   <a name="profiler-DescribeProfilingGroup-response-arn"></a>
@@ -91,7 +91,7 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\w-]+`
 
  ** [profilingStatus](#API_DescribeProfilingGroup_ResponseSyntax) **   <a name="profiler-DescribeProfilingGroup-response-profilingStatus"></a>
- A [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingStatus.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingStatus.html) object that includes information about the last time a profile agent pinged back, the last time a profile was received, and the aggregation period and start time for the most recent aggregated profile.
+ A [`ProfilingStatus`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingStatus.html) object that includes information about the last time a profile agent pinged back, the last time a profile was received, and the aggregation period and start time for the most recent aggregated profile.
 Type: [ProfilingStatus](API_ProfilingStatus.md) object
 
  ** [tags](#API_DescribeProfilingGroup_ResponseSyntax) **   <a name="profiler-DescribeProfilingGroup-response-tags"></a>

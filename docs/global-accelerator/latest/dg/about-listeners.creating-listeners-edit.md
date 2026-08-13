@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/about-liste
 # Edit a standard listener
 <a name="about-listeners.creating-listeners-edit"></a>
 
-This section provides the steps to edit a standard listener on the AWS Global Accelerator console. To complete this task by using an API operation instead of the console, see [https://docs.aws.amazon.com/global-accelerator/latest/api/API_UpdateListener.html](https://docs.aws.amazon.com/global-accelerator/latest/api/API_UpdateListener.html) in the *AWS Global Accelerator API Reference*.
+This section provides the steps to edit a standard listener on the AWS Global Accelerator console. To complete this task by using an API operation instead of the console, see [`UpdateListener`](https://docs.aws.amazon.com/global-accelerator/latest/api/API_UpdateListener.html) in the *AWS Global Accelerator API Reference*.
 
 # To edit a standard listener
 

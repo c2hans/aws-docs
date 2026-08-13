@@ -134,7 +134,7 @@ Indicate whether to use [AWS X-Ray tracing](https://docs.aws.amazon.com/xray/lat
 ## Return Values
 <a name="sam-resource-graphqlapi-return-values"></a>
 
-For a list of return values, refer to [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#aws-resource-appsync-graphqlapi-return-values.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#aws-resource-appsync-graphqlapi-return-values.html) in the [CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+For a list of return values, refer to [AWS::Serverless::GraphQLApi](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#aws-resource-appsync-graphqlapi-return-values.html) in the [CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 ## Examples
 <a name="sam-resource-graphqlapi-examples"></a>

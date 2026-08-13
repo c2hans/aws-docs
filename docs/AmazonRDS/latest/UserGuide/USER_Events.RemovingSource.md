@@ -15,7 +15,7 @@ You can easily add or remove source identifiers using the Amazon RDS console by 
 ## AWS CLI
 <a name="USER_Events.RemovingSource.CLI"></a>
 
-To remove a source identifier from an Amazon RDS event notification subscription, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/remove-source-identifier-from-subscription.html](https://docs.aws.amazon.com/cli/latest/reference/rds/remove-source-identifier-from-subscription.html) command. Include the following required parameters:
+To remove a source identifier from an Amazon RDS event notification subscription, use the AWS CLI [`remove-source-identifier-from-subscription`](https://docs.aws.amazon.com/cli/latest/reference/rds/remove-source-identifier-from-subscription.html) command. Include the following required parameters:
 + `--subscription-name`
 + `--source-identifier`
 
@@ -39,6 +39,6 @@ aws rds remove-source-identifier-from-subscription ^
 ## API
 <a name="USER_Events.RemovingSource.API"></a>
 
-To remove a source identifier from an Amazon RDS event notification subscription, use the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RemoveSourceIdentifierFromSubscription.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RemoveSourceIdentifierFromSubscription.html) command. Include the following required parameters:
+To remove a source identifier from an Amazon RDS event notification subscription, use the Amazon RDS API [`RemoveSourceIdentifierFromSubscription`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RemoveSourceIdentifierFromSubscription.html) command. Include the following required parameters:
 + `SubscriptionName`
 + `SourceIdentifier`

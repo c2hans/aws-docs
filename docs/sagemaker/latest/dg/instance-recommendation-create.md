@@ -10,7 +10,7 @@ Create an inference recommendation programmatically using the AWS SDK for Python
 ------
 #### [ AWS SDK for Python (Boto3) ]
 
-Use the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateInferenceRecommendationsJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateInferenceRecommendationsJob.html) API to start an inference recommendation job. Set the `JobType` field to `'Default'` for inference recommendation jobs. In addition, provide the following:
+Use the [`CreateInferenceRecommendationsJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateInferenceRecommendationsJob.html) API to start an inference recommendation job. Set the `JobType` field to `'Default'` for inference recommendation jobs. In addition, provide the following:
 + The Amazon Resource Name (ARN) of an IAM role that enables Inference Recommender to perform tasks on your behalf. Define this for the `RoleArn` field.
 + A model package ARN or model name. Inference Recommender supports either one model package ARN or a model name as input. Specify one of the following:
   + The ARN of the versioned model package you created when you registered your model with SageMaker AI model registry. Define this for `ModelPackageVersionArn` in the `InputConfig` field.
@@ -63,7 +63,7 @@ sagemaker_client.create_inference_recommendations_job(
 )
 ```
 
-See the [Amazon SageMaker API Reference Guide](https://docs.aws.amazon.com/sagemaker/latest/APIReference/Welcome.html) for a full list of optional and required arguments you can pass to [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateInferenceRecommendationsJob.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateInferenceRecommendationsJob.html).
+See the [Amazon SageMaker API Reference Guide](https://docs.aws.amazon.com/sagemaker/latest/APIReference/Welcome.html) for a full list of optional and required arguments you can pass to [`CreateInferenceRecommendationsJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateInferenceRecommendationsJob.html).
 
 ------
 #### [ AWS CLI ]

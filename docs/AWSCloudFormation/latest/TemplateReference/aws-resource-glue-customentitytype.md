@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[ContextWords](#cfn-glue-customentitytype-contextwords)" : {{[ String, ... ]}},
       "[Name](#cfn-glue-customentitytype-name)" : {{String}},
       "[RegexString](#cfn-glue-customentitytype-regexstring)" : {{String}},
-      "[Tags](#cfn-glue-customentitytype-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}}
+      "[Tags](#cfn-glue-customentitytype-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}}
     }
 }
 ```
@@ -43,7 +43,7 @@ Properties:
   [RegexString](#cfn-glue-customentitytype-regexstring): {{
     String}}
   [Tags](#cfn-glue-customentitytype-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
 ```
 
 ## Properties
@@ -65,7 +65,7 @@ A name for the custom pattern that allows it to be retrieved or deleted later. T
 *Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
 *Minimum*: `1`
 *Maximum*: `255`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `RegexString`  <a name="cfn-glue-customentitytype-regexstring"></a>
 A regular expression string that is used for detecting sensitive data in a custom pattern.
@@ -79,7 +79,7 @@ A regular expression string that is used for detecting sensitive data in a custo
 `Tags`  <a name="cfn-glue-customentitytype-tags"></a>
 AWS tags that contain a key value pair and may be searched by console, command line, or API.
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
@@ -87,6 +87,3 @@ AWS tags that contain a key value pair and may be searched by console, command l
 
 ### Ref
 <a name="aws-resource-glue-customentitytype-return-values-ref"></a>
-
-### Fn::GetAtt
-<a name="aws-resource-glue-customentitytype-return-values-fn--getatt"></a>

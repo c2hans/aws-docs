@@ -29,8 +29,8 @@ For more information, see [Understanding cross-Region aggregation in Security Hu
 
 **Archived finding**
 A finding whose record state (`RecordState`) is `ARCHIVED`. Archiving a finding indicates that the finding provider believes that the finding is no longer relevant. Record state is different from workflow status, which tracks the status of the investigation into a finding.
-Finding providers can use the [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchImportFindings.html) operation of the Security Hub CSPM API to archive findings that they created. Security Hub CSPM automatically archives control findings that meet certain criteria. For more information, see [Generating, updating, and archiving control findings](controls-findings-create-update.md#securityhub-standards-results-updating).
-On the Security Hub CSPM console, default filter settings exclude archived findings from finding lists and tables. You can update the settings to include archived findings. If you retrieve findings by using the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindings.html) operation of the Security Hub CSPM API, the operation retrieves both archived and active findings. To exclude archived findings, you can filter the results. For example:
+Finding providers can use the [BatchImportFindings](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchImportFindings.html) operation of the Security Hub CSPM API to archive findings that they created. Security Hub CSPM automatically archives control findings that meet certain criteria. For more information, see [Generating, updating, and archiving control findings](controls-findings-create-update.md#securityhub-standards-results-updating).
+On the Security Hub CSPM console, default filter settings exclude archived findings from finding lists and tables. You can update the settings to include archived findings. If you retrieve findings by using the [GetFindings](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindings.html) operation of the Security Hub CSPM API, the operation retrieves both archived and active findings. To exclude archived findings, you can filter the results. For example:
 
 ```
 "RecordState": [
@@ -107,7 +107,7 @@ The severity assigned to a Security Hub CSPM control identifies the importance o
 The status of an investigation into a finding. This is tracked using the `Workflow.Status` attribute.
 The workflow status is initially `NEW`. If you notified the resource owner to take action on the finding, you can set the workflow status to `NOTIFIED`. If the finding is not an issue, and does not require any action, set the workflow status to `SUPPRESSED`. After you review and remediate a finding, set the workflow status to `RESOLVED`.
 By default, most finding lists only include findings with a workflow status of `NEW` or `NOTIFIED`. Finding lists for controls also include `RESOLVED` findings.
-For the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindings.html) operation, you can include a filter for the workflow status.
+For the [GetFindings](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindings.html) operation, you can include a filter for the workflow status.
 
 ```
 "WorkflowStatus": [
@@ -117,4 +117,4 @@ For the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFinding
     }
 ],
 ```
-The Security Hub CSPM console provides an option to set the workflow status for findings. Customers (or SIEM, ticketing, incident management, or SOAR tools working on behalf of a customer to update findings from finding providers) can also use [https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html) to update the workflow status.
+The Security Hub CSPM console provides an option to set the workflow status for findings. Customers (or SIEM, ticketing, incident management, or SOAR tools working on behalf of a customer to update findings from finding providers) can also use [BatchUpdateFindings](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html) to update the workflow status.

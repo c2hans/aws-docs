@@ -59,7 +59,7 @@ Amazon Inspector Classic allows you to preview potential exclusions before runni
 
 1. Review the descriptions of all detected exclusions and the recommendations for addressing them.
 
-   You can also list and describe exclusions by using the [https://docs.aws.amazon.com/inspector/latest/APIReference/API_ListExclusions.html](https://docs.aws.amazon.com/inspector/latest/APIReference/API_ListExclusions.html) and [https://docs.aws.amazon.com/inspector/latest/APIReference/API_DescribeExclusions.html](https://docs.aws.amazon.com/inspector/latest/APIReference/API_DescribeExclusions.html) operations.
+   You can also list and describe exclusions by using the [`ListExclusions`](https://docs.aws.amazon.com/inspector/latest/APIReference/API_ListExclusions.html) and [`DescribeExclusions`](https://docs.aws.amazon.com/inspector/latest/APIReference/API_DescribeExclusions.html) operations.
 
 ## Viewing post-assessment exclusions
 <a name="exclusions-post-assessment"></a>
@@ -76,4 +76,4 @@ After an assessment run, you can view details about any exclusions.
 
 1. Review the descriptions of all detected exclusions and the recommendations for addressing them.
 
-   You can also list and describe exclusions by using the [https://docs.aws.amazon.com/inspector/latest/APIReference/API_ListExclusions.html](https://docs.aws.amazon.com/inspector/latest/APIReference/API_ListExclusions.html) and [https://docs.aws.amazon.com/inspector/latest/APIReference/API_DescribeExclusions.html](https://docs.aws.amazon.com/inspector/latest/APIReference/API_DescribeExclusions.html) operations.
+   You can also list and describe exclusions by using the [`ListExclusions`](https://docs.aws.amazon.com/inspector/latest/APIReference/API_ListExclusions.html) and [`DescribeExclusions`](https://docs.aws.amazon.com/inspector/latest/APIReference/API_DescribeExclusions.html) operations.

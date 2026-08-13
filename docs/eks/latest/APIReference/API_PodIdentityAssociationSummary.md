@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_PodIdentityA
 
 The summarized description of the association.
 
-Each summary is simplified by removing these fields compared to the full [https://docs.aws.amazon.com/eks/latest/APIReference/API_PodIdentityAssociation.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_PodIdentityAssociation.html):
+Each summary is simplified by removing these fields compared to the full [`PodIdentityAssociation`](https://docs.aws.amazon.com/eks/latest/APIReference/API_PodIdentityAssociation.html):
 + The IAM role: `roleArn`
 + The timestamp that the association was created at: `createdAt`
 + The most recent timestamp that the association was modified at:. `modifiedAt`

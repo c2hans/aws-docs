@@ -36,7 +36,7 @@ C:\> setx AWS_SESSION_TOKEN {{AQoDYXdzEJr...<remainder of security token>}}
 C:\> setx AWS_DEFAULT_REGION {{us-east-1}}
 ```
 
-Using `[set](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/set_1)` to set an environment variable changes the value used until the end of the current command prompt session, or until you set the variable to a different value. Using [https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/setx](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/setx) to set an environment variable changes the value used in both the current command prompt session and all command prompt sessions that you create after running the command. It does ***not*** affect other command shells that are already running at the time you run the command.
+Using `[set](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/set_1)` to set an environment variable changes the value used until the end of the current command prompt session, or until you set the variable to a different value. Using [`setx`](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/setx) to set an environment variable changes the value used in both the current command prompt session and all command prompt sessions that you create after running the command. It does ***not*** affect other command shells that are already running at the time you run the command.
 
 ------
 #### [ PowerShell ]

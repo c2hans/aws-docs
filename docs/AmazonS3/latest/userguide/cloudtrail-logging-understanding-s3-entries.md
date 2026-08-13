@@ -21,7 +21,7 @@ For more information, see the following examples.
 ## Example: CloudTrail log file entry for Amazon S3
 <a name="example-ct-log-s3"></a>
 
-The following example shows a CloudTrail log entry that demonstrates the [GET Service](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTServiceGET.html), [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTacl.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTacl.html), and [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETversioningStatus.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETversioningStatus.html) actions.
+The following example shows a CloudTrail log entry that demonstrates the [GET Service](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTServiceGET.html), [PutBucketAcl](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTacl.html), and [GetBucketVersioning](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETversioningStatus.html) actions.
 
 ```
 {

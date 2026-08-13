@@ -29,4 +29,4 @@ $ aws s3api list-objects-v2 --bucket {{my-ontap-ap-hrzrlukc5m36ft7okagglf3gmwluq
 }
 ```
 
-You can also use the REST API to list your files. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html) in the *Amazon Simple Storage Service API Reference*.
+You can also use the REST API to list your files. For more information, see [ListObjectsV2](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html) in the *Amazon Simple Storage Service API Reference*.

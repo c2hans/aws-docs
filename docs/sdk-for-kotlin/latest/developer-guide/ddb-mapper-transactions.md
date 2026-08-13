@@ -6,8 +6,8 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 <a name="ddb-mapper-transactions"></a>
 
 Transactional operations group multiple reads or multiple writes into a single **all-or-nothing** unit across one or more tables. Like batch operations, they’re invoked on the **mapper**:
-+  `transactGetItems`: atomically read items.
-+  `transactWriteItems`: atomically put, update, delete, and condition-check items.
++  [`transactGetItems`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html): atomically read items.
++  [`transactWriteItems`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html): atomically put, update, delete, and condition-check items.
 
 If any part of a transactional write fails (for example, a condition isn’t met or another request conflicts), DynamoDB cancels the **entire** transaction and no changes are applied. Note this is in contrast to [batch operations](ddb-mapper-batch.md), which process items independently. For the ACID guarantees, limits, and cancellation reasons, see [Amazon DynamoDB transactions](/amazondynamodb/latest/developerguide/transactions.html) in the *Amazon DynamoDB Developer Guide*.
 
@@ -16,7 +16,7 @@ As with batches, each request groups work by table: call `table(…​)` once pe
 ## Write items in a transaction
 <a name="ddb-mapper-transactions-write"></a>
 
-A `transactWriteItems` block supports four kinds of action, each optionally guarded by a `condition`. In alphabetical order:
+A [`transactWriteItems`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html) block supports four kinds of action, each optionally guarded by a `condition`. In alphabetical order:
 +  `conditionCheck(key) { condition { …​ } }`: assert a condition on an item without modifying it.
 +  `delete(key) { …​ }`: delete an item.
 +  `put(item) { …​ }`: create or replace an item.
@@ -61,7 +61,7 @@ The key value passed to `update`, `delete`, and `conditionCheck` is wrapped with
 ## Read items in a transaction
 <a name="ddb-mapper-transactions-read"></a>
 
- `transactGetItems` reads items across tables in one atomic, consistent snapshot. Supply keys with `key` (or `keys`) and read each table’s results from the response:
+ [`transactGetItems`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html) reads items across tables in one atomic, consistent snapshot. Supply keys with `key` (or `keys`) and read each table’s results from the response:
 
 ```
 val response = mapper.transactGetItems {

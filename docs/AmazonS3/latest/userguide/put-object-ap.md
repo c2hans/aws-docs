@@ -98,12 +98,12 @@ aws s3api put-object --bucket arn:aws:s3:{{AWS Region}}:111122223333:accesspoint
 **Note**
 S3 automatically generate access point aliases for all access points and access point aliases can be used anywhere a bucket name is used to perform object-level operations. For more information, see [Access point aliases](access-points-naming.md#access-points-alias).
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object.html) in the *AWS CLI Command Reference*.
+For more information and examples, see [put-object](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object.html) in the *AWS CLI Command Reference*.
 
 ## Using the REST API
 <a name="put-object-ap-rest"></a>
 
-You can use the REST API to upload an object through an access point. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html) in the *Amazon Simple Storage Service API Reference*.
+You can use the REST API to upload an object through an access point. For more information, see [PutObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html) in the *Amazon Simple Storage Service API Reference*.
 
 ## Using the AWS SDKs
 <a name="put-object-ap-SDKs"></a>

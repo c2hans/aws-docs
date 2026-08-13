@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrievi
 
 In applications, you can retrieve your secrets by calling `GetSecretValue` or `BatchGetSecretValue`in any of the AWS SDKs. However, we recommend that you cache your secret values by using client-side caching. Caching secrets improves speed and reduces your costs.
 
-For Python applications, use the [Secrets Manager Python-based caching component](retrieving-secrets_cache-python.md) or call the SDK directly with [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager/client/get_secret_value.html](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager/client/get_secret_value.html) or [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager/client/batch_get_secret_value.html](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager/client/batch_get_secret_value.html).
+For Python applications, use the [Secrets Manager Python-based caching component](retrieving-secrets_cache-python.md) or call the SDK directly with [`get_secret_value`](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager/client/get_secret_value.html) or [`batch_get_secret_value`](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager/client/batch_get_secret_value.html).
 
 The following code examples show how to use `GetSecretValue`.
 

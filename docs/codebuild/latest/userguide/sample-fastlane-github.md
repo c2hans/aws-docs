@@ -116,7 +116,7 @@ This value is available after authentication in a local file: `~/.fastlane/space
       fastlane spaceauth -u <Apple_account>
       ```
 
-1. Fastlane Match pass phrase - To enable Fastlane Match to decrypt the certificates and profiles stored in the Git repository, it is necessary to add the encryption passphrase that you configured in the Match setup step to the CodeBuild project’s environment variables.
+1. Fastlane Match pass phrase - To enable Fastlane Match to decrypt the certificates and profiles stored in the Git repository, it is necessary to add the encryption passphrase that you configured in the Match setup step to the CodeBuild project's environment variables.
 
    1. Secret key - `MATCH_PASSWORD`
 
@@ -134,7 +134,7 @@ This value is available after authentication in a local file: `~/.fastlane/space
       echo -n {{your_github_username}}:{{your_personal_access_token}} | base64
       ```
 
-      You can generate your PAT on the GitHub console in **Your Proﬁle > Settings > Developers Settings > Personal Access Token**. For more information, see the following guide: [https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
+      You can generate your PAT on the GitHub console in **Your Profile > Settings > Developers Settings > Personal Access Token**. For more information, see the following guide: [https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 **Note**
 While creating the above secrets in Secrets Manager, remember to give a secret name with the following prefix: `/CodeBuild/`

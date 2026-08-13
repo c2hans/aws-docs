@@ -17,7 +17,7 @@ From the AWS Batch console, select **Job queues** in navigation pane and choose 
 
 This section provides an overview and maintenance options for the job queue. It is important to note that you can find the Amazon Resource Name (ARN) in this section.
 
-To find this information through the AWS Command Line Interface, use the [https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobQueues.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobQueues.html) operation along with the job queue name, or the corresponding ARN.
+To find this information through the AWS Command Line Interface, use the [`DescribeJobQueues`](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobQueues.html) operation along with the job queue name, or the corresponding ARN.
 
 ### Active shares
 <a name="top-active-shares"></a>
@@ -45,7 +45,7 @@ This section provides a static list of the first 100 `RUNNABLE` jobs that are in
 
 Because the results are a snapshot of the job queue, the results list doesn’t automatically update. To update the list, choose the refresh at the top of the section. Choose the job’s name hyperlink to navigate to **Job details** and view the job’s status and other related information.
 
-To find this information through the AWS CLI, use the [https://docs.aws.amazon.com/batch/latest/APIReference/API_GetJobQueueSnapshot.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_GetJobQueueSnapshot.html) operation along with the job queue name or the corresponding ARN.
+To find this information through the AWS CLI, use the [`GetJobQueueSnapshot`](https://docs.aws.amazon.com/batch/latest/APIReference/API_GetJobQueueSnapshot.html) operation along with the job queue name or the corresponding ARN.
 
 ```
 aws batch get-job-queue-snapshot --job-queue my-sm-training-fifo-jq
@@ -56,14 +56,14 @@ aws batch get-job-queue-snapshot --job-queue my-sm-training-fifo-jq
 
 Use this tab to review configuration information about the amount of time that a job can remain in a `RUNNABLE` state before it’s canceled.
 
-To find this information through the AWS CLI, use the [https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobQueues.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobQueues.html) operation along with the job queue name or the corresponding ARN.
+To find this information through the AWS CLI, use the [`DescribeJobQueues`](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobQueues.html) operation along with the job queue name or the corresponding ARN.
 
 ### Environment order
 <a name="job-queue-info-env-order"></a>
 
 If your job queue runs in multiple environments, this tab provides their order and an overview.
 
-To find this information through the AWS CLI, use the [https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobQueues.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobQueues.html) operation along with the job queue name or the corresponding ARN.
+To find this information through the AWS CLI, use the [`DescribeJobQueues`](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobQueues.html) operation along with the job queue name or the corresponding ARN.
 
 ### Tags
 <a name="job-queue-info-tags"></a>

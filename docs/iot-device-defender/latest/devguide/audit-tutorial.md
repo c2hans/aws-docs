@@ -160,7 +160,7 @@ This configuration is only required if you have opted in to customer managed key
 
 If you have enabled customer managed keys (CMK) for AWS IoT Core encryption at rest, the IAM role used by AWS IoT Device Defender Audit requires additional permissions to decrypt data. Without these permissions, audit operations will fail.
 
-The [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIoTDeviceDefenderAudit.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIoTDeviceDefenderAudit.html) managed policy does not include `kms:Decrypt` permissions by design, following the principle of least privilege. You must manually add these permissions to your audit role when using customer managed keys.
+The [`AWSIoTDeviceDefenderAudit`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIoTDeviceDefenderAudit.html) managed policy does not include `kms:Decrypt` permissions by design, following the principle of least privilege. You must manually add these permissions to your audit role when using customer managed keys.
 
 **To add KMS permissions to your AWS IoT Device Defender Audit IAM role**
 

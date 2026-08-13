@@ -97,7 +97,7 @@ Optionally, you can setup additional recommended configurations to enhance your 
 
       For more information about how these services help CloudWatch investigations, see [X-Ray](Investigations-RecommendedServices.md#Investigations-Xray) and [CloudWatch Application Signals](Investigations-RecommendedServices.md#Investigations-ApplicationSignals).
 
-   1. If you use Amazon EKS, your CloudWatch investigations investigation group can utilize information directly from your Amazon EKS cluster once you set up access entries. For more information, see [Integration with Amazon EKS](EKS-Integration.md).
+   1. If you use Amazon EKS, your CloudWatch investigations investigation group can utilize information directly from your Amazon EKS cluster after you set up access entries. For more information, see [Integration with Amazon EKS](EKS-Integration.md).
 
    1. If you use Amazon RDS, enable the Advanced mode of Database Insights on your database instances. Database Insights monitors database load and provides detailed performance analysis that helps CloudWatch investigations identify database-related issues during investigations. When Advanced Database Insights is enabled, CloudWatch investigations can automatically generate performance analysis reports that include detailed observations, metric anomalies, root cause analysis, and recommendations specific to your database workload. For more information about Database Insights and how to enable Advanced mode, see [Monitoring Amazon RDS databases with CloudWatch Database Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html).
 

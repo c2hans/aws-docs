@@ -186,7 +186,7 @@ an incorrect Amazon S3 bucket policy
 an incorrect Amazon SNS topic policy
 inability to deliver to a CloudWatch Logs log group
 insufficient permission to encrypt using a KMS key
-A member account with CloudTrail permissions can see any validation failures for an organization trail by viewing the trail's details page on the CloudTrail console, or by running the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-trail-status.html](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-trail-status.html) command.
+A member account with CloudTrail permissions can see any validation failures for an organization trail by viewing the trail's details page on the CloudTrail console, or by running the AWS CLI [get-trail-status](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-trail-status.html) command.
 
 ### Applying an existing trail to an organization
 <a name="cloudtrail-update-organization-trail-by-using-the-cli-apply-org"></a>

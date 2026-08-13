@@ -100,7 +100,7 @@ When you create an instance, by default we create an Amazon S3 bucket. Data, suc
 This bucket and key are used for both recordings of conversations and exported reports. Alternatively, you can specify separate buckets and keys for recordings of conversations and exported reports. For instructions, see [Update settings for your Connect Customer instance](update-instance-settings.md).
 
 **Note**
-For voice artifacts (analysis files and redacted audio), Contact Lens uses the recording key. For chat artifacts (analysis files), it uses the chat recording key.
+For voice artifacts (analysis files and redacted audio), conversational analytics uses the recording key. For chat artifacts (analysis files), it uses the chat recording key.
 
  **By default, Connect Customer creates buckets for storing call recordings, chat transcripts, exported reports, flow logs, and email messages. **
 + When a bucket is created to store call recordings, call recording is enabled at the instance level. The next step for setting up this functionality is to [enable contact recording](set-up-recordings.md) in a flow.

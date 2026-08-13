@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/integrati
 # Integrating Handlebars templates
 <a name="integrating-handlebars-templates"></a>
 
-This solution supports the [Handlebars](https://handlebarsjs.com/) simple templating language in your answers (including in the markdown and SSML fields) which allows you to include variable substitution and conditional elements. Use the following procedure to integrate Handlebars.
+This guidance supports the [Handlebars](https://handlebarsjs.com/) simple templating language in your answers (including in the markdown and SSML fields) which allows you to include variable substitution and conditional elements. Use the following procedure to integrate Handlebars.
 
 1. From the content designer, choose **Add**.
 

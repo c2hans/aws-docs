@@ -148,7 +148,7 @@ To create an AWS IoT rule, complete the following steps. Choose the appropriate 
 
    1. Create an IAM policy.
 
-      To create an IAM policy, run the following command. Make sure you update the `policy-name` parameter value. For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/create-policy.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/create-policy.html) in the AWS CLI v2 Command Reference.
+      To create an IAM policy, run the following command. Make sure you update the `policy-name` parameter value. For more information, see [`create-policy`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/create-policy.html) in the AWS CLI v2 Command Reference.
 **Note**
 If you're using a Microsoft Windows operating system, you might need to replace the end of line marker (\\) with a tick (`) or another character.
 
@@ -196,7 +196,7 @@ If you're using a Microsoft Windows operating system, you might need to replace 
 
    1. Create an IAM role and trust policy.
 
-      To create an IAM policy, run the following command. Make sure you update the `role-name` parameter value. For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/create-role.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/create-role.html) in the AWS CLI v2 Command Reference.
+      To create an IAM policy, run the following command. Make sure you update the `role-name` parameter value. For more information, see [`create-role`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/create-role.html) in the AWS CLI v2 Command Reference.
 
       ```
       aws iam create-role \
@@ -219,7 +219,7 @@ If you're using a Microsoft Windows operating system, you might need to replace 
 
    1. Attach the IAM policy to the rule.
 
-      To create an IAM policy, run the following command. Make sure you update the `role-name` and `policy-arn` parameter values. For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/attach-role-policy.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/attach-role-policy.html) in the AWS CLI v2 Command Reference.
+      To create an IAM policy, run the following command. Make sure you update the `role-name` and `policy-arn` parameter values. For more information, see [`attach-role-policy`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/attach-role-policy.html) in the AWS CLI v2 Command Reference.
 
       ```
       aws iam attach-role-policy \
@@ -229,7 +229,7 @@ If you're using a Microsoft Windows operating system, you might need to replace 
 
    1. Review the role.
 
-      To confirm that the IAM role was created correctly, run the following command. Make sure you update the `role-name` parameter value. For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/get-role.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/get-role.html) in the AWS CLI v2 Command Reference.
+      To confirm that the IAM role was created correctly, run the following command. Make sure you update the `role-name` parameter value. For more information, see [`get-role`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/get-role.html) in the AWS CLI v2 Command Reference.
 
       ```
       aws iam get-role --role-name {{uploadLogsRole}}

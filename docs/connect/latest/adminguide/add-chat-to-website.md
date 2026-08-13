@@ -59,7 +59,7 @@ In this step, you customize the experience of the communications widget for your
 
 1. Enter a **Name** and **Description** for the communications widget.
 **Note**
-The Name must be unique for each communications widget created in an Connect Customer instance.
+The Name must be unique for each communications widget created in a Connect Customer instance.
 
 1. In the **Communications options** section, choose how your customers can engage with your widget, and then choose **Save and continue**.
 **Note**

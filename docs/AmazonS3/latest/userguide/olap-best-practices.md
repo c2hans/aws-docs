@@ -28,7 +28,7 @@ When S3 Object Lambda invokes your specified Lambda function, you are responsibl
 
 You can use S3 Object Lambda only to perform operations on objects. You cannot use S3 Object Lambda to perform other Amazon S3 operations, such as modifying or deleting buckets. For a complete list of S3 operations that support access points, see [Access points compatibility with S3 operations](access-points-service-api-support.md#access-points-operations-support).
 
-In addition to this list, Object Lambda Access Points do not support the [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPOST.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPOST.html), [https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html) (as the source), and [https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html) API operations.
+In addition to this list, Object Lambda Access Points do not support the [`POST Object`](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPOST.html), [`CopyObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html) (as the source), and [`SelectObjectContent`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html) API operations.
 
 ## AWS services used in connection with S3 Object Lambda
 <a name="olap-services"></a>

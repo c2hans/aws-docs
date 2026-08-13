@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/distrib
 # Install or update Distributor packages
 <a name="distributor-working-with-packages-deploy"></a>
 
-You can deploy packages to your AWS Systems Manager managed nodes by using Distributor, a tool in AWS Systems Manager. To deploy the packages, use either the AWS Management Console or AWS Command Line Interface (AWS CLI). You can deploy one version of one package per command. You can install new packages or update existing installations in place. You can choose to deploy a specific version or choose to always deploy the latest version of a package for deployment. We recommend using State Manager, a tool in AWS Systems Manager, to install packages. Using State Manager helps ensure that your managed nodes are always running the most up-to-date version of your package.
+You can deploy packages to your AWS Systems Manager managed nodes by using Distributor, a tool in AWS Systems Manager. To deploy the packages, use either the AWS Management Console or AWS Command Line Interface (AWS CLI). You can deploy one version of one package per command. You can install new packages or update existing installations in place. You can choose to deploy a specific version or choose to always deploy the latest version of a package for deployment. We recommend using State Manager to install packages. Using State Manager helps make sure that your managed nodes are always running the most up-to-date version of your package.
 
 **Important**
 Packages that you install using Distributor should be uninstalled only by using Distributor. Otherwise, Systems Manager can still register the application as `INSTALLED` and lead to other unintended results.
@@ -29,7 +29,7 @@ Packages that you install using Distributor should be uninstalled only by using 
 ## Installing or updating a package one time using the console
 <a name="distributor-deploy-pkg-console"></a>
 
-You can use the AWS Systems Manager console to install or update a package one time. When you configure a one-time installation, Distributor uses [AWS Systems Manager Run Command](run-command.md), a tool in AWS Systems Manager, to perform the installation.
+You can use the AWS Systems Manager console to install or update a package one time. When you configure a one-time installation, Distributor uses [AWS Systems Manager Run Command](run-command.md), to perform the installation.
 
 **To install or update a package one time using the console**
 
@@ -158,7 +158,7 @@ The default behavior for `installationType` is `Uninstall and reinstall`. You ca
       --parameters '{"action":["Install"],"installationType":["Uninstall and reinstall"],"name":["ExamplePackage"]}'
   ```
 
-For information about other options you can use with the **send-command** command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html) in the AWS Systems Manager section of the *AWS CLI Command Reference*.
+For information about other options you can use with the **send-command** command, see [**send-command**](https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html) in the AWS Systems Manager section of the *AWS CLI Command Reference*.
 
 ## Updating a package one time using the AWS CLI
 <a name="distributor-update-pkg-cli"></a>
@@ -186,7 +186,7 @@ When you add new or changed files, you must include `"installationType":["In-pla
       --parameters '{"action":["Install"],"installationType":["In-place update"],"name":["ExamplePackage"]}'
   ```
 
-For information about other options you can use with the **send-command** command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html) in the AWS Systems Manager section of the *AWS CLI Command Reference*.
+For information about other options you can use with the **send-command** command, see [**send-command**](https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html) in the AWS Systems Manager section of the *AWS CLI Command Reference*.
 
 ## Scheduling a package installation using the AWS CLI
 <a name="distributor-smdeploy-pkg-cli"></a>
@@ -212,7 +212,7 @@ aws ssm create-association \
     --targets [{\"Key\":\"InstanceIds\",\"Values\":[\"i-02573cafcfEXAMPLE\",\"i-0471e04240EXAMPLE\"]}]
 ```
 
-For information about other options you can use with the **create-association** command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/create-association.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/create-association.html) in the AWS Systems Manager section of the *AWS CLI Command Reference*.
+For information about other options you can use with the **create-association** command, see [**create-association**](https://docs.aws.amazon.com/cli/latest/reference/ssm/create-association.html) in the AWS Systems Manager section of the *AWS CLI Command Reference*.
 
 ## Scheduling a package update using the AWS CLI
 <a name="distributor-smupdate-pkg-cli"></a>
@@ -238,4 +238,4 @@ aws ssm create-association \
     --targets [{\"Key\":\"InstanceIds\",\"Values\":[\"i-02573cafcfEXAMPLE\",\"i-0471e04240EXAMPLE\"]}]
 ```
 
-For information about other options you can use with the **create-association** command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/create-association.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/create-association.html) in the AWS Systems Manager section of the *AWS CLI Command Reference*.
+For information about other options you can use with the **create-association** command, see [**create-association**](https://docs.aws.amazon.com/cli/latest/reference/ssm/create-association.html) in the AWS Systems Manager section of the *AWS CLI Command Reference*.

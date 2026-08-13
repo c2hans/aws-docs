@@ -67,7 +67,7 @@ For more information about resource links, see [Creating Resource Links](https:/
 A table in the AWS Glue Data Catalog is the metadata definition that represents the data in a data store. You create tables when you run a crawler, or you can create a table manually in the AWS Glue console. The **Tables** list in the AWS Glue console displays values of your table's metadata. You use table definitions to specify sources and targets when you create ETL (extract, transform, and load) jobs.
 
 **Note**
-With recent changes to the AWS management console, you may need to modify your existing IAM roles to have the [https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-tables.html#aws-glue-api-catalog-tables-SearchTables](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-tables.html#aws-glue-api-catalog-tables-SearchTables) permission. For new role creation, the `SearchTables` API permission has already been added as default.
+With recent changes to the AWS management console, you may need to modify your existing IAM roles to have the [`SearchTables`](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-tables.html#aws-glue-api-catalog-tables-SearchTables) permission. For new role creation, the `SearchTables` API permission has already been added as default.
 
 To get started, sign in to the AWS Management Console and open the AWS Glue console at [https://console.aws.amazon.com/glue/](https://console.aws.amazon.com/glue/). Choose the **Tables** tab, and use the **Add tables** button to create tables either with a crawler or by manually typing attributes.
 

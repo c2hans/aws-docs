@@ -74,14 +74,14 @@ Choose your preferred method, and follow the steps to add member accounts.
 
 **To add accounts to your list of member accounts**
 
-Invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateMembers.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateMembers.html) API from the administrator account. For each member account to add, you must provide the AWS account ID.
+Invoke the [`CreateMembers`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateMembers.html) API from the administrator account. For each member account to add, you must provide the AWS account ID.
 
 ------
 #### [ AWS CLI ]
 
 **To add accounts to your list of member accounts**
 
-Run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/create-members.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/create-members.html) command from the administrator account. For each member account to add, you must provide the AWS account ID.
+Run the [`create-members`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/create-members.html) command from the administrator account. For each member account to add, you must provide the AWS account ID.
 
 ```
 aws securityhub create-members --account-details '[{"AccountId": "{{<accountID1>}}"}]'
@@ -123,14 +123,14 @@ To resend invitations to disassociated accounts, select each disassociated accou
 
 **To invite prospective member accounts**
 
-Invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_InviteMembers.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_InviteMembers.html) API from the administrator account. For each account to invite, you must provide the AWS account ID.
+Invoke the [`InviteMembers`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_InviteMembers.html) API from the administrator account. For each account to invite, you must provide the AWS account ID.
 
 ------
 #### [ AWS CLI ]
 
 **To invite prospective member accounts**
 
-Run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/invite-members.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/invite-members.html) command from the administrator account. For each account to invite, you must provide the AWS account ID.
+Run the [`invite-members`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/invite-members.html) command from the administrator account. For each account to invite, you must provide the AWS account ID.
 
 ```
 aws securityhub invite-members --account-ids {{<accountIDs>}}

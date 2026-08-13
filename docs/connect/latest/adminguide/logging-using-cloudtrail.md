@@ -10,7 +10,7 @@ Connect Customer is integrated with AWS CloudTrail, a service that provides a re
 **Note**
 For access to the updated Connect Customer admin website and CloudTrail support, you must use service-linked roles. For more information, see [Use service-linked roles and role permissions for Connect Customer](connect-slr.md).
 
-Using the information that CloudTrail collects, you can identify a specific request to an Connect Customer API, the IP address of the requester, the requester's identity, the date and time of the request, and so on. If you configure a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket. If you don't configure a trail, you can view the most recent events in **Event History** in the CloudTrail console.
+Using the information that CloudTrail collects, you can identify a specific request to a Connect Customer API, the IP address of the requester, the requester's identity, the date and time of the request, and so on. If you configure a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket. If you don't configure a trail, you can view the most recent events in **Event History** in the CloudTrail console.
 
 For more information about CloudTrail, including how to configure and enable it, see [Creating a Trail For Your AWS Account](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail.html) and [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html).
 

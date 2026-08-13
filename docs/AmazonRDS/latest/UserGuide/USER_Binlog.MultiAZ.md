@@ -69,4 +69,4 @@ aws rds modify-db-cluster-parameter-group ^
 ### RDS API
 <a name="USER_Binlog.MultiAZ.configuring-api"></a>
 
-To configure binary log transaction compression using the Amazon RDS API, use the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBClusterParameterGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBClusterParameterGroup.html) operation.
+To configure binary log transaction compression using the Amazon RDS API, use the [`ModifyDBClusterParameterGroup`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBClusterParameterGroup.html) operation.

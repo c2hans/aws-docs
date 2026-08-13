@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Anal
 # AnalysisRuleCustom
 <a name="API_AnalysisRuleCustom"></a>
 
-A type of analysis rule that enables the table owner to approve custom SQL queries on their configured tables. It supports differential privacy.
+A type of analysis rule that enables the table owner to approve custom SQL queries on their configured tables. It supports differential privacy, minimum aggregation thresholds, and comparison controls.
 
 ## Contents
 <a name="API_AnalysisRuleCustom_Contents"></a>
@@ -15,13 +15,19 @@ The ARN of the analysis templates that are allowed by the custom analysis rule.
 Type: Array of strings
 Array Members: Minimum number of 0 items.
 Length Constraints: Minimum length of 0. Maximum length of 200.
-Pattern: `(ANY_QUERY|ANY_JOB|arn:aws:cleanrooms:[\w]{2}-[\w]{4,9}-[\d]:[\d]{12}:membership/[\d\w-]+/(analysistemplate|view)/[\d\w-]+)`
+Pattern: `(ANY_QUERY|ANY_JOB|arn:aws:cleanrooms:[\w]{2}-[\w]{4,9}-[\d]:[\d]{12}:membership/[\d\w-]+/analysistemplate/[\d\w-]+)`
 Required: Yes
 
  ** additionalAnalyses **   <a name="API-Type-AnalysisRuleCustom-additionalAnalyses"></a>
  An indicator as to whether additional analyses (such as AWS Clean Rooms ML) can be applied to the output of the direct query.
 Type: String
 Valid Values: `ALLOWED | REQUIRED | NOT_ALLOWED`
+Required: No
+
+ ** aggregationThresholds **   <a name="API-Type-AnalysisRuleCustom-aggregationThresholds"></a>
+The aggregation thresholds that each query output group must satisfy. AWS Clean Rooms filters out any group that represents fewer than the specified number of distinct identities. You can specify at most one threshold. You can't use aggregation thresholds with differential privacy, or when `allowedAnalyses` allows only jobs.
+Type: Array of [AggregationThreshold](API_AggregationThreshold.md) objects
+Array Members: Fixed number of 1 item.
 Required: No
 
  ** allowedAdditionalAnalyses **   <a name="API-Type-AnalysisRuleCustom-allowedAdditionalAnalyses"></a>
@@ -45,6 +51,11 @@ The list of AWS account IDs that are allowed to receive results from queries run
 Type: Array of strings
 Length Constraints: Fixed length of 12.
 Pattern: `\d+`
+Required: No
+
+ ** comparisonControls **   <a name="API-Type-AnalysisRuleCustom-comparisonControls"></a>
+The controls that restrict how a query can compare the columns in the configured table. You can't use comparison controls with differential privacy, or when `allowedAnalyses` allows only jobs.
+Type: [ComparisonControls](API_ComparisonControls.md) object
 Required: No
 
  ** differentialPrivacy **   <a name="API-Type-AnalysisRuleCustom-differentialPrivacy"></a>

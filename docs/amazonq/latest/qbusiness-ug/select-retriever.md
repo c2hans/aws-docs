@@ -103,7 +103,7 @@ aws qbusiness create-retriever \
 
 If you use Amazon Kendra, you can connect an existing Amazon Kendra index as a retriever to your Amazon Q Business application environment.
 
-You [create a Amazon Kendra index](https://docs.aws.amazon.com/kendra/latest/dg/create-index.html) using the Amazon Kendra console and API. To connect a Amazon Kendra index to Amazon Q Business, you can use the Amazon Q Business console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateRetriever.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateRetriever.html) API operation.
+You [create a Amazon Kendra index](https://docs.aws.amazon.com/kendra/latest/dg/create-index.html) using the Amazon Kendra console and API. To connect a Amazon Kendra index to Amazon Q Business, you can use the Amazon Q Business console or the [CreateRetriever](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateRetriever.html) API operation.
 
 If you're connecting a Amazon Kendra GenAI Enterprise Edition index from an Amazon Q Business application, you can detach it and use it with other AWS generative AI services, like Amazon Bedrock. Detaching an Amazon Kendra index automatically deletes the retriever Amazon Q Business created for it. For a list of features supported by Amazon Kendra GenAI Enterprise indices, see [Amazon Kendra GenAI Enterprise Edition index](https://docs.aws.amazon.com/kendra/latest/dg/hiw-index-types.html#kendra-gen-ai-index).
 

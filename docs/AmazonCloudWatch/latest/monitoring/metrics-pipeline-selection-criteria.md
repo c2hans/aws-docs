@@ -14,8 +14,6 @@ Criteria are grouped inside a `match_all` block with AND semantics — a metric 
 
 The following OTTL paths are supported in selection criteria:
 
-**Selection criteria paths**
-
 | Path | Description |
 | --- | --- |
 | `resource.attributes["key"]` | Resource-level attribute |
@@ -78,8 +76,6 @@ pipeline:
 <a name="selection-criteria-promql"></a>
 
 CloudWatch maps OTLP attribute scopes to PromQL labels using the `@` prefix convention. Use this mapping to verify that your pipeline is processing metrics as expected in Query Studio:
-
-**OTTL path to PromQL label mapping**
 
 | Pipeline OTTL path | PromQL label prefix | Example |
 | --- | --- | --- |

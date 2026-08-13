@@ -368,7 +368,7 @@ The following example policy grants a user permission to perform the `s3:PutObje
 ### Restrict access to only Amazon S3 server access log deliveries
 <a name="example-bucket-policies-global-condition-keys-1"></a>
 
-In the following example bucket policy, the [https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) global condition key is used to compare the [Amazon Resource Name (ARN)](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) of the resource, making a service-to-service request with the ARN that is specified in the policy. The `aws:SourceArn` global condition key is used to prevent the Amazon S3 service from being used as a [confused deputy](https://docs.aws.amazon.com//IAM/latest/UserGuide/confused-deputy.html) during transactions between services. Only the Amazon S3 service is allowed to add objects to the Amazon S3 bucket.
+In the following example bucket policy, the [aws:SourceArn](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) global condition key is used to compare the [Amazon Resource Name (ARN)](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) of the resource, making a service-to-service request with the ARN that is specified in the policy. The `aws:SourceArn` global condition key is used to prevent the Amazon S3 service from being used as a [confused deputy](https://docs.aws.amazon.com//IAM/latest/UserGuide/confused-deputy.html) during transactions between services. Only the Amazon S3 service is allowed to add objects to the Amazon S3 bucket.
 
 This example bucket policy grants `s3:PutObject` permissions to only the logging service principal (`logging.s3.amazonaws.com`).
 
@@ -487,7 +487,7 @@ For stronger protection, use a Deny statement with the `aws:PrincipalOrgID` cond
 ### Restrict access to only HTTPS requests
 <a name="example-bucket-policies-use-case-HTTP-HTTPS-1"></a>
 
-If you want to prevent potential attackers from manipulating network traffic, you can use HTTPS (TLS) to only allow encrypted connections while restricting HTTP requests from accessing your bucket. To determine whether the request is HTTP or HTTPS, use the [https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-securetransport](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-securetransport) global condition key in your S3 bucket policy. The `aws:SecureTransport` condition key checks whether a request was sent by using HTTP.
+If you want to prevent potential attackers from manipulating network traffic, you can use HTTPS (TLS) to only allow encrypted connections while restricting HTTP requests from accessing your bucket. To determine whether the request is HTTP or HTTPS, use the [aws:SecureTransport](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-securetransport) global condition key in your S3 bucket policy. The `aws:SecureTransport` condition key checks whether a request was sent by using HTTP.
 
 If a request returns `true`, then the request was sent through HTTPS. If the request returns `false`, then the request was sent through HTTP. You can then allow or deny access to your bucket based on the desired request scheme.
 
@@ -532,7 +532,7 @@ Make sure that the browsers that you use include the HTTP `referer` header in th
 
 **Warning**
 We recommend that you use caution when using the `aws:Referer` condition key. It is dangerous to include a publicly known HTTP referer header value. Unauthorized parties can use modified or custom browsers to provide any `aws:Referer` value that they choose. Therefore, do not use `aws:Referer` to prevent unauthorized parties from making direct AWS requests.
-The `aws:Referer` condition key is offered only to allow customers to protect their digital content, such as content stored in Amazon S3, from being referenced on unauthorized third-party sites. For more information, see [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-referer](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-referer) in the *IAM User Guide*.
+The `aws:Referer` condition key is offered only to allow customers to protect their digital content, such as content stored in Amazon S3, from being referenced on unauthorized third-party sites. For more information, see [aws:Referer](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-referer) in the *IAM User Guide*.
 
 ## Managing user access to specific folders
 <a name="example-bucket-policies-folders"></a>
@@ -682,7 +682,7 @@ The following example bucket policy grants a CloudFront origin access identity (
 The following policy uses the OAI's ID as the policy's `Principal`. For more information about using S3 bucket policies to grant access to a CloudFront OAI, see [Migrating from origin access identity (OAI) to origin access control (OAC)](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html#migrate-from-oai-to-oac) in the *Amazon CloudFront Developer Guide*.
 
 To use this example:
-+ Replace `{{EH1HDMB1FH2TC}}` with the OAI's ID. To find the OAI's ID, see the [Origin Access Identity page](https://console.aws.amazon.com/cloudfront/home?region=us-east-1#oai:) on the CloudFront console, or use [https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListCloudFrontOriginAccessIdentities.html](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListCloudFrontOriginAccessIdentities.html) in the CloudFront API.
++ Replace `{{EH1HDMB1FH2TC}}` with the OAI's ID. To find the OAI's ID, see the [Origin Access Identity page](https://console.aws.amazon.com/cloudfront/home?region=us-east-1#oai:) on the CloudFront console, or use [ListCloudFrontOriginAccessIdentities](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListCloudFrontOriginAccessIdentities.html) in the CloudFront API.
 + Replace `{{amzn-s3-demo-bucket}}` with the name of your bucket.
 
 ------
@@ -812,7 +812,7 @@ The following example bucket policy grants Amazon S3 permission to write objects
 
 To restrict a user from configuring an S3 Inventory report, remove the `s3:PutInventoryConfiguration` permission from the user.
 
-Some object metadata fields in S3 Inventory report configurations are optional, meaning that they're available by default but they can be restricted when you grant a user the `s3:PutInventoryConfiguration` permission. You can control whether users can include these optional metadata fields in their reports by using the `s3:InventoryAccessibleOptionalFields` condition key. For a list of the optional metadata fields available in S3 Inventory, see [https://docs.aws.amazon.com//AmazonS3/latest/API/API_PutBucketInventoryConfiguration.html#API_PutBucketInventoryConfiguration_RequestBody](https://docs.aws.amazon.com//AmazonS3/latest/API/API_PutBucketInventoryConfiguration.html#API_PutBucketInventoryConfiguration_RequestBody) in the *Amazon Simple Storage Service API Reference*.
+Some object metadata fields in S3 Inventory report configurations are optional, meaning that they're available by default but they can be restricted when you grant a user the `s3:PutInventoryConfiguration` permission. You can control whether users can include these optional metadata fields in their reports by using the `s3:InventoryAccessibleOptionalFields` condition key. For a list of the optional metadata fields available in S3 Inventory, see [OptionalFields](https://docs.aws.amazon.com//AmazonS3/latest/API/API_PutBucketInventoryConfiguration.html#API_PutBucketInventoryConfiguration_RequestBody) in the *Amazon Simple Storage Service API Reference*.
 
 **Note**
 For directory buckets, use the `s3express:InventoryAccessibleOptionalFields` condition key instead of `s3:InventoryAccessibleOptionalFields`. For more information about configuring S3 Inventory for directory buckets, see [Configuring Amazon S3 Inventory](configure-inventory.md).

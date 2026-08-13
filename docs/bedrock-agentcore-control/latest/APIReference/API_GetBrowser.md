@@ -57,6 +57,9 @@ Content-type: application/json
    ],
    "executionRoleArn": "string",
    "failureReason": "string",
+   "filesystemConfigurations": [
+      { ... }
+   ],
    "lastUpdatedAt": "string",
    "name": "string",
    "networkConfiguration": {
@@ -128,6 +131,11 @@ Pattern: `arn:aws(-[^:]+)?:iam::([0-9]{12})?:role/.+`
  ** [failureReason](#API_GetBrowser_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetBrowser-response-failureReason"></a>
 The reason for failure if the browser is in a failed state.
 Type: String
+
+ ** [filesystemConfigurations](#API_GetBrowser_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetBrowser-response-filesystemConfigurations"></a>
+The file system configurations mounted into the browser. Each entry describes an access point and its mount path.
+Type: Array of [ToolsFileSystemConfiguration](API_ToolsFileSystemConfiguration.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 
  ** [lastUpdatedAt](#API_GetBrowser_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetBrowser-response-lastUpdatedAt"></a>
 The timestamp when the browser was last updated.

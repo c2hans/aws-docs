@@ -16,17 +16,17 @@ For more information, see [AWS managed policies](https://docs.aws.amazon.com/IAM
 ## AWS managed policy: AmazonS3TablesFullAccess
 <a name="s3-tables-security-iam-awsmanpol-amazons3tablesfullaccess"></a>
 
-You can attach the `AmazonS3TablesFullAccess` policy to your IAM identities. This policy grants permissions that allow full access to Amazon S3 Tables. For more information about this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3TablesFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3TablesFullAccess.html).
+You can attach the `AmazonS3TablesFullAccess` policy to your IAM identities. This policy grants permissions that allow full access to Amazon S3 Tables. For more information about this policy, see [AmazonS3TablesFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3TablesFullAccess.html).
 
 ## AWS managed policy: AmazonS3TablesReadOnlyAccess
 <a name="s3-tables-security-iam-awsmanpol-amazons3readonlyaccess"></a>
 
-You can attach the `AmazonS3TablesReadOnlyAccess` policy to your IAM identities. This policy grants permissions that allow read-only access to Amazon S3 Tables. For more information about this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3TablesReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3TablesReadOnlyAccess.html).
+You can attach the `AmazonS3TablesReadOnlyAccess` policy to your IAM identities. This policy grants permissions that allow read-only access to Amazon S3 Tables. For more information about this policy, see [AmazonS3TablesReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3TablesReadOnlyAccess.html).
 
 ## AWS managed policy: AmazonS3TablesLakeFormationServiceRole
 <a name="s3-tables-security-iam-awsmanpol-amazons3tableslakeformationservicerole"></a>
 
-You can attach the `AmazonS3TablesLakeFormationServiceRole` policy to your IAM identities. This policy grants permissions that allow the AWS Lake Formation service role access to S3 Tables. AWS KMS permissions are used to allow Lake Formation to access encrypted tables. For more information about this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3TablesLakeFormationServiceRole.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3TablesLakeFormationServiceRole.html).
+You can attach the `AmazonS3TablesLakeFormationServiceRole` policy to your IAM identities. This policy grants permissions that allow the AWS Lake Formation service role access to S3 Tables. AWS KMS permissions are used to allow Lake Formation to access encrypted tables. For more information about this policy, see [AmazonS3TablesLakeFormationServiceRole](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3TablesLakeFormationServiceRole.html).
 
 ## Amazon S3 Tables updates to AWS managed policies
 <a name="s3-tables-security-iam-awsmanpol-updates"></a>

@@ -67,4 +67,4 @@ To learn more about integrating Amazon Kendra into your workflow, you can check 
 + [Content metadata tagging for enhanced search](https://comprehend-immersionday.workshop.aws/lab8.html)
 + [Build an intelligent search solution with automated content enrichment](https://aws.amazon.com/blogs/machine-learning/build-an-intelligent-search-solution-with-automated-content-enrichment/)
 
-To learn more about Amazon Comprehend, you can look at the [https://docs.aws.amazon.com/comprehend/index.html](https://docs.aws.amazon.com/comprehend/index.html).
+To learn more about Amazon Comprehend, you can look at the [*Amazon Comprehend Developer Guide*](https://docs.aws.amazon.com/comprehend/index.html).

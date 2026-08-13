@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/telem
 
 CloudWatch telemetry configuration gives you two core capabilities:
 + **Discovery and auditing** – Discover AWS resources across your account or organization and audit which resources have telemetry enabled. The experience shows the configuration status at the resource-type level and at more granular telemetry-detail levels.
-+ **Enablement rules** – Create rules that automatically configure telemetry collection for AWS resources that match your criteria. Rules help you standardize telemetry collection across your organization or accounts and ensure consistent monitoring coverage.
++ **Enablement rules** – Create rules that automatically configure telemetry collection for AWS resources that match your criteria. Rules help you standardize telemetry collection across your organization or accounts and make sure consistent monitoring coverage.
 
 Telemetry configuration supports the following data sources:
 + Amazon Amazon VPC Flow Logs

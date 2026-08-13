@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/referen
 
 |  |
 | --- |
-| Amazon EventBridge is the preferred way to manage your events. CloudWatch Events and EventBridge are the same underlying service and API, but EventBridge provides more features. Changes you make in either CloudWatch or EventBridge are reflected in each console. For more information, see the [https://docs.aws.amazon.com/eventbridge/](https://docs.aws.amazon.com/eventbridge/). |
+| Amazon EventBridge is the preferred way to manage your events. CloudWatch Events and EventBridge are the same underlying service and API, but EventBridge provides more features. Changes you make in either CloudWatch or EventBridge are reflected in each console. For more information, see the [*Amazon EventBridge User Guide*](https://docs.aws.amazon.com/eventbridge/). |
 
 Using Amazon EventBridge, you can create *rules* that match incoming *events* and route them to *targets* for processing.
 

@@ -15,9 +15,9 @@ Learn how to create SageMaker HyperPod clusters orchestrated by Amazon EKS using
 
 1. Prepare a lifecycle configuration script and upload to an Amazon S3 bucket, such as `s3://{{amzn-s3-demo-bucket}}/{{Lifecycle-scripts}}/{{base-config}}/`.
 
-   For a quick start, download the sample script [https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/7.sagemaker-hyperpod-eks/LifecycleScripts/base-config/on_create.sh](https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/7.sagemaker-hyperpod-eks/LifecycleScripts/base-config/on_create.sh) from the AWSome Distributed Training GitHub repository, and upload it to the S3 bucket. You can also include additional setup instructions, a series of setup scripts, or commands to be executed during the HyperPod cluster provisioning stage.
+   For a quick start, download the sample script [`on_create.sh`](https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/7.sagemaker-hyperpod-eks/LifecycleScripts/base-config/on_create.sh) from the AWSome Distributed Training GitHub repository, and upload it to the S3 bucket. You can also include additional setup instructions, a series of setup scripts, or commands to be executed during the HyperPod cluster provisioning stage.
 **Important**
-If you create an [IAM role for SageMaker HyperPod](sagemaker-hyperpod-prerequisites-iam.md#sagemaker-hyperpod-prerequisites-iam-role-for-hyperpod) attaching only the managed [https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanpol-cluster.html](https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanpol-cluster.html), your cluster has access to Amazon S3 buckets with the specific prefix `sagemaker-`.
+If you create an [IAM role for SageMaker HyperPod](sagemaker-hyperpod-prerequisites-iam.md#sagemaker-hyperpod-prerequisites-iam-role-for-hyperpod) attaching only the managed [`AmazonSageMakerClusterInstanceRolePolicy`](https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanpol-cluster.html), your cluster has access to Amazon S3 buckets with the specific prefix `sagemaker-`.
 
    If you create a restricted instance group, you don't need to download and run the lifecycle script. Instead, you need to run `install_rig_dependencies.sh`.
 

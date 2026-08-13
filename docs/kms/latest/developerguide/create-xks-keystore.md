@@ -206,7 +206,7 @@ Do not include confidential or sensitive information in this field. This field m
    For public endpoint connectivity, enter a publicly available endpoint URI. For VPC endpoint connectivity, enter `https://` followed by the private DNS name of the VPC endpoint service.
 
 1. To enter the values for the [proxy URI path](#require-path) prefix and [proxy authentication credential](#require-credential), upload a proxy configuration file, or enter the values manually.
-   + If you have an optional [proxy configuration file](#proxy-configuration-file) that contains values for your [proxy URI path](#require-path.title) and [proxy authentication credential](#require-credential), choose **Upload configuration file**. Follow the steps to upload the file.
+   + If you have an optional [proxy configuration file](#proxy-configuration-file) that contains values for your [proxy URI path](#require-path) and [proxy authentication credential](#require-credential), choose **Upload configuration file**. Follow the steps to upload the file.
 
      When the file is uploaded, the console displays the values from the file in editable fields. You can change the values now or [edit these values](update-xks-keystore.md) after the external key store is created.
 

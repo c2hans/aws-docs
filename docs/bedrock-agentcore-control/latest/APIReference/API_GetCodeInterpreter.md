@@ -48,6 +48,9 @@ Content-type: application/json
    "description": "string",
    "executionRoleArn": "string",
    "failureReason": "string",
+   "filesystemConfigurations": [
+      { ... }
+   ],
    "lastUpdatedAt": "string",
    "name": "string",
    "networkConfiguration": {
@@ -102,6 +105,11 @@ Pattern: `arn:aws(-[^:]+)?:iam::([0-9]{12})?:role/.+`
  ** [failureReason](#API_GetCodeInterpreter_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetCodeInterpreter-response-failureReason"></a>
 The reason for failure if the code interpreter is in a failed state.
 Type: String
+
+ ** [filesystemConfigurations](#API_GetCodeInterpreter_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetCodeInterpreter-response-filesystemConfigurations"></a>
+The file system configurations mounted into the code interpreter. Each entry describes an access point and its mount path.
+Type: Array of [ToolsFileSystemConfiguration](API_ToolsFileSystemConfiguration.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 
  ** [lastUpdatedAt](#API_GetCodeInterpreter_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetCodeInterpreter-response-lastUpdatedAt"></a>
 The timestamp when the code interpreter was last updated.

@@ -41,7 +41,7 @@ In a Node.js app, AWS recommends the [aws-jwt-verify library](https://github.com
 
   The JWKS URI contains public information about the private key that signed your user's token. You can find the JWKS URI for your user pool at `https://cognito-idp.{{<Region>}}.amazonaws.com/{{<userPoolId>}}/.well-known/jwks.json`.
 
-For more information and example code that you can use in a Node.js app or a AWS Lambda authorizer, see [https://github.com/awslabs/aws-jwt-verify](https://github.com/awslabs/aws-jwt-verify) on GitHub.
+For more information and example code that you can use in a Node.js app or a AWS Lambda authorizer, see [aws-jwt-verify](https://github.com/awslabs/aws-jwt-verify) on GitHub.
 
 ## Understanding and inspecting tokens
 <a name="amazon-cognito-user-pools-using-tokens-manually-inspect"></a>

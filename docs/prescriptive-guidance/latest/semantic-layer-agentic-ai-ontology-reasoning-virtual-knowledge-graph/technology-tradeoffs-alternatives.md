@@ -140,7 +140,7 @@ A key component of the semantic layer is the **Virtual Knowledge Graph (VKG)** p
 |
 | Engine | Description | Deployment Model | Configuration Dependencies |
 | --- |--- |--- |--- |
-| [https://ontop-vkg.org/](https://ontop-vkg.org/) | Leading open-source VKG engine; translates SPARQL → SQL using R2RML/OBDA mappings; supports OWL 2 QL ontologies for query rewriting | **Fargate (recommended)**: Ontop requires bootstrapping with an ontology file (.owl/.ttl), R2RML mapping file (.obda/.ttl), and JDBC connection configuration. These are loaded at startup and kept in memory for query rewriting. Restart-on-config-change pattern via ECS task definition updates. | OWL ontology, R2RML mappings, JDBC driver \+ connection string to data source (RDS, Aurora, Redshift) |
+| [**Ontop**](https://ontop-vkg.org/) | Leading open-source VKG engine; translates SPARQL → SQL using R2RML/OBDA mappings; supports OWL 2 QL ontologies for query rewriting | **Fargate (recommended)**: Ontop requires bootstrapping with an ontology file (.owl/.ttl), R2RML mapping file (.obda/.ttl), and JDBC connection configuration. These are loaded at startup and kept in memory for query rewriting. Restart-on-config-change pattern via ECS task definition updates. | OWL ontology, R2RML mappings, JDBC driver \+ connection string to data source (RDS, Aurora, Redshift) |
 | **Custom SPARQL-to-SQL mediator** | Lightweight, application-specific mapping layer for simple schema-to-ontology projections | **Lambda** (if stateless, low-latency) or **Fargate** (if connection pooling needed) | Mapping configuration (can be stored in S3 or DynamoDB), ontology reference |
 
 ### R2RML Mapping Lifecycle

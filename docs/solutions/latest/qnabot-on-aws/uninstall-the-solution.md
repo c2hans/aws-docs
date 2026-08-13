@@ -2,17 +2,17 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/uninstall-the-solution.html
 ---
 
-# Uninstall the solution
+# Uninstall the guidance
 <a name="uninstall-the-solution"></a>
 
-You can uninstall the QnABot on AWS solution from the AWS Management Console or by using the AWS Command Line Interface.
+You can uninstall the QnABot on AWS guidance from the AWS Management Console or by using the AWS Command Line Interface.
 
 ## Using the AWS Management Console
 <a name="using-the-aws-management-console"></a>
 
 1. Sign in to the [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation/home?).
 
-1. Select this solution’s installation stack.
+1. Select this guidance’s installation stack.
 
 1. Choose **Delete**.
 

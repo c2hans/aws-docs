@@ -254,7 +254,7 @@ To get the number of Availability Zones you requested, specify the account and r
 **Note**
 In the past, regions have occasionally launched with only one availability zone. Environment-agnostic AWS CDK stacks cannot be deployed to such regions. At this writing, however, all AWS regions have at least two AZs.
 
-You can change this behavior by overriding your stack's [https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.Stack.html#availabilityzones](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.Stack.html#availabilityzones) (Python: `availability_zones`) property to explicitly specify the zones you want to use.
+You can change this behavior by overriding your stack's [`availablilityZones`](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.Stack.html#availabilityzones) (Python: `availability_zones`) property to explicitly specify the zones you want to use.
 
 For more information about specifying a stack's account and region at synthesis time, while retaining the flexibility to deploy to any region, see [Environments](environments.md).
 

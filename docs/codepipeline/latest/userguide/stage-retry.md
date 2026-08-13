@@ -9,7 +9,7 @@ You can retry a stage that has failed without having to run a pipeline again fro
 
 **Important**
 Retrying a failed stage retries all actions in the stage from the first action in the stage, and retrying failed actions retries all failed actions in the stage. This overrides output artifacts of previously successful actions in the same execution.
-Although artifacts may be overriden, the execution history of previously successful actions is still retained.
+Although artifacts may be overridden, the execution history of previously successful actions is still retained.
 
 If you are using the console to view a pipeline, either a **Retry stage** button or a **Retry failed actions** button appears on the stage that can be retried.
 
@@ -74,7 +74,7 @@ To use the AWS CLI to retry all actions or all failed actions, you run the **ret
 **Note**
 The values you can use for `retry-mode` are `FAILED_ACTIONS` and `ALL_ACTIONS`.
 
-1. At a terminal (Linux, macOS, or Unix) or command prompt (Windows), run the [https://docs.aws.amazon.com/cli/latest/reference/codepipeline/get-pipeline-state.html](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/get-pipeline-state.html) command, as shown in the following example for a pipeline named `MyPipeline`.
+1. At a terminal (Linux, macOS, or Unix) or command prompt (Windows), run the [**retry-stage-execution**](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/get-pipeline-state.html) command, as shown in the following example for a pipeline named `MyPipeline`.
 
    ```
    aws codepipeline retry-stage-execution --pipeline-name MyPipeline --stage-name Deploy --pipeline-execution-id b59babff-5f34-EXAMPLE --retry-mode FAILED_ACTIONS
@@ -90,7 +90,7 @@ The values you can use for `retry-mode` are `FAILED_ACTIONS` and `ALL_ACTIONS`.
 
 1. You can also run the command with a JSON input file. You first create a JSON file that identifies the pipeline, the stage that contains the failed actions, and the latest pipeline execution in that stage. You then run the **retry-stage-execution** command with the `--cli-input-json` parameter. To retrieve the details you need for the JSON file, it's easiest to use the **get-pipeline-state** command.
 
-   1. At a terminal (Linux, macOS, or Unix) or command prompt (Windows), run the [https://docs.aws.amazon.com/cli/latest/reference/codepipeline/get-pipeline-state.html](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/get-pipeline-state.html) command on a pipeline. For example, for a pipeline named MyFirstPipeline, you would type something similar to the following:
+   1. At a terminal (Linux, macOS, or Unix) or command prompt (Windows), run the [**get-pipeline-state**](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/get-pipeline-state.html) command on a pipeline. For example, for a pipeline named MyFirstPipeline, you would type something similar to the following:
 
       ```
       aws codepipeline get-pipeline-state --name {{MyFirstPipeline}}
@@ -144,7 +144,7 @@ The values you can use for `retry-mode` are `FAILED_ACTIONS` and `ALL_ACTIONS`.
 
    1. Save the file with a name like **retry-failed-actions.json**.
 
-   1. Call the file you created when you run the [https://docs.aws.amazon.com/cli/latest/reference/codepipeline/retry-stage-execution.html](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/retry-stage-execution.html) command. For example:
+   1. Call the file you created when you run the [**retry-stage-execution**](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/retry-stage-execution.html) command. For example:
 **Important**
 Be sure to include `file://` before the file name. It is required in this command.
 
@@ -197,7 +197,7 @@ You can use the console to configure a stage for automatic retry.
 <a name="stage-retry-auto-cli"></a>
 
 To use the AWS CLI to configure a stage to automatically retry on failure, use the commands to create or update a pipeline as detailed in [Create a pipeline, stages, and actions](pipelines-create.md) and [Edit a pipeline in CodePipeline](pipelines-edit.md).
-+ Open a terminal (Linux, macOS, or Unix) or command prompt (Windows) and use the AWS CLI to run the `update-pipeline` command, specifying the failure condition in the pipeline structure. The following example configures automatic retry for a staged named `S3Deploy`:
++ Open a terminal (Linux, macOS, or Unix) or command prompt (Windows) and use the AWS CLI to run the `update-pipeline` command, specifying the failure condition in the pipeline structure. The following example configures automatic retry for a stage named `S3Deploy`:
 
   ```
   {

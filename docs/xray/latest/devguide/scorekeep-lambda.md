@@ -34,7 +34,7 @@ Lambda passes the function segment to the X-Ray SDK through the function context
 
 The `random-name` function is implemented in Node.js. It uses the SDK for JavaScript in Node.js to send notifications with Amazon SNS, and the X-Ray SDK for Node.js to instrument the AWS SDK client. To write annotations, the function creates a custom subsegment with `AWSXRay.captureFunc`, and writes annotations in the instrumented function. In Lambda, you can't write annotations directly to the function segment, only to a subsegment that you create.
 
-**Example [https://github.com/awslabs/eb-java-scorekeep/tree/xray/function/index.js](https://github.com/awslabs/eb-java-scorekeep/tree/xray/function/index.js) -- Random name Lambda function**
+**Example [`function/index.js`](https://github.com/awslabs/eb-java-scorekeep/tree/xray/function/index.js) -- Random name Lambda function**
 
 ```
 var AWSXRay = require('aws-xray-sdk-core');
@@ -94,7 +94,7 @@ The worker function has active tracing enabled in its configuration in AWS Lambd
 
 The X-Ray SDK for Python is just a few lines at the top of the function that import the SDK and run its `patch_all` function to patch the AWS SDK for Python (Boto) and HTTclients that it uses to call Amazon SQS and Amazon S3. When the worker calls the Scorekeep API, the SDK adds the [tracing header](xray-concepts.md#xray-concepts-tracingheader) to the request to trace calls through the API.
 
-**Example [https://github.com/awslabs/eb-java-scorekeep/tree/xray-worker/_lambda/scorekeep-worker/scorekeep-worker.py](https://github.com/awslabs/eb-java-scorekeep/tree/xray-worker/_lambda/scorekeep-worker/scorekeep-worker.py) -- Worker Lambda function**
+**Example [`_lambda/scorekeep-worker/scorekeep-worker.py`](https://github.com/awslabs/eb-java-scorekeep/tree/xray-worker/_lambda/scorekeep-worker/scorekeep-worker.py) -- Worker Lambda function**
 
 ```
 import os

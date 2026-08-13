@@ -21,6 +21,10 @@ This topic describes the keys defined and provided by the IAM service (with an `
 
 You can use the following condition keys in policies that control access to IAM resources:
 
+**iam:AccountPropertyNamespaces**
+Works with [string operators](reference_policies_elements_condition_operators.md#Conditions_String).
+Specifies the account property namespaces being read or modified in the request. Account properties are organized into namespaces (for example, `RoleManager`). When you call `PutAccountProperties` or `GetAccountProperties`, use this condition key to restrict which property namespaces a principal can access.
+
 **iam:AssociatedResourceArn**
 Works with [ARN operators](reference_policies_elements_condition_operators.md#Conditions_ARN).
 Specifies the ARN of the resource to which this role will be associated at the destination service. The resource usually belongs to the service to which the principal is passing the role. Sometimes, the resource might belong to a third service. For example, you might pass a role to Amazon EC2 Auto Scaling that they use on an Amazon EC2 instance. In this case, the condition would match the ARN of the Amazon EC2 instance.
@@ -50,9 +54,9 @@ AWS services that support [iam:PassedToService](#ck_PassedToService) also suppor
 **iam:AWSServiceName**
 Works with [string operators](reference_policies_elements_condition_operators.md#Conditions_String).
 Specifies the AWS service to which this role is attached.
-This condition key is supported by the [https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateServiceLinkedRole.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateServiceLinkedRole.html) API operation.
+This condition key is supported by the [`CreateServiceLinkedRole`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateServiceLinkedRole.html) API operation.
 For information about which services support using service-linked roles, see [AWS services that work with IAM](reference_aws-services-that-work-with-iam.md) and look for the services that have **Yes **in the **Service-Linked Role** column. Choose a **Yes** with a link to view the service-linked role documentation for that service.
-In this example, you allow an entity to create a service-linked role using the [https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateServiceLinkedRole.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateServiceLinkedRole.html) API operation if the service name is *access-analyzer.amazonaws.com.*
+In this example, you allow an entity to create a service-linked role using the [`CreateServiceLinkedRole`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateServiceLinkedRole.html) API operation if the service name is *access-analyzer.amazonaws.com.*
 ****
 
 ```
@@ -200,6 +204,10 @@ Checks that the specified policy is attached as permissions boundary on the IAM 
 Works with [ARN operators](reference_policies_elements_condition_operators.md#Conditions_ARN).
 Checks the Amazon Resource Name (ARN) of a managed policy in requests that involve a managed policy. For more information, see [Controlling access to policies](access_controlling.md#access_controlling-policies).
 
+**iam:RoleTemplateARN**
+Works with [ARN operators](reference_policies_elements_condition_operators.md#Conditions_ARN).
+Specifies the ARN of the role template used to create or manage a role. When an AWS service acquires a role from a role template, the role template ARN is included as a context key in the authorization checks for `CreateRole`, `TagRole`, `PutRolePolicy`, `AttachRolePolicy`, `PutRolePermissionsBoundary`, and `GetRole`.
+
 **iam:RegisterSecurityKey**
 Works with [string operators](reference_policies_elements_condition_operators.md#Conditions_String).
 Checks the current state of MFA device enablement.
@@ -260,7 +268,7 @@ This example shows how you might create an identity-based policy that allows del
 Works with [numeric operators](reference_policies_elements_condition_operators.md#Conditions_Numeric).
 This condition key limits the creation of service-specific credentials based on their expiration settings. It allows you to control the maximum age, in days, of service-specific credentials that can be created.
 The valid range for days is 1 to 36600 (minimum 1 day, maximum 36600 days).
-This condition key is supported by the [https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateServiceSpecificCredential.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateServiceSpecificCredential.html) API operation.
+This condition key is supported by the [`CreateServiceSpecificCredential`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateServiceSpecificCredential.html) API operation.
 In this example, you allow a user to create service-specific credentials for the Amazon Bedrock service only if they expire within 90 days.
 ****
 
@@ -289,15 +297,15 @@ In this example, you allow a user to create service-specific credentials for the
 Works with [string operators](reference_policies_elements_condition_operators.md#Conditions_String).
 Specifies which AWS services can be used when managing service-specific credentials. This condition key allows you to restrict which AWS services are permitted when managing service-specific credentials.
 This condition key is supported by the following API operations:
-+ [https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateServiceSpecificCredential.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateServiceSpecificCredential.html)
-+ [https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteServiceSpecificCredential.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteServiceSpecificCredential.html)
-+ [https://docs.aws.amazon.com/IAM/latest/APIReference/API_ResetServiceSpecificCredential.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ResetServiceSpecificCredential.html)
-+ [https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateServiceSpecificCredential.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateServiceSpecificCredential.html)
++ [`CreateServiceSpecificCredential`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateServiceSpecificCredential.html)
++ [`DeleteServiceSpecificCredential`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteServiceSpecificCredential.html)
++ [`ResetServiceSpecificCredential`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ResetServiceSpecificCredential.html)
++ [`UpdateServiceSpecificCredential`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateServiceSpecificCredential.html)
 The following services are supported for service-specific credentials with their exact value formatting:
 + `bedrock.amazonaws.com`
 + `cassandra.amazonaws.com`
 + `codecommit.amazonaws.com`
-In this example, you allow a user to create service-specific credentials using the [https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateServiceSpecificCredential.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateServiceSpecificCredential.html) API operation only for the Amazon Bedrock service.
+In this example, you allow a user to create service-specific credentials using the [`CreateServiceSpecificCredential`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateServiceSpecificCredential.html) API operation only for the Amazon Bedrock service.
 ****
 
 ```

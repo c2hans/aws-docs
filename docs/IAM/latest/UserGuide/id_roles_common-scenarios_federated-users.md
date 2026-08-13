@@ -10,6 +10,8 @@ Your users might already have identities outside of AWS, such as in your corpora
 **Note**
 As a security best practice, we recommend you manage user access in [IAM Identity Center](https://docs.aws.amazon.com//singlesignon/latest/userguide/what-is.html) with identity federation instead of creating IAM users. For information about specific situations where an IAM user is required, see [When to create an IAM user (instead of a role)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html#id_which-to-choose).
 
+IAM Identity Center permission sets provision IAM role templates that IAM Identity Center manages. [Account access manager](account-access-manager.md) — an IAM feature — lets you assign your own custom IAM roles to IAM Identity Center users and groups, enabling capabilities like custom trust policies, role tags, and configurable role paths. You can use it alongside permission sets or on its own.
+
 ## Federating users of a mobile or web-based app with Amazon Cognito
 <a name="id_roles_common-scenarios_federated-users-cognito"></a>
 

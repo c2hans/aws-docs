@@ -6,7 +6,7 @@ Version 4 (V4) of the AWS SDK for .NET has been released\!
 
 For information about breaking changes and migrating your applications, see the [migration topic](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html).
 
- [https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
+ [![Orange button with text "Click here for details".](http://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Using Amazon DynamoDB NoSQL databases
 <a name="dynamodb-intro"></a>
@@ -182,7 +182,7 @@ To perform data operations using the document model, you must first create an in
 
 **LoadTable method**
 
-The first mechanism is to use one of the static `LoadTable` methods of the [https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/DynamoDBv2/TTable.html](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/DynamoDBv2/TTable.html) class, similar to the following example:
+The first mechanism is to use one of the static `LoadTable` methods of the [`Table`](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/DynamoDBv2/TTable.html) class, similar to the following example:
 
 ```
 var client = new AmazonDynamoDBClient();
@@ -194,7 +194,7 @@ While this mechanism works, under certain conditions, it can sometimes lead to a
 
 **TableBuilder**
 
-An alternative mechanism, the [https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/DynamoDBv2/TTableBuilder.html](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/DynamoDBv2/TTableBuilder.html) class, was introduced in [version 3.7.203 of the AWSSDK.DynamoDBv2 NuGet package](https://www.nuget.org/packages/AWSSDK.DynamoDBv2/3.7.203). This mechanism can address the behaviors mentioned above by removing certain implicit method calls; specifically, the `DescribeTable` method. This mechanism is used in a manner similar to the following example:
+An alternative mechanism, the [`TableBuilder`](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/DynamoDBv2/TTableBuilder.html) class, was introduced in [version 3.7.203 of the AWSSDK.DynamoDBv2 NuGet package](https://www.nuget.org/packages/AWSSDK.DynamoDBv2/3.7.203). This mechanism can address the behaviors mentioned above by removing certain implicit method calls; specifically, the `DescribeTable` method. This mechanism is used in a manner similar to the following example:
 
 ```
 var client = new AmazonDynamoDBClient();
@@ -396,7 +396,7 @@ The examples and explanations shown above sometimes include a property of the `D
 
 The following is some additional information about this property.
 + This property can be set globally in your `app.config` or `web.config` file if you're using .NET Framework.
-+ This property can be set globally by using the [https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Amazon/TAWSConfigsDynamoDB.html](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Amazon/TAWSConfigsDynamoDB.html) class, as shown in the following example.
++ This property can be set globally by using the [`AWSConfigsDynamoDB`](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Amazon/TAWSConfigsDynamoDB.html) class, as shown in the following example.
 
   ```
   // Set the DisableFetchingTableMetadata property globally
@@ -406,7 +406,7 @@ The following is some additional information about this property.
   var client = new AmazonDynamoDBClient();
   var context = new DynamoDBContext(client);
   ```
-+ In some cases, you can't add DynamoDB attributes to a .NET class; for example, if the class is defined in a dependency. In such cases, it's possible to still take advantage of the `DisableFetchingTableMetadata` property. To do so, use the [https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/DynamoDBv2/TTableBuilder.html](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/DynamoDBv2/TTableBuilder.html) class in addition to the `DisableFetchingTableMetadata` property. The `TableBuilder` class was also introduced in [version 3.7.203 of the AWSSDK.DynamoDBv2 NuGet package](https://www.nuget.org/packages/AWSSDK.DynamoDBv2/3.7.203).
++ In some cases, you can't add DynamoDB attributes to a .NET class; for example, if the class is defined in a dependency. In such cases, it's possible to still take advantage of the `DisableFetchingTableMetadata` property. To do so, use the [`TableBuilder`](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/DynamoDBv2/TTableBuilder.html) class in addition to the `DisableFetchingTableMetadata` property. The `TableBuilder` class was also introduced in [version 3.7.203 of the AWSSDK.DynamoDBv2 NuGet package](https://www.nuget.org/packages/AWSSDK.DynamoDBv2/3.7.203).
 
   ```
   // Set the DisableFetchingTableMetadata property globally

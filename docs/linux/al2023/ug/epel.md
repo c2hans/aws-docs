@@ -234,7 +234,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 
  The upstream `lshell` project is [no longer being actively maintained](https://github.com/ghantoos/lshell/issues/209), and contains [known unpatched](https://github.com/ghantoos/lshell/issues/188) *Critical CVEs*: [CVE-2016-6902](https://nvd.nist.gov/vuln/detail/CVE-2016-6902) and [CVE-2016-6903](https://nvd.nist.gov/vuln/detail/CVE-2016-6903).
 
- The alternative suggested in the Debian bug, [http://www.pizzashack.org/rssh/](http://www.pizzashack.org/rssh/) is also unmaintained upstream, with the author citing unfixable security issues as the reason.
+ The alternative suggested in the Debian bug, [`rssh`](http://www.pizzashack.org/rssh/) is also unmaintained upstream, with the author citing unfixable security issues as the reason.
 
  For these reasons, adding `lshell` to AL2023 is not planned.
 
@@ -346,7 +346,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 ## `rssh` - a restricted shell for use with OpenSSH
 <a name="rssh"></a>
 
- The `rssh` package was in EPEL7. The upstream [http://www.pizzashack.org/rssh/](http://www.pizzashack.org/rssh/) package is unmaintained, with the author citing unfixable security issues as the reason.
+ The `rssh` package was in EPEL7. The upstream [`rssh`](http://www.pizzashack.org/rssh/) package is unmaintained, with the author citing unfixable security issues as the reason.
 
  With the author citing unfixable security issues, adding `rssh` to AL2023 is not planned.
 
@@ -384,7 +384,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 ## `tmpwatch` - removes files based on last accessed time
 <a name="tmpwatch"></a>
 
- In Amazon Linux 2023, this functionality is provided by [https://www.freedesktop.org/software/systemd/man/latest/systemd-tmpfiles.html](https://www.freedesktop.org/software/systemd/man/latest/systemd-tmpfiles.html).
+ In Amazon Linux 2023, this functionality is provided by [`systemd-tmpfiles`](https://www.freedesktop.org/software/systemd/man/latest/systemd-tmpfiles.html).
 
 ## `xmlstarlet` - command line XML utilities
 <a name="xmlstarlet"></a>

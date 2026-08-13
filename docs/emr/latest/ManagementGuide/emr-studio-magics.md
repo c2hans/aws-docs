@@ -161,7 +161,7 @@ With Amazon EMR releases 6.0 through 6.9.0, and 5.0 through 5.36.0, only `emr-no
 
 Complete the following steps to install EMR Notebooks magics.
 
-1. In your notebook, run the following commands to install the [https://pypi.org/project/emr-notebooks-magics/](https://pypi.org/project/emr-notebooks-magics/) package.
+1. In your notebook, run the following commands to install the [`emr-notebooks-magics`](https://pypi.org/project/emr-notebooks-magics/) package.
 
    ```
    %pip install boto3 --upgrade

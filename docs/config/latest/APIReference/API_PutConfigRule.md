@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PutConfig
 # PutConfigRule
 <a name="API_PutConfigRule"></a>
 
-Adds or updates an AWS Config rule to evaluate if your AWS resources comply with your desired configurations. For information on how many AWS Config rules you can have per account, see [https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html](https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html) in the * AWS Config Developer Guide*.
+Adds or updates an AWS Config rule to evaluate if your AWS resources comply with your desired configurations. For information on how many AWS Config rules you can have per account, see [**Service Limits**](https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html) in the * AWS Config Developer Guide*.
 
 There are two types of rules: * AWS Config Managed Rules* and * AWS Config Custom Rules*. You can use `PutConfigRule` to create both AWS Config Managed Rules and AWS Config Custom Rules.
 

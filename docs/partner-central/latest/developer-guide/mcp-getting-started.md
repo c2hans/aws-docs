@@ -603,5 +603,5 @@ Other onboarding tasks to try:
 
 ## Next steps
 <a name="mcp-next-steps"></a>
-+ [https://docs.aws.amazon.com/partner-central/latest/APIReference/mcp-configuration-reference.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/mcp-configuration-reference.html) — Full reference for endpoint, IAM actions, session management, and error codes
-+ [https://docs.aws.amazon.com/partner-central/latest/APIReference/mcp-tools-reference.html](https://docs.aws.amazon.com/partner-central/latest/APIReference/mcp-tools-reference.html) — Detailed documentation for `sendMessage` and `getSession` tools
++ [**Configuration Reference**](https://docs.aws.amazon.com/partner-central/latest/APIReference/mcp-configuration-reference.html) — Full reference for endpoint, IAM actions, session management, and error codes
++ [**Tools Reference**](https://docs.aws.amazon.com/partner-central/latest/APIReference/mcp-tools-reference.html) — Detailed documentation for `sendMessage` and `getSession` tools

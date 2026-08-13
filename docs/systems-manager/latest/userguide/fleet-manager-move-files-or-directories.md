@@ -19,7 +19,7 @@ You can use Fleet Manager to copy, cut, and paste OS files on a managed node.
 
 1. Choose **Tools, File system**.
 
-1. To copy or cut a file, select the **File name** of the directory that contains the file you want to copy or cut. To copy or cut a directory, choose the button next to the directory that you want to copy or cut and then proceed to step 8.
+1. To copy or cut a file, select the **File name** of the directory that contains the file you want to copy or cut. To copy or cut a directory, choose the button next to the directory that you want to copy or cut. Then proceed to step 8.
 
 1. Choose the button next to the file you want to copy or cut.
 

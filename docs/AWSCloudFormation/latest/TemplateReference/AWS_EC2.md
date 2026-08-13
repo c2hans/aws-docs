@@ -23,6 +23,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::EC2::EIP](aws-resource-ec2-eip.md)
 + [AWS::EC2::EIPAssociation](aws-resource-ec2-eipassociation.md)
 + [AWS::EC2::EnclaveCertificateIamRoleAssociation](aws-resource-ec2-enclavecertificateiamroleassociation.md)
++ [AWS::EC2::ExportInstanceTask](aws-resource-ec2-exportinstancetask.md)
 + [AWS::EC2::FlowLog](aws-resource-ec2-flowlog.md)
 + [AWS::EC2::GatewayRouteTableAssociation](aws-resource-ec2-gatewayroutetableassociation.md)
 + [AWS::EC2::Host](aws-resource-ec2-host.md)

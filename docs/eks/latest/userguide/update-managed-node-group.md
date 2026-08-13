@@ -128,7 +128,7 @@ You can modify some of the configurations of a managed node group.
    1. When you’re finished editing, choose **Save changes**.
 
 **Important**
-When updating the node group configuration, modifying the [https://docs.aws.amazon.com/eks/latest/APIReference/API_NodegroupScalingConfig.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_NodegroupScalingConfig.html) does not respect Pod disruption budgets (PDBs). Unlike the [update node group](managed-node-update-behavior.md) process (which drains nodes and respects PDBs during the upgrade phase), updating the scaling configuration causes nodes to be terminated immediately through an Auto Scaling Group (ASG) scale-down call. This happens without considering PDBs, regardless of the target size you’re scaling down to. That means when you reduce the `desiredSize` of an Amazon EKS managed node group, Pods are evicted as soon as the nodes are terminated, without honoring any PDBs.
+When updating the node group configuration, modifying the [`NodegroupScalingConfig`](https://docs.aws.amazon.com/eks/latest/APIReference/API_NodegroupScalingConfig.html) does not respect Pod disruption budgets (PDBs). Unlike the [update node group](managed-node-update-behavior.md) process (which drains nodes and respects PDBs during the upgrade phase), updating the scaling configuration causes nodes to be terminated immediately through an Auto Scaling Group (ASG) scale-down call. This happens without considering PDBs, regardless of the target size you’re scaling down to. That means when you reduce the `desiredSize` of an Amazon EKS managed node group, Pods are evicted as soon as the nodes are terminated, without honoring any PDBs.
 
 ## Rollback a managed node group version
 <a name="mng-rollback"></a>

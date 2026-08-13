@@ -153,7 +153,7 @@ Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9])*`
  ** [NotebookInstanceStatus](#API_DescribeNotebookInstance_ResponseSyntax) **   <a name="sagemaker-DescribeNotebookInstance-response-NotebookInstanceStatus"></a>
 The status of the notebook instance.
 Type: String
-Valid Values: `Pending | InService | Stopping | Stopped | Failed | Deleting | Updating`
+Valid Values: `Pending | InService | Stopping | Stopped | Failed | Deleting | Updating | PendingMaintenance | InMaintenance`
 
  ** [PlatformIdentifier](#API_DescribeNotebookInstance_ResponseSyntax) **   <a name="sagemaker-DescribeNotebookInstance-response-PlatformIdentifier"></a>
 The platform identifier of the notebook instance runtime environment.

@@ -292,14 +292,14 @@ Because there are multiple ways to invoke contract tests against your resource, 
     `CloudFormation/ContractTestResults/<TypeName>/<ContractTestInvocationToken>.zip`
 
     Download the zip file to see your test logs.
-+ If you run contract tests against your registered type through the `TestType`, both logs are condensed and uploaded to an Amazon S3 bucket in your account. You must specify the [https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_TestType.html#API_TestType_RequestParameters](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_TestType.html#API_TestType_RequestParameters) parameter when invoking `TestType` to receive logs in your account.
++ If you run contract tests against your registered type through the `TestType`, both logs are condensed and uploaded to an Amazon S3 bucket in your account. You must specify the [`--log-delivery-bucket`](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_TestType.html#API_TestType_RequestParameters) parameter when invoking `TestType` to receive logs in your account.
 
 ## Testing resource types manually
 <a name="manual-testing"></a>
 
 Running contract tests with the `cfn-test` command uses the AWS SAM CLI, so it's possible to attach a debugger from your IDE by specifying a port when you start the local Lambda service. However, we don't suggest this approach because the debugger detaches after each individual handler invocation completes.
 
-Instead, you can mimic the scenarios modeled in contract tests by invoking the handlers with the [https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-local-invoke.html](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-local-invoke.html) command. This allows you to step through each handler invocation without interruption. You first need to define test templates that AWS SAM can run against the resource handlers. Create the test templates in a separate folder in the resource directory and name the folder `sam-tests`.
+Instead, you can mimic the scenarios modeled in contract tests by invoking the handlers with the [`sam local invoke`](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-local-invoke.html) command. This allows you to step through each handler invocation without interruption. You first need to define test templates that AWS SAM can run against the resource handlers. Create the test templates in a separate folder in the resource directory and name the folder `sam-tests`.
 
 The test templates must adhere to the following format:
 

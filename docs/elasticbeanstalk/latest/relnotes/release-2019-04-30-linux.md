@@ -16,27 +16,50 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 **2019-04-30** – At this time, the release doesn't include an update for the Node.js platform. We will update this platform soon and update the release notes.
 **2019-05-03** – We released the Node.js platform update. This release is now complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Instance types** | **Regions** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before April 19, 2019 to all Linux-based platforms.<br />The Apache, PHP, and Ruby 2.4.6 releases include security updates. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-04-30-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-04-30-linux.html) |
-| **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions. In particular, we added support for the new M5ad and R5ad instances. They add high-speed, low latency local (physically connected) block storage to the existing M5a and R5a instances. For more information, see [New AMD EPYC-Powered Amazon EC2 M5ad and R5ad Instances](https://aws.amazon.com/blogs/aws/new-amd-epyc-powered-amazon-ec2-m5ad-and-r5ad-instances/).<br />The added instance types are listed in the following table.[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-04-30-linux.html) |
-| **Apache** | Updated platforms supporting the Apache HTTP Server 2.4 to version 2.4.39. For details, see [Changes with Apache 2.4.x](https://downloads.apache.org/httpd/CHANGES_2.4) on the *Apache Software Foundation* website. The release includes seven security updates. |
-| **Multicontainer Docker** | Updated the ECS agent to version 1.27.0. |
-| **Go** | Updated to minor revision 1.12.4. For details, see [go1.12](https://golang.org/doc/devel/release.html#go1.12) in *The Go Programming Language Release History*. |
-| **Node.js** | Updated the Node.js platform to add support for Node versions [8.16.0](https://nodejs.org/en/blog/release/v8.16.0/), [6.17.1](https://nodejs.org/en/blog/release/v6.17.1/). |
-| **PHP** | Released new PHP 7.2, 7.1, and 5.6 versions: [7.2.17](https://www.php.net/releases/7_2_17.php), [7.1.28](https://www.php.net/releases/7_1_28.php), and [5.6.40](https://www.php.net/releases/5_6_40.php), respectively. These releases include security updates. |
-| **Ruby** | Released new Ruby 2.6 and 2.4 versions: [2.6.3](https://www.ruby-lang.org/en/news/2019/04/17/ruby-2-6-3-released/) and [2.4.6](https://www.ruby-lang.org/en/news/2019/04/01/ruby-2-4-6-released/), respectively. The Ruby 2.4.6 release includes security updates. |
-| **m5ad** |  + US East (Ohio) – us-east-2<br />+ US West (Oregon) – us-west-2<br />+ Asia Pacific (Singapore) – ap-southeast-1  |
-| **r5ad** |  + US East (Ohio) – us-east-2<br />+ US East (N. Virginia) – us-east-1<br />+ US West (Oregon) – us-west-2<br />+ Asia Pacific (Singapore) – ap-southeast-1  |
-| **z1d** |  + Asia Pacific (Sydney) – ap-southeast-2<br />+ Europe (Frankfurt) – eu-central-1  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before April 19, 2019 to all Linux-based platforms.<br />The Apache, PHP, and Ruby 2.4.6 releases include security updates.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Apache</b></td><td>Updated platforms supporting the Apache HTTP Server 2.4 to version 2.4.39. For details, see <a href="https://downloads.apache.org/httpd/CHANGES_2.4">Changes with Apache 2.4.x</a> on the <i>Apache Software Foundation</i> website. The release includes seven security updates.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Multicontainer Docker</b></td><td>Updated the ECS agent to version 1.27.0.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated to minor revision 1.12.4. For details, see <a href="https://golang.org/doc/devel/release.html#go1.12">go1.12</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform to add support for Node versions <a href="https://nodejs.org/en/blog/release/v8.16.0/">8.16.0</a>, <a href="https://nodejs.org/en/blog/release/v6.17.1/">6.17.1</a>.</td></tr>
+  <tr><td><b>PHP</b></td><td>Released new PHP 7.2, 7.1, and 5.6 versions: <a href="https://www.php.net/releases/7_2_17.php">7.2.17</a>, <a href="https://www.php.net/releases/7_1_28.php">7.1.28</a>, and <a href="https://www.php.net/releases/5_6_40.php">5.6.40</a>, respectively. These releases include security updates.</td></tr>
+  <tr><td><b>Ruby</b></td><td>Released new Ruby 2.6 and 2.4 versions: <a href="https://www.ruby-lang.org/en/news/2019/04/17/ruby-2-6-3-released/">2.6.3</a> and <a href="https://www.ruby-lang.org/en/news/2019/04/01/ruby-2-4-6-released/">2.4.6</a>, respectively. The Ruby 2.4.6 release includes security updates.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Instance types</b></td><td>Added support for more Amazon EC2 instance types in some AWS Regions. In particular, we added support for the new M5ad and R5ad instances. They add high-speed, low latency local (physically connected) block storage to the existing M5a and R5a instances. For more information, see <a href="https://aws.amazon.com/blogs/aws/new-amd-epyc-powered-amazon-ec2-m5ad-and-r5ad-instances/">New AMD EPYC-Powered Amazon EC2 M5ad and R5ad Instances</a>.<br />The added instance types are listed in the following table.
+<table>
+<thead>
+  <tr><th><b>Instance types</b></th><th><b>Regions</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>m5ad</b></td><td> <ul><li>US East (Ohio) – us-east-2</li><li>US West (Oregon) – us-west-2</li><li>Asia Pacific (Singapore) – ap-southeast-1</li></ul> </td></tr>
+  <tr><td><b>r5ad</b></td><td> <ul><li>US East (Ohio) – us-east-2</li><li>US East (N. Virginia) – us-east-1</li><li>US West (Oregon) – us-west-2</li><li>Asia Pacific (Singapore) – ap-southeast-1</li></ul> </td></tr>
+  <tr><td><b>z1d</b></td><td> <ul><li>Asia Pacific (Sydney) – ap-southeast-2</li><li>Europe (Frankfurt) – eu-central-1</li></ul> </td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2019-04-30-linux.platforms"></a>

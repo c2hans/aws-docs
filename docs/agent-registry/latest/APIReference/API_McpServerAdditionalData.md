@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_McpServerAdditionalData.html
+---
+
+# McpServerAdditionalData
+<a name="API_McpServerAdditionalData"></a>
+
+Additional data for an MCP server descriptor
+
+## Contents
+<a name="API_McpServerAdditionalData_Contents"></a>
+
+ ** tools **   <a name="agentregistry-Type-McpServerAdditionalData-tools"></a>
+The MCP tools descriptor that defines the tools exposed by the MCP server.
+Type: [McpToolsDescriptor](API_McpToolsDescriptor.md) object
+Required: No
+
+## See Also
+<a name="API_McpServerAdditionalData_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/vestry-data-plane-2025-12-01/McpServerAdditionalData)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/vestry-data-plane-2025-12-01/McpServerAdditionalData)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/vestry-data-plane-2025-12-01/McpServerAdditionalData)

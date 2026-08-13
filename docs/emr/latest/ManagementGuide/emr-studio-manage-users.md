@@ -134,7 +134,7 @@ The final permissions for a user or group is an intersection of the permissions 
 
 **To assign a user or group to an EMR Studio using the AWS CLI**
 
-Insert your own values for the following `create-studio-session-mapping` arguments. For more information about the `create-studio-session-mapping` command, see the [https://docs.aws.amazon.com/cli/latest/reference/emr/create-studio-session-mapping.html](https://docs.aws.amazon.com/cli/latest/reference/emr/create-studio-session-mapping.html).
+Insert your own values for the following `create-studio-session-mapping` arguments. For more information about the `create-studio-session-mapping` command, see the [*AWS CLI Command Reference*](https://docs.aws.amazon.com/cli/latest/reference/emr/create-studio-session-mapping.html).
 + **`--studio-id`** – The ID of the Studio you want to assign the user or group to. For instructions on how to retrieve a Studio ID, see [View Studio details](emr-studio-manage-studio.md#emr-studio-get-studio-id).
 + `--identity-name` – The name of the user or group from the Identity Store. For more information, see [UserName](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_User.html#singlesignon-Type-User-UserName) for users and [DisplayName](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_Group.html#singlesignon-Type-Group-DisplayName) for groups in the *Identity Store API Reference*.
 + **`--identity-type`** – Use either `USER` or `GROUP` to specify the identity type.
@@ -191,7 +191,7 @@ For more information, see [User permissions for IAM authentication mode](how-emr
 
 **To update EMR Studio permissions for a user or group using the AWS CLI**
 
-Insert your own values for the following `update-studio-session-mappings` arguments. For more information about the `update-studio-session-mappings` command, see the [https://docs.aws.amazon.com/cli/latest/reference/emr/update-studio-session-mapping.html](https://docs.aws.amazon.com/cli/latest/reference/emr/update-studio-session-mapping.html).
+Insert your own values for the following `update-studio-session-mappings` arguments. For more information about the `update-studio-session-mappings` command, see the [*AWS CLI Command Reference*](https://docs.aws.amazon.com/cli/latest/reference/emr/update-studio-session-mapping.html).
 
 ```
 aws emr update-studio-session-mapping \
@@ -272,7 +272,7 @@ In the following example policy, assume that you have an EMR Studio with the tag
 
 **To remove a user or group from an EMR Studio using the AWS CLI**
 
-Insert your own values for the following `delete-studio-session-mapping` arguments. For more information about the `delete-studio-session-mapping` command, see the [https://docs.aws.amazon.com/cli/latest/reference/emr/delete-studio-session-mapping.html](https://docs.aws.amazon.com/cli/latest/reference/emr/delete-studio-session-mapping.html).
+Insert your own values for the following `delete-studio-session-mapping` arguments. For more information about the `delete-studio-session-mapping` command, see the [*AWS CLI Command Reference*](https://docs.aws.amazon.com/cli/latest/reference/emr/delete-studio-session-mapping.html).
 
 ```
 aws emr delete-studio-session-mapping \

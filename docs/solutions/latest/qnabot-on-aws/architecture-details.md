@@ -5,17 +5,17 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/architect
 # Architecture details
 <a name="architecture-details"></a>
 
-This section describes the components and AWS services that make up this solution and the architecture details on how these components work together.
+This section describes the components and AWS services that make up this guidance and the architecture details on how these components work together.
 
-## AWS services in this solution
+## AWS services in this guidance
 <a name="aws-services-in-this-solution"></a>
 
-The following AWS services are included in this solution:
+The following AWS services are included in this guidance:
 
 | AWS service | Description |
 | --- | --- |
 |  [Amazon API Gateway](https://aws.amazon.com/api-gateway/)  |  **Core.** Used for internal API management. |
-|  [AWS CloudFormation](https://aws.amazon.com/cloudformation/)  |  **Core.** Used to deploy the solution. |
+|  [AWS CloudFormation](https://aws.amazon.com/cloudformation/)  |  **Core.** Used to deploy the guidance. |
 |  [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/)  |  **Core.** Used for monitoring and logs. |
 |  [Amazon Cognito](https://aws.amazon.com/cognito/)  |  **Core.** Used for user management. |
 |  [AWS Identity and Access Management](https://aws.amazon.com/iam/)  |  **Core.** Used for user role and permissions management. |
@@ -29,7 +29,7 @@ The following AWS services are included in this solution:
 |  [Amazon S3](https://aws.amazon.com/s3/)  |  **Supporting.** Provides object storage for content designer UI data and logs and metrics data. |
 |  [AWS Systems Manager Parameter Store](https://aws.amazon.com/systems-manager/features/#Parameter_Store)  |  **Supporting.** Provides secure, hierarchical storage for configuration data management and secrets management. |
 |  [Amazon Translate](https://aws.amazon.com/translate/)  |  **Supporting.** Provides multi-language support to your customer’s bot interactions. You can maintain question and answer banks in a single language while still offering support to customers who interact with the bot in other languages through the use of Amazon Translate. |
-|  [Amazon Bedrock](https://aws.amazon.com/bedrock/)  |  **Optional.** This solution utilizes Bedrock for embedding models, LLM models, knowledge base, and guardrails. |
+|  [Amazon Bedrock](https://aws.amazon.com/bedrock/)  |  **Optional.** This guidance utilizes Bedrock for embedding models, LLM models, knowledge base, and guardrails. |
 |  [Amazon Connect](https://aws.amazon.com/connect/)  |  **Optional.** Provides an omnichannel cloud contact center. If you implement this component, you can create personalized experiences for your customers. For example, you can dynamically offer chat and voice contact, based on such factors as customer preference and estimated wait times. Agents, meanwhile, conveniently handle all customers from just one interface. For example, they can chat with customers, and create or respond to tasks as they are routed to them. |
 |  [Amazon Kendra](https://aws.amazon.com/kendra/)  |  **Optional.** Hosts unstructured datasets hosted in an index. You can also use Amazon Kendra to provide semantic search capabilities to your question bank through the use of Amazon Kendra FAQs. |
 

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/delete-
 # Turn off a canary release
 <a name="delete-canary-deployment"></a>
 
-To turn off a canary release deployment is to set the [https://docs.aws.amazon.com/apigateway/latest/api/API_Stage.html#canarySettings](https://docs.aws.amazon.com/apigateway/latest/api/API_Stage.html#canarySettings) to null to remove it from the stage.
+To turn off a canary release deployment is to set the [`canarySettings`](https://docs.aws.amazon.com/apigateway/latest/api/API_Stage.html#canarySettings) to null to remove it from the stage.
 
 You can disable a canary release deployment using the API Gateway console, the AWS CLI, or an AWS SDK.
 
@@ -30,7 +30,7 @@ To use the API Gateway console to turn off a canary release deployment, use the 
 
 1.  Confirm you want to delete the canary by choosing **Delete**.
 
-As a result, the [https://docs.aws.amazon.com/apigateway/latest/api/API_Stage.html#canarySettings](https://docs.aws.amazon.com/apigateway/latest/api/API_Stage.html#canarySettings) property becomes `null` and is removed from the deployment [stage](https://docs.aws.amazon.com/apigateway/latest/api/API_Stage.html). You can verify this using the AWS CLI. For example, see [Turn off a canary release using the AWS CLI](#delete-canary-release-cli).
+As a result, the [`canarySettings`](https://docs.aws.amazon.com/apigateway/latest/api/API_Stage.html#canarySettings) property becomes `null` and is removed from the deployment [stage](https://docs.aws.amazon.com/apigateway/latest/api/API_Stage.html). You can verify this using the AWS CLI. For example, see [Turn off a canary release using the AWS CLI](#delete-canary-release-cli).
 
 ## Turn off a canary release using the AWS CLI
 <a name="delete-canary-release-cli"></a>

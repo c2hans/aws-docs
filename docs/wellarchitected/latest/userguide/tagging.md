@@ -159,15 +159,15 @@ Use the following AWS WA Tool API operations to add, update, list, and delete th
 
 | Task | API action |
 | --- | --- |
-| Add or overwrite one or more tags. | [https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_TagResource.html](https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_TagResource.html) |
-| Delete one or more tags. | [https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_UntagResource.html](https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_UntagResource.html) |
-| List tags for a resource. | [https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_ListTagsForResource.html](https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_ListTagsForResource.html) |
+| Add or overwrite one or more tags. | [TagResource](https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_TagResource.html) |
+| Delete one or more tags. | [UntagResource](https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_UntagResource.html) |
+| List tags for a resource. | [ListTagsForResource](https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_ListTagsForResource.html) |
 
 Some resource-creating actions enable you to specify tags when you create the resource. The following actions support tagging on creation.
 
 | Task | API action |
 | --- | --- |
-| Create a workload | [https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_CreateWorkload.html](https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_CreateWorkload.html) |
+| Create a workload | [CreateWorkload](https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_CreateWorkload.html) |
 | Import a new lens | [ImportLens](https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_ImportLens.html) |
 | Create a profile | [CreateProfile](https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_CreateProfile.html) |
 | Create a review template | [CreateReviewTemplate](https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_CreateReviewTemplate.html) |

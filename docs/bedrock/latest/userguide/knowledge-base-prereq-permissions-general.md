@@ -117,13 +117,13 @@ Attach the following policy to the role:
 
 You can remove statements that you don't need, depending on your use case:
 + The `GetKB` statement is used to get the knowledge base information.
-+ The `Retrieve` statement is required to call [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) to retrieve data from your data store.
-+ The `RetrieveAndGenerate` statement is required to call [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) to retrieve data from your data store and generate responses based off the data.
++ The `Retrieve` statement is required to call [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) to retrieve data from your data store.
++ The `RetrieveAndGenerate` statement is required to call [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) to retrieve data from your data store and generate responses based off the data.
 
 ## Request access to foundation models for RetrieveAndGenerate
 <a name="knowledge-base-prereq-structured-model-access"></a>
 
-If you plan to use [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) to generate responses based on retrieved data from your data source, request access to the foundation models to use for generation by following the steps at [Request access to models](model-access.md).
+If you plan to use [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) to generate responses based on retrieved data from your data source, request access to the foundation models to use for generation by following the steps at [Request access to models](model-access.md).
 
 To further restrict permissions, you can omit actions, or you can specify resources and condition keys by which to filter permissions. For more information about actions, resources, and condition keys, see the following topics in the *Service Authorization Reference*:
 + [Actions defined by Amazon Bedrock](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonbedrock.html#amazonbedrock-actions-as-permissions) – Learn about actions, the resource types that you can scope them to in the `Resource` field, and the condition keys that you can filter permissions on in the `Condition` field.

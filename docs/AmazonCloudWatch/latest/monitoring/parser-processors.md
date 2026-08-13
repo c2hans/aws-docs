@@ -38,7 +38,7 @@ Schema object specifying the data source type. The supported schemas depend on t
 
 This table lists the supported schema combinations.
 
-| Pipeline Source Type | Supported Schemas | Version | Mapping Version |
+| Pipeline source type | Supported Schemas | Version | Mapping Version |
 | --- | --- | --- | --- |
 | cloudwatch\_logs | cloud\_trail: | 1.5 | Not required |
 | cloudwatch\_logs | route53\_resolver: | 1.5 | Not required |

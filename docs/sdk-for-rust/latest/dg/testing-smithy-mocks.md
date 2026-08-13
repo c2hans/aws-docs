@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/testing-smithy-mo
 # Unit testing with `aws-smithy-mocks` in the AWS SDK for Rust
 <a name="testing-smithy-mocks"></a>
 
-The AWS SDK for Rust provides multiple approaches for testing your code that interacts with AWS services. This topic describes how to use the [https://docs.rs/aws-smithy-mocks/latest/aws_smithy_mocks/](https://docs.rs/aws-smithy-mocks/latest/aws_smithy_mocks/) crate, which offers a simple yet powerful way to mock AWS SDK client responses for testing purposes.
+The AWS SDK for Rust provides multiple approaches for testing your code that interacts with AWS services. This topic describes how to use the [`aws-smithy-mocks`](https://docs.rs/aws-smithy-mocks/latest/aws_smithy_mocks/) crate, which offers a simple yet powerful way to mock AWS SDK client responses for testing purposes.
 
 ## Overview
 <a name="overview-smithy-mock"></a>
@@ -20,7 +20,7 @@ When writing tests for code that uses AWS services, you often want to avoid maki
 ## Adding the dependency
 <a name="dependency-smithy-mock"></a>
 
-In a command prompt for your project directory, add the [https://crates.io/crates/aws-smithy-mocks](https://crates.io/crates/aws-smithy-mocks) crate as a dependency:
+In a command prompt for your project directory, add the [`aws-smithy-mocks`](https://crates.io/crates/aws-smithy-mocks) crate as a dependency:
 
 ```
 $ cargo add --dev aws-smithy-mocks

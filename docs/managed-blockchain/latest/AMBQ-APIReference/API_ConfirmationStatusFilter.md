@@ -5,13 +5,13 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 # ConfirmationStatusFilter
 <a name="API_ConfirmationStatusFilter"></a>
 
-The container for the `ConfirmationStatusFilter` that filters for the [https://docs.aws.amazon.com/managed-blockchain/latest/ambq-dg/key-concepts.html#finality](https://docs.aws.amazon.com/managed-blockchain/latest/ambq-dg/key-concepts.html#finality) of the results.
+The container for the `ConfirmationStatusFilter` that filters for the [*finality*](https://docs.aws.amazon.com/managed-blockchain/latest/ambq-dg/key-concepts.html#finality) of the results.
 
 ## Contents
 <a name="API_ConfirmationStatusFilter_Contents"></a>
 
  ** include **   <a name="ManagedBlockchainQueryAPIReference-Type-ConfirmationStatusFilter-include"></a>
-The container to determine whether to list results that have only reached [https://docs.aws.amazon.com/managed-blockchain/latest/ambq-dg/key-concepts.html#finality](https://docs.aws.amazon.com/managed-blockchain/latest/ambq-dg/key-concepts.html#finality). Transactions that have reached finality are always part of the response.
+The container to determine whether to list results that have only reached [*finality*](https://docs.aws.amazon.com/managed-blockchain/latest/ambq-dg/key-concepts.html#finality). Transactions that have reached finality are always part of the response.
 Type: Array of strings
 Array Members: Minimum number of 1 item.
 Valid Values: `FINAL | NONFINAL`

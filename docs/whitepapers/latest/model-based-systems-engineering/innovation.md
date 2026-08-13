@@ -51,7 +51,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
 
  Message broker is required to distribute the messages to the recipients or conduct pub/sub relationship in the software and API orchestration. **Amazon Simple Notification Service (Amazon SNS)** and **Amazon Simple Queue Service (SQS)** provides managed serverless messaging and queuing services, respectively, with no-administration required from you. If you would like to employ a managed service but with an open source message broker such as Apache ActiveMQ or RabbitMQ, you can choose **Amazon MQ**. The translator part is required to complete the interoperability piece. Different types of applications and services require different formats.
 
- Standardization comes with JSON, but effort is needed to build the translator for the digital continuity. You can always work with your AWS Solutions Architect and other resources such as [https://aws.amazon.com/partners/](https://aws.amazon.com/partners/) and [https://aws.amazon.com/professional-services/](https://aws.amazon.com/professional-services/) who can help you on tasks that require hands-on development.
+ Standardization comes with JSON, but effort is needed to build the translator for the digital continuity. You can always work with your AWS Solutions Architect and other resources such as [**AWS Partner Network (APN)**](https://aws.amazon.com/partners/) and [**AWS Professional Services**](https://aws.amazon.com/professional-services/) who can help you on tasks that require hands-on development.
 
 ## Extending Workforce Collaboration built on MBSE
 <a name="extending-workforce-collaboration-built-on-mbse"></a>

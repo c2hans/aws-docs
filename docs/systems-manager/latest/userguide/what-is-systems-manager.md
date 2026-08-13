@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is
 
 AWS Systems Manager helps you centrally view, manage, and operate nodes at scale in AWS, on-premises, and multicloud environments. With the launch of a unified console experience, Systems Manager consolidates various tools to help you complete common node tasks across AWS accounts and AWS Regions.
 
-To use Systems Manager, nodes must be [managed](https://docs.aws.amazon.com/systems-manager/latest/userguide/operating-systems-and-machine-types.html#supported-machine-types), which means SSM Agent is installed on the machine and the agent can communicate with the Systems Manager service. To help you identify why nodes aren't reporting as *managed*, Systems Manager offers a one-click agent issue diagnosis and remediation runbook that you can configure to run automatically according to a schedule you define. This feature helps identify why nodes can't connect to Systems Manager, including networking misconfigurations. This feature also provides recommended runbooks for remediating networking issues and other problems preventing nodes from being configured as managed nodes.
+To use Systems Manager, nodes must be [managed](https://docs.aws.amazon.com/systems-manager/latest/userguide/operating-systems-and-machine-types.html#supported-machine-types), which means SSM Agent is installed on the machine and the agent can communicate with the Systems Manager service. To help you identify why nodes aren't reporting as *managed*, Systems Manager offers a diagnosis and remediation runbook. You can configure this runbook to run automatically on a schedule. This feature helps identify why nodes can't connect to Systems Manager, including networking misconfigurations. It also provides recommended runbooks for remediating issues preventing nodes from being managed.
 
 The unified console experience also includes a dashboard that provides a high-level overview of your nodes. You can drill down for more specific node insights such as which nodes are running outdated operating system (OS) software. You can also use filters for granular views based on instance metadata like OSs and OS versions, AWS Regions, AWS accounts, and SSM Agent versions. These filters help you retrieve relevant information at a specific account level or application level across your entire organization.
 
@@ -35,7 +35,7 @@ Benefits of Systems Manager include the following:
   Automate common operational tasks and reduce time and effort required to maintain your systems. Systems Manager provides safe and secure remote management of your nodes at scale without logging into your servers. You no longer need to use bastion hosts, SSH, or remote PowerShell. Systems Manager also provides a simple way of automating common administrative tasks across groups of nodes such as registry edits, user management, and software and patch installations.
 + **Simplify node management at scale in any environment**
 
-  Systems Manager helps you manage nodes across AWS, on-premises, and multicloud environments. Schedule automated diagnoses to identify SSM Agent issues and remediate them with one-click runbooks. After your nodes are configured as *managed* nodes, you can execute critical operational tasks such as applying security patches, initiating logged sessions, and running commands remotely.
+  Systems Manager helps you manage nodes across AWS, on-premises, and multicloud environments. Schedule automated diagnoses to identify SSM Agent issues and remediate them with runbooks. After your nodes are configured as *managed* nodes, you can execute critical operational tasks such as applying security patches, initiating logged sessions, and running commands remotely.
 
 ## Who should use Systems Manager?
 <a name="use-cases"></a>
@@ -52,7 +52,7 @@ The primary features of Systems Manager are shared between the unified console a
 
 **Unified console**
 
-The unified console provides a centralized experience to view and manage your nodes. This console leverages several Systems Manager tools and more to provide you with the following:
+The unified console provides a centralized experience to view and manage your nodes. This console uses several Systems Manager tools and more to provide you with the following:
 + Centralized views of your nodes
 + Detailed node insights
 + Automated diagnosis and remediation of common node issues
@@ -111,7 +111,7 @@ AWS provides two sets of command line tools: the [AWS Command Line Interface](ht
 On your Windows Server instances, Windows PowerShell 3.0 or later is required to run certain SSM documents (for example, the legacy `AWS-ApplyPatchBaseline` document). Verify that your Windows Server instances are running Windows Management Framework 3.0 or later. The framework includes Windows PowerShell.
 
 **AWS SDKs**
-AWS provides software development kits (SDKs) that consist of libraries and sample code for various programming languages and platforms (for example, [Java](https://aws.amazon.com/sdk-for-java/), [Python](https://aws.amazon.com/sdk-for-python/), [Ruby](https://aws.amazon.com/sdk-for-ruby/), [.NET](https://aws.amazon.com/sdk-for-net/), [iOS and Android](https://aws.amazon.com/mobile/resources/), and [others](https://aws.amazon.com/tools/#sdk)). The SDKs provide a convenient way to grant programmatic access to Systems Manager. For information about the AWS SDKs, including how to download and install them, see [Tools for Amazon Web Services](https://aws.amazon.com/tools/#sdk).
+AWS provides software development kits (SDKs) that consist of libraries and sample code for various programming languages and platforms. Supported languages include [Java](https://aws.amazon.com/sdk-for-java/), [Python](https://aws.amazon.com/sdk-for-python/), [Ruby](https://aws.amazon.com/sdk-for-ruby/), [.NET](https://aws.amazon.com/sdk-for-net/), [iOS and Android](https://aws.amazon.com/mobile/resources/), and [others](https://aws.amazon.com/tools/#sdk). The SDKs provide a convenient way to grant programmatic access to Systems Manager. For information about downloading and installing them, see [Tools for Amazon Web Services](https://aws.amazon.com/tools/#sdk).
 
 ## Systems Manager service name history
 <a name="service-naming-history"></a>

@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/convers
 
 A license type conversion contains multiple steps. In some cases, when you convert Windows Server instances from BYOL to license included, the billing products on an instance are successfully updated. However, the KMS server might not switch to the AWS KMS server.
 
-To remediate this issue, follow the steps in [Why did Windows activation fail on my EC2 Windows instance?](https://aws.amazon.com/premiumsupport/knowledge-center/windows-activation-fails/) to activate Windows either with the Systems Manager [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-activatewindowswithamazonlicense.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-activatewindowswithamazonlicense.html) Automation runbook, or log in to the instance and manually make the switch to the AWS KMS server.
+To remediate this issue, follow the steps in [Why did Windows activation fail on my EC2 Windows instance?](https://aws.amazon.com/premiumsupport/knowledge-center/windows-activation-fails/) to activate Windows either with the Systems Manager [AWSSupport-ActivateWindowsWithAmazonLicense](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-activatewindowswithamazonlicense.html) Automation runbook, or log in to the instance and manually make the switch to the AWS KMS server.
 
 ## Instance [instance] is launched from an Amazon owned AMI. Provide an instance launched originally from a BYOL AMI.
 <a name="conversion-troubleshooting-aws-ami"></a>

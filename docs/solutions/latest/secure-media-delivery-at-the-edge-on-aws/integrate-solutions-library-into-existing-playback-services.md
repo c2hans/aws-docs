@@ -65,7 +65,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 
  **When using Lambda function**
 
- The common way for granting the right set of permission for a Lambda function which make API calls to other AWS services is to adjust [https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html) accordingly. If you are unsure and looking for minimal set of permissions for your Lambda function to work with the other elements of the stack, you can copy and include in execution role configuration the same policy as the one attached to the dedicated library’s role. You can find the role’s identifier in CloudFormation output under **RoleARN** key. Navigate to that role definition in IAM settings console and in the **Roles** page, select the role and you will find the policy under the **Permission Policy** tab.
+ The common way for granting the right set of permission for a Lambda function which make API calls to other AWS services is to adjust [**Execution role permissions**](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html) accordingly. If you are unsure and looking for minimal set of permissions for your Lambda function to work with the other elements of the stack, you can copy and include in execution role configuration the same policy as the one attached to the dedicated library’s role. You can find the role’s identifier in CloudFormation output under **RoleARN** key. Navigate to that role definition in IAM settings console and in the **Roles** page, select the role and you will find the policy under the **Permission Policy** tab.
 
  **When using solution’s library in any environment**
 

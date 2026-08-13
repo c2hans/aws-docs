@@ -69,7 +69,7 @@ The following table shows the operation names in the two versions.
 | getObjectAsString | getObjectAsBytes().asUtf8String |
 | getObjectMetadata | headObject |
 | getObjectTagging | getObjectTagging |
-| getResourceUrl | [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Utilities.html#getUrl(java.util.function.Consumer)](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Utilities.html#getUrl(java.util.function.Consumer)) |
+| getResourceUrl | [`S3Utilities#getUrl`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Utilities.html#getUrl(java.util.function.Consumer)) |
 | getS3AccountOwner | listBuckets |
 | getUrl | [S3Utilities\#getUrl](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Utilities.html#getUrl(java.util.function.Consumer)) |
 | headBucket | headBucket |

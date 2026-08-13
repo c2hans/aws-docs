@@ -53,8 +53,18 @@ The following table describes the resource allocation limits for AgentCore Runti
 | Maximum size for a direct code deployment package (compressed) | 250 MB | No | ZIP file size limit for direct code deployment |
 | Maximum size for a direct code deployment package (uncompressed) | 750 MB | No | Unzipped package size limit for direct code deployment |
 | Maximum hardware allocation per session | 2vCPU/8GB | No | The maximum memory/CPU usage and allocation per Runtime session |
+| Capacity providers per account | 1,000 | No | Applies to the Instances compute type in your account. Counts all capacity providers that you have not deleted, including those being created or deleted. |
+| Agents per capacity provider session | 20 | No | Applies to the Instances compute type. The maximum number of agents that you can run on a single capacity provider session. |
 
 For more information about service quotas and how to request increases, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*.
+
+**Note**
+Because the **Instances** compute type provisions Amazon EC2 resources in your own account, your account’s quotas for those resources apply in addition to the AgentCore quotas in the preceding table. AgentCore calls the following services on your behalf to provision and manage instances, which consumes your account’s quotas. For high-throughput workloads, you might need to request increases for the following:
+ **Amazon EC2** – the running instance count for the instance families you select, and the request rates for the instance operations that AgentCore calls, such as `RunInstances`, `CreateFleet`, `DescribeInstances`, `TerminateInstances`, and `CreateTags`. For more information, see [Amazon EC2 service quotas](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html).
+ **Amazon EBS** – the volume quotas for the volume types you use, and the request rates for the volume operations that AgentCore calls, such as `CreateVolume`, `AttachVolume`, `DetachVolume`, `DeleteVolume`, and `DescribeVolumes`. For more information, see [Quotas for Amazon EBS](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-resource-quotas.html).
+ **Amazon VPC** – the number of network interfaces, and the request rates for the network interface operations that AgentCore calls, such as `AttachNetworkInterface` and `DescribeNetworkInterfaces`. For more information, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).
+ **Amazon EC2 Auto Scaling** – a single shared quota that applies to all Amazon EC2 Auto Scaling API calls, rather than to an individual operation. This quota isn’t available in the Service Quotas console. To request an increase, open an AWS Support case. For more information, see [Request throttling for the Amazon EC2 Auto Scaling API](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-quotas.html#api-request-throttling).
+To request an increase for a quota that is available in the Service Quotas console, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*.
 
 ### Invocation limits
 <a name="invocation-limits"></a>
@@ -79,27 +89,12 @@ The following table describes the rate limits for AgentCore Runtime after which 
 
 | Limit | Value | Adjustable | Notes |
 | --- | --- | --- | --- |
-| InvokeAgentRuntime API rate, per agent, per account | 200 TPS | Yes | Transactions per second |
-| InvokeAgentRuntimeCommand API rate, per agent, per account | 200 TPS | Yes | Transactions per second. Additional limits: command size 1 byte–64 KB, response size up to 100 MB, timeout 1–3600 seconds (default 300 seconds), streaming chunk size up to 64 KB per event, session ID minimum 33 characters. |
-| InvokeAgentRuntimeWithWebSocketStream API rate, per agent, per account | 200 TPS | Yes | Transactions per second |
-| StopRuntimeSession API rate, per agent, per account | 200 TPS | Yes | Transactions per second |
-| GetAgentCard API rate, per agent, per account | 200 TPS | Yes | Transactions per second |
-| GetRuntimeProtectedResourceMetadata API rate, per agent, per account | 200 TPS | Yes | Transactions per second |
-| InvokeAgentRuntimeCommandShell API rate, per agent, per account | 200 TPS | Yes | Transactions per second. Additional limits: maximum connection duration 1 hour, maximum frame payload 64 KB, concurrent shell sessions per runtime 10, reconnection buffer 256 KB. |
-| New sessions created rate, per endpoint (container deployment) | 400 TPM | Yes | Transactions per minute |
-| Direct code deploy new session rate, per endpoint | 25 TPS | Yes | Transactions per second |
+| Data plane API request rate | 1,000 TPS | Yes | Transactions per second per account. This quota is shared across all data plane APIs and is not enforced for each API individually. It applies to the following APIs: `InvokeAgentRuntime`, `InvokeAgentRuntimeCommand`, `InvokeAgentRuntimeWithWebSocketStream`, `InvokeAgentRuntimeCommandShell`, `StopRuntimeSession`, `GetAgentCard`, `GetRuntimeProtectedResourceMetadata`. Additional `InvokeAgentRuntimeCommand` limits: command size 1 byte–64 KB, response size up to 100 MB, timeout 1–3600 seconds (default 300 seconds). Streaming chunk size is up to 64 KB for each event; session ID minimum is 33 characters. Additional `InvokeAgentRuntimeCommandShell` limits: maximum connection duration 1 hour, maximum frame payload 64 KB, up to 10 concurrent shell sessions per runtime, reconnection buffer 256 KB. |
+| New Runtime session creation rate | 25 TPS | Yes | Transactions per second per account. This quota is shared across all endpoints and is not enforced for each endpoint individually. It applies to new session creation for both container-image and direct code deployment agents. |
 | WebSocket frame rate per connection | 250 frames per second | No |  |
-| CreateAgentRuntime API rate | 5 TPS | Yes | Transactions per second |
-| CreateAgentRuntimeEndpoint API rate | 5 TPS | Yes | Transactions per second |
-| GetAgentRuntime API rate | 50 TPS | Yes | Transactions per second |
-| GetAgentRuntimeEndpoint API rate | 50 TPS | Yes | Transactions per second |
-| UpdateAgentRuntime API rate | 5 TPS | Yes | Transactions per second |
-| UpdateAgentRuntimeEndpoint API rate | 5 TPS | Yes | Transactions per second |
-| DeleteAgentRuntime API rate | 5 TPS | Yes | Transactions per second |
-| DeleteAgentRuntimeEndpoint API rate | 5 TPS | Yes | Transactions per second |
-| ListAgentRuntimes API rate | 5 TPS | Yes | Transactions per second |
-| ListAgentRuntimeEndpoints API rate | 5 TPS | Yes | Transactions per second |
-| ListAgentRuntimeVersions API rate | 5 TPS | Yes | Transactions per second |
+| Control plane mutation API rate | 50 TPS | No | Transactions per second per account. This quota is shared across all control plane mutation APIs and is not enforced for each API individually. It applies to `CreateAgentRuntime`, `CreateAgentRuntimeEndpoint`, `UpdateAgentRuntime`, `UpdateAgentRuntimeEndpoint`, `DeleteAgentRuntime`, and `DeleteAgentRuntimeEndpoint`. |
+| Control plane Get API rate | 150 TPS | No | Transactions per second per account. This quota is shared across all control plane Get APIs and is not enforced for each API individually. It applies to `GetAgentRuntime` and `GetAgentRuntimeEndpoint`. |
+| Control plane List API rate | 25 TPS | No | Transactions per second per account. This quota is shared across all control plane List APIs and is not enforced for each API individually. It applies to `ListAgentRuntimes`, `ListAgentRuntimeEndpoints`, and `ListAgentRuntimeVersions`. |
 
 For more information about service quotas and how to request increases, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*.
 

@@ -32,15 +32,15 @@ Image set metadata is [normalized](metadata-normalization.md). In other words, o
   <tr><th>Element name</th><th>Element tag</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="2"> Study level elements </td></tr>
-  <tr><td>Study Date</td><td>(0008,0020)</td></tr>
-  <tr><td>Accession Number</td><td>(0008,0050)</td></tr>
-  <tr><td>Patient ID</td><td>(0010,0020)</td></tr>
-  <tr><td>Study Instance UID</td><td>(0020,000D)</td></tr>
-  <tr><td>Study ID</td><td>(0020,0010)</td></tr>
-  <tr><td colspan="2"> Series level elements </td></tr>
-  <tr><td>Series Instance UID</td><td>(0020,000E)</td></tr>
-  <tr><td>Series Number</td><td>(0020,0011)</td></tr>
+  <tr><td colspan="2"> <b>Study level elements</b> </td></tr>
+  <tr><td><code>Study Date</code></td><td><code>(0008,0020)</code></td></tr>
+  <tr><td><code>Accession Number</code></td><td><code>(0008,0050)</code></td></tr>
+  <tr><td><code>Patient ID</code></td><td><code>(0010,0020)</code></td></tr>
+  <tr><td><code>Study Instance UID</code></td><td><code>(0020,000D)</code></td></tr>
+  <tr><td><code>Study ID</code></td><td><code>(0020,0010)</code></td></tr>
+  <tr><td colspan="2"> <b>Series level elements</b> </td></tr>
+  <tr><td><code>Series Instance UID</code></td><td><code>(0020,000E)</code></td></tr>
+  <tr><td><code>Series Number</code></td><td><code>(0020,0011)</code></td></tr>
 </tbody>
 </table>
 

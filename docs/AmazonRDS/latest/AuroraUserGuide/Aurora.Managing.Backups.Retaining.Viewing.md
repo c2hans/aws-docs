@@ -13,4 +13,4 @@ To describe your retained automated backups using the AWS CLI, use the following
 aws rds describe-db-cluster-automated-backups --db-cluster-resource-id {{DB_cluster_resource_ID}}
 ```
 
-To describe your retained automated backups using the RDS API, call the [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBClusterAutomatedBackups.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBClusterAutomatedBackups.html) action with the `DbClusterResourceId` parameter.
+To describe your retained automated backups using the RDS API, call the [`DescribeDBClusterAutomatedBackups`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBClusterAutomatedBackups.html) action with the `DbClusterResourceId` parameter.

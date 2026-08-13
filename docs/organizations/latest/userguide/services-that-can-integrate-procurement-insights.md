@@ -14,7 +14,7 @@ Use the following information to help you integrate AWS Marketplace procurement 
 ## Service-linked roles and managed policies created when you enable integration
 <a name="integrate-enable-slr-procurement-insights"></a>
 
- When you activate the AWS Marketplace procurement insights dashboard dashboard the [https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-service-linked-role-procurement.html](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-service-linked-role-procurement.html) service-linked role and the [https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-security-iam-awsmanpol.html#aws-procurement-insights](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-security-iam-awsmanpol.html#aws-procurement-insights) AWS managed policy are created.
+ When you activate the AWS Marketplace procurement insights dashboard dashboard the [`AWSServiceRoleForProcurementInsightsPolicy`](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-service-linked-role-procurement.html) service-linked role and the [`AWSServiceRoleForProcurementInsightsPolicy`](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-security-iam-awsmanpol.html#aws-procurement-insights) AWS managed policy are created.
 
 ## Enabling trusted access with AWS Marketplace procurement insights
 <a name="integrate-enable-ta-procurement-insights"></a>

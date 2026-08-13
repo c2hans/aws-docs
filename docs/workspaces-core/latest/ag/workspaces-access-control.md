@@ -20,7 +20,7 @@ To provide access, add permissions to your users, groups, or roles:
 
 Following are additional resources for IAM:
 + For more information about IAM policies, see [Policies and Permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) in the *IAM User Guide* guide.
-+ For more information about IAM, see [Identity and Access Management (IAM)](https://aws.amazon.com/iam) and the [https://docs.aws.amazon.com/IAM/latest/UserGuide/](https://docs.aws.amazon.com/IAM/latest/UserGuide/).
++ For more information about IAM, see [Identity and Access Management (IAM)](https://aws.amazon.com/iam) and the [*IAM User Guide*](https://docs.aws.amazon.com/IAM/latest/UserGuide/).
 + For more information about WorkSpaces Instances specific resources, actions, and condition context keys for use in IAM permission policies, see [Actions, Resources, and Condition Keys for Amazon WorkSpaces Managed Instances](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsworkspacesmanagedinstances.html) in the *IAM User Guide*.
 + For a tool that helps you create IAM policies, see the [AWS Policy Generator](https://aws.amazon.com/blogs/aws/aws-policy-generator/). You can also use the [IAM Policy Simulator](https://docs.aws.amazon.com/IAM/latest/UsingPolicySimulatorGuide/) to test whether a policy would allow or deny a specific request to AWS.
 

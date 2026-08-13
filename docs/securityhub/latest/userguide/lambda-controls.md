@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the AWS Lambda service and resourc
 
 **Resource type:** `AWS::Lambda::Function`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/lambda-function-public-access-prohibited.html](https://docs.aws.amazon.com/config/latest/developerguide/lambda-function-public-access-prohibited.html)
+**AWS Config rule:** [lambda-function-public-access-prohibited](https://docs.aws.amazon.com/config/latest/developerguide/lambda-function-public-access-prohibited.html)
 
 **Schedule type:** Change triggered
 
@@ -38,7 +38,7 @@ To remediate this issue, you must update your function's resource-based policy t
 
 To start, [ review the resource-based policy](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html) on the Lambda console. Identify the policy statement that has `Principal` field values that make the policy public, such as `"*"` or `{ "AWS": "*" }`.
 
-You cannot edit the policy from the console. To remove permissions from the function, run the [https://docs.aws.amazon.com/cli/latest/reference/lambda/remove-permission.html](https://docs.aws.amazon.com/cli/latest/reference/lambda/remove-permission.html) command from the AWS CLI.
+You cannot edit the policy from the console. To remove permissions from the function, run the [remove-permission](https://docs.aws.amazon.com/cli/latest/reference/lambda/remove-permission.html) command from the AWS CLI.
 
 ```
 $ aws lambda remove-permission --function-name {{<function-name>}} --statement-id {{<statement-id>}}
@@ -57,7 +57,7 @@ Replace `{{<function-name>}}` with the name of the Lambda function, and `{{<stat
 
 **Resource type:** `AWS::Lambda::Function`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/lambda-function-settings-check.html](https://docs.aws.amazon.com/config/latest/developerguide/lambda-function-settings-check.html)
+**AWS Config rule:** [lambda-function-settings-check](https://docs.aws.amazon.com/config/latest/developerguide/lambda-function-settings-check.html)
 
 **Schedule type:** Change triggered
 
@@ -84,7 +84,7 @@ For more information about supported runtimes and deprecation schedules, see [Ru
 
 **Resource type: ** `AWS::Lambda::Function`
 
-**AWS Config rule: ** [https://docs.aws.amazon.com/config/latest/developerguide/lambda-inside-vpc.html](https://docs.aws.amazon.com/config/latest/developerguide/lambda-inside-vpc.html)
+**AWS Config rule: ** [lambda-inside-vpc](https://docs.aws.amazon.com/config/latest/developerguide/lambda-inside-vpc.html)
 
 **Schedule type:** Change triggered
 
@@ -110,7 +110,7 @@ To configure an existing function to connect to private subnets in your VPC, see
 
 **Resource type:** `AWS::Lambda::Function`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/lambda-vpc-multi-az-check.html](https://docs.aws.amazon.com/config/latest/developerguide/lambda-vpc-multi-az-check.html)
+**AWS Config rule:** [lambda-vpc-multi-az-check](https://docs.aws.amazon.com/config/latest/developerguide/lambda-vpc-multi-az-check.html)
 
 **Schedule type:** Change triggered
 
@@ -173,7 +173,7 @@ To add tags to a Lambda function, see [Using tags on Lambda functions](https://d
 
 **Resource type:** `AWS::Lambda::Function`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/lambda-function-xray-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/lambda-function-xray-enabled.html)
+**AWS Config rule:** [lambda-function-xray-enabled](https://docs.aws.amazon.com/config/latest/developerguide/lambda-function-xray-enabled.html)
 
 **Schedule type:** Change triggered
 

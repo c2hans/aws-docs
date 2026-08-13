@@ -73,14 +73,14 @@ Describes the error encountered.
 HTTP Status Code: 400
 
  [TagPolicyException](API_TagPolicyException.md)
- `TagPolicyException` is deprecated. See [https://docs.aws.amazon.com/evs/latest/APIReference/API_ValidationException.html](https://docs.aws.amazon.com/evs/latest/APIReference/API_ValidationException.html) instead.
+ `TagPolicyException` is deprecated. See [`ValidationException`](https://docs.aws.amazon.com/evs/latest/APIReference/API_ValidationException.html) instead.
 The request doesn't comply with IAM tag policy. Correct your request and then retry it.
  ** message **
 Describes the error encountered
 HTTP Status Code: 400
 
  [TooManyTagsException](API_TooManyTagsException.md)
- `TooManyTagsException` is deprecated. See [https://docs.aws.amazon.com/evs/latest/APIReference/API_ServiceQuotaExceededException.html](https://docs.aws.amazon.com/evs/latest/APIReference/API_ServiceQuotaExceededException.html) instead.
+ `TooManyTagsException` is deprecated. See [`ServiceQuotaExceededException`](https://docs.aws.amazon.com/evs/latest/APIReference/API_ServiceQuotaExceededException.html) instead.
 A service resource associated with the request has more than 200 tags.
  ** message **
 Describes the error encountered.

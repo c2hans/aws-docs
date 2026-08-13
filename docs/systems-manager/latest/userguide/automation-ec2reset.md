@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 
 You can use the `AWSSupport-ResetAccess` runbook to automatically re-enable local Administrator password generation on Amazon Elastic Compute Cloud (Amazon EC2) instances for Windows Server and to generate a new SSH key on EC2 instances for Linux. The `AWSSupport-ResetAccess` runbook is designed to perform a combination of AWS Systems Manager actions, AWS CloudFormation actions, and AWS Lambda functions that automate the steps normally required to reset the local administrator password.
 
-You can use Automation, a tool in AWS Systems Manager, with the `AWSSupport-ResetAccess` runbook to solve the following problems:
+You can use Automation with the `AWSSupport-ResetAccess` runbook to solve the following problems:
 
 **Windows**
 
@@ -19,7 +19,7 @@ You can use Automation, a tool in AWS Systems Manager, with the `AWSSupport-Rese
 
 **Linux**
 
-*You lost your EC2 key pair, or you configured SSH access to the instance with a key you lost*: To resolve this problem, you can use the `AWSSupport-ResetAccess` runbook to create a new SSH key for your current instance, which enables you to connect to the instance again.
+*You lost your EC2 key pair, or you configured SSH access to the instance with a key you lost*: To resolve this problem, you can use the `AWSSupport-ResetAccess` runbook to create a new SSH key for your current instance, which lets you connect to the instance again.
 
 **Note**
 If your EC2 instance for Windows Server is configured for Systems Manager, you can also reset your local Administrator password by using EC2Rescue and AWS Systems Manager Run Command. For more information, see [Using EC2Rescue for Windows Server with Systems Manager Run Command](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2rw-ssm.html) in the *Amazon EC2 User Guide*.
@@ -47,7 +47,7 @@ Troubleshooting an instance with Automation and the `AWSSupport-ResetAccess` run
 <a name="automation-ec2reset-begin"></a>
 
 Before you run the following Automation, do the following:
-+ Copy the instance ID of the instance on which you want to reset the Administrator password. You will specify this ID in the procedure.
++ Copy the instance ID of the instance on which you want to reset the Administrator password. Specify this ID in the procedure.
 + Optionally, collect the ID of a subnet in the same availability zone as your unreachable instance. The EC2Rescue instance will be created in this subnet. If you don’t specify a subnet, then Automation creates a new temporary VPC in your AWS account. Verify that your AWS account has at least one VPC available. By default, you can create five VPCs in a Region. If you already created five VPCs in the Region, the automation fails without making changes to your instance. For more information about Amazon VPC quotas, see [VPC and Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html#vpc-limits-vpcs-subnets) in the *Amazon VPC User Guide*.
 + Optionally, you can create and specify an AWS Identity and Access Management (IAM) role for Automation. If you don't specify this role, then Automation runs in the context of the user who ran the automation.
 
@@ -160,7 +160,7 @@ CloudFormation automates the process of creating IAM roles and policies by using
 
 **To create the required IAM roles and policies for EC2Rescue**
 
-1. Download [https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWSSupport-EC2RescueRole.zip](https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWSSupport-EC2RescueRole.zip) and extract the `AWSSupport-EC2RescueRole.json` file to a directory on your local machine.
+1. Download [`AWSSupport-EC2RescueRole.zip`](https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/AWSSupport-EC2RescueRole.zip) and extract the `AWSSupport-EC2RescueRole.json` file to a directory on your local machine.
 
 1. If your AWS account is in a special partition, edit the template to change the ARN values to those for your partition.
 
@@ -192,7 +192,7 @@ CloudFormation automates the process of creating IAM roles and policies by using
 
 1. In the stack list, choose the option next to the stack you just created, and then choose the **Outputs** tab.
 
-1. Copy the **Value**. The is the ARN of the AssumeRole. You will specify this ARN when you run the Automation.
+1. Copy the **Value**. The is the ARN of the AssumeRole. Specify this ARN when you run the Automation.
 
 ## Running the Automation
 <a name="automation-ec2reset-executing"></a>

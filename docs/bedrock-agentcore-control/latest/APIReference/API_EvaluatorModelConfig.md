@@ -18,6 +18,11 @@ This data type is a UNION, so only one of the following members can be specified
 Type: [BedrockEvaluatorModelConfig](API_BedrockEvaluatorModelConfig.md) object
 Required: No
 
+ ** responsesEvaluatorModelConfig **   <a name="bedrockagentcorecontrol-Type-EvaluatorModelConfig-responsesEvaluatorModelConfig"></a>
+ The OpenResponses model configuration for evaluation.
+Type: [OpenResponsesEvaluatorModelConfig](API_OpenResponsesEvaluatorModelConfig.md) object
+Required: No
+
 ## See Also
 <a name="API_EvaluatorModelConfig_SeeAlso"></a>
 

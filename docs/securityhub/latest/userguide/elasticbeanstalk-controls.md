@@ -20,7 +20,7 @@ These controls may not be available in all AWS Regions. For more information, se
 
 **Resource type:** `AWS::ElasticBeanstalk::Environment`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/beanstalk-enhanced-health-reporting-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/beanstalk-enhanced-health-reporting-enabled.html)
+**AWS Config rule:** [`beanstalk-enhanced-health-reporting-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/beanstalk-enhanced-health-reporting-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -50,7 +50,7 @@ For instructions on how to enable enhanced health reporting, see [Enabling enhan
 
 **Resource type:** `AWS::ElasticBeanstalk::Environment`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elastic-beanstalk-managed-updates-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/elastic-beanstalk-managed-updates-enabled.html)
+**AWS Config rule:** [`elastic-beanstalk-managed-updates-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/elastic-beanstalk-managed-updates-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -80,7 +80,7 @@ To enable managed platform updates, see [To configure managed platform updates u
 
 **Resource type:** `AWS::ElasticBeanstalk::Environment`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elastic-beanstalk-logs-to-cloudwatch.html](https://docs.aws.amazon.com/config/latest/developerguide/elastic-beanstalk-logs-to-cloudwatch.html)
+**AWS Config rule:** [`elastic-beanstalk-logs-to-cloudwatch`](https://docs.aws.amazon.com/config/latest/developerguide/elastic-beanstalk-logs-to-cloudwatch.html)
 
 **Schedule type:** Change triggered
 

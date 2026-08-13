@@ -9,7 +9,7 @@ A container for your trained model that can be deployed for SageMaker inference.
 + Versioned model: A part of a model package group in Model Registry.
 + Unversioned model: Not part of a model package group and used in AWS Marketplace.
 
-For more information, see [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModelPackage.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModelPackage.html).
+For more information, see [`CreateModelPackage`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModelPackage.html).
 
 ## Contents
 <a name="API_ModelPackage_Contents"></a>

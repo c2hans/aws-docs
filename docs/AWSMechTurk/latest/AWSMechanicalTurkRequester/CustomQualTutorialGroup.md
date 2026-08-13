@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkRequ
 # Tutorial: Creating a qualification requirement that requires workers be in a group
 <a name="CustomQualTutorialGroup"></a>
 
-In the following example, we create a qualification type that describes a group of workers that have demonstrated expertise at a task and add it to our qualification requirements. To start, we use the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateQualificationTypeOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateQualificationTypeOperation.html) operation to create the type with which we're working.
+In the following example, we create a qualification type that describes a group of workers that have demonstrated expertise at a task and add it to our qualification requirements. To start, we use the [`CreateQualificationType`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_CreateQualificationTypeOperation.html) operation to create the type with which we're working.
 
 ```
 {
@@ -16,7 +16,7 @@ In the following example, we create a qualification type that describes a group 
 
 ```
 
-The `CreateQualificationType` operation will return an ID, 3TL87MO8CLOFYXKXNRLM00EXAMPLE, that we can assign to workers. For each worker, we call the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_AssociateQualificationWithWorkerOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_AssociateQualificationWithWorkerOperation.html) operation to add them to our group.
+The `CreateQualificationType` operation will return an ID, 3TL87MO8CLOFYXKXNRLM00EXAMPLE, that we can assign to workers. For each worker, we call the [`AssociateQualificationWithWorker`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_AssociateQualificationWithWorkerOperation.html) operation to add them to our group.
 
 ```
 {

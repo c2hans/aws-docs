@@ -51,4 +51,4 @@ app.exec()
 print(submitter.create_job_response)
 ```
 
-To make your own dialog you can use the `SubmitJobToDeadlineDialog` class in [https://github.com/aws-deadline/deadline-cloud/blob/mainline/src/deadline/client/ui/dialogs/submit_job_to_deadline_dialog.py](https://github.com/aws-deadline/deadline-cloud/blob/mainline/src/deadline/client/ui/dialogs/submit_job_to_deadline_dialog.py). You can pass in values, embed your own job specific tab, and determine how the job bundle gets created (or passed in).
+To make your own dialog you can use the `SubmitJobToDeadlineDialog` class in [`deadline.client.ui.dialogs.submit_job_to_deadline_dialog`](https://github.com/aws-deadline/deadline-cloud/blob/mainline/src/deadline/client/ui/dialogs/submit_job_to_deadline_dialog.py). You can pass in values, embed your own job specific tab, and determine how the job bundle gets created (or passed in).

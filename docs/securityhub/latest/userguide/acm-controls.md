@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the AWS Certificate Manager (ACM) 
 
 **Resource type:** `AWS::ACM::Certificate`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/acm-certificate-expiration-check.html](https://docs.aws.amazon.com/config/latest/developerguide/acm-certificate-expiration-check.html)
+**AWS Config rule:** [acm-certificate-expiration-check](https://docs.aws.amazon.com/config/latest/developerguide/acm-certificate-expiration-check.html)
 
 **Schedule type:** Change triggered and periodic
 
@@ -57,7 +57,7 @@ For more information, see [Renewal for domains validated by DNS](https://docs.aw
 
 **Resource type:** `AWS::ACM::Certificate`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/acm-certificate-rsa-check.html](https://docs.aws.amazon.com/config/latest/developerguide/acm-certificate-rsa-check.html)
+**AWS Config rule:** [acm-certificate-rsa-check](https://docs.aws.amazon.com/config/latest/developerguide/acm-certificate-rsa-check.html)
 
 **Schedule type:** Change triggered
 

@@ -62,7 +62,7 @@ The output from the `describe-events` command looks something like this.
 }
 ```
 
-For more information, such as available parameters and permitted parameter values, see [https://docs.aws.amazon.com/cli/latest/reference/memorydb/describe-events.html](https://docs.aws.amazon.com/cli/latest/reference/memorydb/describe-events.html).
+For more information, such as available parameters and permitted parameter values, see [`describe-events`](https://docs.aws.amazon.com/cli/latest/reference/memorydb/describe-events.html).
 
 ## Viewing MemoryDB events (MemoryDB API)
 <a name="mdbevents.viewing.api"></a>
@@ -120,4 +120,4 @@ The above actions should produce output similar to the following.
 </DescribeEventsResponse>
 ```
 
-For more information, such as available parameters and permitted parameter values, see [https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DescribeEvents.html](https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DescribeEvents.html).
+For more information, such as available parameters and permitted parameter values, see [`DescribeEvents`](https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DescribeEvents.html).

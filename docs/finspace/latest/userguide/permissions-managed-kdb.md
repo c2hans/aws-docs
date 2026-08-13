@@ -30,7 +30,7 @@ The following table shows a list of permissions and what they are needed for.
   <tr><td>"ec2:CreateVpcEndpoint"</td><td rowspan="3">Managing kdb clusters</td><td rowspan="3">Users who create or delete the clusters</td></tr>
   <tr><td>"ec2:DeleteVpcEndpoints"</td></tr>
   <tr><td>"ec2:DescribeSubnets"</td></tr>
-  <tr><td>"ec2:AcceptTransitGatewayVpcAttachment"</td><td rowspan="2">Creating a connection between your Managed kdb environment and your transit gateway</td><td rowspan="2">Administrators who configure the transit gateway environment using the UpdateKxEnvironmentNetwork API</td></tr>
+  <tr><td>"ec2:AcceptTransitGatewayVpcAttachment"</td><td rowspan="2">Creating a connection between your Managed kdb environment and your transit gateway</td><td rowspan="2">Administrators who configure the transit gateway environment using the <code>UpdateKxEnvironmentNetwork</code> API</td></tr>
   <tr><td>"ec2:DescribeSubnets"</td></tr>
   <tr><td>"ram:CreateResourceShare"</td><td>Creating a resource share on the transit gateway</td><td>Users who update kdb environment</td></tr>
   <tr><td>“ram:GetResourceShareInvitiations”</td><td rowspan="2">Accepting resource share on private certificate authority for cluster TLS connection</td><td rowspan="2">Users who create kdb environment</td></tr>
@@ -38,7 +38,7 @@ The following table shows a list of permissions and what they are needed for.
   <tr><td>"iam:CreateServiceLinkedRole"</td><td>Creating the FinSpace service-linked role (SLR) when creating a kdb environment</td><td>Users who create kdb environment</td></tr>
   <tr><td>"ec2:DescribeTags"</td><td rowspan="2">Creating and describing tags on FinSpace managed VPC endpoints</td><td rowspan="2">Users who create and delete clusters</td></tr>
   <tr><td>"ec2:CreateTags"</td></tr>
-  <tr><td>"finspace:\*"</td><td>Performing actions to manage FinSpace resources</td><td>Users that manage resources in FinSpace</td></tr>
+  <tr><td>"finspace:*"</td><td>Performing actions to manage FinSpace resources</td><td>Users that manage resources in FinSpace</td></tr>
   <tr><td>"kms:CreateGrant"</td><td rowspan="2">Encrypting any customer data at rest</td><td rowspan="2">Users who create kdb environment</td></tr>
   <tr><td>"kms:RetireGrant"</td></tr>
   <tr><td>"ec2:DescribeTransitGateways"</td><td>Checking if the transit gateway exists</td><td>Users who configure the transit gateway environment using the UpdateKxEnvironmentNetwork API</td></tr>

@@ -129,7 +129,7 @@ Required: No
 
  ** [SearchConditionExpression](#API_SearchVectors_RequestSyntax) **   <a name="DDB-SearchVectors-request-SearchConditionExpression"></a>
 A condition expression used to filter the vector search results. The expression can reference attributes defined in the vector index search schema, including `HASH` and `INLINE_FILTER` key elements.
-Only the equality operator (`=`) is supported for `HASH` attributes. Comparison and range operators are supported for `INLINE_FILTER` attributes. Only top-level attributes from the search schema can be referenced.
+The `HASH` and `INLINE_FILTER` attributes support only the equality operator (`=`). You can reference only top-level attributes from the search schema.
 Type: String
 Required: No
 

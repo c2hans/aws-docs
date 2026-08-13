@@ -47,7 +47,7 @@ GROUP BY eventName, awsRegion
 ### Use approximation techniques
 <a name="query-optimization-approximation"></a>
 
-Whenever exact values are not needed for counting distinct values, use [approximate aggregate functions](https://trino.io/docs/current/functions/aggregate.html#approximate-aggregate-functions) to find the most frequent values. For example, [https://trino.io/docs/current/functions/aggregate.html#approx_distinct](https://trino.io/docs/current/functions/aggregate.html#approx_distinct) uses much less memory and runs faster than the `COUNT(DISTINCT fieldName)` operation.
+Whenever exact values are not needed for counting distinct values, use [approximate aggregate functions](https://trino.io/docs/current/functions/aggregate.html#approximate-aggregate-functions) to find the most frequent values. For example, [`approx_distinct`](https://trino.io/docs/current/functions/aggregate.html#approx_distinct) uses much less memory and runs faster than the `COUNT(DISTINCT fieldName)` operation.
 
 ### Limit query results
 <a name="query-optimization-limit"></a>
@@ -65,7 +65,7 @@ LIMIT 100;
 ### Optimize LIKE queries
 <a name="query-optimization-like"></a>
 
-You can use `LIKE` to find matching strings, but with long strings, this is compute intensive. The [https://trino.io/docs/current/functions/regexp.html#regexp_like](https://trino.io/docs/current/functions/regexp.html#regexp_like) function is in most cases a faster alternative.
+You can use `LIKE` to find matching strings, but with long strings, this is compute intensive. The [`regexp_like`](https://trino.io/docs/current/functions/regexp.html#regexp_like) function is in most cases a faster alternative.
 
 Often, you can optimize a search by anchoring the substring that you're looking for. For example, if you're looking for a prefix, it's better to use '`substr`%' instead of '%`substr`%' with the `LIKE` operator and '^`substr`' with the `regexp_like` function.
 
@@ -86,7 +86,7 @@ The `ORDER BY` clause returns the results of a query in sorted order. When sorti
 
 [Window functions](https://trino.io/docs/current/functions/window.html) keep all the records that they operate on in memory in order to calculate their result. When the window is very large, the window function can run out of memory. To make sure that queries run within the available memory limits, reduce the size of the windows that your window functions operate over by adding a `PARTITION BY` clause.
 
-Sometimes queries with window functions can be rewritten without window functions. For example, instead of using `row_number` or `rank`, you can use aggregate functions like [https://trino.io/docs/current/functions/aggregate.html#max_by](https://trino.io/docs/current/functions/aggregate.html#max_by) or [https://trino.io/docs/current/functions/aggregate.html#min_by](https://trino.io/docs/current/functions/aggregate.html#min_by).
+Sometimes queries with window functions can be rewritten without window functions. For example, instead of using `row_number` or `rank`, you can use aggregate functions like [`max_by`](https://trino.io/docs/current/functions/aggregate.html#max_by) or [`min_by`](https://trino.io/docs/current/functions/aggregate.html#min_by).
 
 The following query finds the alias most recently assigned to each KMS key using `max_by`.
 

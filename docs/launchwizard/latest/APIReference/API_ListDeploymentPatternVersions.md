@@ -39,7 +39,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [deploymentPatternName](#API_ListDeploymentPatternVersions_RequestSyntax) **   <a name="launchwizard-ListDeploymentPatternVersions-request-deploymentPatternName"></a>
-The name of the deployment pattern. You can use the [https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloadDeploymentPatterns.html](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloadDeploymentPatterns.html) operation to discover supported values for this parameter.
+The name of the deployment pattern. You can use the [`ListWorkloadDeploymentPatterns`](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloadDeploymentPatterns.html) operation to discover supported values for this parameter.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[A-Za-z0-9][a-zA-Z0-9-]*`
@@ -63,7 +63,7 @@ Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: No
 
  ** [workloadName](#API_ListDeploymentPatternVersions_RequestSyntax) **   <a name="launchwizard-ListDeploymentPatternVersions-request-workloadName"></a>
-The name of the workload. You can use the [https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloads.html](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloads.html) operation to discover supported values for this parameter.
+The name of the workload. You can use the [`ListWorkloads`](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloads.html) operation to discover supported values for this parameter.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
 Pattern: `[A-Za-z][a-zA-Z0-9-_]*`

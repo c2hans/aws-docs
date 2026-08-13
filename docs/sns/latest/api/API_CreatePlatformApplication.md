@@ -25,7 +25,7 @@ You can use the returned `PlatformApplicationArn` as an attribute for the `Creat
  For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
  **Attributes** Attributes.entry.N.key (key)Attributes.entry.N.value (value)
-For a list of attributes, see [https://docs.aws.amazon.com/sns/latest/api/API_SetPlatformApplicationAttributes.html](https://docs.aws.amazon.com/sns/latest/api/API_SetPlatformApplicationAttributes.html).
+For a list of attributes, see [`SetPlatformApplicationAttributes`](https://docs.aws.amazon.com/sns/latest/api/API_SetPlatformApplicationAttributes.html).
 Type: String to string map
 Required: Yes
 

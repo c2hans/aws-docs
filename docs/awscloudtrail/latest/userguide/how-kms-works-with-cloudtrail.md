@@ -27,7 +27,7 @@ When you configure AWS CloudTrail to use SSE-KMS to encrypt your log files, Clou
 ### You configure CloudTrail to encrypt log files with your AWS KMS key
 <a name="cloudtrail-details-update-configuration"></a>
 
-When you [update your CloudTrail configuration to use your KMS key](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/create-kms-key-policy-for-cloudtrail-update-trail.html), CloudTrail sends a [https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) request to AWS KMS to verify that the KMS key exists and that CloudTrail has permission to use it for encryption. CloudTrail does not use the resulting data key.
+When you [update your CloudTrail configuration to use your KMS key](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/create-kms-key-policy-for-cloudtrail-update-trail.html), CloudTrail sends a [`GenerateDataKey`](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) request to AWS KMS to verify that the KMS key exists and that CloudTrail has permission to use it for encryption. CloudTrail does not use the resulting data key.
 
 The `GenerateDataKey` request includes the following information for the [encryption context](https://docs.aws.amazon.com/kms/latest/developerguide/encrypt_context.html):
 + The [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of the CloudTrail trail
@@ -77,7 +77,7 @@ The `GenerateDataKey` request results in an entry in your CloudTrail logs simila
 ### CloudTrail puts a log file into your S3 bucket
 <a name="cloudtrail-details-put-log-file"></a>
 
-Each time CloudTrail puts a log file into your S3 bucket, Amazon S3 sends a [https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) request to AWS KMS on behalf of CloudTrail. In response to this request, AWS KMS generates a unique data key and then sends Amazon S3 two copies of the data key, one in plaintext and one that is encrypted with the specified KMS key. Amazon S3 uses the plaintext data key to encrypt the CloudTrail log file and then removes the plaintext data key from memory as soon as possible after use. Amazon S3 stores the encrypted data key as metadata with the encrypted CloudTrail log file.
+Each time CloudTrail puts a log file into your S3 bucket, Amazon S3 sends a [`GenerateDataKey`](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) request to AWS KMS on behalf of CloudTrail. In response to this request, AWS KMS generates a unique data key and then sends Amazon S3 two copies of the data key, one in plaintext and one that is encrypted with the specified KMS key. Amazon S3 uses the plaintext data key to encrypt the CloudTrail log file and then removes the plaintext data key from memory as soon as possible after use. Amazon S3 stores the encrypted data key as metadata with the encrypted CloudTrail log file.
 
 The `GenerateDataKey` request includes the following information for the [encryption context](https://docs.aws.amazon.com/kms/latest/developerguide/encrypt_context.html):
 + The [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of the CloudTrail trail
@@ -128,7 +128,7 @@ Each `GenerateDataKey` request results in an entry in your CloudTrail logs simil
 ### You get an encrypted log file from your S3 bucket
 <a name="cloudtrail-details-get-log-file"></a>
 
-Each time you get an encrypted CloudTrail log file from your S3 bucket, Amazon S3 sends a [https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) request to AWS KMS on your behalf to decrypt the log file's encrypted data key. In response to this request, AWS KMS uses your KMS key to decrypt the data key and then sends the plaintext data key to Amazon S3. Amazon S3 uses the plaintext data key to decrypt the CloudTrail log file and then removes the plaintext data key from memory as soon as possible after use.
+Each time you get an encrypted CloudTrail log file from your S3 bucket, Amazon S3 sends a [`Decrypt`](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) request to AWS KMS on your behalf to decrypt the log file's encrypted data key. In response to this request, AWS KMS uses your KMS key to decrypt the data key and then sends the plaintext data key to Amazon S3. Amazon S3 uses the plaintext data key to decrypt the CloudTrail log file and then removes the plaintext data key from memory as soon as possible after use.
 
 The `Decrypt` request includes the following information for the [encryption context](https://docs.aws.amazon.com/kms/latest/developerguide/encrypt_context.html):
 + The [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of the CloudTrail trail

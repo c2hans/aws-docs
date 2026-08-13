@@ -86,7 +86,7 @@ After you enable billing alerts for the first time, it takes about 15 minutes be
 
 1.  Choose **Next**.
 
-1.  Under **Notification**, ensure that **In alarm** is selected. Then specify an Amazon SNS topic to be notified when your alarm is in the `ALARM` state. The Amazon SNS topic can include your email address so that you recieve email when the billing amount crosses the threshold that you specified.
+1.  Under **Notification**, make sure that **In alarm** is selected. Then specify an Amazon SNS topic to be notified when your alarm is in the `ALARM` state. The Amazon SNS topic can include your email address so that you recieve email when the billing amount crosses the threshold that you specified.
 
    You can select an existing Amazon SNS topic, create a new Amazon SNS topic, or use a topic ARN to notify other account. If you want your alarm to send multiple notifications for the same alarm state or for different alarm states, choose **Add notification**.
 

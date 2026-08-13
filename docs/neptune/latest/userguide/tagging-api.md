@@ -6,9 +6,9 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/tagging-api.htm
 <a name="tagging-api"></a>
 
 You can add, list, or remove tags for a DB instance using the Neptune API.
-+ To add a tag to a Neptune resource, use the [API_AddTagsToResource.html](API_AddTagsToResource.html) operation.
-+ To list tags that are assigned to a Neptune resource, use the [API_ListTagsForResource.html](API_ListTagsForResource.html).
-+ To remove tags from a Neptune resource, use the [API_RemoveTagsFromResource.html](API_RemoveTagsFromResource.html) operation.
++ To add a tag to a Neptune resource, use the [`AddTagsToResource`](API_AddTagsToResource.html) operation.
++ To list tags that are assigned to a Neptune resource, use the [`ListTagsForResource`](API_ListTagsForResource.html).
++ To remove tags from a Neptune resource, use the [`RemoveTagsFromResource`](API_RemoveTagsFromResource.html) operation.
 
 To learn more about how to construct the required ARN, see [Constructing an ARN for Neptune](tagging-arns-constructing.md).
 

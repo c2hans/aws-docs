@@ -64,10 +64,10 @@ You can use the License Manager console to activate a grant. When you activate a
 You can use the AWS CLI to work with your granted licenses.
 
 **To work with distributed grants using the AWS CLI:**
-+ [https://docs.aws.amazon.com/cli/latest/reference/license-manager/accept-grant.html](https://docs.aws.amazon.com/cli/latest/reference/license-manager/accept-grant.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/license-manager/create-grant-version.html](https://docs.aws.amazon.com/cli/latest/reference/license-manager/create-grant-version.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-received-grants.html](https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-received-grants.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-received-grants-for-organization.html](https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-received-grants-for-organization.html)
-+ [https://docs.aws.amazon.com/cli/latest/reference/license-manager/reject-grant.html](https://docs.aws.amazon.com/cli/latest/reference/license-manager/reject-grant.html)
++ [accept-grant](https://docs.aws.amazon.com/cli/latest/reference/license-manager/accept-grant.html)
++ [create-grant-version](https://docs.aws.amazon.com/cli/latest/reference/license-manager/create-grant-version.html)
++ [list-received-grants](https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-received-grants.html)
++ [list-received-grants-for-organization](https://docs.aws.amazon.com/cli/latest/reference/license-manager/list-received-grants-for-organization.html)
++ [reject-grant](https://docs.aws.amazon.com/cli/latest/reference/license-manager/reject-grant.html)
 
 ------

@@ -17,8 +17,8 @@ Required: No
 
  ** InstanceInterruptionBehavior **
 The behavior when a Spot Instance is interrupted.
-If `Configured` (for [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HibernationOptionsRequest.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HibernationOptionsRequest.html)) is set to `true`, the `InstanceInterruptionBehavior` parameter is automatically set to `hibernate`. If you set it to `stop` or `terminate`, you'll get an error.
-If `Configured` (for [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HibernationOptionsRequest.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HibernationOptionsRequest.html)) is set to `false` or `null`, the `InstanceInterruptionBehavior` parameter is automatically set to `terminate`. You can also set it to `stop` or `hibernate`.
+If `Configured` (for [`HibernationOptions`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HibernationOptionsRequest.html)) is set to `true`, the `InstanceInterruptionBehavior` parameter is automatically set to `hibernate`. If you set it to `stop` or `terminate`, you'll get an error.
+If `Configured` (for [`HibernationOptions`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HibernationOptionsRequest.html)) is set to `false` or `null`, the `InstanceInterruptionBehavior` parameter is automatically set to `terminate`. You can also set it to `stop` or `hibernate`.
 For more information, see [Interruption behavior](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/interruption-behavior.html) in the *Amazon EC2 User Guide*.
 Type: String
 Valid Values: `hibernate | stop | terminate`

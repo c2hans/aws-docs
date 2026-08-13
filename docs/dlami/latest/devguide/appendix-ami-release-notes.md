@@ -9,8 +9,8 @@ Here you can find detailed release notes for all currently supported AWS Deep Le
 
 For release notes for DLAMI frameworks that we no longer support, see the **Unsupported Framework Release Notes Archive** section of the [DLAMI Framework Support Policy](https://docs.aws.amazon.com/dlami/latest/devguide/dlami-support-policy-table.html) page.
 
-**Security patches not available for PyTorch 2.8 and 2.9 DLAMIs**
-PyTorch DLAMIs for versions earlier than 2.10 (that is, PyTorch 2.8 and 2.9) contain known common vulnerabilities and exposures (CVEs) that cannot be patched. Because we maintain a separate DLAMI currency release for each PyTorch version, we do not backport security fixes to these images.
+**Security patches not available for PyTorch 2.9 DLAMIs**
+PyTorch DLAMIs for versions earlier than 2.10 (that is, PyTorch 2.9) contain known common vulnerabilities and exposures (CVEs) that cannot be patched. Because we maintain a separate DLAMI currency release for each PyTorch version, we do not backport security fixes to these images.
 We recommend that you migrate to PyTorch 2.10 or later DLAMIs, which continue to receive security patches.
 
 **Topics**
@@ -72,8 +72,6 @@ Below are the release notes for ARM64 Base DLAMI:
 + [GPU PyTorch 2.10 (Ubuntu 24.04)](aws-deep-learning-x86-gpu-pytorch-2.10-ubuntu-24-04.md)
 + [GPU PyTorch 2.9 (Amazon Linux 2023)](aws-deep-learning-x86-gpu-pytorch-2.9-amazon-linux-2023.md)
 + [GPU PyTorch 2.9 (Ubuntu 24.04)](aws-deep-learning-x86-gpu-pytorch-2.9-ubuntu-24-04.md)
-+ [GPU PyTorch 2.8 (Amazon Linux 2023)](aws-deep-learning-x86-gpu-pytorch-2.8-amazon-linux-2023.md)
-+ [GPU PyTorch 2.8 (Ubuntu 24.04)](aws-deep-learning-x86-gpu-pytorch-2.8-ubuntu-24-04.md)
 
  **AWS Neuron**
 +  Refer to the [Neuron DLAMI User Guide](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/deploy/environments/dlami.html#neuron-multi-framework-dlami)
@@ -92,8 +90,6 @@ Below are the release notes for ARM64 Base DLAMI:
 + [ARM64 AMI GPU PyTorch 2.10 (Ubuntu 24.04)](aws-deep-learning-arm64-gpu-pytorch-2.10-ubuntu-24-04.md)
 + [ARM64 AMI GPU PyTorch 2.9 (Amazon Linux 2023)](aws-deep-learning-arm64-gpu-pytorch-2.9-amazon-linux-2023.md)
 + [ARM64 AMI GPU PyTorch 2.9 (Ubuntu 24.04)](aws-deep-learning-arm64-gpu-pytorch-2.9-ubuntu-24-04.md)
-+ [ARM64 AMI GPU PyTorch 2.8 (Amazon Linux 2023)](aws-deep-learning-arm64-gpu-pytorch-2.8-amazon-linux-2023.md)
-+ [ARM64 AMI GPU PyTorch 2.8 (Ubuntu 24.04)](aws-deep-learning-arm64-gpu-pytorch-2.8-ubuntu-24-04.md)
 
  **AWS Neuron**
 +  Refer to the [Neuron DLAMI User Guide](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/deploy/environments/dlami.html#neuron-multi-framework-dlami)

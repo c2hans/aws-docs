@@ -186,7 +186,7 @@ For events originated by AWS and through an AWS service's VPC, this field is usu
 **Optional:** True
 
 **`eventCategory`**
-Shows the event category. The event category is used in [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_LookupEvents.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_LookupEvents.html) calls to filter on management events.
+Shows the event category. The event category is used in [`LookupEvents`](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_LookupEvents.html) calls to filter on management events.
 + For management events, the value is `Management`.
 + For data events, the value is `Data`.
 + For network activity events, the value is `NetworkActivity`.
@@ -222,7 +222,7 @@ The `eventContext` field is only present in events for event data stores that ar
 **Optional:** True
 
 **`edgeDeviceDetails`**
-Shows information about edge devices that are targets of a request. Currently, [https://aws.amazon.com/s3/outposts/](https://aws.amazon.com/s3/outposts/) device events include this field. This field has a maximum size of 28 KB; content exceeding that limit is truncated. For event data stores configured to have a maximum event size of 1 MB, the field content is only truncated if the event payload exceeds 1 MB and the maximum field size is exceeded.
+Shows information about edge devices that are targets of a request. Currently, [`S3 Outposts`](https://aws.amazon.com/s3/outposts/) device events include this field. This field has a maximum size of 28 KB; content exceeding that limit is truncated. For event data stores configured to have a maximum event size of 1 MB, the field content is only truncated if the event payload exceeds 1 MB and the maximum field size is exceeded.
 **Since:** 1.08
 **Optional:** True
 

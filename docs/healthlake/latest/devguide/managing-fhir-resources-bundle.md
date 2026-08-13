@@ -7,9 +7,9 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-fhir
 
 A FHIR `Bundle` is a container for a collection of FHIR resources in AWS HealthLake. AWS HealthLake supports two types of bundles with different processing behaviors.
 
-[https://hl7.org/fhir/R4/http.html#transaction](https://hl7.org/fhir/R4/http.html#transaction) bundles process each resource independently. If one resource fails, the remaining resources can still succeed. Each operation is processed individually, and processing continues even when some operations fail. Use batch bundles for bulk operations where partial success is acceptable, such as uploading multiple unrelated patient records.
+[`Batch`](https://hl7.org/fhir/R4/http.html#transaction) bundles process each resource independently. If one resource fails, the remaining resources can still succeed. Each operation is processed individually, and processing continues even when some operations fail. Use batch bundles for bulk operations where partial success is acceptable, such as uploading multiple unrelated patient records.
 
-[https://hl7.org/fhir/R4/http.html#transaction](https://hl7.org/fhir/R4/http.html#transaction) bundles process all resources atomically as a single unit. Either all resource operations succeed, or AWS HealthLake commits none of them. Use transaction bundles when you need guaranteed referential integrity across related resources, such as creating a patient with related observations and conditions where all data must be recorded together.
+[`Transaction`](https://hl7.org/fhir/R4/http.html#transaction) bundles process all resources atomically as a single unit. Either all resource operations succeed, or AWS HealthLake commits none of them. Use transaction bundles when you need guaranteed referential integrity across related resources, such as creating a patient with related observations and conditions where all data must be recorded together.
 
 **Differences between batch and transaction bundles**
 
@@ -307,7 +307,7 @@ The following example shows a transaction bundle with multiple resource types an
 ------
 #### [ SMART on FHIR ]
 
-   SMART on FHIR authorization example for the [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
+   SMART on FHIR authorization example for the [`IdentityProviderConfiguration`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
 
    ```
    {
@@ -334,7 +334,7 @@ Conditional PUTs are supported only in `batch` bundles. `Transaction` bundles do
 + `_id` (standalone)
 + `_id` in combination with one of the following:
   + `_tag`
-  + `_createdAt`
+  + `createdAt`
   + `_lastUpdated`
 
 When you use conditional PUTs in bundles, AWS HealthLake evaluates the query parameters against existing resources and takes action based on the match results.
@@ -545,7 +545,7 @@ In the following example bundle with a conditional update, the `Patient` resourc
 ------
 #### [ SMART on FHIR ]
 
-   SMART on FHIR authorization example for the [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
+   SMART on FHIR authorization example for the [`IdentityProviderConfiguration`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
 
    ```
    {
@@ -771,7 +771,7 @@ HealthLake does initial validations for the bundle at submission time. If valida
 ------
 #### [ SMART on FHIR ]
 
-   SMART on FHIR authorization example for the [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
+   SMART on FHIR authorization example for the [`IdentityProviderConfiguration`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) data type.
 
    ```
    {

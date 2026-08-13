@@ -10,7 +10,7 @@ To use CloudWatch Application Insights, you must create an [AWS Identity and Acc
 **To create an IAM policy using the console**
 To create an IAM policy using the IAM console, perform the following steps.
 
-1. Go to the [IAM console](https://console.aws.amazon.com/iam/home). In the left navigation pane, select **Policies**.
+1. Open the [IAM console](https://console.aws.amazon.com/iam/home). In the left navigation pane, select **Policies**.
 
 1. At the top of the page, select **Create policy**.
 

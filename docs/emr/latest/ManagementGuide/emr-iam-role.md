@@ -14,7 +14,7 @@ The Amazon EMR role defines the allowable actions for Amazon EMR when it provisi
 **Important**
 Amazon EMR uses this Amazon EMR service role and the `AWSServiceRoleForEMRCleanup` role to clean up cluster resources in your account that you no longer use, such as Amazon EC2 instances. You must include actions for the role policies to delete or terminate the resources. Otherwise, Amazon EMR can’t perform these cleanup actions, and you might incur costs for unused resources that remain on the cluster.
 
-The following shows the contents of the current `AmazonEMRServicePolicy_v2` policy. You can also see the current content of the [https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/service-role/AmazonEMRServicePolicy_v2](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/service-role/AmazonEMRServicePolicy_v2) managed policy on the IAM console.
+The following shows the contents of the current `AmazonEMRServicePolicy_v2` policy. You can also see the current content of the [`AmazonEMRServicePolicy_v2`](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/service-role/AmazonEMRServicePolicy_v2) managed policy on the IAM console.
 
 ------
 #### [ JSON ]
@@ -440,7 +440,7 @@ The following shows the contents of the current `AmazonEMRServicePolicy_v2` poli
 Your service role should use the following trust policy.
 
 **Important**
-The following trust policy includes the [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) and [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount) global condition keys, which limit the permissions that you give Amazon EMR to particular resources in your account. Using them can protect you against [the confused deputy problem](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html).
+The following trust policy includes the [`aws:SourceArn`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) and [`aws:SourceAccount`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount) global condition keys, which limit the permissions that you give Amazon EMR to particular resources in your account. Using them can protect you against [the confused deputy problem](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html).
 
 ------
 #### [ JSON ]

@@ -43,6 +43,6 @@ You can tag resources for all cost-accruing services in AWS. For the following s
 <a name="more-info-tagging"></a>
 
 This page provides general information on tagging AWS resources. For more information about tagging resources in a particular AWS service, see its documentation. The following are also good sources of information about tagging:
-+ For information about the AWS Resource Groups Tagging API, see the [https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/Welcome.html](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/Welcome.html).
++ For information about the AWS Resource Groups Tagging API, see the [*Resource Groups Tagging API Reference Guide*](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/Welcome.html).
 + For information about the tagging functionality each AWS service provides, see the service's documentation in the [AWS documentation index](https://docs.aws.amazon.com/index.html).
 + For information about using tags in IAM policies to help control who can view and interact with your AWS resources, see [Controlling access to and for IAM users and roles using tags](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_iam-tags.html) in the *IAM User Guide*.

@@ -41,13 +41,13 @@ To route requests for all services to a custom endpoint URL, set the `AWS_ENDPOI
 export AWS_ENDPOINT_URL={{http://localhost:4567}}
 ```
 
-To route requests for a specific AWS service to a custom endpoint URL, use the `AWS_ENDPOINT_URL_<SERVICE>` environment variable. Amazon DynamoDB has a `serviceId` of [https://github.com/boto/botocore/blob/bcaf618c4b93c067efa0b85d3e92f3985ff60906/botocore/data/dynamodb/2012-08-10/service-2.json#L10](https://github.com/boto/botocore/blob/bcaf618c4b93c067efa0b85d3e92f3985ff60906/botocore/data/dynamodb/2012-08-10/service-2.json#L10). For this service, the endpoint URL environment variable is `AWS_ENDPOINT_URL_DYNAMODB`. This endpoint takes precedence over the global endpoint set in `AWS_ENDPOINT_URL` for this service.
+To route requests for a specific AWS service to a custom endpoint URL, use the `AWS_ENDPOINT_URL_<SERVICE>` environment variable. Amazon DynamoDB has a `serviceId` of [`DynamoDB`](https://github.com/boto/botocore/blob/bcaf618c4b93c067efa0b85d3e92f3985ff60906/botocore/data/dynamodb/2012-08-10/service-2.json#L10). For this service, the endpoint URL environment variable is `AWS_ENDPOINT_URL_DYNAMODB`. This endpoint takes precedence over the global endpoint set in `AWS_ENDPOINT_URL` for this service.
 
 ```
 export AWS_ENDPOINT_URL_DYNAMODB={{http://localhost:5678}}
 ```
 
- As another example, AWS Elastic Beanstalk has a `serviceId` of [https://github.com/boto/botocore/blob/bcaf618c4b93c067efa0b85d3e92f3985ff60906/botocore/data/elasticbeanstalk/2010-12-01/service-2.json#L9](https://github.com/boto/botocore/blob/bcaf618c4b93c067efa0b85d3e92f3985ff60906/botocore/data/elasticbeanstalk/2010-12-01/service-2.json#L9). The AWS service identifier is based on the API model's `serviceId` by replacing all spaces with underscores and uppercasing all letters. To set the endpoint for this service, the corresponding environment variable is `AWS_ENDPOINT_URL_ELASTIC_BEANSTALK`. For a list of all service-specific environment variables, see [Identifiers for service-specific endpoints](ss-endpoints-table.md).
+ As another example, AWS Elastic Beanstalk has a `serviceId` of [`Elastic Beanstalk`](https://github.com/boto/botocore/blob/bcaf618c4b93c067efa0b85d3e92f3985ff60906/botocore/data/elasticbeanstalk/2010-12-01/service-2.json#L9). The AWS service identifier is based on the API model's `serviceId` by replacing all spaces with underscores and uppercasing all letters. To set the endpoint for this service, the corresponding environment variable is `AWS_ENDPOINT_URL_ELASTIC_BEANSTALK`. For a list of all service-specific environment variables, see [Identifiers for service-specific endpoints](ss-endpoints-table.md).
 
 ```
 export AWS_ENDPOINT_URL_ELASTIC_BEANSTALK={{http://localhost:5567}}
@@ -72,7 +72,7 @@ s3 =
   endpoint_url = {{https://play.min.io:9000}}
 ```
 
-A single profile can configure endpoints for multiple services. This example shows how to set the service-specific endpoint URLs for Amazon S3 and AWS Elastic Beanstalk in the same profile. AWS Elastic Beanstalk has a `serviceId` of [https://github.com/boto/botocore/blob/bcaf618c4b93c067efa0b85d3e92f3985ff60906/botocore/data/elasticbeanstalk/2010-12-01/service-2.json#L9](https://github.com/boto/botocore/blob/bcaf618c4b93c067efa0b85d3e92f3985ff60906/botocore/data/elasticbeanstalk/2010-12-01/service-2.json#L9). The AWS service identifier is based on the API model's `serviceId` by replacing all spaces with underscores and lowercasing all letters. Thus, the service identifier key becomes `elastic_beanstalk` and settings for this service begin on the line `elastic_beanstalk = `. For a list of all service identifier keys to use in the `services` section, see [Identifiers for service-specific endpoints](ss-endpoints-table.md).
+A single profile can configure endpoints for multiple services. This example shows how to set the service-specific endpoint URLs for Amazon S3 and AWS Elastic Beanstalk in the same profile. AWS Elastic Beanstalk has a `serviceId` of [`Elastic Beanstalk`](https://github.com/boto/botocore/blob/bcaf618c4b93c067efa0b85d3e92f3985ff60906/botocore/data/elasticbeanstalk/2010-12-01/service-2.json#L9). The AWS service identifier is based on the API model's `serviceId` by replacing all spaces with underscores and lowercasing all letters. Thus, the service identifier key becomes `elastic_beanstalk` and settings for this service begin on the line `elastic_beanstalk = `. For a list of all service identifier keys to use in the `services` section, see [Identifiers for service-specific endpoints](ss-endpoints-table.md).
 
 ```
 [services {{testing-s3-and-eb}}]

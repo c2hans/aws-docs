@@ -16,7 +16,7 @@ You can use `AWSSupport-TroubleshootECSTaskFailedToStart` runbook to test the ta
   Use the ID of the most recent failed task.
 + The cluster that the task was in
 
-For information about how to use the runbook, see [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-troubleshootecstaskfailedtostart.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-troubleshootecstaskfailedtostart.html) in the *AWS Systems Manager Automation runbook reference*.
+For information about how to use the runbook, see [`AWSSupport-TroubleshootECSTaskFailedToStart`](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-troubleshootecstaskfailedtostart.html) in the *AWS Systems Manager Automation runbook reference*.
 
 The runbook analyzes the task. You can view the results in the **Output** section for the following issues that can prevent a task from starting:
 + Network connectivity to the configured container registry

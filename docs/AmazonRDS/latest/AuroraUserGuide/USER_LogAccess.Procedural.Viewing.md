@@ -35,7 +35,7 @@ You can't view the log files for Aurora Serverless v1 DB clusters in the RDS con
 ## AWS CLI
 <a name="USER_LogAccess.CLI"></a>
 
-To list the available database log files for a DB instance, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-log-files.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-log-files.html) command.
+To list the available database log files for a DB instance, use the AWS CLI [`describe-db-log-files`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-log-files.html) command.
 
 The following example returns a list of log files for a DB instance named `my-db-instance`.
 
@@ -48,4 +48,4 @@ The following example returns a list of log files for a DB instance named `my-db
 ## RDS API
 <a name="USER_LogAccess.API"></a>
 
-To list the available database log files for a DB instance, use the Amazon RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBLogFiles.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBLogFiles.html) action.
+To list the available database log files for a DB instance, use the Amazon RDS API [`DescribeDBLogFiles`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBLogFiles.html) action.

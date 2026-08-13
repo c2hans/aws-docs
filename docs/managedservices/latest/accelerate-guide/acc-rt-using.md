@@ -292,7 +292,7 @@ You can see which version of configuration is deployed to your account by viewin
 
 ****To override tag rules:
 
-Any of the existing tag rules can be overridden by updating the customization profile either with CloudFormation by [Deploying a configuration profile with CloudFormation for Accelerate](acc-tag-cf-ex-deploy-config.md) or, or directly using using AppConfig’s [https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_CreateHostedConfigurationVersion.html](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_CreateHostedConfigurationVersion.html) API. Using the same **ConfigurationID** as a default configuration tag rule overrides the default rule, and applies the custom rule in its place.
+Any of the existing tag rules can be overridden by updating the customization profile either with CloudFormation by [Deploying a configuration profile with CloudFormation for Accelerate](acc-tag-cf-ex-deploy-config.md) or, or directly using using AppConfig’s [**CreateHostedConfigurationVersion**](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_CreateHostedConfigurationVersion.html) API. Using the same **ConfigurationID** as a default configuration tag rule overrides the default rule, and applies the custom rule in its place.
 
 To deploy changes made to the **CustomerManagedTags** document:
 

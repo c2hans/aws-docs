@@ -110,17 +110,17 @@ aws lambda put-runtime-management-config \
 1. Choose the **Versions** tab, choose the version number link that corresponds to your ARN, and choose the **Code** tab.
 
 1. Scroll down to **Runtime settings**, expand **Runtime management configuration**, and copy the the **Runtime version ARN** .
-![Shows the Runtime settings section of the screen, and shows where the Runtime version ARN appears in this section.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/SyntheticsManual1.png)
+![Runtime settings section showing where the Runtime version ARN appears.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/SyntheticsManual1.png)
 
 1. Choose **Edit runtime management configuration**, choose ** Manual**, paste the runtime version ARN that you copied earlier into the **Runtime version ARN** field. Then choose **Save**.
-![Shows the Runtime management configuration screen, and shows where the to paste the Runtime version ARN that you previousl copied..](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/SyntheticsManual2.png)
+![Runtime management configuration screen showing where to paste the Runtime version ARN.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/SyntheticsManual2.png)
 
 ## My canary is blocked by AWS WAF
 <a name="Canary_Blocked_WAF"></a>
 
 To allow canary traffic through AWS WAF,create a AWS WAF string match condition that allows a custom string that you specify. For more information, see [Working with string match conditions ](https://docs.aws.amazon.com/waf/latest/developerguide/classic-web-acl-string-conditions.html) in the AWS WAF documentation.
 
-We strongly recommend that you use your own custom user-agent string instead of using default values. This provides better control over AWS WAF filtering and improves security.
+It is strongly recommend that you use your own custom user-agent string instead of using default values. This provides better control over AWS WAF filtering and improves security.
 
 To set a custom user-agent string, do the following:
 + For Playwright runtimes, you can append your AWS WAF approved custom user-agent string using the Synthetics configuration file. For more information, see [CloudWatch Synthetics configurations](Synthetics_WritingCanary_Nodejs_Playwright.md#Synthetics_canary_configure_Playwright_script).
@@ -185,7 +185,7 @@ If you recently upgraded the canary from runtime version `syn-1.0` to a later ve
 If you recently downgraded the canary to an older runtime version, check to make sure that the CloudWatch Synthetics functions that you are using are available in the older runtime version that you downgraded to. For example, the `executeHttpStep` function is available for runtime version `syn-nodejs-2.2` and later. To check on the availability of functions, see [Writing a canary script](CloudWatch_Synthetics_Canaries_WritingCanary.md).
 
 **Note**
-When you plan to upgrade or downgrade the runtime version for a canary, we recommend that you first clone the canary and update the runtime version in the cloned canary. Once you have verified that the clone with the new runtime version works, you can update the runtime version of your original canary and delete the clone.
+When you plan to upgrade or downgrade the runtime version for a canary, we recommend that you first clone the canary and update the runtime version in the cloned canary. After you have verified that the clone with the new runtime version works, you can update the runtime version of your original canary and delete the clone.
 
 ## Cross-origin request sharing (CORS) issue
 <a name="CloudWatch_Synthetics_Canaries_CORS"></a>
@@ -206,7 +206,7 @@ You can override launch parameters used by CloudWatch Synthetics when you use ru
 ## Canary race condition issues
 <a name="CloudWatch_Synthetics_Canaries_RaceCondition"></a>
 
-For the best experience when using CloudWatch Synthetics, ensure that the code written for the canaries is idempotent. Otherwise, in rare cases, canary runs may encounter race conditions when the canary interacts with the same resource across different runs.
+For the best experience when using CloudWatch Synthetics, make sure that the code written for the canaries is idempotent. Otherwise, in rare cases, canary runs may encounter race conditions when the canary interacts with the same resource across different runs.
 
 ## Troubleshooting a canary on a VPC
 <a name="CloudWatch_Synthetics_Canaries_VPC_troubleshoot"></a>

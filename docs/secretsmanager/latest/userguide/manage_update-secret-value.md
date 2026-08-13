@@ -21,7 +21,7 @@ To update the value of your secret, you can use the console, the CLI, or an SDK.
 **To update the secret value (AWS CLI)**
 + When you enter commands in a command shell, there is a risk of the command history being accessed or utilities having access to your command parameters. See [Mitigate the risks of using the AWS CLI to store your AWS Secrets Manager secrets](security_cli-exposure-risks.md).
 
-  The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/put-secret-value.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/put-secret-value.html) creates a new version of a secret with two key-value pairs.
+  The following [`put-secret-value`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/put-secret-value.html) creates a new version of a secret with two key-value pairs.
 
   ```
   aws secretsmanager put-secret-value \
@@ -29,7 +29,7 @@ To update the value of your secret, you can use the console, the CLI, or an SDK.
         --secret-string "{\"user\":\"diegor\",\"password\":\"EXAMPLE-PASSWORD\"}"
   ```
 
-  The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/put-secret-value.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/put-secret-value.html) creates a new version with a custom staging label. The new version will have the labels `MyLabel` and `AWSCURRENT`.
+  The following [`put-secret-value`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/put-secret-value.html) creates a new version with a custom staging label. The new version will have the labels `MyLabel` and `AWSCURRENT`.
 
   ```
   aws secretsmanager put-secret-value \
@@ -43,4 +43,4 @@ To update the value of your secret, you can use the console, the CLI, or an SDK.
 
 We recommend you avoid calling `PutSecretValue` or `UpdateSecret` at a sustained rate of more than once every 10 minutes. When you call `PutSecretValue` or `UpdateSecret` to update the secret value, Secrets Manager creates a new version of the secret. Secrets Manager removes unlabeled versions when there are more than 100, but it does not remove versions created less than 24 hours ago. If you update the secret value more than once every 10 minutes, you create more versions than Secrets Manager removes, and you will reach the quota for secret versions.
 
-To update a secret value, use the following actions: [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_UpdateSecret.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_UpdateSecret.html) or [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_PutSecretValue.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_PutSecretValue.html). For more information, see [AWS SDKs](asm_access.md#asm-sdks).
+To update a secret value, use the following actions: [`UpdateSecret`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_UpdateSecret.html) or [`PutSecretValue`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_PutSecretValue.html). For more information, see [AWS SDKs](asm_access.md#asm-sdks).

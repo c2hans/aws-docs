@@ -29,7 +29,7 @@ aws configure set aws_session_token "{{$sessionToken}}" --profile {{access-grant
 To use the following example command, replace the `{{user input placeholders}}` with your own information.
 
 **Example – Get the S3 data**
-The grantee can use the [https://docs.aws.amazon.com/cli/latest/reference/s3api/get-object.html](https://docs.aws.amazon.com/cli/latest/reference/s3api/get-object.html) AWS CLI command to access the data. The grantee can also use [https://docs.aws.amazon.com/cli/latest/reference/s3api/put-object.html](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-object.html), [https://docs.aws.amazon.com/cli/latest/reference/s3/ls.html](https://docs.aws.amazon.com/cli/latest/reference/s3/ls.html), and other S3 AWS CLI commands.
+The grantee can use the [get-object](https://docs.aws.amazon.com/cli/latest/reference/s3api/get-object.html) AWS CLI command to access the data. The grantee can also use [put-object](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-object.html), [ls](https://docs.aws.amazon.com/cli/latest/reference/s3/ls.html), and other S3 AWS CLI commands.
 
 ```
 aws s3api get-object \

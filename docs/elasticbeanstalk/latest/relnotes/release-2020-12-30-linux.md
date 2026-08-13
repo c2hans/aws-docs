@@ -17,14 +17,25 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **December 23, 2020** to all Amazon Linux AMI platforms.<br />The **Go** and **Node.js** releases include security fixes. For more information, see **Platform-specific updates** in this table. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-12-30-linux.html) |
-| **Go** | Updated Go to release 1.15.6. For details, see [go1.15](https://golang.org/doc/devel/release.html#go1.15) in *The Go Programming Language Release History*.<br />The **Go 1.15.5** release, which is part of the update, includes security fixes. |
-| **Node.js** | Updated the Node.js platform to add support for Node versions [12.20.0](https://nodejs.org/en/blog/release/v12.20.0/) and [12.19.1](https://nodejs.org/en/blog/release/v12.19.1/).<br />The **Node.js 12.19.1** release includes security fixes. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>December 23, 2020</b> to all Amazon Linux AMI platforms.<br />The <b>Go</b> and <b>Node.js</b> releases include security fixes. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Go</b></td><td>Updated Go to release 1.15.6. For details, see <a href="https://golang.org/doc/devel/release.html#go1.15">go1.15</a> in <i>The Go Programming Language Release History</i>.<br />The <b>Go 1.15.5</b> release, which is part of the update, includes security fixes.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform to add support for Node versions <a href="https://nodejs.org/en/blog/release/v12.20.0/">12.20.0</a> and <a href="https://nodejs.org/en/blog/release/v12.19.1/">12.19.1</a>.<br />The <b>Node.js 12.19.1</b> release includes security fixes.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2020-12-30-linux.platforms"></a>

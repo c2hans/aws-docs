@@ -90,7 +90,7 @@ You can work with DynamoDB Service Quotas in the following ways:
   ```
 
 **To view the applied quota values:**
-+ Call the [https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_ListServiceQuotas.html](https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_ListServiceQuotas.html) operation with the DynamoDB service code (dynamodb) to retrieve all applied quota values either at the account-level, resource-level, or all levels by passing `ACCOUNT`, `RESOURCE`, or `ALL` respectively as the value for the parameter `QuotaAppliedAtLevel`. The following CLI example retrieves quota values applied at the account-level.
++ Call the [`ListServiceQuotas`](https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_ListServiceQuotas.html) operation with the DynamoDB service code (dynamodb) to retrieve all applied quota values either at the account-level, resource-level, or all levels by passing `ACCOUNT`, `RESOURCE`, or `ALL` respectively as the value for the parameter `QuotaAppliedAtLevel`. The following CLI example retrieves quota values applied at the account-level.
 
   ```
   $ aws service-quotas list-service-quotas \

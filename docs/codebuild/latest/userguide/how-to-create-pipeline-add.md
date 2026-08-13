@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/how-to-create
 1. Sign in to the AWS Management Console by using:
    + Your AWS root account. This is not recommended. For more information, see [The account root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) in the *user Guide*.
    + An administrator user in your AWS account. For more information, see [Creating your first AWS account root user and group](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html) in the *user Guide*.
-   + An user in your AWS account with permission to perform the following minimum set of actions:
+   + A user in your AWS account with permission to perform the following minimum set of actions:
 
      ```
      codepipeline:*

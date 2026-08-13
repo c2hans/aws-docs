@@ -29,7 +29,7 @@ We also provide more granular policies that allow you to integrate your environm
 + **AWSElasticBeanstalkRoleCore** – Allows core operations of a web service environment.
 + **AWSElasticBeanstalkRoleSNS** – Allows an environment to enable Amazon SNS topic integration.
 
-To see the JSON source for a specific managed policy, see the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html).
+To see the JSON source for a specific managed policy, see the [*AWS Managed Policy Reference Guide*](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html).
 
 ## Controlling access with managed policies
 <a name="iam-userpolicies-managed"></a>
@@ -66,7 +66,7 @@ An IAM policy contains policy statements that describe the permissions that you 
 + **Effect** specifies whether to allow or deny the actions in the statement.
 + **Action** specifies the [API operations](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Operations.html) that you want to control. For example, use `elasticbeanstalk:CreateEnvironment` to specify the `CreateEnvironment` operation. Certain operations, such as creating an environment, require additional permissions to perform those actions. For more information, see [Resources and conditions for Elastic Beanstalk actions](AWSHowTo.iam.policies.actions.md).
 **Note**
-To use the [https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_UpdateTagsForResource.html](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_UpdateTagsForResource.html) API operation, specify one of the following two virtual actions (or both) instead of the API operation name:
+To use the [`UpdateTagsForResource`](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_UpdateTagsForResource.html) API operation, specify one of the following two virtual actions (or both) instead of the API operation name:
 
 `elasticbeanstalk:AddTags`
 Controls permission to call `UpdateTagsForResource` and pass a list of tags to add in the `TagsToAdd` parameter.

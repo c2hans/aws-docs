@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/managed-tier-checkpo
 
 This section explains how to disable managed tiered checkpointing when you no longer need it.
 
-To disable managed tiered checkpointing, use the [https://docs.aws.amazon.com/cli/latest/reference/sagemaker/update-cluster.html](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/update-cluster.html) AWS CLI to update your cluster configuration:
+To disable managed tiered checkpointing, use the [`update-cluster`](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/update-cluster.html) AWS CLI to update your cluster configuration:
 
 ```
 aws sagemaker update-cluster \

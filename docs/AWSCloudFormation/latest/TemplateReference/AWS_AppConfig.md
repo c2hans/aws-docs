@@ -13,6 +13,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::AppConfig::Deployment](aws-resource-appconfig-deployment.md)
 + [AWS::AppConfig::DeploymentStrategy](aws-resource-appconfig-deploymentstrategy.md)
 + [AWS::AppConfig::Environment](aws-resource-appconfig-environment.md)
++ [AWS::AppConfig::ExperimentDefinition](aws-resource-appconfig-experimentdefinition.md)
 + [AWS::AppConfig::Extension](aws-resource-appconfig-extension.md)
 + [AWS::AppConfig::ExtensionAssociation](aws-resource-appconfig-extensionassociation.md)
 + [AWS::AppConfig::HostedConfigurationVersion](aws-resource-appconfig-hostedconfigurationversion.md)

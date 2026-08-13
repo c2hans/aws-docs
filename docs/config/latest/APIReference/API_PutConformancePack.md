@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PutConfor
 # PutConformancePack
 <a name="API_PutConformancePack"></a>
 
-Creates or updates a conformance pack. A conformance pack is a collection of AWS Config rules that can be easily deployed in an account and a region and across an organization. For information on how many conformance packs you can have per account, see [https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html](https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html) in the * AWS Config Developer Guide*.
+Creates or updates a conformance pack. A conformance pack is a collection of AWS Config rules that can be easily deployed in an account and a region and across an organization. For information on how many conformance packs you can have per account, see [**Service Limits**](https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html) in the * AWS Config Developer Guide*.
 
 **Important**
 When you use `PutConformancePack` to deploy conformance packs in your account, the operation can create AWS Config rules and remediation actions without requiring `config:PutConfigRule` or `config:PutRemediationConfigurations` permissions in your account IAM policies.
@@ -157,7 +157,7 @@ One or more of the specified parameters are not valid. Verify that your paramete
 HTTP Status Code: 400
 
  ** MaxNumberOfConformancePacksExceededException **
-You have reached the limit of the number of conformance packs you can create in an account. For more information, see [https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html](https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html) in the * AWS Config Developer Guide*.
+You have reached the limit of the number of conformance packs you can create in an account. For more information, see [**Service Limits**](https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html) in the * AWS Config Developer Guide*.
 HTTP Status Code: 400
 
  ** ResourceInUseException **

@@ -11,27 +11,27 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 The AWS Marketplace Single Pane of Glass (SPG) dashboard delivers comprehensive procurement insights through an interactive, out-of-the-box Amazon Quick Sight interface. Designed for AWS Marketplace buyers, this solution offers detailed visibility into third-party software subscriptions, including AI Agents, data products, and professional services. Users can access visualizations spanning all AWS Marketplace offerings, encompassing both self-service public offers and custom seller private offers. The dashboard provides detailed analytics on AWS Marketplace spend and usage across multiple AWS Organizations, displays software license grants and entitlements, and surfaces critical agreement information such as "Deployed on AWS" badge status and contract terms. This unified view enables procurement teams to monitor and analyze their AWS Marketplace investments effectively.
 
 The dashboard has five tabs:
-+  [https://cid.workshops.aws.dev/demo/?dashboard=aws-marketplace](https://cid.workshops.aws.dev/demo/?dashboard=aws-marketplace):
++  [**Spend Summary**](https://cid.workshops.aws.dev/demo/?dashboard=aws-marketplace):
   + AWS Marketplace Cumulative Spend by Seller
   + AWS Marketplace Cumulative Spend by Product
   + AWS Marketplace Spend by Seller
   + AWS Marketplace Spend and Usage by Seller Product
   + Marketplace Invoice Tracker
-+  [https://cid.workshops.aws.dev/demo?dashboard=aws-marketplace&sheet=Spend%20Deep%20Dive](https://cid.workshops.aws.dev/demo?dashboard=aws-marketplace&sheet=Spend%20Deep%20Dive):
++  [**Spend Deep Dive**](https://cid.workshops.aws.dev/demo?dashboard=aws-marketplace&sheet=Spend%20Deep%20Dive):
   + Spend by Product
   + Spend by AWS Account ID
   + Spend Mapping by Seller
   + Spend Details by Invoice
-+  [https://cid.workshops.aws.dev/demo?dashboard=aws-marketplace&sheet=Bedrock%203P%20FM%20Spend](https://cid.workshops.aws.dev/demo?dashboard=aws-marketplace&sheet=Bedrock%203P%20FM%20Spend)
++  [**Bedrock 3P Foundational Model (FM) Spend**](https://cid.workshops.aws.dev/demo?dashboard=aws-marketplace&sheet=Bedrock%203P%20FM%20Spend)
   + 3P FM Spend by Seller
   + Spend and Usage by FM Product
-+  [https://cid.workshops.aws.dev/demo/?dashboard=aws-marketplace&sheet=Granted%20and%20Entitled%20Licenses](https://cid.workshops.aws.dev/demo/?dashboard=aws-marketplace&sheet=Granted%20and%20Entitled%20Licenses)
++  [**Granted and Entitled Licenses**](https://cid.workshops.aws.dev/demo/?dashboard=aws-marketplace&sheet=Granted%20and%20Entitled%20Licenses)
   + Upcoming Contract Expirations
   + Org View of Licenses
   + License Summary by Product
   + License Grant and Sharing Details
   + Product mapping to License Grants
-+  [https://cid.workshops.aws.dev/demo/?dashboard=aws-marketplace&sheet=Marketplace%20Agreements](https://cid.workshops.aws.dev/demo/?dashboard=aws-marketplace&sheet=Marketplace%20Agreements)
++  [**Marketplace Agreements**](https://cid.workshops.aws.dev/demo/?dashboard=aws-marketplace&sheet=Marketplace%20Agreements)
   + Active Agreement Count by Deployment Status
   + Active Agreement Value by Deployment Status
   + Agreement Information
@@ -72,7 +72,7 @@ Get more familiar with the Dashboard using the live, interactive demo dashboard 
 
 1. Click the Launch Stack button below to open the **pre-populated stack template** in your CloudFormation.
 
-    [https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://aws-managed-cost-intelligence-dashboards.s3.amazonaws.com/cfn/cid-plugin.yml&stackName=AWS-Marketplace-SPG-Dashboard&param_DashboardId=aws-marketplace&param_RequiresDataCollection=yes](https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://aws-managed-cost-intelligence-dashboards.s3.amazonaws.com/cfn/cid-plugin.yml&stackName=AWS-Marketplace-SPG-Dashboard&param_DashboardId=aws-marketplace&param_RequiresDataCollection=yes)
+    [![Launch Stack button](http://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/LaunchStack.svg)](https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://aws-managed-cost-intelligence-dashboards.s3.amazonaws.com/cfn/cid-plugin.yml&stackName=AWS-Marketplace-SPG-Dashboard&param_DashboardId=aws-marketplace&param_RequiresDataCollection=yes)
 
 1. You can change **Stack name** for your template if you wish.
 

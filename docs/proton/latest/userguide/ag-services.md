@@ -11,7 +11,7 @@ An AWS Proton service is an instantiation of a service template, normally includ
 
 After you deploy your service instances, you can update them by source code pushes that prompt the CI/CD pipeline or by updating the service to new versions of its service template. AWS Proton prompts you when new versions of its service template become available so you can update your services to a new version. When your service is updated, AWS Proton re-deploys the service and service instances.
 
-This chapter shows how to manage services by using create, view, update and delete operations. For additional information, see the [https://docs.aws.amazon.com/proton/latest/APIReference/Welcome.html](https://docs.aws.amazon.com/proton/latest/APIReference/Welcome.html).
+This chapter shows how to manage services by using create, view, update and delete operations. For additional information, see the [*The AWS Proton Service API Reference*](https://docs.aws.amazon.com/proton/latest/APIReference/Welcome.html).
 
 **Topics**
 + [Create a service](ag-create-svc.md)

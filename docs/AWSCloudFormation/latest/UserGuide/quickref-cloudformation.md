@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quick
 
 This example template contains a nested stack resource called `myStack`. When CloudFormation creates a stack from the template, it creates the `myStack`, whose template is specified in the `TemplateURL` property. The output value `StackRef` returns the stack ID for `myStack` and the value `OutputFromNestedStack` returns the output value `BucketName` from within the `myStack` resource. The `Outputs.{{nestedstackoutputname}}` format is reserved for specifying output values from nested stacks and can be used anywhere within the containing template.
 
-For more information, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-stack.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-stack.html).
+For more information, see [AWS::CloudFormation::Stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-stack.html).
 
 #### JSON
 <a name="quickref-cloudformation-example-1.json"></a>
@@ -66,7 +66,7 @@ For more information, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/
 
 This example template contains a stack resource that specifies input parameters. When CloudFormation creates a stack from this template, it uses the value pairs declared within the `Parameters` property as the input parameters for the template used to create the `myStackWithParams` stack. In this example, the `InstanceType` and `KeyName` parameters are specified.
 
-For more information, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-stack.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-stack.html).
+For more information, see [AWS::CloudFormation::Stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-stack.html).
 
 #### JSON
 <a name="quickref-cloudformation-example-2.json"></a>

@@ -24,15 +24,15 @@ The *AWS SDKs and Tools Reference Guide* has information on SDK configuration se
 
 To authenticate with AWS, the AWS SDK for JavaScript checks the credential providers in the order listed in the following table.
 
-- **[https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromenv](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromenv) **
+- **[`fromEnv()`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromenv) **
   - **Credential provider(s) available:** AWS access keys from environment variables
   - ***AWS SDKs and Tools Reference Guide*:** [AWS access keys](https://docs.aws.amazon.com/sdkref/latest/guide/feature-static-credentials.html)
 
-- **[https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromsso](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromsso)**
+- **[`fromSSO()`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromsso)**
   - **Credential provider(s) available:** AWS IAM Identity Center. In this guide, see [SDK authentication with AWS](getting-your-credentials.md).
   - ***AWS SDKs and Tools Reference Guide*:** [IAM Identity Center credential provider](https://docs.aws.amazon.com/sdkref/latest/guide/feature-sso-credentials.html)
 
-- ** [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromini](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromini) **
+- ** [`fromIni()`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromini) **
   - **Credential provider(s) available:** AWS access keys from shared `config` and `credentials` files / ***AWS SDKs and Tools Reference Guide*:** [AWS access keys](https://docs.aws.amazon.com/sdkref/latest/guide/feature-static-credentials.html)
   - **Credential provider(s) available:** Trusted entity provider (such as `AWS_ROLE_ARN`) / ***AWS SDKs and Tools Reference Guide*:** [Assume an IAM role](https://docs.aws.amazon.com/sdkref/latest/guide/feature-assume-role-credentials.html#credOrSourceAssumeRole)
   - **Credential provider(s) available:** Web identity token from AWS Security Token Service (AWS STS) / ***AWS SDKs and Tools Reference Guide*:** [Federate with web identity or OpenID Connect](https://docs.aws.amazon.com/sdkref/latest/guide/feature-assume-role-credentials.html#webidentity)
@@ -42,23 +42,23 @@ To authenticate with AWS, the AWS SDK for JavaScript checks the credential provi
   - **Credential provider(s) available:** AWS IAM Identity Center / ***AWS SDKs and Tools Reference Guide*:** [IAM Identity Center credential provider](https://docs.aws.amazon.com/sdkref/latest/guide/feature-sso-credentials.html)
   - **Credential provider(s) available:** Login credentials provider / ***AWS SDKs and Tools Reference Guide*:** [Login credentials provider](https://docs.aws.amazon.com/sdkref/latest/guide/access-login.html)
 
-- ** [https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromlogincredentials](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromlogincredentials) **
+- ** [`fromLoginCredentials()`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromlogincredentials) **
   - **Credential provider(s) available:** Login credentials provider
   - ***AWS SDKs and Tools Reference Guide*:** [Login credentials provider](https://docs.aws.amazon.com/sdkref/latest/guide/access-login.html)
 
-- **[https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromprocess](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromprocess)**
+- **[`fromProcess()`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromprocess)**
   - **Credential provider(s) available:** Process credential provider
   - ***AWS SDKs and Tools Reference Guide*:** [Process credential provider](https://docs.aws.amazon.com/sdkref/latest/guide/feature-process-credentials.html)
 
-- **[https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromtokenfile](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromtokenfile)**
+- **[`fromTokenFile()`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromtokenfile)**
   - **Credential provider(s) available:** Web identity token from AWS Security Token Service (AWS STS)
   - ***AWS SDKs and Tools Reference Guide*:** [Federate with web identity or OpenID Connect](https://docs.aws.amazon.com/sdkref/latest/guide/feature-assume-role-credentials.html#webidentity)
 
-- **[https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromcontainermetadata-and-frominstancemetadata](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromcontainermetadata-and-frominstancemetadata)**
+- **[`fromContainerMetadata()`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromcontainermetadata-and-frominstancemetadata)**
   - **Credential provider(s) available:** Amazon Elastic Container Service (Amazon ECS) credentials
   - ***AWS SDKs and Tools Reference Guide*:** [Container credential provider](https://docs.aws.amazon.com/sdkref/latest/guide/feature-container-credentials.html)
 
-- **[https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromcontainermetadata-and-frominstancemetadata](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromcontainermetadata-and-frominstancemetadata)**
+- **[`fromInstanceMetadata()`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/#fromcontainermetadata-and-frominstancemetadata)**
   - **Credential provider(s) available:** Amazon Elastic Compute Cloud (Amazon EC2) instance profile credentials (IMDS credential provider)
   - ***AWS SDKs and Tools Reference Guide*:** [IMDS credential provider](https://docs.aws.amazon.com/sdkref/latest/guide/feature-imds-credentials.html)
 

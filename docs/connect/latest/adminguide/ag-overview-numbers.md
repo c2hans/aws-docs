@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ag-overview-nu
 # Set up contact center phone numbers for your Connect Customer instance
 <a name="ag-overview-numbers"></a>
 
-After you create an Connect Customer instance, you can get a phone number to use for your contact center. You can use this phone number to place a test call in to your contact center to confirm that it is working correctly. You can also use it in your production environment.
+After you create a Connect Customer instance, you can get a phone number to use for your contact center. You can use this phone number to place a test call in to your contact center to confirm that it is working correctly. You can also use it in your production environment.
 + For pricing information about claimed phone numbers, see [Connect Customer pricing](https://aws.amazon.com/connect/pricing/).
 + For a list of the telephony capabilities that Connect Customer provides, see the [Connect Customer Telecoms Country Coverage Guide](https://d1v2gagwb6hfe1.cloudfront.net/Amazon_Connect_Telecoms_Coverage.pdf).
 

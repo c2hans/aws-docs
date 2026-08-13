@@ -17,15 +17,26 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **February 24, 2021** to all Amazon Linux AMI platforms.<br />The **Node.js** release is a security release. For more information, see **Platform-specific updates** in this table. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2021-03-01-linux.html) |
-| **Multicontainer Docker** | Updated the ECS agent to version 1.50.2. |
-| **Go** | Updated Go to release 1.16. For details, see [go1.16](https://golang.org/doc/devel/release.html#go1.16) in *The Go Programming Language Release History*. |
-| **Node.js** | Updated the Node.js platform to add support for Node versions [12.21.0](https://nodejs.org/en/blog/release/v12.21.0/), [12.20.2](https://nodejs.org/en/blog/release/v12.20.2/), [10.24.0](https://nodejs.org/en/blog/release/v10.24.0/), [10.23.3](https://nodejs.org/en/blog/release/v10.23.3/), and [10.23.2](https://nodejs.org/en/blog/release/v10.23.2/).<br />The new Node.js versions are security releases. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>February 24, 2021</b> to all Amazon Linux AMI platforms.<br />The <b>Node.js</b> release is a security release. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Multicontainer Docker</b></td><td>Updated the ECS agent to version 1.50.2.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated Go to release 1.16. For details, see <a href="https://golang.org/doc/devel/release.html#go1.16">go1.16</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform to add support for Node versions <a href="https://nodejs.org/en/blog/release/v12.21.0/">12.21.0</a>, <a href="https://nodejs.org/en/blog/release/v12.20.2/">12.20.2</a>, <a href="https://nodejs.org/en/blog/release/v10.24.0/">10.24.0</a>, <a href="https://nodejs.org/en/blog/release/v10.23.3/">10.23.3</a>, and <a href="https://nodejs.org/en/blog/release/v10.23.2/">10.23.2</a>.<br />The new Node.js versions are security releases.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2021-03-01-linux.platforms"></a>

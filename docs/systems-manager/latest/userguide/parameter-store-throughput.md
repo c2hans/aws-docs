@@ -116,7 +116,7 @@ Throughput operates independently of parameter tiers. Whereas parameter tiers co
 
 For example, to support simple and low-load applications, you can use standard parameters with default throughput. To support large-scale, high-frequency access patterns, you can combine advanced parameters with higher throughput. In general, increasing throughput is necessary when your application exceeds default TPS limits (for example, during bursts of concurrent reads or writes), regardless of which parameter tier you use.
 
-For more information about maximum throughput and other Parameter Store quotas, see [AWS Systems Manager endpoints and quotas](https://docs.aws.amazon.com//general/latest/gr/ssm.html#limits_ssm).
+For more information about maximum throughput and other Parameter Store quotas, see [AWS Systems Manager endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/ssm.html#limits_ssm).
 
 ## Changing the throughput setting in Parameter Store
 <a name="parameter-store-throughput-increasing"></a>

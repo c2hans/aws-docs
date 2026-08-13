@@ -19,7 +19,7 @@ Endpoint values should be a string in the format:
 ## Endpoints for the ap-northeast-3 Region
 <a name="w2aac16c25c11"></a>
 
-The `ap-northeast-3` Region in Japan is not returned by Region enumeration APIs, such as [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#describeRegions-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#describeRegions-property). To define endpoints for this Region, follow the format described previously. So the Amazon EC2 endpoint for this Region would be
+The `ap-northeast-3` Region in Japan is not returned by Region enumeration APIs, such as [`EC2.describeRegions`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#describeRegions-property). To define endpoints for this Region, follow the format described previously. So the Amazon EC2 endpoint for this Region would be
 
  `ec2.ap-northeast-3.amazonaws.com`
 
@@ -40,8 +40,8 @@ mcClient.getJob(getJobParams, function(err, data)) {
 };
 ```
 
-To get your account API endpoint, see [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#describeEndpoints-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#describeEndpoints-property) in the API Reference.
+To get your account API endpoint, see [`MediaConvert.describeEndpoints`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html#describeEndpoints-property) in the API Reference.
 
 Make sure you specify the same Region in your code as the Region in the custom endpoint URI. A mismatch between the Region setting and the custom endpoint URI can cause API calls to fail.
 
-For more information on MediaConvert, see the [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html) class in the API Reference or the * [AWS Elemental MediaConvert User Guide](https://docs.aws.amazon.com/mediaconvert/latest/ug/) *.
+For more information on MediaConvert, see the [`AWS.MediaConvert`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html) class in the API Reference or the * [AWS Elemental MediaConvert User Guide](https://docs.aws.amazon.com/mediaconvert/latest/ug/) *.

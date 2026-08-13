@@ -53,15 +53,15 @@ You can log data events for the AWS IoT Greengrass resource types by using the C
 
   1. Choose the log selector template you want to use. You can log all data events for the resource type, log all `readOnly` events, log all `writeOnly` events, or create a custom log selector template to filter on the `readOnly`, `eventName`, and `resources.ARN` fields.
 + To log data events using the AWS CLI, configure the `--advanced-event-selectors` parameter to set the `eventCategory` field equal to `Data` and the `resources.type` field equal to the resource type value (see [table](#data-events-table)). You can add conditions to filter on the values of the `readOnly`, `eventName`, and `resources.ARN` fields.
-  + To configure a trail to log data events, run the [https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/put-event-selectors.html](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/put-event-selectors.html) command. For more information, see [Logging data events for trails with the AWS CLI](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html#logging-data-events-CLI-trail-examples).
-  + To configure an event data store to log data events, run the [https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/create-event-data-store.html](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/create-event-data-store.html) command to create a new event data store to log data events, or run the [https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/update-event-data-store.html](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/update-event-data-store.html) command to update an existing event data store. For more information, see [Logging data events for event data stores with the AWS CLI](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html#logging-data-events-CLI-eds-examples).
+  + To configure a trail to log data events, run the [put-event-selectors](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/put-event-selectors.html) command. For more information, see [Logging data events for trails with the AWS CLI](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html#logging-data-events-CLI-trail-examples).
+  + To configure an event data store to log data events, run the [create-event-data-store](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/create-event-data-store.html) command to create a new event data store to log data events, or run the [update-event-data-store](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/update-event-data-store.html) command to update an existing event data store. For more information, see [Logging data events for event data stores with the AWS CLI](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html#logging-data-events-CLI-eds-examples).
 
 The following table lists the AWS IoT Greengrass resource types. The **Data event type (console)** column shows the value to choose from the **Data event type** list on the CloudTrail console. The **resources.type value** column shows the `resources.type` value, which you would specify when configuring advanced event selectors using the AWS CLI or CloudTrail APIs. The **Data APIs logged to CloudTrail** column shows the API calls logged to CloudTrail for the resource type.
 
 | Data event type (console) | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
 | IoT certificate | AWS::IoT::Certificate |  +  VerifyClientDeviceIdentity <br />+  VerifyClientDeviceIoTCertificateAssociation   |
-| IoT Greengrass component version |  AWS::GreengrassV2::ComponentVersion  |  +  [https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ResolveComponentCandidates.html](https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ResolveComponentCandidates.html)   |
+| IoT Greengrass component version |  AWS::GreengrassV2::ComponentVersion  |  +  [ResolveComponentCandidates](https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ResolveComponentCandidates.html)   |
 | IoT Greengrass deployment |  AWS::GreengrassV2::Deployment  |  +  GetDeploymentConfiguration   |
 | IoT thing | AWS::IoT::Thing |  +  ListThingGroupsForCoreDevices <br />+  PutCertificateAuthorities <br />+  VerifyClientDeviceIoTCertificateAssociation   |
 
@@ -69,7 +69,7 @@ You can configure advanced event selectors to filter on the `eventName`, `readOn
 
 Add a filter on `eventName` to include or exclude specific data APIs.
 
-For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html).
+For more information about these fields, see [AdvancedFieldSelector](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html).
 
 The following examples show how to configure advanced selectors using the AWS CLI. Replace {{TrailName}} and {{region}} with your own information.
 

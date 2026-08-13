@@ -50,4 +50,4 @@ If you want to search only for files inside the tests directory and its subdirec
 codebuild-glob-search '**/__tests__/*.js'
 ```
 
-This command will search for all files with a `.js` extension inside the `__tests__`directory and its subdirectories, as denoted by the pattern.
+This command will search for all files with a `.js` extension inside the `__tests__` directory and its subdirectories, as denoted by the pattern.

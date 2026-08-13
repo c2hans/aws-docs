@@ -75,10 +75,10 @@ Use the Python Package Index (PyPI) to install the development plugin for the la
 
 |  Language  |  Plugin status  |  GitHub location  |  PyPI installation  |
 | --- | --- | --- | --- |
-| Go | General availability | [https://github.com/aws-cloudformation/cloudformation-cli-go-plugin/](https://github.com/aws-cloudformation/cloudformation-cli-go-plugin/) | `pip install cloudformation-cli-go-plugin` |
-| Java | General availability | [https://github.com/aws-cloudformation/cloudformation-cli-java-plugin/](https://github.com/aws-cloudformation/cloudformation-cli-java-plugin/) | `pip install cloudformation-cli-java-plugin` |
-| Python | General availability | [https://github.com/aws-cloudformation/cloudformation-cli-python-plugin/](https://github.com/aws-cloudformation/cloudformation-cli-python-plugin/) | `pip install cloudformation-cli-python-plugin` |
-| TypeScript | General availability | [https://github.com/aws-cloudformation/cloudformation-cli-typescript-plugin/](https://github.com/aws-cloudformation/cloudformation-cli-typescript-plugin/) | `pip install cloudformation-cli-typescript-plugin` |
+| Go | General availability | [cloudformation-cli-go-plugin](https://github.com/aws-cloudformation/cloudformation-cli-go-plugin/) | `pip install cloudformation-cli-go-plugin` |
+| Java | General availability | [cloudformation-cli-java-plugin](https://github.com/aws-cloudformation/cloudformation-cli-java-plugin/) | `pip install cloudformation-cli-java-plugin` |
+| Python | General availability | [cloudformation-cli-python-plugin](https://github.com/aws-cloudformation/cloudformation-cli-python-plugin/) | `pip install cloudformation-cli-python-plugin` |
+| TypeScript | General availability | [cloudformation-cli-typescript-plugin](https://github.com/aws-cloudformation/cloudformation-cli-typescript-plugin/) | `pip install cloudformation-cli-typescript-plugin` |
 
 ### Upgrading to CFN-CLI 2.0
 <a name="resource-type-setup-upgrade"></a>

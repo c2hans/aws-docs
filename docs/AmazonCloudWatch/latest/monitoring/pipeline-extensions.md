@@ -79,6 +79,6 @@ A pipeline can reference up to 10 different secrets.
 
 **Important**
 Consider the following when using secrets:
-Ensure the IAM role has appropriate permissions to access the secrets
+Make sure the IAM role has appropriate permissions to access the secrets
 Monitor secret access using AWS CloudTrail
 Use separate secrets for different environments (development, production)

@@ -18,11 +18,11 @@ AWS Support App has the following managed policies.
 ## AWS managed policy: AWSSupportAppFullAccess
 <a name="security-iam-awsmanpol-support-app-full-access"></a>
 
-You can use the [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSSupportAppFullAccess$jsonEditor](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSSupportAppFullAccess$jsonEditor) managed policy to grant the IAM role the permissions to your Slack channel configurations. You can also attach the AWSSupportAppFullAccess policy to your IAM entities.
+You can use the [AWSSupportAppFullAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSSupportAppFullAccess$jsonEditor) managed policy to grant the IAM role the permissions to your Slack channel configurations. You can also attach the AWSSupportAppFullAccess policy to your IAM entities.
 
 For more information, see [AWS Support App in Slack](aws-support-app-for-slack.md).
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportAppFullAccess.html#AWSSupportAppFullAccess-json.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportAppFullAccess.html#AWSSupportAppFullAccess-json.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AWSSupportAppFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportAppFullAccess.html#AWSSupportAppFullAccess-json.html) in the *AWS Managed Policy Reference*.
 
 **Permissions details**
 
@@ -36,9 +36,9 @@ For more information, see [Managing access to the AWS Support App](support-app-p
 ## AWS managed policy: AWSSupportAppReadOnlyAccess
 <a name="security-iam-support-app-read-only"></a>
 
-The [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSSupportAppReadOnlyAccess$jsonEditor](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSSupportAppReadOnlyAccess$jsonEditor) policy grants permissions that allow the entity to perform read-only AWS Support App actions. For more information, see [AWS Support App in Slack](aws-support-app-for-slack.md).
+The [AWSSupportAppReadOnlyAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSSupportAppReadOnlyAccess$jsonEditor) policy grants permissions that allow the entity to perform read-only AWS Support App actions. For more information, see [AWS Support App in Slack](aws-support-app-for-slack.md).
 
-To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportAppReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportAppReadOnlyAccess.html) in the *AWS Managed Policy Reference*.
+To view the permissions for this policy, see [AWSSupportAppReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportAppReadOnlyAccess.html) in the *AWS Managed Policy Reference*.
 
 **Permissions details**
 

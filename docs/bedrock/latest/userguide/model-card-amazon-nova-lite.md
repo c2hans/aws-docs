@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amaz
 ## Model Details
 <a name="model-card-amazon-nova-lite-details"></a>
 
-Nova Lite is Amazon's low-cost multimodal model that processes text, images, and video inputs for tasks like document analysis and visual Q&A. For more information about model development and performance, see the [model/service card](https://docs.aws.amazon.com/ai/responsible-ai/nova-micro-lite-pro/overview.html).
+Nova Lite is Amazon's low-cost multimodal model that processes text, images, and video inputs for tasks like document analysis and visual Q&A. For more information about model development and performance, see the [model/service card](ai/responsible-ai/nova-micro-lite-pro/overview.html).
 + **Model launch date:** Dec 05, 2024
 + **Model EOL date:** No sooner than 12/4/2025
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
@@ -20,7 +20,7 @@ Nova Lite is Amazon's low-cost multimodal model that processes text, images, and
 + **Max output tokens:** 5K
 + **Knowledge cutoff:** Oct 2024
 
-| **Input Modalities** | **Output Modalities** | **[APIs supported](https://docs.aws.amazon.com/bedrock/latest/userguide/apis.html)** | **[Endpoints supported](https://docs.aws.amazon.com/bedrock/latest/userguide/endpoints.html)** |
+| **Input Modalities** | **Output Modalities** | **[APIs supported](bedrock/latest/userguide/apis.html)** | **[Endpoints supported](bedrock/latest/userguide/endpoints.html)** |
 | --- | --- | --- | --- |
 | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) Audio | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) Embedding | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) Responses | ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) bedrock-runtime |
 | ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) Image | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) Image | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) Chat Completions | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) bedrock-mantle |
@@ -37,11 +37,11 @@ Nova Lite is Amazon's low-cost multimodal model that processes text, images, and
 
 | **Supported** | **Not Supported** |
 | --- | --- |
-|  + ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Response streaming](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Client-side tool calling](https://docs.aws.amazon.com/bedrock/latest/userguide/tool-use.html)  |  + ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Structured outputs](https://docs.aws.amazon.com/bedrock/latest/userguide/structured-outputs.html)  |
+|  + ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Response streaming](bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Guardrails](bedrock/latest/userguide/guardrails.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Client-side tool calling](bedrock/latest/userguide/tool-use.html)  |  + ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Structured outputs](bedrock/latest/userguide/structured-outputs.html)  |
 
 **Prompt caching using `bedrock-runtime` endpoint**
 
-For more information, see [Prompt caching for faster model inference](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html).
+For more information, see [Prompt caching for faster model inference](bedrock/latest/userguide/prompt-caching.html).
 
 | **Prompt caching supported** | **Min tokens per cache checkpoint** | **Max cache checkpoints per request** | **Supported TTL** | **Fields that accept prompt cache checkpoints** |
 | --- | --- | --- | --- | --- |
@@ -52,12 +52,12 @@ For more information, see [Prompt caching for faster model inference](https://do
 ## Pricing
 <a name="model-card-amazon-nova-lite-pricing"></a>
 
-For pricing, please refer to the [Amazon Bedrock Pricing](https://aws.amazon.com/bedrock/pricing/) page.
+For pricing information, see the [Amazon Bedrock Pricing](https://aws.amazon.com/bedrock/pricing/) page.
 
 ## Programmatic Access
 <a name="model-card-amazon-nova-lite-programmatic-access"></a>
 
-Use the following model IDs and endpoint URLs to access this model programmatically. For more information about the available APIs and endpoints, see [APIs supported](https://docs.aws.amazon.com/bedrock/latest/userguide/apis.html) and [Endpoints supported](https://docs.aws.amazon.com/bedrock/latest/userguide/endpoints.html).
+Use the following model IDs and endpoint URLs to access this model programmatically. For more information about the available APIs and endpoints, see [APIs supported](bedrock/latest/userguide/apis.html) and [Endpoints supported](bedrock/latest/userguide/endpoints.html).
 
 | **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Geo inference ID** | **Global inference ID** |
 | --- | --- | --- | --- | --- |
@@ -68,7 +68,7 @@ Use the following model IDs and endpoint URLs to access this model programmatica
 ## Service Tiers
 <a name="model-card-amazon-nova-lite-tiers"></a>
 
-Amazon Bedrock offers multiple service tiers to match your workload requirements. **Standard** provides pay-per-token access with no commitment. **Priority** offers higher throughput with a time-based commitment. **Flex** provides lower-cost access for flexible, non-time-sensitive workloads. **Reserved** provides dedicated throughput with a term commitment for predictable workloads. For more information, see [service tiers](https://docs.aws.amazon.com/bedrock/latest/userguide/service-tiers-inference.html).
+Amazon Bedrock offers multiple service tiers to match your workload requirements. **Standard** provides pay-per-token access with no commitment. **Priority** offers higher throughput with a time-based commitment. **Flex** provides lower-cost access for flexible, non-time-sensitive workloads. **Reserved** provides dedicated throughput with a term commitment for predictable workloads. For more information, see [service tiers](bedrock/latest/userguide/service-tiers-inference.html).
 
 | **Standard** | **Priority** | **Flex** | **Reserved** |
 | --- | --- | --- | --- |
@@ -131,7 +131,7 @@ Geo Inference ID: `eu.amazon.nova-lite-v1:0`
 ## Quotas and Limits
 <a name="model-card-amazon-nova-lite-quotas"></a>
 
-Your AWS account has default quotas to maintain the performance of the service and to ensure appropriate usage of Amazon Bedrock. The default quotas assigned to an account might be updated depending on regional factors, payment history, fraudulent usage, and/or approval of a quota [increase request](https://docs.aws.amazon.com/bedrock/latest/userguide/quotas-increase.html). For more details, please refer to [Quotas for Amazon Bedrock](quotas.md) documentation and see the [limits](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#limits_bedrock) for the model.
+Your AWS account has default quotas to maintain the performance of the service and to ensure appropriate usage of Amazon Bedrock. The default quotas assigned to an account might be updated depending on regional factors, payment history, fraudulent usage, and/or approval of a quota [increase request](bedrock/latest/userguide/quotas-increase.html). For more information, see [Quotas for Amazon Bedrock](quotas.md) documentation and see the [limits](general/latest/gr/bedrock.html#limits_bedrock) for the model.
 
 ## Sample Code
 <a name="model-card-amazon-nova-lite-sample-code"></a>

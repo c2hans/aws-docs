@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 # Rerunning automation executions
 <a name="automation-rerun-executions"></a>
 
-You can rerun AWS Systems Manager automation executions to repeat tasks with either identical or modified parameters. The rerun capability allows you to efficiently replicate automation executions without manually recreating automation configurations, reducing operational overhead and potential configuration errors.
+You can rerun AWS Systems Manager automation executions to repeat tasks with either identical or modified parameters. The rerun capability lets you efficiently replicate automation executions without manually recreating automation configurations, reducing operational overhead and potential configuration errors.
 
 When you rerun an automation execution, Systems Manager preserves the original runbook parameters, Amazon CloudWatch alarms, and tags from the previous execution. The system creates a new execution with a new execution ID and updated timestamps. You can rerun any type of automation execution, including simple executions, rate control executions, cross-account and cross-region executions, and manual executions.
 

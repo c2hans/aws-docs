@@ -56,7 +56,7 @@ These filters allow users to limit search results to specific administrative are
 POI category filters refine search results based on Points of Interest (POI) categories, such as specific business chains or food types.
 
 **Note**
-If you use [https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), values marked with an asterisk (\*) are not supported in the `ap-southeast-1` and `ap-southeast-5` AWS Regions.
+If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), values marked with an asterisk (\*) are not supported in the `ap-southeast-1` and `ap-southeast-5` AWS Regions.
 
 | Filter Type | Geocode | Reverse Geocode | Autocomplete | Get Place | Search Text | Search Nearby | Suggest |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -575,7 +575,7 @@ The food type filter feature in Amazon Location Service helps refine search resu
 To apply food type filters, use the Place APIs with the ``foodType`` parameter set to the desired cuisine. For more information about food type filters, see the Amazon Location Service [FoodType API reference](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_FoodType.html).
 
 **Note**
-If you use [https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support food type filters.
+If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support food type filters.
 
 | Name | FoodType ID |
 | --- | --- |
@@ -776,7 +776,7 @@ This section explains how to filter search results using business chain identifi
 The business chains filter enables focused search results by allowing users to specify one or more chain identifiers, useful for finding specific brand locations (for example, coffee shops, gas stations). Below is a list of supported business chains.
 
 **Note**
-If you use [https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support business chain filters.
+If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support business chain filters.
 
 **Business Chains**
 

@@ -128,7 +128,7 @@ Amazon S3 supports only symmetric encryption KMS keys, and not asymmetric KMS ke
 ### Using the AWS CLI
 <a name="UploadObjSingleOpCLI"></a>
 
-You can send a `PUT` request to upload an object of up to 5 GB in a single operation. For more information, see the [https://docs.aws.amazon.com/cli/latest/reference/s3api/put-object.html#examples](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-object.html#examples) example in the *AWS CLI Command Reference*.
+You can send a `PUT` request to upload an object of up to 5 GB in a single operation. For more information, see the [`PutObject`](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-object.html#examples) example in the *AWS CLI Command Reference*.
 
 ### Using the REST API
 <a name="UploadObjSingleOpREST"></a>
@@ -147,6 +147,6 @@ For general information about using different AWS SDKs, see [Developing with Ama
 
 You can check for the existence of an object in your bucket before creating it using a conditional write on upload operations. This can prevent overwrites of existing data. Conditional writes will validate there is no existing object with the same key name already in your bucket while uploading.
 
-You can use conditional writes for [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html) or [CompleteMultipartUpload](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html) requests.
+You can use conditional writes for [PutObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html) or [CompleteMultipartUpload](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html) requests.
 
 For more information about conditional requests see, [Add preconditions to S3 operations with conditional requests](conditional-requests.md).

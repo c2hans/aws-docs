@@ -227,7 +227,7 @@ Once you run this command, SnapMirror begins transferring snapshots of data from
    FSx-Dest::> snapmirror update -destination-path {{DestSVM}}:vol1
    ```
 
-1. You can also schedule hourly or daily updates prior to completing the migration and moving your clients to FSx for ONTAP. You can establish a SnapMirror update schedule using the [https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/snapmirror__modify.html](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/snapmirror__modify.html) command.
+1. You can also schedule hourly or daily updates prior to completing the migration and moving your clients to FSx for ONTAP. You can establish a SnapMirror update schedule using the [`snapmirror modify`](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/snapmirror__modify.html) command.
 
    ```
    FSx-Dest::> snapmirror modify -destination-path {{DestSVM}}:vol1 -schedule hourly

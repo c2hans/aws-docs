@@ -24,7 +24,7 @@ When using `secretsmanager` dynamic references, there are important consideratio
 + CloudFormation doesn't track which version of a secret was used in previous deployments. Plan your secret management strategy carefully before implementing dynamic references. Use versionless references when possible to leverage automatic secret rotation. Monitor and validate resource updates when making changes to dynamic reference configurations, such as when transitioning from unversioned to versioned dynamic references, and vice versa.
 + Updating only the secret value in Secrets Manager doesn't automatically cause CloudFormation to retrieve the new value. CloudFormation retrieves the secret value only during resource creation or updates that modify the resource containing the dynamic reference.
 
-  For example, suppose your template includes an [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbinstance.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbinstance.html) resource where the `MasterPassword` property is set to a Secrets Manager dynamic reference. After creating a stack from this template, you update the secret's value in Secrets Manager. However, the `MasterPassword` property retains the old password value.
+  For example, suppose your template includes an [AWS::RDS::DBInstance](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbinstance.html) resource where the `MasterPassword` property is set to a Secrets Manager dynamic reference. After creating a stack from this template, you update the secret's value in Secrets Manager. However, the `MasterPassword` property retains the old password value.
 
   To apply the new secret value, you'll need to modify the `AWS::RDS::DBInstance` resource in your CloudFormation template and perform a stack update.
 
@@ -35,7 +35,7 @@ When using `secretsmanager` dynamic references, there are important consideratio
 ## Permissions
 <a name="dynamic-references-secretsmanager-permissions"></a>
 
-To specify a secret stored in Secrets Manager, you must have permission to call [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html) for the secret.
+To specify a secret stored in Secrets Manager, you must have permission to call [GetSecretValue](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html) for the secret.
 
 ## Reference pattern
 <a name="dynamic-references-secretsmanager-pattern"></a>
@@ -78,7 +78,7 @@ This segment may not include the colon character ( `:`).
 ### Retrieving user name and password values from a secret
 <a name="dynamic-references-secretsmanager-examples-user-name-and-password"></a>
 
-The following [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbinstance.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbinstance.html) example retrieves the user name and password values stored in the `{{MySecret}}` secret. This example shows the recommended pattern for versionless dynamic references, which automatically uses the `AWSCURRENT` version and supports Secrets Manager rotation workflows without requiring template changes.
+The following [AWS::RDS::DBInstance](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbinstance.html) example retrieves the user name and password values stored in the `{{MySecret}}` secret. This example shows the recommended pattern for versionless dynamic references, which automatically uses the `AWSCURRENT` version and supports Secrets Manager rotation workflows without requiring template changes.
 
 #### JSON
 <a name="dynamic-references-secretsmanager-examples-user-name-and-password.json"></a>

@@ -234,7 +234,7 @@ For more information, see [Access AWS services through AWS PrivateLink](https://
 
 Before you set up an interface endpoint for AWS AppConfig, review [Considerations](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html#considerations-interface-endpoints) in the *AWS PrivateLink Guide*.
 
-AWS AppConfig supports making calls to the [https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Operations_Amazon_AppConfig.html](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Operations_Amazon_AppConfig.html) and [https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Operations_AWS_AppConfig_Data.html](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Operations_AWS_AppConfig_Data.html) services through the interface endpoint.
+AWS AppConfig supports making calls to the [`appconfig`](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Operations_Amazon_AppConfig.html) and [`appconfigdata`](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Operations_AWS_AppConfig_Data.html) services through the interface endpoint.
 
 ### Create an interface endpoint for AWS AppConfig
 <a name="vpc-endpoint-create"></a>

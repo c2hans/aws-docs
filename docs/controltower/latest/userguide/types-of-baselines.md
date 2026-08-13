@@ -96,7 +96,7 @@ When you enable a baseline on an OU, that configuration is inherited by the OU's
 
 **View an account's baseline status**
 
-AWS Control Tower does not allow you to target accounts directly with baselines. However, you can track the enablement and drift status of each member account by means of their inherited child enabled baselines. To view the status of your accounts, you can call the [https://docs.aws.amazon.com//controltower/latest/APIReference/API_ListEnabledBaselines.html](https://docs.aws.amazon.com//controltower/latest/APIReference/API_ListEnabledBaselines.html) API with the `includeChildren` feature flag.
+AWS Control Tower does not allow you to target accounts directly with baselines. However, you can track the enablement and drift status of each member account by means of their inherited child enabled baselines. To view the status of your accounts, you can call the [`ListEnabledBaselines`](https://docs.aws.amazon.com//controltower/latest/APIReference/API_ListEnabledBaselines.html) API with the `includeChildren` feature flag.
 
 **Disable an account's baseline**
 

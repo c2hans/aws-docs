@@ -107,7 +107,7 @@ The AWSSupport-TroubleshootRDP automation document can be used with EC2 instance
 #### AWSSupport-TroubleshootRDP examples
 <a name="AWSSupport-TroubleshootRDP-Examples"></a>
 
-The following examples show you how to accomplish common troubleshooting tasks using AWSSupport-TroubleshootRDP. You can use either the example AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/ssm/start-automation-execution.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/start-automation-execution.html) command or the provided link to the AWS Management Console.
+The following examples show you how to accomplish common troubleshooting tasks using AWSSupport-TroubleshootRDP. You can use either the example AWS CLI [start-automation-execution](https://docs.aws.amazon.com/cli/latest/reference/ssm/start-automation-execution.html) command or the provided link to the AWS Management Console.
 
 **Example: Check the current RDP status**  <a name="check-rdp"></a>
 AWS CLI:

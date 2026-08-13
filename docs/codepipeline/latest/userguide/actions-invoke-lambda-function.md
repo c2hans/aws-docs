@@ -27,7 +27,7 @@ This topic assumes you are familiar with AWS CodePipeline and AWS Lambda and kno
 + Test the action by manually releasing a change.
 
 **Note**
-When using cross-Region Lambda invoke action in CodePipeline, the status of the lambda execution using the [PutJobSuccessResult](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_PutJobSuccessResult.html) and [PutJobFailureResult](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_PutJobFailureResult.html) should be sent to the AWS Region where the Lambda function is present and not to the Region where CodePipeline exists.
+When using cross-region Lambda invoke action in CodePipeline, the status of the Lambda execution using the [PutJobSuccessResult](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_PutJobSuccessResult.html) and [PutJobFailureResult](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_PutJobFailureResult.html) should be sent to the AWS Region where the Lambda function is present and not to the Region where CodePipeline exists.
 
 This topic includes sample functions to demonstrate the flexibility of working with Lambda functions in CodePipeline:
 + [Basic Lambda function](#LambdaSample1)

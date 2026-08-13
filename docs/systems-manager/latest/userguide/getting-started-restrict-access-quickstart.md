@@ -202,7 +202,7 @@ Use this sample policy to give users the ability to start and resume sessions fr
 
 **Note**
 `SSM-SessionManagerRunShell` is the default name of the SSM document that Session Manager creates to store your session configuration preferences. You can create a custom Session document and specify it in this policy instead. You can also specify the AWS-provided document `AWS-StartSSHSession` for users who are starting sessions using SSH. For information about configuration steps needed to support sessions using SSH, see [(Optional) Allow and control permissions for SSH connections through Session Manager](session-manager-getting-started-enable-ssh-connections.md).
-The `kms:GenerateDataKey` permission enables the creation of a data encryption key that will be used to encrypt session data. If you will use AWS Key Management Service (AWS KMS) encryption for your session data, replace {{key-name}} with the Amazon Resource Name (ARN) of the KMS key you want to use, in the format `arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-12345EXAMPLE`. If you won't use KMS key encryption for your session data, remove the following content from the policy.
+The `kms:GenerateDataKey` permission enables the creation of a data encryption key that will be used to encrypt session data. If you use AWS Key Management Service (AWS KMS) encryption for your session data, replace {{key-name}} with the Amazon Resource Name (ARN) of the KMS key you want to use, in the format `arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-12345EXAMPLE`. If you won't use KMS key encryption for your session data, remove the following content from the policy.
 
 ```
 {
@@ -214,7 +214,7 @@ The `kms:GenerateDataKey` permission enables the creation of a data encryption k
         }
 ```
 For information about using AWS KMS for encrypting session data, see [Turn on KMS key encryption of session data (console)](session-preferences-enable-encryption.md).
-The permission for [https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_SendCommand.html](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_SendCommand.html) is needed for cases where a user attempts to start a session from the Amazon EC2 console, but the SSM Agent must be updated to the minimum required version for Session Manager first. Run Command is used to send a command to the instance to update the agent.
+The permission for [SendCommand](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_SendCommand.html) is needed for cases where a user attempts to start a session from the Amazon EC2 console, but the SSM Agent must be updated to the minimum required version for Session Manager first. Run Command is used to send a command to the instance to update the agent.
 
 ## Quickstart administrator policy for Session Manager
 <a name="restrict-access-quickstart-admin"></a>
@@ -458,4 +458,4 @@ Use this sample policy to give administrators the ability to perform session-rel
 ------
 
 **Note**
-The permission for [https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_SendCommand.html](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_SendCommand.html) is needed for cases where a user attempts to start a session from the Amazon EC2 console, but a command must be sent to update SSM Agent first.
+The permission for [SendCommand](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_SendCommand.html) is needed for cases where a user attempts to start a session from the Amazon EC2 console, but a command must be sent to update SSM Agent first.

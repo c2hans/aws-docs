@@ -45,7 +45,7 @@ aws service-quotas list-aws-default-service-quotas \
     --output table
 ```
 
-To work more with service quotas using the AWS CLI, see the Service Quotas section in the *AWS CLI Command Reference*. To request a quota increase, see [https://docs.aws.amazon.com/cli/latest/reference/service-quotas/request-service-quota-increase.html](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/request-service-quota-increase.html) in the *AWS CLI Command Reference*.
+To work more with service quotas using the AWS CLI, see the Service Quotas section in the *AWS CLI Command Reference*. To request a quota increase, see [`request-service-quota-increase`](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/request-service-quota-increase.html) in the *AWS CLI Command Reference*.
 
 ------
 

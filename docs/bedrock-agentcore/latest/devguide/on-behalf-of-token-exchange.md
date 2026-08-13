@@ -146,13 +146,13 @@ The optional `actorTokenScopes` configuration is used as the `scope` parameters 
 #### `actor_token_content` = `AWS_IAM_ID_TOKEN_JWT` (only when `grant_type` = `TOKEN_EXCHANGE`)
 <a name="obo-actor-token-content-iam-jwt"></a>
 
-AgentCore Identity calls [https://docs.aws.amazon.com/STS/latest/APIReference/API_GetWebIdentityToken.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetWebIdentityToken.html) using the credential provider’s token endpoint as the aud claim, then sends the resulting JWT as the `actor_token`.
+AgentCore Identity calls [`sts:GetWebIdentityToken`](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetWebIdentityToken.html) using the credential provider’s token endpoint as the aud claim, then sends the resulting JWT as the `actor_token`.
 
 | Parameter | Value |
 | --- | --- |
-|  `actor_token_content`  |  `AWS_IAM_ID_TOKEN_JWT` +  we map it to `urn:ietf:params:oauth:token-type:jwt` when constructing token exchange request <br />+  we obtain JWT via [https://docs.aws.amazon.com/STS/latest/APIReference/API_GetWebIdentityToken.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetWebIdentityToken.html)   |
+|  `actor_token_content`  |  `AWS_IAM_ID_TOKEN_JWT` +  we map it to `urn:ietf:params:oauth:token-type:jwt` when constructing token exchange request <br />+  we obtain JWT via [`sts:GetWebIdentityToken`](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetWebIdentityToken.html)   |
 
-This mode requires your account to be enabled for outbound web identity federation. See [https://docs.aws.amazon.com/IAM/latest/APIReference/API_EnableOutboundWebIdentityFederation.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_EnableOutboundWebIdentityFederation.html).
+This mode requires your account to be enabled for outbound web identity federation. See [`iam:EnableOutboundWebIdentityFederation`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_EnableOutboundWebIdentityFederation.html).
 
 #### `actor_token_content` = `NONE` (only when `grant_type` = `TOKEN_EXCHANGE`)
 <a name="obo-actor-token-content-none"></a>

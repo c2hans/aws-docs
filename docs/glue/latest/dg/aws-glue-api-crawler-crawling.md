@@ -173,7 +173,7 @@ Specifies a data store in Amazon Simple Storage Service (Amazon S3).
 Specifies a target that writes to a Delta Lake data source in the AWS Glue Data Catalog.
 
 **Fields**
-+ `Name` – *Required:* UTF-8 string, matching the [Custom string pattern #63](aws-glue-api-common.md#regex_63).
++ `Name` – *Required:* UTF-8 string, matching the [Custom string pattern #68](aws-glue-api-common.md#regex_68).
 
   The name of the data target.
 + `Inputs` – *Required:* An array of UTF-8 strings, not less than 1 or more than 1 strings.
@@ -182,17 +182,17 @@ Specifies a target that writes to a Delta Lake data source in the AWS Glue Data 
 + `PartitionKeys` – An array of UTF-8 strings.
 
   Specifies native partitioning using a sequence of keys.
-+ `Table` – *Required:* UTF-8 string, matching the [Custom string pattern #61](aws-glue-api-common.md#regex_61).
++ `Table` – *Required:* UTF-8 string, matching the [Custom string pattern #66](aws-glue-api-common.md#regex_66).
 
   The name of the table in the database to write to.
-+ `Database` – *Required:* UTF-8 string, matching the [Custom string pattern #61](aws-glue-api-common.md#regex_61).
++ `Database` – *Required:* UTF-8 string, matching the [Custom string pattern #66](aws-glue-api-common.md#regex_66).
 
   The name of the database to write to.
 + `AdditionalOptions` – A map array of key-value pairs.
 
-  Each key is a UTF-8 string, matching the [Custom string pattern #61](aws-glue-api-common.md#regex_61).
+  Each key is a UTF-8 string, matching the [Custom string pattern #66](aws-glue-api-common.md#regex_66).
 
-  Each value is a UTF-8 string, matching the [Custom string pattern #61](aws-glue-api-common.md#regex_61).
+  Each value is a UTF-8 string, matching the [Custom string pattern #66](aws-glue-api-common.md#regex_66).
 
   Specifies additional connection options for the connector.
 + `SchemaChangePolicy` – A [CatalogSchemaChangePolicy](aws-glue-api-visual-job-api.md#aws-glue-api-visual-job-api-CatalogSchemaChangePolicy) object.
@@ -211,7 +211,7 @@ Specifies a target that writes to a Delta Lake data source in the AWS Glue Data 
 Specifies a target that writes to a Delta Lake data source in Amazon S3.
 
 **Fields**
-+ `Name` – *Required:* UTF-8 string, matching the [Custom string pattern #63](aws-glue-api-common.md#regex_63).
++ `Name` – *Required:* UTF-8 string, matching the [Custom string pattern #68](aws-glue-api-common.md#regex_68).
 
   The name of the data target.
 + `Inputs` – *Required:* An array of UTF-8 strings, not less than 1 or more than 1 strings.
@@ -220,7 +220,7 @@ Specifies a target that writes to a Delta Lake data source in Amazon S3.
 + `PartitionKeys` – An array of UTF-8 strings.
 
   Specifies native partitioning using a sequence of keys.
-+ `Path` – *Required:* UTF-8 string, matching the [Custom string pattern #61](aws-glue-api-common.md#regex_61).
++ `Path` – *Required:* UTF-8 string, matching the [Custom string pattern #66](aws-glue-api-common.md#regex_66).
 
   The Amazon S3 path of your Delta Lake data source to write to.
 + `Compression` – *Required:* UTF-8 string (valid values: `uncompressed="UNCOMPRESSED"` \| `snappy="SNAPPY"`).
@@ -234,9 +234,9 @@ Specifies a target that writes to a Delta Lake data source in Amazon S3.
   Specifies the data output format for the target.
 + `AdditionalOptions` – A map array of key-value pairs.
 
-  Each key is a UTF-8 string, matching the [Custom string pattern #61](aws-glue-api-common.md#regex_61).
+  Each key is a UTF-8 string, matching the [Custom string pattern #66](aws-glue-api-common.md#regex_66).
 
-  Each value is a UTF-8 string, matching the [Custom string pattern #61](aws-glue-api-common.md#regex_61).
+  Each value is a UTF-8 string, matching the [Custom string pattern #66](aws-glue-api-common.md#regex_66).
 
   Specifies additional connection options for the connector.
 + `SchemaChangePolicy` – A [DirectSchemaChangePolicy](aws-glue-api-visual-job-api.md#aws-glue-api-visual-job-api-DirectSchemaChangePolicy) object.
@@ -395,25 +395,25 @@ Metrics for a specified crawler.
 + `CrawlerName` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Single-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-oneLine).
 
   The name of the crawler.
-+ `TimeLeftSeconds` – Number (double), not more than None.
++ `TimeLeftSeconds` – Number (double).
 
   The estimated time left to complete a running crawl.
 + `StillEstimating` – Boolean.
 
   True if the crawler is still estimating how long it will take to complete this run.
-+ `LastRuntimeSeconds` – Number (double), not more than None.
++ `LastRuntimeSeconds` – Number (double).
 
   The duration of the crawler's most recent run, in seconds.
-+ `MedianRuntimeSeconds` – Number (double), not more than None.
++ `MedianRuntimeSeconds` – Number (double).
 
   The median duration of this crawler's runs, in seconds.
-+ `TablesCreated` – Number (integer), not more than None.
++ `TablesCreated` – Number (integer).
 
   The number of tables created by this crawler.
-+ `TablesUpdated` – Number (integer), not more than None.
++ `TablesUpdated` – Number (integer).
 
   The number of tables updated by this crawler.
-+ `TablesDeleted` – Number (integer), not more than None.
++ `TablesDeleted` – Number (integer).
 
   The number of tables deleted by this crawler.
 
@@ -450,7 +450,7 @@ Contains the information for a run of a crawler.
 + `MessagePrefix` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Single-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-oneLine).
 
   The prefix for a CloudWatch message about this crawl.
-+ `DPUHour` – Number (double), not more than None.
++ `DPUHour` – Number (double).
 
   The number of data processing units (DPU) used in hours for the crawl.
 

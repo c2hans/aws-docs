@@ -13,5 +13,5 @@ For more information about AWS Regions and Availability Zones, see [AWS Global I
 
 **Note**
 Data processed by AWS IoT FleetWise is stored in an Amazon Timestream database. Timestream supports backups to other AWS Availability Zones or Regions. However, you can write your own application using the Timestream SDK to query data and save it to the destination of your choice.
-For more information about Amazon Timestream, see the [https://docs.aws.amazon.com/timestream/latest/developerguide/what-is-timestream.html](https://docs.aws.amazon.com/timestream/latest/developerguide/what-is-timestream.html).
+For more information about Amazon Timestream, see the [* in the Amazon Timestream Developer Guide*](https://docs.aws.amazon.com/timestream/latest/developerguide/what-is-timestream.html).
 Amazon Timestream is not available in the Asia Pacific (Mumbai) region.

@@ -166,9 +166,9 @@ The following image shows an example **Queue and agent performance** dashboard, 
 ## Set up schedule adherence notifications
 <a name="schedule-adherence-notifications"></a>
 
-You can use Contact Lens rules to configure notifications to be sent when agents are out of adherence.
+You can use conversational analytics rules to configure notifications to be sent when agents are out of adherence.
 
-1. In the Connect Customer admin website, navigate to **Analytics and Optimization**, **Contact Lens**, **Rules**, and then choose **Create a rule**, **Real-time metrics**.
+1. In the Connect Customer admin website, navigate to **Analytics and Optimization**, **conversational analytics**, **Rules**, and then choose **Create a rule**, **Real-time metrics**.
 
 1. For **When**, choose **There is an update in agent metrics** from the dropdown list.
 

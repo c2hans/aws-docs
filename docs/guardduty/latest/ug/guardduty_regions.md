@@ -18,7 +18,7 @@ A list of regional differences to specify the availability of GuardDuty features
 The [additional filterable fields](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_filter-findings.html#filter_criteria) for suppression rules and filters are available only in the AWS partition (`aws`). In other partitions, you can continue to use the console-supported fields.
 
 **ListFindings and GetFindingsStatistics APIs**
-The [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetFindingsStatistics.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetFindingsStatistics.html) and [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFindings.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFindings.html) APIs have a temporary `consoleOnly` flag. When you use any or both of these APIs, the `consoleOnly` flag means that the API can fetch results to a maximum limit of 1000.
+The [GetFindingsStatistics](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetFindingsStatistics.html) and [ListFindings](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFindings.html) APIs have a temporary `consoleOnly` flag. When you use any or both of these APIs, the `consoleOnly` flag means that the API can fetch results to a maximum limit of 1000.
 
 **Malware Protection for EC2**
 GuardDuty supports the [Malware Protection for EC2](malware-protection.md) feature in the [AWS Dedicated Local Zones](https://aws.amazon.com/dedicatedlocalzones).
@@ -40,13 +40,13 @@ The [Impact:IAMUser/PromptInjection.Direct](findings-ai-protection.md#ai-protect
 
 **General API support**
 The following APIs in the Amazon GuardDuty API Reference may have regional differences because of the unavailability of some of the data sources or features in previously specified AWS Regions:
-+ [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateDetector.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateDetector.html)
-+ [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html)
-+ [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetectors.html)
-+ [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateOrganizationConfiguration.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateOrganizationConfiguration.html)
-+ [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetDetector.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetDetector.html)
-+ [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetMemberDetectors.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetMemberDetectors.html)
-+ [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DescribeOrganizationConfiguration.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DescribeOrganizationConfiguration.html)
++ [CreateDetector](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateDetector.html)
++ [UpdateDetector](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html)
++ [UpdateMemberDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetectors.html)
++ [UpdateOrganizationConfiguration](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateOrganizationConfiguration.html)
++ [GetDetector](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetDetector.html)
++ [GetMemberDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetMemberDetectors.html)
++ [DescribeOrganizationConfiguration](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DescribeOrganizationConfiguration.html)
 
 **Amazon EC2 finding types – [DefenseEvasion:EC2/UnusualDoHActivity](guardduty_finding-types-ec2.md#defenseevasion-ec2-unsualdohactivity) and [DefenseEvasion:EC2/UnusualDoTActivity](guardduty_finding-types-ec2.md#defenseevasion-ec2-unusualdotactivity)**
 The following table shows the AWS Regions where GuardDuty is available but these two Amazon EC2 finding types are not yet supported.

@@ -16,9 +16,9 @@ Type: String
 Required: No
 
  ** associationType **
-The type of target that the application status check is associated with. Valid values:
-+  `tag` — Associates the check with all current and future instances that have a matching tag key-value pair.
-+  `instance` — Associates the check with a specific instance by instance ID.
+The type of target that the application status check is associated with. Possible values:
++  `tag` – The check applies to current and future instances with a matching tag key-value pair.
++  `instance-id` – The check applies to a specific instance.
 Type: String
 Valid Values: `tag | instance-id`
 Required: No

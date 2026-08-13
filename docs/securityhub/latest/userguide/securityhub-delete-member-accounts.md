@@ -36,14 +36,14 @@ Choose your preferred method, and follow the steps to delete manually-invited me
 
 **To delete a manually-invited member account**
 
-Invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeleteMembers.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeleteMembers.html) API from the administrator account. You must provide the AWS account IDs of the member accounts that you want to delete. To retrieve the list of member accounts, invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListMembers.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListMembers.html) API.
+Invoke the [`DeleteMembers`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeleteMembers.html) API from the administrator account. You must provide the AWS account IDs of the member accounts that you want to delete. To retrieve the list of member accounts, invoke the [`ListMembers`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListMembers.html) API.
 
 ------
 #### [ AWS CLI ]
 
 **To delete a manually-invited member account**
 
-Run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/delete-members.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/delete-members.html) command from the administrator account. You must provide the AWS account IDs of the member accounts that you want to delete. To retrieve the list of member accounts, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-members.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-members.html) command.
+Run the [`delete-members`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/delete-members.html) command from the administrator account. You must provide the AWS account IDs of the member accounts that you want to delete. To retrieve the list of member accounts, run the [`list-members`](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-members.html) command.
 
 ```
 aws securityhub delete-members --account-ids {{<memberAccountIDs>}}

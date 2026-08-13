@@ -30,9 +30,11 @@ If you do instantiate `StreamManagerClient` in the handler, you must explicitly 
 <a name="streammanagerclient-create-message-stream"></a>
 
 To create a stream, a user-defined Greengrass component calls the create method and passes in a `MessageStreamDefinition` object. This object specifies the unique name for the stream and defines how stream manager should handle new data when the maximum stream size is reached. You can use `MessageStreamDefinition` and its data types (such as `ExportDefinition`, `StrategyOnFull`, and `Persistence`) to define other stream properties. These include:
-+ The target AWS IoT Analytics, Kinesis Data Streams, AWS IoT SiteWise, and Amazon S3 destinations for automatic exports. For more information, see [Export configurations for supported AWS Cloud destinations](stream-export-configurations.md).
++ The target Kinesis Data Streams, AWS IoT SiteWise, and Amazon S3 destinations for automatic exports. For more information, see [Export configurations for supported AWS Cloud destinations](stream-export-configurations.md).
+**AWS IoT Analytics discontinued**
+AWS IoT Analytics was discontinued on December 15, 2025 and is no longer a supported export destination. If you have streams configured with `IoTAnalyticsConfig` export destinations, remove them to avoid continuous failed export attempts. For more information, see [AWS IoT Analytics channels (discontinued)](stream-export-configurations.md#export-to-iot-analytics).
 + Export priority. Stream manager exports higher priority streams before lower priority streams.
-+ Maximum batch size and batch interval for AWS IoT Analytics, Kinesis Data Streams, and AWS IoT SiteWise destinations. Stream manager exports messages when either condition is met.
++ Maximum batch size and batch interval for Kinesis Data Streams and AWS IoT SiteWise destinations. Stream manager exports messages when either condition is met.
 + Time-to-live (TTL). The amount of time to guarantee that the stream data is available for processing. You should make sure that the data can be consumed within this time period. This is not a deletion policy. The data might not be deleted immediately after TTL period.
 + Stream persistence. Choose to save streams to the file system to persist data across core restarts or save streams in memory.
 + Starting sequence number. Specify the sequence number of the message to use as the starting message in the export.
@@ -45,7 +47,7 @@ For more information about `MessageStreamDefinition`, see the SDK reference for 
 **Note**
 <a name="streammanagerclient-http-config"></a>`StreamManagerClient` also provides a target destination you can use to export streams to an HTTP server. This target is intended for testing purposes only. It is not stable or supported for use in production environments.
 
-After a stream is created, your Greengrass components can [append messages](#streammanagerclient-append-message) to the stream to send data for export and [read messages](#streammanagerclient-read-messages) from the stream for local processing. The number of streams that you create depends on your hardware capabilities and business case. One strategy is to create a stream for each target channel in AWS IoT Analytics or Kinesis data stream, though you can define multiple targets for a stream. A stream has a durable lifespan.
+After a stream is created, your Greengrass components can [append messages](#streammanagerclient-append-message) to the stream to send data for export and [read messages](#streammanagerclient-read-messages) from the stream for local processing. The number of streams that you create depends on your hardware capabilities and business case. One strategy is to create a stream for each target Kinesis data stream or Amazon S3 destination, though you can define multiple targets for a stream. A stream has a durable lifespan.
 
 ### Requirements
 <a name="streammanagerclient-create-message-stream-reqs"></a>
@@ -174,10 +176,10 @@ This operation has the following requirements:
 ### Examples
 <a name="streammanagerclient-append-message-examples"></a>
 
-#### AWS IoT Analytics or Kinesis Data Streams export destinations
+#### Kinesis Data Streams export destinations
 <a name="streammanagerclient-append-message-blob"></a>
 
-The following snippet appends a message to the stream named `StreamName`. For AWS IoT Analytics or Kinesis Data Streams destinations, your Greengrass components append a blob of data.
+The following snippet appends a message to the stream named `StreamName`. For Kinesis Data Streams destinations, your Greengrass components append a blob of data.
 
 This snippet has the following requirements:
 + <a name="streammanagerclient-min-sm-sdk"></a>Minimum Stream Manager SDK version: Python: 1.1.0  \|  Java: 1.1.0  \|  Node.js: 1.1.0

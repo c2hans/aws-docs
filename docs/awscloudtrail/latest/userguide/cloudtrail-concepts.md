@@ -60,8 +60,8 @@ Data events provide information about the resource operations performed on or in
 Example data events include:
 + [Amazon S3 object-level API activity](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cloudtrail-logging-s3-info.html#cloudtrail-data-events) (for example, `GetObject`, `DeleteObject`, and `PutObject` API operations) on objects in S3 buckets.
 + AWS Lambda function execution activity (the `Invoke` API).
-+ CloudTrail [https://docs.aws.amazon.com/awscloudtraildata/latest/APIReference/API_PutAuditEvents.html](https://docs.aws.amazon.com/awscloudtraildata/latest/APIReference/API_PutAuditEvents.html) activity on a [CloudTrail Lake channel](query-event-data-store-integration.md) that is used to log events from outside AWS.
-+ Amazon SNS [https://docs.aws.amazon.com/sns/latest/api/API_Publish.html](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html) and [https://docs.aws.amazon.com/sns/latest/api/API_PublishBatch.html](https://docs.aws.amazon.com/sns/latest/api/API_PublishBatch.html) API operations on topics.
++ CloudTrail [`PutAuditEvents`](https://docs.aws.amazon.com/awscloudtraildata/latest/APIReference/API_PutAuditEvents.html) activity on a [CloudTrail Lake channel](query-event-data-store-integration.md) that is used to log events from outside AWS.
++ Amazon SNS [`Publish`](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html) and [`PublishBatch`](https://docs.aws.amazon.com/sns/latest/api/API_PublishBatch.html) API operations on topics.
 
 The following table shows the resource types available for trails and event data stores. The **Resource type (console)** column shows the appropriate selection in the console. The **resources.type value** column shows the `resources.type` value that you would specify to include data events of that type in your trail or event data store using the AWS CLI or CloudTrail APIs.
 
@@ -87,8 +87,8 @@ For event data stores, you can use only advanced event selectors to include data
 | Amazon S3 Vectors | Amazon S3 API activity on [vector buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-buckets.html). | S3 vector bucket | AWS::S3Vectors::VectorBucket |
 | Amazon S3 Vectors | Amazon S3 API activity on [vector indexes](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-indexes.html). | S3 vector index | AWS::S3Vectors::Index |
 | Amazon S3 on Outposts | [Amazon S3 on Outposts object-level API activity](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cloudtrail-logging-s3-info.html#cloudtrail-data-events). | S3 Outposts | AWS::S3Outposts::Object |
-| Amazon SNS | Amazon SNS [https://docs.aws.amazon.com/sns/latest/api/API_Publish.html](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html) API operations on platform endpoints. | SNS platform endpoint | AWS::SNS::PlatformEndpoint |
-| Amazon SNS | Amazon SNS [https://docs.aws.amazon.com/sns/latest/api/API_Publish.html](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html) and [https://docs.aws.amazon.com/sns/latest/api/API_PublishBatch.html](https://docs.aws.amazon.com/sns/latest/api/API_PublishBatch.html) API operations on topics. | SNS topic | AWS::SNS::Topic |
+| Amazon SNS | Amazon SNS [`Publish`](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html) API operations on platform endpoints. | SNS platform endpoint | AWS::SNS::PlatformEndpoint |
+| Amazon SNS | Amazon SNS [`Publish`](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html) and [`PublishBatch`](https://docs.aws.amazon.com/sns/latest/api/API_PublishBatch.html) API operations on topics. | SNS topic | AWS::SNS::Topic |
 | Amazon SQS | [Amazon SQS API activity](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-logging-using-cloudtrail.html#sqs-data-events-in-cloud-trail) on messages. | SQS | AWS::SQS::Queue |
 | Supply Chain | Supply Chain API activity on an instance. | Supply Chain | AWS::SCN::Instance |
 | Amazon SWF | [Amazon SWF API activity](https://docs.aws.amazon.com/amazonswf/latest/developerguide/ct-logging.html#cloudtrail-data-events) on [domains](https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-domains.html). | SWF domain | AWS::SWF::Domain |
@@ -129,8 +129,8 @@ For event data stores, you can use only advanced event selectors to include data
 | Amazon Bedrock | Amazon Bedrock Tool API activity. | Bedrock Tool | AWS::Bedrock::Tool |
 | AWS Cloud Map | [AWS Cloud Map API activity](https://docs.aws.amazon.com/cloud-map/latest/dg/cloudtrail-data-events.html) on a [namespace](https://docs.aws.amazon.com/cloud-map/latest/api/API_Namespace.html). | AWS Cloud Map namespace | AWS::ServiceDiscovery::Namespace |
 | AWS Cloud Map | [AWS Cloud Map API activity](https://docs.aws.amazon.com/cloud-map/latest/dg/cloudtrail-data-events.html) on a [service](https://docs.aws.amazon.com/cloud-map/latest/api/API_Service.html). | AWS Cloud Map service | AWS::ServiceDiscovery::Service |
-| Amazon CloudFront | CloudFront API activity on a [https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_KeyValueStore.html](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_KeyValueStore.html). | CloudFront KeyValueStore | AWS::CloudFront::KeyValueStore |
-| AWS CloudTrail | CloudTrail [https://docs.aws.amazon.com/awscloudtraildata/latest/APIReference/API_PutAuditEvents.html](https://docs.aws.amazon.com/awscloudtraildata/latest/APIReference/API_PutAuditEvents.html) activity on a [CloudTrail Lake channel](query-event-data-store-integration.md) that is used to log events from outside AWS. | CloudTrail channel | AWS::CloudTrail::Channel |
+| Amazon CloudFront | CloudFront API activity on a [KeyValueStore](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_KeyValueStore.html). | CloudFront KeyValueStore | AWS::CloudFront::KeyValueStore |
+| AWS CloudTrail | CloudTrail [`PutAuditEvents`](https://docs.aws.amazon.com/awscloudtraildata/latest/APIReference/API_PutAuditEvents.html) activity on a [CloudTrail Lake channel](query-event-data-store-integration.md) that is used to log events from outside AWS. | CloudTrail channel | AWS::CloudTrail::Channel |
 | Amazon CloudWatch | [Amazon CloudWatch API activity](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/logging_cw_api_calls.html#CloudWatch-data-plane-events) on metrics. | CloudWatch metric | AWS::CloudWatch::Metric |
 | Amazon CloudWatch Network Flow Monitor | Amazon CloudWatch Network Flow Monitor API activity on monitors. | Network Flow Monitor monitor | AWS::NetworkFlowMonitor::Monitor |
 | Amazon CloudWatch Network Flow Monitor | Amazon CloudWatch Network Flow Monitor API activity on scopes. | Network Flow Monitor scope | AWS::NetworkFlowMonitor::Scope |
@@ -208,7 +208,7 @@ For event data stores, you can use only advanced event selectors to include data
 | Amazon Quick | Amazon Quick API activity on an action connector. | AWSQuickSuite Actions | AWS::Quicksight::ActionConnector |
 | Amazon Quick | Amazon Quick Flow API activity. | **QuickSight flow** | `AWS::QuickSight::Flow` |
 | Amazon Quick | Amazon Quick FlowSession API activity. | **QuickSight flow session** | `AWS::QuickSight::FlowSession` |
-| Amazon SageMaker AI |  Amazon SageMaker AI [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpointWithResponseStream.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpointWithResponseStream.html) activity on endpoints. | SageMaker AI endpoint | AWS::SageMaker::Endpoint |
+| Amazon SageMaker AI |  Amazon SageMaker AI [`InvokeEndpointWithResponseStream`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpointWithResponseStream.html) activity on endpoints. | SageMaker AI endpoint | AWS::SageMaker::Endpoint |
 | Amazon SageMaker AI | Amazon SageMaker AI API activity on feature stores. | SageMaker AI feature store | AWS::SageMaker::FeatureGroup |
 | Amazon SageMaker AI | Amazon SageMaker AI API activity on [experiment trial components](https://docs.aws.amazon.com/sagemaker/latest/dg/experiments-monitoring.html). | SageMaker AI metrics experiment trial component | AWS::SageMaker::ExperimentTrialComponent |
 | Amazon SageMaker AI | Amazon SageMaker AI MLflow API activity. | **SageMaker MLflow** | `AWS::SageMaker::MlflowTrackingServer` |
@@ -223,9 +223,9 @@ For event data stores, you can use only advanced event selectors to include data
 | AWS Systems Manager | [Systems Manager API activity](https://docs.aws.amazon.com/systems-manager/latest/userguide/monitoring-cloudtrail-logs.html#cloudtrail-data-events) on control channels. | Systems Manager | AWS::SSMMessages::ControlChannel |
 | AWS Systems Manager | Systems Manager API activity on impact assessments. | SSM Impact Assessment  | AWS::SSM::ExecutionPreview |
 | AWS Systems Manager | [Systems Manager API activity](https://docs.aws.amazon.com/systems-manager/latest/userguide/monitoring-cloudtrail-logs.html#cloudtrail-data-events) on managed nodes. | Systems Manager managed node | AWS::SSM::ManagedNode |
-| Amazon Timestream | Amazon Timestream [https://docs.aws.amazon.com/timestream/latest/developerguide/API_query_Query.html](https://docs.aws.amazon.com/timestream/latest/developerguide/API_query_Query.html) API activity on databases. | Timestream database | AWS::Timestream::Database |
+| Amazon Timestream | Amazon Timestream [`Query`](https://docs.aws.amazon.com/timestream/latest/developerguide/API_query_Query.html) API activity on databases. | Timestream database | AWS::Timestream::Database |
 | Amazon Timestream | Amazon Timestream API activity on regional endpoints. | Timestream regional endpoint | AWS::Timestream::RegionalEndpoint |
-| Amazon Timestream | Amazon Timestream [https://docs.aws.amazon.com/timestream/latest/developerguide/API_query_Query.html](https://docs.aws.amazon.com/timestream/latest/developerguide/API_query_Query.html) API activity on tables. | Timestream table | AWS::Timestream::Table |
+| Amazon Timestream | Amazon Timestream [`Query`](https://docs.aws.amazon.com/timestream/latest/developerguide/API_query_Query.html) API activity on tables. | Timestream table | AWS::Timestream::Table |
 | Amazon Verified Permissions | Amazon Verified Permissions API activity on a policy store. | Amazon Verified Permissions | AWS::VerifiedPermissions::PolicyStore |
 | Amazon WorkSpaces Thin Client | WorkSpaces Thin Client API activity on a Device. | Thin Client Device | AWS::ThinClient::Device |
 | Amazon WorkSpaces Thin Client | WorkSpaces Thin Client API activity on an Environment. | Thin Client Environment | AWS::ThinClient::Environment |
@@ -251,6 +251,7 @@ For event data stores, you can use only advanced event selectors to include data
 | Amazon Transform Custom | Transform Custom API activity on conversations. | Transform-Custom conversation | AWS::TransformCustom::Conversation |
 | Amazon Transform Custom | Transform Custom API activity on knowledge items. | Transform-Custom knowledge item | AWS::TransformCustom::KnowledgeItem |
 | Amazon Transform Custom | Transform Custom API activity on packages. | Transform-Custom package | AWS::TransformCustom::Package |
+| Amazon WorkSpaces Applications | Agents accessing WorkSpaces Applications MCP tool events | Agent Access MCP Tools | AWS::AgentAccessMCP::Tools |
 
 Data events are not logged by default when you create a trail or event data store. To record CloudTrail data events, you must explicitly add each resource type for which you want to collect activity. For more information about logging data events, see [Logging data events](logging-data-events-with-cloudtrail.md).
 
@@ -418,7 +419,7 @@ an incorrect Amazon S3 bucket policy
 an incorrect Amazon SNS topic policy
 inability to deliver to a CloudWatch Logs log group
 insufficient permission to encrypt using a KMS key
-A member account with CloudTrail permissions can see any validation failures for an organization trail by viewing the trail's details page on the CloudTrail console, or by running the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-trail-status.html](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-trail-status.html) command.
+A member account with CloudTrail permissions can see any validation failures for an organization trail by viewing the trail's details page on the CloudTrail console, or by running the AWS CLI [get-trail-status](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-trail-status.html) command.
 
 Users with CloudTrail permissions in member accounts will be able to see organization trails (including the trail ARN) when they log into the CloudTrail console from their AWS accounts, or when they run AWS CLI commands such as `describe-trails` (although member accounts must use the ARN for the organization trail, and not the name, when using the AWS CLI). However, users in member accounts will not have sufficient permissions to delete organization trails, turn logging on or off, change what types of events are logged, or otherwise alter organization trails in any way. For more information about AWS Organizations, see [Organizations Terminology and Concepts](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html). For more information about creating and working with organization trails, see [Creating a trail for an organization](creating-trail-organization.md).
 
@@ -432,7 +433,7 @@ Events are aggregated into event data stores, which are immutable collections of
 ## CloudTrail Insights
 <a name="understanding-insight-selectors"></a>
 
-CloudTrail Insights help AWS users identify and respond to unusual volumes of API calls or errors logged on API calls by continuously analyzing CloudTrail management events. An Insights event is a record of unusual levels of `write` management API activity, or unusual levels of errors returned on management API activity. By default, trails and event data stores don't log CloudTrail Insights events. In the console, you can choose to log Insights events when you create or update a trail or event data store. When you use the CloudTrail API, you can log Insights events by editing the settings of an existing trail or event data store with the [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_PutInsightSelectors.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_PutInsightSelectors.html) API. Additional charges apply for logging CloudTrail Insights events. You will be charged separately if you enable Insights for both trails and event data stores. For more information, see [Working with CloudTrail Insights](logging-insights-events-with-cloudtrail.md) and [AWS CloudTrail Pricing](https://aws.amazon.com/cloudtrail/pricing/).
+CloudTrail Insights help AWS users identify and respond to unusual volumes of API calls or errors logged on API calls by continuously analyzing CloudTrail management events. An Insights event is a record of unusual levels of `write` management API activity, or unusual levels of errors returned on management API activity. By default, trails and event data stores don't log CloudTrail Insights events. In the console, you can choose to log Insights events when you create or update a trail or event data store. When you use the CloudTrail API, you can log Insights events by editing the settings of an existing trail or event data store with the [`PutInsightSelectors`](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_PutInsightSelectors.html) API. Additional charges apply for logging CloudTrail Insights events. You will be charged separately if you enable Insights for both trails and event data stores. For more information, see [Working with CloudTrail Insights](logging-insights-events-with-cloudtrail.md) and [AWS CloudTrail Pricing](https://aws.amazon.com/cloudtrail/pricing/).
 
 ## Tags
 <a name="cloudtrail-concepts-tags"></a>

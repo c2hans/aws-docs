@@ -27,7 +27,7 @@ To stop filtering the messages that are sent to a subscription, remove the subsc
 ## Using the AWS CLI
 <a name="message-filtering-policy-remove-cli"></a>
 
-To remove a filter policy with the AWS CLI, use the [https://docs.aws.amazon.com/cli/latest/reference/sns/set-subscription-attributes.html](https://docs.aws.amazon.com/cli/latest/reference/sns/set-subscription-attributes.html) command and provide an empty JSON body for the `--attribute-value` argument:
+To remove a filter policy with the AWS CLI, use the [`set-subscription-attributes`](https://docs.aws.amazon.com/cli/latest/reference/sns/set-subscription-attributes.html) command and provide an empty JSON body for the `--attribute-value` argument:
 
 ```
 $ aws sns set-subscription-attributes --subscription-arn {{arn:aws:sns: ...}} --attribute-name FilterPolicy --attribute-value "{}"
@@ -36,4 +36,4 @@ $ aws sns set-subscription-attributes --subscription-arn {{arn:aws:sns: ...}} --
 ## Using the Amazon SNS API
 <a name="message-filtering-policy-remove-api"></a>
 
-To remove a filter policy with the Amazon SNS API, make a request to the [https://docs.aws.amazon.com/sns/latest/api/API_SetSubscriptionAttributes.html](https://docs.aws.amazon.com/sns/latest/api/API_SetSubscriptionAttributes.html) action. Set the `AttributeName` parameter to `FilterPolicy`, and provide an empty JSON body for the `AttributeValue` parameter.
+To remove a filter policy with the Amazon SNS API, make a request to the [`SetSubscriptionAttributes`](https://docs.aws.amazon.com/sns/latest/api/API_SetSubscriptionAttributes.html) action. Set the `AttributeName` parameter to `FilterPolicy`, and provide an empty JSON body for the `AttributeValue` parameter.

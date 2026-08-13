@@ -40,7 +40,7 @@ Array Members: Minimum number of 0 items. Maximum number of 20 items.
 Required: Yes
 
  ** [GatewayArn](#API_PutBandwidthRateLimitSchedule_RequestSyntax) **   <a name="bgw-PutBandwidthRateLimitSchedule-request-GatewayArn"></a>
-The Amazon Resource Name (ARN) of the gateway. Use the [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_ListGateways.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_ListGateways.html) operation to return a list of gateways for your account and AWS Region.
+The Amazon Resource Name (ARN) of the gateway. Use the [`ListGateways`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_ListGateways.html) operation to return a list of gateways for your account and AWS Region.
 Type: String
 Length Constraints: Minimum length of 50. Maximum length of 180.
 Pattern: `arn:(aws|aws-cn|aws-us-gov):backup-gateway(:[a-zA-Z-0-9]+){3}\/[a-zA-Z-0-9]+`
@@ -63,7 +63,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [GatewayArn](#API_PutBandwidthRateLimitSchedule_ResponseSyntax) **   <a name="bgw-PutBandwidthRateLimitSchedule-response-GatewayArn"></a>
-The Amazon Resource Name (ARN) of the gateway. Use the [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_ListGateways.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_ListGateways.html) operation to return a list of gateways for your account and AWS Region.
+The Amazon Resource Name (ARN) of the gateway. Use the [`ListGateways`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_ListGateways.html) operation to return a list of gateways for your account and AWS Region.
 Type: String
 Length Constraints: Minimum length of 50. Maximum length of 180.
 Pattern: `arn:(aws|aws-cn|aws-us-gov):backup-gateway(:[a-zA-Z-0-9]+){3}\/[a-zA-Z-0-9]+`

@@ -384,16 +384,16 @@ The following table shows some exceptions for maximum storage (in TiB). All RDS 
   <tr><th>Instance class</th><th>Db2</th><th>MariaDB</th><th>MySQL</th><th>Oracle</th><th>PostgreSQL</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="6">db.m3 – standard instance classes</td></tr>
-  <tr><td colspan="6">db.t4g – burstable-performance instance classes</td></tr>
+  <tr><td colspan="6"><b>db.m3 – standard instance classes</b></td></tr>
+  <tr><td colspan="6"><b>db.t4g – burstable-performance instance classes</b></td></tr>
   <tr><td>db.t4g.medium</td><td>N/A</td><td>16</td><td>16</td><td>N/A</td><td>32</td></tr>
   <tr><td>db.t4g.small</td><td>N/A</td><td>16</td><td>16</td><td>N/A</td><td>16</td></tr>
   <tr><td>db.t4g.micro</td><td>N/A</td><td>6</td><td>6</td><td>N/A</td><td>6</td></tr>
-  <tr><td colspan="6">db.t3 – burstable-performance instance classes</td></tr>
+  <tr><td colspan="6"><b>db.t3 – burstable-performance instance classes</b></td></tr>
   <tr><td>db.t3.medium</td><td>32</td><td>16</td><td>16</td><td>32</td><td>32</td></tr>
   <tr><td>db.t3.small</td><td>32</td><td>16</td><td>16</td><td>32</td><td>16</td></tr>
   <tr><td>db.t3.micro</td><td>N/A</td><td>6</td><td>6</td><td>32</td><td>6</td></tr>
-  <tr><td colspan="6">db.t2 – burstable-performance instance classes</td></tr>
+  <tr><td colspan="6"><b>db.t2 – burstable-performance instance classes</b></td></tr>
 </tbody>
 </table>
 

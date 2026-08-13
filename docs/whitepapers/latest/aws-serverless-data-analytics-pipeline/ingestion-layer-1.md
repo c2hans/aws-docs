@@ -39,7 +39,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-serverless-data-a
 ### Partner data files
 <a name="partner-data-files"></a>
 
- FTP is most common method for exchanging data files with partners. The [AWS Transfer Family](https://aws.amazon.com/aws-transfer-family/) is a serverless, highly available, and scalable service that supports secure FTP endpoints and natively integrates with Amazon S3. Partners and vendors transmit files using SFTP protocol, and the AWS Transfer Family stores them as S3 objects in the landing zone in the data lake. The AWS Transfer Family supports encryption using AWS KMS and common authentication methods including [https://aws.amazon.com/iam](https://aws.amazon.com/iam) (IAM) and Active Directory.
+ FTP is most common method for exchanging data files with partners. The [AWS Transfer Family](https://aws.amazon.com/aws-transfer-family/) is a serverless, highly available, and scalable service that supports secure FTP endpoints and natively integrates with Amazon S3. Partners and vendors transmit files using SFTP protocol, and the AWS Transfer Family stores them as S3 objects in the landing zone in the data lake. The AWS Transfer Family supports encryption using AWS KMS and common authentication methods including [*AWS Identity and Access Management*](https://aws.amazon.com/iam) (IAM) and Active Directory.
 
 ## Data APIs
 <a name="data-apis"></a>

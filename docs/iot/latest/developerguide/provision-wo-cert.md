@@ -18,7 +18,7 @@ Devices can be manufactured with a provisioning claim certificate and private ke
 
 **Before you deliver the device**
 
-1. Call [https://docs.aws.amazon.com//iot/latest/apireference/API_CreateProvisioningTemplate.html](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateProvisioningTemplate.html) to create a provisioning template. This API returns a template ARN. For more information, see [Device provisioning MQTT API](fleet-provision-api.md).
+1. Call [`CreateProvisioningTemplate`](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateProvisioningTemplate.html) to create a provisioning template. This API returns a template ARN. For more information, see [Device provisioning MQTT API](fleet-provision-api.md).
 
    You can also create a fleet provisioning template in the AWS IoT console.
 
@@ -110,7 +110,7 @@ You must manage the trusted user's access and permission to perform this procedu
 
 **Before you deliver the device**
 
-1. Call [https://docs.aws.amazon.com//iot/latest/apireference/API_CreateProvisioningTemplate.html](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateProvisioningTemplate.html) to create a provisioning template and return its {{templateArn}} and {{templateName}}.
+1. Call [`CreateProvisioningTemplate`](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateProvisioningTemplate.html) to create a provisioning template and return its {{templateArn}} and {{templateName}}.
 
 1. Create an IAM role that is used by a trusted user to initiate the provisioning process. The provisioning template allows only that user to provision a device. For example:
 
@@ -134,7 +134,7 @@ You must manage the trusted user's access and permission to perform this procedu
 
 1. A trusted user signs in to your provisioning mobile app or web service.
 
-1. The mobile app or web application uses the IAM role and calls [https://docs.aws.amazon.com//iot/latest/apireference/API_CreateProvisioningClaim.html](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateProvisioningClaim.html) to obtain a temporary provisioning claim certificate from AWS IoT.
+1. The mobile app or web application uses the IAM role and calls [`CreateProvisioningClaim`](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateProvisioningClaim.html) to obtain a temporary provisioning claim certificate from AWS IoT.
 **Note**
 For security, the temporary provisioning claim certificate that `CreateProvisioningClaim` returns expires after five minutes. The following steps must successfully return a valid certificate before the temporary provisioning claim certificate expires. Temporary provisioning claim certificates do not appear in your account's list of certificates.
 

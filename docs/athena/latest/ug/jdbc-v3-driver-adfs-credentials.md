@@ -87,7 +87,7 @@ Boolean. Use this parameter to enable Windows Integrated Authentication (WIA) wi
 ## Preferred role
 <a name="jdbc-v3-driver-adfs-credentials-preferred-role"></a>
 
-The Amazon Resource Name (ARN) of the role to assume. For information about ARN roles, see [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
+The Amazon Resource Name (ARN) of the role to assume. For information about ARN roles, see [`AssumeRole`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
 
 ****
 
@@ -98,7 +98,7 @@ The Amazon Resource Name (ARN) of the role to assume. For information about ARN 
 ## Role session duration
 <a name="jdbc-v3-driver-adfs-credentials-role-session-duration"></a>
 
-The duration, in seconds, of the role session. For more information, see [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
+The duration, in seconds, of the role session. For more information, see [`AssumeRole`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
 
 ****
 
@@ -109,7 +109,7 @@ The duration, in seconds, of the role session. For more information, see [https:
 ## Lake Formation enabled
 <a name="jdbc-v3-driver-adfs-credentials-lake-formation-enabled"></a>
 
-Specifies whether to use the [https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_AssumeDecoratedRoleWithSAML.html](https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_AssumeDecoratedRoleWithSAML.html) Lake Formation API action to retrieve temporary IAM credentials instead of the [https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithSAML.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithSAML.html) AWS STS API action.
+Specifies whether to use the [`AssumeDecoratedRoleWithSAML`](https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_AssumeDecoratedRoleWithSAML.html) Lake Formation API action to retrieve temporary IAM credentials instead of the [`AssumeRoleWithSAML`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithSAML.html) AWS STS API action.
 
 ****
 

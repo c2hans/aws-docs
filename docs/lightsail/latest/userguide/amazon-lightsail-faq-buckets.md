@@ -13,7 +13,7 @@ You can store your static content, such as images, videos, and HTML files in a b
 ## What does Lightsail object storage cost?
 <a name="object-storage-cost"></a>
 
-Lightsail object storage has three different fixed-priced bundles in all AWS Regions where Lightsail is available. The first bundle is $1/month and is free for the first 12 months. This bundle includes 5 GB storage capacity and 25 GB of data transfer. The second bundle is $3 per month and includes 100 GB storage capacity and 250 GB of data transfer. Lastly, the third bundle is $5 per month and includes 250 GB of storage capacity and 500 GB data transfer. Lightsail object storage includes unlimited data transfer into your bucket, as the bundled data transfer allowance is used only for data transfer out from your bucket.
+Lightsail object storage has three different fixed-priced bundles in all AWS Regions where Lightsail is available. The first bundle is $1/month. This bundle includes 5 GB storage capacity and 25 GB of data transfer. The second bundle is $3 per month and includes 100 GB storage capacity and 250 GB of data transfer. Lastly, the third bundle is $5 per month and includes 250 GB of storage capacity and 500 GB data transfer. Lightsail object storage includes unlimited data transfer into your bucket, as the bundled data transfer allowance is used only for data transfer out from your bucket.
 
 ## Can I change the plan associated with my Lightsail bucket?
 <a name="change-bucket-plan"></a>

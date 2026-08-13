@@ -253,7 +253,7 @@ When you add Amazon A2I to a custom human review workflow, you see the following
 | `flowDefinitionArn` | String | The Amazon Resource Number (ARN) of the human review workflow (flow definition) used to create the human loop.  |
 | `humanAnswers` | List of JSON objects | A list of JSON objects that contain worker responses in answerContent. The value in this parameter is determined by the output received from your [worker task template](https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-instructions-overview.html). If you are using a private workforce, worker metadata is included. To learn more, see [Track Worker Activity](#a2i-worker-id-private). |
 | `humanLoopName` | String | The name of the human loop. |
-| `inputContent` | JSON Object | The input content sent to Amazon A2I in the request to [https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_StartHumanLoop.html](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_StartHumanLoop.html). |
+| `inputContent` | JSON Object | The input content sent to Amazon A2I in the request to [`StartHumanLoop`](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_StartHumanLoop.html). |
 
 The following is an example of output data from a custom integration with Amazon A2I and Amazon Transcribe. In this example, the `inputContent` consists of:
 + A path to an .mp4 file in Amazon S3 and the video title

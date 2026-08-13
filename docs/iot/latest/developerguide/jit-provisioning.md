@@ -130,7 +130,7 @@ To register a CA by using a complete provisioning template, follow these steps:
 
    In this example, the value of the `templateBody` field must be a JSON object specified as an escaped string and can use only the values in the [preceding list](#jit-provisioning-overview). You can use a variety of tools to create the required JSON output, such as `json.dumps` (Python) or `JSON.stringify` (Node). The value of the `roleARN` field must be the ARN of a role that has the `AWSIoTThingsRegistration` attached to it. Also, your template can use an existing `PolicyName` instead of the inline `PolicyDocument` in the example.
 
-1. Register a CA certificate with the [RegisterCACertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_RegisterCACertificate.html) API operation or the [https://docs.aws.amazon.com//cli/latest/reference/iot/register-ca-certificate.html](https://docs.aws.amazon.com//cli/latest/reference/iot/register-ca-certificate.html) CLI command. You will specify the directory of the provisioning template and role ARN information that you saved in the previous step:
+1. Register a CA certificate with the [RegisterCACertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_RegisterCACertificate.html) API operation or the [`register-ca-certificate`](https://docs.aws.amazon.com//cli/latest/reference/iot/register-ca-certificate.html) CLI command. You will specify the directory of the provisioning template and role ARN information that you saved in the previous step:
 
    The following shows an example of how to register a CA certificate in `DEFAULT` mode using the AWS CLI:
 
@@ -148,7 +148,7 @@ To register a CA by using a complete provisioning template, follow these steps:
 
    For more information, see [Register your CA Certificates](https://docs.aws.amazon.com//iot/latest/developerguide/register-CA-cert.html).
 
-1.  (Optional) Update the settings for a CA certificate by using the [UpdateCACertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCACertificate.html) API operation or the [https://docs.aws.amazon.com//cli/latest/reference/iot/update-ca-certificate.html](https://docs.aws.amazon.com//cli/latest/reference/iot/update-ca-certificate.html) CLI command.
+1.  (Optional) Update the settings for a CA certificate by using the [UpdateCACertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCACertificate.html) API operation or the [`update-ca-certificate`](https://docs.aws.amazon.com//cli/latest/reference/iot/update-ca-certificate.html) CLI command.
 
    The following shows an example of how to update a CA certificate using the AWS CLI:
 
@@ -164,7 +164,7 @@ To register a CA by using a provisioning template name, follow these steps:
 
 1. Save your provisioning template body as a JSON file. You can find an example template body in [example template body](#jit-provisioning-example-templatebody).
 
-1. To create a provisioning template, use the [CreateProvisioningTemplate](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateProvisioningTemplate.html) API or the [https://docs.aws.amazon.com//cli/latest/reference/iot/create-provisioning-template.html](https://docs.aws.amazon.com//cli/latest/reference/iot/create-provisioning-template.html) CLI command:
+1. To create a provisioning template, use the [CreateProvisioningTemplate](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateProvisioningTemplate.html) API or the [`create-provisioning-template`](https://docs.aws.amazon.com//cli/latest/reference/iot/create-provisioning-template.html) CLI command:
 
    ```
    aws iot create-provisioning-template --template-name {{your-template-name}} \
@@ -174,7 +174,7 @@ To register a CA by using a provisioning template name, follow these steps:
 **Note**
 For just-in-time provisioning (JITP), you must specify template type to be `JITP` when creating the provisioning template. For more information about the template type, see [CreateProvisioningTemplate](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateProvisioningTemplate.html) in the *AWS API Reference*.
 
-1. To register CA with template name, use the [RegisterCACertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_RegisterCACertificate.html) API or the [https://docs.aws.amazon.com//cli/latest/reference/iot/register-ca-certificate.html](https://docs.aws.amazon.com//cli/latest/reference/iot/register-ca-certificate.html) CLI command:
+1. To register CA with template name, use the [RegisterCACertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_RegisterCACertificate.html) API or the [`register-ca-certificate`](https://docs.aws.amazon.com//cli/latest/reference/iot/register-ca-certificate.html) CLI command:
 
    ```
    aws iot register-ca-certificate --ca-certificate file:{{//your-ca-cert}} --verification-cert {{file://your-verification-cert}} \

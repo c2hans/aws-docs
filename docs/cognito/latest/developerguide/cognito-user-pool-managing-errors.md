@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-us
 Amazon Cognito supports customizing error responses returned by user pools. Custom error responses are available for user creation and authentication, password recovery, and confirmation operations.
 
 Use the `PreventUserExistenceErrors` setting of a user pool app client to enable or disable user existence related errors. When you create a new app client with the Amazon Cognito user pools API, `PreventUserExistenceErrors` is `LEGACY`, or disabled, by default. In the Amazon Cognito console, the option **Prevent user existence errors **—a setting of `ENABLED` for `PreventUserExistenceErrors`—is selected by default. To update your `PreventUserExistenceErrors` configuration, do one of the following:
-+ Change the value of `PreventUserExistenceErrors` between `ENABLED` and `LEGACY` in an [https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateUserPoolClient.html](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateUserPoolClient.html) API request.
++ Change the value of `PreventUserExistenceErrors` between `ENABLED` and `LEGACY` in an [UpdateUserPoolClient](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateUserPoolClient.html) API request.
 + Edit your app client in the Amazon Cognito console and change the state of **Prevent user existence errors** between selected (`ENABLED`) and deselected (`LEGACY`).
 
 When this property has a value of `LEGACY`, your app client returns a `UserNotFoundException` error response when a user attempts to sign in with a username that doesn't exist in your user pool.

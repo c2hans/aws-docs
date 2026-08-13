@@ -220,7 +220,7 @@ Add the security group of your DB instance to your running environment. This pro
     1. To save the changes choose **Apply** at the bottom of the page.
 
     1. Read the warning, and then choose **Confirm**.
-  + To add a security group using a [configuration file](ebextensions.md), use the [https://github.com/awsdocs/elastic-beanstalk-samples/tree/main/configuration-files/aws-provided/security-configuration/securitygroup-addexisting.config](https://github.com/awsdocs/elastic-beanstalk-samples/tree/main/configuration-files/aws-provided/security-configuration/securitygroup-addexisting.config) example file.
+  + To add a security group using a [configuration file](ebextensions.md), use the [`securitygroup-addexisting.config`](https://github.com/awsdocs/elastic-beanstalk-samples/tree/main/configuration-files/aws-provided/security-configuration/securitygroup-addexisting.config) example file.
 
 Next, use environment properties to pass the connection information to your environment.
 

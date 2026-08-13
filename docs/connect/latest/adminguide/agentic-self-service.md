@@ -6,9 +6,9 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agentic-self-s
 <a name="agentic-self-service"></a>
 
 **Tip**
-Check out this course from AWS Workshop: [Building advanced, generative AI with Connect AI agents](https://catalog.us-east-1.prod.workshops.aws/workshops/f77f49a2-1eae-4223-a9da-7044d6da51f8/en-US/01-introduction).
+Check out this course from AWS Workshop: [Building advanced, generative AI with AI agents](https://catalog.us-east-1.prod.workshops.aws/workshops/f77f49a2-1eae-4223-a9da-7044d6da51f8/en-US/01-introduction).
 
-Agentic self-service enables Connect AI agents to autonomously resolve customer issues across voice and chat channels. Unlike [legacy self-service](generative-ai-powered-self-service.md), where the AI agent returns control to the contact flow when a custom tool is selected, agentic self-service uses orchestrator AI agents that can reason across multiple steps, invoke MCP tools to take actions on behalf of customers, and maintain a continuous conversation until the issue is resolved or escalation is needed.
+Agentic self-service enables AI agents to autonomously resolve customer issues across voice and chat channels. Unlike [legacy self-service](generative-ai-powered-self-service.md), where the AI agent returns control to the contact flow when a custom tool is selected, agentic self-service uses orchestrator AI agents that can reason across multiple steps, invoke MCP tools to take actions on behalf of customers, and maintain a continuous conversation until the issue is resolved or escalation is needed.
 
 For example, when a customer calls about a hotel reservation, an orchestrator AI agent can greet them by name, ask clarifying questions, look up their booking, and process a modification—all within a single conversation, without returning control to the contact flow between each step.
 
@@ -48,13 +48,13 @@ Follow these high-level steps to set up agentic self-service:
 
 1. Configure your AI agent with tools. Add MCP tools from your connected namespaces and configure the default Return to Control tools (`Complete` and `Escalate`). For more information about MCP tools, see [AI agent MCP tools](ai-agent-mcp-tools.md).
 
-1. Create and attach an orchestration prompt. The `SelfServiceOrchestrator` includes a default `SelfServiceOrchestration` prompt that you can use as-is or create a new one to define your AI agent's personality, behavior, and instructions for using tools. For more information about prompts, see [Customize Connect AI agents](customize-connect-ai-agents.md).
+1. Create and attach an orchestration prompt. The `SelfServiceOrchestrator` includes a default `SelfServiceOrchestration` prompt that you can use as-is or create a new one to define your AI agent's personality, behavior, and instructions for using tools. For more information about prompts, see [Customize AI agents](customize-connect-ai-agents.md).
 **Important**
 Orchestrator AI agents require responses to be wrapped in `<message>` tags. Without this formatting, customers will not see messages from the AI agent. For more information, see [Message parsing](use-orchestration-ai-agent.md#message-parsing).
 
 1. Set your AI agent as the default self-service agent. On the **AI Agents** page, scroll to **Default AI Agent Configurations** and select your agent in the **Self Service** row.
 
-1. Create a Conversational AI bot. Go to **Routing**, **Flows**, **Conversational AI**, and create a bot with the Connect Customer AI agent intent enabled. For more information, see [Create an Connect AI agents intent](create-qic-intent-connect.md).
+1. Create a Conversational AI bot. Go to **Routing**, **Flows**, **Conversational AI**, and create a bot with the Connect Customer AI agent intent enabled. For more information, see [Create an agent assist intent](create-qic-intent-connect.md).
 
 1. Build a contact flow that routes contacts to your AI agent. Add a [Get customer input](get-customer-input.md) block that invokes your Conversational AI bot, and a [Check contact attributes](check-contact-attributes.md) block to route based on the Return to Control tool selected by the AI agent. For more information, see [Create a flow and add your conversational AI bot](create-bot-flow.md).
 

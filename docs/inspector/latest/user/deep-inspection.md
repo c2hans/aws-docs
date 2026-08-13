@@ -40,11 +40,11 @@ This page applies to customers that have not opted in to Enhanced EC2 Scanning. 
 
 1.  Under **Deep inspection of Amazon EC2 instance**, you can [set custom paths for your organization or for your own account](https://docs.aws.amazon.com/inspector/latest/user/deep-inspection.html#deep-inspection-paths).
 
- You can check the activation status programmatically for a single account with the [GetEc2DeepInspectionConfiguration](https://docs.aws.amazon.com/inspector/v2/APIReference/API_GetEc2DeepInspectionConfiguration.html) API. You can check the activation status programmatically for multiple accounts with the [https://docs.aws.amazon.com/inspector/v2/APIReference/API_BatchUpdateMemberEc2DeepInspectionStatus.html](https://docs.aws.amazon.com/inspector/v2/APIReference/API_BatchUpdateMemberEc2DeepInspectionStatus.html) API.
+ You can check the activation status programmatically for a single account with the [GetEc2DeepInspectionConfiguration](https://docs.aws.amazon.com/inspector/v2/APIReference/API_GetEc2DeepInspectionConfiguration.html) API. You can check the activation status programmatically for multiple accounts with the [BatchGetMemberEc2DeepInspectionStatus](https://docs.aws.amazon.com/inspector/v2/APIReference/API_BatchUpdateMemberEc2DeepInspectionStatus.html) API.
 
- If you activated Amazon Inspector before April 17, 2023, you can activate deep inspection through the console banner or the [https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateEc2DeepInspectionConfiguration.html](https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateEc2DeepInspectionConfiguration.html) API. If you're the delegated administrator for an organization in Amazon Inspector, you can use the [https://docs.aws.amazon.com/inspector/v2/APIReference/API_BatchUpdateMemberEc2DeepInspectionStatus.html](https://docs.aws.amazon.com/inspector/v2/APIReference/API_BatchUpdateMemberEc2DeepInspectionStatus.html) API to activate deep inspection for yourself and your member accounts.
+ If you activated Amazon Inspector before April 17, 2023, you can activate deep inspection through the console banner or the [UpdateEc2DeepInspectionConfiguration](https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateEc2DeepInspectionConfiguration.html) API. If you're the delegated administrator for an organization in Amazon Inspector, you can use the [BatchUpdateMemberEc2DeepInspectionStatus](https://docs.aws.amazon.com/inspector/v2/APIReference/API_BatchUpdateMemberEc2DeepInspectionStatus.html) API to activate deep inspection for yourself and your member accounts.
 
- You can deactivate deep inspection through the [https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateEc2DeepInspectionConfiguration.html](https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateEc2DeepInspectionConfiguration.html) API. Member accounts in an organization can't deactivate deep inspection. Instead, the member account must be deactivated by their delegated administrator using the [https://docs.aws.amazon.com/inspector/v2/APIReference/API_BatchUpdateMemberEc2DeepInspectionStatus.html](https://docs.aws.amazon.com/inspector/v2/APIReference/API_BatchUpdateMemberEc2DeepInspectionStatus.html) API.
+ You can deactivate deep inspection through the [UpdateEc2DeepInspectionConfiguration](https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateEc2DeepInspectionConfiguration.html) API. Member accounts in an organization can't deactivate deep inspection. Instead, the member account must be deactivated by their delegated administrator using the [BatchUpdateMemberEc2DeepInspectionStatus](https://docs.aws.amazon.com/inspector/v2/APIReference/API_BatchUpdateMemberEc2DeepInspectionStatus.html) API.
 
 ## Custom paths for Amazon Inspector deep inspection
 <a name="deep-inspection-paths"></a>
@@ -101,7 +101,7 @@ This page applies to customers that have not opted in to Enhanced EC2 Scanning. 
 ------
 #### [ API ]
 
- Run the [https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateEc2DeepInspectionConfiguration.html](https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateEc2DeepInspectionConfiguration.html) command. For `packagePaths` specify an array of paths to scan.
+ Run the [UpdateEc2DeepInspectionConfiguration](https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateEc2DeepInspectionConfiguration.html) command. For `packagePaths` specify an array of paths to scan.
 
 ------
 

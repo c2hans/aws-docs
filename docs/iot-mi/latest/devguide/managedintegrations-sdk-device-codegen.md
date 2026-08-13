@@ -23,7 +23,7 @@ The following image describes the code generator creating the C source files.
 
 ![The End device SDK code generator and how it works.](http://docs.aws.amazon.com/iot-mi/latest/devguide/images/iot-managedintegrations-sdk-codegen.png)
 
-The End device SDK includes Python plugins and Jinja2 templates that work with [https://github.com/project-chip/connectedhomeip/blob/master/scripts/codegen.py](https://github.com/project-chip/connectedhomeip/blob/master/scripts/codegen.py) in the [https://github.com/project-chip/connectedhomeip/tree/master](https://github.com/project-chip/connectedhomeip/tree/master) project. This combination generates multiple C files for each cluster based on your .matter file input.
+The End device SDK includes Python plugins and Jinja2 templates that work with [codegen.py](https://github.com/project-chip/connectedhomeip/blob/master/scripts/codegen.py) in the [connectedhomeip](https://github.com/project-chip/connectedhomeip/tree/master) project. This combination generates multiple C files for each cluster based on your .matter file input.
 
 **Topics**
 + [Python plugin](#managedintegrations-sdk-codegen-plugin)

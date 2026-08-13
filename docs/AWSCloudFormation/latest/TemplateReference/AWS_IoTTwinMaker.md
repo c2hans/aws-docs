@@ -10,6 +10,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 **Resource types**
 + [AWS::IoTTwinMaker::ComponentType](aws-resource-iottwinmaker-componenttype.md)
 + [AWS::IoTTwinMaker::Entity](aws-resource-iottwinmaker-entity.md)
++ [AWS::IoTTwinMaker::MetadataTransferJob](aws-resource-iottwinmaker-metadatatransferjob.md)
 + [AWS::IoTTwinMaker::Scene](aws-resource-iottwinmaker-scene.md)
 + [AWS::IoTTwinMaker::SyncJob](aws-resource-iottwinmaker-syncjob.md)
 + [AWS::IoTTwinMaker::Workspace](aws-resource-iottwinmaker-workspace.md)

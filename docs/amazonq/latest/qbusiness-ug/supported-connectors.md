@@ -10,7 +10,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 **Note**
 Before you connect an Amazon Q Business data source to your application, you [must add an index and retriever](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/select-retriever.html) to it.
 
-To connect a data source to your Amazon Q Business application environment, you can use the AWS Management Console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API operation.
+To connect a data source to your Amazon Q Business application environment, you can use the AWS Management Console or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API operation.
 
 By using the `CreateDataSource` API operation, you can configure tags, sync run schedules, and configure Amazon VPC settings. Then, you can use the `configuration` parameter to provide all other configuration information specific to your data source connector.
 

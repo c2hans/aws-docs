@@ -24,7 +24,7 @@ If an application is misconfigured, it can transition to a running state during 
 + The correct permission is not defined in the IAM role that manages related permissions.
 +  doesn't have permission to assume the IAM role that manages related permissions.
 
-For more information about Amazon CloudWatch, see the [http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/).
+For more information about Amazon CloudWatch, see the [*Amazon CloudWatch User Guide*](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/).
 
 ## Adding the PutLogEvents Policy Action
 <a name="enable_putlogevents"></a>

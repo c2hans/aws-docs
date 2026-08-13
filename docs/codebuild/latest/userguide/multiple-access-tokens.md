@@ -13,7 +13,7 @@ You can set your source credentials at three different levels:
 
 1. **Source level credentials for a specific repository:** This is when a Secrets Manager secret or CodeConnections connection is defined on a project source. These credentials will only be used for operations on the specified source repository. This allows you to set up multiple access tokens with different permission scopes in the same project, and not use the default account level credentials.
 
-1. **Project level fallback credentials:** You can set a project level fallback credential by using `NO_SOURCE` as primary source type and define a secret or connection on it. This is can be used when you have multiple sources on a project, but want to use the same credentials for them, or when you don't want to use the default account level credentials for your project.
+1. **Project level fallback credentials:** You can set a project level fallback credential by using `NO_SOURCE` as primary source type and define a secret or connection on it. Use this when you have multiple sources on a project but want to use the same credentials for them, or when you don't want to use the default account level credentials for your project.
 
 **Topics**
 + [Step 1: Create a Secrets Manager secret or a CodeConnections connection](#create-secret-connection)
@@ -27,7 +27,7 @@ You can set your source credentials at three different levels:
 Use the following instructions to create a Secrets Manager secret or a CodeConnections connection:
 + [Create and store a token in a Secrets Manager secret](asm-create-secret.md).
 + [Create a connection to GitHub](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-create-github.html)
-+ [Create a connection to to GitHub Enterprise Server](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-create-gheserver.html)
++ [Create a connection to GitHub Enterprise Server](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-create-gheserver.html)
 + [Create a connection to Bitbucket](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-create-bitbucket.html)
 
 ## Step 2: Grant CodeBuild project IAM role access to Secrets Manager secrets

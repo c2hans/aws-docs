@@ -227,8 +227,6 @@ Conditional expression that determines whether this processor executes. Maximum 
 **Example**
 Consider a lookup table named `network_assets` with the following rows:
 
-**network\_assets lookup table**
-
 | ip\_address | hostname | owner | location |
 | --- | --- | --- | --- |
 | 10.0.1.12 | web-server-01 | team-alpha | us-east-1 |

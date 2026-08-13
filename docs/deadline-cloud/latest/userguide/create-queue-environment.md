@@ -26,7 +26,7 @@ You can add queue environments using the console, or by editing the json or YAML
 ## Default conda queue environment
 <a name="conda-queue-environment"></a>
 
-When you create a queue associated with a service-managed fleet, you have the option of adding a default queue environment that supports [https://docs.conda.io/en/latest/](https://docs.conda.io/en/latest/) to download and install packages in a virtual environment for your jobs.
+When you create a queue associated with a service-managed fleet, you have the option of adding a default queue environment that supports [conda](https://docs.conda.io/en/latest/) to download and install packages in a virtual environment for your jobs.
 
 If you add a default queue environment with the Deadline Cloud [console](https://console.aws.amazon.com/deadlinecloud/home), the environment is created for you. If you add a queue another way, such as the AWS CLI or with CloudFormation, you'll need to create the queue environment yourself. To ensure you have the correct contents for the environment, you can refer to queue environment template YAML files on GitHub. For the contents of the default queue environment, see the [default queue environment YAML file](https://github.com/aws-deadline/deadline-cloud-samples/blob/mainline/queue_environments/conda_queue_env_from_console.yaml) on GitHub.
 

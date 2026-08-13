@@ -42,7 +42,7 @@ Required: Yes
  ** type **   <a name="AWSMarketplaceService-Type-marketplace-discovery_FixedUpfrontPricingTerm-type"></a>
 The category of the term.
 Type: String
-Valid Values: `ByolPricingTerm | ConfigurableUpfrontPricingTerm | FixedUpfrontPricingTerm | UsageBasedPricingTerm | FreeTrialPricingTerm | LegalTerm | PaymentScheduleTerm | RecurringPaymentTerm | RenewalTerm | SupportTerm | ValidityTerm | VariablePaymentTerm`
+Valid Values: `ByolPricingTerm | ConfigurableUpfrontPricingTerm | FixedUpfrontPricingTerm | UsageBasedPricingTerm | FreeTrialPricingTerm | LegalTerm | PaymentScheduleTerm | RecurringPaymentTerm | RenewalTerm | SupportTerm | ValidityTerm | VariablePaymentTerm | NetPaymentTerm`
 Required: Yes
 
  ** duration **   <a name="AWSMarketplaceService-Type-marketplace-discovery_FixedUpfrontPricingTerm-duration"></a>

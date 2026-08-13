@@ -163,7 +163,7 @@ With sync mode, you can customize what content gets synced with your index when 
 
 **API**
 
-Specify the sync mode using the `configuration` parameter of the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) operation. Choose from the following options:
+Specify the sync mode using the `configuration` parameter of the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) operation. Choose from the following options:
 + **Forced full crawl** – Crawl and sync all content to your index.
 + **Full crawl** – Crawl all content and sync only new, modified, or deleted content.
 + **Change log** – Crawl and sync only new, modified, and deleted content.
@@ -177,7 +177,7 @@ If you get a Resource not found exception when you try to view your CloudWatch l
 ## Sync run schedule
 <a name="connector-sync-run"></a>
 
-When you use the console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API operation, you can choose to periodically sync your data source with your retriever on a custom schedule. You can choose from the following frequency options:
+When you use the console or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API operation, you can choose to periodically sync your data source with your retriever on a custom schedule. You can choose from the following frequency options:
 + **Run on demand** – Sync a data source with your index only when you choose to.
 + **Hourly** – Sync your data source with your index every hour. You can choose which minute the sync begins.
 + **Daily** – Sync your data source with your index daily. You can choose the sync start time in UTC format in hours and minutes.

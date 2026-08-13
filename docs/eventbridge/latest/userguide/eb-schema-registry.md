@@ -29,6 +29,6 @@ Exporting custom schemas from the EventBridge Schema Registry is not supported.
 
 To [create a custom schema](eb-schema-create.md) in your new registry, select **Create custom schema**. To add a schema to your registry, select that registry when you're creating a new schema.
 
-To create a registry by using the API, use [https://docs.aws.amazon.com/eventbridge/latest/schema-reference/v1-registries-name-registryname.html#v1-registries-name-registryname-http-methods](https://docs.aws.amazon.com/eventbridge/latest/schema-reference/v1-registries-name-registryname.html#v1-registries-name-registryname-http-methods). For more information, see [Amazon EventBridge Schema Registry API Reference](https://docs.aws.amazon.com/eventbridge/latest/schema-reference/index.html).
+To create a registry by using the API, use [`CreateRegistry`](https://docs.aws.amazon.com/eventbridge/latest/schema-reference/v1-registries-name-registryname.html#v1-registries-name-registryname-http-methods). For more information, see [Amazon EventBridge Schema Registry API Reference](https://docs.aws.amazon.com/eventbridge/latest/schema-reference/index.html).
 
 For information about using the EventBridge schema registry through AWS CloudFormation, see [EventSchemas Resource Type Reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_EventSchemas.html) in CloudFormation.

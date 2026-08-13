@@ -19,7 +19,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[PassRequestHeaders](#cfn-bedrockagentcore-gateway-interceptorinputconfiguration-passrequestheaders)" : {{Boolean}}
+  "[PassRequestHeaders](#cfn-bedrockagentcore-gateway-interceptorinputconfiguration-passrequestheaders)" : {{Boolean}},
+  "[PayloadFilter](#cfn-bedrockagentcore-gateway-interceptorinputconfiguration-payloadfilter)" : {{InterceptorPayloadFilter}}
 }
 ```
 
@@ -28,6 +29,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [PassRequestHeaders](#cfn-bedrockagentcore-gateway-interceptorinputconfiguration-passrequestheaders): {{Boolean}}
+  [PayloadFilter](#cfn-bedrockagentcore-gateway-interceptorinputconfiguration-payloadfilter): {{
+    InterceptorPayloadFilter}}
 ```
 
 ## Properties
@@ -37,4 +40,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 Indicates whether to pass request headers as input into the interceptor. When set to true, request headers will be passed.
 *Required*: Yes
 *Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`PayloadFilter`  <a name="cfn-bedrockagentcore-gateway-interceptorinputconfiguration-payloadfilter"></a>
+Property description not available.
+*Required*: No
+*Type*: [InterceptorPayloadFilter](aws-properties-bedrockagentcore-gateway-interceptorpayloadfilter.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

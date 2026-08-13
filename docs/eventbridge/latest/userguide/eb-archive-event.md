@@ -174,4 +174,4 @@ To delete an attribute's properties, choose the **Edit** button for that attribu
 
 1. Choose **Create archive**.
 
-To confirm that events are successfully sent to the archive, you can use the [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_DescribeArchive.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_DescribeArchive.html) operation of the EventBridge API to see if the `EventCount` reflects the number of events in the archive. If it is 0, there are no events in the archive.
+To confirm that events are successfully sent to the archive, you can use the [`DescribeArchive`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_DescribeArchive.html) operation of the EventBridge API to see if the `EventCount` reflects the number of events in the archive. If it is 0, there are no events in the archive.

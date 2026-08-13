@@ -32,8 +32,8 @@ DNS entries (endpoints) in use are as follows:
 + Server endpoints take the form `{{server-id}}.server.transfer.{{region}}.amazonaws.com`.
 
 This API interface reference for AWS Transfer Family contains documentation for a programming interface that you can use to manage AWS Transfer Family. The reference structure is as follows:
-+ For the alphabetical list of API actions, see [https://docs.aws.amazon.com/transfer/latest/APIReference/API_Operations.html](https://docs.aws.amazon.com/transfer/latest/APIReference/API_Operations.html).
-+ For the alphabetical list of data types, see [https://docs.aws.amazon.com/transfer/latest/APIReference/API_Types.html](https://docs.aws.amazon.com/transfer/latest/APIReference/API_Types.html).
++ For the alphabetical list of API actions, see [Actions](https://docs.aws.amazon.com/transfer/latest/APIReference/API_Operations.html).
++ For the alphabetical list of data types, see [Types](https://docs.aws.amazon.com/transfer/latest/APIReference/API_Types.html).
 + For a list of common query parameters, see [Common Parameters](https://docs.aws.amazon.com/transfer/latest/APIReference/CommonParameters.html).
 + For descriptions of the error codes, see [Common Errors](https://docs.aws.amazon.com/transfer/latest/APIReference/CommonErrors.html).
 
@@ -74,7 +74,7 @@ The following are the headers that must include with your POST requests to Trans
 ### Transfer Family request inputs and signing
 <a name="tf-request-structure"></a>
 
-All request inputs must be sent as part of JSON payload in request body. For Actions in which all request fields are optional, for example `ListServers`, you still need to provide an empty JSON object in the request body, such as `{}`. The structure of Transfer Family payload request/response is documented in existing the API reference, for example [https://docs.aws.amazon.com/transfer/latest/userguide/API_DescribeServer.html](https://docs.aws.amazon.com/transfer/latest/userguide/API_DescribeServer.html).
+All request inputs must be sent as part of JSON payload in request body. For Actions in which all request fields are optional, for example `ListServers`, you still need to provide an empty JSON object in the request body, such as `{}`. The structure of Transfer Family payload request/response is documented in existing the API reference, for example [DescribeServer](https://docs.aws.amazon.com/transfer/latest/userguide/API_DescribeServer.html).
 
 Transfer Family supports authentication using AWS Signature Version 4. For details, see [Signing AWS API requests](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html).
 

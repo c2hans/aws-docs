@@ -7,12 +7,12 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 # IAM role for Amazon Q Business data source connectors
 <a name="iam-roles-ds"></a>
 
-You can use either the Amazon Q Business console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API operation to connect your data source. However, you must first provide Amazon Q Business with an IAM role that has permissions to access the data source resources.
+You can use either the Amazon Q Business console or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API operation to connect your data source. However, you must first provide Amazon Q Business with an IAM role that has permissions to access the data source resources.
 
 If you use the console, you can either create an IAM role when you connect your data source to Amazon Q Business or use an existing role. If you use the `CreateDataSource` API operation, you must provide the Amazon Resource Name (ARN) of an existing IAM role.
 
 The specific permissions required depend on the data source. At a minimum, your IAM role must include the following:
-+ Permission to access the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) and [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchDeleteDocument.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchDeleteDocument.html) API operations in order to ingest documents.
++ Permission to access the [`BatchPutDocument`](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) and [`BatchDeleteDocument`](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchDeleteDocument.html) API operations in order to ingest documents.
 + Permission to access the User Store APIs needed to ingest access control and identity information from documents.
 
 **Topics**
@@ -265,7 +265,7 @@ To learn how to create an IAM role, see [Create a role to delegate permissions t
 
 When you use an Amazon S3 bucket as a data source, you must provide a role that has permissions to:
 + Access your Amazon S3 bucket.
-+ Permission to access the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) and [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchDeleteDocument.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchDeleteDocument.html) API operations in order to ingest documents.
++ Permission to access the [`BatchPutDocument`](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) and [`BatchDeleteDocument`](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchDeleteDocument.html) API operations in order to ingest documents.
 + Access the Principal Store APIs needed to ingest access control and identity information from documents.
 
 **To allow Amazon Q to use an Amazon S3 bucket as a data source, use the following role policy:**

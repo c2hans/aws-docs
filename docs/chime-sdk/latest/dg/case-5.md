@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/case-5.html
 # Ending a call using the Amazon Chime SDK PSTN audio service
 <a name="case-5"></a>
 
-You can use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateSipMediaApplicationCall.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateSipMediaApplicationCall.html) API to end an outbound call. The API invokes the endpoint of a specified **SIP media application ID**. Customers can control the flow of the call by returning actions to the SIP media application.
+You can use the [CreateSipMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateSipMediaApplicationCall.html) API to end an outbound call. The API invokes the endpoint of a specified **SIP media application ID**. Customers can control the flow of the call by returning actions to the SIP media application.
 
-In the event of a successful response, the API returns a 202 http status code along with the `transactionId`, which you can use with the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateSipMediaApplicationCall.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateSipMediaApplicationCall.html) API to update an in-progress call.
+In the event of a successful response, the API returns a 202 http status code along with the `transactionId`, which you can use with the [UpdateSipMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateSipMediaApplicationCall.html) API to update an in-progress call.
 
 The following diagram shows the invocations made to the AWS Lambda function endpoint for an outbound call.
 

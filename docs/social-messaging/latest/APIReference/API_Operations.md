@@ -7,6 +7,7 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 
 The following actions are supported:
 +  [AssociateWhatsAppBusinessAccount](API_AssociateWhatsAppBusinessAccount.md)
++  [CreateWhatsAppDataset](API_CreateWhatsAppDataset.md)
 +  [CreateWhatsAppFlow](API_CreateWhatsAppFlow.md)
 +  [CreateWhatsAppMessageTemplate](API_CreateWhatsAppMessageTemplate.md)
 +  [CreateWhatsAppMessageTemplateFromLibrary](API_CreateWhatsAppMessageTemplateFromLibrary.md)
@@ -31,6 +32,7 @@ The following actions are supported:
 +  [PostWhatsAppMessageMedia](API_PostWhatsAppMessageMedia.md)
 +  [PublishWhatsAppFlow](API_PublishWhatsAppFlow.md)
 +  [PutWhatsAppBusinessAccountEventDestinations](API_PutWhatsAppBusinessAccountEventDestinations.md)
++  [SendWhatsAppConversionEvent](API_SendWhatsAppConversionEvent.md)
 +  [SendWhatsAppMessage](API_SendWhatsAppMessage.md)
 +  [TagResource](API_TagResource.md)
 +  [UntagResource](API_UntagResource.md)

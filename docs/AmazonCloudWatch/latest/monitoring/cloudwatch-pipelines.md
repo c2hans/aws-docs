@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloud
 
 CloudWatch pipelines is a fully managed data collector that ingests, transforms, and routes telemetry data—including logs and metrics—from AWS services, third-party applications, and custom sources to CloudWatch. Built-in processors let you enrich, filter, and standardize logs into formats like OCSF—without managing infrastructure or third-party tools. For metrics, CloudWatch pipelines processes and enriches OpenTelemetry (OTel) metrics inline during ingestion into CloudWatch.
 
-CloudWatch pipelines is fully integrated with the [logs management experience](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/data-source-discovery-management.html), enabling you to consistently process and enrich log data across related log groups via data-source and data-type specification. This unlocks use cases such as:
+CloudWatch pipelines is fully integrated with the [logs management experience](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/data-source-discovery-management.html), enabling you to consistently process and enrich log data across related log groups through data-source and data-type specification. This unlocks use cases such as:
 + **Automatic log categorization** – Logs processed through pipelines are automatically tagged with data source information, enabling service-centric discovery and querying across your infrastructure
 + **Expanding third-party support** – Aggregate and normalize logs from a growing library of third-party sources for unified analytics and compliance
 
@@ -18,7 +18,7 @@ For metrics, CloudWatch pipelines enables the following use cases:
 
 Output from pipelines is fully compatible with CloudWatch Logs features including Logs Insights queries, Logs Anomaly Detection, and Live Tail. CloudWatch pipelines works with both Standard and Infrequent Access log classes and is backwards compatible with Log Transformers.
 
-For metrics pipelines, processed metrics are fully queryable via PromQL in Query Studio and compatible with CloudWatch Alarms and Anomaly Detection.
+For metrics pipelines, processed metrics are fully queryable through PromQL in Query Studio and compatible with CloudWatch Alarms and Anomaly Detection.
 
 To get started with CloudWatch pipelines, visit [pipelines within the CloudWatch ingestion page](https://console.aws.amazon.com/cloudwatch/home?#/telemetry-config:pipelines?useCase=All) in the CloudWatch console.
 

@@ -29,7 +29,7 @@ The dual-stack cluster endpoint was introduced in October 2024. For more informa
 ## `IPv4` cluster endpoint format
 <a name="cluster-endpoint-ipv4"></a>
 
-EKS creates a unique endpoint in the following format for each cluster that selects `IPv4` in the IP family (ipFamily) setting of the cluster:
+EKS creates a unique endpoint in the following format for each cluster that selects `IPv4` in the IP family (`ipFamily`) setting of the cluster:
 
 **Example**
 EKS cluster public/private endpoint `eks-cluster.{{region}}.eks.amazonaws.com`

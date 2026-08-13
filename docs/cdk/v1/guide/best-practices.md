@@ -95,7 +95,7 @@ This section contains best practices for developing constructs. Constructs are r
 ### Model with constructs, deploy with stacks
 <a name="best-practices-constructs-model"></a>
 
-Stacks are the unit of deployment: everything in a stack is deployed together. So when building your application's higher-level logical units from multiple AWS resources, represent each logical unit as a [https://docs.aws.amazon.com/cdk/api/v1/docs/constructs.Construct.html](https://docs.aws.amazon.com/cdk/api/v1/docs/constructs.Construct.html), not as a [https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.Stack.html](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.Stack.html). Use stacks only to describe how your constructs should be composed and connected for your various deployment scenarios.
+Stacks are the unit of deployment: everything in a stack is deployed together. So when building your application's higher-level logical units from multiple AWS resources, represent each logical unit as a [`Construct`](https://docs.aws.amazon.com/cdk/api/v1/docs/constructs.Construct.html), not as a [`Stack`](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.Stack.html). Use stacks only to describe how your constructs should be composed and connected for your various deployment scenarios.
 
 If one of your logical units is a Web site, for example, the constructs that make it up (Amazon S3 bucket, API Gateway, Lambda functions, Amazon RDS tables, etc.) should be composed into a single high-level construct, and then that construct should be instantiated in one or more stacks for deployment.
 

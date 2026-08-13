@@ -83,7 +83,7 @@ If your Amazon VPC endpoint service is owned by a different AWS account other th
 
 When your VPC endpoint service is owned by the same AWS account as your external key store, you must add AWS KMS to the **Allow principals** list for your VPC endpoint service.
 
-The following example uses the [https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-vpc-endpoint-service-permissions.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-vpc-endpoint-service-permissions.html) AWS CLI command to allow AWS KMS to connect to the specified VPC endpoint service in the US West (Oregon) (us-west-2) Region. Before using this command, replace the Amazon VPC service ID and AWS Region with valid values for your configuration.
+The following example uses the [`modify-vpc-endpoint-service-permissions`](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-vpc-endpoint-service-permissions.html) AWS CLI command to allow AWS KMS to connect to the specified VPC endpoint service in the US West (Oregon) (us-west-2) Region. Before using this command, replace the Amazon VPC service ID and AWS Region with valid values for your configuration.
 
 ```
 modify-vpc-endpoint-service-permissions
@@ -98,7 +98,7 @@ To remove this permission, use the [Amazon VPC console](https://docs.aws.amazon.
 
 When your VPC endpoint service is owned by the another AWS account, you must add both AWS KMS and your external key store to the **Allow principals** list for your VPC endpoint service.
 
-The following example uses the [https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-vpc-endpoint-service-permissions.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-vpc-endpoint-service-permissions.html) AWS CLI command to allow both AWS KMS and your external key store (XKS) to connect to the specified VPC endpoint service in the US West (Oregon) (us-west-2) Region. Before using this command, replace the Amazon VPC service ID, AWS Region, and IAM principal ARN with valid values for your configuration. The IAM principal should be replaced with a principal in the XKS owner AWS account.
+The following example uses the [`modify-vpc-endpoint-service-permissions`](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-vpc-endpoint-service-permissions.html) AWS CLI command to allow both AWS KMS and your external key store (XKS) to connect to the specified VPC endpoint service in the US West (Oregon) (us-west-2) Region. Before using this command, replace the Amazon VPC service ID, AWS Region, and IAM principal ARN with valid values for your configuration. The IAM principal should be replaced with a principal in the XKS owner AWS account.
 
 In this example, `arn:aws:iam::{{123456789012}}:role/{{cks_role}}` is the IAM principal in the XKS owner account, which will be used to create, update, or connect the XKS to your VPC endpoint service. If you would like to allow all principals in the XKS owner account to access your VPC endpoint service, you can specify `arn:aws:iam::{{123456789012}}:root`.
 

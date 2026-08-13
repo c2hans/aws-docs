@@ -65,7 +65,7 @@ If you anticipate discovering and assigning additional virtual machines in the f
 ## VMware Tags
 <a name="backup-gateway-vmwaretags"></a>
 
-[https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_VmwareTag.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_VmwareTag.html) are key-value pairs you can use to manage, to filter, and to search for your resources.
+[**Tags**](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_VmwareTag.html) are key-value pairs you can use to manage, to filter, and to search for your resources.
 
 A VMware tag is composed of a **category** and a **tag name**. VMware tags are used to group virtual machines. A tag name is a label assigned to a virtual machine. A category is a collection of tag names.
 
@@ -88,7 +88,7 @@ If you use tags on your virtual machines, you can add up to 10 matching tags in 
 
 1. After adding mapping(s), specify the IAM role you intend to use to apply these AWS tags to the VMware virtual machines.
 
-   The policy [https://docs.aws.amazon.com/aws-backup/latest/devguide/security-iam-awsmanpol.html#aws-managed-policies](https://docs.aws.amazon.com/aws-backup/latest/devguide/security-iam-awsmanpol.html#aws-managed-policies) contains needed permissions. You can attach this policy to the role you are using (or have an administrator attached it) or you can create a custom policy for the role being used.
+   The policy [`AWSBackupGatewayServiceRolePolicyForVirtualMachineMetadataSync`](https://docs.aws.amazon.com/aws-backup/latest/devguide/security-iam-awsmanpol.html#aws-managed-policies) contains needed permissions. You can attach this policy to the role you are using (or have an administrator attached it) or you can create a custom policy for the role being used.
 
 1. Lastly, click **Add hypervisor** or **Save**.
 
@@ -160,7 +160,7 @@ To assign virtual machines to a backup plan using mapped tags, do the following:
 ### VMware tags using the AWS CLI
 <a name="w2aac17c19c43c23c15c37"></a>
 
-AWS Backup uses the API call [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_PutHypervisorPropertyMappings.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_PutHypervisorPropertyMappings.html) to map hypervisor entity properties in on-premise to properties in AWS.
+AWS Backup uses the API call [`PutHypervisorPropertyMappings`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_PutHypervisorPropertyMappings.html) to map hypervisor entity properties in on-premise to properties in AWS.
 
 In the AWS CLI, use the operation `put-hypervisor-property-mappings`:
 
@@ -183,7 +183,7 @@ aws backup-gateway put-hypervisor-property-mappings \
 --region us-east-1
 ```
 
-You can also use [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_GetHypervisorPropertyMappings.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_GetHypervisorPropertyMappings.html) to assist with property mappings information. In the AWS CLI, use the operation `get-hypervisor-property-mappings`. Here is an example template:
+You can also use [`GetHypervisorPropertyMappings`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_GetHypervisorPropertyMappings.html) to assist with property mappings information. In the AWS CLI, use the operation `get-hypervisor-property-mappings`. Here is an example template:
 
 ```
 aws backup-gateway get-hypervisor-property-mappings --hypervisor-arn {{HypervisorARN}}
@@ -203,7 +203,7 @@ aws backup-gateway get-hypervisor-property-mappings \
 
 You can sync the metadata of virtual machines. When you do, the VMware tags present on the virtual machine that are part of the mappings will be synched. Also, AWS tags mapped to the VMware tags present on the virtual machine will be applied to the AWS Virtual Machine resource.
 
-AWS Backup uses the API call [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_StartVirtualMachinesMetadataSync.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_StartVirtualMachinesMetadataSync.html) to sync the metadata of the virtual machines discovered by the hypervisor. To sync metadata of virtual machines discovered by the hypervisor using AWS CLI, use the operation `start-virtual-machines-metadata-sync`.
+AWS Backup uses the API call [`StartVirtualMachinesMetadataSync`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_StartVirtualMachinesMetadataSync.html) to sync the metadata of the virtual machines discovered by the hypervisor. To sync metadata of virtual machines discovered by the hypervisor using AWS CLI, use the operation `start-virtual-machines-metadata-sync`.
 
 Example template:
 
@@ -221,7 +221,7 @@ aws backup-gateway start-virtual-machines-metadata-sync \
 --region us-east-1
 ```
 
-You can also use [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_GetHypervisor.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_GetHypervisor.html) to assist with hypervisor information, such as host, state, status of latest metadata sync, and also to retrieve the last successful metadata sync time. In the AWS CLI, use the operation `get-hypervisor`.
+You can also use [`GetHypervisor`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_GetHypervisor.html) to assist with hypervisor information, such as host, state, status of latest metadata sync, and also to retrieve the last successful metadata sync time. In the AWS CLI, use the operation `get-hypervisor`.
 
 Example template:
 

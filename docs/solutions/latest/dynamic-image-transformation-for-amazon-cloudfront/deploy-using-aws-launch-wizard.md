@@ -9,7 +9,7 @@ This solution features a guided deployment process using AWS Launch Wizard. Foll
 
 1. Sign in to the AWS Management Console and select the button below to start the deployment process.
 
-    [https://console.aws.amazon.com/launchwizard/home#/deployment/create/SO0023](https://console.aws.amazon.com/launchwizard/home#/deployment/create/SO0023)
+    [![launch button](http://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/launch-button.png)](https://console.aws.amazon.com/launchwizard/home#/deployment/create/SO0023)
 
 1. If there are more than one deployment patterns available for the solution, select the one that’s most applicable to your use case.
 

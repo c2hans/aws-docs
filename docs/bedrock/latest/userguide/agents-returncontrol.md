@@ -5,11 +5,11 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-returnco
 # Return control to the agent developer by sending elicited information in an InvokeAgent response
 <a name="agents-returncontrol"></a>
 
-Rather than sending the information that your agent has elicited from the user to a Lambda function for fulfillment, you can instead choose to return control to the agent developer by sending the information in the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response. You can configure return of control to the agent developer when creating or updating an action group. Through the API, you specify `RETURN_CONTROL` as the `customControl` value in the `actionGroupExecutor` object in a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html) or [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentActionGroup.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentActionGroup.html) request. For more information, see [Add an action group to your agent in Amazon Bedrock](agents-action-add.md).
+Rather than sending the information that your agent has elicited from the user to a Lambda function for fulfillment, you can instead choose to return control to the agent developer by sending the information in the [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response. You can configure return of control to the agent developer when creating or updating an action group. Through the API, you specify `RETURN_CONTROL` as the `customControl` value in the `actionGroupExecutor` object in a [CreateAgentActionGroup](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html) or [UpdateAgentActionGroup](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentActionGroup.html) request. For more information, see [Add an action group to your agent in Amazon Bedrock](agents-action-add.md).
 
-If you configure return of control for an action group, and if the agent determines that it should call an action in this action group, the API or function details elicited from the user will be returned in the `invocationInputs` field in the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response, alongside a unique `invocationId`. You can then do the following:
+If you configure return of control for an action group, and if the agent determines that it should call an action in this action group, the API or function details elicited from the user will be returned in the `invocationInputs` field in the [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response, alongside a unique `invocationId`. You can then do the following:
 + Set up your application to invoke the API or function that you defined, provided the information returned in the `invocationInputs`.
-+ Send the results from your application's invocation in another [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request, in the `sessionState` field, to provide context to the agent. You must use the same `invocationId` and `actionGroup` that were returned in the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response. This information can be used as context for further orchestration, sent to post-processing for the agent to format a response, or used directly in the agent's response to the user.
++ Send the results from your application's invocation in another [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request, in the `sessionState` field, to provide context to the agent. You must use the same `invocationId` and `actionGroup` that were returned in the [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response. This information can be used as context for further orchestration, sent to post-processing for the agent to format a response, or used directly in the agent's response to the user.
 **Note**
 If you include `returnControlInvocationResults` in the `sessionState` field, the `inputText` field will be ignored.
 
@@ -24,7 +24,7 @@ For example, you might have the following action groups:
 
 The following is a hypothetical sequence that might occur:
 
-1. The user prompts your agent with the following query: **What should I do today?** This query is sent in the `inputText` field of an [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request.
+1. The user prompts your agent with the following query: **What should I do today?** This query is sent in the `inputText` field of an [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request.
 
 1. Your agent recognizes that the `suggestActivities` action should be invoked, but given the description, predicts that it should first invoke the `getWeather` action as context for helping to fulfill the `suggestActivities` action.
 
@@ -32,7 +32,7 @@ The following is a hypothetical sequence that might occur:
 
 1. The user responds **Seattle**.
 
-1. The agent returns the parameters for `getWeather` in the following [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response (select a tab to see examples for an action group defined with that method):
+1. The agent returns the parameters for `getWeather` in the following [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response (select a tab to see examples for an action group defined with that method):
 
 ------
 #### [ Function details ]
@@ -105,7 +105,7 @@ The following is a hypothetical sequence that might occur:
 
 1. Your application is configured to use these parameters to get the weather for `seattle` for the date `2024-09-15`. The weather is determined to be rainy.
 
-1. You send these results in the `sessionState` field of another [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request, using the same `invocationId`, `actionGroup`, and `function` as the previous response. Select a tab to see examples for an action group defined with that method:
+1. You send these results in the `sessionState` field of another [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request, using the same `invocationId`, `actionGroup`, and `function` as the previous response. Select a tab to see examples for an action group defined with that method:
 
 ------
 #### [ Function details ]
@@ -165,7 +165,7 @@ The following is a hypothetical sequence that might occur:
 ### Example for returning control to the collaborator agent
 <a name="collaborator-agent-returncontrol-ex"></a>
 
-If you are using [multi-agent collaboration](agents-multi-agent-collaboration.md) and if an agent collaborator chooses to return control by sending the information in the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response, the information is returned in supervisor agent response with additional identifiers `agentId` and `collaboratorName`. Select a tab to see examples for an action group defined with that method:
+If you are using [multi-agent collaboration](agents-multi-agent-collaboration.md) and if an agent collaborator chooses to return control by sending the information in the [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response, the information is returned in supervisor agent response with additional identifiers `agentId` and `collaboratorName`. Select a tab to see examples for an action group defined with that method:
 
 ------
 #### [ Function details ]

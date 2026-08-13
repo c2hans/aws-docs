@@ -44,7 +44,7 @@ You can view AWS Managed Microsoft AD directory information using the AWS Manage
   aws ds describe-directories --directory-id {{d-1234567890}} --output table
   ```
 
-  For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ds/describe-directories.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ds/describe-directories.html).
+  For more information, see [`describe-directories`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ds/describe-directories.html).
 
 ------
 #### [ PowerShell ]
@@ -58,6 +58,6 @@ You can view AWS Managed Microsoft AD directory information using the AWS Manage
   Format-List *
   ```
 
-  For more information, see [https://docs.aws.amazon.com//powershell/latest/reference/items/Get-DSDirectory.html](https://docs.aws.amazon.com//powershell/latest/reference/items/Get-DSDirectory.html).
+  For more information, see [`Get-DSDirectory`](https://docs.aws.amazon.com//powershell/latest/reference/items/Get-DSDirectory.html).
 
 ------

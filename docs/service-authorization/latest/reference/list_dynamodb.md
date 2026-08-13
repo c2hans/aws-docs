@@ -773,6 +773,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [table\*](#list_dynamodb-resource-table) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_)<br />[dynamodb:Attributes](#list_dynamodb-dynamodb_Attributes)<br />[dynamodb:ReturnConsumedCapacity](#list_dynamodb-dynamodb_ReturnConsumedCapacity)<br />[dynamodb:ReturnValues](#list_dynamodb-dynamodb_ReturnValues)<br />[dynamodb:Select](#list_dynamodb-dynamodb_Select)
   - **Access level:** Read
 
+- **   [SearchVectors](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_SearchVectors.html)  **
+  - **Description:** Grants permission to perform a vector similarity search on a vector index associated with an Amazon DynamoDB table
+  - **Resource types (\*required):** [index\*](#list_dynamodb-resource-index) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [table\*](#list_dynamodb-resource-table) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
 - **   [TagResource](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TagResource.html)  **
   - **Description:** Grants permission to associate a set of tags with an Amazon DynamoDB resource
   - **Resource types (\*required):** [stream](#list_dynamodb-resource-stream) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_dynamodb-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_dynamodb-aws_TagKeys)

@@ -34,7 +34,7 @@ By default, EventBridge encrypts event data in an archive using 256-bit Advanced
 
 Keep in the following considerations in mind about how EventBridge delivers events to archives:
 + There may be a delay between an event being received on an event bus and the event arriving in the archive. We recommend you delay replaying archived events for 10 minutes to make sure all events are replayed.
-+ The `EventCount` and `SizeBytes` values of the [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_DescribeArchive.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_DescribeArchive.html) operation have a reconciliation period of 24 hours. Therefore, any recently-expired or newly-archived events may not be immediately reflected in these values.
++ The `EventCount` and `SizeBytes` values of the [`DescribeArchive`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_DescribeArchive.html) operation have a reconciliation period of 24 hours. Therefore, any recently-expired or newly-archived events may not be immediately reflected in these values.
 
 ### Preventing replayed events from being delivered to an archive
 <a name="eb-archive-managed-rule"></a>

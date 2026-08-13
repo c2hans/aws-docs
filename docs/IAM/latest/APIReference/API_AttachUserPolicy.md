@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_AttachUserPo
 
 Attaches the specified managed policy to the specified user.
 
-You use this operation to attach a *managed* policy to a user. To embed an inline policy in a user, use [https://docs.aws.amazon.com/IAM/latest/APIReference/API_PutUserPolicy.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_PutUserPolicy.html).
+You use this operation to attach a *managed* policy to a user. To embed an inline policy in a user, use [`PutUserPolicy`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_PutUserPolicy.html).
 
 As a best practice, you can validate your IAM policies. To learn more, see [Validating IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_policy-validator.html) in the *IAM User Guide*.
 

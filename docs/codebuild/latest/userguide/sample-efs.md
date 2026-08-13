@@ -44,7 +44,7 @@ The sample covers the four high-level steps required to use Amazon EFS with AWS 
 ### Step 1: Create a VPC using CloudFormation
 <a name="sample-efs-create-vpc"></a>
 
- Create your VPC with an CloudFormation template.
+ Create your VPC with a CloudFormation template.
 
 1.  Follow the instructions in [CloudFormation VPC template](cloudformation-vpc-template.md) to use CloudFormation to create a VPC.
 **Note**
@@ -140,7 +140,7 @@ By default, Docker daemon is enabled for non-VPC builds. If you would like to us
 
 1.  For **Build specification**, choose **Insert build commands**, and then choose **Switch to editor**.
 
-1.  Enter the following build spec commands into the editor. Replace `{{<file_system_identifier>}}` with the identifier you entered in step 17. Use capital letters (for example, `CODEBUILD_MY_EFS`).
+1.  Enter the following buildspec commands into the editor. Replace `{{<file_system_identifier>}}` with the identifier you entered in step 17. Use capital letters (for example, `CODEBUILD_MY_EFS`).
 
    ```
    version: 0.2

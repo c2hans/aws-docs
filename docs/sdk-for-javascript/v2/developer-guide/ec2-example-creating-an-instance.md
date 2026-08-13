@@ -17,8 +17,8 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 <a name="ec2-example-creating-an-instance-scenario"></a>
 
 In this example, you use a Node.js module to create an Amazon EC2 instance and assign both a key pair and tags to it. The code uses the SDK for JavaScript to create and tag an instance by using these methods of the Amazon EC2 client class:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#runInstances-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#runInstances-property)
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#createTags-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#createTags-property)
++ [`runInstances`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#runInstances-property)
++ [`createTags`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#createTags-property)
 
 ## Prerequisite Tasks
 <a name="ec2-example-creating-an-instance-prerequisites"></a>

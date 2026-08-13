@@ -57,4 +57,4 @@ The `solution-stack-name` parameter provides the platform branch and its version
 aws elasticbeanstalk list-available-solution-stacks --region us-east-1 --query SolutionStacks
 ```
 
-To learn more about the AWS CLI, see the [https://docs.aws.amazon.com//cli/latest/userguide/cli-chap-welcome.html](https://docs.aws.amazon.com//cli/latest/userguide/cli-chap-welcome.html). For more information about AWS CLI commands for Elastic Beanstalk, see the [https://docs.aws.amazon.com//cli/latest/reference/elasticbeanstalk/index.html](https://docs.aws.amazon.com//cli/latest/reference/elasticbeanstalk/index.html).
+To learn more about the AWS CLI, see the [*AWS Command Line Interface User Guide*](https://docs.aws.amazon.com//cli/latest/userguide/cli-chap-welcome.html). For more information about AWS CLI commands for Elastic Beanstalk, see the [*AWS CLI Command Reference for Elastic Beanstalk*](https://docs.aws.amazon.com//cli/latest/reference/elasticbeanstalk/index.html).

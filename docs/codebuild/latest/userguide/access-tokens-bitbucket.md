@@ -43,7 +43,7 @@ If you use an API token, enter the email address associated with your Atlassian 
      1. For **Credential type**, choose **API token** (previously shown as **App password**).
    + If you chose to use account level credentials for **Service**, choose which service you'd like to use to store your token and do the following:
 
-     1. If you choose to use **Secrets Manager**, you can choose to use an existing secret connection or create a new secret, and then choose **Save**. For more information how to create a new secret, see [Create and store a token in a Secrets Manager secret](asm-create-secret.md).
+     1. If you choose to use **Secrets Manager**, you can choose to use an existing secret connection or create a new secret, and then choose **Save**. For more information about how to create a new secret, see [Create and store a token in a Secrets Manager secret](asm-create-secret.md).
 
      1. If you choose to use **CodeBuild**, enter your Bitbucket username and app password, and then choose **Save**. For a Bitbucket API token, enter your Atlassian account email address and API token instead.
    + Select **Use override credentials for this project only** to use a custom source credential to override your account's credential settings.
@@ -67,16 +67,16 @@ To use the console to connect your project to Bitbucket using an access token, d
      1. For **Credential type**, choose **Personal access token**.
    + If you chose to use account level credentials for **Service**, choose which service you'd like to use to store your token and do the following:
 
-     1. If you choose to use **Secrets Manager**, you can choose to use an existing secret connection or create a new secret, and then choose **Save**. For more information how to create a new secret, see [Create and store a token in a Secrets Manager secret](asm-create-secret.md).
+     1. If you choose to use **Secrets Manager**, you can choose to use an existing secret connection or create a new secret, and then choose **Save**. For more information about how to create a new secret, see [Create and store a token in a Secrets Manager secret](asm-create-secret.md).
 
      1. If you choose to use **CodeBuild**, enter your Bitbucket personal access token, and then choose **Save**.
    + Select **Use override credentials for this project only** to use a custom source credential to override your account's credential settings.
 
      1. From the populated credential list, choose one of the options under **Personal access token**.
 
-     1. You can also create new personal access token by selecting **create a new personal access token connection** in the description.
+     1. You can also create a new personal access token by selecting **create a new personal access token connection** in the description.
 
-## Connect Bitbucket with an app password or access token(CLI)
+## Connect Bitbucket with an app password or access token (CLI)
 <a name="access-tokens-bitbucket-cli"></a>
 
 Follow these steps to use the AWS CLI to connect your project to Bitbucket using an app password or access token. For information about using the AWS CLI with AWS CodeBuild, see the [Command line reference](cmd-ref.md).

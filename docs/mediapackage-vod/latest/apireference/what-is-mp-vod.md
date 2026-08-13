@@ -31,4 +31,4 @@ Step 4: Integrate AWS Elemental MediaPackage VOD.
 
 When the asset is created and a packaging group is associated with it, AWS Elemental MediaPackage provides URLs for each packaging configuration on the asset. In the CDN or player, enter the configuration URL from the asset as the content request address.
 
-For general information on the service, see the [https://docs.aws.amazon.com/mediapackage/latest/ug/what-is.html](https://docs.aws.amazon.com/mediapackage/latest/ug/what-is.html).
+For general information on the service, see the [*AWS Elemental MediaPackage User Guide*](https://docs.aws.amazon.com/mediapackage/latest/ug/what-is.html).

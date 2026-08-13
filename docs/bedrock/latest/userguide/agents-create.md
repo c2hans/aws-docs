@@ -106,11 +106,11 @@ The service role that Amazon Bedrock creates for you doesn't include permissions
 ------
 #### [ API ]
 
-To create an agent, send a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgent.html) request (see link for request and response formats and field details) with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt).
+To create an agent, send a [CreateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgent.html) request (see link for request and response formats and field details) with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt).
 
 [See code examples](bedrock-agent_example_bedrock-agent_CreateAgent_section.md)
 
-To prepare your agent and test or deploy it, so that you can [test](agents-test.md) or [deploy](agents-deploy.md) it, you must minimally include the following fields (if you prefer, you can skip these configurations and configure them later by sending an [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgent.html) request):
+To prepare your agent and test or deploy it, so that you can [test](agents-test.md) or [deploy](agents-deploy.md) it, you must minimally include the following fields (if you prefer, you can skip these configurations and configure them later by sending an [UpdateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgent.html) request):
 
 ****
 
@@ -136,7 +136,7 @@ The following fields are optional:
 | cachingState | To enable prompt caching of input to the agent. For more information, see [Prompt caching for faster model inference](prompt-caching.md). |
 | reasoning\_config | To enable model reasoning so that the model explains how it reached its conclusions. Use inside of a additionalModelRequestFields field. You must specify the number of budget\_tokens that are used for model reasoning, which are a subset of the output tokens. For more information, see [Enhance model responses with model reasoning](https://docs.aws.amazon.com/bedrock/latest/userguide/inference-reasoning.html). |
 
-The response returns an [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Agent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Agent.html) object that contains details about your newly created agent. If your agent fails to be created, the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Agent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Agent.html) object in the response returns a list of `failureReasons` and a list of `recommendedActions` for you to troubleshoot.
+The response returns an [CreateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Agent.html) object that contains details about your newly created agent. If your agent fails to be created, the [CreateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Agent.html) object in the response returns a list of `failureReasons` and a list of `recommendedActions` for you to troubleshoot.
 
 ```
     def create_agent(self, agent_name, foundation_model, role_arn, instruction):

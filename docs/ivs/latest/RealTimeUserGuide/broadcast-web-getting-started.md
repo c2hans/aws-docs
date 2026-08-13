@@ -15,7 +15,7 @@ The building blocks for real-time are located in a different namespace than the 
 ### Using a Script Tag
 <a name="broadcast-web-getting-started-imports-script"></a>
 
-The Web broadcast SDK is distributed as a JavaScript library and can be retrieved at [https://web-broadcast.live-video.net/1.38.0/amazon-ivs-web-broadcast.js](https://web-broadcast.live-video.net/1.38.0/amazon-ivs-web-broadcast.js).
+The Web broadcast SDK is distributed as a JavaScript library and can be retrieved at [https://web-broadcast.live-video.net/1.38.1/amazon-ivs-web-broadcast.js](https://web-broadcast.live-video.net/1.38.1/amazon-ivs-web-broadcast.js).
 
 The classes and enums defined in the examples below can be found on the global object `IVSBroadcastClient`:
 

@@ -47,7 +47,7 @@ Use Karpenter’s [time to live (TTL)](https://docs.aws.amazon.com/eks/latest/be
 ### Remove underutilized nodes
 <a name="_remove_underutilized_nodes"></a>
 
-You can remove nodes when they have no running workloads using the scale down threshold in the Kubernetes Cluster Autoscaler with the [https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md#how-does-scale-down-work](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md#how-does-scale-down-work) or in Karpenter you can use the `ttlSecondsAfterEmpty` provisioner setting.
+You can remove nodes when they have no running workloads using the scale down threshold in the Kubernetes Cluster Autoscaler with the [`--scale-down-utilization-threshold`](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md#how-does-scale-down-work) or in Karpenter you can use the `ttlSecondsAfterEmpty` provisioner setting.
 
 ### Use pod disruption budgets and safe node shutdown
 <a name="_use_pod_disruption_budgets_and_safe_node_shutdown"></a>

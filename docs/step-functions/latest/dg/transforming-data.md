@@ -572,7 +572,7 @@ JSONata contains function libraries for String, Numeric, Aggregation, Boolean, A
 
  The function takes an *optional* integer argument representing the seed value of the random function. If you use this function with the same seed value, it returns an identical number.
 
- This overloaded function was created because the built-in JSONata function [https://docs.jsonata.org/numeric-functions#random](https://docs.jsonata.org/numeric-functions#random) does not accept a seed value.
+ This overloaded function was created because the built-in JSONata function [`$random`](https://docs.jsonata.org/numeric-functions#random) does not accept a seed value.
 
 ```
 "Assign": {

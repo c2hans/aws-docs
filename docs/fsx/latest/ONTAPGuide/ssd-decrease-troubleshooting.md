@@ -25,13 +25,13 @@ Your file system has insufficient free space in aggr_1. Please free up space or 
 The operation will resume once utilization falls below 80%. To resolve this issue, you can do the following:
 + Delete unnecessary data from volumes that have already been moved to the new disks.
 + Tier more data to the capacity pool by modifying volume tiering policies.
-+ Submit a request to increase SSD capacity by calling [https://docs.aws.amazon.com/cli/latest/reference/fsx/update-file-system.html](https://docs.aws.amazon.com/cli/latest/reference/fsx/update-file-system.html) with a new target value.
++ Submit a request to increase SSD capacity by calling [`update-file-system`](https://docs.aws.amazon.com/cli/latest/reference/fsx/update-file-system.html) with a new target value.
 
 You should update your file system's SSD storage capacity so that your file system's resulting SSD capacity doesn't exceed 80% utilization after the decrease operation. For more details, see [Updating file system SSD storage and IOPS](storage-capacity-and-IOPS.md#increase-primary-storage).
 
 You can identify which volumes have been moved to the new disks by checking the `Message` field in the `STORAGE_OPTIMIZATION` administrative action.
 
-You can also call [https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-volumes.html](https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-volumes.html) if the aggregate is `aggr1` or `aggr1_old`.
+You can also call [`describe-volumes`](https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-volumes.html) if the aggregate is `aggr1` or `aggr1_old`.
 
 ## Your SSD decrease operation is paused due to FlexClone relationships
 <a name="ssd-decrease-flexclone-relationship"></a>

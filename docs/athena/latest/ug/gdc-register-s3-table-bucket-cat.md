@@ -45,7 +45,7 @@ Amazon S3 table buckets are a bucket type in Amazon S3 that is purpose-built to 
    + `s3tables:CreateTable`
    + `s3tables:UpdateTableMetadataLocation`
 
-   Apply these permissions to specific S3 table bucket and S3 Table resources or use `*` as the resource to grant access to all table buckets and tables in your account. These permissions can be combined with the [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAthenaFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAthenaFullAccess.html) managed policy to enable complete functionality.
+   Apply these permissions to specific S3 table bucket and S3 Table resources or use `*` as the resource to grant access to all table buckets and tables in your account. These permissions can be combined with the [`AmazonAthenaFullAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAthenaFullAccess.html) managed policy to enable complete functionality.
 
    **Option 2: Use Lake Formation permissions**
 

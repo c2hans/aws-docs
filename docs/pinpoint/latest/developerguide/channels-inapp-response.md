@@ -87,14 +87,14 @@ The `InAppMessageCampaigns` object contains the following attributes:
   <tr><th>Attribute</th><th>Description</th><th>Where it's set</th></tr>
 </thead>
 <tbody>
-  <tr><td>`CampaignId`</td><td>A string that contains the name and unique campaign ID of the Amazon Pinpoint campaign that the message was sent from. The name precedes the campaign ID. The two values are separated with a hyphen (-).</td><td rowspan="2">Automatically created by Amazon Pinpoint when you create the campaign.</td></tr>
-  <tr><td>`TreatmentId`</td><td>An integer that represents the ID of the campaign treatment for this message. If the campaign only has one treatment, the value is `0`.</td></tr>
-  <tr><td>`Priority`</td><td>The priority of the in-app message, expressed as an integer between 1 and 5, inclusive, where 1 indicates the highest priority, and 5 indicates the lowest priority.</td><td>[Step 1](https://docs.aws.amazon.com/pinpoint/latest/userguide/campaigns-begin.html) of the campaign creation process.</td></tr>
-  <tr><td>`InAppMessage`</td><td>An [`InAppMessage` object](#channels-inapp-response-inappmessage-object) that contains information about how the message is rendered.</td><td>Based on the content in the [in-app message template](https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html) that was specified for the campaign.</td></tr>
-  <tr><td>`Schedule`</td><td>A Schedule object that contains information about when the message was sent.</td><td>[Step 4](https://docs.aws.amazon.com/pinpoint/latest/userguide/campaigns-schedule.html) of the campaign creation process (if the campaign was created in the console) or the `Schedule` object (if the campaign was created using the API or an SDK).</td></tr>
-  <tr><td>`DailyCap`</td><td>The number of times, shown as an integer, that an in-app message can be shown to the user during a 24-hour period.</td><td rowspan="3">Inherited from [project-level settings](https://docs.aws.amazon.com/pinpoint/latest/userguide/settings-general.html). If the campaign includes settings that override the project settings, then those are used instead.</td></tr>
-  <tr><td>`SessionCap`</td><td>The number of times, expressed as an integer, that an in-app message can be shown to the user during an application session.</td></tr>
-  <tr><td>`TotalCap`</td><td>The total number of times, expressed as an integer, that any in-app message can be shown to an endpoint per campaign.</td></tr>
+  <tr><td><code>CampaignId</code></td><td>A string that contains the name and unique campaign ID of the Amazon Pinpoint campaign that the message was sent from. The name precedes the campaign ID. The two values are separated with a hyphen (-).</td><td rowspan="2">Automatically created by Amazon Pinpoint when you create the campaign.</td></tr>
+  <tr><td><code>TreatmentId</code></td><td>An integer that represents the ID of the campaign treatment for this message. If the campaign only has one treatment, the value is <code>0</code>.</td></tr>
+  <tr><td><code>Priority</code></td><td>The priority of the in-app message, expressed as an integer between 1 and 5, inclusive, where 1 indicates the highest priority, and 5 indicates the lowest priority.</td><td><a href="https://docs.aws.amazon.com/pinpoint/latest/userguide/campaigns-begin.html">Step 1</a> of the campaign creation process.</td></tr>
+  <tr><td><code>InAppMessage</code></td><td>An <a href="#channels-inapp-response-inappmessage-object">`InAppMessage` object</a> that contains information about how the message is rendered.</td><td>Based on the content in the <a href="https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html">in-app message template</a> that was specified for the campaign.</td></tr>
+  <tr><td><code>Schedule</code></td><td>A Schedule object that contains information about when the message was sent.</td><td><a href="https://docs.aws.amazon.com/pinpoint/latest/userguide/campaigns-schedule.html">Step 4</a> of the campaign creation process (if the campaign was created in the console) or the <code>Schedule</code> object (if the campaign was created using the API or an SDK).</td></tr>
+  <tr><td><code>DailyCap</code></td><td>The number of times, shown as an integer, that an in-app message can be shown to the user during a 24-hour period.</td><td rowspan="3">Inherited from <a href="https://docs.aws.amazon.com/pinpoint/latest/userguide/settings-general.html">project-level settings</a>. If the campaign includes settings that override the project settings, then those are used instead.</td></tr>
+  <tr><td><code>SessionCap</code></td><td>The number of times, expressed as an integer, that an in-app message can be shown to the user during an application session.</td></tr>
+  <tr><td><code>TotalCap</code></td><td>The total number of times, expressed as an integer, that any in-app message can be shown to an endpoint per campaign.</td></tr>
 </tbody>
 </table>
 
@@ -108,8 +108,8 @@ The `InAppMessage` object contains the following attributes:
   <tr><th>Attribute</th><th>Description</th><th>Where it's set</th></tr>
 </thead>
 <tbody>
-  <tr><td>`Content`</td><td>An array containing an [InAppMessageContent](#channels-inapp-response-inappmessagecontent-object) object, which describes the content of the message.</td><td rowspan="2">Based on the content in the [in-app message template](https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html) that was specified for the campaign.</td></tr>
-  <tr><td>`Layout`</td><td>A string that describes how the in-app message will appear on the recipient's device. Possible values are:+  `BOTTOM_BANNER` – a message that appears as a banner at the bottom of the page. <br />+  `TOP_BANNER` – a message that appears as a banner at the top of the page. <br />+  `OVERLAYS` – a message that covers entire screen. <br />+  `MOBILE_FEED` – a message that appears in a window in front of the page. <br />+  `MIDDLE_BANNER` – a message that appears as a banner in the middle of the page. <br />+  `CAROUSEL` – a scrollable layout of up to five unique messages. </td></tr>
+  <tr><td><code>Content</code></td><td>An array containing an <a href="#channels-inapp-response-inappmessagecontent-object">InAppMessageContent</a> object, which describes the content of the message.</td><td rowspan="2">Based on the content in the <a href="https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html">in-app message template</a> that was specified for the campaign.</td></tr>
+  <tr><td><code>Layout</code></td><td>A string that describes how the in-app message will appear on the recipient's device. Possible values are:<ul><li> <code>BOTTOM_BANNER</code> – a message that appears as a banner at the bottom of the page. </li><li> <code>TOP_BANNER</code> – a message that appears as a banner at the top of the page. </li><li> <code>OVERLAYS</code> – a message that covers entire screen. </li><li> <code>MOBILE_FEED</code> – a message that appears in a window in front of the page. </li><li> <code>MIDDLE_BANNER</code> – a message that appears as a banner in the middle of the page. </li><li> <code>CAROUSEL</code> – a scrollable layout of up to five unique messages. </li></ul></td></tr>
 </tbody>
 </table>
 
@@ -123,9 +123,9 @@ The `HeaderConfig` object contains the following attributes:
   <tr><th>Attribute</th><th>Description</th><th>Where it's set</th></tr>
 </thead>
 <tbody>
-  <tr><td>`Alignment`</td><td>A string that specifies the text alignment of the header text. Possible values are `LEFT`, `CENTER`, and `RIGHT`.</td><td rowspan="3">Based on the content in the [in-app message template](https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html) that was specified for the campaign.</td></tr>
-  <tr><td>`Header`</td><td>The message header text.</td></tr>
-  <tr><td>`TextColor`</td><td>The color of the header text, expressed as string describing the hex color code (such as "\#000000" for black).</td></tr>
+  <tr><td><code>Alignment</code></td><td>A string that specifies the text alignment of the header text. Possible values are <code>LEFT</code>, <code>CENTER</code>, and <code>RIGHT</code>.</td><td rowspan="3">Based on the content in the <a href="https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html">in-app message template</a> that was specified for the campaign.</td></tr>
+  <tr><td><code>Header</code></td><td>The message header text.</td></tr>
+  <tr><td><code>TextColor</code></td><td>The color of the header text, expressed as string describing the hex color code (such as "#000000" for black).</td></tr>
 </tbody>
 </table>
 
@@ -139,9 +139,9 @@ The `BodyConfig` object contains the following attributes:
   <tr><th>Attribute</th><th>Description</th><th>Where it's set</th></tr>
 </thead>
 <tbody>
-  <tr><td>`Alignment`</td><td>A string that specifies the text alignment of the message body. Possible values are `LEFT`, `CENTER`, and `RIGHT`.</td><td rowspan="3">Based on the content in the [in-app message template](https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html) that was specified for the campaign.</td></tr>
-  <tr><td>`Body`</td><td>The main body text of the message.</td></tr>
-  <tr><td>`TextColor`</td><td>The color of the body text, expressed as a string containing a hex color code (such as "\#000000" for black).</td></tr>
+  <tr><td><code>Alignment</code></td><td>A string that specifies the text alignment of the message body. Possible values are <code>LEFT</code>, <code>CENTER</code>, and <code>RIGHT</code>.</td><td rowspan="3">Based on the content in the <a href="https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html">in-app message template</a> that was specified for the campaign.</td></tr>
+  <tr><td><code>Body</code></td><td>The main body text of the message.</td></tr>
+  <tr><td><code>TextColor</code></td><td>The color of the body text, expressed as a string containing a hex color code (such as "#000000" for black).</td></tr>
 </tbody>
 </table>
 
@@ -155,12 +155,12 @@ The `InAppMessageContent` object contains the following attributes:
   <tr><th>Attribute</th><th>Description</th><th>Where it's set</th></tr>
 </thead>
 <tbody>
-  <tr><td>`BackgroundColor`</td><td>The background color of the in-app message, expressed as a string containing a hex color code (such as "\#000000" for black).</td><td rowspan="6">Based on the content in the [in-app message template](https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html) that was specified for the campaign.</td></tr>
-  <tr><td>`BodyConfig`</td><td>A [BodyConfig](#channels-inapp-response-bodyconfig-object) object, which contains information related to the main body content of the message.</td></tr>
-  <tr><td>`HeaderConfig`</td><td>A [HeaderConfig](#channels-inapp-response-headerconfig-object) object, which contains information related to the header or title of the message.</td></tr>
-  <tr><td>`ImageUrl`</td><td>The URL of the image that appears in the message.</td></tr>
-  <tr><td>`PrimaryBtn`</td><td>An [InAppMessageButton](#channels-inapp-response-button-object) object that contains information about the main button in the message.</td></tr>
-  <tr><td>`SecondaryBtn`</td><td>An [InAppMessageButton](#channels-inapp-response-button-object) object that contains information about the secondary button in the message. Not present if the in-app message template doesn't specify a secondary button.</td></tr>
+  <tr><td><code>BackgroundColor</code></td><td>The background color of the in-app message, expressed as a string containing a hex color code (such as "#000000" for black).</td><td rowspan="6">Based on the content in the <a href="https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html">in-app message template</a> that was specified for the campaign.</td></tr>
+  <tr><td><code>BodyConfig</code></td><td>A <a href="#channels-inapp-response-bodyconfig-object">BodyConfig</a> object, which contains information related to the main body content of the message.</td></tr>
+  <tr><td><code>HeaderConfig</code></td><td>A <a href="#channels-inapp-response-headerconfig-object">HeaderConfig</a> object, which contains information related to the header or title of the message.</td></tr>
+  <tr><td><code>ImageUrl</code></td><td>The URL of the image that appears in the message.</td></tr>
+  <tr><td><code>PrimaryBtn</code></td><td>An <a href="#channels-inapp-response-button-object">InAppMessageButton</a> object that contains information about the main button in the message.</td></tr>
+  <tr><td><code>SecondaryBtn</code></td><td>An <a href="#channels-inapp-response-button-object">InAppMessageButton</a> object that contains information about the secondary button in the message. Not present if the in-app message template doesn't specify a secondary button.</td></tr>
 </tbody>
 </table>
 
@@ -174,8 +174,8 @@ The `Schedule` object contains the following attributes:
   <tr><th>Attribute</th><th>Description</th><th>Where it's set</th></tr>
 </thead>
 <tbody>
-  <tr><td>`EndDate`</td><td>The scheduled time, in ISO 8601 format, when the campaign will end. </td><td rowspan="2">[Step 4](https://docs.aws.amazon.com/pinpoint/latest/userguide/campaigns-schedule.html) of the campaign creation process (if the campaign was created in the console) or the `Schedule` object (if the campaign was created using the API or an SDK).</td></tr>
-  <tr><td>`EventFilter`</td><td>Information about the event that causes the in-app message to be shown. When you generate an event that matches with an Amazon Pinpoint in-app campaign, the message is displayed.</td></tr>
+  <tr><td><code>EndDate</code></td><td>The scheduled time, in ISO 8601 format, when the campaign will end. </td><td rowspan="2"><a href="https://docs.aws.amazon.com/pinpoint/latest/userguide/campaigns-schedule.html">Step 4</a> of the campaign creation process (if the campaign was created in the console) or the <code>Schedule</code> object (if the campaign was created using the API or an SDK).</td></tr>
+  <tr><td><code>EventFilter</code></td><td>Information about the event that causes the in-app message to be shown. When you generate an event that matches with an Amazon Pinpoint in-app campaign, the message is displayed.</td></tr>
 </tbody>
 </table>
 
@@ -189,10 +189,10 @@ An `InAppMessageButton` object contains the following attributes:
   <tr><th>Attribute</th><th>Description</th><th>Where it's set</th></tr>
 </thead>
 <tbody>
-  <tr><td>`DefaultConfig`</td><td>A [DefaultButtonConfig](#channels-inapp-response-defaultbuttonconfig-object) object that contains information about the default settings for a button in an in-app message.</td><td rowspan="4">Based on the content in the [in-app message template](https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html) that was specified for the campaign.</td></tr>
-  <tr><td>`Android`</td><td>An [OverrideButtonConfig](#channels-inapp-response-overridebuttonconfig-object) object that specifies the way the button behaves on Android devices. This overrides the default button configuration detailed in the `DefaultConfig` object.</td></tr>
-  <tr><td>`IOS`</td><td>An [OverrideButtonConfig](#channels-inapp-response-overridebuttonconfig-object) object that specifies the way the button behaves on iOS devices. This overrides the default button configuration detailed in the `DefaultConfig` object.</td></tr>
-  <tr><td>`Web`</td><td>An [OverrideButtonConfig](#channels-inapp-response-overridebuttonconfig-object) object that specifies the way the button behaves in web apps. This overrides the default button configuration detailed in the `DefaultConfig` object.</td></tr>
+  <tr><td><code>DefaultConfig</code></td><td>A <a href="#channels-inapp-response-defaultbuttonconfig-object">DefaultButtonConfig</a> object that contains information about the default settings for a button in an in-app message.</td><td rowspan="4">Based on the content in the <a href="https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html">in-app message template</a> that was specified for the campaign.</td></tr>
+  <tr><td><code>Android</code></td><td>An <a href="#channels-inapp-response-overridebuttonconfig-object">OverrideButtonConfig</a> object that specifies the way the button behaves on Android devices. This overrides the default button configuration detailed in the <code>DefaultConfig</code> object.</td></tr>
+  <tr><td><code>IOS</code></td><td>An <a href="#channels-inapp-response-overridebuttonconfig-object">OverrideButtonConfig</a> object that specifies the way the button behaves on iOS devices. This overrides the default button configuration detailed in the <code>DefaultConfig</code> object.</td></tr>
+  <tr><td><code>Web</code></td><td>An <a href="#channels-inapp-response-overridebuttonconfig-object">OverrideButtonConfig</a> object that specifies the way the button behaves in web apps. This overrides the default button configuration detailed in the <code>DefaultConfig</code> object.</td></tr>
 </tbody>
 </table>
 
@@ -206,12 +206,12 @@ An `DefaultButtonConfig` object contains the following attributes:
   <tr><th>Attribute</th><th>Description</th><th>Where it's set</th></tr>
 </thead>
 <tbody>
-  <tr><td>`BackgroundColor`</td><td>The background color of the button, expressed as a string containing a hex color code (such as "\#000000" for black).</td><td rowspan="6">Based on the content in the [in-app message template](https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html) that was specified for the campaign.</td></tr>
-  <tr><td>`BorderRadius`</td><td>The radius of the button's border in pixels, expressed as an integer. A larger number results in more rounded corners.</td></tr>
-  <tr><td>`ButtonAction`</td><td>A string that describes the action that occurs when a recipient chooses a button in the in-app message. Possible values are: +  `LINK` – A link to a web destination.  <br />+  `DEEP_LINK` – A link to a specific page in an application.  <br />+  `CLOSE` – Dismisses the message.  </td></tr>
-  <tr><td>`Link`</td><td>The destination URL for a button. Not present for buttons where the ButtonAction is `CLOSE`.</td></tr>
-  <tr><td>`Text`</td><td>The text that appears on the button.</td></tr>
-  <tr><td>`TextColor`</td><td>The color of the text on the button, expressed as a string containing a hex color code (such as "\#000000" for black).</td></tr>
+  <tr><td><code>BackgroundColor</code></td><td>The background color of the button, expressed as a string containing a hex color code (such as "#000000" for black).</td><td rowspan="6">Based on the content in the <a href="https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html">in-app message template</a> that was specified for the campaign.</td></tr>
+  <tr><td><code>BorderRadius</code></td><td>The radius of the button's border in pixels, expressed as an integer. A larger number results in more rounded corners.</td></tr>
+  <tr><td><code>ButtonAction</code></td><td>A string that describes the action that occurs when a recipient chooses a button in the in-app message. Possible values are: <ul><li> <code>LINK</code> – A link to a web destination.  </li><li> <code>DEEP_LINK</code> – A link to a specific page in an application.  </li><li> <code>CLOSE</code> – Dismisses the message.  </li></ul></td></tr>
+  <tr><td><code>Link</code></td><td>The destination URL for a button. Not present for buttons where the ButtonAction is <code>CLOSE</code>.</td></tr>
+  <tr><td><code>Text</code></td><td>The text that appears on the button.</td></tr>
+  <tr><td><code>TextColor</code></td><td>The color of the text on the button, expressed as a string containing a hex color code (such as "#000000" for black).</td></tr>
 </tbody>
 </table>
 
@@ -227,9 +227,9 @@ An `OverrideButtonConfig` object contains the following attributes:
   <tr><th>Attribute</th><th>Description</th><th>Where it's set</th></tr>
 </thead>
 <tbody>
-  <tr><td>`ButtonAction`</td><td>The action that occurs when a recipient chooses a button in the in-app message. Possible values are: +  `LINK` – A link to a web destination.  <br />+  `DEEP_LINK` – A link to a specific page in an application.  <br />+  `CLOSE` – Dismisses the message.  </td><td rowspan="4">Based on the content in the [in-app message template](https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html) that was specified for the campaign.</td></tr>
-  <tr><td>`Link`</td><td>The destination URL for a button. Not present for buttons where the `ButtonAction` is `CLOSE`.</td></tr>
-  <tr><td>`Text`</td><td>The text that appears on the button.</td></tr>
-  <tr><td>`TextColor`</td><td>The color of the text on the button, expressed as a string containing a hex color code (such as "\#000000" for black).</td></tr>
+  <tr><td><code>ButtonAction</code></td><td>The action that occurs when a recipient chooses a button in the in-app message. Possible values are: <ul><li> <code>LINK</code> – A link to a web destination.  </li><li> <code>DEEP_LINK</code> – A link to a specific page in an application.  </li><li> <code>CLOSE</code> – Dismisses the message.  </li></ul></td><td rowspan="4">Based on the content in the <a href="https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html">in-app message template</a> that was specified for the campaign.</td></tr>
+  <tr><td><code>Link</code></td><td>The destination URL for a button. Not present for buttons where the <code>ButtonAction</code> is <code>CLOSE</code>.</td></tr>
+  <tr><td><code>Text</code></td><td>The text that appears on the button.</td></tr>
+  <tr><td><code>TextColor</code></td><td>The color of the text on the button, expressed as a string containing a hex color code (such as "#000000" for black).</td></tr>
 </tbody>
 </table>

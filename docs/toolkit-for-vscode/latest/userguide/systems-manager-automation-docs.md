@@ -25,7 +25,7 @@ A [Systems Manager document](https://docs.aws.amazon.com//systems-manager/latest
 
 Before you begin, make sure:
 + You have installed Visual Studio Code and the latest version of the AWS Toolkit for Visual Studio Code. For more information, see [Installing the AWS Toolkit for Visual Studio Code](setup-toolkit.md).
-+ You’re familiar with Systems Manager. For more information, see the [https://docs.aws.amazon.com//systems-manager/latest/userguide/what-is-systems-manager.html](https://docs.aws.amazon.com//systems-manager/latest/userguide/what-is-systems-manager.html).
++ You’re familiar with Systems Manager. For more information, see the [*AWS Systems Manager User Guide*](https://docs.aws.amazon.com//systems-manager/latest/userguide/what-is-systems-manager.html).
 + You’re familiar with Systems Manager Automation use cases. For more information, see [AWS Systems Manager Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/systems-manager-automation.html) in the *AWS Systems Manager User Guide*.
 
 ## IAM permissions for Systems Manager Automation documents

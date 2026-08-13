@@ -12,7 +12,7 @@ Use the trace to track the agent's path from the user input to the response it r
 ## Structure of the trace
 <a name="trace-understand"></a>
 
-If you enable the trace, in the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response, each `chunk` in the stream is accompanied by a `trace` field that maps to a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_TracePart.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_TracePart.html) object. The `tracePart` object contains information about the agent and sessions, alongside the agent's reasoning process and and results from calling API functions.
+If you enable the trace, in the [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response, each `chunk` in the stream is accompanied by a `trace` field that maps to a [TracePart](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_TracePart.html) object. The `tracePart` object contains information about the agent and sessions, alongside the agent's reasoning process and and results from calling API functions.
 
 ```
 {
@@ -29,7 +29,7 @@ If you enable the trace, in the [https://docs.aws.amazon.com/bedrock/latest/APIR
 }
 ```
 
-The following list describes the fields of [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_TracePart.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_TracePart.html) object:
+The following list describes the fields of [TracePart](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_TracePart.html) object:
 + `agentId` – The unique identifier of the agent.
 + `agentName` – The name of the agent.
 + `collaboratorName` – If the multi-agent collaboration is enabled, the name of the collaborator agent.
@@ -41,7 +41,7 @@ The following list describes the fields of [https://docs.aws.amazon.com/bedrock/
   + If it is a single agent, this field will contain the alias Arn of the same agent who published the trace.
   + If multi-agent collaboration is enabled, this field will contain the alias Arn of all agents that forwarded the end user request to the current agent.
 
- Within the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_TracePart.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_TracePart.html) is a `trace` field that maps to a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Trace.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Trace.html) object. The trace is shown as a JSON object in both the console and the API. Each **Step** in the console or [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Trace.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Trace.html) in the API can be one of the following traces:
+ Within the [TracePart](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_TracePart.html) is a `trace` field that maps to a [Trace](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Trace.html) object. The trace is shown as a JSON object in both the console and the API. Each **Step** in the console or [Trace](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Trace.html) in the API can be one of the following traces:
 + [PreProcessingTrace](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PreProcessingTrace.html) – Traces the input and output of the pre-processing step, in which the agent contextualizes and categorizes user input and determines if it is valid.
 + [OrchestrationTrace](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_OrchestrationTrace.html) – Traces the input and output of the orchestration step, in which the agent interprets the input, invokes action groups, and queries knowledge bases. Then the agent returns output to either continue orchestration or to respond to the user.
 + [PostProcessingTrace](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PostProcessingTrace.html) – Traces the input and output of the post-processing step, in which the agent handles the final output of the orchestration and determines how to return the response to the user.
@@ -50,7 +50,7 @@ The following list describes the fields of [https://docs.aws.amazon.com/bedrock/
 + [FailureTrace](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_FailureTrace.html) – Traces the reason that a step failed.
 + [GuardrailTrace](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GuardrailTrace.html) – Traces the actions of the Guardrail.
 
-Each of the traces (except `FailureTrace`) contains a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ModelInvocationInput.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ModelInvocationInput.html) object. The [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ModelInvocationInput.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ModelInvocationInput.html) object contains configurations set in the prompt template for the step, alongside the prompt provided to the agent at this step. For more information about how to modify prompt templates, see [Enhance agent's accuracy using advanced prompt templates in Amazon Bedrock](advanced-prompts.md). The structure of the `ModelInvocationInput` object is as follows:
+Each of the traces (except `FailureTrace`) contains a [ModelInvocationInput](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ModelInvocationInput.html) object. The [ModelInvocationInput](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ModelInvocationInput.html) object contains configurations set in the prompt template for the step, alongside the prompt provided to the agent at this step. For more information about how to modify prompt templates, see [Enhance agent's accuracy using advanced prompt templates in Amazon Bedrock](advanced-prompts.md). The structure of the `ModelInvocationInput` object is as follows:
 
 ```
 {
@@ -71,7 +71,7 @@ Each of the traces (except `FailureTrace`) contains a [https://docs.aws.amazon.c
 }
 ```
 
-The following list describes the fields of the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ModelInvocationInput.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ModelInvocationInput.html) object:
+The following list describes the fields of the [ModelInvocationInput](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ModelInvocationInput.html) object:
 + `traceId` – The unique identifier of the trace.
 + `text` – The text from the prompt provided to the agent at this step.
 + `type` – The current step in the agent's process.
@@ -107,7 +107,7 @@ For more information about each trace type, see the following sections:
 }
 ```
 
-The [PreProcessingTrace](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PreProcessingTrace.html) consists of a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ModelInvocationInput.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ModelInvocationInput.html) object and a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PreProcessingModelInvocationOutput.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PreProcessingModelInvocationOutput.html) object. The [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PreProcessingModelInvocationOutput.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PreProcessingModelInvocationOutput.html) contains the following fields.
+The [PreProcessingTrace](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PreProcessingTrace.html) consists of a [ModelInvocationInput](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ModelInvocationInput.html) object and a [PreProcessingModelInvocationOutput](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PreProcessingModelInvocationOutput.html) object. The [PreProcessingModelInvocationOutput](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PreProcessingModelInvocationOutput.html) contains the following fields.
 + `metadata` – Contains the following information about the foundation model output.
   + `usage` – Contains the following information of the usage of the foundation model.
     + `inputTokens` – Contains the information about the input tokens from the foundation model usage.
@@ -122,7 +122,7 @@ The [PreProcessingTrace](https://docs.aws.amazon.com/bedrock/latest/APIReference
 ### OrchestrationTrace
 <a name="trace-orchestration"></a>
 
-The [OrchestrationTrace](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_OrchestrationTrace.html) consists of the [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ModelInvocationInput.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ModelInvocationInput.html) object, [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_OrchestrationModelInvocationOutput.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_OrchestrationModelInvocationOutput.html) object, and any combination of the [Rationale](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Rationale.html), [InvocationInput](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvocationInput.html), and [Observation](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Observation.html) objects. The [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_OrchestrationModelInvocationOutput.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_OrchestrationModelInvocationOutput.html) contains the following fields. For more information about [Rationale](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Rationale.html), [InvocationInput](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvocationInput.html), and [Observation](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Observation.html) objects, select from the following tabs.
+The [OrchestrationTrace](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_OrchestrationTrace.html) consists of the [ModelInvocationInput](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ModelInvocationInput.html) object, [OrchestrationModelInvocationOutput](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_OrchestrationModelInvocationOutput.html) object, and any combination of the [Rationale](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Rationale.html), [InvocationInput](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvocationInput.html), and [Observation](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Observation.html) objects. The [OrchestrationModelInvocationOutput](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_OrchestrationModelInvocationOutput.html) contains the following fields. For more information about [Rationale](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Rationale.html), [InvocationInput](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvocationInput.html), and [Observation](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Observation.html) objects, select from the following tabs.
 
 ```
 {
@@ -142,7 +142,7 @@ The [OrchestrationTrace](https://docs.aws.amazon.com/bedrock/latest/APIReference
 }
 ```
 
-If the `type` is `AGENT_COLLABORATOR` and if the routing was enabled for the supervisor agent, [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_OrchestrationModelInvocationOutput.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_OrchestrationModelInvocationOutput.html) will contain the following structure:
+If the `type` is `AGENT_COLLABORATOR` and if the routing was enabled for the supervisor agent, [OrchestrationModelInvocationOutput](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_OrchestrationModelInvocationOutput.html) will contain the following structure:
 
 ```
 routingClassifierModelInvocationOutput: {
@@ -367,7 +367,7 @@ The following list describes the fields of the [Observation](https://docs.aws.am
 }
 ```
 
-The [PostProcessingTrace](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PostProcessingTrace.html) consists of a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ModelInvocationInput.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ModelInvocationInput.html) object and a [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PostProcessingModelInvocationOutput.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PostProcessingModelInvocationOutput.html) object. The [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PostProcessingModelInvocationOutput.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PostProcessingModelInvocationOutput.html) contains the following fields:
+The [PostProcessingTrace](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PostProcessingTrace.html) consists of a [ModelInvocationInput](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ModelInvocationInput.html) object and a [PostProcessingModelInvocationOutput](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PostProcessingModelInvocationOutput.html) object. The [PostProcessingModelInvocationOutput](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PostProcessingModelInvocationOutput.html) contains the following fields:
 + `rawResponse` – Contains the raw output from the foundation model.
   + `content` – The foundation model's raw output content.
 + `metadata` – Contains the following information about the foundation model output.

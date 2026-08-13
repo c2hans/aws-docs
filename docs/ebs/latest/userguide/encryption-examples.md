@@ -114,8 +114,8 @@ The following table describes the encryption outcome for each possible combinati
   <tr><td>No</td><td>No</td><td>Unencrypted snapshot that you own</td><td>Unencrypted</td></tr>
   <tr><td>No</td><td>No</td><td>Encrypted snapshot that you own</td><td>Encrypted by same key</td></tr>
   <tr><td>No</td><td>No</td><td>Unencrypted snapshot that is shared with you</td><td>Unencrypted</td></tr>
-  <tr><td>No</td><td>No</td><td>Encrypted snapshot that is shared with you</td><td>Encrypted by default customer managed key\*</td></tr>
-  <tr><td>Yes</td><td>No</td><td>New volume</td><td>Encrypted by default customer managed key</td><td rowspan="5">Encrypted by a specified customer managed key\*\*</td></tr>
+  <tr><td>No</td><td>No</td><td>Encrypted snapshot that is shared with you</td><td>Encrypted by default customer managed key*</td></tr>
+  <tr><td>Yes</td><td>No</td><td>New volume</td><td>Encrypted by default customer managed key</td><td rowspan="5">Encrypted by a specified customer managed key**</td></tr>
   <tr><td>Yes</td><td>No</td><td>Unencrypted snapshot that you own</td><td>Encrypted by default customer managed key</td></tr>
   <tr><td>Yes</td><td>No</td><td>Encrypted snapshot that you own</td><td>Encrypted by same key</td></tr>
   <tr><td>Yes</td><td>No</td><td>Unencrypted snapshot that is shared with you</td><td>Encrypted by default customer managed key</td></tr>

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/creating-new-svm-r
 
 **To create a new SVM role (ONTAP CLI)**
 
-1. You can create a new SVM role using the [https://docs.netapp.com/us-en/ontap-cli-9141/security-login-role-create.html](https://docs.netapp.com/us-en/ontap-cli-9141/security-login-role-create.html) ONTAP CLI command:
+1. You can create a new SVM role using the [`security login role create`](https://docs.netapp.com/us-en/ontap-cli-9141/security-login-role-create.html) ONTAP CLI command:
 
    ```
    Fsx0123456::> security login role create -vserver {{vs1.example.com}} -role {{vol_role}} -cmddirname {{volume}}

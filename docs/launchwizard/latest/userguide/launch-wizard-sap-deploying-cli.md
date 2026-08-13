@@ -26,7 +26,7 @@ The following examples demonstrate how you can use the Launch Wizard API operati
 ------
 #### [ Create a deployment ]
 
-You can create a deployment for your SAP application using the `CreateDeployment` Launch Wizard API operation. You can use the [https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloadDeploymentPatterns.html](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloadDeploymentPatterns.html) operation to discover the supported values for the `--workload-name` and `--deployment-pattern-name` parameters. SAP applications deployed using this API operation can't be cloned from the AWS Launch Wizard console. For more information, see [https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_CreateDeployment.html](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_CreateDeployment.html).
+You can create a deployment for your SAP application using the `CreateDeployment` Launch Wizard API operation. You can use the [ListWorkloadDeploymentPatterns](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloadDeploymentPatterns.html) operation to discover the supported values for the `--workload-name` and `--deployment-pattern-name` parameters. SAP applications deployed using this API operation can't be cloned from the AWS Launch Wizard console. For more information, see [CreateDeployment](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_CreateDeployment.html).
 
 **Tip**
 You can pass inputs to the `specifications` parameter for your deployment as a file for easier usage. For more information on the available specifications for each deployment pattern, including examples, see [Deployment specifications](https://docs.aws.amazon.com/launchwizard/latest/APIReference/launch-wizard-specifications.html).
@@ -42,7 +42,7 @@ $ aws launch-wizard create-deployment --workload-name {{SAP}} --deployment-patte
 ------
 #### [ Delete a deployment ]
 
-You can delete an SAP deployment using the `DeleteDeployment` Launch Wizard API operation. For more information, see [https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_DeleteDeployment.html](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_DeleteDeployment.html).
+You can delete an SAP deployment using the `DeleteDeployment` Launch Wizard API operation. For more information, see [DeleteDeployment](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_DeleteDeployment.html).
 
 ```
 $ aws launch-wizard delete-deployment --deployment-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} --region {{us-east-1}}
@@ -56,7 +56,7 @@ $ aws launch-wizard delete-deployment --deployment-id {{a1b2c3d4-5678-90ab-cdef-
 ------
 #### [ Get deployment details ]
 
-You can get deployment details for an SAP deployment using the `GetDeployment` Launch Wizard API operation. For more information, see [https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_GetDeployment.html](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_GetDeployment.html).
+You can get deployment details for an SAP deployment using the `GetDeployment` Launch Wizard API operation. For more information, see [GetDeployment](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_GetDeployment.html).
 
 ```
 $ aws launch-wizard get-deployment --deployment-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} --region {{us-east-1}}
@@ -107,7 +107,7 @@ $ aws launch-wizard get-deployment --deployment-id {{a1b2c3d4-5678-90ab-cdef-EXA
 ------
 #### [ Get workload details ]
 
-You can get workload details for an SAP deployment using the `GetWorkload` Launch Wizard API operation. For more information, see [https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_GetWorkload.html](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_GetWorkload.html).
+You can get workload details for an SAP deployment using the `GetWorkload` Launch Wizard API operation. For more information, see [GetWorkload](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_GetWorkload.html).
 
 ```
 $ aws launch-wizard get-workload --workload-name {{SAP}} --region {{us-east-1}}
@@ -127,7 +127,7 @@ $ aws launch-wizard get-workload --workload-name {{SAP}} --region {{us-east-1}}
 ------
 #### [ List deployments ]
 
-You can list an SAP deployment using the `ListDeployments` Launch Wizard API operation. For more information, see [https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListDeployments.html](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListDeployments.html).
+You can list an SAP deployment using the `ListDeployments` Launch Wizard API operation. For more information, see [ListDeployments](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListDeployments.html).
 
 ```
 $ aws launch-wizard list-deployments --filter name={{DEPLOYMENT_STATUS}},values={{IN_PROGRESS}} --region {{us-east-1}}
@@ -149,7 +149,7 @@ $ aws launch-wizard list-deployments --filter name={{DEPLOYMENT_STATUS}},values=
 ------
 #### [ List deployment events ]
 
-You can list SAP deployment events using the `ListDeploymentEvents` Launch Wizard API operation. For more information, see [https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListDeployments.html](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListDeployments.html).
+You can list SAP deployment events using the `ListDeploymentEvents` Launch Wizard API operation. For more information, see [ListDeploymentEvents](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListDeployments.html).
 
 ```
 $ aws launch-wizard list-deployment-events --deployment-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} --region {{us-east-1}}
@@ -191,7 +191,7 @@ $ aws launch-wizard list-deployment-events --deployment-id {{a1b2c3d4-5678-90ab-
 ------
 #### [ List workloads ]
 
-You can list workload details for SAP deployments using the `ListWorkloads` Launch Wizard API operation. For more information, see [https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloads.html](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloads.html).
+You can list workload details for SAP deployments using the `ListWorkloads` Launch Wizard API operation. For more information, see [ListWorkloads](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloads.html).
 
 ```
 $ aws launch-wizard list-workloads --region {{us-east-1}}
@@ -233,7 +233,7 @@ $ aws launch-wizard list-workloads --region {{us-east-1}}
 ------
 #### [ List workload deployment patterns ]
 
-You can list the available patterns for SAP workloads using the `ListWorkloadDeploymentPatterns` Launch Wizard API operation. For more information, see [https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloadDeploymentPatterns.html](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloadDeploymentPatterns.html).
+You can list the available patterns for SAP workloads using the `ListWorkloadDeploymentPatterns` Launch Wizard API operation. For more information, see [ListWorkloadDeploymentPatterns](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloadDeploymentPatterns.html).
 
 ```
 $ aws launch-wizard list-workload-deployment-patterns --workload-name {{SAP}} --region {{us-east-1}}

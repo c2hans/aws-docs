@@ -35,7 +35,7 @@ You can update your IAM role using the AWS Management Console or the AWS CLI.
 ------
 #### [ To update the IAM role (AWS CLI) ]
 
-Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) command and specify the Amazon Resource Name (ARN) of the new role:
+Use the [`put-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html) command and specify the Amazon Resource Name (ARN) of the new role:
 
 ```
 $ aws configservice put-configuration-recorder --configuration-recorder name={{configRecorderName}},roleARN={{arn:aws:iam::012345678912:role/myConfigRole}}

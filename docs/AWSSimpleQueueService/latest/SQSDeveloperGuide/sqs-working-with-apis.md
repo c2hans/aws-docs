@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 # Using APIs with Amazon SQS
 <a name="sqs-working-with-apis"></a>
 
-This topic provides information about constructing Amazon SQS endpoints, making query API requests using the GET and POST methods, and using batch API actions. For detailed information about Amazon SQS [actions](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_Operations.html)—including parameters, errors, examples, and [data types](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_Types.html), see the [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/).
+This topic provides information about constructing Amazon SQS endpoints, making query API requests using the GET and POST methods, and using batch API actions. For detailed information about Amazon SQS [actions](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_Operations.html)—including parameters, errors, examples, and [data types](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_Types.html), see the [*Amazon Simple Queue Service API Reference*](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/).
 
 To access Amazon SQS using a variety of programming languages, you can also use [AWS SDKs](https://aws.amazon.com/tools/#sdk), which contain the following automatic functionality:
 + Cryptographically signing your service requests
@@ -14,7 +14,7 @@ To access Amazon SQS using a variety of programming languages, you can also use 
 
 For more information, see [Using Amazon SQS with an AWS SDK](sdk-general-information-section.md).
 
-For command line tool information, see the Amazon SQS sections in the [https://docs.aws.amazon.com/cli/latest/reference/sqs/index.html](https://docs.aws.amazon.com/cli/latest/reference/sqs/index.html) and the [https://docs.aws.amazon.com/powershell/latest/reference/](https://docs.aws.amazon.com/powershell/latest/reference/).
+For command line tool information, see the Amazon SQS sections in the [*AWS CLI Command Reference*](https://docs.aws.amazon.com/cli/latest/reference/sqs/index.html) and the [*AWS Tools for PowerShell Cmdlet Reference*](https://docs.aws.amazon.com/powershell/latest/reference/).
 
 **Amazon SQS APIs with AWS JSON protocol**
 

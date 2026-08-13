@@ -66,7 +66,7 @@ Disabling trusted access through the global networks console removes `AWSService
 
 When you disable trusted access, the following are affected in global networks:
 + All transit gateways owned by other accounts in your organization. You won't be able to see transit gateways or their attached resources from other accounts in your organization that were registered to your global network.
-+ IAM roles deployed in all member accounts managed by the Network Manager service. Disabling trusted access doesn't remove accounts, transit gateways, or resources but does deregister them from other delegated administrator's global networks. These can be added back in as needed by re-enabling trusted access. For more information about the `DeleteStackSet` API, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeleteStackSet.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeleteStackSet.html) in the *AWS CloudFormation API Reference*.
++ IAM roles deployed in all member accounts managed by the Network Manager service. Disabling trusted access doesn't remove accounts, transit gateways, or resources but does deregister them from other delegated administrator's global networks. These can be added back in as needed by re-enabling trusted access. For more information about the `DeleteStackSet` API, see [`DeleteStackSet`](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeleteStackSet.html) in the *AWS CloudFormation API Reference*.
 
 For more information about disabling trusted access, see [Disable trusted access in an AWS global network](nm-multi-disable.md).
 

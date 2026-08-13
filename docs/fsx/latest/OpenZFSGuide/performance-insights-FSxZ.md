@@ -21,14 +21,14 @@ Amazon FSx provides actionable recommendations that you can use to optimize your
   <tr><th>If there's a warning for this metric</th><th>Do this</th></tr>
 </thead>
 <tbody>
-  <tr><td>Network throughput – utilization</td><td rowspan="6">[Increase throughput capacity](managing-throughput-capacity.md#increase-throughput-capacity)</td></tr>
-  <tr><td>File server > Disk IOPS – utilization</td></tr>
-  <tr><td>File server > Disk throughput – utilization</td></tr>
-  <tr><td>File server > Disk IOPS – burst balance</td></tr>
-  <tr><td>File server > Disk throughput – burst balance</td></tr>
-  <tr><td>File server > CPU utilization</td></tr>
-  <tr><td>Storage capacity utilization</td><td>[Increase storage capacity](managing-storage-capacity.md#increase-storage-capacity)</td></tr>
-  <tr><td>Storage volume > Disk IOPS – utilization (SSD)</td><td>[Increase SSD IOPS](managing-storage-capacity.md#increase-storage-capacity)</td></tr>
+  <tr><td>Network throughput – utilization</td><td rowspan="6"><a href="managing-throughput-capacity.md#increase-throughput-capacity">Increase throughput capacity</a></td></tr>
+  <tr><td>File server &gt; Disk IOPS – utilization</td></tr>
+  <tr><td>File server &gt; Disk throughput – utilization</td></tr>
+  <tr><td>File server &gt; Disk IOPS – burst balance</td></tr>
+  <tr><td>File server &gt; Disk throughput – burst balance</td></tr>
+  <tr><td>File server &gt; CPU utilization</td></tr>
+  <tr><td>Storage capacity utilization</td><td><a href="managing-storage-capacity.md#increase-storage-capacity">Increase storage capacity</a></td></tr>
+  <tr><td>Storage volume &gt; Disk IOPS – utilization (SSD)</td><td><a href="managing-storage-capacity.md#increase-storage-capacity">Increase SSD IOPS</a></td></tr>
 </tbody>
 </table>
 

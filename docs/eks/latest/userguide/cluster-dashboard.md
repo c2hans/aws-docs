@@ -24,7 +24,7 @@ The Amazon EKS Dashboard provides consolidated visibility into your Kubernetes c
 The EKS dashboard integrates with EKS Cluster Insights to surface issues with your clusters, such as use of deprecated Kubernetes APIs. For more information, see [Prepare for Kubernetes version upgrades and troubleshoot misconfigurations with cluster insights](cluster-insights.md).
 
 **Note**
-The EKS Dashboard is not real-time and updates every 12 hours. For real-time cluster monitoring, see [Monitor your cluster performance and view logs](eks-observe.md)
+The EKS Dashboard is not real-time and updates every 12 hours. For real-time cluster monitoring, see [Monitor your cluster performance and view logs](eks-observe.md).
 
 ## How does the dashboard use AWS Organizations?
 <a name="how_does_the_dashboard_use_shared_aws_organizations"></a>

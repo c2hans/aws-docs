@@ -48,7 +48,7 @@ The returned `PresignedRequest` contains methods to get at the components of an 
 
  Many operations that are presignable require only a URL and must be sent as HTTP `GET` requests. Some operations, however, take a body and must be sent as an HTTP `POST` or HTTP `PUT` request along with headers in some cases. Presigning these requests is identical to presigning `GET` requests, but invoking the presigned request is more complicated.
 
- The following is an example of presigning an Amazon S3 `PutObject` request and converting it into an [https://docs.rs/http/latest/http/request/struct.Request.html](https://docs.rs/http/latest/http/request/struct.Request.html) which can be sent using an HTTP client of your choosing.
+ The following is an example of presigning an Amazon S3 `PutObject` request and converting it into an [`http::request::Request`](https://docs.rs/http/latest/http/request/struct.Request.html) which can be sent using an HTTP client of your choosing.
 
 To use the `into_http_1x_request()` method, add the `http-1x` feature to your `aws-sdk-s3` crate in your `Cargo.toml` file:
 
@@ -78,7 +78,7 @@ let http_req = presigned.into_http_1x_request(body);
 **Note**
 This is an advanced use case. It isn't needed or recommended for most users.
 
-There are a few use cases where it is necessary to create a signed request outside of the SDK for Rust context. For that you can use the [https://docs.rs/aws-sigv4/latest/aws_sigv4/index.html](https://docs.rs/aws-sigv4/latest/aws_sigv4/index.html) crate independently from the SDK.
+There are a few use cases where it is necessary to create a signed request outside of the SDK for Rust context. For that you can use the [`aws-sigv4`](https://docs.rs/aws-sigv4/latest/aws_sigv4/index.html) crate independently from the SDK.
 
  The following is an example to demonstrate the basic elements, see the crate documentation for more details.
 

@@ -50,14 +50,14 @@ Type the following commands to browse the log file for error messages:
   <tr><th>Command</th><th>Result</th></tr>
 </thead>
 <tbody>
-  <tr><td>& ERROR </td><td>Show just the error messages in the log file. Use a single space before and after the word ERROR.</td></tr>
-  <tr><td>/ ERROR </td><td>Search for the next error message.¹ </td></tr>
-  <tr><td>? ERROR </td><td>Search for the previous error message.² Use a single space before and after the word ERROR.</td></tr>
-  <tr><td>G</td><td>Go to the end of the log file.</td></tr>
-  <tr><td>g</td><td>Go to the start of the log file.</td></tr>
-  <tr><td>q</td><td>Exit the log file.</td></tr>
-  <tr><td>h</td><td>Learn about additional commands.</td></tr>
-  <tr><td colspan="2">¹ After you type **/ ERROR **, type **n** for the next error message. Type **N** for the previous error message. <br />² After you type **? ERROR **, type **n** for the next error message, or type **N** for the previous error message.</td></tr>
+  <tr><td><b>&amp; ERROR </b></td><td>Show just the error messages in the log file. Use a single space before and after the word <b>ERROR</b>.</td></tr>
+  <tr><td><b>/ ERROR </b></td><td>Search for the next error message.¹ </td></tr>
+  <tr><td><b>? ERROR </b></td><td>Search for the previous error message.² Use a single space before and after the word <b>ERROR</b>.</td></tr>
+  <tr><td><b>G</b></td><td>Go to the end of the log file.</td></tr>
+  <tr><td><b>g</b></td><td>Go to the start of the log file.</td></tr>
+  <tr><td><b>q</b></td><td>Exit the log file.</td></tr>
+  <tr><td><b>h</b></td><td>Learn about additional commands.</td></tr>
+  <tr><td colspan="2">¹ After you type <b>/ ERROR </b>, type <b>n</b> for the next error message. Type <b>N</b> for the previous error message. <br />² After you type <b>? ERROR </b>, type <b>n</b> for the next error message, or type <b>N</b> for the previous error message.</td></tr>
 </tbody>
 </table>
 
@@ -74,14 +74,14 @@ Type the following commands to browse the log file for error messages:
   <tr><th>Command</th><th>Result</th></tr>
 </thead>
 <tbody>
-  <tr><td>&stderr</td><td>Show just the error messages in the log file. </td></tr>
-  <tr><td>/stderr</td><td>Search for the next error message.¹</td></tr>
-  <tr><td>?stderr</td><td>Search for the previous error message.²</td></tr>
-  <tr><td>G</td><td>Go to the end of the log file.</td></tr>
-  <tr><td>g</td><td>Go to the start of the log file.</td></tr>
-  <tr><td>q</td><td>Exit the log file.</td></tr>
-  <tr><td>h</td><td>Learn about additional commands.</td></tr>
-  <tr><td colspan="2">¹After you type **/stderr**, type **n** for the next error message forward. Type **N** for the previous error message backward.<br />² After you type **?stderr**, type **n** for the next error message backward. Type **N** for the previous error message forward.</td></tr>
+  <tr><td><b>&amp;stderr</b></td><td>Show just the error messages in the log file. </td></tr>
+  <tr><td><b>/stderr</b></td><td>Search for the next error message.¹</td></tr>
+  <tr><td><b>?stderr</b></td><td>Search for the previous error message.²</td></tr>
+  <tr><td><b>G</b></td><td>Go to the end of the log file.</td></tr>
+  <tr><td><b>g</b></td><td>Go to the start of the log file.</td></tr>
+  <tr><td><b>q</b></td><td>Exit the log file.</td></tr>
+  <tr><td><b>h</b></td><td>Learn about additional commands.</td></tr>
+  <tr><td colspan="2">¹After you type <b>/stderr</b>, type <b>n</b> for the next error message forward. Type <b>N</b> for the previous error message backward.<br />² After you type <b>?stderr</b>, type <b>n</b> for the next error message backward. Type <b>N</b> for the previous error message forward.</td></tr>
 </tbody>
 </table>
 

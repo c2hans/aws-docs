@@ -25,9 +25,9 @@ For example, you might use a template to create the same Slack workspace configu
 
 You can choose whether to use CloudFormation templates or not. If you don't use CloudFormation templates, you can complete the following manual steps instead:
 + Create the AWS Support App resources in the AWS Support Center Console.
-+ Call the [https://docs.aws.amazon.com/supportapp/latest/APIReference/API_RegisterSlackWorkspaceForOrganization.html](https://docs.aws.amazon.com/supportapp/latest/APIReference/API_RegisterSlackWorkspaceForOrganization.html) API operation to register a Slack workspace for your account. The CloudFormation stack calls this API operation for you.
++ Call the [`RegisterSlackWorkspaceForOrganization`](https://docs.aws.amazon.com/supportapp/latest/APIReference/API_RegisterSlackWorkspaceForOrganization.html) API operation to register a Slack workspace for your account. The CloudFormation stack calls this API operation for you.
 + Create an IAM role with the required permissions for each member account.
-+ Call the [https://docs.aws.amazon.com/supportapp/latest/APIReference/API_CreateSlackChannelConfiguration.html](https://docs.aws.amazon.com/supportapp/latest/APIReference/API_CreateSlackChannelConfiguration.html) API operation to configure a Slack channel for each member account.
++ Call the [`CreateSlackChannelConfiguration`](https://docs.aws.amazon.com/supportapp/latest/APIReference/API_CreateSlackChannelConfiguration.html) API operation to configure a Slack channel for each member account.
 
 For detailed manual steps, see [Authorize multiple accounts](authorize-slack-workspace.md#authorize-multiple-accounts).
 
@@ -71,7 +71,7 @@ To find the workspace and channel IDs, open your Slack channel in a browser. In 
 ### Create a stack for the management account
 <a name="create-your-stack-for-slack"></a>
 
-Next, you must create a stack for the management account in the organization. This step calls the [https://docs.aws.amazon.com/supportapp/latest/APIReference/API_RegisterSlackWorkspaceForOrganization.html](https://docs.aws.amazon.com/supportapp/latest/APIReference/API_RegisterSlackWorkspaceForOrganization.html) API operation for you and authorizes the workspace with Slack.
+Next, you must create a stack for the management account in the organization. This step calls the [RegisterSlackWorkspaceForOrganization](https://docs.aws.amazon.com/supportapp/latest/APIReference/API_RegisterSlackWorkspaceForOrganization.html) API operation for you and authorizes the workspace with Slack.
 
 **Note**
 We recommend that you upload the Slack workspace configuration template that you updated in the previous procedure for the management account. You don't need to upload the Slack channel configuration template unless you're also configuring the management account to use the AWS Support App.
@@ -102,7 +102,7 @@ We recommend that you upload the Slack workspace configuration template that you
 
 Next, use the same template for the Slack workspace configuration to create a stack set with `service-managed` permissions. You can use stack sets to create the stack for your entire organization or specify the OUs that you want. For more information, see [Create a stack set](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-create-stack.html).
 
-This procedure also calls the [https://docs.aws.amazon.com/supportapp/latest/APIReference/API_RegisterSlackWorkspaceForOrganization.html](https://docs.aws.amazon.com/supportapp/latest/APIReference/API_RegisterSlackWorkspaceForOrganization.html) API operation for you. This API operation authorizes the workspace with Slack for the member accounts.
+This procedure also calls the [RegisterSlackWorkspaceForOrganization](https://docs.aws.amazon.com/supportapp/latest/APIReference/API_RegisterSlackWorkspaceForOrganization.html) API operation for you. This API operation authorizes the workspace with Slack for the member accounts.
 
 **To create a stack set for your organization**
 
@@ -175,7 +175,7 @@ To learn more about CloudFormation, see the following resources:
 
 You can also use [Terraform](https://www.terraform.io/) to create the AWS Support App resources for your AWS account. Terraform is an infrastructure-as-code tool that you can use for your cloud applications. You can use Terraform to create AWS Support App resources instead of deploying a CloudFormation stack to an account.
 
-After you install Terraform, you can specify the AWS Support App resources that you want. Terraform calls the [https://docs.aws.amazon.com/supportapp/latest/APIReference/API_RegisterSlackWorkspaceForOrganization.html](https://docs.aws.amazon.com/supportapp/latest/APIReference/API_RegisterSlackWorkspaceForOrganization.html) API operation to register a Slack workspace for you and creates your resources. You can then sign in the Support Center Console and find your configured Slack workspaces and channels.
+After you install Terraform, you can specify the AWS Support App resources that you want. Terraform calls the [RegisterSlackWorkspaceForOrganization](https://docs.aws.amazon.com/supportapp/latest/APIReference/API_RegisterSlackWorkspaceForOrganization.html) API operation to register a Slack workspace for you and creates your resources. You can then sign in the Support Center Console and find your configured Slack workspaces and channels.
 
 **Notes**
 If you're the management account for an organization, you must manually authorize a Slack workspace for your account before your member accounts can use Terraform to create the resources. If you haven't already done so, see [Authorize a Slack workspace](authorize-slack-workspace.md).

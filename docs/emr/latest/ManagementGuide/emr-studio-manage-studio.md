@@ -26,7 +26,7 @@ This section includes instructions to help you monitor, update, or delete an EMR
 
 **To retrieve details for an EMR Studio by Studio ID using the AWS CLI**
 
-Use the following `describe-studio` AWS CLI command to fetch detailed information about a particular EMR Studio. For more information, see the [https://docs.aws.amazon.com/cli/latest/reference/emr/describe-studio.html](https://docs.aws.amazon.com/cli/latest/reference/emr/describe-studio.html).
+Use the following `describe-studio` AWS CLI command to fetch detailed information about a particular EMR Studio. For more information, see the [*AWS CLI Command Reference*](https://docs.aws.amazon.com/cli/latest/reference/emr/describe-studio.html).
 
 ```
 aws emr describe-studio \
@@ -35,7 +35,7 @@ aws emr describe-studio \
 
 **To retrieve a list of EMR Studios using the AWS CLI**
 
-Use the following `list-studios` AWS CLI command. For more information, see the [https://docs.aws.amazon.com/cli/latest/reference/emr/list-studios.html](https://docs.aws.amazon.com/cli/latest/reference/emr/list-studios.html).
+Use the following `list-studios` AWS CLI command. For more information, see the [*AWS CLI Command Reference*](https://docs.aws.amazon.com/cli/latest/reference/emr/list-studios.html).
 
 ```
 aws emr list-studios
@@ -156,7 +156,7 @@ After you create an EMR Studio, you can update the following attributes using th
 
 **To update an EMR Studio using the AWS CLI**
 
-Use the `update-studio` AWS CLI command to update an EMR Studio. For more information, see the [https://docs.aws.amazon.com/cli/latest/reference/emr/update-studio.html](https://docs.aws.amazon.com/cli/latest/reference/emr/update-studio.html).
+Use the `update-studio` AWS CLI command to update an EMR Studio. For more information, see the [*AWS CLI Command Reference*](https://docs.aws.amazon.com/cli/latest/reference/emr/update-studio.html).
 
 **Note**
 You can associated a Studio with a maximum of 5 subnets. These subnets must belong to the same VPC as the Studio. The list of subnet IDs that you submit to the `update-studio` command can include new subnet IDs, but must also include all of the subnet IDs that you already associated with the Studio. You can't remove subnets from a Studio.
@@ -168,7 +168,7 @@ aws emr update-studio \
  --subnet-ids {{<old-subnet-id-1 old-subnet-id-2 old-subnet-id-3 new-subnet-id>}} \
 ```
 
-To verify the changes, use the `describe-studio` AWS CLI command and specify your Studio ID. For more information, see the [https://docs.aws.amazon.com/cli/latest/reference/emr/describe-studio.html](https://docs.aws.amazon.com/cli/latest/reference/emr/describe-studio.html).
+To verify the changes, use the `describe-studio` AWS CLI command and specify your Studio ID. For more information, see the [*AWS CLI Command Reference*](https://docs.aws.amazon.com/cli/latest/reference/emr/describe-studio.html).
 
 ```
 aws emr describe-studio \
@@ -264,7 +264,7 @@ Since each EMR Studio Workspace is an EMR notebook instance, you can use the Ama
 
 **To delete an EMR Studio with the AWS CLI**
 
-Use the `delete-studio` AWS CLI command to delete an EMR Studio. For more information, see the [https://docs.aws.amazon.com/cli/latest/reference/emr/delete-studio.html](https://docs.aws.amazon.com/cli/latest/reference/emr/delete-studio.html).
+Use the `delete-studio` AWS CLI command to delete an EMR Studio. For more information, see the [*AWS CLI Command Reference*](https://docs.aws.amazon.com/cli/latest/reference/emr/delete-studio.html).
 
 ```
 aws emr delete-studio --studio-id {{<id-of-studio-to-delete>}}

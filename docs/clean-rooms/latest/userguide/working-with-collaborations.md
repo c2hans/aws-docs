@@ -13,7 +13,7 @@ The collaboration creator can designate a single member to analyze configured ta
 
 In most cases, the member who can query or the member who can query and run jobs is also the [member paying for compute costs](glossary.md#glossary-member-paying-for-query-compute). However, the collaboration creator can configure a different member to be responsible for paying for the query compute costs.
 
-For information about how to create a collaboration using the AWS SDKs, see the [https://docs.aws.amazon.com/clean-rooms/latest/apireference/Welcome.html](https://docs.aws.amazon.com/clean-rooms/latest/apireference/Welcome.html).
+For information about how to create a collaboration using the AWS SDKs, see the [*AWS Clean Rooms API Reference*](https://docs.aws.amazon.com/clean-rooms/latest/apireference/Welcome.html).
 
 **Topics**
 + [Creating a collaboration](create-collaboration.md)

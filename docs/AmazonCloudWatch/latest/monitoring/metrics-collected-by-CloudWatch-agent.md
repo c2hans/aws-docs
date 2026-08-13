@@ -93,7 +93,7 @@ The following table lists the metrics that you can collect with the CloudWatch a
 | `netstat_tcp_none` | The number of TCP connections with inactive clients.<br />Unit: Count |
 | `netstat_tcp_syn_sent` | The number of TCP connections waiting for a matching connection request after having sent a connection request.<br />Unit: Count |
 | `netstat_tcp_syn_recv` | The number of TCP connections waiting for connection request acknowledgment after having sent and received a connection request.<br />Unit: Count |
-| `netstat_tcp_time_wait` | The number of TCP connections currently waiting to ensure that the client received the acknowledgment of its connection termination request.<br />Unit: Count |
+| `netstat_tcp_time_wait` | The number of TCP connections currently waiting to make sure that the client received the acknowledgment of its connection termination request.<br />Unit: Count |
 | `netstat_udp_socket` | The number of current UDP connections.<br />Unit: Count |
 | `processes_blocked` | The number of processes that are blocked.<br />Unit: Count |
 | `processes_dead` | The number of processes that are dead, indicated by the `X` state code on Linux.<br />This metric is not collected on macOS computers.<br />Unit: Count |

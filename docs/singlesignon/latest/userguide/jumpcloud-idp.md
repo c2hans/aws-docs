@@ -28,7 +28,7 @@ Before you begin deploying SCIM, we recommend that you first review the [Conside
 <a name="jumpcloud-prereqs"></a>
 
 You will need the following before you can get started:
-+ JumpCloud subscription or free trial. To sign up for a free trial visit [https://console.jumpcloud.com/signup](https://console.jumpcloud.com/signup).
++ JumpCloud subscription or free trial. To sign up for a free trial visit [JumpCloud](https://console.jumpcloud.com/signup).
 + An IAM Identity Center enabled account ([ free](https://aws.amazon.com/single-sign-on/)). For more information, see [Enable IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/setup-enable-idc.html).
 + A SAML connection from your JumpCloud account to IAM Identity Center, as described in [JumpCloud documentation for IAM Identity Center ](https://support.jumpcloud.com/support/s/article/Single-Sign-On-SSO-With-AWS-SSO).
 + If you replicated IAM Identity Center to additional Regions, you must update your identity provider configuration to enable access to AWS managed applications and AWS accounts from those Regions. For more details, see [Step 3 (external identity providers only): Update external IdP setup](replicate-to-additional-region.md#update-external-idp-setup). See the JumpCloud documentation for additional details.

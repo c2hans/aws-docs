@@ -71,7 +71,7 @@ If your users save files and directories associated with compute-intensive appli
 + Scratch space folders created by graphics simulation applications
 
 For more information, see:
-+  [https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html)
++  [*Amazon FSx for Windows File Server Windows User Guide*](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html)
 + [Using Amazon FSx with Amazon WorkSpaces Applications ](https://aws.amazon.com/blogs/desktop-and-application-streaming/using-amazon-fsx-with-amazon-appstream-2-0/)
 + [File gateways](https://docs.aws.amazon.com/storagegateway/latest/userguide/StorageGatewayConcepts.html#file-gateway-concepts) in the *AWS Storage Gateway User Guide*
 
@@ -88,7 +88,7 @@ This behavior is typically occurs in the following cases:
 Large file uploads might take significant time. Also, each attempt to upload the file might result in another file update, which can lead to repeated file upload attempts.
 
 To resolve this issue, we recommend that you use a Server Message Block (SMB) solution such as Amazon FSx for Windows File Server or an AWS Storage Gateway file gateway. For more information, see:
-+  [https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html)
++  [*Amazon FSx for Windows File Server Windows User Guide*](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html)
 + [Using Amazon FSx with Amazon WorkSpaces Applications ](https://aws.amazon.com/blogs/desktop-and-application-streaming/using-amazon-fsx-with-amazon-appstream-2-0/)
 + [File gateways](https://docs.aws.amazon.com/storagegateway/latest/userguide/StorageGatewayConcepts.html#file-gateway-concepts) in the *AWS Storage Gateway User Guide*
 

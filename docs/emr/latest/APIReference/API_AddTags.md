@@ -12,6 +12,7 @@ Adds tags to an Amazon EMR resource, such as a cluster or an Amazon EMR Studio. 
 
 ```
 {
+   "ClusterId": "{{string}}",
    "ResourceId": "{{string}}",
    "Tags": [
       {
@@ -28,6 +29,12 @@ Adds tags to an Amazon EMR resource, such as a cluster or an Amazon EMR Studio. 
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [ClusterId](#API_AddTags_RequestSyntax) **   <a name="EMR-AddTags-request-ClusterId"></a>
+The ID of the cluster that scopes the tag operation. Required when the resource being tagged is a session-scoped resource.
+Type: String
+Length Constraints: Maximum length of 256.
+Required: No
 
  ** [ResourceId](#API_AddTags_RequestSyntax) **   <a name="EMR-AddTags-request-ResourceId"></a>
 The Amazon EMR resource identifier to which tags will be added. For example, a cluster identifier or an Amazon EMR Studio ID.

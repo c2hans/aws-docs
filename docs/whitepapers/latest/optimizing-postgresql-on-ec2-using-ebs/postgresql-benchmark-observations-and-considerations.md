@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql
 
  Testing PostgreSQL database helps determine what type of volume is needed and ensures the most cost-effective and performant solution. For new workload, you can do a synthetic test, which provides the maximum number of IOPS that the new AWS infrastructure can achieve. If you are moving your workloads to the AWS Cloud, you can run a tool such as `iostat` to profile the IOPS required by your workloads. While you can use a synthetic test to estimate your storage performance needs, the best way to quantify storage performance needs is through profiling an existing production database if that is an option.
 
- Performing a synthetic test on the Amazon EBS volume allows you to specify the amount of concurrency and throughput that you want to simulate. It also helps determine the maximum number of IOPS and throughput needed for PostgreSQL workloads. [https://www.postgresql.org/docs/current/pgbench.html](https://www.postgresql.org/docs/current/pgbench.html) is an open-source benchmark utility to run benchmark tests on PostgreSQL.
+ Performing a synthetic test on the Amazon EBS volume allows you to specify the amount of concurrency and throughput that you want to simulate. It also helps determine the maximum number of IOPS and throughput needed for PostgreSQL workloads. [`pgbench`](https://www.postgresql.org/docs/current/pgbench.html) is an open-source benchmark utility to run benchmark tests on PostgreSQL.
 
 ## The test environment
 <a name="the-test-environment"></a>

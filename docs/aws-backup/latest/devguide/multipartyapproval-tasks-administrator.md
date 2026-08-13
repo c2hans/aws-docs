@@ -16,7 +16,7 @@ Before doing this step, it is recommended as a best practice you have both a pri
 
 See [Create an approval team](https://docs.aws.amazon.com/mpa/latest/userguide/create-team.html#create-team-steps) in the *Multi-party approval user guide* to create your team.
 
-During the [https://docs.aws.amazon.com/mpa/latest/APIReference/API_CreateApprovalTeam.html](https://docs.aws.amazon.com/mpa/latest/APIReference/API_CreateApprovalTeam.html) operation, one of the parameters is `policies`. This is a list of ARNs (Amazon Resource Names) for Multi-party approval resource policies that define permissions that protect the team.
+During the [`aws mpa create-approval-team`](https://docs.aws.amazon.com/mpa/latest/APIReference/API_CreateApprovalTeam.html) operation, one of the parameters is `policies`. This is a list of ARNs (Amazon Resource Names) for Multi-party approval resource policies that define permissions that protect the team.
 
 The policy shown in the example in the *Multi-party approval User Guide* in the procedure [Create an approval team](https://docs.aws.amazon.com/mpa/latest/userguide/create-team.html#create-team-steps) contains the policy `["arn:aws:mpa::aws:policy/backup.amazonaws.com/CreateRestoreAccessVault"]` with several necessary permissions.
 

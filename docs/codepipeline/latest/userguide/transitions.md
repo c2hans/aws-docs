@@ -70,4 +70,4 @@ To disable a transition between stages by using the AWS CLI, run the **disable-s
 
    The command returns nothing.
 
-1. To verify the transition has been disabled, either view the pipeline in the CodePipeline console or run the **get-pipeline-state** command. For more information, see [View pipelines (console)](pipelines-view-console.md) and [View pipeline details and history (CLI)](pipelines-view-cli.md).
+1. To verify the transition has been enabled, either view the pipeline in the CodePipeline console or run the **get-pipeline-state** command. For more information, see [View pipelines (console)](pipelines-view-console.md) and [View pipeline details and history (CLI)](pipelines-view-cli.md).

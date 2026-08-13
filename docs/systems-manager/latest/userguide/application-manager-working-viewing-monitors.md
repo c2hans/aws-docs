@@ -19,7 +19,7 @@ You can perform the following actions on this page:
 ![The time period controls on the Application Manager Monitoring tab.](http://docs.aws.amazon.com/systems-manager/latest/userguide/images/application-manager-Monitoring-1.png)
 + Hover your cursor over a widget in the **Recent alarms** section to view a data pop-up for a specific time.
 ![An alarm widget in the Recent alarms section of the Application Manager Monitoring tab.](http://docs.aws.amazon.com/systems-manager/latest/userguide/images/application-manager-Monitoring-2.png)
-+ Choose the options menu in a widget to view display options. Choose **Enlarge** to expand a widget. Choose **Refresh** to update the data in a widget. Click and drag your cursor in a widget data display to select a specific range. You can then choose **Apply time range**.
++ Choose the options menu in a widget to view display options. Choose **Enlarge** to expand a widget. Choose **Refresh** to update the data in a widget. Select a range in a widget data display to view a specific time range. You can then choose **Apply time range**.
 ![Alarm widget options in Application Manager.](http://docs.aws.amazon.com/systems-manager/latest/userguide/images/application-manager-Monitoring-3.png)
 + Choose the **Actions** menu to view alarm data **Override** options, which include the following:
   + Choose whether your widget displays live data. Live data is data published within the last minute that hasn't been fully aggregated. If live data is turned off, only data points with an aggregation period of at least one minute in the past are shown. For example, when using 5-minute periods, the data point for 12:35 would be aggregated from 12:35 to 12:40, and displayed at 12:41.

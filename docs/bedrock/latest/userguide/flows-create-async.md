@@ -111,7 +111,7 @@ Errors (such as a Lambda node that times out) are returned in the `errors` array
 ```
 
 **Get the results of a flow execution**
-Amazon Bedrock writes the outputs of a flow to the flow's [output](flows-nodes.md#flows-nodes-output) nodes. You can get the outputs once the flow completes or while the flow is running (depending on your use case).
+Amazon Bedrock writes the outputs of a flow to the flow's [output](flows-nodes.md#flows-nodes-output) nodes. You can get the outputs after the flow completes or while the flow is running (depending on your use case).
 
 If you want the flow to complete first, make a call to `GetFlowExecution` and make sure that the value of the `status` field in the response is `Succeeded`.
 

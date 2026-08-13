@@ -9,7 +9,7 @@ This section describes how you can use the AWS CLI to create a CloudTrail Lake i
 
 In the AWS CLI, you create an integration in four commands (three if you already have an event data store that meets the criteria). Event data stores that you use as the destinations for an integration must be for a single Region and single account; they cannot be multi-region, they cannot log events for organizations in AWS Organizations, and they can only include activity events. The event type in the console must be **Events from integrations**. In the API, the `eventCategory` value must be `ActivityAuditLog`. For more information about integrations, see [Create an integration with an event source outside of AWS](query-event-data-store-integration.md).
 
-1. Run [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/index.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/index.html) to create an event data store, if you do not already have one or more event data stores that you can use for the integration.
+1. Run [**create-event-data-store**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/index.html) to create an event data store, if you do not already have one or more event data stores that you can use for the integration.
 
    The following example AWS CLI command creates an event data store that logs events from outside AWS. For activity events, the `eventCategory` field selector value is `ActivityAuditLog`. The event data store has a retention period of 90 days set. By default, the event data store collects events from all Regions, but because this is collecting non-AWS events, set it to a single Region by adding the `--no-multi-region-enabled` option. Termination protection is enabled by default, and the event data store does not collect events for accounts in an organization.
 
@@ -59,7 +59,7 @@ In the AWS CLI, you create an integration in four commands (three if you already
 
    You'll need the event data store ID (the suffix of the ARN, or `EXAMPLEf852-4e8f-8bd1-bcf6cEXAMPLE` in the preceding response example) to go on to the next step and create your channel.
 
-1. Run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/create-channel.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/create-channel.html) command to create a channel that allows a partner or source application to send events to an event data store in CloudTrail.
+1. Run the [**create-channel**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/create-channel.html) command to create a channel that allows a partner or source application to send events to an event data store in CloudTrail.
 
    A channel has the following components:
 **Source**
@@ -133,7 +133,7 @@ If you do not create a resource policy for the channel, only the channel owner c
 
    For more information about resource policies, see [AWS CloudTrail resource-based policy examples](security_iam_resource-based-policy-examples.md).
 
-1. Run the [https://docs.aws.amazon.com/awscloudtraildata/latest/APIReference/API_PutAuditEvents.html](https://docs.aws.amazon.com/awscloudtraildata/latest/APIReference/API_PutAuditEvents.html) API to ingest your activity events into CloudTrail. You'll need the payload of events that you want CloudTrail to add. Be sure that there is no sensitive or personally-identifying information in event payload before ingesting it into CloudTrail. Note that the `PutAuditEvents` API uses the `cloudtrail-data` CLI endpoint, not the `cloudtrail` endpoint.
+1. Run the [`PutAuditEvents`](https://docs.aws.amazon.com/awscloudtraildata/latest/APIReference/API_PutAuditEvents.html) API to ingest your activity events into CloudTrail. You'll need the payload of events that you want CloudTrail to add. Be sure that there is no sensitive or personally-identifying information in event payload before ingesting it into CloudTrail. Note that the `PutAuditEvents` API uses the `cloudtrail-data` CLI endpoint, not the `cloudtrail` endpoint.
 
    The following examples show how to use the **put-audit-events** CLI command. The **--audit-events** and **--channel-arn** parameters are required. The **--external-id** parameter is required if an external ID is defined in the resource policy. You need the ARN of the channel that you created in the preceding step. The value of **--audit-events** is a JSON array of event objects. `--audit-events` includes a required ID from the event, the required payload of the event as the value of `EventData`, and an [optional checksum](#lake-cli-integration-checksum.title) to help validate the integrity of the event after ingestion into CloudTrail.
 
@@ -184,7 +184,7 @@ If you do not create a resource policy for the channel, only the channel owner c
    }
    ```
 
-You can verify that the integration is working, and CloudTrail is ingesting events from the source correctly, by running the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/get-channel.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/get-channel.html) command. The output of **get-channel** shows the most recent time stamp that CloudTrail received events.
+You can verify that the integration is working, and CloudTrail is ingesting events from the source correctly, by running the [**get-channel**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/get-channel.html) command. The output of **get-channel** shows the most recent time stamp that CloudTrail received events.
 
 ```
 aws cloudtrail get-channel --channel arn:aws:cloudtrail:us-east-1:01234567890:channel/EXAMPLE8-0558-4f7e-a06a-43969EXAMPLE

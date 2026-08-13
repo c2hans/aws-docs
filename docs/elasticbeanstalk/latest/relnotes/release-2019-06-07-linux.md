@@ -26,16 +26,27 @@ Asia Pacific (Singapore) – ap-southeast-1
 Europe (Ireland) – eu-west-1
 We will add support for the **T3a** instance type in the next Linux platform update.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **May 30, 2019** to all Linux-based platforms. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-06-07-linux.html) |
-| **Multicontainer Docker** | Updated the ECS agent to version 1.28.0. |
-| **Go** | Updated to minor revision 1.12.5. For details, see [go1.12](https://golang.org/doc/devel/release.html#go1.12) in *The Go Programming Language Release History*. |
-| **Java with Tomcat** | Updated Tomcat 8.5 to [Tomcat 8.5.40](https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.40_(markt)). |
-| **Node.js** | Updated the Node.js platform to add support for [Node v10.16.0](https://nodejs.org/en/blog/release/v10.16.0/). |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>May 30, 2019</b> to all Linux-based platforms.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Multicontainer Docker</b></td><td>Updated the ECS agent to version 1.28.0.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated to minor revision 1.12.5. For details, see <a href="https://golang.org/doc/devel/release.html#go1.12">go1.12</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Java with Tomcat</b></td><td>Updated Tomcat 8.5 to <a href="https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.40_(markt)">Tomcat 8.5.40</a>.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform to add support for <a href="https://nodejs.org/en/blog/release/v10.16.0/">Node v10.16.0</a>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2019-06-07-linux.platforms"></a>

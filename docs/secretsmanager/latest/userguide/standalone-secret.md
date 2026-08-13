@@ -29,7 +29,7 @@ Secrets Manager generates a CloudTrail log entry when you promote a secret. For 
 <a name="standalone-secret-cli"></a>
 
 **Example Promote a replica secret to a primary**
-The following [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/stop-replication-to-replica.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/stop-replication-to-replica.html) example removes the link between a replica secret to the primary. The replica secret is promoted to a primary secret in the replica region. You must call [https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/stop-replication-to-replica.html](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/stop-replication-to-replica.html) from within the replica region.
+The following [`stop-replication-to-replica`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/stop-replication-to-replica.html) example removes the link between a replica secret to the primary. The replica secret is promoted to a primary secret in the replica region. You must call [`stop-replication-to-replica`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/stop-replication-to-replica.html) from within the replica region.
 
 ```
 aws secretsmanager stop-replication-to-replica \
@@ -39,4 +39,4 @@ aws secretsmanager stop-replication-to-replica \
 ## AWS SDK
 <a name="standalone-secret-sdk"></a>
 
-To promote a replica to a standalone secret, use the [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_StopReplicationToReplica.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_StopReplicationToReplica.html) command. You must call this command from the replica secret Region. For more information, see [AWS SDKs](asm_access.md#asm-sdks).
+To promote a replica to a standalone secret, use the [`StopReplicationToReplica`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_StopReplicationToReplica.html) command. You must call this command from the replica secret Region. For more information, see [AWS SDKs](asm_access.md#asm-sdks).

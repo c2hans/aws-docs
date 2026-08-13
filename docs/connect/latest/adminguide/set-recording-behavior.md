@@ -17,11 +17,11 @@ There is a lot of functionality in this block:
 + You configure what part of the call can be recorded be it either agent, customer or both. No additional charges apply.
 + You can enable automated interaction call recording to hear how a customer is interacting with your IVR or conversational AI bot. No additional charges apply.
 + You can enable screen recording of agents, if agent screen recording has been set up as described in [Enable screen recording](enable-sr.md). For pricing information, see [Connect Customer Pricing](https://aws.amazon.com/connect/pricing/).
-+ You can configure Contact Lens analytics settings for chat and voice contacts. For pricing information, see [Connect Customer Pricing](https://aws.amazon.com/connect/pricing/). This includes:
++ You can configure conversational analytics settings for chat and voice contacts. For pricing information, see [Connect Customer Pricing](https://aws.amazon.com/connect/pricing/). This includes:
   + Language in which customers and agents will interact (to improve the speech to text transcript generation)
   + Redaction of sensitive data
-  + Additional Contact Lens Generative AI capabilities
-+ It enables Contact Lens conversational analytics on a contact. For more information, see [Analyze conversations using conversational analytics](analyze-conversations.md).
+  + Additional Generative AI capabilities
++ It enables conversational analytics on a contact. For more information, see [Analyze conversations using conversational analytics](analyze-conversations.md).
 
 ## Contact types
 <a name="set-recording-channels"></a>
@@ -69,23 +69,23 @@ The following image shows the **Set recording and analytics behavior** propertie
 In this section of the Properties page you configure recording and related analytics settings.
 + **Voice**:
   + **Agent and customer voice recording**: Choose who you want to record.
-  + **Contact Lens speech analytics**: Choose whether to use speech analytics on agent and customer recordings.
+  + **Speech analytics**: Choose whether to use speech analytics on agent and customer recordings.
   + **Automated interaction call recording**: Choose whether to enable voice recording when the customer is interacting with bots and other automation.
 **Note**
 To include Lex bot transcripts and analytics as a part of your **Contact details** page and Connect Customer analytics dashboards:
 In the Connect Customer console, choose the name of your instance. For instructions, see [Find your Connect Customer instance name](find-instance-name.md).
 On the navigation pane choose **Flows**, and then choose **Enable Bot Analytics and Transcripts in Connect Customer**.
 + **Screen**: Use to enable or disable recording of the agent's screen. For more information, see [Set up and review agent screen recordings in Connect Customer](agent-screen-recording.md).
-+ **Chat**: Use this option to enable chat analytics, a feature in Contact Lens. For more information, see [Enable conversational analytics in Connect Customer Contact Lens](enable-analytics.md).
++ **Chat**: Use this option to enable chat analytics, a feature in conversational analytics. For more information, see [Enable conversational analytics in Connect Customer conversational analytics](enable-analytics.md).
 
 ### Configure analytics settings
 <a name="configure-analytics-settings"></a>
 
-This section of the properties page applies to Contact Lens conversational analytics. You specify supported languages, redaction, and generative AI capabilities. Unless specified otherwise, analytics settings apply to both speech and chat Contact Lens conversational analytics.
+This section of the properties page applies to conversational analytics. You specify supported languages, redaction, and generative AI capabilities. Unless specified otherwise, analytics settings apply to both speech and chat conversational analytics.
 + **Language**: You can dynamically enable the redaction of the output files based on the language of the customer. For instructions, see [Dynamically enable redaction based on the customer's language](enable-analytics.md#dynamically-enable-analytics-contact-flow).
 + **Redaction**: Choose whether to redact sensitive data. For more information, see [Enable redaction of sensitive data](enable-analytics.md#enable-redaction).
 + **Sentiment**: Choose whether to enable sentiment analysis.
-+ **Contact Lens Generative AI capabilities**: For more information, see [View generative AI-powered post-contact summaries](view-generative-ai-contact-summaries.md)
++ **Generative AI capabilities**: For more information, see [View generative AI-powered post-contact summaries](view-generative-ai-contact-summaries.md)
 
 ## Configuration tips
 <a name="set-recording-behavior-tips"></a>
@@ -100,7 +100,7 @@ This section of the properties page applies to Contact Lens conversational analy
   1. Configure the third block to the new recording behavior you want, such as **Agent only**.
 **Note**
 The settings in the **Analytics** section are overwritten by each subsequent **Set recording and analytics behavior** block in the flow.
-+ **For calls**: Unselecting **Enable speech analytics on agent and customer voice recordings** disables Contact Lens conversational analytics.
++ **For calls**: Unselecting **Enable speech analytics on agent and customer voice recordings** disables conversational analytics.
 
   For example, let's say you have two **Set recording and analytics behavior** blocks in your flow.
   + The first block has enabled real-time speech analytics on agent and customer voice recordings selected.
@@ -118,7 +118,7 @@ The settings in the **Analytics** section are overwritten by each subsequent **S
 When a call is transferred by using the [Transfer to phone number](transfer-to-phone-number.md) block, the recording continues.
 + **For chat**: Real-time chat starts analysis as soon as any block in the flow enables it. No block later in the flow disables the real time chat settings.
 + If an agent puts a customer on hold, the agent is still recorded, but the customer is not.
-+ If you want to transfer a contact to another agent or queue, and you want to continue using Contact Lens conversational analytics to collect data, you need to add to the flow another **Set recording behavior** block with **Enable analytics** turn on. This is because a transfer generates a second contact ID and contact record. Contact Lens conversational analytics needs to run on that contact record as well.
++ If you want to transfer a contact to another agent or queue, and you want to continue using conversational analytics to collect data, you need to add to the flow another **Set recording behavior** block with **Enable analytics** turn on. This is because a transfer generates a second contact ID and contact record. conversational analytics needs to run on that contact record as well.
 + When you enable conversational analytics, the type of flow that the block is in, and where it is placed in the flow, determine **whether** agents receive the key highlights transcript, and **when** they receive it.
 
   For more information and example use cases that explain how the block affects the agents experience with key highlights, see [Design a flow for key highlights](enable-analytics.md#call-summarization-agent).
@@ -147,4 +147,4 @@ See these topics for scenarios that use this block:
 + [Enable enhanced multi-party contact monitoring in Connect Customer](monitor-conversations.md)
 + [Review recorded conversations between agents and customers using Connect Customer](review-recorded-conversations.md)
 + [Assign permissions to review past contact center conversations in Connect Customer](assign-permissions-to-review-recordings.md)
-+ [Analyze conversations using conversational analytics in Connect Customer Contact Lens](analyze-conversations.md)
++ [Analyze conversations using conversational analytics in Connect Customer conversational analytics](analyze-conversations.md)

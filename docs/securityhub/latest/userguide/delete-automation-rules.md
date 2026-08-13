@@ -29,7 +29,7 @@ Choose your preferred method, and follow the steps to delete an automation rule.
 
 **To delete or disable automation rules (API)**
 
-1. Use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchDeleteAutomationRules.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchDeleteAutomationRules.html) operation from the Security Hub CSPM administrator account.
+1. Use the [`BatchDeleteAutomationRules`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchDeleteAutomationRules.html) operation from the Security Hub CSPM administrator account.
 
 1. For the `AutomationRulesArns` parameter, provide the ARN of the rule(s) that you want to delete (to retain a rule, but disable it temporarily, provide `DISABLED` for the `RuleStatus` parameter).
 

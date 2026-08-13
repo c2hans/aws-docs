@@ -134,7 +134,7 @@ Information that a game server process uses to establish a connection with the A
 
 | Properties | **Description** |
 | --- | --- |
-| webSocketUrl | The `GameLiftServerSdkEndpoint` Amazon GameLift Servers returns when you [https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_RegisterCompute.html](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_RegisterCompute.html) for a Amazon GameLift Servers Anywhere compute resource.<br />**Type:** `std::string`<br />**Required**: Yes  |
+| webSocketUrl | The `GameLiftServerSdkEndpoint` Amazon GameLift Servers returns when you [`RegisterCompute`](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_RegisterCompute.html) for a Amazon GameLift Servers Anywhere compute resource.<br />**Type:** `std::string`<br />**Required**: Yes  |
 | processId | A unique identifier registered to the server process hosting your game.<br />**Type:** `std::string`<br />**Required**: Yes |
 | hostId | The HostID is the ComputeName used when you registered your compute. For more information see, [RegisterCompute](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_RegisterCompute.html).**Type:** `std::string`<br />**Required**: Yes |
 | fleetId | The unique identifier of the fleet that the compute is registered to. For more information see, [RegisterCompute](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_RegisterCompute.html).**Type:** `std::string`<br />**Required**: Yes |

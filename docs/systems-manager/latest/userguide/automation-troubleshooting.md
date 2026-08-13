@@ -7,13 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 # Troubleshooting Systems Manager Automation
 <a name="automation-troubleshooting"></a>
 
-Use the following information to help you troubleshoot problems with AWS Systems Manager Automation, a tool in AWS Systems Manager. This topic includes specific tasks to resolve issues based on Automation error messages.
-
-**Topics**
-+ [Common Automation errors](#automation-trbl-common)
-+ [Automation execution failed to start](#automation-trbl-access)
-+ [Execution started, but status is failed](#automation-trbl-exstrt)
-+ [Execution started, but timed out](#automation-trbl-to)
+Use the following information to help you troubleshoot problems with AWS Systems Manager Automation. This topic includes specific tasks to resolve issues based on Automation error messages.
 
 ## Common Automation errors
 <a name="automation-trbl-common"></a>
@@ -23,7 +17,7 @@ This section includes information about common Automation errors.
 ### VPC not defined 400
 <a name="automation-trbl-common-vpc"></a>
 
-By default, when Automation runs either the `AWS-UpdateLinuxAmi` runbook or the `AWS-UpdateWindowsAmi` runbook, the system creates a temporary instance in the default VPC (172.30.0.0/16). If you deleted the default VPC, you will receive the following error:
+By default, when Automation runs either the `AWS-UpdateLinuxAmi` runbook or the `AWS-UpdateWindowsAmi` runbook, the system creates a temporary instance in the default VPC (172.30.0.0/16). If you deleted the default VPC, you receive the following error:
 
 `VPC not defined 400`
 
@@ -99,11 +93,11 @@ When a step fails, the failure message might indicate which service was being in
 | `aws:runInstances` | Amazon EC2 | [ Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/) | [Troubleshooting EC2 Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-troubleshoot.html) |
 | `aws:changeInstanceState` | Amazon EC2 | [Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/) | [Troubleshooting EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-troubleshoot.html) |
 | `aws:runCommand` | Systems Manager |  [AWS Systems Manager Run Command](run-command.md) |  [Troubleshooting Systems Manager Run Command](troubleshooting-remote-commands.md) |
-| `aws:createImage` | Amazon EC2 | [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) |  |
+| `aws:createImage` | Amazon EC2 | [Amazon Machine Images](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) |  |
 | `aws:createStack` | CloudFormation | [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) | [Troubleshooting CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/troubleshooting.html) |
 | `aws:deleteStack` | CloudFormation | [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) | [Troubleshooting CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/troubleshooting.html) |
 | `aws:deleteImage` | Amazon EC2 | [Amazon Machines Images](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) |  |
-| `aws:copyImage` | Amazon EC2 | [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) |  |
+| `aws:copyImage` | Amazon EC2 | [Amazon Machine Images](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) |  |
 | `aws:createTag` | Amazon EC2, Systems Manager | [EC2 Resource and Tags](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_Resources.html) |  |
 | `aws:invokeLambdaFunction` | AWS Lambda | [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/) | [Troubleshooting Lambda](https://docs.aws.amazon.com/lambda/latest/dg/monitoring-functions.html) |
 

@@ -43,7 +43,7 @@ To read Netskope event and alert logs, the pipeline needs to authenticate with y
 ## Configuring the CloudWatch Pipeline
 <a name="netskope-pipeline-config"></a>
 
-When configuring the pipeline to read event and alert logs from Netskope, choose Netskope as the data source. Fill in the required information such as your tenant hostname and the AWS Secrets Manager secret ARN for your credentials where api\_token is stored. Once you create the pipeline, data will be available in the selected CloudWatch Logs log group.
+When configuring the pipeline to read event and alert logs from Netskope, choose Netskope as the data source. Fill in the required information such as your tenant hostname and the AWS Secrets Manager secret ARN for your credentials where api\_token is stored. After you create the pipeline, data will be available in the selected CloudWatch Logs log group.
 
 ## Supported Open Cybersecurity Schema Framework Event Classes
 <a name="netskope-ocsf-events"></a>

@@ -204,35 +204,46 @@ You can replace attribute names that are shown as `{{custom_attribute}}` with an
 
 In JSON, the custom attribute must be formatted at `"Attributes":{"Ride":["Bus"]}`.
 
-| Attribute | Description |
-| --- | --- |
-| Time zone | Remapped time zone |
-| --- | --- |
-| Address | The unique destination address for messages or push notifications that you send to the endpoint—for example, an email address, phone number, or device token. If the endpoint address is a phone number, you must specify it in E.164 format. For more information about the E.164 format, see [E.164](https://en.wikipedia.org/wiki/E.164) on Wikipedia.  |
-| Attributes.{{custom\_attribute}} | A custom attribute that describes the endpoint. You can use this type of attribute as selection criteria when you create a segment. You can replace {{custom\_attribute}} with any value. |
-| ChannelType | The channel to use when sending messages or push notifications to the endpoint. For example:+  `APNS` – For an endpoint that can receive push notifications that you send through the Apple Push Notification service (APNs) channel to apps that are running on iOS devices. <br />+  `EMAIL` – For an endpoint that can receive email messages. <br />+  `GCM` – For an endpoint that can receive push notifications that you send through the Firebase Cloud Messaging (FCM) channel to apps that are running on Android devices. <br />+  `SMS` – For an endpoint that can receive SMS text messages.  |
-| Demographic.AppVersion | The version number of the application that's associated with the endpoint. |
-| Demographic.Locale | The locale of the endpoint, in the following format: the [ISO 639-1 alpha-2](https://en.wikipedia.org/wiki/ISO_639-1) code, followed by an underscore (\_), followed by an [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) value. For example, en\_US is the English language locale for the United States. |
-| Demographic.Make | The manufacturer of the endpoint device, such as apple or samsung. |
-| Demographic.Model | The model name or number of the endpoint device, such as iPhone or SM-G900F. |
-| Demographic.ModelVersion | The model version of the endpoint device. |
-| Demographic.Platform | The operating system on the endpoint device, such as ios or android. |
-| Demographic.PlatformVersion | The version of the operating system on the endpoint device. |
-| Demographic.Timezone | The endpoint's time zone, as a [tz database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) value. For example, America/Los\_Angeles for Pacific Time (North America).The following time zones are no longer supported and are automatically remapped to supported time zones. [See the AWS documentation website for more details](http://docs.aws.amazon.com/pinpoint/latest/userguide/segments-importing.html) |
-| EffectiveDate | The date and time when the endpoint was last updated, in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601). For example, 2019-08-23T10:54:35.220Z for 10:54 AM UTC August 23, 2019. |
-| Id | A unique identifier for the endpoint. |
-| Location.City | The city where the endpoint is located. |
-| Location.Country | The two-character code, in [ISO 3166-1 alpha-2 format](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2), for the country or region where the endpoint is located. For example, US for the United States. |
-| Location.Latitude | The latitude coordinate of the endpoint's location, rounded to one decimal place. |
-| Location.Longitude | The longitude coordinate of the endpoint's location, rounded to one decimal place. |
-| Location.PostalCode | The postal or ZIP code for the area where the endpoint is located. |
-| Location.Region | The name of the region, such as a state or province, where the endpoint is located. |
-| Metrics.{{custom\_attribute}} | A custom numeric metric that your application reports to Amazon Pinpoint for the endpoint—for example, the number of sessions or number of items left in a cart—to use for segmentation purposes. You can replace {{custom\_attribute}} with any value.These custom values can only be numeric. Because they're numeric, Amazon Pinpoint can perform arithmetic operations, such as average or sum, on them. |
-| OptOut | Indicates whether a user opted out of receiving messages and push notifications from you. Acceptable values are: ALL, the user opted out and doesn't want to receive any messages or push notifications, or NONE, the user hasn't opted out and wants to receive all messages and push notifications. |
-| RequestId | The unique identifier for the most recent request to update the endpoint. |
-| User.UserAttributes.{{custom\_attribute}} | A custom attribute that describes the user. You can replace {{custom\_attribute}} with any value, such as FirstName or Age. |
-| User.UserId | A unique identifier for the user. |
-| Canada/East-Saskatchewan  | America/Managua |
-| US/Pacific-New  | America/Los\_Angeles |
+<table>
+<thead>
+  <tr><th>Attribute</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td><code>Address</code></td><td>The unique destination address for messages or push notifications that you send to the endpoint—for example, an email address, phone number, or device token. If the endpoint address is a phone number, you must specify it in E.164 format. For more information about the E.164 format, see <a href="https://en.wikipedia.org/wiki/E.164">E.164</a> on Wikipedia. </td></tr>
+  <tr><td><code>Attributes.custom_attribute</code></td><td>A custom attribute that describes the endpoint. You can use this type of attribute as selection criteria when you create a segment. You can replace <code>custom_attribute</code> with any value.</td></tr>
+  <tr><td><code>ChannelType</code></td><td>The channel to use when sending messages or push notifications to the endpoint. For example:<ul><li> <code>APNS</code> – For an endpoint that can receive push notifications that you send through the Apple Push Notification service (APNs) channel to apps that are running on iOS devices. </li><li> <code>EMAIL</code> – For an endpoint that can receive email messages. </li><li> <code>GCM</code> – For an endpoint that can receive push notifications that you send through the Firebase Cloud Messaging (FCM) channel to apps that are running on Android devices. </li><li> <code>SMS</code> – For an endpoint that can receive SMS text messages. </li></ul></td></tr>
+  <tr><td><code>Demographic.AppVersion</code></td><td>The version number of the application that's associated with the endpoint.</td></tr>
+  <tr><td><code>Demographic.Locale</code></td><td>The locale of the endpoint, in the following format: the <a href="https://en.wikipedia.org/wiki/ISO_639-1">ISO 639-1 alpha-2</a> code, followed by an underscore (_), followed by an <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2</a> value. For example, <code>en_US</code> is the English language locale for the United States.</td></tr>
+  <tr><td><code>Demographic.Make</code></td><td>The manufacturer of the endpoint device, such as <code>apple</code> or <code>samsung</code>.</td></tr>
+  <tr><td><code>Demographic.Model</code></td><td>The model name or number of the endpoint device, such as <code>iPhone</code> or SM-G900F.</td></tr>
+  <tr><td><code>Demographic.ModelVersion</code></td><td>The model version of the endpoint device.</td></tr>
+  <tr><td><code>Demographic.Platform</code></td><td>The operating system on the endpoint device, such as <code>ios</code> or <code>android</code>.</td></tr>
+  <tr><td><code>Demographic.PlatformVersion</code></td><td>The version of the operating system on the endpoint device.</td></tr>
+  <tr><td><code>Demographic.Timezone</code></td><td>The endpoint's time zone, as a <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">tz database</a> value. For example, <code>America/Los_Angeles</code> for Pacific Time (North America).The following time zones are no longer supported and are automatically remapped to supported time zones. <p><b></b></p>
+<table>
+<thead>
+  <tr><th>Time zone</th><th>Remapped time zone</th></tr>
+</thead>
+<tbody>
+  <tr><td><code>Canada/East-Saskatchewan </code></td><td><code>America/Managua</code></td></tr>
+  <tr><td><code>US/Pacific-New</code> </td><td><code>America/Los_Angeles</code></td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><code>EffectiveDate</code></td><td>The date and time when the endpoint was last updated, in <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601 format</a>. For example, <code>2019-08-23T10:54:35.220Z</code> for 10:54 AM UTC August 23, 2019.</td></tr>
+  <tr><td><code>Id</code></td><td>A unique identifier for the endpoint.</td></tr>
+  <tr><td><code>Location.City</code></td><td>The city where the endpoint is located.</td></tr>
+  <tr><td><code>Location.Country</code></td><td>The two-character code, in <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2 format</a>, for the country or region where the endpoint is located. For example, <code>US</code> for the United States.</td></tr>
+  <tr><td><code>Location.Latitude</code></td><td>The latitude coordinate of the endpoint's location, rounded to one decimal place.</td></tr>
+  <tr><td><code>Location.Longitude</code></td><td>The longitude coordinate of the endpoint's location, rounded to one decimal place.</td></tr>
+  <tr><td><code>Location.PostalCode</code></td><td>The postal or ZIP code for the area where the endpoint is located.</td></tr>
+  <tr><td><code>Location.Region</code></td><td>The name of the region, such as a state or province, where the endpoint is located.</td></tr>
+  <tr><td><code>Metrics.custom_attribute</code></td><td>A custom numeric metric that your application reports to Amazon Pinpoint for the endpoint—for example, the number of sessions or number of items left in a cart—to use for segmentation purposes. You can replace <code>custom_attribute</code> with any value.These custom values can only be numeric. Because they're numeric, Amazon Pinpoint can perform arithmetic operations, such as average or sum, on them.</td></tr>
+  <tr><td><code>OptOut</code></td><td>Indicates whether a user opted out of receiving messages and push notifications from you. Acceptable values are: <code>ALL</code>, the user opted out and doesn't want to receive any messages or push notifications, or <code>NONE</code>, the user hasn't opted out and wants to receive all messages and push notifications.</td></tr>
+  <tr><td><code>RequestId</code></td><td>The unique identifier for the most recent request to update the endpoint.</td></tr>
+  <tr><td><code>User.UserAttributes.custom_attribute</code></td><td>A custom attribute that describes the user. You can replace <code>custom_attribute</code> with any value, such as <code>FirstName</code> or <code>Age</code>.</td></tr>
+  <tr><td><code>User.UserId</code></td><td>A unique identifier for the user.</td></tr>
+</tbody>
+</table>
 
 You can create as many as 250 custom attributes for endpoints and users in each project. For more information, see [Amazon Pinpoint quotas](https://docs.aws.amazon.com/pinpoint/latest/developerguide/quotas.html) in the *Amazon Pinpoint Developer Guide*.

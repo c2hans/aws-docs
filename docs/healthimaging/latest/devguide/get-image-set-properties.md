@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/get-image-
 # Getting image set properties
 <a name="get-image-set-properties"></a>
 
-Use the `GetImageSet` action to return properties for a given [image set](getting-started-concepts.md#concept-image-set) in HealthImaging. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetImageSet.html](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetImageSet.html) in the *AWS HealthImaging API Reference*.
+Use the `GetImageSet` action to return properties for a given [image set](getting-started-concepts.md#concept-image-set) in HealthImaging. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`GetImageSet`](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetImageSet.html) in the *AWS HealthImaging API Reference*.
 
 **Note**
 By default, AWS HealthImaging returns properties for the latest version of an image set. To view properties for an older version of an image set, provide the `versionId` with your request.

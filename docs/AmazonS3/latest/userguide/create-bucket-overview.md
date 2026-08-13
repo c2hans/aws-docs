@@ -143,7 +143,7 @@ To create an Object Lock enabled bucket, you must have the following permissions
 ## Using the AWS SDKs
 <a name="create-bucket-intro"></a>
 
-When you use the AWS SDKs to create a general purpose bucket, you must create a client and then use the client to send a request to create a bucket. As a best practice, you should create your client and bucket in the same AWS Region. If you don't specify a Region when you create a client or a bucket, Amazon S3 uses the default Region, US East (N. Virginia). If you want to constrain the bucket creation to a specific AWS Region, use the [https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucketConfiguration.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucketConfiguration.html) condition key.
+When you use the AWS SDKs to create a general purpose bucket, you must create a client and then use the client to send a request to create a bucket. As a best practice, you should create your client and bucket in the same AWS Region. If you don't specify a Region when you create a client or a bucket, Amazon S3 uses the default Region, US East (N. Virginia). If you want to constrain the bucket creation to a specific AWS Region, use the [LocationConstraint](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucketConfiguration.html) condition key.
 
 To create a client to access a dual-stack endpoint, you must specify an AWS Region. For more information, see [Using Amazon S3 dual-stack endpoints ](https://docs.aws.amazon.com/AmazonS3/latest/API/dual-stack-endpoints.html#dual-stack-endpoints-description) in the *Amazon S3 API Reference*. For a list of available AWS Regions, see [Amazon Simple Storage Service endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/s3.html) in the *AWS General Reference*.
 
@@ -306,4 +306,4 @@ aws s3api create-bucket \
     --create-bucket-configuration LocationConstraint={{us-west-1}}
 ```
 
-For more information and additional examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/create-bucket.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/create-bucket.html) in the *AWS CLI Command Reference*.
+For more information and additional examples, see [create-bucket](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/create-bucket.html) in the *AWS CLI Command Reference*.

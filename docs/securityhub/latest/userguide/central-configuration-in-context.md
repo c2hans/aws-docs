@@ -9,7 +9,7 @@ When you use [central configuration](central-configuration-intro.md) in AWS Secu
 
 On the Security Hub CSPM console, the delegated administrator can update configuration policies in two ways—from the **Configuration** page, or in context with existing workflows. The latter can be beneficial because, as you view security findings, you can discover which standards and controls are most relevant to your environment and configure them at the same time.
 
-In-context configuration is available only on the Security Hub CSPM console. Programmatically, the delegated administrator must invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateConfigurationPolicy.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateConfigurationPolicy.html) operation of the Security Hub CSPM API to change how specific standards or controls are configured in the organization.
+In-context configuration is available only on the Security Hub CSPM console. Programmatically, the delegated administrator must invoke the [UpdateConfigurationPolicy](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateConfigurationPolicy.html) operation of the Security Hub CSPM API to change how specific standards or controls are configured in the organization.
 
 Follow these steps to configure a Security Hub CSPM standard or control in context.
 

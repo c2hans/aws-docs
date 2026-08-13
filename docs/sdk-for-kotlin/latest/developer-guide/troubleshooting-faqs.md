@@ -22,7 +22,7 @@ These types of exceptions are automatically retried but might still appear in SD
 ### Idle connection monitoring with the OkHttpEngine
 <a name="ts-faq-connection-closed-okhttp"></a>
 
-If you’re using the `OkHttpEngine` and frequently encounter `IOException: unexpected end of stream on <URL>` exceptions, [consider enabling idle connection monitoring](http-client-config.md#http-idle-connection-monitoring). This feature detects when remote servers have closed connections that are still in the connection pool, which can reduce the occurrence of these exceptions.
+If you’re using the [`OkHttpEngine`](/smithy-kotlin/api/latest/http-client-engine-okhttp/aws.smithy.kotlin.runtime.http.engine.okhttp/-ok-http-engine/index.html) and frequently encounter `IOException: unexpected end of stream on <URL>` exceptions, [consider enabling idle connection monitoring](http-client-config.md#http-idle-connection-monitoring). This feature detects when remote servers have closed connections that are still in the connection pool, which can reduce the occurrence of these exceptions.
 
 ## Why are exceptions thrown before reaching the maximum attempts?
 <a name="ts-faq-exceptions-before-max"></a>

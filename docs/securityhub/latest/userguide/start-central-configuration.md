@@ -44,7 +44,7 @@ The home Region is also your Security Hub CSPM aggregation Region that receives 
 
 If you have already set an aggregation Region for cross-Region aggregation, then that's your default home Region for central configuration. You can change the home Region before you start to use central configuration by deleting your current finding aggregator and creating a new one in your desired home Region. A finding aggregator is a Security Hub CSPM resource that specifies the home Region and linked Regions.
 
-To designate a home Region, see [the steps for setting an aggregation Region](finding-aggregation-enable.md). If you already have a home Region, you can invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingAggregator.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingAggregator.html) API to see details about it, including which Regions currently are linked to it.
+To designate a home Region, see [the steps for setting an aggregation Region](finding-aggregation-enable.md). If you already have a home Region, you can invoke the [GetFindingAggregator](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingAggregator.html) API to see details about it, including which Regions currently are linked to it.
 
 ## Instructions for enabling central configuration
 <a name="central-configuration-get-started"></a>
@@ -77,7 +77,7 @@ Choose your preferred method, and follow the steps to enable central configurati
 
 **To enable central configuration (API)**
 
-1. Using the credentials of the delegated administrator account, invoke the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateOrganizationConfiguration.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateOrganizationConfiguration.html) API from the home Region.
+1. Using the credentials of the delegated administrator account, invoke the [UpdateOrganizationConfiguration](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateOrganizationConfiguration.html) API from the home Region.
 
 1. Set the `AutoEnable` field to `false`.
 
@@ -85,7 +85,7 @@ Choose your preferred method, and follow the steps to enable central configurati
    + Designates the calling account as the Security Hub CSPM delegated administrator in all linked Regions.
    + Enables Security Hub CSPM in the delegated administrator account in all linked Regions.
    + Designates the calling account as the Security Hub CSPM delegated administrator for new and existing accounts that use Security Hub CSPM and belong to the organization. This occurs in the home Region and all linked Regions. The calling account is set as the delegated administrator for new organization accounts only if they are associated with a configuration policy that has Security Hub CSPM enabled. The calling account is set as the delegated administrator for existing organization accounts only if they already have Security Hub CSPM enabled.
-   + Sets [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateOrganizationConfiguration.html#securityhub-UpdateOrganizationConfiguration-request-AutoEnable](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateOrganizationConfiguration.html#securityhub-UpdateOrganizationConfiguration-request-AutoEnable) to `false` in all linked Regions, and sets [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateOrganizationConfiguration.html#securityhub-UpdateOrganizationConfiguration-request-AutoEnableStandards](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateOrganizationConfiguration.html#securityhub-UpdateOrganizationConfiguration-request-AutoEnableStandards) to `NONE` in the home Region and all linked Regions. These parameters aren't relevant in the home and linked Regions when you use central configuration, but you can automatically enable Security Hub CSPM and default security standards in organization accounts through the use of configuration policies.
+   + Sets [AutoEnable](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateOrganizationConfiguration.html#securityhub-UpdateOrganizationConfiguration-request-AutoEnable) to `false` in all linked Regions, and sets [AutoEnableStandards](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateOrganizationConfiguration.html#securityhub-UpdateOrganizationConfiguration-request-AutoEnableStandards) to `NONE` in the home Region and all linked Regions. These parameters aren't relevant in the home and linked Regions when you use central configuration, but you can automatically enable Security Hub CSPM and default security standards in organization accounts through the use of configuration policies.
 
 1. You can now use central configuration. The delegated administrator can create configuration policies to configure Security Hub CSPM in your organization. For instructions on creating a configuration policy, see [Creating and associating configuration policies](create-associate-policy.md).
 
@@ -105,7 +105,7 @@ Choose your preferred method, and follow the steps to enable central configurati
 
 **To enable central configuration (AWS CLI)**
 
-1. Using the credentials of the delegated administrator account, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-organization-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-organization-configuration.html) command from the home Region.
+1. Using the credentials of the delegated administrator account, run the [update-organization-configuration](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-organization-configuration.html) command from the home Region.
 
 1. Include the `no-auto-enable` parameter.
 
@@ -113,7 +113,7 @@ Choose your preferred method, and follow the steps to enable central configurati
    + Designates the calling account as the Security Hub CSPM delegated administrator in all linked Regions.
    + Enables Security Hub CSPM in the delegated administrator account in all linked Regions.
    + Designates the calling account as the Security Hub CSPM delegated administrator for new and existing accounts that use Security Hub CSPM and belong to the organization. This occurs in the home Region and all linked Regions. The calling account is set as the delegated administrator for new organization accounts only if they are associated with a configuration policy that has Security Hub enabled. The calling account is set as the delegated administrator for existing organization accounts only if they already have Security Hub CSPM enabled.
-   + Sets the auto-enablement option to [https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-organization-configuration.html#options](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-organization-configuration.html#options) in all linked Regions, and sets [https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-organization-configuration.html#options](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-organization-configuration.html#options) to `NONE` in the home Region and all linked Regions. These parameters aren't relevant in the home and linked Regions when you use central configuration, but you can automatically enable Security Hub CSPM and default security standards in organization accounts through the use of configuration policies.
+   + Sets the auto-enablement option to [no-auto-enable](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-organization-configuration.html#options) in all linked Regions, and sets [auto-enable-standards](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-organization-configuration.html#options) to `NONE` in the home Region and all linked Regions. These parameters aren't relevant in the home and linked Regions when you use central configuration, but you can automatically enable Security Hub CSPM and default security standards in organization accounts through the use of configuration policies.
 
 1. You can now use central configuration. The delegated administrator can create configuration policies to configure Security Hub CSPM in your organization. For instructions on creating a configuration policy, see [Creating and associating configuration policies](create-associate-policy.md).
 

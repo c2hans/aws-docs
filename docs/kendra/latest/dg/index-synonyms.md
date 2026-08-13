@@ -35,7 +35,7 @@ A general guideline for how synonyms affect latency:
 
 <table>
 <thead>
-  <tr><th>Use case</th><th>Increase in latency\*</th></tr>
+  <tr><th><b>Use case</b></th><th><b>Increase in latency*</b></th></tr>
 </thead>
 <tbody>
   <tr><td>Typical natural language or keyword queries of 3 to 5 words each</td><td rowspan="3">Less than 15 percent</td></tr>

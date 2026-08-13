@@ -6,12 +6,12 @@ Version 5 (V5) of the AWS Tools for PowerShell has been released\!
 
 For information about breaking changes and migrating your applications, see the [migration topic](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html).
 
- [https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
+ [![Orange button with text "Click here for details".](http://docs.aws.amazon.com/powershell/v5/userguide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
 
 # Using the ClientConfig parameter in cmdlets
 <a name="pstools-clientconfig"></a>
 
-The `ClientConfig` parameter can be used to specify certain configuration settings when you connect to a service. Most of the possible properties of this parameter are defined in the [https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TClientConfig.html](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TClientConfig.html) class, which is inherited into the APIs for AWS services. For an example of simple inheritance, see the [https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Keyspaces/TKeyspacesConfig.html](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Keyspaces/TKeyspacesConfig.html) class. In addition, some services define additional properties that are appropriate only for that service. For an example of additional properties that have been defined, see the [https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/S3/TS3Config.html](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/S3/TS3Config.html) class, specifically the `ForcePathStyle` property.
+The `ClientConfig` parameter can be used to specify certain configuration settings when you connect to a service. Most of the possible properties of this parameter are defined in the [`Amazon.Runtime.ClientConfig`](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TClientConfig.html) class, which is inherited into the APIs for AWS services. For an example of simple inheritance, see the [`Amazon.Keyspaces.AmazonKeyspacesConfig`](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Keyspaces/TKeyspacesConfig.html) class. In addition, some services define additional properties that are appropriate only for that service. For an example of additional properties that have been defined, see the [`Amazon.S3.AmazonS3Config`](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/S3/TS3Config.html) class, specifically the `ForcePathStyle` property.
 
 ## Using the `ClientConfig` parameter
 <a name="clientconfig-operation"></a>

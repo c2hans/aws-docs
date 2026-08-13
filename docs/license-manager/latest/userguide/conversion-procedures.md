@@ -16,7 +16,7 @@ For example, if your self-managed license contains two automated discovery rules
 You should not start or stop your instance while a license type conversion is in progress. When the license type conversion succeeds, its status changes from `IN_PROGRESS` to `SUCCEEDED`. If License Manager encounters issues during the workflow, it updates the status of the license type conversion to `FAILED`, and updates the status message with an error message.
 
 **Note**
-The billing product information on the AMI used to launch an instance does not change when you convert the license type. To retrieve accurate billing information, use the Amazon EC2 [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstances.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstances.html) API. Additionally, if you have existing workflows that search for billing information from AMIs, update those workflows to use `DescribeInstances`.
+The billing product information on the AMI used to launch an instance does not change when you convert the license type. To retrieve accurate billing information, use the Amazon EC2 [`DescribeInstances`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstances.html) API. Additionally, if you have existing workflows that search for billing information from AMIs, update those workflows to use `DescribeInstances`.
 
 **Contents**
 + [Convert a license type for Windows and SQL Server in License Manager](conversion-procedures-windows.md)

@@ -12,7 +12,7 @@ This section describes how to a delete a package. You can't delete a version of 
 ## Deleting a package using the console
 <a name="distributor-delete-pkg-console"></a>
 
-You can use the AWS Systems Manager console to delete a package or a package version from Distributor, a tool in AWS Systems Manager. Deleting a package deletes all versions of a package from Distributor.
+You can use the AWS Systems Manager console to delete a package or a package version from Distributor. Deleting a package deletes all versions of a package from Distributor.
 
 **To delete a package using the console**
 
@@ -224,4 +224,4 @@ You can use your preferred command line tool to delete a package version from Di
 
 ------
 
-For information about other options you can use with the **list-documents** command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/list-documents.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/list-documents.html) in the AWS Systems Manager section of the *AWS CLI Command Reference*. For information about other options you can use with the **delete-document** command, see [https://docs.aws.amazon.com/cli/latest/reference/ssm/delete-document.html](https://docs.aws.amazon.com/cli/latest/reference/ssm/delete-document.html).
+For information about other options you can use with the **list-documents** command, see [**list-documents**](https://docs.aws.amazon.com/cli/latest/reference/ssm/list-documents.html) in the AWS Systems Manager section of the *AWS CLI Command Reference*. For information about other options you can use with the **delete-document** command, see [**delete-document**](https://docs.aws.amazon.com/cli/latest/reference/ssm/delete-document.html).

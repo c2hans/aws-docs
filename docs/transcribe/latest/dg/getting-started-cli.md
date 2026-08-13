@@ -67,7 +67,7 @@ To start a new transcription, use the `start-transcription-job` command.
    }
    ```
 
-Your transcription job is successful if [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptionJob.html#transcribe-Type-TranscriptionJob-TranscriptionJobStatus](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptionJob.html#transcribe-Type-TranscriptionJob-TranscriptionJobStatus) changes from `IN_PROGRESS` to `COMPLETED`. To see the updated [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptionJob.html#transcribe-Type-TranscriptionJob-TranscriptionJobStatus](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptionJob.html#transcribe-Type-TranscriptionJob-TranscriptionJobStatus), use the `get-transcription-job` or `list-transcription-job` command, as shown in the following section.
+Your transcription job is successful if [`TranscriptionJobStatus`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptionJob.html#transcribe-Type-TranscriptionJob-TranscriptionJobStatus) changes from `IN_PROGRESS` to `COMPLETED`. To see the updated [`TranscriptionJobStatus`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptionJob.html#transcribe-Type-TranscriptionJob-TranscriptionJobStatus), use the `get-transcription-job` or `list-transcription-job` command, as shown in the following section.
 
 ## Getting the status of a transcription job
 <a name="getting-started-cli-get-job"></a>

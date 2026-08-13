@@ -173,6 +173,11 @@ The IAM role that Amazon EMR assumes in order to access AWS resources on your be
 Type: String
 Required: No
 
+ ** SessionEnabled **   <a name="EMR-Type-Cluster-SessionEnabled"></a>
+Indicates whether Spark Connect sessions are enabled on the cluster.
+Type: Boolean
+Required: No
+
  ** Status **   <a name="EMR-Type-Cluster-Status"></a>
 The current status details about the cluster.
 Type: [ClusterStatus](API_ClusterStatus.md) object

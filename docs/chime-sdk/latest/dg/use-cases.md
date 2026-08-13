@@ -137,7 +137,7 @@ The SIP media application runs these actions on call leg A. Assuming the `PlayAu
 }
 ```
 
-You can program an AWS Lambda function to identify the caller based on the `CallDetails` data. You can also validate the meeting PIN received earlier. Assuming a correct PIN, you then use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateMeeting.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateMeeting.html) and [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateAttendee.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateAttendee.html) APIs to create the Amazon Chime SDK meeting and generate the join token used by the meeting attendee. The AWS Lambda function responds with the action to join the Amazon Chime SDK meeting.
+You can program an AWS Lambda function to identify the caller based on the `CallDetails` data. You can also validate the meeting PIN received earlier. Assuming a correct PIN, you then use the [CreateMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateMeeting.html) and [CreateAttendee](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateAttendee.html) APIs to create the Amazon Chime SDK meeting and generate the join token used by the meeting attendee. The AWS Lambda function responds with the action to join the Amazon Chime SDK meeting.
 
 ```
 {

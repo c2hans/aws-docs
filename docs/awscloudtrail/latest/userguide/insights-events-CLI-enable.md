@@ -101,7 +101,7 @@ If an event data store is configured to receive Insights events, its `eventCateg
 
 The following procedure shows you how to create the destination and source event data stores and then enable Insights events.
 
-1. Run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/create-event-data-store.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/create-event-data-store.html) command to create a destination event data store that collects Insights events. The value for `eventCategory` must be `Insight`. Replace {{retention-period-days}} with the number of days you would like to retain events in your event data store.
+1. Run the [**aws cloudtrail create-event-data-store**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/create-event-data-store.html) command to create a destination event data store that collects Insights events. The value for `eventCategory` must be `Insight`. Replace {{retention-period-days}} with the number of days you would like to retain events in your event data store.
 
    If you are signed in with the management account for an AWS Organizations organization, include the `--organization-enabled` parameter if you want to give your [delegated administrator](cloudtrail-delegated-administrator.md) access to the event data store.
 
@@ -151,7 +151,7 @@ The following procedure shows you how to create the destination and source event
 
    You will use the `ARN` (or ID suffix of the ARN) from the response as the value for the `--insights-destination` parameter in step 3.
 
-1. Run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/create-event-data-store.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/create-event-data-store.html) command to create a source event data store that logs management events. By default, event data stores log all management events. You don't need to specify the advanced event selectors if you want to log all management events. Replace {{retention-period-days}} with the number of days you would like to retain events in your event data store. If you are creating an organization event data store, include the `--organization-enabled` parameter.
+1. Run the [**aws cloudtrail create-event-data-store**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/create-event-data-store.html) command to create a source event data store that logs management events. By default, event data stores log all management events. You don't need to specify the advanced event selectors if you want to log all management events. Replace {{retention-period-days}} with the number of days you would like to retain events in your event data store. If you are creating an organization event data store, include the `--organization-enabled` parameter.
 
    ```
    aws cloudtrail create-event-data-store --name source-event-data-store --retention-period {{retention-period-days}}
@@ -189,7 +189,7 @@ The following procedure shows you how to create the destination and source event
 
    You will use the `ARN` (or ID suffix of the ARN) from the response as the value for the `--event-data-store` parameter in step 3.
 
-1. Run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/put-insight-selectors.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/put-insight-selectors.html) command to enable Insights events. Insights selector values can be `ApiCallRateInsight`, `ApiErrorRateInsight`, or both. For the `--event-data-store` parameter, specify the ARN (or ID suffix of the ARN) of the source event data store that logs management events and will enable Insights. For the `--insights-destination` parameter, specify the ARN (or ID suffix of the ARN) of the destination event data store that will log Insights events.
+1. Run the [**put-insight-selectors**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/put-insight-selectors.html) command to enable Insights events. Insights selector values can be `ApiCallRateInsight`, `ApiErrorRateInsight`, or both. For the `--event-data-store` parameter, specify the ARN (or ID suffix of the ARN) of the source event data store that logs management events and will enable Insights. For the `--insights-destination` parameter, specify the ARN (or ID suffix of the ARN) of the destination event data store that will log Insights events.
 
    ```
    aws cloudtrail put-insight-selectors --event-data-store arn:aws:cloudtrail:us-east-1:111122223333:eventdatastore/EXAMPLE9952-4ab9-49c0-b788-f4f3EXAMPLE --insights-destination arn:aws:cloudtrail:us-east-1:111122223333:eventdatastore/EXAMPLEf852-4e8f-8bd1-bcf6cEXAMPLE --insight-selectors '[{"InsightType": "ApiCallRateInsight"},{"InsightType": "ApiErrorRateInsight"}]'

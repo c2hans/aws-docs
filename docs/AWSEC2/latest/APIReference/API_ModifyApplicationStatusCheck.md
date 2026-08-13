@@ -26,12 +26,12 @@ Type: String
 Required: Yes
 
  **ClientToken**
-Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html).
+A unique, case-sensitive identifier that you provide to ensure that the operation completes no more than one time. If you retry a request with the same token, the service ignores the request but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html).
 Type: String
 Required: No
 
  **DeviceIndex**
-The index of the network device to use for the health check.
+The index of the network device to use for the health check. The value must be greater than or equal to 0.
 Type: Integer
 Required: No
 
@@ -41,7 +41,7 @@ Type: Boolean
 Required: No
 
  **FailureThreshold**
-The number of consecutive failed health checks before the application status is considered impaired.
+The number of consecutive failed health checks before the application status is considered impaired. The value must be greater than 0.
 Type: Integer
 Required: No
 
@@ -57,18 +57,18 @@ Valid Range: Minimum value of -1. Maximum value of 600.
 Required: No
 
  **Interval**
-The interval, in seconds, between health checks.
+The interval, in seconds, between health checks. Valid value: 60.
 Type: Integer
 Required: No
 
  **IpScope**
-The IP scope to use for the health check. Valid values: `private` \| `public`.
+The IP scope to use for the health check. Valid value: `private`.
 Type: String
 Valid Values: `private`
 Required: No
 
  **IpVersion**
-The IP version to use for the health check. Valid values: `ipv4`.
+The IP version to use for the health check. Valid values: `ipv4` and `ipv6`.
 Type: String
 Valid Values: `ipv4 | ipv6`
 Required: No
@@ -91,17 +91,17 @@ Valid Values: `http | https`
 Required: No
 
  **StatusCodeMatcher**
-The HTTP status codes that indicate a successful health check response.
+The HTTP status codes that indicate a successful health check response. Specify a comma-separated list of individual status codes or ranges, for example, `200,202,300-399`. For a range, the first value must be less than the second value. Maximum length: 64 characters.
 Type: String
 Required: No
 
  **SuccessThreshold**
-The number of consecutive successful health checks before the application status is considered healthy.
+The number of consecutive successful health checks before the application status is considered healthy. The value must be greater than 0.
 Type: Integer
 Required: No
 
  **Timeout**
-The amount of time, in seconds, to wait for a health check response before considering it failed.
+The amount of time, in seconds, to wait for a health check response before considering it failed. Valid values: 1 to 30. The value must be less than `Interval`.
 Type: Integer
 Required: No
 

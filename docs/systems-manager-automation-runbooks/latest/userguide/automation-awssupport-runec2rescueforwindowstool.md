@@ -84,7 +84,7 @@ Example Policy:
 
 Follow these steps to configure the automation:
 
-1. Navigate to [https://console.aws.amazon.com/systems-manager/documents/AWSSupport-RunEC2RescueForWindowsTool/description](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-RunEC2RescueForWindowsTool/description) in Systems Manager under Documents.
+1. Navigate to [`AWSSupport-RunEC2RescueForWindowsTool`](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-RunEC2RescueForWindowsTool/description) in Systems Manager under Documents.
 
 1. Select **Execute automation.**
 

@@ -84,7 +84,7 @@ sns.setTopicAttributes(request);
 ## Create a message archive policy using CloudFormation
 <a name="message-archiving-and-replay-topic-cfn"></a>
 
-To create an archive policy using CloudFormation see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-topic.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-topic.html) in the *AWS CloudFormation User Guide*.
+To create an archive policy using CloudFormation see [`AWS::SNS::Topic`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-topic.html) in the *AWS CloudFormation User Guide*.
 
 ## Grant access to an encrypted archive
 <a name="message-archiving-and-replay-topic-kms"></a>

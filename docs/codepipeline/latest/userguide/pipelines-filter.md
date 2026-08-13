@@ -60,7 +60,7 @@ If the include and exclude both have the same pattern, then the default is to ex
 
      You can use glob patterns to define your branch names. For example, use `main*` to match all branches beginning with `main`. See [Working with glob patterns in syntax](syntax-glob.md) for more information.
 
-     For a push trigger, specify the branches you're pushing *to*, that is, the *destination* branches. For a pull request trigger, specify destination branches you're opening pull request to.
+     For a push trigger, specify the branches you're pushing *to*, that is, the *destination* branches. For a pull request trigger, specify destination branches you're opening a pull request to.
    + (Optional) Under **File paths**, specify file paths for your trigger. Enter the names in **Include** and **Exclude** as appropriate.
 
      You can use glob patterns to define your file path names. For example, use `prod*` to match all file paths beginning with `prod`. See [Working with glob patterns in syntax](syntax-glob.md) for more information.
@@ -73,7 +73,7 @@ If the include and exclude both have the same pattern, then the default is to ex
 
      You can use glob patterns to define your branch names. For example, use `main*` to match all branches beginning with `main`. See [Working with glob patterns in syntax](syntax-glob.md) for more information.
 
-     For a push trigger, specify the branches you're pushing *to*, that is, the *destination* branches. For a pull request trigger, specify destination branches you're opening pull request to.
+     For a push trigger, specify the branches you're pushing *to*, that is, the *destination* branches. For a pull request trigger, specify destination branches you're opening a pull request to.
    + (Optional) Under **File paths**, specify file paths for your trigger. Enter the names in **Include** and **Exclude** as appropriate.
 
      You can use glob patterns to define your file path names. For example, use `prod*` to match all file paths beginning with `prod`. See [Working with glob patterns in syntax](syntax-glob.md) for more information.

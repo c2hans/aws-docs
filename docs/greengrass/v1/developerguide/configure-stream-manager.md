@@ -333,7 +333,7 @@ The following example configuration enables stream manager with custom values fo
    arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/bcfc6b49-beb0-4396-b703-6dEXAMPLEcu5/versions/0f7337b4-922b-45c5-856f-1aEXAMPLEsf6
    ```
 **Note**
-Or, you can create a function definition by running the [https://docs.aws.amazon.com/cli/latest/reference/greengrass/create-function-definition.html](https://docs.aws.amazon.com/cli/latest/reference/greengrass/create-function-definition.html) command, and then copying the ID from the output.
+Or, you can create a function definition by running the [`create-function-definition`](https://docs.aws.amazon.com/cli/latest/reference/greengrass/create-function-definition.html) command, and then copying the ID from the output.
 
 1. <a name="enable-stream-manager-function-definition-version"></a>Add a function definition version to the function definition.
    + Replace {{function-definition-id}} with the `Id` that you copied for the function definition.

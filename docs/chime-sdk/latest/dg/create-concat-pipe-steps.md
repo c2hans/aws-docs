@@ -103,9 +103,9 @@ You follow a multi-step process to create an Amazon Chime SDK media concatenatio
 **Note**
 You can use a single Amazon S3 bucket for media capture and media concatenation pipelines. However, if you do that, you must add the `s3:GetObject` and `s3:ListBucket` permissions to the media concatenation bucket policy shown in step 2. If you don't want the concatenation bucket policy to have those permissions, then create separate buckets for each pipeline.
 
-1. Use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaCapturePipeline.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaCapturePipeline.html) API to create a media capture pipeline. As part of that, get the pipeline's ARN. For information about getting the ARN, refer to [Understanding Amazon Chime SDK media pipeline creation](create-pipeline.md). You use the ARN in the next step.
+1. Use the [CreateMediaCapturePipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaCapturePipeline.html) API to create a media capture pipeline. As part of that, get the pipeline's ARN. For information about getting the ARN, refer to [Understanding Amazon Chime SDK media pipeline creation](create-pipeline.md). You use the ARN in the next step.
 
-1. Use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaConcatenationPipeline.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaConcatenationPipeline.html) API to create a concatenation pipeline.
+1. Use the [CreateMediaConcatenationPipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaConcatenationPipeline.html) API to create a concatenation pipeline.
 
    The following example shows a request body. The {{Path}} field is optional, and it defaults to the concatenation pipeline's ID.
 **Note**

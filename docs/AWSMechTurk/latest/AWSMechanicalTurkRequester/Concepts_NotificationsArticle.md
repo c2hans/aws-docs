@@ -28,7 +28,7 @@ Notifications are associated with a HIT Type. You can request that Mechanical Tu
 +  `HITDisposed`: A HIT has been disposed.
 +  `HITReviewable`: A HIT has reached the `Reviewable` state, either because all of the assignments have been submitted or the HIT has expired.
 +  `HITExpired`: The HIT has expired (the lifetime has elapsed) before all of the available assignments have been submitted.
-+  `Ping`: Is only be sent when using the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_SendTestEventNotificationOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_SendTestEventNotificationOperation.html) operation.
++  `Ping`: Is only be sent when using the [`SendTestEventNotification`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_SendTestEventNotificationOperation.html) operation.
 
 The `AssignmentSubmitted` and `HITReviewable` events are the most commonly used event notifications because they allow you to setup processes that can be triggered as soon as an assignment or HIT is complete. Using the `HITReviewable` notification, you can immediately update a database or other system with the values returned by the HIT. The `HITExpired` event is also useful because it can be treated as a dead letter queue, letting you act on tasks that weren't completed by workers. Using the `HITExpired` notification, you might sideline tasks to be completed by members of your team, or attempt to repost them at a higher reward amount.
 
@@ -41,7 +41,7 @@ To set up an Amazon SQS queue for use with Mechanical Turk, follow the setup ins
 
  **Enabling Notifications**
 
-Notifications can be enabled for a HIT Type using the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_UpdateNotificationSettingsOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_UpdateNotificationSettingsOperation.html) operation. The following is an example of a request to receive a message on an Amazon SNS topic when HITs become *reviewable*.
+Notifications can be enabled for a HIT Type using the [`UpdateNotificationSettings`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_UpdateNotificationSettingsOperation.html) operation. The following is an example of a request to receive a message on an Amazon SNS topic when HITs become *reviewable*.
 
 ```
      {
@@ -188,7 +188,7 @@ It is recommended that you test your trigger to make sure it works as expected.
 ## Sending test events
 <a name="notifications-testing"></a>
 
-To test the configuration of your Amazon SNS topic or Amazon SQS queue and any handlers you have in place, you can use the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_SendTestEventNotificationOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_SendTestEventNotificationOperation.html) operation. Provide the notification configuration you want to use and the event you would like to test.
+To test the configuration of your Amazon SNS topic or Amazon SQS queue and any handlers you have in place, you can use the [`SendTestEventNotification`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_SendTestEventNotificationOperation.html) operation. Provide the notification configuration you want to use and the event you would like to test.
 
 ```
 {

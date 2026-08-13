@@ -67,7 +67,7 @@ The following example shows you how to use the Amazon S3 Encryption Client for P
    s3ec = S3EncryptionClient(s3_client, config)
    ```
 
-1. Encrypt your plaintext object by calling [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html). To include an optional [encryption context](https://docs.aws.amazon.com/kms/latest/developerguide/encrypt_context.html), add an `EncryptionContext` parameter to the `put_object` call.
+1. Encrypt your plaintext object by calling [`PutObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html). To include an optional [encryption context](https://docs.aws.amazon.com/kms/latest/developerguide/encrypt_context.html), add an `EncryptionContext` parameter to the `put_object` call.
 
    1. The Amazon S3 Encryption Client provides the encryption materials: one plaintext data key and one copy of that data key encrypted by your wrapping key.
 
@@ -86,7 +86,7 @@ The following example shows you how to use the Amazon S3 Encryption Client for P
    )
    ```
 
-1. Decrypt your encrypted object by calling [https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html). If you specified an encryption context during encryption, you must provide the same encryption context during decryption.
+1. Decrypt your encrypted object by calling [`GetObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html). If you specified an encryption context during encryption, you must provide the same encryption context during decryption.
 
    1. The Amazon S3 Encryption Client uses your wrapping key to decrypt the encrypted data key.
 

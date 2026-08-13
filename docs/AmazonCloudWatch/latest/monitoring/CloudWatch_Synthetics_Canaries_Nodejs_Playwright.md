@@ -17,7 +17,7 @@ This section describes the library functions that are available for canary scrip
 ## launch
 <a name="Synthetics_Library_Nodejs_Playwright_functions"></a>
 
-This function launches a Chromium browser using a Playwright launch function, and returns the browser object. It decompresses browser binaries and launches the chromium browser by using default options suitable for a headless browser. For more information about the `launch` function, see [https://playwright.dev/docs/api/class-browsertype#browser-type-launch](https://playwright.dev/docs/api/class-browsertype#browser-type-launch) in the Playwright documentation.
+This function launches a Chromium browser using a Playwright launch function, and returns the browser object. It decompresses browser binaries and launches the chromium browser by using default options suitable for a headless browser. For more information about the `launch` function, see [`launch`](https://playwright.dev/docs/api/class-browsertype#browser-type-launch) in the Playwright documentation.
 
  **Usage**
 

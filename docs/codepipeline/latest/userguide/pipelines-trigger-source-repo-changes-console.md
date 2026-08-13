@@ -60,10 +60,10 @@ Sample pipeline ARN:
 `arn:aws:codepipeline:us-east-2:80398EXAMPLE:MyFirstPipeline`
 
 1. To create or specify an IAM service role that grants EventBridge permissions to invoke the target associated with your EventBridge rule (in this case, the target is CodePipeline):
-   + Choose **Create a new role for this specific resource** to create a service role that gives EventBridge permissions to your start your pipeline executions.
-   + Choose **Use existing role** to enter a service role that gives EventBridge permissions to your start your pipeline executions.
+   + Choose **Create a new role for this specific resource** to create a service role that gives EventBridge permissions to start your pipeline executions.
+   + Choose **Use existing role** to enter a service role that gives EventBridge permissions to start your pipeline executions.
 
-1. (Optional) To specify source overrides with a specific image ID, use the input transformer to pass the data as a JSON parameters. You can also use the input transformer to pass pipeline variables.
+1. (Optional) To specify source overrides with a specific image ID, use the input transformer to pass the data as JSON parameters. You can also use the input transformer to pass pipeline variables.
    + Expand **Additional settings**.
 
      Under **Configure target input**, choose **Configure input transformer**.

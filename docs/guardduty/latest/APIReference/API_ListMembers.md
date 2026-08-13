@@ -33,7 +33,7 @@ Valid Range: Minimum value of 1. Maximum value of 50.
 You can use this parameter when paginating results. Set the value of this parameter to null on your first call to the list action. For subsequent calls to the action, fill nextToken in the request with the value of NextToken from the previous response to continue listing data.
 
  ** [OnlyAssociated](#API_ListMembers_RequestSyntax) **   <a name="guardduty-ListMembers-request-uri-OnlyAssociated"></a>
-Specifies whether to only return associated members or to return all members (including members who haven't been invited yet or have been disassociated). Member accounts must have been previously associated with the GuardDuty administrator account using [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateMembers.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateMembers.html).
+Specifies whether to only return associated members or to return all members (including members who haven't been invited yet or have been disassociated). Member accounts must have been previously associated with the GuardDuty administrator account using [`Create Members`](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateMembers.html).
 
 ## Request Body
 <a name="API_ListMembers_RequestBody"></a>

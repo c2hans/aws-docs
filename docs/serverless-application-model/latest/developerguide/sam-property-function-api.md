@@ -78,7 +78,7 @@ The response transfer mode for the Lambda function integration. Set to `RESPONSE
 *Type*: String
 *Required*: No
 *Valid values*: `BUFFERED` \| `RESPONSE_STREAM`
-*CloudFormation compatibility*: This property is passed directly to the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-method-integration.html#cfn-apigateway-method-integration-responsetransfermode](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-method-integration.html#cfn-apigateway-method-integration-responsetransfermode) property of an `AWS::ApiGateway::Method Integration`.
+*CloudFormation compatibility*: This property is passed directly to the [`ResponseTransferMode`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-method-integration.html#cfn-apigateway-method-integration-responsetransfermode) property of an `AWS::ApiGateway::Method Integration`.
 
 `TimeoutInMillis`  <a name="sam-function-api-timeoutinmillis"></a>
 Custom timeout between 50 and 29,000 milliseconds.

@@ -20,7 +20,7 @@ To integrate CloudWatch Pipelines with Broadcom Carbon Black, complete the follo
 ## Prerequisites
 <a name="broadcom-carbonblack-prerequisites"></a>
 
-Before you begin, ensure you have the following:
+Before you begin, make sure you have the following:
 + A Broadcom Carbon Black Cloud account with Data Forwarder access
 + An Amazon S3 bucket configured to receive Carbon Black event exports
 + An Amazon SQS queue configured with Amazon S3 event notifications
@@ -29,7 +29,7 @@ Before you begin, ensure you have the following:
 ## Configuring the CloudWatch Pipeline
 <a name="broadcom-carbonblack-pipeline-config"></a>
 
-To configure the pipeline, choose Broadcom Carbon Black as the data source. Provide the Amazon SQS queue URL and IAM role ARN. Once you create and activate the pipeline, EDR event data from Carbon Black will begin flowing into the selected CloudWatch Logs log group.
+To configure the pipeline, choose Broadcom Carbon Black as the data source. Provide the Amazon SQS queue URL and IAM role ARN. After you create and activate the pipeline, EDR event data from Carbon Black will begin flowing into the selected CloudWatch Logs log group.
 
 ## Supported Open Cybersecurity Schema Framework Event Classes
 <a name="broadcom-carbonblack-ocsf-support"></a>

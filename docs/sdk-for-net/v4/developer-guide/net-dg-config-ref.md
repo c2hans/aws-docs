@@ -6,7 +6,7 @@ Version 4 (V4) of the AWS SDK for .NET has been released\!
 
 For information about breaking changes and migrating your applications, see the [migration topic](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html).
 
- [https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
+ [![Orange button with text "Click here for details".](http://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Configuration Files Reference for AWS SDK for .NET
 <a name="net-dg-config-ref"></a>
@@ -23,7 +23,7 @@ You can use a .NET project's `App.config` or `Web.config` file to specify AWS se
 Although you can continue to use the `<appSettings>` element in an `App.config` or `Web.config` file to specify AWS settings, we recommend you use the `<configSections>` and `<aws>` elements as described later in this topic. For more information about the `<appSettings>` element, see the `<appSettings>` element examples in [Configuring Your AWS SDK for .NET Application](net-dg-config.md).
 
 **Note**
-Although you can continue to use the following [https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Amazon/TAWSConfigs.html](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Amazon/TAWSConfigs.html) class properties in a code file to specify AWS settings, the following properties are deprecated and may not be supported in future releases:
+Although you can continue to use the following [`AWSConfigs`](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Amazon/TAWSConfigs.html) class properties in a code file to specify AWS settings, the following properties are deprecated and may not be supported in future releases:
  `DynamoDBContextTableNamePrefix`
  `EC2UseSignatureVersion4`
  `LoggingOptions`

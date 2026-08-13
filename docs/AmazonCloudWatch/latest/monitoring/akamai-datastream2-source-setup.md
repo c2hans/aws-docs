@@ -13,14 +13,14 @@ To integrate Akamai DataStream 2 Data Replicator with CloudWatch Logs, you must 
 ## Log forwarding setup
 <a name="akamai-datastream2-log-forwarding"></a>
 
-Akamai DataStream 2 supports real-time log delivery via DataStream 2 to [forward logs to Amazon S3](https://techdocs.akamai.com/datastream2/v3/docs/stream-amazon-s3).
+Akamai DataStream 2 supports real-time log delivery through DataStream 2 to [forward logs to Amazon S3](https://techdocs.akamai.com/datastream2/v3/docs/stream-amazon-s3).
 
 ## Instructions to setup Amazon S3 and Amazon SQS
 <a name="akamai-datastream2-s3-sqs-setup"></a>
 
 Configuring Akamai DataStream 2 to send logs to an Amazon S3 bucket involves several steps. These steps focus on setting up the Amazon S3 bucket, Amazon SQS queue, and IAM roles, and then configuring the CloudWatch pipeline.
 + Create an Amazon S3 bucket that stores Akamai logs and create separate folders for each log type (for example, DNS, CDN, EdgeWorkers). Create an IAM user and grant S3 write permission, then create an access key and secret key for this account.
-+ Ensure the Akamai DataStream 2 log exporter is configured to send logs to Amazon S3. DataStream 2 uploads logs to Amazon S3 over TLS, so you need to enable [server-side encryption](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html) for Amazon S3. Refer to the [Akamai S3 streaming setup guide](https://techdocs.akamai.com/datastream2/v3/docs/stream-amazon-s3) for detailed instructions.
++ Make sure the Akamai DataStream 2 log exporter is configured to send logs to Amazon S3. DataStream 2 uploads logs to Amazon S3 over TLS, so you need to enable [server-side encryption](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html) for Amazon S3. Refer to the [Akamai S3 streaming setup guide](https://techdocs.akamai.com/datastream2/v3/docs/stream-amazon-s3) for detailed instructions.
 + Configure the Amazon S3 bucket to create event notifications, specifically for "Object Create" events. These notifications should be sent to an Amazon SQS queue.
 + Create an Amazon SQS queue in the same AWS Region as your Amazon S3 bucket. This queue will receive notifications when new log files are added to the Amazon S3 bucket.
 

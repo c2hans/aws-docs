@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/alfred-hel
 ## Example
 <a name="w2aac28c41c15c13b7"></a>
 
- Suppose that you have two CloudFormation stack sets. *Stack set 1* has one stack instance and deploys to one account in one Region. It creates an Amazon VPC and subnets in an availability zone, and the `VPC ID` and `subnet ID` must be passed into *stack set 2* as parameter values. Before the `VPC ID` and `subnet ID` can be passed to *stack set 2*, the `VPC ID` and `subnet ID` must be stored in *stack set 1* using `AWS:::SSM::Parameter`. For more information, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html) in the *CloudFormation User Guide*.
+ Suppose that you have two CloudFormation stack sets. *Stack set 1* has one stack instance and deploys to one account in one Region. It creates an Amazon VPC and subnets in an availability zone, and the `VPC ID` and `subnet ID` must be passed into *stack set 2* as parameter values. Before the `VPC ID` and `subnet ID` can be passed to *stack set 2*, the `VPC ID` and `subnet ID` must be stored in *stack set 1* using `AWS:::SSM::Parameter`. For more information, see [`AWS:::SSM::Parameter`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html) in the *CloudFormation User Guide*.
 
 **CloudFormation stack set 1:**
 
@@ -51,7 +51,7 @@ parameters:
 
 **CloudFormation stack set 2.1:**
 
- The snippet shows that you can list `alfred_ssm` properties to support parameters of type *CommaDelimitedList*. For more information, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html#parameters-section-structure-properties-type](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html#parameters-section-structure-properties-type) in the *CloudFormation User Guide*.
+ The snippet shows that you can list `alfred_ssm` properties to support parameters of type *CommaDelimitedList*. For more information, see [`Parameters`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html#parameters-section-structure-properties-type) in the *CloudFormation User Guide*.
 
 ```
 parameters:

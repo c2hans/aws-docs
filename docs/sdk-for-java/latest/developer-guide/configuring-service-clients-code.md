@@ -20,7 +20,7 @@ S3Client s3Client = S3Client.builder()
         .build();
 ```
 
-The previous snippet shows the static factory method, `builder()`. The `builder()` method returns a `builder` object that allows you to customize the service client. The fluent setter methods return the `builder` object—in this case, an [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3ClientBuilder.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3ClientBuilder.html) instance—so that you can chain the method calls for convenience and for more readable code. After you configure the properties you want, call the `build()` method to create the client.
+The previous snippet shows the static factory method, `builder()`. The `builder()` method returns a `builder` object that allows you to customize the service client. The fluent setter methods return the `builder` object—in this case, an [`S3ClientBuilder`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3ClientBuilder.html) instance—so that you can chain the method calls for convenience and for more readable code. After you configure the properties you want, call the `build()` method to create the client.
 
 ## Advanced configuration in code
 <a name="conf-service-client-code-several"></a>
@@ -49,7 +49,7 @@ S3Client s3Client = S3Client.builder()
 ```
 
 In the previous snippet, you can see several entry points to configure a service client:
-+ [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/client/config/ClientOverrideConfiguration.Builder.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/client/config/ClientOverrideConfiguration.Builder.html) that provides configuration options common across all service clients. These settings are AWS-specific behaviors independent of any HTTP implementation.
++ [**A `ClientOverrideConfiguration.Builder` object**](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/client/config/ClientOverrideConfiguration.Builder.html) that provides configuration options common across all service clients. These settings are AWS-specific behaviors independent of any HTTP implementation.
 + **HTTP client configuration through a separate HTTP client builder implementation.** The `ApacheHttpClient.Builder` is an example. The service client provides the `httpClientBuilder()` method to associate the configured HTTP client to the service client.
 + **Methods on the [client builder](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3ClientBuilder.html) itself,** such as `region()` and `credentialsProvider()`
 
@@ -57,8 +57,8 @@ In the previous snippet, you can see several entry points to configure a service
 <a name="service-client-config-lambda"></a>
 
 Instead of creating separate objects and then passing them to service client methods, the AWS SDK for Java 2.x provides methods that accept lambda expressions to build these objects inline. The configuration methods on the builder are named the same, but have different signatures. For example:
-+ [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/client/builder/SdkClientBuilder.html#overrideConfiguration(software.amazon.awssdk.core.client.config.ClientOverrideConfiguration)](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/client/builder/SdkClientBuilder.html#overrideConfiguration(software.amazon.awssdk.core.client.config.ClientOverrideConfiguration))
-+ [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/client/builder/SdkClientBuilder.html#overrideConfiguration(java.util.function.Consumer)](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/client/builder/SdkClientBuilder.html#overrideConfiguration(java.util.function.Consumer))
++ [`overrideConfiguration([ClientOverrideConfiguration](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/client/config/ClientOverrideConfiguration.html) overrideConfiguration)`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/client/builder/SdkClientBuilder.html#overrideConfiguration(software.amazon.awssdk.core.client.config.ClientOverrideConfiguration))
++ [`overrideConfiguration([Consumer](https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html)<[ClientOverrideConfiguration.Builder](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/client/config/ClientOverrideConfiguration.Builder.html)> overrideConfiguration)`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/client/builder/SdkClientBuilder.html#overrideConfiguration(java.util.function.Consumer))
 
 The configuration of the S3 client shown earlier using this approach can be done in one block of code:
 

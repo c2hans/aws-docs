@@ -5,13 +5,13 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AgentCo
 # AgentConfiguration
 <a name="API_AgentConfiguration"></a>
 
- The response of [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html) that specifies if an agent profiles or not and for how long to return profiling data.
+ The response of [`ConfigureAgent`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html) that specifies if an agent profiles or not and for how long to return profiling data.
 
 ## Contents
 <a name="API_AgentConfiguration_Contents"></a>
 
  ** periodInSeconds **   <a name="profiler-Type-AgentConfiguration-periodInSeconds"></a>
- How long a profiling agent should send profiling data using [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html). For example, if this is set to 300, the profiling agent calls [https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html) every 5 minutes to submit the profiled data collected during that period.
+ How long a profiling agent should send profiling data using [`ConfigureAgent`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html). For example, if this is set to 300, the profiling agent calls [`ConfigureAgent`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html) every 5 minutes to submit the profiled data collected during that period.
 Type: Integer
 Required: Yes
 

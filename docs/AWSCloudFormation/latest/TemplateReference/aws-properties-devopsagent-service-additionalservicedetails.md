@@ -62,7 +62,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-service-additionalservicedetails-properties"></a>
 
 `AzureIdentity`  <a name="cfn-devopsagent-service-additionalservicedetails-azureidentity"></a>
-Property description not available.
+Azure identity service details returned after registration.
 *Required*: No
 *Type*: [RegisteredAzureIdentityDetails](aws-properties-devopsagent-service-registeredazureidentitydetails.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -86,7 +86,7 @@ Custom MCP server details returned after registration.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MCPServerGrafana`  <a name="cfn-devopsagent-service-additionalservicedetails-mcpservergrafana"></a>
-Property description not available.
+Grafana MCP server details returned after registration.
 *Required*: No
 *Type*: [RegisteredMCPServerGrafanaDetails](aws-properties-devopsagent-service-registeredmcpservergrafanadetails.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -98,7 +98,7 @@ New Relic MCP server details returned after registration.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MCPServerSigV4`  <a name="cfn-devopsagent-service-additionalservicedetails-mcpserversigv4"></a>
-Property description not available.
+SigV4-authenticated MCP server details returned after registration.
 *Required*: No
 *Type*: [RegisteredMCPServerSigV4Details](aws-properties-devopsagent-service-registeredmcpserversigv4details.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -110,7 +110,7 @@ Splunk MCP server details returned after registration.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PagerDuty`  <a name="cfn-devopsagent-service-additionalservicedetails-pagerduty"></a>
-Property description not available.
+PagerDuty service details returned after registration.
 *Required*: No
 *Type*: [RegisteredPagerDutyDetails](aws-properties-devopsagent-service-registeredpagerdutydetails.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

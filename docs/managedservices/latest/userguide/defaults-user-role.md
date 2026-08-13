@@ -23,7 +23,7 @@ If you're unfamiliar with Amazon IAM roles, see [IAM Roles](https://docs.aws.ama
 ## MALZ: Default IAM User Roles
 <a name="json-default-role-malz"></a>
 
-The following are the default MALZ user roles. To make sure that you have the policy set that you need, or to review the policies, run the AWS Command Line Interface (AWS CLI) command [https://docs.aws.amazon.com/cli/latest/reference/iam/get-role.html](https://docs.aws.amazon.com/cli/latest/reference/iam/get-role.html) or sign in to the AWS Management - [IAM console](https://console.aws.amazon.com/iam/) and choose **Roles** in the navigation pane.
+The following are the default MALZ user roles. To make sure that you have the policy set that you need, or to review the policies, run the AWS Command Line Interface (AWS CLI) command [`get-role`](https://docs.aws.amazon.com/cli/latest/reference/iam/get-role.html) or sign in to the AWS Management - [IAM console](https://console.aws.amazon.com/iam/) and choose **Roles** in the navigation pane.
 
 **Note**
 The user roles are customizable and may differ on a per-account basis. Instructions on finding your role are provided.
@@ -104,8 +104,8 @@ Application account roles are applied to your application-specific accounts.
 - **AWSManagedServicesSecurityOpsRole**
   - ReadOnlyAccess
   - AWSSupportAccess Example<br />This policy provides access to all support operations and resources.
-  - [https://docs.aws.amazon.com/acm/latest/userguide/authen-awsmanagedpolicies.html#acm-full-access-managed-policy](https://docs.aws.amazon.com/acm/latest/userguide/authen-awsmanagedpolicies.html#acm-full-access-managed-policy) information, (Public AWS Managed Policy)
-  - [https://docs.aws.amazon.com/waf/latest/developerguide/access-control-identity-based.html](https://docs.aws.amazon.com/waf/latest/developerguide/access-control-identity-based.html) information, (Public AWS Managed policy). This policy grants full access to AWS WAF resources.
+  - [`AWSCertificateManagerFullAccess`](https://docs.aws.amazon.com/acm/latest/userguide/authen-awsmanagedpolicies.html#acm-full-access-managed-policy) information, (Public AWS Managed Policy)
+  - [`AWSWAFFullAccess`](https://docs.aws.amazon.com/waf/latest/developerguide/access-control-identity-based.html) information, (Public AWS Managed policy). This policy grants full access to AWS WAF resources.
   - AMSSecretsManagerSharedPolicy
 
 - **AWSManagedServicesChangeManagementRole (Application account version)**
@@ -131,7 +131,7 @@ Application account roles are applied to your application-specific accounts.
 ## SALZ: Default IAM User Role
 <a name="json-default-role"></a>
 
-The following are the default SALZ user roles. To make sure that you have the policies set for you, or to review the policies, run the [https://docs.aws.amazon.com/cli/latest/reference/iam/get-role.html](https://docs.aws.amazon.com/cli/latest/reference/iam/get-role.html) command. Or, sign in to the AWS Identity and Access Management console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/), and then choose **Roles**.
+The following are the default SALZ user roles. To make sure that you have the policies set for you, or to review the policies, run the [`get-role`](https://docs.aws.amazon.com/cli/latest/reference/iam/get-role.html) command. Or, sign in to the AWS Identity and Access Management console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/), and then choose **Roles**.
 
 **Note**
 The SALZ default user role is customizable and might differ on a per-account basis. Instructions on finding your role are provided.

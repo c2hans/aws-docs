@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TagResou
 
 Adds the specified tags to the specified resource.
 
-Some of the supported resource types are agents, routing profiles, queues, quick connects, flows, agent statuses, hours of operation, phone numbers, security profiles, and task templates. For a complete list, see [Tagging resources in Connect Customer](https://docs.aws.amazon.com/connect/latest/adminguide/tagging.html).
+Some of the supported resource types are agents, routing profiles, queues, quick connects, flows, agent statuses, hours of operation, phone numbers, security profiles, task templates, and custom metrics. For a complete list, see [Tagging resources in Connect Customer](https://docs.aws.amazon.com/connect/latest/adminguide/tagging.html).
 
 For sample policies that use tags, see [Connect Customer Identity-Based Policy Examples](https://docs.aws.amazon.com/connect/latest/adminguide/security_iam_id-based-policy-examples.html) in the *Connect Customer Administrator Guide*.
 

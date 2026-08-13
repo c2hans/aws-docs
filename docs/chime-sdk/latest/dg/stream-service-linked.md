@@ -73,7 +73,7 @@ You must configure permissions to allow an IAM entity such as a user, group, or 
 ## Creating a service-linked role
 <a name="create-service-linked-role"></a>
 
-You don't need to manually create a service-linked role. When you use the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_PutMessagingStreamingConfigurations.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_PutMessagingStreamingConfigurations.html) API to create a data streaming configuration, Amazon Chime SDK creates the service-linked role for you.
+You don't need to manually create a service-linked role. When you use the [PutMessagingStreamingConfigurations](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_PutMessagingStreamingConfigurations.html) API to create a data streaming configuration, Amazon Chime SDK creates the service-linked role for you.
 
 You can also use the IAM console to create a service-linked role with the Amazon Chime SDK use case. In the AWS CLI or the AWS API, create a service-linked role with the `messaging.chime.amazonaws.com` service name. For more information, see [Creating a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#create-service-linked-role) in the *IAM user Guide*. If you delete this role, you can repeat this process to create it again.
 

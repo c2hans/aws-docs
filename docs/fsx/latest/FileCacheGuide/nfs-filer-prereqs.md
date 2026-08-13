@@ -12,7 +12,7 @@ Before you can link your cache to an on-premises NFS data store, verify that you
   + 10.0.0.0-10.255.255.255 (10/8 prefix)
   + 172.16.0.0-172.31.255.255 (172.16/12 prefix)
   + 192.168.0.0-192.168.255.255 (192.168/16 prefix)
-+ You must establish an Direct Connect or VPN connection between your on-premises network and the Amazon VPC where your Amazon File Cache is located. For more information about Direct Connect, see the [https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html). For more information about setting up a VPC connection, see the [https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html).
++ You must establish an Direct Connect or VPN connection between your on-premises network and the Amazon VPC where your Amazon File Cache is located. For more information about Direct Connect, see the [*Direct Connect User Guide*](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html). For more information about setting up a VPC connection, see the [*Amazon VPC User Guide*](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html).
 **Important**
 Use an Site-to-Site VPN connection if you want to encrypt data as it transits between your Amazon VPC and your on-premises network. For more information, see [What is AWS Site-to-Site VPN?](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html)
 + Your on-premises firewall must allow traffic between IP addresses in your Amazon VPC subnet IP CIDR and the IP addresses of the DNS server and the on-premises NFSv3 file system. The following ports must be open for the daemons involved in sharing data via NFS:

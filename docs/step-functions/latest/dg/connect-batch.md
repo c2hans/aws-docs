@@ -60,7 +60,7 @@ The following shows an example `Task` state that submits an AWS Batch job and wa
 
 ## Optimized AWS Batch APIs:
 <a name="connect-batch-api"></a>
-+ [https://docs.aws.amazon.com/batch/latest/APIReference/API_SubmitJob.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_SubmitJob.html)
++ [`SubmitJob`](https://docs.aws.amazon.com/batch/latest/APIReference/API_SubmitJob.html)
 
 **Parameters in Step Functions are expressed in PascalCase**
 Even if the native service API is in camelCase, for example the API action `startSyncExecution`, you specify parameters in PascalCase, such as: `StateMachineArn`.

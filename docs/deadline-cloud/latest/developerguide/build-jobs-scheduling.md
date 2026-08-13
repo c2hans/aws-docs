@@ -199,7 +199,7 @@ Fleet-level custom capabilities have the following limits:
 
 Names in the form `amount.worker.*` and `attr.worker.*` are reserved by the service for built-in capabilities. Use other prefixes for your custom capabilities.
 
-The following example routes steps that need a specific solver to the fleet that provides it. The fleet declares the solvers installed on all of its workers in a custom attribute. This fleet configuration is part of the [https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_CreateFleet.html](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_CreateFleet.html) request:
+The following example routes steps that need a specific solver to the fleet that provides it. The fleet declares the solvers installed on all of its workers in a custom attribute. This fleet configuration is part of the [CreateFleet](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_CreateFleet.html) request:
 
 ```
 "workerCapabilities": {

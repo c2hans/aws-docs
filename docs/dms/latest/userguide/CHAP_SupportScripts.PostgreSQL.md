@@ -49,7 +49,7 @@ The following topics describe how to download, review, and run each support scri
 ## awsdms\_support\_collector\_postgres.sql script
 <a name="CHAP_SupportScripts.PostgreSQL.Awsdms_Support_Collector_PostgreSQL_Script"></a>
 
-Download the [https://d2pwp9zz55emqw.cloudfront.net/scripts/awsdms_support_collector_postgres.sql](https://d2pwp9zz55emqw.cloudfront.net/scripts/awsdms_support_collector_postgres.sql) script.
+Download the [`awsdms_support_collector_postgres.sql`](https://d2pwp9zz55emqw.cloudfront.net/scripts/awsdms_support_collector_postgres.sql) script.
 
 This script collects information about your PostgreSQL database configuration. Remember to verify the checksum on the script. If the checksum verifies, review the SQL code in the script to comment out any of the code that you are uncomfortable running. After you are satisfied with the integrity and content of the script, you can run it.
 

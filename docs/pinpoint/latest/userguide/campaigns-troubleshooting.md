@@ -35,7 +35,7 @@ When a campaign is scheduled to use a recipients’ local time ([isLocalTime](ht
 
 ### Processing time
 <a name="troubleshooting-campaign-processing-time"></a>
-+ When a campaign doesn't have sufficient time to process all targeted endpoints, the endpoints aren't processed and logs show a `campaign_send_status` of [https://docs.aws.amazon.com/pinpoint/latest/developerguide/event-streams-data-campaign.html#event-streams-data-campaign-attributes-attrs](https://docs.aws.amazon.com/pinpoint/latest/developerguide/event-streams-data-campaign.html#event-streams-data-campaign-attributes-attrs).
++ When a campaign doesn't have sufficient time to process all targeted endpoints, the endpoints aren't processed and logs show a `campaign_send_status` of [`EXPIRED`](https://docs.aws.amazon.com/pinpoint/latest/developerguide/event-streams-data-campaign.html#event-streams-data-campaign-attributes-attrs).
 + Based on the number of endpoints being targeted by your campaign, verify that the **Maximum amount of time for a campaign run** and **Maximum number of messages per second** is configured based on your use case and delivery channel. For more information, see [Editing a project's default settings](projects-manage-edit.md).
 
 ### Delivery, render or permanent failure

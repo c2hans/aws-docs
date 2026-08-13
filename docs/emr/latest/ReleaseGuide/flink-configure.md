@@ -101,13 +101,13 @@ The main configuration file for Flink is `flink-conf.yaml`.
    ```
 
 **Note**
-You can also change some configurations with the Flink API. For more information, see [https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/overview/](https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/overview/) in the Flink documentation.
+You can also change some configurations with the Flink API. For more information, see [*Concepts*](https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/overview/) in the Flink documentation.
 With Amazon EMR version 5.21.0 and later, you can override cluster configurations and specify additional configuration classifications for each instance group in a running cluster. You do this by using the Amazon EMR console, the AWS Command Line Interface (AWS CLI), or the AWS SDK. For more information, see [Supplying a Configuration for an Instance Group in a Running Cluster](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-configure-apps-running-cluster.html).
 
 ### Parallelism options
 <a name="flink-parallelism"></a>
 
-As the owner of your application, you know best what resources to assign to tasks within Flink. For the examples in this documentation, use the same number of tasks as the tasks instances that you use for the application. We generally recommend this for the initial level of parallelism, but you can also increase the granularity of parallelism with task slots, which should generally not exceed the number of [virtual cores](https://aws.amazon.com/ec2/virtualcores/) per instance. For more information about the Flink architecture, see [https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/overview/](https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/overview/) in the Flink documentation.
+As the owner of your application, you know best what resources to assign to tasks within Flink. For the examples in this documentation, use the same number of tasks as the tasks instances that you use for the application. We generally recommend this for the initial level of parallelism, but you can also increase the granularity of parallelism with task slots, which should generally not exceed the number of [virtual cores](https://aws.amazon.com/ec2/virtualcores/) per instance. For more information about the Flink architecture, see [*Concepts*](https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/overview/) in the Flink documentation.
 
 ## Configuring Flink on an EMR cluster with multiple primary nodes
 <a name="flink-multi-master"></a>

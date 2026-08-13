@@ -17,16 +17,27 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **April 23, 2020** to all Amazon Linux AMI platforms.<br />The **Ruby** release includes security fixes. For more information, see **Platform-specific updates** in this table. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-05-04-linux.html) |
-| **Docker** | Updated Docker to version 19.03.6-ce.<br />(Multicontainer Docker) Updated the ECS agent to version 1.39.0. |
-| **Go** | Updated Go to release 1.14.2. For details, see [go1.14](https://golang.org/doc/devel/release.html#go1.14) in *The Go Programming Language Release History*. |
-| **Node.js** | Updated the Node.js platform to add support for Node versions [12.16.2](https://nodejs.org/en/blog/release/v12.16.2/) and [10.20.0](https://nodejs.org/en/blog/release/v10.20.0/). |
-| **Ruby** | Released new Ruby 2.6, 2.5, and 2.4 versions: [2.6.6](https://www.ruby-lang.org/en/news/2020/03/31/ruby-2-6-6-released/), [2.5.8](https://www.ruby-lang.org/en/news/2020/03/31/ruby-2-5-8-released/), and [2.4.10](https://www.ruby-lang.org/en/news/2020/03/31/ruby-2-4-10-released/), respectively.<br />For security vulnerabilities fixed in the latest versions, see their respective Ruby release notes. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>April 23, 2020</b> to all Amazon Linux AMI platforms.<br />The <b>Ruby</b> release includes security fixes. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Docker</b></td><td>Updated Docker to version 19.03.6-ce.<br />(Multicontainer Docker) Updated the ECS agent to version 1.39.0.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated Go to release 1.14.2. For details, see <a href="https://golang.org/doc/devel/release.html#go1.14">go1.14</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Node.js</b></td><td>Updated the Node.js platform to add support for Node versions <a href="https://nodejs.org/en/blog/release/v12.16.2/">12.16.2</a> and <a href="https://nodejs.org/en/blog/release/v10.20.0/">10.20.0</a>.</td></tr>
+  <tr><td><b>Ruby</b></td><td>Released new Ruby 2.6, 2.5, and 2.4 versions: <a href="https://www.ruby-lang.org/en/news/2020/03/31/ruby-2-6-6-released/">2.6.6</a>, <a href="https://www.ruby-lang.org/en/news/2020/03/31/ruby-2-5-8-released/">2.5.8</a>, and <a href="https://www.ruby-lang.org/en/news/2020/03/31/ruby-2-4-10-released/">2.4.10</a>, respectively.<br />For security vulnerabilities fixed in the latest versions, see their respective Ruby release notes.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2020-05-04-linux.platforms"></a>

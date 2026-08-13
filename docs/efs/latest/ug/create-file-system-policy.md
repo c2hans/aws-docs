@@ -40,7 +40,7 @@ Amazon EFS file system policy changes can take several minutes to take effect.
 ## Using the AWS CLI
 <a name="create-file-system-policy-cli"></a>
 
-In the following example, the [https://docs.aws.amazon.com/cli/latest/reference/efs/put-file-system-policy.html](https://docs.aws.amazon.com/cli/latest/reference/efs/put-file-system-policy.html) CLI command creates a file system policy that allows the specified AWS account read-only access to the EFS file system. The equivalent API command is [PutFileSystemPolicy](https://docs.aws.amazon.com/efs/latest/APIReference/API_PutFileSystemPolicy.html).
+In the following example, the [put-file-system-policy](https://docs.aws.amazon.com/cli/latest/reference/efs/put-file-system-policy.html) CLI command creates a file system policy that allows the specified AWS account read-only access to the EFS file system. The equivalent API command is [PutFileSystemPolicy](https://docs.aws.amazon.com/efs/latest/APIReference/API_PutFileSystemPolicy.html).
 
 ```
 aws efs put-file-system-policy --file-system-id fs-01234567 --policy '{

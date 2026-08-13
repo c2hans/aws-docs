@@ -44,7 +44,7 @@ The following returns the tag set associated with the bucket {{amzn-s3-demo-buck
 aws s3api get-bucket-tagging --bucket {{amzn-s3-demo-bucket1}}
 ```
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-tagging.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-tagging.html) in the *AWS CLI Command Reference*.
+For more information and examples, see [get-bucket-tagging](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-tagging.html) in the *AWS CLI Command Reference*.
 
 The following returns the versioning state of the bucket {{amzn-s3-demo-bucket1}}. For information about the bucket versioning, see [Retaining multiple versions of objects with S3 Versioning](Versioning.md).
 
@@ -52,7 +52,7 @@ The following returns the versioning state of the bucket {{amzn-s3-demo-bucket1}
 aws s3api get-bucket-versioning --bucket {{amzn-s3-demo-bucket1}}
 ```
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-versioning.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-versioning.html) in the *AWS CLI Command Reference*.
+For more information and examples, see [get-bucket-versioning](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-versioning.html) in the *AWS CLI Command Reference*.
 
 The following returns the default encryption configuration for the bucket {{amzn-s3-demo-bucket1}}. By default, all buckets have a default encryption configuration that uses server-side encryption with Amazon S3 managed keys (SSE-S3). For information about the bucket default encryption, see [Setting default server-side encryption behavior for Amazon S3 buckets](bucket-encryption.md).
 
@@ -60,7 +60,7 @@ The following returns the default encryption configuration for the bucket {{amzn
 aws s3api get-bucket-encryption --bucket {{amzn-s3-demo-bucket1}}
 ```
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-encryption.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-encryption.html) in the *AWS CLI Command Reference*.
+For more information and examples, see [get-bucket-encryption](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-encryption.html) in the *AWS CLI Command Reference*.
 
 The following returns the notification configuration of the bucket {{amzn-s3-demo-bucket1}}. For information about the bucket event notifications, see [Amazon S3 Event Notifications](EventNotifications.md).
 
@@ -68,7 +68,7 @@ The following returns the notification configuration of the bucket {{amzn-s3-dem
 aws s3api get-bucket-notification-configuration --bucket {{amzn-s3-demo-bucket1}}
 ```
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-notification-configuration.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-notification-configuration.html) in the *AWS CLI Command Reference*.
+For more information and examples, see [get-bucket-notification-configuration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-notification-configuration.html) in the *AWS CLI Command Reference*.
 
 The following returns the logging status for the bucket {{amzn-s3-demo-bucket1}}. For information about the bucket logging, see [Logging requests with server access logging](ServerLogs.md).
 
@@ -76,7 +76,7 @@ The following returns the logging status for the bucket {{amzn-s3-demo-bucket1}}
 aws s3api get-bucket-logging --bucket {{amzn-s3-demo-bucket1}}
 ```
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-logging.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-logging.html) in the *AWS CLI Command Reference*.
+For more information and examples, see [get-bucket-logging](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-logging.html) in the *AWS CLI Command Reference*.
 
 ## Using the AWS SDKs
 <a name="view-bucket-properties-sdk"></a>

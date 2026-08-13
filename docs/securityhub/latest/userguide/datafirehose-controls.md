@@ -20,7 +20,7 @@ These controls may not be available in all AWS Regions. For more information, se
 
 **Resource type:** `AWS::KinesisFirehose::DeliveryStream`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/kinesis-firehose-delivery-stream-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/kinesis-firehose-delivery-stream-encrypted.html)
+**AWS Config rule:** [`kinesis-firehose-delivery-stream-encrypted`](https://docs.aws.amazon.com/config/latest/developerguide/kinesis-firehose-delivery-stream-encrypted.html)
 
 **Schedule type:** Periodic
 

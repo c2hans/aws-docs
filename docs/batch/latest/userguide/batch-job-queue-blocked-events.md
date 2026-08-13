@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch-job-queue-b
 # Job queue blocked events
 <a name="batch-job-queue-blocked-events"></a>
 
-Anytime that AWS Batch detects a job in the `RUNNABLE` state and thus blocking a queue, an event is created in Amazon CloudWatch Events. For more information about supported blocked queue causes, see [Jobs stuck in a `RUNNABLE` status](job_stuck_in_runnable.md). The same reason is also available in the `statusReason` field in the [https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobs.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobs.html) API action.
+Anytime that AWS Batch detects a job in the `RUNNABLE` state and thus blocking a queue, an event is created in Amazon CloudWatch Events. For more information about supported blocked queue causes, see [Jobs stuck in a `RUNNABLE` status](job_stuck_in_runnable.md). The same reason is also available in the `statusReason` field in the [`DescribeJobs`](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobs.html) API action.
 
 **Example Job queue blocked event**
 Job queue blocked events are delivered in the following format. The `detail` section resembles the [JobDetail](https://docs.aws.amazon.com/batch/latest/APIReference/API_JobDetail.html) object that's returned from a [DescribeJobs](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobs.html) API operation in the *AWS Batch API Reference*. For more information about EventBridge parameters, see [Events and Event Patterns](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events.html) in the *Amazon EventBridge User Guide*.

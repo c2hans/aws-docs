@@ -36,7 +36,7 @@ For more information about supported SQL functions for S3 Select, see [SQL funct
 ## Using the REST API
 <a name="SelectObjectContentUsingRestApi"></a>
 
-You can use the AWS SDKs to select content from an object. However, if your application requires it, you can send REST requests directly. For more information about the request and response format, see [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html).
+You can use the AWS SDKs to select content from an object. However, if your application requires it, you can send REST requests directly. For more information about the request and response format, see [SelectObjectContent](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html).
 
 ## Using the AWS SDKs
 <a name="SelectObjectContentUsingSDK"></a>

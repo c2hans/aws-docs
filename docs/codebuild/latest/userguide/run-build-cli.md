@@ -25,7 +25,7 @@ For more information about using the AWS CLI with CodeBuild, see the [Command li
 
 1. If you run the **start-build** command with the `--project-name` option, replace {{<project-name>}} with the name of the build project, and then skip to step 6 of this procedure. To get a list of build projects, see [View build project names](view-project-list.md).
 
-1. If you run the **start-build** command with the `--idempotency-token` option, a unique case-sensitive identifier or token, is included with the `start-build` request. The token is valid for 5 minutes after the request. If you repeat the `start-build` request with the same token, but change a parameter, CodeBuild returns a parameter mismatch error.
+1. If you run the **start-build** command with the `--idempotency-token` option, a unique case-sensitive identifier, or token, is included with the `start-build` request. The token is valid for 5 minutes after the request. If you repeat the `start-build` request with the same token, but change a parameter, CodeBuild returns a parameter mismatch error.
 
 1. If you run the **start-build** command with the `--generate-cli-skeleton` option, JSON-formatted data appears in the output. Copy the data to a file (for example, `{{start-build.json}}`) in a location on the local computer or instance where the AWS CLI is installed. Modify the copied data to match the following format, and save your results:
 

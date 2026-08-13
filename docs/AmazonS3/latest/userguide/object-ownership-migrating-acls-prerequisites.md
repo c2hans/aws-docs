@@ -173,7 +173,7 @@ If your bucket has a `WRITE` ACL that grants AWS account `{{111122223333}}` perm
 ### Using the AWS CLI to review and migrate ACL permissions
 <a name="review-migrate-acl-cli"></a>
 
-1. To return the bucket ACL for your bucket, use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-acl.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-acl.html) AWS CLI command:
+1. To return the bucket ACL for your bucket, use the [get-bucket-acl](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-acl.html) AWS CLI command:
 
    ```
    aws s3api get-bucket-acl --bucket {{amzn-s3-demo-bucket}}
@@ -247,7 +247,7 @@ If your bucket has a `WRITE` ACL that grants AWS account `{{111122223333}}` perm
 
    For more example bucket policies, see [Bucket policies examples](#migrate-acl-permissions-bucket-policies) and [Example use cases](#object-ownership-migrating-acls).
 
-1. To return the ACL for a specific object, use the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object-acl.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object-acl.html) AWS CLI command.
+1. To return the ACL for a specific object, use the [get-object-acl](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object-acl.html) AWS CLI command.
 
    ```
    aws s3api get-object-acl --bucket {{amzn-s3-demo-bucket}} --key {{EXAMPLE-OBJECT-KEY}}

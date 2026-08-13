@@ -119,13 +119,13 @@ Allows [`kms:DescribeKey`](viewing-keys.md). The `kms:DescribeKey` permission is
 Allows [`kms:EnableKey`](enabling-keys.md). For symmetric encryption KMS keys, it also allows [`kms:EnableKeyRotation`](rotate-keys.md).
 
 **`kms:List*`**
-Allows [`kms:ListGrants`](grants.md), [https://docs.aws.amazon.com/kms/latest/APIReference/API_ListKeyPolicies.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_ListKeyPolicies.html), and [`kms:ListResourceTags`](tagging-keys.md). (The `kms:ListAliases` and `kms:ListKeys` permissions, which are required to view KMS keys in the AWS Management Console, are valid only in IAM policies.)
+Allows [`kms:ListGrants`](grants.md), [`kms:ListKeyPolicies`](https://docs.aws.amazon.com/kms/latest/APIReference/API_ListKeyPolicies.html), and [`kms:ListResourceTags`](tagging-keys.md). (The `kms:ListAliases` and `kms:ListKeys` permissions, which are required to view KMS keys in the AWS Management Console, are valid only in IAM policies.)
 
 **`kms:Put*`**
-Allows [https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy.html). This permission allows key administrators to change the key policy for this KMS key.
+Allows [`kms:PutKeyPolicy`](https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy.html). This permission allows key administrators to change the key policy for this KMS key.
 
 **`kms:Update*`**
-Allows [`kms:UpdateAlias`](alias-update.md) and [https://docs.aws.amazon.com/kms/latest/APIReference/API_UpdateKeyDescription.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_UpdateKeyDescription.html). For multi-Region keys, it allows [`kms:UpdatePrimaryRegion`](multi-region-update.md#update-primary-console) on this KMS key.
+Allows [`kms:UpdateAlias`](alias-update.md) and [`kms:UpdateKeyDescription`](https://docs.aws.amazon.com/kms/latest/APIReference/API_UpdateKeyDescription.html). For multi-Region keys, it allows [`kms:UpdatePrimaryRegion`](multi-region-update.md#update-primary-console) on this KMS key.
 
 **`kms:Revoke*`**
 Allows [`kms:RevokeGrant`](grant-delete.md), which allows key administrators to [delete a grant](grant-delete.md) even if they are not a [retiring principal](grants.md#terms-retiring-principal) in the grant.
@@ -134,7 +134,7 @@ Allows [`kms:RevokeGrant`](grant-delete.md), which allows key administrators to 
 Allows [`kms:DisableKey`](enabling-keys.md). For symmetric encryption KMS keys, it also allows [`kms:DisableKeyRotation`](rotate-keys.md).
 
 **`kms:Get*`**
-Allows [`kms:GetKeyPolicy`](key-policy-viewing.md) and [`kms:GetKeyRotationStatus`](rotate-keys.md). For KMS keys with imported key material, it allows [https://docs.aws.amazon.com/kms/latest/APIReference/API_GetParametersForImport.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_GetParametersForImport.html). For asymmetric KMS keys, it allows [https://docs.aws.amazon.com/kms/latest/APIReference/API_GetPublicKey.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_GetPublicKey.html). The `kms:GetKeyPolicy` permission is required to view the key policy of a KMS key in the AWS Management Console.
+Allows [`kms:GetKeyPolicy`](key-policy-viewing.md) and [`kms:GetKeyRotationStatus`](rotate-keys.md). For KMS keys with imported key material, it allows [`kms:GetParametersForImport`](https://docs.aws.amazon.com/kms/latest/APIReference/API_GetParametersForImport.html). For asymmetric KMS keys, it allows [`kms:GetPublicKey`](https://docs.aws.amazon.com/kms/latest/APIReference/API_GetPublicKey.html). The `kms:GetKeyPolicy` permission is required to view the key policy of a KMS key in the AWS Management Console.
 
 **`kms:Delete*`**
 Allows [`kms:DeleteAlias`](kms-alias.md). For keys with imported key material, it allows [`kms:DeleteImportedKeyMaterial`](importing-keys.md). The `kms:Delete*` permission does not allow key administrators to delete the KMS key (`ScheduleKeyDeletion`).
@@ -146,24 +146,24 @@ Allows [`kms:TagResource`](tagging-keys.md), which allows key administrators to 
 Allows [`kms:UntagResource`](tagging-keys.md), which allows key administrators to delete tags from the KMS key. Because tags can be used to control access to the key, this permission can allow administrators to allow or deny access to the KMS key. For details, see [ABAC for AWS KMS](abac.md).
 
 **`kms:ScheduleKeyDeletion`**
-Allows [https://docs.aws.amazon.com/kms/latest/APIReference/API_ScheduleKeyDeletion.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_ScheduleKeyDeletion.html), which allows key administrators to [delete this KMS key](deleting-keys.md). To delete this permission, clear the **Allow key administrators to delete this key** option.
+Allows [`kms:ScheduleKeyDeletion`](https://docs.aws.amazon.com/kms/latest/APIReference/API_ScheduleKeyDeletion.html), which allows key administrators to [delete this KMS key](deleting-keys.md). To delete this permission, clear the **Allow key administrators to delete this key** option.
 
 **`kms:CancelKeyDeletion`**
-Allows [https://docs.aws.amazon.com/kms/latest/APIReference/API_CancelKeyDeletion.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_CancelKeyDeletion.html), which allows key administrators to [cancel deletion of this KMS key](deleting-keys.md). To delete this permission, clear the **Allow key administrators to delete this key** option.
+Allows [`kms:CancelKeyDeletion`](https://docs.aws.amazon.com/kms/latest/APIReference/API_CancelKeyDeletion.html), which allows key administrators to [cancel deletion of this KMS key](deleting-keys.md). To delete this permission, clear the **Allow key administrators to delete this key** option.
 
 **`kms:RotateKeyOnDemand`**
-Allows [https://docs.aws.amazon.com/kms/latest/APIReference/API_RotateKeyOnDemand.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_RotateKeyOnDemand.html), which allows key administrators to [perform on-demand rotation of the key material in this KMS key](rotating-keys-on-demand.md).
+Allows [`kms:RotateKeyOnDemand`](https://docs.aws.amazon.com/kms/latest/APIReference/API_RotateKeyOnDemand.html), which allows key administrators to [perform on-demand rotation of the key material in this KMS key](rotating-keys-on-demand.md).
 
 AWS KMS adds the following permissions to the default key administrators statement when you create special-purpose keys.
 
 **`kms:ImportKeyMaterial`**
-The [https://docs.aws.amazon.com/kms/latest/APIReference/API_ImportKeyMaterial.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_ImportKeyMaterial.html) permission allows key administrators to import key material into the KMS key. This permission is included in the key policy only when you [create a KMS key with no key material](importing-keys-create-cmk.md).
+The [`kms:ImportKeyMaterial`](https://docs.aws.amazon.com/kms/latest/APIReference/API_ImportKeyMaterial.html) permission allows key administrators to import key material into the KMS key. This permission is included in the key policy only when you [create a KMS key with no key material](importing-keys-create-cmk.md).
 
 **`kms:ReplicateKey`**
-The [https://docs.aws.amazon.com/kms/latest/APIReference/API_ReplicateKey.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_ReplicateKey.html) permission allows key administrators to [create a replica of a multi-Region primary key](multi-region-keys-replicate.md) in a different AWS Region. This permission is included in the key policy only when you create a multi-Region primary or replica key.
+The [`kms:ReplicateKey`](https://docs.aws.amazon.com/kms/latest/APIReference/API_ReplicateKey.html) permission allows key administrators to [create a replica of a multi-Region primary key](multi-region-keys-replicate.md) in a different AWS Region. This permission is included in the key policy only when you create a multi-Region primary or replica key.
 
 **`kms:UpdatePrimaryRegion`**
-The [https://docs.aws.amazon.com/kms/latest/APIReference/API_UpdatePrimaryRegion.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_UpdatePrimaryRegion.html) permission allows key administrators to [change a multi-Region replica key to a multi-Region primary key](multi-region-update.md). This permission is included in the key policy only when you create a multi-Region primary or replica key.
+The [`kms:UpdatePrimaryRegion`](https://docs.aws.amazon.com/kms/latest/APIReference/API_UpdatePrimaryRegion.html) permission allows key administrators to [change a multi-Region replica key to a multi-Region primary key](multi-region-update.md). This permission is included in the key policy only when you create a multi-Region primary or replica key.
 
 ## Allows key users to use the KMS key
 <a name="key-policy-default-allow-users"></a>
@@ -323,16 +323,16 @@ The console adds the following statement to the key policy for asymmetric KMS ke
 
 The actions in these statements give the key users the following permissions.
 
-[https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html)
+[`kms:Encrypt`](https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html)
 Allows key users to encrypt data with this KMS key.
 
-[https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html)
+[`kms:Decrypt`](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html)
 Allows key users to decrypt data with this KMS key.
 
-[https://docs.aws.amazon.com/kms/latest/APIReference/API_DeriveSharedSecret.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_DeriveSharedSecret.html)
+[`kms:DeriveSharedSecret`](https://docs.aws.amazon.com/kms/latest/APIReference/API_DeriveSharedSecret.html)
 Allows key users to derive shared secrets with this KMS key.
 
-[https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html)
+[`kms:DescribeKey`](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html)
 Allows key users to get detailed information about this KMS key including its identifiers, creation date, and key state. It also allows the key users to display details about the KMS key in the AWS KMS console.
 
 `kms:GenerateDataKey*`

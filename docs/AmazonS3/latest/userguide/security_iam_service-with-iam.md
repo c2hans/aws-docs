@@ -228,7 +228,7 @@ Bucket operations are S3 API operations that operate on the bucket resource type
 "Resource": "arn:aws:s3:::{{amzn-s3-demo-bucket}}"
 ```
 
-The following bucket policy grants the user `{{Akua}}` with account `{{12345678901}}` the `s3:ListBucket` permission to perform the [https://docs.aws.amazon.com//AmazonS3/latest/API/API_PutObject.html](https://docs.aws.amazon.com//AmazonS3/latest/API/API_PutObject.html) API operation and list objects in an S3 bucket.
+The following bucket policy grants the user `{{Akua}}` with account `{{12345678901}}` the `s3:ListBucket` permission to perform the [ListObjectsV2](https://docs.aws.amazon.com//AmazonS3/latest/API/API_PutObject.html) API operation and list objects in an S3 bucket.
 
 ------
 #### [ JSON ]
@@ -263,7 +263,7 @@ Permissions granted in an access point for general purpose buckets policy are ef
 "Resource": "arn:aws:s3:{{us-west-2}}:{{123456789012}}:accesspoint/{{example-access-point}}"
 ```
 
-The following access point policy grants the user `{{Akua}}` with account `{{12345678901}}` the `s3:ListBucket` permission to perform the [https://docs.aws.amazon.com//AmazonS3/latest/API/API_ListObjectsV2.html](https://docs.aws.amazon.com//AmazonS3/latest/API/API_ListObjectsV2.html) API operation through the S3 access point named `{{example-access-point}}`. This permission allows `{{Akua}}` to list the objects in the bucket that's associated with `{{example-access-point}}`.
+The following access point policy grants the user `{{Akua}}` with account `{{12345678901}}` the `s3:ListBucket` permission to perform the [ListObjectsV2](https://docs.aws.amazon.com//AmazonS3/latest/API/API_ListObjectsV2.html) API operation through the S3 access point named `{{example-access-point}}`. This permission allows `{{Akua}}` to list the objects in the bucket that's associated with `{{example-access-point}}`.
 
 ------
 #### [ JSON ]
@@ -301,7 +301,7 @@ Permissions granted in an access points for directory buckets policy are effecti
 "Resource": "arn:aws:s3:{{us-west-2}}:{{123456789012}}:accesspoint/{{example-access-point--usw2-az1--xa-s3}}"
 ```
 
-The following access point policy grants the user `{{Akua}}` with account `{{12345678901}}` the `s3:ListBucket` permission to perform the [https://docs.aws.amazon.com//AmazonS3/latest/API/API_ListObjectsV2.html](https://docs.aws.amazon.com//AmazonS3/latest/API/API_ListObjectsV2.html) API operation through the access point named `{{example-access-point--usw2-az1--xa-s3}}`. This permission allows `{{Akua}}` to list the objects in the bucket that's associated with `{{example-access-point--usw2-az1--xa-s3}}`.
+The following access point policy grants the user `{{Akua}}` with account `{{12345678901}}` the `s3:ListBucket` permission to perform the [ListObjectsV2](https://docs.aws.amazon.com//AmazonS3/latest/API/API_ListObjectsV2.html) API operation through the access point named `{{example-access-point--usw2-az1--xa-s3}}`. This permission allows `{{Akua}}` to list the objects in the bucket that's associated with `{{example-access-point--usw2-az1--xa-s3}}`.
 
 ------
 #### [ JSON ]
@@ -348,7 +348,7 @@ Object operations are S3 API operations that act upon the object resource type. 
 **Note**
 The object ARN must contain a forward slash after the bucket name, as seen in the previous examples.
 
-The following bucket policy grants the user `{{Akua}}` with account `{{12345678901}}` the `s3:PutObject` permission. This permission allows `{{Akua}}` to use the [https://docs.aws.amazon.com//AmazonS3/latest/API/API_PutObject.html](https://docs.aws.amazon.com//AmazonS3/latest/API/API_PutObject.html) API operation to upload objects to the S3 bucket named `{{amzn-s3-demo-bucket}}`.
+The following bucket policy grants the user `{{Akua}}` with account `{{12345678901}}` the `s3:PutObject` permission. This permission allows `{{Akua}}` to use the [PutObject](https://docs.aws.amazon.com//AmazonS3/latest/API/API_PutObject.html) API operation to upload objects to the S3 bucket named `{{amzn-s3-demo-bucket}}`.
 
 ------
 #### [ JSON ]
@@ -387,7 +387,7 @@ When you use S3 Access Points to control access to object operations, you can us
 "Resource": "arn:aws:s3:{{us-west-2}}:{{123456789012}}:accesspoint/{{example-access-point}}/object/{{prefix}}/*"
 ```
 
-The following access point policy grants the user `{{Akua}}` with account `{{12345678901}}` the `s3:GetObject` permission. This permission allows `{{Akua}}` to perform the [https://docs.aws.amazon.com//AmazonS3/latest/API/API_GetObject.html](https://docs.aws.amazon.com//AmazonS3/latest/API/API_GetObject.html) API operation through the access point named `{{example-access-point}}` on all objects in the bucket that's associated with the access point.
+The following access point policy grants the user `{{Akua}}` with account `{{12345678901}}` the `s3:GetObject` permission. This permission allows `{{Akua}}` to perform the [GetObject](https://docs.aws.amazon.com//AmazonS3/latest/API/API_GetObject.html) API operation through the access point named `{{example-access-point}}` on all objects in the bucket that's associated with the access point.
 
 ------
 #### [ JSON ]
@@ -429,7 +429,7 @@ When you use access points for directory buckets to control access to object ope
 "Resource": "arn:aws:s3express:{{us-west-2}}:{{123456789012}}:accesspoint/{{example-access-point--usw2-az1--xa-s3}}/object/{{prefix}}/*"
 ```
 
-The following access point policy grants the user `{{Akua}}` with account `{{12345678901}}` the `s3:GetObject` permission. This permission allows `{{Akua}}` to perform the [https://docs.aws.amazon.com//AmazonS3/latest/API/API_GetObject.html](https://docs.aws.amazon.com//AmazonS3/latest/API/API_GetObject.html) API operation through the access point named `{{example-access-point--usw2-az1--xa-s3}}` on all objects in the bucket that's associated with the access point.
+The following access point policy grants the user `{{Akua}}` with account `{{12345678901}}` the `s3:GetObject` permission. This permission allows `{{Akua}}` to perform the [GetObject](https://docs.aws.amazon.com//AmazonS3/latest/API/API_GetObject.html) API operation through the access point named `{{example-access-point--usw2-az1--xa-s3}}` on all objects in the bucket that's associated with the access point.
 
 ```
 {
@@ -460,7 +460,7 @@ Access point operations are S3 API operations that operate on the `accesspoint` 
 "Resource": "arn:aws:s3:{{us-west-2}}:{{123456789012}}:accesspoint/{{example-access-point}}"
 ```
 
-The following IAM identity-based policy grants the `s3:GetAccessPointPolicy` permission to perform the [https://docs.aws.amazon.com//AmazonS3/latest/API/API_control_GetAccessPointPolicy.html](https://docs.aws.amazon.com//AmazonS3/latest/API/API_control_GetAccessPointPolicy.html) API operation on the S3 access point named `{{example-access-point}}`.
+The following IAM identity-based policy grants the `s3:GetAccessPointPolicy` permission to perform the [GetAccessPointPolicy](https://docs.aws.amazon.com//AmazonS3/latest/API/API_control_GetAccessPointPolicy.html) API operation on the S3 access point named `{{example-access-point}}`.
 
 ------
 #### [ JSON ]
@@ -496,7 +496,7 @@ Access point for directory buckets operations are S3 API operations that operate
 "Resource": "arn:aws:s3:{{us-west-2}}:{{123456789012}}:accesspoint/{{example-access-point--usw2-az1--xa-s3}}"
 ```
 
-The following IAM identity-based policy grants the `s3express:GetAccessPointPolicy` permission to perform the [https://docs.aws.amazon.com//AmazonS3/latest/API/API_control_GetAccessPointPolicy.html](https://docs.aws.amazon.com//AmazonS3/latest/API/API_control_GetAccessPointPolicy.html) API operation on the access point named `{{example-access-point--usw2-az1--xa-s3}}`.
+The following IAM identity-based policy grants the `s3express:GetAccessPointPolicy` permission to perform the [GetAccessPointPolicy](https://docs.aws.amazon.com//AmazonS3/latest/API/API_control_GetAccessPointPolicy.html) API operation on the access point named `{{example-access-point--usw2-az1--xa-s3}}`.
 
 ------
 #### [ JSON ]
@@ -616,7 +616,7 @@ For more information about how to configure S3 Storage Lens configuration operat
 
 Account operations are S3 API operations that operate on the account level. For example, `GetPublicAccessBlock` (for account). Account isn't a resource type defined by Amazon S3. S3 policy actions for account operations can only be used in IAM identity-based policies, not in bucket policies. Also, account operations require the `Resource` element in IAM identity-based policies to be `"*"`.
 
-The following IAM identity-based policy grants the `s3:GetAccountPublicAccessBlock` permission to perform the account-level [https://docs.aws.amazon.com//AmazonS3/latest/API/API_control_GetPublicAccessBlock.html](https://docs.aws.amazon.com//AmazonS3/latest/API/API_control_GetPublicAccessBlock.html) API operation and retrieve the account-level Public Access Block settings.
+The following IAM identity-based policy grants the `s3:GetAccountPublicAccessBlock` permission to perform the account-level [GetPublicAccessBlock](https://docs.aws.amazon.com//AmazonS3/latest/API/API_control_GetPublicAccessBlock.html) API operation and retrieve the account-level Public Access Block settings.
 
 ------
 #### [ JSON ]

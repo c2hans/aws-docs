@@ -20,7 +20,7 @@ The retry strategy has the following responsibilities.
 + Maintain a [token bucket](https://en.wikipedia.org/wiki/Token_bucket) that provides a mechanism to stop retries when a large percentage of requests are failing and retries are unsuccessful.
 
 **Note**
-Before the release of retry *strategies* with version 2.26.0 of the SDK, retry *policies* provided the retry mechanism in the SDK. The retry *policy* API is made up of the core [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/retry/RetryPolicy.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/retry/RetryPolicy.html) class in the `software.amazon.awssdk.core.retry` package, whereas the `[software.amazon.awssdk.retries](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/package-summary.html)` package contains the retry *strategy* API elements.
+Before the release of retry *strategies* with version 2.26.0 of the SDK, retry *policies* provided the retry mechanism in the SDK. The retry *policy* API is made up of the core [`RetryPolicy`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/retry/RetryPolicy.html) class in the `software.amazon.awssdk.core.retry` package, whereas the `[software.amazon.awssdk.retries](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/package-summary.html)` package contains the retry *strategy* API elements.
 The retry strategy API was introduced as part of the AWS-wide effort to unify the interfaces and behavior of the core components of the SDKs.
 
 The SDK for Java 2.x has three built-in retry strategies: standard, legacy, and adaptive. All three retry strategies are preconfigured to retry on a set of retryable exceptions. Examples of retryable errors are socket timeouts, service-side throttling, concurrency or optimistic lock failures, and transient service errors.
@@ -73,7 +73,7 @@ If you use a single client for multiple resources, throttling or outages associa
 We also recommend that you use this strategy in situations where all clients use the adaptive retry strategy against the resource.
 
 **Important**
-The release of retry strategies with 2.26.0 of the Java SDK includes the new [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/retry/RetryMode.html#ADAPTIVE_V2](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/retry/RetryMode.html#ADAPTIVE_V2) enumeration value. The `ADAPTIVE_V2` mode corrects an error that failed to delay the first attempt when throttling errors were detected previously.
+The release of retry strategies with 2.26.0 of the Java SDK includes the new [`RetryMode.ADAPTIVE_V2`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/retry/RetryMode.html#ADAPTIVE_V2) enumeration value. The `ADAPTIVE_V2` mode corrects an error that failed to delay the first attempt when throttling errors were detected previously.
 With the 2.26.0 release, users automatically get the `ADAPTIVE_V2` mode behavior by setting the mode as `adaptive` with an environment variable, system property, or profile setting. There is no `adaptive_v2` value for these settings. See the following [Specify a strategy](#retry-strategies-specify) section for how to set the mode.
 Users can get the previous behavior by setting the mode in code using `RetryMode.ADAPTIVE`.
 
@@ -207,7 +207,7 @@ DynamoDbClient client = DynamoDbClient.builder()
 ```
 
 **Important**
-Retries are disabled for the Kinesis asynchronous client when you call a [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/kinesis/KinesisAsyncClient.html#subscribeToShard(software.amazon.awssdk.services.kinesis.model.SubscribeToShardRequest,software.amazon.awssdk.services.kinesis.model.SubscribeToShardResponseHandler)](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/kinesis/KinesisAsyncClient.html#subscribeToShard(software.amazon.awssdk.services.kinesis.model.SubscribeToShardRequest,software.amazon.awssdk.services.kinesis.model.SubscribeToShardResponseHandler)) method, regardless of the retry strategy configuration.
+Retries are disabled for the Kinesis asynchronous client when you call a [`subscribeToShard`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/kinesis/KinesisAsyncClient.html#subscribeToShard(software.amazon.awssdk.services.kinesis.model.SubscribeToShardRequest,software.amazon.awssdk.services.kinesis.model.SubscribeToShardResponseHandler)) method, regardless of the retry strategy configuration.
 
 ### Customize the backoff strategy
 <a name="customize-strategy-backoff"></a>

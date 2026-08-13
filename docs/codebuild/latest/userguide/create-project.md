@@ -265,8 +265,8 @@ To be able to report the build status to the source provider, the user associate
 
 **Provisioning model**
 Do one of the following:
-+ To use on-demand fleets managed by AWS CodeBuild, choose **On-demand**. With on-demand fleets, CodeBuild provides compute for your builds. The machines are destroyed when the build finishes. On-demand fleets are fully managed, and includes automatic scaling capabilities to handle spikes in demand.
-+ To use reserved capacity fleets managed by AWS CodeBuild, choose **Reserved capacity**, and then select a **Fleet name**. With reserved capacity fleets, you configure a set of dedicated instances for your build environment. These machines remain idle, ready to process builds or tests immediately and reduces build durations. With reserved capacity fleets, your machines are always running and will continue to incur costs as long they're provisioned.
++ To use on-demand fleets managed by AWS CodeBuild, choose **On-demand**. With on-demand fleets, CodeBuild provides compute for your builds. The machines are destroyed when the build finishes. On-demand fleets are fully managed, and include automatic scaling capabilities to handle spikes in demand.
++ To use reserved capacity fleets managed by AWS CodeBuild, choose **Reserved capacity**, and then select a **Fleet name**. With reserved capacity fleets, you configure a set of dedicated instances for your build environment. These machines remain idle, ready to process builds or tests immediately, and reduce build durations. With reserved capacity fleets, your machines are always running and will continue to incur costs as long as they're provisioned.
 For information, see [Run builds on reserved capacity fleets](fleets.md).
 
 **Environment image**  <a name="environment-image.console"></a>
@@ -279,7 +279,7 @@ CodeBuild overrides the `ENTRYPOINT` for custom Docker images.
 **Compute**
 Do one of the following:
 + To use EC2 compute, choose **EC2**. EC2 compute offers optimized flexibility during action runs.
-+ To use Lambda compute, choose **Lambda**. Lambda compute offers optimized start-up speeds for your builds. Lambda supports faster builds due to a lower start-up latency. Lambda also automatically scales, so builds aren’t waiting in queue to run. For information, see [Run builds on AWS Lambda compute](lambda.md).
++ To use Lambda compute, choose **Lambda**. Lambda compute offers optimized start-up speeds for your builds. Lambda supports faster builds due to a lower start-up latency. Lambda also automatically scales, so builds aren't waiting in queue to run. For more information, see [Run builds on AWS Lambda compute](lambda.md).
 
 **Service role**
 Do one of the following:
@@ -293,7 +293,7 @@ Specify the number of additional automatic retries after a failed build. For exa
 **Timeout**
 Specify a value, between 5 minutes and 36 hours, after which CodeBuild stops the build if it is not complete. If **hours** and **minutes** are left blank, the default value of 60 minutes is used.
 **Privileged**
-(Optional) Select **Enable this flag if you want to build Docker images or want your builds to get elevated privileges** only if you plan to use this build project to build Docker images. Otherwise, all associated builds that attempt to interact with the Docker daemon fail. You must also start the Docker daemon so that your builds can interact with it. One way to do this is to initialize the Docker daemon in the `install` phase of your build spec by running the following build commands. Do not run these commands if you chose a build environment image provided by CodeBuild with Docker support.
+(Optional) Select **Enable this flag if you want to build Docker images or want your builds to get elevated privileges** only if you plan to use this build project to build Docker images. Otherwise, all associated builds that attempt to interact with the Docker daemon fail. You must also start the Docker daemon so that your builds can interact with it. One way to do this is to initialize the Docker daemon in the `install` phase of your buildspec by running the following build commands. Do not run these commands if you chose a build environment image provided by CodeBuild with Docker support.
 By default, Docker daemon is enabled for non-VPC builds. If you would like to use Docker containers for VPC builds, see [Runtime Privilege and Linux Capabilities](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities) on the Docker Docs website and enable privileged mode. Also, Windows does not support privileged mode.
 
 ```
@@ -455,12 +455,12 @@ Select if you do not want your S3 logs encrypted.
 
 For more information about using the AWS CLI with CodeBuild, see the [Command line reference](cmd-ref.md).
 
-To create a CodeBuild build project using the AWS CLI, you create a JSON-formatted [Project](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Project.html) structure, fill in the structure, and call the [https://docs.aws.amazon.com/cli/latest/reference/codebuild/create-project.html](https://docs.aws.amazon.com/cli/latest/reference/codebuild/create-project.html) command to create the project.
+To create a CodeBuild build project using the AWS CLI, you create a JSON-formatted [Project](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Project.html) structure, fill in the structure, and call the [`create-project`](https://docs.aws.amazon.com/cli/latest/reference/codebuild/create-project.html) command to create the project.
 
 ### Create the JSON file
 <a name="cp-cli-create-file"></a>
 
-Create a skeleton JSON file with the [https://docs.aws.amazon.com/cli/latest/reference/codebuild/create-project.html](https://docs.aws.amazon.com/cli/latest/reference/codebuild/create-project.html) command, using the `--generate-cli-skeleton` option:
+Create a skeleton JSON file with the [`create-project`](https://docs.aws.amazon.com/cli/latest/reference/codebuild/create-project.html) command, using the `--generate-cli-skeleton` option:
 
 ```
 aws codebuild create-project --generate-cli-skeleton > {{<json-file>}}
@@ -782,7 +782,7 @@ The name of the output bucket you created or identified in the prerequisites.
 
 artifacts/**path**  <a name="cli.artifacts.path"></a>
 Only used with the `S3` artifact type. Not used for other artifact types.
-The path in of the output bucket to place ZIP file or folder. If you do not specify a value for `path`, CodeBuild uses `namespaceType` (if specified) and `name` to determine the path and name of the build output ZIP file or folder. For example, if you specify `MyPath` for `path` and `MyArtifact.zip` for `name`, the path and name would be `MyPath/MyArtifact.zip`.
+The path of the output bucket in which to place the ZIP file or folder. If you do not specify a value for `path`, CodeBuild uses `namespaceType` (if specified) and `name` to determine the path and name of the build output ZIP file or folder. For example, if you specify `MyPath` for `path` and `MyArtifact.zip` for `name`, the path and name would be `MyPath/MyArtifact.zip`.
 
 artifacts/**namespaceType**  <a name="cli.artifacts.namespacetype"></a>
 Only used with the `S3` artifact type. Not used for other artifact types.
@@ -897,7 +897,7 @@ Optional. The number of minutes, between 5 to 2160 (36 hours), after which CodeB
 #### queuedTimeoutInMinutes
 <a name="cli.queuedtimeoutinminutes"></a>
 
-Optional. The number of minutes, between 5 to 480 (8 hours), after which CodeBuild stops the build if it is is still queued. If not specified, the default of 60 is used.
+Optional. The number of minutes, between 5 to 480 (8 hours), after which CodeBuild stops the build if it is still queued. If not specified, the default of 60 is used.
 
 #### encryptionKey
 <a name="cli.encryptionkey"></a>
@@ -912,7 +912,7 @@ Optional. An array of [Tag](https://docs.aws.amazon.com/codebuild/latest/APIRefe
 #### vpcConfig
 <a name="cli.vpcconfig"></a>
 
-Optional. A [VpcConfig](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_VpcConfig.html) object that contains information information about the VPC configuration for your project. For more information, see [Use AWS CodeBuild with Amazon Virtual Private Cloud](vpc-support.md).
+Optional. A [VpcConfig](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_VpcConfig.html) object that contains information about the VPC configuration for your project. For more information, see [Use AWS CodeBuild with Amazon Virtual Private Cloud](vpc-support.md).
 
 These properties include:
 
@@ -956,7 +956,7 @@ An [S3LogsConfig](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_
 #### fileSystemLocations
 <a name="cli.filesystemlocations"></a>
 
-Optional. An array of [ProjectFileSystemsLocation](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ProjectFileSystemLocation.html) objects that contains informationabout your Amazon EFS configuration.
+Optional. An array of [ProjectFileSystemsLocation](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ProjectFileSystemLocation.html) objects that contain information about your Amazon EFS configuration.
 
 #### buildBatchConfig
 <a name="cli.buildbatchconfig"></a>
@@ -998,7 +998,7 @@ New builds are only started if the current number of builds is less than or equa
 ### Create the project
 <a name="cp-cli-create-project"></a>
 
-To create the project, run the **[https://docs.aws.amazon.com/cli/latest/reference/codebuild/create-project.html](https://docs.aws.amazon.com/cli/latest/reference/codebuild/create-project.html)** command again, passing your JSON file:
+To create the project, run the **[`create-project`](https://docs.aws.amazon.com/cli/latest/reference/codebuild/create-project.html)** command again, passing your JSON file:
 
 ```
 aws codebuild create-project --cli-input-json file://{{<json-file>}}

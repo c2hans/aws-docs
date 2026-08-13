@@ -29,6 +29,9 @@ Percentile statistics are supported for a metric only if none of the metric's va
 
 Filters do not retroactively filter data. Filters only publish the metric data points for events that happen after the filter was created. When testing a filter pattern, the **Filter results** preview shows up to the first 50 matching log lines for validation purposes. If the timestamp on the filtered results is earlier than the metric creation time, no logs are displayed.
 
+**Note**
+Metric filters ensure at least one time delivery of log events to the specified metric, while duplicate deliveries may occasionally occur.
+
 **Topics**
 + [Concepts](#search-filter-concepts)
 + [Filter pattern syntax for metric filters](FilterAndPatternSyntaxForMetricFilters.md)

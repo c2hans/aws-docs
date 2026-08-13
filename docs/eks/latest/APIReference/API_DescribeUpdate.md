@@ -22,7 +22,7 @@ GET /clusters/{{name}}/updates/{{updateId}}?addonName={{addonName}}&capabilityNa
 The request uses the following URI parameters.
 
  ** [addonName](#API_DescribeUpdate_RequestSyntax) **   <a name="AmazonEKS-DescribeUpdate-request-uri-addonName"></a>
-The name of the add-on. The name must match one of the names returned by [https://docs.aws.amazon.com/eks/latest/APIReference/API_ListAddons.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListAddons.html). This parameter is required if the update is an add-on update.
+The name of the add-on. The name must match one of the names returned by [`ListAddons`](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListAddons.html). This parameter is required if the update is an add-on update.
 
  ** [capabilityName](#API_DescribeUpdate_RequestSyntax) **   <a name="AmazonEKS-DescribeUpdate-request-uri-capabilityName"></a>
 The name of the capability for which you want to describe updates.

@@ -93,4 +93,4 @@ In many cases, tags provide a powerful and yet flexible way to manage access to 
 
 ------
 
-For more information, see the [https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/welcome.html](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/welcome.html) whitepaper.
+For more information, see the [*Tagging Best Practices*](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/welcome.html) whitepaper.

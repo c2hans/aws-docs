@@ -129,7 +129,7 @@ aws elasticache describe-events --source-type cache-cluster --max-items 40
 }
 ```
 
-For more information, such as available parameters and permitted parameter values, see [https://docs.aws.amazon.com/cli/latest/reference/elasticache/describe-events.html](https://docs.aws.amazon.com/cli/latest/reference/elasticache/describe-events.html).
+For more information, such as available parameters and permitted parameter values, see [`describe-events`](https://docs.aws.amazon.com/cli/latest/reference/elasticache/describe-events.html).
 
 ## Viewing ElastiCache events (ElastiCache API)
 <a name="ECEvents.Viewing.API"></a>
@@ -187,4 +187,4 @@ The above actions should produce output similar to the following.
 </DescribeEventsResponse>
 ```
 
-For more information, such as available parameters and permitted parameter values, see [https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DescribeEvents.html](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DescribeEvents.html).
+For more information, such as available parameters and permitted parameter values, see [`DescribeEvents`](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DescribeEvents.html).

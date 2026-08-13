@@ -80,7 +80,13 @@ A classifier for XML content.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the classifier name.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-glue-classifier-return-values-fn--getatt"></a>
+
+####
+<a name="aws-resource-glue-classifier-return-values-fn--getatt-fn--getatt"></a>
+
+`Name`  <a name="Name-fn::getatt"></a>
+The name of the classifier.

@@ -22,4 +22,4 @@ aws s3control list-jobs \
     --max-results {{20}}
 ```
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/list-jobs.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/list-jobs.html) in the *AWS CLI Command Reference*.
+For more information and examples, see [list-jobs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/list-jobs.html) in the *AWS CLI Command Reference*.

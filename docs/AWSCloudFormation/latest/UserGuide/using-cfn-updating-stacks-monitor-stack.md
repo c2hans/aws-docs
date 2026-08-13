@@ -20,7 +20,7 @@ The start of the stack update process is marked with an `UPDATE_IN_PROGRESS` eve
 2011-09-30 09:35 PDT AWS::CloudFormation::Stack {{MyStack}} UPDATE_IN_PROGRESS
 ```
 
-Next are events that mark the beginning and completion of the update of each resource that was changed in the update template. For example, updating an [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbinstance.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbinstance.html) resource named `MyDB` would result in the following entries:
+Next are events that mark the beginning and completion of the update of each resource that was changed in the update template. For example, updating an [AWS::RDS::DBInstance](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbinstance.html) resource named `MyDB` would result in the following entries:
 
 ```
 2011-09-30 09:35 PDT AWS::RDS::DBInstance MyDB UPDATE_COMPLETE
@@ -44,7 +44,7 @@ This is also true for resources that you have removed from the stack template, a
 ## Events generated when a resource update fails
 <a name="using-cfn-updating-stacks-monitor-stack-update-failure"></a>
 
-If an update of a resource fails, CloudFormation reports an `UPDATE_FAILED` event that includes a reason for the failure. For example, if your update template specified a property change that's not supported by the resource such as reducing the size of `AllocatedStorage` for an [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbinstance.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbinstance.html) resource, you would see events like these:
+If an update of a resource fails, CloudFormation reports an `UPDATE_FAILED` event that includes a reason for the failure. For example, if your update template specified a property change that's not supported by the resource such as reducing the size of `AllocatedStorage` for an [AWS::RDS::DBInstance](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbinstance.html) resource, you would see events like these:
 
 ```
 2011-09-30 09:36 PDT AWS::RDS::DBInstance MyDB UPDATE_FAILED Size cannot be less than current size; requested: 5; current: 10

@@ -18,7 +18,7 @@ Third-party data can be collected using two methods:
 
 The following table identified the integrations methods used by the supported third-party data platforms:
 
-| Source | Integration Pattern | Requires S3 bucket | Requires SQS Queue | Uses Secrets Manager extension | Required IAM Policies |
+| Source | Integration pattern | Requires S3 bucket | Requires SQS queue | Uses Secrets Manager extension | Required IAM policies |
 | --- | --- | --- | --- | --- | --- |
 | Akamai DataStream 2 | S3 Delivery | Yes | Yes | No | [Source-specific IAM policies](pipeline-iam-reference.md#source-specific-iam-policies) |
 | Check Point NGFW | S3 Delivery | Yes | Yes | No | [Source-specific IAM policies](pipeline-iam-reference.md#source-specific-iam-policies) |
@@ -85,4 +85,4 @@ Data collected from third-party sources is mutated to adhere to the required sch
 
 Each integration requires platform-specific configuration to establish secure data delivery to your AWS environment.
 
-The following sections provide detailed setup procedures for supported third-party integrations. Each integration includes prerequisites, configuration steps, and validation procedures to ensure proper data flow.
+The following sections provide detailed setup procedures for supported third-party integrations. Each integration includes prerequisites, configuration steps, and validation procedures to make sure proper data flow.

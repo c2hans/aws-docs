@@ -69,7 +69,7 @@ Pre-requisites: Git, Python, and [virtualenv](https://virtualenv.pypa.io/en/late
    EB CLI 3.21.0 (Python 3.12)
    ```
 
-For complete installation instructions, see the [https://github.com/aws/aws-elastic-beanstalk-cli-setup](https://github.com/aws/aws-elastic-beanstalk-cli-setup) repository on GitHub.
+For complete installation instructions, see the [`aws/aws-elastic-beanstalk-cli-setup`](https://github.com/aws/aws-elastic-beanstalk-cli-setup) repository on GitHub.
 
 ## Manually install the EB CLI
 <a name="eb-cli3-install-advanced"></a>

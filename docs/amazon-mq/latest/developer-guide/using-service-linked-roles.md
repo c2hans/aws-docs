@@ -21,7 +21,7 @@ Amazon MQ uses the service-linked role named **AWSServiceRoleForAmazonMQ** – A
 The AWSServiceRoleForAmazonMQ service-linked role trusts the following services to assume the role:
 + `mq.amazonaws.com`
 
-Amazon MQ uses the permission policy [https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/aws-service-role/AmazonMQServiceRolePolicy](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/aws-service-role/AmazonMQServiceRolePolicy), which is attached to the AWSServiceRoleForAmazonMQ service-linked role, to complete the following actions on the specified resources:
+Amazon MQ uses the permission policy [`AmazonMQServiceRolePolicy`](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/aws-service-role/AmazonMQServiceRolePolicy), which is attached to the AWSServiceRoleForAmazonMQ service-linked role, to complete the following actions on the specified resources:
 + Action: `ec2:CreateVpcEndpoint` on the `vpc` resource.
 
 + Action: `ec2:CreateVpcEndpoint` on the `subnet` resource.

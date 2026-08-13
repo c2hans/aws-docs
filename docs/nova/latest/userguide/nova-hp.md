@@ -16,7 +16,7 @@ Standard pricing can apply for compute instances, Amazon S3 storage, and FSx for
 ## Compute requirements for Amazon Nova 1 models
 <a name="nova-hp-compute-1"></a>
 
-The following tables summarize the computational requirements for and SageMaker AI training jobs training for Nova 1.0 models.
+The following tables summarize the computational requirements for SageMaker HyperPod and SageMaker AI training jobs training for Nova 1.0 models.
 
 **Pre-training**
 
@@ -71,10 +71,10 @@ The following tables summarize the computational requirements for and SageMaker 
 
 **Topics**
 + [Compute requirements for Amazon Nova 1 models](#nova-hp-compute-1)
-+ [Nova Forge SDK](nova-hp-forge-sdk.md)
++ [SageMaker Python SDK](nova-hp-forge-sdk.md)
 + [Amazon SageMaker HyperPod Essential Commands Guide](nova-hp-essential-commands-guide.md)
 + [Creating a SageMaker HyperPod EKS cluster with restricted instance group (RIG)](nova-hp-cluster.md)
-+ [Nova Forge access and setup for](nova-forge-hp-access.md)
++ [Nova Forge access and setup for SageMaker HyperPod](nova-forge-hp-access.md)
 + [Training for Amazon Nova models](nova-hp-training.md)
 + [Fine-tuning Amazon Nova models on SageMaker HyperPod](nova-hp-fine-tune.md)
 + [Evaluating your trained model](nova-hp-evaluate.md)

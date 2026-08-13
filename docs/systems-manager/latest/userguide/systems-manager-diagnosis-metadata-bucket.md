@@ -14,7 +14,7 @@ You can use Systems Manager to run diagnostic operations on your fleet to identi
 **Changing the bucket encryption method**
 By default, the S3 bucket uses server-side encryption with Amazon S3 managed keys (SSE-S3).
 
-You can instead use server-side encryption with AWS KMS keys (SSE-KMS) using a customer managed key (CMK) as an alternative to Amazon S3 managed keys, as explained in [Changing to an AWS KMS customer managed key to encrypt S3 resources](remediate-s3-bucket-encryption.md).
+You can instead use server-side encryption with AWS KMS keys (SSE-KMS) using a customer managed key as an alternative to Amazon S3 managed keys, as explained in [Changing to an AWS KMS customer managed key to encrypt S3 resources](remediate-s3-bucket-encryption.md).
 
 **Contents of the bucket policy**
 The bucket policy prevents member accounts in an organization from discovering one another. Read and write permissions to the bucket are allowed only for the diagnosis and remediation roles created for Systems Manager. The contents of these system-generated policies are presented in [S3 bucket policies for the unified Systems Manager console](remediate-s3-bucket-policies.md).

@@ -7,11 +7,11 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/send-co
 # Run commands at scale
 <a name="send-commands-multiple"></a>
 
-You can use Run Command, a tool in AWS Systems Manager, to run commands on a fleet of managed nodes by using the `targets`. The `targets` parameter accepts a `Key,Value` combination based on tags that you specified for your managed nodes. When you run the command, the system locates and attempts to run the command on all managed nodes that match the specified tags. For more information about tagging managed instances, see [Tagging your AWS resources](https://docs.aws.amazon.com/tag-editor/latest/userguide/tag-editor.html) in the *Tagging AWS Resources User Guide*. For information about tagging your managed IoT devices, see [Tag your AWS IoT Greengrass Version 2 resources](https://docs.aws.amazon.com/greengrass/v2/developerguide/tag-resources.html) in the *AWS IoT Greengrass Version 2 Developer Guide*.
+You can use Run Command to run commands on a fleet of managed nodes by using the `targets`. The `targets` parameter accepts a `Key,Value` combination based on tags that you specified for your managed nodes. When you run the command, the system locates and attempts to run the command on all managed nodes that match the specified tags. For more information about tagging managed instances, see [Tagging your AWS resources](https://docs.aws.amazon.com/tag-editor/latest/userguide/tag-editor.html) in the *Tagging AWS Resources User Guide*. For information about tagging your managed IoT devices, see [Tag your AWS IoT Greengrass Version 2 resources](https://docs.aws.amazon.com/greengrass/v2/developerguide/tag-resources.html) in the *AWS IoT Greengrass Version 2 Developer Guide*.
 
 You can also use the `targets` parameter to target a list of specific managed node IDs, as described in the next section.
 
-To control how commands run across hundreds or thousands of managed nodes, Run Command also includes parameters for restricting how many nodes can simultaneously process a request and how many errors can be thrown by a command before the command is canceled.
+To control how commands run across hundreds or thousands of managed nodes, Run Command includes parameters for restricting concurrency. You can limit how many nodes process a request simultaneously and how many errors can occur before the command is canceled.
 
 **Topics**
 + [Targeting multiple managed nodes](#send-commands-targeting)
@@ -53,7 +53,7 @@ aws ssm send-command ^
 You can specify a maximum of one resource group name per command. When you create a resource group, we recommend including `AWS::SSM:ManagedInstance` and `AWS::EC2::Instance` as resource types in your grouping criteria.
 
 **Note**
-In order to send commands that target a resource group, you must have been granted AWS Identity and Access Management (IAM) permissions to list or view the resources that belong to that group. For more information, see [Set up permissions](https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-prereqs.html#gettingstarted-prereqs-permissions) in the *AWS Resource Groups User Guide*.
+To send commands that target a resource group, you must have been granted AWS Identity and Access Management (IAM) permissions to list or view the resources that belong to that group. For more information, see [Set up permissions](https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-prereqs.html#gettingstarted-prereqs-permissions) in the *AWS Resource Groups User Guide*.
 
 ------
 #### [ Linux & macOS ]
@@ -82,7 +82,7 @@ aws ssm send-command ^
 You can specify a maximum of five resource group types per command. When you create a resource group, we recommend including `AWS::SSM:ManagedInstance` and `AWS::EC2::Instance` as resource types in your grouping criteria.
 
 **Note**
-In order to send commands that target a resource group, you must have been granted IAM permissions to list, or view, the resources that belong to that group. For more information, see [Set up permissions](https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-prereqs.html#gettingstarted-prereqs-permissions) in the *AWS Resource Groups User Guide*.
+To send commands that target a resource group, you must have been granted IAM permissions to list, or view, the resources that belong to that group. For more information, see [Set up permissions](https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-prereqs.html#gettingstarted-prereqs-permissions) in the *AWS Resource Groups User Guide*.
 
 ------
 #### [ Linux & macOS ]
@@ -108,7 +108,7 @@ aws ssm send-command ^
 
 **Example 4: Targeting instance IDs**
 
-The following examples show how to target managed nodes by using the `instanceids` key with the `targets` parameter. You can use this key to target managed AWS IoT Greengrass core devices because each device is assigned an mi-{{ID\_number}}. You can view device IDs in Fleet Manager, a tool in AWS Systems Manager.
+The following examples show how to target managed nodes by using the `instanceids` key with the `targets` parameter. You can use this key to target managed AWS IoT Greengrass core devices because each device is assigned an mi-{{ID\_number}}. You can view device IDs in Fleet Manager.
 
 ------
 #### [ Linux & macOS ]
@@ -339,10 +339,6 @@ aws ssm send-command ^
 
 You can control the rate at which commands are sent to managed nodes in a group by using *concurrency controls *and *error controls*.
 
-**Topics**
-+ [Using concurrency controls](#send-commands-velocity)
-+ [Using error controls](#send-commands-maxerrors)
-
 ### Using concurrency controls
 <a name="send-commands-velocity"></a>
 
@@ -393,7 +389,7 @@ aws ssm send-command ^
 
 You can also control the execution of a command to hundreds or thousands of managed nodes by setting an error limit using the `max-errors` parameters (the **Error threshold** field in the **Run a command** page). The parameter specifies how many errors are allowed before the system stops sending the command to additional managed nodes. You can specify either an absolute number of errors, for example **10**, or a percentage of the target set, for example **10%**. If you specify **3**, for example, the system stops sending the command when the fourth error is received. If you specify **0**, then the system stops sending the command to additional managed nodes after the first error result is returned. If you send a command to 50 managed nodes and set `max-errors` to **10%**, then the system stops sending the command to additional nodes when the sixth error is received.
 
-Invocations that are already running a command when `max-errors` is reached are allowed to complete, but some of these invocations might fail as well. If you need to ensure that there won’t be more than `max-errors` failed invocations, set `max-concurrency` to **1** so the invocations proceed one at a time. The default for max-errors is 0. The following examples show you how to specify values for the `max-errors` parameter.
+Invocations that are already running a command when `max-errors` is reached are allowed to complete, but some of these invocations might fail as well. If you need to make sure that there won’t be more than `max-errors` failed invocations, set `max-concurrency` to **1** so the invocations proceed one at a time. The default for max-errors is 0. The following examples show you how to specify values for the `max-errors` parameter.
 
 ------
 #### [ Linux & macOS ]

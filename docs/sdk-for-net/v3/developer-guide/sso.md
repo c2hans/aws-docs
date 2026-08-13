@@ -110,7 +110,7 @@ This section shows you how to create a .NET application that generates a tempora
 
 In addition to using the AWS CLI, you can also generate an SSO token programmatically.
 
-To do this, your application creates an [https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TAWSCredentials.html](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TAWSCredentials.html) object for the SSO profile, which loads temporary credentials if any are available. Then, your application must cast the `AWSCredentials` object to an [https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TSSOAWSCredentials.html](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TSSOAWSCredentials.html) object and set some [Options](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TSSOAWSCredentialsOptions.html) properties, including a callback method that is used to prompt the user for sign-in information, if necessary.
+To do this, your application creates an [`AWSCredentials`](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TAWSCredentials.html) object for the SSO profile, which loads temporary credentials if any are available. Then, your application must cast the `AWSCredentials` object to an [`SSOAWSCredentials`](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TSSOAWSCredentials.html) object and set some [Options](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TSSOAWSCredentialsOptions.html) properties, including a callback method that is used to prompt the user for sign-in information, if necessary.
 
 This method is shown in the following code snippet.
 
@@ -185,7 +185,7 @@ Your application must reference the following NuGet packages so that SSO resolut
 `AWSSDK.SSOOIDC`
 Failure to reference these packages will result in a *runtime* exception.
 
-Your application creates an [https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TAWSCredentials.html](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TAWSCredentials.html) object for the SSO profile, which loads the temporary credentials generated earlier by the AWS CLI. This is similar to the methods shown in [Accessing credentials and profiles in an application](creds-locate.md) and has the following form:
+Your application creates an [`AWSCredentials`](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TAWSCredentials.html) object for the SSO profile, which loads the temporary credentials generated earlier by the AWS CLI. This is similar to the methods shown in [Accessing credentials and profiles in an application](creds-locate.md) and has the following form:
 
 ```
 static AWSCredentials LoadSsoCredentials()

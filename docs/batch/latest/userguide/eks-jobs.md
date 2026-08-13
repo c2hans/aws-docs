@@ -25,7 +25,7 @@ These are the AWS Batch specific features that are also common to Kubernetes job
 + [Use fair-share scheduling to help schedule jobs](fair-share-scheduling.md)
 
 **Kubernetes `Secrets` and `ServiceAccounts`**
-AWS Batch supports referencing Kubernetes `Secrets` and `ServiceAccounts`. You can configure pods to use Amazon EKS IAM roles for service accounts. For more information, see [Configuring pods to use a Kubernetes service account](https://docs.aws.amazon.com/eks/latest/userguide/pod-configuration.html) in the [https://docs.aws.amazon.com/eks/latest/userguide/](https://docs.aws.amazon.com/eks/latest/userguide/).
+AWS Batch supports referencing Kubernetes `Secrets` and `ServiceAccounts`. You can configure pods to use Amazon EKS IAM roles for service accounts. For more information, see [Configuring pods to use a Kubernetes service account](https://docs.aws.amazon.com/eks/latest/userguide/pod-configuration.html) in the [*Amazon EKS User Guide*](https://docs.aws.amazon.com/eks/latest/userguide/).
 
 **Related documents**
 + [Memory and vCPU considerations for AWS Batch on Amazon EKS](memory-cpu-batch-eks.md)

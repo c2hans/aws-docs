@@ -238,6 +238,13 @@ This example illustrates one usage of GetAgreementTerms.
                     "url": "URL"
                 }]
             }
+        },
+        {
+            "netPaymentTerm": {
+                "type": "NetPaymentTerm",
+                "id": "term-EXAMPLE1234abcd",
+                "paymentDuePeriod": "P60D"
+            }
         }
 
     ],

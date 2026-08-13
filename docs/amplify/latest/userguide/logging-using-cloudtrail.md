@@ -34,7 +34,7 @@ For more information, see the [CloudTrail userIdentity element](https://docs.aws
 
 A trail is a configuration that enables delivery of events as log files to an Amazon S3 bucket that you specify. CloudTrail log files contain one or more log entries. An event represents a single request from any source and includes information about the requested action, the date and time of the action, request parameters, and so on. CloudTrail log files aren't an ordered stack trace of the public API calls, so they don't appear in any specific order.
 
-The following example shows a CloudTrail log entry that demonstrates the AWS Amplify Console API Reference [https://docs.aws.amazon.com/amplify/latest/APIReference/API_ListApps.html](https://docs.aws.amazon.com/amplify/latest/APIReference/API_ListApps.html) operation.
+The following example shows a CloudTrail log entry that demonstrates the AWS Amplify Console API Reference [`ListApps`](https://docs.aws.amazon.com/amplify/latest/APIReference/API_ListApps.html) operation.
 
 ```
 {
@@ -75,7 +75,7 @@ The following example shows a CloudTrail log entry that demonstrates the AWS Amp
 }
 ```
 
-The following example shows a CloudTrail log entry that demonstrates the AWS Amplify Admin UI API Reference [https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-job-backendenvironmentname.html#backend-appid-job-backendenvironmentnamepost](https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-job-backendenvironmentname.html#backend-appid-job-backendenvironmentnamepost) operation.
+The following example shows a CloudTrail log entry that demonstrates the AWS Amplify Admin UI API Reference [`ListBackendJobs`](https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-job-backendenvironmentname.html#backend-appid-job-backendenvironmentnamepost) operation.
 
 ```
 {

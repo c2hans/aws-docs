@@ -82,11 +82,11 @@ To start Automatic Management, you'll need permissions to view AWS Health notifi
 
 **Permissions to use Automatic Management**
 + You should use the following AWS Managed Policies for Automatic Management.
-  + [https://docs.aws.amazon.com/servicequotas/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-POLICYNAME](https://docs.aws.amazon.com/servicequotas/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-POLICYNAME)
-  + [https://docs.aws.amazon.com/health/latest/ug/security-iam-awsmanpol.html#security-iam-awsmanpol-AWSHealthFullAccess](https://docs.aws.amazon.com/health/latest/ug/security-iam-awsmanpol.html#security-iam-awsmanpol-AWSHealthFullAccess)
+  + [`ServiceQuotasFullAccess`](https://docs.aws.amazon.com/servicequotas/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-POLICYNAME)
+  + [`AWSHealthFullAccess`](https://docs.aws.amazon.com/health/latest/ug/security-iam-awsmanpol.html#security-iam-awsmanpol-AWSHealthFullAccess)
 
 **Permissions to view Automatic Management**
-+ [https://docs.aws.amazon.com/health/latest/ug/security-iam-awsmanpol.html#security-iam-awsmanpol-AWSHealthFullAccess](https://docs.aws.amazon.com/health/latest/ug/security-iam-awsmanpol.html#security-iam-awsmanpol-AWSHealthFullAccess)
++ [`AWSHealthFullAccess`](https://docs.aws.amazon.com/health/latest/ug/security-iam-awsmanpol.html#security-iam-awsmanpol-AWSHealthFullAccess)
 
 For more information on creating IAM policies, see the following links.
 + [IAM tutorial: Create and attach your first customer managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_managed-policies.html) in the *AWS Identity and Access Management User Guide*

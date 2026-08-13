@@ -22,7 +22,7 @@ None
 ## Return type
 <a name="aurora_stat_database-return-type"></a>
 
-SETOF record with all `pg_stat_database` columns and the following additional columns. For more information on `pg_stat_database` columns, see [https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-DATABASE-VIEW](https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-DATABASE-VIEW).
+SETOF record with all `pg_stat_database` columns and the following additional columns. For more information on `pg_stat_database` columns, see [`pg_stat_database`](https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-DATABASE-VIEW).
 + `storage_blks_read` – Total number of shared blocks read from aurora storage in this database.
 + `orcache_blks_hit` – Total number of optimized reads cache hits in this database.
 + `local_blks_read` – Total number of local blocks read in this database.

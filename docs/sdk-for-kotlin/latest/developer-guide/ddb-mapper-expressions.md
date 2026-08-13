@@ -6,8 +6,8 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 <a name="ddb-mapper-expressions"></a>
 
 DynamoDB Mapper provides Kotlin DSLs for building the two kinds of [DynamoDB expressions](/amazondynamodb/latest/developerguide/Expressions.html) you use most:
-+  **Filter and condition expressions**: boolean conditions that narrow the results of a `query` or `scan`, or that gate a write. You build these in a `filter { }` block.
-+  **Update expressions**: instructions that describe how `updateItem` modifies an item. You build these in an `update { }` block.
++  **Filter and condition expressions**: boolean conditions that narrow the results of a [`query`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) or [`scan`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html), or that gate a write. You build these in a `filter { }` block.
++  **Update expressions**: instructions that describe how [`updateItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) modifies an item. You build these in an `update { }` block.
 
 This topic uses the `Order` item type (partition key `customerId`, sort key `orderId`) for its examples.
 
@@ -28,7 +28,7 @@ attr["productSkus"][0]      // the first element of the "productSkus" list attri
 ## Filter expressions
 <a name="ddb-mapper-expressions-filter"></a>
 
-Set a `filter { }` on a `query` or `scan` to drop items that don’t match a condition. The filter is applied by DynamoDB after items are read, so it narrows results but doesn’t reduce read cost.
+Set a `filter { }` on a [`query`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) or [`scan`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) to drop items that don’t match a condition. The filter is applied by DynamoDB after items are read, so it narrows results but doesn’t reduce read cost.
 
 ```
 import aws.sdk.kotlin.hll.dynamodbmapper.expressions.KeyFilter
@@ -119,7 +119,7 @@ filter {
 ### Key conditions
 <a name="ddb-mapper-expressions-key-conditions"></a>
 
-A `query` also takes a `keyCondition`, built with `KeyFilter`. Unlike a filter, a key condition is evaluated by DynamoDB to select which items to read. It always specifies the partition key and can add a condition on the sort key through a lambda argument:
+A [`query`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) also takes a `keyCondition`, built with `KeyFilter`. Unlike a filter, a key condition is evaluated by DynamoDB to select which items to read. It always specifies the partition key and can add a condition on the sort key through a lambda argument:
 
 ```
 // All orders for a customer:
@@ -137,7 +137,7 @@ Within the sort-key lambda you can use the following operators and functions:
 ## Update expressions
 <a name="ddb-mapper-expressions-update"></a>
 
-Set an `update { }` on `updateItem` to modify an item in place without reading and rewriting it. An update expression contains one or more of four clauses, which may appear in any order:
+Set an `update { }` on [`updateItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) to modify an item in place without reading and rewriting it. An update expression contains one or more of four clauses, which may appear in any order:
 +  `add { }`: increment numbers or add elements to sets
 +  `delete { }`: remove elements from sets
 +  `remove { }`: delete attributes or elements
@@ -208,5 +208,5 @@ set {
 
 ## Related topics
 <a name="ddb-mapper-expressions-related"></a>
-+  [Operations overview](ddb-mapper-operations.md): the `query`, `scan`, and `updateItem` operations these expressions feed.
++  [Operations overview](ddb-mapper-operations.md): the [`query`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html), [`scan`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html), and [`updateItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) operations these expressions feed.
 +  [Use secondary indexes with DynamoDB Mapper](ddb-mapper-secondary-indexes.md): key conditions and filters on indexes.

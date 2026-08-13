@@ -17,7 +17,7 @@ SELECT name, setting, boot_val, reset_val, unit
  ORDER BY name;
 ```
 
-To learn more about the values returned from this query, see [https://www.postgresql.org/docs/current/view-pg-settings.html](https://www.postgresql.org/docs/current/view-pg-settings.html) in the PostgreSQL documentation.
+To learn more about the values returned from this query, see [`pg_settings`](https://www.postgresql.org/docs/current/view-pg-settings.html) in the PostgreSQL documentation.
 
 Be especially careful when changing the settings for `max_connections` and `shared_buffers` on your RDS for PostgreSQL DB instance. For example, suppose that you modify settings for `max_connections` or `shared_buffers` and you use values that are too high for your actual workload. In this case, your RDS for PostgreSQL DB instance won't start. If this happens, you see an error such as the following in the `postgres.log`.
 

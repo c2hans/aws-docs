@@ -22,7 +22,7 @@ You receive an `AccessDenied` error from the Amazon SQS endpoint:
 An error occurred (AccessDenied) when calling the CreateQueue operation: Access to the resource <queueUrl> is denied.
 ```
 
-This is because the tag value on the IAM user does not match the tag passed in the [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue.html) API call. Remember that we applied a tag to the IAM user with the key set to `environment` and the value set to `beta`.
+This is because the tag value on the IAM user does not match the tag passed in the [`CreateQueue`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue.html) API call. Remember that we applied a tag to the IAM user with the key set to `environment` and the value set to `beta`.
 
 ## Create a queue with the tag key set to environment and the tag value set to beta
 <a name="sqs-abac-testing-access-control-create-env"></a>

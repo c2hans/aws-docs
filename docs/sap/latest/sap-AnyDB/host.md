@@ -236,8 +236,8 @@ The following table is an example recommendation of NFS options for different IB
 
 <table>
 <tbody>
-  <tr><td rowspan="2"> **File systems** </td><td colspan="4"> **NFS mount options** </td></tr>
-  <tr><td> ** **Common** ** </td><td> ** **NFS version** ** </td><td> ** **NFS transfer size** ** </td><td> ** **nconnect** ** </td></tr>
+  <tr><td rowspan="2"> <b>File systems</b> </td><td colspan="4"> <b>NFS mount options</b> </td></tr>
+  <tr><td> <b> <b>Common</b> </b> </td><td> <b> <b>NFS version</b> </b> </td><td> <b> <b>NFS transfer size</b> </b> </td><td> <b> <b>nconnect</b> </b> </td></tr>
   <tr><td>Db2 data</td><td>rw,bg,hard,timeo=600,noatime,</td><td>vers=4,minorversion=1,lock,</td><td>rsize=262144,wsize=262144,</td><td>nconnect=8</td></tr>
   <tr><td>Db2 log</td><td>rw,bg,hard,timeo=600,noatime,</td><td>vers=4,minorversion=1,lock,</td><td>rsize=262144,wsize=262144,</td><td>nconnect=2</td></tr>
   <tr><td>Backup</td><td>rw,bg,hard,timeo=600,noatime,</td><td>vers=4,minorversion=1,lock,</td><td>rsize=262144,wsize=262144,</td><td>nconnect=2</td></tr>
@@ -266,8 +266,8 @@ The following table is an example recommendation of NFS options for different SA
 
 <table>
 <tbody>
-  <tr><td rowspan="2"> **File systems** </td><td colspan="4"> **NFS mount options** </td></tr>
-  <tr><td> **Common** </td><td> **NFS version** </td><td> **NFS transfer size** </td><td> **nconnect** </td></tr>
+  <tr><td rowspan="2"> <b>File systems</b> </td><td colspan="4"> <b>NFS mount options</b> </td></tr>
+  <tr><td> <b>Common</b> </td><td> <b>NFS version</b> </td><td> <b>NFS transfer size</b> </td><td> <b>nconnect</b> </td></tr>
   <tr><td>SAP MaxDB data</td><td>rw,bg,hard,timeo=600,noatime,</td><td>vers=4,minorversion=1,lock,</td><td>rsize=262144,wsize=262144,</td><td>nconnect=8</td></tr>
   <tr><td>SAP MaxDB log</td><td>rw,bg,hard,timeo=600,noatime,</td><td>vers=4,minorversion=1,lock,</td><td>rsize=262144,wsize=262144,</td><td>nconnect=2</td></tr>
   <tr><td>Backup</td><td>rw,bg,hard,timeo=600,noatime,</td><td>vers=4,minorversion=1,lock,</td><td>rsize=262144,wsize=262144,</td><td>nconnect=2</td></tr>
@@ -290,8 +290,8 @@ The following table is an example recommendation of NFS options for different SA
 
 <table>
 <tbody>
-  <tr><td rowspan="2"> **File systems** </td><td colspan="4"> **NFS mount options** </td></tr>
-  <tr><td> **Common** </td><td> **NFS version** </td><td> **NFS transfer size** </td><td> **nconnect** </td></tr>
+  <tr><td rowspan="2"> <b>File systems</b> </td><td colspan="4"> <b>NFS mount options</b> </td></tr>
+  <tr><td> <b>Common</b> </td><td> <b>NFS version</b> </td><td> <b>NFS transfer size</b> </td><td> <b>nconnect</b> </td></tr>
   <tr><td>SAP ASE data</td><td>rw,bg,hard,timeo=600,noatime,</td><td>vers=4,minorversion=1,lock,</td><td>rsize=262144,wsize=262144,</td><td>nconnect=8</td></tr>
   <tr><td>SAP ASE log</td><td>rw,bg,hard,timeo=600,noatime,</td><td>vers=4,minorversion=1,lock,</td><td>rsize=262144,wsize=262144,</td><td>nconnect=2</td></tr>
   <tr><td>Backup</td><td>rw,bg,hard,timeo=600,noatime,</td><td>vers=4,minorversion=1,lock,</td><td>rsize=262144,wsize=262144,</td><td>nconnect=2</td></tr>
@@ -317,8 +317,8 @@ The following table is an example recommendation of NFS options for different SA
 
 <table>
 <tbody>
-  <tr><td rowspan="2"> **File systems** </td><td colspan="4"> **NFS mount options** </td></tr>
-  <tr><td> **Common** </td><td> **NFS version** </td><td> **NFS transfer size** </td><td> **nconnect** </td></tr>
+  <tr><td rowspan="2"> <b>File systems</b> </td><td colspan="4"> <b>NFS mount options</b> </td></tr>
+  <tr><td> <b>Common</b> </td><td> <b>NFS version</b> </td><td> <b>NFS transfer size</b> </td><td> <b>nconnect</b> </td></tr>
   <tr><td>Oracle data</td><td>rw,bg,hard,timeo=600,noatime,</td><td>vers=4,minorversion=1,lock,</td><td>rsize=262144,wsize=262144,</td><td>nconnect=8</td></tr>
   <tr><td>Oracle log</td><td>rw,bg,hard,timeo=600,noatime,</td><td>vers=4,minorversion=1,lock,</td><td>rsize=262144,wsize=262144,</td><td>nconnect=2</td></tr>
   <tr><td>Oracle backup</td><td>rw,bg,hard,timeo=600,noatime,</td><td>vers=4,minorversion=1,lock,</td><td>rsize=262144,wsize=262144,</td><td>nconnect=2</td></tr>

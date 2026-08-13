@@ -11,7 +11,7 @@ If the AWS Systems Manager public runbooks don't support all the actions you wan
 
 Using Document Builder, you can add automation actions to your custom runbook and provide the required parameters without having to use JSON or YAML syntax. After you add steps and create the runbook, the system converts the actions you've added into the YAML format that Systems Manager can use to run automation.
 
-Runbooks support the use of Markdown, a markup language, which allows you to add wiki-style descriptions to runbooks and individual steps within the runbook. For more information about using Markdown, see [Using Markdown in AWS](https://docs.aws.amazon.com/general/latest/gr/aws-markdown.html).
+Runbooks support the use of Markdown, a markup language, which lets you add wiki-style descriptions to runbooks and individual steps within the runbook. For more information about using Markdown, see [Using Markdown in AWS](https://docs.aws.amazon.com/general/latest/gr/aws-markdown.html).
 
 ## Create a runbook using Document Builder
 <a name="create-runbook"></a>

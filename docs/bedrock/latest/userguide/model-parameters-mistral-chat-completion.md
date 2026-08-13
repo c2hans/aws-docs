@@ -138,7 +138,7 @@ The following are optional parameters.
   ]
   ```
 +  **tool\_choice** – Specifies how functions are called. If set to `none` the model won't call a function and will generate a message instead. If set to `auto` the model can choose to either generate a message or call a function. If set to `any` the model is forced to call a function.
-+ **max\_tokens** – Specify the maximum number of tokens to use in the generated response. The model truncates the response once the generated text exceeds `max_tokens`.
++ **max\_tokens** – Specify the maximum number of tokens to use in the generated response. The model truncates the response after the generated text exceeds `max_tokens`.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-mistral-chat-completion.html)
 + **temperature** – Controls the randomness of predictions made by the model. For more information, see [Influence response generation with inference parameters](inference-parameters.md).
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-mistral-chat-completion.html)

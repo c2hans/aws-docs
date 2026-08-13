@@ -45,7 +45,7 @@ In this type of subjective mapping, we only change the target value if it is inc
   <tr><th>OpsItem Priority </th><th colspan="3">ServiceNow Incident</th></tr>
 </thead>
 <tbody>
-  <tr><td></td><td>Impact</td><td>Urgency</td><td>Priority (Calculated)</td></tr>
+  <tr><td></td><td><b>Impact</b></td><td><b>Urgency</b></td><td><b>Priority (Calculated)</b></td></tr>
   <tr><td>1</td><td>High</td><td>High</td><td> Critical (1)</td></tr>
   <tr><td>2</td><td>Medium</td><td>High</td><td>High (2)</td></tr>
   <tr><td>3</td><td>Medium</td><td>Medium</td><td>Moderate (3)</td></tr>

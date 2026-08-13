@@ -52,7 +52,7 @@ You can update the searchability of a metadata field at any time.
 ## Using the API
 <a name="enable-attribute-search-api"></a>
 
-To enable these attributes for search using the API, use the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeConfiguration.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeConfiguration.html) object of the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndex.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndex.html) API operation.
+To enable these attributes for search using the API, use the [DocumentAttributeConfiguration](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeConfiguration.html) object of the [UpdateIndex](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndex.html) API operation.
 
 The following sections provide AWS CLI examples of how to enable document attributes for search.
 
@@ -88,9 +88,9 @@ aws qbusiness update-index \
 ### Making custom document attributes searchable
 <a name="enable-custom-attribute-search"></a>
 
-You can also enable custom document attributes for search using the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeConfiguration.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeConfiguration.html) object of the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndex.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndex.html) API operation.
+You can also enable custom document attributes for search using the [DocumentAttributeConfiguration](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeConfiguration.html) object of the [UpdateIndex](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndex.html) API operation.
 
-The following is an example of how to use the AWS CLI to enable for search the custom `STRING` and `STRING_LIST` type document attributes using the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndex.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndex.html) API operation.
+The following is an example of how to use the AWS CLI to enable for search the custom `STRING` and `STRING_LIST` type document attributes using the [UpdateIndex](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateIndex.html) API operation.
 
 ```
 aws qbusiness update-index \
@@ -114,7 +114,7 @@ aws qbusiness update-index \
 ### Checking document attribute search activation
 <a name="check-attribute-search"></a>
 
-To check if a `STRING` or `STRING_LIST` type document attribute has been enabled for search successfully, use the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetIndex.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetIndex.html) API operation.
+To check if a `STRING` or `STRING_LIST` type document attribute has been enabled for search successfully, use the [GetIndex](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetIndex.html) API operation.
 
 ```
 aws qbusiness get-index \

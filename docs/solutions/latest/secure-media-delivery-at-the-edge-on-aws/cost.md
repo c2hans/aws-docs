@@ -32,14 +32,14 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 
 <table>
 <thead>
-  <tr><th>AWS service </th><th> Dimension/month </th><th> Cost [USD] </th></tr>
+  <tr><th>AWS service </th><th> <b>Dimension/month</b> </th><th> <b>Cost [USD]</b> </th></tr>
 </thead>
 <tbody>
   <tr><td> CloudFront Functions </td><td> 240 million invocations </td><td> $24.00 </td></tr>
-  <tr><td> Secrets Manager </td><td> 3 secrets API call for 1 in 10 token generation operations Storage per secret per month </td><td> $1.25 $0.40 \* number of keys </td></tr>
-  <tr><td> Step Functions </td><td> Number of transitions during key rotation workflow One rotation per day \~ 30/mo </td><td> < $0.01 </td></tr>
-  <tr><td> Lambda </td><td> Lambda related costs during key rotation process One rotation per day \~ 30/mo </td><td> < $0.01 </td></tr>
-  <tr><td colspan="2"> Total monthly cost: </td><td> \~$25.65 / month</td></tr>
+  <tr><td> Secrets Manager </td><td> 3 secrets API call for 1 in 10 token generation operations Storage per secret per month </td><td> $1.25 $0.40 * number of keys </td></tr>
+  <tr><td> Step Functions </td><td> Number of transitions during key rotation workflow One rotation per day ~ 30/mo </td><td> &lt; $0.01 </td></tr>
+  <tr><td> Lambda </td><td> Lambda related costs during key rotation process One rotation per day ~ 30/mo </td><td> &lt; $0.01 </td></tr>
+  <tr><td colspan="2"> <b>Total monthly cost:</b> </td><td> <b>~$25.65 / month</b></td></tr>
 </tbody>
 </table>
 
@@ -55,12 +55,12 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 
 <table>
 <thead>
-  <tr><th>AWS service </th><th> Dimension/month </th><th> Cost [USD] </th></tr>
+  <tr><th>AWS service </th><th> <b>Dimension/month</b> </th><th> <b>Cost [USD]</b> </th></tr>
 </thead>
 <tbody>
-  <tr><td> AWS WAF </td><td> Web ACL \+ Rule Group \+ Rules (\*it is assumed no WebACL was not used before for video delivery and AWS WAF is associated with CloudFront solely for session revocation purpose) </td><td> $6.14 </td></tr>
-  <tr><td> AWS WAF </td><td> Requests – 240 million (\*it is assumed no web ACL was not used before for video delivery and AWS WAF is associated with CloudFront solely for session revocation purpose) </td><td> $144.00 </td></tr>
-  <tr><td colspan="2"> Total monthly cost: </td><td> \~$150.14 / month </td></tr>
+  <tr><td> AWS WAF </td><td> Web ACL + Rule Group + Rules (*it is assumed no WebACL was not used before for video delivery and AWS WAF is associated with CloudFront solely for session revocation purpose) </td><td> $6.14 </td></tr>
+  <tr><td> AWS WAF </td><td> Requests – 240 million (*it is assumed no web ACL was not used before for video delivery and AWS WAF is associated with CloudFront solely for session revocation purpose) </td><td> $144.00 </td></tr>
+  <tr><td colspan="2"> <b>Total monthly cost:</b> </td><td> <b>~$150.14 / month</b> </td></tr>
 </tbody>
 </table>
 
@@ -73,15 +73,15 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 
 <table>
 <thead>
-  <tr><th>AWS service </th><th> Dimension/month </th><th> Cost [USD] </th></tr>
+  <tr><th>AWS service </th><th> <b>Dimension/month</b> </th><th> <b>Cost [USD]</b> </th></tr>
 </thead>
 <tbody>
   <tr><td> API Gateway </td><td> 100,000 API calls </td><td> $0.10 </td></tr>
   <tr><td> DynamoDB </td><td> 50,000 Read Request Units Assume 1 request = .5 RRU </td><td> $0.01 </td></tr>
-  <tr><td> CloudFront (fronting API Gateway) (Data Transfer \+ Request charges) </td><td> 100,000 HTTP requests with \~1kB response </td><td> $0.11 </td></tr>
+  <tr><td> CloudFront (fronting API Gateway) (Data Transfer + Request charges) </td><td> 100,000 HTTP requests with ~1kB response </td><td> $0.11 </td></tr>
   <tr><td> Lambda@Edge </td><td> 100,000 function invocations </td><td> $0.60 </td></tr>
   <tr><td> Lambda </td><td> 100,000 function invocations </td><td> $0.20 </td></tr>
-  <tr><td colspan="2"> Total monthly cost: </td><td> \~$0.48 / month </td></tr>
+  <tr><td colspan="2"> <b>Total monthly cost:</b> </td><td> <b>~$0.48 / month</b> </td></tr>
 </tbody>
 </table>
 
@@ -97,13 +97,13 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 
 <table>
 <thead>
-  <tr><th>AWS service </th><th> Dimension/month </th><th> Cost [USD] </th></tr>
+  <tr><th>AWS service </th><th> <b>Dimension/month</b> </th><th> <b>Cost [USD]</b> </th></tr>
 </thead>
 <tbody>
   <tr><td> Step Functions </td><td> Number of transitions during session scanning and updating workflow </td><td> $0.14 </td></tr>
-  <tr><td> Athena </td><td> CloudFront Access Logs Data Scanned\* - 1545GB \* (single 1hr playback session produces \~270KB log data) </td><td> $7.54 </td></tr>
+  <tr><td> Athena </td><td> CloudFront Access Logs Data Scanned* - 1545GB <i>* (single 1hr playback session produces ~270KB log data)</i> </td><td> $7.54 </td></tr>
   <tr><td> AWS WAF </td><td> Additional rules inserted into Rule Group from Session Revocation </td><td> $0.27 </td></tr>
-  <tr><td colspan="2"> Total monthly cost: </td><td> $7.95 / month </td></tr>
+  <tr><td colspan="2"> <b>Total monthly cost:</b> </td><td> <b>$7.95 / month</b> </td></tr>
 </tbody>
 </table>
 
@@ -114,12 +114,12 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 
 <table>
 <thead>
-  <tr><th>AWS service </th><th> Dimension/month </th><th> Cost [USD] </th></tr>
+  <tr><th>AWS service </th><th> <b>Dimension/month</b> </th><th> <b>Cost [USD]</b> </th></tr>
 </thead>
 <tbody>
   <tr><td> CloudWatch - Dashboard </td><td> Fixed cost for CloudWatch Dashboard </td><td> $5.00 </td></tr>
   <tr><td> CloudWatch Logs Insights – Data Scanned </td><td> Token verification results widget built on CloudWatch Logs insights – 72GB data scanned </td><td> $0.36 </td></tr>
-  <tr><td colspan="2"> Total monthly cost: </td><td> \~$5.36 / month </td></tr>
+  <tr><td colspan="2"> <b>Total monthly cost:</b> </td><td> <b>~$5.36 / month</b> </td></tr>
 </tbody>
 </table>
 

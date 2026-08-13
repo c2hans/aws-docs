@@ -64,7 +64,7 @@ AL2023 provides a pre-built binary blob that can be used directly on Amazon EC2 
 **Note**
 To ensure that you are using the latest version of keys and revocations, use the blob from the same release of AL2023 that you use to create the AMI.
 
-When registering an image, we recommend using the `BootMode` parameter of the [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RegisterImage.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RegisterImage.html) API set to `uefi`. This allows you to enable NitroTPM by setting the `TpmSupport` parameter to `v2.0`. Also, setting `BootMode` to `uefi` ensures that UEFI Secure Boot is enabled and can't be disabled by accident when switching to an instance type that doesn't support UEFI.
+When registering an image, we recommend using the `BootMode` parameter of the [`RegisterImage`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RegisterImage.html) API set to `uefi`. This allows you to enable NitroTPM by setting the `TpmSupport` parameter to `v2.0`. Also, setting `BootMode` to `uefi` ensures that UEFI Secure Boot is enabled and can't be disabled by accident when switching to an instance type that doesn't support UEFI.
 
 For more information about NitroTPM, see [NitroTPM for Amazon EC2 instances ](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nitrotpm.html) in the *Amazon EC2 User Guide*.
 

@@ -1197,8 +1197,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [UpdateIntegratedResources](https://docs.aws.amazon.com/securityagent/API_UpdateIntegratedResources.html)  **
   - **Description:** Grants permission to update integrated resources for an agent space
-  - **Resource types (\*required):** [AgentSpace\*](#list_securityagent-resource-AgentSpace)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityagent-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [AgentSpace\*](#list_securityagent-resource-AgentSpace) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityagent-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [Integration\*](#list_securityagent-resource-Integration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityagent-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [UpdatePentest](https://docs.aws.amazon.com/securityagent/API_UpdatePentest.html)  **

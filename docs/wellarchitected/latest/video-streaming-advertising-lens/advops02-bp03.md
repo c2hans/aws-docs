@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ## Implementation guidance
 <a name="implementation-guidance-5"></a>
 
- Review [https://aws.amazon.com/solutions/implementations/centralized-logging-with-opensearch/](https://aws.amazon.com/solutions/implementations/centralized-logging-with-opensearch/) to aggregate logs from all core components of the advertising workload.
+ Review [*centralized logging with opensearch*](https://aws.amazon.com/solutions/implementations/centralized-logging-with-opensearch/) to aggregate logs from all core components of the advertising workload.
 
  **Amazon OpenSearch Service**
 

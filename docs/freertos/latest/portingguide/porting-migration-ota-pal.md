@@ -129,7 +129,7 @@ The exact name of the PAL is technically open ended, but to be compatible with t
 ### Configuration changes
 <a name="porting-migration-ota-pal-config-changes"></a>
 
-The file `aws_ota_agent_config.h` was renamed to [https://github.com/aws/amazon-freertos/blob/main/vendors/pc/boards/windows/aws_demos/config_files/ota_config.h](https://github.com/aws/amazon-freertos/blob/main/vendors/pc/boards/windows/aws_demos/config_files/ota_config.h) which changes the include guards from `_AWS_OTA_AGENT_CONFIG_H_` to `OTA_CONFIG_H_`.
+The file `aws_ota_agent_config.h` was renamed to [`ota_config.h`](https://github.com/aws/amazon-freertos/blob/main/vendors/pc/boards/windows/aws_demos/config_files/ota_config.h) which changes the include guards from `_AWS_OTA_AGENT_CONFIG_H_` to `OTA_CONFIG_H_`.
 + The file `aws_ota_codesigner_certificate.h` has been deleted.
 + Included the new logging stack to print debug messages:
 
@@ -166,7 +166,7 @@ The file `aws_ota_agent_config.h` was renamed to [https://github.com/aws/amazon-
   #define otaconfigFILE_BLOCK_SIZE ( 1UL << otaconfigLOG2_FILE_BLOCK_SIZE )
   ```
 
-**New File:** [https://github.com/aws/amazon-freertos/blob/main/vendors/pc/boards/windows/aws_demos/config_files/ota_demo_config.h](https://github.com/aws/amazon-freertos/blob/main/vendors/pc/boards/windows/aws_demos/config_files/ota_demo_config.h) contains the configs that are required by the OTA demo such as the code signing certificate and application version.
+**New File:** [`ota_demo_config.h`](https://github.com/aws/amazon-freertos/blob/main/vendors/pc/boards/windows/aws_demos/config_files/ota_demo_config.h) contains the configs that are required by the OTA demo such as the code signing certificate and application version.
 + `signingcredentialSIGNING_CERTIFICATE_PEM` which was defined in `demos/include/aws_ota_codesigner_certificate.h` has been moved to `ota_demo_config.h` as `otapalconfigCODE_SIGNING_CERTIFICATE` and can can be accessed from the PAL files as:
 
   ```
@@ -217,5 +217,5 @@ Use this checklist to make sure you follow the steps required for migration:
   + Update the printing macros to use the logging stack.
   + Update the `signingcredentialSIGNING_CERTIFICATE_PEM` to be `otapalconfigCODE_SIGNING_CERTIFICATE`.
   + Update `otaPal_CheckFileSignature` and `otaPal_ReadAndAssumeCertificate` function comments.
-+ Update the [https://github.com/aws/amazon-freertos/pull/3208/commits/432e13fcb8dfbfeb6de25110a3d2ea14ccaf1b9a](https://github.com/aws/amazon-freertos/pull/3208/commits/432e13fcb8dfbfeb6de25110a3d2ea14ccaf1b9a) file.
++ Update the [`CMakeLists.txt`](https://github.com/aws/amazon-freertos/pull/3208/commits/432e13fcb8dfbfeb6de25110a3d2ea14ccaf1b9a) file.
 + Update the IDE projects.

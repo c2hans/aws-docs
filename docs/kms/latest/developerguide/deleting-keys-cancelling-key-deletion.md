@@ -27,7 +27,7 @@ The KMS key status changes from **Pending deletion** to **Disabled**. To use the
 ## Using the AWS KMS API
 <a name="cli-cancel-deletion"></a>
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/kms/cancel-key-deletion.html](https://docs.aws.amazon.com/cli/latest/reference/kms/cancel-key-deletion.html) command to cancel key deletion from the AWS CLI as shown in the following example.
+Use the [`aws kms cancel-key-deletion`](https://docs.aws.amazon.com/cli/latest/reference/kms/cancel-key-deletion.html) command to cancel key deletion from the AWS CLI as shown in the following example.
 
 ```
 $ aws kms cancel-key-deletion --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}

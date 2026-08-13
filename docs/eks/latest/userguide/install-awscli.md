@@ -14,7 +14,7 @@ The [AWS CLI](https://aws.amazon.com/cli/) is a command line tool for working wi
 ## To create an access key
 <a name="create-access-key"></a>
 
-1. Sign into the [AWS Management Console](https://console.aws.amazon.com/).
+1. Sign in to the [AWS Management Console](https://console.aws.amazon.com/).
 
 1. For single-user or multiple-user accounts:
    +  **Single-user account –**:: In the top right, choose your AWS user name to open the navigation menu. For example, choose ** `webadmin` **.

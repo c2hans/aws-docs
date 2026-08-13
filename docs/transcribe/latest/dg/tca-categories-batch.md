@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/tca-categories-batc
 
 Post-call analytics supports the creation of custom categories, enabling you to tailor your transcript analyses to best suit your specific business needs.
 
-You can create as many categories as you like to cover a range of different scenarios. For each category you create, you must create between 1 and 20 rules. Each rule is based on one of four criteria: interruptions, keywords, non-talk time, or sentiment. For more details on using these criteria with the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html) operation, refer to the [Rule criteria for post-call analytics categories](#tca-rules-batch) section.
+You can create as many categories as you like to cover a range of different scenarios. For each category you create, you must create between 1 and 20 rules. Each rule is based on one of four criteria: interruptions, keywords, non-talk time, or sentiment. For more details on using these criteria with the [`CreateCallAnalyticsCategory`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html) operation, refer to the [Rule criteria for post-call analytics categories](#tca-rules-batch) section.
 
 If the content in your media matches all the rules you've specified in a given category, Amazon Transcribe labels your output with that category. See [call categorization output](tca-output-batch.md#tca-output-categorization-batch) for an example of a category match in JSON output.
 
@@ -54,7 +54,7 @@ To create a new category for post-call analytics, you can use the **AWS Manageme
 ## AWS CLI
 <a name="tca-category-cli-batch"></a>
 
-This example uses the [create-call-analytics-category](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/create-call-analytics-category.html) command. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html), [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CategoryProperties.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CategoryProperties.html), and [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Rule.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Rule.html).
+This example uses the [create-call-analytics-category](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/create-call-analytics-category.html) command. For more information, see [`CreateCallAnalyticsCategory`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html), [`CategoryProperties`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CategoryProperties.html), and [`Rule`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Rule.html).
 
 The following example creates a category with the rules:
 + The customer was interrupted in the first 60,000 milliseconds. The duration of these interruptions lasted at least 10,000 milliseconds.
@@ -124,7 +124,7 @@ The file *my-first-analytics-category.json* contains the following request body.
 ## AWS SDK for Python (Boto3)
 <a name="tca-category-python-batch"></a>
 
-This example uses the AWS SDK for Python (Boto3) to create a category using the `CategoryName` and `Rules` arguments for the [create\_call\_analytics\_category](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_call_analytics_category) method. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html), [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CategoryProperties.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CategoryProperties.html), and [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Rule.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Rule.html).
+This example uses the AWS SDK for Python (Boto3) to create a category using the `CategoryName` and `Rules` arguments for the [create\_call\_analytics\_category](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_call_analytics_category) method. For more information, see [`CreateCallAnalyticsCategory`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html), [`CategoryProperties`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CategoryProperties.html), and [`Rule`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Rule.html).
 
 For additional examples using the AWS SDKs, including feature-specific, scenario, and cross-service examples, refer to the [Code examples for Amazon Transcribe using AWS SDKs](service_code_examples.md) chapter.
 
@@ -196,18 +196,18 @@ print(result)
 ## Rule criteria for post-call analytics categories
 <a name="tca-rules-batch"></a>
 
-This section outlines the types of custom `POST_CALL` rules that you can create using the [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html) API operation.
+This section outlines the types of custom `POST_CALL` rules that you can create using the [`CreateCallAnalyticsCategory`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html) API operation.
 
 ### Interruption match
 <a name="tca-rules-interruptions-batch"></a>
 
-Rules using interruptions ([https://docs.aws.amazon.com/transcribe/latest/APIReference/API_InterruptionFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_InterruptionFilter.html) data type) are designed to match:
+Rules using interruptions ([`InterruptionFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_InterruptionFilter.html) data type) are designed to match:
 + Instances where an agent interrupts a customer
 + Instances where a customer interrupts an agent
 + Any participant interrupting the other
 + A lack of interruptions
 
-Here's an example of the parameters available with [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_InterruptionFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_InterruptionFilter.html):
+Here's an example of the parameters available with [`InterruptionFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_InterruptionFilter.html):
 
 ```
 "InterruptionFilter": {
@@ -223,17 +223,17 @@ Here's an example of the parameters available with [https://docs.aws.amazon.com/
 },
 ```
 
-Refer to [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html) and [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_InterruptionFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_InterruptionFilter.html) for more information on these parameters and the valid values associated with each.
+Refer to [`CreateCallAnalyticsCategory`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html) and [`InterruptionFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_InterruptionFilter.html) for more information on these parameters and the valid values associated with each.
 
 ### Keyword match
 <a name="tca-rules-keywords-batch"></a>
 
-Rules using keywords ([https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html) data type) are designed to match:
+Rules using keywords ([`TranscriptFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html) data type) are designed to match:
 + Custom words or phrases spoken by the agent, the customer, or both
 + Custom words or phrases **not** spoken by the agent, the customer, or both
 + Custom words or phrases that occur in a specific time frame
 
-Here's an example of the parameters available with [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html):
+Here's an example of the parameters available with [`TranscriptFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html):
 
 ```
 "TranscriptFilter": {
@@ -250,16 +250,16 @@ Here's an example of the parameters available with [https://docs.aws.amazon.com/
 }
 ```
 
-Refer to [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html) and [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html) for more information on these parameters and the valid values associated with each.
+Refer to [`CreateCallAnalyticsCategory`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html) and [`TranscriptFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html) for more information on these parameters and the valid values associated with each.
 
 ### Non-talk time match
 <a name="tca-rules-nontalktime-batch"></a>
 
-Rules using non-talk time ([https://docs.aws.amazon.com/transcribe/latest/APIReference/API_NonTalkTimeFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_NonTalkTimeFilter.html) data type) are designed to match:
+Rules using non-talk time ([`NonTalkTimeFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_NonTalkTimeFilter.html) data type) are designed to match:
 + The presence of silence at specified periods throughout the call
 + The presence of speech at specified periods throughout the call
 
-Here's an example of the parameters available with [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_NonTalkTimeFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_NonTalkTimeFilter.html):
+Here's an example of the parameters available with [`NonTalkTimeFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_NonTalkTimeFilter.html):
 
 ```
 "NonTalkTimeFilter": {
@@ -274,18 +274,18 @@ Here's an example of the parameters available with [https://docs.aws.amazon.com/
 },
 ```
 
-Refer to [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html) and [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_NonTalkTimeFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_NonTalkTimeFilter.html) for more information on these parameters and the valid values associated with each.
+Refer to [`CreateCallAnalyticsCategory`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html) and [`NonTalkTimeFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_NonTalkTimeFilter.html) for more information on these parameters and the valid values associated with each.
 
 ### Sentiment match
 <a name="tca-rules-sentiment-batch"></a>
 
-Rules using sentiment ([https://docs.aws.amazon.com/transcribe/latest/APIReference/API_SentimentFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_SentimentFilter.html) data type) are designed to match:
+Rules using sentiment ([`SentimentFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_SentimentFilter.html) data type) are designed to match:
 + The presence or absence of a positive sentiment expressed by the customer, agent, or both at specified points in the call
 + The presence or absence of a negative sentiment expressed by the customer, agent, or both at specified points in the call
 + The presence or absence of a neutral sentiment expressed by the customer, agent, or both at specified points in the call
 + The presence or absence of a mixed sentiment expressed by the customer, agent, or both at specified points in the call
 
-Here's an example of the parameters available with [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_SentimentFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_SentimentFilter.html):
+Here's an example of the parameters available with [`SentimentFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_SentimentFilter.html):
 
 ```
 "SentimentFilter": {
@@ -301,4 +301,4 @@ Here's an example of the parameters available with [https://docs.aws.amazon.com/
 },
 ```
 
-Refer to [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html) and [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_SentimentFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_SentimentFilter.html) for more information on these parameters and the valid values associated with each.
+Refer to [`CreateCallAnalyticsCategory`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateCallAnalyticsCategory.html) and [`SentimentFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_SentimentFilter.html) for more information on these parameters and the valid values associated with each.

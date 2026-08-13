@@ -41,7 +41,7 @@ When importing a root CA certificate with MPA enabled, the `RequesterComment` pa
 <a name="mpa-protected-operations"></a>
 
 AWS Payment Cryptography supports MPA for the following operation:
-+ [https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_ImportKey.html](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_ImportKey.html) with `RootCertificatePublicKey` key material — Importing a root public key certificate is a critical operation because root certificates establish the trust anchor for all subsequent key imports and exports using asymmetric key exchange such as TR-34. Requiring multi-party approval for this operation helps ensure that no single individual can unilaterally establish or change the root of trust for your AWS Payment Cryptography keys.
++ [`ImportKey`](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_ImportKey.html) with `RootCertificatePublicKey` key material — Importing a root public key certificate is a critical operation because root certificates establish the trust anchor for all subsequent key imports and exports using asymmetric key exchange such as TR-34. Requiring multi-party approval for this operation helps ensure that no single individual can unilaterally establish or change the root of trust for your AWS Payment Cryptography keys.
 
 ## Prerequisites
 <a name="mpa-prerequisites"></a>
@@ -219,7 +219,7 @@ To learn more about AWS CloudTrail, see the [AWS CloudTrail User Guide](https://
 ## Checking request status and handling failures
 <a name="mpa-rejected-requests"></a>
 
-You can check the status of a pending MPA request by calling [https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_GetKey.html](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_GetKey.html). The response includes the `MpaStatus` field with the current approval session details. To use this command, replace the {{italicized placeholder text}} in the example command with your own information.
+You can check the status of a pending MPA request by calling [`GetKey`](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_GetKey.html). The response includes the `MpaStatus` field with the current approval session details. To use this command, replace the {{italicized placeholder text}} in the example command with your own information.
 
 ```
 aws payment-cryptography get-key \

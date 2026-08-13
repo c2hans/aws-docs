@@ -13,7 +13,7 @@ To diagnose and resolve high memory alarm, first follow all [best practices](bes
 
 **Important**
 `RabbitMQMemLimit` is set by Amazon MQ and is specifically tuned considering the memory available for each host instance type. For more information, see [Memory and disk alarms](rmq-broker-instance-types.md#rabbitmq-memory-disk-thresholds).
-Amazon MQ will not restart a broker experiencing a high memory alarm and will return an exception for [https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id-reboot.html](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id-reboot.html) API operations as long as the broker continues to raise the alarm.
+Amazon MQ will not restart a broker experiencing a high memory alarm and will return an exception for [`RebootBroker`](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id-reboot.html) API operations as long as the broker continues to raise the alarm.
 
 ## Step 1: Diagnose high memory alarm
 <a name="diagnosing-high-memory-alarm"></a>
@@ -65,7 +65,7 @@ It may take up to several hours for the RABBITMQ\_MEMORY\_ALARM status to clear 
 | Message publishing rate | Reduce the rate at which publishers send messages to the broker. | Turn on [publisher confirms](best-practices-message-reliability.md#configure-confirmation-acknowledgement). |
 | Client connection attempt rate | Reduce the frequency at which clients attempt to connect to the broker in order to publish or consume messages, or configure the broker. | Use longer-lived connections to reduce the number and frequency of connection attempts. |
 
- After your broker's memory alarm is resolved, you can upgrade your host instance type to an instance with additional resources. For information on how to update your broker's instance type, see [https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id.html#brokers-broker-id-model-updatebrokerinput](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id.html#brokers-broker-id-model-updatebrokerinput) in the *Amazon MQ REST API Reference*.
+ After your broker's memory alarm is resolved, you can upgrade your host instance type to an instance with additional resources. For information on how to update your broker's instance type, see [`UpdateBrokerInput`](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id.html#brokers-broker-id-model-updatebrokerinput) in the *Amazon MQ REST API Reference*.
 
 **Note**
 You can't downgrade a broker from an `mq.m5.x` instance type to an `mq.t3.micro` instance type. To downgrade, you must delete your broker and create a new one.

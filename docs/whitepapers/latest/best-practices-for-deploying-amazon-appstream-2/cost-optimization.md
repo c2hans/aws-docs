@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 +  Image builder instances
 +  User fees
 
- For current pricing information, refer to the AWS website for [https://aws.amazon.com/appstream2/pricing/](https://aws.amazon.com/appstream2/pricing/).
+ For current pricing information, refer to the AWS website for [*Amazon WorkSpaces Applications pricing*](https://aws.amazon.com/appstream2/pricing/).
 
 ## Designing cost efficient WorkSpaces Applications deployments
 <a name="designing-cost-efficient-appstream-2.0-deployments"></a>
@@ -65,9 +65,9 @@ To learn more about implementing Scaling Policies, review [Scaling your Amazon A
 
  User fees are charged per user, per month in each AWS Region where users stream applications from WorkSpaces Applications fleet instances. Instead of generating different user IDs, have consistent user IDs for WorkSpaces Applications users. User fees are not charged when connecting to image builders.
 
- Schools, universities, and certain public institutions may qualify for a reduced Microsoft RDS SAL user fee of $0.44 per user per month. For qualification requirements, refer to [https://aka.ms/licensingdocs](https://aka.ms/licensingdocs).
+ Schools, universities, and certain public institutions may qualify for a reduced Microsoft RDS SAL user fee of $0.44 per user per month. For qualification requirements, refer to [*Microsoft Licensing Terms and Documents*](https://aka.ms/licensingdocs).
 
- If you have Microsoft License Mobility, you may be eligible to bring your own Microsoft RDS Client Access Licenses (CALs) and use them with Amazon WorkSpaces Applications. If you are covered by your own license, you won’t incur monthly user fees. For more information about whether you can use your existing Microsoft RDS CAL licenses with Amazon WorkSpaces Applications, refer to the [https://aws.amazon.com/windows/resources/licensemobility/](https://aws.amazon.com/windows/resources/licensemobility/), or consult with your Microsoft licensing representative.
+ If you have Microsoft License Mobility, you may be eligible to bring your own Microsoft RDS Client Access Licenses (CALs) and use them with Amazon WorkSpaces Applications. If you are covered by your own license, you won’t incur monthly user fees. For more information about whether you can use your existing Microsoft RDS CAL licenses with Amazon WorkSpaces Applications, refer to the [*AWS License Mobility guidance*](https://aws.amazon.com/windows/resources/licensemobility/), or consult with your Microsoft licensing representative.
 
 ## Image Builder usage
 <a name="image-builder-usage"></a>

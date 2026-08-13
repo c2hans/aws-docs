@@ -35,4 +35,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-security-pers
 
  Always strive to maintain the maturity and coherence of your security controls, and plan accordingly. A strong [AWS Identity and Access Management (IAM)](https://aws.amazon.com/iam/) foundation is important, but if you spend months focused only on defining IAM Governance and refinding IAM policies to least privilege, and you don't have threat visibility in place during that time, you might fail to detect and incident. By enabling [Amazon GuardDuty](https://aws.amazon.com/guardduty/), you can get threat detection capabilities within minutes.
 
- A sample journey with specific guidance can be found in the [https://maturitymodel.security.aws.dev/en/model](https://maturitymodel.security.aws.dev/en/model).
+ A sample journey with specific guidance can be found in the [*AWS Security Maturity Model*](https://maturitymodel.security.aws.dev/en/model).

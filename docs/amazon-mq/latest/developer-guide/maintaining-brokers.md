@@ -77,7 +77,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/maintai
    Authorization: {{authorization-string}}
    ```
 
-   Use the `maintenanceWindowStartTime` parameter and the [https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id.html#brokers-broker-id-model-weeklystarttime](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id.html#brokers-broker-id-model-weeklystarttime) resource type in the request payload.
+   Use the `maintenanceWindowStartTime` parameter and the [`WeeklyStartTime`](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id.html#brokers-broker-id-model-weeklystarttime) resource type in the request payload.
 
    ```
    {

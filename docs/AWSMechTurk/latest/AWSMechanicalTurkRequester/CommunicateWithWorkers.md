@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkRequ
 # Communicate with workers
 <a name="CommunicateWithWorkers"></a>
 
-You can send messages to workers in Amazon Mechanical Turk (Mechanical Turk) if you've previously accepted or rejected an assignment from that worker using the [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_NotifyWorkersOperation.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_NotifyWorkersOperation.html) operation. It's common to use this operation when you want to notify workers that you've posted new tasks for them to work on, or alert them to changes in your task interface.
+You can send messages to workers in Amazon Mechanical Turk (Mechanical Turk) if you've previously accepted or rejected an assignment from that worker using the [`NotifyWorkers`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_NotifyWorkersOperation.html) operation. It's common to use this operation when you want to notify workers that you've posted new tasks for them to work on, or alert them to changes in your task interface.
 
 Similarly, workers can send messages to you via email if they have questions about your task, rejections, or other comments. You are welcome to engage with workers if you wish. We encourage you to maintain a positive relationship with the worker community.
 

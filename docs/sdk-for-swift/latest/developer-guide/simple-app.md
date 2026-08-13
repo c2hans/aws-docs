@@ -81,7 +81,7 @@ $ code .
 ## Configuring the package
 <a name="getting-started-configure-package"></a>
 
-After opening the project in your editor, open the `Package.swift` file. This is a Swift file that defines a SwiftPM [https://developer.apple.com/documentation/swift_packages/package](https://developer.apple.com/documentation/swift_packages/package) object that describes the project, its dependencies, and its build rules.
+After opening the project in your editor, open the `Package.swift` file. This is a Swift file that defines a SwiftPM [`Package`](https://developer.apple.com/documentation/swift_packages/package) object that describes the project, its dependencies, and its build rules.
 
 The first line of every `Package.swift` file must be a comment specifying the minimum version of the Swift toolchain needed to build the project. This isn't only informational. The version specified here can change the behavior of the tools for compatibility purposes. The AWS SDK for Swift requires at least version 5.9 of the Swift tools.
 

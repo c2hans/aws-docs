@@ -17,13 +17,24 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before **May 19, 2021** to all released Amazon Linux AMI platforms.<br />In particular, the release addresses [CVE-2021-30465](https://access.redhat.com/security/cve/CVE-2021-30465), which has a severity rating of **Important Impact**.<br />The **Go** release is a security release. For more information, see **Platform-specific updates** in this table. |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2021-05-26-linux.html) |
-| **Go** | Updated Go to release **1.16.4**. For details, see [go1.16](https://golang.org/doc/devel/release.html#go1.16) in *The Go Programming Language Release History*.<br />The Go 1.16.4 release is a security release. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before <b>May 19, 2021</b> to all released Amazon Linux AMI platforms.<br />In particular, the release addresses <a href="https://access.redhat.com/security/cve/CVE-2021-30465">CVE-2021-30465</a>, which has a severity rating of <b>Important Impact</b>.<br />The <b>Go</b> release is a security release. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Go</b></td><td>Updated Go to release <b>1.16.4</b>. For details, see <a href="https://golang.org/doc/devel/release.html#go1.16">go1.16</a> in <i>The Go Programming Language Release History</i>.<br />The Go 1.16.4 release is a security release.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2021-05-26-linux.platforms"></a>

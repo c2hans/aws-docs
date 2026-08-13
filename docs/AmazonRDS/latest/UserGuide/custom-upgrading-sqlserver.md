@@ -41,7 +41,7 @@ The following limitations apply when upgrading an RDS Custom for SQL Server DB i
 ## Upgrading major and minor engine version
 <a name="custom-upgrading-sqlserver.Upgrade"></a>
 
-Both major and minor engine version upgrades are irreversible and must always be done to a newer version. To identify available target versions, use the AWS Management Console and choose from the available versions when modifying your DB instance. Alternatively, use the [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-engine-versions.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-engine-versions.html) CLI command or [DescribeDBEngineVersions](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBEngineVersions.html) RDS API command.
+Both major and minor engine version upgrades are irreversible and must always be done to a newer version. To identify available target versions, use the AWS Management Console and choose from the available versions when modifying your DB instance. Alternatively, use the [`describe-db-engine-versions`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-engine-versions.html) CLI command or [DescribeDBEngineVersions](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBEngineVersions.html) RDS API command.
 
 For Linux, macOS, or Unix:
 
@@ -80,7 +80,7 @@ The output shows the available target engine versions:
 +------------------------+
 ```
 
-After identifying your target version, use the AWS Management Console and follow the instructions in [Modifying an RDS Custom for SQL Server DB instance](custom-managing.modify-sqlserver.md). Alternatively, use [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) CLI command or [ModifyDBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html) RDS API command.
+After identifying your target version, use the AWS Management Console and follow the instructions in [Modifying an RDS Custom for SQL Server DB instance](custom-managing.modify-sqlserver.md). Alternatively, use [`modify-db-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) CLI command or [ModifyDBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html) RDS API command.
 
 For Linux, macOS, or Unix:
 

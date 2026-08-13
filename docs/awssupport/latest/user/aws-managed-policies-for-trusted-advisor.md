@@ -17,7 +17,7 @@ Trusted Advisor has the following AWS managed policies.
 ## AWS managed policy: AWSTrustedAdvisorPriorityFullAccess
 <a name="security-iam-support-TA-priority-full-access-policy"></a>
 
-The [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSTrustedAdvisorPriorityFullAccess$jsonEditor](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSTrustedAdvisorPriorityFullAccess$jsonEditor) policy grants full access to Trusted Advisor Priority. This policy also allows the user to add Trusted Advisor as a trusted service with AWS Organizations and to specify the delegated administrator accounts for Trusted Advisor Priority.
+The [AWSTrustedAdvisorPriorityFullAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSTrustedAdvisorPriorityFullAccess$jsonEditor) policy grants full access to Trusted Advisor Priority. This policy also allows the user to add Trusted Advisor as a trusted service with AWS Organizations and to specify the delegated administrator accounts for Trusted Advisor Priority.
 
  **Permissions details**
 
@@ -41,95 +41,12 @@ In the fourth statement, the policy includes the following permissions for `iam`
 In the fifth statement, the policy includes the following permissions for `organizations`:
 + Allows you to register and deregister delegated administrators for Trusted Advisor Priority.
 
-------
-#### [ JSON ]
-
-****
-
-```
-{
-	"Version":"2012-10-17",
-	"Statement": [
-		{
-			"Sid": "AWSTrustedAdvisorPriorityFullAccess",
-			"Effect": "Allow",
-			"Action": [
-				"trustedadvisor:DescribeAccount*",
-				"trustedadvisor:DescribeOrganization",
-				"trustedadvisor:DescribeRisk*",
-				"trustedadvisor:DownloadRisk",
-				"trustedadvisor:UpdateRiskStatus",
-				"trustedadvisor:DescribeNotificationConfigurations",
-				"trustedadvisor:UpdateNotificationConfigurations",
-				"trustedadvisor:DeleteNotificationConfigurationForDelegatedAdmin",
-				"trustedadvisor:SetOrganizationAccess"
-			],
-			"Resource": "*"
-		},
-		{
-			"Sid": "AllowAccessForOrganization",
-			"Effect": "Allow",
-			"Action": [
-				"organizations:DescribeAccount",
-				"organizations:DescribeOrganization",
-				"organizations:ListAWSServiceAccessForOrganization"
-			],
-			"Resource": "*"
-		},
-		{
-			"Sid": "AllowListDelegatedAdministrators",
-			"Effect": "Allow",
-			"Action": [
-				"organizations:ListDelegatedAdministrators",
-				"organizations:EnableAWSServiceAccess",
-				"organizations:DisableAWSServiceAccess"
-			],
-			"Resource": "*",
-			"Condition": {
-				"StringEquals": {
-					"organizations:ServicePrincipal": [
-						"reporting.trustedadvisor.amazonaws.com"
-					]
-				}
-			}
-		},
-		{
-			"Sid": "AllowCreateServiceLinkedRole",
-			"Effect": "Allow",
-			"Action": "iam:CreateServiceLinkedRole",
-			"Resource": "arn:aws:iam::*:role/aws-service-role/reporting.trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisorReporting",
-			"Condition": {
-				"StringLike": {
-					"iam:AWSServiceName": "reporting.trustedadvisor.amazonaws.com"
-				}
-			}
-		},
-		{
-			"Sid": "AllowRegisterDelegatedAdministrators",
-			"Effect": "Allow",
-			"Action": [
-				"organizations:RegisterDelegatedAdministrator",
-				"organizations:DeregisterDelegatedAdministrator"
-			],
-			"Resource": "arn:aws:organizations::*:*",
-			"Condition": {
-				"StringEquals": {
-					"organizations:ServicePrincipal": [
-						"reporting.trustedadvisor.amazonaws.com"
-					]
-				}
-			}
-		}
-	]
-}
-```
-
-------
+To view the full JSON policy document, see [AWSTrustedAdvisorPriorityFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTrustedAdvisorPriorityFullAccess.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: AWSTrustedAdvisorPriorityReadOnlyAccess
 <a name="security-iam-support-TA-priority-read-only-policy"></a>
 
-The [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSTrustedAdvisorPriorityReadOnlyAccess$jsonEditor](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSTrustedAdvisorPriorityReadOnlyAccess$jsonEditor) policy grants read-only permissions to Trusted Advisor Priority, including permission to view the delegated administrator accounts.
+The [AWSTrustedAdvisorPriorityReadOnlyAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSTrustedAdvisorPriorityReadOnlyAccess$jsonEditor) policy grants read-only permissions to Trusted Advisor Priority, including permission to view the delegated administrator accounts.
 
  **Permissions details**
 
@@ -143,61 +60,12 @@ In the second and third statement, the policy includes the following permissions
 + Lists the AWS services that you enabled to use Organizations.
 + Lists the delegated administrators for Trusted Advisor Priority
 
-------
-#### [ JSON ]
-
-****
-
-```
-{
-	"Version":"2012-10-17",
-	"Statement": [
-		{
-			"Sid": "AWSTrustedAdvisorPriorityReadOnlyAccess",
-			"Effect": "Allow",
-			"Action": [
-				"trustedadvisor:DescribeAccount*",
-				"trustedadvisor:DescribeOrganization",
-				"trustedadvisor:DescribeRisk*",
-				"trustedadvisor:DownloadRisk",
-				"trustedadvisor:DescribeNotificationConfigurations"
-			],
-			"Resource": "*"
-		},
-		{
-			"Sid": "AllowAccessForOrganization",
-			"Effect": "Allow",
-			"Action": [
-				"organizations:DescribeOrganization",
-				"organizations:ListAWSServiceAccessForOrganization"
-			],
-			"Resource": "*"
-		},
-		{
-			"Sid": "AllowListDelegatedAdministrators",
-			"Effect": "Allow",
-			"Action": [
-				"organizations:ListDelegatedAdministrators"
-			],
-			"Resource": "*",
-			"Condition": {
-				"StringEquals": {
-					"organizations:ServicePrincipal": [
-						"reporting.trustedadvisor.amazonaws.com"
-					]
-				}
-			}
-		}
-	]
-}
-```
-
-------
+To view the full JSON policy document, see [AWSTrustedAdvisorPriorityReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTrustedAdvisorPriorityReadOnlyAccess.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: AWSTrustedAdvisorServiceRolePolicy
 <a name="security-iam-awsmanpol-AWSTrustedAdvisorServiceRolePolicy"></a>
 
-This policy is attached to the `AWSServiceRoleForTrustedAdvisor` service-linked role. It allows the service-linked role to perform actions for you. You can't attach the [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSTrustedAdvisorServiceRolePolicy$jsonEditor](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSTrustedAdvisorServiceRolePolicy$jsonEditor) to your AWS Identity and Access Management (IAM) entities. For more information, see [Using service-linked roles for Trusted Advisor](using-service-linked-roles-ta.md).
+This policy is attached to the `AWSServiceRoleForTrustedAdvisor` service-linked role. It allows the service-linked role to perform actions for you. You can't attach the [AWSTrustedAdvisorServiceRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSTrustedAdvisorServiceRolePolicy$jsonEditor) to your AWS Identity and Access Management (IAM) entities. For more information, see [Using service-linked roles for Trusted Advisor](using-service-linked-roles-ta.md).
 
 This policy grants administrative permissions that allow the service-linked role to access AWS services. These permissions allow the checks for Trusted Advisor to evaluate your account.
 
@@ -230,143 +98,12 @@ This policy includes the following permissions.
 + `ecs` – Gets Amazon ECS resources
 + `outposts` – Gets AWS Outposts resources
 
-------
-#### [ JSON ]
-
-****
-
-```
-{
-    "Version":"2012-10-17",
-    "Statement": [
-        {
-            "Sid": "TrustedAdvisorServiceRolePermissions",
-            "Effect": "Allow",
-            "Action": [
-                "access-analyzer:ListAnalyzers",
-                "autoscaling:DescribeAccountLimits",
-                "autoscaling:DescribeAutoScalingGroups",
-                "autoscaling:DescribeLaunchConfigurations",
-                "ce:GetReservationPurchaseRecommendation",
-                "ce:GetSavingsPlansPurchaseRecommendation",
-                "cloudformation:DescribeAccountLimits",
-                "cloudformation:DescribeStacks",
-                "cloudformation:ListStacks",
-                "cloudfront:ListDistributions",
-                "cloudtrail:DescribeTrails",
-                "cloudtrail:GetTrailStatus",
-                "cloudtrail:GetTrail",
-                "cloudtrail:ListTrails",
-                "cloudtrail:GetEventSelectors",
-                "cloudwatch:GetMetricStatistics",
-                "cloudwatch:ListMetrics",
-                "dax:DescribeClusters",
-                "dynamodb:DescribeLimits",
-                "dynamodb:DescribeTable",
-                "dynamodb:ListTables",
-                "ec2:DescribeAddresses",
-                "ec2:DescribeReservedInstances",
-                "ec2:DescribeInstances",
-                "ec2:DescribeVpcs",
-                "ec2:DescribeInternetGateways",
-                "ec2:DescribeImages",
-                "ec2:DescribeNatGateways",
-                "ec2:DescribeVolumes",
-                "ec2:DescribeSecurityGroups",
-                "ec2:DescribeSubnets",
-                "ec2:DescribeRegions",
-                "ec2:DescribeReservedInstancesOfferings",
-                "ec2:DescribeRouteTables",
-                "ec2:DescribeSnapshots",
-                "ec2:DescribeVpcEndpoints",
-                "ec2:DescribeVpnConnections",
-                "ec2:DescribeVpnGateways",
-                "ec2:DescribeLaunchTemplateVersions",
-                "ec2:GetManagedPrefixListEntries",
-                "ecs:DescribeTaskDefinition",
-                "ecs:ListTaskDefinitions",
-                "elasticloadbalancing:DescribeAccountLimits",
-                "elasticloadbalancing:DescribeInstanceHealth",
-                "elasticloadbalancing:DescribeLoadBalancerAttributes",
-                "elasticloadbalancing:DescribeLoadBalancerPolicies",
-                "elasticloadbalancing:DescribeLoadBalancerPolicyTypes",
-                "elasticloadbalancing:DescribeLoadBalancers",
-                "elasticloadbalancing:DescribeListeners",
-                "elasticloadbalancing:DescribeRules",
-                "elasticloadbalancing:DescribeTargetGroups",
-                "elasticloadbalancing:DescribeTargetHealth",
-                "iam:GenerateCredentialReport",
-                "iam:GetAccountPasswordPolicy",
-                "iam:GetAccountSummary",
-                "iam:GetCredentialReport",
-                "iam:GetServerCertificate",
-                "iam:ListServerCertificates",
-                "iam:ListSAMLProviders",
-                "kinesis:DescribeLimits",
-                "kafka:DescribeClusterV2",
-                "kafka:ListClustersV2",
-                "kafka:ListNodes",
-                "network-firewall:ListFirewalls",
-                "network-firewall:DescribeFirewall",
-                "outposts:GetOutpost",
-                "outposts:ListAssets",
-                "outposts:ListOutposts",
-                "rds:DescribeAccountAttributes",
-                "rds:DescribeDBClusters",
-                "rds:DescribeDBEngineVersions",
-                "rds:DescribeDBInstances",
-                "rds:DescribeDBParameterGroups",
-                "rds:DescribeDBParameters",
-                "rds:DescribeDBSecurityGroups",
-                "rds:DescribeDBSnapshots",
-                "rds:DescribeDBSubnetGroups",
-                "rds:DescribeEngineDefaultParameters",
-                "rds:DescribeEvents",
-                "rds:DescribeOptionGroupOptions",
-                "rds:DescribeOptionGroups",
-                "rds:DescribeOrderableDBInstanceOptions",
-                "rds:DescribeReservedDBInstances",
-                "rds:DescribeReservedDBInstancesOfferings",
-                "rds:ListTagsForResource",
-                "redshift:DescribeClusters",
-                "redshift:DescribeReservedNodeOfferings",
-                "redshift:DescribeReservedNodes",
-                "route53:GetAccountLimit",
-                "route53:GetHealthCheck",
-                "route53:GetHostedZone",
-                "route53:ListHealthChecks",
-                "route53:ListHostedZones",
-                "route53:ListHostedZonesByName",
-                "route53:ListResourceRecordSets",
-                "route53resolver:ListResolverEndpoints",
-                "route53resolver:ListResolverEndpointIpAddresses",
-                "s3:GetAccountPublicAccessBlock",
-                "s3:GetBucketAcl",
-                "s3:GetBucketPolicy",
-                "s3:GetBucketPolicyStatus",
-                "s3:GetBucketLocation",
-                "s3:GetBucketLogging",
-                "s3:GetBucketVersioning",
-                "s3:GetBucketPublicAccessBlock",
-                "s3:GetLifecycleConfiguration",
-                "s3:ListBucket",
-                "s3:ListAllMyBuckets",
-                "ses:GetSendQuota",
-                "sqs:GetQueueAttributes",
-                "sqs:ListQueues"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
-```
-
-------
+To view the full JSON policy document, see [AWSTrustedAdvisorServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTrustedAdvisorServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: AWSTrustedAdvisorReportingServiceRolePolicy
 <a name="security-iam-awsmanpol-AWSTrustedAdvisorReportingServiceRolePolicy"></a>
 
-This policy is attached to the `AWSServiceRoleForTrustedAdvisorReporting` service-linked role that allows Trusted Advisor to perform actions for the organizational view feature. You can't attach the [https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSTrustedAdvisorReportingServiceRolePolicy$jsonEditor](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSTrustedAdvisorReportingServiceRolePolicy$jsonEditor) to your IAM entities. For more information, see [Using service-linked roles for Trusted Advisor](using-service-linked-roles-ta.md).
+This policy is attached to the `AWSServiceRoleForTrustedAdvisorReporting` service-linked role that allows Trusted Advisor to perform actions for the organizational view feature. You can't attach the [AWSTrustedAdvisorReportingServiceRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSTrustedAdvisorReportingServiceRolePolicy$jsonEditor) to your IAM entities. For more information, see [Using service-linked roles for Trusted Advisor](using-service-linked-roles-ta.md).
 
 This policy grants administrative permissions that allow the service-linked role to perform AWS Organizations actions.
 
@@ -376,36 +113,7 @@ This policy includes the following permissions.
 
 + `organizations` – Describes your organization and lists the service access, accounts, parents, children, and organizational units
 
-------
-#### [ JSON ]
-
-****
-
-```
-{
-    "Version":"2012-10-17",
-    "Statement": [
-        {
-            "Action": [
-                "organizations:DescribeOrganization",
-                "organizations:ListAWSServiceAccessForOrganization",
-                "organizations:ListAccounts",
-                "organizations:ListAccountsForParent",
-                "organizations:ListDelegatedAdministrators",
-                "organizations:ListOrganizationalUnitsForParent",
-                "organizations:ListChildren",
-                "organizations:ListParents",
-                "organizations:DescribeOrganizationalUnit",
-                "organizations:DescribeAccount"
-            ],
-            "Effect": "Allow",
-            "Resource": "*"
-        }
-    ]
-}
-```
-
-------
+To view the full JSON policy document, see [AWSTrustedAdvisorReportingServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSTrustedAdvisorReportingServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
 
 ## Trusted Advisor updates to AWS managed policies
 <a name="security-iam-awsmanpol-updates-trusted-advisor"></a>

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 # Patching applications released by Microsoft on Windows Server
 <a name="patch-manager-patching-windows-applications"></a>
 
-Use the information in this topic to help you prepare to patch applications on Windows Server using Patch Manager, a tool in AWS Systems Manager.
+Use the information in this topic to help you prepare to patch applications on Windows Server using Patch Manager.
 
 **Microsoft application patching**
 Patching support for applications on Windows Server managed nodes is limited to applications released by Microsoft.
@@ -24,19 +24,19 @@ You can also create a custom patch baseline to update applications released by M
 You can patch applications released by Microsoft on virtual machines (VMs) and other non-EC2 managed nodes. Patch Manager uses pay-as-you-go pricing when used on hybrid managed nodes. For more information about pricing, see [AWS Systems Manager Pricing](https://aws.amazon.com/systems-manager/pricing/).
 
 **Windows update option for "other Microsoft products"**
-In order for Patch Manager to be able to patch applications released by Microsoft on your Windows Server managed nodes, the Windows Update option **Give me updates for other Microsoft products when I update Windows** must be activated on the managed node.
+For Patch Manager to be able to patch applications released by Microsoft on your Windows Server managed nodes, the Windows Update option **Give me updates for other Microsoft products when I update Windows** must be activated on the managed node.
 
 For information about allowing this option on a single managed node, see [Update Office with Microsoft Update](https://support.microsoft.com/en-us/office/update-office-with-microsoft-update-f59d3f9d-bd5d-4d3b-a08e-1dd659cf5282) on the Microsoft Support website.
 
 For a fleet of managed nodes running Windows Server 2016 and later, you can use a Group Policy Object (GPO) to turn on the setting. In the Group Policy Management Editor, go to **Computer Configuration**, **Administrative Templates**, **Windows Components**, **Windows Updates**, and choose **Install updates for other Microsoft products**. We also recommend configuring the GPO with additional parameters that prevent unplanned automatic updates and reboots outside of Patch Manager. For more information, see [Configuring Automatic Updates in a Non-Active Directory Environment](https://docs.microsoft.com/de-de/security-updates/windowsupdateservices/18127499) on the Microsoft technical documentation website.
 
-For a fleet of managed nodes running Windows Server 2012 or 2012 R2 , you can turn on the option by using a script, as described in [Enabling and Disabling Microsoft Update in Windows 7 via Script](https://docs.microsoft.com/en-us/archive/blogs/technet/danbuche/enabling-and-disabling-microsoft-update-in-windows-7-via-script) on the Microsoft Docs Blog website. For example, you could do the following:
+For a fleet of managed nodes running Windows Server 2012 or 2012 R2 , you can turn on the option by using a script, as described in [Enabling and Disabling Microsoft Update in Windows 7 through Script](https://docs.microsoft.com/en-us/archive/blogs/technet/danbuche/enabling-and-disabling-microsoft-update-in-windows-7-via-script) on the Microsoft Docs Blog website. For example, you could do the following:
 
 1. Save the script from the blog post in a file.
 
 1. Upload the file to an Amazon Simple Storage Service (Amazon S3) bucket or other accessible location.
 
-1. Use Run Command, a tool in AWS Systems Manager, to run the script on your managed nodes using the Systems Manager document (SSM document) `AWS-RunPowerShellScript` with a command similar to the following.
+1. Use Run Command to run the script on your managed nodes using the Systems Manager document (SSM document) `AWS-RunPowerShellScript` with a command similar to the following.
 
    ```
    Invoke-WebRequest `

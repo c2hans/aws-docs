@@ -6,8 +6,8 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-
 <a name="knowledge-base-generate-query"></a>
 
 When you connect a structured data store to your knowledge base, your knowledge base can query it by converting the natural language query provided by the user into an SQL query, based on the structure of the data source being queried. When you use:
-+ [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html): The response returns the result of the SQL query execution.
-+ [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html): The generated response is based on the result of the SQL query execution.
++ [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html): The response returns the result of the SQL query execution.
++ [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html): The generated response is based on the result of the SQL query execution.
 + [GenerateQuery](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GenerateQuery.html): Amazon Bedrock Knowledge Bases decouples the conversion of the query from the retrieval process. You can use this API operation to transform a query into SQL.
 
 ## Using the `GenerateQuery` API
@@ -111,5 +111,5 @@ For your knowledge base that's conencted to a structured data source, if you wan
 
 You can remove statements that you don't need, depending on your use case:
 + The `GetKB` and `GenerateQuery` statements are required to call [GenerateQuery](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GenerateQuery.html) to generate SQL queries that take into account user queries and your connected data source.
-+ The `Retrieve` statement is required to call [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) to retrieve data from your structured data store.
-+ The `RetrieveAndGenerate` statement is required to call [https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) to retrieve data from your structured data store and generate responses based off the data.
++ The `Retrieve` statement is required to call [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) to retrieve data from your structured data store.
++ The `RetrieveAndGenerate` statement is required to call [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) to retrieve data from your structured data store and generate responses based off the data.

@@ -8,24 +8,24 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-cl
 AWS CloudHSM offers secure cryptographic key storage for customers by providing managed hardware security modules in the AWS Cloud.
 
 ## Region availability
-<a name="_region_availability"></a>
+<a name="region-availability"></a>
 
-This service is available in the following AWS GovCloud (US) Regions:
-+  AWS GovCloud (US-West)
+ AWS CloudHSM is available in the following AWS GovCloud (US) Regions:
 +  AWS GovCloud (US-East)
++  AWS GovCloud (US-West)
 
 ## How AWS CloudHSM differs
-<a name="govcloud-hsm-diffs"></a>
+<a name="feature-diffs"></a>
 
 There are no differences for this service.
 
 ## Documentation
-<a name="govcloud-hsm-docs"></a>
+<a name="documentation"></a>
 
  [AWS CloudHSM documentation](https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html).
 
 ## Export-controlled content
-<a name="govcloud-hsmv2-itar"></a>
+<a name="itar-boundary"></a>
 
 For AWS Services architected within the AWS GovCloud (US) Regions, the following list explains how certain components of data may leave the AWS GovCloud (US) Regions in the normal course of the service offerings. The list can be used as a guide to help meet applicable customer compliance obligations. Data not included in the following list remains within the AWS GovCloud (US) Regions.
 +  AWS CloudHSM metadata is not permitted to contain export-controlled data. This includes all configuration data that you enter when creating and maintaining your AWS CloudHSM config. Audit and syslogs should not contain export-controlled data.

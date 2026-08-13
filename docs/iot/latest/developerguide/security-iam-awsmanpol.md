@@ -298,7 +298,7 @@ This policy includes the following permissions.
 
 You can attach the `AWSIoTDataAccess` policy to your IAM identities.
 
-This policy grants the associated identity permissions that allow access to all AWS IoT data operations. Data operations send data over MQTT or HTTP protocols. To view this policy in the AWS Management Console, see [https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTDataAccess?section=permissions](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTDataAccess?section=permissions).
+This policy grants the associated identity permissions that allow access to all AWS IoT data operations. Data operations send data over MQTT or HTTP protocols. To view this policy in the AWS Management Console, see [`AWSIoTDataAccess`](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTDataAccess?section=permissions).
 
 **Permissions details**
 
@@ -335,7 +335,7 @@ This policy includes the following permissions.
 
 You can attach the `AWSIoTFullAccess` policy to your IAM identities.
 
-This policy grants the associated identity permissions that allow access to all AWS IoT configuration and messaging operations. To view this policy in the AWS Management Console, see [https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTFullAccess?section=permissions](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTFullAccess?section=permissions).
+This policy grants the associated identity permissions that allow access to all AWS IoT configuration and messaging operations. To view this policy in the AWS Management Console, see [`AWSIoTFullAccess`](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTFullAccess?section=permissions).
 
 **Permissions details**
 
@@ -367,7 +367,7 @@ This policy includes the following permissions.
 
 You can attach the `AWSIoTLogging` policy to your IAM identities.
 
-This policy grants the associated identity permissions that allow access to create Amazon CloudWatch Logs groups and stream logs to the groups. This policy is attached to your CloudWatch logging role. To view this policy in the AWS Management Console, see [https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTLogging?section=permissions](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTLogging?section=permissions).
+This policy grants the associated identity permissions that allow access to create Amazon CloudWatch Logs groups and stream logs to the groups. This policy is attached to your CloudWatch logging role. To view this policy in the AWS Management Console, see [`AWSIoTLogging`](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTLogging?section=permissions).
 
 **Permissions details**
 
@@ -435,7 +435,7 @@ This policy includes the following permissions.
 
 You can attach the `AWSIoTRuleActions` policy to your IAM identities.
 
-This policy grants the associated identity permissions that allow access to all AWS services supported in AWS IoT rule actions. To view this policy in the AWS Management Console, see [https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTRuleActions?section=permissions](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTRuleActions?section=permissions).
+This policy grants the associated identity permissions that allow access to all AWS services supported in AWS IoT rule actions. To view this policy in the AWS Management Console, see [`AWSIoTRuleActions`](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTRuleActions?section=permissions).
 
 **Permissions details**
 
@@ -480,7 +480,7 @@ This policy includes the following permissions.
 
 You can attach the `AWSIoTThingsRegistration` policy to your IAM identities.
 
-This policy grants the associated identity permissions that allow access to register things in bulk using the `StartThingRegistrationTask` API. This policy can affect data processing and storage. To view this policy in the AWS Management Console, see [https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTThingsRegistration?section=permissions](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTThingsRegistration?section=permissions).
+This policy grants the associated identity permissions that allow access to register things in bulk using the `StartThingRegistrationTask` API. This policy can affect data processing and storage. To view this policy in the AWS Management Console, see [`AWSIoTThingsRegistration`](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTThingsRegistration?section=permissions).
 
 **Permissions details**
 

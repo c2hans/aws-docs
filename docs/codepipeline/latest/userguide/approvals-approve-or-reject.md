@@ -24,7 +24,7 @@ If you receive a notification that includes a direct link to an approval action,
 ![The Details tab shows the review content and comments.](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/manual-approval-review-details.png)
 
    The **Revisions** tab shows the source revisions for the execution.
-![TThe Revisions tab shows the source revisions for the execution.](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/manual-approval-review-revisions.png)
+![The Revisions tab shows the source revisions for the execution.](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/manual-approval-review-revisions.png)
 
 1. On the **Details** tab, view the comments and URL, if any. The message also displays the URL of content for you to review, if one was included.
 

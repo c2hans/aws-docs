@@ -64,6 +64,148 @@ Content-type: application/json
       {
          "clusterType": "string",
          "clusterVersion": "string",
+         "controlPlaneComponentConfig": {
+            "kubeApiServerConfig": {
+               "eventTtl": {
+                  "constraints": {
+                     "max": "string",
+                     "min": "string"
+                  },
+                  "defaultValue": "string"
+               },
+               "serviceNodePortRange": {
+                  "constraints": {
+                     "maxPort": {
+                        "max": number,
+                        "min": number
+                     },
+                     "minPort": {
+                        "max": number,
+                        "min": number
+                     }
+                  },
+                  "defaultValue": {
+                     "maxPort": number,
+                     "minPort": number
+                  }
+               }
+            },
+            "kubeControllerManagerConfig": {
+               "horizontalPodAutoscalerControllerConfig": {
+                  "horizontalPodAutoscalerSyncPeriod": {
+                     "constraints": {
+                        "max": "string",
+                        "min": "string"
+                     },
+                     "defaultValue": "string"
+                  }
+               }
+            },
+            "kubeSchedulerConfig": {
+               "nodeResourcesFit": {
+                  "scoringStrategy": {
+                     "constraints": {
+                        "resources": {
+                           "name": {
+                              "allowedValues": [ "string" ]
+                           },
+                           "weight": {
+                              "max": number,
+                              "min": number
+                           }
+                        },
+                        "scoringStrategy": {
+                           "allowedValues": [ "string" ]
+                        }
+                     },
+                     "defaultValue": {
+                        "resources": [
+                           {
+                              "name": "string",
+                              "weight": number
+                           }
+                        ],
+                        "type": "string"
+                     }
+                  }
+               }
+            }
+         },
+         "controlPlaneScalingTiers": [
+            {
+               "apiRequestConcurrency": number,
+               "clusterDatabaseSizeGb": number,
+               "controlPlaneComponentConfigOverrides": {
+                  "kubeApiServerConfig": {
+                     "eventTtl": {
+                        "constraints": {
+                           "max": "string",
+                           "min": "string"
+                        },
+                        "defaultValue": "string"
+                     },
+                     "serviceNodePortRange": {
+                        "constraints": {
+                           "maxPort": {
+                              "max": number,
+                              "min": number
+                           },
+                           "minPort": {
+                              "max": number,
+                              "min": number
+                           }
+                        },
+                        "defaultValue": {
+                           "maxPort": number,
+                           "minPort": number
+                        }
+                     }
+                  },
+                  "kubeControllerManagerConfig": {
+                     "horizontalPodAutoscalerControllerConfig": {
+                        "horizontalPodAutoscalerSyncPeriod": {
+                           "constraints": {
+                              "max": "string",
+                              "min": "string"
+                           },
+                           "defaultValue": "string"
+                        }
+                     }
+                  },
+                  "kubeSchedulerConfig": {
+                     "nodeResourcesFit": {
+                        "scoringStrategy": {
+                           "constraints": {
+                              "resources": {
+                                 "name": {
+                                    "allowedValues": [ "string" ]
+                                 },
+                                 "weight": {
+                                    "max": number,
+                                    "min": number
+                                 }
+                              },
+                              "scoringStrategy": {
+                                 "allowedValues": [ "string" ]
+                              }
+                           },
+                           "defaultValue": {
+                              "resources": [
+                                 {
+                                    "name": "string",
+                                    "weight": number
+                                 }
+                              ],
+                              "type": "string"
+                           }
+                        }
+                     }
+                  }
+               },
+               "podSchedulingRatePerSecond": number,
+               "tierName": "string"
+            }
+         ],
          "defaultPlatformVersion": "string",
          "defaultVersion": boolean,
          "endOfExtendedSupportDate": number,

@@ -28,10 +28,10 @@ You can purchase long codes for some countries directly through the AWS End User
 
 <table>
 <thead>
-  <tr><th>Country or region</th><th>ISO code</th><th>Dialing code</th><th>Supports short codes</th><th>Supports long codes</th><th>Supports Sender IDs</th><th>Supports two-way SMS</th><th>International sending[10](#sms-support-note-10)</th></tr>
+  <tr><th>Country or region</th><th>ISO code</th><th>Dialing code</th><th>Supports short codes</th><th>Supports long codes</th><th>Supports Sender IDs</th><th>Supports two-way SMS</th><th>International sending<a href="#sms-support-note-10">10</a></th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="8"> A</td></tr>
+  <tr><td colspan="8"> <b>A</b></td></tr>
   <tr><td>Afghanistan</td><td>AF</td><td>93</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Albania</td><td>AL</td><td>355</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Algeria</td><td>DZ</td><td>213</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
@@ -42,15 +42,15 @@ You can purchase long codes for some countries directly through the AWS End User
   <tr><td>Argentina </td><td>AR</td><td>54</td><td>Yes</td><td>No</td><td>No </td><td>No</td><td>Yes</td></tr>
   <tr><td>Armenia</td><td>AM</td><td>374</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Aruba</td><td>AW</td><td>297</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
-  <tr><td>Australia</td><td>AU</td><td>61</td><td>No</td><td>Yes</td><td>Registration required[8](#sms-support-note-8)</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td>Australia</td><td>AU</td><td>61</td><td>No</td><td>Yes</td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Austria</td><td>AT</td><td>43</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Azerbaijan</td><td>AZ</td><td>994</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
-  <tr><td colspan="8"> B</td></tr>
+  <tr><td colspan="8"> <b>B</b></td></tr>
   <tr><td>Bahamas</td><td>BS</td><td>1-242</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
   <tr><td>Bahrain</td><td>BH</td><td>973</td><td>No</td><td>No </td><td>Yes </td><td>No</td><td>Yes</td></tr>
   <tr><td>Bangladesh</td><td>BD</td><td>880</td><td>No</td><td>No </td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Barbados</td><td>BB</td><td>1-246</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
-  <tr><td>Belarus</td><td>BY</td><td>375</td><td>No</td><td>No</td><td>Registration required[8](#sms-support-note-8)</td><td>No</td><td>Yes</td></tr>
+  <tr><td>Belarus</td><td>BY</td><td>375</td><td>No</td><td>No</td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>No</td><td>Yes</td></tr>
   <tr><td>Belgium</td><td>BE</td><td>32</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Belize</td><td>BZ</td><td>501</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Bermuda</td><td>BM</td><td>1-441</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
@@ -63,7 +63,7 @@ You can purchase long codes for some countries directly through the AWS End User
   <tr><td>Bulgaria</td><td>BG</td><td>359</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Burkina Faso</td><td>BF</td><td>226</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Burundi</td><td>BI</td><td>257</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
-  <tr><td colspan="8"> C</td></tr>
+  <tr><td colspan="8"> <b>C</b></td></tr>
   <tr><td>Cambodia</td><td>KH</td><td>855</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Cameroon</td><td>CM</td><td>237</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Canada</td><td>CA</td><td>1</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td></tr>
@@ -72,7 +72,7 @@ You can purchase long codes for some countries directly through the AWS End User
   <tr><td>Central African Republic</td><td>CF</td><td>236</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Chad</td><td>TD</td><td>235</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
   <tr><td>Chile</td><td>CL</td><td>56</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>China</td><td>CN</td><td>86</td><td>Yes</td><td>No</td><td>No [2](#sms-support-note-2) </td><td>Yes</td><td>No</td></tr>
+  <tr><td>China</td><td>CN</td><td>86</td><td>Yes</td><td>No</td><td>No <a href="#sms-support-note-2">2</a> </td><td>Yes</td><td>No</td></tr>
   <tr><td>Colombia</td><td>CO</td><td>57</td><td>Yes</td><td>No</td><td>No</td><td>No</td><td>Yes</td></tr>
   <tr><td>Comoros</td><td>KM</td><td>269</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Cook Islands</td><td>CK</td><td>682</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
@@ -80,29 +80,29 @@ You can purchase long codes for some countries directly through the AWS End User
   <tr><td>Croatia</td><td>HR</td><td>385</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Cyprus</td><td>CY</td><td>357</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Czechia (Czech Republic)</td><td>CZ</td><td>420</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td colspan="8"> D</td></tr>
+  <tr><td colspan="8"> <b>D</b></td></tr>
   <tr><td>Democratic Republic of the Congo</td><td>CD</td><td>243</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Denmark</td><td>DK</td><td>45</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Djibouti</td><td>DJ</td><td>253</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Dominica</td><td>DM</td><td>1-767</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Dominican Republic</td><td>DO</td><td>1-809, 1-829, 1-849</td><td>Yes</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td colspan="8"> E</td></tr>
+  <tr><td colspan="8"> <b>E</b></td></tr>
   <tr><td>Ecuador</td><td>EC</td><td>593</td><td>Yes</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>Egypt</td><td>EG</td><td>20</td><td>Yes</td><td>No</td><td>Registration required[8](#sms-support-note-8)</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td>Egypt</td><td>EG</td><td>20</td><td>Yes</td><td>No</td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>Yes</td><td>Yes</td></tr>
   <tr><td>El Salvador</td><td>SV</td><td>503</td><td>No</td><td>No</td><td>No</td><td>No</td><td>Yes</td></tr>
   <tr><td>Equatorial Guinea</td><td>GQ</td><td>240</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
   <tr><td>Eritrea</td><td>ER</td><td>291</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Estonia</td><td>EE</td><td>372</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Eswatini</td><td>SZ</td><td>268</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>No</td></tr>
   <tr><td>Ethiopia</td><td>ET</td><td>251</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
-  <tr><td colspan="8"> F</td></tr>
+  <tr><td colspan="8"> <b>F</b></td></tr>
   <tr><td>Faroe Islands</td><td>FO</td><td>298</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Fiji</td><td>FJ</td><td>679</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Finland</td><td>FI</td><td>358</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>France</td><td>FR</td><td>33</td><td>Yes</td><td>No</td><td>Yes[11](#sms-support-note-11)</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td>France</td><td>FR</td><td>33</td><td>Yes</td><td>No</td><td>Yes<a href="#sms-support-note-11">11</a></td><td>Yes</td><td>Yes</td></tr>
   <tr><td>French Guiana</td><td>GF</td><td>594</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>French Polynesia</td><td>PF</td><td>689</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
-  <tr><td colspan="8"> G</td></tr>
+  <tr><td colspan="8"> <b>G</b></td></tr>
   <tr><td>Gabon</td><td>GA</td><td>241</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Gambia</td><td>GM</td><td>220</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Georgia</td><td>GE</td><td>995</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
@@ -119,33 +119,33 @@ You can purchase long codes for some countries directly through the AWS End User
   <tr><td>Guinea</td><td>GN</td><td>224</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Guinea-Bissau</td><td>GW</td><td>245</td><td>No</td><td>No</td><td>Yes</td><td>N/A</td><td>No</td></tr>
   <tr><td>Guyana</td><td>GY</td><td>592</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
-  <tr><td colspan="8"> H</td></tr>
+  <tr><td colspan="8"> <b>H</b></td></tr>
   <tr><td>Haiti</td><td>HT</td><td>509</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Honduras</td><td>HN</td><td>504</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Hong Kong</td><td>HK</td><td>852</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Hungary</td><td>HU</td><td>36</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td colspan="8"> I</td></tr>
+  <tr><td colspan="8"> <b>I</b></td></tr>
   <tr><td>Iceland</td><td>IS</td><td>354</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
-  <tr><td>India</td><td>IN</td><td>91</td><td>Yes</td><td>Yes[4](#sms-support-note-4)</td><td>Registration required[3](#sms-support-note-3) </td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>Indonesia</td><td>ID</td><td>62</td><td>No</td><td>No</td><td>Registration required[8](#sms-support-note-8)</td><td>No</td><td>Yes</td></tr>
+  <tr><td>India</td><td>IN</td><td>91</td><td>Yes</td><td>Yes<a href="#sms-support-note-4">4</a></td><td>Registration required<a href="#sms-support-note-3">3</a> </td><td>Yes</td><td>Yes</td></tr>
+  <tr><td>Indonesia</td><td>ID</td><td>62</td><td>No</td><td>No</td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>No</td><td>Yes</td></tr>
   <tr><td>Iraq</td><td>IQ</td><td>964</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
-  <tr><td>Ireland</td><td>IE</td><td>353</td><td>No</td><td>Yes</td><td>Registration required[9](#sms-support-note-9)</td><td>Yes</td><td>No</td></tr>
+  <tr><td>Ireland</td><td>IE</td><td>353</td><td>No</td><td>Yes</td><td>Registration required<a href="#sms-support-note-9">9</a></td><td>Yes</td><td>No</td></tr>
   <tr><td>Isle of Man</td><td>IM</td><td>44-1624</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
   <tr><td>Israel</td><td>IL</td><td>972</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Italy</td><td>IT</td><td>39</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Ivory Coast</td><td>CI</td><td>225</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
-  <tr><td colspan="8"> J</td></tr>
+  <tr><td colspan="8"> <b>J</b></td></tr>
   <tr><td>Jamaica</td><td>JM</td><td>1-876</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Japan</td><td>JP</td><td>81</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Jersey</td><td>JE</td><td>44-1434</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td></tr>
-  <tr><td>Jordan</td><td>JO</td><td>962</td><td>No</td><td>No</td><td>Registration required[8](#sms-support-note-8)</td><td>No</td><td>Yes</td></tr>
-  <tr><td colspan="8"> K</td></tr>
-  <tr><td>Kazakhstan</td><td>KZ</td><td>7</td><td>No</td><td>No</td><td>Registration required[8](#sms-support-note-8)</td><td>No</td><td>Yes</td></tr>
-  <tr><td>Kenya</td><td>KE</td><td>254</td><td>Yes</td><td>Yes</td><td>Registration required[8](#sms-support-note-8)</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td>Jordan</td><td>JO</td><td>962</td><td>No</td><td>No</td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>No</td><td>Yes</td></tr>
+  <tr><td colspan="8"> <b>K</b></td></tr>
+  <tr><td>Kazakhstan</td><td>KZ</td><td>7</td><td>No</td><td>No</td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>No</td><td>Yes</td></tr>
+  <tr><td>Kenya</td><td>KE</td><td>254</td><td>Yes</td><td>Yes</td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Kosovo</td><td>XK</td><td>383</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
-  <tr><td>Kuwait</td><td>KW</td><td>965</td><td>No</td><td>Yes</td><td>Registration required[8](#sms-support-note-8)</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td>Kuwait</td><td>KW</td><td>965</td><td>No</td><td>Yes</td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Kyrgyzstan</td><td>KG</td><td>996</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
-  <tr><td colspan="8">L</td></tr>
+  <tr><td colspan="8"><b>L</b></td></tr>
   <tr><td>Laos</td><td>LA</td><td>856</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Latvia</td><td>LV</td><td>371</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Lebanon</td><td>LB</td><td>961</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
@@ -155,7 +155,7 @@ You can purchase long codes for some countries directly through the AWS End User
   <tr><td>Liechtenstein</td><td>LI</td><td>423</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Lithuania</td><td>LT</td><td>370</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Luxembourg</td><td>LU</td><td>352</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td colspan="8">M</td></tr>
+  <tr><td colspan="8"><b>M</b></td></tr>
   <tr><td>Macau</td><td>MO</td><td>853</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Macedonia</td><td>MK</td><td>389</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Madagascar</td><td>MG</td><td>261</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
@@ -179,52 +179,52 @@ You can purchase long codes for some countries directly through the AWS End User
   <tr><td>Morocco</td><td>MA</td><td>212</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Mozambique</td><td>MZ</td><td>258</td><td>No</td><td>No</td><td>No</td><td>No</td><td>Yes</td></tr>
   <tr><td>Myanmar</td><td>MM</td><td>95</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td colspan="8">N</td></tr>
+  <tr><td colspan="8"><b>N</b></td></tr>
   <tr><td>Namibia</td><td>NA</td><td>264</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Nepal</td><td>NP</td><td>977</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
   <tr><td>Netherlands</td><td>NL</td><td>31</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>New Caledonia</td><td>NC</td><td>687</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
-  <tr><td>New Zealand[6](#sms-support-note-6)</td><td>NZ</td><td>64</td><td>Yes</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td>New Zealand<a href="#sms-support-note-6">6</a></td><td>NZ</td><td>64</td><td>Yes</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Nicaragua</td><td>NI</td><td>505</td><td>No</td><td>No</td><td>No</td><td>No</td><td>Yes</td></tr>
   <tr><td>Niger</td><td>NE</td><td>227</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Nigeria</td><td>NG</td><td>234</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Niue</td><td>NU</td><td>683</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Norfolk Island</td><td>NF</td><td>672</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
   <tr><td>Norway</td><td>NO</td><td>47</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td colspan="8">O</td></tr>
-  <tr><td>Oman</td><td>OM</td><td>968</td><td>No</td><td>No</td><td>Registration required[8](#sms-support-note-8)</td><td>No</td><td>Yes</td></tr>
-  <tr><td colspan="8">P</td></tr>
-  <tr><td>Pakistan</td><td>PK</td><td>92</td><td>No</td><td>Yes[4](#sms-support-note-4)</td><td>Yes</td><td>No</td><td>Yes</td></tr>
+  <tr><td colspan="8"><b>O</b></td></tr>
+  <tr><td>Oman</td><td>OM</td><td>968</td><td>No</td><td>No</td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>No</td><td>Yes</td></tr>
+  <tr><td colspan="8"><b>P</b></td></tr>
+  <tr><td>Pakistan</td><td>PK</td><td>92</td><td>No</td><td>Yes<a href="#sms-support-note-4">4</a></td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Palestine</td><td>PS</td><td>970</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Panama</td><td>PA</td><td>507</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Palau</td><td>PW</td><td>680</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
   <tr><td>Papua New Guinea</td><td>PG</td><td>675</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Paraguay</td><td>PY</td><td>595</td><td>No</td><td>No</td><td>No</td><td>No</td><td>Yes</td></tr>
   <tr><td>Peru</td><td>PE</td><td>51</td><td>Yes</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>Philippines</td><td>PH</td><td>63</td><td>No</td><td>Yes[4](#sms-support-note-4)</td><td>Registration required[8](#sms-support-note-8)</td><td>No</td><td>Yes</td></tr>
+  <tr><td>Philippines</td><td>PH</td><td>63</td><td>No</td><td>Yes<a href="#sms-support-note-4">4</a></td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>No</td><td>Yes</td></tr>
   <tr><td>Poland</td><td>PL</td><td>48</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Portugal</td><td>PT</td><td>351</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Puerto Rico</td><td>PR</td><td>1-787, 1-939</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td colspan="8">Q</td></tr>
-  <tr><td>Qatar</td><td>QA</td><td>974</td><td>Yes</td><td>No</td><td>Registration required[8](#sms-support-note-8)</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td colspan="8">R</td></tr>
+  <tr><td colspan="8"><b>Q</b></td></tr>
+  <tr><td>Qatar</td><td>QA</td><td>974</td><td>Yes</td><td>No</td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>Yes</td><td>Yes</td></tr>
+  <tr><td colspan="8"><b>R</b></td></tr>
   <tr><td>Republic of the Congo</td><td>CG</td><td>242</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
   <tr><td>Réunion (France)</td><td>RE</td><td>262</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Romania</td><td>RO</td><td>40</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>Russia</td><td>RU</td><td>7</td><td>Yes</td><td>No</td><td>Registration required[8](#sms-support-note-8)</td><td>Yes</td><td>No</td></tr>
+  <tr><td>Russia</td><td>RU</td><td>7</td><td>Yes</td><td>No</td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>Yes</td><td>No</td></tr>
   <tr><td>Rwanda</td><td>RW</td><td>250</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
-  <tr><td colspan="8">S</td></tr>
+  <tr><td colspan="8"><b>S</b></td></tr>
   <tr><td>Saint Kitts and Nevis</td><td>KN</td><td>1-869</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
   <tr><td>Saint Lucia</td><td>LC</td><td>1-758</td><td>No</td><td>No</td><td>No</td><td>No</td><td>Yes</td></tr>
   <tr><td>Samoa</td><td>WS</td><td>685</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
   <tr><td>San Marino</td><td>SM</td><td>378</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
   <tr><td>São Tomé and Príncipe</td><td>ST</td><td>239</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
-  <tr><td>Saudi Arabia</td><td>SA</td><td>966</td><td>No</td><td>Yes[4](#sms-support-note-4)</td><td>Registration required[8](#sms-support-note-8)</td><td>No</td><td>No</td></tr>
+  <tr><td>Saudi Arabia</td><td>SA</td><td>966</td><td>No</td><td>Yes<a href="#sms-support-note-4">4</a></td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>No</td><td>No</td></tr>
   <tr><td>Senegal</td><td>SN</td><td>221</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
   <tr><td>Serbia</td><td>RS</td><td>381</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Seychelles</td><td>SC</td><td>248</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Sierra Leone</td><td>SL</td><td>232</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
-  <tr><td>Singapore</td><td>SG</td><td>65</td><td>Yes</td><td>Yes</td><td>Yes[5](#sms-support-note-5)</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td>Singapore</td><td>SG</td><td>65</td><td>Yes</td><td>Yes</td><td>Yes<a href="#sms-support-note-5">5</a></td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Slovakia</td><td>SK</td><td>421</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Slovenia</td><td>SI</td><td>386</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Solomon Islands</td><td>SB</td><td>677</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
@@ -233,44 +233,44 @@ You can purchase long codes for some countries directly through the AWS End User
   <tr><td>South Korea</td><td>KR</td><td>82</td><td>No</td><td>No</td><td>No</td><td>No</td><td>Yes</td></tr>
   <tr><td>South Sudan</td><td>SS</td><td>211</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
   <tr><td>Spain</td><td>ES</td><td>34</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>Sri Lanka</td><td>LK</td><td>94</td><td>Yes</td><td>Yes</td><td>Registration required[8](#sms-support-note-8)</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td>Sri Lanka</td><td>LK</td><td>94</td><td>Yes</td><td>Yes</td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Suriname</td><td>SR</td><td>597</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Sweden</td><td>SE</td><td>46</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Switzerland</td><td>CH</td><td>41</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
-  <tr><td colspan="8">T</td></tr>
+  <tr><td colspan="8"><b>T</b></td></tr>
   <tr><td>Taiwan</td><td>TW</td><td>886</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Tajikistan</td><td>TJ</td><td>992</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Tanzania</td><td>TZ</td><td>255</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td></tr>
-  <tr><td>Thailand</td><td>TH</td><td>66</td><td>No</td><td>Yes</td><td>Registration required[8](#sms-support-note-8)</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td>Thailand</td><td>TH</td><td>66</td><td>No</td><td>Yes</td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Timor-Leste</td><td>TL</td><td>670</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Togo</td><td>TG</td><td>228</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
   <tr><td>Tonga</td><td>TO</td><td>676</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
   <tr><td>Trinidad and Tobago</td><td>TT</td><td>1-868</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Tunisia</td><td>TN</td><td>216</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
-  <tr><td>Turkey</td><td>TR</td><td>90</td><td>No</td><td>No</td><td>Registration required[8](#sms-support-note-8)</td><td>No</td><td>Yes</td></tr>
+  <tr><td>Turkey</td><td>TR</td><td>90</td><td>No</td><td>No</td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>No</td><td>Yes</td></tr>
   <tr><td>Turkmenistan</td><td>TM</td><td>993</td><td>No</td><td>No</td><td>No</td><td>No</td><td>Yes</td></tr>
   <tr><td>Turks and Caicos Islands</td><td>TC</td><td>1-649</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Tuvalu</td><td>TV</td><td>688</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
-  <tr><td colspan="8">U</td></tr>
+  <tr><td colspan="8"><b>U</b></td></tr>
   <tr><td>Uganda</td><td>UG</td><td>256</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Ukraine</td><td>UA</td><td>380</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>United Arab Emirates (UAE)</td><td>AE</td><td>971</td><td>Yes</td><td>Yes[4](#sms-support-note-4)</td><td>Registration required[8](#sms-support-note-8)</td><td>Yes</td><td>No</td></tr>
-  <tr><td>United Kingdom</td><td>GB</td><td>44</td><td>Yes</td><td>Yes</td><td>Registration required[7](#sms-support-note-7)</td><td>Yes</td><td>No</td></tr>
+  <tr><td>United Arab Emirates (UAE)</td><td>AE</td><td>971</td><td>Yes</td><td>Yes<a href="#sms-support-note-4">4</a></td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>Yes</td><td>No</td></tr>
+  <tr><td>United Kingdom</td><td>GB</td><td>44</td><td>Yes</td><td>Yes</td><td>Registration required<a href="#sms-support-note-7">7</a></td><td>Yes</td><td>No</td></tr>
   <tr><td>United States</td><td>US</td><td>1</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Uruguay</td><td>UY</td><td>598</td><td>Yes</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Uzbekistan</td><td>UZ</td><td>998</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
-  <tr><td colspan="8">V</td></tr>
+  <tr><td colspan="8"><b>V</b></td></tr>
   <tr><td>Vanuatu</td><td>VU</td><td>678</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
   <tr><td>Venezuela</td><td>VE</td><td>58</td><td>No</td><td>No</td><td>No</td><td>No</td><td>Yes</td></tr>
-  <tr><td>Vietnam</td><td>VN</td><td>84</td><td>No</td><td>No</td><td>Registration required[8](#sms-support-note-8)</td><td>No</td><td>Yes</td></tr>
+  <tr><td>Vietnam</td><td>VN</td><td>84</td><td>No</td><td>No</td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>No</td><td>Yes</td></tr>
   <tr><td>Virgin Islands, British</td><td>VG</td><td>1-284</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
   <tr><td>Virgin Islands, US</td><td>VI</td><td>1-340</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td></tr>
-  <tr><td colspan="8">W</td></tr>
-  <tr><td colspan="8">X</td></tr>
-  <tr><td colspan="8">Y</td></tr>
+  <tr><td colspan="8"><b>W</b></td></tr>
+  <tr><td colspan="8"><b>X</b></td></tr>
+  <tr><td colspan="8"><b>Y</b></td></tr>
   <tr><td>Yemen</td><td>YE</td><td>967</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
-  <tr><td colspan="8">Z</td></tr>
-  <tr><td>Zambia</td><td>ZM</td><td>260</td><td>No</td><td>No</td><td>Registration required[8](#sms-support-note-8)</td><td>No</td><td>Yes</td></tr>
+  <tr><td colspan="8"><b>Z</b></td></tr>
+  <tr><td>Zambia</td><td>ZM</td><td>260</td><td>No</td><td>No</td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>No</td><td>Yes</td></tr>
   <tr><td>Zimbabwe</td><td>ZW</td><td>263</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
 </tbody>
 </table>

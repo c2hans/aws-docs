@@ -56,7 +56,7 @@ The following are considerations when using automatic deployments:
 
 **To enable or disable automatic deployments**
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack-set.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack-set.html) command with the `--auto-deployment` option.
+1. Use the [update-stack-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack-set.html) command with the `--auto-deployment` option.
 
    The following command enables automatic deployments.
 
@@ -72,7 +72,7 @@ The following are considerations when using automatic deployments:
      --use-previous-template --auto-deployment Enabled=false
    ```
 
-1. Using the operation ID that was returned as part of the **update-stack-set** output, run [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-set-operation.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-set-operation.html) to verify that your StackSet was updated successfully.
+1. Using the operation ID that was returned as part of the **update-stack-set** output, run [describe-stack-set-operation](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-set-operation.html) to verify that your StackSet was updated successfully.
 
    ```
    aws cloudformation describe-stack-set-operation --operation-id {{operation_ID}}

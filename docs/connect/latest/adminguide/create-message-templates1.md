@@ -10,7 +10,7 @@ If you frequently design and send a certain type of message, such as a weekly em
 This topic is for administrators and contact center managers who want to create message templates using the Connect Customer admin website.
 
 **Tip**
-Even though message templates use the Connect AI agents APIs, message templates don't lead to additional billing. You only pay for the chat message price or email price. For more information, see [Connect Customer Pricing](https://aws.amazon.com/connect/pricing/).
+Even though message templates use the agent assist APIs, message templates don't lead to additional billing. You only pay for the chat message price or email price. For more information, see [Connect Customer Pricing](https://aws.amazon.com/connect/pricing/).
 
 ## What are message templates?
 <a name="what-message-templates"></a>

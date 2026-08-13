@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/mnp-eks-create-ek
 # Create an Amazon EKS MNP job definition
 <a name="mnp-eks-create-eks-mnp-job-definition"></a>
 
-To define and run MNP jobs on Amazon EKS, there are new parameters within the [https://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html) and [https://docs.aws.amazon.com/batch/latest/APIReference/API_SubmitJob.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_SubmitJob.html) API operations.
-+ Use [https://docs.aws.amazon.com/batch/latest/APIReference/API_EksProperties.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_EksProperties.html) under the [https://docs.aws.amazon.com/batch/latest/APIReference/API_NodeProperties.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_NodeProperties.html) section to define your MNP job definition.
-+ Use [https://docs.aws.amazon.com/batch/latest/APIReference/API_EksPropertiesOverride.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_EksPropertiesOverride.html) under the [https://docs.aws.amazon.com//batch/latest/APIReference/API_NodePropertyOverride.html](https://docs.aws.amazon.com//batch/latest/APIReference/API_NodePropertyOverride.html) section to override the parameters defined in the job definition when submitting an MNP job.
+To define and run MNP jobs on Amazon EKS, there are new parameters within the [`RegisterJobDefinition`](https://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html) and [`SubmitJob`](https://docs.aws.amazon.com/batch/latest/APIReference/API_SubmitJob.html) API operations.
++ Use [`eksProperties`](https://docs.aws.amazon.com/batch/latest/APIReference/API_EksProperties.html) under the [`nodeProperties`](https://docs.aws.amazon.com/batch/latest/APIReference/API_NodeProperties.html) section to define your MNP job definition.
++ Use [`eksPropertiesOverride`](https://docs.aws.amazon.com/batch/latest/APIReference/API_EksPropertiesOverride.html) under the [`nodePropertyOverrides`](https://docs.aws.amazon.com//batch/latest/APIReference/API_NodePropertyOverride.html) section to override the parameters defined in the job definition when submitting an MNP job.
 
 These actions can be defined through API operations and the AWS Management Console.
 

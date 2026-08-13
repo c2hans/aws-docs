@@ -29,7 +29,7 @@ Automatic daily backups are kept for a certain period of time, known as a retent
 **Note**
 While automatic daily backups have a maximum retention period of 90 days, user-initiated backups are kept forever, unless you delete them. For more information about user-initiated backups, see [Working with user-initiated backups](#user-initiated-backups).
 
-You can use the AWS CLI or one of the AWS SDKs to change the backup window and backup retention period for your file systems. Use the [https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileSystem.html](https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileSystem.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/fsx/update-file-system.html](https://docs.aws.amazon.com/cli/latest/reference/fsx/update-file-system.html) CLI command.
+You can use the AWS CLI or one of the AWS SDKs to change the backup window and backup retention period for your file systems. Use the [`UpdateFileSystem`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileSystem.html) API operation or the [`update-file-system`](https://docs.aws.amazon.com/cli/latest/reference/fsx/update-file-system.html) CLI command.
 
 ## Working with user-initiated backups
 <a name="user-initiated-backups"></a>

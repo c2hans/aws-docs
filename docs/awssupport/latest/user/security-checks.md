@@ -268,7 +268,7 @@ Red: The EBS volume snapshot is publicly accessible.
 
 **Recommended Action**
 Unless you are certain that you want to share all the data in the snapshot with all AWS accounts and users, modify the permissions: mark the snapshot as private, and then specify the accounts that you want to give permissions to. For more information, see [Sharing an Amazon EBS Snapshot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-modifying-snapshot-permissions.html). Use Block Public Access for EBS Snapshots to control the settings that allow public access to your data. This check can't be excluded from view in the Trusted Advisor console.
-To modify permissions for your snapshots directly, use a runbook in the AWS Systems Manager console. For more information, see [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-modifyebssnapshotpermission.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-modifyebssnapshotpermission.html).
+To modify permissions for your snapshots directly, use a runbook in the AWS Systems Manager console. For more information, see [`AWSSupport-ModifyEBSSnapshotPermission`](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-modifyebssnapshotpermission.html).
 
 **Additional Resources**
 [Amazon EBS Snapshots](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html)
@@ -290,6 +290,7 @@ Results for this check are automatically refreshed several times daily, and refr
 For AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan customers, you can use the [BatchUpdateRecommendationResourceExclusion](https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_BatchUpdateRecommendationResourceExclusion.html) API to include or exclude one or more resources from your Trusted Advisor results.
 When a DB instance or DB cluster is stopped, you can view the Amazon RDS recommendations in Trusted Advisor for 3 to 5 days. After five days, the recommendations are not available in Trusted Advisor. To view the recommendations, open the Amazon RDS console, and then choose **Recommendations**.
 If you delete a DB instance or DB cluster, then recommendations associated with those instances or clusters are not available in Trusted Advisor or the Amazon RDS management console.
+This check relies on Amazon RDS Recommendations. This check doesn't evaluate DB instances in AWS Regions where Amazon RDS Recommendations isn't available. For information about regional availability, see [Viewing and responding to Amazon RDS recommendations](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/monitoring-recommendations.html).
 
 **Check ID**
 `c1qf5bt005`
@@ -320,6 +321,7 @@ Results for this check are automatically refreshed several times daily, and refr
 For AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan customers, you can use the [BatchUpdateRecommendationResourceExclusion](https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_BatchUpdateRecommendationResourceExclusion.html) API to include or exclude one or more resources from your Trusted Advisor results.
 When a DB instance or DB cluster is stopped, you can view the Amazon RDS recommendations in Trusted Advisor for 3 to 5 days. After five days, the recommendations are not available in Trusted Advisor. To view the recommendations, open the Amazon RDS console, and then choose **Recommendations**.
 If you delete a DB instance or DB cluster, then recommendations associated with those instances or clusters are not available in Trusted Advisor or the Amazon RDS management console.
+This check relies on Amazon RDS Recommendations. This check doesn't evaluate DB instances in AWS Regions where Amazon RDS Recommendations isn't available. For information about regional availability, see [Viewing and responding to Amazon RDS recommendations](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/monitoring-recommendations.html).
 
 **Check ID**
 `c1qf5bt003`
@@ -360,7 +362,7 @@ Red: The Amazon RDS snapshot is marked as public.
 
 **Recommended Action**
 Unless you are certain you want to share all the data in the snapshot with all AWS accounts and users, modify the permissions: mark the snapshot as private, and then specify the accounts that you want to give permissions to. For more information, see [Sharing a DB Snapshot or DB Cluster Snapshot](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ShareSnapshot.html). This check can't be excluded from view in the Trusted Advisor console.
-To modify permissions for your snapshots directly, you can use a runbook in the AWS Systems Manager console. For more information, see [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-modifyrdssnapshotpermission.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-modifyrdssnapshotpermission.html).
+To modify permissions for your snapshots directly, you can use a runbook in the AWS Systems Manager console. For more information, see [`AWSSupport-ModifyRDSSnapshotPermission`](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-modifyrdssnapshotpermission.html).
 
 **Additional Resources**
 [Backing Up and Restoring Amazon RDS DB Instances](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.BackupRestore.html)
@@ -412,6 +414,7 @@ Results for this check are automatically refreshed several times daily, and refr
 For AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan customers, you can use the [BatchUpdateRecommendationResourceExclusion](https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_BatchUpdateRecommendationResourceExclusion.html) API to include or exclude one or more resources from your Trusted Advisor results.
 When a DB instance or DB cluster is stopped, you can view the Amazon RDS recommendations in Trusted Advisor for 3 to 5 days. After five days, the recommendations are not available in Trusted Advisor. To view the recommendations, open the Amazon RDS console, and then choose **Recommendations**.
 If you delete a DB instance or DB cluster, then recommendations associated with those instances or clusters are not available in Trusted Advisor or the Amazon RDS management console.
+This check relies on Amazon RDS Recommendations. This check doesn't evaluate DB instances in AWS Regions where Amazon RDS Recommendations isn't available. For information about regional availability, see [Viewing and responding to Amazon RDS recommendations](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/monitoring-recommendations.html).
 
 **Check ID**
 `c1qf5bt006`

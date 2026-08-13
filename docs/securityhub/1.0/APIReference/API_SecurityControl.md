@@ -53,7 +53,7 @@ Pattern: `.*\S.*`
 Required: Yes
 
  ** LastUpdateReason **   <a name="securityhub-Type-SecurityControl-LastUpdateReason"></a>
- The most recent reason for updating the customizable properties of a security control. This differs from the `UpdateReason` field of the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateStandardsControlAssociations.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateStandardsControlAssociations.html) API, which tracks the reason for updating the enablement status of a control. This field accepts alphanumeric characters in addition to white spaces, dashes, and underscores.
+ The most recent reason for updating the customizable properties of a security control. This differs from the `UpdateReason` field of the [`BatchUpdateStandardsControlAssociations`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateStandardsControlAssociations.html) API, which tracks the reason for updating the enablement status of a control. This field accepts alphanumeric characters in addition to white spaces, dashes, and underscores.
 Type: String
 Pattern: `^([^\u0000-\u007F]|[-_ a-zA-Z0-9])+$`
 Required: No

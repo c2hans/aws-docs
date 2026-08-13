@@ -9,7 +9,7 @@ Enable [Amazon GuardDuty](https://aws.amazon.com/guardduty/) in your AWS account
 
 Enable GuardDuty in all supported AWS Regions. Doing so allows GuardDuty to generate findings about unauthorized or unusual activity, even in Regions that you do not actively use. This also allows GuardDuty to monitor AWS CloudTrail events for global AWS services such as IAM. Attackers frequently create resources in Regions where you have no workloads deployed, specifically because those Regions are less likely to be monitored. GuardDuty pricing is based on the volume of data analyzed, so Regions with no active workloads typically generate minimal cost. The cost difference between enabling GuardDuty only in Regions with active resources versus all supported Regions is typically negligible.
 
-*Please review GuardDuty pricing to understand its consumption model: *[https://aws.amazon.com/guardduty/pricing/](https://aws.amazon.com/guardduty/pricing/) *If you decide to not enable GuardDuty, it will be important to be thorough with the permission restrictions recommend in ACCT.17.*
+*Please review GuardDuty pricing to understand its consumption model: *[*https://aws.amazon.com/guardduty/pricing/*](https://aws.amazon.com/guardduty/pricing/) *If you decide to not enable GuardDuty, it will be important to be thorough with the permission restrictions recommend in ACCT.17.*
 
 **To enable GuardDuty:**
 

@@ -14,21 +14,21 @@ You can't change the permissions defined in AWS managed policies. AWS occasional
 Billing provides several AWS managed policies for common use cases.
 
 **Topics**
-+ [[https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPurchaseOrdersServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPurchaseOrdersServiceRolePolicy.html)](#security-iam-awsmanpol-AWSPurchaseOrdersServiceRolePolicy)
-+ [[https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBillingReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBillingReadOnlyAccess.html)](#security-iam-awsmanpol-AWSBillingReadOnlyAccess)
-+ [[https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html)](#security-iam-awsmanpol-Billing)
-+ [[https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountActivityAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountActivityAccess.html)](#security-iam-awsmanpol-AWSAccountActivityAccess)
-+ [[https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPriceListServiceFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPriceListServiceFullAccess.html)](#security-iam-awsmanpol-AWSPriceListServiceFullAccess)
++ [[`AWSPurchaseOrdersServiceRolePolicy`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPurchaseOrdersServiceRolePolicy.html)](#security-iam-awsmanpol-AWSPurchaseOrdersServiceRolePolicy)
++ [[`AWSBillingReadOnlyAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBillingReadOnlyAccess.html)](#security-iam-awsmanpol-AWSBillingReadOnlyAccess)
++ [[`Billing`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html)](#security-iam-awsmanpol-Billing)
++ [[`AWSAccountActivityAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountActivityAccess.html)](#security-iam-awsmanpol-AWSAccountActivityAccess)
++ [[`AWSPriceListServiceFullAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPriceListServiceFullAccess.html)](#security-iam-awsmanpol-AWSPriceListServiceFullAccess)
 + [Updates to AWS managed policies for AWS Billing](#security-iam-awsmanpol-updates)
 
-## [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPurchaseOrdersServiceRolePolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPurchaseOrdersServiceRolePolicy.html)
+## [`AWSPurchaseOrdersServiceRolePolicy`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPurchaseOrdersServiceRolePolicy.html)
 <a name="security-iam-awsmanpol-AWSPurchaseOrdersServiceRolePolicy"></a>
 
 This managed policy grants full access to the Billing and Cost Management console and to the purchase orders console. The policy allows the user to view, create, update, and delete the account's purchase orders.
 
 To view the permissions for this policy, see [AWSPurchaseOrdersServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPurchaseOrdersServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
 
-## [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBillingReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBillingReadOnlyAccess.html)
+## [`AWSBillingReadOnlyAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBillingReadOnlyAccess.html)
 <a name="security-iam-awsmanpol-AWSBillingReadOnlyAccess"></a>
 
 This managed policy grants users read-only access to features in the AWS Billing and Cost Management console.
@@ -54,21 +54,21 @@ This policy includes the following permissions:
 
 To view the permissions for this policy, see [AWSBillingReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBillingReadOnlyAccess.html) in the *AWS Managed Policy Reference*.
 
-## [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html)
+## [`Billing`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html)
 <a name="security-iam-awsmanpol-Billing"></a>
 
 This managed policy grants users permission to view and edit the AWS Billing and Cost Management console. This includes viewing account usage, modifying budgets and payment methods.
 
 To view the permissions for this policy, see [Billing](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Billing.html) in the *AWS Managed Policy Reference*.
 
-## [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountActivityAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountActivityAccess.html)
+## [`AWSAccountActivityAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountActivityAccess.html)
 <a name="security-iam-awsmanpol-AWSAccountActivityAccess"></a>
 
 This managed policy grants users permission to view the **Account activity** page.
 
 To view the permissions for this policy, see [AWSAccountActivityAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAccountActivityAccess.html) in the *AWS Managed Policy Reference*.
 
-## [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPriceListServiceFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPriceListServiceFullAccess.html)
+## [`AWSPriceListServiceFullAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPriceListServiceFullAccess.html)
 <a name="security-iam-awsmanpol-AWSPriceListServiceFullAccess"></a>
 
 This managed policy grants users full access to the AWS Price List Service.

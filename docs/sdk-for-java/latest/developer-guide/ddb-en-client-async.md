@@ -24,7 +24,7 @@ If your application requires non-blocking, asynchronous calls to DynamoDB, you c
    return result.join();   // Now block and wait for the result.
    ```
 
-1. Methods that return paginated lists of results return an [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/async/SdkPublisher.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/async/SdkPublisher.html) instead of an [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/pagination/sync/SdkIterable.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/pagination/sync/SdkIterable.html) that the synchronous `DynamoDbEnhanceClient` returns for the same methods. Your application can then subscribe a handler to that publisher to deal with the results asynchronously without having to block.
+1. Methods that return paginated lists of results return an [`SdkPublisher`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/async/SdkPublisher.html) instead of an [`SdkIterable`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/pagination/sync/SdkIterable.html) that the synchronous `DynamoDbEnhanceClient` returns for the same methods. Your application can then subscribe a handler to that publisher to deal with the results asynchronously without having to block.
 
    ```
    PagePublisher<Customer> results = customerDynamoDbTable.query(r -> r.queryConditional(keyEqualTo(k -> k.partitionValue("Smith"))));

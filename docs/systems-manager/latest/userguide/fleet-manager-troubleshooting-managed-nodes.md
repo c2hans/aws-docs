@@ -11,12 +11,12 @@ For several AWS Systems Manager tools like Run Command, Distributor, and Session
 
 This topic provides information to help you diagnose why a managed node *that you have confirmed is running* isn't included in your lists of managed nodes in Systems Manager.
 
-In order for a node to be managed by Systems Manager and available in lists of managed nodes, it must meet three requirements:
+For a node to be managed by Systems Manager and available in lists of managed nodes, it must meet three requirements:
 + SSM Agent must be installed and running on the node with a supported operating system.
 **Note**
 Some AWS managed Amazon Machine Images (AMIs) are configured to launch instances with [SSM Agent](ssm-agent.md) preinstalled. (You can also configure a custom AMI to preinstall SSM Agent.) For more information, see [Find AMIs with the SSM Agent preinstalled](ami-preinstalled-agent.md).
 + For Amazon Elastic Compute Cloud (Amazon EC2) instances, you must attach an AWS Identity and Access Management (IAM) instance profile to the instance. The instance profile enables the instance to communicate with the Systems Manager service. If you don't assign an instance profile to the instance, you register it using a [hybrid activation](activations.md), which is not a common scenario.
-+ SSM Agent must be able to connect to a Systems Manager endpoint in order to register itself with the service. Thereafter, the managed node must be available to the service, which is confirmed by the service sending a signal every five minutes to check the instance's health.
++ SSM Agent must be able to connect to a Systems Manager endpoint to register itself with the service. Thereafter, the managed node must be available to the service, which is confirmed by the service sending a signal every five minutes to check the instance's health.
 + After the status of a managed node has been `Connection Lost` for at least 30 days, the node might no longer be listed in the Fleet Manager console. To restore it to the list, the issue that caused the lost connection must be resolved.
 
 After you verify that a managed node is running, you can use the following command to check whether SSM Agent successfully registered with the Systems Manager service. This command doesn't return results until a successful registration has taken place.
@@ -84,16 +84,6 @@ If registration hasn't completed yet or was unsuccessful, the command returns re
 
 If the command doesn't return results after 5 minutes or so, use the following information to help you troubleshoot problems with your managed nodes.
 
-**Topics**
-+ [Solution 1: Verify that SSM Agent is installed and running on the managed node](#instances-missing-solution-1)
-+ [Solution 2: Verify that an IAM instance profile has been specified for the instance (EC2 instances only)](#instances-missing-solution-2)
-+ [Solution 3: Verify service endpoint connectivity](#instances-missing-solution-3)
-+ [Solution 4: Verify target operating system support](#instances-missing-solution-4)
-+ [Solution 5: Verify you're working in the same AWS Region as the Amazon EC2 instance](#instances-missing-solution-5)
-+ [Solution 6: Verify the proxy configuration you applied to SSM Agent on your managed node](#instances-missing-solution-6)
-+ [Solution 7: Install a TLS certificate on managed instances](#hybrid-tls-certificate)
-+ [Troubleshooting managed node availability using `ssm-cli`](troubleshooting-managed-nodes-using-ssm-cli.md)
-
 ## Solution 1: Verify that SSM Agent is installed and running on the managed node
 <a name="instances-missing-solution-1"></a>
 
@@ -125,9 +115,9 @@ On-premises servers, edge devices, and virtual machines (VMs) use an IAM service
 
 1. On the **Description** tab in the bottom pane, locate **IAM role** and choose the name of the role.
 
-1. On the role **Summary** page for the instance profile, on the **Permissions** tab, ensure that `AmazonSSMManagedInstanceCore` is listed under **Permissions policies**.
+1. On the role **Summary** page for the instance profile, on the **Permissions** tab, make sure that `AmazonSSMManagedInstanceCore` is listed under **Permissions policies**.
 
-   If a custom policy is used instead, ensure that it provides the same permissions as `AmazonSSMManagedInstanceCore`.
+   If a custom policy is used instead, make sure that it provides the same permissions as `AmazonSSMManagedInstanceCore`.
 
    [Open `AmazonSSMManagedInstanceCore` in the console](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore$jsonEditor)
 
@@ -150,7 +140,7 @@ Verify that the operation you have chosen can be run on the type of managed node
 ## Solution 5: Verify you're working in the same AWS Region as the Amazon EC2 instance
 <a name="instances-missing-solution-5"></a>
 
-Amazon EC2 instances are created and available in specific AWS Regions, such as the US East (Ohio) Region (us-east-2) or Europe (Ireland) Region (eu-west-1). Ensure that you're working in the same AWS Region as the Amazon EC2 instance that you want to work with. For more information, see [Choosing a Region](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/getting-started.html#select-region) in *Getting Started with the AWS Management Console*.
+Amazon EC2 instances are created and available in specific AWS Regions, such as the US East (Ohio) Region (us-east-2) or Europe (Ireland) Region (eu-west-1). Make sure that you're working in the same AWS Region as the Amazon EC2 instance that you want to work with. For more information, see [Choosing a Region](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/getting-started.html#select-region) in *Getting Started with the AWS Management Console*.
 
 ## Solution 6: Verify the proxy configuration you applied to SSM Agent on your managed node
 <a name="instances-missing-solution-6"></a>

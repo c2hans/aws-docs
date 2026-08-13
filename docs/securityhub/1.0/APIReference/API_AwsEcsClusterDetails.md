@@ -11,7 +11,7 @@ Provides details about an Amazon ECS cluster.
 <a name="API_AwsEcsClusterDetails_Contents"></a>
 
  ** ActiveServicesCount **   <a name="securityhub-Type-AwsEcsClusterDetails-ActiveServicesCount"></a>
-The number of services that are running on the cluster in an `ACTIVE` state. You can view these services with the Amazon ECS [https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListServices.html](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListServices.html) API operation.
+The number of services that are running on the cluster in an `ACTIVE` state. You can view these services with the Amazon ECS [`ListServices`](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListServices.html) API operation.
 Type: Integer
 Required: No
 

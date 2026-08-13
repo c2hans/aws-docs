@@ -19,6 +19,7 @@ The following is a list of compatible AWS applications and services:
 + AWS IAM Identity Center
 + AWS License Manager
 + AWS Management Console
++ AWS Private Certificate Authority
 + FSx for Windows File Server
 + WorkSpaces
 

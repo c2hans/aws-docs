@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ai-agent-initi
 # Initial set-up for AI agents
 <a name="ai-agent-initial-setup"></a>
 
-To start using Connect AI agents, you first need to create a domain. As part of this process you can also optionally:
+To start using AI agents, you first need to create a domain. As part of this process you can also optionally:
 + Create an encryption key to encrypt the excerpts that are provided in the recommendations to the agent.
 + Create a knowledge base using external data.
 + Encrypt the content importing from these applications using a KMS key.
 
-The following sections explain how to use the Connect Customer console to enable Connect AI agents. Follow them in the order listed. If you want to use APIs, we assume you have the necessary programming skills.
+The following sections explain how to use the Connect Customer console to enable AI agents. Follow them in the order listed. If you want to use APIs, we assume you have the necessary programming skills.
 
 **Topics**
 + [Supported content types](#q-content-types)
@@ -19,7 +19,7 @@ The following sections explain how to use the Connect Customer console to enable
 + [Step 1: Create a domain](#enable-ai-agents-step1)
 + [Step 2: Encrypt the domain](#enable-ai-agents-step-2)
 + [Step 3: Create an integration (knowledge base)](#enable-ai-agents-step-3)
-+ [Step 4: Configure your flow for Connect AI agents](#enable-ai-agents-step4)
++ [Step 4: Configure your flow for agent assist](#enable-ai-agents-step4)
 + [What if I have multiple knowledge bases?](#multiple-knowledge-base-tips)
 + [When was your knowledge base last updated?](#enable-ai-agents-tips)
 + [Cross-region inference service](#enable-ai-agents-cross-region-inference-service)
@@ -27,19 +27,19 @@ The following sections explain how to use the Connect Customer console to enable
 ## Supported content types
 <a name="q-content-types"></a>
 
-Connect AI agents support the ingestion of HTML, Word, PDF, and text files up to 1 MB. Note the following:
+AI agents support the ingestion of HTML, Word, PDF, and text files up to 1 MB. Note the following:
 + Plain text files must be in UTF-8.
 + Word documents must be in DOCX format.
 + Word documents are automatically converted to simplified HTML and will not retain the source document’s font family, size, color, highlighting, alignment, or other formatting such as background colors, headers or footers.
 + PDF files cannot be encrypted or password protected.
 + Actions and scripts embedded into PDF files are not supported.
 
-For a list of adjustable quotas, such as the number of quick responses per knowledge base, see [Connect AI agents service quotas](amazon-connect-service-limits.md#connect-ai-agents-quotas).
+For a list of adjustable quotas, such as the number of quick responses per knowledge base, see [Connect Customer agent assist service quotas](amazon-connect-service-limits.md#connect-ai-agents-quotas).
 
 ## Integration overview
 <a name="ai-agent-overview"></a>
 
-You follow these broad steps to enable Connect AI agents:
+You follow these broad steps to enable AI agents:
 
 1. Create a domain (assistant). A domain consists of a single knowledge base, such as SalesForce or Zendesk.
 
@@ -60,9 +60,9 @@ You follow these broad steps to enable Connect AI agents:
 
 Following is an overview of key concepts and the information that you'll be prompted for during the setup process.
 
-To start using Connect AI agents, you must create a *domain*: an assistant that consists of one knowledge base. Follow these guidelines when creating domains:
+To start using AI agents, you must create a *domain*: an assistant that consists of one knowledge base. Follow these guidelines when creating domains:
 + You can create multiple domains, but they don't share external application integrations or customer data between each other.
-+ You can associate each domain with one or more Connect Customer instances, but you can only associate an Connect Customer instance with one domain.
++ You can associate each domain with one or more Connect Customer instances, but you can only associate a Connect Customer instance with one domain.
 **Note**
 All the external application integrations you create are at a domain level. All Connect Customer instances associated with a domain inherit the domain's integrations.
 You can associate your Connect Customer instance with a different domain at any time by choosing a different domain.
@@ -77,18 +77,18 @@ When you create a domain, you are prompted to provide a friendly domain name tha
 ### (Optional) Create AWS KMS keys to encrypt the domain and the content
 <a name="enable-awsmanagedkey-ai-agents"></a>
 
-When you enable Connect AI agents, by default the domain and connection are encrypted with an AWS owned key. However, if you want to manage the keys, you can create or provide two [AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys):
-+ Use one key for the Connect AI agents domain, used to encrypt the excerpt provided in the recommendations.
-+ Use the second key to encrypt the content imported from Amazon S3, Microsoft SharePoint Online, Salesforce, ServiceNow, or ZenDesk. Note that Connect AI agents search indices are always encrypted at rest using an AWS owned key.
+When you enable agent assist, by default the domain and connection are encrypted with an AWS owned key. However, if you want to manage the keys, you can create or provide two [AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys):
++ Use one key for the agent assist domain, used to encrypt the excerpt provided in the recommendations.
++ Use the second key to encrypt the content imported from Amazon S3, Microsoft SharePoint Online, Salesforce, ServiceNow, or ZenDesk. Note that agent assist search indices are always encrypted at rest using an AWS owned key.
 
 To create KMS keys, follow the steps in [Step 1: Create a domain](#enable-ai-agents-step1), later in this section.
 
 Your customer managed key is created, owned, and managed by you. You have full control over the KMS key, and AWS KMS charges apply.
 
-If you choose to set up a KMS key where someone else is the administrator, the key must have a policy that allows `kms:CreateGrant`, `kms:DescribeKey`, and `kms:Decrypt` and `kms:GenerateDataKey*` permissions to the IAM identity using the key to invoke Connect AI agents. To use Connect AI agents with chat, task, and emails, the key policy for your Connect AI agents domain must allow `kms:Decrypt`, `kms:GenerateDataKey*`, and `kms:DescribeKey` permissions to the `connect.amazonaws.com` service principal.
+If you choose to set up a KMS key where someone else is the administrator, the key must have a policy that allows `kms:CreateGrant`, `kms:DescribeKey`, and `kms:Decrypt` and `kms:GenerateDataKey*` permissions to the IAM identity using the key to invoke agent assist. To use agent assist with chat, task, and emails, the key policy for your agent assist domain must allow `kms:Decrypt`, `kms:GenerateDataKey*`, and `kms:DescribeKey` permissions to the `connect.amazonaws.com` service principal.
 
 **Note**
-To use Connect AI agents with chat, task, and emails, the key policy for your domain must grant the `connect.amazonaws.com` service principal the following permissions:
+To use AI agents with chat, task, and emails, the key policy for your domain must grant the `connect.amazonaws.com` service principal the following permissions:
 `kms:GenerateDataKey*`
 `kms:DescribeKey`
 `kms:Decrypt`
@@ -97,7 +97,7 @@ For information about how to change a key policy, see [Changing a key policy](ht
 ## Step 1: Create a domain
 <a name="enable-ai-agents-step1"></a>
 
-The following steps explain how to add a domain to an Connect Customer instance, and how to add an integration to the domain. To complete these steps, you must have an instance without a domain.
+The following steps explain how to add a domain to a Connect Customer instance, and how to add an integration to the domain. To complete these steps, you must have an instance without a domain.
 
 1. Open the Connect Customer console at [https://console.aws.amazon.com/connect/](https://console.aws.amazon.com/connect/).
 
@@ -191,7 +191,7 @@ The following example shows a typical policy.
 
    1. On the **Review and edit key policy** page, scroll down to **Key policy**.
 **Note**
-To use Connect AI agents with chats, tasks, and emails, modify the key policy to allow the `kms:Decrypt`, ` kms:GenerateDataKey*`, and `kms:DescribeKey` permissions to the ` connect.amazonaws.com` service principal. The following code shows a sample policy.
+To use agent assist with chats, tasks, and emails, modify the key policy to allow the `kms:Decrypt`, ` kms:GenerateDataKey*`, and `kms:DescribeKey` permissions to the ` connect.amazonaws.com` service principal. The following code shows a sample policy.
 
 ****
 
@@ -229,7 +229,7 @@ To use Connect AI agents with chats, tasks, and emails, modify the key policy to
       In the following example, the name of the KMS key starts with **82af7d87**.
 ![The Customer managed keys page showing a typical key.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-create-kms-key.png)
 
-1. Return to the **Connect AI agents** browser tab, open the **AWS KMS key** list, and select the key that you created in the previous steps.
+1. Return to the **agent assist** browser tab, open the **AWS KMS key** list, and select the key that you created in the previous steps.
 ![Encryption settings interface with option to customize and select an AWS KMS key.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-choose-kms-key.png)
 
 1. Choose **Add domain**.
@@ -306,7 +306,7 @@ By default, the system automatically selects all required fields.
 
 1. Under **Integration setup**, select the checkbox next to **Read and acknowledge that your ServiceNow account meets the integration requirements.**.
 **Important**
-You must enable versioning on your ServiceNow knowledge base articles. Connect AI agents requires versioning to correctly identify and ingest the latest version of your articles. Without versioning enabled, the integration will fail to create.
+You must enable versioning on your ServiceNow knowledge base articles. AI agents requires versioning to correctly identify and ingest the latest version of your articles. Without versioning enabled, the integration will fail to create.
 
 1. In the **Integration name** box, enter a name for the integration.
 **Tip**
@@ -565,16 +565,16 @@ You have successfully integrated an existing Bedrock Knowledge Base with Connect
 If you delete objects from SaaS applications, such as SalesForce and ServiceNow, Connect Customer knowledge bases do not process those deletions. You must archive objects in SalesForce and retire articles in ServiceNow to remove them from those knowledge bases.
 For Zendesk, Connect Customer knowledge bases do not process hard deletes or archives of articles. You must unpublish articles in Zendesk to remove them from your knowledge base.
 For Microsoft SharePoint Online, you can select a maximum of 10 folders.
-Connect Customer automatically adds an `AmazonConnectEnabled:True` tag to the Connect AI agent resources associated with your Connect Customer instance, such as a knowledge base and an Assistant. It does this to authorize the access from Connect Customer to Connect AI agent resources. This action is a result of the tag-based access control in the managed policy of the Connect Customer service linked role. For more information, see [Service-linked role permissions for Connect Customer](connect-slr.md#slr-permissions).
+Connect Customer automatically adds an `AmazonConnectEnabled:True` tag to the AI agent resources associated with your Connect Customer instance, such as a knowledge base and an Assistant. It does this to authorize the access from Connect Customer to AI agent resources. This action is a result of the tag-based access control in the managed policy of the Connect Customer service linked role. For more information, see [Service-linked role permissions for Connect Customer](connect-slr.md#slr-permissions).
 
-## Step 4: Configure your flow for Connect AI agents
+## Step 4: Configure your flow for agent assist
 <a name="enable-ai-agents-step4"></a>
 
-1. Add a [Connect assistant](connect-assistant-block.md) block to your flow. The block associates an Connect AI agents domain to the current contact. This enables you to display information from a specific domain, based on criteria about the contact.
+1. Add a [Connect assistant](connect-assistant-block.md) block to your flow. The block associates an agent assist domain to the current contact. This enables you to display information from a specific domain, based on criteria about the contact.
 
    If you choose to [customize](customize-connect-ai-agents.md) the experience, you will instead create a Lambda and then use an [AWS Lambda function](invoke-lambda-function-block.md) block to add it to your flows.
 
-1. To use Connect AI agents with calls, you must enable Contact Lens conversational analytics in the flow by adding a [Set recording and analytics behavior](set-recording-behavior.md) block that is configured for Contact Lens conversational analytics real-time. It doesn't matter where in the flow you add the [Set recording and analytics behavior](set-recording-behavior.md) block.
+1. To use AI agents with calls, you must enable conversational analytics in the flow by adding a [Set recording and analytics behavior](set-recording-behavior.md) block that is configured for conversational analytics real-time. It doesn't matter where in the flow you add the [Set recording and analytics behavior](set-recording-behavior.md) block.
 
 ## What if I have multiple knowledge bases?
 <a name="multiple-knowledge-base-tips"></a>
@@ -589,7 +589,7 @@ To confirm the last date and time that your knowledge base was updated (meaning 
 ## Cross-region inference service
 <a name="enable-ai-agents-cross-region-inference-service"></a>
 
-Connect AI agents uses [cross-region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html) to automatically select the optimal AWS Region for processing your data, improving the customer experience by maximizing available resources and model availability. If you do not want your data processed in a different region from what you selected, you can contact AWS Support.
+agent assist uses [cross-region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html) to automatically select the optimal AWS Region for processing your data, improving the customer experience by maximizing available resources and model availability. If you do not want your data processed in a different region from what you selected, you can contact AWS Support.
 
 **Note**
 While existing Custom prompts will continue using in-region inference, we recommend upgrading to the latest supported models to benefit from cross-region inference capabilities. You can contact AWS Support for migration assistance of your existing prompts.

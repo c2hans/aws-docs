@@ -41,7 +41,7 @@ If the AWS Backup default role is not present in your account, a **Default role*
 ## Restore Storage Gateway with AWS CLI
 <a name="restoring-sgw-cli"></a>
 
-In the command line interface, [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/start-restore-job.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/start-restore-job.html) allows you to restore a Storage Gateway volume.
+In the command line interface, [`start-restore-job`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/start-restore-job.html) allows you to restore a Storage Gateway volume.
 
 The following list is the accepted metadata.
 

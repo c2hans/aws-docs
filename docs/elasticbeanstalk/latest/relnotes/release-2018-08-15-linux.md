@@ -12,16 +12,27 @@ This release applies security updates to Linux-based platforms for AWS Elastic B
 ## Changes
 <a name="release-2018-08-15-linux.changes"></a>
 
-| **Category** | **Description** |
-| --- | --- |
-| **Instance type** | **Regions** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before August 6, 2018 to all Linux-based platforms. |
-| **PHP** | Added support for PHP 7.2 in a [new PHP configuration](#release-2018-08-15-linux.platforms.PHP). It is released side-by-side with the existing supported PHP configurations. |
-| **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-08-15-linux.html) |
-| **z1d** |  + US East (N. Virginia)—us-east-1<br />+ US West (N. California)—us-west-1<br />+ US West (Oregon)—us-west-2<br />+ Asia Pacific (Singapore)—ap-southeast-1<br />+ Asia Pacific (Tokyo)—ap-northeast-1<br />+ EU (Ireland)—eu-west-1  |
-| **r5** |  + US East (N. Virginia)—us-east-1<br />+ US East (Ohio)—us-east-2<br />+ US West (Oregon)—us-west-2<br />+ EU (Ireland)—eu-west-1  |
-| **r5d** |  + US East (N. Virginia)—us-east-1<br />+ US East (Ohio)—us-east-2<br />+ US West (Oregon)—us-west-2  |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/">Amazon Linux Security Center</a> on or before August 6, 2018 to all Linux-based platforms.</td></tr>
+  <tr><td><b>PHP</b></td><td>Added support for PHP 7.2 in a <a href="#release-2018-08-15-linux.platforms.PHP">new PHP configuration</a>. It is released side-by-side with the existing supported PHP configurations.</td></tr>
+  <tr><td><b>Instance types</b></td><td>Added support for more Amazon EC2 instance types in some AWS Regions, as follows:
+<table>
+<thead>
+  <tr><th><b>Instance type</b></th><th><b>Regions</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>z1d</b></td><td> <ul><li>US East (N. Virginia)—us-east-1</li><li>US West (N. California)—us-west-1</li><li>US West (Oregon)—us-west-2</li><li>Asia Pacific (Singapore)—ap-southeast-1</li><li>Asia Pacific (Tokyo)—ap-northeast-1</li><li>EU (Ireland)—eu-west-1</li></ul> </td></tr>
+  <tr><td><b>r5</b></td><td> <ul><li>US East (N. Virginia)—us-east-1</li><li>US East (Ohio)—us-east-2</li><li>US West (Oregon)—us-west-2</li><li>EU (Ireland)—eu-west-1</li></ul> </td></tr>
+  <tr><td><b>r5d</b></td><td> <ul><li>US East (N. Virginia)—us-east-1</li><li>US East (Ohio)—us-east-2</li><li>US West (Oregon)—us-west-2</li></ul> </td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## Updated platform configurations
 <a name="release-2018-08-15-linux.platforms"></a>

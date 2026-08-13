@@ -14,7 +14,7 @@ First, retrieve the Docker image URI, training script URI, and pretrained model 
 **Note**
 Default hyperparameter values are different for different models. For larger models, the default batch size is smaller and the `train_only_top_layer` hyperparameter is set to `"True"`.
 
-This example uses the [https://www.tensorflow.org/datasets/catalog/tf_flowers](https://www.tensorflow.org/datasets/catalog/tf_flowers) dataset, which contains five classes of flower images. We pre-downloaded the dataset from TensorFlow under the Apache 2.0 license and made it available with Amazon S3. To fine-tune your model, call `.fit` using the Amazon S3 location of your training dataset.
+This example uses the [`tf_flowers`](https://www.tensorflow.org/datasets/catalog/tf_flowers) dataset, which contains five classes of flower images. We pre-downloaded the dataset from TensorFlow under the Apache 2.0 license and made it available with Amazon S3. To fine-tune your model, call `.fit` using the Amazon S3 location of your training dataset.
 
 ```
 from sagemaker.core import image_uris

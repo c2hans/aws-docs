@@ -9,7 +9,7 @@ Computer systems can generate a large amount of telemetry, including both metric
 
 The Amazon CloudWatch **Explore related** feature offers access to AWS resource relationships, related metrics, and logs across service consoles, enhancing observability and efficiency for operators of all skill levels. When viewing alarms or anomalies in CloudWatch dashboards, or metrics in AWS, users can quickly find and view metrics and logs for related resources in your system.
 
-CloudWatch provides visibility into metrics and logs tied to specific resources, and the **Explore related** pane extends that by allowing you to correlate your infrastructure resources to your workloads with all of their associated telemetry. This gives you quick access to the information you need to troubleshoot infrastructure-related issues. You view the relationship between resources, and their related telemetry in the **Explore related** pane. The **Explore related** pane is accessed from CloudWatch or from other AWS consoles showing resources or telemetry.
+CloudWatch provides visibility into metrics and logs tied to specific resources. The **Explore related** pane extends that by allowing you to correlate your infrastructure resources to your workloads with all of their associated telemetry. This gives you quick access to the information you need to troubleshoot infrastructure-related issues. You view the relationship between resources, and their related telemetry in the **Explore related** pane. The **Explore related** pane is accessed from CloudWatch or from other AWS consoles showing resources or telemetry.
 
 **Note**
 **Explore related** is currently limited in accounts set up as monitoring accounts in CloudWatch cross-account observability. You should access **Explore related** from the source accounts where the resources are originally created and managed. In source accounts, you can navigate between connected resources, and view related logs and metrics.
@@ -142,4 +142,4 @@ Each of the following AWS managed policies will provide the CloudWatch permissio
 
 Additionally, you must have at least read-only access (`Describe*` and `Get*`) to any resources in the topology map, in order for CloudWatch to discover and display relationships.
 
-For more details about using policies to control access, see [Managing access using policies](auth-and-access-control-cw.md#security_iam_access-manage).
+For more details about using policies to control access, see [Identity-based policy examples for Amazon CloudWatch](security_iam_id-based-policy-examples.md).

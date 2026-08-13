@@ -41,7 +41,7 @@ cd my-project
 cdk init app --language typescript
 ```
 
-Creating a project also installs the [https://docs.aws.amazon.com/cdk/api/v2/docs/core-readme.html](https://docs.aws.amazon.com/cdk/api/v2/docs/core-readme.html) module and its dependencies.
+Creating a project also installs the [`core`](https://docs.aws.amazon.com/cdk/api/v2/docs/core-readme.html) module and its dependencies.
 
 `cdk init` uses the name of the project folder to name various elements of the project, including classes, subfolders, and files. Hyphens in the folder name are converted to underscores. However, the name should otherwise follow the form of a TypeScript identifier; for example, it should not start with a number or contain spaces.
 

@@ -48,7 +48,7 @@ If a CloudFormation restore operation fails, the stack may remain in `REVIEW_IN_
 ## Restore CloudFormation with AWS CLI
 <a name="restoring-cfn-cli"></a>
 
-In the command line interface, [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/start-restore-job.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/start-restore-job.html) allows you to restore a CloudFormation stack.
+In the command line interface, [`start-restore-job`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/start-restore-job.html) allows you to restore a CloudFormation stack.
 
 The following list is the accepted metadata to restore an CloudFormation resource.
 

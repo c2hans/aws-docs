@@ -10,10 +10,10 @@ This topic defines the flow block for Connect assistant.
 ## Description
 <a name="connect-assistant-block-description"></a>
 + Associates an Connect assistant domain to a contact to enable real-time recommendations.
-+ For more information about enabling Connect AI agents, see [Use Connect AI agents for real-time assistance](connect-ai-agent.md).
++ For more information about enabling AI agents, see [Use AI agents for real-time assistance](connect-ai-agent.md).
 
 **Tip**
-If you choose to [customize](customize-connect-ai-agents.md) your Connect AI agents, instead of adding this block to your flows, you need to create a Lambda and then use the [AWS Lambda function](invoke-lambda-function-block.md) block to add it to your flows.
+If you choose to [customize](customize-connect-ai-agents.md) your AI agents, instead of adding this block to your flows, you need to create a Lambda and then use the [AWS Lambda function](invoke-lambda-function-block.md) block to add it to your flows.
 
 ## Supported channels
 <a name="connect-assistant-block-channels"></a>
@@ -49,10 +49,10 @@ The following image shows the **Config** tab of the **Connect assistant** block 
 
 ## Configuration tips
 <a name="connect-assistant-block-tips"></a>
-+ To use Connect AI agents with calls, you must enable Connect Customer Contact Lens in the flow by adding a [Set recording and analytics behavior](set-recording-behavior.md) block that is configured for Contact Lens real-time. It doesn't matter where in the flow you add the [Set recording and analytics behavior](set-recording-behavior.md) block.
++ To use AI agents with calls, you must enable Connect Customer conversational analytics in the flow by adding a [Set recording and analytics behavior](set-recording-behavior.md) block that is configured for conversational analytics real-time. It doesn't matter where in the flow you add the [Set recording and analytics behavior](set-recording-behavior.md) block.
 
-  Connect AI agents, along with Contact Lens real-time analytics, are used to recommend content that is related to customer issues detected during the current call.
-+ Contact Lens is not required to use Connect AI agents with chats.
+  AI agents, along with real-time conversational analytics, are used to recommend content that is related to customer issues detected during the current call.
++ Conversational analytics is not required to use AI agents with chats.
 
 ## Configured block
 <a name="connect-assistant-block-configured"></a>

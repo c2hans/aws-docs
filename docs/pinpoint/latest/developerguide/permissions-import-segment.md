@@ -57,7 +57,7 @@ Complete the following steps to create the IAM role by using the AWS Command Lin
    + Replace {{accountId}} with the unique ID for your AWS account.
    + Replace {{application-id}} with the unique ID of the project.
 
-1. At the command line, use the [https://docs.aws.amazon.com/cli/latest/reference/iam/create-role.html](https://docs.aws.amazon.com/cli/latest/reference/iam/create-role.html) command to create the role and attach the trust policy:
+1. At the command line, use the [`create-role`](https://docs.aws.amazon.com/cli/latest/reference/iam/create-role.html) command to create the role and attach the trust policy:
 
    ```
    aws iam create-role --role-name {{PinpointSegmentImport}} --assume-role-policy-document file://{{PinpointImportTrustPolicy}}.json
@@ -67,7 +67,7 @@ Complete the following steps to create the IAM role by using the AWS Command Lin
 
    After you run this command, you see output that's similar to the following in your terminal:
 
-1. Use the [https://docs.aws.amazon.com/cli/latest/reference/iam/attach-role-policy.html](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-role-policy.html) command to attach the `AmazonS3ReadOnlyAccess` AWS managed policy to the role:
+1. Use the [`attach-role-policy`](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-role-policy.html) command to attach the `AmazonS3ReadOnlyAccess` AWS managed policy to the role:
 
    ```
    aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess --role-name {{PinpointSegmentImport}}

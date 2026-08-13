@@ -147,7 +147,7 @@ The `KeySpec` determines whether the KMS key contains a symmetric key or an asym
   +  `ECC_NIST_P384` (secp384r1)
   +  `ECC_NIST_P521` (secp521r1)
   +  `ECC_NIST_EDWARDS25519` (ed25519) - signing and verification only
-    +  **Note:** For ECC\_NIST\_EDWARDS25519 KMS keys, the ED25519\_SHA\_512 signing algorithm requires [kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType](kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType), while ED25519\_PH\_SHA\_512 requires [kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType](kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType). These message types cannot be used interchangeably.
+    +  **Note:** For ECC\_NIST\_EDWARDS25519 KMS keys, the ED25519\_SHA\_512 signing algorithm requires [`MessageType:RAW`](kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType), while ED25519\_PH\_SHA\_512 requires [`MessageType:DIGEST`](kms/latest/APIReference/API_Sign.html#KMS-Sign-request-MessageType). These message types cannot be used interchangeably.
 + Other asymmetric elliptic curve key pairs (signing and verification)
   +  `ECC_SECG_P256K1` (secp256k1), commonly used for cryptocurrencies.
 + Asymmetric ML-DSA key pairs (signing and verification)
@@ -161,7 +161,7 @@ Valid Values: `RSA_2048 | RSA_3072 | RSA_4096 | ECC_NIST_P256 | ECC_NIST_P384 | 
 Required: No
 
  ** [KeyUsage](#API_CreateKey_RequestSyntax) **   <a name="KMS-CreateKey-request-KeyUsage"></a>
-Determines the [cryptographic operations](https://docs.aws.amazon.com/kms/latest/developerguide/kms-cryptography.html#cryptographic-operations) for which you can use the KMS key. The default value is `ENCRYPT_DECRYPT`. This parameter is optional when you are creating a symmetric encryption KMS key; otherwise, it is required. You can't change the [https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html#key-usage](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html#key-usage) value after the KMS key is created. Each AWS KMS key can have only one key usage. This follows key usage best practices according to [NIST SP 800-57 Recommendations for Key Management](https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final), section 5.2, Key usage.
+Determines the [cryptographic operations](https://docs.aws.amazon.com/kms/latest/developerguide/kms-cryptography.html#cryptographic-operations) for which you can use the KMS key. The default value is `ENCRYPT_DECRYPT`. This parameter is optional when you are creating a symmetric encryption KMS key; otherwise, it is required. You can't change the [`KeyUsage`](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html#key-usage) value after the KMS key is created. Each AWS KMS key can have only one key usage. This follows key usage best practices according to [NIST SP 800-57 Recommendations for Key Management](https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final), section 5.2, Key usage.
 Select only one valid value.
 + For symmetric encryption KMS keys, omit the parameter or specify `ENCRYPT_DECRYPT`.
 + For HMAC KMS keys (symmetric), specify `GENERATE_VERIFY_MAC`.

@@ -32,7 +32,7 @@ EOF
 First start the Deadline Cloud worker agent in an CloudShell tab. Let any previously submitted jobs finish running, then delete the job logs from the logs directory:
 
 ```
-rm -rf ~/devdemo-logs/queue-*
+rm -rf ~/demoenv-logs/queue-*
 ```
 
  Next, submit a job using the modified `job_attachments_devguide_output` job bundle. Wait for it to finish running on the worker in your CloudShell environment. Look at the logs for the two sessions:
@@ -85,5 +85,5 @@ Total processing time of 0.03227 seconds at 3.62 KB/s.
 
 ```
 2024-07-17 02:52:06,213 INFO Output:
-2024-07-17 02:52:06,216 INFO Script location: /sessions/session-{{5b33f}}/assetroot-{{assetroot-3751a}}/script.sh
+2024-07-17 02:52:06,216 INFO Script location: /sessions/session-{{5b33f}}/assetroot-{{3751a}}/script.sh
 ```

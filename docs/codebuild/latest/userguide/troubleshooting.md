@@ -231,7 +231,7 @@ pre_build:
 
 **Possible cause:** In buildspec file version 0.1, AWS CodeBuild runs each command in a separate instance of the default shell in the build environment. This means that each command runs in isolation from all other commands. By default, then, you cannot run a single command that relies on the state of any previous commands.
 
-**Recommended solutions:** We recommend that you use build spec version 0.2, which solves this issue. If you must use buildspec version 0.1, we recommend that you use the shell command chaining operator (for example, `&&` in Linux) to combine multiple commands into a single command. Or include a shell script in your source code that contains multiple commands, and then call that shell script from a single command in the buildspec file. For more information, see [Shells and commands in build environments](build-env-ref-cmd.md) and [Environment variables in build environments](build-env-ref-env-vars.md).
+**Recommended solutions:** We recommend that you use buildspec version 0.2, which solves this issue. If you must use buildspec version 0.1, we recommend that you use the shell command chaining operator (for example, `&&` in Linux) to combine multiple commands into a single command. Or include a shell script in your source code that contains multiple commands, and then call that shell script from a single command in the buildspec file. For more information, see [Shells and commands in build environments](build-env-ref-cmd.md) and [Environment variables in build environments](build-env-ref-env-vars.md).
 
 ## Error: "Access denied" when attempting to download cache
 <a name="troubleshooting-dependency-caching"></a>
@@ -429,7 +429,7 @@ artifacts:
 
  **Possible cause:** You configured caching as part of your build project and are using an older Docker image that includes an expired root certificate.
 
- **Recommended solution:** Update the Docker image that is being used in your AWS CodeBuild the project. For more information, see [Docker images provided by CodeBuild](build-env-ref-available.md).
+ **Recommended solution:** Update the Docker image that is being used in your AWS CodeBuild project. For more information, see [Docker images provided by CodeBuild](build-env-ref-available.md).
 
 ## Error: "Unable to download certificate from S3. AccessDenied"
 <a name="troubleshooting-certificate-in-S3"></a>
@@ -526,7 +526,7 @@ artifacts:
 
 **Possible cause:** The Bourne shell (`sh`) is not included in your build image. CodeBuild needs `sh` to run build commands and scripts.
 
-**Recommended solution:** If `sh` in not present in your build image, be sure to include it before you start any more builds that use your image. (CodeBuild already includes `sh` in its build images.)
+**Recommended solution:** If `sh` is not present in your build image, be sure to include it before you start any more builds that use your image. (CodeBuild already includes `sh` in its build images.)
 
 ## Warning: "Skipping install of runtimes. runtime version selection is not supported by this build image" when running a build
 <a name="troubleshooting-skipping-all-runtimes-warning"></a>
@@ -553,7 +553,7 @@ artifacts:
 
 **Possible cause:** The number of concurrent builds has been reached.
 
-**Recommended solutions:** Wait until other builds are complete, or increase the concurrrent build limit for the project, and start the build again. For more information, see [Project configuration](create-project.md#create-project-console-project-config).
+**Recommended solutions:** Wait until other builds are complete, or increase the concurrent build limit for the project, and start the build again. For more information, see [Project configuration](create-project.md#create-project-console-project-config).
 
 ## Accessing GitHub metadata in locally cached builds
 <a name="troubleshooting-github-metadata"></a>
@@ -590,7 +590,7 @@ git rev-parse --git-dir
 + The new permission scope may not have been accepted in your Bitbucket account.
 
 **Recommended solutions:**
-+ To accept the new permission, you should have received any email with a subject titled **Action required - Scopes for AWS CodeStar have changed** sent by Bitbucket, `notifications-noreply@bitbucket.org`. The email contains a link to grant the webhook permissions to your existing CodeConnections Bitbucket app installation.
++ To accept the new permission, you should have received an email with a subject titled **Action required - Scopes for AWS CodeStar have changed** sent by Bitbucket, `notifications-noreply@bitbucket.org`. The email contains a link to grant the webhook permissions to your existing CodeConnections Bitbucket app installation.
 + If you cannot locate the email, you can grant the permission by navigating to `https://bitbucket.org/site/addons/reauthorize?account={{<workspace-name>}}&addon_key=aws-codestar`, or `https://bitbucket.org/site/addons/reauthorize?addon_key=aws-codestar` and selecting the workspace you'd like to grant the webhook permission to.
 ![Grant the webhook permission to your workspace.](http://docs.aws.amazon.com/codebuild/latest/userguide/images/bitbucket-csc.png)
 

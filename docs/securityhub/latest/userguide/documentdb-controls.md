@@ -18,7 +18,7 @@ These AWS Security Hub CSPM controls evaluate the Amazon DocumentDB (with MongoD
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/docdb-cluster-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/docdb-cluster-encrypted.html)
+**AWS Config rule:** [docdb-cluster-encrypted](https://docs.aws.amazon.com/config/latest/developerguide/docdb-cluster-encrypted.html)
 
 **Schedule type:** Change triggered
 
@@ -44,7 +44,7 @@ You can enable encryption at rest when you create an Amazon DocumentDB cluster. 
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/docdb-cluster-backup-retention-check.html](https://docs.aws.amazon.com/config/latest/developerguide/docdb-cluster-backup-retention-check.html)
+**AWS Config rule:** [docdb-cluster-backup-retention-check](https://docs.aws.amazon.com/config/latest/developerguide/docdb-cluster-backup-retention-check.html)
 
 **Schedule type:** Change triggered
 
@@ -74,7 +74,7 @@ To change the backup retention period for your Amazon DocumentDB clusters, see [
 
 **Resource type:** `AWS::RDS::DBClusterSnapshot`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/docdb-cluster-snapshot-public-prohibited.html](https://docs.aws.amazon.com/config/latest/developerguide/docdb-cluster-snapshot-public-prohibited.html)
+**AWS Config rule:** [docdb-cluster-snapshot-public-prohibited](https://docs.aws.amazon.com/config/latest/developerguide/docdb-cluster-snapshot-public-prohibited.html)
 
 **Schedule type:** Change triggered
 
@@ -103,7 +103,7 @@ To remove public access for Amazon DocumentDB manual cluster snapshots, see [Sha
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/docdb-cluster-audit-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/docdb-cluster-audit-logging-enabled.html)
+**AWS Config rule:** [docdb-cluster-audit-logging-enabled](https://docs.aws.amazon.com/config/latest/developerguide/docdb-cluster-audit-logging-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -129,7 +129,7 @@ To publish Amazon DocumentDB audit logs to CloudWatch Logs, see [Enabling auditi
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/docdb-cluster-deletion-protection-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/docdb-cluster-deletion-protection-enabled.html)
+**AWS Config rule:** [docdb-cluster-deletion-protection-enabled](https://docs.aws.amazon.com/config/latest/developerguide/docdb-cluster-deletion-protection-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -153,7 +153,7 @@ To enable deletion protection for an existing Amazon DocumentDB cluster, see [Mo
 
 **Resource type:** `AWS::RDS::DBCluster`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/docdb-cluster-encrypted-in-transit.html](https://docs.aws.amazon.com/config/latest/developerguide/docdb-cluster-encrypted-in-transit.html)
+**AWS Config rule:** [docdb-cluster-encrypted-in-transit](https://docs.aws.amazon.com/config/latest/developerguide/docdb-cluster-encrypted-in-transit.html)
 
 **Schedule type:** Periodic
 

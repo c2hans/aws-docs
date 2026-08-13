@@ -15,7 +15,7 @@ For instructions on how you can update customer managed policies, see [Edit IAM 
 This table summarizes the permissions that grant access to your account settings. For examples of policies that use these permissions, see [Identity-based policy examples for AWS Account Management](security_iam_id-based-policy-examples.md).
 
 **Note**
-To grant IAM users write access to a specific account setting in the [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account) page of the AWS Management Console, you must allow the `GetAccountInformation` permission, in addition to the permission (or permissions) that you want to use to modify that setting.
+To grant IAM users write access to a specific account setting in the [**Account**](https://console.aws.amazon.com/billing/home#/account) page of the AWS Management Console, you must allow the `GetAccountInformation` permission, in addition to the permission (or permissions) that you want to use to modify that setting.
 
 ****
 

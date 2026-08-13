@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 # AWS Systems Manager Change Calendar
 <a name="systems-manager-change-calendar"></a>
 
-Change Calendar, a tool in AWS Systems Manager, allows you to set up date and time ranges when actions you specify (for example, in [Systems Manager Automation](systems-manager-automation.md) runbooks) might or might not be performed in your AWS account. In Change Calendar, these ranges are called *events*. When you create a Change Calendar entry, you're creating a [Systems Manager document](documents.md) of the type `ChangeCalendar`. In Change Calendar, the document stores [iCalendar 2.0](https://icalendar.org/) data in plaintext format. Events that you add to the Change Calendar entry become part of the document. To get started with Change Calendar, open the [Systems Manager console](https://console.aws.amazon.com//systems-manager/change-calendar). In the navigation pane, choose **Change Calendar**.
+With Change Calendar, you can set up date and time ranges when actions you specify (for example, in [Systems Manager Automation](systems-manager-automation.md) runbooks) might or might not be performed in your AWS account. In Change Calendar, these ranges are called *events*. When you create a Change Calendar entry, you're creating a [Systems Manager document](documents.md) of the type `ChangeCalendar`. In Change Calendar, the document stores [iCalendar 2.0](https://icalendar.org/) data in plaintext format. Events that you add to the Change Calendar entry become part of the document. To get started with Change Calendar, open the [Systems Manager console](https://console.aws.amazon.com//systems-manager/change-calendar). In the navigation pane, choose **Change Calendar**.
 
 You can create a calendar and its events in the Systems Manager console. You can also import an iCalendar (`.ics`) file that you have exported from a supported third-party calendar provider to add its events to your calendar. Supported providers include Google Calendar, Microsoft Outlook, and iCloud Calendar.
 
@@ -41,7 +41,7 @@ AWS Systems Manager Change Manager will no longer be open to new customers star
 The following are some benefits of Change Calendar.
 + **Review changes before they're applied**
 
-  A Change Calendar entry can help ensure that potentially destructive changes to your environment are reviewed before they're applied.
+  A Change Calendar entry can help make sure that potentially destructive changes to your environment are reviewed before they're applied.
 + **Apply changes only during appropriate times**
 
   Change Calendar entries help keep your environment stable during event times. For example, you can create a Change Calendar entry to block changes when you expect high demand on your resources, such as during a conference or public marketing promotion. A calendar entry can also block changes when you expect limited administrator support, such as during vacations or holidays. You can use a calendar entry to allow changes except for certain times of the day or week when there is limited administrator support to troubleshoot failed actions or deployments.

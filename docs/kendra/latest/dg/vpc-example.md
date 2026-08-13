@@ -72,7 +72,7 @@ The security group allows anyone within the VPC to connect to the database, and 
 
 Create a database to hold your documents, or you can use your existing database.
 
-For instructions on how to create a MySQL database, see [https://docs.aws.amazon.com/kendra/latest/dg/data-source-mysql.html](https://docs.aws.amazon.com/kendra/latest/dg/data-source-mysql.html).
+For instructions on how to create a MySQL database, see [MySQL](https://docs.aws.amazon.com/kendra/latest/dg/data-source-mysql.html).
 
 ## Step 4: Create a data source connector
 <a name="vpc-example-4"></a>

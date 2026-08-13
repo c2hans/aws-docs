@@ -19,7 +19,7 @@ Tanium is an endpoint management and security platform that provides real-time v
 
 **To set up Tanium Connect, Amazon S3, and Amazon SQS**
 
-1. In the AWS Console, create an Amazon S3 bucket in your desired region. Create separate prefixes (sub-folders) within the bucket for each log type to ensure clear log segregation and easier downstream processing.
+1. In the AWS Console, create an Amazon S3 bucket in your desired region. Create separate prefixes (sub-folders) within the bucket for each log type to make sure clear log segregation and easier downstream processing.
 
 1. Create an Amazon SQS Queue for Event Notifications. Create an Amazon SQS queue in the same AWS region as your Amazon S3 bucket. Configure Amazon S3 Event Notifications on the bucket to send `s3:ObjectCreated:*` events to the Amazon SQS queue. This enables downstream consumers to be notified when new log files are delivered.
 
@@ -42,7 +42,7 @@ Tanium is an endpoint management and security platform that provides real-time v
 ## Configuring the CloudWatch Pipeline
 <a name="tanium-pipeline-config"></a>
 
-When configuring the pipeline to read data from Tanium, choose Tanium as the data source. Using Tanium Connect, data from Tanium custom and default reports is exported to Amazon S3, with event notifications delivered through Amazon SQS. Once you create the pipeline, data will be available in the selected CloudWatch Logs log group.
+When configuring the pipeline to read data from Tanium, choose Tanium as the data source. Using Tanium Connect, data from Tanium custom and default reports is exported to Amazon S3, with event notifications delivered through Amazon SQS. After you create the pipeline, data will be available in the selected CloudWatch Logs log group.
 
 ## Supported Open Cybersecurity Schema Framework Event Classes
 <a name="tanium-ocsf-support"></a>

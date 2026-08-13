@@ -62,7 +62,7 @@ After you create an encrypted cluster, you can't change the KMS key for that clu
 ------
 #### [ Using the AWS CLI ]
 
-To encrypt an Amazon DocumentDB cluster using the AWS CLI, run the [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-clusters.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-clusters.html) command and specify the `--storage-encrypted` option. Amazon DocumentDB clusters created using the AWS CLI do not enable storage encryption by default.
+To encrypt an Amazon DocumentDB cluster using the AWS CLI, run the [`create-db-cluster`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-clusters.html) command and specify the `--storage-encrypted` option. Amazon DocumentDB clusters created using the AWS CLI do not enable storage encryption by default.
 
 The following example creates an Amazon DocumentDB cluster with storage encryption enabled.
 

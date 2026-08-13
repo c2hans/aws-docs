@@ -50,7 +50,7 @@ Review the following considerations for using template sync configurations.
 + If you change the branch your templates are syncing from, any ongoing syncs from the old branch first complete. Then syncing begins from the new branch.
 + If you change the repository your templates sync from, any ongoing syncs from the old repository might fail or run to completion. It depends on which stage of the sync they're in.
 
-For more information, see the [https://docs.aws.amazon.com/proton/latest/APIReference/Welcome.html](https://docs.aws.amazon.com/proton/latest/APIReference/Welcome.html).
+For more information, see the [*The AWS Proton Service API Reference*](https://docs.aws.amazon.com/proton/latest/APIReference/Welcome.html).
 
 **Topics**
 + [Pushing a commit to a synced template bundle](#ag-commits)

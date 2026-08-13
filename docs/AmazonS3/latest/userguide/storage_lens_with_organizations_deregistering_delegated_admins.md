@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage_lens_w
 
 After enabling trusted access, you can also deregister delegate administrator access to accounts in your organization. Delegated administrator accounts allow other accounts besides your [management account](https://docs.aws.amazon.com/managedservices/latest/userguide/management-account.html) to create organization-level dashboards. Only the management account of an organization can deregister accounts as delegated administrators for the organization.
 
-You can deregister a delegated administrator by using the AWS Organizations AWS Management Console, REST API, AWS CLI, or AWS SDKS from the management account. For more information, see [https://docs.aws.amazon.com/organizations/latest/APIReference/API_DeregisterDelegatedAdministrator.html](https://docs.aws.amazon.com/organizations/latest/APIReference/API_DeregisterDelegatedAdministrator.html) in the *AWS Organizations API Reference*.
+You can deregister a delegated administrator by using the AWS Organizations AWS Management Console, REST API, AWS CLI, or AWS SDKS from the management account. For more information, see [DeregisterDelegatedAdministrator](https://docs.aws.amazon.com/organizations/latest/APIReference/API_DeregisterDelegatedAdministrator.html) in the *AWS Organizations API Reference*.
 
 When an account is deregistered as a delegated administrator, the account loses access to the following:
 + All read-only AWS Organizations API operations that provide visibility to the members and structures of your organization.

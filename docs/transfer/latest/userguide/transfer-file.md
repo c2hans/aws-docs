@@ -54,7 +54,7 @@ For SFTP, the following operations are currently not supported for users that ar
   <tr><th colspan="4">Unsupported SFTP commands</th></tr>
 </thead>
 <tbody>
-  <tr><td>SSH\_FXP\_READLINK</td><td>SSH\_FXP\_SYMLINK</td><td>SSH\_FXP\_STAT when the requested file is a symlink</td><td>SSH\_FXP\_REALPATH when the requested path contains any symlink components</td></tr>
+  <tr><td>SSH_FXP_READLINK</td><td>SSH_FXP_SYMLINK</td><td>SSH_FXP_STAT when the requested file is a symlink</td><td>SSH_FXP_REALPATH when the requested path contains any symlink components</td></tr>
 </tbody>
 </table>
 

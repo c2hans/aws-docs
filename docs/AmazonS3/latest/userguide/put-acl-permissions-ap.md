@@ -42,9 +42,9 @@ aws s3api put-object-acl --bucket arn:aws:s3:{{AWS Region}}:111122223333:accessp
 **Note**
 S3 automatically generate access point aliases for all access points and these aliases can be used anywhere a bucket name is used to perform object-level operations. For more information, see [Access point aliases](access-points-naming.md#access-points-alias).
 
-For more information and examples, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-acl.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-acl.html) in the *AWS CLI Command Reference*.
+For more information and examples, see [put-object-acl](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-acl.html) in the *AWS CLI Command Reference*.
 
 ## Using the REST API
 <a name="put-acl-permissions-ap-rest"></a>
 
-You can use the REST API to configure access permissions through an access point using an ACL. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html) in the *Amazon Simple Storage Service API Reference*.
+You can use the REST API to configure access permissions through an access point using an ACL. For more information, see [PutObjectAcl](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html) in the *Amazon Simple Storage Service API Reference*.

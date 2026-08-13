@@ -48,7 +48,7 @@ The KMS key status changes to **Pending deletion**.
 ## Using the AWS KMS API
 <a name="deleting-keys-scheduling-key-deletion-cli"></a>
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/kms/schedule-key-deletion.html](https://docs.aws.amazon.com/cli/latest/reference/kms/schedule-key-deletion.html) command to schedule key deletion of a [customer managed key](concepts.md#customer-mgn-key), as shown in the following example.
+Use the [`aws kms schedule-key-deletion`](https://docs.aws.amazon.com/cli/latest/reference/kms/schedule-key-deletion.html) command to schedule key deletion of a [customer managed key](concepts.md#customer-mgn-key), as shown in the following example.
 
 You cannot schedule the deletion of an AWS managed key or AWS owned key.
 

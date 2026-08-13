@@ -398,7 +398,7 @@ For more information, see [Access management for AWS resources](https://docs.aws
 
 When you use the commands feature to start a command execution, AWS IoT Device Management will fetch the command and command parameters from the incoming request. It then requires permissions to access AWS IoT FleetWise resources to validate the request and generate the payload. The payload is then sent to the vehicle by AWS IoT Device Management over MQTT to the command request topic that your vehicle has subscribed to.
 
-You must first create an IAM role that grants AWS IoT Device Management the required permissions for generating the payload. Then, provide the ARN of this role to the [https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCommand.html](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCommand.html) API using the `roleArn` field. The following shows some policy examples.
+You must first create an IAM role that grants AWS IoT Device Management the required permissions for generating the payload. Then, provide the ARN of this role to the [`CreateCommand`](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCommand.html) API using the `roleArn` field. The following shows some policy examples.
 
 **Important**
 For the IAM role, you must use the same AWS Region as the one where you created the vehicle and command resources. If you switch AWS Region, you might have issues accessing the resources.

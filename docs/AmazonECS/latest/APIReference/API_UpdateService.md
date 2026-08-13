@@ -402,7 +402,7 @@ Required: No
 
  ** [serviceRegistries](#API_UpdateService_RequestSyntax) **   <a name="ECS-UpdateService-request-serviceRegistries"></a>
 You must have a service-linked role when you update this property.
-For more information about the role see the `CreateService` request parameter [https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateService.html#ECS-CreateService-request-role](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateService.html#ECS-CreateService-request-role).
+For more information about the role see the `CreateService` request parameter [`role`](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateService.html#ECS-CreateService-request-role).
 The details for the service discovery registries to assign to this service. For more information, see [Service Discovery](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-discovery.html).
 When you add, update, or remove the service registries configuration, Amazon ECS starts new tasks with the updated service registries configuration, and then stops the old tasks when the new tasks are running.
 You can remove existing `serviceRegistries` by passing an empty list.

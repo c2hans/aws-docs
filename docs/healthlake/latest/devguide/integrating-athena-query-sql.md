@@ -232,7 +232,7 @@ WHERE  valueCodeableConcept.coding[1].code = '266919005'
 -- WHERE meta.tag[1] is NULL
 ```
 
-This column was imported as an [https://iceberg.apache.org/spec/#schemas-and-data-types](https://iceberg.apache.org/spec/#schemas-and-data-types). Therefore, you can access elements inside it using dot notation.
+This column was imported as an [`struct`](https://iceberg.apache.org/spec/#schemas-and-data-types). Therefore, you can access elements inside it using dot notation.
 
 ------
 #### [ Resource type: MedicationStatement ]

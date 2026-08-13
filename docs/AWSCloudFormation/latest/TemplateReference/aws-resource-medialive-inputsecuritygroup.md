@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::MediaLive::InputSecurityGroup",
   "Properties" : {
-      "[Tags](#cfn-medialive-inputsecuritygroup-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
+      "[Tags](#cfn-medialive-inputsecuritygroup-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
       "[WhitelistRules](#cfn-medialive-inputsecuritygroup-whitelistrules)" : {{[ InputWhitelistRuleCidr, ... ]}}
     }
 }
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 Type: AWS::MediaLive::InputSecurityGroup
 Properties:
   [Tags](#cfn-medialive-inputsecuritygroup-tags): {{
-    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
   [WhitelistRules](#cfn-medialive-inputsecuritygroup-whitelistrules): {{
     - InputWhitelistRuleCidr}}
 ```
@@ -47,7 +47,7 @@ Properties:
 `Tags`  <a name="cfn-medialive-inputsecuritygroup-tags"></a>
 A collection of tags for this input security group. Each tag is a key-value pair.
 *Required*: No
-*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `WhitelistRules`  <a name="cfn-medialive-inputsecuritygroup-whitelistrules"></a>
@@ -66,14 +66,14 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 
 For example: `{ "Ref": "myInputSecurityGroup" }`
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-medialive-inputsecuritygroup-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-medialive-inputsecuritygroup-return-values-fn--getatt-fn--getatt"></a>

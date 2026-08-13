@@ -36,9 +36,9 @@ The HTTP `If-None-Match` header only applies to the current version of an object
 To perform conditional writes with the HTTP `If-None-Match` header you must have the `s3:PutObject` permission. This enables the caller to check for the presence of objects in the bucket. The `If-None-Match` header expects the \* (asterisk) value.
 
 You can use the `If-None-Match` header with the following APIs:
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html)
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html)
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html)
++ [PutObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html)
++ [CompleteMultipartUpload](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html)
++ [CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html)
 
 ### Conditional Put Using the AWS CLI
 <a name="conditional-writes-putobject-CLI-key-names"></a>
@@ -49,7 +49,7 @@ The following `put-object` example command attempts to perform a conditional wri
 aws s3api put-object --bucket {{amzn-s3-demo-bucket}} --key dir-1/my_images.tar.bz2 --body my_images.tar.bz2 --if-none-match "*"
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object.html) in the *AWS CLI Command Reference*.
+For more information, see [put-object](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object.html) in the *AWS CLI Command Reference*.
 
 For information about the AWS CLI, see [What is the AWS Command Line Interface?](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in the *AWS Command Line Interface User Guide*.
 
@@ -62,7 +62,7 @@ The following `copy-object` example command attempts to copy an object to a dest
 aws s3api copy-object --copy-source {{amzn-s3-demo-bucket}}/key --key dir-1/my_images.tar.bz2 --bucket {{amzn-s3-demo-bucket2}} --if-none-match "*"
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/copy-object.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/copy-object.html) in the *AWS CLI Command Reference*.
+For more information, see [copy-object](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/copy-object.html) in the *AWS CLI Command Reference*.
 
 For information about the AWS CLI, see [What is the AWS Command Line Interface?](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in the *AWS Command Line Interface User Guide*.
 
@@ -75,7 +75,7 @@ The following `complete-multipart-upload` example command attempts to complete a
 aws s3api complete-multipart-upload --multipart-upload file://mpustruct --bucket {{amzn-s3-demo-bucket}} --key dir-1/my_images.tar.bz2 --upload-id {{upload-id}}  --if-none-match "*"
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/complete-multipart-upload.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/complete-multipart-upload.html) in the *AWS CLI Command Reference*.
+For more information, see [complete-multipart-upload](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/complete-multipart-upload.html) in the *AWS CLI Command Reference*.
 
 For information about the AWS CLI, see [What is the AWS Command Line Interface?](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in the *AWS Command Line Interface User Guide*.
 
@@ -87,9 +87,9 @@ An object's ETag is a string that's unique to the object and reflects a change t
 To perform conditional writes with an HTTP `If-Match` header you must have the `s3:PutObject` and `s3:GetObject` permissions. This enables the caller to check the ETag and verify the state of the objects in the bucket. The `If-Match` header expects the ETag value as a string.
 
 You can use the `If-Match` header with the following APIs:
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html)
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html)
-+ [https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html)
++ [PutObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html)
++ [CompleteMultipartUpload](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html)
++ [CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html)
 
 ### Conditional Put Using the AWS CLI
 <a name="conditional-writes-putobject-CLI-etags"></a>
@@ -100,7 +100,7 @@ The following `put-object` example command attempts to perform a conditional wri
 aws s3api put-object --bucket {{amzn-s3-demo-bucket}} --key dir-1/my_images.tar.bz2 --body my_images.tar.bz2 --if-match "{{6805f2cfc46c0f04559748bb039d69ae}}"
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object.html) in the *AWS CLI Command Reference*.
+For more information, see [put-object](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object.html) in the *AWS CLI Command Reference*.
 
 For information about the AWS CLI, see [What is the AWS Command Line Interface?](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in the *AWS Command Line Interface User Guide*.
 
@@ -113,7 +113,7 @@ The following `copy-object` example command attempts to perform a conditional wr
 aws s3api copy-object --copy-source {{amzn-s3-demo-bucket}}/key --key dir-1/my_images.tar.bz2 --bucket {{amzn-s3-demo-bucket2}} --if-match "{{6805f2cfc46c0f04559748bb039d69ae}}"
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/copy-object.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/copy-object.html) in the *AWS CLI Command Reference*.
+For more information, see [copy-object](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/copy-object.html) in the *AWS CLI Command Reference*.
 
 For information about the AWS CLI, see [What is the AWS Command Line Interface?](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in the *AWS Command Line Interface User Guide*.
 
@@ -126,7 +126,7 @@ The following `complete-multipart-upload` example command attempts to complete a
 aws s3api complete-multipart-upload --multipart-upload file://mpustruct --bucket {{amzn-s3-demo-bucket}} --key dir-1/my_images.tar.bz2 --upload-id {{upload-id}} --if-match "{{6805f2cfc46c0f04559748bb039d69ae}}"
 ```
 
-For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/complete-multipart-upload.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/complete-multipart-upload.html) in the *AWS CLI Command Reference*.
+For more information, see [complete-multipart-upload](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/complete-multipart-upload.html) in the *AWS CLI Command Reference*.
 
 For information about the AWS CLI, see [What is the AWS Command Line Interface?](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in the *AWS Command Line Interface User Guide*.
 

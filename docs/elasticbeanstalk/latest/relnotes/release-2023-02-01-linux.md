@@ -18,24 +18,41 @@ The following table lists the changes included in this release.
 These release notes focus on changes to currently supported platform branches. For full version information of Elastic Beanstalk retiring (deprecated) platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Update** |
-| --- | --- |
-| **Platform** | **Update** |
-| --- | --- |
-| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/alas2.html) on or before **January 23, 2023** to all Amazon Linux 2 platforms.<br />Some of the platform updates are security releases. For more information, see **Platform-specific updates** in this table. |
-| **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2023-02-01-linux.html) |
-| **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2023-02-01-linux.html) |
-| **AMI** | Updated the base AMI to version 2.0.20230119. |
-| **nginx** | Updated platforms supporting the nginx server to [version 1.22.1](https://nginx.org/en/CHANGES-1.22).<br />This version includes security fixes. |
-| **Docker** | Updated Amazon ECS Agent to version **1.68.0** on the *ECS Amazon Linux 2* platform branch. |
-| **Go** | Updated Go to release 1.19.5. For details, see [go1.19.5](https://go.dev/doc/devel/release#go1.19.5) in *The Go Programming Language Release History*. |
-| **Corretto**, **Tomcat** | Updated Corretto 17 to version 17.0.6.10.1. For change log, see [Change Log for Amazon Corretto 17](https://github.com/corretto/corretto-17/blob/develop/CHANGELOG.md).<br />Updated Corretto 11 to version 11.0.18.10.1. For change log, see [Change Log for Amazon Corretto 11](https://github.com/corretto/corretto-11/blob/develop/CHANGELOG.md).<br />Updated Corretto 8 to version 8.362.08.1. For change log, see [Change Log for Amazon Corretto 8](https://github.com/corretto/corretto-8/blob/develop/CHANGELOG.md).<br />All three updates are security releases. |
-| **.NET Core** | Updated .NET Core to release [6.0.13](https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0.13/6.0.13.md#notable-changes) .<br />This is a security release.<br />**.Net Core on Linux platform — .NET Core 5 removed**<br />.NET Core 5 is being removed from the .Net Core on Linux platform, because it's past Microsoft’s end of support dates. For more information, see [.NET and .NET Core Support Policy](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core) on the Microsoft website. |
-| **PHP** | Updated PHP 8.1 release to [8.1.14](https://www.php.net/releases/8_1_14.php).<br />This is a security release. PHP 7.4 is a retiring (deprecated) platform branch. For full version information of Elastic Beanstalk retiring platform branches, see [Elastic Beanstalk platform versions scheduled for retirement](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) in the *AWS Elastic Beanstalk Platforms* guide.  |
-| **Python** | Updated Python 3.7 to [Python 3.7.16](https://docs.python.org/release/3.7.16/whatsnew/changelog.html#changelog).<br />Updated Python 3.8 to [Python 3.8.16](https://docs.python.org/release/3.8.16/whatsnew/changelog.html).<br />Both of these updates are security releases. |
-| **Ruby** | Updated RubyGems to release 3.4.3. For details, see [3.4.3 Released](https://blog.rubygems.org/2023/01/06/3.4.3-released.html) on the *RubyGems blog*.<br />Updated Puma to version [6.0.2](https://github.com/puma/puma/releases/tag/v6.0.2). |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Security updates</b></td><td>Applied all security updates published in the <a href="https://alas.aws.amazon.com/alas2.html">Amazon Linux Security Center</a> on or before <b>January 23, 2023</b> to all Amazon Linux 2 platforms.<br />Some of the platform updates are security releases. For more information, see <b>Platform-specific updates</b> in this table.</td></tr>
+  <tr><td><b>Cross-platform updates</b></td><td>Made these cross-platform updates:
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version 2.0.20230119.</td></tr>
+  <tr><td><b>nginx</b></td><td>Updated platforms supporting the nginx server to <a href="https://nginx.org/en/CHANGES-1.22">version 1.22.1</a>.<br />This version includes security fixes.</td></tr>
+</tbody>
+</table>
+</td></tr>
+  <tr><td><b>Platform-specific updates</b></td><td>Made these platform-specific updates:
+<table>
+<thead>
+  <tr><th><b>Platform</b></th><th><b>Update</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Docker</b></td><td>Updated Amazon ECS Agent to version <b>1.68.0</b> on the <i>ECS Amazon Linux 2</i> platform branch.</td></tr>
+  <tr><td><b>Go</b></td><td>Updated Go to release 1.19.5. For details, see <a href="https://go.dev/doc/devel/release#go1.19.5">go1.19.5</a> in <i>The Go Programming Language Release History</i>.</td></tr>
+  <tr><td><b>Corretto</b>, <b>Tomcat</b></td><td>Updated Corretto 17 to version 17.0.6.10.1. For change log, see <a href="https://github.com/corretto/corretto-17/blob/develop/CHANGELOG.md">Change Log for Amazon Corretto 17</a>.<br />Updated Corretto 11 to version 11.0.18.10.1. For change log, see <a href="https://github.com/corretto/corretto-11/blob/develop/CHANGELOG.md">Change Log for Amazon Corretto 11</a>.<br />Updated Corretto 8 to version 8.362.08.1. For change log, see <a href="https://github.com/corretto/corretto-8/blob/develop/CHANGELOG.md">Change Log for Amazon Corretto 8</a>.<br />All three updates are security releases.</td></tr>
+  <tr><td><b>.NET Core</b></td><td>Updated .NET Core to release <a href="https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0.13/6.0.13.md#notable-changes">6.0.13</a> .<br />This is a security release.<br /><b>.Net Core on Linux platform — .NET Core 5 removed</b><br />.NET Core 5 is being removed from the .Net Core on Linux platform, because it's past Microsoft’s end of support dates. For more information, see <a href="https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core">.NET and .NET Core Support Policy</a> on the Microsoft website.</td></tr>
+  <tr><td><b>PHP</b></td><td>Updated PHP 8.1 release to <a href="https://www.php.net/releases/8_1_14.php">8.1.14</a>.<br />This is a security release. PHP 7.4 is a retiring (deprecated) platform branch. For full version information of Elastic Beanstalk retiring platform branches, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html">Elastic Beanstalk platform versions scheduled for retirement</a> in the <i>AWS Elastic Beanstalk Platforms</i> guide. </td></tr>
+  <tr><td><b>Python</b></td><td>Updated Python 3.7 to <a href="https://docs.python.org/release/3.7.16/whatsnew/changelog.html#changelog">Python 3.7.16</a>.<br />Updated Python 3.8 to <a href="https://docs.python.org/release/3.8.16/whatsnew/changelog.html">Python 3.8.16</a>.<br />Both of these updates are security releases.</td></tr>
+  <tr><td><b>Ruby</b></td><td>Updated RubyGems to release 3.4.3. For details, see <a href="https://blog.rubygems.org/2023/01/06/3.4.3-released.html">3.4.3 Released</a> on the <i>RubyGems blog</i>.<br />Updated Puma to version <a href="https://github.com/puma/puma/releases/tag/v6.0.2">6.0.2</a>.</td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2023-02-01-linux.platforms"></a>

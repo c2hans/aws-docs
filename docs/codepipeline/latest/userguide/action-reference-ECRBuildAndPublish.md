@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 # `ECRBuildAndPublish` build action reference
 <a name="action-reference-ECRBuildAndPublish"></a>
 
-This build action allows you to automate building and pushing a new image when a change occurs in your source. This action builds based on a specified Docker file location and pushes the image. This build action is not the same as the Amazon ECR source action in CodePipeline, which triggers pipeline when a change occurs in your Amazon ECR source repository. For information about that action, see [Amazon ECR source action reference](action-reference-ECR.md).
+This build action allows you to automate building and pushing a new image when a change occurs in your source. This action builds based on a specified Dockerfile location and pushes the image. This build action is not the same as the Amazon ECR source action in CodePipeline, which triggers pipeline when a change occurs in your Amazon ECR source repository. For information about that action, see [Amazon ECR source action reference](action-reference-ECR.md).
 
 This is not a source action that will trigger the pipeline. This action builds an image and pushes it to your Amazon ECR image repository.
 
@@ -43,7 +43,7 @@ The name of the Amazon ECR repository where the image is pushed.
 
 **DockerFilePath**
 Required: No
-The location of the Docker file used to build the image. Optionally, you can provide an alternate docker file location if not at the root level.
+The location of the Dockerfile used to build the image. Optionally, you can provide an alternate Dockerfile location if not at the root level.
 If a value for `DockerFilePath` is not specified, the value defaults to the source repository root level.
 
 **ImageTags**

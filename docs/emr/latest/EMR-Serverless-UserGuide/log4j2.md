@@ -21,7 +21,7 @@ With Amazon EMR releases 6.8.0 and higher, you can customize [Apache Log4j 2.x](
 ### Log4j2 classifications for Spark
 <a name="log4j2-spark-class"></a>
 
-To customize the Spark log configurations, use the following classifications with [https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_ConfigurationOverrides.html#emrserverless-Type-ConfigurationOverrides-applicationConfiguration](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_ConfigurationOverrides.html#emrserverless-Type-ConfigurationOverrides-applicationConfiguration). To configure the Log4j 2.x properties, use the following [https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_Configuration.html#emrserverless-Type-Configuration-properties](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_Configuration.html#emrserverless-Type-Configuration-properties).
+To customize the Spark log configurations, use the following classifications with [`applicationConfiguration`](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_ConfigurationOverrides.html#emrserverless-Type-ConfigurationOverrides-applicationConfiguration). To configure the Log4j 2.x properties, use the following [`properties`](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_Configuration.html#emrserverless-Type-Configuration-properties).
 
 **`spark-driver-log4j2`**
 This classification sets the values in the `log4j2.properties` file for the driver.

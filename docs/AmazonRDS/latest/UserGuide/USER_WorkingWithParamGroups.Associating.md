@@ -36,7 +36,7 @@ When you associate a new DB parameter group with a DB instance, the modified sta
 ## AWS CLI
 <a name="USER_WorkingWithParamGroups.Associating.CLI"></a>
 
-To associate a DB parameter group with a DB instance, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) command with the following options:
+To associate a DB parameter group with a DB instance, use the AWS CLI [`modify-db-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) command with the following options:
 + `--db-instance-identifier`
 + `--db-parameter-group-name`
 
@@ -63,6 +63,6 @@ aws rds modify-db-instance ^
 ## RDS API
 <a name="USER_WorkingWithParamGroups.Associating.API"></a>
 
-To associate a DB parameter group with a DB instance, use the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html) operation with the following parameters:
+To associate a DB parameter group with a DB instance, use the RDS API [`ModifyDBInstance`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html) operation with the following parameters:
 + `DBInstanceName`
 + `DBParameterGroupName`

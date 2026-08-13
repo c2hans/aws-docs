@@ -56,7 +56,7 @@ The following shows how to retrieve the JSON files.
 ### Step 1: Get device profile information as JSON file
 <a name="iot-sidewalk-profile-get"></a>
 
-Use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDeviceProfile.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDeviceProfile.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/get-device-profile.html](https://docs.aws.amazon.com/cli/latest/reference/get-device-profile.html) CLI command to get information about your device profile that you added to your account for AWS IoT Core for Amazon Sidewalk. To retrieve information about your device profile, specify the profile ID.
+Use the [`GetDeviceProfile`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDeviceProfile.html) API operation or the [`get-device-profile`](https://docs.aws.amazon.com/cli/latest/reference/get-device-profile.html) CLI command to get information about your device profile that you added to your account for AWS IoT Core for Amazon Sidewalk. To retrieve information about your device profile, specify the profile ID.
 
 The API will then return information about the device profile matching the specified identifier and the device ID. You save this response information as a file, and give it a name such as {{`device_profile.json`}}.
 
@@ -67,7 +67,7 @@ aws iotwireless get-device-profile \
     --id "{{12345678-a1b2-3c45-67d8-e90fa1b2c34d}}" > {{device_profile.json}}
 ```
 
-Running this command returns the parameters of your device profile, the application server public key, and the `DeviceTypeID`. The following shows a JSON file that contains a sample response information from the API. For more information about the parameters in the API response, see [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDeviceProfile.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDeviceProfile.html).
+Running this command returns the parameters of your device profile, the application server public key, and the `DeviceTypeID`. The following shows a JSON file that contains a sample response information from the API. For more information about the parameters in the API response, see [`GetDeviceProfile`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDeviceProfile.html).
 
 **`GetDeviceProfile` API response (Contents of `{{device_profile.json}}`)**
 
@@ -96,7 +96,7 @@ Running this command returns the parameters of your device profile, the applicat
 ### Step 2: Get Sidewalk device information as JSON file
 <a name="iot-sidewalk-get-device"></a>
 
-Use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDevice.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDevice.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/get-wireless-device.html](https://docs.aws.amazon.com/cli/latest/reference/get-wireless-device.html) CLI command to get information about your Sidewalk device that you added to your account for AWS IoT Core for Amazon Sidewalk. To get information about your end device, provide the identifier of the wireless device that you obtained when adding your device.
+Use the [`GetWirelessDevice`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDevice.html) API operation or the [`get-wireless-device`](https://docs.aws.amazon.com/cli/latest/reference/get-wireless-device.html) CLI command to get information about your Sidewalk device that you added to your account for AWS IoT Core for Amazon Sidewalk. To get information about your end device, provide the identifier of the wireless device that you obtained when adding your device.
 
 The API will then return information about the device matching the specified identifier and the device ID. Save this response information as a JSON file. Give the file a meaningful name, such as {{`wireless_device.json`}}.
 
@@ -107,7 +107,7 @@ aws iotwireless get-wireless-device --identifier-type WirelessDeviceId \
     --identifier {{"23456789-abcd-0123-bcde-fabc012345678"}} > {{wireless_device.json}}
 ```
 
-Running this command returns the device details, device certificates, private keys, and the Sidewalk manufacturing serial number (SMSN). The following shows an example output of running this command. For more information about the parameters in the API response, see [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDevice.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDevice.html).
+Running this command returns the device details, device certificates, private keys, and the Sidewalk manufacturing serial number (SMSN). The following shows an example output of running this command. For more information about the parameters in the API response, see [`GetWirelessDevice`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessDevice.html).
 
 **`GetWirelessDevice` API response (Contents of `{{wireless_device.json}}`)**
 

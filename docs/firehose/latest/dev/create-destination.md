@@ -15,7 +15,7 @@ This section describes the settings that you must configure for your Firehose st
 + [Configure destination settings for OpenSearch Serverless](#create-destination-opensearch-serverless)
 + [Configure destination settings for HTTP Endpoint](#create-destination-http)
 + [Configure destination settings for Datadog](#create-destination-datadog)
-+ [Configure destination settings for Grafana](#create-destination-grafana)
++ [Configure destination settings for Grafana Cloud](#create-destination-grafana-cloud)
 + [Configure destination settings for Honeycomb](#create-destination-honeycomb)
 + [Configure destination settings for Coralogix](#create-destination-coralogix)
 + [Configure destination settings for Dynatrace](#create-destination-dynatrace)
@@ -312,31 +312,42 @@ Amazon Data Firehose includes these key-value pairs in each HTTP call. These par
  **Buffering hints**
 Amazon Data Firehose buffers incoming data before delivering it to the specified destination. The recommended buffer size for the destination varies from service provider to service provider.
 
-## Configure destination settings for Grafana
-<a name="create-destination-grafana"></a>
+## Configure destination settings for Grafana Cloud
+<a name="create-destination-grafana-cloud"></a>
 
-This section describes options for using **Grafana** for your destination.
+This section describes options for using **Grafana Cloud** for your destination.
 
- For more information, see Firehose connection documentation on the [Grafana website](https://grafana.com/docs/grafana-cloud/monitor-infrastructure/monitor-cloud-provider/aws/logs/firehose-logs/).
-+ Choose options to use Grafana as the destination for your Firehose stream.
+Both the HTTP endpoint URL format and the API key scopes that are required depend on the type of data that you send. For instructions on configuring the connection, see the following documentation on the Grafana website:
++ Metrics data – [Amazon CloudWatch metric streams](https://grafana.com/docs/grafana-cloud/observe-and-act/monitor-infrastructure/monitor-cloud-provider/aws/cloudwatch-metrics/metric-streams/)
++ Logs data – [Amazon Data Firehose logs](https://grafana.com/docs/grafana-cloud/observe-and-act/monitor-infrastructure/monitor-cloud-provider/aws/logs/firehose-logs/config-firehose-logs/)
+
+****
++ Choose options to use Grafana Cloud as the destination for your Firehose stream.
  **Ingestion type**
-Choose to deliver **Metrics** or **Logs** (default) in Grafana for further analysis and processing.
+Choose to deliver **Metrics** or **Logs** (default) to Grafana Cloud for further analysis and processing.
  **HTTP endpoint URL**
-Specify the URL for the HTTP endpoint in the following format.
+Specify the URL for the HTTP endpoint. The format of the URL depends on the type of data that you send.
+For metrics data, use the following format.
 
   ```
-  https://aws-metric-streams-{MIMIR_CELL_ID}.grafana.net/aws-metrics/api/v1/push
+  https://aws-metric-streams-{{MIMIR_CELL_ID}}.{{DOMAIN}}/aws-metrics/api/v1/push
   ```
+For logs data, use the following format.
+
+  ```
+  https://aws-{{LOKI_CELL_ID}}.grafana.net/aws-logs/api/v1/push
+  ```
+For instructions on determining the values for your Grafana Cloud account, see the Grafana connection documentation for the type of data that you send.
  **Authentication**
-You can either choose to enter the API key directly or retrieve the secret from AWS Secrets Manager to access Grafana.
+You can either choose to enter the API key directly or retrieve the secret from AWS Secrets Manager to access Grafana Cloud.
   + **API key**
 
-    Contact Grafana to obtain the API key that you need to enable data delivery to this endpoint from Firehose.
+    Generate the API key in Grafana Cloud that you need to enable data delivery to this endpoint from Firehose. The scopes that the API key requires depend on the type of data that you send. For instructions on generating the API key, see the Grafana connection documentation for the type of data that you send.
   + **Secret**
 
-    Select a secret from AWS Secrets Manager that contains the API token for Grafana. If you do not see your secret in the drop-down list, create one in AWS Secrets Manager. For more information, see [Authenticate with AWS Secrets Manager in Amazon Data Firehose](using-secrets-manager.md).
+    Select a secret from AWS Secrets Manager that contains the API key for Grafana Cloud. If you do not see your secret in the drop-down list, create one in AWS Secrets Manager. For more information, see [Authenticate with AWS Secrets Manager in Amazon Data Firehose](using-secrets-manager.md).
  **Content encoding**
-Choose whether you want to enable content encoding to compress body of the request. Amazon Data Firehose uses content encoding to compress the body of a request before sending it to the destination. When enabled, the content is compressed in the **GZIP** format.
+Choose whether you want to enable content encoding to compress the body of the request. Amazon Data Firehose uses content encoding to compress the body of a request before sending it to the destination. When enabled, the content is compressed in the **GZIP** format.
  **Retry duration**
 Specify how long Firehose retries sending data to the selected HTTP endpoint.
 After sending data, Firehose first waits for an acknowledgment from the HTTP endpoint. If an error occurs or the acknowledgment doesn’t arrive within the acknowledgment timeout period, Firehose starts the retry duration counter. It keeps retrying until the retry duration expires. After that, Firehose considers it a data delivery failure and backs up the data to your Amazon S3 bucket.

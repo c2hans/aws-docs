@@ -35,7 +35,7 @@ In the [Amazon GameLift Servers console](https://console.aws.amazon.com/gamelift
 ------
 #### [ AWS CLI ]
 
-Use the [https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-alias.html](https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-alias.html) command to create an alias. .Amazon GameLift Servers creates the alias resource in your current default AWS Region (or you can add a --region tag to specify a different AWS Region).
+Use the [`create-alias`](https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-alias.html) command to create an alias. .Amazon GameLift Servers creates the alias resource in your current default AWS Region (or you can add a --region tag to specify a different AWS Region).
 
 At minimum, include an alias name and routing strategy. For a simple routing strategy, specify the ID of a fleet in the same Region as the alias. For a terminal routing strategy, provide a message string.
 

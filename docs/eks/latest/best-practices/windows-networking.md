@@ -68,7 +68,7 @@ nodeGroups:
     allow: false
 ```
 
-In order to utilize DSR in Windows Server 2019 and above, you will need to specify the following [https://kubernetes.io/docs/setup/production-environment/windows/intro-windows-in-kubernetes/#load-balancing-and-services](https://kubernetes.io/docs/setup/production-environment/windows/intro-windows-in-kubernetes/#load-balancing-and-services) flags during instance startup. You can do this by adjusting the userdata script associated with the [self-managed node groups Launch Template](https://docs.aws.amazon.com/eks/latest/userguide/launch-windows-workers.html).
+In order to utilize DSR in Windows Server 2019 and above, you will need to specify the following [**kube-proxy**](https://kubernetes.io/docs/setup/production-environment/windows/intro-windows-in-kubernetes/#load-balancing-and-services) flags during instance startup. You can do this by adjusting the userdata script associated with the [self-managed node groups Launch Template](https://docs.aws.amazon.com/eks/latest/userguide/launch-windows-workers.html).
 
 ```
 <powershell>

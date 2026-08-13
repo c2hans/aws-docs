@@ -16,6 +16,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::ElastiCache::SecurityGroup](aws-resource-elasticache-securitygroup.md)
 + [AWS::ElastiCache::SecurityGroupIngress](aws-resource-elasticache-securitygroupingress.md)
 + [AWS::ElastiCache::ServerlessCache](aws-resource-elasticache-serverlesscache.md)
++ [AWS::ElastiCache::ServerlessCacheSnapshot](aws-resource-elasticache-serverlesscachesnapshot.md)
 + [AWS::ElastiCache::SubnetGroup](aws-resource-elasticache-subnetgroup.md)
 + [AWS::ElastiCache::User](aws-resource-elasticache-user.md)
 + [AWS::ElastiCache::UserGroup](aws-resource-elasticache-usergroup.md)

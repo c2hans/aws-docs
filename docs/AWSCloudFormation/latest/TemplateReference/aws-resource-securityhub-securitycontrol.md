@@ -48,7 +48,7 @@ Properties:
 <a name="aws-resource-securityhub-securitycontrol-properties"></a>
 
 `LastUpdateReason`  <a name="cfn-securityhub-securitycontrol-lastupdatereason"></a>
- The most recent reason for updating the customizable properties of a security control. This differs from the `UpdateReason` field of the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateStandardsControlAssociations.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateStandardsControlAssociations.html) API, which tracks the reason for updating the enablement status of a control. This field accepts alphanumeric characters in addition to white spaces, dashes, and underscores.
+ The most recent reason for updating the customizable properties of a security control. This differs from the `UpdateReason` field of the [`BatchUpdateStandardsControlAssociations`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateStandardsControlAssociations.html) API, which tracks the reason for updating the enablement status of a control. This field accepts alphanumeric characters in addition to white spaces, dashes, and underscores.
 *Required*: No
 *Type*: String
 *Pattern*: `^([^-]|[-_ a-zA-Z0-9])+$`
@@ -82,7 +82,7 @@ Properties:
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the identifier of the security control. For example, `Config.1`.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
 <a name="aws-resource-securityhub-securitycontrol--examples"></a>

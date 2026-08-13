@@ -40,7 +40,7 @@ You can configure query integration with Security Lake for the following third-p
 + Palo Alto Networks – XSOAR
 + Query.AI – Query Federated Search
 + SOC Prime
-+ [https://www.splunk.com/en_us/blog/conf-splunklive/federated-analytics-balancing-cost-efficiency-and-performance-with-data-lakes.html](https://www.splunk.com/en_us/blog/conf-splunklive/federated-analytics-balancing-cost-efficiency-and-performance-with-data-lakes.html) – Federated Analytics
++ [Splunk](https://www.splunk.com/en_us/blog/conf-splunklive/federated-analytics-balancing-cost-efficiency-and-performance-with-data-lakes.html) – Federated Analytics
 + Tego Cyber
 
 ## Accenture – MxDR

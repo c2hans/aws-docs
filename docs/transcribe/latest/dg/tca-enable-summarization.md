@@ -20,7 +20,7 @@ In the Summarization panel, enable Generative call summarization to receive summ
 ## AWS CLI
 <a name="analytics-summarization-cli"></a>
 
-This example uses the [start-call-analytics-job](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/start-call-analytics-job.html) command and `Settings` parameter with the `Summarization` sub-parameters. For more information, see [https://docs.aws.amazon.com//transcribe/latest/APIReference/API_StartCallAnalyticsJob.html](https://docs.aws.amazon.com//transcribe/latest/APIReference/API_StartCallAnalyticsJob.html).
+This example uses the [start-call-analytics-job](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/start-call-analytics-job.html) command and `Settings` parameter with the `Summarization` sub-parameters. For more information, see [`StartCallAnalyticsJob`](https://docs.aws.amazon.com//transcribe/latest/APIReference/API_StartCallAnalyticsJob.html).
 
 ```
 aws transcribe start-call-analytics-job \
@@ -72,7 +72,7 @@ The file *my-call-analytics-job.json* contains the following request body.
 ## AWS SDK for Python (Boto3)
 <a name="analytics-summarization-python"></a>
 
-This example uses the AWS SDK for Python (Boto3) to start a Call Analytics with summarization enabled using the [start\_call\_analytics\_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_call_analytics_job) method. For more information, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartCallAnalyticsJob.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartCallAnalyticsJob.html).
+This example uses the AWS SDK for Python (Boto3) to start a Call Analytics with summarization enabled using the [start\_call\_analytics\_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_call_analytics_job) method. For more information, see [`StartCallAnalyticsJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartCallAnalyticsJob.html).
 
 For additional examples using the AWS SDKs, including feature-specific, scenario, and cross-service examples, refer to the [Code examples for Amazon Transcribe using AWS SDKs](service_code_examples.md) chapter.
 

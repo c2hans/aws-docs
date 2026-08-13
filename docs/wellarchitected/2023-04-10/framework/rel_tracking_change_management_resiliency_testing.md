@@ -9,7 +9,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 
  Resiliency tests (using the [principles of chaos engineering](https://principlesofchaos.org/)) are run as part of the automated deployment pipeline in a pre-production environment.
 
- These tests are staged and run in the pipeline in a pre-production environment. They should also be run in production as part of [https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/test-reliability.html#GameDays](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/test-reliability.html#GameDays).
+ These tests are staged and run in the pipeline in a pre-production environment. They should also be run in production as part of [*game days*](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/test-reliability.html#GameDays).
 
  **Level of risk exposed if this best practice is not established:** Medium
 

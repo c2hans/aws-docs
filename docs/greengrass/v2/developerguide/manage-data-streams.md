@@ -12,10 +12,12 @@ Stream manager provides a common interface to simplify custom component developm
 Stream manager works in environments with intermittent or limited connectivity. You can define bandwidth use, timeout behavior, and how the AWS IoT Greengrass Core handles stream data when it is connected or disconnected. You can also set priorities to control the order in which the AWS IoT Greengrass Core exports streams to the AWS Cloud. This makes it possible for you to handle critical data sooner than other data.
 
 You can configure stream manager to automatically export data to the AWS Cloud for storage or further processing and analysis. Stream manager supports exports to the following AWS Cloud destinations:
-+ Channels in AWS IoT Analytics. AWS IoT Analytics lets you perform advanced analysis on your data to help make business decisions and improve machine learning models. For more information, see [What is AWS IoT Analytics?](https://docs.aws.amazon.com/iotanalytics/latest/userguide/welcome.html) in the *AWS IoT Analytics User Guide*.
 + Streams in Amazon Kinesis Data Streams. You can use Kinesis Data Streams to aggregate high-volume data and load it into a data warehouse or MapReduce cluster. For more information, see [What is Amazon Kinesis Data Streams?](https://docs.aws.amazon.com/streams/latest/dev/what-is-this-service.html) in the *Amazon Kinesis Data Streams Developer Guide*.
 + Asset properties in AWS IoT SiteWise. AWS IoT SiteWise lets you collect, organize, and analyze data from industrial equipment at scale. For more information, see [What is AWS IoT SiteWise?](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/what-is-sitewise.html) in the *AWS IoT SiteWise User Guide*.
 + Objects in Amazon Simple Storage Service Amazon S3. You can use Amazon S3 to store and retrieve large amounts of data. For more information, see [What is Amazon S3?](https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html) in the *Amazon Simple Storage Service Developer Guide*.
+
+**AWS IoT Analytics discontinued**
+AWS IoT Analytics was discontinued on December 15, 2025. Stream manager exports to AWS IoT Analytics channels no longer function. If you have streams configured with `IoTAnalyticsConfig` export destinations, remove them to avoid continuous failed export attempts. For more information, see [AWS IoT Analytics channels (discontinued)](stream-export-configurations.md#export-to-iot-analytics).
 
 ## Stream management workflow
 <a name="stream-manager-workflow"></a>
@@ -43,7 +45,7 @@ The following requirements apply for using stream manager:
 **Note**  <a name="stream-manager-upgrade-note"></a>
 If you use stream manager to export data to the cloud, you can't upgrade version 2.0.7 of the stream manager component to a version between v2.0.8 and v2.0.11. If you are deploying stream manager for the first time, we strongly recommend that you deploy the latest version of the stream manager component.
 + If you define AWS Cloud export destinations for a stream, you must create your export targets and grant access permissions in the [Greengrass device role](device-service-role.md). Depending on the destination, other requirements might also apply. For more information, see:<a name="export-destinations-links"></a>
-  + [AWS IoT Analytics channels](stream-export-configurations.md#export-to-iot-analytics)
+  + [AWS IoT Analytics channels (discontinued)](stream-export-configurations.md#export-to-iot-analytics)
   + [Amazon Kinesis data streams](stream-export-configurations.md#export-to-kinesis)
   + [AWS IoT SiteWise asset properties](stream-export-configurations.md#export-to-iot-sitewise)
   + [Amazon S3 objects](stream-export-configurations.md#export-to-s3)

@@ -106,6 +106,24 @@ Required: No
             "total": number,
             "unmetered": number
          },
+         "insights": {
+            "status": "string",
+            "testReport": {
+               "message": "string",
+               "metrics": {
+                  "medianTestExecutionDurationSeconds": number,
+                  "testsErrored": number,
+                  "testsFailed": number,
+                  "testsOther": number,
+                  "testsPassed": number,
+                  "testsPassedPercentage": number,
+                  "testsSkipped": number,
+                  "testsTotal": number,
+                  "totalTestExecutionDurationSeconds": number
+               },
+               "testDetailsUrl": "string"
+            }
+         },
          "instanceArn": "string",
          "message": "string",
          "name": "string",

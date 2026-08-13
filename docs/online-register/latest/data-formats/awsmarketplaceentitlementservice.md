@@ -11,4 +11,4 @@ AWS Marketplace Entitlement Service provides the following APIs for data retriev
 
 | Actions | Description | Access level |
 | --- | --- | --- |
-| <a name="aws-marketplace-GetEntitlements"></a>[https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-entitlements_GetEntitlements.html](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-entitlements_GetEntitlements.html) | Retrieve entitlement values for a given product. The results can be filtered based on customer identifier or product dimensions | Read |
+| <a name="aws-marketplace-GetEntitlements"></a>[GetEntitlements](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-entitlements_GetEntitlements.html) | Retrieve entitlement values for a given product. The results can be filtered based on customer identifier or product dimensions | Read |

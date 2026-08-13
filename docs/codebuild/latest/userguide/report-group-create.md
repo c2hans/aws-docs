@@ -163,7 +163,7 @@ Use the following instructions to create a report group using the CloudFormation
 
  **To create a report group using the CloudFormation template**
 
- You can use an CloudFormation template file to create and provision a report group. For more information, see [CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+ You can use a CloudFormation template file to create and provision a report group. For more information, see [CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
  The following CloudFormation YAML template creates a report group that does not export raw test result files.
 

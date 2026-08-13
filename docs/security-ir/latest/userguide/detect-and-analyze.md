@@ -42,7 +42,7 @@ You can raise a security event through the AWS Security Incident Response portal
 ## Detection
 <a name="detect-analyze-detect"></a>
 
- With [Proactive Response](setup-monitoring-and-investigation-workflows.md), AWS Security Incident Response ingests findings from Amazon GuardDuty and AWS Security Hub CSPM through Amazon EventBridge rules that are deployed to your accounts during onboarding.
+ With [Proactive Response](proactive-response-alert-triaging.md), AWS Security Incident Response ingests findings from Amazon GuardDuty and AWS Security Hub CSPM through Amazon EventBridge rules that are deployed to your accounts during onboarding.
 
 ## Analysis: Automated triage
 <a name="detect-analyze-analysis-automated-triage"></a>

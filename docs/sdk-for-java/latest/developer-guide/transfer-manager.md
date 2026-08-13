@@ -129,7 +129,7 @@ S3TransferManager transferManager = S3TransferManager.create();
 
 The following example shows a file upload example along with the optional use of a [LoggingTransferListener](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/progress/LoggingTransferListener.html), which logs the progress of the upload.
 
-To upload a file to Amazon S3 using the S3 Transfer Manager, pass an [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/model/UploadFileRequest.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/model/UploadFileRequest.html) object to the `S3TransferManager`'s [uploadFile](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/S3TransferManager.html#uploadFile(software.amazon.awssdk.transfer.s3.model.UploadFileRequest)) method.
+To upload a file to Amazon S3 using the S3 Transfer Manager, pass an [`UploadFileRequest`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/model/UploadFileRequest.html) object to the `S3TransferManager`'s [uploadFile](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/S3TransferManager.html#uploadFile(software.amazon.awssdk.transfer.s3.model.UploadFileRequest)) method.
 
 The [FileUpload](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/model/FileUpload.html) object returned from the `uploadFile` method represents the upload process. After the request finishes, the [CompletedFileUpload](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/transfer/s3/model/CompletedFileUpload.html) object contains information about the upload.
 

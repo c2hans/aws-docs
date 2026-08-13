@@ -2,7 +2,9 @@
 source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/detailed-getting-started.html
 ---
 
-# Detailed Getting Started using Console and API
+# Detailed getting started using console and API
 <a name="detailed-getting-started"></a>
 
-Content coming soon.
+**Topics**
++ [Get started in the Amazon Bedrock console](getting-started-console.md)
++ [Get started with the API](getting-started-api.md)

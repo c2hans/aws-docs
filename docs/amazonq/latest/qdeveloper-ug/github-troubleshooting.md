@@ -16,7 +16,7 @@ Consult the following section to troubleshoot common problems when using Amazon 
 
 **To add the Amazon Q Developer app to your allow list**
 
-1. If necessary, sign in to your [https://github.com/](https://github.com/) account using your GitHub credentials.
+1. If necessary, sign in to your [GitHub](https://github.com/) account using your GitHub credentials.
 
 1. Navigate to your GitHub organization, and then navigate to the repository you want to allow list the Amazon Q Developer for GitHub app.
 

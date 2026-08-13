@@ -82,7 +82,7 @@ This step is required. Without the `email` optional claim, Microsoft Entra ID do
 Record the following OIDC endpoints. You enter these values, together with the **Application (client) ID** you noted earlier, in Step 2. Replace `<TENANT_ID>` with your Directory (tenant) ID.
 
 **Important**
-The Issuer URL must include the `/v2.0` path suffix. Do not use the "Authority URL" shown in the Entra ID Endpoints panel, which omits this suffix. If the `/v2.0` suffix is missing, token validation fails with an "Invalid issuer" error at sign-in time.
+The Issuer URL must include the `/v2.0` path suffix. Do not use the **Authority URL** shown in the Entra ID Endpoints panel, which omits this suffix. If the `/v2.0` suffix is missing, token validation fails with an "Invalid issuer" error at sign-in time.
 
 | Field | Value |
 | --- | --- |
@@ -94,6 +94,11 @@ The Issuer URL must include the `/v2.0` path suffix. Do not use the "Authority U
 
 **Tip**
 The JWKS URI is not displayed in the Microsoft Entra ID **Endpoints** panel. You can find it by opening the **OpenID Connect metadata document** URL from the Endpoints panel and locating the `jwks_uri` field in the JSON response. Alternatively, construct it using the format shown in the preceding table.
+
+**Important**
+If your application has custom signing keys because of the claims-mapping feature, you must append an `appid` query parameter containing the **Application (client) ID** to the JWKS URI. Otherwise, token validation fails because the default keys endpoint does not return the application's custom signing key. For example:
+`https://login.microsoftonline.com/<TENANT_ID>/discovery/v2.0/keys?appid=<CLIENT_ID>`
+To confirm the correct value, open the OpenID Connect metadata document with the same `appid` parameter appended (`https://login.microsoftonline.com/<TENANT_ID>/.well-known/openid-configuration?appid=<CLIENT_ID>`) and use the `jwks_uri` it returns. For more information, see [Validate the signature](https://learn.microsoft.com/en-us/entra/identity-platform/access-tokens#validate-the-signature) in the Microsoft Entra documentation.
 
 ## Step 2: Add the extension access in the Amazon Quick administration console
 <a name="w2aac51c11c19c15"></a>

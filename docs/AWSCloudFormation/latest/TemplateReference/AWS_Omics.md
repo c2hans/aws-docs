@@ -10,10 +10,13 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 **Resource types**
 + [AWS::Omics::AnnotationStore](aws-resource-omics-annotationstore.md)
 + [AWS::Omics::Configuration](aws-resource-omics-configuration.md)
++ [AWS::Omics::ReadSet](aws-resource-omics-readset.md)
 + [AWS::Omics::Reference](aws-resource-omics-reference.md)
 + [AWS::Omics::ReferenceStore](aws-resource-omics-referencestore.md)
++ [AWS::Omics::Run](aws-resource-omics-run.md)
 + [AWS::Omics::RunGroup](aws-resource-omics-rungroup.md)
 + [AWS::Omics::SequenceStore](aws-resource-omics-sequencestore.md)
++ [AWS::Omics::Task](aws-resource-omics-task.md)
 + [AWS::Omics::VariantStore](aws-resource-omics-variantstore.md)
 + [AWS::Omics::Workflow](aws-resource-omics-workflow.md)
 + [AWS::Omics::WorkflowVersion](aws-resource-omics-workflowversion.md)

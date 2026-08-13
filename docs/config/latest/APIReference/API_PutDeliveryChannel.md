@@ -9,7 +9,7 @@ Creates or updates a delivery channel to deliver configuration information and o
 
 You can use this operation to create a new delivery channel or to update the Amazon S3 bucket and the Amazon SNS topic of an existing delivery channel.
 
-For more information, see [https://docs.aws.amazon.com/config/latest/developerguide/manage-delivery-channel.html](https://docs.aws.amazon.com/config/latest/developerguide/manage-delivery-channel.html) in the * AWS Config Developer Guide.*
+For more information, see [**Working with the Delivery Channel**](https://docs.aws.amazon.com/config/latest/developerguide/manage-delivery-channel.html) in the * AWS Config Developer Guide.*
 
 **Note**
  **One delivery channel per account per Region**

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 
  **Description**
 
- The runbook `AWSSupport-TroubleshootWindowsPerformance` helps troubleshoot ongoing performance issues on Amazon Elastic Compute Cloud (Amazon EC2) Windows instance. The runbook captures logs from the target instance and analyzes CPU, memory, disk, and network performance metrics. Optionally, the automation can capture a process dump to help you determine the potential cause of performance degradation. The automation also captures the event and system logs by using the latest [https://docs.aws.amazon.com//AWSEC2/latest/WindowsGuide/Windows-Server-EC2Rescue.html](https://docs.aws.amazon.com//AWSEC2/latest/WindowsGuide/Windows-Server-EC2Rescue.html) tool, if you allow this runbook to install it.
+ The runbook `AWSSupport-TroubleshootWindowsPerformance` helps troubleshoot ongoing performance issues on Amazon Elastic Compute Cloud (Amazon EC2) Windows instance. The runbook captures logs from the target instance and analyzes CPU, memory, disk, and network performance metrics. Optionally, the automation can capture a process dump to help you determine the potential cause of performance degradation. The automation also captures the event and system logs by using the latest [`EC2Rescue`](https://docs.aws.amazon.com//AWSEC2/latest/WindowsGuide/Windows-Server-EC2Rescue.html) tool, if you allow this runbook to install it.
 
  **How does it work?**
 
@@ -69,7 +69,7 @@ The `AutomationAssumeRole` parameter requires the following actions to use the r
 
 Follow these steps to configure the automation:
 
-1. Navigate to [https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootWindowsPerformance/description](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootWindowsPerformance/description) in Systems Manager under Documents.
+1. Navigate to [`AWSSupport-TroubleshootWindowsPerformance`](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootWindowsPerformance/description) in Systems Manager under Documents.
 
 1. Select Execute automation.
 

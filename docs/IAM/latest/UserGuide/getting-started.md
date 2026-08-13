@@ -16,4 +16,8 @@ IAM is integrated with several AWS products. For a list of services that support
 
 To learn about getting started with AWS, creating an administrative user, an AWS Organizations, and using multiple services to solve a problem such as building and launching your first project, see the [Getting Started Resource Center](https://aws.amazon.com/getting-started/).
 
-For hands-on practice with common IAM tasks such as creating roles for cross-account access and using tags for attribute-based access control, see [IAM tutorials](tutorials.md).
+For hands-on practice with common IAM tasks, see [IAM tutorials](tutorials.md). Tasks include creating roles for cross-account access and using tags for attribute-based access control.
+
+After you set up your account, plan how people and workloads access it. For more information, see [Plan access to your AWS account](gs-identities.md).
+
+Then use [Prepare for least-privilege permissions](getting-started-reduce-permissions.md) to follow the principle of least privilege.

@@ -10,7 +10,7 @@ You can generate incident reports from in-progress or completed investigations. 
 **Prerequisites**
 
 Before generating an incident confirm the following requirements are met:
-+ Ensure the investigation group uses the required KMS key and has appropriate IAM policies attached to its role for decrypting data from AWS services. If your AWS resources are encrypted with customer-managed KMS keys, you must add IAM policy statements to the investigation group role to grant CloudWatch Investigations the permissions needed to decrypt and access this data.
++ Make sure the investigation group uses the required KMS key and has appropriate IAM policies attached to its role for decrypting data from AWS services. If your AWS resources are encrypted with customer-managed KMS keys, you must add IAM policy statements to the investigation group role to grant CloudWatch Investigations the permissions needed to decrypt and access this data.
 + Investigation group role has been granted the following permissions:
   + `aiops:GetInvestigation`
   + `aiops:ListInvestigationEvents`

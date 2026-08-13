@@ -168,7 +168,7 @@ For more information, see [Pagination](https://docs.aws.amazon.com/ec2/latest/de
 ## Preventing requests over HTTP
 <a name="prevent-http-requests"></a>
 
-If your workload does not require you to use HTTP, we recommend that you avoid using it to prevent transmitting and receiving unencrypted data, and to use HTTPS instead. You can use the [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-securetransport](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-securetransport) global IAM condition key in your IAM policies to prevent users from sending requests over HTTP.
+If your workload does not require you to use HTTP, we recommend that you avoid using it to prevent transmitting and receiving unencrypted data, and to use HTTPS instead. You can use the [`aws:SecureTransport`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-securetransport) global IAM condition key in your IAM policies to prevent users from sending requests over HTTP.
 
 The following example policy prevents users from sending requests over HTTP.
 

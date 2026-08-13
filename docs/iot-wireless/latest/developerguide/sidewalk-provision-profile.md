@@ -55,7 +55,7 @@ You'll see the profile that you created in the [Profiles hub](https://console.aw
 ## Create a profile (CLI)
 <a name="provision-profile-cli"></a>
 
-To create a device profile, use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateDeviceProfile.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateDeviceProfile.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/create-device-profile.html](https://docs.aws.amazon.com/cli/latest/reference/create-device-profile.html) CLI command. For example, the following command creates a profile for your Sidewalk end device.
+To create a device profile, use the [`CreateDeviceProfile`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateDeviceProfile.html) API operation or the [`create-device-profile`](https://docs.aws.amazon.com/cli/latest/reference/create-device-profile.html) CLI command. For example, the following command creates a profile for your Sidewalk end device.
 
 ```
 aws iotwireless create-device-profile \
@@ -73,7 +73,7 @@ Running this command returns the profile details, which include the Amazon Resou
 ```
 
 **View profile information and qualify profiles**
-Use the [https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDeviceProfile.html](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDeviceProfile.html) API operation or the [https://docs.aws.amazon.com/cli/latest/reference/get-device-profile.html](https://docs.aws.amazon.com/cli/latest/reference/get-device-profile.html) CLI command to get information about your device profile that you added to your account for AWS IoT Core for Amazon Sidewalk. To retrieve information about your device profile, specify the profile ID. The API will then return information about the device profile matching the specified identifier.
+Use the [`GetDeviceProfile`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDeviceProfile.html) API operation or the [`get-device-profile`](https://docs.aws.amazon.com/cli/latest/reference/get-device-profile.html) CLI command to get information about your device profile that you added to your account for AWS IoT Core for Amazon Sidewalk. To retrieve information about your device profile, specify the profile ID. The API will then return information about the device profile matching the specified identifier.
 
 The following shows an example CLI command:
 

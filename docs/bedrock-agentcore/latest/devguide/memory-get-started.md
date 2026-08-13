@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory
 # Get started with AgentCore Memory
 <a name="memory-get-started"></a>
 
-Amazon Bedrock Amazon Bedrock AgentCore Memory lets you create and manage AgentCore Memory resources that store conversation context for your AI agents. This getting started guides you through installing dependencies and implementing both short-term and long-term memory features. The instructions use the AgentCore CLI.
+Amazon Bedrock AgentCore Memory lets you create and manage AgentCore Memory resources that store conversation context for your AI agents. This getting started guides you through installing dependencies and implementing both short-term and long-term memory features. The instructions use the AgentCore CLI.
 
 The steps are as follows:
 
@@ -25,7 +25,7 @@ Before starting, make sure you have:
 +  **Python 3.10\+** installed
 + Node.js 18\+ installed (for the AgentCore CLI)
 
-To get started with Amazon Bedrock Amazon Bedrock AgentCore Memory, install the dependencies, create an AgentCore CLI project, and set up a virtual environment. The below commands can be run directly in the terminal.
+To get started with Amazon Bedrock AgentCore Memory, install the dependencies, create an AgentCore CLI project, and set up a virtual environment. The following commands can be run directly in the terminal.
 
 ```
 pip install bedrock-agentcore

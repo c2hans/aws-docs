@@ -25,7 +25,7 @@ Both policies must allow the action. If either one is missing, the cross-account
 If a resource-based policy grants access to a principal in the same account, no additional identity-based policy is required. For more information, see [How IAM Roles Differ from Resource-based Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_compare-resource-policies.html) in the *IAM User Guide*.
 
 **Resource policy control plane operations**
-Resource-based policies do not apply to resource policy control plane operations such as [https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_PutResourcePolicy.html](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_PutResourcePolicy.html), [https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_GetResourcePolicy.html](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_GetResourcePolicy.html), and [https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_DeleteResourcePolicy.html](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_DeleteResourcePolicy.html). This prevents potential lockout scenarios where a resource policy could deny the ability to modify or remove the policy itself. Access to these control plane operations is governed solely by IAM identity-based policies.
+Resource-based policies do not apply to resource policy control plane operations such as [`PutResourcePolicy`](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_PutResourcePolicy.html), [`GetResourcePolicy`](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_GetResourcePolicy.html), and [`DeleteResourcePolicy`](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_DeleteResourcePolicy.html). This prevents potential lockout scenarios where a resource policy could deny the ability to modify or remove the policy itself. Access to these control plane operations is governed solely by IAM identity-based policies.
 
 ## Considerations
 <a name="security_iam_resource-based-policies-considerations"></a>
@@ -44,7 +44,7 @@ Keep the following in mind when using resource-based policies with AWS Payment C
 You can manage resource-based policies for AWS Payment Cryptography keys using the AWS CLI or AWS API. To use this command, replace the {{italicized placeholder text}} in the example command with your own information.
 
 **Attach a resource-based policy**
-Use the [https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_PutResourcePolicy.html](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_PutResourcePolicy.html) API action or the [https://docs.aws.amazon.com/cli/latest/reference/payment-cryptography/put-resource-policy.html](https://docs.aws.amazon.com/cli/latest/reference/payment-cryptography/put-resource-policy.html) CLI command to attach a resource-based policy to a key. If a policy already exists, the command replaces it.
+Use the [`PutResourcePolicy`](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_PutResourcePolicy.html) API action or the [**put-resource-policy**](https://docs.aws.amazon.com/cli/latest/reference/payment-cryptography/put-resource-policy.html) CLI command to attach a resource-based policy to a key. If a policy already exists, the command replaces it.
 
 The following example attaches a resource-based policy from a JSON file to a key.
 
@@ -55,7 +55,7 @@ aws payment-cryptography put-resource-policy \
 ```
 
 **Retrieve a resource-based policy**
-Use the [https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_GetResourcePolicy.html](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_GetResourcePolicy.html) API action or the [https://docs.aws.amazon.com/cli/latest/reference/payment-cryptography/get-resource-policy.html](https://docs.aws.amazon.com/cli/latest/reference/payment-cryptography/get-resource-policy.html) CLI command to retrieve the resource-based policy attached to a key.
+Use the [`GetResourcePolicy`](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_GetResourcePolicy.html) API action or the [**get-resource-policy**](https://docs.aws.amazon.com/cli/latest/reference/payment-cryptography/get-resource-policy.html) CLI command to retrieve the resource-based policy attached to a key.
 
 The following example retrieves the resource-based policy attached to a key.
 
@@ -88,7 +88,7 @@ The response returns the policy document:
 ```
 
 **Delete a resource-based policy**
-Use the [https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_DeleteResourcePolicy.html](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_DeleteResourcePolicy.html) API action or the [https://docs.aws.amazon.com/cli/latest/reference/payment-cryptography/delete-resource-policy.html](https://docs.aws.amazon.com/cli/latest/reference/payment-cryptography/delete-resource-policy.html) CLI command to remove the resource-based policy from a key.
+Use the [`DeleteResourcePolicy`](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_DeleteResourcePolicy.html) API action or the [**delete-resource-policy**](https://docs.aws.amazon.com/cli/latest/reference/payment-cryptography/delete-resource-policy.html) CLI command to remove the resource-based policy from a key.
 
 The following example deletes the resource-based policy attached to a key.
 

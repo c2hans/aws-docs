@@ -112,7 +112,7 @@ This value is available after authentication in a local file: `~/.fastlane/space
       fastlane spaceauth -u <apple account>
       ```
 
-1. Fastlane Match pass phrase - To enable Fastlane Match to decrypt the certificates and profiles stored in the S3 bucket, it is necessary to add the encryption passphrase that you configured in the Match setup step to the CodeBuild project’s environment variables.
+1. Fastlane Match pass phrase - To enable Fastlane Match to decrypt the certificates and profiles stored in the S3 bucket, it is necessary to add the encryption passphrase that you configured in the Match setup step to the CodeBuild project's environment variables.
 
    1. Secret key - `MATCH_PASSWORD`
 
@@ -231,7 +231,7 @@ Once the job is completed, you will be able to view the log of the job.
 <a name="sample-fastlane-considerations"></a>
 
 The following are security considerations for this tutorial.
-+ Ensure your S3 bucket has appropriate security settings, including encryption at rest. In particular, make sure the bucket has no public access and restrict access to only CodeBuild and the system that needs to have an access.
++ Ensure your S3 bucket has appropriate security settings, including encryption at rest. In particular, make sure the bucket has no public access and restrict access to only CodeBuild and the system that needs to have access.
 + Consider using AWS Secrets Manager for storing sensitive information like the MATCH\_PASSWORD and FASTLANE\_SESSION.
 
 This sample provides a setup for iOS code signing with Fastlane in CodeBuild using Amazon S3 for certificate storage. You may need to adjust some steps based on your specific project requirements and CodeBuild environment. This approach leverages AWS services for enhanced security and integration within the AWS ecosystem.

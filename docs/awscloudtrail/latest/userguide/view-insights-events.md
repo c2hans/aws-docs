@@ -10,8 +10,8 @@ This section describes how you can lookup the last 90 days of Insights events fo
 You can view, filter, and download the last 90 days of Insights events for a trail from the **Insights** page on the console.
 
 You can fetch the last 90 days of Insights events programmatically:
-+ For Trails logging management events by running the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/lookup-events.html](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/lookup-events.html) command, or the [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_LookupEvents.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_LookupEvents.html) API operation.
-+ For Trails logging data events by running the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/list-insights-data.html](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/list-insights-data.html) command, or the [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_ListInsightsData.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_ListInsightsData.html) API operation.
++ For Trails logging management events by running the AWS CLI [lookup-events](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/lookup-events.html) command, or the [LookupEvents](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_LookupEvents.html) API operation.
++ For Trails logging data events by running the AWS CLI [list-insights-data](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/list-insights-data.html) command, or the [ListInsightsData](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_ListInsightsData.html) API operation.
 
 For descriptions of Insights events record fields for trails, see [CloudTrail record contents for Insights events for trails](cloudtrail-insights-fields-trails.md).
 

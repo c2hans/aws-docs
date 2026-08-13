@@ -56,7 +56,7 @@ The web app continues to generate traffic to the API every few seconds while the
 ## Use the X-Ray API
 <a name="xray-api-tutorial-useapi"></a>
 
-The AWS CLI provides commands for all of the API actions that X-Ray provides, including [https://docs.aws.amazon.com/xray/latest/api/API_GetServiceGraph.html](https://docs.aws.amazon.com/xray/latest/api/API_GetServiceGraph.html) and [https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSummaries.html](https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSummaries.html). See the [AWS X-Ray API Reference](https://docs.aws.amazon.com/xray/latest/api/Welcome.html) for more information on all of the supported actions and the data types that they use.
+The AWS CLI provides commands for all of the API actions that X-Ray provides, including [`GetServiceGraph`](https://docs.aws.amazon.com/xray/latest/api/API_GetServiceGraph.html) and [`GetTraceSummaries`](https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSummaries.html). See the [AWS X-Ray API Reference](https://docs.aws.amazon.com/xray/latest/api/Welcome.html) for more information on all of the supported actions and the data types that they use.
 
 **Example bin/service-graph.sh**
 

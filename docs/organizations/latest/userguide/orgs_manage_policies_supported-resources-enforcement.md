@@ -9,1608 +9,1608 @@ The following services and resource types support enforcement with tag policies:
 
 <table>
 <thead>
-  <tr><th>  </th><th>  </th><th>  </th><th colspan="2"> Basic Compliance Rules </th><th colspan="2"> Required Tag Keys </th></tr>
-  <tr><th> Service </th><th> Tag Policies JSON syntax </th><th> CloudFormation Alias </th><th> Reporting Mode </th><th> Enforcement Mode </th><th> Reporting Mode </th><th> Enforce for IaC </th></tr>
+  <tr><th> <code></code> </th><th> <code></code> </th><th> <code></code> </th><th colspan="2"> <code>Basic Compliance Rules</code> </th><th colspan="2"> <code>Required Tag Keys</code> </th></tr>
+  <tr><th> <code>Service</code> </th><th> <code>Tag Policies JSON syntax</code> </th><th> <code>CloudFormation Alias</code> </th><th> <code>Reporting Mode</code> </th><th> <code>Enforcement Mode</code> </th><th> <code>Reporting Mode</code> </th><th> <code>Enforce for IaC</code> </th></tr>
 </thead>
 <tbody>
-  <tr><td rowspan="4"> AWS Amplify UI Builder [amplifyuibuilder] </td><td> amplifyuibuilder:theme </td><td> +   `AWS::AmplifyUIBuilder::Theme`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> amplifyuibuilder:app/environment/components </td><td> +   `AWS::AmplifyUIBuilder::Component`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> amplifyuibuilder:component </td><td> +   `AWS::AmplifyUIBuilder::Component`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> amplifyuibuilder:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> AWS Amplify [amplify] </td><td> amplify:apps </td><td> +   `AWS::Amplify::App`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="8"> AWS App Mesh [appmesh] </td><td> appmesh:mesh </td><td> +   `AWS::AppMesh::Mesh`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> appmesh:mesh/virtualgateway/gatewayroute </td><td> +   `AWS::AppMesh::GatewayRoute`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> appmesh:mesh/virtualgateway </td><td> +   `AWS::AppMesh::VirtualGateway`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> appmesh:mesh/virtualnode </td><td> +   `AWS::AppMesh::VirtualNode`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> appmesh:mesh/virtualrouter/route </td><td> +   `AWS::AppMesh::Route`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> appmesh:mesh/virtualservice </td><td> +   `AWS::AppMesh::VirtualService`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> appmesh:mesh/virtualrouter </td><td> +   `AWS::AppMesh::VirtualRouter`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> appmesh:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="6"> AWS App Runner [apprunner] </td><td> apprunner:autoscalingconfiguration </td><td> +   `AWS::AppRunner::AutoScalingConfiguration`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> apprunner:service </td><td> +   `AWS::AppRunner::Service`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> apprunner:connection </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> apprunner:vpcingressconnection </td><td> +   `AWS::AppRunner::VpcIngressConnection`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> apprunner:observabilityconfiguration </td><td> +   `AWS::AppRunner::ObservabilityConfiguration`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> apprunner:vpcconnector </td><td> +   `AWS::AppRunner::VpcConnector`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="9"> AWS AppConfig [appconfig] </td><td> appconfig:application/environment </td><td> +   `AWS::AppConfig::Environment`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> appconfig:environment </td><td> +   `AWS::AppConfig::Environment`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> appconfig:configuration </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> appconfig:extension </td><td> +   `AWS::AppConfig::Extension`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> appconfig:application </td><td> +   `AWS::AppConfig::Application`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> appconfig:extensionassociation </td><td> +   `AWS::AppConfig::ExtensionAssociation`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> appconfig:application/configurationprofile </td><td> +   `AWS::AppConfig::ConfigurationProfile`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> appconfig:application/environment/deployment </td><td> +   `AWS::AppConfig::Deployment`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> appconfig:deploymentstrategy </td><td> +   `AWS::AppConfig::DeploymentStrategy`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="3"> AWS AppFabric [appfabric] </td><td> appfabric:appbundle/ingestion </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> appfabric:appbundle </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> appfabric:appbundle/appauthorization </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> AWS AppSync [appsync] </td><td> appsync:domainnames </td><td> +   `AWS::AppSync::DomainName`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> appsync:apis </td><td> +   `AWS::AppSync::GraphQLApi`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> appsync:apis </td><td> +   `AWS::AppSync::Api`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> AWS Application Auto Scaling [application-autoscaling] </td><td> application-autoscaling:scalable-target </td><td> +   `AWS::ApplicationAutoScaling::ScalableTarget`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="10"> AWS Application Migration Service [mgn] </td><td> mgn:source-server </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> mgn:connector </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> mgn:application </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> mgn:wave </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> mgn:launch-configuration-template </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> mgn:replication-configuration-template </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> mgn:job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> mgn:import </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> mgn:vcenter-client </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> mgn:export </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="4"> AWS Audit Manager [auditmanager] </td><td> auditmanager:assessment </td><td> +   `AWS::AuditManager::Assessment`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> auditmanager:control </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> auditmanager:assessmentframework </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> auditmanager:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> AWS B2B Data Interchange [b2bi] </td><td> b2bi:profile </td><td> +   `AWS::B2BI::Profile`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> b2bi:partnership </td><td> +   `AWS::B2BI::Partnership`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> b2bi:transformer </td><td> +   `AWS::B2BI::Transformer`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> b2bi:capability </td><td> +   `AWS::B2BI::Capability`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> AWS Backup Gateway [backup-gateway] </td><td> backup-gateway:vm </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> backup-gateway:hypervisor </td><td> +   `AWS::BackupGateway::Hypervisor`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> backup-gateway:gateway </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> backup-gateway:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> AWS Backup [backup-search] </td><td> backup-search:search-export-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> backup-search:search-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="9"> AWS Backup [backup] </td><td> backup:legal-hold </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> backup:tiering-configuration </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> backup:report-plan </td><td> +   `AWS::Backup::ReportPlan`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> backup:backup-vault </td><td> +   `AWS::Backup::LogicallyAirGappedBackupVault`  <br />+   `AWS::Backup::BackupVault`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> backup:restore-testing-plan </td><td> +   `AWS::Backup::RestoreTestingPlan`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> backup:framework </td><td> +   `AWS::Backup::Framework`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> backup:backup-plan </td><td> +   `AWS::Backup::BackupPlan`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> backup:recovery-point </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> backup:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="9"> AWS Batch [batch] </td><td> batch:service-environment </td><td> +   `AWS::Batch::ServiceEnvironment`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> batch:job-definition </td><td> +   `AWS::Batch::JobDefinition`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> batch:scheduling-policy </td><td> +   `AWS::Batch::SchedulingPolicy`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> batch:consumable-resource </td><td> +   `AWS::Batch::ConsumableResource`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> batch:service-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> batch:compute-environment </td><td> +   `AWS::Batch::ComputeEnvironment`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> batch:job </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> batch:job-queue </td><td> +   `AWS::Batch::JobQueue`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> batch:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> AWS Billing And Cost Management Data Exports [bcm-data-exports] </td><td> bcm-data-exports:export </td><td> +   `AWS::BCMDataExports::Export`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="3"> AWS Billing And Cost Management Pricing Calculator [bcm-pricing-calculator] </td><td> bcm-pricing-calculator:workload-estimate </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bcm-pricing-calculator:bill-estimate </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bcm-pricing-calculator:bill-scenario </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="4"> AWS Billing Conductor [billingconductor] </td><td> billingconductor:billinggroup </td><td> +   `AWS::BillingConductor::BillingGroup`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> billingconductor:pricingplan </td><td> +   `AWS::BillingConductor::PricingPlan`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> billingconductor:customlineitem </td><td> +   `AWS::BillingConductor::CustomLineItem`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> billingconductor:pricingrule </td><td> +   `AWS::BillingConductor::PricingRule`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> AWS Billing [billing] </td><td> billing:billingview </td><td> +   `AWS::Billing::BillingView`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS Budget Service [budgets] </td><td> budgets:budget </td><td> +   `AWS::Budgets::Budget`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> budgets:budget/action </td><td> +   `AWS::Budgets::BudgetsAction`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> AWS BugBust [bugbust] </td><td> bugbust:event </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> bugbust:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS Certificate Manager [acm] </td><td> acm:certificate </td><td> +   `AWS::CertificateManager::Certificate`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> acm:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> AWS Chatbot [chatbot] </td><td> chatbot:custom-action </td><td> +   `AWS::Chatbot::CustomAction`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> chatbot:chat-configuration/microsoft-teams-channel </td><td> +   `AWS::Chatbot::SlackChannelConfiguration`  <br />+   `AWS::Chatbot::MicrosoftTeamsChannelConfiguration`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> chatbot:chat-configuration/slack-channel </td><td> +   `AWS::Chatbot::SlackChannelConfiguration`  <br />+   `AWS::Chatbot::MicrosoftTeamsChannelConfiguration`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> chatbot:chat-configuration/chime-webhook </td><td> +   `AWS::Chatbot::SlackChannelConfiguration`  <br />+   `AWS::Chatbot::MicrosoftTeamsChannelConfiguration`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="11"> AWS Clean Rooms ML [cleanrooms-ml] </td><td> cleanrooms-ml:configured-model-algorithm </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cleanrooms-ml:trained-model </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cleanrooms-ml:membership/trained-model </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cleanrooms-ml:configured-model-algorithm-association </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cleanrooms-ml:membership/configured-model-algorithm-association </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cleanrooms-ml:membership/trained-model-inference-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cleanrooms-ml:trained-model-inference-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cleanrooms-ml:audience-model </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cleanrooms-ml:audience-generation-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cleanrooms-ml:training-dataset </td><td> +   `AWS::CleanRoomsML::TrainingDataset`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> cleanrooms-ml:configured-audience-model </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="9"> AWS Clean Rooms [cleanrooms] </td><td> cleanrooms:collaboration </td><td> +   `AWS::CleanRooms::Collaboration`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> cleanrooms:membership/privacybudgettemplate </td><td> +   `AWS::CleanRooms::PrivacyBudgetTemplate`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cleanrooms:membership/configuredtableassociation </td><td> +   `AWS::CleanRooms::ConfiguredTableAssociation`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> cleanrooms:configuredtable </td><td> +   `AWS::CleanRooms::ConfiguredTable`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> cleanrooms:membership/analysistemplate </td><td> +   `AWS::CleanRooms::AnalysisTemplate`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cleanrooms:membership/configuredaudiencemodelassociation </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cleanrooms:membership </td><td> +   `AWS::CleanRooms::Membership`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> cleanrooms:membership/idmappingtable </td><td> +   `AWS::CleanRooms::IdMappingTable`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cleanrooms:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> AWS Cloud Map [servicediscovery] </td><td> servicediscovery:namespace </td><td> +   `AWS::ServiceDiscovery::HttpNamespace`  <br />+   `AWS::ServiceDiscovery::PrivateDnsNamespace`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> servicediscovery:service </td><td> +   `AWS::ServiceDiscovery::Service`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> AWS Cloud9 [cloud9] </td><td> cloud9:environment </td><td> +   `AWS::Cloud9::EnvironmentEC2`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> cloud9:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS CloudFormation [cloudformation] </td><td> cloudformation:stack </td><td> +   `AWS::CloudFormation::Stack`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> cloudformation:stackset </td><td> +   `AWS::CloudFormation::StackSet`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> AWS CloudHSM [cloudhsm] </td><td> cloudhsm:backup </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cloudhsm:cluster </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="5"> AWS CloudTrail [cloudtrail] </td><td> cloudtrail:channel </td><td> +   `AWS::CloudTrail::Channel`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> cloudtrail:eventdatastore </td><td> +   `AWS::CloudTrail::EventDataStore`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> cloudtrail:trail </td><td> +   `AWS::CloudTrail::Trail`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> cloudtrail:dashboard </td><td> +   `AWS::CloudTrail::Dashboard`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> cloudtrail:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> AWS CloudWatch RUM [rum] </td><td> rum:appmonitor </td><td> +   `AWS::RUM::AppMonitor`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="3"> AWS CodeArtifact [codeartifact] </td><td> codeartifact:repository </td><td> +   `AWS::CodeArtifact::Repository`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> codeartifact:domain </td><td> +   `AWS::CodeArtifact::Domain`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> codeartifact:package-group </td><td> +   `AWS::CodeArtifact::PackageGroup`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="4"> AWS CodeBuild [codebuild] </td><td> codebuild:project </td><td> +   `AWS::CodeBuild::Project`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> codebuild:fleet </td><td> +   `AWS::CodeBuild::Fleet`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> codebuild:report-group </td><td> +   `AWS::CodeBuild::ReportGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> codebuild:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> AWS CodeCommit [codecommit] </td><td> codecommit:repository </td><td> +   `AWS::CodeCommit::Repository`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> codecommit:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="3"> AWS CodeConnections [codeconnections] </td><td> codeconnections:host </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> codeconnections:connection </td><td> +   `AWS::CodeConnections::Connection`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> codeconnections:repository-link </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="4"> AWS CodeDeploy [codedeploy] </td><td> codedeploy:deploymentconfig </td><td> +   `AWS::CodeDeploy::DeploymentConfig`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> codedeploy:application </td><td> +   `AWS::CodeDeploy::Application`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> codedeploy:deploymentgroup </td><td> +   `AWS::CodeDeploy::DeploymentGroup`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> codedeploy:instance </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="4"> AWS CodePipeline [codepipeline] </td><td> codepipeline:webhook </td><td> +   `AWS::CodePipeline::Webhook`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> codepipeline:pipeline </td><td> +   `AWS::CodePipeline::Pipeline`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> codepipeline:actiontype </td><td> +   `AWS::CodePipeline::CustomActionType`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> codepipeline:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> AWS CodeStar Connections [codestar-connections] </td><td> codestar-connections:connection </td><td> +   `AWS::CodeStarConnections::Connection`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> codestar-connections:host </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> codestar-connections:repository-link </td><td> +   `AWS::CodeStarConnections::RepositoryLink`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> codestar-connections:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> AWS CodeStar Notifications [codestar-notifications] </td><td> codestar-notifications:notificationrule </td><td> +   `AWS::CodeStarNotifications::NotificationRule`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> AWS CodeStar [codestar] </td><td> codestar:project </td><td> +   `AWS::CodeStar::GitHubRepository`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="9"> AWS Config [config] </td><td> config:aggregation-authorization </td><td> +   `AWS::Config::AggregationAuthorization`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> config:organization-config-rule </td><td> +   `AWS::Config::OrganizationConfigRule`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> config:organization-conformance-pack </td><td> +   `AWS::Config::OrganizationConformancePack`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> config:config-rule </td><td> +   `AWS::Config::ConfigRule`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> config:configuration-recorder </td><td> +   `AWS::Config::ConfigurationRecorder`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> config:stored-query </td><td> +   `AWS::Config::StoredQuery`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> config:config-aggregator </td><td> +   `AWS::Config::ConfigurationAggregator`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> config:conformance-pack </td><td> +   `AWS::Config::ConformancePack`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> config:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="3"> AWS Control Tower [controltower] </td><td> controltower:landingzone </td><td> +   `AWS::ControlTower::LandingZone`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> controltower:enabledcontrol </td><td> +   `AWS::ControlTower::EnabledControl`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> controltower:enabledbaseline </td><td> +   `AWS::ControlTower::EnabledBaseline`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> AWS Cost Explorer Service [ce] </td><td> ce:anomalysubscription </td><td> +   `AWS::CE::AnomalySubscription`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ce:costcategory </td><td> +   `AWS::CE::CostCategory`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ce:anomalymonitor </td><td> +   `AWS::CE::AnomalyMonitor`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> AWS Cost and Usage Report [cur] </td><td> cur:definition </td><td> +   `AWS::CUR::ReportDefinition`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="5"> AWS Data Exchange [dataexchange] </td><td> dataexchange:entitled-revisions </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> dataexchange:event-actions </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> dataexchange:entitled-data-sets </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> dataexchange:data-grants </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> dataexchange:data-sets </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> AWS Data Pipeline [datapipeline] </td><td> datapipeline:pipeline </td><td> +   `AWS::DataPipeline::Pipeline`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="6"> AWS DataSync [datasync] </td><td> datasync:location </td><td> +   `AWS::DataSync::LocationEFS`  <br />+   `AWS::DataSync::LocationS3`  <br />+   `AWS::DataSync::LocationFSxLustre`  <br />+   `AWS::DataSync::LocationNFS`  <br />+   `AWS::DataSync::LocationFSxONTAP`  <br />+   `AWS::DataSync::LocationObjectStorage`  <br />+   `AWS::DataSync::LocationFSxOpenZFS`  <br />+   `AWS::DataSync::LocationSMB`  <br />+   `AWS::DataSync::LocationFSxWindows`  <br />+   `AWS::DataSync::LocationAzureBlob`  <br />+   `AWS::DataSync::LocationHDFS`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> datasync:task </td><td> +   `AWS::DataSync::Task`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> datasync:task/execution </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> datasync:agent </td><td> +   `AWS::DataSync::Agent`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> datasync:system/job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> datasync:system </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="13"> AWS Database Migration Service [dms] </td><td> dms:assessment-run </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> dms:subgrp </td><td> +   `AWS::DMS::ReplicationSubnetGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> dms:es </td><td> +   `AWS::DMS::EventSubscription`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> dms:replication-config </td><td> +   `AWS::DMS::ReplicationConfig`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> dms:cert </td><td> +   `AWS::DMS::Certificate`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> dms:rep </td><td> +   `AWS::DMS::ReplicationInstance`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> dms:instance-profile </td><td> +   `AWS::DMS::InstanceProfile`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> dms:task </td><td> +   `AWS::DMS::ReplicationTask`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> dms:endpoint </td><td> +   `AWS::DMS::Endpoint`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> dms:data-migration </td><td> +   `AWS::DMS::DataMigration`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> dms:data-provider </td><td> +   `AWS::DMS::DataProvider`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> dms:migration-project </td><td> +   `AWS::DMS::MigrationProject`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> dms:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="3"> AWS Deadline Cloud [deadline] </td><td> deadline:license-endpoint </td><td> +   `AWS::Deadline::LicenseEndpoint`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> deadline:farm </td><td> +   `AWS::Deadline::Farm`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> deadline:monitor </td><td> +   `AWS::Deadline::Monitor`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS DeepComposer [deepcomposer] </td><td> deepcomposer:composition </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> deepcomposer:model </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="6"> AWS DeepRacer [deepracer] </td><td> deepracer:leaderboard\_evaluation\_job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> deepracer:leaderboard </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> deepracer:model </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> deepracer:training\_job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> deepracer:evaluation\_job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> deepracer:car </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="11"> AWS Device Farm [devicefarm] </td><td> devicefarm:device </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> devicefarm:testgrid-project </td><td> +   `AWS::DeviceFarm::TestGridProject`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> devicefarm:deviceinstance </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> devicefarm:devicepool </td><td> +   `AWS::DeviceFarm::DevicePool`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> devicefarm:project </td><td> +   `AWS::DeviceFarm::Project`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> devicefarm:testgrid-session </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> devicefarm:session </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> devicefarm:instanceprofile </td><td> +   `AWS::DeviceFarm::InstanceProfile`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> devicefarm:networkprofile </td><td> +   `AWS::DeviceFarm::NetworkProfile`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> devicefarm:vpceconfiguration </td><td> +   `AWS::DeviceFarm::VPCEConfiguration`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> devicefarm:run </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> AWS Diode Messaging [diode-messaging] </td><td> diode-messaging:responding-flow </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> diode-messaging:mapping </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> diode-messaging:requesting-flow </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS Diode [diode] </td><td> diode:transfer </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> diode:account-mapping </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="5"> AWS Direct Connect [directconnect] </td><td> directconnect:dxvif </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> directconnect:dxlag </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> directconnect:dxcon </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> directconnect:dx-gateway </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> directconnect:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> AWS Directory Service [ds] </td><td> ds:directory </td><td> +   `AWS::DirectoryService::MicrosoftAD`  <br />+   `AWS::DirectoryService::SimpleAD`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="6"> AWS Elastic Beanstalk [elasticbeanstalk] </td><td> elasticbeanstalk:platform </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> elasticbeanstalk:configurationtemplate </td><td> +   `AWS::ElasticBeanstalk::ConfigurationTemplate`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> elasticbeanstalk:application </td><td> +   `AWS::ElasticBeanstalk::Application`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> elasticbeanstalk:environment </td><td> +   `AWS::ElasticBeanstalk::Environment`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> elasticbeanstalk:applicationversion </td><td> +   `AWS::ElasticBeanstalk::ApplicationVersion`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> elasticbeanstalk:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="6"> AWS Elastic Disaster Recovery [drs] </td><td> drs:job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> drs:source-network </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> drs:replication-configuration-template </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> drs:source-server </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> drs:launch-configuration-template </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> drs:recovery-instance </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="6"> AWS Elastic Load Balancing [elasticloadbalancing] </td><td> elasticloadbalancing:loadbalancer </td><td> +   `AWS::ElasticLoadBalancingV2::LoadBalancer`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> elasticloadbalancing:targetgroup </td><td> +   `AWS::ElasticLoadBalancingV2::TargetGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> elasticloadbalancing:loadbalancer </td><td> +   `AWS::ElasticLoadBalancing::LoadBalancer`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> elasticloadbalancing:listener </td><td> +   `AWS::ElasticLoadBalancingV2::Listener`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> elasticloadbalancing:truststore </td><td> +   `AWS::ElasticLoadBalancingV2::TrustStore`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> elasticloadbalancing:listener-rule </td><td> +   `AWS::ElasticLoadBalancingV2::ListenerRule`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> AWS Elemental Appliances and Software [elemental-appliances-software] </td><td> elemental-appliances-software:quote </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="8"> AWS Elemental MediaConnect [mediaconnect] </td><td> mediaconnect:routeroutput </td><td> +   `AWS::MediaConnect::RouterOutput`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> mediaconnect:source </td><td> +   `AWS::MediaConnect::FlowSource`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> mediaconnect:output </td><td> +   `AWS::MediaConnect::FlowOutput`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> mediaconnect:entitlement </td><td> +   `AWS::MediaConnect::FlowEntitlement`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> mediaconnect:flow </td><td> +   `AWS::MediaConnect::Flow`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> mediaconnect:routernetworkinterface </td><td> +   `AWS::MediaConnect::RouterNetworkInterface`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> mediaconnect:flow/vpcinterface </td><td> +   `AWS::MediaConnect::FlowVpcInterface`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> mediaconnect:routerinput </td><td> +   `AWS::MediaConnect::RouterInput`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="4"> AWS Elemental MediaConvert [mediaconvert] </td><td> mediaconvert:queues </td><td> +   `AWS::MediaConvert::Queue`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> mediaconvert:presets </td><td> +   `AWS::MediaConvert::Preset`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> mediaconvert:jobtemplates </td><td> +   `AWS::MediaConvert::JobTemplate`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> mediaconvert:jobs </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="15"> AWS Elemental MediaLive [medialive] </td><td> medialive:node </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> medialive:sdisource </td><td> +   `AWS::MediaLive::SdiSource`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> medialive:reservation </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> medialive:signal-map </td><td> +   `AWS::MediaLive::SignalMap`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> medialive:network </td><td> +   `AWS::MediaLive::Network`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> medialive:cloudwatch-alarm-template </td><td> +   `AWS::MediaLive::CloudWatchAlarmTemplate`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> medialive:eventbridge-rule-template </td><td> +   `AWS::MediaLive::EventBridgeRuleTemplate`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> medialive:multiplex </td><td> +   `AWS::MediaLive::Multiplex`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> medialive:cloudwatch-alarm-template-group </td><td> +   `AWS::MediaLive::CloudWatchAlarmTemplateGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> medialive:eventbridge-rule-template-group </td><td> +   `AWS::MediaLive::EventBridgeRuleTemplateGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> medialive:channel </td><td> +   `AWS::MediaLive::Channel`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> medialive:channelplacementgroup </td><td> +   `AWS::MediaLive::ChannelPlacementGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> medialive:inputsecuritygroup </td><td> +   `AWS::MediaLive::InputSecurityGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> medialive:input </td><td> +   `AWS::MediaLive::Input`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> medialive:inputdevice </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="5"> AWS Elemental MediaPackage V2 [mediapackagev2] </td><td> mediapackagev2:channelGroup/channel/originEndpoint </td><td> +   `AWS::MediaPackageV2::OriginEndpoint`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> mediapackagev2:channelgroup/channel/originendpoint </td><td> +   `AWS::MediaPackageV2::OriginEndpoint`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> mediapackagev2:channelgroup </td><td> +   `AWS::MediaPackageV2::ChannelGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> mediapackagev2:channelGroup/channel </td><td> +   `AWS::MediaPackageV2::Channel`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> mediapackagev2:channelgroup/channel </td><td> +   `AWS::MediaPackageV2::Channel`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="3"> AWS Elemental MediaPackage [mediapackage-vod] </td><td> mediapackage-vod:packaging-configurations </td><td> +   `AWS::MediaPackage::PackagingConfiguration`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> mediapackage-vod:assets </td><td> +   `AWS::MediaPackage::Asset`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> mediapackage-vod:packaging-groups </td><td> +   `AWS::MediaPackage::PackagingGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> AWS Elemental MediaPackage [mediapackage] </td><td> mediapackage:channels </td><td> +   `AWS::MediaPackage::Channel`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> mediapackage:origin\_endpoints </td><td> +   `AWS::MediaPackage::OriginEndpoint`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> AWS Elemental MediaStore [mediastore] </td><td> mediastore:folder </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> mediastore:container </td><td> +   `AWS::MediaStore::Container`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> mediastore:object </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> mediastore:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="5"> AWS Elemental MediaTailor [mediatailor] </td><td> mediatailor:playbackconfiguration </td><td> +   `AWS::MediaTailor::PlaybackConfiguration`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> mediatailor:sourcelocation </td><td> +   `AWS::MediaTailor::SourceLocation`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> mediatailor:livesource </td><td> +   `AWS::MediaTailor::LiveSource`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> mediatailor:vodsource </td><td> +   `AWS::MediaTailor::VodSource`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> mediatailor:channel </td><td> +   `AWS::MediaTailor::Channel`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> AWS Elemental Support Cases [elemental-support-cases] </td><td> elemental-support-cases:case </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS End User Messaging Social [social-messaging] </td><td> social-messaging:waba </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> social-messaging:phone-number-id </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="5"> AWS Entity Resolution [entityresolution] </td><td> entityresolution:schemamapping </td><td> +   `AWS::EntityResolution::SchemaMapping`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> entityresolution:matchingworkflow </td><td> +   `AWS::EntityResolution::MatchingWorkflow`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> entityresolution:idnamespace </td><td> +   `AWS::EntityResolution::IdNamespace`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> entityresolution:idmappingworkflow </td><td> +   `AWS::EntityResolution::IdMappingWorkflow`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> entityresolution:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="3"> AWS Fault Injection Service [fis] </td><td> fis:action </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> fis:experiment-template </td><td> +   `AWS::FIS::ExperimentTemplate`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> fis:experiment </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="4"> AWS Firewall Manager [fms] </td><td> fms:applications-list </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> fms:protocols-list </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> fms:policy </td><td> +   `AWS::FMS::Policy`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> fms:resource-set </td><td> +   `AWS::FMS::ResourceSet`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS Global Accelerator [globalaccelerator] </td><td> globalaccelerator:accelerator </td><td> +   `AWS::GlobalAccelerator::Accelerator`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> globalaccelerator:attachment </td><td> +   `AWS::GlobalAccelerator::CrossAccountAttachment`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="6"> AWS Glue DataBrew [databrew] </td><td> databrew:job </td><td> +   `AWS::DataBrew::Job`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> databrew:recipe </td><td> +   `AWS::DataBrew::Recipe`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> databrew:schedule </td><td> +   `AWS::DataBrew::Schedule`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> databrew:project </td><td> +   `AWS::DataBrew::Project`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> databrew:ruleset </td><td> +   `AWS::DataBrew::Ruleset`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> databrew:dataset </td><td> +   `AWS::DataBrew::Dataset`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="19"> AWS Glue [glue] </td><td> glue:workflow </td><td> +   `AWS::Glue::Workflow`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> glue:integrationresourceproperty </td><td> +   `AWS::Glue::IntegrationResourceProperty`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> glue:integration </td><td> +   `AWS::Glue::Integration`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> glue:blueprint </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> glue:completion </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> glue:usageprofile </td><td> +   `AWS::Glue::UsageProfile`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> glue:job </td><td> +   `AWS::Glue::Job`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> glue:session </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> glue:trigger </td><td> +   `AWS::Glue::Trigger`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> glue:catalog </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> glue:devendpoint </td><td> +   `AWS::Glue::DevEndpoint`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> glue:dataqualityruleset </td><td> +   `AWS::Glue::DataQualityRuleset`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> glue:mltransform </td><td> +   `AWS::Glue::MLTransform`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> glue:connection </td><td> +   `AWS::Glue::Connection`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> glue:crawler </td><td> +   `AWS::Glue::Crawler`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> glue:registry </td><td> +   `AWS::Glue::Registry`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> glue:schema </td><td> +   `AWS::Glue::Schema`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> glue:customentitytype </td><td> +   `AWS::Glue::CustomEntityType`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> glue:database </td><td> +   `AWS::Glue::Database`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="6"> AWS Ground Station [groundstation] </td><td> groundstation:contact </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> groundstation:mission-profile </td><td> +   `AWS::GroundStation::MissionProfile`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> groundstation:ephemeris </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> groundstation:satellite </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> groundstation:config </td><td> +   `AWS::GroundStation::Config`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> groundstation:dataflow-endpoint-group </td><td> +   `AWS::GroundStation::DataflowEndpointGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> AWS HealthImaging [medical-imaging] </td><td> medical-imaging:datastore </td><td> +   `AWS::HealthImaging::Datastore`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> medical-imaging:datastore/imageset </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS HealthLake [healthlake] </td><td> healthlake:datastore </td><td> +   `AWS::HealthLake::FHIRDatastore`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> healthlake:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="13"> AWS HealthOmics [omics] </td><td> omics:annotationstore </td><td> +   `AWS::Omics::AnnotationStore`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> omics:sequencestore/readset </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> omics:referencestore/reference </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> omics:run </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> omics:runcache </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> omics:sequencestore </td><td> +   `AWS::Omics::SequenceStore`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> omics:variantstore </td><td> +   `AWS::Omics::VariantStore`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> omics:rungroup </td><td> +   `AWS::Omics::RunGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> omics:workflow </td><td> +   `AWS::Omics::Workflow`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> omics:referencestore </td><td> +   `AWS::Omics::ReferenceStore`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> omics:annotationstore/version </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> omics:workflow/version </td><td> +   `AWS::Omics::WorkflowVersion`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> omics:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> AWS IAM Access Analyzer [access-analyzer] </td><td> access-analyzer:analyzer </td><td> +   `AWS::AccessAnalyzer::Analyzer`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> AWS IAM Identity Center [sso] </td><td> sso:permissionset </td><td> +   `AWS::SSO::PermissionSet`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sso:application </td><td> +   `AWS::SSO::Application`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sso:instance </td><td> +   `AWS::SSO::Instance`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sso:trustedtokenissuer </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="9"> AWS Identity and Access Management (IAM) [iam] </td><td> iam:mfa </td><td> +   `AWS::IAM::VirtualMFADevice`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iam:server-certificate </td><td> +   `AWS::IAM::ServerCertificate`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iam:saml-provider </td><td> +   `AWS::IAM::SAMLProvider`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iam:oidc-provider </td><td> +   `AWS::IAM::OIDCProvider`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iam:policy </td><td> +   `AWS::IAM::ManagedPolicy`  <br />+   `AWS::IAM::Policy`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> iam:role </td><td> +   `AWS::IAM::Role`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iam:user </td><td> +   `AWS::IAM::User`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iam:instance-profile </td><td> +   `AWS::IAM::InstanceProfile`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iam:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> AWS Identity and Access Management Roles Anywhere [nile] </td><td> nile:trust-anchor </td><td> +   `AWS::RolesAnywhere::TrustAnchor`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> nile:crl </td><td> +   `AWS::RolesAnywhere::CRL`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> nile:subject </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> nile:profile </td><td> +   `AWS::RolesAnywhere::Profile`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS Invoicing Service [invoicing] </td><td> invoicing:procurement-portal-preference </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> invoicing:invoice-unit </td><td> +   `AWS::Invoicing::InvoiceUnit`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="5"> AWS IoT Analytics [iotanalytics] </td><td> iotanalytics:channel </td><td> +   `AWS::IoTAnalytics::Channel`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> iotanalytics:dataset </td><td> +   `AWS::IoTAnalytics::Dataset`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> iotanalytics:datastore </td><td> +   `AWS::IoTAnalytics::Datastore`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> iotanalytics:pipeline </td><td> +   `AWS::IoTAnalytics::Pipeline`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> iotanalytics:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS IoT Core Device Advisor [iotdeviceadvisor] </td><td> iotdeviceadvisor:suiterun </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iotdeviceadvisor:suitedefinition </td><td> +   `AWS::IoTCoreDeviceAdvisor::SuiteDefinition`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> AWS IoT Events [iotevents] </td><td> iotevents:detectormodel </td><td> +   `AWS::IoTEvents::DetectorModel`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> iotevents:input </td><td> +   `AWS::IoTEvents::Input`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> iotevents:alarmmodel </td><td> +   `AWS::IoTEvents::AlarmModel`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iotevents:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS IoT Fleet Hub for Device Management [iotfleethub] </td><td> iotfleethub:application </td><td> +   `AWS::IoTFleetHub::Application`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotfleethub:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="7"> AWS IoT FleetWise [iotfleetwise] </td><td> iotfleetwise:model-manifest </td><td> +   `AWS::IoTFleetWise::ModelManifest`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotfleetwise:vehicle </td><td> +   `AWS::IoTFleetWise::Vehicle`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotfleetwise:decoder-manifest </td><td> +   `AWS::IoTFleetWise::DecoderManifest`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotfleetwise:state-template </td><td> +   `AWS::IoTFleetWise::StateTemplate`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iotfleetwise:fleet </td><td> +   `AWS::IoTFleetWise::Fleet`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotfleetwise:signal-catalog </td><td> +   `AWS::IoTFleetWise::SignalCatalog`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotfleetwise:campaign </td><td> +   `AWS::IoTFleetWise::Campaign`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="14"> AWS IoT Greengrass [greengrass] </td><td> greengrass:coresdefinition </td><td> +   `AWS::Greengrass::CoreDefinition`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> greengrass:components:versions </td><td> +   `AWS::GreengrassV2::ComponentVersion`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> greengrass:devicesdefinition </td><td> +   `AWS::Greengrass::DeviceDefinition`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> greengrass:connectorsdefinition </td><td> +   `AWS::Greengrass::ConnectorDefinition`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> greengrass:deployments </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> greengrass:functionsdefinition </td><td> +   `AWS::Greengrass::FunctionDefinition`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> greengrass:bulk </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> greengrass:resourcesdefinition </td><td> +   `AWS::Greengrass::ResourceDefinition`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> greengrass:components </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> greengrass:groups </td><td> +   `AWS::Greengrass::Group`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> greengrass:loggersdefinition </td><td> +   `AWS::Greengrass::LoggerDefinition`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> greengrass:coredevices </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> greengrass:subscriptionsdefinition </td><td> +   `AWS::Greengrass::SubscriptionDefinition`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> greengrass:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="6"> AWS IoT Managed Integrations [iotmanagedintegrations] </td><td> iotmanagedintegrations:ota-task </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iotmanagedintegrations:managed-thing </td><td> +   `AWS::IoTManagedIntegrations::ManagedThing`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iotmanagedintegrations:cloud-connector </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iotmanagedintegrations:account-association </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iotmanagedintegrations:provisioning-profile </td><td> +   `AWS::IoTManagedIntegrations::ProvisioningProfile`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iotmanagedintegrations:credential-locker </td><td> +   `AWS::IoTManagedIntegrations::CredentialLocker`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="11"> AWS IoT SiteWise [iotsitewise] </td><td> iotsitewise:portal </td><td> +   `AWS::IoTSiteWise::Portal`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotsitewise:dashboard </td><td> +   `AWS::IoTSiteWise::Dashboard`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotsitewise:project </td><td> +   `AWS::IoTSiteWise::Project`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotsitewise:asset </td><td> +   `AWS::IoTSiteWise::Asset`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotsitewise:dataset </td><td> +   `AWS::IoTSiteWise::Dataset`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotsitewise:time-series </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iotsitewise:computation-model </td><td> +   `AWS::IoTSiteWise::ComputationModel`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iotsitewise:asset-model </td><td> +   `AWS::IoTSiteWise::AssetModel`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotsitewise:gateway </td><td> +   `AWS::IoTSiteWise::Gateway`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotsitewise:access-policy </td><td> +   `AWS::IoTSiteWise::AccessPolicy`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotsitewise:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="5"> AWS IoT TwinMaker [iotdigitaltwin] </td><td> iotdigitaltwin:workspace </td><td> +   `AWS::IoTTwinMaker::Workspace`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iotdigitaltwin:workspace/component-type </td><td> +   `AWS::IoTTwinMaker::ComponentType`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iotdigitaltwin:workspace/scene </td><td> +   `AWS::IoTTwinMaker::Scene`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iotdigitaltwin:workspace/sync-job </td><td> +   `AWS::IoTTwinMaker::SyncJob`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iotdigitaltwin:entity </td><td> +   `AWS::IoTTwinMaker::Entity`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="11"> AWS IoT Wireless [iotwireless] </td><td> iotwireless:sidewalkaccount </td><td> +   `AWS::IoTWireless::PartnerAccount`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotwireless:networkanalyzerconfiguration </td><td> +   `AWS::IoTWireless::NetworkAnalyzerConfiguration`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotwireless:serviceprofile </td><td> +   `AWS::IoTWireless::ServiceProfile`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotwireless:multicastgroup </td><td> +   `AWS::IoTWireless::MulticastGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotwireless:wirelessgateway </td><td> +   `AWS::IoTWireless::WirelessGateway`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotwireless:wirelessdevice </td><td> +   `AWS::IoTWireless::WirelessDevice`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotwireless:destination </td><td> +   `AWS::IoTWireless::Destination`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotwireless:fuotatask </td><td> +   `AWS::IoTWireless::FuotaTask`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotwireless:importtask </td><td> +   `AWS::IoTWireless::WirelessDeviceImportTask`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotwireless:wirelessgatewaytaskdefinition </td><td> +   `AWS::IoTWireless::TaskDefinition`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iotwireless:deviceprofile </td><td> +   `AWS::IoTWireless::DeviceProfile`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="25"> AWS IoT [iot] </td><td> iot:package </td><td> +   `AWS::IoT::SoftwarePackage`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iot:authorizer </td><td> +   `AWS::IoT::Authorizer`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iot:package/version </td><td> +   `AWS::IoT::SoftwarePackageVersion`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iot:fleetmetric </td><td> +   `AWS::IoT::FleetMetric`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iot:jobtemplate </td><td> +   `AWS::IoT::JobTemplate`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iot:billinggroup </td><td> +   `AWS::IoT::BillingGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iot:provisioningtemplate </td><td> +   `AWS::IoT::ProvisioningTemplate`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iot:thingtype </td><td> +   `AWS::IoT::ThingType`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iot:thinggroup </td><td> +   `AWS::IoT::ThingGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iot:certificateprovider </td><td> +   `AWS::IoT::CertificateProvider`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iot:rolealias </td><td> +   `AWS::IoT::RoleAlias`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iot:cacert </td><td> +   `AWS::IoT::CACertificate`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iot:custommetric </td><td> +   `AWS::IoT::CustomMetric`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iot:domainconfiguration </td><td> +   `AWS::IoT::DomainConfiguration`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iot:policy </td><td> +   `AWS::IoT::Policy`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iot:mitigationaction </td><td> +   `AWS::IoT::MitigationAction`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iot:securityprofile </td><td> +   `AWS::IoT::SecurityProfile`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iot:rule </td><td> +   `AWS::IoT::TopicRule`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iot:scheduledaudit </td><td> +   `AWS::IoT::ScheduledAudit`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> iot:tunnel </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iot:stream </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iot:job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iot:otaupdate </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iot:command </td><td> +   `AWS::IoT::Command`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iot:dimension </td><td> +   `AWS::IoT::Dimension`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> AWS Key Management Service [kms] </td><td> kms:key </td><td> +   `AWS::KMS::Key`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> kms:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="7"> AWS Lambda [lambda] </td><td> lambda:layer/version </td><td> +   `AWS::Lambda::LayerVersion`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> lambda:layerversion </td><td> +   `AWS::Lambda::LayerVersion`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> lambda:layer </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> lambda:function </td><td> +   `AWS::Lambda::Function`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> lambda:event-source-mapping </td><td> +   `AWS::Lambda::EventSourceMapping`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> lambda:code-signing-config </td><td> +   `AWS::Lambda::CodeSigningConfig`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> lambda:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> AWS Launch Wizard [launchwizard] </td><td> launchwizard:deployment </td><td> +   `AWS::LaunchWizard::Deployment`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> AWS License Manager Linux Subscriptions Manager [license-manager-linux-subscriptions] </td><td> license-manager-linux-subscriptions:subscription-provider </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="4"> AWS License Manager User Subscriptions [license-manager-user-subscriptions] </td><td> license-manager-user-subscriptions:product-subscription </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> license-manager-user-subscriptions:identity-provider </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> license-manager-user-subscriptions:instance-user </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> license-manager-user-subscriptions:license-server-endpoint </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="6"> AWS License Manager [license-manager] </td><td> license-manager:license-asset-group </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> license-manager:license </td><td> +   `AWS::LicenseManager::License`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> license-manager:license-asset-ruleset </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> license-manager:license-configuration </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> license-manager:report-generator </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> license-manager:grant </td><td> +   `AWS::LicenseManager::Grant`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> AWS MWAA Serverless [airflow-serverless] </td><td> airflow-serverless:workflow </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="4"> AWS Mainframe Modernization Application Testing [apptest] </td><td> apptest:testsuite </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> apptest:testconfiguration </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> apptest:testcase </td><td> +   `AWS::AppTest::TestCase`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> apptest:testrun </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS Mainframe Modernization Service [m2] </td><td> m2:app </td><td> +   `AWS::M2::Application`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> m2:env </td><td> +   `AWS::M2::Environment`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> AWS Marketplace Vendor Insights [vendor-insights] </td><td> vendor-insights:security-profile </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> vendor-insights:data-source </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS Marketplace [aws-marketplace] </td><td> aws-marketplace:deploymentparameter </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> aws-marketplace:changeset </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS Migration Hub Orchestrator [migrationhub-orchestrator] </td><td> migrationhub-orchestrator:workflow </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> migrationhub-orchestrator:template </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="4"> AWS Migration Hub Refactor Spaces [refactor-spaces] </td><td> refactor-spaces:environment/application </td><td> +   `AWS::RefactorSpaces::Application`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> refactor-spaces:environment/application/service </td><td> +   `AWS::RefactorSpaces::Service`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> refactor-spaces:environment </td><td> +   `AWS::RefactorSpaces::Environment`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> refactor-spaces:environment/application/route </td><td> +   `AWS::RefactorSpaces::Route`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="6"> AWS Network Firewall [network-firewall] </td><td> network-firewall:stateless-rulegroup </td><td> +   `AWS::NetworkFirewall::RuleGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> network-firewall:vpc-endpoint-association </td><td> +   `AWS::NetworkFirewall::VpcEndpointAssociation`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> network-firewall:firewall </td><td> +   `AWS::NetworkFirewall::Firewall`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> network-firewall:stateful-rulegroup </td><td> +   `AWS::NetworkFirewall::RuleGroup`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> network-firewall:firewall-policy </td><td> +   `AWS::NetworkFirewall::FirewallPolicy`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> network-firewall:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="9"> AWS Network Manager [networkmanager] </td><td> networkmanager:peering </td><td> +   `AWS::NetworkManager::TransitGatewayPeering`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> networkmanager:global-network </td><td> +   `AWS::NetworkManager::GlobalNetwork`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> networkmanager:link </td><td> +   `AWS::NetworkManager::Link`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> networkmanager:core-network </td><td> +   `AWS::NetworkManager::CoreNetwork`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> networkmanager:device </td><td> +   `AWS::NetworkManager::Device`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> networkmanager:connect-peer </td><td> +   `AWS::NetworkManager::ConnectPeer`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> networkmanager:attachment </td><td> +   `AWS::NetworkManager::VpcAttachment`  <br />+   `AWS::NetworkManager::ConnectAttachment`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> networkmanager:site </td><td> +   `AWS::NetworkManager::Site`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> networkmanager:connection </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS OpsWorks Configuration Management [opsworks-cm] </td><td> opsworks-cm:server </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> opsworks-cm:backup </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> AWS OpsWorks [opsworks] </td><td> opsworks:instance </td><td> +   `AWS::OpsWorks::Instance`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> opsworks:stack </td><td> +   `AWS::OpsWorks::Stack`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> opsworks:layer </td><td> +   `AWS::OpsWorks::Layer`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="6"> AWS Organizations [organizations] </td><td> organizations:account </td><td> +   `AWS::Organizations::Account`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> organizations:ou </td><td> +   `AWS::Organizations::OrganizationalUnit`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> organizations:resourcepolicy </td><td> +   `AWS::Organizations::ResourcePolicy`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> organizations:root </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> organizations:policy </td><td> +   `AWS::Organizations::Policy`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> organizations:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> AWS Outposts [outposts] </td><td> outposts:site </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> outposts:outpost </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> AWS Panorama [panorama] </td><td> panorama:package </td><td> +   `AWS::Panorama::Package`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> panorama:applicationinstance </td><td> +   `AWS::Panorama::ApplicationInstance`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> panorama:device </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> AWS Parallel Computing Service [pcs] </td><td> pcs:cluster </td><td> +   `AWS::PCS::Cluster`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> pcs:queue </td><td> +   `AWS::PCS::Queue`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> pcs:computenodegroup </td><td> +   `AWS::PCS::ComputeNodeGroup`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> AWS Partner Central Selling [partnercentral] </td><td> partnercentral:opportunity </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> partnercentral:engagement-by-accepting-invitation-task </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> partnercentral:engagement-from-opportunity-task </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> AWS Payment Cryptography [payment-cryptography] </td><td> payment-cryptography:key </td><td> +   `AWS::PaymentCryptography::Key`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> AWS Payments [payments] </td><td> payments:payment-instrument </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> AWS Performance Insights [pi] </td><td> pi:perf-reports </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> AWS Private CA Connector for Active Directory [pca-connector-ad] </td><td> pca-connector-ad:connector </td><td> +   `AWS::PCAConnectorAD::Connector`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> pca-connector-ad:connector/template </td><td> +   `AWS::PCAConnectorAD::Template`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> pca-connector-ad:directory-registration </td><td> +   `AWS::PCAConnectorAD::DirectoryRegistration`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> AWS Private CA Connector for SCEP [pca-connector-scep] </td><td> pca-connector-scep:connector </td><td> +   `AWS::PCAConnectorSCEP::Connector`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS Private Certificate Authority [acm-pca] </td><td> acm-pca:certificate-authority </td><td> +   `AWS::ACMPCA::CertificateAuthority`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> acm-pca:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="9"> AWS Proton [proton] </td><td> proton:environment-template </td><td> +   `AWS::Proton::EnvironmentTemplate`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> proton:environment </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> proton:service/service-instance </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> proton:repository </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> proton:component </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> proton:environment-account-connection </td><td> +   `AWS::Proton::EnvironmentAccountConnection`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> proton:service </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> proton:deployment </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> proton:service-template </td><td> +   `AWS::Proton::ServiceTemplate`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> AWS Purchase Orders Console [purchase-orders] </td><td> purchase-orders:purchase-order </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS RTB Fabric [rtbfabric] </td><td> rtbfabric:requestergateway </td><td> +   `AWS::RTBFabric::RequesterGateway`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> rtbfabric:respondergateway </td><td> +   `AWS::RTBFabric::ResponderGateway`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS Recycle Bin [rbin] </td><td> rbin:rule </td><td> +   `AWS::Rbin::Rule`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rbin:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> AWS Resilience Hub [resiliencehub] </td><td> resiliencehub:app-assessment </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> resiliencehub:resiliency-policy </td><td> +   `AWS::ResilienceHub::ResiliencyPolicy`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> resiliencehub:recommendation-template </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> resiliencehub:app </td><td> +   `AWS::ResilienceHub::App`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> AWS Resource Access Manager (RAM) [ram] </td><td> ram:resource-share </td><td> +   `AWS::RAM::ResourceShare`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ram:resourceshareinvitation </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ram:permission </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ram:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> AWS Resource Groups [resource-groups] </td><td> resource-groups:group </td><td> +   `AWS::ResourceGroups::Group`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> resource-groups:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="12"> AWS RoboMaker [robomaker] </td><td> robomaker:world-generation-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> robomaker:world-generation-jobs </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> robomaker:simulation-job-batch </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> robomaker:simulation-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> robomaker:world-template </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> robomaker:robot </td><td> +   `AWS::RoboMaker::Robot`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> robomaker:world-export-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> robomaker:simulation-application </td><td> +   `AWS::RoboMaker::SimulationApplication`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> robomaker:deployment-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> robomaker:robot-application </td><td> +   `AWS::RoboMaker::RobotApplication`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> robomaker:deployment-fleet </td><td> +   `AWS::RoboMaker::Fleet`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> robomaker:world </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="4"> AWS SQL Workbench [sqlworkbench] </td><td> sqlworkbench:query </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sqlworkbench:notebook </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sqlworkbench:chart </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sqlworkbench:connection </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> AWS Savings Plans [savingsplans] </td><td> savingsplans:savingsplan </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS Secrets Manager [secretsmanager] </td><td> secretsmanager:secret </td><td> +   `AWS::SecretsManager::Secret`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> secretsmanager:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="8"> AWS Security Hub [securityhub] </td><td> securityhub:connectorv2 </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> securityhub:automation-rulev2 </td><td> +   `AWS::SecurityHub::AutomationRuleV2`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> securityhub:automation-rule </td><td> +   `AWS::SecurityHub::AutomationRule`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> securityhub:aggregatorv2 </td><td> +   `AWS::SecurityHub::AggregatorV2`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> securityhub:hubv2 </td><td> +   `AWS::SecurityHub::HubV2`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> securityhub:product-subscription </td><td> +   `AWS::SecurityHub::ProductSubscription`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> securityhub:hub </td><td> +   `AWS::SecurityHub::Hub`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> securityhub:configuration-policy </td><td> +   `AWS::SecurityHub::ConfigurationPolicy`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="6"> AWS Service - Oracle Database@AWS [odb] </td><td> odb:cloud-vm-cluster </td><td> +   `AWS::ODB::CloudVmCluster`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> odb:cloud-exadata-infrastructure </td><td> +   `AWS::ODB::CloudExadataInfrastructure`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> odb:db-node </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> odb:cloud-autonomous-vm-cluster </td><td> +   `AWS::ODB::CloudAutonomousVmCluster`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> odb:odb-peering-connection </td><td> +   `AWS::ODB::OdbPeeringConnection`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> odb:odb-network </td><td> +   `AWS::ODB::OdbNetwork`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> AWS Service Catalog [catalog] </td><td> catalog:portfolio </td><td> +   `AWS::ServiceCatalog::Portfolio`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> catalog:product </td><td> +   `AWS::ServiceCatalog::CloudFormationProvisionedProduct`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> catalog:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="3"> AWS Service Catalog [servicecatalog] </td><td> servicecatalog:attribute-groups </td><td> +   `AWS::ServiceCatalogAppRegistry::AttributeGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> servicecatalog:applications </td><td> +   `AWS::ServiceCatalogAppRegistry::Application`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> servicecatalog:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> AWS Shield [shield] </td><td> shield:protection </td><td> +   `AWS::Shield::Protection`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> shield:protection-group </td><td> +   `AWS::Shield::ProtectionGroup`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> AWS Signer [signer] </td><td> signer:signing-profiles </td><td> +   `AWS::Signer::SigningProfile`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> AWS SimSpace Weaver [simspaceweaver] </td><td> simspaceweaver:simulation </td><td> +   `AWS::SimSpaceWeaver::Simulation`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS Snow Device Management [snow-device-management] </td><td> snow-device-management:task </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> snow-device-management:managed-device </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="4"> AWS Step Functions [states] </td><td> states:execution </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> states:activity </td><td> +   `AWS::StepFunctions::Activity`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> states:statemachine </td><td> +   `AWS::StepFunctions::StateMachine`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> states:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="6"> AWS Storage Gateway [storagegateway] </td><td> storagegateway:tapepool </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> storagegateway:fs-association </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> storagegateway:tape </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> storagegateway:gateway </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> storagegateway:gateway/volume </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> storagegateway:share </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS Supply Chain [scn] </td><td> scn:instance </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> scn:billofmaterialsimportjob </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> AWS Systems Manager Incident Manager Contacts [ssm-contacts] </td><td> ssm-contacts:contact </td><td> +   `AWS::SSMContacts::Contact`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ssm-contacts:rotation </td><td> +   `AWS::SSMContacts::Rotation`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ssm-contacts:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> AWS Systems Manager Incident Manager [ssm-incidents] </td><td> ssm-incidents:incident-record </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ssm-incidents:replication-set </td><td> +   `AWS::SSMIncidents::ReplicationSet`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ssm-incidents:response-plan </td><td> +   `AWS::SSMIncidents::ResponsePlan`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> AWS Systems Manager Quick Setup [ssm-quicksetup] </td><td> ssm-quicksetup:configuration-manager </td><td> +   `AWS::SSMQuickSetup::ConfigurationManager`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="12"> AWS Systems Manager [ssm] </td><td> ssm:managed-instance </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ssm:document </td><td> +   `AWS::SSM::Document`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ssm:automation-definition </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ssm:parameter </td><td> +   `AWS::SSM::Parameter`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ssm:automation-execution </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ssm:opsitem </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ssm:patchbaseline </td><td> +   `AWS::SSM::PatchBaseline`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ssm:session </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ssm:association </td><td> +   `AWS::SSM::Association`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ssm:maintenancewindow </td><td> +   `AWS::SSM::MaintenanceWindow`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ssm:opsmetadata </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ssm:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> AWS Systems Manager for SAP [ssm-sap] </td><td> ssm-sap:hana/db </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ssm-sap:hana </td><td> +   `AWS::SystemsManagerSAP::Application`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="5"> AWS Telco Network Builder [tnb] </td><td> tnb:network-instance </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> tnb:function-instance </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> tnb:function-package </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> tnb:network-package </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> tnb:network-operation </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="10"> AWS Transfer Family [transfer] </td><td> transfer:connector </td><td> +   `AWS::Transfer::Connector`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> transfer:user </td><td> +   `AWS::Transfer::User`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> transfer:workflow </td><td> +   `AWS::Transfer::Workflow`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> transfer:webapp </td><td> +   `AWS::Transfer::WebApp`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> transfer:agreement </td><td> +   `AWS::Transfer::Agreement`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> transfer:host-key </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> transfer:server </td><td> +   `AWS::Transfer::Server`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> transfer:certificate </td><td> +   `AWS::Transfer::Certificate`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> transfer:profile </td><td> +   `AWS::Transfer::Profile`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> transfer:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> AWS Transform [transform] </td><td> transform:connector </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> AWS User Notifications Contacts [notifications-contacts] </td><td> notifications-contacts:emailcontact </td><td> +   `AWS::NotificationsContacts::EmailContact`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> AWS User Notifications [notifications] </td><td> notifications:configuration </td><td> +   `AWS::Notifications::NotificationConfiguration`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="4"> AWS WAF Regional [waf-regional] </td><td> waf-regional:rule </td><td> +   `AWS::WAFRegional::Rule`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> waf-regional:rulegroup </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> waf-regional:ratebasedrule </td><td> +   `AWS::WAFRegional::RateBasedRule`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> waf-regional:webacl </td><td> +   `AWS::WAFRegional::WebACL`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="4"> AWS WAF [waf] </td><td> waf:rulegroup </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> waf:webacl </td><td> +   `AWS::WAF::WebACL`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> waf:ratebasedrule </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> waf:rule </td><td> +   `AWS::WAF::Rule`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="5"> AWS Well-Architected Tool [wellarchitected] </td><td> wellarchitected:lens </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> wellarchitected:review-template </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> wellarchitected:workload </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> wellarchitected:profile </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> wellarchitected:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS Wickr [wickr] </td><td> wickr:network </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> wickr:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> AWS WorkSpaces Managed Instances [workspaces-instances] </td><td> workspaces-instances:workspaceinstance </td><td> +   `AWS::WorkspacesInstances::WorkspaceInstance`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> AWS X-Ray [xray] </td><td> xray:sampling-rule </td><td> +   `AWS::XRay::SamplingRule`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> xray:group </td><td> +   `AWS::XRay::Group`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> AWS rePost Private [repostspace] </td><td> repostspace:space </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="5"> AWS service providing managed private networks [private-networks] </td><td> private-networks:network-site </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> private-networks:order </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> private-networks:network </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> private-networks:network-resource </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> private-networks:device-identifier </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="11"> Alexa for Business [a4b] </td><td> a4b:profile </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> a4b:address-book </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> a4b:network-profile </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> a4b:user </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> a4b:conference-provider </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> a4b:skill-group </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> a4b:room </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> a4b:gateway-group </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> a4b:schedule </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> a4b:contact </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> a4b:device </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> Amazon AI Operations [aiops] </td><td> aiops:investigation-group </td><td> +   `AWS::AIOps::InvestigationGroup`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="8"> Amazon API Gateway Management [apigateway] </td><td> apigateway:usageplans </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> apigateway:apikeys </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> apigateway:clientcertificates </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> apigateway:restapis </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> apigateway:domainnames </td><td> +   `AWS::ApiGateway::DomainNameV2`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> apigateway:domainnameaccessassociations </td><td> +   `AWS::ApiGateway::DomainNameAccessAssociation`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> apigateway:vpclinks </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> apigateway:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> Amazon ARC Region switch [arc-region-switch] </td><td> arc-region-switch:plan </td><td> +   `AWS::ARCRegionSwitch::Plan`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> Amazon AppFlow [appflow] </td><td> appflow:connector </td><td> +   `AWS::AppFlow::Connector`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> appflow:flow </td><td> +   `AWS::AppFlow::Flow`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="6"> Amazon AppIntegrations [app-integrations] </td><td> app-integrations:application-association </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> app-integrations:data-integration </td><td> +   `AWS::AppIntegrations::DataIntegration`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> app-integrations:event-integration </td><td> +   `AWS::AppIntegrations::EventIntegration`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> app-integrations:data-integration-association </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> app-integrations:application </td><td> +   `AWS::AppIntegrations::Application`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> app-integrations:event-integration-association </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="7"> Amazon AppStream 2.0 [appstream] </td><td> appstream:image </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> appstream:app-block </td><td> +   `AWS::AppStream::AppBlock`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> appstream:stack </td><td> +   `AWS::AppStream::Stack`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> appstream:app-block-builder </td><td> +   `AWS::AppStream::AppBlockBuilder`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> appstream:fleet </td><td> +   `AWS::AppStream::Fleet`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> appstream:image-builder </td><td> +   `AWS::AppStream::ImageBuilder`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> appstream:application </td><td> +   `AWS::AppStream::Application`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> Amazon Athena [athena] </td><td> athena:datacatalog </td><td> +   `AWS::Athena::DataCatalog`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> athena:capacity-reservation </td><td> +   `AWS::Athena::CapacityReservation`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> athena:workgroup </td><td> +   `AWS::Athena::WorkGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> athena:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> Amazon Aurora DSQL [dsql] </td><td> dsql:cluster </td><td> +   `AWS::DSQL::Cluster`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="9"> Amazon Bedrock [bedrock-agentcore] </td><td> bedrock-agentcore:workload-identity </td><td> +   `AWS::BedrockAgentCore::WorkloadIdentity`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock-agentcore:code-interpreter-custom </td><td> +   `AWS::BedrockAgentCore::CodeInterpreterCustom`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock-agentcore:gateway </td><td> +   `AWS::BedrockAgentCore::Gateway`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock-agentcore:token-vault </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock-agentcore:memory </td><td> +   `AWS::BedrockAgentCore::Memory`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock-agentcore:workload-identity-directory </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock-agentcore:runtime </td><td> +   `AWS::BedrockAgentCore::Runtime`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock-agentcore:browser-custom </td><td> +   `AWS::BedrockAgentCore::BrowserCustom`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock-agentcore:runtime-endpoint </td><td> +   `AWS::BedrockAgentCore::RuntimeEndpoint`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="30"> Amazon Bedrock [bedrock] </td><td> bedrock:model-copy-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:custom-model-deployment </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:prompt-router </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:agent-alias </td><td> +   `AWS::Bedrock::AgentAlias`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> bedrock:blueprint </td><td> +   `AWS::Bedrock::Blueprint`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> bedrock:model-customization-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:model-import-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:data-automation-invocation </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:data-automation-invocation-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:automated-reasoning-policy </td><td> +   `AWS::Bedrock::AutomatedReasoningPolicy`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:model-evaluation-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:session </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:prompt </td><td> +   `AWS::Bedrock::Prompt`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> bedrock:guardrail </td><td> +   `AWS::Bedrock::Guardrail`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> bedrock:async-invoke </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:flow/alias </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:prompt-version </td><td> +   `AWS::Bedrock::PromptVersion`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:data-automation-project </td><td> +   `AWS::Bedrock::DataAutomationProject`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> bedrock:provisioned-model </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:provisioned-model-v2 </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:application-inference-profile </td><td> +   `AWS::Bedrock::ApplicationInferenceProfile`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> bedrock:imported-model </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:flow </td><td> +   `AWS::Bedrock::Flow`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> bedrock:flow/alias </td><td> +   `AWS::Bedrock::FlowAlias`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:flow-alias </td><td> +   `AWS::Bedrock::FlowAlias`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:knowledge-base </td><td> +   `AWS::Bedrock::KnowledgeBase`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> bedrock:agent </td><td> +   `AWS::Bedrock::Agent`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> bedrock:model-invocation-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:custom-model </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> bedrock:evaluation-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> Amazon Braket [braket] </td><td> braket:quantum-task </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> braket:job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> braket:spending-limit </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="14"> Amazon Chime [chime] </td><td> chime:meeting </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> chime:sip-media-application </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> chime:sma </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> chime:app-instance/bot </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> chime:voice-profile-domain </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> chime:app-instance/channel </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> chime:app-instance/user </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> chime:media-pipeline-kinesis-video-stream-pool </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> chime:app-instance </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> chime:media-pipeline </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> chime:voice-connector </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> chime:vc </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> chime:media-insights-pipeline-configuration </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> chime:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> Amazon Cloud Directory [clouddirectory] </td><td> clouddirectory:directory </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="11"> Amazon CloudFront [cloudfront] </td><td> cloudfront:vpcorigin </td><td> +   `AWS::CloudFront::VpcOrigin`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cloudfront:connection-function </td><td> +   `AWS::CloudFront::ConnectionFunction`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cloudfront:distribution-tenant </td><td> +   `AWS::CloudFront::DistributionTenant`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cloudfront:distribution </td><td> +   `AWS::CloudFront::Distribution`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> cloudfront:anycast-ip-list </td><td> +   `AWS::CloudFront::AnycastIpList`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cloudfront:key-value-store </td><td> +   `AWS::CloudFront::KeyValueStore`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cloudfront:keyvaluestore </td><td> +   `AWS::CloudFront::KeyValueStore`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cloudfront:streaming-distribution </td><td> +   `AWS::CloudFront::StreamingDistribution`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> cloudfront:trust-store </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cloudfront:connection-group </td><td> +   `AWS::CloudFront::ConnectionGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> cloudfront:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> Amazon CloudSearch [cloudsearch] </td><td> cloudsearch:domain </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> Amazon CloudWatch Application Insights [applicationinsights] </td><td> applicationinsights:application </td><td> +   `AWS::ApplicationInsights::Application`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> Amazon CloudWatch Application Signals [application-signals] </td><td> application-signals:slo </td><td> +   `AWS::ApplicationSignals::ServiceLevelObjective`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="6"> Amazon CloudWatch Evidently [evidently] </td><td> evidently:segment </td><td> +   `AWS::Evidently::Segment`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> evidently:project/launch </td><td> +   `AWS::Evidently::Launch`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> evidently:project </td><td> +   `AWS::Evidently::Project`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> evidently:project/feature </td><td> +   `AWS::Evidently::Feature`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> evidently:experiment </td><td> +   `AWS::Evidently::Experiment`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> evidently:project/experiment </td><td> +   `AWS::Evidently::Experiment`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> Amazon CloudWatch Internet Monitor [internetmonitor] </td><td> internetmonitor:monitor </td><td> +   `AWS::InternetMonitor::Monitor`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> internetmonitor:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="7"> Amazon CloudWatch Logs [logs] </td><td> logs:log-group </td><td> +   `AWS::Logs::LogGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> logs:delivery-destination </td><td> +   `AWS::Logs::DeliveryDestination`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> logs:scheduled-query </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> logs:destination </td><td> +   `AWS::Logs::Destination`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> logs:delivery-source </td><td> +   `AWS::Logs::DeliverySource`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> logs:anomaly-detector </td><td> +   `AWS::Logs::LogAnomalyDetector`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> logs:delivery </td><td> +   `AWS::Logs::Delivery`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> Amazon CloudWatch Network Synthetic Monitor [networkmonitor] </td><td> networkmonitor:monitor </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> networkmonitor:probe </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> Amazon CloudWatch Observability Access Manager [oam] </td><td> oam:link </td><td> +   `AWS::Oam::Link`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> oam:sink </td><td> +   `AWS::Oam::Sink`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> oam:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="5"> Amazon CloudWatch Observability Admin Service [observabilityadmin] </td><td> observabilityadmin:organization-telemetry-rule </td><td> +   `AWS::ObservabilityAdmin::OrganizationTelemetryRule`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> observabilityadmin:s3tableintegration </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> observabilityadmin:telemetry-rule </td><td> +   `AWS::ObservabilityAdmin::TelemetryRule`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> observabilityadmin:telemetry-pipeline </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> observabilityadmin:organization-centralization-rule </td><td> +   `AWS::ObservabilityAdmin::OrganizationCentralizationRule`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> Amazon CloudWatch Synthetics [synthetics] </td><td> synthetics:group </td><td> +   `AWS::Synthetics::Group`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> synthetics:canary </td><td> +   `AWS::Synthetics::Canary`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="5"> Amazon CloudWatch [cloudwatch] </td><td> cloudwatch:metric-stream </td><td> +   `AWS::CloudWatch::MetricStream`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> cloudwatch:slo </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cloudwatch:insight-rule </td><td> +   `AWS::CloudWatch::InsightRule`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> cloudwatch:alarm </td><td> +   `AWS::CloudWatch::Alarm`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> cloudwatch:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> Amazon CodeCatalyst [codecatalyst] </td><td> codecatalyst:identity-center-applications </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> codecatalyst:space </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> codecatalyst:connections </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> codecatalyst:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> Amazon CodeGuru Profiler [codeguru-profiler] </td><td> codeguru-profiler:profilinggroup </td><td> +   `AWS::CodeGuruProfiler::ProfilingGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="3"> Amazon CodeGuru Reviewer [codeguru-reviewer] </td><td> codeguru-reviewer:association </td><td> +   `AWS::CodeGuruReviewer::RepositoryAssociation`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> codeguru-reviewer:codereview </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> codeguru-reviewer:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> Amazon CodeGuru Security [codeguru-security] </td><td> codeguru-security:scans </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> codeguru-security:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> Amazon CodeWhisperer [codewhisperer] </td><td> codewhisperer:profile </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> codewhisperer:customization </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> Amazon Cognito Identity [cognito-identity] </td><td> cognito-identity:identitypool </td><td> +   `AWS::Cognito::IdentityPool`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> cognito-identity:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> Amazon Cognito Identity [cognito-idp] </td><td> cognito-idp:userpool </td><td> +   `AWS::Cognito::UserPool`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> cognito-idp:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="16"> Amazon Comprehend [comprehend] </td><td> comprehend:targeted-sentiment-detection-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> comprehend:entity-recognizer-endpoint </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> comprehend:sentiment-detection-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> comprehend:flywheel </td><td> +   `AWS::Comprehend::Flywheel`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> comprehend:document-classifier-endpoint </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> comprehend:entity-recognizer </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> comprehend:topics-detection-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> comprehend:events-detection-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> comprehend:document-classifier </td><td> +   `AWS::Comprehend::DocumentClassifier`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> comprehend:key-phrases-detection-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> comprehend:document-classification-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> comprehend:entities-detection-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> comprehend:dominant-language-detection-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> comprehend:flywheel/dataset </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> comprehend:pii-entities-detection-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> comprehend:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="7"> Amazon Connect Cases [cases] </td><td> cases:related-item </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cases:domain/case/related-item </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cases:layout </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cases:field </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cases:template </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cases:domain/case </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> cases:domain </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="4"> Amazon Connect Customer Profiles [profile] </td><td> profile:domains/object-types </td><td> +   `AWS::CustomerProfiles::ObjectType`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> profile:domains/domain-object-types </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> profile:domains </td><td> +   `AWS::CustomerProfiles::Domain`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> profile:domains/integrations </td><td> +   `AWS::CustomerProfiles::Integration`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> Amazon Connect Outbound Campaigns [connect-campaigns] </td><td> connect-campaigns:campaign </td><td> +   `AWS::ConnectCampaigns::Campaign`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> Amazon Connect Voice ID [voiceid] </td><td> voiceid:domain </td><td> +   `AWS::VoiceID::Domain`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="27"> Amazon Connect [connect] </td><td> connect:instance/evaluation-form </td><td> +   `AWS::Connect::EvaluationForm`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> connect:instance/agent-state </td><td> +   `AWS::Connect::AgentStatus`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> connect:wildcardagentstatus </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> connect:instance/transfer-destination </td><td> +   `AWS::Connect::QuickConnect`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> connect:instance/use-case </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> connect:wildcardquickconnect </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> connect:instance/task-template </td><td> +   `AWS::Connect::TaskTemplate`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> connect:instance/agent </td><td> +   `AWS::Connect::User`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> connect:traffic-distribution-group </td><td> +   `AWS::Connect::TrafficDistributionGroup`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> connect:instance/flow-module </td><td> +   `AWS::Connect::ContactFlowModule`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> connect:phone-number </td><td> +   `AWS::Connect::PhoneNumber`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> connect:instance/agent-group </td><td> +   `AWS::Connect::UserHierarchyGroup`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> connect:instance/operating-hours </td><td> +   `AWS::Connect::HoursOfOperation`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> connect:instance/security-profile </td><td> +   `AWS::Connect::SecurityProfile`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> connect:wildcardcontactflow </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> connect:instance/queue </td><td> +   `AWS::Connect::Queue`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> connect:instance/contact-evaluation </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> connect:instance/rule </td><td> +   `AWS::Connect::Rule`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> connect:instance/integration-association </td><td> +   `AWS::Connect::IntegrationAssociation`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> connect:instance/contact-flow </td><td> +   `AWS::Connect::ContactFlow`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> connect:instance/vocabulary </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> connect:instance </td><td> +   `AWS::Connect::Instance`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> connect:instance/routing-profile </td><td> +   `AWS::Connect::RoutingProfile`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> connect:wildcardqueue </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> connect:contact </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> connect:instance/prompt </td><td> +   `AWS::Connect::Prompt`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> connect:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> Amazon Data Lifecycle Manager [dlm] </td><td> dlm:policy </td><td> +   `AWS::DLM::LifecyclePolicy`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> dlm:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> Amazon DataZone [datazone] </td><td> datazone:domain </td><td> +   `AWS::DataZone::Domain`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> Amazon Detective [detective] </td><td> detective:graph </td><td> +   `AWS::Detective::Graph`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="3"> Amazon DocumentDB Elastic Clusters [docdb-elastic] </td><td> docdb-elastic:cluster </td><td> +   `AWS::DocDBElastic::Cluster`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> docdb-elastic:cluster-pg </td><td> +   `AWS::DocDBElastic::Cluster`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> docdb-elastic:cluster-snapshot </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> Amazon DynamoDB Accelerator (DAX) [dax] </td><td> dax:cache </td><td> +   `AWS::DAX::Cluster`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="5"> Amazon DynamoDB [dynamodb] </td><td> dynamodb:globaltable </td><td> +   `AWS::DynamoDB::GlobalTable`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> dynamodb:table </td><td> +   `AWS::DynamoDB::Table`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> dynamodb:index </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> dynamodb:table/stream </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> dynamodb:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> Amazon EC2 Auto Scaling [autoscaling] </td><td> autoscaling:autoscalinggroup </td><td> +   `AWS::AutoScaling::AutoScalingGroup`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="9"> Amazon EC2 Image Builder [imagebuilder] </td><td> imagebuilder:infrastructure-configuration </td><td> +   `AWS::ImageBuilder::InfrastructureConfiguration`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> imagebuilder:image-recipe </td><td> +   `AWS::ImageBuilder::ImageRecipe`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> imagebuilder:container-recipe </td><td> +   `AWS::ImageBuilder::ContainerRecipe`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> imagebuilder:image </td><td> +   `AWS::ImageBuilder::Image`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> imagebuilder:workflow </td><td> +   `AWS::ImageBuilder::Workflow`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> imagebuilder:component </td><td> +   `AWS::ImageBuilder::Component`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> imagebuilder:lifecycle-policy </td><td> +   `AWS::ImageBuilder::LifecyclePolicy`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> imagebuilder:distribution-configuration </td><td> +   `AWS::ImageBuilder::DistributionConfiguration`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> imagebuilder:image-pipeline </td><td> +   `AWS::ImageBuilder::ImagePipeline`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="93"> Amazon EC2 [ec2] </td><td> ec2:image-usage-report </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:ipam-external-resource-verification-token </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:security-group </td><td> +   `AWS::EC2::SecurityGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:traffic-mirror-session </td><td> +   `AWS::EC2::TrafficMirrorSession`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:ipam-pool </td><td> +   `AWS::EC2::IPAMPool`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:security-group-rule </td><td> +   `AWS::EC2::SecurityGroupIngress`  <br />+   `AWS::EC2::SecurityGroupEgress`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:local-gateway-virtual-interface-group </td><td> +   `AWS::EC2::LocalGatewayVirtualInterfaceGroup`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:natgateway </td><td> +   `AWS::EC2::NatGateway`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:import-snapshot-task </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:internet-gateway </td><td> +   `AWS::EC2::InternetGateway`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:transit-gateway </td><td> +   `AWS::EC2::TransitGateway`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:dhcp-options </td><td> +   `AWS::EC2::DHCPOptions`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:image </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:network-insights-access-scope-analysis </td><td> +   `AWS::EC2::NetworkInsightsAccessScopeAnalysis`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:ipv4pool-ec2 </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:transit-gateway-policy-table </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:transit-gateway-attachment </td><td> +   `AWS::EC2::TransitGatewayVpcAttachment`  <br />+   `AWS::EC2::TransitGatewayAttachment`  <br />+   `AWS::EC2::TransitGatewayPeeringAttachment`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:volume </td><td> +   `AWS::EC2::Volume`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:import-image-task </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:subnet </td><td> +   `AWS::EC2::Subnet`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:vpc </td><td> +   `AWS::EC2::VPC`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:vpc-endpoint-service-permission </td><td> +   `AWS::EC2::VPCEndpointServicePermissions`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:capacity-reservation </td><td> +   `AWS::EC2::CapacityReservation`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:network-acl </td><td> +   `AWS::EC2::NetworkAcl`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:verified-access-trust-provider </td><td> +   `AWS::EC2::VerifiedAccessTrustProvider`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:vpn-gateway </td><td> +   `AWS::EC2::VPNGateway`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:carrier-gateway </td><td> +   `AWS::EC2::CarrierGateway`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:elastic-gpu </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:elasticgpu </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:local-gateway-route-table </td><td> +   `AWS::EC2::LocalGatewayRouteTable`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:network-insights-access-scope </td><td> +   `AWS::EC2::NetworkInsightsAccessScope`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:transit-gateway-connect-peer </td><td> +   `AWS::EC2::TransitGatewayConnectPeer`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:verified-access-group </td><td> +   `AWS::EC2::VerifiedAccessGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:traffic-mirror-target </td><td> +   `AWS::EC2::TrafficMirrorTarget`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:coip-pool </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:fleet </td><td> +   `AWS::EC2::EC2Fleet`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:local-gateway-route-table-virtual-interface-group-association </td><td> +   `AWS::EC2::LocalGatewayRouteTableVirtualInterfaceGroupAssociation`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:transit-gateway-multicast-domain </td><td> +   `AWS::EC2::TransitGatewayMulticastDomain`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:network-interface </td><td> +   `AWS::EC2::NetworkInterface`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:capacity-manager-data-export </td><td> +   `AWS::EC2::CapacityManagerDataExport`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:client-vpn-endpoint </td><td> +   `AWS::EC2::ClientVpnEndpoint`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:spot-instances-request </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:network-insights-path </td><td> +   `AWS::EC2::NetworkInsightsPath`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:instance-connect-endpoint </td><td> +   `AWS::EC2::InstanceConnectEndpoint`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:traffic-mirror-filter-rule </td><td> +   `AWS::EC2::TrafficMirrorFilterRule`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:local-gateway-virtual-interface </td><td> +   `AWS::EC2::LocalGatewayVirtualInterface`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:vpc-peering-connection </td><td> +   `AWS::EC2::VPCPeeringConnection`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:snapshot </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:customer-gateway </td><td> +   `AWS::EC2::CustomerGateway`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:capacity-block </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:verified-access-endpoint </td><td> +   `AWS::EC2::VerifiedAccessEndpoint`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:vpn-connection </td><td> +   `AWS::EC2::VPNConnection`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:ipam-scope </td><td> +   `AWS::EC2::IPAMScope`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:host-reservation </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:replace-root-volume-task </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:instance </td><td> +   `AWS::EC2::Instance`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:fpga-image </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:route-server-endpoint </td><td> +   `AWS::EC2::RouteServerEndpoint`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:key-pair </td><td> +   `AWS::EC2::KeyPair`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:vpc-endpoint-connection </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:dedicated-host </td><td> +   `AWS::EC2::Host`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:local-gateway-route-table-vpc-association </td><td> +   `AWS::EC2::LocalGatewayRouteTableVPCAssociation`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:vpc-endpoint-service </td><td> +   `AWS::EC2::VPCEndpointService`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:egress-only-internet-gateway </td><td> +   `AWS::EC2::EgressOnlyInternetGateway`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:ipam-resource-discovery </td><td> +   `AWS::EC2::IPAMResourceDiscovery`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:mac-modification-task </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:network-insights-analysis </td><td> +   `AWS::EC2::NetworkInsightsAnalysis`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:placement-group </td><td> +   `AWS::EC2::PlacementGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:instance-event-window </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:ipv6pool-ec2 </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:prefix-list </td><td> +   `AWS::EC2::PrefixList`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:vpc-endpoint </td><td> +   `AWS::EC2::VPCEndpoint`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:elastic-ip </td><td> +   `AWS::EC2::EIP`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:export-instance-task </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:reserved-instances </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:export-image-task </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:subnet-cidr-reservation </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:vpc-flow-log </td><td> +   `AWS::EC2::FlowLog`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:capacity-reservation-fleet </td><td> +   `AWS::EC2::CapacityReservationFleet`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:ipam-resource-discovery-association </td><td> +   `AWS::EC2::IPAMResourceDiscoveryAssociation`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:transit-gateway-route-table-announcement </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:traffic-mirror-filter </td><td> +   `AWS::EC2::TrafficMirrorFilter`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:outpost-lag </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:local-gateway </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:launch-template </td><td> +   `AWS::EC2::LaunchTemplate`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:vpc-block-public-access-exclusion </td><td> +   `AWS::EC2::VPCBlockPublicAccessExclusion`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:route-table </td><td> +   `AWS::EC2::RouteTable`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:ipam </td><td> +   `AWS::EC2::IPAM`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:declarative-policies-report </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ec2:verified-access-instance </td><td> +   `AWS::EC2::VerifiedAccessInstance`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:transit-gateway-route-table </td><td> +   `AWS::EC2::TransitGatewayRouteTable`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:spot-fleet-request </td><td> +   `AWS::EC2::SpotFleet`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ec2:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> Amazon EMR Serverless [emr-serverless] </td><td> emr-serverless:jobruns </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> emr-serverless:applications </td><td> +   `AWS::EMRServerless::Application`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="5"> Amazon EMR on EKS (EMR Containers) [emr-containers] </td><td> emr-containers:virtualclusters/jobruns </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> emr-containers:virtualclusters/endpoints </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> emr-containers:securityconfigurations </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> emr-containers:jobtemplates </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> emr-containers:virtualclusters </td><td> +   `AWS::EMRContainers::VirtualCluster`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="12"> Amazon ElastiCache [elasticache] </td><td> elasticache:securitygroup </td><td> +   `AWS::ElastiCache::SecurityGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> elasticache:parametergroup </td><td> +   `AWS::ElastiCache::ParameterGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> elasticache:usergroup </td><td> +   `AWS::ElastiCache::UserGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> elasticache:snapshot </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> elasticache:subnetgroup </td><td> +   `AWS::ElastiCache::SubnetGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> elasticache:cluster </td><td> +   `AWS::ElastiCache::CacheCluster`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> elasticache:reserved-instance </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> elasticache:serverlesscache </td><td> +   `AWS::ElastiCache::ServerlessCache`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> elasticache:replicationgroup </td><td> +   `AWS::ElastiCache::ReplicationGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> elasticache:serverlesscachesnapshot </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> elasticache:user </td><td> +   `AWS::ElastiCache::User`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> elasticache:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> Amazon Elastic Container Registry [ecr-public] </td><td> ecr-public:repository </td><td> +   `AWS::ECR::PublicRepository`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> Amazon Elastic Container Registry [ecr] </td><td> ecr:repository </td><td> +   `AWS::ECR::Repository`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ecr:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="10"> Amazon Elastic Container Service [ecs] </td><td> ecs:task </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ecs:capacity-provider </td><td> +   `AWS::ECS::CapacityProvider`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ecs:service-revision </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ecs:service </td><td> +   `AWS::ECS::Service`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ecs:cluster </td><td> +   `AWS::ECS::Cluster`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ecs:service-deployment </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ecs:task-definition </td><td> +   `AWS::ECS::TaskDefinition`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ecs:container-instance </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ecs:task-set </td><td> +   `AWS::ECS::TaskSet`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ecs:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="3"> Amazon Elastic File System [elasticfilesystem] </td><td> elasticfilesystem:file-system </td><td> +   `AWS::EFS::FileSystem`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> elasticfilesystem:access-point </td><td> +   `AWS::EFS::AccessPoint`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> elasticfilesystem:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> Amazon Elastic Inference [amazonelasticinference] </td><td> amazonelasticinference:accelerator </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="10"> Amazon Elastic Kubernetes Service [eks] </td><td> eks:cluster </td><td> +   `AWS::EKS::Cluster`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> eks:access-entry </td><td> +   `AWS::EKS::AccessEntry`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> eks:addon </td><td> +   `AWS::EKS::Addon`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> eks:podidentityassociation </td><td> +   `AWS::EKS::PodIdentityAssociation`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> eks:dashboard </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> eks:eks-anywhere-subscription </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> eks:identityproviderconfig </td><td> +   `AWS::EKS::IdentityProviderConfig`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> eks:nodegroup </td><td> +   `AWS::EKS::Nodegroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> eks:fargateprofile </td><td> +   `AWS::EKS::FargateProfile`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> eks:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="5"> Amazon Elastic MapReduce [elasticmapreduce] </td><td> elasticmapreduce:cluster </td><td> +   `AWS::EMR::Cluster`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> elasticmapreduce:editor </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> elasticmapreduce:notebook-execution </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> elasticmapreduce:studio </td><td> +   `AWS::EMR::Studio`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> elasticmapreduce:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> Amazon Elastic VMware Service [evs] </td><td> evs:environment </td><td> +   `AWS::EVS::Environment`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> Amazon EventBridge Pipes [pipes] </td><td> pipes:pipe </td><td> +   `AWS::Pipes::Pipe`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> pipes:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> Amazon EventBridge Scheduler [scheduler] </td><td> scheduler:schedule-group </td><td> +   `AWS::Scheduler::ScheduleGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> scheduler:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="3"> Amazon EventBridge Schemas [schemas] </td><td> schemas:discoverer </td><td> +   `AWS::EventSchemas::Discoverer`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> schemas:registry </td><td> +   `AWS::EventSchemas::Registry`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> schemas:schema </td><td> +   `AWS::EventSchemas::Schema`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="3"> Amazon EventBridge [events] </td><td> events:event-bus </td><td> +   `AWS::Events::EventBus`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> events:rule </td><td> +   `AWS::Events::Rule`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> events:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="9"> Amazon FSx [fsx] </td><td> fsx:backup </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> fsx:storage-virtual-machine </td><td> +   `AWS::FSx::StorageVirtualMachine`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> fsx:snapshot </td><td> +   `AWS::FSx::Snapshot`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> fsx:file-system </td><td> +   `AWS::FSx::FileSystem`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> fsx:association </td><td> +   `AWS::FSx::DataRepositoryAssociation`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> fsx:file-cache </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> fsx:volume </td><td> +   `AWS::FSx::Volume`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> fsx:task </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> fsx:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="8"> Amazon FinSpace [finspace] </td><td> finspace:kxenvironment/kxdatabase/kxdataview </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> finspace:kxenvironment/kxuser </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> finspace:environment </td><td> +   `AWS::FinSpace::Environment`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> finspace:kxenvironment/kxdatabase </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> finspace:kxenvironment/kxvolume </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> finspace:kxenvironment </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> finspace:kxenvironment/kxscalinggroup </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> finspace:kxenvironment/kxcluster </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="14"> Amazon Forecast [forecast] </td><td> forecast:dataset-import-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> forecast:predictor-backtest-export-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> forecast:forecast-endpoint </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> forecast:dataset-group </td><td> +   `AWS::Forecast::DatasetGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> forecast:what-if-forecast-export </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> forecast:monitor </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> forecast:forecast-export-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> forecast:dataset </td><td> +   `AWS::Forecast::Dataset`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> forecast:what-if-forecast </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> forecast:predictor </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> forecast:what-if-analysis </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> forecast:explainability </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> forecast:explainability-export </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> forecast:forecast </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="15"> Amazon Fraud Detector [frauddetector] </td><td> frauddetector:detector </td><td> +   `AWS::FraudDetector::Detector`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> frauddetector:detector-version </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> frauddetector:batch-prediction </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> frauddetector:label </td><td> +   `AWS::FraudDetector::Label`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> frauddetector:event-type </td><td> +   `AWS::FraudDetector::EventType`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> frauddetector:external-model </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> frauddetector:batch-import </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> frauddetector:entity-type </td><td> +   `AWS::FraudDetector::EntityType`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> frauddetector:outcome </td><td> +   `AWS::FraudDetector::Outcome`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> frauddetector:model-version </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> frauddetector:list </td><td> +   `AWS::FraudDetector::List`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> frauddetector:rule </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> frauddetector:variable </td><td> +   `AWS::FraudDetector::Variable`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> frauddetector:model </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> frauddetector:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> Amazon FreeRTOS [freertos] </td><td> freertos:subscription </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> freertos:configuration </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="11"> Amazon GameLift Servers [gamelift] </td><td> gamelift:script </td><td> +   `AWS::GameLift::Script`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> gamelift:build </td><td> +   `AWS::GameLift::Build`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> gamelift:containergroupdefinition </td><td> +   `AWS::GameLift::ContainerGroupDefinition`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> gamelift:gamesessionqueue </td><td> +   `AWS::GameLift::GameSessionQueue`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> gamelift:fleet </td><td> +   `AWS::GameLift::Fleet`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> gamelift:matchmakingruleset </td><td> +   `AWS::GameLift::MatchmakingRuleSet`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> gamelift:location </td><td> +   `AWS::GameLift::Location`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> gamelift:alias </td><td> +   `AWS::GameLift::Alias`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> gamelift:gameservergroup </td><td> +   `AWS::GameLift::GameServerGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> gamelift:containerfleet </td><td> +   `AWS::GameLift::ContainerFleet`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> gamelift:matchmakingconfiguration </td><td> +   `AWS::GameLift::MatchmakingConfiguration`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> Amazon GameLift Streams [gameliftstreams] </td><td> gameliftstreams:application </td><td> +   `AWS::GameLiftStreams::Application`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> gameliftstreams:streamgroup </td><td> +   `AWS::GameLiftStreams::StreamGroup`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> Amazon GuardDuty [AWS] </td><td> AWS::GuardDuty::PublishingDestination </td><td> +   `AWS::GuardDuty::PublishingDestination`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="5"> Amazon GuardDuty [guardduty] </td><td> guardduty:malware-protection-plan </td><td> +   `AWS::GuardDuty::MalwareProtectionPlan`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> guardduty:detector </td><td> +   `AWS::GuardDuty::Detector`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> guardduty:detector/ipset </td><td> +   `AWS::GuardDuty::IPSet`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> guardduty:detector/threatintelset </td><td> +   `AWS::GuardDuty::ThreatIntelSet`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> guardduty:detector/filter </td><td> +   `AWS::GuardDuty::Filter`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> Amazon Honeycode [honeycode] </td><td> honeycode:screen-automation </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> honeycode:workbook </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> honeycode:table </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> honeycode:screen </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="6"> Amazon Inspector [inspector2] </td><td> inspector2:codescan-configuration </td><td> +   `AWS::InspectorV2::CisScanConfiguration`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> inspector2:cis-configuration </td><td> +   `AWS::InspectorV2::CisScanConfiguration`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> inspector2:filter </td><td> +   `AWS::InspectorV2::Filter`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> inspector2:codesecurity-integration </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> inspector2:codesecurity-configuration </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> inspector2:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="13"> Amazon Interactive Video Service [ivs] </td><td> ivs:public-key </td><td> +   `AWS::IVS::PublicKey`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ivs:ingest-configuration </td><td> +   `AWS::IVS::IngestConfiguration`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ivs:recording-configuration </td><td> +   `AWS::IVS::RecordingConfiguration`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ivs:transcode-configuration </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ivs:chat-room </td><td> +   `AWS::IVSChat::Room`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ivs:playback-restriction-policy </td><td> +   `AWS::IVS::PlaybackRestrictionPolicy`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ivs:channel </td><td> +   `AWS::IVS::Channel`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ivs:playback-key </td><td> +   `AWS::IVS::PlaybackKeyPair`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ivs:stream-key </td><td> +   `AWS::IVS::StreamKey`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ivs:composition </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ivs:stage </td><td> +   `AWS::IVS::Stage`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ivs:storage-configuration </td><td> +   `AWS::IVS::StorageConfiguration`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ivs:encoder-configuration </td><td> +   `AWS::IVS::EncoderConfiguration`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> Amazon Kendra Intelligent Ranking [kendra-ranking] </td><td> kendra-ranking:rescore-execution-plan </td><td> +   `AWS::KendraRanking::ExecutionPlan`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="5"> Amazon Kendra [kendra] </td><td> kendra:index </td><td> +   `AWS::Kendra::Index`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> kendra:index/thesaurus </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> kendra:index/query-suggestions-block-list </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> kendra:index/data-source </td><td> +   `AWS::Kendra::DataSource`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> kendra:index/featured-results-set </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> Amazon Keyspaces (for Apache Cassandra) [cassandra] </td><td> cassandra:keyspace </td><td> +   `AWS::Cassandra::Keyspace`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> cassandra:table </td><td> +   `AWS::Cassandra::Table`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> Amazon Kinesis Analytics [kinesisanalytics] </td><td> kinesisanalytics:application </td><td> +   `AWS::KinesisAnalytics::Application`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> kinesisanalytics:application </td><td> +   `AWS::KinesisAnalyticsV2::Application`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> kinesisanalytics:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> Amazon Kinesis Data Streams [kinesis] </td><td> kinesis:stream </td><td> +   `AWS::Kinesis::Stream`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> kinesis:stream/consumer </td><td> +   `AWS::Kinesis::StreamConsumer`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> Amazon Kinesis Firehose [firehose] </td><td> firehose:deliverystream </td><td> +   `AWS::KinesisFirehose::DeliveryStream`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> firehose:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> Amazon Kinesis Video Streams [kinesisvideo] </td><td> kinesisvideo:stream </td><td> +   `AWS::KinesisVideo::Stream`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> kinesisvideo:channel </td><td> +   `AWS::KinesisVideo::SignalingChannel`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> Amazon Lex [lex] </td><td> lex:bot-channel </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> lex:test-set </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> lex:bot-alias </td><td> +   `AWS::Lex::BotAlias`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> lex:bot </td><td> +   `AWS::Lex::Bot`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="14"> Amazon Lightsail [lightsail] </td><td> lightsail:keypair </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> lightsail:distribution </td><td> +   `AWS::Lightsail::Distribution`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> lightsail:containerservice </td><td> +   `AWS::Lightsail::Container`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> lightsail:disksnapshot </td><td> +   `AWS::Lightsail::DiskSnapshot`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> lightsail:relationaldatabase </td><td> +   `AWS::Lightsail::Database`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> lightsail:certificate </td><td> +   `AWS::Lightsail::Certificate`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> lightsail:bucket </td><td> +   `AWS::Lightsail::Bucket`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> lightsail:instance </td><td> +   `AWS::Lightsail::Instance`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> lightsail:disk </td><td> +   `AWS::Lightsail::Disk`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> lightsail:loadbalancer </td><td> +   `AWS::Lightsail::LoadBalancer`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> lightsail:domain </td><td> +   `AWS::Lightsail::Domain`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> lightsail:instancesnapshot </td><td> +   `AWS::Lightsail::InstanceSnapshot`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> lightsail:relationaldatabasesnapshot </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> lightsail:staticip </td><td> +   `AWS::Lightsail::StaticIp`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="6"> Amazon Location [geo] </td><td> geo:geofence-collection </td><td> +   `AWS::Location::GeofenceCollection`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> geo:tracker </td><td> +   `AWS::Location::Tracker`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> geo:api-key </td><td> +   `AWS::Location::APIKey`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> geo:place-index </td><td> +   `AWS::Location::PlaceIndex`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> geo:route-calculator </td><td> +   `AWS::Location::RouteCalculator`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> geo:map </td><td> +   `AWS::Location::Map`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> Amazon Lookout for Equipment [lookoutequipment] </td><td> lookoutequipment:dataset </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> lookoutequipment:label-group </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> lookoutequipment:inference-scheduler </td><td> +   `AWS::LookoutEquipment::InferenceScheduler`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> lookoutequipment:model </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> Amazon Lookout for Metrics [lookoutmetrics] </td><td> lookoutmetrics:metricset </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> lookoutmetrics:anomalydetector </td><td> +   `AWS::LookoutMetrics::AnomalyDetector`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> lookoutmetrics:alert </td><td> +   `AWS::LookoutMetrics::Alert`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> Amazon Lookout for Vision [lookoutvision] </td><td> lookoutvision:model </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> Amazon MQ [mq] </td><td> mq:configuration </td><td> +   `AWS::AmazonMQ::Configuration`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> mq:broker </td><td> +   `AWS::AmazonMQ::Broker`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> mq:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> Amazon Machine Learning [machinelearning] </td><td> machinelearning:evaluation </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> machinelearning:mlmodel </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> machinelearning:batchprediction </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> machinelearning:datasource </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> Amazon Macie [macie2] </td><td> macie2:classification-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> macie2:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="5"> Amazon Macie [macie] </td><td> macie:allow-list </td><td> +   `AWS::Macie::AllowList`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> macie:member </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> macie:findings-filter </td><td> +   `AWS::Macie::FindingsFilter`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> macie:classification-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> macie:custom-data-identifier </td><td> +   `AWS::Macie::CustomDataIdentifier`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="6"> Amazon Managed Blockchain [managedblockchain] </td><td> managedblockchain:proposals </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> managedblockchain:members </td><td> +   `AWS::ManagedBlockchain::Member`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> managedblockchain:accessors </td><td> +   `AWS::ManagedBlockchain::Accessor`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> managedblockchain:networks </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> managedblockchain:nodes </td><td> +   `AWS::ManagedBlockchain::Node`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> managedblockchain:invitations </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> Amazon Managed Grafana [grafana] </td><td> grafana:workspaces </td><td> +   `AWS::Grafana::Workspace`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> Amazon Managed Service for Prometheus [aps] </td><td> aps:scraper </td><td> +   `AWS::APS::Scraper`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> aps:anomalydetector </td><td> +   `AWS::APS::AnomalyDetector`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> aps:workspace </td><td> +   `AWS::APS::Workspace`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> aps:rulegroupsnamespace </td><td> +   `AWS::APS::RuleGroupsNamespace`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="3"> Amazon Managed Streaming for Apache Kafka [kafka] </td><td> kafka:vpc-connection </td><td> +   `AWS::MSK::VpcConnection`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> kafka:cluster </td><td> +   `AWS::MSK::Cluster`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> kafka:replicator </td><td> +   `AWS::MSK::Replicator`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="3"> Amazon Managed Streaming for Kafka Connect [kafkaconnect] </td><td> kafkaconnect:worker-configuration </td><td> +   `AWS::KafkaConnect::WorkerConfiguration`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> kafkaconnect:connector </td><td> +   `AWS::KafkaConnect::Connector`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> kafkaconnect:custom-plugin </td><td> +   `AWS::KafkaConnect::CustomPlugin`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> Amazon Managed Workflows for Apache Airflow [airflow] </td><td> airflow:environment </td><td> +   `AWS::MWAA::Environment`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="8"> Amazon MemoryDB [memorydb] </td><td> memorydb:cluster </td><td> +   `AWS::MemoryDB::Cluster`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> memorydb:acl </td><td> +   `AWS::MemoryDB::ACL`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> memorydb:subnetgroup </td><td> +   `AWS::MemoryDB::SubnetGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> memorydb:reservednode </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> memorydb:multiregioncluster </td><td> +   `AWS::MemoryDB::MultiRegionCluster`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> memorydb:user </td><td> +   `AWS::MemoryDB::User`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> memorydb:parametergroup </td><td> +   `AWS::MemoryDB::ParameterGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> memorydb:snapshot </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="6"> Amazon Nimble Studio [nimble] </td><td> nimble:studio </td><td> +   `AWS::NimbleStudio::Studio`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> nimble:launch-profile </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> nimble:streaming-session </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> nimble:streaming-session-backup </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> nimble:streaming-image </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> nimble:studio-component </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> Amazon One Enterprise [one] </td><td> one:site </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> one:device-instance </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> one:device-configuration-template </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> Amazon OpenSearch Ingestion [osis] </td><td> osis:pipeline </td><td> +   `AWS::OSIS::Pipeline`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="3"> Amazon OpenSearch Serverless [aoss] </td><td> aoss:collection </td><td> +   `AWS::OpenSearchServerless::Collection`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> aoss:collection-group </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> aoss:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> Amazon OpenSearch [es] </td><td> es:domain </td><td> +   `AWS::Elasticsearch::Domain`  <br />+   `AWS::OpenSearchService::Domain`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> es:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> Amazon OpenSearch [opensearch] </td><td> opensearch:datasource </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="12"> Amazon Personalize [personalize] </td><td> personalize:data-deletion-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> personalize:dataset-group </td><td> +   `AWS::Personalize::DatasetGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> personalize:batch-segment-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> personalize:campaign </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> personalize:recommender </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> personalize:batch-inference-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> personalize:event-tracker </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> personalize:dataset-import-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> personalize:dataset </td><td> +   `AWS::Personalize::Dataset`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> personalize:solution </td><td> +   `AWS::Personalize::Solution`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> personalize:filter </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> personalize:dataset-export-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="7"> Amazon Pinpoint SMS and Voice Service [sms-voice] </td><td> sms-voice:sender-id </td><td> +   `AWS::SMSVOICE::SenderId`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> sms-voice:protect-configuration </td><td> +   `AWS::SMSVOICE::ProtectConfiguration`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sms-voice:opt-out-list </td><td> +   `AWS::SMSVOICE::OptOutList`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> sms-voice:phone-number </td><td> +   `AWS::SMSVOICE::PhoneNumber`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> sms-voice:pool </td><td> +   `AWS::SMSVOICE::Pool`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> sms-voice:configuration-set </td><td> +   `AWS::SMSVOICE::ConfigurationSet`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> sms-voice:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> Amazon Pinpoint [mobiletargeting] </td><td> mobiletargeting:templates </td><td> +   `AWS::Pinpoint::SmsTemplate`  <br />+   `AWS::Pinpoint::PushTemplate`  <br />+   `AWS::Pinpoint::InAppTemplate`  <br />+   `AWS::Pinpoint::EmailTemplate`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> mobiletargeting:apps </td><td> +   `AWS::Pinpoint::App`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> Amazon Q Business Q Apps [qapps] </td><td> qapps:application/qapp/session </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> qapps:application/qapp </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="6"> Amazon Q Business [qbusiness] </td><td> qbusiness:application/plugin </td><td> +   `AWS::QBusiness::Plugin`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> qbusiness:application/retriever </td><td> +   `AWS::QBusiness::Retriever`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> qbusiness:application/index/data-source </td><td> +   `AWS::QBusiness::DataSource`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> qbusiness:application </td><td> +   `AWS::QBusiness::Application`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> qbusiness:application/web-experience </td><td> +   `AWS::QBusiness::WebExperience`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> qbusiness:application/index </td><td> +   `AWS::QBusiness::Index`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="12"> Amazon Q in Connect [wisdom] </td><td> wisdom:content-association </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> wisdom:content </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> wisdom:assistant </td><td> +   `AWS::Wisdom::Assistant`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> wisdom:quick-response </td><td> +   `AWS::Wisdom::QuickResponse`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> wisdom:ai-agent </td><td> +   `AWS::Wisdom::AIAgent`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> wisdom:message-template </td><td> +   `AWS::Wisdom::MessageTemplate`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> wisdom:knowledge-base </td><td> +   `AWS::Wisdom::KnowledgeBase`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> wisdom:session </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> wisdom:ai-prompt </td><td> +   `AWS::Wisdom::AIPrompt`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> wisdom:ai-guardrail </td><td> +   `AWS::Wisdom::AIGuardrail`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> wisdom:association </td><td> +   `AWS::Wisdom::AssistantAssociation`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> wisdom:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="3"> Amazon QLDB [qldb] </td><td> qldb:ledger </td><td> +   `AWS::QLDB::Ledger`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> qldb:stream </td><td> +   `AWS::QLDB::Stream`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> qldb:ledger/table </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="17"> Amazon QuickSight [quicksight] </td><td> quicksight:vpcconnection </td><td> +   `AWS::QuickSight::VPCConnection`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> quicksight:analysis </td><td> +   `AWS::QuickSight::Analysis`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> quicksight:folder </td><td> +   `AWS::QuickSight::Folder`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> quicksight:custompermissions </td><td> +   `AWS::QuickSight::CustomPermissions`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> quicksight:brand </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> quicksight:user </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> quicksight:datasource </td><td> +   `AWS::QuickSight::DataSource`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> quicksight:template </td><td> +   `AWS::QuickSight::Template`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> quicksight:topic </td><td> +   `AWS::QuickSight::Topic`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> quicksight:email-customization-template </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> quicksight:theme </td><td> +   `AWS::QuickSight::Theme`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> quicksight:customization </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> quicksight:flow </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> quicksight:action-connector </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> quicksight:namespace </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> quicksight:dataset </td><td> +   `AWS::QuickSight::DataSet`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> quicksight:dashboard </td><td> +   `AWS::QuickSight::Dashboard`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> Amazon RDS [neptune-graph] </td><td> neptune-graph:export-task </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> neptune-graph:graph </td><td> +   `AWS::NeptuneGraph::Graph`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> neptune-graph:graph-snapshot </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="33"> Amazon RDS [rds] </td><td> rds:cluster-snapshot </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> rds:db </td><td> +   `AWS::DocDB::DBInstance`  <br />+   `AWS::RDS::DBInstance`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:globalcluster </td><td> +   `AWS::RDS::GlobalCluster`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> rds:global-cluster </td><td> +   `AWS::RDS::GlobalCluster`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:subgrp </td><td> +   `AWS::RDS::DBSubnetGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:cluster-auto-backup </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> rds:deployment </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> rds:pg </td><td> +   `AWS::Neptune::DBParameterGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:cluster-pg </td><td> +   `AWS::Neptune::DBClusterParameterGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:snapshot-tenant-database </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> rds:es </td><td> +   `AWS::DocDB::EventSubscription`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:pg </td><td> +   `AWS::RDS::DBParameterGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:target-group </td><td> +   `AWS::RDS::DBProxyTargetGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:cluster </td><td> +   `AWS::DocDB::DBCluster`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:snapshot </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> rds:db-proxy </td><td> +   `AWS::RDS::DBProxy`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:es </td><td> +   `AWS::RDS::EventSubscription`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:cluster-endpoint </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> rds:integration </td><td> +   `AWS::RDS::Integration`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> rds:ri </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> rds:auto-backup </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> rds:secgrp </td><td> +   `AWS::RDS::DBSecurityGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:cev </td><td> +   `AWS::RDS::CustomDBEngineVersion`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:db-proxy-endpoint </td><td> +   `AWS::RDS::DBProxyEndpoint`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:cluster-pg </td><td> +   `AWS::RDS::DBClusterParameterGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:optgrp </td><td> +   `AWS::RDS::OptionGroup`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> rds:og </td><td> +   `AWS::RDS::OptionGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:db </td><td> +   `AWS::Neptune::DBInstance`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:subgrp </td><td> +   `AWS::DocDB::DBSubnetGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:tenant-database </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> rds:subgrp </td><td> +   `AWS::Neptune::DBSubnetGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:cluster-pg </td><td> +   `AWS::DocDB::DBClusterParameterGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rds:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="5"> Amazon Redshift Serverless [redshift-serverless] </td><td> redshift-serverless:recoverypoint </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> redshift-serverless:workgroup </td><td> +   `AWS::RedshiftServerless::Workgroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> redshift-serverless:namespace </td><td> +   `AWS::RedshiftServerless::Namespace`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> redshift-serverless:snapshot </td><td> +   `AWS::RedshiftServerless::Snapshot`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> redshift-serverless:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="17"> Amazon Redshift [redshift] </td><td> redshift:eventsubscription </td><td> +   `AWS::Redshift::EventSubscription`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> redshift:hsmconfiguration </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> redshift:subnetgroup </td><td> +   `AWS::Redshift::ClusterSubnetGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> redshift:snapshotcopygrant </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> redshift:qev2idcapplication </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> redshift:securitygroupingress </td><td> +   `AWS::Redshift::ClusterSecurityGroupIngress`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> redshift:namespace </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> redshift:snapshotschedule </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> redshift:securitygroup </td><td> +   `AWS::Redshift::ClusterSecurityGroup`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> redshift:hsmclientcertificate </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> redshift:redshiftidcapplication </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> redshift:cluster </td><td> +   `AWS::Redshift::Cluster`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> redshift:snapshot </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> redshift:usagelimit </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> redshift:integration </td><td> +   `AWS::Redshift::Integration`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> redshift:parametergroup </td><td> +   `AWS::Redshift::ClusterParameterGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> redshift:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> Amazon Rekognition [rekognition] </td><td> rekognition:project/version </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> rekognition:project </td><td> +   `AWS::Rekognition::Project`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> rekognition:collection </td><td> +   `AWS::Rekognition::Collection`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> rekognition:streamprocessor </td><td> +   `AWS::Rekognition::StreamProcessor`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> Amazon Route 53 Profiles [route53profiles] </td><td> route53profiles:profile-association </td><td> +   `AWS::Route53Profiles::ProfileAssociation`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> route53profiles:profile </td><td> +   `AWS::Route53Profiles::Profile`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="3"> Amazon Route 53 Recovery Controls [route53-recovery-control] </td><td> route53-recovery-control:controlpanel/safetyrule </td><td> +   `AWS::Route53RecoveryControl::SafetyRule`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> route53-recovery-control:cluster </td><td> +   `AWS::Route53RecoveryControl::Cluster`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> route53-recovery-control:controlpanel </td><td> +   `AWS::Route53RecoveryControl::ControlPanel`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> Amazon Route 53 Recovery Readiness [route53-recovery-readiness] </td><td> route53-recovery-readiness:recovery-group </td><td> +   `AWS::Route53RecoveryReadiness::RecoveryGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> route53-recovery-readiness:readiness-check </td><td> +   `AWS::Route53RecoveryReadiness::ReadinessCheck`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> route53-recovery-readiness:cell </td><td> +   `AWS::Route53RecoveryReadiness::Cell`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> route53-recovery-readiness:resource-set </td><td> +   `AWS::Route53RecoveryReadiness::ResourceSet`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="8"> Amazon Route 53 Resolver [route53resolver] </td><td> route53resolver:resolver-rule </td><td> +   `AWS::Route53Resolver::ResolverRule`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> route53resolver:firewall-domain-list </td><td> +   `AWS::Route53Resolver::FirewallDomainList`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> route53resolver:resolver-endpoint </td><td> +   `AWS::Route53Resolver::ResolverEndpoint`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> route53resolver:resolver-query-log-config </td><td> +   `AWS::Route53Resolver::ResolverQueryLoggingConfig`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> route53resolver:firewall-rule-group </td><td> +   `AWS::Route53Resolver::FirewallRuleGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> route53resolver:firewall-rule-group-association </td><td> +   `AWS::Route53Resolver::FirewallRuleGroupAssociation`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> route53resolver:outpost-resolver </td><td> +   `AWS::Route53Resolver::OutpostResolver`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> route53resolver:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="4"> Amazon Route 53 [route53] </td><td> route53:healthcheck </td><td> +   `AWS::Route53::HealthCheck`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> route53:domain </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> route53:hostedzone </td><td> +   `AWS::Route53::HostedZone`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> route53:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> Amazon S3 Express [s3express] </td><td> s3express:accesspoint </td><td> +   `AWS::S3Express::AccessPoint`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> s3express:bucket </td><td> +   `AWS::S3Express::DirectoryBucket`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> Amazon S3 Glacier [glacier] </td><td> glacier:vaults </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> Amazon S3 Tables [s3tables] </td><td> s3tables:TableBucket </td><td> +   `AWS::S3Tables::TableBucket`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> s3tables:table </td><td> +   `AWS::S3Tables::Table`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> Amazon S3 Vectors [s3vectors] </td><td> s3vectors:index </td><td> +   `AWS::S3Vectors::Index`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> s3vectors:vectorbucket </td><td> +   `AWS::S3Vectors::VectorBucket`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="10"> Amazon S3 [s3] </td><td> s3:accessgrantsinstance </td><td> +   `AWS::S3::AccessGrantsInstance`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> s3:bucket </td><td> +   `AWS::S3::Bucket`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> s3:job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> s3:access-grants </td><td> +   `AWS::S3::AccessGrant`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> s3:storage-lens </td><td> +   `AWS::S3::StorageLens`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> s3:access-grants/location </td><td> +   `AWS::S3::AccessGrantsLocation`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> s3:accessgrantslocation </td><td> +   `AWS::S3::AccessGrantsLocation`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> s3:storage-lens-group </td><td> +   `AWS::S3::StorageLensGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> s3:accesspoint </td><td> +   `AWS::S3::AccessPoint`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> s3:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="10"> Amazon SES [ses] </td><td> ses:identity </td><td> +   `AWS::SES::EmailIdentity`  <br />+   `AWS::PinpointEmail::Identity`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ses:dedicated-ip-pool </td><td> +   `AWS::SES::DedicatedIpPool`  <br />+   `AWS::PinpointEmail::DedicatedIpPool`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ses:contact-list </td><td> +   `AWS::SES::ContactList`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ses:mailmanager-ingress-point </td><td> +   `AWS::SES::MailManagerIngressPoint`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ses:configuration-set </td><td> +   `AWS::SES::ConfigurationSet`  <br />+   `AWS::PinpointEmail::ConfigurationSet`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ses:mailmanager-address-list </td><td> +   `AWS::SES::MailManagerAddressList`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ses:multi-region-endpoint </td><td> +   `AWS::SES::MultiRegionEndpoint`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> ses:mailmanager-archive </td><td> +   `AWS::SES::MailManagerArchive`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ses:mailmanager-traffic-policy </td><td> +   `AWS::SES::MailManagerTrafficPolicy`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> ses:mailmanager-rule-set </td><td> +   `AWS::SES::MailManagerRuleSet`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> Amazon SNS [sns] </td><td> sns:topic </td><td> +   `AWS::SNS::Topic`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sns:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> Amazon SQS [sqs] </td><td> sqs:queue </td><td> +   `AWS::SQS::Queue`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sqs:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="64"> Amazon SageMaker [sagemaker] </td><td> sagemaker:image </td><td> +   `AWS::SageMaker::Image`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:model-quality-job-definition </td><td> +   `AWS::SageMaker::ModelQualityJobDefinition`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:monitoring-schedule </td><td> +   `AWS::SageMaker::MonitoringSchedule`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:transform-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:code-repository </td><td> +   `AWS::SageMaker::CodeRepository`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:imageversion </td><td> +   `AWS::SageMaker::ImageVersion`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:experiment </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:action </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:hyper-parameter-tuning-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:model-bias-job-definition </td><td> +   `AWS::SageMaker::ModelBiasJobDefinition`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:app-image-config </td><td> +   `AWS::SageMaker::AppImageConfig`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:model </td><td> +   `AWS::SageMaker::Model`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:training-plan </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:workforce </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:model-explainability-job-definition </td><td> +   `AWS::SageMaker::ModelExplainabilityJobDefinition`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:model-card </td><td> +   `AWS::SageMaker::ModelCard`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:model-card-export-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:notebook-instance-lifecycle-config </td><td> +   `AWS::SageMaker::NotebookInstanceLifecycleConfig`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:notebook-instance </td><td> +   `AWS::SageMaker::NotebookInstance`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:compilation-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:model-package </td><td> +   `AWS::SageMaker::ModelPackage`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:data-quality-job-definition </td><td> +   `AWS::SageMaker::DataQualityJobDefinition`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:user-profile </td><td> +   `AWS::SageMaker::UserProfile`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:domain </td><td> +   `AWS::SageMaker::Domain`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:mlflow-tracking-server </td><td> +   `AWS::SageMaker::MlflowTrackingServer`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:edge-packaging-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:cluster </td><td> +   `AWS::SageMaker::Cluster`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:device </td><td> +   `AWS::SageMaker::Device`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:feature-group </td><td> +   `AWS::SageMaker::FeatureGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:artifact </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:studio-lifecycle-config </td><td> +   `AWS::SageMaker::StudioLifecycleConfig`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:cluster-scheduler-config </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:automl-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:app </td><td> +   `AWS::SageMaker::App`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:space </td><td> +   `AWS::SageMaker::Space`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:inference-component </td><td> +   `AWS::SageMaker::InferenceComponent`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:endpoint </td><td> +   `AWS::SageMaker::Endpoint`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:workteam </td><td> +   `AWS::SageMaker::Workteam`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:inference-experiment </td><td> +   `AWS::SageMaker::InferenceExperiment`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:optimization-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:algorithm </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:pipeline/execution </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:pipeline-execution </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:project </td><td> +   `AWS::SageMaker::Project`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:model-package-group </td><td> +   `AWS::SageMaker::ModelPackageGroup`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:labeling-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:edge-deployment </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:training-job </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:compute-quota </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:reserved-capacity </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:context </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:partner-app </td><td> +   `AWS::SageMaker::PartnerApp`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:experiment-trial </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:hub </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:flow-definition </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:pipeline </td><td> +   `AWS::SageMaker::Pipeline`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:lineage-group </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:inference-recommendations-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:device-fleet </td><td> +   `AWS::SageMaker::DeviceFleet`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:hub-content </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:experiment-trial-component </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker:endpoint-config </td><td> +   `AWS::SageMaker::EndpointConfig`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:processing-job </td><td> +   `AWS::SageMaker::ProcessingJob`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> sagemaker:human-task-ui </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> Amazon SageMaker geospatial capabilities [sagemaker-geospatial] </td><td> sagemaker-geospatial:raster-data-collection </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker-geospatial:earth-observation-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> sagemaker-geospatial:vector-enrichment-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> Amazon Security Lake [securitylake] </td><td> securitylake:data-lake </td><td> +   `AWS::SecurityLake::DataLake`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> securitylake:subscriber </td><td> +   `AWS::SecurityLake::Subscriber`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> securitylake:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> Amazon Simple Workflow Service [swf] </td><td> swf:domain </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> Amazon Textract [textract] </td><td> textract:adapters </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> textract:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> Amazon Timestream InfluxDB [timestream-influxdb] </td><td> timestream-influxdb:db-instance </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="3"> Amazon Timestream [timestream] </td><td> timestream:database </td><td> +   `AWS::Timestream::Database`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> timestream:database/table </td><td> +   `AWS::Timestream::Table`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> timestream:scheduled-query </td><td> +   `AWS::Timestream::ScheduledQuery`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="7"> Amazon Transcribe [transcribe] </td><td> transcribe:vocabulary-filter </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> transcribe:vocabulary </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> transcribe:transcription-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> transcribe:medical-transcription-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> transcribe:medical-vocabulary </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> transcribe:medical-scribe-job </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> transcribe:language-model </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> Amazon Translate [translate] </td><td> translate:parallel-data </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> translate:terminology </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="13"> Amazon VPC Lattice [vpc-lattice] </td><td> vpc-lattice:service/listener/rule </td><td> +   `AWS::VpcLattice::Rule`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> vpc-lattice:servicenetworkserviceassociation </td><td> +   `AWS::VpcLattice::ServiceNetworkServiceAssociation`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> vpc-lattice:service/listener </td><td> +   `AWS::VpcLattice::Listener`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> vpc-lattice:accesslogsubscription </td><td> +   `AWS::VpcLattice::AccessLogSubscription`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> vpc-lattice:servicenetworkresourceassociation </td><td> +   `AWS::VpcLattice::ServiceNetworkResourceAssociation`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> vpc-lattice:domainverification </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> vpc-lattice:resourceendpointassociation </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> vpc-lattice:servicenetworkvpcassociation </td><td> +   `AWS::VpcLattice::ServiceNetworkVpcAssociation`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> vpc-lattice:service </td><td> +   `AWS::VpcLattice::Service`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> vpc-lattice:servicenetwork </td><td> +   `AWS::VpcLattice::ServiceNetwork`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> vpc-lattice:resourceconfiguration </td><td> +   `AWS::VpcLattice::ResourceConfiguration`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> vpc-lattice:targetgroup </td><td> +   `AWS::VpcLattice::TargetGroup`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> vpc-lattice:resourcegateway </td><td> +   `AWS::VpcLattice::ResourceGateway`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> Amazon Verified Permissions [verifiedpermissions] </td><td> verifiedpermissions:policy-store </td><td> +   `AWS::VerifiedPermissions::PolicyStore`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> Amazon WorkLink [worklink] </td><td> worklink:fleet </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> Amazon WorkMail [workmail] </td><td> workmail:organization </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="10"> Amazon WorkSpaces Secure Browser [workspaces-web] </td><td> workspaces-web:portal </td><td> +   `AWS::WorkSpacesWeb::Portal`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> workspaces-web:ipaccesssettings </td><td> +   `AWS::WorkSpacesWeb::IpAccessSettings`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> workspaces-web:useraccessloggingsettings </td><td> +   `AWS::WorkSpacesWeb::UserAccessLoggingSettings`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> workspaces-web:dataprotectionsettings </td><td> +   `AWS::WorkSpacesWeb::DataProtectionSettings`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> workspaces-web:sessionlogger </td><td> +   `AWS::WorkSpacesWeb::SessionLogger`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> workspaces-web:usersettings </td><td> +   `AWS::WorkSpacesWeb::UserSettings`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> workspaces-web:browsersettings </td><td> +   `AWS::WorkSpacesWeb::BrowserSettings`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> workspaces-web:identityprovider </td><td> +   `AWS::WorkSpacesWeb::IdentityProvider`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> workspaces-web:networksettings </td><td> +   `AWS::WorkSpacesWeb::NetworkSettings`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> workspaces-web:truststore </td><td> +   `AWS::WorkSpacesWeb::TrustStore`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> Amazon WorkSpaces Secure Browser [workspacesweb] </td><td> workspacesweb:identityprovider </td><td> +   `AWS::WorkSpacesWeb::IdentityProvider`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="5"> Amazon WorkSpaces Thin Client [thinclient] </td><td> thinclient:environment </td><td> +   `AWS::WorkSpacesThinClient::Environment`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> thinclient:environments </td><td> +   `AWS::WorkSpacesThinClient::Environment`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> thinclient:device </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> thinclient:devices </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> thinclient:softwareset </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="8"> Amazon WorkSpaces [workspaces] </td><td> workspaces:directory </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> workspaces:workspace </td><td> +   `AWS::WorkSpaces::Workspace`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> workspaces:workspacebundle </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> workspaces:workspaceimage </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> workspaces:connectionalias </td><td> +   `AWS::WorkSpaces::ConnectionAlias`   </td><td> Yes </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> workspaces:workspacespool </td><td> +   `AWS::WorkSpaces::WorkspacesPool`   </td><td> Yes </td><td> No </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td> workspaces:workspaceipgroup </td><td> +   `N/A`   </td><td> Yes </td><td> Yes </td><td> No </td><td> No </td></tr>
-  <tr><td> workspaces:ALL\_SUPPORTED </td><td> +   `N/A`   </td><td> No </td><td> Yes </td><td> Yes </td><td> Yes </td></tr>
-  <tr><td rowspan="2"> Deprecated - AWS IoT 1-Click [iot1click] </td><td> iot1click:devices </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iot1click:projects </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> Deprecated AWS IoT RoboRunner [iotroborunner] </td><td> iotroborunner:site </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> iotroborunner:site/worker-fleet </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td rowspan="2"> Multi-party approval [mpa] </td><td> mpa:approval-team </td><td> +   `AWS::MPA::ApprovalTeam`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> mpa:identity-source </td><td> +   `AWS::MPA::IdentitySource`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> Service Quotas [servicequotas] </td><td> servicequotas:quota </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
-  <tr><td> route53globalresolver [route53globalresolver] </td><td> route53globalresolver:firewall-domain-list </td><td> +   `N/A`   </td><td> Yes </td><td> No </td><td> No </td><td> No </td></tr>
+  <tr><td rowspan="4"> <code>AWS Amplify UI Builder [amplifyuibuilder]</code> </td><td> <code>amplifyuibuilder:theme</code> </td><td> <ul><li>  <code>AWS::AmplifyUIBuilder::Theme</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>amplifyuibuilder:app/environment/components</code> </td><td> <ul><li>  <code>AWS::AmplifyUIBuilder::Component</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>amplifyuibuilder:component</code> </td><td> <ul><li>  <code>AWS::AmplifyUIBuilder::Component</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>amplifyuibuilder:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>AWS Amplify [amplify]</code> </td><td> <code>amplify:apps</code> </td><td> <ul><li>  <code>AWS::Amplify::App</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="8"> <code>AWS App Mesh [appmesh]</code> </td><td> <code>appmesh:mesh</code> </td><td> <ul><li>  <code>AWS::AppMesh::Mesh</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>appmesh:mesh/virtualgateway/gatewayroute</code> </td><td> <ul><li>  <code>AWS::AppMesh::GatewayRoute</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>appmesh:mesh/virtualgateway</code> </td><td> <ul><li>  <code>AWS::AppMesh::VirtualGateway</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>appmesh:mesh/virtualnode</code> </td><td> <ul><li>  <code>AWS::AppMesh::VirtualNode</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>appmesh:mesh/virtualrouter/route</code> </td><td> <ul><li>  <code>AWS::AppMesh::Route</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>appmesh:mesh/virtualservice</code> </td><td> <ul><li>  <code>AWS::AppMesh::VirtualService</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>appmesh:mesh/virtualrouter</code> </td><td> <ul><li>  <code>AWS::AppMesh::VirtualRouter</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>appmesh:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="6"> <code>AWS App Runner [apprunner]</code> </td><td> <code>apprunner:autoscalingconfiguration</code> </td><td> <ul><li>  <code>AWS::AppRunner::AutoScalingConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>apprunner:service</code> </td><td> <ul><li>  <code>AWS::AppRunner::Service</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>apprunner:connection</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>apprunner:vpcingressconnection</code> </td><td> <ul><li>  <code>AWS::AppRunner::VpcIngressConnection</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>apprunner:observabilityconfiguration</code> </td><td> <ul><li>  <code>AWS::AppRunner::ObservabilityConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>apprunner:vpcconnector</code> </td><td> <ul><li>  <code>AWS::AppRunner::VpcConnector</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="9"> <code>AWS AppConfig [appconfig]</code> </td><td> <code>appconfig:application/environment</code> </td><td> <ul><li>  <code>AWS::AppConfig::Environment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>appconfig:environment</code> </td><td> <ul><li>  <code>AWS::AppConfig::Environment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>appconfig:configuration</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>appconfig:extension</code> </td><td> <ul><li>  <code>AWS::AppConfig::Extension</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>appconfig:application</code> </td><td> <ul><li>  <code>AWS::AppConfig::Application</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>appconfig:extensionassociation</code> </td><td> <ul><li>  <code>AWS::AppConfig::ExtensionAssociation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>appconfig:application/configurationprofile</code> </td><td> <ul><li>  <code>AWS::AppConfig::ConfigurationProfile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>appconfig:application/environment/deployment</code> </td><td> <ul><li>  <code>AWS::AppConfig::Deployment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>appconfig:deploymentstrategy</code> </td><td> <ul><li>  <code>AWS::AppConfig::DeploymentStrategy</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS AppFabric [appfabric]</code> </td><td> <code>appfabric:appbundle/ingestion</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>appfabric:appbundle</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>appfabric:appbundle/appauthorization</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS AppSync [appsync]</code> </td><td> <code>appsync:domainnames</code> </td><td> <ul><li>  <code>AWS::AppSync::DomainName</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>appsync:apis</code> </td><td> <ul><li>  <code>AWS::AppSync::GraphQLApi</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>appsync:apis</code> </td><td> <ul><li>  <code>AWS::AppSync::Api</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>AWS Application Auto Scaling [application-autoscaling]</code> </td><td> <code>application-autoscaling:scalable-target</code> </td><td> <ul><li>  <code>AWS::ApplicationAutoScaling::ScalableTarget</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="10"> <code>AWS Application Migration Service [mgn]</code> </td><td> <code>mgn:source-server</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>mgn:connector</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>mgn:application</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>mgn:wave</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>mgn:launch-configuration-template</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>mgn:replication-configuration-template</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>mgn:job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>mgn:import</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>mgn:vcenter-client</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>mgn:export</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS Audit Manager [auditmanager]</code> </td><td> <code>auditmanager:assessment</code> </td><td> <ul><li>  <code>AWS::AuditManager::Assessment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>auditmanager:control</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>auditmanager:assessmentframework</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>auditmanager:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS B2B Data Interchange [b2bi]</code> </td><td> <code>b2bi:profile</code> </td><td> <ul><li>  <code>AWS::B2BI::Profile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>b2bi:partnership</code> </td><td> <ul><li>  <code>AWS::B2BI::Partnership</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>b2bi:transformer</code> </td><td> <ul><li>  <code>AWS::B2BI::Transformer</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>b2bi:capability</code> </td><td> <ul><li>  <code>AWS::B2BI::Capability</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS Backup Gateway [backup-gateway]</code> </td><td> <code>backup-gateway:vm</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>backup-gateway:hypervisor</code> </td><td> <ul><li>  <code>AWS::BackupGateway::Hypervisor</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>backup-gateway:gateway</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>backup-gateway:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Backup [backup-search]</code> </td><td> <code>backup-search:search-export-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>backup-search:search-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="9"> <code>AWS Backup [backup]</code> </td><td> <code>backup:legal-hold</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>backup:tiering-configuration</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>backup:report-plan</code> </td><td> <ul><li>  <code>AWS::Backup::ReportPlan</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>backup:backup-vault</code> </td><td> <ul><li>  <code>AWS::Backup::LogicallyAirGappedBackupVault</code>  </li><li>  <code>AWS::Backup::BackupVault</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>backup:restore-testing-plan</code> </td><td> <ul><li>  <code>AWS::Backup::RestoreTestingPlan</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>backup:framework</code> </td><td> <ul><li>  <code>AWS::Backup::Framework</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>backup:backup-plan</code> </td><td> <ul><li>  <code>AWS::Backup::BackupPlan</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>backup:recovery-point</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>backup:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="9"> <code>AWS Batch [batch]</code> </td><td> <code>batch:service-environment</code> </td><td> <ul><li>  <code>AWS::Batch::ServiceEnvironment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>batch:job-definition</code> </td><td> <ul><li>  <code>AWS::Batch::JobDefinition</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>batch:scheduling-policy</code> </td><td> <ul><li>  <code>AWS::Batch::SchedulingPolicy</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>batch:consumable-resource</code> </td><td> <ul><li>  <code>AWS::Batch::ConsumableResource</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>batch:service-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>batch:compute-environment</code> </td><td> <ul><li>  <code>AWS::Batch::ComputeEnvironment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>batch:job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>batch:job-queue</code> </td><td> <ul><li>  <code>AWS::Batch::JobQueue</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>batch:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>AWS Billing And Cost Management Data Exports [bcm-data-exports]</code> </td><td> <code>bcm-data-exports:export</code> </td><td> <ul><li>  <code>AWS::BCMDataExports::Export</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS Billing And Cost Management Pricing Calculator [bcm-pricing-calculator]</code> </td><td> <code>bcm-pricing-calculator:workload-estimate</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bcm-pricing-calculator:bill-estimate</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bcm-pricing-calculator:bill-scenario</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS Billing Conductor [billingconductor]</code> </td><td> <code>billingconductor:billinggroup</code> </td><td> <ul><li>  <code>AWS::BillingConductor::BillingGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>billingconductor:pricingplan</code> </td><td> <ul><li>  <code>AWS::BillingConductor::PricingPlan</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>billingconductor:customlineitem</code> </td><td> <ul><li>  <code>AWS::BillingConductor::CustomLineItem</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>billingconductor:pricingrule</code> </td><td> <ul><li>  <code>AWS::BillingConductor::PricingRule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>AWS Billing [billing]</code> </td><td> <code>billing:billingview</code> </td><td> <ul><li>  <code>AWS::Billing::BillingView</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Budget Service [budgets]</code> </td><td> <code>budgets:budget</code> </td><td> <ul><li>  <code>AWS::Budgets::Budget</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>budgets:budget/action</code> </td><td> <ul><li>  <code>AWS::Budgets::BudgetsAction</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS BugBust [bugbust]</code> </td><td> <code>bugbust:event</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bugbust:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Certificate Manager [acm]</code> </td><td> <code>acm:certificate</code> </td><td> <ul><li>  <code>AWS::CertificateManager::Certificate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>acm:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS Chatbot [chatbot]</code> </td><td> <code>chatbot:custom-action</code> </td><td> <ul><li>  <code>AWS::Chatbot::CustomAction</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>chatbot:chat-configuration/microsoft-teams-channel</code> </td><td> <ul><li>  <code>AWS::Chatbot::SlackChannelConfiguration</code>  </li><li>  <code>AWS::Chatbot::MicrosoftTeamsChannelConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>chatbot:chat-configuration/slack-channel</code> </td><td> <ul><li>  <code>AWS::Chatbot::SlackChannelConfiguration</code>  </li><li>  <code>AWS::Chatbot::MicrosoftTeamsChannelConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>chatbot:chat-configuration/chime-webhook</code> </td><td> <ul><li>  <code>AWS::Chatbot::SlackChannelConfiguration</code>  </li><li>  <code>AWS::Chatbot::MicrosoftTeamsChannelConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="11"> <code>AWS Clean Rooms ML [cleanrooms-ml]</code> </td><td> <code>cleanrooms-ml:configured-model-algorithm</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cleanrooms-ml:trained-model</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cleanrooms-ml:membership/trained-model</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cleanrooms-ml:configured-model-algorithm-association</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cleanrooms-ml:membership/configured-model-algorithm-association</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cleanrooms-ml:membership/trained-model-inference-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cleanrooms-ml:trained-model-inference-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cleanrooms-ml:audience-model</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cleanrooms-ml:audience-generation-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cleanrooms-ml:training-dataset</code> </td><td> <ul><li>  <code>AWS::CleanRoomsML::TrainingDataset</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>cleanrooms-ml:configured-audience-model</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="9"> <code>AWS Clean Rooms [cleanrooms]</code> </td><td> <code>cleanrooms:collaboration</code> </td><td> <ul><li>  <code>AWS::CleanRooms::Collaboration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cleanrooms:membership/privacybudgettemplate</code> </td><td> <ul><li>  <code>AWS::CleanRooms::PrivacyBudgetTemplate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cleanrooms:membership/configuredtableassociation</code> </td><td> <ul><li>  <code>AWS::CleanRooms::ConfiguredTableAssociation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cleanrooms:configuredtable</code> </td><td> <ul><li>  <code>AWS::CleanRooms::ConfiguredTable</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>cleanrooms:membership/analysistemplate</code> </td><td> <ul><li>  <code>AWS::CleanRooms::AnalysisTemplate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cleanrooms:membership/configuredaudiencemodelassociation</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cleanrooms:membership</code> </td><td> <ul><li>  <code>AWS::CleanRooms::Membership</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cleanrooms:membership/idmappingtable</code> </td><td> <ul><li>  <code>AWS::CleanRooms::IdMappingTable</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cleanrooms:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Cloud Map [servicediscovery]</code> </td><td> <code>servicediscovery:namespace</code> </td><td> <ul><li>  <code>AWS::ServiceDiscovery::HttpNamespace</code>  </li><li>  <code>AWS::ServiceDiscovery::PrivateDnsNamespace</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>servicediscovery:service</code> </td><td> <ul><li>  <code>AWS::ServiceDiscovery::Service</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Cloud9 [cloud9]</code> </td><td> <code>cloud9:environment</code> </td><td> <ul><li>  <code>AWS::Cloud9::EnvironmentEC2</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cloud9:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS CloudFormation [cloudformation]</code> </td><td> <code>cloudformation:stack</code> </td><td> <ul><li>  <code>AWS::CloudFormation::Stack</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>cloudformation:stackset</code> </td><td> <ul><li>  <code>AWS::CloudFormation::StackSet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS CloudHSM [cloudhsm]</code> </td><td> <code>cloudhsm:backup</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cloudhsm:cluster</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="5"> <code>AWS CloudTrail [cloudtrail]</code> </td><td> <code>cloudtrail:channel</code> </td><td> <ul><li>  <code>AWS::CloudTrail::Channel</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>cloudtrail:eventdatastore</code> </td><td> <ul><li>  <code>AWS::CloudTrail::EventDataStore</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>cloudtrail:trail</code> </td><td> <ul><li>  <code>AWS::CloudTrail::Trail</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>cloudtrail:dashboard</code> </td><td> <ul><li>  <code>AWS::CloudTrail::Dashboard</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>cloudtrail:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>AWS CloudWatch RUM [rum]</code> </td><td> <code>rum:appmonitor</code> </td><td> <ul><li>  <code>AWS::RUM::AppMonitor</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS CodeArtifact [codeartifact]</code> </td><td> <code>codeartifact:repository</code> </td><td> <ul><li>  <code>AWS::CodeArtifact::Repository</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>codeartifact:domain</code> </td><td> <ul><li>  <code>AWS::CodeArtifact::Domain</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>codeartifact:package-group</code> </td><td> <ul><li>  <code>AWS::CodeArtifact::PackageGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS CodeBuild [codebuild]</code> </td><td> <code>codebuild:project</code> </td><td> <ul><li>  <code>AWS::CodeBuild::Project</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>codebuild:fleet</code> </td><td> <ul><li>  <code>AWS::CodeBuild::Fleet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>codebuild:report-group</code> </td><td> <ul><li>  <code>AWS::CodeBuild::ReportGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>codebuild:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS CodeCommit [codecommit]</code> </td><td> <code>codecommit:repository</code> </td><td> <ul><li>  <code>AWS::CodeCommit::Repository</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>codecommit:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS CodeConnections [codeconnections]</code> </td><td> <code>codeconnections:host</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>codeconnections:connection</code> </td><td> <ul><li>  <code>AWS::CodeConnections::Connection</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>codeconnections:repository-link</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS CodeDeploy [codedeploy]</code> </td><td> <code>codedeploy:deploymentconfig</code> </td><td> <ul><li>  <code>AWS::CodeDeploy::DeploymentConfig</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>codedeploy:application</code> </td><td> <ul><li>  <code>AWS::CodeDeploy::Application</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>codedeploy:deploymentgroup</code> </td><td> <ul><li>  <code>AWS::CodeDeploy::DeploymentGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>codedeploy:instance</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS CodePipeline [codepipeline]</code> </td><td> <code>codepipeline:webhook</code> </td><td> <ul><li>  <code>AWS::CodePipeline::Webhook</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>codepipeline:pipeline</code> </td><td> <ul><li>  <code>AWS::CodePipeline::Pipeline</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>codepipeline:actiontype</code> </td><td> <ul><li>  <code>AWS::CodePipeline::CustomActionType</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>codepipeline:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS CodeStar Connections [codestar-connections]</code> </td><td> <code>codestar-connections:connection</code> </td><td> <ul><li>  <code>AWS::CodeStarConnections::Connection</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>codestar-connections:host</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>codestar-connections:repository-link</code> </td><td> <ul><li>  <code>AWS::CodeStarConnections::RepositoryLink</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>codestar-connections:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>AWS CodeStar Notifications [codestar-notifications]</code> </td><td> <code>codestar-notifications:notificationrule</code> </td><td> <ul><li>  <code>AWS::CodeStarNotifications::NotificationRule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>AWS CodeStar [codestar]</code> </td><td> <code>codestar:project</code> </td><td> <ul><li>  <code>AWS::CodeStar::GitHubRepository</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="9"> <code>AWS Config [config]</code> </td><td> <code>config:aggregation-authorization</code> </td><td> <ul><li>  <code>AWS::Config::AggregationAuthorization</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>config:organization-config-rule</code> </td><td> <ul><li>  <code>AWS::Config::OrganizationConfigRule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>config:organization-conformance-pack</code> </td><td> <ul><li>  <code>AWS::Config::OrganizationConformancePack</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>config:config-rule</code> </td><td> <ul><li>  <code>AWS::Config::ConfigRule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>config:configuration-recorder</code> </td><td> <ul><li>  <code>AWS::Config::ConfigurationRecorder</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>config:stored-query</code> </td><td> <ul><li>  <code>AWS::Config::StoredQuery</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>config:config-aggregator</code> </td><td> <ul><li>  <code>AWS::Config::ConfigurationAggregator</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>config:conformance-pack</code> </td><td> <ul><li>  <code>AWS::Config::ConformancePack</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>config:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS Control Tower [controltower]</code> </td><td> <code>controltower:landingzone</code> </td><td> <ul><li>  <code>AWS::ControlTower::LandingZone</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>controltower:enabledcontrol</code> </td><td> <ul><li>  <code>AWS::ControlTower::EnabledControl</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>controltower:enabledbaseline</code> </td><td> <ul><li>  <code>AWS::ControlTower::EnabledBaseline</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS Cost Explorer Service [ce]</code> </td><td> <code>ce:anomalysubscription</code> </td><td> <ul><li>  <code>AWS::CE::AnomalySubscription</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ce:costcategory</code> </td><td> <ul><li>  <code>AWS::CE::CostCategory</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ce:anomalymonitor</code> </td><td> <ul><li>  <code>AWS::CE::AnomalyMonitor</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>AWS Cost and Usage Report [cur]</code> </td><td> <code>cur:definition</code> </td><td> <ul><li>  <code>AWS::CUR::ReportDefinition</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="5"> <code>AWS Data Exchange [dataexchange]</code> </td><td> <code>dataexchange:entitled-revisions</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>dataexchange:event-actions</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>dataexchange:entitled-data-sets</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>dataexchange:data-grants</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>dataexchange:data-sets</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>AWS Data Pipeline [datapipeline]</code> </td><td> <code>datapipeline:pipeline</code> </td><td> <ul><li>  <code>AWS::DataPipeline::Pipeline</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="6"> <code>AWS DataSync [datasync]</code> </td><td> <code>datasync:location</code> </td><td> <ul><li>  <code>AWS::DataSync::LocationEFS</code>  </li><li>  <code>AWS::DataSync::LocationS3</code>  </li><li>  <code>AWS::DataSync::LocationFSxLustre</code>  </li><li>  <code>AWS::DataSync::LocationNFS</code>  </li><li>  <code>AWS::DataSync::LocationFSxONTAP</code>  </li><li>  <code>AWS::DataSync::LocationObjectStorage</code>  </li><li>  <code>AWS::DataSync::LocationFSxOpenZFS</code>  </li><li>  <code>AWS::DataSync::LocationSMB</code>  </li><li>  <code>AWS::DataSync::LocationFSxWindows</code>  </li><li>  <code>AWS::DataSync::LocationAzureBlob</code>  </li><li>  <code>AWS::DataSync::LocationHDFS</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>datasync:task</code> </td><td> <ul><li>  <code>AWS::DataSync::Task</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>datasync:task/execution</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>datasync:agent</code> </td><td> <ul><li>  <code>AWS::DataSync::Agent</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>datasync:system/job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>datasync:system</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="13"> <code>AWS Database Migration Service [dms]</code> </td><td> <code>dms:assessment-run</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>dms:subgrp</code> </td><td> <ul><li>  <code>AWS::DMS::ReplicationSubnetGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>dms:es</code> </td><td> <ul><li>  <code>AWS::DMS::EventSubscription</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>dms:replication-config</code> </td><td> <ul><li>  <code>AWS::DMS::ReplicationConfig</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>dms:cert</code> </td><td> <ul><li>  <code>AWS::DMS::Certificate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>dms:rep</code> </td><td> <ul><li>  <code>AWS::DMS::ReplicationInstance</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>dms:instance-profile</code> </td><td> <ul><li>  <code>AWS::DMS::InstanceProfile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>dms:task</code> </td><td> <ul><li>  <code>AWS::DMS::ReplicationTask</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>dms:endpoint</code> </td><td> <ul><li>  <code>AWS::DMS::Endpoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>dms:data-migration</code> </td><td> <ul><li>  <code>AWS::DMS::DataMigration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>dms:data-provider</code> </td><td> <ul><li>  <code>AWS::DMS::DataProvider</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>dms:migration-project</code> </td><td> <ul><li>  <code>AWS::DMS::MigrationProject</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>dms:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS Deadline Cloud [deadline]</code> </td><td> <code>deadline:license-endpoint</code> </td><td> <ul><li>  <code>AWS::Deadline::LicenseEndpoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>deadline:farm</code> </td><td> <ul><li>  <code>AWS::Deadline::Farm</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>deadline:monitor</code> </td><td> <ul><li>  <code>AWS::Deadline::Monitor</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS DeepComposer [deepcomposer]</code> </td><td> <code>deepcomposer:composition</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>deepcomposer:model</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="6"> <code>AWS DeepRacer [deepracer]</code> </td><td> <code>deepracer:leaderboard_evaluation_job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>deepracer:leaderboard</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>deepracer:model</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>deepracer:training_job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>deepracer:evaluation_job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>deepracer:car</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="11"> <code>AWS Device Farm [devicefarm]</code> </td><td> <code>devicefarm:device</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>devicefarm:testgrid-project</code> </td><td> <ul><li>  <code>AWS::DeviceFarm::TestGridProject</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>devicefarm:deviceinstance</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>devicefarm:devicepool</code> </td><td> <ul><li>  <code>AWS::DeviceFarm::DevicePool</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>devicefarm:project</code> </td><td> <ul><li>  <code>AWS::DeviceFarm::Project</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>devicefarm:testgrid-session</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>devicefarm:session</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>devicefarm:instanceprofile</code> </td><td> <ul><li>  <code>AWS::DeviceFarm::InstanceProfile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>devicefarm:networkprofile</code> </td><td> <ul><li>  <code>AWS::DeviceFarm::NetworkProfile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>devicefarm:vpceconfiguration</code> </td><td> <ul><li>  <code>AWS::DeviceFarm::VPCEConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>devicefarm:run</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS Diode Messaging [diode-messaging]</code> </td><td> <code>diode-messaging:responding-flow</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>diode-messaging:mapping</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>diode-messaging:requesting-flow</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Diode [diode]</code> </td><td> <code>diode:transfer</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>diode:account-mapping</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="5"> <code>AWS Direct Connect [directconnect]</code> </td><td> <code>directconnect:dxvif</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>directconnect:dxlag</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>directconnect:dxcon</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>directconnect:dx-gateway</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>directconnect:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>AWS Directory Service [ds]</code> </td><td> <code>ds:directory</code> </td><td> <ul><li>  <code>AWS::DirectoryService::MicrosoftAD</code>  </li><li>  <code>AWS::DirectoryService::SimpleAD</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="6"> <code>AWS Elastic Beanstalk [elasticbeanstalk]</code> </td><td> <code>elasticbeanstalk:platform</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>elasticbeanstalk:configurationtemplate</code> </td><td> <ul><li>  <code>AWS::ElasticBeanstalk::ConfigurationTemplate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>elasticbeanstalk:application</code> </td><td> <ul><li>  <code>AWS::ElasticBeanstalk::Application</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>elasticbeanstalk:environment</code> </td><td> <ul><li>  <code>AWS::ElasticBeanstalk::Environment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>elasticbeanstalk:applicationversion</code> </td><td> <ul><li>  <code>AWS::ElasticBeanstalk::ApplicationVersion</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>elasticbeanstalk:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="6"> <code>AWS Elastic Disaster Recovery [drs]</code> </td><td> <code>drs:job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>drs:source-network</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>drs:replication-configuration-template</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>drs:source-server</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>drs:launch-configuration-template</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>drs:recovery-instance</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="6"> <code>AWS Elastic Load Balancing [elasticloadbalancing]</code> </td><td> <code>elasticloadbalancing:loadbalancer</code> </td><td> <ul><li>  <code>AWS::ElasticLoadBalancingV2::LoadBalancer</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>elasticloadbalancing:targetgroup</code> </td><td> <ul><li>  <code>AWS::ElasticLoadBalancingV2::TargetGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>elasticloadbalancing:loadbalancer</code> </td><td> <ul><li>  <code>AWS::ElasticLoadBalancing::LoadBalancer</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>elasticloadbalancing:listener</code> </td><td> <ul><li>  <code>AWS::ElasticLoadBalancingV2::Listener</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>elasticloadbalancing:truststore</code> </td><td> <ul><li>  <code>AWS::ElasticLoadBalancingV2::TrustStore</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>elasticloadbalancing:listener-rule</code> </td><td> <ul><li>  <code>AWS::ElasticLoadBalancingV2::ListenerRule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>AWS Elemental Appliances and Software [elemental-appliances-software]</code> </td><td> <code>elemental-appliances-software:quote</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="8"> <code>AWS Elemental MediaConnect [mediaconnect]</code> </td><td> <code>mediaconnect:routeroutput</code> </td><td> <ul><li>  <code>AWS::MediaConnect::RouterOutput</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>mediaconnect:source</code> </td><td> <ul><li>  <code>AWS::MediaConnect::FlowSource</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>mediaconnect:output</code> </td><td> <ul><li>  <code>AWS::MediaConnect::FlowOutput</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>mediaconnect:entitlement</code> </td><td> <ul><li>  <code>AWS::MediaConnect::FlowEntitlement</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>mediaconnect:flow</code> </td><td> <ul><li>  <code>AWS::MediaConnect::Flow</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>mediaconnect:routernetworkinterface</code> </td><td> <ul><li>  <code>AWS::MediaConnect::RouterNetworkInterface</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>mediaconnect:flow/vpcinterface</code> </td><td> <ul><li>  <code>AWS::MediaConnect::FlowVpcInterface</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>mediaconnect:routerinput</code> </td><td> <ul><li>  <code>AWS::MediaConnect::RouterInput</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS Elemental MediaConvert [mediaconvert]</code> </td><td> <code>mediaconvert:queues</code> </td><td> <ul><li>  <code>AWS::MediaConvert::Queue</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>mediaconvert:presets</code> </td><td> <ul><li>  <code>AWS::MediaConvert::Preset</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>mediaconvert:jobtemplates</code> </td><td> <ul><li>  <code>AWS::MediaConvert::JobTemplate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>mediaconvert:jobs</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="15"> <code>AWS Elemental MediaLive [medialive]</code> </td><td> <code>medialive:node</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>medialive:sdisource</code> </td><td> <ul><li>  <code>AWS::MediaLive::SdiSource</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>medialive:reservation</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>medialive:signal-map</code> </td><td> <ul><li>  <code>AWS::MediaLive::SignalMap</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>medialive:network</code> </td><td> <ul><li>  <code>AWS::MediaLive::Network</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>medialive:cloudwatch-alarm-template</code> </td><td> <ul><li>  <code>AWS::MediaLive::CloudWatchAlarmTemplate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>medialive:eventbridge-rule-template</code> </td><td> <ul><li>  <code>AWS::MediaLive::EventBridgeRuleTemplate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>medialive:multiplex</code> </td><td> <ul><li>  <code>AWS::MediaLive::Multiplex</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>medialive:cloudwatch-alarm-template-group</code> </td><td> <ul><li>  <code>AWS::MediaLive::CloudWatchAlarmTemplateGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>medialive:eventbridge-rule-template-group</code> </td><td> <ul><li>  <code>AWS::MediaLive::EventBridgeRuleTemplateGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>medialive:channel</code> </td><td> <ul><li>  <code>AWS::MediaLive::Channel</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>medialive:channelplacementgroup</code> </td><td> <ul><li>  <code>AWS::MediaLive::ChannelPlacementGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>medialive:inputsecuritygroup</code> </td><td> <ul><li>  <code>AWS::MediaLive::InputSecurityGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>medialive:input</code> </td><td> <ul><li>  <code>AWS::MediaLive::Input</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>medialive:inputdevice</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="5"> <code>AWS Elemental MediaPackage V2 [mediapackagev2]</code> </td><td> <code>mediapackagev2:channelGroup/channel/originEndpoint</code> </td><td> <ul><li>  <code>AWS::MediaPackageV2::OriginEndpoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>mediapackagev2:channelgroup/channel/originendpoint</code> </td><td> <ul><li>  <code>AWS::MediaPackageV2::OriginEndpoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>mediapackagev2:channelgroup</code> </td><td> <ul><li>  <code>AWS::MediaPackageV2::ChannelGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>mediapackagev2:channelGroup/channel</code> </td><td> <ul><li>  <code>AWS::MediaPackageV2::Channel</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>mediapackagev2:channelgroup/channel</code> </td><td> <ul><li>  <code>AWS::MediaPackageV2::Channel</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS Elemental MediaPackage [mediapackage-vod]</code> </td><td> <code>mediapackage-vod:packaging-configurations</code> </td><td> <ul><li>  <code>AWS::MediaPackage::PackagingConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>mediapackage-vod:assets</code> </td><td> <ul><li>  <code>AWS::MediaPackage::Asset</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>mediapackage-vod:packaging-groups</code> </td><td> <ul><li>  <code>AWS::MediaPackage::PackagingGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Elemental MediaPackage [mediapackage]</code> </td><td> <code>mediapackage:channels</code> </td><td> <ul><li>  <code>AWS::MediaPackage::Channel</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>mediapackage:origin_endpoints</code> </td><td> <ul><li>  <code>AWS::MediaPackage::OriginEndpoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS Elemental MediaStore [mediastore]</code> </td><td> <code>mediastore:folder</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>mediastore:container</code> </td><td> <ul><li>  <code>AWS::MediaStore::Container</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>mediastore:object</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>mediastore:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="5"> <code>AWS Elemental MediaTailor [mediatailor]</code> </td><td> <code>mediatailor:playbackconfiguration</code> </td><td> <ul><li>  <code>AWS::MediaTailor::PlaybackConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>mediatailor:sourcelocation</code> </td><td> <ul><li>  <code>AWS::MediaTailor::SourceLocation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>mediatailor:livesource</code> </td><td> <ul><li>  <code>AWS::MediaTailor::LiveSource</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>mediatailor:vodsource</code> </td><td> <ul><li>  <code>AWS::MediaTailor::VodSource</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>mediatailor:channel</code> </td><td> <ul><li>  <code>AWS::MediaTailor::Channel</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>AWS Elemental Support Cases [elemental-support-cases]</code> </td><td> <code>elemental-support-cases:case</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS End User Messaging Social [social-messaging]</code> </td><td> <code>social-messaging:waba</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>social-messaging:phone-number-id</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="5"> <code>AWS Entity Resolution [entityresolution]</code> </td><td> <code>entityresolution:schemamapping</code> </td><td> <ul><li>  <code>AWS::EntityResolution::SchemaMapping</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>entityresolution:matchingworkflow</code> </td><td> <ul><li>  <code>AWS::EntityResolution::MatchingWorkflow</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>entityresolution:idnamespace</code> </td><td> <ul><li>  <code>AWS::EntityResolution::IdNamespace</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>entityresolution:idmappingworkflow</code> </td><td> <ul><li>  <code>AWS::EntityResolution::IdMappingWorkflow</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>entityresolution:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS Fault Injection Service [fis]</code> </td><td> <code>fis:action</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>fis:experiment-template</code> </td><td> <ul><li>  <code>AWS::FIS::ExperimentTemplate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>fis:experiment</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS Firewall Manager [fms]</code> </td><td> <code>fms:applications-list</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>fms:protocols-list</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>fms:policy</code> </td><td> <ul><li>  <code>AWS::FMS::Policy</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>fms:resource-set</code> </td><td> <ul><li>  <code>AWS::FMS::ResourceSet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Global Accelerator [globalaccelerator]</code> </td><td> <code>globalaccelerator:accelerator</code> </td><td> <ul><li>  <code>AWS::GlobalAccelerator::Accelerator</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>globalaccelerator:attachment</code> </td><td> <ul><li>  <code>AWS::GlobalAccelerator::CrossAccountAttachment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="6"> <code>AWS Glue DataBrew [databrew]</code> </td><td> <code>databrew:job</code> </td><td> <ul><li>  <code>AWS::DataBrew::Job</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>databrew:recipe</code> </td><td> <ul><li>  <code>AWS::DataBrew::Recipe</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>databrew:schedule</code> </td><td> <ul><li>  <code>AWS::DataBrew::Schedule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>databrew:project</code> </td><td> <ul><li>  <code>AWS::DataBrew::Project</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>databrew:ruleset</code> </td><td> <ul><li>  <code>AWS::DataBrew::Ruleset</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>databrew:dataset</code> </td><td> <ul><li>  <code>AWS::DataBrew::Dataset</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="19"> <code>AWS Glue [glue]</code> </td><td> <code>glue:workflow</code> </td><td> <ul><li>  <code>AWS::Glue::Workflow</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>glue:integrationresourceproperty</code> </td><td> <ul><li>  <code>AWS::Glue::IntegrationResourceProperty</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>glue:integration</code> </td><td> <ul><li>  <code>AWS::Glue::Integration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>glue:blueprint</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>glue:completion</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>glue:usageprofile</code> </td><td> <ul><li>  <code>AWS::Glue::UsageProfile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>glue:job</code> </td><td> <ul><li>  <code>AWS::Glue::Job</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>glue:session</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>glue:trigger</code> </td><td> <ul><li>  <code>AWS::Glue::Trigger</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>glue:catalog</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>glue:devendpoint</code> </td><td> <ul><li>  <code>AWS::Glue::DevEndpoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>glue:dataqualityruleset</code> </td><td> <ul><li>  <code>AWS::Glue::DataQualityRuleset</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>glue:mltransform</code> </td><td> <ul><li>  <code>AWS::Glue::MLTransform</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>glue:connection</code> </td><td> <ul><li>  <code>AWS::Glue::Connection</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>glue:crawler</code> </td><td> <ul><li>  <code>AWS::Glue::Crawler</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>glue:registry</code> </td><td> <ul><li>  <code>AWS::Glue::Registry</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>glue:schema</code> </td><td> <ul><li>  <code>AWS::Glue::Schema</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>glue:customentitytype</code> </td><td> <ul><li>  <code>AWS::Glue::CustomEntityType</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>glue:database</code> </td><td> <ul><li>  <code>AWS::Glue::Database</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="6"> <code>AWS Ground Station [groundstation]</code> </td><td> <code>groundstation:contact</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>groundstation:mission-profile</code> </td><td> <ul><li>  <code>AWS::GroundStation::MissionProfile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>groundstation:ephemeris</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>groundstation:satellite</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>groundstation:config</code> </td><td> <ul><li>  <code>AWS::GroundStation::Config</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>groundstation:dataflow-endpoint-group</code> </td><td> <ul><li>  <code>AWS::GroundStation::DataflowEndpointGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS HealthImaging [medical-imaging]</code> </td><td> <code>medical-imaging:datastore</code> </td><td> <ul><li>  <code>AWS::HealthImaging::Datastore</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>medical-imaging:datastore/imageset</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS HealthLake [healthlake]</code> </td><td> <code>healthlake:datastore</code> </td><td> <ul><li>  <code>AWS::HealthLake::FHIRDatastore</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>healthlake:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="13"> <code>AWS HealthOmics [omics]</code> </td><td> <code>omics:annotationstore</code> </td><td> <ul><li>  <code>AWS::Omics::AnnotationStore</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>omics:sequencestore/readset</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>omics:referencestore/reference</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>omics:run</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>omics:runcache</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>omics:sequencestore</code> </td><td> <ul><li>  <code>AWS::Omics::SequenceStore</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>omics:variantstore</code> </td><td> <ul><li>  <code>AWS::Omics::VariantStore</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>omics:rungroup</code> </td><td> <ul><li>  <code>AWS::Omics::RunGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>omics:workflow</code> </td><td> <ul><li>  <code>AWS::Omics::Workflow</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>omics:referencestore</code> </td><td> <ul><li>  <code>AWS::Omics::ReferenceStore</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>omics:annotationstore/version</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>omics:workflow/version</code> </td><td> <ul><li>  <code>AWS::Omics::WorkflowVersion</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>omics:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>AWS IAM Access Analyzer [access-analyzer]</code> </td><td> <code>access-analyzer:analyzer</code> </td><td> <ul><li>  <code>AWS::AccessAnalyzer::Analyzer</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS IAM Identity Center [sso]</code> </td><td> <code>sso:permissionset</code> </td><td> <ul><li>  <code>AWS::SSO::PermissionSet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sso:application</code> </td><td> <ul><li>  <code>AWS::SSO::Application</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sso:instance</code> </td><td> <ul><li>  <code>AWS::SSO::Instance</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sso:trustedtokenissuer</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="9"> <code>AWS Identity and Access Management (IAM) [iam]</code> </td><td> <code>iam:mfa</code> </td><td> <ul><li>  <code>AWS::IAM::VirtualMFADevice</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iam:server-certificate</code> </td><td> <ul><li>  <code>AWS::IAM::ServerCertificate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iam:saml-provider</code> </td><td> <ul><li>  <code>AWS::IAM::SAMLProvider</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iam:oidc-provider</code> </td><td> <ul><li>  <code>AWS::IAM::OIDCProvider</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iam:policy</code> </td><td> <ul><li>  <code>AWS::IAM::ManagedPolicy</code>  </li><li>  <code>AWS::IAM::Policy</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iam:role</code> </td><td> <ul><li>  <code>AWS::IAM::Role</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iam:user</code> </td><td> <ul><li>  <code>AWS::IAM::User</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iam:instance-profile</code> </td><td> <ul><li>  <code>AWS::IAM::InstanceProfile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iam:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS Identity and Access Management Roles Anywhere [nile]</code> </td><td> <code>nile:trust-anchor</code> </td><td> <ul><li>  <code>AWS::RolesAnywhere::TrustAnchor</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>nile:crl</code> </td><td> <ul><li>  <code>AWS::RolesAnywhere::CRL</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>nile:subject</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>nile:profile</code> </td><td> <ul><li>  <code>AWS::RolesAnywhere::Profile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Invoicing Service [invoicing]</code> </td><td> <code>invoicing:procurement-portal-preference</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>invoicing:invoice-unit</code> </td><td> <ul><li>  <code>AWS::Invoicing::InvoiceUnit</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="5"> <code>AWS IoT Analytics [iotanalytics]</code> </td><td> <code>iotanalytics:channel</code> </td><td> <ul><li>  <code>AWS::IoTAnalytics::Channel</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotanalytics:dataset</code> </td><td> <ul><li>  <code>AWS::IoTAnalytics::Dataset</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotanalytics:datastore</code> </td><td> <ul><li>  <code>AWS::IoTAnalytics::Datastore</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotanalytics:pipeline</code> </td><td> <ul><li>  <code>AWS::IoTAnalytics::Pipeline</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotanalytics:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS IoT Core Device Advisor [iotdeviceadvisor]</code> </td><td> <code>iotdeviceadvisor:suiterun</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotdeviceadvisor:suitedefinition</code> </td><td> <ul><li>  <code>AWS::IoTCoreDeviceAdvisor::SuiteDefinition</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS IoT Events [iotevents]</code> </td><td> <code>iotevents:detectormodel</code> </td><td> <ul><li>  <code>AWS::IoTEvents::DetectorModel</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotevents:input</code> </td><td> <ul><li>  <code>AWS::IoTEvents::Input</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotevents:alarmmodel</code> </td><td> <ul><li>  <code>AWS::IoTEvents::AlarmModel</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotevents:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS IoT Fleet Hub for Device Management [iotfleethub]</code> </td><td> <code>iotfleethub:application</code> </td><td> <ul><li>  <code>AWS::IoTFleetHub::Application</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotfleethub:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="7"> <code>AWS IoT FleetWise [iotfleetwise]</code> </td><td> <code>iotfleetwise:model-manifest</code> </td><td> <ul><li>  <code>AWS::IoTFleetWise::ModelManifest</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotfleetwise:vehicle</code> </td><td> <ul><li>  <code>AWS::IoTFleetWise::Vehicle</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotfleetwise:decoder-manifest</code> </td><td> <ul><li>  <code>AWS::IoTFleetWise::DecoderManifest</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotfleetwise:state-template</code> </td><td> <ul><li>  <code>AWS::IoTFleetWise::StateTemplate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotfleetwise:fleet</code> </td><td> <ul><li>  <code>AWS::IoTFleetWise::Fleet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotfleetwise:signal-catalog</code> </td><td> <ul><li>  <code>AWS::IoTFleetWise::SignalCatalog</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotfleetwise:campaign</code> </td><td> <ul><li>  <code>AWS::IoTFleetWise::Campaign</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="14"> <code>AWS IoT Greengrass [greengrass]</code> </td><td> <code>greengrass:coresdefinition</code> </td><td> <ul><li>  <code>AWS::Greengrass::CoreDefinition</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>greengrass:components:versions</code> </td><td> <ul><li>  <code>AWS::GreengrassV2::ComponentVersion</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>greengrass:devicesdefinition</code> </td><td> <ul><li>  <code>AWS::Greengrass::DeviceDefinition</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>greengrass:connectorsdefinition</code> </td><td> <ul><li>  <code>AWS::Greengrass::ConnectorDefinition</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>greengrass:deployments</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>greengrass:functionsdefinition</code> </td><td> <ul><li>  <code>AWS::Greengrass::FunctionDefinition</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>greengrass:bulk</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>greengrass:resourcesdefinition</code> </td><td> <ul><li>  <code>AWS::Greengrass::ResourceDefinition</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>greengrass:components</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>greengrass:groups</code> </td><td> <ul><li>  <code>AWS::Greengrass::Group</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>greengrass:loggersdefinition</code> </td><td> <ul><li>  <code>AWS::Greengrass::LoggerDefinition</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>greengrass:coredevices</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>greengrass:subscriptionsdefinition</code> </td><td> <ul><li>  <code>AWS::Greengrass::SubscriptionDefinition</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>greengrass:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="6"> <code>AWS IoT Managed Integrations [iotmanagedintegrations]</code> </td><td> <code>iotmanagedintegrations:ota-task</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotmanagedintegrations:managed-thing</code> </td><td> <ul><li>  <code>AWS::IoTManagedIntegrations::ManagedThing</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotmanagedintegrations:cloud-connector</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotmanagedintegrations:account-association</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotmanagedintegrations:provisioning-profile</code> </td><td> <ul><li>  <code>AWS::IoTManagedIntegrations::ProvisioningProfile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotmanagedintegrations:credential-locker</code> </td><td> <ul><li>  <code>AWS::IoTManagedIntegrations::CredentialLocker</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="11"> <code>AWS IoT SiteWise [iotsitewise]</code> </td><td> <code>iotsitewise:portal</code> </td><td> <ul><li>  <code>AWS::IoTSiteWise::Portal</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotsitewise:dashboard</code> </td><td> <ul><li>  <code>AWS::IoTSiteWise::Dashboard</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotsitewise:project</code> </td><td> <ul><li>  <code>AWS::IoTSiteWise::Project</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotsitewise:asset</code> </td><td> <ul><li>  <code>AWS::IoTSiteWise::Asset</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotsitewise:dataset</code> </td><td> <ul><li>  <code>AWS::IoTSiteWise::Dataset</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotsitewise:time-series</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotsitewise:computation-model</code> </td><td> <ul><li>  <code>AWS::IoTSiteWise::ComputationModel</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotsitewise:asset-model</code> </td><td> <ul><li>  <code>AWS::IoTSiteWise::AssetModel</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotsitewise:gateway</code> </td><td> <ul><li>  <code>AWS::IoTSiteWise::Gateway</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotsitewise:access-policy</code> </td><td> <ul><li>  <code>AWS::IoTSiteWise::AccessPolicy</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotsitewise:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="5"> <code>AWS IoT TwinMaker [iotdigitaltwin]</code> </td><td> <code>iotdigitaltwin:workspace</code> </td><td> <ul><li>  <code>AWS::IoTTwinMaker::Workspace</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotdigitaltwin:workspace/component-type</code> </td><td> <ul><li>  <code>AWS::IoTTwinMaker::ComponentType</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotdigitaltwin:workspace/scene</code> </td><td> <ul><li>  <code>AWS::IoTTwinMaker::Scene</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotdigitaltwin:workspace/sync-job</code> </td><td> <ul><li>  <code>AWS::IoTTwinMaker::SyncJob</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotdigitaltwin:entity</code> </td><td> <ul><li>  <code>AWS::IoTTwinMaker::Entity</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="11"> <code>AWS IoT Wireless [iotwireless]</code> </td><td> <code>iotwireless:sidewalkaccount</code> </td><td> <ul><li>  <code>AWS::IoTWireless::PartnerAccount</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotwireless:networkanalyzerconfiguration</code> </td><td> <ul><li>  <code>AWS::IoTWireless::NetworkAnalyzerConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotwireless:serviceprofile</code> </td><td> <ul><li>  <code>AWS::IoTWireless::ServiceProfile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotwireless:multicastgroup</code> </td><td> <ul><li>  <code>AWS::IoTWireless::MulticastGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotwireless:wirelessgateway</code> </td><td> <ul><li>  <code>AWS::IoTWireless::WirelessGateway</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotwireless:wirelessdevice</code> </td><td> <ul><li>  <code>AWS::IoTWireless::WirelessDevice</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotwireless:destination</code> </td><td> <ul><li>  <code>AWS::IoTWireless::Destination</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotwireless:fuotatask</code> </td><td> <ul><li>  <code>AWS::IoTWireless::FuotaTask</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotwireless:importtask</code> </td><td> <ul><li>  <code>AWS::IoTWireless::WirelessDeviceImportTask</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotwireless:wirelessgatewaytaskdefinition</code> </td><td> <ul><li>  <code>AWS::IoTWireless::TaskDefinition</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iotwireless:deviceprofile</code> </td><td> <ul><li>  <code>AWS::IoTWireless::DeviceProfile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="25"> <code>AWS IoT [iot]</code> </td><td> <code>iot:package</code> </td><td> <ul><li>  <code>AWS::IoT::SoftwarePackage</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iot:authorizer</code> </td><td> <ul><li>  <code>AWS::IoT::Authorizer</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iot:package/version</code> </td><td> <ul><li>  <code>AWS::IoT::SoftwarePackageVersion</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iot:fleetmetric</code> </td><td> <ul><li>  <code>AWS::IoT::FleetMetric</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iot:jobtemplate</code> </td><td> <ul><li>  <code>AWS::IoT::JobTemplate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iot:billinggroup</code> </td><td> <ul><li>  <code>AWS::IoT::BillingGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iot:provisioningtemplate</code> </td><td> <ul><li>  <code>AWS::IoT::ProvisioningTemplate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iot:thingtype</code> </td><td> <ul><li>  <code>AWS::IoT::ThingType</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iot:thinggroup</code> </td><td> <ul><li>  <code>AWS::IoT::ThingGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iot:certificateprovider</code> </td><td> <ul><li>  <code>AWS::IoT::CertificateProvider</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iot:rolealias</code> </td><td> <ul><li>  <code>AWS::IoT::RoleAlias</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iot:cacert</code> </td><td> <ul><li>  <code>AWS::IoT::CACertificate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iot:custommetric</code> </td><td> <ul><li>  <code>AWS::IoT::CustomMetric</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iot:domainconfiguration</code> </td><td> <ul><li>  <code>AWS::IoT::DomainConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iot:policy</code> </td><td> <ul><li>  <code>AWS::IoT::Policy</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iot:mitigationaction</code> </td><td> <ul><li>  <code>AWS::IoT::MitigationAction</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iot:securityprofile</code> </td><td> <ul><li>  <code>AWS::IoT::SecurityProfile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iot:rule</code> </td><td> <ul><li>  <code>AWS::IoT::TopicRule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iot:scheduledaudit</code> </td><td> <ul><li>  <code>AWS::IoT::ScheduledAudit</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iot:tunnel</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iot:stream</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iot:job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iot:otaupdate</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iot:command</code> </td><td> <ul><li>  <code>AWS::IoT::Command</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iot:dimension</code> </td><td> <ul><li>  <code>AWS::IoT::Dimension</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Key Management Service [kms]</code> </td><td> <code>kms:key</code> </td><td> <ul><li>  <code>AWS::KMS::Key</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>kms:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="7"> <code>AWS Lambda [lambda]</code> </td><td> <code>lambda:layer/version</code> </td><td> <ul><li>  <code>AWS::Lambda::LayerVersion</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>lambda:layerversion</code> </td><td> <ul><li>  <code>AWS::Lambda::LayerVersion</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>lambda:layer</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>lambda:function</code> </td><td> <ul><li>  <code>AWS::Lambda::Function</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>lambda:event-source-mapping</code> </td><td> <ul><li>  <code>AWS::Lambda::EventSourceMapping</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>lambda:code-signing-config</code> </td><td> <ul><li>  <code>AWS::Lambda::CodeSigningConfig</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>lambda:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>AWS Launch Wizard [launchwizard]</code> </td><td> <code>launchwizard:deployment</code> </td><td> <ul><li>  <code>AWS::LaunchWizard::Deployment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>AWS License Manager Linux Subscriptions Manager [license-manager-linux-subscriptions]</code> </td><td> <code>license-manager-linux-subscriptions:subscription-provider</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS License Manager User Subscriptions [license-manager-user-subscriptions]</code> </td><td> <code>license-manager-user-subscriptions:product-subscription</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>license-manager-user-subscriptions:identity-provider</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>license-manager-user-subscriptions:instance-user</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>license-manager-user-subscriptions:license-server-endpoint</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="6"> <code>AWS License Manager [license-manager]</code> </td><td> <code>license-manager:license-asset-group</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>license-manager:license</code> </td><td> <ul><li>  <code>AWS::LicenseManager::License</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>license-manager:license-asset-ruleset</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>license-manager:license-configuration</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>license-manager:report-generator</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>license-manager:grant</code> </td><td> <ul><li>  <code>AWS::LicenseManager::Grant</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>AWS MWAA Serverless [airflow-serverless]</code> </td><td> <code>airflow-serverless:workflow</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS Mainframe Modernization Application Testing [apptest]</code> </td><td> <code>apptest:testsuite</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>apptest:testconfiguration</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>apptest:testcase</code> </td><td> <ul><li>  <code>AWS::AppTest::TestCase</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>apptest:testrun</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Mainframe Modernization Service [m2]</code> </td><td> <code>m2:app</code> </td><td> <ul><li>  <code>AWS::M2::Application</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>m2:env</code> </td><td> <ul><li>  <code>AWS::M2::Environment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Marketplace Vendor Insights [vendor-insights]</code> </td><td> <code>vendor-insights:security-profile</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>vendor-insights:data-source</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Marketplace [aws-marketplace]</code> </td><td> <code>aws-marketplace:deploymentparameter</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>aws-marketplace:changeset</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Migration Hub Orchestrator [migrationhub-orchestrator]</code> </td><td> <code>migrationhub-orchestrator:workflow</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>migrationhub-orchestrator:template</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS Migration Hub Refactor Spaces [refactor-spaces]</code> </td><td> <code>refactor-spaces:environment/application</code> </td><td> <ul><li>  <code>AWS::RefactorSpaces::Application</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>refactor-spaces:environment/application/service</code> </td><td> <ul><li>  <code>AWS::RefactorSpaces::Service</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>refactor-spaces:environment</code> </td><td> <ul><li>  <code>AWS::RefactorSpaces::Environment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>refactor-spaces:environment/application/route</code> </td><td> <ul><li>  <code>AWS::RefactorSpaces::Route</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="6"> <code>AWS Network Firewall [network-firewall]</code> </td><td> <code>network-firewall:stateless-rulegroup</code> </td><td> <ul><li>  <code>AWS::NetworkFirewall::RuleGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>network-firewall:vpc-endpoint-association</code> </td><td> <ul><li>  <code>AWS::NetworkFirewall::VpcEndpointAssociation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>network-firewall:firewall</code> </td><td> <ul><li>  <code>AWS::NetworkFirewall::Firewall</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>network-firewall:stateful-rulegroup</code> </td><td> <ul><li>  <code>AWS::NetworkFirewall::RuleGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>network-firewall:firewall-policy</code> </td><td> <ul><li>  <code>AWS::NetworkFirewall::FirewallPolicy</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>network-firewall:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="9"> <code>AWS Network Manager [networkmanager]</code> </td><td> <code>networkmanager:peering</code> </td><td> <ul><li>  <code>AWS::NetworkManager::TransitGatewayPeering</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>networkmanager:global-network</code> </td><td> <ul><li>  <code>AWS::NetworkManager::GlobalNetwork</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>networkmanager:link</code> </td><td> <ul><li>  <code>AWS::NetworkManager::Link</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>networkmanager:core-network</code> </td><td> <ul><li>  <code>AWS::NetworkManager::CoreNetwork</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>networkmanager:device</code> </td><td> <ul><li>  <code>AWS::NetworkManager::Device</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>networkmanager:connect-peer</code> </td><td> <ul><li>  <code>AWS::NetworkManager::ConnectPeer</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>networkmanager:attachment</code> </td><td> <ul><li>  <code>AWS::NetworkManager::VpcAttachment</code>  </li><li>  <code>AWS::NetworkManager::ConnectAttachment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>networkmanager:site</code> </td><td> <ul><li>  <code>AWS::NetworkManager::Site</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>networkmanager:connection</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS OpsWorks Configuration Management [opsworks-cm]</code> </td><td> <code>opsworks-cm:server</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>opsworks-cm:backup</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS OpsWorks [opsworks]</code> </td><td> <code>opsworks:instance</code> </td><td> <ul><li>  <code>AWS::OpsWorks::Instance</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>opsworks:stack</code> </td><td> <ul><li>  <code>AWS::OpsWorks::Stack</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>opsworks:layer</code> </td><td> <ul><li>  <code>AWS::OpsWorks::Layer</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="6"> <code>AWS Organizations [organizations]</code> </td><td> <code>organizations:account</code> </td><td> <ul><li>  <code>AWS::Organizations::Account</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>organizations:ou</code> </td><td> <ul><li>  <code>AWS::Organizations::OrganizationalUnit</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>organizations:resourcepolicy</code> </td><td> <ul><li>  <code>AWS::Organizations::ResourcePolicy</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>organizations:root</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>organizations:policy</code> </td><td> <ul><li>  <code>AWS::Organizations::Policy</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>organizations:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Outposts [outposts]</code> </td><td> <code>outposts:site</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>outposts:outpost</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS Panorama [panorama]</code> </td><td> <code>panorama:package</code> </td><td> <ul><li>  <code>AWS::Panorama::Package</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>panorama:applicationinstance</code> </td><td> <ul><li>  <code>AWS::Panorama::ApplicationInstance</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>panorama:device</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS Parallel Computing Service [pcs]</code> </td><td> <code>pcs:cluster</code> </td><td> <ul><li>  <code>AWS::PCS::Cluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>pcs:queue</code> </td><td> <ul><li>  <code>AWS::PCS::Queue</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>pcs:computenodegroup</code> </td><td> <ul><li>  <code>AWS::PCS::ComputeNodeGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS Partner Central Selling [partnercentral]</code> </td><td> <code>partnercentral:opportunity</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>partnercentral:engagement-by-accepting-invitation-task</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>partnercentral:engagement-from-opportunity-task</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>AWS Payment Cryptography [payment-cryptography]</code> </td><td> <code>payment-cryptography:key</code> </td><td> <ul><li>  <code>AWS::PaymentCryptography::Key</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>AWS Payments [payments]</code> </td><td> <code>payments:payment-instrument</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>AWS Performance Insights [pi]</code> </td><td> <code>pi:perf-reports</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS Private CA Connector for Active Directory [pca-connector-ad]</code> </td><td> <code>pca-connector-ad:connector</code> </td><td> <ul><li>  <code>AWS::PCAConnectorAD::Connector</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>pca-connector-ad:connector/template</code> </td><td> <ul><li>  <code>AWS::PCAConnectorAD::Template</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>pca-connector-ad:directory-registration</code> </td><td> <ul><li>  <code>AWS::PCAConnectorAD::DirectoryRegistration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>AWS Private CA Connector for SCEP [pca-connector-scep]</code> </td><td> <code>pca-connector-scep:connector</code> </td><td> <ul><li>  <code>AWS::PCAConnectorSCEP::Connector</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Private Certificate Authority [acm-pca]</code> </td><td> <code>acm-pca:certificate-authority</code> </td><td> <ul><li>  <code>AWS::ACMPCA::CertificateAuthority</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>acm-pca:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="9"> <code>AWS Proton [proton]</code> </td><td> <code>proton:environment-template</code> </td><td> <ul><li>  <code>AWS::Proton::EnvironmentTemplate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>proton:environment</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>proton:service/service-instance</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>proton:repository</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>proton:component</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>proton:environment-account-connection</code> </td><td> <ul><li>  <code>AWS::Proton::EnvironmentAccountConnection</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>proton:service</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>proton:deployment</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>proton:service-template</code> </td><td> <ul><li>  <code>AWS::Proton::ServiceTemplate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>AWS Purchase Orders Console [purchase-orders]</code> </td><td> <code>purchase-orders:purchase-order</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS RTB Fabric [rtbfabric]</code> </td><td> <code>rtbfabric:requestergateway</code> </td><td> <ul><li>  <code>AWS::RTBFabric::RequesterGateway</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>rtbfabric:respondergateway</code> </td><td> <ul><li>  <code>AWS::RTBFabric::ResponderGateway</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Recycle Bin [rbin]</code> </td><td> <code>rbin:rule</code> </td><td> <ul><li>  <code>AWS::Rbin::Rule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rbin:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS Resilience Hub [resiliencehub]</code> </td><td> <code>resiliencehub:app-assessment</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>resiliencehub:resiliency-policy</code> </td><td> <ul><li>  <code>AWS::ResilienceHub::ResiliencyPolicy</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>resiliencehub:recommendation-template</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>resiliencehub:app</code> </td><td> <ul><li>  <code>AWS::ResilienceHub::App</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS Resource Access Manager (RAM) [ram]</code> </td><td> <code>ram:resource-share</code> </td><td> <ul><li>  <code>AWS::RAM::ResourceShare</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ram:resourceshareinvitation</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ram:permission</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ram:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Resource Groups [resource-groups]</code> </td><td> <code>resource-groups:group</code> </td><td> <ul><li>  <code>AWS::ResourceGroups::Group</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>resource-groups:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="12"> <code>AWS RoboMaker [robomaker]</code> </td><td> <code>robomaker:world-generation-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>robomaker:world-generation-jobs</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>robomaker:simulation-job-batch</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>robomaker:simulation-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>robomaker:world-template</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>robomaker:robot</code> </td><td> <ul><li>  <code>AWS::RoboMaker::Robot</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>robomaker:world-export-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>robomaker:simulation-application</code> </td><td> <ul><li>  <code>AWS::RoboMaker::SimulationApplication</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>robomaker:deployment-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>robomaker:robot-application</code> </td><td> <ul><li>  <code>AWS::RoboMaker::RobotApplication</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>robomaker:deployment-fleet</code> </td><td> <ul><li>  <code>AWS::RoboMaker::Fleet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>robomaker:world</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS SQL Workbench [sqlworkbench]</code> </td><td> <code>sqlworkbench:query</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sqlworkbench:notebook</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sqlworkbench:chart</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sqlworkbench:connection</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>AWS Savings Plans [savingsplans]</code> </td><td> <code>savingsplans:savingsplan</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Secrets Manager [secretsmanager]</code> </td><td> <code>secretsmanager:secret</code> </td><td> <ul><li>  <code>AWS::SecretsManager::Secret</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>secretsmanager:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="8"> <code>AWS Security Hub [securityhub]</code> </td><td> <code>securityhub:connectorv2</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>securityhub:automation-rulev2</code> </td><td> <ul><li>  <code>AWS::SecurityHub::AutomationRuleV2</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>securityhub:automation-rule</code> </td><td> <ul><li>  <code>AWS::SecurityHub::AutomationRule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>securityhub:aggregatorv2</code> </td><td> <ul><li>  <code>AWS::SecurityHub::AggregatorV2</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>securityhub:hubv2</code> </td><td> <ul><li>  <code>AWS::SecurityHub::HubV2</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>securityhub:product-subscription</code> </td><td> <ul><li>  <code>AWS::SecurityHub::ProductSubscription</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>securityhub:hub</code> </td><td> <ul><li>  <code>AWS::SecurityHub::Hub</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>securityhub:configuration-policy</code> </td><td> <ul><li>  <code>AWS::SecurityHub::ConfigurationPolicy</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="6"> <code>AWS Service - Oracle Database@AWS [odb]</code> </td><td> <code>odb:cloud-vm-cluster</code> </td><td> <ul><li>  <code>AWS::ODB::CloudVmCluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>odb:cloud-exadata-infrastructure</code> </td><td> <ul><li>  <code>AWS::ODB::CloudExadataInfrastructure</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>odb:db-node</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>odb:cloud-autonomous-vm-cluster</code> </td><td> <ul><li>  <code>AWS::ODB::CloudAutonomousVmCluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>odb:odb-peering-connection</code> </td><td> <ul><li>  <code>AWS::ODB::OdbPeeringConnection</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>odb:odb-network</code> </td><td> <ul><li>  <code>AWS::ODB::OdbNetwork</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS Service Catalog [catalog]</code> </td><td> <code>catalog:portfolio</code> </td><td> <ul><li>  <code>AWS::ServiceCatalog::Portfolio</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>catalog:product</code> </td><td> <ul><li>  <code>AWS::ServiceCatalog::CloudFormationProvisionedProduct</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>catalog:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS Service Catalog [servicecatalog]</code> </td><td> <code>servicecatalog:attribute-groups</code> </td><td> <ul><li>  <code>AWS::ServiceCatalogAppRegistry::AttributeGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>servicecatalog:applications</code> </td><td> <ul><li>  <code>AWS::ServiceCatalogAppRegistry::Application</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>servicecatalog:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Shield [shield]</code> </td><td> <code>shield:protection</code> </td><td> <ul><li>  <code>AWS::Shield::Protection</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>shield:protection-group</code> </td><td> <ul><li>  <code>AWS::Shield::ProtectionGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>AWS Signer [signer]</code> </td><td> <code>signer:signing-profiles</code> </td><td> <ul><li>  <code>AWS::Signer::SigningProfile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>AWS SimSpace Weaver [simspaceweaver]</code> </td><td> <code>simspaceweaver:simulation</code> </td><td> <ul><li>  <code>AWS::SimSpaceWeaver::Simulation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Snow Device Management [snow-device-management]</code> </td><td> <code>snow-device-management:task</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>snow-device-management:managed-device</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS Step Functions [states]</code> </td><td> <code>states:execution</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>states:activity</code> </td><td> <ul><li>  <code>AWS::StepFunctions::Activity</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>states:statemachine</code> </td><td> <ul><li>  <code>AWS::StepFunctions::StateMachine</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>states:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="6"> <code>AWS Storage Gateway [storagegateway]</code> </td><td> <code>storagegateway:tapepool</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>storagegateway:fs-association</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>storagegateway:tape</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>storagegateway:gateway</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>storagegateway:gateway/volume</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>storagegateway:share</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Supply Chain [scn]</code> </td><td> <code>scn:instance</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>scn:billofmaterialsimportjob</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS Systems Manager Incident Manager Contacts [ssm-contacts]</code> </td><td> <code>ssm-contacts:contact</code> </td><td> <ul><li>  <code>AWS::SSMContacts::Contact</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ssm-contacts:rotation</code> </td><td> <ul><li>  <code>AWS::SSMContacts::Rotation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ssm-contacts:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>AWS Systems Manager Incident Manager [ssm-incidents]</code> </td><td> <code>ssm-incidents:incident-record</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ssm-incidents:replication-set</code> </td><td> <ul><li>  <code>AWS::SSMIncidents::ReplicationSet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ssm-incidents:response-plan</code> </td><td> <ul><li>  <code>AWS::SSMIncidents::ResponsePlan</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>AWS Systems Manager Quick Setup [ssm-quicksetup]</code> </td><td> <code>ssm-quicksetup:configuration-manager</code> </td><td> <ul><li>  <code>AWS::SSMQuickSetup::ConfigurationManager</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="12"> <code>AWS Systems Manager [ssm]</code> </td><td> <code>ssm:managed-instance</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ssm:document</code> </td><td> <ul><li>  <code>AWS::SSM::Document</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ssm:automation-definition</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ssm:parameter</code> </td><td> <ul><li>  <code>AWS::SSM::Parameter</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ssm:automation-execution</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ssm:opsitem</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ssm:patchbaseline</code> </td><td> <ul><li>  <code>AWS::SSM::PatchBaseline</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ssm:session</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ssm:association</code> </td><td> <ul><li>  <code>AWS::SSM::Association</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ssm:maintenancewindow</code> </td><td> <ul><li>  <code>AWS::SSM::MaintenanceWindow</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ssm:opsmetadata</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ssm:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Systems Manager for SAP [ssm-sap]</code> </td><td> <code>ssm-sap:hana/db</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ssm-sap:hana</code> </td><td> <ul><li>  <code>AWS::SystemsManagerSAP::Application</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="5"> <code>AWS Telco Network Builder [tnb]</code> </td><td> <code>tnb:network-instance</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>tnb:function-instance</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>tnb:function-package</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>tnb:network-package</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>tnb:network-operation</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="10"> <code>AWS Transfer Family [transfer]</code> </td><td> <code>transfer:connector</code> </td><td> <ul><li>  <code>AWS::Transfer::Connector</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>transfer:user</code> </td><td> <ul><li>  <code>AWS::Transfer::User</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>transfer:workflow</code> </td><td> <ul><li>  <code>AWS::Transfer::Workflow</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>transfer:webapp</code> </td><td> <ul><li>  <code>AWS::Transfer::WebApp</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>transfer:agreement</code> </td><td> <ul><li>  <code>AWS::Transfer::Agreement</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>transfer:host-key</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>transfer:server</code> </td><td> <ul><li>  <code>AWS::Transfer::Server</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>transfer:certificate</code> </td><td> <ul><li>  <code>AWS::Transfer::Certificate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>transfer:profile</code> </td><td> <ul><li>  <code>AWS::Transfer::Profile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>transfer:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>AWS Transform [transform]</code> </td><td> <code>transform:connector</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>AWS User Notifications Contacts [notifications-contacts]</code> </td><td> <code>notifications-contacts:emailcontact</code> </td><td> <ul><li>  <code>AWS::NotificationsContacts::EmailContact</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>AWS User Notifications [notifications]</code> </td><td> <code>notifications:configuration</code> </td><td> <ul><li>  <code>AWS::Notifications::NotificationConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS WAF Regional [waf-regional]</code> </td><td> <code>waf-regional:rule</code> </td><td> <ul><li>  <code>AWS::WAFRegional::Rule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>waf-regional:rulegroup</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>waf-regional:ratebasedrule</code> </td><td> <ul><li>  <code>AWS::WAFRegional::RateBasedRule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>waf-regional:webacl</code> </td><td> <ul><li>  <code>AWS::WAFRegional::WebACL</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="4"> <code>AWS WAF [waf]</code> </td><td> <code>waf:rulegroup</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>waf:webacl</code> </td><td> <ul><li>  <code>AWS::WAF::WebACL</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>waf:ratebasedrule</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>waf:rule</code> </td><td> <ul><li>  <code>AWS::WAF::Rule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="5"> <code>AWS Well-Architected Tool [wellarchitected]</code> </td><td> <code>wellarchitected:lens</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>wellarchitected:review-template</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>wellarchitected:workload</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>wellarchitected:profile</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>wellarchitected:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS Wickr [wickr]</code> </td><td> <code>wickr:network</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>wickr:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>AWS WorkSpaces Managed Instances [workspaces-instances]</code> </td><td> <code>workspaces-instances:workspaceinstance</code> </td><td> <ul><li>  <code>AWS::WorkspacesInstances::WorkspaceInstance</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>AWS X-Ray [xray]</code> </td><td> <code>xray:sampling-rule</code> </td><td> <ul><li>  <code>AWS::XRay::SamplingRule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>xray:group</code> </td><td> <ul><li>  <code>AWS::XRay::Group</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>AWS rePost Private [repostspace]</code> </td><td> <code>repostspace:space</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="5"> <code>AWS service providing managed private networks [private-networks]</code> </td><td> <code>private-networks:network-site</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>private-networks:order</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>private-networks:network</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>private-networks:network-resource</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>private-networks:device-identifier</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="11"> <code>Alexa for Business [a4b]</code> </td><td> <code>a4b:profile</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>a4b:address-book</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>a4b:network-profile</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>a4b:user</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>a4b:conference-provider</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>a4b:skill-group</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>a4b:room</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>a4b:gateway-group</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>a4b:schedule</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>a4b:contact</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>a4b:device</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>Amazon AI Operations [aiops]</code> </td><td> <code>aiops:investigation-group</code> </td><td> <ul><li>  <code>AWS::AIOps::InvestigationGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="8"> <code>Amazon API Gateway Management [apigateway]</code> </td><td> <code>apigateway:usageplans</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>apigateway:apikeys</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>apigateway:clientcertificates</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>apigateway:restapis</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>apigateway:domainnames</code> </td><td> <ul><li>  <code>AWS::ApiGateway::DomainNameV2</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>apigateway:domainnameaccessassociations</code> </td><td> <ul><li>  <code>AWS::ApiGateway::DomainNameAccessAssociation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>apigateway:vpclinks</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>apigateway:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>Amazon ARC Region switch [arc-region-switch]</code> </td><td> <code>arc-region-switch:plan</code> </td><td> <ul><li>  <code>AWS::ARCRegionSwitch::Plan</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon AppFlow [appflow]</code> </td><td> <code>appflow:connector</code> </td><td> <ul><li>  <code>AWS::AppFlow::Connector</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>appflow:flow</code> </td><td> <ul><li>  <code>AWS::AppFlow::Flow</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="6"> <code>Amazon AppIntegrations [app-integrations]</code> </td><td> <code>app-integrations:application-association</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>app-integrations:data-integration</code> </td><td> <ul><li>  <code>AWS::AppIntegrations::DataIntegration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>app-integrations:event-integration</code> </td><td> <ul><li>  <code>AWS::AppIntegrations::EventIntegration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>app-integrations:data-integration-association</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>app-integrations:application</code> </td><td> <ul><li>  <code>AWS::AppIntegrations::Application</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>app-integrations:event-integration-association</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="7"> <code>Amazon AppStream 2.0 [appstream]</code> </td><td> <code>appstream:image</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>appstream:app-block</code> </td><td> <ul><li>  <code>AWS::AppStream::AppBlock</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>appstream:stack</code> </td><td> <ul><li>  <code>AWS::AppStream::Stack</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>appstream:app-block-builder</code> </td><td> <ul><li>  <code>AWS::AppStream::AppBlockBuilder</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>appstream:fleet</code> </td><td> <ul><li>  <code>AWS::AppStream::Fleet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>appstream:image-builder</code> </td><td> <ul><li>  <code>AWS::AppStream::ImageBuilder</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>appstream:application</code> </td><td> <ul><li>  <code>AWS::AppStream::Application</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>Amazon Athena [athena]</code> </td><td> <code>athena:datacatalog</code> </td><td> <ul><li>  <code>AWS::Athena::DataCatalog</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>athena:capacity-reservation</code> </td><td> <ul><li>  <code>AWS::Athena::CapacityReservation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>athena:workgroup</code> </td><td> <ul><li>  <code>AWS::Athena::WorkGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>athena:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>Amazon Aurora DSQL [dsql]</code> </td><td> <code>dsql:cluster</code> </td><td> <ul><li>  <code>AWS::DSQL::Cluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="9"> <code>Amazon Bedrock [bedrock-agentcore]</code> </td><td> <code>bedrock-agentcore:workload-identity</code> </td><td> <ul><li>  <code>AWS::BedrockAgentCore::WorkloadIdentity</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock-agentcore:code-interpreter-custom</code> </td><td> <ul><li>  <code>AWS::BedrockAgentCore::CodeInterpreterCustom</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock-agentcore:gateway</code> </td><td> <ul><li>  <code>AWS::BedrockAgentCore::Gateway</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock-agentcore:token-vault</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock-agentcore:memory</code> </td><td> <ul><li>  <code>AWS::BedrockAgentCore::Memory</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock-agentcore:workload-identity-directory</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock-agentcore:runtime</code> </td><td> <ul><li>  <code>AWS::BedrockAgentCore::Runtime</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock-agentcore:browser-custom</code> </td><td> <ul><li>  <code>AWS::BedrockAgentCore::BrowserCustom</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock-agentcore:runtime-endpoint</code> </td><td> <ul><li>  <code>AWS::BedrockAgentCore::RuntimeEndpoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="30"> <code>Amazon Bedrock [bedrock]</code> </td><td> <code>bedrock:model-copy-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:custom-model-deployment</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:prompt-router</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:agent-alias</code> </td><td> <ul><li>  <code>AWS::Bedrock::AgentAlias</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>bedrock:blueprint</code> </td><td> <ul><li>  <code>AWS::Bedrock::Blueprint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>bedrock:model-customization-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:model-import-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:data-automation-invocation</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:data-automation-invocation-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:automated-reasoning-policy</code> </td><td> <ul><li>  <code>AWS::Bedrock::AutomatedReasoningPolicy</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:model-evaluation-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:session</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:prompt</code> </td><td> <ul><li>  <code>AWS::Bedrock::Prompt</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>bedrock:guardrail</code> </td><td> <ul><li>  <code>AWS::Bedrock::Guardrail</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>bedrock:async-invoke</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:flow/alias</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:prompt-version</code> </td><td> <ul><li>  <code>AWS::Bedrock::PromptVersion</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:data-automation-project</code> </td><td> <ul><li>  <code>AWS::Bedrock::DataAutomationProject</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>bedrock:provisioned-model</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:provisioned-model-v2</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:application-inference-profile</code> </td><td> <ul><li>  <code>AWS::Bedrock::ApplicationInferenceProfile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>bedrock:imported-model</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:flow</code> </td><td> <ul><li>  <code>AWS::Bedrock::Flow</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>bedrock:flow/alias</code> </td><td> <ul><li>  <code>AWS::Bedrock::FlowAlias</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:flow-alias</code> </td><td> <ul><li>  <code>AWS::Bedrock::FlowAlias</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:knowledge-base</code> </td><td> <ul><li>  <code>AWS::Bedrock::KnowledgeBase</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>bedrock:agent</code> </td><td> <ul><li>  <code>AWS::Bedrock::Agent</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>bedrock:model-invocation-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:custom-model</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>bedrock:evaluation-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon Braket [braket]</code> </td><td> <code>braket:quantum-task</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>braket:job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>braket:spending-limit</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="14"> <code>Amazon Chime [chime]</code> </td><td> <code>chime:meeting</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>chime:sip-media-application</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>chime:sma</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>chime:app-instance/bot</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>chime:voice-profile-domain</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>chime:app-instance/channel</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>chime:app-instance/user</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>chime:media-pipeline-kinesis-video-stream-pool</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>chime:app-instance</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>chime:media-pipeline</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>chime:voice-connector</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>chime:vc</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>chime:media-insights-pipeline-configuration</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>chime:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>Amazon Cloud Directory [clouddirectory]</code> </td><td> <code>clouddirectory:directory</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="11"> <code>Amazon CloudFront [cloudfront]</code> </td><td> <code>cloudfront:vpcorigin</code> </td><td> <ul><li>  <code>AWS::CloudFront::VpcOrigin</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cloudfront:connection-function</code> </td><td> <ul><li>  <code>AWS::CloudFront::ConnectionFunction</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cloudfront:distribution-tenant</code> </td><td> <ul><li>  <code>AWS::CloudFront::DistributionTenant</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cloudfront:distribution</code> </td><td> <ul><li>  <code>AWS::CloudFront::Distribution</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>cloudfront:anycast-ip-list</code> </td><td> <ul><li>  <code>AWS::CloudFront::AnycastIpList</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cloudfront:key-value-store</code> </td><td> <ul><li>  <code>AWS::CloudFront::KeyValueStore</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cloudfront:keyvaluestore</code> </td><td> <ul><li>  <code>AWS::CloudFront::KeyValueStore</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cloudfront:streaming-distribution</code> </td><td> <ul><li>  <code>AWS::CloudFront::StreamingDistribution</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cloudfront:trust-store</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cloudfront:connection-group</code> </td><td> <ul><li>  <code>AWS::CloudFront::ConnectionGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>cloudfront:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>Amazon CloudSearch [cloudsearch]</code> </td><td> <code>cloudsearch:domain</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>Amazon CloudWatch Application Insights [applicationinsights]</code> </td><td> <code>applicationinsights:application</code> </td><td> <ul><li>  <code>AWS::ApplicationInsights::Application</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>Amazon CloudWatch Application Signals [application-signals]</code> </td><td> <code>application-signals:slo</code> </td><td> <ul><li>  <code>AWS::ApplicationSignals::ServiceLevelObjective</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="6"> <code>Amazon CloudWatch Evidently [evidently]</code> </td><td> <code>evidently:segment</code> </td><td> <ul><li>  <code>AWS::Evidently::Segment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>evidently:project/launch</code> </td><td> <ul><li>  <code>AWS::Evidently::Launch</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>evidently:project</code> </td><td> <ul><li>  <code>AWS::Evidently::Project</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>evidently:project/feature</code> </td><td> <ul><li>  <code>AWS::Evidently::Feature</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>evidently:experiment</code> </td><td> <ul><li>  <code>AWS::Evidently::Experiment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>evidently:project/experiment</code> </td><td> <ul><li>  <code>AWS::Evidently::Experiment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon CloudWatch Internet Monitor [internetmonitor]</code> </td><td> <code>internetmonitor:monitor</code> </td><td> <ul><li>  <code>AWS::InternetMonitor::Monitor</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>internetmonitor:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="7"> <code>Amazon CloudWatch Logs [logs]</code> </td><td> <code>logs:log-group</code> </td><td> <ul><li>  <code>AWS::Logs::LogGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>logs:delivery-destination</code> </td><td> <ul><li>  <code>AWS::Logs::DeliveryDestination</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>logs:scheduled-query</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>logs:destination</code> </td><td> <ul><li>  <code>AWS::Logs::Destination</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>logs:delivery-source</code> </td><td> <ul><li>  <code>AWS::Logs::DeliverySource</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>logs:anomaly-detector</code> </td><td> <ul><li>  <code>AWS::Logs::LogAnomalyDetector</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>logs:delivery</code> </td><td> <ul><li>  <code>AWS::Logs::Delivery</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon CloudWatch Network Synthetic Monitor [networkmonitor]</code> </td><td> <code>networkmonitor:monitor</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>networkmonitor:probe</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon CloudWatch Observability Access Manager [oam]</code> </td><td> <code>oam:link</code> </td><td> <ul><li>  <code>AWS::Oam::Link</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>oam:sink</code> </td><td> <ul><li>  <code>AWS::Oam::Sink</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>oam:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="5"> <code>Amazon CloudWatch Observability Admin Service [observabilityadmin]</code> </td><td> <code>observabilityadmin:organization-telemetry-rule</code> </td><td> <ul><li>  <code>AWS::ObservabilityAdmin::OrganizationTelemetryRule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>observabilityadmin:s3tableintegration</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>observabilityadmin:telemetry-rule</code> </td><td> <ul><li>  <code>AWS::ObservabilityAdmin::TelemetryRule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>observabilityadmin:telemetry-pipeline</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>observabilityadmin:organization-centralization-rule</code> </td><td> <ul><li>  <code>AWS::ObservabilityAdmin::OrganizationCentralizationRule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon CloudWatch Synthetics [synthetics]</code> </td><td> <code>synthetics:group</code> </td><td> <ul><li>  <code>AWS::Synthetics::Group</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>synthetics:canary</code> </td><td> <ul><li>  <code>AWS::Synthetics::Canary</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="5"> <code>Amazon CloudWatch [cloudwatch]</code> </td><td> <code>cloudwatch:metric-stream</code> </td><td> <ul><li>  <code>AWS::CloudWatch::MetricStream</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>cloudwatch:slo</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cloudwatch:insight-rule</code> </td><td> <ul><li>  <code>AWS::CloudWatch::InsightRule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>cloudwatch:alarm</code> </td><td> <ul><li>  <code>AWS::CloudWatch::Alarm</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>cloudwatch:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>Amazon CodeCatalyst [codecatalyst]</code> </td><td> <code>codecatalyst:identity-center-applications</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>codecatalyst:space</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>codecatalyst:connections</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>codecatalyst:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>Amazon CodeGuru Profiler [codeguru-profiler]</code> </td><td> <code>codeguru-profiler:profilinggroup</code> </td><td> <ul><li>  <code>AWS::CodeGuruProfiler::ProfilingGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon CodeGuru Reviewer [codeguru-reviewer]</code> </td><td> <code>codeguru-reviewer:association</code> </td><td> <ul><li>  <code>AWS::CodeGuruReviewer::RepositoryAssociation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>codeguru-reviewer:codereview</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>codeguru-reviewer:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon CodeGuru Security [codeguru-security]</code> </td><td> <code>codeguru-security:scans</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>codeguru-security:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon CodeWhisperer [codewhisperer]</code> </td><td> <code>codewhisperer:profile</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>codewhisperer:customization</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon Cognito Identity [cognito-identity]</code> </td><td> <code>cognito-identity:identitypool</code> </td><td> <ul><li>  <code>AWS::Cognito::IdentityPool</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>cognito-identity:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon Cognito Identity [cognito-idp]</code> </td><td> <code>cognito-idp:userpool</code> </td><td> <ul><li>  <code>AWS::Cognito::UserPool</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>cognito-idp:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="16"> <code>Amazon Comprehend [comprehend]</code> </td><td> <code>comprehend:targeted-sentiment-detection-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>comprehend:entity-recognizer-endpoint</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>comprehend:sentiment-detection-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>comprehend:flywheel</code> </td><td> <ul><li>  <code>AWS::Comprehend::Flywheel</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>comprehend:document-classifier-endpoint</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>comprehend:entity-recognizer</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>comprehend:topics-detection-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>comprehend:events-detection-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>comprehend:document-classifier</code> </td><td> <ul><li>  <code>AWS::Comprehend::DocumentClassifier</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>comprehend:key-phrases-detection-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>comprehend:document-classification-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>comprehend:entities-detection-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>comprehend:dominant-language-detection-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>comprehend:flywheel/dataset</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>comprehend:pii-entities-detection-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>comprehend:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="7"> <code>Amazon Connect Cases [cases]</code> </td><td> <code>cases:related-item</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cases:domain/case/related-item</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cases:layout</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cases:field</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cases:template</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cases:domain/case</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>cases:domain</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="4"> <code>Amazon Connect Customer Profiles [profile]</code> </td><td> <code>profile:domains/object-types</code> </td><td> <ul><li>  <code>AWS::CustomerProfiles::ObjectType</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>profile:domains/domain-object-types</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>profile:domains</code> </td><td> <ul><li>  <code>AWS::CustomerProfiles::Domain</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>profile:domains/integrations</code> </td><td> <ul><li>  <code>AWS::CustomerProfiles::Integration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>Amazon Connect Outbound Campaigns [connect-campaigns]</code> </td><td> <code>connect-campaigns:campaign</code> </td><td> <ul><li>  <code>AWS::ConnectCampaigns::Campaign</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>Amazon Connect Voice ID [voiceid]</code> </td><td> <code>voiceid:domain</code> </td><td> <ul><li>  <code>AWS::VoiceID::Domain</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="27"> <code>Amazon Connect [connect]</code> </td><td> <code>connect:instance/evaluation-form</code> </td><td> <ul><li>  <code>AWS::Connect::EvaluationForm</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>connect:instance/agent-state</code> </td><td> <ul><li>  <code>AWS::Connect::AgentStatus</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>connect:wildcardagentstatus</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>connect:instance/transfer-destination</code> </td><td> <ul><li>  <code>AWS::Connect::QuickConnect</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>connect:instance/use-case</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>connect:wildcardquickconnect</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>connect:instance/task-template</code> </td><td> <ul><li>  <code>AWS::Connect::TaskTemplate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>connect:instance/agent</code> </td><td> <ul><li>  <code>AWS::Connect::User</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>connect:traffic-distribution-group</code> </td><td> <ul><li>  <code>AWS::Connect::TrafficDistributionGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>connect:instance/flow-module</code> </td><td> <ul><li>  <code>AWS::Connect::ContactFlowModule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>connect:phone-number</code> </td><td> <ul><li>  <code>AWS::Connect::PhoneNumber</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>connect:instance/agent-group</code> </td><td> <ul><li>  <code>AWS::Connect::UserHierarchyGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>connect:instance/operating-hours</code> </td><td> <ul><li>  <code>AWS::Connect::HoursOfOperation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>connect:instance/security-profile</code> </td><td> <ul><li>  <code>AWS::Connect::SecurityProfile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>connect:wildcardcontactflow</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>connect:instance/queue</code> </td><td> <ul><li>  <code>AWS::Connect::Queue</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>connect:instance/contact-evaluation</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>connect:instance/rule</code> </td><td> <ul><li>  <code>AWS::Connect::Rule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>connect:instance/integration-association</code> </td><td> <ul><li>  <code>AWS::Connect::IntegrationAssociation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>connect:instance/contact-flow</code> </td><td> <ul><li>  <code>AWS::Connect::ContactFlow</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>connect:instance/vocabulary</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>connect:instance</code> </td><td> <ul><li>  <code>AWS::Connect::Instance</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>connect:instance/routing-profile</code> </td><td> <ul><li>  <code>AWS::Connect::RoutingProfile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>connect:wildcardqueue</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>connect:contact</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>connect:instance/prompt</code> </td><td> <ul><li>  <code>AWS::Connect::Prompt</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>connect:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon Data Lifecycle Manager [dlm]</code> </td><td> <code>dlm:policy</code> </td><td> <ul><li>  <code>AWS::DLM::LifecyclePolicy</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>dlm:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>Amazon DataZone [datazone]</code> </td><td> <code>datazone:domain</code> </td><td> <ul><li>  <code>AWS::DataZone::Domain</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>Amazon Detective [detective]</code> </td><td> <code>detective:graph</code> </td><td> <ul><li>  <code>AWS::Detective::Graph</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon DocumentDB Elastic Clusters [docdb-elastic]</code> </td><td> <code>docdb-elastic:cluster</code> </td><td> <ul><li>  <code>AWS::DocDBElastic::Cluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>docdb-elastic:cluster-pg</code> </td><td> <ul><li>  <code>AWS::DocDBElastic::Cluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>docdb-elastic:cluster-snapshot</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>Amazon DynamoDB Accelerator (DAX) [dax]</code> </td><td> <code>dax:cache</code> </td><td> <ul><li>  <code>AWS::DAX::Cluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="5"> <code>Amazon DynamoDB [dynamodb]</code> </td><td> <code>dynamodb:globaltable</code> </td><td> <ul><li>  <code>AWS::DynamoDB::GlobalTable</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>dynamodb:table</code> </td><td> <ul><li>  <code>AWS::DynamoDB::Table</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>dynamodb:index</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>dynamodb:table/stream</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>dynamodb:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>Amazon EC2 Auto Scaling [autoscaling]</code> </td><td> <code>autoscaling:autoscalinggroup</code> </td><td> <ul><li>  <code>AWS::AutoScaling::AutoScalingGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="9"> <code>Amazon EC2 Image Builder [imagebuilder]</code> </td><td> <code>imagebuilder:infrastructure-configuration</code> </td><td> <ul><li>  <code>AWS::ImageBuilder::InfrastructureConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>imagebuilder:image-recipe</code> </td><td> <ul><li>  <code>AWS::ImageBuilder::ImageRecipe</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>imagebuilder:container-recipe</code> </td><td> <ul><li>  <code>AWS::ImageBuilder::ContainerRecipe</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>imagebuilder:image</code> </td><td> <ul><li>  <code>AWS::ImageBuilder::Image</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>imagebuilder:workflow</code> </td><td> <ul><li>  <code>AWS::ImageBuilder::Workflow</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>imagebuilder:component</code> </td><td> <ul><li>  <code>AWS::ImageBuilder::Component</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>imagebuilder:lifecycle-policy</code> </td><td> <ul><li>  <code>AWS::ImageBuilder::LifecyclePolicy</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>imagebuilder:distribution-configuration</code> </td><td> <ul><li>  <code>AWS::ImageBuilder::DistributionConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>imagebuilder:image-pipeline</code> </td><td> <ul><li>  <code>AWS::ImageBuilder::ImagePipeline</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="93"> <code>Amazon EC2 [ec2]</code> </td><td> <code>ec2:image-usage-report</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:ipam-external-resource-verification-token</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:security-group</code> </td><td> <ul><li>  <code>AWS::EC2::SecurityGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:traffic-mirror-session</code> </td><td> <ul><li>  <code>AWS::EC2::TrafficMirrorSession</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:ipam-pool</code> </td><td> <ul><li>  <code>AWS::EC2::IPAMPool</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:security-group-rule</code> </td><td> <ul><li>  <code>AWS::EC2::SecurityGroupIngress</code>  </li><li>  <code>AWS::EC2::SecurityGroupEgress</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:local-gateway-virtual-interface-group</code> </td><td> <ul><li>  <code>AWS::EC2::LocalGatewayVirtualInterfaceGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:natgateway</code> </td><td> <ul><li>  <code>AWS::EC2::NatGateway</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:import-snapshot-task</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:internet-gateway</code> </td><td> <ul><li>  <code>AWS::EC2::InternetGateway</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:transit-gateway</code> </td><td> <ul><li>  <code>AWS::EC2::TransitGateway</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:dhcp-options</code> </td><td> <ul><li>  <code>AWS::EC2::DHCPOptions</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:image</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:network-insights-access-scope-analysis</code> </td><td> <ul><li>  <code>AWS::EC2::NetworkInsightsAccessScopeAnalysis</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:ipv4pool-ec2</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:transit-gateway-policy-table</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:transit-gateway-attachment</code> </td><td> <ul><li>  <code>AWS::EC2::TransitGatewayVpcAttachment</code>  </li><li>  <code>AWS::EC2::TransitGatewayAttachment</code>  </li><li>  <code>AWS::EC2::TransitGatewayPeeringAttachment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:volume</code> </td><td> <ul><li>  <code>AWS::EC2::Volume</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:import-image-task</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:subnet</code> </td><td> <ul><li>  <code>AWS::EC2::Subnet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:vpc</code> </td><td> <ul><li>  <code>AWS::EC2::VPC</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:vpc-endpoint-service-permission</code> </td><td> <ul><li>  <code>AWS::EC2::VPCEndpointServicePermissions</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:capacity-reservation</code> </td><td> <ul><li>  <code>AWS::EC2::CapacityReservation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:network-acl</code> </td><td> <ul><li>  <code>AWS::EC2::NetworkAcl</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:verified-access-trust-provider</code> </td><td> <ul><li>  <code>AWS::EC2::VerifiedAccessTrustProvider</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:vpn-gateway</code> </td><td> <ul><li>  <code>AWS::EC2::VPNGateway</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:carrier-gateway</code> </td><td> <ul><li>  <code>AWS::EC2::CarrierGateway</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:elastic-gpu</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:elasticgpu</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:local-gateway-route-table</code> </td><td> <ul><li>  <code>AWS::EC2::LocalGatewayRouteTable</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:network-insights-access-scope</code> </td><td> <ul><li>  <code>AWS::EC2::NetworkInsightsAccessScope</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:transit-gateway-connect-peer</code> </td><td> <ul><li>  <code>AWS::EC2::TransitGatewayConnectPeer</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:verified-access-group</code> </td><td> <ul><li>  <code>AWS::EC2::VerifiedAccessGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:traffic-mirror-target</code> </td><td> <ul><li>  <code>AWS::EC2::TrafficMirrorTarget</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:coip-pool</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:fleet</code> </td><td> <ul><li>  <code>AWS::EC2::EC2Fleet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:local-gateway-route-table-virtual-interface-group-association</code> </td><td> <ul><li>  <code>AWS::EC2::LocalGatewayRouteTableVirtualInterfaceGroupAssociation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:transit-gateway-multicast-domain</code> </td><td> <ul><li>  <code>AWS::EC2::TransitGatewayMulticastDomain</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:network-interface</code> </td><td> <ul><li>  <code>AWS::EC2::NetworkInterface</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:capacity-manager-data-export</code> </td><td> <ul><li>  <code>AWS::EC2::CapacityManagerDataExport</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:client-vpn-endpoint</code> </td><td> <ul><li>  <code>AWS::EC2::ClientVpnEndpoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:spot-instances-request</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:network-insights-path</code> </td><td> <ul><li>  <code>AWS::EC2::NetworkInsightsPath</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:instance-connect-endpoint</code> </td><td> <ul><li>  <code>AWS::EC2::InstanceConnectEndpoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:traffic-mirror-filter-rule</code> </td><td> <ul><li>  <code>AWS::EC2::TrafficMirrorFilterRule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:local-gateway-virtual-interface</code> </td><td> <ul><li>  <code>AWS::EC2::LocalGatewayVirtualInterface</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:vpc-peering-connection</code> </td><td> <ul><li>  <code>AWS::EC2::VPCPeeringConnection</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:snapshot</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:customer-gateway</code> </td><td> <ul><li>  <code>AWS::EC2::CustomerGateway</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:capacity-block</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:verified-access-endpoint</code> </td><td> <ul><li>  <code>AWS::EC2::VerifiedAccessEndpoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:vpn-connection</code> </td><td> <ul><li>  <code>AWS::EC2::VPNConnection</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:ipam-scope</code> </td><td> <ul><li>  <code>AWS::EC2::IPAMScope</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:host-reservation</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:replace-root-volume-task</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:instance</code> </td><td> <ul><li>  <code>AWS::EC2::Instance</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:fpga-image</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:route-server-endpoint</code> </td><td> <ul><li>  <code>AWS::EC2::RouteServerEndpoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:key-pair</code> </td><td> <ul><li>  <code>AWS::EC2::KeyPair</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:vpc-endpoint-connection</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:dedicated-host</code> </td><td> <ul><li>  <code>AWS::EC2::Host</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:local-gateway-route-table-vpc-association</code> </td><td> <ul><li>  <code>AWS::EC2::LocalGatewayRouteTableVPCAssociation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:vpc-endpoint-service</code> </td><td> <ul><li>  <code>AWS::EC2::VPCEndpointService</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:egress-only-internet-gateway</code> </td><td> <ul><li>  <code>AWS::EC2::EgressOnlyInternetGateway</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:ipam-resource-discovery</code> </td><td> <ul><li>  <code>AWS::EC2::IPAMResourceDiscovery</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:mac-modification-task</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:network-insights-analysis</code> </td><td> <ul><li>  <code>AWS::EC2::NetworkInsightsAnalysis</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:placement-group</code> </td><td> <ul><li>  <code>AWS::EC2::PlacementGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:instance-event-window</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:ipv6pool-ec2</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:prefix-list</code> </td><td> <ul><li>  <code>AWS::EC2::PrefixList</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:vpc-endpoint</code> </td><td> <ul><li>  <code>AWS::EC2::VPCEndpoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:elastic-ip</code> </td><td> <ul><li>  <code>AWS::EC2::EIP</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:export-instance-task</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:reserved-instances</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:export-image-task</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:subnet-cidr-reservation</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:vpc-flow-log</code> </td><td> <ul><li>  <code>AWS::EC2::FlowLog</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:capacity-reservation-fleet</code> </td><td> <ul><li>  <code>AWS::EC2::CapacityReservationFleet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:ipam-resource-discovery-association</code> </td><td> <ul><li>  <code>AWS::EC2::IPAMResourceDiscoveryAssociation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:transit-gateway-route-table-announcement</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:traffic-mirror-filter</code> </td><td> <ul><li>  <code>AWS::EC2::TrafficMirrorFilter</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:outpost-lag</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:local-gateway</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:launch-template</code> </td><td> <ul><li>  <code>AWS::EC2::LaunchTemplate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:vpc-block-public-access-exclusion</code> </td><td> <ul><li>  <code>AWS::EC2::VPCBlockPublicAccessExclusion</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:route-table</code> </td><td> <ul><li>  <code>AWS::EC2::RouteTable</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:ipam</code> </td><td> <ul><li>  <code>AWS::EC2::IPAM</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:declarative-policies-report</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ec2:verified-access-instance</code> </td><td> <ul><li>  <code>AWS::EC2::VerifiedAccessInstance</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:transit-gateway-route-table</code> </td><td> <ul><li>  <code>AWS::EC2::TransitGatewayRouteTable</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:spot-fleet-request</code> </td><td> <ul><li>  <code>AWS::EC2::SpotFleet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ec2:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon EMR Serverless [emr-serverless]</code> </td><td> <code>emr-serverless:jobruns</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>emr-serverless:applications</code> </td><td> <ul><li>  <code>AWS::EMRServerless::Application</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="5"> <code>Amazon EMR on EKS (EMR Containers) [emr-containers]</code> </td><td> <code>emr-containers:virtualclusters/jobruns</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>emr-containers:virtualclusters/endpoints</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>emr-containers:securityconfigurations</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>emr-containers:jobtemplates</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>emr-containers:virtualclusters</code> </td><td> <ul><li>  <code>AWS::EMRContainers::VirtualCluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="12"> <code>Amazon ElastiCache [elasticache]</code> </td><td> <code>elasticache:securitygroup</code> </td><td> <ul><li>  <code>AWS::ElastiCache::SecurityGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>elasticache:parametergroup</code> </td><td> <ul><li>  <code>AWS::ElastiCache::ParameterGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>elasticache:usergroup</code> </td><td> <ul><li>  <code>AWS::ElastiCache::UserGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>elasticache:snapshot</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>elasticache:subnetgroup</code> </td><td> <ul><li>  <code>AWS::ElastiCache::SubnetGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>elasticache:cluster</code> </td><td> <ul><li>  <code>AWS::ElastiCache::CacheCluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>elasticache:reserved-instance</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>elasticache:serverlesscache</code> </td><td> <ul><li>  <code>AWS::ElastiCache::ServerlessCache</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>elasticache:replicationgroup</code> </td><td> <ul><li>  <code>AWS::ElastiCache::ReplicationGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>elasticache:serverlesscachesnapshot</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>elasticache:user</code> </td><td> <ul><li>  <code>AWS::ElastiCache::User</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>elasticache:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>Amazon Elastic Container Registry [ecr-public]</code> </td><td> <code>ecr-public:repository</code> </td><td> <ul><li>  <code>AWS::ECR::PublicRepository</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon Elastic Container Registry [ecr]</code> </td><td> <code>ecr:repository</code> </td><td> <ul><li>  <code>AWS::ECR::Repository</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ecr:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="10"> <code>Amazon Elastic Container Service [ecs]</code> </td><td> <code>ecs:task</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ecs:capacity-provider</code> </td><td> <ul><li>  <code>AWS::ECS::CapacityProvider</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ecs:service-revision</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ecs:service</code> </td><td> <ul><li>  <code>AWS::ECS::Service</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ecs:cluster</code> </td><td> <ul><li>  <code>AWS::ECS::Cluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ecs:service-deployment</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ecs:task-definition</code> </td><td> <ul><li>  <code>AWS::ECS::TaskDefinition</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ecs:container-instance</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ecs:task-set</code> </td><td> <ul><li>  <code>AWS::ECS::TaskSet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ecs:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon Elastic File System [elasticfilesystem]</code> </td><td> <code>elasticfilesystem:file-system</code> </td><td> <ul><li>  <code>AWS::EFS::FileSystem</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>elasticfilesystem:access-point</code> </td><td> <ul><li>  <code>AWS::EFS::AccessPoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>elasticfilesystem:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>Amazon Elastic Inference [amazonelasticinference]</code> </td><td> <code>amazonelasticinference:accelerator</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="10"> <code>Amazon Elastic Kubernetes Service [eks]</code> </td><td> <code>eks:cluster</code> </td><td> <ul><li>  <code>AWS::EKS::Cluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>eks:access-entry</code> </td><td> <ul><li>  <code>AWS::EKS::AccessEntry</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>eks:addon</code> </td><td> <ul><li>  <code>AWS::EKS::Addon</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>eks:podidentityassociation</code> </td><td> <ul><li>  <code>AWS::EKS::PodIdentityAssociation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>eks:dashboard</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>eks:eks-anywhere-subscription</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>eks:identityproviderconfig</code> </td><td> <ul><li>  <code>AWS::EKS::IdentityProviderConfig</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>eks:nodegroup</code> </td><td> <ul><li>  <code>AWS::EKS::Nodegroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>eks:fargateprofile</code> </td><td> <ul><li>  <code>AWS::EKS::FargateProfile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>eks:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="5"> <code>Amazon Elastic MapReduce [elasticmapreduce]</code> </td><td> <code>elasticmapreduce:cluster</code> </td><td> <ul><li>  <code>AWS::EMR::Cluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>elasticmapreduce:editor</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>elasticmapreduce:notebook-execution</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>elasticmapreduce:studio</code> </td><td> <ul><li>  <code>AWS::EMR::Studio</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>elasticmapreduce:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>Amazon Elastic VMware Service [evs]</code> </td><td> <code>evs:environment</code> </td><td> <ul><li>  <code>AWS::EVS::Environment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon EventBridge Pipes [pipes]</code> </td><td> <code>pipes:pipe</code> </td><td> <ul><li>  <code>AWS::Pipes::Pipe</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>pipes:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon EventBridge Scheduler [scheduler]</code> </td><td> <code>scheduler:schedule-group</code> </td><td> <ul><li>  <code>AWS::Scheduler::ScheduleGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>scheduler:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon EventBridge Schemas [schemas]</code> </td><td> <code>schemas:discoverer</code> </td><td> <ul><li>  <code>AWS::EventSchemas::Discoverer</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>schemas:registry</code> </td><td> <ul><li>  <code>AWS::EventSchemas::Registry</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>schemas:schema</code> </td><td> <ul><li>  <code>AWS::EventSchemas::Schema</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon EventBridge [events]</code> </td><td> <code>events:event-bus</code> </td><td> <ul><li>  <code>AWS::Events::EventBus</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>events:rule</code> </td><td> <ul><li>  <code>AWS::Events::Rule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>events:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="9"> <code>Amazon FSx [fsx]</code> </td><td> <code>fsx:backup</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>fsx:storage-virtual-machine</code> </td><td> <ul><li>  <code>AWS::FSx::StorageVirtualMachine</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>fsx:snapshot</code> </td><td> <ul><li>  <code>AWS::FSx::Snapshot</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>fsx:file-system</code> </td><td> <ul><li>  <code>AWS::FSx::FileSystem</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>fsx:association</code> </td><td> <ul><li>  <code>AWS::FSx::DataRepositoryAssociation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>fsx:file-cache</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>fsx:volume</code> </td><td> <ul><li>  <code>AWS::FSx::Volume</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>fsx:task</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>fsx:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="8"> <code>Amazon FinSpace [finspace]</code> </td><td> <code>finspace:kxenvironment/kxdatabase/kxdataview</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>finspace:kxenvironment/kxuser</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>finspace:environment</code> </td><td> <ul><li>  <code>AWS::FinSpace::Environment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>finspace:kxenvironment/kxdatabase</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>finspace:kxenvironment/kxvolume</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>finspace:kxenvironment</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>finspace:kxenvironment/kxscalinggroup</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>finspace:kxenvironment/kxcluster</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="14"> <code>Amazon Forecast [forecast]</code> </td><td> <code>forecast:dataset-import-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>forecast:predictor-backtest-export-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>forecast:forecast-endpoint</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>forecast:dataset-group</code> </td><td> <ul><li>  <code>AWS::Forecast::DatasetGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>forecast:what-if-forecast-export</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>forecast:monitor</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>forecast:forecast-export-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>forecast:dataset</code> </td><td> <ul><li>  <code>AWS::Forecast::Dataset</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>forecast:what-if-forecast</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>forecast:predictor</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>forecast:what-if-analysis</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>forecast:explainability</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>forecast:explainability-export</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>forecast:forecast</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="15"> <code>Amazon Fraud Detector [frauddetector]</code> </td><td> <code>frauddetector:detector</code> </td><td> <ul><li>  <code>AWS::FraudDetector::Detector</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>frauddetector:detector-version</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>frauddetector:batch-prediction</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>frauddetector:label</code> </td><td> <ul><li>  <code>AWS::FraudDetector::Label</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>frauddetector:event-type</code> </td><td> <ul><li>  <code>AWS::FraudDetector::EventType</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>frauddetector:external-model</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>frauddetector:batch-import</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>frauddetector:entity-type</code> </td><td> <ul><li>  <code>AWS::FraudDetector::EntityType</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>frauddetector:outcome</code> </td><td> <ul><li>  <code>AWS::FraudDetector::Outcome</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>frauddetector:model-version</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>frauddetector:list</code> </td><td> <ul><li>  <code>AWS::FraudDetector::List</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>frauddetector:rule</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>frauddetector:variable</code> </td><td> <ul><li>  <code>AWS::FraudDetector::Variable</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>frauddetector:model</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>frauddetector:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon FreeRTOS [freertos]</code> </td><td> <code>freertos:subscription</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>freertos:configuration</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="11"> <code>Amazon GameLift Servers [gamelift]</code> </td><td> <code>gamelift:script</code> </td><td> <ul><li>  <code>AWS::GameLift::Script</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>gamelift:build</code> </td><td> <ul><li>  <code>AWS::GameLift::Build</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>gamelift:containergroupdefinition</code> </td><td> <ul><li>  <code>AWS::GameLift::ContainerGroupDefinition</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>gamelift:gamesessionqueue</code> </td><td> <ul><li>  <code>AWS::GameLift::GameSessionQueue</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>gamelift:fleet</code> </td><td> <ul><li>  <code>AWS::GameLift::Fleet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>gamelift:matchmakingruleset</code> </td><td> <ul><li>  <code>AWS::GameLift::MatchmakingRuleSet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>gamelift:location</code> </td><td> <ul><li>  <code>AWS::GameLift::Location</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>gamelift:alias</code> </td><td> <ul><li>  <code>AWS::GameLift::Alias</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>gamelift:gameservergroup</code> </td><td> <ul><li>  <code>AWS::GameLift::GameServerGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>gamelift:containerfleet</code> </td><td> <ul><li>  <code>AWS::GameLift::ContainerFleet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>gamelift:matchmakingconfiguration</code> </td><td> <ul><li>  <code>AWS::GameLift::MatchmakingConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon GameLift Streams [gameliftstreams]</code> </td><td> <code>gameliftstreams:application</code> </td><td> <ul><li>  <code>AWS::GameLiftStreams::Application</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>gameliftstreams:streamgroup</code> </td><td> <ul><li>  <code>AWS::GameLiftStreams::StreamGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>Amazon GuardDuty [AWS]</code> </td><td> <code>AWS::GuardDuty::PublishingDestination</code> </td><td> <ul><li>  <code>AWS::GuardDuty::PublishingDestination</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="5"> <code>Amazon GuardDuty [guardduty]</code> </td><td> <code>guardduty:malware-protection-plan</code> </td><td> <ul><li>  <code>AWS::GuardDuty::MalwareProtectionPlan</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>guardduty:detector</code> </td><td> <ul><li>  <code>AWS::GuardDuty::Detector</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>guardduty:detector/ipset</code> </td><td> <ul><li>  <code>AWS::GuardDuty::IPSet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>guardduty:detector/threatintelset</code> </td><td> <ul><li>  <code>AWS::GuardDuty::ThreatIntelSet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>guardduty:detector/filter</code> </td><td> <ul><li>  <code>AWS::GuardDuty::Filter</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>Amazon Honeycode [honeycode]</code> </td><td> <code>honeycode:screen-automation</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>honeycode:workbook</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>honeycode:table</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>honeycode:screen</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="6"> <code>Amazon Inspector [inspector2]</code> </td><td> <code>inspector2:codescan-configuration</code> </td><td> <ul><li>  <code>AWS::InspectorV2::CisScanConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>inspector2:cis-configuration</code> </td><td> <ul><li>  <code>AWS::InspectorV2::CisScanConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>inspector2:filter</code> </td><td> <ul><li>  <code>AWS::InspectorV2::Filter</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>inspector2:codesecurity-integration</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>inspector2:codesecurity-configuration</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>inspector2:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="13"> <code>Amazon Interactive Video Service [ivs]</code> </td><td> <code>ivs:public-key</code> </td><td> <ul><li>  <code>AWS::IVS::PublicKey</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ivs:ingest-configuration</code> </td><td> <ul><li>  <code>AWS::IVS::IngestConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ivs:recording-configuration</code> </td><td> <ul><li>  <code>AWS::IVS::RecordingConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ivs:transcode-configuration</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ivs:chat-room</code> </td><td> <ul><li>  <code>AWS::IVSChat::Room</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ivs:playback-restriction-policy</code> </td><td> <ul><li>  <code>AWS::IVS::PlaybackRestrictionPolicy</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ivs:channel</code> </td><td> <ul><li>  <code>AWS::IVS::Channel</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ivs:playback-key</code> </td><td> <ul><li>  <code>AWS::IVS::PlaybackKeyPair</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ivs:stream-key</code> </td><td> <ul><li>  <code>AWS::IVS::StreamKey</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ivs:composition</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ivs:stage</code> </td><td> <ul><li>  <code>AWS::IVS::Stage</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ivs:storage-configuration</code> </td><td> <ul><li>  <code>AWS::IVS::StorageConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ivs:encoder-configuration</code> </td><td> <ul><li>  <code>AWS::IVS::EncoderConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>Amazon Kendra Intelligent Ranking [kendra-ranking]</code> </td><td> <code>kendra-ranking:rescore-execution-plan</code> </td><td> <ul><li>  <code>AWS::KendraRanking::ExecutionPlan</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="5"> <code>Amazon Kendra [kendra]</code> </td><td> <code>kendra:index</code> </td><td> <ul><li>  <code>AWS::Kendra::Index</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>kendra:index/thesaurus</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>kendra:index/query-suggestions-block-list</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>kendra:index/data-source</code> </td><td> <ul><li>  <code>AWS::Kendra::DataSource</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>kendra:index/featured-results-set</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon Keyspaces (for Apache Cassandra) [cassandra]</code> </td><td> <code>cassandra:keyspace</code> </td><td> <ul><li>  <code>AWS::Cassandra::Keyspace</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>cassandra:table</code> </td><td> <ul><li>  <code>AWS::Cassandra::Table</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon Kinesis Analytics [kinesisanalytics]</code> </td><td> <code>kinesisanalytics:application</code> </td><td> <ul><li>  <code>AWS::KinesisAnalytics::Application</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>kinesisanalytics:application</code> </td><td> <ul><li>  <code>AWS::KinesisAnalyticsV2::Application</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>kinesisanalytics:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon Kinesis Data Streams [kinesis]</code> </td><td> <code>kinesis:stream</code> </td><td> <ul><li>  <code>AWS::Kinesis::Stream</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>kinesis:stream/consumer</code> </td><td> <ul><li>  <code>AWS::Kinesis::StreamConsumer</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon Kinesis Firehose [firehose]</code> </td><td> <code>firehose:deliverystream</code> </td><td> <ul><li>  <code>AWS::KinesisFirehose::DeliveryStream</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>firehose:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon Kinesis Video Streams [kinesisvideo]</code> </td><td> <code>kinesisvideo:stream</code> </td><td> <ul><li>  <code>AWS::KinesisVideo::Stream</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>kinesisvideo:channel</code> </td><td> <ul><li>  <code>AWS::KinesisVideo::SignalingChannel</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>Amazon Lex [lex]</code> </td><td> <code>lex:bot-channel</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>lex:test-set</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>lex:bot-alias</code> </td><td> <ul><li>  <code>AWS::Lex::BotAlias</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>lex:bot</code> </td><td> <ul><li>  <code>AWS::Lex::Bot</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="14"> <code>Amazon Lightsail [lightsail]</code> </td><td> <code>lightsail:keypair</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>lightsail:distribution</code> </td><td> <ul><li>  <code>AWS::Lightsail::Distribution</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>lightsail:containerservice</code> </td><td> <ul><li>  <code>AWS::Lightsail::Container</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>lightsail:disksnapshot</code> </td><td> <ul><li>  <code>AWS::Lightsail::DiskSnapshot</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>lightsail:relationaldatabase</code> </td><td> <ul><li>  <code>AWS::Lightsail::Database</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>lightsail:certificate</code> </td><td> <ul><li>  <code>AWS::Lightsail::Certificate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>lightsail:bucket</code> </td><td> <ul><li>  <code>AWS::Lightsail::Bucket</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>lightsail:instance</code> </td><td> <ul><li>  <code>AWS::Lightsail::Instance</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>lightsail:disk</code> </td><td> <ul><li>  <code>AWS::Lightsail::Disk</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>lightsail:loadbalancer</code> </td><td> <ul><li>  <code>AWS::Lightsail::LoadBalancer</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>lightsail:domain</code> </td><td> <ul><li>  <code>AWS::Lightsail::Domain</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>lightsail:instancesnapshot</code> </td><td> <ul><li>  <code>AWS::Lightsail::InstanceSnapshot</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>lightsail:relationaldatabasesnapshot</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>lightsail:staticip</code> </td><td> <ul><li>  <code>AWS::Lightsail::StaticIp</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="6"> <code>Amazon Location [geo]</code> </td><td> <code>geo:geofence-collection</code> </td><td> <ul><li>  <code>AWS::Location::GeofenceCollection</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>geo:tracker</code> </td><td> <ul><li>  <code>AWS::Location::Tracker</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>geo:api-key</code> </td><td> <ul><li>  <code>AWS::Location::APIKey</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>geo:place-index</code> </td><td> <ul><li>  <code>AWS::Location::PlaceIndex</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>geo:route-calculator</code> </td><td> <ul><li>  <code>AWS::Location::RouteCalculator</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>geo:map</code> </td><td> <ul><li>  <code>AWS::Location::Map</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>Amazon Lookout for Equipment [lookoutequipment]</code> </td><td> <code>lookoutequipment:dataset</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>lookoutequipment:label-group</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>lookoutequipment:inference-scheduler</code> </td><td> <ul><li>  <code>AWS::LookoutEquipment::InferenceScheduler</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>lookoutequipment:model</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon Lookout for Metrics [lookoutmetrics]</code> </td><td> <code>lookoutmetrics:metricset</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>lookoutmetrics:anomalydetector</code> </td><td> <ul><li>  <code>AWS::LookoutMetrics::AnomalyDetector</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>lookoutmetrics:alert</code> </td><td> <ul><li>  <code>AWS::LookoutMetrics::Alert</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>Amazon Lookout for Vision [lookoutvision]</code> </td><td> <code>lookoutvision:model</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon MQ [mq]</code> </td><td> <code>mq:configuration</code> </td><td> <ul><li>  <code>AWS::AmazonMQ::Configuration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>mq:broker</code> </td><td> <ul><li>  <code>AWS::AmazonMQ::Broker</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>mq:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>Amazon Machine Learning [machinelearning]</code> </td><td> <code>machinelearning:evaluation</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>machinelearning:mlmodel</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>machinelearning:batchprediction</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>machinelearning:datasource</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon Macie [macie2]</code> </td><td> <code>macie2:classification-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>macie2:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="5"> <code>Amazon Macie [macie]</code> </td><td> <code>macie:allow-list</code> </td><td> <ul><li>  <code>AWS::Macie::AllowList</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>macie:member</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>macie:findings-filter</code> </td><td> <ul><li>  <code>AWS::Macie::FindingsFilter</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>macie:classification-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>macie:custom-data-identifier</code> </td><td> <ul><li>  <code>AWS::Macie::CustomDataIdentifier</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="6"> <code>Amazon Managed Blockchain [managedblockchain]</code> </td><td> <code>managedblockchain:proposals</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>managedblockchain:members</code> </td><td> <ul><li>  <code>AWS::ManagedBlockchain::Member</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>managedblockchain:accessors</code> </td><td> <ul><li>  <code>AWS::ManagedBlockchain::Accessor</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>managedblockchain:networks</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>managedblockchain:nodes</code> </td><td> <ul><li>  <code>AWS::ManagedBlockchain::Node</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>managedblockchain:invitations</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>Amazon Managed Grafana [grafana]</code> </td><td> <code>grafana:workspaces</code> </td><td> <ul><li>  <code>AWS::Grafana::Workspace</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>Amazon Managed Service for Prometheus [aps]</code> </td><td> <code>aps:scraper</code> </td><td> <ul><li>  <code>AWS::APS::Scraper</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>aps:anomalydetector</code> </td><td> <ul><li>  <code>AWS::APS::AnomalyDetector</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>aps:workspace</code> </td><td> <ul><li>  <code>AWS::APS::Workspace</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>aps:rulegroupsnamespace</code> </td><td> <ul><li>  <code>AWS::APS::RuleGroupsNamespace</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon Managed Streaming for Apache Kafka [kafka]</code> </td><td> <code>kafka:vpc-connection</code> </td><td> <ul><li>  <code>AWS::MSK::VpcConnection</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>kafka:cluster</code> </td><td> <ul><li>  <code>AWS::MSK::Cluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>kafka:replicator</code> </td><td> <ul><li>  <code>AWS::MSK::Replicator</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon Managed Streaming for Kafka Connect [kafkaconnect]</code> </td><td> <code>kafkaconnect:worker-configuration</code> </td><td> <ul><li>  <code>AWS::KafkaConnect::WorkerConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>kafkaconnect:connector</code> </td><td> <ul><li>  <code>AWS::KafkaConnect::Connector</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>kafkaconnect:custom-plugin</code> </td><td> <ul><li>  <code>AWS::KafkaConnect::CustomPlugin</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>Amazon Managed Workflows for Apache Airflow [airflow]</code> </td><td> <code>airflow:environment</code> </td><td> <ul><li>  <code>AWS::MWAA::Environment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="8"> <code>Amazon MemoryDB [memorydb]</code> </td><td> <code>memorydb:cluster</code> </td><td> <ul><li>  <code>AWS::MemoryDB::Cluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>memorydb:acl</code> </td><td> <ul><li>  <code>AWS::MemoryDB::ACL</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>memorydb:subnetgroup</code> </td><td> <ul><li>  <code>AWS::MemoryDB::SubnetGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>memorydb:reservednode</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>memorydb:multiregioncluster</code> </td><td> <ul><li>  <code>AWS::MemoryDB::MultiRegionCluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>memorydb:user</code> </td><td> <ul><li>  <code>AWS::MemoryDB::User</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>memorydb:parametergroup</code> </td><td> <ul><li>  <code>AWS::MemoryDB::ParameterGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>memorydb:snapshot</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="6"> <code>Amazon Nimble Studio [nimble]</code> </td><td> <code>nimble:studio</code> </td><td> <ul><li>  <code>AWS::NimbleStudio::Studio</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>nimble:launch-profile</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>nimble:streaming-session</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>nimble:streaming-session-backup</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>nimble:streaming-image</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>nimble:studio-component</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon One Enterprise [one]</code> </td><td> <code>one:site</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>one:device-instance</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>one:device-configuration-template</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>Amazon OpenSearch Ingestion [osis]</code> </td><td> <code>osis:pipeline</code> </td><td> <ul><li>  <code>AWS::OSIS::Pipeline</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon OpenSearch Serverless [aoss]</code> </td><td> <code>aoss:collection</code> </td><td> <ul><li>  <code>AWS::OpenSearchServerless::Collection</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>aoss:collection-group</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>aoss:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon OpenSearch [es]</code> </td><td> <code>es:domain</code> </td><td> <ul><li>  <code>AWS::Elasticsearch::Domain</code>  </li><li>  <code>AWS::OpenSearchService::Domain</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>es:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>Amazon OpenSearch [opensearch]</code> </td><td> <code>opensearch:datasource</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="12"> <code>Amazon Personalize [personalize]</code> </td><td> <code>personalize:data-deletion-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>personalize:dataset-group</code> </td><td> <ul><li>  <code>AWS::Personalize::DatasetGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>personalize:batch-segment-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>personalize:campaign</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>personalize:recommender</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>personalize:batch-inference-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>personalize:event-tracker</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>personalize:dataset-import-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>personalize:dataset</code> </td><td> <ul><li>  <code>AWS::Personalize::Dataset</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>personalize:solution</code> </td><td> <ul><li>  <code>AWS::Personalize::Solution</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>personalize:filter</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>personalize:dataset-export-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="7"> <code>Amazon Pinpoint SMS and Voice Service [sms-voice]</code> </td><td> <code>sms-voice:sender-id</code> </td><td> <ul><li>  <code>AWS::SMSVOICE::SenderId</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sms-voice:protect-configuration</code> </td><td> <ul><li>  <code>AWS::SMSVOICE::ProtectConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sms-voice:opt-out-list</code> </td><td> <ul><li>  <code>AWS::SMSVOICE::OptOutList</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sms-voice:phone-number</code> </td><td> <ul><li>  <code>AWS::SMSVOICE::PhoneNumber</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sms-voice:pool</code> </td><td> <ul><li>  <code>AWS::SMSVOICE::Pool</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sms-voice:configuration-set</code> </td><td> <ul><li>  <code>AWS::SMSVOICE::ConfigurationSet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sms-voice:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon Pinpoint [mobiletargeting]</code> </td><td> <code>mobiletargeting:templates</code> </td><td> <ul><li>  <code>AWS::Pinpoint::SmsTemplate</code>  </li><li>  <code>AWS::Pinpoint::PushTemplate</code>  </li><li>  <code>AWS::Pinpoint::InAppTemplate</code>  </li><li>  <code>AWS::Pinpoint::EmailTemplate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>mobiletargeting:apps</code> </td><td> <ul><li>  <code>AWS::Pinpoint::App</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon Q Business Q Apps [qapps]</code> </td><td> <code>qapps:application/qapp/session</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>qapps:application/qapp</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="6"> <code>Amazon Q Business [qbusiness]</code> </td><td> <code>qbusiness:application/plugin</code> </td><td> <ul><li>  <code>AWS::QBusiness::Plugin</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>qbusiness:application/retriever</code> </td><td> <ul><li>  <code>AWS::QBusiness::Retriever</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>qbusiness:application/index/data-source</code> </td><td> <ul><li>  <code>AWS::QBusiness::DataSource</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>qbusiness:application</code> </td><td> <ul><li>  <code>AWS::QBusiness::Application</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>qbusiness:application/web-experience</code> </td><td> <ul><li>  <code>AWS::QBusiness::WebExperience</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>qbusiness:application/index</code> </td><td> <ul><li>  <code>AWS::QBusiness::Index</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="12"> <code>Amazon Q in Connect [wisdom]</code> </td><td> <code>wisdom:content-association</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>wisdom:content</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>wisdom:assistant</code> </td><td> <ul><li>  <code>AWS::Wisdom::Assistant</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>wisdom:quick-response</code> </td><td> <ul><li>  <code>AWS::Wisdom::QuickResponse</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>wisdom:ai-agent</code> </td><td> <ul><li>  <code>AWS::Wisdom::AIAgent</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>wisdom:message-template</code> </td><td> <ul><li>  <code>AWS::Wisdom::MessageTemplate</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>wisdom:knowledge-base</code> </td><td> <ul><li>  <code>AWS::Wisdom::KnowledgeBase</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>wisdom:session</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>wisdom:ai-prompt</code> </td><td> <ul><li>  <code>AWS::Wisdom::AIPrompt</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>wisdom:ai-guardrail</code> </td><td> <ul><li>  <code>AWS::Wisdom::AIGuardrail</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>wisdom:association</code> </td><td> <ul><li>  <code>AWS::Wisdom::AssistantAssociation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>wisdom:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon QLDB [qldb]</code> </td><td> <code>qldb:ledger</code> </td><td> <ul><li>  <code>AWS::QLDB::Ledger</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>qldb:stream</code> </td><td> <ul><li>  <code>AWS::QLDB::Stream</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>qldb:ledger/table</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="17"> <code>Amazon QuickSight [quicksight]</code> </td><td> <code>quicksight:vpcconnection</code> </td><td> <ul><li>  <code>AWS::QuickSight::VPCConnection</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>quicksight:analysis</code> </td><td> <ul><li>  <code>AWS::QuickSight::Analysis</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>quicksight:folder</code> </td><td> <ul><li>  <code>AWS::QuickSight::Folder</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>quicksight:custompermissions</code> </td><td> <ul><li>  <code>AWS::QuickSight::CustomPermissions</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>quicksight:brand</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>quicksight:user</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>quicksight:datasource</code> </td><td> <ul><li>  <code>AWS::QuickSight::DataSource</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>quicksight:template</code> </td><td> <ul><li>  <code>AWS::QuickSight::Template</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>quicksight:topic</code> </td><td> <ul><li>  <code>AWS::QuickSight::Topic</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>quicksight:email-customization-template</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>quicksight:theme</code> </td><td> <ul><li>  <code>AWS::QuickSight::Theme</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>quicksight:customization</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>quicksight:flow</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>quicksight:action-connector</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>quicksight:namespace</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>quicksight:dataset</code> </td><td> <ul><li>  <code>AWS::QuickSight::DataSet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>quicksight:dashboard</code> </td><td> <ul><li>  <code>AWS::QuickSight::Dashboard</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon RDS [neptune-graph]</code> </td><td> <code>neptune-graph:export-task</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>neptune-graph:graph</code> </td><td> <ul><li>  <code>AWS::NeptuneGraph::Graph</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>neptune-graph:graph-snapshot</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="33"> <code>Amazon RDS [rds]</code> </td><td> <code>rds:cluster-snapshot</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>rds:db</code> </td><td> <ul><li>  <code>AWS::DocDB::DBInstance</code>  </li><li>  <code>AWS::RDS::DBInstance</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:globalcluster</code> </td><td> <ul><li>  <code>AWS::RDS::GlobalCluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>rds:global-cluster</code> </td><td> <ul><li>  <code>AWS::RDS::GlobalCluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:subgrp</code> </td><td> <ul><li>  <code>AWS::RDS::DBSubnetGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:cluster-auto-backup</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>rds:deployment</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>rds:pg</code> </td><td> <ul><li>  <code>AWS::Neptune::DBParameterGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:cluster-pg</code> </td><td> <ul><li>  <code>AWS::Neptune::DBClusterParameterGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:snapshot-tenant-database</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>rds:es</code> </td><td> <ul><li>  <code>AWS::DocDB::EventSubscription</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:pg</code> </td><td> <ul><li>  <code>AWS::RDS::DBParameterGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:target-group</code> </td><td> <ul><li>  <code>AWS::RDS::DBProxyTargetGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:cluster</code> </td><td> <ul><li>  <code>AWS::DocDB::DBCluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:snapshot</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>rds:db-proxy</code> </td><td> <ul><li>  <code>AWS::RDS::DBProxy</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:es</code> </td><td> <ul><li>  <code>AWS::RDS::EventSubscription</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:cluster-endpoint</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>rds:integration</code> </td><td> <ul><li>  <code>AWS::RDS::Integration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>rds:ri</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>rds:auto-backup</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>rds:secgrp</code> </td><td> <ul><li>  <code>AWS::RDS::DBSecurityGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:cev</code> </td><td> <ul><li>  <code>AWS::RDS::CustomDBEngineVersion</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:db-proxy-endpoint</code> </td><td> <ul><li>  <code>AWS::RDS::DBProxyEndpoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:cluster-pg</code> </td><td> <ul><li>  <code>AWS::RDS::DBClusterParameterGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:optgrp</code> </td><td> <ul><li>  <code>AWS::RDS::OptionGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>rds:og</code> </td><td> <ul><li>  <code>AWS::RDS::OptionGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:db</code> </td><td> <ul><li>  <code>AWS::Neptune::DBInstance</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:subgrp</code> </td><td> <ul><li>  <code>AWS::DocDB::DBSubnetGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:tenant-database</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>rds:subgrp</code> </td><td> <ul><li>  <code>AWS::Neptune::DBSubnetGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:cluster-pg</code> </td><td> <ul><li>  <code>AWS::DocDB::DBClusterParameterGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rds:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="5"> <code>Amazon Redshift Serverless [redshift-serverless]</code> </td><td> <code>redshift-serverless:recoverypoint</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>redshift-serverless:workgroup</code> </td><td> <ul><li>  <code>AWS::RedshiftServerless::Workgroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>redshift-serverless:namespace</code> </td><td> <ul><li>  <code>AWS::RedshiftServerless::Namespace</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>redshift-serverless:snapshot</code> </td><td> <ul><li>  <code>AWS::RedshiftServerless::Snapshot</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>redshift-serverless:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="17"> <code>Amazon Redshift [redshift]</code> </td><td> <code>redshift:eventsubscription</code> </td><td> <ul><li>  <code>AWS::Redshift::EventSubscription</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>redshift:hsmconfiguration</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>redshift:subnetgroup</code> </td><td> <ul><li>  <code>AWS::Redshift::ClusterSubnetGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>redshift:snapshotcopygrant</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>redshift:qev2idcapplication</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>redshift:securitygroupingress</code> </td><td> <ul><li>  <code>AWS::Redshift::ClusterSecurityGroupIngress</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>redshift:namespace</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>redshift:snapshotschedule</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>redshift:securitygroup</code> </td><td> <ul><li>  <code>AWS::Redshift::ClusterSecurityGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>redshift:hsmclientcertificate</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>redshift:redshiftidcapplication</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>redshift:cluster</code> </td><td> <ul><li>  <code>AWS::Redshift::Cluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>redshift:snapshot</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>redshift:usagelimit</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>redshift:integration</code> </td><td> <ul><li>  <code>AWS::Redshift::Integration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>redshift:parametergroup</code> </td><td> <ul><li>  <code>AWS::Redshift::ClusterParameterGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>redshift:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>Amazon Rekognition [rekognition]</code> </td><td> <code>rekognition:project/version</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>rekognition:project</code> </td><td> <ul><li>  <code>AWS::Rekognition::Project</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>rekognition:collection</code> </td><td> <ul><li>  <code>AWS::Rekognition::Collection</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>rekognition:streamprocessor</code> </td><td> <ul><li>  <code>AWS::Rekognition::StreamProcessor</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon Route 53 Profiles [route53profiles]</code> </td><td> <code>route53profiles:profile-association</code> </td><td> <ul><li>  <code>AWS::Route53Profiles::ProfileAssociation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>route53profiles:profile</code> </td><td> <ul><li>  <code>AWS::Route53Profiles::Profile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon Route 53 Recovery Controls [route53-recovery-control]</code> </td><td> <code>route53-recovery-control:controlpanel/safetyrule</code> </td><td> <ul><li>  <code>AWS::Route53RecoveryControl::SafetyRule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>route53-recovery-control:cluster</code> </td><td> <ul><li>  <code>AWS::Route53RecoveryControl::Cluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>route53-recovery-control:controlpanel</code> </td><td> <ul><li>  <code>AWS::Route53RecoveryControl::ControlPanel</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>Amazon Route 53 Recovery Readiness [route53-recovery-readiness]</code> </td><td> <code>route53-recovery-readiness:recovery-group</code> </td><td> <ul><li>  <code>AWS::Route53RecoveryReadiness::RecoveryGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>route53-recovery-readiness:readiness-check</code> </td><td> <ul><li>  <code>AWS::Route53RecoveryReadiness::ReadinessCheck</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>route53-recovery-readiness:cell</code> </td><td> <ul><li>  <code>AWS::Route53RecoveryReadiness::Cell</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>route53-recovery-readiness:resource-set</code> </td><td> <ul><li>  <code>AWS::Route53RecoveryReadiness::ResourceSet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="8"> <code>Amazon Route 53 Resolver [route53resolver]</code> </td><td> <code>route53resolver:resolver-rule</code> </td><td> <ul><li>  <code>AWS::Route53Resolver::ResolverRule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>route53resolver:firewall-domain-list</code> </td><td> <ul><li>  <code>AWS::Route53Resolver::FirewallDomainList</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>route53resolver:resolver-endpoint</code> </td><td> <ul><li>  <code>AWS::Route53Resolver::ResolverEndpoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>route53resolver:resolver-query-log-config</code> </td><td> <ul><li>  <code>AWS::Route53Resolver::ResolverQueryLoggingConfig</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>route53resolver:firewall-rule-group</code> </td><td> <ul><li>  <code>AWS::Route53Resolver::FirewallRuleGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>route53resolver:firewall-rule-group-association</code> </td><td> <ul><li>  <code>AWS::Route53Resolver::FirewallRuleGroupAssociation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>route53resolver:outpost-resolver</code> </td><td> <ul><li>  <code>AWS::Route53Resolver::OutpostResolver</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>route53resolver:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="4"> <code>Amazon Route 53 [route53]</code> </td><td> <code>route53:healthcheck</code> </td><td> <ul><li>  <code>AWS::Route53::HealthCheck</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>route53:domain</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>route53:hostedzone</code> </td><td> <ul><li>  <code>AWS::Route53::HostedZone</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>route53:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon S3 Express [s3express]</code> </td><td> <code>s3express:accesspoint</code> </td><td> <ul><li>  <code>AWS::S3Express::AccessPoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>s3express:bucket</code> </td><td> <ul><li>  <code>AWS::S3Express::DirectoryBucket</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>Amazon S3 Glacier [glacier]</code> </td><td> <code>glacier:vaults</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon S3 Tables [s3tables]</code> </td><td> <code>s3tables:TableBucket</code> </td><td> <ul><li>  <code>AWS::S3Tables::TableBucket</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>s3tables:table</code> </td><td> <ul><li>  <code>AWS::S3Tables::Table</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon S3 Vectors [s3vectors]</code> </td><td> <code>s3vectors:index</code> </td><td> <ul><li>  <code>AWS::S3Vectors::Index</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>s3vectors:vectorbucket</code> </td><td> <ul><li>  <code>AWS::S3Vectors::VectorBucket</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="10"> <code>Amazon S3 [s3]</code> </td><td> <code>s3:accessgrantsinstance</code> </td><td> <ul><li>  <code>AWS::S3::AccessGrantsInstance</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>s3:bucket</code> </td><td> <ul><li>  <code>AWS::S3::Bucket</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>s3:job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>s3:access-grants</code> </td><td> <ul><li>  <code>AWS::S3::AccessGrant</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>s3:storage-lens</code> </td><td> <ul><li>  <code>AWS::S3::StorageLens</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>s3:access-grants/location</code> </td><td> <ul><li>  <code>AWS::S3::AccessGrantsLocation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>s3:accessgrantslocation</code> </td><td> <ul><li>  <code>AWS::S3::AccessGrantsLocation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>s3:storage-lens-group</code> </td><td> <ul><li>  <code>AWS::S3::StorageLensGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>s3:accesspoint</code> </td><td> <ul><li>  <code>AWS::S3::AccessPoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>s3:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="10"> <code>Amazon SES [ses]</code> </td><td> <code>ses:identity</code> </td><td> <ul><li>  <code>AWS::SES::EmailIdentity</code>  </li><li>  <code>AWS::PinpointEmail::Identity</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ses:dedicated-ip-pool</code> </td><td> <ul><li>  <code>AWS::SES::DedicatedIpPool</code>  </li><li>  <code>AWS::PinpointEmail::DedicatedIpPool</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ses:contact-list</code> </td><td> <ul><li>  <code>AWS::SES::ContactList</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ses:mailmanager-ingress-point</code> </td><td> <ul><li>  <code>AWS::SES::MailManagerIngressPoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ses:configuration-set</code> </td><td> <ul><li>  <code>AWS::SES::ConfigurationSet</code>  </li><li>  <code>AWS::PinpointEmail::ConfigurationSet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ses:mailmanager-address-list</code> </td><td> <ul><li>  <code>AWS::SES::MailManagerAddressList</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ses:multi-region-endpoint</code> </td><td> <ul><li>  <code>AWS::SES::MultiRegionEndpoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>ses:mailmanager-archive</code> </td><td> <ul><li>  <code>AWS::SES::MailManagerArchive</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ses:mailmanager-traffic-policy</code> </td><td> <ul><li>  <code>AWS::SES::MailManagerTrafficPolicy</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>ses:mailmanager-rule-set</code> </td><td> <ul><li>  <code>AWS::SES::MailManagerRuleSet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon SNS [sns]</code> </td><td> <code>sns:topic</code> </td><td> <ul><li>  <code>AWS::SNS::Topic</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sns:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon SQS [sqs]</code> </td><td> <code>sqs:queue</code> </td><td> <ul><li>  <code>AWS::SQS::Queue</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sqs:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="64"> <code>Amazon SageMaker [sagemaker]</code> </td><td> <code>sagemaker:image</code> </td><td> <ul><li>  <code>AWS::SageMaker::Image</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:model-quality-job-definition</code> </td><td> <ul><li>  <code>AWS::SageMaker::ModelQualityJobDefinition</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:monitoring-schedule</code> </td><td> <ul><li>  <code>AWS::SageMaker::MonitoringSchedule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:transform-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:code-repository</code> </td><td> <ul><li>  <code>AWS::SageMaker::CodeRepository</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:imageversion</code> </td><td> <ul><li>  <code>AWS::SageMaker::ImageVersion</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:experiment</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:action</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:hyper-parameter-tuning-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:model-bias-job-definition</code> </td><td> <ul><li>  <code>AWS::SageMaker::ModelBiasJobDefinition</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:app-image-config</code> </td><td> <ul><li>  <code>AWS::SageMaker::AppImageConfig</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:model</code> </td><td> <ul><li>  <code>AWS::SageMaker::Model</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:training-plan</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:workforce</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:model-explainability-job-definition</code> </td><td> <ul><li>  <code>AWS::SageMaker::ModelExplainabilityJobDefinition</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:model-card</code> </td><td> <ul><li>  <code>AWS::SageMaker::ModelCard</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:model-card-export-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:notebook-instance-lifecycle-config</code> </td><td> <ul><li>  <code>AWS::SageMaker::NotebookInstanceLifecycleConfig</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:notebook-instance</code> </td><td> <ul><li>  <code>AWS::SageMaker::NotebookInstance</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:compilation-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:model-package</code> </td><td> <ul><li>  <code>AWS::SageMaker::ModelPackage</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:data-quality-job-definition</code> </td><td> <ul><li>  <code>AWS::SageMaker::DataQualityJobDefinition</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:user-profile</code> </td><td> <ul><li>  <code>AWS::SageMaker::UserProfile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:domain</code> </td><td> <ul><li>  <code>AWS::SageMaker::Domain</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:mlflow-tracking-server</code> </td><td> <ul><li>  <code>AWS::SageMaker::MlflowTrackingServer</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:edge-packaging-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:cluster</code> </td><td> <ul><li>  <code>AWS::SageMaker::Cluster</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:device</code> </td><td> <ul><li>  <code>AWS::SageMaker::Device</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:feature-group</code> </td><td> <ul><li>  <code>AWS::SageMaker::FeatureGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:artifact</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:studio-lifecycle-config</code> </td><td> <ul><li>  <code>AWS::SageMaker::StudioLifecycleConfig</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:cluster-scheduler-config</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:automl-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:app</code> </td><td> <ul><li>  <code>AWS::SageMaker::App</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:space</code> </td><td> <ul><li>  <code>AWS::SageMaker::Space</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:inference-component</code> </td><td> <ul><li>  <code>AWS::SageMaker::InferenceComponent</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:endpoint</code> </td><td> <ul><li>  <code>AWS::SageMaker::Endpoint</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:workteam</code> </td><td> <ul><li>  <code>AWS::SageMaker::Workteam</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:inference-experiment</code> </td><td> <ul><li>  <code>AWS::SageMaker::InferenceExperiment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:optimization-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:algorithm</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:pipeline/execution</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:pipeline-execution</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:project</code> </td><td> <ul><li>  <code>AWS::SageMaker::Project</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:model-package-group</code> </td><td> <ul><li>  <code>AWS::SageMaker::ModelPackageGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:labeling-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:edge-deployment</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:training-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:compute-quota</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:reserved-capacity</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:context</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:partner-app</code> </td><td> <ul><li>  <code>AWS::SageMaker::PartnerApp</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:experiment-trial</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:hub</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:flow-definition</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:pipeline</code> </td><td> <ul><li>  <code>AWS::SageMaker::Pipeline</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:lineage-group</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:inference-recommendations-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:device-fleet</code> </td><td> <ul><li>  <code>AWS::SageMaker::DeviceFleet</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:hub-content</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:experiment-trial-component</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker:endpoint-config</code> </td><td> <ul><li>  <code>AWS::SageMaker::EndpointConfig</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:processing-job</code> </td><td> <ul><li>  <code>AWS::SageMaker::ProcessingJob</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>sagemaker:human-task-ui</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon SageMaker geospatial capabilities [sagemaker-geospatial]</code> </td><td> <code>sagemaker-geospatial:raster-data-collection</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker-geospatial:earth-observation-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>sagemaker-geospatial:vector-enrichment-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon Security Lake [securitylake]</code> </td><td> <code>securitylake:data-lake</code> </td><td> <ul><li>  <code>AWS::SecurityLake::DataLake</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>securitylake:subscriber</code> </td><td> <ul><li>  <code>AWS::SecurityLake::Subscriber</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>securitylake:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>Amazon Simple Workflow Service [swf]</code> </td><td> <code>swf:domain</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon Textract [textract]</code> </td><td> <code>textract:adapters</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>textract:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>Amazon Timestream InfluxDB [timestream-influxdb]</code> </td><td> <code>timestream-influxdb:db-instance</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="3"> <code>Amazon Timestream [timestream]</code> </td><td> <code>timestream:database</code> </td><td> <ul><li>  <code>AWS::Timestream::Database</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>timestream:database/table</code> </td><td> <ul><li>  <code>AWS::Timestream::Table</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>timestream:scheduled-query</code> </td><td> <ul><li>  <code>AWS::Timestream::ScheduledQuery</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="7"> <code>Amazon Transcribe [transcribe]</code> </td><td> <code>transcribe:vocabulary-filter</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>transcribe:vocabulary</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>transcribe:transcription-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>transcribe:medical-transcription-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>transcribe:medical-vocabulary</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>transcribe:medical-scribe-job</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>transcribe:language-model</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>Amazon Translate [translate]</code> </td><td> <code>translate:parallel-data</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>translate:terminology</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="13"> <code>Amazon VPC Lattice [vpc-lattice]</code> </td><td> <code>vpc-lattice:service/listener/rule</code> </td><td> <ul><li>  <code>AWS::VpcLattice::Rule</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>vpc-lattice:servicenetworkserviceassociation</code> </td><td> <ul><li>  <code>AWS::VpcLattice::ServiceNetworkServiceAssociation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>vpc-lattice:service/listener</code> </td><td> <ul><li>  <code>AWS::VpcLattice::Listener</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>vpc-lattice:accesslogsubscription</code> </td><td> <ul><li>  <code>AWS::VpcLattice::AccessLogSubscription</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>vpc-lattice:servicenetworkresourceassociation</code> </td><td> <ul><li>  <code>AWS::VpcLattice::ServiceNetworkResourceAssociation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>vpc-lattice:domainverification</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>vpc-lattice:resourceendpointassociation</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>vpc-lattice:servicenetworkvpcassociation</code> </td><td> <ul><li>  <code>AWS::VpcLattice::ServiceNetworkVpcAssociation</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>vpc-lattice:service</code> </td><td> <ul><li>  <code>AWS::VpcLattice::Service</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>vpc-lattice:servicenetwork</code> </td><td> <ul><li>  <code>AWS::VpcLattice::ServiceNetwork</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>vpc-lattice:resourceconfiguration</code> </td><td> <ul><li>  <code>AWS::VpcLattice::ResourceConfiguration</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>vpc-lattice:targetgroup</code> </td><td> <ul><li>  <code>AWS::VpcLattice::TargetGroup</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>vpc-lattice:resourcegateway</code> </td><td> <ul><li>  <code>AWS::VpcLattice::ResourceGateway</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>Amazon Verified Permissions [verifiedpermissions]</code> </td><td> <code>verifiedpermissions:policy-store</code> </td><td> <ul><li>  <code>AWS::VerifiedPermissions::PolicyStore</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>Amazon WorkLink [worklink]</code> </td><td> <code>worklink:fleet</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>Amazon WorkMail [workmail]</code> </td><td> <code>workmail:organization</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="10"> <code>Amazon WorkSpaces Secure Browser [workspaces-web]</code> </td><td> <code>workspaces-web:portal</code> </td><td> <ul><li>  <code>AWS::WorkSpacesWeb::Portal</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>workspaces-web:ipaccesssettings</code> </td><td> <ul><li>  <code>AWS::WorkSpacesWeb::IpAccessSettings</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>workspaces-web:useraccessloggingsettings</code> </td><td> <ul><li>  <code>AWS::WorkSpacesWeb::UserAccessLoggingSettings</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>workspaces-web:dataprotectionsettings</code> </td><td> <ul><li>  <code>AWS::WorkSpacesWeb::DataProtectionSettings</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>workspaces-web:sessionlogger</code> </td><td> <ul><li>  <code>AWS::WorkSpacesWeb::SessionLogger</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>workspaces-web:usersettings</code> </td><td> <ul><li>  <code>AWS::WorkSpacesWeb::UserSettings</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>workspaces-web:browsersettings</code> </td><td> <ul><li>  <code>AWS::WorkSpacesWeb::BrowserSettings</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>workspaces-web:identityprovider</code> </td><td> <ul><li>  <code>AWS::WorkSpacesWeb::IdentityProvider</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>workspaces-web:networksettings</code> </td><td> <ul><li>  <code>AWS::WorkSpacesWeb::NetworkSettings</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>workspaces-web:truststore</code> </td><td> <ul><li>  <code>AWS::WorkSpacesWeb::TrustStore</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>Amazon WorkSpaces Secure Browser [workspacesweb]</code> </td><td> <code>workspacesweb:identityprovider</code> </td><td> <ul><li>  <code>AWS::WorkSpacesWeb::IdentityProvider</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="5"> <code>Amazon WorkSpaces Thin Client [thinclient]</code> </td><td> <code>thinclient:environment</code> </td><td> <ul><li>  <code>AWS::WorkSpacesThinClient::Environment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>thinclient:environments</code> </td><td> <ul><li>  <code>AWS::WorkSpacesThinClient::Environment</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>thinclient:device</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>thinclient:devices</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>thinclient:softwareset</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="8"> <code>Amazon WorkSpaces [workspaces]</code> </td><td> <code>workspaces:directory</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>workspaces:workspace</code> </td><td> <ul><li>  <code>AWS::WorkSpaces::Workspace</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>workspaces:workspacebundle</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>workspaces:workspaceimage</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>workspaces:connectionalias</code> </td><td> <ul><li>  <code>AWS::WorkSpaces::ConnectionAlias</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>workspaces:workspacespool</code> </td><td> <ul><li>  <code>AWS::WorkSpaces::WorkspacesPool</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>workspaces:workspaceipgroup</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>workspaces:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td rowspan="2"> <code>Deprecated - AWS IoT 1-Click [iot1click]</code> </td><td> <code>iot1click:devices</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iot1click:projects</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>Deprecated AWS IoT RoboRunner [iotroborunner]</code> </td><td> <code>iotroborunner:site</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>iotroborunner:site/worker-fleet</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td rowspan="2"> <code>Multi-party approval [mpa]</code> </td><td> <code>mpa:approval-team</code> </td><td> <ul><li>  <code>AWS::MPA::ApprovalTeam</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>mpa:identity-source</code> </td><td> <ul><li>  <code>AWS::MPA::IdentitySource</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>Service Quotas [servicequotas]</code> </td><td> <code>servicequotas:quota</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
+  <tr><td> <code>route53globalresolver [route53globalresolver]</code> </td><td> <code>route53globalresolver:firewall-domain-list</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
 </tbody>
 </table>
 

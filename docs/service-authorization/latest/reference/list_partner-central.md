@@ -791,6 +791,11 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   ListOpportunityFromEngagementTasks  **
+  - **SDK client:** partnercentral-selling
+  - **IAM action:**  [partnercentral:ListEngagementFromOpportunityTasks](#list_partner-central-action-ListEngagementFromOpportunityTasks)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
+  - **IAM action:**  [partnercentral:ListOpportunityFromEngagementTasks](#list_partner-central-action-ListOpportunityFromEngagementTasks)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
+
 - **   ListProspectingFromEngagementTasks  **
   - **SDK client:** partnercentral-selling
   - **IAM action:**  [partnercentral:ListProspectingFromEngagementTasks](#list_partner-central-action-ListProspectingFromEngagementTasks)

@@ -56,7 +56,7 @@ The following tables contain contact data.
 |  queue\_name  |  string  |  Yes  |  The name of the queue.  |
 |  queue\_arn  |  string  |  Yes  |  ARN of the queue.  |
 |  queue\_id  |  string  |  Yes  |  ID of the queue.  |
-|  agent\_connection\_attempts  |  bigint  |  Yes  |  The number of times Amazon Connect attempted to connect this contact with an agent.  |
+|  agent\_connection\_attempts  |  bigint  |  Yes  |  The number of times Amazon Connect Customer attempted to connect this contact with an agent.  |
 |  agent\_connected\_to\_agent\_timestamp  | Timestamp  |  Yes  |  The Timestamp the contact was connected to the agent.  |
 |  agent\_interaction\_duration\_ms  |  bigint  |  Yes  |  The total time that agents spent interacting with customers  in milliseconds.  |
 |  agent\_customer\_hold\_duration\_ms  |  bigint  |  Yes  |  Total time that agents and contact were on hold  in milliseconds.  |
@@ -143,7 +143,7 @@ The following tables contain contact data.
 |  total\_pause\_count  |  bigint  |  Yes  |  Total number of pauses including when the contact was not connected.  |
 |  quality\_metrics\_agent\_audio |  struct  |  Yes  |  Information about the quality of the agent's media connection. This is a measure of how the agent sounded to the customer.  |
 | quality\_metrics\_customer\_audio  |  struct  |  Yes  |  Information about the quality of the customer's media connection. This is a measure of how the customer sounded to the agent.  |
-| segment\_attributes  |  map(string, string)  |  Yes  |  A set of system defined key-value pairs stored on individual contact segments using an attribute map. The attributes are standard Amazon Connect attributes and can be accessed in flows. Attribute keys can include only alphanumeric, -, and \_ characters.  |
+| segment\_attributes  |  map(string, string)  |  Yes  |  A set of system defined key-value pairs stored on individual contact segments using an attribute map. The attributes are standard Amazon Connect Customer attributes and can be accessed in flows. Attribute keys can include only alphanumeric, -, and \_ characters.  |
 |  data\_lake\_last\_processed\_timestamp  |  Timestamp  |  Yes  |  Timestamp, which shows the last time the data lake processed the record. This can include transformation and backfill. This field cannot reliably be used to determine data freshness.  |
 | chat\_contact\_metrics\_total\_messages | bigint |  Yes  | The number of chat messages on the contact |
 | chat\_contact\_metrics\_conversation\_close\_time\_ms | bigint |  Yes  | The time it took for a contact to end after the last customer message |
@@ -171,7 +171,7 @@ The following tables contain contact data.
 | chat\_customer\_metrics\_total\_response\_time\_ms | bigint |  Yes  | The total chat response time by Customer. |
 | chat\_customer\_metrics\_max\_response\_time\_ms | bigint |  Yes  | The maximum chat response time by Customer. |
 | chat\_customer\_metrics\_last\_message\_timestamp | Timestamp |  Yes  | The Timestamp of last chat message by Customer. |
-| q\_in\_connect\_session\_arn | string |  Yes  | The ARN of Connect AI agents session. |
+| q\_in\_connect\_session\_arn | string |  Yes  | The ARN of agent assist session. |
 | ai\_agents | array(struct) |  Yes  | The AI Agent information of the contact. Each object includes ai\_use\_case (string), ai\_agent\_version\_id (string), and ai\_agent\_escalated (boolean). |
 | customer\_phone\_number\_prefix | string |  Yes  | The prefix of the customer phone number. |
 | agent\_capabilities\_video | string |  Yes  | Indicates whether the agent's endpoint can send video. A value of SEND means video is supported. |
@@ -232,14 +232,14 @@ The following tables contain contact data.
 |  is\_handled\_incoming  |  bigint  |  Yes  |  A flag indicating whether a contact is an incoming contact that was handled by an agent, including inbound contacts and transferred contacts.  |
 |  is\_handled\_outbound  |  bigint  |  Yes  |  A flag indicating whether a contact is an outbound contact that was handled by an agent.  |
 |  is\_callback\_handled  |  bigint  |  Yes  |  A flag indicating whether a contact is a callback and handled by an agent.  |
-|  is\_api\_handled  |  bigint  |  Yes  |  A flag indicating whether a contact is initiated using an Connect Customer API operation and handled by an agent.  |
+|  is\_api\_handled  |  bigint  |  Yes  |  A flag indicating whether a contact is initiated using a Connect Customer API operation and handled by an agent.  |
 |  is\_put\_on\_hold  |  bigint  |  Yes  |  A flag indicating whether a contact is put on hold.  |
 |  is\_hold\_disconnect  |  bigint  |  Yes  |  A flag indicating whether a contact is disconnected while the customer was on hold.  |
 |  is\_hold\_agent\_disconnect  |  bigint  |  Yes  |  A flag indicating whether a contact is disconnected by the agent while the customer was on hold.  |
 |  is\_hold\_customer\_disconnect  |  bigint  |  Yes  |  A flag indicating whether a contact is disconnected by the customer while the customer was on hold.  |
 |  is\_incoming  |  bigint  |  Yes  |  A flag indicating whether a contact is an incoming contacts, including inbound contacts and transferred contacts.  |
 |  is\_callback\_contact  |  bigint  |  Yes  |  A flag indicating whether a contact is callback.  |
-|  is\_api\_contact  |  bigint  |  Yes  |  A flag indicating whether a contact is initiated using an Connect Customer API operation.  |
+|  is\_api\_contact  |  bigint  |  Yes  |  A flag indicating whether a contact is initiated using a Connect Customer API operation.  |
 |  is\_queued  |  bigint  |  Yes  |  A flag indicating whether a contact is put in queue.  |
 |  is\_queued\_and\_handled  |  bigint  |  Yes  |  A flag indicating whether a contact is put in queue and handled by agent.  |
 |  is\_transferred\_in  |  bigint  |  Yes  |  A flag indicating whether a contact is transferred in.  |

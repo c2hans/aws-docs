@@ -58,7 +58,7 @@ Only a demo is available in the AWS Management Console. To start a custom real-t
 ## HTTP/2 stream
 <a name="analytics-start-http2"></a>
 
-This example creates an HTTP/2 request with Call Analytics enabled. For more information on using HTTP/2 streaming with Amazon Transcribe, see [Setting up an HTTP/2 stream](streaming-setting-up.md#streaming-http2). For more detail on parameters and headers specific to Amazon Transcribe, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartCallAnalyticsStreamTranscription.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartCallAnalyticsStreamTranscription.html).
+This example creates an HTTP/2 request with Call Analytics enabled. For more information on using HTTP/2 streaming with Amazon Transcribe, see [Setting up an HTTP/2 stream](streaming-setting-up.md#streaming-http2). For more detail on parameters and headers specific to Amazon Transcribe, see [`StartCallAnalyticsStreamTranscription`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartCallAnalyticsStreamTranscription.html).
 
 This example includes [post-call analytics](tca-post-call.md). If you don't want post-call analytics, remove the `PostCallAnalyticsSettings` section from the request.
 
@@ -107,7 +107,7 @@ Parameter definitions can be found in the [API Reference](https://docs.aws.amazo
 ## WebSocket stream
 <a name="analytics-start-websocket"></a>
 
-This example creates a presigned URL that uses Call Analytics in a WebSocket stream. Line breaks have been added for readability. For more information on using WebSocket streams with Amazon Transcribe, see [Setting up a WebSocket stream](streaming-setting-up.md#streaming-websocket). For more detail on parameters, see [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartCallAnalyticsStreamTranscription.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartCallAnalyticsStreamTranscription.html).
+This example creates a presigned URL that uses Call Analytics in a WebSocket stream. Line breaks have been added for readability. For more information on using WebSocket streams with Amazon Transcribe, see [Setting up a WebSocket stream](streaming-setting-up.md#streaming-websocket). For more detail on parameters, see [`StartCallAnalyticsStreamTranscription`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartCallAnalyticsStreamTranscription.html).
 
 This example includes [post-call analytics](tca-post-call.md). If you don't want post-call analytics, remove the `PostCallAnalyticsSettings` section from the request.
 
@@ -162,7 +162,7 @@ For more information, see [Setting up a streaming transcription](streaming-setti
 ## Creating real-time alerts for category matches
 <a name="tca-create-alert-stream"></a>
 
-To set up real-time alerts, you must first create a [https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html) category with the `REAL_TIME` flag. This flag allows your category to be applied to real-time Call Analytics transcriptions.
+To set up real-time alerts, you must first create a [`TranscriptFilterType`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html) category with the `REAL_TIME` flag. This flag allows your category to be applied to real-time Call Analytics transcriptions.
 
 For instructions on creating a new category, see [Creating categories for real-time transcriptions](tca-categories-stream.md).
 

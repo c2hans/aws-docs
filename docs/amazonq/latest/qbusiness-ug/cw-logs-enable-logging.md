@@ -91,4 +91,4 @@ To enable conversation logging, you need the Amazon Resource Name (ARN) of your 
    }
    ```
 **Note**
-If you want the users' email recorded in your logs, it must be added explicitly as a field along with the [other fields](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/cw-log-examples.html) that you want in the [https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateDelivery.html#CWL-CreateDelivery-request-recordFields](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateDelivery.html#CWL-CreateDelivery-request-recordFields) parameter as part of calling the `CreateDelivery` operation .
+If you want the users' email recorded in your logs, it must be added explicitly as a field along with the [other fields](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/cw-log-examples.html) that you want in the [`recordFields`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateDelivery.html#CWL-CreateDelivery-request-recordFields) parameter as part of calling the `CreateDelivery` operation .

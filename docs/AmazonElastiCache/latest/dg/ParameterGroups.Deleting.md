@@ -53,7 +53,7 @@ aws elasticache delete-cache-parameter-group ^
     --cache-parameter-group-name {{myRed7}}
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/elasticache/delete-cache-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/elasticache/delete-cache-parameter-group.html).
+For more information, see [`delete-cache-parameter-group`](https://docs.aws.amazon.com/cli/latest/reference/elasticache/delete-cache-parameter-group.html).
 
 ## Deleting a parameter group (ElastiCache API)
 <a name="ParameterGroups.Deleting.API"></a>
@@ -88,4 +88,4 @@ https://elasticache.us-west-2.amazonaws.com/
    &X-Amz-Credential=<credential>
 ```
 
-For more information, see [https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DeleteCacheParameterGroup.html](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DeleteCacheParameterGroup.html).
+For more information, see [`DeleteCacheParameterGroup`](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DeleteCacheParameterGroup.html).

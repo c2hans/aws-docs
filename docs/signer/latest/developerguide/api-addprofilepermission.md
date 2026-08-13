@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/api-addprof
 # AddProfilePermission
 <a name="api-addprofilepermission"></a>
 
-The following Java example shows how to use the [https://docs.aws.amazon.com/signer/latest/api/API_AddProfilePermission.html](https://docs.aws.amazon.com/signer/latest/api/API_AddProfilePermission.html) operation.
+The following Java example shows how to use the [`AddProfilePermission`](https://docs.aws.amazon.com/signer/latest/api/API_AddProfilePermission.html) operation.
 
 ```
 package com.examples;

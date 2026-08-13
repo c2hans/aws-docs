@@ -28,7 +28,7 @@ You can identify which servers are using the `VPC_ENDPOINT` using the AWS Manage
 
 **To identify servers using `VPC_ENDPOINT` across multiple AWS Regions and accounts**
 
-If you have servers in multiple AWS regions and in multiple AWS accounts, you can use the following example script, with modifications, to identify servers using the `VPC_ENDPOINT` endpoint type. The example script uses the Amazon EC2 [DescribeRegions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeRegions.html) and the Transfer Family [https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListServers.html](https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListServers.html) API operations. If you have many AWS accounts, you could loop through your accounts using an IAM Role with read only auditor access if you authenticate using session profiles to your identity provider.
+If you have servers in multiple AWS regions and in multiple AWS accounts, you can use the following example script, with modifications, to identify servers using the `VPC_ENDPOINT` endpoint type. The example script uses the Amazon EC2 [DescribeRegions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeRegions.html) and the Transfer Family [ListServers](https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListServers.html) API operations. If you have many AWS accounts, you could loop through your accounts using an IAM Role with read only auditor access if you authenticate using session profiles to your identity provider.
 
 1. Following is a simple example.
 

@@ -35,11 +35,11 @@ You can use the AWS Management Console to remove invited member accounts from yo
 ------
 #### [ Detective API/CLI  ]
 
-You can use the Detective API or the AWS Command Line Interface to remove invited member accounts from your behavior graph. To get the ARN of your behavior graph to use in the request, use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html) operation.
+You can use the Detective API or the AWS Command Line Interface to remove invited member accounts from your behavior graph. To get the ARN of your behavior graph to use in the request, use the [`ListGraphs`](https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGraphs.html) operation.
 
 **To remove invited member accounts from your behavior graph (Detective API, AWS CLI)**
-+ **Detective API:** Use the [https://docs.aws.amazon.com/detective/latest/APIReference/API_DeleteMembers.html](https://docs.aws.amazon.com/detective/latest/APIReference/API_DeleteMembers.html) operation. Specify the graph ARN and the list of account identifiers for the member accounts to remove.
-+ **AWS CLI:** At the command line, run the [https://docs.aws.amazon.com/cli/latest/reference/detective/delete-members.html](https://docs.aws.amazon.com/cli/latest/reference/detective/delete-members.html) command.
++ **Detective API:** Use the [`DeleteMembers`](https://docs.aws.amazon.com/detective/latest/APIReference/API_DeleteMembers.html) operation. Specify the graph ARN and the list of account identifiers for the member accounts to remove.
++ **AWS CLI:** At the command line, run the [`delete-members`](https://docs.aws.amazon.com/cli/latest/reference/detective/delete-members.html) command.
 
   ```
   aws detective delete-members --account-ids {{<account ID list>}} --graph-arn {{<behavior graph ARN>}}

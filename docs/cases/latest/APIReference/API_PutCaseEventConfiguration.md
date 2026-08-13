@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_PutCaseEve
 # PutCaseEventConfiguration
 <a name="API_connect-cases_PutCaseEventConfiguration"></a>
 
-Adds case event publishing configuration. For a complete list of fields you can add to the event message, see [Create case fields](https://docs.aws.amazon.com/connect/latest/adminguide/case-fields.html) in the *Connect Customer Administrator Guide*
+Adds case event publishing configuration. For a complete list of fields you can add to the event message, see [Create case fields](https://docs.aws.amazon.com/connect/latest/adminguide/case-fields.html) in the *Connect Customer Administrator Guide*.
 
 ## Request Syntax
 <a name="API_connect-cases_PutCaseEventConfiguration_RequestSyntax"></a>

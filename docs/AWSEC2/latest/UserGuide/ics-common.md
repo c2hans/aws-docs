@@ -53,7 +53,7 @@ Verify that a local network configuration isn't blocking access. Try to connect 
 If the instance can't be reached during logon, there could a problem with Remote Desktop Services (RDS) on the instance.
 
 **Tip**
-You can use the `AWSSupport-TroubleshootRDP` runbook to check and modify various settings that might affect Remote Desktop Protocol (RDP) connections. For more information, see [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-troubleshootrdp.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-troubleshootrdp.html) in the *AWS Systems Manager Automation runbook reference*.
+You can use the `AWSSupport-TroubleshootRDP` runbook to check and modify various settings that might affect Remote Desktop Protocol (RDP) connections. For more information, see [`AWSSupport-TroubleshootRDP`](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-troubleshootrdp.html) in the *AWS Systems Manager Automation runbook reference*.
 
 **Remote Desktop Services configuration**
 

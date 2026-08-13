@@ -64,4 +64,27 @@ If you are using an access point attached to a volume on an Amazon FSx file syst
     ]
 ```
 
+If you are using an access point attached to an S3 recovery point in AWS Backup, data plane requests (such as `GetObject` and `ListObjectsV2`) are logged in CloudTrail the same way as requests through standard S3 access points. For example:
+
+```
+"resources": [
+        {
+            "accountId": "123456789012",
+            "type": "AWS::Backup::BackupAccessPoint",
+            "ARN": "arn:aws:backup:us-east-1:123456789012:accesspoint/my-access-point"
+        },
+        {
+            "type": "AWS::S3::Object",
+            "ARN": "arn:aws:s3:us-east-1:123456789012:accesspoint/my-access-point/object/path/to/my-file.txt"
+        },
+        {
+            "accountId": "123456789012",
+            "type": "AWS::S3::AccessPoint",
+            "ARN": "arn:aws:s3:us-east-1:123456789012:accesspoint/my-access-point"
+        }
+    ]
+```
+
+Control plane operations for backup access points (such as `CreateBackupAccessPoint` and `DeleteBackupAccessPoint`) are logged as AWS Backup events. For more information, see [Monitoring AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/monitoring.html) in the *AWS Backup Developer Guide*.
+
 For more information about S3 Server Access Logs, see [Logging requests with server access logging](ServerLogs.md). For more information about AWS CloudTrail, see [What is AWS CloudTrail?](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) in the *AWS CloudTrail User Guide*.

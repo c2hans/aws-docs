@@ -55,7 +55,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/updating-best-practice.h
 
  Preparing for smaller updates to the OS, such as a new point release of AL2023 is intended to be limited to zero effort. Be sure to read the [AL2023 Release Notes](https://docs.aws.amazon.com/linux/al2023/release-notes/) for any upcoming changes.
 
- The [support period of a package](https://docs.aws.amazon.com/linux/al2023/release-notes/support-info-by-support-statement.html) coming to an end may involve moving to a newer version of the language runtime (such as with [PHP in AL2023](php.md)). It is best practice to prepare for this in advance by moving to new language run time versions comfortably in advance of the support period ending.
+ The [support period of a package](https://docs.aws.amazon.com/linux/al2023/release-notes/all-packages-AL2023.12.html) coming to an end may involve moving to a newer version of the language runtime (such as with [PHP in AL2023](php.md)). It is best practice to prepare for this in advance by moving to new language run time versions comfortably in advance of the support period ending.
 
  For packages such as [`pcre` version 1](deprecated-al2023.md#deprecated-pcre), there is also the opportunity to plan in advance and migrate any of your code to its replacement, which in this case is `pcre` version 2. It is best practice to do so as soon as possible, to allow time for any setbacks.
 

@@ -46,6 +46,6 @@ In the diagram:
 
 1. Optional. If all the target SIP media applications fail, the PSTN audio service hangs up the call.
 
-Additionally, you can create an outbound call, and subsequently invoke your AWS Lambda function for additional processing, using the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateSipMediaApplicationCall.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateSipMediaApplicationCall.html) API. To use this API, you specify the provisioned **SIP media application ID** as a parameter.
+Additionally, you can create an outbound call, and subsequently invoke your AWS Lambda function for additional processing, using the [CreateSIPMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateSipMediaApplicationCall.html) API. To use this API, you specify the provisioned **SIP media application ID** as a parameter.
 
-Finally, you can trigger your AWS Lambda function at any time while a call is active using the [https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateSipMediaApplicationCall.html](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateSipMediaApplicationCall.html) API. To use the API, you specify the provisioned **SIP media application ID** as a parameter.
+Finally, you can trigger your AWS Lambda function at any time while a call is active using the [UpdateSIPMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateSipMediaApplicationCall.html) API. To use the API, you specify the provisioned **SIP media application ID** as a parameter.

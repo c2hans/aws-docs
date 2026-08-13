@@ -12,10 +12,10 @@ The DynamoDB Enhanced Client API uses three types of expressions:
 [Expression](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/Expression.html)
 The `Expression` class is used when you define conditions and filters.
 
-[https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/QueryConditional.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/QueryConditional.html)
+[`QueryConditional`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/QueryConditional.html)
 This type of expression represents [key conditions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html#Query.KeyConditionExpressions) for query operations.
 
-[https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/update/UpdateExpression.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/update/UpdateExpression.html)
+[`UpdateExpression`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/update/UpdateExpression.html)
 This class helps you write DynamoDB [update expressions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.UpdateExpressions.html) and is currently used in the extension framework when you update an item.
 
 ## Expression anatomy
@@ -89,7 +89,7 @@ The DynamoDB Developer Guide contains complete information on the[ low-level exp
 
 When you use the `putItem()`, `updateItem()`, and `deleteItem()` methods, and also when you use transaction and batch operations, you use `[Expression](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/Expression.html)` objects to specify conditions that DynamoDB must meet to proceed with the operation. These expressions are named condition expressions. For an example, see the condition expression used in the `addDeleteItem()` method (after comment line 1) of [transaction example](ddb-en-client-use-multiop-trans.md#ddb-en-client-use-multiop-trans-writeitems-opcondition) shown in this guide.
 
-When you work with the `query()` methods, a condition is expressed as a [https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/QueryConditional.html](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/QueryConditional.html). The `QueryConditional` class has several static convenience methods that help you write the criteria that determine which items to read from DynamoDB.
+When you work with the `query()` methods, a condition is expressed as a [`QueryConditional`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/QueryConditional.html). The `QueryConditional` class has several static convenience methods that help you write the criteria that determine which items to read from DynamoDB.
 
 For examples of `QueryConditionals`, see the first code example of the [`Query` method examples](ddb-en-client-use-multirecord.md#ddb-en-client-use-multirecord-query-example) section of this guide.
 

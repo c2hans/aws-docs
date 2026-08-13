@@ -26,19 +26,19 @@ Note that auto-partitioning is enabled by default. Unless otherwise specified, t
 
 The following training script changes are required to run a PyTorch training script with SageMaker's model parallelism library:
 
-1. Import and initialize the library with [https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#smp.init](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#smp.init).
+1. Import and initialize the library with [`smdistributed.modelparallel.torch.init()`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#smp.init).
 
-1. Wrap the model with [https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_pytorch.html#smp.DistributedModel](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_pytorch.html#smp.DistributedModel). Be mindful that any tensors returned from the `forward` method of the underlying `nn.Module` object will be broadcast across model-parallel devices, incurring communication overhead, so any tensors that are not needed outside the call method (such as intermediate activations) should not be returned.
+1. Wrap the model with [`smdistributed.modelparallel.torch.DistributedModel`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_pytorch.html#smp.DistributedModel). Be mindful that any tensors returned from the `forward` method of the underlying `nn.Module` object will be broadcast across model-parallel devices, incurring communication overhead, so any tensors that are not needed outside the call method (such as intermediate activations) should not be returned.
 **Note**
 For FP16 training, you need to use the [smdistributed.modelparallel.torch.model\_creation()](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/latest/smd_model_parallel_pytorch.html) context manager to wrap the model. For more information, see [FP16 Training with Model Parallelism](model-parallel-extended-features-pytorch-fp16.md).
 
-1. Wrap the optimizer with [https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_pytorch.html#smp.DistributedOptimizer](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_pytorch.html#smp.DistributedOptimizer).
+1. Wrap the optimizer with [`smdistributed.modelparallel.torch.DistributedOptimizer`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_pytorch.html#smp.DistributedOptimizer).
 **Note**
 For FP16 training, you need to set up static or dynamic loss scaling. For more information, see [FP16 Training with Model Parallelism](model-parallel-extended-features-pytorch-fp16.md).
 
 1. Use the returned `DistributedModel` object instead of a user model.
 
-1. Put the forward and backward logic in a step function and decorate it with [https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#smp.init](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#smp.init).
+1. Put the forward and backward logic in a step function and decorate it with [`smdistributed.modelparallel.torch.step`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#smp.init).
 
 1. Restrict each process to its own device through `torch.cuda.set_device(smp.local_rank())`.
 
@@ -46,7 +46,7 @@ For FP16 training, you need to set up static or dynamic loss scaling. For more i
 
 1. Replace `torch.Tensor.backward` and `torch.autograd.backward` with `DistributedModel.backward`.
 
-1. Perform post-processing on the outputs across microbatches using [https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#StepOutput](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#StepOutput) methods such as `reduce_mean`.
+1. Perform post-processing on the outputs across microbatches using [`StepOutput`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#StepOutput) methods such as `reduce_mean`.
 
 1. If there is an evaluation step, similarly place the forward logic inside an `smp.step`-decorated function and post-process the outputs using [`StepOutput` API](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_common_api.html#StepOutput).
 
@@ -134,7 +134,7 @@ train(model, device, train_loader, optimizer)
 ## Manual splitting with PyTorch
 <a name="model-parallel-customize-training-script-pt-16-hvd"></a>
 
-Use [https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_pytorch.html#smp.DistributedOptimizer](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_pytorch.html#smp.DistributedOptimizer) context managers to place modules in specific devices. Any module not placed in any `smp.partition` contexts is placed in the `default_partition`. The `default_partition` needs to be provided if `auto_partition` is set to `False`. The modules that are created within a specific `smp.partition` context are placed on the corresponding partition.
+Use [`smp.partition`](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smp_versions/v1.2.0/smd_model_parallel_pytorch.html#smp.DistributedOptimizer) context managers to place modules in specific devices. Any module not placed in any `smp.partition` contexts is placed in the `default_partition`. The `default_partition` needs to be provided if `auto_partition` is set to `False`. The modules that are created within a specific `smp.partition` context are placed on the corresponding partition.
 
 To learn more about the SageMaker's model parallelism library API, refer to the [API documentation](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smd_model_parallel.html).
 
@@ -302,7 +302,7 @@ When you configure a PyTorch training script using SageMaker's model parallelism
 <a name="model-parallel-pt-unsupported-features"></a>
 
 The following PyTorch features are unsupported by SageMaker's model parallelism library:
-+ If you use data parallelism with the native [PyTorch DDP](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html), the [https://pytorch.org/docs/stable/generated/torch.nn.parallel.DistributedDataParallel.html](https://pytorch.org/docs/stable/generated/torch.nn.parallel.DistributedDataParallel.html) wrapper module is not supported by the library. The library internally manages integrating with PyTorch DDP, including parameter broadcast and gradient AllReduce. When using the library, module buffers are only broadcast once at the start of training. If your model has module buffers that need to be synchronized across data parallel groups at each step, you can do so through the `torch.distributed` API, using the process group that can be obtained via `smp.get_dp_process_group()`.
++ If you use data parallelism with the native [PyTorch DDP](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html), the [`torch.nn.parallel.DistributedDataParallel`](https://pytorch.org/docs/stable/generated/torch.nn.parallel.DistributedDataParallel.html) wrapper module is not supported by the library. The library internally manages integrating with PyTorch DDP, including parameter broadcast and gradient AllReduce. When using the library, module buffers are only broadcast once at the start of training. If your model has module buffers that need to be synchronized across data parallel groups at each step, you can do so through the `torch.distributed` API, using the process group that can be obtained via `smp.get_dp_process_group()`.
 + For mixed precision training, the `apex.amp` module is not supported. The recommended way to use the library with automatic mixed-precision is to use `torch.cuda.amp`, with the exception of using `smp.amp.GradScaler` instead of the implementation in torch.
 + `torch.jit.ScriptModules` or `ScriptFunctions` are not supported by `smp.DistributedModel`.
 + `apex` : `FusedLayerNorm`, `FusedAdam`, `FusedLAMB`, and `FusedNovoGrad` from `apex` are not supported. You can use the library implementations of these through `smp.optimizers` and `smp.nn` APIs instead.

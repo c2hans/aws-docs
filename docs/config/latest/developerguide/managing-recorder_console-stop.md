@@ -23,7 +23,7 @@ You can use the AWS Config console or the AWS CLI stop the customer managed conf
 ------
 #### [ To stop the customer managed configuration recorder (CLI) ]
 
-Use the [http://docs.aws.amazon.com/cli/latest/reference/configservice/stop-configuration-recorder.html](http://docs.aws.amazon.com/cli/latest/reference/configservice/stop-configuration-recorder.html) command:
+Use the [`stop-configuration-recorder`](http://docs.aws.amazon.com/cli/latest/reference/configservice/stop-configuration-recorder.html) command:
 
 ```
 $ aws configservice stop-configuration-recorder --configuration-recorder-name {{configRecorderName}}

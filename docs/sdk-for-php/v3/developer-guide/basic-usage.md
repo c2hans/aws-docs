@@ -56,7 +56,7 @@ When using S3 Transfer Manager to create a default Amazon S3 client customers ma
 You can create a transfer manager in two ways:
 
 With an existing S3 client
-Pass an existing [https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html) instance to the `S3TransferManager` {{<add link>}} constructor.
+Pass an existing [`S3Client`](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html) instance to the `S3TransferManager` {{<add link>}} constructor.
 
 ```
 <?php

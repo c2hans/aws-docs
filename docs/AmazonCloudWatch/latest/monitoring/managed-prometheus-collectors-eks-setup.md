@@ -15,7 +15,7 @@ The collector enriches each Amazon EKS metric with attributes that identify its 
 ## Create a scraper with CloudWatch destination
 <a name="managed-prometheus-collectors-eks-create-scraper"></a>
 
-You can use [https://docs.aws.amazon.com/prometheus/latest/APIReference/API_GetDefaultScraperConfiguration.html](https://docs.aws.amazon.com/prometheus/latest/APIReference/API_GetDefaultScraperConfiguration.html) to retrieve a general-purpose scraper configuration, or provide your own.
+You can use [GetDefaultScraperConfiguration](https://docs.aws.amazon.com/prometheus/latest/APIReference/API_GetDefaultScraperConfiguration.html) to retrieve a general-purpose scraper configuration, or provide your own.
 
 ------
 #### [ AWS API ]

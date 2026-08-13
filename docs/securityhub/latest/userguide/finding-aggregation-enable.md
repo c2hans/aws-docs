@@ -42,7 +42,7 @@ When you enable cross-Region aggregation, you choose to specify one or more link
 ------
 #### [ Security Hub CSPM API ]
 
-From the Region that you want to use as the home Region, use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateFindingAggregator.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateFindingAggregator.html) operation of the Security Hub CSPM API. If you use the AWS CLI, run the [create-finding-aggregator](https://docs.aws.amazon.com/cli/latest/reference/securityhub/create-finding-aggregator.html) command.
+From the Region that you want to use as the home Region, use the [`CreateFindingAggregator`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateFindingAggregator.html) operation of the Security Hub CSPM API. If you use the AWS CLI, run the [create-finding-aggregator](https://docs.aws.amazon.com/cli/latest/reference/securityhub/create-finding-aggregator.html) command.
 
 For `RegionLinkingMode`, choose one of the following options:
 + `ALL_REGIONS` – Security Hub CSPM aggregates data from all Regions. Security Hub CSPM also aggregates data from new Regions as they are supported and you opt into them.

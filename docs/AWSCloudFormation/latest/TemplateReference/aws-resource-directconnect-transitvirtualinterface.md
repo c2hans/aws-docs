@@ -38,6 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[DirectConnectGatewayId](#cfn-directconnect-transitvirtualinterface-directconnectgatewayid)" : {{String}},
       "[EnableSiteLink](#cfn-directconnect-transitvirtualinterface-enablesitelink)" : {{Boolean}},
       "[Mtu](#cfn-directconnect-transitvirtualinterface-mtu)" : {{Integer}},
+      "[RateLimit](#cfn-directconnect-transitvirtualinterface-ratelimit)" : {{String}},
       "[Tags](#cfn-directconnect-transitvirtualinterface-tags)" : {{[ Tag, ... ]}},
       "[VirtualInterfaceName](#cfn-directconnect-transitvirtualinterface-virtualinterfacename)" : {{String}},
       "[Vlan](#cfn-directconnect-transitvirtualinterface-vlan)" : {{Integer}}
@@ -58,6 +59,7 @@ Properties:
   [DirectConnectGatewayId](#cfn-directconnect-transitvirtualinterface-directconnectgatewayid): {{String}}
   [EnableSiteLink](#cfn-directconnect-transitvirtualinterface-enablesitelink): {{Boolean}}
   [Mtu](#cfn-directconnect-transitvirtualinterface-mtu): {{Integer}}
+  [RateLimit](#cfn-directconnect-transitvirtualinterface-ratelimit): {{String}}
   [Tags](#cfn-directconnect-transitvirtualinterface-tags): {{
     - Tag}}
   [VirtualInterfaceName](#cfn-directconnect-transitvirtualinterface-virtualinterfacename): {{String}}
@@ -113,6 +115,13 @@ Connectivity over the virtual interface will be interrupted while the MTU update
 *Type*: Integer
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
+`RateLimit`  <a name="cfn-directconnect-transitvirtualinterface-ratelimit"></a>
+The rate limit (bandwidth allocation) to apply to the virtual interface. The rate limit restricts the maximum bandwidth that the virtual interface can use on the parent connection.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9]+\.?[0-9]*(Mbps|Gbps|Tbps)$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Tags`  <a name="cfn-directconnect-transitvirtualinterface-tags"></a>
 The tags associated with the transitive virtual interface.
 *Required*: No
@@ -143,14 +152,14 @@ The ID of the VLAN.
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the transit virtual interface.
 
-For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
 <a name="aws-resource-directconnect-transitvirtualinterface-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-directconnect-transitvirtualinterface-return-values-fn--getatt-fn--getatt"></a>

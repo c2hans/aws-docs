@@ -22,7 +22,7 @@ If the legacy Elasticsearch role doesn't exist in your account, OpenSearch Servi
 The `AWSServiceRoleForAmazonOpenSearchService` service-linked role trusts the following services to assume the role:
 + `opensearchservice.amazonaws.com`
 
-The role permissions policy named [https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ac-managed.html#AmazonOpenSearchServiceRolePolicy](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ac-managed.html#AmazonOpenSearchServiceRolePolicy) allows OpenSearch Service to complete the following actions on the specified resources:
+The role permissions policy named [`AmazonOpenSearchServiceRolePolicy`](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ac-managed.html#AmazonOpenSearchServiceRolePolicy) allows OpenSearch Service to complete the following actions on the specified resources:
 + Action: `acm:DescribeCertificate` on `*`
 + Action: `cloudwatch:PutMetricData` on `*`
 + Action: `ec2:CreateNetworkInterface` on `*`

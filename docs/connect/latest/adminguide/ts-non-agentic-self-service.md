@@ -15,7 +15,7 @@ Unexpected agent escalation occurs when there's an error during the self-service
 ### Troubleshooting steps
 <a name="escalation-ts-steps"></a>
 
-1. **Check the Connect AI agent logs**: Examine the `completion` attribute in the associated log entry.
+1. **Check the AI agent logs**: Examine the `completion` attribute in the associated log entry.
 
 1. **Validate the stop reason**: Confirm that the `stop_reason` is `tool_use`.
 
@@ -40,7 +40,7 @@ This issue can occur due to timeouts from Amazon Lex or incorrect Amazon Nova Pr
 ### Timeouts from Amazon Lex
 <a name="timeouts-from-amazon-lex"></a>
 + **Symptoms**: Connect Customer logs show "Internal Server Error" for the [Get customer input](get-customer-input.md) block
-+ **Cause**: Your self-service bot timed out while providing results within the 10-second limit. Timeout errors won't appear in Connect AI agent logs.
++ **Cause**: Your self-service bot timed out while providing results within the 10-second limit. Timeout errors won't appear in AI agent logs.
 + **Solution**: Simplify your prompt by removing complex reasoning to reduce processing time.
 
 ### Amazon Nova Pro configuration

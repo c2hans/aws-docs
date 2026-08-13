@@ -53,7 +53,7 @@ aws elasticache copy-serverless-cache-snapshot ^
     --target-serverless-cache-snapshot-name {{my-backup-copy}}
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/elasticache/copy-serverless-cache-snapshot.html](https://docs.aws.amazon.com/cli/latest/reference/elasticache/copy-serverless-cache-snapshot.html) in the *AWS CLI*.
+For more information, see [`copy-serverless-cache-snapshot`](https://docs.aws.amazon.com/cli/latest/reference/elasticache/copy-serverless-cache-snapshot.html) in the *AWS CLI*.
 
 ## Copying a node-based cluster backup (AWS CLI)
 <a name="backups-copying-self-designed-CLI"></a>
@@ -83,4 +83,4 @@ aws elasticache copy-snapshot ^
     --target-snapshot-name {{amzn-s3-demo-bucket}}
 ```
 
-For more information, see [https://docs.aws.amazon.com/cli/latest/reference/elasticache/copy-snapshot.html](https://docs.aws.amazon.com/cli/latest/reference/elasticache/copy-snapshot.html) in the *AWS CLI*.
+For more information, see [`copy-snapshot`](https://docs.aws.amazon.com/cli/latest/reference/elasticache/copy-snapshot.html) in the *AWS CLI*.

@@ -10,9 +10,9 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="aws-properties-greengrass-resourcedefinition-resourcedefinitionversion-description"></a>A resource definition version contains a list of resources. (In CloudFormation, resources are named *resource instances*.)
 
 **Note**
-After you create a resource definition version that contains the resources you want to deploy, you must add it to your group version. For more information, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html).
+After you create a resource definition version that contains the resources you want to deploy, you must add it to your group version. For more information, see [`AWS::Greengrass::Group`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html).
 
-<a name="aws-properties-greengrass-resourcedefinition-resourcedefinitionversion-inheritance"></a> In an CloudFormation template, `ResourceDefinitionVersion` is the property type of the `InitialVersion` property in the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinition.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinition.html) resource.
+<a name="aws-properties-greengrass-resourcedefinition-resourcedefinitionversion-inheritance"></a> In an CloudFormation template, `ResourceDefinitionVersion` is the property type of the `InitialVersion` property in the [`AWS::Greengrass::ResourceDefinition`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinition.html) resource.
 
 ## Syntax
 <a name="aws-properties-greengrass-resourcedefinition-resourcedefinitionversion-syntax"></a>

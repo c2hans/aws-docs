@@ -40,16 +40,16 @@ The following table shows the Cloud Control API operations you can use to genera
 
 | API operation | AWS CLI command |
 | --- | --- |
-| [https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_CreateResource.html](https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_CreateResource.html) | [https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/create-resource.html](https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/create-resource.html) |
-| [https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_DeleteResource.html](https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_DeleteResource.html) | [https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/delete-resource.html](https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/delete-resource.html) |
-| [https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_GetResource.html](https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_GetResource.html) | [https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/get-resource.html](https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/get-resource.html) |
-| [https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_ListResources.html](https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_ListResources.html) | [https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/list-resources.html](https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/list-resources.html) |
-| [https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_UpdateResource.html](https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_UpdateResource.html) | [https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/update-resource.html](https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/update-resource.html) |
+| [CreateResource](https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_CreateResource.html) | [`create-resource`](https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/create-resource.html) |
+| [DeleteResource](https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_DeleteResource.html) | [`delete-resource`](https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/delete-resource.html) |
+| [GetResource](https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_GetResource.html) | [`get-resource`](https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/get-resource.html) |
+| [ListResources](https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_ListResources.html) | [`list-resources`](https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/list-resources.html) |
+| [UpdateResource](https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_UpdateResource.html) | [`update-resource`](https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/update-resource.html) |
 
 The following table shows the Cloud Control API operations that you can use to track and manage resource requests while they're in process.
 
 | API operation | AWS CLI command |
 | --- | --- |
-| [CancelResourceRequest](https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_CancelResourceRequest.html) | [https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/cancel-resource-request.html](https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/cancel-resource-request.html) |
-| [GetResourceRequestStatus](https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_GetResourceRequestStatus.html) | [https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/get-resource-request-status.html](https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/get-resource-request-status.html) |
-| [ListResourceRequests](https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_ListResourceRequests.html) | [https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/list-resource-requests.html](https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/list-resource-requests.html) |
+| [CancelResourceRequest](https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_CancelResourceRequest.html) | [`cancel-resource-request`](https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/cancel-resource-request.html) |
+| [GetResourceRequestStatus](https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_GetResourceRequestStatus.html) | [`get-resource-request-status`](https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/get-resource-request-status.html) |
+| [ListResourceRequests](https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_ListResourceRequests.html) | [`list-resource-requests`](https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/list-resource-requests.html) |

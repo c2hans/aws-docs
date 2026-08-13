@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-400-release.
 ## 4.0.0 application versions
 <a name="emr-400-app-versions"></a>
 
-This release includes the following applications: [http://hadoop.apache.org/docs/current/](http://hadoop.apache.org/docs/current/), [http://hive.apache.org/](http://hive.apache.org/), [http://mahout.apache.org/](http://mahout.apache.org/), [http://pig.apache.org/](http://pig.apache.org/), and [https://spark.apache.org/docs/latest/](https://spark.apache.org/docs/latest/).
+This release includes the following applications: [Hadoop](http://hadoop.apache.org/docs/current/), [Hive](http://hive.apache.org/), [Mahout](http://mahout.apache.org/), [Pig](http://pig.apache.org/), and [Spark](https://spark.apache.org/docs/latest/).
 
 The table below lists the application versions available in this release of Amazon EMR and the application versions in the preceding three Amazon EMR releases (when applicable).
 

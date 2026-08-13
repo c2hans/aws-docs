@@ -28,7 +28,7 @@ For more information, see [Understand how Amazon EKS Pod Identity works](https:/
 **Important**
 Pod Identity is supported only for Amazon EKS in the cloud. It is not supported for [Amazon EKS Anywhere](https://aws.amazon.com/eks/eks-anywhere/), [Red Hat OpenShift Service on AWS](https://aws.amazon.com/rosa/), or self-managed Kubernetes clusters on Amazon EC2 instances.
 + Amazon EKS cluster (version 1.24 or later)
-+ Access to AWS CLI and Amazon EKS cluster via `kubectl`
++ Access to AWS CLI and Amazon EKS cluster through `kubectl`
 + (Optional) Access to two AWS accounts for cross-account access
 
 ## Install the Amazon EKS Pod Identity Agent
@@ -108,7 +108,7 @@ To use Pod Identity with your cluster, you must install the Amazon EKS Pod Ident
    kubectl apply -f kubectl apply -f https://raw.githubusercontent.com/aws/secrets-store-csi-driver-provider-aws/main/examples/ExampleDeployment-PodIdentity.yaml
    ```
 
-1. If you use a private Amazon EKS cluster, make sure that the VPC that the cluster is in has an AWS STS endpoint. For information about creating an endpoint, see [Interface VPC endpoints](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_interface_vpc_endpoints.html) in the *AWS Identity and Access Management User Guide*.
+1. If you use a private Amazon EKS cluster, make sure the VPC that the cluster is in has an AWS STS endpoint. For information about creating an endpoint, see [Interface VPC endpoints](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_interface_vpc_endpoints.html) in the *AWS Identity and Access Management User Guide*.
 
 ### Verify the secret mount
 <a name="verify-secret-mount"></a>
@@ -125,7 +125,7 @@ kubectl exec -it $(kubectl get pods | awk '/{{pod-identity-deployment}}/{print $
 
 1. Create a permissions policy that grants `ssm:GetParameters` and `ssm:DescribeParameters` permission to the parameters that the Pod needs to access.
 
-1. Create a parameter in Parameter Store, if you do not already have one. For information, see [Creating Parameter Store parameters in Systems Manager](sysman-paramstore-su-create.md).
+1. Create a parameter in Parameter Store if you do not already have one. For information, see [Creating Parameter Store parameters in Systems Manager](sysman-paramstore-su-create.md).
 
 ## Troubleshoot
 <a name="integrating_aspc_pod_trouble"></a>

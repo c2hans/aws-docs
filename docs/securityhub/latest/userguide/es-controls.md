@@ -20,7 +20,7 @@ These controls may not be available in all AWS Regions. For more information, se
 
 **Resource type:** `AWS::Elasticsearch::Domain`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elasticsearch-encrypted-at-rest.html](https://docs.aws.amazon.com/config/latest/developerguide/elasticsearch-encrypted-at-rest.html)
+**AWS Config rule:** [`elasticsearch-encrypted-at-rest`](https://docs.aws.amazon.com/config/latest/developerguide/elasticsearch-encrypted-at-rest.html)
 
 **Schedule type:** Periodic
 
@@ -50,7 +50,7 @@ To enable encryption at rest for new and existing Elasticsearch domains, see [En
 
 **Resource type:** `AWS::Elasticsearch::Domain`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elasticsearch-in-vpc-only.html](https://docs.aws.amazon.com/config/latest/developerguide/elasticsearch-in-vpc-only.html)
+**AWS Config rule:** [`elasticsearch-in-vpc-only`](https://docs.aws.amazon.com/config/latest/developerguide/elasticsearch-in-vpc-only.html)
 
 **Schedule type:** Periodic
 
@@ -78,7 +78,7 @@ See [Launching your Amazon OpenSearch Service domains within a VPC](https://docs
 
 **Resource type:** `AWS::Elasticsearch::Domain`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elasticsearch-node-to-node-encryption-check.html](https://docs.aws.amazon.com/config/latest/developerguide/elasticsearch-node-to-node-encryption-check.html)
+**AWS Config rule:** [`elasticsearch-node-to-node-encryption-check`](https://docs.aws.amazon.com/config/latest/developerguide/elasticsearch-node-to-node-encryption-check.html)
 
 **Schedule type:** Change triggered
 
@@ -106,7 +106,7 @@ For information about enabling node-to-node encryption on new and existing domai
 
 **Resource type:** `AWS::Elasticsearch::Domain`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/elasticsearch-logs-to-cloudwatch.html](https://docs.aws.amazon.com/config/latest/developerguide/elasticsearch-logs-to-cloudwatch.html)
+**AWS Config rule:** [`elasticsearch-logs-to-cloudwatch`](https://docs.aws.amazon.com/config/latest/developerguide/elasticsearch-logs-to-cloudwatch.html)
 
 **Schedule type:** Change triggered
 
@@ -251,7 +251,7 @@ HTTPS (TLS) can be used to help prevent potential attackers from using person-in
 ### Remediation
 <a name="es-8-remediation"></a>
 
-To enable TLS encryption, use the [https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_UpdateDomainConfig.html](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_UpdateDomainConfig.html) API operation to configure the [https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_DomainEndpointOptions.html](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_DomainEndpointOptions.html) object. This sets the `TLSSecurityPolicy`.
+To enable TLS encryption, use the [UpdateDomainConfig](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_UpdateDomainConfig.html) API operation to configure the [DomainEndpointOptions](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_DomainEndpointOptions.html) object. This sets the `TLSSecurityPolicy`.
 
 ## [ES.9] Elasticsearch domains should be tagged
 <a name="es-9"></a>

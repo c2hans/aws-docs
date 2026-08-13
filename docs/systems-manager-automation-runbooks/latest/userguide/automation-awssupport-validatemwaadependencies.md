@@ -270,7 +270,7 @@ Example Policy:
 
 Follow these steps to configure the automation:
 
-1. Navigate to [https://console.aws.amazon.com/systems-manager/documents/AWSSupport-ValidateMWAADependencies/description](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-ValidateMWAADependencies/description) in Systems Manager under the Documents section.
+1. Navigate to [`AWSSupport-ValidateMWAADependencies`](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-ValidateMWAADependencies/description) in Systems Manager under the Documents section.
 
 1. Choose **Execute automation**. Ensure your IAM role has the required permissions listed in the preceding permissions section before executing.
 

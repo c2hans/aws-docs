@@ -19,7 +19,7 @@ The following image shows the parts of the agent workspace.
 
 1. **Third-party applications**, which reduce the number of windows an agent interacts with.
 
-1. Real-time recommendations, powered by **Connect AI agents**.
+1. Real-time recommendations, powered by **agent assist**.
 
 1. **Tasks** to assign work or follow-up activities.
 

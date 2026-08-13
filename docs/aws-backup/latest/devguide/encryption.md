@@ -60,7 +60,7 @@ To help avoid failed jobs, you can examine the AWS KMS key policy to ensure it h
 
 Failed jobs can occur due to either one or more Deny statements applied to the KMS key or due to a [grant](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html) revoked for the key.
 
-In an AWS managed access policy such as [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupFullAccess.html), there are Allow actions that permit AWS Backup to interface with AWS KMS to create a grant on a KMS key on a customer's behalf as part backup, copy, and storage operations.
+In an AWS managed access policy such as [`AWSBackupFullAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupFullAccess.html), there are Allow actions that permit AWS Backup to interface with AWS KMS to create a grant on a KMS key on a customer's behalf as part backup, copy, and storage operations.
 
 At a minimum, the key policy requires the following permissions:
 + `kms:createGrant`
@@ -128,18 +128,18 @@ For AWS managed keys (such as `aws/backup` or `aws/ebs`), these permissions are 
 
 1. Ensure required permissions are part of KMS key policy
 
-   1. Run KMS CLI `get-key-policy` ([https://docs.aws.amazon.com/kms/latest/APIReference/API_GetKeyPolicy.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_GetKeyPolicy.html)) to view the key policy attached to the specified KMS key.
+   1. Run KMS CLI `get-key-policy` ([`kms:GetKeyPolicy`](https://docs.aws.amazon.com/kms/latest/APIReference/API_GetKeyPolicy.html)) to view the key policy attached to the specified KMS key.
 
    1. Review the returned permissions.
 
 1. Ensure there are no Deny statements that affect operations
 
-   1. Run (or re-run) CLI `get-key-policy` ([https://docs.aws.amazon.com/kms/latest/APIReference/API_GetKeyPolicy.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_GetKeyPolicy.html)) to view the key policy attached to the specified KMS key.
+   1. Run (or re-run) CLI `get-key-policy` ([`kms:GetKeyPolicy`](https://docs.aws.amazon.com/kms/latest/APIReference/API_GetKeyPolicy.html)) to view the key policy attached to the specified KMS key.
 
    1. Review the policy.
 
    1. Remove relevant Deny statements from the KMS key policy.
 
-1. If needed, run [https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy.html) to replace or update key policy with revised permissions and removed Deny statements.
+1. If needed, run [`kms:put-key-policy`](https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy.html) to replace or update key policy with revised permissions and removed Deny statements.
 
 Additionally, the key associated with the role initiating a cross-Region copy job must have `"kms:ResourceAliases": "alias/aws/backup"` in the `DescribeKey` permission.

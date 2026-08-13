@@ -42,10 +42,10 @@ This topic describes how to disable and then re-enable a Hook to temporarily pre
 <a name="hooks-disable-enable-cli"></a>
 
 **Important**
-The AWS CLI commands for disabling and enabling Hooks replace the entire Hook configuration with the values specified in the `--configuration` option. To avoid unintended changes, you must include all existing settings you wish to keep when running these commands. To view the current configuration data, use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-type.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-type.html) command.
+The AWS CLI commands for disabling and enabling Hooks replace the entire Hook configuration with the values specified in the `--configuration` option. To avoid unintended changes, you must include all existing settings you wish to keep when running these commands. To view the current configuration data, use the [describe-type](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-type.html) command.
 
 **To disable a Hook**
-Use the following [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html) command and specify `HookInvocationStatus` as `DISABLED` to disable the Hook. Replace the placeholders with your specific values.
+Use the following [set-type-configuration](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html) command and specify `HookInvocationStatus` as `DISABLED` to disable the Hook. Replace the placeholders with your specific values.
 
 ```
 aws cloudformation set-type-configuration \
@@ -55,7 +55,7 @@ aws cloudformation set-type-configuration \
 ```
 
 **To re-enable a previously disabled Hook**
-Use the following [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html) command and specify `HookInvocationStatus` as `ENABLED` to re-enable the Hook. Replace the placeholders with your specific values.
+Use the following [set-type-configuration](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html) command and specify `HookInvocationStatus` as `ENABLED` to re-enable the Hook. Replace the placeholders with your specific values.
 
 ```
 aws cloudformation set-type-configuration \

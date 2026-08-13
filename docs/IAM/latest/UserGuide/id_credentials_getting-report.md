@@ -156,15 +156,15 @@ You can use the AWS Management Console to download a credential report as a comm
 
 **To download a credentials report (AWS CLI)**
 
-1. Generate a credentials report. AWS stores a single report. If a report exists, generating a credentials report overwrites the previous report. [https://docs.aws.amazon.com/cli/latest/reference/iam/generate-credential-report.html](https://docs.aws.amazon.com/cli/latest/reference/iam/generate-credential-report.html)
+1. Generate a credentials report. AWS stores a single report. If a report exists, generating a credentials report overwrites the previous report. [`aws iam generate-credential-report`](https://docs.aws.amazon.com/cli/latest/reference/iam/generate-credential-report.html)
 
-1. View the last report that was generated: [https://docs.aws.amazon.com/cli/latest/reference/iam/get-credential-report.html](https://docs.aws.amazon.com/cli/latest/reference/iam/get-credential-report.html)
+1. View the last report that was generated: [`aws iam get-credential-report`](https://docs.aws.amazon.com/cli/latest/reference/iam/get-credential-report.html)
 
 ## Getting credential reports (AWS API)
 <a name="getting-credential-reports-api"></a>
 
 **To download a credentials report (AWS API)**
 
-1. Generate a credentials report. AWS stores a single report. If a report exists, generating a credentials report overwrites the previous report. [https://docs.aws.amazon.com/IAM/latest/APIReference/API_GenerateCredentialReport.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GenerateCredentialReport.html)
+1. Generate a credentials report. AWS stores a single report. If a report exists, generating a credentials report overwrites the previous report. [`GenerateCredentialReport`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GenerateCredentialReport.html)
 
-1. View the last report that was generated: [https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetCredentialReport.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetCredentialReport.html)
+1. View the last report that was generated: [`GetCredentialReport`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetCredentialReport.html)

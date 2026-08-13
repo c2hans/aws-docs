@@ -21,7 +21,7 @@ Security Hub CSPM retired this control on March 9, 2026. For more information, s
 
 **Resource type:** `AWS::AppSync::GraphQLApi`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/appsync-cache-ct-encryption-at-rest.html](https://docs.aws.amazon.com/config/latest/developerguide/appsync-cache-ct-encryption-at-rest.html)
+**AWS Config rule:** [appsync-cache-ct-encryption-at-rest](https://docs.aws.amazon.com/config/latest/developerguide/appsync-cache-ct-encryption-at-rest.html)
 
 **Schedule type:** Change triggered
 
@@ -47,7 +47,7 @@ You can't change the encryption settings after enabling caching for your AWS App
 
 **Resource type:** `AWS::AppSync::GraphQLApi`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/appsync-logging-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/appsync-logging-enabled.html)
+**AWS Config rule:** [`appsync-logging-enabled`](https://docs.aws.amazon.com/config/latest/developerguide/appsync-logging-enabled.html)
 
 **Schedule type:** Change triggered
 
@@ -95,7 +95,7 @@ Don’t add personally identifiable information (PII) or other confidential or s
 ### Remediation
 <a name="appsync-4-remediation"></a>
 
-To add tags to an AWS AppSync GraphQL API, see [https://docs.aws.amazon.com/appsync/latest/APIReference/API_TagResource.html](https://docs.aws.amazon.com/appsync/latest/APIReference/API_TagResource.html) in the *AWS AppSync API Reference*.
+To add tags to an AWS AppSync GraphQL API, see [TagResource](https://docs.aws.amazon.com/appsync/latest/APIReference/API_TagResource.html) in the *AWS AppSync API Reference*.
 
 ## [AppSync.5] AWS AppSync GraphQL APIs should not be authenticated with API keys
 <a name="appsync-5"></a>
@@ -108,7 +108,7 @@ To add tags to an AWS AppSync GraphQL API, see [https://docs.aws.amazon.com/apps
 
 **Resource type:** `AWS::AppSync::GraphQLApi`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/appsync-authorization-check.html](https://docs.aws.amazon.com/config/latest/developerguide/appsync-authorization-check.html)
+**AWS Config rule:** [`appsync-authorization-check`](https://docs.aws.amazon.com/config/latest/developerguide/appsync-authorization-check.html)
 
 **Schedule type:** Change triggered
 
@@ -136,7 +136,7 @@ Security Hub CSPM retired this control on March 9, 2026. For more information, s
 
 **Resource type:** `AWS::AppSync::ApiCache`
 
-**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/appsync-cache-ct-encryption-in-transit.html](https://docs.aws.amazon.com/config/latest/developerguide/appsync-cache-ct-encryption-in-transit.html)
+**AWS Config rule:** [appsync-cache-ct-encryption-in-transit](https://docs.aws.amazon.com/config/latest/developerguide/appsync-cache-ct-encryption-in-transit.html)
 
 **Schedule type:** Change triggered
 

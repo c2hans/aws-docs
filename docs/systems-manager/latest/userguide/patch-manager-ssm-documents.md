@@ -30,16 +30,6 @@ For steps to set up patching operations in an environment that supportsonly IPv6
 
 Refer to the following sections for more information about using these SSM documents in your patching operations.
 
-**Topics**
-+ [SSM documents recommended for patching managed nodes](#patch-manager-ssm-documents-recommended)
-+ [Legacy SSM documents for patching managed nodes](#patch-manager-ssm-documents-legacy)
-+ [Known limitations of the SSM documents for patching managed nodes](#patch-manager-ssm-documents-known-limitations)
-+ [SSM Command document for patching: `AWS-RunPatchBaseline`](patch-manager-aws-runpatchbaseline.md)
-+ [SSM Command document for patching: `AWS-RunPatchBaselineAssociation`](patch-manager-aws-runpatchbaselineassociation.md)
-+ [SSM Command document for patching: `AWS-RunPatchBaselineWithHooks`](patch-manager-aws-runpatchbaselinewithhooks.md)
-+ [Sample scenario for using the InstallOverrideList parameter in `AWS-RunPatchBaseline` or `AWS-RunPatchBaselineAssociation`](patch-manager-override-lists.md)
-+ [Using the BaselineOverride parameter](patch-manager-baselineoverride-parameter.md)
-
 ## SSM documents recommended for patching managed nodes
 <a name="patch-manager-ssm-documents-recommended"></a>
 
@@ -57,9 +47,9 @@ The following five SSM documents are recommended for use in your managed node pa
 
 Supports configuring basic Windows Update functions and using them to install updates automatically (or to turn off automatic updates). Available in all AWS Regions.
 
-This SSM document prompts Windows Update to download and install the specified updates and reboot managed nodes as needed. Use this document with State Manager, a tool in AWS Systems Manager, to ensure Windows Update maintains its configuration. You can also run it manually using Run Command, a tool in AWS Systems Manager, to change the Windows Update configuration.
+This SSM document prompts Windows Update to download and install the specified updates and reboot managed nodes as needed. Use this document with State Manager to make sure Windows Update maintains its configuration. You can also run it manually using Run Command to change the Windows Update configuration.
 
-The available parameters in this document support specifying a category of updates to install (or whether to turn off automatic updates), as well as specifying the day of the week and time of day to run patching operations. This SSM document is most useful if you don't need strict control over Windows updates and don't need to collect compliance information.
+The available parameters in this document support specifying a category of updates to install (or whether to turn off automatic updates), and specifying the day of the week and time of day to run patching operations. This SSM document is most useful if you don't need strict control over Windows updates and don't need to collect compliance information.
 
 **Replaces legacy SSM documents: **
 + *None*
@@ -76,19 +66,19 @@ This SSM document provides basic patching functionality in cases where you eithe
 + `AWS-InstallMissingWindowsUpdates`
 + `AWS-InstallSpecificWindowsUpdates`
 
-The three legacy documents perform different functions, but you can achieve the same results by using different parameter settings with the newer SSM document `AWS-InstallWindowsUpdates`. These parameter settings are described in [Legacy SSM documents for patching managed nodes](#patch-manager-ssm-documents-legacy).
+The three legacy documents perform different functions. However, you can achieve the same results by using different parameter settings with the newer SSM document `AWS-InstallWindowsUpdates`. These parameter settings are described in [Legacy SSM documents for patching managed nodes](#patch-manager-ssm-documents-legacy).
 
 ### `AWS-RunPatchBaseline`
 <a name="patch-manager-ssm-documents-recommended-AWS-RunPatchBaseline"></a>
 
 Installs patches on your managed nodes or scans nodes to determine whether any qualified patches are missing. Available in all AWS Regions.
 
-`AWS-RunPatchBaseline` allows you to control patch approvals using the patch baseline specified as the "default" for an operating system type. Reports patch compliance information that you can view using the Systems Manager Compliance tools. These tools provide you with insights on the patch compliance state of your managed nodes, such as which nodes are missing patches and what those patches are. When you use `AWS-RunPatchBaseline`, patch compliance information is recorded using the `PutInventory` API command. For Linux operating systems, compliance information is provided for patches from both the default source repository configured on a managed node and from any alternative source repositories you specify in a custom patch baseline. For more information about alternative source repositories, see [How to specify an alternative patch source repository (Linux)](patch-manager-alternative-source-repository.md). For more information about the Systems Manager Compliance tools, see [AWS Systems Manager Compliance](systems-manager-compliance.md).
+`AWS-RunPatchBaseline` lets you control patch approvals using the patch baseline specified as the "default" for an operating system type. Reports patch compliance information that you can view using the Systems Manager Compliance tools. These tools provide you with insights on the patch compliance state of your managed nodes, such as which nodes are missing patches and what those patches are. When you use `AWS-RunPatchBaseline`, patch compliance information is recorded using the `PutInventory` API command. For Linux operating systems, compliance information is provided for patches from both the default source repository configured on a managed node and from any alternative source repositories you specify in a custom patch baseline. For more information about alternative source repositories, see [How to specify an alternative patch source repository (Linux)](patch-manager-alternative-source-repository.md). For more information about the Systems Manager Compliance tools, see [AWS Systems Manager Compliance](systems-manager-compliance.md).
 
  **Replaces legacy documents:**
 + `AWS-ApplyPatchBaseline`
 
-The legacy document `AWS-ApplyPatchBaseline` applies only to Windows Server managed nodes, and doesn't provide support for application patching. The newer `AWS-RunPatchBaseline` provides the same support for both Windows and Linux systems. Version 2.0.834.0 or later of SSM Agent is required in order to use the `AWS-RunPatchBaseline` document.
+The legacy document `AWS-ApplyPatchBaseline` applies only to Windows Server managed nodes, and doesn't provide support for application patching. The newer `AWS-RunPatchBaseline` provides the same support for both Windows and Linux systems. Version 2.0.834.0 or later of SSM Agent must use the `AWS-RunPatchBaseline` document.
 
 For more information about the `AWS-RunPatchBaseline` SSM document, see [SSM Command document for patching: `AWS-RunPatchBaseline`](patch-manager-aws-runpatchbaseline.md).
 
@@ -100,7 +90,7 @@ Installs patches on your instances or scans instances to determine whether any q
 `AWS-RunPatchBaselineAssociation` differs from `AWS-RunPatchBaseline` in a few important ways:
 + `AWS-RunPatchBaselineAssociation` is intended for use primarily with State Manager associations created using Quick Setup, a tool in AWS Systems Manager. Specifically, when you use the Quick Setup Host Management configuration type, if you choose the option **Scan instances for missing patches daily**, the system uses `AWS-RunPatchBaselineAssociation` for the operation.
 
-  In most cases, however, when setting up your own patching operations, you should choose [`AWS-RunPatchBaseline`](patch-manager-aws-runpatchbaseline.md) or [`AWS-RunPatchBaselineWithHooks`](patch-manager-aws-runpatchbaselinewithhooks.md) instead of `AWS-RunPatchBaselineAssociation`.
+  Usually, however, when setting up your own patching operations, you should choose [`AWS-RunPatchBaseline`](patch-manager-aws-runpatchbaseline.md) or [`AWS-RunPatchBaselineWithHooks`](patch-manager-aws-runpatchbaselinewithhooks.md) instead of `AWS-RunPatchBaselineAssociation`.
 
   For more information, see the following topics:
   + [AWS Systems Manager Quick Setup](systems-manager-quick-setup.md)

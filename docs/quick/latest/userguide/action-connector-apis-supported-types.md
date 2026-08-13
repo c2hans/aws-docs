@@ -82,7 +82,7 @@ The following table shows which Amazon Quick features each action connector type
   <tr><th>Action Connector</th><th>Chat Agents</th><th>Flows</th><th>Dashboard Visuals</th><th>Dashboard Alerts</th><th>Automations</th><th>Companions</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="7">AWS Built-in Services</td></tr>
+  <tr><td colspan="7"><b>AWS Built-in Services</b></td></tr>
   <tr><td>AWS Bedrock Agent Runtime</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✓</td><td>—</td></tr>
   <tr><td>AWS Bedrock Data Automation Runtime</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✓</td><td>—</td></tr>
   <tr><td>AWS Bedrock Runtime</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✓</td><td>—</td></tr>
@@ -90,7 +90,7 @@ The following table shows which Amazon Quick features each action connector type
   <tr><td>Amazon Comprehend Medical</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
   <tr><td>Amazon S3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✓</td><td>—</td></tr>
   <tr><td>Amazon Textract</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✓</td><td>—</td></tr>
-  <tr><td colspan="7">External Service Connectors</td></tr>
+  <tr><td colspan="7"><b>External Service Connectors</b></td></tr>
   <tr><td>Adobe Marketing Agent</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
   <tr><td>Airtable</td><td>✓</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td></tr>
   <tr><td>Asana</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>✓</td></tr>
@@ -102,7 +102,7 @@ The following table shows which Amazon Quick features each action connector type
   <tr><td>Cisco Webex Meetings</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
   <tr><td>Cisco Webex Video Messaging</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
   <tr><td>Dropbox</td><td>✓</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td></tr>
-  <tr><td>Dun & Bradstreet</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>Dun &amp; Bradstreet</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
   <tr><td>Figma</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
   <tr><td>GitHub</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
   <tr><td>Gmail</td><td>✓</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td></tr>
@@ -143,7 +143,7 @@ The following table shows which Amazon Quick features each action connector type
   <tr><td>Zendesk</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>✓</td></tr>
   <tr><td>Zoom</td><td>✓</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td></tr>
   <tr><td>ZoomInfo</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-  <tr><td colspan="7">Custom Connector Types</td></tr>
+  <tr><td colspan="7"><b>Custom Connector Types</b></td></tr>
   <tr><td>Model Context Protocol (MCP)</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>✓</td><td>—</td></tr>
   <tr><td>OpenAPI</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
   <tr><td>REST API</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✓</td><td>—</td></tr>

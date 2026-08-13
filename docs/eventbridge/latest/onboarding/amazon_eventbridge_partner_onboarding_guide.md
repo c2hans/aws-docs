@@ -47,7 +47,7 @@ The flow for this diagram is as follows.
 
 1. The partner’s customer navigates to the partner system, selects a partner resource that generates events (for example, acct1/repo1), and enters the AWS customer account ID along with the AWS Region where they want to receive events.
 
-1. The partner system creates an event source by calling the [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_CreatePartnerEventSource.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_CreatePartnerEventSource.html) in the Region specified by the customer and passing in the customer’s AWS account ID and a unique name for the event source.
+1. The partner system creates an event source by calling the [`CreatePartnerEventSource`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_CreatePartnerEventSource.html) in the Region specified by the customer and passing in the customer’s AWS account ID and a unique name for the event source.
 
 1. The partner sends events to the event source.
 
@@ -60,7 +60,7 @@ The partner can send events to an event source as soon as the event source is cr
 
  **Partner delete**
 
-The partner can delete an event source at any time by calling the [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_DeletePartnerEventSource.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_DeletePartnerEventSource.html) API. When this happens, the AWS customer sees that the event source is now DELETED. If the customer had an event bus associated with that event source, the event bus continues to exist but cannot receive events.
+The partner can delete an event source at any time by calling the [`DeletePartnerEventSource`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_DeletePartnerEventSource.html) API. When this happens, the AWS customer sees that the event source is now DELETED. If the customer had an event bus associated with that event source, the event bus continues to exist but cannot receive events.
 
 ## Event source names
 <a name="AWS_EventBridge_Partner_Onboarding_Names"></a>

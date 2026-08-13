@@ -108,7 +108,7 @@ You can use the following code to create a database audit specification that rec
 ### Viewing audit logs
 <a name="viewing-audit-logs.9a24635d-b3c5-5946-8f97-0607282fa3f9"></a>
 
-Use the following query to view the audit logs. Audit logs are kept in the DB instance until they are uploaded to Amazon S3. If you enable retention for the [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLServer.Options.html](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLServer.Options.html)** **option, Amazon RDS moves the file into the retention folder `D:\rdsdbdata\SQLAudit\transmitted`.
+Use the following query to view the audit logs. Audit logs are kept in the DB instance until they are uploaded to Amazon S3. If you enable retention for the [**SQLSERVER\_AUDIT**](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLServer.Options.html)** **option, Amazon RDS moves the file into the retention folder `D:\rdsdbdata\SQLAudit\transmitted`.
 
 You can also view the audit records in the retention folder by changing the filter to `D:\rdsdbdata\SQLAudit\transmitted\*.sqlaudit`.
 

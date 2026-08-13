@@ -41,21 +41,21 @@ The following image shows a primary session and replicated sessions in different
 <a name="session-lifecycle"></a>
 
 Creating sessions
-You use the [https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_CreateMeeting.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_CreateMeeting.html) or [https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html) APIs to create WebRTC media sessions. By default, the APIs create a primary session unless you specifically create a replica session.
+You use the [CreateMeeting](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_CreateMeeting.html) or [CreateMeetingWithAttendees](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html) APIs to create WebRTC media sessions. By default, the APIs create a primary session unless you specifically create a replica session.
 You create a replica session by specifying the `MeetingId` of the primary session as the `PrimaryMeetingId` in the `CreateMeeting` or `CreateMeetingWithAttendees` API call.
 If you specify the `MeetingId` of a replica session as the `PrimaryMeetingId`, the API call will fail.
 
 Creating attendees
- To create the attendee credentials needed to join a WebRTC media session, you can use the [https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html), [https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_BatchCreateAttendee.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_BatchCreateAttendee.html), or [https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_CreateAttendee.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_CreateAttendee.html) APIs.
+ To create the attendee credentials needed to join a WebRTC media session, you can use the [CreateMeetingWithAttendees](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_CreateMeetingWithAttendees.html), [BatchCreateAttendee](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_BatchCreateAttendee.html), or [CreateAttendee](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_CreateAttendee.html) APIs.
 When creating sessions for a large number of attendees, use `CreateMeetingWithAttendees` or `BatchCreateAttendee` to minimize the number of API calls required.
 
 Deleting attendees
-You use the [https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_DeleteAttendee.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_DeleteAttendee.html) API to revoke a attendee's credentials for a WebRTC media session. If the attendee is connected to the session, they will disconnected and cannot rejoin.
-When you use the [https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_DeleteMeeting.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_DeleteMeeting.html) API to delete a WebRTC media session, the API automatically deletes all attendees and you don't need to call `DeleteAttendee`.
+You use the [DeleteAttendee](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_DeleteAttendee.html) API to revoke a attendee's credentials for a WebRTC media session. If the attendee is connected to the session, they will disconnected and cannot rejoin.
+When you use the [DeleteMeeting](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_DeleteMeeting.html) API to delete a WebRTC media session, the API automatically deletes all attendees and you don't need to call `DeleteAttendee`.
 
 Switching sessions
 To allow a participant to switch from a replica session to a primary session, you must create credentials for them in the primary meeting. Refer to *Creating attendees* earlier in this list. Use the credentials with the `promoteToPrimaryMeeting` method in the Amazon Chime SDK client library to switch to the primary session.
-To switch participants back to a replica session, use the `demoteFromPrimaryMeeting` method in the Amazon Chime SDK client library, or use the [https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_DeleteAttendee.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_DeleteAttendee.html) API to invalidate their primary session credentials.
+To switch participants back to a replica session, use the `demoteFromPrimaryMeeting` method in the Amazon Chime SDK client library, or use the [DeleteAttendee](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_DeleteAttendee.html) API to invalidate their primary session credentials.
 A presenter who connects directly to a primary session can't switch to a replica session.
 For more information on switching between sessions, refer to the client library documentation:
 + [Amazon Chime SDK for Android](https://github.com/aws/amazon-chime-sdk-android) on GitHub.
@@ -63,6 +63,6 @@ For more information on switching between sessions, refer to the client library 
 + [Amazon Chime SDK client library for JavaScript](https://github.com/aws/amazon-chime-sdk-js) on GitHub.
 
 Deleting sessions
-You use the [https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_DeleteMeeting.html](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_DeleteMeeting.html) API to delete WebRTC media sessions.
+You use the [DeleteMeeting](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_DeleteMeeting.html) API to delete WebRTC media sessions.
 If you delete a primary session, the `DeleteMeeting` API automatically deletes all attached replica sessions. So to delete all sessions, just delete the primary.
 The service automatically deletes a primary session if no attendees connect for 5 contiguous minutes. The service only deletes replica sessions automatically when it deletes a primary session. That means you can create replica sessions when you create a primary session, and the replicas will be available for the duration of the primary session.

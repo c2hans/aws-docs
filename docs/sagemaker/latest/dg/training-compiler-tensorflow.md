@@ -64,7 +64,7 @@ There's no additional change you need to make in the training script.
 #### For distributed training
 <a name="training-compiler-tensorflow-models-transformers-keras-distributed"></a>
 
-SageMaker Training Compiler acceleration works transparently for multi-GPU workloads when the model is constructed and trained using Keras APIs within the scope of [https://www.tensorflow.org/api_docs/python/tf/distribute/Strategy](https://www.tensorflow.org/api_docs/python/tf/distribute/Strategy) call.
+SageMaker Training Compiler acceleration works transparently for multi-GPU workloads when the model is constructed and trained using Keras APIs within the scope of [`tf.distribute.Strategy.scope()`](https://www.tensorflow.org/api_docs/python/tf/distribute/Strategy) call.
 
 1. Choose the right distributed training strategy.
 

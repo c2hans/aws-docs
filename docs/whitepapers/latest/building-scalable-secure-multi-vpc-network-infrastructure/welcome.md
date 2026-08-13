@@ -30,7 +30,7 @@ When you set up your multi-account environment using AWS Control Tower, it creat
 
 ![A diagram depicting AWS organizational OUs.](http://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/organization-ous.png)
 
-For further details on multi-account environment using AWS Control Tower, refer to [https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/appendix-e-establish-multi-account.html](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/appendix-e-establish-multi-account.html) in the *Organizing Your AWS Environment Using Multiple Accounts* whitepaper.
+For further details on multi-account environment using AWS Control Tower, refer to [*Appendix E*](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/appendix-e-establish-multi-account.html) in the *Organizing Your AWS Environment Using Multiple Accounts* whitepaper.
 
 Most customers begin with a few VPCs to deploy their infrastructure. The number of VPCs a customer creates is usually related to their number of accounts, users, and staged environments (production, development, test, and so on). As cloud usage grows, the number of users, business units, applications, and Regions that a customer interacts with also grow, leading to the creation of new VPCs.
 

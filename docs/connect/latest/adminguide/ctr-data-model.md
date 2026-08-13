@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ctr-data-model
 <a name="ctr-data-model"></a>
 
 **Note**
-End of support notice: On May 20, 2026, AWS will end support for Amazon Connect Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Amazon Connect console, access Voice ID features on the Connect Customer admin website or Contact Control Panel, or access Voice ID resources. For more information, visit [Amazon Connect Voice ID end of support](https://docs.aws.amazon.com/connect/latest/adminguide/amazonconnect-voiceid-end-of-support.html).
+End of support notice: On May 20, 2026, AWS will end support for Amazon Connect Customer Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Amazon Connect Customer console, access Voice ID features on the Connect Customer admin website or Contact Control Panel, or access Voice ID resources. For more information, visit [Amazon Connect Customer Voice ID end of support](https://docs.aws.amazon.com/connect/latest/adminguide/amazonconnect-voiceid-end-of-support.html).
 
 This article describes the data model for Connect Customer contact records. Contact records capture the events associated with a contact in your contact center. Real-time and historical metrics are based on the data captured in the contact records.
 
@@ -379,7 +379,7 @@ Type: String
 Length: 1-256
 
 **ContactLens**
-Information about Contact Lens features applied to this contact.
+Information about conversational analytics features applied to this contact.
 Type: [ContactLens](#ctr-ContactLens)
 
 **CustomerId**
@@ -602,7 +602,7 @@ If recording was enabled, this is information about the recording.
 Type: Array of [RecordingsInfo](#ctr-RecordingsInfo)
 The first recording for a contact will appear in both the Recording and Recordings sections of the contact record.
 
-**Connect AI agents**
+**agent assist**
 If Amazon Q was enabled on the contact, this is information about the Amazon Q session.
 Type: [WisdomInfo](#ctr-wisdominfo)
 
@@ -610,6 +610,10 @@ Type: [WisdomInfo](#ctr-wisdominfo)
 If this contact is associated with another contact, this is the identifier of the related contact.
 Type: String
 Length: 1-256.
+
+**RingStartTimestamp**
+The date and time that ringing started for a campaign call, in UTC time. Connect Customer populates this field only for outbound campaign calls.
+Type: String (*yyyy*-*mm*-*dd*T*hh*:*mm*:*ss*Z)
 
 **ScheduledTimestamp**
 The date and time when this contact was scheduled to trigger the flow to run, in UTC time. This is supported only for the task channel.
@@ -665,17 +669,17 @@ Type: [GlobalResiliencyMetadata](#ctr-GlobalResiliencyMetadata)
 ## ContactLens
 <a name="ctr-ContactLens"></a>
 
-Contact Lens information, if Contact Lens is enabled on the flow.
+Conversational analytics information, if conversational analytics is enabled on the flow.
 
 **ConversationalAnalytics**
-Information about the [Contact Lens conversational analytics](analyze-conversations.md) feature.
+Information about the [conversational analytics](analyze-conversations.md) feature.
 An object that holds the conversational analytics behavior for the contact.
 Type: [ConversationalAnalytics](#ctr-ConversationalAnalytics)
 
 ## ConversationalAnalytics
 <a name="ctr-ConversationalAnalytics"></a>
 
-Information about [Contact Lens conversational analytics](analyze-conversations.md).
+Information about [conversational analytics](analyze-conversations.md).
 
 **Configuration**
 Configuration for conversational analytics for the contact.
@@ -684,18 +688,18 @@ Type: [Configuration](#ctr-Configuration)
 ## Configuration
 <a name="ctr-Configuration"></a>
 
-Configuration for Contact Lens conversational analytics. You configure conversational analytics by using the [Set recording and analytics behavior](set-recording-behavior.md) flow block in the Connect Customer admin website, or by using the [UpdateContactRecordingBehavior](https://docs.aws.amazon.com/connect/latest/APIReference/contact-actions-updatecontactrecordingbehavior.html) contact action in the Flow language.
+Configuration for conversational analytics. You configure conversational analytics by using the [Set recording and analytics behavior](set-recording-behavior.md) flow block in the Connect Customer admin website, or by using the [UpdateContactRecordingBehavior](https://docs.aws.amazon.com/connect/latest/APIReference/contact-actions-updatecontactrecordingbehavior.html) contact action in the Flow language.
 
 **Enabled**
-Is Contact Lens enabled for the contact?
+Is conversational analytics enabled for the contact?
 Type: Boolean
 
 **ChannelConfiguration**
-Channel-specific Contact Lens conversational analytics configuration for the contact. Conversational analytics configuration is mapped to the flow block that can process contacts from different channels. While majority of configuration parameters apply to all channels, this object contains a subset that are channel-specific.
+Channel-specific conversational analytics configuration for the contact. Conversational analytics configuration is mapped to the flow block that can process contacts from different channels. While majority of configuration parameters apply to all channels, this object contains a subset that are channel-specific.
 Type: [ChannelConfiguration](#ctr-ChannelConfiguration)
 
 **LanguageLocale**
-Language locale used by Contact Lens to analyze the contact.
+Language locale used by conversational analytics to analyze the contact.
 Type: String
 
 **RedactionConfiguration**
@@ -752,7 +756,7 @@ Valid values for chat: `ContactLens`
 Redaction configuration for the contact.
 
 **Behavior**
-Indicates whether redaction is enabled for sensitive data, such as personal information, in the Contact Lens output file and audio recording. When this field is set to `Disabled` all other values in this object are ignored.
+Indicates whether redaction is enabled for sensitive data, such as personal information, in the conversational analytics output file and audio recording. When this field is set to `Disabled` all other values in this object are ignored.
 Type: String
 Valid values: `Enable` \| `Disable`
 
@@ -1240,10 +1244,10 @@ Type: Boolean
 ## WisdomInfo
 <a name="ctr-wisdominfo"></a>
 
-Information about an Connect AI agents session.
+Information about an agent assist session.
 
 **SessionArn**
-The Amazon Resource Name (ARN) of the Connect AI agents session for the contact.
+The Amazon Resource Name (ARN) of the agent assist session for the contact.
 Type: ARN
 
 ## Authentication

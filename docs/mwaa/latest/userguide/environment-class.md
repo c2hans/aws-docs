@@ -18,7 +18,7 @@ The following section contains the default concurrent Apache Airflow tasks, Rand
 
 In the following table, DAG capacity refers to DAG definitions, not executions, and assumes that your DAGs are [dynamic](https://airflow.apache.org/docs/apache-airflow/2.6.3/concepts/dags.html?highlight=dynamic%20dag#dynamic-dags) in a single Python file and written with [Apache Airflow best practices](https://airflow.apache.org/docs/apache-airflow/2.6.3/best-practices.html?highlight=best%20practices).
 
-Task executions depend on how many are scheduled simultaneously, and assumes that the number of DAG runs set to start at the same time doesn't exceed the default [https://airflow.apache.org/docs/apache-airflow/2.6.3/configurations-ref.html#config-scheduler-max-dagruns-per-loop-to-schedule](https://airflow.apache.org/docs/apache-airflow/2.6.3/configurations-ref.html#config-scheduler-max-dagruns-per-loop-to-schedule), as well as the size and number of workers as detailed in this topic.
+Task executions depend on how many are scheduled simultaneously, and assumes that the number of DAG runs set to start at the same time doesn't exceed the default [`max_dagruns_per_loop_to_schedule`](https://airflow.apache.org/docs/apache-airflow/2.6.3/configurations-ref.html#config-scheduler-max-dagruns-per-loop-to-schedule), as well as the size and number of workers as detailed in this topic.
 
 ------
 #### [ mw1.micro ]
@@ -75,7 +75,7 @@ mw1.micro does not support auto-scaling.
 #### [ mw1.2xlarge ]
 + Up to 4000 DAG capacity
 + 80 concurrent tasks (by default)
-+ Componenets:
++ Components:
   + Webservers: 8 vCPU 24GB RAM each
   + Workers: 16 vCPU 48GB RAM each
   + Schedulers: 16 vCPU 48GB RAM each

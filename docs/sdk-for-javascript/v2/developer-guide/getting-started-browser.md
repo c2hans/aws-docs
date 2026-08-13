@@ -17,7 +17,7 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 ## The Scenario
 <a name="getting-started-browser-scenario"></a>
 
-Amazon Polly is a cloud service that converts text into lifelike speech. You can use Amazon Polly to develop applications that increase engagement and accessibility. Amazon Polly supports multiple languages and includes a variety of lifelike voices. For more information about Amazon Polly, see the [https://docs.aws.amazon.com/polly/latest/dg/](https://docs.aws.amazon.com/polly/latest/dg/).
+Amazon Polly is a cloud service that converts text into lifelike speech. You can use Amazon Polly to develop applications that increase engagement and accessibility. Amazon Polly supports multiple languages and includes a variety of lifelike voices. For more information about Amazon Polly, see the [*Amazon Polly Developer Guide*](https://docs.aws.amazon.com/polly/latest/dg/).
 
 The example shows how to set up and run a simple browser script that takes text you enter, sends that text to Amazon Polly, and then returns the URL of the synthesized audio of the text for you to play. The browser script uses Amazon Cognito Identity to provide credentials needed to access AWS services. You will see the basic patterns for loading and using the SDK for JavaScript in browser scripts.
 
@@ -27,9 +27,9 @@ Playback of the synthesized speech in this example depends on running in a brows
 ![Illustration of how a browser script interacts with Amazon Cognito Identity and Amazon Polly services](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/browserscenario.png)
 
 The browser script uses the SDK for JavaScript to synthesize text by using these APIs:
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityCredentials.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityCredentials.html) constructor
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Polly/Presigner.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Polly/Presigner.html) constructor
-+ [https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Polly/Presigner.html#getSynthesizeSpeechUrl-property](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Polly/Presigner.html#getSynthesizeSpeechUrl-property)
++ [`AWS.CognitoIdentityCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityCredentials.html) constructor
++ [`AWS.Polly.Presigner`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Polly/Presigner.html) constructor
++ [`getSynthesizeSpeechUrl`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Polly/Presigner.html#getSynthesizeSpeechUrl-property)
 
 ## Step 1: Create an Amazon Cognito Identity Pool
 <a name="getting-started-browser-create-identity-pool"></a>

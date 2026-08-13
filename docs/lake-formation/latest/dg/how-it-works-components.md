@@ -23,5 +23,5 @@ For information about the AWS Glue API, see the [AWS Glue Developer Guide](https
 <a name="components-other-services"></a>
 
 Lake Formation uses the following services:
-+ [https://docs.aws.amazon.com/glue/latest/dg/](https://docs.aws.amazon.com/glue/latest/dg/) to orchestrate jobs and crawlers to transform data using the AWS Glue transforms.
++ [AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/) to orchestrate jobs and crawlers to transform data using the AWS Glue transforms.
 + [IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/) to grant permissions policies to Lake Formation principals. The Lake Formation permission model augments the IAM permission model to secure your data lake.

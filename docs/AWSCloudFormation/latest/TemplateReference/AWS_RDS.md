@@ -24,3 +24,4 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::RDS::GlobalCluster](aws-resource-rds-globalcluster.md)
 + [AWS::RDS::Integration](aws-resource-rds-integration.md)
 + [AWS::RDS::OptionGroup](aws-resource-rds-optiongroup.md)
++ [AWS::RDS::ReservedDBInstance](aws-resource-rds-reserveddbinstance.md)

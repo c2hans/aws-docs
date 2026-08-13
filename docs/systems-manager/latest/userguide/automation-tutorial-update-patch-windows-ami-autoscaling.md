@@ -13,7 +13,7 @@ The final step of the automation in this example uses a Python function to creat
 
 **Before you begin**
 Complete the following tasks before you begin this example.
-+ Configure IAM roles for Automation, a tool in AWS Systems Manager. Systems Manager requires an instance profile role and a service role ARN to process automations. For more information, see [Setting up Automation](automation-setup.md).
++ Configure IAM roles for Automation. Systems Manager requires an instance profile role and a service role ARN to process automations. For more information, see [Setting up Automation](automation-setup.md).
 
 ## Create the **PatchAMIAndUpdateASG** runbook
 <a name="create-autoscaling-update-runbook"></a>

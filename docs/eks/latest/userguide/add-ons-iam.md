@@ -15,7 +15,7 @@ The recommended way to grant AWS permissions to cluster workloads is using the A
 
 Amazon EKS add-ons can help manage the life cycle of pod identity associations corresponding to the add-on. For example, you can create or update an Amazon EKS add-on and the necessary pod identity association in a single API call. Amazon EKS also provides an API for retrieving suggested IAM policies.
 
-1. Confirm that [Amazon EKS pod identity agent](pod-id-agent-setup.md) is setup on your cluster.
+1. Confirm that [Amazon EKS pod identity agent](pod-id-agent-setup.md) is set up on your cluster.
 
 1. Determine if the add-on you want to install requires IAM permissions using the `describe-addon-versions` AWS CLI operation. If the `requiresIamPermissions` flag is `true`, then you should use the `describe-addon-configurations` operation to determine the permissions needed by the addon. The response includes a list of suggested managed IAM policies.
 

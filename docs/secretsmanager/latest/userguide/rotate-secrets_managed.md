@@ -33,7 +33,7 @@ For secrets held by Secrets Manager partners,
 1. Choose **Save**.
 
 **To change the schedule for managed rotation (AWS CLI)**
-+ Call [https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/rotate-secret.html](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/rotate-secret.html). The following example rotates the secret between 16:00 and 18:00 UTC on the 1st and 15th day of the month. For more information, see [Rotation schedules](rotate-secrets_schedule.md).
++ Call [`rotate-secret`](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/rotate-secret.html). The following example rotates the secret between 16:00 and 18:00 UTC on the 1st and 15th day of the month. For more information, see [Rotation schedules](rotate-secrets_schedule.md).
 
   ```
   aws secretsmanager rotate-secret \

@@ -64,7 +64,7 @@ The streaming responses feature enhances the responses from QnABot by returning 
 ### Step A: Enable Streaming QnABot on AWS Stack
 <a name="step-a-enable-streaming-qnabot-on-aws-stack"></a>
 
-To turn on streaming support for QnABot: - Set the `EnableStreaming` cloudformation parameter to `TRUE` and deploy the solution. This will create a nested which will deploy the following resources: - Amazon API Gateway V2 - Amazon DynamoDB Table - AWS Lambda - Once stack update is complete, go to Stack - `Outputs` and copy the value for `StreamingWebSocketEndpoint` output.
+To turn on streaming support for QnABot: - Set the `EnableStreaming` CloudFormation parameter to `TRUE` and deploy the guidance. This will create a nested which will deploy the following resources: - Amazon API Gateway V2 - Amazon DynamoDB Table - AWS Lambda - Once stack update is complete, go to Stack - `Outputs` and copy the value for `StreamingWebSocketEndpoint` output.
 
  **Sample Markdown text**
 
@@ -73,7 +73,7 @@ To turn on streaming support for QnABot: - Set the `EnableStreaming` cloudformat
 ### Step B: Enable Streaming in Lex Web UI (0.26\+) and provide WebSocket Endpoint from QnABot
 <a name="step-b-enable-streaming-in-lex-web-ui-0-26-and-provide-websocket-endpoint-from-qnabot"></a>
 
-To turn on streaming support for Lex Web UI: - Set the `AllowStreamingResponses` cloudformation parameter to `true` and deploy the solution. - Copy the `StreamingWebSocketEndpoint` value from the QnABot stack `Outputs` and enter it as the `StreamingWebSocketEndpoint` parameter when deploying the [AWS Lex Web UI](https://aws.amazon.com/blogs/machine-learning/deploy-a-web-ui-for-your-chatbot/) chat client CloudFormation template, as shown in the screenshot below.
+To turn on streaming support for Lex Web UI: - Set the `AllowStreamingResponses` CloudFormation parameter to `true` and deploy the guidance. - Copy the `StreamingWebSocketEndpoint` value from the QnABot stack `Outputs` and enter it as the `StreamingWebSocketEndpoint` parameter when deploying the [AWS Lex Web UI](https://aws.amazon.com/blogs/machine-learning/deploy-a-web-ui-for-your-chatbot/) chat client CloudFormation template, as shown in the screenshot below.
 
  **Sample Markdown text**
 

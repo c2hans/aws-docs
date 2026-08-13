@@ -24,7 +24,7 @@ For example, suppose you want to know every time a new AWS Clean Rooms collabora
 
 AWS services can send events directly to the EventBridge default event bus. In addition, AWS CloudTrail sends events originating from numerous AWS services to EventBridge as well. These events can include API calls, console sign ins and actions, service events, and CloudTrail Insights. For more information, see [AWS service events delivered via AWS CloudTrail](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-service-event-cloudtrail.html) in the *EventBridge User Guide*.
 
-For a full list of AWS Clean Rooms events sent to EventBridge, refer to the AWS Clean Rooms topic in the [https://docs.aws.amazon.com/eventbridge/latest/ref/welcome.html](https://docs.aws.amazon.com/eventbridge/latest/ref/welcome.html).
+For a full list of AWS Clean Rooms events sent to EventBridge, refer to the AWS Clean Rooms topic in the [*EventBridge Events Reference*](https://docs.aws.amazon.com/eventbridge/latest/ref/welcome.html).
 
 | Event detail type | Description |
 | --- | --- |

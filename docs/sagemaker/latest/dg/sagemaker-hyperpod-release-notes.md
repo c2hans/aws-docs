@@ -132,7 +132,7 @@ SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod 
 SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with SlurmSlurm orchestration](sagemaker-hyperpod-slurm.md) and [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md).
 
 **New features and improvements**
-+ Added the following IAM condition keys for more granular access control in the [https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_CreateCluster.html](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_CreateCluster.html) and [https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_UpdateCluster.html](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_UpdateCluster.html) API operations.
++ Added the following IAM condition keys for more granular access control in the [`CreateCluster`](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_CreateCluster.html) and [`UpdateCluster`](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_UpdateCluster.html) API operations.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-release-notes.html)
 
 ## SageMaker HyperPod release notes: February 20, 2025
@@ -298,7 +298,7 @@ SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod 
   When [Generic Resources (GRES)](https://slurm.schedmd.com/gres.html) are attached to a Slurm node, Slurm typically doesn't permit changes in the node allocation, such as replacing nodes, and thus doesn’t allow to resume a failed job. Unless explicitly forbidden, the HyperPod auto-resume functionality automatically re-queues any faulty job associated with the GRES-enabled nodes. This process involves stopping the job, placing it back into the job queue, and then restarting the job from the beginning.
 
 **Other changes**
-+ Pre-packaged [https://slurm.schedmd.com/slurmrestd.html](https://slurm.schedmd.com/slurmrestd.html) in the SageMaker HyperPod AMI.
++ Pre-packaged [`slurmrestd`](https://slurm.schedmd.com/slurmrestd.html) in the SageMaker HyperPod AMI.
 + Changed the default values for `ResumeTimeout` and `UnkillableStepTimeout` from 60 seconds to 300 seconds in `slurm.conf` to improve system responsiveness and job handling.
 + Made minor improvements on health checks for NVIDIA Data Center GPU Manager (DCGM) and The NVIDIA System Management Interface (nvidia-smi).
 
@@ -311,7 +311,7 @@ SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod 
 SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md).
 
 **New features**
-+ Added a new capability of attaching additional storage to SageMaker HyperPod cluster instances. With this capability, you can configure supplementary storage at the instance group configuration level during the cluster creation or update processes, either through the SageMaker HyperPod console or the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html) and [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html) APIs. The additional EBS volume is attached to each instance within a SageMaker HyperPod cluster and mounted to `/opt/sagemaker`. To learn more about implementing it in your SageMaker HyperPod cluster, see the updated documentation on the following pages.
++ Added a new capability of attaching additional storage to SageMaker HyperPod cluster instances. With this capability, you can configure supplementary storage at the instance group configuration level during the cluster creation or update processes, either through the SageMaker HyperPod console or the [`CreateCluster`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html) and [`UpdateCluster`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html) APIs. The additional EBS volume is attached to each instance within a SageMaker HyperPod cluster and mounted to `/opt/sagemaker`. To learn more about implementing it in your SageMaker HyperPod cluster, see the updated documentation on the following pages.
   + [Getting started with SageMaker HyperPod](smcluster-getting-started-slurm.md)
   + [SageMaker HyperPod Slurm cluster operations](sagemaker-hyperpod-operate-slurm.md)
 
@@ -334,7 +334,7 @@ Note that you should run the AWS CLI command to update your HyperPod cluster. Up
 SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md).
 
 **Bug fixes**
-+ Fixed a bug with the `ThreadsPerCore` parameter in the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ClusterInstanceGroupSpecification.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ClusterInstanceGroupSpecification.html) API. With the fix, the [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html) and [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html) APIs properly take and apply the user input through `ThreadsPerCore`. This fix is effective on HyperPod clusters created after April 24, 2024. If you had issues with this bug and want to get this fix applied to your cluster, you need to create a new cluster. Make sure that you back up and restore your work while moving to a new cluster following the instructions at [Use the backup script provided by SageMaker HyperPod](sagemaker-hyperpod-operate-slurm-cli-command.md#sagemaker-hyperpod-operate-slurm-cli-command-update-cluster-software-backup).
++ Fixed a bug with the `ThreadsPerCore` parameter in the [`ClusterInstanceGroupSpecification`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ClusterInstanceGroupSpecification.html) API. With the fix, the [`CreateCluster`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html) and [`UpdateCluster`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html) APIs properly take and apply the user input through `ThreadsPerCore`. This fix is effective on HyperPod clusters created after April 24, 2024. If you had issues with this bug and want to get this fix applied to your cluster, you need to create a new cluster. Make sure that you back up and restore your work while moving to a new cluster following the instructions at [Use the backup script provided by SageMaker HyperPod](sagemaker-hyperpod-operate-slurm-cli-command.md#sagemaker-hyperpod-operate-slurm-cli-command-update-cluster-software-backup).
 
 ## SageMaker HyperPod release notes: March 27, 2024
 <a name="sagemaker-hyperpod-release-notes-20240327"></a>

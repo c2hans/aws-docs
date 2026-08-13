@@ -9,7 +9,7 @@ AWS Control Tower offers two Region deny controls. One control, `AWS-GR_REGION_D
 
 **Considerations about the Region deny control for the landing zone**
 
-The Region deny control, [https://docs.aws.amazon.com//controltower/latest/controlreference/primary-region-deny-policy.html](https://docs.aws.amazon.com//controltower/latest/controlreference/primary-region-deny-policy.html) is unique, because it applies to the landing zone as a whole, rather than to any specific OU. To configure the Region deny control, go to the **Landing zone settings** page and select **Modify settings**.
+The Region deny control, [`AWS-GR_REGION_DENY`](https://docs.aws.amazon.com//controltower/latest/controlreference/primary-region-deny-policy.html) is unique, because it applies to the landing zone as a whole, rather than to any specific OU. To configure the Region deny control, go to the **Landing zone settings** page and select **Modify settings**.
 + This setting can be changed at a later time.
 + When enabled, this control applies to all OUs with the `AWSControlTowerBaseline` enabled.
 + This control cannot be configured for individual OUs.

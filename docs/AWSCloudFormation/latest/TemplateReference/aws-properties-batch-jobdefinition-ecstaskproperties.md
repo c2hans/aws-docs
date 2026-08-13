@@ -25,6 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[ExecutionRoleArn](#cfn-batch-jobdefinition-ecstaskproperties-executionrolearn)" : {{String}},
   "[IpcMode](#cfn-batch-jobdefinition-ecstaskproperties-ipcmode)" : {{String}},
   "[NetworkConfiguration](#cfn-batch-jobdefinition-ecstaskproperties-networkconfiguration)" : {{NetworkConfiguration}},
+  "[NetworkMode](#cfn-batch-jobdefinition-ecstaskproperties-networkmode)" : {{String}},
   "[PidMode](#cfn-batch-jobdefinition-ecstaskproperties-pidmode)" : {{String}},
   "[PlatformVersion](#cfn-batch-jobdefinition-ecstaskproperties-platformversion)" : {{String}},
   "[RuntimePlatform](#cfn-batch-jobdefinition-ecstaskproperties-runtimeplatform)" : {{RuntimePlatform}},
@@ -46,6 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [IpcMode](#cfn-batch-jobdefinition-ecstaskproperties-ipcmode): {{String}}
   [NetworkConfiguration](#cfn-batch-jobdefinition-ecstaskproperties-networkconfiguration): {{
     NetworkConfiguration}}
+  [NetworkMode](#cfn-batch-jobdefinition-ecstaskproperties-networkmode): {{String}}
   [PidMode](#cfn-batch-jobdefinition-ecstaskproperties-pidmode): {{String}}
   [PlatformVersion](#cfn-batch-jobdefinition-ecstaskproperties-platformversion): {{String}}
   [RuntimePlatform](#cfn-batch-jobdefinition-ecstaskproperties-runtimeplatform): {{
@@ -97,6 +99,12 @@ This parameter is not supported for jobs that run on Fargate resources.
 The network configuration for jobs that are running on Fargate resources. Jobs that are running on Amazon EC2 resources must not specify this parameter.
 *Required*: No
 *Type*: [NetworkConfiguration](aws-properties-batch-jobdefinition-networkconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`NetworkMode`  <a name="cfn-batch-jobdefinition-ecstaskproperties-networkmode"></a>
+Property description not available.
+*Required*: No
+*Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PidMode`  <a name="cfn-batch-jobdefinition-ecstaskproperties-pidmode"></a>

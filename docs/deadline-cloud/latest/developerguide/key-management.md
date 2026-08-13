@@ -248,7 +248,7 @@ For safety, AWS KMS gives customers a waiting period of up to 30 days before del
 
 Because it's destructive and potentially dangerous to delete a customer managed KMS key, we require that you set a waiting period of 7–30 days. The default waiting period is 30 days.
 
-However, the actual waiting period might be up to 24 hours longer than the period you scheduled. To get the actual date and time when the key will be deleted, use the [https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) operation. You can also see the scheduled deletion date of a key in the [AWS KMS console](https://docs.aws.amazon.com/kms/latest/developerguide/viewing-keys-console.html#viewing-details-navigate) on the key's detail page, in the **General configuration** section. Notice the time zone.
+However, the actual waiting period might be up to 24 hours longer than the period you scheduled. To get the actual date and time when the key will be deleted, use the [DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) operation. You can also see the scheduled deletion date of a key in the [AWS KMS console](https://docs.aws.amazon.com/kms/latest/developerguide/viewing-keys-console.html#viewing-details-navigate) on the key's detail page, in the **General configuration** section. Notice the time zone.
 
 During the waiting period, the customer managed key's status and key state is **Pending deletion**.
 + A customer managed KMS key that is pending deletion can't be used in any [cryptographic operations](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#cryptographic-operations).

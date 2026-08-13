@@ -11,7 +11,7 @@ Orchestration AI Agents require chat streaming to be enabled for chat contacts. 
 ## What is AI Messaging Streaming?
 <a name="what-is-ai-message-streaming"></a>
 
-AI Message Streaming is an Connect Customer feature that enables **progressive display of AI agent responses** during chat interactions. Instead of waiting for the AI to generate a complete response before showing anything to the customer, streaming displays text as it's being generated, creating a more natural, conversational experience.
+AI Message Streaming is a Connect Customer feature that enables **progressive display of AI agent responses** during chat interactions. Instead of waiting for the AI to generate a complete response before showing anything to the customer, streaming displays text as it's being generated, creating a more natural, conversational experience.
 
 ### How It Works
 <a name="how-streaming-works"></a>
@@ -55,7 +55,7 @@ AI Message Streaming availability depends on when your Connect Customer instance
 Connect Customer instances created **after December 2025** have AI Message Streaming enabled by default. The `MESSAGE_STREAMING` instance attribute is automatically set to `true` for these instances, so no additional configuration is required.
 
 **Important**
-If you're using an AWS account with an Connect Customer instance created **before December 2025**, you may need to manually enable AI Message Streaming. Follow the instructions in the [Enable message streaming for AI-powered chat](https://docs.aws.amazon.com/connect/latest/adminguide/message-streaming-ai-chat.html) documentation to check your instance's `MESSAGE_STREAMING` attribute and enable it if needed.
+If you're using an AWS account with a Connect Customer instance created **before December 2025**, you may need to manually enable AI Message Streaming. Follow the instructions in the [Enable message streaming for AI-powered chat](https://docs.aws.amazon.com/connect/latest/adminguide/message-streaming-ai-chat.html) documentation to check your instance's `MESSAGE_STREAMING` attribute and enable it if needed.
 
 ### Amazon Lex Bot Permissions
 <a name="amazon-lex-bot-permissions"></a>

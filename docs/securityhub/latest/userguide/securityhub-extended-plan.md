@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 # Security Hub Extended plan
 <a name="securityhub-extended-plan"></a>
 
- Security Hub Extended plan helps protect your entire enterprise estate across cloud, endpoint, network, identity, data, email, and browser with an integrated security operations experience centered in AWS Security Hub. With the Security Hub Extended plan, you can select partner solutions that address your security needs and sign up for flexible pay-as-you-go pricing with no upfront investments or long-term commitments required. You can add or remove partner solutions as your business needs evolve.
+ With the Security Hub Extended plan, you can protect your entire enterprise estate across cloud, endpoint, network, identity, data, email, and browser. Use AWS Security Hub as the center of an integrated security operations experience. With the Security Hub Extended plan, you can select partner solutions that address your security needs and sign up for flexible pay-as-you-go pricing with no upfront investments or long-term commitments required. You can add or remove partner solutions as your business needs evolve.
 
  The Security Hub Extended plan is available to all customers who have enabled the Security Hub Essentials plan. Charges for Security Hub Extended plan appear on your monthly AWS bill with AWS as the seller of record.
 
@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 + `aws-marketplace:ViewSubscriptions`
 + `aws-marketplace:Subscribe`
 
- To unsubscribe to a partner product from the Security Hub Extended plan, you need the following permissions, in addition to your Security Hub permissions:
+ To unsubscribe from a partner product in the Security Hub Extended plan, you need the following permissions, in addition to your Security Hub permissions:
 + `license-manager:ListReceivedLicenses`
 + `aws-marketplace:ListAgreementCharges`
 + `aws-marketplace:Unsubscribe`
@@ -40,14 +40,14 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 
 1. For each partner solution that you want to sign up for, choose **View product**.
 
-1. Review the product pricing details, and then choose **Subscribe** when you're ready to start the process of onboarding to the partner product.
+1. Review the product pricing details, and then choose **Subscribe** when you are ready to start the process of onboarding to the partner product.
 
 1. After the subscription process completes, choose **Set up your account** to be redirected to the partner's sign-up page.
 
 1. Provide the necessary information for the partner sign-up page, and follow the next steps, provided by the partner, for completing the onboarding steps.
 
 **Important**
-You aren't billed for the partner solution until you complete the onboarding process for the partner product.
+You are not billed for the partner solution until you complete the onboarding process for the partner product.
 
 ## Unsubscribing from an Extended plan partner
 <a name="securityhub-extended-plan-unsubscribe"></a>

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/job_definition_pa
 # Job definition parameters for ContainerProperties
 <a name="job_definition_parameters"></a>
 
-Job definitions that use [https://docs.aws.amazon.com/batch/latest/APIReference/API_ContainerProperties.html](https://docs.aws.amazon.com/batch/latest/APIReference/API_ContainerProperties.html) are split into several parts:
+Job definitions that use [`ContainerProperties`](https://docs.aws.amazon.com/batch/latest/APIReference/API_ContainerProperties.html) are split into several parts:
 + The job definition name
 + The type of the job definition
 + The parameter substitution placeholder defaults
@@ -83,7 +83,7 @@ When this job definition is submitted to run, the `{{Ref::codec}}` argument in t
 When you register a job definition, specify a list of container properties that are passed to the Docker daemon on a container instance when the job is placed. The following container properties are allowed in a job definition. For single-node jobs, these container properties are set at the job definition level. For multi-node parallel jobs, container properties are set in the [Node properties](#nodeProperties) level, for each node group.
 
 `command`
-The command that's passed to the container. This parameter maps to `Cmd` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `COMMAND` parameter to [https://docs.docker.com/engine/reference/commandline/run/](https://docs.docker.com/engine/reference/commandline/run/). For more information about the Docker `CMD` parameter, see [https://docs.docker.com/engine/reference/builder/\#cmd](https://docs.docker.com/engine/reference/builder/#cmd).
+The command that's passed to the container. This parameter maps to `Cmd` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `COMMAND` parameter to [**docker run**](https://docs.docker.com/engine/reference/commandline/run/). For more information about the Docker `CMD` parameter, see [https://docs.docker.com/engine/reference/builder/\#cmd](https://docs.docker.com/engine/reference/builder/#cmd).
 
 ```
 "command": ["{{string}}", ...]
@@ -92,7 +92,7 @@ Type: String array
 Required: No
 
 `environment`
-The environment variables to pass to a container. This parameter maps to `Env` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--env` option to [https://docs.docker.com/engine/reference/commandline/run/](https://docs.docker.com/engine/reference/commandline/run/).
+The environment variables to pass to a container. This parameter maps to `Env` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--env` option to [**docker run**](https://docs.docker.com/engine/reference/commandline/run/).
 We don't recommend that you use plaintext environment variables for sensitive information, such as credential data.
 Environment variables must not start with `AWS_BATCH`. This naming convention is reserved for variables that are set by the AWS Batch service.
 Type: Array of key-value pairs
@@ -129,7 +129,7 @@ Default: `LATEST`
 Required: No
 
 `image`
-The image used to start a job. This string is passed directly to the Docker daemon. Images in the Docker Hub registry are available by default. You can also specify other repositories with `{{repository-url}}/{{image}}:{{tag}}`. Up to 255 letters (uppercase and lowercase), numbers, hyphens, underscores, colons, periods, forward slashes, and number signs are allowed. This parameter maps to `Image` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `IMAGE` parameter of [https://docs.docker.com/engine/reference/commandline/run/](https://docs.docker.com/engine/reference/commandline/run/).
+The image used to start a job. This string is passed directly to the Docker daemon. Images in the Docker Hub registry are available by default. You can also specify other repositories with `{{repository-url}}/{{image}}:{{tag}}`. Up to 255 letters (uppercase and lowercase), numbers, hyphens, underscores, colons, periods, forward slashes, and number signs are allowed. This parameter maps to `Image` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `IMAGE` parameter of [**docker run**](https://docs.docker.com/engine/reference/commandline/run/).
 Docker image architecture must match the processor architecture of the compute resources that they're scheduled on. For example, ARM-based Docker images can only run on ARM-based compute resources.
 + Images in Amazon ECR Public repositories use the full `registry/repository[:tag]` or `registry/repository[@digest]` naming conventions (for example, `public.ecr.aws/{{registry_alias}}/{{my-web-app}}:{{latest}}`).
 + Images in Amazon ECR repositories use the full `registry/repository:[tag]` naming convention. For example, `{{aws_account_id}}.dkr.ecr.{{region}}.amazonaws.com``/{{my-web-app}}:{{latest}}`.
@@ -345,7 +345,7 @@ Type: Integer
 Required: Yes
 
 `mountPoints`
-The mount points for data volumes in your container. This parameter maps to `Volumes` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--volume` option to [https://docs.docker.com/engine/reference/commandline/run/](https://docs.docker.com/engine/reference/commandline/run/).
+The mount points for data volumes in your container. This parameter maps to `Volumes` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--volume` option to [**docker run**](https://docs.docker.com/engine/reference/commandline/run/).
 
 ```
 "mountPoints": [
@@ -390,7 +390,7 @@ Required: No
 Default: `DISABLED`
 
 `privileged`
-When this parameter is true, the container is given elevated permissions on the host container instance (similar to the `root` user). This parameter maps to `Privileged` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--privileged` option to [https://docs.docker.com/engine/reference/commandline/run/](https://docs.docker.com/engine/reference/commandline/run/). This parameter isn't applicable to jobs that run on Fargate resources. Don't provide it or specify it as false.
+When this parameter is true, the container is given elevated permissions on the host container instance (similar to the `root` user). This parameter maps to `Privileged` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--privileged` option to [**docker run**](https://docs.docker.com/engine/reference/commandline/run/). This parameter isn't applicable to jobs that run on Fargate resources. Don't provide it or specify it as false.
 
 ```
 "privileged": {{true|false}}
@@ -399,7 +399,7 @@ Type: Boolean
 Required: No
 
 `readonlyRootFilesystem`
-When this parameter is true, the container is given read-only access to its root file system. This parameter maps to `ReadonlyRootfs` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--read-only` option to [https://docs.docker.com/engine/reference/commandline/run/](https://docs.docker.com/engine/reference/commandline/run/).
+When this parameter is true, the container is given read-only access to its root file system. This parameter maps to `ReadonlyRootfs` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--read-only` option to [**docker run**](https://docs.docker.com/engine/reference/commandline/run/).
 
 ```
 "readonlyRootFilesystem": {{true|false}}
@@ -470,7 +470,7 @@ Type: String
 Required: Yes, when `secrets` is used.
 
 `ulimits`
-A list of `ulimits` values to set in the container. This parameter maps to `Ulimits` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--ulimit` option to [https://docs.docker.com/engine/reference/commandline/run/](https://docs.docker.com/engine/reference/commandline/run/).
+A list of `ulimits` values to set in the container. This parameter maps to `Ulimits` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--ulimit` option to [**docker run**](https://docs.docker.com/engine/reference/commandline/run/).
 
 ```
 "ulimits": [
@@ -500,7 +500,7 @@ Type: Integer
 Required: Yes, when `ulimits` is used.
 
 `user`
-The user name to use inside the container. This parameter maps to `User` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--user` option to [https://docs.docker.com/engine/reference/commandline/run/](https://docs.docker.com/engine/reference/commandline/run/).
+The user name to use inside the container. This parameter maps to `User` in the [Create a container](https://docs.docker.com/engine/api/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.38/) and the `--user` option to [**docker run**](https://docs.docker.com/engine/reference/commandline/run/).
 
 ```
 "user": "{{string}}"

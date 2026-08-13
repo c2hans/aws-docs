@@ -17,6 +17,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::ImageBuilder::ImagePipeline](aws-resource-imagebuilder-imagepipeline.md)
 + [AWS::ImageBuilder::ImageRecipe](aws-resource-imagebuilder-imagerecipe.md)
 + [AWS::ImageBuilder::InfrastructureConfiguration](aws-resource-imagebuilder-infrastructureconfiguration.md)
++ [AWS::ImageBuilder::LifecycleExecution](aws-resource-imagebuilder-lifecycleexecution.md)
 + [AWS::ImageBuilder::LifecyclePolicy](aws-resource-imagebuilder-lifecyclepolicy.md)
 + [AWS::ImageBuilder::Workflow](aws-resource-imagebuilder-workflow.md)
 + [AWS::ImageBuilder::WorkflowExecution](aws-resource-imagebuilder-workflowexecution.md)

@@ -38,7 +38,7 @@ Don’t add personally identifiable information (PII) or other confidential or s
 ### Remediation
 <a name="iottwinmaker-1-remediation"></a>
 
-To add tags to an AWS IoT TwinMaker sync job, see [https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_TagResource.html](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_TagResource.html) in the *AWS IoT TwinMaker User Guide*.
+To add tags to an AWS IoT TwinMaker sync job, see [TagResource](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_TagResource.html) in the *AWS IoT TwinMaker User Guide*.
 
 ## [IoTTwinMaker.2] AWS IoT TwinMaker workspaces should be tagged
 <a name="iottwinmaker-2"></a>
@@ -69,7 +69,7 @@ Don’t add personally identifiable information (PII) or other confidential or s
 ### Remediation
 <a name="iottwinmaker-2-remediation"></a>
 
-To add tags to an AWS IoT TwinMaker workspace, see [https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_TagResource.html](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_TagResource.html) in the *AWS IoT TwinMaker User Guide*.
+To add tags to an AWS IoT TwinMaker workspace, see [TagResource](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_TagResource.html) in the *AWS IoT TwinMaker User Guide*.
 
 ## [IoTTwinMaker.3] AWS IoT TwinMaker scenes should be tagged
 <a name="iottwinmaker-3"></a>
@@ -100,7 +100,7 @@ Don’t add personally identifiable information (PII) or other confidential or s
 ### Remediation
 <a name="iottwinmaker-3-remediation"></a>
 
-To add tags to an AWS IoT TwinMaker scene, see [https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_TagResource.html](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_TagResource.html) in the *AWS IoT TwinMaker User Guide*.
+To add tags to an AWS IoT TwinMaker scene, see [TagResource](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_TagResource.html) in the *AWS IoT TwinMaker User Guide*.
 
 ## [IoTTwinMaker.4] AWS IoT TwinMaker entities should be tagged
 <a name="iottwinmaker-4"></a>
@@ -131,4 +131,4 @@ Don’t add personally identifiable information (PII) or other confidential or s
 ### Remediation
 <a name="iottwinmaker-4-remediation"></a>
 
-To add tags to an AWS IoT TwinMaker entity, see [https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_TagResource.html](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_TagResource.html) in the *AWS IoT TwinMaker User Guide*.
+To add tags to an AWS IoT TwinMaker entity, see [TagResource](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_TagResource.html) in the *AWS IoT TwinMaker User Guide*.

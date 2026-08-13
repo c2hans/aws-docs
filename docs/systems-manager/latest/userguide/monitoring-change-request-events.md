@@ -56,7 +56,7 @@ When you sign in to the management account for Change Manager, you can add or ch
 
 1. Follow the steps in [Create an event data store for CloudTrail events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-cloudtrail.html) in the *AWS CloudTrail User Guide*.
 
-   To ensure that event data for your change requests is stored, make the following selections as you complete the procedure:
+   To make sure that event data for your change requests is stored, make the following selections as you complete the procedure:
    + For **Event type**, leave the defaults **AWS events** and **CloudTrail events** selected.
    + If you're using Change Manager with an organization, select **Enable for all accounts in my organization**.
    + For **Management events**, do not clear the **Write** check box.

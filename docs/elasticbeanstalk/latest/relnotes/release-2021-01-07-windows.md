@@ -17,16 +17,27 @@ The following table lists the changes included in this release.
 **Note**
 Be aware that at the time these release notes are published, the new platform versions might not yet be available in all the AWS Regions that Elastic Beanstalk supports. It might take a few hours for the release to complete.
 
-| **Category** | **Description** |
-| --- | --- |
-| **Component** | **Details** |
-| --- | --- |
-| **Windows security updates** | Applied November 2020 security updates for Windows.<br />See the Microsoft [Security Update Guide](https://portal.msrc.microsoft.com/en-us/security-guidance). |
-| **AWS component updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2021-01-07-windows.html)  |
-| **AWS SDK for .NET** | Updated the SDK to version 3.15.1181. |
-| **AMI** | Updated the base AMI to version 2020.12.09. |
-| **SSM Agent** | Updated the SSM Agent to version 2.3.871.0 on Windows Server 2012 platform versions. |
-| **EC2Config** | Updated EC2Config to version 4.9.4279 on Windows Server 2012 platform versions. |
+<table>
+<thead>
+  <tr><th><b>Category</b></th><th><b>Description</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>Windows security updates</b></td><td>Applied November 2020 security updates for Windows.<br />See the Microsoft <a href="https://portal.msrc.microsoft.com/en-us/security-guidance">Security Update Guide</a>.</td></tr>
+  <tr><td><b>AWS component updates</b></td><td>
+<table>
+<thead>
+  <tr><th><b>Component</b></th><th><b>Details</b></th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AWS SDK for .NET</b></td><td>Updated the SDK to version 3.15.1181.</td></tr>
+  <tr><td><b>AMI</b></td><td>Updated the base AMI to version 2020.12.09.</td></tr>
+  <tr><td><b>SSM Agent</b></td><td>Updated the SSM Agent to version 2.3.871.0 on Windows Server 2012 platform versions.</td></tr>
+  <tr><td><b>EC2Config</b></td><td>Updated EC2Config to version 4.9.4279 on Windows Server 2012 platform versions.</td></tr>
+</tbody>
+</table>
+ </td></tr>
+</tbody>
+</table>
 
 ## New platform versions
 <a name="release-2021-01-07-windows.platforms"></a>

@@ -102,8 +102,8 @@ Response:
 <a name="access-grants-grant-view-rest-api"></a>
 
 You can use Amazon S3 API operations to view the details of an access grant and list all access grants in an S3 Access Grants instance. For information about the REST API support for managing access grants, see the following sections in the *Amazon Simple Storage Service API Reference*:
-+  [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAccessGrant.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAccessGrant.html)
-+  [https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAccessGrants.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAccessGrants.html)
++  [GetAccessGrant](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAccessGrant.html)
++  [ListAccessGrants](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAccessGrants.html)
 
 ## Using the AWS SDKs
 <a name="access-grants-grant-view-using-sdk"></a>

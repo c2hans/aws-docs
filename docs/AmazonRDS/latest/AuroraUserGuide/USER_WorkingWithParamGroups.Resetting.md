@@ -38,7 +38,7 @@ In a default DB parameter group, parameters are always set to their default valu
 ## AWS CLI
 <a name="USER_WorkingWithParamGroups.Resetting.CLI"></a>
 
-To reset some or all of the parameters in a DB parameter group, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/reset-db-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/rds/reset-db-parameter-group.html) command with the following required option: `--db-parameter-group-name`.
+To reset some or all of the parameters in a DB parameter group, use the AWS CLI [`reset-db-parameter-group`](https://docs.aws.amazon.com/cli/latest/reference/rds/reset-db-parameter-group.html) command with the following required option: `--db-parameter-group-name`.
 
 To reset all of the parameters in the DB parameter group, specify the `--reset-all-parameters` option. To reset specific parameters, specify the `--parameters` option.
 
@@ -88,6 +88,6 @@ DBParameterGroupName  mydbparametergroup
 ## RDS API
 <a name="USER_WorkingWithParamGroups.Resetting.API"></a>
 
-To reset parameters in a DB parameter group to their default values, use the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ResetDBParameterGroup.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ResetDBParameterGroup.html) command with the following required parameter: `DBParameterGroupName`.
+To reset parameters in a DB parameter group to their default values, use the RDS API [`ResetDBParameterGroup`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ResetDBParameterGroup.html) command with the following required parameter: `DBParameterGroupName`.
 
 To reset all of the parameters in the DB parameter group, set the `ResetAllParameters` parameter to `true`. To reset specific parameters, specify the `Parameters` parameter.
